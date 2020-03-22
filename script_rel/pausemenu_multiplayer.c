@@ -63,11 +63,11 @@ void func_1(bool bParam0)
 	func_4(68);
 	if (bParam0)
 	{
-		func_5(-1050153785, 16);
+		func_5(joaat("freeroam"), 16);
 	}
 	else
 	{
-		func_5(-1050153785, 0);
+		func_5(joaat("freeroam"), 0);
 	}
 	func_6(3);
 }
@@ -83,7 +83,7 @@ int func_2()
 		}
 	}
 	func_4(68);
-	func_5(1375707186, 2);
+	func_5(joaat("mission_creator"), 2);
 	func_6(3);
 	return 1;
 }
@@ -96,7 +96,7 @@ void func_3()
 	{
 		Global_43892 = 1;
 	}
-	func_5(1785216189, 0);
+	func_5(joaat("single_player"), 0);
 }
 
 void func_4(int iParam0)
@@ -130,7 +130,7 @@ char* func_7(int iParam0)
 		case 0:
 			sVar0 = "";
 			break;
-		case -88424047:
+		case joaat("NEW_GAME"):
 			sVar0 = "new_game";
 			break;
 		case 1651967528:
@@ -142,10 +142,10 @@ char* func_7(int iParam0)
 		case 1306134188:
 			sVar0 = "intro_not_done";
 			break;
-		case -1357178860:
+		case joaat("private"):
 			sVar0 = "private";
 			break;
-		case 133180145:
+		case joaat("friendly"):
 			sVar0 = "friendly";
 			break;
 		case 655115506:
@@ -175,7 +175,7 @@ char* func_7(int iParam0)
 		case -61119924:
 			sVar0 = "last_location";
 			break;
-		case 2134863183:
+		case joaat("camp"):
 			sVar0 = "camp";
 			break;
 		case -159568751:

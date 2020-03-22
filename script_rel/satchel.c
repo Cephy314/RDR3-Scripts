@@ -18,7 +18,7 @@
 void __EntryFunction__()
 {
 	int iVar0;
-	int iVar1;
+	bool bVar1;
 	int iVar2;
 
 	fLocal_7 = 1f;
@@ -33,7 +33,7 @@ void __EntryFunction__()
 		if (!PED::IS_PED_IN_ANY_BOAT(Global_35))
 		{
 			iVar0 = func_2(Global_35, 0);
-			if ((iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("weapon_melee_torch")) && iVar0 != joaat("weapon_fishingrod"))
+			if ((iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("WEAPON_MELEE_TORCH")) && iVar0 != joaat("WEAPON_FISHINGROD"))
 			{
 				if (Global_36604 != 0)
 				{
@@ -43,8 +43,8 @@ void __EntryFunction__()
 					WEAPON::_0x6929E22158E52265(Global_35, 0, &Global_36605);
 				}
 			}
-			iVar1 = func_2(Global_35, 1);
-			if (WEAPON::_0xC212F1D05A8232BB(iVar1) || WEAPON::_0xDDC64F5E31EEDAB6(iVar1))
+			bVar1 = func_2(Global_35, 1);
+			if (WEAPON::_0xC212F1D05A8232BB(bVar1) || WEAPON::_0xDDC64F5E31EEDAB6(bVar1))
 			{
 				if (Global_36604 != 0)
 				{
@@ -54,7 +54,7 @@ void __EntryFunction__()
 					WEAPON::_0x6929E22158E52265(Global_35, 1, &Global_36609);
 				}
 			}
-			WEAPON::_0xFCCC886EDE3C63EC(Global_35, 2, 0);
+			WEAPON::_0xFCCC886EDE3C63EC(Global_35, 2, false);
 		}
 		else
 		{
@@ -67,7 +67,7 @@ void __EntryFunction__()
 	iVar2 = -1723036365;
 	if (func_4(0))
 	{
-		iVar2 = -605765767;
+		iVar2 = joaat("shop");
 	}
 	while (true)
 	{
@@ -79,7 +79,7 @@ void __EntryFunction__()
 				{
 					func_7();
 				}
-				if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-4058091, iVar2) != 0)
+				if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("satchel"), iVar2) != 0)
 				{
 				}
 				else
@@ -92,7 +92,7 @@ void __EntryFunction__()
 				{
 					func_7();
 				}
-				if (((!UIAPPS::_IS_APP_ACTIVE(-4058091) || &Global_1935689 == 2) || Global_16) || PED::IS_PED_DEAD_OR_DYING(Global_35, true))
+				if (((!UIAPPS::_IS_APP_ACTIVE(joaat("satchel")) || &Global_1935689 == 2) || Global_16) || PED::IS_PED_DEAD_OR_DYING(Global_35, true))
 				{
 					func_8(2);
 				}
@@ -103,9 +103,9 @@ void __EntryFunction__()
 				{
 					func_10();
 				}
-				PAD::DISABLE_CONTROL_ACTION(0, -1304887797, false);
-				PAD::DISABLE_CONTROL_ACTION(0, -1450761377, false);
-				PAD::DISABLE_CONTROL_ACTION(0, -771458680, false);
+				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_TOGGLE_HOLSTER"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_LR"), false);
+				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_UD"), false);
 				break;
 			case 2:
 				if (func_6())
@@ -122,14 +122,14 @@ void __EntryFunction__()
 
 void func_1()
 {
-	UIAPPS::_CLOSE_APP_BY_HASH(-4058091);
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("satchel"));
 	func_11(0);
 	Global_1935689->f_1 = 0;
 	Global_36632 = 0;
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-var func_2(int iParam0, int iParam1)
+int func_2(int iParam0, int iParam1)
 {
 	var uVar0;
 
@@ -184,20 +184,20 @@ int func_9()
 
 void func_10()
 {
-	PAD::DISABLE_CONTROL_ACTION(0, -1292666904, false);
-	PAD::DISABLE_CONTROL_ACTION(0, 278816850, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -640622144, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -128997553, false);
-	PAD::DISABLE_CONTROL_ACTION(2, 130948705, false);
-	PAD::DISABLE_CONTROL_ACTION(0, 1632043089, false);
-	PAD::DISABLE_CONTROL_ACTION(2, 1623727326, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1404316431, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -562475458, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1879280170, false);
-	PAD::DISABLE_CONTROL_ACTION(0, 1520437207, false);
-	PAD::DISABLE_CONTROL_ACTION(0, 648122183, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -163964935, false);
-	PAD::DISABLE_CONTROL_ACTION(0, -1582581421, false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SELECT_WEAPON_MELEE"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_JUMP"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), false);
+	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_AIM"), false);
+	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_HORSE_ATTACK"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_COVER"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPRINT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_SPRINT"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON_NEG"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON_POS"), false);
+	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_ANIMAL"), false);
 }
 
 void func_11(bool bParam0)

@@ -319,7 +319,7 @@ void func_6()
 	func_42();
 	func_43();
 	STREAMING::_SET_GUARMA_WORLDHORIZON_ACTIVE(false);
-	MAP::_0xA657EC9DBC6CC900(-1868977180);
+	MAP::_0xA657EC9DBC6CC900(joaat("world"));
 	func_44();
 }
 
@@ -397,7 +397,7 @@ void func_12(var uParam0)
 	{
 		return;
 	}
-	bVar0 = _NAMESPACE84::_0x7AF1BB4504EA5ED9();
+	bVar0 = COMPAPP::_0x7AF1BB4504EA5ED9();
 	if (&Global_1956578 != bVar0)
 	{
 		Global_1956578 = bVar0;
@@ -495,7 +495,7 @@ void func_18()
 	{
 		Global_43892 = 1;
 	}
-	func_65(1785216189, 0);
+	func_65(joaat("single_player"), 0);
 }
 
 int func_19()
@@ -538,7 +538,7 @@ int func_23()
 				GOOGLE_ANALYTICS::_GOOGLE_ANALYTICS_PUSH_PAGE("/landing");
 				MISC::SET_FADE_IN_AFTER_LOAD(false);
 				MISC::SET_FADE_IN_AFTER_DEATH_ARREST(false);
-				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), 0, 0, 0);
+				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 0, false);
 				PAD::_0xF239400E16C23E08(2, 0);
 				func_68();
 				func_69(1);
@@ -606,12 +606,12 @@ void func_24()
 	}
 	switch (func_80())
 	{
-		case -1050153785:
+		case joaat("freeroam"):
 			if (func_81(655115506))
 			{
 				func_82(2);
 			}
-			else if (func_81(133180145))
+			else if (func_81(joaat("friendly")))
 			{
 				func_82(1);
 			}
@@ -635,7 +635,7 @@ void func_24()
 			{
 				Global_34 = 0;
 			}
-			if (func_81(-1357178860))
+			if (func_81(joaat("private")))
 			{
 				Global_1572887->f_5 = 1;
 			}
@@ -643,7 +643,7 @@ void func_24()
 			{
 				Global_1572887->f_5 = 0;
 			}
-			if (func_81(-88424047))
+			if (func_81(joaat("NEW_GAME")))
 			{
 				Global_30 = 1;
 			}
@@ -660,13 +660,13 @@ void func_24()
 			{
 			}
 			break;
-		case -1330461529:
+		case joaat("series"):
 			break;
-		case -1950263389:
+		case joaat("mission"):
 			break;
 		case 1495295997:
 			break;
-		case 1375707186:
+		case joaat("mission_creator"):
 			Global_32 = 1;
 			Global_1572887->f_5 = 1;
 			break;
@@ -857,7 +857,7 @@ void func_37()
 	int iVar16;
 
 	sLocal_0 = "startup";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_40, 12065, 1, sLocal_0, 93);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_40, 12065, 1, sLocal_0, 93);
 	func_91(&(Global_40.f_9));
 	func_92(&(Global_40.f_40), "g_savedGlobals.sFlow", 1);
 	func_93(&(Global_40.f_1095), "g_savedGlobals.playerHorse", 1);
@@ -919,92 +919,92 @@ void func_37()
 	func_149(&(Global_40.f_12003));
 	func_150(&(Global_40.f_12004));
 	func_151(&(Global_40.f_12018));
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&Global_40, "bGameInitialized");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(Global_40.f_1), "bInGameflow");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(Global_40.f_9421), "bUsedFirstPerson");
+	SAVE::_0xBB7F4273C186BC4B(&Global_40, "bGameInitialized");
+	SAVE::_0xBB7F4273C186BC4B(&(Global_40.f_1), "bInGameflow");
+	SAVE::_0xBB7F4273C186BC4B(&(Global_40.f_9421), "bUsedFirstPerson");
 	func_152(&(Global_40.f_2), "vLastCampPosition");
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(Global_40.f_5), "fLastCampHeading");
+	SAVE::_0x35DEFECAE36D4FAE(&(Global_40.f_5), "fLastCampHeading");
 	func_152(&(Global_40.f_6), "vCurrentCaravanBedPosition");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_7854), "minigameUnlocked");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_7855), "jobUnlocked");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_7856), "procmissionUnlocked");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(Global_40.f_7729), "wornOutfit");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(Global_40.f_39), "playerCharacterModel");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(Global_40.f_449), "lawBountyAchievement");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(Global_40.f_1093), "eRCMIndexTracked");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_1094), "iRCMsActive");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_7755), "deadeyeLevel");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(Global_40.f_11953), "bAttackedBurial");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_11954), "iMickeyMemory");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_11955), "iStudiedAnimalsNoBinoculars");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_11956), "iLastPayoffTutorialMessage");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_11957), "iSavedBounty");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(Global_40.f_7730), "bHatKnockedOff");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_9273), "iHerbArrLocation");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_11958), "iSPMinigameAchievementTracker");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_11999), "iSPChecksum");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(Global_40.f_7860), "bEndlessSummerInitialized");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_40.f_7861), "iMoneyBeforeGuarma");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_7854), "minigameUnlocked");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_7855), "jobUnlocked");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_7856), "procmissionUnlocked");
+	SAVE::_0xB25B5A375BE5BE26(&(Global_40.f_7729), "wornOutfit");
+	SAVE::_0xB25B5A375BE5BE26(&(Global_40.f_39), "playerCharacterModel");
+	SAVE::_0xB25B5A375BE5BE26(&(Global_40.f_449), "lawBountyAchievement");
+	SAVE::_0xB25B5A375BE5BE26(&(Global_40.f_1093), "eRCMIndexTracked");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_1094), "iRCMsActive");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_7755), "deadeyeLevel");
+	SAVE::_0xBB7F4273C186BC4B(&(Global_40.f_11953), "bAttackedBurial");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_11954), "iMickeyMemory");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_11955), "iStudiedAnimalsNoBinoculars");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_11956), "iLastPayoffTutorialMessage");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_11957), "iSavedBounty");
+	SAVE::_0xBB7F4273C186BC4B(&(Global_40.f_7730), "bHatKnockedOff");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_9273), "iHerbArrLocation");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_11958), "iSPMinigameAchievementTracker");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_11999), "iSPChecksum");
+	SAVE::_0xBB7F4273C186BC4B(&(Global_40.f_7860), "bEndlessSummerInitialized");
+	SAVE::_0x529B9CCD0972AF4D(&(Global_40.f_7861), "iMoneyBeforeGuarma");
 	StringCopy(&cVar0, "specialWildHorse", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(Global_40.f_11945), 8, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(Global_40.f_11945), 8, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < Global_40.f_11945)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(Global_40.f_11945[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(Global_40.f_11945[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(Global_40.f_12017), "bPhotoModeToastDelivered");
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xBB7F4273C186BC4B(&(Global_40.f_12017), "bPhotoModeToastDelivered");
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedDeeds";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_12105, 5398, 1, sLocal_0, 1);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_12105, 5398, 1, sLocal_0, 1);
 	func_153(&Global_12105);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedBeats";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_17503, 3206, 1, sLocal_0, 1);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_17503, 3206, 1, sLocal_0, 1);
 	func_154(&Global_17503);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedShops";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_20709, 2408, 1, sLocal_0, 1);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_20709, 2408, 1, sLocal_0, 1);
 	func_155(&Global_20709);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedRegions";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_23117, 1769, 1, sLocal_0, 3);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_23117, 1769, 1, sLocal_0, 3);
 	func_156(&Global_23117);
 	func_157(&(Global_23117.f_1651));
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(Global_23117.f_1768), "g_savedGlobalsRegions.iInnocentsKilled");
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0x529B9CCD0972AF4D(&(Global_23117.f_1768), "g_savedGlobalsRegions.iInnocentsKilled");
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedRegionalCharacters";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_24886, 1909, 1, sLocal_0, 1);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_24886, 1909, 1, sLocal_0, 1);
 	func_158(&Global_24886);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedPlayerOutfits";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_26795, 777, 1, sLocal_0, 1);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_26795, 777, 1, sLocal_0, 1);
 	func_159(&Global_26795);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedHerbs";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_27572, 4501, 1, sLocal_0, 1);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_27572, 4501, 1, sLocal_0, 1);
 	func_160(&Global_27572);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
+	SAVE::_0xE8346E62FD7FB962();
 	sLocal_0 = "SavedVignettes";
-	_NAMESPACE59::_0x9BB83C4DD7BE0802(&Global_32073, 4234, 1, sLocal_0, 2);
+	SAVE::_0x9BB83C4DD7BE0802(&Global_32073, 4234, 1, sLocal_0, 2);
 	func_161(&Global_32073);
 	func_162(&(Global_32073.f_2697));
-	_NAMESPACE59::_0xE8346E62FD7FB962();
-	_NAMESPACE59::_0xC0ABF784590798A9(1);
+	SAVE::_0xE8346E62FD7FB962();
+	SAVE::_0xC0ABF784590798A9(1);
 }
 
 void func_38()
 {
 	sLocal_0 = "startup";
-	_NAMESPACE59::_0xED4B0C1057892B2E(&Global_36637, 1466, 0, sLocal_0);
+	SAVE::_0xED4B0C1057892B2E(&Global_36637, 1466, 0, sLocal_0);
 	func_120(&Global_36637, "g_mpSavedGlobals.herbs", 0);
 	func_163(&(Global_36637.f_45), "g_mpSavedGlobals.sPersona");
 	func_101(&(Global_36637.f_1444), "g_mpSavedGlobals.eTutorialsRun", 0);
-	_NAMESPACE59::_0xE8346E62FD7FB962();
-	_NAMESPACE59::_0xC0ABF784590798A9(0);
+	SAVE::_0xE8346E62FD7FB962();
+	SAVE::_0xC0ABF784590798A9(0);
 }
 
 void func_39()
@@ -1044,7 +1044,7 @@ int func_41(int iParam0, var uParam1)
 		case 1:
 			if (SCRIPTS::HAS_SCRIPT_LOADED(func_166(iParam0)))
 			{
-				BUILTIN::START_NEW_SCRIPT(func_166(iParam0), 128);
+				SCRIPTS::START_NEW_SCRIPT(func_166(iParam0), 128);
 				SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(func_166(iParam0));
 				func_167(uParam1, 2, iParam0);
 			}
@@ -1356,7 +1356,7 @@ int func_45(var uParam0)
 			{
 				uParam0->f_81 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "LoadingScreen");
 				uParam0->f_82 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_81, "TooltipText", "");
-				uParam0->f_83 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_81, "isVisible", 1);
+				uParam0->f_83 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_81, "isVisible", true);
 				func_210(uParam0, 1);
 				func_211(uParam0, 1);
 			}
@@ -1493,7 +1493,7 @@ void func_52(var uParam0)
 		MISC::SET_BIT(&iVar0, 2);
 		MISC::SET_BIT(&iVar0, 5);
 		MISC::SET_BIT(&iVar0, 4);
-		if (LAW::_0xDD5FD601481F648B(PLAYER::PLAYER_ID()) > 0)
+		if (LAW::_GET_WANTED_INTENSITY_FOR_PLAYER(PLAYER::PLAYER_ID()) > 0)
 		{
 			MISC::SET_BIT(&iVar0, 3);
 		}
@@ -1543,7 +1543,7 @@ void func_55()
 		case 1:
 			if (MISC::IS_PC_VERSION())
 			{
-				func_223("NET_SESSION_INV_HEADER", "NT_INV_EXTENDED_PC", -437533031, 1183081869, -2, 0, 0, 0, 0, 1, 1);
+				func_223("NET_SESSION_INV_HEADER", "NT_INV_EXTENDED_PC", joaat("blips"), joaat("BLIP_MP_PLAYLIST_TEAMGAME"), -2, 0, 0, 0, 0, 1, 1);
 				func_224(4);
 			}
 			else
@@ -1775,7 +1775,7 @@ char* func_64(int iParam0)
 		case 0:
 			sVar0 = "";
 			break;
-		case -88424047:
+		case joaat("NEW_GAME"):
 			sVar0 = "new_game";
 			break;
 		case 1651967528:
@@ -1787,10 +1787,10 @@ char* func_64(int iParam0)
 		case 1306134188:
 			sVar0 = "intro_not_done";
 			break;
-		case -1357178860:
+		case joaat("private"):
 			sVar0 = "private";
 			break;
-		case 133180145:
+		case joaat("friendly"):
 			sVar0 = "friendly";
 			break;
 		case 655115506:
@@ -1820,7 +1820,7 @@ char* func_64(int iParam0)
 		case -61119924:
 			sVar0 = "last_location";
 			break;
-		case 2134863183:
+		case joaat("camp"):
 			sVar0 = "camp";
 			break;
 		case -159568751:
@@ -1842,9 +1842,9 @@ void func_65(int iParam0, int iParam1)
 
 void func_66()
 {
-	PAD::DISABLE_CONTROL_ACTION(2, -668070958, false);
-	PAD::DISABLE_CONTROL_ACTION(2, 1644850270, false);
-	PAD::DISABLE_CONTROL_ACTION(2, 2139949496, false);
+	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_FRONTEND_PAUSE"), false);
+	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_CINEMATIC_CAM"), false);
+	PAD::DISABLE_CONTROL_ACTION(2, joaat("INPUT_NEXT_CAMERA"), false);
 	if (func_67() != 0)
 	{
 		HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
@@ -1932,9 +1932,9 @@ int func_76()
 		return 0;
 	}
 	iVar0 = 0;
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(-999474433))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("landing_page")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(-999474433, &vVar1))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("landing_page"), &vVar1))
 		{
 			switch (vVar1.x)
 			{
@@ -1942,7 +1942,7 @@ int func_76()
 					if (vVar1.z == -490822059)
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_SP", "Load_Menu_Scenes");
-						func_253(1785216189);
+						func_253(joaat("single_player"));
 						iVar0 = 1;
 					}
 					else if (vVar1.z == 2143694500)
@@ -1958,7 +1958,7 @@ int func_76()
 					else if (vVar1.z == 1317995259)
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
-						func_253(-1050153785);
+						func_253(joaat("freeroam"));
 						func_254(1306134188);
 						iVar0 = 1;
 					}
@@ -1987,7 +1987,7 @@ int func_76()
 					break;
 			}
 		}
-		UIEVENTS::_EVENT_MANAGER_POP_EVENT(-999474433);
+		UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("landing_page"));
 	}
 	return iVar0;
 }
@@ -2006,11 +2006,11 @@ int func_78()
 	int iVar4;
 	int iVar5;
 
-	if (!NETWORK::_0x02E97CE283648CD9(func_256(1746230403)))
+	if (!NETWORK::_0x02E97CE283648CD9(func_256(joaat("mode"))))
 	{
 		if (func_80() == 0)
 		{
-			func_253(1785216189);
+			func_253(joaat("single_player"));
 			func_248(28);
 			return 1;
 		}
@@ -2021,7 +2021,7 @@ int func_78()
 		}
 	}
 	func_257(&(Global_1572887->f_282));
-	sVar0 = NETWORK::_0x65E65CA6A0FE59D4(func_256(1746230403));
+	sVar0 = NETWORK::_0x65E65CA6A0FE59D4(func_256(joaat("mode")));
 	iVar1 = MISC::GET_HASH_KEY(sVar0);
 	if (iVar1 != 0)
 	{
@@ -2059,9 +2059,9 @@ int func_78()
 		Global_1572887->f_282.f_8 = MISC::GET_HASH_KEY(sVar0);
 	}
 	Global_1572887->f_282.f_9 = 0;
-	if (NETWORK::_0x02E97CE283648CD9(func_256(-1637816997)))
+	if (NETWORK::_0x02E97CE283648CD9(func_256(joaat("p_fav01_grass_06_268"))))
 	{
-		sVar0 = NETWORK::_0x65E65CA6A0FE59D4(func_256(-1637816997));
+		sVar0 = NETWORK::_0x65E65CA6A0FE59D4(func_256(joaat("p_fav01_grass_06_268")));
 		if (MISC::STRING_TO_INT(sVar0, &(Global_1572887->f_282.f_9)))
 		{
 		}
@@ -2092,14 +2092,14 @@ void func_79()
 {
 	switch (func_80())
 	{
-		case 1785216189:
+		case joaat("single_player"):
 			vLocal_15.f_2 = 2;
 			break;
 		case joaat("benchmark"):
 			vLocal_15.f_2 = 2;
 			NETWORK::_0x668AF6E4933AC13F(func_64(joaat("benchmark")), "1");
 			break;
-		case -1050153785:
+		case joaat("freeroam"):
 			if (!NETWORK::_0x2A8112A974DE1EF6())
 			{
 				vLocal_15.f_2 = 1;
@@ -2118,7 +2118,7 @@ void func_79()
 			break;
 		case -1743646234:
 			break;
-		case -1330461529:
+		case joaat("series"):
 			if (!NETWORK::_0x2A8112A974DE1EF6())
 			{
 				vLocal_15.f_2 = 1;
@@ -2135,7 +2135,7 @@ void func_79()
 				AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 			}
 			break;
-		case -1950263389:
+		case joaat("mission"):
 			if (!NETWORK::_0x2A8112A974DE1EF6())
 			{
 				vLocal_15.f_2 = 1;
@@ -2169,7 +2169,7 @@ void func_79()
 				AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 			}
 			break;
-		case 1375707186:
+		case joaat("mission_creator"):
 			if (!NETWORK::_0x2A8112A974DE1EF6())
 			{
 				vLocal_15.f_2 = 1;
@@ -2186,7 +2186,7 @@ void func_79()
 				AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 			}
 			break;
-		case -417606870:
+		case joaat("clip"):
 			vLocal_15.f_2 = 4;
 			func_63(4);
 			AUDIO::_0xAC84686C06184B0D("Fade_To_SP", "Load_Menu_Scenes");
@@ -2239,7 +2239,7 @@ int func_85(char* sParam0, int iParam1)
 	{
 		return 0;
 	}
-	BUILTIN::START_NEW_SCRIPT(sParam0, iParam1);
+	SCRIPTS::START_NEW_SCRIPT(sParam0, iParam1);
 	SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(sParam0);
 	return 1;
 }
@@ -2282,9 +2282,9 @@ char* func_87()
 	switch (func_80())
 	{
 		case joaat("benchmark"):
-		case 1785216189:
+		case joaat("single_player"):
 			return MISC::_CREATE_VAR_STRING(10, "LAUNCH_PARAMS", &cVar0);
-		case -1050153785:
+		case joaat("freeroam"):
 			iVar98 = 0;
 			iVar99 = 0;
 			iVar98 = 0;
@@ -2326,11 +2326,11 @@ char* func_87()
 			break;
 		case -1743646234:
 			return MISC::_CREATE_VAR_STRING(42, "LAUNCH_PARAMS", &cVar0, &cVar8);
-		case -1330461529:
+		case joaat("series"):
 			StringCopy(&cVar124, "-series_id=", 64);
 			StringConCat(&cVar124, func_270(Global_1572887->f_282.f_2), 64);
 			return MISC::_CREATE_VAR_STRING(170, "LAUNCH_PARAMS", &cVar0, &cVar8, &cVar124);
-		case -1950263389:
+		case joaat("mission"):
 			StringCopy(&cVar132, "-mission_id=", 64);
 			StringConCat(&cVar132, "", 64);
 			return MISC::_CREATE_VAR_STRING(170, "LAUNCH_PARAMS", &cVar0, &cVar8, &cVar132);
@@ -2338,7 +2338,7 @@ char* func_87()
 			StringCopy(&cVar140, "-minigame_id=", 64);
 			StringConCat(&cVar140, func_271(Global_1572887->f_282.f_7), 64);
 			return MISC::_CREATE_VAR_STRING(170, "LAUNCH_PARAMS", &cVar0, &cVar8, &cVar140);
-		case 1375707186:
+		case joaat("mission_creator"):
 			return MISC::_CREATE_VAR_STRING(42, "LAUNCH_PARAMS", &cVar0, &cVar8);
 	}
 	return "";
@@ -2363,64 +2363,64 @@ void func_91(var uParam0)
 	int iVar0;
 	char cVar1[64];
 
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 30, "saveGameData", 20);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "saveGameData.saveGameLocation");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), "saveGameData.iSaveGamePropset");
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 30, "saveGameData", 20);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "saveGameData.saveGameLocation");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), "saveGameData.iSaveGamePropset");
 	func_152(&(uParam0->f_2), "saveGameData.vSaveGamePropsetPosition");
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_5), "saveGameData.fSaveGamePropsetHeading");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_6), "saveGameData.iSaveGameScenarioHash");
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_5), "saveGameData.fSaveGamePropsetHeading");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_6), "saveGameData.iSaveGameScenarioHash");
 	func_152(&(uParam0->f_7), "saveGameData.vResetPosition");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_10), "saveGameData.iResetRespawnNode");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_11), "saveGameData.iResetAnimIndex");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_12), "saveGameData.bForceAltAnim");
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_13), "saveGameData.fResetHeading");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_14), "saveGameData.eSavedTOD");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_15), "saveGameData.respawnRegion");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_20), "saveGameData.iResetBounty");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_16), 4, "saveGameData.iRespawnPosHistory");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_10), "saveGameData.iResetRespawnNode");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_11), "saveGameData.iResetAnimIndex");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_12), "saveGameData.bForceAltAnim");
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_13), "saveGameData.fResetHeading");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_14), "saveGameData.eSavedTOD");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_15), "saveGameData.respawnRegion");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_20), "saveGameData.iResetBounty");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_16), 4, "saveGameData.iRespawnPosHistory");
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_16)
 	{
 		StringCopy(&cVar1, "saveGameData.iRespawnPosHistory", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_16[iVar0], &cVar1);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_16[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_21), 9, "saveGameData.missionReplayData");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_21), "saveGameData.missionReplayData.iBitStorage");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_21.f_1), 5, "saveGameData.missionReplayData.iGeneralStorage");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_21), 9, "saveGameData.missionReplayData");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_21), "saveGameData.missionReplayData.iBitStorage");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_21.f_1), 5, "saveGameData.missionReplayData.iGeneralStorage");
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_21.f_1)
 	{
 		StringCopy(&cVar1, "saveGameData.missionReplayData.iGeneralStorage", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_21.f_1[iVar0], &cVar1);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_21.f_1[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_21.f_6), 3, "saveGameData.missionReplayData.fGeneralStorage");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_21.f_6), 3, "saveGameData.missionReplayData.fGeneralStorage");
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_21.f_6)
 	{
 		StringCopy(&cVar1, "saveGameData.missionReplayData.fGeneralStorage", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_21.f_6[iVar0], &cVar1);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_21.f_6[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_92(var uParam0, char* sParam1, int iParam2)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 243, "flow");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, "flow.isGameflowActive");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_1), "flow.flowCompleted");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 243, "flow");
+	SAVE::_0xBB7F4273C186BC4B(uParam0, "flow.isGameflowActive");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_1), "flow.flowCompleted");
 	func_272(&(uParam0->f_2));
 	func_273(&(uParam0->f_131));
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_93(var uParam0, char* sParam1, int iParam2)
@@ -2431,14 +2431,14 @@ void func_93(var uParam0, char* sParam1, int iParam2)
 	StringCopy(&cVar0, "playerHorse", 64);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eCurrentStableSlot", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 3142, &cVar0);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 3142, &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
 	func_274(&(uParam0->f_1));
 	func_275(&(uParam0->f_3054));
 	func_276(&(uParam0->f_3134));
 	func_277(&(uParam0->f_3135));
 	func_278(&(uParam0->f_3140));
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_94(var uParam0)
@@ -2448,38 +2448,38 @@ void func_94(var uParam0)
 	struct<8> Var9;
 	struct<8> Var17;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1081, "postOfficeData");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1081, "postOfficeData");
 	StringCopy(&cVar1, "postOfficeData.trackedParcels", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 1081, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 1081, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*6*/], 6, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*6*/], 6, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eMailSendFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eMailReplyFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eSentTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_3), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eDeliveryTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_4), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*6*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eTrackedParcel", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*6*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*6*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bOverrideDeliveryTime", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*6*/])->f_5), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*6*/])->f_5), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_95(var uParam0)
@@ -2489,189 +2489,189 @@ void func_95(var uParam0)
 	struct<8> Var16;
 	int iVar24;
 
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 659, "caravanCamp", 39);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "caravanCamp.eCurrentCamp");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "caravanCamp.eCurrentCampRegion");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), "caravanCamp.eCampFlags");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), "caravanCamp.eCampAppearance");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_4), "caravanCamp.eCampSetupState");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_5), "caravanCamp.eCampSubstate");
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 659, "caravanCamp", 39);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "caravanCamp.eCurrentCamp");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "caravanCamp.eCurrentCampRegion");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), "caravanCamp.eCampFlags");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), "caravanCamp.eCampAppearance");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_4), "caravanCamp.eCampSetupState");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_5), "caravanCamp.eCampSubstate");
 	StringCopy(&cVar0, "caravancamp.activeCampStateTags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_6), 301, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_6), 301, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_6)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_6[iVar24 /*5*/], 5, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_6[iVar24 /*5*/], 5, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eTag", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_6[iVar24 /*5*/], &Var16);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_6[iVar24 /*5*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eExpiry", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*5*/])->f_1), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*5*/])->f_1), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".ePersistence", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*5*/])->f_2), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*5*/])->f_2), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iPriority", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*5*/])->f_3), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*5*/])->f_3), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eCategory", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*5*/])->f_4), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*5*/])->f_4), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_307), 5, "caravanCamp.sPearsonUnlocks");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_307), "caravanCamp.sPearsonUnlocks.iUnlockedBitset");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_1), "caravanCamp.sPearsonUnlocks.iItemsCrafted");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_2), "caravanCamp.sPearsonUnlocks.iAnimalsDonated");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_3), "caravanCamp.sPearsonUnlocks.iCentsDonated");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_4), "caravanCamp.sPearsonUnlocks.iTrinkedDonated");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_312), "caravanCamp.iCampLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_313), "caravanCamp.iCampChickenCoopLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_314), "caravanCamp.iCampVehicleLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_315), "caravanCamp.iCampToolsLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_316), "caravanCamp.iCampCraftingFireLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_317), "caravanCamp.iCampShavingKitLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_318), "caravanCamp.iCampPearsonLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_319), "caravanCamp.iCampStraussLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_320), "caravanCamp.iCampArthurLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_321), "caravanCamp.iCampTentLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_322), "caravanCamp.iCampHitchLevel");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_323), "caravanCamp.iNumInnocentsKilled");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_324), "caravanCamp.iCampFundsCents");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_325), "caravanCamp.iGangSavingsCents");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_326), "caravanCamp.iBankDebtCents");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_327), "caravanCamp.iCarcassesDonated");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_328), "caravanCamp.todCampSupplyDecrement");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_329), "caravanCamp.todCampFoodDecrement");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_330), "caravanCamp.todNextPlayerStewServe");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_331), "caravanCamp.todNextCompanionDonation");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_332), 3, "caravanCamp.eLastDonationCompanions");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_332[0], "caravanCamp.eLastDonationCompanions0");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_332[1], "caravanCamp.eLastDonationCompanions1");
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_307), 5, "caravanCamp.sPearsonUnlocks");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_307), "caravanCamp.sPearsonUnlocks.iUnlockedBitset");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_1), "caravanCamp.sPearsonUnlocks.iItemsCrafted");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_2), "caravanCamp.sPearsonUnlocks.iAnimalsDonated");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_3), "caravanCamp.sPearsonUnlocks.iCentsDonated");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_307.f_4), "caravanCamp.sPearsonUnlocks.iTrinkedDonated");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_312), "caravanCamp.iCampLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_313), "caravanCamp.iCampChickenCoopLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_314), "caravanCamp.iCampVehicleLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_315), "caravanCamp.iCampToolsLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_316), "caravanCamp.iCampCraftingFireLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_317), "caravanCamp.iCampShavingKitLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_318), "caravanCamp.iCampPearsonLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_319), "caravanCamp.iCampStraussLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_320), "caravanCamp.iCampArthurLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_321), "caravanCamp.iCampTentLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_322), "caravanCamp.iCampHitchLevel");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_323), "caravanCamp.iNumInnocentsKilled");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_324), "caravanCamp.iCampFundsCents");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_325), "caravanCamp.iGangSavingsCents");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_326), "caravanCamp.iBankDebtCents");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_327), "caravanCamp.iCarcassesDonated");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_328), "caravanCamp.todCampSupplyDecrement");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_329), "caravanCamp.todCampFoodDecrement");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_330), "caravanCamp.todNextPlayerStewServe");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_331), "caravanCamp.todNextCompanionDonation");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_332), 3, "caravanCamp.eLastDonationCompanions");
+	SAVE::_0xB25B5A375BE5BE26(uParam0->f_332[0], "caravanCamp.eLastDonationCompanions0");
+	SAVE::_0xB25B5A375BE5BE26(uParam0->f_332[1], "caravanCamp.eLastDonationCompanions1");
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "caravancamp.eCheckinState", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_335), 32, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_335), 32, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_335)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_335[iVar24], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_335[iVar24], &Var8);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "caravanCamp.caravanPurchaseList", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_367), 41, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_367), 41, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_367)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_367[iVar24 /*4*/], 4, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_367[iVar24 /*4*/], 4, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eGlobalItemIdx", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_367[iVar24 /*4*/], &Var16);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_367[iVar24 /*4*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iPurchaseTimer", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_367[iVar24 /*4*/])->f_1), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_367[iVar24 /*4*/])->f_1), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iPurchaseCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_367[iVar24 /*4*/])->f_2), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_367[iVar24 /*4*/])->f_2), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eShopPurchasedFrom", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_367[iVar24 /*4*/])->f_3), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_367[iVar24 /*4*/])->f_3), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_408), 7, "caravanCamp.sCaravanChoreData");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_408), "caravanCamp.sCaravanChoreData.iChoresCompletedBitMask");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_408.f_1), "caravanCamp.sCaravanChoreData.todLastChoreCompleted");
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_408.f_2), "caravanCamp.sCaravanChoreData.fMilkAmount");
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_408.f_3), "caravanCamp.sCaravanChoreData.fEggAmount");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_408.f_4), "caravanCamp.sCaravanChoreData.iNumberOfChoresCompletedTotal");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_408.f_5), "caravanCamp.sCaravanChoreData.iTimesCowWasMilkedToday");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_408.f_6), "caravanCamp.sCaravanChoreData.bStallsCleaned");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_415), 25, "caravanCamp.sSupplyGroups");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_408), 7, "caravanCamp.sCaravanChoreData");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_408), "caravanCamp.sCaravanChoreData.iChoresCompletedBitMask");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_408.f_1), "caravanCamp.sCaravanChoreData.todLastChoreCompleted");
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_408.f_2), "caravanCamp.sCaravanChoreData.fMilkAmount");
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_408.f_3), "caravanCamp.sCaravanChoreData.fEggAmount");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_408.f_4), "caravanCamp.sCaravanChoreData.iNumberOfChoresCompletedTotal");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_408.f_5), "caravanCamp.sCaravanChoreData.iTimesCowWasMilkedToday");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_408.f_6), "caravanCamp.sCaravanChoreData.bStallsCleaned");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_415), 25, "caravanCamp.sSupplyGroups");
 	StringCopy(&cVar0, "caravanCamp.sSupplyGroups.iGroupItemsRemovedBitset", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_415), 5, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_415), 5, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_415)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_415[iVar24], &Var8);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_415[iVar24], &Var8);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_415.f_5), "caravanCamp.sSupplyGroups.todCompanionNextRemoval");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_415.f_5), "caravanCamp.sSupplyGroups.todCompanionNextRemoval");
 	StringCopy(&cVar0, "caravanCamp.sSupplyGroups.iUnlockHashes", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_415.f_6), 18, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_415.f_6), 18, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_415.f_6)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_415.f_6[iVar24], &Var8);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_415.f_6[iVar24], &Var8);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_415.f_24), "caravanCamp.sSupplyGroups.iUnlockHashCount");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_440), 127, "caravanCamp.sContData");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_415.f_24), "caravanCamp.sSupplyGroups.iUnlockHashCount");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_440), 127, "caravanCamp.sContData");
 	StringCopy(&cVar0, "caravanCamp.sContData.sPg", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_440), 127, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_440), 127, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_440)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_440[iVar24 /*63*/], 63, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_440[iVar24 /*63*/], 63, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iCarriedOverCents", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_440[iVar24 /*63*/], &Var16);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_440[iVar24 /*63*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".sCont", 64);
 		func_279(Var16, &((uParam0->f_440[iVar24 /*63*/])->f_1));
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iContributionCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_440[iVar24 /*63*/])->f_62), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_440[iVar24 /*63*/])->f_62), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_567), 7, "caravanCamp.sCampHorseData");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_567), "caravanCamp.sCampHitchedHorseSavedData.bCampHorseHitched");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_567.f_1), "caravanCamp.sCampHitchedHorseSavedData.eCampIndex");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_567), 7, "caravanCamp.sCampHorseData");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_567), "caravanCamp.sCampHitchedHorseSavedData.bCampHorseHitched");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_567.f_1), "caravanCamp.sCampHitchedHorseSavedData.eCampIndex");
 	func_152(&(uParam0->f_567.f_2), "caravanCamp.sCampHitchedHorseSavedData.vHitchedAtCoords");
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_567.f_5), "caravanCamp.sCampHitchedHorseSavedData.fHitchedAtHeading");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_567.f_6), "caravanCamp.sCampHitchedHorseSavedData.iHorseGender");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_574), "caravanCamp.eLongAbsenceInstancesSeen");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_575), "caravanCamp.todLongAbsenceTOD");
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_576), 2, "caravanCamp.sCampAmbientStreams");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_576.f_1), "caravanCamp.sCampAmbientStreams.todLastStreamPlayed");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_576), "caravanCamp.sCampAmbientStreams.iCounterStreamBeenPlayed");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_567.f_5), "caravanCamp.sCampHitchedHorseSavedData.fHitchedAtHeading");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_567.f_6), "caravanCamp.sCampHitchedHorseSavedData.iHorseGender");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_574), "caravanCamp.eLongAbsenceInstancesSeen");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_575), "caravanCamp.todLongAbsenceTOD");
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_576), 2, "caravanCamp.sCampAmbientStreams");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_576.f_1), "caravanCamp.sCampAmbientStreams.todLastStreamPlayed");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_576), "caravanCamp.sCampAmbientStreams.iCounterStreamBeenPlayed");
+	SAVE::_0xE0B45E983BFC0768();
 	StringCopy(&cVar0, "caravanCamp.eMiniExchangeQueue", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_578), 81, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_578), 81, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_578)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_578[iVar24], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_578[iVar24], &Var8);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_96(var uParam0)
@@ -2679,41 +2679,41 @@ void func_96(var uParam0)
 	int iVar0;
 	char cVar1[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 22, "loansharkingData");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, "loansharkingData.iLSActiveDebtors");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1), 10, "loansharkingData.todLSVictimRespawn");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 22, "loansharkingData");
+	SAVE::_0x529B9CCD0972AF4D(uParam0, "loansharkingData.iLSActiveDebtors");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1), 10, "loansharkingData.todLSVictimRespawn");
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1)
 	{
 		StringCopy(&cVar1, "loansharkingData.todLSVictimRespawn", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1[iVar0], &cVar1);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_11), 10, "loansharkingData.eLSSavedMissionFlags");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_11), 10, "loansharkingData.eLSSavedMissionFlags");
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_11)
 	{
 		StringCopy(&cVar1, "loansharkingData.eLSSavedMissionFlags", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_11[iVar0], &cVar1);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_11[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_21), "loansharkingData.eLSSavedSystemFlags");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_21), "loansharkingData.eLSSavedSystemFlags");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_97(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 5, "bountyhuntingData");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, "bountyhuntingData.iBountiesCompleted");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "bountyhuntingData.eFlags");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), "bountyhuntingData.eRCMStage");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), "bountyhuntingData.iRewardAlive");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_4), "bountyhuntingData.iRewardDead");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 5, "bountyhuntingData");
+	SAVE::_0x529B9CCD0972AF4D(uParam0, "bountyhuntingData.iBountiesCompleted");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "bountyhuntingData.eFlags");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), "bountyhuntingData.eRCMStage");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), "bountyhuntingData.iRewardAlive");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_4), "bountyhuntingData.iRewardDead");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_98(var uParam0)
@@ -2722,44 +2722,44 @@ void func_98(var uParam0)
 	struct<8> Var8;
 	int iVar16;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 17, "bankRobberyData");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 17, "bankRobberyData");
 	StringCopy(&cVar0, "bankRobberyData.eFlags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 5, &cVar0);
+	SAVE::_0x81F4E92BE3958364(uParam0, 5, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < *uParam0)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "bankRobberyData.eStatus", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_5), 5, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_5), 5, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_5)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_5[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_5[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "bankRobberyData.todLastRobTime", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_10), 5, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_10), 5, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_10)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_10[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_10[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "bankRobberyData.iCompletedRobberies", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_15), &cVar0);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_16), "bankRobberyData.bIsBraveClientActive");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_15), &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_16), "bankRobberyData.bIsBraveClientActive");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_99(var uParam0)
@@ -2768,103 +2768,103 @@ void func_99(var uParam0)
 	struct<8> Var8;
 	int iVar16;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 127, "coachRobbery");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, "coachRobbery.iCompletedRobberies");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), "coachRobbery.eActiveRobbery");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 127, "coachRobbery");
+	SAVE::_0x529B9CCD0972AF4D(uParam0, "coachRobbery.iCompletedRobberies");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), "coachRobbery.eActiveRobbery");
 	StringCopy(&cVar0, "coachRobbery.eStatus", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_4), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_4), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_4)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_4[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_4[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.eCurrentVariant", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_19), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_19), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_19)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_19[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_19[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.eCurrentDifficulty", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_34), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_34), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_34)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_34[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_34[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.todCoachRobExp", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_79), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_79), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_79)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_79[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_79[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.todCoachRobAct", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_64), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_64), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_64)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_64[iVar16], &Var8);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_64[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.iTimesOffered", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_49), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_49), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_49)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_49[iVar16], &Var8);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_49[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.bNoteHasBeenRead", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_94), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_94), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_94)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0->f_94[iVar16], &Var8);
+		SAVE::_0xBB7F4273C186BC4B(uParam0->f_94[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "coachRobbery.iRobberiesSinceLastPoliceTrap", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_111), 15, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_111), 15, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < uParam0->f_111)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar16, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_111[iVar16], &Var8);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_111[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), "coachRobbery.eCurrentRobberyStr");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "coachRobbery.eCurrentRobberyRho");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_126), "coachRobbery.eCoachBitflags");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_109), "coachRobbery.todCoachRobberyCompleted");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_110), "coachRobbery.todTipGivenByFreightWorker");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), "coachRobbery.eCurrentRobberyStr");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "coachRobbery.eCurrentRobberyRho");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_126), "coachRobbery.eCoachBitflags");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_109), "coachRobbery.todCoachRobberyCompleted");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_110), "coachRobbery.todTipGivenByFreightWorker");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_100(var uParam0)
@@ -2874,32 +2874,32 @@ void func_100(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "tutorialSaved", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 76, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 76, &cVar1);
 	StringCopy(&cVar1, "tutorialSaved.sTimedData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 76, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 76, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*3*/], 3, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*3*/], 3, &Var9);
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
 		StringConCat(&Var9, "iTimeLastRun", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*3*/], &Var9);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*3*/], &Var9);
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
 		StringConCat(&Var9, "iTimesRun", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*3*/])->f_1), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*3*/])->f_1), &Var9);
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
 		StringConCat(&Var9, "eTutorial", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_2), &Var9);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_2), &Var9);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_101(var uParam0, char* sParam1, int iParam2)
@@ -2909,16 +2909,16 @@ void func_101(var uParam0, char* sParam1, int iParam2)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "eTutorialsRun", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 22, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 22, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_102(var uParam0)
@@ -2930,51 +2930,51 @@ void func_102(var uParam0)
 	struct<8> Var25;
 
 	StringCopy(&cVar1, "lawStateData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 73, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 73, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*12*/], 12, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*12*/], 12, &Var9);
 		cVar17 = { Var9 };
 		StringConCat(&cVar17, "iStateBounty", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*12*/], &cVar17);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*12*/], &cVar17);
 		cVar17 = { Var9 };
 		StringConCat(&cVar17, "vLastKnownLocation", 64);
 		func_152(&(((*uParam0)[iVar0 /*12*/])->f_1), &cVar17);
 		cVar17 = { Var9 };
 		StringConCat(&cVar17, "fLastKnownRadius", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&(((*uParam0)[iVar0 /*12*/])->f_4), &cVar17);
+		SAVE::_0x35DEFECAE36D4FAE(&(((*uParam0)[iVar0 /*12*/])->f_4), &cVar17);
 		cVar17 = { Var9 };
 		StringConCat(&cVar17, "eStateFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_5), &cVar17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_5), &cVar17);
 		cVar17 = { Var9 };
 		StringConCat(&cVar17, "stateLawMemoryData", 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(&(((*uParam0)[iVar0 /*12*/])->f_6), 6, &cVar17);
+		SAVE::_0x443174C20B8B9E7F(&(((*uParam0)[iVar0 /*12*/])->f_6), 6, &cVar17);
 		Var25 = { cVar17 };
 		StringConCat(&Var25, "eLastOuftitSeenByLaw", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6), &Var25);
 		Var25 = { cVar17 };
 		StringConCat(&Var25, "eSideburnsStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_1), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_1), &Var25);
 		Var25 = { cVar17 };
 		StringConCat(&Var25, "eChinStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_2), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_2), &Var25);
 		Var25 = { cVar17 };
 		StringConCat(&Var25, "eMustacheStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_3), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_3), &Var25);
 		Var25 = { cVar17 };
 		StringConCat(&Var25, "eTimeOutfitLastSeen", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_4), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_4), &Var25);
 		Var25 = { cVar17 };
 		StringConCat(&Var25, "eAppearanceLawMemoryFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_5), &Var25);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_6.f_5), &Var25);
+		SAVE::_0xE0B45E983BFC0768();
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_103(var uParam0)
@@ -2985,20 +2985,20 @@ void func_103(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "lawDistrictData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 18, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 18, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eLawDistrictFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_104(var uParam0)
@@ -3009,41 +3009,41 @@ void func_104(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "caravanEventData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 57, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 57, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < 7)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*8*/], 8, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*8*/], 8, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".iTimesCompleted", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*8*/], &Var17);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*8*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".iTimesSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_1), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".iTimesLaunched", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_2), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".iTimesSpawned", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_3), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".todNextAvailable", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_4), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".iGeneric1", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_5), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_5), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".iGeneric2", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_6), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_6), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bUnlocked", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*8*/])->f_7), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*8*/])->f_7), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_105(var uParam0)
@@ -3053,16 +3053,16 @@ void func_105(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "pendingRCMStage", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 40, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 40, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_106(var uParam0)
@@ -3072,44 +3072,44 @@ void func_106(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "rcmDataSaved", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 603, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 603, &cVar1);
 	StringCopy(&cVar1, "rcmDataSaved.iSavedFloat1", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 201, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 201, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringConCat(&Var9, "_", 64);
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var9);
+		SAVE::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "rcmDataSaved.iSavedFloat2", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_201), 201, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_201), 201, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_201)
 	{
 		Var9 = { cVar1 };
 		StringConCat(&Var9, "_", 64);
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_201[iVar0], &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_201[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "rcmDataSaved.eRCMSavedFlags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_402), 201, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_402), 201, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_402)
 	{
 		Var9 = { cVar1 };
 		StringConCat(&Var9, "_", 64);
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_402[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_402[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_107(var uParam0)
@@ -3120,26 +3120,26 @@ void func_107(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "playerOnlyGreetStack", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 46, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 46, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*3*/], 3, &Var17);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*3*/], 3, &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eRuleset", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*3*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*3*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todExpiry", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "bTempDisable", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*3*/])->f_2), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*3*/])->f_2), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_108(var uParam0)
@@ -3152,109 +3152,109 @@ void func_108(var uParam0)
 	int iVar33;
 
 	StringCopy(&cVar1, "companionData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 1621, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 1621, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x8E8FFB9E4AD051D2((*uParam0)[iVar0 /*60*/], 60, &Var9, 21);
+		SAVE::_0x8E8FFB9E4AD051D2((*uParam0)[iVar0 /*60*/], 60, &Var9, 21);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "companionFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*60*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*60*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iTrustLevel", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*60*/])->f_1), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*60*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iFollowerLevel", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*60*/])->f_2), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*60*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "companionOutfit", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_3), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "lastWornOutfitOnMission", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_4), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "wornItems", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_5), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_5), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "modelCompanion", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_6), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_6), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "modelCompanionHorse", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_7), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_7), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "immediateGreetOverride", 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(&(((*uParam0)[iVar0 /*60*/])->f_8), 3, &Var17);
+		SAVE::_0x443174C20B8B9E7F(&(((*uParam0)[iVar0 /*60*/])->f_8), 3, &Var17);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eRuleset", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_8), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_8), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "todExpiry", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_8.f_1), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_8.f_1), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "bTempDisable", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*60*/])->f_8.f_2), &Var25);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*60*/])->f_8.f_2), &Var25);
+		SAVE::_0xE0B45E983BFC0768();
 		Var17 = { Var9 };
 		StringConCat(&Var17, "greetOverrides", 64);
-		_NAMESPACE59::_0x81F4E92BE3958364(&(((*uParam0)[iVar0 /*60*/])->f_11), 31, &Var17);
+		SAVE::_0x81F4E92BE3958364(&(((*uParam0)[iVar0 /*60*/])->f_11), 31, &Var17);
 		iVar33 = 0;
 		while (iVar33 < 10)
 		{
 			Var25 = { Var17 };
 			StringIntConCat(&Var25, iVar33, 64);
-			_NAMESPACE59::_0x443174C20B8B9E7F(((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/], 3, &Var25);
+			SAVE::_0x443174C20B8B9E7F(((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/], 3, &Var25);
 			Var25 = { Var17 };
 			StringConCat(&Var25, "eRuleset", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/], &Var25);
+			SAVE::_0xB25B5A375BE5BE26(((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/], &Var25);
 			Var25 = { Var17 };
 			StringConCat(&Var25, "todExpiry", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&((((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/])->f_1), &Var25);
+			SAVE::_0xB25B5A375BE5BE26(&((((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/])->f_1), &Var25);
 			Var25 = { Var17 };
 			StringConCat(&Var25, "bTempDisable", 64);
-			_NAMESPACE59::_0xBB7F4273C186BC4B(&((((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/])->f_2), &Var25);
-			_NAMESPACE59::_0xE0B45E983BFC0768();
+			SAVE::_0xBB7F4273C186BC4B(&((((*uParam0)[iVar0 /*60*/])->f_11[iVar33 /*3*/])->f_2), &Var25);
+			SAVE::_0xE0B45E983BFC0768();
 			iVar33++;
 		}
-		_NAMESPACE59::_0xA844FEB5C22C2C74();
+		SAVE::_0xA844FEB5C22C2C74();
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eTemporaryMood", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_42), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_42), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "ePersistentMood", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_44), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_44), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todTemporaryMoodExpiry", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_43), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_43), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todLastItemInteraction", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_45), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_45), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todLastChore", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_46), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_46), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todLastActivity", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_47), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_47), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todRoleCooldown", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_48), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_48), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eTimedEventType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_49), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_49), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todTimedEvent", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_50), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_50), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "txtSchedule", 64);
-		_NAMESPACE59::_0x186608A2AC6F9E88(&(((*uParam0)[iVar0 /*60*/])->f_51), &Var17);
+		SAVE::_0x186608A2AC6F9E88(&(((*uParam0)[iVar0 /*60*/])->f_51), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eDeedReservedFor", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_59), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*60*/])->f_59), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_109(var uParam0)
@@ -3265,98 +3265,98 @@ void func_109(var uParam0)
 	int iVar24;
 
 	StringCopy(&cVar0, "companion_manager", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 476, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 476, &cVar0);
 	StringConCat(&cVar0, ".itemRequests", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 271, &cVar0);
+	SAVE::_0x81F4E92BE3958364(uParam0, 271, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < *uParam0)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar24 /*27*/], 27, &Var8);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar24 /*27*/], 27, &Var8);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eRequest", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar24 /*27*/], &cVar16);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar24 /*27*/], &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eRequestItem", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_1), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_1), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "iNumRequested", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar24 /*27*/])->f_2), &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar24 /*27*/])->f_2), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eCompanion", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_3), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_3), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eHandInType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_4), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_4), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eResultType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_5), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_5), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "txtConversation", 64);
-		_NAMESPACE59::_0x5A10D6506B2F2C63(&(((*uParam0)[iVar24 /*27*/])->f_6), &cVar16);
+		SAVE::_0x5A10D6506B2F2C63(&(((*uParam0)[iVar24 /*27*/])->f_6), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "txtThankDialogue", 64);
-		_NAMESPACE59::_0x5A10D6506B2F2C63(&(((*uParam0)[iVar24 /*27*/])->f_9), &cVar16);
+		SAVE::_0x5A10D6506B2F2C63(&(((*uParam0)[iVar24 /*27*/])->f_9), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "txtHandOverScenePath", 64);
-		_NAMESPACE59::_0x186608A2AC6F9E88(&(((*uParam0)[iVar24 /*27*/])->f_12), &cVar16);
+		SAVE::_0x186608A2AC6F9E88(&(((*uParam0)[iVar24 /*27*/])->f_12), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eVignette", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_20), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_20), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "ePickupReward", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_21), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_21), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eModelReward", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_22), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_22), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "iRewardSupplyGroupHash", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar24 /*27*/])->f_23), &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar24 /*27*/])->f_23), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eState", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_24), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*27*/])->f_24), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bHasThankDialoguePlayed", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar24 /*27*/])->f_25), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar24 /*27*/])->f_25), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bRewardHelpTextShown", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar24 /*27*/])->f_26), &cVar16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar24 /*27*/])->f_26), &cVar16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	cVar16 = { cVar0 };
 	StringConCat(&cVar16, ".iItemRequestCompleteBitset", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_271), &cVar16);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_271), &cVar16);
 	cVar16 = { cVar0 };
 	StringConCat(&cVar16, ".eReturnedJackBook", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_272), &cVar16);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_272), &cVar16);
 	StringCopy(&cVar0, "companion_manager.iNumAvailableActivities", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_273), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_273), &cVar0);
 	StringCopy(&cVar0, "companion_manager.availableActivities", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_274), 201, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_274), 201, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_274)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0->f_274[iVar24 /*20*/], 20, &Var8, 20);
+		SAVE::_0x8E8FFB9E4AD051D2(uParam0->f_274[iVar24 /*20*/], 20, &Var8, 20);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eActivity", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_274[iVar24 /*20*/], &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_274[iVar24 /*20*/], &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eActivityInstance", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_1), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_1), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eHost", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_2), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_2), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eParticipants", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_3), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_3), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eConditionFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_4), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_4), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "vInvitePos", 64);
 		func_152(&((uParam0->f_274[iVar24 /*20*/])->f_5), &cVar16);
@@ -3365,38 +3365,38 @@ void func_109(var uParam0)
 		func_152(&((uParam0->f_274[iVar24 /*20*/])->f_8), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bEnabledInFlow", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_11), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_11), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bHasBeenLaunched", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_12), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_12), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bMustOffer", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_13), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_13), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bOfferUntilHasRun", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_14), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_14), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "bForceLaunch", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_15), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_274[iVar24 /*20*/])->f_15), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eActivityDeed", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_16), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_16), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eTODAvailable", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_17), &cVar16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_274[iVar24 /*20*/])->f_17), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "iWeight", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_274[iVar24 /*20*/])->f_18), &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_274[iVar24 /*20*/])->f_18), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "iNumTimesOffered", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_274[iVar24 /*20*/])->f_19), &cVar16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_274[iVar24 /*20*/])->f_19), &cVar16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "companion_manager.todHungoverExpiry", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_475), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_475), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_110(var uParam0)
@@ -3407,23 +3407,23 @@ void func_110(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "activities", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 61, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 61, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bHasBeenPerformed", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B((*uParam0)[iVar0 /*2*/], &Var17);
+		SAVE::_0xBB7F4273C186BC4B((*uParam0)[iVar0 /*2*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bHasBeenOffered", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_111(var uParam0)
@@ -3434,26 +3434,26 @@ void func_111(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "outfits", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 286, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 286, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*3*/], 3, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*3*/], 3, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "status", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*3*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*3*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "effect", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "tags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_2), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*3*/])->f_2), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_112(var uParam0)
@@ -3463,49 +3463,49 @@ void func_112(var uParam0)
 	struct<8> Var16;
 	int iVar24;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 17, "playerFacialHair");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 17, "playerFacialHair");
 	StringCopy(&cVar0, "playerFacialHair.facialHair", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 16, &cVar0);
+	SAVE::_0x81F4E92BE3958364(uParam0, 16, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < *uParam0)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar24 /*5*/], 5, &Var8);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar24 /*5*/], 5, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".facialHairLength", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar24 /*5*/], &Var16);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar24 /*5*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".facialHairCut", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*5*/])->f_1), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*5*/])->f_1), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".facialHairStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*5*/])->f_2), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*5*/])->f_2), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".facialHairNextGrowthTimer", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*5*/])->f_3), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar24 /*5*/])->f_3), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iNumAcceleratedGrowthCycles", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar24 /*5*/])->f_4), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar24 /*5*/])->f_4), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_16), "playerFacialHair.eFacialHairFlags");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_16), "playerFacialHair.eFacialHairFlags");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_113(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 7, "playerHeadHair");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "playerHeadHair.ePomadeWearOffTimer");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "playerHeadHair.headHairLength");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), "playerHeadHair.eHeadHairCut");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), "playerHeadHair.eHeadHairStyle");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_4), "playerHeadHair.eHeadHairFlags");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_5), "playerHeadHair.headHairNextGrowthTimer");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_6), "playerHeadHair.iNumAcceleratedGrowthCycles");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 7, "playerHeadHair");
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "playerHeadHair.ePomadeWearOffTimer");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "playerHeadHair.headHairLength");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), "playerHeadHair.eHeadHairCut");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), "playerHeadHair.eHeadHairStyle");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_4), "playerHeadHair.eHeadHairFlags");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_5), "playerHeadHair.headHairNextGrowthTimer");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_6), "playerHeadHair.iNumAcceleratedGrowthCycles");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_114(var uParam0, char* sParam1, int iParam2)
@@ -3516,29 +3516,29 @@ void func_114(var uParam0, char* sParam1, int iParam2)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "mapBlipData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 1001, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 1001, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "blipRegion", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*4*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*4*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "blipType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "blipPackedPosition", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "blipTODFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_115(var uParam0)
@@ -3548,58 +3548,58 @@ void func_115(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "discoverableData", 64);
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 157, &cVar1, 14);
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 157, &cVar1, 14);
 	StringCopy(&cVar1, "discoverableData.eFlags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 144, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 144, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoEasel_timesViewed", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_145), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_145), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "todDiscoEasel_timeStamp", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_144), &Var9);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_144), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoEasel_currentlyViewed", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_147), &Var9);
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_147), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoPhonograph_visits", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_146), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_146), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoDreamcatchers_bitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_148), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_148), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoCarriable_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_149), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_149), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoCarriableMore_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_150), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_150), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoCarriableArrows_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_151), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_151), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoLocationVersion_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_152), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_152), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoLocationMoreVersion_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_153), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_153), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoLocationOtherVersion_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_154), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_154), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoCorpse_iBitField", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_155), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_155), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "DiscoDisable", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_156), &Var9);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_156), &Var9);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_116(var uParam0)
@@ -3609,40 +3609,40 @@ void func_116(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "showManagerData", 64);
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 17, &cVar1, 7);
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 17, &cVar1, 7);
 	StringCopy(&cVar1, "showManagerData.eCurrentShow", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 6, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 6, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "showManagerData.TODLastTimeViewed", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_6), 6, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_6), 6, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_6)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_6[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_6[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "showManagerData.iShowBits", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_12), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_12), &cVar1);
 	StringCopy(&cVar1, "showManagerData.iTotalShowViews", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_13), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_13), &cVar1);
 	StringCopy(&cVar1, "showManagerData.iTotalMCViews", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_14), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_14), &cVar1);
 	StringCopy(&cVar1, "showManagerData.iTotalMagicLanternViews", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_15), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_15), &cVar1);
 	StringCopy(&cVar1, "showManagerData.iTotalMovieViews", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_16), &cVar1);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_16), &cVar1);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_117(var uParam0)
@@ -3652,28 +3652,28 @@ void func_117(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "townSecretData", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 8, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 8, &cVar1);
 	StringCopy(&cVar1, "townSecretData.eFlags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 5, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 5, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "TownSecret_VanHorn_bitfield", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_5), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_5), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "iTownSecret_Saint_Denis_bitfield", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_6), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_6), &Var9);
 	Var9 = { cVar1 };
 	StringConCat(&Var9, "eStrawberryLastDayUFOSeen", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_7), &Var9);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_7), &Var9);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_118(var uParam0)
@@ -3684,53 +3684,53 @@ void func_118(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "eventArea", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 49, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 49, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*12*/], 12, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*12*/], 12, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iStage", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*12*/], &Var17);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*12*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iForceTransitionStage", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_1), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todNextStage", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todCounter", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_3), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_4), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eStateFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_5), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_5), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iEventAreaCustomData", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_6), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_6), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iEventAreaCustomCounter", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_7), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_7), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iEventAreaMassacreCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_8), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*12*/])->f_8), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iAggroStage", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_9), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_9), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todAggroed", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_10), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_10), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todMassacred", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_11), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*12*/])->f_11), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_119(var uParam0)
@@ -3739,11 +3739,11 @@ void func_119(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "duelingData", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".eFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_120(var uParam0, char* sParam1, int iParam2)
@@ -3754,7 +3754,7 @@ void func_120(var uParam0, char* sParam1, int iParam2)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "herbs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 45, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 45, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < 44)
 	{
@@ -3762,10 +3762,10 @@ void func_120(var uParam0, char* sParam1, int iParam2)
 		StringIntConCat(&Var9, iVar0, 64);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eHerbTypeFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_121(var uParam0)
@@ -3775,32 +3775,32 @@ void func_121(var uParam0)
 	struct<8> Var9;
 	struct<8> Var17;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 65, "huntingZoneData");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 65, "huntingZoneData");
 	StringCopy(&cVar1, "huntingZoneData.sHuntingZoneTypes", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 65, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 65, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 65, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 65, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bDiscovered", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B((*uParam0)[iVar0 /*4*/], &Var17);
+		SAVE::_0xBB7F4273C186BC4B((*uParam0)[iVar0 /*4*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bCompleted", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eLaunchTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".bLegendaryHasBeenSkinned", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_122(var uParam0)
@@ -3811,23 +3811,23 @@ void func_122(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "propertyData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 35, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 35, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < 17)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*2*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*2*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eTimeOfDay", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_123(var uParam0)
@@ -3837,24 +3837,24 @@ void func_123(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "homeRobberyData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 57, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 57, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*7*/], 7, &Var9);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*7*/], "todNextAvailable");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_1), "todLastVisited");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_4), "eFlags");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_5), "eFlagsPlus");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_6), "eFlagsSet3");
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_2), "iTimesRobbed");
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_3), "iPlayerCentsLostAtHome");
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*7*/], 7, &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*7*/], "todNextAvailable");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_1), "todLastVisited");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_4), "eFlags");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_5), "eFlagsPlus");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_6), "eFlagsSet3");
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_2), "iTimesRobbed");
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_3), "iPlayerCentsLostAtHome");
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_124(var uParam0)
@@ -3864,21 +3864,21 @@ void func_124(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "newspapers.", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 57, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 57, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*4*/], ".eStatus");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_1), ".eDynamicStory1");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), ".eDynamicStory2");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), ".eFishingStory");
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*4*/], ".eStatus");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_1), ".eDynamicStory1");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), ".eDynamicStory2");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), ".eFishingStory");
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_125(var uParam0)
@@ -3888,24 +3888,24 @@ void func_125(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "dynamicArticles.", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 35, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 35, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_126(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, "itemData");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "itemData.todSurvivalistActive");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "itemData.todChewingGumActive");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, "itemData");
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "itemData.todSurvivalistActive");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "itemData.todChewingGumActive");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_127(var uParam0)
@@ -3916,47 +3916,47 @@ void func_127(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "gangs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 61, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 61, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*10*/], 10, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*10*/], 10, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "gangSavedFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*10*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*10*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "gangStatus", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*10*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*10*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iKillsSinceStatusChange", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_2), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todLastKill", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*10*/])->f_3), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*10*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iGenericInt1", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_4), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iNumCampfiresCleared", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_5), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_5), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iNumCampfiresSpawned", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_6), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_6), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iNumCampfiresSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_7), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_7), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iNumCampfiresPersisted", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_8), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_8), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iGangEncounterStage", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_9), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*10*/])->f_9), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_128(var uParam0)
@@ -3971,58 +3971,58 @@ void func_128(var uParam0)
 	StringCopy(&cVar1, "gangAmbushesSeen", 64);
 	StringCopy(&cVar33, "ambushTrack", 64);
 	StringCopy(&cVar9, "gangAmbushesStraight", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 197, "ambush");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 197, "ambush");
 	StringCopy(&cVar33, "ambush.ambushTrack", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 177, &cVar33);
+	SAVE::_0x81F4E92BE3958364(uParam0, 177, &cVar33);
 	iVar0 = 0;
 	while (iVar0 < 44)
 	{
 		Var25 = { cVar33 };
 		StringIntConCat(&Var25, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var25);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var25);
 		Var17 = { Var25 };
 		StringConCat(&Var17, ".iCompletedCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*4*/], &Var17);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*4*/], &Var17);
 		Var17 = { Var25 };
 		StringConCat(&Var17, ".iSeenCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
 		Var17 = { Var25 };
 		StringConCat(&Var17, ".iSpawnedCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
 		Var17 = { Var25 };
 		StringConCat(&Var17, ".iNextAllowedSpawnMinutes", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_177), 7, &cVar1);
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_177), 7, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_177)
 	{
 		Var17 = { cVar1 };
 		StringIntConCat(&Var17, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_177[iVar0], &Var17);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_177[iVar0], &Var17);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_184), 7, &cVar9);
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_184), 7, &cVar9);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_184)
 	{
 		Var17 = { cVar9 };
 		StringIntConCat(&Var17, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_184[iVar0], &Var17);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_184[iVar0], &Var17);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_191), "ambush.eAmbushSavedFlags");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_192), "ambush.todLastAmbushTime");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_193), "ambush.eLastAmbushGang");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_194), "ambush.eLastAmbush");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_195), "ambush.iAmbushesCompleted");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_196), "ambush.iNumRecognizeAmbushesStraight");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_191), "ambush.eAmbushSavedFlags");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_192), "ambush.todLastAmbushTime");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_193), "ambush.eLastAmbushGang");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_194), "ambush.eLastAmbush");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_195), "ambush.iAmbushesCompleted");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_196), "ambush.iNumRecognizeAmbushesStraight");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_129(var uParam0)
@@ -4032,36 +4032,36 @@ void func_129(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "campfires.iVignetteVariations", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 38, "campfires");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "campfires.eFoothillsStoriesSpoken");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "campfires.eMountainsStoriesSpoken");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), "campfires.ePlainsStoriesSpoken");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), "campfires.eSwampsStoriesSpoken");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_35), 2, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 38, "campfires");
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "campfires.eFoothillsStoriesSpoken");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "campfires.eMountainsStoriesSpoken");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), "campfires.ePlainsStoriesSpoken");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), "campfires.eSwampsStoriesSpoken");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_35), 2, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_35)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_35[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_35[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "campfires.vCampfireUsedPositions", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_4), 31, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_4), 31, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_4)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_4[iVar0 /*3*/], 3, &Var9);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_4[iVar0 /*3*/], 3, &Var9);
 		func_152(uParam0->f_4[iVar0 /*3*/], &Var9);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_37), "campfires.eCampSavedFlags");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_37), "campfires.eCampSavedFlags");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_130(var uParam0)
@@ -4071,16 +4071,16 @@ void func_130(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "worldStates", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 14, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 14, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_131(var uParam0)
@@ -4090,16 +4090,16 @@ void func_131(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "worldStateTimers", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 61, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 61, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_132(var uParam0)
@@ -4109,16 +4109,16 @@ void func_132(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "featureUnlocked", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 3, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 3, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_133(var uParam0)
@@ -4128,32 +4128,32 @@ void func_133(var uParam0)
 	struct<8> Var9;
 	struct<8> Var17;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 81, "jailData");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 81, "jailData");
 	StringCopy(&cVar1, "jailData.sPrisoners", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 81, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 81, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eJailRegion", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*4*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*4*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "ePrisoner", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "ePrisonerFlag", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "ePrisonerDialogue", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_134(var uParam0)
@@ -4163,20 +4163,20 @@ void func_134(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "trainData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 66, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 66, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < 13)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*5*/], 5, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*5*/], 5, &Var9);
 		func_152(&(((*uParam0)[iVar0 /*5*/])->f_1), "vTrainLoc");
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*5*/], "trainFlags");
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*5*/])->f_4), "bDirection");
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*5*/], "trainFlags");
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*5*/])->f_4), "bDirection");
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_135(var uParam0)
@@ -4186,124 +4186,124 @@ void func_135(var uParam0)
 	struct<8> Var9;
 	struct<8> Var17;
 
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 71, "playerRPGData", 39);
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 71, "playerRPGData", 39);
 	StringCopy(&cVar1, "playerRPGData.fPlayerEfficiency", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 4, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 4, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "fCorePoints", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "playerRPGData.sAttributeOverpoweredTime", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_4), 7, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_4), 7, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_4)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_4[iVar0 /*2*/], 2, &Var9);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_4[iVar0 /*2*/], 2, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "fTankTime", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_4[iVar0 /*2*/], &Var17);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_4[iVar0 /*2*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "fCoreTime", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&((uParam0->f_4[iVar0 /*2*/])->f_1), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x35DEFECAE36D4FAE(&((uParam0->f_4[iVar0 /*2*/])->f_1), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "playerRPGData.fAttributePoints", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_11), 24, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_11), 24, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_11)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_11[iVar0], &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_11[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "playerRPGData.iHonor", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_35), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_35), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.iHighestHonorRank", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_36), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_36), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.iLowestHonorRank", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_37), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_37), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.iHighestBountyHonorReached", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_38), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_38), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fDeadeyeAmount", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_39), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_39), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fPlayerWeightLowerLimit", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_40), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_40), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fPlayerWeightUpperLimit", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_41), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_41), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fPlayerTankSickMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_44), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_44), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fPlayerStamWeightMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_45), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_45), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.RPG_TIME_BEFORE_DEADEYECORE_EMPTY", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_46), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_46), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.RPG_TIME_BEFORE_STAMINACORE_EMPTY", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_47), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_47), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.RPG_TIME_BEFORE_HEALTHCORE_EMPTY", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_48), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_48), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.iOverfedTimer", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_42), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_42), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.bPlayerPoisoned", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_43), &cVar1);
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_43), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fGritResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_49), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_49), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fInstinctResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_50), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_50), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fStrengthResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_51), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_51), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fFatResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_52), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_52), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fHeatResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_53), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_53), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fColdResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_54), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_54), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fBonusHealthXP", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_55), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_55), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fBonusDeadeyeXP", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_56), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_56), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fBonusStaminaXP", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_57), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_57), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.ePlayerSickness", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_67), &cVar1);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_67), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fEagleEyeDepleteMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_58), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_58), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fEagleEyeRangeBonus", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_59), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_59), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fWeaponDegradeResist", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_60), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_60), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fDamageScaleMelee", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_61), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_61), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fDamageMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_62), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_62), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fDamageTakenOnHorseModifier", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_63), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_63), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fBowStaminaModifier", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_64), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_64), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.iGrappledKilledBears", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_65), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_65), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.iTimesEatenFood", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_66), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_66), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fHorseBondingXPMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_68), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_68), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fHealthRefillMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_69), &cVar1);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_69), &cVar1);
 	StringCopy(&cVar1, "playerRPGData.fFortifyMod", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_70), &cVar1);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_70), &cVar1);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_136(var uParam0)
@@ -4314,35 +4314,35 @@ void func_136(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "moralChoices", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 16, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 16, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".eChoiceType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_137(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 286, "cacheOutfitData");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 286, "cacheOutfitData");
 	func_280("cachedOutfits", uParam0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_138(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, "playerCampData");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "playerCampData.eFlags");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), "playerCampData.iNumberOfCamps");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, "playerCampData");
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "playerCampData.eFlags");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), "playerCampData.iNumberOfCamps");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_139(var uParam0)
@@ -4351,14 +4351,14 @@ void func_139(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "jailbreakData", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "iViewedJailbreaks", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &Var8);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "lastViewedJailbreakTime", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_140(var uParam0)
@@ -4367,31 +4367,31 @@ void func_140(var uParam0)
 	char cVar1[64];
 	struct<8> Var9;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 22, "sFishingDataSaved");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 22, "sFishingDataSaved");
 	StringCopy(&cVar1, "sFishingDataSaved.eCurrentBaitEquipped", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 5, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 5, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "sFishingDataSaved.bHasLegendaryFishBeenCaught", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_5), 16, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_5), 16, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_5)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0->f_5[iVar0], &Var9);
+		SAVE::_0xBB7F4273C186BC4B(uParam0->f_5[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_21), "sFishingDataSaved.iFishingDataSavedBits");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_21), "sFishingDataSaved.iFishingDataSavedBits");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_141(var uParam0)
@@ -4404,44 +4404,44 @@ void func_141(var uParam0)
 	struct<8> Var26;
 
 	StringCopy(&cVar2, "managedTowns", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 417, &cVar2);
+	SAVE::_0x81F4E92BE3958364(uParam0, 417, &cVar2);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var10 = { cVar2 };
 		StringIntConCat(&Var10, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*26*/], 26, &Var10);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*26*/], 26, &Var10);
 		StringConCat(&Var10, ".eActiveTownStateTags", 64);
-		_NAMESPACE59::_0x81F4E92BE3958364((*uParam0)[iVar0 /*26*/], 26, &Var10);
+		SAVE::_0x81F4E92BE3958364((*uParam0)[iVar0 /*26*/], 26, &Var10);
 		iVar1 = 0;
 		while (iVar1 < uParam0->f_1)
 		{
 			Var18 = { Var10 };
 			StringIntConCat(&Var18, iVar1, 64);
-			_NAMESPACE59::_0x443174C20B8B9E7F((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/], 5, &Var18);
+			SAVE::_0x443174C20B8B9E7F((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/], 5, &Var18);
 			Var26 = { Var18 };
 			StringConCat(&Var26, ".eTag", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/], &Var26);
+			SAVE::_0xB25B5A375BE5BE26((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/], &Var26);
 			Var26 = { Var18 };
 			StringConCat(&Var26, ".eTagPriority", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_1), &Var26);
+			SAVE::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_1), &Var26);
 			Var26 = { Var18 };
 			StringConCat(&Var26, ".eTagPersistence", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_2), &Var26);
+			SAVE::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_2), &Var26);
 			Var26 = { Var18 };
 			StringConCat(&Var26, ".eCategory", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_3), &Var26);
+			SAVE::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_3), &Var26);
 			Var26 = { Var18 };
 			StringConCat(&Var26, ".eTODExpiry", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_4), &Var26);
-			_NAMESPACE59::_0xE0B45E983BFC0768();
+			SAVE::_0xB25B5A375BE5BE26(&(((*(*uParam0)[iVar0 /*26*/])[iVar1 /*5*/])->f_4), &Var26);
+			SAVE::_0xE0B45E983BFC0768();
 			iVar1++;
 		}
-		_NAMESPACE59::_0xA844FEB5C22C2C74();
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xA844FEB5C22C2C74();
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_142(var uParam0)
@@ -4452,41 +4452,41 @@ void func_142(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "specialPeds", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 241, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 241, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*8*/], 8, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*8*/], 8, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "ePedStage", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*8*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*8*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eSavedFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todLastSeen", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todLastEncounter", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_3), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todDeathTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_4), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*8*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iTimesSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_5), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_5), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iInteracts", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_6), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_6), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iDeaths", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_7), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*8*/])->f_7), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_143(var uParam0)
@@ -4496,32 +4496,32 @@ void func_143(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "dataShacksSaved", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 40, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 40, &cVar1);
 	StringCopy(&cVar1, "dataShacksSaved.iSavedFloat1", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 20, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 20, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringConCat(&Var9, "_", 64);
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var9);
+		SAVE::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "dataShacksSaved.iSavedFloat2", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_20), 20, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_20), 20, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_20)
 	{
 		Var9 = { cVar1 };
 		StringConCat(&Var9, "_", 64);
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_20[iVar0], &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_20[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_144(var uParam0)
@@ -4532,23 +4532,23 @@ void func_144(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "hideouts", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 19, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 19, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iNumActorsRemaining", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*2*/], &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*2*/], &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_145(var uParam0)
@@ -4557,41 +4557,41 @@ void func_145(var uParam0)
 	char cVar1[64];
 	struct<8> Var9;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 39, "sFilletDataSaved");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 39, "sFilletDataSaved");
 	StringCopy(&cVar1, "sFilletDataSaved.iBestLaps", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 13, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 13, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "sFilletDataSaved.iFastestLap", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_13), 13, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_13), 13, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_13)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_13[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_13[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "sFilletDataSaved.iLongestTime", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_26), 13, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_26), 13, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_26)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_26[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_26[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_146(var uParam0)
@@ -4601,29 +4601,29 @@ void func_146(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "eBufferedJournalEntryUnlocks", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 21, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 21, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_147(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 7, "collectiblesData");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, "collectiblesData.bDinoBonesStage2RCM");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_1), "collectiblesData.bLegendaryFishStage2RCM");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_2), "collectiblesData.bRockCarvingsStage2RCM");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_3), "collectiblesData.bTaxidermyStage1RCM");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_4), "collectiblesData.bCarolinaParakeetExtinction");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_5), "collectiblesData.bChalTownHoldups");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_6), "collectiblesData.bTSAnnesburgRiddle");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 7, "collectiblesData");
+	SAVE::_0xBB7F4273C186BC4B(uParam0, "collectiblesData.bDinoBonesStage2RCM");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_1), "collectiblesData.bLegendaryFishStage2RCM");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_2), "collectiblesData.bRockCarvingsStage2RCM");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_3), "collectiblesData.bTaxidermyStage1RCM");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_4), "collectiblesData.bCarolinaParakeetExtinction");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_5), "collectiblesData.bChalTownHoldups");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_6), "collectiblesData.bTSAnnesburgRiddle");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_148(var uParam0)
@@ -4632,19 +4632,19 @@ void func_148(var uParam0)
 	char cVar1[64];
 	struct<8> Var9;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 3, "sCheatManagerSaved");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 3, "sCheatManagerSaved");
 	StringCopy(&cVar1, "sCheatManagerSaved.iUnlockedCheats", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 3, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 3, &cVar1);
 	iVar0 = 0;
 	while (iVar0 <= 1)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_149(var uParam0)
@@ -4653,11 +4653,11 @@ void func_149(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "reinforcedequipmentSaved", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eEquipmentRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_150(var uParam0)
@@ -4666,52 +4666,52 @@ void func_150(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "collectableUiLogSaved", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 13, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 13, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiCigCardsSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiDinoBonesSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiExoticsSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiLegendaryFishSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiParakeetsSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_4), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_4), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiRockCarvingsSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_5), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_5), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTaxidermySavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_6), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_6), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTHJackHallSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_7), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_7), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTHHighStakesSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_8), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_8), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTHPoisonTrailSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_9), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_9), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTHTresorMortsSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_10), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_10), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTHElementalTrailSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_11), &Var8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_11), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eUiTHLandmarksOfRichesSavedFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_12), &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_12), &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_151(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 47, "shared");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 47, "shared");
 	func_281(uParam0);
 	func_282(&(uParam0->f_2));
 	func_283(&(uParam0->f_3));
@@ -4724,7 +4724,7 @@ void func_151(var uParam0)
 	func_290(&(uParam0->f_43));
 	func_291(&(uParam0->f_44));
 	func_292(&(uParam0->f_45));
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_152(var uParam0, char* sParam1)
@@ -4733,13 +4733,13 @@ void func_152(var uParam0, char* sParam1)
 
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".x", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0, &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".y", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".z", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_2), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_2), &cVar0);
 }
 
 void func_153(var uParam0)
@@ -4750,38 +4750,38 @@ void func_153(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "deeds", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 5398, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 5398, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*7*/], 7, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*7*/], 7, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iDeedPacked", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*7*/], &Var17);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*7*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eStatus", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iCompletionData", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_2), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iGenericInt1", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_3), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iGenericInt2", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_4), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_4), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iUniqueHashID", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_5), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*7*/])->f_5), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "lastCompletedTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_6), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*7*/])->f_6), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_154(var uParam0)
@@ -4791,136 +4791,136 @@ void func_154(var uParam0)
 	struct<8> Var16;
 	int iVar24;
 
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 3206, "beatTrackingData", 17);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "beatTrackingData.todGangBeatAvailable");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), "beatTrackingData.iSpawnedCount");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), "beatTrackingData.iSeenCount");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), "beatTrackingData.iLaunchedCount");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_4), "beatTrackingData.iCompletedCount");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_11), "beatTrackingData.iHerbalistCampState");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_5), "beatTrackingData.eLastCompleted");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_6), "beatTrackingData.eLastSeen");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_9), "beatTrackingData.bCompletedBeatSinceLastMission");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_10), "beatTrackingData.bSeenBeatSinceLastMission");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_7), "beatTrackingData.bAmbushSeenSinceLastBeat");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_8), "beatTrackingData.bCampfireSeenSinceLastBeat");
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 3206, "beatTrackingData", 17);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "beatTrackingData.todGangBeatAvailable");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), "beatTrackingData.iSpawnedCount");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), "beatTrackingData.iSeenCount");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), "beatTrackingData.iLaunchedCount");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_4), "beatTrackingData.iCompletedCount");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_11), "beatTrackingData.iHerbalistCampState");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_5), "beatTrackingData.eLastCompleted");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_6), "beatTrackingData.eLastSeen");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_9), "beatTrackingData.bCompletedBeatSinceLastMission");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_10), "beatTrackingData.bSeenBeatSinceLastMission");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_7), "beatTrackingData.bAmbushSeenSinceLastBeat");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_8), "beatTrackingData.bCampfireSeenSinceLastBeat");
 	StringCopy(&cVar0, "beatTrackingData.iCompletedLocation", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_12), 30, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_12), 30, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_12)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_12[iVar24], &Var8);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_12[iVar24], &Var8);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "beatTrackingData.beatTrack", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_42), 961, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_42), 961, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < 120)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_42[iVar24 /*8*/], 8, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_42[iVar24 /*8*/], 8, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesCompleted", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_42[iVar24 /*8*/], &Var16);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_42[iVar24 /*8*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_1), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_1), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesLaunched", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_2), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_2), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesSpawned", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_3), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_3), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iBeatAvailableAt", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_4), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_42[iVar24 /*8*/])->f_4), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eBeatRarity", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_42[iVar24 /*8*/])->f_5), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_42[iVar24 /*8*/])->f_5), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".bBeatExhausted", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_42[iVar24 /*8*/])->f_6), &Var16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_42[iVar24 /*8*/])->f_6), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".bUnlocked", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_42[iVar24 /*8*/])->f_7), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_42[iVar24 /*8*/])->f_7), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "beatTrackingData.beatGeneric", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1003), 1081, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1003), 1081, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_1003)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_1003[iVar24 /*6*/], 6, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_1003[iVar24 /*6*/], 6, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".ID", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_1003[iVar24 /*6*/], &Var16);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_1003[iVar24 /*6*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iGeneric1", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_1003[iVar24 /*6*/])->f_1), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_1003[iVar24 /*6*/])->f_1), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iGeneric2", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_1003[iVar24 /*6*/])->f_2), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_1003[iVar24 /*6*/])->f_2), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eBeatTown", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_1003[iVar24 /*6*/])->f_4), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_1003[iVar24 /*6*/])->f_4), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eBeatTimeOfDay", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_1003[iVar24 /*6*/])->f_5), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_1003[iVar24 /*6*/])->f_5), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".mnPedModel", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_1003[iVar24 /*6*/])->f_3), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_1003[iVar24 /*6*/])->f_3), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "beatTrackingData.beatUsedLocations", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_2084), 121, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_2084), 121, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_2084)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_2084[iVar24 /*5*/], 5, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_2084[iVar24 /*5*/], 5, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".vUsedAtLocation", 64);
 		func_152(uParam0->f_2084[iVar24 /*5*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".eBeat", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_2084[iVar24 /*5*/])->f_3), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_2084[iVar24 /*5*/])->f_3), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iBeatRestrictionTimeLeft", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_2084[iVar24 /*5*/])->f_4), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_2084[iVar24 /*5*/])->f_4), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "beatTrackingData.beatRegionSaved", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_2205), 1001, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_2205), 1001, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_2205)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_2205[iVar24 /*2*/], 2, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_2205[iVar24 /*2*/], 2, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iRegionSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_2205[iVar24 /*2*/], &Var16);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_2205[iVar24 /*2*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iRegionComplete", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_2205[iVar24 /*2*/])->f_1), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_2205[iVar24 /*2*/])->f_1), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_155(var uParam0)
@@ -4935,183 +4935,183 @@ void func_155(var uParam0)
 	struct<8> Var28;
 	struct<8> Var36;
 
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 2408, "shopsData", 17);
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 2408, "shopsData", 17);
 	StringCopy(&cVar4, "shopsData.iTimesRobbed", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1168), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1168), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1168)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_1168[iVar0], &Var12);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_1168[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.todLastRobbed", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1322), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1322), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1322)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1322[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1322[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.todLastRegisterRobbed", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1476), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1476), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1476)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1476[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1476[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.todLastVisited", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1630), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1630), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1630)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1630[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1630[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.todLastEscalation", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1784), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1784), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1784)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1784[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1784[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.todTimeToResetInjuredOutfit", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1938), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1938), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_1938)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1938[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1938[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.eRobberyFlags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_2092), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_2092), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_2092)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_2092[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_2092[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "shopsData.eShopFlags", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_2246), 154, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_2246), 154, &cVar4);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_2246)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_2246[iVar0], &Var12);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_2246[iVar0], &Var12);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1168, "shopsData.sPurchaseData");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1168, "shopsData.sPurchaseData");
 	StringCopy(&cVar4, "sShopPurchases", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 1126, &cVar4);
+	SAVE::_0x81F4E92BE3958364(uParam0, 1126, &cVar4);
 	iVar2 = 25;
 	iVar0 = 0;
 	while (iVar0 < iVar2)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*45*/], 45, &Var12);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*45*/], 45, &Var12);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".eLastItemBoughtFromShop", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*45*/], &Var36);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*45*/], &Var36);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".eLastItemSoldToShop", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*45*/])->f_1), &Var36);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*45*/])->f_1), &Var36);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".iTotalMoneySpent", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*45*/])->f_43), &Var36);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*45*/])->f_43), &Var36);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".iMoneySpentInSession", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*45*/])->f_44), &Var36);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*45*/])->f_44), &Var36);
 		Var20 = { Var12 };
 		StringConCat(&Var20, ".sPurchaseList", 64);
-		_NAMESPACE59::_0x81F4E92BE3958364(&(((*uParam0)[iVar0 /*45*/])->f_2), 41, &Var20);
+		SAVE::_0x81F4E92BE3958364(&(((*uParam0)[iVar0 /*45*/])->f_2), 41, &Var20);
 		iVar3 = 10;
 		iVar1 = 0;
 		while (iVar1 < iVar3)
 		{
 			Var28 = { Var20 };
 			StringIntConCat(&Var28, iVar1, 64);
-			_NAMESPACE59::_0x443174C20B8B9E7F(((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/], 4, &Var28);
+			SAVE::_0x443174C20B8B9E7F(((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/], 4, &Var28);
 			Var36 = { Var28 };
 			StringConCat(&Var36, ".eItem", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/], &Var36);
+			SAVE::_0xB25B5A375BE5BE26(((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/], &Var36);
 			Var36 = { Var28 };
 			StringConCat(&Var36, ".iPurchaseTimer", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&((((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/])->f_1), &Var36);
+			SAVE::_0xB25B5A375BE5BE26(&((((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/])->f_1), &Var36);
 			Var36 = { Var28 };
 			StringConCat(&Var36, ".iPurchaseCount", 64);
-			_NAMESPACE59::_0x529B9CCD0972AF4D(&((((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/])->f_2), &Var36);
+			SAVE::_0x529B9CCD0972AF4D(&((((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/])->f_2), &Var36);
 			Var36 = { Var28 };
 			StringConCat(&Var36, ".eShopPurchasedFrom", 64);
-			_NAMESPACE59::_0xB25B5A375BE5BE26(&((((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/])->f_3), &Var36);
-			_NAMESPACE59::_0xE0B45E983BFC0768();
+			SAVE::_0xB25B5A375BE5BE26(&((((*uParam0)[iVar0 /*45*/])->f_2[iVar1 /*4*/])->f_3), &Var36);
+			SAVE::_0xE0B45E983BFC0768();
 			iVar1++;
 		}
-		_NAMESPACE59::_0xA844FEB5C22C2C74();
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xA844FEB5C22C2C74();
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar4, "sPurchaseData.sPlayerPurchases", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1126), 41, &cVar4);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1126), 41, &cVar4);
 	iVar2 = uParam0->f_1126;
 	iVar0 = 0;
 	while (iVar0 < iVar2)
 	{
 		Var12 = { cVar4 };
 		StringIntConCat(&Var12, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_1126[iVar0 /*4*/], 4, &Var12);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_1126[iVar0 /*4*/], 4, &Var12);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".eItem", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1126[iVar0 /*4*/], &Var36);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1126[iVar0 /*4*/], &Var36);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".iPurchaseTimer", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_1126[iVar0 /*4*/])->f_1), &Var36);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_1126[iVar0 /*4*/])->f_1), &Var36);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".iPurchaseCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_1126[iVar0 /*4*/])->f_2), &Var36);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_1126[iVar0 /*4*/])->f_2), &Var36);
 		Var36 = { Var12 };
 		StringConCat(&Var36, ".eShopPurchasedFrom", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_1126[iVar0 /*4*/])->f_3), &Var36);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_1126[iVar0 /*4*/])->f_3), &Var36);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1167), "sPurchaseData.eLastPurchaseReg");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_2400), "shopsData.bPlayerHasBrowsedAnyShop");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_2401), "shopsData.bHideCatInfoBox");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_2402), "shopsData.bPurchaseMade");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_2403), "shopsData.bRCKittyEmeraldViewed");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2404), "shopsData.iLastHorseSoldTimeStamp");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2405), "shopsData.iSecondLastHorseSoldTimeStamp");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2406), "shopsData.iThirdLastHorseSoldTimeStamp");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2407), "shopsData.iLostLegendaryItemsBitset");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1167), "sPurchaseData.eLastPurchaseReg");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_2400), "shopsData.bPlayerHasBrowsedAnyShop");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_2401), "shopsData.bHideCatInfoBox");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_2402), "shopsData.bPurchaseMade");
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_2403), "shopsData.bRCKittyEmeraldViewed");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2404), "shopsData.iLastHorseSoldTimeStamp");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2405), "shopsData.iSecondLastHorseSoldTimeStamp");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2406), "shopsData.iThirdLastHorseSoldTimeStamp");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2407), "shopsData.iLostLegendaryItemsBitset");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_156(var uParam0)
@@ -5123,54 +5123,54 @@ void func_156(var uParam0)
 	struct<8> Var25;
 
 	StringCopy(&cVar1, "regions", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 1651, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 1651, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*11*/], 11, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*11*/], 11, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "eRegionFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*11*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*11*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "currentLockdownStartTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "currentWantedZoneStartTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iLockdownDuration", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*11*/])->f_3), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*11*/])->f_3), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "regionLawMemoryData", 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(&(((*uParam0)[iVar0 /*11*/])->f_4), 6, &Var17);
+		SAVE::_0x443174C20B8B9E7F(&(((*uParam0)[iVar0 /*11*/])->f_4), 6, &Var17);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eLastOuftitSeenByLaw", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eSideburnsStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_1), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_1), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eChinStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_2), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_2), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eMustacheStyle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_3), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_3), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eTimeOutfitLastSeen", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_4), &Var25);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_4), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "eAppearanceLawMemoryFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_5), &Var25);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*11*/])->f_4.f_5), &Var25);
+		SAVE::_0xE0B45E983BFC0768();
 		Var17 = { Var9 };
 		StringConCat(&Var17, "iInocentsKilledInRegion", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*11*/])->f_10), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*11*/])->f_10), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_157(var uParam0)
@@ -5180,30 +5180,30 @@ void func_157(var uParam0)
 	struct<8> Var9;
 
 	StringCopy(&cVar1, "regionTownFlags", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 117, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 117, &cVar1);
 	StringCopy(&cVar1, "regionTownFlags.eRegionConversationSaved", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 111, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 111, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "regionTownFlags.eRegionConversationCampSave", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_111), 6, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_111), 6, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_111)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_111[iVar0], &Var9);
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_111[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_158(var uParam0)
@@ -5214,23 +5214,23 @@ void func_158(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "regionalCharacter", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 1909, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 1909, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "rcFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*2*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*2*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todRCDeathTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_159(var uParam0)
@@ -5240,35 +5240,35 @@ void func_159(var uParam0)
 	int iVar16;
 
 	StringCopy(&cVar0, "SPMetaped", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 777, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 777, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "PortableWardrobe", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 26, &Var8);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 26, &Var8);
 	func_293(uParam0, Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "OutfitList", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_26), 601, &Var8);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_26), 601, &Var8);
 	iVar16 = 0;
 	while (iVar16 <= 4)
 	{
 		func_294(uParam0->f_26[iVar16 /*120*/], Var8, iVar16);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_627), "iOutfitHash");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_627), "iOutfitHash");
 	StringCopy(&Var8, "SingleSavedAppearance", 64);
 	func_294(&(uParam0->f_627.f_1), Var8, 0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "PortableSnapshot", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_627.f_121), 26, &Var8);
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_627.f_121), 26, &Var8);
 	func_293(&(uParam0->f_627.f_121), Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_774), "SPMetaped_eSystemFlags");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_774), "SPMetaped_eSystemFlags");
 	StringCopy(&Var8, "SPMetaped_PlayerType", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_775), "SPMetaped_PlayerType");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_776), "SPMetaped_iCurOutfit");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_775), "SPMetaped_PlayerType");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_776), "SPMetaped_iCurOutfit");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_160(var uParam0)
@@ -5281,32 +5281,32 @@ void func_160(var uParam0)
 	struct<8> Var26;
 
 	StringCopy(&cVar2, "herbData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 4501, &cVar2);
+	SAVE::_0x81F4E92BE3958364(uParam0, 4501, &cVar2);
 	iVar0 = 0;
 	while (iVar0 < 500)
 	{
 		Var10 = { cVar2 };
 		StringIntConCat(&Var10, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*9*/], 9, &Var10);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*9*/], "eHerbType");
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*9*/])->f_1), "iHerbPackedLocation");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*9*/])->f_2), "todTimePicked");
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*9*/])->f_3), "eHerbFlags");
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*9*/], 9, &Var10);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*9*/], "eHerbType");
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*9*/])->f_1), "iHerbPackedLocation");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*9*/])->f_2), "todTimePicked");
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*9*/])->f_3), "eHerbFlags");
 		StringCopy(&cVar18, "iHerbPatchPlants", 64);
-		_NAMESPACE59::_0x81F4E92BE3958364(&(((*uParam0)[iVar0 /*9*/])->f_4), 5, &cVar18);
+		SAVE::_0x81F4E92BE3958364(&(((*uParam0)[iVar0 /*9*/])->f_4), 5, &cVar18);
 		iVar1 = 0;
 		while (iVar1 < 4)
 		{
 			Var26 = { cVar18 };
 			StringIntConCat(&Var26, iVar1, 64);
-			_NAMESPACE59::_0x529B9CCD0972AF4D(((*uParam0)[iVar0 /*9*/])->f_4[iVar1], &Var26);
+			SAVE::_0x529B9CCD0972AF4D(((*uParam0)[iVar0 /*9*/])->f_4[iVar1], &Var26);
 			iVar1++;
 		}
-		_NAMESPACE59::_0xA844FEB5C22C2C74();
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xA844FEB5C22C2C74();
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_161(var uParam0)
@@ -5316,36 +5316,36 @@ void func_161(var uParam0)
 	struct<8> Var16;
 	int iVar24;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2697, "campVignettes");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, "campVignettes.iTotalVigsSeen");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), "campVignettes.iTotalCampfireSeen");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), "campVignettes.iTotalWalkAndTalkSeen");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), "campVignettes.iTotalMusicSeen");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2697, "campVignettes");
+	SAVE::_0x529B9CCD0972AF4D(uParam0, "campVignettes.iTotalVigsSeen");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), "campVignettes.iTotalCampfireSeen");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), "campVignettes.iTotalWalkAndTalkSeen");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), "campVignettes.iTotalMusicSeen");
 	StringCopy(&cVar0, "campVignettes.vigData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_4), 2693, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_4), 2693, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < 673)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_4[iVar24 /*4*/], 4, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_4[iVar24 /*4*/], 4, &Var8);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_4[iVar24 /*4*/], &Var16);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_4[iVar24 /*4*/], &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesLaunched", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_4[iVar24 /*4*/])->f_1), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_4[iVar24 /*4*/])->f_1), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".iTimesSpawned", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_4[iVar24 /*4*/])->f_2), &Var16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_4[iVar24 /*4*/])->f_2), &Var16);
 		Var16 = { Var8 };
 		StringConCat(&Var16, ".bSeen", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_4[iVar24 /*4*/])->f_3), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_4[iVar24 /*4*/])->f_3), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_162(var uParam0)
@@ -5355,70 +5355,70 @@ void func_162(var uParam0)
 	char cVar16[64];
 	int iVar24;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1537, "ambVigData");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, "ambVigData.iLaunches");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), "ambVigData.iSpawned");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), "ambVigData.iSeen");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), "ambVigData.iTriggered");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_4), "ambVigData.todLaunchTimeHuman");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_5), "ambVigData.todLaunchTimeAnimal");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1537, "ambVigData");
+	SAVE::_0x529B9CCD0972AF4D(uParam0, "ambVigData.iLaunches");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), "ambVigData.iSpawned");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), "ambVigData.iSeen");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), "ambVigData.iTriggered");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_4), "ambVigData.todLaunchTimeHuman");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_5), "ambVigData.todLaunchTimeAnimal");
 	StringCopy(&cVar0, "ambVigData.sRegisteredVigs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_6), 1489, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_6), 1489, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_6)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_6[iVar24 /*6*/], 6, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_6[iVar24 /*6*/], 6, &Var8);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, ".iSeen", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_6[iVar24 /*6*/], &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_6[iVar24 /*6*/], &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, ".iLaunched", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*6*/])->f_1), &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*6*/])->f_1), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, ".iSpawned", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*6*/])->f_2), &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*6*/])->f_2), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, ".iTriggered", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*6*/])->f_3), &cVar16);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar24 /*6*/])->f_3), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, ".bUnlocked", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&((uParam0->f_6[iVar24 /*6*/])->f_4), &cVar16);
+		SAVE::_0xBB7F4273C186BC4B(&((uParam0->f_6[iVar24 /*6*/])->f_4), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, ".todLaunchTime", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*6*/])->f_5), &cVar16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_6[iVar24 /*6*/])->f_5), &cVar16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, "ambVigData.sUsedLocs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1495), 41, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1495), 41, &cVar0);
 	iVar24 = 0;
 	while (iVar24 < uParam0->f_1495)
 	{
 		Var8 = { cVar0 };
 		StringIntConCat(&Var8, iVar24, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_1495[iVar24 /*4*/], 4, &Var8);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_1495[iVar24 /*4*/], 4, &Var8);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "vLoc", 64);
 		func_152(&((uParam0->f_1495[iVar24 /*4*/])->f_1), &cVar16);
 		cVar16 = { Var8 };
 		StringConCat(&cVar16, "eVig", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0->f_1495[iVar24 /*4*/], &cVar16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(uParam0->f_1495[iVar24 /*4*/], &cVar16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1536), "ambVigData.iNumberOfParakeet");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1536), "ambVigData.iNumberOfParakeet");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_163(var uParam0, char* sParam1)
 {
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 1399, "persona", 11);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "psna_ePreferredDistrict");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "psna_eLastValidRegion");
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 1399, "persona", 11);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "psna_ePreferredDistrict");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "psna_eLastValidRegion");
 	func_152(&(uParam0->f_2), "psna_vLastValidPosition");
 	func_295(&(uParam0->f_5));
 	func_296(&(uParam0->f_15));
@@ -5426,7 +5426,7 @@ void func_163(var uParam0, char* sParam1)
 	func_298(&(uParam0->f_350));
 	func_299(&(uParam0->f_1362));
 	func_300(&(uParam0->f_1365));
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_164()
@@ -5444,12 +5444,12 @@ void func_164()
 	}
 }
 
-bool func_165(int iParam0, int iParam1)
+bool func_165(int iParam0, bool bParam1)
 {
 	bool bVar0;
 
 	bVar0 = (iParam0 >= 0 && iParam0 <= 10);
-	if (iParam1 && !bVar0)
+	if (bParam1 && !bVar0)
 	{
 	}
 	return bVar0;
@@ -5762,15 +5762,15 @@ int func_207(int iParam0, int iParam1)
 			case 33:
 				return 301693437;
 			case 34:
-				return 846337294;
+				return joaat("c_11_boobytrap_01");
 			case 35:
-				return -512601161;
+				return joaat("c_11_notrap_01");
 			case 36:
 				return 765343099;
 			case 37:
 				return -909306169;
 			case 38:
-				return -879315604;
+				return joaat("c_13_notrap_01");
 			case 39:
 				return 1503442953;
 			case 40:
@@ -5958,9 +5958,9 @@ int func_207(int iParam0, int iParam1)
 			case 131:
 				return -1626434823;
 			case 132:
-				return -1411225477;
+				return joaat("amb_gap_00_ropeends");
 			case 133:
-				return 263133813;
+				return joaat("amb_gap_16_ropeends");
 			case 134:
 				return 416864911;
 			case 135:
@@ -6442,7 +6442,7 @@ int func_207(int iParam0, int iParam1)
 			case 373:
 				return 1991621063;
 			case 374:
-				return -1798733774;
+				return joaat("dis_bgv_00_arthur_grave");
 			case 375:
 				return 677191274;
 			case 376:
@@ -6460,7 +6460,7 @@ int func_207(int iParam0, int iParam1)
 			case 382:
 				return 1915867459;
 			case 383:
-				return -3571233;
+				return joaat("dis_blu_prisonerescape");
 			case 384:
 				return -2105071972;
 			case 385:
@@ -6480,17 +6480,17 @@ int func_207(int iParam0, int iParam1)
 			case 392:
 				return -1047394327;
 			case 393:
-				return -1141831946;
+				return joaat("dis_gap_cc_graffiti");
 			case 394:
-				return -591921971;
+				return joaat("dis_grz_00_dead_horse");
 			case 395:
-				return 1157155867;
+				return joaat("dis_grz_00_frozencamp01");
 			case 396:
-				return 1397975248;
+				return joaat("dis_grz_00_frozencamp02");
 			case 397:
 				return -820486040;
 			case 398:
-				return -1109901848;
+				return joaat("dis_grz_00_frozencamp04");
 			case 399:
 				return -1010679388;
 			case 400:
@@ -6526,7 +6526,7 @@ int func_207(int iParam0, int iParam1)
 			case 415:
 				return 1193359531;
 			case 416:
-				return 1707200698;
+				return joaat("dis_hrt_animaldig");
 			case 417:
 				return 1033367448;
 			case 418:
@@ -6548,7 +6548,7 @@ int func_207(int iParam0, int iParam1)
 			case 426:
 				return -1375030991;
 			case 427:
-				return -697003681;
+				return joaat("dis_roa_00_molly_grave");
 			case 428:
 				return 1193229750;
 			case 429:
@@ -6566,7 +6566,7 @@ int func_207(int iParam0, int iParam1)
 			case 435:
 				return 1989203268;
 			case 436:
-				return 1020450527;
+				return joaat("dis_scm_cc_graffiti");
 			case 437:
 				return -531198053;
 			case 438:
@@ -6606,11 +6606,11 @@ int func_207(int iParam0, int iParam1)
 			case 455:
 				return -739334986;
 			case 456:
-				return 1289304923;
+				return joaat("col_01_chimney_smoke_effect");
 			case 457:
 				return 1113693078;
 			case 458:
-				return -1019727725;
+				return joaat("weathervol_chpt1_snowstorm");
 			case 459:
 				return -78852126;
 			case 460:
@@ -6618,7 +6618,7 @@ int func_207(int iParam0, int iParam1)
 			case 461:
 				return 660686456;
 			case 462:
-				return -584714922;
+				return joaat("col_02_chimney_smoke_effect");
 			case 463:
 				return -1513941904;
 			case 464:
@@ -6634,7 +6634,7 @@ int func_207(int iParam0, int iParam1)
 			case 469:
 				return -395621323;
 			case 470:
-				return 1638937672;
+				return joaat("wap_rainsfalls_base");
 			case 471:
 				return 661576070;
 			case 472:
@@ -6792,7 +6792,7 @@ int func_207(int iParam0, int iParam1)
 			case 548:
 				return -436084091;
 			case 549:
-				return 1271713904;
+				return joaat("pro_barn_int_milo");
 			case 550:
 				return 1423681694;
 			case 551:
@@ -6800,13 +6800,13 @@ int func_207(int iParam0, int iParam1)
 			case 552:
 				return -1305406402;
 			case 553:
-				return 1983816160;
+				return joaat("pro_es_01_workerhouse");
 			case 554:
-				return -602816690;
+				return joaat("pro_mansion_int_milo");
 			case 555:
 				return 636278554;
 			case 556:
-				return -285245562;
+				return joaat("pro_wrkshp_int_milo");
 			case 557:
 				return 1031662866;
 			case 558:
@@ -6856,7 +6856,7 @@ int func_207(int iParam0, int iParam1)
 			case 580:
 				return -188216801;
 			case 581:
-				return -2047539266;
+				return joaat("reg_bgv_skinnermass01");
 			case 582:
 				return 1053919002;
 			case 583:
@@ -6894,7 +6894,7 @@ int func_207(int iParam0, int iParam1)
 			case 599:
 				return -846371468;
 			case 600:
-				return -270704741;
+				return joaat("q");
 			case 601:
 				return 1696372169;
 			case 602:
@@ -6948,7 +6948,7 @@ int func_207(int iParam0, int iParam1)
 			case 626:
 				return -657241692;
 			case 627:
-				return 1460466036;
+				return joaat("des_ntv3_rail_break");
 			case 628:
 				return -711890106;
 			case 629:
@@ -6984,7 +6984,7 @@ int func_207(int iParam0, int iParam1)
 			case 644:
 				return -745087561;
 			case 645:
-				return 1324480450;
+				return joaat("des_ntvs2_treefall");
 			case 646:
 				return 23211744;
 			case 647:
@@ -7018,7 +7018,7 @@ int func_207(int iParam0, int iParam1)
 			case 661:
 				return -24665995;
 			case 662:
-				return 1651555923;
+				return joaat("reg_hrt_00_wnt4_train_milo");
 			case 663:
 				return -1132206051;
 			case 664:
@@ -7178,13 +7178,13 @@ int func_207(int iParam0, int iParam1)
 			case 741:
 				return 1202020135;
 			case 742:
-				return -1989899190;
+				return joaat("val_02_lockdown_bank");
 			case 743:
-				return 951314072;
+				return joaat("val_02_lockdown_gun");
 			case 744:
-				return -780819048;
+				return joaat("val_02_lockdown_hotel");
 			case 745:
-				return -52140817;
+				return joaat("val_02_lockdown_law");
 			case 746:
 				return 1186533019;
 			case 747:
@@ -7260,7 +7260,7 @@ int func_207(int iParam0, int iParam1)
 			case 782:
 				return -1049500949;
 			case 783:
-				return 1325716092;
+				return joaat("val_03_default_jail");
 			case 784:
 				return -1781246069;
 			case 785:
@@ -7270,7 +7270,7 @@ int func_207(int iParam0, int iParam1)
 			case 787:
 				return 406334892;
 			case 788:
-				return -554932707;
+				return joaat("val_03_props_lockdown_jail");
 			case 789:
 				return -1744253204;
 			case 790:
@@ -7348,7 +7348,7 @@ int func_207(int iParam0, int iParam1)
 			case 826:
 				return -724540003;
 			case 827:
-				return -307327135;
+				return joaat("bac_01_wire");
 			case 828:
 				return 1492058366;
 			case 829:
@@ -7372,7 +7372,7 @@ int func_207(int iParam0, int iParam1)
 			case 838:
 				return 1364392658;
 			case 839:
-				return -882460089;
+				return joaat("des_trn4_train_crash");
 			case 840:
 				return -1835067413;
 			case 841:
@@ -7452,9 +7452,9 @@ int func_207(int iParam0, int iParam1)
 			case 878:
 				return -1085363933;
 			case 879:
-				return 1517736440;
+				return joaat("ann_05_house");
 			case 880:
-				return -1509154451;
+				return joaat("ann_05_house_es");
 			case 881:
 				return -693132475;
 			case 882:
@@ -7486,9 +7486,9 @@ int func_207(int iParam0, int iParam1)
 			case 895:
 				return 585407854;
 			case 896:
-				return 1381573999;
+				return joaat("roc_01_garden01_die");
 			case 897:
-				return 2116125345;
+				return joaat("roc_01_garden01_nice");
 			case 898:
 				return -1369880946;
 			case 899:
@@ -7562,9 +7562,9 @@ int func_207(int iParam0, int iParam1)
 			case 933:
 				return 1584946069;
 			case 934:
-				return 2123010634;
+				return joaat("van_02_cc_graffiti");
 			case 935:
-				return -1081335485;
+				return joaat("van_02_horseboat");
 			case 936:
 				return -1176501741;
 			case 937:
@@ -7590,7 +7590,7 @@ int func_207(int iParam0, int iParam1)
 			case 947:
 				return 376665102;
 			case 948:
-				return -928815382;
+				return joaat("sdn1_pier_fog");
 			case 949:
 				return -645247737;
 			case 950:
@@ -7612,11 +7612,11 @@ int func_207(int iParam0, int iParam1)
 			case 958:
 				return -650822431;
 			case 959:
-				return -956131204;
+				return joaat("bee_01_barn_stage05");
 			case 960:
-				return 2006257967;
+				return joaat("bee_01_chimney_stage01");
 			case 961:
-				return -2008632686;
+				return joaat("bee_01_chimney_stage02");
 			case 962:
 				return -1615103170;
 			case 963:
@@ -7644,7 +7644,7 @@ int func_207(int iParam0, int iParam1)
 			case 974:
 				return 1467774743;
 			case 975:
-				return 2030594491;
+				return joaat("bee_01_house_minigame_fl");
 			case 976:
 				return -790660125;
 			case 977:
@@ -7758,15 +7758,15 @@ int func_207(int iParam0, int iParam1)
 			case 1025:
 				return -2131457946;
 			case 1026:
-				return 1819926822;
+				return joaat("bee_building_roomwalls_01");
 			case 1027:
-				return 1529593482;
+				return joaat("bee_building_roomwalls_02");
 			case 1028:
-				return -668911501;
+				return joaat("bee_building_roomwalls_03");
 			case 1029:
 				return 480644817;
 			case 1030:
-				return 1681117196;
+				return joaat("bee_woodpile_01");
 			case 1031:
 				return -1012618146;
 			case 1032:
@@ -7846,7 +7846,7 @@ int func_207(int iParam0, int iParam1)
 			case 1069:
 				return -890895654;
 			case 1070:
-				return 1953646620;
+				return joaat("sds_well_cover");
 			case 1071:
 				return 1299817544;
 			case 1072:
@@ -7888,11 +7888,11 @@ int func_207(int iParam0, int iParam1)
 			case 1090:
 				return -432154242;
 			case 1091:
-				return 2137790641;
+				return joaat("des_str_jail");
 			case 1092:
 				return 1291083725;
 			case 1093:
-				return 500829173;
+				return joaat("des_str_jail_exp");
 			case 1094:
 				return 993595204;
 			case 1095:
@@ -7910,9 +7910,9 @@ int func_207(int iParam0, int iParam1)
 			case 1101:
 				return 77337110;
 			case 1102:
-				return 2029194243;
+				return joaat("tax_shutters_closed");
 			case 1103:
-				return -1125782227;
+				return joaat("tax_shutters_opened");
 			case 1104:
 				return -372970556;
 			case 1105:
@@ -8056,7 +8056,7 @@ int func_207(int iParam0, int iParam1)
 			case 1174:
 				return 1987335384;
 			case 1175:
-				return 271879652;
+				return joaat("cen_h");
 			case 1176:
 				return -2045964586;
 			case 1177:
@@ -8298,7 +8298,7 @@ int func_207(int iParam0, int iParam1)
 			case 1295:
 				return 1079303588;
 			case 1296:
-				return 970924250;
+				return joaat("hso_p_camp_02");
 			case 1297:
 				return -441619793;
 			case 1298:
@@ -8504,7 +8504,7 @@ int func_207(int iParam0, int iParam1)
 			case 1398:
 				return -437251660;
 			case 1399:
-				return 1601599776;
+				return joaat("bra_vfx_post_smolder");
 			case 1400:
 				return 419559004;
 			case 1401:
@@ -8524,7 +8524,7 @@ int func_207(int iParam0, int iParam1)
 			case 1408:
 				return -1656481590;
 			case 1409:
-				return -554880142;
+				return joaat("cle_clive_wagon");
 			case 1410:
 				return 810684093;
 			case 1411:
@@ -8736,7 +8736,7 @@ int func_207(int iParam0, int iParam1)
 			case 1514:
 				return -1147256587;
 			case 1515:
-				return 1802272784;
+				return joaat("dewclm_p_camp_02");
 			case 1516:
 				return 1309652195;
 			case 1517:
@@ -8880,7 +8880,7 @@ int func_207(int iParam0, int iParam1)
 			case 1586:
 				return 1734859244;
 			case 1587:
-				return -750963311;
+				return joaat("com_muleshed");
 			case 1588:
 				return -886310806;
 			case 1589:
@@ -8980,7 +8980,7 @@ int func_207(int iParam0, int iParam1)
 			case 1636:
 				return -1466175146;
 			case 1637:
-				return -2093572127;
+				return joaat("des_gry1_still");
 			case 1638:
 				return -498256840;
 			case 1639:
@@ -8992,9 +8992,9 @@ int func_207(int iParam0, int iParam1)
 			case 1642:
 				return -1023331176;
 			case 1643:
-				return -276524767;
+				return joaat("n_1114_watertower01_default");
 			case 1644:
-				return 1578454569;
+				return joaat("n_1114_watertower01_feud1");
 			case 1645:
 				return 2101399188;
 			case 1646:
@@ -9092,9 +9092,9 @@ int func_207(int iParam0, int iParam1)
 			case 1692:
 				return 159921796;
 			case 1693:
-				return -2014929982;
+				return joaat("sha_ext_shutters_normal");
 			case 1694:
-				return -1070054959;
+				return joaat("sha_ext_shutters_odriscolls4");
 			case 1695:
 				return -558920293;
 			case 1696:
@@ -9394,31 +9394,31 @@ int func_207(int iParam0, int iParam1)
 			case 1843:
 				return -655349451;
 			case 1844:
-				return 1175400068;
+				return joaat("bone_00");
 			case 1845:
-				return 854689865;
+				return joaat("bone_01");
 			case 1846:
-				return 1772877245;
+				return joaat("bone_02");
 			case 1847:
-				return -891504611;
+				return joaat("bone_03");
 			case 1848:
-				return -810270260;
+				return joaat("bone_05");
 			case 1849:
-				return 83602522;
+				return joaat("bone_06");
 			case 1850:
-				return -2054476413;
+				return joaat("bone_07");
 			case 1851:
-				return 1988923494;
+				return joaat("bone_16");
 			case 1852:
-				return -1676256391;
+				return joaat("bone_18");
 			case 1853:
-				return 901975752;
+				return joaat("bone_19");
 			case 1854:
-				return 2119466214;
+				return joaat("bone_20");
 			case 1855:
-				return 1812453453;
+				return joaat("bone_21");
 			case 1856:
-				return 1393010249;
+				return joaat("bone_24");
 			case 1857:
 				return -1799943886;
 			case 1858:
@@ -9448,7 +9448,7 @@ int func_207(int iParam0, int iParam1)
 			case 1870:
 				return -873881483;
 			case 1871:
-				return 881979872;
+				return joaat("new_boats_01_grandkor3");
 			case 1872:
 				return 1157695860;
 			case 1873:
@@ -9536,9 +9536,9 @@ int func_207(int iParam0, int iParam1)
 			case 1914:
 				return -274080837;
 			case 1915:
-				return 1082980257;
+				return joaat("new_com_07_nohotel");
 			case 1916:
-				return -1725465949;
+				return joaat("new_com_07_win");
 			case 1917:
 				return 1821956151;
 			case 1918:
@@ -9574,7 +9574,7 @@ int func_207(int iParam0, int iParam1)
 			case 1933:
 				return 490883533;
 			case 1934:
-				return 752665876;
+				return joaat("des_mob3_trolley");
 			case 1935:
 				return 1136457806;
 			case 1936:
@@ -9736,7 +9736,7 @@ int func_207(int iParam0, int iParam1)
 			case 2008:
 				return 604920544;
 			case 2009:
-				return 1382135686;
+				return joaat("ser_01_grandkor3");
 			case 2010:
 				return -1968130469;
 			case 2011:
@@ -9878,7 +9878,7 @@ int func_207(int iParam0, int iParam1)
 			case 2079:
 				return -1394479903;
 			case 2080:
-				return -786679704;
+				return joaat("arm_05_cholera");
 			case 2081:
 				return -1029093195;
 			case 2082:
@@ -9950,7 +9950,7 @@ int func_207(int iParam0, int iParam1)
 			case 2115:
 				return -482127039;
 			case 2116:
-				return 1557698400;
+				return joaat("bep_01_cc_graffiti");
 			case 2117:
 				return -1484676996;
 			case 2118:
@@ -10076,25 +10076,25 @@ int func_207(int iParam0, int iParam1)
 			case 2178:
 				return -535498894;
 			case 2179:
-				return 2116024182;
+				return joaat("two_01_cc_graffiti");
 			case 2180:
 				return 25328693;
 			case 2181:
-				return 1934461192;
+				return joaat("bone_08");
 			case 2182:
-				return -1434912930;
+				return joaat("bone_09");
 			case 2183:
-				return 491871729;
+				return joaat("bone_10");
 			case 2184:
-				return -1078418763;
+				return joaat("bone_11");
 			case 2185:
-				return -415281478;
+				return joaat("bone_26");
 			case 2186:
-				return -722949619;
+				return joaat("bone_27");
 			case 2187:
-				return 202086482;
+				return joaat("bone_28");
 			case 2188:
-				return -87394864;
+				return joaat("bone_29");
 			case 2189:
 				return 1473078398;
 			case 2190:
@@ -10108,7 +10108,7 @@ int func_207(int iParam0, int iParam1)
 			case 2194:
 				return 551513105;
 			case 2195:
-				return 642296010;
+				return joaat("sppack_a1sup_obelisk");
 			case 2196:
 				return 1416512144;
 			case 2197:
@@ -10118,7 +10118,7 @@ int func_207(int iParam0, int iParam1)
 			case 2199:
 				return 67497998;
 			case 2200:
-				return -991895362;
+				return joaat("sppack_a4sup_aquaduct");
 			case 2201:
 				return -846479900;
 			case 2202:
@@ -10336,7 +10336,7 @@ int func_207(int iParam0, int iParam1)
 			case 2308:
 				return -428652579;
 			case 2309:
-				return 154479184;
+				return joaat("mp005_watertower_addon");
 			case 2310:
 				return 1187864964;
 			case 2311:
@@ -10384,7 +10384,7 @@ int func_207(int iParam0, int iParam1)
 			case 2332:
 				return 1123782857;
 			case 2333:
-				return -1656839837;
+				return joaat("mp006_a1supp_moonshine04");
 			case 2334:
 				return 734740942;
 			case 2335:
@@ -10398,7 +10398,7 @@ int func_207(int iParam0, int iParam1)
 			case 2339:
 				return 1139876579;
 			case 2340:
-				return 412645416;
+				return joaat("mp006_a2supp_moonshine02");
 			case 2341:
 				return 2037986663;
 			case 2342:
@@ -10410,7 +10410,7 @@ int func_207(int iParam0, int iParam1)
 			case 2345:
 				return 793572138;
 			case 2346:
-				return 266896652;
+				return joaat("mp006_a3supp_moonshine01");
 			case 2347:
 				return -1947843638;
 			case 2348:
@@ -10420,11 +10420,11 @@ int func_207(int iParam0, int iParam1)
 			case 2350:
 				return 782876548;
 			case 2351:
-				return -1798979372;
+				return joaat("mp006_a4supp_moonshine03");
 			case 2352:
 				return 1171027246;
 			case 2353:
-				return 1105828637;
+				return joaat("mp006_a4supp_moonshine05");
 			case 2354:
 				return -1363817710;
 			case 2355:
@@ -10668,7 +10668,7 @@ int func_207(int iParam0, int iParam1)
 			case 2474:
 				return -1699673416;
 			case 2475:
-				return 1234767744;
+				return joaat("mp001_mp_winlose_desert");
 			case 2476:
 				return 1383396669;
 			case 2477:
@@ -10682,7 +10682,7 @@ int func_207(int iParam0, int iParam1)
 			case 2481:
 				return -1029570958;
 			case 2482:
-				return 56660208;
+				return joaat("mp001_mp_winlose_forest");
 			case 2483:
 				return -322991750;
 			case 2484:
@@ -10696,7 +10696,7 @@ int func_207(int iParam0, int iParam1)
 			case 2488:
 				return -1228362565;
 			case 2489:
-				return -1793687930;
+				return joaat("mp001_mp_winlose_snow");
 			case 2490:
 				return 2081184892;
 			case 2491:
@@ -10710,7 +10710,7 @@ int func_207(int iParam0, int iParam1)
 			case 2495:
 				return 649433039;
 			case 2496:
-				return 231100670;
+				return joaat("mp001_mp_winlose_swamp");
 			case 2497:
 				return -2073602286;
 			case 2498:
@@ -10734,7 +10734,7 @@ int func_207(int iParam0, int iParam1)
 			case 2507:
 				return 924267974;
 			case 2508:
-				return -1633151965;
+				return joaat("mp001_u_07p_winlose");
 			case 2509:
 				return 916581544;
 			case 2510:
@@ -10748,13 +10748,13 @@ int func_207(int iParam0, int iParam1)
 			case 2514:
 				return -1852748182;
 			case 2515:
-				return -381473693;
+				return joaat("mp001_celeb_screen_desert");
 			case 2516:
 				return 1755785548;
 			case 2517:
 				return 1834537343;
 			case 2518:
-				return 505174455;
+				return joaat("mp001_celeb_screen_snow");
 			case 2519:
 				return -1645988897;
 			case 2520:
@@ -10900,7 +10900,7 @@ int func_207(int iParam0, int iParam1)
 			case 2590:
 				return -1614141377;
 			case 2591:
-				return -926795318;
+				return joaat("des_treefall_accident");
 			case 2592:
 				return 2095421392;
 			case 2593:
@@ -11194,7 +11194,7 @@ int func_207(int iParam0, int iParam1)
 			case 2737:
 				return 103750283;
 			case 2738:
-				return -1017701936;
+				return joaat("a_water_ice_cc_graffiti");
 			case 2739:
 				return -743781837;
 			case 2740:
@@ -11218,7 +11218,7 @@ int func_207(int iParam0, int iParam1)
 			case 2749:
 				return 2039534767;
 			case 2750:
-				return -1451954802;
+				return joaat("win1_intro_cutscene");
 			case 2751:
 				return -1554566073;
 			case 2752:
@@ -11226,7 +11226,7 @@ int func_207(int iParam0, int iParam1)
 			case 2753:
 				return -1208336782;
 			case 2754:
-				return 1415119588;
+				return joaat("prop_tree_02");
 			case 2755:
 				return joaat("prop_tree_log_01");
 			case 2756:
@@ -11304,7 +11304,7 @@ int func_209(var uParam0)
 	struct<8> Var6;
 	bool bVar14;
 	var uVar15;
-	char[] cVar16[8];
+	var uVar16;
 	int iVar24[100];
 	int iVar125;
 	int iVar126;
@@ -11371,11 +11371,11 @@ int func_209(var uParam0)
 						}
 					}
 					func_307(uParam0, 3, &(Var128.f_5));
-					if (func_304(uParam0, 6, &cVar16))
+					if (func_304(uParam0, 6, &uVar16))
 					{
-						if (!MISC::IS_STRING_NULL_OR_EMPTY(&cVar16))
+						if (!MISC::IS_STRING_NULL_OR_EMPTY(&uVar16))
 						{
-							Var128.f_6 = MISC::GET_HASH_KEY(&cVar16);
+							Var128.f_6 = MISC::GET_HASH_KEY(&uVar16);
 						}
 					}
 				}
@@ -11573,9 +11573,9 @@ int func_213()
 	return 0;
 }
 
-void func_214(var uParam0, int iParam1)
+void func_214(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_215(uParam0))
+	if (bParam1 || !func_215(uParam0))
 	{
 		func_317(uParam0);
 	}
@@ -11603,7 +11603,7 @@ void func_217(int iParam0)
 {
 	if (iParam0 != Global_1956578->f_3)
 	{
-		_NAMESPACE84::_0x74BCCEB233AD95B2(612972714, iParam0);
+		COMPAPP::_0x74BCCEB233AD95B2(612972714, iParam0);
 		Global_1956578->f_3 = iParam0;
 	}
 }
@@ -11703,9 +11703,9 @@ void func_220()
 void func_221()
 {
 	bool bVar0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	bool bVar1;
+	bool bVar2;
+	bool bVar3;
 	bool bVar4;
 	vector3 vVar5;
 	int iVar9;
@@ -11732,9 +11732,9 @@ void func_221()
 			CAM::DO_SCREEN_FADE_IN(0);
 		}
 	}
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(-1933804684))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("status_alert_feed")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(-1933804684, &vVar5))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("status_alert_feed"), &vVar5))
 		{
 			switch (vVar5.x)
 			{
@@ -11743,18 +11743,18 @@ void func_221()
 					{
 						if (vVar5.z == 2074623703)
 						{
-							UIEVENTS::_EVENT_MANAGER_POP_EVENT(-1933804684);
+							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("status_alert_feed"));
 							bVar0 = true;
 						}
 						if (vVar5.z == 444632721)
 						{
-							UIEVENTS::_EVENT_MANAGER_POP_EVENT(-1933804684);
-							iVar2 = 1;
+							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("status_alert_feed"));
+							bVar2 = true;
 						}
 						if (vVar5.z == 1400745903)
 						{
-							UIEVENTS::_EVENT_MANAGER_POP_EVENT(-1933804684);
-							iVar1 = 1;
+							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("status_alert_feed"));
+							bVar1 = true;
 						}
 					}
 					break;
@@ -11762,17 +11762,17 @@ void func_221()
 					if (vVar5.y == Global_1572887->f_164.f_82)
 					{
 						Global_1572887->f_164.f_82 = 0;
-						iVar3 = 1;
-						UIEVENTS::_EVENT_MANAGER_POP_EVENT(-1933804684);
+						bVar3 = true;
+						UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("status_alert_feed"));
 					}
 					break;
 			}
 		}
-		UIEVENTS::_EVENT_MANAGER_POP_EVENT(-1933804684);
+		UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("status_alert_feed"));
 	}
 	iVar9 = (MISC::GET_GAME_TIMER() - Global_1572887->f_164.f_86);
 	bVar4 = (iVar9 > Global_1899378->f_2.f_14 && Global_1572887->f_164.f_86 != -1);
-	if ((((bVar4 || bVar0) || iVar1) || iVar2) || iVar3)
+	if ((((bVar4 || bVar0) || bVar1) || bVar2) || bVar3)
 	{
 		func_330(3);
 		if (func_331(128) || func_331(256))
@@ -11782,7 +11782,7 @@ void func_221()
 				CAM::DO_SCREEN_FADE_OUT(0);
 				func_335(8);
 			}
-			else if ((iVar1 || iVar3) || bVar4)
+			else if ((bVar1 || bVar3) || bVar4)
 			{
 				func_335(16);
 			}
@@ -11865,10 +11865,10 @@ int func_226()
 	{
 		return 0;
 	}
-	sVar18 = func_337(Var0[0 /*8*/], 109029619);
-	sVar19 = func_337(Var0[1 /*8*/], 109029619);
+	sVar18 = func_337(Var0[0 /*8*/], joaat("COLOR_PURE_WHITE"));
+	sVar19 = func_337(Var0[1 /*8*/], joaat("COLOR_PURE_WHITE"));
 	sVar20 = MISC::_CREATE_VAR_STRING(42, "NT_INV_EXTENDED", sVar19, sVar18);
-	func_223("NET_SESSION_INV_HEADER", sVar20, -437533031, 1183081869, -2, 0, 0, 1, 0, 1, 1);
+	func_223("NET_SESSION_INV_HEADER", sVar20, joaat("blips"), joaat("BLIP_MP_PLAYLIST_TEAMGAME"), -2, 0, 0, 1, 0, 1, 1);
 	return 1;
 }
 
@@ -12582,7 +12582,7 @@ char* func_256(int iParam0)
 	sVar0 = "";
 	switch (iParam0)
 	{
-		case 1746230403:
+		case joaat("mode"):
 			sVar0 = "mode";
 			break;
 		case -763890493:
@@ -12603,7 +12603,7 @@ char* func_256(int iParam0)
 		case 735882532:
 			sVar0 = "mission_id";
 			break;
-		case -1637816997:
+		case joaat("p_fav01_grass_06_268"):
 			sVar0 = "char_slot";
 			break;
 		case -730035725:
@@ -12662,265 +12662,265 @@ int func_258(int iParam0)
 	{
 		case -2085163631:
 			return 0;
-		case -4613767:
+		case joaat("REGION_BAY_CRAWDADWILLIES"):
 			return 0;
-		case 1567162363:
+		case joaat("REGION_BAY_MACOMBS_END"):
 			return 1;
-		case 456471693:
+		case joaat("REGION_BAY_MERKINSWALLER"):
 			return 2;
-		case -1772963474:
+		case joaat("REGION_BAY_LAGRAS"):
 			return 3;
-		case 1881496386:
+		case joaat("REGION_BAY_LAKAY"):
 			return 4;
-		case 711768994:
+		case joaat("REGION_BAY_SAINT_DENIS"):
 			return 5;
-		case -440834066:
+		case joaat("REGION_BAY_ORANGE_PLANTATION"):
 			return 6;
-		case -1363847832:
+		case joaat("REGION_BAY_SERIAL_KILLER"):
 			return 7;
-		case 967769300:
+		case joaat("REGION_BAY_SERENDIPITY"):
 			return 8;
-		case -1436873944:
+		case joaat("REGION_BAY_SHADYBELLE"):
 			return 9;
-		case -1585669139:
+		case joaat("REGION_BAY_SILTWATERSTRAND"):
 			return 10;
-		case 16791368:
+		case joaat("REGION_BGV_APPLESEEDTIMBER"):
 			return 11;
-		case 1452922822:
+		case joaat("REGION_BGV_BERYLS_DREAM"):
 			return 12;
-		case 549538301:
+		case joaat("REGION_BGV_BLACKBONEFOREST_TRAPPER"):
 			return 13;
-		case 974698954:
+		case joaat("REGION_BGV_DAKOTARIVER_TRAPPER"):
 			return 14;
-		case 445881012:
+		case joaat("REGION_BGV_FORTRIGGS"):
 			return 15;
-		case -2043891857:
+		case joaat("REGION_BGV_HANGINGDOG"):
 			return 16;
-		case 419656993:
+		case joaat("REGION_BGV_LONEMULESTEAD"):
 			return 17;
-		case -1732457315:
+		case joaat("REGION_BGV_MISSING_HUSBAND"):
 			return 18;
-		case 1794318026:
+		case joaat("REGION_BGV_MONTO_REST"):
 			return 19;
-		case 2035159966:
+		case joaat("REGION_BGV_OWANJILA_DAM"):
 			return 20;
-		case 770832805:
+		case joaat("REGION_BGV_PAINTEDSKY"):
 			return 21;
-		case -1109814766:
+		case joaat("REGION_BGV_PRONGHORN"):
 			return 22;
-		case -1080317735:
+		case joaat("REGION_BGV_RIGGS_STATION"):
 			return 23;
-		case -1075550363:
+		case joaat("REGION_BGV_SHACK"):
 			return 24;
-		case 2138576151:
+		case joaat("REGION_BGV_SHEPHERDS_RISE"):
 			return 25;
-		case 1180954297:
+		case joaat("REGION_BGV_STRAWBERRY"):
 			return 26;
-		case 783603394:
+		case joaat("REGION_BGV_VALLEY_VIEW"):
 			return 27;
-		case -170458336:
+		case joaat("REGION_BGV_WATSONSCABIN"):
 			return 29;
-		case 1285083821:
+		case joaat("REGION_BLU_CANEBREAK_MANOR"):
 			return 30;
-		case -1840907462:
+		case joaat("REGION_BLU_COPPERHEAD"):
 			return 31;
-		case 756710130:
+		case joaat("REGION_BLU_SISIKA"):
 			return 32;
-		case 388370024:
+		case joaat("REGION_CML_BACCHUSBRIDGE"):
 			return 33;
-		case 1092296123:
+		case joaat("REGION_CML_DINO_LADY"):
 			return 34;
-		case 467491346:
+		case joaat("REGION_CML_OLDFORTWALLACE"):
 			return 35;
-		case -1391584612:
+		case joaat("REGION_CML_SIXPOINTCABIN"):
 			return 36;
-		case -152111346:
+		case joaat("REGION_GRT_BEECHERS"):
 			return 37;
-		case 1447551317:
+		case joaat("REGION_GRT_BLACKWATER"):
 			return 38;
-		case 153136092:
+		case joaat("REGION_GRT_QUAKERS_COVE"):
 			return 39;
-		case 1304405732:
+		case joaat("REGION_GRZ_ADLERRANCH"):
 			return 40;
-		case 1074984055:
+		case joaat("REGION_GRZ_DEAD_RIVAL"):
 			return 41;
-		case 1087476368:
+		case joaat("REGION_GRZ_CALUMETRAVINE"):
 			return 50;
-		case -1768057340:
+		case joaat("REGION_GRE_CIVIL_WAR_BRIDE"):
 			return 51;
-		case 1218874593:
+		case joaat("REGION_GRZ_CHEZPORTER"):
 			return 42;
-		case -1438443836:
+		case joaat("REGION_GRZ_COHUTTA"):
 			return 52;
-		case -2036340415:
+		case joaat("REGION_GRZ_COLTER"):
 			return 43;
-		case 803939643:
+		case joaat("REGION_GRZ_FROZEN_EXPLORER"):
 			return 44;
-		case -632496195:
+		case joaat("REGION_GRZ_GUNFIGHT"):
 			return 53;
-		case -965943619:
+		case joaat("REGION_GRZ_MILLESANI_CLAIM"):
 			return 45;
-		case 283532073:
+		case joaat("REGION_GRZ_MOUNTAIN_MAN"):
 			return 46;
-		case -69067491:
+		case joaat("REGION_GRZ_STARVING_CHILDREN"):
 			return 47;
-		case -1864895118:
+		case joaat("REGION_GRZ_TEMPEST_RIM"):
 			return 48;
-		case -1929806571:
+		case joaat("REGION_GRZ_THELOFT"):
 			return 54;
-		case 1162337247:
+		case joaat("REGION_BGV_WALLACE_STATION"):
 			return 28;
-		case -698525417:
+		case joaat("REGION_GRE_VETERAN"):
 			return 55;
-		case -1149739894:
+		case joaat("REGION_GRZ_WAPITI"):
 			return 56;
-		case 380507325:
+		case joaat("REGION_GRZ_WINTERMINING_TOWN"):
 			return 49;
-		case 407796241:
+		case joaat("REGION_GUA_AGUASDULCES"):
 			return 57;
-		case -152267914:
+		case joaat("REGION_GUA_CAMP"):
 			return 58;
-		case -1675443320:
+		case joaat("REGION_GUA_CINCOTORRES"):
 			return 59;
-		case 1940341639:
+		case joaat("REGION_GUA_LACAPILLA"):
 			return 60;
-		case 1846596114:
+		case joaat("REGION_GUA_MANICATO"):
 			return 61;
-		case 907708501:
+		case joaat("REGION_HRT_ABANDONED_MILL"):
 			return 62;
-		case 1825644981:
+		case joaat("REGION_HRT_CARMODYDELL"):
 			return 64;
-		case 2065937607:
+		case joaat("REGION_HRT_CORNWALLKEROSENE"):
 			return 65;
-		case -211317417:
+		case joaat("REGION_HRT_CROP_FARM"):
 			return 66;
-		case 1801307910:
+		case joaat("REGION_HRT_CUMBERLANDFALLS"):
 			return 67;
-		case -4118897:
+		case joaat("REGION_HRT_DOWNSRANCH"):
 			return 68;
-		case 1853610692:
+		case joaat("REGION_HRT_EMERALDRANCH"):
 			return 69;
-		case -1574644415:
+		case joaat("REGION_HRT_GRANGERS_HOGGERY"):
 			return 70;
-		case 2133055515:
+		case joaat("REGION_HRT_HORSESHOEOVERLOOK"):
 			return 71;
-		case -1413401932:
+		case joaat("REGION_HRT_LARNEDSOD"):
 			return 72;
-		case 801090761:
+		case joaat("REGION_HRT_LOONY_CULT"):
 			return 73;
-		case 2131218644:
+		case joaat("REGION_HRT_LUCKYSCABIN"):
 			return 74;
-		case 1708823660:
+		case joaat("REGION_HRT_SWANSONS_STATION"):
 			return 75;
-		case 7976942:
+		case joaat("REGION_HRT_VALENTINE"):
 			return 76;
-		case 2111120505:
+		case joaat("REGION_ROA_ABERDEENPIGFARM"):
 			return 77;
-		case 176893118:
+		case joaat("REGION_ROA_ANNESBURG"):
 			return 78;
-		case 602306665:
+		case joaat("REGION_ROA_BEECHERS_C"):
 			return 63;
-		case 1179148161:
+		case joaat("REGION_ROA_BEAVERHOLLOW"):
 			return 79;
-		case 547412068:
+		case joaat("REGION_ROA_BLACK_BALSAM_RISE"):
 			return 80;
-		case -1539748801:
+		case joaat("REGION_ROA_BRANDYWINE_DROP"):
 			return 81;
-		case -1605119912:
+		case joaat("REGION_ROA_BUTCHERCREEK"):
 			return 82;
-		case -884464063:
+		case joaat("REGION_ROA_DOVERHILL"):
 			return 83;
-		case -1420970720:
+		case joaat("REGION_ROA_HAPPY_FAMILY"):
 			return 84;
-		case 1017024547:
+		case joaat("REGION_ROA_ISOLATIONIST"):
 			return 85;
-		case -1204497306:
+		case joaat("REGION_ROA_MACLEANSHOUSE"):
 			return 86;
-		case -1621069480:
+		case joaat("REGION_ROA_MOSSY_FLATS"):
 			return 87;
-		case -458604261:
+		case joaat("REGION_ROA_ROANOKE_VALLEY"):
 			return 88;
-		case -923391614:
+		case joaat("REGION_ROA_ROCKYSEVEN"):
 			return 89;
-		case -689247089:
+		case joaat("REGION_ROA_TRAPPER"):
 			return 90;
-		case 44049568:
+		case joaat("REGION_ROA_VANHORNMANSION"):
 			return 91;
-		case 1350259552:
+		case joaat("REGION_ROA_VANHORNPOST"):
 			return 92;
-		case -61661574:
+		case joaat("REGION_SCM_BRAITHWAITEMANOR"):
 			return 93;
-		case -725338054:
+		case joaat("REGION_SCM_BULGERGLADE"):
 			return 94;
-		case -770123507:
+		case joaat("REGION_SCM_CALIGAHALL"):
 			return 95;
-		case 1322486734:
+		case joaat("REGION_SCM_CATFISHJACKSONS"):
 			return 96;
-		case -460939553:
+		case joaat("REGION_SCM_CLEMENSCOVE"):
 			return 97;
-		case -1451863552:
+		case joaat("REGION_SCM_CLEMENSPOINT"):
 			return 98;
-		case 713715980:
+		case joaat("REGION_SCM_HORSE_SHOP"):
 			return 101;
-		case -31204969:
+		case joaat("REGION_SCM_LONNIESSHACK"):
 			return 102;
-		case -1720064790:
+		case joaat("REGION_SCM_LOVE_TRIANGLE"):
 			return 103;
-		case 173833068:
+		case joaat("REGION_SCM_COMPSONS_STEAD"):
 			return 99;
-		case -1681004136:
+		case joaat("REGION_SCM_DAIRY_FARM"):
 			return 100;
-		case -532172775:
+		case joaat("REGION_SCM_RADLEYS_PASTURE"):
 			return 104;
-		case -739067737:
+		case joaat("REGION_SCM_RHODES"):
 			return 105;
-		case -1203133835:
+		case joaat("REGION_SCM_SLAVE_PEN"):
 			return 106;
-		case -1947411598:
+		case joaat("REGION_TAL_AURORA_BASIN"):
 			return 107;
-		case -1049753365:
+		case joaat("REGION_TAL_DEAD_SETTLER"):
 			return 108;
-		case -1298718762:
+		case joaat("REGION_TAL_COCHINAY"):
 			return 109;
-		case -595083064:
+		case joaat("REGION_TAL_MANZANITAPOST"):
 			return 110;
-		case 884833917:
+		case joaat("REGION_TAL_PACIFICUNIONRR"):
 			return 111;
-		case 2141950651:
+		case joaat("REGION_TAL_TANNERSREACH"):
 			return 112;
-		case -1437650729:
+		case joaat("REGION_TAL_TRAPPER"):
 			return 113;
-		case 672925454:
+		case joaat("REGION_HEN_MACFARLANES_RANCH"):
 			return 126;
-		case 846062774:
+		case joaat("REGION_HEN_THIEVES_LANDING"):
 			return 127;
-		case 1369756178:
+		case joaat("REGION_CHO_ARMADILLO"):
 			return 120;
-		case -736172423:
+		case joaat("REGION_CHO_COOTS_CHAPEL"):
 			return 121;
-		case 1597070291:
+		case joaat("REGION_CHO_DON_JULIO_HOUSE"):
 			return 122;
-		case -159501564:
+		case joaat("REGION_CHO_RIDGEWOOD_FARM"):
 			return 124;
-		case -1438809608:
+		case joaat("REGION_CHO_RILEYS_CHARGE"):
 			return 123;
-		case -102682392:
+		case joaat("REGION_CHO_TWIN_ROCKS"):
 			return 125;
-		case -81068979:
+		case joaat("REGION_GAP_GAPTOOTH_BREACH"):
 			return 114;
-		case 227618407:
+		case joaat("REGION_GAP_TUMBLEWEED"):
 			return 115;
-		case 2106043438:
+		case joaat("REGION_GAP_RATHSKELLER_FORK"):
 			return 116;
 		case -1868356491:
 			return 129;
-		case -1380256064:
+		case joaat("REGION_RIO_BENEDICT_POINT"):
 			return 117;
-		case -2118469183:
+		case joaat("REGION_RIO_FORT_MERCER"):
 			return 118;
-		case -558997834:
+		case joaat("REGION_RIO_PLAIN_VIEW"):
 			return 119;
-		case 658339366:
+		case joaat("REGION_CENTRALUNIONRR"):
 			return 128;
 		default:
 			break;
@@ -12932,17 +12932,17 @@ int func_259(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 675537701:
+		case joaat("DISTRICT_BAYOU_NWA"):
 			return 0;
-		case -1915988145:
+		case joaat("DISTRICT_BIG_VALLEY"):
 			return 1;
 		case 38535626:
 			return 2;
-		case 1904167574:
+		case joaat("DISTRICT_CUMBERLAND_FOREST"):
 			return 3;
-		case 244711249:
+		case joaat("DISTRICT_GREAT_PLAINS"):
 			return 4;
-		case -1859792564:
+		case joaat("DISTRICT_GRIZZLIES"):
 			return 5;
 		case -1808688941:
 			return 6;
@@ -12954,17 +12954,17 @@ int func_259(int iParam0)
 			return 9;
 		case 821748379:
 			return 10;
-		case 196685551:
+		case joaat("DISTRICT_SCARLETT_MEADOWS"):
 			return 11;
-		case 1983548039:
+		case joaat("DISTRICT_TALL_TREES"):
 			return 12;
-		case 985737465:
+		case joaat("DISTRICT_GAPTOOTH_RIDGE"):
 			return 13;
-		case -735550853:
+		case joaat("DISTRICT_RIO_BRAVO"):
 			return 14;
-		case -1716084250:
+		case joaat("DISTRICT_CHOLLA_SPRINGS"):
 			return 15;
-		case 869827975:
+		case joaat("DISTRICT_HENNIGANS_STEAD"):
 			return 16;
 		default:
 			break;
@@ -12976,17 +12976,17 @@ int func_260(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -221059932:
+		case joaat("AMBARINO"):
 			return 0;
-		case 10837344:
+		case joaat("LEMOYNE"):
 			return 1;
-		case 2045157995:
+		case joaat("newaustin"):
 			return 2;
 		case -1289136221:
 			return 3;
 		case 1246494439:
 			return 4;
-		case 1935063277:
+		case joaat("guarma"):
 			return 5;
 		default:
 			break;
@@ -12998,7 +12998,7 @@ int func_261(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -747096482:
+		case joaat("blackjack"):
 			return 0;
 		case 390152599:
 			return 1;
@@ -13006,7 +13006,7 @@ int func_261(int iParam0)
 			return 2;
 		case 687137831:
 			return 3;
-		case 1221273613:
+		case joaat("milking_cow"):
 			return 4;
 		case -669486032:
 			return 5;
@@ -13022,31 +13022,31 @@ int func_262(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1369928329:
+		case joaat("NET_PLAYLIST_RACE_SERIES"):
 			return 0;
-		case 2090637823:
+		case joaat("NET_PLAYLIST_ADVERSARY_MEDIUM"):
 			return 2;
-		case -1740003396:
+		case joaat("NET_PLAYLIST_ADVERSARY_LARGE"):
 			return 3;
-		case -2140118397:
+		case joaat("NET_PLAYLIST_GUN_RUSH_TEAMS"):
 			return 4;
-		case -141490041:
+		case joaat("NET_PLAYLIST_GUN_RUSH_FREE_FOR_ALL"):
 			return 5;
-		case 485273815:
+		case joaat("NET_PLAYLIST_NOMINATED_SERIES"):
 			return 6;
-		case 188100165:
+		case joaat("NET_PLAYLIST_NOMINATED_SERIES_SMALL"):
 			return 7;
-		case -840966484:
+		case joaat("NET_PLAYLIST_NOMINATED_SERIES_MEDIUM"):
 			return 8;
-		case 812079913:
+		case joaat("NET_PLAYLIST_NOMINATED_SERIES_LARGE"):
 			return 9;
-		case 839886685:
+		case joaat("NET_PLAYLIST_PRIVATE_SERIES"):
 			return 10;
-		case 1749906378:
+		case joaat("NET_PLAYLIST_ORBIS_SERIES_1"):
 			return 11;
-		case 1485493317:
+		case joaat("NET_PLAYLIST_ORBIS_SERIES_2"):
 			return 12;
-		case -1956038143:
+		case joaat("NET_PLAYLIST_ORBIS_SERIES_3"):
 			return 13;
 		default:
 			break;
@@ -13064,7 +13064,7 @@ int func_263(int iParam0)
 		case 0:
 			iVar0 = 0;
 			break;
-		case -88424047:
+		case joaat("NEW_GAME"):
 			iVar0 = 1;
 			break;
 		case 1651967528:
@@ -13076,10 +13076,10 @@ int func_263(int iParam0)
 		case 1306134188:
 			iVar0 = 8;
 			break;
-		case -1357178860:
+		case joaat("private"):
 			iVar0 = 16;
 			break;
-		case 133180145:
+		case joaat("friendly"):
 			iVar0 = 32;
 			break;
 		case 655115506:
@@ -13109,7 +13109,7 @@ int func_263(int iParam0)
 		case -61119924:
 			iVar0 = 16384;
 			break;
-		case 2134863183:
+		case joaat("camp"):
 			iVar0 = 32768;
 			break;
 		case -159568751:
@@ -13137,28 +13137,28 @@ char* func_265(int iParam0)
 		case 0:
 			sVar0 = "";
 			break;
-		case 1785216189:
+		case joaat("single_player"):
 			sVar0 = "single_player";
 			break;
-		case -1050153785:
+		case joaat("freeroam"):
 			sVar0 = "freeroam";
 			break;
 		case -1743646234:
 			sVar0 = "goldstore";
 			break;
-		case -1330461529:
+		case joaat("series"):
 			sVar0 = "series";
 			break;
-		case -1950263389:
+		case joaat("mission"):
 			sVar0 = "mission";
 			break;
 		case 1495295997:
 			sVar0 = "minigame";
 			break;
-		case 1375707186:
+		case joaat("mission_creator"):
 			sVar0 = "mission_creator";
 			break;
-		case -417606870:
+		case joaat("clip"):
 			sVar0 = "clip";
 			break;
 		case joaat("benchmark"):
@@ -13176,7 +13176,7 @@ int func_266(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -88424047;
+			iVar0 = joaat("NEW_GAME");
 			break;
 		case 1:
 			iVar0 = 1651967528;
@@ -13188,10 +13188,10 @@ int func_266(int iParam0)
 			iVar0 = 1306134188;
 			break;
 		case 4:
-			iVar0 = -1357178860;
+			iVar0 = joaat("private");
 			break;
 		case 5:
-			iVar0 = 133180145;
+			iVar0 = joaat("friendly");
 			break;
 		case 6:
 			iVar0 = 655115506;
@@ -13221,7 +13221,7 @@ int func_266(int iParam0)
 			iVar0 = -61119924;
 			break;
 		case 15:
-			iVar0 = 2134863183;
+			iVar0 = joaat("camp");
 			break;
 		case 16:
 			iVar0 = -159568751;
@@ -13642,29 +13642,29 @@ void func_272(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "strandSavedVars", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 129, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 129, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".savedBitFlags", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*4*/], &Var17);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*4*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".thisCommandPos", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".thisCommandHashID", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_2), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, ".thisCommandTOD", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam0)[iVar0 /*4*/])->f_3), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_273(var uParam0)
@@ -13673,52 +13673,52 @@ void func_273(var uParam0)
 	char cVar1[64];
 	struct<8> Var9;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 112, "controls");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 112, "controls");
 	StringCopy(&cVar1, "controls.syncIDs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 105, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 105, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B((*uParam0)[iVar0], &Var9);
+		SAVE::_0xBB7F4273C186BC4B((*uParam0)[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "controls.flagIDs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_105), 2, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_105), 2, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_105)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0->f_105[iVar0], &Var9);
+		SAVE::_0xBB7F4273C186BC4B(uParam0->f_105[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "controls.intIDs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_107), 3, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_107), 3, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_107)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_107[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_107[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar1, "controls.bitsetIDs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_110), 2, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_110), 2, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < uParam0->f_110)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_110[iVar0], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_110[iVar0], &Var9);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_274(var uParam0)
@@ -13728,7 +13728,7 @@ void func_274(var uParam0)
 	int iVar16;
 
 	StringCopy(&cVar0, "sHorseSlotInfo", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 3053, &cVar0);
+	SAVE::_0x81F4E92BE3958364(uParam0, 3053, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < *uParam0)
 	{
@@ -13737,7 +13737,7 @@ void func_274(var uParam0)
 		func_384((*uParam0)[iVar16 /*436*/], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_275(var uParam0)
@@ -13748,19 +13748,19 @@ void func_275(var uParam0)
 	int iVar24;
 
 	StringCopy(&cVar0, "sSaddleInfo", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 80, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 80, &cVar0);
 	cVar8 = { cVar0 };
 	StringConCat(&cVar8, ".eSaddleSlot", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &cVar8);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &cVar8);
 	cVar8 = { cVar0 };
 	StringConCat(&cVar8, ".eSaddleState", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar8);
 	cVar8 = { cVar0 };
 	StringConCat(&cVar8, ".eDeadOrDroppedTime", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), &cVar8);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), &cVar8);
 	cVar8 = { cVar0 };
 	StringConCat(&cVar8, ".sPeltSkinData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_3), 58, &cVar8);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_3), 58, &cVar8);
 	iVar24 = 0;
 	while (iVar24 < 57)
 	{
@@ -13769,10 +13769,10 @@ void func_275(var uParam0)
 		func_385(uParam0->f_3[iVar24], &Var16);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	cVar8 = { cVar0 };
 	StringConCat(&cVar8, ".sVisualPeltSkinInfo", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_61), 16, &cVar8);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_61), 16, &cVar8);
 	iVar24 = 0;
 	while (iVar24 < 3)
 	{
@@ -13781,11 +13781,11 @@ void func_275(var uParam0)
 		func_386(uParam0->f_61[iVar24 /*5*/], &Var16);
 		iVar24++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	cVar8 = { cVar0 };
 	StringConCat(&cVar8, ".vSaddleCoords", 64);
 	func_152(&(uParam0->f_77), &cVar8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_276(var uParam0)
@@ -13794,11 +13794,11 @@ void func_276(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "sHorseBreakingInfo", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".bMinigameSuccessful", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_277(var uParam0)
@@ -13807,23 +13807,23 @@ void func_277(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "sTutorialInfo", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 5, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 5, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".iHighestBondLevelReached", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &Var8);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".iTimesOverspurred", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var8);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".iTimesRevived", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), &Var8);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".iTimesDirtyOver50Percent", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &Var8);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".bDeadHorseTutorialShouldRun", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_4), &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_4), &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_278(var uParam0)
@@ -13832,14 +13832,14 @@ void func_278(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "sHorseRaceInfo", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".bSprintBondingBonusUnlocked", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, &Var8);
+	SAVE::_0xBB7F4273C186BC4B(uParam0, &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, ".bSpeedStatBonusUnlocked", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_1), &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_1), &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_279(struct<8> Param0, var uParam8)
@@ -13848,32 +13848,32 @@ void func_279(struct<8> Param0, var uParam8)
 	struct<16> Var16;
 	int iVar32;
 
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam8, 61, &Param0);
+	SAVE::_0x81F4E92BE3958364(uParam8, 61, &Param0);
 	iVar32 = 0;
 	while (iVar32 < *uParam8)
 	{
 		MemCopy(&cVar0, {Param0}, 16);
 		StringIntConCat(&cVar0, iVar32, 128);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam8)[iVar32 /*5*/], 5, &cVar0);
+		SAVE::_0x443174C20B8B9E7F((*uParam8)[iVar32 /*5*/], 5, &cVar0);
 		Var16 = { cVar0 };
 		StringConCat(&Var16, ".iSet", 128);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam8)[iVar32 /*5*/], &Var16);
+		SAVE::_0x529B9CCD0972AF4D((*uParam8)[iVar32 /*5*/], &Var16);
 		Var16 = { cVar0 };
 		StringConCat(&Var16, ".eComp", 128);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam8)[iVar32 /*5*/])->f_1), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam8)[iVar32 /*5*/])->f_1), &Var16);
 		Var16 = { cVar0 };
 		StringConCat(&Var16, ".eIt", 128);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam8)[iVar32 /*5*/])->f_2), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam8)[iVar32 /*5*/])->f_2), &Var16);
 		Var16 = { cVar0 };
 		StringConCat(&Var16, ".eUp", 128);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam8)[iVar32 /*5*/])->f_3), &Var16);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam8)[iVar32 /*5*/])->f_3), &Var16);
 		Var16 = { cVar0 };
 		StringConCat(&Var16, ".iVal", 128);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam8)[iVar32 /*5*/])->f_4), &Var16);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam8)[iVar32 /*5*/])->f_4), &Var16);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar32++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_280(char* sParam0, var uParam1)
@@ -13884,26 +13884,26 @@ void func_280(char* sParam0, var uParam1)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, sParam0, 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam1, 286, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam1, 286, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam1)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam1)[iVar0 /*3*/], 3, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam1)[iVar0 /*3*/], 3, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "status", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam1)[iVar0 /*3*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam1)[iVar0 /*3*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "effect", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam1)[iVar0 /*3*/])->f_1), &Var17);
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam1)[iVar0 /*3*/])->f_1), &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "tags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&(((*uParam1)[iVar0 /*3*/])->f_2), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&(((*uParam1)[iVar0 /*3*/])->f_2), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_281(var uParam0)
@@ -13911,11 +13911,11 @@ void func_281(var uParam0)
 	char cVar0[64];
 
 	StringCopy(&cVar0, "cards", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, "cards");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, "cards");
 	StringCopy(&cVar0, "cards.eCardSetRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "cards.eMailedCigaretteSets");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "cards.eMailedCigaretteSets");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_282(var uParam0)
@@ -13924,11 +13924,11 @@ void func_282(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "rockCarvings", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eCarvingsRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_283(var uParam0)
@@ -13937,11 +13937,11 @@ void func_283(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "dinoBones", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eDinoRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_284(var uParam0)
@@ -13950,11 +13950,11 @@ void func_284(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "legendaryFish", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eLegendaryFishRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_285(var uParam0)
@@ -13965,30 +13965,30 @@ void func_285(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "gatorEggs", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 20, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 20, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todNestLastCleared", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0], &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_286(var uParam0)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, "egretFeathers");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, "egretFeathers");
 	StringCopy(&cVar0, "egretFeathers.eFeathersRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_287(var uParam0)
@@ -13997,11 +13997,11 @@ void func_287(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "taxidermyAnimals", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eTaxidermyRewardFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_288(var uParam0)
@@ -14012,30 +14012,30 @@ void func_288(var uParam0)
 	struct<8> Var17;
 
 	StringCopy(&cVar1, "taxidermyMarital", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 15, &cVar1);
+	SAVE::_0x81F4E92BE3958364(uParam0, 15, &cVar1);
 	iVar0 = 0;
 	while (iVar0 < *uParam0)
 	{
 		Var9 = { cVar1 };
 		StringIntConCat(&Var9, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*2*/], 2, &Var9);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "todStatuePlacedOnMantle", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*2*/], &Var17);
+		SAVE::_0xB25B5A375BE5BE26((*uParam0)[iVar0 /*2*/], &Var17);
 		Var17 = { Var9 };
 		StringConCat(&Var17, "bPlayerLeftBeechers", 64);
-		_NAMESPACE59::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xBB7F4273C186BC4B(&(((*uParam0)[iVar0 /*2*/])->f_1), &Var17);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 }
 
 void func_289(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, "journalData");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, "journalData.eFlags");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, "journalData");
+	SAVE::_0xB25B5A375BE5BE26(uParam0, "journalData.eFlags");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_290(var uParam0)
@@ -14044,11 +14044,11 @@ void func_290(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "exotics", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eExoticStageFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_291(var uParam0)
@@ -14057,11 +14057,11 @@ void func_291(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "firstRecipePamphlets", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "eFirstRecipePamphletFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_292(var uParam0)
@@ -14070,14 +14070,14 @@ void func_292(var uParam0)
 	struct<8> Var8;
 
 	StringCopy(&cVar0, "treasureHunter", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, &cVar0);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, &cVar0);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "todTreasureHunterTutorial", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var8);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var8);
 	Var8 = { cVar0 };
 	StringConCat(&Var8, "iNumTreasureHuntLootLocationsFound", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var8);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var8);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_293(var uParam0, struct<8> Param1)
@@ -14088,37 +14088,37 @@ void func_293(var uParam0, struct<8> Param1)
 
 	Var9 = { Param1 };
 	StringConCat(&Var9, "PortableList", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 19, &Var9);
+	SAVE::_0x81F4E92BE3958364(uParam0, 19, &Var9);
 	iVar0 = 0;
 	while (iVar0 < 18)
 	{
 		Var1 = { Var9 };
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var1);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0], &Var1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	Var9 = { Param1 };
 	StringConCat(&Var9, "PortableArraySize", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_19), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_19), &Var9);
 	Var9 = { Param1 };
 	StringConCat(&Var9, "OutfitSlotCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_20), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_20), &Var9);
 	Var9 = { Param1 };
 	StringConCat(&Var9, "iHatSlotCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_21), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_21), &Var9);
 	Var9 = { Param1 };
 	StringConCat(&Var9, "iBigMaskSlotCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_22), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_22), &Var9);
 	Var9 = { Param1 };
 	StringConCat(&Var9, "iSmallMaskSlotCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_23), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_23), &Var9);
 	Var9 = { Param1 };
 	StringConCat(&Var9, "iGloveSlotCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_24), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_24), &Var9);
 	Var9 = { Param1 };
 	StringConCat(&Var9, "iBadgeSlotCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_25), &Var9);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_25), &Var9);
 }
 
 void func_294(var uParam0, struct<8> Param1, int iParam9)
@@ -14129,34 +14129,34 @@ void func_294(var uParam0, struct<8> Param1, int iParam9)
 	Var8 = { Param1 };
 	StringConCat(&Var8, "Data", 64);
 	StringIntConCat(&Var8, iParam9, 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 120, &Var8);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 120, &Var8);
 	Var0 = { Var8 };
 	StringConCat(&Var0, "_eFlags", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &Var0);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &Var0);
 	Var0 = { Var8 };
 	StringConCat(&Var0, "_Components", 64);
 	func_387(&(uParam0->f_1), Var0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_295(var uParam0)
 {
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 10, "psna_sCamp");
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 3, "psna_sCampLocation");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, "psna_sCampiSize");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), "psna_sCampeDistrict");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), "psna_sCampeLocation");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0x443174C20B8B9E7F(&(uParam0->f_3), 7, "psna_sCampRecharge");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), "psna_sCampRechargeYear");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_1), "psna_sCampRechargeMonth");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_2), "psna_sCampRechargeDay");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_3), "psna_sCampRechargeHour");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_4), "psna_sCampRechargeMinute");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_5), "psna_sCampRechargeSecond");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_6), "psna_sCampRechargeMilliseconds");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(uParam0, 10, "psna_sCamp");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 3, "psna_sCampLocation");
+	SAVE::_0x529B9CCD0972AF4D(uParam0, "psna_sCampiSize");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), "psna_sCampeDistrict");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), "psna_sCampeLocation");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0x443174C20B8B9E7F(&(uParam0->f_3), 7, "psna_sCampRecharge");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), "psna_sCampRechargeYear");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_1), "psna_sCampRechargeMonth");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_2), "psna_sCampRechargeDay");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_3), "psna_sCampRechargeHour");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_4), "psna_sCampRechargeMinute");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_5), "psna_sCampRechargeSecond");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3.f_6), "psna_sCampRechargeMilliseconds");
+	SAVE::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_296(var uParam0)
@@ -14167,74 +14167,74 @@ void func_296(var uParam0)
 	struct<8> Var17;
 	struct<8> Var25;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 47, "psna_sPosse");
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, "psna_sPosse_bStandardName");
-	_NAMESPACE59::_0x4845E7E7643A908C(&(uParam0->f_1), "psna_sPosse_txtGamertag");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_5), "psna_sPosse_iLastPosseID");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_6), 41, "psna_sPosse_sPosseDataArray");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 47, "psna_sPosse");
+	SAVE::_0xBB7F4273C186BC4B(uParam0, "psna_sPosse_bStandardName");
+	SAVE::_0x4845E7E7643A908C(&(uParam0->f_1), "psna_sPosse_txtGamertag");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_5), "psna_sPosse_iLastPosseID");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_6), 41, "psna_sPosse_sPosseDataArray");
 	StringCopy(&cVar9, "psna_sPosse_data_", 64);
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
 		Var1 = { cVar9 };
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_6[iVar0 /*8*/], 8, &Var1);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_6[iVar0 /*8*/], 8, &Var1);
 		Var17 = { Var1 };
 		StringConCat(&Var17, "_iPosseID", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_7), &Var17);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_7), &Var17);
 		Var17 = { Var1 };
 		StringConCat(&Var17, "_sPosseLock", 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_6[iVar0 /*8*/], 7, &Var17);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_6[iVar0 /*8*/], 7, &Var17);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Year", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_6[iVar0 /*8*/], &Var25);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_6[iVar0 /*8*/], &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Month", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_1), &Var25);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_1), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Day", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_2), &Var25);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_2), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Hour", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_3), &Var25);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_3), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Minute", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_4), &Var25);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_4), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Second", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_5), &Var25);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_5), &Var25);
 		Var25 = { Var17 };
 		StringConCat(&Var25, "_Milliseconds", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_6), &Var25);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_6[iVar0 /*8*/])->f_6), &Var25);
+		SAVE::_0xE0B45E983BFC0768();
+		SAVE::_0xE0B45E983BFC0768();
 		StringCopy(&Var17, "", 64);
 		StringCopy(&Var25, "", 64);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_297(var uParam0)
 {
 	int iVar0;
-	struct<8> Var1;
+	char cVar1[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 288, "nssd_sStable_Data");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 288, "nssd_sStable_Data");
 	func_388(uParam0);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_41), 246, "nssd_sStableBonding_array");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_41), 246, "nssd_sStableBonding_array");
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
-		StringCopy(&Var1, "nssd_sStableBonding_array_", 64);
-		StringIntConCat(&Var1, iVar0, 64);
-		func_389(uParam0->f_41[iVar0 /*49*/], &Var1);
+		StringCopy(&cVar1, "nssd_sStableBonding_array_", 64);
+		StringIntConCat(&cVar1, iVar0, 64);
+		func_389(uParam0->f_41[iVar0 /*49*/], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_287), "nssd_eSavedSystemFlags");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_287), "nssd_eSavedSystemFlags");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_298(var uParam0)
@@ -14244,39 +14244,39 @@ void func_298(var uParam0)
 	char cVar9[64];
 
 	StringCopy(&cVar9, "psna_sClothes", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1012, &cVar9);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1012, &cVar9);
 	Var1 = { cVar9 };
 	StringConCat(&Var1, "PortableWardrobe", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 26, &Var1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 26, &Var1);
 	func_293(uParam0, Var1);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 	StringCopy(&Var1, "psna_sClothes_OutfitList", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_26), 601, &Var1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_26), 601, &Var1);
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
 		func_294(uParam0->f_26[iVar0 /*120*/], Var1, iVar0);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&Var1, "psna_sClothes_HeadOverlay", 64);
 	func_390(&(uParam0->f_627), Var1);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_953), "psna_sClothes_SystemFlags");
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_954), "psna_sClothes_PlayerType");
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_955), 55, "psna_sClothes_fExpressions");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_953), "psna_sClothes_SystemFlags");
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_954), "psna_sClothes_PlayerType");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_955), 55, "psna_sClothes_fExpressions");
 	iVar0 = 0;
 	while (iVar0 < 54)
 	{
 		Var1 = { cVar9 };
 		StringConCat(&Var1, "_fExpression", 64);
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_955[iVar0], &Var1);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_955[iVar0], &Var1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_1010), "psna_sClothes_fEyeRedness");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1011), "psna_sClothes_iCurOutfit");
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_1010), "psna_sClothes_fEyeRedness");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1011), "psna_sClothes_iCurOutfit");
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_299(var uParam0)
@@ -14286,8 +14286,8 @@ void func_299(var uParam0)
 	char cVar9[64];
 
 	StringCopy(&cVar9, "psna_sAbandonedLoot", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 3, &cVar9);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 3, &Var1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 3, &cVar9);
+	SAVE::_0x81F4E92BE3958364(uParam0, 3, &Var1);
 	iVar0 = 0;
 	while (iVar0 <= 0)
 	{
@@ -14296,8 +14296,8 @@ void func_299(var uParam0)
 		func_391((*uParam0)[iVar0 /*2*/], Var1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_300(var uParam0)
@@ -14308,44 +14308,44 @@ void func_300(var uParam0)
 	char cVar17[64];
 
 	StringCopy(&cVar17, "psna_sRpg", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 34, &cVar17);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 34, &cVar17);
 	StringConCat(&cVar17, "psna_sAttributeData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 24, &cVar17);
+	SAVE::_0x81F4E92BE3958364(uParam0, 24, &cVar17);
 	iVar0 = 0;
 	while (iVar0 <= 22)
 	{
 		Var1 = { cVar17 };
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var1);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0], 1, &Var1);
 		StringConCat(&Var1, "fAttributeXP", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var1);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x35DEFECAE36D4FAE((*uParam0)[iVar0], &Var1);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar17, "psna_sRpg", 64);
 	StringConCat(&cVar17, "psna_sAttributeCoreData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_24), 10, &cVar17);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_24), 10, &cVar17);
 	iVar0 = 0;
 	while (iVar0 <= 2)
 	{
 		Var1 = { cVar17 };
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_24[iVar0 /*3*/], 3, &Var1);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_24[iVar0 /*3*/], 3, &Var1);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "fCoreValue", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_24[iVar0 /*3*/], &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_24[iVar0 /*3*/], &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "todDegradeLastFixed", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_24[iVar0 /*3*/])->f_1), &Var9);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_24[iVar0 /*3*/])->f_1), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "iDegradeCount", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_24[iVar0 /*3*/])->f_2), &Var9);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_24[iVar0 /*3*/])->f_2), &Var9);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_301(var uParam0)
@@ -14360,13 +14360,13 @@ void func_301(var uParam0)
 	}
 }
 
-var func_302(var uParam0, int iParam1)
+int func_302(var uParam0, int iParam1)
 {
-	var uVar0;
+	int iVar0;
 
 	uParam0->f_2 = iParam1;
-	uVar0 = DATAFILE::_DATAFILE_GET_NUM_NODES(uParam0);
-	return uVar0;
+	iVar0 = DATAFILE::_DATAFILE_GET_NUM_NODES(uParam0);
+	return iVar0;
 }
 
 int func_303(var uParam0, int iParam1)
@@ -14413,12 +14413,12 @@ void func_306(var uParam0, int iParam1)
 	uParam0->f_4 = (uParam0->f_4 || iParam1);
 }
 
-int func_307(var uParam0, int iParam1, int iParam2)
+int func_307(var uParam0, int iParam1, bool bParam2)
 {
 	bool bVar0;
 
 	uParam0->f_2 = iParam1;
-	bVar0 = DATAFILE::_DATAFILE_GET_INT(iParam2, uParam0);
+	bVar0 = DATAFILE::_DATAFILE_GET_INT(bParam2, uParam0);
 	if (bVar0)
 	{
 		return 1;
@@ -14562,7 +14562,7 @@ void func_321(int iParam0)
 {
 	struct<22> Var0;
 	int iVar22;
-	var uVar23;
+	char* sVar23;
 	struct<44> Var24;
 	int iVar68;
 	int iVar69;
@@ -14589,33 +14589,33 @@ void func_321(int iParam0)
 		NETWORK::_0x981146E5C9CE9250(iVar22);
 		func_398(0);
 	}
-	uVar23 = func_337(NETWORK::_0xE59F4924BD3A718D(iVar22), 636925055);
+	sVar23 = func_337(NETWORK::_0xE59F4924BD3A718D(iVar22), 636925055);
 	Var24 = 1;
 	Var24.f_1 = 1;
-	Var24.f_2 = 1105014447;
+	Var24.f_2 = joaat("COLOR_WHITE");
 	Var24.f_4 = -1;
 	Var24.f_5 = -1134602452;
 	Var24.f_6 = 1276832712;
-	Var24.f_12 = 1105014447;
-	Var24.f_13 = 1105014447;
+	Var24.f_12 = joaat("COLOR_WHITE");
+	Var24.f_13 = joaat("COLOR_WHITE");
 	Var24.f_16 = 300;
 	Var24.f_21 = 1;
 	Var24.f_25.f_1 = 1;
-	Var24.f_25.f_9 = 1105014447;
+	Var24.f_25.f_9 = joaat("COLOR_WHITE");
 	Var24.f_25.f_10 = 8000;
 	Var24.f_25.f_11 = 1511356879;
 	Var24.f_25.f_18 = 1;
 	Var24.f_17 = 1;
 	Var24.f_18 = Var0.f_15;
-	Var24.f_10 = uVar23;
-	Var24.f_14 = 590634476;
-	Var24.f_15 = -2010498407;
+	Var24.f_10 = sVar23;
+	Var24.f_14 = joaat("generic_textures");
+	Var24.f_15 = joaat("default_pedshot");
 	Var24.f_24 = NETWORK::_0x9C725D149622BFDE(0);
 	Var24.f_23 = "IB_GAMERCARD";
 	Var24.f_22 = 2;
 	if (MISC::IS_STRING_NULL_OR_EMPTY(&(Var0.f_17)))
 	{
-		Var24.f_11 = MISC::_CREATE_VAR_STRING(42, "NT_INV_BODY_INFO", func_337(&(Var0.f_7), 109029619), "LANDING_FREEROAM_TITLE");
+		Var24.f_11 = MISC::_CREATE_VAR_STRING(42, "NT_INV_BODY_INFO", func_337(&(Var0.f_7), joaat("COLOR_PURE_WHITE")), "LANDING_FREEROAM_TITLE");
 		Var24.f_25.f_3 = MISC::_CREATE_VAR_STRING(2, "NT_INV_FM_CONTENT");
 		Var24.f_25.f_4 = MISC::_CREATE_VAR_STRING(2, "NM_TI_VIEW_INVITE");
 	}
@@ -14648,13 +14648,13 @@ void func_321(int iParam0)
 	}
 	else
 	{
-		Var24.f_11 = MISC::_CREATE_VAR_STRING(42, "NT_INV_BODY_INFO", func_337(&(Var0.f_7), 109029619), "PRES_SET_MODE_MP");
+		Var24.f_11 = MISC::_CREATE_VAR_STRING(42, "NT_INV_BODY_INFO", func_337(&(Var0.f_7), joaat("COLOR_PURE_WHITE")), "PRES_SET_MODE_MP");
 		Var24.f_25.f_3 = MISC::_CREATE_VAR_STRING(2, "NT_INV_MP_PLAYER_JOIN");
 		Var24.f_25.f_4 = MISC::_CREATE_VAR_STRING(2, "NM_TI_VIEW_INVITE");
 	}
-	Var24.f_25.f_2 = uVar23;
-	Var24.f_25.f_5 = 1700592256;
-	Var24.f_25.f_6 = 1434360011;
+	Var24.f_25.f_2 = sVar23;
+	Var24.f_25.f_5 = joaat("mp_lobby_textures");
+	Var24.f_25.f_6 = joaat("temp_pedshot");
 	Var24.f_25.f_14 = "HUD_Toast_Soundset";
 	Var24.f_25.f_15 = "Toast_On";
 	Var24.f_16 = Global_1899378->f_2.f_16;
@@ -14844,7 +14844,7 @@ int func_329()
 	bool bVar16;
 	struct<7> Var17;
 	bool bVar24;
-	int iVar25;
+	bool bVar25;
 	bool bVar26;
 	bool bVar27;
 	bool bVar28;
@@ -14962,17 +14962,17 @@ int func_329()
 	{
 		Var17 = { func_381(PLAYER::PLAYER_ID()) };
 		bVar24 = NETWORK::NETWORK_ARE_HANDLES_THE_SAME(&(Global_1572887->f_164.f_72), &Var17);
-		iVar25 = 0;
+		bVar25 = false;
 		if (Global_1572887->f_164 > 0)
 		{
-			iVar25 = 1;
+			bVar25 = true;
 		}
 		bVar26 = !func_264(Global_1572887->f_164.f_85, 524288);
 		bVar27 = !func_264(Global_1572887->f_164.f_85, 2);
 		bVar28 = func_264(Global_1572887->f_164.f_85, 2);
 		bVar29 = func_264(Global_1572887->f_164.f_85, 1);
 		bVar30 = MISC::IS_DURANGO_VERSION();
-		bVar31 = (bVar24 && (iVar25 || bVar29));
+		bVar31 = (bVar24 && (bVar25 || bVar29));
 		bVar32 = (bVar31 && !bVar30);
 		bVar33 = ((bVar26 && bVar27) && !bVar24);
 		if (func_264(Global_1572887->f_164.f_84, 1))
@@ -15090,7 +15090,7 @@ char* func_332()
 	struct<7> Var0;
 	bool bVar7;
 	bool bVar8;
-	struct<8> Var9;
+	char cVar9[64];
 
 	Var0 = { func_381(PLAYER::PLAYER_ID()) };
 	bVar7 = (Global_1572887->f_164.f_1 == 3 || Global_1572887->f_164.f_1 == 1);
@@ -15342,14 +15342,14 @@ char* func_332()
 	{
 		return "NT_INV_INCOMPATIBLE_REASON_CONNECTION";
 	}
-	StringCopy(&Var9, "NetInvUnkErr-", 64);
-	StringConCat(&Var9, "eUIFlags=", 64);
-	StringIntConCat(&Var9, Global_1572887->f_164.f_62, 64);
-	StringConCat(&Var9, ",eResponseFlags=", 64);
-	StringIntConCat(&Var9, Global_1572887->f_164.f_84, 64);
-	StringConCat(&Var9, ",nResult=", 64);
-	StringIntConCat(&Var9, Global_1572887->f_164.f_83, 64);
-	return func_414(&Var9, 109029619);
+	StringCopy(&cVar9, "NetInvUnkErr-", 64);
+	StringConCat(&cVar9, "eUIFlags=", 64);
+	StringIntConCat(&cVar9, Global_1572887->f_164.f_62, 64);
+	StringConCat(&cVar9, ",eResponseFlags=", 64);
+	StringIntConCat(&cVar9, Global_1572887->f_164.f_84, 64);
+	StringConCat(&cVar9, ",nResult=", 64);
+	StringIntConCat(&cVar9, Global_1572887->f_164.f_83, 64);
+	return func_414(&cVar9, joaat("COLOR_PURE_WHITE"));
 }
 
 void func_333(bool bParam0)
@@ -15383,7 +15383,7 @@ bool func_336(int iParam0)
 
 char* func_337(char* sParam0, int iParam1)
 {
-	if (iParam1 == 109029619)
+	if (iParam1 == joaat("COLOR_PURE_WHITE"))
 	{
 		return MISC::_CREATE_VAR_STRING(10, "PLAYER_STRING", sParam0);
 	}
@@ -15452,7 +15452,7 @@ int func_346()
 void func_347()
 {
 	func_63(64);
-	func_65(-1050153785, 1024);
+	func_65(joaat("freeroam"), 1024);
 	func_20(3);
 	CAM::DO_SCREEN_FADE_OUT(0);
 }
@@ -15486,16 +15486,16 @@ int func_350()
 	return func_417();
 }
 
-void func_351(int iParam0)
+void func_351(bool bParam0)
 {
 	if (func_418())
 	{
 		Global_1357509 = 1;
 	}
-	if (func_419(-92416669))
+	if (func_419(joaat("camera_item")))
 	{
 	}
-	if (iParam0 && Global_1935630->f_44 == joaat("weapon_kit_camera"))
+	if (bParam0 && Global_1935630->f_44 == joaat("WEAPON_KIT_CAMERA"))
 	{
 		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
 		Global_1935630->f_44 = joaat("weapon_unarmed");
@@ -15511,11 +15511,11 @@ void func_352()
 	iVar1 = PED::GET_MOUNT(iVar0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_DEAD(iVar1))
 	{
-		TASK::TASK_DISMOUNT_ANIMAL(iVar0, 0, 0, 0, 0, 0);
+		TASK::TASK_DISMOUNT_ANIMAL(iVar0, 0, 0, 0, 0, false);
 	}
 }
 
-void func_353(int iParam0, bool bParam1, int iParam2, int iParam3)
+void func_353(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	func_420(iParam0);
 	if (!func_421(1))
@@ -15530,7 +15530,7 @@ void func_353(int iParam0, bool bParam1, int iParam2, int iParam3)
 	{
 		CAM::DO_SCREEN_FADE_OUT(iParam2);
 	}
-	if (iParam3 && func_424() == 4)
+	if (bParam3 && func_424() == 4)
 	{
 		func_425(17);
 	}
@@ -15597,7 +15597,7 @@ struct<16> func_358()
 void func_359(vector3 vParam0)
 {
 	int iVar0;
-	int iVar1;
+	bool bVar1;
 	vector3 vVar2;
 	vector3 vVar5;
 
@@ -15605,17 +15605,17 @@ void func_359(vector3 vParam0)
 	iVar0 = func_428(vParam0);
 	if (iVar0 != -1)
 	{
-		iVar1 = ((*Global_1888801)[iVar0 /*35*/])->f_4;
-		if (VOLUME::_0x92A78D0BEDB332A3(iVar1))
+		bVar1 = ((*Global_1888801)[iVar0 /*35*/])->f_4;
+		if (VOLUME::_DOES_VOLUME_EXIST(bVar1))
 		{
-			vVar2 = { VOLUME::_0xF70F00013A62F866(iVar1) };
+			vVar2 = { VOLUME::_0xF70F00013A62F866(bVar1) };
 		}
 	}
 	vVar5.x = MISC::GET_RANDOM_FLOAT_IN_RANGE(-3f, 3f);
 	vVar5.f_1 = MISC::GET_RANDOM_FLOAT_IN_RANGE(-3f, 3f);
 	vVar2 = { vVar2 + vVar5 };
 	vParam0 = { vParam0 + vVar5 };
-	func_429(vVar2, 0f, vParam0, 0f, -1082130432, -1082130432, 1, 1, 1, 1);
+	func_429(vVar2, 0f, vParam0, 0f, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 1, 1, 1, 1);
 	func_430(0);
 }
 
@@ -15664,9 +15664,9 @@ int func_365()
 	return Global_1572887->f_164.f_64;
 }
 
-int func_366(var uParam0)
+int func_366(int iParam0)
 {
-	return uParam0 & 31;
+	return iParam0 & 31;
 }
 
 int func_367()
@@ -15861,7 +15861,7 @@ int func_375()
 	vVar1.f_2 = PATHFIND::_GET_HEIGHTMAP_BOTTOM_Z_FOR_POSITION(vVar1.x, vVar1.y);
 	vVar4 = { vVar1 };
 	vVar4.f_2 = (vVar4.z + 7f);
-	if (MISC::GET_GROUND_Z_FOR_3D_COORD(vVar4, &uVar7, 0))
+	if (MISC::GET_GROUND_Z_FOR_3D_COORD(vVar4, &uVar7, false))
 	{
 		vVar1.f_2 = uVar7;
 	}
@@ -16016,34 +16016,34 @@ void func_384(var uParam0, char* sParam1)
 	struct<8> Var8;
 	int iVar16;
 
-	_NAMESPACE59::_0x8E8FFB9E4AD051D2(uParam0, 436, sParam1, 26);
+	SAVE::_0x8E8FFB9E4AD051D2(uParam0, 436, sParam1, 26);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".txtHorseName", 64);
-	_NAMESPACE59::_0x186608A2AC6F9E88(uParam0, &cVar0);
+	SAVE::_0x186608A2AC6F9E88(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eHorseBreed", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_8), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_8), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eHorseModel", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_9), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_9), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eGender", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_10), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_10), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eLossType", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_11), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_11), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iTimeOfLoss", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_12), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_12), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".todTimeOfLoss", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_13), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_13), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eSlotState", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_14), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_14), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sCarriedData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_15), 283, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_15), 283, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 3)
 	{
@@ -16052,10 +16052,10 @@ void func_384(var uParam0, char* sParam1)
 		func_457(uParam0->f_15[iVar16 /*94*/], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sPeltSkinData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_298), 58, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_298), 58, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 57)
 	{
@@ -16064,10 +16064,10 @@ void func_384(var uParam0, char* sParam1)
 		func_385(uParam0->f_298[iVar16], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sVisualPeltSkinInfo", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_356), 16, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_356), 16, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 3)
 	{
@@ -16076,13 +16076,13 @@ void func_384(var uParam0, char* sParam1)
 		func_386(uParam0->f_356[iVar16 /*5*/], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sBondingData", 64);
 	func_458(&(uParam0->f_372), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sHorseCoreData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_398), 9, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_398), 9, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 2)
 	{
@@ -16091,10 +16091,10 @@ void func_384(var uParam0, char* sParam1)
 		func_459(uParam0->f_398[iVar16 /*4*/], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sEfficiencyData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_407), 13, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_407), 13, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 3)
 	{
@@ -16103,7 +16103,7 @@ void func_384(var uParam0, char* sParam1)
 		func_460(uParam0->f_407[iVar16 /*4*/], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sWrithingData", 64);
 	func_461(&(uParam0->f_420), &cVar0);
@@ -16118,57 +16118,57 @@ void func_384(var uParam0, char* sParam1)
 	func_152(&(uParam0->f_427), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fLastHeading", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_430), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_430), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iTimeStampDismounted", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_431), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_431), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iTimeStampAcquired", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_432), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_432), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bHasDefaultSaddle", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_433), &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_433), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bPlayerPurchasedHorse", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_434), &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_434), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bPlayerBrokeHorse", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_435), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_435), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_385(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 1, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 1, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iCount", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_386(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 5, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 5, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".SatchelItem", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".TextureLookupHash", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".TextureLookupTint", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".UnusedPad0", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".UnusedPad1", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_4), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_4), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_387(var uParam0, struct<8> Param1)
@@ -16177,34 +16177,34 @@ void func_387(var uParam0, struct<8> Param1)
 	struct<8> Var1;
 	struct<8> Var9;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 119, &Param1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 119, &Param1);
 	Var1 = { Param1 };
 	StringConCat(&Var1, "_iOutfitHash", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &Var1);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &Var1);
 	Var1 = { Param1 };
 	StringConCat(&Var1, "_Array", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_1), 118, &Var1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_1), 118, &Var1);
 	iVar0 = 0;
 	while (iVar0 <= 38)
 	{
 		Var1 = { Param1 };
 		StringConCat(&Var1, "_Array_Idx", 64);
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_1[iVar0 /*3*/], 3, &Var1);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_1[iVar0 /*3*/], 3, &Var1);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_CompHash", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_1[iVar0 /*3*/], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_1[iVar0 /*3*/], &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_WearHash", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_1[iVar0 /*3*/])->f_1), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_1[iVar0 /*3*/])->f_1), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_eFlags", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_1[iVar0 /*3*/])->f_2), &Var9);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_1[iVar0 /*3*/])->f_2), &Var9);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_388(var uParam0)
@@ -16212,49 +16212,49 @@ void func_388(var uParam0)
 	int iVar0;
 	char cVar1[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 41, "nssd_sStableInventory");
+	SAVE::_0x443174C20B8B9E7F(uParam0, 41, "nssd_sStableInventory");
 	iVar0 = 0;
-	_NAMESPACE59::_0x81F4E92BE3958364(uParam0, 33, "nssd_MountItemGUID_array");
+	SAVE::_0x81F4E92BE3958364(uParam0, 33, "nssd_MountItemGUID_array");
 	iVar0 = 0;
 	while (iVar0 <= (8 - 1))
 	{
 		StringCopy(&cVar1, "nssd_StableMountGUID_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &cVar1);
+		SAVE::_0x443174C20B8B9E7F((*uParam0)[iVar0 /*4*/], 4, &cVar1);
 		StringCopy(&cVar1, "nssd_StableItemGUID_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
 		StringConCat(&cVar1, "_data1", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*4*/], &cVar1);
+		SAVE::_0x529B9CCD0972AF4D((*uParam0)[iVar0 /*4*/], &cVar1);
 		StringCopy(&cVar1, "nssd_StableItemGUID_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
 		StringConCat(&cVar1, "_data2", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_1), &cVar1);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_1), &cVar1);
 		StringCopy(&cVar1, "nssd_StableItemGUID_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
 		StringConCat(&cVar1, "_data3", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_2), &cVar1);
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_2), &cVar1);
 		StringCopy(&cVar1, "nssd_StableItemGUID_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
 		StringConCat(&cVar1, "_data4", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_3), &cVar1);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&(((*uParam0)[iVar0 /*4*/])->f_3), &cVar1);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_33), "nssd_eFeeState");
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_34), "nssd_iFeesTimer");
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_33), "nssd_eFeeState");
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_34), "nssd_iFeesTimer");
 	iVar0 = 0;
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_35), 6, "nssd_iReservedStats_array");
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_35), 6, "nssd_iReservedStats_array");
 	iVar0 = 0;
 	while (iVar0 <= (5 - 1))
 	{
 		StringCopy(&cVar1, "nssd_iReservedStats_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_35[iVar0], &cVar1);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_35[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_389(var uParam0, char* sParam1)
@@ -16262,72 +16262,72 @@ void func_389(var uParam0, char* sParam1)
 	int iVar0;
 	char cVar1[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 49, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 49, sParam1);
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_sStableBonding", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 4, &cVar1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 4, &cVar1);
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_sHorseGUID_data1", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &cVar1);
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_sHorseGUID_data2", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &cVar1);
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_sHorseGUID_data3", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), &cVar1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), &cVar1);
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_sHorseGUID_data4", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar1);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar1);
+	SAVE::_0xE0B45E983BFC0768();
 	iVar0 = 0;
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_fHorseEventXP", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_4), 29, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_4), 29, &cVar1);
 	iVar0 = 0;
 	while (iVar0 <= 27)
 	{
 		cVar1 = { *sParam1 };
 		StringConCat(&cVar1, "_fHorseEventXP_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_4[iVar0], &cVar1);
+		SAVE::_0x35DEFECAE36D4FAE(uParam0->f_4[iVar0], &cVar1);
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	iVar0 = 0;
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_sEfficiencyData_array", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_33), 13, &cVar1);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_33), 13, &cVar1);
 	iVar0 = 0;
 	while (iVar0 <= 2)
 	{
 		cVar1 = { *sParam1 };
 		StringConCat(&cVar1, "_sEfficiencyData_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_33[iVar0 /*4*/], 4, &cVar1);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_33[iVar0 /*4*/], 4, &cVar1);
 		cVar1 = { *sParam1 };
 		StringConCat(&cVar1, "_sEfficiencyData_iValue_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_33[iVar0 /*4*/], &cVar1);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_33[iVar0 /*4*/], &cVar1);
 		cVar1 = { *sParam1 };
 		StringConCat(&cVar1, "_sEfficiencyData_fValueBuffer_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&((uParam0->f_33[iVar0 /*4*/])->f_1), &cVar1);
+		SAVE::_0x35DEFECAE36D4FAE(&((uParam0->f_33[iVar0 /*4*/])->f_1), &cVar1);
 		cVar1 = { *sParam1 };
 		StringConCat(&cVar1, "_sEfficiencyData_fDrainBuffer_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&((uParam0->f_33[iVar0 /*4*/])->f_2), &cVar1);
+		SAVE::_0x35DEFECAE36D4FAE(&((uParam0->f_33[iVar0 /*4*/])->f_2), &cVar1);
 		cVar1 = { *sParam1 };
 		StringConCat(&cVar1, "_sEfficiencyData_iLastGameTime_", 64);
 		StringIntConCat(&cVar1, iVar0, 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_33[iVar0 /*4*/])->f_3), &cVar1);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_33[iVar0 /*4*/])->f_3), &cVar1);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	cVar1 = { *sParam1 };
 	StringConCat(&cVar1, "_vLastHitch", 64);
 	func_152(&(uParam0->f_46), &cVar1);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_390(var uParam0, struct<8> Param1)
@@ -16338,88 +16338,88 @@ void func_390(var uParam0, struct<8> Param1)
 	struct<8> Var17;
 
 	Var17 = { Param1 };
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 326, &Param1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 326, &Param1);
 	StringConCat(&Var17, "_BaseLayer", 64);
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 5, &Var17);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 5, &Var17);
 	Var1 = { Var17 };
 	StringConCat(&Var1, "_drawable", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &Var1);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &Var1);
 	Var1 = { Var17 };
 	StringConCat(&Var1, "_albedo", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var1);
 	Var1 = { Var17 };
 	StringConCat(&Var1, "_normal", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), &Var1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), &Var1);
 	Var1 = { Var17 };
 	StringConCat(&Var1, "_material", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &Var1);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &Var1);
 	Var1 = { Var17 };
 	StringConCat(&Var1, "_tag", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_4), &Var1);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_4), &Var1);
+	SAVE::_0xE0B45E983BFC0768();
 	Var17 = { Param1 };
 	StringConCat(&Var17, "_Layers", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_5), 321, &Var17);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_5), 321, &Var17);
 	iVar0 = 0;
 	while (iVar0 < 20)
 	{
 		Var1 = { Param1 };
 		StringConCat(&Var1, "_Layer", 64);
 		StringIntConCat(&Var1, iVar0, 64);
-		_NAMESPACE59::_0x443174C20B8B9E7F(uParam0->f_5[iVar0 /*16*/], 16, &Var1);
+		SAVE::_0x443174C20B8B9E7F(uParam0->f_5[iVar0 /*16*/], 16, &Var1);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_LayerPriority", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0->f_5[iVar0 /*16*/], &Var9);
+		SAVE::_0x529B9CCD0972AF4D(uParam0->f_5[iVar0 /*16*/], &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_Albedo", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_1), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_1), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_Normal", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_2), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_2), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_Material", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_3), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_3), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_SheetGridIndex", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_4), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_4), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_ModTexture", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_5), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_5), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_ModChannel", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_6), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_6), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_Palette", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_7), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_7), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_tint0", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_8), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_8), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_tint1", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_9), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_9), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_tint2", 64);
-		_NAMESPACE59::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_10), &Var9);
+		SAVE::_0x529B9CCD0972AF4D(&((uParam0->f_5[iVar0 /*16*/])->f_10), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_TexAlpha", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&((uParam0->f_5[iVar0 /*16*/])->f_11), &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(&((uParam0->f_5[iVar0 /*16*/])->f_11), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_ModAlpha", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&((uParam0->f_5[iVar0 /*16*/])->f_12), &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(&((uParam0->f_5[iVar0 /*16*/])->f_12), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_TexRough", 64);
-		_NAMESPACE59::_0x35DEFECAE36D4FAE(&((uParam0->f_5[iVar0 /*16*/])->f_13), &Var9);
+		SAVE::_0x35DEFECAE36D4FAE(&((uParam0->f_5[iVar0 /*16*/])->f_13), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_BlendType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_5[iVar0 /*16*/])->f_14), &Var9);
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_5[iVar0 /*16*/])->f_14), &Var9);
 		Var9 = { Var1 };
 		StringConCat(&Var9, "_LayerType", 64);
-		_NAMESPACE59::_0xB25B5A375BE5BE26(&((uParam0->f_5[iVar0 /*16*/])->f_15), &Var9);
-		_NAMESPACE59::_0xE0B45E983BFC0768();
+		SAVE::_0xB25B5A375BE5BE26(&((uParam0->f_5[iVar0 /*16*/])->f_15), &Var9);
+		SAVE::_0xE0B45E983BFC0768();
 		iVar0++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_391(var uParam0, struct<8> Param1)
@@ -16428,14 +16428,14 @@ void func_391(var uParam0, struct<8> Param1)
 	struct<8> Var8;
 
 	Var8 = { Param1 };
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, &Var8);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, &Var8);
 	Var0 = { Var8 };
 	StringConCat(&Var0, "iLocationIndex", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &Var0);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &Var0);
 	Var0 = { Var8 };
 	StringConCat(&Var0, "iVariation", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &Var0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 char* func_392(int iParam0)
@@ -16515,12 +16515,12 @@ int func_396()
 
 void func_397(int iParam0)
 {
-	var uVar0;
+	int iVar0;
 	struct<22> Var1;
 	struct<5> Var23;
 
-	uVar0 = NETWORK::_0x27B1AE4D8C652F08(iParam0);
-	StringCopy(&(Var1.f_7), NETWORK::_0xE59F4924BD3A718D(uVar0), 64);
+	iVar0 = NETWORK::_0x27B1AE4D8C652F08(iParam0);
+	StringCopy(&(Var1.f_7), NETWORK::_0xE59F4924BD3A718D(iVar0), 64);
 	NETWORK::_0x16EFB123C4451032(iVar0, &Var1);
 	StringCopy(&(Var1.f_17), NETWORK::_0xE79BA3BC265895DA(iVar0), 24);
 	Var1.f_15 = iParam0;
@@ -16793,14 +16793,14 @@ var func_403(struct<26> Param0, var uParam26, var uParam27, var uParam28, var uP
 {
 	int iVar0;
 	int iVar1;
-	int iVar2;
+	bool bVar2;
 	char cVar3[64];
 	char cVar11[64];
 
 	func_472();
 	iVar0 = func_473();
 	iVar1 = Global_1898068->f_6;
-	iVar2 = (iVar1 + Param0.f_16);
+	bVar2 = (iVar1 + Param0.f_16);
 	MISC::_INT_TO_STRING(iVar1, "%i", &cVar11);
 	Global_1935689->f_1225.f_1208++;
 	StringCopy(&cVar3, "Invite_Root_", 64);
@@ -16810,7 +16810,7 @@ var func_403(struct<26> Param0, var uParam26, var uParam27, var uParam28, var uP
 	func_474(Global_1935689->f_1225.f_5[iVar0 /*30*/], Global_1935689->f_1225.f_2, cVar3, Param0);
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_26 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(76), Global_1935689->f_1225.f_1208);
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_28 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(77), Param0.f_21);
-	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_29 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(78), 0);
+	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_29 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(78), false);
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_22 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(62), Param0.f_21);
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_25 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(70), Param0.f_24);
 	if (Param0.f_24)
@@ -16822,7 +16822,7 @@ var func_403(struct<26> Param0, var uParam26, var uParam27, var uParam28, var uP
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_19 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(50), Param0.f_18);
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_20 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(51), Param0.f_18.f_1);
 	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_21 = DATABINDING::_DATABINDING_ADD_DATA_GANG_ID(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(80), Param0.f_18.f_2);
-	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_17 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(81), iVar2);
+	(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_17 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(81), bVar2);
 	func_476(Global_1935689->f_1225.f_1207 + 1);
 	if (Global_1935689->f_1225.f_1208 == 2147483647)
 	{
@@ -16833,10 +16833,10 @@ var func_403(struct<26> Param0, var uParam26, var uParam27, var uParam28, var uP
 		Param0.f_25 = 3;
 		Param0.f_25.f_11 = 778915895;
 		Param0.f_25.f_12 = &Global_1935689->f_1225.f_5[iVar0 /*30*/];
-		iVar15 = func_479(&(Param0.f_25));
-		(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_27 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(83), iVar15);
+		bVar15 = func_479(&(Param0.f_25));
+		(Global_1935689->f_1225.f_5[iVar0 /*30*/])->f_27 = DATABINDING::_DATABINDING_ADD_DATA_INT(&(Global_1935689->f_1225.f_5[iVar0 /*30*/]), func_475(83), bVar15);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(Global_1935689->f_1225.f_3, 0, "pm_invite_item", &(Global_1935689->f_1225.f_5[iVar0 /*30*/]));
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(Global_1935689->f_1225.f_3, false, "pm_invite_item", &(Global_1935689->f_1225.f_5[iVar0 /*30*/]));
 	return &(Global_1935689->f_1225.f_5[iVar0 /*30*/]);
 }
 
@@ -16921,7 +16921,7 @@ char* func_413(bool bParam0, char* sParam1, char* sParam2)
 
 char* func_414(char* sParam0, int iParam1)
 {
-	if (iParam1 == 109029619)
+	if (iParam1 == joaat("COLOR_PURE_WHITE"))
 	{
 		return MISC::_CREATE_VAR_STRING(10, "LITERAL_STRING", sParam0);
 	}
@@ -16933,9 +16933,9 @@ char* func_415(char* sParam0, int iParam1)
 	return MISC::_CREATE_VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
 }
 
-void func_416(var uParam0, var uParam1)
+void func_416(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
 int func_417()
@@ -16962,7 +16962,7 @@ int func_417()
 
 int func_418()
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(-92416669) > 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("camera_item")) > 0)
 	{
 		return 1;
 	}
@@ -16987,9 +16987,9 @@ int func_419(int iParam0)
 	return 0;
 }
 
-void func_420(var uParam0)
+void func_420(int iParam0)
 {
-	Global_1109400->f_22.f_10 = uParam0;
+	Global_1109400->f_22.f_10 = iParam0;
 }
 
 bool func_421(int iParam0)
@@ -17164,7 +17164,7 @@ struct<10> func_432()
 	return Global_1572887->f_164.f_49;
 }
 
-var func_433()
+int func_433()
 {
 	return Global_1572887->f_164.f_59;
 }
@@ -17446,7 +17446,7 @@ void func_453(struct<29> Param0, var uParam29, int iParam30)
 	if (Param0.f_16)
 	{
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(Param0.f_27) && Param0.f_28)
+	if (VOLUME::_DOES_VOLUME_EXIST(Param0.f_27) && Param0.f_28)
 	{
 	}
 }
@@ -17480,40 +17480,40 @@ void func_457(var uParam0, char* sParam1)
 	struct<8> Var8;
 	int iVar16;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 94, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 94, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eModel", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(uParam0, &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eItem", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eCarriableType", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eCarriableConfigInfo", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_3), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_3), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".ePedQuality", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_4), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_4), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".ePedSkinQuality", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_5), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_5), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".ePedRarity", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_6), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_6), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eDamageCleanliness", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_7), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_7), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eOutfit", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_8), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_8), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iNumMetaAssets", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_9), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_9), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".sMetaAssetData", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_10), 81, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_10), 81, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 10)
 	{
@@ -17522,17 +17522,17 @@ void func_457(var uParam0, char* sParam1)
 		func_497(uParam0->f_10[iVar16 /*8*/], &Var8);
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
+	SAVE::_0xA844FEB5C22C2C74();
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iCarcassAge", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_91), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_91), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bSkinned", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_92), &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_92), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bLegendary", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(&(uParam0->f_93), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xBB7F4273C186BC4B(&(uParam0->f_93), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_458(var uParam0, char* sParam1)
@@ -17541,16 +17541,16 @@ void func_458(var uParam0, char* sParam1)
 	struct<8> Var8;
 	int iVar16;
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 26, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 26, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iBondLevel", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fBondXP", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fHorseEventXP", 64);
-	_NAMESPACE59::_0x81F4E92BE3958364(&(uParam0->f_2), 24, &cVar0);
+	SAVE::_0x81F4E92BE3958364(&(uParam0->f_2), 24, &cVar0);
 	iVar16 = 0;
 	while (iVar16 < 23)
 	{
@@ -17561,97 +17561,97 @@ void func_458(var uParam0, char* sParam1)
 		{
 			Var8 = { cVar0 };
 			StringIntConCat(&Var8, iVar16, 64);
-			_NAMESPACE59::_0x35DEFECAE36D4FAE(uParam0->f_2[iVar16], &Var8);
+			SAVE::_0x35DEFECAE36D4FAE(uParam0->f_2[iVar16], &Var8);
 		}
 		iVar16++;
 	}
-	_NAMESPACE59::_0xA844FEB5C22C2C74();
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xA844FEB5C22C2C74();
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_459(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 4, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 4, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iValue", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fValueBuffer", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fDrainBuffer", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_2), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_2), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iLastGameTime", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_460(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 4, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 4, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iValue", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fValueBuffer", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fDrainBuffer", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_2), &cVar0);
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_2), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iLastGameTime", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_461(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bIsWrithing", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".fWrithingDuration", 64);
-	_NAMESPACE59::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x35DEFECAE36D4FAE(&(uParam0->f_1), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_462(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 3, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 3, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bIsStableOwned", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".eShop", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".todStolen", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_2), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_2), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 void func_463(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 2, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 2, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".bIsStableOwned", 64);
-	_NAMESPACE59::_0xBB7F4273C186BC4B(uParam0, &cVar0);
+	SAVE::_0xBB7F4273C186BC4B(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".todBurdenPlaced", 64);
-	_NAMESPACE59::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0xB25B5A375BE5BE26(&(uParam0->f_1), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 bool func_464(var uParam0, int iParam1, int iParam2)
@@ -17990,23 +17990,23 @@ int func_479(var uParam0)
 	}
 	if (*uParam0 == 3)
 	{
-		return func_502(func_414(uParam0->f_2, 109029619), func_414(uParam0->f_3, 109029619), uParam0->f_5, uParam0->f_6, 1433015236, uParam0->f_12, uParam0->f_11, uParam0->f_13, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1, uParam0->f_4, uParam0->f_18);
+		return func_502(func_414(uParam0->f_2, joaat("COLOR_PURE_WHITE")), func_414(uParam0->f_3, joaat("COLOR_PURE_WHITE")), uParam0->f_5, uParam0->f_6, joaat("player_menu"), uParam0->f_12, uParam0->f_11, uParam0->f_13, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1, uParam0->f_4, uParam0->f_18);
 	}
 	else if (*uParam0 == 4)
 	{
-		return func_503(func_414(uParam0->f_2, 109029619), func_414(uParam0->f_3, 109029619), uParam0->f_5, uParam0->f_6, uParam0->f_7, uParam0->f_8, uParam0->f_9, 1433015236, uParam0->f_12, uParam0->f_11, uParam0->f_13, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1, uParam0->f_4, uParam0->f_18);
+		return func_503(func_414(uParam0->f_2, joaat("COLOR_PURE_WHITE")), func_414(uParam0->f_3, joaat("COLOR_PURE_WHITE")), uParam0->f_5, uParam0->f_6, uParam0->f_7, uParam0->f_8, uParam0->f_9, joaat("player_menu"), uParam0->f_12, uParam0->f_11, uParam0->f_13, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1, uParam0->f_4, uParam0->f_18);
 	}
 	else if (*uParam0 == 1)
 	{
-		return func_504(func_414(uParam0->f_2, 109029619), func_414(uParam0->f_3, 109029619), uParam0->f_5, uParam0->f_6, uParam0->f_16, uParam0->f_4, uParam0->f_17, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1);
+		return func_504(func_414(uParam0->f_2, joaat("COLOR_PURE_WHITE")), func_414(uParam0->f_3, joaat("COLOR_PURE_WHITE")), uParam0->f_5, uParam0->f_6, uParam0->f_16, uParam0->f_4, uParam0->f_17, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1);
 	}
 	else if (*uParam0 == 2)
 	{
-		return func_505(func_414(uParam0->f_2, 109029619), func_414(uParam0->f_3, 109029619), uParam0->f_5, uParam0->f_6, uParam0->f_7, uParam0->f_8, uParam0->f_9, uParam0->f_16, uParam0->f_4, uParam0->f_17, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1);
+		return func_505(func_414(uParam0->f_2, joaat("COLOR_PURE_WHITE")), func_414(uParam0->f_3, joaat("COLOR_PURE_WHITE")), uParam0->f_5, uParam0->f_6, uParam0->f_7, uParam0->f_8, uParam0->f_9, uParam0->f_16, uParam0->f_4, uParam0->f_17, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1);
 	}
 	else if (*uParam0 == 0)
 	{
-		return func_223(func_414(uParam0->f_2, 109029619), func_414(uParam0->f_3, 109029619), uParam0->f_5, uParam0->f_6, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1);
+		return func_223(func_414(uParam0->f_2, joaat("COLOR_PURE_WHITE")), func_414(uParam0->f_3, joaat("COLOR_PURE_WHITE")), uParam0->f_5, uParam0->f_6, uParam0->f_10, uParam0->f_14, uParam0->f_15, uParam0->f_1, 0, 1, 1);
 	}
 	return 0;
 }
@@ -18022,7 +18022,7 @@ void func_481(int iParam0)
 		return;
 	}
 	DATABINDING::_DATABINDING_REMOVE_BINDING_ARRAY_ITEM_BY_DATA_CONTEXT_ID(Global_1935689->f_1225.f_3, iParam0);
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1935689->f_1225.f_1, 0);
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1935689->f_1225.f_1, false);
 	func_506(iParam0);
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(iParam0);
 	func_476((Global_1935689->f_1225.f_1207 - 1));
@@ -18096,15 +18096,15 @@ void func_487(int iParam0, int iParam1, var uParam2)
 	func_507();
 }
 
-void func_488(var uParam0)
+void func_488(int iParam0)
 {
-	Global_1572887->f_80.f_3 = uParam0;
+	Global_1572887->f_80.f_3 = iParam0;
 	func_507();
 }
 
-void func_489(var uParam0)
+void func_489(int iParam0)
 {
-	Global_1572887->f_80.f_4 = uParam0;
+	Global_1572887->f_80.f_4 = iParam0;
 }
 
 void func_490(int iParam0)
@@ -18115,7 +18115,7 @@ void func_490(int iParam0)
 void func_491()
 {
 	func_383(&(Global_1572887->f_6), 1);
-	func_383(&(Global_1572887->f_6), 1073741824);
+	func_383(&(Global_1572887->f_6), 1073741824 /* Float: 2f */);
 	func_507();
 }
 
@@ -18147,7 +18147,7 @@ int func_494(int iParam0)
 	return &(Global_1109400->f_247[iParam0]);
 }
 
-var func_495(int iParam0)
+int func_495(int iParam0)
 {
 	struct<4> Var0;
 
@@ -18180,32 +18180,32 @@ void func_497(var uParam0, char* sParam1)
 {
 	char cVar0[64];
 
-	_NAMESPACE59::_0x443174C20B8B9E7F(uParam0, 8, sParam1);
+	SAVE::_0x443174C20B8B9E7F(uParam0, 8, sParam1);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iDrawable", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(uParam0, &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(uParam0, &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iAlbedo", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_1), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_1), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iNormal", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_2), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_2), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iMaterial", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_3), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iPalette", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_4), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_4), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iTint0", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_5), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_5), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iTint1", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_6), &cVar0);
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_6), &cVar0);
 	StringCopy(&cVar0, sParam1, 64);
 	StringConCat(&cVar0, ".iTint2", 64);
-	_NAMESPACE59::_0x529B9CCD0972AF4D(&(uParam0->f_7), &cVar0);
-	_NAMESPACE59::_0xE0B45E983BFC0768();
+	SAVE::_0x529B9CCD0972AF4D(&(uParam0->f_7), &cVar0);
+	SAVE::_0xE0B45E983BFC0768();
 }
 
 int func_498(int iParam0)
@@ -18281,9 +18281,9 @@ int func_500()
 	return iVar3;
 }
 
-void func_501(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, struct<10> Param10)
+void func_501(var uParam0, int iParam1, char[4] cParam2, char[4] cParam3, char[4] cParam4, char[4] cParam5, char[4] cParam6, char[4] cParam7, char[4] cParam8, char[4] cParam9, struct<10> Param10)
 {
-	*uParam0 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(iParam1, &uParam2);
+	*uParam0 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(iParam1, &cParam2);
 	uParam0->f_1 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_475(0), Param10);
 	uParam0->f_2 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_475(1), Param10.f_1);
 	uParam0->f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_475(2), Param10.f_2);
@@ -18293,14 +18293,14 @@ void func_501(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4, v
 	uParam0->f_7 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_475(55), Param10.f_6);
 	if (Param10.f_7 == 0)
 	{
-		Param10.f_7 = -672301300; /* GXTEntry: "Select" */
+		Param10.f_7 = joaat("ib_select");
 	}
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, func_475(57), Param10.f_7);
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_475(58), Param10.f_8);
 	uParam0->f_10 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, func_475(59), Param10.f_9);
 }
 
-var func_502(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14, var uParam15, var uParam16)
+var func_502(char* sParam0, char* sParam1, var uParam2, var uParam3, int iParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, int iParam12, int iParam13, int iParam14, var uParam15, var uParam16)
 {
 	struct<10> Var0;
 	struct<8> Var13;
@@ -18318,8 +18318,8 @@ var func_502(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, va
 	Var0.f_4.f_2 = uParam15;
 	Var13.f_7 = 1;
 	Var13 = uParam11;
-	Var13.f_1 = uParam0;
-	Var13.f_2 = uParam1;
+	Var13.f_1 = sParam0;
+	Var13.f_2 = sParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18328,7 +18328,7 @@ var func_502(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, va
 	return uVar21;
 }
 
-var func_503(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, int iParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, int iParam15, int iParam16, int iParam17, var uParam18, var uParam19)
+var func_503(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, int iParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, int iParam15, int iParam16, int iParam17, var uParam18, var uParam19)
 {
 	struct<10> Var0;
 	struct<10> Var13;
@@ -18346,8 +18346,8 @@ var func_503(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var0.f_4.f_2 = uParam18;
 	Var13.f_9 = 1;
 	Var13 = uParam14;
-	Var13.f_1 = uParam0;
-	Var13.f_2 = uParam1;
+	Var13.f_1 = sParam0;
+	Var13.f_2 = sParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18359,7 +18359,7 @@ var func_503(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	return uVar23;
 }
 
-var func_504(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, int iParam11, int iParam12, int iParam13)
+var func_504(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, int iParam11, int iParam12, int iParam13)
 {
 	struct<5> Var0;
 	struct<8> Var13;
@@ -18375,8 +18375,8 @@ var func_504(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var0.f_4.f_2 = uParam5;
 	Var13.f_7 = 1;
 	Var13 = uParam10;
-	Var13.f_1 = uParam0;
-	Var13.f_2 = uParam1;
+	Var13.f_1 = sParam0;
+	Var13.f_2 = sParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
@@ -18384,7 +18384,7 @@ var func_504(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	return uVar21;
 }
 
-var func_505(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, int iParam14, int iParam15, int iParam16)
+var func_505(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, int iParam14, int iParam15, int iParam16)
 {
 	struct<5> Var0;
 	struct<10> Var13;
@@ -18400,8 +18400,8 @@ var func_505(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var0.f_4.f_2 = uParam8;
 	Var13.f_9 = 1;
 	Var13 = uParam13;
-	Var13.f_1 = uParam0;
-	Var13.f_2 = uParam1;
+	Var13.f_1 = sParam0;
+	Var13.f_2 = sParam1;
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;

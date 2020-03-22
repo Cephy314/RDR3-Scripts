@@ -109,9 +109,9 @@ void func_4(struct<16> Param0, int iParam16)
 	}
 }
 
-bool func_5(var uParam0, int iParam1)
+bool func_5(int iParam0, int iParam1)
 {
-	return (uParam0 && iParam1) != 0;
+	return (iParam0 && iParam1) != 0;
 }
 
 int func_6(char* sParam0)
@@ -131,9 +131,9 @@ int func_6(char* sParam0)
 	return 0;
 }
 
-void func_7(var uParam0)
+void func_7(int iParam0)
 {
-	if (func_5(uParam0, 1))
+	if (func_5(iParam0, 1))
 	{
 		func_8(1);
 	}

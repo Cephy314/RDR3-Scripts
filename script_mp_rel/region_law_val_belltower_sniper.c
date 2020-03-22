@@ -81,9 +81,9 @@ void func_1()
 	{
 		func_7(&iLocal_46);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(iLocal_47))
+	if (VOLUME::_DOES_VOLUME_EXIST(iLocal_47))
 	{
-		VOLUME::_0x43F867EF5C463A53(iLocal_47);
+		VOLUME::_DELETE_VOLUME(iLocal_47);
 	}
 	LAW::_0x7EF2A2FE38D74456(func_8(7), 0);
 }
@@ -108,7 +108,7 @@ int func_4()
 	{
 		return 0;
 	}
-	fVar0 = func_9(Global_35, vLocal_49, 1);
+	fVar0 = func_9(Global_34, vLocal_49, 1);
 	if (fVar0 > 100f)
 	{
 		return 0;
@@ -305,7 +305,7 @@ void func_11()
 	int iVar0;
 
 	iLocal_46 = func_18(iLocal_48, vLocal_49, 101.6932f, 1, 1, 0, 1, 1, 1, 0, 0);
-	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_46, joaat("weapon_sniperrifle_carcano"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+	WEAPON::_GIVE_WEAPON_TO_PED_2(iLocal_46, joaat("WEAPON_SNIPERRIFLE_CARCANO"), 999, true, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	PED::_0xFC3DB99C8144CD81(iLocal_46, iLocal_47, 0, 0, 0);
 	PED::SET_PED_CONFIG_FLAG(iLocal_46, 263, true);
 	PED::SET_PED_CAN_RAGDOLL(iLocal_46, false);
@@ -420,7 +420,7 @@ void func_22(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	{
 		if (bParam5)
 		{
-			PED::_0x283978A15512B2FE(iParam0, 1);
+			PED::_SET_RANDOM_OUTFIT_VARIATION(iParam0, true);
 			bVar0 = true;
 		}
 	}
@@ -452,7 +452,7 @@ void func_22(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
+		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -465,8 +465,8 @@ void func_23(int iParam0)
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 39, true);
 	TASK::_0x9DE63896B176EA94(iParam0, false);
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(iParam0, false);
-	WEAPON::_GIVE_WEAPON_TO_PED_2(iParam0, -1101297303, 100, true, false, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
-	WEAPON::_GIVE_WEAPON_TO_PED_2(iParam0, joaat("group_sniper"), 100, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+	WEAPON::_GIVE_WEAPON_TO_PED_2(iParam0, joaat("GROUP_REVOLVER"), 100, true, false, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
+	WEAPON::_GIVE_WEAPON_TO_PED_2(iParam0, joaat("GROUP_SNIPER"), 100, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 }
 
 void func_24(var uParam0, int iParam1)
@@ -488,7 +488,7 @@ void func_26(int iParam0, int iParam1, bool bParam2)
 	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
+		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -504,7 +504,7 @@ void func_27(int iParam0, bool bParam1)
 	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
+		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 	}
 }
 

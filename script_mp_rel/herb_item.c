@@ -17,40 +17,40 @@
 
 void __EntryFunction__()
 {
-	bool bVar0;
+	int iVar0;
 	bool bVar1;
 	bool bVar2;
 	struct<2> Var3;
 	int iVar5;
 	bool bVar6;
 
-	bVar0 = ScriptParam_0.f_1;
+	iVar0 = ScriptParam_0.f_1;
 	bVar1 = ScriptParam_0.f_3;
 	bVar2 = ScriptParam_0.f_4;
-	iVar5 = func_1(bVar0);
+	iVar5 = func_1(iVar0);
 	bVar6 = false;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		func_2(&Var3, 3);
 	}
-	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
+	if (!ENTITY::IS_ENTITY_DEAD(Global_34))
 	{
-		if (func_3(Global_35, 0) != joaat("weapon_unarmed"))
+		if (func_3(Global_34, 0) != joaat("weapon_unarmed"))
 		{
-			WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 0, false, false);
 		}
 	}
 	PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), joaat("weapon_unarmed"), 0);
 	while (true)
 	{
-		if (!ENTITY::DOES_ENTITY_EXIST(Global_35) || ENTITY::IS_ENTITY_DEAD(Global_35))
+		if (!ENTITY::DOES_ENTITY_EXIST(Global_34) || ENTITY::IS_ENTITY_DEAD(Global_34))
 		{
 			func_2(&Var3, 3);
 		}
 		switch (func_4(&Var3))
 		{
 			case 0:
-				if (func_3(Global_35, 0) != joaat("weapon_unarmed"))
+				if (func_3(Global_34, 0) != joaat("weapon_unarmed"))
 				{
 				}
 				else
@@ -60,7 +60,7 @@ void __EntryFunction__()
 				break;
 			case 1:
 				func_5(iVar5);
-				func_6(bVar0);
+				func_6(iVar0);
 				Var3.f_1 = MISC::GET_GAME_TIMER();
 				func_7(iVar5, 1);
 				func_2(&Var3, 2);
@@ -96,79 +96,79 @@ void __EntryFunction__()
 	}
 }
 
-int func_1(bool bParam0)
+int func_1(int iParam0)
 {
-	switch (bParam0)
+	switch (iParam0)
 	{
-		case 1433048902: /* GXTEntry: "Ginseng" */
+		case joaat("CONSUMABLE_HERB_GINSENG"):
 			return 2;
-		case -1602657245: /* GXTEntry: "Bay Bolete" */
+		case joaat("CONSUMABLE_HERB_BAY_BOLETE"):
 			return 4;
-		case -1991037110: /* GXTEntry: "Blackberry" */
+		case joaat("CONSUMABLE_HERB_BLACK_BERRY"):
 			return 5;
-		case 1047281747: /* GXTEntry: "Currant" */
+		case joaat("CONSUMABLE_HERB_CURRANT"):
 			return 6;
-		case -398744080: /* GXTEntry: "Burdock Root" */
+		case joaat("CONSUMABLE_HERB_BURDOCK_ROOT"):
 			return 7;
-		case -1066874997: /* GXTEntry: "Chanterelle" */
+		case joaat("CONSUMABLE_HERB_CHANTERELLES"):
 			return 8;
-		case -2085219828: /* GXTEntry: "Common Bulrush" */
+		case joaat("CONSUMABLE_HERB_COMMON_BULRUSH"):
 			return 11;
-		case 2064962445: /* GXTEntry: "Creeping Thyme" */
+		case joaat("CONSUMABLE_HERB_CREEPING_THYME"):
 			return 12;
-		case -1620920647: /* GXTEntry: "English Mace" */
+		case joaat("CONSUMABLE_HERB_ENGLISH_MACE"):
 			return 15;
-		case -1664530975: /* GXTEntry: "Evergreen Huckleberry" */
+		case joaat("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY"):
 			return 16;
-		case -597058368: /* GXTEntry: "Indian Tobacco" */
+		case joaat("CONSUMABLE_HERB_INDIAN_TOBACCO"):
 			return 20;
-		case 128702355: /* GXTEntry: "Milkweed" */
+		case joaat("CONSUMABLE_HERB_MILKWEED"):
 			return 23;
-		case -2051332199: /* GXTEntry: "Oleander Sage" */
+		case joaat("CONSUMABLE_HERB_OLEANDER_SAGE"):
 			return 26;
-		case 546981776: /* GXTEntry: "Oregano" */
+		case joaat("CONSUMABLE_HERB_OREGANO"):
 			return 27;
-		case -2013384490: /* GXTEntry: "Parasol Mushroom" */
+		case joaat("CONSUMABLE_HERB_PARASOL_MUSHROOM"):
 			return 28;
-		case 228922461: /* GXTEntry: "Prairie Poppy" */
+		case joaat("CONSUMABLE_HERB_PRAIRIE_POPPY"):
 			return 29;
-		case -746674788: /* GXTEntry: "Ram\'s Head" */
+		case joaat("CONSUMABLE_HERB_RAMS_HEAD"):
 			return 31;
-		case 599861917: /* GXTEntry: "Raspberry" */
+		case joaat("CONSUMABLE_HERB_RED_RASPBERRY"):
 			return 33;
-		case -1781387050: /* GXTEntry: "Sage" */
+		case joaat("CONSUMABLE_HERB_SAGE"):
 			return 34;
-		case 2006811763: /* GXTEntry: "Vanilla Flower" */
+		case joaat("CONSUMABLE_HERB_VANILLA_FLOWER"):
 			return 37;
-		case -90546043: /* GXTEntry: "Violet Snowdrop" */
+		case joaat("CONSUMABLE_HERB_VIOLET_SNOWDROP"):
 			return 38;
-		case 1216456215: /* GXTEntry: "Wild Carrot" */
+		case joaat("CONSUMABLE_HERB_WILD_CARROTS"):
 			return 48;
-		case 746300881: /* GXTEntry: "Wild Feverfew" */
+		case joaat("CONSUMABLE_HERB_WILD_FEVERFEW"):
 			return 49;
-		case -435006002: /* GXTEntry: "Wild Mint" */
+		case joaat("CONSUMABLE_HERB_WILD_MINT"):
 			return 50;
-		case -624139784: /* GXTEntry: "Wintergreen Berry" */
+		case joaat("CONSUMABLE_HERB_WINTERGREEN_BERRY"):
 			return 51;
-		case -529638012: /* GXTEntry: "Yarrow" */
+		case joaat("CONSUMABLE_HERB_YARROW"):
 			return 52;
-		case 1338475089: /* GXTEntry: "Agarita" */
+		case joaat("PROVISION_WLDFLWR_AGARITA"):
 			return 39;
-		case 2605459: /* GXTEntry: "Texas Bluebonnet" */
+		case joaat("PROVISION_WLDFLWR_TEXAS_BLUE_BONNET"):
 			return 40;
-		case 1071702353: /* GXTEntry: "Bitterweed" */
+		case joaat("PROVISION_WLDFLWR_BITTERWEED"):
 			return 41;
-		case -1183422860: /* GXTEntry: "Blood Flower" */
+		case joaat("PROVISION_WLDFLWR_BLOOD_FLOWER"):
 			return 42;
-		case -1957546791: /* GXTEntry: "Cardinal Flower" */
+		case joaat("PROVISION_WLDFLWR_CARDINAL_FLOWER"):
 			return 43;
-		case -589542533: /* GXTEntry: "Chocolate Daisy" */
+		case joaat("PROVISION_WLDFLWR_CHOCOLATE_DAISY"):
 			return 44;
-		case -1776738559: /* GXTEntry: "Creek Plum" */
+		case joaat("PROVISION_WLDFLWR_CREEK_PLUM"):
 			return 45;
-		case 1602215994: /* GXTEntry: "Wild Rhubarb" */
+		case joaat("PROVISION_WLDFLWR_WILD_RHUBARB"):
 			return 46;
-		case -396757268: /* GXTEntry: "Wisteria" */
+		case joaat("PROVISION_WLDFLWR_WISTERIA"):
 			return 47;
 	}
 	return 0;
@@ -197,12 +197,12 @@ void func_5(int iParam0)
 	var uVar0;
 
 	uVar0 = func_16(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, func_15(func_14(iParam0))), 1), "", 0, 0, joaat("COLOR_PURE_WHITE"), "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
-	(*Global_1914742)[iParam0 /*4*/] = uVar0;
+	(*Global_1914752)[iParam0 /*4*/] = uVar0;
 }
 
-void func_6(bool bParam0)
+void func_6(int iParam0)
 {
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
 	}
 }
@@ -211,9 +211,9 @@ void func_7(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_18(-372368982, func_11(iParam0)) };
+	Var0 = { func_18(joaat("eaten"), func_11(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
-	func_20(func_19(106002964), iParam1);
+	func_20(func_19(joaat("HERBS_EATEN")), iParam1);
 }
 
 int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9)
@@ -222,7 +222,7 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 	bool bVar1;
 	bool bVar2;
 	int iVar3;
-	bool bVar4;
+	int iVar4;
 
 	iVar0 = Param0.f_1;
 	bVar1 = Param0.f_3;
@@ -232,8 +232,8 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 	{
 		return 0;
 	}
-	bVar4 = func_22(iVar3);
-	if ((!bVar1 || !func_17(bVar4, 0)) || func_23(bVar4))
+	iVar4 = func_22(iVar3);
+	if ((!bVar1 || !func_17(iVar4, 0)) || func_23(iVar4))
 	{
 		return 0;
 	}
@@ -242,11 +242,11 @@ int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8,
 
 void func_9(int iParam0, bool bParam1, bool bParam2)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 
-	bVar0 = func_14(iParam0);
-	iVar1 = func_1(bVar0);
+	iVar0 = func_14(iParam0);
+	iVar1 = func_1(iVar0);
 	if (iVar1 != iParam0)
 	{
 		func_24(iVar1, 4);
@@ -288,109 +288,109 @@ int func_11(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -932875117 /* GXTEntry: "Alaskan Ginseng" */;
+			return joaat("HERB_ALASKAN_GINSENG");
 		case 3:
-			return 1660962977 /* GXTEntry: "American Ginseng" */;
+			return joaat("HERB_AMERICAN_GINSENG");
 		case 4:
-			return -131409450 /* GXTEntry: "Bay Bolete" */;
+			return joaat("HERB_BAY_BOLETE");
 		case 5:
-			return -1487527516 /* GXTEntry: "Blackberry" */;
+			return joaat("HERB_BLACK_BERRY");
 		case 6:
-			return 561629573 /* GXTEntry: "Blackcurrant" */;
+			return joaat("HERB_BLACK_CURRANT");
 		case 7:
-			return 1829679323 /* GXTEntry: "Burdock Root" */;
+			return joaat("HERB_BURDOCK_ROOT");
 		case 8:
-			return -618617794 /* GXTEntry: "Chanterelles" */;
+			return joaat("HERB_CHANTERELLES");
 		case 11:
-			return 653458791 /* GXTEntry: "Common Bulrush" */;
+			return joaat("HERB_COMMON_BULRUSH");
 		case 12:
-			return 437319607 /* GXTEntry: "Creeping Thyme" */;
+			return joaat("HERB_CREEPING_THYME");
 		case 13:
-			return -1519488075 /* GXTEntry: "Desert Sage" */;
+			return joaat("HERB_DESERT_SAGE");
 		case 15:
-			return 1014445254 /* GXTEntry: "English Mace" */;
+			return joaat("HERB_ENGLISH_MACE");
 		case 16:
-			return 224814421 /* GXTEntry: "Evergreen Huckleberry" */;
+			return joaat("HERB_EVERGREEN_HUCKLEBERRY");
 		case 18:
-			return 1012187868 /* GXTEntry: "Golden Currant" */;
+			return joaat("HERB_GOLDEN_CURRANT");
 		case 19:
-			return -1040706491 /* GXTEntry: "Hummingbird Sage" */;
+			return joaat("HERB_HUMMINGBIRD_SAGE");
 		case 20:
-			return -1910627346 /* GXTEntry: "Indian Tobacco" */;
+			return joaat("HERB_INDIAN_TOBACCO");
 		case 23:
-			return -1812487593 /* GXTEntry: "Milkweed" */;
+			return joaat("HERB_MILKWEED");
 		case 26:
-			return 1983971282 /* GXTEntry: "Oleander Sage" */;
+			return joaat("HERB_OLEANDER_SAGE");
 		case 27:
-			return 1561519041 /* GXTEntry: "Oregano" */;
+			return joaat("HERB_OREGANO");
 		case 28:
-			return -980496853 /* GXTEntry: "Parasol Mushroom" */;
+			return joaat("HERB_PARASOL_MUSHROOM");
 		case 29:
-			return -1738887126 /* GXTEntry: "Prairie Poppy" */;
+			return joaat("HERB_PRAIRIE_POPPY");
 		case 31:
-			return 424771379 /* GXTEntry: "Ram\'s Head" */;
+			return joaat("HERB_RAMS_HEAD");
 		case 33:
-			return 787316814 /* GXTEntry: "Red Raspberry" */;
+			return joaat("HERB_RED_RASPBERRY");
 		case 34:
-			return 984616481 /* GXTEntry: "Red Sage" */;
+			return joaat("HERB_RED_SAGE");
 		case 37:
-			return 1078285403 /* GXTEntry: "Vanilla Flower" */;
+			return joaat("HERB_VANILLA_FLOWER");
 		case 38:
-			return -262897007 /* GXTEntry: "Violet Snowdrop" */;
+			return joaat("HERB_VIOLET_SNOWDROP");
 		case 48:
-			return -1727702531 /* GXTEntry: "Wild Carrot" */;
+			return joaat("HERB_WILD_CARROTS");
 		case 49:
-			return 1783324404 /* GXTEntry: "Wild Feverfew" */;
+			return joaat("HERB_WILD_FEVERFEW");
 		case 50:
-			return 1288848815 /* GXTEntry: "Wild Mint" */;
+			return joaat("HERB_WILD_MINT");
 		case 51:
-			return 918090738 /* GXTEntry: "Wintergreen Berry" */;
+			return joaat("HERB_WINTERGREEN_BERRY");
 		case 52:
-			return 170272501 /* GXTEntry: "Yarrow" */;
+			return joaat("HERB_YARROW");
 		case 1:
-			return 2056650000 /* GXTEntry: "Acuna\'s Star Orchid" */;
+			return joaat("HERB_ACUNAS_STAR_ORCHID");
 		case 9:
-			return -1195354638 /* GXTEntry: "Cigar Orchid" */;
+			return joaat("HERB_CIGAR_ORCHID");
 		case 10:
-			return 1077596967 /* GXTEntry: "Clamshell Orchid" */;
+			return joaat("HERB_CLAMSHELL_ORCHID");
 		case 14:
-			return -2145199848 /* GXTEntry: "Dragon\'s Mouth Orchid" */;
+			return joaat("HERB_DRAGONS_MOUTH_ORCHID");
 		case 17:
-			return 752824478 /* GXTEntry: "Ghost Orchid" */;
+			return joaat("HERB_GHOST_ORCHID");
 		case 21:
-			return -819513569 /* GXTEntry: "Lady of the Night Orchid" */;
+			return joaat("HERB_LADY_OF_NIGHT_ORCHID");
 		case 22:
-			return 1906968775 /* GXTEntry: "Lady Slipper Orchid" */;
+			return joaat("HERB_LADY_SLIPPER_ORCHID");
 		case 24:
-			return -135434663 /* GXTEntry: "Moccasin Flower Orchid" */;
+			return joaat("HERB_MOCCASIN_FLOWER_ORCHID");
 		case 25:
-			return 920123680 /* GXTEntry: "Night Scented Orchid" */;
+			return joaat("HERB_NIGHT_SCENTED_ORCHID");
 		case 30:
-			return 150470908 /* GXTEntry: "Queen\'s Orchid" */;
+			return joaat("HERB_QUEENS_ORCHID");
 		case 32:
-			return -1665125257 /* GXTEntry: "Rat Tail Orchid" */;
+			return joaat("HERB_RAT_TAIL_ORCHID");
 		case 35:
-			return 1587928307 /* GXTEntry: "Sparrow\'s Egg Orchid" */;
+			return joaat("HERB_SPARROWS_EGG_ORCHID");
 		case 36:
-			return -1738925422 /* GXTEntry: "Spider Orchid" */;
+			return joaat("HERB_SPIDER_ORCHID");
 		case 39:
-			return 656594395;
+			return joaat("HERB_WILD_FLWR_AGARITA");
 		case 41:
-			return -1174738785;
+			return joaat("HERB_WILD_FLWR_BITTERWEED");
 		case 42:
-			return 1073505629;
+			return joaat("HERB_WILD_FLWR_BLOOD_FLOWER");
 		case 40:
-			return -658674894;
+			return joaat("HERB_WILD_FLWR_BLUE_BONNET");
 		case 43:
-			return -1504155535;
+			return joaat("HERB_WILD_FLWR_CARDINAL_FLOWER");
 		case 44:
-			return -1917345716;
+			return joaat("HERB_WILD_FLWR_CHOCOLATE_DAISY");
 		case 45:
-			return 1823406682;
+			return joaat("HERB_WILD_FLWR_CREEK_PLUM");
 		case 46:
-			return -1003637772;
+			return joaat("HERB_WILD_FLWR_RHUBARB");
 		case 47:
-			return -1571524081;
+			return joaat("HERB_WILD_FLWR_WISTERIA");
 	}
 	return 0;
 }
@@ -410,8 +410,8 @@ void func_12(int iParam0, var uParam1, bool bParam2)
 		return;
 	}
 	func_35(iVar0, iVar1);
-	(Global_1904612->f_31[iParam0 /*9*/])->f_3[0 /*2*/] = uParam1;
-	((Global_1904612->f_31[iParam0 /*9*/])->f_3[0 /*2*/])->f_1 = 2;
+	(Global_1904613->f_31[iParam0 /*9*/])->f_3[0 /*2*/] = uParam1;
+	((Global_1904613->f_31[iParam0 /*9*/])->f_3[0 /*2*/])->f_1 = 2;
 }
 
 void func_13()
@@ -424,103 +424,103 @@ int func_14(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return 1433048902 /* GXTEntry: "Ginseng" */;
+			return joaat("CONSUMABLE_HERB_GINSENG");
 		case 3:
-			return 1433048902 /* GXTEntry: "Ginseng" */;
+			return joaat("CONSUMABLE_HERB_GINSENG");
 		case 4:
-			return -1602657245 /* GXTEntry: "Bay Bolete" */;
+			return joaat("CONSUMABLE_HERB_BAY_BOLETE");
 		case 5:
-			return -1991037110 /* GXTEntry: "Blackberry" */;
+			return joaat("CONSUMABLE_HERB_BLACK_BERRY");
 		case 6:
-			return 1047281747 /* GXTEntry: "Currant" */;
+			return joaat("CONSUMABLE_HERB_CURRANT");
 		case 7:
-			return -398744080 /* GXTEntry: "Burdock Root" */;
+			return joaat("CONSUMABLE_HERB_BURDOCK_ROOT");
 		case 8:
-			return -1066874997 /* GXTEntry: "Chanterelle" */;
+			return joaat("CONSUMABLE_HERB_CHANTERELLES");
 		case 11:
-			return -2085219828 /* GXTEntry: "Common Bulrush" */;
+			return joaat("CONSUMABLE_HERB_COMMON_BULRUSH");
 		case 12:
-			return 2064962445 /* GXTEntry: "Creeping Thyme" */;
+			return joaat("CONSUMABLE_HERB_CREEPING_THYME");
 		case 13:
-			return -1781387050 /* GXTEntry: "Sage" */;
+			return joaat("CONSUMABLE_HERB_SAGE");
 		case 15:
-			return -1620920647 /* GXTEntry: "English Mace" */;
+			return joaat("CONSUMABLE_HERB_ENGLISH_MACE");
 		case 16:
-			return -1664530975 /* GXTEntry: "Evergreen Huckleberry" */;
+			return joaat("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY");
 		case 18:
-			return 1047281747 /* GXTEntry: "Currant" */;
+			return joaat("CONSUMABLE_HERB_CURRANT");
 		case 19:
-			return -1781387050 /* GXTEntry: "Sage" */;
+			return joaat("CONSUMABLE_HERB_SAGE");
 		case 20:
-			return -597058368 /* GXTEntry: "Indian Tobacco" */;
+			return joaat("CONSUMABLE_HERB_INDIAN_TOBACCO");
 		case 23:
-			return 128702355 /* GXTEntry: "Milkweed" */;
+			return joaat("CONSUMABLE_HERB_MILKWEED");
 		case 26:
-			return -2051332199 /* GXTEntry: "Oleander Sage" */;
+			return joaat("CONSUMABLE_HERB_OLEANDER_SAGE");
 		case 27:
-			return 546981776 /* GXTEntry: "Oregano" */;
+			return joaat("CONSUMABLE_HERB_OREGANO");
 		case 28:
-			return -2013384490 /* GXTEntry: "Parasol Mushroom" */;
+			return joaat("CONSUMABLE_HERB_PARASOL_MUSHROOM");
 		case 29:
-			return 228922461 /* GXTEntry: "Prairie Poppy" */;
+			return joaat("CONSUMABLE_HERB_PRAIRIE_POPPY");
 		case 31:
-			return -746674788 /* GXTEntry: "Ram\'s Head" */;
+			return joaat("CONSUMABLE_HERB_RAMS_HEAD");
 		case 33:
-			return 599861917 /* GXTEntry: "Raspberry" */;
+			return joaat("CONSUMABLE_HERB_RED_RASPBERRY");
 		case 34:
-			return -1781387050 /* GXTEntry: "Sage" */;
+			return joaat("CONSUMABLE_HERB_SAGE");
 		case 37:
-			return 2006811763 /* GXTEntry: "Vanilla Flower" */;
+			return joaat("CONSUMABLE_HERB_VANILLA_FLOWER");
 		case 38:
-			return -90546043 /* GXTEntry: "Violet Snowdrop" */;
+			return joaat("CONSUMABLE_HERB_VIOLET_SNOWDROP");
 		case 48:
-			return 1216456215 /* GXTEntry: "Wild Carrot" */;
+			return joaat("CONSUMABLE_HERB_WILD_CARROTS");
 		case 49:
-			return 746300881 /* GXTEntry: "Wild Feverfew" */;
+			return joaat("CONSUMABLE_HERB_WILD_FEVERFEW");
 		case 50:
-			return -435006002 /* GXTEntry: "Wild Mint" */;
+			return joaat("CONSUMABLE_HERB_WILD_MINT");
 		case 51:
-			return -624139784 /* GXTEntry: "Wintergreen Berry" */;
+			return joaat("CONSUMABLE_HERB_WINTERGREEN_BERRY");
 		case 52:
-			return -529638012 /* GXTEntry: "Yarrow" */;
+			return joaat("CONSUMABLE_HERB_YARROW");
 		case 39:
-			return 1338475089 /* GXTEntry: "Agarita" */;
+			return joaat("PROVISION_WLDFLWR_AGARITA");
 		case 40:
-			return 2605459 /* GXTEntry: "Texas Bluebonnet" */;
+			return joaat("PROVISION_WLDFLWR_TEXAS_BLUE_BONNET");
 		case 41:
-			return 1071702353 /* GXTEntry: "Bitterweed" */;
+			return joaat("PROVISION_WLDFLWR_BITTERWEED");
 		case 42:
-			return -1183422860 /* GXTEntry: "Blood Flower" */;
+			return joaat("PROVISION_WLDFLWR_BLOOD_FLOWER");
 		case 43:
-			return -1957546791 /* GXTEntry: "Cardinal Flower" */;
+			return joaat("PROVISION_WLDFLWR_CARDINAL_FLOWER");
 		case 44:
-			return -589542533 /* GXTEntry: "Chocolate Daisy" */;
+			return joaat("PROVISION_WLDFLWR_CHOCOLATE_DAISY");
 		case 45:
-			return -1776738559 /* GXTEntry: "Creek Plum" */;
+			return joaat("PROVISION_WLDFLWR_CREEK_PLUM");
 		case 46:
-			return 1602215994 /* GXTEntry: "Wild Rhubarb" */;
+			return joaat("PROVISION_WLDFLWR_WILD_RHUBARB");
 		case 47:
-			return -396757268 /* GXTEntry: "Wisteria" */;
+			return joaat("PROVISION_WLDFLWR_WISTERIA");
 		default:
 			break;
 	}
 	return 0;
 }
 
-bool func_15(bool bParam0)
+int func_15(int iParam0)
 {
 	int iVar0;
 
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
-		return false;
+		return 0;
 	}
-	iVar0 = func_36(bParam0);
+	iVar0 = func_36(iParam0);
 	if (iVar0 != 0)
 	{
 		return iVar0;
 	}
-	return bParam0;
+	return iParam0;
 }
 
 var func_16(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4, char* sParam5, char* sParam6, int iParam7, int iParam8)
@@ -545,13 +545,13 @@ var func_16(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	return uVar20;
 }
 
-int func_17(bool bParam0, int iParam1)
+int func_17(int iParam0, int iParam1)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
 }
 
 struct<2> func_18(int iParam0, var uParam1)
@@ -600,54 +600,54 @@ int func_22(int iParam0)
 		case 2:
 			return -1080874779 /* GXTEntry: "Special Health Cure" */;
 		case 3:
-			return -755485480 /* GXTEntry: "Potent Health Cure" */;
+			return joaat("CONSUMABLE_POTENT_MEDICINE");
 		case 6:
-			return 747460826 /* GXTEntry: "Special Horse Stimulant" */;
+			return joaat("CONSUMABLE_SPECIAL_HORSE_STIMULANT_CRAFTED");
 		case 7:
-			return 1627068364 /* GXTEntry: "Horse Reviver" */;
+			return joaat("CONSUMABLE_HORSE_REVIVER");
 		case 13:
-			return -1067476102 /* GXTEntry: "Potent Bitters" */;
+			return joaat("CONSUMABLE_POTENT_RESTORATIVE");
 		case 15:
 			return -1080874779 /* GXTEntry: "Special Health Cure" */;
 		case 18:
-			return -801397594 /* GXTEntry: "Potent Horse Stimulant" */;
+			return joaat("CONSUMABLE_POTENT_HORSE_STIMULANT");
 		case 19:
-			return 730856618 /* GXTEntry: "Potent Miracle Tonic" */;
+			return joaat("CONSUMABLE_POTENT_TONIC");
 		case 20:
-			return -486559882 /* GXTEntry: "Potent Snake Oil" */;
+			return joaat("CONSUMABLE_POTENT_SNAKE_OIL");
 		case 23:
 			return -1976480343 /* GXTEntry: "Special Miracle Tonic" */;
 		case 26:
-			return 2036955137 /* GXTEntry: "Potent Herbivore Bait" */;
+			return joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT");
 		case 29:
-			return -1067476102 /* GXTEntry: "Potent Bitters" */;
+			return joaat("CONSUMABLE_POTENT_RESTORATIVE");
 		case 34:
 			return 1566032147 /* GXTEntry: "Special Bitters" */;
 		case 38:
-			return 2036955137 /* GXTEntry: "Potent Herbivore Bait" */;
+			return joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT");
 		case 49:
 			return 1566032147 /* GXTEntry: "Special Bitters" */;
 		case 52:
-			return -755485480 /* GXTEntry: "Potent Health Cure" */;
+			return joaat("CONSUMABLE_POTENT_MEDICINE");
 	}
 	return 0;
 }
 
-int func_23(bool bParam0)
+int func_23(int iParam0)
 {
 	int iVar0;
 	struct<37> Var1;
 	int iVar48;
 
-	iVar0 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(bParam0);
+	iVar0 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(iParam0);
 	Var1.f_4 = 15;
 	Var1.f_36 = 10;
 	iVar48 = 0;
 	while (iVar48 < iVar0)
 	{
-		if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(bParam0, iVar48, &Var1))
+		if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(iParam0, iVar48, &Var1))
 		{
-			if (Var1.f_2 == 1644203656 && !func_39(bParam0, Var1, 1))
+			if (Var1.f_2 == joaat("COST_TYPE_CRAFT") && !func_39(iParam0, Var1, 1))
 			{
 				return 1;
 			}
@@ -665,10 +665,10 @@ void func_24(int iParam0, int iParam1)
 	}
 	if (func_40() != -1)
 	{
-		Global_17173[iParam0] = (Global_17173[iParam0] || iParam1);
+		Global_17172[iParam0] = (Global_17172[iParam0] || iParam1);
 		return;
 	}
-	Global_40.f_4458[iParam0] = (Global_40.f_4458[iParam0] || iParam1);
+	Global_39.f_4458[iParam0] = (Global_39.f_4458[iParam0] || iParam1);
 }
 
 bool func_25(int iParam0)
@@ -757,9 +757,9 @@ int func_29(int iParam0, bool bParam1, bool bParam2)
 		{
 			return 1;
 		}
-		if (Global_1070355->f_3 && !Global_1572887->f_9)
+		if (Global_1070356->f_3 && !Global_1572887->f_9)
 		{
-			if ((((*Global_1055965)[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*436*/])->f_428 && NETWORK::NETWORK_IS_GAME_IN_PROGRESS()) && NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION())
+			if ((((*Global_1055966)[PLAYER::NETWORK_PLAYER_ID_TO_INT() /*436*/])->f_428 && NETWORK::NETWORK_IS_GAME_IN_PROGRESS()) && NETWORK::NETWORK_IS_IN_TUTORIAL_SESSION())
 			{
 				return 1;
 			}
@@ -780,7 +780,7 @@ int func_29(int iParam0, bool bParam1, bool bParam2)
 	{
 		return 1;
 	}
-	if ((Global_1939168 && 81919 & (-1 - iParam0)) != 0)
+	if ((Global_1939178 && 81919 & (-1 - iParam0)) != 0)
 	{
 		return 1;
 	}
@@ -829,35 +829,35 @@ void func_30(bool bParam0, int iParam1)
 	func_49(&Global_0, 1);
 }
 
-int func_31(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
+int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
 	bool bVar0;
 	int iVar1;
 	struct<37> Var2;
 	int iVar49;
 
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
 		return 0;
 	}
-	if (iParam1 != 0 && !func_39(bParam0, iParam1, 1))
+	if (iParam1 != 0 && !func_39(iParam0, iParam1, 1))
 	{
 		return 0;
 	}
 	bVar0 = false;
 	if (iParam1 == 0)
 	{
-		iVar1 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(bParam0);
+		iVar1 = ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COSTS_COUNT(iParam0);
 		Var2.f_4 = 15;
 		Var2.f_36 = 10;
 		iVar49 = 0;
 		while (iVar49 < iVar1)
 		{
-			if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(bParam0, iVar49, &Var2))
+			if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(iParam0, iVar49, &Var2))
 			{
-				if (Var2.f_2 == 1644203656 && func_39(bParam0, Var2, 1))
+				if (Var2.f_2 == joaat("COST_TYPE_CRAFT") && func_39(iParam0, Var2, 1))
 				{
-					if (func_51(bParam0, Var2))
+					if (func_51(iParam0, Var2))
 					{
 						bVar0 = true;
 					}
@@ -866,7 +866,7 @@ int func_31(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 			iVar49++;
 		}
 	}
-	else if (func_51(bParam0, iParam1))
+	else if (func_51(iParam0, iParam1))
 	{
 		bVar0 = true;
 	}
@@ -930,7 +930,7 @@ int func_33(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	if ((Global_1900718->f_67 && !func_34(iParam0, 1)) || func_56(32768))
 	{
-		if (!func_34(iParam0, 262144) || !Global_1904612->f_8189)
+		if (!func_34(iParam0, 262144) || !Global_1904613->f_8198)
 		{
 			return 0;
 		}
@@ -944,33 +944,33 @@ int func_33(int iParam0, int iParam1, int iParam2, bool bParam3)
 
 bool func_34(int iParam0, int iParam1)
 {
-	return ((Global_1904612->f_31[iParam0 /*9*/])->f_2 && iParam1) != 0;
+	return ((Global_1904613->f_31[iParam0 /*9*/])->f_2 && iParam1) != 0;
 }
 
 void func_35(int iParam0, int iParam1)
 {
 	var uVar0;
 
-	uVar0 = Global_1904612[iParam0];
+	uVar0 = Global_1904613[iParam0];
 	MISC::SET_BIT(&uVar0, iParam1);
-	(*Global_1904612)[iParam0] = uVar0;
+	(*Global_1904613)[iParam0] = uVar0;
 }
 
-int func_36(bool bParam0)
+int func_36(int iParam0)
 {
-	switch (bParam0)
+	switch (iParam0)
 	{
-		case -59585102: /* GXTEntry: "Tonics Satchel" */
+		case joaat("KIT_POUCH_REMEDIES"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_REMEDIES_MP");
-		case 1018123892: /* GXTEntry: "Ingredients Satchel" */
+		case joaat("KIT_POUCH_INGREDIENTS"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_INGREDIENTS_MP");
-		case 982182330: /* GXTEntry: "Materials Satchel" */
+		case joaat("KIT_POUCH_MATERIALS"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_MATERIALS_MP");
-		case -1406390556: /* GXTEntry: "Valuables Satchel" */
+		case joaat("KIT_POUCH_VALUABLES"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_VALUABLES_MP");
-		case -1455768246: /* GXTEntry: "Kit Satchel" */
+		case joaat("KIT_POUCH_KIT"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_KIT_MP");
-		case -921879912: /* GXTEntry: "Provisions Satchel" */
+		case joaat("KIT_POUCH_PROVISIONS"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_PROVISIONS_MP");
 	}
 	return 0;
@@ -978,9 +978,9 @@ int func_36(bool bParam0)
 
 void func_37(char* sParam0, char* sParam1, int iParam2)
 {
-	_NAMESPACE84::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	_NAMESPACE84::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	_NAMESPACE84::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
 }
 
 bool func_38(int iParam0, int iParam1, bool bParam2)
@@ -994,31 +994,31 @@ bool func_38(int iParam0, int iParam1, bool bParam2)
 	}
 	if (Global_1572887->f_13 != -1)
 	{
-		return (Global_17173[iParam0] && iParam1) != 0;
+		return (Global_17172[iParam0] && iParam1) != 0;
 	}
-	return (Global_40.f_4458[iParam0] && iParam1) != 0;
+	return (Global_39.f_4458[iParam0] && iParam1) != 0;
 }
 
-int func_39(bool bParam0, int iParam1, bool bParam2)
+int func_39(int iParam0, int iParam1, bool bParam2)
 {
 	var uVar0[10];
 	int iVar11;
 	int iVar12;
 	int iVar13;
 
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
-		return func_59(func_58(bParam0), iParam1, bParam2);
+		return func_59(func_58(iParam0), iParam1, bParam2);
 	}
-	if (func_60(bParam0))
+	if (func_60(iParam0))
 	{
-		return func_62(func_61(bParam0, 1), iParam1);
+		return func_62(func_61(iParam0, 1), iParam1);
 	}
-	if ((bParam2 && func_40() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(bParam0))
+	if ((bParam2 && func_40() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(iParam0))
 	{
 		return 1;
 	}
-	if (!func_63(bParam0, iParam1, &uVar0, &iVar11) || iVar11 < 1)
+	if (!func_63(iParam0, iParam1, &uVar0, &iVar11) || iVar11 < 1)
 	{
 		return 0;
 	}
@@ -1058,7 +1058,7 @@ int func_42(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!Global_1099293->f_16)
+	if (!Global_1099294->f_16)
 	{
 		return 0;
 	}
@@ -1263,10 +1263,10 @@ int func_50()
 	{
 		return 1;
 	}
-	return Global_40.f_1;
+	return Global_39.f_1;
 }
 
-bool func_51(bool bParam0, int iParam1)
+bool func_51(int iParam0, int iParam1)
 {
 	bool bVar0;
 	int iVar1;
@@ -1278,7 +1278,7 @@ bool func_51(bool bParam0, int iParam1)
 	{
 		return false;
 	}
-	if (func_63(bParam0, iParam1, &uVar2, &iVar1))
+	if (func_63(iParam0, iParam1, &uVar2, &iVar1))
 	{
 		iVar14 = 0;
 		while (iVar14 < iVar1)
@@ -1319,7 +1319,7 @@ void func_52(int iParam0, bool bParam1)
 
 bool func_53(int iParam0, int iParam1)
 {
-	return MISC::IS_BIT_SET(&(Global_17173.f_2563[iParam0]), iParam1);
+	return MISC::IS_BIT_SET(&(Global_17172.f_2563[iParam0]), iParam1);
 }
 
 int func_54(int iParam0)
@@ -1338,31 +1338,31 @@ int func_55(int iParam0)
 	int iVar2;
 	int iVar3;
 
-	if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 98304 == 0)
+	if ((Global_1904613->f_31[iParam0 /*9*/])->f_2 & 98304 == 0)
 	{
 		return 0;
 	}
 	iVar1 = NETWORK::GET_CLOUD_TIME_AS_INT();
 	iVar0 = 0;
-	while (iVar0 < Global_40.f_3327)
+	while (iVar0 < Global_39.f_3327)
 	{
-		if ((Global_40.f_3327[iVar0 /*3*/])->f_2 == iParam0)
+		if ((Global_39.f_3327[iVar0 /*3*/])->f_2 == iParam0)
 		{
 			iVar3 = 3;
-			if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 131072 != 0)
+			if ((Global_1904613->f_31[iParam0 /*9*/])->f_2 & 131072 != 0)
 			{
 				iVar3 = 2;
 			}
-			if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 524288 != 0)
+			if ((Global_1904613->f_31[iParam0 /*9*/])->f_2 & 524288 != 0)
 			{
 				iVar3 = 5;
 			}
-			iVar2 = (&Global_40.f_3327[iVar0 /*3*/] - iVar1);
-			if ((Global_40.f_3327[iVar0 /*3*/])->f_1 >= iVar3)
+			iVar2 = (&Global_39.f_3327[iVar0 /*3*/] - iVar1);
+			if ((Global_39.f_3327[iVar0 /*3*/])->f_1 >= iVar3)
 			{
 				return 1;
 			}
-			if (iVar2 < 1800 && (Global_1904612->f_31[iParam0 /*9*/])->f_2 & 32768 != 0)
+			if (iVar2 < 1800 && (Global_1904613->f_31[iParam0 /*9*/])->f_2 & 32768 != 0)
 			{
 				return 1;
 			}
@@ -1383,12 +1383,12 @@ int func_57()
 	{
 		return 0;
 	}
-	return Global_1904612->f_8187;
+	return Global_1904613->f_8196;
 }
 
-bool func_58(bool bParam0)
+int func_58(int iParam0)
 {
-	return bParam0;
+	return iParam0;
 }
 
 int func_59(int iParam0, int iParam1, bool bParam2)
@@ -1426,24 +1426,24 @@ int func_59(int iParam0, int iParam1, bool bParam2)
 	return 0;
 }
 
-int func_60(bool bParam0)
+int func_60(int iParam0)
 {
-	if (func_70(bParam0, 75135761))
+	if (func_70(iParam0, 75135761))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_61(bool bParam0, bool bParam1)
+int func_61(int iParam0, bool bParam1)
 {
 	struct<6> Var0;
 
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
-		return func_71(func_58(bParam0), bParam1);
+		return func_71(func_58(iParam0), bParam1);
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0) || Var0.f_5 == 0)
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0) || Var0.f_5 == 0)
 	{
 		return 0;
 	}
@@ -1514,7 +1514,7 @@ int func_62(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_63(bool bParam0, int iParam1, var uParam2, int iParam3)
+int func_63(int iParam0, int iParam1, var uParam2, int iParam3)
 {
 	struct<37> Var0;
 	int iVar47;
@@ -1524,13 +1524,13 @@ int func_63(bool bParam0, int iParam1, var uParam2, int iParam3)
 	{
 		return 0;
 	}
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
 		return 0;
 	}
 	Var0.f_4 = 15;
 	Var0.f_36 = 10;
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ACQUIRE_COST(bParam0, iParam1, &Var0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ACQUIRE_COST(iParam0, iParam1, &Var0))
 	{
 		return 0;
 	}
@@ -1585,19 +1585,19 @@ int func_67(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return Global_1070355->f_634.f_601;
+			return Global_1070356->f_634.f_601;
 		case 3:
-			return Global_1070355->f_634.f_2103;
+			return Global_1070356->f_634.f_2103;
 		case 4:
-			return Global_1070355->f_634.f_12605;
+			return Global_1070356->f_634.f_12605;
 		case 5:
-			return Global_1070355->f_634.f_12907;
+			return Global_1070356->f_634.f_12907;
 		case 6:
-			return Global_1070355->f_634.f_15909;
+			return Global_1070356->f_634.f_15909;
 		case 7:
-			return Global_1070355->f_634.f_15980;
+			return Global_1070356->f_634.f_15980;
 		case 8:
-			return Global_1070355->f_634.f_17182;
+			return Global_1070356->f_634.f_17182;
 		default:
 			break;
 	}
@@ -1647,17 +1647,17 @@ int func_69(int iParam0, int iParam1, var uParam2, int iParam3)
 	return 1;
 }
 
-int func_70(bool bParam0, int iParam1)
+int func_70(int iParam0, int iParam1)
 {
-	if (!func_17(bParam0, 0))
+	if (!func_17(iParam0, 0))
 	{
-		return func_73(func_58(bParam0), iParam1);
+		return func_73(func_58(iParam0), iParam1);
 	}
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(bParam0, iParam1, 1120943070))
+	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(iParam0, iParam1, 1120943070))
 	{
 		return 1;
 	}

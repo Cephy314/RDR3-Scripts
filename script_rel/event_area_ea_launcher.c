@@ -13,7 +13,7 @@
 	var uLocal_11 = 0;
 	var uLocal_12 = 0;
 	var uLocal_13 = 0;
-	int iLocal_14 = 0;
+	bool bLocal_14 = false;
 	int iScriptParam_0 = 0;
 	var uScriptParam_1 = 0;
 	var uScriptParam_2 = 0;
@@ -48,13 +48,13 @@ void __EntryFunction__()
 	func_1(&iScriptParam_0, 0);
 }
 
-void func_1(int iParam0, int iParam1)
+void func_1(int iParam0, bool bParam1)
 {
-	if (iParam1 || iLocal_14)
+	if (bParam1 || bLocal_14)
 	{
 		func_7(*iParam0, 0);
 	}
-	if (iLocal_14)
+	if (bLocal_14)
 	{
 		func_9(*iParam0, 8);
 		func_10();
@@ -131,7 +131,7 @@ int func_8(int iParam0)
 	iVar0 = func_2(iParam0);
 	if (!func_3(iVar0))
 	{
-		iLocal_14 = 1;
+		bLocal_14 = true;
 		return 1;
 	}
 	if (func_12(((*Global_1392194)[iVar0 /*10*/])->f_1, 1))
@@ -140,7 +140,7 @@ int func_8(int iParam0)
 	}
 	if (!func_13(iParam0, 1, 0, (300f * 300f), 0))
 	{
-		iLocal_14 = 1;
+		bLocal_14 = true;
 		return 1;
 	}
 	return 0;
@@ -236,9 +236,9 @@ int func_13(int iParam0, bool bParam1, bool bParam2, float fParam3, bool bParam4
 
 void func_14(int iParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
-		VOLUME::_0x43F867EF5C463A53(iParam0);
+		VOLUME::_DELETE_VOLUME(iParam0);
 	}
 }
 

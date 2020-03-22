@@ -62,7 +62,7 @@ int func_4()
 	switch (Local_0)
 	{
 		case 0:
-			Local_0.f_32 = TASK::_0xDF7993356F52359A(Global_35, 0);
+			Local_0.f_32 = TASK::_0xDF7993356F52359A(Global_34, 0);
 			if (!TASK::_0x841475AC96E794D1(Local_0.f_32))
 			{
 				return 0;
@@ -73,7 +73,7 @@ int func_4()
 			Local_0 = 1;
 			break;
 		case 1:
-			if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1) && DATAFILE::_0x603AC35FD4602C76(Local_0.f_34))
+			if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && DATAFILE::_0x603AC35FD4602C76(Local_0.f_34))
 			{
 				func_5();
 				if (!func_6())
@@ -98,7 +98,7 @@ int func_4()
 			{
 				CAM::_0xD904F75DBD7AB865(Local_0.f_33);
 			}
-			if (!TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1))
+			if (!TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1))
 			{
 				Local_0 = 4;
 			}
@@ -161,7 +161,7 @@ int func_8()
 	if (CAM::_0xDD0B7C5AE58F721D(&(Local_0.f_1)) && !CAM::_0x927B810E43E99932(&(Local_0.f_1)))
 	{
 		CAM::_0xB8B207C34285E978(&(Local_0.f_1));
-		Local_0.f_1.f_16 = Global_35;
+		Local_0.f_1.f_16 = Global_34;
 		Local_0.f_1.f_21 = 1;
 		Local_0.f_1.f_22 = { 0f, 0f, TASK::_0xB93EA7184BAA85C3(Local_0.f_32, 1) };
 		CAM::_0xAC77757C05DE9E5A(&(Local_0.f_1));

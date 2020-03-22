@@ -7,7 +7,7 @@
 	int iLocal_5 = 0;
 	int iLocal_6 = 0;
 	int iLocal_7 = 0;
-	int iLocal_8 = 0;
+	bool bLocal_8 = false;
 	int iLocal_9 = 0;
 	int iLocal_10 = 0;
 	bool bLocal_11 = false;
@@ -109,9 +109,9 @@ void func_6()
 				return;
 			}
 			bLocal_11 = func_12() == func_13();
-			iLocal_8 = TASK::_0x5BA659955369B0E2(iLocal_3);
+			bLocal_8 = TASK::_0x5BA659955369B0E2(iLocal_3);
 			iLocal_9 = TASK::_0xA92450B5AE687AAF(iLocal_3);
-			if (func_14(iLocal_8, 0) && !_NAMESPACE48::_0x800DF3FC913355F3(_NAMESPACE48::_0x32A1E3B83D501096(iLocal_8)))
+			if (func_14(bLocal_8, 0) && !PERSCHAR::_0x800DF3FC913355F3(PERSCHAR::_0x32A1E3B83D501096(bLocal_8)))
 			{
 				iLocal_5 = 6;
 				return;
@@ -126,12 +126,12 @@ void func_6()
 			}
 			if (bLocal_11)
 			{
-				if (TASK::IS_PED_ACTIVE_IN_SCENARIO(iLocal_8, 0))
+				if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bLocal_8, 0))
 				{
 					iLocal_5 = 2;
 				}
 			}
-			else if (TASK::IS_PED_ACTIVE_IN_SCENARIO(iLocal_8, 1))
+			else if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bLocal_8, 1))
 			{
 				iLocal_5 = 2;
 			}
@@ -148,7 +148,7 @@ void func_6()
 			}
 			else
 			{
-				iLocal_6 = func_17(iLocal_9, iLocal_8);
+				iLocal_6 = func_17(iLocal_9, bLocal_8);
 				iLocal_10 = func_18();
 				if (iLocal_10 == -1)
 				{
@@ -262,15 +262,15 @@ int func_13()
 	return Global_40.f_4283.f_1;
 }
 
-int func_14(int iParam0, int iParam1)
+int func_14(bool bParam0, int iParam1)
 {
 	int iVar0;
 
-	if (iParam0 == 0)
+	if (bParam0 == 0)
 	{
 		return 0;
 	}
-	if (ENTITY::IS_ENTITY_DEAD(iParam0))
+	if (ENTITY::IS_ENTITY_DEAD(bParam0))
 	{
 		return 0;
 	}
@@ -281,56 +281,56 @@ int func_14(int iParam0, int iParam1)
 	}
 	if (func_28(iVar0, 1))
 	{
-		if (PED::IS_PED_FATALLY_INJURED(iParam0))
+		if (PED::IS_PED_FATALLY_INJURED(bParam0))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_0x3AA24CCC0D451379(bParam0))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 8))
 	{
-		if (PED::GET_PED_CONFIG_FLAG(iParam0, 11, false))
+		if (PED::GET_PED_CONFIG_FLAG(bParam0, 11, false))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 16))
 	{
-		if (!PED::IS_PED_ON_MOUNT(iParam0) && !PED::IS_PED_IN_ANY_VEHICLE(iParam0, false))
+		if (!PED::IS_PED_ON_MOUNT(bParam0) && !PED::IS_PED_IN_ANY_VEHICLE(bParam0, false))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 32))
 	{
-		if (ENTITY::IS_ENTITY_IN_WATER(iParam0))
+		if (ENTITY::IS_ENTITY_IN_WATER(bParam0))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 64))
 	{
-		if (PED::_0xB655DB7582AEC805(iParam0))
+		if (PED::_0xB655DB7582AEC805(bParam0))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 128))
 	{
-		if (PED::IS_PED_RAGDOLL(iParam0))
+		if (PED::IS_PED_RAGDOLL(bParam0))
 		{
 			return 0;
 		}
 	}
 	if (func_28(iVar0, 256))
 	{
-		if (!PED::_0xA0BC8FAED8CFEB3C(iParam0))
+		if (!PED::_0xA0BC8FAED8CFEB3C(bParam0))
 		{
 			return 0;
 		}
@@ -348,11 +348,11 @@ int func_15()
 	{
 		return 1;
 	}
-	if (!func_14(iLocal_8, 0))
+	if (!func_14(bLocal_8, 0))
 	{
 		return 1;
 	}
-	if (!PED::_0x9C54041BB66BCF9E(iLocal_8, iLocal_3))
+	if (!PED::_0x9C54041BB66BCF9E(bLocal_8, iLocal_3))
 	{
 		return 1;
 	}
@@ -385,12 +385,12 @@ int func_16(int iParam0)
 	return -1;
 }
 
-int func_17(int iParam0, int iParam1)
+int func_17(int iParam0, bool bParam1)
 {
 	switch (iParam0)
 	{
 		case 1157205070:
-			if (PED::IS_PED_MALE(iParam1))
+			if (PED::IS_PED_MALE(bParam1))
 			{
 				return 26;
 			}
@@ -475,9 +475,9 @@ int func_22()
 		Var0.f_1 = { TASK::_0xA8452DD321607029(iLocal_3, 1) };
 		Var0.f_4 = { 0f, 0f, TASK::_0xB93EA7184BAA85C3(iLocal_3, 1) };
 		Var0.f_10 = 1;
-		Var0.f_8 = iLocal_8;
+		Var0.f_8 = bLocal_8;
 		(*Global_1425179)[iLocal_10 /*8*/] = iLocal_6;
-		((*Global_1425179)[iLocal_10 /*8*/])->f_1 = BUILTIN::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(&(Global_1415419->f_19[iLocal_6 /*12*/]), &Var0, 13, 1024);
+		((*Global_1425179)[iLocal_10 /*8*/])->f_1 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(&(Global_1415419->f_19[iLocal_6 /*12*/]), &Var0, 13, 1024);
 		((*Global_1425179)[iLocal_10 /*8*/])->f_2 = 1;
 		SCRIPTS::SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED(&(Global_1415419->f_19[iLocal_6 /*12*/]));
 	}
@@ -525,7 +525,7 @@ bool func_28(int iParam0, int iParam1)
 	return (iParam0 && iParam1) != 0;
 }
 
-var func_29()
+bool func_29()
 {
 	return Global_1898164->f_163;
 }

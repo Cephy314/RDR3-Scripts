@@ -126,7 +126,7 @@ void func_5()
 
 void func_6()
 {
-	if (PED::IS_PED_INJURED(Global_35))
+	if (PED::IS_PED_INJURED(Global_34))
 	{
 		iLocal_13 = 0;
 		return;
@@ -145,12 +145,12 @@ void func_6()
 	switch (iLocal_19)
 	{
 		case 0:
-			iLocal_20 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, -287.0813f, 818.8734f, 119.85f, -11.269f, 0f, -171.0697f, 50f, false, 2);
+			iLocal_20 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), -287.0813f, 818.8734f, 119.85f, -11.269f, 0f, -171.0697f, 50f, false, 2);
 			func_15(1);
 			func_16(1);
 			break;
 		case 1:
-			if (ENTITY::GET_ENTITY_SPEED(Global_35) > 0f)
+			if (ENTITY::GET_ENTITY_SPEED(Global_34) > 0f)
 			{
 				return;
 			}
@@ -163,7 +163,7 @@ void func_6()
 			{
 				return;
 			}
-			iLocal_21 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, vLocal_32, vLocal_35, 40f, false, 2);
+			iLocal_21 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vLocal_32, vLocal_35, 40f, false, 2);
 			CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_21, iLocal_20, 4000, 3, 1);
 			CAM::DESTROY_CAM(iLocal_20, false);
 			func_16(3);
@@ -176,9 +176,9 @@ void func_6()
 			func_16(4);
 			break;
 		case 4:
-			if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
+			if (PED::IS_PED_USING_ANY_SCENARIO(Global_34))
 			{
-				if (!TASK::_0x0C3CB2E600C8977D(Global_35, 0))
+				if (!TASK::_0x0C3CB2E600C8977D(Global_34, 0))
 				{
 					func_17(&iLocal_21, 1);
 				}
@@ -261,9 +261,9 @@ void func_13()
 
 void func_14()
 {
-	if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
+	if (PED::IS_PED_USING_ANY_SCENARIO(Global_34))
 	{
-		if (TASK::_0x0C3CB2E600C8977D(Global_35, 0))
+		if (TASK::_0x0C3CB2E600C8977D(Global_34, 0))
 		{
 			func_13();
 		}
@@ -280,7 +280,7 @@ void func_14()
 	}
 	else
 	{
-		TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
+		TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 		iLocal_13 = 0;
 	}
 }
@@ -372,7 +372,7 @@ void func_21()
 
 void func_22(float fParam0, float fParam1)
 {
-	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(fParam0, 1065353216);
+	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(fParam0, 1f);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(fParam1, 1f);
 }
 

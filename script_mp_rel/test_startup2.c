@@ -1,7 +1,7 @@
 void __EntryFunction__()
 {
-	Global_34 = -1;
-	Global_17142 = { func_1() };
+	Global_33 = -1;
+	Global_17141 = { func_1() };
 }
 
 struct<4> func_1()

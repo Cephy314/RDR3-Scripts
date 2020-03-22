@@ -281,17 +281,17 @@ int func_13(var uParam0)
 	return 0;
 }
 
-int func_14(int iParam0, bool bParam1, int iParam2)
+int func_14(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
 	if (Global_1572887->f_12 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1898164->f_163;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1898164->f_164;
 		}
@@ -307,7 +307,7 @@ int func_14(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -666,7 +666,7 @@ int func_37(int iParam0, int iParam1)
 	return -1;
 }
 
-int func_38(int iParam0, var uParam1, int iParam2, int iParam3)
+int func_38(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 	int iVar1;
@@ -677,7 +677,7 @@ int func_38(int iParam0, var uParam1, int iParam2, int iParam3)
 	int iVar6;
 
 	iVar3 = iParam0;
-	iVar4 = uParam1;
+	iVar4 = iParam1;
 	if (Global_1572887->f_12 == -1)
 	{
 		switch (iParam2)
@@ -910,14 +910,14 @@ int func_45()
 	return 20001;
 }
 
-var func_46(int iParam0, int iParam1, int iParam2)
+int func_46(int iParam0, int iParam1, int iParam2)
 {
 	return ((iParam2 & 31 || BUILTIN::SHIFT_LEFT(iParam0 & 1023, 5)) || BUILTIN::SHIFT_LEFT(iParam1 & 16383, 15));
 }
 
 int func_47(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 {
-	var uVar0;
+	int iVar0;
 	int iVar1;
 
 	if (!func_52(iParam2))
@@ -936,13 +936,13 @@ int func_47(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	{
 		return -1;
 	}
-	uVar0 = func_46(iParam0, iParam1, iParam2);
+	iVar0 = func_46(iParam0, iParam1, iParam2);
 	iVar1 = iParam3;
 	func_53(iVar1, 0);
 	func_54(iVar1, 0);
 	func_55(iVar1, 0);
 	func_56(iVar1, 0);
-	func_57(iVar1, uVar0);
+	func_57(iVar1, iVar0);
 	if (iParam4 != 0)
 	{
 		func_58(iVar1, iParam4);
@@ -1084,14 +1084,14 @@ void func_56(int iParam0, int iParam1)
 	(Global_12105[iParam0 /*7*/])->f_4 = iParam1;
 }
 
-void func_57(int iParam0, var uParam1)
+void func_57(int iParam0, int iParam1)
 {
 	if (Global_1572887->f_12 == -1)
 	{
-		Global_12105[iParam0 /*7*/] = uParam1;
+		Global_12105[iParam0 /*7*/] = iParam1;
 		return;
 	}
-	Global_1058888->f_498[iParam0 /*2*/] = uParam1;
+	Global_1058888->f_498[iParam0 /*2*/] = iParam1;
 }
 
 void func_58(int iParam0, int iParam1)

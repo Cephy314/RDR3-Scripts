@@ -133,7 +133,7 @@ void func_6()
 				iLocal_18 = 7;
 				return;
 			}
-			bLocal_92 = _NAMESPACE48::_0x800DF3FC913355F3(_NAMESPACE48::_0x32A1E3B83D501096(iLocal_85));
+			bLocal_92 = PERSCHAR::_0x800DF3FC913355F3(PERSCHAR::_0x32A1E3B83D501096(iLocal_85));
 			if (!bLocal_92)
 			{
 				TASK::_0xE7BBC4E56B989449(uLocal_16, &uLocal_93, 1);
@@ -152,7 +152,7 @@ void func_6()
 			iLocal_18 = 1;
 			break;
 		case 1:
-			if (!func_12(Global_35, 0))
+			if (!func_12(Global_34, 0))
 			{
 				iLocal_18 = 7;
 				return;
@@ -167,11 +167,11 @@ void func_6()
 				iLocal_18 = 7;
 				return;
 			}
-			if (func_14(Global_35, iLocal_85, 1) > 1225f)
+			if (func_14(Global_34, iLocal_85, 1) > 1225f)
 			{
 				return;
 			}
-			else if (ENTITY::GET_ENTITY_SPEED(Global_35) < 9.5f)
+			else if (ENTITY::GET_ENTITY_SPEED(Global_34) < 9.5f)
 			{
 				iLocal_18 = 2;
 				return;
@@ -278,7 +278,7 @@ void func_6()
 				if (!func_20(iLocal_85, -76381094))
 				{
 					TASK::CLEAR_PED_TASKS(iLocal_85, 1, 0);
-					TASK::_TASK_USE_SCENARIO_POINT(iLocal_85, &(uLocal_93[0]), 0, 0, 1, 0, 0, 0, -1082130432, 0);
+					TASK::_TASK_USE_SCENARIO_POINT(iLocal_85, &(uLocal_93[0]), 0, 0, true, false, 0, false, -1f, false);
 					PED::SET_PED_KEEP_TASK(iLocal_85, true);
 				}
 				if (PED::_0x9C54041BB66BCF9E(iLocal_85, &(uLocal_93[0])))
@@ -429,28 +429,28 @@ int func_13(int iParam0, int iParam1)
 					fLocal_91 = 10f;
 					if (PED::IS_PED_MALE(iLocal_85))
 					{
-						func_25(Local_19[0 /*13*/], 1287994422, 4, 10f);
-						func_25(Local_19[1 /*13*/], 1287994422, 4, 10f);
-						func_25(Local_19[2 /*13*/], 1287994422, 4, 10f);
+						func_25(Local_19[0 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 4, 10f);
+						func_25(Local_19[1 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 4, 10f);
+						func_25(Local_19[2 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 4, 10f);
 					}
 					else
 					{
-						func_25(Local_19[0 /*13*/], 1287994422, 5, 10f);
-						func_25(Local_19[1 /*13*/], 1287994422, 5, 10f);
-						func_25(Local_19[2 /*13*/], 1287994422, 5, 10f);
+						func_25(Local_19[0 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 5, 10f);
+						func_25(Local_19[1 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 5, 10f);
+						func_25(Local_19[2 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 5, 10f);
 					}
 					return 1;
 				case 1:
 					fLocal_91 = 10f;
 					if (PED::IS_PED_MALE(iLocal_85))
 					{
-						func_25(Local_19[0 /*13*/], 1287994422, 1, 10f);
-						func_25(Local_19[1 /*13*/], 1287994422, 1, 10f);
+						func_25(Local_19[0 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 1, 10f);
+						func_25(Local_19[1 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 1, 10f);
 					}
 					else
 					{
-						func_25(Local_19[0 /*13*/], 1287994422, 0, 10f);
-						func_25(Local_19[1 /*13*/], 1287994422, 0, 10f);
+						func_25(Local_19[0 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 0, 10f);
+						func_25(Local_19[1 /*13*/], joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"), 0, 10f);
 					}
 					return 1;
 			}
@@ -460,16 +460,16 @@ int func_13(int iParam0, int iParam1)
 			{
 				case 0:
 					fLocal_91 = 10f;
-					func_25(Local_19[0 /*13*/], -688785322, 3, 10f);
-					func_25(Local_19[1 /*13*/], -688785322, 3, 10f);
-					func_25(Local_19[2 /*13*/], -688785322, 3, 10f);
-					func_25(Local_19[3 /*13*/], -688785322, 3, 10f);
+					func_25(Local_19[0 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 3, 10f);
+					func_25(Local_19[1 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 3, 10f);
+					func_25(Local_19[2 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 3, 10f);
+					func_25(Local_19[3 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 3, 10f);
 					return 1;
 				case 1:
 					fLocal_91 = 10f;
-					func_25(Local_19[0 /*13*/], -688785322, 4, 10f);
-					func_25(Local_19[1 /*13*/], -688785322, 4, 10f);
-					func_25(Local_19[2 /*13*/], -688785322, 4, 10f);
+					func_25(Local_19[0 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 4, 10f);
+					func_25(Local_19[1 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 4, 10f);
+					func_25(Local_19[2 /*13*/], joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"), 4, 10f);
 					return 1;
 			}
 			break;
@@ -496,7 +496,7 @@ float func_14(int iParam0, int iParam1, bool bParam2)
 
 int func_15()
 {
-	if (!func_12(Global_35, 0))
+	if (!func_12(Global_34, 0))
 	{
 		return 1;
 	}
@@ -641,7 +641,7 @@ char* func_30(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case 1287994422:
+		case joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"):
 			if (PED::IS_PED_MALE(iLocal_85))
 			{
 				switch (iParam1)
@@ -679,7 +679,7 @@ char* func_30(int iParam0, int iParam1)
 				}
 			}
 			break;
-		case -688785322:
+		case joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"):
 			switch (iParam1)
 			{
 				case 0:
@@ -704,8 +704,8 @@ char* func_31(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -688785322:
-		case 1287994422:
+		case joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"):
+		case joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"):
 			switch (iParam1)
 			{
 				case 0:
@@ -736,8 +736,8 @@ Vector3 func_32(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -688785322:
-		case 1287994422:
+		case joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"):
+		case joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"):
 			switch (iParam1)
 			{
 				case 0:
@@ -768,8 +768,8 @@ float func_33(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -688785322:
-		case 1287994422:
+		case joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"):
+		case joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"):
 			switch (iParam1)
 			{
 				case 0:

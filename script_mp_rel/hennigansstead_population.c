@@ -102,21 +102,21 @@ void func_4()
 	{
 		return;
 	}
-	iVar0 = _NAMESPACE48::_0x112DDF56300BC6E5(363792844);
-	iVar1 = _NAMESPACE48::_0x112DDF56300BC6E5(886569692);
-	iVar2 = _NAMESPACE48::_0x112DDF56300BC6E5(1292930074);
-	iVar3 = _NAMESPACE48::_0x112DDF56300BC6E5(-677310285);
-	iVar4 = _NAMESPACE48::_0x112DDF56300BC6E5(-310363023);
-	iVar5 = _NAMESPACE48::_0x112DDF56300BC6E5(-66463356);
-	if (((((!_NAMESPACE48::_0x800DF3FC913355F3(iVar0) || !_NAMESPACE48::_0x800DF3FC913355F3(iVar1)) || !_NAMESPACE48::_0x800DF3FC913355F3(iVar2)) || !_NAMESPACE48::_0x800DF3FC913355F3(iVar3)) || !_NAMESPACE48::_0x800DF3FC913355F3(iVar4)) || !_NAMESPACE48::_0x800DF3FC913355F3(iVar5))
+	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(363792844);
+	iVar1 = PERSCHAR::_0x112DDF56300BC6E5(886569692);
+	iVar2 = PERSCHAR::_0x112DDF56300BC6E5(1292930074);
+	iVar3 = PERSCHAR::_0x112DDF56300BC6E5(-677310285);
+	iVar4 = PERSCHAR::_0x112DDF56300BC6E5(-310363023);
+	iVar5 = PERSCHAR::_0x112DDF56300BC6E5(-66463356);
+	if (((((!PERSCHAR::_0x800DF3FC913355F3(iVar0) || !PERSCHAR::_0x800DF3FC913355F3(iVar1)) || !PERSCHAR::_0x800DF3FC913355F3(iVar2)) || !PERSCHAR::_0x800DF3FC913355F3(iVar3)) || !PERSCHAR::_0x800DF3FC913355F3(iVar4)) || !PERSCHAR::_0x800DF3FC913355F3(iVar5))
 	{
 		return;
 	}
-	if (((((_NAMESPACE48::_0xEB98B38CA60742D7(iVar0) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar1)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar2)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar3)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar4)) && _NAMESPACE48::_0xEB98B38CA60742D7(iVar5))
+	if (((((PERSCHAR::_0xEB98B38CA60742D7(iVar0) && PERSCHAR::_0xEB98B38CA60742D7(iVar1)) && PERSCHAR::_0xEB98B38CA60742D7(iVar2)) && PERSCHAR::_0xEB98B38CA60742D7(iVar3)) && PERSCHAR::_0xEB98B38CA60742D7(iVar4)) && PERSCHAR::_0xEB98B38CA60742D7(iVar5))
 	{
 		if (!func_10(1167397384))
 		{
-			if (!STREAMING::_0x73B40D97D7BAAD77(1736386364, Global_36))
+			if (!STREAMING::_0x73B40D97D7BAAD77(1736386364, Global_35))
 			{
 				func_11(1167397384);
 			}
@@ -124,7 +124,7 @@ void func_4()
 	}
 	else if (func_10(1167397384))
 	{
-		if (!STREAMING::_0x73B40D97D7BAAD77(1736386364, Global_36))
+		if (!STREAMING::_0x73B40D97D7BAAD77(1736386364, Global_35))
 		{
 			func_12(1167397384);
 		}
@@ -199,7 +199,7 @@ void func_6()
 
 void func_7(int iParam0)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		return;
 	}
@@ -210,7 +210,7 @@ void func_7(int iParam0)
 
 void func_8(int iParam0, int iParam1, bool bParam2)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		return;
 	}
@@ -225,7 +225,7 @@ void func_8(int iParam0, int iParam1, bool bParam2)
 
 void func_9(int iParam0)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0))
 	{
 		return;
 	}
@@ -245,13 +245,13 @@ bool func_10(int iParam0)
 	iVar2 = (iVar0 % 31);
 	if (func_15(iVar1))
 	{
-		if (Global_1070355->f_17915.f_24 && !func_16(iParam0))
+		if (Global_1070356->f_17915.f_24 && !func_16(iParam0))
 		{
 			return false;
 		}
-		return (MISC::IS_BIT_SET(&(Global_1070355->f_17915[iVar1]), iVar2) || MISC::IS_BIT_SET(&(Global_40.f_106[iVar1]), iVar2));
+		return (MISC::IS_BIT_SET(&(Global_1070356->f_17915[iVar1]), iVar2) || MISC::IS_BIT_SET(&(Global_39.f_106[iVar1]), iVar2));
 	}
-	return MISC::IS_BIT_SET(&(Global_40.f_106[iVar1]), iVar2);
+	return MISC::IS_BIT_SET(&(Global_39.f_106[iVar1]), iVar2);
 }
 
 void func_11(int iParam0)
@@ -263,8 +263,8 @@ void func_11(int iParam0)
 	iVar0 = func_14(iParam0, 1);
 	iVar1 = (iVar0 / 31);
 	iVar2 = (iVar0 % 31);
-	MISC::SET_BIT(Global_40.f_106[iVar1], iVar2);
-	Global_1938569 = 0;
+	MISC::SET_BIT(Global_39.f_106[iVar1], iVar2);
+	Global_1938579 = 0;
 }
 
 void func_12(int iParam0)
@@ -276,8 +276,8 @@ void func_12(int iParam0)
 	iVar0 = func_14(iParam0, 1);
 	iVar1 = (iVar0 / 31);
 	iVar2 = (iVar0 % 31);
-	MISC::CLEAR_BIT(Global_40.f_106[iVar1], iVar2);
-	Global_1938569 = 0;
+	MISC::CLEAR_BIT(Global_39.f_106[iVar1], iVar2);
+	Global_1938579 = 0;
 }
 
 void func_13(int iParam0, int iParam1)
@@ -329,7 +329,7 @@ int func_14(int iParam0, int iParam1)
 			return 163;
 		case -1949204933:
 			return 261;
-		case -1943367752:
+		case joaat("WS_MP_CAMP_DEFEND_RADLEYS_PASTURE"):
 			return 388;
 		case -1943021821:
 			return 336;
@@ -539,7 +539,7 @@ int func_14(int iParam0, int iParam1)
 			return 46;
 		case -1164215952:
 			return 221;
-		case -1161687045:
+		case joaat("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH"):
 			return 392;
 		case -1151084372:
 			return 122;
@@ -569,7 +569,7 @@ int func_14(int iParam0, int iParam1)
 			return 174;
 		case -1053549743:
 			return 56;
-		case -1042021329:
+		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE"):
 			return 383;
 		case -1029225159:
 			return 104;
@@ -605,7 +605,7 @@ int func_14(int iParam0, int iParam1)
 			return 501;
 		case -895073533:
 			return 394;
-		case -889906510:
+		case joaat("WS_MP_CAMP_DEFEND_TALL_TREES"):
 			return 390;
 		case -888632790:
 			return 506;
@@ -689,7 +689,7 @@ int func_14(int iParam0, int iParam1)
 			return 185;
 		case -604603161:
 			return 472;
-		case -591815673:
+		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH"):
 			return 384;
 		case -583127403:
 			return 507;
@@ -753,7 +753,7 @@ int func_14(int iParam0, int iParam1)
 			return 257;
 		case -381925743:
 			return 508;
-		case -371827125:
+		case joaat("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD"):
 			return 389;
 		case -364475655:
 			return 430;
@@ -885,7 +885,7 @@ int func_14(int iParam0, int iParam1)
 			return 74;
 		case 61537448:
 			return 541;
-		case 64896505:
+		case joaat("WS_MP_CAMP_DEFEND_NEW_HANOVER"):
 			return 391;
 		case 74872959:
 			return 331;
@@ -1057,7 +1057,7 @@ int func_14(int iParam0, int iParam1)
 			return 250;
 		case 730069127:
 			return 475;
-		case 747514327:
+		case joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS"):
 			return 382;
 		case 753127042:
 			return 48;
@@ -1085,7 +1085,7 @@ int func_14(int iParam0, int iParam1)
 			return 537;
 		case 868326136:
 			return 270;
-		case 883901517:
+		case joaat("WS_MP_CAMP_DEFEND_CHOLLA_SPRINGS"):
 			return 385;
 		case 885203519:
 			return 315;
@@ -1179,7 +1179,7 @@ int func_14(int iParam0, int iParam1)
 			return 449;
 		case 1280406542:
 			return 442;
-		case 1287917122:
+		case joaat("WS_MP_CAMP_DEFEND_LITTLE_CREEK"):
 			return 387;
 		case 1302228510:
 			return 349;
@@ -1253,7 +1253,7 @@ int func_14(int iParam0, int iParam1)
 			return 325;
 		case 1557082963:
 			return 161;
-		case 1561093093:
+		case joaat("WS_MP_CAMP_DEFEND_RIO_BRAVO"):
 			return 386;
 		case 1582370975:
 			return 332;

@@ -67,28 +67,28 @@ int func_1(int iParam0, var uParam1, bool bParam2, var uParam3)
 		case 3:
 			if (ANIMSCENE::_0x477122B8D05E7968(*uParam1, 1, 0) && ANIMSCENE::_0x95531A4A20CCE7BC(*uParam1, 0))
 			{
-				if (PED::IS_PED_MALE(Global_35))
+				if (PED::IS_PED_MALE(Global_34))
 				{
-					ANIMSCENE::SET_ANIM_SCENE_ENTITY(*uParam1, "MP_Male", Global_35, 0);
+					ANIMSCENE::SET_ANIM_SCENE_ENTITY(*uParam1, "MP_Male", Global_34, 0);
 				}
 				else
 				{
-					ANIMSCENE::SET_ANIM_SCENE_ENTITY(*uParam1, "MP_Female", Global_35, 0);
+					ANIMSCENE::SET_ANIM_SCENE_ENTITY(*uParam1, "MP_Female", Global_34, 0);
 				}
 				ANIMSCENE::START_ANIM_SCENE(*uParam1);
 				func_5(iParam0, 5);
 			}
 			break;
 		case 5:
-			if ((!ANIMSCENE::_0xCBFC7725DE6CE2E0(*uParam1, 0) || PED::IS_PED_FALLING(Global_35)) || ENTITY::IS_ENTITY_IN_WATER(Global_35))
+			if ((!ANIMSCENE::_0xCBFC7725DE6CE2E0(*uParam1, 0) || PED::IS_PED_FALLING(Global_34)) || ENTITY::IS_ENTITY_IN_WATER(Global_34))
 			{
-				if (PED::IS_PED_MALE(Global_35))
+				if (PED::IS_PED_MALE(Global_34))
 				{
-					ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(*uParam1, "MP_Male", Global_35);
+					ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(*uParam1, "MP_Male", Global_34);
 				}
 				else
 				{
-					ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(*uParam1, "MP_Female", Global_35);
+					ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(*uParam1, "MP_Female", Global_34);
 				}
 				func_5(iParam0, 0);
 				return 1;

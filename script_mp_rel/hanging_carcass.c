@@ -25,8 +25,8 @@ void __EntryFunction__()
 		SCRIPTS::_0xE7282390542F570D(ScriptParam_0);
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
-	Var0.f_40 = -950200242;
-	Var0.f_41 = -227367034;
+	Var0.f_40 = joaat("p_carcasshanglrg02x");
+	Var0.f_41 = joaat("p_carcasshangmed01b");
 	Var0 = SCRIPTS::GET_ID_OF_THIS_THREAD();
 	Var0.f_1 = { TASK::_0xA8452DD321607029(ScriptParam_0.f_1, 1) };
 	Var0.f_4 = TASK::_0xB93EA7184BAA85C3(ScriptParam_0.f_1, 1);
@@ -357,7 +357,7 @@ int func_10(var uParam0)
 			}
 			uParam0->f_55 = 3;
 			break;
-		case 1148808695:
+		case joaat("p_carcasshangsml01x"):
 			break;
 	}
 	return 1;
@@ -471,7 +471,7 @@ int func_15(int iParam0, var uParam1)
 		case 1:
 			return (uParam1->f_39 == joaat("p_carcasshangmed01x") || uParam1->f_39 == joaat("p_carcasshangmed01a"));
 		case 2:
-			return uParam1->f_39 == 1148808695;
+			return uParam1->f_39 == joaat("p_carcasshangsml01x");
 		case 3:
 			return uParam1->f_39 == joaat("p_carcasshangfish01a");
 		default:
@@ -484,7 +484,7 @@ int func_16(var uParam0)
 {
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(&(uParam0->f_14)))
 	{
-		TASK::TASK_PLAY_ANIM(uParam0->f_42, &(uParam0->f_14), &(uParam0->f_22), 1000f, -1000f, -1, 131072, 0, 0, 0, 0, 0, 0);
+		TASK::TASK_PLAY_ANIM(uParam0->f_42, &(uParam0->f_14), &(uParam0->f_22), 1000f, -1000f, -1, 131072, 0f, false, 0, false, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_42, true);
 	}
 	else
@@ -586,27 +586,27 @@ int func_20(var uParam0)
 			}
 		}
 	}
-	if (TASK::_0x841475AC96E794D1(uParam0->f_49) && PED::_0x9C54041BB66BCF9E(Global_35, uParam0->f_49))
+	if (TASK::_0x841475AC96E794D1(uParam0->f_49) && PED::_0x9C54041BB66BCF9E(Global_34, uParam0->f_49))
 	{
 		if (!func_7(uParam0, 8))
 		{
-			TASK::TASK_LOOK_AT_COORD(Global_35, func_24(uParam0), -1, 0, 21, 0);
+			TASK::TASK_LOOK_AT_COORD(Global_34, func_24(uParam0), -1, 0, 21, 0);
 			func_22(uParam0, 8);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1900650591))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1900650591))
 		{
-			TASK::TASK_LOOK_AT_ENTITY(Global_35, uParam0->f_42, 5000, 0, 21, 0);
+			TASK::TASK_LOOK_AT_ENTITY(Global_34, uParam0->f_42, 5000, 0, 21, 0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1244474073))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 1244474073))
 		{
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_43, false);
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_42, true);
-			uParam0->f_44 = OBJECT::CREATE_OBJECT(-950200242, uParam0->f_1, false, true, false, false, false);
+			uParam0->f_44 = OBJECT::CREATE_OBJECT(joaat("p_carcasshanglrg02x"), uParam0->f_1, false, true, false, false, false);
 			ENTITY::SET_ENTITY_COLLISION(uParam0->f_44, false, false);
-			ENTITY::ATTACH_ENTITY_TO_ENTITY_PHYSICALLY(uParam0->f_44, Global_35, 4, PED::GET_PED_BONE_INDEX(Global_35, 7966), 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, -1f, 1, 1, 0, 0, 0, 1, 1065353216, 1065353216);
+			ENTITY::ATTACH_ENTITY_TO_ENTITY_PHYSICALLY(uParam0->f_44, Global_34, 4, PED::GET_PED_BONE_INDEX(Global_34, 7966), 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, -1f, 1, 1, 0, 0, 0, 1, 1065353216, 1065353216);
 			func_22(uParam0, 1);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -2118990041))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -2118990041))
 		{
 			if (func_15(1, uParam0))
 			{
@@ -630,7 +630,7 @@ int func_20(var uParam0)
 			func_22(uParam0, 32);
 			func_35(uParam0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 519570738))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 519570738))
 		{
 			ENTITY::DETACH_ENTITY(uParam0->f_44, true, true);
 			ENTITY::SET_ENTITY_COLLISION(uParam0->f_44, true, false);
@@ -640,7 +640,7 @@ int func_20(var uParam0)
 	}
 	else if (func_7(uParam0, 8) && !func_7(uParam0, 16))
 	{
-		TASK::TASK_CLEAR_LOOK_AT(Global_35);
+		TASK::TASK_CLEAR_LOOK_AT(Global_34);
 		func_2(uParam0, 1);
 		func_22(uParam0, 16);
 		func_22(uParam0, 256);
@@ -673,9 +673,9 @@ int func_21(var uParam0)
 
 	if (!func_28(&(uParam0->f_52)))
 	{
-		if (PED::_0x758F081DB204DDDE(Global_35))
+		if (PED::_0x758F081DB204DDDE(Global_34))
 		{
-			iVar0 = PED::_0x14169FA823679E41(Global_35);
+			iVar0 = PED::_0x14169FA823679E41(Global_34);
 			if ((ENTITY::DOES_ENTITY_EXIST(iVar0) && ENTITY::IS_ENTITY_A_PED(iVar0)) && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0) == uParam0->f_42)
 			{
 				func_29(&(uParam0->f_52));
@@ -690,7 +690,7 @@ int func_21(var uParam0)
 			if (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar1) == 1376140891)
 			{
 				SCRIPTS::GET_EVENT_DATA(0, iVar1, &vVar2, 3);
-				if (vVar2.x == Global_35 && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(vVar2.y) == uParam0->f_42)
+				if (vVar2.x == Global_34 && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(vVar2.y) == uParam0->f_42)
 				{
 					if (vVar2.z)
 					{
@@ -771,7 +771,7 @@ void func_26(int iParam0, bool bParam1, bool bParam2)
 		{
 			PED::SET_PED_CONFIG_FLAG(iParam0, 243, true);
 		}
-		if (Global_35 == iParam0)
+		if (Global_34 == iParam0)
 		{
 		}
 		ENTITY::_SET_ENTITY_HEALTH(iParam0, 0, 0);
@@ -901,12 +901,12 @@ void func_34(var uParam0)
 	switch (uParam0->f_39)
 	{
 		case joaat("p_carcasshanglrg01x"):
-			iVar0 = 1669298768;
+			iVar0 = joaat("WORLD_PLAYER_CARCASS_PEG_2m15");
 			vVar1 = { 0.155f, -0.9f, 0f };
 			break;
 		case joaat("p_carcasshangmed01a"):
 		case joaat("p_carcasshangfish01a"):
-			iVar0 = -1091256437;
+			iVar0 = joaat("WORLD_PLAYER_CARCASS_CUT_1m80");
 			vVar1 = { -0.1f, -0.61f, 0f };
 			break;
 	}
@@ -920,36 +920,36 @@ void func_35(var uParam0)
 {
 	int iVar0;
 
-	if (Global_1957511->f_31 > 9 || Global_1957511->f_31 < 0)
+	if (Global_1957521->f_31 > 9 || Global_1957521->f_31 < 0)
 	{
-		Global_1957511->f_31 = 0;
+		Global_1957521->f_31 = 0;
 	}
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (func_8(*((*Global_1957511)[iVar0 /*3*/]), uParam0->f_1, 0.1f, 0))
+		if (func_8(*((*Global_1957521)[iVar0 /*3*/]), uParam0->f_1, 0.1f, 0))
 		{
 			return;
 		}
 		iVar0++;
 	}
-	*((*Global_1957511)[Global_1957511->f_31 /*3*/]) = { uParam0->f_1 };
-	Global_1957511->f_31++;
+	*((*Global_1957521)[Global_1957521->f_31 /*3*/]) = { uParam0->f_1 };
+	Global_1957521->f_31++;
 }
 
 int func_36(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2025841068:
+		case joaat("bayounwa"):
 			return 0;
-		case 822658194:
+		case joaat("bigvalley"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case 476637847:
+		case joaat("greatplains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -957,17 +957,17 @@ int func_36(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case 131399519:
+		case joaat("heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case -864275692:
+		case joaat("scarlettmeadows"):
 			return 11;
-		case 1684533001:
+		case joaat("talltrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case -2145992129:
+		case joaat("riobravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -993,7 +993,7 @@ void func_37(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	{
 		if (bParam5)
 		{
-			PED::_0x283978A15512B2FE(iParam0, 1);
+			PED::_SET_RANDOM_OUTFIT_VARIATION(iParam0, true);
 			bVar0 = true;
 		}
 	}
@@ -1025,7 +1025,7 @@ void func_37(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
+		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -1089,7 +1089,7 @@ int func_41(int iParam0, int iParam1)
 				return 6;
 			}
 			break;
-		case 1148808695:
+		case joaat("p_carcasshangsml01x"):
 			if (iParam1 == 2)
 			{
 				return 6;
@@ -1116,7 +1116,7 @@ void func_42(int iParam0, int iParam1, bool bParam2)
 	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
+		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -1132,7 +1132,7 @@ void func_43(int iParam0, bool bParam1)
 	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, 0, 1, 1, 1, false);
+		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 	}
 }
 

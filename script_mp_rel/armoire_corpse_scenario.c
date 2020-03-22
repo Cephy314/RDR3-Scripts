@@ -112,7 +112,7 @@ void func_5()
 
 void func_6()
 {
-	if (PED::IS_PED_INJURED(Global_35))
+	if (PED::IS_PED_INJURED(Global_34))
 	{
 		iLocal_13 = 0;
 		return;
@@ -128,9 +128,9 @@ void func_6()
 		case 2:
 			break;
 	}
-	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_35))
+	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_34))
 	{
-		TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
+		TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 		iLocal_13 = 0;
 	}
 }

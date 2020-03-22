@@ -4,7 +4,7 @@
 	var uLocal_2 = 0;
 	var uLocal_3 = 0;
 	char* sLocal_4 = NULL;
-	int iLocal_5 = 0;
+	bool bLocal_5 = false;
 #endregion
 
 void __EntryFunction__()
@@ -19,11 +19,11 @@ void __EntryFunction__()
 		switch (iLocal_0)
 		{
 			case 0:
-				HUD::_0xF66090013DE648D5(sLocal_4);
+				HUD::_TEXT_DATABASE_REQUEST(sLocal_4);
 				iLocal_0 = 1;
 				break;
 			case 1:
-				if (HUD::_0xD0976CC34002DB57(sLocal_4))
+				if (HUD::_TEXT_DATABASE_HAS_LOADED(sLocal_4))
 				{
 					func_2(&uLocal_1);
 					iLocal_0 = 2;
@@ -35,10 +35,10 @@ void __EntryFunction__()
 					func_1();
 					iLocal_0 = 3;
 				}
-				else if (!iLocal_5)
+				else if (!bLocal_5)
 				{
 					func_4();
-					iLocal_5 = 1;
+					bLocal_5 = true;
 				}
 				break;
 		}
@@ -49,7 +49,7 @@ void __EntryFunction__()
 void func_1()
 {
 	func_5(1);
-	HUD::_0xAA03F130A637D923(sLocal_4);
+	HUD::_TEXT_DATABASE_DELETE(sLocal_4);
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -159,7 +159,7 @@ bool func_13(var uParam0, int iParam1)
 	return (uParam0 && iParam1) != 0;
 }
 
-var func_14(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, int iParam5)
+var func_14(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -167,10 +167,10 @@ var func_14(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, int
 
 	Var0 = -2;
 	Var0 = iParam1;
-	Var0.f_1 = uParam2;
-	Var0.f_2 = uParam3;
+	Var0.f_1 = iParam2;
+	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
-	Var13.f_1 = uParam0;
+	Var13.f_1 = sParam0;
 	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, iParam5);
 	return uVar15;
 }

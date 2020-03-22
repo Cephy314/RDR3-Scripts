@@ -432,12 +432,12 @@ void func_13(var uParam0)
 
 bool func_14(int iParam0)
 {
-	return (Global_1131373->f_5808.f_321 && iParam0) != 0;
+	return (Global_1132968->f_5808.f_321 && iParam0) != 0;
 }
 
 void func_15(int iParam0)
 {
-	Global_1131373->f_5808.f_321 = (Global_1131373->f_5808.f_321 || iParam0);
+	Global_1132968->f_5808.f_321 = (Global_1132968->f_5808.f_321 || iParam0);
 }
 
 struct<8> func_16(int iParam0, bool bParam1)
@@ -469,14 +469,14 @@ int func_17(int iParam0)
 	vector3 vVar3;
 	int iVar6;
 
-	vVar0 = { Global_1131373->f_5808.f_477, Global_1131373->f_5808.f_478, Global_1131373->f_5808.f_479 };
+	vVar0 = { Global_1132968->f_5808.f_477, Global_1132968->f_5808.f_478, Global_1132968->f_5808.f_479 };
 	vVar3 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true, false) + vVar0 };
 	iVar6 = PED::CLONE_PED(iParam0, 0f, false, true);
 	ENTITY::SET_ENTITY_COORDS(iVar6, vVar3, true, false, true, true);
 	ENTITY::FREEZE_ENTITY_POSITION(iVar6, true);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar6, false);
 	ENTITY::SET_ENTITY_VISIBLE(iVar6, false);
-	TASK::CLEAR_PED_TASKS_IMMEDIATELY(iVar6, 0, 1);
+	TASK::CLEAR_PED_TASKS_IMMEDIATELY(iVar6, false, true);
 	return iVar6;
 }
 
@@ -490,7 +490,7 @@ int func_18(int iParam0, int iParam1)
 	{
 		return -1;
 	}
-	return &((Global_1131373->f_5808[iParam0 /*10*/])->f_5[iParam1]);
+	return &((Global_1132968->f_5808[iParam0 /*10*/])->f_5[iParam1]);
 }
 
 void func_19(int iParam0, int iParam1)
@@ -551,7 +551,7 @@ void func_20(int iParam0, int iParam1, int iParam2)
 	{
 		return;
 	}
-	(Global_1131373->f_5808[iParam0 /*10*/])->f_5[iParam1] = iParam2;
+	(Global_1132968->f_5808[iParam0 /*10*/])->f_5[iParam1] = iParam2;
 }
 
 int func_21(int iParam0)
@@ -568,7 +568,7 @@ int func_21(int iParam0)
 
 void func_22(int iParam0)
 {
-	Global_1131373->f_5808.f_321 = (Global_1131373->f_5808.f_321 - (Global_1131373->f_5808.f_321 && iParam0));
+	Global_1132968->f_5808.f_321 = (Global_1132968->f_5808.f_321 - (Global_1132968->f_5808.f_321 && iParam0));
 }
 
 void func_23(int iParam0, int iParam1, int iParam2)
@@ -588,7 +588,7 @@ void func_23(int iParam0, int iParam1, int iParam2)
 	{
 		return;
 	}
-	(*Global_1131373->f_5808[iParam0 /*10*/])[iParam1] = iParam2;
+	(*Global_1132968->f_5808[iParam0 /*10*/])[iParam1] = iParam2;
 }
 
 int func_24(int iParam0, int iParam1)
@@ -608,6 +608,6 @@ int func_24(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	return Global_1131373->f_5808[iParam0 /*10*/][iParam1];
+	return Global_1132968->f_5808[iParam0 /*10*/][iParam1];
 }
 

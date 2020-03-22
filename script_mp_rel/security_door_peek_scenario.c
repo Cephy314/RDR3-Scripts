@@ -152,7 +152,7 @@ void func_6()
 {
 	int iVar0;
 
-	if (PED::IS_PED_INJURED(Global_35))
+	if (PED::IS_PED_INJURED(Global_34))
 	{
 		iLocal_13 = 0;
 		return;
@@ -175,7 +175,7 @@ void func_6()
 			*(vLocal_62[0 /*3*/]) = { func_16() };
 			*(vLocal_62[1 /*3*/]) = { func_17() };
 			*(vLocal_62[2 /*3*/]) = { func_18() };
-			func_19(Global_35, &vLocal_62, &iVar0);
+			func_19(Global_34, &vLocal_62, &iVar0);
 			iLocal_72 = func_20(iVar0);
 			func_15(1);
 			break;
@@ -209,10 +209,10 @@ void func_6()
 		case 3:
 			break;
 	}
-	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_35))
+	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_34))
 	{
 		MAP::UNLOCK_MINIMAP_ANGLE();
-		TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
+		TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 		OBJECT::_0x276AAF0F1C7F2494(iLocal_72, 0);
 		iLocal_13 = 0;
 	}
@@ -280,7 +280,7 @@ void func_13(int iParam0)
 void func_14()
 {
 	func_31(&uLocal_23);
-	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1065353216);
+	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1f);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 	OBJECT::_0x276AAF0F1C7F2494(iLocal_72, 0);
 	func_25(3);

@@ -47,12 +47,12 @@ void __EntryFunction__()
 		if (Local_13.f_13 >= 30)
 		{
 			Local_13.f_13 = 0;
-			if (Global_1939168->f_6)
+			if (Global_1939178->f_6)
 			{
 				func_3(&Local_13, 5);
 			}
 		}
-		if (func_4(&Global_1939168, 4194304))
+		if (func_4(&Global_1939178, 4194304))
 		{
 			func_3(&Local_13, 5);
 		}
@@ -70,7 +70,7 @@ void __EntryFunction__()
 				}
 				if (TASK::_0x841475AC96E794D1(Local_13.f_2))
 				{
-					if (func_9(Global_36) && func_10(&Local_13))
+					if (func_9(Global_35) && func_10(&Local_13))
 					{
 						func_3(&Local_13, 1);
 					}
@@ -178,8 +178,8 @@ bool func_6(var uParam0)
 
 void func_7(var uParam0)
 {
-	uParam0->f_3[0] = 1477581656;
-	uParam0->f_3[1] = 1477581656;
+	uParam0->f_3[0] = joaat("p_cs_billsingle01bx");
+	uParam0->f_3[1] = joaat("p_cs_billsingle01bx");
 	if (!ANIMSCENE::_0x25557E324489393C(uParam0->f_11))
 	{
 		uParam0->f_11 = ANIMSCENE::_CREATE_ANIM_SCENE("script@proc@shoprobberies@GLOBAL@EVENT_OPEN_REGISTER@BASE", 2, 0, false, true);

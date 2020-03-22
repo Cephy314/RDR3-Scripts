@@ -27,10 +27,10 @@ void __EntryFunction__()
 	{
 		if (func_3())
 		{
-			vVar0 = { func_4(ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Global_35, 0f, 5f, 0f) - ENTITY::GET_ENTITY_COORDS(Global_35, true, false)) };
+			vVar0 = { func_4(ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Global_34, 0f, 5f, 0f) - ENTITY::GET_ENTITY_COORDS(Global_34, true, false)) };
 			vVar3 = { func_5() };
-			vVar3.f_2 = Global_36.f_2;
-			vVar6 = { func_4(vVar3 - Global_36) };
+			vVar3.f_2 = Global_35.f_2;
+			vVar6 = { func_4(vVar3 - Global_35) };
 			fVar9 = MISC::ACOS(func_6(vVar0, vVar6));
 			fVar10 = (180f - fVar9);
 			fVar11 = (fVar10 / 180f);
@@ -41,7 +41,7 @@ void __EntryFunction__()
 			iVar15 = 255;
 			iVar16 = 30;
 			iVar17 = 0;
-			GRAPHICS::_0x6EC2A67962296F49(iLocal_0, BUILTIN::FLOOR(func_8(BUILTIN::TO_FLOAT(iVar12), BUILTIN::TO_FLOAT(iVar15), fVar11)), BUILTIN::FLOOR(func_8(BUILTIN::TO_FLOAT(iVar13), BUILTIN::TO_FLOAT(iVar16), fVar11)), BUILTIN::FLOOR(func_8(BUILTIN::TO_FLOAT(iVar14), BUILTIN::TO_FLOAT(iVar17), fVar11)));
+			GRAPHICS::_SET_LIGHTS_COLOR_FOR_ENTITY(iLocal_0, BUILTIN::FLOOR(func_8(BUILTIN::TO_FLOAT(iVar12), BUILTIN::TO_FLOAT(iVar15), fVar11)), BUILTIN::FLOOR(func_8(BUILTIN::TO_FLOAT(iVar13), BUILTIN::TO_FLOAT(iVar16), fVar11)), BUILTIN::FLOOR(func_8(BUILTIN::TO_FLOAT(iVar14), BUILTIN::TO_FLOAT(iVar17), fVar11)));
 		}
 		BUILTIN::WAIT(0);
 	}
@@ -56,7 +56,7 @@ void func_1()
 
 int func_2()
 {
-	if (ENTITY::IS_ENTITY_DEAD(Global_35))
+	if (ENTITY::IS_ENTITY_DEAD(Global_34))
 	{
 		return 1;
 	}
@@ -64,7 +64,7 @@ int func_2()
 	{
 		return 1;
 	}
-	if (Global_1939168->f_38 != joaat("weapon_melee_lantern_electric"))
+	if (Global_1939178->f_38 != joaat("WEAPON_MELEE_LANTERN_ELECTRIC"))
 	{
 		return 1;
 	}
@@ -81,11 +81,11 @@ int func_3()
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_0))
 	{
-		if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar0, true, 0, false))
+		if (WEAPON::GET_CURRENT_PED_WEAPON(Global_34, &iVar0, true, 0, false))
 		{
-			if (iVar0 == joaat("weapon_melee_lantern_electric"))
+			if (iVar0 == joaat("WEAPON_MELEE_LANTERN_ELECTRIC"))
 			{
-				iLocal_0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(WEAPON::GET_CURRENT_PED_WEAPON_ENTITY_INDEX(Global_35, 0));
+				iLocal_0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(WEAPON::GET_CURRENT_PED_WEAPON_ENTITY_INDEX(Global_34, 0));
 			}
 		}
 	}

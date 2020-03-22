@@ -107,7 +107,7 @@ int func_3(var uParam0, int iParam1)
 	vVar0 = { func_10(uParam0) };
 	if (!TASK::_0x841475AC96E794D1(&(iParam1->f_9[0])))
 	{
-		iParam1->f_9[0] = TASK::CREATE_SCENARIO_POINT(-1843735114, vVar0 - Vector(0f, 0.3f, 0f), 0f, 0f, 0f, 0);
+		iParam1->f_9[0] = TASK::CREATE_SCENARIO_POINT(-1843735114, vVar0 - Vector(0f, 0.3f, 0f), 0f, 0f, 0, 0);
 	}
 	STREAMING::REQUEST_MODEL(func_11(), false);
 	iParam1->f_4 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
@@ -145,7 +145,7 @@ int func_6(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (iParam1->f_1 != -1 && !func_15(iParam1, 1065353216))
+	if (iParam1->f_1 != -1 && !func_15(iParam1, 1065353216 /* Float: 1f */))
 	{
 		return 0;
 	}
@@ -165,7 +165,7 @@ int func_7(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (func_16(149706141) && !iParam1->f_5)
+	if (func_16(joaat("UPGRADE_FSH_BAIT_CRAYFISH")) && !iParam1->f_5)
 	{
 		iParam1->f_3++;
 		iParam1->f_5 = 1;
@@ -173,15 +173,15 @@ int func_7(var uParam0, int iParam1)
 	if (iParam1->f_5 && func_17())
 	{
 		iParam1->f_5 = 0;
-		func_19(1798104140, joaat("a_c_crawfish_01"), func_18(PLAYER::PLAYER_ID()), 1, 1);
-		Var0 = { func_20(-717883113, 1798104140) };
+		func_19(joaat("AT_CRAYFISH"), joaat("a_c_crawfish_01"), func_18(PLAYER::PLAYER_ID()), 1, 1);
+		Var0 = { func_20(joaat("collected"), joaat("AT_CRAYFISH")) };
 		STATS::_0x6A0184E904CDF25E(&Var0, 1);
 		return 1;
 	}
 	return 0;
 }
 
-void func_8(var uParam0)
+void func_8(int iParam0)
 {
 	int iVar0;
 	int iVar1;
@@ -191,25 +191,25 @@ void func_8(var uParam0)
 	while (iVar0 <= (1 - 1))
 	{
 		iVar1 = iVar0;
-		if (TASK::_0x841475AC96E794D1(&(uParam0->f_9[iVar1])))
+		if (TASK::_0x841475AC96E794D1(&(iParam0->f_9[iVar1])))
 		{
-			TASK::_0x81948DFE4F5A0283(&(uParam0->f_9[iVar1]));
+			TASK::_0x81948DFE4F5A0283(&(iParam0->f_9[iVar1]));
 		}
 		iVar0++;
 	}
 }
 
-int func_9(int iParam0, bool bParam1, int iParam2)
+int func_9(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
 	if (Global_1572887->f_12 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1898164->f_163;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1898164->f_164;
 		}
@@ -225,7 +225,7 @@ int func_9(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -342,7 +342,7 @@ Vector3 func_13(var uParam0)
 
 	vVar0 = { func_10(uParam0) };
 	fVar3 = 0f;
-	if (MISC::GET_GROUND_Z_FOR_3D_COORD(vVar0, &fVar3, 1))
+	if (MISC::GET_GROUND_Z_FOR_3D_COORD(vVar0, &fVar3, true))
 	{
 		vVar0.f_2 = (fVar3 + 0.1f);
 		return vVar0;
@@ -359,17 +359,17 @@ int func_14(vector3 vParam0)
 	return 0;
 }
 
-int func_15(var uParam0, int iParam1)
+int func_15(int iParam0, int iParam1)
 {
-	if (uParam0->f_8 == 0)
+	if (iParam0->f_8 == 0)
 	{
-		uParam0->f_8 = ENTITY::_0x6F3068258A499E52(func_27(uParam0->f_1), func_26(uParam0->f_1), 11);
+		iParam0->f_8 = ENTITY::_0x6F3068258A499E52(func_27(iParam0->f_1), func_26(iParam0->f_1), 11);
 	}
-	else if (ENTITY::_0x1FF441D7954F8709(uParam0->f_8))
+	else if (ENTITY::_0x1FF441D7954F8709(iParam0->f_8))
 	{
-		uParam0->f_7 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(ENTITY::_0x4735E2A4BB83D9DA(uParam0->f_8));
+		iParam0->f_7 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(ENTITY::_0x4735E2A4BB83D9DA(iParam0->f_8));
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_7))
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0->f_7))
 	{
 		return 0;
 	}
@@ -416,19 +416,19 @@ Vector3 func_18(int iParam0)
 	return ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(iParam0), false, false);
 }
 
-void func_19(int iParam0, int iParam1, vector3 vParam2, int iParam5, int iParam6)
+void func_19(int iParam0, int iParam1, vector3 vParam2, bool bParam5, int iParam6)
 {
-	var uVar0;
+	int iVar0;
 	int iVar1;
 	int iVar2;
 
-	uVar0 = COMPENDIUM::COMPENDIUM_GET_MAP_DISCOVERABLE_FROM_STAT_ITEM(iParam0, vParam2);
-	iVar1 = uVar0;
+	iVar0 = COMPENDIUM::COMPENDIUM_GET_MAP_DISCOVERABLE_FROM_STAT_ITEM(iParam0, vParam2);
+	iVar1 = iVar0;
 	if (iVar1 != 0 && !MAP::_0x3F81EA4275D39D6F(iVar1))
 	{
 		MAP::_0xD8C7162AB2E2AF45(iVar1);
 	}
-	if (iParam5 && -153407852 != iParam0)
+	if (bParam5 && joaat("AT_HORSE") != iParam0)
 	{
 		COMPENDIUM::COMPENDIUM_ANIMAL_OBSERVED_BY_STAT_NAME(iParam0, iParam6);
 	}
@@ -571,39 +571,39 @@ int func_27(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1007485139;
+			return joaat("dis_bay_catfishhole01_decal");
 		case 1:
-			return -1588164913;
+			return joaat("dis_bay_catfishhole02_decal");
 		case 2:
-			return -1350423696;
+			return joaat("dis_bay_catfishhole03_decal");
 		case 3:
-			return 1711671480;
+			return joaat("dis_bay_catfishhole04_decal");
 		case 4:
-			return -949094404;
+			return joaat("dis_bay_catfishhole05_decal");
 		case 5:
-			return 32115079;
+			return joaat("dis_bay_catfishhole06_decal");
 		case 6:
-			return -735160262;
+			return joaat("dis_bay_catfishhole07_decal");
 		case 7:
-			return 300773746;
+			return joaat("dis_bay_catfishhole08_decal");
 		case 8:
-			return 93567835;
+			return joaat("dis_bay_catfishhole09_decal");
 		case 9:
-			return 2126789874;
+			return joaat("dis_bay_catfishhole10_decal");
 		case 10:
-			return 1334348844;
+			return joaat("dis_bay_catfishhole11_decal");
 		case 11:
-			return -1301023018;
+			return joaat("dis_bay_catfishhole12_decal");
 		case 12:
-			return 1098115085;
+			return joaat("dis_bay_catfishhole13_decal");
 		case 13:
-			return 143309779;
+			return joaat("dis_bay_catfishhole14_decal");
 		case 14:
-			return 596329535;
+			return joaat("dis_bay_catfishhole15_decal");
 		case 15:
-			return -1265664648;
+			return joaat("dis_bay_catfishhole16_decal");
 		case 16:
-			return -1918684699;
+			return joaat("dis_bay_catfishhole17_decal");
 		default:
 			break;
 	}
@@ -614,1833 +614,1833 @@ int func_28(int iParam0, int iParam1, int iParam2)
 {
 	switch (iParam0)
 	{
-		case -43987615:
+		case -43987615: /* GXTEntry: "Armadillo" */
 			if (iParam2 == 1)
 			{
-				return 1492383232;
+				return joaat("journal_animal_armadillo_ar");
 			}
 			else
 			{
-				return 1650496317;
+				return joaat("journal_animal_armadillo_jn");
 			}
 			break;
-		case 597440621:
+		case 597440621: /* GXTEntry: "Badger" */
 			if (iParam2 == 1)
 			{
-				return -1286175387;
+				return joaat("journal_animal_badger_ar");
 			}
 			else
 			{
-				return 1230228733;
+				return joaat("journal_animal_badger_jn");
 			}
 			break;
-		case 783089120:
+		case 783089120: /* GXTEntry: "Bat" */
 			if (iParam2 == 1)
 			{
-				return 1809539044;
+				return joaat("journal_animal_bat_ar");
 			}
 			else
 			{
-				return 580480085;
+				return joaat("journal_animal_bat_jn");
 			}
 			break;
-		case -577478188:
+		case joaat("AT_BEAR_BLACK"):
 			if (iParam2 == 1)
 			{
-				return -942035227;
+				return joaat("journal_animal_black_bear_ar");
 			}
 			else
 			{
-				return -293044453;
+				return joaat("journal_animal_black_bear_jn");
 			}
 			break;
-		case 1596431305:
+		case joaat("AT_BEAR_GRIZZLY"):
 			if (iParam2 == 1)
 			{
-				return 2042596528;
+				return joaat("journal_animal_grizzly_bear_ar");
 			}
 			else
 			{
-				return 1794983091;
+				return joaat("journal_animal_grizzly_bear_jn");
 			}
 			break;
-		case 1781233743:
+		case joaat("AT_BEAR_LEGENDARY"):
 			if (iParam2 == 1)
 			{
-				return 1572569346;
+				return joaat("journal_animal_legendary_bear_ar");
 			}
 			else
 			{
-				return 693604975;
+				return joaat("journal_animal_legendary_bear_jn");
 			}
 			break;
-		case 1297902195:
+		case 1297902195: /* GXTEntry: "Beaver" */
 			if (iParam2 == 1)
 			{
-				return 131817274;
+				return joaat("journal_animal_beaver_ar");
 			}
 			else
 			{
-				return 672937471;
+				return joaat("journal_animal_beaver_jn");
 			}
 			break;
 		case 636730081:
 			if (iParam2 == 1)
 			{
-				return 1242287574;
+				return joaat("journal_animal_legendary_beaver_ar");
 			}
 			else
 			{
-				return 134380709;
+				return joaat("journal_animal_legendary_beaver_jn");
 			}
 			break;
-		case 1516275256:
+		case 1516275256: /* GXTEntry: "Blue Jay" */
 			if (iParam2 == 1)
 			{
-				return 307977329;
+				return joaat("journal_animal_blue_jay_ar");
 			}
 			else
 			{
-				return 1537431448;
+				return joaat("journal_animal_blue_jay_jn");
 			}
 			break;
-		case 640966621:
+		case 640966621: /* GXTEntry: "Boar" */
 			if (iParam2 == 1)
 			{
-				return -1057583634;
+				return joaat("journal_animal_wild_boar_ar");
 			}
 			else
 			{
-				return -2020447749;
+				return joaat("journal_animal_wild_boar_jn");
 			}
 			break;
 		case 950257367:
 			if (iParam2 == 1)
 			{
-				return 1389918783;
+				return joaat("journal_animal_legendary_boar_ar");
 			}
 			else
 			{
-				return 889056371;
+				return joaat("journal_animal_legendary_boar_jn");
 			}
 			break;
-		case -1055552242:
+		case -1055552242: /* GXTEntry: "Buck" */
 			if (iParam2 == 1)
 			{
-				return -343448109;
+				return joaat("journal_animal_whitetail_buck_ar");
 			}
 			else
 			{
-				return 1668029447;
+				return joaat("journal_animal_whitetail_buck_jn");
 			}
 			break;
 		case -1894468643:
 			if (iParam2 == 1)
 			{
-				return 1656842182;
+				return joaat("journal_animal_legendary_buck_ar");
 			}
 			else
 			{
-				return 1931087823;
+				return joaat("journal_animal_legendary_buck_jn");
 			}
 			break;
-		case 1489890323:
+		case 1489890323: /* GXTEntry: "Bison" */
 			if (iParam2 == 1)
 			{
-				return -1372774793;
+				return joaat("journal_animal_bison_ar");
 			}
 			else
 			{
-				return -1351907036;
+				return joaat("journal_animal_bison_jn");
 			}
 			break;
 		case 2111267495:
 			if (iParam2 == 1)
 			{
-				return 1156953242;
+				return joaat("journal_animal_legendary_buffalo_ar");
 			}
 			else
 			{
-				return 610597621;
+				return joaat("journal_animal_legendary_buffalo_jn");
 			}
 			break;
 		case -1550790546:
 			if (iParam2 == 1)
 			{
-				return -32053405;
+				return joaat("journal_animal_legendary_white_buffalo_ar");
 			}
 			else
 			{
-				return 9629595;
+				return joaat("journal_animal_legendary_white_buffalo_jn");
 			}
 			break;
 		case 1028084064:
 			if (iParam2 == 1)
 			{
-				return -1017879199;
+				return joaat("journal_animal_bull_ar");
 			}
 			else
 			{
-				return -2050618352;
+				return joaat("journal_animal_bull_jn");
 			}
 			break;
 		case -1327130182:
 			if (iParam2 == 1)
 			{
-				return -434550098;
+				return joaat("journal_animal_devon_bull_ar");
 			}
 			else
 			{
-				return 9729636;
+				return joaat("journal_animal_devon_bull_jn");
 			}
 			break;
 		case -375262254:
 			if (iParam2 == 1)
 			{
-				return 2118461462;
+				return joaat("journal_animal_hereford_bull_ar");
 			}
 			else
 			{
-				return 143111533;
+				return joaat("journal_animal_hereford_bull_jn");
 			}
 			break;
-		case 1339926283:
+		case 1339926283: /* GXTEntry: "Bullfrog" */
 			if (iParam2 == 1)
 			{
-				return 485264164;
+				return joaat("journal_animal_bullfrog_ar");
 			}
 			else
 			{
-				return 1903408805;
+				return joaat("journal_animal_bullfrog_jn");
 			}
 			break;
-		case -1847199476:
+		case -1847199476: /* GXTEntry: "Californian Condor" */
 			if (iParam2 == 1)
 			{
-				return -793902754;
+				return joaat("journal_animal_californian_condor_ar");
 			}
 			else
 			{
-				return -1775711449;
+				return joaat("journal_animal_californian_condor_jn");
 			}
 			break;
-		case 1075520399:
+		case 1075520399: /* GXTEntry: "Cardinal" */
 			if (iParam2 == 1)
 			{
-				return 813908083;
+				return joaat("journal_animal_cardinal_ar");
 			}
 			else
 			{
-				return -131999783;
+				return joaat("journal_animal_cardinal_jn");
 			}
 			break;
-		case 285816029:
+		case joaat("AT_CAT"):
 			if (iParam2 == 1)
 			{
-				return -795386435;
+				return joaat("journal_animal_cat_ar");
 			}
 			else
 			{
-				return -1130778534;
+				return joaat("journal_animal_cat_jn");
 			}
 			break;
-		case -1273168083:
+		case -1273168083: /* GXTEntry: "Cedar Waxwing" */
 			if (iParam2 == 1)
 			{
-				return -1403844320;
+				return joaat("journal_animal_cedar_waxwing_ar");
 			}
 			else
 			{
-				return -169402166;
+				return joaat("journal_animal_cedar_waxwing_jn");
 			}
 			break;
-		case 2059272711:
+		case 2059272711: /* GXTEntry: "Chicken" */
 			if (iParam2 == 1)
 			{
-				return -1214387853;
+				return joaat("journal_animal_dominique_chicken_ar");
 			}
 			else
 			{
-				return -417846746;
+				return joaat("journal_animal_dominique_chicken_jn");
 			}
 			break;
-		case -943371758:
+		case -943371758: /* GXTEntry: "Chicken" */
 			if (iParam2 == 1)
 			{
-				return -464805063;
+				return joaat("journal_animal_prarie_chicken_ar");
 			}
 			else
 			{
-				return -579171441;
+				return joaat("journal_animal_prarie_chicken_jn");
 			}
 			break;
 		case 1190285160:
 			if (iParam2 == 1)
 			{
-				return -226045789;
+				return joaat("journal_animal_leghorn_chicken_ar");
 			}
 			else
 			{
-				return 5946766;
+				return joaat("journal_animal_leghorn_chicken_jn");
 			}
 			break;
 		case -674936781:
 			if (iParam2 == 1)
 			{
-				return 1410377796;
+				return joaat("journal_animal_java_chicken_ar");
 			}
 			else
 			{
-				return -1029515674;
+				return joaat("journal_animal_java_chicken_jn");
 			}
 			break;
-		case -2045434273:
+		case -2045434273: /* GXTEntry: "Chipmunk" */
 			if (iParam2 == 1)
 			{
-				return -649439051;
+				return joaat("journal_animal_chipmunk_ar");
 			}
 			else
 			{
-				return -1928771048;
+				return joaat("journal_animal_chipmunk_jn");
 			}
 			break;
-		case 1677450645:
+		case 1677450645: /* GXTEntry: "Cormorant" */
 			if (iParam2 == 1)
 			{
-				return -2020193361;
+				return joaat("journal_animal_double_crested_cormorant_ar");
 			}
 			else
 			{
-				return -862429230;
+				return joaat("journal_animal_double_crested_cormorant_jn");
 			}
 			break;
 		case -2069413633:
 			if (iParam2 == 1)
 			{
-				return -348617231;
+				return joaat("journal_animal_neotropic_cormorant_ar");
 			}
 			else
 			{
-				return 521981365;
+				return joaat("journal_animal_neotropic_cormorant_jn");
 			}
 			break;
-		case -1071812884:
+		case -1071812884: /* GXTEntry: "Cougar" */
 			if (iParam2 == 1)
 			{
-				return 1454394111;
+				return joaat("journal_animal_cougar_ar");
 			}
 			else
 			{
-				return 1226381245;
+				return joaat("journal_animal_cougar_jn");
 			}
 			break;
 		case -973690007:
 			if (iParam2 == 1)
 			{
-				return -1923426107;
+				return joaat("journal_animal_legendary_cougar_ar");
 			}
 			else
 			{
-				return -448286600;
+				return joaat("journal_animal_legendary_cougar_jn");
 			}
 			break;
-		case -1204752482:
+		case -1204752482: /* GXTEntry: "Cow" */
 			if (iParam2 == 1)
 			{
-				return 57563439;
+				return joaat("journal_animal_cracker_cow_ar");
 			}
 			else
 			{
-				return -1554080546;
+				return joaat("journal_animal_cracker_cow_jn");
 			}
 			break;
-		case -564442545:
+		case -564442545: /* GXTEntry: "Coyote" */
 			if (iParam2 == 1)
 			{
-				return -819941571;
+				return joaat("journal_animal_coyote_ar");
 			}
 			else
 			{
-				return 316239633;
+				return joaat("journal_animal_coyote_jn");
 			}
 			break;
 		case 1210759497:
 			if (iParam2 == 1)
 			{
-				return -692709560;
+				return joaat("journal_animal_legendary_coyote_ar");
 			}
 			else
 			{
-				return 375187125;
+				return joaat("journal_animal_legendary_coyote_jn");
 			}
 			break;
-		case 1220494366:
+		case 1220494366: /* GXTEntry: "Crab" */
 			if (iParam2 == 1)
 			{
-				return 461155911;
+				return joaat("journal_animal_crab_ar");
 			}
 			else
 			{
-				return -1730432737;
+				return joaat("journal_animal_crab_jn");
 			}
 			break;
-		case -1923720634:
+		case -1923720634: /* GXTEntry: "Crane" */
 			if (iParam2 == 1)
 			{
-				return 686577545;
+				return joaat("journal_animal_whooping_crane_ar");
 			}
 			else
 			{
-				return -1716975259;
+				return joaat("journal_animal_whooping_crane_jn");
 			}
 			break;
 		case -1136838805:
 			if (iParam2 == 1)
 			{
-				return 485763523;
+				return joaat("journal_animal_sandhill_crane_ar");
 			}
 			else
 			{
-				return 485763523;
+				return joaat("journal_animal_sandhill_crane_ar");
 			}
 			break;
-		case 1798104140:
+		case joaat("AT_CRAYFISH"):
 			if (iParam2 == 1)
 			{
-				return -75693912;
+				return joaat("journal_animal_crayfish_ar");
 			}
 			else
 			{
-				return -1341709095;
+				return joaat("journal_animal_crayfish_jn");
 			}
 			break;
-		case 613321581:
+		case 613321581: /* GXTEntry: "Crow" */
 			if (iParam2 == 1)
 			{
-				return -1015255528;
+				return joaat("journal_animal_american_crow_ar");
 			}
 			else
 			{
-				return -155163817;
+				return joaat("journal_animal_american_crow_jn");
 			}
 			break;
-		case -510702611:
+		case -510702611: /* GXTEntry: "Deer" */
 			if (iParam2 == 1)
 			{
-				return -258389058;
+				return joaat("journal_animal_deer_ar");
 			}
 			else
 			{
-				return -1731672932;
+				return joaat("journal_animal_deer_jn");
 			}
 			break;
-		case 926603386:
+		case joaat("AT_DOG_AUSTRALIAN"):
 			if (iParam2 == 1)
 			{
-				return -446346500;
+				return joaat("journal_animal_australian_shepherd_ar");
 			}
 			else
 			{
-				return 198039826;
+				return joaat("journal_animal_australian_shepherd_jn");
 			}
 			break;
-		case -603666995:
+		case joaat("AT_DOG_BLOODHOUND"):
 			if (iParam2 == 1)
 			{
-				return 520531156;
+				return joaat("journal_animal_bloodhound_ar");
 			}
 			else
 			{
-				return 656647598;
+				return joaat("journal_animal_bloodhound_jn");
 			}
 			break;
-		case -1322848328:
+		case joaat("AT_DOG_BLUETICK"):
 			if (iParam2 == 1)
 			{
-				return 400831909;
+				return joaat("journal_animal_coonhound_ar");
 			}
 			else
 			{
-				return -480293444;
+				return joaat("journal_animal_coonhound_jn");
 			}
 			break;
-		case -1632170653:
+		case joaat("AT_DOG_BORDER"):
 			if (iParam2 == 1)
 			{
-				return -1472809340;
+				return joaat("journal_animal_collie_ar");
 			}
 			else
 			{
-				return 1556846539;
+				return joaat("journal_animal_collie_jn");
 			}
 			break;
-		case -1121883739:
+		case joaat("AT_DOG_CATAHOULA"):
 			if (iParam2 == 1)
 			{
-				return 87879371;
+				return joaat("journal_animal_catahoula_cur_ar");
 			}
 			else
 			{
-				return 295404488;
+				return joaat("journal_animal_catahoula_cur_jn");
 			}
 			break;
-		case 1901047439:
+		case joaat("AT_DOG_CHESAPEAKE"):
 			if (iParam2 == 1)
 			{
-				return -1495248197;
+				return joaat("journal_animal_chesapeakebay_ret_ar");
 			}
 			else
 			{
-				return -1142160290;
+				return joaat("journal_animal_chesapeakebay_ret_jn");
 			}
 			break;
-		case 268285362:
+		case joaat("AT_DOG_FOXHOUND"):
 			if (iParam2 == 1)
 			{
-				return -1508240671;
+				return joaat("journal_animal_fox_hound_ar");
 			}
 			else
 			{
-				return -2028019941;
+				return joaat("journal_animal_fox_hound_jn");
 			}
 			break;
-		case 1742105665:
+		case joaat("AT_DOG_HUSKY"):
 			if (iParam2 == 1)
 			{
-				return 1447842081;
+				return joaat("journal_animal_husky_ar");
 			}
 			else
 			{
-				return 763061508;
+				return joaat("journal_animal_husky_jn");
 			}
 			break;
-		case 1938765490:
+		case joaat("AT_DOG_LAB"):
 			if (iParam2 == 1)
 			{
-				return -1738549803;
+				return joaat("journal_animal_labrador_ar");
 			}
 			else
 			{
-				return 857577510;
+				return joaat("journal_animal_labrador_jn");
 			}
 			break;
-		case -1986096416:
+		case joaat("AT_DOG_MUTT"):
 			if (iParam2 == 1)
 			{
-				return 550175583;
+				return joaat("journal_animal_mutt_ar");
 			}
 			else
 			{
-				return -1327208188;
+				return joaat("journal_animal_mutt_jn");
 			}
 			break;
-		case 1509241437:
+		case joaat("AT_DOG"):
 			if (iParam2 == 1)
 			{
-				return -387470951;
+				return joaat("journal_animal_mongrel_ar");
 			}
 			else
 			{
-				return -1152146286;
+				return joaat("journal_animal_mongrel_jn");
 			}
 			break;
-		case 784496698:
+		case joaat("AT_DOG_POODLE"):
 			if (iParam2 == 1)
 			{
-				return -1298327432;
+				return joaat("journal_animal_poodle_ar");
 			}
 			else
 			{
-				return -1577268469;
+				return joaat("journal_animal_poodle_jn");
 			}
 			break;
-		case 520240957:
+		case joaat("AT_DONKEY"):
 			if (iParam2 == 1)
 			{
-				return 699060141;
+				return joaat("journal_animal_donkey_ar");
 			}
 			else
 			{
-				return -1134590040;
+				return joaat("journal_animal_donkey_jn");
 			}
 			break;
-		case -1350246467:
+		case -1350246467: /* GXTEntry: "Duck" */
 			if (iParam2 == 1)
 			{
-				return 2074298125;
+				return joaat("journal_animal_mallard_duck_ar");
 			}
 			else
 			{
-				return 1088082550;
+				return joaat("journal_animal_mallard_duck_jn");
 			}
 			break;
 		case -2146232868:
 			if (iParam2 == 1)
 			{
-				return -846557197;
+				return joaat("journal_animal_peking_duck_ar");
 			}
 			else
 			{
-				return 288657650;
+				return joaat("journal_animal_peking_duck_jn");
 			}
 			break;
-		case 2104011353:
+		case 2104011353: /* GXTEntry: "Eagle" */
 			if (iParam2 == 1)
 			{
-				return -1715622829;
+				return joaat("journal_animal_bald_eagle_ar");
 			}
 			else
 			{
-				return 224959159;
+				return joaat("journal_animal_bald_eagle_jn");
 			}
 			break;
 		case -1673415831:
 			if (iParam2 == 1)
 			{
-				return 685004063;
+				return joaat("journal_animal_golden_eagle_ar");
 			}
 			else
 			{
-				return -1620359805;
+				return joaat("journal_animal_golden_eagle_jn");
 			}
 			break;
-		case 1157397403:
+		case 1157397403: /* GXTEntry: "Egret" */
 			if (iParam2 == 1)
 			{
-				return 1487535595;
+				return joaat("journal_animal_reddish_egret_ar");
 			}
 			else
 			{
-				return -2106943688;
+				return joaat("journal_animal_reddish_egret_jn");
 			}
 			break;
 		case 1374755253:
 			if (iParam2 == 1)
 			{
-				return -619722845;
+				return joaat("journal_animal_little_egret_ar");
 			}
 			else
 			{
-				return -756184090;
+				return joaat("journal_animal_little_egret_jn");
 			}
 			break;
 		case -1203519405:
 			if (iParam2 == 1)
 			{
-				return -167138074;
+				return joaat("journal_animal_snowy_egret_ar");
 			}
 			else
 			{
-				return -1952853624;
+				return joaat("journal_animal_snowy_egret_jn");
 			}
 			break;
-		case -74829863:
+		case -74829863: /* GXTEntry: "Elk" */
 			if (iParam2 == 1)
 			{
-				return 1858396134;
+				return joaat("journal_animal_elk_f_ar");
 			}
 			else
 			{
-				return 1199311657;
+				return joaat("journal_animal_elk_f_jn");
 			}
 			break;
 		case 702805627:
 			if (iParam2 == 1)
 			{
-				return -379754949;
+				return joaat("journal_animal_elk_ar");
 			}
 			else
 			{
-				return 1123829079;
+				return joaat("journal_animal_elk_jn");
 			}
 			break;
 		case 1895708243:
 			if (iParam2 == 1)
 			{
-				return 683897188;
+				return joaat("journal_animal_legendary_elk_ar");
 			}
 			else
 			{
-				return -1313726941;
+				return joaat("journal_animal_legendary_elk_jn");
 			}
 			break;
-		case -1003674917:
+		case -1003674917: /* GXTEntry: "Fox" */
 			if (iParam2 == 1)
 			{
-				return -81484335;
+				return joaat("journal_animal_fox_ar");
 			}
 			else
 			{
-				return -745750690;
+				return joaat("journal_animal_fox_jn");
 			}
 			break;
 		case -487429551:
 			if (iParam2 == 1)
 			{
-				return 375272656;
+				return joaat("journal_animal_grey_fox_ar");
 			}
 			else
 			{
-				return 1614204576;
+				return joaat("journal_animal_grey_fox_jn");
 			}
 			break;
 		case -853417084:
 			if (iParam2 == 1)
 			{
-				return -27841655;
+				return joaat("journal_animal_silver_fox_ar");
 			}
 			else
 			{
-				return -1052853383;
+				return joaat("journal_animal_silver_fox_jn");
 			}
 			break;
 		case 225698625:
 			if (iParam2 == 1)
 			{
-				return 744375830;
+				return joaat("journal_animal_legendary_fox_ar");
 			}
 			else
 			{
-				return -635519364;
+				return joaat("journal_animal_legendary_fox_jn");
 			}
 			break;
-		case -1472826885:
+		case joaat("AT_GATOR"):
 			if (iParam2 == 1)
 			{
-				return 1374191339;
+				return joaat("journal_animal_aligator_ar");
 			}
 			else
 			{
-				return 1057046493;
+				return joaat("journal_animal_aligator_jn");
 			}
 			break;
 		case 1044478494:
 			if (iParam2 == 1)
 			{
-				return -567700941;
+				return joaat("journal_animal_legendary_bullgator_ar");
 			}
 			else
 			{
-				return 1133767006;
+				return joaat("journal_animal_legendary_bullgator_jn");
 			}
 			break;
-		case 1735171971:
+		case 1735171971: /* GXTEntry: "Lizard" */
 			if (iParam2 == 1)
 			{
-				return -475041877;
+				return joaat("journal_animal_gila_monster_ar");
 			}
 			else
 			{
-				return -973375568;
+				return joaat("journal_animal_gila_monster_jn");
 			}
 			break;
-		case 365206122:
+		case 365206122: /* GXTEntry: "Goat" */
 			if (iParam2 == 1)
 			{
-				return 1251901266;
+				return joaat("journal_animal_alpine_goat_ar");
 			}
 			else
 			{
-				return 594965829;
+				return joaat("journal_animal_alpine_goat_jn");
 			}
 			break;
-		case 731537518:
+		case 731537518: /* GXTEntry: "Goose" */
 			if (iParam2 == 1)
 			{
-				return 332185718;
+				return joaat("journal_animal_canada_goose_ar");
 			}
 			else
 			{
-				return 752876761;
+				return joaat("journal_animal_canada_goose_jn");
 			}
 			break;
 		case 1859834293:
 			if (iParam2 == 1)
 			{
-				return 761968766;
+				return joaat("journal_animal_hawk_ar");
 			}
 			else
 			{
-				return -258263292;
+				return joaat("journal_animal_hawk_jn");
 			}
 			break;
-		case 524696643:
+		case 524696643: /* GXTEntry: "Hawk" */
 			if (iParam2 == 1)
 			{
-				return 1345814727;
+				return joaat("journal_animal_ferruginious_hawk_ar");
 			}
 			else
 			{
-				return -2056520757;
+				return joaat("journal_animal_ferruginious_hawk_jn");
 			}
 			break;
 		case 132914876:
 			if (iParam2 == 1)
 			{
-				return 774728556;
+				return joaat("journal_animal_rough_legged_hawk_ar");
 			}
 			else
 			{
-				return 1695964169;
+				return joaat("journal_animal_rough_legged_hawk_jn");
 			}
 			break;
-		case 768271981:
+		case 768271981: /* GXTEntry: "Heron" */
 			if (iParam2 == 1)
 			{
-				return 2098251339;
+				return joaat("journal_animal_blue_heron_ar");
 			}
 			else
 			{
-				return -1973755393;
+				return joaat("journal_animal_blue_heron_jn");
 			}
 			break;
 		case -1245666683:
 			if (iParam2 == 1)
 			{
-				return 2098251339;
+				return joaat("journal_animal_blue_heron_ar");
 			}
 			else
 			{
-				return -1973755393;
+				return joaat("journal_animal_blue_heron_jn");
 			}
 			break;
-		case -153407852:
-			if (((iParam1 == joaat("a_c_horse_americanpaint_overo") || iParam1 == 1792770814) || iParam1 == joaat("a_c_horse_americanpaint_tobiano")) || iParam1 == -1963397600)
+		case joaat("AT_HORSE"):
+			if (((iParam1 == joaat("a_c_horse_americanpaint_overo") || iParam1 == joaat("a_c_horse_americanpaint_splashedwhite")) || iParam1 == joaat("a_c_horse_americanpaint_tobiano")) || iParam1 == joaat("a_c_horse_americanpaint_greyovero"))
 			{
 				if (iParam2 == 1)
 				{
-					return -1510715495;
+					return joaat("journal_animal_american_paint_ar");
 				}
 				else
 				{
-					return -1041460807;
+					return joaat("journal_animal_american_paint_jn");
 				}
 			}
-			else if (((iParam1 == -1250098797 || iParam1 == -318278790) || iParam1 == 55096099) || iParam1 == -458397856)
+			else if (((iParam1 == joaat("a_c_horse_americanstandardbred_black") || iParam1 == joaat("a_c_horse_americanstandardbred_buckskin")) || iParam1 == joaat("a_c_horse_americanstandardbred_palominodapple")) || iParam1 == joaat("a_c_horse_americanstandardbred_silvertailbuckskin"))
 			{
 				if (iParam2 == 1)
 				{
-					return 216313122;
+					return joaat("journal_animal_american_standardbred_ar");
 				}
 				else
 				{
-					return -1276302204;
+					return joaat("journal_animal_american_standardbred_jn");
 				}
 			}
-			else if ((iParam1 == -444610976 || iParam1 == 705691988) || iParam1 == 746627200)
+			else if ((iParam1 == joaat("a_c_horse_andalusian_darkbay") || iParam1 == joaat("a_c_horse_andalusian_perlino")) || iParam1 == joaat("a_c_horse_andalusian_rosegray"))
 			{
 				if (iParam2 == 1)
 				{
-					return 1058013054;
+					return joaat("journal_animal_andalusian_ar");
 				}
 				else
 				{
-					return 1875597076;
+					return joaat("journal_animal_andalusian_jn");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_appaloosa_blanket") || iParam1 == joaat("a_c_horse_appaloosa_leopard")) || iParam1 == -1554827654) || iParam1 == -1029277326) || iParam1 == 604357666)
+			else if ((((iParam1 == joaat("a_c_horse_appaloosa_blanket") || iParam1 == joaat("a_c_horse_appaloosa_leopard")) || iParam1 == joaat("a_c_horse_appaloosa_leopardblanket")) || iParam1 == joaat("a_c_horse_appaloosa_brownleopard")) || iParam1 == joaat("a_c_horse_appaloosa_fewspotted_pc"))
 			{
 				if (iParam2 == 1)
 				{
-					return -1860934580;
+					return joaat("journal_animal_appaloosa_ar");
 				}
 				else
 				{
-					return 1323745903;
+					return joaat("journal_animal_appaloosa_jn");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_arabian_black") || iParam1 == 1496579364) || iParam1 == -403470324) || iParam1 == 1576849913) || iParam1 == joaat("a_c_horse_arabian_white"))
+			else if ((((iParam1 == joaat("a_c_horse_arabian_black") || iParam1 == joaat("a_c_horse_arabian_redchestnut")) || iParam1 == joaat("a_c_horse_arabian_rosegreybay")) || iParam1 == joaat("a_c_horse_arabian_warpedbrindle_pc")) || iParam1 == joaat("a_c_horse_arabian_white"))
 			{
 				if (iParam2 == 1)
 				{
-					return 987087298;
+					return joaat("journal_animal_arabian_ar");
 				}
 				else
 				{
-					return -1712290350;
+					return joaat("journal_animal_arabian_jn");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_ardennes_bayroan") || iParam1 == joaat("a_c_horse_ardennes_irongreyroan")) || iParam1 == -635239558)
+			else if ((iParam1 == joaat("a_c_horse_ardennes_bayroan") || iParam1 == joaat("a_c_horse_ardennes_irongreyroan")) || iParam1 == joaat("a_c_horse_ardennes_strawberryroan"))
 			{
 				if (iParam2 == 1)
 				{
-					return 679982833;
+					return joaat("journal_animal_ardennes_ar");
 				}
 				else
 				{
-					return 224251658;
+					return joaat("journal_animal_ardennes_jn");
 				}
 			}
 			else if (iParam1 == joaat("a_c_horse_belgian_blondchestnut") || iParam1 == joaat("a_c_horse_belgian_mealychestnut"))
 			{
 				if (iParam2 == 1)
 				{
-					return -2035377496;
+					return joaat("journal_animal_belgian_ar");
 				}
 				else
 				{
-					return 1602284249;
+					return joaat("journal_animal_belgian_jn");
 				}
 			}
-			else if ((iParam1 == 687445866 || iParam1 == 861505058) || iParam1 == 1593035738)
+			else if ((iParam1 == joaat("a_c_horse_dutchwarmblood_chocolateroan") || iParam1 == joaat("a_c_horse_dutchwarmblood_sealbrown")) || iParam1 == joaat("a_c_horse_dutchwarmblood_sootybuckskin"))
 			{
 				if (iParam2 == 1)
 				{
-					return -1314354161;
+					return joaat("journal_animal_dutch_warmblood_ar");
 				}
 				else
 				{
-					return -1111688425;
+					return joaat("journal_animal_dutch_warmblood_jn");
 				}
 			}
-			else if ((iParam1 == -819697512 || iParam1 == 1705182311) || iParam1 == -78273782)
+			else if ((iParam1 == joaat("a_c_horse_hungarianhalfbred_darkdapplegrey") || iParam1 == joaat("a_c_horse_hungarianhalfbred_flaxenchestnut")) || iParam1 == joaat("a_c_horse_hungarianhalfbred_piebaldtobiano"))
 			{
 				if (iParam2 == 1)
 				{
-					return -697129350;
+					return joaat("journal_animal_hungarian_halfbred_ar");
 				}
 				else
 				{
-					return 932507108;
+					return joaat("journal_animal_hungarian_halfbred_jn");
 				}
 			}
-			else if ((((iParam1 == -247265944 || iParam1 == -1516219602) || iParam1 == -1265030920) || iParam1 == 2024948086) || iParam1 == 1696286663)
+			else if ((((iParam1 == joaat("a_c_horse_kentuckysaddle_black") || iParam1 == joaat("a_c_horse_kentuckysaddle_buttermilkbuckskin_pc")) || iParam1 == joaat("a_c_horse_kentuckysaddle_chestnutpinto")) || iParam1 == joaat("a_c_horse_kentuckysaddle_grey")) || iParam1 == joaat("a_c_horse_kentuckysaddle_silverbay"))
 			{
 				if (iParam2 == 1)
 				{
-					return 14437037;
+					return joaat("journal_animal_kentucky_saddler_ar");
 				}
 				else
 				{
-					return 1726324950;
+					return joaat("journal_animal_kentucky_saddler_jn");
 				}
 			}
-			else if (iParam1 == -1342159303 || iParam1 == joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"))
+			else if (iParam1 == joaat("a_c_horse_missourifoxtrotter_amberchampagne") || iParam1 == joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"))
 			{
 				if (iParam2 == 1)
 				{
-					return 1127400536;
+					return joaat("journal_animal_missouri_foxtrotter_ar");
 				}
 				else
 				{
-					return 400087036;
+					return joaat("journal_animal_missouri_foxtrotter_jn");
 				}
 			}
-			else if ((((iParam1 == 2030804811 || iParam1 == 1230359523) || iParam1 == -1063137731) || iParam1 == -1038436471) || iParam1 == 96930969)
+			else if ((((iParam1 == joaat("a_c_horse_morgan_bay") || iParam1 == joaat("a_c_horse_morgan_bayroan")) || iParam1 == joaat("a_c_horse_morgan_liverchestnut_pc")) || iParam1 == joaat("a_c_horse_morgan_flaxenchestnut")) || iParam1 == joaat("a_c_horse_morgan_palomino"))
 			{
 				if (iParam2 == 1)
 				{
-					return 1521891022;
+					return joaat("journal_animal_morgan_ar");
 				}
 				else
 				{
-					return -830234017;
+					return joaat("journal_animal_morgan_jn");
 				}
 			}
-			else if ((iParam1 == -1180427609 || iParam1 == 43825738) || iParam1 == joaat("a_c_horse_mustang_wildbay"))
+			else if ((iParam1 == joaat("a_c_horse_mustang_grullodun") || iParam1 == joaat("a_c_horse_mustang_tigerstripedbay")) || iParam1 == joaat("a_c_horse_mustang_wildbay"))
 			{
 				if (iParam2 == 1)
 				{
-					return -1778106987;
+					return joaat("journal_animal_mustang_ar");
 				}
 				else
 				{
-					return 629235125;
+					return joaat("journal_animal_mustang_jn");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_nokota_blueroan") || iParam1 == 107013696) || iParam1 == -1261814606)
+			else if ((iParam1 == joaat("a_c_horse_nokota_blueroan") || iParam1 == joaat("a_c_horse_nokota_reversedappleroan")) || iParam1 == joaat("a_c_horse_nokota_whiteroan"))
 			{
 				if (iParam2 == 1)
 				{
-					return -322859267;
+					return joaat("journal_animal_nokota_ar");
 				}
 				else
 				{
-					return -1148415148;
+					return joaat("journal_animal_nokota_jn");
 				}
 			}
-			else if ((iParam1 == 1066034872 || iParam1 == 36009259) || iParam1 == joaat("a_c_horse_shire_ravenblack"))
+			else if ((iParam1 == joaat("a_c_horse_shire_darkbay") || iParam1 == joaat("a_c_horse_shire_lightgrey")) || iParam1 == joaat("a_c_horse_shire_ravenblack"))
 			{
 				if (iParam2 == 1)
 				{
-					return -1903961111;
+					return joaat("journal_animal_shire_ar");
 				}
 				else
 				{
-					return 909878123;
+					return joaat("journal_animal_shire_jn");
 				}
 			}
-			else if (iParam1 == -1693870200 || iParam1 == -1599683008)
+			else if (iParam1 == joaat("a_c_horse_suffolkpunch_redchestnut") || iParam1 == joaat("a_c_horse_suffolkpunch_sorrel"))
 			{
 				if (iParam2 == 1)
 				{
-					return -2144737275;
+					return joaat("journal_animal_suffolk_punch_ar");
 				}
 				else
 				{
-					return -703064617;
+					return joaat("journal_animal_suffolk_punch_jn");
 				}
 			}
-			else if ((((((iParam1 == 1072019803 || iParam1 == 1074477367) || iParam1 == -85890205) || iParam1 == 1048964673) || iParam1 == 446670976) || iParam1 == -727455979) || iParam1 == -1667789645)
+			else if ((((((iParam1 == joaat("a_c_horse_tennesseewalker_blackrabicano") || iParam1 == joaat("a_c_horse_tennesseewalker_chestnut")) || iParam1 == joaat("a_c_horse_tennesseewalker_dapplebay")) || iParam1 == joaat("a_c_horse_tennesseewalker_goldpalomino_pc")) || iParam1 == joaat("a_c_horse_tennesseewalker_mahoganybay")) || iParam1 == joaat("a_c_horse_tennesseewalker_redroan")) || iParam1 == joaat("a_c_horse_tennesseewalker_flaxenroan"))
 			{
 				if (iParam2 == 1)
 				{
-					return 79953388;
+					return joaat("journal_animal_tennessee_walker_ar");
 				}
 				else
 				{
-					return 1080521142;
+					return joaat("journal_animal_tennessee_walker_jn");
 				}
 			}
-			else if ((((iParam1 == 2120708491 || iParam1 == -1924405794) || iParam1 == -526169133) || iParam1 == joaat("a_c_horse_thoroughbred_dapplegrey")) || iParam1 == 900144280)
+			else if ((((iParam1 == joaat("a_c_horse_thoroughbred_blackchestnut") || iParam1 == joaat("a_c_horse_thoroughbred_bloodbay")) || iParam1 == joaat("a_c_horse_thoroughbred_brindle")) || iParam1 == joaat("a_c_horse_thoroughbred_dapplegrey")) || iParam1 == joaat("a_c_horse_thoroughbred_reversedappleblack"))
 			{
 				if (iParam2 == 1)
 				{
-					return -509693556;
+					return joaat("journal_animal_thoroughbred_ar");
 				}
 				else
 				{
-					return -47591742;
+					return joaat("journal_animal_thoroughbred_jn");
 				}
 			}
-			else if ((iParam1 == 1133837220 || iParam1 == joaat("a_c_horse_turkoman_gold")) || iParam1 == -1604180548)
+			else if ((iParam1 == joaat("a_c_horse_turkoman_darkbay") || iParam1 == joaat("a_c_horse_turkoman_gold")) || iParam1 == joaat("a_c_horse_turkoman_silver"))
 			{
 				if (iParam2 == 1)
 				{
-					return 375495976;
+					return joaat("journal_animal_turkoman_ar");
 				}
 				else
 				{
-					return -389560008;
+					return joaat("journal_animal_turkoman_jn");
 				}
 			}
 			break;
-		case 843200239:
+		case 843200239: /* GXTEntry: "Iguana" */
 			if (iParam2 == 1)
 			{
-				return 382483842;
+				return joaat("journal_animal_iguana_ar");
 			}
 			else
 			{
-				return -1387469655;
+				return joaat("journal_animal_iguana_jn");
 			}
 			break;
 		case -557089338:
 			if (iParam2 == 1)
 			{
-				return -652731287;
+				return joaat("journal_animal_desert_iguana_ar");
 			}
 			else
 			{
-				return 363304543;
+				return joaat("journal_animal_desert_iguana_jn");
 			}
 			break;
-		case -409730157:
+		case -409730157: /* GXTEntry: "Javelina" */
 			if (iParam2 == 1)
 			{
-				return 293802921;
+				return joaat("journal_animal_peccary_ar");
 			}
 			else
 			{
-				return 263724736;
+				return joaat("journal_animal_peccary_jn");
 			}
 			break;
-		case -1453172462:
+		case -1453172462: /* GXTEntry: "Loon" */
 			if (iParam2 == 1)
 			{
-				return -650983350;
+				return joaat("journal_animal_common_loon_ar");
 			}
 			else
 			{
-				return 248268932;
+				return joaat("journal_animal_common_loon_jn");
 			}
 			break;
 		case 2084223993:
 			if (iParam2 == 1)
 			{
-				return 581279313;
+				return joaat("journal_animal_pacific_loon_ar");
 			}
 			else
 			{
-				return -1986670648;
+				return joaat("journal_animal_pacific_loon_jn");
 			}
 			break;
 		case 1449149245:
 			if (iParam2 == 1)
 			{
-				return 853339335;
+				return joaat("journal_animal_yellow_billed_loon_ar");
 			}
 			else
 			{
-				return 476264216;
+				return joaat("journal_animal_yellow_billed_loon_jn");
 			}
 			break;
 		case 230694645:
 			if (iParam2 == 1)
 			{
-				return 840856104;
+				return joaat("journal_animal_moose_ar");
 			}
 			else
 			{
-				return 161687222;
+				return joaat("journal_animal_moose_jn");
 			}
 			break;
 		case -1998732171:
 			if (iParam2 == 1)
 			{
-				return -679944843;
+				return joaat("journal_animal_legendary_moose_ar");
 			}
 			else
 			{
-				return -439780870;
+				return joaat("journal_animal_legendary_moose_jn");
 			}
 			break;
-		case 732517695:
+		case joaat("AT_MULE"):
 			if (iParam2 == 1)
 			{
-				return -507978028;
+				return joaat("journal_animal_mule_ar");
 			}
 			else
 			{
-				return -2138925351;
+				return joaat("journal_animal_mule_jn");
 			}
 			break;
-		case 1053713682:
+		case 1053713682: /* GXTEntry: "Muskrat" */
 			if (iParam2 == 1)
 			{
-				return 2067853128;
+				return joaat("journal_animal_muskrat_ar");
 			}
 			else
 			{
-				return -999327272;
+				return joaat("journal_animal_muskrat_jn");
 			}
 			break;
-		case 562612880:
+		case 562612880: /* GXTEntry: "Oriole" */
 			if (iParam2 == 1)
 			{
-				return -720653445;
+				return joaat("journal_animal_oriole_ar");
 			}
 			else
 			{
-				return 1465762044;
+				return joaat("journal_animal_oriole_jn");
 			}
 			break;
 		case 1488906430:
 			if (iParam2 == 1)
 			{
-				return 1604791730;
+				return joaat("journal_animal_hooded_oriole_ar");
 			}
 			else
 			{
-				return 382211197;
+				return joaat("journal_animal_hooded_oriole_jn");
 			}
 			break;
 		case -1002311676:
-		case 313926162:
+		case 313926162: /* GXTEntry: "Owl" */
 			if (iParam2 == 1)
 			{
-				return 452746646;
+				return joaat("journal_animal_horned_owl_ar");
 			}
 			else
 			{
-				return 1669886296;
+				return joaat("journal_animal_horned_owl_jn");
 			}
 			break;
 		case 1434063188:
 			if (iParam2 == 1)
 			{
-				return -979220810;
+				return joaat("journal_animal_great_horned_owl_ar");
 			}
 			else
 			{
-				return 443311725;
+				return joaat("journal_animal_great_horned_owl_jn");
 			}
 			break;
-		case 1296784312:
+		case 1296784312: /* GXTEntry: "Ox" */
 			if (iParam2 == 1)
 			{
-				return 861034445;
+				return joaat("journal_animal_oxen_ar");
 			}
 			else
 			{
-				return 391521677;
+				return joaat("journal_animal_oxen_jn");
 			}
 			break;
 		case -1192335484:
 			if (iParam2 == 1)
 			{
-				return 1634138500;
+				return joaat("journal_animal_devon_oxen_ar");
 			}
 			else
 			{
-				return -1585573547;
+				return joaat("journal_animal_devon_oxen_jn");
 			}
 			break;
-		case 184430925:
+		case 184430925: /* GXTEntry: "Panther" */
 			if (iParam2 == 1)
 			{
-				return -788140186;
+				return joaat("journal_animal_florida_panther_ar");
 			}
 			else
 			{
-				return -1011875654;
+				return joaat("journal_animal_florida_panther_jn");
 			}
 			break;
 		case 1631667828:
 			if (iParam2 == 1)
 			{
-				return -135187727;
+				return joaat("journal_animal_legendary_panther_ar");
 			}
 			else
 			{
-				return -662462270;
+				return joaat("journal_animal_legendary_panther_jn");
 			}
 			break;
-		case 1623821606:
+		case 1623821606: /* GXTEntry: "Parrot" */
 			if (iParam2 == 1)
 			{
-				return -1381490234;
+				return joaat("journal_animal_parrot_ar");
 			}
 			else
 			{
-				return 401969671;
+				return joaat("journal_animal_parrot_jn");
 			}
 			break;
 		case 631108475:
 			if (iParam2 == 1)
 			{
-				return -203045456;
+				return joaat("journal_animal_great_green_macaw_ar");
 			}
 			else
 			{
-				return -1205233107;
+				return joaat("journal_animal_great_green_macaw_jn");
 			}
 			break;
 		case -679868805:
 			if (iParam2 == 1)
 			{
-				return -1876437153;
+				return joaat("journal_animal_scarlet_macaw_ar");
 			}
 			else
 			{
-				return -570692178;
+				return joaat("journal_animal_scarlet_macaw_jn");
 			}
 			break;
-		case -454952368:
+		case -454952368: /* GXTEntry: "Pelican" */
 			if (iParam2 == 1)
 			{
-				return -1239951197;
+				return joaat("journal_animal_pelican_ar");
 			}
 			else
 			{
-				return -535907352;
+				return joaat("journal_animal_pelican_jn");
 			}
 			break;
 		case 512575690:
 			if (iParam2 == 1)
 			{
-				return -2099611916;
+				return joaat("journal_animal_brown_pelican_ar");
 			}
 			else
 			{
-				return 1961649296;
+				return joaat("journal_animal_brown_pelican_jn");
 			}
 			break;
-		case -1315516671:
+		case -1315516671: /* GXTEntry: "Pheasant" */
 			if (iParam2 == 1)
 			{
-				return 1966613758;
+				return joaat("journal_animal_ring_necked_pheasant_ar");
 			}
 			else
 			{
-				return -1333865097;
+				return joaat("journal_animal_ring_necked_pheasant_jn");
 			}
 			break;
 		case -2032722392:
 			if (iParam2 == 1)
 			{
-				return 1914577480;
+				return joaat("journal_animal_pheasant_ar");
 			}
 			else
 			{
-				return 1328558441;
+				return joaat("journal_animal_pheasant_jn");
 			}
 			break;
-		case 238849077:
+		case 238849077: /* GXTEntry: "Pig" */
 			if (iParam2 == 1)
 			{
-				return 1883720795;
+				return joaat("journal_animal_pig_ar");
 			}
 			else
 			{
-				return -1369680592;
+				return joaat("journal_animal_pig_jn");
 			}
 			break;
 		case -812395905:
 			if (iParam2 == 1)
 			{
-				return 387520892;
+				return joaat("journal_animal_china_pig_ar");
 			}
 			else
 			{
-				return -1903848769;
+				return joaat("journal_animal_china_pig_jn");
 			}
 			break;
 		case 1252173965:
 			if (iParam2 == 1)
 			{
-				return -323196703;
+				return joaat("journal_animal_old_spot_pig_ar");
 			}
 			else
 			{
-				return -1097366344;
+				return joaat("journal_animal_old_spot_pig_jn");
 			}
 			break;
-		case 1948286917:
+		case 1948286917: /* GXTEntry: "Pigeon" */
 			if (iParam2 == 1)
 			{
-				return -624807541;
+				return joaat("journal_animal_pigeon_ar");
 			}
 			else
 			{
-				return 1875235996;
+				return joaat("journal_animal_pigeon_jn");
 			}
 			break;
 		case 886717998:
 			if (iParam2 == 1)
 			{
-				return -615644963;
+				return joaat("journal_animal_band_tailed_pigeon_ar");
 			}
 			else
 			{
-				return -823139835;
+				return joaat("journal_animal_band_tailed_pigeon_jn");
 			}
 			break;
-		case -905573570:
+		case joaat("AT_POSSUM"):
 			if (iParam2 == 1)
 			{
-				return 1706508339;
+				return joaat("journal_animal_possum_ar");
 			}
 			else
 			{
-				return -138305935;
+				return joaat("journal_animal_possum_jn");
 			}
 			break;
-		case -10873946:
+		case -10873946: /* GXTEntry: "Pronghorn" */
 			if (iParam2 == 1)
 			{
-				return -2103370865;
+				return joaat("journal_animal_pronghorn_ar");
 			}
 			else
 			{
-				return 1443679495;
+				return joaat("journal_animal_pronghorn_jn");
 			}
 			break;
 		case -1850027464:
 			if (iParam2 == 1)
 			{
-				return -633158514;
+				return joaat("journal_animal_baja_californian_pronghorn_ar");
 			}
 			else
 			{
-				return 1018532190;
+				return joaat("journal_animal_baja_californian_pronghorn_jn");
 			}
 			break;
 		case -1559343651:
 			if (iParam2 == 1)
 			{
-				return -918953360;
+				return joaat("journal_animal_sonoran_pronghorn_ar");
 			}
 			else
 			{
-				return -660080832;
+				return joaat("journal_animal_sonoran_pronghorn_jn");
 			}
 			break;
 		case -908129790:
 			if (iParam2 == 1)
 			{
-				return -1349222587;
+				return joaat("journal_animal_legendary_pronghorn_ar");
 			}
 			else
 			{
-				return 1557946994;
+				return joaat("journal_animal_legendary_pronghorn_jn");
 			}
 			break;
-		case -756458312:
+		case -756458312: /* GXTEntry: "Quail" */
 			if (iParam2 == 1)
 			{
-				return 2023710928;
+				return joaat("journal_animal_quail_ar");
 			}
 			else
 			{
-				return 1977250026;
+				return joaat("journal_animal_quail_jn");
 			}
 			break;
-		case -1523680261:
+		case -1523680261: /* GXTEntry: "Rabbit" */
 			if (iParam2 == 1)
 			{
-				return 1566791262;
+				return joaat("journal_animal_rabbit_ar");
 			}
 			else
 			{
-				return -966619756;
+				return joaat("journal_animal_rabbit_jn");
 			}
 			break;
-		case 915670869:
+		case 915670869: /* GXTEntry: "Raccoon" */
 			if (iParam2 == 1)
 			{
-				return -1644328077;
+				return joaat("journal_animal_raccoon_ar");
 			}
 			else
 			{
-				return -576645995;
+				return joaat("journal_animal_raccoon_jn");
 			}
 			break;
 		case 1241049848:
 			if (iParam2 == 1)
 			{
-				return 797754095;
+				return joaat("journal_animal_bighorn_ar");
 			}
 			else
 			{
-				return -2058983692;
+				return joaat("journal_animal_bighorn_jn");
 			}
 			break;
 		case 1642062303:
 			if (iParam2 == 1)
 			{
-				return -1659756524;
+				return joaat("journal_animal_desert_big_horn_sheep_ar");
 			}
 			else
 			{
-				return 655563396;
+				return joaat("journal_animal_desert_big_horn_sheep_jn");
 			}
 			break;
 		case -868889795:
 			if (iParam2 == 1)
 			{
-				return 631588480;
+				return joaat("journal_animal_desert_bighorn_ram_ar");
 			}
 			else
 			{
-				return 1964441958;
+				return joaat("journal_animal_desert_bighorn_ram_jn");
 			}
 			break;
 		case -245437166:
 			if (iParam2 == 1)
 			{
-				return -325679307;
+				return joaat("journal_animal_rocky_mountain_bighorn_ar");
 			}
 			else
 			{
-				return 1238941576;
+				return joaat("journal_animal_rocky_mountain_bighorn_jn");
 			}
 			break;
 		case -587357648:
 			if (iParam2 == 1)
 			{
-				return -526737116;
+				return joaat("journal_animal_sierra_nevada_bighorn_ar");
 			}
 			else
 			{
-				return -2067439289;
+				return joaat("journal_animal_sierra_nevada_bighorn_jn");
 			}
 			break;
 		case 1161966186:
 			if (iParam2 == 1)
 			{
-				return 2096415373;
+				return joaat("journal_animal_sierra_nevada_bighorn_sheep_ar");
 			}
 			else
 			{
-				return 389722302;
+				return joaat("journal_animal_sierra_nevada_bighorn_sheep_jn");
 			}
 			break;
 		case -795241033:
 			if (iParam2 == 1)
 			{
-				return 1154535482;
+				return joaat("journal_animal_legendary_long_horn_ar");
 			}
 			else
 			{
-				return 1974479168;
+				return joaat("journal_animal_legendary_long_horn_jn");
 			}
 			break;
 		case -366264193:
 			if (iParam2 == 1)
 			{
-				return 989198786;
+				return joaat("journal_animal_rat_ar");
 			}
 			else
 			{
-				return -355707420;
+				return joaat("journal_animal_rat_jn");
 			}
 			break;
-		case -705312705:
+		case -705312705: /* GXTEntry: "Rat" */
 			if (iParam2 == 1)
 			{
-				return -1917262038;
+				return joaat("journal_animal_brown_rat_ar");
 			}
 			else
 			{
-				return -887338500;
+				return joaat("journal_animal_brown_rat_jn");
 			}
 			break;
-		case -1592962144:
+		case -1592962144: /* GXTEntry: "Raven" */
 			if (iParam2 == 1)
 			{
-				return -1387399089;
+				return joaat("journal_animal_raven_ar");
 			}
 			else
 			{
-				return 2126380116;
+				return joaat("journal_animal_raven_jn");
 			}
 			break;
-		case 886059398:
+		case 886059398: /* GXTEntry: "Bird" */
 			if (iParam2 == 1)
 			{
-				return -93072263;
+				return joaat("journal_animal_red_footed_booby_ar");
 			}
 			else
 			{
-				return -1354818991;
+				return joaat("journal_animal_red_footed_booby_jn");
 			}
 			break;
-		case 2018874380:
+		case 2018874380: /* GXTEntry: "Robin" */
 			if (iParam2 == 1)
 			{
-				return 515905092;
+				return joaat("journal_animal_robin_ar");
 			}
 			else
 			{
-				return -2141961689;
+				return joaat("journal_animal_robin_jn");
 			}
 			break;
 		case -1467886026:
-		case -262717989:
+		case -262717989: /* GXTEntry: "Rooster" */
 		case 1100342668:
 			if (iParam2 == 1)
 			{
-				return -1304404966;
+				return joaat("journal_animal_rooster_ar");
 			}
 			else
 			{
-				return -338768354;
+				return joaat("journal_animal_rooster_jn");
 			}
 			break;
-		case -1181288733:
+		case -1181288733: /* GXTEntry: "Spoonbill" */
 			if (iParam2 == 1)
 			{
-				return -1675867359;
+				return joaat("journal_animal_spoonbill_ar");
 			}
 			else
 			{
-				return 922834860;
+				return joaat("journal_animal_spoonbill_jn");
 			}
 			break;
 		case 1398366530:
 			if (iParam2 == 1)
 			{
-				return 2136163397;
+				return joaat("journal_animal_seagull_ar");
 			}
 			else
 			{
-				return -2053685963;
+				return joaat("journal_animal_seagull_jn");
 			}
 			break;
 		case 1145409805:
 			if (iParam2 == 1)
 			{
-				return -1506726199;
+				return joaat("journal_animal_laughing_gull_ar");
 			}
 			else
 			{
-				return -1570463396;
+				return joaat("journal_animal_laughing_gull_jn");
 			}
 			break;
 		case 733223128:
 			if (iParam2 == 1)
 			{
-				return 1487282350;
+				return joaat("journal_animal_herring_gull_ar");
 			}
 			else
 			{
-				return 1316963652;
+				return joaat("journal_animal_herring_gull_jn");
 			}
 			break;
-		case -1427844561:
+		case -1427844561: /* GXTEntry: "Sheep" */
 			if (iParam2 == 1)
 			{
-				return -411919020;
+				return joaat("journal_animal_sheep_ar");
 			}
 			else
 			{
-				return -1656161562;
+				return joaat("journal_animal_sheep_jn");
 			}
 			break;
-		case -998653403:
+		case -998653403: /* GXTEntry: "Skunk" */
 			if (iParam2 == 1)
 			{
-				return -777288672;
+				return joaat("journal_animal_skunk_ar");
 			}
 			else
 			{
-				return -1653716830;
+				return joaat("journal_animal_skunk_jn");
 			}
 			break;
-		case -547357240:
+		case -547357240: /* GXTEntry: "Snake" */
 		case 491620790:
 		case 888613388:
 			if (iParam2 == 1)
 			{
-				return 1341689645;
+				return joaat("journal_animal_red_boa_ar");
 			}
 			else
 			{
-				return -2059037310;
+				return joaat("journal_animal_red_boa_jn");
 			}
 			break;
-		case -764925634:
+		case -764925634: /* GXTEntry: "Snake" */
 		case -518676029:
 		case -21336386:
 			if (iParam2 == 1)
 			{
-				return 2110273088;
+				return joaat("journal_animal_ferdelance_snake_ar");
 			}
 			else
 			{
-				return -1256102478;
+				return joaat("journal_animal_ferdelance_snake_jn");
 			}
 			break;
-		case -946474842:
+		case -946474842: /* GXTEntry: "Black-tailed Rattlesnake" */
 			if (iParam2 == 1)
 			{
-				return -1288369533;
+				return joaat("journal_animal_black_tail_rattlesnake_ar");
 			}
 			else
 			{
-				return -1810346437;
+				return joaat("journal_animal_blacktailed_rattle_snake_jn");
 			}
 			break;
 		case -1363455176:
 			if (iParam2 == 1)
 			{
-				return 559815433;
+				return joaat("journal_animal_cottonmouth_snake_ar");
 			}
 			else
 			{
-				return 545602543;
+				return joaat("journal_animal_cottonmouth_snake_jn");
 			}
 			break;
 		case 234935858:
 			if (iParam2 == 1)
 			{
-				return 977951227;
+				return joaat("journal_animal_rattlesnake_ar");
 			}
 			else
 			{
-				return 1629707044;
+				return joaat("journal_animal_rattlesnake_jn");
 			}
 			break;
-		case 395345271:
+		case 395345271: /* GXTEntry: "Songbird" */
 			if (iParam2 == 1)
 			{
-				return 89462976;
+				return joaat("journal_animal_songbird_ar");
 			}
 			else
 			{
-				return 1295654965;
+				return joaat("journal_animal_songbird_jn");
 			}
 			break;
 		case -1049737813:
 			if (iParam2 == 1)
 			{
-				return -1909301662;
+				return joaat("journal_animal_scarlet_tanager_songbird_ar");
 			}
 			else
 			{
-				return 1069740553;
+				return joaat("journal_animal_scarlet_tanager_songbird_jn");
 			}
 			break;
-		case -143561573:
+		case -143561573: /* GXTEntry: "Sparrow" */
 			if (iParam2 == 1)
 			{
-				return -1139750351;
+				return joaat("journal_animal_sparrow_ar");
 			}
 			else
 			{
-				return -449932244;
+				return joaat("journal_animal_sparrow_jn");
 			}
 			break;
 		case -1099435331:
 			if (iParam2 == 1)
 			{
-				return 184175481;
+				return joaat("journal_animal_eurasian_tree_sparrow_ar");
 			}
 			else
 			{
-				return 1863951382;
+				return joaat("journal_animal_eurasian_tree_sparrow_jn");
 			}
 			break;
 		case -2058116954:
 			if (iParam2 == 1)
 			{
-				return 1164479228;
+				return joaat("journal_animal_golden_crowned_sparrow_ar");
 			}
 			else
 			{
-				return 465359925;
+				return joaat("journal_animal_golden_crowned_sparrow_jn");
 			}
 			break;
-		case -581264978:
+		case -581264978: /* GXTEntry: "Squirrel" */
 			if (iParam2 == 1)
 			{
-				return 935639802;
+				return joaat("journal_animal_squirrel_ar");
 			}
 			else
 			{
-				return 768799230;
+				return joaat("journal_animal_squirrel_jn");
 			}
 			break;
 		case -1851619259:
 			if (iParam2 == 1)
 			{
-				return 633525360;
+				return joaat("journal_animal_red_squirrel_ar");
 			}
 			else
 			{
-				return -312751742;
+				return joaat("journal_animal_red_squirrel_jn");
 			}
 			break;
 		case -1055590463:
 			if (iParam2 == 1)
 			{
-				return 746264043;
+				return joaat("journal_animal_black_squirrel_ar");
 			}
 			else
 			{
-				return 942504103;
+				return joaat("journal_animal_black_squirrel_jn");
 			}
 			break;
-		case 725092441:
+		case 725092441: /* GXTEntry: "Toad" */
 		case 1202456973:
 			if (iParam2 == 1)
 			{
-				return -1751536989;
+				return joaat("journal_animal_toad_ar");
 			}
 			else
 			{
-				return -334051008;
+				return joaat("journal_animal_toad_jn");
 			}
 			break;
-		case -2087684184:
+		case -2087684184: /* GXTEntry: "Turkey" */
 			if (iParam2 == 1)
 			{
-				return 1612083342;
+				return joaat("journal_animal_turkey_ar");
 			}
 			else
 			{
-				return -1360421905;
+				return joaat("journal_animal_turkey_jn");
 			}
 			break;
 		case -1771094723:
 			if (iParam2 == 1)
 			{
-				return 500704149;
+				return joaat("journal_animal_rio_grande_turkey_ar");
 			}
 			else
 			{
-				return 1603220402;
+				return joaat("journal_animal_rio_grande_turkey_jn");
 			}
 			break;
-		case -117895552:
+		case joaat("AT_TURTLE_SEA"):
 			if (iParam2 == 1)
 			{
-				return 311774207;
+				return joaat("journal_animal_sea_turtle_ar");
 			}
 			else
 			{
-				return 1761303658;
+				return joaat("journal_animal_sea_turtle_jn");
 			}
 			break;
 		case 288450344:
 			if (iParam2 == 1)
 			{
-				return 2390170;
+				return joaat("journal_animal_snapping_turtle_ar");
 			}
 			else
 			{
-				return -1827589699;
+				return joaat("journal_animal_snapping_turtle_jn");
 			}
 			break;
 		case -1914955935:
 			if (iParam2 == 1)
 			{
-				return -1372762125;
+				return joaat("journal_animal_eastern_turkey_vulture_ar");
 			}
 			else
 			{
-				return -1302010630;
+				return joaat("journal_animal_eastern_turkey_vulture_jn");
 			}
 			break;
-		case 848629876:
+		case 848629876: /* GXTEntry: "Vulture" */
 			if (iParam2 == 1)
 			{
-				return -1819285714;
+				return joaat("journal_animal_western_vulture_ar");
 			}
 			else
 			{
-				return -1310085735;
+				return joaat("journal_animal_western_vulture_jn");
 			}
 			break;
-		case -439919843:
+		case -439919843: /* GXTEntry: "Wolf" */
 			if (iParam2 == 1)
 			{
-				return 781175185;
+				return joaat("journal_animal_wolf_ar");
 			}
 			else
 			{
-				return -1866392966;
+				return joaat("journal_animal_wolf_jn");
 			}
 			break;
 		case -377162693:
 			if (iParam2 == 1)
 			{
-				return -436635592;
+				return joaat("journal_animal_legendary_wolf_ar");
 			}
 			else
 			{
-				return 1489728350;
+				return joaat("journal_animal_legendary_wolf_jn");
 			}
 			break;
 		case 330512330:
 			if (iParam2 == 1)
 			{
-				return -971017472;
+				return joaat("journal_animal_timber_wolf_ar");
 			}
 			else
 			{
-				return 760166198;
+				return joaat("journal_animal_timber_wolf_jn");
 			}
 			break;
 		case 595771513:
 			if (iParam2 == 1)
 			{
-				return -1925555109;
+				return joaat("journal_animal_wood_pecker_ar");
 			}
 			else
 			{
-				return -1518144336;
+				return joaat("journal_animal_wood_pecker_jn");
 			}
 			break;
 		case -391309265:
 			if (iParam2 == 1)
 			{
-				return -856016756;
+				return joaat("journal_animal_wood_pecker_02_ar");
 			}
 			else
 			{
-				return -463149499;
+				return joaat("journal_animal_wood_pecker_02_jn");
 			}
 			break;
 		default:

@@ -176,19 +176,19 @@ void __EntryFunction__()
 							if (Var3.f_2 != -1424072773)
 							{
 							}
-							else if (Global_1915170->f_19742.f_3.f_3)
+							else if (Global_1915180->f_19742.f_3.f_3)
 							{
-								Global_1915170->f_19742.f_3.f_3 = 0;
-								Global_1915170->f_19742.f_3.f_2 = 0;
+								Global_1915180->f_19742.f_3.f_3 = 0;
+								Global_1915180->f_19742.f_3.f_2 = 0;
 							}
 							else
 							{
-								Global_1915170->f_19742.f_3.f_2 = 1;
+								Global_1915180->f_19742.f_3.f_2 = 1;
 							}
 						}
 						else
 						{
-							Global_1915170->f_19742.f_3.f_3 = 1;
+							Global_1915180->f_19742.f_3.f_3 = 1;
 						}
 						break;
 					case -114265581:
@@ -293,37 +293,37 @@ int func_3(bool bParam0, bool bParam1)
 
 bool func_4(int iParam0)
 {
-	return func_28(Global_1915170->f_19742.f_3, iParam0);
+	return func_28(Global_1915180->f_19742.f_3, iParam0);
 }
 
 void func_5(int iParam0)
 {
-	func_29(&(Global_1915170->f_19742.f_3), iParam0);
+	func_29(&(Global_1915180->f_19742.f_3), iParam0);
 }
 
 void func_6(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_19 = uParam0;
+	Global_1915180->f_19742.f_3.f_19 = uParam0;
 }
 
 void func_7(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_17 = uParam0;
+	Global_1915180->f_19742.f_3.f_17 = uParam0;
 }
 
 void func_8(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_18 = uParam0;
+	Global_1915180->f_19742.f_3.f_18 = uParam0;
 }
 
 void func_9(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_13 = *uParam0;
+	Global_1915180->f_19742.f_3.f_13 = *uParam0;
 }
 
 void func_10(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_11 = uParam0;
+	Global_1915180->f_19742.f_3.f_11 = uParam0;
 }
 
 int func_11()
@@ -341,7 +341,7 @@ char* func_12()
 
 void func_13(int iParam0)
 {
-	Global_1915170->f_19742.f_3.f_12 = iParam0;
+	Global_1915180->f_19742.f_3.f_12 = iParam0;
 }
 
 char* func_14()
@@ -351,12 +351,12 @@ char* func_14()
 
 void func_15(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_16 = *uParam0;
+	Global_1915180->f_19742.f_3.f_16 = *uParam0;
 }
 
 void func_16(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_14 = uParam0;
+	Global_1915180->f_19742.f_3.f_14 = uParam0;
 }
 
 int func_17()
@@ -369,12 +369,12 @@ int func_17()
 
 void func_18(int iParam0)
 {
-	Global_1915170->f_19742.f_3.f_15 = iParam0;
+	Global_1915180->f_19742.f_3.f_15 = iParam0;
 }
 
 void func_19(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_8 = uParam0;
+	Global_1915180->f_19742.f_3.f_8 = uParam0;
 }
 
 int func_20()
@@ -387,30 +387,30 @@ int func_20()
 
 void func_21(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_10 = *uParam0;
+	Global_1915180->f_19742.f_3.f_10 = *uParam0;
 }
 
 void func_22(int iParam0)
 {
-	Global_1915170->f_19742.f_3.f_9 = iParam0;
+	Global_1915180->f_19742.f_3.f_9 = iParam0;
 }
 
 void func_23(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_1 = uParam0;
+	Global_1915180->f_19742.f_3.f_1 = uParam0;
 }
 
 void func_24(var uParam0)
 {
-	Global_1915170->f_19742.f_3.f_36 = uParam0;
+	Global_1915180->f_19742.f_3.f_36 = uParam0;
 }
 
 bool func_25(int iParam0)
 {
 	bool bVar0;
 
-	bVar0 = Global_1915170->f_19742.f_3.f_39 != iParam0;
-	Global_1915170->f_19742.f_3.f_39 = iParam0;
+	bVar0 = Global_1915180->f_19742.f_3.f_39 != iParam0;
+	Global_1915180->f_19742.f_3.f_39 = iParam0;
 	return bVar0;
 }
 
@@ -418,14 +418,14 @@ bool func_26(int iParam0)
 {
 	bool bVar0;
 
-	bVar0 = Global_1915170->f_19742.f_3.f_38 != iParam0;
-	Global_1915170->f_19742.f_3.f_38 = iParam0;
+	bVar0 = Global_1915180->f_19742.f_3.f_38 != iParam0;
+	Global_1915180->f_19742.f_3.f_38 = iParam0;
 	return bVar0;
 }
 
 void func_27()
 {
-	Global_1915170->f_19742.f_3 = 0;
+	Global_1915180->f_19742.f_3 = 0;
 }
 
 bool func_28(var uParam0, int iParam1)
@@ -440,7 +440,7 @@ void func_29(var uParam0, int iParam1)
 
 var func_30()
 {
-	return Global_1915170->f_19742.f_3.f_13;
+	return Global_1915180->f_19742.f_3.f_13;
 }
 
 char* func_31()
@@ -450,11 +450,11 @@ char* func_31()
 
 var func_32()
 {
-	return Global_1915170->f_19742.f_3.f_16;
+	return Global_1915180->f_19742.f_3.f_16;
 }
 
 var func_33()
 {
-	return Global_1915170->f_19742.f_3.f_10;
+	return Global_1915180->f_19742.f_3.f_10;
 }
 

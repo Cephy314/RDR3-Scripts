@@ -74,17 +74,17 @@ int func_4()
 	return 0;
 }
 
-int func_5(int iParam0, bool bParam1, int iParam2)
+int func_5(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
 	if (Global_1572887->f_12 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1898164->f_163;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1898164->f_164;
 		}
@@ -100,7 +100,7 @@ int func_5(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -175,7 +175,7 @@ int func_6(var uParam0)
 			}
 			else
 			{
-				uParam0->f_1 = MAP::_0x554D9D53F696D002(2098831270, vLocal_5);
+				uParam0->f_1 = MAP::_BLIP_ADD_FOR_COORD(2098831270, vLocal_5);
 				func_13(uParam0);
 			}
 			func_14(uParam0, 1);
@@ -252,7 +252,7 @@ int func_12(var uParam0)
 
 void func_13(var uParam0)
 {
-	MAP::SET_BLIP_SPRITE(uParam0->f_1, -1733535731, true);
+	MAP::SET_BLIP_SPRITE(uParam0->f_1, joaat("BLIP_TAXIDERMIST"), true);
 }
 
 void func_14(var uParam0, int iParam1)

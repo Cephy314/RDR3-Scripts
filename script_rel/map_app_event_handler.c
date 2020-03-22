@@ -40,7 +40,7 @@ void __EntryFunction__()
 				func_3(&Var0, &Var4);
 				switch (Var0.f_2)
 				{
-					case -118315613:
+					case joaat("zone"):
 						Var4.f_4 = { Var0 };
 						Var4 = { Var0 };
 						switch (Var0)
@@ -56,7 +56,7 @@ void __EntryFunction__()
 						}
 						Var4.f_28 = 1;
 						break;
-					case 651783971:
+					case joaat("Blip"):
 						Var4 = { Var0 };
 						switch (Var0)
 						{
@@ -99,12 +99,12 @@ void func_1(var uParam0)
 	uParam0->f_14 = -1;
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST_FROM_PATH("", "MapFocus");
 	uParam0->f_10 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_8, "Region", "");
-	uParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_8, "ItemHovered", 0);
+	uParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_8, "ItemHovered", false);
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_8, "HoveredName", "");
-	HUD::_0xF66090013DE648D5("FMMC");
-	if (TXD::_0xBA0163B277C2D2D0(-1859668514))
+	HUD::_TEXT_DATABASE_REQUEST("FMMC");
+	if (TXD::_DOES_STREAMED_TXD_EXIST(-1859668514))
 	{
-		TXD::_0xDB1BD07FB464584D(-1859668514, 0);
+		TXD::_REQUEST_STREAMED_TXD(-1859668514, false);
 	}
 	uParam0->f_28 = 1;
 }
@@ -115,42 +115,42 @@ void func_2(var uParam0)
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
-void func_3(var uParam0, var uParam1)
+void func_3(int iParam0, var uParam1)
 {
-	switch (uParam0->f_2)
+	switch (iParam0->f_2)
 	{
-		case -590699808:
-			switch (*uParam0)
+		case joaat("district"):
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_24 = func_13(func_12(uParam0));
+					uParam1->f_24 = func_13(func_12(iParam0));
 					uParam1->f_28 = 1;
 					break;
 			}
 			break;
 		case -2006263512:
-			switch (*uParam0)
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_26 = func_12(uParam0);
+					uParam1->f_26 = func_12(iParam0);
 					uParam1->f_28 = 1;
 					break;
 			}
 			break;
 		case -1666016325:
-			switch (*uParam0)
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_27 = func_12(uParam0);
+					uParam1->f_27 = func_12(iParam0);
 					uParam1->f_28 = 1;
 					break;
 			}
 			break;
-		case 1138540229:
-			switch (*uParam0)
+		case joaat("town"):
+			switch (*iParam0)
 			{
 				case -1740156697:
-					uParam1->f_25 = func_14(func_12(uParam0));
+					uParam1->f_25 = func_14(func_12(iParam0));
 					uParam1->f_28 = 1;
 					break;
 			}
@@ -221,7 +221,7 @@ int func_6(var uParam0)
 				case 0:
 					uParam0->f_16 = func_17(uParam0->f_14);
 					uParam0->f_20 = func_23(uParam0->f_13);
-					if (!TXD::_0xBA0163B277C2D2D0(uParam0->f_20))
+					if (!TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_20))
 					{
 						uParam0->f_20 = func_24();
 					}
@@ -232,9 +232,9 @@ int func_6(var uParam0)
 			uParam0->f_20 = func_25(uParam0->f_17, uParam0->f_19);
 			break;
 	}
-	if (TXD::_0xBA0163B277C2D2D0(uParam0->f_20))
+	if (TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_20))
 	{
-		TXD::_0xDB1BD07FB464584D(uParam0->f_20, 1);
+		TXD::_REQUEST_STREAMED_TXD(uParam0->f_20, true);
 		uParam0->f_21 = 1;
 		return 1;
 	}
@@ -265,12 +265,12 @@ int func_8(var uParam0)
 		uParam0->f_19 = 0;
 		return 0;
 	}
-	if (TXD::_0xBA0163B277C2D2D0(uParam0->f_20))
+	if (TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_20))
 	{
 		if (!uParam0->f_21)
 		{
 			uParam0->f_29 = 0;
-			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(-2042186616, -556114113);
+			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), -556114113);
 			return 1;
 		}
 	}
@@ -328,11 +328,11 @@ void func_11(var uParam0)
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_8);
 }
 
-int func_12(var uParam0)
+int func_12(int iParam0)
 {
-	if (uParam0->f_1 != 0)
+	if (iParam0->f_1 != 0)
 	{
-		return uParam0->f_1;
+		return iParam0->f_1;
 	}
 	return -1;
 }
@@ -341,15 +341,15 @@ int func_13(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2025841068:
+		case joaat("bayounwa"):
 			return 0;
-		case 822658194:
+		case joaat("bigvalley"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case 476637847:
+		case joaat("greatplains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -357,17 +357,17 @@ int func_13(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case 131399519:
+		case joaat("heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case -864275692:
+		case joaat("scarlettmeadows"):
 			return 11;
-		case 1684533001:
+		case joaat("talltrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case -2145992129:
+		case joaat("riobravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -383,13 +383,13 @@ int func_14(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 7359335:
+		case joaat("annesburg"):
 			return 78;
-		case -744494798:
+		case joaat("ARMADILLO"):
 			return 120;
-		case -1708386982:
+		case joaat("beechershope"):
 			return 37;
-		case 1053078005:
+		case joaat("blackwater"):
 			return 38;
 		case 1778899666:
 			return 93;
@@ -397,37 +397,37 @@ int func_14(int iParam0)
 			return 82;
 		case 1862420670:
 			return 95;
-		case -1851305682:
+		case joaat("cornwall"):
 			return 65;
 		case -473051294:
 			return 69;
-		case 406627834:
+		case joaat("lagras"):
 			return 3;
 		case 1463094051:
 			return 110;
-		case 2046780049:
+		case joaat("rhodes"):
 			return 105;
 		case -765540529:
 			return 5;
 		case 2147354003:
 			return 32;
-		case 427683330:
+		case joaat("strawberry"):
 			return 26;
-		case -1524959147:
+		case joaat("tumbleweed"):
 			return 115;
-		case 459833523:
+		case joaat("valentine"):
 			return 76;
-		case 2126321341:
+		case joaat("vanhorn"):
 			return 92;
-		case -872622034:
+		case joaat("wallace"):
 			return 35;
-		case 1663398575:
+		case joaat("wapiti"):
 			return 56;
 		case -1207133769:
 		case 201158410:
 		case 1654810713:
 			return 57;
-		case 1299204683:
+		case joaat("manicato"):
 			return 61;
 	}
 	return -1;
@@ -461,11 +461,11 @@ int func_16(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -221059932:
+		case joaat("AMBARINO"):
 			return -594748684;
-		case 10837344:
+		case joaat("LEMOYNE"):
 			return 1072597802;
-		case 2045157995:
+		case joaat("newaustin"):
 			return 1259085938;
 		case -1289136221:
 			return 1762760291;
@@ -475,7 +475,7 @@ int func_16(int iParam0)
 			return -960313506;
 		case -1247148211:
 			return -1581676015;
-		case 1935063277:
+		case joaat("guarma"):
 			return -1431514117;
 		default:
 			break;
@@ -488,265 +488,265 @@ int func_17(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -4613767;
+			return joaat("REGION_BAY_CRAWDADWILLIES");
 		case 1:
-			return 1567162363;
+			return joaat("REGION_BAY_MACOMBS_END");
 		case 2:
-			return 456471693;
+			return joaat("REGION_BAY_MERKINSWALLER");
 		case 3:
-			return -1772963474;
+			return joaat("REGION_BAY_LAGRAS");
 		case 4:
-			return 1881496386;
+			return joaat("REGION_BAY_LAKAY");
 		case 5:
-			return 711768994;
+			return joaat("REGION_BAY_SAINT_DENIS");
 		case 6:
-			return -440834066;
+			return joaat("REGION_BAY_ORANGE_PLANTATION");
 		case 7:
-			return -1363847832;
+			return joaat("REGION_BAY_SERIAL_KILLER");
 		case 8:
-			return 967769300;
+			return joaat("REGION_BAY_SERENDIPITY");
 		case 9:
-			return -1436873944;
+			return joaat("REGION_BAY_SHADYBELLE");
 		case 10:
-			return -1585669139;
+			return joaat("REGION_BAY_SILTWATERSTRAND");
 		case 11:
-			return 16791368;
+			return joaat("REGION_BGV_APPLESEEDTIMBER");
 		case 12:
-			return 1452922822;
+			return joaat("REGION_BGV_BERYLS_DREAM");
 		case 13:
-			return 549538301;
+			return joaat("REGION_BGV_BLACKBONEFOREST_TRAPPER");
 		case 14:
-			return 974698954;
+			return joaat("REGION_BGV_DAKOTARIVER_TRAPPER");
 		case 15:
-			return 445881012;
+			return joaat("REGION_BGV_FORTRIGGS");
 		case 16:
-			return -2043891857;
+			return joaat("REGION_BGV_HANGINGDOG");
 		case 17:
-			return 419656993;
+			return joaat("REGION_BGV_LONEMULESTEAD");
 		case 18:
-			return -1732457315;
+			return joaat("REGION_BGV_MISSING_HUSBAND");
 		case 19:
-			return 1794318026;
+			return joaat("REGION_BGV_MONTO_REST");
 		case 20:
-			return 2035159966;
+			return joaat("REGION_BGV_OWANJILA_DAM");
 		case 21:
-			return 770832805;
+			return joaat("REGION_BGV_PAINTEDSKY");
 		case 22:
-			return -1109814766;
+			return joaat("REGION_BGV_PRONGHORN");
 		case 24:
-			return -1075550363;
+			return joaat("REGION_BGV_SHACK");
 		case 23:
-			return -1080317735;
+			return joaat("REGION_BGV_RIGGS_STATION");
 		case 25:
-			return 2138576151;
+			return joaat("REGION_BGV_SHEPHERDS_RISE");
 		case 26:
-			return 1180954297;
+			return joaat("REGION_BGV_STRAWBERRY");
 		case 27:
-			return 783603394;
+			return joaat("REGION_BGV_VALLEY_VIEW");
 		case 28:
-			return 1162337247;
+			return joaat("REGION_BGV_WALLACE_STATION");
 		case 29:
-			return -170458336;
+			return joaat("REGION_BGV_WATSONSCABIN");
 		case 30:
-			return 1285083821;
+			return joaat("REGION_BLU_CANEBREAK_MANOR");
 		case 31:
-			return -1840907462;
+			return joaat("REGION_BLU_COPPERHEAD");
 		case 32:
-			return 756710130;
+			return joaat("REGION_BLU_SISIKA");
 		case 33:
-			return 388370024;
+			return joaat("REGION_CML_BACCHUSBRIDGE");
 		case 34:
-			return 1092296123;
+			return joaat("REGION_CML_DINO_LADY");
 		case 35:
-			return 467491346;
+			return joaat("REGION_CML_OLDFORTWALLACE");
 		case 36:
-			return -1391584612;
+			return joaat("REGION_CML_SIXPOINTCABIN");
 		case 37:
-			return -152111346;
+			return joaat("REGION_GRT_BEECHERS");
 		case 38:
-			return 1447551317;
+			return joaat("REGION_GRT_BLACKWATER");
 		case 39:
-			return 153136092;
+			return joaat("REGION_GRT_QUAKERS_COVE");
 		case 40:
-			return 1304405732;
+			return joaat("REGION_GRZ_ADLERRANCH");
 		case 41:
-			return 1074984055;
+			return joaat("REGION_GRZ_DEAD_RIVAL");
 		case 50:
-			return 1087476368;
+			return joaat("REGION_GRZ_CALUMETRAVINE");
 		case 51:
-			return -1768057340;
+			return joaat("REGION_GRE_CIVIL_WAR_BRIDE");
 		case 42:
-			return 1218874593;
+			return joaat("REGION_GRZ_CHEZPORTER");
 		case 52:
-			return -1438443836;
+			return joaat("REGION_GRZ_COHUTTA");
 		case 43:
-			return -2036340415;
+			return joaat("REGION_GRZ_COLTER");
 		case 44:
-			return 803939643;
+			return joaat("REGION_GRZ_FROZEN_EXPLORER");
 		case 53:
-			return -632496195;
+			return joaat("REGION_GRZ_GUNFIGHT");
 		case 45:
-			return -965943619;
+			return joaat("REGION_GRZ_MILLESANI_CLAIM");
 		case 46:
-			return 283532073;
+			return joaat("REGION_GRZ_MOUNTAIN_MAN");
 		case 47:
-			return -69067491;
+			return joaat("REGION_GRZ_STARVING_CHILDREN");
 		case 48:
-			return -1864895118;
+			return joaat("REGION_GRZ_TEMPEST_RIM");
 		case 54:
-			return -1929806571;
+			return joaat("REGION_GRZ_THELOFT");
 		case 55:
-			return -698525417;
+			return joaat("REGION_GRE_VETERAN");
 		case 56:
-			return -1149739894;
+			return joaat("REGION_GRZ_WAPITI");
 		case 49:
-			return 380507325;
+			return joaat("REGION_GRZ_WINTERMINING_TOWN");
 		case 57:
-			return 407796241;
+			return joaat("REGION_GUA_AGUASDULCES");
 		case 58:
-			return -152267914;
+			return joaat("REGION_GUA_CAMP");
 		case 59:
-			return -1675443320;
+			return joaat("REGION_GUA_CINCOTORRES");
 		case 60:
-			return 1940341639;
+			return joaat("REGION_GUA_LACAPILLA");
 		case 61:
-			return 1846596114;
+			return joaat("REGION_GUA_MANICATO");
 		case 62:
-			return 907708501;
+			return joaat("REGION_HRT_ABANDONED_MILL");
 		case 64:
-			return 1825644981;
+			return joaat("REGION_HRT_CARMODYDELL");
 		case 65:
-			return 2065937607;
+			return joaat("REGION_HRT_CORNWALLKEROSENE");
 		case 66:
-			return -211317417;
+			return joaat("REGION_HRT_CROP_FARM");
 		case 67:
-			return 1801307910;
+			return joaat("REGION_HRT_CUMBERLANDFALLS");
 		case 68:
-			return -4118897;
+			return joaat("REGION_HRT_DOWNSRANCH");
 		case 69:
-			return 1853610692;
+			return joaat("REGION_HRT_EMERALDRANCH");
 		case 70:
-			return -1574644415;
+			return joaat("REGION_HRT_GRANGERS_HOGGERY");
 		case 71:
-			return 2133055515;
+			return joaat("REGION_HRT_HORSESHOEOVERLOOK");
 		case 72:
-			return -1413401932;
+			return joaat("REGION_HRT_LARNEDSOD");
 		case 73:
-			return 801090761;
+			return joaat("REGION_HRT_LOONY_CULT");
 		case 74:
-			return 2131218644;
+			return joaat("REGION_HRT_LUCKYSCABIN");
 		case 75:
-			return 1708823660;
+			return joaat("REGION_HRT_SWANSONS_STATION");
 		case 76:
-			return 7976942;
+			return joaat("REGION_HRT_VALENTINE");
 		case 77:
-			return 2111120505;
+			return joaat("REGION_ROA_ABERDEENPIGFARM");
 		case 78:
-			return 176893118;
+			return joaat("REGION_ROA_ANNESBURG");
 		case 79:
-			return 1179148161;
+			return joaat("REGION_ROA_BEAVERHOLLOW");
 		case 63:
-			return 602306665;
+			return joaat("REGION_ROA_BEECHERS_C");
 		case 80:
-			return 547412068;
+			return joaat("REGION_ROA_BLACK_BALSAM_RISE");
 		case 81:
-			return -1539748801;
+			return joaat("REGION_ROA_BRANDYWINE_DROP");
 		case 82:
-			return -1605119912;
+			return joaat("REGION_ROA_BUTCHERCREEK");
 		case 83:
-			return -884464063;
+			return joaat("REGION_ROA_DOVERHILL");
 		case 84:
-			return -1420970720;
+			return joaat("REGION_ROA_HAPPY_FAMILY");
 		case 85:
-			return 1017024547;
+			return joaat("REGION_ROA_ISOLATIONIST");
 		case 86:
-			return -1204497306;
+			return joaat("REGION_ROA_MACLEANSHOUSE");
 		case 87:
-			return -1621069480;
+			return joaat("REGION_ROA_MOSSY_FLATS");
 		case 88:
-			return -458604261;
+			return joaat("REGION_ROA_ROANOKE_VALLEY");
 		case 89:
-			return -923391614;
+			return joaat("REGION_ROA_ROCKYSEVEN");
 		case 90:
-			return -689247089;
+			return joaat("REGION_ROA_TRAPPER");
 		case 91:
-			return 44049568;
+			return joaat("REGION_ROA_VANHORNMANSION");
 		case 92:
-			return 1350259552;
+			return joaat("REGION_ROA_VANHORNPOST");
 		case 93:
-			return -61661574;
+			return joaat("REGION_SCM_BRAITHWAITEMANOR");
 		case 94:
-			return -725338054;
+			return joaat("REGION_SCM_BULGERGLADE");
 		case 95:
-			return -770123507;
+			return joaat("REGION_SCM_CALIGAHALL");
 		case 96:
-			return 1322486734;
+			return joaat("REGION_SCM_CATFISHJACKSONS");
 		case 97:
-			return -460939553;
+			return joaat("REGION_SCM_CLEMENSCOVE");
 		case 98:
-			return -1451863552;
+			return joaat("REGION_SCM_CLEMENSPOINT");
 		case 99:
-			return 173833068;
+			return joaat("REGION_SCM_COMPSONS_STEAD");
 		case 100:
-			return -1681004136;
+			return joaat("REGION_SCM_DAIRY_FARM");
 		case 101:
-			return 713715980;
+			return joaat("REGION_SCM_HORSE_SHOP");
 		case 102:
-			return -31204969;
+			return joaat("REGION_SCM_LONNIESSHACK");
 		case 103:
-			return -1720064790;
+			return joaat("REGION_SCM_LOVE_TRIANGLE");
 		case 104:
-			return -532172775;
+			return joaat("REGION_SCM_RADLEYS_PASTURE");
 		case 105:
-			return -739067737;
+			return joaat("REGION_SCM_RHODES");
 		case 106:
-			return -1203133835;
+			return joaat("REGION_SCM_SLAVE_PEN");
 		case 107:
-			return -1947411598;
+			return joaat("REGION_TAL_AURORA_BASIN");
 		case 109:
-			return -1298718762;
+			return joaat("REGION_TAL_COCHINAY");
 		case 110:
-			return -595083064;
+			return joaat("REGION_TAL_MANZANITAPOST");
 		case 111:
-			return 884833917;
+			return joaat("REGION_TAL_PACIFICUNIONRR");
 		case 112:
-			return 2141950651;
+			return joaat("REGION_TAL_TANNERSREACH");
 		case 108:
-			return -1049753365;
+			return joaat("REGION_TAL_DEAD_SETTLER");
 		case 113:
-			return -1437650729;
+			return joaat("REGION_TAL_TRAPPER");
 		case 126:
-			return 672925454;
+			return joaat("REGION_HEN_MACFARLANES_RANCH");
 		case 127:
-			return 846062774;
+			return joaat("REGION_HEN_THIEVES_LANDING");
 		case 120:
-			return 1369756178;
+			return joaat("REGION_CHO_ARMADILLO");
 		case 121:
-			return -736172423;
+			return joaat("REGION_CHO_COOTS_CHAPEL");
 		case 122:
-			return 1597070291;
+			return joaat("REGION_CHO_DON_JULIO_HOUSE");
 		case 124:
-			return -159501564;
+			return joaat("REGION_CHO_RIDGEWOOD_FARM");
 		case 123:
-			return -1438809608;
+			return joaat("REGION_CHO_RILEYS_CHARGE");
 		case 125:
-			return -102682392;
+			return joaat("REGION_CHO_TWIN_ROCKS");
 		case 114:
-			return -81068979;
+			return joaat("REGION_GAP_GAPTOOTH_BREACH");
 		case 115:
-			return 227618407;
+			return joaat("REGION_GAP_TUMBLEWEED");
 		case 116:
-			return 2106043438;
+			return joaat("REGION_GAP_RATHSKELLER_FORK");
 		case 129:
 			return -1868356491;
 		case 117:
-			return -1380256064;
+			return joaat("REGION_RIO_BENEDICT_POINT");
 		case 118:
-			return -2118469183;
+			return joaat("REGION_RIO_FORT_MERCER");
 		case 119:
-			return -558997834;
+			return joaat("REGION_RIO_PLAIN_VIEW");
 		case 128:
-			return 658339366;
+			return joaat("REGION_CENTRALUNIONRR");
 		default:
 			break;
 	}
@@ -758,17 +758,17 @@ int func_18(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 675537701;
+			return joaat("DISTRICT_BAYOU_NWA");
 		case 1:
-			return -1915988145;
+			return joaat("DISTRICT_BIG_VALLEY");
 		case 2:
 			return 38535626;
 		case 3:
-			return 1904167574;
+			return joaat("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
-			return 244711249;
+			return joaat("DISTRICT_GREAT_PLAINS");
 		case 5:
-			return -1859792564;
+			return joaat("DISTRICT_GRIZZLIES");
 		case 6:
 			return -1808688941;
 		case 7:
@@ -780,17 +780,17 @@ int func_18(int iParam0)
 		case 10:
 			return 821748379;
 		case 11:
-			return 196685551;
+			return joaat("DISTRICT_SCARLETT_MEADOWS");
 		case 12:
-			return 1983548039;
+			return joaat("DISTRICT_TALL_TREES");
 		case 13:
-			return 985737465;
+			return joaat("DISTRICT_GAPTOOTH_RIDGE");
 		case 14:
-			return -735550853;
+			return joaat("DISTRICT_RIO_BRAVO");
 		case 15:
-			return -1716084250;
+			return joaat("DISTRICT_CHOLLA_SPRINGS");
 		case 16:
-			return 869827975;
+			return joaat("DISTRICT_HENNIGANS_STEAD");
 		default:
 			break;
 	}
@@ -860,12 +860,12 @@ bool func_20(int iParam0, var uParam1)
 {
 	var uVar0;
 	var uVar1;
-	var uVar2;
+	bool bVar2;
 
-	uVar2 = MAP::SET_BLIP_FLASHES(uParam0, &uVar0, &uVar1);
+	bVar2 = MAP::SET_BLIP_FLASHES(iParam0, &uVar0, &uVar1);
 	*uParam1 = uVar0;
 	uParam1->f_1 = uVar1;
-	return uVar2;
+	return bVar2;
 }
 
 int func_21(int iParam0, var uParam1)
@@ -912,27 +912,27 @@ int func_23(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 406627834:
+		case joaat("lagras"):
 			return 412187666;
 		case -765540529:
 			return -48955357;
-		case 427683330:
+		case joaat("strawberry"):
 			return -1366448499;
-		case 1053078005:
+		case joaat("blackwater"):
 			return -2142170718;
 		case -473051294:
 			return -652262915;
-		case 459833523:
+		case joaat("valentine"):
 			return 1109427018;
-		case 7359335:
+		case joaat("annesburg"):
 			return -1353234788;
-		case 2126321341:
+		case joaat("vanhorn"):
 			return -1965958161;
-		case 2046780049:
+		case joaat("rhodes"):
 			return -1059106609;
-		case -744494798:
+		case joaat("ARMADILLO"):
 			return -1119990720;
-		case -1524959147:
+		case joaat("tumbleweed"):
 			return 539298361;
 		default:
 			break;
@@ -1094,7 +1094,7 @@ void func_26(var uParam0)
 
 void func_27(var uParam0)
 {
-	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(-2042186616, 1136348382))
+	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), 1136348382))
 	{
 		uParam0->f_29 = 1;
 	}
@@ -1157,7 +1157,7 @@ int func_29(var uParam0)
 		uParam0->f_21 = 0;
 		return 0;
 	}
-	if (TXD::_0xBA0163B277C2D2D0(uParam0->f_20) && TXD::_0xBE72591D1509FFE4(uParam0->f_20))
+	if (TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_20) && TXD::_HAS_STREAMED_TXD_LOADED(uParam0->f_20))
 	{
 		uParam0->f_21 = 0;
 		return 1;
@@ -1225,10 +1225,10 @@ void func_31(int iParam0, var uParam1)
 	iVar2 = MISC::GET_HASH_KEY(&(((*Global_1347702)[uParam1->f_23 /*49*/])->f_3));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", MISC::GET_HASH_KEY(&cVar0));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", iVar2);
-	if (!func_53(((*Global_1347702)[uParam1->f_23 /*49*/])->f_12, 1) && (func_53(((*Global_1347702)[uParam1->f_23 /*49*/])->f_12, 2) || ((*Global_1347702)[uParam1->f_23 /*49*/])->f_36 == -1822497728))
+	if (!func_53(((*Global_1347702)[uParam1->f_23 /*49*/])->f_12, 1) && (func_53(((*Global_1347702)[uParam1->f_23 /*49*/])->f_12, 2) || ((*Global_1347702)[uParam1->f_23 /*49*/])->f_36 == joaat("BLIP_RC")))
 	{
 		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", -1859668514);
-		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTX", -712210889);
+		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTX", joaat("image"));
 	}
 	else
 	{
@@ -1253,7 +1253,7 @@ void func_32(int iParam0, var uParam1)
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "name", func_64(iParam0));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", MISC::GET_HASH_KEY(func_61(iVar0)));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", func_65(iParam0));
-	if (TXD::_0xBA0163B277C2D2D0(uParam1->f_20))
+	if (TXD::_DOES_STREAMED_TXD_EXIST(uParam1->f_20))
 	{
 		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", func_23(iParam0));
 		DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTX", func_23(iParam0));
@@ -1296,7 +1296,7 @@ void func_33(int iParam0, var uParam1)
 	func_26(uParam1);
 	uParam1->f_9 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam1->f_8, "BLIP");
 	Var2 = { func_66(PLAYER::INT_TO_PLAYERINDEX(iVar1)) };
-	DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", func_67(PLAYER::GET_PLAYER_NAME(PLAYER::INT_TO_PLAYERINDEX(iVar1)), 109029619));
+	DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam1->f_9, "name", func_67(PLAYER::GET_PLAYER_NAME(PLAYER::INT_TO_PLAYERINDEX(iVar1)), joaat("COLOR_PURE_WHITE")));
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description", -436556357);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "description_title", 0);
 	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam1->f_9, "imageTXD", MISC::GET_HASH_KEY(func_69(0, &Var2, func_68(0))));
@@ -2194,7 +2194,7 @@ struct<7> func_66(int iParam0)
 
 char* func_67(char* sParam0, int iParam1)
 {
-	if (iParam1 == 109029619)
+	if (iParam1 == joaat("COLOR_PURE_WHITE"))
 	{
 		return MISC::_CREATE_VAR_STRING(10, "PLAYER_STRING", sParam0);
 	}
@@ -2210,12 +2210,12 @@ var func_68(int iParam0)
 	return func_102(cVar0);
 }
 
-char* func_69(int iParam0, int* iParam1, var uParam2)
+char* func_69(int iParam0, var uParam1, var uParam2)
 {
 	char* sVar0;
 	int iVar1;
 
-	if (!NETWORK::NETWORK_IS_HANDLE_VALID(iParam1))
+	if (!NETWORK::NETWORK_IS_HANDLE_VALID(uParam1))
 	{
 		return "Invalid Handle";
 	}
@@ -2226,13 +2226,13 @@ char* func_69(int iParam0, int* iParam1, var uParam2)
 		default:
 			sVar0 = "Unknown Type";
 			break;
-			sVar0 = NETWORK::_0xB5C4B18B12A2AF23(iParam1, 0);
+			sVar0 = NETWORK::_0xB5C4B18B12A2AF23(uParam1, 0);
 			break;
 		case 1:
-			iVar1 = NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(iParam1);
+			iVar1 = NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(uParam1);
 			if (iVar1 < 0)
 			{
-				sVar0 = NETWORK::_0xCAF4CA2F87779F8F(iParam1, 0);
+				sVar0 = NETWORK::_0xCAF4CA2F87779F8F(uParam1, 0);
 			}
 			else
 			{
@@ -2545,7 +2545,7 @@ int func_74(int iParam0)
 	return 0;
 }
 
-int func_75(vector3 vParam0, bool bParam3)
+int func_75(vector3 vParam0, int iParam3)
 {
 	int iVar0;
 
@@ -2557,7 +2557,7 @@ int func_75(vector3 vParam0, bool bParam3)
 			return iVar0;
 		}
 	}
-	return func_108(vParam0, bParam3);
+	return func_108(vParam0, iParam3);
 }
 
 int func_76(int iParam0)
@@ -3079,7 +3079,7 @@ char* func_93(int iParam0, int iParam1, vector3 vParam2)
 	return "";
 }
 
-int func_94(var uParam0, int iParam1, int iParam2, int iParam3)
+int func_94(var uParam0, int iParam1, int iParam2, bool bParam3)
 {
 	var uVar0;
 	int iVar1;
@@ -3096,7 +3096,7 @@ int func_94(var uParam0, int iParam1, int iParam2, int iParam3)
 	bVar3 = false;
 	vVar4 = { *uParam0 };
 	STREAMING::REQUEST_COLLISION_AT_COORD(vVar4);
-	while (!MISC::GET_GROUND_Z_FOR_3D_COORD(vVar4, &uVar0, iParam3) && !bVar2)
+	while (!MISC::GET_GROUND_Z_FOR_3D_COORD(vVar4, &uVar0, bParam3) && !bVar2)
 	{
 		if (iVar1 < iParam2)
 		{
@@ -3114,7 +3114,7 @@ int func_94(var uParam0, int iParam1, int iParam2, int iParam3)
 		iVar1 = 1;
 		vVar4.f_2 = (vVar4.z - IntToFloat(iParam1));
 		STREAMING::REQUEST_COLLISION_AT_COORD(vVar4);
-		while (!MISC::GET_GROUND_Z_FOR_3D_COORD(vVar4, &uVar0, iParam3) && !bVar3)
+		while (!MISC::GET_GROUND_Z_FOR_3D_COORD(vVar4, &uVar0, bParam3) && !bVar3)
 		{
 			if (iVar1 < iParam2)
 			{
@@ -3458,27 +3458,27 @@ char* func_98(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2126321341:
+		case joaat("vanhorn"):
 			return "VHT";
 		case -473051294:
 			return "EMR";
-		case 7359335:
+		case joaat("annesburg"):
 			return "ANN";
-		case 406627834:
+		case joaat("lagras"):
 			return "LAG";
-		case 2046780049:
+		case joaat("rhodes"):
 			return "RHO";
-		case 427683330:
+		case joaat("strawberry"):
 			return "STR";
-		case 1053078005:
+		case joaat("blackwater"):
 			return "BLA";
 		case -765540529:
 			return "NBX";
-		case 459833523:
+		case joaat("valentine"):
 			return "VAL";
-		case -744494798:
+		case joaat("ARMADILLO"):
 			return "AMD";
-		case -1524959147:
+		case joaat("tumbleweed"):
 			return "TBL";
 		default:
 			break;
@@ -3491,7 +3491,7 @@ char* func_99(char* sParam0, int iParam1)
 	return MISC::_CREATE_VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
 }
 
-var func_100()
+char* func_100()
 {
 	char cVar0[64];
 
@@ -3501,7 +3501,7 @@ var func_100()
 	return func_102(cVar0);
 }
 
-var func_101(int iParam0)
+char* func_101(int iParam0)
 {
 	char cVar0[64];
 
@@ -3535,7 +3535,7 @@ int func_104(int iParam0)
 
 bool func_105(int iParam0)
 {
-	return func_114(func_113(func_112(iParam0), -1684144076));
+	return func_114(func_113(func_112(iParam0), joaat("has_been_interacted_with")));
 }
 
 int func_106(int iParam0, int iParam1)
@@ -3559,7 +3559,7 @@ int func_106(int iParam0, int iParam1)
 	return -1;
 }
 
-var func_107()
+int func_107()
 {
 	return Global_1894899->f_2;
 }
@@ -3581,7 +3581,7 @@ int func_108(vector3 vParam0, bool bParam3)
 		while (iVar2 >= 0 && !bVar3)
 		{
 			iVar4 = (*Global_1894065)[iVar0 /*51*/][iVar2];
-			if (VOLUME::_0x92A78D0BEDB332A3(((*Global_1888801)[iVar4 /*35*/])->f_3))
+			if (VOLUME::_DOES_VOLUME_EXIST(((*Global_1888801)[iVar4 /*35*/])->f_3))
 			{
 				if (VOLUME::_0xF256A75210C5C0EB(((*Global_1888801)[iVar4 /*35*/])->f_3, vParam0))
 				{
@@ -3711,33 +3711,33 @@ int func_117(int iParam0)
 	switch (iParam0)
 	{
 		case 1100375982:
-			return 1637396385;
+			return joaat("GFH_WAR_VET");
 		case 734354744:
-			return -750821175;
+			return joaat("GFH_FLACO_HERNANDEZ");
 		case -8716208:
-			return 863859481;
-		case 130824026:
-			return -1564456688;
+			return joaat("GFH_JOSIAH_TRELAWNY");
+		case joaat("joe"):
+			return joaat("GFH_JOE");
 		case -705903163:
-			return -43444905;
-		case -190306145:
-			return 878149797;
-		case -1211851008:
-			return -1972063755;
+			return joaat("GFH_SEAN_MACQUIRE");
+		case joaat("black_belle"):
+			return joaat("GFH_BLACK_BELLE");
+		case joaat("sadie_adler"):
+			return joaat("GFH_SADIE_ADLER");
 		case 842749101:
-			return 1140320446;
+			return joaat("GFH_MAMMA_WATSON");
 		case -384872762:
-			return -928778254;
+			return joaat("GFH_THOMAS_SKIFF_CAPTAIN");
 		case 220113328:
-			return -291799454;
+			return joaat("GFH_OBEDIAH_HINTON");
 		case 539824333:
-			return 1886703229;
+			return joaat("GFH_LANGTON");
 		case 1309348282:
-			return -1891887312;
+			return joaat("GFH_BONNIE");
 		case 2048329431:
-			return 1231714993;
+			return joaat("GFH_SHAKY");
 		case -1601260627:
-			return -197170169;
+			return joaat("GFH_TRAIN_CLERK_WALLACE");
 		default:
 			break;
 	}
@@ -3765,7 +3765,7 @@ struct<2> func_118(int iParam0, int iParam1)
 	return Var0;
 }
 
-int func_119(struct<2> Param0, var uParam2, float fParam3, float fParam4, int iParam5, int iParam6)
+int func_119(struct<2> Param0, float fParam2, float fParam3, float fParam4, int iParam5, int iParam6)
 {
 	if (Param0 < fParam3)
 	{

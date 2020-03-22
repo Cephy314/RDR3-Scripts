@@ -101,14 +101,14 @@ int func_6(vector3 vParam0)
 {
 	if ((MISC::GET_FRAME_COUNT() % 10) == 0)
 	{
-		if (!&Global_1938932->f_5[Local_13.f_1 /*11*/])
+		if (!&Global_1938942->f_5[Local_13.f_1 /*11*/])
 		{
-			if (MISC::GET_DISTANCE_BETWEEN_COORDS(Global_36, vParam0, true) > 20f)
+			if (MISC::GET_DISTANCE_BETWEEN_COORDS(Global_35, vParam0, true) > 20f)
 			{
 				return 1;
 			}
 		}
-		if (func_7(&Global_1939168, 4194304))
+		if (func_7(&Global_1939178, 4194304))
 		{
 			return 1;
 		}

@@ -44,7 +44,7 @@ void __EntryFunction__()
 {
 	fLocal_29 = 1f;
 	fLocal_30 = 1f;
-	iLocal_31 = 675980447;
+	iLocal_31 = joaat("w_binocular_inner01");
 	if (bScriptParam_0)
 	{
 	}
@@ -257,9 +257,9 @@ void func_3(bool bParam0)
 
 void func_4()
 {
-	if (UIAPPS::_IS_APP_RUNNING(29649618) || UIAPPS::_IS_APP_ACTIVE(29649618))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) || UIAPPS::_IS_APP_ACTIVE(joaat("pause_menu")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(29649618);
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("pause_menu"));
 	}
 	if (UIAPPS::_IS_APP_RUNNING(joaat("abilities")) || UIAPPS::_IS_APP_ACTIVE(joaat("abilities")))
 	{
@@ -309,7 +309,7 @@ void func_5()
 	{
 		uVar1 = -1;
 		func_31(Global_3407872, &uVar1);
-		iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(-1486408849, &uVar1, 1, 14335);
+		iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(joaat("net_ugc_end_flow_transition_online"), &uVar1, 1, 14335);
 		if (SCRIPTS::_DOES_THREAD_EXIST(iVar2))
 		{
 			iLocal_35 = 1;
@@ -331,12 +331,12 @@ int func_6()
 	{
 		return 0;
 	}
-	return Global_1070355->f_5;
+	return Global_1070356->f_5;
 }
 
 bool func_7()
 {
-	return Global_1070355->f_27136.f_19.f_3 != 0;
+	return Global_1070356->f_27136.f_19.f_3 != 0;
 }
 
 void func_8(bool bParam0)
@@ -381,14 +381,14 @@ void func_13(bool bParam0, int iParam1)
 	{
 		if (iParam1 != -1)
 		{
-			Global_1099293->f_476 = 0;
+			Global_1099294->f_476 = 0;
 		}
 		else
 		{
-			Global_1099293->f_476 = 1;
+			Global_1099294->f_476 = 1;
 		}
 		func_14(57);
-		Global_1099293->f_475 = iParam1;
+		Global_1099294->f_475 = iParam1;
 	}
 	else
 	{
@@ -398,7 +398,7 @@ void func_13(bool bParam0, int iParam1)
 
 int func_14(int iParam0)
 {
-	if (func_34(&(Global_1099293->f_4), iParam0, 5))
+	if (func_34(&(Global_1099294->f_4), iParam0, 5))
 	{
 		return 1;
 	}
@@ -409,15 +409,15 @@ int func_15(int iParam0)
 {
 	if (iParam0 == 255)
 	{
-		return Global_1099293->f_1;
+		return Global_1099294->f_1;
 	}
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
 		return 26;
 	}
-	if (&Global_1273882->f_22[iParam0])
+	if (&Global_1275573->f_22[iParam0])
 	{
-		return ((*Global_1097609)[iParam0 /*51*/])->f_1;
+		return ((*Global_1097610)[iParam0 /*51*/])->f_1;
 	}
 	return 26;
 }
@@ -443,26 +443,26 @@ void func_16(bool bParam0, bool bParam1)
 			func_36(0, 0, 0, 1);
 		}
 		func_14(0);
-		func_37(&(Global_1099293->f_516));
-		Global_1099293->f_516 = 0f;
-		Global_1099293->f_516.f_5 = 1;
-		Global_1099293->f_516.f_16 = 0;
-		Global_1099293->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
-		Global_1099293->f_516.f_17.f_3 = { 0f, 0f, 0f };
-		Global_1099293->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099293->f_516.f_17.f_9 = -432403087;
-		func_38(&(Global_1099293->f_555));
-		Global_1099293->f_555.f_6 = { Global_1099293->f_516.f_17.f_6 };
-		Global_1099293->f_555 = Global_1099293->f_516;
-		Global_1099293->f_555.f_5 = 1;
+		func_37(&(Global_1099294->f_516));
+		Global_1099294->f_516 = 0f;
+		Global_1099294->f_516.f_5 = 1;
+		Global_1099294->f_516.f_16 = 0;
+		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
+		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
+		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
+		Global_1099294->f_516.f_17.f_9 = -432403087;
+		func_38(&(Global_1099294->f_555));
+		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
+		Global_1099294->f_555 = Global_1099294->f_516;
+		Global_1099294->f_555.f_5 = 1;
 		if (bParam1)
 		{
-			Global_1099293->f_26.f_18 = 0;
-			Global_1099293->f_26.f_19 = 0;
+			Global_1099294->f_26.f_18 = 0;
+			Global_1099294->f_26.f_19 = 0;
 		}
 	}
-	func_39(Global_1099293->f_516, 36);
-	func_40(Global_1099293->f_555, 36);
+	func_39(Global_1099294->f_516, 36);
+	func_40(Global_1099294->f_555, 36);
 }
 
 void func_17(var uParam0, int iParam1)
@@ -472,8 +472,8 @@ void func_17(var uParam0, int iParam1)
 
 void func_18()
 {
-	Global_1939057->f_102 = -1;
-	Global_1939057->f_102.f_1 = 0;
+	Global_1939067->f_102 = -1;
+	Global_1939067->f_102.f_1 = 0;
 }
 
 void func_19(var uParam0, bool bParam1, bool bParam2)
@@ -514,7 +514,7 @@ int func_20(var uParam0, bool bParam1, bool bParam2)
 
 bool func_21()
 {
-	return SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(-1486408849) > 0;
+	return SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("net_ugc_end_flow_transition_online")) > 0;
 }
 
 void func_22()
@@ -535,7 +535,7 @@ void func_23()
 
 int func_24(int iParam0)
 {
-	if (func_45(&(Global_1099293->f_4), iParam0, 5))
+	if (func_45(&(Global_1099294->f_4), iParam0, 5))
 	{
 		return 1;
 	}
@@ -554,17 +554,17 @@ void func_26()
 
 bool func_27()
 {
-	return Global_1939221->f_1;
+	return Global_1939231->f_1;
 }
 
 void func_28()
 {
-	Global_1939221->f_12 = 1;
+	Global_1939231->f_12 = 1;
 }
 
 void func_29()
 {
-	SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(-1486408849);
+	SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(joaat("net_ugc_end_flow_transition_online"));
 }
 
 int func_30()
@@ -574,7 +574,7 @@ int func_30()
 	int iVar2;
 	int iVar3;
 
-	if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(-1486408849))
+	if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("net_ugc_end_flow_transition_online")))
 	{
 		return 0;
 	}
@@ -658,14 +658,14 @@ void func_31(var uParam0, var uParam1)
 
 void func_32(int iParam0)
 {
-	func_48(&(Global_1070355->f_27136.f_19.f_1), iParam0);
+	func_48(&(Global_1070356->f_27136.f_19.f_1), iParam0);
 }
 
 void func_33(int iParam0)
 {
 	if (func_49(iParam0))
 	{
-		func_50(&(Global_1070355->f_27136.f_19.f_1), iParam0);
+		func_50(&(Global_1070356->f_27136.f_19.f_1), iParam0);
 	}
 }
 
@@ -744,7 +744,7 @@ void func_39(struct<29> Param0, var uParam29, int iParam30)
 	if (Param0.f_16)
 	{
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(Param0.f_27) && Param0.f_28)
+	if (VOLUME::_DOES_VOLUME_EXIST(Param0.f_27) && Param0.f_28)
 	{
 	}
 }
@@ -1085,7 +1085,7 @@ void func_48(var uParam0, int iParam1)
 
 bool func_49(int iParam0)
 {
-	return func_58(Global_1070355->f_27136.f_19.f_1, iParam0);
+	return func_58(Global_1070356->f_27136.f_19.f_1, iParam0);
 }
 
 void func_50(var uParam0, int iParam1)
@@ -1095,35 +1095,35 @@ void func_50(var uParam0, int iParam1)
 
 void func_51(int iParam0)
 {
-	Global_1099293->f_26.f_12 = iParam0;
+	Global_1099294->f_26.f_12 = iParam0;
 }
 
 bool func_52(int iParam0)
 {
-	return (Global_1099293->f_26.f_7 && iParam0) != 0;
+	return (Global_1099294->f_26.f_7 && iParam0) != 0;
 }
 
 bool func_53(int iParam0)
 {
-	return (Global_1099293->f_26.f_9 && iParam0) != 0;
+	return (Global_1099294->f_26.f_9 && iParam0) != 0;
 }
 
 bool func_54(int iParam0)
 {
-	return (Global_1099293->f_4[Global_1100046[iParam0 /*2*/]] && ((*Global_1100046)[iParam0 /*2*/])->f_1) == ((*Global_1100046)[iParam0 /*2*/])->f_1;
+	return (Global_1099294->f_4[Global_1100047[iParam0 /*2*/]] && ((*Global_1100047)[iParam0 /*2*/])->f_1) == ((*Global_1100047)[iParam0 /*2*/])->f_1;
 }
 
 int func_55()
 {
-	if (&Global_1099293 <= 5)
+	if (&Global_1099294 <= 5)
 	{
-		return &Global_1099293;
+		return &Global_1099294;
 	}
-	if (&Global_1099293 <= 22)
+	if (&Global_1099294 <= 22)
 	{
 		return 4;
 	}
-	if (&Global_1099293 <= 25)
+	if (&Global_1099294 <= 25)
 	{
 		return 3;
 	}
@@ -1136,7 +1136,7 @@ void func_56(int iParam0)
 	{
 		return;
 	}
-	Global_1099293->f_26.f_9 = (Global_1099293->f_26.f_9 || iParam0);
+	Global_1099294->f_26.f_9 = (Global_1099294->f_26.f_9 || iParam0);
 }
 
 void func_57(var uParam0, int iParam1)
@@ -1156,6 +1156,6 @@ void func_59(var uParam0, int iParam1)
 
 bool func_60(int iParam0)
 {
-	return (Global_1099293->f_26.f_9 && iParam0) == iParam0;
+	return (Global_1099294->f_26.f_9 && iParam0) == iParam0;
 }
 

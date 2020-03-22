@@ -92,9 +92,9 @@ bool func_3()
 	return func_9(1);
 }
 
-void func_4(var uParam0, int iParam1)
+void func_4(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_5(uParam0))
+	if (bParam1 || !func_5(uParam0))
 	{
 		func_10(uParam0);
 	}
@@ -118,9 +118,9 @@ float func_6(var uParam0)
 	return (func_13() - uParam0->f_1);
 }
 
-void func_7(var uParam0, int iParam1)
+void func_7(int iParam0, int iParam1)
 {
-	*uParam0 = iParam1;
+	*iParam0 = iParam1;
 }
 
 void func_8(var uParam0)
@@ -162,9 +162,9 @@ float func_13()
 	return (BUILTIN::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f);
 }
 
-bool func_14(var uParam0)
+bool func_14(int iParam0)
 {
-	return func_16(Global_1935496->f_27, uParam0);
+	return func_16(Global_1935496->f_27, iParam0);
 }
 
 void func_15(var uParam0, float fParam1)
@@ -175,9 +175,9 @@ void func_15(var uParam0, float fParam1)
 	uParam0->f_2 = 0f;
 }
 
-bool func_16(var uParam0, var uParam1)
+bool func_16(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
 void func_17(var uParam0, int iParam1)

@@ -149,24 +149,24 @@ void func_4()
 	iVar4 = 0;
 	while (iVar4 < 32)
 	{
-		if (!&Global_1273882->f_22[iVar4])
+		if (!&Global_1275573->f_22[iVar4])
 		{
 			func_6(iVar4, 0);
 		}
 		else
 		{
-			iVar18 = &Global_1273882->f_154[iVar4];
+			iVar18 = &Global_1275573->f_154[iVar4];
 			iVar19 = PLAYER::GET_PLAYER_PED(iVar18);
-			if (iVar19 == Global_35)
+			if (iVar19 == Global_34)
 			{
 				bVar5 = true;
-				vVar12 = { Global_36 };
+				vVar12 = { Global_35 };
 			}
 			else
 			{
 				bVar5 = false;
 				vVar12 = { ENTITY::GET_ENTITY_COORDS(iVar19, true, false) };
-				fVar2 = BUILTIN::VDIST2(Global_36, vVar12);
+				fVar2 = BUILTIN::VDIST2(Global_35, vVar12);
 				if (fVar2 > 2500f)
 				{
 					func_6(iVar4, 0);
@@ -293,9 +293,9 @@ void func_5()
 {
 	if (func_7(8))
 	{
-		DECORATOR::DECOR_REMOVE(Global_35, "DigSiteX");
-		DECORATOR::DECOR_REMOVE(Global_35, "DigSiteY");
-		DECORATOR::DECOR_REMOVE(Global_35, "DigSiteZ");
+		DECORATOR::DECOR_REMOVE(Global_34, "DigSiteX");
+		DECORATOR::DECOR_REMOVE(Global_34, "DigSiteY");
+		DECORATOR::DECOR_REMOVE(Global_34, "DigSiteZ");
 		func_13(8);
 	}
 }
@@ -416,7 +416,7 @@ Vector3 func_14(int iParam0, int iParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		return *Global_1199509;
+		return *Global_1201104;
 	}
 	return func_36(iParam0, iParam1);
 }
@@ -450,7 +450,7 @@ void func_17(int iParam0, int iParam1, bool bParam2, int iParam3)
 	iVar0 = 0;
 	if (bParam2)
 	{
-		if (Global_1939168->f_38 == -862059856)
+		if (Global_1939178->f_38 == joaat("WEAPON_KIT_METAL_DETECTOR"))
 		{
 			*iParam3 = 1;
 			if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_0[iParam1])))
@@ -461,7 +461,7 @@ void func_17(int iParam0, int iParam1, bool bParam2, int iParam3)
 	}
 	else if (WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true, 0, false))
 	{
-		if (iVar0 == -862059856)
+		if (iVar0 == joaat("WEAPON_KIT_METAL_DETECTOR"))
 		{
 			*iParam3 = 1;
 			if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_0[iParam1])))
@@ -474,7 +474,7 @@ void func_17(int iParam0, int iParam1, bool bParam2, int iParam3)
 	{
 		if (WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, true, 1, false))
 		{
-			if (iVar0 == -862059856)
+			if (iVar0 == joaat("WEAPON_KIT_METAL_DETECTOR"))
 			{
 				*iParam3 = 1;
 				if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_0[iParam1])))
@@ -545,17 +545,17 @@ void func_22(int iParam0)
 
 void func_23(float fParam0, float fParam1)
 {
-	PED::_0x437C08DB4FEBE2BD(Global_35, "MetalDetectorDistanceToDigSite", fParam0, 10);
-	PED::_0x437C08DB4FEBE2BD(Global_35, "MetalDetectorDetectionValue", fParam1, 10);
+	PED::_0x437C08DB4FEBE2BD(Global_34, "MetalDetectorDistanceToDigSite", fParam0, 10);
+	PED::_0x437C08DB4FEBE2BD(Global_34, "MetalDetectorDetectionValue", fParam1, 10);
 }
 
 void func_24()
 {
 	if (!func_7(8))
 	{
-		DECORATOR::DECOR_SET_FLOAT(Global_35, "DigSiteX", &Global_1199509);
-		DECORATOR::DECOR_SET_FLOAT(Global_35, "DigSiteY", Global_1199509->f_1);
-		DECORATOR::DECOR_SET_FLOAT(Global_35, "DigSiteZ", Global_1199509->f_2);
+		DECORATOR::DECOR_SET_FLOAT(Global_34, "DigSiteX", &Global_1201104);
+		DECORATOR::DECOR_SET_FLOAT(Global_34, "DigSiteY", Global_1201104->f_1);
+		DECORATOR::DECOR_SET_FLOAT(Global_34, "DigSiteZ", Global_1201104->f_2);
 		func_20(8);
 	}
 }
@@ -695,7 +695,7 @@ void func_28(bool bParam0, int iParam1)
 	sVar2 = func_54();
 	if (bParam0)
 	{
-		iVar3 = Global_35;
+		iVar3 = Global_34;
 	}
 	else
 	{
@@ -854,7 +854,7 @@ int func_38(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	if ((Global_1900718->f_67 && !func_60(iParam0, 1)) || func_61(32768))
 	{
-		if (!func_60(iParam0, 262144) || !Global_1904612->f_8189)
+		if (!func_60(iParam0, 262144) || !Global_1904613->f_8198)
 		{
 			return 0;
 		}
@@ -870,9 +870,9 @@ void func_39(int iParam0, int iParam1)
 {
 	var uVar0;
 
-	uVar0 = Global_1904612[iParam0];
+	uVar0 = Global_1904613[iParam0];
 	MISC::SET_BIT(&uVar0, iParam1);
-	(*Global_1904612)[iParam0] = uVar0;
+	(*Global_1904613)[iParam0] = uVar0;
 }
 
 char* func_40()
@@ -928,7 +928,7 @@ void func_45(bool bParam0, int iParam1)
 	sVar1 = func_67();
 	if (bParam0)
 	{
-		AUDIO::_0xF1C5310FEAA36B48(&(iLocal_275[iLocal_281]), sVar1, Global_35, uVar0, false, 0);
+		AUDIO::_0xF1C5310FEAA36B48(&(iLocal_275[iLocal_281]), sVar1, Global_34, uVar0, false, 0);
 		iLocal_281++;
 		if (iLocal_281 >= 5)
 		{
@@ -1059,7 +1059,7 @@ bool func_56(int iParam0)
 
 bool func_57(int iParam0, int iParam1)
 {
-	return MISC::IS_BIT_SET(&(Global_17173.f_2563[iParam0]), iParam1);
+	return MISC::IS_BIT_SET(&(Global_17172.f_2563[iParam0]), iParam1);
 }
 
 int func_58(int iParam0)
@@ -1078,31 +1078,31 @@ int func_59(int iParam0)
 	int iVar2;
 	int iVar3;
 
-	if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 98304 == 0)
+	if ((Global_1904613->f_31[iParam0 /*9*/])->f_2 & 98304 == 0)
 	{
 		return 0;
 	}
 	iVar1 = NETWORK::GET_CLOUD_TIME_AS_INT();
 	iVar0 = 0;
-	while (iVar0 < Global_40.f_3327)
+	while (iVar0 < Global_39.f_3327)
 	{
-		if ((Global_40.f_3327[iVar0 /*3*/])->f_2 == iParam0)
+		if ((Global_39.f_3327[iVar0 /*3*/])->f_2 == iParam0)
 		{
 			iVar3 = 3;
-			if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 131072 != 0)
+			if ((Global_1904613->f_31[iParam0 /*9*/])->f_2 & 131072 != 0)
 			{
 				iVar3 = 2;
 			}
-			if ((Global_1904612->f_31[iParam0 /*9*/])->f_2 & 524288 != 0)
+			if ((Global_1904613->f_31[iParam0 /*9*/])->f_2 & 524288 != 0)
 			{
 				iVar3 = 5;
 			}
-			iVar2 = (&Global_40.f_3327[iVar0 /*3*/] - iVar1);
-			if ((Global_40.f_3327[iVar0 /*3*/])->f_1 >= iVar3)
+			iVar2 = (&Global_39.f_3327[iVar0 /*3*/] - iVar1);
+			if ((Global_39.f_3327[iVar0 /*3*/])->f_1 >= iVar3)
 			{
 				return 1;
 			}
-			if (iVar2 < 1800 && (Global_1904612->f_31[iParam0 /*9*/])->f_2 & 32768 != 0)
+			if (iVar2 < 1800 && (Global_1904613->f_31[iParam0 /*9*/])->f_2 & 32768 != 0)
 			{
 				return 1;
 			}
@@ -1114,7 +1114,7 @@ int func_59(int iParam0)
 
 bool func_60(int iParam0, int iParam1)
 {
-	return ((Global_1904612->f_31[iParam0 /*9*/])->f_2 && iParam1) != 0;
+	return ((Global_1904613->f_31[iParam0 /*9*/])->f_2 && iParam1) != 0;
 }
 
 bool func_61(int iParam0)
@@ -1128,7 +1128,7 @@ int func_62()
 	{
 		return 0;
 	}
-	return Global_1904612->f_8187;
+	return Global_1904613->f_8196;
 }
 
 bool func_63(var uParam0, int iParam1)

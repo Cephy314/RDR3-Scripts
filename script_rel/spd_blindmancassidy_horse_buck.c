@@ -14,7 +14,7 @@
 	var uLocal_12 = 0;
 	var uLocal_13 = 0;
 	int iLocal_14 = 0;
-	int iLocal_15 = 0;
+	bool bLocal_15 = false;
 	int iLocal_16 = 0;
 	var uLocal_17 = 0;
 	var uLocal_18 = 0;
@@ -50,7 +50,7 @@ void __EntryFunction__()
 	while (true)
 	{
 		BUILTIN::WAIT(0);
-		if (func_3(4, func_2(4), &uLocal_17, iLocal_15))
+		if (func_3(4, func_2(4), &uLocal_17, bLocal_15))
 		{
 			func_1();
 		}
@@ -88,9 +88,9 @@ void __EntryFunction__()
 
 void func_1()
 {
-	if (!ENTITY::IS_ENTITY_DEAD(iLocal_15))
+	if (!ENTITY::IS_ENTITY_DEAD(bLocal_15))
 	{
-		ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iLocal_15);
+		ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&bLocal_15);
 	}
 	func_10(&uLocal_17);
 	SCRIPTS::TERMINATE_THIS_THREAD();
@@ -101,7 +101,7 @@ int func_2(int iParam0)
 	return &(Global_40.f_11623[iParam0 /*8*/]);
 }
 
-int func_3(int iParam0, int iParam1, var uParam2, int iParam3)
+int func_3(int iParam0, int iParam1, var uParam2, bool bParam3)
 {
 	int iVar0;
 	int iVar1;
@@ -186,7 +186,7 @@ int func_3(int iParam0, int iParam1, var uParam2, int iParam3)
 		{
 			if (MISC::GET_GAME_TIMER() > uParam2->f_17)
 			{
-				if (func_19(&iParam3, &(uParam2->f_18), uParam2->f_11, uParam2->f_12) || func_20(&iParam3, &(uParam2->f_20), &(uParam2->f_19), uParam2->f_11, uParam2->f_12, 2048))
+				if (func_19(&bParam3, &(uParam2->f_18), uParam2->f_11, uParam2->f_12) || func_20(&bParam3, &(uParam2->f_20), &(uParam2->f_19), uParam2->f_11, uParam2->f_12, 2048))
 				{
 					if (!func_21(&(uParam2->f_13)))
 					{
@@ -282,9 +282,9 @@ int func_6()
 	{
 		return 0;
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_15))
+	if (!ENTITY::DOES_ENTITY_EXIST(bLocal_15))
 	{
-		iLocal_15 = PED::GET_MOUNT(Global_35);
+		bLocal_15 = PED::GET_MOUNT(Global_35);
 		iLocal_16 = MISC::GET_GAME_TIMER() + 2000;
 		return 0;
 	}
@@ -292,7 +292,7 @@ int func_6()
 	{
 		return 0;
 	}
-	TASK::TASK_HORSE_ACTION(PED::GET_MOUNT(Global_35), 2, 0, 0);
+	TASK::TASK_HORSE_ACTION(PED::GET_MOUNT(Global_35), 2, false, 0);
 	return 1;
 }
 
@@ -315,7 +315,7 @@ void func_8(int iParam0, int iParam1, bool bParam2)
 
 int func_9()
 {
-	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_15))
+	if (!ENTITY::DOES_ENTITY_EXIST(bLocal_15))
 	{
 		return 0;
 	}
@@ -323,12 +323,12 @@ int func_9()
 	{
 		return 0;
 	}
-	if (func_29(iLocal_15, 518218985))
+	if (func_29(bLocal_15, 518218985))
 	{
 		return 1;
 	}
-	PED::_0xBCC76708E5677E1D(iLocal_15, 0);
-	TASK::_TASK_SMART_FLEE_STYLE_PED(iLocal_15, Global_35, 3, 0, -1f, -1, 0);
+	PED::_0xBCC76708E5677E1D(bLocal_15, 0);
+	TASK::_TASK_SMART_FLEE_STYLE_PED(bLocal_15, Global_35, 3, 0, -1f, -1, false);
 	return 0;
 }
 
@@ -342,9 +342,9 @@ void func_10(var uParam0)
 	{
 		ITEMSET::DESTROY_ITEMSET(uParam0->f_19);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(uParam0->f_20))
+	if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_20))
 	{
-		VOLUME::_0x43F867EF5C463A53(uParam0->f_20);
+		VOLUME::_DELETE_VOLUME(uParam0->f_20);
 	}
 	if (func_21(&(uParam0->f_13)))
 	{
@@ -372,7 +372,7 @@ int func_14(int iParam0)
 	return BUILTIN::SHIFT_RIGHT(iParam0, 12) & 31;
 }
 
-var func_15()
+int func_15()
 {
 	return &Global_1899515;
 }
@@ -405,8 +405,8 @@ int func_18(int iParam0)
 		case 0:
 			switch (iVar0)
 			{
-				case -173507739:
-				case 1632247697:
+				case joaat("highpressure"):
+				case joaat("sunny"):
 					return 1;
 				default:
 					return 0;
@@ -415,11 +415,11 @@ int func_18(int iParam0)
 		case 1:
 			switch (iVar0)
 			{
-				case -1148613331:
-				case -173507739:
-				case 433385945:
-				case 821931868:
-				case 1632247697:
+				case joaat("overcast"):
+				case joaat("highpressure"):
+				case joaat("overcastdark"):
+				case joaat("clouds"):
+				case joaat("sunny"):
 					return 1;
 				default:
 					return 0;
@@ -428,16 +428,16 @@ int func_18(int iParam0)
 		case 2:
 			switch (iVar0)
 			{
-				case -1721991356:
-				case -1148613331:
-				case -702816767:
-				case -173507739:
-				case 433385945:
-				case 603685163:
-				case 821931868:
-				case 1500834021:
-				case 1632247697:
-				case 1679686673:
+				case joaat("drizzle"):
+				case joaat("overcast"):
+				case joaat("fog"):
+				case joaat("highpressure"):
+				case joaat("overcastdark"):
+				case joaat("snowlight"):
+				case joaat("clouds"):
+				case joaat("misty"):
+				case joaat("sunny"):
+				case joaat("snowclearing"):
 					return 1;
 				default:
 					return 0;
@@ -446,20 +446,20 @@ int func_18(int iParam0)
 		case 3:
 			switch (iVar0)
 			{
-				case -1721991356:
-				case -1233681761:
-				case -1148613331:
-				case -702816767:
-				case -416908843:
-				case -273223690:
-				case -173507739:
-				case 212278652:
-				case 433385945:
-				case 821931868:
-				case 1420204096:
-				case 1500834021:
-				case 1632247697:
-				case 1679686673:
+				case joaat("drizzle"):
+				case joaat("thunder"):
+				case joaat("overcast"):
+				case joaat("fog"):
+				case joaat("shower"):
+				case joaat("snow"):
+				case joaat("highpressure"):
+				case joaat("sleet"):
+				case joaat("overcastdark"):
+				case joaat("clouds"):
+				case joaat("rain"):
+				case joaat("misty"):
+				case joaat("sunny"):
+				case joaat("snowclearing"):
 					return 1;
 				default:
 					return 0;
@@ -470,8 +470,8 @@ int func_18(int iParam0)
 		case 5:
 			switch (iVar0)
 			{
-				case -702816767:
-				case 1500834021:
+				case joaat("fog"):
+				case joaat("misty"):
 					return 1;
 			}
 			break;
@@ -479,25 +479,25 @@ int func_18(int iParam0)
 	return 0;
 }
 
-int func_19(var uParam0, var uParam1, float fParam2, float fParam3)
+int func_19(bool bParam0, var uParam1, float fParam2, var uParam3)
 {
 	vector3 vVar0;
 	vector3 vVar3;
 
-	if (!ENTITY::DOES_ENTITY_EXIST(*uParam0))
+	if (!ENTITY::DOES_ENTITY_EXIST(*bParam0))
 	{
 		return 0;
 	}
-	vVar0 = { ENTITY::GET_ENTITY_FORWARD_VECTOR(*uParam0) };
-	vVar3 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true, false) + vVar0 * Vector(fParam2, fParam2, fParam2) };
-	if (func_37(uParam1, vVar3, fParam3))
+	vVar0 = { ENTITY::GET_ENTITY_FORWARD_VECTOR(*bParam0) };
+	vVar3 = { ENTITY::GET_ENTITY_COORDS(*bParam0, true, false) + vVar0 * Vector(fParam2, fParam2, fParam2) };
+	if (func_37(uParam1, vVar3, uParam3))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_20(var uParam0, var uParam1, var uParam2, float fParam3, float fParam4, int iParam5)
+int func_20(bool bParam0, var uParam1, var uParam2, float fParam3, float fParam4, int iParam5)
 {
 	float fVar0;
 	int iVar1;
@@ -505,41 +505,41 @@ int func_20(var uParam0, var uParam1, var uParam2, float fParam3, float fParam4,
 	vector3 vVar5;
 	vector3 vVar8;
 
-	if (!ENTITY::DOES_ENTITY_EXIST(*uParam0))
+	if (!ENTITY::DOES_ENTITY_EXIST(*bParam0))
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(*uParam1))
+		if (VOLUME::_DOES_VOLUME_EXIST(*uParam1))
 		{
 			POPULATION::_0x74C2B3DC0B294102(*uParam1);
 			POPULATION::_0xA1CFB35069D23C23(*uParam1);
-			VOLUME::_0x43F867EF5C463A53(*uParam1);
+			VOLUME::_DELETE_VOLUME(*uParam1);
 		}
 		return 0;
 	}
-	vVar2 = { ENTITY::GET_ENTITY_FORWARD_VECTOR(*uParam0) };
-	vVar5 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true, false) + vVar2 * Vector(fParam3, fParam3, fParam3) };
+	vVar2 = { ENTITY::GET_ENTITY_FORWARD_VECTOR(*bParam0) };
+	vVar5 = { ENTITY::GET_ENTITY_COORDS(*bParam0, true, false) + vVar2 * Vector(fParam3, fParam3, fParam3) };
 	if (!func_38(uParam2, &iVar1, vVar5, fParam3, fParam4))
 	{
-		if (VOLUME::_0x92A78D0BEDB332A3(*uParam1))
+		if (VOLUME::_DOES_VOLUME_EXIST(*uParam1))
 		{
 			POPULATION::_0x74C2B3DC0B294102(*uParam1);
 			POPULATION::_0xA1CFB35069D23C23(*uParam1);
-			VOLUME::_0x43F867EF5C463A53(*uParam1);
+			VOLUME::_DELETE_VOLUME(*uParam1);
 		}
 		return 0;
 	}
 	else
 	{
-		if (!VOLUME::_0x92A78D0BEDB332A3(*uParam1))
+		if (!VOLUME::_DOES_VOLUME_EXIST(*uParam1))
 		{
 			fVar0 = (fParam4 + 1f);
 			*uParam1 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vVar5, 0f, 0f, 0f, fVar0, fVar0, fVar0, "SPDClearWagonsMount");
 			POPULATION::_0xB56D41A694E42E86(*uParam1, iParam5 | 2228255, 0, 0, -1, -1, 10);
 			POPULATION::_0x18262CAFEBB5FBE1(*uParam1, iParam5, 0, 0, -1, -1, 0);
 		}
-		vVar8 = { ENTITY::GET_ENTITY_COORDS(*uParam0, true, false) };
+		vVar8 = { ENTITY::GET_ENTITY_COORDS(*bParam0, true, false) };
 		if (!func_39(iVar1, 0))
 		{
-			func_40(&iVar1, vVar8, 1083179008);
+			func_40(&iVar1, vVar8, 1083179008 /* Float: 4.5f */);
 		}
 		return 1;
 	}
@@ -603,17 +603,17 @@ bool func_28(var uParam0, int iParam1)
 	return (uParam0 && iParam1) != 0;
 }
 
-int func_29(int iParam0, int iParam1)
+int func_29(bool bParam0, int iParam1)
 {
-	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
+	if (ENTITY::DOES_ENTITY_EXIST(bParam0))
 	{
-		if (!PED::IS_PED_INJURED(iParam0))
+		if (!PED::IS_PED_INJURED(bParam0))
 		{
-			if (iParam1 == 2104565373 && TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(iParam0))
+			if (iParam1 == 2104565373 && TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(bParam0))
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 0)
 			{
 				return 1;
 			}
@@ -622,24 +622,24 @@ int func_29(int iParam0, int iParam1)
 	return 0;
 }
 
-bool func_30(var uParam0, var uParam1)
+bool func_30(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
-void func_31(var uParam0, var uParam1)
+void func_31(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
-void func_32(var uParam0, var uParam1)
+void func_32(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 - (*uParam0 && uParam1));
+	*uParam0 = (*uParam0 - (*uParam0 && iParam1));
 }
 
-void func_33(var uParam0, var uParam1)
+void func_33(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
 bool func_34(int iParam0)
@@ -681,7 +681,7 @@ int func_35(int iParam0)
 	return 0;
 }
 
-var func_36()
+int func_36()
 {
 	var uVar0;
 	var uVar1;
@@ -700,13 +700,13 @@ var func_36()
 	return uVar3;
 }
 
-int func_37(var uParam0, vector3 vParam1, float fParam4)
+int func_37(var uParam0, vector3 vParam1, bool bParam4)
 {
 	if (!ITEMSET::IS_ITEMSET_VALID(*uParam0))
 	{
 		*uParam0 = ITEMSET::CREATE_ITEMSET(true);
 	}
-	if (ENTITY::_0x59B57C4B06531E1E(vParam1, fParam4, *uParam0, 2) > 0)
+	if (ENTITY::_0x59B57C4B06531E1E(vParam1, bParam4, *uParam0, 2) > 0)
 	{
 		ITEMSET::_0x20A4BF0E09BEE146(*uParam0);
 		return 1;
@@ -715,7 +715,7 @@ int func_37(var uParam0, vector3 vParam1, float fParam4)
 	return 0;
 }
 
-int func_38(var uParam0, var uParam1, vector3 vParam2, float fParam5, float fParam6)
+int func_38(var uParam0, int iParam1, vector3 vParam2, float fParam5, bool bParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -725,19 +725,19 @@ int func_38(var uParam0, var uParam1, vector3 vParam2, float fParam5, float fPar
 	{
 		*uParam0 = ITEMSET::CREATE_ITEMSET(true);
 	}
-	iVar2 = ENTITY::_0x59B57C4B06531E1E(vParam2, fParam6, *uParam0, 1);
+	iVar2 = ENTITY::_0x59B57C4B06531E1E(vParam2, bParam6, *uParam0, 1);
 	iVar1 = 0;
 	while (iVar1 < iVar2)
 	{
 		iVar0 = ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar1, *uParam0);
-		*uParam1 = iVar0;
-		if (ENTITY::DOES_ENTITY_EXIST(*uParam1))
+		*iParam1 = iVar0;
+		if (ENTITY::DOES_ENTITY_EXIST(*iParam1))
 		{
-			if (!ENTITY::IS_ENTITY_DEAD(*uParam1))
+			if (!ENTITY::IS_ENTITY_DEAD(*iParam1))
 			{
-				if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(*uParam1)))
+				if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(*iParam1)))
 				{
-					if (func_49(Global_35, *uParam1, 0))
+					if (func_49(Global_35, *iParam1, 0))
 					{
 					}
 					else

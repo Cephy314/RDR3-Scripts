@@ -135,11 +135,11 @@ int func_5()
 		func_18(&((Global_1899848->f_32[iVar0 /*21*/])->f_4), 0, 0);
 		iVar0++;
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3(Global_1899848->f_201.f_14))
+	if (VOLUME::_DOES_VOLUME_EXIST(Global_1899848->f_201.f_14))
 	{
 		POPULATION::_0x74C2B3DC0B294102(Global_1899848->f_201.f_14);
 		POPULATION::_0xA1CFB35069D23C23(Global_1899848->f_201.f_14);
-		VOLUME::_0x43F867EF5C463A53(Global_1899848->f_201.f_14);
+		VOLUME::_DELETE_VOLUME(Global_1899848->f_201.f_14);
 	}
 	func_19();
 	func_18(&(Global_1899848->f_201.f_12), 0, 1);
@@ -356,7 +356,7 @@ int func_13()
 {
 	int iVar0;
 
-	iVar0 = 1703557170;
+	iVar0 = joaat("beechers_cow");
 	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar0) > 0)
 	{
 		return 1;
@@ -364,7 +364,7 @@ int func_13()
 	SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(iVar0);
 	if (SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(iVar0))
 	{
-		BUILTIN::START_NEW_SCRIPT_WITH_NAME_HASH(iVar0, 256);
+		SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH(iVar0, 256);
 		SCRIPTS::SET_SCRIPT_WITH_NAME_HASH_AS_NO_LONGER_NEEDED(iVar0);
 		return 1;
 	}
@@ -412,7 +412,7 @@ int func_14(int iParam0, int iParam1, int iParam2)
 	}
 	func_35(&(Global_1899848->f_201.f_12));
 	func_36(&(Global_1899848->f_15));
-	if (!VOLUME::_0x92A78D0BEDB332A3(Global_1899848->f_201.f_14))
+	if (!VOLUME::_DOES_VOLUME_EXIST(Global_1899848->f_201.f_14))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(Global_1899848->f_201.f_12))
 		{
@@ -445,19 +445,19 @@ void func_17(int iParam0)
 	{
 		return;
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3((Global_1899848->f_32[iParam0 /*21*/])->f_9))
+	if (VOLUME::_DOES_VOLUME_EXIST((Global_1899848->f_32[iParam0 /*21*/])->f_9))
 	{
 		POPULATION::_0x74C2B3DC0B294102((Global_1899848->f_32[iParam0 /*21*/])->f_9);
 		POPULATION::_0xA1CFB35069D23C23((Global_1899848->f_32[iParam0 /*21*/])->f_9);
-		VOLUME::_0x43F867EF5C463A53((Global_1899848->f_32[iParam0 /*21*/])->f_9);
+		VOLUME::_DELETE_VOLUME((Global_1899848->f_32[iParam0 /*21*/])->f_9);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3((Global_1899848->f_32[iParam0 /*21*/])->f_10))
+	if (VOLUME::_DOES_VOLUME_EXIST((Global_1899848->f_32[iParam0 /*21*/])->f_10))
 	{
-		VOLUME::_0x43F867EF5C463A53((Global_1899848->f_32[iParam0 /*21*/])->f_10);
+		VOLUME::_DELETE_VOLUME((Global_1899848->f_32[iParam0 /*21*/])->f_10);
 	}
-	if (VOLUME::_0x92A78D0BEDB332A3((Global_1899848->f_32[iParam0 /*21*/])->f_11))
+	if (VOLUME::_DOES_VOLUME_EXIST((Global_1899848->f_32[iParam0 /*21*/])->f_11))
 	{
-		VOLUME::_0x43F867EF5C463A53((Global_1899848->f_32[iParam0 /*21*/])->f_11);
+		VOLUME::_DELETE_VOLUME((Global_1899848->f_32[iParam0 /*21*/])->f_11);
 	}
 }
 
@@ -488,9 +488,9 @@ void func_18(int* iParam0, int iParam1, int iParam2)
 
 void func_19()
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(Global_1899848->f_201.f_15))
+	if (VOLUME::_DOES_VOLUME_EXIST(Global_1899848->f_201.f_15))
 	{
-		VOLUME::_0x43F867EF5C463A53(Global_1899848->f_201.f_15);
+		VOLUME::_DELETE_VOLUME(Global_1899848->f_201.f_15);
 	}
 }
 
@@ -756,7 +756,7 @@ bool func_33()
 {
 	if (!TASK::_0x841475AC96E794D1(Global_1899848->f_15.f_1))
 	{
-		Global_1899848->f_15.f_1 = TASK::CREATE_SCENARIO_POINT(-1478204157, Global_1899848->f_15.f_2, Global_1899848->f_15.f_5, 0f, 0f, 1);
+		Global_1899848->f_15.f_1 = TASK::CREATE_SCENARIO_POINT(-1478204157, Global_1899848->f_15.f_2, Global_1899848->f_15.f_5, 0f, 0, 1);
 		if (Global_1899848->f_2 == 1)
 		{
 			func_20(0);
@@ -891,7 +891,7 @@ int func_45(vector3 vParam0)
 
 int func_46(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 {
-	int iVar0;
+	bool bVar0;
 	int iVar1;
 	float fVar2;
 	int iVar3;
@@ -899,13 +899,13 @@ int func_46(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 	int iVar5;
 
 	fVar2 = (fParam4 * 2f);
-	func_53(&iVar0, vParam0, 0f, 0f, 0f, fVar2, fVar2, fVar2);
-	if (!VOLUME::_0x92A78D0BEDB332A3(iVar0))
+	func_53(&bVar0, vParam0, 0f, 0f, 0f, fVar2, fVar2, fVar2);
+	if (!VOLUME::_DOES_VOLUME_EXIST(bVar0))
 	{
 		return 0;
 	}
 	iVar5 = ITEMSET::CREATE_ITEMSET(true);
-	iVar3 = ENTITY::_0x886171A12F400B89(iVar0, iVar5, 3);
+	iVar3 = ENTITY::_0x886171A12F400B89(bVar0, iVar5, 3);
 	iVar4 = 0;
 	while (iVar4 < iVar3)
 	{
@@ -915,7 +915,7 @@ int func_46(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 			if (ENTITY::GET_ENTITY_MODEL(iVar1) == iParam3)
 			{
 				ITEMSET::DESTROY_ITEMSET(iVar5);
-				func_54(iVar0);
+				func_54(bVar0);
 				if (bParam5)
 				{
 					if (!ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(iVar1, true))
@@ -929,7 +929,7 @@ int func_46(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 		iVar4++;
 	}
 	ITEMSET::DESTROY_ITEMSET(iVar5);
-	func_54(iVar0);
+	func_54(bVar0);
 	return 0;
 }
 
@@ -974,7 +974,7 @@ int func_48(int iParam0)
 	if ((Global_1899848->f_32[iParam0 /*21*/])->f_5 == 0)
 	{
 		(Global_1899848->f_32[iParam0 /*21*/])->f_5 = 1;
-		if (!VOLUME::_0x92A78D0BEDB332A3((Global_1899848->f_32[iParam0 /*21*/])->f_9))
+		if (!VOLUME::_DOES_VOLUME_EXIST((Global_1899848->f_32[iParam0 /*21*/])->f_9))
 		{
 			(Global_1899848->f_32[iParam0 /*21*/])->f_9 = VOLUME::_CREATE_VOLUME_CYLINDER(*(Global_1899848->f_32[iParam0 /*21*/]), 0f, 0f, 0f, 1.5f, 1.5f, 3f);
 			POPULATION::_0xB56D41A694E42E86((Global_1899848->f_32[iParam0 /*21*/])->f_9, 2016, 0, 0, -1, -1, 2);
@@ -1038,19 +1038,19 @@ bool func_52(int iParam0)
 	return (iParam0 >= 0 && iParam0 <= 150);
 }
 
-void func_53(var uParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
+void func_53(bool bParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3(*uParam0))
+	if (!VOLUME::_DOES_VOLUME_EXIST(*bParam0))
 	{
-		*uParam0 = VOLUME::_0x10157BC3247FF3BA(vParam1, vParam4, vParam7, func_58());
+		*bParam0 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam1, vParam4, vParam7, func_58());
 	}
 }
 
-void func_54(int iParam0)
+void func_54(bool bParam0)
 {
-	if (VOLUME::_0x92A78D0BEDB332A3(iParam0))
+	if (VOLUME::_DOES_VOLUME_EXIST(bParam0))
 	{
-		VOLUME::_0x43F867EF5C463A53(iParam0);
+		VOLUME::_DELETE_VOLUME(bParam0);
 	}
 }
 
@@ -1067,9 +1067,9 @@ int func_55(int iParam0)
 	return &(Global_1058888->f_498[iParam0 /*2*/]);
 }
 
-int func_56(var uParam0)
+int func_56(int iParam0)
 {
-	return uParam0 & 31;
+	return iParam0 & 31;
 }
 
 int func_57(int iParam0)

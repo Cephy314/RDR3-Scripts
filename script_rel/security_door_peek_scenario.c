@@ -146,7 +146,7 @@ void func_6()
 	}
 	if (func_12(1))
 	{
-		if (PAD::IS_CONTROL_PRESSED(2, -416594956) || PAD::IS_DISABLED_CONTROL_PRESSED(2, -416594956))
+		if (PAD::IS_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")) || PAD::IS_DISABLED_CONTROL_PRESSED(2, joaat("INPUT_FOCUS_CAM")))
 		{
 			if (!func_12(3))
 			{
@@ -267,7 +267,7 @@ void func_13(int iParam0)
 void func_14()
 {
 	func_31(&uLocal_10);
-	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1065353216);
+	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f, 1f);
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 	OBJECT::_0x276AAF0F1C7F2494(iLocal_59, 0);
 	func_25(3);
@@ -345,9 +345,9 @@ bool func_21(var uParam0)
 	return func_34(*uParam0, 1);
 }
 
-void func_22(var uParam0, int iParam1)
+void func_22(var uParam0, bool bParam1)
 {
-	if (iParam1 || !func_21(uParam0))
+	if (bParam1 || !func_21(uParam0))
 	{
 		func_24(uParam0);
 	}
@@ -415,7 +415,7 @@ int func_26()
 			break;
 	}
 	fVar7 = (fVar7 + vVar4.z);
-	func_41(&uLocal_10, vVar1, vVar4.x, vVar4.y, fVar7, 35f, 20, 10, 1077936128, 1101004800, 1, 0, 0.24f, 0, 0, 1044549468);
+	func_41(&uLocal_10, vVar1, vVar4.x, vVar4.y, fVar7, 35f, 20, 10, 1077936128 /* Float: 3f */, 1101004800 /* Float: 20f */, 1, 0, 0.24f, 0, 0, 1044549468 /* Float: 0.19f */);
 	func_25(2);
 	return 1;
 }
@@ -432,13 +432,13 @@ void func_27(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	}
 	if (bParam4)
 	{
-		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, 1025725594) * 127f));
-		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, -348049185) * 127f));
+		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_X")) * 127f));
+		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_DISABLED_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_Y")) * 127f));
 	}
 	else
 	{
-		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, 1025725594) * 127f));
-		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, -348049185) * 127f));
+		uParam0->f_29[2] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_X")) * 127f));
+		uParam0->f_29[3] = BUILTIN::FLOOR((PAD::GET_CONTROL_UNBOUND_NORMAL(2, joaat("INPUT_FRONTEND_RIGHT_AXIS_Y")) * 127f));
 	}
 	if (&uParam0->f_29[2] != 0 || &uParam0->f_29[3] != 0)
 	{
@@ -746,11 +746,11 @@ int func_49(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_50(int iParam0, int iParam1, bool bParam2)
+int func_50(int iParam0, bool bParam1, bool bParam2)
 {
 	if (!OBJECT::IS_DOOR_REGISTERED_WITH_SYSTEM(iParam0))
 	{
-		if ((NETWORK::NETWORK_IS_IN_SESSION() && SCRIPTS::_DOES_THREAD_EXIST(&(Global_1051081->f_15[0]))) && iParam1)
+		if ((NETWORK::NETWORK_IS_IN_SESSION() && SCRIPTS::_DOES_THREAD_EXIST(&(Global_1051081->f_15[0]))) && bParam1)
 		{
 			OBJECT::_0xD99229FE93B46286(iParam0, 1, 1, 0, &(Global_1051081->f_15[0]), 0, 0);
 		}
@@ -759,7 +759,7 @@ int func_50(int iParam0, int iParam1, bool bParam2)
 			OBJECT::_0xD99229FE93B46286(iParam0, 1, 0, 0, 0, 0, 0);
 		}
 	}
-	else if ((NETWORK::NETWORK_IS_IN_SESSION() && SCRIPTS::_DOES_THREAD_EXIST(&(Global_1051081->f_15[0]))) && iParam1)
+	else if ((NETWORK::NETWORK_IS_IN_SESSION() && SCRIPTS::_DOES_THREAD_EXIST(&(Global_1051081->f_15[0]))) && bParam1)
 	{
 		if (!OBJECT::_0xB5DED7B65C604FDF(iParam0))
 		{

@@ -24,7 +24,7 @@
 	var uLocal_62 = 0;
 	var uLocal_63 = 0;
 	int iLocal_64 = 0;
-	int iLocal_65 = 0;
+	bool bLocal_65 = false;
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
@@ -148,13 +148,13 @@ void func_6()
 				iVar0 = ENTITY::GET_ENTITY_MODEL(Local_5.f_5);
 				switch (iVar0)
 				{
-					case -764811328:
+					case joaat("s_maprolled01x"):
 						Local_5.f_15.f_2 = 2019023183; /* GXTEntry: "Killer Clue 1 Piece" */
 						break;
-					case -1177733273:
+					case joaat("s_maprolled02x"):
 						Local_5.f_15.f_2 = -1043796944; /* GXTEntry: "Killer Clue 2 Piece" */
 						break;
-					case 17186352:
+					case joaat("s_maprolled03x"):
 						Local_5.f_15.f_2 = 1272643670; /* GXTEntry: "Killer Clue 3 Piece" */
 						break;
 					default:
@@ -185,7 +185,7 @@ void func_6()
 			}
 			if ((SCRIPTS::HAS_SCRIPT_LOADED(&(Local_5.f_25)) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_5, 0)) && func_19())
 			{
-				Local_5.f_31 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS(&(Local_5.f_25), &(Local_5.f_15), 10, Local_5.f_29);
+				Local_5.f_31 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS(&(Local_5.f_25), &(Local_5.f_15), 10, Local_5.f_29);
 				SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(&(Local_5.f_25));
 				func_17(3);
 				fVar1 = 0f;
@@ -194,7 +194,7 @@ void func_6()
 					fVar1 = ENTITY::_0x627520389E288A73(Local_5, "script_re@murder_campfire@knife_note", "enter");
 				}
 				iLocal_64 = TASK::_0x295514F198EFD0CA(Local_5.f_6, "Knife");
-				iLocal_65 = TASK::_0x295514F198EFD0CA(Local_5.f_6, "Head");
+				bLocal_65 = TASK::_0x295514F198EFD0CA(Local_5.f_6, "Head");
 				if (ENTITY::DOES_ENTITY_EXIST(iLocal_64))
 				{
 					if (TASK::_0x6EF4E31B4D5D2DA0(Local_5.f_6, "Knife"))
@@ -203,11 +203,11 @@ void func_6()
 						{
 						}
 					}
-					if (ENTITY::DOES_ENTITY_EXIST(iLocal_65))
+					if (ENTITY::DOES_ENTITY_EXIST(bLocal_65))
 					{
 						if (TASK::_0x6EF4E31B4D5D2DA0(Local_5.f_6, "Head"))
 						{
-							if (ENTITY::PLAY_ENTITY_ANIM(iLocal_65, "enter_head", "script_re@murder_campfire@knife_note", 1000f, false, false, false, fVar1, 32768))
+							if (ENTITY::PLAY_ENTITY_ANIM(bLocal_65, "enter_head", "script_re@murder_campfire@knife_note", 1000f, false, false, false, fVar1, 32768))
 							{
 							}
 						}
@@ -215,11 +215,11 @@ void func_6()
 				}
 				else if (func_20() == 1)
 				{
-					if (ENTITY::DOES_ENTITY_EXIST(iLocal_65))
+					if (ENTITY::DOES_ENTITY_EXIST(bLocal_65))
 					{
 						if (TASK::_0x6EF4E31B4D5D2DA0(Local_5.f_6, "Head"))
 						{
-							if (ENTITY::PLAY_ENTITY_ANIM(iLocal_65, "enter_head", "script_re@murder_campfire@head_note", 1000f, false, false, false, fVar1, 32768))
+							if (ENTITY::PLAY_ENTITY_ANIM(bLocal_65, "enter_head", "script_re@murder_campfire@head_note", 1000f, false, false, false, fVar1, 32768))
 							{
 							}
 						}
@@ -231,15 +231,15 @@ void func_6()
 			if (!PED::_0x4912DFE492DB98CD(Global_35, "inInspectionMode"))
 			{
 				PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
-				PAD::ENABLE_CONTROL_ACTION(1, -1450761377, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -771458680, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -1067115200, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -1898369514, true);
-				PAD::ENABLE_CONTROL_ACTION(1, 150518893, true);
-				PAD::ENABLE_CONTROL_ACTION(1, -1578429613, true);
-				if (ENTITY::DOES_ENTITY_EXIST(iLocal_65))
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LR"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UD"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_UP_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_DOWN_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LEFT_ONLY"), true);
+				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_RIGHT_ONLY"), true);
+				if (ENTITY::DOES_ENTITY_EXIST(bLocal_65))
 				{
-					vVar2 = { ENTITY::GET_ENTITY_COORDS(iLocal_65, true, false) };
+					vVar2 = { ENTITY::GET_ENTITY_COORDS(bLocal_65, true, false) };
 					Local_39 = { vVar2 };
 					Local_39.f_7 = 0;
 					_NAMESPACE29::_0x66F9EB44342BB4C5(Global_35, &Local_39);
@@ -249,23 +249,23 @@ void func_6()
 			{
 				func_16();
 			}
-			if (ENTITY::DOES_ENTITY_EXIST(iLocal_65))
+			if (ENTITY::DOES_ENTITY_EXIST(bLocal_65))
 			{
 				if (func_20() == 1 || func_20() == 9)
 				{
-					if ((ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_65, "script_re@murder_campfire@head_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(iLocal_65, "script_re@murder_campfire@head_note", "enter_head") > 0.49f) || (ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_65, "script_re@murder_campfire@knife_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(iLocal_65, "script_re@murder_campfire@head_note", "enter_head") > 0.9f))
+					if ((ENTITY::IS_ENTITY_PLAYING_ANIM(bLocal_65, "script_re@murder_campfire@head_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(bLocal_65, "script_re@murder_campfire@head_note", "enter_head") > 0.49f) || (ENTITY::IS_ENTITY_PLAYING_ANIM(bLocal_65, "script_re@murder_campfire@knife_note", "enter_head", 1) && ENTITY::_0x627520389E288A73(bLocal_65, "script_re@murder_campfire@head_note", "enter_head") > 0.9f))
 					{
-						if (ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_65, "script_re@murder_campfire@head_note", "enter_head", 1))
+						if (ENTITY::IS_ENTITY_PLAYING_ANIM(bLocal_65, "script_re@murder_campfire@head_note", "enter_head", 1))
 						{
-							ENTITY::STOP_ENTITY_ANIM(iLocal_65, "enter_head", "script_re@murder_campfire@head_note", -1000f);
+							ENTITY::STOP_ENTITY_ANIM(bLocal_65, "enter_head", "script_re@murder_campfire@head_note", -1000f);
 						}
-						else if (ENTITY::IS_ENTITY_PLAYING_ANIM(iLocal_65, "script_re@murder_campfire@knife_note", "enter_head", 1))
+						else if (ENTITY::IS_ENTITY_PLAYING_ANIM(bLocal_65, "script_re@murder_campfire@knife_note", "enter_head", 1))
 						{
-							ENTITY::STOP_ENTITY_ANIM(iLocal_65, "enter_head", "script_re@murder_campfire@knife_note", -1000f);
+							ENTITY::STOP_ENTITY_ANIM(bLocal_65, "enter_head", "script_re@murder_campfire@knife_note", -1000f);
 						}
-						ENTITY::FREEZE_ENTITY_POSITION(iLocal_65, false);
-						PHYSICS::ACTIVATE_PHYSICS(iLocal_65);
-						ENTITY::SET_ENTITY_AS_NO_LONGER_NEEDED(&iLocal_65);
+						ENTITY::FREEZE_ENTITY_POSITION(bLocal_65, false);
+						PHYSICS::ACTIVATE_PHYSICS(bLocal_65);
+						ENTITY::SET_ENTITY_AS_NO_LONGER_NEEDED(&bLocal_65);
 					}
 				}
 			}

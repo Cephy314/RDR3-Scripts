@@ -42,7 +42,7 @@ void __EntryFunction__()
 		{
 			bVar0 = true;
 		}
-		if (!Global_1915170->f_21989)
+		if (!Global_1915180->f_21989)
 		{
 			bVar0 = true;
 		}
@@ -57,31 +57,31 @@ void __EntryFunction__()
 		}
 		else
 		{
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 407174929))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 407174929))
 			{
-				Global_1051387->f_3576 = 1;
+				Global_1051388->f_3576 = 1;
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1543672280))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1543672280))
 			{
 				func_1(-1543672280);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1441911379))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1441911379))
 			{
 				func_1(-1441911379);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 562684602))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 562684602))
 			{
 				func_1(562684602);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1275814714))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1275814714))
 			{
 				func_1(-1275814714);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -917343754))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -917343754))
 			{
 				func_1(-917343754);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1308691423))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1308691423))
 			{
 				func_1(-1308691423);
 			}
@@ -93,7 +93,7 @@ void __EntryFunction__()
 
 void func_1(int iParam0)
 {
-	Global_1915170->f_21989.f_4 = iParam0;
+	Global_1915180->f_21989.f_4 = iParam0;
 }
 
 int func_2(bool bParam0, bool bParam1)
@@ -160,6 +160,6 @@ int func_2(bool bParam0, bool bParam1)
 
 bool func_3()
 {
-	return Global_1099293->f_331;
+	return Global_1099294->f_331;
 }
 

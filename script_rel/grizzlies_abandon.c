@@ -20,11 +20,11 @@
 	int iLocal_18 = 0;
 	int iLocal_19 = 0;
 	char* sLocal_20 = NULL;
-	int iLocal_21 = 0;
+	bool bLocal_21 = false;
 	vector3 vLocal_22 = { 0f, 0f, 0f };
 	float fLocal_25 = 0f;
 	float fLocal_26 = 0f;
-	var uScriptParam_0 = 0;
+	int iScriptParam_0 = 0;
 	var uScriptParam_1 = 0;
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
@@ -43,7 +43,7 @@ void __EntryFunction__()
 	iLocal_19 = -1;
 	vLocal_22 = { -1338.12f, 2434.522f, 307.2562f };
 	func_1();
-	iLocal_15 = uScriptParam_0;
+	iLocal_15 = iScriptParam_0;
 	while (true)
 	{
 		if (func_2())
@@ -136,7 +136,7 @@ void func_3()
 	func_4(1);
 	MISC::SET_WIND_SPEED(-1f);
 	MISC::SET_WIND_DIRECTION(-1f);
-	MISC::_0xF6BEE7E80EC5CA40(-1f);
+	MISC::_SET_SNOW_LEVEL(-1f);
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -202,7 +202,7 @@ void func_6()
 		MISC::SET_WIND_SPEED(fLocal_25);
 		fLocal_26 = MISC::GET_SNOW_LEVEL();
 		fLocal_26 = func_18(fLocal_26 < 1f, (fLocal_26 + 0.01f), 1f);
-		MISC::_0xF6BEE7E80EC5CA40(fLocal_26);
+		MISC::_SET_SNOW_LEVEL(fLocal_26);
 		if (iLocal_16 < MISC::GET_GAME_TIMER())
 		{
 			ENTITY::_SET_ENTITY_HEALTH(Global_35, (ENTITY::GET_ENTITY_HEALTH(Global_35) - 1), 0);
@@ -223,11 +223,11 @@ void func_6()
 			{
 				if (ENTITY::IS_ENTITY_DEAD(iLocal_18))
 				{
-					if (!iLocal_21)
+					if (!bLocal_21)
 					{
 						func_4(1);
 						sLocal_20 = "DONT_LEAVE_CAMP_HORSE_DIED";
-						iLocal_21 = 1;
+						bLocal_21 = true;
 					}
 				}
 				else
@@ -245,7 +245,7 @@ bool func_7(int iParam0, int iParam1, bool bParam2, int iParam3)
 	{
 		return false;
 	}
-	if (!VOLUME::_0x92A78D0BEDB332A3(iParam1))
+	if (!VOLUME::_DOES_VOLUME_EXIST(iParam1))
 	{
 		return false;
 	}
@@ -265,7 +265,7 @@ int func_8()
 		MISC::SET_WIND_SPEED(fLocal_25);
 		fLocal_26 = MISC::GET_SNOW_LEVEL();
 		fLocal_26 = func_18(fLocal_26 > 0f, (fLocal_26 - 0.01f), 0f);
-		MISC::_0xF6BEE7E80EC5CA40(fLocal_26);
+		MISC::_SET_SNOW_LEVEL(fLocal_26);
 		if (fLocal_25 > 5f)
 		{
 			return 0;
@@ -274,17 +274,17 @@ int func_8()
 	return 1;
 }
 
-int func_9(int iParam0, bool bParam1, int iParam2)
+int func_9(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
 	if (Global_1572887->f_12 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1898164->f_163;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1898164->f_164;
 		}
@@ -300,7 +300,7 @@ int func_9(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -401,7 +401,7 @@ void func_13(int iParam0)
 	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
-var func_14(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, int iParam5)
+var func_14(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -409,10 +409,10 @@ var func_14(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4, int
 
 	Var0 = -2;
 	Var0 = iParam1;
-	Var0.f_1 = uParam2;
-	Var0.f_2 = uParam3;
+	Var0.f_1 = iParam2;
+	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
-	Var13.f_1 = uParam0;
+	Var13.f_1 = sParam0;
 	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, iParam5);
 	return uVar15;
 }

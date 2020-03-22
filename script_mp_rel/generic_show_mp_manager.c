@@ -226,19 +226,19 @@ void func_7()
 	Var0.f_3.f_1.f_8.f_8.f_8.f_1 = -1;
 	Var0.f_3.f_1.f_8.f_8.f_8.f_2 = -1;
 	Var0.f_3.f_1.f_8.f_8.f_8.f_5 = -1;
-	*Global_1268203 = { Var0 };
-	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(Global_1268203, 36, 7);
-	func_12(NETWORK::_0xBA24095EA96DFE17(Global_1268203), 36, "g_mpShowHostData");
+	*Global_1269798 = { Var0 };
+	NETWORK::NETWORK_REGISTER_HOST_BROADCAST_VARIABLES(Global_1269798, 36, 7);
+	func_12(NETWORK::_0xBA24095EA96DFE17(Global_1269798), 36, "g_mpShowHostData");
 	if (func_13())
 	{
-		(*Global_1268170)[func_14()] = uVar36;
-		NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(Global_1268170, 33, 8);
-		func_15(NETWORK::_0xBA24095EA96DFE17((*Global_1268170)[0]), 33, "g_mpShowPlayerData");
+		(*Global_1269765)[func_14()] = uVar36;
+		NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(Global_1269765, 33, 8);
+		func_15(NETWORK::_0xBA24095EA96DFE17((*Global_1269765)[0]), 33, "g_mpShowPlayerData");
 	}
 	else
 	{
-		NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(Global_1268170, 33, 8);
-		func_15(NETWORK::_0xBA24095EA96DFE17((*Global_1268170)[0]), 33, "g_mpShowPlayerData");
+		NETWORK::NETWORK_REGISTER_PLAYER_BROADCAST_VARIABLES(Global_1269765, 33, 8);
+		func_15(NETWORK::_0xBA24095EA96DFE17((*Global_1269765)[0]), 33, "g_mpShowPlayerData");
 	}
 }
 
@@ -332,7 +332,7 @@ bool func_13()
 
 int func_14()
 {
-	return Global_1099293->f_339;
+	return Global_1099294->f_339;
 }
 
 int func_15(var uParam0, int iParam1, char* sParam2)

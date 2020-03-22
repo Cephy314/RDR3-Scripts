@@ -111,17 +111,17 @@ void func_5()
 
 void func_6()
 {
-	if (PED::IS_PED_INJURED(Global_35) || func_12() != 0)
+	if (PED::IS_PED_INJURED(Global_34) || func_12() != 0)
 	{
 		iLocal_13 = 0;
 		return;
 	}
-	if (!bLocal_22 && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 442509369))
+	if (!bLocal_22 && ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 442509369))
 	{
-		PED::_0xEB8886E1065654CD(Global_35, 4, "ALL", 0.5f);
-		PED::_0xEB8886E1065654CD(Global_35, 6, "ALL", 0.5f);
-		PED::_0xEB8886E1065654CD(Global_35, 1, "ALL", 0.5f);
-		PED::_0xA7A806677F8DE138(Global_35);
+		PED::_0xEB8886E1065654CD(Global_34, 4, "ALL", 0.5f);
+		PED::_0xEB8886E1065654CD(Global_34, 6, "ALL", 0.5f);
+		PED::_0xEB8886E1065654CD(Global_34, 1, "ALL", 0.5f);
+		PED::_0xA7A806677F8DE138(Global_34);
 		bLocal_22 = true;
 		iLocal_13 = 0;
 		if (func_13(1))
@@ -129,7 +129,7 @@ void func_6()
 			func_14(-0.3f, 0);
 		}
 	}
-	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_35))
+	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_34))
 	{
 		iLocal_13 = 0;
 	}
@@ -192,7 +192,7 @@ bool func_13(int iParam0)
 
 void func_14(float fParam0, bool bParam1)
 {
-	func_18((Global_1938998->f_9 + fParam0), bParam1);
+	func_18((Global_1939008->f_9 + fParam0), bParam1);
 }
 
 void func_15(int iParam0)
@@ -209,34 +209,34 @@ void func_17(int iParam0)
 
 void func_18(float fParam0, bool bParam1)
 {
-	if (PED::IS_PED_ON_MOUNT(Global_35) || PED::IS_PED_IN_ANY_VEHICLE(Global_35, false))
+	if (PED::IS_PED_ON_MOUNT(Global_34) || PED::IS_PED_IN_ANY_VEHICLE(Global_34, false))
 	{
 		if (fParam0 >= func_19())
 		{
-			Global_1938998->f_9 = (func_19() - 0.01f);
+			Global_1939008->f_9 = (func_19() - 0.01f);
 			return;
 		}
 	}
 	if (fParam0 < 0f)
 	{
-		Global_1938998->f_9 = 0f;
-		PED::_0x06D26A96CA1BCA75(Global_35, 10, Global_1938998->f_9, 0);
+		Global_1939008->f_9 = 0f;
+		PED::_0x06D26A96CA1BCA75(Global_34, 10, Global_1939008->f_9, 0);
 	}
-	else if (fParam0 >= 1f && Global_1938998->f_14)
+	else if (fParam0 >= 1f && Global_1939008->f_14)
 	{
-		Global_1938998->f_9 = 0.99f;
+		Global_1939008->f_9 = 0.99f;
 	}
 	else if (fParam0 > 1f)
 	{
-		Global_1938998->f_9 = 1f;
+		Global_1939008->f_9 = 1f;
 	}
 	else
 	{
-		Global_1938998->f_9 = fParam0;
+		Global_1939008->f_9 = fParam0;
 	}
 	if (bParam1)
 	{
-		Global_1938998->f_12 = 1;
+		Global_1939008->f_12 = 1;
 	}
 }
 

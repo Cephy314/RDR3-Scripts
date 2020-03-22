@@ -1,14 +1,14 @@
 #region Local Var
 	int iLocal_0 = 0;
 	int iLocal_1 = 0;
-	int iLocal_2 = 0;
-	int iLocal_3 = 0;
-	int iLocal_4 = 0;
+	bool bLocal_2 = false;
+	bool bLocal_3 = false;
+	bool bLocal_4 = false;
 	vector3 vLocal_5 = { 0f, 0f, 0f };
 	vector3 vLocal_8 = { 0f, 0f, 0f };
-	int iLocal_11 = 0;
+	bool bLocal_11 = false;
 	int iLocal_12 = 0;
-	var uScriptParam_0 = 0;
+	bool bScriptParam_0 = false;
 #endregion
 
 void __EntryFunction__()
@@ -16,7 +16,7 @@ void __EntryFunction__()
 	vLocal_5 = { 2941.792f, 1377.969f, 43.1f };
 	vLocal_8 = { 2314.011f, -1512.919f, 44.9053f };
 	iLocal_12 = -1;
-	iLocal_2 = uScriptParam_0;
+	bLocal_2 = bScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		func_1();
@@ -34,7 +34,7 @@ int func_1()
 	int iVar0;
 
 	func_3(7, 512);
-	if (iLocal_11)
+	if (bLocal_11)
 	{
 		func_4(7);
 	}
@@ -75,7 +75,7 @@ int func_2()
 				func_7(iVar0, 16384);
 				iVar0++;
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_2))
+			if (!ENTITY::DOES_ENTITY_EXIST(bLocal_2))
 			{
 				iLocal_0 = 6;
 				return 0;
@@ -90,73 +90,73 @@ int func_2()
 				iLocal_0 = 6;
 				return 0;
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_3))
+			if (!ENTITY::DOES_ENTITY_EXIST(bLocal_3))
 			{
-				iLocal_3 = VEHICLE::_0x6E585A616ABB8401(((*Global_1425371)[7 /*373*/])->f_1);
+				bLocal_3 = VEHICLE::_0x6E585A616ABB8401(((*Global_1425371)[7 /*373*/])->f_1);
 				return 0;
 			}
 			iLocal_12 = AUDIO::GET_SOUND_ID();
-			func_9(iLocal_2, 0, iLocal_12);
+			func_9(bLocal_2, 0, iLocal_12);
 			iLocal_1 = 2;
 			iLocal_0 = 1;
 			break;
 		case 1:
-			func_9(iLocal_2, 0, iLocal_12);
-			if (func_10(iLocal_3, Global_35, 1) < 2500f)
+			func_9(bLocal_2, 0, iLocal_12);
+			if (func_10(bLocal_3, Global_35, 1) < 2500f)
 			{
-				if (VEHICLE::_0x86AFC343CF7F0B34(-154412807, 2940.988f, 1374.5f, 43.1838f, &iVar1))
+				if (VEHICLE::_0x86AFC343CF7F0B34(joaat("trains_intersection1_ann"), 2940.988f, 1374.5f, 43.1838f, &iVar1))
 				{
-					VEHICLE::_0x3ABFA128F5BF5A70(-154412807, iVar1, 1);
+					VEHICLE::_0x3ABFA128F5BF5A70(joaat("trains_intersection1_ann"), iVar1, 1);
 				}
-				VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(iLocal_3, true);
+				VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(bLocal_3, true);
 				VEHICLE::_0xA7966807953A18EE(((*Global_1425371)[7 /*373*/])->f_1, 0.5f);
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, 0.5f);
-				VEHICLE::_0xCFE122EC635CC2B2(iLocal_3, "DANGER", 1, 0);
-				iLocal_4 = VEHICLE::GET_TRAIN_CARRIAGE(iLocal_3, iLocal_1);
+				VEHICLE::_0xCFE122EC635CC2B2(bLocal_3, "DANGER", 1, 0);
+				bLocal_4 = VEHICLE::GET_TRAIN_CARRIAGE(bLocal_3, iLocal_1);
 				func_7(7, 512);
-				iLocal_11 = 1;
+				bLocal_11 = true;
 				iLocal_0 = 2;
 			}
 			break;
 		case 2:
-			func_9(iLocal_2, 0, iLocal_12);
-			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_4))
+			func_9(bLocal_2, 0, iLocal_12);
+			if (!ENTITY::DOES_ENTITY_EXIST(bLocal_4))
 			{
-				VEHICLE::_0xCFE122EC635CC2B2(iLocal_3, "ACKNOWLEDGE", 1, 0);
+				VEHICLE::_0xCFE122EC635CC2B2(bLocal_3, "ACKNOWLEDGE", 1, 0);
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, func_11(0));
-				VEHICLE::_0x4182C037AA1F0091(iLocal_3, 0);
+				VEHICLE::_0x4182C037AA1F0091(bLocal_3, 0);
 				func_12();
 				func_3(7, 512);
 				iLocal_0 = 4;
 				return 0;
 			}
-			if (func_13(iLocal_4, vLocal_5, 1) < 0.25f)
+			if (func_13(bLocal_4, vLocal_5, 1) < 0.25f)
 			{
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, 0f);
-				VEHICLE::_0xCFE122EC635CC2B2(iLocal_3, "ACKNOWLEDGE", 1, 0);
+				VEHICLE::_0xCFE122EC635CC2B2(bLocal_3, "ACKNOWLEDGE", 1, 0);
 				iLocal_0 = 3;
 			}
 			break;
 		case 3:
-			fVar2 = func_9(iLocal_2, 1, iLocal_12);
+			fVar2 = func_9(bLocal_2, 1, iLocal_12);
 			if (fVar2 >= 0.999f)
 			{
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, 0.5f);
-				VEHICLE::_0xCFE122EC635CC2B2(iLocal_3, "DANGER", 1, 0);
+				VEHICLE::_0xCFE122EC635CC2B2(bLocal_3, "DANGER", 1, 0);
 				iLocal_1++;
-				iLocal_4 = VEHICLE::GET_TRAIN_CARRIAGE(iLocal_3, iLocal_1);
+				bLocal_4 = VEHICLE::GET_TRAIN_CARRIAGE(bLocal_3, iLocal_1);
 				iLocal_0 = 2;
 			}
 			break;
 		case 4:
-			if (func_13(iLocal_3, vLocal_8, 1) < 160000f)
+			if (func_13(bLocal_3, vLocal_8, 1) < 160000f)
 			{
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, 5f);
 				iLocal_0 = 5;
 			}
 			break;
 		case 5:
-			if (func_13(iLocal_3, vLocal_8, 1) < 1f)
+			if (func_13(bLocal_3, vLocal_8, 1) < 1f)
 			{
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, 0f);
 				iLocal_0 = 6;
@@ -208,7 +208,7 @@ int func_5()
 	{
 		return 1;
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_3))
+	if (!ENTITY::DOES_ENTITY_EXIST(bLocal_3))
 	{
 		return 1;
 	}
@@ -268,35 +268,35 @@ bool func_8(int iParam0, int iParam1)
 	return (Global_40.f_11029[iParam0 /*5*/] && iParam1) != 0;
 }
 
-float func_9(int iParam0, bool bParam1, int iParam2)
+float func_9(bool bParam0, bool bParam1, int iParam2)
 {
 	float fVar0;
 	vector3 vVar1;
 
-	fVar0 = ENTITY::_0x627520389E288A73(iParam0, "props_misc@annesburg_coal", "annchute01_full");
+	fVar0 = ENTITY::_0x627520389E288A73(bParam0, "props_misc@annesburg_coal", "annchute01_full");
 	if (bParam1)
 	{
-		vVar1 = { ENTITY::GET_ENTITY_COORDS(iParam0, true, false) };
-		ENTITY::_0xEAA885BA3CEA4E4A(iParam0, "props_misc@annesburg_coal", "annchute01_full", 1.5f);
+		vVar1 = { ENTITY::GET_ENTITY_COORDS(bParam0, true, false) };
+		ENTITY::_0xEAA885BA3CEA4E4A(bParam0, "props_misc@annesburg_coal", "annchute01_full", 1.5f);
 		if (fVar0 >= 0.125f && fVar0 < 0.21f)
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
+			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
 			func_23(iParam2, vVar1);
 		}
 		else if (fVar0 >= 0.485f && fVar0 < 0.52f)
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 1f);
+			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 1f);
 			func_23(iParam2, vVar1);
 		}
 		else if (fVar0 >= 0.64f && fVar0 < 0.73f)
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
+			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
 			func_23(iParam2, vVar1);
 		}
 		else
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
-			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
+			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
+			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
 			func_24(iParam2);
 		}
 	}
@@ -304,20 +304,20 @@ float func_9(int iParam0, bool bParam1, int iParam2)
 	{
 		if (fVar0 != 0f)
 		{
-			ENTITY::_0x11CDABDC7783B2BC(iParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
-			ENTITY::_0xEAA885BA3CEA4E4A(iParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
+			ENTITY::_0x11CDABDC7783B2BC(bParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
+			ENTITY::_0xEAA885BA3CEA4E4A(bParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
 		}
-		GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
-		GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
+		GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
+		GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
 		func_24(iParam2);
 		fVar0 = 0f;
 	}
 	return fVar0;
 }
 
-float func_10(int iParam0, int iParam1, bool bParam2)
+float func_10(bool bParam0, int iParam1, bool bParam2)
 {
-	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
+	if (!ENTITY::DOES_ENTITY_EXIST(bParam0))
 	{
 		return 0f;
 	}
@@ -327,9 +327,9 @@ float func_10(int iParam0, int iParam1, bool bParam2)
 	}
 	if (bParam2)
 	{
-		return BUILTIN::VDIST2(ENTITY::GET_ENTITY_COORDS(iParam0, false, false), ENTITY::GET_ENTITY_COORDS(iParam1, false, false));
+		return BUILTIN::VDIST2(ENTITY::GET_ENTITY_COORDS(bParam0, false, false), ENTITY::GET_ENTITY_COORDS(iParam1, false, false));
 	}
-	return func_25(ENTITY::GET_ENTITY_COORDS(iParam0, false, false), ENTITY::GET_ENTITY_COORDS(iParam1, false, false));
+	return func_25(ENTITY::GET_ENTITY_COORDS(bParam0, false, false), ENTITY::GET_ENTITY_COORDS(iParam1, false, false));
 }
 
 float func_11(int iParam0)
@@ -380,13 +380,13 @@ void func_12()
 		VEHICLE::_0x3ABFA128F5BF5A70(iVar1, iVar0, 1);
 	}
 	iVar0 = 0;
-	iVar1 = -1242669618;
+	iVar1 = joaat("trains_nb1");
 	if (VEHICLE::_0x86AFC343CF7F0B34(iVar1, 2748.4f, -1434.3f, 45f, &iVar0))
 	{
 		VEHICLE::_0x3ABFA128F5BF5A70(iVar1, iVar0, 1);
 	}
 	iVar0 = 0;
-	iVar1 = -1242669618;
+	iVar1 = joaat("trains_nb1");
 	if (VEHICLE::_0x86AFC343CF7F0B34(iVar1, 2624.2f, -1477.2f, 45f, &iVar0))
 	{
 		VEHICLE::_0x3ABFA128F5BF5A70(iVar1, iVar0, 1);
@@ -399,17 +399,17 @@ void func_12()
 	}
 }
 
-float func_13(int iParam0, vector3 vParam1, bool bParam4)
+float func_13(bool bParam0, vector3 vParam1, bool bParam4)
 {
 	vector3 vVar0;
 
-	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
+	if (!ENTITY::IS_ENTITY_DEAD(bParam0))
 	{
-		vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam0, true, false) };
+		vVar0 = { ENTITY::GET_ENTITY_COORDS(bParam0, true, false) };
 	}
 	else
 	{
-		vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam0, false, false) };
+		vVar0 = { ENTITY::GET_ENTITY_COORDS(bParam0, false, false) };
 	}
 	if (bParam4)
 	{
@@ -427,17 +427,17 @@ int func_14(int iParam0)
 	return 1;
 }
 
-int func_15(int iParam0, bool bParam1, int iParam2)
+int func_15(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
 	if (Global_1572887->f_12 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1898164->f_163;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1898164->f_164;
 		}
@@ -453,7 +453,7 @@ int func_15(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -647,7 +647,7 @@ void func_23(int iParam0, vector3 vParam1)
 	}
 	if (AUDIO::_0xE368E8422C860BA7("Coal_Fall", "Annesburg_Coal_Chute_Sounds", -2) && AUDIO::_0x84848E1C0FC67DBB(iParam0))
 	{
-		AUDIO::_0xDCF5BA95BBF0FABA(iParam0, "Coal_Fall", vParam1, "Annesburg_Coal_Chute_Sounds", 0, 0, 1);
+		AUDIO::_0xDCF5BA95BBF0FABA(iParam0, "Coal_Fall", vParam1, "Annesburg_Coal_Chute_Sounds", 0, 0, true);
 	}
 }
 

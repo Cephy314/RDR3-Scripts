@@ -1,8 +1,8 @@
 #region Local Var
 	int iLocal_0 = 0;
 	int iLocal_1 = 0;
-	int iLocal_2 = 0;
-	int iLocal_3 = 0;
+	bool bLocal_2 = false;
+	bool bLocal_3 = false;
 	var uLocal_4 = 0;
 	var uLocal_5 = 0;
 	var uLocal_6 = 0;
@@ -15,7 +15,7 @@
 
 void __EntryFunction__()
 {
-	iLocal_3 = 1;
+	bLocal_3 = true;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		SCRIPTS::_0xE7282390542F570D(vScriptParam_0.x);
@@ -45,24 +45,24 @@ int func_1(struct<2> Param0, var uParam2)
 		case 0:
 			if (func_2() && STREAMING::_IS_IMAP_ACTIVE_2(204868257))
 			{
-				iLocal_0 = func_3("INSPECT_GENERIC", -719620017, TASK::_0xA8452DD321607029(Param0.f_1, 1), 4f, 1, 1, 0, 3, 570, 4000, 10, 1073741824, 0, 1704213876, 0);
-				iLocal_1 = CAM::CREATE_CAMERA_WITH_PARAMS(26379945, 2511.907f, -1160.024f, 52.5668f, -3.9115f, 0f, -90.0969f, 51.282f, false, 2);
+				iLocal_0 = func_3("INSPECT_GENERIC", joaat("INPUT_CONTEXT_Y"), TASK::_0xA8452DD321607029(Param0.f_1, 1), 4f, 1, 1, 0, 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
+				iLocal_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), 2511.907f, -1160.024f, 52.5668f, -3.9115f, 0f, -90.0969f, 51.282f, false, 2);
 				iLocal_10 = 1;
 			}
 			break;
 		case 1:
-			if (!iLocal_2)
+			if (!bLocal_2)
 			{
 				if (func_4(iLocal_0, 1))
 				{
 					CAM::SET_CAM_ACTIVE(iLocal_1, true);
 					ENTITY::_0x80FDEB3A9E9AA578(Global_35, 0);
 					CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
-					iLocal_2 = 1;
-					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), 0, 0, 0);
-					if (iLocal_3 && func_5(93, 0) == 0)
+					bLocal_2 = true;
+					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
+					if (bLocal_3 && func_5(93, 0) == 0)
 					{
-						iLocal_3 = 0;
+						bLocal_3 = false;
 						func_6(&uLocal_4);
 						func_6(&uLocal_7);
 						func_7(93, 0, 1);
@@ -72,8 +72,8 @@ int func_1(struct<2> Param0, var uParam2)
 			else if (!func_4(iLocal_0, 1) && (func_8(&uLocal_4, 2f) || !func_9(&uLocal_4)))
 			{
 				CAM::SET_CAM_ACTIVE(iLocal_1, false);
-				iLocal_2 = 0;
-				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), 1, 0, 0);
+				bLocal_2 = false;
+				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 			}
 			else
 			{
@@ -94,14 +94,14 @@ int func_2()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == 11966224)
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_3(char* sParam0, int iParam1, vector3 vParam2, float fParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, int iParam11, int iParam12, int iParam13, int iParam14, int iParam15, bool bParam16)
+int func_3(char* sParam0, int iParam1, vector3 vParam2, float fParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, int iParam11, int iParam12, bool bParam13, int iParam14, bool bParam15, int iParam16)
 {
 	int iVar0;
 	int iVar1;
@@ -142,17 +142,17 @@ int func_3(char* sParam0, int iParam1, vector3 vParam2, float fParam5, int iPara
 	}
 	if (iVar1 != 0)
 	{
-		func_16(iVar1, iParam1, sParam0, 4, iParam6, iParam7, vParam2, fParam5, 0, 0, 2, iParam8, iParam9, iParam10, iParam11, iParam12, iParam13, iParam14, 1065353216, 0, 0, 0, iParam15, bParam16);
+		func_16(iVar1, iParam1, sParam0, 4, iParam6, iParam7, vParam2, fParam5, 0, 0, 2, iParam8, iParam9, iParam10, iParam11, iParam12, bParam13, iParam14, 1065353216 /* Float: 1f */, 0, 0, 0, bParam15, iParam16);
 		return iVar1;
 	}
 	return 0;
 }
 
-bool func_4(int iParam0, int iParam1)
+bool func_4(int iParam0, bool bParam1)
 {
 	int iVar0;
 
-	if (iParam1 && !func_17(iParam0))
+	if (bParam1 && !func_17(iParam0))
 	{
 		return false;
 	}
@@ -217,7 +217,7 @@ int func_10(var uParam0, float fParam1)
 	return 0;
 }
 
-var func_11(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+var func_11(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -230,7 +230,7 @@ var func_11(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_25(uParam0, &Var0);
+	return func_25(bParam0, &Var0);
 }
 
 int func_12()
@@ -275,7 +275,7 @@ int func_15(vector3 vParam0, vector3 vParam3, float fParam6, bool bParam7)
 	return 0;
 }
 
-void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, vector3 vParam6, float fParam9, int iParam10, int iParam11, int iParam12, var uParam13, int iParam14, int iParam15, int iParam16, int iParam17, int iParam18, int iParam19, int iParam20, int iParam21, bool bParam22, int iParam23, int iParam24, bool bParam25)
+void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5, vector3 vParam6, float fParam9, int iParam10, int iParam11, int iParam12, int iParam13, int iParam14, int iParam15, bool bParam16, int iParam17, bool bParam18, int iParam19, int iParam20, int iParam21, bool bParam22, int iParam23, bool bParam24, bool bParam25)
 {
 	int iVar0;
 
@@ -329,13 +329,13 @@ void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 			HUD::_UIPROMPT_SET_STANDARD_MODE(iVar0, 1);
 			break;
 		case 1:
-			HUD::_UIPROMPT_SET_PRESSED_TIMED_MODE(iVar0, iParam16);
+			HUD::_UIPROMPT_SET_PRESSED_TIMED_MODE(iVar0, bParam16);
 			break;
 		case 3:
 			HUD::_UIPROMPT_SET_HOLD_INDEFINITELY_MODE(iVar0);
 			break;
 		case 6:
-			HUD::_UIPROMPT_SET_HOLD_AUTO_FILL_MODE(iVar0, iParam16, iParam15);
+			HUD::_UIPROMPT_SET_HOLD_AUTO_FILL_MODE(iVar0, bParam16, iParam15);
 			if (bParam25)
 			{
 				HUD::_UIPROMPT_SET_ATTRIBUTE(iVar0, 24, 1);
@@ -345,7 +345,7 @@ void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 			HUD::_UIPROMPT_SET_MASH_MODE(iVar0, iParam17);
 			break;
 		case 8:
-			HUD::_UIPROMPT_SET_MASH_AUTO_FILL_MODE(iVar0, iParam16, iParam17);
+			HUD::_UIPROMPT_SET_MASH_AUTO_FILL_MODE(iVar0, bParam16, iParam17);
 			break;
 		case 13:
 			HUD::_UIPROMPT_SET_MASH_INDEFINITELY_MODE(iVar0);
@@ -354,20 +354,20 @@ void func_16(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 			HUD::_UIPROMPT_SET_TARGET_MODE(iVar0, 0.5f, 0.1f, 0);
 			break;
 		case 9:
-			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_MODE(iVar0, iParam17, iParam18, iParam19);
+			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_MODE(iVar0, iParam17, bParam18, iParam19);
 			break;
 		case 4:
 		case 5:
-			HUD::_UIPROMPT_SET_STANDARDIZED_HOLD_MODE(iVar0, iParam24);
+			HUD::_UIPROMPT_SET_STANDARDIZED_HOLD_MODE(iVar0, bParam24);
 			break;
 		case 10:
-			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE(iVar0, iParam17, iParam18, iParam19);
+			HUD::_UIPROMPT_SET_MASH_WITH_RESISTANCE_CAN_FAIL_MODE(iVar0, iParam17, bParam18, iParam19);
 			break;
 		case 11:
-			HUD::_UIPROMPT_SET_MASH_MANUAL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), iParam18, 0f, iParam19);
+			HUD::_UIPROMPT_SET_MASH_MANUAL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), bParam18, 0f, iParam19);
 			break;
 		case 12:
-			HUD::_UIPROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), iParam18, 0f, iParam19);
+			HUD::_UIPROMPT_SET_MASH_MANUAL_CAN_FAIL_MODE(iVar0, (1f / BUILTIN::TO_FLOAT(iParam17)), bParam18, 0f, iParam19);
 			break;
 		case 14:
 			HUD::_UIPROMPT_SET_ROTATE_MODE(iVar0, iParam20, iParam21);
@@ -473,31 +473,31 @@ void func_24(var uParam0)
 	*uParam0 = 0;
 }
 
-var func_25(var uParam0, var uParam1)
+var func_25(bool bParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(uParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
 }
 
-void func_26(int iParam0, int iParam1)
+void func_26(int iParam0, bool bParam1)
 {
 	if (HUD::_UIPROMPT_IS_VALID(((*Global_1945938)[iParam0 /*18*/])->f_3))
 	{
 		if (((*Global_1945938)[iParam0 /*18*/])->f_5 == 5 && !func_14(iParam0, 8))
 		{
-			HUD::_UIPROMPT_SET_VISIBLE(((*Global_1945938)[iParam0 /*18*/])->f_3, 0);
+			HUD::_UIPROMPT_SET_VISIBLE(((*Global_1945938)[iParam0 /*18*/])->f_3, false);
 		}
 		else
 		{
-			HUD::_UIPROMPT_SET_VISIBLE(((*Global_1945938)[iParam0 /*18*/])->f_3, iParam1);
+			HUD::_UIPROMPT_SET_VISIBLE(((*Global_1945938)[iParam0 /*18*/])->f_3, bParam1);
 		}
 	}
 }
 
-void func_27(int iParam0, int iParam1)
+void func_27(int iParam0, bool bParam1)
 {
 	if (HUD::_UIPROMPT_IS_VALID(((*Global_1945938)[iParam0 /*18*/])->f_3))
 	{
-		HUD::_UIPROMPT_SET_ENABLED(((*Global_1945938)[iParam0 /*18*/])->f_3, iParam1);
+		HUD::_UIPROMPT_SET_ENABLED(((*Global_1945938)[iParam0 /*18*/])->f_3, bParam1);
 	}
 }
 

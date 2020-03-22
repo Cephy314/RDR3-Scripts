@@ -124,7 +124,7 @@ void func_6()
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster_player", 32);
-					Local_5.f_8.f_2 = -1664948962; /* GXTEntry: "Bounty Hunter\'s Letter" */
+					Local_5.f_8.f_2 = joaat("DOCUMENT_ARTHUR_HAS_POSTER_1");
 				}
 				else
 				{
@@ -158,7 +158,7 @@ void func_6()
 			}
 			if (SCRIPTS::HAS_SCRIPT_LOADED(&(Local_5.f_18)) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Local_5, 0))
 			{
-				Local_5.f_23 = BUILTIN::START_NEW_SCRIPT_WITH_ARGS(&(Local_5.f_18), &(Local_5.f_8), 10, Local_5.f_22);
+				Local_5.f_23 = SCRIPTS::START_NEW_SCRIPT_WITH_ARGS(&(Local_5.f_18), &(Local_5.f_8), 10, Local_5.f_22);
 				SCRIPTS::SET_SCRIPT_AS_NO_LONGER_NEEDED(&(Local_5.f_18));
 				func_17(3);
 			}

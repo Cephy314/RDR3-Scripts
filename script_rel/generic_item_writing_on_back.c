@@ -161,9 +161,9 @@ void func_5(var uParam0)
 		{
 			PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 1, -1);
 		}
-		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, -473983589))
+		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 		{
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, -1769873703) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, joaat("generic")) == 0)
 			{
 				uParam0->f_5.f_1 = 1;
 				func_9(uParam0);
@@ -192,9 +192,9 @@ void func_6(var uParam0)
 		{
 			PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 1, -1);
 		}
-		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, -473983589))
+		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 		{
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, -1769873703) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, joaat("generic")) == 0)
 			{
 				uParam0->f_5.f_1 = 1;
 				func_9(uParam0);
@@ -324,13 +324,13 @@ void func_12(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(uParam0->f_89[iParam1]), "isVisible", iParam3);
 }
 
-bool func_13(var uParam0)
+bool func_13(int iParam0)
 {
-	return func_14(Global_1935496->f_27, uParam0);
+	return func_14(Global_1935496->f_27, iParam0);
 }
 
-bool func_14(var uParam0, var uParam1)
+bool func_14(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 

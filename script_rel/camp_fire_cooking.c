@@ -1,17 +1,17 @@
 #region Local Var
-	int iLocal_0 = 0;
+	bool bLocal_0 = false;
 	int iLocal_1 = 0;
 	int iLocal_2 = 0;
 	int iLocal_3 = 0;
 	var uLocal_4 = 0;
-	int iLocal_5 = 0;
+	bool bLocal_5 = false;
 	struct<8> Local_6 = { 0, 0, 0, 0, 0, 0, 0, 0 } ;
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
 
 void __EntryFunction__()
 {
-	iLocal_0 = 1;
+	bLocal_0 = true;
 	iLocal_2 = vScriptParam_0.x;
 	iLocal_3 = vScriptParam_0.y;
 	uLocal_4 = vScriptParam_0.z;
@@ -48,20 +48,20 @@ void func_2()
 	}
 }
 
-int func_3()
+bool func_3()
 {
 	if (iLocal_1 != 0)
 	{
 		if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iLocal_1) == 0)
 		{
-			return iLocal_0;
+			return bLocal_0;
 		}
 		else
 		{
-			return 1;
+			return true;
 		}
 	}
-	return iLocal_0;
+	return bLocal_0;
 }
 
 void func_4()
@@ -95,24 +95,24 @@ void func_6()
 {
 	if (!TASK::_0x841475AC96E794D1(iLocal_3))
 	{
-		iLocal_0 = 0;
+		bLocal_0 = false;
 	}
-	if (iLocal_5)
+	if (bLocal_5)
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(Local_6.f_3))
 		{
-			iLocal_0 = 0;
+			bLocal_0 = false;
 		}
 		else if (PED::IS_PED_DEAD_OR_DYING(Local_6.f_3, true))
 		{
-			iLocal_0 = 0;
+			bLocal_0 = false;
 		}
 		else if (!PED::_0x9C54041BB66BCF9E(Local_6.f_3, iLocal_3))
 		{
-			iLocal_0 = 0;
+			bLocal_0 = false;
 		}
 	}
-	if (!iLocal_0)
+	if (!bLocal_0)
 	{
 		return;
 	}
@@ -122,7 +122,7 @@ void func_6()
 			if (!ENTITY::DOES_ENTITY_EXIST(Local_6.f_3))
 			{
 				Local_6.f_3 = TASK::_0x5BA659955369B0E2(iLocal_3);
-				iLocal_5 = 1;
+				bLocal_5 = true;
 			}
 			else
 			{
@@ -148,7 +148,7 @@ void func_6()
 			}
 			else
 			{
-				iLocal_0 = 0;
+				bLocal_0 = false;
 			}
 			break;
 		case 3:
@@ -164,7 +164,7 @@ void func_6()
 				}
 				else
 				{
-					iLocal_0 = 0;
+					bLocal_0 = false;
 				}
 			}
 			break;
@@ -178,7 +178,7 @@ void func_6()
 				}
 				else
 				{
-					iLocal_0 = 0;
+					bLocal_0 = false;
 				}
 			}
 			break;

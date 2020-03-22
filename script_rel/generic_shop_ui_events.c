@@ -245,7 +245,7 @@ void func_8(var uParam0, bool bParam1)
 	}
 }
 
-var func_9(bool bParam0)
+int func_9(bool bParam0)
 {
 	var uVar0;
 
@@ -328,14 +328,14 @@ void func_20()
 	Global_1914319->f_16855.f_3 = 0;
 }
 
-bool func_21(var uParam0, var uParam1)
+bool func_21(var uParam0, int iParam1)
 {
-	return (uParam0 && uParam1) != 0;
+	return (uParam0 && iParam1) != 0;
 }
 
-void func_22(var uParam0, var uParam1)
+void func_22(var uParam0, int iParam1)
 {
-	*uParam0 = (*uParam0 || uParam1);
+	*uParam0 = (*uParam0 || iParam1);
 }
 
 var func_23(bool bParam0)

@@ -879,7 +879,7 @@ int func_21(int iParam0)
 		DATABINDING::_DATABINDING_CLEAR_BINDING_ARRAY(iParam0->f_5.f_3);
 	}
 	iParam0->f_5.f_4 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(iParam0->f_5, 616081382, "");
-	iParam0->f_5.f_5 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(iParam0->f_5, 1728520791, false);
+	iParam0->f_5.f_5 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(iParam0->f_5, 1728520791, 0);
 	iParam0->f_5.f_388 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(iParam0->f_5, joaat("label"), 0);
 	iParam0->f_5.f_389 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(iParam0->f_5, joaat("description"), 0);
 	iParam0->f_5.f_390 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(iParam0->f_5, 1212273021, "");
@@ -971,8 +971,8 @@ int func_28(var uParam0, var uParam1, char* sParam2, char* sParam3, char* sParam
 	{
 		return 0;
 	}
-	uParam0->f_10 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam1, sParam2, false);
-	uParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam1, sParam3, false);
+	uParam0->f_10 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam1, sParam2, 0);
+	uParam0->f_11 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam1, sParam3, 0);
 	uParam0->f_12 = DATABINDING::_DATABINDING_ADD_DATA_INT(*uParam1, sParam4, false);
 	*uParam0 = 1;
 	uParam0->f_2 = 0;
@@ -1020,7 +1020,7 @@ int func_30(int iParam0)
 	{
 		return 0;
 	}
-	iParam0->f_5.f_393 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(iParam0->f_2, -1708640972, false);
+	iParam0->f_5.f_393 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(iParam0->f_2, -1708640972, 0);
 	if (!func_59(&(iParam0->f_2), &(iParam0->f_5.f_393.f_1), "infoScreenBody"))
 	{
 		return 0;
@@ -1290,11 +1290,11 @@ int func_50(var uParam0, int iParam1)
 
 void func_51(int iParam0)
 {
-	if (Global_1939057->f_102.f_2 >= iParam0)
+	if (Global_1939067->f_102.f_2 >= iParam0)
 	{
 		return;
 	}
-	Global_1939057->f_102.f_2 = iParam0;
+	Global_1939067->f_102.f_2 = iParam0;
 }
 
 bool func_52(int iParam0, int iParam1)
@@ -1325,14 +1325,14 @@ void func_55(var uParam0, int iParam1)
 	{
 		return;
 	}
-	iVar0 = (Global_1273882->f_21 - uParam0->f_1);
+	iVar0 = (Global_1275573->f_21 - uParam0->f_1);
 	TELEMETRY::_0x3255D4D2082C6339(*uParam0, iVar0, uParam0->f_2);
 	func_83(uParam0);
 }
 
 var func_56()
 {
-	return Global_1270479->f_2940;
+	return Global_1272170->f_2940;
 }
 
 int func_57()
@@ -1693,7 +1693,7 @@ char* func_67(int iParam0)
 	return "null";
 }
 
-void func_68(var uParam0)
+void func_68(int iParam0)
 {
 }
 
@@ -1965,8 +1965,8 @@ void func_81(var uParam0)
 	func_125(uParam0);
 	uParam0->f_7 = 0;
 	uParam0->f_6 = 0;
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_10, false);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_11, false);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_10, 0);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_11, 0);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam0->f_12, false);
 }
 
@@ -1987,7 +1987,7 @@ void func_84(var uParam0, int iParam1)
 	MISC::_COPY_MEMORY(&(uParam0->f_434), iParam1, 4);
 }
 
-int func_85(var uParam0, var uParam1, int iParam2)
+int func_85(int* iParam0, var uParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -1997,32 +1997,32 @@ int func_85(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	func_126(uParam0, uParam1);
+	func_126(iParam0, uParam1);
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT_BY_HASH(*uParam1, joaat("level"));
 	iVar1 = func_97();
-	func_127(uParam0, iVar0);
+	func_127(iParam0, iVar0);
 	if (func_128())
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
 	}
 	else
 	{
-		func_130(uParam0);
+		func_130(iParam0);
 		if (iVar0 > iVar1)
 		{
-			func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_UNLOCKS_WHEN", iVar0));
+			func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_UNLOCKS_WHEN", iVar0));
 		}
 		else
 		{
 			iVar2 = DATABINDING::_DATABINDING_READ_DATA_STRING_FROM_PARENT(*uParam1, "itemlocation");
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(iVar2))
 			{
-				func_129(uParam0, MISC::_CREATE_VAR_STRING(2, iVar2));
+				func_129(iParam0, MISC::_CREATE_VAR_STRING(2, iVar2));
 			}
 		}
 	}
-	func_132(&(uParam0->f_5.f_368), uParam1, -3675574, -536627617, func_131(1, func_121(&(uParam0->f_5.f_19)), iParam2));
-	func_133(uParam1, iVar0, iVar1, func_100(&(uParam0->f_409)));
+	func_132(&(iParam0->f_5.f_368), uParam1, -3675574, -536627617, func_131(1, func_121(&(iParam0->f_5.f_19)), iParam2));
+	func_133(uParam1, iVar0, iVar1, func_100(&(iParam0->f_409)));
 	return 1;
 }
 
@@ -2036,7 +2036,7 @@ int func_86(var uParam0, bool bParam1)
 	return 1;
 }
 
-int func_87(var uParam0, var uParam1)
+int func_87(int* iParam0, var uParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -2045,27 +2045,27 @@ int func_87(var uParam0, var uParam1)
 	{
 		return 0;
 	}
-	func_126(uParam0, uParam1);
+	func_126(iParam0, uParam1);
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT_BY_HASH(*uParam1, joaat("level"));
 	iVar1 = func_97();
-	func_127(uParam0, iVar0);
+	func_127(iParam0, iVar0);
 	if (func_128())
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
 	}
 	else if (iVar0 > iVar1)
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_PROGRESS_TO_NEXT"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_PROGRESS_TO_NEXT"));
 	}
 	else
 	{
-		func_130(uParam0);
+		func_130(iParam0);
 	}
-	func_125(&(uParam0->f_5.f_368));
+	func_125(&(iParam0->f_5.f_368));
 	return 1;
 }
 
-int func_88(var uParam0, var uParam1, int iParam2)
+int func_88(int* iParam0, var uParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -2075,35 +2075,35 @@ int func_88(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	func_126(uParam0, uParam1);
+	func_126(iParam0, uParam1);
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT_BY_HASH(*uParam1, joaat("level"));
 	iVar1 = func_97();
-	func_127(uParam0, iVar0);
+	func_127(iParam0, iVar0);
 	if (func_128())
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
 	}
 	else if (!func_120())
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_VIP_UNLOCK_WITH"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_VIP_UNLOCK_WITH"));
 	}
 	else
 	{
-		func_130(uParam0);
+		func_130(iParam0);
 		if (iVar0 > iVar1)
 		{
-			func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_UNLOCKS_WHEN", iVar0));
+			func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_UNLOCKS_WHEN", iVar0));
 		}
 		else
 		{
 			iVar2 = DATABINDING::_DATABINDING_READ_DATA_STRING_FROM_PARENT(*uParam1, "itemlocation");
 			if (!MISC::IS_STRING_NULL_OR_EMPTY(iVar2))
 			{
-				func_129(uParam0, MISC::_CREATE_VAR_STRING(2, iVar2));
+				func_129(iParam0, MISC::_CREATE_VAR_STRING(2, iVar2));
 			}
 		}
 	}
-	func_132(&(uParam0->f_5.f_368), uParam1, -3675574, -536627617, func_131(2, func_121(&(uParam0->f_5.f_19)), iParam2));
+	func_132(&(iParam0->f_5.f_368), uParam1, -3675574, -536627617, func_131(2, func_121(&(iParam0->f_5.f_19)), iParam2));
 	return 1;
 }
 
@@ -2117,7 +2117,7 @@ int func_89(int* iParam0, bool bParam1)
 	return 1;
 }
 
-int func_90(var uParam0, var uParam1)
+int func_90(int* iParam0, var uParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -2126,23 +2126,23 @@ int func_90(var uParam0, var uParam1)
 	{
 		return 0;
 	}
-	func_126(uParam0, uParam1);
+	func_126(iParam0, uParam1);
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT_BY_HASH(*uParam1, joaat("level"));
 	iVar1 = func_97();
-	func_127(uParam0, iVar0);
+	func_127(iParam0, iVar0);
 	if (func_128())
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_REWARDS_SEASON_CLOSED"));
 	}
 	else if (iVar0 > iVar1)
 	{
-		func_129(uParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_PROGRESS_TO_NEXT"));
+		func_129(iParam0, MISC::_CREATE_VAR_STRING(2, "SR_TOOLTIP_PROGRESS_TO_NEXT"));
 	}
 	else
 	{
-		func_130(uParam0);
+		func_130(iParam0);
 	}
-	func_125(&(uParam0->f_5.f_368));
+	func_125(&(iParam0->f_5.f_368));
 	return 1;
 }
 
@@ -2408,22 +2408,22 @@ int func_102(var uParam0, var uParam1, char[32] cParam2, var uParam10)
 	uParam0->f_25 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, joaat("description"), uParam10->f_23);
 	uParam0->f_26 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, joaat("tooltip"), uParam10->f_24);
 	uParam0->f_27 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, joaat("locked"), uParam10->f_25);
-	uParam0->f_28 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, 1267925131, uParam10->f_26);
+	uParam0->f_28 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, joaat("owned"), uParam10->f_26);
 	uParam0->f_29 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(*uParam0, 1212273021, &(uParam10->f_27));
 	uParam0->f_30 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, -94662335, uParam10->f_43);
 	uParam0->f_31 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, 2103186173, uParam10->f_44);
-	uParam0->f_32 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(*uParam0, -2035241910, &(uParam10->f_45));
+	uParam0->f_32 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(*uParam0, joaat("dynamic_list_item_raw_text_entry"), &(uParam10->f_45));
 	uParam0->f_33 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, -908299120, uParam10->f_61);
 	uParam0->f_34 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(*uParam0, joaat("level"), uParam10->f_62);
 	uParam0->f_35 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "itemlocation", &(uParam10->f_63));
 	return 1;
 }
 
-int func_103(var uParam0, var uParam1)
+int func_103(int* iParam0, var uParam1)
 {
 	bool bVar0;
 
-	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(uParam0->f_5.f_3))
+	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(iParam0->f_5.f_3))
 	{
 		return 0;
 	}
@@ -2431,8 +2431,8 @@ int func_103(var uParam0, var uParam1)
 	{
 		return 0;
 	}
-	bVar0 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(uParam0->f_5.f_3);
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam0->f_5.f_3, bVar0, "vip_entry", *uParam1);
+	bVar0 = DATABINDING::_DATABINDING_GET_ARRAY_COUNT(iParam0->f_5.f_3);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(iParam0->f_5.f_3, bVar0, "vip_entry", *uParam1);
 	return 1;
 }
 
@@ -2453,7 +2453,7 @@ void func_105(var uParam0, int iParam1)
 	}
 	func_83(uParam0);
 	*uParam0 = iParam1;
-	uParam0->f_1 = Global_1273882->f_21;
+	uParam0->f_1 = Global_1275573->f_21;
 }
 
 void func_106(var uParam0, int iParam1)
@@ -2640,11 +2640,11 @@ void func_116(var uParam0)
 			}
 			func_163(uParam0, 3);
 		case 3:
-			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_10, false);
-			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_11, false);
+			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_10, 0);
+			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_11, 0);
 			if (uParam0->f_7 != uParam0->f_3 && uParam0->f_7 != 0)
 			{
-				TXD::_0x8232F37DF762ACB2(uParam0->f_7);
+				TXD::_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(uParam0->f_7);
 			}
 			uParam0->f_6 = uParam0->f_2;
 			uParam0->f_7 = uParam0->f_3;
@@ -2678,17 +2678,17 @@ void func_116(var uParam0)
 			}
 			if (uParam0->f_7 != uParam0->f_3)
 			{
-				TXD::_0x8232F37DF762ACB2(uParam0->f_7);
+				TXD::_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(uParam0->f_7);
 				func_163(uParam0, 1);
 				return;
 			}
-			if (!TXD::_0xBA0163B277C2D2D0(uParam0->f_7))
+			if (!TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_7))
 			{
 				func_163(uParam0, 1);
 				return;
 			}
-			TXD::_0xDB1BD07FB464584D(uParam0->f_7, 1);
-			if (!TXD::_0xBE72591D1509FFE4(uParam0->f_7))
+			TXD::_REQUEST_STREAMED_TXD(uParam0->f_7, true);
+			if (!TXD::_HAS_STREAMED_TXD_LOADED(uParam0->f_7))
 			{
 				return;
 			}
@@ -2734,19 +2734,19 @@ void func_117(int* iParam0)
 	}
 }
 
-bool func_118()
+int func_118()
 {
-	return func_170(Global_1270479->f_2941);
+	return func_170(Global_1272170->f_2941);
 }
 
-int func_119(var uParam0, bool bParam1)
+int func_119(var uParam0, int iParam1)
 {
 	int iVar0;
 
 	iVar0 = 0;
 	while (iVar0 < 5)
 	{
-		if ((uParam0->f_2[iVar0 /*3*/])->f_1 != bParam1)
+		if ((uParam0->f_2[iVar0 /*3*/])->f_1 != iParam1)
 		{
 		}
 		else
@@ -2760,14 +2760,14 @@ int func_119(var uParam0, bool bParam1)
 
 int func_120()
 {
-	bool bVar0;
+	int iVar0;
 
-	bVar0 = func_118();
-	if (!func_171(bVar0))
+	iVar0 = func_118();
+	if (!func_171(iVar0))
 	{
 		return 0;
 	}
-	if (!NETWORK::_0xFBE782B3165AC8EC(bVar0))
+	if (!NETWORK::_0xFBE782B3165AC8EC(iVar0))
 	{
 		return 0;
 	}
@@ -2797,11 +2797,11 @@ int func_123(int iParam0)
 		return 0;
 	}
 	iVar0 = 0;
-	while (iVar0 < Global_1270479->f_20)
+	while (iVar0 < Global_1272170->f_20)
 	{
-		if (&Global_1270479->f_20.f_1[iVar0 /*20*/] == iParam0)
+		if (&Global_1272170->f_20.f_1[iVar0 /*20*/] == iParam0)
 		{
-			return (Global_1270479->f_20.f_1[iVar0 /*20*/])->f_1;
+			return (Global_1272170->f_20.f_1[iVar0 /*20*/])->f_1;
 		}
 		iVar0++;
 	}
@@ -2817,21 +2817,21 @@ void func_124(int iParam0, int iParam1, int iParam2, int iParam3)
 		return;
 	}
 	iVar0 = 0;
-	while (iVar0 < Global_1270479->f_20)
+	while (iVar0 < Global_1272170->f_20)
 	{
-		if (&Global_1270479->f_20.f_1[iVar0 /*20*/] == iParam0)
+		if (&Global_1272170->f_20.f_1[iVar0 /*20*/] == iParam0)
 		{
-			if ((Global_1270479->f_20.f_1[iVar0 /*20*/])->f_1 == iParam1)
+			if ((Global_1272170->f_20.f_1[iVar0 /*20*/])->f_1 == iParam1)
 			{
 			}
 			else
 			{
-				(Global_1270479->f_20.f_1[iVar0 /*20*/])->f_1 = iParam1;
+				(Global_1272170->f_20.f_1[iVar0 /*20*/])->f_1 = iParam1;
 			}
 			if (iParam2 != 0 && iParam3 != 0)
 			{
-				(Global_1270479->f_20.f_1[iVar0 /*20*/])->f_2 = iParam2;
-				(Global_1270479->f_20.f_1[iVar0 /*20*/])->f_3 = iParam3;
+				(Global_1272170->f_20.f_1[iVar0 /*20*/])->f_2 = iParam2;
+				(Global_1272170->f_20.f_1[iVar0 /*20*/])->f_3 = iParam3;
 			}
 			return;
 		}
@@ -2948,7 +2948,7 @@ int func_132(var uParam0, var uParam1, int iParam2, int iParam3, var uParam4)
 	return 1;
 }
 
-int func_133(var uParam0, int iParam1, int iParam2, bool bParam3)
+int func_133(var uParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	struct<17> Var0;
 
@@ -2965,8 +2965,8 @@ int func_133(var uParam0, int iParam1, int iParam2, bool bParam3)
 	Var0.f_10 = -1;
 	Var0.f_11 = -1;
 	Var0.f_12 = -1;
-	func_149(&Var0, iParam1, iParam2, bParam3);
-	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, -2035241910, &(Var0.f_16));
+	func_149(&Var0, iParam1, bParam2, bParam3);
+	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, joaat("dynamic_list_item_raw_text_entry"), &(Var0.f_16));
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_67(59), Var0.f_8);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_67(60), Var0.f_9);
 	return 1;
@@ -2984,7 +2984,7 @@ int func_135(int* iParam0)
 
 int func_136(int iParam0, int iParam1)
 {
-	bool bVar0;
+	int iVar0;
 	struct<2> Var1;
 	struct<5> Var11;
 
@@ -2992,23 +2992,23 @@ int func_136(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	bVar0 = func_110();
-	if (!func_171(bVar0))
+	iVar0 = func_110();
+	if (!func_171(iVar0))
 	{
 		return 0;
 	}
-	if (!func_178(bVar0))
+	if (!func_178(iVar0))
 	{
 		return 0;
 	}
-	if (func_179(bVar0))
+	if (func_179(iVar0))
 	{
 		return 0;
 	}
 	Var1 = -1;
 	Var1.f_1 = -1;
-	Var11 = { func_180(bVar0, 1, 0) };
-	if (!func_181(&Var1, bVar0, Var11, iParam1, 1, 0, 0, 0, -1, 0))
+	Var11 = { func_180(iVar0, 1, 0) };
+	if (!func_181(&Var1, iVar0, Var11, iParam1, 1, 0, 0, 0, -1, 0))
 	{
 		return 0;
 	}
@@ -3020,7 +3020,7 @@ int func_136(int iParam0, int iParam1)
 	return 1;
 }
 
-int func_137(var uParam0, int iParam1, bool bParam2, int iParam3)
+int func_137(var uParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 
@@ -3035,7 +3035,7 @@ int func_137(var uParam0, int iParam1, bool bParam2, int iParam3)
 		iVar0 = (iVar0 + -1);
 	}
 	uParam0->f_2[0 /*3*/] = iParam1;
-	(uParam0->f_2[0 /*3*/])->f_1 = bParam2;
+	(uParam0->f_2[0 /*3*/])->f_1 = iParam2;
 	(uParam0->f_2[0 /*3*/])->f_2 = iParam3;
 	return 1;
 }
@@ -3088,22 +3088,22 @@ int func_140(int* iParam0, char* sParam1)
 
 void func_141(char* sParam0)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 	char* sVar2;
 	bool bVar3;
 
-	bVar0 = func_118();
+	iVar0 = func_118();
 	iVar1 = 0;
-	if (func_185(bVar0, &bVar3))
+	if (func_185(iVar0, &bVar3))
 	{
 		sVar2 = "SR_PROMPT_JOIN_CLUB_FREE";
 		iVar1 = 0;
 	}
-	else if (func_186(bVar0, &bVar3))
+	else if (func_186(iVar0, &bVar3))
 	{
 		sVar2 = "SR_PROMPT_JOIN_CLUB_DISCOUNT";
-		iVar1 = func_188(func_187(bVar0, bVar3, 0, 1));
+		iVar1 = func_188(func_187(iVar0, bVar3, 0, 1));
 	}
 	else
 	{
@@ -3125,51 +3125,51 @@ void func_143(int* iParam0, bool bParam1)
 
 int func_144()
 {
-	bool bVar0;
+	int iVar0;
 	bool bVar1;
 	var uVar2;
 
-	bVar0 = func_118();
-	if (!func_178(bVar0))
+	iVar0 = func_118();
+	if (!func_178(iVar0))
 	{
 		return 0;
 	}
-	if (func_185(bVar0, &bVar1))
+	if (func_185(iVar0, &bVar1))
 	{
 		return 1;
 	}
-	else if (func_186(bVar0, &bVar1) && func_190(bVar0, bVar1, &uVar2))
+	else if (func_186(iVar0, &bVar1) && func_190(iVar0, bVar1, &uVar2))
 	{
 		return 1;
 	}
 	else
 	{
-		return func_190(bVar0, func_191(bVar0, 0, 0, -1, 1), &uVar2);
+		return func_190(iVar0, func_191(iVar0, 0, 0, -1, 1), &uVar2);
 	}
 	return 0;
 }
 
 int func_145(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 	struct<12> Var1;
 	struct<2> Var18;
 	bool bVar28;
 
-	bVar0 = func_118();
-	if (!func_171(bVar0))
+	iVar0 = func_118();
+	if (!func_171(iVar0))
 	{
 		return 0;
 	}
-	if (NETWORK::_0xFBE782B3165AC8EC(bVar0))
+	if (NETWORK::_0xFBE782B3165AC8EC(iVar0))
 	{
 		return 0;
 	}
-	if (!func_178(bVar0))
+	if (!func_178(iVar0))
 	{
 		return 0;
 	}
-	if (func_179(bVar0))
+	if (func_179(iVar0))
 	{
 		return 0;
 	}
@@ -3177,8 +3177,8 @@ int func_145(int iParam0)
 	Var1.f_11 = -1591664384;
 	Var18 = -1;
 	Var18.f_1 = -1;
-	bVar28 = func_191(bVar0, 0, 0, -1, 1);
-	if (!func_192(&Var18, bVar0, &Var1, 0, bVar28, -1, 0))
+	bVar28 = func_191(iVar0, 0, 0, -1, 1);
+	if (!func_192(&Var18, iVar0, &Var1, 0, bVar28, -1, 0))
 	{
 		return 0;
 	}
@@ -3193,12 +3193,12 @@ int func_145(int iParam0)
 
 int func_146()
 {
-	return func_193(Global_1270479->f_2940);
+	return func_193(Global_1272170->f_2940);
 }
 
 int func_147(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 
 	switch (iParam0)
 	{
@@ -3212,10 +3212,10 @@ int func_147(int iParam0)
 		case 15:
 		case 16:
 		case 17:
-			bVar0 = func_195(iParam0);
-			if (func_196(bVar0, 0))
+			iVar0 = func_195(iParam0);
+			if (func_196(iVar0, 0))
 			{
-				return func_198(bVar0, func_197(1), joaat("SLOTID_PROGRESSION"), 1, 0, 0);
+				return func_198(iVar0, func_197(1), joaat("SLOTID_PROGRESSION"), 1, 0, 0);
 			}
 			break;
 	}
@@ -3378,21 +3378,21 @@ int func_157(int iParam0)
 	return vVar1.z;
 }
 
-int func_158(int* iParam0, bool bParam1, bool bParam2, int iParam3)
+int func_158(int* iParam0, int iParam1, bool bParam2, int iParam3)
 {
 	bool bVar0;
 	struct<13> Var1;
-	bool bVar78;
+	int iVar78;
 	struct<2> Var79;
-	bool bVar101;
+	int iVar101;
 	int iVar102;
 	int iVar103;
-	bool bVar104;
+	int iVar104;
 	int iVar107;
 	int iVar108;
 
 	bVar0 = func_100(&(iParam0->f_409));
-	if (bParam1 == 0)
+	if (iParam1 == 0)
 	{
 		return 0;
 	}
@@ -3405,9 +3405,9 @@ int func_158(int* iParam0, bool bParam1, bool bParam2, int iParam3)
 	Var1.f_10 = -1;
 	Var1.f_11 = -1;
 	Var1.f_12 = -1;
-	if (func_212(bParam1))
+	if (func_212(iParam1))
 	{
-		if (func_213(&Var1, bParam1, iParam3, bVar0))
+		if (func_213(&Var1, iParam1, iParam3, bVar0))
 		{
 			if (func_214(iParam0, &Var1, bParam2))
 			{
@@ -3415,25 +3415,25 @@ int func_158(int* iParam0, bool bParam1, bool bParam2, int iParam3)
 			}
 		}
 	}
-	bVar78 = bParam1;
+	iVar78 = iParam1;
 	Var79.f_1 = 10;
-	iVar102 = ITEMDATABASE::_0x48229CE0C7938237(bVar78);
+	iVar102 = ITEMDATABASE::_0x48229CE0C7938237(iVar78);
 	iVar103 = 0;
 	while (iVar103 < iVar102)
 	{
-		if (!ITEMDATABASE::_0x8D029948CA29409B(bVar78, iVar103, &Var79))
+		if (!ITEMDATABASE::_0x8D029948CA29409B(iVar78, iVar103, &Var79))
 		{
 		}
 		else
 		{
-			bVar101 = Var79;
-			if (!func_196(bVar101, 0))
+			iVar101 = Var79;
+			if (!func_196(iVar101, 0))
 			{
 			}
 			else if (!func_215(&Var79))
 			{
 			}
-			else if (func_216(&Var1, bVar101, iParam3, bVar0))
+			else if (func_216(&Var1, iVar101, iParam3, bVar0))
 			{
 				if (func_214(iParam0, &Var1, bParam2))
 				{
@@ -3443,20 +3443,20 @@ int func_158(int* iParam0, bool bParam1, bool bParam2, int iParam3)
 		}
 		iVar103++;
 	}
-	iVar107 = ITEMDATABASE::_0x3FAA928A79591761(bVar78);
+	iVar107 = ITEMDATABASE::_0x3FAA928A79591761(iVar78);
 	iVar108 = 0;
 	while (iVar108 < iVar107)
 	{
-		if (!ITEMDATABASE::_0x121D2005DD64496B(bVar78, iVar108, &bVar104))
+		if (!ITEMDATABASE::_0x121D2005DD64496B(iVar78, iVar108, &iVar104))
 		{
 		}
-		else if (!func_196(bVar104, 0))
+		else if (!func_196(iVar104, 0))
 		{
 		}
-		else if (!func_217(bVar104))
+		else if (!func_217(iVar104))
 		{
 		}
-		else if (func_216(&Var1, bVar104, iParam3, bVar0))
+		else if (func_216(&Var1, iVar104, iParam3, bVar0))
 		{
 			if (func_214(iParam0, &Var1, bParam2))
 			{
@@ -3496,25 +3496,25 @@ int func_159(int iParam0)
 	return vVar1.z;
 }
 
-int func_160(int* iParam0, bool bParam1, int iParam2, int iParam3)
+int func_160(int* iParam0, int iParam1, int iParam2, int iParam3)
 {
 	bool bVar0;
 	struct<13> Var1;
 	struct<13> Var80;
 	int iVar159;
 	bool bVar160;
-	bool bVar161;
+	int iVar161;
 	struct<2> Var162;
-	bool bVar184;
+	int iVar184;
 	int iVar185;
 	int iVar186;
-	bool bVar187;
+	int iVar187;
 	int iVar190;
 	int iVar191;
 	int iVar192;
 
 	bVar0 = func_100(&(iParam0->f_409));
-	if (bParam1 == 0)
+	if (iParam1 == 0)
 	{
 		return 0;
 	}
@@ -3538,9 +3538,9 @@ int func_160(int* iParam0, bool bParam1, int iParam2, int iParam3)
 	Var80.f_12 = -1;
 	iVar159 = 0;
 	bVar160 = false;
-	if (func_212(bParam1))
+	if (func_212(iParam1))
 	{
-		if (func_221(&Var1, bParam1, iParam3, bVar0))
+		if (func_221(&Var1, iParam1, iParam3, bVar0))
 		{
 			if (func_222(5, 2, iParam2, iVar159, &bVar160))
 			{
@@ -3551,9 +3551,9 @@ int func_160(int* iParam0, bool bParam1, int iParam2, int iParam3)
 			}
 		}
 	}
-	bVar161 = bParam1;
+	iVar161 = iParam1;
 	Var162.f_1 = 10;
-	iVar185 = ITEMDATABASE::_0x48229CE0C7938237(bVar161);
+	iVar185 = ITEMDATABASE::_0x48229CE0C7938237(iVar161);
 	iVar186 = 0;
 	while (iVar186 < iVar185)
 	{
@@ -3563,19 +3563,19 @@ int func_160(int* iParam0, bool bParam1, int iParam2, int iParam3)
 		}
 		else
 		{
-			if (!ITEMDATABASE::_0x8D029948CA29409B(bVar161, iVar186, &Var162))
+			if (!ITEMDATABASE::_0x8D029948CA29409B(iVar161, iVar186, &Var162))
 			{
 			}
 			else
 			{
-				bVar184 = Var162;
-				if (!func_196(bVar184, 0))
+				iVar184 = Var162;
+				if (!func_196(iVar184, 0))
 				{
 				}
 				else if (!func_225(&Var162))
 				{
 				}
-				else if (func_226(&Var1, bVar184, iParam3, bVar0))
+				else if (func_226(&Var1, iVar184, iParam3, bVar0))
 				{
 					if (!func_222(5, 2, iParam2, iVar159, &bVar160))
 					{
@@ -3592,7 +3592,7 @@ int func_160(int* iParam0, bool bParam1, int iParam2, int iParam3)
 			iVar186++;
 		}
 	}
-	iVar190 = ITEMDATABASE::_0x3FAA928A79591761(bVar161);
+	iVar190 = ITEMDATABASE::_0x3FAA928A79591761(iVar161);
 	iVar191 = 0;
 	while (iVar191 < iVar190)
 	{
@@ -3602,16 +3602,16 @@ int func_160(int* iParam0, bool bParam1, int iParam2, int iParam3)
 		}
 		else
 		{
-			if (!ITEMDATABASE::_0x121D2005DD64496B(bVar161, iVar191, &bVar187))
+			if (!ITEMDATABASE::_0x121D2005DD64496B(iVar161, iVar191, &iVar187))
 			{
 			}
-			else if (!func_196(bVar187, 0))
+			else if (!func_196(iVar187, 0))
 			{
 			}
-			else if (!func_227(bVar187))
+			else if (!func_227(iVar187))
 			{
 			}
-			else if (func_226(&Var1, bVar187, iParam3, bVar0))
+			else if (func_226(&Var1, iVar187, iParam3, bVar0))
 			{
 				if (!func_222(5, 2, iParam2, iVar159, &bVar160))
 				{
@@ -3755,9 +3755,9 @@ int func_170(int iParam0)
 	return 0;
 }
 
-bool func_171(bool bParam0)
+bool func_171(int iParam0)
 {
-	return bParam0 != 0;
+	return iParam0 != 0;
 }
 
 void func_172(int iParam0, int iParam1, int iParam2, int iParam3)
@@ -3769,16 +3769,16 @@ void func_172(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		return;
 	}
-	if (Global_1270479->f_20 < 20)
+	if (Global_1272170->f_20 < 20)
 	{
-		Global_1270479->f_20++;
+		Global_1272170->f_20++;
 	}
 	else
 	{
 		iVar0 = 0;
 		while (iVar0 < 19)
 		{
-			*(Global_1270479->f_20.f_1[iVar0 /*20*/]) = { *(Global_1270479->f_20.f_1[iVar0 + 1 /*20*/]) };
+			*(Global_1272170->f_20.f_1[iVar0 /*20*/]) = { *(Global_1272170->f_20.f_1[iVar0 + 1 /*20*/]) };
 			iVar0++;
 		}
 	}
@@ -3791,7 +3791,7 @@ void func_172(int iParam0, int iParam1, int iParam2, int iParam3)
 		Var1.f_2 = iParam2;
 		Var1.f_3 = iParam3;
 	}
-	*(Global_1270479->f_20.f_1[(Global_1270479->f_20 - 1) /*20*/]) = { Var1 };
+	*(Global_1272170->f_20.f_1[(Global_1272170->f_20 - 1) /*20*/]) = { Var1 };
 }
 
 int func_173(var uParam0, char* sParam1)
@@ -3823,36 +3823,36 @@ void func_177(var uParam0, int iParam1, int iParam2, var uParam3, int iParam4)
 	uParam0->f_4 = 0;
 }
 
-bool func_178(bool bParam0)
+bool func_178(int iParam0)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return false;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_BUY_AWARD_KEY_VALID(bParam0);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_BUY_AWARD_KEY_VALID(iParam0);
 }
 
-int func_179(bool bParam0)
+int func_179(int iParam0)
 {
 	int iVar0;
 
-	if (!func_171(bParam0))
+	if (!func_171(iParam0))
 	{
 		return 0;
 	}
 	iVar0 = 0;
-	while (iVar0 < Global_1270479->f_1991)
+	while (iVar0 < Global_1272170->f_1991)
 	{
-		if ((Global_1270479->f_1991.f_1[iVar0 /*24*/])->f_4 == bParam0 && (Global_1270479->f_1991.f_1[iVar0 /*24*/])->f_5 == 0)
+		if ((Global_1272170->f_1991.f_1[iVar0 /*24*/])->f_4 == iParam0 && (Global_1272170->f_1991.f_1[iVar0 /*24*/])->f_5 == 0)
 		{
-			return NETWORK::_0xE10F2D7715ABABEC(Global_1270479->f_1991.f_1[iVar0 /*24*/]);
+			return NETWORK::_0xE10F2D7715ABABEC(Global_1272170->f_1991.f_1[iVar0 /*24*/]);
 		}
 		iVar0++;
 	}
 	return 0;
 }
 
-struct<5> func_180(bool bParam0, bool bParam1, int iParam2)
+struct<5> func_180(int iParam0, bool bParam1, int iParam2)
 {
 	struct<5> Var0;
 	int iVar5;
@@ -3861,27 +3861,27 @@ struct<5> func_180(bool bParam0, bool bParam1, int iParam2)
 
 	Var0 = { func_197(bParam1) };
 	Var0.f_4 = 1084182731;
-	iVar5 = func_229(bParam0);
+	iVar5 = func_229(iParam0);
 	switch (iVar5)
 	{
 		case joaat("clothing"):
-			Var0 = { func_230(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
-			Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 889965687);
+			Var0 = { func_230(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
+			Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
 			break;
 		case joaat("weapon"):
 			Var0 = { func_231(bParam1) };
-			if (iParam2 && func_232(bParam0, 1))
+			if (iParam2 && func_232(iParam0, 1))
 			{
 				Var6.f_9 = -1591664384;
-				if (!func_233(bParam0, &Var0, 1728382685 /* GXTEntry: "Right" */, 0, 0))
+				if (!func_233(iParam0, &Var0, 1728382685 /* GXTEntry: "Right" */, 0, 0))
 				{
 					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
-				else if (!func_233(bParam0, &Var0, -649335959 /* GXTEntry: "Left" */, 0, 0))
+				else if (!func_233(iParam0, &Var0, -649335959 /* GXTEntry: "Left" */, 0, 0))
 				{
 					Var0.f_4 = -649335959; /* GXTEntry: "Left" */
 				}
-				else if (func_234(bParam0, &Var6, 1728382685 /* GXTEntry: "Right" */))
+				else if (func_234(iParam0, &Var6, 1728382685 /* GXTEntry: "Right" */))
 				{
 					Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 				}
@@ -3899,10 +3899,10 @@ struct<5> func_180(bool bParam0, bool bParam1, int iParam2)
 		case joaat("horse"):
 			Var0.f_4 = 1782082944;
 			break;
-		case -1650247667:
+		case joaat("Emote"):
 			Var0.f_4 = -1591664384;
 			Var0 = { func_235(bParam1) };
-			switch (func_236(bParam0))
+			switch (func_236(iParam0))
 			{
 				case -1070622585:
 					Var0.f_4 = -6796437;
@@ -3918,43 +3918,43 @@ struct<5> func_180(bool bParam0, bool bParam1, int iParam2)
 					break;
 			}
 			break;
-		case -2130996531:
+		case joaat("Upgrade"):
 		case joaat("dog"):
-			if (func_237(bParam0, -1823706425))
+			if (func_237(iParam0, -1823706425))
 			{
-				Var0 = { func_230(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, -1838434463);
+				Var0 = { func_230(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("KIT_CAMP"));
 			}
-			else if (func_237(bParam0, -1483207246))
+			else if (func_237(iParam0, -1483207246))
 			{
-				Var0 = { func_230(889965687 /* GXTEntry: "Wardrobe" */, Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 889965687);
+				Var0 = { func_230(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
 			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -1911121386))
+			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1911121386))
 			{
-				Var0 = { func_230(-1838434463 /* GXTEntry: "Camp" */, Var0, 1084182731, bParam1) };
+				Var0 = { func_230(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
 				Var0.f_4 = -1911121386;
 			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -1311702610))
+			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1311702610))
 			{
 				Var0.f_4 = -1311702610;
 			}
-			else if (func_237(bParam0, -1653629781))
+			else if (func_237(iParam0, -1653629781))
 			{
 				Var0 = { func_230(1384535894, Var0, 1784584921, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 1384535894);
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, 1384535894);
 			}
 			break;
 		default:
-			if (INVENTORY::_0x780C5B9AE2819807(bParam0, 1084182731))
+			if (INVENTORY::_0x780C5B9AE2819807(iParam0, 1084182731))
 			{
 				Var0.f_4 = 1084182731;
 			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, 1034665895))
+			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, 1034665895))
 			{
 				Var0.f_4 = 1034665895;
 			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -833319691))
+			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -833319691))
 			{
 				Var28.f_9 = -1591664384;
 				if (!func_238(Var0, &Var28, bParam1, 0, -1))
@@ -3967,18 +3967,18 @@ struct<5> func_180(bool bParam0, bool bParam1, int iParam2)
 					Var0.f_4 = -833319691;
 				}
 			}
-			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -718417579))
+			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -718417579))
 			{
 				Var0.f_4 = -718417579;
 			}
-			else if (func_237(bParam0, -1653629781))
+			else if (func_237(iParam0, -1653629781))
 			{
 				Var0 = { func_230(1384535894, Var0, 1784584921, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, 1384535894);
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, 1384535894);
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("character"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("character"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -3988,7 +3988,7 @@ struct<5> func_180(bool bParam0, bool bParam1, int iParam2)
 	return Var0;
 }
 
-int func_181(int* iParam0, bool bParam1, struct<4> Param2, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, bool bParam11, int iParam12, int iParam13)
+int func_181(int* iParam0, int iParam1, struct<4> Param2, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, bool bParam11, int iParam12, int iParam13)
 {
 	struct<17> Var0;
 
@@ -3999,7 +3999,7 @@ int func_181(int* iParam0, bool bParam1, struct<4> Param2, int iParam6, int iPar
 	Var0.f_4 = { Param2 };
 	Var0.f_10 = iParam8;
 	Var0.f_14 = iParam10;
-	if (!func_192(iParam0, bParam1, &Var0, iParam9, bParam11, iParam12, iParam13))
+	if (!func_192(iParam0, iParam1, &Var0, iParam9, bParam11, iParam12, iParam13))
 	{
 		return 0;
 	}
@@ -4072,25 +4072,25 @@ char* func_184(char* sParam0)
 	return MISC::_CREATE_VAR_STRING(170, sParam0, &vVar0, &vVar3, &vVar6);
 }
 
-bool func_185(bool bParam0, bool bParam1)
+bool func_185(int iParam0, bool bParam1)
 {
-	*bParam1 = func_244(bParam0, 1);
+	*bParam1 = func_244(iParam0, 1);
 	return *bParam1 != 0;
 }
 
-bool func_186(bool bParam0, bool bParam1)
+bool func_186(int iParam0, bool bParam1)
 {
-	*bParam1 = func_245(bParam0, 1, 0);
+	*bParam1 = func_245(iParam0, 1, 0);
 	return *bParam1 != 0;
 }
 
-int func_187(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
+int func_187(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 {
 	struct<2> Var0[15];
 	int iVar31;
 	int iVar32;
 
-	if (!func_246(bParam0, bParam1, &Var0, &iVar31, bParam2, bParam3))
+	if (!func_246(iParam0, bParam1, &Var0, &iVar31, bParam2, bParam3))
 	{
 		if (!bParam2)
 		{
@@ -4100,7 +4100,7 @@ int func_187(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar32 = 0;
 	while (iVar32 < iVar31)
 	{
-		if ((&Var0[iVar32 /*2*/] == 2084597891 || &Var0[iVar32 /*2*/] == 773203532) || &Var0[iVar32 /*2*/] == -1295114026)
+		if ((&Var0[iVar32 /*2*/] == joaat("currency_cash") || &Var0[iVar32 /*2*/] == joaat("currency_gold_bar")) || &Var0[iVar32 /*2*/] == joaat("character_role_token"))
 		{
 			return (Var0[iVar32 /*2*/])->f_1;
 		}
@@ -4125,29 +4125,29 @@ int func_188(int iParam0)
 
 int func_189()
 {
-	bool bVar0;
+	int iVar0;
 	bool bVar1;
 
-	bVar0 = func_118();
-	if (!func_171(bVar0))
+	iVar0 = func_118();
+	if (!func_171(iVar0))
 	{
 		return 0;
 	}
-	bVar1 = func_191(bVar0, 0, 0, -1, 1);
+	bVar1 = func_191(iVar0, 0, 0, -1, 1);
 	if (bVar1 == 0)
 	{
 		return 0;
 	}
-	return func_187(bVar0, bVar1, 1, 1);
+	return func_187(iVar0, bVar1, 1, 1);
 }
 
-int func_190(bool bParam0, bool bParam1, var uParam2)
+int func_190(int iParam0, bool bParam1, var uParam2)
 {
 	struct<2> Var0[15];
 	int iVar31;
 	int iVar32;
 
-	if (!func_246(bParam0, bParam1, &Var0, &iVar31, 0, 1))
+	if (!func_246(iParam0, bParam1, &Var0, &iVar31, 0, 1))
 	{
 		return 0;
 	}
@@ -4159,14 +4159,14 @@ int func_190(bool bParam0, bool bParam1, var uParam2)
 		}
 		else
 		{
-			if (&Var0[iVar32 /*2*/] == 2084597891)
+			if (&Var0[iVar32 /*2*/] == joaat("currency_cash"))
 			{
 				if (!func_247((Var0[iVar32 /*2*/])->f_1))
 				{
 					return 0;
 				}
 			}
-			else if (&Var0[iVar32 /*2*/] == 773203532)
+			else if (&Var0[iVar32 /*2*/] == joaat("currency_gold_bar"))
 			{
 				if (!func_248((Var0[iVar32 /*2*/])->f_1))
 				{
@@ -4184,25 +4184,25 @@ int func_190(bool bParam0, bool bParam1, var uParam2)
 	return 1;
 }
 
-int func_191(bool bParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
+int func_191(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 {
 	int iVar0;
 	bool bVar1;
 	bool bVar2;
 	bool bVar3;
 
-	if (!func_178(bParam0))
+	if (!func_178(iParam0))
 	{
 		return 0;
 	}
 	bVar1 = func_250(iParam3, 2);
-	bVar2 = func_251(bParam0, -570078785, bVar1);
-	bVar3 = func_251(bParam0, -915411861, bVar1);
-	if (func_251(bParam0, 997808187, bVar1))
+	bVar2 = func_251(iParam0, -570078785, bVar1);
+	bVar3 = func_251(iParam0, -915411861, bVar1);
+	if (func_251(iParam0, 997808187, bVar1))
 	{
 		iParam1 = 997808187;
 	}
-	else if (bParam4 && (func_185(bParam0, &iVar0) || func_186(bParam0, &iVar0)))
+	else if (bParam4 && (func_185(iParam0, &iVar0) || func_186(iParam0, &iVar0)))
 	{
 		iParam1 = iVar0;
 	}
@@ -4232,7 +4232,7 @@ int func_191(bool bParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 	return iParam1;
 }
 
-int func_192(int* iParam0, bool bParam1, var uParam2, int iParam3, bool bParam4, int iParam5, bool bParam6)
+int func_192(int* iParam0, int iParam1, var uParam2, int iParam3, bool bParam4, int iParam5, bool bParam6)
 {
 	if (!func_253(iParam0, 0))
 	{
@@ -4240,14 +4240,14 @@ int func_192(int* iParam0, bool bParam1, var uParam2, int iParam3, bool bParam4,
 	}
 	if (bParam4 == 0)
 	{
-		bParam4 = func_191(bParam1, 0, 1, iParam5, bParam6);
+		bParam4 = func_191(iParam1, 0, 1, iParam5, bParam6);
 	}
-	if (!func_254(bParam1, bParam4, iParam5))
+	if (!func_254(iParam1, bParam4, iParam5))
 	{
 		return 0;
 	}
-	uParam2->f_16 = bParam1;
-	uParam2->f_8 = bParam1;
+	uParam2->f_16 = iParam1;
+	uParam2->f_8 = iParam1;
 	uParam2->f_9 = 1;
 	uParam2->f_13 = bParam4;
 	uParam2->f_12 = 1248274121;
@@ -4255,13 +4255,13 @@ int func_192(int* iParam0, bool bParam1, var uParam2, int iParam3, bool bParam4,
 	{
 		return 0;
 	}
-	if (COLLECTION::_0x9ADEE485726025D4(bParam1) != 0)
+	if (COLLECTION::_0x9ADEE485726025D4(iParam1) != 0)
 	{
-		if (Global_1270479->f_20.f_402 != -1)
+		if (Global_1272170->f_20.f_402 != -1)
 		{
 		}
-		Global_1270479->f_20.f_402.f_1 = bParam1;
-		Global_1270479->f_20.f_402 = iParam0->f_1;
+		Global_1272170->f_20.f_402.f_1 = iParam1;
+		Global_1272170->f_20.f_402 = iParam0->f_1;
 	}
 	return 1;
 }
@@ -4300,7 +4300,7 @@ int func_194(int iParam0)
 	{
 		return NETWORK::_0x32C90CDFAF40514C();
 	}
-	return Global_1137800[iParam0 /*34*/];
+	return Global_1139395[iParam0 /*34*/];
 }
 
 int func_195(int iParam0)
@@ -4331,13 +4331,13 @@ int func_195(int iParam0)
 	return 0;
 }
 
-bool func_196(bool bParam0, int iParam1)
+bool func_196(int iParam0, int iParam1)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return false;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
 }
 
 struct<4> func_197(bool bParam0)
@@ -4349,41 +4349,41 @@ struct<4> func_197(bool bParam0)
 		iVar0 = func_256(bParam0);
 		if (iVar0 == 2)
 		{
-			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1270479))
+			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1272170))
 			{
-				*Global_1270479 = { func_230(joaat("character"), func_257(), -1591664384, bParam0) };
+				*Global_1272170 = { func_230(joaat("character"), func_257(), -1591664384, bParam0) };
 			}
-			return *Global_1270479;
+			return *Global_1272170;
 		}
 		else if (iVar0 == 3)
 		{
-			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_12)))
+			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1272170->f_12)))
 			{
-				Global_1270479->f_12 = { func_230(joaat("character"), func_257(), -1591664384, 0) };
+				Global_1272170->f_12 = { func_230(joaat("character"), func_257(), -1591664384, 0) };
 			}
-			return Global_1270479->f_12;
+			return Global_1272170->f_12;
 		}
 	}
 	return func_230(joaat("character"), func_257(), -1591664384, bParam0);
 }
 
-int func_198(bool bParam0, struct<4> Param1, int iParam5, bool bParam6, bool bParam7, bool bParam8)
+int func_198(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bParam7, bool bParam8)
 {
 	int iVar0;
 	struct<4> Var1;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (!bParam7 && func_258(bParam0, joaat("default")) == 0)
+	if (!bParam7 && func_258(iParam0, joaat("default")) == 0)
 	{
 		bParam7 = true;
 	}
 	iVar0 = 0;
 	if (bParam7)
 	{
-		Var1 = { func_230(bParam0, Param1, iParam5, bParam6) };
+		Var1 = { func_230(iParam0, Param1, iParam5, bParam6) };
 		if (!INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 		{
 			return 0;
@@ -4392,7 +4392,7 @@ int func_198(bool bParam0, struct<4> Param1, int iParam5, bool bParam6, bool bPa
 	}
 	else
 	{
-		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_256(bParam6), bParam0, bParam8);
+		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_256(bParam6), iParam0, bParam8);
 	}
 	return iVar0;
 }
@@ -4421,11 +4421,11 @@ int func_200()
 
 int func_201(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 
-	bVar0 = func_110();
-	iVar1 = func_187(bVar0, func_191(bVar0, 0, 1, -1, 0), 1, 1);
+	iVar0 = func_110();
+	iVar1 = func_187(iVar0, func_191(iVar0, 0, 1, -1, 0), 1, 1);
 	if (iParam0 < 1)
 	{
 		return iVar1;
@@ -4466,27 +4466,27 @@ int func_204()
 
 bool func_205(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 	var uVar1;
 
-	bVar0 = func_110();
-	return func_190(bVar0, func_191(bVar0, 0, 1, -1, 0), &uVar1);
+	iVar0 = func_110();
+	return func_190(iVar0, func_191(iVar0, 0, 1, -1, 0), &uVar1);
 }
 
 int func_206()
 {
-	bool bVar0;
+	int iVar0;
 
-	bVar0 = func_118();
-	if (func_251(bVar0, -915411861, 1))
+	iVar0 = func_118();
+	if (func_251(iVar0, -915411861, 1))
 	{
 		return 1;
 	}
-	if (func_251(bVar0, -570078785, 1))
+	if (func_251(iVar0, -570078785, 1))
 	{
 		return 1;
 	}
-	if (func_251(bVar0, 997808187, 1))
+	if (func_251(iVar0, 997808187, 1))
 	{
 		return 1;
 	}
@@ -4527,7 +4527,7 @@ int func_211(int iParam0, int iParam1, int iParam2)
 {
 	struct<5> Var0;
 
-	Var0 = Global_1131373->f_3;
+	Var0 = Global_1132968->f_3;
 	Var0.f_2 = joaat("NET_RANK_DEFS_RQID_NODE_NET_TRADE_RANK_DEFS_INFO_ITER");
 	Var0.f_3 = func_265(iParam0);
 	Var0.f_4 = iParam1;
@@ -4547,36 +4547,36 @@ int func_211(int iParam0, int iParam1, int iParam2)
 	return 1;
 }
 
-int func_212(bool bParam0)
+int func_212(int iParam0)
 {
 	struct<19> Var0;
 
-	if (!ITEMDATABASE::_ITEM_DATABASE_IS_BUY_AWARD_KEY_VALID(bParam0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_IS_BUY_AWARD_KEY_VALID(iParam0))
 	{
 		return 0;
 	}
 	Var0.f_2 = 5;
 	Var0.f_18 = 8;
-	if (!func_266(bParam0, &Var0))
+	if (!func_266(iParam0, &Var0))
 	{
 		return 0;
 	}
 	return 1;
 }
 
-int func_213(var uParam0, bool bParam1, int iParam2, bool bParam3)
+int func_213(var uParam0, int iParam1, int iParam2, bool bParam3)
 {
 	struct<19> Var0;
 	char cVar35[128];
-	bool bVar51;
+	int iVar51;
 
-	if (bParam1 == 0)
+	if (iParam1 == 0)
 	{
 		return 0;
 	}
 	Var0.f_2 = 5;
 	Var0.f_18 = 8;
-	if (!func_266(bParam1, &Var0))
+	if (!func_266(iParam1, &Var0))
 	{
 		return 0;
 	}
@@ -4586,8 +4586,8 @@ int func_213(var uParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	else
 	{
-		bVar51 = MISC::GET_HASH_KEY(&cVar35);
-		if (func_269(bVar51))
+		iVar51 = MISC::GET_HASH_KEY(&cVar35);
+		if (func_269(iVar51))
 		{
 			StringCopy(&(uParam0->f_61), "SR_TOOLTIP_ITEM_LOCATION_CASH_WALLET", 128);
 		}
@@ -4635,23 +4635,23 @@ int func_214(int* iParam0, char[4] cParam1, bool bParam2)
 	return 1;
 }
 
-int func_215(bool bParam0)
+int func_215(int iParam0)
 {
 	int iVar0;
 
-	if (!func_217(*bParam0))
+	if (!func_217(*iParam0))
 	{
 		return 0;
 	}
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (!&bParam0->f_1[iVar0 /*2*/] == -664197965)
+		if (!&iParam0->f_1[iVar0 /*2*/] == -664197965)
 		{
 		}
 		else
 		{
-			if ((bParam0->f_1[iVar0 /*2*/])->f_1 == 1)
+			if ((iParam0->f_1[iVar0 /*2*/])->f_1 == 1)
 			{
 			}
 			else
@@ -4663,12 +4663,12 @@ int func_215(bool bParam0)
 		}
 	}
 
-int func_216(var uParam0, bool bParam1, int iParam2, bool bParam3)
+int func_216(var uParam0, int iParam1, int iParam2, bool bParam3)
 {
 	struct<733> Var0;
 	char[] cVar767[8];
 
-	if (!func_196(bParam1, 0))
+	if (!func_196(iParam1, 0))
 	{
 		return 0;
 	}
@@ -4706,33 +4706,33 @@ int func_216(var uParam0, bool bParam1, int iParam2, bool bParam3)
 	Var0.f_480.f_1.f_25.f_25.f_25.f_25.f_25.f_25.f_25.f_25.f_25.f_4 = 10;
 	Var0.f_732.f_2 = 5;
 	Var0.f_732.f_18 = 8;
-	if (!ITEMDATABASE::_0x2A610BEE7D341CC4(bParam1, &Var0))
+	if (!ITEMDATABASE::_0x2A610BEE7D341CC4(iParam1, &Var0))
 	{
 		return 0;
 	}
 	func_267(uParam0, func_97(), iParam2, bParam3);
-	if (!func_274(bParam1, &(uParam0->f_61)))
+	if (!func_274(iParam1, &(uParam0->f_61)))
 	{
 	}
 	if (!func_268(uParam0, &(Var0.f_732.f_2), &cVar767))
 	{
 	}
-	uParam0->f_39 = func_275(bParam1);
-	uParam0->f_38 = func_276(bParam1);
+	uParam0->f_39 = func_275(iParam1);
+	uParam0->f_38 = func_276(iParam1);
 	return 1;
 }
 
-int func_217(bool bParam0)
+int func_217(int iParam0)
 {
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (!func_277(bParam0) == 3)
+	if (!func_277(iParam0) == 3)
 	{
 		return 0;
 	}
-	if (func_278(bParam0, -1948723158))
+	if (func_278(iParam0, -1948723158))
 	{
 		return 0;
 	}
@@ -4757,23 +4757,23 @@ int func_219()
 
 int func_220()
 {
-	return func_193(Global_1270479->f_2941);
+	return func_193(Global_1272170->f_2941);
 }
 
-int func_221(int iParam0, bool bParam1, int iParam2, bool bParam3)
+int func_221(int iParam0, int iParam1, int iParam2, bool bParam3)
 {
 	struct<19> Var0;
 	struct<17> Var35;
 	char cVar112[128];
-	bool bVar128;
+	int iVar128;
 
-	if (bParam1 == 0)
+	if (iParam1 == 0)
 	{
 		return 0;
 	}
 	Var0.f_2 = 5;
 	Var0.f_18 = 8;
-	if (!func_266(bParam1, &Var0))
+	if (!func_266(iParam1, &Var0))
 	{
 		return 0;
 	}
@@ -4836,8 +4836,8 @@ int func_221(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	else
 	{
-		bVar128 = MISC::GET_HASH_KEY(&cVar112);
-		if (func_269(bVar128))
+		iVar128 = MISC::GET_HASH_KEY(&cVar112);
+		if (func_269(iVar128))
 		{
 			StringCopy(&(iParam0->f_63), "SR_TOOLTIP_ITEM_LOCATION_CASH_WALLET", 128);
 		}
@@ -4886,23 +4886,23 @@ int func_224(int iParam0)
 	return 1;
 }
 
-int func_225(bool bParam0)
+int func_225(int iParam0)
 {
 	int iVar0;
 
-	if (!func_227(*bParam0))
+	if (!func_227(*iParam0))
 	{
 		return 0;
 	}
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (!&bParam0->f_1[iVar0 /*2*/] == -664197965)
+		if (!&iParam0->f_1[iVar0 /*2*/] == -664197965)
 		{
 		}
 		else
 		{
-			if ((bParam0->f_1[iVar0 /*2*/])->f_1 == 1)
+			if ((iParam0->f_1[iVar0 /*2*/])->f_1 == 1)
 			{
 			}
 			else
@@ -4914,13 +4914,13 @@ int func_225(bool bParam0)
 		}
 	}
 
-int func_226(int iParam0, bool bParam1, int iParam2, bool bParam3)
+int func_226(int iParam0, int iParam1, int iParam2, bool bParam3)
 {
 	struct<733> Var0;
 	struct<17> Var767;
 	char[] cVar844[8];
 
-	if (!func_196(bParam1, 0))
+	if (!func_196(iParam1, 0))
 	{
 		return 0;
 	}
@@ -4958,11 +4958,11 @@ int func_226(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	Var0.f_480.f_1.f_25.f_25.f_25.f_25.f_25.f_25.f_25.f_25.f_25.f_4 = 10;
 	Var0.f_732.f_2 = 5;
 	Var0.f_732.f_18 = 8;
-	if (!ITEMDATABASE::_0x2A610BEE7D341CC4(bParam1, &Var0))
+	if (!ITEMDATABASE::_0x2A610BEE7D341CC4(iParam1, &Var0))
 	{
 		return 0;
 	}
-	iParam0->f_61 = bParam1;
+	iParam0->f_61 = iParam1;
 	iParam0->f_4 = 1690011036;
 	iParam0->f_5 = -1964195787;
 	if (func_120())
@@ -4986,10 +4986,10 @@ int func_226(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		iParam0->f_26 = 0;
 	}
 	*iParam0 = !iParam0->f_25;
-	iParam0->f_23 = func_275(bParam1);
-	iParam0->f_22 = func_276(bParam1);
+	iParam0->f_23 = func_275(iParam1);
+	iParam0->f_22 = func_276(iParam1);
 	iParam0->f_62 = iParam2;
-	if (!func_274(bParam1, &(iParam0->f_63)))
+	if (!func_274(iParam1, &(iParam0->f_63)))
 	{
 	}
 	func_148(iParam2, &(iParam0->f_20), &(iParam0->f_21));
@@ -5027,17 +5027,17 @@ int func_226(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	return 1;
 }
 
-int func_227(bool bParam0)
+int func_227(int iParam0)
 {
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (func_277(bParam0) != 3)
+	if (func_277(iParam0) != 3)
 	{
 		return 0;
 	}
-	if (func_278(bParam0, -1948723158))
+	if (func_278(iParam0, -1948723158))
 	{
 		return 0;
 	}
@@ -5055,30 +5055,30 @@ int func_228(var uParam0, char* sParam1, bool bParam2)
 	return 1;
 }
 
-int func_229(bool bParam0)
+int func_229(int iParam0)
 {
 	vector3 vVar0;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &vVar0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &vVar0))
 	{
 		return 0;
 	}
 	return vVar0.z;
 }
 
-struct<4> func_230(bool bParam0, var uParam1, int iParam2, bool bParam3, var uParam4, bool bParam5, bool bParam6)
+struct<4> func_230(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, bool bParam5, bool bParam6)
 {
 	struct<4> Var0;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return Var0;
 	}
-	INVENTORY::_0x886DFD3E185C8A89(func_256(bParam6), &uParam1, bParam0, bParam5, &Var0);
+	INVENTORY::_0x886DFD3E185C8A89(func_256(bParam6), &uParam1, iParam0, bParam5, &Var0);
 	return Var0;
 }
 
@@ -5089,30 +5089,30 @@ struct<4> func_231(bool bParam0)
 	iVar0 = func_256(bParam0);
 	if (iVar0 == 2)
 	{
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_4)))
+		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1272170->f_4)))
 		{
-			Global_1270479->f_4 = { func_230(923904168, func_197(bParam0), -740156546, bParam0) };
+			Global_1272170->f_4 = { func_230(923904168, func_197(bParam0), -740156546, bParam0) };
 		}
-		return Global_1270479->f_4;
+		return Global_1272170->f_4;
 	}
 	else if (iVar0 == 3)
 	{
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_16)))
+		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1272170->f_16)))
 		{
-			Global_1270479->f_16 = { func_230(923904168, func_197(bParam0), -740156546, 0) };
+			Global_1272170->f_16 = { func_230(923904168, func_197(bParam0), -740156546, 0) };
 		}
-		return Global_1270479->f_16;
+		return Global_1272170->f_16;
 	}
 	return func_230(923904168, func_197(bParam0), -740156546, 0);
 }
 
-int func_232(bool bParam0, bool bParam1)
+int func_232(int iParam0, bool bParam1)
 {
-	if (func_236(bParam0) == 1779021115)
+	if (func_236(iParam0) == 1779021115)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(bParam0))
+	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
 	{
 		if (bParam1)
 		{
@@ -5126,16 +5126,16 @@ int func_232(bool bParam0, bool bParam1)
 	return 0;
 }
 
-bool func_233(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4)
+bool func_233(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 {
-	return func_198(bParam0, *uParam1, iParam2, iParam3, 1, iParam4) > 0;
+	return func_198(iParam0, *uParam1, iParam2, iParam3, 1, iParam4) > 0;
 }
 
-int func_234(bool bParam0, int iParam1, int iParam2)
+int func_234(int iParam0, int iParam1, int iParam2)
 {
 	var uVar0;
 
-	if (func_283(bParam0, &uVar0, iParam1, iParam2))
+	if (func_283(iParam0, &uVar0, iParam1, iParam2))
 	{
 		return iParam1->f_17 > 0f;
 	}
@@ -5149,49 +5149,49 @@ struct<4> func_235(bool bParam0)
 	iVar0 = func_256(bParam0);
 	if (iVar0 == 2 || iVar0 == 3)
 	{
-		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1270479->f_8)))
+		if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1272170->f_8)))
 		{
-			Global_1270479->f_8 = { func_230(271701509, func_197(bParam0), 12999093, 0) };
+			Global_1272170->f_8 = { func_230(271701509, func_197(bParam0), 12999093, 0) };
 		}
-		return Global_1270479->f_8;
+		return Global_1272170->f_8;
 	}
 	return func_230(271701509, func_197(bParam0), 12999093, 0);
 }
 
-int func_236(bool bParam0)
+int func_236(int iParam0)
 {
 	struct<2> Var0;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0))
 	{
 		return 0;
 	}
 	return Var0.f_1;
 }
 
-int func_237(bool bParam0, int iParam1)
+int func_237(int iParam0, int iParam1)
 {
 	bool bVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
 
-	if (bParam0 == 0 || iParam1 == 0)
+	if (iParam0 == 0 || iParam1 == 0)
 	{
 		return 0;
 	}
-	iVar1 = func_236(bParam0);
+	iVar1 = func_236(iParam0);
 	iVar3 = ITEMDATABASE::_ITEM_DATABASE_GET_FITS_SLOT_COUNT(iVar1);
 	iVar2 = 0;
 	while (iVar2 < iVar3)
 	{
 		if (ITEMDATABASE::_ITEM_DATABASE_GET_FITS_SLOT_INFO(iVar1, iVar2, &bVar0))
 		{
-			if (func_284(bParam0, iParam1, bVar0))
+			if (func_284(iParam0, iParam1, bVar0))
 			{
 				return 1;
 			}
@@ -5272,7 +5272,7 @@ Vector3 func_243(int iParam0)
 	return cVar6;
 }
 
-int func_244(bool bParam0, bool bParam1)
+int func_244(int iParam0, bool bParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -5284,7 +5284,7 @@ int func_244(bool bParam0, bool bParam1)
 	while (iVar0 < 3)
 	{
 		bVar33 = func_286(iVar0, 1, 0);
-		if (!func_246(bParam0, bVar33, &Var2, &iVar1, 0, 1))
+		if (!func_246(iParam0, bVar33, &Var2, &iVar1, 0, 1))
 		{
 		}
 		else
@@ -5314,7 +5314,7 @@ int func_244(bool bParam0, bool bParam1)
 	return 0;
 }
 
-bool func_245(bool bParam0, bool bParam1, bool bParam2)
+bool func_245(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -5333,7 +5333,7 @@ bool func_245(bool bParam0, bool bParam1, bool bParam2)
 	while (iVar0 < 5)
 	{
 		bVar40 = func_286(iVar0, 0, 1);
-		if (!func_246(bParam0, bVar40, &Var9, &iVar1, 0, 1))
+		if (!func_246(iParam0, bVar40, &Var9, &iVar1, 0, 1))
 		{
 		}
 		else
@@ -5350,9 +5350,9 @@ bool func_245(bool bParam0, bool bParam1, bool bParam2)
 						bVar8 = true;
 					}
 				}
-				else if (&Var9[iVar41 /*2*/] == 2084597891 || &Var9[iVar41 /*2*/] == 773203532)
+				else if (&Var9[iVar41 /*2*/] == joaat("currency_cash") || &Var9[iVar41 /*2*/] == joaat("currency_gold_bar"))
 				{
-					if ((bParam2 && &Var9[iVar41 /*2*/] == 2084597891) || (!bParam2 && &Var9[iVar41 /*2*/] == 773203532))
+					if ((bParam2 && &Var9[iVar41 /*2*/] == joaat("currency_cash")) || (!bParam2 && &Var9[iVar41 /*2*/] == joaat("currency_gold_bar")))
 					{
 						if (bVar4 == 0 || (bVar6 && (Var9[iVar41 /*2*/])->f_1 < iVar2))
 						{
@@ -5388,7 +5388,7 @@ bool func_245(bool bParam0, bool bParam1, bool bParam2)
 	return bVar4;
 }
 
-int func_246(bool bParam0, bool bParam1, var uParam2, int iParam3, bool bParam4, bool bParam5)
+int func_246(int iParam0, bool bParam1, var uParam2, int iParam3, bool bParam4, bool bParam5)
 {
 	int iVar0;
 
@@ -5397,11 +5397,11 @@ int func_246(bool bParam0, bool bParam1, var uParam2, int iParam3, bool bParam4,
 	{
 		return 0;
 	}
-	if (!func_178(bParam0))
+	if (!func_178(iParam0))
 	{
 		return 0;
 	}
-	*iParam3 = ITEMDATABASE::_0xF540239F9937033B(bParam0, bParam1);
+	*iParam3 = ITEMDATABASE::_0xF540239F9937033B(iParam0, bParam1);
 	if (*iParam3 == 0)
 	{
 		if (!bParam4)
@@ -5415,7 +5415,7 @@ int func_246(bool bParam0, bool bParam1, var uParam2, int iParam3, bool bParam4,
 	iVar0 = 0;
 	while (iVar0 < *iParam3)
 	{
-		if (!ITEMDATABASE::_0xF27F01BBF5ACD3F3(bParam0, bParam1, iVar0, (*uParam2)[iVar0 /*2*/]))
+		if (!ITEMDATABASE::_0xF27F01BBF5ACD3F3(iParam0, bParam1, iVar0, (*uParam2)[iVar0 /*2*/]))
 		{
 			Jump @112; //curOff = 100
 		}
@@ -5426,7 +5426,7 @@ int func_246(bool bParam0, bool bParam1, var uParam2, int iParam3, bool bParam4,
 	}
 	if (bParam5)
 	{
-		func_289(bParam0, bParam1, uParam2, *iParam3);
+		func_289(iParam0, bParam1, uParam2, *iParam3);
 	}
 	return 1;
 }
@@ -5457,38 +5457,38 @@ bool func_248(int iParam0)
 	return MONEY::_NETWORK_IS_MONEY_BALANCE_NOT_LESS_THAN(0, iParam0);
 }
 
-int func_249(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
+int func_249(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 {
 	int iVar0;
 	int iVar1;
-	bool bVar2;
+	int iVar2;
 	struct<4> Var3;
 
 	iVar0 = 0;
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	iVar1 = func_229(bParam0);
+	iVar1 = func_229(iParam0);
 	if (iVar1 == joaat("ammo") || (bParam1 && iVar1 == joaat("weapon")))
 	{
-		bVar2 = func_293(bParam0, 1);
-		if (bVar2 != 0)
+		iVar2 = func_293(iParam0, 1);
+		if (iVar2 != 0)
 		{
-			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, bVar2);
+			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_34, iVar2);
 		}
 	}
 	else if (iVar1 == joaat("weapon"))
 	{
-		return func_294(bParam0, 0);
+		return func_294(iParam0, 0);
 	}
-	if (func_258(bParam0, joaat("default")) != 0)
+	if (func_258(iParam0, joaat("default")) != 0)
 	{
-		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_256(bParam2), bParam0, bParam3);
+		iVar0 = INVENTORY::_0xE787F05DFC977BDE(func_256(bParam2), iParam0, bParam3);
 	}
 	else
 	{
-		Var3 = { func_295(bParam0, bParam2) };
+		Var3 = { func_295(iParam0, bParam2) };
 		if (!INVENTORY::_0xB881CA836CC4B6D4(&Var3))
 		{
 			return 0;
@@ -5503,26 +5503,26 @@ bool func_250(int iParam0, int iParam1)
 	return (iParam0 && iParam1) != 0;
 }
 
-int func_251(bool bParam0, bool bParam1, bool bParam2)
+int func_251(int iParam0, bool bParam1, bool bParam2)
 {
-	if (!func_178(bParam0))
+	if (!func_178(iParam0))
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_0xF540239F9937033B(bParam0, bParam1) == 0)
+	if (ITEMDATABASE::_0xF540239F9937033B(iParam0, bParam1) == 0)
 	{
 		return 0;
 	}
 	if (bParam2)
 	{
-		return !func_296(bParam0, bParam1);
+		return !func_296(iParam0, bParam1);
 	}
 	return 1;
 }
 
 bool func_252()
 {
-	return Global_1915170->f_21962;
+	return Global_1915180->f_21962;
 }
 
 int func_253(int* iParam0, bool bParam1)
@@ -5545,7 +5545,7 @@ int func_253(int* iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (!NETSHOPPING::_0xCE54C9ABE6FBC6DB(-1318406457))
+	if (!NETSHOPPING::_0xCE54C9ABE6FBC6DB(joaat("sell")))
 	{
 		return 0;
 	}
@@ -5572,30 +5572,30 @@ int func_253(int* iParam0, bool bParam1)
 	return 1;
 }
 
-int func_254(bool bParam0, bool bParam1, int iParam2)
+int func_254(int iParam0, bool bParam1, int iParam2)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return 0;
 	}
-	if (!func_251(bParam0, bParam1, 0))
+	if (!func_251(iParam0, bParam1, 0))
 	{
 		return 0;
 	}
 	if (func_250(iParam2, 2))
 	{
-		if (func_296(bParam0, bParam1))
+		if (func_296(iParam0, bParam1))
 		{
 			return 0;
 		}
 	}
-	if (NETWORK::_0xFBE782B3165AC8EC(bParam0))
+	if (NETWORK::_0xFBE782B3165AC8EC(iParam0))
 	{
 		return 0;
 	}
 	if (func_250(iParam2, 8))
 	{
-		return func_299(bParam0, bParam1);
+		return func_299(iParam0, bParam1);
 	}
 	return 1;
 }
@@ -5648,18 +5648,18 @@ struct<4> func_257()
 	return Var0;
 }
 
-int func_258(bool bParam0, int iParam1)
+int func_258(int iParam0, int iParam1)
 {
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_0xF4452CE83118C738(bParam0, iParam1);
+	return ITEMDATABASE::_0xF4452CE83118C738(iParam0, iParam1);
 }
 
 int func_259(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 
 	switch (iParam0)
 	{
@@ -5673,10 +5673,10 @@ int func_259(int iParam0)
 		case 15:
 		case 16:
 		case 17:
-			bVar0 = func_303(iParam0);
-			if (func_196(bVar0, 0))
+			iVar0 = func_303(iParam0);
+			if (func_196(iVar0, 0))
 			{
-				return func_198(bVar0, func_197(1), joaat("SLOTID_PROGRESSION"), 1, 0, 0);
+				return func_198(iVar0, func_197(1), joaat("SLOTID_PROGRESSION"), 1, 0, 0);
 			}
 			break;
 	}
@@ -5737,15 +5737,15 @@ int func_265(int iParam0)
 		case 7:
 			return joaat("bountyhunter");
 		case 8:
-			return 1777227915;
+			return joaat("Gunslinger");
 		case 9:
 			return 408825843;
 		case 10:
 			return joaat("hunter");
 		case 11:
-			return 64621749;
+			return joaat("Trader");
 		case 12:
-			return -1346830927;
+			return joaat("Collector");
 		case 13:
 			return -218234180;
 		case 14:
@@ -5762,9 +5762,9 @@ int func_265(int iParam0)
 	return joaat("null");
 }
 
-bool func_266(bool bParam0, var uParam1)
+bool func_266(int iParam0, var uParam1)
 {
-	return ITEMDATABASE::_0xF8D09EF8CE61D7BF(bParam0, uParam1);
+	return ITEMDATABASE::_0xF8D09EF8CE61D7BF(iParam0, uParam1);
 }
 
 void func_267(var uParam0, bool bParam1, bool bParam2, bool bParam3)
@@ -5786,7 +5786,7 @@ void func_267(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 
 int func_268(var uParam0, var uParam1, char* sParam2)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
@@ -5795,9 +5795,9 @@ int func_268(var uParam0, var uParam1, char* sParam2)
 	iVar3 = 0;
 	while (iVar3 < iVar2)
 	{
-		bVar0 = MISC::GET_HASH_KEY(((*uParam1)[iVar3 /*3*/])->f_1);
+		iVar0 = MISC::GET_HASH_KEY(((*uParam1)[iVar3 /*3*/])->f_1);
 		iVar1 = MISC::GET_HASH_KEY(uParam1[iVar3 /*3*/]);
-		if (!func_304(bVar0, iVar1))
+		if (!func_304(iVar0, iVar1))
 		{
 		}
 		else
@@ -5805,12 +5805,12 @@ int func_268(var uParam0, var uParam1, char* sParam2)
 			switch (((*uParam1)[iVar3 /*3*/])->f_2)
 			{
 				case joaat("inventory"):
-					uParam0->f_33 = bVar0;
+					uParam0->f_33 = iVar0;
 					uParam0->f_32 = iVar1;
 					StringCopy(sParam2, uParam1[iVar3 /*3*/], 128);
 					break;
 				case -15852387:
-					uParam0->f_37 = bVar0;
+					uParam0->f_37 = iVar0;
 					uParam0->f_36 = iVar1;
 					break;
 			}
@@ -5820,9 +5820,9 @@ int func_268(var uParam0, var uParam1, char* sParam2)
 	return 1;
 }
 
-bool func_269(bool bParam0)
+bool func_269(int iParam0)
 {
-	return (((((((((bParam0 == 2084597891 || bParam0 == 773203532) || bParam0 == -651156469) || bParam0 == 146855730) || bParam0 == -2000966371) || bParam0 == -343824903) || bParam0 == -316302375) || bParam0 == -1142684684) || bParam0 == -1243851340) || bParam0 == 1576210101);
+	return (((((((((iParam0 == joaat("currency_cash") || iParam0 == joaat("currency_gold_bar")) || iParam0 == -651156469) || iParam0 == 146855730) || iParam0 == joaat("PROVISION_GOLDBAR_SMALL")) || iParam0 == joaat("money_moneyclip")) || iParam0 == -316302375) || iParam0 == joaat("money_moneystack")) || iParam0 == -1243851340) || iParam0 == joaat("money_coinpurse"));
 }
 
 int func_270(char[4] cParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, char[4] cParam4, char[4] cParam5, char[4] cParam6, char[4] cParam7, char[4] cParam8, char[4] cParam9, char[4] cParam10, char[4] cParam11, char[4] cParam12, char[4] cParam13, char[4] cParam14, char[4] cParam15, var uParam16)
@@ -5872,7 +5872,7 @@ int func_271(var uParam0, int iParam1, char[32] cParam2, char[4] cParam10)
 		return 0;
 	}
 	func_151(uParam0, iParam1, cParam2, *cParam10);
-	uParam0->f_18 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(*uParam0, -2035241910, &(cParam10->f_16));
+	uParam0->f_18 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(*uParam0, joaat("dynamic_list_item_raw_text_entry"), &(cParam10->f_16));
 	uParam0->f_19 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, 440050042, cParam10->f_32);
 	uParam0->f_20 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, 1058850005, cParam10->f_33);
 	uParam0->f_21 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(*uParam0, 1956569112, cParam10->f_34);
@@ -5882,7 +5882,7 @@ int func_271(var uParam0, int iParam1, char[32] cParam2, char[4] cParam10)
 	uParam0->f_25 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, joaat("label"), cParam10->f_38);
 	uParam0->f_26 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, joaat("description"), cParam10->f_39);
 	uParam0->f_27 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, joaat("locked"), cParam10->f_40);
-	uParam0->f_28 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, 1267925131, cParam10->f_41);
+	uParam0->f_28 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, joaat("owned"), cParam10->f_41);
 	uParam0->f_29 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(*uParam0, joaat("level"), cParam10->f_60);
 	uParam0->f_30 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(*uParam0, 1212273021, &(cParam10->f_42));
 	uParam0->f_31 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, -94662335, cParam10->f_58);
@@ -5928,7 +5928,7 @@ int func_273(var uParam0, char[4] cParam1)
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*uParam0, func_67(58), cParam1->f_7);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_67(59), cParam1->f_8);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(*uParam0, func_67(60), cParam1->f_9);
-	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, -2035241910, &(cParam1->f_16));
+	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, joaat("dynamic_list_item_raw_text_entry"), &(cParam1->f_16));
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 440050042, cParam1->f_32);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 1058850005, cParam1->f_33);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT_BY_HASH(*uParam0, 1956569112, cParam1->f_34);
@@ -5938,7 +5938,7 @@ int func_273(var uParam0, char[4] cParam1)
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, joaat("label"), cParam1->f_38);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, joaat("description"), cParam1->f_39);
 	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, joaat("locked"), cParam1->f_40);
-	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1267925131, cParam1->f_41);
+	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, joaat("owned"), cParam1->f_41);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT_BY_HASH(*uParam0, joaat("level"), cParam1->f_60);
 	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, 1212273021, &(cParam1->f_42));
 	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, -94662335, cParam1->f_58);
@@ -5947,99 +5947,99 @@ int func_273(var uParam0, char[4] cParam1)
 	return 1;
 }
 
-int func_274(bool bParam0, var uParam1)
+int func_274(int iParam0, var uParam1)
 {
 	char cVar0[128];
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AWARDED_IMMEDIATELY")))
+	if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AWARDED_IMMEDIATELY")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AWARDED_IMMEDIATELY", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_OUTFIT_WARDROBE")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_OUTFIT_WARDROBE")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_OUTFIT_WARDROBE", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_CASH_WALLET")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_CASH_WALLET")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_CASH_WALLET", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_STABLE_EQUIP_FREE")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_STABLE_EQUIP_FREE")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_STABLE_EQUIP_FREE", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_GUNSMITH_EQUIP_FREE")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_GUNSMITH_EQUIP_FREE")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_GUNSMITH_EQUIP_FREE", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AVAILIBLE_AT_PLAYER_MENU")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AVAILIBLE_AT_PLAYER_MENU")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AVAILIBLE_AT_PLAYER_MENU", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_ADDED_TO_INVENTORY")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_ADDED_TO_INVENTORY")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_ADDED_TO_INVENTORY", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AVAILIBLE_AT_PHOTOSTUDIO")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AVAILIBLE_AT_PHOTOSTUDIO")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AVAILIBLE_AT_PHOTOSTUDIO", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AVAILIBLE_AT_WILDERNESS")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_AVAILIBLE_AT_WILDERNESS")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AVAILIBLE_AT_WILDERNESS", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_POST_OFFICE_OR_LOCK_BOX")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_POST_OFFICE_OR_LOCK_BOX")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_POST_OFFICE_OR_LOCK_BOX", 128);
 	}
-	else if (func_278(bParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_ADDED_TO_CAMP_PLAYLIST")))
+	else if (func_278(iParam0, MISC::GET_HASH_KEY("SR_ITEM_LOCATION_ADDED_TO_CAMP_PLAYLIST")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_ADDED_TO_CAMP_PLAYLIST", 128);
 	}
-	else if (func_236(bParam0) == 92477051 || func_236(bParam0) == 1946043663)
+	else if (func_236(iParam0) == 92477051 || func_236(iParam0) == 1946043663)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AWARDED_IMMEDIATELY", 128);
 	}
-	else if (func_269(bParam0))
+	else if (func_269(iParam0))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_CASH_WALLET", 128);
 	}
-	else if ((func_278(bParam0, -393037696) || func_278(bParam0, -133342564)) || func_278(bParam0, -287432114))
+	else if ((func_278(iParam0, -393037696) || func_278(iParam0, -133342564)) || func_278(iParam0, -287432114))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_OUTFIT_WARDROBE", 128);
 	}
-	else if ((((func_278(bParam0, -1452184346) || func_236(bParam0) == -1447088266) || func_278(bParam0, -1457797660)) || func_278(bParam0, 949916894)) || func_236(bParam0) == 874188557)
+	else if ((((func_278(iParam0, -1452184346) || func_236(iParam0) == -1447088266) || func_278(iParam0, -1457797660)) || func_278(iParam0, 949916894)) || func_236(iParam0) == 874188557)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_POST_OFFICE_OR_LOCK_BOX", 128);
 	}
-	else if (((func_236(bParam0) == 1193257440 || func_236(bParam0) == 1415299667) || func_236(bParam0) == -1941499753) || func_278(bParam0, MISC::GET_HASH_KEY("CI_TAG_ITEM_CAMP_FLAG")))
+	else if (((func_236(iParam0) == 1193257440 || func_236(iParam0) == 1415299667) || func_236(iParam0) == -1941499753) || func_278(iParam0, MISC::GET_HASH_KEY("CI_TAG_ITEM_CAMP_FLAG")))
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AVAILIBLE_AT_WILDERNESS", 128);
 	}
-	else if (func_236(bParam0) == -202620326)
+	else if (func_236(iParam0) == -202620326)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_STABLE_EQUIP_FREE", 128);
 	}
-	else if (func_236(bParam0) == -424477160 || func_236(bParam0) == 1160200607)
+	else if (func_236(iParam0) == -424477160 || func_236(iParam0) == 1160200607)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_AVAILIBLE_AT_PHOTOSTUDIO", 128);
 	}
-	else if ((((func_236(bParam0) == -1057349201 || func_236(bParam0) == 874188557) || func_236(bParam0) == -1070622585) || func_236(bParam0) == -2101244071) || func_236(bParam0) == -1556563517)
+	else if ((((func_236(iParam0) == -1057349201 || func_236(iParam0) == 874188557) || func_236(iParam0) == -1070622585) || func_236(iParam0) == -2101244071) || func_236(iParam0) == -1556563517)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_PLAYER_MENU", 128);
 	}
-	else if (func_236(bParam0) == -126813555)
+	else if (func_236(iParam0) == -126813555)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_COUPON_AWARDED_IMMEDIATELY", 128);
 	}
-	else if (func_236(bParam0) == -186198417)
+	else if (func_236(iParam0) == -186198417)
 	{
 		StringCopy(&cVar0, "ITEM_USE_LOCATION_MAGGIE_FIKE_STORE", 128);
 	}
-	else if (func_236(bParam0) == -838504018)
+	else if (func_236(iParam0) == -838504018)
 	{
 		StringCopy(&cVar0, "SR_TOOLTIP_ITEM_LOCATION_ADDED_TO_CAMP_PLAYLIST", 128);
 	}
@@ -6051,19 +6051,19 @@ int func_274(bool bParam0, var uParam1)
 	return 1;
 }
 
-int func_275(bool bParam0)
+int func_275(int iParam0)
 {
 	char* sVar0;
 	int iVar1;
 	int iVar2;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (func_305(bParam0))
+	if (func_305(iParam0))
 	{
-		iVar1 = func_306(bParam0);
+		iVar1 = func_306(iParam0);
 		iVar2 = func_307(iVar1);
 		sVar0 = func_308(iVar2);
 		if (func_309(sVar0))
@@ -6073,29 +6073,29 @@ int func_275(bool bParam0)
 	}
 	else
 	{
-		sVar0 = HUD::_GET_LABEL_TEXT_BY_HASH(func_310(bParam0));
-		return func_310(bParam0);
+		sVar0 = HUD::_GET_LABEL_TEXT_BY_HASH(func_310(iParam0));
+		return func_310(iParam0);
 	}
 	return 0;
 }
 
-int func_276(bool bParam0)
+int func_276(int iParam0)
 {
 	char* sVar0;
 	int iVar1;
 	int iVar2;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	if (func_278(bParam0, -306684263))
+	if (func_278(iParam0, -306684263))
 	{
-		return func_311(bParam0);
+		return func_311(iParam0);
 	}
-	else if (func_305(bParam0) && !func_278(bParam0, -1090933859))
+	else if (func_305(iParam0) && !func_278(iParam0, -1090933859))
 	{
-		iVar1 = func_306(bParam0);
+		iVar1 = func_306(iParam0);
 		iVar2 = func_307(iVar1);
 		sVar0 = func_312(iVar2);
 		if (func_309(sVar0))
@@ -6105,31 +6105,31 @@ int func_276(bool bParam0)
 	}
 	else
 	{
-		sVar0 = HUD::_GET_LABEL_TEXT_BY_HASH(func_313(bParam0));
-		return func_313(bParam0);
+		sVar0 = HUD::_GET_LABEL_TEXT_BY_HASH(func_313(iParam0));
+		return func_313(iParam0);
 	}
 	return 0;
 }
 
-int func_277(bool bParam0)
+int func_277(int iParam0)
 {
 	int iVar0;
 
-	if (!func_196(bParam0, 0) && !func_315(func_314(bParam0), 2))
+	if (!func_196(iParam0, 0) && !func_315(func_314(iParam0), 2))
 	{
 		return 0;
 	}
 	iVar0 = func_316();
 	if (iVar0 == 2026485318)
 	{
-		if (func_278(bParam0, -133342564))
+		if (func_278(iParam0, -133342564))
 		{
 			return 2;
 		}
 	}
 	else if (iVar0 == 24043185)
 	{
-		if (func_278(bParam0, -287432114))
+		if (func_278(iParam0, -287432114))
 		{
 			return 2;
 		}
@@ -6137,17 +6137,17 @@ int func_277(bool bParam0)
 	return 3;
 }
 
-int func_278(bool bParam0, int iParam1)
+int func_278(int iParam0, int iParam1)
 {
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
-		return func_317(func_314(bParam0), iParam1);
+		return func_317(func_314(iParam0), iParam1);
 	}
 	if (iParam1 == 0)
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(bParam0, iParam1, 1120943070))
+	if (ITEMDATABASE::_ITEM_DATABASE_DOES_ITEM_HAVE_TAG(iParam0, iParam1, 1120943070))
 	{
 		return 1;
 	}
@@ -6156,12 +6156,12 @@ int func_278(bool bParam0, int iParam1)
 
 var func_279()
 {
-	return Global_1270479->f_2941;
+	return Global_1272170->f_2941;
 }
 
 int func_280(var uParam0, var uParam1, char* sParam2)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
@@ -6170,9 +6170,9 @@ int func_280(var uParam0, var uParam1, char* sParam2)
 	iVar3 = 0;
 	while (iVar3 < iVar2)
 	{
-		bVar0 = MISC::GET_HASH_KEY(((*uParam1)[iVar3 /*3*/])->f_1);
+		iVar0 = MISC::GET_HASH_KEY(((*uParam1)[iVar3 /*3*/])->f_1);
 		iVar1 = MISC::GET_HASH_KEY(uParam1[iVar3 /*3*/]);
-		if (!func_304(bVar0, iVar1))
+		if (!func_304(iVar0, iVar1))
 		{
 		}
 		else
@@ -6180,12 +6180,12 @@ int func_280(var uParam0, var uParam1, char* sParam2)
 			switch (((*uParam1)[iVar3 /*3*/])->f_2)
 			{
 				case joaat("inventory"):
-					uParam0->f_17 = bVar0;
+					uParam0->f_17 = iVar0;
 					uParam0->f_16 = iVar1;
 					StringCopy(sParam2, uParam1[iVar3 /*3*/], 128);
 					break;
 				case -15852387:
-					uParam0->f_19 = bVar0;
+					uParam0->f_19 = iVar0;
 					uParam0->f_18 = iVar1;
 					break;
 			}
@@ -6224,11 +6224,11 @@ int func_281(var uParam0, var uParam1)
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, joaat("description"), uParam1->f_23);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, joaat("tooltip"), uParam1->f_24);
 	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, joaat("locked"), uParam1->f_25);
-	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1267925131, uParam1->f_26);
+	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, joaat("owned"), uParam1->f_26);
 	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, 1212273021, &(uParam1->f_27));
 	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, -94662335, uParam1->f_43);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 2103186173, uParam1->f_44);
-	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, -2035241910, &(uParam1->f_45));
+	DATABINDING::_0xA3BD6FF95E713EE5(*uParam0, joaat("dynamic_list_item_raw_text_entry"), &(uParam1->f_45));
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, -908299120, uParam1->f_61);
 	DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT_BY_HASH(*uParam0, joaat("level"), uParam1->f_62);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(*uParam0, "itemlocation", &(uParam1->f_63));
@@ -6237,15 +6237,15 @@ int func_281(var uParam0, var uParam1)
 
 bool func_282()
 {
-	return (func_318(-1185145312 /* GXTEntry: "Upgraded Off-Hand Holster" */, 0, 0, 0) > 0 && func_319(func_230(889965687 /* GXTEntry: "Wardrobe" */, func_197(1), 1034665895, 1), -234132662, 1, -1) != 0);
+	return (func_318(joaat("UPGRADE_OFFHAND_HOLSTER"), 0, 0, 0) > 0 && func_319(func_230(joaat("Wardrobe"), func_197(1), 1034665895, 1), -234132662, 1, -1) != 0);
 }
 
-int func_283(bool bParam0, int iParam1, int iParam2, int iParam3)
+int func_283(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	int iVar0;
 
 	iVar0 = func_256(0);
-	*iParam1 = { func_230(bParam0, func_231(0), iParam3, 0) };
+	*iParam1 = { func_230(iParam0, func_231(0), iParam3, 0) };
 	if (!INVENTORY::_0xB881CA836CC4B6D4(iParam1))
 	{
 		return 0;
@@ -6257,7 +6257,7 @@ int func_283(bool bParam0, int iParam1, int iParam2, int iParam3)
 	return 1;
 }
 
-int func_284(bool bParam0, int iParam1, bool bParam2)
+int func_284(int iParam0, int iParam1, bool bParam2)
 {
 	if (bParam2 == 487172188)
 	{
@@ -6266,7 +6266,7 @@ int func_284(bool bParam0, int iParam1, bool bParam2)
 			return 0;
 		}
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_CAN_EQUIP_ITEM_ON_CATEGORY(bParam0, iParam1, bParam2);
+	return ITEMDATABASE::_ITEM_DATABASE_CAN_EQUIP_ITEM_ON_CATEGORY(iParam0, iParam1, bParam2);
 }
 
 int func_285(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
@@ -6327,17 +6327,17 @@ int func_286(int iParam0, bool bParam1, bool bParam2)
 	return 0;
 }
 
-bool func_287(bool bParam0)
+bool func_287(int iParam0)
 {
-	return func_236(bParam0) == 1946043663;
+	return func_236(iParam0) == 1946043663;
 }
 
-bool func_288(bool bParam0)
+bool func_288(int iParam0)
 {
-	return func_236(bParam0) == -126813555;
+	return func_236(iParam0) == -126813555;
 }
 
-void func_289(bool bParam0, bool bParam1, var uParam2, int iParam3)
+void func_289(int iParam0, bool bParam1, var uParam2, int iParam3)
 {
 	int iVar0;
 	int iVar1;
@@ -6359,7 +6359,7 @@ void func_289(bool bParam0, bool bParam1, var uParam2, int iParam3)
 		return;
 	}
 	Var7.f_1 = 10;
-	if (!ITEMDATABASE::_0xE81D0378A384E755(bParam0, &Var7) || Var7 == 0)
+	if (!ITEMDATABASE::_0xE81D0378A384E755(iParam0, &Var7) || Var7 == 0)
 	{
 		return;
 	}
@@ -6452,44 +6452,44 @@ int func_292()
 	return MONEY::_MONEY_GET_CASH_BALANCE();
 }
 
-int func_293(bool bParam0, int iParam1)
+int func_293(int iParam0, int iParam1)
 {
 	int iVar0;
 	var uVar1;
 	var uVar2;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	iVar0 = func_229(bParam0);
-	if (iVar0 == joaat("weapon") && WEAPON::IS_WEAPON_VALID(bParam0))
+	iVar0 = func_229(iParam0);
+	if (iVar0 == joaat("weapon") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(bParam0);
+		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
 	}
-	else if (iVar0 == joaat("ammo") && WEAPON::_0x1F7977C9101F807F(bParam0))
+	else if (iVar0 == joaat("ammo") && WEAPON::_0x1F7977C9101F807F(iParam0))
 	{
-		return bParam0;
+		return iParam0;
 	}
-	if (func_278(bParam0, 1399091007))
+	if (func_278(iParam0, 1399091007))
 	{
-		func_320(bParam0, &uVar1, &uVar2);
+		func_320(iParam0, &uVar1, &uVar2);
 		return uVar2;
 	}
 	return 0;
 }
 
-int func_294(bool bParam0, bool bParam1)
+int func_294(int iParam0, bool bParam1)
 {
 	struct<14> Var0;
 	int iVar14;
 	var uVar15;
 
-	if (!WEAPON::IS_WEAPON_VALID(bParam0))
+	if (!WEAPON::IS_WEAPON_VALID(iParam0))
 	{
 		return 0;
 	}
-	Var0 = { func_321(bParam0, -1591664384, -1591664384, -1591664384, 0, 0, 0) };
+	Var0 = { func_321(iParam0, -1591664384, -1591664384, -1591664384, 0, 0, 0) };
 	if (bParam1)
 	{
 		func_322(&Var0, func_231(0));
@@ -6502,15 +6502,15 @@ int func_294(bool bParam0, bool bParam1)
 	return uVar15;
 }
 
-struct<4> func_295(bool bParam0, bool bParam1)
+struct<4> func_295(int iParam0, bool bParam1)
 {
 	struct<5> Var0;
 
-	Var0 = { func_180(bParam0, bParam1, 0) };
-	return func_230(bParam0, Var0, Var0.f_4, bParam1);
+	Var0 = { func_180(iParam0, bParam1, 0) };
+	return func_230(iParam0, Var0, Var0.f_4, bParam1);
 }
 
-int func_296(bool bParam0, bool bParam1)
+int func_296(int iParam0, bool bParam1)
 {
 	struct<47> Var0;
 	int iVar471;
@@ -6540,7 +6540,7 @@ int func_296(bool bParam0, bool bParam1)
 	Var0.f_1.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_36 = 10;
 	Var0.f_1.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_4 = 15;
 	Var0.f_1.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_47.f_36 = 10;
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_BUY_AWARD_ACQUIRE_COSTS(bParam0, &Var0, &iVar471, 10) || iVar471 == 0)
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_BUY_AWARD_ACQUIRE_COSTS(iParam0, &Var0, &iVar471, 10) || iVar471 == 0)
 	{
 		return 0;
 	}
@@ -6595,7 +6595,7 @@ int func_298(var uParam0)
 	return 1;
 }
 
-int func_299(bool bParam0, bool bParam1)
+int func_299(int iParam0, bool bParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -6603,13 +6603,13 @@ int func_299(bool bParam0, bool bParam1)
 
 	if (bParam1 == -570078785)
 	{
-		iVar0 = func_187(bParam0, -570078785, 0, 1);
+		iVar0 = func_187(iParam0, -570078785, 0, 1);
 		if (iVar0 == 0)
 		{
 		}
 		if (!func_248(iVar0))
 		{
-			if (Global_1915170->f_20142)
+			if (Global_1915180->f_20142)
 			{
 				func_326(MISC::_CREATE_VAR_STRING(2, "SHOP_H_TOO_POOR_GOLD", func_188(iVar0)));
 			}
@@ -6618,13 +6618,13 @@ int func_299(bool bParam0, bool bParam1)
 	}
 	else if (bParam1 == -915411861)
 	{
-		iVar1 = func_187(bParam0, -915411861, 0, 1);
+		iVar1 = func_187(iParam0, -915411861, 0, 1);
 		if (iVar1 == 0)
 		{
 		}
 		if (!func_247(iVar1))
 		{
-			if (Global_1915170->f_20142)
+			if (Global_1915180->f_20142)
 			{
 				func_326("SHOP_H_TOO_POOR");
 			}
@@ -6635,7 +6635,7 @@ int func_299(bool bParam0, bool bParam1)
 	{
 		return 1;
 	}
-	if (!func_190(bParam0, bParam1, &uVar2))
+	if (!func_190(iParam0, bParam1, &uVar2))
 	{
 		return 0;
 	}
@@ -6715,15 +6715,15 @@ int func_303(int iParam0)
 	return 0;
 }
 
-int func_304(bool bParam0, int iParam1)
+int func_304(int iParam0, int iParam1)
 {
-	if (!TXD::_0xBA0163B277C2D2D0(bParam0))
+	if (!TXD::_DOES_STREAMED_TXD_EXIST(iParam0))
 	{
 		return 0;
 	}
-	if (TXD::_0xBE72591D1509FFE4(bParam0))
+	if (TXD::_HAS_STREAMED_TXD_LOADED(iParam0))
 	{
-		if (!GRAPHICS::_0xA2A51869BDED733B(bParam0, iParam1))
+		if (!GRAPHICS::_0xA2A51869BDED733B(iParam0, iParam1))
 		{
 			return 0;
 		}
@@ -6731,135 +6731,135 @@ int func_304(bool bParam0, int iParam1)
 	return 1;
 }
 
-bool func_305(bool bParam0)
+bool func_305(int iParam0)
 {
-	return func_229(bParam0) == joaat("horse");
+	return func_229(iParam0) == joaat("horse");
 }
 
-int func_306(bool bParam0)
+int func_306(int iParam0)
 {
-	switch (bParam0)
+	switch (iParam0)
 	{
 		case 1538827865: /* GXTEntry: "American Paint~n~Overo Coat" */
 			return joaat("a_c_horse_americanpaint_overo");
 		case -1792561227: /* GXTEntry: "American Paint~n~Tobiano Coat" */
 			return joaat("a_c_horse_americanpaint_tobiano");
 		case 1033678910: /* GXTEntry: "American Paint~n~Splashed White Coat" */
-			return 1792770814;
+			return joaat("a_c_horse_americanpaint_splashedwhite");
 		case -1942141178: /* GXTEntry: "American Paint~n~Grey Overo Coat" */
-			return -1963397600;
+			return joaat("a_c_horse_americanpaint_greyovero");
 		case 671599957: /* GXTEntry: "American Standardbred~n~Black Coat" */
-			return -1250098797;
+			return joaat("a_c_horse_americanstandardbred_black");
 		case -1554935503: /* GXTEntry: "American Standardbred~n~Buckskin Coat" */
-			return -318278790;
+			return joaat("a_c_horse_americanstandardbred_buckskin");
 		case 694610769: /* GXTEntry: "American Standardbred~n~Palomino Dapple Coat" */
-			return 55096099;
+			return joaat("a_c_horse_americanstandardbred_palominodapple");
 		case 1941463607: /* GXTEntry: "American Standardbred~n~Silver Tail Buckskin Coat" */
-			return -458397856;
+			return joaat("a_c_horse_americanstandardbred_silvertailbuckskin");
 		case -887316537: /* GXTEntry: "Andalusian~n~Dark Bay Coat" */
-			return -444610976;
+			return joaat("a_c_horse_andalusian_darkbay");
 		case 1762474047: /* GXTEntry: "Andalusian~n~Rose Grey Coat" */
-			return 746627200;
+			return joaat("a_c_horse_andalusian_rosegray");
 		case -828859553: /* GXTEntry: "Andalusian~n~Perlino Coat" */
-			return 705691988;
+			return joaat("a_c_horse_andalusian_perlino");
 		case 1410237043: /* GXTEntry: "Appaloosa~n~Blanket Coat" */
 			return joaat("a_c_horse_appaloosa_blanket");
 		case -2026073756: /* GXTEntry: "Appaloosa~n~Leopard Blanket Coat" */
-			return -1554827654;
+			return joaat("a_c_horse_appaloosa_leopardblanket");
 		case 2002245664: /* GXTEntry: "Appaloosa~n~Brown Leopard Coat" */
-			return -1029277326;
+			return joaat("a_c_horse_appaloosa_brownleopard");
 		case -1120227140: /* GXTEntry: "Appaloosa~n~Leopard Coat" */
 			return joaat("a_c_horse_appaloosa_leopard");
 		case 1142681594: /* GXTEntry: "Arabian~n~Black Coat" */
 			return joaat("a_c_horse_arabian_black");
 		case -864588185: /* GXTEntry: "Arabian~n~Rose Grey Bay Coat" */
-			return -403470324;
+			return joaat("a_c_horse_arabian_rosegreybay");
 		case -1040918754: /* GXTEntry: "Arabian~n~White Coat" */
 			return joaat("a_c_horse_arabian_white");
 		case 535545841: /* GXTEntry: "Ardennes~n~Bay Roan Coat" */
 			return joaat("a_c_horse_ardennes_bayroan");
 		case 1686036388: /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */
-			return -635239558;
+			return joaat("a_c_horse_ardennes_strawberryroan");
 		case 2125477381:
 			return joaat("a_c_horse_belgian_blondchestnut");
 		case 1808724704: /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */
 			return joaat("a_c_horse_belgian_mealychestnut");
 		case -1745871311: /* GXTEntry: "Dutch Warmblood~n~Sooty Buckskin Coat" */
-			return 1593035738;
+			return joaat("a_c_horse_dutchwarmblood_sootybuckskin");
 		case -1366099125: /* GXTEntry: "Dutch Warmblood~n~Seal Brown Coat" */
-			return 861505058;
+			return joaat("a_c_horse_dutchwarmblood_sealbrown");
 		case -1900776854: /* GXTEntry: "Dutch Warmblood~n~Chocolate Roan Coat" */
-			return 687445866;
+			return joaat("a_c_horse_dutchwarmblood_chocolateroan");
 		case 1381855825: /* GXTEntry: "Hungarian Halfbred~n~Flaxen Chestnut Coat" */
-			return 1705182311;
+			return joaat("a_c_horse_hungarianhalfbred_flaxenchestnut");
 		case -470894301: /* GXTEntry: "Hungarian Halfbred~n~Flaxen Piebald Tobiano Coat" */
-			return -78273782;
+			return joaat("a_c_horse_hungarianhalfbred_piebaldtobiano");
 		case -58297715: /* GXTEntry: "Hungarian Halfbred~n~Dark Dapple Grey" */
-			return -819697512;
-		case 919533729: /* GXTEntry: "Kentucky Saddler~n~Black Coat" */
-			return -247265944;
+			return joaat("a_c_horse_hungarianhalfbred_darkdapplegrey");
+		case joaat("horse_breed_kentuckysaddle_black"):
+			return joaat("a_c_horse_kentuckysaddle_black");
 		case 1112812928: /* GXTEntry: "Kentucky Saddler~n~Chestnut Pinto Coat" */
-			return -1265030920;
-		case 753764318: /* GXTEntry: "Kentucky Saddler~n~Grey Coat" */
-			return 2024948086;
+			return joaat("a_c_horse_kentuckysaddle_chestnutpinto");
+		case joaat("horse_breed_kentuckysaddle_grey"):
+			return joaat("a_c_horse_kentuckysaddle_grey");
 		case 2100045093: /* GXTEntry: "Kentucky Saddler~n~Silver Bay Coat" */
-			return 1696286663;
+			return joaat("a_c_horse_kentuckysaddle_silverbay");
 		case 1097965086: /* GXTEntry: "Missouri Fox Trotter~n~Amber Champagne" */
-			return -1342159303;
+			return joaat("a_c_horse_missourifoxtrotter_amberchampagne");
 		case -2136667309: /* GXTEntry: "Missouri Fox Trotter~n~Silver Dapple Pinto Coat" */
 			return joaat("a_c_horse_missourifoxtrotter_silverdapplepinto");
 		case -376463594: /* GXTEntry: "Morgan~n~Bay Coat" */
-			return 2030804811;
+			return joaat("a_c_horse_morgan_bay");
 		case -1917318030: /* GXTEntry: "Morgan~n~Bay Roan Coat" */
-			return 1230359523;
+			return joaat("a_c_horse_morgan_bayroan");
 		case 1631640006: /* GXTEntry: "Morgan~n~Flaxen Chestnut Coat" */
-			return -1038436471;
-		case 1714576673: /* GXTEntry: "Morgan~n~Palomino Coat" */
-			return 96930969;
+			return joaat("a_c_horse_morgan_flaxenchestnut");
+		case joaat("horse_breed_morgan_palomino"):
+			return joaat("a_c_horse_morgan_palomino");
 		case 210760725: /* GXTEntry: "Mustang~n~Tiger Grullo Dun Coat" */
-			return -1180427609;
+			return joaat("a_c_horse_mustang_grullodun");
 		case 2051021144: /* GXTEntry: "Mustang~n~Wild Bay Coat" */
 			return joaat("a_c_horse_mustang_wildbay");
 		case 1924406350: /* GXTEntry: "Mustang~n~Tiger Striped Bay Coat" */
-			return 43825738;
+			return joaat("a_c_horse_mustang_tigerstripedbay");
 		case -1990143531: /* GXTEntry: "Nokota~n~Blue Roan Coat" */
 			return joaat("a_c_horse_nokota_blueroan");
 		case 1741899492: /* GXTEntry: "Nokota~n~White Roan Coat" */
-			return -1261814606;
+			return joaat("a_c_horse_nokota_whiteroan");
 		case -1629575335: /* GXTEntry: "Nokota~n~Reverse Dapple Roan Coat" */
-			return 107013696;
+			return joaat("a_c_horse_nokota_reversedappleroan");
 		case 1096294193: /* GXTEntry: "Shire~n~Dark Bay Coat" */
-			return 1066034872;
+			return joaat("a_c_horse_shire_darkbay");
 		case -1162498792: /* GXTEntry: "Shire~n~Light Grey Coat" */
-			return 36009259;
+			return joaat("a_c_horse_shire_lightgrey");
 		case -212500005: /* GXTEntry: "Suffolk Punch~n~Sorrel Coat" */
-			return -1599683008;
+			return joaat("a_c_horse_suffolkpunch_sorrel");
 		case -538557079: /* GXTEntry: "Suffolk Punch~n~Red Chestnut Coat" */
-			return -1693870200;
+			return joaat("a_c_horse_suffolkpunch_redchestnut");
 		case 171150858: /* GXTEntry: "Tennessee Walker~n~Black Rabicano Coat" */
-			return 1072019803;
-		case 67538819: /* GXTEntry: "Tennessee Walker~n~Chestnut Coat" */
-			return 1074477367;
+			return joaat("a_c_horse_tennesseewalker_blackrabicano");
+		case joaat("horse_breed_tennesseewalker_chestnut"):
+			return joaat("a_c_horse_tennesseewalker_chestnut");
 		case -126472599: /* GXTEntry: "Tennessee Walker~n~Dapple Bay Coat" */
-			return -85890205;
+			return joaat("a_c_horse_tennesseewalker_dapplebay");
 		case -332060056: /* GXTEntry: "Tennessee Walker~n~Red Roan Coat" */
-			return -727455979;
+			return joaat("a_c_horse_tennesseewalker_redroan");
 		case 1917500091: /* GXTEntry: "Tennessee Walker~n~Flaxen Roan Coat" */
-			return -1667789645;
+			return joaat("a_c_horse_tennesseewalker_flaxenroan");
 		case -1043453945: /* GXTEntry: "Thoroughbred~n~Blood Bay Coat" */
-			return -1924405794;
+			return joaat("a_c_horse_thoroughbred_bloodbay");
 		case 1723487083: /* GXTEntry: "Thoroughbred~n~Dapple Grey Coat" */
 			return joaat("a_c_horse_thoroughbred_dapplegrey");
 		case 2044230644: /* GXTEntry: "Thoroughbred~n~Brindle Coat" */
-			return -526169133;
+			return joaat("a_c_horse_thoroughbred_brindle");
 		case 1999358190: /* GXTEntry: "Thoroughbred~n~Black Chestnut Coat" */
-			return 2120708491;
+			return joaat("a_c_horse_thoroughbred_blackchestnut");
 		case 344528703: /* GXTEntry: "Turkoman~n~Dark Bay Coat" */
-			return 1133837220;
+			return joaat("a_c_horse_turkoman_darkbay");
 		case -1674873797: /* GXTEntry: "Turkoman~n~Gold Coat" */
 			return joaat("a_c_horse_turkoman_gold");
 		case 281852151: /* GXTEntry: "Turkoman~n~Silver Coat" */
-			return -1604180548;
+			return joaat("a_c_horse_turkoman_silver");
 		case 908445453: /* GXTEntry: "Breton~n~Red Roan Coat" */
 			return -683592019;
 		case 1221398025: /* GXTEntry: "Breton~n~Sorrel Coat" */
@@ -6911,27 +6911,27 @@ int func_306(bool bParam0)
 		case -285185056:
 			return joaat("a_c_donkey_01");
 		case -1692268955: /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */
-			return -1028075925;
+			return joaat("a_c_horse_appaloosa_blacksnowflake");
 		case 2130706226:
-			return 84224102;
+			return joaat("a_c_horse_arabian_grey");
 		case 1214981718: /* GXTEntry: "Arabian~n~Red Chestnut Coat" */
-			return 1496579364;
+			return joaat("a_c_horse_arabian_redchestnut");
 		case -1754375530: /* GXTEntry: "Hungarian Halfbred~n~Liver Chestnut Coat" */
-			return -1896838685;
+			return joaat("a_c_horse_hungarianhalfbred_liverchestnut");
 		case -71211764: /* GXTEntry: "Missouri Fox Trotter~n~Sable Champagne Coat" */
-			return -420599285;
+			return joaat("a_c_horse_missourifoxtrotter_sablechampagne");
 		case -1390353518: /* GXTEntry: "Mustang~n~Golden Dun Coat" */
-			return 478986344;
+			return joaat("a_c_horse_mustang_goldendun");
 		case 887669186:
-			return -2063289686;
+			return joaat("a_c_horse_john_endlesssummer");
 		case 2102774612:
-			return 917402668;
+			return joaat("a_c_horse_murfreebrood_mange_01");
 		case -2011111190:
-			return -914712122;
+			return joaat("a_c_horse_murfreebrood_mange_02");
 		case -535752499:
-			return -598917269;
+			return joaat("a_c_horse_murfreebrood_mange_03");
 		case 559905966:
-			return 808655744;
+			return joaat("a_c_horse_mp_mangy_backup");
 		default:
 			break;
 	}
@@ -6940,220 +6940,220 @@ int func_306(bool bParam0)
 
 int func_307(int iParam0)
 {
-	if (iParam0 == 808655744)
+	if (iParam0 == joaat("a_c_horse_mp_mangy_backup"))
 	{
-		return -364764277 /* GXTEntry: "Scrawny Nag" */;
+		return joaat("BREED_MANGY_BACKUP");
 	}
 	switch (iParam0)
 	{
 		case joaat("a_c_horse_americanpaint_overo"):
-			return -974145463 /* GXTEntry: "American Paint - Overo Coat" */;
+			return joaat("BREED_AMERICANPAINT_OVERO");
 		case joaat("a_c_horse_americanpaint_tobiano"):
-			return 1432602132 /* GXTEntry: "American Paint - Tobiano Coat" */;
-		case 1792770814:
-			return 92296905 /* GXTEntry: "American Paint - Splashed White Coat" */;
-		case -1963397600:
-			return -842044823 /* GXTEntry: "American Paint - Grey Overo Coat" */;
-		case -1250098797:
-			return 1371398552 /* GXTEntry: "American Standardbred - Black Coat" */;
-		case -318278790:
-			return -745453539 /* GXTEntry: "American Standardbred - Buckskin Coat" */;
-		case 55096099:
-			return 1583029039 /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */;
-		case -458397856:
-			return -783061276 /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */;
-		case -444610976:
-			return -1322521536 /* GXTEntry: "Andalusian - Dark Bay Coat" */;
-		case 746627200:
-			return 728055838 /* GXTEntry: "Andalusian - Rose Grey Coat" */;
-		case 705691988:
-			return 1100711204 /* GXTEntry: "Andalusian - Perlino Coat" */;
+			return joaat("BREED_AMERICANPAINT_TOBIANO");
+		case joaat("a_c_horse_americanpaint_splashedwhite"):
+			return joaat("BREED_AMERICANPAINT_SPLASHEDWHITE");
+		case joaat("a_c_horse_americanpaint_greyovero"):
+			return joaat("BREED_AMERICANPAINT_GREYOVERO");
+		case joaat("a_c_horse_americanstandardbred_black"):
+			return joaat("BREED_AMERICANSTANDARDBRED_BLACK");
+		case joaat("a_c_horse_americanstandardbred_buckskin"):
+			return joaat("BREED_AMERICANSTANDARDBRED_BUCKSKIN");
+		case joaat("a_c_horse_americanstandardbred_palominodapple"):
+			return joaat("BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE");
+		case joaat("a_c_horse_americanstandardbred_silvertailbuckskin"):
+			return joaat("BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN");
+		case joaat("a_c_horse_andalusian_darkbay"):
+			return joaat("BREED_ANDALUSIAN_DARKBAY");
+		case joaat("a_c_horse_andalusian_rosegray"):
+			return joaat("BREED_ANDALUSIAN_ROSEGRAY");
+		case joaat("a_c_horse_andalusian_perlino"):
+			return joaat("BREED_ANDALUSIAN_PERLINO");
 		case joaat("a_c_horse_appaloosa_blanket"):
-			return -1782334639 /* GXTEntry: "Appaloosa - Blanket Coat" */;
-		case -1554827654:
-			return -1181052732 /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */;
-		case -1029277326:
-			return -179102320 /* GXTEntry: "Appaloosa - Brown Leopard Coat" */;
+			return joaat("BREED_APPALOOSA_BLANKET");
+		case joaat("a_c_horse_appaloosa_leopardblanket"):
+			return joaat("BREED_APPALOOSA_LEOPARDBLANKET");
+		case joaat("a_c_horse_appaloosa_brownleopard"):
+			return joaat("BREED_APPALOOSA_BROWNLEOPARD");
 		case joaat("a_c_horse_appaloosa_leopard"):
-			return -1266863668 /* GXTEntry: "Appaloosa - Leopard Coat" */;
+			return joaat("BREED_APPALOOSA_LEOPARD");
 		case joaat("a_c_horse_arabian_black"):
-			return -2078767648 /* GXTEntry: "Arabian - Black Coat" */;
-		case -403470324:
-			return -852553462 /* GXTEntry: "Arabian - Rose Grey Bay Coat" */;
+			return joaat("BREED_ARABIAN_BLACK");
+		case joaat("a_c_horse_arabian_rosegreybay"):
+			return joaat("BREED_ARABIAN_ROSEGREYBAY");
 		case joaat("a_c_horse_arabian_white"):
-			return -80004868 /* GXTEntry: "Arabian - White Coat" */;
+			return joaat("BREED_ARABIAN_WHITE");
 		case joaat("a_c_horse_ardennes_bayroan"):
-			return 1813208211 /* GXTEntry: "Ardennes - Bay Roan Coat" */;
-		case -635239558:
-			return 836323303 /* GXTEntry: "Ardennes - Strawberry Roan Coat" */;
+			return joaat("BREED_ARDENNES_BAYROAN");
+		case joaat("a_c_horse_ardennes_strawberryroan"):
+			return joaat("BREED_ARDENNES_STRAWBERRYROAN");
 		case joaat("a_c_horse_ardennes_irongreyroan"):
-			return 153881023 /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */;
+			return joaat("BREED_ARDENNES_IRONGREYROAN");
 		case joaat("a_c_horse_belgian_blondchestnut"):
-			return -1256798240 /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */;
+			return joaat("BREED_BELGIAN_BLONDCHESTNUT");
 		case joaat("a_c_horse_belgian_mealychestnut"):
-			return 2118089359;
-		case 1593035738:
-			return -1537586382 /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */;
-		case 861505058:
-			return 1440692746 /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */;
-		case 687445866:
-			return 697143532 /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */;
-		case 1705182311:
-			return 281128160 /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */;
-		case -78273782:
-			return 1854519167 /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */;
-		case -819697512:
-			return -1376299681 /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */;
-		case -247265944:
+			return joaat("BREED_BELGIAN_MEALYCHESTNUT");
+		case joaat("a_c_horse_dutchwarmblood_sootybuckskin"):
+			return joaat("BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN");
+		case joaat("a_c_horse_dutchwarmblood_sealbrown"):
+			return joaat("BREED_DUTCHWARMBLOOD_SEALBROWN");
+		case joaat("a_c_horse_dutchwarmblood_chocolateroan"):
+			return joaat("BREED_DUTCHWARMBLOOD_CHOCOLATEROAN");
+		case joaat("a_c_horse_hungarianhalfbred_flaxenchestnut"):
+			return joaat("BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT");
+		case joaat("a_c_horse_hungarianhalfbred_piebaldtobiano"):
+			return joaat("BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO");
+		case joaat("a_c_horse_hungarianhalfbred_darkdapplegrey"):
+			return joaat("BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY");
+		case joaat("a_c_horse_kentuckysaddle_black"):
 			return -1955947684;
-		case -1265030920:
-			return 1361788230 /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */;
-		case 2024948086:
-			return 1974379573 /* GXTEntry: "Kentucky Saddler - Grey Coat" */;
-		case 1696286663:
-			return 545109431 /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */;
-		case -1342159303:
-			return 1275638003 /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */;
+		case joaat("a_c_horse_kentuckysaddle_chestnutpinto"):
+			return joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO");
+		case joaat("a_c_horse_kentuckysaddle_grey"):
+			return joaat("BREED_KENTUCKYSADDLE_GREY");
+		case joaat("a_c_horse_kentuckysaddle_silverbay"):
+			return joaat("BREED_KENTUCKYSADDLE_SILVERBAY");
+		case joaat("a_c_horse_missourifoxtrotter_amberchampagne"):
+			return joaat("BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE");
 		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
-			return 2083573823 /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */;
-		case 2030804811:
-			return 1235275977 /* GXTEntry: "Morgan - Bay Coat" */;
-		case 1230359523:
-			return 892601357 /* GXTEntry: "Morgan - Bay Roan Coat" */;
-		case -1038436471:
-			return 1224695367 /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */;
-		case 96930969:
-			return 648301150 /* GXTEntry: "Morgan - Palomino Coat" */;
-		case -1180427609:
-			return -1597490733 /* GXTEntry: "Mustang - Grullo Dun Coat" */;
+			return joaat("BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO");
+		case joaat("a_c_horse_morgan_bay"):
+			return joaat("BREED_MORGAN_BAY");
+		case joaat("a_c_horse_morgan_bayroan"):
+			return joaat("BREED_MORGAN_BAYROAN");
+		case joaat("a_c_horse_morgan_flaxenchestnut"):
+			return joaat("BREED_MORGAN_FLAXENCHESTNUT");
+		case joaat("a_c_horse_morgan_palomino"):
+			return joaat("BREED_MORGAN_PALOMINO");
+		case joaat("a_c_horse_mustang_grullodun"):
+			return joaat("BREED_MUSTANG_GRULLODUN");
 		case joaat("a_c_horse_mustang_wildbay"):
-			return 2000205872 /* GXTEntry: "Mustang - Wild Bay Coat" */;
-		case 43825738:
-			return -1428527735 /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */;
+			return joaat("BREED_MUSTANG_WILDBAY");
+		case joaat("a_c_horse_mustang_tigerstripedbay"):
+			return joaat("BREED_MUSTANG_TIGERSTRIPEDBAY");
 		case joaat("a_c_horse_nokota_blueroan"):
-			return 170010697 /* GXTEntry: "Nokota - Blue Roan Coat" */;
-		case -1261814606:
-			return -742726637 /* GXTEntry: "Nokota - White Roan Coat" */;
-		case 107013696:
-			return -1714171692 /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */;
-		case 1066034872:
-			return -103101636 /* GXTEntry: "Shire - Dark Bay Coat" */;
-		case 36009259:
-			return -1999094324 /* GXTEntry: "Shire - Light Grey Coat" */;
-		case -1599683008:
-			return 1724200240 /* GXTEntry: "Suffolk Punch - Sorrel Coat" */;
-		case -1693870200:
-			return 237935328 /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */;
-		case 1072019803:
-			return 120848852 /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */;
-		case 1074477367:
-			return -868094182 /* GXTEntry: "Tennessee Walker - Chestnut Coat" */;
-		case -85890205:
-			return -887362763 /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */;
-		case -727455979:
-			return -847714194 /* GXTEntry: "Tennessee Walker - Red Roan Coat" */;
-		case -1667789645:
-			return 1756765331 /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */;
-		case -1924405794:
-			return -813071670 /* GXTEntry: "Thoroughbred - Blood Bay Coat" */;
+			return joaat("BREED_NOKOTA_BLUEROAN");
+		case joaat("a_c_horse_nokota_whiteroan"):
+			return joaat("BREED_NOKOTA_WHITEROAN");
+		case joaat("a_c_horse_nokota_reversedappleroan"):
+			return joaat("BREED_NOKOTA_REVERSEDAPPLEROAN");
+		case joaat("a_c_horse_shire_darkbay"):
+			return joaat("BREED_SHIRE_DARKBAY");
+		case joaat("a_c_horse_shire_lightgrey"):
+			return joaat("BREED_SHIRE_LIGHTGREY");
+		case joaat("a_c_horse_suffolkpunch_sorrel"):
+			return joaat("BREED_SUFFOLKPUNCH_SORREL");
+		case joaat("a_c_horse_suffolkpunch_redchestnut"):
+			return joaat("BREED_SUFFOLKPUNCH_REDCHESTNUT");
+		case joaat("a_c_horse_tennesseewalker_blackrabicano"):
+			return joaat("BREED_TENNESSEEWALKER_BLACKRABICANO");
+		case joaat("a_c_horse_tennesseewalker_chestnut"):
+			return joaat("BREED_TENNESSEEWALKER_CHESTNUT");
+		case joaat("a_c_horse_tennesseewalker_dapplebay"):
+			return joaat("BREED_TENNESSEEWALKER_DAPPLEBAY");
+		case joaat("a_c_horse_tennesseewalker_redroan"):
+			return joaat("BREED_TENNESSEEWALKER_REDROAN");
+		case joaat("a_c_horse_tennesseewalker_flaxenroan"):
+			return joaat("BREED_TENNESSEEWALKER_FLAXENROAN");
+		case joaat("a_c_horse_thoroughbred_bloodbay"):
+			return joaat("BREED_THOROUGHBRED_BLOODBAY");
 		case joaat("a_c_horse_thoroughbred_dapplegrey"):
-			return -1900569233 /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */;
-		case -526169133:
-			return 1688250187 /* GXTEntry: "Thoroughbred - Brindle Coat" */;
-		case 2120708491:
-			return -1262715164 /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */;
-		case 900144280:
-			return 2010625508 /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */;
-		case 1133837220:
-			return -136225010 /* GXTEntry: "Turkoman - Dark Bay Coat" */;
+			return joaat("BREED_THOROUGHBRED_DAPPLEGREY");
+		case joaat("a_c_horse_thoroughbred_brindle"):
+			return joaat("BREED_THOROUGHBRED_BRINDLE");
+		case joaat("a_c_horse_thoroughbred_blackchestnut"):
+			return joaat("BREED_THOROUGHBRED_BLACKCHESTNUT");
+		case joaat("a_c_horse_thoroughbred_reversedappleblack"):
+			return joaat("BREED_THOROUGHBRED_REVERSEDAPPLEBLACK");
+		case joaat("a_c_horse_turkoman_darkbay"):
+			return joaat("BREED_TURKOMAN_DARKBAY");
 		case joaat("a_c_horse_turkoman_gold"):
-			return -225011104 /* GXTEntry: "Turkoman - Gold Coat" */;
-		case -1604180548:
-			return -1882436593 /* GXTEntry: "Turkoman - Silver Coat" */;
+			return joaat("BREED_TURKOMAN_GOLD");
+		case joaat("a_c_horse_turkoman_silver"):
+			return joaat("BREED_TURKOMAN_SILVER");
 		case -683592019:
-			return -757978903 /* GXTEntry: "Breton - Red Roan Coat" */;
+			return joaat("BREED_BRETON_REDROAN");
 		case 337109765:
-			return 1909854428 /* GXTEntry: "Breton - Sorrel Coat" */;
+			return joaat("BREED_BRETON_SORREL");
 		case -619132373:
-			return 1592694494 /* GXTEntry: "Breton - Grullo Dun Coat" */;
+			return joaat("BREED_BRETON_GRULLODUN");
 		case 1544366970:
-			return 981469777 /* GXTEntry: "Breton - Seal Brown Coat" */;
+			return joaat("BREED_BRETON_SEALBROWN");
 		case -1441144351:
-			return 1064693514 /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */;
+			return joaat("BREED_BRETON_MEALYDAPPLEBAY");
 		case -1717674545:
-			return -1365665739 /* GXTEntry: "Breton - Steel Grey Coat" */;
+			return joaat("BREED_BRETON_STEELGREY");
 		case 1825358734:
-			return 1577022605 /* GXTEntry: "Criollo - Blue Roan Overo Coat" */;
+			return joaat("BREED_CRIOLLO_BLUEROANOVERO");
 		case 1138427579:
-			return 381495209 /* GXTEntry: "Criollo - Dun Coat" */;
+			return joaat("BREED_CRIOLLO_DUN");
 		case -1720251851:
-			return 3032834 /* GXTEntry: "Criollo - Bay Brindle Coat" */;
+			return joaat("BREED_CRIOLLO_BAYBRINDLE");
 		case 506887890:
-			return -1722101672 /* GXTEntry: "Criollo - Sorrel Overo Coat" */;
+			return joaat("BREED_CRIOLLO_SORRELOVERO");
 		case 766293155:
-			return -189605757 /* GXTEntry: "Criollo - Bay Frame Overo Coat" */;
+			return joaat("BREED_CRIOLLO_BAYFRAMEOVERO");
 		case 2147082926:
-			return 863391233 /* GXTEntry: "Criollo - Marble Sabino Coat" */;
+			return joaat("BREED_CRIOLLO_MARBLESABINO");
 		case -1616287563:
-			return 885568364 /* GXTEntry: "Kladruber - Black Coat" */;
+			return joaat("BREED_KLADRUBER_BLACK");
 		case -127412252:
-			return -1540355548 /* GXTEntry: "Kladruber - White Coat" */;
+			return joaat("BREED_KLADRUBER_WHITE");
 		case -1881155818:
-			return -601560591 /* GXTEntry: "Kladruber - Cremello Coat" */;
+			return joaat("BREED_KLADRUBER_CREMELLO");
 		case -955237712:
-			return -370362766 /* GXTEntry: "Kladruber - Grey Coat" */;
+			return joaat("BREED_KLADRUBER_GREY");
 		case -647020346:
-			return -1698261864 /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */;
+			return joaat("BREED_KLADRUBER_DAPPLEROSEGREY");
 		case -1846319726:
-			return -670301166 /* GXTEntry: "Kladruber - Silver Coat" */;
+			return joaat("BREED_KLADRUBER_SILVER");
 		case 1007570567:
-			return -302057902;
+			return joaat("BREED_NORFOLKROADSTER_BLACK");
 		case 1029339151:
-			return 1257620801;
+			return joaat("BREED_NORFOLKROADSTER_SPECKLEDGREY");
 		case -1424767799:
-			return 821735821;
+			return joaat("BREED_NORFOLKROADSTER_PIEBALDROAN");
 		case -217135948:
-			return -769035812;
+			return joaat("BREED_NORFOLKROADSTER_ROSEGREY");
 		case -156439156:
-			return -1824684932;
+			return joaat("BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN");
 		case 1344011125:
-			return 1589592948;
+			return joaat("BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR");
 		case joaat("a_c_donkey_01"):
-			return -1331210307 /* GXTEntry: "Donkey" */;
+			return joaat("BREED_DONKEY");
 		case joaat("a_c_horsemule_01"):
-			return 122449722 /* GXTEntry: "Mule" */;
+			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
-			return -1784502482 /* GXTEntry: "Mule - Painted" */;
+			return joaat("BREED_MULE_PAINTED");
 		case 1883159941:
-			return -1943445834;
-		case -1028075925:
-			return -635244104 /* GXTEntry: "Appaloosa - Black Snowflake" */;
-		case 84224102:
-			return -1427377767 /* GXTEntry: "Arabian - Grey Coat" */;
-		case 1496579364:
-			return -2055655009 /* GXTEntry: "Arabian - Red Chestnut Coat" */;
-		case -1896838685:
-			return -1293672675 /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */;
-		case -420599285:
-			return -1179079660 /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */;
-		case 478986344:
-			return 805526368 /* GXTEntry: "Mustang - Golden Dun Coat" */;
-		case 446670976:
-			return 1342496140 /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */;
+			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
+		case joaat("a_c_horse_appaloosa_blacksnowflake"):
+			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
+		case joaat("a_c_horse_arabian_grey"):
+			return joaat("BREED_ARABIAN_GREY");
+		case joaat("a_c_horse_arabian_redchestnut"):
+			return joaat("BREED_ARABIAN_REDCHESTNUT");
+		case joaat("a_c_horse_hungarianhalfbred_liverchestnut"):
+			return joaat("BREED_HUNGARIANHALFBRED_LIVERCHESTNUT");
+		case joaat("a_c_horse_missourifoxtrotter_sablechampagne"):
+			return joaat("BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE");
+		case joaat("a_c_horse_mustang_goldendun"):
+			return joaat("BREED_MUSTANG_GOLDENDUN");
+		case joaat("a_c_horse_tennesseewalker_mahoganybay"):
+			return joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY");
 		case joaat("a_c_horse_shire_ravenblack"):
-			return -126555855 /* GXTEntry: "Shire - Raven Black Coat" */;
-		case 549900435:
-			return 294243421 /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */;
-		case -2063289686:
-			return -997197050 /* GXTEntry: "Thoroughbred - Seal Brown Coat" */;
-		case 917402668:
-			return -235714362 /* GXTEntry: "Appaloosa - Blanket Coat" */;
-		case -914712122:
-			return -1678164 /* GXTEntry: "Nokota - Blue Roan Coat" */;
-		case -598917269:
-			return -977833913 /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */;
+			return joaat("BREED_SHIRE_RAVENBLACK");
+		case joaat("a_c_horse_buell_warvets"):
+			return joaat("BREED_BUELL_WARVETS");
+		case joaat("a_c_horse_john_endlesssummer"):
+			return joaat("BREED_JOHN_ENDLESSSUMMER");
+		case joaat("a_c_horse_murfreebrood_mange_01"):
+			return joaat("BREED_MURFREEBROOD_MANGE_01");
+		case joaat("a_c_horse_murfreebrood_mange_02"):
+			return joaat("BREED_MURFREEBROOD_MANGE_02");
+		case joaat("a_c_horse_murfreebrood_mange_03"):
+			return joaat("BREED_MURFREEBROOD_MANGE_03");
 		case joaat("a_c_horse_winter02_01"):
-			return 1589164943 /* GXTEntry: "Thoroughbred - Silver Bay Coat" */;
+			return joaat("BREED_WINTER02_01");
 		default:
 			break;
 	}
@@ -7182,27 +7182,27 @@ int func_309(char* sParam0)
 	return 0;
 }
 
-int func_310(bool bParam0)
+int func_310(int iParam0)
 {
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
-	return INVENTORY::_0xA4550FE9C512E3DD(bParam0);
+	return INVENTORY::_0xA4550FE9C512E3DD(iParam0);
 }
 
-int func_311(bool bParam0)
+int func_311(int iParam0)
 {
 	struct<19> Var0;
 	int iVar35;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
 		return 0;
 	}
 	Var0.f_2 = 5;
 	Var0.f_18 = 8;
-	if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_UI_DATA(bParam0, &Var0))
+	if (ITEMDATABASE::_ITEM_DATABASE_FILLOUT_UI_DATA(iParam0, &Var0))
 	{
 		iVar35 = 0;
 		while (iVar35 < 8)
@@ -7224,251 +7224,251 @@ char* func_312(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
+		case joaat("BREED_AMERICANPAINT_OVERO"):
 			return "COAT_OVERO";
-		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
+		case joaat("BREED_AMERICANPAINT_TOBIANO"):
 			return "COAT_TOB";
-		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
+		case joaat("BREED_AMERICANPAINT_SPLASHEDWHITE"):
 			return "COAT_SPLASHWHITE";
-		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
+		case joaat("BREED_AMERICANPAINT_GREYOVERO"):
 			return "COAT_GREYOVERO";
-		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_BLACK"):
 			return "COAT_BLACK";
-		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_BUCKSKIN"):
 			return "COAT_BUCKSKIN";
-		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE"):
 			return "COAT_PALDAP";
-		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN"):
 			return "COAT_SILVERTAILBUCKSKIN";
-		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
+		case joaat("BREED_ANDALUSIAN_DARKBAY"):
 			return "COAT_DARKBAY";
-		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
+		case joaat("BREED_ANDALUSIAN_PERLINO"):
 			return "COAT_PERLINO";
-		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
+		case joaat("BREED_ANDALUSIAN_ROSEGRAY"):
 			return "COAT_ROSEGREY";
-		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
+		case joaat("BREED_APPALOOSA_BLANKET"):
 			return "COAT_BLANKET";
-		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
+		case joaat("BREED_APPALOOSA_LEOPARDBLANKET"):
 			return "COAT_LEOPBLANKET";
-		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
+		case joaat("BREED_APPALOOSA_BROWNLEOPARD"):
 			return "COAT_BRLEOP";
-		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
+		case joaat("BREED_APPALOOSA_LEOPARD"):
 			return "COAT_LEOP";
-		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
+		case joaat("BREED_ARABIAN_BLACK"):
 			return "COAT_BLACK";
-		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
+		case joaat("BREED_ARABIAN_ROSEGREYBAY"):
 			return "COAT_ROSEGREYBAY";
-		case -80004868: /* GXTEntry: "Arabian - White Coat" */
+		case joaat("BREED_ARABIAN_WHITE"):
 			return "COAT_WHITE";
-		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
+		case joaat("BREED_ARDENNES_BAYROAN"):
 			return "COAT_BAYR";
-		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
+		case joaat("BREED_ARDENNES_STRAWBERRYROAN"):
 			return "COAT_STRAWR";
-		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
+		case joaat("BREED_ARDENNES_IRONGREYROAN"):
 			return "COAT_IRONGREYR";
-		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
+		case joaat("BREED_BELGIAN_BLONDCHESTNUT"):
 			return "COAT_BLONDCH";
-		case 2118089359:
+		case joaat("BREED_BELGIAN_MEALYCHESTNUT"):
 			return "COAT_MEALYCH";
-		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
+		case joaat("BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN"):
 			return "COAT_SOOTYBUCKSKIN";
-		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
+		case joaat("BREED_DUTCHWARMBLOOD_SEALBROWN"):
 			return "COAT_SEALBR";
-		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
+		case joaat("BREED_DUTCHWARMBLOOD_CHOCOLATEROAN"):
 			return "COAT_CHOCR";
-		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT"):
 			return "COAT_FLAXCH";
-		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO"):
 			return "COAT_PIETOB";
-		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY"):
 			return "COAT_DAPDARKGREY";
 		case -1955947684:
 			return "COAT_BLACK";
-		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
 			return "COAT_CHPIN";
-		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_GREY"):
 			return "COAT_GREY";
-		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_SILVERBAY"):
 			return "COAT_SILVERBAY";
-		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
+		case joaat("BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE"):
 			return "COAT_AMBCHA";
-		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
+		case joaat("BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO"):
 			return "COAT_SILVERDAPPINT";
-		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
+		case joaat("BREED_MORGAN_BAY"):
 			return "COAT_BAY";
-		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
+		case joaat("BREED_MORGAN_BAYROAN"):
 			return "COAT_BAYR";
-		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
+		case joaat("BREED_MORGAN_FLAXENCHESTNUT"):
 			return "COAT_FLAXCH";
-		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
+		case joaat("BREED_MORGAN_PALOMINO"):
 			return "COAT_PAL";
-		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
+		case joaat("BREED_MUSTANG_GRULLODUN"):
 			return "COAT_GRULDUN";
-		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
+		case joaat("BREED_MUSTANG_WILDBAY"):
 			return "COAT_WILDBAY";
-		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
+		case joaat("BREED_MUSTANG_TIGERSTRIPEDBAY"):
 			return "COAT_TIGSTRBAY";
-		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
+		case joaat("BREED_NOKOTA_BLUEROAN"):
 			return "COAT_BLUER";
-		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
+		case joaat("BREED_NOKOTA_WHITEROAN"):
 			return "COAT_WHITER";
-		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
+		case joaat("BREED_NOKOTA_REVERSEDAPPLEROAN"):
 			return "COAT_REVDAPR";
-		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
+		case joaat("BREED_SHIRE_DARKBAY"):
 			return "COAT_DARKBAY";
-		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
+		case joaat("BREED_SHIRE_LIGHTGREY"):
 			return "COAT_LGREY";
-		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
+		case joaat("BREED_SUFFOLKPUNCH_SORREL"):
 			return "COAT_SORREL";
-		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
+		case joaat("BREED_SUFFOLKPUNCH_REDCHESTNUT"):
 			return "COAT_REDCH";
-		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
+		case joaat("BREED_TENNESSEEWALKER_BLACKRABICANO"):
 			return "COAT_BLACKRAB";
-		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
+		case joaat("BREED_TENNESSEEWALKER_CHESTNUT"):
 			return "COAT_CH";
-		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
+		case joaat("BREED_TENNESSEEWALKER_DAPPLEBAY"):
 			return "COAT_DAPBAY";
-		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
+		case joaat("BREED_TENNESSEEWALKER_REDROAN"):
 			return "COAT_REDR";
-		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
+		case joaat("BREED_TENNESSEEWALKER_FLAXENROAN"):
 			return "COAT_FLAXR";
-		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
+		case joaat("BREED_THOROUGHBRED_BLOODBAY"):
 			return "COAT_BLBAY";
-		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
+		case joaat("BREED_THOROUGHBRED_DAPPLEGREY"):
 			return "COAT_DAPGREY";
-		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
+		case joaat("BREED_THOROUGHBRED_BRINDLE"):
 			return "COAT_BRINDLE";
-		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
+		case joaat("BREED_THOROUGHBRED_BLACKCHESTNUT"):
 			return "COAT_BLACKCH";
-		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
+		case joaat("BREED_THOROUGHBRED_REVERSEDAPPLEBLACK"):
 			return "COAT_REVDAPBLACK";
-		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
+		case joaat("BREED_TURKOMAN_DARKBAY"):
 			return "COAT_DARKBAY";
-		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
+		case joaat("BREED_TURKOMAN_GOLD"):
 			return "COAT_GOLD";
-		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
+		case joaat("BREED_TURKOMAN_SILVER"):
 			return "COAT_SILVER";
-		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
+		case joaat("BREED_BRETON_REDROAN"):
 			return "COAT_REDR";
-		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
+		case joaat("BREED_BRETON_SORREL"):
 			return "COAT_SORREL";
-		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
+		case joaat("BREED_BRETON_GRULLODUN"):
 			return "COAT_GRULDUN";
-		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
+		case joaat("BREED_BRETON_SEALBROWN"):
 			return "COAT_SEALBR";
-		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
+		case joaat("BREED_BRETON_MEALYDAPPLEBAY"):
 			return "COAT_MEALYDAPBAY";
-		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
+		case joaat("BREED_BRETON_STEELGREY"):
 			return "COAT_STEELGREY";
-		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
+		case joaat("BREED_CRIOLLO_BLUEROANOVERO"):
 			return "COAT_BLUEROANOVERO";
-		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
+		case joaat("BREED_CRIOLLO_DUN"):
 			return "COAT_DUN";
-		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
+		case joaat("BREED_CRIOLLO_BAYBRINDLE"):
 			return "COAT_BAYBRINDLE";
-		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
+		case joaat("BREED_CRIOLLO_SORRELOVERO"):
 			return "COAT_SORRELOVERO";
-		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
+		case joaat("BREED_CRIOLLO_BAYFRAMEOVERO"):
 			return "COAT_BAYFRAMEOVERO";
-		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
+		case joaat("BREED_CRIOLLO_MARBLESABINO"):
 			return "COAT_MARBLESABINO";
-		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
+		case joaat("BREED_KLADRUBER_BLACK"):
 			return "COAT_BLACK";
-		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
+		case joaat("BREED_KLADRUBER_WHITE"):
 			return "COAT_WHITE";
-		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
+		case joaat("BREED_KLADRUBER_CREMELLO"):
 			return "COAT_CREM";
-		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
+		case joaat("BREED_KLADRUBER_GREY"):
 			return "COAT_GREY";
-		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
+		case joaat("BREED_KLADRUBER_DAPPLEROSEGREY"):
 			return "COAT_DAPROSEGREY";
-		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
+		case joaat("BREED_KLADRUBER_SILVER"):
 			return "COAT_SILVER";
-		case -302057902:
+		case joaat("BREED_NORFOLKROADSTER_BLACK"):
 			return "COAT_BLACK";
-		case 1257620801:
+		case joaat("BREED_NORFOLKROADSTER_SPECKLEDGREY"):
 			return "COAT_SPECKLEDGREY";
-		case 821735821:
+		case joaat("BREED_NORFOLKROADSTER_PIEBALDROAN"):
 			return "COAT_PIEROAN";
-		case -769035812:
+		case joaat("BREED_NORFOLKROADSTER_ROSEGREY"):
 			return "COAT_ROSEGREY";
-		case -1824684932:
+		case joaat("BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN"):
 			return "COAT_DAPBUCKSKIN";
-		case 1589592948:
+		case joaat("BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR"):
 			return "COAT_SPOTTEDTRICOLOR";
-		case -1331210307: /* GXTEntry: "Donkey" */
+		case joaat("BREED_DONKEY"):
 			return "COAT_NONE";
-		case 122449722: /* GXTEntry: "Mule" */
+		case joaat("BREED_MULE"):
 			return "COAT_NONE";
-		case -1784502482: /* GXTEntry: "Mule - Painted" */
+		case joaat("BREED_MULE_PAINTED"):
 			return "COAT_NONE";
-		case -1943445834:
+		case joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN"):
 			return "COAT_LIGHTBUCKSKIN";
-		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
+		case joaat("BREED_APPALOOSA_BLACKSNOWFLAKE"):
 			return "COAT_BLACKSNO";
-		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
+		case joaat("BREED_ARABIAN_GREY"):
 			return "COAT_GREY";
-		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
+		case joaat("BREED_ARABIAN_REDCHESTNUT"):
 			return "COAT_REDCH";
-		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_LIVERCHESTNUT"):
 			return "COAT_LIVERCH";
-		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
+		case joaat("BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE"):
 			return "COAT_SABLECHAMP";
-		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
+		case joaat("BREED_MUSTANG_GOLDENDUN"):
 			return "COAT_GOLDENDUN";
-		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
+		case joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY"):
 			return "COAT_MAHBAY";
-		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
+		case joaat("BREED_SHIRE_RAVENBLACK"):
 			return "COAT_RAVBLACK";
-		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
+		case joaat("BREED_BUELL_WARVETS"):
 			return "COAT_CHEMGOLD";
-		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
+		case joaat("BREED_JOHN_ENDLESSSUMMER"):
 			return "COAT_SEALBR";
-		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
+		case joaat("BREED_MURFREEBROOD_MANGE_01"):
 			return "COAT_BLANKET";
-		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
+		case joaat("BREED_MURFREEBROOD_MANGE_02"):
 			return "COAT_BLUER";
-		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
+		case joaat("BREED_MURFREEBROOD_MANGE_03"):
 			return "COAT_BLACKRAB";
-		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
+		case joaat("BREED_WINTER02_01"):
 			return "COAT_SILVERBAY";
-		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
+		case joaat("BREED_EAGLEFLIES"):
 			return "COAT_SPLASHWHITE";
-		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
+		case joaat("BREED_GANG_BILL"):
 			return "COAT_BROWNR";
-		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
+		case joaat("BREED_GANG_CHARLES"):
 			return "COAT_GREYSNOWCAPSPOTTED";
-		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
+		case joaat("BREED_GANG_CHARLES_ENDLESSSUMMER"):
 			return "COAT_GREYROANSABINO";
-		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
+		case joaat("BREED_GANG_DUTCH"):
 			return "COAT_ALBINO";
-		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
+		case joaat("BREED_GANG_HOSEA"):
 			return "COAT_SILVER";
-		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
+		case joaat("BREED_GANG_JAVIER"):
 			return "COAT_GREYOVERO";
-		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
+		case joaat("BREED_GANG_JOHN"):
 			return "COAT_SILVERDARKBAY";
-		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
+		case joaat("BREED_GANG_KAREN"):
 			return "COAT_SMOKYBLACK";
-		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
+		case joaat("BREED_GANG_KIERAN"):
 			return "COAT_FLAXR";
-		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
+		case joaat("BREED_GANG_LENNY"):
 			return "COAT_LIGHTPALOMINO";
-		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
+		case joaat("BREED_GANG_MICAH"):
 			return "COAT_BLACK";
-		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
+		case joaat("BREED_GANG_SADIE"):
 			return "COAT_GOLDDAP";
-		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
+		case joaat("BREED_GANG_SADIE_ENDLESSSUMMER"):
 			return "COAT_DARKBAYROAN";
-		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
+		case joaat("BREED_GANG_SEAN"):
 			return "COAT_SILVERTAILBUCKSKIN";
-		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
+		case joaat("BREED_GANG_TRELAWNEY"):
 			return "COAT_BRLEOP";
-		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
+		case joaat("BREED_GANG_UNCLE"):
 			return "COAT_SABINO";
-		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
+		case joaat("BREED_GANG_UNCLE_ENDLESSSUMMER"):
 			return "COAT_FEWSPOTBUCKSKIN";
-		case -364764277: /* GXTEntry: "Scrawny Nag" */
+		case joaat("BREED_MANGY_BACKUP"):
 			return "COAT_MANGY";
 		default:
 			break;
@@ -7476,44 +7476,44 @@ char* func_312(int iParam0)
 	return "";
 }
 
-bool func_313(bool bParam0)
+int func_313(int iParam0)
 {
 	int iVar0;
 
-	if (!func_196(bParam0, 0))
+	if (!func_196(iParam0, 0))
 	{
-		return false;
+		return 0;
 	}
-	iVar0 = func_330(bParam0);
+	iVar0 = func_330(iParam0);
 	if (iVar0 != 0)
 	{
 		return iVar0;
 	}
-	return bParam0;
+	return iParam0;
 }
 
-bool func_314(bool bParam0)
+int func_314(int iParam0)
 {
-	return bParam0;
+	return iParam0;
 }
 
-int func_315(bool bParam0, int iParam1)
+int func_315(int iParam0, int iParam1)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return 0;
 	}
-	return ITEMDATABASE::_0x4308812A6E9CA62E(bParam0, iParam1);
+	return ITEMDATABASE::_0x4308812A6E9CA62E(iParam0, iParam1);
 }
 
 int func_316()
 {
-	return Global_1951131->f_1;
+	return Global_1951141->f_1;
 }
 
-int func_317(bool bParam0, int iParam1)
+int func_317(int iParam0, int iParam1)
 {
-	if (!func_315(bParam0, 2))
+	if (!func_315(iParam0, 2))
 	{
 		return 0;
 	}
@@ -7521,20 +7521,20 @@ int func_317(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (ITEMDATABASE::_0x99C6EA66DFE73757(bParam0, iParam1, 1120943070))
+	if (ITEMDATABASE::_0x99C6EA66DFE73757(iParam0, iParam1, 1120943070))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_318(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
+int func_318(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 {
-	if (func_331(bParam0) && !bParam2)
+	if (func_331(iParam0) && !bParam2)
 	{
-		return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, bParam0);
+		return WEAPON::GET_PED_AMMO_BY_TYPE(Global_34, iParam0);
 	}
-	return INVENTORY::_0xE787F05DFC977BDE(func_256(bParam1), bParam0, bParam3);
+	return INVENTORY::_0xE787F05DFC977BDE(func_256(bParam1), iParam0, bParam3);
 }
 
 int func_319(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, int iParam6)
@@ -7542,96 +7542,96 @@ int func_319(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, b
 	return func_332(&uParam0, bParam4, bParam5, iParam6);
 }
 
-void func_320(bool bParam0, var uParam1, var uParam2)
+void func_320(int iParam0, var uParam1, var uParam2)
 {
 	*uParam1 = 0;
 	*uParam2 = 0;
-	switch (bParam0)
+	switch (iParam0)
 	{
 		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
-			*uParam1 = 1802325493;
-			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
+			*uParam1 = joaat("revolver_ammo_box");
+			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
 		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
-			*uParam1 = -864693164;
-			*uParam2 = 1681219929; /* GXTEntry: "Revolver Cartridges - Regular" */
+			*uParam1 = joaat("revolver_ammo_box_used");
+			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
 		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
-			*uParam1 = -603289736;
-			*uParam2 = 1232099469; /* GXTEntry: "Revolver Cartridges - Express" */
+			*uParam1 = joaat("revolver_ammo_box_express");
+			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
 		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
-			*uParam1 = -1803237008;
-			*uParam2 = -2084181920; /* GXTEntry: "Revolver Cartridges - High Velocity" */
+			*uParam1 = joaat("revolver_ammo_box_high_velocity");
+			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
 		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
-			*uParam1 = -1175521284;
+			*uParam1 = joaat("pistol_ammo_box");
 			*uParam2 = joaat("ammo_pistol");
 			break;
 		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
-			*uParam1 = -1559549888;
+			*uParam1 = joaat("pistol_ammo_box_used");
 			*uParam2 = joaat("ammo_pistol");
 			break;
 		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
-			*uParam1 = -1650796693;
-			*uParam2 = 836939099; /* GXTEntry: "Pistol Cartridges - Express" */
+			*uParam1 = joaat("pistol_ammo_box_express");
+			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
 		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
-			*uParam1 = -1521597660;
-			*uParam2 = -1411815376; /* GXTEntry: "Pistol Cartridges - High Velocity" */
+			*uParam1 = joaat("pistol_ammo_box_high_velocity");
+			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
 		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
-			*uParam1 = -1288829256;
+			*uParam1 = joaat("rifle_ammo_box");
 			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
-			*uParam1 = 1393841762;
+			*uParam1 = joaat("rifle_ammo_box_used");
 			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
-			*uParam1 = -851229814;
-			*uParam2 = 1654725195; /* GXTEntry: "Rifle Cartridges - Express" */
+			*uParam1 = joaat("rifle_ammo_box_express");
+			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
 		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
-			*uParam1 = 914704115;
-			*uParam2 = 1858824185; /* GXTEntry: "Rifle Cartridges - High Velocity" */
+			*uParam1 = joaat("rifle_ammo_box_high_velocity");
+			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
 		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
-			*uParam1 = -219896679;
-			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
+			*uParam1 = joaat("repeater_ammo_box");
+			*uParam2 = joaat("AMMO_REPEATER");
 			break;
 		case 2120467495:
-			*uParam1 = 516838334;
-			*uParam2 = -1330115686; /* GXTEntry: "Repeater Cartridges - Regular" */
+			*uParam1 = joaat("repeater_ammo_box_used");
+			*uParam2 = joaat("AMMO_REPEATER");
 			break;
 		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
-			*uParam1 = -385817936;
-			*uParam2 = -578347576; /* GXTEntry: "Repeater Cartridges - Express" */
+			*uParam1 = joaat("repeater_ammo_box_express");
+			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
 		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
-			*uParam1 = 1192843172;
-			*uParam2 = 231465488; /* GXTEntry: "Repeater Cartridges - High Velocity" */
+			*uParam1 = joaat("repeater_ammo_box_high_velocity");
+			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
 		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
-			*uParam1 = 954871696;
+			*uParam1 = joaat("shotgun_ammo_box");
 			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
-			*uParam1 = -1217273132;
+			*uParam1 = joaat("shotgun_ammo_box_used");
 			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case 305770744: /* GXTEntry: "Shotgun - Slug" */
-			*uParam1 = -2087227528;
-			*uParam2 = 314966081; /* GXTEntry: "Shotgun - Slug" */
+			*uParam1 = joaat("shotgun_ammo_box_slug");
+			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
 		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
-			*uParam1 = -618066518;
-			*uParam2 = 2113196069;
+			*uParam1 = joaat("22_ammo_box");
+			*uParam2 = joaat("AMMO_22");
 			break;
 	}
 }
 
-struct<14> func_321(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
+struct<14> func_321(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
 {
 	struct<14> Var0;
 
@@ -7645,9 +7645,9 @@ struct<14> func_321(bool bParam0, int iParam1, int iParam2, int iParam3, int iPa
 	Var0.f_7 = -1;
 	Var0.f_8 = -1;
 	Var0.f_13 = -1;
-	if (bParam0 != 0)
+	if (iParam0 != 0)
 	{
-		Var0 = bParam0;
+		Var0 = iParam0;
 	}
 	if (iParam1 != 0 && iParam1 != -1591664384)
 	{
@@ -7684,9 +7684,9 @@ void func_322(var uParam0, struct<4> Param1)
 	}
 }
 
-int func_323(var uParam0, int iParam1, bool bParam2, bool bParam3)
+int func_323(var uParam0, int iParam1, int iParam2, bool bParam3)
 {
-	*iParam1 = INVENTORY::_0x640F890C3E5A3FFD(func_256(bParam3), uParam0, bParam2);
+	*iParam1 = INVENTORY::_0x640F890C3E5A3FFD(func_256(bParam3), uParam0, iParam2);
 	if (*iParam1 >= 0)
 	{
 		return 1;
@@ -7714,12 +7714,12 @@ int func_325(int* iParam0)
 
 void func_326(char* sParam0)
 {
-	Global_1915170->f_21955 = func_333(sParam0, 10000, 0, 0, 0, 1);
+	Global_1915180->f_21955 = func_333(sParam0, 10000, 0, 0, 0, 1);
 }
 
 int func_327(int* iParam0, int iParam1)
 {
-	if (!NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(iParam0, 712853601, iParam1))
+	if (!NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(iParam0, joaat("basket"), iParam1))
 	{
 		return 0;
 	}
@@ -7730,251 +7730,251 @@ char* func_328(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -974145463: /* GXTEntry: "American Paint - Overo Coat" */
+		case joaat("BREED_AMERICANPAINT_OVERO"):
 			return "BREED_AMERICANPAINT_OVERO";
-		case 1432602132: /* GXTEntry: "American Paint - Tobiano Coat" */
+		case joaat("BREED_AMERICANPAINT_TOBIANO"):
 			return "BREED_AMERICANPAINT_TOBIANO";
-		case 92296905: /* GXTEntry: "American Paint - Splashed White Coat" */
+		case joaat("BREED_AMERICANPAINT_SPLASHEDWHITE"):
 			return "BREED_AMERICANPAINT_SPLASHEDWHITE";
-		case -842044823: /* GXTEntry: "American Paint - Grey Overo Coat" */
+		case joaat("BREED_AMERICANPAINT_GREYOVERO"):
 			return "BREED_AMERICANPAINT_GREYOVERO";
-		case 1371398552: /* GXTEntry: "American Standardbred - Black Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_BLACK"):
 			return "BREED_AMERICANSTANDARDBRED_BLACK";
-		case -745453539: /* GXTEntry: "American Standardbred - Buckskin Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_BUCKSKIN"):
 			return "BREED_AMERICANSTANDARDBRED_BUCKSKIN";
-		case 1583029039: /* GXTEntry: "American Standardbred - Palomino Dapple Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE"):
 			return "BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE";
-		case -783061276: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
+		case joaat("BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN"):
 			return "BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN";
-		case -1322521536: /* GXTEntry: "Andalusian - Dark Bay Coat" */
+		case joaat("BREED_ANDALUSIAN_DARKBAY"):
 			return "BREED_ANDALUSIAN_DARKBAY";
-		case 1100711204: /* GXTEntry: "Andalusian - Perlino Coat" */
+		case joaat("BREED_ANDALUSIAN_PERLINO"):
 			return "BREED_ANDALUSIAN_PERLINO";
-		case 728055838: /* GXTEntry: "Andalusian - Rose Grey Coat" */
+		case joaat("BREED_ANDALUSIAN_ROSEGRAY"):
 			return "BREED_ANDALUSIAN_ROSEGRAY";
-		case -1782334639: /* GXTEntry: "Appaloosa - Blanket Coat" */
+		case joaat("BREED_APPALOOSA_BLANKET"):
 			return "BREED_APPALOOSA_BLANKET";
-		case -1181052732: /* GXTEntry: "Appaloosa - Leopard Blanket Coat" */
+		case joaat("BREED_APPALOOSA_LEOPARDBLANKET"):
 			return "BREED_APPALOOSA_LEOPARDBLANKET";
-		case -179102320: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
+		case joaat("BREED_APPALOOSA_BROWNLEOPARD"):
 			return "BREED_APPALOOSA_BROWNLEOPARD";
-		case -1266863668: /* GXTEntry: "Appaloosa - Leopard Coat" */
+		case joaat("BREED_APPALOOSA_LEOPARD"):
 			return "BREED_APPALOOSA_LEOPARD";
-		case -2078767648: /* GXTEntry: "Arabian - Black Coat" */
+		case joaat("BREED_ARABIAN_BLACK"):
 			return "BREED_ARABIAN_BLACK";
-		case -852553462: /* GXTEntry: "Arabian - Rose Grey Bay Coat" */
+		case joaat("BREED_ARABIAN_ROSEGREYBAY"):
 			return "BREED_ARABIAN_ROSEGREYBAY";
-		case -80004868: /* GXTEntry: "Arabian - White Coat" */
+		case joaat("BREED_ARABIAN_WHITE"):
 			return "BREED_ARABIAN_WHITE";
-		case 1813208211: /* GXTEntry: "Ardennes - Bay Roan Coat" */
+		case joaat("BREED_ARDENNES_BAYROAN"):
 			return "BREED_ARDENNES_BAYROAN";
-		case 836323303: /* GXTEntry: "Ardennes - Strawberry Roan Coat" */
+		case joaat("BREED_ARDENNES_STRAWBERRYROAN"):
 			return "BREED_ARDENNES_STRAWBERRYROAN";
-		case 153881023: /* GXTEntry: "Ardennes - Iron Grey Roan Coat" */
+		case joaat("BREED_ARDENNES_IRONGREYROAN"):
 			return "BREED_ARDENNES_IRONGREYROAN";
-		case -1256798240: /* GXTEntry: "Belgian Draft - Blond Chestnut Coat" */
+		case joaat("BREED_BELGIAN_BLONDCHESTNUT"):
 			return "BREED_BELGIAN_BLONDCHESTNUT";
-		case 2118089359:
+		case joaat("BREED_BELGIAN_MEALYCHESTNUT"):
 			return "BREED_BELGIAN_MEALYCHESTNUT";
-		case -1537586382: /* GXTEntry: "Dutch Warmblood - Sooty Buckskin Coat" */
+		case joaat("BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN"):
 			return "BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN";
-		case 1440692746: /* GXTEntry: "Dutch Warmblood - Seal Brown Coat" */
+		case joaat("BREED_DUTCHWARMBLOOD_SEALBROWN"):
 			return "BREED_DUTCHWARMBLOOD_SEALBROWN";
-		case 697143532: /* GXTEntry: "Dutch Warmblood - Chocolate Roan Coat" */
+		case joaat("BREED_DUTCHWARMBLOOD_CHOCOLATEROAN"):
 			return "BREED_DUTCHWARMBLOOD_CHOCOLATEROAN";
-		case 281128160: /* GXTEntry: "Hungarian Halfbred - Flaxen Chestnut Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT"):
 			return "BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT";
-		case 1854519167: /* GXTEntry: "Hungarian Halfbred - Piebald Tobiano Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO"):
 			return "BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO";
-		case -1376299681: /* GXTEntry: "Hungarian Halfbred - Dark Dapple Grey Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY"):
 			return "BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY";
 		case -1955947684:
 			return "BREED_KENTUCKYSADDLE_BLACK1";
-		case 1361788230: /* GXTEntry: "Kentucky Saddler - Chestnut Pinto Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
 			return "BREED_KENTUCKYSADDLE_CHESTNUTPINTO";
-		case 1974379573: /* GXTEntry: "Kentucky Saddler - Grey Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_GREY"):
 			return "BREED_KENTUCKYSADDLE_GREY";
-		case 545109431: /* GXTEntry: "Kentucky Saddler - Silver Bay Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_SILVERBAY"):
 			return "BREED_KENTUCKYSADDLE_SILVERBAY";
-		case 1275638003: /* GXTEntry: "Missouri Fox Trotter - Amber Champagne Coat" */
+		case joaat("BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE"):
 			return "BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE";
-		case 2083573823: /* GXTEntry: "Missouri Fox Trotter - Silver Dapple Pinto Coat" */
+		case joaat("BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO"):
 			return "BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO";
-		case 1235275977: /* GXTEntry: "Morgan - Bay Coat" */
+		case joaat("BREED_MORGAN_BAY"):
 			return "BREED_MORGAN_BAY";
-		case 892601357: /* GXTEntry: "Morgan - Bay Roan Coat" */
+		case joaat("BREED_MORGAN_BAYROAN"):
 			return "BREED_MORGAN_BAYROAN";
-		case 1224695367: /* GXTEntry: "Morgan - Flaxen Chestnut Coat" */
+		case joaat("BREED_MORGAN_FLAXENCHESTNUT"):
 			return "BREED_MORGAN_FLAXENCHESTNUT";
-		case 648301150: /* GXTEntry: "Morgan - Palomino Coat" */
+		case joaat("BREED_MORGAN_PALOMINO"):
 			return "BREED_MORGAN_PALOMINO";
-		case -1597490733: /* GXTEntry: "Mustang - Grullo Dun Coat" */
+		case joaat("BREED_MUSTANG_GRULLODUN"):
 			return "BREED_MUSTANG_GRULLODUN";
-		case 2000205872: /* GXTEntry: "Mustang - Wild Bay Coat" */
+		case joaat("BREED_MUSTANG_WILDBAY"):
 			return "BREED_MUSTANG_WILDBAY";
-		case -1428527735: /* GXTEntry: "Mustang - Tiger Striped Bay Coat" */
+		case joaat("BREED_MUSTANG_TIGERSTRIPEDBAY"):
 			return "BREED_MUSTANG_TIGERSTRIPEDBAY";
-		case 170010697: /* GXTEntry: "Nokota - Blue Roan Coat" */
+		case joaat("BREED_NOKOTA_BLUEROAN"):
 			return "BREED_NOKOTA_BLUEROAN";
-		case -742726637: /* GXTEntry: "Nokota - White Roan Coat" */
+		case joaat("BREED_NOKOTA_WHITEROAN"):
 			return "BREED_NOKOTA_WHITEROAN";
-		case -1714171692: /* GXTEntry: "Nokota - Reverse Dapple Roan Coat" */
+		case joaat("BREED_NOKOTA_REVERSEDAPPLEROAN"):
 			return "BREED_NOKOTA_REVERSEDAPPLEROAN";
-		case -103101636: /* GXTEntry: "Shire - Dark Bay Coat" */
+		case joaat("BREED_SHIRE_DARKBAY"):
 			return "BREED_SHIRE_DARKBAY";
-		case -1999094324: /* GXTEntry: "Shire - Light Grey Coat" */
+		case joaat("BREED_SHIRE_LIGHTGREY"):
 			return "BREED_SHIRE_LIGHTGREY";
-		case 1724200240: /* GXTEntry: "Suffolk Punch - Sorrel Coat" */
+		case joaat("BREED_SUFFOLKPUNCH_SORREL"):
 			return "BREED_SUFFOLKPUNCH_SORREL";
-		case 237935328: /* GXTEntry: "Suffolk Punch - Red Chestnut Coat" */
+		case joaat("BREED_SUFFOLKPUNCH_REDCHESTNUT"):
 			return "BREED_SUFFOLKPUNCH_REDCHESTNUT";
-		case 120848852: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
+		case joaat("BREED_TENNESSEEWALKER_BLACKRABICANO"):
 			return "BREED_TENNESSEEWALKER_BLACKRABICANO";
-		case -868094182: /* GXTEntry: "Tennessee Walker - Chestnut Coat" */
+		case joaat("BREED_TENNESSEEWALKER_CHESTNUT"):
 			return "BREED_TENNESSEEWALKER_CHESTNUT";
-		case -887362763: /* GXTEntry: "Tennessee Walker - Dapple Bay Coat" */
+		case joaat("BREED_TENNESSEEWALKER_DAPPLEBAY"):
 			return "BREED_TENNESSEEWALKER_DAPPLEBAY";
-		case -847714194: /* GXTEntry: "Tennessee Walker - Red Roan Coat" */
+		case joaat("BREED_TENNESSEEWALKER_REDROAN"):
 			return "BREED_TENNESSEEWALKER_REDROAN";
-		case 1756765331: /* GXTEntry: "Tennessee Walker - Flaxen Roan Coat" */
+		case joaat("BREED_TENNESSEEWALKER_FLAXENROAN"):
 			return "BREED_TENNESSEEWALKER_FLAXENROAN";
-		case -813071670: /* GXTEntry: "Thoroughbred - Blood Bay Coat" */
+		case joaat("BREED_THOROUGHBRED_BLOODBAY"):
 			return "BREED_THOROUGHBRED_BLOODBAY";
-		case -1900569233: /* GXTEntry: "Thoroughbred - Dapple Grey Coat" */
+		case joaat("BREED_THOROUGHBRED_DAPPLEGREY"):
 			return "BREED_THOROUGHBRED_DAPPLEGREY";
-		case 1688250187: /* GXTEntry: "Thoroughbred - Brindle Coat" */
+		case joaat("BREED_THOROUGHBRED_BRINDLE"):
 			return "BREED_THOROUGHBRED_BRINDLE";
-		case -1262715164: /* GXTEntry: "Thoroughbred - Black Chestnut Coat" */
+		case joaat("BREED_THOROUGHBRED_BLACKCHESTNUT"):
 			return "BREED_THOROUGHBRED_BLACKCHESTNUT";
-		case 2010625508: /* GXTEntry: "Thoroughbred - Reverse Dapple Black Coat" */
+		case joaat("BREED_THOROUGHBRED_REVERSEDAPPLEBLACK"):
 			return "BREED_THOROUGHBRED_REVERSEDAPPLEBLACK";
-		case -136225010: /* GXTEntry: "Turkoman - Dark Bay Coat" */
+		case joaat("BREED_TURKOMAN_DARKBAY"):
 			return "BREED_TURKOMAN_DARKBAY";
-		case -225011104: /* GXTEntry: "Turkoman - Gold Coat" */
+		case joaat("BREED_TURKOMAN_GOLD"):
 			return "BREED_TURKOMAN_GOLD";
-		case -1882436593: /* GXTEntry: "Turkoman - Silver Coat" */
+		case joaat("BREED_TURKOMAN_SILVER"):
 			return "BREED_TURKOMAN_SILVER";
-		case -757978903: /* GXTEntry: "Breton - Red Roan Coat" */
+		case joaat("BREED_BRETON_REDROAN"):
 			return "BREED_BRETON_REDROAN";
-		case 1909854428: /* GXTEntry: "Breton - Sorrel Coat" */
+		case joaat("BREED_BRETON_SORREL"):
 			return "BREED_BRETON_SORREL";
-		case 1592694494: /* GXTEntry: "Breton - Grullo Dun Coat" */
+		case joaat("BREED_BRETON_GRULLODUN"):
 			return "BREED_BRETON_GRULLODUN";
-		case 981469777: /* GXTEntry: "Breton - Seal Brown Coat" */
+		case joaat("BREED_BRETON_SEALBROWN"):
 			return "BREED_BRETON_SEALBROWN";
-		case 1064693514: /* GXTEntry: "Breton - Mealy Dapple Bay Coat" */
+		case joaat("BREED_BRETON_MEALYDAPPLEBAY"):
 			return "BREED_BRETON_MEALYDAPPLEBAY";
-		case -1365665739: /* GXTEntry: "Breton - Steel Grey Coat" */
+		case joaat("BREED_BRETON_STEELGREY"):
 			return "BREED_BRETON_STEELGREY";
-		case 1577022605: /* GXTEntry: "Criollo - Blue Roan Overo Coat" */
+		case joaat("BREED_CRIOLLO_BLUEROANOVERO"):
 			return "BREED_CRIOLLO_BLUEROANOVERO";
-		case 381495209: /* GXTEntry: "Criollo - Dun Coat" */
+		case joaat("BREED_CRIOLLO_DUN"):
 			return "BREED_CRIOLLO_DUN";
-		case 3032834: /* GXTEntry: "Criollo - Bay Brindle Coat" */
+		case joaat("BREED_CRIOLLO_BAYBRINDLE"):
 			return "BREED_CRIOLLO_BAYBRINDLE";
-		case -1722101672: /* GXTEntry: "Criollo - Sorrel Overo Coat" */
+		case joaat("BREED_CRIOLLO_SORRELOVERO"):
 			return "BREED_CRIOLLO_SORRELOVERO";
-		case -189605757: /* GXTEntry: "Criollo - Bay Frame Overo Coat" */
+		case joaat("BREED_CRIOLLO_BAYFRAMEOVERO"):
 			return "BREED_CRIOLLO_BAYFRAMEOVERO";
-		case 863391233: /* GXTEntry: "Criollo - Marble Sabino Coat" */
+		case joaat("BREED_CRIOLLO_MARBLESABINO"):
 			return "BREED_CRIOLLO_MARBLESABINO";
-		case 885568364: /* GXTEntry: "Kladruber - Black Coat" */
+		case joaat("BREED_KLADRUBER_BLACK"):
 			return "BREED_KLADRUBER_BLACK";
-		case -1540355548: /* GXTEntry: "Kladruber - White Coat" */
+		case joaat("BREED_KLADRUBER_WHITE"):
 			return "BREED_KLADRUBER_WHITE";
-		case -601560591: /* GXTEntry: "Kladruber - Cremello Coat" */
+		case joaat("BREED_KLADRUBER_CREMELLO"):
 			return "BREED_KLADRUBER_CREMELLO";
-		case -370362766: /* GXTEntry: "Kladruber - Grey Coat" */
+		case joaat("BREED_KLADRUBER_GREY"):
 			return "BREED_KLADRUBER_GREY";
-		case -1698261864: /* GXTEntry: "Kladruber - Dapple Rose Grey Coat" */
+		case joaat("BREED_KLADRUBER_DAPPLEROSEGREY"):
 			return "BREED_KLADRUBER_DAPPLEROSEGREY";
-		case -670301166: /* GXTEntry: "Kladruber - Silver Coat" */
+		case joaat("BREED_KLADRUBER_SILVER"):
 			return "BREED_KLADRUBER_SILVER";
-		case -302057902:
+		case joaat("BREED_NORFOLKROADSTER_BLACK"):
 			return "BREED_NORFOLKROADSTER_BLACK";
-		case 1257620801:
+		case joaat("BREED_NORFOLKROADSTER_SPECKLEDGREY"):
 			return "BREED_NORFOLKROADSTER_SPECKLEDGREY";
-		case 821735821:
+		case joaat("BREED_NORFOLKROADSTER_PIEBALDROAN"):
 			return "BREED_NORFOLKROADSTER_PIEBALDROAN";
-		case -769035812:
+		case joaat("BREED_NORFOLKROADSTER_ROSEGREY"):
 			return "BREED_NORFOLKROADSTER_ROSEGREY";
-		case -1824684932:
+		case joaat("BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN"):
 			return "BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN";
-		case 1589592948:
+		case joaat("BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR"):
 			return "BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR";
-		case -1331210307: /* GXTEntry: "Donkey" */
+		case joaat("BREED_DONKEY"):
 			return "BREED_DONKEY";
-		case 122449722: /* GXTEntry: "Mule" */
+		case joaat("BREED_MULE"):
 			return "BREED_MULE";
-		case -1784502482: /* GXTEntry: "Mule - Painted" */
+		case joaat("BREED_MULE_PAINTED"):
 			return "BREED_MULE_PAINTED";
-		case -1943445834:
+		case joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN"):
 			return "BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN";
-		case -635244104: /* GXTEntry: "Appaloosa - Black Snowflake" */
+		case joaat("BREED_APPALOOSA_BLACKSNOWFLAKE"):
 			return "BREED_APPALOOSA_BLACKSNOWFLAKE";
-		case -1427377767: /* GXTEntry: "Arabian - Grey Coat" */
+		case joaat("BREED_ARABIAN_GREY"):
 			return "BREED_ARABIAN_GREY";
-		case -2055655009: /* GXTEntry: "Arabian - Red Chestnut Coat" */
+		case joaat("BREED_ARABIAN_REDCHESTNUT"):
 			return "BREED_ARABIAN_REDCHESTNUT";
-		case -1293672675: /* GXTEntry: "Hungarian Halfbred - Liver Chestnut Coat" */
+		case joaat("BREED_HUNGARIANHALFBRED_LIVERCHESTNUT"):
 			return "BREED_HUNGARIANHALFBRED_LIVERCHESTNUT";
-		case -1179079660: /* GXTEntry: "Missouri Fox Trotter - Sable Champagne Coat" */
+		case joaat("BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE"):
 			return "BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE";
-		case 805526368: /* GXTEntry: "Mustang - Golden Dun Coat" */
+		case joaat("BREED_MUSTANG_GOLDENDUN"):
 			return "BREED_MUSTANG_GOLDENDUN";
-		case 1342496140: /* GXTEntry: "Tennessee Walker - Mahogany Bay Coat" */
+		case joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY"):
 			return "BREED_TENNESSEEWALKER_MAHOGANYBAY";
-		case -126555855: /* GXTEntry: "Shire - Raven Black Coat" */
+		case joaat("BREED_SHIRE_RAVENBLACK"):
 			return "BREED_SHIRE_RAVENBLACK";
-		case 294243421: /* GXTEntry: "Dutch Warmblood - Cremello Gold Coat" */
+		case joaat("BREED_BUELL_WARVETS"):
 			return "BREED_BUELL_WARVETS";
-		case -997197050: /* GXTEntry: "Thoroughbred - Seal Brown Coat" */
+		case joaat("BREED_JOHN_ENDLESSSUMMER"):
 			return "BREED_JOHN_ENDLESSSUMMER";
-		case -235714362: /* GXTEntry: "Appaloosa - Blanket Coat" */
+		case joaat("BREED_MURFREEBROOD_MANGE_01"):
 			return "BREED_MURFREEBROOD_MANGE_01";
-		case -1678164: /* GXTEntry: "Nokota - Blue Roan Coat" */
+		case joaat("BREED_MURFREEBROOD_MANGE_02"):
 			return "BREED_MURFREEBROOD_MANGE_02";
-		case -977833913: /* GXTEntry: "Tennessee Walker - Black Rabicano Coat" */
+		case joaat("BREED_MURFREEBROOD_MANGE_03"):
 			return "BREED_MURFREEBROOD_MANGE_03";
-		case 1589164943: /* GXTEntry: "Thoroughbred - Silver Bay Coat" */
+		case joaat("BREED_WINTER02_01"):
 			return "BREED_WINTER02_01";
-		case -1087523615: /* GXTEntry: "American Paint - Splashed White Coat" */
+		case joaat("BREED_EAGLEFLIES"):
 			return "BREED_EAGLEFLIES";
-		case -496814209: /* GXTEntry: "Ardennes - Chestnut Coat" */
+		case joaat("BREED_GANG_BILL"):
 			return "BREED_GANG_BILL";
-		case 2109055751: /* GXTEntry: "Appaloosa - Grey Snowcap Spotted Coat" */
+		case joaat("BREED_GANG_CHARLES"):
 			return "BREED_GANG_CHARLES";
-		case -776673611: /* GXTEntry: "Nokota - Grey Roan Sabino Coat" */
+		case joaat("BREED_GANG_CHARLES_ENDLESSSUMMER"):
 			return "BREED_GANG_CHARLES_ENDLESSSUMMER";
-		case 1764402253: /* GXTEntry: "Arabian - White Albino Coat" */
+		case joaat("BREED_GANG_DUTCH"):
 			return "BREED_GANG_DUTCH";
-		case -1417310078: /* GXTEntry: "Turkoman - Silver Coat" */
+		case joaat("BREED_GANG_HOSEA"):
 			return "BREED_GANG_HOSEA";
-		case 1096273915: /* GXTEntry: "American Paint - Grey Overo Coat" */
+		case joaat("BREED_GANG_JAVIER"):
 			return "BREED_GANG_JAVIER";
-		case 772751081: /* GXTEntry: "Hungarian Halfbred - Silver Dark Bay Coat" */
+		case joaat("BREED_GANG_JOHN"):
 			return "BREED_GANG_JOHN";
-		case -1140435723: /* GXTEntry: "Nokota - Smoky Black Coat" */
+		case joaat("BREED_GANG_KAREN"):
 			return "BREED_GANG_KAREN";
-		case 2002524329: /* GXTEntry: "Tennessee Walker - Flaxen Roan" */
+		case joaat("BREED_GANG_KIERAN"):
 			return "BREED_GANG_KIERAN";
-		case 1151530184: /* GXTEntry: "Mustang - Light Palomino Coat" */
+		case joaat("BREED_GANG_LENNY"):
 			return "BREED_GANG_LENNY";
-		case -1266525037: /* GXTEntry: "Missouri Fox Trotter - Black Coat" */
+		case joaat("BREED_GANG_MICAH"):
 			return "BREED_GANG_MICAH";
-		case -2018137175: /* GXTEntry: "Turkoman - Gold Dapple Coat" */
+		case joaat("BREED_GANG_SADIE"):
 			return "BREED_GANG_SADIE";
-		case -574151692: /* GXTEntry: "Mustang - Dark Bay Roan Coat" */
+		case joaat("BREED_GANG_SADIE_ENDLESSSUMMER"):
 			return "BREED_GANG_SADIE_ENDLESSSUMMER";
-		case 649786380: /* GXTEntry: "American Standardbred - Silver Tail Buckskin Coat" */
+		case joaat("BREED_GANG_SEAN"):
 			return "BREED_GANG_SEAN";
-		case -1921328920: /* GXTEntry: "Appaloosa - Brown Leopard Coat" */
+		case joaat("BREED_GANG_TRELAWNEY"):
 			return "BREED_GANG_TRELAWNEY";
-		case -837607790: /* GXTEntry: "Kentucky Saddler - Sabino Coat" */
+		case joaat("BREED_GANG_UNCLE"):
 			return "BREED_GANG_UNCLE";
-		case 370424594: /* GXTEntry: "Appaloosa - Few Spot Buckskin Coat" */
+		case joaat("BREED_GANG_UNCLE_ENDLESSSUMMER"):
 			return "BREED_GANG_UNCLE_ENDLESSSUMMER";
-		case -364764277: /* GXTEntry: "Scrawny Nag" */
+		case joaat("BREED_MANGY_BACKUP"):
 			return "BREED_MANGY_BACKUP";
 		default:
 			break;
@@ -7987,29 +7987,29 @@ var func_329(char[4] cParam0)
 	return cParam0;
 }
 
-int func_330(bool bParam0)
+int func_330(int iParam0)
 {
-	switch (bParam0)
+	switch (iParam0)
 	{
-		case -59585102: /* GXTEntry: "Tonics Satchel" */
+		case joaat("KIT_POUCH_REMEDIES"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_REMEDIES_MP");
-		case 1018123892: /* GXTEntry: "Ingredients Satchel" */
+		case joaat("KIT_POUCH_INGREDIENTS"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_INGREDIENTS_MP");
-		case 982182330: /* GXTEntry: "Materials Satchel" */
+		case joaat("KIT_POUCH_MATERIALS"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_MATERIALS_MP");
-		case -1406390556: /* GXTEntry: "Valuables Satchel" */
+		case joaat("KIT_POUCH_VALUABLES"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_VALUABLES_MP");
-		case -1455768246: /* GXTEntry: "Kit Satchel" */
+		case joaat("KIT_POUCH_KIT"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_KIT_MP");
-		case -921879912: /* GXTEntry: "Provisions Satchel" */
+		case joaat("KIT_POUCH_PROVISIONS"):
 			return MISC::GET_HASH_KEY("KIT_POUCH_PROVISIONS_MP");
 	}
 	return 0;
 }
 
-bool func_331(bool bParam0)
+bool func_331(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(bParam0);
+	return WEAPON::_0x1F7977C9101F807F(iParam0);
 }
 
 int func_332(int iParam0, bool bParam1, bool bParam2, int iParam3)

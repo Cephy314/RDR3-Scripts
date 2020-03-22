@@ -87,83 +87,83 @@ int func_1(int iParam0)
 {
 	switch (*iParam0)
 	{
-		case 1433048902:
+		case joaat("CONSUMABLE_HERB_GINSENG"):
 			return 2;
-		case -1602657245:
+		case joaat("CONSUMABLE_HERB_BAY_BOLETE"):
 			return 4;
-		case -1991037110:
+		case joaat("CONSUMABLE_HERB_BLACK_BERRY"):
 			return 5;
-		case 1047281747:
+		case joaat("CONSUMABLE_HERB_CURRANT"):
 			return 6;
-		case -398744080:
+		case joaat("CONSUMABLE_HERB_BURDOCK_ROOT"):
 			return 7;
-		case -1066874997:
+		case joaat("CONSUMABLE_HERB_CHANTERELLES"):
 			return 8;
-		case -2085219828:
+		case joaat("CONSUMABLE_HERB_COMMON_BULRUSH"):
 			return 11;
-		case 2064962445:
+		case joaat("CONSUMABLE_HERB_CREEPING_THYME"):
 			return 12;
-		case -1620920647:
+		case joaat("CONSUMABLE_HERB_ENGLISH_MACE"):
 			return 15;
-		case -1664530975:
+		case joaat("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY"):
 			return 16;
-		case -597058368:
+		case joaat("CONSUMABLE_HERB_INDIAN_TOBACCO"):
 			return 20;
-		case 128702355:
+		case joaat("CONSUMABLE_HERB_MILKWEED"):
 			return 23;
-		case -2051332199:
+		case joaat("CONSUMABLE_HERB_OLEANDER_SAGE"):
 			return 26;
-		case 546981776:
+		case joaat("CONSUMABLE_HERB_OREGANO"):
 			return 27;
-		case -2013384490:
+		case joaat("CONSUMABLE_HERB_PARASOL_MUSHROOM"):
 			return 28;
-		case 228922461:
+		case joaat("CONSUMABLE_HERB_PRAIRIE_POPPY"):
 			return 29;
-		case -746674788:
+		case joaat("CONSUMABLE_HERB_RAMS_HEAD"):
 			return 31;
-		case 599861917:
+		case joaat("CONSUMABLE_HERB_RED_RASPBERRY"):
 			return 33;
-		case -1781387050:
+		case joaat("CONSUMABLE_HERB_SAGE"):
 			return 34;
-		case 2006811763:
+		case joaat("CONSUMABLE_HERB_VANILLA_FLOWER"):
 			return 37;
-		case -90546043:
+		case joaat("CONSUMABLE_HERB_VIOLET_SNOWDROP"):
 			return 38;
-		case 1216456215:
+		case joaat("CONSUMABLE_HERB_WILD_CARROTS"):
 			return 39;
-		case 746300881:
+		case joaat("CONSUMABLE_HERB_WILD_FEVERFEW"):
 			return 40;
-		case -435006002:
+		case joaat("CONSUMABLE_HERB_WILD_MINT"):
 			return 41;
-		case -624139784:
+		case joaat("CONSUMABLE_HERB_WINTERGREEN_BERRY"):
 			return 42;
-		case -529638012:
+		case joaat("CONSUMABLE_HERB_YARROW"):
 			return 43;
-		case -651064726:
+		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 1;
-		case -404270094:
+		case joaat("PROVISION_RO_FLOWER_CIGAR"):
 			return 9;
-		case -1521783510:
+		case joaat("PROVISION_RO_FLOWER_CLAMSHELL"):
 			return 10;
-		case 1714875242:
+		case joaat("PROVISION_RO_FLOWER_DRAGONS"):
 			return 14;
-		case 2093126853:
+		case joaat("PROVISION_RO_FLOWER_GHOST"):
 			return 17;
-		case 728781265:
+		case joaat("PROVISION_RO_FLOWER_LADY_OF_NIGHT"):
 			return 21;
-		case 1794857344:
+		case joaat("PROVISION_RO_FLOWER_LADY_SLIPPER"):
 			return 22;
-		case 1952409553:
+		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 24;
-		case -150591160:
+		case joaat("PROVISION_RO_FLOWER_NIGHT_SCENTED"):
 			return 25;
-		case 1019229063:
+		case joaat("PROVISION_RO_FLOWER_QUEENS"):
 			return 30;
-		case -323969289:
+		case joaat("PROVISION_RO_FLOWER_RAT_TAIL"):
 			return 32;
-		case 927763737:
+		case joaat("PROVISION_RO_FLOWER_SPARROWS"):
 			return 35;
-		case 1504361882:
+		case joaat("PROVISION_RO_FLOWER_SPIDER"):
 			return 36;
 	}
 	return 0;
@@ -191,7 +191,7 @@ void func_5(int iParam0)
 {
 	var uVar0;
 
-	uVar0 = func_16(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, func_15(func_14(iParam0))), 1), "", 0, 0, 109029619, "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
+	uVar0 = func_16(MISC::_CREATE_VAR_STRING(10, "ITEM_TASTED_PUMP_MULT", MISC::_CREATE_VAR_STRING(0, func_15(func_14(iParam0))), 1), "", 0, 0, joaat("COLOR_PURE_WHITE"), "Transaction_Feed_Sounds", "Transaction_Positive", 0, 1);
 	(*Global_1913500)[iParam0 /*4*/] = uVar0;
 }
 
@@ -202,13 +202,13 @@ void func_6(int iParam0)
 	}
 }
 
-void func_7(int iParam0, int iParam1)
+void func_7(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_18(-372368982, func_11(iParam0)) };
-	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
-	func_20(func_19(106002964), iParam1);
+	Var0 = { func_18(joaat("eaten"), func_11(iParam0)) };
+	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
+	func_20(func_19(joaat("HERBS_EATEN")), bParam1);
 }
 
 int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9)
@@ -283,91 +283,91 @@ int func_11(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -932875117;
+			return joaat("HERB_ALASKAN_GINSENG");
 		case 3:
-			return 1660962977;
+			return joaat("HERB_AMERICAN_GINSENG");
 		case 4:
-			return -131409450;
+			return joaat("HERB_BAY_BOLETE");
 		case 5:
-			return -1487527516;
+			return joaat("HERB_BLACK_BERRY");
 		case 6:
-			return 561629573;
+			return joaat("HERB_BLACK_CURRANT");
 		case 7:
-			return 1829679323;
+			return joaat("HERB_BURDOCK_ROOT");
 		case 8:
-			return -618617794;
+			return joaat("HERB_CHANTERELLES");
 		case 11:
-			return 653458791;
+			return joaat("HERB_COMMON_BULRUSH");
 		case 12:
-			return 437319607;
+			return joaat("HERB_CREEPING_THYME");
 		case 13:
-			return -1519488075;
+			return joaat("HERB_DESERT_SAGE");
 		case 15:
-			return 1014445254;
+			return joaat("HERB_ENGLISH_MACE");
 		case 16:
-			return 224814421;
+			return joaat("HERB_EVERGREEN_HUCKLEBERRY");
 		case 18:
-			return 1012187868;
+			return joaat("HERB_GOLDEN_CURRANT");
 		case 19:
-			return -1040706491;
+			return joaat("HERB_HUMMINGBIRD_SAGE");
 		case 20:
-			return -1910627346;
+			return joaat("HERB_INDIAN_TOBACCO");
 		case 23:
-			return -1812487593;
+			return joaat("HERB_MILKWEED");
 		case 26:
-			return 1983971282;
+			return joaat("HERB_OLEANDER_SAGE");
 		case 27:
-			return 1561519041;
+			return joaat("HERB_OREGANO");
 		case 28:
-			return -980496853;
+			return joaat("HERB_PARASOL_MUSHROOM");
 		case 29:
-			return -1738887126;
+			return joaat("HERB_PRAIRIE_POPPY");
 		case 31:
-			return 424771379;
+			return joaat("HERB_RAMS_HEAD");
 		case 33:
-			return 787316814;
+			return joaat("HERB_RED_RASPBERRY");
 		case 34:
-			return 984616481;
+			return joaat("HERB_RED_SAGE");
 		case 37:
-			return 1078285403;
+			return joaat("HERB_VANILLA_FLOWER");
 		case 38:
-			return -262897007;
+			return joaat("HERB_VIOLET_SNOWDROP");
 		case 39:
-			return -1727702531;
+			return joaat("HERB_WILD_CARROTS");
 		case 40:
-			return 1783324404;
+			return joaat("HERB_WILD_FEVERFEW");
 		case 41:
-			return 1288848815;
+			return joaat("HERB_WILD_MINT");
 		case 42:
-			return 918090738;
+			return joaat("HERB_WINTERGREEN_BERRY");
 		case 43:
-			return 170272501;
+			return joaat("HERB_YARROW");
 		case 1:
-			return 2056650000;
+			return joaat("HERB_ACUNAS_STAR_ORCHID");
 		case 9:
-			return -1195354638;
+			return joaat("HERB_CIGAR_ORCHID");
 		case 10:
-			return 1077596967;
+			return joaat("HERB_CLAMSHELL_ORCHID");
 		case 14:
-			return -2145199848;
+			return joaat("HERB_DRAGONS_MOUTH_ORCHID");
 		case 17:
-			return 752824478;
+			return joaat("HERB_GHOST_ORCHID");
 		case 21:
-			return -819513569;
+			return joaat("HERB_LADY_OF_NIGHT_ORCHID");
 		case 22:
-			return 1906968775;
+			return joaat("HERB_LADY_SLIPPER_ORCHID");
 		case 24:
-			return -135434663;
+			return joaat("HERB_MOCCASIN_FLOWER_ORCHID");
 		case 25:
-			return 920123680;
+			return joaat("HERB_NIGHT_SCENTED_ORCHID");
 		case 30:
-			return 150470908;
+			return joaat("HERB_QUEENS_ORCHID");
 		case 32:
-			return -1665125257;
+			return joaat("HERB_RAT_TAIL_ORCHID");
 		case 35:
-			return 1587928307;
+			return joaat("HERB_SPARROWS_EGG_ORCHID");
 		case 36:
-			return -1738925422;
+			return joaat("HERB_SPIDER_ORCHID");
 	}
 	return 0;
 }
@@ -401,91 +401,91 @@ int func_14(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return 1433048902;
+			return joaat("CONSUMABLE_HERB_GINSENG");
 		case 3:
-			return 1433048902;
+			return joaat("CONSUMABLE_HERB_GINSENG");
 		case 4:
-			return -1602657245;
+			return joaat("CONSUMABLE_HERB_BAY_BOLETE");
 		case 5:
-			return -1991037110;
+			return joaat("CONSUMABLE_HERB_BLACK_BERRY");
 		case 6:
-			return 1047281747;
+			return joaat("CONSUMABLE_HERB_CURRANT");
 		case 7:
-			return -398744080;
+			return joaat("CONSUMABLE_HERB_BURDOCK_ROOT");
 		case 8:
-			return -1066874997;
+			return joaat("CONSUMABLE_HERB_CHANTERELLES");
 		case 11:
-			return -2085219828;
+			return joaat("CONSUMABLE_HERB_COMMON_BULRUSH");
 		case 12:
-			return 2064962445;
+			return joaat("CONSUMABLE_HERB_CREEPING_THYME");
 		case 13:
-			return -1781387050;
+			return joaat("CONSUMABLE_HERB_SAGE");
 		case 15:
-			return -1620920647;
+			return joaat("CONSUMABLE_HERB_ENGLISH_MACE");
 		case 16:
-			return -1664530975;
+			return joaat("CONSUMABLE_HERB_EVERGREEN_HUCKLEBERRY");
 		case 18:
-			return 1047281747;
+			return joaat("CONSUMABLE_HERB_CURRANT");
 		case 19:
-			return -1781387050;
+			return joaat("CONSUMABLE_HERB_SAGE");
 		case 20:
-			return -597058368;
+			return joaat("CONSUMABLE_HERB_INDIAN_TOBACCO");
 		case 23:
-			return 128702355;
+			return joaat("CONSUMABLE_HERB_MILKWEED");
 		case 26:
-			return -2051332199;
+			return joaat("CONSUMABLE_HERB_OLEANDER_SAGE");
 		case 27:
-			return 546981776;
+			return joaat("CONSUMABLE_HERB_OREGANO");
 		case 28:
-			return -2013384490;
+			return joaat("CONSUMABLE_HERB_PARASOL_MUSHROOM");
 		case 29:
-			return 228922461;
+			return joaat("CONSUMABLE_HERB_PRAIRIE_POPPY");
 		case 31:
-			return -746674788;
+			return joaat("CONSUMABLE_HERB_RAMS_HEAD");
 		case 33:
-			return 599861917;
+			return joaat("CONSUMABLE_HERB_RED_RASPBERRY");
 		case 34:
-			return -1781387050;
+			return joaat("CONSUMABLE_HERB_SAGE");
 		case 37:
-			return 2006811763;
+			return joaat("CONSUMABLE_HERB_VANILLA_FLOWER");
 		case 38:
-			return -90546043;
+			return joaat("CONSUMABLE_HERB_VIOLET_SNOWDROP");
 		case 39:
-			return 1216456215;
+			return joaat("CONSUMABLE_HERB_WILD_CARROTS");
 		case 40:
-			return 746300881;
+			return joaat("CONSUMABLE_HERB_WILD_FEVERFEW");
 		case 41:
-			return -435006002;
+			return joaat("CONSUMABLE_HERB_WILD_MINT");
 		case 42:
-			return -624139784;
+			return joaat("CONSUMABLE_HERB_WINTERGREEN_BERRY");
 		case 43:
-			return -529638012;
+			return joaat("CONSUMABLE_HERB_YARROW");
 		case 1:
-			return -651064726;
+			return joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 		case 9:
-			return -404270094;
+			return joaat("PROVISION_RO_FLOWER_CIGAR");
 		case 10:
-			return -1521783510;
+			return joaat("PROVISION_RO_FLOWER_CLAMSHELL");
 		case 14:
-			return 1714875242;
+			return joaat("PROVISION_RO_FLOWER_DRAGONS");
 		case 17:
-			return 2093126853;
+			return joaat("PROVISION_RO_FLOWER_GHOST");
 		case 21:
-			return 728781265;
+			return joaat("PROVISION_RO_FLOWER_LADY_OF_NIGHT");
 		case 22:
-			return 1794857344;
+			return joaat("PROVISION_RO_FLOWER_LADY_SLIPPER");
 		case 24:
-			return 1952409553;
+			return joaat("PROVISION_RO_FLOWER_MOCCASIN");
 		case 25:
-			return -150591160;
+			return joaat("PROVISION_RO_FLOWER_NIGHT_SCENTED");
 		case 30:
-			return 1019229063;
+			return joaat("PROVISION_RO_FLOWER_QUEENS");
 		case 32:
-			return -323969289;
+			return joaat("PROVISION_RO_FLOWER_RAT_TAIL");
 		case 35:
-			return 927763737;
+			return joaat("PROVISION_RO_FLOWER_SPARROWS");
 		case 36:
-			return 1504361882;
+			return joaat("PROVISION_RO_FLOWER_SPIDER");
 		default:
 			break;
 	}
@@ -549,9 +549,9 @@ struct<2> func_19(int iParam0)
 	return Var0;
 }
 
-void func_20(var uParam0, var uParam1, int iParam2)
+void func_20(var uParam0, bool bParam1, bool bParam2)
 {
-	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
+	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
 }
 
 int func_21(int iParam0)
@@ -572,37 +572,37 @@ int func_22(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -1080874779;
+			return -1080874779 /* GXTEntry: "Special Health Cure" */;
 		case 3:
-			return -755485480;
+			return joaat("CONSUMABLE_POTENT_MEDICINE");
 		case 6:
-			return 747460826;
+			return joaat("CONSUMABLE_SPECIAL_HORSE_STIMULANT_CRAFTED");
 		case 7:
-			return 1627068364;
+			return joaat("CONSUMABLE_HORSE_REVIVER");
 		case 13:
-			return -1067476102;
+			return joaat("CONSUMABLE_POTENT_RESTORATIVE");
 		case 15:
-			return -1080874779;
+			return -1080874779 /* GXTEntry: "Special Health Cure" */;
 		case 18:
-			return -801397594;
+			return joaat("CONSUMABLE_POTENT_HORSE_STIMULANT");
 		case 19:
-			return 730856618;
+			return joaat("CONSUMABLE_POTENT_TONIC");
 		case 20:
-			return -486559882;
+			return joaat("CONSUMABLE_POTENT_SNAKE_OIL");
 		case 23:
-			return -1976480343;
+			return -1976480343 /* GXTEntry: "Special Miracle Tonic" */;
 		case 26:
-			return 1895068170;
+			return 1895068170 /* GXTEntry: "Cover Scent Lotion" */;
 		case 29:
-			return -1067476102;
+			return joaat("CONSUMABLE_POTENT_RESTORATIVE");
 		case 34:
-			return 1566032147;
+			return 1566032147 /* GXTEntry: "Special Bitters" */;
 		case 38:
-			return 2036955137;
+			return joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT");
 		case 40:
-			return 1566032147;
+			return 1566032147 /* GXTEntry: "Special Bitters" */;
 		case 43:
-			return -755485480;
+			return joaat("CONSUMABLE_POTENT_MEDICINE");
 	}
 	return 0;
 }
@@ -621,7 +621,7 @@ int func_23(int iParam0)
 	{
 		if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(iParam0, iVar48, &Var1))
 		{
-			if (Var1.f_2 == 1644203656 && !func_38(iParam0, Var1, 1))
+			if (Var1.f_2 == joaat("COST_TYPE_CRAFT") && !func_38(iParam0, Var1, 1))
 			{
 				return 1;
 			}
@@ -718,17 +718,17 @@ void func_28(int iParam0, bool bParam1, bool bParam2)
 	}
 }
 
-int func_29(int iParam0, bool bParam1, int iParam2)
+int func_29(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 
 	if (Global_1572887->f_12 != -1)
 	{
-		if ((iParam2 && iParam0 == 0) && bParam1 == 0)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 0)
 		{
 			return Global_1898164->f_163;
 		}
-		if ((iParam2 && iParam0 == 0) && bParam1 == 1)
+		if ((bParam2 && iParam0 == 0) && bParam1 == 1)
 		{
 			return Global_1898164->f_164;
 		}
@@ -744,7 +744,7 @@ int func_29(int iParam0, bool bParam1, int iParam2)
 			}
 		}
 	}
-	else if (iParam2 && iParam0 == 0)
+	else if (bParam2 && iParam0 == 0)
 	{
 		if (!bParam1)
 		{
@@ -826,7 +826,7 @@ void func_30(bool bParam0, int iParam1)
 	func_50(&Global_0, 1);
 }
 
-int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, var uParam4)
+int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 {
 	bool bVar0;
 	int iVar1;
@@ -852,7 +852,7 @@ int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, var uParam4)
 		{
 			if (ITEMDATABASE::_ITEM_DATABASE_GET_ACQUIRE_COST(iParam0, iVar49, &Var2))
 			{
-				if (Var2.f_2 == 1644203656 && func_38(iParam0, Var2, 1))
+				if (Var2.f_2 == joaat("COST_TYPE_CRAFT") && func_38(iParam0, Var2, 1))
 				{
 					if (func_52(iParam0, Var2))
 					{
@@ -888,13 +888,13 @@ int func_31(int iParam0, int iParam1, bool bParam2, bool bParam3, var uParam4)
 	return 0;
 }
 
-void func_32(var uParam0, var uParam1, var uParam2)
+void func_32(int iParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 
-	iVar0 = uParam0;
-	*uParam1 = (iVar0 / 31);
-	*uParam2 = (iVar0 % 31);
+	iVar0 = iParam0;
+	*iParam1 = (iVar0 / 31);
+	*iParam2 = (iVar0 % 31);
 }
 
 int func_33(int iParam0, int iParam1, int iParam2, bool bParam3)
@@ -948,9 +948,9 @@ void func_35(int iParam0, int iParam1)
 
 void func_36(char* sParam0, char* sParam1, int iParam2)
 {
-	_NAMESPACE84::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	_NAMESPACE84::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	_NAMESPACE84::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
 }
 
 bool func_37(int iParam0, int iParam1, bool bParam2)
@@ -969,14 +969,14 @@ bool func_37(int iParam0, int iParam1, bool bParam2)
 	return (Global_40.f_9274[iParam0] && iParam1) != 0;
 }
 
-int func_38(int iParam0, int iParam1, int iParam2)
+int func_38(int iParam0, int iParam1, bool bParam2)
 {
 	var uVar0[10];
 	int iVar11;
 	int iVar12;
 	int iVar13;
 
-	if ((iParam2 && func_39() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(iParam0))
+	if ((bParam2 && func_39() == 0) && !UNLOCK::_UNLOCK_IS_VISIBLE(iParam0))
 	{
 		return 0;
 	}
@@ -1154,431 +1154,431 @@ void func_44(int iParam0, int iParam1)
 		case 1:
 			if (iParam1 == 1)
 			{
-				func_60(1849379570, 0);
+				func_60(joaat("journal_herb_acunas_star_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(961286348, 0);
+				func_60(joaat("journal_herb_acunas_star_orchid_jn"), 0);
 			}
 			break;
 		case 2:
 			if (iParam1 == 1)
 			{
-				func_60(-837750081, 0);
+				func_60(joaat("journal_herb_alaskan_ginseng_ar"), 0);
 			}
 			else
 			{
-				func_60(340939753, 0);
+				func_60(joaat("journal_herb_alaskan_ginseng_jn"), 0);
 			}
 			break;
 		case 3:
 			if (iParam1 == 1)
 			{
-				func_60(-342875345, 0);
+				func_60(joaat("journal_herb_american_ginseng_ar"), 0);
 			}
 			else
 			{
-				func_60(-1349311606, 0);
+				func_60(joaat("journal_herb_american_ginseng_jn"), 0);
 			}
 			break;
 		case 4:
 			if (iParam1 == 1)
 			{
-				func_60(-1083564345, 0);
+				func_60(joaat("journal_herb_bay_bolete_ar"), 0);
 			}
 			else
 			{
-				func_60(833225684, 0);
+				func_60(joaat("journal_herb_bay_bolete_jn"), 0);
 			}
 			break;
 		case 5:
 			if (iParam1 == 1)
 			{
-				func_60(-363984637, 0);
+				func_60(joaat("journal_herb_blackberry_ar"), 0);
 			}
 			else
 			{
-				func_60(1254542371, 0);
+				func_60(joaat("journal_herb_blackberry_jn"), 0);
 			}
 			break;
 		case 6:
 			if (iParam1 == 1)
 			{
-				func_60(205335377, 0);
+				func_60(joaat("journal_herb_black_currant_ar"), 0);
 			}
 			else
 			{
-				func_60(637367741, 0);
+				func_60(joaat("journal_herb_black_currant_jn"), 0);
 			}
 			break;
 		case 11:
 			if (iParam1 == 1)
 			{
-				func_60(-1389317844, 0);
+				func_60(joaat("journal_herb_bulrush_ar"), 0);
 			}
 			else
 			{
-				func_60(-556895345, 0);
+				func_60(joaat("journal_herb_bulrush_jn"), 0);
 			}
 			break;
 		case 7:
 			if (iParam1 == 1)
 			{
-				func_60(-1907629529, 0);
+				func_60(joaat("journal_herb_burdock_root_ar"), 0);
 			}
 			else
 			{
-				func_60(1599606732, 0);
+				func_60(joaat("journal_herb_burdock_root_jn"), 0);
 			}
 			break;
 		case 39:
 			if (iParam1 == 1)
 			{
-				func_60(240007023, 0);
+				func_60(joaat("journal_herb_carrot_ar"), 0);
 			}
 			else
 			{
-				func_60(-1520210138, 0);
+				func_60(joaat("journal_herb_carrot_jn"), 0);
 			}
 			break;
 		case 8:
 			if (iParam1 == 1)
 			{
-				func_60(1312152388, 0);
+				func_60(joaat("journal_herb_chanterelle_ar"), 0);
 			}
 			else
 			{
-				func_60(-9418953, 0);
+				func_60(joaat("journal_herb_chanterelle_jn"), 0);
 			}
 			break;
 		case 9:
 			if (iParam1 == 1)
 			{
-				func_60(545314598, 0);
+				func_60(joaat("journal_herb_cigar_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(1529839790, 0);
+				func_60(joaat("journal_herb_cigar_orchid_jn"), 0);
 			}
 			break;
 		case 10:
 			if (iParam1 == 1)
 			{
-				func_60(1230485961, 0);
+				func_60(joaat("journal_herb_clamshell_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-1579920715, 0);
+				func_60(joaat("journal_herb_clamshell_orchid_jn"), 0);
 			}
 			break;
 		case 12:
 			if (iParam1 == 1)
 			{
-				func_60(-201902289, 0);
+				func_60(joaat("journal_herb_creeping_thyme_ar"), 0);
 			}
 			else
 			{
-				func_60(1415616009, 0);
+				func_60(joaat("journal_herb_creeping_thyme_jn"), 0);
 			}
 			break;
 		case 13:
 			if (iParam1 == 1)
 			{
-				func_60(-564622057, 0);
+				func_60(joaat("journal_herb_desert_sage_ar"), 0);
 			}
 			else
 			{
-				func_60(-1442109431, 0);
+				func_60(joaat("journal_herb_desert_sage_jn"), 0);
 			}
 			break;
 		case 14:
 			if (iParam1 == 1)
 			{
-				func_60(-1303190422, 0);
+				func_60(joaat("journal_herb_dragons_mouth_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-1299326860, 0);
+				func_60(joaat("journal_herb_dragons_mouth_orchid_jn"), 0);
 			}
 			break;
 		case 15:
 			if (iParam1 == 1)
 			{
-				func_60(-88060354, 0);
+				func_60(joaat("journal_herb_english_mace_ar"), 0);
 			}
 			else
 			{
-				func_60(-366222423, 0);
+				func_60(joaat("journal_herb_english_mace_jn"), 0);
 			}
 			break;
 		case 40:
 			if (iParam1 == 1)
 			{
-				func_60(1312248008, 0);
+				func_60(joaat("journal_herb_feverfew_ar"), 0);
 			}
 			else
 			{
-				func_60(621868532, 0);
+				func_60(joaat("journal_herb_feverfew_jn"), 0);
 			}
 			break;
 		case 17:
 			if (iParam1 == 1)
 			{
-				func_60(428446588, 0);
+				func_60(joaat("journal_herb_ghost_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-1730302202, 0);
+				func_60(joaat("journal_herb_ghost_orchid_jn"), 0);
 			}
 			break;
 		case 18:
 			if (iParam1 == 1)
 			{
-				func_60(37692363, 0);
+				func_60(joaat("journal_herb_golden_currant_ar"), 0);
 			}
 			else
 			{
-				func_60(629404512, 0);
+				func_60(joaat("journal_herb_golden_currant_jn"), 0);
 			}
 			break;
 		case 16:
 			if (iParam1 == 1)
 			{
-				func_60(877023893, 0);
+				func_60(joaat("journal_herb_huckleberry_ar"), 0);
 			}
 			else
 			{
-				func_60(122486811, 0);
+				func_60(joaat("journal_herb_huckleberry_jn"), 0);
 			}
 			break;
 		case 19:
 			if (iParam1 == 1)
 			{
-				func_60(-706642783, 0);
+				func_60(joaat("journal_herb_hummingbird_sage_ar"), 0);
 			}
 			else
 			{
-				func_60(621155065, 0);
+				func_60(joaat("journal_herb_hummingbird_sage_jn"), 0);
 			}
 			break;
 		case 20:
 			if (iParam1 == 1)
 			{
-				func_60(-918250703, 0);
+				func_60(joaat("journal_herb_indian_tobacco_ar"), 0);
 			}
 			else
 			{
-				func_60(1945953943, 0);
+				func_60(joaat("journal_herb_indian_tobacco_jn"), 0);
 			}
 			break;
 		case 21:
 			if (iParam1 == 1)
 			{
-				func_60(722815515, 0);
+				func_60(joaat("journal_herb_lady_of_the_night_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-80758135, 0);
+				func_60(joaat("journal_herb_lady_of_the_night_orchid_jn"), 0);
 			}
 			break;
 		case 22:
 			if (iParam1 == 1)
 			{
-				func_60(1053305061, 0);
+				func_60(joaat("journal_herb_lady_slipper_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(1789349782, 0);
+				func_60(joaat("journal_herb_lady_slipper_orchid_jn"), 0);
 			}
 			break;
 		case 23:
 			if (iParam1 == 1)
 			{
-				func_60(1024520106, 0);
+				func_60(joaat("journal_herb_milkweed_ar"), 0);
 			}
 			else
 			{
-				func_60(1105521253, 0);
+				func_60(joaat("journal_herb_milkweed_jn"), 0);
 			}
 			break;
 		case 41:
 			if (iParam1 == 1)
 			{
-				func_60(1140872184, 0);
+				func_60(joaat("journal_herb_mint_ar"), 0);
 			}
 			else
 			{
-				func_60(-237709193, 0);
+				func_60(joaat("journal_herb_mint_jn"), 0);
 			}
 			break;
 		case 24:
 			if (iParam1 == 1)
 			{
-				func_60(-1590595690, 0);
+				func_60(joaat("journal_herb_moccasin_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(1836601784, 0);
+				func_60(joaat("journal_herb_moccasin_orchid_jn"), 0);
 			}
 			break;
 		case 25:
 			if (iParam1 == 1)
 			{
-				func_60(1164380735, 0);
+				func_60(joaat("journal_herb_night_scented_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-1984992129, 0);
+				func_60(joaat("journal_herb_night_scented_orchid_jn"), 0);
 			}
 			break;
 		case 26:
 			if (iParam1 == 1)
 			{
-				func_60(301696279, 0);
+				func_60(joaat("journal_herb_oleander_sage_ar"), 0);
 			}
 			else
 			{
-				func_60(152181092, 0);
+				func_60(joaat("journal_herb_oleander_sage_jn"), 0);
 			}
 			break;
 		case 27:
 			if (iParam1 == 1)
 			{
-				func_60(-415970359, 0);
+				func_60(joaat("journal_herb_oregano_ar"), 0);
 			}
 			else
 			{
-				func_60(839837681, 0);
+				func_60(joaat("journal_herb_oregano_jn"), 0);
 			}
 			break;
 		case 28:
 			if (iParam1 == 1)
 			{
-				func_60(1669531798, 0);
+				func_60(joaat("journal_herb_parasol_ar"), 0);
 			}
 			else
 			{
-				func_60(1602454819, 0);
+				func_60(joaat("journal_herb_parasol_jn"), 0);
 			}
 			break;
 		case 29:
 			if (iParam1 == 1)
 			{
-				func_60(-977383775, 0);
+				func_60(joaat("journal_herb_prairie_poppy_ar"), 0);
 			}
 			else
 			{
-				func_60(-1875435665, 0);
+				func_60(joaat("journal_herb_prairie_poppy_jn"), 0);
 			}
 			break;
 		case 30:
 			if (iParam1 == 1)
 			{
-				func_60(1183317680, 0);
+				func_60(joaat("journal_herb_queens_orchids_ar"), 0);
 			}
 			else
 			{
-				func_60(-247145433, 0);
+				func_60(joaat("journal_herb_queens_orchids_jn"), 0);
 			}
 			break;
 		case 31:
 			if (iParam1 == 1)
 			{
-				func_60(667332266, 0);
+				func_60(joaat("journal_herb_ramshead_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-368365640, 0);
+				func_60(joaat("journal_herb_ramshead_orchid_jn"), 0);
 			}
 			break;
 		case 33:
 			if (iParam1 == 1)
 			{
-				func_60(-1578905205, 0);
+				func_60(joaat("journal_herb_raspberry_ar"), 0);
 			}
 			else
 			{
-				func_60(946087658, 0);
+				func_60(joaat("journal_herb_raspberry_jn"), 0);
 			}
 			break;
 		case 32:
 			if (iParam1 == 1)
 			{
-				func_60(-448931053, 0);
+				func_60(joaat("journal_herb_rat_tail_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-421010414, 0);
+				func_60(joaat("journal_herb_rat_tail_orchid_jn"), 0);
 			}
 			break;
 		case 34:
 			if (iParam1 == 1)
 			{
-				func_60(-1162930163, 0);
+				func_60(joaat("journal_herb_red_sage_ar"), 0);
 			}
 			else
 			{
-				func_60(-1228311530, 0);
+				func_60(joaat("journal_herb_red_sage_jn"), 0);
 			}
 			break;
 		case 35:
 			if (iParam1 == 1)
 			{
-				func_60(1004123602, 0);
+				func_60(joaat("journal_herb_sparrows_egg_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(1321329534, 0);
+				func_60(joaat("journal_herb_sparrows_egg_orchid_jn"), 0);
 			}
 			break;
 		case 36:
 			if (iParam1 == 1)
 			{
-				func_60(281748406, 0);
+				func_60(joaat("journal_herb_spider_orchid_ar"), 0);
 			}
 			else
 			{
-				func_60(-173822042, 0);
+				func_60(joaat("journal_herb_spider_orchid_jn"), 0);
 			}
 			break;
 		case 37:
 			if (iParam1 == 1)
 			{
-				func_60(-1351305881, 0);
+				func_60(joaat("journal_herb_vanilla_flower_ar"), 0);
 			}
 			else
 			{
-				func_60(-1650817073, 0);
+				func_60(joaat("journal_herb_vanilla_flower_jn"), 0);
 			}
 			break;
 		case 38:
 			if (iParam1 == 1)
 			{
-				func_60(-1644190131, 0);
+				func_60(joaat("journal_herb_violet_snowdrop_ar"), 0);
 			}
 			else
 			{
-				func_60(844678349, 0);
+				func_60(joaat("journal_herb_violet_snowdrop_jn"), 0);
 			}
 			break;
 		case 42:
 			if (iParam1 == 1)
 			{
-				func_60(-926127573, 0);
+				func_60(joaat("journal_herb_winterberry_ar"), 0);
 			}
 			else
 			{
-				func_60(-1260559150, 0);
+				func_60(joaat("journal_herb_winterberry_jn"), 0);
 			}
 			break;
 		case 43:
 			if (iParam1 == 1)
 			{
-				func_60(758690400, 0);
+				func_60(joaat("journal_herb_yarrow_ar"), 0);
 			}
 			else
 			{
-				func_60(1430679359, 0);
+				func_60(joaat("journal_herb_yarrow_jn"), 0);
 			}
 			break;
 		default:
@@ -1777,12 +1777,12 @@ bool func_58()
 	return Global_1905944->f_5694;
 }
 
-int func_59(int iParam0, int iParam1, var uParam2, var uParam3)
+int func_59(int iParam0, int iParam1, var uParam2, int iParam3)
 {
 	struct<37> Var0;
 	int iVar47;
 
-	*uParam3 = 0;
+	*iParam3 = 0;
 	if (*uParam2 < 10)
 	{
 		return 0;
@@ -1797,7 +1797,7 @@ int func_59(int iParam0, int iParam1, var uParam2, var uParam3)
 	{
 		return 0;
 	}
-	*uParam3 = Var0.f_35;
+	*iParam3 = Var0.f_35;
 	iVar47 = 0;
 	while (iVar47 < Var0.f_35)
 	{

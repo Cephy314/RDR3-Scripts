@@ -195,8 +195,8 @@ bool func_6(var uParam0)
 
 void func_7(var uParam0)
 {
-	uParam0->f_3[0] = 1477581656;
-	uParam0->f_3[1] = 1477581656;
+	uParam0->f_3[0] = joaat("p_cs_billsingle01bx");
+	uParam0->f_3[1] = joaat("p_cs_billsingle01bx");
 	if (!ANIMSCENE::_0x25557E324489393C(uParam0->f_11))
 	{
 		uParam0->f_11 = ANIMSCENE::_CREATE_ANIM_SCENE("script@proc@shoprobberies@GLOBAL@EVENT_OPEN_REGISTER@BASE", 2, 0, false, true);
@@ -324,7 +324,7 @@ int func_15(int iParam0)
 
 bool func_16(vector3 vParam0, int iParam3)
 {
-	if (!VOLUME::_0x92A78D0BEDB332A3((Global_1914319->f_3[iParam3 /*446*/])->f_25))
+	if (!VOLUME::_DOES_VOLUME_EXIST((Global_1914319->f_3[iParam3 /*446*/])->f_25))
 	{
 		return false;
 	}

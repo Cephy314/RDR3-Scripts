@@ -161,11 +161,11 @@ void func_6()
 				iVar0 = ENTITY::GET_ENTITY_MODEL(Local_18.f_5);
 				switch (iVar0)
 				{
-					case -764811328:
+					case joaat("s_maprolled01x"):
 						break;
-					case -1177733273:
+					case joaat("s_maprolled02x"):
 						break;
-					case 17186352:
+					case joaat("s_maprolled03x"):
 						break;
 					default:
 						break;
@@ -238,7 +238,7 @@ void func_6()
 			}
 			break;
 		case 3:
-			if (!PED::_0x4912DFE492DB98CD(Global_35, "inInspectionMode"))
+			if (!PED::_0x4912DFE492DB98CD(Global_34, "inInspectionMode"))
 			{
 				PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
 				PAD::ENABLE_CONTROL_ACTION(1, joaat("INPUT_LOOK_LR"), true);
@@ -252,7 +252,7 @@ void func_6()
 					vVar2 = { ENTITY::GET_ENTITY_COORDS(iLocal_78, true, false) };
 					Local_52 = { vVar2 };
 					Local_52.f_7 = 0;
-					_NAMESPACE29::_0x66F9EB44342BB4C5(Global_35, &Local_52);
+					_NAMESPACE29::_0x66F9EB44342BB4C5(Global_34, &Local_52);
 				}
 			}
 			if (func_15())
@@ -334,7 +334,7 @@ void func_11(int iParam0)
 
 int func_12()
 {
-	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && TASK::_0x038B1F1674F0E242(Global_35))
+	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && TASK::_0x038B1F1674F0E242(Global_34))
 	{
 		return 1;
 	}
