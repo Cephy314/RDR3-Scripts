@@ -11741,7 +11741,7 @@ int func_365(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_256(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
+		return func_256(joaat("AMMO_POISONBOTTLE"), 1);
 	}
 	return func_256(iParam0, 1);
 }

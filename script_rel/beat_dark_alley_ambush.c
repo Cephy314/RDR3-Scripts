@@ -3920,7 +3920,7 @@ void func_106()
 				func_128(&iLocal_825, 128);
 			}
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 148017813))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("PLY_HIT")))
 		{
 			func_151(0);
 			func_131(Global_35, &(iLocal_677[0]), func_130("PLY_HIT"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
@@ -3943,12 +3943,12 @@ void func_106()
 		{
 			PED::_0x8B3B71C80A29A4BB(Global_35, 112825101, 6);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), 1418424226))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), joaat("YOU_CAN_TELL")))
 		{
 			func_151(0);
 			func_131(&(iLocal_677[0]), Global_35, func_130("YOU_CAN_TELL"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), 978192786))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), joaat("ROB_AND_DUMP")))
 		{
 			func_151(0);
 			func_131(&(iLocal_677[0]), Global_35, func_130("ROB_AND_DUMP"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
@@ -3960,7 +3960,7 @@ void func_106()
 				TASK::TASK_PLAY_ANIM(&(iLocal_677[1]), &(Local_228[1 /*2*/]), (Local_228[1 /*2*/])->f_1, 2f, -2f, -1, 24, 0f, false, 65536, false, 0, false);
 			}
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), -1141329656))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), joaat("hey_you")))
 		{
 			func_151(0);
 			func_131(&(iLocal_677[0]), Global_35, func_130("HEY_YOU"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
@@ -3977,7 +3977,7 @@ void func_106()
 			}
 			func_128(&iLocal_825, 2);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), -1031073220))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), joaat("DRAW_GUN")))
 		{
 			WEAPON::SET_CURRENT_PED_WEAPON(&(iLocal_677[0]), joaat("WEAPON_REVOLVER_CATTLEMAN"), true, 0, false, false);
 		}
@@ -4012,7 +4012,7 @@ void func_106()
 			}
 			MAP::DISPLAY_RADAR(false);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[1]), -418026915))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[1]), joaat("THESE_IDIOTS")))
 		{
 			func_151(0);
 			func_131(&(iLocal_677[1]), &(iLocal_677[0]), func_130("THESE_IDIOTS"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
@@ -4023,7 +4023,7 @@ void func_106()
 			func_285(&(iLocal_677[0]), 100);
 			func_131(&(iLocal_677[1]), &(iLocal_677[0]), func_130("HOLD_IT"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[1]), 978192786))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[1]), joaat("ROB_AND_DUMP")))
 		{
 			func_151(0);
 			func_131(&(iLocal_677[1]), &(iLocal_677[0]), func_130("ROB_AND_DUMP"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
@@ -4033,7 +4033,7 @@ void func_106()
 			func_151(0);
 			func_131(&(iLocal_677[1]), Global_35, func_130("HANDS_UP"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[1]), -1377868695))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[1]), joaat("I_KNEW")))
 		{
 			if (func_287(1) >= 100)
 			{
@@ -4049,28 +4049,28 @@ void func_106()
 			}
 		}
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 869814511))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("PLY_SURPRISE")))
 	{
 		func_151(0);
 		func_131(Global_35, &(iLocal_677[0]), func_130("PLY_SURPRISE"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1159620408))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("what_the_hell")))
 	{
 		func_151(0);
 		func_131(Global_35, Global_35, func_130("PLY_WAKE_UP"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1813831566))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("PLY_SHIT")))
 	{
 		func_151(0);
 		func_131(Global_35, &(iLocal_677[0]), func_130("PLY_SHIT"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 	}
 	if (func_29(&(iLocal_677[2]), 0, 1))
 	{
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[2]), 51944888))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[2]), joaat("FINALLY")))
 		{
 			func_131(&(iLocal_677[2]), Global_35, func_130("FINALLY"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 		}
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[2]), 839564321))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[2]), joaat("DUMP_HIM")))
 		{
 			func_128(&iLocal_824, 67108864);
 			if (func_287(1) >= 100)
@@ -9508,14 +9508,14 @@ int func_233(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(iParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}
@@ -12573,47 +12573,47 @@ int func_336(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588: /* GXTEntry: "Loot Innocent" */
+		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case 1142025875: /* GXTEntry: "Murder" */
+		case joaat("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case 1587891565:
+		case joaat("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case 1877013492: /* GXTEntry: "Frighten" */
+		case joaat("HONOR_EVENT_SCARE"):
 			return 32;
-		case -643014279: /* GXTEntry: "Killed Vermin" */
+		case joaat("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case -597116214: /* GXTEntry: "Killed Domestic Animal" */
+		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case 551416228: /* GXTEntry: "Killed Horse" */
+		case joaat("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case 1022576842: /* GXTEntry: "Stole Horse" */
+		case joaat("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case 953325896: /* GXTEntry: "Stole Donkey" */
+		case joaat("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case 508358508: /* GXTEntry: "Stole Mule" */
+		case joaat("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case -735200598: /* GXTEntry: "Trampled Innocent" */
+		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case -856432278:
+		case joaat("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case -2010847721: /* GXTEntry: "Abandon Dead Animals" */
+		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case 446961221: /* GXTEntry: "Watched Animal Bleedout" */
+		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case -1972216640: /* GXTEntry: "Antagonize" */
+		case joaat("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case 530833824: /* GXTEntry: "Theft" */
+		case joaat("HONOR_EVENT_THEFT"):
 			return 131072;
-		case 1682361219: /* GXTEntry: "Intervened" */
+		case joaat("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case 158959085: /* GXTEntry: "Wanted In Camp" */
+		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case 1919819559: /* GXTEntry: "Donated Game" */
+		case joaat("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case 1461411082: /* GXTEntry: "Item Request" */
+		case joaat("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case -549508280: /* GXTEntry: "Long Absence" */
+		case joaat("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;

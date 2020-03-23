@@ -739,9 +739,9 @@ void func_1()
 
 	HUD::_0x8BC7C1F929D07BF3(382897689);
 	Global_1357517 = 0;
-	if (UIAPPS::_IS_APP_RUNNING(-605293197))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(-605293197);
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("translation_overlay"));
 	}
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -1172,7 +1172,7 @@ int func_7(var uParam0)
 			break;
 		case 10:
 			func_17(uParam0);
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, joaat("journal")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("journal")) == 0)
 			{
 				AUDIO::_0xAC84686C06184B0D("read_page", "journal_scenes");
 				func_20(uParam0, 11);
@@ -1180,7 +1180,7 @@ int func_7(var uParam0)
 			break;
 		case 11:
 			func_17(uParam0);
-			if (!UIAPPS::_IS_APP_RUNNING(-605293197))
+			if (!UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
 			{
 				AUDIO::_0xAC84686C06184B0D("journal_closeup", "journal_scenes");
 				func_20(uParam0, 3);

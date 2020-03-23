@@ -96,7 +96,7 @@ void func_6()
 		iLocal_0 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		iLocal_0 = 0;
 	}

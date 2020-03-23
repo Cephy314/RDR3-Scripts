@@ -8796,7 +8796,7 @@ void func_196(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, -1921404755))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("ActionDone")))
 			{
 				(iParam2->f_12[iVar0 /*40*/])->f_8 = 0;
 				func_124(iParam2->f_12[iVar0 /*40*/], 1, 0, 0);
@@ -10456,7 +10456,7 @@ int func_223(int iParam0, bool bParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == 319699045))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == joaat("TaskMovePoker")))
 		{
 			return 0;
 		}
@@ -10493,7 +10493,7 @@ int func_223(int iParam0, bool bParam1)
 		}
 		if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1))
 		{
-			return TASK::_0xCACC2F9D994504B7(bParam1) == -672963996;
+			return TASK::_0xCACC2F9D994504B7(bParam1) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 		}
 		return func_275(bParam1);
 	}
@@ -11459,7 +11459,7 @@ bool func_256(bool bParam0)
 	{
 		return false;
 	}
-	if (TASK::_0xCACC2F9D994504B7(bParam0) != -672963996)
+	if (TASK::_0xCACC2F9D994504B7(bParam0) != joaat("SCRIPT_MINI_GAME_DOMINOES"))
 	{
 		return false;
 	}

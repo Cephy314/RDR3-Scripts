@@ -2874,10 +2874,10 @@ int func_128(int iParam0)
 			STREAMING::REQUEST_MODEL(iLocal_42, false);
 			STREAMING::REQUEST_MODEL(iLocal_43, false);
 			STREAMING::REQUEST_MODEL(iLocal_44, false);
-			PROPSET::_REQUEST_PROPSET(1793592017);
+			PROPSET::_REQUEST_PROPSET(joaat("pg_mission_brt1_tomansion01x"));
 			iLocal_30 = 2;
 		case 2:
-			if ((((!STREAMING::HAS_MODEL_LOADED(iLocal_45) || !STREAMING::HAS_MODEL_LOADED(iLocal_42)) || !STREAMING::HAS_MODEL_LOADED(iLocal_43)) || !STREAMING::HAS_MODEL_LOADED(iLocal_44)) || !PROPSET::_HAS_PROPSET_LOADED(1793592017))
+			if ((((!STREAMING::HAS_MODEL_LOADED(iLocal_45) || !STREAMING::HAS_MODEL_LOADED(iLocal_42)) || !STREAMING::HAS_MODEL_LOADED(iLocal_43)) || !STREAMING::HAS_MODEL_LOADED(iLocal_44)) || !PROPSET::_HAS_PROPSET_LOADED(joaat("pg_mission_brt1_tomansion01x")))
 			{
 				return 0;
 			}
@@ -2928,7 +2928,7 @@ int func_128(int iParam0)
 			DECORATOR::DECOR_SET_INT(&(iLocal_36[4]), func_267(), 1);
 			ENTITY::ATTACH_ENTITY_TO_ENTITY(&(iLocal_36[3]), iLocal_46, 17, 0.315f, -1.426f, 0.353f, 1f, 0f, -176.854f, false, false, false, false, 2, true, false, false);
 			ENTITY::ATTACH_ENTITY_TO_ENTITY(&(iLocal_36[4]), iLocal_46, 17, -0.227f, -1.418f, 0.345f, 1f, 0f, -174.837f, false, false, false, false, 2, true, false, false);
-			PROPSET::_0xD80FAF919A2E56EA(iLocal_46, 1793592017);
+			PROPSET::_0xD80FAF919A2E56EA(iLocal_46, joaat("pg_mission_brt1_tomansion01x"));
 			VEHICLE::SET_VEHICLE_EXTRA(iLocal_46, 5, true);
 			iLocal_30 = 6;
 		case 6:

@@ -127,7 +127,7 @@ int func_3(int iParam0)
 		case 1:
 			return joaat("DISTRICT_BIG_VALLEY");
 		case 2:
-			return 38535626;
+			return joaat("DISTRICT_BLUEGILL_MARSH");
 		case 3:
 			return joaat("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
@@ -135,15 +135,15 @@ int func_3(int iParam0)
 		case 5:
 			return joaat("DISTRICT_GRIZZLIES");
 		case 6:
-			return -1808688941;
+			return joaat("DISTRICT_GRIZZLIES_EAST");
 		case 7:
-			return -736296038;
+			return joaat("DISTRICT_GRIZZLIES_WEST");
 		case 8:
-			return -909439131;
+			return joaat("DISTRICT_GUAMA");
 		case 9:
-			return 1917744724;
+			return joaat("DISTRICT_HEARTLAND");
 		case 10:
-			return 821748379;
+			return joaat("DISTRICT_ROANOKE_RIDGE");
 		case 11:
 			return joaat("DISTRICT_SCARLETT_MEADOWS");
 		case 12:

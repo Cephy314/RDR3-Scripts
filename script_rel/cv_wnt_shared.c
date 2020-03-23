@@ -4201,7 +4201,7 @@ int func_122(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -8670,7 +8670,7 @@ int func_279()
 
 int func_280()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}
@@ -11061,7 +11061,7 @@ void func_380(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_12), "", 64);
 			break;
 		case 6:
-			uParam0->f_1 = -793862732; /* GXTEntry: "The Case of the Shrew in the Fog" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_SHREW");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 5;
 			uParam0->f_4 = 0;
@@ -11083,7 +11083,7 @@ void func_380(var uParam0, int iParam1)
 			uParam0->f_23 = -535255159;
 			break;
 		case 8:
-			uParam0->f_1 = -1487662509; /* GXTEntry: "Otis Miller and The Black-Hearted Lady" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_BLACK_HEART_LADY");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 14;
 			uParam0->f_4 = 0;
@@ -11584,42 +11584,38 @@ void func_404(int iParam0, bool bParam1)
 	{
 		case 29:
 			sVar2 = "PRRGS_LOG";
-			iVar3 = 1273430131; /* GXTEntry: "SHOP ROBBERY" */
+			iVar3 = joaat("PRRGS_LOG");
 			sVar4 = "PRRGS_LOG_DESC";
-			iVar5 = 815429461; /* GXTEntry: "There\'s a rumor about some shady activities in the basement of the Rhodes Gunsmit" +
-    "h. Look around the shop to investigate." */
+			iVar5 = joaat("PRRGS_LOG_DESC");
 			sVar0 = "PRRGS_LOG_OBJ1";
-			iVar1 = -790894613; /* GXTEntry: "Investigate the Gunsmith." */
+			iVar1 = joaat("PRRGS_LOG_OBJ1");
 			iVar8 = -1662367475;
 			break;
 		case 43:
 			sVar2 = "PRNBG_LOG";
-			iVar3 = 891195117; /* GXTEntry: "SHOP ROBBERY" */
+			iVar3 = joaat("PRNBG_LOG");
 			sVar4 = "PRNBG_LOG_DESC";
-			iVar5 = -374810475; /* GXTEntry: "Rumor has it the Gunsmith in Saint Denis is running a profitable gambling operati" +
-    "on. Look around the shop to investigate." */
+			iVar5 = joaat("PRNBG_LOG_DESC");
 			sVar0 = "PRNBG_LOG_OBJ2";
-			iVar1 = -904554217; /* GXTEntry: "Investigate the Gunsmith." */
+			iVar1 = joaat("PRNBG_LOG_OBJ2");
 			iVar8 = -1637141202;
 			break;
 		case 61:
 			sVar2 = "PRSGS_LOG";
-			iVar3 = -48607192; /* GXTEntry: "SHOP ROBBERY" */
+			iVar3 = joaat("PRSGS_LOG");
 			sVar4 = "PRSGS_LOG_DESC";
-			iVar5 = -1489851049; /* GXTEntry: "The shopkeeper in the general store over at Strawberry is rumored to be running a" +
-    " secret moonshine operation. Look around the shop to investigate." */
+			iVar5 = joaat("PRSGS_LOG_DESC");
 			sVar0 = "PRSGS_LOG_OBJ3";
-			iVar1 = -1687482810; /* GXTEntry: "Investigate the General Store." */
+			iVar1 = joaat("PRSGS_LOG_OBJ3");
 			iVar8 = -439915887;
 			break;
 		case 73:
 			sVar2 = "PRVDO_LOG";
-			iVar3 = 1979151958; /* GXTEntry: "SHOP ROBBERY" */
+			iVar3 = joaat("PRVDO_LOG");
 			sVar4 = "PRVDO_LOG_DESC";
-			iVar5 = 305972; /* GXTEntry: "There are rumors about the Valentine doctor being involved in some shady activiti" +
-    "es. Look around the shop to investigate." */
+			iVar5 = joaat("PRVDO_LOG_DESC");
 			sVar0 = "PRVDO_LOG_OBJ4";
-			iVar1 = 2100672420; /* GXTEntry: "Investigate the Doctor\'s Office." */
+			iVar1 = joaat("PRVDO_LOG_OBJ4");
 			iVar8 = -366465324;
 			break;
 	}
@@ -13293,7 +13289,7 @@ int func_440(int iParam0, bool bParam1)
 	{
 		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
 		iVar1 = iVar0;
-		if ((iVar1 != -447259824 && iVar1 != -1177373461) && iVar1 != -229964281)
+		if ((iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC") && iVar1 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) && iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC"))
 		{
 			return 0;
 		}
@@ -14664,7 +14660,7 @@ void func_494(var uParam0, int iParam1, char* sParam2, bool bParam3, bool bParam
 		if (bParam4)
 		{
 			UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar0);
-			Global_1359489->f_361.f_194 = func_575("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_490(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", -1507719118, 5000, 0, 0, 0, 0, 1, 1);
+			Global_1359489->f_361.f_194 = func_575("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_490(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("sp_missions"), 5000, 0, 0, 0, 0, 1, 1);
 		}
 	}
 }
@@ -15327,7 +15323,7 @@ var func_516(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	}
 	if (iParam6 == -1)
 	{
-		iParam6 = 138119161;
+		iParam6 = joaat("sp_notifications");
 	}
 	if (!bParam14)
 	{

@@ -2275,7 +2275,7 @@ void func_53(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			switch (iParam1)
 			{
 				case 16:
-					iParam0->f_8 = -468635158;
+					iParam0->f_8 = joaat("Hideout");
 					break;
 				case 17:
 					iParam0->f_8 = 1112069699;
@@ -4971,7 +4971,7 @@ float func_192(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		iVar0 = func_55(iParam1);
 		iVar1 = func_222(iVar0);
-		if (iVar1 == -1261475678 && PLAYER::_0xFB6EB8785F808551(PLAYER::PLAYER_ID(), Global_1901929->f_230.f_29, false))
+		if (iVar1 == joaat("ambush") && PLAYER::_0xFB6EB8785F808551(PLAYER::PLAYER_ID(), Global_1901929->f_230.f_29, false))
 		{
 			func_155(iParam0, iParam2, 65536, 0);
 			return 0f;
@@ -6043,7 +6043,7 @@ int func_236(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -6093,17 +6093,17 @@ int func_237(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -6117,7 +6117,7 @@ int func_238(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -6932,7 +6932,7 @@ int func_284(int iParam0)
 			return 0;
 		case joaat("secondary"):
 			return 1;
-		case -177397452:
+		case joaat("Trolley"):
 			return 2;
 	}
 	return 0;
@@ -7104,7 +7104,7 @@ int func_299(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -7117,9 +7117,9 @@ int func_299(int iParam0)
 		case 1884341302:
 		case 1918154385:
 			return 1;
-		case -1261475678:
+		case joaat("ambush"):
 		case -669677371:
-		case -468635158:
+		case joaat("Hideout"):
 			return 8;
 		default:
 			break;

@@ -329,11 +329,11 @@ int func_20(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 841127028;
+			return joaat("DOOR_NEW_GUNSHOP_INT_BACK");
 		case 1:
-			return 925575409;
+			return joaat("DOOR_VAL_DOC_BACK_RM");
 		case 2:
-			return -855228377;
+			return joaat("DOOR_VAL_DOC_BACK");
 		default:
 			break;
 	}
@@ -404,13 +404,13 @@ int func_26()
 	vVar4 = { func_40() };
 	switch (iLocal_59)
 	{
-		case 841127028:
+		case joaat("DOOR_NEW_GUNSHOP_INT_BACK"):
 			fVar7 = 115f;
 			break;
-		case 925575409:
+		case joaat("DOOR_VAL_DOC_BACK_RM"):
 			fVar7 = 10f;
 			break;
-		case -855228377:
+		case joaat("DOOR_VAL_DOC_BACK"):
 			fVar7 = 100f;
 			break;
 	}

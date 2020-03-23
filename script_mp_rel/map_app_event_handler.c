@@ -309,7 +309,7 @@ int func_10(var uParam0)
 		if (!uParam0->f_28)
 		{
 			uParam0->f_38 = 0;
-			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), -556114113);
+			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), joaat("show_info"));
 			return 1;
 		}
 	}
@@ -583,7 +583,7 @@ int func_20(int iParam0)
 			return 40;
 		case 1778899666:
 			return 99;
-		case -1947415645:
+		case joaat("BUTCHER"):
 			return 87;
 		case 1862420670:
 			return 101;
@@ -657,9 +657,9 @@ int func_22(int iParam0)
 			return 1072597802;
 		case joaat("newaustin"):
 			return 1259085938;
-		case -1289136221:
+		case joaat("NEWHANOVER"):
 			return 1762760291;
-		case 1246494439:
+		case joaat("WESTELIZABETH"):
 			return 1715468631;
 		case -1973391500:
 			return -960313506;
@@ -972,7 +972,7 @@ int func_24(int iParam0)
 		case 1:
 			return joaat("DISTRICT_BIG_VALLEY");
 		case 2:
-			return 38535626;
+			return joaat("DISTRICT_BLUEGILL_MARSH");
 		case 3:
 			return joaat("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
@@ -980,15 +980,15 @@ int func_24(int iParam0)
 		case 5:
 			return joaat("DISTRICT_GRIZZLIES");
 		case 6:
-			return -1808688941;
+			return joaat("DISTRICT_GRIZZLIES_EAST");
 		case 7:
-			return -736296038;
+			return joaat("DISTRICT_GRIZZLIES_WEST");
 		case 8:
-			return -909439131;
+			return joaat("DISTRICT_GUAMA");
 		case 9:
-			return 1917744724;
+			return joaat("DISTRICT_HEARTLAND");
 		case 10:
-			return 821748379;
+			return joaat("DISTRICT_ROANOKE_RIDGE");
 		case 11:
 			return joaat("DISTRICT_SCARLETT_MEADOWS");
 		case 12:
@@ -1276,7 +1276,7 @@ void func_31(var uParam0)
 
 void func_32(var uParam0)
 {
-	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), 1136348382))
+	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), joaat("hide_info")))
 	{
 		uParam0->f_38 = 1;
 	}
@@ -1583,9 +1583,7 @@ int func_43(var uParam0)
 	}
 	if (!TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_26))
 	{
-		uParam0->f_26 = 1078908615; /* GXTEntry: "A daily meal of soup is prepared in the camp made with the best parts of the late" +
-    "st hunted game. The soups help to revitalize the gang members and can provide a " +
-    "variety of health benefits." */
+		uParam0->f_26 = joaat("MAP_CARD_CAMP_FOOD");
 	}
 	if (TXD::_DOES_STREAMED_TXD_EXIST(uParam0->f_26))
 	{
@@ -1898,7 +1896,7 @@ void func_54(var uParam0, var uParam1)
 							func_108(iVar7);
 							uParam0->f_18 = 0;
 							uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_9, "startable", true);
-							uParam0->f_17 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "startPrompt", -578259052);
+							uParam0->f_17 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "startPrompt", joaat("start_matchmaking"));
 							func_55(uParam0);
 						}
 						DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam0->f_8, -1, &(uParam1->f_25), uParam0->f_9);
@@ -1923,7 +1921,7 @@ void func_55(var uParam0)
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam0->f_16, !bVar2);
 			if (bVar0)
 			{
-				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_17, 1595859403);
+				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_17, joaat("MATCHMAKING_ACTIVE_LINK"));
 			}
 			else if (bVar1)
 			{
@@ -1931,7 +1929,7 @@ void func_55(var uParam0)
 			}
 			else
 			{
-				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_17, -578259052);
+				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_17, joaat("start_matchmaking"));
 			}
 			uParam0->f_18 = bVar2;
 		}
@@ -3147,7 +3145,7 @@ int func_91(int iParam0)
 	{
 		case joaat("NET_PLAYLIST_RACE_SERIES"):
 			return 0;
-		case -1804958860:
+		case joaat("NET_PLAYLIST_FEATURED_SERIES_001"):
 			return 1;
 		case joaat("NET_PLAYLIST_ADVERSARY_SMALL"):
 			return 2;
@@ -4945,7 +4943,7 @@ int func_148(int iParam0)
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
 		case joaat("alden"):
 			return joaat("GFH_ALDEN");
-		case -604384854:
+		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
 		case -399874304:
 			return joaat("GFH_THE_BOY");
@@ -4977,11 +4975,11 @@ int func_148(int iParam0)
 			return joaat("RIGGS_STATION_BOUNTY_BOARD");
 		case -667711246:
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
-		case 2132950130:
+		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
 		case 1766283257:
 			return joaat("GFH_MAGGIE");
-		case -408236271:
+		case joaat("MARCEL"):
 			return joaat("GFH_MARCEL");
 		default:
 			break;
@@ -5164,7 +5162,7 @@ int func_163(int iParam0)
 		case 0:
 			return joaat("NET_PLAYLIST_RACE_SERIES");
 		case 1:
-			return -1804958860;
+			return joaat("NET_PLAYLIST_FEATURED_SERIES_001");
 		case 2:
 			return joaat("NET_PLAYLIST_ADVERSARY_SMALL");
 		case 3:
@@ -6930,7 +6928,7 @@ int func_251(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return 1927192818;
+			return joaat("challenges");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -7016,7 +7014,7 @@ int func_255(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -7066,17 +7064,17 @@ int func_256(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -7090,7 +7088,7 @@ int func_257(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;

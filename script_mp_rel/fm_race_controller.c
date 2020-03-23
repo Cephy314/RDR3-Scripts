@@ -3170,10 +3170,10 @@ void func_7(bool bParam0)
 	CAM::DESTROY_CAM(iLocal_7299, false);
 	CAM::DESTROY_CAM(iLocal_7300, false);
 	func_182();
-	STREAMING::REMOVE_NAMED_PTFX_ASSET(134607740);
+	STREAMING::REMOVE_NAMED_PTFX_ASSET(joaat("scr_net_race_checkpoints"));
 	if (func_183())
 	{
-		STREAMING::REMOVE_NAMED_PTFX_ASSET(1330862000);
+		STREAMING::REMOVE_NAMED_PTFX_ASSET(joaat("scr_net_target_races"));
 	}
 	func_184(0);
 	iVar0 = 0;
@@ -25028,15 +25028,15 @@ int func_887()
 	int iVar0;
 
 	iVar0 = 1;
-	STREAMING::REQUEST_NAMED_PTFX_ASSET(134607740);
-	if (!STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(134607740))
+	STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("scr_net_race_checkpoints"));
+	if (!STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("scr_net_race_checkpoints")))
 	{
 		iVar0 = 0;
 	}
 	if (func_183())
 	{
-		STREAMING::REQUEST_NAMED_PTFX_ASSET(1330862000);
-		if (!STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(1330862000))
+		STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("scr_net_target_races"));
+		if (!STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("scr_net_target_races")))
 		{
 			iVar0 = 0;
 		}
@@ -34041,7 +34041,7 @@ void func_1160(int iParam0)
 
 	sVar0 = "Out_of_Bounds";
 	sVar1 = "RDRO_Countdown_Sounds";
-	if ((((((((((((UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) && UIAPPS::_0x96FD694FE5BE55DC(joaat("pause_menu")) != 1271225230) || UIAPPS::_IS_APP_RUNNING(2066271527)) || UIAPPS::_IS_APP_RUNNING(683057487)) || UIAPPS::_IS_APP_RUNNING(-1318692639)) || UIAPPS::_IS_APP_RUNNING(-779472066)) || UIAPPS::_IS_APP_RUNNING(joaat("policies_menu"))) || UIAPPS::_IS_APP_RUNNING(1916894743)) || UIAPPS::_IS_APP_RUNNING(joaat("abilities"))) || UIAPPS::_IS_APP_RUNNING(joaat("store"))) || UIAPPS::_IS_APP_RUNNING(-605293197)) || UIAPPS::_IS_APP_RUNNING(347537322)) || UIAPPS::_IS_APP_RUNNING(-479097442))
+	if ((((((((((((UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) && UIAPPS::_0x96FD694FE5BE55DC(joaat("pause_menu")) != 1271225230) || UIAPPS::_IS_APP_RUNNING(joaat("social_club_feed"))) || UIAPPS::_IS_APP_RUNNING(683057487)) || UIAPPS::_IS_APP_RUNNING(-1318692639)) || UIAPPS::_IS_APP_RUNNING(joaat("help_menu"))) || UIAPPS::_IS_APP_RUNNING(joaat("policies_menu"))) || UIAPPS::_IS_APP_RUNNING(1916894743)) || UIAPPS::_IS_APP_RUNNING(joaat("abilities"))) || UIAPPS::_IS_APP_RUNNING(joaat("store"))) || UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay"))) || UIAPPS::_IS_APP_RUNNING(joaat("progress_menu"))) || UIAPPS::_IS_APP_RUNNING(-479097442))
 	{
 		bVar2 = true;
 	}
@@ -36476,7 +36476,7 @@ void func_1239(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	iVar6 = func_831(iParam0);
 	iVar10 = 0;
 	iVar11 = joaat("inventory");
-	if (((((((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038) && iParam0 != 446901936) && iParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && iParam0 != 34372170) && iParam0 != 963726415) && iParam0 != 1701457723)
+	if (((((((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038) && iParam0 != 446901936) && iParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && iParam0 != 34372170) && iParam0 != joaat("AMMO_POISONBOTTLE")) && iParam0 != 1701457723)
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");
@@ -54352,13 +54352,13 @@ int func_1864(int iParam0, int iParam1)
 		case 8:
 			return joaat("CRIME_BURGLARY");
 		case 9:
-			return -1560342203 /* GXTEntry: "Cheating" */;
+			return joaat("CRIME_CHEATING");
 		case 10:
 			return joaat("CRIME_DISTURBANCE");
 		case 11:
 			return joaat("CRIME_EXPLOSION");
 		case 12:
-			return -1759599185 /* GXTEntry: "Grave Robbery" */;
+			return joaat("CRIME_GRAVE_ROBBERY");
 		case 13:
 			return joaat("CRIME_HASSLE");
 		case 14:
@@ -54372,7 +54372,7 @@ int func_1864(int iParam0, int iParam1)
 		case 18:
 			return joaat("CRIME_JACK_VEHICLE");
 		case 19:
-			return 314693001 /* GXTEntry: "Jail Break" */;
+			return joaat("CRIME_JAIL_BREAK");
 		case 20:
 			return joaat("CRIME_KIDNAPPING");
 		case 21:
@@ -54396,13 +54396,13 @@ int func_1864(int iParam0, int iParam1)
 		case 30:
 			return joaat("CRIME_MURDER_LIVESTOCK");
 		case 31:
-			return 1396375613 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_PROPERTY_DESTRUCTION");
 		case 32:
 			return joaat("CRIME_RESIST_ARREST");
 		case 33:
 			return joaat("CRIME_ROBBERY");
 		case 34:
-			return -59535775 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_STAGECOACH_ROBBERY");
 		case 35:
 			return joaat("CRIME_STOLEN_GOODS");
 		case 36:
@@ -54418,7 +54418,7 @@ int func_1864(int iParam0, int iParam1)
 		case 41:
 			return joaat("CRIME_THREATEN_LAW");
 		case 42:
-			return 1685924442 /* GXTEntry: "Train Robbery" */;
+			return joaat("CRIME_TRAIN_ROBBERY");
 		case 43:
 			return joaat("CRIME_TRAMPLE");
 		case 44:
@@ -66335,7 +66335,7 @@ int func_2273(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -68771,7 +68771,7 @@ int func_2368(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -68821,17 +68821,17 @@ int func_2369(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -68845,7 +68845,7 @@ int func_2370(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -71980,7 +71980,7 @@ int func_2526(int iParam0)
 	int iVar0;
 
 	iVar0 = func_831(iParam0);
-	if ((iVar0 == 810656527 || iVar0 == 2088138839) || iVar0 == 129583122)
+	if ((iVar0 == joaat("ability_card") || iVar0 == 2088138839) || iVar0 == 129583122)
 	{
 		return 1;
 	}

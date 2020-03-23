@@ -5139,7 +5139,7 @@ var func_324(struct<5> Param0, int iParam5)
 					case joaat("scenario"):
 						iVar2 = func_351(iVar1, 1);
 						break;
-					case -562054818:
+					case joaat("veg_mod"):
 						iVar2 = func_383(iVar1, 1);
 						break;
 					case 1275965103:
@@ -5918,7 +5918,7 @@ int func_383(int iParam0, int iParam1)
 			return 4;
 		case 331632914:
 			return 9;
-		case 874525785:
+		case joaat("debris"):
 			return 0;
 		case 1152024837:
 			return 10;

@@ -89,7 +89,7 @@ void __EntryFunction__()
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_HORSE_ATTACK_PRIMARY"), false);
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MELEE_HORSE_ATTACK_SECONDARY"), false);
 		CAM::_0x8910C24B7E0046EC();
-		if (UIAPPS::_IS_APP_RUNNING(-605293197))
+		if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
 		{
 			HUD::_0xC9CAEAEEC1256E54(382897689);
 		}
@@ -117,9 +117,9 @@ void func_1(var uParam0, var uParam1)
 		}
 		return;
 	}
-	if (UIAPPS::_IS_APP_RUNNING(-605293197))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH(-605293197);
+		UIAPPS::_CLOSE_APP_BY_HASH(joaat("translation_overlay"));
 	}
 	if (uParam0->f_115)
 	{
@@ -277,7 +277,7 @@ int func_8(var uParam0, var uParam1)
 	switch (*uParam0)
 	{
 		case 0:
-			uParam0->f_101 = TASK::_0x05A0100EA714DB68(Global_34, 2120637577);
+			uParam0->f_101 = TASK::_0x05A0100EA714DB68(Global_34, joaat("PrimaryItem"));
 			if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_101))
 			{
 				func_28(uParam0, (*uParam1)[0 /*11*/]);
@@ -352,7 +352,7 @@ int func_9(var uParam0, var uParam1)
 		case 0:
 			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_101))
 			{
-				uParam0->f_101 = TASK::_0x05A0100EA714DB68(Global_34, 2120637577);
+				uParam0->f_101 = TASK::_0x05A0100EA714DB68(Global_34, joaat("PrimaryItem"));
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_101))
 			{
@@ -473,7 +473,7 @@ void func_14(var uParam0, var uParam1)
 
 void func_15(var uParam0)
 {
-	if (uParam0->f_5.f_1 && !UIAPPS::_IS_APP_RUNNING(-605293197))
+	if (uParam0->f_5.f_1 && !UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND("READ", "HUD_SHOP_SOUNDSET", true, 0);
 		uParam0->f_5.f_1 = 0;
@@ -1150,14 +1150,14 @@ void func_40(var uParam0, int iParam1)
 {
 	if (func_5(iParam1, -1227898937))
 	{
-		if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, joaat("newspaper")) == 0)
+		if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("newspaper")) == 0)
 		{
 			uParam0->f_5.f_1 = 1;
 			AUDIO::PLAY_SOUND_FRONTEND("READ", "HUD_SHOP_SOUNDSET", true, 0);
 			func_82(uParam0, iParam1);
 		}
 	}
-	else if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(-605293197, joaat("generic")) == 0)
+	else if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) == 0)
 	{
 		uParam0->f_5.f_1 = 1;
 		AUDIO::PLAY_SOUND_FRONTEND("READ", "HUD_SHOP_SOUNDSET", true, 0);
@@ -3074,7 +3074,7 @@ int func_94(int iParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			iVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415: /* GXTEntry: "Toxic Moonshine" */
+		case joaat("AMMO_POISONBOTTLE"):
 			iVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -3735,7 +3735,7 @@ void func_126(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar6 = func_83(iParam0);
 	iVar10 = 0;
 	iVar11 = joaat("inventory");
-	if (((((((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038) && iParam0 != 446901936) && iParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && iParam0 != 34372170) && iParam0 != 963726415) && iParam0 != 1701457723)
+	if (((((((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038) && iParam0 != 446901936) && iParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && iParam0 != 34372170) && iParam0 != joaat("AMMO_POISONBOTTLE")) && iParam0 != 1701457723)
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");
@@ -8950,7 +8950,7 @@ int func_340(struct<10> Param0, var uParam10, var uParam11, var uParam12, var uP
 	switch (iVar0)
 	{
 		case -1977020088:
-		case -1879562593:
+		case joaat("coupon"):
 		case joaat("horse"):
 		case joaat("Emote"):
 		case joaat("WEAPON_MOD"):
@@ -8958,10 +8958,10 @@ int func_340(struct<10> Param0, var uParam10, var uParam11, var uParam12, var uP
 		case 129583122:
 		case joaat("ammo"):
 		case 658570475:
-		case 810656527:
+		case joaat("ability_card"):
 		case joaat("gold"):
 		case joaat("component"):
-		case 1495295997:
+		case joaat("minigame"):
 		case 1780172046:
 		case 2071704023:
 		case 2088138839:
@@ -10742,7 +10742,7 @@ int func_413(int iParam0)
 	{
 		return 0;
 	}
-	if (((((((((((((iVar0 == COLLECTION::_0xCC644BC1DD655269(-623226361, 0) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-1452445456, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(332438661, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(1632674359, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(56759509, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(2145533727, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-1874365462, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-1658668866, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(90781239, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(1997097980, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(920487791, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-668555046, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-839148413, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(10424351, 0))
+	if (((((((((((((iVar0 == COLLECTION::_0xCC644BC1DD655269(joaat("COINS"), 0) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-1452445456, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(332438661, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(1632674359, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(56759509, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(2145533727, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-1874365462, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-1658668866, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(90781239, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(1997097980, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(920487791, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-668555046, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(-839148413, 0)) || iVar0 == COLLECTION::_0xCC644BC1DD655269(10424351, 0))
 	{
 		return 1;
 	}

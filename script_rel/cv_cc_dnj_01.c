@@ -3785,7 +3785,7 @@ int func_110(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -6757,7 +6757,7 @@ int func_240()
 
 int func_241()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}

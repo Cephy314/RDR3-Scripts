@@ -1458,7 +1458,7 @@ int func_5(var uParam0, var uParam1)
 					VOLUME::_0x541B8576615C33DE(uParam0->f_239, uParam0->f_10);
 					if (!TASK::_0x841475AC96E794D1(uParam0->f_7))
 					{
-						uParam0->f_7 = TASK::CREATE_SCENARIO_POINT(-545460140, uParam0->f_10, uParam0->f_9, 0, 0, 0);
+						uParam0->f_7 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_BARCUSTOMER"), uParam0->f_10, uParam0->f_9, 0, 0, 0);
 						TASK::_0xA7479FB665361EDB(uParam0->f_7, 0);
 						TASK::_0xE69FDA40AAC3EFC0(uParam0->f_7, 0);
 						TASK::_0x5AF19B6CC2115D34(uParam0->f_7, 32, 1);
@@ -3773,7 +3773,7 @@ void func_31(var uParam0)
 	}
 	if (uParam0->f_248 == 1)
 	{
-		STREAMING::_0x19A6BE7D9C6884D3(-545460140, 1, ENTITY::GET_ENTITY_MODEL(Global_34), 0);
+		STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARCUSTOMER"), 1, ENTITY::GET_ENTITY_MODEL(Global_34), 0);
 		GRAPHICS::_0x5199405EABFBD7F0("CamTransitionBlink");
 		uParam0->f_248++;
 		return;
@@ -5962,7 +5962,7 @@ void func_103(var uParam0, int iParam1, var uParam2, int iParam3)
 	{
 		case 0:
 		case 1:
-			*uParam0 = TASK::CREATE_SCENARIO_POINT(-1177373461, func_50(iParam3), func_95(iParam3), 0, 0, 0);
+			*uParam0 = TASK::CREATE_SCENARIO_POINT(joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"), func_50(iParam3), func_95(iParam3), 0, 0, 0);
 			break;
 		case 2:
 		case 3:
@@ -7805,19 +7805,19 @@ int func_163(int iParam0)
 	switch (iParam0)
 	{
 		case 5:
-			return 49689699;
+			return joaat("VAL_Bartender");
 		case 6:
 			return 1690461416;
 		case 3:
-			return -1792832235;
+			return joaat("RHD_Bartender");
 		case 2:
 			return 785713260;
 		case 1:
 			return -2099882877;
 		case 8:
-			return 41051113;
+			return joaat("VHT_Bartender");
 		case 0:
-			return -53891762;
+			return joaat("BLW_Bartender");
 		case 4:
 			return 1016865322;
 		case 7:
@@ -9830,22 +9830,22 @@ int func_235(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
-		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_MEDIUM"):
-		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
-		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
-		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT"):
 		case -545779394:
-		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
-		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_LOW"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_HIGH"):
 		case 1532695640:
-		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"):
 		case 1847740267:
-		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
-		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN"):
 			return 0;
 	}
 	return 1;

@@ -768,12 +768,12 @@ void func_6(int iParam0)
 					{
 					}
 					Local_235.f_1 = joaat("default");
-					Local_235 = 931646849;
+					Local_235 = joaat("CLIPSET@MINI_GAMES@BATHING@REGULAR@ARTHUR");
 					Local_235.f_30 = "BATHING";
 					TASK::TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS(Global_35, sLocal_302, &Local_235, 1f, 0, 0, 0);
 					iLocal_58 = MISC::GET_GAME_TIMER();
 					Local_235.f_1 = joaat("default");
-					Local_235 = 64669404;
+					Local_235 = joaat("CLIPSET@MINI_GAMES@BATHING@REGULAR@RAG");
 					Local_235.f_30 = "BATHING";
 					TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(iLocal_64, sLocal_302, &Local_235, iParam0->f_60, 0f, 0f, iParam0->f_63, 2, 3f, 0, 0, 0, 0);
 					PED::_0x2208438012482A1A(Global_35, false, false);
@@ -806,11 +806,11 @@ void func_6(int iParam0)
 					ENTITY::SET_ENTITY_COLLISION(iParam0->f_144, false, false);
 					ENTITY::SET_ENTITY_DYNAMIC(iParam0->f_144, false);
 					Local_235.f_1 = joaat("default");
-					Local_235 = -651856710;
+					Local_235 = joaat("CLIPSET@MINI_GAMES@BATHING@DELUXE@ARTHUR");
 					TASK::TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS(Global_35, sLocal_303, &Local_235, 1f, 0, 0, 0);
 					iLocal_58 = MISC::GET_GAME_TIMER();
 					Local_235.f_1 = joaat("default");
-					Local_235 = -1442829246;
+					Local_235 = joaat("CLIPSET@MINI_GAMES@BATHING@DELUXE@MAID");
 					TASK::TASK_MOVE_NETWORK_BY_NAME_WITH_INIT_PARAMS(iParam0->f_144, sLocal_303, &Local_235, 1f, 0, 0, 0);
 					Local_235.f_1 = joaat("default");
 					Local_235 = 771395316;
@@ -2272,7 +2272,7 @@ int func_37(int iParam0, var uParam1)
 	}
 	if (PED::IS_PED_USING_ANY_SCENARIO(PLAYER::PLAYER_PED_ID()))
 	{
-		if (func_135(PLAYER::PLAYER_PED_ID(), 817658057) || func_135(PLAYER::PLAYER_PED_ID(), 1231068245))
+		if (func_135(PLAYER::PLAYER_PED_ID(), joaat("WORLD_HUMAN_BARCUSTOMER_BEER")) || func_135(PLAYER::PLAYER_PED_ID(), joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY")))
 		{
 			*uParam1 = 1;
 			return 1;

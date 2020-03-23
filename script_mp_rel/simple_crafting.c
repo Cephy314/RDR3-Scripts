@@ -807,7 +807,7 @@ void func_10(var uParam0, int iParam1)
 				{
 					return;
 				}
-				if (iVar7 == -518407211 || iVar7 == 1662215698)
+				if (iVar7 == joaat("WORLD_PLAYER_DYNAMIC_KNEEL_KNIFE") || iVar7 == 1662215698)
 				{
 					if (!PED::_0x68821369A2CEADD5(Global_34, 653141085))
 					{
@@ -841,7 +841,7 @@ void func_10(var uParam0, int iParam1)
 					func_61(uParam0);
 					uParam0->f_60 = 0;
 				}
-				if (iVar7 != -518407211 && iVar7 != 1662215698)
+				if (iVar7 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL_KNIFE") && iVar7 != 1662215698)
 				{
 					if (uParam0->f_28)
 					{
@@ -987,7 +987,7 @@ void func_10(var uParam0, int iParam1)
 							}
 							else if (iVar8 == -842117252)
 							{
-								if (uParam0->f_73 == 963726415)
+								if (uParam0->f_73 == joaat("AMMO_POISONBOTTLE"))
 								{
 									uParam0->f_81 = OBJECT::CREATE_OBJECT(400517539, Global_35, true, NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT(), false, false, true);
 								}
@@ -1077,7 +1077,7 @@ void func_10(var uParam0, int iParam1)
 				{
 					if (!(func_25(uParam0[1], 0) && PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_GAME_MENU_ACCEPT"))))
 					{
-						if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 596390595))
+						if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, joaat("safeToBreakout")))
 						{
 							if (!func_75(0) || func_76())
 							{
@@ -1187,7 +1187,7 @@ void func_10(var uParam0, int iParam1)
 				func_74(&(uParam0->f_79), &(uParam0->f_80));
 				func_74(&(uParam0->f_83), &(uParam0->f_84));
 				iVar10 = PED::_0x569F1E1237508DEB(Global_34);
-				if (iVar10 != -518407211 && iVar10 != 1662215698)
+				if (iVar10 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL_KNIFE") && iVar10 != 1662215698)
 				{
 					WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
 				}
@@ -1261,7 +1261,7 @@ void func_10(var uParam0, int iParam1)
 				func_74(&(uParam0->f_79), &(uParam0->f_80));
 				func_74(&(uParam0->f_83), &(uParam0->f_84));
 				iVar14 = PED::_0x569F1E1237508DEB(Global_34);
-				if (iVar14 != -518407211 && iVar14 != 1662215698)
+				if (iVar14 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL_KNIFE") && iVar14 != 1662215698)
 				{
 					WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
 				}
@@ -1879,7 +1879,7 @@ int func_38(var uParam0)
 		return 1;
 	}
 	uParam0->f_35 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "CraftingDatastore");
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_35, "filter", func_115(uParam0->f_25, -583079595 /* GXTEntry: "Recipes" */, func_114(uParam0->f_48)));
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_35, "filter", func_115(uParam0->f_25, joaat("recipes"), func_114(uParam0->f_48)));
 	if (uParam0->f_25)
 	{
 		DATABINDING::_DATABINDING_ADD_DATA_INT(uParam0->f_35, "filterCount", true);
@@ -2474,7 +2474,7 @@ void func_54(var uParam0)
 			{
 				if (iVar0 == -842117252)
 				{
-					if (uParam0->f_73 == 963726415)
+					if (uParam0->f_73 == joaat("AMMO_POISONBOTTLE"))
 					{
 						uParam0->f_85 = joaat("mp006_s_cft_poisonbottle01");
 					}
@@ -3153,7 +3153,7 @@ bool func_72(bool bParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			bVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415: /* GXTEntry: "Toxic Moonshine" */
+		case joaat("AMMO_POISONBOTTLE"):
 			bVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -3631,7 +3631,7 @@ void func_98(var uParam0)
 	if (TELEMETRY::_0xF184B3ECE36219CF(uParam0->f_22, &uVar0))
 	{
 		vVar4 = { func_195(&Global_1275573) };
-		TELEMETRY::_0xDF516E598D966D06(&uVar0, 0, vVar4.z, 0, 1, 1084182731, 531932013, uParam0->f_73, func_71(uParam0->f_73, -2011345500));
+		TELEMETRY::_0xDF516E598D966D06(&uVar0, 0, vVar4.z, 0, 1, 1084182731, joaat("STEW_POT"), uParam0->f_73, func_71(uParam0->f_73, -2011345500));
 	}
 }
 
@@ -5843,7 +5843,7 @@ void func_174(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar6 = func_172(bParam0);
 	iVar10 = 0;
 	iVar11 = joaat("inventory");
-	if (((((((iVar6 == joaat("ammo") && bParam0 != 424030678) && bParam0 != -1188697038) && bParam0 != 446901936) && bParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && bParam0 != 34372170) && bParam0 != 963726415) && bParam0 != 1701457723)
+	if (((((((iVar6 == joaat("ammo") && bParam0 != 424030678) && bParam0 != -1188697038) && bParam0 != 446901936) && bParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && bParam0 != 34372170) && bParam0 != joaat("AMMO_POISONBOTTLE")) && bParam0 != 1701457723)
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");
@@ -16340,7 +16340,7 @@ int func_538(bool bParam0)
 		case -593311590: /* GXTEntry: "Good Bighorn Sheep Carcass" */
 		case 765085831: /* GXTEntry: "Perfect Bighorn Sheep Carcass" */
 		case 2094730711: /* GXTEntry: "Poor Bighorn Sheep Carcass" */
-			return -1427844561 /* GXTEntry: "Sheep" */;
+			return joaat("AT_SHEEP");
 		case -1310590179: /* GXTEntry: "Good Buck Carcass" */
 		case -244657613: /* GXTEntry: "Poor Buck Carcass" */
 		case 992366796: /* GXTEntry: "Perfect Buck Carcass" */
@@ -16388,7 +16388,7 @@ int func_538(bool bParam0)
 		case -1347000030: /* GXTEntry: "Perfect Goat Carcass" */
 		case -505583391: /* GXTEntry: "Poor Goat Carcass" */
 		case -46978629: /* GXTEntry: "Good Goat Carcass" */
-			return 365206122 /* GXTEntry: "Goat" */;
+			return joaat("AT_GOAT");
 		case -1559227925: /* GXTEntry: "Perfect Goose Carcass" */
 		case 1562528937: /* GXTEntry: "Poor Goose Carcass" */
 		case 1645887374: /* GXTEntry: "Good Goose Carcass" */
@@ -16442,7 +16442,7 @@ int func_538(bool bParam0)
 			return -1592962144 /* GXTEntry: "Raven" */;
 			return -262717989 /* GXTEntry: "Rooster" */;
 			return 1398366530;
-			return -1427844561 /* GXTEntry: "Sheep" */;
+			return joaat("AT_SHEEP");
 			return -998653403 /* GXTEntry: "Skunk" */;
 			return -946474842 /* GXTEntry: "Black-tailed Rattlesnake" */;
 			return -547357240 /* GXTEntry: "Snake" */;

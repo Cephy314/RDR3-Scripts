@@ -3179,8 +3179,8 @@ int func_73(var uParam0)
 	func_160(uParam0, iLocal_19, iLocal_16, "p_guitar01x_PH_R_HAND", 0, 0);
 	func_162(uParam0, iLocal_19, 1);
 	func_161(uParam0, iLocal_19, 1);
-	STREAMING::_0x19A6BE7D9C6884D3(iLocal_27, 15, 0, -1196912204);
-	STREAMING::_0x19A6BE7D9C6884D3(iLocal_28, 15, 0, 1851339470);
+	STREAMING::_0x19A6BE7D9C6884D3(iLocal_27, 15, 0, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS_WHISKEY_MALE_D"));
+	STREAMING::_0x19A6BE7D9C6884D3(iLocal_28, 15, 0, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS_MALE_A"));
 	return 1;
 }
 
@@ -3925,7 +3925,7 @@ int func_111(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -7066,7 +7066,7 @@ int func_252()
 
 int func_253()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}

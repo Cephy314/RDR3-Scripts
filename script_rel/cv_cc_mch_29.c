@@ -3806,7 +3806,7 @@ int func_110(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -6026,8 +6026,8 @@ void func_197()
 	int iVar0;
 	int iVar1;
 
-	iVar0 = 2085472939; /* GXTEntry: "Cleet" */
-	iVar1 = 1158533825; /* GXTEntry: "Joe" */
+	iVar0 = joaat("DISCOVERABLE_NAME_CLEET_GOON");
+	iVar1 = joaat("DISCOVERABLE_NAME_JOE_GOON");
 	if (!PLAYER::_0x0772F87D7B07719A(PLAYER::GET_PLAYER_INDEX(), 0, iVar0))
 	{
 		PLAYER::_0x946D46CD6DFB9742(PLAYER::GET_PLAYER_INDEX(), 0, iVar0);
@@ -6823,7 +6823,7 @@ int func_244()
 
 int func_245()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}

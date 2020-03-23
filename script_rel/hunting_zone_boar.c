@@ -3072,7 +3072,7 @@ int func_80(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_COUGAR_JN");
 			}
 			break;
-		case -1204752482: /* GXTEntry: "Cow" */
+		case joaat("AT_COW"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CRACKER_COW_AR");
@@ -3462,7 +3462,7 @@ int func_80(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_GILA_MONSTER_JN");
 			}
 			break;
-		case 365206122: /* GXTEntry: "Goat" */
+		case joaat("AT_GOAT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ALPINE_GOAT_AR");
@@ -4296,7 +4296,7 @@ int func_80(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_HERRING_GULL_JN");
 			}
 			break;
-		case -1427844561: /* GXTEntry: "Sheep" */
+		case joaat("AT_SHEEP"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SHEEP_AR");

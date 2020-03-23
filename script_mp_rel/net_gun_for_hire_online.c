@@ -3255,7 +3255,7 @@ int func_114(int iParam0)
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
 		case joaat("alden"):
 			return joaat("GFH_ALDEN");
-		case -604384854:
+		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
 		case -399874304:
 			return joaat("GFH_THE_BOY");
@@ -3287,11 +3287,11 @@ int func_114(int iParam0)
 			return joaat("RIGGS_STATION_BOUNTY_BOARD");
 		case -667711246:
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
-		case 2132950130:
+		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
 		case 1766283257:
 			return joaat("GFH_MAGGIE");
-		case -408236271:
+		case joaat("MARCEL"):
 			return joaat("GFH_MARCEL");
 		default:
 			break;
@@ -5722,7 +5722,7 @@ int func_242(var uParam0, var uParam1)
 	switch (uParam1->f_4)
 	{
 		case joaat("Bounty"):
-			OBJECT::_0xD503D6F0986D58BC(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1), 1162354276);
+			OBJECT::_0xD503D6F0986D58BC(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1), joaat("GEM_BOUNTY_BOARD"));
 			break;
 	}
 	uParam0->f_99.f_12 = iVar0;
@@ -7728,12 +7728,11 @@ int func_307(var uParam0, var uParam1, int iParam2)
 	switch (iParam2)
 	{
 		case 0:
-			return func_461(bVar1, -1985714770 /* GXTEntry: "Mission will begin shortly." */, -1618573542 /* GXTEntry: "Your Posse Leader has launched a mission. This will begin shortly." */);
+			return func_461(bVar1, joaat("GFH_HELP_MISSION_BEING_SHORTLY_SOLO"), joaat("GFH_HELP_MISSION_BEGINS_SHORTLY"));
 		case 1:
 			return 2035028058 /* GXTEntry: "You have done a job too recently. Come back later to receive another." */;
 		case 2:
-			return -2064065234 /* GXTEntry: "This activity cannot be started as one or more of your Posse Members are incarcer" +
-    "ated." */;
+			return joaat("MG_POSSE_MEM_IN_JAIL");
 		case 3:
 			return -2043987916 /* GXTEntry: "Your honor ~BLIP_OUTLAW~ is too low to accept this job." */;
 		case 4:
@@ -7755,8 +7754,7 @@ int func_307(var uParam0, var uParam1, int iParam2)
 			return 2119196621 /* GXTEntry: "Accepting a job from this mission giver will remove your Posse Members from their" +
     " current activities." */;
 		case 12:
-			return 1436916876 /* GXTEntry: "Accepting this job will put you in the Offensive Playing Style ~BLIP_MP_PLAYSTYLE" +
-    "_OFFENSIVE~." */;
+			return joaat("GFH_HELP_CHANGE_TO_OFFENSIVE");
 		case 13:
 			switch (iVar2)
 			{
@@ -7979,7 +7977,7 @@ int func_307(var uParam0, var uParam1, int iParam2)
 		case 21:
 			return 198798182 /* GXTEntry: "You do not have enough money to purchase the Bounty Hunter License." */;
 		case 22:
-			return 1278892311 /* GXTEntry: "Your Posse is too large to start a Legendary Bounty" */;
+			return joaat("GFH_HELP_POSSE_TOO_LARGE_TO_ACCEPT_LEGENDARY_BOUNTY");
 		case 23:
 			return 847375033 /* GXTEntry: "Approach a Bounty Board ~1b~ to choose a poster and hunt down a bounty target." */;
 		case 24:
@@ -13826,7 +13824,7 @@ void func_539(var uParam0, var uParam1)
 	iVar10 = func_404(*uParam1);
 	if (iVar10 == -1)
 	{
-		iVar0 = -1896314993; /* GXTEntry: "~BLIP_MP_BOUNTY_HUNTER_INTRODUCTION~ Bounty Board" */
+		iVar0 = joaat("GFH_INTERACT_BOUNTY_BOARD");
 	}
 	else
 	{
@@ -13839,13 +13837,13 @@ void func_539(var uParam0, var uParam1)
 					iVar0 = func_685(uParam1, iVar10);
 					break;
 				case 0:
-					iVar0 = -1896314993; /* GXTEntry: "~BLIP_MP_BOUNTY_HUNTER_INTRODUCTION~ Bounty Board" */
+					iVar0 = joaat("GFH_INTERACT_BOUNTY_BOARD");
 					break;
 			}
 		}
 		else
 		{
-			iVar0 = -1896314993; /* GXTEntry: "~BLIP_MP_BOUNTY_HUNTER_INTRODUCTION~ Bounty Board" */
+			iVar0 = joaat("GFH_INTERACT_BOUNTY_BOARD");
 		}
 	}
 	if (iVar0 == uParam0->f_99.f_19)
@@ -17568,7 +17566,7 @@ int func_695(int iParam0)
 			return 2;
 		case -358638071:
 			return 1;
-		case -1718522759:
+		case joaat("MultiStart"):
 			return 0;
 		case 2055847821:
 			return 9;
@@ -23749,7 +23747,7 @@ int func_958(int iParam0)
 			return 0;
 		case joaat("secondary"):
 			return 1;
-		case -177397452:
+		case joaat("Trolley"):
 			return 2;
 	}
 	return 0;
@@ -24806,7 +24804,7 @@ int func_1008(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -24856,17 +24854,17 @@ int func_1009(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -24880,7 +24878,7 @@ int func_1010(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -26048,7 +26046,7 @@ int func_1065(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -26061,9 +26059,9 @@ int func_1065(int iParam0)
 		case 1884341302:
 		case 1918154385:
 			return 1;
-		case -1261475678:
+		case joaat("ambush"):
 		case -669677371:
-		case -468635158:
+		case joaat("Hideout"):
 			return 8;
 		default:
 			break;
@@ -26820,7 +26818,7 @@ int func_1098(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_615(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
+		return func_615(joaat("AMMO_POISONBOTTLE"), 1);
 	}
 	return func_615(iParam0, 1);
 }
@@ -27027,7 +27025,7 @@ int func_1116(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return 1927192818;
+			return joaat("challenges");
 		case 2:
 			return -1363591469;
 		case 3:

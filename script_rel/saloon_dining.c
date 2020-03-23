@@ -1488,7 +1488,7 @@ int func_4(var uParam0, var uParam1)
 					VOLUME::_0x541B8576615C33DE(uParam0->f_240, uParam0->f_10);
 					if (!TASK::_0x841475AC96E794D1(uParam0->f_7))
 					{
-						uParam0->f_7 = TASK::CREATE_SCENARIO_POINT(-545460140, uParam0->f_10, uParam0->f_9, 0f, 0, 0);
+						uParam0->f_7 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_BARCUSTOMER"), uParam0->f_10, uParam0->f_9, 0f, 0, 0);
 						TASK::_0xA7479FB665361EDB(uParam0->f_7, 0);
 						TASK::_0xE69FDA40AAC3EFC0(uParam0->f_7, 0);
 						TASK::_0x5AF19B6CC2115D34(uParam0->f_7, 32, 1);
@@ -3450,7 +3450,7 @@ int func_19(int iParam0)
 		case 116:
 			return joaat("REGION_GAP_RATHSKELLER_FORK");
 		case 129:
-			return -1868356491;
+			return joaat("REGION_GAP_SOLOMONS_FOLLY");
 		case 117:
 			return joaat("REGION_RIO_BENEDICT_POINT");
 		case 118:
@@ -3481,7 +3481,7 @@ int func_20(var uParam0, int iParam1, int iParam2)
 	{
 		uParam0->f_339 = func_136(uParam0->f_325, 0);
 	}
-	if (uParam0->f_339 == 74 && PERSCHAR::_0xA00DF706C60173D1(-877355938) == joaat("cs_mrpearson"))
+	if (uParam0->f_339 == 74 && PERSCHAR::_0xA00DF706C60173D1(joaat("RHD_General_Store")) == joaat("cs_mrpearson"))
 	{
 		if (MISC::IS_STRING_NULL_OR_EMPTY(uParam0->f_337))
 		{
@@ -3491,7 +3491,7 @@ int func_20(var uParam0, int iParam1, int iParam2)
 		uParam0->f_337 = "COMP_PEARSON";
 		uParam0->f_338 = 2;
 	}
-	else if (uParam0->f_339 == 74 && PERSCHAR::_0xA00DF706C60173D1(-877355938) != joaat("cs_mrpearson"))
+	else if (uParam0->f_339 == 74 && PERSCHAR::_0xA00DF706C60173D1(joaat("RHD_General_Store")) != joaat("cs_mrpearson"))
 	{
 		if (func_147(45) && PLAYER::_0x0772F87D7B07719A(PLAYER::PLAYER_ID(), 0, -1688654430))
 		{
@@ -4497,7 +4497,7 @@ void func_49(var uParam0)
 	}
 	if (uParam0->f_249 == 1)
 	{
-		STREAMING::_0x19A6BE7D9C6884D3(-545460140, 1, ENTITY::GET_ENTITY_MODEL(Global_35), 0);
+		STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARCUSTOMER"), 1, ENTITY::GET_ENTITY_MODEL(Global_35), 0);
 		uParam0->f_249++;
 		return;
 	}
@@ -5985,7 +5985,7 @@ void func_111(var uParam0, int iParam1, var uParam2, int iParam3)
 	{
 		case 0:
 		case 1:
-			*uParam0 = TASK::CREATE_SCENARIO_POINT(-1177373461, func_66(iParam3), func_107(iParam3), 0f, 0, 0);
+			*uParam0 = TASK::CREATE_SCENARIO_POINT(joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"), func_66(iParam3), func_107(iParam3), 0f, 0, 0);
 			break;
 		case 2:
 		case 3:
@@ -8098,19 +8098,19 @@ int func_191(int iParam0)
 	switch (iParam0)
 	{
 		case 5:
-			return 49689699;
+			return joaat("VAL_Bartender");
 		case 6:
 			return 1690461416;
 		case 3:
-			return -1792832235;
+			return joaat("RHD_Bartender");
 		case 2:
 			return 785713260;
 		case 1:
 			return -2099882877;
 		case 8:
-			return 41051113;
+			return joaat("VHT_Bartender");
 		case 0:
-			return -53891762;
+			return joaat("BLW_Bartender");
 		case 4:
 			return 1016865322;
 		case 7:

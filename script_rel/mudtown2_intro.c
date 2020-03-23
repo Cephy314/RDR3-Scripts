@@ -3867,7 +3867,7 @@ int func_160()
 					break;
 				case 8:
 					vVar1 = { -311.63f, 806.2f, 117.98f };
-					iVar4 = 1231068245;
+					iVar4 = joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY");
 					break;
 				case 9:
 					vVar1 = { -312.1981f, 812.3229f, 117.9804f };

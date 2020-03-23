@@ -140,7 +140,7 @@ void __EntryFunction__()
 					}
 					else
 					{
-						if (TASK::_0x2D0571BB55879DA2(Global_34) != -1177373461)
+						if (TASK::_0x2D0571BB55879DA2(Global_34) != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 						{
 							PED::_0xD65FDC686A031C83(Global_34, -872596011, 3f);
 							PED::_0x6D07B371E9439019(Global_34);
@@ -466,7 +466,7 @@ void func_13(int iParam0)
 {
 	if (iParam0 == -1493684811)
 	{
-		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (TASK::_0x2D0571BB55879DA2(Global_34) == -545460140 || TASK::_0x2D0571BB55879DA2(Global_34) == -1177373461))
+		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_HUMAN_BARCUSTOMER") || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")))
 		{
 			TASK::_0xB35370D5353995CB(Global_34, 1587785400, 1f);
 		}
@@ -480,7 +480,7 @@ void func_13(int iParam0)
 	}
 	else if (iParam0 == -752898125)
 	{
-		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && TASK::_0x2D0571BB55879DA2(Global_34) == -1177373461)
+		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 		{
 			TASK::_0xB35370D5353995CB(Global_34, 1342098323, 1f);
 		}
@@ -758,22 +758,22 @@ int func_25(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
-		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_MEDIUM"):
-		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
-		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
-		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT"):
 		case -545779394:
-		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
-		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_LOW"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_HIGH"):
 		case 1532695640:
-		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"):
 		case 1847740267:
-		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
-		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN"):
 			return 0;
 	}
 	return 1;

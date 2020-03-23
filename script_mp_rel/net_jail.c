@@ -751,7 +751,7 @@ void func_17(var uParam0, float fParam1)
 
 void func_18()
 {
-	Global_1901929->f_741 = func_69(joaat("Jail"), -2534057, 0.5f, "NET_JAIL_BRIBE_AMOUNT_MULTIPLIER");
+	Global_1901929->f_741 = func_69(joaat("Jail"), joaat("NET_JAIL_BRIBE_AMOUNT_MULTIPLIER"), 0.5f, "NET_JAIL_BRIBE_AMOUNT_MULTIPLIER");
 	Global_1901929->f_741.f_1 = func_69(joaat("Jail"), -589363792, 2f, "NET_JAIL_BRIBE_REDUCTION_TIME");
 	func_70(Global_1901929->f_741, 0f, 1f);
 	func_70(Global_1901929->f_741.f_1, 1f, 10f);

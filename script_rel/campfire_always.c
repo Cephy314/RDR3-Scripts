@@ -9020,7 +9020,7 @@ int func_243(int iParam0)
 			return 1;
 		case -1529588078:
 			return 1;
-		case 577229124:
+		case joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M8_2M0"):
 			return 1;
 		case -228293404:
 			return 1;
@@ -9028,9 +9028,9 @@ int func_243(int iParam0)
 			return 1;
 		case 1034443817:
 			return 1;
-		case -1149116975:
+		case joaat("RANSACK_REACH_OVER_VOLUME_1m5_0m5_2m0"):
 			return 1;
-		case -1697094189:
+		case joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M8_2M0"):
 			return 1;
 		case -1126887526:
 			return 1;
@@ -9038,7 +9038,7 @@ int func_243(int iParam0)
 			return 1;
 		case 1056917224:
 			return 1;
-		case -25545633:
+		case joaat("RANSACK_REACH_OVER_VOLUME_NARROW_0M5_0M5_2M0"):
 			return 1;
 		case 1297830245:
 			return 1;
@@ -9048,15 +9048,15 @@ int func_243(int iParam0)
 			return 1;
 		case -667943088:
 			return 1;
-		case 1815828156:
+		case joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M5_0M5_0M80"):
 			return 1;
-		case -488677726:
+		case joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M8_0M5_0M80"):
 			return 1;
 		case 276224334:
 			return 1;
 		case -218540408:
 			return 1;
-		case -1623205626:
+		case joaat("RANSACK_VOLUME_0m8_0m5_2m0"):
 			return 1;
 		case -1616347668:
 			return 1;
@@ -9070,7 +9070,7 @@ int func_243(int iParam0)
 			return 1;
 		case -1341692684:
 			return 1;
-		case -1472414463:
+		case joaat("RANSACK_VOLUME_1m5_0m5_2m0"):
 			return 1;
 		case 1187533117:
 			return 1;
@@ -9151,14 +9151,14 @@ int func_244(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}
@@ -14523,7 +14523,7 @@ int func_370(int iParam0)
 			return 2;
 		case 813446076:
 			return 3;
-		case -862094048:
+		case joaat("SPID_BLIND_MAN_CASSIDY"):
 			return 4;
 		case -161610929:
 			return 6;
@@ -17789,13 +17789,13 @@ int func_405(int iParam0, int iParam1)
 			case 1119:
 				return joaat("drive");
 			case 1120:
-				return -1354153129;
+				return joaat("FALL_OVER_WALL");
 			case 1121:
 				return 1419257506;
 			case 1122:
 				return -848301249;
 			case 1123:
-				return -151268211;
+				return joaat("LEAN_IN_DIRECTION");
 			case 1124:
 				return 1952317745;
 			case 1125:
@@ -17837,7 +17837,7 @@ int func_405(int iParam0, int iParam1)
 			case 1143:
 				return 675968469;
 			case 1144:
-				return 789828931;
+				return joaat("WORLD_HUMAN_FLEE");
 			case 1145:
 				return 61551761;
 			case 1146:
@@ -17857,7 +17857,7 @@ int func_405(int iParam0, int iParam1)
 			case 1153:
 				return joaat("WORLD_VEHICLE_EMPTY");
 			case 1154:
-				return -699710953;
+				return joaat("WORLD_VEHICLE_EMPTY_NO_ANIMALS");
 			case 1155:
 				return 822224705;
 			case 1156:
@@ -18447,13 +18447,13 @@ int func_405(int iParam0, int iParam1)
 			case 1448:
 				return 696549558;
 			case 1449:
-				return -1177373461;
+				return joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE");
 			case 1450:
-				return -1200128754;
+				return joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER");
 			case 1451:
 				return 1637554487;
 			case 1452:
-				return 640857659;
+				return joaat("PROP_PLAYER_KNOCK_SECURITY_DOOR");
 			case 1453:
 				return -1441376597;
 			case 1454:
@@ -18463,7 +18463,7 @@ int func_405(int iParam0, int iParam1)
 			case 1456:
 				return 529202757;
 			case 1457:
-				return 594439516;
+				return joaat("PROP_PLAYER_OPEN_FOOTLOCKER");
 			case 1458:
 				return 1385956600;
 			case 1459:
@@ -18473,7 +18473,7 @@ int func_405(int iParam0, int iParam1)
 			case 1461:
 				return 768242070;
 			case 1462:
-				return 1900510386;
+				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_CASH_BED");
 			case 1463:
 				return 1442238332;
 			case 1464:
@@ -18485,30 +18485,30 @@ int func_405(int iParam0, int iParam1)
 			case 1467:
 				return 2088527301;
 			case 1468:
-				return -1283416485;
+				return joaat("PROP_PLAYER_OPEN_RIFLECHEST_PUMP_ACTION_SHOTGUN");
 			case 1469:
 				return -195947434;
 			case 1470:
-				return -1944262841;
+				return joaat("PROP_PLAYER_OPEN_RIFLECHEST_WINCHESTER");
 			case 1471:
-				return 321634111;
+				return joaat("PROP_PLAYER_PEEK_SECURITY_DOOR");
 			case 1472:
 				return 429473903;
 			case 1473:
-				return -1085971095;
+				return joaat("PROP_PLAYER_PRPTY_SAVE_GAME");
 			case 1474:
 				return 1058019971;
 			case 1475:
 				return -1773308460;
 			case 1476:
-				return -475370861;
+				return joaat("PROP_PLAYER_ROB_CASH_REGISTER");
 			case 1477:
-				return -447259824;
-				return -229964281;
-				return 889554021;
+				return joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC");
+				return joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
+				return joaat("PROP_PLAYER_SEAT_CHAIR_PLAYER_CAMP");
 				return 1690225020;
 				return -1054012177;
-				return -2016812721;
+				return joaat("Prop_player_sleep_tent_a_frame");
 				return joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE_PLAYER");
 				return joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1");
 				return joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2");
@@ -18604,7 +18604,7 @@ int func_405(int iParam0, int iParam1)
 				return joaat("WORLD_PLAYER_SLEEP_GROUND");
 				return joaat("WORLD_PLAYER_TAKE_MONEY_PILE_TABLE");
 				return -507776464;
-				return 1154717469;
+				return joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER_NO_DOF");
 				return 1957996977;
 				return -1940645236;
 				return 1545192181;
@@ -18832,9 +18832,9 @@ int func_405(int iParam0, int iParam1)
 				return 221308504;
 				return 1954325822;
 				return 663276374;
-				return -1152350314;
+				return joaat("RANSACK_ATTACHED_CHEST_LARGE");
 				return 843794152;
-				return -1525360788;
+				return joaat("RANSACK_ATTACHED_CHEST_MEDIUM");
 				return -1893200246;
 				return -1870678101;
 				return 689199900;
@@ -18853,13 +18853,13 @@ int func_405(int iParam0, int iParam1)
 				return -2087527692;
 				return -1384407567;
 				return -733157857;
-				return -1363262734;
+				return joaat("RANSACK_ATTACHED_DD_234");
 				return 1956439393;
 				return 51237607;
 				return -1455022251;
-				return -1216365624;
+				return joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_3");
 				return -1101772431;
-				return 1198061836;
+				return joaat("RANSACK_ATTACHED_DRAWER_SINGLE_1");
 				return -613801712;
 				return -854031251;
 				return -11015957;
@@ -18867,7 +18867,7 @@ int func_405(int iParam0, int iParam1)
 				return 2113302033;
 				return 425046062;
 				return -643955342;
-				return -70081260;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED");
 				return 1589325060;
 				return 1827064155;
 				return 2042327162;
@@ -18878,7 +18878,7 @@ int func_405(int iParam0, int iParam1)
 				return 1634273809;
 				return 720741201;
 				return 86244240;
-				return 808088485;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED");
 				return -2081969392;
 				return 718436607;
 				return -1842399202;
@@ -18921,18 +18921,18 @@ int func_405(int iParam0, int iParam1)
 				return -1820115868;
 				return 874854362;
 				return -1529588078;
-				return 577229124;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M8_2M0");
 				return -228293404;
 				return 553276660;
 				return 1034443817;
-				return -1149116975;
-				return -1697094189;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1m5_0m5_2m0");
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M8_2M0");
 				return -1126887526;
 				return 10753225;
 				return 2104706574;
 				return 1050622421;
 				return 1056917224;
-				return -25545633;
+				return joaat("RANSACK_REACH_OVER_VOLUME_NARROW_0M5_0M5_2M0");
 				return 1297830245;
 				return 637151746;
 				return -1642576755;
@@ -18941,8 +18941,8 @@ int func_405(int iParam0, int iParam1)
 				return -667943088;
 				return -1445107872;
 				return -1610817898;
-				return 1815828156;
-				return -488677726;
+				return joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M5_0M5_0M80");
+				return joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M8_0M5_0M80");
 				return 1745757232;
 				return 276224334;
 				return -218540408;
@@ -18960,18 +18960,18 @@ int func_405(int iParam0, int iParam1)
 				return -1746866391;
 				return 676466743;
 				return -1629159913;
-				return -2069431862;
+				return joaat("RANSACK_SHOP_VOL_1M50_0M50_2M0");
 				return 1608515746;
 				return -1840784802;
 				return -1060784354;
-				return -1623205626;
+				return joaat("RANSACK_VOLUME_0m8_0m5_2m0");
 				return -1616347668;
 				return 111647220;
 				return 1217254422;
 				return -1184202704;
 				return -1291249576;
 				return -1341692684;
-				return -1472414463;
+				return joaat("RANSACK_VOLUME_1m5_0m5_2m0");
 				return 1187533117;
 				return 1998863259;
 				return 1962997581;
@@ -19042,15 +19042,15 @@ int func_405(int iParam0, int iParam1)
 					case 2002:
 						return -1869802111;
 					case 2003:
-						return 1034469706;
+						return joaat("RANSACK_ATTACHED_P_ARMOIR02X");
 					case 2004:
 						return 1086866717;
 					case 2005:
-						return 1360226571;
+						return joaat("RANSACK_ATTACHED_P_ARMOIR05X");
 					case 2006:
-						return -658605065;
+						return joaat("RANSACK_ATTACHED_P_ARMOIR06X");
 					case 2007:
-						return -1265553975;
+						return joaat("RANSACK_ATTACHED_P_ARMOIR07X");
 					case 2008:
 						return 2088386848;
 					case 2009:
@@ -19068,31 +19068,31 @@ int func_405(int iParam0, int iParam1)
 					case 2015:
 						return 668969112;
 					case 2016:
-						return 1541790572;
+						return joaat("RANSACK_ATTACHED_P_BOOKCASE04X");
 					case 2017:
 						return -438207932;
 					case 2018:
 						return 2013669839;
 					case 2019:
-						return -1808689694;
+						return joaat("RANSACK_ATTACHED_P_BW_DESK01X");
 					case 2020:
 						return 1973299720;
 					case 2021:
 						return 1844516830;
 					case 2022:
-						return 1691157334;
+						return joaat("RANSACK_ATTACHED_P_CABINET05X");
 					case 2023:
 						return 49167942;
 					case 2024:
-						return 1254411186;
+						return joaat("RANSACK_ATTACHED_P_CABINET08X");
 					case 2025:
-						return 1630024103;
+						return joaat("RANSACK_ATTACHED_P_CABINET09X_L");
 					case 2026:
-						return 1703721580;
+						return joaat("RANSACK_ATTACHED_P_CABINET09X_R");
 					case 2027:
 						return 830115903;
 					case 2028:
-						return -1425342154;
+						return joaat("RANSACK_ATTACHED_P_CABINET13X");
 					case 2029:
 						return 1146892774;
 					case 2030:
@@ -19118,7 +19118,7 @@ int func_405(int iParam0, int iParam1)
 					case 2040:
 						return 669750263;
 					case 2041:
-						return 751238661;
+						return joaat("RANSACK_ATTACHED_P_COMMODE01X");
 					case 2042:
 						return 966493677;
 					case 2043:
@@ -19136,7 +19136,7 @@ int func_405(int iParam0, int iParam1)
 					case 2049:
 						return -1302545667;
 					case 2050:
-						return 639214577;
+						return joaat("RANSACK_ATTACHED_P_CUPBOARD04X");
 					case 2051:
 						return -1855260942;
 					case 2052:
@@ -19148,15 +19148,15 @@ int func_405(int iParam0, int iParam1)
 					case 2055:
 						return 217936838;
 					case 2056:
-						return -862850792;
+						return joaat("RANSACK_ATTACHED_P_DESK03X");
 					case 2057:
-						return -2005994145;
+						return joaat("RANSACK_ATTACHED_P_DESK07X");
 					case 2058:
 						return 975923321;
 					case 2059:
-						return 1222903274;
+						return joaat("RANSACK_ATTACHED_P_DESK08X_R");
 					case 2060:
-						return 1941026691;
+						return joaat("RANSACK_ATTACHED_P_DESK09BX");
 					case 2061:
 						return 1190050632;
 					case 2062:
@@ -19168,7 +19168,7 @@ int func_405(int iParam0, int iParam1)
 					case 2065:
 						return -1515755255;
 					case 2066:
-						return 1064381538;
+						return joaat("RANSACK_ATTACHED_P_DRESSER03X");
 					case 2067:
 						return -1102276961;
 					case 2068:
@@ -19186,15 +19186,15 @@ int func_405(int iParam0, int iParam1)
 					case 2074:
 						return -155090208;
 					case 2075:
-						return -1085455345;
+						return joaat("RANSACK_ATTACHED_P_DRESSERVAL01X");
 					case 2076:
-						return -1053231030;
+						return joaat("RANSACK_ATTACHED_P_DRMEDCABINET01X");
 					case 2077:
-						return 1462566348;
+						return joaat("RANSACK_ATTACHED_P_DRYSINK01X");
 					case 2078:
 						return 1502807256;
 					case 2079:
-						return 1124862519;
+						return joaat("RANSACK_ATTACHED_P_ENDTABLE01X");
 					case 2080:
 						return 1488931084;
 					case 2081:
@@ -19216,9 +19216,9 @@ int func_405(int iParam0, int iParam1)
 					case 2089:
 						return 1925882132;
 					case 2090:
-						return 1073615878;
+						return joaat("RANSACK_ATTACHED_P_MEDBED01X");
 					case 2091:
-						return 813516613;
+						return joaat("RANSACK_ATTACHED_P_MEDICINECHEST01X");
 					case 2092:
 						return 392143296;
 					case 2093:
@@ -19250,9 +19250,9 @@ int func_405(int iParam0, int iParam1)
 					case 2106:
 						return 1922930297;
 					case 2107:
-						return -1137636028;
+						return joaat("RANSACK_ATTACHED_P_SINK02X");
 					case 2108:
-						return -54584308;
+						return joaat("RANSACK_ATTACHED_P_STERILECABINET01X");
 					case 2109:
 						return 1027184951;
 					case 2110:
@@ -19280,7 +19280,7 @@ int func_405(int iParam0, int iParam1)
 					case 2121:
 						return -552438855;
 					case 2122:
-						return -186958823;
+						return joaat("RANSACK_ATTACHED_P_TABLECONSOLE03X");
 					case 2123:
 						return -1771411749;
 					case 2124:
@@ -19302,7 +19302,7 @@ int func_405(int iParam0, int iParam1)
 					case 2132:
 						return 2048612078;
 					case 2133:
-						return 958524107;
+						return joaat("RANSACK_ATTACHED_P_WALNUTHUTCH01X");
 					case 2134:
 						return 1210310972;
 					case 2135:
@@ -19314,7 +19314,7 @@ int func_405(int iParam0, int iParam1)
 					case 2138:
 						return -1666348035;
 					case 2139:
-						return 162271667;
+						return joaat("RANSACK_ATTACHED_P_WORKBENCHDESK01X_RIGHT");
 					case 2140:
 						return 2119820521;
 					case 2141:
@@ -19890,11 +19890,11 @@ int func_405(int iParam0, int iParam1)
 					case 2426:
 						return -203096485;
 					case 2427:
-						return -1183974373;
+						return joaat("PROP_PLAYER_RE_DRUNK_CAMP_SIT");
 					case 2428:
-						return -1233072870;
+						return joaat("PROP_PLAYER_RE_FROZEN_TO_DEATH");
 					case 2429:
-						return 1019287012;
+						return joaat("PROP_PLAYER_RE_MOONSHINE_ADD_PLANT");
 					case 2430:
 						return 579020276;
 					case 2431:
@@ -19926,11 +19926,11 @@ int func_405(int iParam0, int iParam1)
 					case 2444:
 						return 2054734837;
 					case 2445:
-						return 79562032;
+						return joaat("SCRIPT_RELS_LOOT_SAFE_MALE_B");
 					case 2446:
 						return -1678824488;
 					case 2447:
-						return -1426280354;
+						return joaat("WORLD_HUMAN_2H_TOOL");
 					case 2448:
 						return -814861523;
 					case 2449:
@@ -20046,29 +20046,29 @@ int func_405(int iParam0, int iParam1)
 					case 2504:
 						return 1217342730;
 					case 2505:
-						return -621762517;
+						return joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_A");
 					case 2506:
 						return -1391735714;
 					case 2507:
 						return 764300645;
 					case 2508:
-						return 936403433;
+						return joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_D");
 					case 2509:
-						return 1282809874;
+						return joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_A");
 					case 2510:
 						return 122885581;
 					case 2511:
 						return 2068544956;
 					case 2512:
-						return 611635216;
+						return joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_D");
 					case 2513:
-						return 198341508;
+						return joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_A");
 					case 2514:
 						return -574515357;
 					case 2515:
-						return -1502992211;
+						return joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_C");
 					case 2516:
-						return -129020802;
+						return joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_D");
 					case 2517:
 						return joaat("PROP_HUMAN_BUTCHER_DEER");
 					case 2518:
@@ -20088,17 +20088,17 @@ int func_405(int iParam0, int iParam1)
 					case 2525:
 						return 597682689;
 					case 2526:
-						return -545460140;
+						return joaat("WORLD_HUMAN_BARCUSTOMER");
 					case 2527:
-						return 817658057;
+						return joaat("WORLD_HUMAN_BARCUSTOMER_BEER");
 					case 2528:
-						return 1231068245;
+						return joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY");
 					case 2529:
 						return 1579488576;
 					case 2530:
-						return -758981113;
+						return joaat("WORLD_HUMAN_BARTENDER_BEER");
 					case 2531:
-						return -1208105393;
+						return joaat("WORLD_HUMAN_BARTENDER_WHISKEY");
 					case 2532:
 						return joaat("WORLD_HUMAN_BUTCHER_RABBIT");
 					case 2533:
@@ -31088,7 +31088,7 @@ int func_832(int iParam0)
 		case 1:
 			return joaat("DISTRICT_BIG_VALLEY");
 		case 2:
-			return 38535626;
+			return joaat("DISTRICT_BLUEGILL_MARSH");
 		case 3:
 			return joaat("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
@@ -31096,15 +31096,15 @@ int func_832(int iParam0)
 		case 5:
 			return joaat("DISTRICT_GRIZZLIES");
 		case 6:
-			return -1808688941;
+			return joaat("DISTRICT_GRIZZLIES_EAST");
 		case 7:
-			return -736296038;
+			return joaat("DISTRICT_GRIZZLIES_WEST");
 		case 8:
-			return -909439131;
+			return joaat("DISTRICT_GUAMA");
 		case 9:
-			return 1917744724;
+			return joaat("DISTRICT_HEARTLAND");
 		case 10:
-			return 821748379;
+			return joaat("DISTRICT_ROANOKE_RIDGE");
 		case 11:
 			return joaat("DISTRICT_SCARLETT_MEADOWS");
 		case 12:
@@ -31961,7 +31961,7 @@ var func_874(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	}
 	if (iParam6 == -1)
 	{
-		iParam6 = 138119161;
+		iParam6 = joaat("sp_notifications");
 	}
 	if (!bParam14)
 	{

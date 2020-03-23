@@ -1182,7 +1182,7 @@ void func_60()
 			Var9.f_3 = { Global_35 };
 			Var9.f_6 = func_74();
 			Var9.f_9 = 1;
-			Var9.f_2 = 1685924442; /* GXTEntry: "Train Robbery" */
+			Var9.f_2 = joaat("CRIME_TRAIN_ROBBERY");
 			Var9.f_8 = 1;
 			LAW::_0x018F30D762E62DF8(&(uVar3[iVar1]), &Var9);
 			func_75(&(uVar3[iVar1]), Global_35, 2, 1, 1);

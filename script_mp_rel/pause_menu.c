@@ -73,9 +73,9 @@ void __EntryFunction__()
 	{
 		TXD::_REQUEST_STREAMED_TXD(-637848863, false);
 	}
-	if (TXD::_DOES_STREAMED_TXD_EXIST(-1930972465))
+	if (TXD::_DOES_STREAMED_TXD_EXIST(joaat("pm_player_mp")))
 	{
-		TXD::_REQUEST_STREAMED_TXD(-1930972465, false);
+		TXD::_REQUEST_STREAMED_TXD(joaat("pm_player_mp"), false);
 	}
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(4))
@@ -1380,7 +1380,7 @@ void func_56()
 	func_102(12, "PMPLAYER_LAW_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, func_115(joaat("kills"), joaat("CIVILIAN")), 64);
 	func_102(13, "PMPLAYER_PEDS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (func_115(joaat("time_in_wanted_level"), joaat("1")) / 1000);
+	iVar8 = (func_115(joaat("time_in_wanted_level"), -2140438327) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);

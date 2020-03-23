@@ -110,9 +110,9 @@ void __EntryFunction__()
 				else if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1))
 				{
 					iVar186 = TASK::_0x2D0571BB55879DA2(Global_34);
-					if (iVar186 != -1177373461)
+					if (iVar186 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 					{
-						if (iVar186 != -447259824)
+						if (iVar186 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"))
 						{
 						}
 						else
@@ -470,22 +470,22 @@ int func_18(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
-		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_MEDIUM"):
-		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
-		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
-		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT"):
 		case -545779394:
-		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
-		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_LOW"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_HIGH"):
 		case 1532695640:
-		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"):
 		case 1847740267:
-		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
-		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN"):
 			return 0;
 	}
 	return 1;

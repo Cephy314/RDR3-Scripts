@@ -269,7 +269,7 @@ void func_6()
 					}
 				}
 			}
-			if (!PED::IS_PED_USING_ANY_SCENARIO(Local_5) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(1826025856) == 0)
+			if (!PED::IS_PED_USING_ANY_SCENARIO(Local_5) && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("doc_treasure_map")) == 0)
 			{
 				iLocal_0 = 0;
 			}
@@ -411,7 +411,7 @@ void func_21(int iParam0)
 
 void func_22(int iParam0)
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(1826025856) == 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("doc_treasure_map")) == 0)
 	{
 		iLocal_0 = 0;
 	}

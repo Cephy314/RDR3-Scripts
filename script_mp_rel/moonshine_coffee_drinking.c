@@ -123,7 +123,7 @@ void __EntryFunction__()
 			case 2:
 				if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -1200848232)
 				{
-					if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 0) && ((PED::_0x569F1E1237508DEB(Global_34) == 254049387 || PED::_0x569F1E1237508DEB(Global_34) == -1451987280) || PED::_0x569F1E1237508DEB(Global_34) == 1135271674))
+					if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 0) && ((PED::_0x569F1E1237508DEB(Global_34) == 254049387 || PED::_0x569F1E1237508DEB(Global_34) == -1451987280) || PED::_0x569F1E1237508DEB(Global_34) == joaat("WORLD_PLAYER_DYNAMIC_CAMP_FIRE_KNEEL_ARTHUR")))
 					{
 						TASK::_0xB35370D5353995CB(Global_34, -314440731, 1048576000);
 					}
@@ -701,22 +701,22 @@ int func_37(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
-		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_MEDIUM"):
-		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
-		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
-		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT"):
 		case -545779394:
-		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
-		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_LOW"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_HIGH"):
 		case 1532695640:
-		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"):
 		case 1847740267:
-		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
-		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN"):
 			return 0;
 	}
 	return 1;

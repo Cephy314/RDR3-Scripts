@@ -298,7 +298,7 @@ int func_12(int iParam0, int iParam1, char* sParam2, var uParam3, float fParam4,
 	switch (iParam0)
 	{
 		case 5:
-			*iParam1 = -229964281;
+			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 2682.599f, -1458.432f, 45.757f };
 			*fParam4 = -155f;
@@ -312,21 +312,21 @@ int func_12(int iParam0, int iParam1, char* sParam2, var uParam3, float fParam4,
 			*iParam5 = 11;
 			return 1;
 		case 28:
-			*iParam1 = -229964281;
+			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { -1304.61f, 402.07f, 94.88f };
 			*fParam4 = -155f;
 			*iParam5 = 16;
 			return 1;
 		case 69:
-			*iParam1 = -229964281;
+			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 1520.34f, 437.09f, 90.18f };
 			*fParam4 = -90f;
 			*iParam5 = 8;
 			return 1;
 		case 75:
-			*iParam1 = -229964281;
+			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { -346.205f, -368.456f, 87.519f };
 			*fParam4 = -65.272f;
@@ -347,7 +347,7 @@ int func_12(int iParam0, int iParam1, char* sParam2, var uParam3, float fParam4,
 			*iParam5 = 14;
 			return 1;
 		case 105:
-			*iParam1 = -229964281;
+			*iParam1 = joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC");
 			StringCopy(sParam2, "PROP_PLAYER_SEAT_CHAIR_GENERIC", 64);
 			*uParam3 = { 1214.081f, -1293.024f, 76.372f };
 			*fParam4 = 90.766f;

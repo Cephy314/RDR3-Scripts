@@ -5964,7 +5964,7 @@ int func_261(int iParam0)
 			return -479944273;
 		case 1011003885: /* GXTEntry: "Good Egret Carcass" */
 			return -479944273;
-		case -1490884871: /* GXTEntry: "Legendary Bluegill" */
+		case joaat("PROVISION_FISH_BLUEGILL_LEGENDARY"):
 			return -1900245017;
 		case joaat("PROVISION_FISH_BULLHEAD_CATFISH"):
 			return 996737485;
@@ -11739,7 +11739,7 @@ int func_447(int iParam0)
 		case 56:
 			return joaat("BLIP_AMBIENT_TELEGRAPH");
 		case 57:
-			return 305594522 /* GXTEntry: "Taxi Coach" */;
+			return joaat("BLIP_AMBIENT_COACH_TAXI");
 		case 58:
 			return joaat("BLIP_AMBIENT_THEATRE");
 		case 59:
@@ -14515,7 +14515,7 @@ int func_554(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_285(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
+		return func_285(joaat("AMMO_POISONBOTTLE"), 1);
 	}
 	return func_285(iParam0, 1);
 }

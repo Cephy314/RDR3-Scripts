@@ -400,59 +400,59 @@ int func_10(struct<2> Param0, var uParam2)
 	switch (iVar0)
 	{
 		case 1:
-			return -117847307;
+			return joaat("mp005_a1_arbracelet02_ipl");
 		case 2:
-			return 513934897;
+			return joaat("MP005_A2_BMecklace03_IPL");
 		case 3:
-			return 1181416174;
+			return joaat("mp005_a1_BPRing02_IPL");
 		case 4:
-			return 373802338;
+			return joaat("MP005_a2_BANecklace01_IPL");
 		case 5:
-			return 620580306;
+			return joaat("MP005_a2_BANecklace02_IPL");
 		case 6:
-			return -1962566219;
+			return joaat("MP005_A2_BANecklace03_IPL");
 		case 7:
-			return 1423626752;
+			return joaat("MP005_A1_DPBBracelet02_IPL");
 		case 8:
-			return -509143136;
+			return joaat("MP005_A2_DPBracelet03_IPL");
 		case 9:
-			return -1923863493;
+			return joaat("MP005_A1_FPNecklace02_IPL");
 		case 10:
-			return -250669847;
+			return joaat("MP005_a1_GWGNecklace01_IPL");
 		case 11:
-			return 95187046;
+			return joaat("MP005_A2_HGBracelet02_IPL");
 		case 12:
-			return 970334657;
+			return joaat("MP005_A1_HGBBracelet03_IPL");
 		case 13:
-			return 869083804;
+			return joaat("mp005_a2_HGEarring02_IPL");
 		case 14:
-			return 974243296;
+			return joaat("mp005_a2_HCRing02_IPL");
 		case 15:
-			return 1803556695;
+			return joaat("MP005_A2_HSBRACELET01_IPL");
 		case 16:
-			return 82281660;
+			return joaat("MP005_A1_HSBracelet02_IPL");
 		case 17:
-			return -1666038504;
+			return joaat("MP005_A4_HSBracelet03_IPL");
 		case 18:
-			return 2111987179;
+			return joaat("MP005_A4_ITBracelet03_IPL");
 		case 19:
-			return 1204906867;
+			return joaat("mp005_a1_MTRing02_IPL");
 		case 20:
-			return 1143189384;
+			return joaat("MP005_A4_ORGBBracelet03_IPL");
 		case 21:
-			return -1546507097;
+			return joaat("MP005_A3_ODEarring1_IPL");
 		case 22:
-			return -1082524312;
+			return joaat("MP005_A3_RANecklace02_IPL");
 		case 23:
-			return -833697651;
+			return joaat("MP005_A4_RANecklace03_IPL");
 		case 24:
-			return -783284068;
+			return joaat("mp005_a1_SDRing01_IPL");
 		case 25:
-			return 1700073271;
+			return joaat("mp005_a1_WDRing1_IPL");
 		case 26:
-			return 738652812;
+			return joaat("mp005_a2_DEEarring02_IPL");
 	}
-	return -117847307;
+	return joaat("mp005_a1_arbracelet02_ipl");
 }
 
 char* func_11(struct<2> Param0, var uParam2)

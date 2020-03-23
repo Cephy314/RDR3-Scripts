@@ -987,7 +987,7 @@ void func_6(var uParam0)
 					uParam0->f_97 = 1;
 				}
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), -1898385492))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("objectExchange")))
 			{
 				OBJECT::DELETE_OBJECT(uParam0->f_64[iVar1]);
 			}
@@ -3016,7 +3016,7 @@ char* func_108(int iParam0)
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@FRONT";
 		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@left"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@LEFT";
-		case -1010401158:
+		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@RIGHT"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@RIGHT";
 		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@A";
@@ -3080,7 +3080,7 @@ char* func_108(int iParam0)
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@B";
 		case joaat("script_respawn@one_shot@upperbody@spit@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@C";
-		case 1482557486:
+		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@A"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@A";
 		case joaat("script_respawn@one_shot@upperbody@spitlongarm_lhand@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@B";
@@ -3098,25 +3098,25 @@ char* func_108(int iParam0)
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A";
 		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@lean_left_arms_crossed@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A";
-		case 1382564242:
+		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A";
 		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@sit_lean_forwards@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A";
 		case joaat("script_respawn@horse@mounted_unarmed"):
 			return "SCRIPT_RESPAWN@HORSE@MOUNTED_UNARMED";
-		case 1220957019:
+		case joaat("SADDLE_LEAN_FWD_PETWHISPERS_LT"):
 			return "SADDLE_LEAN_FWD_PETWHISPERS_LT";
-		case -1912252244:
+		case joaat("SADDLE_LEAN_FWD_PETWHISPERS_RT"):
 			return "SADDLE_LEAN_FWD_PETWHISPERS_RT";
-		case 1223167950:
+		case joaat("SADDLE_LEAN_FWD_FLYSWAT1"):
 			return "SADDLE_LEAN_FWD_FLYSWAT1";
-		case 485153712:
+		case joaat("SADDLE_LEAN_FWD_SPITWIPE_LT"):
 			return "SADDLE_LEAN_FWD_SPITWIPE_LT";
-		case -1470624315:
+		case joaat("SADDLE_LEAN_FWD_LOOKING_IDLE"):
 			return "SADDLE_LEAN_FWD_LOOKING_IDLE";
-		case 556503696:
+		case joaat("SADDLE_LEAN_FWD_EXIT_ADJUST"):
 			return "SADDLE_LEAN_FWD_EXIT_ADJUST";
-		case -1981043288:
+		case joaat("SADDLE_LEAN_FWD_EXIT_LEG_STRETCH"):
 			return "SADDLE_LEAN_FWD_EXIT_LEG_STRETCH";
 		case joaat("script_respawn@looping@hybrid@generic@unarmed@crouch_admire_view@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A@IDLES";
@@ -3174,7 +3174,7 @@ char* func_109(int iParam0)
 			return "UNARMED@SITTING_JOURNAL_WRITING@FRONT";
 		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@left"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@LEFT";
-		case -1010401158:
+		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@RIGHT"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@RIGHT";
 		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@a"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@A";
@@ -3238,7 +3238,7 @@ char* func_109(int iParam0)
 			return "UNARMED@SPIT@B";
 		case joaat("script_respawn@one_shot@upperbody@spit@c"):
 			return "UNARMED@SPIT@C";
-		case 1482557486:
+		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@A"):
 			return "LHAND@SPIT@A";
 		case joaat("script_respawn@one_shot@upperbody@spitlongarm_lhand@b"):
 			return "LHAND@SPIT@B";
@@ -3258,7 +3258,7 @@ char* func_109(int iParam0)
 			return "UNARMED@LEAN_LEFT_ARMS_CROSSED@A";
 		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@lean_left_arms_crossed@a"):
 			return "LHAND@LEAN_LEFT_ARMS_CROSSED@A";
-		case 1382564242:
+		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A"):
 			return "UNARMED@SIT_LEAN_FORWARDS@A";
 		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@sit_lean_forwards@a"):
 			return "LONGARM_LHAND@SIT_LEAN_FORWARDS@A";
@@ -8109,7 +8109,7 @@ char* func_304(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_BARROW_LAGOON";
 				*bParam6 = 1;
 				break;
-			case -557290573: /* GXTEntry: "Bayou Nwa" */
+			case joaat("WATER_BAYOU_NWA"):
 				sVar0 = "DISTRICT_BAYOU_NWA";
 				*bParam6 = 1;
 				break;
@@ -8141,11 +8141,11 @@ char* func_304(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_HAWKS_EYE_CREEK";
 				*bParam6 = 1;
 				break;
-			case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+			case joaat("WATER_HEARTLANDS_OVERFLOW"):
 				sVar0 = "LANDMARK_HEARTLAND_OVERFLOW";
 				*bParam6 = 1;
 				break;
-			case 1175365009: /* GXTEntry: "Hot Springs" */
+			case joaat("WATER_HOT_SPRINGS"):
 				sVar0 = "WATER_COTORRA_SPRINGS";
 				*bParam6 = 1;
 				break;
@@ -8169,7 +8169,7 @@ char* func_304(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_LOWER_MONTANA_RIVER";
 				*bParam6 = 1;
 				break;
-			case 301094150: /* GXTEntry: "Mattlock Pond" */
+			case joaat("WATER_MATTLOCK_POND"):
 				sVar0 = "WATER_MATTOCK_POND";
 				*bParam6 = 1;
 				break;
@@ -8228,7 +8228,7 @@ char* func_304(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				}
 				*bParam6 = 1;
 				break;
-			case -1504425495: /* GXTEntry: "San Luis River" */
+			case joaat("WATER_SAN_LUIS_RIVER"):
 				if (iParam1 == 4 || iParam1 == 12)
 				{
 					sVar0 = "WATER_SAN_LUIS_RIVER_WEST_ELIZABETH";
@@ -8460,9 +8460,9 @@ int func_308(int iParam0)
 			return 0;
 		case joaat("WATER_BARROW_LAGOON"):
 			return 0;
-		case -557290573: /* GXTEntry: "Bayou Nwa" */
+		case joaat("WATER_BAYOU_NWA"):
 			return 2;
-		case 650214731: /* GXTEntry: "Beartooth Beck" */
+		case joaat("WATER_BEARTOOTH_BECK"):
 			return 1;
 		case joaat("WATER_CAIRN_LAKE"):
 			return 0;
@@ -8474,7 +8474,7 @@ int func_308(int iParam0)
 			return 1;
 		case joaat("WATER_DEADBOOT_CREEK"):
 			return 1;
-		case 469159176: /* GXTEntry: "Dewberry Creek" */
+		case joaat("WATER_DEWBERRY_CREEK"):
 			return 1;
 		case joaat("WATER_ELYSIAN_POOL"):
 			return 0;
@@ -8482,9 +8482,9 @@ int func_308(int iParam0)
 			return 0;
 		case joaat("WATER_HAWKS_EYE_CREEK"):
 			return 1;
-		case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+		case joaat("WATER_HEARTLANDS_OVERFLOW"):
 			return 0;
-		case 1175365009: /* GXTEntry: "Hot Springs" */
+		case joaat("WATER_HOT_SPRINGS"):
 			return 0;
 		case joaat("WATER_KAMASSA_RIVER"):
 			return 1;
@@ -8498,7 +8498,7 @@ int func_308(int iParam0)
 			return 1;
 		case joaat("WATER_LOWER_MONTANA_RIVER"):
 			return 1;
-		case 301094150: /* GXTEntry: "Mattlock Pond" */
+		case joaat("WATER_MATTLOCK_POND"):
 			return 0;
 		case joaat("WATER_MOONSTONE_POND"):
 			return 0;
@@ -8508,7 +8508,7 @@ int func_308(int iParam0)
 			return 0;
 		case joaat("WATER_RINGNECK_CREEK"):
 			return 1;
-		case -1504425495: /* GXTEntry: "San Luis River" */
+		case joaat("WATER_SAN_LUIS_RIVER"):
 			return 1;
 		case joaat("WATER_SEA_OF_CORONADO"):
 			return 1;

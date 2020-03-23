@@ -270,7 +270,7 @@ int func_8(var uParam0)
 		if (!uParam0->f_21)
 		{
 			uParam0->f_29 = 0;
-			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), -556114113);
+			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), joaat("show_info"));
 			return 1;
 		}
 	}
@@ -393,7 +393,7 @@ int func_14(int iParam0)
 			return 38;
 		case 1778899666:
 			return 93;
-		case -1947415645:
+		case joaat("BUTCHER"):
 			return 82;
 		case 1862420670:
 			return 95;
@@ -467,9 +467,9 @@ int func_16(int iParam0)
 			return 1072597802;
 		case joaat("newaustin"):
 			return 1259085938;
-		case -1289136221:
+		case joaat("NEWHANOVER"):
 			return 1762760291;
-		case 1246494439:
+		case joaat("WESTELIZABETH"):
 			return 1715468631;
 		case -1973391500:
 			return -960313506;
@@ -738,7 +738,7 @@ int func_17(int iParam0)
 		case 116:
 			return joaat("REGION_GAP_RATHSKELLER_FORK");
 		case 129:
-			return -1868356491;
+			return joaat("REGION_GAP_SOLOMONS_FOLLY");
 		case 117:
 			return joaat("REGION_RIO_BENEDICT_POINT");
 		case 118:
@@ -762,7 +762,7 @@ int func_18(int iParam0)
 		case 1:
 			return joaat("DISTRICT_BIG_VALLEY");
 		case 2:
-			return 38535626;
+			return joaat("DISTRICT_BLUEGILL_MARSH");
 		case 3:
 			return joaat("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
@@ -770,15 +770,15 @@ int func_18(int iParam0)
 		case 5:
 			return joaat("DISTRICT_GRIZZLIES");
 		case 6:
-			return -1808688941;
+			return joaat("DISTRICT_GRIZZLIES_EAST");
 		case 7:
-			return -736296038;
+			return joaat("DISTRICT_GRIZZLIES_WEST");
 		case 8:
-			return -909439131;
+			return joaat("DISTRICT_GUAMA");
 		case 9:
-			return 1917744724;
+			return joaat("DISTRICT_HEARTLAND");
 		case 10:
-			return 821748379;
+			return joaat("DISTRICT_ROANOKE_RIDGE");
 		case 11:
 			return joaat("DISTRICT_SCARLETT_MEADOWS");
 		case 12:
@@ -1094,7 +1094,7 @@ void func_26(var uParam0)
 
 void func_27(var uParam0)
 {
-	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), 1136348382))
+	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), joaat("hide_info")))
 	{
 		uParam0->f_29 = 1;
 	}

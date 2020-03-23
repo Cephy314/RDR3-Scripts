@@ -6131,7 +6131,7 @@ int func_96(var uParam0)
 			}
 			else
 			{
-				PED::_0xD65FDC686A031C83(func_49(uParam0, iLocal_17), -676094188, 10f);
+				PED::_0xD65FDC686A031C83(func_49(uParam0, iLocal_17), joaat("START_SEAT_BOX_MALE_C_TO_SEAT_BENCH_MALE_A"), 10f);
 				return 1;
 			}
 			break;
@@ -6521,7 +6521,7 @@ int func_111(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -10017,7 +10017,7 @@ int func_280()
 
 int func_281()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}
@@ -13276,7 +13276,7 @@ void func_342(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_12), "", 64);
 			break;
 		case 6:
-			uParam0->f_1 = -793862732; /* GXTEntry: "The Case of the Shrew in the Fog" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_SHREW");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 5;
 			uParam0->f_4 = 0;
@@ -13298,7 +13298,7 @@ void func_342(var uParam0, int iParam1)
 			uParam0->f_23 = -535255159;
 			break;
 		case 8:
-			uParam0->f_1 = -1487662509; /* GXTEntry: "Otis Miller and The Black-Hearted Lady" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_BLACK_HEART_LADY");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 14;
 			uParam0->f_4 = 0;
@@ -15027,7 +15027,7 @@ void func_406(var uParam0, int iParam1, char* sParam2, bool bParam3, bool bParam
 		if (bParam4)
 		{
 			UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar0);
-			Global_1359489->f_361.f_194 = func_454("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_402(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", -1507719118, 5000, 0, 0, 0, 0, 1, 1);
+			Global_1359489->f_361.f_194 = func_454("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_402(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("sp_missions"), 5000, 0, 0, 0, 0, 1, 1);
 		}
 	}
 }

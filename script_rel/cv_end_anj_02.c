@@ -3259,7 +3259,7 @@ int func_86(var uParam0)
 {
 	if (!bLocal_31)
 	{
-		uLocal_32 = STREAMING::_0xB223249B7798EEED(func_51(uParam0, iLocal_15), joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_LEFT"), 1, -1932751089);
+		uLocal_32 = STREAMING::_0xB223249B7798EEED(func_51(uParam0, iLocal_15), joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_LEFT"), 1, joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_MALE_A"));
 		bLocal_31 = true;
 		return 0;
 	}
@@ -3895,7 +3895,7 @@ int func_114(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -7114,7 +7114,7 @@ int func_258()
 
 int func_259()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}
@@ -9281,7 +9281,7 @@ int func_311(int iParam0, bool bParam1)
 	{
 		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
 		iVar1 = iVar0;
-		if ((iVar1 != -447259824 && iVar1 != -1177373461) && iVar1 != -229964281)
+		if ((iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC") && iVar1 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) && iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC"))
 		{
 			return 0;
 		}

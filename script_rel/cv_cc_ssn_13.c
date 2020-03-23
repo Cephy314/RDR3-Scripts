@@ -3854,7 +3854,7 @@ int func_110(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -7025,7 +7025,7 @@ int func_256()
 
 int func_257()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}
@@ -9249,7 +9249,7 @@ int func_310(int iParam0, bool bParam1)
 	{
 		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
 		iVar1 = iVar0;
-		if ((iVar1 != -447259824 && iVar1 != -1177373461) && iVar1 != -229964281)
+		if ((iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC") && iVar1 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) && iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC"))
 		{
 			return 0;
 		}

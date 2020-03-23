@@ -3639,11 +3639,11 @@ void func_107(var uParam0)
 		case joaat("BREED_APPALOOSA_BLANKET"):
 		case joaat("BREED_APPALOOSA_LEOPARD"):
 		case joaat("BREED_APPALOOSA_LEOPARDBLANKET"):
-		case -540812301: /* GXTEntry: "Appaloosa - Few Spotted Coat" */
+		case joaat("BREED_APPALOOSA_FEWSPOTTED_PC"):
 		case joaat("BREED_APPALOOSA_BROWNLEOPARD"):
 			func_258(uParam0->f_22, "BUY_HORSE_APPALOOSA", joaat("speech_params_force_normal_clear"), 0, 1, 0, 0, 1);
 			break;
-		case -2105447887: /* GXTEntry: "Arabian - Warped Brindle Coat" */
+		case joaat("BREED_ARABIAN_WARPEDBRINDLE_PC"):
 		case joaat("BREED_ARABIAN_BLACK"):
 		case joaat("BREED_ARABIAN_REDCHESTNUT"):
 		case joaat("BREED_ARABIAN_ROSEGREYBAY"):
@@ -3677,7 +3677,7 @@ void func_107(var uParam0)
 		case -1955947684:
 		case joaat("BREED_KENTUCKYSADDLE_SILVERBAY"):
 		case joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
-		case 1427053849: /* GXTEntry: "Kentucky Saddler - Buttermilk Buckskin Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
 		case joaat("BREED_KENTUCKYSADDLE_GREY"):
 			func_258(uParam0->f_22, "BUY_HORSE_KENTUCKY_SADDLER", joaat("speech_params_force_normal_clear"), 0, 1, 0, 0, 1);
 			break;
@@ -3687,7 +3687,7 @@ void func_107(var uParam0)
 			break;
 		case joaat("BREED_MORGAN_PALOMINO"):
 		case joaat("BREED_MORGAN_BAYROAN"):
-		case 955937750: /* GXTEntry: "Morgan - Liver Chestnut Coat" */
+		case joaat("BREED_MORGAN_LIVERCHESTNUT_PC"):
 		case joaat("BREED_MORGAN_FLAXENCHESTNUT"):
 		case joaat("BREED_MORGAN_BAY"):
 			func_258(uParam0->f_22, "BUY_HORSE_MORGAN", joaat("speech_params_force_normal_clear"), 0, 1, 0, 0, 1);
@@ -3717,7 +3717,7 @@ void func_107(var uParam0)
 		case joaat("BREED_TENNESSEEWALKER_BLACKRABICANO"):
 		case joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY"):
 		case joaat("BREED_TENNESSEEWALKER_FLAXENROAN"):
-		case 2059232991: /* GXTEntry: "Tennessee Walker - Gold Palomino Coat" */
+		case joaat("BREED_TENNESSEEWALKER_GOLDPALOMINO_PC"):
 			func_258(uParam0->f_22, "BUY_HORSE_TENNESSEE_WALKER", joaat("speech_params_force_normal_clear"), 0, 1, 0, 0, 1);
 			break;
 		case joaat("BREED_THOROUGHBRED_DAPPLEGREY"):
@@ -9042,7 +9042,7 @@ int func_287(int iParam0)
 		case joaat("a_c_horse_appaloosa_leopardblanket"):
 			return joaat("BREED_APPALOOSA_LEOPARDBLANKET");
 		case joaat("a_c_horse_appaloosa_fewspotted_pc"):
-			return -540812301 /* GXTEntry: "Appaloosa - Few Spotted Coat" */;
+			return joaat("BREED_APPALOOSA_FEWSPOTTED_PC");
 		case joaat("a_c_horse_appaloosa_brownleopard"):
 			return joaat("BREED_APPALOOSA_BROWNLEOPARD");
 		case joaat("a_c_horse_appaloosa_leopard"):
@@ -9052,11 +9052,11 @@ int func_287(int iParam0)
 		case joaat("a_c_horse_arabian_redchestnut"):
 			return joaat("BREED_ARABIAN_REDCHESTNUT");
 		case joaat("a_c_horse_arabian_redchestnut_pc"):
-			return -1506685618 /* GXTEntry: "Arabian - Red Chestnut Coat" */;
+			return joaat("BREED_ARABIAN_REDCHESTNUT_PC");
 		case joaat("a_c_horse_arabian_rosegreybay"):
 			return joaat("BREED_ARABIAN_ROSEGREYBAY");
 		case joaat("a_c_horse_arabian_warpedbrindle_pc"):
-			return -2105447887 /* GXTEntry: "Arabian - Warped Brindle Coat" */;
+			return joaat("BREED_ARABIAN_WARPEDBRINDLE_PC");
 		case joaat("a_c_horse_arabian_white"):
 			return joaat("BREED_ARABIAN_WHITE");
 		case joaat("a_c_horse_ardennes_bayroan"):
@@ -9084,7 +9084,7 @@ int func_287(int iParam0)
 		case joaat("a_c_horse_kentuckysaddle_black"):
 			return -1955947684;
 		case joaat("a_c_horse_kentuckysaddle_buttermilkbuckskin_pc"):
-			return 1427053849 /* GXTEntry: "Kentucky Saddler - Buttermilk Buckskin Coat" */;
+			return joaat("BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC");
 		case joaat("a_c_horse_kentuckysaddle_chestnutpinto"):
 			return joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO");
 		case joaat("a_c_horse_kentuckysaddle_grey"):
@@ -9102,7 +9102,7 @@ int func_287(int iParam0)
 		case joaat("a_c_horse_morgan_flaxenchestnut"):
 			return joaat("BREED_MORGAN_FLAXENCHESTNUT");
 		case joaat("a_c_horse_morgan_liverchestnut_pc"):
-			return 955937750 /* GXTEntry: "Morgan - Liver Chestnut Coat" */;
+			return joaat("BREED_MORGAN_LIVERCHESTNUT_PC");
 		case joaat("a_c_horse_morgan_palomino"):
 			return joaat("BREED_MORGAN_PALOMINO");
 		case joaat("a_c_horse_mustang_grullodun"):
@@ -9132,7 +9132,7 @@ int func_287(int iParam0)
 		case joaat("a_c_horse_tennesseewalker_dapplebay"):
 			return joaat("BREED_TENNESSEEWALKER_DAPPLEBAY");
 		case joaat("a_c_horse_tennesseewalker_goldpalomino_pc"):
-			return 2059232991 /* GXTEntry: "Tennessee Walker - Gold Palomino Coat" */;
+			return joaat("BREED_TENNESSEEWALKER_GOLDPALOMINO_PC");
 		case joaat("a_c_horse_tennesseewalker_redroan"):
 			return joaat("BREED_TENNESSEEWALKER_REDROAN");
 		case joaat("a_c_horse_tennesseewalker_flaxenroan"):
@@ -10005,7 +10005,7 @@ char* func_312(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_BARROW_LAGOON";
 				*uParam6 = 1;
 				break;
-			case -557290573: /* GXTEntry: "Bayou Nwa" */
+			case joaat("WATER_BAYOU_NWA"):
 				sVar0 = "DISTRICT_BAYOU_NWA";
 				*uParam6 = 1;
 				break;
@@ -10037,11 +10037,11 @@ char* func_312(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_HAWKS_EYE_CREEK";
 				*uParam6 = 1;
 				break;
-			case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+			case joaat("WATER_HEARTLANDS_OVERFLOW"):
 				sVar0 = "LANDMARK_HEARTLAND_OVERFLOW";
 				*uParam6 = 1;
 				break;
-			case 1175365009: /* GXTEntry: "Hot Springs" */
+			case joaat("WATER_HOT_SPRINGS"):
 				sVar0 = "WATER_COTORRA_SPRINGS";
 				*uParam6 = 1;
 				break;
@@ -10065,7 +10065,7 @@ char* func_312(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_LOWER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case 301094150: /* GXTEntry: "Mattlock Pond" */
+			case joaat("WATER_MATTLOCK_POND"):
 				sVar0 = "WATER_MATTOCK_POND";
 				*uParam6 = 1;
 				break;
@@ -10124,7 +10124,7 @@ char* func_312(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				}
 				*uParam6 = 1;
 				break;
-			case -1504425495: /* GXTEntry: "San Luis River" */
+			case joaat("WATER_SAN_LUIS_RIVER"):
 				if (iParam1 == 4 || iParam1 == 12)
 				{
 					sVar0 = "WATER_SAN_LUIS_RIVER_WEST_ELIZABETH";
@@ -10288,9 +10288,9 @@ int func_316(int iParam0)
 			return 0;
 		case joaat("WATER_BARROW_LAGOON"):
 			return 0;
-		case -557290573: /* GXTEntry: "Bayou Nwa" */
+		case joaat("WATER_BAYOU_NWA"):
 			return 2;
-		case 650214731: /* GXTEntry: "Beartooth Beck" */
+		case joaat("WATER_BEARTOOTH_BECK"):
 			return 1;
 		case joaat("WATER_CAIRN_LAKE"):
 			return 0;
@@ -10302,7 +10302,7 @@ int func_316(int iParam0)
 			return 1;
 		case joaat("WATER_DEADBOOT_CREEK"):
 			return 1;
-		case 469159176: /* GXTEntry: "Dewberry Creek" */
+		case joaat("WATER_DEWBERRY_CREEK"):
 			return 1;
 		case joaat("WATER_ELYSIAN_POOL"):
 			return 0;
@@ -10310,9 +10310,9 @@ int func_316(int iParam0)
 			return 0;
 		case joaat("WATER_HAWKS_EYE_CREEK"):
 			return 1;
-		case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+		case joaat("WATER_HEARTLANDS_OVERFLOW"):
 			return 0;
-		case 1175365009: /* GXTEntry: "Hot Springs" */
+		case joaat("WATER_HOT_SPRINGS"):
 			return 0;
 		case joaat("WATER_KAMASSA_RIVER"):
 			return 1;
@@ -10326,7 +10326,7 @@ int func_316(int iParam0)
 			return 1;
 		case joaat("WATER_LOWER_MONTANA_RIVER"):
 			return 1;
-		case 301094150: /* GXTEntry: "Mattlock Pond" */
+		case joaat("WATER_MATTLOCK_POND"):
 			return 0;
 		case joaat("WATER_MOONSTONE_POND"):
 			return 0;
@@ -10336,7 +10336,7 @@ int func_316(int iParam0)
 			return 0;
 		case joaat("WATER_RINGNECK_CREEK"):
 			return 1;
-		case -1504425495: /* GXTEntry: "San Luis River" */
+		case joaat("WATER_SAN_LUIS_RIVER"):
 			return 1;
 		case joaat("WATER_SEA_OF_CORONADO"):
 			return 1;
@@ -15893,14 +15893,14 @@ int func_576(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}
@@ -18664,7 +18664,7 @@ void func_690(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case 323124696: /* GXTEntry: "Legendary Bullhead Catfish" */
+		case joaat("PROVISION_FISH_BULLHEAD_CATFISH_LEGENDARY"):
 			func_751(-1865241121);
 			func_752(-642026005);
 			func_753(-642026005);
@@ -18682,13 +18682,13 @@ void func_690(int iParam0)
 			func_753(1972645282);
 			func_754(0, 10);
 			break;
-		case -787702678: /* GXTEntry: "Legendary Largemouth Bass" */
+		case joaat("PROVISION_FISH_LARGEMOUTH_BASS_LEGENDARY"):
 			func_751(-641744968);
 			func_752(1667205433);
 			func_753(1667205433);
 			func_754(0, 10);
 			break;
-		case -804542901: /* GXTEntry: "Legendary Longnose Gar" */
+		case joaat("PROVISION_FISH_LONGNOSE_GAR_LEGENDARY"):
 			func_751(-946988203);
 			func_752(1362715885);
 			func_753(1362715885);
@@ -18706,7 +18706,7 @@ void func_690(int iParam0)
 			func_753(-1100103852);
 			func_754(0, 10);
 			break;
-		case -1114363619: /* GXTEntry: "Legendary Redfin Pickerel" */
+		case joaat("PROVISION_FISH_REDFIN_PICKEREL_LEGENDARY"):
 			func_751(-179276075);
 			func_752(-1409869209);
 			func_753(-1409869209);
@@ -18718,13 +18718,13 @@ void func_690(int iParam0)
 			func_753(-1760235357);
 			func_754(0, 10);
 			break;
-		case 1997759228: /* GXTEntry: "Legendary Smallmouth Bass" */
+		case joaat("PROVISION_FISH_SMALLMOUTH_BASS_LEGENDARY"):
 			func_751(1764383959);
 			func_752(-138366827);
 			func_753(-138366827);
 			func_754(0, 10);
 			break;
-		case 1265573293: /* GXTEntry: "Legendary Sockeye Salmon" */
+		case joaat("PROVISION_FISH_SOCKEYE_SALMON_LEGENDARY"):
 			func_751(317501533);
 			func_752(-1261163843);
 			func_753(-1261163843);
@@ -18736,7 +18736,7 @@ void func_690(int iParam0)
 			func_753(-963523016);
 			func_754(0, 10);
 			break;
-		case -1490884871: /* GXTEntry: "Legendary Bluegill" */
+		case joaat("PROVISION_FISH_BLUEGILL_LEGENDARY"):
 			func_751(576606016);
 			func_752(560825326);
 			func_753(560825326);

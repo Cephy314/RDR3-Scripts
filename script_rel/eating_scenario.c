@@ -96,13 +96,13 @@ void func_6()
 		iLocal_0 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		func_12(12.5f, 1, 0, 1);
 		func_13(10f, 1);
 		switch (iLocal_4)
 		{
-			case -1200128754:
+			case joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER"):
 				func_14(-241345764 /* GXTEntry: "Almonds" */, 1);
 				break;
 			case 1637554487:

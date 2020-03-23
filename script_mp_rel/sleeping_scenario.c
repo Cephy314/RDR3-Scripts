@@ -216,7 +216,7 @@ void func_13(var uParam0)
 			func_20(1);
 			uParam0->f_29 = 1;
 		}
-		if (iLocal_17 == -2016812721 && (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) || TASK::_0x0C3CB2E600C8977D(Global_34, 0)))
+		if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame") && (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) || TASK::_0x0C3CB2E600C8977D(Global_34, 0)))
 		{
 			CAM::_0x8370D34BD2E60B73();
 			CAM::_CLAMP_GAMEPLAY_CAM_PITCH(-35f, 15f);
@@ -234,14 +234,14 @@ void func_13(var uParam0)
 	switch (uParam0->f_10)
 	{
 		case 0:
-			if (iLocal_17 == -2016812721)
+			if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 			{
 				STREAMING::_0x19A6BE7D9C6884D3(iLocal_17, 15, 0, 0);
 			}
 			func_26(uParam0, 1);
 			break;
 		case 1:
-			if (iLocal_17 == -2016812721)
+			if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 			{
 				if (!STREAMING::_0x9427C94D2E4094A4(iLocal_17, 0))
 				{
@@ -258,7 +258,7 @@ void func_13(var uParam0)
 				func_31(uParam0[4], 1057677739, 0, 1);
 				if (func_16() != 0)
 				{
-					if (iLocal_17 == -2016812721)
+					if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 					{
 						(*uParam0)[7] = func_30("SIT_TENT", joaat("INPUT_CONTEXT_X"), func_29(), 1f, 1, 1, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("MEDIUM_TIMED_EVENT"), 0);
 						func_31(uParam0[7], 1057677739, 0, 1);
@@ -308,11 +308,11 @@ void func_13(var uParam0)
 				func_26(uParam0, 4);
 				return;
 			}
-			if ((iLocal_17 == -2016812721 || iLocal_17 == -1054012177) && func_16() != 0)
+			if ((iLocal_17 == joaat("Prop_player_sleep_tent_a_frame") || iLocal_17 == -1054012177) && func_16() != 0)
 			{
 				if (!func_35(uParam0[7]))
 				{
-					if (iLocal_17 == -2016812721)
+					if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 					{
 						(*uParam0)[7] = func_30("SIT_TENT", joaat("INPUT_CONTEXT_X"), func_29(), 1.5f, 1, 1, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("MEDIUM_TIMED_EVENT"), 0);
 						func_31(uParam0[7], 1057677739, 0, 1);
@@ -329,7 +329,7 @@ void func_13(var uParam0)
 					func_40((*uParam0)[7], 1, 1);
 					func_40((*uParam0)[4], 1, 1);
 					uParam0->f_12 = func_32();
-					if (iLocal_17 == -2016812721)
+					if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 					{
 						func_42(uParam0);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(Global_34, false, true);
@@ -373,7 +373,7 @@ void func_13(var uParam0)
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), false);
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_JOURNAL"), false);
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), false);
-			if (iLocal_17 == -2016812721)
+			if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 			{
 				if (!CAM::IS_CAM_INTERPOLATING(uParam0->f_22) && CAM::IS_CAM_ACTIVE(uParam0->f_22))
 				{
@@ -410,14 +410,14 @@ void func_13(var uParam0)
 				MISC::SET_BIT(&(Global_1956131->f_1), 2);
 				MISC::CLEAR_BIT(&(Global_1956131->f_1), 3);
 				func_47();
-				if (iLocal_17 == -2016812721 && !CAM::IS_GAMEPLAY_CAM_RENDERING())
+				if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame") && !CAM::IS_GAMEPLAY_CAM_RENDERING())
 				{
 					CAM::_RENDER_FIRST_PERSON_CAM(0, 0, 3, 0, 0, 1);
 				}
 			}
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_QUICK_USE_ITEM"), false);
 			iVar0 = PED::_0x569F1E1237508DEB(Global_34);
-			if (((((iVar0 != 200520348 && iVar0 != -296197310) && iVar0 != -1888446106) && iVar0 != 665598855) && iVar0 != -229964281) || PED::_0xC488B8C0E52560D8(Global_34))
+			if (((((iVar0 != joaat("PROP_PLAYER_SLEEP_TENT_RESTING_ARTHUR") && iVar0 != joaat("WORLD_PLAYER_SLEEP_BEDROLL_ARTHUR")) && iVar0 != -1888446106) && iVar0 != 665598855) && iVar0 != joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC")) || PED::_0xC488B8C0E52560D8(Global_34))
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_CONTEXT_B"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_MOVE_LR"), false);
@@ -607,7 +607,7 @@ void func_13(var uParam0)
 				{
 					if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 0))
 					{
-						if (iLocal_17 == -2016812721)
+						if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 						{
 							PED::_0xD65FDC686A031C83(PLAYER::PLAYER_PED_ID(), -261921482, 3f);
 						}
@@ -939,7 +939,7 @@ void func_26(var uParam0, int iParam1)
 
 void func_27(var uParam0)
 {
-	if (iLocal_17 != -2016812721)
+	if (iLocal_17 != joaat("Prop_player_sleep_tent_a_frame"))
 	{
 		return;
 	}
@@ -1075,7 +1075,7 @@ Vector3 func_29()
 
 	switch (iLocal_17)
 	{
-		case -2016812721:
+		case joaat("Prop_player_sleep_tent_a_frame"):
 			vVar0 = { 0.29f, 1.5f, 1f };
 			break;
 		case -1054012177:
@@ -1168,7 +1168,7 @@ char* func_33()
 {
 	switch (iLocal_17)
 	{
-		case -2016812721:
+		case joaat("Prop_player_sleep_tent_a_frame"):
 		case 1690225020:
 			return "CMP_SLP_TNT";
 		case joaat("WORLD_PLAYER_SLEEP_GROUND"):
@@ -1330,7 +1330,7 @@ void func_42(var uParam0)
 {
 	vector3 vVar0;
 
-	if (iLocal_17 != -2016812721)
+	if (iLocal_17 != joaat("Prop_player_sleep_tent_a_frame"))
 	{
 		return;
 	}
@@ -1375,7 +1375,7 @@ void func_43(var uParam0, bool bParam1)
 		uParam0->f_13 = MISC::GET_GAME_TIMER();
 		if (bParam1)
 		{
-			if (iLocal_17 == -2016812721)
+			if (iLocal_17 == joaat("Prop_player_sleep_tent_a_frame"))
 			{
 				func_42(uParam0);
 				sVar0 = "PROP_PLAYER_SLEEP_TENT_RESTING_ARTHUR";
@@ -1514,7 +1514,7 @@ bool func_45()
 
 void func_46(var uParam0)
 {
-	if (func_16() != 0 && iLocal_17 != -1085971095)
+	if (func_16() != 0 && iLocal_17 != joaat("PROP_PLAYER_PRPTY_SAVE_GAME"))
 	{
 		(*uParam0)[4] = func_95("SLEEP", joaat("INPUT_CONTEXT_Y"), Global_34, 1, 0, 0, 0, 0, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 		func_31(uParam0[4], 1057677739, 0, 1);
@@ -1560,7 +1560,7 @@ void func_49(int iParam0)
 
 void func_50(var uParam0)
 {
-	if (iLocal_17 != -2016812721)
+	if (iLocal_17 != joaat("Prop_player_sleep_tent_a_frame"))
 	{
 		return;
 	}
@@ -2087,7 +2087,7 @@ int func_67(bool bParam0, bool bParam1, int iParam2, int iParam3, bool bParam4, 
 					}
 					else
 					{
-						iVar26 = 1338309244;
+						iVar26 = joaat("player_wardrobe");
 						if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar26) > 0)
 						{
 						}
@@ -2239,7 +2239,7 @@ void func_72(var uParam0)
 	vector3 vVar0;
 	vector3 vVar3;
 
-	if (iLocal_17 != -2016812721)
+	if (iLocal_17 != joaat("Prop_player_sleep_tent_a_frame"))
 	{
 		return;
 	}
@@ -11202,7 +11202,7 @@ void func_447(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	iVar6 = func_126(bParam0);
 	iVar10 = 0;
 	iVar11 = joaat("inventory");
-	if (((((((iVar6 == joaat("ammo") && bParam0 != 424030678) && bParam0 != -1188697038) && bParam0 != 446901936) && bParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && bParam0 != 34372170) && bParam0 != 963726415) && bParam0 != 1701457723)
+	if (((((((iVar6 == joaat("ammo") && bParam0 != 424030678) && bParam0 != -1188697038) && bParam0 != 446901936) && bParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && bParam0 != 34372170) && bParam0 != joaat("AMMO_POISONBOTTLE")) && bParam0 != 1701457723)
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");

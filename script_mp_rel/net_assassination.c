@@ -8632,9 +8632,9 @@ void func_302(struct<2> Param0, bool bParam2)
 		{
 			switch (iVar4)
 			{
-				case 2132950130:
+				case joaat("CRIPPS"):
 					break;
-				case -408236271:
+				case joaat("MARCEL"):
 					func_516(iVar4, func_515());
 					func_517(iVar4, 1);
 					func_518(iVar0);
@@ -22913,7 +22913,7 @@ int func_800(int iParam0)
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
 		case joaat("alden"):
 			return joaat("GFH_ALDEN");
-		case -604384854:
+		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
 		case -399874304:
 			return joaat("GFH_THE_BOY");
@@ -22945,11 +22945,11 @@ int func_800(int iParam0)
 			return joaat("RIGGS_STATION_BOUNTY_BOARD");
 		case -667711246:
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
-		case 2132950130:
+		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
 		case 1766283257:
 			return joaat("GFH_MAGGIE");
-		case -408236271:
+		case joaat("MARCEL"):
 			return joaat("GFH_MARCEL");
 		default:
 			break;
@@ -28211,13 +28211,13 @@ int func_1041(int iParam0, int iParam1)
 		case 8:
 			return joaat("CRIME_BURGLARY");
 		case 9:
-			return -1560342203 /* GXTEntry: "Cheating" */;
+			return joaat("CRIME_CHEATING");
 		case 10:
 			return joaat("CRIME_DISTURBANCE");
 		case 11:
 			return joaat("CRIME_EXPLOSION");
 		case 12:
-			return -1759599185 /* GXTEntry: "Grave Robbery" */;
+			return joaat("CRIME_GRAVE_ROBBERY");
 		case 13:
 			return joaat("CRIME_HASSLE");
 		case 14:
@@ -28231,7 +28231,7 @@ int func_1041(int iParam0, int iParam1)
 		case 18:
 			return joaat("CRIME_JACK_VEHICLE");
 		case 19:
-			return 314693001 /* GXTEntry: "Jail Break" */;
+			return joaat("CRIME_JAIL_BREAK");
 		case 20:
 			return joaat("CRIME_KIDNAPPING");
 		case 21:
@@ -28255,13 +28255,13 @@ int func_1041(int iParam0, int iParam1)
 		case 30:
 			return joaat("CRIME_MURDER_LIVESTOCK");
 		case 31:
-			return 1396375613 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_PROPERTY_DESTRUCTION");
 		case 32:
 			return joaat("CRIME_RESIST_ARREST");
 		case 33:
 			return joaat("CRIME_ROBBERY");
 		case 34:
-			return -59535775 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_STAGECOACH_ROBBERY");
 		case 35:
 			return joaat("CRIME_STOLEN_GOODS");
 		case 36:
@@ -28277,7 +28277,7 @@ int func_1041(int iParam0, int iParam1)
 		case 41:
 			return joaat("CRIME_THREATEN_LAW");
 		case 42:
-			return 1685924442 /* GXTEntry: "Train Robbery" */;
+			return joaat("CRIME_TRAIN_ROBBERY");
 		case 43:
 			return joaat("CRIME_TRAMPLE");
 		case 44:
@@ -30221,7 +30221,7 @@ int func_1129(int iParam0)
 		case joaat("BLIP_MP_GAME_HILL"):
 		case joaat("BLIP_MP_MISSION_BRAITHWAITE"):
 		case joaat("BLIP_MP_BASE_I"):
-			return 672378911;
+			return joaat("blips_mp");
 	}
 	return joaat("blips");
 }
@@ -31478,7 +31478,7 @@ int func_1192(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -32915,7 +32915,7 @@ int func_1262(int iParam0)
 	{
 		case joaat("start"):
 			return 4;
-		case 1130877567:
+		case joaat("Complete"):
 			return 8;
 		case joaat("primary"):
 			return 1;
@@ -33643,7 +33643,7 @@ int func_1294(int iParam0)
 		case 23:
 			return joaat("rpg_textures");
 		case 22:
-			return -1019997170;
+			return joaat("rpg_agitation");
 		case 24:
 			return joaat("COLOR_ENEMY");
 		case 18:
@@ -34238,7 +34238,7 @@ int func_1327(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -34288,17 +34288,17 @@ int func_1328(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -34312,7 +34312,7 @@ int func_1329(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;

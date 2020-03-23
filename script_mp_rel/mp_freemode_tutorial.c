@@ -12065,7 +12065,7 @@ int func_415(var uParam0, int iParam1, var uParam2)
 			uParam2->f_12 = func_332(uParam0, -153769467, 0, 0);
 			uParam2->f_13 = func_332(uParam0, 2034260151, 0, 0);
 			break;
-		case 454885399:
+		case joaat("walk_and_talk"):
 			uParam2->f_14 = { func_105(uParam0, -216759738, 0, 0) };
 			break;
 		default:
@@ -12128,7 +12128,7 @@ int func_417(var uParam0, int iParam1, var uParam2)
 			VOLUME::_0xBE551C2CC421185D(iVar0, uParam2->f_12);
 			VOLUME::_0x5B23DFF8E0948BB2(iVar0, uParam2->f_13);
 			break;
-		case 454885399:
+		case joaat("walk_and_talk"):
 			iVar0 = VOLUME::_CREATE_WALK_AND_TALK_VOLUME(*uParam2, uParam2->f_2, uParam2->f_5, uParam2->f_8, uParam2->f_14);
 			break;
 		default:
@@ -17904,7 +17904,7 @@ int func_690(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -23911,7 +23911,7 @@ int func_924(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_739(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
+		return func_739(joaat("AMMO_POISONBOTTLE"), 1);
 	}
 	return func_739(iParam0, 1);
 }

@@ -474,7 +474,7 @@ int func_17(var uParam0, bool bParam1)
 		Var18.f_9 = -1082130432;
 		Var18.f_30 = "Milking";
 		Var18.f_1 = joaat("default");
-		Var18 = 325037696;
+		Var18 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@MILK_COW");
 		TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(*uParam0, "script_mar5_milkcow_cow", &Var18, Var8.f_5, 0f, 0f, Var8.f_8, 2, 0.125f, 0, 0, 1154, 0);
 	}
 	vVar0 = { func_18(Var8.f_5, 0f, 0f, Var8.f_8, 0) };

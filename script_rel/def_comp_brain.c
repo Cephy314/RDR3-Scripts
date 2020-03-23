@@ -5171,7 +5171,7 @@ void func_162(int iParam0)
 		{
 			func_168(iParam0, 0, "triggering horse whistle");
 			TASK::OPEN_SEQUENCE_TASK(&iVar2);
-			func_322(0, 869278708, 1971704925);
+			func_322(0, 869278708, joaat("Unspecified"));
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
 			TASK::_TASK_PERFORM_SEQUENCE_2(func_112(iParam0), iVar2, fVar0, fVar1);
 			TASK::CLEAR_SEQUENCE_TASK(&iVar2);
@@ -7734,9 +7734,9 @@ void func_244(var uParam0, bool bParam1)
 	{
 		case 20:
 			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("javier"), 1, bParam1);
-			MISC::_0x0358B8A41916C613(joaat("karen"), 45077879, 1, bParam1);
+			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("GRIMSHAW"), 1, bParam1);
 			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("javier"), 2, bParam1);
-			MISC::_0x0358B8A41916C613(joaat("karen"), 45077879, 2, bParam1);
+			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("GRIMSHAW"), 2, bParam1);
 			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("micah"), 2, bParam1);
 			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("dutch"), 2, bParam1);
 			MISC::_0x0358B8A41916C613(joaat("karen"), joaat("cleet"), 2, bParam1);
@@ -7767,8 +7767,8 @@ void func_244(var uParam0, bool bParam1)
 			MISC::_0x0358B8A41916C613(joaat("dutch"), joaat("john"), 2, bParam1);
 			break;
 		case 19:
-			MISC::_0x0358B8A41916C613(45077879, joaat("karen"), 2, bParam1);
-			MISC::_0x0358B8A41916C613(45077879, joaat("karen"), 1, bParam1);
+			MISC::_0x0358B8A41916C613(joaat("GRIMSHAW"), joaat("karen"), 2, bParam1);
+			MISC::_0x0358B8A41916C613(joaat("GRIMSHAW"), joaat("karen"), 1, bParam1);
 			break;
 		case 14:
 			MISC::_0x0358B8A41916C613(joaat("jack"), joaat("joe"), 2, bParam1);

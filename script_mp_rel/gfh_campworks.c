@@ -52,7 +52,7 @@ void func_1(var uParam0)
 	func_10(0);
 	Local_88 = { *uParam0 };
 	Local_88.f_276 = uParam0->f_3;
-	Local_88.f_282 = func_11(2132950130);
+	Local_88.f_282 = func_11(joaat("CRIPPS"));
 	Local_88.f_283 = func_12(-1667613409);
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	AUDIO::REGISTER_SCRIPT_WITH_AUDIO(1);
@@ -792,9 +792,9 @@ int func_39(var uParam0)
 					{
 						func_58(&uVar31, 2);
 					}
-					func_59(func_12(-1667613409), func_11(2132950130), uVar31, uParam0->f_243.f_2, uParam0->f_243, Var32, 0);
+					func_59(func_12(-1667613409), func_11(joaat("CRIPPS")), uVar31, uParam0->f_243.f_2, uParam0->f_243, Var32, 0);
 				}
-				else if (!func_60(&(uParam0->f_243), func_11(2132950130), func_12(-1667613409)))
+				else if (!func_60(&(uParam0->f_243), func_11(joaat("CRIPPS")), func_12(-1667613409)))
 				{
 				}
 				uParam0->f_82.f_48 = 1;
@@ -831,7 +831,7 @@ void func_41(var uParam0)
 	{
 		case 0:
 			uParam0->f_82.f_154 = DATAFILE::_0xD97D8D905F1562F2(-911959609);
-			uParam0->f_82.f_155 = DATAFILE::_0xD97D8D905F1562F2(-245132713);
+			uParam0->f_82.f_155 = DATAFILE::_0xD97D8D905F1562F2(joaat("Net_Gun_For_Hire_Missions"));
 			uParam0->f_82.f_156 = DATAFILE::_0xD97D8D905F1562F2(-954913418);
 			uParam0->f_82.f_157 = DATAFILE::_0xD97D8D905F1562F2(-972240077);
 			func_61(uParam0, 1);
@@ -1696,13 +1696,13 @@ int func_56(var uParam0, int iParam1, int iParam2, bool bParam3, var uParam4)
 																				{
 																					bVar17 = true;
 																				}
-																				vVar515 = { func_122(uParam0->f_82.f_156, iVar510, 2132950130, &(Var231.f_4[6]), &bVar16, -1, 1) };
+																				vVar515 = { func_122(uParam0->f_82.f_156, iVar510, joaat("CRIPPS"), &(Var231.f_4[6]), &bVar16, -1, 1) };
 																				if (bVar16)
 																				{
 																				}
 																				else
 																				{
-																					uParam0->f_65.f_4 = func_123(2132950130, -1667613409, iVar509, &(Var231.f_4[7]), uParam0->f_82.f_157);
+																					uParam0->f_65.f_4 = func_123(joaat("CRIPPS"), -1667613409, iVar509, &(Var231.f_4[7]), uParam0->f_82.f_157);
 																					if (bVar14 && !bVar17)
 																					{
 																						uParam0->f_82.f_53 = { vVar515 };
@@ -1759,7 +1759,7 @@ int func_56(var uParam0, int iParam1, int iParam2, bool bParam3, var uParam4)
 																					return 0;
 																				}
 																			}
-																			uParam0->f_82.f_53 = { func_122(uParam0->f_82.f_156, iVar510, 2132950130, &(Var231.f_4[6]), &bVar16, -1, 1) };
+																			uParam0->f_82.f_53 = { func_122(uParam0->f_82.f_156, iVar510, joaat("CRIPPS"), &(Var231.f_4[6]), &bVar16, -1, 1) };
 																			if (bVar16)
 																			{
 																				return 0;
@@ -6829,7 +6829,7 @@ int func_215(int iParam0)
 			return 2;
 		case -358638071:
 			return 1;
-		case -1718522759:
+		case joaat("MultiStart"):
 			return 0;
 		case 2055847821:
 			return 9;
@@ -7656,7 +7656,7 @@ int func_233(int iParam0, int iParam1)
 				return 4952;
 			case -2029723322:
 				return 398;
-			case -2029502224:
+			case joaat("GOON2"):
 				return 1158;
 			case -2028988535:
 				return 2980;
@@ -10002,7 +10002,7 @@ int func_233(int iParam0, int iParam1)
 						return 533;
 					case -1114482477:
 						return 3656;
-					case -1114271695:
+					case joaat("ShopKeep"):
 						return 5355;
 					case -1113921238:
 						return 2582;
@@ -10292,7 +10292,7 @@ int func_233(int iParam0, int iParam1)
 						return 5851;
 					case -986687980:
 						return 4526;
-					case -986530492:
+					case joaat("GOON1"):
 						return 1157;
 					case -986147997:
 						return 3842;
@@ -10338,7 +10338,7 @@ int func_233(int iParam0, int iParam1)
 						return 1599;
 					case -969880332:
 						return 3670;
-					case -969479795: /* GXTEntry: "Carcass" */
+					case joaat("carcass"):
 						return 250;
 					case -968682879:
 						return 2417;
@@ -12016,7 +12016,7 @@ int func_233(int iParam0, int iParam1)
 						return 3334;
 					case -348708667:
 						return 979;
-					case -347010688:
+					case joaat("GOON3"):
 						return 1159;
 					case -346838721:
 						return 3811;
@@ -12436,7 +12436,7 @@ int func_233(int iParam0, int iParam1)
 						return 3873;
 					case -191756634:
 						return 5848;
-					case -190978770:
+					case joaat("MSP_NATIVE1_ASSISTANT_01"):
 						return 3205;
 					case -190747234:
 						return 5589;
@@ -12794,7 +12794,7 @@ int func_233(int iParam0, int iParam1)
 						return 2330;
 					case -57209890:
 						return 534;
-					case -56487083:
+					case joaat("MSP_NATIVE1_AILING_NATIVE_01"):
 						return 3203;
 					case -56313992:
 						return 2335;
@@ -15074,7 +15074,7 @@ int func_233(int iParam0, int iParam1)
 						return 1566;
 					case 780666035:
 						return 4285;
-					case 781121326:
+					case joaat("MSP_NATIVE1_AILING_NATIVE_02"):
 						return 3204;
 					case 781533162:
 						return 888;
@@ -15734,7 +15734,7 @@ int func_233(int iParam0, int iParam1)
 						return 5758;
 					case 1004483175:
 						return 3282;
-					case 1004613689:
+					case joaat("TRAINSTATION"):
 						return 4778;
 					case 1007503923:
 						return 5378;
@@ -19305,7 +19305,7 @@ void func_253(struct<5> Param0, var uParam5)
 						case joaat("flags"):
 							iVar5 = func_124(iVar4, 1);
 							break;
-						case -146456760:
+						case joaat("origins"):
 							iVar5 = func_317(iVar4);
 							break;
 						case -1108952690:
@@ -19324,7 +19324,7 @@ void func_253(struct<5> Param0, var uParam5)
 							case joaat("flags"):
 								func_319(&(uParam5->f_23), func_318(iVar5, 1));
 								break;
-							case -146456760:
+							case joaat("origins"):
 								func_320(&(uParam5->f_13), iVar5);
 								break;
 							case -1108952690:
@@ -21354,7 +21354,7 @@ int func_378(int iParam0)
 			return 0;
 		case joaat("secondary"):
 			return 1;
-		case -177397452:
+		case joaat("Trolley"):
 			return 2;
 	}
 	return 0;
@@ -21808,7 +21808,7 @@ int func_406(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -21821,9 +21821,9 @@ int func_406(int iParam0)
 		case 1884341302:
 		case 1918154385:
 			return 1;
-		case -1261475678:
+		case joaat("ambush"):
 		case -669677371:
-		case -468635158:
+		case joaat("Hideout"):
 			return 8;
 		default:
 			break;

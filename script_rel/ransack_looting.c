@@ -938,7 +938,7 @@ void func_30(int iParam0)
 			iParam0->f_4 = 1;
 			break;
 		case -1384407567:
-		case -1363262734:
+		case joaat("RANSACK_ATTACHED_DD_234"):
 		case -733157857:
 		case 1956439393:
 			iParam0->f_8 = 17;

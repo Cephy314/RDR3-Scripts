@@ -1333,17 +1333,17 @@ void func_30()
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_569[1]), 250, true);
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_569[2]), 96, true);
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_569[2]), 250, true);
-	PED::_0xF7EA250B9A919E03(-1638944626, &(uLocal_569[0]));
-	PED::_0xF7EA250B9A919E03(-1638944626, &(uLocal_569[1]));
-	PED::_0xF7EA250B9A919E03(-1638944626, &(uLocal_569[2]));
+	PED::_0xF7EA250B9A919E03(joaat("TaskCombat_Panic"), &(uLocal_569[0]));
+	PED::_0xF7EA250B9A919E03(joaat("TaskCombat_Panic"), &(uLocal_569[1]));
+	PED::_0xF7EA250B9A919E03(joaat("TaskCombat_Panic"), &(uLocal_569[2]));
 	PED::_0x5C3C55EAAD19915F(&(uLocal_569[0]), "TaskCombat_Panic");
 	PED::_0x5C3C55EAAD19915F(&(uLocal_569[1]), "TaskCombat_Panic");
 	PED::_0x5C3C55EAAD19915F(&(uLocal_569[2]), "TaskCombat_Panic");
-	PED::_0xF7EA250B9A919E03(-372548123, &(uLocal_569[1]));
-	PED::_0xF7EA250B9A919E03(-372548123, &(uLocal_569[2]));
+	PED::_0xF7EA250B9A919E03(joaat("DEFAULT_SHOCKED"), &(uLocal_569[1]));
+	PED::_0xF7EA250B9A919E03(joaat("DEFAULT_SHOCKED"), &(uLocal_569[2]));
 	PED::_0x5C3C55EAAD19915F(&(uLocal_569[1]), "Default_Shocked");
 	PED::_0x5C3C55EAAD19915F(&(uLocal_569[2]), "Default_Shocked");
-	PED::_0xF7EA250B9A919E03(-664314203, &(uLocal_569[3]));
+	PED::_0xF7EA250B9A919E03(joaat("Default_Nervous"), &(uLocal_569[3]));
 	PED::_0x5C3C55EAAD19915F(&(uLocal_569[3]), "Default_Nervous");
 	PED::SET_PED_HEARING_RANGE(&(uLocal_569[0]), 5f);
 	PED::_0x406CCF555B04FAD3(&(uLocal_569[0]), 1, 1f);
@@ -7951,47 +7951,47 @@ int func_222(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588: /* GXTEntry: "Loot Innocent" */
+		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case 1142025875: /* GXTEntry: "Murder" */
+		case joaat("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case 1587891565:
+		case joaat("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case 1877013492: /* GXTEntry: "Frighten" */
+		case joaat("HONOR_EVENT_SCARE"):
 			return 32;
-		case -643014279: /* GXTEntry: "Killed Vermin" */
+		case joaat("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case -597116214: /* GXTEntry: "Killed Domestic Animal" */
+		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case 551416228: /* GXTEntry: "Killed Horse" */
+		case joaat("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case 1022576842: /* GXTEntry: "Stole Horse" */
+		case joaat("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case 953325896: /* GXTEntry: "Stole Donkey" */
+		case joaat("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case 508358508: /* GXTEntry: "Stole Mule" */
+		case joaat("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case -735200598: /* GXTEntry: "Trampled Innocent" */
+		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case -856432278:
+		case joaat("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case -2010847721: /* GXTEntry: "Abandon Dead Animals" */
+		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case 446961221: /* GXTEntry: "Watched Animal Bleedout" */
+		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case -1972216640: /* GXTEntry: "Antagonize" */
+		case joaat("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case 530833824: /* GXTEntry: "Theft" */
+		case joaat("HONOR_EVENT_THEFT"):
 			return 131072;
-		case 1682361219: /* GXTEntry: "Intervened" */
+		case joaat("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case 158959085: /* GXTEntry: "Wanted In Camp" */
+		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case 1919819559: /* GXTEntry: "Donated Game" */
+		case joaat("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case 1461411082: /* GXTEntry: "Item Request" */
+		case joaat("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case -549508280: /* GXTEntry: "Long Absence" */
+		case joaat("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;
@@ -8660,7 +8660,7 @@ int func_230(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 					CAM::DESTROY_CAM(iParam0->f_44, false);
 				}
 			}
-			if ((((!ANIMSCENE::_0x25557E324489393C(iParam0->f_2) || ANIMSCENE::_0xF94692EB9DC15D74(iParam0->f_2, 0)) || ANIMSCENE::_0xD8254CB2C586412B(iParam0->f_2, 0)) || !ANIMSCENE::_0xCBFC7725DE6CE2E0(iParam0->f_2, 0)) || (func_307(iParam0, 16) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -180478719)))
+			if ((((!ANIMSCENE::_0x25557E324489393C(iParam0->f_2) || ANIMSCENE::_0xF94692EB9DC15D74(iParam0->f_2, 0)) || ANIMSCENE::_0xD8254CB2C586412B(iParam0->f_2, 0)) || !ANIMSCENE::_0xCBFC7725DE6CE2E0(iParam0->f_2, 0)) || (func_307(iParam0, 16) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("safebreakout"))))
 			{
 				if (ANIMSCENE::_0x25557E324489393C(iParam0->f_2))
 				{
@@ -17230,14 +17230,14 @@ int func_469(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}

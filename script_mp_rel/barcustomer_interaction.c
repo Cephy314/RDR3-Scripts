@@ -214,10 +214,10 @@ void func_6()
 			STREAMING::REQUEST_MODEL(joaat("p_coin01x"), false);
 			bLocal_38 = false;
 			iLocal_27 = 0;
-			if (iLocal_17 == 817658057)
+			if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 			{
 				STREAMING::REQUEST_MODEL(joaat("p_bottlebeer01x"), false);
-				iVar4 = -758981113;
+				iVar4 = joaat("WORLD_HUMAN_BARTENDER_BEER");
 				iLocal_18 = 130648332;
 				iLocal_19 = -1003673600;
 				iLocal_21 = 817534410;
@@ -226,11 +226,11 @@ void func_6()
 				iLocal_24 = -1378615306;
 				iLocal_25 = -1931194237;
 				iLocal_26 = 18806614;
-				STREAMING::_0x19A6BE7D9C6884D3(-758981113, 262144, 0, 0);
+				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_BEER"), 262144, 0, 0);
 			}
 			else
 			{
-				iVar4 = -1208105393;
+				iVar4 = joaat("WORLD_HUMAN_BARTENDER_WHISKEY");
 				iLocal_18 = -766432658;
 				iLocal_19 = 391391121;
 				iLocal_21 = -226695311;
@@ -239,7 +239,7 @@ void func_6()
 				iLocal_24 = 2127356704;
 				iLocal_25 = 1054334670;
 				iLocal_26 = 1885925117;
-				STREAMING::_0x19A6BE7D9C6884D3(-1208105393, 262144, 0, 0);
+				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 262144, 0, 0);
 				STREAMING::REQUEST_MODEL(joaat("p_shotglass01x"), false);
 				STREAMING::REQUEST_MODEL(joaat("p_bottlejd01x"), false);
 			}
@@ -273,13 +273,13 @@ void func_6()
 			{
 				return;
 			}
-			if (iLocal_17 == 817658057)
+			if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 			{
 				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_bottlebeer01x")))
 				{
 					return;
 				}
-				if (!STREAMING::_0x9427C94D2E4094A4(-758981113, 0))
+				if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_BARTENDER_BEER"), 0))
 				{
 					return;
 				}
@@ -294,7 +294,7 @@ void func_6()
 				{
 					return;
 				}
-				if (!STREAMING::_0x9427C94D2E4094A4(-1208105393, 0))
+				if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 0))
 				{
 					return;
 				}
@@ -526,7 +526,7 @@ void func_17(bool bParam0)
 	}
 	if ((!bLocal_32 && bLocal_38) && ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_30, 864365833))
 	{
-		if (iLocal_17 == 817658057)
+		if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 			{
@@ -566,7 +566,7 @@ void func_17(bool bParam0)
 	}
 	if (((bLocal_40 && !bLocal_32) && !bLocal_33) && (iVar0 == joaat("WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A") || iVar0 == joaat("WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A")))
 	{
-		if (iLocal_17 == 817658057)
+		if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 			{
@@ -910,7 +910,7 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 			{
 				PED::_0xD65FDC686A031C83(iLocal_31, iLocal_22, 3f);
 				PED::_0x6D07B371E9439019(iLocal_31);
-				if (iLocal_17 == 1231068245)
+				if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY"))
 				{
 					iLocal_21 = 780205091;
 				}
@@ -929,7 +929,7 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				{
 					func_48();
 				}
-				if (iLocal_17 == 817658057)
+				if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 				{
 					iLocal_28 = 6;
 					iLocal_53 = PED::_0x4D0D2E3D8BC000EB(iLocal_31, "p_bottleBeer01x_PH_R_HAND", 0);
@@ -945,7 +945,7 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 					{
 					}
 				}
-				if (iLocal_17 == 817658057)
+				if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 				{
 					PED::_0xD65FDC686A031C83(iLocal_31, iLocal_23, 3f);
 				}
@@ -1031,7 +1031,7 @@ void func_29(bool bParam0, bool bParam1, bool bParam2)
 			}
 			if (!bVar0 && !TASK::_0x0C3CB2E600C8977D(iLocal_30, 0))
 			{
-				if (iLocal_17 == 817658057)
+				if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 				{
 					if (!TASK::_0xEA31F199A73801D3(uLocal_16))
 					{
@@ -1309,7 +1309,7 @@ void func_48()
 {
 	if (!bLocal_39)
 	{
-		if (iLocal_17 == 817658057)
+		if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 			{

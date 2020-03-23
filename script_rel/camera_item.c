@@ -2633,9 +2633,9 @@ char* func_87(int iParam0)
 			return "WATER_AURORA_BASIN";
 		case joaat("WATER_BARROW_LAGOON"):
 			return "WATER_BARROW_LAGOON";
-		case -557290573: /* GXTEntry: "Bayou Nwa" */
+		case joaat("WATER_BAYOU_NWA"):
 			return "WATER_BAYOU_NWA";
-		case 650214731: /* GXTEntry: "Beartooth Beck" */
+		case joaat("WATER_BEARTOOTH_BECK"):
 			return "WATER_BEARTOOTH_BECK";
 		case joaat("WATER_CAIRN_LAKE"):
 			return "WATER_CAIRN_LAKE";
@@ -2647,7 +2647,7 @@ char* func_87(int iParam0)
 			return "WATER_DAKOTA_RIVER";
 		case joaat("WATER_DEADBOOT_CREEK"):
 			return "WATER_DEADBOOT_CREEK";
-		case 469159176: /* GXTEntry: "Dewberry Creek" */
+		case joaat("WATER_DEWBERRY_CREEK"):
 			return "WATER_DEWBERRY_CREEK";
 		case joaat("WATER_ELYSIAN_POOL"):
 			return "WATER_ELYSIAN_POOL";
@@ -2655,9 +2655,9 @@ char* func_87(int iParam0)
 			return "WATER_FLAT_IRON";
 		case joaat("WATER_HAWKS_EYE_CREEK"):
 			return "WATER_HAWKS_EYE_CREEK";
-		case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+		case joaat("WATER_HEARTLANDS_OVERFLOW"):
 			return "WATER_HEARTLANDS_OVERFLOW";
-		case 1175365009: /* GXTEntry: "Hot Springs" */
+		case joaat("WATER_HOT_SPRINGS"):
 			return "WATER_HOT_SPRINGS";
 		case joaat("WATER_KAMASSA_RIVER"):
 			return "WATER_KAMASSA_RIVER";
@@ -2671,7 +2671,7 @@ char* func_87(int iParam0)
 			return "WATER_LITTLE_CREEK_RIVER";
 		case joaat("WATER_LOWER_MONTANA_RIVER"):
 			return "WATER_LOWER_MONTANA_RIVER";
-		case 301094150: /* GXTEntry: "Mattlock Pond" */
+		case joaat("WATER_MATTLOCK_POND"):
 			return "WATER_MATTLOCK_POND";
 		case joaat("WATER_MOONSTONE_POND"):
 			return "WATER_MOONSTONE_POND";
@@ -2681,7 +2681,7 @@ char* func_87(int iParam0)
 			return "WATER_OWANJILA";
 		case joaat("WATER_RINGNECK_CREEK"):
 			return "WATER_RINGNECK_CREEK";
-		case -1504425495: /* GXTEntry: "San Luis River" */
+		case joaat("WATER_SAN_LUIS_RIVER"):
 			return "WATER_SAN_LUIS_RIVER";
 		case joaat("WATER_SEA_OF_CORONADO"):
 			return "WATER_SEA_OF_CORONADO";

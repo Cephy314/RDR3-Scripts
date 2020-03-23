@@ -2802,23 +2802,23 @@ void func_78()
 		if (LAW::_0x9D5C9A5A3321B128(PLAYER::PLAYER_ID()))
 		{
 			func_300("RANCH_LAW_GRIEF", 10000, 0, 0, 0, 1);
-			func_425(2, 158959085 /* GXTEntry: "Wanted In Camp" */, 0, "RANCH_LAW_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(2, joaat("HONOR_EVENT_WANTED_IN_CAMP"), 0, "RANCH_LAW_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 		}
 		else
 		{
 			func_300("RANCH_COMBAT_GRIEF", 10000, 0, 0, 0, 1);
-			func_425(2, 158959085 /* GXTEntry: "Wanted In Camp" */, 0, "RANCH_COMBAT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(2, joaat("HONOR_EVENT_WANTED_IN_CAMP"), 0, "RANCH_COMBAT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 		}
 	}
 	else if (LAW::_0x9D5C9A5A3321B128(PLAYER::PLAYER_ID()))
 	{
 		func_300("CAMP_LAW_GRIEF", 10000, 0, 0, 0, 1);
-		func_425(2, 158959085 /* GXTEntry: "Wanted In Camp" */, 0, "CAMP_LAW_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+		func_425(2, joaat("HONOR_EVENT_WANTED_IN_CAMP"), 0, "CAMP_LAW_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 	}
 	else
 	{
 		func_300("CAMP_COMBAT_GRIEF", 10000, 0, 0, 0, 1);
-		func_425(2, 158959085 /* GXTEntry: "Wanted In Camp" */, 0, "CAMP_COMBAT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+		func_425(2, joaat("HONOR_EVENT_WANTED_IN_CAMP"), 0, "CAMP_COMBAT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 	}
 	func_426();
 }
@@ -3763,7 +3763,7 @@ int func_102()
 		if (func_356(2))
 		{
 			func_357(2);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 			if (((((func_356(8) || func_356(16)) || func_356(32)) || func_356(64)) || func_356(2048)) || func_356(1024))
 			{
 				Local_18.f_1786.f_1 = MISC::GET_GAME_TIMER() + 2000;
@@ -3773,7 +3773,7 @@ int func_102()
 		if (func_356(4))
 		{
 			func_357(4);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 			if (((((func_356(8) || func_356(16)) || func_356(32)) || func_356(64)) || func_356(2048)) || func_356(1024))
 			{
 				Local_18.f_1786.f_1 = MISC::GET_GAME_TIMER() + 2000;
@@ -3783,7 +3783,7 @@ int func_102()
 		if (func_356(8))
 		{
 			func_357(8);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 			if (((func_356(32) || func_356(64)) || func_356(2048)) || func_356(1024))
 			{
 				Local_18.f_1786.f_1 = MISC::GET_GAME_TIMER() + 2000;
@@ -3793,7 +3793,7 @@ int func_102()
 		if (func_356(16))
 		{
 			func_357(16);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 			if (((func_356(32) || func_356(64)) || func_356(2048)) || func_356(1024))
 			{
 				Local_18.f_1786.f_1 = MISC::GET_GAME_TIMER() + 2000;
@@ -3803,7 +3803,7 @@ int func_102()
 		if (func_356(2048))
 		{
 			func_357(2048);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 			if (func_356(32) || func_356(64))
 			{
 				Local_18.f_1786.f_1 = MISC::GET_GAME_TIMER() + 2000;
@@ -3813,7 +3813,7 @@ int func_102()
 		if (func_356(1024))
 		{
 			func_357(1024);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 			if (func_356(32) || func_356(64))
 			{
 				Local_18.f_1786.f_1 = MISC::GET_GAME_TIMER() + 2000;
@@ -3823,12 +3823,12 @@ int func_102()
 		if (func_356(32))
 		{
 			func_357(32);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_DBODY_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 		}
 		if (func_356(64))
 		{
 			func_357(64);
-			func_425(3, -1972216640 /* GXTEntry: "Antagonize" */, 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
+			func_425(3, joaat("HONOR_EVENT_ANTAGONIZE"), 0, "CAMP_HOGT_HON", 0, 0, 1065353216 /* Float: 1f */, 0);
 		}
 		return 0;
 	}
@@ -4832,7 +4832,7 @@ void func_147()
 	if ((!bVar0 && bVar2) && bVar1)
 	{
 		func_160(16);
-		func_425(2, -549508280 /* GXTEntry: "Long Absence" */, 0, 0, 0, 0, 1065353216 /* Float: 1f */, 0);
+		func_425(2, joaat("HONOR_EVENT_LONG_ABSENCE"), 0, 0, 0, 0, 1065353216 /* Float: 1f */, 0);
 	}
 	if (bVar0 && !bVar2)
 	{
@@ -12439,7 +12439,7 @@ void func_425(int iParam0, int iParam1, int iParam2, char* sParam3, int iParam4,
 	}
 	iVar0 = func_838(iParam0);
 	iVar0 = BUILTIN::ROUND((IntToFloat(iVar0) * fParam6));
-	if ((((((iParam1 != 1142025875 && iParam1 != 1587891565) && iParam1 != -643014279) && iParam1 != -597116214) && iParam1 != 551416228) && iParam1 != -735200598) && iParam1 != -2010847721)
+	if ((((((iParam1 != joaat("HONOR_EVENT_AMBIENT_KILL") && iParam1 != joaat("HONOR_EVENT_AMBIENT_KO")) && iParam1 != joaat("HONOR_EVENT_KILL_VERMIN")) && iParam1 != joaat("HONOR_EVENT_KILL_FARM_ANIMAL")) && iParam1 != joaat("HONOR_EVENT_KILL_HORSE")) && iParam1 != joaat("HONOR_EVENT_TRAMPLED_INNOCENT")) && iParam1 != joaat("HONOR_EVENT_ABANDON_ANIMALS"))
 	{
 		func_839(iVar0, 0, iParam0, iParam1, sParam3, iParam4, bParam5, bParam7);
 	}
@@ -18384,7 +18384,7 @@ char* func_620(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_BARROW_LAGOON";
 				*uParam6 = 1;
 				break;
-			case -557290573: /* GXTEntry: "Bayou Nwa" */
+			case joaat("WATER_BAYOU_NWA"):
 				sVar0 = "DISTRICT_BAYOU_NWA";
 				*uParam6 = 1;
 				break;
@@ -18416,11 +18416,11 @@ char* func_620(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_HAWKS_EYE_CREEK";
 				*uParam6 = 1;
 				break;
-			case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+			case joaat("WATER_HEARTLANDS_OVERFLOW"):
 				sVar0 = "LANDMARK_HEARTLAND_OVERFLOW";
 				*uParam6 = 1;
 				break;
-			case 1175365009: /* GXTEntry: "Hot Springs" */
+			case joaat("WATER_HOT_SPRINGS"):
 				sVar0 = "WATER_COTORRA_SPRINGS";
 				*uParam6 = 1;
 				break;
@@ -18444,7 +18444,7 @@ char* func_620(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_LOWER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case 301094150: /* GXTEntry: "Mattlock Pond" */
+			case joaat("WATER_MATTLOCK_POND"):
 				sVar0 = "WATER_MATTOCK_POND";
 				*uParam6 = 1;
 				break;
@@ -18503,7 +18503,7 @@ char* func_620(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				}
 				*uParam6 = 1;
 				break;
-			case -1504425495: /* GXTEntry: "San Luis River" */
+			case joaat("WATER_SAN_LUIS_RIVER"):
 				if (iParam1 == 4 || iParam1 == 12)
 				{
 					sVar0 = "WATER_SAN_LUIS_RIVER_WEST_ELIZABETH";
@@ -18667,9 +18667,9 @@ int func_624(int iParam0)
 			return 0;
 		case joaat("WATER_BARROW_LAGOON"):
 			return 0;
-		case -557290573: /* GXTEntry: "Bayou Nwa" */
+		case joaat("WATER_BAYOU_NWA"):
 			return 2;
-		case 650214731: /* GXTEntry: "Beartooth Beck" */
+		case joaat("WATER_BEARTOOTH_BECK"):
 			return 1;
 		case joaat("WATER_CAIRN_LAKE"):
 			return 0;
@@ -18681,7 +18681,7 @@ int func_624(int iParam0)
 			return 1;
 		case joaat("WATER_DEADBOOT_CREEK"):
 			return 1;
-		case 469159176: /* GXTEntry: "Dewberry Creek" */
+		case joaat("WATER_DEWBERRY_CREEK"):
 			return 1;
 		case joaat("WATER_ELYSIAN_POOL"):
 			return 0;
@@ -18689,9 +18689,9 @@ int func_624(int iParam0)
 			return 0;
 		case joaat("WATER_HAWKS_EYE_CREEK"):
 			return 1;
-		case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+		case joaat("WATER_HEARTLANDS_OVERFLOW"):
 			return 0;
-		case 1175365009: /* GXTEntry: "Hot Springs" */
+		case joaat("WATER_HOT_SPRINGS"):
 			return 0;
 		case joaat("WATER_KAMASSA_RIVER"):
 			return 1;
@@ -18705,7 +18705,7 @@ int func_624(int iParam0)
 			return 1;
 		case joaat("WATER_LOWER_MONTANA_RIVER"):
 			return 1;
-		case 301094150: /* GXTEntry: "Mattlock Pond" */
+		case joaat("WATER_MATTLOCK_POND"):
 			return 0;
 		case joaat("WATER_MOONSTONE_POND"):
 			return 0;
@@ -18715,7 +18715,7 @@ int func_624(int iParam0)
 			return 0;
 		case joaat("WATER_RINGNECK_CREEK"):
 			return 1;
-		case -1504425495: /* GXTEntry: "San Luis River" */
+		case joaat("WATER_SAN_LUIS_RIVER"):
 			return 1;
 		case joaat("WATER_SEA_OF_CORONADO"):
 			return 1;
@@ -19106,7 +19106,7 @@ void func_652(int* iParam0, var uParam1)
 	}
 	if (iParam0->f_20 >= 4)
 	{
-		PAD::_0x2804658EB7D8A50B(4, 1492915442);
+		PAD::_0x2804658EB7D8A50B(4, joaat("Ledger"));
 	}
 	func_993(iParam0, uParam1);
 	func_994(&(iParam0->f_35), iParam0->f_20);
@@ -23026,7 +23026,7 @@ void func_788(int iParam0, bool bParam1)
 	(*Var2[0 /*13*/])[10] = func_1123();
 	(*Var2[0 /*13*/])[11] = func_1123();
 	(*Var2[2 /*13*/])[0] = 1706275010;
-	(*Var2[2 /*13*/])[1] = 1290371072;
+	(*Var2[2 /*13*/])[1] = joaat("dewclm_normal_seats");
 	(*Var2[2 /*13*/])[2] = 1734859244;
 	(*Var2[2 /*13*/])[3] = 1309652195;
 	(*Var2[2 /*13*/])[4] = -1291679096;
@@ -23051,7 +23051,7 @@ void func_788(int iParam0, bool bParam1)
 	(*Var2[4 /*13*/])[11] = func_1123();
 	(*Var2[1 /*13*/])[0] = 288413571;
 	(*Var2[1 /*13*/])[1] = -441619793;
-	(*Var2[1 /*13*/])[2] = -1916602073;
+	(*Var2[1 /*13*/])[2] = joaat("hso_normal_seats");
 	(*Var2[1 /*13*/])[3] = func_1129();
 	(*Var2[1 /*13*/])[4] = -80564929;
 	(*Var2[1 /*13*/])[5] = -676881895;
@@ -23062,7 +23062,7 @@ void func_788(int iParam0, bool bParam1)
 	(*Var2[1 /*13*/])[10] = func_1123();
 	(*Var2[1 /*13*/])[11] = func_1123();
 	(*Var2[3 /*13*/])[0] = 923572416;
-	(*Var2[3 /*13*/])[1] = -555683060;
+	(*Var2[3 /*13*/])[1] = joaat("shb_normal_seats");
 	(*Var2[3 /*13*/])[2] = -1828030290;
 	(*Var2[3 /*13*/])[3] = -960337247;
 	(*Var2[3 /*13*/])[4] = -299265919;
@@ -23153,7 +23153,7 @@ void func_788(int iParam0, bool bParam1)
 		func_1134(7);
 		func_1134(8);
 	}
-	if (iParam0 == 3 && func_872(-1515028452 /* GXTEntry: "Zoological Compendium" */, 1, 0) == 0)
+	if (iParam0 == 3 && func_872(joaat("DOCUMENT_BOOK_HUNTING"), 1, 0) == 0)
 	{
 		func_1135(10);
 	}
@@ -23161,7 +23161,7 @@ void func_788(int iParam0, bool bParam1)
 	{
 		func_1134(10);
 	}
-	if (iParam0 == 3 && func_872(-520532433 /* GXTEntry: "Rambles Through Woods and Plains" */, 1, 0) == 0)
+	if (iParam0 == 3 && func_872(joaat("DOCUMENT_BOOK_FORAGING"), 1, 0) == 0)
 	{
 		func_1135(9);
 	}
@@ -24683,47 +24683,47 @@ int func_837(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588: /* GXTEntry: "Loot Innocent" */
+		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case 1142025875: /* GXTEntry: "Murder" */
+		case joaat("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case 1587891565:
+		case joaat("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case 1877013492: /* GXTEntry: "Frighten" */
+		case joaat("HONOR_EVENT_SCARE"):
 			return 32;
-		case -643014279: /* GXTEntry: "Killed Vermin" */
+		case joaat("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case -597116214: /* GXTEntry: "Killed Domestic Animal" */
+		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case 551416228: /* GXTEntry: "Killed Horse" */
+		case joaat("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case 1022576842: /* GXTEntry: "Stole Horse" */
+		case joaat("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case 953325896: /* GXTEntry: "Stole Donkey" */
+		case joaat("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case 508358508: /* GXTEntry: "Stole Mule" */
+		case joaat("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case -735200598: /* GXTEntry: "Trampled Innocent" */
+		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case -856432278:
+		case joaat("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case -2010847721: /* GXTEntry: "Abandon Dead Animals" */
+		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case 446961221: /* GXTEntry: "Watched Animal Bleedout" */
+		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case -1972216640: /* GXTEntry: "Antagonize" */
+		case joaat("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case 530833824: /* GXTEntry: "Theft" */
+		case joaat("HONOR_EVENT_THEFT"):
 			return 131072;
-		case 1682361219: /* GXTEntry: "Intervened" */
+		case joaat("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case 158959085: /* GXTEntry: "Wanted In Camp" */
+		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case 1919819559: /* GXTEntry: "Donated Game" */
+		case joaat("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case 1461411082: /* GXTEntry: "Item Request" */
+		case joaat("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case -549508280: /* GXTEntry: "Long Absence" */
+		case joaat("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;
@@ -24792,7 +24792,7 @@ void func_839(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	struct<2> Var8;
 
 	iVar0 = func_1158();
-	if (iParam3 == 1142025875 || iParam3 == 1587891565)
+	if (iParam3 == joaat("HONOR_EVENT_AMBIENT_KILL") || iParam3 == joaat("HONOR_EVENT_AMBIENT_KO"))
 	{
 		if (bParam6)
 		{
@@ -24821,7 +24821,7 @@ void func_839(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 		iVar3 = -320;
 		if (!func_142())
 		{
-			if (((iParam2 >= 0 && iParam2 <= 4) || (iParam2 >= 10 && iParam2 <= 14)) && iParam3 != 446961221)
+			if (((iParam2 >= 0 && iParam2 <= 4) || (iParam2 >= 10 && iParam2 <= 14)) && iParam3 != joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"))
 			{
 				fVar4 = 1.5f;
 			}
@@ -24838,7 +24838,7 @@ void func_839(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	Global_40.f_11095.f_35 = (Global_40.f_11095.f_35 + iVar5);
 	Global_40.f_11095.f_35 = func_1160(Global_40.f_11095.f_35, iVar3, iVar2);
 	iVar1 = func_1158();
-	if ((iVar1 != iVar0 && (iVar1 != 0 || iParam3 == -1091304842)) || bParam7)
+	if ((iVar1 != iVar0 && (iVar1 != 0 || iParam3 == joaat("HONOR_EVENT_CHEAT"))) || bParam7)
 	{
 		iVar6 = func_1161(iVar1);
 		func_1163(func_1162(), 0, 4000);
@@ -29004,13 +29004,13 @@ int func_961(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return 1942842017 /* GXTEntry: "Horseshoe Overlook" */;
+			return joaat("hso");
 		case 2:
-			return -1562525601;
+			return joaat("clm");
 		case 3:
 			return -1474583373;
 		case 6:
-			return 1273085440 /* GXTEntry: "Beaver Hollow" */;
+			return joaat("bvh");
 		default:
 			break;
 	}
@@ -30503,13 +30503,13 @@ char* func_1036(int iParam0)
 		case joaat("BREED_APPALOOSA_LEOPARD"):
 		case joaat("BREED_APPALOOSA_LEOPARDBLANKET"):
 		case joaat("BREED_APPALOOSA_BLACKSNOWFLAKE"):
-		case -540812301: /* GXTEntry: "Appaloosa - Few Spotted Coat" */
+		case joaat("BREED_APPALOOSA_FEWSPOTTED_PC"):
 		case joaat("BREED_APPALOOSA_BROWNLEOPARD"):
 			return "BREED_APPALOOSA";
-		case -2105447887: /* GXTEntry: "Arabian - Warped Brindle Coat" */
+		case joaat("BREED_ARABIAN_WARPEDBRINDLE_PC"):
 		case joaat("BREED_ARABIAN_BLACK"):
 		case joaat("BREED_ARABIAN_REDCHESTNUT"):
-		case -1506685618: /* GXTEntry: "Arabian - Red Chestnut Coat" */
+		case joaat("BREED_ARABIAN_REDCHESTNUT_PC"):
 		case joaat("BREED_ARABIAN_GREY"):
 		case joaat("BREED_ARABIAN_ROSEGREYBAY"):
 		case joaat("BREED_ARABIAN_WHITE"):
@@ -30533,7 +30533,7 @@ char* func_1036(int iParam0)
 		case -1955947684:
 		case joaat("BREED_KENTUCKYSADDLE_SILVERBAY"):
 		case joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
-		case 1427053849: /* GXTEntry: "Kentucky Saddler - Buttermilk Buckskin Coat" */
+		case joaat("BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
 		case joaat("BREED_KENTUCKYSADDLE_GREY"):
 			return "BREED_KENTUCKYSADDLE";
 		case joaat("BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE"):
@@ -30542,7 +30542,7 @@ char* func_1036(int iParam0)
 			return "BREED_MISSOURIFOXTROTTER";
 		case joaat("BREED_MORGAN_PALOMINO"):
 		case joaat("BREED_MORGAN_BAYROAN"):
-		case 955937750: /* GXTEntry: "Morgan - Liver Chestnut Coat" */
+		case joaat("BREED_MORGAN_LIVERCHESTNUT_PC"):
 		case joaat("BREED_MORGAN_FLAXENCHESTNUT"):
 		case joaat("BREED_MORGAN_BAY"):
 			return "BREED_MORGAN";
@@ -30568,7 +30568,7 @@ char* func_1036(int iParam0)
 		case joaat("BREED_TENNESSEEWALKER_BLACKRABICANO"):
 		case joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY"):
 		case joaat("BREED_TENNESSEEWALKER_FLAXENROAN"):
-		case 2059232991: /* GXTEntry: "Tennessee Walker - Gold Palomino Coat" */
+		case joaat("BREED_TENNESSEEWALKER_GOLDPALOMINO_PC"):
 			return "BREED_TENNESSEEWALKER";
 		case joaat("BREED_THOROUGHBRED_DAPPLEGREY"):
 		case joaat("BREED_THOROUGHBRED_BLACKCHESTNUT"):
@@ -33456,7 +33456,7 @@ int func_1126()
 
 int func_1127()
 {
-	if (func_872(-520532433 /* GXTEntry: "Rambles Through Woods and Plains" */, 1, 0))
+	if (func_872(joaat("DOCUMENT_BOOK_FORAGING"), 1, 0))
 	{
 		if (STREAMING::_IS_IMAP_ACTIVE(-1739164071))
 		{
@@ -33469,7 +33469,7 @@ int func_1127()
 
 int func_1128()
 {
-	if (func_872(-1515028452 /* GXTEntry: "Zoological Compendium" */, 1, 0))
+	if (func_872(joaat("DOCUMENT_BOOK_HUNTING"), 1, 0))
 	{
 		if (STREAMING::_IS_IMAP_ACTIVE(-1331617405))
 		{
@@ -33495,7 +33495,7 @@ int func_1129()
 
 int func_1130()
 {
-	if (func_872(-1515028452 /* GXTEntry: "Zoological Compendium" */, 1, 0))
+	if (func_872(joaat("DOCUMENT_BOOK_HUNTING"), 1, 0))
 	{
 		if (STREAMING::_IS_IMAP_ACTIVE(-539928451))
 		{
@@ -33508,7 +33508,7 @@ int func_1130()
 
 int func_1131()
 {
-	if (func_872(-520532433 /* GXTEntry: "Rambles Through Woods and Plains" */, 1, 0))
+	if (func_872(joaat("DOCUMENT_BOOK_FORAGING"), 1, 0))
 	{
 		if (STREAMING::_IS_IMAP_ACTIVE(-293283707))
 		{
@@ -34952,53 +34952,53 @@ char* func_1167(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588: /* GXTEntry: "Loot Innocent" */
+		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
 			return "HONOR_EVENT_LOOT_INNOCENT";
-		case 1142025875: /* GXTEntry: "Murder" */
+		case joaat("HONOR_EVENT_AMBIENT_KILL"):
 			return "HONOR_EVENT_AMBIENT_KILL";
-		case 1587891565:
+		case joaat("HONOR_EVENT_AMBIENT_KO"):
 			return "HONOR_EVENT_AMBIENT_KO";
-		case 1877013492: /* GXTEntry: "Frighten" */
+		case joaat("HONOR_EVENT_SCARE"):
 			return "HONOR_EVENT_SCARE";
-		case -643014279: /* GXTEntry: "Killed Vermin" */
+		case joaat("HONOR_EVENT_KILL_VERMIN"):
 			return "HONOR_EVENT_KILL_VERMIN";
-		case -597116214: /* GXTEntry: "Killed Domestic Animal" */
+		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return "HONOR_EVENT_KILL_FARM_ANIMAL";
-		case 551416228: /* GXTEntry: "Killed Horse" */
+		case joaat("HONOR_EVENT_KILL_HORSE"):
 			return "HONOR_EVENT_KILL_HORSE";
-		case 1022576842: /* GXTEntry: "Stole Horse" */
+		case joaat("HONOR_EVENT_STEAL_HORSE"):
 			return "HONOR_EVENT_STEAL_HORSE";
-		case 953325896: /* GXTEntry: "Stole Donkey" */
+		case joaat("HONOR_EVENT_STEAL_DONKEY"):
 			return "HONOR_EVENT_STEAL_DONKEY";
-		case 508358508: /* GXTEntry: "Stole Mule" */
+		case joaat("HONOR_EVENT_STEAL_MULE"):
 			return "HONOR_EVENT_STEAL_MULE";
-		case -856432278:
+		case joaat("HONOR_EVENT_STEAL_WAGON"):
 			return "HONOR_EVENT_STEAL_WAGON";
-		case -735200598: /* GXTEntry: "Trampled Innocent" */
+		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return "HONOR_EVENT_TRAMPLED_INNOCENT";
-		case -2010847721: /* GXTEntry: "Abandon Dead Animals" */
+		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
 			return "HONOR_EVENT_ABANDON_ANIMALS";
-		case 446961221: /* GXTEntry: "Watched Animal Bleedout" */
+		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return "HONOR_EVENT_ANIMAL_BLEEDOUT";
-		case -1972216640: /* GXTEntry: "Antagonize" */
+		case joaat("HONOR_EVENT_ANTAGONIZE"):
 			return "HONOR_EVENT_ANTAGONIZE";
-		case 530833824: /* GXTEntry: "Theft" */
+		case joaat("HONOR_EVENT_THEFT"):
 			return "HONOR_EVENT_THEFT";
-		case 1682361219: /* GXTEntry: "Intervened" */
+		case joaat("HONOR_EVENT_INTERVENED"):
 			return "HONOR_EVENT_INTERVENED";
-		case 158959085: /* GXTEntry: "Wanted In Camp" */
+		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
 			return "HONOR_EVENT_WANTED_IN_CAMP";
-		case 1919819559: /* GXTEntry: "Donated Game" */
+		case joaat("HONOR_EVENT_DONATED_GAME"):
 			return "HONOR_EVENT_DONATED_GAME";
-		case 1461411082: /* GXTEntry: "Item Request" */
+		case joaat("HONOR_EVENT_ITEM_REQUEST"):
 			return "HONOR_EVENT_ITEM_REQUEST";
-		case -549508280: /* GXTEntry: "Long Absence" */
+		case joaat("HONOR_EVENT_LONG_ABSENCE"):
 			return "HONOR_EVENT_LONG_ABSENCE";
-		case -1787248475: /* GXTEntry: "Cruel Death" */
+		case joaat("HONOR_EVENT_CRUEL_DEATH"):
 			return "HONOR_EVENT_CRUEL_DEATH";
-		case 932872355: /* GXTEntry: "Justice Served" */
+		case joaat("HONOR_EVENT_JUSTICE_SERVED"):
 			return "HONOR_EVENT_JUSTICE_SERVED";
-		case -1091304842: /* GXTEntry: "Cheat" */
+		case joaat("HONOR_EVENT_CHEAT"):
 			return "HONOR_EVENT_CHEAT";
 		default:
 			break;
@@ -44268,7 +44268,7 @@ void func_1435(int iParam0, int iParam1, var uParam2)
 	}
 	else if (((Global_40.f_4283.f_440[iParam0 /*63*/])->f_1[iParam1 /*5*/])->f_1 == -1)
 	{
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam2->f_1, -799346912);
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam2->f_1, joaat("PLYR_ARTHUR"));
 	}
 	else
 	{
@@ -45915,7 +45915,7 @@ void func_1493(int iParam0, int iParam1, bool bParam2)
 	(*Var0[10 /*5*/])[0] = -937893311;
 	(*Var0[10 /*5*/])[1] = -937893311;
 	(*Var0[10 /*5*/])[2] = -937893311;
-	(*Var0[10 /*5*/])[3] = 394987827;
+	(*Var0[10 /*5*/])[3] = joaat("ABI1_ARRIVE");
 	(*Var0[11 /*5*/])[0] = func_1344();
 	(*Var0[11 /*5*/])[1] = func_1344();
 	(*Var0[11 /*5*/])[2] = func_1344();
@@ -47896,73 +47896,73 @@ int func_1540(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return -1287024003 /* GXTEntry: "Dutch" */;
+			return joaat("COMP_DUTCH");
 		case 1:
-			return 1062310057 /* GXTEntry: "John" */;
+			return joaat("COMP_JOHN");
 		case 2:
-			return 793334521 /* GXTEntry: "Javier" */;
+			return joaat("COMP_JAVIER");
 		case 3:
-			return -1434694737 /* GXTEntry: "Bill" */;
+			return joaat("COMP_BILL");
 		case 4:
-			return 749790628 /* GXTEntry: "Uncle" */;
+			return joaat("COMP_UNCLE");
 		case 5:
-			return 1878409227 /* GXTEntry: "Hosea" */;
+			return joaat("COMP_HOSEA");
 		case 6:
-			return -864297994 /* GXTEntry: "Micah" */;
+			return joaat("COMP_MICAH");
 		case 7:
-			return -1542683454 /* GXTEntry: "Charles" */;
+			return joaat("COMP_CHARLES");
 		case 8:
-			return -361558012 /* GXTEntry: "Sean" */;
+			return joaat("COMP_SEAN");
 		case 9:
-			return -1113328569 /* GXTEntry: "Lenny" */;
+			return joaat("COMP_LENNY");
 		case 10:
-			return 1147740076 /* GXTEntry: "Kieran" */;
+			return joaat("COMP_KIERAN");
 		case 23:
-			return 1069443176 /* GXTEntry: "Trelawny" */;
+			return joaat("COMP_TRELAWNY");
 		case 17:
 			return joaat("COMP_PEARSON");
 		case 18:
-			return -1225165750 /* GXTEntry: "Strauss" */;
+			return joaat("COMP_STRAUSS");
 		case 13:
-			return -757131476 /* GXTEntry: "Abigail" */;
+			return joaat("COMP_ABIGAIL");
 		case 14:
-			return 969930481 /* GXTEntry: "Jack" */;
+			return joaat("COMP_JACK");
 		case 16:
-			return -1786335099 /* GXTEntry: "Molly" */;
+			return joaat("COMP_MOLLY_OSHEA");
 		case 19:
-			return -63427201 /* GXTEntry: "Susan" */;
+			return joaat("COMP_SUSAN_GRIMSHAW");
 		case 15:
-			return -1862061946 /* GXTEntry: "Mary-Beth" */;
+			return joaat("COMP_MARY_BETH");
 		case 20:
-			return 644763533 /* GXTEntry: "Karen" */;
+			return joaat("COMP_KAREN");
 		case 22:
-			return 2069410535 /* GXTEntry: "Tilly" */;
+			return joaat("COMP_TILLY");
 		case 11:
-			return -1112144297 /* GXTEntry: "Sadie" */;
+			return joaat("COMP_SADIE");
 		case 24:
-			return -1319809587 /* GXTEntry: "Cleet" */;
+			return joaat("COMP_CLEET");
 		case 25:
-			return 775505860 /* GXTEntry: "Joe" */;
+			return joaat("COMP_JOE");
 		case 26:
-			return -1600350223 /* GXTEntry: "Eagle Flies" */;
+			return joaat("COMP_EAGLE_FLIES");
 		case 12:
 			if ((func_487(((*Global_1835011)[59 /*74*/])->f_1, 1) || func_487(((*Global_1347702)[1 /*49*/])->f_15, 1)) || func_848(((*Global_1347702)[1 /*49*/])->f_15))
 			{
-				return 481972149 /* GXTEntry: "Rufus" */;
+				return joaat("COMP_RUFUS");
 			}
 			else if (func_227(403634348, 1))
 			{
-				return 826139819 /* GXTEntry: "Cain" */;
+				return joaat("COMP_CAIN");
 			}
-			return -1667100926 /* GXTEntry: "Dog" */;
+			return joaat("COMP_DOG");
 		case 21:
 			if (bParam1)
 			{
-				return -75169463 /* GXTEntry: "Swanson" */;
+				return joaat("COMP_SWANSON_S");
 			}
 			else
 			{
-				return 261441658 /* GXTEntry: "Reverend Swanson" */;
+				return joaat("COMP_SWANSON");
 			}
 			break;
 	}

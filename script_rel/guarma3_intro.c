@@ -5693,7 +5693,7 @@ int func_259(var uParam0)
 			ENTITY::SET_ENTITY_ROTATION(&(iLocal_21[0]), 0f, 0f, 0f, 2, true);
 			ENTITY::FREEZE_ENTITY_POSITION(&(iLocal_21[0]), true);
 			func_261(uParam0, &(iLocal_21[0]), "p_crate03x", 0, 0, 1, 0);
-			DECORATOR::DECOR_SET_INT(&(iLocal_21[0]), func_433(), -645141044);
+			DECORATOR::DECOR_SET_INT(&(iLocal_21[0]), func_433(), joaat("CRATE_0"));
 			func_431(uParam0, &(iLocal_21[0]), 0);
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_21[1])))

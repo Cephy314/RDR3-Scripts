@@ -3052,7 +3052,7 @@ int func_126(int iParam0, int iParam1)
 {
 	if (iParam1 == -1891229662)
 	{
-		return func_185(0, func_184(iParam1, 1), 11, 2116153146 /* GXTEntry: "High and Low Finance" */);
+		return func_185(0, func_184(iParam1, 1), 11, joaat("CABR01"));
 	}
 	return func_185(0, func_184(iParam1, 1), 11, iParam1);
 }
@@ -4810,7 +4810,7 @@ int func_208(int iParam0, int iParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == 319699045))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == joaat("TaskMovePoker")))
 		{
 			return 0;
 		}
@@ -4847,7 +4847,7 @@ int func_208(int iParam0, int iParam1)
 		}
 		if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1))
 		{
-			return TASK::_0xCACC2F9D994504B7(iParam1) == -672963996;
+			return TASK::_0xCACC2F9D994504B7(iParam1) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 		}
 		return func_265(iParam1);
 	}
@@ -4902,7 +4902,7 @@ void func_210(int iParam0)
 	Var13 = { Var5 };
 	StringConCat(&Var13, "_DESC", 64);
 	UILOG::_UILOG_ADD_ENTRY_HASH(1, iVar1, vVar2, ((*Global_1835011)[iParam0 /*74*/])->f_26, MISC::GET_HASH_KEY(&Var13), iVar21);
-	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, ((*Global_1835011)[iParam0 /*74*/])->f_26, 676312963);
+	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, ((*Global_1835011)[iParam0 /*74*/])->f_26, joaat("toast_log_blips"));
 }
 
 void func_211(int iParam0)

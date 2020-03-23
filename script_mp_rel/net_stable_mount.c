@@ -6302,7 +6302,7 @@ int func_199(int iParam0)
 	switch (iParam0)
 	{
 		case 1277358601:
-		case 1283453238: /* GXTEntry: "Leader" */
+		case joaat("POSSE_LEADER"):
 			return 0;
 		default:
 			break;

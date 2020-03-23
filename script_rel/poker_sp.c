@@ -4243,16 +4243,16 @@ void func_176(int iParam0)
 		switch (iParam0)
 		{
 			case 1:
-				func_447(func_446(iParam0), &cVar1, 676312963, joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 390152599, -2, 0, 0, 0, 0, 1, 1);
+				func_447(func_446(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Dominoes"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 3:
-				func_447(func_446(iParam0), &cVar1, 676312963, joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
+				func_447(func_446(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 2:
-				func_447(func_446(iParam0), &cVar1, 676312963, joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 348001928, -2, 0, 0, 0, 0, 1, 1);
+				func_447(func_446(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Poker"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 0:
-				func_447(func_446(iParam0), &cVar1, 676312963, joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
+				func_447(func_446(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 		}
 	}
@@ -17833,8 +17833,8 @@ void func_536(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_9)
 	{
 		case 6:
-			func_1149(uParam0, iParam2, -1921404755);
-			func_1149(uParam0, iParam2, 1426724047);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
+			func_1149(uParam0, iParam2, joaat("Interruptible"));
 			if ((!func_1150(uParam0, iParam2, "sit_enter_left", 1065353216 /* Float: 1f */) && !func_1150(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */)) || func_1151(uParam0, iParam2, 1))
 			{
 				func_1062(uParam0, iParam2, "NoCardsIdleRequest", 0.5f);
@@ -17950,8 +17950,8 @@ void func_538(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 4:
-			func_1149(uParam0, iParam2, -1921404755);
-			func_1149(uParam0, iParam2, 1426724047);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
+			func_1149(uParam0, iParam2, joaat("Interruptible"));
 			if ((TASK::IS_PED_ACTIVE_IN_SCENARIO(*uParam1, 0) || func_1156(uParam0, iParam2, 0)) || func_660(&(uParam1->f_13), 20f))
 			{
 				PED::_0xF1C03A5352243A30(*uParam1);
@@ -17977,8 +17977,8 @@ void func_538(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 6:
-			func_1149(uParam0, iParam2, -1921404755);
-			func_1149(uParam0, iParam2, 1426724047);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
+			func_1149(uParam0, iParam2, joaat("Interruptible"));
 			if ((!func_1150(uParam0, iParam2, "sit_enter_left", 1065353216 /* Float: 1f */) && !func_1150(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */)) || func_1156(uParam0, iParam2, 0))
 			{
 				func_1062(uParam0, iParam2, "NoCardsIdleRequest", 0.5f);
@@ -18319,7 +18319,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 19:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "TurnNoCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "NoCardsIdle");
@@ -18327,7 +18327,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 20:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "RiverNoCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "NoCardsIdle");
@@ -18335,7 +18335,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 21:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "FlopTurnRiverNoCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "NoCardsIdle");
@@ -18343,7 +18343,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 22:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "TurnRiverNoCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "NoCardsIdle");
@@ -18381,7 +18381,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 26:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "TurnHoldCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "HoldCardsIdle");
@@ -18389,7 +18389,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 27:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "RiverHoldCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "HoldCardsIdle");
@@ -18397,7 +18397,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 28:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "FlopTurnRiverHoldCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "HoldCardsIdle");
@@ -18405,7 +18405,7 @@ void func_541(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 29:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "TurnRiverHoldCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "HoldCardsIdle");
@@ -18557,7 +18557,7 @@ void func_542(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_9)
 	{
 		case 0:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "HoldCardsEnterAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				func_1052(uParam0, iParam2, 1);
@@ -18653,7 +18653,7 @@ void func_544(var uParam0, var uParam1, int iParam2)
 		func_1058(uParam0, iParam2, 1);
 		return;
 	}
-	func_1149(uParam0, iParam2, -1921404755);
+	func_1149(uParam0, iParam2, joaat("ActionDone"));
 	switch (uParam1->f_9)
 	{
 		case 33:
@@ -18692,7 +18692,7 @@ void func_545(var uParam0, var uParam1, int iParam2)
 		func_1058(uParam0, iParam2, 1);
 		return;
 	}
-	func_1149(uParam0, iParam2, -1921404755);
+	func_1149(uParam0, iParam2, joaat("ActionDone"));
 	switch (uParam1->f_9)
 	{
 		case 35:
@@ -18764,7 +18764,7 @@ void func_546(var uParam0, var uParam1, int iParam2)
 		func_1058(uParam0, iParam2, 1);
 		return;
 	}
-	func_1149(uParam0, iParam2, -1921404755);
+	func_1149(uParam0, iParam2, joaat("ActionDone"));
 	switch (uParam1->f_9)
 	{
 		case 0:
@@ -18882,7 +18882,7 @@ void func_548(var uParam0, var uParam1, int iParam2)
 		func_1058(uParam0, iParam2, 1);
 		return;
 	}
-	func_1149(uParam0, iParam2, -1921404755);
+	func_1149(uParam0, iParam2, joaat("ActionDone"));
 	switch (uParam1->f_9)
 	{
 		case 34:
@@ -18924,7 +18924,7 @@ void func_549(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_9)
 	{
 		case 0:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_785[iParam2 /*52*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_1148(uParam1, "CheckAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
@@ -18979,7 +18979,7 @@ void func_550(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 44:
-			if (func_1149(uParam0, iParam2, -1921404755))
+			if (func_1149(uParam0, iParam2, joaat("ActionDone")))
 			{
 				func_1152(uParam0, iParam2);
 				func_661(8, iParam2);
@@ -19068,14 +19068,14 @@ void func_552(var uParam0, var uParam1, int iParam2)
 		case 45:
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "WinLossType", BUILTIN::TO_FLOAT(uParam1->f_34));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "ReturnCardType", BUILTIN::TO_FLOAT(iVar0));
-			if (((func_1148(uParam1, "ReturnRevealEnterAnimFinished") || func_1148(uParam1, "ReturnEnterHoldCardsAnimFinished")) || func_1178(uParam0, iParam2, joaat("blendout"), 1)) || func_1178(uParam0, iParam2, 1426724047, 1))
+			if (((func_1148(uParam1, "ReturnRevealEnterAnimFinished") || func_1148(uParam1, "ReturnEnterHoldCardsAnimFinished")) || func_1178(uParam0, iParam2, joaat("blendout"), 1)) || func_1178(uParam0, iParam2, joaat("Interruptible"), 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "ReturnCards");
 				func_1061(uParam0, iParam2, 46);
 			}
 			break;
 		case 46:
-			if (func_1149(uParam0, iParam2, -1921404755))
+			if (func_1149(uParam0, iParam2, joaat("ActionDone")))
 			{
 				func_1152(uParam0, iParam2);
 			}
@@ -19187,7 +19187,7 @@ void func_554(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 42:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (!func_591(uParam0, iParam2, 0))
 			{
 				if (func_1181(uParam0, iParam2) && func_1182(uParam0, iParam2))
@@ -19257,7 +19257,7 @@ void func_556(var uParam0, var uParam1, int iParam2)
 		case 47:
 			if (!bVar0)
 			{
-				func_1149(uParam0, iParam2, -1921404755);
+				func_1149(uParam0, iParam2, joaat("ActionDone"));
 			}
 			if (func_1148(uParam1, "BoardReturnRevealAnimFinished"))
 			{
@@ -19294,7 +19294,7 @@ void func_556(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 50:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "PassDeckType", BUILTIN::TO_FLOAT(iVar2));
 			if (func_1148(uParam1, "PassDeckAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
@@ -19303,7 +19303,7 @@ void func_556(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 51:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "BoardReturnExitAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "NoCardsIdle");
@@ -19403,7 +19403,7 @@ void func_557(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 53:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "PassDeckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_1148(uParam1, "PassDeckAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
@@ -19461,14 +19461,14 @@ void func_558(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 55:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (TASK::GET_TASK_MOVE_NETWORK_EVENT(*uParam1, "ReceiveDeckExitNoCards"))
 			{
 				func_1061(uParam0, iParam2, 56);
 			}
 			break;
 		case 56:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			if (func_1148(uParam1, "ReceiveDeckExitNoCardsAnimFinished") || func_1156(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "NoCardsIdle");
@@ -19510,7 +19510,7 @@ void func_559(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_9)
 	{
 		case 57:
-			if (func_1149(uParam0, iParam2, -1921404755))
+			if (func_1149(uParam0, iParam2, joaat("ActionDone")))
 			{
 				func_1152(uParam0, iParam2);
 			}
@@ -19521,7 +19521,7 @@ void func_559(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 58:
-			if (func_1149(uParam0, iParam2, -1921404755))
+			if (func_1149(uParam0, iParam2, joaat("ActionDone")))
 			{
 				func_1152(uParam0, iParam2);
 			}
@@ -19609,7 +19609,7 @@ void func_563(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_9)
 	{
 		case 0:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "WinLossType", BUILTIN::TO_FLOAT(uParam1->f_34));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "IntensityType", BUILTIN::TO_FLOAT(uParam1->f_35));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "VariationType", BUILTIN::TO_FLOAT(uParam1->f_36));
@@ -19648,7 +19648,7 @@ void func_565(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_9)
 	{
 		case 0:
-			func_1149(uParam0, iParam2, -1921404755);
+			func_1149(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_785[iParam2 /*52*/]), "CheckType", BUILTIN::TO_FLOAT(iVar1));
 			if (uParam1->f_1 == 2)
 			{
@@ -36290,7 +36290,7 @@ int func_1150(var uParam0, int iParam1, char* sParam2, float fParam3)
 
 int func_1151(var uParam0, int iParam1, bool bParam2)
 {
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_785[iParam1 /*52*/]), 1426724047))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_785[iParam1 /*52*/]), joaat("Interruptible")))
 	{
 		if ((!bParam2 || !TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_785[iParam1 /*52*/]))) || TASK::IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION(&(uParam0->f_785[iParam1 /*52*/])))
 		{
@@ -36386,7 +36386,7 @@ int func_1156(var uParam0, int iParam1, bool bParam2)
 {
 	if ((uParam0->f_785[iParam1 /*52*/])->f_40)
 	{
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_785[iParam1 /*52*/]), 1426724047))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_785[iParam1 /*52*/]), joaat("Interruptible")))
 		{
 			if ((!bParam2 || !TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_785[iParam1 /*52*/]))) || TASK::IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION(&(uParam0->f_785[iParam1 /*52*/])))
 			{
@@ -50984,7 +50984,7 @@ int func_1720(int iParam0, bool bParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == 319699045))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == joaat("TaskMovePoker")))
 		{
 			return 0;
 		}
@@ -51021,7 +51021,7 @@ int func_1720(int iParam0, bool bParam1)
 		}
 		if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1))
 		{
-			return TASK::_0xCACC2F9D994504B7(bParam1) == -672963996;
+			return TASK::_0xCACC2F9D994504B7(bParam1) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 		}
 		return func_1758(bParam1);
 	}
@@ -51394,7 +51394,7 @@ void func_1740(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_12), "", 64);
 			break;
 		case 6:
-			uParam0->f_1 = -793862732; /* GXTEntry: "The Case of the Shrew in the Fog" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_SHREW");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 5;
 			uParam0->f_4 = 0;
@@ -51416,7 +51416,7 @@ void func_1740(var uParam0, int iParam1)
 			uParam0->f_23 = -535255159;
 			break;
 		case 8:
-			uParam0->f_1 = -1487662509; /* GXTEntry: "Otis Miller and The Black-Hearted Lady" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_BLACK_HEART_LADY");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 14;
 			uParam0->f_4 = 0;
@@ -53430,7 +53430,7 @@ void func_1773(var uParam0, int iParam1, char* sParam2, bool bParam3, bool bPara
 		if (bParam4)
 		{
 			UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar0);
-			Global_1359489->f_361.f_194 = func_447("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_1768(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", -1507719118, 5000, 0, 0, 0, 0, 1, 1);
+			Global_1359489->f_361.f_194 = func_447("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_1768(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("sp_missions"), 5000, 0, 0, 0, 0, 1, 1);
 		}
 	}
 }

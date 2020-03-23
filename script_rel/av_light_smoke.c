@@ -1956,7 +1956,7 @@ int func_34(var uParam0)
 								ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(uParam0->f_3.f_1, (uParam0->f_20[1 /*14*/])->f_1, &(uParam0->f_20[1 /*14*/]));
 								ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(uParam0->f_3.f_1, (uParam0->f_372[1 /*8*/])->f_1, &(uParam0->f_372[1 /*8*/]));
 								PED::_0x3BBDD6143FF16F98(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_372[1 /*8*/]), "p_cigarette_cs01x_PH_R_HAND", "WORLD_HUMAN_SMOKE", "WORLD_HUMAN_SMOKE_MALE_C", 1);
-								func_72(&(uParam0->f_20[1 /*14*/]), joaat("WORLD_HUMAN_SMOKE"), 60000, 0, -1409704321, 0.7f);
+								func_72(&(uParam0->f_20[1 /*14*/]), joaat("WORLD_HUMAN_SMOKE"), 60000, 0, joaat("WORLD_HUMAN_SMOKE_MALE_C"), 0.7f);
 								PED::_0x2208438012482A1A(&(uParam0->f_20[1 /*14*/]), false, false);
 								PED::SET_PED_KEEP_TASK(&(uParam0->f_20[1 /*14*/]), true);
 								uParam0->f_469[5] = 1;
@@ -6870,14 +6870,14 @@ int func_227(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(iParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}

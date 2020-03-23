@@ -1331,7 +1331,7 @@ void func_50(int iParam0)
 	Var5.f_1 = -1;
 	Var5.f_1.f_1 = -1;
 	func_113(((*Global_1225057)[iParam0 /*686*/])->f_590, &Var5);
-	if (((*Global_1225057)[iParam0 /*686*/])->f_565 == -468635158)
+	if ((*Global_1225057)[iParam0 /*686*/])->f_565 == joaat("Hideout")
 	{
 		func_114(0);
 	}
@@ -1810,9 +1810,9 @@ int func_74(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1261475678:
+		case joaat("ambush"):
 		case -669677371:
-		case -468635158:
+		case joaat("Hideout"):
 		case joaat("dynamic"):
 			return 1;
 	}
@@ -2523,7 +2523,7 @@ void func_105(int iParam0, int iParam1)
 
 void func_106(int iParam0)
 {
-	if (((*Global_1225057)[iParam0 /*686*/])->f_565 != -1777724963)
+	if ((*Global_1225057)[iParam0 /*686*/])->f_565 != joaat("bounty_board")
 	{
 		return;
 	}
@@ -2567,7 +2567,7 @@ int func_109(int iParam0)
 		case 850213441:
 		case joaat("dynamic"):
 			return 6;
-		case -468635158:
+		case joaat("Hideout"):
 			return 5;
 	}
 	return 0;
@@ -3489,7 +3489,7 @@ void func_152(int iParam0, int iParam1)
 				case 452572720:
 					func_324(func_323((((*Global_1225057)[iParam0 /*686*/])->f_548[iParam1 /*3*/])->f_2), 1, 50f);
 					break;
-				case 1495295997:
+				case joaat("minigame"):
 					func_326(func_325((((*Global_1225057)[iParam0 /*686*/])->f_548[iParam1 /*3*/])->f_2));
 					break;
 			}
@@ -3505,7 +3505,7 @@ void func_152(int iParam0, int iParam1)
 					case 452572720:
 						func_324(func_323((((*Global_1225057)[iParam0 /*686*/])->f_548[iParam1 /*3*/])->f_2), 2, 50f);
 						break;
-					case 1495295997:
+					case joaat("minigame"):
 						break;
 				}
 			}
@@ -5746,7 +5746,7 @@ int func_261(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -5759,9 +5759,9 @@ int func_261(int iParam0)
 		case 1884341302:
 		case 1918154385:
 			return 1;
-		case -1261475678:
+		case joaat("ambush"):
 		case -669677371:
-		case -468635158:
+		case joaat("Hideout"):
 			return 8;
 		default:
 			break;
@@ -5899,7 +5899,7 @@ int func_269(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -6583,7 +6583,7 @@ void func_289(int iParam0, int iParam1)
 		bVar5 = !func_474(func_156(Global_1214482[iParam0 /*27*/]), ((*Global_1214482)[iParam0 /*27*/])->f_6);
 		func_475(Var2, 1, bVar5, 0);
 		func_476(((*Global_1225057)[iParam0 /*686*/])->f_590, 1, 0, -1);
-		if (((*Global_1225057)[iParam0 /*686*/])->f_565 == -468635158)
+		if ((*Global_1225057)[iParam0 /*686*/])->f_565 == joaat("Hideout")
 		{
 			func_477(4);
 		}
@@ -7402,7 +7402,7 @@ void func_315(int iParam0)
 	}
 	switch (((*Global_1225057)[iParam0 /*686*/])->f_565)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -7437,9 +7437,9 @@ void func_315(int iParam0)
 				bVar4 = true;
 			}
 			break;
-		case -1261475678:
+		case joaat("ambush"):
 		case -669677371:
-		case -468635158:
+		case joaat("Hideout"):
 			bVar0 = true;
 			iVar1 = 1;
 			bVar4 = true;
@@ -7566,7 +7566,7 @@ void func_317(struct<2> Param0)
 
 void func_318(int iParam0)
 {
-	if (((*Global_1225057)[iParam0 /*686*/])->f_565 != -1777724963)
+	if ((*Global_1225057)[iParam0 /*686*/])->f_565 != joaat("bounty_board")
 	{
 		return;
 	}
@@ -10022,13 +10022,13 @@ int func_403(int iParam0, int iParam1)
 		case 8:
 			return joaat("CRIME_BURGLARY");
 		case 9:
-			return -1560342203 /* GXTEntry: "Cheating" */;
+			return joaat("CRIME_CHEATING");
 		case 10:
 			return joaat("CRIME_DISTURBANCE");
 		case 11:
 			return joaat("CRIME_EXPLOSION");
 		case 12:
-			return -1759599185 /* GXTEntry: "Grave Robbery" */;
+			return joaat("CRIME_GRAVE_ROBBERY");
 		case 13:
 			return joaat("CRIME_HASSLE");
 		case 14:
@@ -10042,7 +10042,7 @@ int func_403(int iParam0, int iParam1)
 		case 18:
 			return joaat("CRIME_JACK_VEHICLE");
 		case 19:
-			return 314693001 /* GXTEntry: "Jail Break" */;
+			return joaat("CRIME_JAIL_BREAK");
 		case 20:
 			return joaat("CRIME_KIDNAPPING");
 		case 21:
@@ -10066,13 +10066,13 @@ int func_403(int iParam0, int iParam1)
 		case 30:
 			return joaat("CRIME_MURDER_LIVESTOCK");
 		case 31:
-			return 1396375613 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_PROPERTY_DESTRUCTION");
 		case 32:
 			return joaat("CRIME_RESIST_ARREST");
 		case 33:
 			return joaat("CRIME_ROBBERY");
 		case 34:
-			return -59535775 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_STAGECOACH_ROBBERY");
 		case 35:
 			return joaat("CRIME_STOLEN_GOODS");
 		case 36:
@@ -10088,7 +10088,7 @@ int func_403(int iParam0, int iParam1)
 		case 41:
 			return joaat("CRIME_THREATEN_LAW");
 		case 42:
-			return 1685924442 /* GXTEntry: "Train Robbery" */;
+			return joaat("CRIME_TRAIN_ROBBERY");
 		case 43:
 			return joaat("CRIME_TRAMPLE");
 		case 44:
@@ -12551,7 +12551,7 @@ void func_514(int iParam0)
 {
 	vector3 vVar0;
 
-	if (((*Global_1225057)[iParam0 /*686*/])->f_565 != -1777724963)
+	if ((*Global_1225057)[iParam0 /*686*/])->f_565 != joaat("bounty_board")
 	{
 		return;
 	}
@@ -13167,7 +13167,7 @@ int func_536(int iParam0)
 			return 0;
 		case joaat("secondary"):
 			return 1;
-		case -177397452:
+		case joaat("Trolley"):
 			return 2;
 	}
 	return 0;
@@ -19099,7 +19099,7 @@ void func_729(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			switch (iParam1)
 			{
 				case 16:
-					iParam0->f_8 = -468635158;
+					iParam0->f_8 = joaat("Hideout");
 					break;
 				case 17:
 					iParam0->f_8 = 1112069699;
@@ -21655,7 +21655,7 @@ int func_868(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -21705,17 +21705,17 @@ int func_869(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -21729,7 +21729,7 @@ int func_870(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;

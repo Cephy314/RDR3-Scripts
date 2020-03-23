@@ -2935,7 +2935,7 @@ int func_133(int iParam0)
 			return 1301;
 		case 1444727078:
 			return 1400;
-		case -1152281542: /* GXTEntry: "Posse Race" */
+		case joaat("POSSE_VERSUS_RACE"):
 			return 1600;
 		case joaat("POSSE_FEUD"):
 			return 1800;
@@ -2995,7 +2995,7 @@ int func_133(int iParam0)
 			return 5502;
 		case joaat("region"):
 			return 5503;
-		case 46285951:
+		case joaat("SHOWS"):
 			return 5504;
 		case joaat("fishing"):
 			return 5505;
@@ -3011,9 +3011,9 @@ int func_133(int iParam0)
 			return 6005;
 		case joaat("net_gun_for_hire_offline"):
 			return 6010;
-		case 1517073634:
+		case joaat("camp_item"):
 			return 6400;
-		case 1495295997:
+		case joaat("minigame"):
 			return 6500;
 		case 364255091:
 			return 7000;
@@ -3824,7 +3824,7 @@ int func_164(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return 1927192818;
+			return joaat("challenges");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -4726,7 +4726,7 @@ int func_203(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -4776,17 +4776,17 @@ int func_204(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -4800,7 +4800,7 @@ int func_205(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;

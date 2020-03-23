@@ -133,13 +133,13 @@ char* func_7(int iParam0)
 		case joaat("NEW_GAME"):
 			sVar0 = "new_game";
 			break;
-		case 1651967528:
+		case joaat("shift_f"):
 			sVar0 = "shift_f";
 			break;
-		case -84928653:
+		case joaat("demo"):
 			sVar0 = "demo";
 			break;
-		case 1306134188:
+		case joaat("intro_not_done"):
 			sVar0 = "intro_not_done";
 			break;
 		case joaat("private"):
@@ -148,37 +148,37 @@ char* func_7(int iParam0)
 		case joaat("friendly"):
 			sVar0 = "friendly";
 			break;
-		case 655115506:
+		case joaat("hardcore"):
 			sVar0 = "hardcore";
 			break;
-		case 1737952409:
+		case joaat("near_posse"):
 			sVar0 = "near_posse";
 			break;
-		case 2137301164:
+		case joaat("random_posse"):
 			sVar0 = "random_posse";
 			break;
-		case -110687166:
+		case joaat("open_posse"):
 			sVar0 = "open_posse";
 			break;
-		case -2030542394:
+		case joaat("follow_invite"):
 			sVar0 = "follow_invite";
 			break;
-		case -11301188:
+		case joaat("random_region"):
 			sVar0 = "random_region";
 			break;
-		case -1312679892:
+		case joaat("last_region"):
 			sVar0 = "last_region";
 			break;
-		case 1433203589:
+		case joaat("spawn_location"):
 			sVar0 = "spawn_location";
 			break;
-		case -61119924:
+		case joaat("last_location"):
 			sVar0 = "last_location";
 			break;
 		case joaat("camp"):
 			sVar0 = "camp";
 			break;
-		case -159568751:
+		case joaat("handheld"):
 			sVar0 = "handheld";
 			break;
 		case joaat("benchmark"):

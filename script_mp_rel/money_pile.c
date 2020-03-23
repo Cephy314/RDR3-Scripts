@@ -114,7 +114,7 @@ void func_6()
 		iLocal_13 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1898385492) && !bLocal_18)
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, joaat("objectExchange")) && !bLocal_18)
 	{
 		fVar0 = 1f;
 		fVar1 = 1f;

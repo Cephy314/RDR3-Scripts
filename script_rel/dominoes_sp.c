@@ -1856,16 +1856,16 @@ void func_58(int iParam0)
 		switch (iParam0)
 		{
 			case 1:
-				func_117(func_116(iParam0), &cVar1, 676312963, joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 390152599, -2, 0, 0, 0, 0, 1, 1);
+				func_117(func_116(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Dominoes"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 3:
-				func_117(func_116(iParam0), &cVar1, 676312963, joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
+				func_117(func_116(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 2:
-				func_117(func_116(iParam0), &cVar1, 676312963, joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 348001928, -2, 0, 0, 0, 0, 1, 1);
+				func_117(func_116(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Poker"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 0:
-				func_117(func_116(iParam0), &cVar1, 676312963, joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
+				func_117(func_116(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 		}
 	}
@@ -4551,7 +4551,7 @@ bool func_140(var uParam0)
 	}
 	if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(*uParam0))
 	{
-		return TASK::_0xCACC2F9D994504B7(*uParam0) == -672963996;
+		return TASK::_0xCACC2F9D994504B7(*uParam0) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 	}
 	return func_287(*uParam0);
 }
@@ -13833,7 +13833,7 @@ void func_420(var uParam0, var uParam1, int iParam2, var uParam3)
 				}
 				uParam1->f_17 = 1;
 			}
-			if (fVar27 >= 0.825f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_12, 1426724047))
+			if (fVar27 >= 0.825f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_12, joaat("Interruptible")))
 			{
 				CAM::_0x05AB44D906738426();
 				func_651(uParam1, 53);
@@ -14068,7 +14068,7 @@ void func_421(var uParam0, var uParam1, int iParam2)
 					}
 				}
 			}
-			if ((!func_664(uParam1, sVar7, sVar6, 0) || fVar12 > 0.82f) || ENTITY::HAS_ANIM_EVENT_FIRED(bVar9, 1426724047))
+			if ((!func_664(uParam1, sVar7, sVar6, 0) || fVar12 > 0.82f) || ENTITY::HAS_ANIM_EVENT_FIRED(bVar9, joaat("Interruptible")))
 			{
 				ENTITY::FREEZE_ENTITY_POSITION(bVar9, false);
 				if (func_138(bVar9))
@@ -15036,7 +15036,7 @@ void func_425(var uParam0, var uParam1, int iParam2)
 				func_651(uParam1, 54);
 				return;
 			}
-			if (-1189282160 != iVar4 && -962535435 != iVar4)
+			if (joaat("RH_TILE_IDLE") != iVar4 && joaat("LH_TILE_IDLE") != iVar4)
 			{
 				if (func_682(iVar5))
 				{
@@ -15176,7 +15176,7 @@ void func_426(var uParam0, var uParam1, int iParam2)
 				func_651(uParam1, 53);
 				return;
 			}
-			if (2017957793 == iVar14 || 1264534465 == iVar14)
+			if (joaat("GET_TILE_RACK_LH") == iVar14 || joaat("GET_TILE_RACK_RH") == iVar14)
 			{
 				func_651(uParam1, 31);
 				return;
@@ -15186,7 +15186,7 @@ void func_426(var uParam0, var uParam1, int iParam2)
 				func_651(uParam1, 30);
 				return;
 			}
-			if (-1189282160 != iVar14 && -962535435 != iVar14)
+			if (joaat("RH_TILE_IDLE") != iVar14 && joaat("LH_TILE_IDLE") != iVar14)
 			{
 				if (func_682(iVar10))
 				{
@@ -22738,7 +22738,7 @@ int func_692(var uParam0)
 	{
 		return 0;
 	}
-	if (-1189282160 == iVar0 || -962535435 == iVar0)
+	if (joaat("RH_TILE_IDLE") == iVar0 || joaat("LH_TILE_IDLE") == iVar0)
 	{
 		return 1;
 	}
@@ -22748,7 +22748,7 @@ int func_692(var uParam0)
 	}
 	if (uParam0->f_18.f_21 > 0.9f)
 	{
-		if (2017957793 == iVar0 || 1264534465 == iVar0)
+		if (joaat("GET_TILE_RACK_LH") == iVar0 || joaat("GET_TILE_RACK_RH") == iVar0)
 		{
 			return 1;
 		}
@@ -25968,7 +25968,7 @@ void func_825(var uParam0, int iParam1)
 			StringCopy(&(uParam0->f_12), "", 64);
 			break;
 		case 6:
-			uParam0->f_1 = -793862732; /* GXTEntry: "The Case of the Shrew in the Fog" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_SHREW");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 5;
 			uParam0->f_4 = 0;
@@ -25990,7 +25990,7 @@ void func_825(var uParam0, int iParam1)
 			uParam0->f_23 = -535255159;
 			break;
 		case 8:
-			uParam0->f_1 = -1487662509; /* GXTEntry: "Otis Miller and The Black-Hearted Lady" */
+			uParam0->f_1 = joaat("DOCUMENT_BOOK_BLACK_HEART_LADY");
 			uParam0->f_2 = 1;
 			uParam0->f_3 = 14;
 			uParam0->f_4 = 0;
@@ -26488,7 +26488,7 @@ bool func_849(bool bParam0)
 	{
 		return false;
 	}
-	if (TASK::_0xCACC2F9D994504B7(bParam0) != -672963996)
+	if (TASK::_0xCACC2F9D994504B7(bParam0) != joaat("SCRIPT_MINI_GAME_DOMINOES"))
 	{
 		return false;
 	}
@@ -29847,7 +29847,7 @@ void func_927(var uParam0, int iParam1, char* sParam2, bool bParam3, bool bParam
 		if (bParam4)
 		{
 			UILOG::_UILOG_SET_PENDING_DETAILS_ID(1, iVar0);
-			Global_1359489->f_361.f_194 = func_117("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_922(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", -1507719118, 5000, 0, 0, 0, 0, 1, 1);
+			Global_1359489->f_361.f_194 = func_117("CAMP_REQUEST", "CAMP_REQUEST_DETAIL", 1997120069, MISC::GET_HASH_KEY(func_922(uParam0->f_3)), joaat("player_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("sp_missions"), 5000, 0, 0, 0, 0, 1, 1);
 		}
 	}
 }

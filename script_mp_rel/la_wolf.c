@@ -1970,7 +1970,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			switch (iParam1)
 			{
 				case 16:
-					iParam0->f_8 = -468635158;
+					iParam0->f_8 = joaat("Hideout");
 					break;
 				case 17:
 					iParam0->f_8 = 1112069699;
@@ -5130,7 +5130,7 @@ int func_237(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:

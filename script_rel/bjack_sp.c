@@ -2870,16 +2870,16 @@ void func_146(int iParam0)
 		switch (iParam0)
 		{
 			case 1:
-				func_346(func_345(iParam0), &cVar1, 676312963, joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 390152599, -2, 0, 0, 0, 0, 1, 1);
+				func_346(func_345(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Dominoes"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 3:
-				func_346(func_345(iParam0), &cVar1, 676312963, joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
+				func_346(func_345(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 2:
-				func_346(func_345(iParam0), &cVar1, 676312963, joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 348001928, -2, 0, 0, 0, 0, 1, 1);
+				func_346(func_345(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Poker"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 0:
-				func_346(func_345(iParam0), &cVar1, 676312963, joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
+				func_346(func_345(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 		}
 	}
@@ -3746,11 +3746,11 @@ void func_208(var uParam0)
 	StringCopy(uParam0->f_1310[2 /*8*/], "mini_games@blackjack_mg@dealer@seat_03@main", 64);
 	StringCopy(uParam0->f_1310[3 /*8*/], "mini_games@blackjack_mg@dealer@seat_04@main", 64);
 	StringCopy(uParam0->f_1310[4 /*8*/], "mini_games@blackjack_mg@dealer@self@main", 64);
-	uParam0->f_1351[0] = 1369335153;
-	uParam0->f_1351[1] = -1737980832;
-	uParam0->f_1351[2] = -337579448;
-	uParam0->f_1351[3] = 866293359;
-	uParam0->f_1351[4] = -1377878687;
+	uParam0->f_1351[0] = joaat("clipset@mini_games@blackjack_mg@dealer@seat_01@main");
+	uParam0->f_1351[1] = joaat("clipset@mini_games@blackjack_mg@dealer@seat_02@main");
+	uParam0->f_1351[2] = joaat("clipset@mini_games@blackjack_mg@dealer@seat_03@main");
+	uParam0->f_1351[3] = joaat("clipset@mini_games@blackjack_mg@dealer@seat_04@main");
+	uParam0->f_1351[4] = joaat("clipset@mini_games@blackjack_mg@dealer@self@main");
 	uParam0->f_1293[0] = 61983;
 	uParam0->f_1293[1] = 61991;
 	uParam0->f_1293[2] = 61999;
@@ -10046,7 +10046,7 @@ int func_335(int iParam0, int iParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == 319699045))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == joaat("TaskMovePoker")))
 		{
 			return 0;
 		}
@@ -10083,7 +10083,7 @@ int func_335(int iParam0, int iParam1)
 		}
 		if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1))
 		{
-			return TASK::_0xCACC2F9D994504B7(iParam1) == -672963996;
+			return TASK::_0xCACC2F9D994504B7(iParam1) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 		}
 		return func_807(iParam1);
 	}
@@ -11773,7 +11773,7 @@ void func_418(var uParam0, var uParam1)
 	switch (uParam1->f_7)
 	{
 		case 2:
-			func_868(uParam0, 1426724047);
+			func_868(uParam0, joaat("Interruptible"));
 			if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(*uParam1))
 			{
 				TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(uParam0->f_1239, "CheckType", BUILTIN::TO_FLOAT(iVar0));
@@ -11907,7 +11907,7 @@ void func_421(var uParam0, var uParam1)
 		case 7:
 			if (!func_872(uParam0, 1065353216 /* Float: 1f */))
 			{
-				func_868(uParam0, -1921404755);
+				func_868(uParam0, joaat("ActionDone"));
 				iVar5 = 0;
 				while (iVar5 < 4)
 				{
@@ -12111,7 +12111,7 @@ void func_424(var uParam0, var uParam1)
 			}
 			break;
 		case 19:
-			func_868(uParam0, -1921404755);
+			func_868(uParam0, joaat("ActionDone"));
 			if (func_872(uParam0, 1065353216 /* Float: 1f */))
 			{
 				if (&uParam0->f_1239.f_34[0 /*4*/] == 3)
@@ -13008,8 +13008,8 @@ void func_434(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 4:
-			func_914(uParam0, iParam2, -1921404755);
-			func_914(uParam0, iParam2, 1426724047);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
+			func_914(uParam0, iParam2, joaat("Interruptible"));
 			if ((TASK::IS_PED_ACTIVE_IN_SCENARIO(*uParam1, 0) || func_915(uParam0, iParam2, 0)) || func_478(&(uParam1->f_11), 20f))
 			{
 				PED::_0xF1C03A5352243A30(*uParam1);
@@ -13042,8 +13042,8 @@ void func_434(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 6:
-			func_914(uParam0, iParam2, -1921404755);
-			func_914(uParam0, iParam2, 1426724047);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
+			func_914(uParam0, iParam2, joaat("Interruptible"));
 			if ((!func_916(uParam0, iParam2, "sit_enter_left", 1065353216 /* Float: 1f */) && !func_916(uParam0, iParam2, "sit_enter_right", 1065353216 /* Float: 1f */)) || func_915(uParam0, iParam2, 0))
 			{
 				func_816(uParam0, iParam2, "IdleRequest", 0.5f);
@@ -13072,7 +13072,7 @@ void func_435(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_909(uParam1, "BetAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
@@ -13122,7 +13122,7 @@ void func_436(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_909(uParam1, "BetAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
@@ -13157,7 +13157,7 @@ void func_437(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_909(uParam1, "TakeAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
@@ -13257,7 +13257,7 @@ void func_438(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_909(uParam1, "TakeAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
@@ -13309,7 +13309,7 @@ void func_439(var uParam0, var uParam1, int iParam2)
 			{
 				func_818(uParam0, iParam2, 13);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), 774065115))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), joaat("pickupChips")))
 			{
 				func_835(uParam0, iParam2, iVar0, iVar1, Var2, Var2.f_1, func_921(Var2, Var2.f_1, 10), 0, 0, 0);
 				func_922(uParam0, iParam2, iVar0, iVar1, 7966);
@@ -13358,7 +13358,7 @@ void func_439(var uParam0, var uParam1, int iParam2)
 			break;
 		case 12:
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar15));
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			if (func_909(uParam1, "BetAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "Idle");
@@ -13409,7 +13409,7 @@ void func_440(var uParam0, var uParam1, int iParam2)
 			{
 				func_818(uParam0, iParam2, 13);
 			}
-			else if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), 774065115))
+			else if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), joaat("pickupChips")))
 			{
 				func_834(uParam0, iParam2, 0, Var0, Var0.f_1, func_921(Var0, Var0.f_1, 10), 0, 0, 0);
 				func_926(uParam0, iParam2, 0, 7966);
@@ -13443,7 +13443,7 @@ void func_440(var uParam0, var uParam1, int iParam2)
 			break;
 		case 12:
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar13));
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			if (func_909(uParam1, "BetAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "Idle");
@@ -13528,7 +13528,7 @@ void func_441(var uParam0, var uParam1, int iParam2)
 						func_922(uParam0, iParam2, 1, 1, 7966);
 					}
 				}
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), 247797451))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), joaat("dropChips_1")))
 				{
 					if (iVar13 == 0)
 					{
@@ -13585,7 +13585,7 @@ void func_441(var uParam0, var uParam1, int iParam2)
 			break;
 		case 12:
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar13));
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			if (func_909(uParam1, "TakeAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "Idle");
@@ -13683,7 +13683,7 @@ void func_442(var uParam0, var uParam1, int iParam2)
 				{
 					func_926(uParam0, iParam2, 1, 7966);
 				}
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), 247797451))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam2 /*46*/]), joaat("dropChips_1")))
 				{
 					func_920(uParam0, iParam2, 0, 0);
 					func_920(uParam0, iParam2, 1, 0);
@@ -13700,7 +13700,7 @@ void func_442(var uParam0, var uParam1, int iParam2)
 			break;
 		case 12:
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar13));
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			if (func_909(uParam1, "TakeAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
 				TASK::REQUEST_TASK_MOVE_NETWORK_STATE_TRANSITION(*uParam1, "Idle");
@@ -13741,7 +13741,7 @@ void func_443(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_909(uParam1, "HitAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
@@ -13771,7 +13771,7 @@ void func_444(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if (func_909(uParam1, "StandAnimFinished") || func_915(uParam0, iParam2, 1))
 			{
@@ -13798,7 +13798,7 @@ void func_445(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "WinLossType", BUILTIN::TO_FLOAT(uParam1->f_30));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "IntensityType", BUILTIN::TO_FLOAT(uParam1->f_31));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(*uParam1, "VariationType", BUILTIN::TO_FLOAT(uParam1->f_32));
@@ -13830,7 +13830,7 @@ void func_446(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 0:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			TASK::SET_TASK_MOVE_NETWORK_SIGNAL_FLOAT(&(uParam0->f_946[iParam2 /*46*/]), "CheckType", BUILTIN::TO_FLOAT(iVar0));
 			if ((func_909(uParam1, "FidgetAnimFinished") || func_909(uParam1, "FidgetSubtleAnimFinished")) || func_927(uParam0, iParam2, 1))
 			{
@@ -13890,7 +13890,7 @@ void func_448(var uParam0, var uParam1, int iParam2)
 	switch (uParam1->f_7)
 	{
 		case 7:
-			func_914(uParam0, iParam2, -1921404755);
+			func_914(uParam0, iParam2, joaat("ActionDone"));
 			if ((((((!func_916(uParam0, iParam2, "sit_exit_left", 1065353216 /* Float: 1f */) && !func_916(uParam0, iParam2, "sit_exit_left_loss_a", 1065353216 /* Float: 1f */)) && !func_916(uParam0, iParam2, "sit_exit_left_loss_b", 1065353216 /* Float: 1f */)) && !func_916(uParam0, iParam2, "sit_exit_right", 1065353216 /* Float: 1f */)) && !func_916(uParam0, iParam2, "sit_exit_right_loss_a", 1065353216 /* Float: 1f */)) && !func_916(uParam0, iParam2, "sit_exit_right_loss_b", 1065353216 /* Float: 1f */)) || ((bVar0 || !bVar1) && func_928(uParam0, iParam2, 1)))
 			{
 				if (PED::IS_PED_A_PLAYER(*uParam1) || func_119(*uParam1))
@@ -25439,7 +25439,7 @@ int func_869(var uParam0, bool bParam1)
 {
 	if (uParam0->f_1239.f_19)
 	{
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam0->f_1239, 1426724047))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam0->f_1239, joaat("Interruptible")))
 		{
 			if ((!bParam1 || !TASK::IS_TASK_MOVE_NETWORK_ACTIVE(uParam0->f_1239)) || TASK::IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION(uParam0->f_1239))
 			{
@@ -26029,7 +26029,7 @@ int func_906(var uParam0, int iParam1)
 
 int func_907(var uParam0, bool bParam1)
 {
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam0->f_1239, 1426724047))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam0->f_1239, joaat("Interruptible")))
 	{
 		if ((!bParam1 || !TASK::IS_TASK_MOVE_NETWORK_ACTIVE(uParam0->f_1239)) || TASK::IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION(uParam0->f_1239))
 		{
@@ -26167,7 +26167,7 @@ int func_915(var uParam0, int iParam1, bool bParam2)
 {
 	if ((uParam0->f_946[iParam1 /*46*/])->f_38)
 	{
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam1 /*46*/]), 1426724047))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam1 /*46*/]), joaat("Interruptible")))
 		{
 			if ((!bParam2 || !TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_946[iParam1 /*46*/]))) || TASK::IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION(&(uParam0->f_946[iParam1 /*46*/])))
 			{
@@ -26532,7 +26532,7 @@ int func_927(var uParam0, int iParam1, bool bParam2)
 
 int func_928(var uParam0, int iParam1, bool bParam2)
 {
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam1 /*46*/]), 1426724047))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_946[iParam1 /*46*/]), joaat("Interruptible")))
 	{
 		if ((!bParam2 || !TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_946[iParam1 /*46*/]))) || TASK::IS_TASK_MOVE_NETWORK_READY_FOR_TRANSITION(&(uParam0->f_946[iParam1 /*46*/])))
 		{

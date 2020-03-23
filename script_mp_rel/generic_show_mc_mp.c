@@ -2183,7 +2183,7 @@ void func_57(var uParam0, var uParam1)
 	bool bVar1;
 	bool bVar2;
 
-	bVar0 = PED::_0x34D6AC1157C8226C(Global_34, -447259824);
+	bVar0 = PED::_0x34D6AC1157C8226C(Global_34, joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"));
 	bVar1 = func_23(Global_34, &(uParam0->f_121[2]), 1, 0);
 	bVar2 = func_23(Global_34, &(uParam0->f_121[3]), 1, 0);
 	if (Global_35.f_2 > 51f)

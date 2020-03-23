@@ -1710,7 +1710,7 @@ int func_94(int iParam0)
 	int iVar0;
 
 	iVar0 = func_146(iParam0);
-	if ((iVar0 == 810656527 || iVar0 == 2088138839) || iVar0 == 129583122)
+	if ((iVar0 == joaat("ability_card") || iVar0 == 2088138839) || iVar0 == 129583122)
 	{
 		return 1;
 	}

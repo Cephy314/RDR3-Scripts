@@ -8521,7 +8521,7 @@ void func_203(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 6:
-			if (func_281(uParam0, iVar120) >= 1f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_281(uParam0, iVar120) >= 1f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iVar0 = 0;
 				while (iVar0 < 6)
@@ -8699,7 +8699,7 @@ void func_205(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_290(uParam1, "ActionDone") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_290(uParam1, "ActionDone") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_138(iParam2->f_5[iVar0 /*62*/], 1, 0, 0);
 				return;
@@ -8970,7 +8970,7 @@ void func_208(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (!func_291(uParam0, iVar7, "PickupCards") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (!func_291(uParam0, iVar7, "PickupCards") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
 			}
@@ -9025,7 +9025,7 @@ void func_209(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar7, "HoldCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar7, "HoldCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
 			}
@@ -9098,7 +9098,7 @@ void func_210(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iParam2->f_380 = 1;
 				func_138(iParam2->f_5[iVar9 /*62*/], 1, 0, 0);
@@ -9116,7 +9116,7 @@ void func_210(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iParam2->f_380 = 1;
 				func_138(iParam2->f_5[iVar9 /*62*/], 1, 0, 0);
@@ -9185,7 +9185,7 @@ void func_211(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iParam2->f_381 = 1;
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
@@ -9203,7 +9203,7 @@ void func_211(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iParam2->f_381 = 1;
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
@@ -9272,7 +9272,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iParam2->f_382 = 1;
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
@@ -9290,7 +9290,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iParam2->f_382 = 1;
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
@@ -9352,7 +9352,7 @@ void func_213(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iVar0 = (32 + iVar7);
 				vVar1 = { ENTITY::GET_ENTITY_COORDS((uParam0->f_281[iVar0 /*24*/])->f_4, true, false) };
@@ -9463,7 +9463,7 @@ void func_215(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if ((func_291(uParam0, iVar7, "NoCardsLoopA") || func_291(uParam0, iVar7, "RecieveDeckExit")) || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if ((func_291(uParam0, iVar7, "NoCardsLoopA") || func_291(uParam0, iVar7, "RecieveDeckExit")) || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				if (func_190())
 				{
@@ -9526,7 +9526,7 @@ void func_216(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iVar6 = (32 + iVar7);
 				vVar0 = { ENTITY::GET_ENTITY_COORDS((uParam0->f_281[iVar6 /*24*/])->f_4, true, false) };
@@ -9591,7 +9591,7 @@ void func_217(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9638,7 +9638,7 @@ void func_218(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9691,7 +9691,7 @@ void func_219(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9740,7 +9740,7 @@ void func_220(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9918,7 +9918,7 @@ void func_222(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar9, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, 1426724047))
+			if (func_291(uParam0, iVar9, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
 			{
 				iVar6 = 0;
 				while (iVar6 < 7)
@@ -10810,7 +10810,7 @@ int func_252(int iParam0, bool bParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == 319699045))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == joaat("TaskMovePoker")))
 		{
 			return 0;
 		}
@@ -10847,7 +10847,7 @@ int func_252(int iParam0, bool bParam1)
 		}
 		if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1))
 		{
-			return TASK::_0xCACC2F9D994504B7(bParam1) == -672963996;
+			return TASK::_0xCACC2F9D994504B7(bParam1) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 		}
 		return func_324(bParam1);
 	}

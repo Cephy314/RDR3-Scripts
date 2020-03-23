@@ -88,7 +88,7 @@ void __EntryFunction__()
 							{
 								if (func_17())
 								{
-									if (func_18(Local_26.f_46, 0) == 74 && PERSCHAR::_0xA00DF706C60173D1(-877355938) == joaat("cs_mrpearson"))
+									if (func_18(Local_26.f_46, 0) == 74 && PERSCHAR::_0xA00DF706C60173D1(joaat("RHD_General_Store")) == joaat("cs_mrpearson"))
 									{
 										Local_26.f_46.f_107 = "COMP_PEARSON";
 									}
@@ -3426,7 +3426,7 @@ int func_132(var uParam0, bool bParam1)
 	var uVar0;
 
 	func_30(1);
-	if (func_251(*uParam0, -162746208, "bSwitchToExit", 1, 1067030938 /* Float: 1.2f */, 1))
+	if (func_251(*uParam0, joaat("bSwitchToExit"), "bSwitchToExit", 1, 1067030938 /* Float: 1.2f */, 1))
 	{
 		if (!func_35(uParam0, 4))
 		{
@@ -3490,14 +3490,14 @@ int func_136(var uParam0, bool bParam1)
 			func_27(uParam0, 0);
 			if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_2[0])))
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 				{
 					OBJECT::DELETE_OBJECT(uParam0->f_2[0]);
 				}
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_2[1])))
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 				{
 					OBJECT::DELETE_OBJECT(uParam0->f_2[1]);
 				}
@@ -14266,14 +14266,14 @@ int func_552(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}

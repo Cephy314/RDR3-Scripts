@@ -3540,43 +3540,43 @@ int func_156(int iParam0)
 {
 	int iVar0;
 
-	if (iParam0 == 1958345007)
+	if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"))
 	{
 		iVar0 = 1;
 	}
-	else if (iParam0 == 348064119)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"))
 	{
 		iVar0 = 2;
 	}
-	else if (iParam0 == -818346432)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"))
 	{
 		iVar0 = 3;
 	}
-	else if (iParam0 == -610395813)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT"))
 	{
 		iVar0 = 4;
 	}
-	else if (iParam0 == 2103594888)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN"))
 	{
 		iVar0 = 5;
 	}
-	else if (iParam0 == -624685730)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"))
 	{
 		iVar0 = 6;
 	}
-	else if (iParam0 == 1739830455)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"))
 	{
 		iVar0 = 7;
 	}
-	else if (iParam0 == -1498871949)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH"))
 	{
 		iVar0 = 8;
 	}
-	else if (iParam0 == 447784640)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER"))
 	{
 		iVar0 = 9;
 	}
-	else if (iParam0 == -1283370018)
+	else if (iParam0 == joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"))
 	{
 		iVar0 = 10;
 	}
@@ -3635,34 +3635,34 @@ char* func_160(int iParam0)
 
 	switch (iParam0)
 	{
-		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE";
 			break;
-		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB";
 			break;
-		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER";
 			break;
-		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT";
 			break;
-		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN";
 			break;
-		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS";
 			break;
-		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND";
 			break;
-		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH";
 			break;
-		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER";
 			break;
-		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"):
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK";
 			break;
 		default:
@@ -4316,7 +4316,7 @@ int func_183()
 	{
 		return 0;
 	}
-	if (UIAPPS::_IS_APP_RUNNING(1289756680))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("shop_menu")))
 	{
 		return 0;
 	}
@@ -5432,7 +5432,7 @@ int func_228(int iParam0)
 			return 1301;
 		case 1444727078:
 			return 1400;
-		case -1152281542: /* GXTEntry: "Posse Race" */
+		case joaat("POSSE_VERSUS_RACE"):
 			return 1600;
 		case joaat("POSSE_FEUD"):
 			return 1800;
@@ -5492,7 +5492,7 @@ int func_228(int iParam0)
 			return 5502;
 		case joaat("region"):
 			return 5503;
-		case 46285951:
+		case joaat("SHOWS"):
 			return 5504;
 		case joaat("fishing"):
 			return 5505;
@@ -5508,9 +5508,9 @@ int func_228(int iParam0)
 			return 6005;
 		case joaat("net_gun_for_hire_offline"):
 			return 6010;
-		case 1517073634:
+		case joaat("camp_item"):
 			return 6400;
-		case 1495295997:
+		case joaat("minigame"):
 			return 6500;
 		case 364255091:
 			return 7000;
@@ -9670,7 +9670,7 @@ int func_407(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_239(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
+		return func_239(joaat("AMMO_POISONBOTTLE"), 1);
 	}
 	return func_239(iParam0, 1);
 }

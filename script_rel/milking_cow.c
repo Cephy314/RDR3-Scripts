@@ -1295,7 +1295,7 @@ int func_65(var uParam0)
 			func_125(&Local_20, 4);
 			break;
 		case 4:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -120680098))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")))
 			{
 				PED::SET_PED_CAN_LEG_IK(Global_35, true);
 				PED::SET_PED_LEG_IK_MODE(Global_35, 2);
@@ -2145,7 +2145,7 @@ void func_118(int iParam0)
 	}
 	iParam0->f_43.f_30 = "Milking";
 	iParam0->f_43.f_1 = joaat("default");
-	iParam0->f_43 = 325037696;
+	iParam0->f_43 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@MILK_COW");
 	iParam0->f_77.f_30 = "Wobble";
 	iParam0->f_77.f_1 = joaat("default");
 	PED::SET_PED_CAN_LEG_IK(Global_35, false);
@@ -2243,7 +2243,7 @@ int func_119(int iParam0)
 			}
 			break;
 		case 4:
-			if ((ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -120680098) || func_55(61)) || func_55(67))
+			if ((ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")) || func_55(61)) || func_55(67))
 			{
 				PED::SET_PED_CAN_LEG_IK(Global_35, true);
 				PED::SET_PED_LEG_IK_MODE(Global_35, 2);

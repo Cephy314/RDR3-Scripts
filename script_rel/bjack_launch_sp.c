@@ -7302,7 +7302,7 @@ void func_193(var uParam0, var uParam1, int iParam2)
 			func_246(iParam2->f_5[iVar0 /*37*/]);
 			break;
 		case 5:
-			if (func_251(uParam0, iVar1, "S_Idle") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, -1921404755))
+			if (func_251(uParam0, iVar1, "S_Idle") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("ActionDone")))
 			{
 				(iParam2->f_5[iVar0 /*37*/])->f_9 = 1;
 				func_133(iParam2->f_5[iVar0 /*37*/], 1, 0, 0);
@@ -7906,7 +7906,7 @@ void func_200(var uParam0, var uParam1, int iParam2)
 			func_246(iParam2->f_5[iVar0 /*37*/]);
 			break;
 		case 3:
-			if (func_276(uParam0, iVar1) >= 1f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, -1921404755))
+			if (func_276(uParam0, iVar1) >= 1f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("ActionDone")))
 			{
 				iVar2 = 0;
 				while (iVar2 < 4)
@@ -8249,7 +8249,7 @@ void func_205(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 4:
-			if (func_263(uParam0, iVar1) || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, -1921404755))
+			if (func_263(uParam0, iVar1) || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("ActionDone")))
 			{
 				iVar3 = 0;
 				while (iVar3 < 11)
@@ -10460,7 +10460,7 @@ int func_227(int iParam0, int iParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == 319699045))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == joaat("TaskMovePoker")))
 		{
 			return 0;
 		}
@@ -10497,7 +10497,7 @@ int func_227(int iParam0, int iParam1)
 		}
 		if (TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1))
 		{
-			return TASK::_0xCACC2F9D994504B7(iParam1) == -672963996;
+			return TASK::_0xCACC2F9D994504B7(iParam1) == joaat("SCRIPT_MINI_GAME_DOMINOES");
 		}
 		return func_291(iParam1);
 	}

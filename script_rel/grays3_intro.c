@@ -1224,7 +1224,7 @@ bool func_29(int iParam0)
 	{
 		DECORATOR::DECOR_SET_INT(&(uLocal_31[0]), func_148(), -226237155);
 		DECORATOR::DECOR_SET_INT(&(uLocal_31[1]), func_148(), joaat("WAGON"));
-		DECORATOR::DECOR_SET_INT(&(uLocal_31[2]), func_148(), -1603047651);
+		DECORATOR::DECOR_SET_INT(&(uLocal_31[2]), func_148(), joaat("Porch"));
 		DECORATOR::DECOR_SET_INT(&(uLocal_31[3]), func_148(), -1428688732);
 		func_142(iParam0, &(uLocal_31[0]), 0);
 		func_142(iParam0, &(uLocal_31[1]), 0);

@@ -6417,7 +6417,7 @@ void func_204(int iParam0)
 	Var13 = { Var5 };
 	StringConCat(&Var13, "_DESC", 64);
 	UILOG::_UILOG_ADD_ENTRY_HASH(1, iVar1, vVar2, ((*Global_1835011)[iParam0 /*74*/])->f_26, MISC::GET_HASH_KEY(&Var13), iVar21);
-	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, ((*Global_1835011)[iParam0 /*74*/])->f_26, 676312963);
+	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, ((*Global_1835011)[iParam0 /*74*/])->f_26, joaat("toast_log_blips"));
 }
 
 void func_205(int iParam0)

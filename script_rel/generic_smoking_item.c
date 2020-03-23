@@ -104,7 +104,7 @@ void __EntryFunction__()
 			}
 			else
 			{
-				Var0.f_180 = TASK::_0x05A0100EA714DB68(Global_35, 2120637577);
+				Var0.f_180 = TASK::_0x05A0100EA714DB68(Global_35, joaat("PrimaryItem"));
 			}
 		}
 		if (!ScriptParam_0.f_3)

@@ -218,7 +218,7 @@ int func_3()
 	{
 		return 1;
 	}
-	if (func_17(func_16(-1777724963, PLAYER::PLAYER_ID(), 1, 0)))
+	if (func_17(func_16(joaat("bounty_board"), PLAYER::PLAYER_ID(), 1, 0)))
 	{
 		return 1;
 	}

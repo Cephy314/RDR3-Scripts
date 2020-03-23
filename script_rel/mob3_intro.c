@@ -1104,7 +1104,7 @@ int func_29(int iParam0)
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_3[0]), func_147(), -1954804603);
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_3[1]), func_147(), -795699535);
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_3[2]), func_147(), -623269057);
-	DECORATOR::DECOR_SET_INT(&(Local_14.f_3[3]), func_147(), -107418554);
+	DECORATOR::DECOR_SET_INT(&(Local_14.f_3[3]), func_147(), joaat("Cashier"));
 	func_148(iParam0, &(Local_14.f_3[0]), 0);
 	func_148(iParam0, &(Local_14.f_3[1]), 0);
 	func_148(iParam0, &(Local_14.f_3[2]), 0);
@@ -3547,7 +3547,7 @@ void func_146(int iParam0)
 				AUDIO::STOP_PED_SPEAKING(&(Local_14.f_3[iVar0]), true);
 				PED::_0x1902C4CFCC5BE57C(&(Local_14.f_3[iVar0]), 469249943);
 				PED::_0xCC8CA3E88256E58F(&(Local_14.f_3[iVar0]), false, true, true, true, false);
-				DECORATOR::DECOR_SET_INT(&(Local_14.f_3[iVar0]), func_147(), -107418554);
+				DECORATOR::DECOR_SET_INT(&(Local_14.f_3[iVar0]), func_147(), joaat("Cashier"));
 			}
 			else if (iVar0 == 0)
 			{

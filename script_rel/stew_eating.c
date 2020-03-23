@@ -123,9 +123,9 @@ void __EntryFunction__()
 				else if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1))
 				{
 					iVar183 = TASK::_0x2D0571BB55879DA2(Global_35);
-					if (iVar183 != -1177373461)
+					if (iVar183 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 					{
-						if (iVar183 == -447259824)
+						if (iVar183 == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"))
 						{
 							TASK::_0xB35370D5353995CB(Global_35, joaat("EAT_STEW_BOWL_CHAIR_BASE"), 1f);
 						}

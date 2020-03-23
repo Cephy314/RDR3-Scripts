@@ -10291,13 +10291,13 @@ void func_141(var uParam0)
 		{
 			if (PED::IS_PED_MODEL((uParam0->f_16[iVar0 /*1205*/])->f_1201, joaat("mp_male")))
 			{
-				uParam0->f_2901.f_2370.f_1 = 1348645644;
-				uParam0->f_2901.f_2370 = 1348645644;
+				uParam0->f_2901.f_2370.f_1 = joaat("CLIPSET@MP_CHARACTER_CREATOR@MALE");
+				uParam0->f_2901.f_2370 = joaat("CLIPSET@MP_CHARACTER_CREATOR@MALE");
 			}
 			else
 			{
-				uParam0->f_2901.f_2370.f_1 = 452590527;
-				uParam0->f_2901.f_2370 = 452590527;
+				uParam0->f_2901.f_2370.f_1 = joaat("CLIPSET@MP_CHARACTER_CREATOR@FEMALE");
+				uParam0->f_2901.f_2370 = joaat("CLIPSET@MP_CHARACTER_CREATOR@FEMALE");
 			}
 			uParam0->f_2901.f_2370.f_30 = "IDLE_STATE";
 			uParam0->f_2901.f_2370.f_4 = "BODY_SIZE";
@@ -10317,11 +10317,11 @@ void func_141(var uParam0)
 		{
 			if (PED::IS_PED_MODEL((uParam0->f_16[iVar0 /*1205*/])->f_1201, joaat("mp_male")))
 			{
-				TASK::_0x615DC4A82E90BB48(iVar1, 1348645644, 184808581);
+				TASK::_0x615DC4A82E90BB48(iVar1, joaat("CLIPSET@MP_CHARACTER_CREATOR@MALE"), 184808581);
 			}
 			else
 			{
-				TASK::_0x615DC4A82E90BB48(iVar1, 452590527, 184808581);
+				TASK::_0x615DC4A82E90BB48(iVar1, joaat("CLIPSET@MP_CHARACTER_CREATOR@FEMALE"), 184808581);
 			}
 			PED::FORCE_PED_MOTION_STATE(iVar1, 247561816, false, 0, false);
 			fVar3 = func_314((uParam0->f_16[iVar0 /*1205*/])->f_8.f_474.f_11);
@@ -20652,7 +20652,7 @@ int func_474(int iParam0)
 			return 1;
 		case 1075019689:
 			return 2;
-		case -814048481:
+		case joaat("pedexpress_brow_depth"):
 			return 3;
 		case 1870020575:
 			return 4;
@@ -20666,19 +20666,19 @@ int func_474(int iParam0)
 			return 8;
 		case 1573479481:
 			return 9;
-		case -1427713379:
+		case joaat("pedexpress_cheeks_depth"):
 			return 10;
 		case 1670852880:
 			return 11;
 		case -1533591453:
 			return 12;
-		case -983290814:
+		case joaat("pedexpress_jaw_depth"):
 			return 13;
 		case -1116287994:
 			return 14;
 		case 698464395:
 			return 15;
-		case -580690850:
+		case joaat("pedexpress_chin_depth"):
 			return 16;
 		case 867398362:
 			return 17;
@@ -23420,7 +23420,7 @@ void func_587(var uParam0, int iParam1)
 			func_728(uParam0, sVar0);
 			break;
 		case 139406372:
-			func_749(uParam0->f_615, 869278708, 1971704925);
+			func_749(uParam0->f_615, 869278708, joaat("Unspecified"));
 			break;
 		case 908554354:
 			func_750(uParam0);
@@ -23612,13 +23612,13 @@ void func_594(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4)
 	{
 		if (uParam0->f_1193.f_647 == 2026485318)
 		{
-			uParam0->f_2370.f_1 = 1348645644;
-			uParam0->f_2370 = 1348645644;
+			uParam0->f_2370.f_1 = joaat("CLIPSET@MP_CHARACTER_CREATOR@MALE");
+			uParam0->f_2370 = joaat("CLIPSET@MP_CHARACTER_CREATOR@MALE");
 		}
 		else
 		{
-			uParam0->f_2370.f_1 = 452590527;
-			uParam0->f_2370 = 452590527;
+			uParam0->f_2370.f_1 = joaat("CLIPSET@MP_CHARACTER_CREATOR@FEMALE");
+			uParam0->f_2370 = joaat("CLIPSET@MP_CHARACTER_CREATOR@FEMALE");
 		}
 		uParam0->f_2370.f_30 = "IDLE_STATE";
 		uParam0->f_2370.f_4 = "BODY_SIZE";
@@ -23643,11 +23643,11 @@ void func_594(var uParam0, int iParam1, var uParam2, var uParam3, var uParam4)
 	{
 		if (uParam0->f_1193.f_647 == 24043185)
 		{
-			TASK::_0x615DC4A82E90BB48(uParam0->f_615, 452590527, 184808581);
+			TASK::_0x615DC4A82E90BB48(uParam0->f_615, joaat("CLIPSET@MP_CHARACTER_CREATOR@FEMALE"), 184808581);
 		}
 		else
 		{
-			TASK::_0x615DC4A82E90BB48(uParam0->f_615, 1348645644, 184808581);
+			TASK::_0x615DC4A82E90BB48(uParam0->f_615, joaat("CLIPSET@MP_CHARACTER_CREATOR@MALE"), 184808581);
 		}
 		PED::FORCE_PED_MOTION_STATE(uParam0->f_615, 247561816, false, 0, false);
 		if (func_148(uParam0))
@@ -25122,7 +25122,7 @@ int func_638(int iParam0)
 		case 2:
 			return 1075019689;
 		case 3:
-			return -814048481;
+			return joaat("pedexpress_brow_depth");
 		case 4:
 			return 1870020575;
 		case 5:
@@ -25136,19 +25136,19 @@ int func_638(int iParam0)
 		case 9:
 			return 1573479481;
 		case 10:
-			return -1427713379;
+			return joaat("pedexpress_cheeks_depth");
 		case 11:
 			return 1670852880;
 		case 12:
 			return -1533591453;
 		case 13:
-			return -983290814;
+			return joaat("pedexpress_jaw_depth");
 		case 14:
 			return -1116287994;
 		case 15:
 			return 698464395;
 		case 16:
-			return -580690850;
+			return joaat("pedexpress_chin_depth");
 		case 17:
 			return 867398362;
 		case 18:
@@ -30701,7 +30701,7 @@ int func_824(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:

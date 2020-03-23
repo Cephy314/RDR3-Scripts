@@ -958,7 +958,7 @@ int func_19()
 			if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_45[1])))
 			{
 				func_35(&(uLocal_45[1]), 1088421888 /* Float: 7f */, 0, 0);
-				(Local_1279[2 /*23*/])->f_1[0] = 489075255; /* GXTEntry: "$1.00" */
+				(Local_1279[2 /*23*/])->f_1[0] = joaat("MONEY_ONE_DOLLAR");
 				(Local_1279[2 /*23*/])->f_12[0] = 2;
 				Local_1279[2 /*23*/] = 2;
 				(Local_1279[3 /*23*/])->f_1[0] = joaat("PROVISION_NECKLACE");
@@ -4560,9 +4560,9 @@ int func_128(int iParam0, vector3 vParam1, var uParam4, var uParam5)
 		if (ENTITY::DOES_ENTITY_EXIST(*uParam4))
 		{
 			iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(*uParam4);
-			func_319(joaat("p_trunk06x"), vParam1, &iVar0, *uParam5, -1525360788);
-			func_320(joaat("p_trunk06x"), vParam1, &iVar0, -2029793397 /* GXTEntry: "Repeater Cartridges - Regular" */, 24, *uParam5, -1525360788, 0);
-			func_320(joaat("p_trunk06x"), vParam1, &iVar0, 1234009870 /* GXTEntry: "Revolver Cartridges - Regular" */, 18, *uParam5, -1525360788, 0);
+			func_319(joaat("p_trunk06x"), vParam1, &iVar0, *uParam5, joaat("RANSACK_ATTACHED_CHEST_MEDIUM"));
+			func_320(joaat("p_trunk06x"), vParam1, &iVar0, -2029793397 /* GXTEntry: "Repeater Cartridges - Regular" */, 24, *uParam5, joaat("RANSACK_ATTACHED_CHEST_MEDIUM"), 0);
+			func_320(joaat("p_trunk06x"), vParam1, &iVar0, 1234009870 /* GXTEntry: "Revolver Cartridges - Regular" */, 18, *uParam5, joaat("RANSACK_ATTACHED_CHEST_MEDIUM"), 0);
 			return 1;
 		}
 		else
@@ -4572,7 +4572,7 @@ int func_128(int iParam0, vector3 vParam1, var uParam4, var uParam5)
 	}
 	else
 	{
-		*uParam5 = TASK::_0xF533D68FF970D190(vParam1, -1525360788, 5f, 1, 0);
+		*uParam5 = TASK::_0xF533D68FF970D190(vParam1, joaat("RANSACK_ATTACHED_CHEST_MEDIUM"), 5f, 1, 0);
 	}
 	return 0;
 }
@@ -5019,7 +5019,7 @@ void func_143()
 	{
 		iLocal_788[3] = 1;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_35[2]), 92002788) && !&iLocal_788[2])
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_35[2]), joaat("gunEquipped")) && !&iLocal_788[2])
 	{
 		iLocal_788[2] = 1;
 	}
@@ -9857,7 +9857,7 @@ int func_297(int iParam0, int iParam1)
 			{
 				func_334(&(iLocal_35[iParam0]), Global_35, 131072, 291934926);
 			}
-			if ((!func_304(&(iLocal_35[iParam0]), 242628503) || ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_35[iParam0]), -2113731257)) || func_159(&uLocal_908) > 7.5f)
+			if ((!func_304(&(iLocal_35[iParam0]), 242628503) || ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_35[iParam0]), joaat("endsInStand"))) || func_159(&uLocal_908) > 7.5f)
 			{
 				if (iParam0 == iLocal_1250)
 				{
@@ -9945,7 +9945,7 @@ int func_297(int iParam0, int iParam1)
 			{
 				_NAMESPACE29::_0x66F9EB44342BB4C5(&(iLocal_35[iParam1]), &Local_726);
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_35[iParam0]), -2113731257) || func_364(5f, 1, 0, 0))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_35[iParam0]), joaat("endsInStand")) || func_364(5f, 1, 0, 0))
 			{
 				func_163(&uLocal_908);
 				func_506(&iLocal_1247, 5);
@@ -12986,14 +12986,14 @@ int func_412(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(iParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}
@@ -15650,47 +15650,47 @@ int func_482(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588: /* GXTEntry: "Loot Innocent" */
+		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case 1142025875: /* GXTEntry: "Murder" */
+		case joaat("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case 1587891565:
+		case joaat("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case 1877013492: /* GXTEntry: "Frighten" */
+		case joaat("HONOR_EVENT_SCARE"):
 			return 32;
-		case -643014279: /* GXTEntry: "Killed Vermin" */
+		case joaat("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case -597116214: /* GXTEntry: "Killed Domestic Animal" */
+		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case 551416228: /* GXTEntry: "Killed Horse" */
+		case joaat("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case 1022576842: /* GXTEntry: "Stole Horse" */
+		case joaat("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case 953325896: /* GXTEntry: "Stole Donkey" */
+		case joaat("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case 508358508: /* GXTEntry: "Stole Mule" */
+		case joaat("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case -735200598: /* GXTEntry: "Trampled Innocent" */
+		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case -856432278:
+		case joaat("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case -2010847721: /* GXTEntry: "Abandon Dead Animals" */
+		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case 446961221: /* GXTEntry: "Watched Animal Bleedout" */
+		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case -1972216640: /* GXTEntry: "Antagonize" */
+		case joaat("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case 530833824: /* GXTEntry: "Theft" */
+		case joaat("HONOR_EVENT_THEFT"):
 			return 131072;
-		case 1682361219: /* GXTEntry: "Intervened" */
+		case joaat("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case 158959085: /* GXTEntry: "Wanted In Camp" */
+		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case 1919819559: /* GXTEntry: "Donated Game" */
+		case joaat("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case 1461411082: /* GXTEntry: "Item Request" */
+		case joaat("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case -549508280: /* GXTEntry: "Long Absence" */
+		case joaat("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;
@@ -16736,9 +16736,9 @@ int func_527(int iParam0)
 		case 32768:
 			return -114482302;
 		case 65536:
-			return -1067623131;
+			return joaat("RE_AD_WARN");
 		case 131072:
-			return -1067623131;
+			return joaat("RE_AD_WARN");
 		case 524288:
 			return 1468736574;
 		case 1048576:

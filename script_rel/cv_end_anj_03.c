@@ -3357,7 +3357,7 @@ int func_88(var uParam0)
 
 int func_89(var uParam0)
 {
-	uLocal_20 = STREAMING::_0xB223249B7798EEED(func_51(uParam0, iLocal_15), joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_LEFT"), 17, -1932751089);
+	uLocal_20 = STREAMING::_0xB223249B7798EEED(func_51(uParam0, iLocal_15), joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_LEFT"), 17, joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_MALE_A"));
 	return 1;
 }
 
@@ -3863,7 +3863,7 @@ int func_114(int iParam0)
 		case 18:
 			return joaat("strauss");
 		case 19:
-			return 45077879;
+			return joaat("GRIMSHAW");
 		case 20:
 			return joaat("karen");
 		case 21:
@@ -7052,7 +7052,7 @@ int func_257()
 
 int func_258()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -1898385492))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
 	{
 		return 1;
 	}

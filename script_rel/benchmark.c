@@ -826,13 +826,13 @@ char* func_2(int iParam0)
 		case joaat("NEW_GAME"):
 			sVar0 = "new_game";
 			break;
-		case 1651967528:
+		case joaat("shift_f"):
 			sVar0 = "shift_f";
 			break;
-		case -84928653:
+		case joaat("demo"):
 			sVar0 = "demo";
 			break;
-		case 1306134188:
+		case joaat("intro_not_done"):
 			sVar0 = "intro_not_done";
 			break;
 		case joaat("private"):
@@ -841,37 +841,37 @@ char* func_2(int iParam0)
 		case joaat("friendly"):
 			sVar0 = "friendly";
 			break;
-		case 655115506:
+		case joaat("hardcore"):
 			sVar0 = "hardcore";
 			break;
-		case 1737952409:
+		case joaat("near_posse"):
 			sVar0 = "near_posse";
 			break;
-		case 2137301164:
+		case joaat("random_posse"):
 			sVar0 = "random_posse";
 			break;
-		case -110687166:
+		case joaat("open_posse"):
 			sVar0 = "open_posse";
 			break;
-		case -2030542394:
+		case joaat("follow_invite"):
 			sVar0 = "follow_invite";
 			break;
-		case -11301188:
+		case joaat("random_region"):
 			sVar0 = "random_region";
 			break;
-		case -1312679892:
+		case joaat("last_region"):
 			sVar0 = "last_region";
 			break;
-		case 1433203589:
+		case joaat("spawn_location"):
 			sVar0 = "spawn_location";
 			break;
-		case -61119924:
+		case joaat("last_location"):
 			sVar0 = "last_location";
 			break;
 		case joaat("camp"):
 			sVar0 = "camp";
 			break;
-		case -159568751:
+		case joaat("handheld"):
 			sVar0 = "handheld";
 			break;
 		case joaat("benchmark"):
@@ -3555,7 +3555,7 @@ int func_119(var uParam0)
 	}
 	else
 	{
-		uParam0->f_529 = CAM::CREATE_CAMERA(180543640, true);
+		uParam0->f_529 = CAM::CREATE_CAMERA(joaat("DEFAULT_SPLINE_CAMERA"), true);
 		CAM::ADD_CAM_SPLINE_NODE(uParam0->f_529, func_245(uParam0), func_246(uParam0), 0, 3, 2);
 		CAM::ADD_CAM_SPLINE_NODE(uParam0->f_529, func_256(uParam0), func_258(uParam0), func_259(uParam0), 3, 2);
 		CAM::SET_CAM_SPLINE_PHASE(uParam0->f_529, 0f);
@@ -5107,7 +5107,7 @@ int func_184(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_348(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_348(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_350()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_364(Global_35, -2016812721)) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_348(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_348(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_350()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_364(Global_35, joaat("Prop_player_sleep_tent_a_frame"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_182(iParam0, iVar0) || (fParam1 >= (func_365(iParam0) * func_365(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -7975,7 +7975,7 @@ void func_299(var uParam0)
 	{
 		CAM::DESTROY_CAM(uParam0->f_529, false);
 	}
-	uParam0->f_529 = CAM::CREATE_CAMERA(180543640, true);
+	uParam0->f_529 = CAM::CREATE_CAMERA(joaat("DEFAULT_SPLINE_CAMERA"), true);
 	CAM::ADD_CAM_SPLINE_NODE(uParam0->f_529, CAM::GET_GAMEPLAY_CAM_COORD(), CAM::GET_GAMEPLAY_CAM_ROT(2), 0, 3, 2);
 	CAM::ADD_CAM_SPLINE_NODE(uParam0->f_529, CAM::GET_GAMEPLAY_CAM_COORD() + Vector(10f, 0f, 0f), 0f, 0f, ENTITY::GET_ENTITY_HEADING(Global_35), 5000, 3, 2);
 	CAM::SET_CAM_SPLINE_PHASE(uParam0->f_529, 0f);
@@ -10491,7 +10491,7 @@ void func_411()
 	fVar0 = (fVar0 + (BUILTIN::TO_FLOAT(func_556(COMPENDIUM::_0x729D52F61A5A9E22(joaat("equipment")), 10)) / BUILTIN::TO_FLOAT(10)));
 	fVar0 = (fVar0 + (BUILTIN::TO_FLOAT(func_556(COMPENDIUM::_0x729D52F61A5A9E22(joaat("fish")), 10)) / BUILTIN::TO_FLOAT(10)));
 	fVar0 = (fVar0 + COMPENDIUM::_0x725D52F21A5E9E22(joaat("gangs")));
-	fVar0 = (fVar0 + (BUILTIN::TO_FLOAT(func_556(COMPENDIUM::_0x729D52F61A5A9E22(1807539419), 20)) / BUILTIN::TO_FLOAT(20)));
+	fVar0 = (fVar0 + (BUILTIN::TO_FLOAT(func_556(COMPENDIUM::_0x729D52F61A5A9E22(joaat("herbs")), 20)) / BUILTIN::TO_FLOAT(20)));
 	fVar0 = (fVar0 + (BUILTIN::TO_FLOAT(func_556(COMPENDIUM::_0x729D52F61A5A9E22(joaat("Horses")), 10)) / BUILTIN::TO_FLOAT(10)));
 	fVar0 = (fVar0 + (BUILTIN::TO_FLOAT(func_556(COMPENDIUM::_0x729D52F61A5A9E22(joaat("weapons")), 48)) / BUILTIN::TO_FLOAT(48)));
 	func_557(&iVar3, &iVar4);

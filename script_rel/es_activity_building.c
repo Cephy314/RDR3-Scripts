@@ -2282,8 +2282,8 @@ int func_111(var uParam0, vector3 vParam1, vector3 vParam4, bool bParam7, vector
 	}
 	uParam0->f_50.f_1 = joaat("default");
 	uParam0->f_84.f_1 = joaat("default");
-	uParam0->f_50 = -70942493;
-	uParam0->f_84 = -969734833;
+	uParam0->f_50 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@FIX_FENCE@ADD_TO_RIGHT@PED");
+	uParam0->f_84 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@FIX_FENCE@ADD_TO_RIGHT@NEW_POST");
 	uParam0->f_50.f_30 = "Intro";
 	uParam0->f_84.f_30 = "IntroPost";
 	uParam0->f_20 = { vParam8 };
@@ -2480,7 +2480,7 @@ int func_118(var uParam0)
 	}
 	if (*uParam0 == 11)
 	{
-		if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -120680098))
+		if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")))
 		{
 		}
 		else
@@ -2792,7 +2792,7 @@ int func_118(var uParam0)
 			{
 				func_171(&(uParam0->f_4), 64);
 			}
-			if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -120680098))
+			if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")))
 			{
 				if (Local_0 == 0)
 				{

@@ -1079,7 +1079,7 @@ void func_16(var uParam0, var uParam1)
 			func_46(0);
 			switch (func_13())
 			{
-				case -1828660489:
+				case joaat("tlg"):
 					func_47(0);
 					break;
 				default:
@@ -1213,7 +1213,7 @@ void func_16(var uParam0, var uParam1)
 			switch (func_65())
 			{
 				case 0:
-					if (func_13() == joaat("freeroam") && (func_66(1737952409) || func_66(2137301164)))
+					if (func_13() == joaat("freeroam") && (func_66(joaat("near_posse")) || func_66(joaat("random_posse"))))
 					{
 						func_40(19);
 					}
@@ -1245,7 +1245,7 @@ void func_16(var uParam0, var uParam1)
 			}
 			break;
 		case 19:
-			Global_1572887->f_15 = func_67(&(Global_1572887->f_373), func_66(1737952409));
+			Global_1572887->f_15 = func_67(&(Global_1572887->f_373), func_66(joaat("near_posse")));
 			switch (Global_1572887->f_15)
 			{
 				case 5:
@@ -1341,7 +1341,7 @@ void func_16(var uParam0, var uParam1)
 						Jump @1714; //curOff = 1705
 						func_40(30);
 						Jump @3602; //curOff = 1714
-						if ((func_66(1464020707) || func_66(1098974047)) || func_66(868706284))
+						if ((func_66(joaat("bg_custom_1")) || func_66(joaat("bg_custom_2"))) || func_66(joaat("bg_custom_3")))
 						{
 							Global_1099294->f_646 = 1;
 							Global_1099294->f_646.f_1 = 1;
@@ -1467,7 +1467,7 @@ void func_16(var uParam0, var uParam1)
 																	func_84(2);
 																	func_85(1);
 																}
-																else if (func_66(1737952409))
+																else if (func_66(joaat("near_posse")))
 																{
 																}
 																else if (NETWORK::_0xD0498AD30E16B6BD())
@@ -1483,7 +1483,7 @@ void func_16(var uParam0, var uParam1)
 																	return;
 																}
 															}
-															else if (func_66(-575777117))
+															else if (func_66(joaat("cchar")))
 															{
 																uParam0->f_79 += 16;
 																func_83(uParam0);
@@ -1501,7 +1501,7 @@ void func_16(var uParam0, var uParam1)
 															}
 															else
 															{
-																if (func_66(-110687166))
+																if (func_66(joaat("open_posse")))
 																{
 																	uParam0->f_79 += 32;
 																}
@@ -1543,7 +1543,7 @@ void func_16(var uParam0, var uParam1)
 															func_83(uParam0);
 															NETWORK::_0x309BBEBEA8A3986C(uParam0->f_79, 2, Global_1572887->f_387.f_8, iVar1, &(uParam0->f_76));
 															break;
-														case -1828660489:
+														case joaat("tlg"):
 															func_83(uParam0);
 															NETWORK::_0x39A8EF7AF29A192C(uParam0->f_79, 1, iVar1, &(uParam0->f_76));
 															break;
@@ -1553,7 +1553,7 @@ void func_16(var uParam0, var uParam1)
 															func_83(uParam0);
 															NETWORK::_0x39A8EF7AF29A192C(uParam0->f_79, 1, iVar1, &(uParam0->f_76));
 															break;
-														case 1495295997:
+														case joaat("minigame"):
 															break;
 													}
 													if (NETWORK::_0x2F54B146D3EDCE4D(&(uParam0->f_76)) || Global_31)
@@ -1569,7 +1569,7 @@ void func_16(var uParam0, var uParam1)
 												}
 												else
 												{
-													if ((func_13() == joaat("freeroam") && (func_66(1737952409) || func_66(2137301164))) && ((Global_1572887->f_15 == 5 || Global_1572887->f_15 == 7) || Global_1572887->f_15 == 6))
+													if ((func_13() == joaat("freeroam") && (func_66(joaat("near_posse")) || func_66(joaat("random_posse")))) && ((Global_1572887->f_15 == 5 || Global_1572887->f_15 == 7) || Global_1572887->f_15 == 6))
 													{
 														ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false, false), false, false, true, true);
 														func_40(27);
@@ -2974,7 +2974,7 @@ void func_74()
 	vVar0 = { Global_17172.f_54.f_1 };
 	fVar6 = (IntToFloat(MISC::GET_RANDOM_INT_IN_RANGE(0, 359)) * 1f);
 	bVar7 = false;
-	if ((bVar7 && !func_12()) && !func_66(-575777117))
+	if ((bVar7 && !func_12()) && !func_66(joaat("cchar")))
 	{
 		vVar0 = { vVar3 };
 	}
@@ -2982,7 +2982,7 @@ void func_74()
 	{
 		vVar0 = { func_271(122, 1) };
 	}
-	else if (func_13() == 1495295997)
+	else if (func_13() == joaat("minigame"))
 	{
 		vVar0 = { vVar3 };
 	}
@@ -2992,7 +2992,7 @@ void func_74()
 		{
 			vVar0 = { vVar0 };
 		}
-		else if ((func_66(1464020707) || func_66(1098974047)) || func_66(868706284))
+		else if ((func_66(joaat("bg_custom_1")) || func_66(joaat("bg_custom_2"))) || func_66(joaat("bg_custom_3")))
 		{
 			vVar0 = { Global_1099294->f_646.f_2 };
 			Global_1099294->f_646.f_1 = 0;
@@ -3016,28 +3016,28 @@ void func_74()
 		{
 			vVar0 = { Global_17172.f_54.f_1 };
 		}
-		else if (func_66(-11301188))
+		else if (func_66(joaat("random_region")))
 		{
 			Global_1099294->f_25 = func_273(-1);
 			vVar0 = { func_271(Global_1099294->f_25, 1) };
 		}
-		else if (func_66(-1312679892))
+		else if (func_66(joaat("last_region")))
 		{
 			vVar0 = { func_271(Global_17172.f_54, 1) };
 		}
-		else if (func_66(-61119924))
+		else if (func_66(joaat("last_location")))
 		{
 			vVar0 = { Global_17172.f_54.f_1 };
 		}
-		else if (func_66(-110687166))
+		else if (func_66(joaat("open_posse")))
 		{
 			vVar0 = { Global_17172.f_54.f_1 };
 		}
-		else if (func_66(1737952409))
+		else if (func_66(joaat("near_posse")))
 		{
 			vVar0 = { Global_17172.f_54.f_1 };
 		}
-		else if (func_66(2137301164))
+		else if (func_66(joaat("random_posse")))
 		{
 			vVar0 = { Global_17172.f_54.f_1 };
 		}
@@ -3045,11 +3045,11 @@ void func_74()
 		{
 			vVar0 = { func_275(1) };
 		}
-		else if (func_66(-1854341522))
+		else if (func_66(joaat("random_poker")))
 		{
 			vVar0 = { func_276(Global_17172.f_54.f_1, -471827042) };
 		}
-		else if (func_66(313296873))
+		else if (func_66(joaat("trade_1")))
 		{
 			if (func_277(3, &vVar0))
 			{
@@ -3059,7 +3059,7 @@ void func_74()
 				vVar0 = { -1723.073f, -430.4347f, 151.0119f };
 			}
 		}
-		else if (func_66(541270806))
+		else if (func_66(joaat("trade_2")))
 		{
 			if (func_277(4, &vVar0))
 			{
@@ -3069,7 +3069,7 @@ void func_74()
 				vVar0 = { -1723.073f, -430.4347f, 151.0119f };
 			}
 		}
-		else if (func_66(922800273))
+		else if (func_66(joaat("trade_3")))
 		{
 			if (func_277(2, &vVar0))
 			{
@@ -3079,7 +3079,7 @@ void func_74()
 				vVar0 = { -190.3148f, 639.5237f, 112.2634f };
 			}
 		}
-		else if (func_66(1298496858))
+		else if (func_66(joaat("trade_4")))
 		{
 			if (func_277(5, &vVar0))
 			{
@@ -3089,11 +3089,11 @@ void func_74()
 				vVar0 = { Global_17172.f_54.f_1 };
 			}
 		}
-		else if (func_66(1699163417))
+		else if (func_66(joaat("trade_5")))
 		{
 			vVar0 = { 1235.993f, -1279.31f, 74.9174f };
 		}
-		else if (func_66(-575777117))
+		else if (func_66(joaat("cchar")))
 		{
 			vVar0 = { -561.4f, -3782.6f, 237.6f };
 		}
@@ -5694,7 +5694,7 @@ bool func_167()
 
 void func_168()
 {
-	Global_1901929->f_1.f_1 = func_383(joaat("transition"), -166221370, 120000, "T_TransitionPendingSaveTimeOut");
+	Global_1901929->f_1.f_1 = func_383(joaat("transition"), joaat("T_TransitionPendingSaveTimeOut"), 120000, "T_TransitionPendingSaveTimeOut");
 	if (Global_1901929->f_1.f_1 < 5000)
 	{
 		Global_1901929->f_1.f_1 = 120000;
@@ -5703,7 +5703,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_1 = 120000;
 	}
-	Global_1901929->f_1.f_2 = func_383(joaat("transition"), 163783464, 150000, "T_TransitionStateKillTime");
+	Global_1901929->f_1.f_2 = func_383(joaat("transition"), joaat("T_TransitionStateKillTime"), 150000, "T_TransitionStateKillTime");
 	if (Global_1901929->f_1.f_2 < 5000)
 	{
 		Global_1901929->f_1.f_2 = 150000;
@@ -5712,7 +5712,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_2 = 150000;
 	}
-	Global_1901929->f_1.f_3 = func_383(joaat("transition"), 1003348461, 180000, "T_TransitionStateFailsafeTime");
+	Global_1901929->f_1.f_3 = func_383(joaat("transition"), joaat("T_TransitionStateFailsafeTime"), 180000, "T_TransitionStateFailsafeTime");
 	if (Global_1901929->f_1.f_3 < 5000)
 	{
 		Global_1901929->f_1.f_3 = 180000;
@@ -5721,7 +5721,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_3 = 180000;
 	}
-	Global_1901929->f_1.f_4 = func_383(joaat("transition"), 1593007883, 30000, "T_TransitionStateInventoryTime");
+	Global_1901929->f_1.f_4 = func_383(joaat("transition"), joaat("T_TransitionStateInventoryTime"), 30000, "T_TransitionStateInventoryTime");
 	if (Global_1901929->f_1.f_4 < 5000)
 	{
 		Global_1901929->f_1.f_4 = 30000;
@@ -5730,7 +5730,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_4 = 30000;
 	}
-	Global_1901929->f_1.f_5 = func_383(joaat("transition"), -76396999, 60000, "T_TransitionSessionRequestTimeout");
+	Global_1901929->f_1.f_5 = func_383(joaat("transition"), joaat("T_TransitionSessionRequestTimeout"), 60000, "T_TransitionSessionRequestTimeout");
 	if (Global_1901929->f_1.f_5 < 1)
 	{
 		Global_1901929->f_1.f_5 = 60000;
@@ -5739,7 +5739,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_5 = 60000;
 	}
-	Global_1901929->f_1.f_6 = func_383(joaat("transition"), 558888444, 30000, "T_TransitionSessionRequestAttemptTimeout");
+	Global_1901929->f_1.f_6 = func_383(joaat("transition"), joaat("T_TransitionSessionRequestAttemptTimeout"), 30000, "T_TransitionSessionRequestAttemptTimeout");
 	if (Global_1901929->f_1.f_6 < 1)
 	{
 		Global_1901929->f_1.f_6 = 30000;
@@ -5748,7 +5748,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_6 = 30000;
 	}
-	Global_1901929->f_1.f_7 = func_383(joaat("transition"), 1295584385, 10000, "T_TransitionSessionRequestActionTimeout");
+	Global_1901929->f_1.f_7 = func_383(joaat("transition"), joaat("T_TransitionSessionRequestActionTimeout"), 10000, "T_TransitionSessionRequestActionTimeout");
 	if (Global_1901929->f_1.f_7 < 1)
 	{
 		Global_1901929->f_1.f_7 = 10000;
@@ -5757,7 +5757,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_7 = 10000;
 	}
-	Global_1901929->f_1.f_8 = func_383(joaat("transition"), -1664075411, 30000, "T_TransitionSessionFlagTimeout");
+	Global_1901929->f_1.f_8 = func_383(joaat("transition"), joaat("T_TransitionSessionFlagTimeout"), 30000, "T_TransitionSessionFlagTimeout");
 	if (Global_1901929->f_1.f_8 < 1)
 	{
 		Global_1901929->f_1.f_8 = 30000;
@@ -5766,7 +5766,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_8 = 30000;
 	}
-	Global_1901929->f_1.f_9 = func_383(joaat("transition"), -595342530, 3000, "T_TransitionSessionPrivateReqWaitTime");
+	Global_1901929->f_1.f_9 = func_383(joaat("transition"), joaat("T_TransitionSessionPrivateReqWaitTime"), 3000, "T_TransitionSessionPrivateReqWaitTime");
 	if (Global_1901929->f_1.f_9 < 1)
 	{
 		Global_1901929->f_1.f_9 = 3000;
@@ -5775,7 +5775,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_9 = 3000;
 	}
-	Global_1901929->f_1.f_10 = func_383(joaat("transition"), -1555176025, 200000, "T_TransitionMatchmakingSessionTimeout");
+	Global_1901929->f_1.f_10 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingSessionTimeout"), 200000, "T_TransitionMatchmakingSessionTimeout");
 	if (Global_1901929->f_1.f_10 < 1)
 	{
 		Global_1901929->f_1.f_10 = 200000;
@@ -5784,7 +5784,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_10 = 200000;
 	}
-	Global_1901929->f_1.f_11 = func_383(joaat("transition"), 1229961375, 2000, "T_TransitionMatchmakingInputWaitTimeout");
+	Global_1901929->f_1.f_11 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingInputWaitTimeout"), 2000, "T_TransitionMatchmakingInputWaitTimeout");
 	if (Global_1901929->f_1.f_11 < 1)
 	{
 		Global_1901929->f_1.f_11 = 2000;
@@ -5793,7 +5793,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_11 = 2000;
 	}
-	Global_1901929->f_1.f_12 = func_383(joaat("transition"), -73303167, 5000, "T_TransitionMatchmakingTransitionTimeout");
+	Global_1901929->f_1.f_12 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingTransitionTimeout"), 5000, "T_TransitionMatchmakingTransitionTimeout");
 	if (Global_1901929->f_1.f_12 < 1)
 	{
 		Global_1901929->f_1.f_12 = 5000;
@@ -5802,7 +5802,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_12 = 5000;
 	}
-	Global_1901929->f_1.f_13 = func_383(joaat("transition"), -980804910, 500, "T_TransitionMatchmakingIDSendTime");
+	Global_1901929->f_1.f_13 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingIDSendTime"), 500, "T_TransitionMatchmakingIDSendTime");
 	if (Global_1901929->f_1.f_13 < 1)
 	{
 		Global_1901929->f_1.f_13 = 500;
@@ -5811,7 +5811,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_13 = 500;
 	}
-	Global_1901929->f_1.f_14 = func_383(joaat("transition"), 316029909, 300000, "T_TransitionMatchmakingMatchTimeout");
+	Global_1901929->f_1.f_14 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingMatchTimeout"), 300000, "T_TransitionMatchmakingMatchTimeout");
 	if (Global_1901929->f_1.f_14 < 1)
 	{
 		Global_1901929->f_1.f_14 = 300000;
@@ -5820,7 +5820,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_14 = 300000;
 	}
-	Global_1901929->f_1.f_15 = func_383(joaat("transition"), -134158158, 120000, "T_TransitionMatchmakingEndFlowTimeout");
+	Global_1901929->f_1.f_15 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingEndFlowTimeout"), 120000, "T_TransitionMatchmakingEndFlowTimeout");
 	if (Global_1901929->f_1.f_15 < 1)
 	{
 		Global_1901929->f_1.f_15 = 120000;
@@ -5829,7 +5829,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_15 = 120000;
 	}
-	Global_1901929->f_1.f_18 = func_383(joaat("transition"), -1841226664, 30000, "T_TransitionInviteErrorMsgDuration");
+	Global_1901929->f_1.f_18 = func_383(joaat("transition"), joaat("T_TransitionInviteErrorMsgDuration"), 30000, "T_TransitionInviteErrorMsgDuration");
 	if (Global_1901929->f_1.f_18 < 1)
 	{
 		Global_1901929->f_1.f_18 = 30000;
@@ -5838,7 +5838,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_18 = 30000;
 	}
-	Global_1901929->f_1.f_19 = func_383(joaat("transition"), 1716740887, 40000, "T_TransitionInviteFlowFailsafeTimeout");
+	Global_1901929->f_1.f_19 = func_383(joaat("transition"), joaat("T_TransitionInviteFlowFailsafeTimeout"), 40000, "T_TransitionInviteFlowFailsafeTimeout");
 	if (Global_1901929->f_1.f_19 < 10000)
 	{
 		Global_1901929->f_1.f_19 = 40000;
@@ -5847,7 +5847,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_19 = 40000;
 	}
-	Global_1901929->f_1.f_20 = func_383(joaat("transition"), 2011285928, 120000, "T_TransitionInviteFlowPreResultFailsafeTimeout");
+	Global_1901929->f_1.f_20 = func_383(joaat("transition"), joaat("T_TransitionInviteFlowPreResultFailsafeTimeout"), 120000, "T_TransitionInviteFlowPreResultFailsafeTimeout");
 	if (Global_1901929->f_1.f_20 < 10000)
 	{
 		Global_1901929->f_1.f_20 = 120000;
@@ -5856,7 +5856,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_20 = 120000;
 	}
-	Global_1901929->f_1.f_21 = func_383(joaat("transition"), 420661166, 180, "T_TransitionInviteCodeTimeout");
+	Global_1901929->f_1.f_21 = func_383(joaat("transition"), joaat("T_TransitionInviteCodeTimeout"), 180, "T_TransitionInviteCodeTimeout");
 	if (Global_1901929->f_1.f_21 < 1)
 	{
 		Global_1901929->f_1.f_21 = 180;
@@ -5865,7 +5865,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_21 = 180;
 	}
-	Global_1901929->f_1.f_22 = func_383(joaat("transition"), -663371562, 200, "T_TransitionInviteMsgCooldown");
+	Global_1901929->f_1.f_22 = func_383(joaat("transition"), joaat("T_TransitionInviteMsgCooldown"), 200, "T_TransitionInviteMsgCooldown");
 	if (Global_1901929->f_1.f_22 < 1)
 	{
 		Global_1901929->f_1.f_22 = 200;
@@ -5874,7 +5874,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_22 = 200;
 	}
-	Global_1901929->f_1.f_23 = func_383(joaat("transition"), -1449248579, 30000, "T_TransitionInviteUINotification");
+	Global_1901929->f_1.f_23 = func_383(joaat("transition"), joaat("T_TransitionInviteUINotification"), 30000, "T_TransitionInviteUINotification");
 	if (Global_1901929->f_1.f_23 < 1)
 	{
 		Global_1901929->f_1.f_23 = 30000;
@@ -5883,7 +5883,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_23 = 30000;
 	}
-	Global_1901929->f_1.f_24 = func_383(joaat("transition"), -1638544955, 20000, "T_TransitionRegionUGCEarlyQuitTimeout");
+	Global_1901929->f_1.f_24 = func_383(joaat("transition"), joaat("T_TransitionRegionUGCEarlyQuitTimeout"), 20000, "T_TransitionRegionUGCEarlyQuitTimeout");
 	if (Global_1901929->f_1.f_24 < 0)
 	{
 		Global_1901929->f_1.f_24 = 20000;
@@ -5892,7 +5892,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_24 = 20000;
 	}
-	Global_1901929->f_1.f_25 = func_383(joaat("transition"), 1927283629, 1, "T_TransitionUGCCoopOutroCutsceneRealTimeMP");
+	Global_1901929->f_1.f_25 = func_383(joaat("transition"), joaat("T_TransitionUGCCoopOutroCutsceneRealTimeMP"), 1, "T_TransitionUGCCoopOutroCutsceneRealTimeMP");
 	if (Global_1901929->f_1.f_25 < 0)
 	{
 		Global_1901929->f_1.f_25 = 1;
@@ -5901,8 +5901,8 @@ void func_168()
 	{
 		Global_1901929->f_1.f_25 = 1;
 	}
-	Global_1901929->f_1.f_26 = func_384(joaat("transition"), 654424260, 0, "T_TransitionRequeueActive");
-	Global_1901929->f_1.f_27 = func_384(joaat("transition"), -637661790, 1, "T_TransitionRequeueRestricted");
+	Global_1901929->f_1.f_26 = func_384(joaat("transition"), joaat("T_TransitionRequeueActive"), 0, "T_TransitionRequeueActive");
+	Global_1901929->f_1.f_27 = func_384(joaat("transition"), joaat("T_TransitionRequeueRestricted"), 1, "T_TransitionRequeueRestricted");
 	Global_1901929->f_1.f_28 = func_383(joaat("transition"), 393570003, 90000, "T_TransitionTransitionRequeueTimeout");
 	if (Global_1901929->f_1.f_28 < 30000)
 	{
@@ -5975,7 +5975,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_35 = 0.75f;
 	}
-	Global_1901929->f_1.f_36 = func_383(joaat("transition"), -87411388, 5000, "T_TransitionPostFXTimeout");
+	Global_1901929->f_1.f_36 = func_383(joaat("transition"), joaat("T_TransitionPostFXTimeout"), 5000, "T_TransitionPostFXTimeout");
 	if (Global_1901929->f_1.f_36 < 1000)
 	{
 		Global_1901929->f_1.f_36 = 5000;
@@ -5984,7 +5984,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_36 = 5000;
 	}
-	Global_1901929->f_1.f_16 = func_383(joaat("transition"), -1001477006, 100000, "T_TransitionMatchmakingQWMMemberIdle");
+	Global_1901929->f_1.f_16 = func_383(joaat("transition"), joaat("T_TransitionMatchmakingQWMMemberIdle"), 100000, "T_TransitionMatchmakingQWMMemberIdle");
 	if (Global_1901929->f_1.f_16 < 1000)
 	{
 		Global_1901929->f_1.f_16 = 100000;
@@ -5993,7 +5993,7 @@ void func_168()
 	{
 		Global_1901929->f_1.f_16 = 100000;
 	}
-	Global_1901929->f_1.f_17 = func_384(joaat("transition"), 1377847976, 0, "T_TransitionMatchmakingRandomizeSeriesRequeue");
+	Global_1901929->f_1.f_17 = func_384(joaat("transition"), joaat("T_TransitionMatchmakingRandomizeSeriesRequeue"), 0, "T_TransitionMatchmakingRandomizeSeriesRequeue");
 }
 
 void func_169(int iParam0)
@@ -6038,8 +6038,8 @@ void func_169(int iParam0)
 
 void func_170()
 {
-	Global_1901929->f_44 = func_385(-797337544, 786689300, 75f, "NPS_DesiredSpawnMinRange");
-	Global_1901929->f_44.f_1 = func_385(-797337544, 1263044784, 125f, "NPS_DesiredSpawnMaxRange");
+	Global_1901929->f_44 = func_385(-797337544, joaat("NPS_DesiredSpawnMinRange"), 75f, "NPS_DesiredSpawnMinRange");
+	Global_1901929->f_44.f_1 = func_385(-797337544, joaat("NPS_DesiredSpawnMaxRange"), 125f, "NPS_DesiredSpawnMaxRange");
 	if (Global_1901929->f_44 < 0f)
 	{
 		Global_1901929->f_44 = 75f;
@@ -6058,8 +6058,8 @@ void func_170()
 		Global_1901929->f_44 = 75f;
 		Global_1901929->f_44.f_1 = 125f;
 	}
-	Global_1901929->f_44.f_2 = func_385(-797337544, -967190325, 75f, "NPS_GenericSeedBaseRange");
-	Global_1901929->f_44.f_3 = func_385(-797337544, 1406135090, 2f, "NPS_GenericSeedBaseScalar");
+	Global_1901929->f_44.f_2 = func_385(-797337544, joaat("NPS_GenericSeedBaseRange"), 75f, "NPS_GenericSeedBaseRange");
+	Global_1901929->f_44.f_3 = func_385(-797337544, joaat("NPS_GenericSeedBaseScalar"), 2f, "NPS_GenericSeedBaseScalar");
 	if (Global_1901929->f_44.f_2 < 0f)
 	{
 		Global_1901929->f_44.f_2 = 0f;
@@ -6076,7 +6076,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_3 = 32f;
 	}
-	Global_1901929->f_44.f_4 = func_383(-797337544, -2026295038, 3, "NPS_SpawnSearchAttempts");
+	Global_1901929->f_44.f_4 = func_383(-797337544, joaat("NPS_SpawnSearchAttempts"), 3, "NPS_SpawnSearchAttempts");
 	if (Global_1901929->f_44.f_4 < 0)
 	{
 		Global_1901929->f_44.f_4 = 3;
@@ -6085,7 +6085,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_4 = 3;
 	}
-	Global_1901929->f_44.f_5 = func_383(-797337544, 899152978, 3000, "NPS_DeathCamHoldTime_FreeRoam");
+	Global_1901929->f_44.f_5 = func_383(-797337544, joaat("NPS_DeathCamHoldTime_FreeRoam"), 3000, "NPS_DeathCamHoldTime_FreeRoam");
 	if (Global_1901929->f_44.f_5 < 0)
 	{
 		Global_1901929->f_44.f_5 = 3000;
@@ -6094,7 +6094,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_5 = 3000;
 	}
-	Global_1901929->f_44.f_6 = func_383(-797337544, 482588143, 1000, "NPS_DeathCamHoldTime_Instanced");
+	Global_1901929->f_44.f_6 = func_383(-797337544, joaat("NPS_DeathCamHoldTime_Instanced"), 1000, "NPS_DeathCamHoldTime_Instanced");
 	if (Global_1901929->f_44.f_6 < 0)
 	{
 		Global_1901929->f_44.f_6 = 1000;
@@ -6103,7 +6103,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_6 = 1000;
 	}
-	Global_1901929->f_44.f_9 = func_383(-797337544, 1341896011, 5000, "NPS_GhostVehicleTime");
+	Global_1901929->f_44.f_9 = func_383(-797337544, joaat("NPS_GhostVehicleTime"), 5000, "NPS_GhostVehicleTime");
 	if (Global_1901929->f_44.f_9 < 0)
 	{
 		Global_1901929->f_44.f_9 = 5000;
@@ -6112,7 +6112,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_9 = 5000;
 	}
-	Global_1901929->f_44.f_10 = func_383(-797337544, 103073705, 5000, "NPS_AnimalInvulnerabilityTime");
+	Global_1901929->f_44.f_10 = func_383(-797337544, joaat("NPS_AnimalInvulnerabilityTime"), 5000, "NPS_AnimalInvulnerabilityTime");
 	if (Global_1901929->f_44.f_10 < 0)
 	{
 		Global_1901929->f_44.f_10 = 5000;
@@ -6121,7 +6121,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_10 = 5000;
 	}
-	Global_1901929->f_44.f_11 = func_383(-797337544, 786899944, 5000, "NPS_SpawnInvulnerabilityTime");
+	Global_1901929->f_44.f_11 = func_383(-797337544, joaat("NPS_SpawnInvulnerabilityTime"), 5000, "NPS_SpawnInvulnerabilityTime");
 	if (Global_1901929->f_44.f_11 < 0)
 	{
 		Global_1901929->f_44.f_11 = 5000;
@@ -6130,7 +6130,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_11 = 5000;
 	}
-	Global_1901929->f_44.f_12 = func_383(-797337544, -179549414, 5000, "NPS_ValidPositionTime");
+	Global_1901929->f_44.f_12 = func_383(-797337544, joaat("NPS_ValidPositionTime"), 5000, "NPS_ValidPositionTime");
 	if (Global_1901929->f_44.f_12 < 10)
 	{
 		Global_1901929->f_44.f_12 = 5000;
@@ -6139,7 +6139,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_12 = 5000;
 	}
-	Global_1901929->f_44.f_13 = func_383(-797337544, -1924693859, 10000, "NPS_ScanRequestTimeOut");
+	Global_1901929->f_44.f_13 = func_383(-797337544, joaat("NPS_ScanRequestTimeOut"), 10000, "NPS_ScanRequestTimeOut");
 	if (Global_1901929->f_44.f_13 < 1000)
 	{
 		Global_1901929->f_44.f_13 = 10000;
@@ -6148,7 +6148,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_13 = 10000;
 	}
-	Global_1901929->f_44.f_14 = func_383(-797337544, 1332430638, 300000, "NPS_TimeUntilNextRespawnSave");
+	Global_1901929->f_44.f_14 = func_383(-797337544, joaat("NPS_TimeUntilNextRespawnSave"), 300000, "NPS_TimeUntilNextRespawnSave");
 	if (Global_1901929->f_44.f_14 < 60000)
 	{
 		Global_1901929->f_44.f_14 = 300000;
@@ -6157,7 +6157,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_14 = 300000;
 	}
-	Global_1901929->f_44.f_7 = func_383(-797337544, 739082073, 500, "NPS_ArbitraryVehicleSyncTime");
+	Global_1901929->f_44.f_7 = func_383(-797337544, joaat("NPS_ArbitraryVehicleSyncTime"), 500, "NPS_ArbitraryVehicleSyncTime");
 	if (Global_1901929->f_44.f_7 < 0)
 	{
 		Global_1901929->f_44.f_7 = 500;
@@ -6166,7 +6166,7 @@ void func_170()
 	{
 		Global_1901929->f_44.f_7 = 500;
 	}
-	Global_1901929->f_44.f_8 = func_383(-797337544, -1950073331, 2000, "NPS_ArbitraryVehicleSpectatedTime");
+	Global_1901929->f_44.f_8 = func_383(-797337544, joaat("NPS_ArbitraryVehicleSpectatedTime"), 2000, "NPS_ArbitraryVehicleSpectatedTime");
 	if (Global_1901929->f_44.f_8 < 0)
 	{
 		Global_1901929->f_44.f_8 = 2000;
@@ -6175,10 +6175,10 @@ void func_170()
 	{
 		Global_1901929->f_44.f_8 = 2000;
 	}
-	Global_1901929->f_44.f_15 = func_383(-797337544, 1880281512, 1, "NPS_AllowAmbientPedLootingWhenWanted");
-	Global_1901929->f_44.f_26 = func_383(-797337544, -1036045213, 300, "NET_FLOW_STORY_COOLDOWN");
-	Global_1901929->f_44.f_27 = func_383(-797337544, -621667332, 300, "NET_FLOW_STORY_COOLDOWN_REPLAY");
-	Global_1901929->f_44.f_28 = func_383(-797337544, 1042967756, 10000, "NPS_Kick_Alert_Failsafe");
+	Global_1901929->f_44.f_15 = func_383(-797337544, joaat("NPS_AllowAmbientPedLootingWhenWanted"), 1, "NPS_AllowAmbientPedLootingWhenWanted");
+	Global_1901929->f_44.f_26 = func_383(-797337544, joaat("NET_FLOW_STORY_COOLDOWN"), 300, "NET_FLOW_STORY_COOLDOWN");
+	Global_1901929->f_44.f_27 = func_383(-797337544, joaat("NET_FLOW_STORY_COOLDOWN_REPLAY"), 300, "NET_FLOW_STORY_COOLDOWN_REPLAY");
+	Global_1901929->f_44.f_28 = func_383(-797337544, joaat("NPS_Kick_Alert_Failsafe"), 10000, "NPS_Kick_Alert_Failsafe");
 	func_388();
 }
 
@@ -6217,7 +6217,7 @@ void func_171(int iParam0)
 
 void func_172()
 {
-	Global_1901929->f_73 = func_383(-238807603, 1245095171, 240000, "TIME_FOR_FAIL_SAFE_STREAM_VOLUME");
+	Global_1901929->f_73 = func_383(-238807603, joaat("TIME_FOR_FAIL_SAFE_STREAM_VOLUME"), 240000, "TIME_FOR_FAIL_SAFE_STREAM_VOLUME");
 	if (Global_1901929->f_73 < 0)
 	{
 		Global_1901929->f_73 = 240000;
@@ -6226,7 +6226,7 @@ void func_172()
 	{
 		Global_1901929->f_73 = 240000;
 	}
-	Global_1901929->f_73.f_1 = func_383(-238807603, -1452564813, 240000, "TIME_FOR_FAIL_SAFE_LOAD_SCENE");
+	Global_1901929->f_73.f_1 = func_383(-238807603, joaat("TIME_FOR_FAIL_SAFE_LOAD_SCENE"), 240000, "TIME_FOR_FAIL_SAFE_LOAD_SCENE");
 	if (Global_1901929->f_73.f_1 < 0)
 	{
 		Global_1901929->f_73.f_1 = 240000;
@@ -6235,7 +6235,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_1 = 240000;
 	}
-	Global_1901929->f_73.f_2 = func_383(-238807603, 1487950948, 30000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_SHORT");
+	Global_1901929->f_73.f_2 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_SHORT"), 30000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_SHORT");
 	if (Global_1901929->f_73.f_2 < 0)
 	{
 		Global_1901929->f_73.f_2 = 30000;
@@ -6244,7 +6244,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_2 = 30000;
 	}
-	Global_1901929->f_73.f_3 = func_383(-238807603, -1616099228, 60000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_MID");
+	Global_1901929->f_73.f_3 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_MID"), 60000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_MID");
 	if (Global_1901929->f_73.f_3 < 0)
 	{
 		Global_1901929->f_73.f_3 = 60000;
@@ -6253,7 +6253,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_3 = 60000;
 	}
-	Global_1901929->f_73.f_4 = func_383(-238807603, -1527503058, 120000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_LONG");
+	Global_1901929->f_73.f_4 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_LONG"), 120000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_STREAMING_LONG");
 	if (Global_1901929->f_73.f_4 < 0)
 	{
 		Global_1901929->f_73.f_4 = 120000;
@@ -6262,7 +6262,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_4 = 120000;
 	}
-	Global_1901929->f_73.f_5 = func_383(-238807603, -970036100, 1000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_S");
+	Global_1901929->f_73.f_5 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_S"), 1000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_S");
 	if (Global_1901929->f_73.f_5 < 0)
 	{
 		Global_1901929->f_73.f_5 = 1000;
@@ -6271,7 +6271,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_5 = 1000;
 	}
-	Global_1901929->f_73.f_6 = func_383(-238807603, -1618993396, 1500, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_M");
+	Global_1901929->f_73.f_6 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_M"), 1500, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_M");
 	if (Global_1901929->f_73.f_6 < 0)
 	{
 		Global_1901929->f_73.f_6 = 1500;
@@ -6280,7 +6280,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_6 = 1500;
 	}
-	Global_1901929->f_73.f_7 = func_383(-238807603, -1329708664, 2000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_L");
+	Global_1901929->f_73.f_7 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_L"), 2000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_L");
 	if (Global_1901929->f_73.f_7 < 0)
 	{
 		Global_1901929->f_73.f_7 = 2000;
@@ -6289,7 +6289,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_7 = 2000;
 	}
-	Global_1901929->f_73.f_8 = func_383(-238807603, 1414789715, 2500, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_XL");
+	Global_1901929->f_73.f_8 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_XL"), 2500, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_XL");
 	if (Global_1901929->f_73.f_8 < 0)
 	{
 		Global_1901929->f_73.f_8 = 2500;
@@ -6298,7 +6298,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_8 = 2500;
 	}
-	Global_1901929->f_73.f_9 = func_383(-238807603, 1257546735, 3000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_XXL");
+	Global_1901929->f_73.f_9 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_XXL"), 3000, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_SYNC_XXL");
 	if (Global_1901929->f_73.f_9 < 0)
 	{
 		Global_1901929->f_73.f_9 = 3000;
@@ -6307,7 +6307,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_9 = 3000;
 	}
-	Global_1901929->f_73.f_10 = func_383(-238807603, 342446520, 0, "TIME_TO_WAIT_SPECTATOR_LIFETIME");
+	Global_1901929->f_73.f_10 = func_383(-238807603, joaat("TIME_TO_WAIT_SPECTATOR_LIFETIME"), 0, "TIME_TO_WAIT_SPECTATOR_LIFETIME");
 	if (Global_1901929->f_73.f_10 < 0)
 	{
 		Global_1901929->f_73.f_10 = 0;
@@ -6316,7 +6316,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_10 = 0;
 	}
-	Global_1901929->f_73.f_11 = func_383(-238807603, -956896417, 15000, "TIME_TO_WAIT_SPECTATOR_TIMEOUT");
+	Global_1901929->f_73.f_11 = func_383(-238807603, joaat("TIME_TO_WAIT_SPECTATOR_TIMEOUT"), 15000, "TIME_TO_WAIT_SPECTATOR_TIMEOUT");
 	if (Global_1901929->f_73.f_11 < 0)
 	{
 		Global_1901929->f_73.f_11 = 15000;
@@ -6325,7 +6325,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_11 = 15000;
 	}
-	Global_1901929->f_73.f_12 = func_383(-238807603, -634661685, 4000, "TIME_TO_WAIT_SPECTATOR_HOLD_ON_BODY");
+	Global_1901929->f_73.f_12 = func_383(-238807603, joaat("TIME_TO_WAIT_SPECTATOR_HOLD_ON_BODY"), 4000, "TIME_TO_WAIT_SPECTATOR_HOLD_ON_BODY");
 	if (Global_1901929->f_73.f_12 < 0)
 	{
 		Global_1901929->f_73.f_12 = 4000;
@@ -6334,7 +6334,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_12 = 4000;
 	}
-	Global_1901929->f_73.f_13 = func_383(-238807603, -817278980, 8000, "TIME_TO_WAIT_SPECTATOR_KILLCAM_HOLD_ON_BODY");
+	Global_1901929->f_73.f_13 = func_383(-238807603, joaat("TIME_TO_WAIT_SPECTATOR_KILLCAM_HOLD_ON_BODY"), 8000, "TIME_TO_WAIT_SPECTATOR_KILLCAM_HOLD_ON_BODY");
 	if (Global_1901929->f_73.f_13 < 0)
 	{
 		Global_1901929->f_73.f_13 = 8000;
@@ -6343,7 +6343,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_13 = 8000;
 	}
-	Global_1901929->f_73.f_14 = func_383(-238807603, -75640352, 0, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_CONTEXTS");
+	Global_1901929->f_73.f_14 = func_383(-238807603, joaat("TIME_TO_WAIT_ARBITRARY_TIMER_FOR_CONTEXTS"), 0, "TIME_TO_WAIT_ARBITRARY_TIMER_FOR_CONTEXTS");
 	if (Global_1901929->f_73.f_14 < 0)
 	{
 		Global_1901929->f_73.f_14 = 0;
@@ -6352,7 +6352,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_14 = 0;
 	}
-	Global_1901929->f_73.f_16 = func_383(-238807603, 1749978647, 570, "USE_CONTEXT_RESPAWN_IF_UCM_AUTO_FILL_THEN_HOLD_TIME");
+	Global_1901929->f_73.f_16 = func_383(-238807603, joaat("USE_CONTEXT_RESPAWN_IF_UCM_AUTO_FILL_THEN_HOLD_TIME"), 570, "USE_CONTEXT_RESPAWN_IF_UCM_AUTO_FILL_THEN_HOLD_TIME");
 	if (Global_1901929->f_73.f_16 < 100)
 	{
 		Global_1901929->f_73.f_16 = 570;
@@ -6361,7 +6361,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_16 = 570;
 	}
-	Global_1901929->f_73.f_17 = func_383(-238807603, -340460211, 15000, "USE_CONTEXT_RESPAWN_IF_UCM_AUTO_FILL_THEN_FILL_TIME");
+	Global_1901929->f_73.f_17 = func_383(-238807603, joaat("USE_CONTEXT_RESPAWN_IF_UCM_AUTO_FILL_THEN_FILL_TIME"), 15000, "USE_CONTEXT_RESPAWN_IF_UCM_AUTO_FILL_THEN_FILL_TIME");
 	if (Global_1901929->f_73.f_17 < 100)
 	{
 		Global_1901929->f_73.f_17 = 15000;
@@ -6370,7 +6370,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_17 = 15000;
 	}
-	Global_1901929->f_73.f_18 = func_383(-238807603, 987588206, 570, "USE_CONTEXT_RESPAWN_IF_NOT_UCM_AUTO_FILL_THEN_HOLD_TIME");
+	Global_1901929->f_73.f_18 = func_383(-238807603, joaat("USE_CONTEXT_RESPAWN_IF_NOT_UCM_AUTO_FILL_THEN_HOLD_TIME"), 570, "USE_CONTEXT_RESPAWN_IF_NOT_UCM_AUTO_FILL_THEN_HOLD_TIME");
 	if (Global_1901929->f_73.f_18 < 100)
 	{
 		Global_1901929->f_73.f_18 = 570;
@@ -6379,7 +6379,7 @@ void func_172()
 	{
 		Global_1901929->f_73.f_18 = 570;
 	}
-	Global_1901929->f_73.f_19 = func_383(-238807603, 1807889463, 4000, "USE_CONTEXT_RESPAWN_IF_NOT_UCM_AUTO_FILL_THEN_FILL_TIME");
+	Global_1901929->f_73.f_19 = func_383(-238807603, joaat("USE_CONTEXT_RESPAWN_IF_NOT_UCM_AUTO_FILL_THEN_FILL_TIME"), 4000, "USE_CONTEXT_RESPAWN_IF_NOT_UCM_AUTO_FILL_THEN_FILL_TIME");
 	if (Global_1901929->f_73.f_19 < 100)
 	{
 		Global_1901929->f_73.f_19 = 4000;
@@ -6415,12 +6415,12 @@ void func_173(int iParam0)
 
 void func_174()
 {
-	Global_1901929->f_38 = func_383(1497760498, -1005424415, 0, "BGS_ExpectedVersion");
-	Global_1901929->f_38.f_1 = func_383(1497760498, -2117171926, 0, "BGS_POSIX_TimeForNextKick");
-	Global_1901929->f_38.f_2 = func_383(1497760498, -1628711375, 0, "BGS_SpecialEvent");
-	Global_1901929->f_38.f_3 = func_383(1497760498, 1748514001, 0, "BGS_POSIX_SpecialEventStart");
-	Global_1901929->f_38.f_4 = func_383(1497760498, -1940141039, 0, "BGS_POSIX_SpecialEventEnd");
-	Global_1901929->f_38.f_5 = func_383(1497760498, -1888483188, 0, "BGS_SpecialEventBitset");
+	Global_1901929->f_38 = func_383(1497760498, joaat("BGS_ExpectedVersion"), 0, "BGS_ExpectedVersion");
+	Global_1901929->f_38.f_1 = func_383(1497760498, joaat("BGS_POSIX_TimeForNextKick"), 0, "BGS_POSIX_TimeForNextKick");
+	Global_1901929->f_38.f_2 = func_383(1497760498, joaat("BGS_SpecialEvent"), 0, "BGS_SpecialEvent");
+	Global_1901929->f_38.f_3 = func_383(1497760498, joaat("BGS_POSIX_SpecialEventStart"), 0, "BGS_POSIX_SpecialEventStart");
+	Global_1901929->f_38.f_4 = func_383(1497760498, joaat("BGS_POSIX_SpecialEventEnd"), 0, "BGS_POSIX_SpecialEventEnd");
+	Global_1901929->f_38.f_5 = func_383(1497760498, joaat("BGS_SpecialEventBitset"), 0, "BGS_SpecialEventBitset");
 }
 
 void func_175(int iParam0)
@@ -6443,27 +6443,27 @@ void func_176()
 		Global_1901929->f_93[iVar0] = func_385(1847284070, func_389(iVar0), 500f, &uVar1);
 		iVar0++;
 	}
-	Global_1901929->f_93.f_3 = func_385(1847284070, 1477989500, 0.65f, "NET_HUD_VOICE_CHAT_FADE_START_THRESHOLD");
-	Global_1901929->f_93.f_4 = func_383(1847284070, 159908171, 5000, "NET_HUD_VOICE_CHAT_ALLOW_ON_BLACK_RESPAWN_SCREEN_MS");
-	Global_1901929->f_93.f_5 = func_385(1847284070, -1310511072, 40f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_DISTANT");
-	Global_1901929->f_93.f_6 = func_385(1847284070, -1938155903, 20f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_CLOSE");
-	Global_1901929->f_93.f_7 = func_385(1847284070, 1423723210, 50f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_ALLY_CLOSE");
-	Global_1901929->f_93.f_8 = func_385(1847284070, 1200114910, 75f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_ALLY_DISTANT");
-	Global_1901929->f_93.f_9 = func_385(1847284070, -241229967, 30f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_FREEROAM_ON_FOOT");
-	Global_1901929->f_93.f_10 = func_385(1847284070, -649610895, 40f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_FREEROAM_IN_VEHICLE");
-	Global_1901929->f_93.f_11 = func_385(1847284070, -470928170, 300f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_IN_SCOPE");
-	Global_1901929->f_93.f_12 = func_385(1847284070, -88094229, 50f, "NET_HUD_GAMERTAG_VISIBILITY_PERCENTAGE");
-	Global_1901929->f_93.f_13 = func_385(1847284070, -323509602, 85f, "NET_HUD_GAMERTAG_VISIBILITY_PERCENTAGE_IN_COVER");
-	Global_1901929->f_93.f_14 = func_383(1847284070, 538583333, 3, "NET_HUD_HOSTILITY_ENEMY_EVENT_WARNING_SHOT_SECONDS");
-	Global_1901929->f_93.f_15 = func_383(1847284070, -1316778079, 15, "NET_HUD_HOSTILITY_ENEMY_EVENT_AIMING_SECONDS");
-	Global_1901929->f_93.f_16 = func_383(1847284070, 1708657727, 60, "NET_HUD_HOSTILITY_ENEMY_EVENT_DAMAGE_SECONDS");
-	Global_1901929->f_93.f_17 = func_383(1847284070, -1739183470, 180, "NET_HUD_HOSTILITY_ENEMY_EVENT_KILLED_SECONDS");
-	Global_1901929->f_93.f_18 = func_385(1847284070, 1765474279, 100f, "NET_HUD_HOSTILITY_ENEMY_EVENT_PERSIST_DISTANCE");
-	Global_1901929->f_93.f_19 = func_385(1847284070, 981709315, 20f, "NET_HUD_HOSTILITY_WARNING_SHOT_DISTANCE");
-	Global_1901929->f_93.f_20 = func_383(1847284070, 406587654, 1000, "NET_HUD_HOSTILITY_WARNING_SHOT_RUMBLE_MS");
-	Global_1901929->f_93.f_21 = func_383(1847284070, 642598680, 100, "NET_HUD_HOSTILITY_WARNING_SHOT_RUMBLE_INTENSITY");
-	Global_1901929->f_93.f_22 = func_383(1847284070, -1654226076, 15, "NET_HUD_BLIP_KEEP_VISIBLE_AFTER_BINOCULAR_SECONDS");
-	Global_1901929->f_93.f_23 = func_383(1847284070, 1036557954, 2, "NET_HUD_NUM_PLAYERS_TO_UPDATE_PER_FRAME");
+	Global_1901929->f_93.f_3 = func_385(1847284070, joaat("NET_HUD_VOICE_CHAT_FADE_START_THRESHOLD"), 0.65f, "NET_HUD_VOICE_CHAT_FADE_START_THRESHOLD");
+	Global_1901929->f_93.f_4 = func_383(1847284070, joaat("NET_HUD_VOICE_CHAT_ALLOW_ON_BLACK_RESPAWN_SCREEN_MS"), 5000, "NET_HUD_VOICE_CHAT_ALLOW_ON_BLACK_RESPAWN_SCREEN_MS");
+	Global_1901929->f_93.f_5 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_DISTANT"), 40f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_DISTANT");
+	Global_1901929->f_93.f_6 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_CLOSE"), 20f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_CLOSE");
+	Global_1901929->f_93.f_7 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_ALLY_CLOSE"), 50f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_ALLY_CLOSE");
+	Global_1901929->f_93.f_8 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_ALLY_DISTANT"), 75f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_ALLY_DISTANT");
+	Global_1901929->f_93.f_9 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_FREEROAM_ON_FOOT"), 30f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_FREEROAM_ON_FOOT");
+	Global_1901929->f_93.f_10 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_FREEROAM_IN_VEHICLE"), 40f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_FREEROAM_IN_VEHICLE");
+	Global_1901929->f_93.f_11 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_DIST_IN_SCOPE"), 300f, "NET_HUD_GAMERTAG_VISIBILITY_DIST_IN_SCOPE");
+	Global_1901929->f_93.f_12 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_PERCENTAGE"), 50f, "NET_HUD_GAMERTAG_VISIBILITY_PERCENTAGE");
+	Global_1901929->f_93.f_13 = func_385(1847284070, joaat("NET_HUD_GAMERTAG_VISIBILITY_PERCENTAGE_IN_COVER"), 85f, "NET_HUD_GAMERTAG_VISIBILITY_PERCENTAGE_IN_COVER");
+	Global_1901929->f_93.f_14 = func_383(1847284070, joaat("NET_HUD_HOSTILITY_ENEMY_EVENT_WARNING_SHOT_SECONDS"), 3, "NET_HUD_HOSTILITY_ENEMY_EVENT_WARNING_SHOT_SECONDS");
+	Global_1901929->f_93.f_15 = func_383(1847284070, joaat("NET_HUD_HOSTILITY_ENEMY_EVENT_AIMING_SECONDS"), 15, "NET_HUD_HOSTILITY_ENEMY_EVENT_AIMING_SECONDS");
+	Global_1901929->f_93.f_16 = func_383(1847284070, joaat("NET_HUD_HOSTILITY_ENEMY_EVENT_DAMAGE_SECONDS"), 60, "NET_HUD_HOSTILITY_ENEMY_EVENT_DAMAGE_SECONDS");
+	Global_1901929->f_93.f_17 = func_383(1847284070, joaat("NET_HUD_HOSTILITY_ENEMY_EVENT_KILLED_SECONDS"), 180, "NET_HUD_HOSTILITY_ENEMY_EVENT_KILLED_SECONDS");
+	Global_1901929->f_93.f_18 = func_385(1847284070, joaat("NET_HUD_HOSTILITY_ENEMY_EVENT_PERSIST_DISTANCE"), 100f, "NET_HUD_HOSTILITY_ENEMY_EVENT_PERSIST_DISTANCE");
+	Global_1901929->f_93.f_19 = func_385(1847284070, joaat("NET_HUD_HOSTILITY_WARNING_SHOT_DISTANCE"), 20f, "NET_HUD_HOSTILITY_WARNING_SHOT_DISTANCE");
+	Global_1901929->f_93.f_20 = func_383(1847284070, joaat("NET_HUD_HOSTILITY_WARNING_SHOT_RUMBLE_MS"), 1000, "NET_HUD_HOSTILITY_WARNING_SHOT_RUMBLE_MS");
+	Global_1901929->f_93.f_21 = func_383(1847284070, joaat("NET_HUD_HOSTILITY_WARNING_SHOT_RUMBLE_INTENSITY"), 100, "NET_HUD_HOSTILITY_WARNING_SHOT_RUMBLE_INTENSITY");
+	Global_1901929->f_93.f_22 = func_383(1847284070, joaat("NET_HUD_BLIP_KEEP_VISIBLE_AFTER_BINOCULAR_SECONDS"), 15, "NET_HUD_BLIP_KEEP_VISIBLE_AFTER_BINOCULAR_SECONDS");
+	Global_1901929->f_93.f_23 = func_383(1847284070, joaat("NET_HUD_NUM_PLAYERS_TO_UPDATE_PER_FRAME"), 2, "NET_HUD_NUM_PLAYERS_TO_UPDATE_PER_FRAME");
 	Global_1901929->f_93.f_3 = func_390(Global_1901929->f_93.f_3, 0f, 1f);
 	Global_1901929->f_93.f_4 = func_391(Global_1901929->f_93.f_4, 0, 999999999);
 	Global_1901929->f_93.f_5 = func_390(Global_1901929->f_93.f_5, 0f, 100f);
@@ -6520,76 +6520,76 @@ void func_179(int iParam0)
 
 void func_180()
 {
-	Global_1901929->f_160 = func_383(-1712745138, 1173105255, 19, "NET_MISSION_REWARDS_MOONSHINE_LIGHT_DAMAGE_BOTTLE_THRESHOLD");
-	Global_1901929->f_160.f_1 = func_383(-1712745138, 1731725288, 10, "NET_MISSION_REWARDS_MOONSHINE_HEAVY_DAMAGE_BOTTLE_THRESHOLD");
-	Global_1901929->f_160.f_2 = func_383(-1712745138, -360056896, 10001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_LOW");
-	Global_1901929->f_160.f_3 = func_383(-1712745138, -70752350, 20001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_MEDIUM");
-	Global_1901929->f_160.f_4 = func_383(-1712745138, -82113093, 30001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_HIGH");
-	Global_1901929->f_160.f_5 = func_383(-1712745138, 1277088028, 50001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_VERY_HIGH");
-	Global_1901929->f_160.f_6 = func_383(-1712745138, -478369504, 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_LOW");
-	Global_1901929->f_160.f_7 = func_383(-1712745138, -2033123416, 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_MEDIUM");
-	Global_1901929->f_160.f_8 = func_383(-1712745138, -668547960, 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_HIGH");
-	Global_1901929->f_160.f_9 = func_383(-1712745138, -733052081, 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_VERY_HIGH");
-	Global_1901929->f_160.f_10 = func_383(-1712745138, 967076097, 900000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_LOW");
-	Global_1901929->f_160.f_11 = func_383(-1712745138, 519113985, 900000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_MEDIUM");
-	Global_1901929->f_160.f_12 = func_383(-1712745138, 2100611554, 60000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_HIGH");
-	Global_1901929->f_160.f_13 = func_383(-1712745138, 1608349883, 60000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_VERY_HIGH");
-	Global_1901929->f_160.f_14 = func_383(-1712745138, -742512389, 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_LOW");
-	Global_1901929->f_160.f_15 = func_383(-1712745138, -1239189547, 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_MEDIUM");
-	Global_1901929->f_160.f_16 = func_383(-1712745138, -1252992983, 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_HIGH");
-	Global_1901929->f_160.f_17 = func_383(-1712745138, 473725564, 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_VERY_HIGH");
-	Global_1901929->f_160.f_18 = func_383(-1712745138, 469029470, 60000, "NET_FETCH_MANAGER_BOUNTY_UGC_COOLDOWN_TIMER_MS");
-	Global_1901929->f_160.f_19 = func_385(-1712745138, -2125555674, 0.1f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_LOW");
-	Global_1901929->f_160.f_20 = func_385(-1712745138, -2088634839, 0.2f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_MEDIUM");
-	Global_1901929->f_160.f_21 = func_385(-1712745138, 794285810, 0.3f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_HIGH");
-	Global_1901929->f_160.f_22 = func_385(-1712745138, 1981722894, 0.4f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_VERY_HIGH");
-	Global_1901929->f_160.f_23 = func_385(-1712745138, -749297617, 200f, "NET_FETCH_MANAGER_BOUNTY_LAUNCH_VERY_HIGH_DISTANCE");
-	Global_1901929->f_160.f_24 = func_385(-1712745138, -371788984, 2500f, "NET_FETCH_MANAGER_BOUNTY_LAUNCH_VERY_HIGH_MAX_JAIL_DISTANCE");
-	Global_1901929->f_160.f_25 = func_385(-1712745138, 89451157, 600f, "NET_FETCH_MANAGER_BOUNTY_PVP_TARGET_SELECTION_DISTANCE");
-	Global_1901929->f_160.f_26 = func_385(-1712745138, -1255238924, 300f, "NET_NET_FETCH_MANAGER_BOUNTY_PVP_TARGET_ESCAPE_DISTANCE");
-	Global_1901929->f_160.f_27 = func_384(-1712745138, -22157813, 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_LOW");
-	Global_1901929->f_160.f_28 = func_384(-1712745138, 1724109719, 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_MEDIUM");
-	Global_1901929->f_160.f_29 = func_384(-1712745138, 1066387590, 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_HIGH");
-	Global_1901929->f_160.f_30 = func_384(-1712745138, -81920209, 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_VERY_HIGH");
-	Global_1901929->f_160.f_31 = func_384(-1712745138, -1768801463, 1, "NET_FETCH_MANAGER_DISABLE_CRIMES_AGAINST_LAW");
-	Global_1901929->f_160.f_32 = func_385(-1712745138, -2046069958, 250f, "NET_FETCH_MANAGER_BLIP_DISTANCE_HIDEOUT");
-	Global_1901929->f_160.f_33 = func_385(-1712745138, -1202114306, 250f, "NET_FETCH_MANAGER_BLIP_DISTANCE_RUSTLING");
-	Global_1901929->f_160.f_34 = func_385(-1712745138, -709791559, 70f, "NET_FETCH_MANAGER_VOLUME_LOCK_RADIUS");
-	Global_1901929->f_160.f_35 = func_385(-1712745138, -482526544, 25f, "NET_FETCH_MANAGER_VOLUME_LOCK_EXTRA_RADIUS");
-	Global_1901929->f_160.f_36 = func_383(-1712745138, 2023243726, 50, "NET_FETCH_MANAGER_BUSINESS_RAID_WEIGHT_BASE_DEFAULT");
-	Global_1901929->f_160.f_38 = func_383(-1712745138, 1325872703, 50, "NET_FETCH_MANAGER_BUSINESS_RAID_CAMP_RAID_WEIGHT");
-	Global_1901929->f_160.f_39 = func_383(-1712745138, 155851841, 50, "NET_FETCH_MANAGER_BUSINESS_RAID_KIDNAPPING_WEIGHT");
-	Global_1901929->f_160.f_37 = func_383(-1712745138, -1204380937, 30, "NET_FETCH_MANAGER_BUSINESS_RAID_WEIGHT_REDUCTION_BASE");
-	Global_1901929->f_160.f_40 = func_383(-1712745138, -846024416, 6, "NET_FETCH_MANAGER_MOONSHINE__GOODS_THRESHOLD_LOW");
-	Global_1901929->f_160.f_41 = func_383(-1712745138, -1921553996, 14, "NET_FETCH_MANAGER_MOONSHINE__GOODS_THRESHOLD_HIGH");
-	Global_1901929->f_160.f_42 = func_385(-1712745138, 916139451, 3000f, "NET_FETCH_MANAGER_MOONSHINE__MINIMUM_LAUNCH_DISTANCE");
-	Global_1901929->f_160.f_43 = func_385(-1712745138, 708367096, 30f, "NET_FETCH_MANAGER_MOONSHINE__PERCENT_CHANCE_LOW");
-	Global_1901929->f_160.f_44 = func_385(-1712745138, 389572114, 50f, "NET_FETCH_MANAGER_MOONSHINE__PERCENT_CHANCE_HIGH");
-	Global_1901929->f_160.f_45 = func_383(-1712745138, 606846658, 15, "NET_FETCH_MANAGER_CAMP_RAID_HIGH_SUPPLY_WEIGHT_MODIFIER");
-	Global_1901929->f_160.f_46 = func_383(-1712745138, -1810243811, 30, "NET_FETCH_MANAGER_CAMP_RAID_SUPPLY_THRESHOLD_LOW");
-	Global_1901929->f_160.f_47 = func_383(-1712745138, 276386500, 70, "NET_FETCH_MANAGER_CAMP_RAID_SUPPLY_THRESHOLD_HIGH");
-	Global_1901929->f_160.f_48 = func_383(-1712745138, 645233081, 30, "NET_FETCH_MANAGER_CAMP_RAID_GOODS_THRESHOLD_LOW");
-	Global_1901929->f_160.f_49 = func_383(-1712745138, -737520467, 70, "NET_FETCH_MANAGER_CAMP_RAID_GOODS_THRESHOLD_HIGH");
-	Global_1901929->f_160.f_52 = func_383(-1712745138, 531626225, 3600000, "NET_FETCH_MANAGER_CAMP_RAID_CHECK_TIMER_MS");
-	Global_1901929->f_160.f_53 = func_383(-1712745138, 1973850463, 3600000, "NET_FETCH_MANAGER_CAMP_RAID__COOLDOWN_TIMER_MS");
-	Global_1901929->f_160.f_54 = func_383(-1712745138, 696410192, 3600000, "NET_FETCH_MANAGER_CAMP_RAID__POSSE_COOLDOWN_TIMER_MS");
-	Global_1901929->f_160.f_55 = func_383(-1712745138, -2076192241, 600000, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_LOW");
-	Global_1901929->f_160.f_56 = func_383(-1712745138, -990842351, 750000, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_MEDIUM");
-	Global_1901929->f_160.f_57 = func_383(-1712745138, -827154608, 900000, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_HIGH");
-	Global_1901929->f_160.f_58 = func_385(-1712745138, -582668145, 3000f, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_MINIMUM_LAUNCH_DISTANCE");
-	Global_1901929->f_160.f_50 = func_385(-1712745138, 1209127393, 0.3f, "NET_FETCH_MANAGER_CAMP_RAID_PERCENT_CHANCE_LOW");
-	Global_1901929->f_160.f_51 = func_385(-1712745138, -499842241, 0.5f, "NET_FETCH_MANAGER_CAMP_RAID_PERCENT_CHANCE_HIGH");
-	Global_1901929->f_160.f_59 = func_383(-1712745138, -1687724047, 1800000, "NET_FETCH_MANAGER_CAMP_SELL_PVP_COOLDOWN_MS");
-	Global_1901929->f_160.f_60 = func_385(-1712745138, 388102920, 0.25f, "NET_FETCH_MANAGER_STEER_BIAS_SLIGHT_DRUNK");
-	Global_1901929->f_160.f_61 = func_385(-1712745138, -781324239, 0.35f, "NET_FETCH_MANAGER_STEER_BIAS_MODERATE_DRUNK");
-	Global_1901929->f_160.f_62 = func_385(-1712745138, 1559368217, 0.45f, "NET_FETCH_MANAGER_STEER_BIAS_VERY_DRUNK");
-	Global_1901929->f_160.f_63 = func_385(-1712745138, 1236995590, 0.1f, "NET_FETCH_MANAGER_MIN_STEER_BIAS_SLIGHT_DRUNK");
-	Global_1901929->f_160.f_64 = func_385(-1712745138, -1155433061, 0.2f, "NET_FETCH_MANAGER_MIN_STEER_BIAS_MODERATE_DRUNK");
-	Global_1901929->f_160.f_63 = func_385(-1712745138, 2081150345, 0.3f, "NET_FETCH_MANAGER_MIN_STEER_BIAS_VERY_DRUNK");
-	Global_1901929->f_160.f_66 = func_383(-1712745138, -208337282, 90000, "NET_FETCH_MANAGER_DRUNK_STAGE_DURATION_MS");
-	Global_1901929->f_160.f_67 = func_383(-1712745138, -1079479044, 3000, "NET_FETCH_MANAGER_PROP_SET_CLEAR_TIMEOUT_MS");
-	Global_1901929->f_160.f_68 = func_383(-1712745138, 1983707227, 5000, "NET_FETCH_MANAGER_CUTSCENE_STREAM_TIMEOUT_MS");
-	Global_1901929->f_160.f_69 = func_383(-1712745138, 868803588, 20000, "NET_FETCH_MANAGER_CUTSCENE_PLAYING_SHOT_TIMEOUT_MS");
+	Global_1901929->f_160 = func_383(joaat("Fetch"), joaat("NET_MISSION_REWARDS_MOONSHINE_LIGHT_DAMAGE_BOTTLE_THRESHOLD"), 19, "NET_MISSION_REWARDS_MOONSHINE_LIGHT_DAMAGE_BOTTLE_THRESHOLD");
+	Global_1901929->f_160.f_1 = func_383(joaat("Fetch"), joaat("NET_MISSION_REWARDS_MOONSHINE_HEAVY_DAMAGE_BOTTLE_THRESHOLD"), 10, "NET_MISSION_REWARDS_MOONSHINE_HEAVY_DAMAGE_BOTTLE_THRESHOLD");
+	Global_1901929->f_160.f_2 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_LOW"), 10001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_LOW");
+	Global_1901929->f_160.f_3 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_MEDIUM"), 20001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_MEDIUM");
+	Global_1901929->f_160.f_4 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_HIGH"), 30001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_HIGH");
+	Global_1901929->f_160.f_5 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_VERY_HIGH"), 50001, "NET_FETCH_MANAGER_BOUNTY_CASH_THRESHOLD_VERY_HIGH");
+	Global_1901929->f_160.f_6 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_LOW"), 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_LOW");
+	Global_1901929->f_160.f_7 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_MEDIUM"), 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_MEDIUM");
+	Global_1901929->f_160.f_8 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_HIGH"), 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_HIGH");
+	Global_1901929->f_160.f_9 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_VERY_HIGH"), 300000, "NET_FETCH_MANAGER_BOUNTY_CHECK_TIMER_MS_VERY_HIGH");
+	Global_1901929->f_160.f_10 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_LOW"), 900000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_LOW");
+	Global_1901929->f_160.f_11 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_MEDIUM"), 900000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_MEDIUM");
+	Global_1901929->f_160.f_12 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_HIGH"), 60000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_HIGH");
+	Global_1901929->f_160.f_13 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_VERY_HIGH"), 60000, "NET_FETCH_MANAGER_BOUNTY_COOLDOWN_TIMER_MS_VERY_HIGH");
+	Global_1901929->f_160.f_14 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_LOW"), 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_LOW");
+	Global_1901929->f_160.f_15 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_MEDIUM"), 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_MEDIUM");
+	Global_1901929->f_160.f_16 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_HIGH"), 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_HIGH");
+	Global_1901929->f_160.f_17 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_VERY_HIGH"), 60000, "NET_FETCH_MANAGER_BOUNTY_POSSE_COOLDOWN_TIMER_MS_VERY_HIGH");
+	Global_1901929->f_160.f_18 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_UGC_COOLDOWN_TIMER_MS"), 60000, "NET_FETCH_MANAGER_BOUNTY_UGC_COOLDOWN_TIMER_MS");
+	Global_1901929->f_160.f_19 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_LOW"), 0.1f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_LOW");
+	Global_1901929->f_160.f_20 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_MEDIUM"), 0.2f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_MEDIUM");
+	Global_1901929->f_160.f_21 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_HIGH"), 0.3f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_HIGH");
+	Global_1901929->f_160.f_22 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_VERY_HIGH"), 0.4f, "NET_FETCH_MANAGER_BOUNTY_PERCENT_CHANCE_VERY_HIGH");
+	Global_1901929->f_160.f_23 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_LAUNCH_VERY_HIGH_DISTANCE"), 200f, "NET_FETCH_MANAGER_BOUNTY_LAUNCH_VERY_HIGH_DISTANCE");
+	Global_1901929->f_160.f_24 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_LAUNCH_VERY_HIGH_MAX_JAIL_DISTANCE"), 2500f, "NET_FETCH_MANAGER_BOUNTY_LAUNCH_VERY_HIGH_MAX_JAIL_DISTANCE");
+	Global_1901929->f_160.f_25 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_PVP_TARGET_SELECTION_DISTANCE"), 600f, "NET_FETCH_MANAGER_BOUNTY_PVP_TARGET_SELECTION_DISTANCE");
+	Global_1901929->f_160.f_26 = func_385(joaat("Fetch"), -1255238924, 300f, "NET_NET_FETCH_MANAGER_BOUNTY_PVP_TARGET_ESCAPE_DISTANCE");
+	Global_1901929->f_160.f_27 = func_384(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_LOW"), 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_LOW");
+	Global_1901929->f_160.f_28 = func_384(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_MEDIUM"), 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_MEDIUM");
+	Global_1901929->f_160.f_29 = func_384(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_HIGH"), 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_HIGH");
+	Global_1901929->f_160.f_30 = func_384(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_VERY_HIGH"), 1, "NET_FETCH_MANAGER_BOUNTY_CHECK_STATE_BOUNDARIES_VERY_HIGH");
+	Global_1901929->f_160.f_31 = func_384(joaat("Fetch"), joaat("NET_FETCH_MANAGER_DISABLE_CRIMES_AGAINST_LAW"), 1, "NET_FETCH_MANAGER_DISABLE_CRIMES_AGAINST_LAW");
+	Global_1901929->f_160.f_32 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BLIP_DISTANCE_HIDEOUT"), 250f, "NET_FETCH_MANAGER_BLIP_DISTANCE_HIDEOUT");
+	Global_1901929->f_160.f_33 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BLIP_DISTANCE_RUSTLING"), 250f, "NET_FETCH_MANAGER_BLIP_DISTANCE_RUSTLING");
+	Global_1901929->f_160.f_34 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_VOLUME_LOCK_RADIUS"), 70f, "NET_FETCH_MANAGER_VOLUME_LOCK_RADIUS");
+	Global_1901929->f_160.f_35 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_VOLUME_LOCK_EXTRA_RADIUS"), 25f, "NET_FETCH_MANAGER_VOLUME_LOCK_EXTRA_RADIUS");
+	Global_1901929->f_160.f_36 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BUSINESS_RAID_WEIGHT_BASE_DEFAULT"), 50, "NET_FETCH_MANAGER_BUSINESS_RAID_WEIGHT_BASE_DEFAULT");
+	Global_1901929->f_160.f_38 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BUSINESS_RAID_CAMP_RAID_WEIGHT"), 50, "NET_FETCH_MANAGER_BUSINESS_RAID_CAMP_RAID_WEIGHT");
+	Global_1901929->f_160.f_39 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BUSINESS_RAID_KIDNAPPING_WEIGHT"), 50, "NET_FETCH_MANAGER_BUSINESS_RAID_KIDNAPPING_WEIGHT");
+	Global_1901929->f_160.f_37 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_BUSINESS_RAID_WEIGHT_REDUCTION_BASE"), 30, "NET_FETCH_MANAGER_BUSINESS_RAID_WEIGHT_REDUCTION_BASE");
+	Global_1901929->f_160.f_40 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MOONSHINE__GOODS_THRESHOLD_LOW"), 6, "NET_FETCH_MANAGER_MOONSHINE__GOODS_THRESHOLD_LOW");
+	Global_1901929->f_160.f_41 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MOONSHINE__GOODS_THRESHOLD_HIGH"), 14, "NET_FETCH_MANAGER_MOONSHINE__GOODS_THRESHOLD_HIGH");
+	Global_1901929->f_160.f_42 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MOONSHINE__MINIMUM_LAUNCH_DISTANCE"), 3000f, "NET_FETCH_MANAGER_MOONSHINE__MINIMUM_LAUNCH_DISTANCE");
+	Global_1901929->f_160.f_43 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MOONSHINE__PERCENT_CHANCE_LOW"), 30f, "NET_FETCH_MANAGER_MOONSHINE__PERCENT_CHANCE_LOW");
+	Global_1901929->f_160.f_44 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MOONSHINE__PERCENT_CHANCE_HIGH"), 50f, "NET_FETCH_MANAGER_MOONSHINE__PERCENT_CHANCE_HIGH");
+	Global_1901929->f_160.f_45 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_HIGH_SUPPLY_WEIGHT_MODIFIER"), 15, "NET_FETCH_MANAGER_CAMP_RAID_HIGH_SUPPLY_WEIGHT_MODIFIER");
+	Global_1901929->f_160.f_46 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_SUPPLY_THRESHOLD_LOW"), 30, "NET_FETCH_MANAGER_CAMP_RAID_SUPPLY_THRESHOLD_LOW");
+	Global_1901929->f_160.f_47 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_SUPPLY_THRESHOLD_HIGH"), 70, "NET_FETCH_MANAGER_CAMP_RAID_SUPPLY_THRESHOLD_HIGH");
+	Global_1901929->f_160.f_48 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_GOODS_THRESHOLD_LOW"), 30, "NET_FETCH_MANAGER_CAMP_RAID_GOODS_THRESHOLD_LOW");
+	Global_1901929->f_160.f_49 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_GOODS_THRESHOLD_HIGH"), 70, "NET_FETCH_MANAGER_CAMP_RAID_GOODS_THRESHOLD_HIGH");
+	Global_1901929->f_160.f_52 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_CHECK_TIMER_MS"), 3600000, "NET_FETCH_MANAGER_CAMP_RAID_CHECK_TIMER_MS");
+	Global_1901929->f_160.f_53 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID__COOLDOWN_TIMER_MS"), 3600000, "NET_FETCH_MANAGER_CAMP_RAID__COOLDOWN_TIMER_MS");
+	Global_1901929->f_160.f_54 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID__POSSE_COOLDOWN_TIMER_MS"), 3600000, "NET_FETCH_MANAGER_CAMP_RAID__POSSE_COOLDOWN_TIMER_MS");
+	Global_1901929->f_160.f_55 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_LOW"), 600000, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_LOW");
+	Global_1901929->f_160.f_56 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_MEDIUM"), 750000, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_MEDIUM");
+	Global_1901929->f_160.f_57 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_HIGH"), 900000, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_TIMER_MS_HIGH");
+	Global_1901929->f_160.f_58 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_MINIMUM_LAUNCH_DISTANCE"), 3000f, "NET_FETCH_MANAGER_CAMP_RAID__LAUNCH_MINIMUM_LAUNCH_DISTANCE");
+	Global_1901929->f_160.f_50 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_PERCENT_CHANCE_LOW"), 0.3f, "NET_FETCH_MANAGER_CAMP_RAID_PERCENT_CHANCE_LOW");
+	Global_1901929->f_160.f_51 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_RAID_PERCENT_CHANCE_HIGH"), 0.5f, "NET_FETCH_MANAGER_CAMP_RAID_PERCENT_CHANCE_HIGH");
+	Global_1901929->f_160.f_59 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CAMP_SELL_PVP_COOLDOWN_MS"), 1800000, "NET_FETCH_MANAGER_CAMP_SELL_PVP_COOLDOWN_MS");
+	Global_1901929->f_160.f_60 = func_385(joaat("Fetch"), 388102920, 0.25f, "NET_FETCH_MANAGER_STEER_BIAS_SLIGHT_DRUNK");
+	Global_1901929->f_160.f_61 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_STEER_BIAS_MODERATE_DRUNK"), 0.35f, "NET_FETCH_MANAGER_STEER_BIAS_MODERATE_DRUNK");
+	Global_1901929->f_160.f_62 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_STEER_BIAS_VERY_DRUNK"), 0.45f, "NET_FETCH_MANAGER_STEER_BIAS_VERY_DRUNK");
+	Global_1901929->f_160.f_63 = func_385(joaat("Fetch"), 1236995590, 0.1f, "NET_FETCH_MANAGER_MIN_STEER_BIAS_SLIGHT_DRUNK");
+	Global_1901929->f_160.f_64 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MIN_STEER_BIAS_MODERATE_DRUNK"), 0.2f, "NET_FETCH_MANAGER_MIN_STEER_BIAS_MODERATE_DRUNK");
+	Global_1901929->f_160.f_63 = func_385(joaat("Fetch"), joaat("NET_FETCH_MANAGER_MIN_STEER_BIAS_VERY_DRUNK"), 0.3f, "NET_FETCH_MANAGER_MIN_STEER_BIAS_VERY_DRUNK");
+	Global_1901929->f_160.f_66 = func_383(joaat("Fetch"), -208337282, 90000, "NET_FETCH_MANAGER_DRUNK_STAGE_DURATION_MS");
+	Global_1901929->f_160.f_67 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_PROP_SET_CLEAR_TIMEOUT_MS"), 3000, "NET_FETCH_MANAGER_PROP_SET_CLEAR_TIMEOUT_MS");
+	Global_1901929->f_160.f_68 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CUTSCENE_STREAM_TIMEOUT_MS"), 5000, "NET_FETCH_MANAGER_CUTSCENE_STREAM_TIMEOUT_MS");
+	Global_1901929->f_160.f_69 = func_383(joaat("Fetch"), joaat("NET_FETCH_MANAGER_CUTSCENE_PLAYING_SHOT_TIMEOUT_MS"), 20000, "NET_FETCH_MANAGER_CUTSCENE_PLAYING_SHOT_TIMEOUT_MS");
 	func_391(Global_1901929->f_160, 0, 20);
 	func_391(Global_1901929->f_160.f_1, 0, 20);
 	func_390(Global_1901929->f_160.f_19, 0f, 1f);
@@ -6622,71 +6622,71 @@ void func_181(int iParam0)
 
 void func_182()
 {
-	Global_1901929->f_230 = func_383(-988916868, -274644496, 20000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TOO_CLOSE");
-	Global_1901929->f_230.f_1 = func_383(-988916868, 548133692, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TOO_FAR");
-	Global_1901929->f_230.f_2 = func_383(-988916868, 334222813, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_ACTIVE_UID");
-	Global_1901929->f_230.f_3 = func_383(-988916868, 1814466578, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_PLAY_UNLOCK_LOCAL");
-	Global_1901929->f_230.f_4 = func_383(-988916868, 169638331, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_PLAY_TYPE_LOCAL");
-	Global_1901929->f_230.f_5 = func_383(-988916868, -1670566082, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_PERCENT_CHANCE");
-	Global_1901929->f_230.f_6 = func_383(-988916868, -1487308380, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_MISSION_CAN_LAUNCH");
-	Global_1901929->f_230.f_7 = func_383(-988916868, -1950852496, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CURRENT_INTERACTION");
-	Global_1901929->f_230.f_8 = func_383(-988916868, 857169378, 60000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_VOLUME_LOCK");
-	Global_1901929->f_230.f_9 = func_383(-988916868, 2145666509, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CANT_SPAWN_TRAIN");
-	Global_1901929->f_230.f_10 = func_383(-988916868, -779257315, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_FREE_SLOT");
-	Global_1901929->f_230.f_11 = func_383(-988916868, -794133600, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_VISIBLE");
-	Global_1901929->f_230.f_12 = func_383(-988916868, -912779340, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_UNLOCKED");
-	Global_1901929->f_230.f_13 = func_383(-988916868, -1015964926, 60000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NEARBY_DYNAMIC");
-	Global_1901929->f_230.f_14 = func_383(-988916868, 751268520, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_OUTSIDE_TOD");
-	Global_1901929->f_230.f_15 = func_383(-988916868, 1041779075, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_CAMP");
-	Global_1901929->f_230.f_16 = func_383(-988916868, 1519442040, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_TRAIN");
-	Global_1901929->f_230.f_17 = func_383(-988916868, 392321224, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_COOLDOWN");
-	Global_1901929->f_230.f_18 = func_383(-988916868, -1563223213, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TRAIN_COOLDOWN");
-	Global_1901929->f_230.f_19 = func_383(-988916868, 1762552684, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_MAX_PLAYERS");
-	Global_1901929->f_230.f_20 = func_383(-988916868, -1937190324, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_DELAYED");
-	Global_1901929->f_230.f_21 = func_383(-988916868, -902166246, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_INVALID_MISSION_TYPE");
-	Global_1901929->f_230.f_22 = func_383(-988916868, -952847522, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_HONOR");
-	Global_1901929->f_230.f_23 = func_383(-988916868, 1042442902, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_WANTED");
-	Global_1901929->f_230.f_24 = func_383(-988916868, -363529840, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_COMBAT");
-	Global_1901929->f_230.f_25 = func_383(-988916868, 995786782, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_SCREEN_FADED");
-	Global_1901929->f_230.f_26 = func_383(-988916868, -551518712, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CAMP_RUNNING_CONTENT");
-	Global_1901929->f_230.f_27 = func_383(-988916868, 1920978316, 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_GANG_LEADER");
-	Global_1901929->f_230.f_28 = func_383(-988916868, 100659439, 60000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CONTENT_COOLDOWN");
-	Global_1901929->f_230.f_29 = func_383(-988916868, -959670846, 60000, "NET_BEAT_MANAGER_AMBUSH_COMBAT_COOLDOWN_MS");
-	Global_1901929->f_230.f_30 = func_385(-988916868, -976864232, 0.75f, "NET_BEAT_MANAGER_PHOTOGRAPHY_RECENT_INTERACT_COOLDOWN_MOD");
-	Global_1901929->f_230.f_31 = func_385(-988916868, 442807916, 3.33f, "NET_BEAT_MANAGER_SUSPENSION_TRAP_RECENT_INTERACT_COOLDOWN_MOD");
-	Global_1901929->f_230.f_32 = func_383(-988916868, -2064039577, 0, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_SECONDS");
-	Global_1901929->f_230.f_33 = func_383(-988916868, -865246863, 0, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_MINUTES");
-	Global_1901929->f_230.f_34 = func_383(-988916868, -189534501, 0, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_HOURS");
-	Global_1901929->f_230.f_35 = func_383(-988916868, 691083152, 3, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_DAYS");
-	Global_1901929->f_230.f_36 = func_383(-988916868, 278419376, 0, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_SECONDS");
-	Global_1901929->f_230.f_37 = func_383(-988916868, 116170938, 0, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_MINUTES");
-	Global_1901929->f_230.f_38 = func_383(-988916868, 1115471523, 0, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_HOURS");
-	Global_1901929->f_230.f_39 = func_383(-988916868, 950962214, 6, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_DAYS");
-	Global_1901929->f_230.f_40 = func_383(-988916868, -1682289989, 0, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_SECONDS");
-	Global_1901929->f_230.f_41 = func_383(-988916868, -1243297637, 0, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_MINUTES");
-	Global_1901929->f_230.f_42 = func_383(-988916868, -613483896, 4, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_HOURS");
-	Global_1901929->f_230.f_43 = func_383(-988916868, -1192831470, 0, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_DAYS");
-	Global_1901929->f_230.f_44 = func_383(-988916868, -866191530, 0, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_SECONDS");
-	Global_1901929->f_230.f_45 = func_383(-988916868, -237250642, 0, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_MINUTES");
-	Global_1901929->f_230.f_46 = func_383(-988916868, 1650449268, 4, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_HOURS");
-	Global_1901929->f_230.f_47 = func_383(-988916868, 1567523392, 0, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_DAYS");
-	Global_1901929->f_230.f_48 = func_383(-988916868, -1522892620, 900000, "NET_BEAT_MANAGER_LAST_ATTEMPTED_FETCH_UNLOCK_COOLDOWN_MS");
-	Global_1901929->f_230.f_49 = func_383(-988916868, -968044174, 432000000, "NET_BEAT_MANAGER_LAST_ATTEMPTED_RE_UNLOCK_COOLDOWN_MS");
-	Global_1901929->f_230.f_50 = func_383(-988916868, -601075763, 259200000, "NET_BEAT_MANAGER_LAST_ATTEMPTED_TYPE_COOLDOWN_MS");
-	Global_1901929->f_230.f_51 = func_383(-988916868, -1216955759, 3600000, "NET_BEAT_MANAGER_PLAYER_MOONSHINER_BUSINESS_CONTENT_COOLDOWN_MS");
-	Global_1901929->f_230.f_52 = func_383(-988916868, 1208962571, 3600000, "NET_BEAT_MANAGER_NATURALIST_CONTENT_COOLDOWN_MS");
-	Global_1901929->f_230.f_53 = func_383(-988916868, 1842629966, 1080000, "NET_BEAT_MANAGER_RECENT_INTERACTION_LOCAL_COOLDOWN_MS");
-	Global_1901929->f_230.f_54 = func_383(-988916868, -2135172942, 30000, "NET_BEAT_MANAGER_PERCENT_CHANCE_COOLDOWN_MS");
-	Global_1901929->f_230.f_55 = func_385(-988916868, 1969647878, 0.6f, "NET_BEAT_MANAGER_DEFAULT_LAUNCH_PERCENT_CHANCE");
-	Global_1901929->f_230.f_56 = func_385(-988916868, -612328643, 110f, "NET_BEAT_MANAGER_LAUNCH_DISTANCE_MIN");
-	Global_1901929->f_230.f_57 = func_385(-988916868, -391861147, 250f, "NET_BEAT_MANAGER_LAUNCH_DISTANCE_MAX");
-	Global_1901929->f_230.f_58 = func_385(-988916868, 1638479399, 300f, "NET_BEAT_MANAGER_AUTO_SHUTDOWN_DISTANCE");
-	Global_1901929->f_230.f_59 = func_385(-988916868, -385270636, 550f, "NET_BEAT_MANAGER_MIN_DISTANCE_BETWEEN_BEATS");
-	Global_1901929->f_230.f_60 = func_385(-988916868, 862885922, 400f, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_RADIUS");
-	Global_1901929->f_230.f_61 = func_383(-988916868, 1358206486, 30000, "NET_BEAT_MANAGER_POST_LAUNCH_COOLDOWN_MS");
-	Global_1901929->f_230.f_62 = func_383(-988916868, 31506233, 30000, "NET_BEAT_MANAGER_SCRIPT_INACTIVE_SHUTDOWN_MS");
-	Global_1901929->f_230.f_63 = func_383(-988916868, 2073960843, 15000, "NET_BEAT_MANAGER_CONTENT_STREAM_FAILSAFE_DURATION_MS");
-	Global_1901929->f_230.f_64 = func_383(-988916868, 1164566363, 1000, "NET_BEAT_MANAGER_CONTENT_CENTER_POSITION_UPDATE_INTERVAL_MS");
+	Global_1901929->f_230 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TOO_CLOSE"), 20000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TOO_CLOSE");
+	Global_1901929->f_230.f_1 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TOO_FAR"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TOO_FAR");
+	Global_1901929->f_230.f_2 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_ACTIVE_UID"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_ACTIVE_UID");
+	Global_1901929->f_230.f_3 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_PLAY_UNLOCK_LOCAL"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_PLAY_UNLOCK_LOCAL");
+	Global_1901929->f_230.f_4 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_PLAY_TYPE_LOCAL"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_PLAY_TYPE_LOCAL");
+	Global_1901929->f_230.f_5 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_PERCENT_CHANCE"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_PERCENT_CHANCE");
+	Global_1901929->f_230.f_6 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_MISSION_CAN_LAUNCH"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_MISSION_CAN_LAUNCH");
+	Global_1901929->f_230.f_7 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CURRENT_INTERACTION"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CURRENT_INTERACTION");
+	Global_1901929->f_230.f_8 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_VOLUME_LOCK"), 60000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_VOLUME_LOCK");
+	Global_1901929->f_230.f_9 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CANT_SPAWN_TRAIN"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CANT_SPAWN_TRAIN");
+	Global_1901929->f_230.f_10 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_FREE_SLOT"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_FREE_SLOT");
+	Global_1901929->f_230.f_11 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_VISIBLE"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_VISIBLE");
+	Global_1901929->f_230.f_12 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_UNLOCKED"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_UNLOCKED");
+	Global_1901929->f_230.f_13 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NEARBY_DYNAMIC"), 60000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NEARBY_DYNAMIC");
+	Global_1901929->f_230.f_14 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_OUTSIDE_TOD"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_OUTSIDE_TOD");
+	Global_1901929->f_230.f_15 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_CAMP"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_CAMP");
+	Global_1901929->f_230.f_16 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_TRAIN"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NO_TRAIN");
+	Global_1901929->f_230.f_17 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_COOLDOWN"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_COOLDOWN");
+	Global_1901929->f_230.f_18 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TRAIN_COOLDOWN"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_TRAIN_COOLDOWN");
+	Global_1901929->f_230.f_19 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_MAX_PLAYERS"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_MAX_PLAYERS");
+	Global_1901929->f_230.f_20 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_DELAYED"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_DELAYED");
+	Global_1901929->f_230.f_21 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_INVALID_MISSION_TYPE"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_INVALID_MISSION_TYPE");
+	Global_1901929->f_230.f_22 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_HONOR"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_HONOR");
+	Global_1901929->f_230.f_23 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_WANTED"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_WANTED");
+	Global_1901929->f_230.f_24 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_COMBAT"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_RECENT_COMBAT");
+	Global_1901929->f_230.f_25 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_SCREEN_FADED"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_SCREEN_FADED");
+	Global_1901929->f_230.f_26 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CAMP_RUNNING_CONTENT"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CAMP_RUNNING_CONTENT");
+	Global_1901929->f_230.f_27 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_GANG_LEADER"), 0, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_NOT_GANG_LEADER");
+	Global_1901929->f_230.f_28 = func_383(-988916868, joaat("NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CONTENT_COOLDOWN"), 60000, "NET_BEAT_MANAGER_DISABLED_REASON_DELAY_CONTENT_COOLDOWN");
+	Global_1901929->f_230.f_29 = func_383(-988916868, joaat("NET_BEAT_MANAGER_AMBUSH_COMBAT_COOLDOWN_MS"), 60000, "NET_BEAT_MANAGER_AMBUSH_COMBAT_COOLDOWN_MS");
+	Global_1901929->f_230.f_30 = func_385(-988916868, joaat("NET_BEAT_MANAGER_PHOTOGRAPHY_RECENT_INTERACT_COOLDOWN_MOD"), 0.75f, "NET_BEAT_MANAGER_PHOTOGRAPHY_RECENT_INTERACT_COOLDOWN_MOD");
+	Global_1901929->f_230.f_31 = func_385(-988916868, joaat("NET_BEAT_MANAGER_SUSPENSION_TRAP_RECENT_INTERACT_COOLDOWN_MOD"), 3.33f, "NET_BEAT_MANAGER_SUSPENSION_TRAP_RECENT_INTERACT_COOLDOWN_MOD");
+	Global_1901929->f_230.f_32 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_SECONDS"), 0, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_SECONDS");
+	Global_1901929->f_230.f_33 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_MINUTES"), 0, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_MINUTES");
+	Global_1901929->f_230.f_34 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_HOURS"), 0, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_HOURS");
+	Global_1901929->f_230.f_35 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_DAYS"), 3, "NET_BEAT_MANAGER_MISSION_SEEN_COOLDOWN_DAYS");
+	Global_1901929->f_230.f_36 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_SECONDS"), 0, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_SECONDS");
+	Global_1901929->f_230.f_37 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_MINUTES"), 0, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_MINUTES");
+	Global_1901929->f_230.f_38 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_HOURS"), 0, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_HOURS");
+	Global_1901929->f_230.f_39 = func_383(-988916868, joaat("NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_DAYS"), 6, "NET_BEAT_MANAGER_MISSION_COMPLETED_COOLDOWN_DAYS");
+	Global_1901929->f_230.f_40 = func_383(-988916868, joaat("NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_SECONDS"), 0, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_SECONDS");
+	Global_1901929->f_230.f_41 = func_383(-988916868, joaat("NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_MINUTES"), 0, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_MINUTES");
+	Global_1901929->f_230.f_42 = func_383(-988916868, joaat("NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_HOURS"), 4, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_HOURS");
+	Global_1901929->f_230.f_43 = func_383(-988916868, joaat("NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_DAYS"), 0, "NET_BEAT_MANAGER_AMBIENT_TRAIN_COOLDOWN_DAYS");
+	Global_1901929->f_230.f_44 = func_383(-988916868, joaat("NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_SECONDS"), 0, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_SECONDS");
+	Global_1901929->f_230.f_45 = func_383(-988916868, joaat("NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_MINUTES"), 0, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_MINUTES");
+	Global_1901929->f_230.f_46 = func_383(-988916868, joaat("NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_HOURS"), 4, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_HOURS");
+	Global_1901929->f_230.f_47 = func_383(-988916868, joaat("NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_DAYS"), 0, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_DAYS");
+	Global_1901929->f_230.f_48 = func_383(-988916868, joaat("NET_BEAT_MANAGER_LAST_ATTEMPTED_FETCH_UNLOCK_COOLDOWN_MS"), 900000, "NET_BEAT_MANAGER_LAST_ATTEMPTED_FETCH_UNLOCK_COOLDOWN_MS");
+	Global_1901929->f_230.f_49 = func_383(-988916868, joaat("NET_BEAT_MANAGER_LAST_ATTEMPTED_RE_UNLOCK_COOLDOWN_MS"), 432000000, "NET_BEAT_MANAGER_LAST_ATTEMPTED_RE_UNLOCK_COOLDOWN_MS");
+	Global_1901929->f_230.f_50 = func_383(-988916868, joaat("NET_BEAT_MANAGER_LAST_ATTEMPTED_TYPE_COOLDOWN_MS"), 259200000, "NET_BEAT_MANAGER_LAST_ATTEMPTED_TYPE_COOLDOWN_MS");
+	Global_1901929->f_230.f_51 = func_383(-988916868, joaat("NET_BEAT_MANAGER_PLAYER_MOONSHINER_BUSINESS_CONTENT_COOLDOWN_MS"), 3600000, "NET_BEAT_MANAGER_PLAYER_MOONSHINER_BUSINESS_CONTENT_COOLDOWN_MS");
+	Global_1901929->f_230.f_52 = func_383(-988916868, joaat("NET_BEAT_MANAGER_NATURALIST_CONTENT_COOLDOWN_MS"), 3600000, "NET_BEAT_MANAGER_NATURALIST_CONTENT_COOLDOWN_MS");
+	Global_1901929->f_230.f_53 = func_383(-988916868, joaat("NET_BEAT_MANAGER_RECENT_INTERACTION_LOCAL_COOLDOWN_MS"), 1080000, "NET_BEAT_MANAGER_RECENT_INTERACTION_LOCAL_COOLDOWN_MS");
+	Global_1901929->f_230.f_54 = func_383(-988916868, joaat("NET_BEAT_MANAGER_PERCENT_CHANCE_COOLDOWN_MS"), 30000, "NET_BEAT_MANAGER_PERCENT_CHANCE_COOLDOWN_MS");
+	Global_1901929->f_230.f_55 = func_385(-988916868, joaat("NET_BEAT_MANAGER_DEFAULT_LAUNCH_PERCENT_CHANCE"), 0.6f, "NET_BEAT_MANAGER_DEFAULT_LAUNCH_PERCENT_CHANCE");
+	Global_1901929->f_230.f_56 = func_385(-988916868, joaat("NET_BEAT_MANAGER_LAUNCH_DISTANCE_MIN"), 110f, "NET_BEAT_MANAGER_LAUNCH_DISTANCE_MIN");
+	Global_1901929->f_230.f_57 = func_385(-988916868, joaat("NET_BEAT_MANAGER_LAUNCH_DISTANCE_MAX"), 250f, "NET_BEAT_MANAGER_LAUNCH_DISTANCE_MAX");
+	Global_1901929->f_230.f_58 = func_385(-988916868, joaat("NET_BEAT_MANAGER_AUTO_SHUTDOWN_DISTANCE"), 300f, "NET_BEAT_MANAGER_AUTO_SHUTDOWN_DISTANCE");
+	Global_1901929->f_230.f_59 = func_385(-988916868, joaat("NET_BEAT_MANAGER_MIN_DISTANCE_BETWEEN_BEATS"), 550f, "NET_BEAT_MANAGER_MIN_DISTANCE_BETWEEN_BEATS");
+	Global_1901929->f_230.f_60 = func_385(-988916868, joaat("NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_RADIUS"), 400f, "NET_BEAT_MANAGER_NEARBY_BEATS_COOLDOWN_RADIUS");
+	Global_1901929->f_230.f_61 = func_383(-988916868, joaat("NET_BEAT_MANAGER_POST_LAUNCH_COOLDOWN_MS"), 30000, "NET_BEAT_MANAGER_POST_LAUNCH_COOLDOWN_MS");
+	Global_1901929->f_230.f_62 = func_383(-988916868, joaat("NET_BEAT_MANAGER_SCRIPT_INACTIVE_SHUTDOWN_MS"), 30000, "NET_BEAT_MANAGER_SCRIPT_INACTIVE_SHUTDOWN_MS");
+	Global_1901929->f_230.f_63 = func_383(-988916868, joaat("NET_BEAT_MANAGER_CONTENT_STREAM_FAILSAFE_DURATION_MS"), 15000, "NET_BEAT_MANAGER_CONTENT_STREAM_FAILSAFE_DURATION_MS");
+	Global_1901929->f_230.f_64 = func_383(-988916868, joaat("NET_BEAT_MANAGER_CONTENT_CENTER_POSITION_UPDATE_INTERVAL_MS"), 1000, "NET_BEAT_MANAGER_CONTENT_CENTER_POSITION_UPDATE_INTERVAL_MS");
 	func_391(Global_1901929->f_230, 0, 900000);
 	func_391(Global_1901929->f_230.f_1, 0, 900000);
 	func_391(Global_1901929->f_230.f_2, 0, 900000);
@@ -6760,18 +6760,18 @@ void func_183(int iParam0)
 
 void func_184()
 {
-	Global_1901929->f_295 = func_383(-379711458, 1323597203, 181000, "k_VSMS_LAUNCH_TIMEOUT");
-	Global_1901929->f_295.f_1 = func_383(-379711458, -151838833, 45000, "k_VSMS_LAUNCH_TIMEOUT_SHORT");
-	Global_1901929->f_295.f_4 = func_383(-379711458, 995316537, 30000, "k_VSMS_PLAYERS_TO_PARTICIPANTS");
-	Global_1901929->f_295.f_5 = func_383(-379711458, -1237974787, 100, "k_VSMS_SPLASH_DURATION");
-	Global_1901929->f_295.f_6 = func_383(-379711458, 615485541, 10, "k_VSMS_MAX_RACES_TO_RUN");
-	Global_1901929->f_295.f_8 = func_383(-379711458, -455791158, 30000, "k_VSMS_MIN_PLAYER_DECAY_INITIAL_TIME");
-	Global_1901929->f_295.f_9 = func_383(-379711458, -1434537174, 60000, "k_VSMS_MIN_PLAYER_DECAY_SECOND_TIME");
-	Global_1901929->f_295.f_10 = func_383(-379711458, 1323198254, 90000, "k_VSMS_MIN_PLAYER_DECAY_FINAL_TIME");
-	Global_1901929->f_295.f_11 = func_385(-379711458, 962185042, 0.75f, "k_VSMS_MIN_PLAYER_DECAY_INITIAL_PERCENTAGE");
-	Global_1901929->f_295.f_12 = func_385(-379711458, 710108580, 0.5f, "k_VSMS_MIN_PLAYER_DECAY_SECOND_PERCENTAGE");
-	Global_1901929->f_295.f_13 = func_385(-379711458, -1001614244, 0.25f, "k_VSMS_MIN_PLAYER_DECAY_FINAL_PERCENTAGE");
-	Global_1901929->f_295.f_2 = func_383(-379711458, 1435066813, 5000, "k_VSMS_SORTING_BUSY_TIME");
+	Global_1901929->f_295 = func_383(-379711458, joaat("k_VSMS_LAUNCH_TIMEOUT"), 181000, "k_VSMS_LAUNCH_TIMEOUT");
+	Global_1901929->f_295.f_1 = func_383(-379711458, joaat("k_VSMS_LAUNCH_TIMEOUT_SHORT"), 45000, "k_VSMS_LAUNCH_TIMEOUT_SHORT");
+	Global_1901929->f_295.f_4 = func_383(-379711458, joaat("k_VSMS_PLAYERS_TO_PARTICIPANTS"), 30000, "k_VSMS_PLAYERS_TO_PARTICIPANTS");
+	Global_1901929->f_295.f_5 = func_383(-379711458, joaat("k_VSMS_SPLASH_DURATION"), 100, "k_VSMS_SPLASH_DURATION");
+	Global_1901929->f_295.f_6 = func_383(-379711458, joaat("k_VSMS_MAX_RACES_TO_RUN"), 10, "k_VSMS_MAX_RACES_TO_RUN");
+	Global_1901929->f_295.f_8 = func_383(-379711458, joaat("k_VSMS_MIN_PLAYER_DECAY_INITIAL_TIME"), 30000, "k_VSMS_MIN_PLAYER_DECAY_INITIAL_TIME");
+	Global_1901929->f_295.f_9 = func_383(-379711458, joaat("k_VSMS_MIN_PLAYER_DECAY_SECOND_TIME"), 60000, "k_VSMS_MIN_PLAYER_DECAY_SECOND_TIME");
+	Global_1901929->f_295.f_10 = func_383(-379711458, joaat("k_VSMS_MIN_PLAYER_DECAY_FINAL_TIME"), 90000, "k_VSMS_MIN_PLAYER_DECAY_FINAL_TIME");
+	Global_1901929->f_295.f_11 = func_385(-379711458, joaat("k_VSMS_MIN_PLAYER_DECAY_INITIAL_PERCENTAGE"), 0.75f, "k_VSMS_MIN_PLAYER_DECAY_INITIAL_PERCENTAGE");
+	Global_1901929->f_295.f_12 = func_385(-379711458, joaat("k_VSMS_MIN_PLAYER_DECAY_SECOND_PERCENTAGE"), 0.5f, "k_VSMS_MIN_PLAYER_DECAY_SECOND_PERCENTAGE");
+	Global_1901929->f_295.f_13 = func_385(-379711458, joaat("k_VSMS_MIN_PLAYER_DECAY_FINAL_PERCENTAGE"), 0.25f, "k_VSMS_MIN_PLAYER_DECAY_FINAL_PERCENTAGE");
+	Global_1901929->f_295.f_2 = func_383(-379711458, joaat("k_VSMS_SORTING_BUSY_TIME"), 5000, "k_VSMS_SORTING_BUSY_TIME");
 	if (Global_1901929->f_295.f_2 < 1000)
 	{
 		Global_1901929->f_295.f_2 = 5000;
@@ -6780,7 +6780,7 @@ void func_184()
 	{
 		Global_1901929->f_295.f_2 = 5000;
 	}
-	Global_1901929->f_295.f_7 = func_383(-379711458, 904509931, 2000, "k_VSMS_BACKFILL_BUFFER_DURATION");
+	Global_1901929->f_295.f_7 = func_383(-379711458, joaat("k_VSMS_BACKFILL_BUFFER_DURATION"), 2000, "k_VSMS_BACKFILL_BUFFER_DURATION");
 	if (Global_1901929->f_295.f_7 < 0)
 	{
 		Global_1901929->f_295.f_7 = 2000;
@@ -6789,7 +6789,7 @@ void func_184()
 	{
 		Global_1901929->f_295.f_7 = 2000;
 	}
-	Global_1901929->f_295.f_3 = func_383(-379711458, -1190810246, 30000, "k_VSMS_SORTING_BACKFILL_TIMEOUT");
+	Global_1901929->f_295.f_3 = func_383(-379711458, joaat("k_VSMS_SORTING_BACKFILL_TIMEOUT"), 30000, "k_VSMS_SORTING_BACKFILL_TIMEOUT");
 	if (Global_1901929->f_295.f_3 < 1000)
 	{
 		Global_1901929->f_295.f_3 = 30000;
@@ -6798,7 +6798,7 @@ void func_184()
 	{
 		Global_1901929->f_295.f_3 = 30000;
 	}
-	Global_1901929->f_295.f_15 = func_383(-379711458, 765926405, 60000, "T_LauncherUGCStallTimeout");
+	Global_1901929->f_295.f_15 = func_383(-379711458, joaat("T_LauncherUGCStallTimeout"), 60000, "T_LauncherUGCStallTimeout");
 	if (Global_1901929->f_295.f_15 < 1)
 	{
 		Global_1901929->f_295.f_15 = 60000;
@@ -6807,7 +6807,7 @@ void func_184()
 	{
 		Global_1901929->f_295.f_15 = 60000;
 	}
-	Global_1901929->f_295.f_16 = func_383(-379711458, -1322637691, 15000, "T_LauncherUGCPhotoStallTimeout");
+	Global_1901929->f_295.f_16 = func_383(-379711458, joaat("T_LauncherUGCPhotoStallTimeout"), 15000, "T_LauncherUGCPhotoStallTimeout");
 	if (Global_1901929->f_295.f_16 < 1)
 	{
 		Global_1901929->f_295.f_16 = 15000;
@@ -6816,156 +6816,156 @@ void func_184()
 	{
 		Global_1901929->f_295.f_16 = 15000;
 	}
-	Global_1901929->f_295.f_14 = func_383(-379711458, -440622448, 100, "k_NET_PLAYLIST_CORONA_ALPHA");
-	Global_1901929->f_295.f_17 = func_383(-379711458, 246164842, 1440, "iEasyTargetRefreshRateS");
-	Global_1901929->f_295.f_18 = func_383(-379711458, -1800961845, 2160, "iMediumTargetRefreshRateS");
-	Global_1901929->f_295.f_19 = func_383(-379711458, 1317466199, 2880, "iHardTargetRefreshRateS");
-	Global_1901929->f_295.f_20 = func_383(-379711458, -180077825, 600000, "iLegendaryBountyToastDelay");
-	Global_1901929->f_295.f_21 = func_383(-379711458, 119251901, 3, "iMaxBountyServerRequests");
-	Global_1901929->f_295.f_22 = func_383(-379711458, 784634987, 5000, "iBountyServerRequestTimeoutMS");
-	Global_1901929->f_295.f_23 = func_384(-379711458, 265142393, 1, "bAllowRelaunch");
-	Global_1901929->f_295.f_24 = func_384(-379711458, 572389285, 1, "bWaitForHorseInSplit");
-	Global_1901929->f_295.f_25 = func_384(-379711458, 205739326, 0, "bDisableFixFor6217942");
-	Global_1901929->f_295.f_26 = func_383(-379711458, 1044590092, 5000, "iGangLeaderWaitForGangLockMS");
-	Global_1901929->f_295.f_27 = func_383(-379711458, -349047706, 5000, "iGangLeaderSplitterLoadTimeMS");
-	Global_1901929->f_295.f_28 = func_383(-379711458, -31703306, 10000, "iGangLeaderWaitForSplitMS");
-	Global_1901929->f_295.f_29 = func_383(-379711458, 897656029, 5000, "iGangLeaderWaitForFlagsMS");
-	Global_1901929->f_295.f_30 = func_383(-379711458, 308711505, 5000, "iGangLeaderWaitForScreenFadeMS");
-	Global_1901929->f_295.f_31 = func_383(-379711458, -52365253, 10000, "iGangLeaderWaitForGangMembersToReceiveInstancedRequestMS");
-	Global_1901929->f_295.f_32 = func_383(-379711458, -416725773, 5000, "iGangLeaderWaitForGangMembersToLockHorsesMS");
-	Global_1901929->f_295.f_33 = func_383(-379711458, 1719931408, 60000, "iGangLeaderWaitForAmbientMissionsToShutdownMS");
-	Global_1901929->f_295.f_34 = func_383(-379711458, 29148034, 75000, "iGangLeaderWaitForVolumeLocksToResolve");
-	Global_1901929->f_295.f_35 = func_383(-379711458, -602930666, 7000, "iGangMemberWaitForRespawnMS");
-	Global_1901929->f_295.f_36 = func_383(-379711458, 1761106634, 5000, "iGangMemberWaitForHorseCreateMS");
-	Global_1901929->f_295.f_37 = func_383(-379711458, -1033038473, 1000, "iGangMemberInstanceDataRequestEventCooldownMS");
-	Global_1901929->f_295.f_38 = func_383(-379711458, -566008827, 10000, "iRebroadcastDeinstanceData");
-	Global_1901929->f_295.f_39 = func_383(-379711458, -850447160, 45000, "iRebrodcastDeinstanceSession");
-	Global_1901929->f_295.f_40 = func_383(-379711458, 1778330977, 60000, "GFH_MANAGER_ONLINE__k_TIMEOUT_MS");
-	Global_1901929->f_295.f_41 = func_384(-379711458, 1513453366, 0, "GFH_MANAGER_ONLINE__SHERIFFS_RESPECT_BOUNTY");
-	Global_1901929->f_295.f_54 = func_383(-379711458, 1795901467, 25, "iNetGunForHireMediumTargetSelectionRate");
-	Global_1901929->f_295.f_55 = func_385(-379711458, -99954362, 1000f, "fNetGunForHireNearMissionDistance");
-	Global_1901929->f_295.f_56 = func_385(-379711458, 172432556, 1600f, "fNetGunForHireMediumMissionDistance");
-	Global_1901929->f_295.f_57 = func_385(-379711458, -311014393, 2500f, "fNetGunForHireFarMissionDistance");
-	Global_1901929->f_295.f_42 = func_383(-379711458, -1874456806, 1, "GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN__DAYS");
-	Global_1901929->f_295.f_43 = func_383(-379711458, -929758813, 0, "iNetGunForHireMoonshinerGiverCooldownInGameDays");
-	Global_1901929->f_295.f_44 = func_383(-379711458, -1700960300, 8, "iNetGunForHireMoonshinerGiverCooldownInGameHours");
-	Global_1901929->f_295.f_45 = func_383(-379711458, 174295155, 0, "iNetGunForHireMoonshinerGiverCooldownInGameMinutes");
-	Global_1901929->f_295.f_46 = func_383(-379711458, -929275223, 1, "iNetGunForHireGiverIgnoreBlockingMissionCooldownInGameDays");
-	Global_1901929->f_295.f_47 = func_383(-379711458, -1067922877, 0, "iNetGunForHireGiverIgnoreBlockingMissionCooldownInGameHours");
-	Global_1901929->f_295.f_50 = func_383(-379711458, -2054999908, 1, "GFH_MANAGER_OFFLINE__k_MISSION_COOLDOWN__DAYS");
-	Global_1901929->f_295.f_48 = func_383(-379711458, 453972100, 30, "GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN_SHOT_NEAR__MINUTES");
-	Global_1901929->f_295.f_49 = func_383(-379711458, -1631630598, 0, "GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN_SHOT_NEAR__HOURS");
+	Global_1901929->f_295.f_14 = func_383(-379711458, joaat("k_NET_PLAYLIST_CORONA_ALPHA"), 100, "k_NET_PLAYLIST_CORONA_ALPHA");
+	Global_1901929->f_295.f_17 = func_383(-379711458, joaat("iEasyTargetRefreshRateS"), 1440, "iEasyTargetRefreshRateS");
+	Global_1901929->f_295.f_18 = func_383(-379711458, joaat("iMediumTargetRefreshRateS"), 2160, "iMediumTargetRefreshRateS");
+	Global_1901929->f_295.f_19 = func_383(-379711458, joaat("iHardTargetRefreshRateS"), 2880, "iHardTargetRefreshRateS");
+	Global_1901929->f_295.f_20 = func_383(-379711458, joaat("iLegendaryBountyToastDelay"), 600000, "iLegendaryBountyToastDelay");
+	Global_1901929->f_295.f_21 = func_383(-379711458, joaat("iMaxBountyServerRequests"), 3, "iMaxBountyServerRequests");
+	Global_1901929->f_295.f_22 = func_383(-379711458, joaat("iBountyServerRequestTimeoutMS"), 5000, "iBountyServerRequestTimeoutMS");
+	Global_1901929->f_295.f_23 = func_384(-379711458, joaat("bAllowRelaunch"), 1, "bAllowRelaunch");
+	Global_1901929->f_295.f_24 = func_384(-379711458, joaat("bWaitForHorseInSplit"), 1, "bWaitForHorseInSplit");
+	Global_1901929->f_295.f_25 = func_384(-379711458, joaat("bDisableFixFor6217942"), 0, "bDisableFixFor6217942");
+	Global_1901929->f_295.f_26 = func_383(-379711458, joaat("iGangLeaderWaitForGangLockMS"), 5000, "iGangLeaderWaitForGangLockMS");
+	Global_1901929->f_295.f_27 = func_383(-379711458, joaat("iGangLeaderSplitterLoadTimeMS"), 5000, "iGangLeaderSplitterLoadTimeMS");
+	Global_1901929->f_295.f_28 = func_383(-379711458, joaat("iGangLeaderWaitForSplitMS"), 10000, "iGangLeaderWaitForSplitMS");
+	Global_1901929->f_295.f_29 = func_383(-379711458, joaat("iGangLeaderWaitForFlagsMS"), 5000, "iGangLeaderWaitForFlagsMS");
+	Global_1901929->f_295.f_30 = func_383(-379711458, joaat("iGangLeaderWaitForScreenFadeMS"), 5000, "iGangLeaderWaitForScreenFadeMS");
+	Global_1901929->f_295.f_31 = func_383(-379711458, joaat("iGangLeaderWaitForGangMembersToReceiveInstancedRequestMS"), 10000, "iGangLeaderWaitForGangMembersToReceiveInstancedRequestMS");
+	Global_1901929->f_295.f_32 = func_383(-379711458, joaat("iGangLeaderWaitForGangMembersToLockHorsesMS"), 5000, "iGangLeaderWaitForGangMembersToLockHorsesMS");
+	Global_1901929->f_295.f_33 = func_383(-379711458, joaat("iGangLeaderWaitForAmbientMissionsToShutdownMS"), 60000, "iGangLeaderWaitForAmbientMissionsToShutdownMS");
+	Global_1901929->f_295.f_34 = func_383(-379711458, joaat("iGangLeaderWaitForVolumeLocksToResolve"), 75000, "iGangLeaderWaitForVolumeLocksToResolve");
+	Global_1901929->f_295.f_35 = func_383(-379711458, joaat("iGangMemberWaitForRespawnMS"), 7000, "iGangMemberWaitForRespawnMS");
+	Global_1901929->f_295.f_36 = func_383(-379711458, joaat("iGangMemberWaitForHorseCreateMS"), 5000, "iGangMemberWaitForHorseCreateMS");
+	Global_1901929->f_295.f_37 = func_383(-379711458, joaat("iGangMemberInstanceDataRequestEventCooldownMS"), 1000, "iGangMemberInstanceDataRequestEventCooldownMS");
+	Global_1901929->f_295.f_38 = func_383(-379711458, joaat("iRebroadcastDeinstanceData"), 10000, "iRebroadcastDeinstanceData");
+	Global_1901929->f_295.f_39 = func_383(-379711458, joaat("iRebrodcastDeinstanceSession"), 45000, "iRebrodcastDeinstanceSession");
+	Global_1901929->f_295.f_40 = func_383(-379711458, joaat("GFH_MANAGER_ONLINE__k_TIMEOUT_MS"), 60000, "GFH_MANAGER_ONLINE__k_TIMEOUT_MS");
+	Global_1901929->f_295.f_41 = func_384(-379711458, joaat("GFH_MANAGER_ONLINE__SHERIFFS_RESPECT_BOUNTY"), 0, "GFH_MANAGER_ONLINE__SHERIFFS_RESPECT_BOUNTY");
+	Global_1901929->f_295.f_54 = func_383(-379711458, joaat("iNetGunForHireMediumTargetSelectionRate"), 25, "iNetGunForHireMediumTargetSelectionRate");
+	Global_1901929->f_295.f_55 = func_385(-379711458, joaat("fNetGunForHireNearMissionDistance"), 1000f, "fNetGunForHireNearMissionDistance");
+	Global_1901929->f_295.f_56 = func_385(-379711458, joaat("fNetGunForHireMediumMissionDistance"), 1600f, "fNetGunForHireMediumMissionDistance");
+	Global_1901929->f_295.f_57 = func_385(-379711458, joaat("fNetGunForHireFarMissionDistance"), 2500f, "fNetGunForHireFarMissionDistance");
+	Global_1901929->f_295.f_42 = func_383(-379711458, joaat("GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN__DAYS"), 1, "GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN__DAYS");
+	Global_1901929->f_295.f_43 = func_383(-379711458, joaat("iNetGunForHireMoonshinerGiverCooldownInGameDays"), 0, "iNetGunForHireMoonshinerGiverCooldownInGameDays");
+	Global_1901929->f_295.f_44 = func_383(-379711458, joaat("iNetGunForHireMoonshinerGiverCooldownInGameHours"), 8, "iNetGunForHireMoonshinerGiverCooldownInGameHours");
+	Global_1901929->f_295.f_45 = func_383(-379711458, joaat("iNetGunForHireMoonshinerGiverCooldownInGameMinutes"), 0, "iNetGunForHireMoonshinerGiverCooldownInGameMinutes");
+	Global_1901929->f_295.f_46 = func_383(-379711458, joaat("iNetGunForHireGiverIgnoreBlockingMissionCooldownInGameDays"), 1, "iNetGunForHireGiverIgnoreBlockingMissionCooldownInGameDays");
+	Global_1901929->f_295.f_47 = func_383(-379711458, joaat("iNetGunForHireGiverIgnoreBlockingMissionCooldownInGameHours"), 0, "iNetGunForHireGiverIgnoreBlockingMissionCooldownInGameHours");
+	Global_1901929->f_295.f_50 = func_383(-379711458, joaat("GFH_MANAGER_OFFLINE__k_MISSION_COOLDOWN__DAYS"), 1, "GFH_MANAGER_OFFLINE__k_MISSION_COOLDOWN__DAYS");
+	Global_1901929->f_295.f_48 = func_383(-379711458, joaat("GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN_SHOT_NEAR__MINUTES"), 30, "GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN_SHOT_NEAR__MINUTES");
+	Global_1901929->f_295.f_49 = func_383(-379711458, joaat("GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN_SHOT_NEAR__HOURS"), 0, "GFH_MANAGER_OFFLINE__k_GIVER_COOLDOWN_SHOT_NEAR__HOURS");
 	Global_1901929->f_295.f_163 = func_385(-379711458, -1295046052, 100f, "GFH_SHARED__k_PVP_DISPLAY_DISTANCE");
 	Global_1901929->f_295.f_164 = func_383(-379711458, 1279525321, 120000, "GFH_SHARED__k_PVP_GLOBAL_SIGNAL_DELAY_MS");
-	Global_1901929->f_295.f_51 = func_383(-379711458, -2047559837, 0, "NetGunForHireMissionWeightAdjustment");
-	Global_1901929->f_295.f_52 = func_383(-379711458, 712359276, 0, "NetGunForHireMissionWeightAdjustmentCount");
-	Global_1901929->f_295.f_53 = func_383(-379711458, -2117366234, 0, "NetGunForHireMissionPassiveWeightAdjustment");
-	Global_1901929->f_295.f_58 = func_383(-379711458, 624299226, 25, "MissionWeight_Assassination");
-	Global_1901929->f_295.f_102 = func_384(-379711458, -1552297973, 0, "UseWeightAdjustment_Assassination");
-	Global_1901929->f_295.f_59 = func_383(-379711458, -1679958491, 25, "MissionWeight_AssassinationTracking");
-	Global_1901929->f_295.f_103 = func_384(-379711458, 143697097, 0, "UseWeightAdjustment_AssassinationTracking");
-	Global_1901929->f_295.f_60 = func_383(-379711458, -678365254, 25, "MissionWeight_AssassinationPvpPosse");
-	Global_1901929->f_295.f_104 = func_384(-379711458, 2020757488, 0, "UseWeightAdjustment_AssassinationPvpPosse");
-	Global_1901929->f_295.f_61 = func_383(-379711458, 433697539, 25, "MissionWeight_AssassinationPvpPlayer");
-	Global_1901929->f_295.f_105 = func_384(-379711458, -64438695, 0, "UseWeightAdjustment_AssassinationPvpPlayer");
-	Global_1901929->f_295.f_62 = func_383(-379711458, -216147327, 25, "MissionWeight_CoachHoldupKidnap");
-	Global_1901929->f_295.f_106 = func_384(-379711458, -538944420, 0, "UseWeightAdjustment_CoachHoldupKidnap");
-	Global_1901929->f_295.f_63 = func_383(-379711458, 463763750, 25, "MissionWeight_CoachHoldupRobbery");
-	Global_1901929->f_295.f_107 = func_384(-379711458, -759625757, 0, "UseWeightAdjustment_CoachHoldupRobbery");
-	Global_1901929->f_295.f_64 = func_383(-379711458, -1362443507, 25, "MissionWeight_ConvoyEscort");
-	Global_1901929->f_295.f_108 = func_384(-379711458, -1636485150, 0, "UseWeightAdjustment_ConvoyEscort");
-	Global_1901929->f_295.f_65 = func_383(-379711458, 1664703677, 25, "MissionWeight_DeliveryPackage");
-	Global_1901929->f_295.f_109 = func_384(-379711458, -516847226, 0, "UseWeightAdjustment_DeliveryPackage");
-	Global_1901929->f_295.f_66 = func_383(-379711458, -2022379907, 25, "MissionWeight_Intercept");
-	Global_1901929->f_295.f_110 = func_384(-379711458, 2001845118, 0, "UseWeightAdjustment_Intercept");
-	Global_1901929->f_295.f_67 = func_383(-379711458, 1386309355, 25, "MissionWeight_OnTheHunt");
-	Global_1901929->f_295.f_111 = func_384(-379711458, 1697868573, 0, "UseWeightAdjustment_OnTheHunt");
-	Global_1901929->f_295.f_68 = func_383(-379711458, 1607489957, 25, "MissionWeight_PrisonerAssassination");
-	Global_1901929->f_295.f_112 = func_384(-379711458, -1828246137, 0, "UseWeightAdjustment_PrisonerAssassination");
-	Global_1901929->f_295.f_69 = func_383(-379711458, -1107432574, 25, "MissionWeight_Recover");
-	Global_1901929->f_295.f_113 = func_384(-379711458, 271283681, 0, "UseWeightAdjustment_Recover");
-	Global_1901929->f_295.f_70 = func_383(-379711458, 1055115472, 25, "MissionWeight_Repo");
-	Global_1901929->f_295.f_114 = func_384(-379711458, -1637610688, 0, "UseWeightAdjustment_Repo");
-	Global_1901929->f_295.f_71 = func_383(-379711458, -1544854031, 25, "MissionWeight_RescuePed");
-	Global_1901929->f_295.f_115 = func_384(-379711458, 399997753, 0, "UseWeightAdjustment_RescuePed");
-	Global_1901929->f_295.f_72 = func_383(-379711458, -555167041, 25, "MissionWeight_Resupply");
-	Global_1901929->f_295.f_116 = func_384(-379711458, 1756837800, 0, "UseWeightAdjustment_Resupply");
-	Global_1901929->f_295.f_73 = func_383(-379711458, 1375155297, 25, "MissionWeight_StealBoat");
-	Global_1901929->f_295.f_117 = func_384(-379711458, -1742556770, 0, "UseWeightAdjustment_StealBoat");
-	Global_1901929->f_295.f_74 = func_383(-379711458, -2113087628, 25, "MissionWeight_StealHorse");
-	Global_1901929->f_295.f_118 = func_384(-379711458, -1057064803, 0, "UseWeightAdjustment_StealHorse");
-	Global_1901929->f_295.f_75 = func_383(-379711458, 2136887556, 25, "MissionWeight_StealWagon");
-	Global_1901929->f_295.f_119 = func_384(-379711458, 1844823371, 0, "UseWeightAdjustment_StealWagon");
-	Global_1901929->f_295.f_76 = func_383(-379711458, 1781690078, 25, "MissionWeight_WagonBreakout");
-	Global_1901929->f_295.f_120 = func_384(-379711458, -260742051, 0, "UseWeightAdjustment_WagonBreakout");
-	Global_1901929->f_295.f_77 = func_383(-379711458, -1653312521, 25, "MissionWeight_Destroy");
-	Global_1901929->f_295.f_121 = func_384(-379711458, -949168348, 0, "UseWeightAdjustment_Destroy");
-	Global_1901929->f_295.f_78 = func_383(-379711458, 1841383436, 25, "MissionWeight_Jailbreak");
-	Global_1901929->f_295.f_122 = func_384(-379711458, -194426833, 0, "UseWeightAdjustment_Jailbreak");
-	Global_1901929->f_295.f_79 = func_383(-379711458, -880809973, 25, "MissionWeight_WagonThieves");
-	Global_1901929->f_295.f_123 = func_384(-379711458, -471529134, 0, "UseWeightAdjustment_WagonThieves");
-	Global_1901929->f_295.f_85 = func_383(-379711458, 180529611, 25, "MissionWeight_BrokenDown");
-	Global_1901929->f_295.f_129 = func_384(-379711458, -2082998642, 0, "UseWeightAdjustment_BrokenDown");
-	Global_1901929->f_295.f_86 = func_383(-379711458, 894631040, 25, "MissionWeight_ChemicalWagon");
-	Global_1901929->f_295.f_130 = func_384(-379711458, -926503690, 0, "UseWeightAdjustment_ChemicalWagon");
-	Global_1901929->f_295.f_92 = func_383(-379711458, 926008184, 25, "MissionWeight_Contested");
-	Global_1901929->f_295.f_136 = func_384(-379711458, 468586258, 0, "UseWeightAdjustment_Contested");
-	Global_1901929->f_295.f_89 = func_383(-379711458, -1586213077, 25, "MissionWeight_Defend");
-	Global_1901929->f_295.f_133 = func_384(-379711458, 304229752, 0, "UseWeightAdjustment_Defend");
-	Global_1901929->f_295.f_82 = func_383(-379711458, -881098893, 25, "MissionWeight_DefendAgainstWolves");
-	Global_1901929->f_295.f_126 = func_384(-379711458, 1552053495, 0, "UseWeightAdjustment_DefendAgainstWolves");
-	Global_1901929->f_295.f_81 = func_383(-379711458, -1717494351, 25, "MissionWeight_MovingTarget");
-	Global_1901929->f_295.f_125 = func_384(-379711458, 2026140068, 0, "UseWeightAdjustment_MovingTarget");
-	Global_1901929->f_295.f_93 = func_383(-379711458, 1703409742, 25, "MissionWeight_MultiDropDistribute");
-	Global_1901929->f_295.f_137 = func_384(-379711458, 1600472904, 0, "UseWeightAdjustment_MultiDropDistribute");
-	Global_1901929->f_295.f_91 = func_383(-379711458, -653556470, 25, "MissionWeight_SellGoods");
-	Global_1901929->f_295.f_135 = func_384(-379711458, -308604412, 0, "UseWeightAdjustment_SellGoods");
-	Global_1901929->f_295.f_87 = func_383(-379711458, -892072222, 25, "MissionWeight_SheriffsSupplies");
-	Global_1901929->f_295.f_131 = func_384(-379711458, 1528421731, 0, "UseWeightAdjustment_SheriffsSupplies");
-	Global_1901929->f_295.f_80 = func_383(-379711458, -490923072, 25, "MissionWeight_StationarySupplies");
-	Global_1901929->f_295.f_124 = func_384(-379711458, 1516413446, 0, "UseWeightAdjustment_StationarySupplies");
-	Global_1901929->f_295.f_83 = func_383(-379711458, -1538456874, 25, "MissionWeight_SupplyTrainMoving");
-	Global_1901929->f_295.f_127 = func_384(-379711458, 1442076607, 0, "UseWeightAdjustment_SupplyTrainMoving");
-	Global_1901929->f_295.f_84 = func_383(-379711458, -1284382296, 25, "MissionWeight_SupplyTrainStationary");
-	Global_1901929->f_295.f_128 = func_384(-379711458, 1149149959, 0, "UseWeightAdjustment_SupplyTrainStationary");
-	Global_1901929->f_295.f_90 = func_383(-379711458, -372315861, 25, "MissionWeight_Trade");
-	Global_1901929->f_295.f_134 = func_384(-379711458, -795144836, 0, "UseWeightAdjustment_Trade");
-	Global_1901929->f_295.f_88 = func_383(-379711458, 1478431505, 25, "MissionWeight_UnloadingSupplies");
-	Global_1901929->f_295.f_132 = func_384(-379711458, -1525745119, 0, "UseWeightAdjustment_UnloadingSupplies");
-	Global_1901929->f_295.f_98 = func_383(-379711458, 449716414, 25, "MissionWeight_LureTarget");
-	Global_1901929->f_295.f_142 = func_384(-379711458, 2130456870, 0, "UseWeightAdjustment_LureTarget");
-	Global_1901929->f_295.f_101 = func_383(-379711458, 1192857198, 25, "MissionWeight_HideoutTarget");
-	Global_1901929->f_295.f_145 = func_384(-379711458, 1588479951, 0, "UseWeightAdjustment_HideoutTarget");
-	Global_1901929->f_295.f_94 = func_383(-379711458, 105044641, 25, "MissionWeight_KnownTarget");
-	Global_1901929->f_295.f_138 = func_384(-379711458, -1590697778, 0, "UseWeightAdjustment_KnownTarget");
-	Global_1901929->f_295.f_95 = func_383(-379711458, 633252607, 25, "MissionWeight_MovingKnownTarget");
-	Global_1901929->f_295.f_139 = func_384(-379711458, -1691211979, 0, "UseWeightAdjustment_MovingKnownTarget");
-	Global_1901929->f_295.f_99 = func_383(-379711458, 822051132, 25, "MissionWeight_MultiTrackTarget");
-	Global_1901929->f_295.f_143 = func_384(-379711458, -105347458, 0, "UseWeightAdjustment_MultiTrackTarget");
-	Global_1901929->f_295.f_96 = func_383(-379711458, -731339085, 25, "MissionWeight_StakeoutTarget");
-	Global_1901929->f_295.f_140 = func_384(-379711458, 1739770292, 0, "UseWeightAdjustment_StakeoutTarget");
-	Global_1901929->f_295.f_100 = func_383(-379711458, -782846047, 25, "MissionWeight_TimeTarget");
-	Global_1901929->f_295.f_144 = func_384(-379711458, 750930581, 0, "UseWeightAdjustment_TimeTarget");
-	Global_1901929->f_295.f_97 = func_383(-379711458, -213037758, 25, "MissionWeight_TrackTarget");
-	Global_1901929->f_295.f_141 = func_384(-379711458, -1890153233, 0, "UseWeightAdjustment_TrackTarget");
-	Global_1901929->f_295.f_146 = func_383(-379711458, 262752003, 5760, "iMoonshineBuyerRefreshRate");
-	Global_1901929->f_295.f_147 = func_383(-379711458, 1212826320, 80, "iMoonshineBuyerRegularNovice");
-	Global_1901929->f_295.f_148 = func_383(-379711458, -597296510, 60, "iMoonshineBuyerRegularPromising");
-	Global_1901929->f_295.f_149 = func_383(-379711458, -1893003417, 40, "iMoonshineBuyerRegularEstablished");
-	Global_1901929->f_295.f_150 = func_383(-379711458, 1301677982, 20, "iMoonshineBuyerRegularDistinguished");
-	Global_1901929->f_295.f_151 = func_383(-379711458, 1229163872, 20, "iMoonshineBuyerImprovedNovice");
-	Global_1901929->f_295.f_152 = func_383(-379711458, 1670407028, 30, "iMoonshineBuyerImprovedPromising");
-	Global_1901929->f_295.f_153 = func_383(-379711458, -946336876, 40, "iMoonshineBuyerImprovedEstablished");
-	Global_1901929->f_295.f_154 = func_383(-379711458, -1845895920, 40, "iMoonshineBuyerImprovedDistinguished");
-	Global_1901929->f_295.f_155 = func_383(-379711458, 1047668377, 0, "iMoonshineBuyerSpecialNovice");
-	Global_1901929->f_295.f_156 = func_383(-379711458, -1568413259, 10, "iMoonshineBuyerSpecialPromising");
-	Global_1901929->f_295.f_157 = func_383(-379711458, -558647848, 20, "iMoonshineBuyerSpecialEstablished");
-	Global_1901929->f_295.f_158 = func_383(-379711458, 817646672, 40, "iMoonshineBuyerSpecialDistinguished");
-	Global_1901929->f_295.f_159 = func_383(-379711458, -84899475, 0, "iMoonshineBuyerSeasonalNovice");
-	Global_1901929->f_295.f_160 = func_383(-379711458, -931043913, 0, "iMoonshineBuyerSeasonalPromising");
-	Global_1901929->f_295.f_161 = func_383(-379711458, -1187648683, 0, "iMoonshineBuyerSeasonalEstablished");
-	Global_1901929->f_295.f_162 = func_383(-379711458, -212912867, 0, "iMoonshineBuyerSeasonalDistinguished");
-	Global_1901929->f_295.f_165 = func_383(-379711458, -764721390, 4, "k_iNET_PARLEY_DEATH_COUNT");
+	Global_1901929->f_295.f_51 = func_383(-379711458, joaat("NetGunForHireMissionWeightAdjustment"), 0, "NetGunForHireMissionWeightAdjustment");
+	Global_1901929->f_295.f_52 = func_383(-379711458, joaat("NetGunForHireMissionWeightAdjustmentCount"), 0, "NetGunForHireMissionWeightAdjustmentCount");
+	Global_1901929->f_295.f_53 = func_383(-379711458, joaat("NetGunForHireMissionPassiveWeightAdjustment"), 0, "NetGunForHireMissionPassiveWeightAdjustment");
+	Global_1901929->f_295.f_58 = func_383(-379711458, joaat("MissionWeight_Assassination"), 25, "MissionWeight_Assassination");
+	Global_1901929->f_295.f_102 = func_384(-379711458, joaat("UseWeightAdjustment_Assassination"), 0, "UseWeightAdjustment_Assassination");
+	Global_1901929->f_295.f_59 = func_383(-379711458, joaat("MissionWeight_AssassinationTracking"), 25, "MissionWeight_AssassinationTracking");
+	Global_1901929->f_295.f_103 = func_384(-379711458, joaat("UseWeightAdjustment_AssassinationTracking"), 0, "UseWeightAdjustment_AssassinationTracking");
+	Global_1901929->f_295.f_60 = func_383(-379711458, joaat("MissionWeight_AssassinationPvpPosse"), 25, "MissionWeight_AssassinationPvpPosse");
+	Global_1901929->f_295.f_104 = func_384(-379711458, joaat("UseWeightAdjustment_AssassinationPvpPosse"), 0, "UseWeightAdjustment_AssassinationPvpPosse");
+	Global_1901929->f_295.f_61 = func_383(-379711458, joaat("MissionWeight_AssassinationPvpPlayer"), 25, "MissionWeight_AssassinationPvpPlayer");
+	Global_1901929->f_295.f_105 = func_384(-379711458, joaat("UseWeightAdjustment_AssassinationPvpPlayer"), 0, "UseWeightAdjustment_AssassinationPvpPlayer");
+	Global_1901929->f_295.f_62 = func_383(-379711458, joaat("MissionWeight_CoachHoldupKidnap"), 25, "MissionWeight_CoachHoldupKidnap");
+	Global_1901929->f_295.f_106 = func_384(-379711458, joaat("UseWeightAdjustment_CoachHoldupKidnap"), 0, "UseWeightAdjustment_CoachHoldupKidnap");
+	Global_1901929->f_295.f_63 = func_383(-379711458, joaat("MissionWeight_CoachHoldupRobbery"), 25, "MissionWeight_CoachHoldupRobbery");
+	Global_1901929->f_295.f_107 = func_384(-379711458, joaat("UseWeightAdjustment_CoachHoldupRobbery"), 0, "UseWeightAdjustment_CoachHoldupRobbery");
+	Global_1901929->f_295.f_64 = func_383(-379711458, joaat("MissionWeight_ConvoyEscort"), 25, "MissionWeight_ConvoyEscort");
+	Global_1901929->f_295.f_108 = func_384(-379711458, joaat("UseWeightAdjustment_ConvoyEscort"), 0, "UseWeightAdjustment_ConvoyEscort");
+	Global_1901929->f_295.f_65 = func_383(-379711458, joaat("MissionWeight_DeliveryPackage"), 25, "MissionWeight_DeliveryPackage");
+	Global_1901929->f_295.f_109 = func_384(-379711458, joaat("UseWeightAdjustment_DeliveryPackage"), 0, "UseWeightAdjustment_DeliveryPackage");
+	Global_1901929->f_295.f_66 = func_383(-379711458, joaat("MissionWeight_Intercept"), 25, "MissionWeight_Intercept");
+	Global_1901929->f_295.f_110 = func_384(-379711458, joaat("UseWeightAdjustment_Intercept"), 0, "UseWeightAdjustment_Intercept");
+	Global_1901929->f_295.f_67 = func_383(-379711458, joaat("MissionWeight_OnTheHunt"), 25, "MissionWeight_OnTheHunt");
+	Global_1901929->f_295.f_111 = func_384(-379711458, joaat("UseWeightAdjustment_OnTheHunt"), 0, "UseWeightAdjustment_OnTheHunt");
+	Global_1901929->f_295.f_68 = func_383(-379711458, joaat("MissionWeight_PrisonerAssassination"), 25, "MissionWeight_PrisonerAssassination");
+	Global_1901929->f_295.f_112 = func_384(-379711458, joaat("UseWeightAdjustment_PrisonerAssassination"), 0, "UseWeightAdjustment_PrisonerAssassination");
+	Global_1901929->f_295.f_69 = func_383(-379711458, joaat("MissionWeight_Recover"), 25, "MissionWeight_Recover");
+	Global_1901929->f_295.f_113 = func_384(-379711458, joaat("UseWeightAdjustment_Recover"), 0, "UseWeightAdjustment_Recover");
+	Global_1901929->f_295.f_70 = func_383(-379711458, joaat("MissionWeight_Repo"), 25, "MissionWeight_Repo");
+	Global_1901929->f_295.f_114 = func_384(-379711458, joaat("UseWeightAdjustment_Repo"), 0, "UseWeightAdjustment_Repo");
+	Global_1901929->f_295.f_71 = func_383(-379711458, joaat("MissionWeight_RescuePed"), 25, "MissionWeight_RescuePed");
+	Global_1901929->f_295.f_115 = func_384(-379711458, joaat("UseWeightAdjustment_RescuePed"), 0, "UseWeightAdjustment_RescuePed");
+	Global_1901929->f_295.f_72 = func_383(-379711458, joaat("MissionWeight_Resupply"), 25, "MissionWeight_Resupply");
+	Global_1901929->f_295.f_116 = func_384(-379711458, joaat("UseWeightAdjustment_Resupply"), 0, "UseWeightAdjustment_Resupply");
+	Global_1901929->f_295.f_73 = func_383(-379711458, joaat("MissionWeight_StealBoat"), 25, "MissionWeight_StealBoat");
+	Global_1901929->f_295.f_117 = func_384(-379711458, joaat("UseWeightAdjustment_StealBoat"), 0, "UseWeightAdjustment_StealBoat");
+	Global_1901929->f_295.f_74 = func_383(-379711458, joaat("MissionWeight_StealHorse"), 25, "MissionWeight_StealHorse");
+	Global_1901929->f_295.f_118 = func_384(-379711458, joaat("UseWeightAdjustment_StealHorse"), 0, "UseWeightAdjustment_StealHorse");
+	Global_1901929->f_295.f_75 = func_383(-379711458, joaat("MissionWeight_StealWagon"), 25, "MissionWeight_StealWagon");
+	Global_1901929->f_295.f_119 = func_384(-379711458, joaat("UseWeightAdjustment_StealWagon"), 0, "UseWeightAdjustment_StealWagon");
+	Global_1901929->f_295.f_76 = func_383(-379711458, joaat("MissionWeight_WagonBreakout"), 25, "MissionWeight_WagonBreakout");
+	Global_1901929->f_295.f_120 = func_384(-379711458, joaat("UseWeightAdjustment_WagonBreakout"), 0, "UseWeightAdjustment_WagonBreakout");
+	Global_1901929->f_295.f_77 = func_383(-379711458, joaat("MissionWeight_Destroy"), 25, "MissionWeight_Destroy");
+	Global_1901929->f_295.f_121 = func_384(-379711458, joaat("UseWeightAdjustment_Destroy"), 0, "UseWeightAdjustment_Destroy");
+	Global_1901929->f_295.f_78 = func_383(-379711458, joaat("MissionWeight_Jailbreak"), 25, "MissionWeight_Jailbreak");
+	Global_1901929->f_295.f_122 = func_384(-379711458, joaat("UseWeightAdjustment_Jailbreak"), 0, "UseWeightAdjustment_Jailbreak");
+	Global_1901929->f_295.f_79 = func_383(-379711458, joaat("MissionWeight_WagonThieves"), 25, "MissionWeight_WagonThieves");
+	Global_1901929->f_295.f_123 = func_384(-379711458, joaat("UseWeightAdjustment_WagonThieves"), 0, "UseWeightAdjustment_WagonThieves");
+	Global_1901929->f_295.f_85 = func_383(-379711458, joaat("MissionWeight_BrokenDown"), 25, "MissionWeight_BrokenDown");
+	Global_1901929->f_295.f_129 = func_384(-379711458, joaat("UseWeightAdjustment_BrokenDown"), 0, "UseWeightAdjustment_BrokenDown");
+	Global_1901929->f_295.f_86 = func_383(-379711458, joaat("MissionWeight_ChemicalWagon"), 25, "MissionWeight_ChemicalWagon");
+	Global_1901929->f_295.f_130 = func_384(-379711458, joaat("UseWeightAdjustment_ChemicalWagon"), 0, "UseWeightAdjustment_ChemicalWagon");
+	Global_1901929->f_295.f_92 = func_383(-379711458, joaat("MissionWeight_Contested"), 25, "MissionWeight_Contested");
+	Global_1901929->f_295.f_136 = func_384(-379711458, joaat("UseWeightAdjustment_Contested"), 0, "UseWeightAdjustment_Contested");
+	Global_1901929->f_295.f_89 = func_383(-379711458, joaat("MissionWeight_Defend"), 25, "MissionWeight_Defend");
+	Global_1901929->f_295.f_133 = func_384(-379711458, joaat("UseWeightAdjustment_Defend"), 0, "UseWeightAdjustment_Defend");
+	Global_1901929->f_295.f_82 = func_383(-379711458, joaat("MissionWeight_DefendAgainstWolves"), 25, "MissionWeight_DefendAgainstWolves");
+	Global_1901929->f_295.f_126 = func_384(-379711458, joaat("UseWeightAdjustment_DefendAgainstWolves"), 0, "UseWeightAdjustment_DefendAgainstWolves");
+	Global_1901929->f_295.f_81 = func_383(-379711458, joaat("MissionWeight_MovingTarget"), 25, "MissionWeight_MovingTarget");
+	Global_1901929->f_295.f_125 = func_384(-379711458, joaat("UseWeightAdjustment_MovingTarget"), 0, "UseWeightAdjustment_MovingTarget");
+	Global_1901929->f_295.f_93 = func_383(-379711458, joaat("MissionWeight_MultiDropDistribute"), 25, "MissionWeight_MultiDropDistribute");
+	Global_1901929->f_295.f_137 = func_384(-379711458, joaat("UseWeightAdjustment_MultiDropDistribute"), 0, "UseWeightAdjustment_MultiDropDistribute");
+	Global_1901929->f_295.f_91 = func_383(-379711458, joaat("MissionWeight_SellGoods"), 25, "MissionWeight_SellGoods");
+	Global_1901929->f_295.f_135 = func_384(-379711458, joaat("UseWeightAdjustment_SellGoods"), 0, "UseWeightAdjustment_SellGoods");
+	Global_1901929->f_295.f_87 = func_383(-379711458, joaat("MissionWeight_SheriffsSupplies"), 25, "MissionWeight_SheriffsSupplies");
+	Global_1901929->f_295.f_131 = func_384(-379711458, joaat("UseWeightAdjustment_SheriffsSupplies"), 0, "UseWeightAdjustment_SheriffsSupplies");
+	Global_1901929->f_295.f_80 = func_383(-379711458, joaat("MissionWeight_StationarySupplies"), 25, "MissionWeight_StationarySupplies");
+	Global_1901929->f_295.f_124 = func_384(-379711458, joaat("UseWeightAdjustment_StationarySupplies"), 0, "UseWeightAdjustment_StationarySupplies");
+	Global_1901929->f_295.f_83 = func_383(-379711458, joaat("MissionWeight_SupplyTrainMoving"), 25, "MissionWeight_SupplyTrainMoving");
+	Global_1901929->f_295.f_127 = func_384(-379711458, joaat("UseWeightAdjustment_SupplyTrainMoving"), 0, "UseWeightAdjustment_SupplyTrainMoving");
+	Global_1901929->f_295.f_84 = func_383(-379711458, joaat("MissionWeight_SupplyTrainStationary"), 25, "MissionWeight_SupplyTrainStationary");
+	Global_1901929->f_295.f_128 = func_384(-379711458, joaat("UseWeightAdjustment_SupplyTrainStationary"), 0, "UseWeightAdjustment_SupplyTrainStationary");
+	Global_1901929->f_295.f_90 = func_383(-379711458, joaat("MissionWeight_Trade"), 25, "MissionWeight_Trade");
+	Global_1901929->f_295.f_134 = func_384(-379711458, joaat("UseWeightAdjustment_Trade"), 0, "UseWeightAdjustment_Trade");
+	Global_1901929->f_295.f_88 = func_383(-379711458, joaat("MissionWeight_UnloadingSupplies"), 25, "MissionWeight_UnloadingSupplies");
+	Global_1901929->f_295.f_132 = func_384(-379711458, joaat("UseWeightAdjustment_UnloadingSupplies"), 0, "UseWeightAdjustment_UnloadingSupplies");
+	Global_1901929->f_295.f_98 = func_383(-379711458, joaat("MissionWeight_LureTarget"), 25, "MissionWeight_LureTarget");
+	Global_1901929->f_295.f_142 = func_384(-379711458, joaat("UseWeightAdjustment_LureTarget"), 0, "UseWeightAdjustment_LureTarget");
+	Global_1901929->f_295.f_101 = func_383(-379711458, joaat("MissionWeight_HideoutTarget"), 25, "MissionWeight_HideoutTarget");
+	Global_1901929->f_295.f_145 = func_384(-379711458, joaat("UseWeightAdjustment_HideoutTarget"), 0, "UseWeightAdjustment_HideoutTarget");
+	Global_1901929->f_295.f_94 = func_383(-379711458, joaat("MissionWeight_KnownTarget"), 25, "MissionWeight_KnownTarget");
+	Global_1901929->f_295.f_138 = func_384(-379711458, joaat("UseWeightAdjustment_KnownTarget"), 0, "UseWeightAdjustment_KnownTarget");
+	Global_1901929->f_295.f_95 = func_383(-379711458, joaat("MissionWeight_MovingKnownTarget"), 25, "MissionWeight_MovingKnownTarget");
+	Global_1901929->f_295.f_139 = func_384(-379711458, joaat("UseWeightAdjustment_MovingKnownTarget"), 0, "UseWeightAdjustment_MovingKnownTarget");
+	Global_1901929->f_295.f_99 = func_383(-379711458, joaat("MissionWeight_MultiTrackTarget"), 25, "MissionWeight_MultiTrackTarget");
+	Global_1901929->f_295.f_143 = func_384(-379711458, joaat("UseWeightAdjustment_MultiTrackTarget"), 0, "UseWeightAdjustment_MultiTrackTarget");
+	Global_1901929->f_295.f_96 = func_383(-379711458, joaat("MissionWeight_StakeoutTarget"), 25, "MissionWeight_StakeoutTarget");
+	Global_1901929->f_295.f_140 = func_384(-379711458, joaat("UseWeightAdjustment_StakeoutTarget"), 0, "UseWeightAdjustment_StakeoutTarget");
+	Global_1901929->f_295.f_100 = func_383(-379711458, joaat("MissionWeight_TimeTarget"), 25, "MissionWeight_TimeTarget");
+	Global_1901929->f_295.f_144 = func_384(-379711458, joaat("UseWeightAdjustment_TimeTarget"), 0, "UseWeightAdjustment_TimeTarget");
+	Global_1901929->f_295.f_97 = func_383(-379711458, joaat("MissionWeight_TrackTarget"), 25, "MissionWeight_TrackTarget");
+	Global_1901929->f_295.f_141 = func_384(-379711458, joaat("UseWeightAdjustment_TrackTarget"), 0, "UseWeightAdjustment_TrackTarget");
+	Global_1901929->f_295.f_146 = func_383(-379711458, joaat("iMoonshineBuyerRefreshRate"), 5760, "iMoonshineBuyerRefreshRate");
+	Global_1901929->f_295.f_147 = func_383(-379711458, joaat("iMoonshineBuyerRegularNovice"), 80, "iMoonshineBuyerRegularNovice");
+	Global_1901929->f_295.f_148 = func_383(-379711458, joaat("iMoonshineBuyerRegularPromising"), 60, "iMoonshineBuyerRegularPromising");
+	Global_1901929->f_295.f_149 = func_383(-379711458, joaat("iMoonshineBuyerRegularEstablished"), 40, "iMoonshineBuyerRegularEstablished");
+	Global_1901929->f_295.f_150 = func_383(-379711458, joaat("iMoonshineBuyerRegularDistinguished"), 20, "iMoonshineBuyerRegularDistinguished");
+	Global_1901929->f_295.f_151 = func_383(-379711458, joaat("iMoonshineBuyerImprovedNovice"), 20, "iMoonshineBuyerImprovedNovice");
+	Global_1901929->f_295.f_152 = func_383(-379711458, joaat("iMoonshineBuyerImprovedPromising"), 30, "iMoonshineBuyerImprovedPromising");
+	Global_1901929->f_295.f_153 = func_383(-379711458, joaat("iMoonshineBuyerImprovedEstablished"), 40, "iMoonshineBuyerImprovedEstablished");
+	Global_1901929->f_295.f_154 = func_383(-379711458, joaat("iMoonshineBuyerImprovedDistinguished"), 40, "iMoonshineBuyerImprovedDistinguished");
+	Global_1901929->f_295.f_155 = func_383(-379711458, joaat("iMoonshineBuyerSpecialNovice"), 0, "iMoonshineBuyerSpecialNovice");
+	Global_1901929->f_295.f_156 = func_383(-379711458, joaat("iMoonshineBuyerSpecialPromising"), 10, "iMoonshineBuyerSpecialPromising");
+	Global_1901929->f_295.f_157 = func_383(-379711458, joaat("iMoonshineBuyerSpecialEstablished"), 20, "iMoonshineBuyerSpecialEstablished");
+	Global_1901929->f_295.f_158 = func_383(-379711458, joaat("iMoonshineBuyerSpecialDistinguished"), 40, "iMoonshineBuyerSpecialDistinguished");
+	Global_1901929->f_295.f_159 = func_383(-379711458, joaat("iMoonshineBuyerSeasonalNovice"), 0, "iMoonshineBuyerSeasonalNovice");
+	Global_1901929->f_295.f_160 = func_383(-379711458, joaat("iMoonshineBuyerSeasonalPromising"), 0, "iMoonshineBuyerSeasonalPromising");
+	Global_1901929->f_295.f_161 = func_383(-379711458, joaat("iMoonshineBuyerSeasonalEstablished"), 0, "iMoonshineBuyerSeasonalEstablished");
+	Global_1901929->f_295.f_162 = func_383(-379711458, joaat("iMoonshineBuyerSeasonalDistinguished"), 0, "iMoonshineBuyerSeasonalDistinguished");
+	Global_1901929->f_295.f_165 = func_383(-379711458, joaat("k_iNET_PARLEY_DEATH_COUNT"), 4, "k_iNET_PARLEY_DEATH_COUNT");
 	if (Global_1901929->f_295.f_165 < 1)
 	{
 		Global_1901929->f_295.f_165 = 4;
@@ -6974,12 +6974,12 @@ void func_184()
 	{
 		Global_1901929->f_295.f_165 = 4;
 	}
-	Global_1901929->f_295.f_171 = func_383(-379711458, 2104050433, 300, "k_GANGFEUDS_DEFAULT_LENGTH");
+	Global_1901929->f_295.f_171 = func_383(-379711458, joaat("k_GANGFEUDS_DEFAULT_LENGTH"), 300, "k_GANGFEUDS_DEFAULT_LENGTH");
 	Global_1901929->f_295.f_170 = func_383(-379711458, -879364817, 300, "k_GANGFEUDS_VOTE_COOLDOWN_TIME_IN_SECOND");
 	Global_1901929->f_295.f_166 = func_383(-379711458, 631709904, 8000, "k_GANGFEUDS_DISPLAY_GANG_FEUD_TOAST_TIME_IN_MS");
 	Global_1901929->f_295.f_167 = func_383(-379711458, -2028164609, 8000, "k_GANGFEUDS_DISPLAY_HELP_TIME_IN_MS");
 	Global_1901929->f_295.f_168 = func_383(-379711458, -2121559614, 60000, "k_GANGFEUDS_RESPONSE_TIME_IN_MS");
-	Global_1901929->f_295.f_172 = func_383(-379711458, -813051668, 3, "k_GANGFEUDS_KILL_MIN");
+	Global_1901929->f_295.f_172 = func_383(-379711458, joaat("k_GANGFEUDS_KILL_MIN"), 3, "k_GANGFEUDS_KILL_MIN");
 	if (Global_1901929->f_295.f_172 < 1)
 	{
 		Global_1901929->f_295.f_172 = 3;
@@ -6988,7 +6988,7 @@ void func_184()
 	{
 		Global_1901929->f_295.f_172 = 3;
 	}
-	Global_1901929->f_295.f_173 = func_383(-379711458, 553797911, 2, "k_GANGFEUDS_TENSION_HIGH");
+	Global_1901929->f_295.f_173 = func_383(-379711458, joaat("k_GANGFEUDS_TENSION_HIGH"), 2, "k_GANGFEUDS_TENSION_HIGH");
 	if (Global_1901929->f_295.f_173 < -1)
 	{
 		Global_1901929->f_295.f_173 = 2;
@@ -6998,12 +6998,12 @@ void func_184()
 		Global_1901929->f_295.f_173 = 2;
 	}
 	Global_1901929->f_295.f_169 = (Global_1901929->f_295.f_168 / 2);
-	Global_1901929->f_295.f_174 = func_383(-379711458, 1475200544, 45, "FME_MANAGER__LAUNCH_EVERY_MINUTES");
-	Global_1901929->f_295.f_175 = func_383(-379711458, -1819921633, 90, "FME_MANAGER__LAUNCH_THEMED_EVERY_MINUTES");
-	Global_1901929->f_295.f_176 = func_383(-379711458, -1111898986, 22, "FME_MANAGER__LAUNCH_THEMED_MINUTE");
-	Global_1901929->f_295.f_177 = func_383(-379711458, 272974050, 25000, "FME__STREAMING_FAILSAFE_TIMEOUT");
-	Global_1901929->f_295.f_178 = func_383(-379711458, -1576290689, 25000, "FME_OFFLINE__STREAMING_FAILSAFE_TIMEOUT");
-	Global_1901929->f_295.f_179 = func_383(-379711458, -1315592328, 25000, "FME__TRAIN_SPAWN_FAILSAFE_TIMEOUT");
+	Global_1901929->f_295.f_174 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_EVERY_MINUTES"), 45, "FME_MANAGER__LAUNCH_EVERY_MINUTES");
+	Global_1901929->f_295.f_175 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_EVERY_MINUTES"), 90, "FME_MANAGER__LAUNCH_THEMED_EVERY_MINUTES");
+	Global_1901929->f_295.f_176 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_MINUTE"), 22, "FME_MANAGER__LAUNCH_THEMED_MINUTE");
+	Global_1901929->f_295.f_177 = func_383(-379711458, joaat("FME__STREAMING_FAILSAFE_TIMEOUT"), 25000, "FME__STREAMING_FAILSAFE_TIMEOUT");
+	Global_1901929->f_295.f_178 = func_383(-379711458, joaat("FME_OFFLINE__STREAMING_FAILSAFE_TIMEOUT"), 25000, "FME_OFFLINE__STREAMING_FAILSAFE_TIMEOUT");
+	Global_1901929->f_295.f_179 = func_383(-379711458, joaat("FME__TRAIN_SPAWN_FAILSAFE_TIMEOUT"), 25000, "FME__TRAIN_SPAWN_FAILSAFE_TIMEOUT");
 	if (!func_396(Global_1901929->f_295.f_177, 0, 120000, 0, 0))
 	{
 		Global_1901929->f_295.f_177 = 120000;
@@ -7016,27 +7016,27 @@ void func_184()
 	{
 		Global_1901929->f_295.f_179 = 120000;
 	}
-	Global_1901929->f_295.f_180 = func_383(-379711458, 1635180211, 0, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_0");
-	Global_1901929->f_295.f_181 = func_383(-379711458, 254261782, 1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_1");
-	Global_1901929->f_295.f_182 = func_383(-379711458, 1176414211 /* Float: 10154f */, 2, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_2");
-	Global_1901929->f_295.f_183 = func_383(-379711458, 887391631, 3, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_3");
-	Global_1901929->f_295.f_184 = func_383(-379711458, 1725819289, 4, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_4");
-	Global_1901929->f_295.f_185 = func_383(-379711458, 1411105813, 5, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_5");
-	Global_1901929->f_295.f_186 = func_383(-379711458, 1262695012, 6, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_6");
-	Global_1901929->f_295.f_187 = func_383(-379711458, 965086954, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_7");
-	Global_1901929->f_295.f_188 = func_383(-379711458, -1345750161, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_8");
-	Global_1901929->f_295.f_189 = func_383(-379711458, -1643948061, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_9");
-	Global_1901929->f_295.f_190 = func_383(-379711458, 1238863273, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_10");
-	Global_1901929->f_295.f_191 = func_383(-379711458, -1617053388, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_11");
-	Global_1901929->f_295.f_192 = func_383(-379711458, -1369188672, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_12");
-	Global_1901929->f_295.f_193 = func_383(-379711458, 762860783, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_13");
-	Global_1901929->f_295.f_194 = func_383(-379711458, 993652850, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_14");
-	Global_1901929->f_295.f_195 = func_383(-379711458, 301637108, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_15");
-	Global_1901929->f_295.f_196 = func_383(-379711458, 530921801, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_16");
-	Global_1901929->f_295.f_197 = func_383(-379711458, -443497183, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_17");
-	Global_1901929->f_295.f_198 = func_383(-379711458, -196713844, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_18");
-	Global_1901929->f_295.f_199 = func_383(-379711458, -905114086, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_19");
-	Global_1901929->f_295.f_200 = func_383(-379711458, 1154908171, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_20");
+	Global_1901929->f_295.f_180 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_0"), 0, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_0");
+	Global_1901929->f_295.f_181 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_1"), 1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_1");
+	Global_1901929->f_295.f_182 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_2"), 2, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_2");
+	Global_1901929->f_295.f_183 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_3"), 3, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_3");
+	Global_1901929->f_295.f_184 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_4"), 4, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_4");
+	Global_1901929->f_295.f_185 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_5"), 5, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_5");
+	Global_1901929->f_295.f_186 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_6"), 6, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_6");
+	Global_1901929->f_295.f_187 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_7"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_7");
+	Global_1901929->f_295.f_188 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_8"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_8");
+	Global_1901929->f_295.f_189 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_9"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_9");
+	Global_1901929->f_295.f_190 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_10"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_10");
+	Global_1901929->f_295.f_191 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_11"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_11");
+	Global_1901929->f_295.f_192 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_12"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_12");
+	Global_1901929->f_295.f_193 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_13"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_13");
+	Global_1901929->f_295.f_194 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_14"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_14");
+	Global_1901929->f_295.f_195 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_15"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_15");
+	Global_1901929->f_295.f_196 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_16"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_16");
+	Global_1901929->f_295.f_197 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_17"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_17");
+	Global_1901929->f_295.f_198 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_18"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_18");
+	Global_1901929->f_295.f_199 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_19"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_19");
+	Global_1901929->f_295.f_200 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_20"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_20");
 	if (!func_396(Global_1901929->f_295.f_180, 0, 6, -1, 1))
 	{
 		Global_1901929->f_295.f_180 = -1;
@@ -7121,27 +7121,27 @@ void func_184()
 	{
 		Global_1901929->f_295.f_200 = -1;
 	}
-	Global_1901929->f_295.f_202 = func_383(-379711458, 943593102, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_0");
-	Global_1901929->f_295.f_203 = func_383(-379711458, -1585846008, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_1");
-	Global_1901929->f_295.f_204 = func_383(-379711458, 792069250, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_2");
-	Global_1901929->f_295.f_205 = func_383(-379711458, 1041015343, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_3");
-	Global_1901929->f_295.f_206 = func_383(-379711458, 1810169311, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_4");
-	Global_1901929->f_295.f_207 = func_383(-379711458, -61235510, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_5");
-	Global_1901929->f_295.f_208 = func_383(-379711458, 169687633, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_6");
-	Global_1901929->f_295.f_209 = func_383(-379711458, 353325109, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_7");
-	Global_1901929->f_295.f_210 = func_383(-379711458, 649720714, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_8");
-	Global_1901929->f_295.f_211 = func_383(-379711458, 232604197, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_9");
-	Global_1901929->f_295.f_212 = func_383(-379711458, -436517900, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_10");
-	Global_1901929->f_295.f_213 = func_383(-379711458, -752083370, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_11");
-	Global_1901929->f_295.f_214 = func_383(-379711458, 887153086, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_12");
-	Global_1901929->f_295.f_215 = func_383(-379711458, 570932236, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_13");
-	Global_1901929->f_295.f_216 = func_383(-379711458, 272832643, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_14");
-	Global_1901929->f_295.f_217 = func_383(-379711458, 2140403495, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_15");
-	Global_1901929->f_295.f_218 = func_383(-379711458, 1844859884, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_16");
-	Global_1901929->f_295.f_219 = func_383(-379711458, 1531784858, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_17");
-	Global_1901929->f_295.f_220 = func_383(-379711458, 1250594069, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_18");
-	Global_1901929->f_295.f_221 = func_383(-379711458, -1194792560, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_19");
-	Global_1901929->f_295.f_222 = func_383(-379711458, -1128010794, -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_20");
+	Global_1901929->f_295.f_202 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_0"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_0");
+	Global_1901929->f_295.f_203 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_1"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_1");
+	Global_1901929->f_295.f_204 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_2"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_2");
+	Global_1901929->f_295.f_205 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_3"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_3");
+	Global_1901929->f_295.f_206 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_4"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_4");
+	Global_1901929->f_295.f_207 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_5"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_5");
+	Global_1901929->f_295.f_208 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_6"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_6");
+	Global_1901929->f_295.f_209 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_7"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_7");
+	Global_1901929->f_295.f_210 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_8"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_8");
+	Global_1901929->f_295.f_211 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_9"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_9");
+	Global_1901929->f_295.f_212 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_10"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_10");
+	Global_1901929->f_295.f_213 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_11"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_11");
+	Global_1901929->f_295.f_214 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_12"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_12");
+	Global_1901929->f_295.f_215 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_13"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_13");
+	Global_1901929->f_295.f_216 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_14"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_14");
+	Global_1901929->f_295.f_217 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_15"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_15");
+	Global_1901929->f_295.f_218 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_16"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_16");
+	Global_1901929->f_295.f_219 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_17"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_17");
+	Global_1901929->f_295.f_220 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_18"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_18");
+	Global_1901929->f_295.f_221 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_19"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_19");
+	Global_1901929->f_295.f_222 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_20"), -1, "FME_MANAGER__LAUNCH_PRIORITY_SLOT_VARIATION_20");
 	if (!func_396(Global_1901929->f_295.f_202, 0, 20, -1, 1))
 	{
 		Global_1901929->f_295.f_202 = -1;
@@ -7226,16 +7226,16 @@ void func_184()
 	{
 		Global_1901929->f_295.f_222 = -1;
 	}
-	Global_1901929->f_295.f_223 = func_383(-379711458, -344033901, 0, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_0");
-	Global_1901929->f_295.f_224 = func_383(-379711458, 483711039, 3, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_1");
-	Global_1901929->f_295.f_225 = func_383(-379711458, 252787896, 2, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_2");
-	Global_1901929->f_295.f_226 = func_383(-379711458, 706441928, 1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_3");
-	Global_1901929->f_295.f_227 = func_383(-379711458, 456971531, 4, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_4");
-	Global_1901929->f_295.f_228 = func_383(-379711458, 1295464703, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_5");
-	Global_1901929->f_295.f_229 = func_383(-379711458, 1052220416, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_6");
-	Global_1901929->f_295.f_230 = func_383(-379711458, 1651172198, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_7");
-	Global_1901929->f_295.f_231 = func_383(-379711458, 1414940477, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_8");
-	Global_1901929->f_295.f_232 = func_383(-379711458, -2044155159, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_9");
+	Global_1901929->f_295.f_223 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_0"), 0, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_0");
+	Global_1901929->f_295.f_224 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_1"), 3, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_1");
+	Global_1901929->f_295.f_225 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_2"), 2, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_2");
+	Global_1901929->f_295.f_226 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_3"), 1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_3");
+	Global_1901929->f_295.f_227 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_4"), 4, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_4");
+	Global_1901929->f_295.f_228 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_5"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_5");
+	Global_1901929->f_295.f_229 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_6"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_6");
+	Global_1901929->f_295.f_230 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_7"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_7");
+	Global_1901929->f_295.f_231 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_8"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_8");
+	Global_1901929->f_295.f_232 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_9"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_9");
 	if (!func_396(Global_1901929->f_295.f_223, 0, 4, -1, 1))
 	{
 		Global_1901929->f_295.f_223 = -1;
@@ -7276,16 +7276,16 @@ void func_184()
 	{
 		Global_1901929->f_295.f_232 = -1;
 	}
-	Global_1901929->f_295.f_233 = func_383(-379711458, -972975675, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_0");
-	Global_1901929->f_295.f_234 = func_383(-379711458, -138906318, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_1");
-	Global_1901929->f_295.f_235 = func_383(-379711458, 578144940, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_2");
-	Global_1901929->f_295.f_236 = func_383(-379711458, -734613969, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_3");
-	Global_1901929->f_295.f_237 = func_383(-379711458, -1935237360, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_4");
-	Global_1901929->f_295.f_238 = func_383(-379711458, -1150124889, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_5");
-	Global_1901929->f_295.f_239 = func_383(-379711458, -450047973, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_6");
-	Global_1901929->f_295.f_240 = func_383(-379711458, -1716340440, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_7");
-	Global_1901929->f_295.f_241 = func_383(-379711458, 1907616043, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_8");
-	Global_1901929->f_295.f_242 = func_383(-379711458, 1676692900, -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_9");
+	Global_1901929->f_295.f_233 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_0"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_0");
+	Global_1901929->f_295.f_234 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_1"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_1");
+	Global_1901929->f_295.f_235 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_2"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_2");
+	Global_1901929->f_295.f_236 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_3"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_3");
+	Global_1901929->f_295.f_237 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_4"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_4");
+	Global_1901929->f_295.f_238 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_5"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_5");
+	Global_1901929->f_295.f_239 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_6"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_6");
+	Global_1901929->f_295.f_240 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_7"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_7");
+	Global_1901929->f_295.f_241 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_8"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_8");
+	Global_1901929->f_295.f_242 = func_383(-379711458, joaat("FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_9"), -1, "FME_MANAGER__LAUNCH_THEMED_PRIORITY_SLOT_VARIATION_9");
 	if (!func_396(Global_1901929->f_295.f_233, 0, 20, -1, 1))
 	{
 		Global_1901929->f_295.f_233 = -1;
@@ -7326,10 +7326,10 @@ void func_184()
 	{
 		Global_1901929->f_295.f_242 = -1;
 	}
-	Global_1901929->f_295.f_243 = func_383(-379711458, -895292389, 60000, "NET_TRAIN_MANAGER__SPAWN_FREQUENCY_PRIMARY");
-	Global_1901929->f_295.f_244 = func_383(-379711458, -1202648944, 60000, "NET_TRAIN_MANAGER__SPAWN_FREQUENCY_SECONDARY");
-	Global_1901929->f_295.f_245 = func_383(-379711458, 1579982551, 30000, "NET_TRAIN_MANAGER__SPAWN_FREQUENCY_TROLLEY");
-	Global_1901929->f_295.f_246 = func_383(-379711458, 1518069169, 0, "NET_TRAIN_MANAGER__DISABLE_ALL_TRAINS");
+	Global_1901929->f_295.f_243 = func_383(-379711458, joaat("NET_TRAIN_MANAGER__SPAWN_FREQUENCY_PRIMARY"), 60000, "NET_TRAIN_MANAGER__SPAWN_FREQUENCY_PRIMARY");
+	Global_1901929->f_295.f_244 = func_383(-379711458, joaat("NET_TRAIN_MANAGER__SPAWN_FREQUENCY_SECONDARY"), 60000, "NET_TRAIN_MANAGER__SPAWN_FREQUENCY_SECONDARY");
+	Global_1901929->f_295.f_245 = func_383(-379711458, joaat("NET_TRAIN_MANAGER__SPAWN_FREQUENCY_TROLLEY"), 30000, "NET_TRAIN_MANAGER__SPAWN_FREQUENCY_TROLLEY");
+	Global_1901929->f_295.f_246 = func_383(-379711458, joaat("NET_TRAIN_MANAGER__DISABLE_ALL_TRAINS"), 0, "NET_TRAIN_MANAGER__DISABLE_ALL_TRAINS");
 }
 
 void func_185(int iParam0)
@@ -7521,7 +7521,7 @@ void func_185(int iParam0)
 
 void func_186()
 {
-	Global_1901929->f_542 = func_383(joaat("thread_monitor"), 334752451, 120000, "TM_MPSessionTimeToWaitToReboot");
+	Global_1901929->f_542 = func_383(joaat("thread_monitor"), joaat("TM_MPSessionTimeToWaitToReboot"), 120000, "TM_MPSessionTimeToWaitToReboot");
 	if (Global_1901929->f_542 < 30000)
 	{
 		Global_1901929->f_542 = 120000;
@@ -7561,19 +7561,19 @@ void func_188()
 	int iVar20;
 	int iVar21;
 
-	Global_1901929->f_543.f_3 = func_385(-856439824, 185921992, 390f, "NET_CAMP_MIN_DISTANCE_BETWEEN_CAMPS");
-	Global_1901929->f_543 = func_385(-856439824, -905606541, 190f, "NET_CAMP_LAUNCH_RADIUS");
-	Global_1901929->f_543.f_1 = func_385(-856439824, 929247867, 200f, "NET_CAMP_SHUTDOWN_RADIUS");
-	Global_1901929->f_543.f_2 = func_383(-856439824, -1285099241, 7000, "NET_CAMP_SAVE_LOAD_TIME_FAILSAFE_DURATION_MS");
-	Global_1901929->f_543.f_5 = func_385(-856439824, 719654415, 20f, "NET_CAMP_VOLUME_LOCK_ALL_RADIUS");
-	Global_1901929->f_543.f_4 = func_385(-856439824, 1924389419, 195f, "NET_CAMP_VOLUME_LOCK_CAMP_RADIUS");
-	Global_1901929->f_543.f_6 = func_385(-856439824, 1432537948, 60f, "NET_CAMP_PED_BLOCKING_RADIUS");
-	Global_1901929->f_543.f_7 = func_385(-856439824, 1879086384, 11f, "NET_CAMP_SHOP_PREVIEW_RADIUS");
-	Global_1901929->f_543.f_8 = func_383(-856439824, -2126039747, 15000, "NET_CAMP_SHOP_STREAMING_FAILSAFE_DURATION_MS");
-	Global_1901929->f_543.f_9 = func_383(-856439824, 1741896349, 10000, "NET_CAMP_TRADER_MAX_MATERIALS");
-	Global_1901929->f_543.f_10 = func_383(-856439824, 1985544159, 100, "NET_CAMP_TRADER_MAX_GOODS");
-	Global_1901929->f_543.f_11 = func_383(-856439824, -1318236918, 2, "NET_CAMP_TRADER_MINS_PER_GOODS");
-	Global_1901929->f_543.f_13 = func_383(-856439824, 1906939637, 10, "NET_CAMP_TRADER_MINS_FOR_RESUPPLY");
+	Global_1901929->f_543.f_3 = func_385(-856439824, joaat("NET_CAMP_MIN_DISTANCE_BETWEEN_CAMPS"), 390f, "NET_CAMP_MIN_DISTANCE_BETWEEN_CAMPS");
+	Global_1901929->f_543 = func_385(-856439824, joaat("NET_CAMP_LAUNCH_RADIUS"), 190f, "NET_CAMP_LAUNCH_RADIUS");
+	Global_1901929->f_543.f_1 = func_385(-856439824, joaat("NET_CAMP_SHUTDOWN_RADIUS"), 200f, "NET_CAMP_SHUTDOWN_RADIUS");
+	Global_1901929->f_543.f_2 = func_383(-856439824, joaat("NET_CAMP_SAVE_LOAD_TIME_FAILSAFE_DURATION_MS"), 7000, "NET_CAMP_SAVE_LOAD_TIME_FAILSAFE_DURATION_MS");
+	Global_1901929->f_543.f_5 = func_385(-856439824, joaat("NET_CAMP_VOLUME_LOCK_ALL_RADIUS"), 20f, "NET_CAMP_VOLUME_LOCK_ALL_RADIUS");
+	Global_1901929->f_543.f_4 = func_385(-856439824, joaat("NET_CAMP_VOLUME_LOCK_CAMP_RADIUS"), 195f, "NET_CAMP_VOLUME_LOCK_CAMP_RADIUS");
+	Global_1901929->f_543.f_6 = func_385(-856439824, joaat("NET_CAMP_PED_BLOCKING_RADIUS"), 60f, "NET_CAMP_PED_BLOCKING_RADIUS");
+	Global_1901929->f_543.f_7 = func_385(-856439824, joaat("NET_CAMP_SHOP_PREVIEW_RADIUS"), 11f, "NET_CAMP_SHOP_PREVIEW_RADIUS");
+	Global_1901929->f_543.f_8 = func_383(-856439824, joaat("NET_CAMP_SHOP_STREAMING_FAILSAFE_DURATION_MS"), 15000, "NET_CAMP_SHOP_STREAMING_FAILSAFE_DURATION_MS");
+	Global_1901929->f_543.f_9 = func_383(-856439824, joaat("NET_CAMP_TRADER_MAX_MATERIALS"), 10000, "NET_CAMP_TRADER_MAX_MATERIALS");
+	Global_1901929->f_543.f_10 = func_383(-856439824, joaat("NET_CAMP_TRADER_MAX_GOODS"), 100, "NET_CAMP_TRADER_MAX_GOODS");
+	Global_1901929->f_543.f_11 = func_383(-856439824, joaat("NET_CAMP_TRADER_MINS_PER_GOODS"), 2, "NET_CAMP_TRADER_MINS_PER_GOODS");
+	Global_1901929->f_543.f_13 = func_383(-856439824, joaat("NET_CAMP_TRADER_MINS_FOR_RESUPPLY"), 10, "NET_CAMP_TRADER_MINS_FOR_RESUPPLY");
 	fVar0 = 102f;
 	fVar1 = 2100f;
 	if (Global_1901929->f_543.f_3 < fVar0 || Global_1901929->f_543.f_3 > fVar1)
@@ -7720,7 +7720,7 @@ void func_193(int iParam0)
 
 void func_194()
 {
-	Global_1901929->f_634 = func_383(1123266412, -664637427, 3, "CRITICAL_REQUEST_MAX");
+	Global_1901929->f_634 = func_383(1123266412, joaat("CRITICAL_REQUEST_MAX"), 3, "CRITICAL_REQUEST_MAX");
 	if (Global_1901929->f_634 < 1)
 	{
 		Global_1901929->f_634 = 1;
@@ -7729,7 +7729,7 @@ void func_194()
 	{
 		Global_1901929->f_634 = 10;
 	}
-	Global_1901929->f_634.f_1 = func_383(1123266412, -658072867, -658072867, "CRITICAL_REQUEST_TIMEOUT");
+	Global_1901929->f_634.f_1 = func_383(1123266412, joaat("CRITICAL_REQUEST_TIMEOUT"), joaat("CRITICAL_REQUEST_TIMEOUT"), "CRITICAL_REQUEST_TIMEOUT");
 	if (Global_1901929->f_634.f_1 < 30)
 	{
 		Global_1901929->f_634.f_1 = 30;
@@ -7762,52 +7762,52 @@ void func_197(int iParam0)
 
 void func_198()
 {
-	Global_1901929->f_673 = func_383(671991169, -1905296039, 5, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_1");
-	Global_1901929->f_673.f_1 = func_385(671991169, -436221551, 4f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_1");
-	Global_1901929->f_673.f_2 = func_383(671991169, -1674831662, 10, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_2");
-	Global_1901929->f_673.f_3 = func_385(671991169, 1068432622, 3f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_2");
-	Global_1901929->f_673.f_4 = func_383(671991169, 592455452, 30, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_3");
-	Global_1901929->f_673.f_5 = func_385(671991169, 160534708, 2.5f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_3");
-	Global_1901929->f_673.f_6 = func_383(671991169, 832029611, 60, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_4");
-	Global_1901929->f_673.f_7 = func_385(671991169, 1194822623, 2f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_4");
-	Global_1901929->f_673.f_8 = func_383(671991169, 1189473863, 120, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_5");
-	Global_1901929->f_673.f_9 = func_385(671991169, 1433413712, 1.5f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_5");
-	Global_1901929->f_673.f_10 = func_383(671991169, 1504231957, 180, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_1");
-	Global_1901929->f_673.f_11 = func_385(671991169, 1656466956, 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_1");
-	Global_1901929->f_673.f_12 = func_383(671991169, 1813145320, 225, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_2");
-	Global_1901929->f_673.f_13 = func_385(671991169, -536532827, 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_2");
-	Global_1901929->f_673.f_14 = func_383(671991169, 1152260128, 450, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_3");
-	Global_1901929->f_673.f_15 = func_385(671991169, 1185412581, 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_3");
-	Global_1901929->f_673.f_16 = func_383(671991169, 1464122701, 900, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_4");
-	Global_1901929->f_673.f_17 = func_385(671991169, 927553320, 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_4");
-	Global_1901929->f_673.f_18 = func_383(671991169, 1183128530, 1800, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_5");
-	Global_1901929->f_673.f_19 = func_385(671991169, 631157715, 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_5");
-	Global_1901929->f_673.f_20 = func_383(671991169, 1482407807, 3600, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_6");
-	Global_1901929->f_673.f_21 = func_385(671991169, -1425555797, 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_6");
-	Global_1901929->f_673.f_22 = func_385(671991169, 1570278313, 5f, "NOTORIETY__RESPAWN_MOD__TIER_1");
-	Global_1901929->f_673.f_23 = func_385(671991169, 1908913159, 10f, "NOTORIETY__RESPAWN_MOD__TIER_2");
-	Global_1901929->f_673.f_24 = func_385(671991169, -2143399692, 15f, "NOTORIETY__RESPAWN_MOD__TIER_3");
-	Global_1901929->f_673.f_25 = func_385(671991169, -1771012776, 20f, "NOTORIETY__RESPAWN_MOD__TIER_4");
-	Global_1901929->f_673.f_26 = func_385(671991169, -1531700769, 25f, "NOTORIETY__RESPAWN_MOD__TIER_5");
-	Global_1901929->f_673.f_27 = func_383(671991169, 479574383, 20000, "NOTORIETY__EXCEPTION__VICTIM_IS_MUCH_MORE_NOTORIOUS");
-	Global_1901929->f_673.f_28 = func_383(671991169, 746827868, 50000, "NOTORIETY__MAX_NOTORIETY");
-	Global_1901929->f_673.f_29 = func_383(671991169, -1420951769, 20000, "NOTORIETY__EXCEPTION__TOO_NOTORIOUS_FOR_PASSIVE");
-	Global_1901929->f_673.f_30 = func_383(671991169, -945965351, 180000, "NOTORIETY__DECREMENT_UPDATE_TIME");
-	Global_1901929->f_673.f_31 = func_383(671991169, 1454501033, 5000, "PSNA_NOTO_TIER_1");
-	Global_1901929->f_673.f_32 = func_383(671991169, 1631912399, 10000, "PSNA_NOTO_TIER_2");
-	Global_1901929->f_673.f_33 = func_383(671991169, 1948166018, 15000, "PSNA_NOTO_TIER_3");
-	Global_1901929->f_673.f_34 = func_383(671991169, -1938630614, 20000, "PSNA_NOTO_TIER_4");
-	Global_1901929->f_673.f_35 = func_383(671991169, -1614184745, 25000, "PSNA_NOTO_TIER_5");
-	Global_1901929->f_673.f_36 = func_383(671991169, -1360609441, 30000, "PSNA_NOTO_TIER_MAX");
-	Global_1901929->f_673.f_37 = func_383(671991169, 563832432, 30, "NOTORIETY__TIME_TO_WAIT_FOR_PASSIVE");
-	Global_1901929->f_673.f_38 = func_383(671991169, -1571810305, 30, "NOTORIETY__TIME_TO_WAIT_FOR_NOT_PASSIVE");
-	Global_1901929->f_673.f_39 = func_383(671991169, -892470127, 180, "NOTORIETY__TIME_TO_WAIT_AFTER_INFRACTION");
-	Global_1901929->f_673.f_40 = func_383(671991169, 452687085, 4, "NOTORIETY__KILLING_HOSTILE_PLAYER_LIMIT");
-	Global_1901929->f_673.f_41 = func_383(671991169, -1248365197, 0, "NOTORIETY__ENEMIES_PRODUCE_NOTORIETY");
-	Global_1901929->f_673.f_42 = func_383(671991169, -1342374017, 1, "NOTORIETY__HORSE_COLLISION_ALLOWANCE");
-	Global_1901929->f_673.f_43 = func_383(671991169, 221173223, 60, "NOTORIETY__HORSE_COLLISION_COOLDOWN");
-	Global_1901929->f_673.f_44 = func_383(671991169, 730869021, 3, "NOTORIETY__HORSE_COLLISION_DELAY");
-	Global_1901929->f_673.f_45 = func_383(671991169, 2071424351, 30, "NOTORIETY__REDUNDANT_PASSIVE_SYNC_RATE");
+	Global_1901929->f_673 = func_383(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_1"), 5, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_1");
+	Global_1901929->f_673.f_1 = func_385(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_1"), 4f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_1");
+	Global_1901929->f_673.f_2 = func_383(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_2"), 10, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_2");
+	Global_1901929->f_673.f_3 = func_385(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_2"), 3f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_2");
+	Global_1901929->f_673.f_4 = func_383(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_3"), 30, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_3");
+	Global_1901929->f_673.f_5 = func_385(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_3"), 2.5f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_3");
+	Global_1901929->f_673.f_6 = func_383(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_4"), 60, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_4");
+	Global_1901929->f_673.f_7 = func_385(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_4"), 2f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_4");
+	Global_1901929->f_673.f_8 = func_383(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_5"), 120, "NOTORIETY__FREQUENCY_BONUS__SECONDS_TIER_5");
+	Global_1901929->f_673.f_9 = func_385(671991169, joaat("NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_5"), 1.5f, "NOTORIETY__FREQUENCY_BONUS__MULTIPLIER_TIER_5");
+	Global_1901929->f_673.f_10 = func_383(671991169, joaat("NOTORIETY__PACIFIST_DEC__SECONDS_TIER_1"), 180, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_1");
+	Global_1901929->f_673.f_11 = func_385(671991169, joaat("NOTORIETY__PACIFIST_DEC__VALUE_TIER_1"), 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_1");
+	Global_1901929->f_673.f_12 = func_383(671991169, joaat("NOTORIETY__PACIFIST_DEC__SECONDS_TIER_2"), 225, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_2");
+	Global_1901929->f_673.f_13 = func_385(671991169, joaat("NOTORIETY__PACIFIST_DEC__VALUE_TIER_2"), 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_2");
+	Global_1901929->f_673.f_14 = func_383(671991169, joaat("NOTORIETY__PACIFIST_DEC__SECONDS_TIER_3"), 450, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_3");
+	Global_1901929->f_673.f_15 = func_385(671991169, joaat("NOTORIETY__PACIFIST_DEC__VALUE_TIER_3"), 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_3");
+	Global_1901929->f_673.f_16 = func_383(671991169, joaat("NOTORIETY__PACIFIST_DEC__SECONDS_TIER_4"), 900, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_4");
+	Global_1901929->f_673.f_17 = func_385(671991169, joaat("NOTORIETY__PACIFIST_DEC__VALUE_TIER_4"), 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_4");
+	Global_1901929->f_673.f_18 = func_383(671991169, joaat("NOTORIETY__PACIFIST_DEC__SECONDS_TIER_5"), 1800, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_5");
+	Global_1901929->f_673.f_19 = func_385(671991169, joaat("NOTORIETY__PACIFIST_DEC__VALUE_TIER_5"), 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_5");
+	Global_1901929->f_673.f_20 = func_383(671991169, joaat("NOTORIETY__PACIFIST_DEC__SECONDS_TIER_6"), 3600, "NOTORIETY__PACIFIST_DEC__SECONDS_TIER_6");
+	Global_1901929->f_673.f_21 = func_385(671991169, joaat("NOTORIETY__PACIFIST_DEC__VALUE_TIER_6"), 0.028f, "NOTORIETY__PACIFIST_DEC__VALUE_TIER_6");
+	Global_1901929->f_673.f_22 = func_385(671991169, joaat("NOTORIETY__RESPAWN_MOD__TIER_1"), 5f, "NOTORIETY__RESPAWN_MOD__TIER_1");
+	Global_1901929->f_673.f_23 = func_385(671991169, joaat("NOTORIETY__RESPAWN_MOD__TIER_2"), 10f, "NOTORIETY__RESPAWN_MOD__TIER_2");
+	Global_1901929->f_673.f_24 = func_385(671991169, joaat("NOTORIETY__RESPAWN_MOD__TIER_3"), 15f, "NOTORIETY__RESPAWN_MOD__TIER_3");
+	Global_1901929->f_673.f_25 = func_385(671991169, joaat("NOTORIETY__RESPAWN_MOD__TIER_4"), 20f, "NOTORIETY__RESPAWN_MOD__TIER_4");
+	Global_1901929->f_673.f_26 = func_385(671991169, joaat("NOTORIETY__RESPAWN_MOD__TIER_5"), 25f, "NOTORIETY__RESPAWN_MOD__TIER_5");
+	Global_1901929->f_673.f_27 = func_383(671991169, joaat("NOTORIETY__EXCEPTION__VICTIM_IS_MUCH_MORE_NOTORIOUS"), 20000, "NOTORIETY__EXCEPTION__VICTIM_IS_MUCH_MORE_NOTORIOUS");
+	Global_1901929->f_673.f_28 = func_383(671991169, joaat("NOTORIETY__MAX_NOTORIETY"), 50000, "NOTORIETY__MAX_NOTORIETY");
+	Global_1901929->f_673.f_29 = func_383(671991169, joaat("NOTORIETY__EXCEPTION__TOO_NOTORIOUS_FOR_PASSIVE"), 20000, "NOTORIETY__EXCEPTION__TOO_NOTORIOUS_FOR_PASSIVE");
+	Global_1901929->f_673.f_30 = func_383(671991169, joaat("NOTORIETY__DECREMENT_UPDATE_TIME"), 180000, "NOTORIETY__DECREMENT_UPDATE_TIME");
+	Global_1901929->f_673.f_31 = func_383(671991169, joaat("PSNA_NOTO_TIER_1"), 5000, "PSNA_NOTO_TIER_1");
+	Global_1901929->f_673.f_32 = func_383(671991169, joaat("PSNA_NOTO_TIER_2"), 10000, "PSNA_NOTO_TIER_2");
+	Global_1901929->f_673.f_33 = func_383(671991169, joaat("PSNA_NOTO_TIER_3"), 15000, "PSNA_NOTO_TIER_3");
+	Global_1901929->f_673.f_34 = func_383(671991169, joaat("PSNA_NOTO_TIER_4"), 20000, "PSNA_NOTO_TIER_4");
+	Global_1901929->f_673.f_35 = func_383(671991169, joaat("PSNA_NOTO_TIER_5"), 25000, "PSNA_NOTO_TIER_5");
+	Global_1901929->f_673.f_36 = func_383(671991169, joaat("PSNA_NOTO_TIER_MAX"), 30000, "PSNA_NOTO_TIER_MAX");
+	Global_1901929->f_673.f_37 = func_383(671991169, joaat("NOTORIETY__TIME_TO_WAIT_FOR_PASSIVE"), 30, "NOTORIETY__TIME_TO_WAIT_FOR_PASSIVE");
+	Global_1901929->f_673.f_38 = func_383(671991169, joaat("NOTORIETY__TIME_TO_WAIT_FOR_NOT_PASSIVE"), 30, "NOTORIETY__TIME_TO_WAIT_FOR_NOT_PASSIVE");
+	Global_1901929->f_673.f_39 = func_383(671991169, joaat("NOTORIETY__TIME_TO_WAIT_AFTER_INFRACTION"), 180, "NOTORIETY__TIME_TO_WAIT_AFTER_INFRACTION");
+	Global_1901929->f_673.f_40 = func_383(671991169, joaat("NOTORIETY__KILLING_HOSTILE_PLAYER_LIMIT"), 4, "NOTORIETY__KILLING_HOSTILE_PLAYER_LIMIT");
+	Global_1901929->f_673.f_41 = func_383(671991169, joaat("NOTORIETY__ENEMIES_PRODUCE_NOTORIETY"), 0, "NOTORIETY__ENEMIES_PRODUCE_NOTORIETY");
+	Global_1901929->f_673.f_42 = func_383(671991169, joaat("NOTORIETY__HORSE_COLLISION_ALLOWANCE"), 1, "NOTORIETY__HORSE_COLLISION_ALLOWANCE");
+	Global_1901929->f_673.f_43 = func_383(671991169, joaat("NOTORIETY__HORSE_COLLISION_COOLDOWN"), 60, "NOTORIETY__HORSE_COLLISION_COOLDOWN");
+	Global_1901929->f_673.f_44 = func_383(671991169, joaat("NOTORIETY__HORSE_COLLISION_DELAY"), 3, "NOTORIETY__HORSE_COLLISION_DELAY");
+	Global_1901929->f_673.f_45 = func_383(671991169, joaat("NOTORIETY__REDUNDANT_PASSIVE_SYNC_RATE"), 30, "NOTORIETY__REDUNDANT_PASSIVE_SYNC_RATE");
 }
 
 void func_199(int iParam0)
@@ -7816,41 +7816,41 @@ void func_199(int iParam0)
 
 void func_200()
 {
-	Global_1901929->f_638 = func_383(-1846762425, -498281179, 300, "NetStableBondingQueueTime");
-	Global_1901929->f_638.f_1 = func_385(-1846762425, 528769592, 200f, "NetStableMaxXPBeforePush");
-	Global_1901929->f_638.f_2 = func_385(-1846762425, 379069684, 4f, "NetStableHorseBondingXPLeading");
-	Global_1901929->f_638.f_3 = func_385(-1846762425, -1697100287, 2f, "NetStableHorseBondingXPWalkTrot");
-	Global_1901929->f_638.f_4 = func_385(-1846762425, 1590612859, 1f, "NetStableHorseBondingXPGallop");
-	Global_1901929->f_638.f_5 = func_385(-1846762425, -1171519456, 1f, "NetStableHorseBondingXPSprint");
-	Global_1901929->f_638.f_6 = func_385(-1846762425, -749009781, 0f, "NetStableHorseBondingXPEquipSaddle");
-	Global_1901929->f_638.f_7 = func_385(-1846762425, 1009790605, 50f, "NetStableHorseBondingXPEquipSaddleFirstTime");
-	Global_1901929->f_638.f_8 = func_385(-1846762425, -958133120, 0f, "NetStableHorseBondingXPBreakHorse");
-	Global_1901929->f_638.f_9 = func_385(-1846762425, -1184798048, 25f, "NetStableHorseBondingXPBreakHorseFirstTime");
-	Global_1901929->f_638.f_10 = func_385(-1846762425, 734555943, 1f, "NetStableHorseBondingXPPatHorseMin");
-	Global_1901929->f_638.f_11 = func_385(-1846762425, -512634577, 5f, "NetStableHorseBondingXPPatHorseMax");
-	Global_1901929->f_638.f_12 = func_385(-1846762425, -1771707982, 1f, "NetStableHorseBondingXPCalmedHorseMin");
-	Global_1901929->f_638.f_13 = func_385(-1846762425, -1635686155, 15f, "NetStableHorseBondingXPCalmedHorseMax");
-	Global_1901929->f_638.f_14 = func_385(-1846762425, -1535076953, 1f, "NetStableHorseBondingXPHitchMin");
-	Global_1901929->f_638.f_15 = func_385(-1846762425, -441189267, 15f, "NetStableHorseBondingXPHitchMax");
-	Global_1901929->f_638.f_16 = func_385(-1846762425, 211393452, 1f, "NetStableHorseBondingXPFeedFoodFed");
-	Global_1901929->f_638.f_17 = func_385(-1846762425, -497291461, 5f, "NetStableHorseBondingXPFeedFoodGettingHungry");
-	Global_1901929->f_638.f_18 = func_385(-1846762425, 853989750, 15f, "NetStableHorseBondingXPFeedFoodHungry");
-	Global_1901929->f_638.f_19 = func_385(-1846762425, 1802172049, 5f, "NetStableHorseBondingXPFeedSnack");
-	Global_1901929->f_638.f_20 = func_385(-1846762425, 1889860693, 1f, "NetStableHorseBondingXPGroomedClean");
-	Global_1901929->f_638.f_21 = func_385(-1846762425, 548690689, 5f, "NetStableHorseBondingXPGroomedGettingDirty");
-	Global_1901929->f_638.f_22 = func_385(-1846762425, 1773042438, 15f, "NetStableHorseBondingXPGroomedDirty");
-	Global_1901929->f_638.f_23 = func_385(-1846762425, 993534511, 5f, "NetStableHorseBondingXPOintmentGiven");
-	Global_1901929->f_638.f_24 = func_385(-1846762425, -1501179504, 10f, "NetStableHorseBondingXPCarePackage");
-	Global_1901929->f_638.f_25 = func_385(-1846762425, 1951819216, 1f, "NetStableHorseBondingXPLightenedLoadMin");
-	Global_1901929->f_638.f_26 = func_385(-1846762425, 1833363154, 15f, "NetStableHorseBondingXPLightenedLoadMax");
-	Global_1901929->f_638.f_27 = func_385(-1846762425, 1615912764, -50f, "NetStableHorseBondingXPKilledOwnHorse");
-	Global_1901929->f_638.f_29 = func_383(-1846762425, 777899034, 50, "iMaxHorseCargoPelts");
-	Global_1901929->f_638.f_30 = func_383(-1846762425, 630198085, 50, "iMaxWagonCargoPelts");
-	Global_1901929->f_638.f_28 = func_383(-1846762425, -1281438789, 20, "iHuntingWagonInventory");
-	Global_1901929->f_638.f_31 = func_384(-1846762425, 1225922826, 0, "bDisableHorseCargoSales");
-	Global_1901929->f_638.f_32 = func_384(-1846762425, 764582212, 0, "bDisableWagonCargoSales");
-	Global_1901929->f_638.f_33 = func_384(-1846762425, -1497244873, 0, "bDisableHorseCargoFastTravel");
-	Global_1901929->f_638.f_34 = func_384(-1846762425, -854836691, 0, "bDisableHorseCargoStableEntry");
+	Global_1901929->f_638 = func_383(-1846762425, joaat("NetStableBondingQueueTime"), 300, "NetStableBondingQueueTime");
+	Global_1901929->f_638.f_1 = func_385(-1846762425, joaat("NetStableMaxXPBeforePush"), 200f, "NetStableMaxXPBeforePush");
+	Global_1901929->f_638.f_2 = func_385(-1846762425, joaat("NetStableHorseBondingXPLeading"), 4f, "NetStableHorseBondingXPLeading");
+	Global_1901929->f_638.f_3 = func_385(-1846762425, joaat("NetStableHorseBondingXPWalkTrot"), 2f, "NetStableHorseBondingXPWalkTrot");
+	Global_1901929->f_638.f_4 = func_385(-1846762425, joaat("NetStableHorseBondingXPGallop"), 1f, "NetStableHorseBondingXPGallop");
+	Global_1901929->f_638.f_5 = func_385(-1846762425, joaat("NetStableHorseBondingXPSprint"), 1f, "NetStableHorseBondingXPSprint");
+	Global_1901929->f_638.f_6 = func_385(-1846762425, joaat("NetStableHorseBondingXPEquipSaddle"), 0f, "NetStableHorseBondingXPEquipSaddle");
+	Global_1901929->f_638.f_7 = func_385(-1846762425, joaat("NetStableHorseBondingXPEquipSaddleFirstTime"), 50f, "NetStableHorseBondingXPEquipSaddleFirstTime");
+	Global_1901929->f_638.f_8 = func_385(-1846762425, joaat("NetStableHorseBondingXPBreakHorse"), 0f, "NetStableHorseBondingXPBreakHorse");
+	Global_1901929->f_638.f_9 = func_385(-1846762425, joaat("NetStableHorseBondingXPBreakHorseFirstTime"), 25f, "NetStableHorseBondingXPBreakHorseFirstTime");
+	Global_1901929->f_638.f_10 = func_385(-1846762425, joaat("NetStableHorseBondingXPPatHorseMin"), 1f, "NetStableHorseBondingXPPatHorseMin");
+	Global_1901929->f_638.f_11 = func_385(-1846762425, joaat("NetStableHorseBondingXPPatHorseMax"), 5f, "NetStableHorseBondingXPPatHorseMax");
+	Global_1901929->f_638.f_12 = func_385(-1846762425, joaat("NetStableHorseBondingXPCalmedHorseMin"), 1f, "NetStableHorseBondingXPCalmedHorseMin");
+	Global_1901929->f_638.f_13 = func_385(-1846762425, joaat("NetStableHorseBondingXPCalmedHorseMax"), 15f, "NetStableHorseBondingXPCalmedHorseMax");
+	Global_1901929->f_638.f_14 = func_385(-1846762425, joaat("NetStableHorseBondingXPHitchMin"), 1f, "NetStableHorseBondingXPHitchMin");
+	Global_1901929->f_638.f_15 = func_385(-1846762425, joaat("NetStableHorseBondingXPHitchMax"), 15f, "NetStableHorseBondingXPHitchMax");
+	Global_1901929->f_638.f_16 = func_385(-1846762425, joaat("NetStableHorseBondingXPFeedFoodFed"), 1f, "NetStableHorseBondingXPFeedFoodFed");
+	Global_1901929->f_638.f_17 = func_385(-1846762425, joaat("NetStableHorseBondingXPFeedFoodGettingHungry"), 5f, "NetStableHorseBondingXPFeedFoodGettingHungry");
+	Global_1901929->f_638.f_18 = func_385(-1846762425, joaat("NetStableHorseBondingXPFeedFoodHungry"), 15f, "NetStableHorseBondingXPFeedFoodHungry");
+	Global_1901929->f_638.f_19 = func_385(-1846762425, joaat("NetStableHorseBondingXPFeedSnack"), 5f, "NetStableHorseBondingXPFeedSnack");
+	Global_1901929->f_638.f_20 = func_385(-1846762425, joaat("NetStableHorseBondingXPGroomedClean"), 1f, "NetStableHorseBondingXPGroomedClean");
+	Global_1901929->f_638.f_21 = func_385(-1846762425, joaat("NetStableHorseBondingXPGroomedGettingDirty"), 5f, "NetStableHorseBondingXPGroomedGettingDirty");
+	Global_1901929->f_638.f_22 = func_385(-1846762425, joaat("NetStableHorseBondingXPGroomedDirty"), 15f, "NetStableHorseBondingXPGroomedDirty");
+	Global_1901929->f_638.f_23 = func_385(-1846762425, joaat("NetStableHorseBondingXPOintmentGiven"), 5f, "NetStableHorseBondingXPOintmentGiven");
+	Global_1901929->f_638.f_24 = func_385(-1846762425, joaat("NetStableHorseBondingXPCarePackage"), 10f, "NetStableHorseBondingXPCarePackage");
+	Global_1901929->f_638.f_25 = func_385(-1846762425, joaat("NetStableHorseBondingXPLightenedLoadMin"), 1f, "NetStableHorseBondingXPLightenedLoadMin");
+	Global_1901929->f_638.f_26 = func_385(-1846762425, joaat("NetStableHorseBondingXPLightenedLoadMax"), 15f, "NetStableHorseBondingXPLightenedLoadMax");
+	Global_1901929->f_638.f_27 = func_385(-1846762425, joaat("NetStableHorseBondingXPKilledOwnHorse"), -50f, "NetStableHorseBondingXPKilledOwnHorse");
+	Global_1901929->f_638.f_29 = func_383(-1846762425, joaat("iMaxHorseCargoPelts"), 50, "iMaxHorseCargoPelts");
+	Global_1901929->f_638.f_30 = func_383(-1846762425, joaat("iMaxWagonCargoPelts"), 50, "iMaxWagonCargoPelts");
+	Global_1901929->f_638.f_28 = func_383(-1846762425, joaat("iHuntingWagonInventory"), 20, "iHuntingWagonInventory");
+	Global_1901929->f_638.f_31 = func_384(-1846762425, joaat("bDisableHorseCargoSales"), 0, "bDisableHorseCargoSales");
+	Global_1901929->f_638.f_32 = func_384(-1846762425, joaat("bDisableWagonCargoSales"), 0, "bDisableWagonCargoSales");
+	Global_1901929->f_638.f_33 = func_384(-1846762425, joaat("bDisableHorseCargoFastTravel"), 0, "bDisableHorseCargoFastTravel");
+	Global_1901929->f_638.f_34 = func_384(-1846762425, joaat("bDisableHorseCargoStableEntry"), 0, "bDisableHorseCargoStableEntry");
 }
 
 void func_201(int iParam0)
@@ -7894,7 +7894,7 @@ void func_201(int iParam0)
 
 void func_202()
 {
-	Global_1901929->f_629.f_4 = func_383(-1962032551, 984890790, 50, "PvEMaxKillXP");
+	Global_1901929->f_629.f_4 = func_383(-1962032551, joaat("PvEMaxKillXP"), 50, "PvEMaxKillXP");
 	if (Global_1901929->f_629.f_4 < 1)
 	{
 		Global_1901929->f_629.f_4 = 50;
@@ -7915,7 +7915,7 @@ void func_204()
 	int iVar0;
 	int iVar1;
 
-	Global_1901929->f_719 = func_383(1568026245, 813665031, 10, "PLAYER_MENU_PLAYER_OPTIONS_GSS_DELAY");
+	Global_1901929->f_719 = func_383(1568026245, joaat("PLAYER_MENU_PLAYER_OPTIONS_GSS_DELAY"), 10, "PLAYER_MENU_PLAYER_OPTIONS_GSS_DELAY");
 	iVar0 = 0;
 	iVar1 = 10000;
 	if (Global_1901929->f_719 < iVar0 || Global_1901929->f_719 > iVar1)
@@ -7926,11 +7926,11 @@ void func_204()
 
 void func_205()
 {
-	Global_1901929->f_755 = func_384(-1985006005, -1472407298, 0, "NET_MINIGAME_RESTRICTOR_BLOCK_LOCKOUT");
-	Global_1901929->f_755.f_1 = func_383(-1985006005, 386257879, 144000, "NET_MINIGAME_RESTRICTOR_GAMBLING_LIMIT_IN_SECONDS");
-	Global_1901929->f_755.f_2 = func_383(-1985006005, 1491213745, 50, "NET_MINIGAME_RESTRICTOR_GAMBLING_PERCENTAGE");
-	Global_1901929->f_755.f_3 = func_383(-1985006005, 1448958256, 604800, "NET_MINIGAME_RESTRICTOR_LOCKOUT_IN_SECONDS");
-	Global_1901929->f_755.f_4 = func_383(-1985006005, -1634010356, 28, "NET_MINIGAME_RESTRICTOR_ROLLING_DAYS");
+	Global_1901929->f_755 = func_384(-1985006005, joaat("NET_MINIGAME_RESTRICTOR_BLOCK_LOCKOUT"), 0, "NET_MINIGAME_RESTRICTOR_BLOCK_LOCKOUT");
+	Global_1901929->f_755.f_1 = func_383(-1985006005, joaat("NET_MINIGAME_RESTRICTOR_GAMBLING_LIMIT_IN_SECONDS"), 144000, "NET_MINIGAME_RESTRICTOR_GAMBLING_LIMIT_IN_SECONDS");
+	Global_1901929->f_755.f_2 = func_383(-1985006005, joaat("NET_MINIGAME_RESTRICTOR_GAMBLING_PERCENTAGE"), 50, "NET_MINIGAME_RESTRICTOR_GAMBLING_PERCENTAGE");
+	Global_1901929->f_755.f_3 = func_383(-1985006005, joaat("NET_MINIGAME_RESTRICTOR_LOCKOUT_IN_SECONDS"), 604800, "NET_MINIGAME_RESTRICTOR_LOCKOUT_IN_SECONDS");
+	Global_1901929->f_755.f_4 = func_383(-1985006005, joaat("NET_MINIGAME_RESTRICTOR_ROLLING_DAYS"), 28, "NET_MINIGAME_RESTRICTOR_ROLLING_DAYS");
 	if (Global_1901929->f_755.f_1 < 0)
 	{
 		Global_1901929->f_755.f_1 = 0;
@@ -7948,24 +7948,24 @@ void func_206(int iParam0)
 
 void func_207()
 {
-	Global_1901929->f_721 = func_385(joaat("mp_collectibles"), -1770341755, 100f, "TRAVELLING_SALESMAN__BLIP_DISTANCE");
-	Global_1901929->f_721.f_1 = func_385(joaat("mp_collectibles"), 829944720, 150f, "TRAVELLING_SALESMAN__MUSIC_DISTANCE");
+	Global_1901929->f_721 = func_385(joaat("mp_collectibles"), joaat("TRAVELLING_SALESMAN__BLIP_DISTANCE"), 100f, "TRAVELLING_SALESMAN__BLIP_DISTANCE");
+	Global_1901929->f_721.f_1 = func_385(joaat("mp_collectibles"), joaat("TRAVELLING_SALESMAN__MUSIC_DISTANCE"), 150f, "TRAVELLING_SALESMAN__MUSIC_DISTANCE");
 }
 
 void func_208()
 {
-	Global_1901929->f_723 = func_384(-553646626, 1688416073, 1, "SC_FEED_ENABLE_BOUNTYHUNTER_RANK_005");
-	Global_1901929->f_723.f_1 = func_384(-553646626, 1257504015, 1, "SC_FEED_ENABLE_BOUNTYHUNTER_RANK_010");
-	Global_1901929->f_723.f_2 = func_384(-553646626, 1725969635, 1, "SC_FEED_ENABLE_BOUNTYHUNTER_RANK_015");
-	Global_1901929->f_723.f_3 = func_384(-553646626, -663513274, 1, "SC_FEED_ENABLE_COLLECTOR_RANK_005");
-	Global_1901929->f_723.f_4 = func_384(-553646626, -327860755, 1, "SC_FEED_ENABLE_COLLECTOR_RANK_010");
-	Global_1901929->f_723.f_5 = func_384(-553646626, -134392579, 1, "SC_FEED_ENABLE_COLLECTOR_RANK_015");
-	Global_1901929->f_723.f_6 = func_384(-553646626, -1410077126, 1, "SC_FEED_ENABLE_TRADER_RANK_005");
-	Global_1901929->f_723.f_7 = func_384(-553646626, 666199795, 1, "SC_FEED_ENABLE_TRADER_RANK_010");
-	Global_1901929->f_723.f_8 = func_384(-553646626, -98366517, 1, "SC_FEED_ENABLE_TRADER_RANK_015");
-	Global_1901929->f_723.f_9 = func_384(-553646626, 448433853, 1, "SC_FEED_ENABLE_MOONSHINER_RANK_005");
-	Global_1901929->f_723.f_10 = func_384(-553646626, -1373063505, 1, "SC_FEED_ENABLE_MOONSHINER_RANK_010");
-	Global_1901929->f_723.f_11 = func_384(-553646626, -1073194386, 1, "SC_FEED_ENABLE_MOONSHINER_RANK_015");
+	Global_1901929->f_723 = func_384(-553646626, joaat("SC_FEED_ENABLE_BOUNTYHUNTER_RANK_005"), 1, "SC_FEED_ENABLE_BOUNTYHUNTER_RANK_005");
+	Global_1901929->f_723.f_1 = func_384(-553646626, joaat("SC_FEED_ENABLE_BOUNTYHUNTER_RANK_010"), 1, "SC_FEED_ENABLE_BOUNTYHUNTER_RANK_010");
+	Global_1901929->f_723.f_2 = func_384(-553646626, joaat("SC_FEED_ENABLE_BOUNTYHUNTER_RANK_015"), 1, "SC_FEED_ENABLE_BOUNTYHUNTER_RANK_015");
+	Global_1901929->f_723.f_3 = func_384(-553646626, joaat("SC_FEED_ENABLE_COLLECTOR_RANK_005"), 1, "SC_FEED_ENABLE_COLLECTOR_RANK_005");
+	Global_1901929->f_723.f_4 = func_384(-553646626, joaat("SC_FEED_ENABLE_COLLECTOR_RANK_010"), 1, "SC_FEED_ENABLE_COLLECTOR_RANK_010");
+	Global_1901929->f_723.f_5 = func_384(-553646626, joaat("SC_FEED_ENABLE_COLLECTOR_RANK_015"), 1, "SC_FEED_ENABLE_COLLECTOR_RANK_015");
+	Global_1901929->f_723.f_6 = func_384(-553646626, joaat("SC_FEED_ENABLE_TRADER_RANK_005"), 1, "SC_FEED_ENABLE_TRADER_RANK_005");
+	Global_1901929->f_723.f_7 = func_384(-553646626, joaat("SC_FEED_ENABLE_TRADER_RANK_010"), 1, "SC_FEED_ENABLE_TRADER_RANK_010");
+	Global_1901929->f_723.f_8 = func_384(-553646626, joaat("SC_FEED_ENABLE_TRADER_RANK_015"), 1, "SC_FEED_ENABLE_TRADER_RANK_015");
+	Global_1901929->f_723.f_9 = func_384(-553646626, joaat("SC_FEED_ENABLE_MOONSHINER_RANK_005"), 1, "SC_FEED_ENABLE_MOONSHINER_RANK_005");
+	Global_1901929->f_723.f_10 = func_384(-553646626, joaat("SC_FEED_ENABLE_MOONSHINER_RANK_010"), 1, "SC_FEED_ENABLE_MOONSHINER_RANK_010");
+	Global_1901929->f_723.f_11 = func_384(-553646626, joaat("SC_FEED_ENABLE_MOONSHINER_RANK_015"), 1, "SC_FEED_ENABLE_MOONSHINER_RANK_015");
 }
 
 void func_209(int iParam0)
@@ -8009,18 +8009,18 @@ void func_210()
 	int iVar20;
 	int iVar21;
 
-	Global_1901929->f_743 = func_385(joaat("mp_moonshiner"), 178944019, 30f, "MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_WEAK");
+	Global_1901929->f_743 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_WEAK"), 30f, "MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_WEAK");
 	Global_1901929->f_743.f_1 = func_385(joaat("mp_moonshiner"), -41122219, 45f, "MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_DEFAULT");
-	Global_1901929->f_743.f_2 = func_385(joaat("mp_moonshiner"), -925810086, 60f, "MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_STRONG");
-	Global_1901929->f_743.f_3 = func_385(joaat("mp_moonshiner"), 1534685627, 40f, "MOONSHINE_PROPERTY_DIST_TO_SUPPRESS_DOOR_CHARGE");
-	Global_1901929->f_743.f_4 = func_385(joaat("mp_moonshiner"), -1183883239, 15f, "MOONSHINE_PROPERTY_DIST_TO_BLOCK_CARRIABLE_DROPS");
-	Global_1901929->f_743.f_5 = func_383(joaat("mp_moonshiner"), 1147869078, 20, "MOONSHINE_BUSINESS_DEFAULT_UNITS_OF_MASH_PURCHASED");
-	Global_1901929->f_743.f_6 = func_383(joaat("mp_moonshiner"), 1346636723, 20, "MOONSHINE_BUSINESS_DEFAULT_BOTTLES_REQUIRED_FOR_DELIVERY");
-	Global_1901929->f_743.f_7 = func_383(joaat("mp_moonshiner"), 181855951, 10000, "MOONSHINE_SHACK_MILLISECONDS_BEFORE_SHACK_EXIT");
-	Global_1901929->f_743.f_8 = func_385(joaat("mp_moonshiner"), -1357099865, 250f, "MOONSHINE_FORCED_EXIT_OUTER_RADIUS");
-	Global_1901929->f_743.f_9 = func_385(joaat("mp_moonshiner"), 980936602, 25f, "MOONSHINE_FORCED_EXIT_INNER_RADIUS");
-	Global_1901929->f_743.f_10 = func_385(joaat("mp_moonshiner"), -89781617, 40f, "MOONSHINE_SAFETY_DIST_RADIUS");
-	Global_1901929->f_743.f_11 = func_383(joaat("mp_moonshiner"), 1790013431, 20000, "MOONSHINE_LOAD_SCENE_FAILSAFE_TIMER");
+	Global_1901929->f_743.f_2 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_STRONG"), 60f, "MOONSHINE_BUSINESS_MINS_TO_CREATE_MOONSHINE_STRONG");
+	Global_1901929->f_743.f_3 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_PROPERTY_DIST_TO_SUPPRESS_DOOR_CHARGE"), 40f, "MOONSHINE_PROPERTY_DIST_TO_SUPPRESS_DOOR_CHARGE");
+	Global_1901929->f_743.f_4 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_PROPERTY_DIST_TO_BLOCK_CARRIABLE_DROPS"), 15f, "MOONSHINE_PROPERTY_DIST_TO_BLOCK_CARRIABLE_DROPS");
+	Global_1901929->f_743.f_5 = func_383(joaat("mp_moonshiner"), joaat("MOONSHINE_BUSINESS_DEFAULT_UNITS_OF_MASH_PURCHASED"), 20, "MOONSHINE_BUSINESS_DEFAULT_UNITS_OF_MASH_PURCHASED");
+	Global_1901929->f_743.f_6 = func_383(joaat("mp_moonshiner"), joaat("MOONSHINE_BUSINESS_DEFAULT_BOTTLES_REQUIRED_FOR_DELIVERY"), 20, "MOONSHINE_BUSINESS_DEFAULT_BOTTLES_REQUIRED_FOR_DELIVERY");
+	Global_1901929->f_743.f_7 = func_383(joaat("mp_moonshiner"), joaat("MOONSHINE_SHACK_MILLISECONDS_BEFORE_SHACK_EXIT"), 10000, "MOONSHINE_SHACK_MILLISECONDS_BEFORE_SHACK_EXIT");
+	Global_1901929->f_743.f_8 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_FORCED_EXIT_OUTER_RADIUS"), 250f, "MOONSHINE_FORCED_EXIT_OUTER_RADIUS");
+	Global_1901929->f_743.f_9 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_FORCED_EXIT_INNER_RADIUS"), 25f, "MOONSHINE_FORCED_EXIT_INNER_RADIUS");
+	Global_1901929->f_743.f_10 = func_385(joaat("mp_moonshiner"), joaat("MOONSHINE_SAFETY_DIST_RADIUS"), 40f, "MOONSHINE_SAFETY_DIST_RADIUS");
+	Global_1901929->f_743.f_11 = func_383(joaat("mp_moonshiner"), joaat("MOONSHINE_LOAD_SCENE_FAILSAFE_TIMER"), 20000, "MOONSHINE_LOAD_SCENE_FAILSAFE_TIMER");
 	fVar0 = 0f;
 	fVar1 = 600f;
 	if (Global_1901929->f_743 < fVar0 || Global_1901929->f_743 > fVar1)
@@ -8832,13 +8832,13 @@ int func_252(int iParam0)
 		case joaat("NEW_GAME"):
 			iVar0 = 1;
 			break;
-		case 1651967528:
+		case joaat("shift_f"):
 			iVar0 = 2;
 			break;
-		case -84928653:
+		case joaat("demo"):
 			iVar0 = 4;
 			break;
-		case 1306134188:
+		case joaat("intro_not_done"):
 			iVar0 = 8;
 			break;
 		case joaat("private"):
@@ -8847,76 +8847,76 @@ int func_252(int iParam0)
 		case joaat("friendly"):
 			iVar0 = 32;
 			break;
-		case 655115506:
+		case joaat("hardcore"):
 			iVar0 = 64;
 			break;
-		case 1737952409:
+		case joaat("near_posse"):
 			iVar0 = 128;
 			break;
-		case 2137301164:
+		case joaat("random_posse"):
 			iVar0 = 256;
 			break;
-		case -110687166:
+		case joaat("open_posse"):
 			iVar0 = 512;
 			break;
-		case -2030542394:
+		case joaat("follow_invite"):
 			iVar0 = 1024;
 			break;
-		case -11301188:
+		case joaat("random_region"):
 			iVar0 = 2048;
 			break;
-		case -1312679892:
+		case joaat("last_region"):
 			iVar0 = 4096;
 			break;
-		case -61119924:
+		case joaat("last_location"):
 			iVar0 = 8192;
 			break;
 		case joaat("camp"):
 			iVar0 = 16384;
 			break;
-		case -159568751:
+		case joaat("handheld"):
 			iVar0 = 32768;
 			break;
 		case joaat("last_mission"):
 			iVar0 = 65536;
 			break;
-		case -1854341522:
+		case joaat("random_poker"):
 			iVar0 = 131072;
 			break;
-		case 1464020707:
+		case joaat("bg_custom_1"):
 			iVar0 = 262144;
 			break;
-		case 1098974047:
+		case joaat("bg_custom_2"):
 			iVar0 = 524288;
 			break;
-		case 868706284:
+		case joaat("bg_custom_3"):
 			iVar0 = 1048576;
 			break;
-		case 313296873:
+		case joaat("trade_1"):
 			iVar0 = 2097152;
 			break;
-		case 541270806:
+		case joaat("trade_2"):
 			iVar0 = 4194304;
 			break;
-		case 922800273:
+		case joaat("trade_3"):
 			iVar0 = 8388608;
 			break;
-		case 1298496858:
+		case joaat("trade_4"):
 			iVar0 = 16777216;
 			break;
-		case 1699163417:
+		case joaat("trade_5"):
 			iVar0 = 33554432;
 			break;
-		case 864110990:
+		case joaat("trade_6"):
 			iVar0 = 67108864;
 			break;
-		case -2127829790:
+		case joaat("trade_7"):
 			iVar0 = 134217728;
 			break;
-		case -575777117:
+		case joaat("cchar"):
 			iVar0 = 268435456;
 			break;
-		case -1879562593:
+		case joaat("coupon"):
 			iVar0 = 536870912;
 			break;
 		case joaat("hub"):
@@ -9991,7 +9991,7 @@ void func_300(int iParam0, int iParam1, int iParam2, int iParam3)
 			bVar3 = false;
 			break;
 		case joaat("ammo"):
-		case 1495295997:
+		case joaat("minigame"):
 			bVar2 = false;
 			break;
 		case joaat("coach"):
@@ -10019,7 +10019,7 @@ void func_300(int iParam0, int iParam1, int iParam2, int iParam3)
 				func_481(iParam0->f_8, 0, 1);
 			}
 			break;
-		case -1879562593:
+		case joaat("coupon"):
 		case 1417470098:
 			if (bVar4)
 			{
@@ -10285,7 +10285,7 @@ void func_301(int iParam0, int iParam1, int iParam2)
 				}
 			}
 			break;
-		case 810656527:
+		case joaat("ability_card"):
 			if (func_503())
 			{
 				if (func_504(iParam0->f_8, &Var7, 2, -1))
@@ -10299,7 +10299,7 @@ void func_301(int iParam0, int iParam1, int iParam2)
 			func_506();
 			func_507(*iParam0);
 			break;
-		case 1495295997:
+		case joaat("minigame"):
 			bVar2 = false;
 			bVar5 = false;
 			break;
@@ -22508,16 +22508,16 @@ void func_387(char* sParam0, char* sParam1, char* sParam2, int iParam3)
 
 void func_388()
 {
-	Global_1901929->f_44.f_16 = func_383(-797337544, -1549704562, 2000, "NPS_AFK_Start");
-	Global_1901929->f_44.f_17 = func_383(-797337544, -385707113, 120000, "NPS_AFK_Warning_0");
-	Global_1901929->f_44.f_18 = func_383(-797337544, -566198765, 300000, "NPS_AFK_Warning_1");
-	Global_1901929->f_44.f_19 = func_383(-797337544, -863708516, 600000, "NPS_AFK_Warning_2");
-	Global_1901929->f_44.f_20 = func_383(-797337544, -1835051675, 900000, "NPS_AFK_Kick");
-	Global_1901929->f_44.f_21 = func_383(-797337544, -1804689879, 2000, "NPS_IC_AFK_Start");
-	Global_1901929->f_44.f_22 = func_383(-797337544, -140783116, 120000, "NPS_IC_AFK_Warning_0");
-	Global_1901929->f_44.f_23 = func_383(-797337544, -516938467, 180000, "NPS_IC_AFK_Warning_1");
-	Global_1901929->f_44.f_24 = func_383(-797337544, -623175565, 240000, "NPS_IC_AFK_Warning_2");
-	Global_1901929->f_44.f_25 = func_383(-797337544, -2031369234, 300000, "NPS_IC_AFK_Kick");
+	Global_1901929->f_44.f_16 = func_383(-797337544, joaat("NPS_AFK_Start"), 2000, "NPS_AFK_Start");
+	Global_1901929->f_44.f_17 = func_383(-797337544, joaat("NPS_AFK_Warning_0"), 120000, "NPS_AFK_Warning_0");
+	Global_1901929->f_44.f_18 = func_383(-797337544, joaat("NPS_AFK_Warning_1"), 300000, "NPS_AFK_Warning_1");
+	Global_1901929->f_44.f_19 = func_383(-797337544, joaat("NPS_AFK_Warning_2"), 600000, "NPS_AFK_Warning_2");
+	Global_1901929->f_44.f_20 = func_383(-797337544, joaat("NPS_AFK_Kick"), 900000, "NPS_AFK_Kick");
+	Global_1901929->f_44.f_21 = func_383(-797337544, joaat("NPS_IC_AFK_Start"), 2000, "NPS_IC_AFK_Start");
+	Global_1901929->f_44.f_22 = func_383(-797337544, joaat("NPS_IC_AFK_Warning_0"), 120000, "NPS_IC_AFK_Warning_0");
+	Global_1901929->f_44.f_23 = func_383(-797337544, joaat("NPS_IC_AFK_Warning_1"), 180000, "NPS_IC_AFK_Warning_1");
+	Global_1901929->f_44.f_24 = func_383(-797337544, joaat("NPS_IC_AFK_Warning_2"), 240000, "NPS_IC_AFK_Warning_2");
+	Global_1901929->f_44.f_25 = func_383(-797337544, joaat("NPS_IC_AFK_Kick"), 300000, "NPS_IC_AFK_Kick");
 	if (Global_1901929->f_44.f_16 < 0)
 	{
 		Global_1901929->f_44.f_16 = 2000;
@@ -23955,7 +23955,7 @@ int func_461(int iParam0)
 	{
 		case joaat("NET_PLAYLIST_RACE_SERIES"):
 			return 0;
-		case -1804958860:
+		case joaat("NET_PLAYLIST_FEATURED_SERIES_001"):
 			return 1;
 		case joaat("NET_PLAYLIST_ADVERSARY_SMALL"):
 			return 2;
@@ -24123,7 +24123,7 @@ int func_470(int iParam0)
 		case 0:
 			return joaat("NET_PLAYLIST_RACE_SERIES");
 		case 1:
-			return -1804958860;
+			return joaat("NET_PLAYLIST_FEATURED_SERIES_001");
 		case 2:
 			return joaat("NET_PLAYLIST_ADVERSARY_SMALL");
 		case 3:
@@ -24556,7 +24556,7 @@ void func_484(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar6 = func_475(bParam0);
 	iVar10 = 0;
 	iVar11 = joaat("inventory");
-	if (((((((iVar6 == joaat("ammo") && bParam0 != 424030678) && bParam0 != -1188697038) && bParam0 != 446901936) && bParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && bParam0 != 34372170) && bParam0 != 963726415) && bParam0 != 1701457723)
+	if (((((((iVar6 == joaat("ammo") && bParam0 != 424030678) && bParam0 != -1188697038) && bParam0 != 446901936) && bParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && bParam0 != 34372170) && bParam0 != joaat("AMMO_POISONBOTTLE")) && bParam0 != 1701457723)
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");
@@ -27185,12 +27185,12 @@ void func_573(int iParam0)
 		case 1793677017:
 			sVar3 = "TF_MP_MOONSHINER_ADDITIONAL_BUYER";
 			break;
-		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
-		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
-		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
-		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
-		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
-		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND"):
+		case joaat("PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE"):
 			iVar0 = 882;
 			bVar2 = true;
 			bVar1 = true;
@@ -27291,7 +27291,7 @@ int func_579(bool bParam0)
 	int iVar0;
 
 	iVar0 = func_475(bParam0);
-	if ((iVar0 == 810656527 || iVar0 == 2088138839) || iVar0 == 129583122)
+	if ((iVar0 == joaat("ability_card") || iVar0 == 2088138839) || iVar0 == 129583122)
 	{
 		return 1;
 	}
@@ -33397,7 +33397,7 @@ void func_831()
 		Var2.f_5 = sVar1;
 		Var2.f_6 = joaat("toasts_mp_generic");
 		Var2.f_7 = joaat("mp_rank_toast");
-		Var2.f_19 = 347537322;
+		Var2.f_19 = joaat("progress_menu");
 		Var2.f_20 = 2147086796;
 	}
 	else
@@ -35019,13 +35019,13 @@ int func_910(int iParam0, int iParam1)
 		case 8:
 			return joaat("CRIME_BURGLARY");
 		case 9:
-			return -1560342203 /* GXTEntry: "Cheating" */;
+			return joaat("CRIME_CHEATING");
 		case 10:
 			return joaat("CRIME_DISTURBANCE");
 		case 11:
 			return joaat("CRIME_EXPLOSION");
 		case 12:
-			return -1759599185 /* GXTEntry: "Grave Robbery" */;
+			return joaat("CRIME_GRAVE_ROBBERY");
 		case 13:
 			return joaat("CRIME_HASSLE");
 		case 14:
@@ -35039,7 +35039,7 @@ int func_910(int iParam0, int iParam1)
 		case 18:
 			return joaat("CRIME_JACK_VEHICLE");
 		case 19:
-			return 314693001 /* GXTEntry: "Jail Break" */;
+			return joaat("CRIME_JAIL_BREAK");
 		case 20:
 			return joaat("CRIME_KIDNAPPING");
 		case 21:
@@ -35063,13 +35063,13 @@ int func_910(int iParam0, int iParam1)
 		case 30:
 			return joaat("CRIME_MURDER_LIVESTOCK");
 		case 31:
-			return 1396375613 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_PROPERTY_DESTRUCTION");
 		case 32:
 			return joaat("CRIME_RESIST_ARREST");
 		case 33:
 			return joaat("CRIME_ROBBERY");
 		case 34:
-			return -59535775 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_STAGECOACH_ROBBERY");
 		case 35:
 			return joaat("CRIME_STOLEN_GOODS");
 		case 36:
@@ -35085,7 +35085,7 @@ int func_910(int iParam0, int iParam1)
 		case 41:
 			return joaat("CRIME_THREATEN_LAW");
 		case 42:
-			return 1685924442 /* GXTEntry: "Train Robbery" */;
+			return joaat("CRIME_TRAIN_ROBBERY");
 		case 43:
 			return joaat("CRIME_TRAMPLE");
 		case 44:
@@ -40812,7 +40812,7 @@ int func_1162(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -42735,7 +42735,7 @@ bool func_1194(bool bParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			bVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415: /* GXTEntry: "Toxic Moonshine" */
+		case joaat("AMMO_POISONBOTTLE"):
 			bVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -47962,7 +47962,7 @@ int func_1357(struct<2> Param0, var uParam2, var uParam3, var uParam4, int iPara
 				case 253781561:
 					uVar2 = func_1486(iVar4);
 					break;
-				case -646838152:
+				case joaat("prerequisite"):
 					uVar2 = func_1487(iVar4);
 					break;
 				case 356437857:

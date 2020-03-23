@@ -3692,7 +3692,7 @@ int func_145(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return 1927192818;
+			return joaat("challenges");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -4039,7 +4039,7 @@ int func_166(int iParam0)
 			return 228268721;
 		case 1236089687:
 			return -1633399791;
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return -1633399791;
 		case -1438861031:
 			return -1633399791;
@@ -4084,7 +4084,7 @@ int func_168(int iParam0)
 		case -1776494039:
 		case -1438861031:
 		case 1236089687:
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return 1;
 		default:
 			break;
@@ -4182,7 +4182,7 @@ int func_177()
 	{
 		case -1438861031:
 		case 1236089687:
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return 13792;
 		case joaat("Hunting"):
 			return 9728;
@@ -8872,7 +8872,7 @@ int func_402(int iParam0)
 	{
 		case 1236089687:
 			return 526074061 /* GXTEntry: "Lake Lure Handbill" */;
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return -1045488665 /* GXTEntry: "River Lure Handbill" */;
 		case -1438861031:
 			return 471514780 /* GXTEntry: "Swamp Lure Handbill" */;
@@ -8906,7 +8906,7 @@ int func_404(int iParam0, int iParam1)
 	{
 		case 1236089687:
 			return joaat("UPGRADE_FSH_BAIT_LURE_LAKE");
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return joaat("UPGRADE_FSH_BAIT_LURE_RIVER");
 		case -1438861031:
 			return joaat("UPGRADE_FSH_BAIT_LURE_SWAMP");
@@ -9215,7 +9215,7 @@ int func_425()
 	{
 		case -1438861031:
 		case 1236089687:
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return 1;
 		default:
 			break;
@@ -9997,7 +9997,7 @@ char* func_470()
 			return "FMECHAL_VARIATION_BOW_HELP_TEMP_WEAPON";
 		case 1236089687:
 			return "FMECHAL_VARIATION_FISHING_HELP_TEMP_WEAPON";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "FMECHAL_VARIATION_FISHING_HELP_TEMP_WEAPON";
 		case -1438861031:
 			return "FMECHAL_VARIATION_FISHING_HELP_TEMP_WEAPON";
@@ -10409,7 +10409,7 @@ int func_494()
 			return joaat("WEAPON_BOW");
 		case 1236089687:
 			return joaat("WEAPON_FISHINGROD");
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return joaat("WEAPON_FISHINGROD");
 		case -1438861031:
 			return joaat("WEAPON_FISHINGROD");
@@ -10689,7 +10689,7 @@ struct<8> func_510()
 		case 1236089687:
 			StringCopy(&cVar0, "FMECHAL_VARIATION_FISHING_LAKE_INTRO_SHARD_TITLE", 64);
 			break;
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			StringCopy(&cVar0, "FMECHAL_VARIATION_FISHING_RIVER_INTRO_SHARD_TITLE", 64);
 			break;
 		case -1438861031:
@@ -12935,7 +12935,7 @@ char* func_626(int iParam0)
 			return "MP_FM_END";
 		case 1236089687:
 			return "MP_FM_FISHING_STOP";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "MP_FM_FISHING_STOP";
 		case -1438861031:
 			return "MP_FM_FISHING_STOP";
@@ -16516,7 +16516,7 @@ char* func_809(int iParam0)
 			return "MC_DEFENDING";
 		case 1236089687:
 			return "MP_FM_FISHING_START";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "MP_FM_FISHING_START";
 		case -1438861031:
 			return "MP_FM_FISHING_START";
@@ -17044,7 +17044,7 @@ char* func_828(int iParam0)
 			return "FMECHAL_VARIATION_MELEE_OBJECTIVE";
 		case 1236089687:
 			return "FMECHAL_VARIATION_FISHING_OBJECTIVE";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "FMECHAL_VARIATION_FISHING_OBJECTIVE";
 		case -1438861031:
 			return "FMECHAL_VARIATION_FISHING_OBJECTIVE";
@@ -18462,7 +18462,7 @@ char* func_876(int iParam0)
 			return "FMECHAL_VARIATION_MELEE_OUTRO_SHARD_WIN";
 		case 1236089687:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_WIN";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_WIN";
 		case -1438861031:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_WIN";
@@ -18500,7 +18500,7 @@ char* func_877(int iParam0)
 			return "FMECHAL_VARIATION_MELEE_OUTRO_SHARD_WIN_PLURAL";
 		case 1236089687:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_WIN";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_WIN";
 		case -1438861031:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_WIN";
@@ -18538,7 +18538,7 @@ char* func_878(int iParam0, float fParam1)
 			return "FMECHAL_VARIATION_MELEE_OUTRO_SHARD_FAIL";
 		case 1236089687:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_FAIL";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_FAIL";
 		case -1438861031:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_FAIL";
@@ -18580,7 +18580,7 @@ char* func_879(int iParam0)
 			return "FMECHAL_VARIATION_MELEE_OUTRO_SHARD_FAIL";
 		case 1236089687:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_FAIL";
-		case 2131947536:
+		case joaat("FISHING_RIVER"):
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_FAIL";
 		case -1438861031:
 			return "FMECHAL_VARIATION_FISHING_OUTRO_SHARD_FAIL";
@@ -19149,13 +19149,13 @@ int func_911(int iParam0, int iParam1)
 		case 8:
 			return joaat("CRIME_BURGLARY");
 		case 9:
-			return -1560342203 /* GXTEntry: "Cheating" */;
+			return joaat("CRIME_CHEATING");
 		case 10:
 			return joaat("CRIME_DISTURBANCE");
 		case 11:
 			return joaat("CRIME_EXPLOSION");
 		case 12:
-			return -1759599185 /* GXTEntry: "Grave Robbery" */;
+			return joaat("CRIME_GRAVE_ROBBERY");
 		case 13:
 			return joaat("CRIME_HASSLE");
 		case 14:
@@ -19169,7 +19169,7 @@ int func_911(int iParam0, int iParam1)
 		case 18:
 			return joaat("CRIME_JACK_VEHICLE");
 		case 19:
-			return 314693001 /* GXTEntry: "Jail Break" */;
+			return joaat("CRIME_JAIL_BREAK");
 		case 20:
 			return joaat("CRIME_KIDNAPPING");
 		case 21:
@@ -19193,13 +19193,13 @@ int func_911(int iParam0, int iParam1)
 		case 30:
 			return joaat("CRIME_MURDER_LIVESTOCK");
 		case 31:
-			return 1396375613 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_PROPERTY_DESTRUCTION");
 		case 32:
 			return joaat("CRIME_RESIST_ARREST");
 		case 33:
 			return joaat("CRIME_ROBBERY");
 		case 34:
-			return -59535775 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_STAGECOACH_ROBBERY");
 		case 35:
 			return joaat("CRIME_STOLEN_GOODS");
 		case 36:
@@ -19215,7 +19215,7 @@ int func_911(int iParam0, int iParam1)
 		case 41:
 			return joaat("CRIME_THREATEN_LAW");
 		case 42:
-			return 1685924442 /* GXTEntry: "Train Robbery" */;
+			return joaat("CRIME_TRAIN_ROBBERY");
 		case 43:
 			return joaat("CRIME_TRAMPLE");
 		case 44:
@@ -25086,7 +25086,7 @@ int func_1146(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1777724963:
+		case joaat("bounty_board"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -27878,7 +27878,7 @@ int func_1226(int iParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			iVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415: /* GXTEntry: "Toxic Moonshine" */
+		case joaat("AMMO_POISONBOTTLE"):
 			iVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -28475,7 +28475,7 @@ void func_1252(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	iVar6 = func_986(iParam0);
 	iVar10 = 0;
 	iVar11 = joaat("inventory");
-	if (((((((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038) && iParam0 != 446901936) && iParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && iParam0 != 34372170) && iParam0 != 963726415) && iParam0 != 1701457723)
+	if (((((((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038) && iParam0 != 446901936) && iParam0 != joaat("AMMO_TOMAHAWK_ANCIENT")) && iParam0 != 34372170) && iParam0 != joaat("AMMO_POISONBOTTLE")) && iParam0 != 1701457723)
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");
@@ -34304,7 +34304,7 @@ int func_1511(int iParam0)
 		case 23:
 			return joaat("rpg_textures");
 		case 22:
-			return -1019997170;
+			return joaat("rpg_agitation");
 		case 24:
 			return joaat("COLOR_ENEMY");
 		case 18:
@@ -40551,7 +40551,7 @@ int func_1764(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case -1261475678:
+		case joaat("ambush"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -40601,17 +40601,17 @@ int func_1765(int iParam0)
 	{
 		case joaat("blackjack"):
 			return 0;
-		case 390152599:
+		case joaat("Dominoes"):
 			return 1;
-		case 348001928:
+		case joaat("Poker"):
 			return 2;
-		case 687137831:
+		case joaat("FILLET"):
 			return 3;
 		case joaat("milking_cow"):
 			return 4;
-		case -669486032:
+		case joaat("CLEAN_STALLS"):
 			return 5;
-		case -1044132584:
+		case joaat("FENCE_BUILDING"):
 			return 6;
 		default:
 			break;
@@ -40625,7 +40625,7 @@ int func_1766(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case 1927192818:
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -43558,7 +43558,7 @@ int func_1861(int iParam0)
 	int iVar0;
 
 	iVar0 = func_986(iParam0);
-	if ((iVar0 == 810656527 || iVar0 == 2088138839) || iVar0 == 129583122)
+	if ((iVar0 == joaat("ability_card") || iVar0 == 2088138839) || iVar0 == 129583122)
 	{
 		return 1;
 	}
@@ -45809,7 +45809,7 @@ int func_1953(int iParam0)
 		case 1:
 			return joaat("DISTRICT_BIG_VALLEY");
 		case 2:
-			return 38535626;
+			return joaat("DISTRICT_BLUEGILL_MARSH");
 		case 3:
 			return joaat("DISTRICT_CUMBERLAND_FOREST");
 		case 4:
@@ -45817,15 +45817,15 @@ int func_1953(int iParam0)
 		case 5:
 			return joaat("DISTRICT_GRIZZLIES");
 		case 6:
-			return -1808688941;
+			return joaat("DISTRICT_GRIZZLIES_EAST");
 		case 7:
-			return -736296038;
+			return joaat("DISTRICT_GRIZZLIES_WEST");
 		case 8:
-			return -909439131;
+			return joaat("DISTRICT_GUAMA");
 		case 9:
-			return 1917744724;
+			return joaat("DISTRICT_HEARTLAND");
 		case 10:
-			return 821748379;
+			return joaat("DISTRICT_ROANOKE_RIDGE");
 		case 11:
 			return joaat("DISTRICT_SCARLETT_MEADOWS");
 		case 12:
@@ -47148,7 +47148,7 @@ int func_1984(int iParam0)
 			return 0;
 		case joaat("DISTRICT_BIG_VALLEY"):
 			return 1;
-		case 38535626:
+		case joaat("DISTRICT_BLUEGILL_MARSH"):
 			return 2;
 		case joaat("DISTRICT_CUMBERLAND_FOREST"):
 			return 3;
@@ -47156,15 +47156,15 @@ int func_1984(int iParam0)
 			return 4;
 		case joaat("DISTRICT_GRIZZLIES"):
 			return 5;
-		case -1808688941:
+		case joaat("DISTRICT_GRIZZLIES_EAST"):
 			return 6;
-		case -736296038:
+		case joaat("DISTRICT_GRIZZLIES_WEST"):
 			return 7;
-		case -909439131:
+		case joaat("DISTRICT_GUAMA"):
 			return 8;
-		case 1917744724:
+		case joaat("DISTRICT_HEARTLAND"):
 			return 9;
-		case 821748379:
+		case joaat("DISTRICT_ROANOKE_RIDGE"):
 			return 10;
 		case joaat("DISTRICT_SCARLETT_MEADOWS"):
 			return 11;

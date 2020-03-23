@@ -651,7 +651,7 @@ void func_25()
 	func_50(4);
 	func_51(4, 1);
 	func_52(4, iLocal_14);
-	func_53(4, 0, -826781979);
+	func_53(4, 0, joaat("DOOR_LNN_FRONTDOOR02"));
 }
 
 void func_26()
@@ -981,7 +981,7 @@ void func_50(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1445320383, false);
+			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CMD_TENANT1_LONGDAY"), false);
 			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1296607096, false);
 			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1397600367, false);
 			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-680744572, false);
@@ -993,8 +993,8 @@ void func_50(int iParam0)
 			func_90(0, 0, 0, 0);
 			break;
 		case 7:
-			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-238326824, false);
-			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1565410059, false);
+			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("WAT_OLDLADY_LONGDAY"), false);
+			TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("WAT_OLDLADY_NIGHT"), false);
 			break;
 	}
 }
@@ -2334,23 +2334,23 @@ void func_89(bool bParam0, bool bParam1, bool bParam2)
 
 void func_90(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 {
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-679485167, bParam0);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1060286981, bParam1);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(15009085, bParam2);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(419499196, bParam0);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-812521832, bParam1);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(352847158, bParam2);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-938921064, bParam0);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1294886761, bParam1);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1503785868, bParam2);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1566272590, bParam0);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-663317585, bParam1);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1025159823, bParam2);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT1_DAY"), bParam0);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT1_EVENING"), bParam1);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT1_NIGHT"), bParam2);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT2_DAY"), bParam0);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT2_EVENING"), bParam1);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT2_NIGHT"), bParam2);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT3_DAY"), bParam0);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT3_EVENING"), bParam1);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT3_NIGHT"), bParam2);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT4_DAY"), bParam0);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT4_EVENING"), bParam1);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LNS_TENANT4_NIGHT"), bParam2);
 	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(870756084, bParam3);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1973927826, bParam3);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1758360527, bParam3);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(629800007, bParam3);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(6786354, bParam3);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LONNIES_FLOOR_STASH"), bParam3);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LONNIES_PILLOW_STASH"), bParam3);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LONNIES_SACK_STASH"), bParam3);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LONNIES_WALL_STASH"), bParam3);
 }
 
 void func_91(int iParam0)
@@ -2846,7 +2846,7 @@ char* func_103(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_BARROW_LAGOON";
 				*uParam6 = 1;
 				break;
-			case -557290573: /* GXTEntry: "Bayou Nwa" */
+			case joaat("WATER_BAYOU_NWA"):
 				sVar0 = "DISTRICT_BAYOU_NWA";
 				*uParam6 = 1;
 				break;
@@ -2878,11 +2878,11 @@ char* func_103(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_HAWKS_EYE_CREEK";
 				*uParam6 = 1;
 				break;
-			case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+			case joaat("WATER_HEARTLANDS_OVERFLOW"):
 				sVar0 = "LANDMARK_HEARTLAND_OVERFLOW";
 				*uParam6 = 1;
 				break;
-			case 1175365009: /* GXTEntry: "Hot Springs" */
+			case joaat("WATER_HOT_SPRINGS"):
 				sVar0 = "WATER_COTORRA_SPRINGS";
 				*uParam6 = 1;
 				break;
@@ -2906,7 +2906,7 @@ char* func_103(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_LOWER_MONTANA_RIVER";
 				*uParam6 = 1;
 				break;
-			case 301094150: /* GXTEntry: "Mattlock Pond" */
+			case joaat("WATER_MATTLOCK_POND"):
 				sVar0 = "WATER_MATTOCK_POND";
 				*uParam6 = 1;
 				break;
@@ -2965,7 +2965,7 @@ char* func_103(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				}
 				*uParam6 = 1;
 				break;
-			case -1504425495: /* GXTEntry: "San Luis River" */
+			case joaat("WATER_SAN_LUIS_RIVER"):
 				if (iParam1 == 4 || iParam1 == 12)
 				{
 					sVar0 = "WATER_SAN_LUIS_RIVER_WEST_ELIZABETH";
@@ -3129,9 +3129,9 @@ int func_107(int iParam0)
 			return 0;
 		case joaat("WATER_BARROW_LAGOON"):
 			return 0;
-		case -557290573: /* GXTEntry: "Bayou Nwa" */
+		case joaat("WATER_BAYOU_NWA"):
 			return 2;
-		case 650214731: /* GXTEntry: "Beartooth Beck" */
+		case joaat("WATER_BEARTOOTH_BECK"):
 			return 1;
 		case joaat("WATER_CAIRN_LAKE"):
 			return 0;
@@ -3143,7 +3143,7 @@ int func_107(int iParam0)
 			return 1;
 		case joaat("WATER_DEADBOOT_CREEK"):
 			return 1;
-		case 469159176: /* GXTEntry: "Dewberry Creek" */
+		case joaat("WATER_DEWBERRY_CREEK"):
 			return 1;
 		case joaat("WATER_ELYSIAN_POOL"):
 			return 0;
@@ -3151,9 +3151,9 @@ int func_107(int iParam0)
 			return 0;
 		case joaat("WATER_HAWKS_EYE_CREEK"):
 			return 1;
-		case 1755369577: /* GXTEntry: "Heartlands Overflow" */
+		case joaat("WATER_HEARTLANDS_OVERFLOW"):
 			return 0;
-		case 1175365009: /* GXTEntry: "Hot Springs" */
+		case joaat("WATER_HOT_SPRINGS"):
 			return 0;
 		case joaat("WATER_KAMASSA_RIVER"):
 			return 1;
@@ -3167,7 +3167,7 @@ int func_107(int iParam0)
 			return 1;
 		case joaat("WATER_LOWER_MONTANA_RIVER"):
 			return 1;
-		case 301094150: /* GXTEntry: "Mattlock Pond" */
+		case joaat("WATER_MATTLOCK_POND"):
 			return 0;
 		case joaat("WATER_MOONSTONE_POND"):
 			return 0;
@@ -3177,7 +3177,7 @@ int func_107(int iParam0)
 			return 0;
 		case joaat("WATER_RINGNECK_CREEK"):
 			return 1;
-		case -1504425495: /* GXTEntry: "San Luis River" */
+		case joaat("WATER_SAN_LUIS_RIVER"):
 			return 1;
 		case joaat("WATER_SEA_OF_CORONADO"):
 			return 1;

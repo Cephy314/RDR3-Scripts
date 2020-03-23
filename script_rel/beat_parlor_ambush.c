@@ -767,7 +767,7 @@ int func_14()
 				vVar7 = { func_83(&(uLocal_528[0]), 0, "Victim", 0) };
 				uVar10 = func_84(&(uLocal_528[0]), 0, "Victim", 0);
 				func_85(&vVar7, 1, 10, 0);
-				iLocal_594[3] = func_86(-545460140, vVar7, uVar10, 0, -1f, 1);
+				iLocal_594[3] = func_86(joaat("WORLD_HUMAN_BARCUSTOMER"), vVar7, uVar10, 0, -1f, 1);
 				if (func_46(524288))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar11);
@@ -776,12 +776,12 @@ int func_14()
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar4, 1f, -1, 0.25f, 131073, 40000f);
 					}
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, 1f, -1, 2f, 131073, 40000f);
-					TASK::_TASK_USE_SCENARIO_POINT(0, &(iLocal_594[3]), func_87(3), -1, true, false, -545460140, false, -1f, false);
+					TASK::_TASK_USE_SCENARIO_POINT(0, &(iLocal_594[3]), func_87(3), -1, true, false, joaat("WORLD_HUMAN_BARCUSTOMER"), false, -1f, false);
 					func_88(&(uLocal_528[0]), &iVar11, 0, 0, 1, 1);
 				}
 				else
 				{
-					TASK::_TASK_USE_SCENARIO_POINT(&(uLocal_528[0]), &(iLocal_594[3]), func_87(3), -1, false, true, -545460140, false, -1f, false);
+					TASK::_TASK_USE_SCENARIO_POINT(&(uLocal_528[0]), &(iLocal_594[3]), func_87(3), -1, false, true, joaat("WORLD_HUMAN_BARCUSTOMER"), false, -1f, false);
 				}
 				TASK::SET_PED_PATH_CAN_USE_CLIMBOVERS(&(uLocal_528[0]), false);
 				iLocal_726 = 1;
@@ -1909,9 +1909,9 @@ void func_64()
 
 void func_65()
 {
-	func_190(-545460140, 1, (Local_394[0 /*32*/])->f_1, func_189(0));
+	func_190(joaat("WORLD_HUMAN_BARCUSTOMER"), 1, (Local_394[0 /*32*/])->f_1, func_189(0));
 	func_190(-1567729351, 1, (Local_394[1 /*32*/])->f_1, func_189(1));
-	func_190(-545460140, 1, (Local_495[0 /*32*/])->f_1, func_189(3));
+	func_190(joaat("WORLD_HUMAN_BARCUSTOMER"), 1, (Local_495[0 /*32*/])->f_1, func_189(3));
 }
 
 void func_66(int iParam0)
@@ -1970,7 +1970,7 @@ int func_69()
 	int iVar0;
 
 	iVar0 = 1;
-	if (!func_194(-545460140))
+	if (!func_194(joaat("WORLD_HUMAN_BARCUSTOMER")))
 	{
 		iVar0 = 0;
 	}
@@ -1978,7 +1978,7 @@ int func_69()
 	{
 		iVar0 = 0;
 	}
-	if (!func_194(-545460140))
+	if (!func_194(joaat("WORLD_HUMAN_BARCUSTOMER")))
 	{
 		iVar0 = 0;
 	}
@@ -6640,7 +6640,7 @@ int func_189(int iParam0)
 		case 0:
 			return joaat("WORLD_HUMAN_BARCUSTOMER_NO_DRINK_MALE_A");
 		case 1:
-			return -1485761522;
+			return joaat("SCRIPT_COMMON_STAND_BAR_LEAN_2_HANDS_MALE_A");
 		default:
 			break;
 	}
@@ -8299,14 +8299,14 @@ int func_265(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == -1085971095) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == -2016812721 || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(iParam0);
-		if (iVar0 == 970972795)
+		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
 		{
 			return 1;
 		}
@@ -10985,7 +10985,7 @@ int func_353()
 	int iVar4;
 	int iVar5;
 
-	iVar0 = -545460140;
+	iVar0 = joaat("WORLD_HUMAN_BARCUSTOMER");
 	vVar1 = { 1339.252f, -1377.099f, 79.48064f };
 	func_85(&vVar1, 1, 10, 0);
 	iVar4 = TASK::_0xF533D68FF970D190(vVar1, iVar0, 1.5f, 1, 0);
@@ -10999,7 +10999,7 @@ int func_353()
 	}
 	vVar1 = { 1340.139f, -1377.456f, 79.48064f };
 	func_85(&vVar1, 1, 10, 0);
-	iLocal_599[1] = TASK::CREATE_SCENARIO_POINT(-545460140, vVar1, -11.65f, 0f, -1f, 1);
+	iLocal_599[1] = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_BARCUSTOMER"), vVar1, -11.65f, 0f, -1f, 1);
 	if (func_47(&(uLocal_381[1]), 0, 1))
 	{
 		PED::_0x58F7DB5BD8FA2288(&(uLocal_381[1]));
@@ -11432,7 +11432,7 @@ int func_369()
 	{
 		if (!func_46(16777216))
 		{
-			if (func_576(&(uLocal_381[0]), -1474611043, "bEnableGreet", uVar0, 0.1f, 1))
+			if (func_576(&(uLocal_381[0]), joaat("bEnableGreet"), "bEnableGreet", uVar0, 0.1f, 1))
 			{
 				func_337(1, 0);
 				func_66(16777216);
@@ -16208,7 +16208,7 @@ void func_540(int iParam0, bool bParam1, float fParam2, bool bParam3, bool bPara
 
 int func_541()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK")) || PED::_0x34D6AC1157C8226C(Global_35, -1177373461))
+	if (PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK")) || PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")))
 	{
 		return 1;
 	}
@@ -16343,7 +16343,7 @@ int func_546()
 	vVar4 = { func_679(&(uLocal_381[1]), 0, "thugB", 0) };
 	uVar7 = func_680(&(uLocal_381[1]), 0, "thugB", 0);
 	func_85(&vVar4, 1, 10, 0);
-	iLocal_599[0] = func_86(-545460140, vVar0, uVar3, 0, -1f, 1);
+	iLocal_599[0] = func_86(joaat("WORLD_HUMAN_BARCUSTOMER"), vVar0, uVar3, 0, -1f, 1);
 	iLocal_599[1] = func_86(-1567729351, vVar4, uVar7, 0, -1f, 1);
 	func_681(0, "Victim", &(uLocal_528[0]), 1);
 	func_681(0, "thugA", &(uLocal_381[0]), 1);
@@ -16860,7 +16860,7 @@ void func_577(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -545460140;
+			iVar0 = joaat("WORLD_HUMAN_BARCUSTOMER");
 			iVar1 = 0;
 			break;
 		case 1:
@@ -19069,47 +19069,47 @@ int func_677(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588: /* GXTEntry: "Loot Innocent" */
+		case joaat("HONOR_EVENT_LOOT_INNOCENT"):
 			return 1;
-		case 1142025875: /* GXTEntry: "Murder" */
+		case joaat("HONOR_EVENT_AMBIENT_KILL"):
 			return 2;
-		case 1587891565:
+		case joaat("HONOR_EVENT_AMBIENT_KO"):
 			return 4;
-		case 1877013492: /* GXTEntry: "Frighten" */
+		case joaat("HONOR_EVENT_SCARE"):
 			return 32;
-		case -643014279: /* GXTEntry: "Killed Vermin" */
+		case joaat("HONOR_EVENT_KILL_VERMIN"):
 			return 64;
-		case -597116214: /* GXTEntry: "Killed Domestic Animal" */
+		case joaat("HONOR_EVENT_KILL_FARM_ANIMAL"):
 			return 128;
-		case 551416228: /* GXTEntry: "Killed Horse" */
+		case joaat("HONOR_EVENT_KILL_HORSE"):
 			return 256;
-		case 1022576842: /* GXTEntry: "Stole Horse" */
+		case joaat("HONOR_EVENT_STEAL_HORSE"):
 			return 512;
-		case 953325896: /* GXTEntry: "Stole Donkey" */
+		case joaat("HONOR_EVENT_STEAL_DONKEY"):
 			return 1024;
-		case 508358508: /* GXTEntry: "Stole Mule" */
+		case joaat("HONOR_EVENT_STEAL_MULE"):
 			return 2048;
-		case -735200598: /* GXTEntry: "Trampled Innocent" */
+		case joaat("HONOR_EVENT_TRAMPLED_INNOCENT"):
 			return 4096;
-		case -856432278:
+		case joaat("HONOR_EVENT_STEAL_WAGON"):
 			return 8192;
-		case -2010847721: /* GXTEntry: "Abandon Dead Animals" */
+		case joaat("HONOR_EVENT_ABANDON_ANIMALS"):
 			return 16384;
-		case 446961221: /* GXTEntry: "Watched Animal Bleedout" */
+		case joaat("HONOR_EVENT_ANIMAL_BLEEDOUT"):
 			return 32768;
-		case -1972216640: /* GXTEntry: "Antagonize" */
+		case joaat("HONOR_EVENT_ANTAGONIZE"):
 			return 65536;
-		case 530833824: /* GXTEntry: "Theft" */
+		case joaat("HONOR_EVENT_THEFT"):
 			return 131072;
-		case 1682361219: /* GXTEntry: "Intervened" */
+		case joaat("HONOR_EVENT_INTERVENED"):
 			return 262144;
-		case 158959085: /* GXTEntry: "Wanted In Camp" */
+		case joaat("HONOR_EVENT_WANTED_IN_CAMP"):
 			return 524288;
-		case 1919819559: /* GXTEntry: "Donated Game" */
+		case joaat("HONOR_EVENT_DONATED_GAME"):
 			return 1048576;
-		case 1461411082: /* GXTEntry: "Item Request" */
+		case joaat("HONOR_EVENT_ITEM_REQUEST"):
 			return 2097152;
-		case -549508280: /* GXTEntry: "Long Absence" */
+		case joaat("HONOR_EVENT_LONG_ABSENCE"):
 			return 4194304;
 		default:
 			break;

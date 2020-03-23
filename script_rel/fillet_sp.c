@@ -5708,16 +5708,16 @@ void func_210(int iParam0)
 		switch (iParam0)
 		{
 			case 1:
-				func_405(func_404(iParam0), &cVar1, 676312963, joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 390152599, -2, 0, 0, 0, 0, 1, 1);
+				func_405(func_404(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Dominoes"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 3:
-				func_405(func_404(iParam0), &cVar1, 676312963, joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
+				func_405(func_404(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 2:
-				func_405(func_404(iParam0), &cVar1, 676312963, joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", 348001928, -2, 0, 0, 0, 0, 1, 1);
+				func_405(func_404(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("Poker"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 0:
-				func_405(func_404(iParam0), &cVar1, 676312963, joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
+				func_405(func_404(iParam0), &cVar1, joaat("toast_log_blips"), joaat("BLIP_MG_BLACKJACK"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("blackjack"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 		}
 	}
@@ -6918,7 +6918,7 @@ void func_255(var uParam0, int iParam1)
 			func_481(uParam0, iParam1);
 		}
 	}
-	if (((func_473(&(uParam0->f_592[iParam1 /*202*/]), 72973500) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -405217195)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1812775187)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1586866178))
+	if (((func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("MediumFail")) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("MediumSmallFail"))) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1812775187)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("FailSpike")))
 	{
 		func_377(uParam0->f_592[iParam1 /*202*/], 20);
 		if (PED::IS_PED_A_PLAYER(&(uParam0->f_592[iParam1 /*202*/])))
@@ -6956,7 +6956,7 @@ void func_256(var uParam0, int iParam1)
 
 void func_257(var uParam0, int iParam1)
 {
-	if (func_433(uParam0->f_592[iParam1 /*202*/]) <= 0 || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1586866178))
+	if (func_433(uParam0->f_592[iParam1 /*202*/]) <= 0 || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("FailSpike")))
 	{
 		func_475(uParam0, iParam1, 1);
 		func_483(uParam0, iParam1);
@@ -7126,7 +7126,7 @@ void func_262(var uParam0, int iParam1)
 			func_488(3);
 			if (func_5(uParam0, 1024))
 			{
-				if ((func_473(&(uParam0->f_592[iParam1 /*202*/]), 1371938701) && (uParam0->f_592[func_161(uParam0->f_21) /*202*/])->f_64 == 30) && func_452(uParam0, iParam1, "WonIdle", 0))
+				if ((func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("IdleWithoutKnife")) && (uParam0->f_592[func_161(uParam0->f_21) /*202*/])->f_64 == 30) && func_452(uParam0, iParam1, "WonIdle", 0))
 				{
 					func_377(uParam0->f_592[iParam1 /*202*/], 14);
 				}
@@ -10427,7 +10427,7 @@ int func_398(var uParam0)
 	if (UISTATEMACHINE::_UIFLOWBLOCK_IS_LOADED(*uParam0))
 	{
 		func_521(uParam0, 1);
-		UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, -2013879463);
+		UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, joaat("FiveFingerFillet"));
 		if (!UISTATEMACHINE::_UISTATEMACHINE_EXISTS(-1399811580) && !UISTATEMACHINE::_UISTATEMACHINE_CREATE(-1399811580, *uParam0))
 		{
 		}
@@ -11516,81 +11516,81 @@ int func_457(bool bParam0)
 	{
 		case joaat("enter"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "EnterClipFinished");
-		case 169455102:
+		case joaat("OpponentIdle"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "OpponentIdleClipFinished");
-		case -1183997470:
+		case joaat("Alt_01_idle_intro"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Alt_01_idle_introClipFinished");
-		case 301524977:
+		case joaat("Alt_01_idle"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Alt_01_idleClipFinished");
-		case -1332624949:
+		case joaat("Alt_01_outro_noKnife"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Alt_01_outro_noKnifeClipFinished");
-		case -1438966225:
+		case joaat("Alt_01_outro_withKnife"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Alt_01_outro_withKnifeClipFinished");
-		case 663375200:
+		case joaat("ToggleDraw"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "ToggleDrawClipFinished");
-		case -400562111:
+		case joaat("ToggleHolster"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "ToggleHolsterClipFinished");
-		case 903498445:
+		case joaat("Fail_from_idle"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Fail_from_idleClipFinished");
-		case 1471269234:
+		case joaat("Success_from_idle"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Success_from_idleClipFinished");
-		case -498406925:
+		case joaat("PickupKnife"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "PickupKnifeClipFinished");
-		case 756119322:
+		case joaat("StartKnife"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "StartKnifeClipFinished");
-		case 721646648:
+		case joaat("From_0_to_target_1"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_0_to_target_1ClipFinished");
-		case -1153486373:
+		case joaat("From_target_1_to_0"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_target_1_to_0ClipFinished");
-		case 960827579:
+		case joaat("From_0_to_target_2"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_0_to_target_2ClipFinished");
-		case -316251561:
+		case joaat("From_target_2_to_0"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_target_2_to_0ClipFinished");
-		case 1215442709:
+		case joaat("From_0_to_target_3"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_0_to_target_3ClipFinished");
-		case -44602072:
+		case joaat("From_target_3_to_0"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_target_3_to_0ClipFinished");
-		case 1454951330:
+		case joaat("From_0_to_target_4"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_0_to_target_4ClipFinished");
-		case -788049279:
+		case joaat("From_target_4_to_0"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_target_4_to_0ClipFinished");
-		case 1676600846:
+		case joaat("From_0_to_target_5"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_0_to_target_5ClipFinished");
-		case -744146776:
+		case joaat("From_target_5_to_0"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "From_target_5_to_0ClipFinished");
 		case joaat("end"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "EndClipFinished");
-		case 72973500:
+		case joaat("MediumFail"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "MediumFailClipFinished");
-		case -405217195:
+		case joaat("MediumSmallFail"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "MediumSmallFailClipFinished");
 		case -1812775187:
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "FailGenericClipFinished");
-		case -1586866178:
+		case joaat("FailSpike"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "FailSpikeClipFinished");
-		case -1898802991:
+		case joaat("Solo_Flourish"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Solo_FlourishClipFinished");
-		case -807140023:
+		case joaat("SpikeKnifePositive"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "SpikeKnifeClipFinished");
-		case 358714039:
+		case joaat("SpikeKnifeNegative"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "SpikeKnifeClipFinished");
-		case 1915308076:
+		case joaat("SpikeKnifeFlourish"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "SpikeKnifeClipFinished");
-		case 1697682822:
+		case joaat("SpikeKnife"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "SpikeKnifeClipFinished");
-		case -2106593523:
+		case joaat("Turn_success"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Turn_successClipFinished");
-		case -1735523990:
+		case joaat("Turn_fail"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Turn_failClipFinished");
-		case 345486814:
+		case joaat("TurnQuit"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "TurnQuitClipFinished");
-		case 2087353861:
+		case joaat("ExitChair"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Exit");
-		case 1178694785:
+		case joaat("ExitBase"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Exit");
 		case 753190837:
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "Exit");
-		case -165781906:
+		case joaat("WonIdle"):
 			return TASK::GET_TASK_MOVE_NETWORK_EVENT(bParam0, "WonIdleClipFinished");
 		default:
 			break;
@@ -11827,9 +11827,9 @@ int func_467(bool bParam0)
 	switch (TASK::_0xE9A6400D1A0E7A55(bParam0))
 	{
 		case -1812775187:
-		case -1586866178:
-		case -405217195:
-		case 72973500:
+		case joaat("FailSpike"):
+		case joaat("MediumSmallFail"):
+		case joaat("MediumFail"):
 			return 1;
 	}
 	return 0;
@@ -12015,19 +12015,19 @@ int func_474(var uParam0, int iParam1, char* sParam2, int iParam3)
 	{
 		switch (TASK::_0xE9A6400D1A0E7A55(*uParam0))
 		{
-			case 721646648:
+			case joaat("From_0_to_target_1"):
 				uParam0->f_73 = 0.16f;
 				break;
-			case 960827579:
+			case joaat("From_0_to_target_2"):
 				uParam0->f_73 = 0.32f;
 				break;
-			case 1215442709:
+			case joaat("From_0_to_target_3"):
 				uParam0->f_73 = 0.48f;
 				break;
-			case 1454951330:
+			case joaat("From_0_to_target_4"):
 				uParam0->f_73 = 0.64f;
 				break;
-			case 1676600846:
+			case joaat("From_0_to_target_5"):
 				uParam0->f_73 = 0.8f;
 				break;
 			default:
@@ -12126,7 +12126,7 @@ void func_478(var uParam0, int iParam1)
 
 void func_479(var uParam0, int iParam1)
 {
-	if (((((((((((!PED::IS_PED_A_PLAYER(&(uParam0->f_592[iParam1 /*202*/])) || (uParam0->f_592[iParam1 /*202*/])->f_92 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_93 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_94 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_95 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_87 > (uParam0->f_592[iParam1 /*202*/])->f_86) || (uParam0->f_18 == -121390149 && func_428(uParam0->f_592[iParam1 /*202*/]) >= func_429(uParam0))) || func_473(&(uParam0->f_592[iParam1 /*202*/]), 72973500)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -405217195)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1812775187)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1586866178)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("end")))
+	if (((((((((((!PED::IS_PED_A_PLAYER(&(uParam0->f_592[iParam1 /*202*/])) || (uParam0->f_592[iParam1 /*202*/])->f_92 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_93 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_94 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_95 == 1) || (uParam0->f_592[iParam1 /*202*/])->f_87 > (uParam0->f_592[iParam1 /*202*/])->f_86) || (uParam0->f_18 == -121390149 && func_428(uParam0->f_592[iParam1 /*202*/]) >= func_429(uParam0))) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("MediumFail"))) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("MediumSmallFail"))) || func_473(&(uParam0->f_592[iParam1 /*202*/]), -1812775187)) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("FailSpike"))) || func_473(&(uParam0->f_592[iParam1 /*202*/]), joaat("end")))
 	{
 		func_139(&(uParam0->f_175), 5);
 		func_139(&(uParam0->f_175), 6);
@@ -12583,7 +12583,7 @@ char* func_490(var uParam0, int iParam1)
 	char* sVar0;
 
 	sVar0 = "ExitChair";
-	if (func_496(&(uParam0->f_592[iParam1 /*202*/])) && TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])) == -444913130)
+	if (func_496(&(uParam0->f_592[iParam1 /*202*/])) && TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])) == joaat("IdleWithKnife"))
 	{
 		sVar0 = "ExitBase";
 	}
@@ -12901,18 +12901,18 @@ int func_508(bool bParam0)
 	}
 	switch (TASK::_0xE9A6400D1A0E7A55(bParam0))
 	{
-		case -1153486373:
-		case -788049279:
-		case -744146776:
-		case -444913130:
-		case -316251561:
-		case -44602072:
-		case 721646648:
-		case 756119322:
-		case 960827579:
-		case 1215442709:
-		case 1454951330:
-		case 1676600846:
+		case joaat("From_target_1_to_0"):
+		case joaat("From_target_4_to_0"):
+		case joaat("From_target_5_to_0"):
+		case joaat("IdleWithKnife"):
+		case joaat("From_target_2_to_0"):
+		case joaat("From_target_3_to_0"):
+		case joaat("From_0_to_target_1"):
+		case joaat("StartKnife"):
+		case joaat("From_0_to_target_2"):
+		case joaat("From_0_to_target_3"):
+		case joaat("From_0_to_target_4"):
+		case joaat("From_0_to_target_5"):
 			return 1;
 	}
 	return 0;
@@ -13061,28 +13061,28 @@ int func_513(bool bParam0)
 	}
 	switch (TASK::_0xE9A6400D1A0E7A55(bParam0))
 	{
-		case -1898802991:
+		case joaat("Solo_Flourish"):
 		case -1812775187:
-		case -1586866178:
+		case joaat("FailSpike"):
 		case joaat("end"):
-		case -1153486373:
-		case -807140023:
-		case -788049279:
-		case -744146776:
-		case -444913130:
-		case -405217195:
-		case -316251561:
-		case -44602072:
-		case 72973500:
-		case 358714039:
-		case 721646648:
-		case 756119322:
-		case 960827579:
-		case 1215442709:
-		case 1454951330:
-		case 1676600846:
-		case 1697682822:
-		case 1915308076:
+		case joaat("From_target_1_to_0"):
+		case joaat("SpikeKnifePositive"):
+		case joaat("From_target_4_to_0"):
+		case joaat("From_target_5_to_0"):
+		case joaat("IdleWithKnife"):
+		case joaat("MediumSmallFail"):
+		case joaat("From_target_2_to_0"):
+		case joaat("From_target_3_to_0"):
+		case joaat("MediumFail"):
+		case joaat("SpikeKnifeNegative"):
+		case joaat("From_0_to_target_1"):
+		case joaat("StartKnife"):
+		case joaat("From_0_to_target_2"):
+		case joaat("From_0_to_target_3"):
+		case joaat("From_0_to_target_4"):
+		case joaat("From_0_to_target_5"):
+		case joaat("SpikeKnife"):
+		case joaat("SpikeKnifeFlourish"):
 			return 1;
 	}
 	return 0;
@@ -18473,37 +18473,37 @@ char* func_663(var uParam0, int iParam1)
 	}
 	switch (TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])))
 	{
-		case 756119322:
+		case joaat("StartKnife"):
 			sVar0 = "From_0_to_target_1";
 			break;
-		case 721646648:
+		case joaat("From_0_to_target_1"):
 			sVar0 = "From_target_1_to_0";
 			break;
-		case -1153486373:
+		case joaat("From_target_1_to_0"):
 			sVar0 = "From_0_to_target_2";
 			break;
-		case 960827579:
+		case joaat("From_0_to_target_2"):
 			sVar0 = "From_target_2_to_0";
 			break;
-		case -316251561:
+		case joaat("From_target_2_to_0"):
 			sVar0 = "From_0_to_target_3";
 			break;
-		case 1215442709:
+		case joaat("From_0_to_target_3"):
 			sVar0 = "From_target_3_to_0";
 			break;
-		case -44602072:
+		case joaat("From_target_3_to_0"):
 			sVar0 = "From_0_to_target_4";
 			break;
-		case 1454951330:
+		case joaat("From_0_to_target_4"):
 			sVar0 = "From_target_4_to_0";
 			break;
-		case -788049279:
+		case joaat("From_target_4_to_0"):
 			sVar0 = "From_0_to_target_5";
 			break;
-		case 1676600846:
+		case joaat("From_0_to_target_5"):
 			sVar0 = "From_target_5_to_0";
 			break;
-		case -744146776:
+		case joaat("From_target_5_to_0"):
 			sVar0 = "From_0_to_target_1";
 			break;
 	}
@@ -20613,7 +20613,7 @@ int func_744(var uParam0, int iParam1)
 			return 1;
 		}
 	}
-	else if ((((uParam0->f_592[iParam1 /*202*/])->f_121 == 1 && TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_592[iParam1 /*202*/]))) && TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])) != 756119322) && TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])) != -444913130)
+	else if ((((uParam0->f_592[iParam1 /*202*/])->f_121 == 1 && TASK::IS_TASK_MOVE_NETWORK_ACTIVE(&(uParam0->f_592[iParam1 /*202*/]))) && TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])) != joaat("StartKnife")) && TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])) != joaat("IdleWithKnife"))
 	{
 		if (Global_1900325->f_23 == 0)
 		{
@@ -20702,16 +20702,16 @@ int func_750(bool bParam0)
 	}
 	switch (TASK::_0xE9A6400D1A0E7A55(bParam0))
 	{
-		case -1153486373:
-		case -788049279:
-		case -744146776:
-		case -316251561:
-		case -44602072:
-		case 721646648:
-		case 960827579:
-		case 1215442709:
-		case 1454951330:
-		case 1676600846:
+		case joaat("From_target_1_to_0"):
+		case joaat("From_target_4_to_0"):
+		case joaat("From_target_5_to_0"):
+		case joaat("From_target_2_to_0"):
+		case joaat("From_target_3_to_0"):
+		case joaat("From_0_to_target_1"):
+		case joaat("From_0_to_target_2"):
+		case joaat("From_0_to_target_3"):
+		case joaat("From_0_to_target_4"):
+		case joaat("From_0_to_target_5"):
 			return 1;
 	}
 	return 0;
@@ -20747,7 +20747,7 @@ void func_752(var uParam0, int iParam1)
 	{
 		switch (TASK::_0xE9A6400D1A0E7A55(&(uParam0->f_592[iParam1 /*202*/])))
 		{
-			case 721646648:
+			case joaat("From_0_to_target_1"):
 				if ((uParam0->f_592[iParam1 /*202*/])->f_76 == 0f)
 				{
 					sVar0 = "PD_FFF_LEFT_THUMB_INSIDE";
@@ -20759,7 +20759,7 @@ void func_752(var uParam0, int iParam1)
 					iVar1 = 2;
 				}
 				break;
-			case 960827579:
+			case joaat("From_0_to_target_2"):
 				if ((uParam0->f_592[iParam1 /*202*/])->f_76 == 0f)
 				{
 					sVar0 = "PD_FFF_LEFT_INDEX_INSIDE";
@@ -20771,7 +20771,7 @@ void func_752(var uParam0, int iParam1)
 					iVar1 = 4;
 				}
 				break;
-			case 1215442709:
+			case joaat("From_0_to_target_3"):
 				if ((uParam0->f_592[iParam1 /*202*/])->f_76 == 0f)
 				{
 					sVar0 = "PD_FFF_LEFT_MIDDLE_INSIDE";
@@ -20783,7 +20783,7 @@ void func_752(var uParam0, int iParam1)
 					iVar1 = 6;
 				}
 				break;
-			case 1454951330:
+			case joaat("From_0_to_target_4"):
 				if ((uParam0->f_592[iParam1 /*202*/])->f_76 == 0f)
 				{
 					sVar0 = "PD_FFF_LEFT_RING_INSIDE";
@@ -20795,7 +20795,7 @@ void func_752(var uParam0, int iParam1)
 					iVar1 = 8;
 				}
 				break;
-			case 1676600846:
+			case joaat("From_0_to_target_5"):
 				sVar0 = "PD_FFF_LEFT_PINKY_OUTSIDE";
 				iVar1 = 9;
 				break;

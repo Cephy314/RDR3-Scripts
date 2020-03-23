@@ -132,7 +132,7 @@ void func_6()
 			{
 				if (Local_18 == 1)
 				{
-					if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_36, 1205242210))
+					if (ENTITY::HAS_ANIM_EVENT_FIRED(iLocal_36, joaat("Cast")))
 					{
 						func_13();
 						bLocal_38 = true;
