@@ -30901,25 +30901,25 @@ void func_1167(int iParam0)
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 2))
 	{
 		case 0:
-			func_1256(iParam0, -2014043657 /* GXTEntry: "Weathered Chestnut & Charcoal" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_000"));
 			break;
 		case 1:
-			func_1256(iParam0, -829673694 /* GXTEntry: "Weathered Charcoal & Ash" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_004"));
 			break;
 	}
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 4))
 	{
 		case 0:
-			PED::_0xDF631E4BCE1B1FC4(iParam0, -273475295, 0, 0);
+			PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_bedrolls"), 0, 0);
 			break;
 		case 1:
-			func_1256(iParam0, 414935856 /* GXTEntry: "Weathered Charcoal" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_000"));
 			break;
 		case 2:
-			func_1256(iParam0, 317775775 /* GXTEntry: "Weathered Coffee" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_001"));
 			break;
 		case 3:
-			func_1256(iParam0, 457437253 /* GXTEntry: "Weathered Russet" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_002"));
 			break;
 	}
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 2))
@@ -30934,13 +30934,13 @@ void func_1167(int iParam0)
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 3))
 	{
 		case 0:
-			func_1256(iParam0, 1351319737 /* GXTEntry: "Color Combination One" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000"));
 			break;
 		case 1:
-			func_1256(iParam0, 1741336375 /* GXTEntry: "Color Combination Two" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_001"));
 			break;
 		case 2:
-			func_1256(iParam0, -340478195 /* GXTEntry: "Color Combination Three" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_002"));
 			break;
 	}
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 4))
@@ -30949,13 +30949,13 @@ void func_1167(int iParam0)
 			PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
 			break;
 		case 1:
-			func_1256(iParam0, -288915854 /* GXTEntry: "Weathered Dark Oak" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_000"));
 			break;
 		case 2:
-			func_1256(iParam0, 720369354 /* GXTEntry: "Weathered Tan" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_001"));
 			break;
 		case 3:
-			func_1256(iParam0, 491707272 /* GXTEntry: "Weathered Walnut" */);
+			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_002"));
 			break;
 	}
 	PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, true);
@@ -32825,11 +32825,11 @@ void func_1255(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 399422490, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_blankets"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLES"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 88372018, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -630346294, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -273475295, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_horns"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_stirrups"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_bedrolls"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);

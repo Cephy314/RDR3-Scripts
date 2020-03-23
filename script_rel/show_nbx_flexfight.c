@@ -2140,7 +2140,7 @@ int func_37(var uParam0, int iParam1, int iParam2)
 				}
 				else if (iVar2 == 31)
 				{
-					bVar3 = -141596905;
+					bVar3 = joaat("U_M_M_CABARETFIREHAT_01");
 					bVar1 = true;
 				}
 			}
@@ -10917,7 +10917,7 @@ int func_248(var uParam0)
 	{
 		return 0;
 	}
-	if (func_344(*uParam0, -1725579161, 0))
+	if (func_344(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -16234,7 +16234,7 @@ void func_369(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

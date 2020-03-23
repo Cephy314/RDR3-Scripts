@@ -4674,9 +4674,9 @@ int func_194(int iParam0)
 			switch (iVar0)
 			{
 				case 0:
-					return 1438071047;
+					return joaat("MP_RE_GRAVEROBBER_MALES_01");
 				case 1:
-					return 2087484445;
+					return joaat("MP_RE_GRAVEROBBER_FEMALES_01");
 				default:
 					break;
 			}

@@ -15106,7 +15106,7 @@ void func_441(var uParam0, bool bParam1)
 	{
 		if (!Global_14)
 		{
-			PED::_0xD710A5007C2AC539(Global_34, -1229581779, 1);
+			PED::_0xD710A5007C2AC539(Global_34, joaat("holsters_left"), 1);
 		}
 	}
 	else if (!func_415(uParam0->f_264, 256))
@@ -16339,7 +16339,7 @@ int func_483(int iParam0, int iParam1, int* iParam2)
 	{
 		if (!func_84(*iParam2, 5))
 		{
-			PED::_0xD710A5007C2AC539(iParam1, -1229581779, 1);
+			PED::_0xD710A5007C2AC539(iParam1, joaat("holsters_left"), 1);
 			bVar0 = true;
 			func_26(iParam2, 5);
 		}
@@ -16597,9 +16597,9 @@ int func_489(int iParam0, var uParam1)
 		}
 		if (func_84(uParam1->f_6, 2))
 		{
-			if (PED::_0xFB4891BD7578CDC1(iParam0, 1963323202))
+			if (PED::_0xFB4891BD7578CDC1(iParam0, joaat("masks")))
 			{
-				PED::_0xD710A5007C2AC539(iParam0, 1963323202, 1);
+				PED::_0xD710A5007C2AC539(iParam0, joaat("masks"), 1);
 				bVar0 = true;
 			}
 		}
@@ -21334,7 +21334,7 @@ void func_645(var uParam0, int iParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (2056714954 == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
+					if (joaat("neckties") == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
 					{
 						if ((iParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_624(iVar3, 1872585553)) || iVar4 == 1882579758)
 						{

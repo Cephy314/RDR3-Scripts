@@ -7137,7 +7137,7 @@ void func_208(var uParam0)
 		PED::_0xC163DAC52AC975D3(&(uParam0->f_40[4]), 32);
 		WEAPON::REMOVE_ALL_PED_WEAPONS(&(uParam0->f_40[4]), true, true);
 		func_498(&(uParam0->f_40[4]), 1);
-		PED::_0xD710A5007C2AC539(&(uParam0->f_40[4]), -1725579161, 1);
+		PED::_0xD710A5007C2AC539(&(uParam0->f_40[4]), joaat("hats"), 1);
 		PED::_0xCC8CA3E88256E58F(&(uParam0->f_40[4]), false, true, true, true, false);
 		PED::APPLY_PED_DAMAGE_PACK(&(uParam0->f_40[4]), "PD_Blood_face_right", 1f, 1f);
 		PED::APPLY_PED_DAMAGE_PACK(&(uParam0->f_40[4]), "PD_Face_Splatter", 1f, 1f);
@@ -7223,7 +7223,7 @@ void func_209(var uParam0)
 		PED::_0xC163DAC52AC975D3(&(uParam0->f_40[4]), 32);
 		WEAPON::REMOVE_ALL_PED_WEAPONS(&(uParam0->f_40[4]), true, true);
 		func_498(&(uParam0->f_40[4]), 1);
-		PED::_0xD710A5007C2AC539(&(uParam0->f_40[4]), -1725579161, 1);
+		PED::_0xD710A5007C2AC539(&(uParam0->f_40[4]), joaat("hats"), 1);
 		PED::_0xCC8CA3E88256E58F(&(uParam0->f_40[4]), false, true, true, true, false);
 		PED::APPLY_PED_DAMAGE_PACK(&(uParam0->f_40[4]), "PD_Blood_face_right", 1f, 1f);
 		PED::APPLY_PED_DAMAGE_PACK(&(uParam0->f_40[4]), "PD_Face_Splatter", 1f, 1f);
@@ -37850,7 +37850,7 @@ void func_898(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

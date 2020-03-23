@@ -35168,7 +35168,7 @@ int func_773(var uParam0)
 				func_440(joaat("KIT_BANDANA"), 0);
 				func_1235(0, 1048576, 0);
 				func_1235(0, 1073741824 /* Float: 2f */, 1);
-				PED::_0xD710A5007C2AC539(Local_83, -1725579161, 1);
+				PED::_0xD710A5007C2AC539(Local_83, joaat("hats"), 1);
 				func_134(uParam0, 1);
 			}
 			break;
@@ -36261,7 +36261,7 @@ void func_792(var uParam0, bool bParam1)
 	{
 		if (!Global_17)
 		{
-			PED::_0xD710A5007C2AC539(Global_35, -1229581779, 0);
+			PED::_0xD710A5007C2AC539(Global_35, joaat("holsters_left"), 0);
 			Global_17 = !bParam1;
 		}
 	}
@@ -45496,7 +45496,7 @@ int func_1047(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -51457,7 +51457,7 @@ void func_1235(int iParam0, int iParam1, bool bParam2)
 
 void func_1236(bool bParam0, int iParam1)
 {
-	if (!func_1884(bParam0, 1963323202, 0))
+	if (!func_1884(bParam0, joaat("masks"), 0))
 	{
 		PED::_0x1902C4CFCC5BE57C(bParam0, iParam1);
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -55889,7 +55889,7 @@ void func_1387(int iParam0, char* sParam1, vector3 vParam2, var uParam5)
 
 void func_1388(bool bParam0)
 {
-	if (func_1884(bParam0, -1725579161, 0))
+	if (func_1884(bParam0, joaat("hats"), 0))
 	{
 		PED::KNOCK_OFF_PED_PROP(bParam0, false, true, false, true);
 	}
@@ -67932,7 +67932,7 @@ bool func_1787()
 			return true;
 		}
 	}
-	return (PED::_0xFB4891BD7578CDC1(Global_35, -1725579161) || func_1601(-2061583405, &uVar0));
+	return (PED::_0xFB4891BD7578CDC1(Global_35, joaat("hats")) || func_1601(-2061583405, &uVar0));
 }
 
 int func_1788(int iParam0, int iParam1)
@@ -69148,7 +69148,7 @@ void func_1824(bool bParam0, int iParam1, int iParam2)
 {
 	if (func_425(bParam0, 0))
 	{
-		if (!func_1884(bParam0, 1963323202, 0))
+		if (!func_1884(bParam0, joaat("masks"), 0))
 		{
 			if (PED::_0x5102307CE88798EB(bParam0))
 			{
@@ -69166,7 +69166,7 @@ void func_1825(bool bParam0, int iParam1)
 {
 	if (func_425(bParam0, 0))
 	{
-		if (!func_1884(bParam0, 1963323202, 0))
+		if (!func_1884(bParam0, joaat("masks"), 0))
 		{
 			if (PED::_0x5102307CE88798EB(bParam0))
 			{
@@ -73355,7 +73355,7 @@ int func_2025(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:
@@ -74225,11 +74225,11 @@ void func_2067(bool bParam0)
 	if (TASK::IS_PED_IN_WRITHE(bParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 399422490, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_blankets"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLES"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 88372018, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -630346294, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -273475295, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_horns"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_stirrups"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_bedrolls"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, -2142954459, 0, false);
 }
 
@@ -79849,17 +79849,17 @@ int func_2307(int iParam0)
 		switch (iParam0)
 		{
 			case -1346384396:
-				return 1351319737 /* GXTEntry: "Color Combination One" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
 			case -712836614:
-				return 1832924306 /* GXTEntry: "Chestnut & Charcoal" */;
+				return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_000");
 			case -1629133289:
-				return -960265739 /* GXTEntry: "Maple \'Duck Bill\' Horn" */;
+				return joaat("HORSE_EQUIPMENT_HORN_NEW_000");
 			case 1302066700:
-				return 1484641439 /* GXTEntry: "Belled Oxbow Stirrup" */;
+				return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
 			case 599669344:
-				return -1742648548 /* GXTEntry: "Weathered Russet" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_000");
 			case -1555511632:
-				return -288915854 /* GXTEntry: "Weathered Dark Oak" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_000");
 		}
 	}
 	else if (func_1001())
@@ -79867,17 +79867,17 @@ int func_2307(int iParam0)
 		switch (iParam0)
 		{
 			case -1346384396:
-				return -5120398 /* GXTEntry: "Color Combination Two" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_001");
 			case -712836614:
-				return 540384851 /* GXTEntry: "Hickory" */;
+				return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_005");
 			case -1629133289:
-				return 859626502 /* GXTEntry: "Maple \'Torquemada\' Horn" */;
+				return joaat("HORSE_EQUIPMENT_HORN_NEW_012");
 			case 1302066700:
-				return -415239647 /* GXTEntry: "Slim-line Iron Stirrup" */;
+				return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_006");
 			case 599669344:
-				return 1436607742 /* GXTEntry: "Weathered Chestnut" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_003");
 			case -1555511632:
-				return 691935155 /* GXTEntry: "Chestnut" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_003");
 		}
 	}
 	return 0;
@@ -89329,15 +89329,15 @@ int func_2688(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1249891745: /* GXTEntry: "Alligator Ranch Cutter Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_01_SPECIAL_NEW_SADDLE_000"):
 			return 263080063 /* GXTEntry: "Trapper Blanket" */;
-		case -769274720: /* GXTEntry: "Boar Mother Hubbard Saddle" */
+		case joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_SPECIAL_NEW_SADDLE_000"):
 			return -34331381 /* GXTEntry: "Trapper Blanket" */;
-		case 893370428: /* GXTEntry: "Cougar McClelland Saddle" */
+		case joaat("HORSE_EQUIPMENT_MCCLELLAN_01_SPECIAL_NEW_SADDLE_000"):
 			return -993578318 /* GXTEntry: "Trapper Blanket" */;
-		case 736792276: /* GXTEntry: "Beaver Roping Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_03_SPECIAL_NEW_SADDLE_000"):
 			return 579268144 /* GXTEntry: "Trapper Blanket" */;
-		case -949205287: /* GXTEntry: "Panther Trail Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_04_SPECIAL_NEW_SADDLE_000"):
 			return 1104489688 /* GXTEntry: "Trapper Blanket" */;
 	}
 	return 0;
@@ -92560,7 +92560,7 @@ void func_2821(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

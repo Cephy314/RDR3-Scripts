@@ -9172,7 +9172,7 @@ int func_300(var uParam0)
 	{
 		return 0;
 	}
-	if (func_584(*uParam0, -1725579161, 0))
+	if (func_584(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -20799,7 +20799,7 @@ int func_674(bool bParam0, bool bParam1, var uParam2)
 	switch (bVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

@@ -9159,7 +9159,7 @@ int func_287(int iParam0)
 			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("BREED_MULE_PAINTED");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
@@ -19867,7 +19867,7 @@ int func_720(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:

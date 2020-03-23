@@ -9369,15 +9369,15 @@ int func_254(bool bParam0)
 {
 	switch (bParam0)
 	{
-		case -1249891745: /* GXTEntry: "Alligator Ranch Cutter Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_01_SPECIAL_NEW_SADDLE_000"):
 			return 263080063 /* GXTEntry: "Trapper Blanket" */;
-		case -769274720: /* GXTEntry: "Boar Mother Hubbard Saddle" */
+		case joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_SPECIAL_NEW_SADDLE_000"):
 			return -34331381 /* GXTEntry: "Trapper Blanket" */;
-		case 893370428: /* GXTEntry: "Cougar McClelland Saddle" */
+		case joaat("HORSE_EQUIPMENT_MCCLELLAN_01_SPECIAL_NEW_SADDLE_000"):
 			return -993578318 /* GXTEntry: "Trapper Blanket" */;
-		case 736792276: /* GXTEntry: "Beaver Roping Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_03_SPECIAL_NEW_SADDLE_000"):
 			return 579268144 /* GXTEntry: "Trapper Blanket" */;
-		case -949205287: /* GXTEntry: "Panther Trail Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_04_SPECIAL_NEW_SADDLE_000"):
 			return 1104489688 /* GXTEntry: "Trapper Blanket" */;
 	}
 	return 0;

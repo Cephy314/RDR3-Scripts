@@ -65335,133 +65335,133 @@ int func_2272(int iParam0)
 	switch (iParam0)
 	{
 		case -1:
-			return 1351319737 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
 		case 0:
 			return 0;
 		case 1:
-			return 1351319737 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
 		case 2:
-			return 1741336375 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_001");
 		case 3:
-			return -340478195 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_002");
 		case 4:
-			return -99527738 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_003");
 		case 5:
-			return 257130058 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_004");
 		case 6:
-			return -1746147735 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_01_NEW_000");
 		case 7:
-			return 647332810 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_01_NEW_001");
 		case 8:
-			return 963881350 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_01_NEW_002");
 		case 9:
-			return 1244220145 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_01_NEW_003");
 		case 10:
-			return -318664541 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_01_NEW_004");
 		case 11:
-			return -1141877867 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_02_NEW_000");
 		case 12:
-			return -2110103510 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_02_NEW_001");
 		case 13:
-			return 1396310570 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_02_NEW_002");
 		case 14:
-			return -1325941340 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_02_NEW_003");
 		case 15:
-			return -37497133 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_02_NEW_004");
 		case 16:
-			return 1797293285 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_03_NEW_000");
 		case 17:
-			return 2029723802 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_03_NEW_001");
 		case 18:
-			return -1884467714 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_03_NEW_002");
 		case 19:
-			return -1646204315 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_03_NEW_003");
 		case 20:
-			return 875108083 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_03_NEW_004");
 		case 21:
-			return -1389874939 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_04_NEW_000");
 		case 22:
-			return -1024500589 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_04_NEW_001");
 		case 23:
-			return -928749571 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_04_NEW_002");
 		case 24:
-			return 1180033890 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_04_NEW_003");
 		case 25:
-			return -605090154 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_04_NEW_004");
 		case 26:
-			return 2035405959 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_05_NEW_000");
 		case 27:
-			return -1066147126 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_05_NEW_001");
 		case 28:
-			return -305447560 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_05_NEW_002");
 		case 29:
-			return -1546311283 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_05_NEW_003");
 		case 30:
-			return -1315224295 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_05_NEW_004");
 		case 31:
-			return -841811050 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_06_NEW_000");
 		case 32:
-			return -1063788244 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_06_NEW_001");
 		case 33:
-			return -751597989 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_06_NEW_002");
 		case 34:
-			return -469129209 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_06_NEW_003");
 		case 35:
-			return -163033980 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_06_NEW_004");
 		case 36:
-			return -335278967 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_07_NEW_000");
 		case 37:
-			return 432400396 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_07_NEW_001");
 		case 38:
-			return 1690205688 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_07_NEW_002");
 		case 39:
-			return 846764397 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_07_NEW_003");
 		case 40:
-			return 4011251 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_07_NEW_004");
 		case 41:
-			return 1000396653 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_08_NEW_000");
 		case 42:
-			return 1274148879 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_08_NEW_001");
 		case 43:
-			return 1594859082 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_08_NEW_002");
 		case 44:
-			return 1910490090 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_08_NEW_003");
 		case 45:
-			return -184104398 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_08_NEW_004");
 		case 46:
-			return 711799784 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_000");
 		case 47:
-			return -5120398 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_001");
 		case 48:
-			return 231242399 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_002");
 		case 49:
-			return 550805695 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_003");
 		case 50:
-			return 310248466 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_004");
 		case 51:
-			return -483782576 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_000");
 		case 52:
-			return 1486158628 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_001");
 		case 53:
-			return -639533637 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_002");
 		case 54:
-			return -1422909351 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_003");
 		case 55:
-			return -1639545210 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_004");
 		case 56:
-			return -1868357738 /* GXTEntry: "Color Combination One" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_11_NEW_000");
 		case 57:
-			return -1697238020 /* GXTEntry: "Color Combination Two" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_11_NEW_001");
 		case 58:
-			return 1404249527 /* GXTEntry: "Color Combination Three" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_11_NEW_002");
 		case 59:
-			return 2103671063 /* GXTEntry: "Color Combination Four" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_11_NEW_003");
 		case 60:
-			return -949449440 /* GXTEntry: "Color Combination Five" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_11_NEW_004");
 		default:
 			break;
 	}
-	return 1351319737 /* GXTEntry: "Color Combination One" */;
+	return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
 }
 
 int func_2273(int iParam0)
@@ -65469,69 +65469,69 @@ int func_2273(int iParam0)
 	switch (iParam0)
 	{
 		case -1:
-			return -1613128323 /* GXTEntry: "Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_NEW_000");
 		case 0:
 			return 0;
 		case 1:
-			return -1613128323 /* GXTEntry: "Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_NEW_000");
 		case 2:
-			return -1935706359 /* GXTEntry: "Coffee" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_NEW_001");
 		case 3:
-			return 2069222518 /* GXTEntry: "Russet" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_NEW_002");
 		case 4:
-			return -668627436 /* GXTEntry: "Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_NEW_003");
 		case 5:
-			return 180482892 /* GXTEntry: "Walnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_NEW_004");
 		case 6:
-			return 414935856 /* GXTEntry: "Weathered Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_000");
 		case 7:
-			return 317775775 /* GXTEntry: "Weathered Coffee" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_001");
 		case 8:
-			return 457437253 /* GXTEntry: "Weathered Russet" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_002");
 		case 9:
-			return 1436607742 /* GXTEntry: "Weathered Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_003");
 		case 10:
-			return -5228258 /* GXTEntry: "Weathered Walnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_004");
 		case 11:
-			return 139352826 /* GXTEntry: "Russet" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_NEW_000");
 		case 12:
-			return -1652128408 /* GXTEntry: "Mink" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_NEW_001");
 		case 13:
-			return 1929162841 /* GXTEntry: "Ivory" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_NEW_002");
 		case 14:
-			return 1773313477 /* GXTEntry: "Stone" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_NEW_003");
 		case 15:
-			return -765923568 /* GXTEntry: "Walnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_NEW_004");
 		case 16:
-			return -1742648548 /* GXTEntry: "Weathered Russet" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_000");
 		case 17:
-			return 1174316760 /* GXTEntry: "Weathered Mink" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_001");
 		case 18:
-			return -1505531892 /* GXTEntry: "Weathered Ivory" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_002");
 		case 19:
-			return 2089424026 /* GXTEntry: "Weathered Stone" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_003");
 		case 20:
-			return -1915242699 /* GXTEntry: "Weathered Walnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_004");
 		case 21:
-			return -1577219261 /* GXTEntry: "Cream" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_NEW_000");
 		case 22:
-			return -1269616658 /* GXTEntry: "Russet" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_NEW_001");
 		case 23:
-			return -1134149612 /* GXTEntry: "Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_NEW_002");
 		case 24:
-			return -803149943 /* GXTEntry: "Denim" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_NEW_003");
 		case 25:
-			return 1773279965 /* GXTEntry: "Bone" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_NEW_004");
 		case 26:
-			return 1266550546 /* GXTEntry: "Weathered Cream" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_USED_000");
 		case 27:
-			return 918478224 /* GXTEntry: "Weathered Russet" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_USED_001");
 		case 28:
-			return 659832507 /* GXTEntry: "Weathered Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_USED_002");
 		case 29:
-			return -2078508982 /* GXTEntry: "Weathered Denim" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_USED_003");
 		case 30:
-			return 1943099316 /* GXTEntry: "Weathered Bone" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_02_USED_004");
 		default:
 			break;
 	}
@@ -65543,29 +65543,29 @@ int func_2274(int iParam0)
 	switch (iParam0)
 	{
 		case -1:
-			return 1383590330 /* GXTEntry: "Natural" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 		case 0:
 			return 0;
 		case 1:
-			return 1383590330 /* GXTEntry: "Natural" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 		case 2:
-			return 548046368 /* GXTEntry: "Tan" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_001");
 		case 3:
-			return 1467937844 /* GXTEntry: "Walnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_002");
 		case 4:
-			return 691935155 /* GXTEntry: "Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_003");
 		case 5:
-			return -468677287 /* GXTEntry: "Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_004");
 		case 6:
-			return -288915854 /* GXTEntry: "Weathered Dark Oak" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_000");
 		case 7:
-			return 720369354 /* GXTEntry: "Weathered Tan" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_001");
 		case 8:
-			return 491707272 /* GXTEntry: "Weathered Walnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_002");
 		case 9:
-			return 243875325 /* GXTEntry: "Weathered Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_003");
 		case 10:
-			return -255655311 /* GXTEntry: "Weathered Hickory" */;
+			return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_004");
 		default:
 			break;
 	}
@@ -65996,7 +65996,7 @@ void func_2285(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -70390,11 +70390,11 @@ void func_2461(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 399422490, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_blankets"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLES"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 88372018, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -630346294, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -273475295, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_horns"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_stirrups"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_bedrolls"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);
@@ -77218,279 +77218,279 @@ int func_2702(int iParam0)
 	switch (iParam0)
 	{
 		case -1:
-			return 2082043658 /* GXTEntry: "Weathered Natural & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
 		case 0:
 			return 0;
 		case 1:
-			return -1056222128 /* GXTEntry: "Natural & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_IMPROVED_NEW_SADDLE_000");
 		case 2:
-			return -758581301 /* GXTEntry: "Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_IMPROVED_NEW_SADDLE_001");
 		case 3:
-			return -441246305 /* GXTEntry: "Tan & Maple" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_IMPROVED_NEW_SADDLE_002");
 		case 4:
-			return -210519776 /* GXTEntry: "Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_IMPROVED_NEW_SADDLE_003");
 		case 5:
-			return 2049164934 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_IMPROVED_NEW_SADDLE_004");
 		case 6:
-			return -2000460859 /* GXTEntry: "Hickory & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_IMPROVED_NEW_SADDLE_005");
 		case 7:
-			return -1249891745 /* GXTEntry: "Alligator Ranch Cutter Saddle" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_SPECIAL_NEW_SADDLE_000");
 		case 8:
-			return 2083280908 /* GXTEntry: "Natural & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_NEW_SADDLE_000");
 		case 9:
-			return 1877655433 /* GXTEntry: "Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_NEW_SADDLE_001");
 		case 10:
-			return -1575410715 /* GXTEntry: "Tan & Maple" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_NEW_SADDLE_002");
 		case 11:
-			return -1814395032 /* GXTEntry: "Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_NEW_SADDLE_003");
 		case 12:
-			return -1462029963 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_NEW_SADDLE_004");
 		case 13:
-			return -1692625416 /* GXTEntry: "Hickory & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_NEW_SADDLE_005");
 		case 14:
-			return 2082043658 /* GXTEntry: "Weathered Natural & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
 		case 15:
-			return -1592442619 /* GXTEntry: "Weathered Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_001");
 		case 16:
-			return -1286085238 /* GXTEntry: "Weathered Tan & Maple" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_002");
 		case 17:
-			return -1915708804 /* GXTEntry: "Weathered Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_003");
 		case 18:
-			return -1611514177 /* GXTEntry: "Weathered Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_004");
 		case 19:
-			return -60098641 /* GXTEntry: "Weathered Hickory & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_005");
 		case 20:
-			return -1178708643 /* GXTEntry: "Chestnut & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_IMPROVED_NEW_SADDLE_000");
 		case 21:
-			return 32269760 /* GXTEntry: "Cream" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_IMPROVED_NEW_SADDLE_001");
 		case 22:
-			return 254738501 /* GXTEntry: "Oak & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_IMPROVED_NEW_SADDLE_002");
 		case 23:
-			return -450122689 /* GXTEntry: "Ash & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_IMPROVED_NEW_SADDLE_003");
 		case 24:
-			return -189707446 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_IMPROVED_NEW_SADDLE_004");
 		case 25:
-			return 942133810 /* GXTEntry: "Hickory & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_IMPROVED_NEW_SADDLE_005");
 		case 26:
-			return -564516603 /* GXTEntry: "Bear Dakota Saddle" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_SPECIAL_NEW_SADDLE_000");
 		case 27:
-			return -326620879 /* GXTEntry: "Chestnut & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_NEW_SADDLE_000");
 		case 28:
-			return -633994099 /* GXTEntry: "Cream" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_NEW_SADDLE_001");
 		case 29:
-			return -939761638 /* GXTEntry: "Oak & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_NEW_SADDLE_002");
 		case 30:
-			return -1212989560 /* GXTEntry: "Ash & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_NEW_SADDLE_003");
 		case 31:
-			return -1481859205 /* GXTEntry: "Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_NEW_SADDLE_004");
 		case 32:
-			return -1791755634 /* GXTEntry: "Hickory & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_NEW_SADDLE_005");
 		case 33:
-			return -533070833 /* GXTEntry: "Weathered Chestnut & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_USED_SADDLE_000");
 		case 34:
-			return -158881622 /* GXTEntry: "Weathered Cream" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_USED_SADDLE_001");
 		case 35:
-			return 1204996927 /* GXTEntry: "Weathered Oak & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_USED_SADDLE_002");
 		case 36:
-			return 368797585 /* GXTEntry: "Weathered Ash & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_USED_SADDLE_003");
 		case 37:
-			return -479427980 /* GXTEntry: "Weathered Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_USED_SADDLE_004");
 		case 38:
-			return 1086668068 /* GXTEntry: "Weathered Hickory & Cream" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_02_STOCK_USED_SADDLE_005");
 		case 39:
-			return 1691272927 /* GXTEntry: "Chestnut & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_IMPROVED_NEW_SADDLE_000");
 		case 40:
-			return -1643366055 /* GXTEntry: "Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_IMPROVED_NEW_SADDLE_001");
 		case 41:
-			return -1874289198 /* GXTEntry: "Tan" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_IMPROVED_NEW_SADDLE_002");
 		case 42:
-			return -1135413786 /* GXTEntry: "Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_IMPROVED_NEW_SADDLE_003");
 		case 43:
-			return -702862954 /* GXTEntry: "Charcoal & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_IMPROVED_NEW_SADDLE_004");
 		case 44:
-			return -942306037 /* GXTEntry: "Hickory & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_IMPROVED_NEW_SADDLE_005");
 		case 45:
-			return 736792276 /* GXTEntry: "Beaver Roping Saddle" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_SPECIAL_NEW_SADDLE_000");
 		case 46:
-			return -1918128937 /* GXTEntry: "Dark Oak & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_NEW_SADDLE_000");
 		case 47:
-			return 1669650566 /* GXTEntry: "Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_NEW_SADDLE_001");
 		case 48:
-			return 1766712344 /* GXTEntry: "Tan & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_NEW_SADDLE_002");
 		case 49:
-			return 1625183029 /* GXTEntry: "Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_NEW_SADDLE_003");
 		case 50:
-			return 1988656777 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_NEW_SADDLE_004");
 		case 51:
-			return 773942716 /* GXTEntry: "Hickory & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_NEW_SADDLE_005");
 		case 52:
-			return 1520324460 /* GXTEntry: "Weathered Dark Oak & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_USED_SADDLE_000");
 		case 53:
-			return 797735233 /* GXTEntry: "Weathered Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_USED_SADDLE_001");
 		case 54:
-			return -45214523 /* GXTEntry: "Weathered Tan & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_USED_SADDLE_002");
 		case 55:
-			return -1239480728 /* GXTEntry: "Weathered Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_USED_SADDLE_003");
 		case 56:
-			return 568909306 /* GXTEntry: "Weathered Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_USED_SADDLE_004");
 		case 57:
-			return -628830413 /* GXTEntry: "Weathered Hickory & Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_03_STOCK_USED_SADDLE_005");
 		case 58:
-			return -1001094388 /* GXTEntry: "Ash & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_000");
 		case 59:
-			return -692115487 /* GXTEntry: "Chestnut & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_001");
 		case 60:
-			return 619856966 /* GXTEntry: "Walnut & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_002");
 		case 61:
-			return 255924452 /* GXTEntry: "Natural & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_003");
 		case 62:
-			return 50757743 /* GXTEntry: "Charcoal & Hickory" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_004");
 		case 63:
-			return 1892047853 /* GXTEntry: "Hickory & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_005");
 		case 64:
-			return -949205287 /* GXTEntry: "Panther Trail Saddle" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_SPECIAL_NEW_SADDLE_000");
 		case 65:
-			return 775895650 /* GXTEntry: "Ash & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_000");
 		case 66:
-			return 1712007673 /* GXTEntry: "Tan & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_001");
 		case 67:
-			return 861783199 /* GXTEntry: "Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_002");
 		case 68:
-			return -52308060 /* GXTEntry: "Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_003");
 		case 69:
-			return 154890327 /* GXTEntry: "Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_004");
 		case 70:
-			return 540384851 /* GXTEntry: "Hickory" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_005");
 		case 71:
-			return 1397390681 /* GXTEntry: "Weathered Ash & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_USED_SADDLE_000");
 		case 72:
-			return -671316289 /* GXTEntry: "Weathered Tan & Natural" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_USED_SADDLE_001");
 		case 73:
-			return -373839307 /* GXTEntry: "Weathered Coffee" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_USED_SADDLE_002");
 		case 74:
-			return 1818374028 /* GXTEntry: "Weathered Ash" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_USED_SADDLE_003");
 		case 75:
-			return -1910344948 /* GXTEntry: "Weathered Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_USED_SADDLE_004");
 		case 76:
-			return 518132873 /* GXTEntry: "Weathered Hickory" */;
+			return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_USED_SADDLE_005");
 		case 77:
-			return 387267141 /* GXTEntry: "Walnut & Ash" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_IMPROVED_NEW_SADDLE_000");
 		case 78:
-			return 97982409 /* GXTEntry: "Chestnut & Natural" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_IMPROVED_NEW_SADDLE_001");
 		case 79:
-			return 1261904520 /* GXTEntry: "Natural & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_IMPROVED_NEW_SADDLE_002");
 		case 80:
-			return 2029026810 /* GXTEntry: "Charcoal & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_IMPROVED_NEW_SADDLE_003");
 		case 81:
-			return 776366243 /* GXTEntry: "Ash & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_IMPROVED_NEW_SADDLE_004");
 		case 82:
-			return 471090239 /* GXTEntry: "Charcoal & Natural" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_IMPROVED_NEW_SADDLE_005");
 		case 83:
-			return 893370428 /* GXTEntry: "Cougar McClelland Saddle" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_SPECIAL_NEW_SADDLE_000");
 		case 84:
-			return -646614079 /* GXTEntry: "Oak & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_NEW_SADDLE_000");
 		case 85:
-			return -205608877 /* GXTEntry: "Natural & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_NEW_SADDLE_001");
 		case 86:
-			return 33014981 /* GXTEntry: "Chestnut & Walnut" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_NEW_SADDLE_002");
 		case 87:
-			return 275341736 /* GXTEntry: "Ash & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_NEW_SADDLE_003");
 		case 88:
-			return 785227376 /* GXTEntry: "Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_NEW_SADDLE_004");
 		case 89:
-			return 1024211693 /* GXTEntry: "Charcoal & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_NEW_SADDLE_005");
 		case 90:
-			return -112372189 /* GXTEntry: "Weathered Oak & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_USED_SADDLE_000");
 		case 91:
-			return 1067410126 /* GXTEntry: "Weathered Natural & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_USED_SADDLE_001");
 		case 92:
-			return 353177002 /* GXTEntry: "Weathered Chestnut & Walnut" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_USED_SADDLE_002");
 		case 93:
-			return -351192661 /* GXTEntry: "Weathered Ash & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_USED_SADDLE_003");
 		case 94:
-			return -1068506071 /* GXTEntry: "Weathered Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_USED_SADDLE_004");
 		case 95:
-			return 233078609 /* GXTEntry: "Weathered Charcoal & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MCCLELLAN_01_STOCK_USED_SADDLE_005");
 		case 96:
-			return 1539069123 /* GXTEntry: "Chestnut & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_IMPROVED_NEW_SADDLE_000");
 		case 97:
-			return -1927923850 /* GXTEntry: "Natural & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_IMPROVED_NEW_SADDLE_001");
 		case 98:
-			return 1049926260 /* GXTEntry: "Walnut & Natural" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_IMPROVED_NEW_SADDLE_002");
 		case 99:
-			return 1891335873 /* GXTEntry: "Coffee & Smoke" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_IMPROVED_NEW_SADDLE_003");
 		case 100:
-			return -786645118 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_IMPROVED_NEW_SADDLE_004");
 		case 101:
-			return -1167420898 /* GXTEntry: "Hickory & Natural" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_IMPROVED_NEW_SADDLE_005");
 		case 102:
-			return -769274720 /* GXTEntry: "Boar Mother Hubbard Saddle" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_SPECIAL_NEW_SADDLE_000");
 		case 103:
-			return 1832924306 /* GXTEntry: "Chestnut & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_000");
 		case 104:
-			return -1154264969 /* GXTEntry: "Natural & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_001");
 		case 105:
-			return -1919060660 /* GXTEntry: "Walnut & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_002");
 		case 106:
-			return 1533251801 /* GXTEntry: "Ash & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_003");
 		case 107:
-			return 337019456 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_004");
 		case 108:
-			return 2144885186 /* GXTEntry: "Hickory & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_005");
 		case 109:
-			return -2014043657 /* GXTEntry: "Weathered Chestnut & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_000");
 		case 110:
-			return -1045490328 /* GXTEntry: "Weathered Natural & Tan" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_001");
 		case 111:
-			return -211126050 /* GXTEntry: "Weathered Walnut & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_002");
 		case 112:
-			return -1663480895 /* GXTEntry: "Weathered Ash & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_003");
 		case 113:
-			return -829673694 /* GXTEntry: "Weathered Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_004");
 		case 114:
-			return 675603090 /* GXTEntry: "Weathered Hickory & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_USED_SADDLE_005");
 		case 115:
-			return 1430711162 /* GXTEntry: "Chestnut & Walnut" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_IMPROVED_NEW_SADDLE_000");
 		case 116:
-			return -1905992267 /* GXTEntry: "Natural & Coffee" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_IMPROVED_NEW_SADDLE_001");
 		case 117:
-			return 1888657937 /* GXTEntry: "Tan & Natural" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_IMPROVED_NEW_SADDLE_002");
 		case 118:
-			return -1061141865 /* GXTEntry: "Smoke & Charcoal" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_IMPROVED_NEW_SADDLE_003");
 		case 119:
-			return -1099940361 /* GXTEntry: "Hickory & Chestnut" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_IMPROVED_NEW_SADDLE_004");
 		case 120:
-			return -447673416 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_IMPROVED_NEW_SADDLE_005");
 		case 121:
-			return 2105105778 /* GXTEntry: "Rattlesnake Vaquero Saddle" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_SPECIAL_NEW_SADDLE_000");
 		case 122:
-			return 86166765 /* GXTEntry: "Hickory" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_NEW_SADDLE_000");
 		case 123:
-			return 1531312434 /* GXTEntry: "Tan" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_NEW_SADDLE_001");
 		case 124:
-			return 563971554 /* GXTEntry: "Chestnut & Walnut" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_NEW_SADDLE_002");
 		case 125:
-			return 2109423132 /* GXTEntry: "Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_NEW_SADDLE_003");
 		case 126:
-			return 1276795611 /* GXTEntry: "Dark Oak" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_NEW_SADDLE_004");
 		case 127:
-			return -239426035 /* GXTEntry: "Charcoal & Ash" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_NEW_SADDLE_005");
 		case 128:
-			return -431453352 /* GXTEntry: "Weathered Hickory" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_USED_SADDLE_000");
 		case 129:
-			return -755342148 /* GXTEntry: "Weathered Tan" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_USED_SADDLE_001");
 		case 130:
-			return 413102085 /* GXTEntry: "Weathered Chestnut & Walnut" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_USED_SADDLE_002");
 		case 131:
-			return -144167529 /* GXTEntry: "Weathered Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_USED_SADDLE_003");
 		case 132:
-			return 487323890 /* GXTEntry: "Weathered Dark Oak" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_USED_SADDLE_004");
 		case 133:
-			return 171561806 /* GXTEntry: "Weathered Smoke & Ash" */;
+			return joaat("HORSE_EQUIPMENT_CHARRO_01_STOCK_USED_SADDLE_005");
 		default:
 			break;
 	}
-	return 2082043658 /* GXTEntry: "Weathered Natural & Ash" */;
+	return joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
 }
 
 int func_2703(int iParam0)
@@ -77498,41 +77498,41 @@ int func_2703(int iParam0)
 	switch (iParam0)
 	{
 		case -1:
-			return -960265739 /* GXTEntry: "Maple \'Duck Bill\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_000");
 		case 0:
 			return 0;
 		case 1:
-			return -960265739 /* GXTEntry: "Maple \'Duck Bill\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_000");
 		case 2:
-			return -605639621 /* GXTEntry: "Pine \'Dally\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_001");
 		case 3:
-			return 707315902 /* GXTEntry: "Birch \'Dally\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_002");
 		case 4:
-			return -505661354 /* GXTEntry: "Steel \'Dally\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_003");
 		case 5:
-			return 873684163 /* GXTEntry: "Brass Eagle Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_004");
 		case 6:
-			return 1044410653 /* GXTEntry: "Aspen \'Duck Bill\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_005");
 		case 7:
-			return 276665752 /* GXTEntry: "Steel \'Duck Bill\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_006");
 		case 8:
-			return -1697469888 /* GXTEntry: "Steel \'Diablo\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_007");
 		case 9:
-			return -317993291 /* GXTEntry: "Steel \'Diez Corona\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_008");
 		case 10:
-			return -131668757 /* GXTEntry: "Aspen \'Thick Neck\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_009");
 		case 11:
-			return -120920285 /* GXTEntry: "Birch \'Torquemada\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_010");
 		case 12:
-			return -508446479 /* GXTEntry: "Redemption \'Sindewinder\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_011");
 		case 13:
-			return 859626502 /* GXTEntry: "Maple \'Torquemada\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_012");
 		case 14:
-			return -258189586 /* GXTEntry: "Birch \'Wide Belly\' Horn" */;
+			return joaat("HORSE_EQUIPMENT_HORN_NEW_013");
 		default:
 			break;
 	}
-	return -960265739 /* GXTEntry: "Maple \'Duck Bill\' Horn" */;
+	return joaat("HORSE_EQUIPMENT_HORN_NEW_000");
 }
 
 int func_2704(int iParam0)
@@ -77540,35 +77540,35 @@ int func_2704(int iParam0)
 	switch (iParam0)
 	{
 		case -1:
-			return 1484641439 /* GXTEntry: "Belled Oxbow Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
 		case 0:
 			return 0;
 		case 1:
-			return 1484641439 /* GXTEntry: "Belled Oxbow Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
 		case 2:
-			return 1739551490 /* GXTEntry: "Deep Roper Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_001");
 		case 3:
-			return 1964477906 /* GXTEntry: "Slim-line Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_002");
 		case 4:
-			return -2109331409 /* GXTEntry: "Fillies Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_003");
 		case 5:
-			return -879084842 /* GXTEntry: "Baroque Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_004");
 		case 6:
-			return -1628905100 /* GXTEntry: "Oxbow Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_005");
 		case 7:
-			return -415239647 /* GXTEntry: "Slim-line Iron Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_006");
 		case 8:
-			return -1108238459 /* GXTEntry: "Tapaderos Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_007");
 		case 9:
-			return 62106376 /* GXTEntry: "Safety Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_008");
 		case 10:
-			return -659663618 /* GXTEntry: "Hooded Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_009");
 		case 11:
-			return -1928607782 /* GXTEntry: "Bell Stirrup" */;
+			return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_010");
 		default:
 			break;
 	}
-	return 1484641439 /* GXTEntry: "Belled Oxbow Stirrup" */;
+	return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
 }
 
 void func_2705(int iParam0, bool bParam1)
@@ -77683,7 +77683,7 @@ int func_2711(int iParam0)
 			return 8;
 		case -366693282:
 			return 9;
-		case -1725579161:
+		case joaat("hats"):
 			return 1;
 		case -1057211637:
 			return 2;
@@ -77705,11 +77705,11 @@ int func_2711(int iParam0)
 			return 14;
 		case -1229572297:
 			return 12;
-		case 98860198:
+		case joaat("eyewear"):
 			return 15;
 		case -126114541:
 			return 16;
-		case 1963323202:
+		case joaat("masks"):
 			return 17;
 		case 1249071452:
 			return 18;
@@ -77723,17 +77723,17 @@ int func_2711(int iParam0)
 			return 22;
 		case 1163341077:
 			return 24;
-		case 2056714954:
+		case joaat("neckties"):
 			return 23;
 		case 1820468724:
 			return 25;
 		case 1094162565:
 			return 26;
-		case 1065301383:
+		case joaat("badges"):
 			return 28;
 		case 188311241:
 			return 27;
-		case 539411565:
+		case joaat("shirts_full"):
 			return 31;
 		case -242465481:
 			return 32;
@@ -77749,25 +77749,25 @@ int func_2711(int iParam0)
 			return 33;
 		case 1026208467:
 			return 34;
-		case -2022036233:
+		case joaat("suspenders"):
 			return 50;
-		case 1008366797:
+		case joaat("cloaks"):
 			return 35;
 		case -407765147:
 			return 38;
-		case -529714994:
+		case joaat("coats"):
 			return 39;
-		case -1357631221:
+		case joaat("ponchos"):
 			return 40;
-		case 107129908:
+		case joaat("coats_closed"):
 			return 41;
 		case 1799186100:
 			return 42;
-		case 1214179380:
+		case joaat("vests"):
 			return 43;
 		case -372138959:
 			return 44;
-		case 1995498098:
+		case joaat("aprons"):
 			return 45;
 		case 2118314848:
 			return 46;
@@ -77777,23 +77777,23 @@ int func_2711(int iParam0)
 			return 48;
 		case 425108158:
 			return 49;
-		case 1927737204:
+		case joaat("armor"):
 			return 51;
 		case joaat("Accessories"):
 			return 58;
 		case joaat("loadouts"):
 			return 54;
-		case 1058996709:
+		case joaat("ammo_pistols"):
 			return 55;
-		case -636605355:
+		case joaat("ammo_rifles"):
 			return 56;
 		case -811108073:
 			return 57;
-		case -1806676698:
+		case joaat("satchels"):
 			return 52;
 		case 1431760203:
 			return 53;
-		case -1896142998:
+		case joaat("talisman_satchel"):
 			return 59;
 		case -1250802524:
 			return 60;
@@ -77803,63 +77803,63 @@ int func_2711(int iParam0)
 			return 62;
 		case -1783800278:
 			return 63;
-		case -1848730848:
+		case joaat("gauntlets"):
 			return 64;
 		case joaat("gloves"):
 			return 65;
 		case -1394906584:
 			return 66;
-		case 2076247897:
+		case joaat("jewelry_bracelets"):
 			return 67;
-		case -614161520:
+		case joaat("talisman_wrist"):
 			return 68;
-		case -244703965:
+		case joaat("jewelry_rings_left"):
 			return 69;
-		case 2053881099:
+		case joaat("jewelry_rings_right"):
 			return 70;
-		case -85389185:
+		case joaat("belt_buckles"):
 			return 71;
-		case -1691579511:
+		case joaat("gunbelts"):
 			return 72;
 		case 904313209:
 			return 93;
-		case 1237884315:
+		case joaat("holsters_crossdraw"):
 			return 76;
-		case 2078766994:
+		case joaat("holsters_knife"):
 			return 75;
-		case -1176307199:
+		case joaat("holsters_right"):
 			return 73;
-		case -1229581779:
+		case joaat("holsters_left"):
 			return 74;
-		case 2080418032:
+		case joaat("talisman_holster"):
 			return 77;
-		case -1496238906:
+		case joaat("belts"):
 			return 78;
-		case 451737564:
+		case joaat("talisman_belt"):
 			return 79;
 		case -246141679:
 			return 80;
 		case -2110355467:
 			return 81;
-		case 491541130:
+		case joaat("pants"):
 			return 82;
 		case -1168358466:
 			return 83;
 		case -2130987730:
 			return 84;
-		case -1595692161:
+		case joaat("skirts"):
 			return 85;
 		case joaat("stockings"):
 			return 86;
 		case joaat("chaps"):
 			return 87;
-		case 1363860714:
+		case joaat("spats"):
 			return 88;
 		case 1377798597:
 			return 89;
 		case joaat("Boots"):
 			return 90;
-		case 410165049:
+		case joaat("boot_accessories"):
 			return 91;
 		case 828269641:
 			return 92;
@@ -88937,41 +88937,41 @@ int func_3121(int iParam0)
 			return joaat("BREED_TURKOMAN_GOLD");
 		case joaat("a_c_horse_turkoman_silver"):
 			return joaat("BREED_TURKOMAN_SILVER");
-		case -683592019:
+		case joaat("A_C_Horse_Breton_RedRoan"):
 			return joaat("BREED_BRETON_REDROAN");
-		case 337109765:
+		case joaat("A_C_Horse_Breton_Sorrel"):
 			return joaat("BREED_BRETON_SORREL");
-		case -619132373:
+		case joaat("A_C_Horse_Breton_GrulloDun"):
 			return joaat("BREED_BRETON_GRULLODUN");
-		case 1544366970:
+		case joaat("A_C_Horse_Breton_SealBrown"):
 			return joaat("BREED_BRETON_SEALBROWN");
-		case -1441144351:
+		case joaat("A_C_Horse_Breton_MealyDappleBay"):
 			return joaat("BREED_BRETON_MEALYDAPPLEBAY");
-		case -1717674545:
+		case joaat("A_C_Horse_Breton_SteelGrey"):
 			return joaat("BREED_BRETON_STEELGREY");
-		case 1825358734:
+		case joaat("A_C_Horse_Criollo_BlueRoanOvero"):
 			return joaat("BREED_CRIOLLO_BLUEROANOVERO");
-		case 1138427579:
+		case joaat("A_C_Horse_Criollo_Dun"):
 			return joaat("BREED_CRIOLLO_DUN");
-		case -1720251851:
+		case joaat("A_C_Horse_Criollo_BayBrindle"):
 			return joaat("BREED_CRIOLLO_BAYBRINDLE");
-		case 506887890:
+		case joaat("A_C_Horse_Criollo_SorrelOvero"):
 			return joaat("BREED_CRIOLLO_SORRELOVERO");
-		case 766293155:
+		case joaat("A_C_Horse_Criollo_BayFrameOvero"):
 			return joaat("BREED_CRIOLLO_BAYFRAMEOVERO");
-		case 2147082926:
+		case joaat("A_C_Horse_Criollo_MarbleSabino"):
 			return joaat("BREED_CRIOLLO_MARBLESABINO");
-		case -1616287563:
+		case joaat("A_C_Horse_Kladruber_Black"):
 			return joaat("BREED_KLADRUBER_BLACK");
-		case -127412252:
+		case joaat("A_C_Horse_Kladruber_White"):
 			return joaat("BREED_KLADRUBER_WHITE");
-		case -1881155818:
+		case joaat("A_C_Horse_Kladruber_Cremello"):
 			return joaat("BREED_KLADRUBER_CREMELLO");
-		case -955237712:
+		case joaat("A_C_Horse_Kladruber_Grey"):
 			return joaat("BREED_KLADRUBER_GREY");
-		case -647020346:
+		case joaat("A_C_Horse_Kladruber_DappleRoseGrey"):
 			return joaat("BREED_KLADRUBER_DAPPLEROSEGREY");
-		case -1846319726:
+		case joaat("A_C_Horse_Kladruber_Silver"):
 			return joaat("BREED_KLADRUBER_SILVER");
 		case 1007570567:
 			return joaat("BREED_NORFOLKROADSTER_BLACK");
@@ -88991,7 +88991,7 @@ int func_3121(int iParam0)
 			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("BREED_MULE_PAINTED");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");

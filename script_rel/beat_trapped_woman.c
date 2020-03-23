@@ -3648,7 +3648,7 @@ int func_77(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 399422490;
+			return joaat("horse_blankets");
 		case 1:
 			return -385635273;
 		case 2:
@@ -3658,7 +3658,7 @@ int func_77(int iParam0)
 		case 7:
 			return 168005805;
 		case 9:
-			return -273475295;
+			return joaat("horse_bedrolls");
 		case 10:
 			return -2142954459;
 		case 11:
@@ -34557,7 +34557,7 @@ int func_955(int iParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -37772,7 +37772,7 @@ void func_1043(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

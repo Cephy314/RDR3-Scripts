@@ -5288,7 +5288,7 @@ void func_235(var uParam0, bool bParam1)
 	{
 		if (!Global_17)
 		{
-			PED::_0xD710A5007C2AC539(Global_35, -1229581779, 0);
+			PED::_0xD710A5007C2AC539(Global_35, joaat("holsters_left"), 0);
 			Global_17 = !bParam1;
 		}
 	}
@@ -15332,7 +15332,7 @@ int func_625(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:
@@ -19336,11 +19336,11 @@ void func_777(bool bParam0)
 	if (TASK::IS_PED_IN_WRITHE(bParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 399422490, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_blankets"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLES"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 88372018, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -630346294, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -273475295, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_horns"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_stirrups"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_bedrolls"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, -2142954459, 0, false);
 }
 

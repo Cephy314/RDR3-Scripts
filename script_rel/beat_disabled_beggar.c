@@ -915,7 +915,7 @@ void func_17()
 		}
 		func_102(&(uLocal_433[0]), &((Local_99[0 /*32*/])->f_23), 0);
 		iLocal_453 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(161068336, &(uLocal_433[0]), 0f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
-		PED::_0xD710A5007C2AC539(&(uLocal_433[0]), -1725579161, 1);
+		PED::_0xD710A5007C2AC539(&(uLocal_433[0]), joaat("hats"), 1);
 		PED::_0xCC8CA3E88256E58F(&(uLocal_433[0]), false, true, true, true, false);
 		func_103(&(uLocal_433[0]), &Local_132, 0);
 		PED::SET_PED_CONFIG_FLAG(&(uLocal_433[0]), 6, true);
@@ -21068,7 +21068,7 @@ void func_669(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

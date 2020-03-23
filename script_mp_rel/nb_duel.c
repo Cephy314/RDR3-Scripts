@@ -4338,9 +4338,9 @@ int func_201(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 888152471;
+					return joaat("MP_RE_DUEL_MALES_01");
 				case 1:
-					return 888152471;
+					return joaat("MP_RE_DUEL_MALES_01");
 				default:
 					break;
 			}
@@ -4350,9 +4350,9 @@ int func_201(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return -1651459012;
+					return joaat("MP_RE_DUEL_FEMALES_01");
 				case 1:
-					return -1651459012;
+					return joaat("MP_RE_DUEL_FEMALES_01");
 				default:
 					break;
 			}

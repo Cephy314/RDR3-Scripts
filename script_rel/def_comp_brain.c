@@ -6544,15 +6544,15 @@ void func_202(bool bParam0, bool bParam1, bool bParam2)
 	}
 	if (bParam1)
 	{
-		if (!PED::_0xFB4891BD7578CDC1(bParam0, -1725579161))
+		if (!PED::_0xFB4891BD7578CDC1(bParam0, joaat("hats")))
 		{
 			PED::_0x1902C4CFCC5BE57C(bParam0, 622113465);
 			bVar0 = true;
 		}
 	}
-	else if (PED::_0xFB4891BD7578CDC1(bParam0, -1725579161))
+	else if (PED::_0xFB4891BD7578CDC1(bParam0, joaat("hats")))
 	{
-		PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+		PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 		bVar0 = true;
 	}
 	if (bParam2)
@@ -16394,7 +16394,7 @@ void func_532(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

@@ -2892,7 +2892,7 @@ int func_94(var uParam0)
 	{
 		return 0;
 	}
-	if (func_174(*uParam0, -1725579161, 0))
+	if (func_174(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -9686,7 +9686,7 @@ void func_378(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (2056714954 == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
+					if (joaat("neckties") == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
 					{
 						if ((bParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_117(bVar3, 1872585553)) || iVar4 == 1882579758)
 						{

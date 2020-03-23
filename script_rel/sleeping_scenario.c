@@ -3893,7 +3893,7 @@ int func_126()
 		case joaat("clothing_hl_player_hat_034_1"):
 		case joaat("clothing_hl_player_hat_030_1"):
 		case -318532162: /* GXTEntry: "Rococo Accessory" */
-		case -234637698: /* GXTEntry: "Military Slouch Hat" */
+		case joaat("clothing_item_sp_collectable_hat_mr1_047_alt02"):
 		case joaat("clothing_hl_player_hat_003_1"):
 		case joaat("clothing_hl_player_hat_045_1"):
 		case joaat("clothing_hl_player_hat_069_1"):
@@ -7292,7 +7292,7 @@ int func_243(var uParam0)
 	{
 		return 0;
 	}
-	if (func_489(*uParam0, -1725579161, 0))
+	if (func_489(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -20523,7 +20523,7 @@ int func_695(bool bParam0, bool bParam1, var uParam2)
 	switch (bVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

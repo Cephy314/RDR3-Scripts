@@ -4760,7 +4760,7 @@ int func_214(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return -644062535;
+					return joaat("MP_RE_RUNAWAYWAGON_MALES_01");
 				default:
 					break;
 			}
@@ -4769,7 +4769,7 @@ int func_214(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return -99878679;
+					return joaat("MP_RE_RUNAWAYWAGON_FEMALES_01");
 				default:
 					break;
 			}
@@ -4778,9 +4778,9 @@ int func_214(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return -99878679;
+					return joaat("MP_RE_RUNAWAYWAGON_FEMALES_01");
 				case 1:
-					return -644062535;
+					return joaat("MP_RE_RUNAWAYWAGON_MALES_01");
 				default:
 					break;
 			}
@@ -4789,9 +4789,9 @@ int func_214(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return -644062535;
+					return joaat("MP_RE_RUNAWAYWAGON_MALES_01");
 				case 1:
-					return -99878679;
+					return joaat("MP_RE_RUNAWAYWAGON_FEMALES_01");
 				default:
 					break;
 			}

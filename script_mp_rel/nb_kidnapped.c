@@ -4820,7 +4820,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1582696387;
+					return joaat("MP_RE_KIDNAPPED_MALES_01");
 				default:
 					break;
 			}
@@ -4830,7 +4830,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1159171519;
+					return joaat("MP_RE_KIDNAPPED_FEMALES_01");
 				default:
 					break;
 			}
@@ -4840,7 +4840,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1159171519;
+					return joaat("MP_RE_KIDNAPPED_FEMALES_01");
 				default:
 					break;
 			}
@@ -4850,7 +4850,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1582696387;
+					return joaat("MP_RE_KIDNAPPED_MALES_01");
 				default:
 					break;
 			}
@@ -4863,7 +4863,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1582696387;
+					return joaat("MP_RE_KIDNAPPED_MALES_01");
 				default:
 					break;
 			}
@@ -4873,7 +4873,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1582696387;
+					return joaat("MP_RE_KIDNAPPED_MALES_01");
 				default:
 					break;
 			}
@@ -4883,7 +4883,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1159171519;
+					return joaat("MP_RE_KIDNAPPED_FEMALES_01");
 				default:
 					break;
 			}
@@ -4893,7 +4893,7 @@ int func_196(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return 1159171519;
+					return joaat("MP_RE_KIDNAPPED_FEMALES_01");
 				default:
 					break;
 			}

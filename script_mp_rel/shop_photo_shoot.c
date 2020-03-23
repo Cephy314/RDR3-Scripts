@@ -1075,7 +1075,7 @@ void func_21()
 											if (NETWORK::CAN_REGISTER_MISSION_PEDS(1))
 											{
 												iVar14 = PED::CLONE_PED(PLAYER::GET_PLAYER_PED(NETWORK::NETWORK_GET_PLAYER_INDEX(iVar2)), 1.401298E-45f, true, true);
-												PED::_0xD710A5007C2AC539(iVar14, -1229581779, 1);
+												PED::_0xD710A5007C2AC539(iVar14, joaat("holsters_left"), 1);
 												PED::_0xCC8CA3E88256E58F(iVar14, false, true, true, true, false);
 												NETWORK::_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK(iVar14, true);
 												PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar14, true);

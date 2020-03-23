@@ -24521,7 +24521,7 @@ void func_738(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, v
 	Global_1946804->f_2776.f_3[0] = uParam1;
 	Global_1946804->f_2776.f_3[1] = uParam2;
 	Global_1946804->f_2776.f_3[2] = uParam3;
-	Global_1946804->f_2776 = -1725579161;
+	Global_1946804->f_2776 = joaat("hats");
 	if (iParam4 != 0)
 	{
 		Global_1946804->f_2776.f_8 = iParam4;
@@ -29031,7 +29031,7 @@ int func_885(int iParam0)
 			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("BREED_MULE_PAINTED");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
@@ -66614,7 +66614,7 @@ int func_2202(var uParam0)
 	{
 		return 0;
 	}
-	if (func_3304(*uParam0, -1725579161, 0))
+	if (func_3304(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -89567,7 +89567,7 @@ int func_2942(bool bParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:
@@ -89765,7 +89765,7 @@ int func_2952(int iParam0)
 		case -398968481:
 			return -366693282;
 		case -2105530711:
-			return -1725579161;
+			return joaat("hats");
 		case 625416786:
 			return -1057211637;
 		case 1306151543:
@@ -89787,11 +89787,11 @@ int func_2952(int iParam0)
 		case 904830164:
 			return -1229572297;
 		case 719843584:
-			return 98860198;
+			return joaat("eyewear");
 		case -1110426434:
 			return -126114541;
 		case -223797183:
-			return 1963323202;
+			return joaat("masks");
 		case 1984438688:
 			return -2087420491;
 		case 1013950848:
@@ -89803,17 +89803,17 @@ int func_2952(int iParam0)
 		case -1484052032:
 			return 1163341077;
 		case 1746653115:
-			return 2056714954;
+			return joaat("neckties");
 		case -856561534:
 			return 1820468724;
 		case -237881785:
 			return 1094162565;
 		case -689983341:
-			return 1065301383;
+			return joaat("badges");
 		case 1853503172:
 			return 188311241;
 		case -2089804556:
-			return 539411565;
+			return joaat("shirts_full");
 		case 237827878:
 			return -242465481;
 		case 2115205669:
@@ -89829,21 +89829,21 @@ int func_2952(int iParam0)
 		case 1938574876:
 			return 1026208467;
 		case 376149636:
-			return -2022036233;
+			return joaat("suspenders");
 		case 1253249384:
-			return 1008366797;
+			return joaat("cloaks");
 		case -43043573:
 			return -407765147;
 		case -1162640732:
-			return -529714994;
+			return joaat("coats");
 		case -662295926:
 			return 1799186100;
 		case 2045415055:
-			return 1214179380;
+			return joaat("vests");
 		case 1174324405:
 			return -372138959;
 		case 874055612:
-			return 1995498098;
+			return joaat("aprons");
 		case -415832755:
 			return 2118314848;
 		case 1252420504:
@@ -89857,17 +89857,17 @@ int func_2952(int iParam0)
 		case -1383261957:
 			return joaat("loadouts");
 		case -2124282627:
-			return 1058996709;
+			return joaat("ammo_pistols");
 		case 735082099:
-			return -636605355;
+			return joaat("ammo_rifles");
 		case 63173055:
 			return -811108073;
 		case 1418570693:
-			return -1806676698;
+			return joaat("satchels");
 		case -1476509547:
 			return 1431760203;
 		case -1653154748:
-			return -1896142998;
+			return joaat("talisman_satchel");
 		case 582522943:
 			return -1250802524;
 		case 250841639:
@@ -89881,39 +89881,39 @@ int func_2952(int iParam0)
 		case -1440204674:
 			return -1394906584;
 		case 1981185929:
-			return 2076247897;
+			return joaat("jewelry_bracelets");
 		case 100277197:
-			return -614161520;
+			return joaat("talisman_wrist");
 		case 798554492:
-			return -85389185;
+			return joaat("belt_buckles");
 		case 1573110862:
-			return -1691579511;
+			return joaat("gunbelts");
 		case 1356956506:
 			return 904313209;
 		case -1292335301:
-			return 1237884315;
+			return joaat("holsters_crossdraw");
 		case 368776083:
-			return 2078766994;
+			return joaat("holsters_knife");
 		case 974566458:
-			return -1176307199;
+			return joaat("holsters_right");
 		case 1620573656:
-			return -1229581779;
+			return joaat("holsters_left");
 		case 2097486068:
-			return 2080418032;
+			return joaat("talisman_holster");
 		case 156885186:
-			return -1496238906;
+			return joaat("belts");
 		case 1897833847:
-			return 451737564;
+			return joaat("talisman_belt");
 		case -77443607:
 			return -2110355467;
 		case 1374870102:
-			return 491541130;
+			return joaat("pants");
 		case -147640227:
 			return -1168358466;
 		case 263550809:
 			return -2130987730;
 		case 1755853336:
-			return -1595692161;
+			return joaat("skirts");
 		case -1708863941:
 			return joaat("stockings");
 		case 783045853:
@@ -89923,7 +89923,7 @@ int func_2952(int iParam0)
 		case 1801830393:
 			return joaat("Boots");
 		case -834874115:
-			return 410165049;
+			return joaat("boot_accessories");
 		case -1129780236:
 			return 828269641;
 		default:
@@ -90308,7 +90308,7 @@ int func_2966(int iParam0)
 			return 8;
 		case -366693282:
 			return 9;
-		case -1725579161:
+		case joaat("hats"):
 			return 1;
 		case -1057211637:
 			return 2;
@@ -90330,11 +90330,11 @@ int func_2966(int iParam0)
 			return 14;
 		case -1229572297:
 			return 12;
-		case 98860198:
+		case joaat("eyewear"):
 			return 15;
 		case -126114541:
 			return 16;
-		case 1963323202:
+		case joaat("masks"):
 			return 17;
 		case 1249071452:
 			return 18;
@@ -90348,17 +90348,17 @@ int func_2966(int iParam0)
 			return 22;
 		case 1163341077:
 			return 24;
-		case 2056714954:
+		case joaat("neckties"):
 			return 23;
 		case 1820468724:
 			return 25;
 		case 1094162565:
 			return 26;
-		case 1065301383:
+		case joaat("badges"):
 			return 28;
 		case 188311241:
 			return 27;
-		case 539411565:
+		case joaat("shirts_full"):
 			return 31;
 		case -242465481:
 			return 32;
@@ -90374,21 +90374,21 @@ int func_2966(int iParam0)
 			return 33;
 		case 1026208467:
 			return 34;
-		case -2022036233:
+		case joaat("suspenders"):
 			return 48;
-		case 1008366797:
+		case joaat("cloaks"):
 			return 35;
 		case -407765147:
 			return 38;
-		case -529714994:
+		case joaat("coats"):
 			return 39;
 		case 1799186100:
 			return 40;
-		case 1214179380:
+		case joaat("vests"):
 			return 41;
 		case -372138959:
 			return 42;
-		case 1995498098:
+		case joaat("aprons"):
 			return 43;
 		case 2118314848:
 			return 44;
@@ -90402,17 +90402,17 @@ int func_2966(int iParam0)
 			return 55;
 		case joaat("loadouts"):
 			return 51;
-		case 1058996709:
+		case joaat("ammo_pistols"):
 			return 52;
-		case -636605355:
+		case joaat("ammo_rifles"):
 			return 53;
 		case -811108073:
 			return 54;
-		case -1806676698:
+		case joaat("satchels"):
 			return 49;
 		case 1431760203:
 			return 50;
-		case -1896142998:
+		case joaat("talisman_satchel"):
 			return 56;
 		case -1250802524:
 			return 57;
@@ -90426,39 +90426,39 @@ int func_2966(int iParam0)
 			return 61;
 		case -1394906584:
 			return 62;
-		case 2076247897:
+		case joaat("jewelry_bracelets"):
 			return 63;
-		case -614161520:
+		case joaat("talisman_wrist"):
 			return 64;
-		case -85389185:
+		case joaat("belt_buckles"):
 			return 65;
-		case -1691579511:
+		case joaat("gunbelts"):
 			return 66;
 		case 904313209:
 			return 85;
-		case 1237884315:
+		case joaat("holsters_crossdraw"):
 			return 70;
-		case 2078766994:
+		case joaat("holsters_knife"):
 			return 69;
-		case -1176307199:
+		case joaat("holsters_right"):
 			return 67;
-		case -1229581779:
+		case joaat("holsters_left"):
 			return 68;
-		case 2080418032:
+		case joaat("talisman_holster"):
 			return 71;
-		case -1496238906:
+		case joaat("belts"):
 			return 72;
-		case 451737564:
+		case joaat("talisman_belt"):
 			return 73;
 		case -2110355467:
 			return 74;
-		case 491541130:
+		case joaat("pants"):
 			return 75;
 		case -1168358466:
 			return 76;
 		case -2130987730:
 			return 77;
-		case -1595692161:
+		case joaat("skirts"):
 			return 78;
 		case joaat("stockings"):
 			return 79;
@@ -90468,7 +90468,7 @@ int func_2966(int iParam0)
 			return 81;
 		case joaat("Boots"):
 			return 82;
-		case 410165049:
+		case joaat("boot_accessories"):
 			return 83;
 		case 828269641:
 			return 84;
@@ -98544,7 +98544,7 @@ int func_3216(bool bParam0, bool bParam1, var uParam2)
 	switch (bVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -121046,11 +121046,11 @@ void func_4061(bool bParam0)
 	if (TASK::IS_PED_IN_WRITHE(bParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 399422490, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_blankets"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLES"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 88372018, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -630346294, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -273475295, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_horns"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_stirrups"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_bedrolls"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, -2142954459, 0, false);
 }
 
@@ -128107,7 +128107,7 @@ bool func_4311()
 			return true;
 		}
 	}
-	return (PED::_0xFB4891BD7578CDC1(Global_35, -1725579161) || func_2303(-2061583405, &uVar0));
+	return (PED::_0xFB4891BD7578CDC1(Global_35, joaat("hats")) || func_2303(-2061583405, &uVar0));
 }
 
 int func_4312(int iParam0, int iParam1)
@@ -134435,7 +134435,7 @@ int func_4502(int iParam0)
 		case joaat("BREED_MULE_PAINTED"):
 			return joaat("a_c_horsemulepainted_01");
 		case joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN"):
-			return 1883159941;
+			return joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
 		case joaat("BREED_APPALOOSA_BLACKSNOWFLAKE"):
 			return joaat("a_c_horse_appaloosa_blacksnowflake");
 		case joaat("BREED_ARABIAN_GREY"):
@@ -135206,7 +135206,7 @@ void func_4526(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

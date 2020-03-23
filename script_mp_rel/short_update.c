@@ -12577,7 +12577,7 @@ void func_348(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, v
 	Global_1951141->f_3235.f_3[0] = uParam1;
 	Global_1951141->f_3235.f_3[1] = uParam2;
 	Global_1951141->f_3235.f_3[2] = uParam3;
-	Global_1951141->f_3235 = -1725579161;
+	Global_1951141->f_3235 = joaat("hats");
 	if (iParam4 != 0)
 	{
 		Global_1951141->f_3235.f_8 = iParam4;
@@ -16405,41 +16405,41 @@ int func_498(int iParam0)
 			return joaat("BREED_TURKOMAN_GOLD");
 		case joaat("a_c_horse_turkoman_silver"):
 			return joaat("BREED_TURKOMAN_SILVER");
-		case -683592019:
+		case joaat("A_C_Horse_Breton_RedRoan"):
 			return joaat("BREED_BRETON_REDROAN");
-		case 337109765:
+		case joaat("A_C_Horse_Breton_Sorrel"):
 			return joaat("BREED_BRETON_SORREL");
-		case -619132373:
+		case joaat("A_C_Horse_Breton_GrulloDun"):
 			return joaat("BREED_BRETON_GRULLODUN");
-		case 1544366970:
+		case joaat("A_C_Horse_Breton_SealBrown"):
 			return joaat("BREED_BRETON_SEALBROWN");
-		case -1441144351:
+		case joaat("A_C_Horse_Breton_MealyDappleBay"):
 			return joaat("BREED_BRETON_MEALYDAPPLEBAY");
-		case -1717674545:
+		case joaat("A_C_Horse_Breton_SteelGrey"):
 			return joaat("BREED_BRETON_STEELGREY");
-		case 1825358734:
+		case joaat("A_C_Horse_Criollo_BlueRoanOvero"):
 			return joaat("BREED_CRIOLLO_BLUEROANOVERO");
-		case 1138427579:
+		case joaat("A_C_Horse_Criollo_Dun"):
 			return joaat("BREED_CRIOLLO_DUN");
-		case -1720251851:
+		case joaat("A_C_Horse_Criollo_BayBrindle"):
 			return joaat("BREED_CRIOLLO_BAYBRINDLE");
-		case 506887890:
+		case joaat("A_C_Horse_Criollo_SorrelOvero"):
 			return joaat("BREED_CRIOLLO_SORRELOVERO");
-		case 766293155:
+		case joaat("A_C_Horse_Criollo_BayFrameOvero"):
 			return joaat("BREED_CRIOLLO_BAYFRAMEOVERO");
-		case 2147082926:
+		case joaat("A_C_Horse_Criollo_MarbleSabino"):
 			return joaat("BREED_CRIOLLO_MARBLESABINO");
-		case -1616287563:
+		case joaat("A_C_Horse_Kladruber_Black"):
 			return joaat("BREED_KLADRUBER_BLACK");
-		case -127412252:
+		case joaat("A_C_Horse_Kladruber_White"):
 			return joaat("BREED_KLADRUBER_WHITE");
-		case -1881155818:
+		case joaat("A_C_Horse_Kladruber_Cremello"):
 			return joaat("BREED_KLADRUBER_CREMELLO");
-		case -955237712:
+		case joaat("A_C_Horse_Kladruber_Grey"):
 			return joaat("BREED_KLADRUBER_GREY");
-		case -647020346:
+		case joaat("A_C_Horse_Kladruber_DappleRoseGrey"):
 			return joaat("BREED_KLADRUBER_DAPPLEROSEGREY");
-		case -1846319726:
+		case joaat("A_C_Horse_Kladruber_Silver"):
 			return joaat("BREED_KLADRUBER_SILVER");
 		case 1007570567:
 			return joaat("BREED_NORFOLKROADSTER_BLACK");
@@ -16459,7 +16459,7 @@ int func_498(int iParam0)
 			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("BREED_MULE_PAINTED");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
@@ -38510,7 +38510,7 @@ int func_1208(var uParam0)
 	{
 		return 0;
 	}
-	if (func_1811(*uParam0, -1725579161, 0))
+	if (func_1811(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -43951,109 +43951,109 @@ int func_1420(bool bParam0)
 	}
 	switch (bParam0)
 	{
-		case 1652808217: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_000_tint_001"):
 			return 2113612788;
-		case 475385282: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_000_tint_002"):
 			return 1799751306;
-		case -35942194: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_000_tint_003"):
 			return 1444076568;
-		case 48470838: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_000_tint_004"):
 			return 1147680963;
-		case 1997008874: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_001_tint_001"):
 			return -2020336278;
-		case 1729941524: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_001_tint_002"):
 			return -1377900033;
-		case -1856789375: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_001_tint_003"):
 			return -1541941647;
-		case -2086565603: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_001_tint_004"):
 			return 1616727805;
-		case -463888252: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_002_tint_001"):
 			return -922666835;
-		case -1967067820: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_002_tint_002"):
 			return -855621461;
-		case 2030324187: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_002_tint_003"):
 			return -564862124;
-		case 837041052: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_002_tint_004"):
 			return 1955205056;
-		case -351609819: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_003_tint_001"):
 			return 1515886177;
-		case -112363350: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_003_tint_002"):
 			return 1212871226;
-		case 1064633628: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_003_tint_003"):
 			return 520003486;
-		case 1811373600: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_003_tint_004"):
 			return 214694713;
-		case 293907485: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_004_tint_001"):
 			return -1002555587;
-		case 896201705: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_004_tint_002"):
 			return -704816453;
-		case -953837732: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_004_tint_003"):
 			return -408748538;
-		case -849861695: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_004_tint_004"):
 			return 2080515794;
-		case -1484084376: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_005_tint_001"):
 			return -1438504284;
-		case -1244280834: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_005_tint_002"):
 			return -1663266855;
-		case -939529134: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_005_tint_003"):
 			return -977280609;
-		case -302466993: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_005_tint_004"):
 			return -1208924670;
-		case -740134980: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_006_tint_001"):
 			return 760352143;
-		case -462384932: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_006_tint_002"):
 			return 1528293658;
-		case 1388866954: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_006_tint_003"):
 			return 601619107;
-		case 1124978197: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_006_tint_004"):
 			return 309975007;
-		case 773175735: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_007_tint_001"):
 			return -1805872365;
-		case -6365998: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_007_tint_002"):
 			return 25128279;
-		case 163836188: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_007_tint_003"):
 			return -286209990;
-		case -603318871: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_007_tint_004"):
 			return 1269465524;
-		case -866802112: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_008_tint_001"):
 			return 66925801;
-		case -1222804528: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_008_tint_002"):
 			return -1897379743;
-		case -2051565307: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_008_tint_003"):
 			return 1963005075;
-		case -1837321585: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_008_tint_004"):
 			return -2037925984;
-		case 973666748: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_009_tint_001"):
 			return 1668961632;
-		case 211230425: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_009_tint_002"):
 			return 1358934123;
-		case -1098349891: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_009_tint_003"):
 			return -1141176732;
-		case -801495520: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_009_tint_004"):
 			return -1415813725;
-		case -1186378964: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_010_tint_001"):
 			return 11713414;
-		case -1629350306: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_010_tint_002"):
 			return 1307072000;
-		case 245003725: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_010_tint_003"):
 			return 1575941645;
-		case -61091504: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_010_tint_004"):
 			return 701926877;
-		case -1579778179: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_014_tint_001"):
 			return -766852067;
-		case -1100138310: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_014_tint_002"):
 			return -1076125889;
-		case 271080495: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_014_tint_003"):
 			return -1445170375;
-		case -620695071: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_014_tint_004"):
 			return -1685465452;
-		case -724967739: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_015_tint_001"):
 			return -1670121942;
-		case -687545541: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_015_tint_002"):
 			return 1790317231;
-		case 1877447950: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_015_tint_003"):
 			return 1889214097;
-		case -2102805870: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_M_offhand_015_tint_004"):
 			return 2120268316;
 		case 918258437:
 			return -1816896715;
@@ -44103,109 +44103,109 @@ int func_1420(bool bParam0)
 			return 526451008;
 		case 1835609242: /* GXTEntry: "Levens Holster" */
 			return -399699239;
-		case -542471226: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_000_tint_001"):
 			return 1570234737;
-		case -185354664: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_000_tint_002"):
 			return -288324636;
-		case -1008937941: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_000_tint_003"):
 			return 11282331;
-		case -770543466: /* GXTEntry: "Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_000_tint_004"):
 			return 725318841;
-		case 1382597333: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_001_tint_001"):
 			return -949699437;
-		case 1129882805: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_001_tint_002"):
 			return 1306347914;
-		case 883033928: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_001_tint_003"):
 			return 1536910598;
-		case -1225782302: /* GXTEntry: "Embossed Gunslinger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_001_tint_004"):
 			return 1924797251;
-		case 1377331935: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_002_tint_001"):
 			return 9499074;
-		case -136923555: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_002_tint_002"):
 			return 483863122;
-		case 98783862: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_002_tint_003"):
 			return 237473007;
-		case 363196923: /* GXTEntry: "Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_002_tint_004"):
 			return 1066004403;
-		case 547298053: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_003_tint_001"):
 			return 1559978137;
-		case 796506298: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_003_tint_002"):
 			return 1322239046;
-		case -2078055928: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_003_tint_003"):
 			return 1564631339;
-		case 855162804: /* GXTEntry: "Embossed Horsemanship Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_003_tint_004"):
 			return -212824759;
-		case -1550515886: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_004_tint_001"):
 			return -274429432;
-		case -699406649: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_004_tint_002"):
 			return 570453695;
-		case -1870177465: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_004_tint_003"):
 			return 207242099;
-		case 1121730546: /* GXTEntry: "Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_004_tint_004"):
 			return -1112267224;
-		case -1606199964: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_005_tint_001"):
 			return 1417685661;
-		case -1366953495: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_005_tint_002"):
 			return -2095478833;
-		case 1493223136: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_005_tint_003"):
 			return 1899947034;
-		case 1732731757: /* GXTEntry: "Studded Bandit Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_005_tint_004"):
 			return -1752321861;
-		case -993297765: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_006_tint_001"):
 			return 1413210443;
-		case 1243186493: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_006_tint_002"):
 			return 1182877142;
-		case 1548003731: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_006_tint_003"):
 			return -208887838;
-		case 1853771270: /* GXTEntry: "Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_006_tint_004"):
 			return 21707615;
-		case -456994495: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_007_tint_001"):
 			return 857732585;
-		case -1627994710: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_007_tint_002"):
 			return 1087541582;
-		case -2009556946: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_007_tint_003"):
 			return 1451015330;
-		case 849308921: /* GXTEntry: "Studded Explorer Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_007_tint_004"):
 			return 1688754425;
-		case 1779645445: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_008_tint_001"):
 			return 1437777233;
-		case 2112644023: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_008_tint_002"):
 			return 1676958164;
-		case -909575313: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_008_tint_003"):
 			return -35123787;
-		case 1534435018: /* GXTEntry: "Deadboot Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_008_tint_004"):
 			return 195668280;
-		case -83784299: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_009_tint_001"):
 			return -2087370390;
-		case 1681940497: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_009_tint_002"):
 			return 888087567;
-		case 1436861146: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_009_tint_003"):
 			return 707399301;
-		case 1192175023: /* GXTEntry: "Woven Pistol Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_009_tint_004"):
 			return 1507847664;
-		case -503349107: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_010_tint_001"):
 			return -2018900297;
-		case 424603435: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_010_tint_002"):
 			return -626938711;
-		case 1033779145: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_010_tint_003"):
 			return -336900292;
-		case 734729251: /* GXTEntry: "Rope Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_010_tint_004"):
 			return -1124798132;
-		case -1451110845: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_014_tint_001"):
 			return 1051595054;
-		case 1302861393: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_014_tint_002"):
 			return 1338028883;
-		case 2145483459: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_014_tint_003"):
 			return 574052421;
-		case 1916198766: /* GXTEntry: "Bolger Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_014_tint_004"):
 			return -1516904708;
-		case 229873288: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_015_tint_001"):
 			return -337288225;
-		case 1056766234: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_015_tint_002"):
 			return 432390051;
-		case 1993402593: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_015_tint_003"):
 			return 1094880924;
-		case 1754221662: /* GXTEntry: "Sharpshooter Holster" */
+		case joaat("CLOTHING_ITEM_F_offhand_015_tint_004"):
 			return 1862953515;
 		case 135502004:
 			return -806719655;
@@ -47172,7 +47172,7 @@ int func_1534(int iParam0)
 		case -398968481:
 			return -366693282;
 		case -2105530711:
-			return -1725579161;
+			return joaat("hats");
 		case 625416786:
 			return -1057211637;
 		case 1306151543:
@@ -47194,11 +47194,11 @@ int func_1534(int iParam0)
 		case 904830164:
 			return -1229572297;
 		case 719843584:
-			return 98860198;
+			return joaat("eyewear");
 		case -1110426434:
 			return -126114541;
 		case -223797183:
-			return 1963323202;
+			return joaat("masks");
 		case 1984438688:
 			return -2087420491;
 		case 1013950848:
@@ -47210,17 +47210,17 @@ int func_1534(int iParam0)
 		case -1484052032:
 			return 1163341077;
 		case 1746653115:
-			return 2056714954;
+			return joaat("neckties");
 		case -856561534:
 			return 1820468724;
 		case -237881785:
 			return 1094162565;
 		case -689983341:
-			return 1065301383;
+			return joaat("badges");
 		case 1853503172:
 			return 188311241;
 		case -2089804556:
-			return 539411565;
+			return joaat("shirts_full");
 		case 237827878:
 			return -242465481;
 		case 2115205669:
@@ -47236,21 +47236,21 @@ int func_1534(int iParam0)
 		case 1938574876:
 			return 1026208467;
 		case 376149636:
-			return -2022036233;
+			return joaat("suspenders");
 		case 1253249384:
-			return 1008366797;
+			return joaat("cloaks");
 		case -43043573:
 			return -407765147;
 		case -1162640732:
-			return -529714994;
+			return joaat("coats");
 		case -662295926:
 			return 1799186100;
 		case 2045415055:
-			return 1214179380;
+			return joaat("vests");
 		case 1174324405:
 			return -372138959;
 		case 874055612:
-			return 1995498098;
+			return joaat("aprons");
 		case -415832755:
 			return 2118314848;
 		case 1252420504:
@@ -47264,17 +47264,17 @@ int func_1534(int iParam0)
 		case -1383261957:
 			return joaat("loadouts");
 		case -2124282627:
-			return 1058996709;
+			return joaat("ammo_pistols");
 		case 735082099:
-			return -636605355;
+			return joaat("ammo_rifles");
 		case 63173055:
 			return -811108073;
 		case 1418570693:
-			return -1806676698;
+			return joaat("satchels");
 		case -1476509547:
 			return 1431760203;
 		case -1653154748:
-			return -1896142998;
+			return joaat("talisman_satchel");
 		case 582522943:
 			return -1250802524;
 		case 250841639:
@@ -47288,51 +47288,51 @@ int func_1534(int iParam0)
 		case -1440204674:
 			return -1394906584;
 		case 1981185929:
-			return 2076247897;
+			return joaat("jewelry_bracelets");
 		case 100277197:
-			return -614161520;
+			return joaat("talisman_wrist");
 		case 798554492:
-			return -85389185;
+			return joaat("belt_buckles");
 		case 1573110862:
-			return -1691579511;
+			return joaat("gunbelts");
 		case 1356956506:
 			return 904313209;
 		case -1292335301:
-			return 1237884315;
+			return joaat("holsters_crossdraw");
 		case 368776083:
-			return 2078766994;
+			return joaat("holsters_knife");
 		case 974566458:
-			return -1176307199;
+			return joaat("holsters_right");
 		case 1620573656:
-			return -1229581779;
+			return joaat("holsters_left");
 		case 2097486068:
-			return 2080418032;
+			return joaat("talisman_holster");
 		case 156885186:
-			return -1496238906;
+			return joaat("belts");
 		case 1897833847:
-			return 451737564;
+			return joaat("talisman_belt");
 		case -77443607:
 			return -2110355467;
 		case 1374870102:
-			return 491541130;
+			return joaat("pants");
 		case -147640227:
 			return -1168358466;
 		case 263550809:
 			return -2130987730;
 		case 1755853336:
-			return -1595692161;
+			return joaat("skirts");
 		case -1708863941:
 			return joaat("stockings");
 		case 783045853:
 			return joaat("chaps");
 		case 1333257424:
-			return 1363860714;
+			return joaat("spats");
 		case 603592077:
 			return 1377798597;
 		case 1801830393:
 			return joaat("Boots");
 		case -834874115:
-			return 410165049;
+			return joaat("boot_accessories");
 		case -1129780236:
 			return 828269641;
 		default:
@@ -47664,7 +47664,7 @@ int func_1546(int iParam0)
 			return 8;
 		case -366693282:
 			return 9;
-		case -1725579161:
+		case joaat("hats"):
 			return 1;
 		case -1057211637:
 			return 2;
@@ -47686,11 +47686,11 @@ int func_1546(int iParam0)
 			return 14;
 		case -1229572297:
 			return 12;
-		case 98860198:
+		case joaat("eyewear"):
 			return 15;
 		case -126114541:
 			return 16;
-		case 1963323202:
+		case joaat("masks"):
 			return 17;
 		case 1249071452:
 			return 18;
@@ -47704,17 +47704,17 @@ int func_1546(int iParam0)
 			return 22;
 		case 1163341077:
 			return 24;
-		case 2056714954:
+		case joaat("neckties"):
 			return 23;
 		case 1820468724:
 			return 25;
 		case 1094162565:
 			return 26;
-		case 1065301383:
+		case joaat("badges"):
 			return 28;
 		case 188311241:
 			return 27;
-		case 539411565:
+		case joaat("shirts_full"):
 			return 31;
 		case -242465481:
 			return 32;
@@ -47730,25 +47730,25 @@ int func_1546(int iParam0)
 			return 33;
 		case 1026208467:
 			return 34;
-		case -2022036233:
+		case joaat("suspenders"):
 			return 50;
-		case 1008366797:
+		case joaat("cloaks"):
 			return 35;
 		case -407765147:
 			return 38;
-		case -529714994:
+		case joaat("coats"):
 			return 39;
-		case -1357631221:
+		case joaat("ponchos"):
 			return 40;
-		case 107129908:
+		case joaat("coats_closed"):
 			return 41;
 		case 1799186100:
 			return 42;
-		case 1214179380:
+		case joaat("vests"):
 			return 43;
 		case -372138959:
 			return 44;
-		case 1995498098:
+		case joaat("aprons"):
 			return 45;
 		case 2118314848:
 			return 46;
@@ -47758,23 +47758,23 @@ int func_1546(int iParam0)
 			return 48;
 		case 425108158:
 			return 49;
-		case 1927737204:
+		case joaat("armor"):
 			return 51;
 		case joaat("Accessories"):
 			return 58;
 		case joaat("loadouts"):
 			return 54;
-		case 1058996709:
+		case joaat("ammo_pistols"):
 			return 55;
-		case -636605355:
+		case joaat("ammo_rifles"):
 			return 56;
 		case -811108073:
 			return 57;
-		case -1806676698:
+		case joaat("satchels"):
 			return 52;
 		case 1431760203:
 			return 53;
-		case -1896142998:
+		case joaat("talisman_satchel"):
 			return 59;
 		case -1250802524:
 			return 60;
@@ -47784,63 +47784,63 @@ int func_1546(int iParam0)
 			return 62;
 		case -1783800278:
 			return 63;
-		case -1848730848:
+		case joaat("gauntlets"):
 			return 64;
 		case joaat("gloves"):
 			return 65;
 		case -1394906584:
 			return 66;
-		case 2076247897:
+		case joaat("jewelry_bracelets"):
 			return 67;
-		case -614161520:
+		case joaat("talisman_wrist"):
 			return 68;
-		case -244703965:
+		case joaat("jewelry_rings_left"):
 			return 69;
-		case 2053881099:
+		case joaat("jewelry_rings_right"):
 			return 70;
-		case -85389185:
+		case joaat("belt_buckles"):
 			return 71;
-		case -1691579511:
+		case joaat("gunbelts"):
 			return 72;
 		case 904313209:
 			return 93;
-		case 1237884315:
+		case joaat("holsters_crossdraw"):
 			return 76;
-		case 2078766994:
+		case joaat("holsters_knife"):
 			return 75;
-		case -1176307199:
+		case joaat("holsters_right"):
 			return 73;
-		case -1229581779:
+		case joaat("holsters_left"):
 			return 74;
-		case 2080418032:
+		case joaat("talisman_holster"):
 			return 77;
-		case -1496238906:
+		case joaat("belts"):
 			return 78;
-		case 451737564:
+		case joaat("talisman_belt"):
 			return 79;
 		case -246141679:
 			return 80;
 		case -2110355467:
 			return 81;
-		case 491541130:
+		case joaat("pants"):
 			return 82;
 		case -1168358466:
 			return 83;
 		case -2130987730:
 			return 84;
-		case -1595692161:
+		case joaat("skirts"):
 			return 85;
 		case joaat("stockings"):
 			return 86;
 		case joaat("chaps"):
 			return 87;
-		case 1363860714:
+		case joaat("spats"):
 			return 88;
 		case 1377798597:
 			return 89;
 		case joaat("Boots"):
 			return 90;
-		case 410165049:
+		case joaat("boot_accessories"):
 			return 91;
 		case 828269641:
 			return 92;
@@ -50906,7 +50906,7 @@ void func_1665(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (2056714954 == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
+					if (joaat("neckties") == PED::_0x5FF9A878C3D115B8(&(uParam0->f_1[iVar0 /*3*/]), iVar2, 1))
 					{
 						if ((bParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_525(bVar3, 1872585553)) || iVar4 == 1882579758)
 						{
@@ -64246,7 +64246,7 @@ void func_2233(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

@@ -7133,7 +7133,7 @@ bool func_246()
 			return true;
 		}
 	}
-	return (PED::_0xFB4891BD7578CDC1(Global_35, -1725579161) || func_329(-2061583405, &uVar0));
+	return (PED::_0xFB4891BD7578CDC1(Global_35, joaat("hats")) || func_329(-2061583405, &uVar0));
 }
 
 int func_247(int iParam0, int iParam1)

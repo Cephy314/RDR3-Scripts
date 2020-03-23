@@ -121,7 +121,7 @@ void __EntryFunction__()
 						}
 						else
 						{
-							PED::_0xD710A5007C2AC539(Local_47.f_3, 98860198, 1);
+							PED::_0xD710A5007C2AC539(Local_47.f_3, joaat("eyewear"), 1);
 						}
 						func_14(Local_47.f_3, 1, 1);
 					}
@@ -421,7 +421,7 @@ void func_14(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

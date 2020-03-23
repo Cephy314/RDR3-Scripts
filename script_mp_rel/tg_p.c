@@ -2456,7 +2456,7 @@ int func_145(int iParam0, int iParam1, int iParam2, bool bParam3)
 		}
 		else
 		{
-			return -294911754;
+			return joaat("MP_A_F_M_CARDGAMEPLAYERS_01");
 		}
 	}
 	else if (iParam0 == 1)
@@ -31385,7 +31385,7 @@ int func_1028(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		}
 		else
 		{
-			PED::_0xD710A5007C2AC539(iParam2, -1229581779, 1);
+			PED::_0xD710A5007C2AC539(iParam2, joaat("holsters_left"), 1);
 			PED::_0xCC8CA3E88256E58F(iParam2, false, true, true, true, false);
 		}
 		func_469(uParam0, iParam1, 0);
@@ -44437,7 +44437,7 @@ void func_1582(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

@@ -11714,41 +11714,41 @@ int func_398(int iParam0)
 			return -1674873797 /* GXTEntry: "Turkoman~n~Gold Coat" */;
 		case joaat("a_c_horse_turkoman_silver"):
 			return 281852151 /* GXTEntry: "Turkoman~n~Silver Coat" */;
-		case -683592019:
+		case joaat("A_C_Horse_Breton_RedRoan"):
 			return 908445453 /* GXTEntry: "Breton~n~Red Roan Coat" */;
-		case 337109765:
+		case joaat("A_C_Horse_Breton_Sorrel"):
 			return 1221398025 /* GXTEntry: "Breton~n~Sorrel Coat" */;
-		case -619132373:
+		case joaat("A_C_Horse_Breton_GrulloDun"):
 			return -75300826 /* GXTEntry: "Breton~n~Grullo Dun Coat" */;
-		case 1544366970:
+		case joaat("A_C_Horse_Breton_SealBrown"):
 			return -1714239153 /* GXTEntry: "Breton~n~Seal Brown Coat" */;
-		case -1441144351:
+		case joaat("A_C_Horse_Breton_MealyDappleBay"):
 			return 1404133288 /* GXTEntry: "Breton~n~Mealy Dapple Bay Coat" */;
-		case -1717674545:
+		case joaat("A_C_Horse_Breton_SteelGrey"):
 			return -1778967281 /* GXTEntry: "Breton~n~Steel Grey Coat" */;
-		case 1825358734:
+		case joaat("A_C_Horse_Criollo_BlueRoanOvero"):
 			return -455481432 /* GXTEntry: "Criollo~n~Blue Roan Overo Coat" */;
-		case 1138427579:
+		case joaat("A_C_Horse_Criollo_Dun"):
 			return -835454915 /* GXTEntry: "Criollo~n~Dun Coat" */;
-		case -1720251851:
+		case joaat("A_C_Horse_Criollo_BayBrindle"):
 			return -2058115427 /* GXTEntry: "Criollo~n~Bay Brindle Coat" */;
-		case 506887890:
+		case joaat("A_C_Horse_Criollo_SorrelOvero"):
 			return -482507775 /* GXTEntry: "Criollo~n~Sorrel Overo Coat" */;
-		case 766293155:
+		case joaat("A_C_Horse_Criollo_BayFrameOvero"):
 			return -563118293 /* GXTEntry: "Criollo~n~Bay Frame Overo Coat" */;
-		case 2147082926:
+		case joaat("A_C_Horse_Criollo_MarbleSabino"):
 			return -1091105818 /* GXTEntry: "Criollo~n~Marble Sabino Coat" */;
-		case -1616287563:
+		case joaat("A_C_Horse_Kladruber_Black"):
 			return 2004269960 /* GXTEntry: "Kladruber~n~Black Coat" */;
-		case -127412252:
+		case joaat("A_C_Horse_Kladruber_White"):
 			return 772515535 /* GXTEntry: "Kladruber~n~White Coat" */;
-		case -1881155818:
+		case joaat("A_C_Horse_Kladruber_Cremello"):
 			return 1851524477 /* GXTEntry: "Kladruber~n~Cremello Coat" */;
-		case -955237712:
+		case joaat("A_C_Horse_Kladruber_Grey"):
 			return -1444352669 /* GXTEntry: "Kladruber~n~Grey Coat" */;
-		case -647020346:
+		case joaat("A_C_Horse_Kladruber_DappleRoseGrey"):
 			return 1950373354 /* GXTEntry: "Kladruber~n~Dapple Rose Grey Coat" */;
-		case -1846319726:
+		case joaat("A_C_Horse_Kladruber_Silver"):
 			return -878000957 /* GXTEntry: "Kladruber~n~Silver Coat" */;
 		case 1007570567:
 			return -2145947333 /* GXTEntry: "Norfolk Roadster~n~Black Coat" */;
@@ -14916,11 +14916,11 @@ void func_547(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 399422490, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_blankets"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLES"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 88372018, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -630346294, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -273475295, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_horns"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_stirrups"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_bedrolls"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);
@@ -19912,41 +19912,41 @@ int func_749(int iParam0)
 			return joaat("BREED_TURKOMAN_GOLD");
 		case joaat("a_c_horse_turkoman_silver"):
 			return joaat("BREED_TURKOMAN_SILVER");
-		case -683592019:
+		case joaat("A_C_Horse_Breton_RedRoan"):
 			return joaat("BREED_BRETON_REDROAN");
-		case 337109765:
+		case joaat("A_C_Horse_Breton_Sorrel"):
 			return joaat("BREED_BRETON_SORREL");
-		case -619132373:
+		case joaat("A_C_Horse_Breton_GrulloDun"):
 			return joaat("BREED_BRETON_GRULLODUN");
-		case 1544366970:
+		case joaat("A_C_Horse_Breton_SealBrown"):
 			return joaat("BREED_BRETON_SEALBROWN");
-		case -1441144351:
+		case joaat("A_C_Horse_Breton_MealyDappleBay"):
 			return joaat("BREED_BRETON_MEALYDAPPLEBAY");
-		case -1717674545:
+		case joaat("A_C_Horse_Breton_SteelGrey"):
 			return joaat("BREED_BRETON_STEELGREY");
-		case 1825358734:
+		case joaat("A_C_Horse_Criollo_BlueRoanOvero"):
 			return joaat("BREED_CRIOLLO_BLUEROANOVERO");
-		case 1138427579:
+		case joaat("A_C_Horse_Criollo_Dun"):
 			return joaat("BREED_CRIOLLO_DUN");
-		case -1720251851:
+		case joaat("A_C_Horse_Criollo_BayBrindle"):
 			return joaat("BREED_CRIOLLO_BAYBRINDLE");
-		case 506887890:
+		case joaat("A_C_Horse_Criollo_SorrelOvero"):
 			return joaat("BREED_CRIOLLO_SORRELOVERO");
-		case 766293155:
+		case joaat("A_C_Horse_Criollo_BayFrameOvero"):
 			return joaat("BREED_CRIOLLO_BAYFRAMEOVERO");
-		case 2147082926:
+		case joaat("A_C_Horse_Criollo_MarbleSabino"):
 			return joaat("BREED_CRIOLLO_MARBLESABINO");
-		case -1616287563:
+		case joaat("A_C_Horse_Kladruber_Black"):
 			return joaat("BREED_KLADRUBER_BLACK");
-		case -127412252:
+		case joaat("A_C_Horse_Kladruber_White"):
 			return joaat("BREED_KLADRUBER_WHITE");
-		case -1881155818:
+		case joaat("A_C_Horse_Kladruber_Cremello"):
 			return joaat("BREED_KLADRUBER_CREMELLO");
-		case -955237712:
+		case joaat("A_C_Horse_Kladruber_Grey"):
 			return joaat("BREED_KLADRUBER_GREY");
-		case -647020346:
+		case joaat("A_C_Horse_Kladruber_DappleRoseGrey"):
 			return joaat("BREED_KLADRUBER_DAPPLEROSEGREY");
-		case -1846319726:
+		case joaat("A_C_Horse_Kladruber_Silver"):
 			return joaat("BREED_KLADRUBER_SILVER");
 		case 1007570567:
 			return joaat("BREED_NORFOLKROADSTER_BLACK");
@@ -19966,7 +19966,7 @@ int func_749(int iParam0)
 			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("BREED_MULE_PAINTED");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
@@ -24529,7 +24529,7 @@ void func_924(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

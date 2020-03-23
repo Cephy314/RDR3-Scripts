@@ -1982,7 +1982,7 @@ void func_15(var uParam0, var uParam1)
 					}
 					CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 					ANIMSCENE::SET_ANIM_SCENE_BOOL(uParam0->f_1724, "CAM_BOOL", true, false);
-					if (func_172(Global_35, -1725579161, 0))
+					if (func_172(Global_35, joaat("hats"), 0))
 					{
 						func_173(-1406972469, Global_35, 0, 1);
 					}
@@ -8006,7 +8006,7 @@ void func_204(var uParam0)
 	ENTITY::SET_ENTITY_VISIBLE(PLAYER::PLAYER_PED_ID(), true);
 	func_525(&(uParam0->f_1754), 0);
 	GRAPHICS::SET_TIMECYCLE_MODIFIER(func_171(uParam0->f_1722));
-	if (func_172(Global_35, -1725579161, 0))
+	if (func_172(Global_35, joaat("hats"), 0))
 	{
 		func_173(-1406972469, Global_35, 0, 1);
 	}
@@ -12665,7 +12665,7 @@ void func_398(var uParam0, int iParam1)
 		ANIMSCENE::SET_ANIM_SCENE_ORIGIN(uParam0->f_1725, vVar1, uParam0->f_1730, 2);
 		ANIMSCENE::START_ANIM_SCENE(uParam0->f_1725);
 		GRAPHICS::SET_TIMECYCLE_MODIFIER(func_171(uParam0->f_1722));
-		if (func_172(Global_35, -1725579161, 0))
+		if (func_172(Global_35, joaat("hats"), 0))
 		{
 			func_173(-1406972469, Global_35, 0, 1);
 		}
@@ -17508,7 +17508,7 @@ int func_523(bool bParam0, bool bParam1, int iParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(bVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*iParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -24483,7 +24483,7 @@ int func_737(int iParam0)
 			return joaat("BREED_MULE");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("BREED_MULE_PAINTED");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
@@ -61915,7 +61915,7 @@ int func_1843(int iParam0)
 		case joaat("BREED_MULE_PAINTED"):
 			return joaat("a_c_horsemulepainted_01");
 		case joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN"):
-			return 1883159941;
+			return joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
 		case joaat("BREED_APPALOOSA_BLACKSNOWFLAKE"):
 			return joaat("a_c_horse_appaloosa_blacksnowflake");
 		case joaat("BREED_ARABIAN_GREY"):
@@ -74223,7 +74223,7 @@ int func_2309(bool bParam0, bool bParam1, var uParam2)
 	switch (bParam1)
 	{
 		case 0:
-			if (PED::_0xFB4891BD7578CDC1(bParam0, 2056714954))
+			if (PED::_0xFB4891BD7578CDC1(bParam0, joaat("neckties")))
 			{
 				*uParam2 = -1938792745; /* GXTEntry: "Your neckwear does not allow for changing your collar." */
 				return 0;
@@ -76561,11 +76561,11 @@ void func_2389(bool bParam0)
 	if (TASK::IS_PED_IN_WRITHE(bParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 399422490, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_blankets"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLES"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, 88372018, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -630346294, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -273475295, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_horns"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_stirrups"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_bedrolls"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, -2142954459, 0, false);
 }
 
@@ -79324,7 +79324,7 @@ void func_2479(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -80368,7 +80368,7 @@ int func_2501(bool bParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:
@@ -88053,15 +88053,15 @@ int func_2785(bool bParam0)
 {
 	switch (bParam0)
 	{
-		case -1249891745: /* GXTEntry: "Alligator Ranch Cutter Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_01_SPECIAL_NEW_SADDLE_000"):
 			return 263080063 /* GXTEntry: "Trapper Blanket" */;
-		case -769274720: /* GXTEntry: "Boar Mother Hubbard Saddle" */
+		case joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_SPECIAL_NEW_SADDLE_000"):
 			return -34331381 /* GXTEntry: "Trapper Blanket" */;
-		case 893370428: /* GXTEntry: "Cougar McClelland Saddle" */
+		case joaat("HORSE_EQUIPMENT_MCCLELLAN_01_SPECIAL_NEW_SADDLE_000"):
 			return -993578318 /* GXTEntry: "Trapper Blanket" */;
-		case 736792276: /* GXTEntry: "Beaver Roping Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_03_SPECIAL_NEW_SADDLE_000"):
 			return 579268144 /* GXTEntry: "Trapper Blanket" */;
-		case -949205287: /* GXTEntry: "Panther Trail Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_04_SPECIAL_NEW_SADDLE_000"):
 			return 1104489688 /* GXTEntry: "Trapper Blanket" */;
 	}
 	return 0;
@@ -88281,7 +88281,7 @@ int func_2801(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 399422490;
+			return joaat("horse_blankets");
 		case 1:
 			return -385635273;
 		case 2:
@@ -88291,7 +88291,7 @@ int func_2801(int iParam0)
 		case 7:
 			return 168005805;
 		case 9:
-			return -273475295;
+			return joaat("horse_bedrolls");
 		case 10:
 			return -2142954459;
 		case 11:
@@ -90438,7 +90438,7 @@ int func_2895(int iParam0)
 			return joaat("HORSE_CLASS_OTHER");
 		case joaat("a_c_horsemulepainted_01"):
 			return joaat("HORSE_CLASS_OTHER");
-		case 1883159941:
+		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("HORSE_CLASS_RACE");
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return joaat("HORSE_CLASS_WORK");

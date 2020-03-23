@@ -4697,7 +4697,7 @@ int func_206(int iParam0)
 						Local_13.f_7.f_13 = joaat("mp_a_m_m_unicorpse_01");
 						break;
 					case 2:
-						Local_13.f_7.f_13 = 937367983;
+						Local_13.f_7.f_13 = joaat("MP_A_F_M_UniCorpse_01");
 						break;
 					default:
 						Local_13.f_7.f_13 = joaat("mp_a_m_m_unicorpse_01");
@@ -4709,15 +4709,15 @@ int func_206(int iParam0)
 			switch (Local_13.f_7.f_12)
 			{
 				case 0:
-					return 1075605185;
+					return joaat("MP_RE_HOBODOG_MALES_01");
 				case 1:
-					return 1075605185;
+					return joaat("MP_RE_HOBODOG_MALES_01");
 				case 2:
-					return 641402963;
+					return joaat("MP_RE_HOBODOG_FEMALES_01");
 				default:
 					break;
 			}
-			return 1075605185;
+			return joaat("MP_RE_HOBODOG_MALES_01");
 			return 0;
 		}
 
@@ -7436,7 +7436,7 @@ int func_264(int iParam0)
 							break;
 					}
 					return 2086728021;
-				case 937367983:
+				case joaat("MP_A_F_M_UniCorpse_01"):
 					iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(1, 3);
 					switch (iVar0)
 					{

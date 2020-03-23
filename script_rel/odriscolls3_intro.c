@@ -5711,7 +5711,7 @@ void func_250(var uParam0, bool bParam1)
 	{
 		if (!Global_17)
 		{
-			PED::_0xD710A5007C2AC539(Global_35, -1229581779, 0);
+			PED::_0xD710A5007C2AC539(Global_35, joaat("holsters_left"), 0);
 			Global_17 = !bParam1;
 		}
 	}
@@ -14593,7 +14593,7 @@ int func_633(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:

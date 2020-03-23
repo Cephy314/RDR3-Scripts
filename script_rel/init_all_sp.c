@@ -31613,17 +31613,17 @@ int func_786(int iParam0)
 		switch (iParam0)
 		{
 			case -1346384396:
-				return 1351319737 /* GXTEntry: "Color Combination One" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
 			case -712836614:
-				return 1832924306 /* GXTEntry: "Chestnut & Charcoal" */;
+				return joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_STOCK_NEW_SADDLE_000");
 			case -1629133289:
-				return -960265739 /* GXTEntry: "Maple \'Duck Bill\' Horn" */;
+				return joaat("HORSE_EQUIPMENT_HORN_NEW_000");
 			case 1302066700:
-				return 1484641439 /* GXTEntry: "Belled Oxbow Stirrup" */;
+				return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
 			case 599669344:
-				return -1742648548 /* GXTEntry: "Weathered Russet" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_01_USED_000");
 			case -1555511632:
-				return -288915854 /* GXTEntry: "Weathered Dark Oak" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_000");
 		}
 	}
 	else if (func_801())
@@ -31631,17 +31631,17 @@ int func_786(int iParam0)
 		switch (iParam0)
 		{
 			case -1346384396:
-				return -5120398 /* GXTEntry: "Color Combination Two" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BLANKET_09_NEW_001");
 			case -712836614:
-				return 540384851 /* GXTEntry: "Hickory" */;
+				return joaat("HORSE_EQUIPMENT_WESTERN_04_STOCK_NEW_SADDLE_005");
 			case -1629133289:
-				return 859626502 /* GXTEntry: "Maple \'Torquemada\' Horn" */;
+				return joaat("HORSE_EQUIPMENT_HORN_NEW_012");
 			case 1302066700:
-				return -415239647 /* GXTEntry: "Slim-line Iron Stirrup" */;
+				return joaat("HORSE_EQUIPMENT_STIRRUP_NEW_006");
 			case 599669344:
-				return 1436607742 /* GXTEntry: "Weathered Chestnut" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_BEDROLL_00_USED_003");
 			case -1555511632:
-				return 691935155 /* GXTEntry: "Chestnut" */;
+				return joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_003");
 		}
 	}
 	return 0;
@@ -33333,7 +33333,7 @@ int func_855(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == 2056714954 && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_0x5FF9A878C3D115B8(iVar8, iVar2, bVar1) == joaat("neckties") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -36232,7 +36232,7 @@ int func_930(int iParam0)
 			return 8;
 		case -366693282:
 			return 9;
-		case -1725579161:
+		case joaat("hats"):
 			return 1;
 		case -1057211637:
 			return 2;
@@ -36254,11 +36254,11 @@ int func_930(int iParam0)
 			return 14;
 		case -1229572297:
 			return 12;
-		case 98860198:
+		case joaat("eyewear"):
 			return 15;
 		case -126114541:
 			return 16;
-		case 1963323202:
+		case joaat("masks"):
 			return 17;
 		case 1249071452:
 			return 18;
@@ -36272,17 +36272,17 @@ int func_930(int iParam0)
 			return 22;
 		case 1163341077:
 			return 24;
-		case 2056714954:
+		case joaat("neckties"):
 			return 23;
 		case 1820468724:
 			return 25;
 		case 1094162565:
 			return 26;
-		case 1065301383:
+		case joaat("badges"):
 			return 28;
 		case 188311241:
 			return 27;
-		case 539411565:
+		case joaat("shirts_full"):
 			return 31;
 		case -242465481:
 			return 32;
@@ -36298,21 +36298,21 @@ int func_930(int iParam0)
 			return 33;
 		case 1026208467:
 			return 34;
-		case -2022036233:
+		case joaat("suspenders"):
 			return 48;
-		case 1008366797:
+		case joaat("cloaks"):
 			return 35;
 		case -407765147:
 			return 38;
-		case -529714994:
+		case joaat("coats"):
 			return 39;
 		case 1799186100:
 			return 40;
-		case 1214179380:
+		case joaat("vests"):
 			return 41;
 		case -372138959:
 			return 42;
-		case 1995498098:
+		case joaat("aprons"):
 			return 43;
 		case 2118314848:
 			return 44;
@@ -36326,17 +36326,17 @@ int func_930(int iParam0)
 			return 55;
 		case joaat("loadouts"):
 			return 51;
-		case 1058996709:
+		case joaat("ammo_pistols"):
 			return 52;
-		case -636605355:
+		case joaat("ammo_rifles"):
 			return 53;
 		case -811108073:
 			return 54;
-		case -1806676698:
+		case joaat("satchels"):
 			return 49;
 		case 1431760203:
 			return 50;
-		case -1896142998:
+		case joaat("talisman_satchel"):
 			return 56;
 		case -1250802524:
 			return 57;
@@ -36350,39 +36350,39 @@ int func_930(int iParam0)
 			return 61;
 		case -1394906584:
 			return 62;
-		case 2076247897:
+		case joaat("jewelry_bracelets"):
 			return 63;
-		case -614161520:
+		case joaat("talisman_wrist"):
 			return 64;
-		case -85389185:
+		case joaat("belt_buckles"):
 			return 65;
-		case -1691579511:
+		case joaat("gunbelts"):
 			return 66;
 		case 904313209:
 			return 85;
-		case 1237884315:
+		case joaat("holsters_crossdraw"):
 			return 70;
-		case 2078766994:
+		case joaat("holsters_knife"):
 			return 69;
-		case -1176307199:
+		case joaat("holsters_right"):
 			return 67;
-		case -1229581779:
+		case joaat("holsters_left"):
 			return 68;
-		case 2080418032:
+		case joaat("talisman_holster"):
 			return 71;
-		case -1496238906:
+		case joaat("belts"):
 			return 72;
-		case 451737564:
+		case joaat("talisman_belt"):
 			return 73;
 		case -2110355467:
 			return 74;
-		case 491541130:
+		case joaat("pants"):
 			return 75;
 		case -1168358466:
 			return 76;
 		case -2130987730:
 			return 77;
-		case -1595692161:
+		case joaat("skirts"):
 			return 78;
 		case joaat("stockings"):
 			return 79;
@@ -36392,7 +36392,7 @@ int func_930(int iParam0)
 			return 81;
 		case joaat("Boots"):
 			return 82;
-		case 410165049:
+		case joaat("boot_accessories"):
 			return 83;
 		case 828269641:
 			return 84;
@@ -37104,15 +37104,15 @@ int func_967(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1249891745: /* GXTEntry: "Alligator Ranch Cutter Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_01_SPECIAL_NEW_SADDLE_000"):
 			return 263080063 /* GXTEntry: "Trapper Blanket" */;
-		case -769274720: /* GXTEntry: "Boar Mother Hubbard Saddle" */
+		case joaat("HORSE_EQUIPMENT_MOTHERHUBBARD_01_SPECIAL_NEW_SADDLE_000"):
 			return -34331381 /* GXTEntry: "Trapper Blanket" */;
-		case 893370428: /* GXTEntry: "Cougar McClelland Saddle" */
+		case joaat("HORSE_EQUIPMENT_MCCLELLAN_01_SPECIAL_NEW_SADDLE_000"):
 			return -993578318 /* GXTEntry: "Trapper Blanket" */;
-		case 736792276: /* GXTEntry: "Beaver Roping Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_03_SPECIAL_NEW_SADDLE_000"):
 			return 579268144 /* GXTEntry: "Trapper Blanket" */;
-		case -949205287: /* GXTEntry: "Panther Trail Saddle" */
+		case joaat("HORSE_EQUIPMENT_WESTERN_04_SPECIAL_NEW_SADDLE_000"):
 			return 1104489688 /* GXTEntry: "Trapper Blanket" */;
 	}
 	return 0;
@@ -40827,7 +40827,7 @@ int func_1142(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:

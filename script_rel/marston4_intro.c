@@ -2972,7 +2972,7 @@ int func_128(var uParam0)
 		{
 			PED::_0x1902C4CFCC5BE57C(&(uLocal_14[2]), 1435668143);
 			PED::_0xCC8CA3E88256E58F(&(uLocal_14[2]), false, true, true, true, false);
-			PED::_0xD710A5007C2AC539(&(uLocal_14[2]), -1725579161, 1);
+			PED::_0xD710A5007C2AC539(&(uLocal_14[2]), joaat("hats"), 1);
 			return 1;
 		}
 	}
@@ -5116,7 +5116,7 @@ void func_242(var uParam0, bool bParam1)
 	{
 		if (!Global_17)
 		{
-			PED::_0xD710A5007C2AC539(Global_35, -1229581779, 0);
+			PED::_0xD710A5007C2AC539(Global_35, joaat("holsters_left"), 0);
 			Global_17 = !bParam1;
 		}
 	}
@@ -12257,7 +12257,7 @@ int func_561(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return -1725579161;
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:

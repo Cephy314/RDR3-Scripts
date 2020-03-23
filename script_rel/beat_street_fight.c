@@ -5023,7 +5023,7 @@ int func_132(var uParam0)
 	{
 		return 0;
 	}
-	if (func_366(*uParam0, -1725579161, 0))
+	if (func_366(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}
@@ -5036,7 +5036,7 @@ void func_133(int iParam0)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
 }
 
@@ -31683,7 +31683,7 @@ void func_981(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, -1725579161, 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

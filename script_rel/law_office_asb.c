@@ -7176,7 +7176,7 @@ int func_251(var uParam0)
 	{
 		return 0;
 	}
-	if (func_378(*uParam0, -1725579161, 0))
+	if (func_378(*uParam0, joaat("hats"), 0))
 	{
 		return 1;
 	}

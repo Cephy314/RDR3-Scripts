@@ -1874,7 +1874,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = -557781132;
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { 1134.67f, -1385.39f, 63.68f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
@@ -1934,7 +1934,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = -557781132;
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -448.3115f, 506.6391f, 97.084f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
@@ -1995,7 +1995,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = -557781132;
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1990.63f, -1365.66f, 116.45f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
@@ -2056,7 +2056,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = -557781132;
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -5563.081f, -2576.2f, -9.8824f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
@@ -2127,7 +2127,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_388[0 /*20*/])->f_2 = 257;
 					break;
 				case 14:
-					(uParam0->f_127[0 /*33*/])->f_1 = -1016095860;
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("MP_GUNVOUTD2_MALES_01");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -614.44f, -25.64f, 85.46f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 249f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
@@ -2196,7 +2196,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[3 /*12*/])->f_5 = { -2.37f, 3.55f, -1.16f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "p_campfireburnedout05x", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = -1385740716;
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("MP_GUNVOUTD3_MALES_01");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -2693.12f, -2180.7f, 80.02f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 277f };
 					(uParam0->f_127[0 /*33*/])->f_2 = 795148174;
@@ -2212,22 +2212,22 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_9 = { -2698f, -2178f, 80.2f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 316f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[2 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[2 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					(uParam0->f_127[3 /*33*/])->f_1 = joaat("a_c_horse_arabian_rosegreybay");
 					(uParam0->f_127[3 /*33*/])->f_9 = { -2698.7f, -2176.1f, 80.1f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 272f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[3 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
+					(uParam0->f_127[3 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
+					(uParam0->f_127[3 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_000");
+					(uParam0->f_127[3 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
+					(uParam0->f_127[3 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[3 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[3 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpgvo3@int_loops@int_loops", 64);
@@ -2270,22 +2270,22 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_9 = { 1176.979f, -180.266f, 100.157f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 103f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[2 /*33*/])->f_23 = -639533637; /* GXTEntry: "Color Combination Three" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 255924452; /* GXTEntry: "Natural & Charcoal" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -505661354; /* GXTEntry: "Steel \'Dally\' Horn" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1964477906; /* GXTEntry: "Slim-line Stirrup" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[2 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_002");
+					(uParam0->f_127[2 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_003");
+					(uParam0->f_127[2 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_003");
+					(uParam0->f_127[2 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_002");
+					(uParam0->f_127[2 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
-					(uParam0->f_127[3 /*33*/])->f_1 = 1883159941;
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
 					(uParam0->f_127[3 /*33*/])->f_9 = { 1179.021f, -188.304f, 99.837f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 100f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_23 = -639533637; /* GXTEntry: "Color Combination Three" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_1 = 255924452; /* GXTEntry: "Natural & Charcoal" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_2 = -505661354; /* GXTEntry: "Steel \'Dally\' Horn" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_3 = 1964477906; /* GXTEntry: "Slim-line Stirrup" */
-					(uParam0->f_127[3 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[3 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_002");
+					(uParam0->f_127[3 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_003");
+					(uParam0->f_127[3 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_003");
+					(uParam0->f_127[3 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_002");
+					(uParam0->f_127[3 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[3 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[3 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpout1@int@int_loops", 64);
@@ -2344,11 +2344,11 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1923.228f, -1401.2f, 106.146f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 1066.013f };
 					(uParam0->f_127[1 /*33*/])->f_18 = 1;
-					(uParam0->f_127[1 /*33*/])->f_23 = -639533637; /* GXTEntry: "Color Combination Three" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_1 = 255924452; /* GXTEntry: "Natural & Charcoal" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_2 = -505661354; /* GXTEntry: "Steel \'Dally\' Horn" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_3 = 1964477906; /* GXTEntry: "Slim-line Stirrup" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[1 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_10_NEW_002");
+					(uParam0->f_127[1 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_04_IMPROVED_NEW_SADDLE_003");
+					(uParam0->f_127[1 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_003");
+					(uParam0->f_127[1 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_002");
+					(uParam0->f_127[1 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[1 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					uParam0->f_386[0] = -2090647942;
@@ -2402,7 +2402,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CS_MP_HORLEY", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = 1883159941;
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -3841.03f, -3016.24f, -7.12f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 17.61f };
 					(uParam0->f_127[1 /*33*/])->f_3 = 3;
@@ -2410,11 +2410,11 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_4[1] = 2;
 					(uParam0->f_127[1 /*33*/])->f_4[2] = 3;
 					(uParam0->f_127[1 /*33*/])->f_18 = 1;
-					(uParam0->f_127[1 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
-					(uParam0->f_127[1 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[1 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
+					(uParam0->f_127[1 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
+					(uParam0->f_127[1 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_000");
+					(uParam0->f_127[1 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
+					(uParam0->f_127[1 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[1 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_thoroughbred_dapplegrey");
@@ -2468,7 +2468,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "male", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = 1883159941;
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -1496.477f, -787.971f, 103.27f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 90f };
 					(uParam0->f_127[2 /*33*/])->f_3 = 3;
@@ -2476,11 +2476,11 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_4[1] = 2;
 					(uParam0->f_127[2 /*33*/])->f_4[2] = 3;
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[2 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
-					(uParam0->f_127[2 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[2 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
+					(uParam0->f_127[2 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mppout3@int@int_loops", 64);
@@ -2542,11 +2542,11 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_9 = { -4796.42f, -2729.059f, -14.245f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, -71.37f };
 					(uParam0->f_127[0 /*33*/])->f_18 = 1;
-					(uParam0->f_127[0 /*33*/])->f_23 = 1351319737; /* GXTEntry: "Color Combination One" */
-					(uParam0->f_127[0 /*33*/])->f_23.f_1 = 2082043658; /* GXTEntry: "Weathered Natural & Ash" */
-					(uParam0->f_127[0 /*33*/])->f_23.f_2 = -960265739; /* GXTEntry: "Maple \'Duck Bill\' Horn" */
-					(uParam0->f_127[0 /*33*/])->f_23.f_3 = 1484641439; /* GXTEntry: "Belled Oxbow Stirrup" */
-					(uParam0->f_127[0 /*33*/])->f_23.f_5 = 1383590330; /* GXTEntry: "Natural" */
+					(uParam0->f_127[0 /*33*/])->f_23 = joaat("HORSE_EQUIPMENT_HORSE_BLANKET_00_NEW_000");
+					(uParam0->f_127[0 /*33*/])->f_23.f_1 = joaat("HORSE_EQUIPMENT_WESTERN_01_STOCK_USED_SADDLE_000");
+					(uParam0->f_127[0 /*33*/])->f_23.f_2 = joaat("HORSE_EQUIPMENT_HORN_NEW_000");
+					(uParam0->f_127[0 /*33*/])->f_23.f_3 = joaat("HORSE_EQUIPMENT_STIRRUP_NEW_000");
+					(uParam0->f_127[0 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[0 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[0 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
 					(uParam0->f_310[0 /*15*/])->f_3 = { -4793.704f, -2728.311f, -17.105f };
@@ -5045,11 +5045,11 @@ void func_157(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 399422490, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_blankets"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLES"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, 88372018, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -630346294, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -273475295, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_horns"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_stirrups"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_bedrolls"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);
