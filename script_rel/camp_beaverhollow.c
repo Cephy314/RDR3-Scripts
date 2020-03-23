@@ -12471,7 +12471,7 @@ int func_405(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -20170,11 +20170,11 @@ int func_678(var uParam0, var uParam1, var uParam2)
 	*uParam2 = TASK::_0xF533D68FF970D190(func_682(func_148()), joaat("WORLD_HUMAN_CAULDRON_PUT_DOWN_TABLE"), 5f, 0, 1);
 	if (func_233(-558867971, 1))
 	{
-		*uParam1 = TASK::_0xF533D68FF970D190(func_683(func_148()), -1932609172, 3f, 0, 1);
+		*uParam1 = TASK::_0xF533D68FF970D190(func_683(func_148()), joaat("WORLD_HUMAN_CAULDRON_ALWAYS"), 3f, 0, 1);
 	}
 	else
 	{
-		*uParam1 = TASK::_0xF533D68FF970D190(func_683(func_148()), 1340532149, 3f, 0, 1);
+		*uParam1 = TASK::_0xF533D68FF970D190(func_683(func_148()), joaat("WORLD_HUMAN_CAULDRON"), 3f, 0, 1);
 	}
 	if (!TASK::_0x841475AC96E794D1(*uParam0))
 	{
@@ -27337,17 +27337,17 @@ int func_931()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1265())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -27360,17 +27360,17 @@ int func_932()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1265())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -27383,17 +27383,17 @@ int func_933()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1265())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -27406,17 +27406,17 @@ int func_934()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1265())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

@@ -110,13 +110,13 @@ void __EntryFunction__()
 				break;
 			case 1:
 				iVar182 = TASK::_0x6AA3DCA2C6F5EB6D(Global_35);
-				if (iVar182 != -583731576)
+				if (iVar182 != joaat("EAT_STEW_BOWL_BASE"))
 				{
-					if (iVar182 == 171451159 || iVar182 == 1881103362)
+					if (iVar182 == joaat("EAT_STEW_BOWL_TABLE_BASE") || iVar182 == joaat("EAT_STEW_BOWL_CHAIR_BASE"))
 					{
 						if (!TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1) || TASK::_0x0C3CB2E600C8977D(Global_35, 0))
 						{
-							TASK::_0xB35370D5353995CB(Global_35, -583731576, 1f);
+							TASK::_0xB35370D5353995CB(Global_35, joaat("EAT_STEW_BOWL_BASE"), 1f);
 						}
 					}
 				}
@@ -127,12 +127,12 @@ void __EntryFunction__()
 					{
 						if (iVar183 == -447259824)
 						{
-							TASK::_0xB35370D5353995CB(Global_35, 1881103362, 1f);
+							TASK::_0xB35370D5353995CB(Global_35, joaat("EAT_STEW_BOWL_CHAIR_BASE"), 1f);
 						}
 					}
 					else
 					{
-						TASK::_0xB35370D5353995CB(Global_35, 171451159, 1f);
+						TASK::_0xB35370D5353995CB(Global_35, joaat("EAT_STEW_BOWL_TABLE_BASE"), 1f);
 					}
 				}
 				if (IntToFloat(Var0.f_1.f_1) >= (Var0.f_1.f_2 - 1f) || ((MISC::GET_FRAME_COUNT() % 10) == 0 && ENTITY::GET_ENTITY_SUBMERGED_LEVEL(Global_35) > 0.2f))
@@ -143,23 +143,23 @@ void __EntryFunction__()
 			case 2:
 				iVar182 = TASK::_0x6AA3DCA2C6F5EB6D(Global_35);
 				PED::_0xCB9401F918CB0F75(Global_35, "HIDE_STEW_DROP_PROMPT", 1, 1);
-				if (iVar182 == -583731576 || iVar182 == 1881103362)
+				if (iVar182 == joaat("EAT_STEW_BOWL_BASE") || iVar182 == joaat("EAT_STEW_BOWL_CHAIR_BASE"))
 				{
 					PED::_0xCB9401F918CB0F75(Global_35, "HIDE_STEW_EAT_PROMPT", 1, 1);
 					if (!func_9(-1))
 					{
-						if (iVar182 == 1881103362)
+						if (iVar182 == joaat("EAT_STEW_BOWL_CHAIR_BASE"))
 						{
-							TASK::_0xB35370D5353995CB(Global_35, -805756414, 1048576000);
+							TASK::_0xB35370D5353995CB(Global_35, joaat("EAT_STEW_BOWL_CHAIR_EAT_FINISH_DISCARD_AUTO"), 1048576000);
 						}
 						else
 						{
-							TASK::_0xB35370D5353995CB(Global_35, -616782017, 1048576000);
+							TASK::_0xB35370D5353995CB(Global_35, joaat("EAT_STEW_BOWL_EAT_FINISH_DISCARD_AUTO"), 1048576000);
 						}
 						func_8(&Var0, 3);
 					}
 				}
-				else if (iVar182 == 171451159 || (iVar182 == 1372498217 && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1160706425)))
+				else if (iVar182 == joaat("EAT_STEW_BOWL_TABLE_BASE") || (iVar182 == joaat("EAT_STEW_BOWL_TABLE_EAT_FINISH_HOLD") && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1160706425)))
 				{
 					PED::_0xCB9401F918CB0F75(Global_35, "HIDE_STEW_EAT_PROMPT", 1, 1);
 					if (!func_9(-1))

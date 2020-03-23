@@ -112,33 +112,33 @@ int func_4(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 1:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 2:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 3:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 4:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 5:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 6:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 7:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 8:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 9:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 10:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 11:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 12:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		case 13:
-			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
+			return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
 		default:
 			break;
 	}

@@ -1481,8 +1481,8 @@ void func_26()
 		{
 			if (func_126(Global_35, bLocal_255) && !func_126(bLocal_255, Global_35))
 			{
-				LAW::_0xFFEBE5AA96BC2E4E(bLocal_255, 195938434, 1);
-				LAW::_0xFFEBE5AA96BC2E4E(bLocal_255, 1352191066, 1);
+				LAW::_0xFFEBE5AA96BC2E4E(bLocal_255, joaat("CRIME_ASSAULT"), 1);
+				LAW::_0xFFEBE5AA96BC2E4E(bLocal_255, joaat("CRIME_UNARMED_ASSAULT"), 1);
 				func_7(&iLocal_182, 33554432);
 			}
 		}
@@ -3903,7 +3903,7 @@ void func_122(bool bParam0, bool bParam1)
 	{
 		if (func_244(Global_35, bParam1, 0, 1))
 		{
-			LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 1714017012, 0, 0, -1);
+			LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_LOITERING"), 0, 0, -1);
 		}
 	}
 }

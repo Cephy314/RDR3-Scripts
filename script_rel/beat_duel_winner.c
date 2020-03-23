@@ -23570,20 +23570,20 @@ var func_748(int iParam0)
 	{
 		case 0:
 			iVar0 = 3;
-			iVar1[0] = 830847823;
+			iVar1[0] = joaat("WORLD_HUMAN_STARE_STOIC");
 			iVar1[1] = joaat("WORLD_HUMAN_SMOKE");
-			iVar1[2] = 2087366558;
+			iVar1[2] = joaat("WORLD_HUMAN_STAND_WAITING");
 			break;
 		case 1:
 			iVar0 = 3;
 			iVar1[0] = joaat("WORLD_HUMAN_SMOKE");
 			iVar1[1] = joaat("WORLD_HUMAN_WAITING_IMPATIENT");
-			iVar1[2] = 830847823;
+			iVar1[2] = joaat("WORLD_HUMAN_STARE_STOIC");
 			break;
 		case 2:
 			iVar0 = 2;
-			iVar1[0] = 2087366558;
-			iVar1[1] = -1982207864;
+			iVar1[0] = joaat("WORLD_HUMAN_STAND_WAITING");
+			iVar1[1] = joaat("WORLD_HUMAN_SHOP_BROWSE");
 			break;
 		default:
 			break;

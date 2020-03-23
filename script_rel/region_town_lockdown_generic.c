@@ -377,7 +377,7 @@ void func_4()
 				}
 				else if (func_27(&uLocal_154) > 3f)
 				{
-					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 481893872, 0, false, 1);
+					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_LAW_IS_THREATENED"), 0, false, 1);
 				}
 			}
 			if (Global_1935630->f_18)
@@ -1288,9 +1288,9 @@ var func_50()
 {
 	int iVar0[10];
 
-	iVar0[0] = 830847823;
+	iVar0[0] = joaat("WORLD_HUMAN_STARE_STOIC");
 	iVar0[1] = joaat("WORLD_HUMAN_SMOKE");
-	iVar0[2] = 2087366558;
+	iVar0[2] = joaat("WORLD_HUMAN_STAND_WAITING");
 	iVar0[3] = joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 	iVar0[4] = joaat("WORLD_HUMAN_GUARD_SCOUT");
 	iVar0[5] = joaat("WORLD_HUMAN_BADASS");

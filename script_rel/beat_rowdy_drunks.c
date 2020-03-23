@@ -1906,7 +1906,7 @@ void func_53()
 			switch (func_2())
 			{
 				case 76:
-					iVar0 = joaat("world_human_seat_steps");
+					iVar0 = joaat("WORLD_HUMAN_SEAT_STEPS");
 					bVar1 = "";
 					break;
 				case 92:
@@ -1914,7 +1914,7 @@ void func_53()
 					bVar1 = "WORLD_HUMAN_SMOKE_MALE_D";
 					break;
 				case 120:
-					iVar0 = joaat("world_human_seat_steps");
+					iVar0 = joaat("WORLD_HUMAN_SEAT_STEPS");
 					bVar1 = false;
 					break;
 				default:
@@ -2084,7 +2084,7 @@ void func_58()
 		case 76:
 			if (iLocal_412 == 0)
 			{
-				STREAMING::_0x19A6BE7D9C6884D3(joaat("world_human_seat_steps"), 3, (Local_211[2 /*32*/])->f_1, 0);
+				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_SEAT_STEPS"), 3, (Local_211[2 /*32*/])->f_1, 0);
 			}
 			else
 			{
@@ -2102,7 +2102,7 @@ void func_58()
 			}
 			break;
 		case 120:
-			STREAMING::_0x19A6BE7D9C6884D3(joaat("world_human_seat_steps"), 3, (Local_211[2 /*32*/])->f_1, 0);
+			STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_SEAT_STEPS"), 3, (Local_211[2 /*32*/])->f_1, 0);
 			break;
 	}
 }
@@ -3792,7 +3792,7 @@ void func_118()
 							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -249.7122f, 765.8113f, 116.4685f, 1f, -1, 0.25f, true, 40000f);
 							func_289(&(uLocal_417[0]), &iVar1, 0, 0, 1, 1);
 							Local_663.f_1 = { -247.4392f, 764.8387f, 117.1011f };
-							Local_663 = TASK::_0xF533D68FF970D190(Local_663.f_1, joaat("world_human_seat_steps"), 1f, 0, 0);
+							Local_663 = TASK::_0xF533D68FF970D190(Local_663.f_1, joaat("WORLD_HUMAN_SEAT_STEPS"), 1f, 0, 0);
 							func_35(1);
 							break;
 					}

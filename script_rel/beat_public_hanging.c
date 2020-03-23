@@ -2206,15 +2206,15 @@ int func_50()
 			{
 				if (func_51(iLocal_1020, 8192))
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 2140177766, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_THREATEN_LAW"), 0, 0, 0, 0, 0, 0, 0);
 				}
 				else if (func_51(iLocal_1020, 4096))
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 1314857970, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT_CORPSE"), 0, 0, 0, 0, 0, 0, 0);
 				}
 				else
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 195938434, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT"), 0, 0, 0, 0, 0, 0, 0);
 				}
 			}
 			func_181();
@@ -3512,7 +3512,7 @@ void func_84()
 
 void func_85()
 {
-	func_226(830847823, 15, 0, 0);
+	func_226(joaat("WORLD_HUMAN_STARE_STOIC"), 15, 0, 0);
 	func_226(joaat("WORLD_HUMAN_GUARD_SCOUT"), 15, 0, 0);
 	func_226(joaat("WORLD_HUMAN_SIT_GROUND"), 15, 0, 0);
 }
@@ -3610,7 +3610,7 @@ int func_91(var uParam0)
 
 int func_92()
 {
-	if (!func_228(830847823))
+	if (!func_228(joaat("WORLD_HUMAN_STARE_STOIC")))
 	{
 		return 0;
 	}
@@ -5804,7 +5804,7 @@ void func_159(var uParam0, int iParam1)
 			if (func_43(&(iLocal_946[3]), 0, 1))
 			{
 				ENTITY::_SET_ENTITY_COORDS_AND_HEADING(&(iLocal_946[3]), (Local_305[3 /*32*/])->f_6, (Local_305[3 /*32*/])->f_9, true, true, true);
-				func_345(&(iLocal_946[3]), 830847823, -1, 1, 0, 4f);
+				func_345(&(iLocal_946[3]), joaat("WORLD_HUMAN_STARE_STOIC"), -1, 1, 0, 4f);
 				func_333(Local_1156[0 /*17*/], func_332(7), "", joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
 				func_333(Local_1156[1 /*17*/], func_332(10), "", joaat("INPUT_INTERACT_LOCKON_NEG"), 0, 0, 0, 1, 0);
 				func_334(Local_1156[0 /*17*/], 0, 0);
@@ -21709,7 +21709,7 @@ void func_563(int iParam0, vector3 vParam1, float fParam4)
 		}
 		if (iParam0 == &iLocal_946[3])
 		{
-			func_345(0, 830847823, -1, 1, 0, 4f);
+			func_345(0, joaat("WORLD_HUMAN_STARE_STOIC"), -1, 1, 0, 4f);
 		}
 		else
 		{

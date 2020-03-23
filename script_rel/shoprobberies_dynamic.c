@@ -1841,9 +1841,9 @@ int func_63(var uParam0, bool bParam1, bool bParam2)
 {
 	if (func_32(Global_35, 0, 1))
 	{
-		if (func_174(Global_35, -282082536) || func_174(Global_35, 325463335))
+		if (func_174(Global_35, joaat("PROP_PLAYER_CASH_REGISTER")) || func_174(Global_35, 325463335))
 		{
-			if (PED::_0x34D6AC1157C8226C(Global_35, -282082536))
+			if (PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_CASH_REGISTER")))
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_2[0])))
 				{
@@ -2070,7 +2070,7 @@ void func_74(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 	}
 	iVar11 = PLAYER::PLAYER_ID();
 	iVar12 = INTERIOR::GET_INTERIOR_FROM_ENTITY(Global_35);
-	LAW::_0xD7494DED50C6EF52(iVar11, -1547772340, iParam3);
+	LAW::_0xD7494DED50C6EF52(iVar11, joaat("CRIME_ROBBERY"), iParam3);
 	func_185(uParam0, &uVar14);
 	iVar7 = 0;
 	while (iVar7 < iVar1)
@@ -2867,15 +2867,15 @@ int func_104(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 		func_221(bParam0, &vVar2);
 		if (bParam5)
 		{
-			vVar2.f_2 = -493957506; /* GXTEntry: "Murder" */
+			vVar2.f_2 = joaat("CRIME_MURDER");
 		}
 		else if (bParam3)
 		{
-			vVar2.f_2 = 1343354387; /* GXTEntry: "Disturbing the Peace" */
+			vVar2.f_2 = joaat("CRIME_DISTURBANCE");
 		}
 		else
 		{
-			vVar2.f_2 = -1547772340; /* GXTEntry: "Robbery" */
+			vVar2.f_2 = joaat("CRIME_ROBBERY");
 		}
 		LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), vVar2.z, iVar1 + 1);
 		LAW::_0x018F30D762E62DF8(bParam0, &vVar2);
@@ -3484,7 +3484,7 @@ int func_136(var uParam0, bool bParam1)
 
 	if (func_32(Global_35, 0, 1))
 	{
-		if (func_174(Global_35, -282082536) || func_174(Global_35, 325463335))
+		if (func_174(Global_35, joaat("PROP_PLAYER_CASH_REGISTER")) || func_174(Global_35, 325463335))
 		{
 			bVar0 = func_85(uParam0);
 			func_27(uParam0, 0);
@@ -5103,7 +5103,7 @@ void func_185(var uParam0, var uParam1)
 {
 	*uParam1 = Global_35;
 	uParam1->f_1 = *uParam0;
-	uParam1->f_2 = -1547772340; /* GXTEntry: "Robbery" */
+	uParam1->f_2 = joaat("CRIME_ROBBERY");
 	uParam1->f_3 = { Global_36 };
 	uParam1->f_6 = func_300(func_96(), 1, 1);
 	uParam1->f_8 = 1;
@@ -6268,7 +6268,7 @@ void func_221(bool bParam0, var uParam1)
 {
 	*uParam1 = Global_35;
 	uParam1->f_1 = bParam0;
-	uParam1->f_2 = -1547772340; /* GXTEntry: "Robbery" */
+	uParam1->f_2 = joaat("CRIME_ROBBERY");
 	uParam1->f_3 = { Global_36 };
 	uParam1->f_6 = func_300(func_96(), 1, 1);
 	uParam1->f_8 = 1;

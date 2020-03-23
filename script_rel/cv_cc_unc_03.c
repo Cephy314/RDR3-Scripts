@@ -9210,7 +9210,7 @@ int func_272(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11921,7 +11921,7 @@ int func_379(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_410(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

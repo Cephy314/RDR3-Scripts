@@ -16208,7 +16208,7 @@ void func_540(int iParam0, bool bParam1, float fParam2, bool bParam3, bool bPara
 
 int func_541()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 798764373) || PED::_0x34D6AC1157C8226C(Global_35, -1177373461))
+	if (PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK")) || PED::_0x34D6AC1157C8226C(Global_35, -1177373461))
 	{
 		return 1;
 	}

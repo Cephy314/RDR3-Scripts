@@ -3390,7 +3390,7 @@ int func_133()
 	{
 		return joaat("WORLD_HUMAN_GUARD_LANTERN_NERVOUS");
 	}
-	return 830847823;
+	return joaat("WORLD_HUMAN_STARE_STOIC");
 }
 
 int func_134(int iParam0, vector3 vParam1, float fParam4, float fParam5, int iParam6, int iParam7)

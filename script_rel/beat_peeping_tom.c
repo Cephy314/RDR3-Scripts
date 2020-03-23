@@ -4803,7 +4803,7 @@ void func_137()
 							}
 						}
 						iLocal_649 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-1905235087, -1784.146f, -403.6157f, 157.4285f, -1f, 15f, 15f, -1082130432, -1082130432, -1, -1);
-						func_291(1343354387 /* GXTEntry: "Disturbing the Peace" */);
+						func_291(joaat("CRIME_DISTURBANCE"));
 						func_109(1024);
 						func_37(uLocal_620[0], uLocal_629[0]);
 						func_37(uLocal_620[1], uLocal_629[1]);

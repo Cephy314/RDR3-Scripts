@@ -1583,7 +1583,7 @@ int func_32()
 				if (func_131(vLocal_1353[8 /*3*/], 3f))
 				{
 					func_109(67108864);
-					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), -493957506, 0, 0, 0);
+					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, 0, 0);
 				}
 				else if (!func_103(vLocal_1353[8 /*3*/]))
 				{

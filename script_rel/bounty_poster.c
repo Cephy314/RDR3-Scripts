@@ -1031,7 +1031,7 @@ void func_35(var uParam0, var uParam1)
 	{
 		if (!TASK::_0x841475AC96E794D1(uParam0->f_4))
 		{
-			uParam0->f_4 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedalive01x"), func_28(uParam1->f_1), func_97(uParam1->f_1), 1f, 0, 1);
+			uParam0->f_4 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X"), func_28(uParam1->f_1), func_97(uParam1->f_1), 1f, 0, 1);
 			if (func_29())
 			{
 				TASK::_0xEEE4829304F93EEE(uParam0->f_4, 0);
@@ -4085,7 +4085,7 @@ int func_151(var uParam0, var uParam1)
 		uParam0->f_6 = func_261(iVar0, 1, 0, 1, 1, 1);
 		if (func_47(uParam0->f_6, 0))
 		{
-			PED::_0xBD75500141E4725C(uParam0->f_6, 1226687097);
+			PED::_0xBD75500141E4725C(uParam0->f_6, joaat("LAW_SHERIFF"));
 		}
 	}
 	else if (uParam1->f_1 == 3)

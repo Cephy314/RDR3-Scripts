@@ -3125,7 +3125,7 @@ int func_72(var uParam0)
 	func_159(uParam0, iLocal_14, 1.4f, 1065353216 /* Float: 1f */, 1092616192 /* Float: 10f */);
 	func_160(uParam0, iLocal_14, 1, joaat("WORLD_HUMAN_COFFEE_DRINK"), 0, -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_161(uParam0, iLocal_14, iLocal_20, "p_mugCoffee01x_PH_R_HAND", 0, 0);
-	func_156(uParam0, iLocal_15, 3, joaat("world_human_drinking"), "WORLD_HUMAN_STAND_DRINK_MALE_B", -1, 1);
+	func_156(uParam0, iLocal_15, 3, joaat("WORLD_HUMAN_DRINKING"), "WORLD_HUMAN_STAND_DRINK_MALE_B", -1, 1);
 	func_158(uParam0, iLocal_15, 1, -1);
 	Local_21 = { func_162(uParam0, 0.5875f, -1.4975f, 1.07f, 98f, 6.0475f, 0.285f, 0.6575f) };
 	Local_31 = { func_162(uParam0, 0.588f, -1.498f, 1.07f, 34f, 6.0575f, 0.0525f, 0.66f) };
@@ -8429,7 +8429,7 @@ int func_272(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11216,7 +11216,7 @@ int func_382(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_413(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

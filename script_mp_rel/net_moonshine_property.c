@@ -13856,7 +13856,7 @@ int func_590(int iParam0)
 		case 1:
 			return joaat("clipboard");
 		case 2:
-			return -2140911207 /* GXTEntry: "Crate" */;
+			return joaat("CRATE");
 		case 3:
 			return -1097631823;
 		case 4:

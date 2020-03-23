@@ -1994,7 +1994,7 @@ int func_31(var uParam0)
 			if (!func_85(128))
 			{
 				TASK::CLEAR_PED_TASKS(&(uParam0->f_20[0 /*14*/]), 1, 0);
-				TASK::_TASK_START_SCENARIO_IN_PLACE(&(uParam0->f_20[0 /*14*/]), 830847823, 0, true, 0, -1f, false);
+				TASK::_TASK_START_SCENARIO_IN_PLACE(&(uParam0->f_20[0 /*14*/]), joaat("WORLD_HUMAN_STARE_STOIC"), 0, true, 0, -1f, false);
 				TASK::CLEAR_PED_TASKS(&(uParam0->f_20[1 /*14*/]), 1, 0);
 				TASK::_TASK_START_SCENARIO_IN_PLACE(&(uParam0->f_20[1 /*14*/]), joaat("WORLD_ANIMAL_DOG_SITTING"), 0, true, 0, -1f, false);
 				func_86(uParam0);

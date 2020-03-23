@@ -917,7 +917,7 @@ int func_20()
 			{
 				case 0:
 					Local_274.f_217 = PED::GET_PED_ACCURACY(&(Local_15[iVar0]));
-					TASK::_TASK_START_SCENARIO_IN_PLACE(&(Local_15[iVar0]), 830847823, -1, false, 0, -1f, false);
+					TASK::_TASK_START_SCENARIO_IN_PLACE(&(Local_15[iVar0]), joaat("WORLD_HUMAN_STARE_STOIC"), -1, false, 0, -1f, false);
 					func_129(&(Local_15[iVar0]), joaat("GROUP_REVOLVER"), -1, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
 					break;
 				case 1:
@@ -938,7 +938,7 @@ int func_20()
 							(Local_15.f_118[iVar0 /*4*/])->f_1 = { 2350.399f, 738.8162f, 69.99573f };
 							break;
 					}
-					TASK::_TASK_START_SCENARIO_IN_PLACE(&(Local_15[iVar0]), 830847823, -1, false, 0, -1f, false);
+					TASK::_TASK_START_SCENARIO_IN_PLACE(&(Local_15[iVar0]), joaat("WORLD_HUMAN_STARE_STOIC"), -1, false, 0, -1f, false);
 					break;
 				case 5:
 					switch (Local_274.f_204)
@@ -4404,7 +4404,7 @@ void func_170()
 {
 	int iVar0;
 
-	LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 2006449383, 1000, 0, 1);
+	LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER_LAW"), 1000, 0, 1);
 	func_318(1000);
 	func_196(1);
 	iVar0 = 0;
@@ -4441,7 +4441,7 @@ void func_172()
 		{
 			if (!func_61(&(Local_15[iVar0]), 0, 1))
 			{
-				LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 2006449383, 1000, 0, 1);
+				LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER_LAW"), 1000, 0, 1);
 				Local_274.f_209[iVar0] = 1;
 			}
 		}

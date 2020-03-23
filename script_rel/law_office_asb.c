@@ -1615,11 +1615,11 @@ void func_47(var uParam0)
 				{
 					if ((uParam0->f_102 == 4 || uParam0->f_102 == 256) || uParam0->f_102 == 8192)
 					{
-						LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), 2140177766, 0, 0, 0, 0, 0, 0, 0);
+						LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_THREATEN_LAW"), 0, 0, 0, 0, 0, 0, 0);
 					}
 					else
 					{
-						LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), -683250308, 0, 0, 0, 0, 0, 0, 0);
+						LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_ASSAULT_LAW"), 0, 0, 0, 0, 0, 0, 0);
 					}
 				}
 				func_143(0, 0);
@@ -1629,7 +1629,7 @@ void func_47(var uParam0)
 		else
 		{
 			func_36(&(uParam0->f_329), 8388608);
-			LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), 2006449383, 0, 0, 0, 0, 0, 0, 0);
+			LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_MURDER_LAW"), 0, 0, 0, 0, 0, 0, 0);
 		}
 	}
 }
@@ -1954,7 +1954,7 @@ void func_52(var uParam0)
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -762.929f, -1265.749f, 43.051f, 1f, 20000, 0.25f, false, 16.36f);
 			TASK::TASK_LOOK_AT_ENTITY(false, uParam0->f_67, -1, 0, 51, 0);
-			TASK::_TASK_START_SCENARIO_IN_PLACE(0, 830847823, -1, true, 0, -1f, false);
+			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_STARE_STOIC"), -1, true, 0, -1f, false);
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);
 			TASK::TASK_PERFORM_SEQUENCE(uParam0->f_69, iVar0);
 			TASK::CLEAR_SEQUENCE_TASK(&iVar0);
@@ -2533,12 +2533,12 @@ int func_72(var uParam0, float fParam1, float fParam2)
 			{
 				if ((uParam0->f_102 == 4 || uParam0->f_102 == 256) || uParam0->f_102 == 8192)
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), 2140177766, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_THREATEN_LAW"), 0, 0, 0, 0, 0, 0, 0);
 					uParam0->f_64 = 5;
 				}
 				else
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), -683250308, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_ASSAULT_LAW"), 0, 0, 0, 0, 0, 0, 0);
 					uParam0->f_64 = 6;
 				}
 				return 1;
@@ -2546,7 +2546,7 @@ int func_72(var uParam0, float fParam1, float fParam2)
 		}
 		else
 		{
-			LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), 2006449383, 0, 0, 0, 0, 0, 0, 0);
+			LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_MURDER_LAW"), 0, 0, 0, 0, 0, 0, 0);
 			uParam0->f_64 = 6;
 			return 1;
 		}
@@ -6498,7 +6498,7 @@ int func_229(var uParam0)
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(uParam0->f_69, true, false);
 		}
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_69, true);
-		PED::_0xBD75500141E4725C(uParam0->f_69, 1226687097);
+		PED::_0xBD75500141E4725C(uParam0->f_69, joaat("LAW_SHERIFF"));
 		func_350(&(uParam0->f_74), 1);
 		func_351(&(uParam0->f_74), 1);
 		func_352(&(uParam0->f_74), 1);

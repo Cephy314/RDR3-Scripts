@@ -3440,7 +3440,7 @@ int func_51(int iParam0)
 		switch (iVar2)
 		{
 			case 22:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 4:
 			case 5:
@@ -3462,14 +3462,14 @@ int func_51(int iParam0)
 			case 62:
 			case 63:
 			case 72:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 12:
 			case 54:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 92:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 76:
 				iVar1 = joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_BAR_CA");
@@ -3518,7 +3518,7 @@ int func_51(int iParam0)
 			case 48:
 			case 49:
 			case 50:
-				iVar1 = 2087366558;
+				iVar1 = joaat("WORLD_HUMAN_STAND_WAITING");
 				break;
 			case 1:
 			case 16:
@@ -3532,7 +3532,7 @@ int func_51(int iParam0)
 				iVar1 = joaat("PROP_HUMAN_SEAT_NO_BACK_WIP_COLLECTION");
 				break;
 			default:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 		}
 	}
@@ -3548,7 +3548,7 @@ int func_51(int iParam0)
 		if (iVar1 == joaat("WORLD_HUMAN_SHOPKEEPER"))
 		{
 		}
-		else if (iVar1 == 830847823)
+		else if (iVar1 == joaat("WORLD_HUMAN_STARE_STOIC"))
 		{
 		}
 		iVar6 = 0;
@@ -33590,11 +33590,11 @@ void func_1005(var uParam0)
 					{
 						if (func_569(uParam0->f_4))
 						{
-							iVar19 = 195938434; /* GXTEntry: "Assault" */
+							iVar19 = joaat("CRIME_ASSAULT");
 						}
 						else
 						{
-							iVar19 = -1810065318; /* GXTEntry: "Disturbing the Peace" */
+							iVar19 = joaat("CRIME_THREATEN");
 						}
 						LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), iVar19, 2);
 						PED::_0xC6C4E15CF7D52FEA(uParam0->f_4, 1000f);
@@ -37885,7 +37885,7 @@ void func_1135(bool bParam0)
 		fVar0 = 15f;
 	}
 	LAW::_0x710448D44A64C213(true);
-	LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -1521715232, 0, fVar0, 0, 0, fVar0, 0, 0);
+	LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 0, fVar0, 0, 0, fVar0, 0, 0);
 	uVar5 = 1;
 	func_1722(&iVar1, &uVar5, Global_36, 10, 3, fVar0, 1, 0, 1, 1.5f);
 	iVar7 = 0;
@@ -37899,9 +37899,9 @@ void func_1135(bool bParam0)
 			PED::SET_PED_CONFIG_FLAG(&(iVar1[iVar7]), 148, false);
 			PED::SET_PED_CONFIG_FLAG(&(iVar1[iVar7]), 113, true);
 			vVar9 = { ENTITY::GET_ENTITY_COORDS(&(iVar1[iVar7]), true, false) };
-			LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), -1521715232, &(iVar1[iVar7]));
+			LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), &(iVar1[iVar7]));
 			func_1723(&(iVar1[iVar7]), Global_36, 3, 1, 1);
-			LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar7]), Global_35, &(iVar1[iVar7]), Global_36, -1521715232);
+			LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar7]), Global_35, &(iVar1[iVar7]), Global_36, joaat("CRIME_BURGLARY"));
 			iVar8++;
 			if (iVar8 > 1)
 			{

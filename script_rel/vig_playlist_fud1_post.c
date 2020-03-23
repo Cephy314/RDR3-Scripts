@@ -465,9 +465,9 @@ int func_9(var uParam0)
 	iLocal_2 = func_21(uParam0, 405);
 	if (func_15(134))
 	{
-		iLocal_3 = func_22(uParam0, 2087366558, 679.751f, -1255.34f, 43.01525f, 71.76768f, 0, -1082130432 /* Float: -1f */);
+		iLocal_3 = func_22(uParam0, joaat("WORLD_HUMAN_STAND_WAITING"), 679.751f, -1255.34f, 43.01525f, 71.76768f, 0, -1082130432 /* Float: -1f */);
 	}
-	iLocal_4 = func_22(uParam0, 2087366558, 653.3997f, -1236.111f, 43.01029f, 131.68f, 0, -1082130432 /* Float: -1f */);
+	iLocal_4 = func_22(uParam0, joaat("WORLD_HUMAN_STAND_WAITING"), 653.3997f, -1236.111f, 43.01029f, 131.68f, 0, -1082130432 /* Float: -1f */);
 	return 1;
 }
 
@@ -4348,7 +4348,7 @@ int func_154(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

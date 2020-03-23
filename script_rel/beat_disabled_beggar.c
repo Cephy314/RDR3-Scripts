@@ -569,7 +569,7 @@ void func_9()
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_433[0]), 6, false);
 	if (func_40(&(uLocal_433[0]), 0, 1))
 	{
-		LAW::_0xFFEBE5AA96BC2E4E(&(uLocal_433[0]), 1352191066, 0);
+		LAW::_0xFFEBE5AA96BC2E4E(&(uLocal_433[0]), joaat("CRIME_UNARMED_ASSAULT"), 0);
 	}
 	func_33(&uLocal_545);
 	func_61(uLocal_433[0]);
@@ -5012,7 +5012,7 @@ void func_146()
 	{
 		iLocal_533 = 1;
 		iLocal_454 = 0;
-		LAW::_0xFFEBE5AA96BC2E4E(&(uLocal_433[0]), 1352191066, 1);
+		LAW::_0xFFEBE5AA96BC2E4E(&(uLocal_433[0]), joaat("CRIME_UNARMED_ASSAULT"), 1);
 	}
 	if (iLocal_326 == 0)
 	{

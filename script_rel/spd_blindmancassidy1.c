@@ -4307,7 +4307,7 @@ void func_102(int iParam0, bool bParam1)
 		case 5:
 			if (bParam1)
 			{
-				func_258(-755110140, 0);
+				func_258(joaat("JOURNAL_RC_CRKPT4_1_AR"), 0);
 			}
 			else if (func_259(55))
 			{
@@ -4335,13 +4335,13 @@ void func_102(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_258(250250385, 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_PHILOSOPHER_CAVE_JN"), 0);
 			}
 			break;
 		case 21:
 			if (bParam1)
 			{
-				func_258(1071640065, 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_TREE_MONKEY_AR"), 0);
 			}
 			else
 			{

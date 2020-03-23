@@ -2051,7 +2051,7 @@ int func_31(var uParam0)
 			{
 				if (func_71(&(uParam0->f_20[0 /*14*/]), 0))
 				{
-					TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_20[0 /*14*/]), 830847823, vLocal_80, fLocal_95, 0, true, false, 0, -1f, false);
+					TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_20[0 /*14*/]), joaat("WORLD_HUMAN_STARE_STOIC"), vLocal_80, fLocal_95, 0, true, false, 0, -1f, false);
 					PED::SET_PED_KEEP_TASK(&(uParam0->f_20[0 /*14*/]), true);
 				}
 				if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])))

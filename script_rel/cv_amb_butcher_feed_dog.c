@@ -3107,11 +3107,11 @@ int func_72(var uParam0)
 	iLocal_16 = func_153(uParam0, joaat("p_knife03x"), 0f, 0f, 0f, "KNIFE", 0, 0, 1);
 	func_153(uParam0, joaat("p_meatchunks01x"), 0f, 0f, 0f, "MEAT", 0, 0, 1);
 	iLocal_17 = func_153(uParam0, joaat("p_cs_deercarcassarm"), 5f, 5f, 5f, 0, 0, 0, 0);
-	func_154(uParam0, iLocal_14, 4, 1939042559, "PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_GRAB", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_154(uParam0, iLocal_14, 4, joaat("PROP_HUMAN_BUTCHER_DEER"), "PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_GRAB", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_155(uParam0, iLocal_14, iLocal_16, "KNIFE", 0, 0);
 	func_155(uParam0, iLocal_14, iLocal_17, "LEG", 0, 0);
 	func_156(uParam0, iLocal_14, 4, 1);
-	STREAMING::_0x19A6BE7D9C6884D3(1939042559, 1, 0, 0);
+	STREAMING::_0x19A6BE7D9C6884D3(joaat("PROP_HUMAN_BUTCHER_DEER"), 1, 0, 0);
 	func_157(uParam0, iLocal_15, 3, joaat("WORLD_ANIMAL_DOG_BEGGING"), "WORLD_ANIMAL_DOG_BEGGING", -1, 1);
 	func_158(uParam0, iLocal_15);
 	iLocal_18 = func_159(uParam0, "script@ambient@campfireGeneral@BUTCHER_FEED_DOG@action", 0, 0, 0, 0);
@@ -3319,7 +3319,7 @@ int func_85(var uParam0)
 
 int func_86(var uParam0)
 {
-	uLocal_19 = STREAMING::_0xB223249B7798EEED(func_48(uParam0, iLocal_14), 1939042559, 262145, joaat("PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_GRAB"));
+	uLocal_19 = STREAMING::_0xB223249B7798EEED(func_48(uParam0, iLocal_14), joaat("PROP_HUMAN_BUTCHER_DEER"), 262145, joaat("PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_GRAB"));
 	return 1;
 }
 
@@ -9162,7 +9162,7 @@ int func_271(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11886,7 +11886,7 @@ int func_379(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_410(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

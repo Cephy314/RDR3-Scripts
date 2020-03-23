@@ -2156,7 +2156,7 @@ int func_4(var uParam0, var uParam1)
 				uParam0->f_227 = 0;
 				func_58(&(uParam0->f_22), 1, 1);
 				PED::SET_PED_CONFIG_FLAG(uParam0->f_13, 315, false);
-				uParam0->f_964 = STREAMING::_0xB223249B7798EEED(Global_35, 798764373, 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
+				uParam0->f_964 = STREAMING::_0xB223249B7798EEED(Global_35, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"), 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
 				func_41(uParam0, 4);
 				return 0;
 			}
@@ -4330,7 +4330,7 @@ void func_44(var uParam0, var uParam1)
 	if (func_122(*uParam1))
 	{
 		uParam0->f_238 = func_123("SERVICE_ORDER", joaat("INPUT_CONTEXT_X"), func_99(*uParam1), 1.2f, 2, 0, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
-		uParam0->f_964 = STREAMING::_0xB223249B7798EEED(Global_35, 798764373, 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
+		uParam0->f_964 = STREAMING::_0xB223249B7798EEED(Global_35, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"), 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
 		func_43(uParam0->f_238, 0, 1);
 	}
 	func_196(uParam0);
@@ -5989,7 +5989,7 @@ void func_111(var uParam0, int iParam1, var uParam2, int iParam3)
 			break;
 		case 2:
 		case 3:
-			*uParam0 = TASK::CREATE_SCENARIO_POINT(798764373, func_66(iParam3), func_107(iParam3), 0f, 0, 0);
+			*uParam0 = TASK::CREATE_SCENARIO_POINT(joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"), func_66(iParam3), func_107(iParam3), 0f, 0, 0);
 			break;
 	}
 }
@@ -20727,11 +20727,11 @@ void func_623(int iParam0)
 					{
 						if (func_674(iParam0->f_4))
 						{
-							iVar19 = 195938434; /* GXTEntry: "Assault" */
+							iVar19 = joaat("CRIME_ASSAULT");
 						}
 						else
 						{
-							iVar19 = -1810065318; /* GXTEntry: "Disturbing the Peace" */
+							iVar19 = joaat("CRIME_THREATEN");
 						}
 						LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), iVar19, 2);
 						PED::_0xC6C4E15CF7D52FEA(iParam0->f_4, 1000f);

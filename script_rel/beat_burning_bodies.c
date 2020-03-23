@@ -235,7 +235,7 @@ int func_10()
 	}
 	else
 	{
-		iVar0 = 2087366558;
+		iVar0 = joaat("WORLD_HUMAN_STAND_WAITING");
 	}
 	switch (Local_14.f_2)
 	{
@@ -1646,7 +1646,7 @@ void func_40()
 		}
 		else
 		{
-			iVar0 = 2087366558;
+			iVar0 = joaat("WORLD_HUMAN_STAND_WAITING");
 		}
 		fVar1 = func_159((Local_14.f_262[0 /*32*/])->f_6, (Local_14.f_262[1 /*32*/])->f_6, 1);
 		Local_14.f_236 = TASK::CREATE_SCENARIO_POINT(iVar0, (Local_14.f_262[0 /*32*/])->f_6, fVar1, 0f, 0, 0);

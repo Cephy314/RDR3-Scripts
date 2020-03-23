@@ -2817,7 +2817,7 @@ void func_115(int iParam0)
 			func_28(&iLocal_18);
 			PED::SET_PED_KEEP_TASK(bLocal_14, true);
 			TASK::CLEAR_PED_TASKS(bLocal_14, 1, 0);
-			LAW::_0xF0B67BAD53C35BD9(bLocal_14, Global_35, bLocal_14, Global_36, -1103472584);
+			LAW::_0xF0B67BAD53C35BD9(bLocal_14, Global_35, bLocal_14, Global_36, joaat("CRIME_THEFT_HORSE"));
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			TASK::TASK_LOOK_AT_ENTITY(false, Global_35, -1, 0, 51, 0);
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, 2000, -1082130432, -1082130432, -1082130432);
@@ -3463,7 +3463,7 @@ int func_130(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

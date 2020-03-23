@@ -1080,7 +1080,7 @@ void func_53(var uParam0)
 	bVar0 = TASK::_0x841475AC96E794D1(uParam0->f_274);
 	if (!bVar0)
 	{
-		uParam0->f_274 = TASK::_0xF533D68FF970D190((Global_1126368->f_1[uParam0->f_276 /*62*/])->f_43, 830847823, 5f, 0, 0);
+		uParam0->f_274 = TASK::_0xF533D68FF970D190((Global_1126368->f_1[uParam0->f_276 /*62*/])->f_43, joaat("WORLD_HUMAN_STARE_STOIC"), 5f, 0, 0);
 	}
 	else
 	{

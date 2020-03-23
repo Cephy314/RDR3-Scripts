@@ -1817,12 +1817,12 @@ int func_30(var uParam0)
 {
 	if (*uParam0 == 21)
 	{
-		iLocal_37 = 830847823;
+		iLocal_37 = joaat("WORLD_HUMAN_STARE_STOIC");
 		iLocal_38 = 1125129790;
 	}
 	else
 	{
-		iLocal_37 = 2087366558;
+		iLocal_37 = joaat("WORLD_HUMAN_STAND_WAITING");
 		iLocal_38 = 604529144;
 	}
 	STREAMING::_0x19A6BE7D9C6884D3(iLocal_37, 15, 0, iLocal_38);

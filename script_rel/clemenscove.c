@@ -1032,7 +1032,7 @@ int func_38(int iParam0)
 				}
 				AUDIO::STOP_PED_SPEAKING(Local_178.f_23, false);
 				AUDIO::STOP_PED_SPEAKING(Local_178.f_22, false);
-				func_76(830847823, 1);
+				func_76(joaat("WORLD_HUMAN_STARE_STOIC"), 1);
 				if (bVar0)
 				{
 					Global_1956612->f_4 = func_77();
@@ -1057,12 +1057,12 @@ int func_38(int iParam0)
 					{
 						func_83(Local_178.f_23, joaat("WORLD_HUMAN_LEAN_BACK_WHITTLE"));
 					}
-					if (!PED::_0x34D6AC1157C8226C(Local_178.f_22, joaat("world_human_clipboard")))
+					if (!PED::_0x34D6AC1157C8226C(Local_178.f_22, joaat("WORLD_HUMAN_CLIPBOARD")))
 					{
-						func_83(Local_178.f_23, joaat("world_human_clipboard"));
+						func_83(Local_178.f_23, joaat("WORLD_HUMAN_CLIPBOARD"));
 					}
-					func_76(830847823, 0);
-					if (PED::_0x34D6AC1157C8226C(Local_178.f_23, joaat("WORLD_HUMAN_LEAN_BACK_WHITTLE")) && PED::_0x34D6AC1157C8226C(Local_178.f_22, joaat("world_human_clipboard")))
+					func_76(joaat("WORLD_HUMAN_STARE_STOIC"), 0);
+					if (PED::_0x34D6AC1157C8226C(Local_178.f_23, joaat("WORLD_HUMAN_LEAN_BACK_WHITTLE")) && PED::_0x34D6AC1157C8226C(Local_178.f_22, joaat("WORLD_HUMAN_CLIPBOARD")))
 					{
 						func_84(&(Local_178.f_3));
 						func_53(&Local_178, 2);
@@ -1170,7 +1170,7 @@ int func_38(int iParam0)
 							WEAPON::_0x94A3C1B804D291EC(Global_35, 0, 0, 0, 1);
 							func_104(Global_35, &uLocal_119, 1, 0, 0, 1084227584 /* Float: 5f */, 100, 0, 0);
 							func_51(&(Local_178.f_25), 0);
-							if (PED::_0x34D6AC1157C8226C(Local_178.f_22, joaat("world_human_clipboard")))
+							if (PED::_0x34D6AC1157C8226C(Local_178.f_22, joaat("WORLD_HUMAN_CLIPBOARD")))
 							{
 								TASK::PLAY_ANIM_ON_RUNNING_SCENARIO(Local_178.f_22, "amb_work@world_human_clipboard@male_a@base", "base");
 							}

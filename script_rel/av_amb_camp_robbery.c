@@ -1906,7 +1906,7 @@ int func_31(var uParam0)
 				}
 				Var1 = Global_35;
 				Var1.f_1 = &uParam0->f_20[0 /*14*/];
-				Var1.f_2 = -1547772340; /* GXTEntry: "Robbery" */
+				Var1.f_2 = joaat("CRIME_ROBBERY");
 				Var1.f_3 = { Global_36 };
 				Var1.f_6 = func_70(func_69(), 1, 1);
 				Var1.f_7 = 100;
@@ -1914,7 +1914,7 @@ int func_31(var uParam0)
 				Var1.f_9 = 1;
 				Var1.f_10 = 1;
 				LAW::_0x318F0F9A4426CFA2(&(uParam0->f_20[0 /*14*/]), &Var1);
-				LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), -1547772340, 1);
+				LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), joaat("CRIME_ROBBERY"), 1);
 				if (!bLocal_45)
 				{
 					func_63(*uParam0, 1);

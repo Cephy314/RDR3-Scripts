@@ -115,10 +115,10 @@ void __EntryFunction__()
 	sLocal_17 = "PBL_DROP_IN";
 	iLocal_3531 = -1;
 	iLocal_3532 = joaat("ui_doc_billnote");
-	iLocal_3533 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_p_cs_letterFolded02x");
+	iLocal_3533 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED02X");
 	vLocal_3598 = { 672.4047f, -1259.892f, 42.9838f };
 	iLocal_3707 = joaat("ui_letter_lenny");
-	iLocal_3708 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
+	iLocal_3708 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 	vLocal_3714 = { 682.1702f, -1249.528f, 43.09263f };
 	vLocal_3717 = { 672.86f, -1237.54f, 44.13f };
 	vLocal_3720 = { 0f, 0f, 28f };
@@ -131,9 +131,9 @@ void __EntryFunction__()
 	iLocal_3740 = joaat("ui_photo_artgang");
 	vLocal_3742 = { 651.7246f, -1245.335f, 43.896f };
 	vLocal_3747 = { 674.605f, -1236.566f, 43.14585f };
-	iLocal_3750 = joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w10_16_h15_24_p_cs_oldpaper1889");
+	iLocal_3750 = joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_OLDPAPER1889");
 	vLocal_3754 = { 668.2988f, -1235.026f, 43.17291f };
-	iLocal_3757 = joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_s_mollyLoveLetter");
+	iLocal_3757 = joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER");
 	vLocal_3761 = { 654.8076f, -1251.45f, 42.84742f };
 	Local_18.f_46 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2698))
@@ -13281,7 +13281,7 @@ int func_415(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -21039,11 +21039,11 @@ int func_694(var uParam0, var uParam1, var uParam2)
 	*uParam2 = TASK::_0xF533D68FF970D190(func_697(func_148()), joaat("WORLD_HUMAN_CAULDRON_PUT_DOWN_TABLE"), 5f, 0, 1);
 	if (func_234(-558867971, 1))
 	{
-		*uParam1 = TASK::_0xF533D68FF970D190(func_698(func_148()), -1932609172, 3f, 0, 1);
+		*uParam1 = TASK::_0xF533D68FF970D190(func_698(func_148()), joaat("WORLD_HUMAN_CAULDRON_ALWAYS"), 3f, 0, 1);
 	}
 	else
 	{
-		*uParam1 = TASK::_0xF533D68FF970D190(func_698(func_148()), 1340532149, 3f, 0, 1);
+		*uParam1 = TASK::_0xF533D68FF970D190(func_698(func_148()), joaat("WORLD_HUMAN_CAULDRON"), 3f, 0, 1);
 	}
 	if (!TASK::_0x841475AC96E794D1(*uParam0))
 	{
@@ -21467,7 +21467,7 @@ void func_720(var uParam0, var uParam1)
 				bVar0 = func_1118(9);
 				break;
 		}
-		if (PED::_0x34D6AC1157C8226C(bVar0, -1322841316))
+		if (PED::_0x34D6AC1157C8226C(bVar0, joaat("PROP_HUMAN_WOOD_CHOP")))
 		{
 			uParam0->f_1617 = 1;
 			uParam1->f_2 = 6;
@@ -21797,7 +21797,7 @@ void func_731(var uParam0, var uParam1)
 	GRAPHICS::_0x5199405EABFBD7F0("CamTransition01");
 	uParam0->f_1612 = ANIMSCENE::_CREATE_ANIM_SCENE("script@respawn@sky@SkyTL_1500_03Clouds", 0, 0, false, true);
 	ANIMSCENE::LOAD_ANIM_SCENE(uParam0->f_1612);
-	STREAMING::_0xB223249B7798EEED(Global_35, -1322841316, 4, joaat("PROP_HUMAN_WOOD_CHOP_POST_CHOP_11_12_PLAYER"));
+	STREAMING::_0xB223249B7798EEED(Global_35, joaat("PROP_HUMAN_WOOD_CHOP"), 4, joaat("PROP_HUMAN_WOOD_CHOP_POST_CHOP_11_12_PLAYER"));
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_PLAYER_CHORES_BUCKET_PUT_DOWN_FULL"), 2051, 0, 0);
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_PLAYER_CHORES_FEEDBAG_PUTDOWN"), 2051, 0, 0);
 	if (func_202(Global_40.f_4283.f_408.f_1))
@@ -28368,7 +28368,7 @@ struct<8> func_938(int iParam0, int iParam1, int iParam2)
 			Var0 = joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1");
 			break;
 		case 7:
-			Var0 = -1816442556;
+			Var0 = joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			break;
 		case 1:
 			if (func_148() == 1)
@@ -29752,17 +29752,17 @@ int func_987()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -29775,17 +29775,17 @@ int func_988()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -29798,17 +29798,17 @@ int func_989()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -29821,17 +29821,17 @@ int func_990()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -35208,7 +35208,7 @@ void func_1122(var uParam0)
 			*uParam0 = joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1");
 			break;
 		case 7:
-			*uParam0 = -1816442556;
+			*uParam0 = joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			break;
 		case 1:
 			if (func_148() == 1)
@@ -36218,7 +36218,7 @@ void func_1145(var uParam0, var uParam1)
 				bVar3 = func_1118(9);
 				break;
 		}
-		if (PED::_0x34D6AC1157C8226C(bVar3, -1322841316))
+		if (PED::_0x34D6AC1157C8226C(bVar3, joaat("PROP_HUMAN_WOOD_CHOP")))
 		{
 			uParam0->f_1617 = 1;
 			uParam1->f_2 = 6;

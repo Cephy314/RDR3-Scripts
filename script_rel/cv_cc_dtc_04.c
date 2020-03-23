@@ -3154,7 +3154,7 @@ int func_72(var uParam0)
 	func_158(uParam0, iLocal_14, 2, -787460071, "SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING_MALE_A", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_159(uParam0, iLocal_14, iLocal_21, "p_cs_bookEvelynMiller_PH_R_HAND", 0, 0);
 	func_160(uParam0, iLocal_14, 1, -1);
-	func_157(uParam0, iLocal_15, 3, 830847823, 0, -1, 0);
+	func_157(uParam0, iLocal_15, 3, joaat("WORLD_HUMAN_STARE_STOIC"), 0, -1, 0);
 	func_161(uParam0, iLocal_15, vLocal_32, fLocal_35, 1, 0);
 	func_162(uParam0, iLocal_15, vLocal_32, fLocal_35);
 	func_163(uParam0, iLocal_15, 1);
@@ -3164,7 +3164,7 @@ int func_72(var uParam0)
 	func_162(uParam0, iLocal_16, vLocal_36, fLocal_39);
 	func_163(uParam0, iLocal_16, 1);
 	func_164(uParam0, iLocal_16, 1);
-	func_157(uParam0, iLocal_17, 3, 2087366558, 0, -1, 0);
+	func_157(uParam0, iLocal_17, 3, joaat("WORLD_HUMAN_STAND_WAITING"), 0, -1, 0);
 	func_161(uParam0, iLocal_17, vLocal_40, fLocal_43, 1, 0);
 	func_162(uParam0, iLocal_17, vLocal_40, fLocal_43);
 	func_163(uParam0, iLocal_17, 1);
@@ -8656,7 +8656,7 @@ int func_279(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -10598,7 +10598,7 @@ int func_361(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_395(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

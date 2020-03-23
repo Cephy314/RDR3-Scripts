@@ -114,12 +114,12 @@ void __EntryFunction__()
 	vLocal_3539 = { 3f, 0f, 30.09f };
 	iLocal_3543 = -1;
 	iLocal_3544 = joaat("ui_doc_billnote");
-	iLocal_3545 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_p_cs_letterFolded02x");
-	iLocal_3601 = joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_s_mollyLoveLetter");
+	iLocal_3545 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED02X");
+	iLocal_3601 = joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER");
 	vLocal_3605 = { -129.2325f, -30.70663f, 95.17754f };
 	vLocal_3614 = { -133.2737f, -18.5626f, 95.1277f };
 	iLocal_3692 = joaat("ui_letter_lenny");
-	iLocal_3693 = joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
+	iLocal_3693 = joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 	vLocal_3697 = { -125.1681f, -20.76582f, 95.20019f };
 	iLocal_3700 = joaat("ui_photo_artdad");
 	vLocal_3702 = { -124.2284f, -40.4813f, 95.9403f };
@@ -13382,7 +13382,7 @@ int func_418(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -21165,11 +21165,11 @@ int func_699(var uParam0, var uParam1, var uParam2)
 	*uParam2 = TASK::_0xF533D68FF970D190(func_702(func_155()), joaat("WORLD_HUMAN_CAULDRON_PUT_DOWN_TABLE"), 5f, 0, 1);
 	if (func_137(-558867971, 1))
 	{
-		*uParam1 = TASK::_0xF533D68FF970D190(func_703(func_155()), -1932609172, 3f, 0, 1);
+		*uParam1 = TASK::_0xF533D68FF970D190(func_703(func_155()), joaat("WORLD_HUMAN_CAULDRON_ALWAYS"), 3f, 0, 1);
 	}
 	else
 	{
-		*uParam1 = TASK::_0xF533D68FF970D190(func_703(func_155()), 1340532149, 3f, 0, 1);
+		*uParam1 = TASK::_0xF533D68FF970D190(func_703(func_155()), joaat("WORLD_HUMAN_CAULDRON"), 3f, 0, 1);
 	}
 	if (!TASK::_0x841475AC96E794D1(*uParam0))
 	{
@@ -21643,7 +21643,7 @@ void func_727(var uParam0, var uParam1)
 				bVar0 = func_1118(9);
 				break;
 		}
-		if (PED::_0x34D6AC1157C8226C(bVar0, -1322841316))
+		if (PED::_0x34D6AC1157C8226C(bVar0, joaat("PROP_HUMAN_WOOD_CHOP")))
 		{
 			uParam0->f_1617 = 1;
 			uParam1->f_2 = 6;
@@ -21973,7 +21973,7 @@ void func_738(var uParam0, var uParam1)
 	GRAPHICS::_0x5199405EABFBD7F0("CamTransition01");
 	uParam0->f_1612 = ANIMSCENE::_CREATE_ANIM_SCENE("script@respawn@sky@SkyTL_1500_03Clouds", 0, 0, false, true);
 	ANIMSCENE::LOAD_ANIM_SCENE(uParam0->f_1612);
-	STREAMING::_0xB223249B7798EEED(Global_35, -1322841316, 4, joaat("PROP_HUMAN_WOOD_CHOP_POST_CHOP_11_12_PLAYER"));
+	STREAMING::_0xB223249B7798EEED(Global_35, joaat("PROP_HUMAN_WOOD_CHOP"), 4, joaat("PROP_HUMAN_WOOD_CHOP_POST_CHOP_11_12_PLAYER"));
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_PLAYER_CHORES_BUCKET_PUT_DOWN_FULL"), 2051, 0, 0);
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_PLAYER_CHORES_FEEDBAG_PUTDOWN"), 2051, 0, 0);
 	if (func_208(Global_40.f_4283.f_408.f_1))
@@ -28375,7 +28375,7 @@ struct<8> func_936(int iParam0, int iParam1, int iParam2)
 			Var0 = joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1");
 			break;
 		case 7:
-			Var0 = -1816442556;
+			Var0 = joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			break;
 		case 1:
 			if (func_155() == 1)
@@ -29787,17 +29787,17 @@ int func_988()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -29810,17 +29810,17 @@ int func_989()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -29833,17 +29833,17 @@ int func_990()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -29856,17 +29856,17 @@ int func_991()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1382())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -35234,7 +35234,7 @@ void func_1122(var uParam0)
 			*uParam0 = joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1");
 			break;
 		case 7:
-			*uParam0 = -1816442556;
+			*uParam0 = joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			break;
 		case 1:
 			if (func_155() == 1)
@@ -36231,7 +36231,7 @@ void func_1144(var uParam0, var uParam1)
 				bVar3 = func_1118(9);
 				break;
 		}
-		if (PED::_0x34D6AC1157C8226C(bVar3, -1322841316))
+		if (PED::_0x34D6AC1157C8226C(bVar3, joaat("PROP_HUMAN_WOOD_CHOP")))
 		{
 			uParam0->f_1617 = 1;
 			uParam1->f_2 = 6;

@@ -571,7 +571,7 @@ int func_9()
 			}
 			if (iLocal_473 == 0)
 			{
-				if ((!func_75(-1426280354) || !func_75(joaat("world_human_drinking"))) || !func_75(79562032))
+				if ((!func_75(-1426280354) || !func_75(joaat("WORLD_HUMAN_DRINKING"))) || !func_75(79562032))
 				{
 					return 0;
 				}
@@ -2573,7 +2573,7 @@ void func_71()
 	if (iLocal_473 == 0)
 	{
 		func_202(-1426280354, 262181, 0, 0);
-		func_202(joaat("world_human_drinking"), 262181, 0, 2110094855);
+		func_202(joaat("WORLD_HUMAN_DRINKING"), 262181, 0, 2110094855);
 		func_202(79562032, 262181, 0, 0);
 		Local_312[0 /*2*/] = "script_re@locked_safe@sledge_hammer";
 		(Local_312[0 /*2*/])->f_1 = "exit_male_a";

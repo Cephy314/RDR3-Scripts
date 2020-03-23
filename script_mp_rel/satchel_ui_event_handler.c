@@ -2667,11 +2667,11 @@ int func_82(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 				{
 					if (func_224(&Global_34))
 					{
-						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, 616992297, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, joaat("APPLY_POMADE_WITH_HAT"), 1, 0, -1082130432);
 					}
 					else
 					{
-						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, -903856906, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, joaat("APPLY_POMADE_WITH_NO_HAT"), 1, 0, -1082130432);
 					}
 					return 1;
 				}
@@ -2820,7 +2820,7 @@ int func_82(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 		case -1337515701:
 			if (!bParam1)
 			{
-				TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, -1893721798, 1, 0, -1082130432);
+				TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, joaat("POCKET_WATCH_INSPECT_UNHOLSTER"), 1, 0, -1082130432);
 				return 1;
 			}
 			break;
@@ -7376,17 +7376,17 @@ void func_225(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 406178289;
+	iVar0 = joaat("USE_HANDFULL_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 406178289;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 187883304;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = 38531903;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -7546,17 +7546,17 @@ void func_229(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = -362580870;
+	iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = -362580870;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = -1013825131;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = -1433021121;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -7701,17 +7701,17 @@ void func_234(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 1076410848;
+	iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 1076410848;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 1820106865;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1890537641;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -7732,17 +7732,17 @@ void func_235(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 1516413548;
+	iVar0 = joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 1516413548;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = 1648161053;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = -1170654725;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -7763,17 +7763,17 @@ void func_236(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = -1454586679;
+	iVar0 = joaat("QUICK_SMOKE_CIGAR_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = -1454586679;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = 1849268701;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = 881673189;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -7794,17 +7794,17 @@ void func_237(int iParam0, bool bParam1)
 {
 	int iVar0;
 
-	iVar0 = 1934039819;
+	iVar0 = joaat("USE_TONIC_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 1934039819;
+			iVar0 = joaat("USE_TONIC_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 1656393367;
+			iVar0 = joaat("USE_TONIC_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = 1125253485;
+			iVar0 = joaat("USE_TONIC_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -7829,17 +7829,17 @@ void func_238(int iParam0, bool bParam1)
 {
 	int iVar0;
 
-	iVar0 = -1054661625;
+	iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = -1054661625;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 1750832898;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = -1750311991;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -12953,17 +12953,17 @@ int func_465()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -12976,17 +12976,17 @@ int func_466()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -12999,17 +12999,17 @@ int func_467()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -13022,17 +13022,17 @@ int func_468()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_453())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

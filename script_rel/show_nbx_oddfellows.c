@@ -2965,7 +2965,7 @@ void func_63(int iParam0)
 			func_7(&(Global_1394141->f_1326), 32);
 			if (func_237())
 			{
-				func_238(490527209, 0);
+				func_238(joaat("JOURNAL_RC_ODDF3_AR"), 0);
 			}
 			else
 			{

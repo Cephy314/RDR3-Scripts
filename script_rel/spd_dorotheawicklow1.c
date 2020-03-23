@@ -1282,7 +1282,7 @@ void func_4(bool bParam0, bool bParam1)
 	{
 		if (func_11(Global_35, bParam1, 0, 1))
 		{
-			LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 1714017012, 0, 0, -1);
+			LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_LOITERING"), 0, 0, -1);
 		}
 	}
 }
@@ -4135,7 +4135,7 @@ void func_150()
 		bVar2 = iVar1;
 		if (!ENTITY::IS_ENTITY_DEAD(bVar2))
 		{
-			if (((PED::IS_PED_HUMAN(bVar2) && !PED::IS_PED_A_PLAYER(bVar2)) && bVar2 != bLocal_163) && PED::_0x34D6AC1157C8226C(bVar2, 2087366558))
+			if (((PED::IS_PED_HUMAN(bVar2) && !PED::IS_PED_A_PLAYER(bVar2)) && bVar2 != bLocal_163) && PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_STAND_WAITING")))
 			{
 				if (!TASK::_0xBEDBE39B5FD98FD6(bVar2) && !PED::_0x77525BBF433F2CD6(bVar2))
 				{

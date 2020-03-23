@@ -10894,7 +10894,7 @@ void func_475(int iParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 1:
-						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, -653113914, 1, 1, 0, 0);
+						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, joaat("KIT_EMOTE_REACTION_SHAKEHEAD_1"), 1, 1, 0, 0);
 						break;
 				}
 			}

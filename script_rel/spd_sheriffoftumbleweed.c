@@ -1809,8 +1809,8 @@ int func_73(var uParam0)
 	POPULATION::_0x18262CAFEBB5FBE1(bLocal_644, 0, 0, 0, -1, -1, 0);
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_FAN"), 15, false, 0);
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_SMOKE"), 15, false, 0);
-	STREAMING::_0x19A6BE7D9C6884D3(830847823, 15, false, 0);
-	STREAMING::_0x19A6BE7D9C6884D3(2087366558, 15, false, 0);
+	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_STARE_STOIC"), 15, false, 0);
+	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_STAND_WAITING"), 15, false, 0);
 	PED::_0xED9582B3DA8F02B4(3);
 	return 1;
 }
@@ -1849,11 +1849,11 @@ int func_74(var uParam0)
 	{
 		return 0;
 	}
-	if (!STREAMING::_0x9427C94D2E4094A4(830847823, 0))
+	if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_STARE_STOIC"), 0))
 	{
 		return 0;
 	}
-	if (!STREAMING::_0x9427C94D2E4094A4(2087366558, 0))
+	if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_STAND_WAITING"), 0))
 	{
 		return 0;
 	}
@@ -7486,7 +7486,7 @@ void func_263()
 		bVar2 = iVar1;
 		if (!ENTITY::IS_ENTITY_DEAD(bVar2))
 		{
-			if ((((PED::IS_PED_HUMAN(bVar2) && !PED::IS_PED_A_PLAYER(bVar2)) && bVar2 != Local_14.f_3) && !ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(bVar2, true)) && ((((PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_FAN")) || PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_SMOKE"))) || PED::_0x34D6AC1157C8226C(bVar2, 830847823)) || PED::_0x34D6AC1157C8226C(bVar2, 2087366558)) || func_170(bVar2, -1098463898)))
+			if ((((PED::IS_PED_HUMAN(bVar2) && !PED::IS_PED_A_PLAYER(bVar2)) && bVar2 != Local_14.f_3) && !ENTITY::DOES_ENTITY_BELONG_TO_THIS_SCRIPT(bVar2, true)) && ((((PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_FAN")) || PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_SMOKE"))) || PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_STARE_STOIC"))) || PED::_0x34D6AC1157C8226C(bVar2, joaat("WORLD_HUMAN_STAND_WAITING"))) || func_170(bVar2, -1098463898)))
 			{
 				if (!TASK::_0xBEDBE39B5FD98FD6(bVar2) && !PED::_0x77525BBF433F2CD6(bVar2))
 				{
@@ -9862,14 +9862,14 @@ struct<6> func_366(bool bParam0)
 		}
 		else if (Local_14.f_1 == 1)
 		{
-			Var0 = 830847823;
+			Var0 = joaat("WORLD_HUMAN_STARE_STOIC");
 			Var0.f_1 = { -5494.188f, -2953.978f, -2.872f };
 			Var0.f_4 = 154.544f;
 			Var0.f_5 = 120f;
 		}
 		else
 		{
-			Var0 = 830847823;
+			Var0 = joaat("WORLD_HUMAN_STARE_STOIC");
 			Var0.f_1 = { -5496.852f, -2939.842f, -2.247f };
 			Var0.f_4 = -78.588f;
 			Var0.f_5 = 120f;
@@ -9884,7 +9884,7 @@ struct<6> func_366(bool bParam0)
 	}
 	else if (Local_14.f_1 == 1)
 	{
-		Var0 = 2087366558;
+		Var0 = joaat("WORLD_HUMAN_STAND_WAITING");
 		Var0.f_1 = { -5496.233f, -2954.071f, -2.819f };
 		Var0.f_4 = 167.403f;
 		Var0.f_5 = 100f;

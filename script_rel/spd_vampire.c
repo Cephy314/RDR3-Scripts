@@ -2752,11 +2752,11 @@ int func_107(int iParam0)
 		{
 			if (func_238())
 			{
-				func_239(1709930765, 0);
+				func_239(joaat("JOURNAL_TOWN_SECRET_VAMP_ENCOUNTER_AR"), 0);
 			}
 			else
 			{
-				func_239(-1947676373, 0);
+				func_239(joaat("JOURNAL_TOWN_SECRET_VAMP_ENCOUNTER_JN"), 0);
 			}
 			func_93(&(Local_14.f_252), 134217728);
 		}

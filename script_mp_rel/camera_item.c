@@ -3263,7 +3263,7 @@ void func_110(var uParam0)
 		case 0:
 			break;
 		case 1:
-			func_134(830847823, "WORLD_HUMAN_STARE_STOIC_MALE_A", 333292554);
+			func_134(joaat("WORLD_HUMAN_STARE_STOIC"), "WORLD_HUMAN_STARE_STOIC_MALE_A", 333292554);
 			break;
 		case 2:
 			func_134(joaat("WORLD_HUMAN_STERNGUY_IDLES"), "WORLD_HUMAN_STERNGUY", -730803145);

@@ -9997,8 +9997,8 @@ int func_385(var uParam0, vector3 vParam1, int iParam4, int iParam5)
 		}
 		return 1;
 	}
-	STREAMING::REQUEST_NAMED_PTFX_ASSET(-458373790);
-	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(-458373790))
+	STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("scr_distance_smoke"));
+	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("scr_distance_smoke")))
 	{
 		if (!func_141(uParam0->f_1, 8))
 		{
@@ -10247,10 +10247,10 @@ void func_402()
 {
 	func_532(1, joaat("WORLD_HUMAN_GUARD_SCOUT"));
 	func_532(2, joaat("WORLD_HUMAN_WAITING_IMPATIENT"));
-	func_532(3, 830847823);
+	func_532(3, joaat("WORLD_HUMAN_STARE_STOIC"));
 	func_532(4, joaat("WORLD_HUMAN_WAITING_IMPATIENT"));
 	func_532(5, joaat("WORLD_HUMAN_GUARD_SCOUT"));
-	func_532(6, 830847823);
+	func_532(6, joaat("WORLD_HUMAN_STARE_STOIC"));
 }
 
 void func_403(var uParam0, int iParam1, char* sParam2, bool bParam3)

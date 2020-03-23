@@ -57,7 +57,7 @@ void __EntryFunction__()
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
 	iLocal_18 = 1;
-	iLocal_28 = 1455795772;
+	iLocal_28 = joaat("WORLD_HUMAN_PEE");
 	iLocal_33 = joaat("policewagon01x");
 	iLocal_34 = joaat("s_campfire02_amb");
 	uScriptParam_0 = uScriptParam_0;
@@ -671,9 +671,9 @@ void func_23()
 	(Local_82[0 /*4*/])->f_1 = { 1.5f, 0f, 0f };
 	Local_82[1 /*4*/] = joaat("WORLD_HUMAN_LEAN_BACK_WALL");
 	(Local_82[1 /*4*/])->f_1 = { -1.35f, 0f, 0f };
-	Local_82[2 /*4*/] = 2087366558;
+	Local_82[2 /*4*/] = joaat("WORLD_HUMAN_STAND_WAITING");
 	(Local_82[2 /*4*/])->f_1 = { 1f, -2.5f, 0f };
-	Local_82[3 /*4*/] = 2087366558;
+	Local_82[3 /*4*/] = joaat("WORLD_HUMAN_STAND_WAITING");
 	(Local_82[3 /*4*/])->f_1 = { 1f, 6f, 0f };
 	Local_82[4 /*4*/] = joaat("WORLD_HUMAN_WRITE_NOTEBOOK");
 	(Local_82[4 /*4*/])->f_1 = { 2f, -2.5f, 0f };
@@ -686,7 +686,7 @@ void func_23()
 	Local_49[0 /*4*/] = joaat("WORLD_HUMAN_SMOKE");
 	Local_49[1 /*4*/] = 597682689;
 	Local_49[2 /*4*/] = joaat("WORLD_HUMAN_FIRE_TEND_KNEEL");
-	Local_49[3 /*4*/] = 2087366558;
+	Local_49[3 /*4*/] = joaat("WORLD_HUMAN_STAND_WAITING");
 	Local_49[4 /*4*/] = joaat("WORLD_HUMAN_SMOKE_NERVOUS_STRESSED");
 	Local_49[5 /*4*/] = joaat("WORLD_CAMP_FIRE_SIT_GROUND");
 	Local_49[6 /*4*/] = joaat("WORLD_HUMAN_GUARD_SCOUT");

@@ -2902,23 +2902,23 @@ int func_95()
 			switch (Local_274.f_10)
 			{
 				case 0:
-					func_269(830847823, iVar0, joaat("g_m_m_uniduster_01"), func_268(830847823));
+					func_269(joaat("WORLD_HUMAN_STARE_STOIC"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_STARE_STOIC")));
 					func_269(joaat("WORLD_HUMAN_SMOKE"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_SMOKE")));
 					break;
 				case 1:
-					func_269(830847823, iVar0, joaat("g_m_m_uniduster_01"), func_268(830847823));
+					func_269(joaat("WORLD_HUMAN_STARE_STOIC"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_STARE_STOIC")));
 					func_269(joaat("WORLD_HUMAN_SMOKE"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_SMOKE")));
 					break;
 				case 2:
-					func_269(830847823, iVar0, joaat("g_m_m_uniduster_01"), func_268(830847823));
+					func_269(joaat("WORLD_HUMAN_STARE_STOIC"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_STARE_STOIC")));
 					func_269(joaat("WORLD_HUMAN_SMOKE"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_SMOKE")));
 					break;
 				case 3:
-					func_269(830847823, iVar0, joaat("g_m_m_uniduster_01"), func_268(830847823));
+					func_269(joaat("WORLD_HUMAN_STARE_STOIC"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_STARE_STOIC")));
 					func_269(joaat("WORLD_HUMAN_SMOKE"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_SMOKE")));
 					break;
 				case 4:
-					func_269(830847823, iVar0, joaat("g_m_m_uniduster_01"), func_268(830847823));
+					func_269(joaat("WORLD_HUMAN_STARE_STOIC"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_STARE_STOIC")));
 					func_269(joaat("WORLD_HUMAN_SMOKE"), iVar0, joaat("g_m_m_uniduster_01"), func_268(joaat("WORLD_HUMAN_SMOKE")));
 					break;
 			}
@@ -2929,7 +2929,7 @@ int func_95()
 			switch (Local_274.f_10)
 			{
 				case 0:
-					if (!func_270(830847823))
+					if (!func_270(joaat("WORLD_HUMAN_STARE_STOIC")))
 					{
 						iVar1 = 0;
 					}
@@ -2939,7 +2939,7 @@ int func_95()
 					}
 					break;
 				case 1:
-					if (!func_270(830847823))
+					if (!func_270(joaat("WORLD_HUMAN_STARE_STOIC")))
 					{
 						iVar1 = 0;
 					}
@@ -2949,7 +2949,7 @@ int func_95()
 					}
 					break;
 				case 2:
-					if (!func_270(830847823))
+					if (!func_270(joaat("WORLD_HUMAN_STARE_STOIC")))
 					{
 						iVar1 = 0;
 					}
@@ -2959,7 +2959,7 @@ int func_95()
 					}
 					break;
 				case 3:
-					if (!func_270(830847823))
+					if (!func_270(joaat("WORLD_HUMAN_STARE_STOIC")))
 					{
 						iVar1 = 0;
 					}
@@ -2969,7 +2969,7 @@ int func_95()
 					}
 					break;
 				case 4:
-					if (!func_270(830847823))
+					if (!func_270(joaat("WORLD_HUMAN_STARE_STOIC")))
 					{
 						iVar1 = 0;
 					}
@@ -3412,7 +3412,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3424,7 +3424,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3438,7 +3438,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3450,7 +3450,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3462,7 +3462,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3476,7 +3476,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3488,7 +3488,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3502,7 +3502,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3514,7 +3514,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3528,7 +3528,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3540,7 +3540,7 @@ int func_129(var uParam0, int iParam1)
 				switch (iParam1)
 				{
 					case 0:
-						return 830847823;
+						return joaat("WORLD_HUMAN_STARE_STOIC");
 					case 1:
 						return joaat("WORLD_HUMAN_SMOKE");
 					default:
@@ -3561,7 +3561,7 @@ char* func_131(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 830847823:
+		case joaat("WORLD_HUMAN_STARE_STOIC"):
 			return "WORLD_HUMAN_STARE_STOIC_MALE_A";
 		case joaat("WORLD_HUMAN_SMOKE"):
 			return "WORLD_HUMAN_SMOKE_MALE_C";
@@ -7509,7 +7509,7 @@ int func_268(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 830847823:
+		case joaat("WORLD_HUMAN_STARE_STOIC"):
 			return 333292554;
 		case joaat("WORLD_HUMAN_SMOKE"):
 			return -1409704321;

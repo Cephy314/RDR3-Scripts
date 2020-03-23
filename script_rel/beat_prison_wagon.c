@@ -2597,7 +2597,7 @@ int func_57()
 			{
 				if (func_45(&uLocal_1572, 20f) || func_132(Global_35, iLocal_1505, 1) > 3600f)
 				{
-					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), -683250308, 0, 0, 1);
+					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT_LAW"), 0, 0, 1);
 					PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), 5, false);
 					bLocal_1261 = true;
 				}
@@ -7059,7 +7059,7 @@ void func_179()
 		}
 		if (func_45(&uLocal_1554, 3f))
 		{
-			LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 1135209633, 0, 0, 1);
+			LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_THEFT_VEHICLE"), 0, 0, 1);
 			PLAYER::SET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID(), 5, false);
 			bLocal_1251 = true;
 		}

@@ -521,8 +521,8 @@ int func_12(var uParam0, vector3 vParam1, int iParam4, int iParam5)
 		}
 		return 1;
 	}
-	STREAMING::REQUEST_NAMED_PTFX_ASSET(-458373790);
-	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(-458373790))
+	STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("scr_distance_smoke"));
+	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("scr_distance_smoke")))
 	{
 		if (!func_2(uParam0->f_1, 8))
 		{
@@ -1864,7 +1864,7 @@ void func_52(var uParam0, int iParam1)
 	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(*uParam0))
 	{
 		GRAPHICS::STOP_PARTICLE_FX_LOOPED(*uParam0, false);
-		STREAMING::REMOVE_NAMED_PTFX_ASSET(-458373790);
+		STREAMING::REMOVE_NAMED_PTFX_ASSET(joaat("scr_distance_smoke"));
 		func_63(&(uParam0->f_1), 4);
 	}
 }

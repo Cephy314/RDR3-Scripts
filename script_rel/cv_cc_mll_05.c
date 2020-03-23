@@ -3265,7 +3265,7 @@ int func_77(var uParam0)
 	iLocal_98 = func_164(uParam0, "script@vignette@molly_5@action_b_alt_molly_wnt", 0, 0, 0, 1);
 	func_165(uParam0, "CMLL5AU");
 	func_166(uParam0, 1934524686, 1012720099);
-	func_167(uParam0, iLocal_92, 3, 2087366558, "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
+	func_167(uParam0, iLocal_92, 3, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
 	func_169(uParam0, iLocal_92, 1, joaat("WORLD_HUMAN_WAITING_IMPATIENT"), 0, -1, 0, func_168(100f, 140f), 1065353216 /* Float: 1f */, 1);
 	func_170(uParam0, iLocal_92, 2, 4, 0, "Default_Angry", "angry_a");
 	func_171(uParam0, iLocal_92, 1.5f, 1065353216 /* Float: 1f */, 1092616192 /* Float: 10f */);
@@ -8872,7 +8872,7 @@ int func_294(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11116,7 +11116,7 @@ int func_385(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_436(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

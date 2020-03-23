@@ -3113,7 +3113,7 @@ int func_72(var uParam0)
 	iLocal_20 = func_154(uParam0, "script@vignette@dutch_and_javier_2@action_c_alt_left", 0, 0, 0, 1);
 	iLocal_21 = func_154(uParam0, "script@vignette@dutch_and_javier_2@action_c_alt_right", 0, 0, 0, 1);
 	func_155(uParam0, "CCDV2AU");
-	func_156(uParam0, iLocal_14, 2, joaat("world_human_stand_fishing"), "WORLD_HUMAN_STAND_FISHING_MALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_156(uParam0, iLocal_14, 2, joaat("WORLD_HUMAN_STAND_FISHING"), "WORLD_HUMAN_STAND_FISHING_MALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_157(uParam0, iLocal_14, iLocal_22, "p_fishingPole02x_PH_R_HAND", 0, 0);
 	func_158(uParam0, iLocal_14, 1, -1);
 	func_158(uParam0, iLocal_15, 1, -1);
@@ -8457,7 +8457,7 @@ int func_271(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11231,7 +11231,7 @@ int func_380(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_411(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

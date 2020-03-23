@@ -4237,74 +4237,74 @@ void func_137()
 	{
 		if (func_317())
 		{
-			func_318(1159957406, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_ROCK_AR"), 0);
 		}
 		else
 		{
-			func_318(-999999893, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_ROCK_JN"), 0);
 		}
 	}
 	else if (iLocal_344 == 1)
 	{
 		if (func_317())
 		{
-			func_318(332779262, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_TREE_AR"), 0);
 		}
 		else
 		{
-			func_318(1014963636, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_TREE_JN"), 0);
 		}
 	}
 	else if (iLocal_344 == 2)
 	{
 		if (func_317())
 		{
-			func_318(-1220395131, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_RAILROAD_AR"), 0);
 		}
 		else
 		{
-			func_318(-585739947, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_RAILROAD_JN"), 0);
 		}
 	}
 	if (func_48(1059291705 /* GXTEntry: "Pieced Together Map" */, 1, 0) || iVar0 == 3)
 	{
 		if (func_317())
 		{
-			func_318(-1986404392, 0);
+			func_318(joaat("JOURNAL_RC_KILLER3_AR"), 0);
 		}
-		else if (!HUD::_JOURNAL_CAN_WRITE_ENTRY(801682048))
+		else if (!HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_RC_KILLER2_AR")))
 		{
-			func_318(1413858416, 0);
+			func_318(joaat("JOURNAL_RC_KILLER3B_JN"), 0);
 		}
 		else
 		{
-			func_318(-381847357, 0);
+			func_318(joaat("JOURNAL_RC_KILLER3A_JN"), 0);
 		}
 	}
 	else if (iVar0 <= 1)
 	{
 		if (func_317())
 		{
-			func_318(1732474719, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_AR"), 0);
 		}
 		else
 		{
-			func_318(-1122556251, 0);
+			func_318(joaat("JOURNAL_RC_KILLER1_JN"), 0);
 		}
 	}
 	else if (iVar0 == 2)
 	{
 		if (func_317())
 		{
-			func_318(801682048, 0);
+			func_318(joaat("JOURNAL_RC_KILLER2_AR"), 0);
 		}
-		else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(1732474719))
+		else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_RC_KILLER1_AR")))
 		{
-			func_318(1148804950, 0);
+			func_318(joaat("JOURNAL_RC_KILLER2A_JN"), 0);
 		}
 		else
 		{
-			func_318(-1159924217, 0);
+			func_318(joaat("JOURNAL_RC_KILLER2B_JN"), 0);
 		}
 	}
 }
@@ -24953,17 +24953,17 @@ int func_771()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_922())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -24976,17 +24976,17 @@ int func_772()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_922())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -24999,17 +24999,17 @@ int func_773()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_922())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -25022,17 +25022,17 @@ int func_774()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_922())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

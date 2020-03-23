@@ -19485,7 +19485,7 @@ void func_490(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_738(472134900, 0);
+				func_738(joaat("JOURNAL_RANDOM_EVENTS_BEAR_TRAP_JN"), 0);
 			}
 			break;
 		case 1:
@@ -19495,7 +19495,7 @@ void func_490(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_738(-1597139239, 0);
+				func_738(joaat("JOURNAL_RANDOM_EVENTS_DARK_ALLEY_AMBUSH_JN"), 0);
 			}
 			break;
 		case 2:
@@ -19505,7 +19505,7 @@ void func_490(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_738(373866407, 0);
+				func_738(joaat("JOURNAL_RANDOM_EVENTS_DEAD_JOHN_ALT_1_JN"), 0);
 			}
 			break;
 		case 3:
@@ -19515,7 +19515,7 @@ void func_490(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_738(-913163759, 0);
+				func_738(joaat("JOURNAL_RANDOM_EVENTS_DEAD_JOHN_ALT_2_JN"), 0);
 			}
 			break;
 		case 4:
@@ -19525,7 +19525,7 @@ void func_490(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_738(133447149, 0);
+				func_738(joaat("JOURNAL_RANDOM_EVENTS_INBRED_KIDNAP_JN"), 0);
 			}
 			break;
 		default:

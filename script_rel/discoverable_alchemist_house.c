@@ -2783,13 +2783,13 @@ void func_36(var uParam0, bool bParam1)
 				{
 					if (func_85())
 					{
-						func_88(-533137209, 0);
-						iVar0 = -533137209;
+						func_88(joaat("JOURNAL_TOWN_SECRET_VAMPMAP_AR"), 0);
+						iVar0 = joaat("JOURNAL_TOWN_SECRET_VAMPMAP_AR");
 					}
 					else
 					{
-						func_88(642612355, 0);
-						iVar0 = 642612355;
+						func_88(joaat("JOURNAL_TOWN_SECRET_VAMPMAP_JN"), 0);
+						iVar0 = joaat("JOURNAL_TOWN_SECRET_VAMPMAP_JN");
 					}
 				}
 			}
@@ -4508,7 +4508,7 @@ int func_86(int iParam0, bool bParam1, int iParam2)
 		switch (iParam0)
 		{
 			case -321841939:
-				return -1099171777;
+				return joaat("JOURNAL_DISC_DREAMCATCHER_MAP_AR");
 			case -1958832660:
 				return joaat("journal_disc_abandoned_church_ar");
 			case 247563739:
@@ -4626,23 +4626,23 @@ int func_86(int iParam0, bool bParam1, int iParam2)
 			case -890175011:
 				if (iParam2 == 0)
 				{
-					return -421616371;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP2_AR");
 				}
 				else if (iParam2 == 1)
 				{
-					return 1136001003;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP1_AR");
 				}
 				else if (iParam2 == 2)
 				{
-					return 345827951;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP5_AR");
 				}
 				else if (iParam2 == 3)
 				{
-					return 1234082698;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP4_AR");
 				}
 				else if (iParam2 == 4)
 				{
-					return -871261476;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP3_AR");
 				}
 				break;
 			case -986176781:
@@ -4656,7 +4656,7 @@ int func_86(int iParam0, bool bParam1, int iParam2)
 		switch (iParam0)
 		{
 			case -321841939:
-				return -1967056269;
+				return joaat("JOURNAL_DISC_DREAMCATCHER_MAP_JN");
 			case -1958832660:
 				return joaat("journal_disc_abandoned_church_jn");
 			case 247563739:
@@ -4800,23 +4800,23 @@ int func_86(int iParam0, bool bParam1, int iParam2)
 			case -890175011:
 				if (iParam2 == 0)
 				{
-					return 1861008860;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP2_JN");
 				}
 				else if (iParam2 == 1)
 				{
-					return 1746563727;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP1_JN");
 				}
 				else if (iParam2 == 2)
 				{
-					return 508009009;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP5_JN");
 				}
 				else if (iParam2 == 3)
 				{
-					return -788581731;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP4_JN");
 				}
 				else if (iParam2 == 4)
 				{
-					return -209526346;
+					return joaat("JOURNAL_TOWN_SECRET_VAMP3_JN");
 				}
 				break;
 			default:

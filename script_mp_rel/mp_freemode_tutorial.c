@@ -2332,7 +2332,7 @@ int func_23(var uParam0, var uParam1, var uParam2)
 			}
 			if (!TASK::_0x841475AC96E794D1(iVar3))
 			{
-				iVar3 = TASK::_0xF533D68FF970D190(func_220(PLAYER::GET_PLAYER_INDEX()), 315567675, 50f, 0, 0);
+				iVar3 = TASK::_0xF533D68FF970D190(func_220(PLAYER::GET_PLAYER_INDEX()), joaat("PROP_CAMP_CRIPPS_SEAT_CHAIR"), 50f, 0, 0);
 			}
 			if (!TASK::_0x841475AC96E794D1(iVar2) || !TASK::_0x841475AC96E794D1(iVar3))
 			{
@@ -9983,33 +9983,33 @@ int func_311(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 195938434 /* GXTEntry: "Assault" */;
+			return joaat("CRIME_ASSAULT");
 		case 1:
-			return -683250308 /* GXTEntry: "Assault" */;
+			return joaat("CRIME_ASSAULT_LAW");
 		case 2:
-			return -16106300 /* GXTEntry: "Unarmed Assault" */;
+			return joaat("CRIME_HIT_AND_RUN");
 		case 3:
-			return 105387183 /* GXTEntry: "Unarmed Assault" */;
+			return joaat("CRIME_HIT_AND_RUN_LAW");
 		case 4:
-			return -2097683294 /* GXTEntry: "Horse Theft" */;
+			return joaat("CRIME_JACK_HORSE");
 		case 5:
-			return 1805131596 /* GXTEntry: "Vehicle Theft" */;
+			return joaat("CRIME_JACK_VEHICLE");
 		case 6:
-			return 481893872 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_LAW_IS_THREATENED");
 		case 7:
-			return -493957506 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_MURDER");
 		case 8:
-			return 1224055398 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_MURDER_ANIMAL");
 		case 9:
-			return -953803399 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_MURDER_HORSE");
 		case 10:
-			return 1171995096 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_TRAMPLE");
 		case 11:
-			return -267442581 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_TRAMPLE_LAW");
 		case 12:
-			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_THREATEN");
 		case 13:
-			return 2140177766 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_THREATEN_LAW");
 		default:
 			break;
 	}

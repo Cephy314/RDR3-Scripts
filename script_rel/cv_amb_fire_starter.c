@@ -3121,7 +3121,7 @@ int func_72(var uParam0)
 		case 13:
 			func_154(uParam0, 1.3582f, -0.1544f, 1.0429f, 180f, 1.115f, 1.115f, 2f, 665633627, -1, 1, 1, 1);
 			iLocal_17 = func_155(uParam0, iLocal_16, "PL_POKE_ACTION", 1);
-			func_156(uParam0, iLocal_14, 2, 2087366558, "WORLD_HUMAN_STAND_WAITING_MALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+			func_156(uParam0, iLocal_14, 2, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_MALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 			break;
 		case 14:
 			switch (func_148(uParam0))
@@ -8351,7 +8351,7 @@ int func_265(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11066,7 +11066,7 @@ int func_372(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_403(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

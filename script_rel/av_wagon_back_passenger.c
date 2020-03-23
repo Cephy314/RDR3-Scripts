@@ -1848,7 +1848,7 @@ int func_30(var uParam0)
 	switch (uParam0->f_489)
 	{
 		case 0:
-			iLocal_96 = 1455795772;
+			iLocal_96 = joaat("WORLD_HUMAN_PEE");
 			break;
 		case 1:
 			iLocal_96 = joaat("WORLD_HUMAN_STERNGUY_IDLES");

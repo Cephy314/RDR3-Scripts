@@ -1303,7 +1303,7 @@ int func_44()
 				fLocal_620 = (fLocal_620 + (5f * BUILTIN::TIMESTEP()));
 				if (fLocal_620 >= 10f)
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), 1343354387, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_DISTURBANCE"), 0, 0, 0, 0, 0, 0, 0);
 					func_12(&uLocal_716, 524288, 1);
 				}
 			}
@@ -2099,7 +2099,7 @@ int func_63()
 	}
 	if (func_164())
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -1521715232, 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 0, 0, -1);
 		return 1;
 	}
 	if (func_43(uLocal_716, 8388608))
@@ -2108,7 +2108,7 @@ int func_63()
 	}
 	if (VEHICLE::_0x2963B5C1637E8A27(&(Local_718.f_1[0 /*22*/])) == Global_35)
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -1521715232, 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 0, 0, -1);
 		return 1;
 	}
 	return 0;
@@ -6174,7 +6174,7 @@ void func_236(int iParam0, var uParam1, var uParam2, int iParam3)
 	}
 	if (PED::IS_PED_SHOOTING(Global_35))
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::GET_PLAYER_INDEX(), 1343354387, 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_DISTURBANCE"), 0, 0, -1);
 		if (!func_125((*uParam2)[19 /*3*/]))
 		{
 			func_81((*uParam2)[19 /*3*/]);
@@ -6243,8 +6243,8 @@ void func_239(int iParam0)
 {
 	if (VOLUME::_DOES_VOLUME_EXIST((Local_718.f_1[iParam0 /*22*/])->f_1) && FIRE::_IS_EXPLOSION_IN_VOLUME(-1, (Local_718.f_1[iParam0 /*22*/])->f_1))
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::GET_PLAYER_INDEX(), -102241052, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::GET_PLAYER_INDEX(), 1420320220, 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_VANDALISM_VEHICLE"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_VEHICLE_DESTRUCTION"), 0, 0, -1);
 		func_174(1);
 		LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), 1685924442, 0, 0, 0, 0, 0, 0, 0);
 		if (!LAW::_0xAD401C63158ACBAA(PLAYER::PLAYER_ID()))
@@ -6559,7 +6559,7 @@ void func_249(int iParam0, int iParam1, int iParam2)
 	if (!TASK::_0x841475AC96E794D1((iParam0->f_310[iParam1 /*14*/])->f_6))
 	{
 		vVar0 = { ENTITY::GET_ENTITY_COORDS(&(iParam0->f_310[iParam1 /*14*/]), true, false) };
-		(iParam0->f_310[iParam1 /*14*/])->f_6 = TASK::_0xF533D68FF970D190(vVar0, 547706868, 4f, 1, 0);
+		(iParam0->f_310[iParam1 /*14*/])->f_6 = TASK::_0xF533D68FF970D190(vVar0, joaat("PROP_VEHICHLE_SEAT_PASSENGER_TRAIN_TG"), 4f, 1, 0);
 	}
 	if (TASK::_0x841475AC96E794D1((iParam0->f_310[iParam1 /*14*/])->f_6))
 	{

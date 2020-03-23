@@ -1164,15 +1164,15 @@ void __EntryFunction__()
 								{
 									if (PED::IS_PED_RAGDOLL(iLocal_1253) && func_59(iLocal_1253, Global_35, 1, 1) < 5f)
 									{
-										LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 1352191066, 0, 0, 0, 0, 0, 0, 0);
-										LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 1352191066, 0, iLocal_1253, 1);
-										LAW::_0xF0B67BAD53C35BD9(iLocal_1253, Global_35, iLocal_1253, Global_36, 1352191066);
+										LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_UNARMED_ASSAULT"), 0, 0, 0, 0, 0, 0, 0);
+										LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_UNARMED_ASSAULT"), 0, iLocal_1253, 1);
+										LAW::_0xF0B67BAD53C35BD9(iLocal_1253, Global_35, iLocal_1253, Global_36, joaat("CRIME_UNARMED_ASSAULT"));
 									}
 									else
 									{
-										LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -683250308, 0, 0, 0, 0, 0, 0, 0);
-										LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), -683250308, 0, iLocal_1253, 1);
-										LAW::_0xF0B67BAD53C35BD9(iLocal_1253, Global_35, iLocal_1253, Global_36, -683250308);
+										LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT_LAW"), 0, 0, 0, 0, 0, 0, 0);
+										LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT_LAW"), 0, iLocal_1253, 1);
+										LAW::_0xF0B67BAD53C35BD9(iLocal_1253, Global_35, iLocal_1253, Global_36, joaat("CRIME_ASSAULT_LAW"));
 									}
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_1290);
 									func_64(1);
@@ -3894,7 +3894,7 @@ int func_66()
 									func_62(iLocal_1253, Global_35, func_61("SHERIFF_AGGRO", 1), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 								}
 								TASK::TASK_POLICE(iLocal_1253, false);
-								LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 2140177766, 0, iLocal_1253, 1);
+								LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_THREATEN_LAW"), 0, iLocal_1253, 1);
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_1253, false);
 								func_263(iLocal_1253, 1088421888 /* Float: 7f */, 0, 0);
 								func_264(&iLocal_1253, Local_1356[1 /*21*/], &Local_1434, 1, 1);
@@ -5014,7 +5014,7 @@ void func_99(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_286(472134900, 0);
+				func_286(joaat("JOURNAL_RANDOM_EVENTS_BEAR_TRAP_JN"), 0);
 			}
 			break;
 		case 1:
@@ -5024,7 +5024,7 @@ void func_99(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_286(-1597139239, 0);
+				func_286(joaat("JOURNAL_RANDOM_EVENTS_DARK_ALLEY_AMBUSH_JN"), 0);
 			}
 			break;
 		case 2:
@@ -5034,7 +5034,7 @@ void func_99(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_286(373866407, 0);
+				func_286(joaat("JOURNAL_RANDOM_EVENTS_DEAD_JOHN_ALT_1_JN"), 0);
 			}
 			break;
 		case 3:
@@ -5044,7 +5044,7 @@ void func_99(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_286(-913163759, 0);
+				func_286(joaat("JOURNAL_RANDOM_EVENTS_DEAD_JOHN_ALT_2_JN"), 0);
 			}
 			break;
 		case 4:
@@ -5054,7 +5054,7 @@ void func_99(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_286(133447149, 0);
+				func_286(joaat("JOURNAL_RANDOM_EVENTS_INBRED_KIDNAP_JN"), 0);
 			}
 			break;
 		default:
@@ -17781,7 +17781,7 @@ int func_449()
 		{
 			if (func_63(Global_35, &(uLocal_1250[0])) && func_67(Global_35, -275.0667f, 797.9517f, 117.9797f, 1) < 23f)
 			{
-				LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -493957506, 0, 0, 0, 0, 0, 0, 0);
+				LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, 0, 0, 0, 0, 0, 0);
 				PED::_0x5AF24CA9C974E51A(&(uLocal_1250[0]), Global_35);
 				func_39(&iLocal_1168, 2048);
 			}
@@ -17789,11 +17789,11 @@ int func_449()
 			{
 				if (func_43(&(uLocal_1250[1]), 0, 0))
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -1728509733, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_KIDNAPPING"), 0, 0, 0, 0, 0, 0, 0);
 				}
 				else
 				{
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -493957506, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, 0, 0, 0, 0, 0, 0);
 				}
 				PED::_0x5AF24CA9C974E51A(&(uLocal_1250[0]), Global_35);
 				func_39(&iLocal_1168, 2048);
@@ -18265,8 +18265,8 @@ int func_449()
 							fLocal_1191 = 3f;
 							break;
 						case 1:
-							LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -493957506, 0, 0, 0, 0, 0, 0, 0);
-							LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), -493957506, 0, &(uLocal_1250[0]), 1);
+							LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, 0, 0, 0, 0, 0, 0);
+							LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, &(uLocal_1250[0]), 1);
 							func_62(iLocal_1253, Global_35, func_61("NOTHING_TO_REPORT_AGGRO", 1), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 							func_302(iLocal_1469, 0, 1, 0, 0);
 							iLocal_1185++;
@@ -19037,13 +19037,13 @@ void func_471()
 					TASK::TASK_REACT(&(iVar1[iVar45]), Global_35, 0f, 0f, 0f, "DEFAULT_SCARED", 2f, 20f, 4);
 					iVar34 = 1;
 					func_447(&(iVar1[iVar45]), "GET_THE_LAW", joaat("speech_params_force_shouted"), Global_35, 1, 0, 0, 1);
-					LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar45]), Global_35, &(uLocal_1250[0]), vVar35, -493957506);
+					LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar45]), Global_35, &(uLocal_1250[0]), vVar35, joaat("CRIME_MURDER"));
 					PED::_0x5AF24CA9C974E51A(&(uLocal_1250[0]), Global_35);
 					func_89(&iLocal_1169);
 					PED::SET_PED_CONFIG_FLAG(&(uLocal_1250[0]), 243, false);
 					PED::SET_PED_CONFIG_FLAG(&(uLocal_1250[0]), 113, false);
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -493957506, 0, 0, 0, 0, 0, 0, 0);
-					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), -493957506, 0, &(uLocal_1250[0]), 1);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, &(uLocal_1250[0]), 1);
 					iLocal_1211 = 1;
 					return;
 				}
@@ -19133,8 +19133,8 @@ void func_471()
 							PED::_0xEEED8FAFEC331A70(&(iVar1[iVar45]), Global_36, 1);
 							iVar34 = 1;
 							func_447(&(iVar1[iVar45]), "GET_THE_LAW", 1808677283, Global_35, 1, 0, 0, 1);
-							LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), -493957506, &(iVar1[iVar45]));
-							LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar45]), Global_35, &(uLocal_1250[0]), vVar35, -493957506);
+							LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), &(iVar1[iVar45]));
+							LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar45]), Global_35, &(uLocal_1250[0]), vVar35, joaat("CRIME_MURDER"));
 							PED::SET_PED_KEEP_TASK(&(iVar1[iVar45]), true);
 							iLocal_1211 = 1;
 							PED::_0x5AF24CA9C974E51A(&(uLocal_1250[0]), Global_35);
@@ -32945,17 +32945,17 @@ int func_926()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_946())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -32968,17 +32968,17 @@ int func_927()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_946())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -32991,17 +32991,17 @@ int func_928()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_946())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -33014,17 +33014,17 @@ int func_929()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_946())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

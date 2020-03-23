@@ -7217,7 +7217,7 @@ void func_197()
 			bLocal_210 = true;
 			return;
 		}
-		LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -493957506, 0, 75f, 100f, 0, 0, 0, 0);
+		LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_MURDER"), 0, 75f, 100f, 0, 0, 0, 0);
 		PED::SET_PED_CONFIG_FLAG(&(uLocal_178[0]), 6, true);
 		bLocal_209 = true;
 		return;
@@ -7226,7 +7226,7 @@ void func_197()
 	{
 		if (Global_1935630->f_44 != joaat("WEAPON_UNARMED"))
 		{
-			LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 195938434, 0, 75f, 100f, 0, 0, 0, 0);
+			LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT"), 0, 75f, 100f, 0, 0, 0, 0);
 			PED::SET_PED_CONFIG_FLAG(&(uLocal_178[0]), 6, true);
 			bLocal_209 = true;
 			return;
@@ -7234,7 +7234,7 @@ void func_197()
 	}
 	if (func_181(&(uLocal_178[0]), 1, 1, Global_1935630->f_44 != joaat("WEAPON_UNARMED"), 0, 0))
 	{
-		LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -1810065318, 0, 75f, 100f, 0, 0, 0, 0);
+		LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_THREATEN"), 0, 75f, 100f, 0, 0, 0, 0);
 		PED::SET_PED_CONFIG_FLAG(&(uLocal_178[0]), 6, true);
 		bLocal_209 = true;
 		return;
@@ -27136,7 +27136,7 @@ int func_886(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

@@ -3115,7 +3115,7 @@ int func_72(var uParam0)
 	iLocal_16 = func_153(uParam0, "script@vignette@pearson_5@action_b", 0, 0, 0, 1);
 	iLocal_17 = func_153(uParam0, "script@vignette@pearson_5@exit_to_base", 0, 0, 0, 0);
 	func_154(uParam0, "CPRS5AU");
-	func_155(uParam0, iLocal_14, 4, 587350641, "WORLD_HUMAN_BUTCHER_RABBIT_MALE_A_RABBIT_CHOP", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_155(uParam0, iLocal_14, 4, joaat("WORLD_HUMAN_BUTCHER_RABBIT"), "WORLD_HUMAN_BUTCHER_RABBIT_MALE_A_RABBIT_CHOP", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_156(uParam0, iLocal_14, 4, 1);
 	func_157(uParam0, iLocal_14, iLocal_18, "RABBIT", 0, 0);
 	func_157(uParam0, iLocal_14, iLocal_19, "KNIFE", 0, 0);
@@ -3325,7 +3325,7 @@ int func_85(var uParam0)
 
 int func_86(var uParam0)
 {
-	uLocal_30 = STREAMING::_0xB223249B7798EEED(func_48(uParam0, iLocal_14), 587350641, 262145, joaat("WORLD_HUMAN_BUTCHER_RABBIT_MALE_A_RABBIT_CHOP"));
+	uLocal_30 = STREAMING::_0xB223249B7798EEED(func_48(uParam0, iLocal_14), joaat("WORLD_HUMAN_BUTCHER_RABBIT"), 262145, joaat("WORLD_HUMAN_BUTCHER_RABBIT_MALE_A_RABBIT_CHOP"));
 	return 1;
 }
 
@@ -9272,7 +9272,7 @@ int func_274(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -12068,7 +12068,7 @@ int func_385(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_416(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

@@ -3115,14 +3115,14 @@ int func_72(var uParam0)
 	iLocal_20 = func_153(uParam0, "script@vignette@bill_11@action_a_int_left", 2, 0, 0, 1);
 	iLocal_21 = func_153(uParam0, "script@vignette@bill_11@action_b", 0, 0, 0, 0);
 	func_154(uParam0, "CBL11AU");
-	func_155(uParam0, iLocal_14, 3, joaat("world_human_drinking"), "WORLD_HUMAN_STAND_DRINK_MALE_A", -1, 1);
+	func_155(uParam0, iLocal_14, 3, joaat("WORLD_HUMAN_DRINKING"), "WORLD_HUMAN_STAND_DRINK_MALE_A", -1, 1);
 	func_156(uParam0, iLocal_14, 3, joaat("WORLD_HUMAN_LEAN_WALL_LEFT"), "WORLD_HUMAN_LEAN_WALL_LEFT_DRINKING_MALE_A", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_157(uParam0, iLocal_14, 3, 0);
 	func_158(uParam0, iLocal_14, iLocal_16, "p_bottleBeer01x_PH_R_HAND", 0, 0);
 	func_155(uParam0, iLocal_15, 3, joaat("WORLD_HUMAN_LEAN_BACK_WALL_DRINKING"), "WORLD_HUMAN_LEAN_WALL_DRINKING_MALE_B", -1, 1);
-	func_156(uParam0, iLocal_15, 2, joaat("world_human_drinking"), "WORLD_HUMAN_STAND_DRINK_MALE_B", -1, 1, 10f, 1065353216 /* Float: 1f */, 1);
+	func_156(uParam0, iLocal_15, 2, joaat("WORLD_HUMAN_DRINKING"), "WORLD_HUMAN_STAND_DRINK_MALE_B", -1, 1, 10f, 1065353216 /* Float: 1f */, 1);
 	func_158(uParam0, iLocal_15, iLocal_17, "p_bottleBeer01x_PH_R_HAND", 0, 0);
-	STREAMING::_0x19A6BE7D9C6884D3(joaat("world_human_drinking"), 1, 0, 0);
+	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_DRINKING"), 1, 0, 0);
 	Local_22 = { func_159(uParam0, 1.1f, 0.665f, 1.07f, 159f, 6.5f, 0.2275f, 0.64f) };
 	Local_32 = { func_159(uParam0, 1.1f, 0.665f, 1.07f, -92f, 6.5f, 0.0875f, 0.985f) };
 	if (func_160(0))
@@ -9290,7 +9290,7 @@ int func_276(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -12106,7 +12106,7 @@ int func_388(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_420(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

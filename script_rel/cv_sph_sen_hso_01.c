@@ -3476,7 +3476,7 @@ int func_93(var uParam0)
 	{
 		if (func_203(uParam0, iLocal_14, 0.32f))
 		{
-			iLocal_67 = TASK::CREATE_SCENARIO_POINT(2087366558, -145.589f, -32.978f, 94.615f, 30.935f, 0f, 0, 0);
+			iLocal_67 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_STAND_WAITING"), -145.589f, -32.978f, 94.615f, 30.935f, 0f, 0, 0);
 			TASK::_0x5AF19B6CC2115D34(iLocal_67, 23, 1);
 			TASK::_0x5AF19B6CC2115D34(iLocal_67, 25, 1);
 			if (TASK::_0x841475AC96E794D1(iLocal_67))
@@ -3490,7 +3490,7 @@ int func_93(var uParam0)
 	{
 		if (func_203(uParam0, iLocal_14, 0.36f))
 		{
-			iLocal_68 = TASK::CREATE_SCENARIO_POINT(joaat("world_human_drinking"), -141.786f, -30.653f, 94.884f, 64.46f, 0f, 0, 0);
+			iLocal_68 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_DRINKING"), -141.786f, -30.653f, 94.884f, 64.46f, 0f, 0, 0);
 			TASK::_0x5AF19B6CC2115D34(iLocal_68, 23, 1);
 			TASK::_0x5AF19B6CC2115D34(iLocal_68, 25, 1);
 			if (TASK::_0x841475AC96E794D1(iLocal_68))
@@ -8646,7 +8646,7 @@ int func_278(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -10509,7 +10509,7 @@ int func_359(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_397(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

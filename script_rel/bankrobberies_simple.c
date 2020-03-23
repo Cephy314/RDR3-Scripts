@@ -1290,7 +1290,7 @@ void func_56(var uParam0, int iParam1, int iParam2)
 	if (!func_8(&(uParam0->f_102), 2))
 	{
 		func_96(1);
-		LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 1780145725, 0, iParam2, iParam2, 0, iParam1, iParam1, 0);
+		LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_BANK_ROBBERY"), 0, iParam2, iParam2, 0, iParam1, iParam1, 0);
 		func_51(&(uParam0->f_102), 2);
 	}
 }

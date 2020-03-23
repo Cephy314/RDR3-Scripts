@@ -1034,7 +1034,7 @@ void func_25()
 void func_26(int iParam0, bool bParam1)
 {
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_392[1]), 6, bParam1);
-	LAW::_0xFFEBE5AA96BC2E4E(&(uLocal_392[1]), -1728509733, iParam0);
+	LAW::_0xFFEBE5AA96BC2E4E(&(uLocal_392[1]), joaat("CRIME_KIDNAPPING"), iParam0);
 }
 
 void func_27()
@@ -5208,7 +5208,7 @@ void func_152()
 			if (func_315())
 			{
 				func_97(&(uLocal_392[1]), 1);
-				LAW::_0xF0B67BAD53C35BD9(&(uLocal_392[1]), Global_35, &(uLocal_392[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), -1728509733);
+				LAW::_0xF0B67BAD53C35BD9(&(uLocal_392[1]), Global_35, &(uLocal_392[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_KIDNAPPING"));
 				func_26(0, 0);
 				bLocal_503 = true;
 				bLocal_488 = true;

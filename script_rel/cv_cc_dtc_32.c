@@ -3477,7 +3477,7 @@ int func_79(var uParam0)
 	func_169(uParam0, iLocal_15);
 	if (!func_159(14))
 	{
-		func_168(uParam0, iLocal_16, 3, 2087366558, "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 0);
+		func_168(uParam0, iLocal_16, 3, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 0);
 		func_170(uParam0, iLocal_16, vLocal_47, fLocal_50, 1, 0);
 	}
 	func_171(uParam0, iLocal_16, 1);
@@ -3491,7 +3491,7 @@ int func_79(var uParam0)
 		func_175(uParam0, iLocal_14, -1f);
 		func_176(uParam0, iLocal_15, 4);
 		func_174(uParam0, iLocal_15, 1);
-		func_168(uParam0, iLocal_16, 4, 2087366558, "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
+		func_168(uParam0, iLocal_16, 4, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
 		func_170(uParam0, iLocal_16, vLocal_47, 0, 0, 0);
 		func_174(uParam0, iLocal_16, 1);
 		func_177(uParam0, 1);
@@ -9016,7 +9016,7 @@ int func_297(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -12723,7 +12723,7 @@ int func_455(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_486(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

@@ -6847,7 +6847,7 @@ void func_234(var uParam0)
 			Var8.f_3 = { Global_35 };
 			Var8.f_6 = func_378();
 			Var8.f_9 = 1;
-			Var8.f_2 = -1810065318; /* GXTEntry: "Disturbing the Peace" */
+			Var8.f_2 = joaat("CRIME_THREATEN");
 			Var8.f_1 = &uVar2[iVar1];
 			Var8.f_8 = 1;
 			Var8.f_7 = 1000;

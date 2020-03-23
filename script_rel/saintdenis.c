@@ -4345,7 +4345,7 @@ void func_120()
 
 void func_121()
 {
-	func_281(&uLocal_759, &uLocal_761, &uLocal_760, 2753.91f, -1396.01f, 45.21f, joaat("ui_note_trolley_digest"), -712193496 /* GXTEntry: "Saint Denis Trolley Rider\'s Digest" */, joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_Paper_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"));
+	func_281(&uLocal_759, &uLocal_761, &uLocal_760, 2753.91f, -1396.01f, 45.21f, joaat("ui_note_trolley_digest"), -712193496 /* GXTEntry: "Saint Denis Trolley Rider\'s Digest" */, joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_PAPER_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"));
 }
 
 void func_122(var uParam0)
@@ -13732,7 +13732,7 @@ int func_420(var uParam0)
 				{
 					if (!PED::IS_PED_A_PLAYER(bVar1))
 					{
-						if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bVar1, 0) && !((TASK::_0x2D0571BB55879DA2(bVar1) == joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING") || TASK::_0x2D0571BB55879DA2(bVar1) == joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS")) || TASK::_0x2D0571BB55879DA2(bVar1) == 798764373))
+						if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bVar1, 0) && !((TASK::_0x2D0571BB55879DA2(bVar1) == joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING") || TASK::_0x2D0571BB55879DA2(bVar1) == joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS")) || TASK::_0x2D0571BB55879DA2(bVar1) == joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK")))
 						{
 							if (uParam0->f_1 != bVar1)
 							{

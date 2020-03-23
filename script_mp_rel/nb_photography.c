@@ -7951,7 +7951,7 @@ int func_315(int iParam0)
 				case 0:
 					return joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 				case 1:
-					return 2087366558;
+					return joaat("WORLD_HUMAN_STAND_WAITING");
 				case 2:
 					return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 				case 3:
@@ -7969,7 +7969,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 						case 3:
@@ -7986,7 +7986,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 						case 3:
@@ -8008,7 +8008,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 						case 3:
@@ -8025,7 +8025,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 						case 3:
@@ -8047,7 +8047,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 						case 3:
@@ -8064,7 +8064,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 						case 3:
@@ -8086,7 +8086,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 						case 3:
@@ -8103,7 +8103,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 						case 3:
@@ -8125,7 +8125,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_WAITING_IMPATIENT");
 						case 3:
@@ -8142,7 +8142,7 @@ int func_315(int iParam0)
 						case 0:
 							return joaat("WORLD_HUMAN_CROUCH_INSPECT");
 						case 1:
-							return 2087366558;
+							return joaat("WORLD_HUMAN_STAND_WAITING");
 						case 2:
 							return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 						case 3:
@@ -16615,7 +16615,7 @@ void func_625(int iParam0, int iParam1)
 						func_435(1);
 						func_646(1);
 						func_821();
-						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, -822629770, 1, 1, 0, 0);
+						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, joaat("KIT_EMOTE_REACTION_NOD_HEAD_1"), 1, 1, 0, 0);
 						break;
 					case 1:
 						func_820(0, 1);
@@ -16623,7 +16623,7 @@ void func_625(int iParam0, int iParam1)
 						func_646(2);
 						func_435(8192);
 						func_821();
-						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, -653113914, 1, 1, 0, 0);
+						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, joaat("KIT_EMOTE_REACTION_SHAKEHEAD_1"), 1, 1, 0, 0);
 						break;
 				}
 			}
@@ -16639,7 +16639,7 @@ void func_625(int iParam0, int iParam1)
 						func_435(1);
 						func_646(1);
 						func_821();
-						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, -822629770, 1, 1, 0, 0);
+						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, joaat("KIT_EMOTE_REACTION_NOD_HEAD_1"), 1, 1, 0, 0);
 						break;
 					case 1:
 						func_820(0, 1);
@@ -16647,7 +16647,7 @@ void func_625(int iParam0, int iParam1)
 						func_646(2);
 						func_435(8192);
 						func_821();
-						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, -653113914, 1, 1, 0, 0);
+						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, joaat("KIT_EMOTE_REACTION_SHAKEHEAD_1"), 1, 1, 0, 0);
 						break;
 				}
 			}
@@ -16662,7 +16662,7 @@ void func_625(int iParam0, int iParam1)
 						func_435(4096);
 						func_435(8);
 						func_821();
-						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, -653113914, 1, 1, 0, 0);
+						TASK::_TASK_EMOTE_2(PLAYER::PLAYER_PED_ID(), 0, 0, joaat("KIT_EMOTE_REACTION_SHAKEHEAD_1"), 1, 1, 0, 0);
 						break;
 					case 1:
 						func_820(0, 1);

@@ -15537,155 +15537,155 @@ int func_405(int iParam0, int iParam1)
 		switch (iParam0)
 		{
 			case 0:
-				return 849202820;
+				return joaat("EA_HUMAN_FIRE_GEN");
 			case 1:
-				return 1130042714;
+				return joaat("EA_HUMAN_FIRE_GEN_NO_DRINKING");
 			case 2:
-				return 2063166885;
+				return joaat("EA_HUMAN_FIRE_GEN_STAND");
 			case 3:
-				return 1527247467;
+				return joaat("PROP_CAMP_BUTCHER");
 			case 4:
-				return 1560986346;
+				return joaat("PROP_CAMP_MEAT_BOWL");
 			case 5:
-				return -1653592878;
+				return joaat("PROP_CAMP_SEAT_CAMPFIRE_MALES");
 			case 6:
-				return -176659585;
+				return joaat("PROP_CAMP_SEAT_FIRE_GENERIC");
 			case 7:
-				return 584120617;
+				return joaat("PROP_CAMP_SEAT_STOOL_CAMPFIRE_PED_PLAYER");
 			case 8:
-				return 937156954;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_SEWING_AND_KNITTING");
 			case 9:
-				return 400573623;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_THEATER");
 			case 10:
-				return 1335266787;
+				return joaat("PROP_HUMAN_WEAPON_DBSHOTGUN_PICKUP");
 			case 11:
-				return -237703933;
+				return joaat("PROP_HUMAN_WEAPON_DBSHOTGUN_PICKUP_WORN");
 			case 12:
-				return -1816442556;
+				return joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			case 13:
-				return -282082536;
+				return joaat("PROP_PLAYER_CASH_REGISTER");
 			case 14:
-				return 547706868;
+				return joaat("PROP_VEHICHLE_SEAT_PASSENGER_TRAIN_TG");
 			case 15:
-				return 130896250;
+				return joaat("PROP_VEHICHLE_SEAT_PASSENGER_TRAM");
 			case 16:
-				return -2096216496;
+				return joaat("PROP_VEHICLE_SEAT_PASSENGER_TRAIN_DINING");
 			case 17:
-				return -1081569269;
+				return joaat("PROP_VEHICLE_SEAT_PASSENGER_TRAIN_TABLE");
 			case 18:
-				return 1072218079;
+				return joaat("PROP_VEHICLE_WAGON_BALE_LOAD_UNLOAD_1");
 			case 19:
-				return 1313561764;
+				return joaat("PROP_VEHICLE_WAGON_BALE_LOAD_UNLOAD_2");
 			case 20:
-				return 883305447;
+				return joaat("PROP_VEHICLE_WAGON_BOX_LOAD_UNLOAD_1");
 			case 21:
-				return -55559172;
+				return joaat("PROP_VEHICLE_WAGON_BOX_LOAD_UNLOAD_2");
 			case 22:
-				return 404165073;
+				return joaat("WORLD_ANIMALS_SKUNK_GENERIC");
 			case 23:
-				return 2025402643;
+				return joaat("WORLD_CAMP_VIG_EXIT_TG");
 			case 24:
-				return 2049655359;
+				return joaat("WORLD_CAMP_VIG_GRIEF_COOLDOWN_TG");
 			case 25:
-				return -1792023725;
+				return joaat("WORLD_HUMAN_BANJO_PICKUP_PUTDOWN");
 			case 26:
-				return 1214079771;
+				return joaat("WORLD_HUMAN_BANJO_PICKUP_PUTDOWN_W_PROP");
 			case 27:
-				return 471494260;
+				return joaat("WORLD_HUMAN_BOOK_PICKUP_PUTDOWN_GROUND");
 			case 28:
-				return 314866166;
+				return joaat("WORLD_HUMAN_BOOK_TABLE_PICKUP_PUTDOWN");
 			case 29:
-				return 85645232;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_TYPEGROUP");
 			case 30:
-				return -1629386876;
+				return joaat("WORLD_HUMAN_BROOM_PICKUP_PUTDOWN");
 			case 31:
-				return -200351791;
+				return joaat("WORLD_HUMAN_BUCKET_PICKUP_PUTDOWN_EMPTY");
 			case 32:
-				return 1340532149;
+				return joaat("WORLD_HUMAN_CAULDRON");
 			case 33:
-				return -1932609172;
+				return joaat("WORLD_HUMAN_CAULDRON_ALWAYS");
 			case 34:
-				return 1389646789;
+				return joaat("WORLD_HUMAN_CAULDRON_NO_POT");
 			case 35:
-				return 1886274212;
+				return joaat("WORLD_HUMAN_CHAMBERPOT_PICKUP_PUTDOWN");
 			case 36:
-				return 1643502645;
+				return joaat("WORLD_HUMAN_CLIPBOARD_PICKUP_PUTDOWN");
 			case 37:
-				return 413447831;
+				return joaat("WORLD_HUMAN_CONCERTINA_PICKUP_PUTDOWN");
 			case 38:
-				return -1418815802;
+				return joaat("WORLD_HUMAN_FEEDBAG_PICKUP_PUTDOWN");
 			case 39:
-				return -1883312554;
+				return joaat("WORLD_HUMAN_FIDDLE_PICKUP_PUTDOWN");
 			case 40:
-				return -144572502;
+				return joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE");
 			case 41:
-				return 1829237609;
+				return joaat("WORLD_HUMAN_FIRE_GEN");
 			case 42:
-				return -1525722581;
+				return joaat("WORLD_HUMAN_FIRE_GEN_COLD");
 			case 43:
-				return 506509745;
+				return joaat("WORLD_HUMAN_FIRE_GEN_NO_DRINKING");
 			case 44:
-				return -1347867475;
+				return joaat("WORLD_HUMAN_FIRE_GEN_SIT");
 			case 45:
-				return -1409306813;
+				return joaat("WORLD_HUMAN_FIRE_GEN_SIT_COLD");
 			case 46:
-				return 1835937517;
+				return joaat("WORLD_HUMAN_FIRE_GEN_STAND");
 			case 47:
-				return -1396922479;
+				return joaat("WORLD_HUMAN_FIRE_GEN_STAND_COLD");
 			case 48:
-				return -1841370788;
+				return joaat("WORLD_HUMAN_FISHING_POLE_PICKUP_PUTDOWN");
 			case 49:
-				return -213531707;
+				return joaat("WORLD_HUMAN_GEN");
 			case 50:
-				return 90588400;
+				return joaat("WORLD_HUMAN_GEN_SIT");
 			case 51:
-				return 1095722412;
+				return joaat("WORLD_HUMAN_GEN_STAND");
 			case 52:
-				return 372305278;
+				return joaat("WORLD_HUMAN_GUITAR_PICKUP_PUTDOWN");
 			case 53:
-				return 1870191418;
+				return joaat("WORLD_HUMAN_LEAN_RAILING_ALL");
 			case 54:
-				return 877120560;
+				return joaat("WORLD_HUMAN_MANDOLIN_PICKUP_PUTDOWN");
 			case 55:
-				return -1355241909;
+				return joaat("WORLD_HUMAN_NEWSPAPER_PICKUP_PUTDOWN");
 			case 56:
-				return 2095574409;
+				return joaat("WORLD_HUMAN_PITCH_FORK_PICKUP_PUTDOWN");
 			case 57:
-				return -1548237173;
+				return joaat("WORLD_HUMAN_PUSH_BROOM_PICKUP_PUTDOWN");
 			case 58:
-				return 2071763047;
+				return joaat("WORLD_HUMAN_RAKE_PICKUP_PUTDOWN");
 			case 59:
-				return -1096266146;
+				return joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN");
 			case 60:
-				return -2094129423;
+				return joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_CC");
 			case 61:
-				return 1254697099;
+				return joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_CC_W_PROP");
 			case 62:
-				return 691151;
+				return joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_W_PROP");
 			case 63:
-				return 972453409;
+				return joaat("WORLD_HUMAN_SADDLE_PICKUP_PUTDOWN_GROUND");
 			case 64:
-				return 1808684880;
+				return joaat("WORLD_HUMAN_SADDLE_PICKUP_PUTDOWN_STAND");
 			case 65:
-				return -1056975587;
+				return joaat("WORLD_HUMAN_SHOVEL_PICKUP_PUTDOWN");
 			case 66:
-				return -1939629183;
+				return joaat("WORLD_HUMAN_SKETCHBOOK_PICKUP_PUTDOWN_GROUND");
 			case 67:
-				return 667326736;
+				return joaat("WORLD_HUMAN_STAND_GEN_MORNING");
 			case 68:
-				return -698660926;
+				return joaat("WORLD_HUMAN_STAND_GEN_NIGHT");
 			case 69:
-				return -1061631858;
+				return joaat("WORLD_HUMAN_STAND_GEN_NIGHT_SALOON");
 			case 70:
-				return 43731727;
+				return joaat("WORLD_HUMAN_TRUMPET_PICKUP_PUTDOWN");
 			case 71:
-				return -1478204157;
+				return joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_PUTDOWN");
 			case 72:
-				return -370551611;
+				return joaat("WORLD_PLAYER_SIT_GROUND_GENERIC");
 			case 73:
-				return 315567675;
+				return joaat("PROP_CAMP_CRIPPS_SEAT_CHAIR");
 			case 74:
-				return 1579036847;
+				return joaat("WORLD_ANIMAL_DOG_PLAYER_TENT_TG");
 			case 75:
 				return joaat("CC_PROP_CAMP_FIRE_SEATED_DRINKING");
 			case 76:
@@ -15971,7 +15971,7 @@ int func_405(int iParam0, int iParam1)
 			case 216:
 				return joaat("WORLD_HUMAN_NEWSPAPER_PUTDOWN");
 			case 217:
-				return 1455795772;
+				return joaat("WORLD_HUMAN_PEE");
 			case 218:
 				return joaat("WORLD_HUMAN_POCKET_MIRROR");
 			case 219:
@@ -15985,7 +15985,7 @@ int func_405(int iParam0, int iParam1)
 			case 223:
 				return joaat("WORLD_HUMAN_SEAT_LEDGE_JAW_HARP");
 			case 224:
-				return -1982207864;
+				return joaat("WORLD_HUMAN_SHOP_BROWSE");
 			case 225:
 				return joaat("WORLD_HUMAN_SHOP_BROWSE_COUNTER");
 			case 226:
@@ -15995,9 +15995,9 @@ int func_405(int iParam0, int iParam1)
 			case 228:
 				return joaat("WORLD_HUMAN_SIT_GUITAR_UPBEAT");
 			case 229:
-				return 2087366558;
+				return joaat("WORLD_HUMAN_STAND_WAITING");
 			case 230:
-				return 830847823;
+				return joaat("WORLD_HUMAN_STARE_STOIC");
 			case 231:
 				return joaat("WORLD_HUMAN_TRUMPET");
 			case 232:
@@ -16211,7 +16211,7 @@ int func_405(int iParam0, int iParam1)
 			case 336:
 				return joaat("WORLD_HUMAN_DRINK_PUT_DOWN_TABLE");
 			case 337:
-				return joaat("world_human_drinking");
+				return joaat("WORLD_HUMAN_DRINKING");
 			case 338:
 				return joaat("WORLD_HUMAN_DRINKING_DRUNK");
 			case 339:
@@ -16295,7 +16295,7 @@ int func_405(int iParam0, int iParam1)
 			case 378:
 				return joaat("WORLD_HUMAN_SEAT_LEDGE_NEW");
 			case 379:
-				return joaat("world_human_seat_steps");
+				return joaat("WORLD_HUMAN_SEAT_STEPS");
 			case 380:
 				return joaat("WORLD_HUMAN_SIT_BACK_EXHAUSTED");
 			case 381:
@@ -16379,7 +16379,7 @@ int func_405(int iParam0, int iParam1)
 			case 420:
 				return -1811487294;
 			case 421:
-				return joaat("world_human_seat_ledge");
+				return joaat("WORLD_HUMAN_SEAT_LEDGE");
 			case 422:
 				return joaat("MP_LOBBY_WORLD_HUMAN_CROUCH_INSPECT");
 			case 423:
@@ -16565,7 +16565,7 @@ int func_405(int iParam0, int iParam1)
 			case 513:
 				return joaat("WORLD_HUMAN_CLEAN_WINDOW");
 			case 514:
-				return joaat("world_human_clipboard");
+				return joaat("WORLD_HUMAN_CLIPBOARD");
 			case 515:
 				return joaat("WORLD_HUMAN_COAL_SACK_OUT_CART_TARP");
 			case 516:
@@ -16751,7 +16751,7 @@ int func_405(int iParam0, int iParam1)
 			case 606:
 				return joaat("WORLD_HUMAN_SLING_PUT_DOWN_EMPTY");
 			case 607:
-				return joaat("world_human_stand_fishing");
+				return joaat("WORLD_HUMAN_STAND_FISHING");
 			case 608:
 				return joaat("WORLD_HUMAN_STRAW_BROOM_RESTING");
 			case 609:
@@ -17845,17 +17845,17 @@ int func_405(int iParam0, int iParam1)
 			case 1147:
 				return 2121421811;
 			case 1148:
-				return joaat("world_vehicle_attractor");
+				return joaat("WORLD_VEHICLE_ATTRACTOR");
 			case 1149:
-				return joaat("world_vehicle_drive_passengers");
+				return joaat("WORLD_VEHICLE_DRIVE_PASSENGERS");
 			case 1150:
 				return -92474507;
 			case 1151:
-				return joaat("world_vehicle_drive_solo");
+				return joaat("WORLD_VEHICLE_DRIVE_SOLO");
 			case 1152:
 				return 5441196;
 			case 1153:
-				return joaat("world_vehicle_empty");
+				return joaat("WORLD_VEHICLE_EMPTY");
 			case 1154:
 				return -699710953;
 			case 1155:
@@ -18437,9 +18437,9 @@ int func_405(int iParam0, int iParam1)
 			case 1443:
 				return 325463335;
 			case 1444:
-				return -1880549997;
+				return joaat("PROP_PLAYER_CASH_REGISTER_LOCKBREAK");
 			case 1445:
-				return -319279711;
+				return joaat("PROP_PLAYER_CASH_REGISTER_OPEN");
 			case 1446:
 				return 1786059572;
 			case 1447:
@@ -18516,9 +18516,9 @@ int func_405(int iParam0, int iParam1)
 				return joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4");
 				return joaat("WORLD_PLAYER_CAMP_FIRE_SIT");
 				return joaat("WORLD_PLAYER_CAMP_FIRE_SQUAT");
-				return joaat("WORLD_PLAYER_CARCASS_CUT_1m80");
-				return joaat("WORLD_PLAYER_CARCASS_CUT_2m15");
-				return joaat("WORLD_PLAYER_CARCASS_PEG_2m15");
+				return joaat("WORLD_PLAYER_CARCASS_CUT_1M80");
+				return joaat("WORLD_PLAYER_CARCASS_CUT_2M15");
+				return joaat("WORLD_PLAYER_CARCASS_PEG_2M15");
 				return joaat("WORLD_PLAYER_CHAMPAGNE_PICKUP_TRAY");
 				return joaat("WORLD_PLAYER_CHORES_BALE_PICKUP_1");
 				return joaat("WORLD_PLAYER_CHORES_BALE_PUT_DOWN_1");
@@ -18546,35 +18546,35 @@ int func_405(int iParam0, int iParam1)
 				return joaat("WORLD_PLAYER_CHORES_VEHICLE_MILKJUG_LOAD");
 				return joaat("WORLD_PLAYER_DRINK_WITCHES_BREW");
 				return joaat("WORLD_PLAYER_DYNAMIC_KNEEL");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_Paper_w15_1_h24_FoldVertical_s_jackDrawing01x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_s_mollyLoveLetter");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x_color");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter09x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_s_jackDrawing01x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_s_mollyLoveLetter");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FV_p_cs_letter03x_color_COMBAT");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_p_cs_letterFolded01x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_p_cs_letterFolded02x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_P_CS_rt_letterL_Dbl");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_w24_h15_1_FoldHorizontal_p_cs_letter03x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_W48_8_H32_2_FoldVerticalHorizontal_s_twofoldmap01x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w10_16_h15_24_p_cs_note01x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w10_16_h15_24_p_cs_oldpaper1889");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w15_24_h10_16_p_cs_note01x");
-				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w15_24_h10_16_p_cs_note01x_COMBAT");
-				return joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_Paper_W11_5_H20_5_S_INV_PAMPPOTHORSE01X");
-				return joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W12_7_H17_78_p_cs_photo_5x7");
-				return joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W17_78_h12_7_p_cs_photoR_5X7");
-				return joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_Paper_W12_7_h17_78_p_cs_photo_5x7");
-				return joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_Paper_W17_78_h12_7_p_cs_photoR_5x7");
-				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_H48_2_Fold_vh_CHAINGANG");
-				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedalive01x");
-				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT");
-				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_P_SI_WANTED_JAVIER01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_S_JACKDRAWING01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X_COLOR");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER09X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_S_JACKDRAWING01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FV_P_CS_LETTER03X_COLOR_COMBAT");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED02X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_RT_LETTERL_DBL");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W24_H15_1_FOLDHORIZONTAL_P_CS_LETTER03X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W48_8_H32_2_FOLDVERTICALHORIZONTAL_S_TWOFOLDMAP01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_NOTE01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_OLDPAPER1889");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W15_24_H10_16_P_CS_NOTE01X");
+				return joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W15_24_H10_16_P_CS_NOTE01X_COMBAT");
+				return joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_PAPER_W11_5_H20_5_S_INV_PAMPPOTHORSE01X");
+				return joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W12_7_H17_78_P_CS_PHOTO_5X7");
+				return joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W17_78_H12_7_P_CS_PHOTOR_5X7");
+				return joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_PAPER_W12_7_H17_78_P_CS_PHOTO_5X7");
+				return joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_PAPER_W17_78_H12_7_P_CS_PHOTOR_5X7");
+				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_CHAINGANG");
+				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X");
+				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT");
+				return joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_SI_WANTED_JAVIER01X");
 				return joaat("WORLD_PLAYER_INSPECT_SLAVE_CATCHER_LETTER");
 				return joaat("WORLD_PLAYER_KNOCK_DOOR");
 				return joaat("WORLD_PLAYER_PEEK_WINDOW");
@@ -20030,7 +20030,7 @@ int func_405(int iParam0, int iParam1)
 					case 2496:
 						return 2024871051;
 					case 2497:
-						return 573563343;
+						return joaat("SC_CAMP_VIG_PEARSON_CALLOVER");
 					case 2498:
 						return 196070706;
 					case 2499:
@@ -20070,7 +20070,7 @@ int func_405(int iParam0, int iParam1)
 					case 2516:
 						return -129020802;
 					case 2517:
-						return 1939042559;
+						return joaat("PROP_HUMAN_BUTCHER_DEER");
 					case 2518:
 						return 583581589;
 					case 2519:
@@ -20078,13 +20078,13 @@ int func_405(int iParam0, int iParam1)
 					case 2520:
 						return -1197296696;
 					case 2521:
-						return 1993269755;
+						return joaat("PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE");
 					case 2522:
-						return -473529865;
+						return joaat("PROP_HUMAN_SEAT_CHAIR_SMOKE_ROLL");
 					case 2523:
-						return 798764373;
+						return joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK");
 					case 2524:
-						return -1322841316;
+						return joaat("PROP_HUMAN_WOOD_CHOP");
 					case 2525:
 						return 597682689;
 					case 2526:
@@ -20100,7 +20100,7 @@ int func_405(int iParam0, int iParam1)
 					case 2531:
 						return -1208105393;
 					case 2532:
-						return 587350641;
+						return joaat("WORLD_HUMAN_BUTCHER_RABBIT");
 					case 2533:
 						return 587729686;
 					case 2534:
@@ -34772,7 +34772,7 @@ int func_954(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

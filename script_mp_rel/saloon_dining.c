@@ -2255,7 +2255,7 @@ int func_5(var uParam0, var uParam1)
 				uParam0->f_226 = 0;
 				func_41(&(uParam0->f_22), 1, 1);
 				PED::SET_PED_CONFIG_FLAG(uParam0->f_13, 315, false);
-				uParam0->f_962 = STREAMING::_0xB223249B7798EEED(Global_34, 798764373, 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
+				uParam0->f_962 = STREAMING::_0xB223249B7798EEED(Global_34, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"), 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
 				func_30(uParam0, 4);
 				return 0;
 			}
@@ -3489,7 +3489,7 @@ void func_25(var uParam0, var uParam1)
 	if (func_165(*uParam1))
 	{
 		uParam0->f_237 = func_169("SERVICE_ORDER", joaat("INPUT_CONTEXT_X"), func_86(*uParam1), 1.2f, 2, 0, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
-		uParam0->f_962 = STREAMING::_0xB223249B7798EEED(Global_34, 798764373, 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
+		uParam0->f_962 = STREAMING::_0xB223249B7798EEED(Global_34, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"), 1, joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK_RESTFRONT_MALE_A"));
 		func_36(uParam0->f_237, 0, 1, 1);
 	}
 	func_170(uParam0);
@@ -5966,7 +5966,7 @@ void func_103(var uParam0, int iParam1, var uParam2, int iParam3)
 			break;
 		case 2:
 		case 3:
-			*uParam0 = TASK::CREATE_SCENARIO_POINT(798764373, func_50(iParam3), func_95(iParam3), 0, 0, 0);
+			*uParam0 = TASK::CREATE_SCENARIO_POINT(joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"), func_50(iParam3), func_95(iParam3), 0, 0, 0);
 			break;
 	}
 }

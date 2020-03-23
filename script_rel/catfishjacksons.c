@@ -1297,7 +1297,7 @@ void func_64()
 	}
 	if ((!func_59(-2019549022 /* GXTEntry: "Letter to Nate from Momma" */, 1, 0) && (!func_132() || (!func_103(2, 16) && !func_104(2)))) && !func_103(2, 2))
 	{
-		iLocal_16 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x"), 1320.37f, -2274.06f, 49.53f, 7.859f, 0f, 0, 0);
+		iLocal_16 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"), 1320.37f, -2274.06f, 49.53f, 7.859f, 0f, 0, 0);
 	}
 	else
 	{

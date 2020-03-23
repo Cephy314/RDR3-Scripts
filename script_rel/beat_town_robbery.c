@@ -857,7 +857,7 @@ void __EntryFunction__()
 										}
 										else
 										{
-											func_34(195938434 /* GXTEntry: "Assault" */, &(iLocal_742[3]), 1, 2f);
+											func_34(joaat("CRIME_ASSAULT"), &(iLocal_742[3]), 1, 2f);
 											func_36(&(iLocal_742[3]), Global_35, func_35("GET_LAW"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 											iLocal_1361 = 0;
 										}
@@ -1103,7 +1103,7 @@ void func_12()
 		}
 		if (func_27(&(iLocal_742[2]), 0, 0))
 		{
-			LAW::_0xFFEBE5AA96BC2E4E(&(iLocal_742[2]), 1352191066, 0);
+			LAW::_0xFFEBE5AA96BC2E4E(&(iLocal_742[2]), joaat("CRIME_UNARMED_ASSAULT"), 0);
 		}
 		ENTITY::_0xD2B9C78537ED5759(iLocal_1222);
 		func_62();
@@ -2478,7 +2478,7 @@ int func_47()
 			func_55(&(Local_441.f_5), 0);
 			if (iLocal_1350 == 0 && PED::IS_PED_SHOOTING(Global_35))
 			{
-				func_34(195938434 /* GXTEntry: "Assault" */, &(iLocal_742[3]), 1, 2f);
+				func_34(joaat("CRIME_ASSAULT"), &(iLocal_742[3]), 1, 2f);
 			}
 			if (ENTITY::IS_ENTITY_IN_VOLUME(Global_35, bLocal_1470, true, 0))
 			{
@@ -3505,7 +3505,7 @@ int func_47()
 					PED::_0x630E7B01F091A197(&(iLocal_742[2]), 1313545729);
 					PED::_0x630E7B01F091A197(Global_35, 1313545729);
 					TASK::TASK_PUT_PED_DIRECTLY_INTO_GRAPPLE(&(iLocal_742[2]), Global_35, 0, 0, 0f, 1, 0);
-					LAW::_0xFFEBE5AA96BC2E4E(&(iLocal_742[2]), 1352191066, 1);
+					LAW::_0xFFEBE5AA96BC2E4E(&(iLocal_742[2]), joaat("CRIME_UNARMED_ASSAULT"), 1);
 					PED::FORCE_PED_MOTION_STATE(&(iLocal_742[2]), 1926482157, false, 0, false);
 					PED::FORCE_PED_MOTION_STATE(Global_35, 1926482157, false, 0, false);
 					PED::SET_PED_FLEE_ATTRIBUTES(&(iLocal_742[2]), 512, true);
@@ -3562,7 +3562,7 @@ int func_47()
 			{
 				if (func_250(&(iLocal_742[2])))
 				{
-					func_34(195938434 /* GXTEntry: "Assault" */, &(iLocal_742[2]), 1, 2f);
+					func_34(joaat("CRIME_ASSAULT"), &(iLocal_742[2]), 1, 2f);
 					func_36(&(iLocal_742[3]), Global_35, func_35("GET_LAW"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 					iLocal_1361 = 0;
 				}
@@ -3576,13 +3576,13 @@ int func_47()
 					PED::SET_PED_CONFIG_FLAG(&(iLocal_742[2]), 148, false);
 					PED::SET_PED_CONFIG_FLAG(&(iLocal_742[2]), 44, false);
 					PED::SET_PED_CONFIG_FLAG(&(iLocal_742[2]), 190, true);
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -1521715232, 50, 0, 0, 0, 0, 0, 0);
-					LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), -1521715232, 1);
-					LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), -1521715232, &(iLocal_742[2]));
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 50, 0, 0, 0, 0, 0, 0);
+					LAW::_0xD7494DED50C6EF52(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 1);
+					LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), &(iLocal_742[2]));
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_1219);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_1219);
 					TASK::TASK_REACT(0, Global_35, 0f, 0f, 0f, "Default_Shocked", 1f, 0, 4);
-					LAW::_0xF0B67BAD53C35BD9(0, Global_35, &(iLocal_742[2]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), -1521715232);
+					LAW::_0xF0B67BAD53C35BD9(0, Global_35, &(iLocal_742[2]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_BURGLARY"));
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_1219);
 					TASK::TASK_PERFORM_SEQUENCE(&(iLocal_742[2]), iLocal_1219);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_1219);
@@ -8275,13 +8275,13 @@ void func_183(bool bParam0)
 					{
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(iLocal_742[3]), false);
 						iLocal_1361 = 0;
-						func_34(195938434 /* GXTEntry: "Assault" */, &(iLocal_742[2]), 1, 2f);
+						func_34(joaat("CRIME_ASSAULT"), &(iLocal_742[2]), 1, 2f);
 						func_36(&(iLocal_742[3]), Global_35, func_35("HEARD_SHOTS_A"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 					}
 					return;
 				}
-				LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -1521715232, 0, 0, -1);
-				LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 195938434, 0, 0, -1);
+				LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 0, 0, -1);
+				LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT"), 0, 0, -1);
 				if (iLocal_1358 == 0)
 				{
 					LAW::_0x710448D44A64C213(0);
@@ -10270,7 +10270,7 @@ void func_255()
 						{
 							func_36(&(iLocal_742[3]), Global_35, func_35("HEARD_SHOTS_B"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 							iLocal_1361 = 0;
-							func_34(195938434 /* GXTEntry: "Assault" */, &(iLocal_742[2]), 1, 2f);
+							func_34(joaat("CRIME_ASSAULT"), &(iLocal_742[2]), 1, 2f);
 						}
 					}
 					iLocal_1390++;
@@ -25468,17 +25468,17 @@ int func_771()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_848())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -25491,17 +25491,17 @@ int func_772()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_848())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -25514,17 +25514,17 @@ int func_773()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_848())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -25537,17 +25537,17 @@ int func_774()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_848())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

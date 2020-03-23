@@ -3106,8 +3106,8 @@ int func_72(var uParam0)
 	uLocal_16 = func_154(uParam0, "script@vignette@karen_10@action", 0, 0, 1, 0);
 	func_155(uParam0, "CKR10AU");
 	func_156(uParam0, iLocal_14, 1, -1);
-	func_157(uParam0, iLocal_15, 3, 2087366558, "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
-	func_158(uParam0, iLocal_15, 2, 2087366558, "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_157(uParam0, iLocal_15, 3, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
+	func_158(uParam0, iLocal_15, 2, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_156(uParam0, iLocal_15, 1, -1);
 	iLocal_17 = func_159(uParam0, 3.3625f, 1.3387f, 2.4264f, 0f, 0f, 174.515f, 16.4725f, 16.24f, 5f, "Start_Trigger", -1612834106);
 	func_160(uParam0, 1643789740, -755850681);
@@ -8355,7 +8355,7 @@ int func_271(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11057,7 +11057,7 @@ int func_377(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_408(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

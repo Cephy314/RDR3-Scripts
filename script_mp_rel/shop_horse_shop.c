@@ -3687,7 +3687,7 @@ int func_47(int iParam0)
 		switch (iVar2)
 		{
 			case 26:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 3:
 			case 4:
@@ -3709,14 +3709,14 @@ int func_47(int iParam0)
 			case 70:
 			case 71:
 			case 82:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 12:
 			case 60:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 104:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 86:
 				iVar1 = joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_BAR_CA");
@@ -3766,7 +3766,7 @@ int func_47(int iParam0)
 				iVar1 = joaat("PROP_HUMAN_SEAT_NO_BACK_WIP_COLLECTION");
 				break;
 			default:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 		}
 	}
@@ -3782,7 +3782,7 @@ int func_47(int iParam0)
 		if (iVar1 == joaat("WORLD_HUMAN_SHOPKEEPER"))
 		{
 		}
-		else if (iVar1 == 830847823)
+		else if (iVar1 == joaat("WORLD_HUMAN_STARE_STOIC"))
 		{
 		}
 		iVar6 = 0;
@@ -30047,7 +30047,7 @@ int func_915(int iParam0)
 	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, 993674639, 1);
 	if (iVar0 != 1 && iVar0 != 0)
 	{
-		func_1459(iParam0, joaat("world_human_clipboard"), 0, 0, 0, -1082130432 /* Float: -1f */);
+		func_1459(iParam0, joaat("WORLD_HUMAN_CLIPBOARD"), 0, 0, 0, -1082130432 /* Float: -1f */);
 	}
 	if (iVar0 == 1)
 	{
@@ -47536,7 +47536,7 @@ void func_1422(bool bParam0)
 		fVar0 = 15f;
 	}
 	LAW::_0x710448D44A64C213(1);
-	LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -1521715232, 0, fVar0, 0, 0, fVar0, 0, 0);
+	LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 0, fVar0, 0, 0, fVar0, 0, 0);
 	uVar5 = 1;
 	func_2106(&iVar1, &uVar5, Global_35, 10, 3, fVar0, 1, 0, 1, 1.5f);
 	iVar7 = 0;
@@ -47550,9 +47550,9 @@ void func_1422(bool bParam0)
 			PED::SET_PED_CONFIG_FLAG(&(iVar1[iVar7]), 148, false);
 			PED::SET_PED_CONFIG_FLAG(&(iVar1[iVar7]), 113, true);
 			vVar9 = { ENTITY::GET_ENTITY_COORDS(&(iVar1[iVar7]), true, false) };
-			LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), -1521715232, &(iVar1[iVar7]));
+			LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), &(iVar1[iVar7]));
 			func_2107(&(iVar1[iVar7]), Global_35, 3, 1, 1);
-			LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar7]), Global_34, &(iVar1[iVar7]), Global_35, -1521715232);
+			LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar7]), Global_34, &(iVar1[iVar7]), Global_35, joaat("CRIME_BURGLARY"));
 			iVar8++;
 			if (iVar8 > 1)
 			{

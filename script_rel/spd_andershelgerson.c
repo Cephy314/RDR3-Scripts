@@ -1127,7 +1127,7 @@ void func_58(int iParam0, bool bParam1)
 	{
 		if (func_59(Global_35, bParam1, 0, 1))
 		{
-			LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 1714017012, 0, 0, -1);
+			LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_LOITERING"), 0, 0, -1);
 		}
 	}
 }

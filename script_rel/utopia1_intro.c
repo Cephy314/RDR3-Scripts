@@ -1316,7 +1316,7 @@ int func_39(int iParam0)
 			if (WEAPON::_0x705BE297EEBDB95D(bVar0) && PED::IS_PED_SHOOTING(Global_35))
 			{
 				func_108(1);
-				LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 481893872, 0, false, 1);
+				LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_LAW_IS_THREATENED"), 0, false, 1);
 				return 0;
 			}
 		}
@@ -1335,7 +1335,7 @@ int func_39(int iParam0)
 		if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(Global_35) && !func_161(PLAYER::PLAYER_ID(), 1, 0, 1))
 		{
 			func_108(1);
-			LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), 481893872, 0, false, 1);
+			LAW::_0xF60386770878A98F(PLAYER::PLAYER_ID(), joaat("CRIME_LAW_IS_THREATENED"), 0, false, 1);
 			return 0;
 		}
 	}
@@ -21014,7 +21014,7 @@ int func_783(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

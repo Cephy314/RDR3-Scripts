@@ -547,7 +547,7 @@ int func_16()
 		case 7:
 			if (!func_83(PLAYER::PLAYER_ID(), 1, 0, 1))
 			{
-				LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 1343354387, 0, 0, 0, 0, 0, 0, 0);
+				LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_DISTURBANCE"), 0, 0, 0, 0, 0, 0, 0);
 			}
 			func_31(&(Local_14.f_580));
 			return 1;

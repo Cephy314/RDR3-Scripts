@@ -5580,7 +5580,7 @@ int func_162(var uParam0)
 			func_282(uParam0, "HMR0AUD");
 			iLocal_18 = func_283(uParam0, 19, 0);
 			iLocal_19 = func_284(uParam0, "script@rcm@RHMR0@IG@IG0_CAMP_APPROACH@IG0_CAMP_APPROACH", 0, 0, 0, 0);
-			func_298(uParam0, iLocal_18, 3, 830847823, 0, -1, 0);
+			func_298(uParam0, iLocal_18, 3, joaat("WORLD_HUMAN_STARE_STOIC"), 0, -1, 0);
 			func_299(uParam0, iLocal_18, -111.516f, -35.28f, 94.73f, 33.18f, 1, 0);
 			(uParam0->f_107[iLocal_18 /*113*/])->f_96 = { -111.516f, -35.28f, 94.73f };
 			uParam0->f_2265 = 1;
@@ -9563,7 +9563,7 @@ int func_323(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -13835,7 +13835,7 @@ int func_462(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_555(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

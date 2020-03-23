@@ -3146,7 +3146,7 @@ int func_73(var uParam0)
 	iLocal_17 = func_155(uParam0, "script@vignette@pearson_3@action_b_front", 0, 0, 0, 1);
 	iLocal_18 = func_155(uParam0, "script@vignette@pearson_3@action_b_back", 0, 0, 0, 1);
 	func_156(uParam0, "CPRS3AU");
-	func_157(uParam0, iLocal_14, 4, 1939042559, "PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_SLICE", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_157(uParam0, iLocal_14, 4, joaat("PROP_HUMAN_BUTCHER_DEER"), "PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_SLICE", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_158(uParam0, iLocal_14, 4, 1);
 	func_159(uParam0, iLocal_14, iLocal_21, "Knife", 1, "KNIFE");
 	func_159(uParam0, iLocal_14, iLocal_20, "LEG", 1, "LEG");
@@ -3357,7 +3357,7 @@ int func_86(var uParam0)
 
 int func_87(var uParam0)
 {
-	uLocal_42 = STREAMING::_0xB223249B7798EEED(func_8(uParam0, iLocal_14), 1939042559, 262145, joaat("PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_SLICE"));
+	uLocal_42 = STREAMING::_0xB223249B7798EEED(func_8(uParam0, iLocal_14), joaat("PROP_HUMAN_BUTCHER_DEER"), 262145, joaat("PROP_HUMAN_BUTCHER_DEER_MALE_A_LEG_SLICE"));
 	return 1;
 }
 
@@ -9306,7 +9306,7 @@ int func_276(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -12083,7 +12083,7 @@ int func_386(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_417(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

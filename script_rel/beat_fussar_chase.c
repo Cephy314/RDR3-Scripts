@@ -1764,8 +1764,8 @@ int func_22()
 							if (func_105())
 							{
 								bLocal_1208 = true;
-								LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -683250308, 0, 0, 0, 0, 0, 0, 0);
-								LAW::_0xF60386770878A98F(PLAYER::GET_PLAYER_INDEX(), -683250308, 0, 0, 1);
+								LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_ASSAULT_LAW"), 0, 0, 0, 0, 0, 0, 0);
+								LAW::_0xF60386770878A98F(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_ASSAULT_LAW"), 0, 0, 1);
 								iLocal_1178 = 9;
 							}
 						}

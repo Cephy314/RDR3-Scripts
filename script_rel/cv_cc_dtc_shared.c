@@ -8666,7 +8666,7 @@ int func_277(int iParam0)
 			Jump @476; //curOff = 308
 			return 1851096281;
 			Jump @476; //curOff = 319
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 			Jump @476; //curOff = 330
 			return 1762683397;
 			Jump @476; //curOff = 341
@@ -10492,7 +10492,7 @@ int func_355(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_392(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

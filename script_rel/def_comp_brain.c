@@ -2687,7 +2687,7 @@ int func_61(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -9115,7 +9115,7 @@ void func_310(var uParam0)
 	bVar5 = func_161(1024);
 	bVar6 = func_4(*uParam0, 54, 0);
 	bVar7 = ((*uParam0 == 16 && func_67(func_112(0), 0)) && func_130(uParam0->f_5, func_112(0), 1) < 64f);
-	bVar8 = PED::_0x34D6AC1157C8226C(uParam0->f_5, 1455795772);
+	bVar8 = PED::_0x34D6AC1157C8226C(uParam0->f_5, joaat("WORLD_HUMAN_PEE"));
 	bVar9 = false;
 	if (func_4(*uParam0, 58, 0))
 	{
@@ -11611,20 +11611,20 @@ var func_402(int iParam0)
 	{
 		case 0:
 			iVar0 = 3;
-			iVar1[0] = 830847823;
+			iVar1[0] = joaat("WORLD_HUMAN_STARE_STOIC");
 			iVar1[1] = joaat("WORLD_HUMAN_SMOKE");
-			iVar1[2] = 2087366558;
+			iVar1[2] = joaat("WORLD_HUMAN_STAND_WAITING");
 			break;
 		case 1:
 			iVar0 = 3;
 			iVar1[0] = joaat("WORLD_HUMAN_SMOKE");
 			iVar1[1] = joaat("WORLD_HUMAN_WAITING_IMPATIENT");
-			iVar1[2] = 830847823;
+			iVar1[2] = joaat("WORLD_HUMAN_STARE_STOIC");
 			break;
 		case 2:
 			iVar0 = 2;
-			iVar1[0] = 2087366558;
-			iVar1[1] = -1982207864;
+			iVar1[0] = joaat("WORLD_HUMAN_STAND_WAITING");
+			iVar1[1] = joaat("WORLD_HUMAN_SHOP_BROWSE");
 			break;
 		default:
 			break;

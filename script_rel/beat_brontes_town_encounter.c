@@ -1183,7 +1183,7 @@ int func_49(var uParam0, int iParam1)
 		case 1:
 			return joaat("WORLD_HUMAN_SMOKE");
 		case 2:
-			return 830847823;
+			return joaat("WORLD_HUMAN_STARE_STOIC");
 		default:
 			break;
 	}
@@ -17124,9 +17124,9 @@ void func_560(var uParam0)
 {
 	if (func_20(uParam0->f_3, 4))
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -2130852007, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -102241052, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 1171995096, 3, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM_VEHICLE"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_TRAMPLE"), 3, 0, -1);
 	}
 }
 

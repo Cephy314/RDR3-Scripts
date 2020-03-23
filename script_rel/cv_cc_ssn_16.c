@@ -3112,7 +3112,7 @@ int func_72(var uParam0)
 	iLocal_17 = func_153(uParam0, "script@vignette@susan_16@action_b_alt", 0, 0, 0, 0);
 	func_154(uParam0, "CSN16AU");
 	func_155(uParam0, 1022626134, -41616716);
-	func_156(uParam0, iLocal_14, 3, 830847823, "WORLD_HUMAN_STARE_STOIC_FEMALE_A", -1, 1);
+	func_156(uParam0, iLocal_14, 3, joaat("WORLD_HUMAN_STARE_STOIC"), "WORLD_HUMAN_STARE_STOIC_FEMALE_A", -1, 1);
 	func_157(uParam0, iLocal_14, 2, 0, 30, 0, 0);
 	func_158(uParam0, iLocal_14, 1, -1);
 	func_156(uParam0, iLocal_15, 3, -787460071, "SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING_MALE_A", iLocal_18, 0);
@@ -8422,7 +8422,7 @@ int func_271(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -10279,7 +10279,7 @@ int func_350(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_387(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

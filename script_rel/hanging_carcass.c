@@ -901,12 +901,12 @@ void func_34(var uParam0)
 	switch (uParam0->f_39)
 	{
 		case joaat("p_carcasshanglrg01x"):
-			iVar0 = joaat("WORLD_PLAYER_CARCASS_PEG_2m15");
+			iVar0 = joaat("WORLD_PLAYER_CARCASS_PEG_2M15");
 			vVar1 = { 0.155f, -0.9f, 0f };
 			break;
 		case joaat("p_carcasshangmed01a"):
 		case joaat("p_carcasshangfish01a"):
-			iVar0 = joaat("WORLD_PLAYER_CARCASS_CUT_1m80");
+			iVar0 = joaat("WORLD_PLAYER_CARCASS_CUT_1M80");
 			vVar1 = { -0.1f, -0.61f, 0f };
 			break;
 	}

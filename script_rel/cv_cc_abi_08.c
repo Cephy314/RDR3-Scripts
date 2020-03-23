@@ -3114,11 +3114,11 @@ int func_72(var uParam0)
 	func_154(uParam0, -882980816, -1631022171);
 	func_155(uParam0, iLocal_14, 2, 6, 0, "Default_Angry", 0);
 	func_156(uParam0, iLocal_14, 1, 600);
-	func_157(uParam0, iLocal_14, 1, 2087366558, 0, -1, 0, 90f, 1065353216 /* Float: 1f */, 1);
+	func_157(uParam0, iLocal_14, 1, joaat("WORLD_HUMAN_STAND_WAITING"), 0, -1, 0, 90f, 1065353216 /* Float: 1f */, 1);
 	func_158(uParam0, iLocal_14, 1.5f, 1f, 10f);
 	func_155(uParam0, iLocal_15, 1, 6, 0, 0, 0);
 	func_156(uParam0, iLocal_15, 1, 600);
-	func_157(uParam0, iLocal_15, 1, 830847823, 0, -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_157(uParam0, iLocal_15, 1, joaat("WORLD_HUMAN_STARE_STOIC"), 0, -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	Local_21 = { func_159(uParam0, 2.9764f, -0.9499f, 1.2095f, 167.1853f, 8f, 0.56f, 0.21f) };
 	Local_31 = { func_159(uParam0, 2.3222f, -1.1977f, 1.1786f, 110.1719f, 8f, 0.46f, 0.22f) };
 	Local_41 = { func_159(uParam0, 3.6042f, -0.3755f, 1.2095f, -129.6687f, 8f, 0.4f, 0.21f) };
@@ -8410,7 +8410,7 @@ int func_271(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11175,7 +11175,7 @@ int func_380(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_411(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

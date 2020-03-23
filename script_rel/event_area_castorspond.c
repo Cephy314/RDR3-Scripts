@@ -3324,7 +3324,7 @@ int func_78()
 		}
 		else if (Local_1389.f_28 == 1024)
 		{
-			LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), -1103472584, 0, 0, 0, 0, 0, 0, 0);
+			LAW::_0xEDFC6C1FD1C964F5(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_THEFT_HORSE"), 0, 0, 0, 0, 0, 0, 0);
 			func_271(1);
 			LAW::_0x710448D44A64C213(1);
 		}
@@ -3869,43 +3869,43 @@ int func_105(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 65536:
-			return -1361146315 /* GXTEntry: "Trespassing" */;
+			return joaat("CRIME_TRESPASSING");
 		case 1024:
-			return 1923998736 /* GXTEntry: "Theft" */;
+			return joaat("CRIME_THEFT");
 		case 4:
 		case 8:
 		case 16:
 		case 64:
 		case 256:
 		case 8192:
-			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_THREATEN");
 		case 512:
-			return -1547772340 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_ROBBERY");
 		case 2:
 		case 32:
 		case 2048:
 			if (!ENTITY::_0x3EC28DA1FFAC9DDD(uParam0->f_10, Global_35, 0, 0) || !ENTITY::DOES_ENTITY_EXIST(&(Global_1935630->f_34[0])))
 			{
-				return -16106300 /* GXTEntry: "Unarmed Assault" */;
+				return joaat("CRIME_HIT_AND_RUN");
 			}
 			else if (WEAPON::_0xCB690F680A3EA971(Global_35, 6))
 			{
-				return 195938434 /* GXTEntry: "Assault" */;
+				return joaat("CRIME_ASSAULT");
 			}
 			else
 			{
-				return 1352191066 /* GXTEntry: "Unarmed Assault" */;
+				return joaat("CRIME_UNARMED_ASSAULT");
 			}
 			break;
 		case 4096:
-			return -2130852007 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_VANDALISM");
 		case 1:
 		case 128:
-			return -493957506 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_MURDER");
 		case 16384:
 			return 0;
 	}
-	return -1361146315 /* GXTEntry: "Trespassing" */;
+	return joaat("CRIME_TRESPASSING");
 }
 
 int func_106(int iParam0, bool bParam1, var uParam2, int iParam3, int iParam4, int iParam5, int iParam6, bool bParam7, bool bParam8, bool bParam9, int iParam10, float fParam11)
@@ -30091,20 +30091,20 @@ var func_1012(int iParam0)
 	{
 		case 0:
 			iVar0 = 3;
-			iVar1[0] = 830847823;
+			iVar1[0] = joaat("WORLD_HUMAN_STARE_STOIC");
 			iVar1[1] = joaat("WORLD_HUMAN_SMOKE");
-			iVar1[2] = 2087366558;
+			iVar1[2] = joaat("WORLD_HUMAN_STAND_WAITING");
 			break;
 		case 1:
 			iVar0 = 3;
 			iVar1[0] = joaat("WORLD_HUMAN_SMOKE");
 			iVar1[1] = joaat("WORLD_HUMAN_WAITING_IMPATIENT");
-			iVar1[2] = 830847823;
+			iVar1[2] = joaat("WORLD_HUMAN_STARE_STOIC");
 			break;
 		case 2:
 			iVar0 = 2;
-			iVar1[0] = 2087366558;
-			iVar1[1] = -1982207864;
+			iVar1[0] = joaat("WORLD_HUMAN_STAND_WAITING");
+			iVar1[1] = joaat("WORLD_HUMAN_SHOP_BROWSE");
 			break;
 		default:
 			break;
@@ -34596,17 +34596,17 @@ int func_1171()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1330())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -34619,17 +34619,17 @@ int func_1172()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1330())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -34642,17 +34642,17 @@ int func_1173()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1330())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -34665,17 +34665,17 @@ int func_1174()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1330())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

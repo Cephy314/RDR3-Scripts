@@ -41,7 +41,7 @@ void __EntryFunction__()
 	fLocal_8 = 1f;
 	iLocal_430 = joaat("coach2");
 	bLocal_431 = joaat("s_m_m_coachtaxidriver_01");
-	iLocal_440 = 2087366558;
+	iLocal_440 = joaat("WORLD_HUMAN_STAND_WAITING");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(555))
 	{
 		func_1(1);
@@ -1379,7 +1379,7 @@ int func_16()
 		{
 			if (!LAW::_0x0EAF918F751F27BA(Local_14.f_16))
 			{
-				LAW::_0xF0B67BAD53C35BD9(Local_14.f_16, Global_35, Local_14.f_16, ENTITY::GET_ENTITY_COORDS(Local_14.f_16, true, false), joaat("crime_hassle"));
+				LAW::_0xF0B67BAD53C35BD9(Local_14.f_16, Global_35, Local_14.f_16, ENTITY::GET_ENTITY_COORDS(Local_14.f_16, true, false), joaat("CRIME_HASSLE"));
 			}
 			return 4;
 		}
@@ -2001,7 +2001,7 @@ int func_38(int iParam0)
 	{
 		if (!LAW::_0x0EAF918F751F27BA(iParam0->f_16))
 		{
-			LAW::_0xF0B67BAD53C35BD9(iParam0->f_16, Global_35, iParam0->f_16, iParam0->f_19, 1135209633);
+			LAW::_0xF0B67BAD53C35BD9(iParam0->f_16, Global_35, iParam0->f_16, iParam0->f_19, joaat("CRIME_THEFT_VEHICLE"));
 			return 1;
 		}
 	}
@@ -2011,7 +2011,7 @@ int func_38(int iParam0)
 	bVar3 = func_34(iParam0->f_15, 1);
 	if (((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(bVar0, Global_35, 1, 1) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(bVar1, Global_35, 1, 1)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(bVar2, Global_35, 1, 1)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(bVar3, Global_35, 1, 1))
 	{
-		LAW::_0xF0B67BAD53C35BD9(iParam0->f_16, Global_35, bVar0, ENTITY::GET_ENTITY_COORDS(Global_35, true, false), 416962030);
+		LAW::_0xF0B67BAD53C35BD9(iParam0->f_16, Global_35, bVar0, ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_ASSAULT_ANIMAL"));
 		return 1;
 	}
 	return 0;

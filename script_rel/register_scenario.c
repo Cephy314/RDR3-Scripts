@@ -889,9 +889,9 @@ int func_20(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1880549997:
+		case joaat("PROP_PLAYER_CASH_REGISTER_LOCKBREAK"):
 			return 2;
-		case -319279711:
+		case joaat("PROP_PLAYER_CASH_REGISTER_OPEN"):
 			return 0;
 		case 1786059572:
 			return 1;

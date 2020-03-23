@@ -3169,8 +3169,8 @@ int func_76(var uParam0)
 	iLocal_16 = func_156(uParam0, joaat("s_inv_ginseng01x"), 0f, 0f, 0f, "s_inv_ginseng01x", 0, 1, 1);
 	iLocal_15 = func_157(uParam0, "script@vignette@itm@hosea_1@action", 0, 0, 0, 1);
 	func_158(uParam0, "chsi1au");
-	func_159(uParam0, iLocal_14, 3, 1993269755, "PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE_MALE_A_MORTAR", -1, 0);
-	func_160(uParam0, iLocal_14, 3, 1993269755, "PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE_MALE_A_MORTAR", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_159(uParam0, iLocal_14, 3, joaat("PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE"), "PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE_MALE_A_MORTAR", -1, 0);
+	func_160(uParam0, iLocal_14, 3, joaat("PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE"), "PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE_MALE_A_MORTAR", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_161(uParam0, iLocal_14, 2, -1);
 	Local_17 = { func_162(uParam0, -0.013f, 0.81f, 0.5054f, 1.8007f, 5.5f, 0.65f, 0.65f) };
 	func_163(uParam0, 1);
@@ -3500,7 +3500,7 @@ int func_97(var uParam0)
 	}
 	if (func_208(uParam0, iLocal_14))
 	{
-		PED::_0x2B02DB082258625F(func_9(uParam0, iLocal_14), iLocal_30, "p_mortarPestle02x_PH_L_HAND", 1993269755, "PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE_MALE_A_MORTAR", 1);
+		PED::_0x2B02DB082258625F(func_9(uParam0, iLocal_14), iLocal_30, "p_mortarPestle02x_PH_L_HAND", joaat("PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE"), "PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE_MALE_A_MORTAR", 1);
 	}
 	return 1;
 }
@@ -8574,7 +8574,7 @@ int func_279(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -12715,7 +12715,7 @@ int func_440(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_478(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

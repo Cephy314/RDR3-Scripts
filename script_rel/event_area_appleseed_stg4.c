@@ -945,11 +945,11 @@ void __EntryFunction__()
 								}
 								if (func_51(32768))
 								{
-									iVar8 = 1135209633; /* GXTEntry: "Vehicle Theft" */
+									iVar8 = joaat("CRIME_THEFT_VEHICLE");
 								}
 								else if (func_115(268435456))
 								{
-									iVar8 = -1103472584; /* GXTEntry: "Horse Theft" */
+									iVar8 = joaat("CRIME_THEFT_HORSE");
 								}
 								else
 								{
@@ -4132,43 +4132,43 @@ int func_116(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 65536:
-			return -1361146315 /* GXTEntry: "Trespassing" */;
+			return joaat("CRIME_TRESPASSING");
 		case 1024:
-			return 1923998736 /* GXTEntry: "Theft" */;
+			return joaat("CRIME_THEFT");
 		case 4:
 		case 8:
 		case 16:
 		case 64:
 		case 256:
 		case 8192:
-			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_THREATEN");
 		case 512:
-			return -1547772340 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_ROBBERY");
 		case 2:
 		case 32:
 		case 2048:
 			if (!ENTITY::_0x3EC28DA1FFAC9DDD(uParam0->f_10, Global_35, 0, 0) || !ENTITY::DOES_ENTITY_EXIST(&(Global_1935630->f_34[0])))
 			{
-				return -16106300 /* GXTEntry: "Unarmed Assault" */;
+				return joaat("CRIME_HIT_AND_RUN");
 			}
 			else if (WEAPON::_0xCB690F680A3EA971(Global_35, 6))
 			{
-				return 195938434 /* GXTEntry: "Assault" */;
+				return joaat("CRIME_ASSAULT");
 			}
 			else
 			{
-				return 1352191066 /* GXTEntry: "Unarmed Assault" */;
+				return joaat("CRIME_UNARMED_ASSAULT");
 			}
 			break;
 		case 4096:
-			return -2130852007 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_VANDALISM");
 		case 1:
 		case 128:
-			return -493957506 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_MURDER");
 		case 16384:
 			return 0;
 	}
-	return -1361146315 /* GXTEntry: "Trespassing" */;
+	return joaat("CRIME_TRESPASSING");
 }
 
 void func_117()
@@ -34670,17 +34670,17 @@ int func_1184()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1219())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -34693,17 +34693,17 @@ int func_1185()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1219())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -34716,17 +34716,17 @@ int func_1186()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1219())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -34739,17 +34739,17 @@ int func_1187()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1219())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

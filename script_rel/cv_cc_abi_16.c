@@ -3130,7 +3130,7 @@ int func_72(var uParam0)
 	func_158(uParam0, iLocal_14, 1, 6, 0, 0, 0);
 	if (func_148(uParam0) == 2)
 	{
-		func_159(uParam0, iLocal_14, 3, 2087366558, 0, -1, 0, 100f, 0f, 0);
+		func_159(uParam0, iLocal_14, 3, joaat("WORLD_HUMAN_STAND_WAITING"), 0, -1, 0, 100f, 0f, 0);
 		func_160(uParam0, iLocal_14, 3, 0);
 		func_159(uParam0, iLocal_15, 3, joaat("WORLD_CAMP_JACK_POKE_GROUND_STICK"), 0, -1, 0, 96f, 0f, 0);
 		func_160(uParam0, iLocal_15, 3, 0);
@@ -9441,7 +9441,7 @@ int func_280(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11431,7 +11431,7 @@ int func_366(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_410(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

@@ -1783,7 +1783,7 @@ int func_28(var uParam0)
 	if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[0 /*14*/])))
 	{
 		PED::SET_PED_AS_GROUP_MEMBER(&(uParam0->f_20[0 /*14*/]), iLocal_37);
-		func_58(&(uParam0->f_20[0 /*14*/]), 830847823, 0, 0, 0, -1082130432 /* Float: -1f */);
+		func_58(&(uParam0->f_20[0 /*14*/]), joaat("WORLD_HUMAN_STARE_STOIC"), 0, 0, 0, -1082130432 /* Float: -1f */);
 	}
 	return 1;
 }
@@ -1799,9 +1799,9 @@ void func_29(var uParam0)
 
 int func_30(var uParam0)
 {
-	func_59(830847823, 15, 0, 0);
+	func_59(joaat("WORLD_HUMAN_STARE_STOIC"), 15, 0, 0);
 	func_59(joaat("WORLD_HUMAN_SMOKE"), 15, 0, 1317331863);
-	if (!func_60(830847823) || !func_60(joaat("WORLD_HUMAN_SMOKE")))
+	if (!func_60(joaat("WORLD_HUMAN_STARE_STOIC")) || !func_60(joaat("WORLD_HUMAN_SMOKE")))
 	{
 		return 0;
 	}

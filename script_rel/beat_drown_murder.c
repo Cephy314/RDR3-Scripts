@@ -2363,12 +2363,12 @@ void func_69()
 	switch (func_2())
 	{
 		case 76:
-			STREAMING::_0x19A6BE7D9C6884D3(830847823, 15, 0, 0);
-			STREAMING::_0x19A6BE7D9C6884D3(2087366558, 15, 0, 0);
+			STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_STARE_STOIC"), 15, 0, 0);
+			STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_STAND_WAITING"), 15, 0, 0);
 			break;
 		case 105:
 			STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_LEAN_WALL_LEFT"), 15, 0, 0);
-			STREAMING::_0x19A6BE7D9C6884D3(2087366558, 15, 0, 0);
+			STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_STAND_WAITING"), 15, 0, 0);
 			break;
 		case 92:
 			STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_SMOKE"), 15, 0, 0);
@@ -2423,7 +2423,7 @@ int func_73()
 	switch (func_2())
 	{
 		case 76:
-			if (STREAMING::_0x9427C94D2E4094A4(830847823, 0) && STREAMING::_0x9427C94D2E4094A4(2087366558, 0))
+			if (STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_STARE_STOIC"), 0) && STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_STAND_WAITING"), 0))
 			{
 				return 1;
 			}
@@ -2433,7 +2433,7 @@ int func_73()
 			}
 			break;
 		case 105:
-			if (STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_LEAN_WALL_LEFT"), 0) && STREAMING::_0x9427C94D2E4094A4(2087366558, 0))
+			if (STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_LEAN_WALL_LEFT"), 0) && STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_STAND_WAITING"), 0))
 			{
 				return 1;
 			}
@@ -17119,13 +17119,13 @@ void func_505(bool bParam0)
 					{
 						vLocal_382 = { -304.634f, 811.7f, 120.976f };
 						fLocal_395 = 112.808f;
-						iLocal_375 = 830847823;
+						iLocal_375 = joaat("WORLD_HUMAN_STARE_STOIC");
 					}
 					else
 					{
 						vLocal_382 = { -304.825f, 811.922f, 120.976f };
 						fLocal_395 = -164.278f;
-						iLocal_375 = 2087366558;
+						iLocal_375 = joaat("WORLD_HUMAN_STAND_WAITING");
 					}
 					break;
 				case 1:
@@ -17138,7 +17138,7 @@ void func_505(bool bParam0)
 							bLocal_397 = true;
 							vLocal_382 = { -304.825f, 811.922f, 120.976f };
 							fLocal_395 = -164.278f;
-							iLocal_375 = 2087366558;
+							iLocal_375 = joaat("WORLD_HUMAN_STAND_WAITING");
 							break;
 						case 1:
 							*(vLocal_385[1 /*3*/]) = { -225.7226f, 763.439f, 116.2204f };
@@ -17146,7 +17146,7 @@ void func_505(bool bParam0)
 							bLocal_397 = true;
 							vLocal_382 = { -304.825f, 811.922f, 120.976f };
 							fLocal_395 = -164.278f;
-							iLocal_375 = 2087366558;
+							iLocal_375 = joaat("WORLD_HUMAN_STAND_WAITING");
 							break;
 						case 2:
 							*(vLocal_385[0 /*3*/]) = { -275.3085f, 641.9633f, 112.379f };
@@ -17155,7 +17155,7 @@ void func_505(bool bParam0)
 							bLocal_397 = true;
 							vLocal_382 = { -304.825f, 811.922f, 120.976f };
 							fLocal_395 = -164.278f;
-							iLocal_375 = 2087366558;
+							iLocal_375 = joaat("WORLD_HUMAN_STAND_WAITING");
 							break;
 					}
 					break;
@@ -17174,7 +17174,7 @@ void func_505(bool bParam0)
 			{
 				vLocal_382 = { 1348.618f, -1376.747f, 83.289f };
 				fLocal_395 = 158.583f;
-				iLocal_375 = 2087366558;
+				iLocal_375 = joaat("WORLD_HUMAN_STAND_WAITING");
 			}
 			break;
 		case 92:

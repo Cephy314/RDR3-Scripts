@@ -2039,11 +2039,11 @@ int func_39()
 							PED::SET_PED_CONFIG_FLAG(&(uLocal_98[0]), 178, true);
 							if (Local_161.f_5.f_10 != 0)
 							{
-								LAW::_0xF0B67BAD53C35BD9(&(uLocal_98[0]), Global_35, Local_161.f_5.f_10, Global_36, -1810065318);
+								LAW::_0xF0B67BAD53C35BD9(&(uLocal_98[0]), Global_35, Local_161.f_5.f_10, Global_36, joaat("CRIME_THREATEN"));
 							}
 							else
 							{
-								LAW::_0xF0B67BAD53C35BD9(&(uLocal_98[0]), Global_35, &(uLocal_98[0]), Global_36, -1810065318);
+								LAW::_0xF0B67BAD53C35BD9(&(uLocal_98[0]), Global_35, &(uLocal_98[0]), Global_36, joaat("CRIME_THREATEN"));
 							}
 						}
 					}
@@ -2078,7 +2078,7 @@ int func_39()
 									func_36(&(uLocal_98[0]), Global_35, func_35("CALL_LAW"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 2, 1, 1, 291934926, 1, 0, 0);
 									func_17(&iLocal_34, 32);
 								}
-								func_192(-2130852007 /* GXTEntry: "Vandalism" */);
+								func_192(joaat("CRIME_VANDALISM"));
 							}
 						}
 					}
@@ -2099,7 +2099,7 @@ int func_39()
 										func_36(&(uLocal_98[0]), Global_35, func_35("CALL_LAW"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 2, 1, 1, 291934926, 1, 0, 0);
 										func_17(&iLocal_34, 32);
 									}
-									func_192(195938434 /* GXTEntry: "Assault" */);
+									func_192(joaat("CRIME_ASSAULT"));
 								}
 							}
 						}
@@ -2306,7 +2306,7 @@ void func_53(bool bParam0)
 	if (bParam0)
 	{
 		EVENT::_0xB6F4825153920582();
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -2130852007, 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM"), 0, 0, -1);
 		PLAYER::_0x96722257E5381E00(PLAYER::PLAYER_ID());
 		if (!func_15(iLocal_34, 64))
 		{

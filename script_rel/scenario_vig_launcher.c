@@ -369,8 +369,8 @@ int func_16(int iParam0)
 
 	switch (iParam0)
 	{
-		case 573563343:
-		case 1340532149:
+		case joaat("SC_CAMP_VIG_PEARSON_CALLOVER"):
+		case joaat("WORLD_HUMAN_CAULDRON"):
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(260, 265 + 1);
 			return iVar0;
 		case 2024871051:

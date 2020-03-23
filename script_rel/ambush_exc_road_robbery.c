@@ -3815,7 +3815,7 @@ int func_132(var uParam0, int iParam1)
 			}
 			break;
 	}
-	return 2087366558;
+	return joaat("WORLD_HUMAN_STAND_WAITING");
 }
 
 char* func_133(var uParam0, int iParam1)

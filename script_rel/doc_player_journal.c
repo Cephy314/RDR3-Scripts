@@ -2146,11 +2146,11 @@ int func_58(int iParam0)
 {
 	if (iParam0 == 0)
 	{
-		return 1405489977;
+		return joaat("JOURNAL_PROLOGUE_BLACKWATER_1");
 	}
 	else if (iParam0 == 1)
 	{
-		return -2134669864;
+		return joaat("JOURNAL_ENTRY_CHAP1_WINTER1_1");
 	}
 	else if (iParam0 == 2)
 	{
@@ -2170,13 +2170,13 @@ int func_58(int iParam0)
 	}
 	else if (iParam0 == 6)
 	{
-		return -514392105;
+		return joaat("JOURNAL_ENTRY_ENDLESS_SUMMER_1");
 	}
 	else if (iParam0 == 7)
 	{
 		return joaat("journal_chap9_beechershope");
 	}
-	return 1405489977;
+	return joaat("JOURNAL_PROLOGUE_BLACKWATER_1");
 }
 
 int func_59(var uParam0, int iParam1)
@@ -2499,7 +2499,7 @@ void func_67(var uParam0, var uParam1)
 
 int func_68(int iParam0)
 {
-	if (iParam0 == 0 || iParam0 == -916968937)
+	if (iParam0 == 0 || iParam0 == joaat("NO_IMAGE"))
 	{
 		return 0;
 	}
@@ -2676,7 +2676,7 @@ void func_74(var uParam0, var uParam1, int iParam2, var uParam3, var uParam4, va
 						func_97(uParam1[0 /*6*/], &Var2, ((*uParam1)[iVar0 /*6*/])->f_1[iVar1]);
 						func_101((*uParam0)[iVar38 /*6*/], Var2, &iVar38);
 					}
-					if (Var2.f_2 != 188052454 && Var2.f_2 != 0)
+					if (Var2.f_2 != joaat("NO_TEXT") && Var2.f_2 != 0)
 					{
 						*uParam6 = 1;
 						iVar24 = 1;
@@ -3180,7 +3180,7 @@ void func_97(int iParam0, var uParam1, var uParam2)
 		uParam1->f_5 = 700;
 		uParam1->f_6 = 143;
 	}
-	uParam1->f_2 = 188052454;
+	uParam1->f_2 = joaat("NO_TEXT");
 	*uParam2 = *uParam1;
 }
 
@@ -3324,7 +3324,7 @@ void func_106(var uParam0)
 
 int func_107(int iParam0)
 {
-	if (iParam0 == joaat("journal_gt_winter_4") || iParam0 == -1286192062)
+	if (iParam0 == joaat("journal_gt_winter_4") || iParam0 == joaat("JOURNAL_GT_WINTER_4_SE"))
 	{
 		return 0;
 	}

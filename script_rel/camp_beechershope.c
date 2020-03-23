@@ -117,10 +117,10 @@ void __EntryFunction__()
 	sLocal_17 = "PBL_DROP_IN";
 	iLocal_3514 = -1;
 	iLocal_3716 = joaat("ui_letter_tilly");
-	iLocal_3717 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_P_CS_rt_letterL_Dbl");
+	iLocal_3717 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_RT_LETTERL_DBL");
 	vLocal_3721 = { -1644.826f, -1359.316f, 84.2079f };
 	iLocal_3724 = joaat("ui_letter_pearson");
-	iLocal_3725 = joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
+	iLocal_3725 = joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 	vLocal_3729 = { -1632.548f, -1357.204f, 83.384f };
 	bLocal_3824 = true;
 	Local_18.f_46 = uScriptParam_0;
@@ -12624,7 +12624,7 @@ int func_407(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -20130,7 +20130,7 @@ void func_673(var uParam0, var uParam1)
 				bVar0 = func_1046(9);
 				break;
 		}
-		if (PED::_0x34D6AC1157C8226C(bVar0, -1322841316))
+		if (PED::_0x34D6AC1157C8226C(bVar0, joaat("PROP_HUMAN_WOOD_CHOP")))
 		{
 			uParam0->f_1617 = 1;
 			uParam1->f_2 = 6;
@@ -20467,7 +20467,7 @@ void func_685(var uParam0, var uParam1)
 	GRAPHICS::_0x5199405EABFBD7F0("CamTransition01");
 	uParam0->f_1612 = ANIMSCENE::_CREATE_ANIM_SCENE("script@respawn@sky@SkyTL_1500_03Clouds", 0, 0, false, true);
 	ANIMSCENE::LOAD_ANIM_SCENE(uParam0->f_1612);
-	STREAMING::_0xB223249B7798EEED(Global_35, -1322841316, 4, joaat("PROP_HUMAN_WOOD_CHOP_POST_CHOP_11_12_PLAYER"));
+	STREAMING::_0xB223249B7798EEED(Global_35, joaat("PROP_HUMAN_WOOD_CHOP"), 4, joaat("PROP_HUMAN_WOOD_CHOP_POST_CHOP_11_12_PLAYER"));
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_PLAYER_CHORES_BUCKET_PUT_DOWN_FULL"), 2051, 0, 0);
 	STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_PLAYER_CHORES_FEEDBAG_PUTDOWN"), 2051, 0, 0);
 	if (func_201(Global_40.f_4283.f_408.f_1))
@@ -21633,8 +21633,8 @@ void func_704(int iParam0)
 				iLocal_3792 = TASK::CREATE_SCENARIO_POINT(-1177373461, func_1105(), 60f, 0f, 0, 0);
 				CAM::DO_SCREEN_FADE_OUT(100);
 				func_181(&uLocal_3784, 1);
-				TASK::_TASK_ITEM_INTERACTION_2(Global_35, 599184882, &(Local_3808[1 /*4*/]), joaat("p_bowl04x_stew_ph_l_hand"), 171451159, 3, 0, 0f);
-				TASK::_TASK_ITEM_INTERACTION_2(Global_35, 599184882, &(Local_3808[0 /*4*/]), joaat("p_spoon01x_ph_r_hand"), 171451159, 3, 0, 0f);
+				TASK::_TASK_ITEM_INTERACTION_2(Global_35, 599184882, &(Local_3808[1 /*4*/]), joaat("p_bowl04x_stew_ph_l_hand"), joaat("EAT_STEW_BOWL_TABLE_BASE"), 3, 0, 0f);
+				TASK::_TASK_ITEM_INTERACTION_2(Global_35, 599184882, &(Local_3808[0 /*4*/]), joaat("p_spoon01x_ph_r_hand"), joaat("EAT_STEW_BOWL_TABLE_BASE"), 3, 0, 0f);
 				TASK::_TASK_USE_SCENARIO_POINT(Global_35, iLocal_3792, 0, 0, false, true, 0, false, -1f, false);
 			}
 			if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 0) && ANIMSCENE::_0xD8254CB2C586412B(Local_3795, 0))
@@ -28719,7 +28719,7 @@ struct<8> func_898(int iParam0, int iParam1, int iParam2)
 			Var0 = joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1");
 			break;
 		case 7:
-			Var0 = -1816442556;
+			Var0 = joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			break;
 		case 1:
 			if (func_149() == 1)
@@ -30029,17 +30029,17 @@ int func_945()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -30052,17 +30052,17 @@ int func_946()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -30075,17 +30075,17 @@ int func_947()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -30098,17 +30098,17 @@ int func_948()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -33644,7 +33644,7 @@ void func_1050(var uParam0)
 			*uParam0 = joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1");
 			break;
 		case 7:
-			*uParam0 = -1816442556;
+			*uParam0 = joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE");
 			break;
 		case 1:
 			if (func_149() == 1)
@@ -34209,7 +34209,7 @@ void func_1071(var uParam0, var uParam1)
 				bVar3 = func_1046(9);
 				break;
 		}
-		if (PED::_0x34D6AC1157C8226C(bVar3, -1322841316))
+		if (PED::_0x34D6AC1157C8226C(bVar3, joaat("PROP_HUMAN_WOOD_CHOP")))
 		{
 			uParam0->f_1617 = 1;
 			uParam1->f_2 = 6;
@@ -48105,17 +48105,17 @@ void func_1521(int iParam0, struct<11> Param1, var uParam12, var uParam13, var u
 			func_1838(((*Global_1347702)[80 /*49*/])->f_15, 1);
 			if (func_205() == 1)
 			{
-				func_1837(1565950479, 0);
+				func_1837(joaat("JOURNAL_RC_FMA5_1_AR"), 0);
 			}
-			else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(1565950479))
+			else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_RC_FMA5_1_AR")))
 			{
 				if (func_1839(77))
 				{
-					func_1837(-553142873, 0);
+					func_1837(joaat("JOURNAL_RC_FMA5_2_JN"), 0);
 				}
 				else
 				{
-					func_1837(-384883866, 0);
+					func_1837(joaat("JOURNAL_RC_FMA5_1_JN"), 0);
 				}
 			}
 			break;
@@ -48243,11 +48243,11 @@ int func_1525(int iParam0, bool bParam1, bool bParam2)
 				{
 					if (func_1561(&Global_35))
 					{
-						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, 616992297, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, joaat("APPLY_POMADE_WITH_HAT"), 1, 0, -1082130432);
 					}
 					else
 					{
-						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, -903856906, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, joaat("APPLY_POMADE_WITH_NO_HAT"), 1, 0, -1082130432);
 					}
 					return 1;
 				}
@@ -48368,7 +48368,7 @@ int func_1525(int iParam0, bool bParam1, bool bParam2)
 		case -1337515701:
 			if (!bParam1)
 			{
-				TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, -1893721798, 1, 0, -1082130432);
+				TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), iParam0, joaat("POCKET_WATCH_INSPECT_UNHOLSTER"), 1, 0, -1082130432);
 				return 1;
 			}
 			break;
@@ -59767,17 +59767,17 @@ void func_1849(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 1428936325;
+	iVar0 = joaat("APPLY_LOTION_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 1428936325;
+			iVar0 = joaat("APPLY_LOTION_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 1791580586;
+			iVar0 = joaat("APPLY_LOTION_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1731192422;
+			iVar0 = joaat("APPLY_LOTION_BOTH_HANDS");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -59938,17 +59938,17 @@ void func_1854(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = -362580870;
+	iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = -362580870;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = -1013825131;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = -1433021121;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -60124,17 +60124,17 @@ void func_1860(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 1076410848;
+	iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 1076410848;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 1820106865;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1890537641;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -60155,17 +60155,17 @@ void func_1861(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 1516413548;
+	iVar0 = joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 1516413548;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = 1648161053;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = -1170654725;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -60186,17 +60186,17 @@ void func_1862(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = -1454586679;
+	iVar0 = joaat("QUICK_SMOKE_CIGAR_LEFT_HAND");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = -1454586679;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = 1849268701;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = 881673189;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -60217,17 +60217,17 @@ void func_1863(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 406178289;
+	iVar0 = joaat("USE_HANDFULL_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 406178289;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 187883304;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = 38531903;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -60252,17 +60252,17 @@ void func_1864(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = 1934039819;
+	iVar0 = joaat("USE_TONIC_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = 1934039819;
+			iVar0 = joaat("USE_TONIC_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 1656393367;
+			iVar0 = joaat("USE_TONIC_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = 1125253485;
+			iVar0 = joaat("USE_TONIC_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -60283,17 +60283,17 @@ void func_1865(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = -1054661625;
+	iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_1345())
 	{
 		case 0:
-			iVar0 = -1054661625;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 1750832898;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = -1750311991;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;

@@ -1515,7 +1515,7 @@ int func_59(var uParam0, int iParam1)
 				case 0:
 					return joaat("WORLD_HUMAN_LEAN_BACK_WALL");
 				case 1:
-					return joaat("world_human_drinking");
+					return joaat("WORLD_HUMAN_DRINKING");
 				case 2:
 					return joaat("WORLD_HUMAN_SMOKE");
 				default:
@@ -1569,7 +1569,7 @@ int func_59(var uParam0, int iParam1)
 				case 1:
 					return joaat("WORLD_HUMAN_SMOKE");
 				case 2:
-					return joaat("world_human_drinking");
+					return joaat("WORLD_HUMAN_DRINKING");
 				default:
 					break;
 			}
@@ -5974,9 +5974,9 @@ void func_197(var uParam0)
 {
 	if (func_29(uParam0->f_3, 4))
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -2130852007, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -102241052, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 1171995096, 3, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM_VEHICLE"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_TRAMPLE"), 3, 0, -1);
 	}
 }
 

@@ -532,7 +532,7 @@ void __EntryFunction__()
 							ENTITY::_0x18FF3110CF47115D(&(iLocal_731[2]), 19, 1);
 							PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_731[2]), 1269650476);
 							PED::SET_PED_CONFIG_FLAG(&(iLocal_731[2]), 6, true);
-							LAW::_0xFFEBE5AA96BC2E4E(&(iLocal_731[2]), 195938434, 1);
+							LAW::_0xFFEBE5AA96BC2E4E(&(iLocal_731[2]), joaat("CRIME_ASSAULT"), 1);
 							func_38();
 						}
 						iLocal_766 = 4;
@@ -1461,8 +1461,8 @@ int func_43()
 			iLocal_768 = 4;
 			break;
 		case 4:
-			LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[0]), Global_35, &(iLocal_731[0]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), 1343354387);
-			LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[1]), Global_35, &(iLocal_731[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), 1343354387);
+			LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[0]), Global_35, &(iLocal_731[0]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_DISTURBANCE"));
+			LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[1]), Global_35, &(iLocal_731[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_DISTURBANCE"));
 			iLocal_768 = 6;
 			break;
 		case 6:
@@ -10709,7 +10709,7 @@ int func_299()
 				}
 				TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 3, 0, -1082130432, -1, 0);
 				func_293(&(iLocal_731[0]), &iVar0, 0, 0, 1, 1);
-				LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[0]), Global_35, &(iLocal_731[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), 195938434);
+				LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[0]), Global_35, &(iLocal_731[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_ASSAULT"));
 				func_119(&(iLocal_731[0]), Global_35, func_118(21), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				func_289(iLocal_731[0], 1, 0, 1);
 				iLocal_925++;
@@ -10738,7 +10738,7 @@ int func_299()
 				}
 				TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 3, 0, -1082130432, -1, 0);
 				func_293(&(iLocal_731[1]), &iVar1, 0, 0, 1, 1);
-				LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[1]), Global_35, &(iLocal_731[0]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), 195938434);
+				LAW::_0xF0B67BAD53C35BD9(&(iLocal_731[1]), Global_35, &(iLocal_731[0]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), joaat("CRIME_ASSAULT"));
 				func_289(iLocal_731[1], 1, 0, 1);
 				iLocal_925++;
 			}

@@ -1966,14 +1966,14 @@ int func_38()
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar3);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1341.302f, -1378.364f, 83.28135f, 1f, -1, 0.25f, 131072, 315f);
-					TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("world_human_drinking"), -1, true, 0, -1f, false);
+					TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_DRINKING"), -1, true, 0, -1f, false);
 					func_153(&(uLocal_727[0]), &iVar3, 0, 0, 1, 1);
 				}
 				if (!PED::IS_PED_USING_ANY_SCENARIO(&(uLocal_727[1])))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar3);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1338.938f, -1374.628f, 83.28929f, 1f, -1, 0.25f, 131072, 352f);
-					TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("world_human_drinking"), -1, true, 0, -1f, false);
+					TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_DRINKING"), -1, true, 0, -1f, false);
 					func_153(&(uLocal_727[1]), &iVar3, 0, 0, 1, 1);
 				}
 				func_133(9);
@@ -3639,7 +3639,7 @@ float func_105()
 
 int func_106()
 {
-	if (((func_292(Global_35, -319279711) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 0)) && iLocal_16 == 1) && !func_3(iLocal_289, 32768))
+	if (((func_292(Global_35, joaat("PROP_PLAYER_CASH_REGISTER_OPEN")) && TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 0)) && iLocal_16 == 1) && !func_3(iLocal_289, 32768))
 	{
 		func_46(&iLocal_289, 4194304);
 		func_55(1);
@@ -29475,20 +29475,20 @@ var func_947(int iParam0)
 	{
 		case 0:
 			iVar0 = 3;
-			iVar1[0] = 830847823;
+			iVar1[0] = joaat("WORLD_HUMAN_STARE_STOIC");
 			iVar1[1] = joaat("WORLD_HUMAN_SMOKE");
-			iVar1[2] = 2087366558;
+			iVar1[2] = joaat("WORLD_HUMAN_STAND_WAITING");
 			break;
 		case 1:
 			iVar0 = 3;
 			iVar1[0] = joaat("WORLD_HUMAN_SMOKE");
 			iVar1[1] = joaat("WORLD_HUMAN_WAITING_IMPATIENT");
-			iVar1[2] = 830847823;
+			iVar1[2] = joaat("WORLD_HUMAN_STARE_STOIC");
 			break;
 		case 2:
 			iVar0 = 2;
-			iVar1[0] = 2087366558;
-			iVar1[1] = -1982207864;
+			iVar1[0] = joaat("WORLD_HUMAN_STAND_WAITING");
+			iVar1[1] = joaat("WORLD_HUMAN_SHOP_BROWSE");
 			break;
 		default:
 			break;

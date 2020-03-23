@@ -456,7 +456,7 @@ int func_9(var uParam0)
 	iLocal_2 = func_20(uParam0, 100);
 	iLocal_3 = func_20(uParam0, 483);
 	iLocal_4 = func_21(uParam0, joaat("PROP_HUMAN_SEAT_BENCH_PORCH"), 2352.84f, 1363.76f, 105.45f, 120.805f, "PROP_HUMAN_SEAT_BENCH_PORCH_MALE_A", -1f);
-	iLocal_5 = func_21(uParam0, 2087366558, 2357.75f, 1374.45f, 105.5485f, 153.5243f, 0, -1f);
+	iLocal_5 = func_21(uParam0, joaat("WORLD_HUMAN_STAND_WAITING"), 2357.75f, 1374.45f, 105.5485f, 153.5243f, 0, -1f);
 	return 1;
 }
 
@@ -4249,7 +4249,7 @@ int func_147(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

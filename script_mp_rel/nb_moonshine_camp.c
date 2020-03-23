@@ -8502,8 +8502,8 @@ int func_395(var uParam0, vector3 vParam1, int iParam4, int iParam5)
 		}
 		return 1;
 	}
-	STREAMING::REQUEST_NAMED_PTFX_ASSET(-458373790);
-	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(-458373790))
+	STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("scr_distance_smoke"));
+	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("scr_distance_smoke")))
 	{
 		if (!func_160(uParam0->f_1, 8))
 		{

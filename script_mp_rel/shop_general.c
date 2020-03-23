@@ -3607,7 +3607,7 @@ int func_47(int iParam0)
 		switch (iVar2)
 		{
 			case 26:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 3:
 			case 4:
@@ -3629,14 +3629,14 @@ int func_47(int iParam0)
 			case 70:
 			case 71:
 			case 82:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 12:
 			case 60:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 104:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 			case 86:
 				iVar1 = joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_BAR_CA");
@@ -3686,7 +3686,7 @@ int func_47(int iParam0)
 				iVar1 = joaat("PROP_HUMAN_SEAT_NO_BACK_WIP_COLLECTION");
 				break;
 			default:
-				iVar1 = 830847823;
+				iVar1 = joaat("WORLD_HUMAN_STARE_STOIC");
 				break;
 		}
 	}
@@ -3702,7 +3702,7 @@ int func_47(int iParam0)
 		if (iVar1 == joaat("WORLD_HUMAN_SHOPKEEPER"))
 		{
 		}
-		else if (iVar1 == 830847823)
+		else if (iVar1 == joaat("WORLD_HUMAN_STARE_STOIC"))
 		{
 		}
 		iVar6 = 0;
@@ -41212,7 +41212,7 @@ void func_1218(bool bParam0)
 		fVar0 = 15f;
 	}
 	LAW::_0x710448D44A64C213(1);
-	LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), -1521715232, 0, fVar0, 0, 0, fVar0, 0, 0);
+	LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), 0, fVar0, 0, 0, fVar0, 0, 0);
 	uVar5 = 1;
 	func_1845(&iVar1, &uVar5, Global_35, 10, 3, fVar0, 1, 0, 1, 1.5f);
 	iVar7 = 0;
@@ -41226,9 +41226,9 @@ void func_1218(bool bParam0)
 			PED::SET_PED_CONFIG_FLAG(&(iVar1[iVar7]), 148, false);
 			PED::SET_PED_CONFIG_FLAG(&(iVar1[iVar7]), 113, true);
 			vVar9 = { ENTITY::GET_ENTITY_COORDS(&(iVar1[iVar7]), true, false) };
-			LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), -1521715232, &(iVar1[iVar7]));
+			LAW::_0x10827B5A0AAC56A7(PLAYER::PLAYER_ID(), joaat("CRIME_BURGLARY"), &(iVar1[iVar7]));
 			func_1846(&(iVar1[iVar7]), Global_35, 3, 1, 1);
-			LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar7]), Global_34, &(iVar1[iVar7]), Global_35, -1521715232);
+			LAW::_0xF0B67BAD53C35BD9(&(iVar1[iVar7]), Global_34, &(iVar1[iVar7]), Global_35, joaat("CRIME_BURGLARY"));
 			iVar8++;
 			if (iVar8 > 1)
 			{
@@ -41698,93 +41698,93 @@ Vector3 func_1247(var uParam0, int iParam1)
 	vVar0 = { uParam0->f_167.f_1757 };
 	if (uParam0->f_4 == 69)
 	{
-		if (iParam1 == -110352861)
+		if (iParam1 == joaat("KIT_EMOTE_REACTION_SHOT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.15f, 0.15f) };
 		}
-		else if (iParam1 == 523585988)
+		else if (iParam1 == joaat("KIT_EMOTE_GREET_GLAD_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.2f, 0.2f) };
 		}
-		else if ((iParam1 == -773960361 || iParam1 == 796723886) || iParam1 == 1307697675)
+		else if ((iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1") || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1")) || iParam1 == joaat("KIT_EMOTE_ACTION_PROSPECTOR_JIG_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.1f, 0.1f) };
 		}
 	}
 	if (uParam0->f_4 == 84)
 	{
-		if (iParam1 == -110352861 || iParam1 == 1307697675)
+		if (iParam1 == joaat("KIT_EMOTE_REACTION_SHOT_1") || iParam1 == joaat("KIT_EMOTE_ACTION_PROSPECTOR_JIG_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.15f, 0.05f) };
 		}
-		else if (iParam1 == 523585988)
+		else if (iParam1 == joaat("KIT_EMOTE_GREET_GLAD_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.4f, 0.15f) };
 		}
-		else if (iParam1 == -773960361 || iParam1 == 796723886)
+		else if (iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1") || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.35f, 0.05f) };
 		}
 	}
 	if (uParam0->f_4 == 19)
 	{
-		if (((iParam1 == -2121881035 || iParam1 == -2106738342) || iParam1 == -773960361) || iParam1 == 796723886)
+		if (((iParam1 == joaat("KIT_EMOTE_GREET_FANCY_BOW_1") || iParam1 == joaat("KIT_EMOTE_ACTION_SPIT_1")) || iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1")) || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.1f, 0.2f) };
 		}
-		else if (iParam1 == -110352861 || iParam1 == 803206066)
+		else if (iParam1 == joaat("KIT_EMOTE_REACTION_SHOT_1") || iParam1 == joaat("KIT_EMOTE_REACTION_POINTLAUGH_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.2f, 0.3f) };
 		}
 	}
 	if (uParam0->f_4 == 33)
 	{
-		if (iParam1 == 523585988)
+		if (iParam1 == joaat("KIT_EMOTE_GREET_GLAD_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0f, -0.25f) };
 		}
-		else if (iParam1 == -773960361 || iParam1 == 796723886)
+		else if (iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1") || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.05f, -0.15f) };
 		}
 	}
 	if (uParam0->f_4 == 108)
 	{
-		if (iParam1 == -1118911493)
+		if (iParam1 == joaat("KIT_EMOTE_REACTION_HURL_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.15f, 0f) };
 		}
-		else if (iParam1 == -110352861)
+		else if (iParam1 == joaat("KIT_EMOTE_REACTION_SHOT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.25f, 0f) };
 		}
-		else if (iParam1 == 523585988 || iParam1 == 1307697675)
+		else if (iParam1 == joaat("KIT_EMOTE_GREET_GLAD_1") || iParam1 == joaat("KIT_EMOTE_ACTION_PROSPECTOR_JIG_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.35f, 0.2f) };
 		}
-		else if (iParam1 == -2121881035)
+		else if (iParam1 == joaat("KIT_EMOTE_GREET_FANCY_BOW_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.3f, -0.1f) };
 		}
-		else if (iParam1 == -773960361 || iParam1 == 796723886)
+		else if (iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1") || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.2f, 0.1f) };
 		}
 	}
 	if (uParam0->f_4 == 102)
 	{
-		if (((((iParam1 == -1118911493 || iParam1 == -2106738342) || iParam1 == 523585988) || iParam1 == 1879954891) || iParam1 == -773960361) || iParam1 == 796723886)
+		if (((((iParam1 == joaat("KIT_EMOTE_REACTION_HURL_1") || iParam1 == joaat("KIT_EMOTE_ACTION_SPIT_1")) || iParam1 == joaat("KIT_EMOTE_GREET_GLAD_1")) || iParam1 == joaat("KIT_EMOTE_GREET_TOUGH_1")) || iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1")) || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.25f, 0f) };
 		}
-		else if (iParam1 == -110352861)
+		else if (iParam1 == joaat("KIT_EMOTE_REACTION_SHOT_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, -0.4f, 0f) };
 		}
 	}
 	if (uParam0->f_4 == 99)
 	{
-		if (((iParam1 == -773960361 || iParam1 == 796723886) || iParam1 == 523585988) || iParam1 == 1307697675)
+		if (((iParam1 == joaat("KIT_EMOTE_ACTION_FLEX_1") || iParam1 == joaat("KIT_EMOTE_ACTION_HISSYFIT_1")) || iParam1 == joaat("KIT_EMOTE_GREET_GLAD_1")) || iParam1 == joaat("KIT_EMOTE_ACTION_PROSPECTOR_JIG_1"))
 		{
 			vVar0 = { vVar0 + Vector(0f, 0.05f, -0.1f) };
 		}

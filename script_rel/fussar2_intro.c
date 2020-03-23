@@ -2885,7 +2885,7 @@ bool func_128(int iParam0)
 	while (iVar1 <= 1)
 	{
 		StringCopy(&((Local_34[iVar1 /*9*/])->f_1), "WORLD_HUMAN_STARE_STOIC", 64);
-		Local_34[iVar1 /*9*/] = 830847823;
+		Local_34[iVar1 /*9*/] = joaat("WORLD_HUMAN_STARE_STOIC");
 		if (!func_268(&(Local_34[iVar1 /*9*/]), 1, 0, 0))
 		{
 		}
@@ -16320,7 +16320,7 @@ int func_670(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

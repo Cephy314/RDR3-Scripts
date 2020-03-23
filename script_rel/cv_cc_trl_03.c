@@ -3114,7 +3114,7 @@ int func_72(var uParam0)
 	func_158(uParam0, iLocal_14, 4, 1, 0, 0, 0);
 	func_159(uParam0, iLocal_14, 2, joaat("WORLD_HUMAN_SIT_GROUND_READING_JOURNAL"), "WORLD_HUMAN_SIT_GROUND_READING_JOURNAL_FEMALE_A", -1, 1, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_160(uParam0, iLocal_14, iLocal_18, "p_cs_ledgerSmall01x_PH_L_HAND", 0, 0);
-	func_156(uParam0, iLocal_15, 3, 2087366558, "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
+	func_156(uParam0, iLocal_15, 3, joaat("WORLD_HUMAN_STAND_WAITING"), "WORLD_HUMAN_STAND_WAITING_FEMALE_A", -1, 1);
 	func_157(uParam0, iLocal_15, 1, -1);
 	func_158(uParam0, iLocal_15, 2, 1, 0, 0, 0);
 	func_161(uParam0, "script@vignette@trelawny_3@base", 1, 1, 0, 0);
@@ -8347,7 +8347,7 @@ int func_269(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11045,7 +11045,7 @@ int func_375(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_406(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

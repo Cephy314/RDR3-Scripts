@@ -1683,7 +1683,7 @@ int func_93(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	iVar3 = TASK::_0xF533D68FF970D190(vVar0, 1579036847, 5.5f, 0, 0);
+	iVar3 = TASK::_0xF533D68FF970D190(vVar0, joaat("WORLD_ANIMAL_DOG_PLAYER_TENT_TG"), 5.5f, 0, 0);
 	if (TASK::_0x841475AC96E794D1(iVar3))
 	{
 		*uParam1 = iVar3;

@@ -8606,11 +8606,11 @@ int func_317(var uParam0, int iParam1)
 		}
 		else if (iVar0 == 1)
 		{
-			TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_439.f_3[iParam1]), 2087366558, *(uParam0->f_439.f_13[iParam1 /*3*/]), &(uParam0->f_439.f_20[iParam1]), -1, true, false, 0, -1f, false);
+			TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_439.f_3[iParam1]), joaat("WORLD_HUMAN_STAND_WAITING"), *(uParam0->f_439.f_13[iParam1 /*3*/]), &(uParam0->f_439.f_20[iParam1]), -1, true, false, 0, -1f, false);
 		}
 		else if (iVar0 == 2)
 		{
-			TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_439.f_3[iParam1]), 830847823, *(uParam0->f_439.f_13[iParam1 /*3*/]), &(uParam0->f_439.f_20[iParam1]), -1, true, false, 0, -1f, false);
+			TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_439.f_3[iParam1]), joaat("WORLD_HUMAN_STARE_STOIC"), *(uParam0->f_439.f_13[iParam1 /*3*/]), &(uParam0->f_439.f_20[iParam1]), -1, true, false, 0, -1f, false);
 		}
 		else if (iVar0 == 3)
 		{
@@ -14261,7 +14261,7 @@ int func_563(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

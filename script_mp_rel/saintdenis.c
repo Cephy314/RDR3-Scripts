@@ -2789,7 +2789,7 @@ void func_89()
 
 void func_90()
 {
-	func_190(&uLocal_160, &uLocal_162, &uLocal_161, 2753.91f, -1396.01f, 45.21f, joaat("ui_note_trolley_digest"), 715447956 /* GXTEntry: "Bill\'s Dishonorable Discharge" */, joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_Paper_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"));
+	func_190(&uLocal_160, &uLocal_162, &uLocal_161, 2753.91f, -1396.01f, 45.21f, joaat("ui_note_trolley_digest"), 715447956 /* GXTEntry: "Bill\'s Dishonorable Discharge" */, joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_PAPER_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"));
 }
 
 int func_91(bool bParam0)

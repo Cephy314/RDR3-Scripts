@@ -4012,7 +4012,7 @@ bool func_182()
 {
 	if (!TASK::_0x841475AC96E794D1(Global_1899848->f_15.f_1))
 	{
-		Global_1899848->f_15.f_1 = TASK::CREATE_SCENARIO_POINT(-1478204157, Global_1899848->f_15.f_2, Global_1899848->f_15.f_5, 0f, 0, 1);
+		Global_1899848->f_15.f_1 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_PUTDOWN"), Global_1899848->f_15.f_2, Global_1899848->f_15.f_5, 0f, 0, 1);
 		if (Global_1899848->f_2 == 1)
 		{
 			func_203(0);

@@ -2959,7 +2959,7 @@ int func_102(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
+			return joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 		default:
 			break;
 	}

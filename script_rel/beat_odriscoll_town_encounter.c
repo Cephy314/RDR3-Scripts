@@ -301,12 +301,12 @@ int func_7()
 			switch (Local_20.f_313)
 			{
 				case 0:
-					func_52(joaat("world_human_drinking"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("world_human_drinking")));
+					func_52(joaat("WORLD_HUMAN_DRINKING"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("WORLD_HUMAN_DRINKING")));
 					func_52(joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING")));
 					func_52(joaat("WORLD_HUMAN_SMOKE"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("WORLD_HUMAN_SMOKE")));
 					break;
 				case 1:
-					func_52(joaat("world_human_drinking"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("world_human_drinking")));
+					func_52(joaat("WORLD_HUMAN_DRINKING"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("WORLD_HUMAN_DRINKING")));
 					func_52(joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING")));
 					func_52(joaat("WORLD_HUMAN_LEAN_POST_RIGHT"), iVar0, joaat("g_m_m_uniduster_01"), func_51(joaat("WORLD_HUMAN_LEAN_POST_RIGHT")));
 					break;
@@ -319,7 +319,7 @@ int func_7()
 			{
 				case 0:
 					bLocal_18 = true;
-					if (!func_54(joaat("world_human_drinking")))
+					if (!func_54(joaat("WORLD_HUMAN_DRINKING")))
 					{
 						iVar1 = 0;
 					}
@@ -334,7 +334,7 @@ int func_7()
 					break;
 				case 1:
 					bLocal_18 = false;
-					if (!func_54(joaat("world_human_drinking")))
+					if (!func_54(joaat("WORLD_HUMAN_DRINKING")))
 					{
 						iVar1 = 0;
 					}
@@ -1274,7 +1274,7 @@ int func_51(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("world_human_drinking"):
+		case joaat("WORLD_HUMAN_DRINKING"):
 			return 2110094855;
 		case joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING"):
 			return 270778494;
@@ -1428,7 +1428,7 @@ int func_59(var uParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("world_human_drinking");
+					return joaat("WORLD_HUMAN_DRINKING");
 				case 1:
 					return joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING");
 				case 2:
@@ -1441,7 +1441,7 @@ int func_59(var uParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("world_human_drinking");
+					return joaat("WORLD_HUMAN_DRINKING");
 				case 1:
 					return joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING");
 				case 2:
@@ -1463,7 +1463,7 @@ char* func_61(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("world_human_drinking"):
+		case joaat("WORLD_HUMAN_DRINKING"):
 			return "WORLD_HUMAN_STAND_DRINK_MALE_A";
 		case joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING"):
 			return "WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_MALE_D";
@@ -5764,9 +5764,9 @@ void func_194(var uParam0)
 {
 	if (func_30(uParam0->f_3, 4))
 	{
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -2130852007, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), -102241052, 0, 0, -1);
-		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), 1171995096, 3, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_VANDALISM_VEHICLE"), 0, 0, -1);
+		LAW::_0x785177E4D57D7389(PLAYER::PLAYER_ID(), joaat("CRIME_TRAMPLE"), 3, 0, -1);
 	}
 }
 

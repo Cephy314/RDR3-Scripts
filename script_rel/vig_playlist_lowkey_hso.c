@@ -462,7 +462,7 @@ int func_9(var uParam0)
 	{
 		case 1:
 			iLocal_5 = func_22(uParam0, joaat("GENERIC_SEAT_CHAIR_TABLE_SCENARIO"), -139.35f, -28.86f, 95.59f, 337.4858f, 0, -1082130432 /* Float: -1f */);
-			iLocal_6 = func_22(uParam0, 2087366558, -133.43f, -32.32f, 95.18f, 89.892f, 0, -1082130432 /* Float: -1f */);
+			iLocal_6 = func_22(uParam0, joaat("WORLD_HUMAN_STAND_WAITING"), -133.43f, -32.32f, 95.18f, 89.892f, 0, -1082130432 /* Float: -1f */);
 			iLocal_7 = func_22(uParam0, joaat("WORLD_CAMP_FIRE_SEATED_GROUND"), -141.17f, -40.56f, 94.51f, -163.644f, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1082130432 /* Float: -1f */);
 			iLocal_8 = func_22(uParam0, joaat("PROP_CAMP_FIRE_SEATED"), -137.62f, -40.93f, 94.98f, 125.1381f, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", -1082130432 /* Float: -1f */);
 			iLocal_9 = func_22(uParam0, joaat("stand"), -134.823f, -40.2142f, 95.5573f, 131.4639f, 0, -1082130432 /* Float: -1f */);
@@ -1837,7 +1837,7 @@ int func_61(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:

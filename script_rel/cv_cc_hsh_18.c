@@ -3117,7 +3117,7 @@ int func_72(var uParam0)
 	Local_21 = { func_155(uParam0, 0.1f, -1.5f, 1f, 90f, 8f, 0.5f, 0.5f) };
 	Local_31 = { func_155(uParam0, 0.1f, -1.5f, 1f, 180f, 8f, 0.5f, 0.5f) };
 	Local_41 = { func_155(uParam0, 0.1f, -1.5f, 1f, 0f, 8f, 0.5f, 0.5f) };
-	func_156(uParam0, iLocal_14, 3, 2087366558, 0, -1, 1, 45f, 1065353216 /* Float: 1f */, 1);
+	func_156(uParam0, iLocal_14, 3, joaat("WORLD_HUMAN_STAND_WAITING"), 0, -1, 1, 45f, 1065353216 /* Float: 1f */, 1);
 	func_157(uParam0, iLocal_14, 3, 0);
 	func_158(uParam0, iLocal_14, 2, 1, 0, 0, 0);
 	func_159(uParam0, iLocal_14, 1);
@@ -9282,7 +9282,7 @@ int func_273(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -11135,7 +11135,7 @@ int func_352(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_389(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

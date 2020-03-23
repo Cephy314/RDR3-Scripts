@@ -132,7 +132,7 @@ void __EntryFunction__()
 	fLocal_85 = 100f;
 	fLocal_86 = 0f;
 	iLocal_87 = joaat("ui_note_dutch");
-	iLocal_88 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
+	iLocal_88 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 	vLocal_92 = { -129.1927f, -68.5704f, 90.6221f };
 	func_1();
 	func_2();

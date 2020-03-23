@@ -50,7 +50,7 @@ void __EntryFunction__()
 
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
-	iLocal_11 = 830847823;
+	iLocal_11 = joaat("WORLD_HUMAN_STARE_STOIC");
 	Var0.f_1 = -1;
 	Var0.f_3.f_9 = 3;
 	Var0.f_20 = 25;

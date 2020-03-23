@@ -1218,7 +1218,7 @@ int func_27()
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[0]), 128);
 					func_130(&(uLocal_570[0]), uLocal_575[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
 					func_131(uLocal_570[0], &Local_398, &Local_475, 1, 1);
-					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), 1343354387, 0, 0, 0, 0, 0, 0, 0);
+					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_DISTURBANCE"), 0, 0, 0, 0, 0, 0, 0);
 					TASK::CLEAR_PED_TASKS(&(uLocal_570[1]), 1, 0);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(uLocal_570[1]), false);
 					MISC::_0xE98D55C5983F2509(&(uLocal_570[1]));

@@ -3335,7 +3335,7 @@ int func_81(var uParam0)
 	iLocal_92 = func_165(uParam0, 1, 0);
 	func_166(uParam0, 3.6852f, -4.1639f, 0.9639f, 8.4934f, 1.5f, 1.5f, 3f, -1612834106, 1267380940, 1, 1, 1);
 	func_166(uParam0, 3.99f, 18.41f, 1.3566f, 137.0659f, 12.96f, 14.92f, 5f, -1612834106, -1495061186, 1, 1, 1);
-	func_167(uParam0, iLocal_92, 3, 830847823, 0, -1, 0);
+	func_167(uParam0, iLocal_92, 3, joaat("WORLD_HUMAN_STARE_STOIC"), 0, -1, 0);
 	func_168(uParam0, iLocal_92, -117.72f, -19.63f, 94.99f, -101.916f, 0, 0);
 	iLocal_94 = 4;
 	iLocal_95 = 5;
@@ -3622,7 +3622,7 @@ int func_95(var uParam0)
 	func_209(uParam0, func_49(uParam0, iLocal_97), "KEY_HORSE_B");
 	PED::SET_PED_CAN_BE_TARGETTED(func_49(uParam0, iLocal_94), false);
 	PED::SET_PED_CAN_BE_TARGETTED(func_49(uParam0, iLocal_95), false);
-	iLocal_124 = TASK::CREATE_SCENARIO_POINT(830847823, -104.84f, -11.56f, 94.51f, -106.129f, 0f, 0, 0);
+	iLocal_124 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_STARE_STOIC"), -104.84f, -11.56f, 94.51f, -106.129f, 0f, 0, 0);
 	TASK::_0x5AF19B6CC2115D34(iLocal_124, 23, 1);
 	TASK::_0x5AF19B6CC2115D34(iLocal_124, 25, 1);
 	func_208(uParam0, iLocal_100, 0);
@@ -9451,7 +9451,7 @@ int func_306(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -12270,7 +12270,7 @@ int func_420(var uParam0, int iParam1)
 	while (iVar2 <= iVar1)
 	{
 		vVar3 = { func_470(iVar2) };
-		iVar8 = TASK::_0xF533D68FF970D190(vVar3, 2025402643, 1f, 1, 0);
+		iVar8 = TASK::_0xF533D68FF970D190(vVar3, joaat("WORLD_CAMP_VIG_EXIT_TG"), 1f, 1, 0);
 		if (!TASK::_0x841475AC96E794D1(iVar8))
 		{
 		}

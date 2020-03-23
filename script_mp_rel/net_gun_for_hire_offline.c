@@ -79802,11 +79802,11 @@ int func_1289(int iParam0, int iParam1)
 				return 267;
 			case joaat("WORLD_HUMAN_COAL_SACK_PICKUP_COUNTER"):
 				return 518;
-			case -2096216496:
+			case joaat("PROP_VEHICLE_SEAT_PASSENGER_TRAIN_DINING"):
 				return 16;
 			case -2094416950:
 				return 2251;
-			case -2094129423:
+			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_CC"):
 				return 60;
 			case joaat("WORLD_HUMAN_FEED_PIGS"):
 				return 533;
@@ -79872,7 +79872,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1423;
 			case -2033066696:
 				return 1380;
-			case joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_Paper_W12_7_h17_78_p_cs_photo_5x7"):
+			case joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_PAPER_W12_7_H17_78_P_CS_PHOTO_5X7"):
 				return 1543;
 			case -2027299560:
 				return 253;
@@ -79932,7 +79932,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2298;
 			case -1982673468:
 				return 2630;
-			case -1982207864:
+			case joaat("WORLD_HUMAN_SHOP_BROWSE"):
 				return 224;
 			case -1980304607:
 				return 1757;
@@ -79946,7 +79946,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2616;
 			case -1969734852:
 				return 1390;
-			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedalive01x"):
+			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X"):
 				return 1546;
 			case joaat("WORLD_ANIMAL_FOX_DIGGING"):
 				return 805;
@@ -79980,7 +79980,7 @@ int func_1289(int iParam0, int iParam1)
 				return 273;
 			case -1939887874:
 				return 1716;
-			case -1939629183:
+			case joaat("WORLD_HUMAN_SKETCHBOOK_PICKUP_PUTDOWN_GROUND"):
 				return 66;
 			case -1939316457:
 				return 2458;
@@ -79988,7 +79988,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2001;
 			case -1932854998:
 				return 924;
-			case -1932609172:
+			case joaat("WORLD_HUMAN_CAULDRON_ALWAYS"):
 				return 33;
 			case -1932469858:
 				return 968;
@@ -80044,17 +80044,17 @@ int func_1289(int iParam0, int iParam1)
 				return 837;
 			case -1884795646:
 				return 2335;
-			case joaat("world_human_seat_ledge"):
+			case joaat("WORLD_HUMAN_SEAT_LEDGE"):
 				return 421;
 			case -1883392228:
 				return 1036;
-			case -1883312554:
+			case joaat("WORLD_HUMAN_FIDDLE_PICKUP_PUTDOWN"):
 				return 39;
 			case -1882486255:
 				return 2243;
 			case -1881279240:
 				return 1447;
-			case -1880549997:
+			case joaat("PROP_PLAYER_CASH_REGISTER_LOCKBREAK"):
 				return 1444;
 			case -1878803090:
 				return 2548;
@@ -80108,7 +80108,7 @@ int func_1289(int iParam0, int iParam1)
 				return 843;
 			case -1842399202:
 				return 1855;
-			case -1841370788:
+			case joaat("WORLD_HUMAN_FISHING_POLE_PICKUP_PUTDOWN"):
 				return 48;
 			case -1840784802:
 				return 1936;
@@ -80138,7 +80138,7 @@ int func_1289(int iParam0, int iParam1)
 				return 264;
 			case -1820115868:
 				return 1892;
-			case -1816442556:
+			case joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE"):
 				return 12;
 			case joaat("WORLD_ANIMAL_BEARBLACK_EAT_CARCASS"):
 				return 710;
@@ -80168,7 +80168,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2419;
 			case joaat("WORLD_HUMAN_LEAN_WALL_DRINKING_RIGHT"):
 				return 375;
-			case -1792023725:
+			case joaat("WORLD_HUMAN_BANJO_PICKUP_PUTDOWN"):
 				return 25;
 			case -1789866539:
 				return 2563;
@@ -80338,7 +80338,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2571;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_3_GINNED"):
 				return 526;
-			case -1653592878:
+			case joaat("PROP_CAMP_SEAT_CAMPFIRE_MALES"):
 				return 5;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_DRINKING"):
 				return 286;
@@ -80356,11 +80356,11 @@ int func_1289(int iParam0, int iParam1)
 				return 1362;
 			case -1631851776:
 				return 257;
-			case joaat("world_vehicle_drive_solo"):
+			case joaat("WORLD_VEHICLE_DRIVE_SOLO"):
 				return 1151;
 			case joaat("WORLD_ANIMAL_BEAR_SLEEPING"):
 				return 708;
-			case -1629386876:
+			case joaat("WORLD_HUMAN_BROOM_PICKUP_PUTDOWN"):
 				return 30;
 			case -1629159913:
 				return 1933;
@@ -80436,13 +80436,13 @@ int func_1289(int iParam0, int iParam1)
 				return 216;
 			case -1554719581:
 				return 1258;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1522;
 			case joaat("WORLD_CAMP_JACK_TREE"):
 				return 141;
 			case -1550170582:
 				return 2438;
-			case -1548237173:
+			case joaat("WORLD_HUMAN_PUSH_BROOM_PICKUP_PUTDOWN"):
 				return 57;
 			case joaat("WORLD_HUMAN_SMOKE_CIGAR"):
 				return 404;
@@ -80466,7 +80466,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1187;
 			case -1529588078:
 				return 1894;
-			case -1525722581:
+			case joaat("WORLD_HUMAN_FIRE_GEN_COLD"):
 				return 42;
 			case -1525360788:
 				return 1808;
@@ -80504,7 +80504,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2093;
 			case joaat("WORLD_ANIMAL_OX_DRINK_GROUND"):
 				return 842;
-			case -1478204157:
+			case joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_PUTDOWN"):
 				return 71;
 			case -1478123812:
 				return 894;
@@ -80540,7 +80540,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1284;
 			case -1450526648:
 				return 1389;
-			case joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_Paper_W17_78_h12_7_p_cs_photoR_5x7"):
+			case joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_PAPER_W17_78_H12_7_P_CS_PHOTOR_5X7"):
 				return 1544;
 			case joaat("cig_card_art_11"):
 				return 1001;
@@ -80570,19 +80570,19 @@ int func_1289(int iParam0, int iParam1)
 				return 2240;
 			case -1420736735:
 				return 2319;
-			case -1418815802:
+			case joaat("WORLD_HUMAN_FEEDBAG_PICKUP_PUTDOWN"):
 				return 38;
 			case joaat("WORLD_HUMAN_RUM_CRATE_PICKUP_3"):
 				return 579;
 			case joaat("WORLD_ANIMAL_VULTURE_EATING"):
 				return 682;
-			case -1409306813:
+			case joaat("WORLD_HUMAN_FIRE_GEN_SIT_COLD"):
 				return 45;
 			case -1405108472:
 				return 1988;
 			case -1398754432:
 				return 1884;
-			case -1396922479:
+			case joaat("WORLD_HUMAN_FIRE_GEN_STAND_COLD"):
 				return 47;
 			case -1396710873:
 				return 2095;
@@ -80610,7 +80610,7 @@ int func_1289(int iParam0, int iParam1)
 				return 137;
 			case -1381480510:
 				return 2099;
-			case joaat("world_vehicle_attractor"):
+			case joaat("WORLD_VEHICLE_ATTRACTOR"):
 				return 1148;
 			case -1377345125:
 				return 2038;
@@ -80632,7 +80632,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1827;
 			case -1357157684:
 				return 1358;
-			case -1355241909:
+			case joaat("WORLD_HUMAN_NEWSPAPER_PICKUP_PUTDOWN"):
 				return 55;
 			case -1354885594:
 				return 1220;
@@ -80646,7 +80646,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1837;
 			case joaat("WORLD_HUMAN_GUITAR_PICKUP"):
 				return 205;
-			case -1347867475:
+			case joaat("WORLD_HUMAN_FIRE_GEN_SIT"):
 				return 44;
 			case -1342226726:
 				return 1765;
@@ -80658,7 +80658,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1344;
 			case -1338300561:
 				return 2035;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_P_CS_rt_letterL_Dbl"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_RT_LETTERL_DBL"):
 				return 1533;
 			case -1337298951:
 				return 2085;
@@ -80678,7 +80678,7 @@ int func_1289(int iParam0, int iParam1)
 				return 812;
 			case -1327059943:
 				return 2580;
-			case -1322841316:
+			case joaat("PROP_HUMAN_WOOD_CHOP"):
 				return 2524;
 			case joaat("WORLD_ANIMAL_ELK_INJURED_ON_GROUND"):
 				return 802;
@@ -80820,7 +80820,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2531;
 			case -1207380412:
 				return 2231;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1525;
 			case -1202418356:
 				return 2204;
@@ -80952,7 +80952,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1111;
 			case -1123279596:
 				return 892;
-			case joaat("world_human_drinking"):
+			case joaat("WORLD_HUMAN_DRINKING"):
 				return 337;
 			case joaat("WORLD_HUMAN_SIT_DRINK"):
 				return 381;
@@ -80976,13 +80976,13 @@ int func_1289(int iParam0, int iParam1)
 				return 2480;
 			case joaat("WORLD_HUMAN_LEAN_WALL_RIGHT"):
 				return 377;
-			case -1096266146:
+			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN"):
 				return 59;
 			case -1094880609:
 				return 2192;
 			case -1093245144:
 				return 1185;
-			case joaat("WORLD_PLAYER_CARCASS_CUT_1m80"):
+			case joaat("WORLD_PLAYER_CARCASS_CUT_1M80"):
 				return 1490;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_2_RAW"):
 				return 525;
@@ -80992,7 +80992,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2075;
 			case -1083595936:
 				return 2211;
-			case -1081569269:
+			case joaat("PROP_VEHICLE_SEAT_PASSENGER_TRAIN_TABLE"):
 				return 17;
 			case -1080500277:
 				return 1398;
@@ -81006,7 +81006,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1486;
 			case joaat("PROP_CAMP_FIRE_SEAT_BENCH"):
 				return 81;
-			case joaat("world_vehicle_drive_passengers"):
+			case joaat("WORLD_VEHICLE_DRIVE_PASSENGERS"):
 				return 1149;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_LOAD_2"):
 				return 457;
@@ -81014,7 +81014,7 @@ int func_1289(int iParam0, int iParam1)
 				return 294;
 			case joaat("WORLD_HUMAN_SHOPKEEPER_CATALOG"):
 				return 597;
-			case -1061631858:
+			case joaat("WORLD_HUMAN_STAND_GEN_NIGHT_SALOON"):
 				return 69;
 			case -1061440619:
 				return 2396;
@@ -81022,7 +81022,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1937;
 			case joaat("WORLD_HUMAN_CAULDRON_STIR"):
 				return 153;
-			case -1056975587:
+			case joaat("WORLD_HUMAN_SHOVEL_PICKUP_PUTDOWN"):
 				return 65;
 			case joaat("WORLD_ANIMAL_GOAT_DRINK_GROUND"):
 				return 813;
@@ -81050,7 +81050,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1721;
 			case -1049130960:
 				return 1287;
-			case joaat("world_vehicle_empty"):
+			case joaat("WORLD_VEHICLE_EMPTY"):
 				return 1153;
 			case -1046233664:
 				return 966;
@@ -81074,7 +81074,7 @@ int func_1289(int iParam0, int iParam1)
 				return 406;
 			case joaat("WORLD_ANIMAL_COW_DRINK_TROUGH"):
 				return 751;
-			case joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W12_7_H17_78_p_cs_photo_5x7"):
+			case joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W12_7_H17_78_P_CS_PHOTO_5X7"):
 				return 1541;
 			case joaat("WORLD_HUMAN_BOOK_PICKUP_GROUND"):
 				return 319;
@@ -81102,7 +81102,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1890;
 			case -1003656747:
 				return 1758;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w15_24_h10_16_p_cs_note01x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W15_24_H10_16_P_CS_NOTE01X"):
 				return 1538;
 			case joaat("WORLD_HUMAN_VAL_BANKTELLER"):
 				return 2421;
@@ -81356,7 +81356,7 @@ int func_1289(int iParam0, int iParam1)
 				return 258;
 			case -768523571:
 				return 1175;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1520;
 			case joaat("MP_LOBBY_WORLD_HUMAN_CROUCH_INSPECT"):
 				return 422;
@@ -81434,7 +81434,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1154;
 			case joaat("PROP_VEHICLE_WAGON_SACK_LOAD_3"):
 				return 472;
-			case -698660926:
+			case joaat("WORLD_HUMAN_STAND_GEN_NIGHT"):
 				return 68;
 			case -698656928:
 				return 1419;
@@ -81534,11 +81534,11 @@ int func_1289(int iParam0, int iParam1)
 				return 1834;
 			case -612900221:
 				return 409;
-			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_P_SI_WANTED_JAVIER01X"):
+			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_SI_WANTED_JAVIER01X"):
 				return 1548;
 			case joaat("WORLD_HUMAN_BUCKET_DRINK_GROUND"):
 				return 329;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w10_16_h15_24_p_cs_oldpaper1889"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_OLDPAPER1889"):
 				return 1537;
 			case -602690338:
 				return 1724;
@@ -81626,7 +81626,7 @@ int func_1289(int iParam0, int iParam1)
 				return 342;
 			case -529258369:
 				return 1658;
-			case joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_Paper_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"):
+			case joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_PAPER_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"):
 				return 1540;
 			case -521386873:
 				return 1584;
@@ -81698,7 +81698,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2199;
 			case joaat("WORLD_HUMAN_LEAN_READ_PAPER_TRAIN_PLANS"):
 				return 210;
-			case -473529865:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_SMOKE_ROLL"):
 				return 2522;
 			case joaat("PROP_HUMAN_REPAIR_WAGON_WHEEL_ON_LARGE"):
 				return 426;
@@ -81798,7 +81798,7 @@ int func_1289(int iParam0, int iParam1)
 				return 111;
 			case -402120378:
 				return 2460;
-			case joaat("world_human_seat_steps"):
+			case joaat("WORLD_HUMAN_SEAT_STEPS"):
 				return 379;
 			case -401484807:
 				return 1089;
@@ -81838,7 +81838,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2219;
 			case -371405990:
 				return 1719;
-			case -370551611:
+			case joaat("WORLD_PLAYER_SIT_GROUND_GENERIC"):
 				return 72;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_CLEAN_RIFLE"):
 				return 112;
@@ -81886,7 +81886,7 @@ int func_1289(int iParam0, int iParam1)
 				return 691;
 			case -327573307:
 				return 2569;
-			case joaat("world_human_stand_fishing"):
+			case joaat("WORLD_HUMAN_STAND_FISHING"):
 				return 607;
 			case joaat("WORLD_ANIMAL_CROW_DRINK_GROUND"):
 				return 636;
@@ -81894,7 +81894,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2406;
 			case -325772919:
 				return 1985;
-			case -319279711:
+			case joaat("PROP_PLAYER_CASH_REGISTER_OPEN"):
 				return 1445;
 			case -318144249:
 				return 2467;
@@ -81932,7 +81932,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1869;
 			case -283089637:
 				return 2147;
-			case -282082536:
+			case joaat("PROP_PLAYER_CASH_REGISTER"):
 				return 13;
 			case -280896888:
 				return 1730;
@@ -82000,7 +82000,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1276;
 			case joaat("WORLD_PLAYER_CHORES_PUTDOWN_PRODUCT"):
 				return 1513;
-			case -237703933:
+			case joaat("PROP_HUMAN_WEAPON_DBSHOTGUN_PICKUP_WORN"):
 				return 11;
 			case joaat("cig_card_act_11"):
 				return 977;
@@ -82038,7 +82038,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1425;
 			case -214401444:
 				return 1115;
-			case -213531707:
+			case joaat("WORLD_HUMAN_GEN"):
 				return 49;
 			case joaat("WORLD_ANIMAL_BEARBLACK_SLEEPING"):
 				return 716;
@@ -82054,7 +82054,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2426;
 			case joaat("WORLD_HUMAN_SIT_GROUND_DRINKING_DRUNK_PASSED_OUT"):
 				return 386;
-			case -200351791:
+			case joaat("WORLD_HUMAN_BUCKET_PICKUP_PUTDOWN_EMPTY"):
 				return 31;
 			case -195947434:
 				return 1469;
@@ -82084,7 +82084,7 @@ int func_1289(int iParam0, int iParam1)
 				return 582;
 			case joaat("WORLD_HUMAN_LEAN_FENCE_FWD_CHECK_OUT_LIVESTOCK"):
 				return 360;
-			case -176659585:
+			case joaat("PROP_CAMP_SEAT_FIRE_GENERIC"):
 				return 6;
 			case -174562930:
 				return 1959;
@@ -82120,7 +82120,7 @@ int func_1289(int iParam0, int iParam1)
 				return 602;
 			case -147728984:
 				return 1229;
-			case -144572502:
+			case joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE"):
 				return 40;
 			case joaat("MP_LOBBY_PROP_HUMAN_SEAT_BENCH_PORCH_SMOKING"):
 				return 271;
@@ -82228,7 +82228,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1566;
 			case joaat("cig_card_inv_10"):
 				return 1048;
-			case -55559172:
+			case joaat("PROP_VEHICLE_WAGON_BOX_LOAD_UNLOAD_2"):
 				return 21;
 			case joaat("PROP_HUMAN_SEAT_BENCH_CONCERTINA_DOWNBEAT"):
 				return 170;
@@ -82308,7 +82308,7 @@ int func_1289(int iParam0, int iParam1)
 				return 811;
 			case 513593:
 				return 1015;
-			case 691151:
+			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_W_PROP"):
 				return 62;
 			case 2187921:
 				return 1732;
@@ -82360,7 +82360,7 @@ int func_1289(int iParam0, int iParam1)
 				return 649;
 			case joaat("WORLD_HUMAN_BOX_PICKUP_1"):
 				return 486;
-			case 43731727:
+			case joaat("WORLD_HUMAN_TRUMPET_PICKUP_PUTDOWN"):
 				return 70;
 			case 45887683:
 				return 1920;
@@ -82412,13 +82412,13 @@ int func_1289(int iParam0, int iParam1)
 				return 1879;
 			case 82879076:
 				return 1029;
-			case 85645232:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_TYPEGROUP"):
 				return 29;
 			case 86244240:
 				return 1851;
 			case 87256266:
 				return 2311;
-			case 90588400:
+			case joaat("WORLD_HUMAN_GEN_SIT"):
 				return 50;
 			case joaat("PROP_PLAYER_OPEN_ARMOIR_CORPSE"):
 				return 2408;
@@ -82468,7 +82468,7 @@ int func_1289(int iParam0, int iParam1)
 				return 760;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_BANJO_UPBEAT"):
 				return 186;
-			case 130896250:
+			case joaat("PROP_VEHICHLE_SEAT_PASSENGER_TRAM"):
 				return 15;
 			case joaat("PROP_HUMAN_SEAT_BENCH_TRAIN"):
 				return 283;
@@ -82486,11 +82486,11 @@ int func_1289(int iParam0, int iParam1)
 				return 2135;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_RIGHT"):
 				return 371;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_s_mollyLoveLetter"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER"):
 				return 1529;
 			case joaat("cig_card_gun_11"):
 				return 1025;
-			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_H48_2_Fold_vh_CHAINGANG"):
+			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_CHAINGANG"):
 				return 1545;
 			case 147212665:
 				return 1411;
@@ -82682,9 +82682,9 @@ int func_1289(int iParam0, int iParam1)
 				return 1401;
 			case 313051664:
 				return 1203;
-			case 314866166:
+			case joaat("WORLD_HUMAN_BOOK_TABLE_PICKUP_PUTDOWN"):
 				return 28;
-			case 315567675:
+			case joaat("PROP_CAMP_CRIPPS_SEAT_CHAIR"):
 				return 73;
 			case 318556127:
 				return 1921;
@@ -82754,7 +82754,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1117;
 			case 371484799:
 				return 2308;
-			case 372305278:
+			case joaat("WORLD_HUMAN_GUITAR_PICKUP_PUTDOWN"):
 				return 52;
 			case 373449848:
 				return 956;
@@ -82796,7 +82796,7 @@ int func_1289(int iParam0, int iParam1)
 				return 429;
 			case 399720358:
 				return 1329;
-			case 400573623:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_THEATER"):
 				return 9;
 			case 401197936:
 				return 418;
@@ -82806,7 +82806,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1018;
 			case 403072797:
 				return 2104;
-			case 404165073:
+			case joaat("WORLD_ANIMALS_SKUNK_GENERIC"):
 				return 22;
 			case 406957995:
 				return 2376;
@@ -82818,7 +82818,7 @@ int func_1289(int iParam0, int iParam1)
 				return 490;
 			case 412999088:
 				return 1773;
-			case 413447831:
+			case joaat("WORLD_HUMAN_CONCERTINA_PICKUP_PUTDOWN"):
 				return 37;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_PICKUP"):
 				return 566;
@@ -82892,7 +82892,7 @@ int func_1289(int iParam0, int iParam1)
 				return 449;
 			case 469031280:
 				return 2466;
-			case 471494260:
+			case joaat("WORLD_HUMAN_BOOK_PICKUP_PUTDOWN_GROUND"):
 				return 27;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_ANCIENT_HATCHET"):
 				return 1557;
@@ -82926,7 +82926,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1604;
 			case 504439316:
 				return 1393;
-			case 506509745:
+			case joaat("WORLD_HUMAN_FIRE_GEN_NO_DRINKING"):
 				return 43;
 			case 513970265:
 				return 2629;
@@ -82960,7 +82960,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1625;
 			case joaat("PROP_VEHICLE_WAGON_SACK_LOAD_2"):
 				return 471;
-			case 547706868:
+			case joaat("PROP_VEHICHLE_SEAT_PASSENGER_TRAIN_TG"):
 				return 14;
 			case joaat("WORLD_ANIMAL_SKUNK_FLEE_HOLE"):
 				return 876;
@@ -82992,7 +82992,7 @@ int func_1289(int iParam0, int iParam1)
 				return 920;
 			case 565976741:
 				return 1733;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x_color"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X_COLOR"):
 				return 1526;
 			case 566938951:
 				return 897;
@@ -83006,7 +83006,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2283;
 			case joaat("WORLD_HUMAN_WASH_FACE_BUCKET_GROUND"):
 				return 238;
-			case 573563343:
+			case joaat("SC_CAMP_VIG_PEARSON_CALLOVER"):
 				return 2497;
 			case 577229124:
 				return 1895;
@@ -83018,7 +83018,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2175;
 			case 583581589:
 				return 2518;
-			case 584120617:
+			case joaat("PROP_CAMP_SEAT_STOOL_CAMPFIRE_PED_PLAYER"):
 				return 7;
 			case 585397373:
 				return 2242;
@@ -83026,7 +83026,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2379;
 			case joaat("WORLD_ANIMAL_CAT_EATING"):
 				return 746;
-			case 587350641:
+			case joaat("WORLD_HUMAN_BUTCHER_RABBIT"):
 				return 2532;
 			case 587729686:
 				return 2533;
@@ -83070,7 +83070,7 @@ int func_1289(int iParam0, int iParam1)
 				return 990;
 			case 620095944:
 				return 2582;
-			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_w32_2_h48_2_Fold_vh_p_cs_wantedAlive01x_SCT"):
+			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT"):
 				return 1547;
 			case 621617219:
 				return 1019;
@@ -83126,7 +83126,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1805;
 			case 665864199:
 				return 2464;
-			case 667326736:
+			case joaat("WORLD_HUMAN_STAND_GEN_MORNING"):
 				return 67;
 			case 668685328:
 				return 1257;
@@ -83184,7 +83184,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1297;
 			case 713522856:
 				return 1960;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_p_cs_letterFolded01x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED01X"):
 				return 1531;
 			case 714483650:
 				return 2187;
@@ -83268,7 +83268,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2136;
 			case joaat("WORLD_PLAYER_DRINK_WITCHES_BREW"):
 				return 1518;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w10_16_h15_24_p_cs_note01x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_NOTE01X"):
 				return 1536;
 			case 758820539:
 				return 2126;
@@ -83314,7 +83314,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1725;
 			case 795896456:
 				return 1250;
-			case 798764373:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"):
 				return 2523;
 			case 807042387:
 				return 1161;
@@ -83348,7 +83348,7 @@ int func_1289(int iParam0, int iParam1)
 				return 788;
 			case 830115903:
 				return 2027;
-			case 830847823:
+			case joaat("WORLD_HUMAN_STARE_STOIC"):
 				return 230;
 			case 831075093:
 				return 1382;
@@ -83374,7 +83374,7 @@ int func_1289(int iParam0, int iParam1)
 				return 434;
 			case 849042336:
 				return 1394;
-			case 849202820:
+			case joaat("EA_HUMAN_FIRE_GEN"):
 				return 0;
 			case 853834207:
 				return 1741;
@@ -83432,7 +83432,7 @@ int func_1289(int iParam0, int iParam1)
 				return 913;
 			case 877039894:
 				return 2254;
-			case 877120560:
+			case joaat("WORLD_HUMAN_MANDOLIN_PICKUP_PUTDOWN"):
 				return 54;
 			case 877658416:
 				return 1978;
@@ -83444,7 +83444,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1984;
 			case 879757384:
 				return 1372;
-			case 883305447:
+			case joaat("PROP_VEHICLE_WAGON_BOX_LOAD_UNLOAD_1"):
 				return 20;
 			case 883965838:
 				return 2245;
@@ -83500,7 +83500,7 @@ int func_1289(int iParam0, int iParam1)
 				return 278;
 			case 936403433:
 				return 2508;
-			case 937156954:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_SEWING_AND_KNITTING"):
 				return 8;
 			case 939659651:
 				return 1081;
@@ -83548,7 +83548,7 @@ int func_1289(int iParam0, int iParam1)
 				return 611;
 			case joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE_PLAYER"):
 				return 1483;
-			case 972453409:
+			case joaat("WORLD_HUMAN_SADDLE_PICKUP_PUTDOWN_GROUND"):
 				return 63;
 			case joaat("WORLD_ANIMAL_WOLF_EAT_CORPSE"):
 				return 881;
@@ -83596,7 +83596,7 @@ int func_1289(int iParam0, int iParam1)
 				return 154;
 			case 1009293668:
 				return 1626;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_Paper_w15_1_h24_FoldVertical_s_mollyLoveLetter"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER"):
 				return 1523;
 			case joaat("WORLD_HUMAN_BOX_PICKUP_2"):
 				return 487;
@@ -83706,7 +83706,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1135;
 			case 1071768797:
 				return 1198;
-			case 1072218079:
+			case joaat("PROP_VEHICLE_WAGON_BALE_LOAD_UNLOAD_1"):
 				return 18;
 			case joaat("WORLD_HUMAN_PITCH_HAY_SCOOP_WITH_HAYPILE"):
 				return 562;
@@ -83732,7 +83732,7 @@ int func_1289(int iParam0, int iParam1)
 				return 461;
 			case joaat("WORLD_ANIMAL_HORSE_RESTING_DOMESTIC"):
 				return 830;
-			case 1095722412:
+			case joaat("WORLD_HUMAN_GEN_STAND"):
 				return 51;
 			case joaat("WORLD_PLAYER_SLEEP_BEDROLL"):
 				return 1574;
@@ -83750,7 +83750,7 @@ int func_1289(int iParam0, int iParam1)
 				return 949;
 			case joaat("WORLD_HUMAN_SIT_GROUND_COFFEE_DRINK"):
 				return 384;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w18_9_h28_2_FoldVerticalx2_p_cs_letterFolded02x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED02X"):
 				return 1532;
 			case joaat("WORLD_ANIMAL_BIG_CAT_DRINKING"):
 				return 720;
@@ -83766,7 +83766,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2621;
 			case 1128993359:
 				return 1979;
-			case 1130042714:
+			case joaat("EA_HUMAN_FIRE_GEN_NO_DRINKING"):
 				return 1;
 			case joaat("WORLD_ANIMAL_GOAT_SLEEPING_DOMESTIC"):
 				return 821;
@@ -83822,7 +83822,7 @@ int func_1289(int iParam0, int iParam1)
 				return 647;
 			case 1177805349:
 				return 1610;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter09x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER09X"):
 				return 1527;
 			case joaat("WORLD_ANIMAL_GOAT_INJURED_ON_GROUND"):
 				return 817;
@@ -83872,7 +83872,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1190;
 			case 1212196898:
 				return 1981;
-			case 1214079771:
+			case joaat("WORLD_HUMAN_BANJO_PICKUP_PUTDOWN_W_PROP"):
 				return 26;
 			case 1217254422:
 				return 1941;
@@ -83908,7 +83908,7 @@ int func_1289(int iParam0, int iParam1)
 				return 454;
 			case 1240345684:
 				return 2265;
-			case joaat("WORLD_PLAYER_CARCASS_CUT_2m15"):
+			case joaat("WORLD_PLAYER_CARCASS_CUT_2M15"):
 				return 1491;
 			case 1241103201:
 				return 1238;
@@ -83940,7 +83940,7 @@ int func_1289(int iParam0, int iParam1)
 				return 295;
 			case 1254411186:
 				return 2024;
-			case 1254697099:
+			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_CC_W_PROP"):
 				return 61;
 			case 1255549420:
 				return 2073;
@@ -84014,7 +84014,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2033;
 			case 1311766681:
 				return 1052;
-			case 1313561764:
+			case joaat("PROP_VEHICLE_WAGON_BALE_LOAD_UNLOAD_2"):
 				return 19;
 			case 1317919899:
 				return 2360;
@@ -84036,7 +84036,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1872;
 			case 1332555329:
 				return 1047;
-			case 1335266787:
+			case joaat("PROP_HUMAN_WEAPON_DBSHOTGUN_PICKUP"):
 				return 10;
 			case 1336339027:
 				return 1608;
@@ -84044,7 +84044,7 @@ int func_1289(int iParam0, int iParam1)
 				return 241;
 			case 1337861328:
 				return 964;
-			case 1340532149:
+			case joaat("WORLD_HUMAN_CAULDRON"):
 				return 32;
 			case joaat("WORLD_HUMAN_GUARD_LANTERN_NERVOUS"):
 				return 540;
@@ -84108,7 +84108,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2489;
 			case 1386638752:
 				return 917;
-			case 1389646789:
+			case joaat("WORLD_HUMAN_CAULDRON_NO_POT"):
 				return 34;
 			case 1391618133:
 				return 1265;
@@ -84174,7 +84174,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1762;
 			case joaat("WORLD_CAMP_FIRE_SIT_GROUND"):
 				return 119;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_Paper_w15_24_h10_16_p_cs_note01x_COMBAT"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W15_24_H10_16_P_CS_NOTE01X_COMBAT"):
 				return 1539;
 			case 1448096276:
 				return 1611;
@@ -84186,7 +84186,7 @@ int func_1289(int iParam0, int iParam1)
 				return 182;
 			case 1455709223:
 				return 2398;
-			case 1455795772:
+			case joaat("WORLD_HUMAN_PEE"):
 				return 217;
 			case joaat("WORLD_ANIMAL_SQUIRREL_ON_LOG"):
 				return 879;
@@ -84232,7 +84232,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2117;
 			case 1502807256:
 				return 2078;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1524;
 			case 1504407535:
 				return 252;
@@ -84268,7 +84268,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1053;
 			case joaat("WORLD_PLAYER_PICKUP_BROKEN_RCSC_PISTOL"):
 				return 1553;
-			case 1527247467:
+			case joaat("PROP_CAMP_BUTCHER"):
 				return 3;
 			case 1528349639:
 				return 2032;
@@ -84312,7 +84312,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1667;
 			case 1560952296:
 				return 1093;
-			case 1560986346:
+			case joaat("PROP_CAMP_MEAT_BOWL"):
 				return 4;
 			case 1562972286:
 				return 1022;
@@ -84330,13 +84330,13 @@ int func_1289(int iParam0, int iParam1)
 				return 996;
 			case 1571524038:
 				return 2558;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_Paper_w15_1_h24_FoldVertical_s_jackDrawing01x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_S_JACKDRAWING01X"):
 				return 1521;
 			case joaat("PROP_VEHICLE_WAGON_COTTONBOX_UNLOAD_1_GINNED"):
 				return 452;
 			case 1578503684:
 				return 2342;
-			case 1579036847:
+			case joaat("WORLD_ANIMAL_DOG_PLAYER_TENT_TG"):
 				return 74;
 			case 1579488576:
 				return 2529;
@@ -84420,7 +84420,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1301;
 			case 1640575631:
 				return 1922;
-			case 1643502645:
+			case joaat("WORLD_HUMAN_CLIPBOARD_PICKUP_PUTDOWN"):
 				return 36;
 			case 1644732609:
 				return 1005;
@@ -84448,7 +84448,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1339;
 			case 1668650375:
 				return 1865;
-			case joaat("WORLD_PLAYER_CARCASS_PEG_2m15"):
+			case joaat("WORLD_PLAYER_CARCASS_PEG_2M15"):
 				return 1492;
 			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER"):
 				return 327;
@@ -84498,7 +84498,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2120;
 			case joaat("WORLD_ANIMAL_CAT_CLAW_SHARPEN"):
 				return 744;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_w24_h15_1_FoldHorizontal_p_cs_letter03x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W24_H15_1_FOLDHORIZONTAL_P_CS_LETTER03X"):
 				return 1534;
 			case joaat("WORLD_HUMAN_PITCH_FORK_PICKUP"):
 				return 558;
@@ -84514,7 +84514,7 @@ int func_1289(int iParam0, int iParam1)
 				return 781;
 			case 1730943702:
 				return 2607;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FV_p_cs_letter03x_color_COMBAT"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FV_P_CS_LETTER03X_COLOR_COMBAT"):
 				return 1530;
 			case 1733018851:
 				return 1335;
@@ -84534,7 +84534,7 @@ int func_1289(int iParam0, int iParam1)
 				return 864;
 			case 1749939697:
 				return 2043;
-			case joaat("world_human_clipboard"):
+			case joaat("WORLD_HUMAN_CLIPBOARD"):
 				return 514;
 			case joaat("WORLD_HUMAN_CAULDRON_PUT_DOWN_TABLE"):
 				return 152;
@@ -84612,13 +84612,13 @@ int func_1289(int iParam0, int iParam1)
 				return 993;
 			case joaat("WORLD_ANIMAL_CAT_SLEEPING"):
 				return 749;
-			case 1808684880:
+			case joaat("WORLD_HUMAN_SADDLE_PICKUP_PUTDOWN_STAND"):
 				return 64;
 			case joaat("WORLD_HUMAN_PLANE_WOOD"):
 				return 564;
 			case 1809613436:
 				return 986;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_W48_8_H32_2_FoldVerticalHorizontal_s_twofoldmap01x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W48_8_H32_2_FOLDVERTICALHORIZONTAL_S_TWOFOLDMAP01X"):
 				return 1535;
 			case 1810425652:
 				return 1043;
@@ -84644,7 +84644,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1843;
 			case 1828659542:
 				return 1290;
-			case 1829237609:
+			case joaat("WORLD_HUMAN_FIRE_GEN"):
 				return 41;
 			case joaat("WORLD_ANIMAL_SHEEP_RESTING"):
 				return 872;
@@ -84652,7 +84652,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2535;
 			case 1832043197:
 				return 2354;
-			case 1835937517:
+			case joaat("WORLD_HUMAN_FIRE_GEN_STAND"):
 				return 46;
 			case 1838169307:
 				return 2566;
@@ -84702,7 +84702,7 @@ int func_1289(int iParam0, int iParam1)
 				return 478;
 			case 1867868436:
 				return 2031;
-			case 1870191418:
+			case joaat("WORLD_HUMAN_LEAN_RAILING_ALL"):
 				return 53;
 			case 1870391004:
 				return 963;
@@ -84728,7 +84728,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1110;
 			case 1884809780:
 				return 1700;
-			case 1886274212:
+			case joaat("WORLD_HUMAN_CHAMBERPOT_PICKUP_PUTDOWN"):
 				return 35;
 			case 1888920146:
 				return 2593;
@@ -84756,11 +84756,11 @@ int func_1289(int iParam0, int iParam1)
 				return 479;
 			case 1909200363:
 				return 2383;
-			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_s_jackDrawing01x"):
+			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_S_JACKDRAWING01X"):
 				return 1528;
 			case joaat("WORLD_ANIMAL_CHICKEN_EATING"):
 				return 632;
-			case joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W17_78_h12_7_p_cs_photoR_5X7"):
+			case joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W17_78_H12_7_P_CS_PHOTOR_5X7"):
 				return 1542;
 			case 1913341418:
 				return 1347;
@@ -84794,7 +84794,7 @@ int func_1289(int iParam0, int iParam1)
 				return 807;
 			case 1935928768:
 				return 905;
-			case 1939042559:
+			case joaat("PROP_HUMAN_BUTCHER_DEER"):
 				return 2517;
 			case 1941026691:
 				return 2060;
@@ -84860,7 +84860,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1690;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_FAN_WHORE"):
 				return 307;
-			case 1993269755:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE"):
 				return 2521;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_BAR_CA"):
 				return 354;
@@ -84920,7 +84920,7 @@ int func_1289(int iParam0, int iParam1)
 				return 493;
 			case 2024871051:
 				return 2496;
-			case 2025402643:
+			case joaat("WORLD_CAMP_VIG_EXIT_TG"):
 				return 23;
 			case 2036024742:
 				return 896;
@@ -84942,7 +84942,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2132;
 			case 2049641235:
 				return 1354;
-			case 2049655359:
+			case joaat("WORLD_CAMP_VIG_GRIEF_COOLDOWN_TG"):
 				return 24;
 			case 2050785088:
 				return 1646;
@@ -84962,7 +84962,7 @@ int func_1289(int iParam0, int iParam1)
 				return 616;
 			case 2059274664:
 				return 2543;
-			case 2063166885:
+			case joaat("EA_HUMAN_FIRE_GEN_STAND"):
 				return 2;
 			case 2067626574:
 				return 1091;
@@ -84970,7 +84970,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2511;
 			case 2070070978:
 				return 1337;
-			case 2071763047:
+			case joaat("WORLD_HUMAN_RAKE_PICKUP_PUTDOWN"):
 				return 58;
 			case 2072682660:
 				return 1636;
@@ -84988,7 +84988,7 @@ int func_1289(int iParam0, int iParam1)
 				return 356;
 			case 2085223846:
 				return 1251;
-			case 2087366558:
+			case joaat("WORLD_HUMAN_STAND_WAITING"):
 				return 229;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_UNLOAD_5"):
 				return 466;
@@ -85002,7 +85002,7 @@ int func_1289(int iParam0, int iParam1)
 				return 297;
 			case joaat("PROP_HUMAN_CAMP_FIRE_SEAT_BOX"):
 				return 104;
-			case 2095574409:
+			case joaat("WORLD_HUMAN_PITCH_FORK_PICKUP_PUTDOWN"):
 				return 56;
 			case 2095611714:
 				return 891;

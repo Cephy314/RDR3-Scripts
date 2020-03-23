@@ -2618,7 +2618,7 @@ void func_86(int iParam0)
 	{
 		return;
 	}
-	if (Var0.f_9 == -2106738342)
+	if (Var0.f_9 == joaat("KIT_EMOTE_ACTION_SPIT_1"))
 	{
 		Global_1939178->f_49 = MISC::GET_GAME_TIMER();
 		Global_1939178->f_50 = 1;
@@ -3076,7 +3076,7 @@ void func_103(bool bParam0, bool bParam1)
 					{
 						Global_1938085->f_6 = LAW::_GET_HUD_PLAYER_CRIME_TYPE(PLAYER::PLAYER_ID());
 						sVar5 = func_410(Global_1938085->f_6);
-						if (Global_1938085->f_6 == -1361146315)
+						if (Global_1938085->f_6 == joaat("CRIME_TRESPASSING"))
 						{
 							if (!func_411(299))
 							{
@@ -11380,7 +11380,7 @@ void func_322(int iParam0)
 	}
 	switch (Var0)
 	{
-		case 1437412331: /* GXTEntry: "Looting" */
+		case joaat("CRIME_LOOTING"):
 			if (iVar3 != Global_1275573->f_10)
 			{
 				func_924(-1648877470, iVar3);
@@ -11391,8 +11391,8 @@ void func_322(int iParam0)
 				func_364(-1648877470, 0, 0);
 			}
 			break;
-		case -2051405571: /* GXTEntry: "Rustling" */
-		case 1923998736: /* GXTEntry: "Theft" */
+		case joaat("CRIME_THEFT_LIVESTOCK"):
+		case joaat("CRIME_THEFT"):
 			if (iVar3 != Global_1275573->f_10)
 			{
 				func_924(-545299531, iVar3);
@@ -11403,9 +11403,9 @@ void func_322(int iParam0)
 				func_364(-545299531, 0, 0);
 			}
 			break;
-		case -999071359: /* GXTEntry: "Animal Cruelty" */
-		case -857617219: /* GXTEntry: "Animal Cruelty" */
-		case 416962030: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_ASSAULT_HORSE"):
+		case joaat("CRIME_ASSAULT_LIVESTOCK"):
+		case joaat("CRIME_ASSAULT_ANIMAL"):
 			if (iVar3 != Global_1275573->f_10)
 			{
 				func_924(-1598949067, iVar3);
@@ -11416,7 +11416,7 @@ void func_322(int iParam0)
 				func_364(-1598949067, 0, 0);
 			}
 			break;
-		case 1746095559: /* GXTEntry: "Arson" */
+		case joaat("CRIME_ARSON"):
 			if (iVar3 != Global_1275573->f_10)
 			{
 				func_924(478308321, iVar3);
@@ -11427,8 +11427,8 @@ void func_322(int iParam0)
 				func_364(478308321, 0, 0);
 			}
 			break;
-		case -2130852007: /* GXTEntry: "Vandalism" */
-		case -102241052: /* GXTEntry: "Vandalism" */
+		case joaat("CRIME_VANDALISM"):
+		case joaat("CRIME_VANDALISM_VEHICLE"):
 			if (iVar3 != Global_1275573->f_10)
 			{
 				func_924(440583097, iVar3);
@@ -14204,105 +14204,105 @@ char* func_410(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1358475411: /* GXTEntry: "Accomplice" */
+		case joaat("CRIME_ACCOMPLICE"):
 			return "CRIME_ACCOMPLICE";
-		case 195938434: /* GXTEntry: "Assault" */
+		case joaat("CRIME_ASSAULT"):
 			return "CRIME_ASSAULT";
-		case 416962030: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_ASSAULT_ANIMAL"):
 			return "CRIME_ASSAULT_ANIMAL";
-		case 1314857970: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_ASSAULT_CORPSE"):
 			return "CRIME_ASSAULT_CORPSE";
-		case -999071359: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_ASSAULT_HORSE"):
 			return "CRIME_ASSAULT_HORSE";
-		case -683250308: /* GXTEntry: "Assault" */
+		case joaat("CRIME_ASSAULT_LAW"):
 			return "CRIME_ASSAULT_LAW";
-		case -857617219: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_ASSAULT_LIVESTOCK"):
 			return "CRIME_ASSAULT_LIVESTOCK";
-		case 1780145725: /* GXTEntry: "Bank Robbery" */
+		case joaat("CRIME_BANK_ROBBERY"):
 			return "CRIME_BANK_ROBBERY";
-		case -1521715232: /* GXTEntry: "Trespassing" */
+		case joaat("CRIME_BURGLARY"):
 			return "CRIME_BURGLARY";
 		case -1560342203: /* GXTEntry: "Cheating" */
 			return "CRIME_CHEATING";
-		case 1343354387: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_DISTURBANCE"):
 			return "CRIME_DISTURBANCE";
-		case 1052408375: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_EXPLOSION"):
 			return "CRIME_EXPLOSION";
 		case -1759599185: /* GXTEntry: "Grave Robbery" */
 			return "CRIME_GRAVE_ROBBERY";
-		case joaat("crime_hassle"):
+		case joaat("CRIME_HASSLE"):
 			return "CRIME_HASSLE";
-		case -16106300: /* GXTEntry: "Unarmed Assault" */
+		case joaat("CRIME_HIT_AND_RUN"):
 			return "CRIME_HIT_AND_RUN";
-		case 105387183: /* GXTEntry: "Unarmed Assault" */
+		case joaat("CRIME_HIT_AND_RUN_LAW"):
 			return "CRIME_HIT_AND_RUN_LAW";
-		case -2095449173: /* GXTEntry: "Intimidation" */
+		case joaat("CRIME_INTIMIDATION"):
 			return "CRIME_INTIMIDATION";
 		case 314693001: /* GXTEntry: "Jail Break" */
 			return "CRIME_JAIL_BREAK";
-		case -2097683294: /* GXTEntry: "Horse Theft" */
+		case joaat("CRIME_JACK_HORSE"):
 			return "CRIME_JACK_HORSE";
-		case 1805131596: /* GXTEntry: "Vehicle Theft" */
+		case joaat("CRIME_JACK_VEHICLE"):
 			return "CRIME_JACK_VEHICLE";
-		case -1728509733: /* GXTEntry: "Kidnapping" */
+		case joaat("CRIME_KIDNAPPING"):
 			return "CRIME_KIDNAPPING";
-		case -42817558: /* GXTEntry: "Kidnapping" */
+		case joaat("CRIME_KIDNAPPING_LAW"):
 			return "CRIME_KIDNAPPING_LAW";
-		case 1458462042: /* GXTEntry: "Assault" */
+		case joaat("CRIME_LASSO_ASSAULT"):
 			return "CRIME_LASSO_ASSAULT";
-		case 481893872: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_LAW_IS_THREATENED"):
 			return "CRIME_LAW_IS_THREATENED";
-		case 1714017012: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_LOITERING"):
 			return "CRIME_LOITERING";
-		case 1437412331: /* GXTEntry: "Looting" */
+		case joaat("CRIME_LOOTING"):
 			return "CRIME_LOOTING";
-		case -493957506: /* GXTEntry: "Murder" */
+		case joaat("CRIME_MURDER"):
 			return "CRIME_MURDER";
-		case 1224055398: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_MURDER_ANIMAL"):
 			return "CRIME_MURDER_ANIMAL";
-		case -953803399: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_MURDER_HORSE"):
 			return "CRIME_MURDER_HORSE";
-		case 2006449383: /* GXTEntry: "Murder" */
+		case joaat("CRIME_MURDER_LAW"):
 			return "CRIME_MURDER_LAW";
-		case -1788230330: /* GXTEntry: "Animal Cruelty" */
+		case joaat("CRIME_MURDER_LIVESTOCK"):
 			return "CRIME_MURDER_LIVESTOCK";
 		case 1396375613: /* GXTEntry: "Vandalism" */
 			return "CRIME_PROPERTY_DESTRUCTION";
-		case joaat("crime_resist_arrest"):
+		case joaat("CRIME_RESIST_ARREST"):
 			return "CRIME_RESIST_ARREST";
-		case -1547772340: /* GXTEntry: "Robbery" */
+		case joaat("CRIME_ROBBERY"):
 			return "CRIME_ROBBERY";
-		case 1352191066: /* GXTEntry: "Unarmed Assault" */
+		case joaat("CRIME_UNARMED_ASSAULT"):
 			return "CRIME_UNARMED_ASSAULT";
 		case -59535775: /* GXTEntry: "Robbery" */
 			return "CRIME_STAGECOACH_ROBBERY";
-		case -1701536647: /* GXTEntry: "Theft" */
+		case joaat("CRIME_STOLEN_GOODS"):
 			return "CRIME_STOLEN_GOODS";
-		case 1923998736: /* GXTEntry: "Theft" */
+		case joaat("CRIME_THEFT"):
 			return "CRIME_THEFT";
-		case -1103472584: /* GXTEntry: "Horse Theft" */
+		case joaat("CRIME_THEFT_HORSE"):
 			return "CRIME_THEFT_HORSE";
-		case -2051405571: /* GXTEntry: "Rustling" */
+		case joaat("CRIME_THEFT_LIVESTOCK"):
 			return "CRIME_THEFT_LIVESTOCK";
-		case 1135209633: /* GXTEntry: "Vehicle Theft" */
+		case joaat("CRIME_THEFT_VEHICLE"):
 			return "CRIME_THEFT_VEHICLE";
-		case -1810065318: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_THREATEN"):
 			return "CRIME_THREATEN";
-		case 2140177766: /* GXTEntry: "Disturbing the Peace" */
+		case joaat("CRIME_THREATEN_LAW"):
 			return "CRIME_THREATEN_LAW";
-		case 1171995096: /* GXTEntry: "Murder" */
+		case joaat("CRIME_TRAMPLE"):
 			return "CRIME_TRAMPLE";
-		case -267442581: /* GXTEntry: "Murder" */
+		case joaat("CRIME_TRAMPLE_LAW"):
 			return "CRIME_TRAMPLE_LAW";
 		case 1685924442: /* GXTEntry: "Train Robbery" */
 			return "CRIME_TRAIN_ROBBERY";
-		case -1361146315: /* GXTEntry: "Trespassing" */
+		case joaat("CRIME_TRESPASSING"):
 			return "CRIME_TRESPASSING";
-		case -2130852007: /* GXTEntry: "Vandalism" */
+		case joaat("CRIME_VANDALISM"):
 			return "CRIME_VANDALISM";
-		case -102241052: /* GXTEntry: "Vandalism" */
+		case joaat("CRIME_VANDALISM_VEHICLE"):
 			return "CRIME_VANDALISM_VEHICLE";
-		case 1420320220: /* GXTEntry: "Vandalism" */
+		case joaat("CRIME_VEHICLE_DESTRUCTION"):
 			return "CRIME_VEHICLE_DESTRUCTION";
 		case 0:
 			return "CRIME_NONE";
@@ -17445,11 +17445,11 @@ int func_536(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 				{
 					if (func_1208(&Global_34))
 					{
-						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), bParam0, 616992297, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), bParam0, joaat("APPLY_POMADE_WITH_HAT"), 1, 0, -1082130432);
 					}
 					else
 					{
-						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), bParam0, -903856906, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), bParam0, joaat("APPLY_POMADE_WITH_NO_HAT"), 1, 0, -1082130432);
 					}
 					return 1;
 				}
@@ -17598,7 +17598,7 @@ int func_536(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 		case -1337515701:
 			if (!bParam1)
 			{
-				TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), bParam0, -1893721798, 1, 0, -1082130432);
+				TASK::_TASK_ITEM_INTERACTION(PLAYER::PLAYER_PED_ID(), bParam0, joaat("POCKET_WATCH_INSPECT_UNHOLSTER"), 1, 0, -1082130432);
 				return 1;
 			}
 			break;
@@ -29971,14 +29971,14 @@ int func_923(var uParam0)
 
 	switch (*uParam0)
 	{
-		case -2130852007: /* GXTEntry: "Vandalism" */
-		case -2051405571: /* GXTEntry: "Rustling" */
-		case -857617219: /* GXTEntry: "Animal Cruelty" */
-		case -102241052: /* GXTEntry: "Vandalism" */
-		case 416962030: /* GXTEntry: "Animal Cruelty" */
-		case 1437412331: /* GXTEntry: "Looting" */
-		case 1746095559: /* GXTEntry: "Arson" */
-		case 1923998736: /* GXTEntry: "Theft" */
+		case joaat("CRIME_VANDALISM"):
+		case joaat("CRIME_THEFT_LIVESTOCK"):
+		case joaat("CRIME_ASSAULT_LIVESTOCK"):
+		case joaat("CRIME_VANDALISM_VEHICLE"):
+		case joaat("CRIME_ASSAULT_ANIMAL"):
+		case joaat("CRIME_LOOTING"):
+		case joaat("CRIME_ARSON"):
+		case joaat("CRIME_THEFT"):
 		default:
 			break;
 	}
@@ -30042,14 +30042,14 @@ void func_925(int iParam0)
 
 	switch (*iParam0)
 	{
-		case -2130852007: /* GXTEntry: "Vandalism" */
-		case -2051405571: /* GXTEntry: "Rustling" */
-		case -857617219: /* GXTEntry: "Animal Cruelty" */
-		case -102241052: /* GXTEntry: "Vandalism" */
-		case 416962030: /* GXTEntry: "Animal Cruelty" */
-		case 1437412331: /* GXTEntry: "Looting" */
-		case 1746095559: /* GXTEntry: "Arson" */
-		case 1923998736: /* GXTEntry: "Theft" */
+		case joaat("CRIME_VANDALISM"):
+		case joaat("CRIME_THEFT_LIVESTOCK"):
+		case joaat("CRIME_ASSAULT_LIVESTOCK"):
+		case joaat("CRIME_VANDALISM_VEHICLE"):
+		case joaat("CRIME_ASSAULT_ANIMAL"):
+		case joaat("CRIME_LOOTING"):
+		case joaat("CRIME_ARSON"):
+		case joaat("CRIME_THEFT"):
 		default:
 			break;
 	}
@@ -38521,17 +38521,17 @@ void func_1209(bool bParam0)
 {
 	int iVar0;
 
-	iVar0 = 406178289;
+	iVar0 = joaat("USE_HANDFULL_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 406178289;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 187883304;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = 38531903;
+			iVar0 = joaat("USE_HANDFULL_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -38691,17 +38691,17 @@ void func_1213(bool bParam0)
 {
 	int iVar0;
 
-	iVar0 = -362580870;
+	iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = -362580870;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = -1013825131;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = -1433021121;
+			iVar0 = joaat("USE_LARGE_BOTTLE_COMBAT_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -38846,17 +38846,17 @@ void func_1218(bool bParam0)
 {
 	int iVar0;
 
-	iVar0 = 1076410848;
+	iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 1076410848;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 1820106865;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1890537641;
+			iVar0 = joaat("USE_STIMULANT_INJECTION_QUICK_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -38877,17 +38877,17 @@ void func_1219(bool bParam0)
 {
 	int iVar0;
 
-	iVar0 = 1516413548;
+	iVar0 = joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 1516413548;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = 1648161053;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = -1170654725;
+			iVar0 = joaat("QUICK_SMOKE_CIGARETTE_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -38908,17 +38908,17 @@ void func_1220(bool bParam0)
 {
 	int iVar0;
 
-	iVar0 = -1454586679;
+	iVar0 = joaat("QUICK_SMOKE_CIGAR_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = -1454586679;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_LEFT_HAND");
 			break;
 		case 1:
-			iVar0 = 1849268701;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_RIGHT_HAND");
 			break;
 		case 3:
-			iVar0 = 881673189;
+			iVar0 = joaat("QUICK_SMOKE_CIGAR_RIFLE");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -38939,17 +38939,17 @@ void func_1221(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
-	iVar0 = 1934039819;
+	iVar0 = joaat("USE_TONIC_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 1934039819;
+			iVar0 = joaat("USE_TONIC_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 1656393367;
+			iVar0 = joaat("USE_TONIC_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = 1125253485;
+			iVar0 = joaat("USE_TONIC_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -38974,17 +38974,17 @@ void func_1222(bool bParam0, bool bParam1)
 {
 	int iVar0;
 
-	iVar0 = -1054661625;
+	iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_LEFT_HAND_QUICK");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = -1054661625;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_LEFT_HAND_QUICK");
 			break;
 		case 1:
-			iVar0 = 1750832898;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_UNARMED_QUICK");
 			break;
 		case 3:
-			iVar0 = -1750311991;
+			iVar0 = joaat("USE_TONIC_POTENT_SATCHEL_RIFLE_QUICK");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -53921,17 +53921,17 @@ int func_1820()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -53944,17 +53944,17 @@ int func_1821()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -53967,17 +53967,17 @@ int func_1822()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -53990,17 +53990,17 @@ int func_1823()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_1812())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -58602,7 +58602,7 @@ void func_2005(bool bParam0)
 	while (iVar0 <= 58)
 	{
 		iVar1 = func_2301(iVar0, 1);
-		if ((iVar1 == -173287735 || iVar1 == -715363719) || iVar1 == 1972833301)
+		if ((iVar1 == joaat("CRIME_MURDER_PLAYER") || iVar1 == joaat("CRIME_MURDER_PLAYER_HORSE")) || iVar1 == joaat("CRIME_TRAMPLE_PLAYER"))
 		{
 		}
 		else
@@ -66814,121 +66814,121 @@ int func_2301(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return 1746095559 /* GXTEntry: "Arson" */;
+			return joaat("CRIME_ARSON");
 		case 1:
-			return 195938434 /* GXTEntry: "Assault" */;
+			return joaat("CRIME_ASSAULT");
 		case 2:
-			return 416962030 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_ASSAULT_ANIMAL");
 		case 3:
-			return 1314857970 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_ASSAULT_CORPSE");
 		case 4:
-			return -999071359 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_ASSAULT_HORSE");
 		case 5:
-			return -683250308 /* GXTEntry: "Assault" */;
+			return joaat("CRIME_ASSAULT_LAW");
 		case 6:
-			return -857617219 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_ASSAULT_LIVESTOCK");
 		case 7:
-			return 1780145725 /* GXTEntry: "Bank Robbery" */;
+			return joaat("CRIME_BANK_ROBBERY");
 		case 8:
-			return -1521715232 /* GXTEntry: "Trespassing" */;
+			return joaat("CRIME_BURGLARY");
 		case 9:
 			return -1560342203 /* GXTEntry: "Cheating" */;
 		case 10:
-			return 1343354387 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_DISTURBANCE");
 		case 11:
-			return 1052408375 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_EXPLOSION");
 		case 12:
 			return -1759599185 /* GXTEntry: "Grave Robbery" */;
 		case 13:
-			return joaat("crime_hassle");
+			return joaat("CRIME_HASSLE");
 		case 14:
-			return -16106300 /* GXTEntry: "Unarmed Assault" */;
+			return joaat("CRIME_HIT_AND_RUN");
 		case 15:
-			return 105387183 /* GXTEntry: "Unarmed Assault" */;
+			return joaat("CRIME_HIT_AND_RUN_LAW");
 		case 16:
-			return -2095449173 /* GXTEntry: "Intimidation" */;
+			return joaat("CRIME_INTIMIDATION");
 		case 17:
-			return -2097683294 /* GXTEntry: "Horse Theft" */;
+			return joaat("CRIME_JACK_HORSE");
 		case 18:
-			return 1805131596 /* GXTEntry: "Vehicle Theft" */;
+			return joaat("CRIME_JACK_VEHICLE");
 		case 19:
 			return 314693001 /* GXTEntry: "Jail Break" */;
 		case 20:
-			return -1728509733 /* GXTEntry: "Kidnapping" */;
+			return joaat("CRIME_KIDNAPPING");
 		case 21:
-			return -42817558 /* GXTEntry: "Kidnapping" */;
+			return joaat("CRIME_KIDNAPPING_LAW");
 		case 22:
-			return 1458462042 /* GXTEntry: "Assault" */;
+			return joaat("CRIME_LASSO_ASSAULT");
 		case 23:
-			return 481893872 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_LAW_IS_THREATENED");
 		case 24:
-			return 1714017012 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_LOITERING");
 		case 25:
-			return 1437412331 /* GXTEntry: "Looting" */;
+			return joaat("CRIME_LOOTING");
 		case 26:
-			return -493957506 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_MURDER");
 		case 27:
-			return 1224055398 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_MURDER_ANIMAL");
 		case 28:
-			return -953803399 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_MURDER_HORSE");
 		case 29:
-			return 2006449383 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_MURDER_LAW");
 		case 30:
-			return -1788230330 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_MURDER_LIVESTOCK");
 		case 31:
 			return 1396375613 /* GXTEntry: "Vandalism" */;
 		case 32:
-			return joaat("crime_resist_arrest");
+			return joaat("CRIME_RESIST_ARREST");
 		case 33:
-			return -1547772340 /* GXTEntry: "Robbery" */;
+			return joaat("CRIME_ROBBERY");
 		case 34:
 			return -59535775 /* GXTEntry: "Robbery" */;
 		case 35:
-			return -1701536647 /* GXTEntry: "Theft" */;
+			return joaat("CRIME_STOLEN_GOODS");
 		case 36:
-			return 1923998736 /* GXTEntry: "Theft" */;
+			return joaat("CRIME_THEFT");
 		case 37:
-			return -1103472584 /* GXTEntry: "Horse Theft" */;
+			return joaat("CRIME_THEFT_HORSE");
 		case 38:
-			return -2051405571 /* GXTEntry: "Rustling" */;
+			return joaat("CRIME_THEFT_LIVESTOCK");
 		case 39:
-			return 1135209633 /* GXTEntry: "Vehicle Theft" */;
+			return joaat("CRIME_THEFT_VEHICLE");
 		case 40:
-			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_THREATEN");
 		case 41:
-			return 2140177766 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_THREATEN_LAW");
 		case 42:
 			return 1685924442 /* GXTEntry: "Train Robbery" */;
 		case 43:
-			return 1171995096 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_TRAMPLE");
 		case 44:
-			return -267442581 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_TRAMPLE_LAW");
 		case 45:
-			return -1361146315 /* GXTEntry: "Trespassing" */;
+			return joaat("CRIME_TRESPASSING");
 		case 46:
-			return 1352191066 /* GXTEntry: "Unarmed Assault" */;
+			return joaat("CRIME_UNARMED_ASSAULT");
 		case 47:
-			return -2130852007 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_VANDALISM");
 		case 48:
-			return -102241052 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_VANDALISM_VEHICLE");
 		case 49:
-			return 1420320220 /* GXTEntry: "Vandalism" */;
+			return joaat("CRIME_VEHICLE_DESTRUCTION");
 		case 50:
-			return -1715130379 /* GXTEntry: "Felony" */;
+			return joaat("CRIME_WANTED_LEVEL_UP_DEBUG_HIGH");
 		case 51:
-			return -661550833 /* GXTEntry: "Misdemeanor" */;
+			return joaat("CRIME_WANTED_LEVEL_UP_DEBUG_LOW");
 		case 52:
-			return -1358475411 /* GXTEntry: "Accomplice" */;
+			return joaat("CRIME_ACCOMPLICE");
 		case 53:
-			return -1848598303 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_EXPLOSION_POISON");
 		case 54:
-			return -173287735 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_MURDER_PLAYER");
 		case 55:
-			return -715363719 /* GXTEntry: "Animal Cruelty" */;
+			return joaat("CRIME_MURDER_PLAYER_HORSE");
 		case 56:
-			return -1117123933 /* GXTEntry: "Disturbing the Peace" */;
+			return joaat("CRIME_SELF_DEFENCE");
 		case 57:
-			return 1972833301 /* GXTEntry: "Murder" */;
+			return joaat("CRIME_TRAMPLE_PLAYER");
 		case 58:
 			return 0;
 		default:

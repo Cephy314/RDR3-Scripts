@@ -1275,8 +1275,8 @@ void __EntryFunction__()
 	vLocal_6333 = { 1f, 0f, -15f };
 	iLocal_6436 = func_1(1, 0, 0) | 2 | 256 | 64;
 	iLocal_7053 = 1168559527; /* GXTEntry: "Watson\'s Scrapbook Page" */
-	iLocal_7054 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
-	iLocal_7056 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_Paper_w15_1_h24_FoldVertical_p_cs_letter03x");
+	iLocal_7054 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
+	iLocal_7056 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 	vLocal_7057 = { -1818.205f, 657.1002f, 130.871f };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
@@ -35837,7 +35837,7 @@ void func_819(var uParam0, int iParam1, var uParam2, int iParam3, var uParam4, i
 	{
 		TASK::_0xEEE4829304F93EEE(iVar0, 0);
 	}
-	uParam6->f_116 = TASK::_0xF533D68FF970D190(1624.115f, -361.1588f, 74.89716f, joaat("world_human_drinking"), 0.5f, 0, 0);
+	uParam6->f_116 = TASK::_0xF533D68FF970D190(1624.115f, -361.1588f, 74.89716f, joaat("WORLD_HUMAN_DRINKING"), 0.5f, 0, 0);
 	uParam0->f_116 = TASK::_0xF533D68FF970D190(1624.572f, -360.4957f, 74.89713f, joaat("WORLD_HUMAN_SMOKE"), 0.5f, 0, 0);
 	uParam2->f_116 = TASK::_0xF533D68FF970D190(1621.701f, -364.6079f, 74.89715f, joaat("WORLD_HUMAN_SMOKE"), 0.5f, 0, 0);
 	uParam4->f_116 = TASK::_0xF533D68FF970D190(1620.307f, -364.3029f, 74.89716f, joaat("WORLD_HUMAN_SIT_BACK_EXHAUSTED"), 0.5f, 0, 0);
@@ -53337,7 +53337,7 @@ void func_1409(bool bParam0, vector3 vParam1, int iParam4, float fParam5, float 
 
 int func_1410()
 {
-	if (!func_114(512) && !func_1187(Global_35, 1335266787))
+	if (!func_114(512) && !func_1187(Global_35, joaat("PROP_HUMAN_WEAPON_DBSHOTGUN_PICKUP")))
 	{
 		return 0;
 	}
@@ -95590,7 +95590,7 @@ int func_3184(int iParam0)
 		case 15:
 			return 1851096281;
 		case 16:
-			return 47402526;
+			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
 			return 1762683397;
 		case 18:
@@ -111871,17 +111871,17 @@ int func_3684()
 {
 	int iVar0;
 
-	iVar0 = 1549701178;
+	iVar0 = joaat("MASK_OFF_LEFT_HAND");
 	switch (func_3976())
 	{
 		case 0:
-			iVar0 = 1549701178;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = 949387044;
+			iVar0 = joaat("MASK_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -22529868;
+			iVar0 = joaat("MASK_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -111894,17 +111894,17 @@ int func_3685()
 {
 	int iVar0;
 
-	iVar0 = 614608656;
+	iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 	switch (func_3976())
 	{
 		case 0:
-			iVar0 = 614608656;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1290316291;
+			iVar0 = joaat("BANDANA_OFF_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 1918034163;
+			iVar0 = joaat("BANDANA_OFF_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -111917,17 +111917,17 @@ int func_3686()
 {
 	int iVar0;
 
-	iVar0 = -1832677570;
+	iVar0 = joaat("MASK_ON_LEFT_HAND");
 	switch (func_3976())
 	{
 		case 0:
-			iVar0 = -1832677570;
+			iVar0 = joaat("MASK_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -362314920;
+			iVar0 = joaat("MASK_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = -1336137422;
+			iVar0 = joaat("MASK_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;
@@ -111940,17 +111940,17 @@ int func_3687()
 {
 	int iVar0;
 
-	iVar0 = 1623252156;
+	iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 	switch (func_3976())
 	{
 		case 0:
-			iVar0 = 1623252156;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND");
 			break;
 		case 3:
-			iVar0 = -1469902924;
+			iVar0 = joaat("BANDANA_ON_LEFT_HAND_RIFLE");
 			break;
 		case 1:
-			iVar0 = 170763280;
+			iVar0 = joaat("BANDANA_ON_RIGHT_HAND");
 			break;
 		case 2:
 			iVar0 = 0;

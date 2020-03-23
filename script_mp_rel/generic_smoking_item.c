@@ -49,13 +49,13 @@ void __EntryFunction__()
 			iVar190 = TASK::_0x6AA3DCA2C6F5EB6D(Global_34);
 			switch (iVar190)
 			{
-				case 1648161053:
+				case joaat("QUICK_SMOKE_CIGARETTE_RIGHT_HAND"):
 					vVar187 = { -0.0150581f, -0.00181651f, 0.012338f };
 					break;
-				case 1516413548:
+				case joaat("QUICK_SMOKE_CIGARETTE_LEFT_HAND"):
 					vVar187 = { -0.0147231f, -0.00414051f, 0.000197684f };
 					break;
-				case -1170654725:
+				case joaat("QUICK_SMOKE_CIGARETTE_RIFLE"):
 					vVar187 = { -0.0040397f, -0.00102244f, 0.00599561f };
 					break;
 			}
