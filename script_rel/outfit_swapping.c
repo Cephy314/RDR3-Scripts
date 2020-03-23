@@ -68,7 +68,7 @@ int func_1(int iParam0)
 			return 0;
 		case -1826731591: /* GXTEntry: "Brawler\'s Outfit" */
 			return 24;
-		case 2119049229:
+		case 2119049229: /* GXTEntry: "The Ruffian" */
 			return 25;
 		case 1352942778: /* GXTEntry: "The Rebel" */
 			return 26;
@@ -392,14 +392,14 @@ int func_11()
 			default:
 				break;
 		}
-		if (iVar0 == joaat("weapon_unarmed"))
+		if (iVar0 == joaat("WEAPON_UNARMED"))
 		{
 			func_23(2);
 		}
 	}
 	if (bVar4)
 	{
-		if (iVar1 != joaat("weapon_unarmed"))
+		if (iVar1 != joaat("WEAPON_UNARMED"))
 		{
 			func_23(0);
 		}
@@ -456,7 +456,7 @@ int func_12(int iParam0)
 		case 24:
 			return -1826731591 /* GXTEntry: "Brawler\'s Outfit" */;
 		case 25:
-			return 2119049229;
+			return 2119049229 /* GXTEntry: "The Ruffian" */;
 		case 26:
 			return 1352942778 /* GXTEntry: "The Rebel" */;
 		case 27:

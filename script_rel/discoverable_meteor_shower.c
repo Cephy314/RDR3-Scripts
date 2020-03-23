@@ -5027,7 +5027,7 @@ int func_101(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -7279,7 +7279,7 @@ char* func_143(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -8174,7 +8174,7 @@ int func_189(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_190(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_191(int iParam0)
@@ -9101,7 +9101,7 @@ void func_197(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

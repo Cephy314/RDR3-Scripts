@@ -417,7 +417,7 @@ void func_11()
 	Global_1310720->f_29 = -1;
 	Global_1935630->f_4 = 0;
 	Global_1897952->f_40 = 0;
-	Global_1310720->f_24 = joaat("weapon_unarmed");
+	Global_1310720->f_24 = joaat("WEAPON_UNARMED");
 	Global_1310720->f_22 = -1;
 	func_36(0);
 	func_37(0);

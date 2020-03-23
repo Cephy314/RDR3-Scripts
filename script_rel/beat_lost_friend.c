@@ -1727,10 +1727,10 @@ int func_31()
 				TASK::OPEN_SEQUENCE_TASK(&iVar5);
 				iVar6 = func_186(Global_35, 0, 1, 0);
 				iVar7 = func_186(Global_35, 1, 1, 0);
-				if ((iVar6 != 0 && iVar6 != joaat("weapon_unarmed")) || (iVar7 != 0 && iVar7 != joaat("weapon_unarmed")))
+				if ((iVar6 != 0 && iVar6 != joaat("WEAPON_UNARMED")) || (iVar7 != 0 && iVar7 != joaat("WEAPON_UNARMED")))
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), false, 0, false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), false, 1, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 1, false, false);
 					TASK::TASK_SWAP_WEAPON(0, 1, 0, 0, 0);
 				}
 				if (PED::_0xA911EE21EDF69DAF(Global_35))
@@ -2106,7 +2106,7 @@ int func_31()
 				ENTITY::SET_ENTITY_VISIBLE((Local_312[0 /*12*/])->f_8, true);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 				WEAPON::_0x67E21ACC5C0C970C(Global_35, 1, true);
-				WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_769[0]), joaat("weapon_unarmed"), true, 1, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_769[0]), joaat("WEAPON_UNARMED"), true, 1, false, false);
 				func_108(32);
 				func_153(Local_350.f_1, Local_350.f_5);
 				func_110(&iLocal_15, 27);
@@ -6671,8 +6671,8 @@ int func_214(var uParam0, int iParam1)
 				func_140(&(uParam0->f_5));
 				if (!func_3(uParam0->f_23, 4))
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("weapon_unarmed"), false, 0, false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("weapon_unarmed"), false, 1, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("WEAPON_UNARMED"), false, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("WEAPON_UNARMED"), false, 1, false, false);
 					TASK::TASK_SWAP_WEAPON(uParam0->f_1, 1, func_3(uParam0->f_23, 512), 0, 0);
 				}
 				func_464(uParam0, 3, iParam1);
@@ -10704,7 +10704,7 @@ int func_292(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -12450,7 +12450,7 @@ int func_341(var uParam0, int iParam1, int iParam2)
 		if (!NETWORK::NETWORK_IS_IN_SESSION())
 		{
 			fVar0 = func_607(iParam2);
-			if (!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("weapon_unarmed"))
+			if (!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("WEAPON_UNARMED"))
 			{
 				PED::_0xD355E2F1BB41087E(iParam1, fVar0);
 			}
@@ -12463,7 +12463,7 @@ int func_341(var uParam0, int iParam1, int iParam2)
 				PED::_0xD355E2F1BB41087E(iParam1, fVar0);
 			}
 		}
-		if ((!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("weapon_unarmed")) || (WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) && WEAPON::_0x5809DBCA0A37C82B(Global_1935630->f_46)))
+		if ((!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("WEAPON_UNARMED")) || (WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) && WEAPON::_0x5809DBCA0A37C82B(Global_1935630->f_46)))
 		{
 			fVar2 = 3f;
 			iVar1 = 3000;
@@ -13687,7 +13687,7 @@ bool func_392(int* iParam0, int iParam1)
 
 bool func_393(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 bool func_394(int iParam0)
@@ -15514,7 +15514,7 @@ int func_468(var uParam0, int iParam1)
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(uParam0->f_1, &iVar0, true, 0, false);
 	WEAPON::GET_CURRENT_PED_WEAPON(uParam0->f_1, &iVar1, true, 1, false);
-	if (func_3(uParam0->f_23, 512) || (iVar0 == joaat("weapon_unarmed") && iVar1 == joaat("weapon_unarmed")))
+	if (func_3(uParam0->f_23, 512) || (iVar0 == joaat("WEAPON_UNARMED") && iVar1 == joaat("WEAPON_UNARMED")))
 	{
 		return 1;
 	}
@@ -16135,7 +16135,7 @@ int func_497(int iParam0, int iParam1, bool bParam2)
 	{
 		return uVar0;
 	}
-	return joaat("weapon_unarmed");
+	return joaat("WEAPON_UNARMED");
 }
 
 void func_498(int iParam0, int iParam1)
@@ -19287,7 +19287,7 @@ int func_611(int iParam0)
 {
 	if (PED::GET_PED_CONFIG_FLAG(iParam0, 9, false))
 	{
-		if (Global_1935630->f_44 == joaat("weapon_unarmed"))
+		if (Global_1935630->f_44 == joaat("WEAPON_UNARMED"))
 		{
 			return 1;
 		}
@@ -22619,7 +22619,7 @@ int func_760(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	if (bParam3 || !ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
-		if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, joaat("weapon_unarmed"), iParam1))
+		if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, joaat("WEAPON_UNARMED"), iParam1))
 		{
 			return 1;
 		}
@@ -22644,7 +22644,7 @@ int func_761(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;
@@ -23724,7 +23724,7 @@ char* func_809(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -24247,7 +24247,7 @@ void func_830(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -26276,9 +26276,9 @@ int func_908()
 	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar1, true, 1, false))
 	{
 	}
-	if (iVar1 == joaat("weapon_unarmed"))
+	if (iVar1 == joaat("WEAPON_UNARMED"))
 	{
-		if (iVar0 == joaat("weapon_unarmed"))
+		if (iVar0 == joaat("WEAPON_UNARMED"))
 		{
 			return 1;
 		}
@@ -26299,7 +26299,7 @@ int func_908()
 			return 0;
 		}
 	}
-	else if (iVar0 == joaat("weapon_unarmed"))
+	else if (iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		return 1;
 	}
@@ -26535,7 +26535,7 @@ int func_924(int iParam0, int iParam1, int iParam2)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -26634,7 +26634,7 @@ int func_926(int iParam0)
 			return 7;
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return 25;
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
@@ -28668,7 +28668,7 @@ char* func_990(int iParam0)
 			return "COL_RO_LADY_SLIPPER_FOUND";
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return "COL_RO_MOCCASIN_FOUND";
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return "COL_GF_FOUND";
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return "COL_RO_ACUNAS_STAR_FOUND";

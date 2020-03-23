@@ -8996,7 +8996,7 @@ int func_133(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -14010,8 +14010,8 @@ void func_191(int iParam0)
 	{
 		TASK::TASK_SET_CROUCH_MOVEMENT(0, false, 0, false);
 	}
-	WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), false, 0, false, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), false, 1, false, false);
+	WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
+	WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 1, false, false);
 	TASK::TASK_SWAP_WEAPON(false, 1, 0, 0, 0);
 	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD_ADVANCED(0, vVar0, 1f, 20000, 0.09f, 0, Var4, (fVar3 + 180f));
 	TASK::TASK_PLAY_ANIM(0, func_158(iParam0, 0, 0, 0), func_158(iParam0, 0, 1, 0), 8f, -8f, -1, 24, 0f, false, 0, false, 0, false);
@@ -15461,7 +15461,7 @@ char* func_251(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -18432,7 +18432,7 @@ int func_369(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_370(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_371(int iParam0)
@@ -19713,7 +19713,7 @@ void func_426(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

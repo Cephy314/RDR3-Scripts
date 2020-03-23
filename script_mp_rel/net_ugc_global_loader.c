@@ -7461,7 +7461,7 @@ int func_336(int iParam0, int iParam1)
 		case 40:
 			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
 		case 41:
-			return 2140177766;
+			return 2140177766 /* GXTEntry: "Disturbing the Peace" */;
 		case 42:
 			return 1685924442 /* GXTEntry: "Train Robbery" */;
 		case 43:
@@ -7485,7 +7485,7 @@ int func_336(int iParam0, int iParam1)
 		case 52:
 			return -1358475411 /* GXTEntry: "Accomplice" */;
 		case 53:
-			return -1848598303;
+			return -1848598303 /* GXTEntry: "Disturbing the Peace" */;
 		case 54:
 			return -173287735 /* GXTEntry: "Murder" */;
 		case 55:
@@ -8303,7 +8303,7 @@ int func_369(int iParam0, int iParam1)
 			return 7;
 		case -1185533313:
 			return 10;
-		case -784189810:
+		case -784189810: /* GXTEntry: "Standard" */
 			return 0;
 		case -79999383:
 			return 6;
@@ -8315,9 +8315,9 @@ int func_369(int iParam0, int iParam1)
 			return 3;
 		case 1457860192:
 			return 5;
-		case 1579717899:
+		case 1579717899: /* GXTEntry: "Combat" */
 			return 1;
-		case 1744858848:
+		case 1744858848: /* GXTEntry: "Open" */
 			return 9;
 		case 2028478397:
 			return 4;
@@ -8338,13 +8338,13 @@ int func_370(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1918441640:
+		case -1918441640: /* GXTEntry: "LTS" */
 			return 2;
-		case -1581094459:
+		case -1581094459: /* GXTEntry: "Make It Count" */
 			return 8;
-		case -1437925683:
+		case -1437925683: /* GXTEntry: "Name Your Weapon (Teams)" */
 			return 12;
-		case -725256130:
+		case -725256130: /* GXTEntry: "Gun Rush Teams" */
 			return 17;
 		case -632356431:
 			return 14;
@@ -8352,25 +8352,25 @@ int func_370(int iParam0, int iParam1)
 			return 10;
 		case -548018579:
 			return 13;
-		case -533426613:
+		case -533426613: /* GXTEntry: "Team" */
 			return 1;
-		case -457802746:
+		case -457802746: /* GXTEntry: "FTB" */
 			return 3;
-		case -222655798:
+		case -222655798: /* GXTEntry: "Gun Rush" */
 			return 16;
 		case 10577687:
 			return 15;
-		case 424482930:
+		case 424482930: /* GXTEntry: "MM" */
 			return 6;
-		case 1153715636:
+		case 1153715636: /* GXTEntry: "LOS" */
 			return 5;
 		case 1175500245:
 			return 11;
-		case 1272390114:
+		case 1272390114: /* GXTEntry: "Name Your Weapon (FFA)" */
 			return 7;
 		case 1788958412:
 			return 4;
-		case 1816768801:
+		case 1816768801: /* GXTEntry: "Standard" */
 			return 0;
 		case 1842544025:
 			return 9;
@@ -13353,7 +13353,7 @@ void func_517(var uParam0)
 	uParam0->f_29 = 0;
 	uParam0->f_30 = 0f;
 	uParam0->f_31 = 149530285;
-	uParam0->f_32 = -784189810;
+	uParam0->f_32 = -784189810; /* GXTEntry: "Standard" */
 	uParam0->f_33 = 0;
 	uParam0->f_34 = 0;
 	uParam0->f_35 = 0;
@@ -13587,7 +13587,7 @@ void func_518(var uParam0)
 		func_616(uParam0->f_74[iVar0 /*10*/]);
 		iVar0++;
 	}
-	uParam0->f_155 = 1816768801;
+	uParam0->f_155 = 1816768801; /* GXTEntry: "Standard" */
 	uParam0->f_156 = 0;
 	uParam0->f_157 = 0;
 	uParam0->f_158 = 0;
@@ -55160,7 +55160,7 @@ void func_944(var uParam0)
 	Global_2097152->f_29 = func_973(*uParam0, "ccr", 0);
 	Global_2097152->f_30 = func_1005(*uParam0, "rleng", 0f);
 	Global_2097152->f_31 = func_999(*uParam0, "vehtype", 149530285);
-	Global_2097152->f_32 = func_999(*uParam0, "subtype", -784189810);
+	Global_2097152->f_32 = func_999(*uParam0, "subtype", -784189810 /* GXTEntry: "Standard" */);
 	Global_2097152->f_33 = func_973(*uParam0, "alrmbs", 0);
 	Global_2097152->f_34 = func_999(*uParam0, "rcmou", 0);
 	Global_2097152->f_35 = func_999(*uParam0, "rcveh", 0);
@@ -56665,7 +56665,7 @@ void func_948(var uParam0)
 		(Global_2359296->f_74[iVar2 /*10*/])->f_9 = func_1009(uVar33, iVar2, joaat("COLOR_PURE_WHITE"), bVar34);
 		iVar2++;
 	}
-	Global_2359296->f_155 = func_999(*uParam0, "subtype", 1816768801);
+	Global_2359296->f_155 = func_999(*uParam0, "subtype", 1816768801 /* GXTEntry: "Standard" */);
 	Global_2359296->f_155 = func_999(*uParam0, "subtyp", Global_2359296->f_155);
 	Global_2359296->f_156 = func_973(*uParam0, "alrmbs", 0);
 	Global_2359296->f_157 = func_973(*uParam0, "gmt", 0);
@@ -72415,7 +72415,7 @@ void func_1120(var uParam0)
 			Global_2097152->f_31 = 149530285;
 		}
 	}
-	iVar0 = func_973(*uParam0, "subtype", -784189810);
+	iVar0 = func_973(*uParam0, "subtype", -784189810 /* GXTEntry: "Standard" */);
 	bVar1 = true;
 	switch (iVar0)
 	{
@@ -72437,14 +72437,14 @@ void func_1120(var uParam0)
 	}
 	if (bVar1)
 	{
-		iVar0 = func_973(*uParam0, "modetp", -784189810);
+		iVar0 = func_973(*uParam0, "modetp", -784189810 /* GXTEntry: "Standard" */);
 		switch (iVar0)
 		{
 			case -2096941682:
-				Global_2097152->f_32 = -784189810;
+				Global_2097152->f_32 = -784189810; /* GXTEntry: "Standard" */
 				break;
 			case -1339288250:
-				Global_2097152->f_32 = 1579717899;
+				Global_2097152->f_32 = 1579717899; /* GXTEntry: "Combat" */
 				break;
 			case 157363901:
 				Global_2097152->f_32 = -63669280;
@@ -72710,7 +72710,7 @@ void func_1123()
 	}
 	if (!bVar1)
 	{
-		Global_2097152->f_32 = -784189810;
+		Global_2097152->f_32 = -784189810; /* GXTEntry: "Standard" */
 	}
 }
 
@@ -72860,37 +72860,37 @@ void func_1131(var uParam0)
 
 	if (func_998(*uParam0, "subtyp") == 2)
 	{
-		iVar0 = func_973(*uParam0, "subtyp", 1816768801);
+		iVar0 = func_973(*uParam0, "subtyp", 1816768801 /* GXTEntry: "Standard" */);
 		if (iVar0 < 18)
 		{
 			switch (iVar0)
 			{
 				case 0:
-					Global_2359296->f_155 = 1816768801;
+					Global_2359296->f_155 = 1816768801; /* GXTEntry: "Standard" */
 					break;
 				case 1:
-					Global_2359296->f_155 = -533426613;
+					Global_2359296->f_155 = -533426613; /* GXTEntry: "Team" */
 					break;
 				case 2:
-					Global_2359296->f_155 = -1918441640;
+					Global_2359296->f_155 = -1918441640; /* GXTEntry: "LTS" */
 					break;
 				case 3:
-					Global_2359296->f_155 = -457802746;
+					Global_2359296->f_155 = -457802746; /* GXTEntry: "FTB" */
 					break;
 				case 4:
 					Global_2359296->f_155 = 1788958412;
 					break;
 				case 5:
-					Global_2359296->f_155 = 1153715636;
+					Global_2359296->f_155 = 1153715636; /* GXTEntry: "LOS" */
 					break;
 				case 6:
-					Global_2359296->f_155 = 424482930;
+					Global_2359296->f_155 = 424482930; /* GXTEntry: "MM" */
 					break;
 				case 7:
-					Global_2359296->f_155 = 1272390114;
+					Global_2359296->f_155 = 1272390114; /* GXTEntry: "Name Your Weapon (FFA)" */
 					break;
 				case 8:
-					Global_2359296->f_155 = -1581094459;
+					Global_2359296->f_155 = -1581094459; /* GXTEntry: "Make It Count" */
 					break;
 				case 9:
 					Global_2359296->f_155 = 1842544025;
@@ -72902,7 +72902,7 @@ void func_1131(var uParam0)
 					Global_2359296->f_155 = 1175500245;
 					break;
 				case 12:
-					Global_2359296->f_155 = -1437925683;
+					Global_2359296->f_155 = -1437925683; /* GXTEntry: "Name Your Weapon (Teams)" */
 					break;
 				case 13:
 					Global_2359296->f_155 = -548018579;
@@ -72914,16 +72914,16 @@ void func_1131(var uParam0)
 					Global_2359296->f_155 = 10577687;
 					break;
 				case 16:
-					Global_2359296->f_155 = -222655798;
+					Global_2359296->f_155 = -222655798; /* GXTEntry: "Gun Rush" */
 					break;
 				case 17:
-					Global_2359296->f_155 = -725256130;
+					Global_2359296->f_155 = -725256130; /* GXTEntry: "Gun Rush Teams" */
 					break;
 			}
 		}
 		else
 		{
-			Global_2359296->f_155 = 1816768801;
+			Global_2359296->f_155 = 1816768801; /* GXTEntry: "Standard" */
 		}
 	}
 	MISC::SET_BIT(&(Global_2359296->f_156), func_370(Global_2359296->f_155, 1));
@@ -73761,23 +73761,23 @@ int func_1155(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return 1816768801;
+			return 1816768801 /* GXTEntry: "Standard" */;
 		case 1:
-			return -533426613;
+			return -533426613 /* GXTEntry: "Team" */;
 		case 2:
-			return -1918441640;
+			return -1918441640 /* GXTEntry: "LTS" */;
 		case 3:
-			return -457802746;
+			return -457802746 /* GXTEntry: "FTB" */;
 		case 4:
 			return 1788958412;
 		case 5:
-			return 1153715636;
+			return 1153715636 /* GXTEntry: "LOS" */;
 		case 6:
-			return 424482930;
+			return 424482930 /* GXTEntry: "MM" */;
 		case 7:
-			return 1272390114;
+			return 1272390114 /* GXTEntry: "Name Your Weapon (FFA)" */;
 		case 8:
-			return -1581094459;
+			return -1581094459 /* GXTEntry: "Make It Count" */;
 		case 9:
 			return 1842544025;
 		case 10:
@@ -73785,7 +73785,7 @@ int func_1155(int iParam0, int iParam1)
 		case 11:
 			return 1175500245;
 		case 12:
-			return -1437925683;
+			return -1437925683 /* GXTEntry: "Name Your Weapon (Teams)" */;
 		case 13:
 			return -548018579;
 		case 14:
@@ -73793,9 +73793,9 @@ int func_1155(int iParam0, int iParam1)
 		case 15:
 			return 10577687;
 		case 16:
-			return -222655798;
+			return -222655798 /* GXTEntry: "Gun Rush" */;
 		case 17:
-			return -725256130;
+			return -725256130 /* GXTEntry: "Gun Rush Teams" */;
 		case 18:
 			return 1943481570;
 		default:
@@ -73816,9 +73816,9 @@ int func_1156(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return -784189810;
+			return -784189810 /* GXTEntry: "Standard" */;
 		case 1:
-			return 1579717899;
+			return 1579717899 /* GXTEntry: "Combat" */;
 		case 2:
 			return -63669280;
 		case 3:
@@ -73834,7 +73834,7 @@ int func_1156(int iParam0, int iParam1)
 		case 8:
 			return 218185167;
 		case 9:
-			return 1744858848;
+			return 1744858848 /* GXTEntry: "Open" */;
 		case 10:
 			return -1185533313;
 		default:

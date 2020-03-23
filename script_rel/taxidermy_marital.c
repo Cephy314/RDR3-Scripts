@@ -2648,7 +2648,7 @@ int func_111(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_112(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_113(int iParam0)
@@ -3398,7 +3398,7 @@ void func_146(bool bParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -4517,7 +4517,7 @@ int func_205(bool bParam0, bool bParam1, int iParam2)
 			bVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			bVar9 = 2116770557;
+			bVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			bVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			bVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			bVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -4616,7 +4616,7 @@ int func_207(bool bParam0)
 			return 7;
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return 25;
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
@@ -6322,7 +6322,7 @@ char* func_255(bool bParam0)
 			return "COL_RO_LADY_SLIPPER_FOUND";
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return "COL_RO_MOCCASIN_FOUND";
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return "COL_GF_FOUND";
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return "COL_RO_ACUNAS_STAR_FOUND";

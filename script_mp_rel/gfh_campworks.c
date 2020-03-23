@@ -5546,7 +5546,7 @@ int func_157(int iParam0, int iParam1, int iParam2, int iParam3)
 			return 131;
 		case joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_SEASONAL_03"):
 			return 132;
-		case 1054660175:
+		case 1054660175: /* GXTEntry: "Standard 6" */
 			return 115;
 		case joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_GENERIC_07"):
 			return 116;
@@ -22352,7 +22352,7 @@ int func_442(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_443(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_444(int iParam0)
@@ -22574,7 +22574,7 @@ void func_452(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

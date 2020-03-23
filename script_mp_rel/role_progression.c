@@ -2669,9 +2669,9 @@ int func_148(int iParam0)
 		case 15:
 			return 1371028520;
 		case 16:
-			return 1479488426;
+			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
-			return -170363364;
+			return -170363364 /* GXTEntry: "Club Rewards" */;
 		default:
 			break;
 	}
@@ -2753,7 +2753,7 @@ int func_154(int iParam0)
 		case joaat("horse_breed_style_norfolk_roadster_tier_1"):
 		case joaat("horse_breed_style_norfolk_roadster_tier_5"):
 		case joaat("horse_breed_style_norfolk_roadster_tier_3"):
-			return 683067560;
+			return 683067560 /* GXTEntry: "Norfolk Roadster" */;
 	}
 	return iParam0;
 }
@@ -4936,7 +4936,7 @@ int func_255(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_203(963726415, 1);
+		return func_203(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
 	}
 	return func_203(iParam0, 1);
 }
@@ -7416,7 +7416,7 @@ int func_347(int iParam0)
 			return joaat("a_c_horse_ardennes_bayroan");
 		case 1686036388: /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */
 			return joaat("a_c_horse_ardennes_strawberryroan");
-		case 2125477381:
+		case 2125477381: /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */
 			return joaat("a_c_horse_belgian_blondchestnut");
 		case 1808724704: /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */
 			return joaat("a_c_horse_belgian_mealychestnut");
@@ -7532,23 +7532,23 @@ int func_347(int iParam0)
 			return -647020346;
 		case -878000957: /* GXTEntry: "Kladruber~n~Silver Coat" */
 			return -1846319726;
-		case -2145947333:
+		case -2145947333: /* GXTEntry: "Norfolk Roadster~n~Black Coat" */
 			return 1007570567;
-		case 156528857:
+		case 156528857: /* GXTEntry: "Norfolk Roadster~n~Speckled Grey Coat" */
 			return 1029339151;
-		case -1240970285:
+		case -1240970285: /* GXTEntry: "Norfolk Roadster~n~Piebald Roan Coat" */
 			return -1424767799;
-		case -1933497088:
+		case -1933497088: /* GXTEntry: "Norfolk Roadster~n~Rose Grey Coat" */
 			return -217135948;
-		case -1116314766:
+		case -1116314766: /* GXTEntry: "Norfolk Roadster~n~Dappled Buckskin Coat" */
 			return -156439156;
-		case -877141885:
+		case -877141885: /* GXTEntry: "Norfolk Roadster~n~Spotted Tricolor Coat" */
 			return 1344011125;
 		case -285185056:
 			return joaat("a_c_donkey_01");
 		case -1692268955: /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */
 			return joaat("a_c_horse_appaloosa_blacksnowflake");
-		case 2130706226:
+		case 2130706226: /* GXTEntry: "Arabian~n~Grey Coat" */
 			return joaat("a_c_horse_arabian_grey");
 		case 1214981718: /* GXTEntry: "Arabian~n~Red Chestnut Coat" */
 			return joaat("a_c_horse_arabian_redchestnut");
@@ -8503,7 +8503,7 @@ void func_374(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

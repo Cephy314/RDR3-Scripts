@@ -13445,8 +13445,8 @@ void func_290(bool bParam0)
 	}
 	if (bParam0 && Global_1939178->f_38 == joaat("WEAPON_KIT_CAMERA"))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 0, false, false);
-		Global_1939178->f_38 = joaat("weapon_unarmed");
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
+		Global_1939178->f_38 = joaat("WEAPON_UNARMED");
 	}
 }
 
@@ -15654,23 +15654,23 @@ char* func_391(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1816768801:
+		case 1816768801: /* GXTEntry: "Standard" */
 			return "GST_DEATHMATCH";
-		case -533426613:
+		case -533426613: /* GXTEntry: "Team" */
 			return "GST_DEATHMATCH_TEAM";
-		case -1918441640:
+		case -1918441640: /* GXTEntry: "LTS" */
 			return "GST_DEATHMATCH_LTS";
-		case -457802746:
+		case -457802746: /* GXTEntry: "FTB" */
 			return "GST_DEATHMATCH_FTB";
 		case 1788958412:
 			return "GST_DEATHMATCH_PITP";
-		case 1153715636:
+		case 1153715636: /* GXTEntry: "LOS" */
 			return "GST_DEATHMATCH_LMS";
-		case 424482930:
+		case 424482930: /* GXTEntry: "MM" */
 			return "GST_DEATHMATCH_MM";
-		case 1272390114:
+		case 1272390114: /* GXTEntry: "Name Your Weapon (FFA)" */
 			return "GST_DEATHMATCH_WOC";
-		case -1581094459:
+		case -1581094459: /* GXTEntry: "Make It Count" */
 			return "GST_DEATHMATCH_EXC";
 		case 1842544025:
 			return "GST_DEATHMATCH_TLG";
@@ -15680,15 +15680,15 @@ char* func_391(int iParam0)
 			return "GST_DEATHMATCH_HT";
 		case 1175500245:
 			return "GST_DEATHMATCH_TFTB";
-		case -1437925683:
+		case -1437925683: /* GXTEntry: "Name Your Weapon (Teams)" */
 			return "GST_DEATHMATCH_TWOC";
 		case -548018579:
 			return "GST_DEATHMATCH_EC";
 		case 10577687:
 			return "GST_DEATHMATCH_MC";
-		case -222655798:
+		case -222655798: /* GXTEntry: "Gun Rush" */
 			return "GST_DEATHMATCH_GR";
-		case -725256130:
+		case -725256130: /* GXTEntry: "Gun Rush Teams" */
 			return "GST_DEATHMATCH_TGR";
 		default:
 			break;
@@ -15700,9 +15700,9 @@ char* func_392(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -784189810:
+		case -784189810: /* GXTEntry: "Standard" */
 			return "GST_RACE_STANDA";
-		case 1579717899:
+		case 1579717899: /* GXTEntry: "Combat" */
 			return "GST_RACE_COMBAT";
 		case -63669280:
 			return "GST_RACE_DUALCO";
@@ -15718,7 +15718,7 @@ char* func_392(int iParam0)
 			return "GST_RACE_RUNAWT";
 		case 218185167:
 			return "GST_RACE_TARRAC";
-		case 1744858848:
+		case 1744858848: /* GXTEntry: "Open" */
 			return "GST_RACE_OPERAC";
 		case -1185533313:
 			return "GST_RACE_OPTARA";
@@ -18460,7 +18460,7 @@ void func_560()
 		iVar3 = func_607(PLAYER::PLAYER_ID());
 		if ((iVar3 != -1 && ((*Global_1125276)[iVar3 /*27*/])->f_9 == PLAYER::PLAYER_ID()) && func_608(&vVar0))
 		{
-			func_609(vVar0.y, -1896177107, 0, 0);
+			func_609(vVar0.y, -1896177107 /* GXTEntry: "Small Camp" */, 0, 0);
 			return;
 		}
 	}
@@ -19512,9 +19512,9 @@ int func_625(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1896177107:
+		case -1896177107: /* GXTEntry: "Small Camp" */
 			return 4;
-		case 2042309940:
+		case 2042309940: /* GXTEntry: "Large Camp" */
 			return 7;
 		default:
 			break;

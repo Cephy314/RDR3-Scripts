@@ -3169,279 +3169,279 @@ int func_96(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -787401661:
+		case -787401661: /* GXTEntry: "Abandoned Mission, Gaptooth Ridge, NA" */
 			return 993246734;
-		case 1154382595:
+		case 1154382595: /* GXTEntry: "Abandoned Trading Post, Roanoke Ridge, NH" */
 			return 1352537560;
-		case -744066564:
+		case -744066564: /* GXTEntry: "Fire Lookout Tower, Roanoke Ridge, NH" */
 			return -1262808306;
-		case 1448805167:
+		case 1448805167: /* GXTEntry: "Flattened Cabin, Grizzlies, AM" */
 			return 1582457845;
-		case -1753216046:
+		case -1753216046: /* GXTEntry: "Fort Brennand, Roanoke Ridge, NH" */
 			return 460210291;
-		case -832065774:
+		case -832065774: /* GXTEntry: "Limpany, The Heartlands, NH" */
 			return 2021420613;
-		case -1942169613:
+		case -1942169613: /* GXTEntry: "Meteor House, Roanoke Ridge, NH" */
 			return 1195199040;
-		case 1307292947:
+		case 1307292947: /* GXTEntry: "Oil Derrick, The Heartlands, NH" */
 			return -1212881551;
-		case 893044669:
+		case 893044669: /* GXTEntry: "Pleasance, Scarlett Meadows, LE" */
 			return -2011320133;
-		case 1716154100:
+		case 1716154100: /* GXTEntry: "Roadside Brothel, Roanoke Ridge, NH" */
 			return -1988847961;
-		case -1173672830:
+		case -1173672830: /* GXTEntry: "The Old Bacchus Place, Hennigan\'s Stead, NA" */
 			return 2056389698;
-		case -2074284650:
+		case -2074284650: /* GXTEntry: "Trading Post, The Heartlands, NH" */
 			return -942443338;
-		case -2133063188:
+		case -2133063188: /* GXTEntry: "Two Crows, Cholla Springs, NA" */
 			return 539572870;
-		case -769726319:
+		case -769726319: /* GXTEntry: "Mysterious Hill Home, Grizzlies, AM" */
 			return 66159563;
-		case 863351250:
+		case 863351250: /* GXTEntry: "Witches Cauldron, Grizzlies, AM" */
 			return 387869270;
-		case -419963911:
+		case -419963911: /* GXTEntry: "Appleseed Timber Co., Big Valley, WE" */
 			return -496244122;
-		case -619014970:
+		case -619014970: /* GXTEntry: "Castor\'s Ridge, The Heartlands, NH" */
 			return -238119963;
-		case 538198805:
+		case 538198805: /* GXTEntry: "Central Union Railroad, Roanoke Ridge, NH" */
 			return 1028223611;
-		case 1557904547:
+		case 1557904547: /* GXTEntry: "Central Union Railroad, Roanoke Ridge, NH" */
 			return 730222325;
-		case 1251481628:
+		case 1251481628: /* GXTEntry: "Central Union Railroad, Roanoke Ridge, NH" */
 			return -597970767;
-		case -828659305:
+		case -828659305: /* GXTEntry: "Fort Riggs Holding Camp, Big Valley, WE" */
 			return -732274047;
-		case -139400310:
+		case -139400310: /* GXTEntry: "Beaver Hollow, Roanoke Ridge, NH" */
 			return -1368676121;
-		case 1830267951:
+		case 1830267951: /* GXTEntry: "Clemens Point, Scarlett Meadows, LE" */
 			return 759314201;
-		case -1496551068:
+		case -1496551068: /* GXTEntry: "Colter, Grizzlies, AM" */
 			return 1826504111;
-		case 39999178:
+		case 39999178: /* GXTEntry: "Gaptooth Breach, Gaptooth Ridge, NA" */
 			return 1728445882;
-		case -103399754:
+		case -103399754: /* GXTEntry: "Hanging Dog Ranch, Big Valley, WE" */
 			return -12216052;
-		case -1359523911:
+		case -1359523911: /* GXTEntry: "Horseshoe Overlook, The Heartlands, NH" */
 			return -431488293;
-		case -336631570:
+		case -336631570: /* GXTEntry: "Pike\'s Basin, Hennigan\'s Stead, NA" */
 			return 1474106589;
-		case 866178028:
+		case 866178028: /* GXTEntry: "Shady Belle, Bayou Nwa, LE" */
 			return -353968602;
-		case 2056953687:
+		case 2056953687: /* GXTEntry: "Six Point Cabin, Cumberland Forest, NH" */
 			return -918096609;
-		case 878474860:
+		case 878474860: /* GXTEntry: "Solomon\'s Folly, Gaptooth Ridge, NA" */
 			return 1979340260;
-		case 219097977:
+		case 219097977: /* GXTEntry: "Aberdeen Pig Farm, Scarlett Meadows, LE" */
 			return 1472232821;
-		case -1043500161:
+		case -1043500161: /* GXTEntry: "Adler Ranch, Grizzlies, AM" */
 			return 462373845;
-		case -1902025470:
+		case -1902025470: /* GXTEntry: "Carmody Dell, The Heartlands, NH" */
 			return -1836330842;
-		case 1701820039:
+		case 1701820039: /* GXTEntry: "Catfish Jacksons, Scarlett Meadows, LE" */
 			return -1150244084;
-		case -2034338067:
+		case -2034338067: /* GXTEntry: "Chez Porter, Grizzlies, AM" */
 			return -1727895786;
-		case 1767462106:
+		case 1767462106: /* GXTEntry: "Larned Sod, The Heartlands, NH" */
 			return -1101810198;
-		case 770707682:
+		case 770707682: /* GXTEntry: "Lonnie\'s Shack, Scarlett Meadows, LE" */
 			return 2143316225;
-		case -1592070727:
+		case -1592070727: /* GXTEntry: "Maclean\'s House, Roanoke Ridge, NH" */
 			return 121074776;
-		case -1521776363:
+		case -1521776363: /* GXTEntry: "Painted Sky, Big Valley, WE" */
 			return -2086563810;
-		case 1544029611:
+		case 1544029611: /* GXTEntry: "Ridgewood Farm, Cholla Springs, NA" */
 			return -1332669948;
-		case 881209616:
+		case 881209616: /* GXTEntry: "Van Horn Mansion, Roanoke Ridge, NH" */
 			return 85299473;
-		case -1161186391:
+		case -1161186391: /* GXTEntry: "Watson\'s Cabin, Big Valley, WE" */
 			return -1813267128;
-		case -154855189:
+		case -154855189: /* GXTEntry: "Willard\'s Rest, Roanoke Ridge, NH" */
 			return 458479023;
-		case 1212679502:
+		case 1212679502: /* GXTEntry: "Beryl\'s Dream, Big Valley, WE" */
 			return -678676588;
-		case -969933882:
+		case -969933882: /* GXTEntry: "Black Balsam Rise, Roanoke Ridge, NH" */
 			return 1602161184;
-		case -1539536559:
+		case -1539536559: /* GXTEntry: "Black Bone Forest, Big Valley, WE" */
 			return -656861063;
-		case -916903901:
+		case -916903901: /* GXTEntry: "Brittlebrush Trawl, Hennigan\'s Stead, NA" */
 			return 1735191955;
-		case -2126414432:
+		case -2126414432: /* GXTEntry: "Broken Tree, Great Plains, WE" */
 			return 2073023198;
-		case 580715948:
+		case 580715948: /* GXTEntry: "Canebreak Manor, Bluewater Marsh, LE" */
 			return -1941572412;
-		case -814535426:
+		case -814535426: /* GXTEntry: "Chadwick Farm, The Heartlands, NH" */
 			return 215480587;
-		case 1987954784:
+		case 1987954784: /* GXTEntry: "Clingman, Roanoke Ridge, NH" */
 			return 545498183;
-		case 320988519:
+		case 320988519: /* GXTEntry: "Cochinay, Tall Trees, WE" */
 			return 820139809;
-		case 522499758:
+		case 522499758: /* GXTEntry: "Compsons Stead, Scarlett Meadows, LE" */
 			return 2063457042;
-		case 1082216465:
+		case 1082216465: /* GXTEntry: "Copperhead Landing, Bluewater Marsh, LE" */
 			return 1006072805;
-		case 1247830528:
+		case 1247830528: /* GXTEntry: "Cueva Seca, Gaptooth Ridge, NA" */
 			return 428613469;
-		case -645154787:
+		case -645154787: /* GXTEntry: "Doverhill, Roanoke Ridge, NH" */
 			return -161135375;
-		case -657053325:
+		case -657053325: /* GXTEntry: "Downes Ranch, The Heartlands, NH" */
 			return -1276637644;
-		case 1030217084:
+		case 1030217084: /* GXTEntry: "Evelyn Miller Camp, Tall Trees, WE" */
 			return -960425936;
-		case -1821194396:
+		case -1821194396: /* GXTEntry: "Face Rock, Scarlett Meadows, LE" */
 			return 532401286;
-		case -146460093:
+		case -146460093: /* GXTEntry: "Firwood Rise, Cumberland Forest, NH" */
 			return -1347759053;
-		case 2087258933:
+		case 2087258933: /* GXTEntry: "Fishing Spot, Bayou Nwa, LE" */
 			return 1542246539;
-		case 1922831023:
+		case 1922831023: /* GXTEntry: "Greenhollow, Hennigan\'s Stead, NA" */
 			return 1740117339;
-		case -1472363892:
+		case -1472363892: /* GXTEntry: "Guthrie Farm, The Heartlands, NH" */
 			return 770074951;
-		case 30800579:
+		case 30800579: /* GXTEntry: "Hagen Orchards, Bayou Nwa, LE" */
 			return -237206861;
-		case -1769528472:
+		case -1769528472: /* GXTEntry: "Hill Haven Ranch, Scarlett Meadows, LE" */
 			return 1877776161;
-		case 1895254880:
+		case 1895254880: /* GXTEntry: "Houseboat, Bluewater Marsh, LE" */
 			return 1837393665;
-		case -1692509313:
+		case -1692509313: /* GXTEntry: "Lake Don Julio House, Cholla Springs, NA" */
 			return 1603579970;
-		case -576782619:
+		case -576782619: /* GXTEntry: "Lone Mule Stead, Big Valley, WE" */
 			return -1456731677;
-		case 229479634:
+		case 229479634: /* GXTEntry: "Lucky\'s Cabin, The Heartlands, NH" */
 			return -1344767066;
-		case 1062452343:
+		case 1062452343: /* GXTEntry: "Macomb\'s End, Bayou Nwa, LE" */
 			return 1092217275;
-		case 1350749955:
+		case 1350749955: /* GXTEntry: "Merkins Waller, Bayou Nwa, LE" */
 			return 1855549007;
-		case 1506834348:
+		case 1506834348: /* GXTEntry: "Micah\'s Hideout, Grizzlies, AM" */
 			return -875696111;
-		case 2132554759:
+		case 2132554759: /* GXTEntry: "Millesani Claim, Grizzlies, AM" */
 			return -91026072;
-		case 1016304714:
+		case 1016304714: /* GXTEntry: "Mossy Flats, Roanoke Ridge, NH" */
 			return 1876184276;
-		case 375900073:
+		case 375900073: /* GXTEntry: "Nekoti Rock, Tall Trees, WE" */
 			return -876779166;
-		case -631265576:
+		case -631265576: /* GXTEntry: "Oddfellow\'s Rest, Cholla Springs, NA" */
 			return -1116738159;
-		case -291091669:
+		case -291091669: /* GXTEntry: "Old Greenbank Mill, Scarlett Meadows, LE" */
 			return 415864829;
-		case 1603158849:
+		case 1603158849: /* GXTEntry: "Old Tom\'s Blind, Big Valley, WE" */
 			return -1408667066;
-		case -2035208924:
+		case -2035208924: /* GXTEntry: "Pleasance House, Cholla Springs, NA" */
 			return -1730421200;
-		case 1860552235:
+		case 1860552235: /* GXTEntry: "Prinz & Co., Bayou Nwa, LE" */
 			return 1374995365;
-		case 1987585677:
+		case 1987585677: /* GXTEntry: "Radley\'s House, Scarlett Meadows, LE" */
 			return -1393093729;
-		case -259784188:
+		case -259784188: /* GXTEntry: "Radley\'s Pasture, Scarlett Meadows, LE" */
 			return -1623232489;
-		case 1477464408:
+		case 1477464408: /* GXTEntry: "Rattlesnake Hollow, Cholla Springs, NA" */
 			return -1394664008;
-		case 1136441188:
+		case 1136441188: /* GXTEntry: "Repentance, Rio Bravo, NA" */
 			return -325788416;
-		case 738939338:
+		case 738939338: /* GXTEntry: "Riley\'s Charge, Cholla Springs, NA" */
 			return -1807212021;
-		case -1247294802:
+		case -1247294802: /* GXTEntry: "Rio del Lobo House, Cholla Springs, NA" */
 			return -792566558;
-		case 6184171:
+		case 6184171: /* GXTEntry: "Scratching Post, Gaptooth Ridge, NA" */
 			return -2089448537;
-		case -868607615:
+		case -868607615: /* GXTEntry: "Silent Stead, Gaptooth Ridge, NA" */
 			return 82527577;
-		case 930788089:
+		case 930788089: /* GXTEntry: "Siltwater Strand, Scarlett Meadows, LE" */
 			return -1354901649;
-		case 1871224592:
+		case 1871224592: /* GXTEntry: "Stillwater Cabin, Hennigan\'s Stead, NA" */
 			return -1585921053;
-		case 1094048700:
+		case 1094048700: /* GXTEntry: "Stilt Shack, Big Valley, WE" */
 			return 222265732;
-		case -1419869345:
+		case -1419869345: /* GXTEntry: "Tanner\'s Reach, Tall Trees, WE" */
 			return 1561007383;
-		case -1894004139:
+		case -1894004139: /* GXTEntry: "Taxidermist House, Big Valley, WE" */
 			return 1104975149;
-		case 31314838:
+		case 31314838: /* GXTEntry: "The Hanging Rock, Cholla Springs, NA" */
 			return 1515744307;
-		case -438809735:
+		case -438809735: /* GXTEntry: "The Loft, Grizzlies, AM" */
 			return 893855320;
-		case 690770514:
+		case 690770514: /* GXTEntry: "Valley View, Big Valley, WE" */
 			return 235472255;
-		case 126047903:
+		case 126047903: /* GXTEntry: "Venter\'s Place, Cholla Springs, NA" */
 			return -1173041902;
-		case 1001341519:
+		case 1001341519: /* GXTEntry: "Veteran\'s Homestead, Grizzlies, AM" */
 			return 326709244;
-		case 1704544150:
+		case 1704544150: /* GXTEntry: "Wallace Overlook, Big Valley, WE" */
 			return -1337880478;
-		case 245588937:
+		case 245588937: /* GXTEntry: "Argil Rise, Scarlett Meadows, LE" */
 			return 205568929;
-		case 199607503:
+		case 199607503: /* GXTEntry: "Baygall Edge, Bayou Nwa, LE" */
 			return 276890716;
-		case -264897431:
+		case -264897431: /* GXTEntry: "Bear Claw, Tall Trees, WE" */
 			return -2110824426;
-		case -2000021141:
+		case -2000021141: /* GXTEntry: "Cairn Lodge, Grizzlies, AM" */
 			return 43681669;
-		case 1645047683:
+		case 1645047683: /* GXTEntry: "Clawson\'s Rest, Grizzlies, AM" */
 			return 562599937;
-		case -1164281509:
+		case -1164281509: /* GXTEntry: "Crawdad Willies, Bayou Nwa, LE" */
 			return 1822876181;
-		case 696910142:
+		case 696910142: /* GXTEntry: "Deer Cottage, Roanoke Ridge, NH" */
 			return -683043834;
-		case -1768736648:
+		case -1768736648: /* GXTEntry: "Dodd\'s Bluff, Grizzlies, AM" */
 			return 532503220;
-		case -930437658:
+		case -930437658: /* GXTEntry: "Dormin Crest, Grizzlies, AM" */
 			return 379859357;
-		case -1622112934:
+		case -1622112934: /* GXTEntry: "Fairvale Shanty, Grizzlies, AM" */
 			return 1610646968;
-		case -9585484:
+		case -9585484: /* GXTEntry: "Gill Landing, The Heartlands, NH" */
 			return 1268001912;
-		case -870780939:
+		case -870780939: /* GXTEntry: "Granger\'s Hoggery, The Heartlands, NH" */
 			return 653958186;
-		case 570617421:
+		case 570617421: /* GXTEntry: "Hani\'s Bethel, The Heartlands, NH" */
 			return -1917132299;
-		case 230920996:
+		case 230920996: /* GXTEntry: "Huron Glen, Roanoke Ridge, NH" */
 			return -134804027;
-		case 1071862910:
+		case 1071862910: /* GXTEntry: "Lenora View, Big Valley, WE" */
 			return 1116308524;
-		case 1436995883:
+		case 1436995883: /* GXTEntry: "Manito Glade, Roanoke Ridge, NH" */
 			return 1625008147;
-		case 806217109:
+		case 806217109: /* GXTEntry: "Martha\'s Swain, Grizzlies, AM" */
 			return -727372692;
-		case 1347794144:
+		case 1347794144: /* GXTEntry: "Old Harry Fen, Scarlett Meadows, LE" */
 			return 1354284392;
-		case -215175141:
+		case -215175141: /* GXTEntry: "Old Trail Rise, Scarlett Meadows, LE" */
 			return 1871337449;
-		case 359085936:
+		case 359085936: /* GXTEntry: "Osman Grove, Roanoke Ridge, NH" */
 			return -1249289544;
-		case -1699818764:
+		case -1699818764: /* GXTEntry: "Planter\'s Bawn, Grizzlies, AM" */
 			return 1714554710;
-		case 1499492436:
+		case 1499492436: /* GXTEntry: "Reed Cottage, Roanoke Ridge, NH" */
 			return -443207523;
-		case -793097117:
+		case -793097117: /* GXTEntry: "Ridge View, The Heartlands, NH" */
 			return -33677540;
-		case 1400897589:
+		case 1400897589: /* GXTEntry: "Robard Farm, Scarlett Meadows, LE" */
 			return -763271696;
-		case 848488661:
+		case 848488661: /* GXTEntry: "Sawbone Clearing, Roanoke Ridge, NH" */
 			return 2027689141;
-		case -504005310:
+		case -504005310: /* GXTEntry: "Shepherds Rise, Big Valley, WE" */
 			return -1484929764;
-		case -1099073636:
+		case -1099073636: /* GXTEntry: "Swadbass Point, Tall Trees, WE" */
 			return -1430883057;
-		case 372957665:
+		case 372957665: /* GXTEntry: "Trapper\'s Cabin, Bluewater Marsh, LE" */
 			return 2133877879;
-		case 1427239788:
+		case 1427239788: /* GXTEntry: "Vetter\'s Echo, Big Valley, WE" */
 			return -508074447;
-		case 1677148641:
+		case 1677148641: /* GXTEntry: "Beecher\'s Hope, Great Plains, WE" */
 			return -507075109;
-		case -425430549:
+		case -425430549: /* GXTEntry: "Butcher Creek, Roanoke Ridge, NH" */
 			return 147256338;
-		case -61172588:
+		case -61172588: /* GXTEntry: "Coots Chapel, Cholla Springs, NA" */
 			return 929640770;
-		case 492552869:
+		case 492552869: /* GXTEntry: "Cornwall Kerosene & Tar, The Heartlands, NH" */
 			return 648073069;
-		case -545967610:
+		case -545967610: /* GXTEntry: "Ewing Basin, Grizzlies, AM" */
 			return 653799702;
-		case -1999797981:
+		case -1999797981: /* GXTEntry: "Grand Korrigan, Lannahechee River" */
 			return -296815465;
-		case 1613985721:
+		case 1613985721: /* GXTEntry: "Grand Korrigan, Lannahechee River" */
 			return 1944800674;
-		case -120578354:
+		case -120578354: /* GXTEntry: "Pronghorn Ranch, Big Valley, WE" */
 			return 221661572;
 		default:
 			break;

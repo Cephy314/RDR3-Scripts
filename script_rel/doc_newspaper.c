@@ -1601,7 +1601,7 @@ int func_35(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, 
 				break;
 			case joaat("WEAPON_KIT_BINOCULARS"):
 				break;
-			case 2131771850:
+			case 2131771850: /* GXTEntry: "The Legend Of The East" */
 				func_105(415, 0);
 				Global_40.f_11095.f_60 = (Global_40.f_11095.f_60 + 0.1f);
 				func_152();
@@ -1628,7 +1628,7 @@ int func_35(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, 
 				func_158(499813453, 0);
 				func_159(1);
 				break;
-			case 2127812557:
+			case 2127812557: /* GXTEntry: "Jack Hall Gang Map 2" */
 				func_157(499813453, -1292544588, 0);
 				func_158(499813453, 0);
 				func_159(2);
@@ -1688,7 +1688,7 @@ int func_35(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, 
 				func_158(390004462, 0);
 				func_163(2);
 				break;
-			case 2142623221:
+			case 2142623221: /* GXTEntry: "The Elemental Trail Map 3" */
 				func_157(390004462, -1108972386, 0);
 				func_158(390004462, 0);
 				func_163(4);
@@ -2931,242 +2931,300 @@ void func_74(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 0:
-			(*uParam1)[1] = 1058023652;
-			(*uParam1)[2] = 83386168;
-			(*uParam1)[3] = 1470235786;
-			(*uParam1)[5] = 138629420;
-			(*uParam1)[6] = -35898274;
+			(*uParam1)[1] = 1058023652; /* GXTEntry: "EXPLOSIONS AND CHAOS" */
+			(*uParam1)[2] = 83386168; /* GXTEntry: "FIERY COACH ROBBERY" */
+			(*uParam1)[3] = 1470235786; /* GXTEntry: "ROBBERS USED DYNAMITE" */
+			(*uParam1)[5] = 138629420; /* GXTEntry: @"All was quiet and the air still as an explosion ripped through a Boles Overland coach traveling from Scarlett Meadows. In an unabashed robbery, the highwaymen dispensed with stopping the coach and ordering turnover of valuables. Instead, they planted dynamite on the road and as the coach rolled over it, ignited the explosives with a gunshot. In the resulting chaos the thieves looted the coach of its valuables and quickly dispersed." */
+			(*uParam1)[6] = -35898274; /* GXTEntry: "A representative for the Boles Overland Company said that it is the most daring a" +
+    "nd deadly of recent robbery attempts, with little to no concern for life and lim" +
+    "b of the victims." */
 			break;
 		case 1:
-			(*uParam1)[1] = -1132942503;
-			(*uParam1)[2] = -306257787;
-			(*uParam1)[3] = -1082391552;
-			(*uParam1)[5] = -1933252363;
-			(*uParam1)[6] = 1921299573;
+			(*uParam1)[1] = -1132942503; /* GXTEntry: "DARING COACH ROBBERY" */
+			(*uParam1)[2] = -306257787; /* GXTEntry: "WOMAN WAS AMONG THEM" */
+			(*uParam1)[3] = -1082391552; /* GXTEntry: "DRIVER, GUARDS DEAD" */
+			(*uParam1)[5] = -1933252363; /* GXTEntry: @"A banking coach traveling through Scarlett Meadows found itself the victim of an ingenious robbery. According to the account by one of the guards who died shortly afterwards, a woman in distress flagged the coach. Thinking that she was in distress, the gentlemen slowed to come to her aid, at which point a highwayman hiding on the side of the road shot the driver dead." */
+			(*uParam1)[6] = 1921299573; /* GXTEntry: "The guards fought them off valiantly but were overpowered and left for dead. The " +
+    "robbers then pilfered the coach and quickly left the area. A reward for their ca" +
+    "pture or kill has been posted." */
 			break;
 		case 2:
-			(*uParam1)[1] = 1097896734;
-			(*uParam1)[2] = -527730691;
-			(*uParam1)[3] = -2020686331;
-			(*uParam1)[5] = 1558140816;
-			(*uParam1)[6] = 1203318084;
+			(*uParam1)[1] = 1097896734; /* GXTEntry: "BLOOD IN THE HEARTLANDS" */
+			(*uParam1)[2] = -527730691; /* GXTEntry: "COACH RANSACKED" */
+			(*uParam1)[3] = -2020686331; /* GXTEntry: "COMMERCE IN QUESTION" */
+			(*uParam1)[5] = 1558140816; /* GXTEntry: @"Another bank coach found itself the victim of a hold up, this time in the Heartlands region, with politicians demanding something be done to stem this spate of robberies and allow for the regular flow of commerce. Coach robberies have become commonplace of late, with highwaymen growing more and more bold as law enforcement in rural areas has come under remarkable strain." */
+			(*uParam1)[6] = 1203318084; /* GXTEntry: @"""We had been moving some head of cattle when we heard a commotion,"" local resident Jasper Smith said. ""Lots of gunfire and screaming. When we arrived on the scene what we saw was horrific."" All the guards were killed in what appeared to have been a high velocity chase and gunfight. The coach was ransacked." */
 			break;
 		case 3:
-			(*uParam1)[1] = 635501564;
-			(*uParam1)[2] = 1536271015;
-			(*uParam1)[3] = -2031552171;
-			(*uParam1)[5] = -549142654;
-			(*uParam1)[6] = 266150010;
+			(*uParam1)[1] = 635501564; /* GXTEntry: "A TRAP SPRUNG" */
+			(*uParam1)[2] = 1536271015; /* GXTEntry: "MARSHALS SURPRISE THIEVES" */
+			(*uParam1)[3] = -2031552171; /* GXTEntry: "COACH ROBBERY GONE AWRY" */
+			(*uParam1)[5] = -549142654; /* GXTEntry: @"After a spate of holdups by outlaw gangs across the region, US Marshals employed a coach and disguised themselves as civilians, riding along the Lannahechee River in the hopes of luring thieves out of hiding in what appeared to be a quick and easy robbery. The trap was sprung just south of Braithwaite Manor as the thieves were taken by surprise at a coach packed with US Marshals and a cacophonous gun battle ensued." */
+			(*uParam1)[6] = 266150010; /* GXTEntry: "The assailants escaped during the bloody melee, having wounded and killed numerou" +
+    "s marshals. A spokesman for the US Marshals called them \"a gang of cowards\" who " +
+    "will soon be brought to heel." */
 			break;
 		case 4:
-			(*uParam1)[1] = -486466236;
-			(*uParam1)[2] = -857116358;
-			(*uParam1)[3] = 1599477265;
-			(*uParam1)[5] = 1213931689;
-			(*uParam1)[6] = 2136444581;
+			(*uParam1)[1] = -486466236; /* GXTEntry: "NEW RAILROAD COMPLETED" */
+			(*uParam1)[2] = -857116358; /* GXTEntry: "A GRAND PROJECT" */
+			(*uParam1)[3] = 1599477265; /* GXTEntry: "OUR MANIFEST DESTINY" */
+			(*uParam1)[5] = 1213931689; /* GXTEntry: @"The final ties were laid and spikes driven through to complete the Central Union rail line stretching through New Hanover. Passengers will be able to bypass the Grizzlies, Rhodes and Scarlett Meadows, drastically reducing travel time. Now with a direct line connecting Cornwall Kerosene and Tar and Saint Denis, freight and commuters will flow fast and freely." */
+			(*uParam1)[6] = 2136444581; /* GXTEntry: @"The project came with complications, including controversy over missing workers' wages and a land dispute. Representatives from towns such as Van Horn Trading Post and Annesburg say the new line will result in the decline of their towns. Civic planners hail the railroad as a new dawning day in American progress and history." */
 			break;
 		case 5:
-			(*uParam1)[1] = -1316093079;
-			(*uParam1)[2] = -1046072745;
-			(*uParam1)[3] = -1270311012;
-			(*uParam1)[5] = 1957525344;
-			(*uParam1)[6] = 211363637;
+			(*uParam1)[1] = -1316093079; /* GXTEntry: "COACH AMBUSHED" */
+			(*uParam1)[2] = -1046072745; /* GXTEntry: "ASSAILANTS FLEE, BURN BARN" */
+			(*uParam1)[3] = -1270311012; /* GXTEntry: "SEARCH CONTINUES FOR ROBBERS" */
+			(*uParam1)[5] = 1957525344; /* GXTEntry: @"A supply coach operated by Cornwall Industries was ambushed just south of Scarlett Meadows in Lemoyne. The band of thieves, numbering four in all, ordered the guards to abandon the coach. They then immediately fled with the stolen coach. The victims of the coach robbery gave pursuit to a local farm where the assailants were discovered later that night." */
+			(*uParam1)[6] = 211363637; /* GXTEntry: "During a massive gunfight, the highwaymen set fire to a barn, which burned to the" +
+    " ground. They escaped to the woods in the south and authorities are searching th" +
+    "e area for their whereabouts." */
 			break;
 		case 6:
-			(*uParam1)[1] = 679234593;
-			(*uParam1)[2] = 790141037;
+			(*uParam1)[1] = 679234593; /* GXTEntry: "O\'DRISCOLL HANGED" */
+			(*uParam1)[2] = 790141037; /* GXTEntry: "NOTORIOUS OUTLAW\'S LUCK RUNS OUT" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -393040806;
-			(*uParam1)[6] = 225637914;
+			(*uParam1)[5] = -393040806; /* GXTEntry: @"Colm O'Driscoll was hanged in Saint Denis, ending his ruthless time on the run as the notorious outlaw and leader of the O'Driscoll Boys. The gang perpetrated numerous robberies, train holdups, and brutal murders on both sides of the Grizzlies, striking fear into residents and travelers in the area. Since the death of his outlaw brother a decade prior, Colm O'Driscoll has run with both Irish and American hoodlums willing to die for a few dollars and some whisky." */
+			(*uParam1)[6] = 225637914; /* GXTEntry: "O\'Driscoll had previously avoided the gallows following two separate murder convi" +
+    "ctions, and some members of his gang began shooting at police in retaliation dir" +
+    "ectly after the execution." */
 			break;
 		case 7:
-			(*uParam1)[1] = 1284380168;
-			(*uParam1)[2] = -651770051;
-			(*uParam1)[3] = -2097735057;
-			(*uParam1)[5] = 821662409;
-			(*uParam1)[6] = 619608751;
+			(*uParam1)[1] = 1284380168; /* GXTEntry: "BANK ROBBED" */
+			(*uParam1)[2] = -651770051; /* GXTEntry: "VALENTINE INSTITUTION IN SHAMBLES" */
+			(*uParam1)[3] = -2097735057; /* GXTEntry: "EXPLOSIONS RIP OPEN SAFES" */
+			(*uParam1)[5] = 821662409; /* GXTEntry: @"The Bank of Valentine has been robbed by an outlaw gang thought to be responsible for several recent holdups and a spate of violence. The bank's manager was distracted by a female accomplice of the gang, then forced to open the vault. The safes were blown open with dynamite and it is believed that several thousand dollars in cash, notes and commercial papers were taken or destroyed." */
+			(*uParam1)[6] = 619608751; /* GXTEntry: "A gun battle ensued in the streets of the town. The gang evaded capture, and soon" +
+    " it seemed as if the entire town were after them. They were chased by authoritie" +
+    "s who were sadly unsuccessful in capturing the culprits." */
 			break;
 		case 8:
-			(*uParam1)[1] = -1742930715;
-			(*uParam1)[2] = -1352987288;
-			(*uParam1)[3] = -1113478667;
-			(*uParam1)[5] = 676730061;
-			(*uParam1)[6] = -2136718000;
+			(*uParam1)[1] = -1742930715; /* GXTEntry: "BANK ROBBED" */
+			(*uParam1)[2] = -1352987288; /* GXTEntry: "VALENTINE INSTITUTION RECOVERING" */
+			(*uParam1)[3] = -1113478667; /* GXTEntry: "THIEVES CRACKED SAFES" */
+			(*uParam1)[5] = 676730061; /* GXTEntry: @"The Bank of Valentine has been robbed by an outlaw gang thought to be responsible for several recent holdups and a spate of violence. The bank's manager was distracted by a female accomplice of the gang, then forced to open the vault. The safes were cracked and it is believed that several thousand dollars in cash, notes and commercial papers were taken or destroyed. The gang tried to sneak out of town but was soon ensnared in a gun battle." */
+			(*uParam1)[6] = -2136718000; /* GXTEntry: "The gang evaded capture, and soon it seemed as if the entire town were after them" +
+    ". They were chased by authorities who were sadly unsuccessful in capturing the c" +
+    "ulprits." */
 			break;
 		case 9:
-			(*uParam1)[1] = 233145454;
-			(*uParam1)[2] = -1030003209;
+			(*uParam1)[1] = 233145454; /* GXTEntry: "ALLBRIGHT CAPTURED." */
+			(*uParam1)[2] = -1030003209; /* GXTEntry: "SNAKE OIL SALESMAN POISONED MANY." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -2067943350;
-			(*uParam1)[6] = -1761585969;
+			(*uParam1)[5] = -2067943350; /* GXTEntry: @"When Fannie Crenshaw suffered from rheumatism, she looked to Benedict Allbright to ease her suffering. He told her that the fatty streak of flesh around the vertebrae of reptiles will cure any case of rheumatic issue. Showing her a long list of certificates from happy patients he had cured, she borrowed money from the bank and purchased several bottles." */
+			(*uParam1)[6] = -1761585969; /* GXTEntry: @"Miss Crenshaw is now one of many people who have been poisoned by Allbright's so called miracle cures. Tales have poured in after each town he visited � with purchasers feeling sickly and, usually, far worse than their original condition they sought to cure.~n~Allbright was finally captured and brought into the Office of Valentine's Sheriff by a bounty hunter who is rumored to be a family member or friend of someone poisoned by Allbright's hideous concoctions." */
 			break;
 		case 10:
-			(*uParam1)[1] = 440932517;
-			(*uParam1)[2] = 802847004;
+			(*uParam1)[1] = 440932517; /* GXTEntry: "GAMBLING OPERATION EXPOSED" */
+			(*uParam1)[2] = 802847004; /* GXTEntry: "ILLEGAL DEN OF CROOKS" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1968735607;
-			(*uParam1)[6] = 2094456548;
+			(*uParam1)[5] = -1968735607; /* GXTEntry: @"A gambling house has been functioning on the third floor of a storefront housing a Saint Denis gunsmith, operating completely without molestation by the authorities. The operation was raided recently by police investigating a commotion in the area and patrons and employees of the operation were questioned. It is estimated that hundreds of seamen, horsemen, travelers and gullible residents have hazarded and lost their fortunes at the illicit operation." */
+			(*uParam1)[6] = 2094456548; /* GXTEntry: "Authorities took gunsmith Chu Ling in for questioning and were informed that the " +
+    "gambling operation was conducted by organized criminals who threatened his healt" +
+    "h and welfare should he not acquiesce to the dishonest venture." */
 			break;
 		case 11:
-			(*uParam1)[1] = -218858354;
-			(*uParam1)[2] = -16526676;
+			(*uParam1)[1] = -218858354; /* GXTEntry: "MARK JOHNSON CAPTURED" */
+			(*uParam1)[2] = -16526676; /* GXTEntry: "WANTED BY LAW FOR YEARS" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -713790542;
-			(*uParam1)[6] = -1009301384;
+			(*uParam1)[5] = -713790542; /* GXTEntry: @"Stagecoach and train robber Mark Johnson had settled down in the bayou, built a house, courted and married a woman, and had a son. But that bucolic life was shattered when his criminal past finally caught up with him. The Sheriff's Department in Rhodes reissued his bounty recently, which had languished for years. Rumors have persisted about Johnson going back well over a decade." */
+			(*uParam1)[6] = -1009301384; /* GXTEntry: "The Rhodes Sheriff received a tip that Johnson had settled down and was hiding in" +
+    " plain sight. A bounty hunter captured and turned him in. Johnson is in the Rhod" +
+    "es jail awaiting trial." */
 			break;
 		case 12:
-			(*uParam1)[1] = -1926688180;
-			(*uParam1)[2] = -1798429678;
+			(*uParam1)[1] = -1926688180; /* GXTEntry: "BLACK WIDOW CAPTURED" */
+			(*uParam1)[2] = -1798429678; /* GXTEntry: "MURDERED SEVERAL MEN" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1095881944;
-			(*uParam1)[6] = -1938110786;
+			(*uParam1)[5] = -1095881944; /* GXTEntry: @"Ellie Anne Swan charmed many a man with her silver tongue and handsome figure. But those who courted her were rewarded with a kiss of death. Wanted for the deaths of several men, including her husband, Swan became known as The Black Widow. While it isn't known what caused her to turn on her suitors, it is known that her spree of killing has come to an end." */
+			(*uParam1)[6] = -1938110786; /* GXTEntry: "Mrs. Swan was turned over to authorities and is currently awaiting trial in the V" +
+    "alentine jail. Still protesting her innocence, at the time of capture she was lu" +
+    "ring another unsuspecting suitor into her web." */
 			break;
 		case 13:
-			(*uParam1)[1] = -42574812;
-			(*uParam1)[2] = 1232101727;
+			(*uParam1)[1] = -42574812; /* GXTEntry: "ANTHONY FOREMAN ARRESTED" */
+			(*uParam1)[2] = 1232101727; /* GXTEntry: "RINGLEADER ACROSS SEVERAL STATES" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1109376882;
-			(*uParam1)[6] = 1873683499;
+			(*uParam1)[5] = -1109376882; /* GXTEntry: @"A lot of nefarious souls roam the streets and alleys of the Saint Denis slums, but to some, Anthony Foreman is a hero. As the leader of crimes committed across several states, tales of his exploits widely circulated. He often held court in the saloon, wooing ladies and cheating at cards, daring any man to top his stories of daring crimes committed with impunity." */
+			(*uParam1)[6] = 1873683499; /* GXTEntry: "Foreman boasted that the law will never dare enter the slums of Saint Denis to ar" +
+    "rest him. However, a bounty was issued and Foreman was captured. He is now telli" +
+    "ng his tales in the Saint Denis jail." */
 			break;
 		case 14:
-			(*uParam1)[1] = 56995427;
-			(*uParam1)[2] = -626969930;
+			(*uParam1)[1] = 56995427; /* GXTEntry: "OTIS SKINNER CAUGHT" */
+			(*uParam1)[2] = -626969930; /* GXTEntry: "REIGN OF TERROR ENDS" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1185101111;
-			(*uParam1)[6] = 905319389;
+			(*uParam1)[5] = 1185101111; /* GXTEntry: @"Brutal murderer Otis Skinner is finally behind bars and residents of Blackwater and the surrounding region are breathing a sigh of relief. Otis and his brother led a ragtag bunch of criminals who collectively called themselves The Skinner Brothers and are responsible for deaths, dismemberments, robberies and kidnappings. Known for taking gruesome trophies and mutilating victims, the Skinner Brothers Gang was wanted in several states and has evaded capture for years." */
+			(*uParam1)[6] = 905319389; /* GXTEntry: "Comprised of half breeds and mixed race outcasts, the cunning gang became adept a" +
+    "t outwitting lawmen and covering their tracks. While Otis has been caught, other" +
+    "s remain at large." */
 			break;
 		case 15:
-			(*uParam1)[1] = 222587387;
-			(*uParam1)[2] = 609189180;
+			(*uParam1)[1] = 222587387; /* GXTEntry: "OTIS SKINNER KILLED" */
+			(*uParam1)[2] = 609189180; /* GXTEntry: "REIGN OF TERROR ENDS" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1234411431;
-			(*uParam1)[6] = -1465203498;
+			(*uParam1)[5] = -1234411431; /* GXTEntry: @"Brutal murderer Otis Skinner is finally dead and residents of Blackwater and the surrounding region are breathing a sigh of relief. Otis and his brother led a ragtag bunch of criminals who collectively called themselves The Skinner Brothers and are responsible for deaths, dismemberments, robberies and kidnappings. Known for taking gruesome trophies and mutilating victims, the Skinner Brothers Gang was wanted in several states and has evaded capture for years." */
+			(*uParam1)[6] = -1465203498; /* GXTEntry: "Comprised of half-breeds and mixed race outcasts, the cunning gang became adept a" +
+    "t outwitting lawmen and covering their tracks. While Otis has been killed, other" +
+    "s remain at large." */
 			break;
 		case 16:
-			(*uParam1)[1] = -215060262;
-			(*uParam1)[2] = 344902766;
+			(*uParam1)[1] = -215060262; /* GXTEntry: "DEL LOBOS GANG FINISHED" */
+			(*uParam1)[2] = 344902766; /* GXTEntry: "ESTEBAN CORTEZ DEAD" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1697949471;
-			(*uParam1)[6] = 449155650;
+			(*uParam1)[5] = 1697949471; /* GXTEntry: @"After a long and bloody string of robberies throughout the region and the murders of sheriff's deputies, Esteban Cortez was finally killed. Dispatches from the area indicate he was killed near Gaptooth Breach, though at press time this couldn't be confirmed. Long sought by the Tumbleweed Sheriff's office, Cortez and his brother Ram�n led an infamous gang of killers." */
+			(*uParam1)[6] = 449155650; /* GXTEntry: "The brothers and their accomplices have evaded law enforcement and sown terror th" +
+    "roughout the region. Bounties were issued for Cortez to be brought in dead or al" +
+    "ive. Recently his brother was killed in Saint Denis, spelling the end of the Del" +
+    " Lobos." */
 			break;
 		case 17:
-			(*uParam1)[1] = 565147534;
-			(*uParam1)[2] = 1085644998;
+			(*uParam1)[1] = 565147534; /* GXTEntry: "DEL LOBOS GANG FINISHED" */
+			(*uParam1)[2] = 1085644998; /* GXTEntry: "ESTEBAN CORTEZ CAUGHT" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1673893059;
-			(*uParam1)[6] = 1762592015;
+			(*uParam1)[5] = -1673893059; /* GXTEntry: @"After a long and bloody string of robberies throughout the region and the murders of sheriff's deputies, notorious outlaw Esteban Cortez was finally caught. Dispatches from the area indicate he was captured near Gaptooth Breach, though at press time this couldn't be confirmed. Long sought by the Tumbleweed Sheriff's office, Cortez and his brother Ram�n led an infamous gang of killers." */
+			(*uParam1)[6] = 1762592015; /* GXTEntry: "The brothers and their accomplices have evaded law enforcement and sown terror th" +
+    "roughout the region. Bounties were issued for Cortez to be brought in dead or al" +
+    "ive. Recently his brother was also captured and is sentenced to be hung." */
 			break;
 		case 18:
-			(*uParam1)[1] = -1947344575;
-			(*uParam1)[2] = 1183113484;
+			(*uParam1)[1] = -1947344575; /* GXTEntry: "DEL LOBOS GANG FINISHED" */
+			(*uParam1)[2] = 1183113484; /* GXTEntry: "ESTEBAN CORTEZ CAUGHT" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 215714142;
-			(*uParam1)[6] = -14029317;
+			(*uParam1)[5] = 215714142; /* GXTEntry: @"After a long and bloody string of robberies throughout the region and the murders of sheriff's deputies, Esteban Cortez was finally captured. Dispatches from the area indicate he was caught near Gaptooth Breach, though at press time this couldn't be confirmed. Long sought by the Tumbleweed Sheriff's office, Cortez and his brother Ram�n led an infamous gang of killers." */
+			(*uParam1)[6] = -14029317; /* GXTEntry: "The brothers and their accomplices have evaded law enforcement and sown terror th" +
+    "roughout the region. Bounties were issued for Cortez to be brought in dead or al" +
+    "ive. Recently his brother was killed in Saint Denis, spelling the end of the Del" +
+    " Lobos." */
 			break;
 		case 19:
-			(*uParam1)[1] = -187013772;
-			(*uParam1)[2] = -1718077947;
+			(*uParam1)[1] = -187013772; /* GXTEntry: "DEL LOBOS GANG FINISHED" */
+			(*uParam1)[2] = -1718077947; /* GXTEntry: "ESTEBAN CORTEZ DEAD" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -529147089;
-			(*uParam1)[6] = 1971848557;
+			(*uParam1)[5] = -529147089; /* GXTEntry: @"After a long and bloody string of robberies throughout the region and the murders of sheriff's deputies, notorious outlaw Esteban Cortez was finally killed. Dispatches from the area indicate he was killed near Gaptooth Breach, though at press time this couldn't be confirmed. Long sought by the Tumbleweed Sheriff's office, Cortez and his brother Ram�n led an infamous gang of killers." */
+			(*uParam1)[6] = 1971848557; /* GXTEntry: "The brothers and their accomplices have evaded law enforcement and sown terror th" +
+    "roughout the region. Bounties were issued for Cortez to be brought in dead or al" +
+    "ive. Recently his brother was captured and is sentenced to be hung." */
 			break;
 		case 20:
-			(*uParam1)[1] = 404261010;
-			(*uParam1)[2] = -293066142;
+			(*uParam1)[1] = 404261010; /* GXTEntry: "NEW DINOSAUR DISCOVERED" */
+			(*uParam1)[2] = -293066142; /* GXTEntry: "HAS TAIL, FINS AND LEGS" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1536037743;
-			(*uParam1)[6] = -1916012566;
+			(*uParam1)[5] = 1536037743; /* GXTEntry: @"Scientist Deborah MacGuiness is notifying colleges far and wide with her claim to have discovered a new kind of dinosaur unlike any seen before. The specimen is said to have three legs, a tail for swimming, large antlers like that of a massive elk, and tusks. Calling the species Totalisaurus West Elizabethus, she has excited enthusiasts who are clamoring to see it." */
+			(*uParam1)[6] = -1916012566; /* GXTEntry: "Several institutions have doubted the find, with Dr. Herbert Manius from Harvard " +
+    "saying \"MacGuiness is known for histrionics, and it is likely this discovery is " +
+    "simply the fusion of fossils who all expired in the same location.\"" */
 			break;
 		case 21:
-			(*uParam1)[1] = -1369644388;
-			(*uParam1)[2] = 885729844;
-			(*uParam1)[3] = 445380022;
-			(*uParam1)[5] = -757204467;
-			(*uParam1)[6] = 206761206;
+			(*uParam1)[1] = -1369644388; /* GXTEntry: "HE DREW A BIG REVOLVER" */
+			(*uParam1)[2] = 885729844; /* GXTEntry: "FAMED GUNSLINGERS BATTLE" */
+			(*uParam1)[3] = 445380022; /* GXTEntry: "CALLOWAY DEAD" */
+			(*uParam1)[5] = -757204467; /* GXTEntry: @"When the smoke cleared at Brandywine Drop, a score was settled and two legendary gunslingers, Slim Grant and Jim ""Boy"" Calloway, were dead. Gunslinger turned Marshal, Slim Grant, was shot by Calloway, who was seeking revenge for the untimely demise of his cousin, many years ago. After mortally wounding Grant, Calloway was shot in the back in a final act of cowardice." */
+			(*uParam1)[6] = 206761206; /* GXTEntry: "Witness to the events preceding their deaths was author and historian Theodore Le" +
+    "vin, who is currently penning a biography on Calloway, in which he promises to c" +
+    "hronicle in detail the tragic last moments and words of two legends of a lost er" +
+    "a." */
 			break;
 		case 22:
-			(*uParam1)[1] = -518998776;
-			(*uParam1)[2] = 437388956;
-			(*uParam1)[3] = 1204871705;
-			(*uParam1)[5] = -1805886990;
-			(*uParam1)[6] = 330225817;
+			(*uParam1)[1] = -518998776; /* GXTEntry: "CAPTIVES FREED" */
+			(*uParam1)[2] = 437388956; /* GXTEntry: "TOILED IN HIDING" */
+			(*uParam1)[3] = 1204871705; /* GXTEntry: "SAINT DENIS PAWNBROKER IMPLICATED" */
+			(*uParam1)[5] = -1805886990; /* GXTEntry: @"The long and persistent efforts of Brother Aldred Dorkins to expose a secret forced labor operation in Saint Denis have finally met with success. Authorities have implicated Saint Denis pawnbroker Claude Jarreau of keeping individuals against their will. Jarreau was running a slavery ring from a hidden cellar accessible behind a bookcase. Rumors had persisted for years yet no definitive proof was found until recently." */
+			(*uParam1)[6] = 330225817; /* GXTEntry: @"The prisoners, neither of whom speak English, were freed and after some food and rest have sent dispatches to their immediate families, who have not heard from them in some time. It is believed the victims were to be sold to unscrupulous farmers and ranchers in the Caribbean." */
 			break;
 		case 23:
-			(*uParam1)[1] = 694865154;
-			(*uParam1)[2] = 992018002;
-			(*uParam1)[3] = 89821894;
-			(*uParam1)[5] = 2116883103;
-			(*uParam1)[6] = -305630760;
+			(*uParam1)[1] = 694865154; /* GXTEntry: "BRAWL AT CH�TENAY ART EXHIBITION" */
+			(*uParam1)[2] = 992018002; /* GXTEntry: "ART EXHIBIT ENDS IN A ROW" */
+			(*uParam1)[3] = 89821894; /* GXTEntry: "PATRONS ENGAGE IN FISTICUFFS" */
+			(*uParam1)[5] = 2116883103; /* GXTEntry: @"A brawl broke out at an exhibition of the works of French artist Charles Ch�tenay, sending the Saint Denis art world into disarray and shock as several prominent art patrons were injured. Extensive damage was also reported to the gallery's permanent collection. The disruption is thought to have begun as a reaction to the crude, na�ve art works, which were described as gaudily colorful and shocking in their detail." */
+			(*uParam1)[6] = -305630760; /* GXTEntry: "One patron indicated that the horror of the work is to blame for the behavior of " +
+    "the crowd, appealing to their most dour and base elements. Ch�tenay wasn\'t able " +
+    "to be located for comment." */
 			break;
 		case 24:
-			(*uParam1)[1] = -544747299;
-			(*uParam1)[2] = 1149473811;
+			(*uParam1)[1] = -544747299; /* GXTEntry: "COLLECTORS RAVE ON CH�TENAY" */
+			(*uParam1)[2] = 1149473811; /* GXTEntry: "ART VALUES SOAR" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 762780430;
-			(*uParam1)[6] = 1080508654;
+			(*uParam1)[5] = 762780430; /* GXTEntry: @"In a remarkable exhibition at The Halston Gallery in New York City, a new series of works by French artist Charles Ch�tenay demanded huge sums and sold quickly. His previous work has failed to gain much critical success in Paris and Saint Denis, however the New York art world quickly embraced his crude, innocent style, and a new South Pacific subject matter, with critics saying the work shows a sensitivity lacking in seemingly accomplished artists of today, and that the primitive style and subject matter complement one another perfectly." */
+			(*uParam1)[6] = 1080508654; /* GXTEntry: "The once apparently misunderstood artist has enjoyed and relished his newfound fa" +
+    "me after years of toil, spending time dancing with society women, enjoying cockt" +
+    "ails and spending lavishly, and has become a prominent fixture on the New York s" +
+    "ocial circuit." */
 			break;
 		case 25:
-			(*uParam1)[1] = -1351317536;
-			(*uParam1)[2] = -1017472673;
-			(*uParam1)[3] = -912546335;
-			(*uParam1)[5] = -1902013391;
-			(*uParam1)[6] = -1590183587;
+			(*uParam1)[1] = -1351317536; /* GXTEntry: "CONTAMINATION" */
+			(*uParam1)[2] = -1017472673; /* GXTEntry: "WATER UNDRINKABLE" */
+			(*uParam1)[3] = -912546335; /* GXTEntry: "BIZARRE SICKNESS SPREADS" */
+			(*uParam1)[5] = -1902013391; /* GXTEntry: @"Roanoke towns are often plagued with poverty, superstition and maladies, but after deformities began to appear among residents of rural Butcher Creek, the townspeople say the area may be cursed. Contaminants were found and some accuse the Roanoke Mountain Fuel Company of fouling the local drinking water, resulting in large goiters, rashes, sores and psychosis." */
+			(*uParam1)[6] = -1590183587; /* GXTEntry: @"The symptoms also point to lead poisoning similar to those seen in plumbers and painters, with victims becoming unusually pale and weak. The eponymously named creek and Elysian Pool are polluted, though residents will not seek action against the mining company, and are instead seeking a spiritual solution to their problems." */
 			break;
 		case 26:
-			(*uParam1)[1] = 886055955;
-			(*uParam1)[2] = 571895420;
+			(*uParam1)[1] = 886055955; /* GXTEntry: "AFRICAN LION KILLED" */
+			(*uParam1)[2] = 571895420; /* GXTEntry: "ESCAPED FROM TRAVELING SHOW" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 141091591;
-			(*uParam1)[6] = -160252133;
+			(*uParam1)[5] = 141091591; /* GXTEntry: @"Residents of the Heartlands who experienced hysteria-laden sightings of an African lion breathed a sigh of relief as the beast was killed at Emerald Ranch. The lion was responsible for a spate of livestock killings and the death of a farmhand. It was thought to have escaped from a traveling show called Margaret, Mistress of Danger: The World's Greatest Female Animal Trainer." */
+			(*uParam1)[6] = -160252133; /* GXTEntry: @"Margaret is in fact Haywood Margaret, an Englishman and female stage impersonator. Upset by a dust devil outside Rhodes, the lion escaped. Distressed by the incident and death of his beloved lion, Margaret is believed to be on a packet steamer headed back to England." */
 			break;
 		case 27:
-			(*uParam1)[1] = -556285487;
-			(*uParam1)[2] = 1614302152;
+			(*uParam1)[1] = -556285487; /* GXTEntry: "A DECIDED NOVELTY" */
+			(*uParam1)[2] = 1614302152; /* GXTEntry: "WILDLIFE PHOTOGRAPHY EXHIBIT ENTHRALLS" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -419436105;
-			(*uParam1)[6] = -1153592781;
+			(*uParam1)[5] = -419436105; /* GXTEntry: @"The wildlife photography of Albert Mason is on view at the Fiore Collection in New York, furthering the photographer and conservationist's pledge to promote the preservation of America's remarkable but fast disappearing fauna. The beautifully captured photographs feature coyotes, wolves, wild horses, alligators, and eagles." */
+			(*uParam1)[6] = -1153592781; /* GXTEntry: @"In a prepared speech at the gallery, Mr. Mason said he is humble in his achievements, had some harrowing close calls, and told attendees it is remarkable he survived to publish the photos. He expressed hope that Americans in the future will pursue wild animals with a camera and flash bulb rather than a hunting rifle." */
 			break;
 		case 28:
-			(*uParam1)[1] = 2037158384;
-			(*uParam1)[2] = 585557722;
+			(*uParam1)[1] = 2037158384; /* GXTEntry: "MAYOR\'S ASSISTANT THOUGHT DEAD" */
+			(*uParam1)[2] = 585557722; /* GXTEntry: "MISSING FOR SOME TIME" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -656934440;
-			(*uParam1)[6] = 1773837215;
+			(*uParam1)[5] = -656934440; /* GXTEntry: "Mayor Lemieux of Saint Denis announced his assistant Jean Marc Mercier has been m" +
+    "issing for several weeks and must now be presumed dead. Mr. Mercier worked with " +
+    "the Mayor to defeat organized crime and shared his criticism of the new industri" +
+    "alist class." */
+			(*uParam1)[6] = 1773837215; /* GXTEntry: @"Mercier was heading up the Mayor's program of cultural enrichment and democratization, involving the art collection at the Saint Denis gallery, which is beginning to gain national recognition following its endorsement from Professor Shiftacre of Yale University. Mercier also worked to secure a huge endowment from newspaper owner Hector Fellowes for construction of a library. The Mayor has vowed to press on with the cultural programs in honor of Mercier." */
 			break;
 		case 29:
-			(*uParam1)[1] = -546026667;
-			(*uParam1)[2] = 2043867312;
+			(*uParam1)[1] = -546026667; /* GXTEntry: "MAYOR LEMIEUX RESIGNS" */
+			(*uParam1)[2] = 2043867312; /* GXTEntry: "PLAGUED BY SCANDAL" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -2108845481;
-			(*uParam1)[6] = -1131313442;
+			(*uParam1)[5] = -2108845481; /* GXTEntry: @"The Mayor of Saint Denis has abruptly resigned as questions began to surface in regards to his ties to organized crime. Mayor Lemieux's recent programs of cultural enrichment and democratization involved the collection at the Saint Denis gallery, which is beginning to gain national recognition after a surprise endorsement from Professor Shiftacre of Yale University. He also worked to secure a huge endowment from newspaper owner Hector Fellowes for construction of a library." */
+			(*uParam1)[6] = -1131313442; /* GXTEntry: " The Mayor\'s assistant Jean Marc Mercier has assumed the post and vowed to press " +
+    "on with the programs with a new spirit of transparency and principle in honor of" +
+    " the work begun by Lemieux." */
 			break;
 		case 30:
-			(*uParam1)[1] = 998414367;
-			(*uParam1)[2] = 2113575249;
-			(*uParam1)[3] = -876464929;
-			(*uParam1)[5] = -1369345218;
-			(*uParam1)[6] = 1074337419;
+			(*uParam1)[1] = 998414367; /* GXTEntry: "MASSIVE EXPLOSIONS" */
+			(*uParam1)[2] = 2113575249; /* GXTEntry: "ROBBERY AT CORNWALL FACILITY" */
+			(*uParam1)[3] = -876464929; /* GXTEntry: "MANY DEAD OR DYING" */
+			(*uParam1)[5] = -1369345218; /* GXTEntry: @"A peaceful night was split in two as explosions rocked Cornwall Kerosene & Tar in the heartlands of New Hanover. In the ensuing chaos, a gang of criminals breached the perimeter and headed towards the office safe. According to the foreman, the robbers were not interested in stealing cash. Instead they sought important business documents from the safe." */
+			(*uParam1)[6] = 1074337419; /* GXTEntry: @"They were discovered mid-heist and a spectacular gun battle ensued. Numerous guards were killed and others gravely wounded as the unscrupulous bandits fled. Local law enforcement do not have any leads or motives but report to be forming organized posses and militias to comb the surrounding area." */
 			break;
 		case 31:
-			(*uParam1)[1] = -1513488517;
-			(*uParam1)[2] = 757007611;
+			(*uParam1)[1] = -1513488517; /* GXTEntry: "ELECTRIC CHAIR ARCHITECT DIES" */
+			(*uParam1)[2] = 757007611; /* GXTEntry: "KILLED BY OWN INVENTION" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1953397901;
-			(*uParam1)[6] = -1129290320;
+			(*uParam1)[5] = -1953397901; /* GXTEntry: @"Professor Andrew Bell III, who startled the world with his novel invention that puts condemned criminals out of existence, was sadly killed demonstrating his electric chair. During the execution of Wilson J. McDaniels, the chair seemed to malfunction. Witnesses report multiple attempts were made at the execution, which in a mishap killed Bell as McDaniel's hair burned yet he did not expire." */
+			(*uParam1)[6] = -1129290320; /* GXTEntry: "McDaniels, convicted of murder, bigamy and immoral animal husbandry, did not dese" +
+    "rve such a barbaric end, according to the Saint Denis Chief of Police who said t" +
+    "he city will return to using the gallows as means of execution for the foreseeab" +
+    "le future." */
 			break;
 		case 32:
-			(*uParam1)[1] = -188888539;
-			(*uParam1)[2] = 1163343855;
-			(*uParam1)[3] = 316887816;
-			(*uParam1)[5] = 1093667790;
-			(*uParam1)[6] = -1053389863;
+			(*uParam1)[1] = -188888539; /* GXTEntry: "SERIAL KILLER DEAD" */
+			(*uParam1)[2] = 1163343855; /* GXTEntry: "MURDER DEN DISCOVERED" */
+			(*uParam1)[3] = 316887816; /* GXTEntry: "VALENTINE BREATHES RELIEF" */
+			(*uParam1)[5] = 1093667790; /* GXTEntry: @"Edmund Lowry Jr., the degenerate perpetrator behind a string of grisly murders that terrorized residents, is finally dead. Considered a likeable, mild-mannered gentleman by those he met in public, Lowry was secretly a man who murdered for pleasure, carrying out brutal killings around the area. When news of his capture and killing spread, residents breathed a collective sigh of relief, as the spate of serial killings has put the town on edge." */
+			(*uParam1)[6] = -1053389863; /* GXTEntry: "After an altercation with the Sheriff of Valentine, Lowry was killed. Law enforce" +
+    "ment officials later discovered his dilapidated murder den under a ruined shack " +
+    "outside of the town limits." */
 			break;
 		case 33:
-			(*uParam1)[1] = -532564011;
-			(*uParam1)[2] = -733172977;
+			(*uParam1)[1] = -532564011; /* GXTEntry: "A TALE OF TWO ROBBERIES" */
+			(*uParam1)[2] = -733172977; /* GXTEntry: "HIGHWAYMEN CLASH AT COACH HOLDUP" */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 907866416;
-			(*uParam1)[6] = 333294770;
+			(*uParam1)[5] = 907866416; /* GXTEntry: @"Two separate bands of highwaymen had their sights on the same banking stagecoach north of Strawberry in Big Valley. The driver called out ""it's a hold up!"" and the guard could see four masked men outside. During the encounter, a separate band of highwaymen arrived and exchanged gunfire. Sheriff deputies arrived on the scene several hours later and found looted bodies in a stretch of the Dakota River." */
+			(*uParam1)[6] = 333294770; /* GXTEntry: "The dead are believed to be members of the notorious O\'Driscoll Boys, who have be" +
+    "en lying around the area in recent weeks and responsible for robberies of bankin" +
+    "g and mail shipments." */
 			break;
 		default:
 			break;
@@ -3179,124 +3237,138 @@ void func_75(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 0:
-			(*uParam1)[1] = 1897544931;
-			(*uParam1)[2] = 266041631;
+			(*uParam1)[1] = 1897544931; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = 266041631; /* GXTEntry: "BLUEGILL." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1509550115;
-			(*uParam1)[6] = 509767913;
+			(*uParam1)[5] = 1509550115; /* GXTEntry: @"As I have often told keen readers of this column, fishing is, for those of us intelligent enough to see it, really the best way to understand humanity in all its glory. As a famous angler, writer and dare I say it, philosopher, I'm used to the perils of celebrity. Once, while signing an autograph for a polio-stricken youth in Kuala Lumpur, he asked me my thoughts on fishing while it is raining." */
+			(*uParam1)[6] = 509767913; /* GXTEntry: @"""Why, that's the best time to fish, little fellow,"" I laughed heartily, slapping him on the back and causing him to cough mightily and, quite frankly, embarrass both of us. Poor little chap. Life can be very unfair. Fishing taught me that. I always say that some of the deepest introspection into a man's soul happens when he stands in a torrential downpour. I was fishing in the rain using live bait near Scarlett Meadows and hooked a monster Bluegill. And yet, even I didn't land him, so there's a metaphor, pretty much for everything." */
 			(*uParam1)[7] = 0;
 			break;
 		case 1:
-			(*uParam1)[1] = 2015614314;
-			(*uParam1)[2] = -882651535;
+			(*uParam1)[1] = 2015614314; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -882651535; /* GXTEntry: "BULLHEAD CATFISH." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 197851966;
-			(*uParam1)[6] = -521034356;
+			(*uParam1)[5] = 197851966; /* GXTEntry: @"My writings on angling continue to attract fresh young neophytes, eager to begin life's journey of standing in solitude, holding a pole in silence, free from the berating of the fairer sex. Indeed, I have even taught more than one U.S. President to fish, especially catfish, for luring bottom feeders into a pernicious situation that benefits the well-heeled is a prerequisite for successful politicians, almost as much as it is a prerequisite for any wise husband." */
+			(*uParam1)[6] = -521034356; /* GXTEntry: @"Catfish respond to handmade lures, crayfish and worms. Try all three when attempting to land this simply wonderful and much maligned fish. They also need to be coaxed, not bullied. There are fantastic Bullhead Catfish near Sisika Island. If you see me angling for Bullhead, please do come say hello and ask for an autograph. Unlike the fish, I promise I won't bite." */
 			(*uParam1)[7] = 0;
 			break;
 		case 2:
-			(*uParam1)[1] = -1930969928;
-			(*uParam1)[2] = -1309514843;
+			(*uParam1)[1] = -1930969928; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -1309514843; /* GXTEntry: "CHAIN PICKEREL." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1876026974;
-			(*uParam1)[6] = -1163727221;
+			(*uParam1)[5] = -1876026974; /* GXTEntry: @"It is well known that anglers go mad at times. Like hares in March, the sight of an annual salmon run or Steelhead Trout snapping at flies in spring is a topic of considerable froth and forecast for the best of us. However there exist fish that are available year round and bring great joy. When in Italy, I once took the Pope fishing for chain pickerel, and he delighted at the fantastic action and fight of this toothy fish." */
+			(*uParam1)[6] = -1163727221; /* GXTEntry: @"I'm no Catholic, but even I was impressed by His Holiness's wisdom and insight and we remain firm friends to this day. Often he writes to me about spiritual matters. Which brings me back to pickerel. While drawn by spinning lures in sunny weather, pickerel are a bony fish and often overlooked. But fight with this predatory fish in Big Valley for an afternoon and upon relaxing with an aperitif you will marvel at the deadness of your arm from reeling, with or without a prominent Catholic cleric at your side." */
 			(*uParam1)[7] = 0;
 			break;
 		case 3:
-			(*uParam1)[1] = -16828255;
-			(*uParam1)[2] = -1765089170;
+			(*uParam1)[1] = -16828255; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -1765089170; /* GXTEntry: "CHANNEL CATFISH." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -949517903;
-			(*uParam1)[6] = -1144296811;
+			(*uParam1)[5] = -949517903; /* GXTEntry: @"As a world-famous master of both rod and pen, it often troubles me to see this fascination with factories and machines. They can dull the senses. I have long prided myself as a fisherman free from exhibitions of vanity and self-conceit, which is why I am often asked to lecture on my extensive travels sharing the successes of my uncanny ability to catch any fish, and also on spiritual, romantic and economic matters." */
+			(*uParam1)[6] = -1144296811; /* GXTEntry: @" Indeed fishing once helped me stop a major European land war, but that's another story, for another day. Catfish care not a jot for major battles, averted or otherwise. My next challenge - catching a monster sized Channel Catfish. They love muddy waters and prefer crayfish over other baits. Fish in overcast weather - these mysteries of the deep detest the sun, much like our British counterparts. Happy hunting!" */
 			(*uParam1)[7] = 0;
 			break;
 		case 4:
-			(*uParam1)[1] = -2077710768;
-			(*uParam1)[2] = 1630201582;
+			(*uParam1)[1] = -2077710768; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = 1630201582; /* GXTEntry: "LAKE STURGEON." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 389673950;
-			(*uParam1)[6] = -328163764;
+			(*uParam1)[5] = 389673950; /* GXTEntry: @"Once at a dinner party held in my honor by the German Ambassador, I witnessed a rotund woman inhaling plate after plate as if her life depended on it. I remarked that she possessed the culinary conducts of Acipenser fulvescens, a joke sadly lost on most in attendance. Any half-educated man knows that the lake sturgeon is a bottom dwelling fish with a sizeable snout that disturbs sediment and vacuums up small creatures." */
+			(*uParam1)[6] = -328163764; /* GXTEntry: @"I recommend you use a spinner or man-made lure during overcast weather - you'll land a fish far more delicious than this Germanic monstrosity could ever know. Once considered a nuisance fish, they are remarkably delicious. Try the Lannahechee River Delta. I caught and cooked a sturgeon for the King of Prussia there. So, my tales of Germans and sturgeon come full circle. Happy casting." */
 			(*uParam1)[7] = 0;
 			break;
 		case 5:
-			(*uParam1)[1] = -890348822;
-			(*uParam1)[2] = 1191730756;
+			(*uParam1)[1] = -890348822; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = 1191730756; /* GXTEntry: "LARGEMOUTH BASS." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -244620647;
-			(*uParam1)[6] = -671633198;
+			(*uParam1)[5] = -244620647; /* GXTEntry: @"My well-appointed study contains a plethora of mounted trophies, most notable among them countless magnificent examples of Largemouth Bass. These feisty creatures are like trained acrobats and make any keen angler's best friend and worst foe. They flash and fin and jump and leap towards the heavens, all the while the excited angler shouts with joy." */
+			(*uParam1)[6] = -671633198; /* GXTEntry: @"Once a very rich woman, upon visiting my trophy room, became overwhelmed with the vapors, and matters got really rather indiscreet, but that is not a subject a gentleman ever discusses in the pages of a newspaper. Indigenous to open, flowing water, bass are finicky, preferring rain to sunshine and crawfish to lures. Once they strike, fight with all you can and do not let go. Happy fighting. It'll be well worth it, when you win a battle." */
 			(*uParam1)[7] = 0;
 			break;
 		case 6:
-			(*uParam1)[1] = -1296064150;
-			(*uParam1)[2] = 1840190058;
+			(*uParam1)[1] = -1296064150; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = 1840190058; /* GXTEntry: "LONGNOSE GAR." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 2114150388;
-			(*uParam1)[6] = 1313079414;
+			(*uParam1)[5] = 2114150388; /* GXTEntry: @"One recent evening while lining the larder with an impressive catch of Longnose Gar caught in Lemoyne, I noted that my bounty had astonished the neighbor and indeed his wife, who looked on with envy and a sense of remorse at what could have been. Her dullard husband is subjugated to smashing rocks at a quarry or some other life of remorseless toil in a factory or office, while I, the man she insanely rejected, am an international celebrity and world-leading expert in his field." */
+			(*uParam1)[6] = 1313079414; /* GXTEntry: @"For most intelligent women, fishing is indeed the greatest aphrodisiac. While fishing in South America, entire villages were known to throw themselves at me, man, woman and beast, which believe me, could create remarkable confusions and contortions. I had traveled there to catch Gar � a fantastic creature that responds well to lures and likes overcast conditions. Try your luck! You might catch a wife!" */
 			(*uParam1)[7] = 0;
 			break;
 		case 7:
-			(*uParam1)[1] = 504104914;
-			(*uParam1)[2] = -670131942;
+			(*uParam1)[1] = 504104914; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -670131942; /* GXTEntry: "MUSKIE." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -39402208;
-			(*uParam1)[6] = 200630717;
+			(*uParam1)[5] = -39402208; /* GXTEntry: @"Any wise angler knows that a day on the water seeking muskellunge is a pleasant pastime indeed. A man can be excused for suspending brotherly love at the moment the serene calm is broken by the throbbing tug on his pole, threatening at any second to lose control." */
+			(*uParam1)[6] = 200630717; /* GXTEntry: @"He shrieks with pleasure, moaning as he fights the slimy beast, finally claiming victory, dripping, holding a writhing fish to his manly bosom. Glory and relief are his. The Muskie is a predatory fish that favors a lake lure, likes overcast conditions and fights hard. My fans have begged me to come claim a monster Muskie off the coast of Roanoke Ridge. I may go someday. If I see you, don't be shy. I won't bite. I'm not a Muskie, after all." */
 			(*uParam1)[7] = 0;
 			break;
 		case 8:
-			(*uParam1)[1] = 772020613;
-			(*uParam1)[2] = 2083596926;
+			(*uParam1)[1] = 772020613; /* GXTEntry: "THE ART OF ANGLING BY JEREMY GILL." */
+			(*uParam1)[2] = 2083596926; /* GXTEntry: "NORTHERN PIKE." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1921439563;
-			(*uParam1)[6] = -1454783280;
+			(*uParam1)[5] = 1921439563; /* GXTEntry: @"Pike are the angry prince of most lakes and rivers. My favorite trophy Pike was caught off the coast of Ireland. Having already established a remarkable reputation, upon returning to the tiny village with a 39 inch Pike, the townspeople hallooed and escorted me to a delightful pub where a lovely girl sat on my lap and played the bodhr�n singing a limerick about my angling skills as her mother cooked the fish into a meal shared with everyone." */
+			(*uParam1)[6] = -1454783280; /* GXTEntry: "They even opened a church in my honor. If you plan on catching a Northern Pike as" +
+    " they are called here, try a river lure when it is a bit dull outside. You know," +
+    " I think of that delightful Irish maiden every time I fish the Grizzlies." */
 			(*uParam1)[7] = 0;
 			break;
 		case 9:
-			(*uParam1)[1] = -706329904;
-			(*uParam1)[2] = 810875384;
+			(*uParam1)[1] = -706329904; /* GXTEntry: "THE ART OF ANGLING BY JEREMY GILL." */
+			(*uParam1)[2] = 810875384; /* GXTEntry: "PERCH." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1942418467;
-			(*uParam1)[6] = 1361948401;
+			(*uParam1)[5] = 1942418467; /* GXTEntry: @"I consider myself a fisher of man as much as a fisherman. As trouble brews in Europe, and all this nasty business unfolds with Spain, I was asked by the President to tour over there and unite nations by bringing the great leaders together through reigniting a faculty that lies dormant in most men: fishing. Trapped in palaces and attending functions deprives a man of his instinct for self-preservation and joy." */
+			(*uParam1)[6] = 1361948401; /* GXTEntry: @"Normally, I plan on teaching confused and lost heads of state to catch Perch. Small, easy to catch and tasty, any inbred dullard or pompous windbag worth his seat can hoist one into a boat with a worm. A sunny day, a grog of ale, and a stringer full of Perch will alleviate the world's weight on one's shoulders. Be well, be wise and be lucky!" */
 			(*uParam1)[7] = 0;
 			break;
 		case 10:
-			(*uParam1)[1] = 1996723693;
-			(*uParam1)[2] = -2077382259;
+			(*uParam1)[1] = 1996723693; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -2077382259; /* GXTEntry: "REDFIN PICKEREL." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -1609894991;
-			(*uParam1)[6] = -1848617156;
+			(*uParam1)[5] = -1609894991; /* GXTEntry: @"When not entertaining heads of state with the joyful pastime of fishing, I traipse into backwoods �cricks� and �hollers� where I meet the most delightful, simple folk who imbibe strong local spirits and gush about Redfin Pickerel. These uncouth semi-savages claim it to be the best eating fish you can find, and for that matter, the easiest to catch. They are feisty little predators that will attack a piece of cheese, and as one old-timer showed me, a piece of red cloth." */
+			(*uParam1)[6] = -1848617156; /* GXTEntry: " He\'d dip it into the crick, the fish would bite and he\'d sling it up onto the ba" +
+    "nk with a toothless laugh. Happy fishing, for those of you with and without a fu" +
+    "ll complement of teeth." */
 			(*uParam1)[7] = 0;
 			break;
 		case 11:
-			(*uParam1)[1] = -1118758269;
-			(*uParam1)[2] = 1001361578;
+			(*uParam1)[1] = -1118758269; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = 1001361578; /* GXTEntry: "ROCK BASS." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 1188868442;
-			(*uParam1)[6] = -85911196;
+			(*uParam1)[5] = 1188868442; /* GXTEntry: @"In my extensive travels, I've logged many a mile on steamers, paddleboats, and nautical vessels of the queerest sort in search of trophy fish and, of course, wisdom. Many a sensible young angler who sees me as their hero will ask why fishing is dull, throbbing boredom punctuated by the wild explosion of excessive joy at a mere tap against the bait. That's because you're doing it wrong, you jackanapes, I tell them." */
+			(*uParam1)[6] = -85911196; /* GXTEntry: @"I've seldom gone more than ten minutes without a fish on the line, and when I do, such is my mastery over mind as well as matter that I enjoy the time. If you're looking for a fun fish - try going for Rock Bass in clear water on a sunny day. I once reeled in over 50 Rock Bass in an hour in Tall Trees. Try it and see! It's like life, only better!" */
 			(*uParam1)[7] = 0;
 			break;
 		case 12:
-			(*uParam1)[1] = -1084988756;
-			(*uParam1)[2] = 664353388;
+			(*uParam1)[1] = -1084988756; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = 664353388; /* GXTEntry: "SOCKEYE SALMON." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = -925751739;
-			(*uParam1)[6] = -1224834402;
+			(*uParam1)[5] = -925751739; /* GXTEntry: @"Last year while fishing in the Alaskan territories, I soon discovered that a family of bears was fishing too, and one particularly angry Kodiak took exception to my overwhelming success of pulling dozens of Sockeye Salmon out of the water. I could not blame him; however, now his head sits sentry above my foyer with a salmon in its mouth, a testament to the hunter becoming the hunted." */
+			(*uParam1)[6] = -1224834402; /* GXTEntry: "In cold streams, and particularly in the Grizzlies, salmon will strike river lure" +
+    "s and are possibly the best tasting fish you can bring home for supper. They are" +
+    " so plentiful you may take as many as you like with no consequence. Happy castin" +
+    "g." */
 			(*uParam1)[7] = 0;
 			break;
 		case 13:
-			(*uParam1)[1] = 1300422639;
-			(*uParam1)[2] = -1886721378;
+			(*uParam1)[1] = 1300422639; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -1886721378; /* GXTEntry: "STEELHEAD TROUT." */
 			(*uParam1)[3] = 0;
-			(*uParam1)[5] = 402394595;
-			(*uParam1)[6] = 1280669333;
+			(*uParam1)[5] = 402394595; /* GXTEntry: @"No fish ignites the flame of angling in any true fisherman like the trout. A man must study the water and insects like a hawk, for trout are moody and will just as soon sit and watch an ill-picked fly float overhead. Once, while fishing with a Senator, I stood with a sulky trout in my hands and informed it I intended to rip his brother and entire family from the water and watch them gasp for a breath." */
+			(*uParam1)[6] = 1280669333; /* GXTEntry: "The senator laughed and said he intended to use the same sentiment towards immigr" +
+    "ants. What a leader he is. One day, I hope he runs for president. Fish for steel" +
+    "head trout in lakes in the south. Try crickets. Best of luck!" */
 			(*uParam1)[7] = 0;
 			break;
 		case 14:
-			(*uParam1)[1] = 1031073462;
-			(*uParam1)[2] = -1765843222;
-			(*uParam1)[3] = -612472729;
-			(*uParam1)[5] = 84541090;
-			(*uParam1)[6] = -723181991;
-			(*uParam1)[7] = -542952491;
+			(*uParam1)[1] = 1031073462; /* GXTEntry: "THE ART OF ANGLING~n~BY JEREMY GILL." */
+			(*uParam1)[2] = -1765843222; /* GXTEntry: "A WORD FROM THE EDITOR." */
+			(*uParam1)[3] = -612472729; /* GXTEntry: "THE STRANGE DISAPPEARANCE OF JEREMY GILL." */
+			(*uParam1)[5] = 84541090; /* GXTEntry: "In as many years as we have known author and angler Jeremy Gill, he has never mis" +
+    "sed a deadline for this column. No matter what place on the globe he is thought " +
+    "to be casting, his typed treatise appears without fail." */
+			(*uParam1)[6] = -723181991; /* GXTEntry: "Which is why we are met with considerable dismay at the lateness of his most rece" +
+    "nt dispatch, and in fact have heard nothing from him in quite some time, which i" +
+    "s abnormal. Mr. Gill was last heard to be fishing in Rio Bravo." */
+			(*uParam1)[7] = -542952491; /* GXTEntry: "If you have any information on his whereabouts, please do send us a notice by pos" +
+    "t." */
 			break;
 		default:
 			break;
@@ -3797,7 +3869,7 @@ int func_95(int iParam0, int iParam1, bool bParam2, int iParam3)
 	{
 		bParam2 = true;
 	}
-	else if (iParam0 == joaat("weapon_unarmed"))
+	else if (iParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return 0;
 	}
@@ -6589,7 +6661,7 @@ bool func_180(var uParam0, var uParam1)
 
 void func_181(int iParam0, int iParam1)
 {
-	if ((!func_31(iParam1, 747873593) && !func_31(iParam1, -1661502552)) && !func_31(iParam1, 2108217528))
+	if ((!func_31(iParam1, 747873593) && !func_31(iParam1, -1661502552 /* GXTEntry: "Letters" */)) && !func_31(iParam1, 2108217528 /* GXTEntry: "Notes" */))
 	{
 		return;
 	}
@@ -7263,7 +7335,7 @@ void func_207(int iParam0)
 		case -755457379: /* GXTEntry: "Improved Arrow Pamphlet" */
 			iVar0 = 322;
 			break;
-		case 2141714005:
+		case 2141714005: /* GXTEntry: "Poison Arrow Pamphlet" */
 			iVar0 = 323;
 			break;
 		case 1015404643: /* GXTEntry: "Small Game Arrow Pamphlet" */
@@ -9310,7 +9382,7 @@ int func_267(int iParam0)
 
 bool func_268(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_269(int iParam0, int iParam1)
@@ -10785,7 +10857,7 @@ int func_282(bool bParam0, int iParam1, var uParam2)
 			iVar5 = 36;
 			if (&Global_1946804->f_1497.f_1[iVar5 /*3*/] == &Global_1946804->f_57[iVar5 /*11*/])
 			{
-				*uParam2 = 2143522536;
+				*uParam2 = 2143522536; /* GXTEntry: "You are currently not wearing any boots." */
 				return 0;
 			}
 			if (PED::_0xFB4891BD7578CDC1(bParam0, -1968556728))
@@ -10833,7 +10905,7 @@ int func_282(bool bParam0, int iParam1, var uParam2)
 				{
 					if (&Global_1946804->f_1497.f_1[iVar5 /*3*/] == &Global_1946804->f_57[iVar5 /*11*/])
 					{
-						*uParam2 = 2143522536;
+						*uParam2 = 2143522536; /* GXTEntry: "You are currently not wearing any boots." */
 						return 0;
 					}
 				}
@@ -11187,7 +11259,7 @@ int func_298(int iParam0)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -12038,7 +12110,7 @@ int func_306(int iParam0, int iParam1, int iParam2)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -12178,7 +12250,7 @@ int func_308(int iParam0)
 			return 7;
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return 25;
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
@@ -12354,7 +12426,7 @@ void func_318(int iParam0, int iParam1, var uParam2)
 			*iParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*iParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -12908,7 +12980,7 @@ int func_338(int iParam0)
 			return 0;
 		case -1826731591: /* GXTEntry: "Brawler\'s Outfit" */
 			return 24;
-		case 2119049229:
+		case 2119049229: /* GXTEntry: "The Ruffian" */
 			return 25;
 		case 1352942778: /* GXTEntry: "The Rebel" */
 			return 26;
@@ -15024,7 +15096,7 @@ char* func_425(int iParam0)
 			return "COL_RO_LADY_SLIPPER_FOUND";
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return "COL_RO_MOCCASIN_FOUND";
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return "COL_GF_FOUND";
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return "COL_RO_ACUNAS_STAR_FOUND";
@@ -16670,7 +16742,7 @@ int func_503(int iParam0)
 		case 24:
 			return -1826731591 /* GXTEntry: "Brawler\'s Outfit" */;
 		case 25:
-			return 2119049229;
+			return 2119049229 /* GXTEntry: "The Ruffian" */;
 		case 26:
 			return 1352942778 /* GXTEntry: "The Rebel" */;
 		case 27:
@@ -22086,7 +22158,7 @@ int func_726(int iParam0)
 		case 4:
 			return -446539844 /* GXTEntry: "Master Hunter Gun Belt" */;
 		case 5:
-			return 2146082234;
+			return 2146082234 /* GXTEntry: "Horseman Gun Belt" */;
 		case 6:
 			return 330185476 /* GXTEntry: "Sharpshooter Gun Belt" */;
 		case 7:
@@ -22252,7 +22324,7 @@ int func_734(int iParam0)
 		case 0:
 			return -2010021430 /* GXTEntry: "Horseman Bandolier" */;
 		case 1:
-			return 2146082234;
+			return 2146082234 /* GXTEntry: "Horseman Gun Belt" */;
 		case 2:
 			return 2072880089 /* GXTEntry: "Horseman Holster" */;
 		case 3:
@@ -23475,7 +23547,7 @@ int func_774(int iParam0, int iParam1, int iParam2)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");

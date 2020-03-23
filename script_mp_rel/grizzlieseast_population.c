@@ -135,7 +135,7 @@ void func_5(var uParam0)
 	{
 		return;
 	}
-	func_13(PLAYER::PLAYER_PED_ID(), joaat("weapon_drowning"), 0, 0);
+	func_13(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_DROWNING"), 0, 0);
 }
 
 int func_6(bool bParam0, bool bParam1)
@@ -338,7 +338,7 @@ bool func_17(var uParam0, var uParam1)
 	else if (!func_22(&(uParam1->f_18), &(uParam1->f_24)))
 	{
 	}
-	if (uParam0->f_5 == joaat("weapon_fall"))
+	if (uParam0->f_5 == joaat("WEAPON_FALL"))
 	{
 		if ((*uParam0 != uParam0->f_1 && ENTITY::DOES_ENTITY_EXIST(uParam0->f_1)) && ENTITY::IS_ENTITY_A_PED(uParam0->f_1))
 		{
@@ -348,7 +348,7 @@ bool func_17(var uParam0, var uParam1)
 			return true;
 		}
 	}
-	if (uParam0->f_5 == joaat("weapon_drowning"))
+	if (uParam0->f_5 == joaat("WEAPON_DROWNING"))
 	{
 		if ((*uParam0 != uParam0->f_1 && ENTITY::DOES_ENTITY_EXIST(uParam0->f_1)) && ENTITY::IS_ENTITY_A_PED(uParam0->f_1))
 		{
@@ -358,7 +358,7 @@ bool func_17(var uParam0, var uParam1)
 			return true;
 		}
 	}
-	if (uParam0->f_5 == joaat("weapon_drowning_in_vehicle"))
+	if (uParam0->f_5 == joaat("WEAPON_DROWNING_IN_VEHICLE"))
 	{
 		return true;
 	}
@@ -391,7 +391,7 @@ int func_18(var uParam0)
 	{
 		return 2;
 	}
-	if (uParam0->f_30.f_5 == joaat("weapon_fall") && uParam0->f_18 == 1)
+	if (uParam0->f_30.f_5 == joaat("WEAPON_FALL") && uParam0->f_18 == 1)
 	{
 		if (uParam0->f_6 == 1 || uParam0->f_12 == 1)
 		{
@@ -401,7 +401,7 @@ int func_18(var uParam0)
 			return 2;
 		}
 	}
-	if ((uParam0->f_30.f_5 == joaat("weapon_drowning") || uParam0->f_30.f_5 == joaat("weapon_drowning_in_vehicle")) && uParam0->f_18 == 1)
+	if ((uParam0->f_30.f_5 == joaat("WEAPON_DROWNING") || uParam0->f_30.f_5 == joaat("WEAPON_DROWNING_IN_VEHICLE")) && uParam0->f_18 == 1)
 	{
 		if (uParam0->f_6 == 1 || uParam0->f_12 == 1)
 		{

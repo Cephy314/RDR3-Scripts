@@ -6142,7 +6142,7 @@ int func_279(int iParam0, int iParam1)
 			return 7;
 		case -1185533313:
 			return 10;
-		case -784189810:
+		case -784189810: /* GXTEntry: "Standard" */
 			return 0;
 		case -79999383:
 			return 6;
@@ -6154,9 +6154,9 @@ int func_279(int iParam0, int iParam1)
 			return 3;
 		case 1457860192:
 			return 5;
-		case 1579717899:
+		case 1579717899: /* GXTEntry: "Combat" */
 			return 1;
-		case 1744858848:
+		case 1744858848: /* GXTEntry: "Open" */
 			return 9;
 		case 2028478397:
 			return 4;
@@ -6177,13 +6177,13 @@ int func_280(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1918441640:
+		case -1918441640: /* GXTEntry: "LTS" */
 			return 2;
-		case -1581094459:
+		case -1581094459: /* GXTEntry: "Make It Count" */
 			return 8;
-		case -1437925683:
+		case -1437925683: /* GXTEntry: "Name Your Weapon (Teams)" */
 			return 12;
-		case -725256130:
+		case -725256130: /* GXTEntry: "Gun Rush Teams" */
 			return 17;
 		case -632356431:
 			return 14;
@@ -6191,25 +6191,25 @@ int func_280(int iParam0, int iParam1)
 			return 10;
 		case -548018579:
 			return 13;
-		case -533426613:
+		case -533426613: /* GXTEntry: "Team" */
 			return 1;
-		case -457802746:
+		case -457802746: /* GXTEntry: "FTB" */
 			return 3;
-		case -222655798:
+		case -222655798: /* GXTEntry: "Gun Rush" */
 			return 16;
 		case 10577687:
 			return 15;
-		case 424482930:
+		case 424482930: /* GXTEntry: "MM" */
 			return 6;
-		case 1153715636:
+		case 1153715636: /* GXTEntry: "LOS" */
 			return 5;
 		case 1175500245:
 			return 11;
-		case 1272390114:
+		case 1272390114: /* GXTEntry: "Name Your Weapon (FFA)" */
 			return 7;
 		case 1788958412:
 			return 4;
-		case 1816768801:
+		case 1816768801: /* GXTEntry: "Standard" */
 			return 0;
 		case 1842544025:
 			return 9;

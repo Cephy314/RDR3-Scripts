@@ -2897,11 +2897,11 @@ void func_37(int iParam0)
 			switch (func_18(iParam0))
 			{
 				case 39:
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 3, false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 2, false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 7, false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 9, false, false);
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 10, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 3, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 2, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 7, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 9, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 10, false, false);
 					break;
 				case 40:
 				case 41:
@@ -5512,7 +5512,7 @@ void func_109(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 				}
 				break;
 			case 11:
-				if (iParam0 == func_322(0, 10, 11, 2116153146))
+				if (iParam0 == func_322(0, 10, 11, 2116153146 /* GXTEntry: "High and Low Finance" */))
 				{
 					func_319(iParam0, func_320(iParam0), 1, 0.5f, 3, 0, 0, 1);
 				}
@@ -6500,7 +6500,7 @@ int func_150(int iParam0, int iParam1)
 
 bool func_151(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_152(int iParam0)
@@ -7001,7 +7001,7 @@ int func_154(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				break;
 			case joaat("WEAPON_KIT_BINOCULARS"):
 				break;
-			case 2131771850:
+			case 2131771850: /* GXTEntry: "The Legend Of The East" */
 				func_286(415, 0);
 				Global_40.f_11095.f_60 = (Global_40.f_11095.f_60 + 0.1f);
 				func_422();
@@ -7028,7 +7028,7 @@ int func_154(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				func_428(499813453, 0);
 				func_429(1);
 				break;
-			case 2127812557:
+			case 2127812557: /* GXTEntry: "Jack Hall Gang Map 2" */
 				func_427(499813453, -1292544588, 0);
 				func_428(499813453, 0);
 				func_429(2);
@@ -7088,7 +7088,7 @@ int func_154(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				func_428(390004462, 0);
 				func_433(2);
 				break;
-			case 2142623221:
+			case 2142623221: /* GXTEntry: "The Elemental Trail Map 3" */
 				func_427(390004462, -1108972386, 0);
 				func_428(390004462, 0);
 				func_433(4);
@@ -9288,7 +9288,7 @@ var func_234(int iParam0)
 			cVar0 = ((*Global_1347702)[func_96(iParam0) /*49*/])->f_3;
 			break;
 		case 11:
-			if (iParam0 == func_322(0, 10, 11, 2116153146))
+			if (iParam0 == func_322(0, 10, 11, 2116153146 /* GXTEntry: "High and Low Finance" */))
 			{
 				StringCopy(&cVar0, "CABR01", 8);
 			}
@@ -13659,7 +13659,7 @@ void func_340(int iParam0, bool bParam1)
 		if (func_55(32768))
 		{
 			iVar1 = func_17(iParam0);
-			if ((iVar1 == 1 || iVar1 == 8) || (iVar1 == 11 && iParam0 == func_322(0, 10, 11, 2116153146)))
+			if ((iVar1 == 1 || iVar1 == 8) || (iVar1 == 11 && iParam0 == func_322(0, 10, 11, 2116153146 /* GXTEntry: "High and Low Finance" */)))
 			{
 				Global_1898438 = MISC::GET_GAME_TIMER();
 				Global_1879514->f_1 = iParam0;
@@ -13991,7 +13991,7 @@ void func_349(int iParam0, int iParam1, var uParam2)
 			*iParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*iParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -14778,7 +14778,7 @@ int func_375(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		bParam2 = true;
 	}
-	else if (iParam0 == joaat("weapon_unarmed"))
+	else if (iParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return 0;
 	}
@@ -20888,7 +20888,7 @@ int func_608(int iParam0)
 		case 24:
 			return -1826731591 /* GXTEntry: "Brawler\'s Outfit" */;
 		case 25:
-			return 2119049229;
+			return 2119049229 /* GXTEntry: "The Ruffian" */;
 		case 26:
 			return 1352942778 /* GXTEntry: "The Rebel" */;
 		case 27:
@@ -21195,7 +21195,7 @@ int func_613(int iParam0)
 		{
 			if (func_754(iParam0, 256))
 			{
-				return joaat("weapon_unarmed");
+				return joaat("WEAPON_UNARMED");
 			}
 			else
 			{
@@ -21940,7 +21940,7 @@ int func_651(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -22784,7 +22784,7 @@ void func_669(int iParam0)
 		case -755457379: /* GXTEntry: "Improved Arrow Pamphlet" */
 			iVar0 = 322;
 			break;
-		case 2141714005:
+		case 2141714005: /* GXTEntry: "Poison Arrow Pamphlet" */
 			iVar0 = 323;
 			break;
 		case 1015404643: /* GXTEntry: "Small Game Arrow Pamphlet" */
@@ -23884,7 +23884,7 @@ void func_709(int iParam0, int iParam1, float fParam2, int iParam3)
 			}
 			break;
 		case 11:
-			if (iParam0 == func_322(0, 10, 11, 2116153146))
+			if (iParam0 == func_322(0, 10, 11, 2116153146 /* GXTEntry: "High and Low Finance" */))
 			{
 				func_1188(7, iVar1);
 				func_1188(4, iVar1);
@@ -24720,7 +24720,7 @@ int func_746(int iParam0, bool bParam1, int iParam2)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -24819,7 +24819,7 @@ int func_748(int iParam0)
 			return 7;
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return 25;
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
@@ -27361,7 +27361,7 @@ int func_785(bool bParam0, int iParam1, var uParam2)
 			iVar5 = 36;
 			if (&Global_1946804->f_1497.f_1[iVar5 /*3*/] == &Global_1946804->f_57[iVar5 /*11*/])
 			{
-				*uParam2 = 2143522536;
+				*uParam2 = 2143522536; /* GXTEntry: "You are currently not wearing any boots." */
 				return 0;
 			}
 			if (PED::_0xFB4891BD7578CDC1(bParam0, -1968556728))
@@ -27409,7 +27409,7 @@ int func_785(bool bParam0, int iParam1, var uParam2)
 				{
 					if (&Global_1946804->f_1497.f_1[iVar5 /*3*/] == &Global_1946804->f_57[iVar5 /*11*/])
 					{
-						*uParam2 = 2143522536;
+						*uParam2 = 2143522536; /* GXTEntry: "You are currently not wearing any boots." */
 						return 0;
 					}
 				}
@@ -27715,7 +27715,7 @@ int func_799(int iParam0)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -28510,7 +28510,7 @@ int func_805(int iParam0, bool bParam1, int iParam2)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -29019,7 +29019,7 @@ int func_825(int iParam0)
 			return 0;
 		case -1826731591: /* GXTEntry: "Brawler\'s Outfit" */
 			return 24;
-		case 2119049229:
+		case 2119049229: /* GXTEntry: "The Ruffian" */
 			return 25;
 		case 1352942778: /* GXTEntry: "The Rebel" */
 			return 26;
@@ -30660,7 +30660,7 @@ void func_903()
 	while (iVar0 <= iVar2)
 	{
 		iVar3 = func_1357(iVar0, 1);
-		if (iVar3 == joaat("weapon_unarmed"))
+		if (iVar3 == joaat("WEAPON_UNARMED"))
 		{
 		}
 		else if (!WEAPON::IS_WEAPON_VALID(iVar3))
@@ -30695,7 +30695,7 @@ void func_904()
 	while (iVar0 <= iVar2)
 	{
 		iVar3 = func_1357(iVar0, 1);
-		if (iVar3 == joaat("weapon_unarmed"))
+		if (iVar3 == joaat("WEAPON_UNARMED"))
 		{
 		}
 		else if (!WEAPON::IS_WEAPON_VALID(iVar3))
@@ -36871,7 +36871,7 @@ char* func_1153(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -38616,7 +38616,7 @@ char* func_1230(int iParam0)
 			return "COL_RO_LADY_SLIPPER_FOUND";
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return "COL_RO_MOCCASIN_FOUND";
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return "COL_GF_FOUND";
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return "COL_RO_ACUNAS_STAR_FOUND";
@@ -42053,7 +42053,7 @@ int func_1357(int iParam0, int iParam1)
 			case 93:
 				return 1431837084;
 			case 94:
-				return 548213215;
+				return 548213215 /* GXTEntry: "�" */;
 			case 95:
 				return -576793615;
 			case 96:
@@ -42179,7 +42179,7 @@ int func_1357(int iParam0, int iParam1)
 			case 156:
 				return -2006166057 /* GXTEntry: "Fire Bottle - Volatile" */;
 			case 157:
-				return 1701457723;
+				return 1701457723 /* GXTEntry: "Flammable Moonshine" */;
 			case 158:
 				return joaat("ammo_pistol");
 			case 159:
@@ -42199,7 +42199,7 @@ int func_1357(int iParam0, int iParam1)
 			case 166:
 				return 236338048 /* GXTEntry: "Pistol Cartridges - Split Point" */;
 			case 167:
-				return 963726415;
+				return 963726415 /* GXTEntry: "Toxic Moonshine" */;
 			case 168:
 				return joaat("AMMO_REPEATER");
 			case 169:
@@ -42209,7 +42209,7 @@ int func_1357(int iParam0, int iParam1)
 			case 171:
 				return 122656217 /* GXTEntry: "Repeater Cartridges - High Velocity" */;
 			case 172:
-				return 2120467495;
+				return 2120467495 /* GXTEntry: "Opened Repeater Cartridges" */;
 			case 173:
 				return joaat("AMMO_REPEATER_EXPRESS");
 			case 174:
@@ -42257,9 +42257,9 @@ int func_1357(int iParam0, int iParam1)
 			case 195:
 				return 1059686305 /* GXTEntry: "Ammo Parcel" */;
 			case 196:
-				return 865169517;
+				return 865169517 /* GXTEntry: "Ammo Parcel" */;
 			case 197:
-				return -1841373626;
+				return -1841373626 /* GXTEntry: "Ammo Parcel" */;
 			case 198:
 				return joaat("ammo_shotgun");
 			case 199:
@@ -42527,7 +42527,7 @@ int func_1357(int iParam0, int iParam1)
 			case 330:
 				return 705255263 /* GXTEntry: "Club Rewards" */;
 			case 331:
-				return 1479488426;
+				return 1479488426 /* GXTEntry: "Club Rewards" */;
 			case 332:
 				return -120697124;
 			case 333:
@@ -42535,7 +42535,7 @@ int func_1357(int iParam0, int iParam1)
 			case 334:
 				return -471215553 /* GXTEntry: "Club Rewards" */;
 			case 335:
-				return -170363364;
+				return -170363364 /* GXTEntry: "Club Rewards" */;
 			case 336:
 				return joaat("character_role_token");
 			case 337:
@@ -42555,9 +42555,9 @@ int func_1357(int iParam0, int iParam1)
 			case 344:
 				return -1704610313;
 			case 345:
-				return 1225448291;
+				return 1225448291 /* GXTEntry: "15% Role XP Boost" */;
 			case 346:
-				return 70234873;
+				return 70234873 /* GXTEntry: "25% Role XP Boost" */;
 			case 347:
 				return -390042476;
 			case 348:
@@ -43073,53 +43073,53 @@ int func_1357(int iParam0, int iParam1)
 			case 603:
 				return -1418838773;
 			case 604:
-				return -534084805;
+				return -534084805 /* GXTEntry: "The Gatlinburg" */;
 			case 605:
-				return -229103722;
+				return -229103722 /* GXTEntry: "The Gatlinburg" */;
 			case 606:
-				return -130632881;
+				return -130632881 /* GXTEntry: "The Gatlinburg" */;
 			case 607:
-				return -899950694;
+				return -899950694 /* GXTEntry: "The Gatlinburg" */;
 			case 608:
-				return -604308776;
+				return -604308776 /* GXTEntry: "The Gatlinburg" */;
 			case 609:
-				return -1389028019;
+				return -1389028019 /* GXTEntry: "The Gatlinburg" */;
 			case 610:
-				return -1809396443;
+				return -1809396443 /* GXTEntry: "The Dagenhart" */;
 			case 611:
-				return -1571264120;
+				return -1571264120 /* GXTEntry: "The Dagenhart" */;
 			case 612:
-				return 1196012392;
+				return 1196012392 /* GXTEntry: "The Dagenhart" */;
 			case 613:
-				return -1516802054;
+				return -1516802054 /* GXTEntry: "The Dagenhart" */;
 			case 614:
-				return 1741747318;
+				return 1741747318 /* GXTEntry: "The Dagenhart" */;
 			case 615:
-				return 958338835;
+				return 958338835 /* GXTEntry: "The Dagenhart" */;
 			case 616:
-				return 309321739;
+				return 309321739 /* GXTEntry: "The Pittsburg" */;
 			case 617:
-				return 88491448;
+				return 88491448 /* GXTEntry: "The Pittsburg" */;
 			case 618:
-				return -1205359748;
+				return -1205359748 /* GXTEntry: "The Pittsburg" */;
 			case 619:
-				return -1462563629;
+				return -1462563629 /* GXTEntry: "The Pittsburg" */;
 			case 620:
-				return 1537045093;
+				return 1537045093 /* GXTEntry: "The Pittsburg" */;
 			case 621:
-				return 1311889294;
+				return 1311889294 /* GXTEntry: "The Pittsburg" */;
 			case 622:
-				return 988916260;
+				return 988916260 /* GXTEntry: "The Wilkesboro" */;
 			case 623:
-				return 718014937;
+				return 718014937 /* GXTEntry: "The Wilkesboro" */;
 			case 624:
-				return 1466524435;
+				return 1466524435 /* GXTEntry: "The Wilkesboro" */;
 			case 625:
-				return 1227802270;
+				return 1227802270 /* GXTEntry: "The Wilkesboro" */;
 			case 626:
-				return -2107950854;
+				return -2107950854 /* GXTEntry: "The Wilkesboro" */;
 			case 627:
-				return 1947835511;
+				return 1947835511 /* GXTEntry: "The Wilkesboro" */;
 			case 628:
 				return 992705844;
 			case 629:
@@ -43169,53 +43169,53 @@ int func_1357(int iParam0, int iParam1)
 			case 651:
 				return 1290082757;
 			case 652:
-				return -1732116082;
+				return -1732116082 /* GXTEntry: "The Gatlinburg" */;
 			case 653:
-				return -2043224964;
+				return -2043224964 /* GXTEntry: "The Gatlinburg" */;
 			case 654:
-				return 1970158315;
+				return 1970158315 /* GXTEntry: "The Gatlinburg" */;
 			case 655:
-				return 1655444839;
+				return 1655444839 /* GXTEntry: "The Gatlinburg" */;
 			case 656:
-				return 1373270980;
+				return 1373270980 /* GXTEntry: "The Gatlinburg" */;
 			case 657:
-				return 1058885194;
+				return 1058885194 /* GXTEntry: "The Gatlinburg" */;
 			case 658:
-				return -1944199774;
+				return -1944199774 /* GXTEntry: "The Dagenhart" */;
 			case 659:
-				return 999079041;
+				return 999079041 /* GXTEntry: "The Dagenhart" */;
 			case 660:
-				return 635605293;
+				return 635605293 /* GXTEntry: "The Dagenhart" */;
 			case 661:
-				return 1493792634;
+				return 1493792634 /* GXTEntry: "The Dagenhart" */;
 			case 662:
-				return -213406744;
+				return -213406744 /* GXTEntry: "The Dagenhart" */;
 			case 663:
-				return -505870069;
+				return -505870069 /* GXTEntry: "The Dagenhart" */;
 			case 664:
-				return -152330007;
+				return -152330007 /* GXTEntry: "The Pittsburg" */;
 			case 665:
-				return 2024678512;
+				return 2024678512 /* GXTEntry: "The Pittsburg" */;
 			case 666:
-				return 1188643011;
+				return 1188643011 /* GXTEntry: "The Pittsburg" */;
 			case 667:
-				return 1680243549;
+				return 1680243549 /* GXTEntry: "The Pittsburg" */;
 			case 668:
-				return 845486043;
+				return 845486043 /* GXTEntry: "The Pittsburg" */;
 			case 669:
-				return -1351118334;
+				return -1351118334 /* GXTEntry: "The Pittsburg" */;
 			case 670:
-				return -1206325201;
+				return -1206325201 /* GXTEntry: "The Wilkesboro" */;
 			case 671:
-				return -1514091649;
+				return -1514091649 /* GXTEntry: "The Wilkesboro" */;
 			case 672:
-				return 1284413724;
+				return 1284413724 /* GXTEntry: "The Wilkesboro" */;
 			case 673:
-				return 976581738;
+				return 976581738 /* GXTEntry: "The Wilkesboro" */;
 			case 674:
-				return 1895916033;
+				return 1895916033 /* GXTEntry: "The Wilkesboro" */;
 			case 675:
-				return 1588804965;
+				return 1588804965 /* GXTEntry: "The Wilkesboro" */;
 			case 676:
 				return 1249910627;
 			case 677:
@@ -43253,17 +43253,17 @@ int func_1357(int iParam0, int iParam1)
 			case 693:
 				return -1665641261;
 			case 694:
-				return 949010559;
+				return 949010559 /* GXTEntry: "Gatlinburg Hat" */;
 			case 695:
-				return 1251107970;
+				return 1251107970 /* GXTEntry: "Gatlinburg Hat" */;
 			case 696:
-				return 1709873970;
+				return 1709873970 /* GXTEntry: "Gatlinburg Hat" */;
 			case 697:
-				return 2015969199;
+				return 2015969199 /* GXTEntry: "Gatlinburg Hat" */;
 			case 698:
-				return -2125049335;
+				return -2125049335 /* GXTEntry: "Gatlinburg Hat" */;
 			case 699:
-				return -1817446732;
+				return -1817446732 /* GXTEntry: "Gatlinburg Hat" */;
 			case 700:
 				return 1279518456;
 			case 701:
@@ -43349,17 +43349,17 @@ int func_1357(int iParam0, int iParam1)
 			case 741:
 				return 2050087449;
 			case 742:
-				return 1634307162;
+				return 1634307162 /* GXTEntry: "Dagenhart Hat" */;
 			case 743:
-				return 1807196406;
+				return 1807196406 /* GXTEntry: "Dagenhart Hat" */;
 			case 744:
-				return 2113750401;
+				return 2113750401 /* GXTEntry: "Dagenhart Hat" */;
 			case 745:
-				return -553515135;
+				return -553515135 /* GXTEntry: "Dagenhart Hat" */;
 			case 746:
-				return -325934430;
+				return -325934430 /* GXTEntry: "Dagenhart Hat" */;
 			case 747:
-				return 39636534;
+				return 39636534 /* GXTEntry: "Dagenhart Hat" */;
 			case 748:
 				return 558646452;
 			case 749:
@@ -43433,17 +43433,17 @@ int func_1357(int iParam0, int iParam1)
 			case 783:
 				return -1243250535;
 			case 784:
-				return -1363687004;
+				return -1363687004 /* GXTEntry: "Pittsburg Hat" */;
 			case 785:
-				return -1064080037;
+				return -1064080037 /* GXTEntry: "Pittsburg Hat" */;
 			case 786:
-				return 1552590155;
+				return 1552590155 /* GXTEntry: "Pittsburg Hat" */;
 			case 787:
-				return 771442737;
+				return 771442737 /* GXTEntry: "Pittsburg Hat" */;
 			case 788:
-				return 2014469210;
+				return 2014469210 /* GXTEntry: "Pittsburg Hat" */;
 			case 789:
-				return -1982857259;
+				return -1982857259 /* GXTEntry: "Pittsburg Hat" */;
 			case 790:
 				return 1554905902;
 			case 791:
@@ -43529,17 +43529,17 @@ int func_1357(int iParam0, int iParam1)
 			case 831:
 				return -1262984807;
 			case 832:
-				return 442326505;
+				return 442326505 /* GXTEntry: "Wilkesboro Hat" */;
 			case 833:
-				return 480535159;
+				return 480535159 /* GXTEntry: "Wilkesboro Hat" */;
 			case 834:
-				return -1360656644;
+				return -1360656644 /* GXTEntry: "Wilkesboro Hat" */;
 			case 835:
-				return -1133469167;
+				return -1133469167 /* GXTEntry: "Wilkesboro Hat" */;
 			case 836:
-				return -824490266;
+				return -824490266 /* GXTEntry: "Wilkesboro Hat" */;
 			case 837:
-				return -521311478;
+				return -521311478 /* GXTEntry: "Wilkesboro Hat" */;
 			case 838:
 				return -133908828;
 			case 839:
@@ -44963,39 +44963,39 @@ int func_1357(int iParam0, int iParam1)
 			case 1542:
 				return joaat("clothing_f_r4_buckle_000_tint_001");
 			case 1543:
-				return -1492338947;
+				return -1492338947 /* GXTEntry: "Darrow Buckle" */;
 			case 1544:
-				return -801568427;
+				return -801568427 /* GXTEntry: "Darrow Buckle" */;
 			case 1545:
-				return 1086417440;
+				return 1086417440 /* GXTEntry: "Darrow Buckle" */;
 			case 1546:
-				return -340410290;
+				return -340410290 /* GXTEntry: "Darrow Buckle" */;
 			case 1547:
-				return -571202357;
+				return -571202357 /* GXTEntry: "Darrow Buckle" */;
 			case 1548:
-				return 1614929995;
+				return 1614929995 /* GXTEntry: "Levens Gun Belt" */;
 			case 1549:
-				return 1312406587;
+				return 1312406587 /* GXTEntry: "Levens Gun Belt" */;
 			case 1550:
-				return -2036552448;
+				return -2036552448 /* GXTEntry: "Levens Gun Belt" */;
 			case 1551:
-				return 1961494939;
+				return 1961494939 /* GXTEntry: "Levens Gun Belt" */;
 			case 1552:
-				return -1420069251;
+				return -1420069251 /* GXTEntry: "Levens Gun Belt" */;
 			case 1553:
-				return -1719807294;
+				return -1719807294 /* GXTEntry: "Levens Gun Belt" */;
 			case 1554:
-				return 1564617196;
+				return 1564617196 /* GXTEntry: "Levens Holster" */;
 			case 1555:
-				return 1142159244;
+				return 1142159244 /* GXTEntry: "Levens Holster" */;
 			case 1556:
-				return 834556641;
+				return 834556641 /* GXTEntry: "Levens Holster" */;
 			case 1557:
-				return -1297099578;
+				return -1297099578 /* GXTEntry: "Levens Holster" */;
 			case 1558:
-				return -1477066926;
+				return -1477066926 /* GXTEntry: "Levens Holster" */;
 			case 1559:
-				return -1764025059;
+				return -1764025059 /* GXTEntry: "Levens Holster" */;
 			case 1560:
 				return -499308854 /* GXTEntry: "The Monterey" */;
 			case 1561:
@@ -45141,53 +45141,53 @@ int func_1357(int iParam0, int iParam1)
 			case 1631:
 				return -1230240617;
 			case 1632:
-				return -203553989;
+				return -203553989 /* GXTEntry: "The Gatlinburg" */;
 			case 1633:
-				return -1134357434;
+				return -1134357434 /* GXTEntry: "The Gatlinburg" */;
 			case 1634:
-				return 388155844;
+				return 388155844 /* GXTEntry: "The Gatlinburg" */;
 			case 1635:
-				return 1865284057;
+				return 1865284057 /* GXTEntry: "The Gatlinburg" */;
 			case 1636:
-				return 1087839532;
+				return 1087839532 /* GXTEntry: "The Gatlinburg" */;
 			case 1637:
-				return 103720924;
+				return 103720924 /* GXTEntry: "The Gatlinburg" */;
 			case 1638:
-				return 2106153141;
+				return 2106153141 /* GXTEntry: "The Dagenhart" */;
 			case 1639:
-				return -1817017081;
+				return -1817017081 /* GXTEntry: "The Dagenhart" */;
 			case 1640:
-				return 1527092142;
+				return 1527092142 /* GXTEntry: "The Dagenhart" */;
 			case 1641:
-				return -1891369942;
+				return -1891369942 /* GXTEntry: "The Dagenhart" */;
 			case 1642:
-				return 1608064345;
+				return 1608064345 /* GXTEntry: "The Dagenhart" */;
 			case 1643:
-				return -1910834724;
+				return -1910834724 /* GXTEntry: "The Dagenhart" */;
 			case 1644:
-				return 1116114470;
+				return 1116114470 /* GXTEntry: "The Pittsburg" */;
 			case 1645:
-				return 1683345860;
+				return 1683345860 /* GXTEntry: "The Pittsburg" */;
 			case 1646:
-				return 1996584731;
+				return 1996584731 /* GXTEntry: "The Pittsburg" */;
 			case 1647:
-				return 147495599;
+				return 147495599 /* GXTEntry: "The Pittsburg" */;
 			case 1648:
-				return 883159645;
+				return 883159645 /* GXTEntry: "The Pittsburg" */;
 			case 1649:
-				return -960850296;
+				return -960850296 /* GXTEntry: "The Pittsburg" */;
 			case 1650:
-				return 1017977815;
+				return 1017977815 /* GXTEntry: "The Wilkesboro" */;
 			case 1651:
-				return 1357136965;
+				return 1357136965 /* GXTEntry: "The Wilkesboro" */;
 			case 1652:
-				return 1525078090;
+				return 1525078090 /* GXTEntry: "The Wilkesboro" */;
 			case 1653:
-				return 618785845;
+				return 618785845 /* GXTEntry: "The Wilkesboro" */;
 			case 1654:
-				return 319572106;
+				return 319572106 /* GXTEntry: "The Wilkesboro" */;
 			case 1655:
-				return 1248180028;
+				return 1248180028 /* GXTEntry: "The Wilkesboro" */;
 			case 1656:
 				return 433714699;
 			case 1657:
@@ -45261,7 +45261,7 @@ int func_1357(int iParam0, int iParam1)
 			case 1691:
 				return joaat("clothing_item_blush_003_tint_001");
 			case 1692:
-				return -1894807850;
+				return -1894807850 /* GXTEntry: "No Corset" */;
 			case 1693:
 				return 1979046379;
 			case 1694:
@@ -45347,125 +45347,125 @@ int func_1357(int iParam0, int iParam1)
 			case 1734:
 				return -994913592 /* GXTEntry: "No Eyewear" */;
 			case 1735:
-				return -132207177;
+				return -132207177 /* GXTEntry: "Marino Bandolier" */;
 			case 1736:
-				return -976566000;
+				return -976566000 /* GXTEntry: "Marino Bandolier" */;
 			case 1737:
-				return -1415867214;
+				return -1415867214 /* GXTEntry: "Marino Bandolier" */;
 			case 1738:
-				return 769235244;
+				return 769235244 /* GXTEntry: "Marino Bandolier" */;
 			case 1739:
-				return 864330882;
+				return 864330882 /* GXTEntry: "Marino Bandolier" */;
 			case 1740:
-				return 21348357;
+				return 21348357 /* GXTEntry: "Marino Bandolier" */;
 			case 1741:
-				return 418901865;
+				return 418901865 /* GXTEntry: "Marino Bandolier" */;
 			case 1742:
-				return -1780782850;
+				return -1780782850 /* GXTEntry: "Marino Bandolier" */;
 			case 1743:
-				return 2082616716;
+				return 2082616716 /* GXTEntry: "Marino Bandolier" */;
 			case 1744:
-				return 589300377;
+				return 589300377 /* GXTEntry: "Marino Bandolier" */;
 			case 1745:
-				return -862094528;
+				return -862094528 /* GXTEntry: "Coburn Bandolier" */;
 			case 1746:
-				return -1702226150;
+				return -1702226150 /* GXTEntry: "Coburn Bandolier" */;
 			case 1747:
-				return 1816738433;
+				return 1816738433 /* GXTEntry: "Coburn Bandolier" */;
 			case 1748:
-				return 2049201719;
+				return 2049201719 /* GXTEntry: "Coburn Bandolier" */;
 			case 1749:
-				return 835601804;
+				return 835601804 /* GXTEntry: "Coburn Bandolier" */;
 			case 1750:
-				return 1068753239;
+				return 1068753239 /* GXTEntry: "Coburn Bandolier" */;
 			case 1751:
-				return -1554732905;
+				return -1554732905 /* GXTEntry: "Coburn Bandolier" */;
 			case 1752:
-				return -1309030943;
+				return -1309030943 /* GXTEntry: "Coburn Bandolier" */;
 			case 1753:
-				return -1998064706;
+				return -1998064706 /* GXTEntry: "Coburn Bandolier" */;
 			case 1754:
-				return -556849261;
+				return -556849261 /* GXTEntry: "Coburn Bandolier" */;
 			case 1755:
-				return 1310560820;
+				return 1310560820 /* GXTEntry: "Higgins Bandolier" */;
 			case 1756:
-				return -1221860269;
+				return -1221860269 /* GXTEntry: "Higgins Bandolier" */;
 			case 1757:
-				return -1432302787;
+				return -1432302787 /* GXTEntry: "Higgins Bandolier" */;
 			case 1758:
-				return 1394514942;
+				return 1394514942 /* GXTEntry: "Higgins Bandolier" */;
 			case 1759:
-				return 1596830748;
+				return 1596830748 /* GXTEntry: "Higgins Bandolier" */;
 			case 1760:
-				return -1370303895;
+				return -1370303895 /* GXTEntry: "Higgins Bandolier" */;
 			case 1761:
-				return -1131876651;
+				return -1131876651 /* GXTEntry: "Higgins Bandolier" */;
 			case 1762:
-				return 1002270012;
+				return 1002270012 /* GXTEntry: "Higgins Bandolier" */;
 			case 1763:
-				return 169249263;
+				return 169249263 /* GXTEntry: "Higgins Bandolier" */;
 			case 1764:
-				return -701294047;
+				return -701294047 /* GXTEntry: "Higgins Bandolier" */;
 			case 1765:
-				return -160768474;
+				return -160768474 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1766:
-				return 393027630;
+				return 393027630 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1767:
-				return 160924803;
+				return 160924803 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1768:
-				return 1375442250;
+				return 1375442250 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1769:
-				return 728909880;
+				return 728909880 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1770:
-				return 1887490644;
+				return 1887490644 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1771:
-				return 1609511217;
+				return 1609511217 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1772:
-				return -1960638564;
+				return -1960638564 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1773:
-				return -2072249782;
+				return -2072249782 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1774:
-				return -266898857;
+				return -266898857 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 1775:
-				return 726781158;
+				return 726781158 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1776:
-				return 421079157;
+				return 421079157 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1777:
-				return -1645268449;
+				return -1645268449 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1778:
-				return -1802494111;
+				return -1802494111 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1779:
-				return 23623956;
+				return 23623956 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1780:
-				return -678288024;
+				return -678288024 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1781:
-				return -1247649399;
+				return -1247649399 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1782:
-				return -1427026905;
+				return -1427026905 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1783:
-				return -1601816751;
+				return -1601816751 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1784:
-				return 1994092600;
+				return 1994092600 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 1785:
-				return -2091139547;
+				return -2091139547 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1786:
-				return 1726907723;
+				return 1726907723 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1787:
-				return -723656408;
+				return -723656408 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1788:
-				return -898905020;
+				return -898905020 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1789:
-				return 1160364478;
+				return 1160364478 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1790:
-				return 978824218;
+				return 978824218 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1791:
-				return 730041970;
+				return 730041970 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1792:
-				return -1706759177;
+				return -1706759177 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1793:
-				return 265803547;
+				return 265803547 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1794:
-				return 578064748;
+				return 578064748 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 1795:
 				return -1025764898 /* GXTEntry: "Hawkins Boots" */;
 			case 1796:
@@ -45651,7 +45651,7 @@ int func_1357(int iParam0, int iParam1)
 			case 1886:
 				return joaat("clothing_item_f_boots_002_tint_002");
 			case 1887:
-				return 2144666427;
+				return 2144666427 /* GXTEntry: "Workman\'s Boots" */;
 			case 1888:
 				return joaat("clothing_item_f_boots_002_tint_004");
 			case 1889:
@@ -45801,7 +45801,7 @@ int func_1357(int iParam0, int iParam1)
 			case 1961:
 				return -1658851479 /* GXTEntry: "Atteberry Lace Boots" */;
 			case 1962:
-				return 2111287513;
+				return 2111287513 /* GXTEntry: "Atteberry Lace Boots" */;
 			case 1963:
 				return 1853821492 /* GXTEntry: "Atteberry Lace Boots" */;
 			case 1964:
@@ -46211,7 +46211,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2160:
 				return -1472372874 /* GXTEntry: "Pickett Boots" */;
 			case 2161:
-				return 2144636581;
+				return 2144636581 /* GXTEntry: "Pickett Boots" */;
 			case 2162:
 				return 1852763094 /* GXTEntry: "Pickett Boots" */;
 			case 2163:
@@ -46291,7 +46291,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2200:
 				return -1928774780 /* GXTEntry: "Rowland Boots" */;
 			case 2201:
-				return 2127273737;
+				return 2127273737 /* GXTEntry: "Rowland Boots" */;
 			case 2202:
 				return 1840118990 /* GXTEntry: "Rowland Boots" */;
 			case 2203:
@@ -46303,165 +46303,165 @@ int func_1357(int iParam0, int iParam1)
 			case 2206:
 				return 1775171164 /* GXTEntry: "Rowland Boots" */;
 			case 2207:
-				return -1097997304;
+				return -1097997304 /* GXTEntry: "Oakley Boots" */;
 			case 2208:
-				return 1379863404;
+				return 1379863404 /* GXTEntry: "Oakley Boots" */;
 			case 2209:
-				return -1424868079;
+				return -1424868079 /* GXTEntry: "Oakley Boots" */;
 			case 2210:
-				return -1395834745;
+				return -1395834745 /* GXTEntry: "Oakley Boots" */;
 			case 2211:
-				return 590163269;
+				return 590163269 /* GXTEntry: "Oakley Boots" */;
 			case 2212:
-				return 1158050039;
+				return 1158050039 /* GXTEntry: "Oakley Boots" */;
 			case 2213:
-				return -2117932433;
+				return -2117932433 /* GXTEntry: "Oakley Boots" */;
 			case 2214:
-				return 292522442;
+				return 292522442 /* GXTEntry: "Oakley Boots" */;
 			case 2215:
-				return -325304284;
+				return -325304284 /* GXTEntry: "Oakley Boots" */;
 			case 2216:
-				return 813549870;
+				return 813549870 /* GXTEntry: "Oakley Boots" */;
 			case 2217:
-				return 2094826132;
+				return 2094826132 /* GXTEntry: "Rulfo Boots" */;
 			case 2218:
-				return -1742751462;
+				return -1742751462 /* GXTEntry: "Rulfo Boots" */;
 			case 2219:
-				return -510604289;
+				return -510604289 /* GXTEntry: "Rulfo Boots" */;
 			case 2220:
-				return -288692621;
+				return -288692621 /* GXTEntry: "Rulfo Boots" */;
 			case 2221:
-				return -333913777;
+				return -333913777 /* GXTEntry: "Rulfo Boots" */;
 			case 2222:
-				return -363733567;
+				return -363733567 /* GXTEntry: "Rulfo Boots" */;
 			case 2223:
-				return -1903876571;
+				return -1903876571 /* GXTEntry: "Rulfo Boots" */;
 			case 2224:
-				return 2093384360;
+				return 2093384360 /* GXTEntry: "Rulfo Boots" */;
 			case 2225:
-				return -1285820462;
+				return -1285820462 /* GXTEntry: "Rulfo Boots" */;
 			case 2226:
-				return 974650924;
+				return 974650924 /* GXTEntry: "Rulfo Boots" */;
 			case 2227:
-				return 2007614072;
+				return 2007614072 /* GXTEntry: "Salter Shoes" */;
 			case 2228:
-				return -905517259;
+				return -905517259 /* GXTEntry: "Salter Shoes" */;
 			case 2229:
-				return -1751842222;
+				return -1751842222 /* GXTEntry: "Salter Shoes" */;
 			case 2230:
-				return -562491367;
+				return -562491367 /* GXTEntry: "Salter Shoes" */;
 			case 2231:
-				return -1141454059;
+				return -1141454059 /* GXTEntry: "Salter Shoes" */;
 			case 2232:
-				return 47438030;
+				return 47438030 /* GXTEntry: "Salter Shoes" */;
 			case 2233:
-				return 279245936;
+				return 279245936 /* GXTEntry: "Salter Shoes" */;
 			case 2234:
-				return 395477575;
+				return 395477575 /* GXTEntry: "Salter Shoes" */;
 			case 2235:
-				return 895401439;
+				return 895401439 /* GXTEntry: "Salter Shoes" */;
 			case 2236:
-				return -492335614;
+				return -492335614 /* GXTEntry: "Salter Shoes" */;
 			case 2237:
-				return -823439138;
+				return -823439138 /* GXTEntry: "Kelley Boots" */;
 			case 2238:
-				return -1373499572;
+				return -1373499572 /* GXTEntry: "Kelley Boots" */;
 			case 2239:
-				return -210691607;
+				return -210691607 /* GXTEntry: "Kelley Boots" */;
 			case 2240:
-				return 11482213;
+				return 11482213 /* GXTEntry: "Kelley Boots" */;
 			case 2241:
-				return -1714952556;
+				return -1714952556 /* GXTEntry: "Kelley Boots" */;
 			case 2242:
-				return 1963367698;
+				return 1963367698 /* GXTEntry: "Kelley Boots" */;
 			case 2243:
-				return -1100369957;
+				return -1100369957 /* GXTEntry: "Kelley Boots" */;
 			case 2244:
-				return -1951085970;
+				return -1951085970 /* GXTEntry: "Kelley Boots" */;
 			case 2245:
-				return 1624143010;
+				return 1624143010 /* GXTEntry: "Kelley Boots" */;
 			case 2246:
-				return 1142706330;
+				return 1142706330 /* GXTEntry: "Kelley Boots" */;
 			case 2247:
-				return -1516145572;
+				return -1516145572 /* GXTEntry: "Hardie Boots" */;
 			case 2248:
-				return 932681806;
+				return 932681806 /* GXTEntry: "Hardie Boots" */;
 			case 2249:
-				return 1258962739;
+				return 1258962739 /* GXTEntry: "Hardie Boots" */;
 			case 2250:
-				return 1287406231;
+				return 1287406231 /* GXTEntry: "Hardie Boots" */;
 			case 2251:
-				return 1584784906;
+				return 1584784906 /* GXTEntry: "Hardie Boots" */;
 			case 2252:
-				return -301431503;
+				return -301431503 /* GXTEntry: "Hardie Boots" */;
 			case 2253:
-				return -4282211;
+				return -4282211 /* GXTEntry: "Hardie Boots" */;
 			case 2254:
-				return 296045674;
+				return 296045674 /* GXTEntry: "Hardie Boots" */;
 			case 2255:
-				return -1251109896;
+				return -1251109896 /* GXTEntry: "Hardie Boots" */;
 			case 2256:
-				return -1944403977;
+				return -1944403977 /* GXTEntry: "Hardie Boots" */;
 			case 2257:
-				return -2101218227;
+				return -2101218227 /* GXTEntry: "Pico Sandals" */;
 			case 2258:
-				return -407978451;
+				return -407978451 /* GXTEntry: "Pico Sandals" */;
 			case 2259:
-				return -703390986;
+				return -703390986 /* GXTEntry: "Pico Sandals" */;
 			case 2260:
-				return -1002768574;
+				return -1002768574 /* GXTEntry: "Pico Sandals" */;
 			case 2261:
-				return -1298639875;
+				return -1298639875 /* GXTEntry: "Pico Sandals" */;
 			case 2262:
-				return 512109531;
+				return 512109531 /* GXTEntry: "Pico Sandals" */;
 			case 2263:
-				return 208471977;
+				return 208471977 /* GXTEntry: "Pico Sandals" */;
 			case 2264:
-				return -78748308;
+				return -78748308 /* GXTEntry: "Pico Sandals" */;
 			case 2265:
-				return -388382589;
+				return -388382589 /* GXTEntry: "Pico Sandals" */;
 			case 2266:
-				return 743852263;
+				return 743852263 /* GXTEntry: "Pico Sandals" */;
 			case 2267:
-				return -1886833472;
+				return -1886833472 /* GXTEntry: "Brindille Shoes" */;
 			case 2268:
-				return -1582081772;
+				return -1582081772 /* GXTEntry: "Brindille Shoes" */;
 			case 2269:
-				return -1274610245;
+				return -1274610245 /* GXTEntry: "Brindille Shoes" */;
 			case 2270:
-				return 1830744048;
+				return 1830744048 /* GXTEntry: "Brindille Shoes" */;
 			case 2271:
-				return 919307082;
+				return 919307082 /* GXTEntry: "Brindille Shoes" */;
 			case 2272:
-				return 1805642990;
+				return 1805642990 /* GXTEntry: "Brindille Shoes" */;
 			case 2273:
-				return 894730328;
+				return 894730328 /* GXTEntry: "Brindille Shoes" */;
 			case 2274:
-				return 272348711;
+				return 272348711 /* GXTEntry: "Brindille Shoes" */;
 			case 2275:
-				return 1526483879;
+				return 1526483879 /* GXTEntry: "Brindille Shoes" */;
 			case 2276:
-				return -864572676;
+				return -864572676 /* GXTEntry: "Brindille Shoes" */;
 			case 2277:
-				return 33335841;
+				return 33335841 /* GXTEntry: "Treadway Boots" */;
 			case 2278:
-				return 294537540;
+				return 294537540 /* GXTEntry: "Treadway Boots" */;
 			case 2279:
-				return 1714877076;
+				return 1714877076 /* GXTEntry: "Treadway Boots" */;
 			case 2280:
-				return -202043886;
+				return -202043886 /* GXTEntry: "Treadway Boots" */;
 			case 2281:
-				return -687811550;
+				return -687811550 /* GXTEntry: "Treadway Boots" */;
 			case 2282:
-				return -423660641;
+				return -423660641 /* GXTEntry: "Treadway Boots" */;
 			case 2283:
-				return -1143071267;
+				return -1143071267 /* GXTEntry: "Treadway Boots" */;
 			case 2284:
-				return -913327808;
+				return -913327808 /* GXTEntry: "Treadway Boots" */;
 			case 2285:
-				return -1879489004;
+				return -1879489004 /* GXTEntry: "Treadway Boots" */;
 			case 2286:
-				return -492409655;
+				return -492409655 /* GXTEntry: "Treadway Boots" */;
 			case 2287:
 				return -1267430392;
 			case 2288:
@@ -46573,7 +46573,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2341:
 				return -1226976988 /* GXTEntry: "Can\'t Hide Buckle" */;
 			case 2342:
-				return 2112658068;
+				return 2112658068 /* GXTEntry: "Defender Buckle" */;
 			case 2343:
 				return -2053911790 /* GXTEntry: "Ambush Buckle" */;
 			case 2344:
@@ -46625,21 +46625,21 @@ int func_1357(int iParam0, int iParam1)
 			case 2367:
 				return -1214860187 /* GXTEntry: "Fishing Buckle" */;
 			case 2368:
-				return 909042863;
+				return 909042863 /* GXTEntry: "Seasoned Moonshiner Buckle" */;
 			case 2369:
-				return -1021797183;
+				return -1021797183 /* GXTEntry: "Bootlegger Buckle" */;
 			case 2370:
-				return -109482983;
+				return -109482983 /* GXTEntry: "Inebriated Buckle" */;
 			case 2371:
-				return -1187847033;
+				return -1187847033 /* GXTEntry: "Liquor Seller Buckle" */;
 			case 2372:
-				return -598609627;
+				return -598609627 /* GXTEntry: "Moonshiner Buckle" */;
 			case 2373:
-				return -739606090;
+				return -739606090 /* GXTEntry: "Brewer Buckle" */;
 			case 2374:
 				return -680334038;
 			case 2375:
-				return -2104811957;
+				return -2104811957 /* GXTEntry: "Bartender Buckle" */;
 			case 2376:
 				return 1687317308 /* GXTEntry: "Leader Buckle" */;
 			case 2377:
@@ -46681,7 +46681,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2395:
 				return -747990100 /* GXTEntry: "Shotgun Headshot Buckle" */;
 			case 2396:
-				return 2124596755;
+				return 2124596755 /* GXTEntry: "Bow Headshot Buckle" */;
 			case 2397:
 				return 422249095 /* GXTEntry: "Deathrider Buckle" */;
 			case 2398:
@@ -46761,7 +46761,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2435:
 				return -1454145777 /* GXTEntry: "Horseback Buckle" */;
 			case 2436:
-				return 2145956586;
+				return 2145956586 /* GXTEntry: "Frontier Buckle" */;
 			case 2437:
 				return 1951056004 /* GXTEntry: "No Ticket Buckle" */;
 			case 2438:
@@ -46931,7 +46931,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2520:
 				return -1934910816 /* GXTEntry: "Durham Coat" */;
 			case 2521:
-				return 2128543495;
+				return 2128543495 /* GXTEntry: "Durham Coat" */;
 			case 2522:
 				return -1617411975 /* GXTEntry: "Durham Coat" */;
 			case 2523:
@@ -46979,65 +46979,65 @@ int func_1357(int iParam0, int iParam1)
 			case 2544:
 				return -1240717027 /* GXTEntry: "Cinched Jacket" */;
 			case 2545:
-				return -1470692241;
+				return -1470692241 /* GXTEntry: "Macbay Jacket" */;
 			case 2546:
-				return -694886166;
+				return -694886166 /* GXTEntry: "Macbay Jacket" */;
 			case 2547:
-				return -481101198;
+				return -481101198 /* GXTEntry: "Macbay Jacket" */;
 			case 2548:
-				return -770123778;
+				return -770123778 /* GXTEntry: "Macbay Jacket" */;
 			case 2549:
-				return -21581507;
+				return -21581507 /* GXTEntry: "Macbay Jacket" */;
 			case 2550:
-				return -311325005;
+				return -311325005 /* GXTEntry: "Macbay Jacket" */;
 			case 2551:
-				return 445278436;
+				return 445278436 /* GXTEntry: "Macbay Jacket" */;
 			case 2552:
-				return 139215976;
+				return 139215976 /* GXTEntry: "Macbay Jacket" */;
 			case 2553:
-				return 901422916;
+				return 901422916 /* GXTEntry: "Macbay Jacket" */;
 			case 2554:
-				return -760001357;
+				return -760001357 /* GXTEntry: "Macbay Jacket" */;
 			case 2555:
-				return 256255268;
+				return 256255268 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2556:
-				return 159455642;
+				return 159455642 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2557:
-				return 2066316521;
+				return 2066316521 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2558:
-				return 1718571893;
+				return 1718571893 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2559:
-				return -927950858;
+				return -927950858 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2560:
-				return 569395828;
+				return 569395828 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2561:
-				return 291350863;
+				return 291350863 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2562:
-				return -32013629;
+				return -32013629 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2563:
-				return 2100363512;
+				return 2100363512 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2564:
-				return 1092224995;
+				return 1092224995 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 2565:
-				return 1018385611;
+				return 1018385611 /* GXTEntry: "Leavitt Jacket" */;
 			case 2566:
-				return 1308751720;
+				return 1308751720 /* GXTEntry: "Leavitt Jacket" */;
 			case 2567:
-				return -1772386274;
+				return -1772386274 /* GXTEntry: "Leavitt Jacket" */;
 			case 2568:
-				return -1463472911;
+				return -1463472911 /* GXTEntry: "Leavitt Jacket" */;
 			case 2569:
-				return -219692747;
+				return -219692747 /* GXTEntry: "Leavitt Jacket" */;
 			case 2570:
-				return 87844318;
+				return 87844318 /* GXTEntry: "Leavitt Jacket" */;
 			case 2571:
-				return -1310802116;
+				return -1310802116 /* GXTEntry: "Leavitt Jacket" */;
 			case 2572:
-				return -1635116909;
+				return -1635116909 /* GXTEntry: "Leavitt Jacket" */;
 			case 2573:
-				return 223147543;
+				return 223147543 /* GXTEntry: "Leavitt Jacket" */;
 			case 2574:
-				return 842474915;
+				return 842474915 /* GXTEntry: "Leavitt Jacket" */;
 			case 2575:
 				return -739570698 /* GXTEntry: "Leather Duster" */;
 			case 2576:
@@ -47113,7 +47113,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2611:
 				return 1819661839 /* GXTEntry: "Duster Coat" */;
 			case 2612:
-				return 2134375315;
+				return 2134375315 /* GXTEntry: "Duster Coat" */;
 			case 2613:
 				return -232070793 /* GXTEntry: "Duster Coat" */;
 			case 2614:
@@ -47223,7 +47223,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2666:
 				return -1353565386 /* GXTEntry: "Classic Frock Coat" */;
 			case 2667:
-				return 2146983043;
+				return 2146983043 /* GXTEntry: "Classic Frock Coat" */;
 			case 2668:
 				return -1982500803 /* GXTEntry: "Classic Frock Coat" */;
 			case 2669:
@@ -47285,7 +47285,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2697:
 				return joaat("clothing_item_f_coat_013_tint_003");
 			case 2698:
-				return 2140261140;
+				return 2140261140 /* GXTEntry: "Leather Jacket" */;
 			case 2699:
 				return 758589024 /* GXTEntry: "Leather Jacket" */;
 			case 2700:
@@ -47309,7 +47309,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2709:
 				return 1443141565 /* GXTEntry: "Tempest Coat" */;
 			case 2710:
-				return 2118838345;
+				return 2118838345 /* GXTEntry: "Tempest Coat" */;
 			case 2711:
 				return -609246487 /* GXTEntry: "Tempest Coat" */;
 			case 2712:
@@ -47475,9 +47475,9 @@ int func_1357(int iParam0, int iParam1)
 			case 2792:
 				return 823998265 /* GXTEntry: "Morning Tail Coat" */;
 			case 2793:
-				return 2132300586;
+				return 2132300586 /* GXTEntry: "Morning Tail Coat" */;
 			case 2794:
-				return 2140067023;
+				return 2140067023 /* GXTEntry: "Morning Tail Coat" */;
 			case 2795:
 				return 103360831 /* GXTEntry: "Riggs Fringe Coat" */;
 			case 2796:
@@ -47619,47 +47619,47 @@ int func_1357(int iParam0, int iParam1)
 			case 2864:
 				return 462607459 /* GXTEntry: "Ballard Jacket" */;
 			case 2865:
-				return -1757530457;
+				return -1757530457 /* GXTEntry: "Walden Coat" */;
 			case 2866:
-				return -2065264136;
+				return -2065264136 /* GXTEntry: "Walden Coat" */;
 			case 2867:
-				return -182455699;
+				return -182455699 /* GXTEntry: "Walden Coat" */;
 			case 2868:
-				return -533477227;
+				return -533477227 /* GXTEntry: "Walden Coat" */;
 			case 2869:
-				return -828267151;
+				return -828267151 /* GXTEntry: "Walden Coat" */;
 			case 2870:
-				return -1107295186;
+				return -1107295186 /* GXTEntry: "Walden Coat" */;
 			case 2871:
-				return 741826715;
+				return 741826715 /* GXTEntry: "Walden Coat" */;
 			case 2872:
-				return 461717303;
+				return 461717303 /* GXTEntry: "Walden Coat" */;
 			case 2873:
-				return 162438026;
+				return 162438026 /* GXTEntry: "Walden Coat" */;
 			case 2874:
-				return 1761237816;
+				return 1761237816 /* GXTEntry: "Walden Coat" */;
 			case 2875:
-				return 676845404;
+				return 676845404 /* GXTEntry: "Clairborn Coat" */;
 			case 2876:
-				return 915043265;
+				return 915043265 /* GXTEntry: "Clairborn Coat" */;
 			case 2877:
-				return -1204685042;
+				return -1204685042 /* GXTEntry: "Clairborn Coat" */;
 			case 2878:
-				return 1182765995;
+				return 1182765995 /* GXTEntry: "Clairborn Coat" */;
 			case 2879:
-				return 1538047493;
+				return 1538047493 /* GXTEntry: "Clairborn Coat" */;
 			case 2880:
-				return 1777490576;
+				return 1777490576 /* GXTEntry: "Clairborn Coat" */;
 			case 2881:
-				return -590528444;
+				return -590528444 /* GXTEntry: "Clairborn Coat" */;
 			case 2882:
-				return -190877720;
+				return -190877720 /* GXTEntry: "Clairborn Coat" */;
 			case 2883:
-				return -2127427313;
+				return -2127427313 /* GXTEntry: "Clairborn Coat" */;
 			case 2884:
-				return -837540206;
+				return -837540206 /* GXTEntry: "Clairborn Coat" */;
 			case 2885:
-				return 2134080808;
+				return 2134080808 /* GXTEntry: "Grinder Boots" */;
 			case 2886:
 				return -1843724218 /* GXTEntry: "Copperhead Cavalry Gloves" */;
 			case 2887:
@@ -47679,45 +47679,45 @@ int func_1357(int iParam0, int iParam1)
 			case 2894:
 				return 1960470978 /* GXTEntry: "Sheepskin Vest" */;
 			case 2895:
-				return 1112945406;
+				return 1112945406 /* GXTEntry: "Isbell Corset" */;
 			case 2896:
-				return -69261803;
+				return -69261803 /* GXTEntry: "Isbell Corset" */;
 			case 2897:
-				return 632256949;
+				return 632256949 /* GXTEntry: "Isbell Corset" */;
 			case 2898:
-				return 1330793722;
+				return 1330793722 /* GXTEntry: "Isbell Corset" */;
 			case 2899:
-				return 1497981160;
+				return 1497981160 /* GXTEntry: "Isbell Corset" */;
 			case 2900:
-				return 855413839;
+				return 855413839 /* GXTEntry: "Isbell Corset" */;
 			case 2901:
-				return 1152202672;
+				return 1152202672 /* GXTEntry: "Isbell Corset" */;
 			case 2902:
-				return -1504314624;
+				return -1504314624 /* GXTEntry: "Isbell Corset" */;
 			case 2903:
-				return -1205494109;
+				return -1205494109 /* GXTEntry: "Isbell Corset" */;
 			case 2904:
-				return 117130861;
+				return 117130861 /* GXTEntry: "Isbell Corset" */;
 			case 2905:
-				return -1067785553;
+				return -1067785553 /* GXTEntry: "Chambliss Corset" */;
 			case 2906:
-				return 192313573;
+				return 192313573 /* GXTEntry: "Chambliss Corset" */;
 			case 2907:
-				return -46211978;
+				return -46211978 /* GXTEntry: "Chambliss Corset" */;
 			case 2908:
-				return 632335713;
+				return 632335713 /* GXTEntry: "Chambliss Corset" */;
 			case 2909:
-				return 393122013;
+				return 393122013 /* GXTEntry: "Chambliss Corset" */;
 			case 2910:
-				return 1113417402;
+				return 1113417402 /* GXTEntry: "Chambliss Corset" */;
 			case 2911:
-				return 873482784;
+				return 873482784 /* GXTEntry: "Chambliss Corset" */;
 			case 2912:
-				return 558244996;
+				return 558244996 /* GXTEntry: "Chambliss Corset" */;
 			case 2913:
-				return 314673019;
+				return 314673019 /* GXTEntry: "Chambliss Corset" */;
 			case 2914:
-				return 1305443458;
+				return 1305443458 /* GXTEntry: "Chambliss Corset" */;
 			case 2915:
 				return joaat("clothing_item_f_eyebrows_001_blonde");
 			case 2916:
@@ -48079,17 +48079,17 @@ int func_1357(int iParam0, int iParam1)
 			case 3088:
 				return joaat("clothing_item_f_eyewear_002_tint_001");
 			case 3089:
-				return -2106320965;
+				return -2106320965 /* GXTEntry: "Savatier Monocle" */;
 			case 3090:
-				return -1339690210;
+				return -1339690210 /* GXTEntry: "Savatier Monocle" */;
 			case 3091:
-				return 1674173031;
+				return 1674173031 /* GXTEntry: "Savatier Monocle" */;
 			case 3092:
-				return -1843906813;
+				return -1843906813 /* GXTEntry: "Savatier Monocle" */;
 			case 3093:
-				return 946144158;
+				return 946144158 /* GXTEntry: "Savatier Monocle" */;
 			case 3094:
-				return 1956281352;
+				return 1956281352 /* GXTEntry: "Savatier Monocle" */;
 			case 3095:
 				return joaat("clothing_item_f_frontier_boots_000");
 			case 3096:
@@ -48325,17 +48325,17 @@ int func_1357(int iParam0, int iParam1)
 			case 3211:
 				return 922285826 /* GXTEntry: "Avery Gloves" */;
 			case 3212:
-				return -1883262636;
+				return -1883262636 /* GXTEntry: "Holme Gloves" */;
 			case 3213:
-				return -1637364060;
+				return -1637364060 /* GXTEntry: "Holme Gloves" */;
 			case 3214:
-				return -1405457847;
+				return -1405457847 /* GXTEntry: "Holme Gloves" */;
 			case 3215:
-				return -1196719313;
+				return -1196719313 /* GXTEntry: "Holme Gloves" */;
 			case 3216:
-				return -430252403;
+				return -430252403 /* GXTEntry: "Holme Gloves" */;
 			case 3217:
-				return -182748146;
+				return -182748146 /* GXTEntry: "Holme Gloves" */;
 			case 3218:
 				return 1511461630 /* GXTEntry: "Gunslinger Gun Belt" */;
 			case 3219:
@@ -48441,17 +48441,17 @@ int func_1357(int iParam0, int iParam1)
 			case 3269:
 				return 66384844 /* GXTEntry: "Sharpshooter Gun Belt" */;
 			case 3270:
-				return -597131526;
+				return -597131526 /* GXTEntry: "Nevin Hipflask" */;
 			case 3271:
-				return 1780554349;
+				return 1780554349 /* GXTEntry: "Nevin Hipflask" */;
 			case 3272:
-				return 673617541;
+				return 673617541 /* GXTEntry: "Nevin Hipflask" */;
 			case 3273:
-				return 911160022;
+				return 911160022 /* GXTEntry: "Nevin Hipflask" */;
 			case 3274:
-				return -1938432222;
+				return -1938432222 /* GXTEntry: "Nevin Hipflask" */;
 			case 3275:
-				return -1697416227;
+				return -1697416227 /* GXTEntry: "Nevin Hipflask" */;
 			case 3276:
 				return joaat("clothing_item_f_hair_001_blonde");
 			case 3277:
@@ -50499,179 +50499,179 @@ int func_1357(int iParam0, int iParam1)
 			case 4292:
 				return -1540402732 /* GXTEntry: "Bartley Cap" */;
 			case 4293:
-				return 1965111208;
+				return 1965111208 /* GXTEntry: "Baldock Hat" */;
 			case 4294:
-				return 1116623487;
+				return 1116623487 /* GXTEntry: "Baldock Hat" */;
 			case 4295:
-				return 2141703349;
+				return 2141703349 /* GXTEntry: "Baldock Hat" */;
 			case 4296:
-				return -1919391594;
+				return -1919391594 /* GXTEntry: "Baldock Hat" */;
 			case 4297:
-				return 807546279;
+				return 807546279 /* GXTEntry: "Baldock Hat" */;
 			case 4298:
-				return -38909760;
+				return -38909760 /* GXTEntry: "Baldock Hat" */;
 			case 4299:
-				return 1453226655;
+				return 1453226655 /* GXTEntry: "Baldock Hat" */;
 			case 4300:
-				return 439747023;
+				return 439747023 /* GXTEntry: "Baldock Hat" */;
 			case 4301:
-				return -749497385;
+				return -749497385 /* GXTEntry: "Buckley Hat" */;
 			case 4302:
-				return 226494511;
+				return 226494511 /* GXTEntry: "Buckley Hat" */;
 			case 4303:
-				return 531737746;
+				return 531737746 /* GXTEntry: "Buckley Hat" */;
 			case 4304:
-				return 706789744;
+				return 706789744 /* GXTEntry: "Buckley Hat" */;
 			case 4305:
-				return 1012884973;
+				return 1012884973 /* GXTEntry: "Buckley Hat" */;
 			case 4306:
-				return 838258944;
+				return 838258944 /* GXTEntry: "Buckley Hat" */;
 			case 4307:
-				return 1135965309;
+				return 1135965309 /* GXTEntry: "Buckley Hat" */;
 			case 4308:
-				return 2110646473;
+				return 2110646473 /* GXTEntry: "Buckley Hat" */;
 			case 4309:
-				return 1941525606;
+				return 1941525606 /* GXTEntry: "Charleston Top Hat" */;
 			case 4310:
-				return 732906575;
+				return 732906575 /* GXTEntry: "Charleston Top Hat" */;
 			case 4311:
-				return 1602464763;
+				return 1602464763 /* GXTEntry: "Charleston Top Hat" */;
 			case 4312:
-				return 422354762;
+				return 422354762 /* GXTEntry: "Charleston Top Hat" */;
 			case 4313:
-				return 990241532;
+				return 990241532 /* GXTEntry: "Charleston Top Hat" */;
 			case 4314:
-				return -218639647;
+				return -218639647 /* GXTEntry: "Charleston Top Hat" */;
 			case 4315:
-				return 616150628;
+				return 616150628 /* GXTEntry: "Charleston Top Hat" */;
 			case 4316:
-				return -528273928;
+				return -528273928 /* GXTEntry: "Charleston Top Hat" */;
 			case 4317:
-				return -2085190255;
+				return -2085190255 /* GXTEntry: "Lister Hat" */;
 			case 4318:
-				return 1959258036;
+				return 1959258036 /* GXTEntry: "Lister Hat" */;
 			case 4319:
-				return 1734003930;
+				return 1734003930 /* GXTEntry: "Lister Hat" */;
 			case 4320:
-				return -1178341037;
+				return -1178341037 /* GXTEntry: "Lister Hat" */;
 			case 4321:
-				return -1416997664;
+				return -1416997664 /* GXTEntry: "Lister Hat" */;
 			case 4322:
-				return -574310060;
+				return -574310060 /* GXTEntry: "Lister Hat" */;
 			case 4323:
-				return -810541781;
+				return -810541781 /* GXTEntry: "Lister Hat" */;
 			case 4324:
-				return 1917870701;
+				return 1917870701 /* GXTEntry: "Lister Hat" */;
 			case 4325:
-				return 1762912266;
+				return 1762912266 /* GXTEntry: "Reaves Top Hat" */;
 			case 4326:
-				return 1578127875;
+				return 1578127875 /* GXTEntry: "Reaves Top Hat" */;
 			case 4327:
-				return 273757830;
+				return 273757830 /* GXTEntry: "Reaves Top Hat" */;
 			case 4328:
-				return 6461097;
+				return 6461097 /* GXTEntry: "Reaves Top Hat" */;
 			case 4329:
-				return 851245917;
+				return 851245917 /* GXTEntry: "Reaves Top Hat" */;
 			case 4330:
-				return 619274166;
+				return 619274166 /* GXTEntry: "Reaves Top Hat" */;
 			case 4331:
-				return -1256620012;
+				return -1256620012 /* GXTEntry: "Reaves Top Hat" */;
 			case 4332:
-				return -1258586144;
+				return -1258586144 /* GXTEntry: "Reaves Top Hat" */;
 			case 4333:
-				return -1312716655;
+				return -1312716655 /* GXTEntry: "Menasco Hat" */;
 			case 4334:
-				return -545004523;
+				return -545004523 /* GXTEntry: "Menasco Hat" */;
 			case 4335:
-				return -582099031;
+				return -582099031 /* GXTEntry: "Menasco Hat" */;
 			case 4336:
-				return -390990235;
+				return -390990235 /* GXTEntry: "Menasco Hat" */;
 			case 4337:
-				return -687975682;
+				return -687975682 /* GXTEntry: "Menasco Hat" */;
 			case 4338:
-				return 1948552524;
+				return 1948552524 /* GXTEntry: "Menasco Hat" */;
 			case 4339:
-				return -1571001925;
+				return -1571001925 /* GXTEntry: "Menasco Hat" */;
 			case 4340:
-				return -1839609418;
+				return -1839609418 /* GXTEntry: "Menasco Hat" */;
 			case 4341:
-				return -1028717772;
+				return -1028717772 /* GXTEntry: "Boutell Hat" */;
 			case 4342:
-				return -186259551;
+				return -186259551 /* GXTEntry: "Boutell Hat" */;
 			case 4343:
-				return -432354741;
+				return -432354741 /* GXTEntry: "Boutell Hat" */;
 			case 4344:
-				return 411873006;
+				return 411873006 /* GXTEntry: "Boutell Hat" */;
 			case 4345:
-				return 162959682;
+				return 162959682 /* GXTEntry: "Boutell Hat" */;
 			case 4346:
-				return 1006728663;
+				return 1006728663 /* GXTEntry: "Boutell Hat" */;
 			case 4347:
-				return 766007589;
+				return 766007589 /* GXTEntry: "Boutell Hat" */;
 			case 4348:
-				return 1603157232;
+				return 1603157232 /* GXTEntry: "Boutell Hat" */;
 			case 4349:
-				return -1061482520;
+				return -1061482520 /* GXTEntry: "Birdwell Hat" */;
 			case 4350:
-				return 1028131104;
+				return 1028131104 /* GXTEntry: "Birdwell Hat" */;
 			case 4351:
-				return 1663063248;
+				return 1663063248 /* GXTEntry: "Birdwell Hat" */;
 			case 4352:
-				return 1912009341;
+				return 1912009341 /* GXTEntry: "Birdwell Hat" */;
 			case 4353:
-				return -2020074049;
+				return -2020074049 /* GXTEntry: "Birdwell Hat" */;
 			case 4354:
-				return 1881468617;
+				return 1881468617 /* GXTEntry: "Birdwell Hat" */;
 			case 4355:
-				return 2046296687;
+				return 2046296687 /* GXTEntry: "Birdwell Hat" */;
 			case 4356:
-				return -1967021054;
+				return -1967021054 /* GXTEntry: "Birdwell Hat" */;
 			case 4357:
-				return -892902010;
+				return -892902010 /* GXTEntry: "Starrett Hat" */;
 			case 4358:
-				return 58808057;
+				return 58808057 /* GXTEntry: "Starrett Hat" */;
 			case 4359:
-				return -246697330;
+				return -246697330 /* GXTEntry: "Starrett Hat" */;
 			case 4360:
-				return -1746075698;
+				return -1746075698 /* GXTEntry: "Starrett Hat" */;
 			case 4361:
-				return -2054137067;
+				return -2054137067 /* GXTEntry: "Starrett Hat" */;
 			case 4362:
-				return -1169439601;
+				return -1169439601 /* GXTEntry: "Starrett Hat" */;
 			case 4363:
-				return -1474289608;
+				return -1474289608 /* GXTEntry: "Starrett Hat" */;
 			case 4364:
-				return 1790715233;
+				return 1790715233 /* GXTEntry: "Starrett Hat" */;
 			case 4365:
-				return 1096575841;
+				return 1096575841 /* GXTEntry: "Palma Hat" */;
 			case 4366:
-				return 604319923;
+				return 604319923 /* GXTEntry: "Palma Hat" */;
 			case 4367:
-				return 432544825;
+				return 432544825 /* GXTEntry: "Palma Hat" */;
 			case 4368:
-				return -1998030212;
+				return -1998030212 /* GXTEntry: "Palma Hat" */;
 			case 4369:
-				return 1856128496;
+				return 1856128496 /* GXTEntry: "Palma Hat" */;
 			case 4370:
-				return 2103370605;
+				return 2103370605 /* GXTEntry: "Palma Hat" */;
 			case 4371:
-				return 1876412511;
+				return 1876412511 /* GXTEntry: "Palma Hat" */;
 			case 4372:
-				return 1629825786;
+				return 1629825786 /* GXTEntry: "Palma Hat" */;
 			case 4373:
-				return -658720261;
+				return -658720261 /* GXTEntry: "Gilbreath Hat" */;
 			case 4374:
-				return -243465948;
+				return -243465948 /* GXTEntry: "Stuart Top Hat" */;
 			case 4375:
-				return -976246326;
+				return -976246326 /* GXTEntry: "Stuart Top Hat" */;
 			case 4376:
-				return -753810354;
+				return -753810354 /* GXTEntry: "Stuart Top Hat" */;
 			case 4377:
-				return -1455558489;
+				return -1455558489 /* GXTEntry: "Stuart Top Hat" */;
 			case 4378:
-				return -1165782222;
+				return -1165782222 /* GXTEntry: "Stuart Top Hat" */;
 			case 4379:
-				return 1376862787;
+				return 1376862787 /* GXTEntry: "Stuart Top Hat" */;
 			case 4380:
 				return joaat("clothing_item_f_head_001_v_001");
 			case 4381:
@@ -51161,7 +51161,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4623:
 				return -1911088420 /* GXTEntry: "Trimmed Bandana" */;
 			case 4624:
-				return 2145746553;
+				return 2145746553 /* GXTEntry: "Trimmed Bandana" */;
 			case 4625:
 				return -1498723324 /* GXTEntry: "Trimmed Bandana" */;
 			case 4626:
@@ -51329,7 +51329,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4707:
 				return -796108113 /* GXTEntry: "Dress Tie" */;
 			case 4708:
-				return 2127083305;
+				return 2127083305 /* GXTEntry: "Dress Tie" */;
 			case 4709:
 				return 1603401144 /* GXTEntry: "Dress Tie" */;
 			case 4710:
@@ -51445,7 +51445,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4765:
 				return -1919550470 /* GXTEntry: "Narrow Neckerchief" */;
 			case 4766:
-				return 2126274119;
+				return 2126274119 /* GXTEntry: "Narrow Neckerchief" */;
 			case 4767:
 				return 1613504807 /* GXTEntry: "Narrow Neckerchief" */;
 			case 4768:
@@ -51563,7 +51563,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4824:
 				return 1779645445 /* GXTEntry: "Deadboot Holster" */;
 			case 4825:
-				return 2112644023;
+				return 2112644023 /* GXTEntry: "Deadboot Holster" */;
 			case 4826:
 				return -909575313 /* GXTEntry: "Deadboot Holster" */;
 			case 4827:
@@ -51589,7 +51589,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4837:
 				return 1302861393 /* GXTEntry: "Bolger Holster" */;
 			case 4838:
-				return 2145483459;
+				return 2145483459 /* GXTEntry: "Bolger Holster" */;
 			case 4839:
 				return 1916198766 /* GXTEntry: "Bolger Holster" */;
 			case 4840:
@@ -51611,9 +51611,9 @@ int func_1357(int iParam0, int iParam1)
 			case 4848:
 				return joaat("clothing_item_f_outlaw_pants_000");
 			case 4849:
-				return -885835862;
+				return -885835862 /* GXTEntry: "Rexroad Shirt" */;
 			case 4850:
-				return 207247924;
+				return 207247924 /* GXTEntry: "Rexroad Vest" */;
 			case 4851:
 				return 1570272012 /* GXTEntry: "Overalls" */;
 			case 4852:
@@ -51699,7 +51699,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4892:
 				return 895884274 /* GXTEntry: "Worn Rolled Pants" */;
 			case 4893:
-				return 2118397357;
+				return 2118397357 /* GXTEntry: "Worn Rolled Pants" */;
 			case 4894:
 				return -1596165411 /* GXTEntry: "Worn Rolled Pants" */;
 			case 4895:
@@ -51789,7 +51789,7 @@ int func_1357(int iParam0, int iParam1)
 			case 4937:
 				return -2135130028 /* GXTEntry: "Bandito Pants" */;
 			case 4938:
-				return 2140306944;
+				return 2140306944 /* GXTEntry: "Bandito Pants" */;
 			case 4939:
 				return 1843452573 /* GXTEntry: "Bandito Pants" */;
 			case 4940:
@@ -51999,45 +51999,45 @@ int func_1357(int iParam0, int iParam1)
 			case 5036:
 				return -85374125 /* GXTEntry: "Carver Pants" */;
 			case 5037:
-				return 942550234;
+				return 942550234 /* GXTEntry: "Martindale Pants" */;
 			case 5038:
-				return -668930903;
+				return -668930903 /* GXTEntry: "Martindale Pants" */;
 			case 5039:
-				return -1453191380;
+				return -1453191380 /* GXTEntry: "Martindale Pants" */;
 			case 5040:
-				return -1212699689;
+				return -1212699689 /* GXTEntry: "Martindale Pants" */;
 			case 5041:
-				return -1919658079;
+				return -1919658079 /* GXTEntry: "Martindale Pants" */;
 			case 5042:
-				return 286940827;
+				return 286940827 /* GXTEntry: "Martindale Pants" */;
 			case 5043:
-				return 509081878;
+				return 509081878 /* GXTEntry: "Martindale Pants" */;
 			case 5044:
-				return -194403014;
+				return -194403014 /* GXTEntry: "Martindale Pants" */;
 			case 5045:
-				return -1028931137;
+				return -1028931137 /* GXTEntry: "Martindale Pants" */;
 			case 5046:
-				return 8339013;
+				return 8339013 /* GXTEntry: "Martindale Pants" */;
 			case 5047:
-				return 834850569;
+				return 834850569 /* GXTEntry: "McCrum Pants" */;
 			case 5048:
-				return -1792961083;
+				return -1792961083 /* GXTEntry: "McCrum Pants" */;
 			case 5049:
-				return -1080497485;
+				return -1080497485 /* GXTEntry: "McCrum Pants" */;
 			case 5050:
-				return -123282226;
+				return -123282226 /* GXTEntry: "McCrum Pants" */;
 			case 5051:
-				return -1562103478;
+				return -1562103478 /* GXTEntry: "McCrum Pants" */;
 			case 5052:
-				return -2041907172;
+				return -2041907172 /* GXTEntry: "McCrum Pants" */;
 			case 5053:
-				return 2022530209;
+				return 2022530209 /* GXTEntry: "McCrum Pants" */;
 			case 5054:
-				return -1308930184;
+				return -1308930184 /* GXTEntry: "McCrum Pants" */;
 			case 5055:
-				return 1544201116;
+				return 1544201116 /* GXTEntry: "McCrum Pants" */;
 			case 5056:
-				return -941622175;
+				return -941622175 /* GXTEntry: "McCrum Pants" */;
 			case 5057:
 				return 1166668376 /* GXTEntry: "Chuparosa Poncho" */;
 			case 5058:
@@ -52139,45 +52139,45 @@ int func_1357(int iParam0, int iParam1)
 			case 5106:
 				return -762891192 /* GXTEntry: "Cardenas Poncho" */;
 			case 5107:
-				return 1795208067;
+				return 1795208067 /* GXTEntry: "Torras Poncho" */;
 			case 5108:
-				return 1011471894;
+				return 1011471894 /* GXTEntry: "Torras Poncho" */;
 			case 5109:
-				return 1941882111;
+				return 1941882111 /* GXTEntry: "Torras Poncho" */;
 			case 5110:
-				return 1624088349;
+				return 1624088349 /* GXTEntry: "Torras Poncho" */;
 			case 5111:
-				return 559226925;
+				return 559226925 /* GXTEntry: "Torras Poncho" */;
 			case 5112:
-				return -208517976;
+				return -208517976 /* GXTEntry: "Torras Poncho" */;
 			case 5113:
-				return 1174006134;
+				return 1174006134 /* GXTEntry: "Torras Poncho" */;
 			case 5114:
-				return 404753859;
+				return 404753859 /* GXTEntry: "Torras Poncho" */;
 			case 5115:
-				return -1060315354;
+				return -1060315354 /* GXTEntry: "Torras Poncho" */;
 			case 5116:
-				return -2140512322;
+				return -2140512322 /* GXTEntry: "Torras Poncho" */;
 			case 5117:
-				return 1903121605;
+				return 1903121605 /* GXTEntry: "Guerra Poncho" */;
 			case 5118:
-				return 2133913672;
+				return 2133913672 /* GXTEntry: "Guerra Poncho" */;
 			case 5119:
-				return 1443208690;
+				return 1443208690 /* GXTEntry: "Guerra Poncho" */;
 			case 5120:
-				return 1648604782;
+				return 1648604782 /* GXTEntry: "Guerra Poncho" */;
 			case 5121:
-				return 411542263;
+				return 411542263 /* GXTEntry: "Guerra Poncho" */;
 			case 5122:
-				return 1185873733;
+				return 1185873733 /* GXTEntry: "Guerra Poncho" */;
 			case 5123:
-				return -51778632;
+				return -51778632 /* GXTEntry: "Guerra Poncho" */;
 			case 5124:
-				return 152699932;
+				return 152699932 /* GXTEntry: "Guerra Poncho" */;
 			case 5125:
-				return -1140037126;
+				return -1140037126 /* GXTEntry: "Guerra Poncho" */;
 			case 5126:
-				return -1330360350;
+				return -1330360350 /* GXTEntry: "Guerra Poncho" */;
 			case 5127:
 				return joaat("clothing_item_f_poncho_007_tint_001");
 			case 5128:
@@ -52303,37 +52303,37 @@ int func_1357(int iParam0, int iParam1)
 			case 5188:
 				return -1305774909;
 			case 5189:
-				return -343472373;
+				return -343472373 /* GXTEntry: "Haraway Boots" */;
 			case 5190:
-				return 118297808;
+				return 118297808 /* GXTEntry: "Haraway Hat" */;
 			case 5191:
-				return 1281675660;
+				return 1281675660 /* GXTEntry: "Haraway Neckwear" */;
 			case 5192:
-				return -1069461611;
+				return -1069461611 /* GXTEntry: "Haraway Pants" */;
 			case 5193:
-				return 134352775;
+				return 134352775 /* GXTEntry: "Haraway Shirt" */;
 			case 5194:
-				return 1694019116;
+				return 1694019116 /* GXTEntry: "Haraway Spurs" */;
 			case 5195:
-				return 773273041;
+				return 773273041 /* GXTEntry: "Haraway Suspenders" */;
 			case 5196:
-				return -377253474;
+				return -377253474 /* GXTEntry: "Clelland Belt" */;
 			case 5197:
-				return 2083250300;
+				return 2083250300 /* GXTEntry: "Clelland Boots" */;
 			case 5198:
-				return 1268027260;
+				return 1268027260 /* GXTEntry: "Clelland Gloves" */;
 			case 5199:
-				return -2083850938;
+				return -2083850938 /* GXTEntry: "Clelland Hat" */;
 			case 5200:
-				return 644542331;
+				return 644542331 /* GXTEntry: "Clelland Neckwear" */;
 			case 5201:
-				return -408728765;
+				return -408728765 /* GXTEntry: "Clelland Pants" */;
 			case 5202:
-				return 529519278;
+				return 529519278 /* GXTEntry: "Clelland Shirt" */;
 			case 5203:
-				return 1752777248;
+				return 1752777248 /* GXTEntry: "Clelland Spurs" */;
 			case 5204:
-				return 991187389;
+				return 991187389 /* GXTEntry: "Clelland Vest" */;
 			case 5205:
 				return -628910426;
 			case 5206:
@@ -52421,7 +52421,7 @@ int func_1357(int iParam0, int iParam1)
 			case 5247:
 				return -1259501779 /* GXTEntry: "Work Shirtwaist" */;
 			case 5248:
-				return 2116393374;
+				return 2116393374 /* GXTEntry: "Work Shirtwaist" */;
 			case 5249:
 				return -1435241926 /* GXTEntry: "Work Shirtwaist" */;
 			case 5250:
@@ -52595,7 +52595,7 @@ int func_1357(int iParam0, int iParam1)
 			case 5334:
 				return joaat("clothing_item_f_shirt_006_tint_004");
 			case 5335:
-				return 2146506049;
+				return 2146506049 /* GXTEntry: "Laborer Overshirt" */;
 			case 5336:
 				return -1721087949 /* GXTEntry: "Laborer Overshirt" */;
 			case 5337:
@@ -52609,7 +52609,7 @@ int func_1357(int iParam0, int iParam1)
 			case 5341:
 				return -1574178526 /* GXTEntry: "Laborer Overshirt" */;
 			case 5342:
-				return 2145627282;
+				return 2145627282 /* GXTEntry: "Laborer Overshirt" */;
 			case 5343:
 				return 1302185991 /* GXTEntry: "Laborer Overshirt" */;
 			case 5344:
@@ -52647,7 +52647,7 @@ int func_1357(int iParam0, int iParam1)
 			case 5360:
 				return 1783113373 /* GXTEntry: "Frill Shirtwaist" */;
 			case 5361:
-				return 2134233208;
+				return 2134233208 /* GXTEntry: "Frill Shirtwaist" */;
 			case 5362:
 				return -1913852442 /* GXTEntry: "Frill Shirtwaist" */;
 			case 5363:
@@ -52721,13 +52721,13 @@ int func_1357(int iParam0, int iParam1)
 			case 5397:
 				return 1967230211 /* GXTEntry: "Casual Shirtwaist" */;
 			case 5398:
-				return 2139529613;
+				return 2139529613 /* GXTEntry: "Casual Shirtwaist" */;
 			case 5399:
 				return 16458868 /* GXTEntry: "Casual Shirtwaist" */;
 			case 5400:
 				return -1896497349 /* GXTEntry: "Casual Shirtwaist" */;
 			case 5401:
-				return 2114592100;
+				return 2114592100 /* GXTEntry: "Casual Shirtwaist" */;
 			case 5402:
 				return 1790178992 /* GXTEntry: "Casual Shirtwaist" */;
 			case 5403:
@@ -52763,7 +52763,7 @@ int func_1357(int iParam0, int iParam1)
 			case 5418:
 				return 1981996981 /* GXTEntry: "Estelle Shirtwaist" */;
 			case 5419:
-				return 2144662297;
+				return 2144662297 /* GXTEntry: "Estelle Shirtwaist" */;
 			case 5420:
 				return -1548926331 /* GXTEntry: "Estelle Shirtwaist" */;
 			case 5421:
@@ -52887,45 +52887,45 @@ int func_1357(int iParam0, int iParam1)
 			case 5480:
 				return -684991564 /* GXTEntry: "Goodale Shirtwaist" */;
 			case 5481:
-				return 309877770;
+				return 309877770 /* GXTEntry: "Stringham Shirt" */;
 			case 5482:
-				return -1145852338;
+				return -1145852338 /* GXTEntry: "Stringham Shirt" */;
 			case 5483:
-				return -1439495347;
+				return -1439495347 /* GXTEntry: "Stringham Shirt" */;
 			case 5484:
-				return -1622411909;
+				return -1622411909 /* GXTEntry: "Stringham Shirt" */;
 			case 5485:
-				return -1922018876;
+				return -1922018876 /* GXTEntry: "Stringham Shirt" */;
 			case 5486:
-				return 1113045904;
+				return 1113045904 /* GXTEntry: "Stringham Shirt" */;
 			case 5487:
-				return 815077387;
+				return 815077387 /* GXTEntry: "Stringham Shirt" */;
 			case 5488:
-				return 1478911789;
+				return 1478911789 /* GXTEntry: "Stringham Shirt" */;
 			case 5489:
-				return 1182319570;
+				return 1182319570 /* GXTEntry: "Stringham Shirt" */;
 			case 5490:
-				return 251829;
+				return 251829 /* GXTEntry: "Stringham Shirt" */;
 			case 5491:
-				return -1329681963;
+				return -1329681963 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5492:
-				return -957557199;
+				return -957557199 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5493:
-				return -718638420;
+				return -718638420 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5494:
-				return 1531739874;
+				return 1531739874 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5495:
-				return -374858841;
+				return -374858841 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5496:
-				return -136792056;
+				return -136792056 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5497:
-				return 237102234;
+				return 237102234 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5498:
-				return 1883482324;
+				return 1883482324 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5499:
-				return -2046634926;
+				return -2046634926 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5500:
-				return 1045316002;
+				return 1045316002 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 5501:
 				return -214054986 /* GXTEntry: "Prairie Skirt" */;
 			case 5502:
@@ -53259,45 +53259,45 @@ int func_1357(int iParam0, int iParam1)
 			case 5666:
 				return -1526920384 /* GXTEntry: "Pelt Half Chaps" */;
 			case 5667:
-				return -66715703;
+				return -66715703 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5668:
-				return -1983472820;
+				return -1983472820 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5669:
-				return -1677574205;
+				return -1677574205 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5670:
-				return -1446257834;
+				return -1446257834 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5671:
-				return 1025311226;
+				return 1025311226 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5672:
-				return 1381706870;
+				return 1381706870 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5673:
-				return 1636879073;
+				return 1636879073 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5674:
-				return 1993864559;
+				return 1993864559 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5675:
-				return 90542700;
+				return 90542700 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5676:
-				return -48463106;
+				return -48463106 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 5677:
-				return -593307611;
+				return -593307611 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5678:
-				return 949194757;
+				return 949194757 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5679:
-				return 1257125050;
+				return 1257125050 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5680:
-				return 68232961;
+				return 68232961 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5681:
-				return 377113555;
+				return 377113555 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5682:
-				return -891505531;
+				return -891505531 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5683:
-				return -577512973;
+				return -577512973 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5684:
-				return -1780364664;
+				return -1780364664 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5685:
-				return -1175940451;
+				return -1175940451 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5686:
-				return 2099811250;
+				return 2099811250 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 5687:
 				return -1067667797 /* GXTEntry: "Gerden Copper Spurs" */;
 			case 5688:
@@ -53593,7 +53593,7 @@ int func_1357(int iParam0, int iParam1)
 			case 5833:
 				return 725384623 /* GXTEntry: "Rope Suspenders" */;
 			case 5834:
-				return 2141529723;
+				return 2141529723 /* GXTEntry: "Rope Suspenders" */;
 			case 5835:
 				return -1917402466 /* GXTEntry: "Rope Suspenders" */;
 			case 5836:
@@ -53663,25 +53663,25 @@ int func_1357(int iParam0, int iParam1)
 			case 5868:
 				return -719581805 /* GXTEntry: "Trimmed Drawers description." */;
 			case 5869:
-				return 941172090;
+				return 941172090 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5870:
-				return 858659748;
+				return 858659748 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5871:
-				return 1686109767;
+				return 1686109767 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5872:
-				return 1404656826;
+				return 1404656826 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5873:
-				return 18069356;
+				return 18069356 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5874:
-				return -913291158;
+				return -913291158 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5875:
-				return 2067606449;
+				return 2067606449 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5876:
-				return 1760757533;
+				return 1760757533 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5877:
-				return -1766202710;
+				return -1766202710 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5878:
-				return 1694072922;
+				return 1694072922 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 5879:
 				return 782035259 /* GXTEntry: "Nosalida Boots" */;
 			case 5880:
@@ -54051,7 +54051,7 @@ int func_1357(int iParam0, int iParam1)
 			case 6056:
 				return 1372210070 /* GXTEntry: "Cardozo Vest" */;
 			case 6057:
-				return 2133926841;
+				return 2133926841 /* GXTEntry: "Killiman Vest" */;
 			case 6058:
 				return -1687921633 /* GXTEntry: "Killiman Vest" */;
 			case 6059:
@@ -54071,45 +54071,45 @@ int func_1357(int iParam0, int iParam1)
 			case 6066:
 				return -173207641 /* GXTEntry: "Killiman Vest" */;
 			case 6067:
-				return 1012011619;
+				return 1012011619 /* GXTEntry: "Barras Vest" */;
 			case 6068:
-				return -1327760523;
+				return -1327760523 /* GXTEntry: "Barras Vest" */;
 			case 6069:
-				return -2038126905;
+				return -2038126905 /* GXTEntry: "Barras Vest" */;
 			case 6070:
-				return 1970734252;
+				return 1970734252 /* GXTEntry: "Barras Vest" */;
 			case 6071:
-				return -482975703;
+				return -482975703 /* GXTEntry: "Barras Vest" */;
 			case 6072:
-				return -674936505;
+				return -674936505 /* GXTEntry: "Barras Vest" */;
 			case 6073:
-				return -847629135;
+				return -847629135 /* GXTEntry: "Barras Vest" */;
 			case 6074:
-				return -1138060782;
+				return -1138060782 /* GXTEntry: "Barras Vest" */;
 			case 6075:
-				return 748778118;
+				return 748778118 /* GXTEntry: "Barras Vest" */;
 			case 6076:
-				return 880739041;
+				return 880739041 /* GXTEntry: "Barras Vest" */;
 			case 6077:
-				return 943640230;
+				return 943640230 /* GXTEntry: "Churchwell Vest" */;
 			case 6078:
-				return 704360992;
+				return 704360992 /* GXTEntry: "Churchwell Vest" */;
 			case 6079:
-				return 1417185057;
+				return 1417185057 /* GXTEntry: "Churchwell Vest" */;
 			case 6080:
-				return 1180592869;
+				return 1180592869 /* GXTEntry: "Churchwell Vest" */;
 			case 6081:
-				return -1928955844;
+				return -1928955844 /* GXTEntry: "Churchwell Vest" */;
 			case 6082:
-				return 1656693678;
+				return 1656693678 /* GXTEntry: "Churchwell Vest" */;
 			case 6083:
-				return -1924171574;
+				return -1924171574 /* GXTEntry: "Churchwell Vest" */;
 			case 6084:
-				return 2131090487;
+				return 2131090487 /* GXTEntry: "Churchwell Vest" */;
 			case 6085:
-				return -1446301247;
+				return -1446301247 /* GXTEntry: "Churchwell Vest" */;
 			case 6086:
-				return -1123139193;
+				return -1123139193 /* GXTEntry: "Churchwell Vest" */;
 			case 6087:
 				return 681983915 /* GXTEntry: "No Footwear" */;
 			case 6088:
@@ -54197,125 +54197,125 @@ int func_1357(int iParam0, int iParam1)
 			case 6129:
 				return -580958490 /* GXTEntry: "No Chaps" */;
 			case 6130:
-				return -413008326;
+				return -413008326 /* GXTEntry: "Marino Bandolier" */;
 			case 6131:
-				return 496888497;
+				return 496888497 /* GXTEntry: "Marino Bandolier" */;
 			case 6132:
-				return 793153026;
+				return 793153026 /* GXTEntry: "Marino Bandolier" */;
 			case 6133:
-				return -215411256;
+				return -215411256 /* GXTEntry: "Marino Bandolier" */;
 			case 6134:
-				return 215566632;
+				return 215566632 /* GXTEntry: "Marino Bandolier" */;
 			case 6135:
-				return 1722383559;
+				return 1722383559 /* GXTEntry: "Marino Bandolier" */;
 			case 6136:
-				return 1888653469;
+				return 1888653469 /* GXTEntry: "Marino Bandolier" */;
 			case 6137:
-				return 997631586;
+				return 997631586 /* GXTEntry: "Marino Bandolier" */;
 			case 6138:
-				return 1446042582;
+				return 1446042582 /* GXTEntry: "Marino Bandolier" */;
 			case 6139:
-				return -88366127;
+				return -88366127 /* GXTEntry: "Marino Bandolier" */;
 			case 6140:
-				return -1546788916;
+				return -1546788916 /* GXTEntry: "Coburn Bandolier" */;
 			case 6141:
-				return -319458782;
+				return -319458782 /* GXTEntry: "Coburn Bandolier" */;
 			case 6142:
-				return 2136151767;
+				return 2136151767 /* GXTEntry: "Coburn Bandolier" */;
 			case 6143:
-				return 1425818154;
+				return 1425818154 /* GXTEntry: "Coburn Bandolier" */;
 			case 6144:
-				return 1732437687;
+				return 1732437687 /* GXTEntry: "Coburn Bandolier" */;
 			case 6145:
-				return -1303413553;
+				return -1303413553 /* GXTEntry: "Coburn Bandolier" */;
 			case 6146:
-				return 1153278381;
+				return 1153278381 /* GXTEntry: "Coburn Bandolier" */;
 			case 6147:
-				return 532993980;
+				return 532993980 /* GXTEntry: "Coburn Bandolier" */;
 			case 6148:
-				return 804714528;
+				return 804714528 /* GXTEntry: "Coburn Bandolier" */;
 			case 6149:
-				return -249333966;
+				return -249333966 /* GXTEntry: "Coburn Bandolier" */;
 			case 6150:
-				return -1688431438;
+				return -1688431438 /* GXTEntry: "Higgins Bandolier" */;
 			case 6151:
-				return -1399703779;
+				return -1399703779 /* GXTEntry: "Higgins Bandolier" */;
 			case 6152:
-				return -1079485111;
+				return -1079485111 /* GXTEntry: "Higgins Bandolier" */;
 			case 6153:
-				return -841418326;
+				return -841418326 /* GXTEntry: "Higgins Bandolier" */;
 			case 6154:
-				return 1416693468;
+				return 1416693468 /* GXTEntry: "Higgins Bandolier" */;
 			case 6155:
-				return 1649713827;
+				return 1649713827 /* GXTEntry: "Higgins Bandolier" */;
 			case 6156:
-				return 2028392391;
+				return 2028392391 /* GXTEntry: "Higgins Bandolier" */;
 			case 6157:
-				return -2035192996;
+				return -2035192996 /* GXTEntry: "Higgins Bandolier" */;
 			case 6158:
-				return 1355054983;
+				return 1355054983 /* GXTEntry: "Higgins Bandolier" */;
 			case 6159:
-				return -1646979005;
+				return -1646979005 /* GXTEntry: "Higgins Bandolier" */;
 			case 6160:
-				return 1878714904;
+				return 1878714904 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6161:
-				return 1069353373;
+				return 1069353373 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6162:
-				return -460172471;
+				return -460172471 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6163:
-				return -229544249;
+				return -229544249 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6164:
-				return -2031216638;
+				return -2031216638 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6165:
-				return -1766574194;
+				return -1766574194 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6166:
-				return -1143012897;
+				return -1143012897 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6167:
-				return 674028157;
+				return 674028157 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6168:
-				return -549336924;
+				return -549336924 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6169:
-				return -1344903614;
+				return -1344903614 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 6170:
-				return -170358564;
+				return -170358564 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6171:
-				return 128134257;
+				return 128134257 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6172:
-				return 537582912;
+				return 537582912 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6173:
-				return 568451310;
+				return 568451310 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6174:
-				return 1014011403;
+				return 1014011403 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6175:
-				return 1314830823;
+				return 1314830823 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6176:
-				return -1637918321;
+				return -1637918321 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6177:
-				return -1395558797;
+				return -1395558797 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6178:
-				return -1309212474;
+				return -1309212474 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6179:
-				return 118271052;
+				return 118271052 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 6180:
-				return -1829469037;
+				return -1829469037 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6181:
-				return -1906934953;
+				return -1906934953 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6182:
-				return 2139610554;
+				return 2139610554 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6183:
-				return 1768075632;
+				return 1768075632 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6184:
-				return -379571863;
+				return -379571863 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6185:
-				return -970462471;
+				return -970462471 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6186:
-				return -1210233244;
+				return -1210233244 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6187:
-				return -1568791642;
+				return -1568791642 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6188:
-				return 575120191;
+				return 575120191 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6189:
-				return -1505796375;
+				return -1505796375 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 6190:
 				return joaat("clothing_item_m_beard_001_blonde");
 			case 6191:
@@ -55619,7 +55619,7 @@ int func_1357(int iParam0, int iParam1)
 			case 6840:
 				return 884409832 /* GXTEntry: "Comstock Boots" */;
 			case 6841:
-				return 2125301477;
+				return 2125301477 /* GXTEntry: "Strickland Boots" */;
 			case 6842:
 				return -1459758203 /* GXTEntry: "Strickland Boots" */;
 			case 6843:
@@ -55677,7 +55677,7 @@ int func_1357(int iParam0, int iParam1)
 			case 6869:
 				return -59011549 /* GXTEntry: "Cotorra Boots" */;
 			case 6870:
-				return 2126025591;
+				return 2126025591 /* GXTEntry: "Cotorra Boots" */;
 			case 6871:
 				return 1292878621 /* GXTEntry: "Blackburn Boots" */;
 			case 6872:
@@ -55781,11 +55781,11 @@ int func_1357(int iParam0, int iParam1)
 			case 6921:
 				return -1925057557 /* GXTEntry: "Burnham Boots" */;
 			case 6922:
-				return 2127517446;
+				return 2127517446 /* GXTEntry: "Burnham Boots" */;
 			case 6923:
 				return -1930366139 /* GXTEntry: "Burnham Boots" */;
 			case 6924:
-				return 2133481400;
+				return 2133481400 /* GXTEntry: "Burnham Boots" */;
 			case 6925:
 				return 1501170776 /* GXTEntry: "Burnham Boots" */;
 			case 6926:
@@ -55831,7 +55831,7 @@ int func_1357(int iParam0, int iParam1)
 			case 6946:
 				return 1746563228 /* GXTEntry: "Pickett Boots" */;
 			case 6947:
-				return 2136514328;
+				return 2136514328 /* GXTEntry: "Pickett Boots" */;
 			case 6948:
 				return -1916257289 /* GXTEntry: "Pickett Boots" */;
 			case 6949:
@@ -55919,23 +55919,23 @@ int func_1357(int iParam0, int iParam1)
 			case 6990:
 				return 1439493639 /* GXTEntry: "Parson Boots" */;
 			case 6991:
-				return -1526669824;
+				return -1526669824 /* GXTEntry: "Oakley Boots" */;
 			case 6992:
-				return 2012775408;
+				return 2012775408 /* GXTEntry: "Oakley Boots" */;
 			case 6993:
-				return -953703891;
+				return -953703891 /* GXTEntry: "Oakley Boots" */;
 			case 6994:
-				return -171049095;
+				return -171049095 /* GXTEntry: "Oakley Boots" */;
 			case 6995:
-				return -495232812;
+				return -495232812 /* GXTEntry: "Oakley Boots" */;
 			case 6996:
-				return 273331314;
+				return 273331314 /* GXTEntry: "Oakley Boots" */;
 			case 6997:
-				return -16707105;
+				return -16707105 /* GXTEntry: "Oakley Boots" */;
 			case 6998:
-				return 741174327;
+				return 741174327 /* GXTEntry: "Oakley Boots" */;
 			case 6999:
-				return 491179626;
+				return 491179626 /* GXTEntry: "Oakley Boots" */;
 			default:
 				break;
 		}
@@ -55949,147 +55949,147 @@ int func_1357(int iParam0, int iParam1)
 		switch (iParam0)
 		{
 			case 7000:
-				return -2064081160;
+				return -2064081160 /* GXTEntry: "Oakley Boots" */;
 			case 7001:
-				return -1324965709;
+				return -1324965709 /* GXTEntry: "Rulfo Boots" */;
 			case 7002:
-				return -1540159732;
+				return -1540159732 /* GXTEntry: "Rulfo Boots" */;
 			case 7003:
-				return -712939096;
+				return -712939096 /* GXTEntry: "Rulfo Boots" */;
 			case 7004:
-				return -945369613;
+				return -945369613 /* GXTEntry: "Rulfo Boots" */;
 			case 7005:
-				return 2046767781;
+				return 2046767781 /* GXTEntry: "Rulfo Boots" */;
 			case 7006:
-				return 1767477594;
+				return 1767477594 /* GXTEntry: "Rulfo Boots" */;
 			case 7007:
-				return -1634993218;
+				return -1634993218 /* GXTEntry: "Rulfo Boots" */;
 			case 7008:
-				return -1872011395;
+				return -1872011395 /* GXTEntry: "Rulfo Boots" */;
 			case 7009:
-				return 1211715350;
+				return 1211715350 /* GXTEntry: "Rulfo Boots" */;
 			case 7010:
-				return -2006364599;
+				return -2006364599 /* GXTEntry: "Rulfo Boots" */;
 			case 7011:
-				return 892385000;
+				return 892385000 /* GXTEntry: "Salter Shoes" */;
 			case 7012:
-				return 585044549;
+				return 585044549 /* GXTEntry: "Salter Shoes" */;
 			case 7013:
-				return 1504477151;
+				return 1504477151 /* GXTEntry: "Salter Shoes" */;
 			case 7014:
-				return -755928473;
+				return -755928473 /* GXTEntry: "Salter Shoes" */;
 			case 7015:
-				return -911056919;
+				return -911056919 /* GXTEntry: "Salter Shoes" */;
 			case 7016:
-				return -145605844;
+				return -145605844 /* GXTEntry: "Salter Shoes" */;
 			case 7017:
-				return -636616540;
+				return -636616540 /* GXTEntry: "Salter Shoes" */;
 			case 7018:
-				return 1607142428;
+				return 1607142428 /* GXTEntry: "Salter Shoes" */;
 			case 7019:
-				return -1903498853;
+				return -1903498853 /* GXTEntry: "Salter Shoes" */;
 			case 7020:
-				return -328522618;
+				return -328522618 /* GXTEntry: "Salter Shoes" */;
 			case 7021:
-				return 449252739;
+				return 449252739 /* GXTEntry: "Kelley Boots" */;
 			case 7022:
-				return -2029066731;
+				return -2029066731 /* GXTEntry: "Kelley Boots" */;
 			case 7023:
-				return -1384140042;
+				return -1384140042 /* GXTEntry: "Kelley Boots" */;
 			case 7024:
-				return -1684828386;
+				return -1684828386 /* GXTEntry: "Kelley Boots" */;
 			case 7025:
-				return -775324791;
+				return -775324791 /* GXTEntry: "Kelley Boots" */;
 			case 7026:
-				return -1103604633;
+				return -1103604633 /* GXTEntry: "Kelley Boots" */;
 			case 7027:
-				return 75063528;
+				return 75063528 /* GXTEntry: "Kelley Boots" */;
 			case 7028:
-				return -297126774;
+				return -297126774 /* GXTEntry: "Kelley Boots" */;
 			case 7029:
-				return -1541201903;
+				return -1541201903 /* GXTEntry: "Kelley Boots" */;
 			case 7030:
-				return -806848273;
+				return -806848273 /* GXTEntry: "Kelley Boots" */;
 			case 7031:
-				return 417481487;
+				return 417481487 /* GXTEntry: "Hardie Boots" */;
 			case 7032:
-				return 166503716;
+				return 166503716 /* GXTEntry: "Hardie Boots" */;
 			case 7033:
-				return 62363834;
+				return 62363834 /* GXTEntry: "Hardie Boots" */;
 			case 7034:
-				return 1675614505;
+				return 1675614505 /* GXTEntry: "Hardie Boots" */;
 			case 7035:
-				return 1771496599;
+				return 1771496599 /* GXTEntry: "Hardie Boots" */;
 			case 7036:
-				return 1086722806;
+				return 1086722806 /* GXTEntry: "Hardie Boots" */;
 			case 7037:
-				return 1451245162;
+				return 1451245162 /* GXTEntry: "Hardie Boots" */;
 			case 7038:
-				return -1659155553;
+				return -1659155553 /* GXTEntry: "Hardie Boots" */;
 			case 7039:
-				return -1023895715;
+				return -1023895715 /* GXTEntry: "Hardie Boots" */;
 			case 7040:
-				return -405151801;
+				return -405151801 /* GXTEntry: "Hardie Boots" */;
 			case 7041:
-				return -1537068173;
+				return -1537068173 /* GXTEntry: "Pico Sandals" */;
 			case 7042:
-				return -98705691;
+				return -98705691 /* GXTEntry: "Pico Sandals" */;
 			case 7043:
-				return -973244759;
+				return -973244759 /* GXTEntry: "Pico Sandals" */;
 			case 7044:
-				return -1773267125;
+				return -1773267125 /* GXTEntry: "Pico Sandals" */;
 			case 7045:
-				return 1284506576;
+				return 1284506576 /* GXTEntry: "Pico Sandals" */;
 			case 7046:
-				return 1593780398;
+				return 1593780398 /* GXTEntry: "Pico Sandals" */;
 			case 7047:
-				return 1461360865;
+				return 1461360865 /* GXTEntry: "Pico Sandals" */;
 			case 7048:
-				return 1564910905;
+				return 1564910905 /* GXTEntry: "Pico Sandals" */;
 			case 7049:
-				return 1938379198;
+				return 1938379198 /* GXTEntry: "Pico Sandals" */;
 			case 7050:
-				return 69628374;
+				return 69628374 /* GXTEntry: "Pico Sandals" */;
 			case 7051:
-				return 664437772;
+				return 664437772 /* GXTEntry: "Brindille Shoes" */;
 			case 7052:
-				return -267348743;
+				return -267348743 /* GXTEntry: "Brindille Shoes" */;
 			case 7053:
-				return -12176540;
+				return -12176540 /* GXTEntry: "Brindille Shoes" */;
 			case 7054:
-				return 345333250;
+				return 345333250 /* GXTEntry: "Brindille Shoes" */;
 			case 7055:
-				return 586414783;
+				return 586414783 /* GXTEntry: "Brindille Shoes" */;
 			case 7056:
-				return -1494416721;
+				return -1494416721 /* GXTEntry: "Brindille Shoes" */;
 			case 7057:
-				return -1238458062;
+				return -1238458062 /* GXTEntry: "Brindille Shoes" */;
 			case 7058:
-				return -866136684;
+				return -866136684 /* GXTEntry: "Brindille Shoes" */;
 			case 7059:
-				return -641046423;
+				return -641046423 /* GXTEntry: "Brindille Shoes" */;
 			case 7060:
-				return -658382052;
+				return -658382052 /* GXTEntry: "Brindille Shoes" */;
 			case 7061:
-				return -1086872743;
+				return -1086872743 /* GXTEntry: "Treadway Boots" */;
 			case 7062:
-				return -1348664284;
+				return -1348664284 /* GXTEntry: "Treadway Boots" */;
 			case 7063:
-				return 819955375;
+				return 819955375 /* GXTEntry: "Treadway Boots" */;
 			case 7064:
-				return 1663429435;
+				return 1663429435 /* GXTEntry: "Treadway Boots" */;
 			case 7065:
-				return 107164079;
+				return 107164079 /* GXTEntry: "Treadway Boots" */;
 			case 7066:
-				return -158035438;
+				return -158035438 /* GXTEntry: "Treadway Boots" */;
 			case 7067:
-				return 2016744793;
+				return 2016744793 /* GXTEntry: "Treadway Boots" */;
 			case 7068:
-				return -1435534899;
+				return -1435534899 /* GXTEntry: "Treadway Boots" */;
 			case 7069:
-				return -1652039682;
+				return -1652039682 /* GXTEntry: "Treadway Boots" */;
 			case 7070:
-				return -1380090051;
+				return -1380090051 /* GXTEntry: "Treadway Boots" */;
 			case 7071:
 				return -835690811;
 			case 7072:
@@ -56253,21 +56253,21 @@ int func_1357(int iParam0, int iParam1)
 			case 7151:
 				return 1936151422 /* GXTEntry: "Fishing Buckle" */;
 			case 7152:
-				return -334982892;
+				return -334982892 /* GXTEntry: "Seasoned Moonshiner Buckle" */;
 			case 7153:
-				return 1694395911;
+				return 1694395911 /* GXTEntry: "Bootlegger Buckle" */;
 			case 7154:
-				return -1935493453;
+				return -1935493453 /* GXTEntry: "Inebriated Buckle" */;
 			case 7155:
-				return 1895307038;
+				return 1895307038 /* GXTEntry: "Liquor Seller Buckle" */;
 			case 7156:
-				return 1451564543;
+				return 1451564543 /* GXTEntry: "Moonshiner Buckle" */;
 			case 7157:
-				return -519365569;
+				return -519365569 /* GXTEntry: "Brewer Buckle" */;
 			case 7158:
 				return 734843220;
 			case 7159:
-				return -821602767;
+				return -821602767 /* GXTEntry: "Bartender Buckle" */;
 			case 7160:
 				return -1444796230 /* GXTEntry: "Leader Buckle" */;
 			case 7161:
@@ -56367,7 +56367,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7208:
 				return 1476129947 /* GXTEntry: "Shady Buckle" */;
 			case 7209:
-				return 2115650153;
+				return 2115650153 /* GXTEntry: "Bar Crawl Buckle" */;
 			case 7210:
 				return -107268913 /* GXTEntry: "Seasoned Trader Buckle" */;
 			case 7211:
@@ -56525,7 +56525,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7287:
 				return 1949044913 /* GXTEntry: "Durham Coat" */;
 			case 7288:
-				return 2129537449;
+				return 2129537449 /* GXTEntry: "Durham Coat" */;
 			case 7289:
 				return 1571735745 /* GXTEntry: "Finley Jacket" */;
 			case 7290:
@@ -56587,65 +56587,65 @@ int func_1357(int iParam0, int iParam1)
 			case 7318:
 				return -1145059710 /* GXTEntry: "Cinched Jacket" */;
 			case 7319:
-				return 1133022400;
+				return 1133022400 /* GXTEntry: "Macbay Jacket" */;
 			case 7320:
-				return -293739868;
+				return -293739868 /* GXTEntry: "Macbay Jacket" */;
 			case 7321:
-				return -640173736;
+				return -640173736 /* GXTEntry: "Macbay Jacket" */;
 			case 7322:
-				return -1833653485;
+				return -1833653485 /* GXTEntry: "Macbay Jacket" */;
 			case 7323:
-				return -463614364;
+				return -463614364 /* GXTEntry: "Macbay Jacket" */;
 			case 7324:
-				return 123671654;
+				return 123671654 /* GXTEntry: "Macbay Jacket" */;
 			case 7325:
-				return 320023502;
+				return 320023502 /* GXTEntry: "Macbay Jacket" */;
 			case 7326:
-				return 733535513;
+				return 733535513 /* GXTEntry: "Macbay Jacket" */;
 			case 7327:
-				return 898101431;
+				return 898101431 /* GXTEntry: "Macbay Jacket" */;
 			case 7328:
-				return 1760376617;
+				return 1760376617 /* GXTEntry: "Macbay Jacket" */;
 			case 7329:
-				return 882667579;
+				return 882667579 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7330:
-				return -749490773;
+				return -749490773 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7331:
-				return -518174402;
+				return -518174402 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7332:
-				return -237704531;
+				return -237704531 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7333:
-				return 1886513125;
+				return 1886513125 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7334:
-				return -28343390;
+				return -28343390 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7335:
-				return 451198156;
+				return 451198156 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7336:
-				return 682514527;
+				return 682514527 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7337:
-				return -1293423408;
+				return -1293423408 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7338:
-				return -688770040;
+				return -688770040 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 7339:
-				return 761551698;
+				return 761551698 /* GXTEntry: "Leavitt Jacket" */;
 			case 7340:
-				return 304424148;
+				return 304424148 /* GXTEntry: "Leavitt Jacket" */;
 			case 7341:
-				return -2064309;
+				return -2064309 /* GXTEntry: "Leavitt Jacket" */;
 			case 7342:
-				return -155554305;
+				return -155554305 /* GXTEntry: "Leavitt Jacket" */;
 			case 7343:
-				return 1990979040;
+				return 1990979040 /* GXTEntry: "Leavitt Jacket" */;
 			case 7344:
-				return 1685211501;
+				return 1685211501 /* GXTEntry: "Leavitt Jacket" */;
 			case 7345:
-				return 1228542717;
+				return 1228542717 /* GXTEntry: "Leavitt Jacket" */;
 			case 7346:
-				return 1055915625;
+				return 1055915625 /* GXTEntry: "Leavitt Jacket" */;
 			case 7347:
-				return 2142699518;
+				return 2142699518 /* GXTEntry: "Leavitt Jacket" */;
 			case 7348:
-				return -536068241;
+				return -536068241 /* GXTEntry: "Leavitt Jacket" */;
 			case 7349:
 				return -945794636 /* GXTEntry: "Antoine Jacket" */;
 			case 7350:
@@ -56779,7 +56779,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7414:
 				return -1846710300 /* GXTEntry: "Classic Frock Coat" */;
 			case 7415:
-				return 2142227305;
+				return 2142227305 /* GXTEntry: "Classic Frock Coat" */;
 			case 7416:
 				return -975841248 /* GXTEntry: "Classic Frock Coat" */;
 			case 7417:
@@ -57083,11 +57083,11 @@ int func_1357(int iParam0, int iParam1)
 			case 7566:
 				return 785361105 /* GXTEntry: "Morning Tail Coat" */;
 			case 7567:
-				return 2115127125;
+				return 2115127125 /* GXTEntry: "Morning Tail Coat" */;
 			case 7568:
 				return -2008130299 /* GXTEntry: "Morning Tail Coat" */;
 			case 7569:
-				return 2138981284;
+				return 2138981284 /* GXTEntry: "Riggs Fringe Coat" */;
 			case 7570:
 				return 2057124322 /* GXTEntry: "Riggs Fringe Coat" */;
 			case 7571:
@@ -57145,7 +57145,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7597:
 				return 1410612770 /* GXTEntry: "Clymene Coat" */;
 			case 7598:
-				return 2121074207;
+				return 2121074207 /* GXTEntry: "Clymene Coat" */;
 			case 7599:
 				return -769381807 /* GXTEntry: "Torranca Coat" */;
 			case 7600:
@@ -57227,45 +57227,45 @@ int func_1357(int iParam0, int iParam1)
 			case 7638:
 				return 1437784618 /* GXTEntry: "Fulbright Coat" */;
 			case 7639:
-				return 1519469733;
+				return 1519469733 /* GXTEntry: "Walden Coat" */;
 			case 7640:
-				return 1750786104;
+				return 1750786104 /* GXTEntry: "Walden Coat" */;
 			case 7641:
-				return 839709597;
+				return 839709597 /* GXTEntry: "Walden Coat" */;
 			case 7642:
-				return 1205018409;
+				return 1205018409 /* GXTEntry: "Walden Coat" */;
 			case 7643:
-				return 227551908;
+				return 227551908 /* GXTEntry: "Walden Coat" */;
 			case 7644:
-				return 589256130;
+				return 589256130 /* GXTEntry: "Walden Coat" */;
 			case 7645:
-				return -385523317;
+				return -385523317 /* GXTEntry: "Walden Coat" */;
 			case 7646:
-				return -22180641;
+				return -22180641 /* GXTEntry: "Walden Coat" */;
 			case 7647:
-				return -998598538;
+				return -998598538 /* GXTEntry: "Walden Coat" */;
 			case 7648:
-				return 957542729;
+				return 957542729 /* GXTEntry: "Walden Coat" */;
 			case 7649:
-				return 716387439;
+				return 716387439 /* GXTEntry: "Clairborn Coat" */;
 			case 7650:
-				return -253280040;
+				return -253280040 /* GXTEntry: "Clairborn Coat" */;
 			case 7651:
-				return 256736676;
+				return 256736676 /* GXTEntry: "Clairborn Coat" */;
 			case 7652:
-				return 1672160870;
+				return 1672160870 /* GXTEntry: "Clairborn Coat" */;
 			case 7653:
-				return 1934542253;
+				return 1934542253 /* GXTEntry: "Clairborn Coat" */;
 			case 7654:
-				return 1212968865;
+				return 1212968865 /* GXTEntry: "Clairborn Coat" */;
 			case 7655:
-				return 1445137238;
+				return 1445137238 /* GXTEntry: "Clairborn Coat" */;
 			case 7656:
-				return -2082773310;
+				return -2082773310 /* GXTEntry: "Clairborn Coat" */;
 			case 7657:
-				return -1853685231;
+				return -1853685231 /* GXTEntry: "Clairborn Coat" */;
 			case 7658:
-				return -758905346;
+				return -758905346 /* GXTEntry: "Clairborn Coat" */;
 			case 7659:
 				return -2110134463 /* GXTEntry: "Grinder Boots" */;
 			case 7660:
@@ -57873,17 +57873,17 @@ int func_1357(int iParam0, int iParam1)
 			case 7961:
 				return joaat("clothing_item_m_eyewear_002_tint_001");
 			case 7962:
-				return 1402367803;
+				return 1402367803 /* GXTEntry: "Savatier Monocle" */;
 			case 7963:
-				return 492831439;
+				return 492831439 /* GXTEntry: "Savatier Monocle" */;
 			case 7964:
-				return 795256540;
+				return 795256540 /* GXTEntry: "Savatier Monocle" */;
 			case 7965:
-				return 2034383494;
+				return 2034383494 /* GXTEntry: "Savatier Monocle" */;
 			case 7966:
-				return -1963467279;
+				return -1963467279 /* GXTEntry: "Savatier Monocle" */;
 			case 7967:
-				return 1950593173;
+				return 1950593173 /* GXTEntry: "Savatier Monocle" */;
 			case 7968:
 				return joaat("clothing_item_m_frontier_boots_000");
 			case 7969:
@@ -58131,17 +58131,17 @@ int func_1357(int iParam0, int iParam1)
 			case 8084:
 				return -2142889180 /* GXTEntry: "Avery Gloves" */;
 			case 8085:
-				return 1657329436;
+				return 1657329436 /* GXTEntry: "Holme Gloves" */;
 			case 8086:
-				return 1435483306;
+				return 1435483306 /* GXTEntry: "Holme Gloves" */;
 			case 8087:
-				return 1185816295;
+				return 1185816295 /* GXTEntry: "Holme Gloves" */;
 			case 8088:
-				return 890010532;
+				return 890010532 /* GXTEntry: "Holme Gloves" */;
 			case 8089:
-				return 170730982;
+				return 170730982 /* GXTEntry: "Holme Gloves" */;
 			case 8090:
-				return -125402471;
+				return -125402471 /* GXTEntry: "Holme Gloves" */;
 			case 8091:
 				return 795591403 /* GXTEntry: "Gunslinger Gun Belt" */;
 			case 8092:
@@ -58247,17 +58247,17 @@ int func_1357(int iParam0, int iParam1)
 			case 8142:
 				return -1435225965 /* GXTEntry: "Sharpshooter Gun Belt" */;
 			case 8143:
-				return -1313955174;
+				return -1313955174 /* GXTEntry: "Nevin Hipflask" */;
 			case 8144:
-				return -805839060;
+				return -805839060 /* GXTEntry: "Nevin Hipflask" */;
 			case 8145:
-				return 657657249;
+				return 657657249 /* GXTEntry: "Nevin Hipflask" */;
 			case 8146:
-				return 888711468;
+				return 888711468 /* GXTEntry: "Nevin Hipflask" */;
 			case 8147:
-				return -72075612;
+				return -72075612 /* GXTEntry: "Nevin Hipflask" */;
 			case 8148:
-				return 158519841;
+				return 158519841 /* GXTEntry: "Nevin Hipflask" */;
 			case 8149:
 				return joaat("clothing_item_m_hair_001_blonde");
 			case 8150:
@@ -59367,7 +59367,7 @@ int func_1357(int iParam0, int iParam1)
 			case 8702:
 				return 1929386145 /* GXTEntry: "Western Hat" */;
 			case 8703:
-				return 2133964551;
+				return 2133964551 /* GXTEntry: "Western Homburg Hat" */;
 			case 8704:
 				return -1725371659 /* GXTEntry: "Western Homburg Hat" */;
 			case 8705:
@@ -59407,7 +59407,7 @@ int func_1357(int iParam0, int iParam1)
 			case 8722:
 				return 1858362114 /* GXTEntry: "Drifter Hat" */;
 			case 8723:
-				return 2127231759;
+				return 2127231759 /* GXTEntry: "Drifter Hat" */;
 			case 8724:
 				return 1101037755 /* GXTEntry: "Drifter Hat" */;
 			case 8725:
@@ -59517,7 +59517,7 @@ int func_1357(int iParam0, int iParam1)
 			case 8777:
 				return 391238447 /* GXTEntry: "Cutter Hat" */;
 			case 8778:
-				return 2132353736;
+				return 2132353736 /* GXTEntry: "Cutter Hat" */;
 			case 8779:
 				return 1919945078 /* GXTEntry: "Cutter Hat" */;
 			case 8780:
@@ -59639,7 +59639,7 @@ int func_1357(int iParam0, int iParam1)
 			case 8838:
 				return 1140426817 /* GXTEntry: "Diamondback Hat" */;
 			case 8839:
-				return 2120973604;
+				return 2120973604 /* GXTEntry: "Diamondback Hat" */;
 			case 8840:
 				return 1756713400 /* GXTEntry: "Diamondback Hat" */;
 			case 8841:
@@ -59873,7 +59873,7 @@ int func_1357(int iParam0, int iParam1)
 			case 8955:
 				return -1452130997 /* GXTEntry: "Common Flat Cap" */;
 			case 8956:
-				return 2144242617;
+				return 2144242617 /* GXTEntry: "Descoteaux Hat" */;
 			case 8957:
 				return -1352111380 /* GXTEntry: "Descoteaux Hat" */;
 			case 8958:
@@ -60237,219 +60237,219 @@ int func_1357(int iParam0, int iParam1)
 			case 9131:
 				return -1285597992 /* GXTEntry: "Bartley Cap" */;
 			case 9132:
-				return -110565216;
+				return -110565216 /* GXTEntry: "Baldock Hat" */;
 			case 9133:
-				return -927824076;
+				return -927824076 /* GXTEntry: "Baldock Hat" */;
 			case 9134:
-				return -1646481015;
+				return -1646481015 /* GXTEntry: "Baldock Hat" */;
 			case 9135:
-				return -349156305;
+				return -349156305 /* GXTEntry: "Baldock Hat" */;
 			case 9136:
-				return -704568883;
+				return -704568883 /* GXTEntry: "Baldock Hat" */;
 			case 9137:
-				return 1127283759;
+				return 1127283759 /* GXTEntry: "Baldock Hat" */;
 			case 9138:
-				return -130652617;
+				return -130652617 /* GXTEntry: "Baldock Hat" */;
 			case 9139:
-				return -944011966;
+				return -944011966 /* GXTEntry: "Baldock Hat" */;
 			case 9140:
-				return 1825034076;
+				return 1825034076 /* GXTEntry: "Baldock Hat" */;
 			case 9141:
-				return -438303497;
+				return -438303497 /* GXTEntry: "Baldock Hat" */;
 			case 9142:
-				return -1322033825;
+				return -1322033825 /* GXTEntry: "Buckley Hat" */;
 			case 9143:
-				return 1610562296;
+				return 1610562296 /* GXTEntry: "Buckley Hat" */;
 			case 9144:
-				return 1313675156;
+				return 1313675156 /* GXTEntry: "Buckley Hat" */;
 			case 9145:
-				return 1945920242;
+				return 1945920242 /* GXTEntry: "Buckley Hat" */;
 			case 9146:
-				return 2051698570;
+				return 2051698570 /* GXTEntry: "Buckley Hat" */;
 			case 9147:
-				return 1748487013;
+				return 1748487013 /* GXTEntry: "Buckley Hat" */;
 			case 9148:
-				return 367339201;
+				return 367339201 /* GXTEntry: "Buckley Hat" */;
 			case 9149:
-				return 60391978;
+				return 60391978 /* GXTEntry: "Buckley Hat" */;
 			case 9150:
-				return 1098055132;
+				return 1098055132 /* GXTEntry: "Buckley Hat" */;
 			case 9151:
-				return 811359411;
+				return 811359411 /* GXTEntry: "Buckley Hat" */;
 			case 9152:
-				return 872570198;
+				return 872570198 /* GXTEntry: "Charleston Top Hat" */;
 			case 9153:
-				return 1126497179;
+				return 1126497179 /* GXTEntry: "Charleston Top Hat" */;
 			case 9154:
-				return 141461039;
+				return 141461039 /* GXTEntry: "Charleston Top Hat" */;
 			case 9155:
-				return 394798178;
+				return 394798178 /* GXTEntry: "Charleston Top Hat" */;
 			case 9156:
-				return 1827393320;
+				return 1827393320 /* GXTEntry: "Charleston Top Hat" */;
 			case 9157:
-				return 2082631061;
+				return 2082631061 /* GXTEntry: "Charleston Top Hat" */;
 			case 9158:
-				return 1231063058;
+				return 1231063058 /* GXTEntry: "Charleston Top Hat" */;
 			case 9159:
-				return -1332849040;
+				return -1332849040 /* GXTEntry: "Charleston Top Hat" */;
 			case 9160:
-				return -1108086469;
+				return -1108086469 /* GXTEntry: "Charleston Top Hat" */;
 			case 9161:
-				return -1410872337;
+				return -1410872337 /* GXTEntry: "Charleston Top Hat" */;
 			case 9162:
-				return 822678296;
+				return 822678296 /* GXTEntry: "Lister Hat" */;
 			case 9163:
-				return 1101050951;
+				return 1101050951 /* GXTEntry: "Lister Hat" */;
 			case 9164:
-				return 1415502275;
+				return 1415502275 /* GXTEntry: "Lister Hat" */;
 			case 9165:
-				return 1685682680;
+				return 1685682680 /* GXTEntry: "Lister Hat" */;
 			case 9166:
-				return 1983126893;
+				return 1983126893 /* GXTEntry: "Lister Hat" */;
 			case 9167:
-				return 2060854961;
+				return 2060854961 /* GXTEntry: "Lister Hat" */;
 			case 9168:
-				return -1936176587;
+				return -1936176587 /* GXTEntry: "Lister Hat" */;
 			case 9169:
-				return -1342664455;
+				return -1342664455 /* GXTEntry: "Lister Hat" */;
 			case 9170:
-				return -1046596540;
+				return -1046596540 /* GXTEntry: "Lister Hat" */;
 			case 9171:
-				return 817764094;
+				return 817764094 /* GXTEntry: "Lister Hat" */;
 			case 9172:
-				return -1940729418;
+				return -1940729418 /* GXTEntry: "Reaves Top Hat" */;
 			case 9173:
-				return -1641712293;
+				return -1641712293 /* GXTEntry: "Reaves Top Hat" */;
 			case 9174:
-				return -629412329;
+				return -629412329 /* GXTEntry: "Reaves Top Hat" */;
 			case 9175:
-				return 2084188549;
+				return 2084188549 /* GXTEntry: "Reaves Top Hat" */;
 			case 9176:
-				return -1224333524;
+				return -1224333524 /* GXTEntry: "Reaves Top Hat" */;
 			case 9177:
-				return -919319672;
+				return -919319672 /* GXTEntry: "Reaves Top Hat" */;
 			case 9178:
-				return 355328890;
+				return 355328890 /* GXTEntry: "Reaves Top Hat" */;
 			case 9179:
-				return -1486911521;
+				return -1486911521 /* GXTEntry: "Reaves Top Hat" */;
 			case 9180:
-				return -39734174;
+				return -39734174 /* GXTEntry: "Reaves Top Hat" */;
 			case 9181:
-				return 2040935557;
+				return 2040935557 /* GXTEntry: "Reaves Top Hat" */;
 			case 9182:
-				return 1395931877;
+				return 1395931877 /* GXTEntry: "Menasco Hat" */;
 			case 9183:
-				return 1166974874;
+				return 1166974874 /* GXTEntry: "Menasco Hat" */;
 			case 9184:
-				return 2039482272;
+				return 2039482272 /* GXTEntry: "Menasco Hat" */;
 			case 9185:
-				return -1577428876;
+				return -1577428876 /* GXTEntry: "Menasco Hat" */;
 			case 9186:
-				return -600290065;
+				return -600290065 /* GXTEntry: "Menasco Hat" */;
 			case 9187:
-				return -2040225463;
+				return -2040225463 /* GXTEntry: "Menasco Hat" */;
 			case 9188:
-				return -1167390379;
+				return -1167390379 /* GXTEntry: "Menasco Hat" */;
 			case 9189:
-				return -333681481;
+				return -333681481 /* GXTEntry: "Menasco Hat" */;
 			case 9190:
-				return 530568121;
+				return 530568121 /* GXTEntry: "Menasco Hat" */;
 			case 9191:
-				return -910743299;
+				return -910743299 /* GXTEntry: "Menasco Hat" */;
 			case 9192:
-				return 1846603510;
+				return 1846603510 /* GXTEntry: "Boutell Hat" */;
 			case 9193:
-				return 1327935778;
+				return 1327935778 /* GXTEntry: "Boutell Hat" */;
 			case 9194:
-				return 465127956;
+				return 465127956 /* GXTEntry: "Boutell Hat" */;
 			case 9195:
-				return 33625764;
+				return 33625764 /* GXTEntry: "Boutell Hat" */;
 			case 9196:
-				return 924778719;
+				return 924778719 /* GXTEntry: "Boutell Hat" */;
 			case 9197:
-				return 1295396109;
+				return 1295396109 /* GXTEntry: "Boutell Hat" */;
 			case 9198:
-				return 1688001498;
+				return 1688001498 /* GXTEntry: "Boutell Hat" */;
 			case 9199:
-				return 1725620310;
+				return 1725620310 /* GXTEntry: "Boutell Hat" */;
 			case 9200:
-				return -2146004271;
+				return -2146004271 /* GXTEntry: "Boutell Hat" */;
 			case 9201:
-				return -1648211176;
+				return -1648211176 /* GXTEntry: "Boutell Hat" */;
 			case 9202:
-				return 1286685465;
+				return 1286685465 /* GXTEntry: "Birdwell Hat" */;
 			case 9203:
-				return -1998734483;
+				return -1998734483 /* GXTEntry: "Birdwell Hat" */;
 			case 9204:
-				return 2005866704;
+				return 2005866704 /* GXTEntry: "Birdwell Hat" */;
 			case 9205:
-				return -1510967918;
+				return -1510967918 /* GXTEntry: "Birdwell Hat" */;
 			case 9206:
-				return -1817259761;
+				return -1817259761 /* GXTEntry: "Birdwell Hat" */;
 			case 9207:
-				return -1346959073;
+				return -1346959073 /* GXTEntry: "Birdwell Hat" */;
 			case 9208:
-				return 647165657;
+				return 647165657 /* GXTEntry: "Birdwell Hat" */;
 			case 9209:
-				return -760754432;
+				return -760754432 /* GXTEntry: "Birdwell Hat" */;
 			case 9210:
-				return -1058395259;
+				return -1058395259 /* GXTEntry: "Birdwell Hat" */;
 			case 9211:
-				return 711162574;
+				return 711162574 /* GXTEntry: "Birdwell Hat" */;
 			case 9212:
-				return 824236613;
+				return 824236613 /* GXTEntry: "Starrett Hat" */;
 			case 9213:
-				return 536754176;
+				return 536754176 /* GXTEntry: "Starrett Hat" */;
 			case 9214:
-				return 232592318;
+				return 232592318 /* GXTEntry: "Starrett Hat" */;
 			case 9215:
-				return -1318429986;
+				return -1318429986 /* GXTEntry: "Starrett Hat" */;
 			case 9216:
-				return -1620232476;
+				return -1620232476 /* GXTEntry: "Starrett Hat" */;
 			case 9217:
-				return -1916300391;
+				return -1916300391 /* GXTEntry: "Starrett Hat" */;
 			case 9218:
-				return -75337971;
+				return -75337971 /* GXTEntry: "Starrett Hat" */;
 			case 9219:
-				return 2052385972;
+				return 2052385972 /* GXTEntry: "Starrett Hat" */;
 			case 9220:
-				return 1748650111;
+				return 1748650111 /* GXTEntry: "Starrett Hat" */;
 			case 9221:
-				return -1207507205;
+				return -1207507205 /* GXTEntry: "Starrett Hat" */;
 			case 9222:
-				return -988200110;
+				return -988200110 /* GXTEntry: "Palma Hat" */;
 			case 9223:
-				return -742072151;
+				return -742072151 /* GXTEntry: "Palma Hat" */;
 			case 9224:
-				return 1708491964;
+				return 1708491964 /* GXTEntry: "Palma Hat" */;
 			case 9225:
-				return 1640332536;
+				return 1640332536 /* GXTEntry: "Palma Hat" */;
 			case 9226:
-				return -276883347;
+				return -276883347 /* GXTEntry: "Palma Hat" */;
 			case 9227:
-				return 15711054;
+				return 15711054 /* GXTEntry: "Palma Hat" */;
 			case 9228:
-				return 120899544;
+				return 120899544 /* GXTEntry: "Palma Hat" */;
 			case 9229:
-				return 336880023;
+				return 336880023 /* GXTEntry: "Palma Hat" */;
 			case 9230:
-				return -1430155533;
+				return -1430155533 /* GXTEntry: "Palma Hat" */;
 			case 9231:
-				return -284383180;
+				return -284383180 /* GXTEntry: "Palma Hat" */;
 			case 9232:
-				return -62624282;
+				return -62624282 /* GXTEntry: "Palma Hat" */;
 			case 9233:
-				return 327329035;
+				return 327329035 /* GXTEntry: "Stuart Top Hat" */;
 			case 9234:
-				return 585384910;
+				return 585384910 /* GXTEntry: "Stuart Top Hat" */;
 			case 9235:
-				return 1336319314;
+				return 1336319314 /* GXTEntry: "Stuart Top Hat" */;
 			case 9236:
-				return 137203353;
+				return 137203353 /* GXTEntry: "Stuart Top Hat" */;
 			case 9237:
-				return 376187670;
+				return 376187670 /* GXTEntry: "Stuart Top Hat" */;
 			case 9238:
-				return 632474019;
+				return 632474019 /* GXTEntry: "Stuart Top Hat" */;
 			case 9239:
 				return joaat("clothing_item_m_head_001_v_001");
 			case 9240:
@@ -61111,7 +61111,7 @@ int func_1357(int iParam0, int iParam1)
 			case 9568:
 				return 1567260734 /* GXTEntry: "Dress Tie" */;
 			case 9569:
-				return 2116314776;
+				return 2116314776 /* GXTEntry: "Bow Tie" */;
 			case 9570:
 				return 1754413940 /* GXTEntry: "Bow Tie" */;
 			case 9571:
@@ -61389,11 +61389,11 @@ int func_1357(int iParam0, int iParam1)
 			case 9707:
 				return joaat("clothing_item_m_outlaw_pants_000");
 			case 9708:
-				return -290619872;
+				return -290619872 /* GXTEntry: "Rexroad Shirt" */;
 			case 9709:
-				return 150973636;
+				return 150973636 /* GXTEntry: "Rexroad Vest" */;
 			case 9710:
-				return 2131548326;
+				return 2131548326 /* GXTEntry: "Overalls" */;
 			case 9711:
 				return 820165715 /* GXTEntry: "Overalls" */;
 			case 9712:
@@ -61653,7 +61653,7 @@ int func_1357(int iParam0, int iParam1)
 			case 9839:
 				return -1880862856 /* GXTEntry: "Tuxedo Pants" */;
 			case 9840:
-				return 2123345103;
+				return 2123345103 /* GXTEntry: "Tuxedo Pants" */;
 			case 9841:
 				return -1306455055 /* GXTEntry: "Tuxedo Pants" */;
 			case 9842:
@@ -61719,7 +61719,7 @@ int func_1357(int iParam0, int iParam1)
 			case 9872:
 				return 1346593371 /* GXTEntry: "Tied Pants" */;
 			case 9873:
-				return 2113519047;
+				return 2113519047 /* GXTEntry: "Tied Pants" */;
 			case 9874:
 				return 864266460 /* GXTEntry: "Tied Pants" */;
 			case 9875:
@@ -61821,7 +61821,7 @@ int func_1357(int iParam0, int iParam1)
 			case 9923:
 				return 585623581 /* GXTEntry: "Hollman Pants" */;
 			case 9924:
-				return 2136252653;
+				return 2136252653 /* GXTEntry: "Hollman Pants" */;
 			case 9925:
 				return 1800154252 /* GXTEntry: "Hollman Pants" */;
 			case 9926:
@@ -61845,45 +61845,45 @@ int func_1357(int iParam0, int iParam1)
 			case 9935:
 				return 1082112684 /* GXTEntry: "Carver Pants" */;
 			case 9936:
-				return -1685777234;
+				return -1685777234 /* GXTEntry: "Martindale Pants" */;
 			case 9937:
-				return -916787111;
+				return -916787111 /* GXTEntry: "Martindale Pants" */;
 			case 9938:
-				return 1904001190;
+				return 1904001190 /* GXTEntry: "Martindale Pants" */;
 			case 9939:
-				return -1492374596;
+				return -1492374596 /* GXTEntry: "Martindale Pants" */;
 			case 9940:
-				return 1426163632;
+				return 1426163632 /* GXTEntry: "Martindale Pants" */;
 			case 9941:
-				return -2110430697;
+				return -2110430697 /* GXTEntry: "Martindale Pants" */;
 			case 9942:
-				return -2030736497;
+				return -2030736497 /* GXTEntry: "Martindale Pants" */;
 			case 9943:
-				return 2093045543;
+				return 2093045543 /* GXTEntry: "Martindale Pants" */;
 			case 9944:
-				return 1651876496;
+				return 1651876496 /* GXTEntry: "Martindale Pants" */;
 			case 9945:
-				return 725366018;
+				return 725366018 /* GXTEntry: "Martindale Pants" */;
 			case 9946:
-				return 1291746587;
+				return 1291746587 /* GXTEntry: "McCrum Pants" */;
 			case 9947:
-				return -1034655807;
+				return -1034655807 /* GXTEntry: "McCrum Pants" */;
 			case 9948:
-				return -1271575677;
+				return -1271575677 /* GXTEntry: "McCrum Pants" */;
 			case 9949:
-				return -436523242;
+				return -436523242 /* GXTEntry: "McCrum Pants" */;
 			case 9950:
-				return 113471654;
+				return 113471654 /* GXTEntry: "McCrum Pants" */;
 			case 9951:
-				return -1991576145;
+				return -1991576145 /* GXTEntry: "McCrum Pants" */;
 			case 9952:
-				return 2070796789;
+				return 2070796789 /* GXTEntry: "McCrum Pants" */;
 			case 9953:
-				return -1391215296;
+				return -1391215296 /* GXTEntry: "McCrum Pants" */;
 			case 9954:
-				return -1852733892;
+				return -1852733892 /* GXTEntry: "McCrum Pants" */;
 			case 9955:
-				return 1986170143;
+				return 1986170143 /* GXTEntry: "McCrum Pants" */;
 			case 9956:
 				return -1093362286 /* GXTEntry: "Chuparosa Poncho" */;
 			case 9957:
@@ -61933,7 +61933,7 @@ int func_1357(int iParam0, int iParam1)
 			case 9979:
 				return -1572986539 /* GXTEntry: "Manstilla Poncho" */;
 			case 9980:
-				return 2131024611;
+				return 2131024611 /* GXTEntry: "Manstilla Poncho" */;
 			case 9981:
 				return -1935542755 /* GXTEntry: "Manstilla Poncho" */;
 			case 9982:
@@ -61997,45 +61997,45 @@ int func_1357(int iParam0, int iParam1)
 			case 10005:
 				return 2061646107 /* GXTEntry: "Cardenas Poncho" */;
 			case 10006:
-				return 1723647080;
+				return 1723647080 /* GXTEntry: "Torras Poncho" */;
 			case 10007:
-				return 1450845155;
+				return 1450845155 /* GXTEntry: "Torras Poncho" */;
 			case 10008:
-				return 1386159149;
+				return 1386159149 /* GXTEntry: "Torras Poncho" */;
 			case 10009:
-				return -1055098582;
+				return -1055098582 /* GXTEntry: "Torras Poncho" */;
 			case 10010:
-				return -1359325978;
+				return -1359325978 /* GXTEntry: "Torras Poncho" */;
 			case 10011:
-				return -1665027979;
+				return -1665027979 /* GXTEntry: "Torras Poncho" */;
 			case 10012:
-				return -107255257;
+				return -107255257 /* GXTEntry: "Torras Poncho" */;
 			case 10013:
-				return -397129831;
+				return -397129831 /* GXTEntry: "Torras Poncho" */;
 			case 10014:
-				return -1586316849;
+				return -1586316849 /* GXTEntry: "Torras Poncho" */;
 			case 10015:
-				return -164403557;
+				return -164403557 /* GXTEntry: "Torras Poncho" */;
 			case 10016:
-				return 1548618123;
+				return 1548618123 /* GXTEntry: "Guerra Poncho" */;
 			case 10017:
-				return 1782850935;
+				return 1782850935 /* GXTEntry: "Guerra Poncho" */;
 			case 10018:
-				return -2032640353;
+				return -2032640353 /* GXTEntry: "Guerra Poncho" */;
 			case 10019:
-				return -1764622702;
+				return -1764622702 /* GXTEntry: "Guerra Poncho" */;
 			case 10020:
-				return -1533699563;
+				return -1533699563 /* GXTEntry: "Guerra Poncho" */;
 			case 10021:
-				return -1286096999;
+				return -1286096999 /* GXTEntry: "Guerra Poncho" */;
 			case 10022:
-				return -1055894774;
+				return -1055894774 /* GXTEntry: "Guerra Poncho" */;
 			case 10023:
-				return -1146533824;
+				return -1146533824 /* GXTEntry: "Guerra Poncho" */;
 			case 10024:
-				return -897030658;
+				return -897030658 /* GXTEntry: "Guerra Poncho" */;
 			case 10025:
-				return 1595346993;
+				return 1595346993 /* GXTEntry: "Guerra Poncho" */;
 			case 10026:
 				return joaat("clothing_item_m_poncho_007_tint_001");
 			case 10027:
@@ -62161,37 +62161,37 @@ int func_1357(int iParam0, int iParam1)
 			case 10087:
 				return -706829373;
 			case 10088:
-				return -1488280002;
+				return -1488280002 /* GXTEntry: "Haraway Boots" */;
 			case 10089:
-				return 1215682028;
+				return 1215682028 /* GXTEntry: "Haraway Hat" */;
 			case 10090:
-				return 65060921;
+				return 65060921 /* GXTEntry: "Haraway Neckwear" */;
 			case 10091:
-				return -1962699235;
+				return -1962699235 /* GXTEntry: "Haraway Pants" */;
 			case 10092:
-				return 175682292;
+				return 175682292 /* GXTEntry: "Haraway Shirt" */;
 			case 10093:
-				return 1432789896;
+				return 1432789896 /* GXTEntry: "Haraway Spurs" */;
 			case 10094:
-				return -73797284;
+				return -73797284 /* GXTEntry: "Haraway Suspenders" */;
 			case 10095:
-				return 836717178;
+				return 836717178 /* GXTEntry: "Clelland Belt" */;
 			case 10096:
-				return -2055551475;
+				return -2055551475 /* GXTEntry: "Clelland Boots" */;
 			case 10097:
-				return -124348917;
+				return -124348917 /* GXTEntry: "Clelland Gloves" */;
 			case 10098:
-				return 1404270193;
+				return 1404270193 /* GXTEntry: "Clelland Hat" */;
 			case 10099:
-				return -239124694;
+				return -239124694 /* GXTEntry: "Clelland Neckwear" */;
 			case 10100:
-				return 1827590720;
+				return 1827590720 /* GXTEntry: "Clelland Pants" */;
 			case 10101:
-				return -1699947436;
+				return -1699947436 /* GXTEntry: "Clelland Shirt" */;
 			case 10102:
-				return -63039269;
+				return -63039269 /* GXTEntry: "Clelland Spurs" */;
 			case 10103:
-				return 978613705;
+				return 978613705 /* GXTEntry: "Clelland Vest" */;
 			case 10104:
 				return 519222947;
 			case 10105:
@@ -62245,7 +62245,7 @@ int func_1357(int iParam0, int iParam1)
 			case 10129:
 				return 1794196277 /* GXTEntry: "Everyday Shirt" */;
 			case 10130:
-				return 2140040303;
+				return 2140040303 /* GXTEntry: "Everyday Shirt" */;
 			case 10131:
 				return 781827183 /* GXTEntry: "Everyday Shirt" */;
 			case 10132:
@@ -62539,7 +62539,7 @@ int func_1357(int iParam0, int iParam1)
 			case 10276:
 				return joaat("clothing_item_m_shirt_009_tint_005");
 			case 10277:
-				return 2125786382;
+				return 2125786382 /* GXTEntry: "Wool Shirt" */;
 			case 10278:
 				return -729147205 /* GXTEntry: "Wool Shirt" */;
 			case 10279:
@@ -62663,7 +62663,7 @@ int func_1357(int iParam0, int iParam1)
 			case 10338:
 				return 724941984 /* GXTEntry: "Chaftin Shirt" */;
 			case 10339:
-				return 2125095824;
+				return 2125095824 /* GXTEntry: "Chaftin Shirt" */;
 			case 10340:
 				return 1886963501 /* GXTEntry: "Chaftin Shirt" */;
 			case 10341:
@@ -62729,65 +62729,65 @@ int func_1357(int iParam0, int iParam1)
 			case 10371:
 				return 1583400855 /* GXTEntry: "Olmo Shirt" */;
 			case 10372:
-				return 1423458324;
+				return 1423458324 /* GXTEntry: "Caugherty Shirt" */;
 			case 10373:
-				return 1729291401;
+				return 1729291401 /* GXTEntry: "Caugherty Shirt" */;
 			case 10374:
-				return 309082937;
+				return 309082937 /* GXTEntry: "Caugherty Shirt" */;
 			case 10375:
-				return 576051980;
+				return 576051980 /* GXTEntry: "Caugherty Shirt" */;
 			case 10376:
-				return 884965343;
+				return 884965343 /* GXTEntry: "Caugherty Shirt" */;
 			case 10377:
-				return -1108045237;
+				return -1108045237 /* GXTEntry: "Caugherty Shirt" */;
 			case 10378:
-				return -915756745;
+				return -915756745 /* GXTEntry: "Caugherty Shirt" */;
 			case 10379:
-				return -227968204;
+				return -227968204 /* GXTEntry: "Caugherty Shirt" */;
 			case 10380:
-				return -2070405225;
+				return -2070405225 /* GXTEntry: "Caugherty Shirt" */;
 			case 10381:
-				return 1685906725;
+				return 1685906725 /* GXTEntry: "Caugherty Shirt" */;
 			case 10382:
-				return -1351602932;
+				return -1351602932 /* GXTEntry: "Stringham Shirt" */;
 			case 10383:
-				return -1109472791;
+				return -1109472791 /* GXTEntry: "Stringham Shirt" */;
 			case 10384:
-				return -889854953;
+				return -889854953 /* GXTEntry: "Stringham Shirt" */;
 			case 10385:
-				return -1658877837;
+				return -1658877837 /* GXTEntry: "Stringham Shirt" */;
 			case 10386:
-				return -1411996191;
+				return -1411996191 /* GXTEntry: "Stringham Shirt" */;
 			case 10387:
-				return -1180679820;
+				return -1180679820 /* GXTEntry: "Stringham Shirt" */;
 			case 10388:
-				return -430400796;
+				return -430400796 /* GXTEntry: "Stringham Shirt" */;
 			case 10389:
-				return -200100264;
+				return -200100264 /* GXTEntry: "Stringham Shirt" */;
 			case 10390:
-				return 47469531;
+				return 47469531 /* GXTEntry: "Stringham Shirt" */;
 			case 10391:
-				return 662184554;
+				return 662184554 /* GXTEntry: "Stringham Shirt" */;
 			case 10392:
-				return -1178521254;
+				return -1178521254 /* GXTEntry: "Lautnip Shirt" */;
 			case 10393:
-				return 653102085;
+				return 653102085 /* GXTEntry: "Lautnip Shirt" */;
 			case 10394:
-				return 883926921;
+				return 883926921 /* GXTEntry: "Lautnip Shirt" */;
 			case 10395:
-				return 1134183774;
+				return 1134183774 /* GXTEntry: "Lautnip Shirt" */;
 			case 10396:
-				return 1364517075;
+				return 1364517075 /* GXTEntry: "Lautnip Shirt" */;
 			case 10397:
-				return -268952037;
+				return -268952037 /* GXTEntry: "Lautnip Shirt" */;
 			case 10398:
-				return -27411738;
+				return -27411738 /* GXTEntry: "Lautnip Shirt" */;
 			case 10399:
-				return 210425664;
+				return 210425664 /* GXTEntry: "Lautnip Shirt" */;
 			case 10400:
-				return 450458589;
+				return 450458589 /* GXTEntry: "Lautnip Shirt" */;
 			case 10401:
-				return 39633236;
+				return 39633236 /* GXTEntry: "Lautnip Shirt" */;
 			case 10402:
 				return -1136463505 /* GXTEntry: "Darned Stockings" */;
 			case 10403:
@@ -62941,45 +62941,45 @@ int func_1357(int iParam0, int iParam1)
 			case 10477:
 				return -493217852 /* GXTEntry: "Pelt Half Chaps" */;
 			case 10478:
-				return -1969592941;
+				return -1969592941 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10479:
-				return 1999126191;
+				return 1999126191 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10480:
-				return 1633817379;
+				return 1633817379 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10481:
-				return -511732904;
+				return -511732904 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10482:
-				return -742787123;
+				return -742787123 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10483:
-				return -1137850187;
+				return -1137850187 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10484:
-				return -1368707792;
+				return -1368707792 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10485:
-				return 1328410307;
+				return 1328410307 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10486:
-				return 955499087;
+				return 955499087 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10487:
-				return -1737193757;
+				return -1737193757 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 10488:
-				return 1283218838;
+				return 1283218838 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10489:
-				return -95340223;
+				return -95340223 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10490:
-				return -519043393;
+				return -519043393 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10491:
-				return 247390748;
+				return 247390748 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10492:
-				return 30459968;
+				return 30459968 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10493:
-				return -1280594953;
+				return -1280594953 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10494:
-				return -623740348;
+				return -623740348 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10495:
-				return -1045805068;
+				return -1045805068 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10496:
-				return 1852318049;
+				return 1852318049 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10497:
-				return -689472926;
+				return -689472926 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 10498:
 				return -647456725 /* GXTEntry: "Gerden Copper Spurs" */;
 			case 10499:
@@ -63221,7 +63221,7 @@ int func_1357(int iParam0, int iParam1)
 			case 10617:
 				return joaat("clothing_item_m_suspenders_001_tint_009");
 			case 10618:
-				return 2118918877;
+				return 2118918877 /* GXTEntry: "Crossback Detail Suspenders" */;
 			case 10619:
 				return 1661687986 /* GXTEntry: "Fine Leather Suspenders" */;
 			case 10620:
@@ -63719,45 +63719,45 @@ int func_1357(int iParam0, int iParam1)
 			case 10866:
 				return 641628457 /* GXTEntry: "Killiman Vest" */;
 			case 10867:
-				return 1449487951;
+				return 1449487951 /* GXTEntry: "Barras Vest" */;
 			case 10868:
-				return 1628144539;
+				return 1628144539 /* GXTEntry: "Barras Vest" */;
 			case 10869:
-				return 1926244132;
+				return 1926244132 /* GXTEntry: "Barras Vest" */;
 			case 10870:
-				return 195975394;
+				return 195975394 /* GXTEntry: "Barras Vest" */;
 			case 10871:
-				return 496368817;
+				return 496368817 /* GXTEntry: "Barras Vest" */;
 			case 10872:
-				return 660082741;
+				return 660082741 /* GXTEntry: "Barras Vest" */;
 			case 10873:
-				return 974828986;
+				return 974828986 /* GXTEntry: "Barras Vest" */;
 			case 10874:
-				return -804036183;
+				return -804036183 /* GXTEntry: "Barras Vest" */;
 			case 10875:
-				return -504625830;
+				return -504625830 /* GXTEntry: "Barras Vest" */;
 			case 10876:
-				return 1680083720;
+				return 1680083720 /* GXTEntry: "Barras Vest" */;
 			case 10877:
-				return 343329028;
+				return 343329028 /* GXTEntry: "Churchwell Vest" */;
 			case 10878:
-				return 38577328;
+				return 38577328 /* GXTEntry: "Churchwell Vest" */;
 			case 10879:
-				return 908856430;
+				return 908856430 /* GXTEntry: "Churchwell Vest" */;
 			case 10880:
-				return 668626891;
+				return 668626891 /* GXTEntry: "Churchwell Vest" */;
 			case 10881:
-				return 1572756370;
+				return 1572756370 /* GXTEntry: "Churchwell Vest" */;
 			case 10882:
-				return 1265120998;
+				return 1265120998 /* GXTEntry: "Churchwell Vest" */;
 			case 10883:
-				return -2098911777;
+				return -2098911777 /* GXTEntry: "Churchwell Vest" */;
 			case 10884:
-				return 1888911682;
+				return 1888911682 /* GXTEntry: "Churchwell Vest" */;
 			case 10885:
-				return -1479118911;
+				return -1479118911 /* GXTEntry: "Churchwell Vest" */;
 			case 10886:
-				return -344820196;
+				return -344820196 /* GXTEntry: "Churchwell Vest" */;
 			case 10887:
 				return 942502127;
 			case 10888:
@@ -64129,53 +64129,53 @@ int func_1357(int iParam0, int iParam1)
 			case 11065:
 				return 78494262;
 			case 11066:
-				return -535767205;
+				return -535767205 /* GXTEntry: "The Gatlinburg" */;
 			case 11067:
-				return -831572968;
+				return -831572968 /* GXTEntry: "The Gatlinburg" */;
 			case 11068:
-				return -1033561084;
+				return -1033561084 /* GXTEntry: "The Gatlinburg" */;
 			case 11069:
-				return 623632784;
+				return 623632784 /* GXTEntry: "The Gatlinburg" */;
 			case 11070:
-				return 387597677;
+				return 387597677 /* GXTEntry: "The Gatlinburg" */;
 			case 11071:
-				return 159328823;
+				return 159328823 /* GXTEntry: "The Gatlinburg" */;
 			case 11072:
-				return -338822138;
+				return -338822138 /* GXTEntry: "The Dagenhart" */;
 			case 11073:
-				return 1810529341;
+				return 1810529341 /* GXTEntry: "The Dagenhart" */;
 			case 11074:
-				return 1453609393;
+				return 1453609393 /* GXTEntry: "The Dagenhart" */;
 			case 11075:
-				return 154416850;
+				return 154416850 /* GXTEntry: "The Dagenhart" */;
 			case 11076:
-				return -218559908;
+				return -218559908 /* GXTEntry: "The Dagenhart" */;
 			case 11077:
-				return -1828599185;
+				return -1828599185 /* GXTEntry: "The Dagenhart" */;
 			case 11078:
-				return -489155912;
+				return -489155912 /* GXTEntry: "The Pittsburg" */;
 			case 11079:
-				return -188631413;
+				return -188631413 /* GXTEntry: "The Pittsburg" */;
 			case 11080:
-				return 772090129;
+				return 772090129 /* GXTEntry: "The Pittsburg" */;
 			case 11081:
-				return 5721526;
+				return 5721526 /* GXTEntry: "The Pittsburg" */;
 			case 11082:
-				return -1472193147;
+				return -1472193147 /* GXTEntry: "The Pittsburg" */;
 			case 11083:
-				return -1450434531;
+				return -1450434531 /* GXTEntry: "The Pittsburg" */;
 			case 11084:
-				return -1360965089;
+				return -1360965089 /* GXTEntry: "The Wilkesboro" */;
 			case 11085:
-				return 1628780168;
+				return 1628780168 /* GXTEntry: "The Wilkesboro" */;
 			case 11086:
-				return -1822188764;
+				return -1822188764 /* GXTEntry: "The Wilkesboro" */;
 			case 11087:
-				return -976912409;
+				return -976912409 /* GXTEntry: "The Wilkesboro" */;
 			case 11088:
-				return 1059353247;
+				return 1059353247 /* GXTEntry: "The Wilkesboro" */;
 			case 11089:
-				return 819779088;
+				return 819779088 /* GXTEntry: "The Wilkesboro" */;
 			case 11090:
 				return -781572742;
 			case 11091:
@@ -64225,53 +64225,53 @@ int func_1357(int iParam0, int iParam1)
 			case 11113:
 				return -1484404420;
 			case 11114:
-				return 913153433;
+				return 913153433 /* GXTEntry: "The Gatlinburg" */;
 			case 11115:
-				return 606730510;
+				return 606730510 /* GXTEntry: "The Gatlinburg" */;
 			case 11116:
-				return -964051505;
+				return -964051505 /* GXTEntry: "The Gatlinburg" */;
 			case 11117:
-				return -1267459676;
+				return -1267459676 /* GXTEntry: "The Gatlinburg" */;
 			case 11118:
-				return -483756272;
+				return -483756272 /* GXTEntry: "The Gatlinburg" */;
 			case 11119:
-				return -805187393;
+				return -805187393 /* GXTEntry: "The Gatlinburg" */;
 			case 11120:
-				return -1116096467;
+				return -1116096467 /* GXTEntry: "The Dagenhart" */;
 			case 11121:
-				return -4997980;
+				return -4997980 /* GXTEntry: "The Dagenhart" */;
 			case 11122:
-				return -305588017;
+				return -305588017 /* GXTEntry: "The Dagenhart" */;
 			case 11123:
-				return -694850968;
+				return -694850968 /* GXTEntry: "The Dagenhart" */;
 			case 11124:
-				return -985380922;
+				return -985380922 /* GXTEntry: "The Dagenhart" */;
 			case 11125:
-				return 974827889;
+				return 974827889 /* GXTEntry: "The Dagenhart" */;
 			case 11126:
-				return -1156770257;
+				return -1156770257 /* GXTEntry: "The Pittsburg" */;
 			case 11127:
-				return -843695231;
+				return -843695231 /* GXTEntry: "The Pittsburg" */;
 			case 11128:
-				return 1854078224;
+				return 1854078224 /* GXTEntry: "The Pittsburg" */;
 			case 11129:
-				return -2137185980;
+				return -2137185980 /* GXTEntry: "The Pittsburg" */;
 			case 11130:
-				return -1830566447;
+				return -1830566447 /* GXTEntry: "The Pittsburg" */;
 			case 11131:
-				return -1537546049;
+				return -1537546049 /* GXTEntry: "The Pittsburg" */;
 			case 11132:
-				return 469166476;
+				return 469166476 /* GXTEntry: "The Wilkesboro" */;
 			case 11133:
-				return 1229079574;
+				return 1229079574 /* GXTEntry: "The Wilkesboro" */;
 			case 11134:
-				return 990422947;
+				return 990422947 /* GXTEntry: "The Wilkesboro" */;
 			case 11135:
-				return -229665218;
+				return -229665218 /* GXTEntry: "The Wilkesboro" */;
 			case 11136:
-				return -527568197;
+				return -527568197 /* GXTEntry: "The Wilkesboro" */;
 			case 11137:
-				return 242634379;
+				return 242634379 /* GXTEntry: "The Wilkesboro" */;
 			case 11138:
 				return -2011901782;
 			case 11139:
@@ -64309,17 +64309,17 @@ int func_1357(int iParam0, int iParam1)
 			case 11155:
 				return -97594878;
 			case 11156:
-				return 594693050;
+				return 594693050 /* GXTEntry: "Gatlinburg Hat" */;
 			case 11157:
-				return -718524625;
+				return -718524625 /* GXTEntry: "Gatlinburg Hat" */;
 			case 11158:
-				return 217456322;
+				return 217456322 /* GXTEntry: "Gatlinburg Hat" */;
 			case 11159:
-				return 795304868;
+				return 795304868 /* GXTEntry: "Gatlinburg Hat" */;
 			case 11160:
-				return 1750095221;
+				return 1750095221 /* GXTEntry: "Gatlinburg Hat" */;
 			case 11161:
-				return 453884657;
+				return 453884657 /* GXTEntry: "Gatlinburg Hat" */;
 			case 11162:
 				return -1842215635;
 			case 11163:
@@ -64405,17 +64405,17 @@ int func_1357(int iParam0, int iParam1)
 			case 11203:
 				return 503899420;
 			case 11204:
-				return 325188200;
+				return 325188200 /* GXTEntry: "Dagenhart Hat" */;
 			case 11205:
-				return -425484056;
+				return -425484056 /* GXTEntry: "Dagenhart Hat" */;
 			case 11206:
-				return -664140683;
+				return -664140683 /* GXTEntry: "Dagenhart Hat" */;
 			case 11207:
-				return -891360929;
+				return -891360929 /* GXTEntry: "Dagenhart Hat" */;
 			case 11208:
-				return -1122480686;
+				return -1122480686 /* GXTEntry: "Dagenhart Hat" */;
 			case 11209:
-				return -1259160185;
+				return -1259160185 /* GXTEntry: "Dagenhart Hat" */;
 			case 11210:
 				return 1533518794;
 			case 11211:
@@ -64489,17 +64489,17 @@ int func_1357(int iParam0, int iParam1)
 			case 11245:
 				return -997765063;
 			case 11246:
-				return -1715172646;
+				return -1715172646 /* GXTEntry: "Pittsburg Hat" */;
 			case 11247:
-				return -1523408458;
+				return -1523408458 /* GXTEntry: "Pittsburg Hat" */;
 			case 11248:
-				return -1236778015;
+				return -1236778015 /* GXTEntry: "Pittsburg Hat" */;
 			case 11249:
-				return -939661492;
+				return -939661492 /* GXTEntry: "Pittsburg Hat" */;
 			case 11250:
-				return 1382218776;
+				return 1382218776 /* GXTEntry: "Pittsburg Hat" */;
 			case 11251:
-				return -567012420;
+				return -567012420 /* GXTEntry: "Pittsburg Hat" */;
 			case 11252:
 				return 496522113;
 			case 11253:
@@ -64585,17 +64585,17 @@ int func_1357(int iParam0, int iParam1)
 			case 11293:
 				return -1367344071;
 			case 11294:
-				return -1732790037;
+				return -1732790037 /* GXTEntry: "Wilkesboro Hat" */;
 			case 11295:
-				return 2120582215;
+				return 2120582215 /* GXTEntry: "Wilkesboro Hat" */;
 			case 11296:
-				return -304880862;
+				return -304880862 /* GXTEntry: "Wilkesboro Hat" */;
 			case 11297:
-				return -471412920;
+				return -471412920 /* GXTEntry: "Wilkesboro Hat" */;
 			case 11298:
-				return -776918307;
+				return -776918307 /* GXTEntry: "Wilkesboro Hat" */;
 			case 11299:
-				return -293706689;
+				return -293706689 /* GXTEntry: "Wilkesboro Hat" */;
 			case 11300:
 				return 2088513278;
 			case 11301:
@@ -65295,7 +65295,7 @@ int func_1357(int iParam0, int iParam1)
 			case 11648:
 				return -1601245941;
 			case 11649:
-				return 2117865752;
+				return 2117865752 /* GXTEntry: "Wallingford Hat" */;
 			case 11650:
 				return -1274577746 /* GXTEntry: "Wallingford Hat" */;
 			case 11651:
@@ -66055,39 +66055,39 @@ int func_1357(int iParam0, int iParam1)
 			case 12022:
 				return joaat("clothing_m_r4_buckle_000_tint_001");
 			case 12023:
-				return -20636198;
+				return -20636198 /* GXTEntry: "Darrow Buckle" */;
 			case 12024:
-				return 202094695;
+				return 202094695 /* GXTEntry: "Darrow Buckle" */;
 			case 12025:
-				return -632007439;
+				return -632007439 /* GXTEntry: "Darrow Buckle" */;
 			case 12026:
-				return -275611795;
+				return -275611795 /* GXTEntry: "Darrow Buckle" */;
 			case 12027:
-				return -1216245940;
+				return -1216245940 /* GXTEntry: "Darrow Buckle" */;
 			case 12028:
-				return -928998010;
+				return -928998010 /* GXTEntry: "Levens Gun Belt" */;
 			case 12029:
-				return -689817079;
+				return -689817079 /* GXTEntry: "Levens Gun Belt" */;
 			case 12030:
-				return -449030467;
+				return -449030467 /* GXTEntry: "Levens Gun Belt" */;
 			case 12031:
-				return -206244946;
+				return -206244946 /* GXTEntry: "Levens Gun Belt" */;
 			case 12032:
-				return -5764200;
+				return -5764200 /* GXTEntry: "Levens Gun Belt" */;
 			case 12033:
-				return 240101607;
+				return 240101607 /* GXTEntry: "Levens Gun Belt" */;
 			case 12034:
-				return -732726675;
+				return -732726675 /* GXTEntry: "Levens Holster" */;
 			case 12035:
-				return -963846432;
+				return -963846432 /* GXTEntry: "Levens Holster" */;
 			case 12036:
-				return -1242022473;
+				return -1242022473 /* GXTEntry: "Levens Holster" */;
 			case 12037:
-				return -2026971099;
+				return -2026971099 /* GXTEntry: "Levens Holster" */;
 			case 12038:
-				return 2066466847;
+				return 2066466847 /* GXTEntry: "Levens Holster" */;
 			case 12039:
-				return 1835609242;
+				return 1835609242 /* GXTEntry: "Levens Holster" */;
 			case 12040:
 				return 896138350 /* GXTEntry: "The Monterey" */;
 			case 12041:
@@ -66233,53 +66233,53 @@ int func_1357(int iParam0, int iParam1)
 			case 12111:
 				return -1141893021;
 			case 12112:
-				return 1133778792;
+				return 1133778792 /* GXTEntry: "The Gatlinburg" */;
 			case 12113:
-				return 1402713975;
+				return 1402713975 /* GXTEntry: "The Gatlinburg" */;
 			case 12114:
-				return 1708776435;
+				return 1708776435 /* GXTEntry: "The Gatlinburg" */;
 			case 12115:
-				return 1945958457;
+				return 1945958457 /* GXTEntry: "The Gatlinburg" */;
 			case 12116:
-				return -2034328132;
+				return -2034328132 /* GXTEntry: "The Gatlinburg" */;
 			case 12117:
-				return -1701919396;
+				return -1701919396 /* GXTEntry: "The Gatlinburg" */;
 			case 12118:
-				return 171471081;
+				return 171471081 /* GXTEntry: "The Dagenhart" */;
 			case 12119:
-				return -1014406260;
+				return -1014406260 /* GXTEntry: "The Dagenhart" */;
 			case 12120:
-				return -304957410;
+				return -304957410 /* GXTEntry: "The Dagenhart" */;
 			case 12121:
-				return -1494308265;
+				return -1494308265 /* GXTEntry: "The Dagenhart" */;
 			case 12122:
-				return -1724903718;
+				return -1724903718 /* GXTEntry: "The Dagenhart" */;
 			case 12123:
-				return 2087834974;
+				return 2087834974 /* GXTEntry: "The Dagenhart" */;
 			case 12124:
-				return -517098545;
+				return -517098545 /* GXTEntry: "The Pittsburg" */;
 			case 12125:
-				return -803860064;
+				return -803860064 /* GXTEntry: "The Pittsburg" */;
 			case 12126:
-				return -1044744987;
+				return -1044744987 /* GXTEntry: "The Pittsburg" */;
 			case 12127:
-				return 750602989;
+				return 750602989 /* GXTEntry: "The Pittsburg" */;
 			case 12128:
-				return 511880824;
+				return 511880824 /* GXTEntry: "The Pittsburg" */;
 			case 12129:
-				return 154239958;
+				return 154239958 /* GXTEntry: "The Pittsburg" */;
 			case 12130:
-				return -1390268188;
+				return -1390268188 /* GXTEntry: "The Wilkesboro" */;
 			case 12131:
-				return 173271878;
+				return 173271878 /* GXTEntry: "The Wilkesboro" */;
 			case 12132:
-				return -56274967;
+				return -56274967 /* GXTEntry: "The Wilkesboro" */;
 			case 12133:
-				return 2075774480;
+				return 2075774480 /* GXTEntry: "The Wilkesboro" */;
 			case 12134:
-				return 1716429626;
+				return 1716429626 /* GXTEntry: "The Wilkesboro" */;
 			case 12135:
-				return 1469908439;
+				return 1469908439 /* GXTEntry: "The Wilkesboro" */;
 			case 12136:
 				return 412305624;
 			case 12137:
@@ -66363,7 +66363,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12176:
 				return -669651967 /* GXTEntry: "Bandito 02" */;
 			case 12177:
-				return 1680517072;
+				return 1680517072 /* GXTEntry: "The Pittman" */;
 			case 12178:
 				return 267998398 /* GXTEntry: "Mountain women 01" */;
 			case 12179:
@@ -66431,7 +66431,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12210:
 				return -1041184046;
 			case 12211:
-				return 831671965;
+				return 831671965 /* GXTEntry: "The Pittman" */;
 			case 12212:
 				return -230859761 /* GXTEntry: "Mountain men 01" */;
 			case 12213:
@@ -66457,7 +66457,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12223:
 				return joaat("clothing_outfit_item_m_season_s02_002");
 			case 12224:
-				return 1928115537 /* GXTEntry: "The Déchaux" */;
+				return 1928115537 /* GXTEntry: "The D�chaux" */;
 			case 12225:
 				return 453281150 /* GXTEntry: "The Mercer" */;
 			case 12226:
@@ -66613,7 +66613,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12301:
 				return 217155793 /* GXTEntry: "Outfit One" */;
 			case 12302:
-				return 2127262701;
+				return 2127262701 /* GXTEntry: "Outfit Seven" */;
 			case 12303:
 				return -1063340820 /* GXTEntry: "Outfit Six" */;
 			case 12304:
@@ -66683,17 +66683,17 @@ int func_1357(int iParam0, int iParam1)
 			case 12336:
 				return -1974489443 /* GXTEntry: "Patterned Bandana" */;
 			case 12337:
-				return -1406217386;
+				return -1406217386 /* GXTEntry: "Marino Bandolier" */;
 			case 12338:
-				return 1190988020;
+				return 1190988020 /* GXTEntry: "Coburn Bandolier" */;
 			case 12339:
-				return 401713686;
+				return 401713686 /* GXTEntry: "Higgins Bandolier" */;
 			case 12340:
-				return 480417454;
+				return 480417454 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 12341:
-				return 710685217;
+				return 710685217 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 12342:
-				return 670839097;
+				return 670839097 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 12343:
 				return 931386192 /* GXTEntry: "Ringneck Holster" */;
 			case 12344:
@@ -66767,21 +66767,21 @@ int func_1357(int iParam0, int iParam1)
 			case 12378:
 				return -1265469708 /* GXTEntry: "Rowland Boots" */;
 			case 12379:
-				return -2110156221;
+				return -2110156221 /* GXTEntry: "Oakley Boots" */;
 			case 12380:
-				return -699909537;
+				return -699909537 /* GXTEntry: "Rulfo Boots" */;
 			case 12381:
-				return -1526278179;
+				return -1526278179 /* GXTEntry: "Salter Shoes" */;
 			case 12382:
-				return -625228986;
+				return -625228986 /* GXTEntry: "Kelley Boots" */;
 			case 12383:
-				return -948724554;
+				return -948724554 /* GXTEntry: "Hardie Boots" */;
 			case 12384:
-				return -71498420;
+				return -71498420 /* GXTEntry: "Pico Sandals" */;
 			case 12385:
-				return 167682511;
+				return 167682511 /* GXTEntry: "Brindille Shoes" */;
 			case 12386:
-				return 524602459;
+				return 524602459 /* GXTEntry: "Treadway Boots" */;
 			case 12387:
 				return joaat("clothing_style_f_bounty_hunter_outfit_01");
 			case 12388:
@@ -66811,11 +66811,11 @@ int func_1357(int iParam0, int iParam1)
 			case 12400:
 				return 970321757 /* GXTEntry: "Cinched Jacket" */;
 			case 12401:
-				return 596165315;
+				return 596165315 /* GXTEntry: "Macbay Jacket" */;
 			case 12402:
-				return 17300930;
+				return 17300930 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 12403:
-				return -1668631351;
+				return -1668631351 /* GXTEntry: "Leavitt Jacket" */;
 			case 12404:
 				return 1900178704 /* GXTEntry: "Leather Duster" */;
 			case 12405:
@@ -66875,9 +66875,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12432:
 				return 1575800041 /* GXTEntry: "Ballard Jacket" */;
 			case 12433:
-				return -589411642;
+				return -589411642 /* GXTEntry: "Walden Coat" */;
 			case 12434:
-				return -1224311013;
+				return -1224311013 /* GXTEntry: "Clairborn Coat" */;
 			case 12435:
 				return joaat("clothing_style_f_collector_outfit_01");
 			case 12436:
@@ -66889,9 +66889,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12439:
 				return 1032110472 /* GXTEntry: "Sandstorm Holster" */;
 			case 12440:
-				return -1819603316;
+				return -1819603316 /* GXTEntry: "Isbell Corset" */;
 			case 12441:
-				return -1671159746;
+				return -1671159746 /* GXTEntry: "Chambliss Corset" */;
 			case 12442:
 				return 368482782;
 			case 12443:
@@ -67041,7 +67041,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12515:
 				return 1670944340 /* GXTEntry: "Diamondback Hat" */;
 			case 12516:
-				return 2136591830;
+				return 2136591830 /* GXTEntry: "Manteca Hat" */;
 			case 12517:
 				return -10072595 /* GXTEntry: "Varmint Hat" */;
 			case 12518:
@@ -67097,7 +67097,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12543:
 				return 1676444794 /* GXTEntry: "Union Cap" */;
 			case 12544:
-				return 2115614932;
+				return 2115614932 /* GXTEntry: "Pearrow Hat" */;
 			case 12545:
 				return -1997517183 /* GXTEntry: "Purkiss Hat" */;
 			case 12546:
@@ -67113,25 +67113,25 @@ int func_1357(int iParam0, int iParam1)
 			case 12551:
 				return -1966221972 /* GXTEntry: "Bartley Cap" */;
 			case 12552:
-				return -1676085246;
+				return -1676085246 /* GXTEntry: "Baldock Hat" */;
 			case 12553:
-				return -1379689625;
+				return -1379689625 /* GXTEntry: "Buckley Hat" */;
 			case 12554:
-				return -1074380852;
+				return -1074380852 /* GXTEntry: "Charleston Top Hat" */;
 			case 12555:
-				return -785423810;
+				return -785423810 /* GXTEntry: "Lister Hat" */;
 			case 12556:
-				return -480967031;
+				return -480967031 /* GXTEntry: "Reaves Top Hat" */;
 			case 12557:
-				return -191157995;
+				return -191157995 /* GXTEntry: "Menasco Hat" */;
 			case 12558:
-				return -2104146905;
+				return -2104146905 /* GXTEntry: "Boutell Hat" */;
 			case 12559:
-				return 1965566273;
+				return 1965566273 /* GXTEntry: "Birdwell Hat" */;
 			case 12560:
-				return -2023633484;
+				return -2023633484 /* GXTEntry: "Starrett Hat" */;
 			case 12561:
-				return -1410066712;
+				return -1410066712 /* GXTEntry: "Palma Hat" */;
 			case 12562:
 				return joaat("clothing_style_f_hat_234");
 			case 12563:
@@ -67159,13 +67159,13 @@ int func_1357(int iParam0, int iParam1)
 			case 12574:
 				return 682887436 /* GXTEntry: "The Londonderry" */;
 			case 12575:
-				return 971761936;
+				return 971761936 /* GXTEntry: "The Gatlinburg" */;
 			case 12576:
-				return 516010684;
+				return 516010684 /* GXTEntry: "The Dagenhart" */;
 			case 12577:
-				return 1886311961;
+				return 1886311961 /* GXTEntry: "The Pittsburg" */;
 			case 12578:
-				return -2090992649;
+				return -2090992649 /* GXTEntry: "The Wilkesboro" */;
 			case 12579:
 				return 784512248 /* GXTEntry: "The Monterey" */;
 			case 12580:
@@ -67287,9 +67287,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12638:
 				return 764943162 /* GXTEntry: "Carver Pants" */;
 			case 12639:
-				return 441513132;
+				return 441513132 /* GXTEntry: "Martindale Pants" */;
 			case 12640:
-				return 149115345;
+				return 149115345 /* GXTEntry: "McCrum Pants" */;
 			case 12641:
 				return -411933281 /* GXTEntry: "Chuparosa Poncho" */;
 			case 12642:
@@ -67301,17 +67301,17 @@ int func_1357(int iParam0, int iParam1)
 			case 12645:
 				return -147421921 /* GXTEntry: "Cardenas Poncho" */;
 			case 12646:
-				return 94314992;
+				return 94314992 /* GXTEntry: "Torras Poncho" */;
 			case 12647:
-				return 450448484;
+				return 450448484 /* GXTEntry: "Guerra Poncho" */;
 			case 12648:
-				return -1927214989;
+				return -1927214989 /* GXTEntry: "Gatlinburg Hat" */;
 			case 12649:
-				return 364352327;
+				return 364352327 /* GXTEntry: "Dagenhart Hat" */;
 			case 12650:
-				return -835634570;
+				return -835634570 /* GXTEntry: "Pittsburg Hat" */;
 			case 12651:
-				return 1776596358;
+				return 1776596358 /* GXTEntry: "Wilkesboro Hat" */;
 			case 12652:
 				return joaat("clothing_style_f_r1_buckle_000");
 			case 12653:
@@ -67377,7 +67377,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12683:
 				return joaat("clothing_style_f_r3_ring_000");
 			case 12684:
-				return 1700978250;
+				return 1700978250 /* GXTEntry: "Darrow Buckle" */;
 			case 12685:
 				return joaat("clothing_style_f_r4_gunbelt_000");
 			case 12686:
@@ -67427,9 +67427,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12708:
 				return -772260755 /* GXTEntry: "Goodale Shirtwaist" */;
 			case 12709:
-				return 1501807594;
+				return 1501807594 /* GXTEntry: "Stringham Shirt" */;
 			case 12710:
-				return 1976630404;
+				return 1976630404 /* GXTEntry: "Iniesta Shirtwaist" */;
 			case 12711:
 				return -2111884370 /* GXTEntry: "Prairie Skirt" */;
 			case 12712:
@@ -67465,9 +67465,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12727:
 				return 1388362522 /* GXTEntry: "Pelt Half Chaps" */;
 			case 12728:
-				return 1764943870;
+				return 1764943870 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 12729:
-				return 1466254435;
+				return 1466254435 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 12730:
 				return 1401213559 /* GXTEntry: "Gerden Copper Spurs" */;
 			case 12731:
@@ -67511,7 +67511,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12750:
 				return 1209098876 /* GXTEntry: "Trimmed Drawers" */;
 			case 12751:
-				return 1033063808;
+				return 1033063808 /* GXTEntry: "Hollyfield Bloomers" */;
 			case 12752:
 				return -410105809 /* GXTEntry: "The Wakeeney" */;
 			case 12753:
@@ -67529,13 +67529,13 @@ int func_1357(int iParam0, int iParam1)
 			case 12759:
 				return -1050666057 /* GXTEntry: "The Londonderry" */;
 			case 12760:
-				return 443333630;
+				return 443333630 /* GXTEntry: "The Gatlinburg" */;
 			case 12761:
-				return 1585136666;
+				return 1585136666 /* GXTEntry: "The Dagenhart" */;
 			case 12762:
-				return 1824120983;
+				return 1824120983 /* GXTEntry: "The Pittsburg" */;
 			case 12763:
-				return 1124109605;
+				return 1124109605 /* GXTEntry: "The Wilkesboro" */;
 			case 12764:
 				return 1917925112 /* GXTEntry: "The Monterey" */;
 			case 12765:
@@ -67583,9 +67583,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12786:
 				return 481512140 /* GXTEntry: "Killiman Vest" */;
 			case 12787:
-				return -1994021965;
+				return -1994021965 /* GXTEntry: "Barras Vest" */;
 			case 12788:
-				return 1980562814;
+				return 1980562814 /* GXTEntry: "Churchwell Vest" */;
 			case 12789:
 				return 956281742 /* GXTEntry: "Bandana" */;
 			case 12790:
@@ -67595,17 +67595,17 @@ int func_1357(int iParam0, int iParam1)
 			case 12792:
 				return -695472488 /* GXTEntry: "Patterned Bandana" */;
 			case 12793:
-				return 230088625;
+				return 230088625 /* GXTEntry: "Marino Bandolier" */;
 			case 12794:
-				return 1850777831;
+				return 1850777831 /* GXTEntry: "Coburn Bandolier" */;
 			case 12795:
-				return 519635293;
+				return 519635293 /* GXTEntry: "Higgins Bandolier" */;
 			case 12796:
-				return -1478037643;
+				return -1478037643 /* GXTEntry: "Espinal Double Bandolier" */;
 			case 12797:
-				return -1854815605;
+				return -1854815605 /* GXTEntry: "Salizzo Double Bandolier" */;
 			case 12798:
-				return 2147360960;
+				return 2147360960 /* GXTEntry: "Carbow Double Bandolier" */;
 			case 12799:
 				return joaat("clothing_style_m_beard_017");
 			case 12800:
@@ -67691,21 +67691,21 @@ int func_1357(int iParam0, int iParam1)
 			case 12840:
 				return 249821549 /* GXTEntry: "Parson Boots" */;
 			case 12841:
-				return 430146740;
+				return 430146740 /* GXTEntry: "Oakley Boots" */;
 			case 12842:
-				return 324630560;
+				return 324630560 /* GXTEntry: "Rulfo Boots" */;
 			case 12843:
-				return -10006468;
+				return -10006468 /* GXTEntry: "Salter Shoes" */;
 			case 12844:
-				return -248990785;
+				return -248990785 /* GXTEntry: "Kelley Boots" */;
 			case 12845:
-				return -487975102;
+				return -487975102 /* GXTEntry: "Hardie Boots" */;
 			case 12846:
-				return -1134048718;
+				return -1134048718 /* GXTEntry: "Pico Sandals" */;
 			case 12847:
-				return -1469996506;
+				return -1469996506 /* GXTEntry: "Brindille Shoes" */;
 			case 12848:
-				return -1700723035;
+				return -1700723035 /* GXTEntry: "Treadway Boots" */;
 			case 12849:
 				return joaat("clothing_style_m_bounty_hunter_outfit_01");
 			case 12850:
@@ -67733,11 +67733,11 @@ int func_1357(int iParam0, int iParam1)
 			case 12861:
 				return 1266844484 /* GXTEntry: "Cinched Jacket" */;
 			case 12862:
-				return 2034818768;
+				return 2034818768 /* GXTEntry: "Macbay Jacket" */;
 			case 12863:
-				return 1509367853;
+				return 1509367853 /* GXTEntry: "Rivera Hooded Tunic" */;
 			case 12864:
-				return -1358804418;
+				return -1358804418 /* GXTEntry: "Leavitt Jacket" */;
 			case 12865:
 				return 1928417762 /* GXTEntry: "Antoine Jacket" */;
 			case 12866:
@@ -67797,9 +67797,9 @@ int func_1357(int iParam0, int iParam1)
 			case 12893:
 				return -1841896493 /* GXTEntry: "Fulbright Coat" */;
 			case 12894:
-				return -1813190857;
+				return -1813190857 /* GXTEntry: "Walden Coat" */;
 			case 12895:
-				return -2114239660;
+				return -2114239660 /* GXTEntry: "Clairborn Coat" */;
 			case 12896:
 				return joaat("clothing_style_m_collector_outfit_01");
 			case 12897:
@@ -67983,7 +67983,7 @@ int func_1357(int iParam0, int iParam1)
 			case 12986:
 				return 1923550090 /* GXTEntry: "Raccoon Hat" */;
 			case 12987:
-				return 2128946182;
+				return 2128946182 /* GXTEntry: "Cossack Hat" */;
 			case 12988:
 				return -702918033 /* GXTEntry: "Sobol Hat" */;
 			case 12989:
@@ -68031,25 +68031,25 @@ int func_1357(int iParam0, int iParam1)
 			case 13004:
 				return 1139336320 /* GXTEntry: "Bartley Cap" */;
 			case 13005:
-				return 507222310;
+				return 507222310 /* GXTEntry: "Baldock Hat" */;
 			case 13006:
-				return 785857117;
+				return 785857117 /* GXTEntry: "Buckley Hat" */;
 			case 13007:
-				return 18636520;
+				return 18636520 /* GXTEntry: "Charleston Top Hat" */;
 			case 13008:
-				return 191066998;
+				return 191066998 /* GXTEntry: "Lister Hat" */;
 			case 13009:
-				return -579758189;
+				return -579758189 /* GXTEntry: "Reaves Top Hat" */;
 			case 13010:
-				return -1214559265;
+				return -1214559265 /* GXTEntry: "Menasco Hat" */;
 			case 13011:
-				return 2026784958;
+				return 2026784958 /* GXTEntry: "Boutell Hat" */;
 			case 13012:
-				return 1787079723;
+				return 1787079723 /* GXTEntry: "Birdwell Hat" */;
 			case 13013:
-				return -864849913;
+				return -864849913 /* GXTEntry: "Starrett Hat" */;
 			case 13014:
-				return -1110125878;
+				return -1110125878 /* GXTEntry: "Palma Hat" */;
 			case 13015:
 				return joaat("clothing_style_m_hat_234");
 			case 13016:
@@ -68069,13 +68069,13 @@ int func_1357(int iParam0, int iParam1)
 			case 13023:
 				return 1292803386 /* GXTEntry: "The Londonderry" */;
 			case 13024:
-				return 475790156;
+				return 475790156 /* GXTEntry: "The Gatlinburg" */;
 			case 13025:
-				return 231628337;
+				return 231628337 /* GXTEntry: "The Dagenhart" */;
 			case 13026:
-				return 935834147;
+				return 935834147 /* GXTEntry: "The Pittsburg" */;
 			case 13027:
-				return 706025150;
+				return 706025150 /* GXTEntry: "The Wilkesboro" */;
 			case 13028:
 				return -270079364 /* GXTEntry: "The Monterey" */;
 			case 13029:
@@ -68157,7 +68157,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13067:
 				return 968043996 /* GXTEntry: "Overalls" */;
 			case 13068:
-				return 2138126679;
+				return 2138126679 /* GXTEntry: "Patched Overalls" */;
 			case 13069:
 				return 169980966 /* GXTEntry: "Studded Pants" */;
 			case 13070:
@@ -68209,9 +68209,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13093:
 				return -1109902621 /* GXTEntry: "Carver Pants" */;
 			case 13094:
-				return -2139504601;
+				return -2139504601 /* GXTEntry: "Martindale Pants" */;
 			case 13095:
-				return -1623523927;
+				return -1623523927 /* GXTEntry: "McCrum Pants" */;
 			case 13096:
 				return 486646353 /* GXTEntry: "Chuparosa Poncho" */;
 			case 13097:
@@ -68223,17 +68223,17 @@ int func_1357(int iParam0, int iParam1)
 			case 13100:
 				return 1077242036 /* GXTEntry: "Cardenas Poncho" */;
 			case 13101:
-				return 251004470;
+				return 251004470 /* GXTEntry: "Torras Poncho" */;
 			case 13102:
-				return 498115499;
+				return 498115499 /* GXTEntry: "Guerra Poncho" */;
 			case 13103:
-				return 48650079;
+				return 48650079 /* GXTEntry: "Gatlinburg Hat" */;
 			case 13104:
-				return -795654029;
+				return -795654029 /* GXTEntry: "Dagenhart Hat" */;
 			case 13105:
-				return 860362352;
+				return 860362352 /* GXTEntry: "Pittsburg Hat" */;
 			case 13106:
-				return 348697480;
+				return 348697480 /* GXTEntry: "Wilkesboro Hat" */;
 			case 13107:
 				return joaat("clothing_style_m_r1_buckle_000");
 			case 13108:
@@ -68299,7 +68299,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13138:
 				return joaat("clothing_style_m_r3_ring_000");
 			case 13139:
-				return 474026074;
+				return 474026074 /* GXTEntry: "Darrow Buckle" */;
 			case 13140:
 				return joaat("clothing_style_m_r4_gunbelt_000");
 			case 13141:
@@ -68349,11 +68349,11 @@ int func_1357(int iParam0, int iParam1)
 			case 13163:
 				return 1023505719 /* GXTEntry: "Olmo Shirt" */;
 			case 13164:
-				return 206541780;
+				return 206541780 /* GXTEntry: "Caugherty Shirt" */;
 			case 13165:
-				return -1751209496;
+				return -1751209496 /* GXTEntry: "Stringham Shirt" */;
 			case 13166:
-				return -1290510125;
+				return -1290510125 /* GXTEntry: "Lautnip Shirt" */;
 			case 13167:
 				return 89986976 /* GXTEntry: "Darned Stockings" */;
 			case 13168:
@@ -68371,9 +68371,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13174:
 				return 385140117 /* GXTEntry: "Pelt Half Chaps" */;
 			case 13175:
-				return -929814319;
+				return -929814319 /* GXTEntry: "Cockrell Half Chaps" */;
 			case 13176:
-				return -1143304354;
+				return -1143304354 /* GXTEntry: "Gordillo Half Chaps" */;
 			case 13177:
 				return -1629999850 /* GXTEntry: "Gerden Copper Spurs" */;
 			case 13178:
@@ -68431,13 +68431,13 @@ int func_1357(int iParam0, int iParam1)
 			case 13204:
 				return 172106965 /* GXTEntry: "The Londonderry" */;
 			case 13205:
-				return -1638413300;
+				return -1638413300 /* GXTEntry: "The Gatlinburg" */;
 			case 13206:
-				return -2075092994;
+				return -2075092994 /* GXTEntry: "The Dagenhart" */;
 			case 13207:
-				return 1909846793;
+				return 1909846793 /* GXTEntry: "The Pittsburg" */;
 			case 13208:
-				return -242716048;
+				return -242716048 /* GXTEntry: "The Wilkesboro" */;
 			case 13209:
 				return -769375000 /* GXTEntry: "The Monterey" */;
 			case 13210:
@@ -68487,9 +68487,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13232:
 				return -1342577797 /* GXTEntry: "Killiman Vest" */;
 			case 13233:
-				return -1812059260;
+				return -1812059260 /* GXTEntry: "Barras Vest" */;
 			case 13234:
-				return 1997697453;
+				return 1997697453 /* GXTEntry: "Churchwell Vest" */;
 			case 13235:
 				return -376863794 /* GXTEntry: "The Blackrose Bounty Hunter" */;
 			case 13236:
@@ -68517,7 +68517,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13247:
 				return 1453464834 /* GXTEntry: "The Copperhead Enforcer" */;
 			case 13248:
-				return 1087171866 /* GXTEntry: "The Déchaux" */;
+				return 1087171866 /* GXTEntry: "The D�chaux" */;
 			case 13249:
 				return 2040061621 /* GXTEntry: "The Mercer" */;
 			case 13250:
@@ -68717,7 +68717,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13347:
 				return -1948295013 /* GXTEntry: "Nickel" */;
 			case 13348:
-				return 2116797748;
+				return 2116797748 /* GXTEntry: "Blued Steel" */;
 			case 13349:
 				return 1908517984 /* GXTEntry: "Blackened Steel" */;
 			case 13350:
@@ -68817,7 +68817,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13397:
 				return -90831918 /* GXTEntry: "Ram" */;
 			case 13398:
-				return 2110982730;
+				return 2110982730 /* GXTEntry: "Flying Eagle" */;
 			case 13399:
 				return -1540008178 /* GXTEntry: "Bear" */;
 			case 13400:
@@ -68837,7 +68837,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13407:
 				return -1862569422 /* GXTEntry: "Ebony" */;
 			case 13408:
-				return 2131971682;
+				return 2131971682 /* GXTEntry: "Walnut" */;
 			case 13409:
 				return -2072914516 /* GXTEntry: "Mahogany" */;
 			case 13410:
@@ -68879,9 +68879,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13428:
 				return 1876666299 /* GXTEntry: "Copper" */;
 			case 13429:
-				return -1468648029;
+				return -1468648029 /* GXTEntry: "Krampus Variant" */;
 			case 13430:
-				return -2141733109;
+				return -2141733109 /* GXTEntry: "Moonshiner Variant" */;
 			case 13431:
 				return -1332551708 /* GXTEntry: "Iron" */;
 			case 13432:
@@ -68955,57 +68955,57 @@ int func_1357(int iParam0, int iParam1)
 			case 13466:
 				return 1313932214 /* GXTEntry: "Pebble" */;
 			case 13467:
-				return -586336057;
+				return -586336057 /* GXTEntry: "Cream" */;
 			case 13468:
-				return -796483654;
+				return -796483654 /* GXTEntry: "Ash" */;
 			case 13469:
-				return -240590338;
+				return -240590338 /* GXTEntry: "Tobacco" */;
 			case 13470:
-				return -488946589;
+				return -488946589 /* GXTEntry: "Cherry" */;
 			case 13471:
-				return -226761816;
+				return -226761816 /* GXTEntry: "Crimson" */;
 			case 13472:
-				return -466467051;
+				return -466467051 /* GXTEntry: "Ginger" */;
 			case 13473:
-				return 372878115;
+				return 372878115 /* GXTEntry: "Sage" */;
 			case 13474:
-				return 143069118;
+				return 143069118 /* GXTEntry: "Cobalt" */;
 			case 13475:
 				return -1954915781 /* GXTEntry: "Black" */;
 			case 13476:
-				return -1453572442;
+				return -1453572442 /* GXTEntry: "White" */;
 			case 13477:
-				return -51976774;
+				return -51976774 /* GXTEntry: "Cyan" */;
 			case 13478:
-				return -835155874;
+				return -835155874 /* GXTEntry: "Saffron" */;
 			case 13479:
-				return -530961247;
+				return -530961247 /* GXTEntry: "Amethyst" */;
 			case 13480:
-				return 868471671;
+				return 868471671 /* GXTEntry: "Magenta" */;
 			case 13481:
-				return 1174304748;
+				return 1174304748 /* GXTEntry: "Scarlet" */;
 			case 13482:
-				return 860279425;
+				return 860279425 /* GXTEntry: "Amber" */;
 			case 13483:
-				return 1160083006;
+				return 1160083006 /* GXTEntry: "Emerald" */;
 			case 13484:
-				return 399711130;
+				return 399711130 /* GXTEntry: "Indigo" */;
 			case 13485:
-				return 2039637799;
+				return 2039637799 /* GXTEntry: "Russet" */;
 			case 13486:
-				return -1381314725;
+				return -1381314725 /* GXTEntry: "Coffee" */;
 			case 13487:
-				return 1540139932;
+				return 1540139932 /* GXTEntry: "Umber" */;
 			case 13488:
-				return -1842440093;
+				return -1842440093 /* GXTEntry: "Charcoal" */;
 			case 13489:
-				return -1061325440;
+				return -1061325440 /* GXTEntry: "Walnut" */;
 			case 13490:
-				return -1806099276;
+				return -1806099276 /* GXTEntry: "Natural" */;
 			case 13491:
-				return -1039599597;
+				return -1039599597 /* GXTEntry: "Chestnut" */;
 			case 13492:
-				return -137600103;
+				return -137600103 /* GXTEntry: "Hickory" */;
 			case 13493:
 				return 1170373926 /* GXTEntry: "White" */;
 			case 13494:
@@ -69085,7 +69085,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13531:
 				return -1241374539 /* GXTEntry: "Bocote" */;
 			case 13532:
-				return 2135241532;
+				return 2135241532 /* GXTEntry: "Dark Rosewood" */;
 			case 13533:
 				return -781428855 /* GXTEntry: "Bubinga" */;
 			case 13534:
@@ -69097,7 +69097,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13537:
 				return 1808791845 /* GXTEntry: "Mahogany" */;
 			case 13538:
-				return 2115870144;
+				return 2115870144 /* GXTEntry: "Maple" */;
 			case 13539:
 				return -1058004100 /* GXTEntry: "Mesquite" */;
 			case 13540:
@@ -69173,7 +69173,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13575:
 				return 1234620219 /* GXTEntry: "Improved Sights" */;
 			case 13576:
-				return -108436614 /* GXTEntry: "Collector Barrel" */;
+				return -108436614;
 			case 13577:
 				return 101620928 /* GXTEntry: "Long Barrel" */;
 			case 13578:
@@ -69181,7 +69181,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13579:
 				return 1349850451 /* GXTEntry: "Basic Grip" */;
 			case 13580:
-				return -49512990 /* GXTEntry: "Collector Grip" */;
+				return -49512990;
 			case 13581:
 				return -153641544 /* GXTEntry: "Ebony Grip" */;
 			case 13582:
@@ -69189,7 +69189,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13583:
 				return 1693826660 /* GXTEntry: "Pearl Grip" */;
 			case 13584:
-				return -858357099 /* GXTEntry: "Collector Sights" */;
+				return -858357099;
 			case 13585:
 				return -1364839165 /* GXTEntry: "Stock Sights" */;
 			case 13586:
@@ -69209,9 +69209,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13593:
 				return -267035269;
 			case 13594:
-				return -819094336 /* GXTEntry: "Wrap" */;
+				return -819094336 /* GXTEntry: "Leather Wrap" */;
 			case 13595:
-				return -2006479051;
+				return -2006479051 /* GXTEntry: "Cloth Wrap" */;
 			case 13596:
 				return 1116666443 /* GXTEntry: "Strap" */;
 			case 13597:
@@ -69225,9 +69225,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13601:
 				return 431616357 /* GXTEntry: "Improved Sights" */;
 			case 13602:
-				return -1013433120 /* GXTEntry: "Wrap" */;
+				return -1013433120 /* GXTEntry: "Leather Wrap" */;
 			case 13603:
-				return 1213912331;
+				return 1213912331 /* GXTEntry: "Cloth Wrap" */;
 			case 13604:
 				return 1885705815 /* GXTEntry: "Basic Grain" */;
 			case 13605:
@@ -69239,9 +69239,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13608:
 				return -1165022028 /* GXTEntry: "Improved Sights" */;
 			case 13609:
-				return 327383714 /* GXTEntry: "Wrap" */;
+				return 327383714 /* GXTEntry: "Leather Wrap" */;
 			case 13610:
-				return 557684246;
+				return 557684246 /* GXTEntry: "Cloth Wrap" */;
 			case 13611:
 				return -742525284 /* GXTEntry: "Stock Sights" */;
 			case 13612:
@@ -69251,7 +69251,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13614:
 				return -1073505101 /* GXTEntry: "Basic Grain" */;
 			case 13615:
-				return -385288709 /* GXTEntry: "Collector Grain" */;
+				return -385288709;
 			case 13616:
 				return 108554778 /* GXTEntry: "Wide Grain" */;
 			case 13617:
@@ -69261,17 +69261,17 @@ int func_1357(int iParam0, int iParam1)
 			case 13619:
 				return 1894027710 /* GXTEntry: "Improved Sights" */;
 			case 13620:
-				return 1799288707 /* GXTEntry: "Collector Wrap" */;
+				return 1799288707;
 			case 13621:
-				return 1673079985 /* GXTEntry: "Wrap" */;
+				return 1673079985 /* GXTEntry: "Leather Wrap" */;
 			case 13622:
-				return -974982909;
+				return -974982909 /* GXTEntry: "Cloth Wrap" */;
 			case 13623:
 				return -600565073 /* GXTEntry: "Long Barrel" */;
 			case 13624:
 				return 1657142792 /* GXTEntry: "Short Barrel" */;
 			case 13625:
-				return 2144486002;
+				return 2144486002 /* GXTEntry: "Basic Grip" */;
 			case 13626:
 				return 1645085645 /* GXTEntry: "Ebony Grip" */;
 			case 13627:
@@ -69327,27 +69327,27 @@ int func_1357(int iParam0, int iParam1)
 			case 13652:
 				return -487256647;
 			case 13653:
-				return -1684500628;
+				return -1684500628 /* GXTEntry: "Long Barrel" */;
 			case 13654:
-				return -95541890;
+				return -95541890 /* GXTEntry: "Short Barrel" */;
 			case 13655:
-				return 962241027;
+				return 962241027 /* GXTEntry: "Basic Grip" */;
 			case 13656:
 				return 2014172276;
 			case 13657:
-				return -1651316916;
+				return -1651316916 /* GXTEntry: "Ebony Grip" */;
 			case 13658:
-				return 1559968953;
+				return 1559968953 /* GXTEntry: "Ironwood Grip" */;
 			case 13659:
-				return 1019786905;
+				return 1019786905 /* GXTEntry: "Pearl Grip" */;
 			case 13660:
 				return -571318630;
 			case 13661:
-				return -1994266763;
+				return -1994266763 /* GXTEntry: "Stock Sights" */;
 			case 13662:
-				return -2001035717;
+				return -2001035717 /* GXTEntry: "Improved Sights" */;
 			case 13663:
-				return -880097252 /* GXTEntry: "Bounty Hunter Barrel" */;
+				return -880097252;
 			case 13664:
 				return -467044313 /* GXTEntry: "Long Barrel" */;
 			case 13665:
@@ -69355,7 +69355,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13666:
 				return 1036385716 /* GXTEntry: "Basic Grip" */;
 			case 13667:
-				return 57366885 /* GXTEntry: "Bounty Hunter Grip" */;
+				return 57366885;
 			case 13668:
 				return -716143865 /* GXTEntry: "Ebony Grip" */;
 			case 13669:
@@ -69363,7 +69363,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13670:
 				return -1368261825 /* GXTEntry: "Pearl Grip" */;
 			case 13671:
-				return -1391305890 /* GXTEntry: "Bounty Hunter Sights" */;
+				return -1391305890;
 			case 13672:
 				return -406421242 /* GXTEntry: "Stock Sights" */;
 			case 13673:
@@ -69371,7 +69371,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13674:
 				return 1314436576 /* GXTEntry: "Basic Grain" */;
 			case 13675:
-				return 1043980328 /* GXTEntry: "Bounty Hunter Grain" */;
+				return 1043980328;
 			case 13676:
 				return -6205275 /* GXTEntry: "Wide Grain" */;
 			case 13677:
@@ -69381,9 +69381,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13679:
 				return 1311478812 /* GXTEntry: "Improved Sights" */;
 			case 13680:
-				return 1419411400 /* GXTEntry: "Wrap" */;
+				return 1419411400 /* GXTEntry: "Leather Wrap" */;
 			case 13681:
-				return 1905286511;
+				return 1905286511 /* GXTEntry: "Cloth Wrap" */;
 			case 13682:
 				return -2102806603 /* GXTEntry: "Basic Clip" */;
 			case 13683:
@@ -69399,9 +69399,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13688:
 				return -298805818 /* GXTEntry: "Improved Sights" */;
 			case 13689:
-				return -1649438395 /* GXTEntry: "Wrap" */;
+				return -1649438395 /* GXTEntry: "Leather Wrap" */;
 			case 13690:
-				return 1958362959;
+				return 1958362959 /* GXTEntry: "Cloth Wrap" */;
 			case 13691:
 				return 712231239 /* GXTEntry: "Strap" */;
 			case 13692:
@@ -69409,9 +69409,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13693:
 				return -555346213 /* GXTEntry: "Improved Sights" */;
 			case 13694:
-				return 1373106357 /* GXTEntry: "Wrap" */;
+				return 1373106357 /* GXTEntry: "Leather Wrap" */;
 			case 13695:
-				return 627382224;
+				return 627382224 /* GXTEntry: "Cloth Wrap" */;
 			case 13696:
 				return -404520310 /* GXTEntry: "Short Scope" */;
 			case 13697:
@@ -69429,9 +69429,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13703:
 				return -1747228523 /* GXTEntry: "Improved Sights" */;
 			case 13704:
-				return -960882062 /* GXTEntry: "Wrap" */;
+				return -960882062 /* GXTEntry: "Leather Wrap" */;
 			case 13705:
-				return -722454818;
+				return -722454818 /* GXTEntry: "Cloth Wrap" */;
 			case 13706:
 				return -1296971123;
 			case 13707:
@@ -69445,9 +69445,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13711:
 				return 36111154 /* GXTEntry: "Straight Grain" */;
 			case 13712:
-				return 1485926521 /* GXTEntry: "Wrap" */;
+				return 1485926521 /* GXTEntry: "Leather Wrap" */;
 			case 13713:
-				return 1800607228;
+				return 1800607228 /* GXTEntry: "Cloth Wrap" */;
 			case 13714:
 				return -1220336138 /* GXTEntry: "No Scope" */;
 			case 13715:
@@ -69679,7 +69679,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13828:
 				return -211478373;
 			case 13829:
-				return 2123648621;
+				return 2123648621 /* GXTEntry: "Iron" */;
 			case 13830:
 				return -679804867 /* GXTEntry: "Nickel" */;
 			case 13831:
@@ -69783,9 +69783,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13880:
 				return 1465866430 /* GXTEntry: "Improved Sights" */;
 			case 13881:
-				return -240387438 /* GXTEntry: "Wrap" */;
+				return -240387438 /* GXTEntry: "Leather Wrap" */;
 			case 13882:
-				return -470655201;
+				return -470655201 /* GXTEntry: "Cloth Wrap" */;
 			case 13883:
 				return -787047797 /* GXTEntry: "Baroque" */;
 			case 13884:
@@ -69827,7 +69827,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13902:
 				return 1371373184 /* GXTEntry: "Straight Grain" */;
 			case 13903:
-				return -169059359 /* GXTEntry: "Trader Grain" */;
+				return -169059359;
 			case 13904:
 				return 371627529 /* GXTEntry: "Basic Grain" */;
 			case 13905:
@@ -69835,15 +69835,15 @@ int func_1357(int iParam0, int iParam1)
 			case 13906:
 				return -364352498 /* GXTEntry: "Straight Grain" */;
 			case 13907:
-				return -1850951144 /* GXTEntry: "Trader Grain" */;
+				return -1850951144;
 			case 13908:
 				return -660073031 /* GXTEntry: "Stock Sights" */;
 			case 13909:
 				return -1381877519 /* GXTEntry: "Improved Sights" */;
 			case 13910:
-				return 1509466794 /* GXTEntry: "Wrap" */;
+				return 1509466794 /* GXTEntry: "Leather Wrap" */;
 			case 13911:
-				return 930176412;
+				return 930176412 /* GXTEntry: "Cloth Wrap" */;
 			case 13912:
 				return 1507247743 /* GXTEntry: "Long Barrel" */;
 			case 13913:
@@ -69859,9 +69859,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13918:
 				return 313236058 /* GXTEntry: "Straight Grain" */;
 			case 13919:
-				return -1356443316 /* GXTEntry: "Wrap" */;
+				return -1356443316 /* GXTEntry: "Leather Wrap" */;
 			case 13920:
-				return -856257300;
+				return -856257300 /* GXTEntry: "Cloth Wrap" */;
 			case 13921:
 				return 537597023;
 			case 13922:
@@ -69885,9 +69885,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13931:
 				return -614716351;
 			case 13932:
-				return 635989042 /* GXTEntry: "Wrap" */;
+				return 635989042 /* GXTEntry: "Leather Wrap" */;
 			case 13933:
-				return -221706764;
+				return -221706764 /* GXTEntry: "Cloth Wrap" */;
 			case 13934:
 				return 2041665692 /* GXTEntry: "Long Barrel" */;
 			case 13935:
@@ -69903,9 +69903,9 @@ int func_1357(int iParam0, int iParam1)
 			case 13940:
 				return 161409167 /* GXTEntry: "Improved Sights" */;
 			case 13941:
-				return 1680068337 /* GXTEntry: "Wrap" */;
+				return 1680068337 /* GXTEntry: "Leather Wrap" */;
 			case 13942:
-				return -1332582451;
+				return -1332582451 /* GXTEntry: "Cloth Wrap" */;
 			case 13943:
 				return -1922168936 /* GXTEntry: "Basic Grain" */;
 			case 13944:
@@ -70387,13 +70387,13 @@ int func_1357(int iParam0, int iParam1)
 			case 14176:
 				return joaat("coupon_offer_camp_tent_50_percent");
 			case 14177:
-				return 127331809;
+				return 127331809 /* GXTEntry: "Select Coats" */;
 			case 14178:
-				return 1624823877;
+				return 1624823877 /* GXTEntry: "Select Shotguns" */;
 			case 14179:
 				return joaat("coupon_offer_coat_rank_15_or_lower_discount_50_percent");
 			case 14180:
-				return 1112741586;
+				return 1112741586 /* GXTEntry: "Select Coats" */;
 			case 14181:
 				return joaat("coupon_offer_gating_bounty_hunter_discount_10_gold");
 			case 14182:
@@ -70457,17 +70457,17 @@ int func_1357(int iParam0, int iParam1)
 			case 14211:
 				return joaat("coupon_offer_horse_norfolk_discount_50_percent");
 			case 14212:
-				return -1114783058;
+				return -1114783058 /* GXTEntry: "Select Off-Hand Holsters" */;
 			case 14213:
 				return joaat("coupon_offer_outfit_discount_50_percent");
 			case 14214:
-				return -1238116379;
+				return -1238116379 /* GXTEntry: "Select Outfits" */;
 			case 14215:
 				return joaat("coupon_offer_saddle_discount_40_percent");
 			case 14216:
 				return joaat("coupon_offer_stable_slot_30_percent");
 			case 14217:
-				return 1836501783;
+				return 1836501783 /* GXTEntry: "Stable Stall" */;
 			case 14218:
 				return joaat("coupon_offer_stable_slot_40_percent");
 			case 14219:
@@ -70499,7 +70499,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14232:
 				return joaat("coupon_offer_weapon_discount_30_percent");
 			case 14233:
-				return 738831956;
+				return 738831956 /* GXTEntry: "Select Weapons" */;
 			case 14234:
 				return joaat("coupon_offer_weapon_discount_40_percent");
 			case 14235:
@@ -70829,7 +70829,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14397:
 				return joaat("DOCUMENT_CARD_VIP_MEMBERSHIP");
 			case 14398:
-				return 1022314727;
+				return 1022314727 /* GXTEntry: "The Outlaw Pass No. 2" */;
 			case 14399:
 				return -171130052 /* GXTEntry: "Map - Arrowheads" */;
 			case 14400:
@@ -70847,7 +70847,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14406:
 				return -1017335808 /* GXTEntry: "Map - Tarot Cards" */;
 			case 14407:
-				return 2147314556;
+				return 2147314556 /* GXTEntry: "Map - American Wild Flowers" */;
 			case 14408:
 				return 1474207528;
 			case 14409:
@@ -70881,9 +70881,9 @@ int func_1357(int iParam0, int iParam1)
 			case 14423:
 				return 1227784712 /* GXTEntry: "Trader Events Letter" */;
 			case 14424:
-				return 1397875340;
+				return 1397875340 /* GXTEntry: "Business Opportunities Letter" */;
 			case 14425:
-				return 1488121693;
+				return 1488121693 /* GXTEntry: "Business Opportunities Letter" */;
 			case 14426:
 				return -492264119 /* GXTEntry: "Letter from Cripps" */;
 			case 14427:
@@ -70891,19 +70891,19 @@ int func_1357(int iParam0, int iParam1)
 			case 14428:
 				return joaat("DOCUMENT_LETTER_LEM_1");
 			case 14429:
-				return -2094650889;
+				return -2094650889 /* GXTEntry: "Prisoner Transfer Document" */;
 			case 14430:
 				return joaat("DOCUMENT_LETTER_LEM_2");
 			case 14431:
-				return -761555228;
+				return -761555228 /* GXTEntry: "Prisoner Transfer Document" */;
 			case 14432:
 				return joaat("DOCUMENT_LETTER_LEM_3");
 			case 14433:
-				return -1141899206;
+				return -1141899206 /* GXTEntry: "Prisoner Transfer Document" */;
 			case 14434:
 				return joaat("DOCUMENT_LETTER_MOONSHINER_HIDEOUTS");
 			case 14435:
-				return 1358081953;
+				return 1358081953 /* GXTEntry: "Bootlegger Opportunities Letter" */;
 			case 14436:
 				return joaat("DOCUMENT_LETTER_PVP_BOUNTY_HUNTER");
 			case 14437:
@@ -70947,7 +70947,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14456:
 				return -1956945009 /* GXTEntry: "Collectibles Request - Loser\'s Hand" */;
 			case 14457:
-				return -1521821001 /* GXTEntry: "Collectibles Request - Naturalist" */;
+				return -1521821001;
 			case 14458:
 				return 1048572194 /* GXTEntry: "Collectibles Request - Night Watch" */;
 			case 14459:
@@ -71001,7 +71001,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14483:
 				return -120865369 /* GXTEntry: "Incendiary Buckshot Pamphlet" */;
 			case 14484:
-				return 2143732549;
+				return 2143732549 /* GXTEntry: "Incendiary Buckshot Pamphlet" */;
 			case 14485:
 				return joaat("DOCUMENT_PAMPHLET_INGREDIENTS_SATCHEL");
 			case 14486:
@@ -71021,53 +71021,53 @@ int func_1357(int iParam0, int iParam1)
 			case 14493:
 				return 1432494875 /* GXTEntry: "Fire Bottle Pamphlet" */;
 			case 14494:
-				return -1843390463;
+				return -1843390463 /* GXTEntry: "Berry Mint Moonshine Recipe" */;
 			case 14495:
-				return -648717950;
+				return -648717950 /* GXTEntry: "Berry Mint Moonshine Recipe" */;
 			case 14496:
-				return -1535198018;
+				return -1535198018 /* GXTEntry: "Tropical Punch Moonshine Recipe" */;
 			case 14497:
-				return 1454266608;
+				return 1454266608 /* GXTEntry: "Tropical Punch Moonshine Recipe" */;
 			case 14498:
-				return 1738621704;
+				return 1738621704 /* GXTEntry: "Wild Cider Moonshine Recipe" */;
 			case 14499:
-				return -1318742007;
+				return -1318742007 /* GXTEntry: "Wild Cider Moonshine Recipe" */;
 			case 14500:
-				return 1750156392;
+				return 1750156392 /* GXTEntry: "Evergreen Moonshine Recipe" */;
 			case 14501:
-				return 2008588872;
+				return 2008588872 /* GXTEntry: "Evergreen Moonshine Recipe" */;
 			case 14502:
 				return joaat("DOCUMENT_PAMPHLET_MOONSHINE_05");
 			case 14503:
-				return -1459100400;
+				return -1459100400 /* GXTEntry: "Berry Cobbler Moonshine Recipe" */;
 			case 14504:
-				return 1299615411;
+				return 1299615411 /* GXTEntry: "Apple Berry Crumb Moonshine Recipe" */;
 			case 14505:
-				return 1671213422;
+				return 1671213422 /* GXTEntry: "Apple Berry Crumb Moonshine Recipe" */;
 			case 14506:
 				return joaat("DOCUMENT_PAMPHLET_MOONSHINE_07");
 			case 14507:
-				return -1231836222;
+				return -1231836222 /* GXTEntry: "Wild Creek Moonshine Recipe" */;
 			case 14508:
-				return 840816638;
+				return 840816638 /* GXTEntry: "Agarita Sunrise Moonshine Recipe" */;
 			case 14509:
-				return -1136129050;
+				return -1136129050 /* GXTEntry: "Agarita Sunrise Moonshine Recipe" */;
 			case 14510:
 				return joaat("DOCUMENT_PAMPHLET_MOONSHINE_09");
 			case 14511:
-				return 1885567966;
+				return 1885567966 /* GXTEntry: "Spiced Island Moonshine Recipe" */;
 			case 14512:
 				return joaat("DOCUMENT_PAMPHLET_MOONSHINE_10");
 			case 14513:
-				return -170216184;
+				return -170216184 /* GXTEntry: "Poison Poppy\'s Moonshine Recipe" */;
 			case 14514:
-				return 2141714005;
+				return 2141714005 /* GXTEntry: "Poison Arrow Pamphlet" */;
 			case 14515:
 				return -770894319 /* GXTEntry: "Poison Arrow Pamphlet" */;
 			case 14516:
 				return joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE");
 			case 14517:
-				return -2095738107;
+				return -2095738107 /* GXTEntry: "Toxic Moonshine Pamphlet" */;
 			case 14518:
 				return joaat("DOCUMENT_PAMPHLET_POISON_THROWING_KNIFE");
 			case 14519:
@@ -71137,15 +71137,15 @@ int func_1357(int iParam0, int iParam1)
 			case 14551:
 				return joaat("DOCUMENT_PAMPHLET_SKILL_MASTER_DISTILLER");
 			case 14552:
-				return 1528809204;
+				return 1528809204 /* GXTEntry: "Master Distiller Skill Page" */;
 			case 14553:
 				return joaat("DOCUMENT_PAMPHLET_SKILL_MS_PROTECTION");
 			case 14554:
-				return -1938277277;
+				return -1938277277 /* GXTEntry: "Buyer Protection Skill Page" */;
 			case 14555:
 				return joaat("DOCUMENT_PAMPHLET_SKILL_NEW_ORDER");
 			case 14556:
-				return 2107181681;
+				return 2107181681 /* GXTEntry: "New Buyer Order Skill Page" */;
 			case 14557:
 				return joaat("DOCUMENT_PAMPHLET_SKILL_PERCEPTION");
 			case 14558:
@@ -71349,45 +71349,45 @@ int func_1357(int iParam0, int iParam1)
 			case 14657:
 				return 1055890910;
 			case 14658:
-				return 1046181202;
+				return 1046181202 /* GXTEntry: "Base Quality Stew" */;
 			case 14659:
-				return -1171462349;
+				return -1171462349 /* GXTEntry: "Superior Quality Stew" */;
 			case 14660:
-				return -1563450693;
+				return -1563450693 /* GXTEntry: "Son of a Gun Stew" */;
 			case 14661:
-				return -669703557;
+				return -669703557 /* GXTEntry: "Fruit and Bird Medley" */;
 			case 14662:
-				return -1437186306;
+				return -1437186306 /* GXTEntry: "Herbalist\'s Heaven" */;
 			case 14663:
-				return 1879593571;
+				return 1879593571 /* GXTEntry: "Pork and Apple Stew" */;
 			case 14664:
-				return -2109344034;
+				return -2109344034 /* GXTEntry: "Stew o\' the Earth" */;
 			case 14665:
-				return -1806099704;
+				return -1806099704 /* GXTEntry: "Guarma Stew" */;
 			case 14666:
-				return -1499480171;
+				return -1499480171 /* GXTEntry: "Minty Lamb and Peas Stew" */;
 			case 14667:
-				return 1934214136;
+				return 1934214136 /* GXTEntry: "Drunkard\'s Lunch" */;
 			case 14668:
-				return -2053642092;
+				return -2053642092 /* GXTEntry: "Cowboy Bean Stew" */;
 			case 14669:
-				return 1454312131;
+				return 1454312131 /* GXTEntry: "Saint Denis Stew" */;
 			case 14670:
-				return 1023793009;
+				return 1023793009 /* GXTEntry: "Cowpoke Supper" */;
 			case 14671:
-				return 1271821570;
+				return 1271821570 /* GXTEntry: "Colter Hot-Pot" */;
 			case 14672:
-				return 429428887;
+				return 429428887 /* GXTEntry: "Chocolate Game Chilli" */;
 			case 14673:
-				return 812236345;
+				return 812236345 /* GXTEntry: "Venison and Mushroom Stew" */;
 			case 14674:
-				return -30746180;
+				return -30746180 /* GXTEntry: "Fish o\' the Sea Stew" */;
 			case 14675:
-				return 1689071181;
+				return 1689071181 /* GXTEntry: "High Quality Stew" */;
 			case 14676:
-				return 1856073229;
+				return 1856073229 /* GXTEntry: "Low Quality Stew" */;
 			case 14677:
-				return -1612693182;
+				return -1612693182 /* GXTEntry: "Medium Quality Stew" */;
 			case 14678:
 				return 1938417563;
 			case 14679:
@@ -71443,7 +71443,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14704:
 				return 1142681594 /* GXTEntry: "Arabian~n~Black Coat" */;
 			case 14705:
-				return 2130706226;
+				return 2130706226 /* GXTEntry: "Arabian~n~Grey Coat" */;
 			case 14706:
 				return 1214981718 /* GXTEntry: "Arabian~n~Red Chestnut Coat" */;
 			case 14707:
@@ -71455,7 +71455,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14710:
 				return 1686036388 /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */;
 			case 14711:
-				return 2125477381;
+				return 2125477381 /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */;
 			case 14712:
 				return 1808724704 /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */;
 			case 14713:
@@ -71555,17 +71555,17 @@ int func_1357(int iParam0, int iParam1)
 			case 14760:
 				return 1741899492 /* GXTEntry: "Nokota~n~White Roan Coat" */;
 			case 14761:
-				return -2145947333;
+				return -2145947333 /* GXTEntry: "Norfolk Roadster~n~Black Coat" */;
 			case 14762:
-				return -1116314766;
+				return -1116314766 /* GXTEntry: "Norfolk Roadster~n~Dappled Buckskin Coat" */;
 			case 14763:
-				return -1240970285;
+				return -1240970285 /* GXTEntry: "Norfolk Roadster~n~Piebald Roan Coat" */;
 			case 14764:
-				return -1933497088;
+				return -1933497088 /* GXTEntry: "Norfolk Roadster~n~Rose Grey Coat" */;
 			case 14765:
-				return 156528857;
+				return 156528857 /* GXTEntry: "Norfolk Roadster~n~Speckled Grey Coat" */;
 			case 14766:
-				return -877141885;
+				return -877141885 /* GXTEntry: "Norfolk Roadster~n~Spotted Tricolor Coat" */;
 			case 14767:
 				return 1096294193 /* GXTEntry: "Shire~n~Dark Bay Coat" */;
 			case 14768:
@@ -71623,7 +71623,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14794:
 				return -1824861640 /* GXTEntry: "Nokota" */;
 			case 14795:
-				return 683067560;
+				return 683067560 /* GXTEntry: "Norfolk Roadster" */;
 			case 14796:
 				return joaat("horse_breed_style_norfolk_roadster_tier_1");
 			case 14797:
@@ -72097,7 +72097,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15025:
 				return -388128145 /* GXTEntry: "Male" */;
 			case 15026:
-				return 2145038577;
+				return 2145038577 /* GXTEntry: "Medium - Black" */;
 			case 15027:
 				return 1027550123 /* GXTEntry: "Medium - Blonde" */;
 			case 15028:
@@ -72427,19 +72427,19 @@ int func_1357(int iParam0, int iParam1)
 			case 15190:
 				return joaat("horse_equipment_mask_new_004_tint_001");
 			case 15191:
-				return 1969454269;
+				return 1969454269 /* GXTEntry: "Bronze & Crimson" */;
 			case 15192:
-				return 1251551017;
+				return 1251551017 /* GXTEntry: "Crimson & Tan" */;
 			case 15193:
-				return 1311845985;
+				return 1311845985 /* GXTEntry: "Charcoal & Crimson" */;
 			case 15194:
 				return joaat("horse_equipment_mask_new_005_tint_001");
 			case 15195:
-				return 2006479699;
+				return 2006479699 /* GXTEntry: "Walnut & Charcoal" */;
 			case 15196:
-				return -1385308419;
+				return -1385308419 /* GXTEntry: "Smoke & Chestnut" */;
 			case 15197:
-				return 1529002600;
+				return 1529002600 /* GXTEntry: "Ash & Hickory" */;
 			case 15198:
 				return 387267141 /* GXTEntry: "Walnut & Ash" */;
 			case 15199:
@@ -72505,7 +72505,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15229:
 				return 337019456 /* GXTEntry: "Charcoal & Ash" */;
 			case 15230:
-				return 2144885186;
+				return 2144885186 /* GXTEntry: "Hickory & Chestnut" */;
 			case 15231:
 				return -2014043657 /* GXTEntry: "Weathered Chestnut & Charcoal" */;
 			case 15232:
@@ -72521,7 +72521,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15237:
 				return -1071157298 /* GXTEntry: "Brown Reins" */;
 			case 15238:
-				return 2146931820;
+				return 2146931820 /* GXTEntry: "None" */;
 			case 15239:
 				return -991747808 /* GXTEntry: "Charcoal & Tan" */;
 			case 15240:
@@ -72541,7 +72541,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15247:
 				return 1457145108 /* GXTEntry: "Weathered Hickory & Tan" */;
 			case 15248:
-				return 2146637637;
+				return 2146637637 /* GXTEntry: "Tan" */;
 			case 15249:
 				return -1338190000 /* GXTEntry: "Chestnut & Gold" */;
 			case 15250:
@@ -72729,9 +72729,9 @@ int func_1357(int iParam0, int iParam1)
 			case 15341:
 				return joaat("horse_equipment_style_mask_new_003");
 			case 15342:
-				return -2059246413;
+				return -2059246413 /* GXTEntry: "Horned Demon Mask" */;
 			case 15343:
-				return 1417380646;
+				return 1417380646 /* GXTEntry: "Sabretooth Mask" */;
 			case 15344:
 				return 2106568267 /* GXTEntry: "McClelland Saddle" */;
 			case 15345:
@@ -72777,7 +72777,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15365:
 				return 388061392 /* GXTEntry: "Trail Saddle" */;
 			case 15366:
-				return 2120382168;
+				return 2120382168 /* GXTEntry: "Trail Saddle" */;
 			case 15367:
 				return 1832906453 /* GXTEntry: "Medium - Black" */;
 			case 15368:
@@ -73185,7 +73185,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15569:
 				return 796723886 /* GXTEntry: "Hissy Fit" */;
 			case 15570:
-				return 877603501;
+				return 877603501 /* GXTEntry: "Howl" */;
 			case 15571:
 				return -415456998 /* GXTEntry: "Let\'s Craft" */;
 			case 15572:
@@ -73213,25 +73213,25 @@ int func_1357(int iParam0, int iParam1)
 			case 15583:
 				return 1939251934 /* GXTEntry: "Shoot the Sky" */;
 			case 15584:
-				return -2124325981;
+				return -2124325981 /* GXTEntry: "Smoke Cigar" */;
 			case 15585:
-				return -1954574613;
+				return -1954574613 /* GXTEntry: "Smoke Cigarette" */;
 			case 15586:
 				return -2106738342 /* GXTEntry: "Spit" */;
 			case 15587:
 				return -1691237868 /* GXTEntry: "Let\'s Stop Here" */;
 			case 15588:
-				return -293533575;
+				return -293533575 /* GXTEntry: "Awkward Dance" */;
 			case 15589:
-				return -256960614;
+				return -256960614 /* GXTEntry: "Carefree Dance" */;
 			case 15590:
 				return joaat("KIT_EMOTE_DANCE_CAREFREE_B_1");
 			case 15591:
 				return joaat("KIT_EMOTE_DANCE_CONFIDENT_B_1");
 			case 15592:
-				return -1790393337;
+				return -1790393337 /* GXTEntry: "Tipsy Dance" */;
 			case 15593:
-				return 1043523184;
+				return 1043523184 /* GXTEntry: "Drunk Dance" */;
 			case 15594:
 				return joaat("KIT_EMOTE_DANCE_GRACEFUL_A_1");
 			case 15595:
@@ -73245,11 +73245,11 @@ int func_1357(int iParam0, int iParam1)
 			case 15599:
 				return 901097731 /* GXTEntry: "Gentle Wave" */;
 			case 15600:
-				return -1666834415;
+				return -1666834415 /* GXTEntry: "Get Over Here" */;
 			case 15601:
 				return 523585988 /* GXTEntry: "Good to See Ya" */;
 			case 15602:
-				return -511010399;
+				return -511010399 /* GXTEntry: "Hat Flick" */;
 			case 15603:
 				return joaat("KIT_EMOTE_GREET_HAT_TIP_1");
 			case 15604:
@@ -73257,9 +73257,9 @@ int func_1357(int iParam0, int iParam1)
 			case 15605:
 				return -1801715172 /* GXTEntry: "Respectful Bow" */;
 			case 15606:
-				return 1018554126;
+				return 1018554126 /* GXTEntry: "The Seven" */;
 			case 15607:
-				return -1551032732;
+				return -1551032732 /* GXTEntry: "Subtle Wave" */;
 			case 15608:
 				return joaat("KIT_EMOTE_GREET_TADA_1");
 			case 15609:
@@ -73273,7 +73273,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15613:
 				return 164860528 /* GXTEntry: "Beg for Mercy" */;
 			case 15614:
-				return -934299978;
+				return -934299978 /* GXTEntry: "Clap Along" */;
 			case 15615:
 				return joaat("KIT_EMOTE_REACTION_HANGOVER_1");
 			case 15616:
@@ -73283,7 +73283,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15618:
 				return -1644757697 /* GXTEntry: "Hush Your Mouth" */;
 			case 15619:
-				return 296809845;
+				return 296809845 /* GXTEntry: "Jovial Laugh" */;
 			case 15620:
 				return -822629770 /* GXTEntry: "Nod Head" */;
 			case 15621:
@@ -73293,7 +73293,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15623:
 				return -110352861 /* GXTEntry: "I\'m Hit" */;
 			case 15624:
-				return -1000272583;
+				return -1000272583 /* GXTEntry: "Nod and Shuffle" */;
 			case 15625:
 				return 1023735814 /* GXTEntry: "Slow Clap" */;
 			case 15626:
@@ -73321,7 +73321,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15637:
 				return 354512356 /* GXTEntry: "Damn You" */;
 			case 15638:
-				return -2104721573;
+				return -2104721573 /* GXTEntry: "You vs Me" */;
 			case 15639:
 				return joaat("KIT_EMOTE_TAUNT_WAR_CRY_1");
 			case 15640:
@@ -73343,7 +73343,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15648:
 				return joaat("KIT_HORSE_BRUSH");
 			case 15649:
-				return -418848773;
+				return -418848773 /* GXTEntry: "Moonshiner Map" */;
 			case 15650:
 				return 1384535894;
 			case 15651:
@@ -73361,7 +73361,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15657:
 				return joaat("KIT_POUCH_INGREDIENTS");
 			case 15658:
-				return 856970057;
+				return 856970057 /* GXTEntry: "Ingredients Satchel" */;
 			case 15659:
 				return joaat("KIT_POUCH_KIT");
 			case 15660:
@@ -73369,7 +73369,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15661:
 				return joaat("KIT_POUCH_MATERIALS");
 			case 15662:
-				return -630557532;
+				return -630557532 /* GXTEntry: "Materials Satchel" */;
 			case 15663:
 				return -106768597 /* GXTEntry: "Large Money Satchel" */;
 			case 15664:
@@ -73389,19 +73389,19 @@ int func_1357(int iParam0, int iParam1)
 			case 15671:
 				return -1722266826 /* GXTEntry: "Dramatic Actions" */;
 			case 15672:
-				return -1341406610 /* GXTEntry: "I\'m Watching You" */;
+				return -1341406610 /* GXTEntry: "Bounty Hunter Emotes" */;
 			case 15673:
-				return 927721107 /* GXTEntry: "Look to Distance" */;
+				return 927721107 /* GXTEntry: "Collector Emotes" */;
 			case 15674:
 				return 855344585 /* GXTEntry: "Greetings and Receptions" */;
 			case 15675:
-				return -1033688818;
+				return -1033688818 /* GXTEntry: "Moonshiner Emotes" */;
 			case 15676:
 				return 14938197 /* GXTEntry: "Emotional Reactions" */;
 			case 15677:
 				return 1666428645 /* GXTEntry: "Taunts and Jeers" */;
 			case 15678:
-				return 147830960 /* GXTEntry: "Hat Tipping" */;
+				return 147830960 /* GXTEntry: "Trader Emotes" */;
 			case 15679:
 				return -1309211760 /* GXTEntry: "Celebrate Prisoner" */;
 			case 15680:
@@ -73687,7 +73687,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15820:
 				return -1440794801 /* GXTEntry: "Perfect Hawk Carcass" */;
 			case 15821:
-				return 2144711797;
+				return 2144711797 /* GXTEntry: "Poor Hawk Carcass" */;
 			case 15822:
 				return 718825539 /* GXTEntry: "Good Heron Carcass" */;
 			case 15823:
@@ -73855,7 +73855,7 @@ int func_1357(int iParam0, int iParam1)
 			case 15904:
 				return 431501574 /* GXTEntry: "Poor Seagull Carcass" */;
 			case 15905:
-				return 2126795269;
+				return 2126795269 /* GXTEntry: "Good Sheep Carcass" */;
 			case 15906:
 				return 1489051752 /* GXTEntry: "Perfect Sheep Carcass" */;
 			case 15907:
@@ -74325,7 +74325,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16133:
 				return 95044528 /* GXTEntry: "Good Gila Monster Skin" */;
 			case 16134:
-				return 2136062430;
+				return 2136062430 /* GXTEntry: "Poor Gila Monster Skin" */;
 			case 16135:
 				return 463481876 /* GXTEntry: "Perfect Gila Monster Skin" */;
 			case 16136:
@@ -74657,25 +74657,25 @@ int func_1357(int iParam0, int iParam1)
 			case 16299:
 				return joaat("PROVISION_ROLE_MOONSHINER_MASH_MEDIUM");
 			case 16300:
-				return 1958345007;
+				return 1958345007 /* GXTEntry: "Agarita Sunrise Moonshine" */;
 			case 16301:
-				return 348064119;
+				return 348064119 /* GXTEntry: "Apple Berry Crumb Moonshine" */;
 			case 16302:
-				return -818346432;
+				return -818346432 /* GXTEntry: "Berry Cobbler Moonshine" */;
 			case 16303:
-				return -610395813;
+				return -610395813 /* GXTEntry: "Berry Mint Moonshine" */;
 			case 16304:
-				return 2103594888;
+				return 2103594888 /* GXTEntry: "Evergreen Moonshine" */;
 			case 16305:
-				return -624685730;
+				return -624685730 /* GXTEntry: "Poison Poppy\'s Moonshine" */;
 			case 16306:
-				return 1739830455;
+				return 1739830455 /* GXTEntry: "Spiced Island Moonshine" */;
 			case 16307:
-				return -1498871949;
+				return -1498871949 /* GXTEntry: "Tropical Punch Moonshine" */;
 			case 16308:
-				return 447784640;
+				return 447784640 /* GXTEntry: "Wild Cider Moonshine" */;
 			case 16309:
-				return -1283370018;
+				return -1283370018 /* GXTEntry: "Wild Creek Moonshine" */;
 			case 16310:
 				return 1847740267;
 			case 16311:
@@ -74691,9 +74691,9 @@ int func_1357(int iParam0, int iParam1)
 			case 16316:
 				return 1017109217 /* GXTEntry: "Seagull Feather" */;
 			case 16317:
-				return -1741846626;
+				return -1741846626 /* GXTEntry: "Collectibles Parcel" */;
 			case 16318:
-				return 83944455;
+				return 83944455 /* GXTEntry: "Collectibles Parcel" */;
 			case 16319:
 				return joaat("PROVISION_SHEEP_WOOL");
 			case 16320:
@@ -75229,7 +75229,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16585:
 				return -798417004 /* GXTEntry: "Coat Style 3" */;
 			case 16586:
-				return 1189109666;
+				return 1189109666 /* GXTEntry: "Husky" */;
 			case 16587:
 				return joaat("UPGRADE_CAMP_DOG_HUSKY_003");
 			case 16588:
@@ -75327,7 +75327,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16634:
 				return -1567174399 /* GXTEntry: "Traveling Opulence 2" */;
 			case 16635:
-				return 1054660175;
+				return 1054660175 /* GXTEntry: "Standard 6" */;
 			case 16636:
 				return joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_GENERIC_07");
 			case 16637:
@@ -75373,11 +75373,11 @@ int func_1357(int iParam0, int iParam1)
 			case 16657:
 				return joaat("UPGRADE_CAMP_MUSIC_HARMONICA_002");
 			case 16658:
-				return 2113111296;
+				return 2113111296 /* GXTEntry: "Harmonica Piece" */;
 			case 16659:
-				return -342106029;
+				return -342106029 /* GXTEntry: "Harmonica Piece" */;
 			case 16660:
-				return -1577890561;
+				return -1577890561 /* GXTEntry: "Harmonica Piece" */;
 			case 16661:
 				return joaat("UPGRADE_CAMP_STEW_POT");
 			case 16662:
@@ -75489,15 +75489,15 @@ int func_1357(int iParam0, int iParam1)
 			case 16715:
 				return 1612330162;
 			case 16716:
-				return -1832936964;
+				return -1832936964 /* GXTEntry: "O\'Creagh\'s Run Photograph" */;
 			case 16717:
-				return -998343303;
+				return -998343303 /* GXTEntry: "Dockyard Photograph" */;
 			case 16718:
-				return -126163595;
+				return -126163595 /* GXTEntry: "Estate Photograph" */;
 			case 16719:
 				return joaat("UPGRADE_MOONSHINER_BAR_PHOTO_05");
 			case 16720:
-				return -589877714;
+				return -589877714 /* GXTEntry: "Rio Bravo Photograph" */;
 			case 16721:
 				return joaat("UPGRADE_MOONSHINER_BAR_PHOTO_07");
 			case 16722:
@@ -75505,7 +75505,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16723:
 				return joaat("UPGRADE_MOONSHINER_BAR_PHOTO_09");
 			case 16724:
-				return -361084332;
+				return -361084332 /* GXTEntry: "Chapel Photograph" */;
 			case 16725:
 				return -1779654346;
 			case 16726:
@@ -75531,17 +75531,17 @@ int func_1357(int iParam0, int iParam1)
 			case 16736:
 				return joaat("UPGRADE_MOONSHINER_STILL_03");
 			case 16737:
-				return -553448238;
+				return -553448238 /* GXTEntry: "Festive D�cor" */;
 			case 16738:
-				return -1647055373;
+				return -1647055373 /* GXTEntry: "Basic D�cor" */;
 			case 16739:
-				return -660379727;
+				return -660379727 /* GXTEntry: "Floral D�cor" */;
 			case 16740:
-				return 729277565;
+				return 729277565 /* GXTEntry: "Hunter D�cor" */;
 			case 16741:
 				return 1247736526;
 			case 16742:
-				return -1262899184;
+				return -1262899184 /* GXTEntry: "Refined D�cor" */;
 			case 16743:
 				return 928833910;
 			case 16744:
@@ -75685,45 +75685,45 @@ int func_1357(int iParam0, int iParam1)
 			case 16813:
 				return joaat("voucher_bounty_clear");
 			case 16814:
-				return 92771928;
+				return 92771928 /* GXTEntry: "Clear Bounty" */;
 			case 16815:
 				return joaat("voucher_character_reroll");
 			case 16816:
-				return 1833202658;
+				return 1833202658 /* GXTEntry: "Change of Appearance" */;
 			case 16817:
-				return -96806229;
+				return -96806229 /* GXTEntry: "Change of Appearance" */;
 			case 16818:
 				return joaat("voucher_fast_travel");
 			case 16819:
-				return -617414689;
+				return -617414689 /* GXTEntry: "Fast Travel" */;
 			case 16820:
 				return joaat("voucher_honor_reset");
 			case 16821:
-				return 409521306;
+				return 409521306 /* GXTEntry: "Honor Change" */;
 			case 16822:
 				return joaat("voucher_intro_ability_card");
 			case 16823:
 				return joaat("voucher_intro_horse_insurance");
 			case 16824:
-				return -1118096539 /* GXTEntry: "Saddle Voucher" */;
+				return -1118096539 /* GXTEntry: "Saddle Reward" */;
 			case 16825:
-				return -1903149703;
+				return -1903149703 /* GXTEntry: "Moonshine Shack Location Change" */;
 			case 16826:
 				return joaat("voucher_moonshiner_refill");
 			case 16827:
-				return -2073128166;
+				return -2073128166 /* GXTEntry: "Mash Refill" */;
 			case 16828:
-				return 779668715 /* GXTEntry: "Mystery Voucher" */;
+				return 779668715 /* GXTEntry: "Churchwell Vest" */;
 			case 16829:
-				return 472459340 /* GXTEntry: "Mystery Voucher" */;
+				return 472459340 /* GXTEntry: "Clairborn Coat" */;
 			case 16830:
-				return -413002726;
+				return -413002726 /* GXTEntry: "Mystery Reward" */;
 			case 16831:
-				return 86265758;
+				return 86265758 /* GXTEntry: "Mystery Reward" */;
 			case 16832:
 				return joaat("voucher_offer_ability_card_free");
 			case 16833:
-				return -998627522;
+				return -998627522 /* GXTEntry: "Clear Bounty" */;
 			case 16834:
 				return joaat("voucher_offer_collector_map_american_wild_flowers_free");
 			case 16835:
@@ -75753,23 +75753,23 @@ int func_1357(int iParam0, int iParam1)
 			case 16847:
 				return joaat("voucher_offer_horse_breton_free");
 			case 16848:
-				return -235626525;
+				return -235626525 /* GXTEntry: "Novice Bounty Hunter\'s Breton Horse" */;
 			case 16849:
 				return joaat("voucher_offer_horse_criollo_free");
 			case 16850:
-				return -608388069;
+				return -608388069 /* GXTEntry: "Novice Collector\'s Criollo Horse" */;
 			case 16851:
 				return joaat("voucher_offer_horse_kladruber_free");
 			case 16852:
-				return -2131651796;
+				return -2131651796 /* GXTEntry: "Novice Trader\'s Kladruber Horse" */;
 			case 16853:
 				return joaat("voucher_offer_horse_norfolk_free");
 			case 16854:
-				return -713772179;
+				return -713772179 /* GXTEntry: "Novice Moonshiner\'s Norfolk Roadster Horse" */;
 			case 16855:
-				return 1690438599;
+				return 1690438599 /* GXTEntry: "Select Off-Hand Holsters" */;
 			case 16856:
-				return -1856416644;
+				return -1856416644 /* GXTEntry: "Select Off-Hand Holsters" */;
 			case 16857:
 				return joaat("voucher_offer_offhand_holster_rank_70_or_lower_free");
 			case 16858:
@@ -75781,7 +75781,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16861:
 				return joaat("voucher_offer_redeem_for_cash_200_dollars");
 			case 16862:
-				return 1478950613;
+				return 1478950613 /* GXTEntry: "RDO$200" */;
 			case 16863:
 				return joaat("voucher_offer_redeem_for_cash_50_dollars");
 			case 16864:
@@ -75815,7 +75815,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16878:
 				return joaat("voucher_offer_redeem_for_role_xp_bounty_hunter_1000");
 			case 16879:
-				return -89340503;
+				return -89340503 /* GXTEntry: "1000 Bounty Hunter XP" */;
 			case 16880:
 				return joaat("voucher_offer_redeem_for_role_xp_bounty_hunter_250");
 			case 16881:
@@ -75823,7 +75823,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16882:
 				return joaat("voucher_offer_redeem_for_role_xp_collector_1000");
 			case 16883:
-				return -371084344;
+				return -371084344 /* GXTEntry: "1000 Collector XP" */;
 			case 16884:
 				return joaat("voucher_offer_redeem_for_role_xp_collector_250");
 			case 16885:
@@ -75837,7 +75837,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16889:
 				return joaat("voucher_offer_redeem_for_role_xp_trader_1000");
 			case 16890:
-				return 1641746025;
+				return 1641746025 /* GXTEntry: "1000 Trader XP" */;
 			case 16891:
 				return joaat("voucher_offer_redeem_for_role_xp_trader_250");
 			case 16892:
@@ -75847,9 +75847,9 @@ int func_1357(int iParam0, int iParam1)
 			case 16894:
 				return joaat("voucher_offer_redeem_for_season_xp_season_006_5000");
 			case 16895:
-				return -1260581190;
+				return -1260581190 /* GXTEntry: "3000 Wheeler, Rawson & Co. Club XP" */;
 			case 16896:
-				return -1304051673;
+				return -1304051673 /* GXTEntry: "5000 Wheeler, Rawson & Co. Club XP" */;
 			case 16897:
 				return joaat("voucher_offer_saddle_200_or_less_free");
 			case 16898:
@@ -75885,13 +75885,13 @@ int func_1357(int iParam0, int iParam1)
 			case 16913:
 				return joaat("voucher_posse_persistent_creation");
 			case 16914:
-				return 1249391258;
+				return 1249391258 /* GXTEntry: "Persistent Posse" */;
 			case 16915:
 				return joaat("voucher_trader_resupply");
 			case 16916:
-				return -1627888698;
+				return -1627888698 /* GXTEntry: "Resupply" */;
 			case 16917:
-				return -1570508815;
+				return -1570508815 /* GXTEntry: "Resupply" */;
 			case 16918:
 				return joaat("Wardrobe");
 			case 16919:
@@ -75899,7 +75899,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16920:
 				return joaat("WEAPON_ALLIGATOR");
 			case 16921:
-				return joaat("weapon_animal");
+				return joaat("WEAPON_ANIMAL");
 			case 16922:
 				return joaat("WEAPON_BADGER");
 			case 16923:
@@ -75907,25 +75907,25 @@ int func_1357(int iParam0, int iParam1)
 			case 16924:
 				return joaat("WEAPON_BEAVER");
 			case 16925:
-				return joaat("weapon_bleeding");
+				return joaat("WEAPON_BLEEDING");
 			case 16926:
 				return joaat("WEAPON_BOW");
 			case 16927:
-				return joaat("weapon_cougar");
+				return joaat("WEAPON_COUGAR");
 			case 16928:
-				return joaat("weapon_coyote");
+				return joaat("WEAPON_COYOTE");
 			case 16929:
-				return joaat("weapon_deer");
+				return joaat("WEAPON_DEER");
 			case 16930:
-				return joaat("weapon_drowning");
+				return joaat("WEAPON_DROWNING");
 			case 16931:
-				return joaat("weapon_drowning_in_vehicle");
+				return joaat("WEAPON_DROWNING_IN_VEHICLE");
 			case 16932:
-				return joaat("weapon_explosion");
+				return joaat("WEAPON_EXPLOSION");
 			case 16933:
-				return joaat("weapon_fall");
+				return joaat("WEAPON_FALL");
 			case 16934:
-				return joaat("weapon_fire");
+				return joaat("WEAPON_FIRE");
 			case 16935:
 				return joaat("WEAPON_FISHINGROD");
 			case 16936:
@@ -75989,7 +75989,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16965:
 				return joaat("WEAPON_RACCOON");
 			case 16966:
-				return joaat("weapon_rammed_by_car");
+				return joaat("WEAPON_RAMMED_BY_CAR");
 			case 16967:
 				return joaat("WEAPON_REPEATER_CARBINE");
 			case 16968:
@@ -76029,7 +76029,7 @@ int func_1357(int iParam0, int iParam1)
 			case 16985:
 				return joaat("WEAPON_RIFLE_VARMINT");
 			case 16986:
-				return joaat("weapon_run_over_by_car");
+				return joaat("WEAPON_RUN_OVER_BY_CAR");
 			case 16987:
 				return joaat("WEAPON_SHOTGUN_DOUBLEBARREL");
 			case 16988:
@@ -76087,7 +76087,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17008:
 				return -1829236809 /* GXTEntry: "Revolving Cannon" */;
 			case 17009:
-				return joaat("weapon_unarmed");
+				return joaat("WEAPON_UNARMED");
 			case 17010:
 				return -361338177 /* GXTEntry: "No Variant" */;
 			case 17011:
@@ -76109,15 +76109,15 @@ int func_1357(int iParam0, int iParam1)
 			case 17019:
 				return -1693454862 /* GXTEntry: "GTA Online Reward" */;
 			case 17020:
-				return 21550967;
+				return 21550967 /* GXTEntry: "Gift from Rockstar" */;
 			case 17021:
 				return 810774106 /* GXTEntry: "Login Reward Unlocked" */;
 			case 17022:
 				return -84597116 /* GXTEntry: "Rockstar Promotion Reward" */;
 			case 17023:
-				return -1458577268 /* GXTEntry: "Reward for PlayStation®" */;
+				return -1458577268 /* GXTEntry: "Reward for PlayStation�" */;
 			case 17024:
-				return 447820216 /* GXTEntry: "Reward for PlayStation®Plus" */;
+				return 447820216 /* GXTEntry: "Reward for PlayStation�Plus" */;
 			case 17025:
 				return 81893637 /* GXTEntry: "Item Purchase Reward" */;
 			case 17026:
@@ -76127,7 +76127,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17028:
 				return -307257997 /* GXTEntry: "Ultimate Edition Owner Reward" */;
 			case 17029:
-				return -266573208;
+				return -266573208 /* GXTEntry: "Offer from Rockstar" */;
 			case 17030:
 				return joaat("AMMO_ARROW_IMPROVED");
 			case 17031:
@@ -76981,7 +76981,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17455:
 				return -18536852 /* GXTEntry: "Lazy Stovepipe Top Hat" */;
 			case 17456:
-				return 2126358051;
+				return 2126358051 /* GXTEntry: "Lazy Stovepipe Top Hat" */;
 			case 17457:
 				return 1829438142 /* GXTEntry: "Lazy Stovepipe Top Hat" */;
 			case 17458:
@@ -77147,7 +77147,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17538:
 				return 1311623609 /* GXTEntry: "Worn Cavalry Hat" */;
 			case 17539:
-				return 2145889580;
+				return 2145889580 /* GXTEntry: "Worn Cavalry Hat" */;
 			case 17540:
 				return 1108160888 /* GXTEntry: "Worn Cavalry Hat" */;
 			case 17541:
@@ -78749,7 +78749,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18333:
 				return 1579709318;
 			case 18334:
-				return 2131771850;
+				return 2131771850 /* GXTEntry: "The Legend Of The East" */;
 			case 18335:
 				return 339205521 /* GXTEntry: "Double Fork Chin" */;
 			case 18336:
@@ -78845,7 +78845,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18381:
 				return -1826731591 /* GXTEntry: "Brawler\'s Outfit" */;
 			case 18382:
-				return 2119049229;
+				return 2119049229 /* GXTEntry: "The Ruffian" */;
 			case 18383:
 				return 1352942778 /* GXTEntry: "The Rebel" */;
 			case 18384:
@@ -79215,7 +79215,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18566:
 				return -887462040 /* GXTEntry: "Relentless Boots" */;
 			case 18567:
-				return 2139246645;
+				return 2139246645 /* GXTEntry: "Old West Boots" */;
 			case 18568:
 				return 1579879815 /* GXTEntry: "Grinder Boots" */;
 			case 18569:
@@ -79437,7 +79437,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18677:
 				return 1698094233 /* GXTEntry: "Big Valley Hat" */;
 			case 18678:
-				return 2122019542;
+				return 2122019542 /* GXTEntry: "Worn Flat Cap" */;
 			case 18679:
 				return -1459337241 /* GXTEntry: "Flat Cap" */;
 			case 18680:
@@ -79675,7 +79675,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18796:
 				return -2096170313 /* GXTEntry: "Cuffed Town Pants" */;
 			case 18797:
-				return 2119135884;
+				return 2119135884 /* GXTEntry: "Town Pants" */;
 			case 18798:
 				return -1957065572 /* GXTEntry: "Fancy Pants" */;
 			case 18799:
@@ -80009,7 +80009,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18963:
 				return 1185328437 /* GXTEntry: "Angelo Bronte Photograph" */;
 			case 18964:
-				return 2138517258;
+				return 2138517258 /* GXTEntry: "Phineas\'s Business Card" */;
 			case 18965:
 				return 761240010 /* GXTEntry: "Algernon\'s Business Card" */;
 			case 18966:
@@ -80047,7 +80047,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18982:
 				return 1764635352 /* GXTEntry: "Stars of the Stage Card 6" */;
 			case 18983:
-				return 2130730620;
+				return 2130730620 /* GXTEntry: "Stars of the Stage Card 7" */;
 			case 18984:
 				return -45556985 /* GXTEntry: "Stars of the Stage Card 8" */;
 			case 18985:
@@ -80261,7 +80261,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19083:
 				return 536240677 /* GXTEntry: "Prominent Americans Card 3" */;
 			case 19084:
-				return 2116492941;
+				return 2116492941 /* GXTEntry: "Prominent Americans Card 4" */;
 			case 19085:
 				return -1955546848 /* GXTEntry: "Prominent Americans Card 5" */;
 			case 19086:
@@ -80629,7 +80629,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19267:
 				return -1099875902 /* GXTEntry: "Letter to the Governor" */;
 			case 19268:
-				return 2120018935;
+				return 2120018935 /* GXTEntry: "Lost Letter to Bonnie" */;
 			case 19269:
 				return -435914700 /* GXTEntry: "Treasure map" */;
 			case 19270:
@@ -80643,7 +80643,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19274:
 				return -302977409 /* GXTEntry: "Bank Credit Letter" */;
 			case 19275:
-				return 2129073771;
+				return 2129073771 /* GXTEntry: "Mary-Beth\'s Notebook" */;
 			case 19276:
 				return 1925314970 /* GXTEntry: "Letter from Mary" */;
 			case 19277:
@@ -80893,7 +80893,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19399:
 				return -2012586584 /* GXTEntry: "Bounty Poster - Esteban Cortez" */;
 			case 19400:
-				return 1129206837 /* GXTEntry: "Bounty Poster - Joaquín Arroyo" */;
+				return 1129206837 /* GXTEntry: "Bounty Poster - Joaqu�n Arroyo" */;
 			case 19401:
 				return 1472661824 /* GXTEntry: "Bounty Poster - Herman Zizendorf" */;
 			case 19402:
@@ -80923,9 +80923,9 @@ int func_1357(int iParam0, int iParam1)
 			case 19414:
 				return -328339160 /* GXTEntry: "Letter from Theodore Levin" */;
 			case 19415:
-				return 2125145627;
+				return 2125145627 /* GXTEntry: "Letter from Theodore Levin" */;
 			case 19416:
-				return -631796932 /* GXTEntry: "Letter from Charles Châtenay" */;
+				return -631796932 /* GXTEntry: "Letter from Charles Ch�tenay" */;
 			case 19417:
 				return joaat("DOCUMENT_RCM_FORMYART_PAINTING");
 			case 19418:
@@ -81021,7 +81021,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19463:
 				return -1937935584 /* GXTEntry: "Jack Hall Gang Map 1" */;
 			case 19464:
-				return 2127812557;
+				return 2127812557 /* GXTEntry: "Jack Hall Gang Map 2" */;
 			case 19465:
 				return 808991383 /* GXTEntry: "Jack Hall Gang Map 3" */;
 			case 19466:
@@ -81047,7 +81047,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19476:
 				return -1876986168 /* GXTEntry: "The Elemental Trail Map 2" */;
 			case 19477:
-				return 2142623221;
+				return 2142623221 /* GXTEntry: "The Elemental Trail Map 3" */;
 			case 19478:
 				return 1508215381 /* GXTEntry: "Landmarks of Riches Map 1" */;
 			case 19479:
@@ -81303,7 +81303,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19604:
 				return -111332294;
 			case 19605:
-				return -774242862 /* GXTEntry: "Wróbel\'s Valuables" */;
+				return -774242862 /* GXTEntry: "Wr�bel\'s Valuables" */;
 			case 19606:
 				return -1190665186;
 			case 19607:
@@ -81511,7 +81511,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19708:
 				return joaat("PROVISION_FISH_STEELHEAD_TROUT_LEGENDARY");
 			case 19709:
-				return 2116770557;
+				return 2116770557 /* GXTEntry: "Gator Egg" */;
 			case 19710:
 				return -1933959211 /* GXTEntry: "Gator Egg Statue" */;
 			case 19711:
@@ -81605,7 +81605,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19755:
 				return -446539844 /* GXTEntry: "Master Hunter Gun Belt" */;
 			case 19756:
-				return 2146082234;
+				return 2146082234 /* GXTEntry: "Horseman Gun Belt" */;
 			case 19757:
 				return -77597297 /* GXTEntry: "Bandit Gun Belt" */;
 			case 19758:
@@ -81769,7 +81769,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19837:
 				return 858182906 /* GXTEntry: "Campfire Seat Cover" */;
 			case 19838:
-				return 2137149309;
+				return 2137149309 /* GXTEntry: "Lean-to Cow Hide Ground Cover" */;
 			case 19839:
 				return -7810518 /* GXTEntry: "Hanging Bones" */;
 			case 19840:
@@ -81972,7 +81972,7 @@ void func_1358(int iParam0)
 	{
 		return;
 	}
-	if (!WEAPON::IS_WEAPON_VALID(iParam0) || iParam0 == joaat("weapon_unarmed"))
+	if (!WEAPON::IS_WEAPON_VALID(iParam0) || iParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return;
 	}
@@ -81988,7 +81988,7 @@ void func_1359(int iParam0)
 {
 	int iVar0;
 
-	if (!WEAPON::IS_WEAPON_VALID(iParam0) || iParam0 == joaat("weapon_unarmed"))
+	if (!WEAPON::IS_WEAPON_VALID(iParam0) || iParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return;
 	}
@@ -83826,7 +83826,7 @@ void func_1446(int iParam0, int iParam1)
 	{
 		return;
 	}
-	if (iParam1 == joaat("weapon_unarmed"))
+	if (iParam1 == joaat("WEAPON_UNARMED"))
 	{
 		return;
 	}
@@ -87351,7 +87351,7 @@ int func_1561(int iParam0)
 		case joaat("a_c_horse_ardennes_irongreyroan"):
 			return -621245377 /* GXTEntry: "Ardennes~n~Iron Grey Roan Coat" */;
 		case joaat("a_c_horse_belgian_blondchestnut"):
-			return 2125477381;
+			return 2125477381 /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */;
 		case joaat("a_c_horse_belgian_mealychestnut"):
 			return 1808724704 /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */;
 		case joaat("a_c_horse_dutchwarmblood_sootybuckskin"):
@@ -87441,7 +87441,7 @@ int func_1561(int iParam0)
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return -1692268955 /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */;
 		case joaat("a_c_horse_arabian_grey"):
-			return 2130706226;
+			return 2130706226 /* GXTEntry: "Arabian~n~Grey Coat" */;
 		case joaat("a_c_horse_hungarianhalfbred_liverchestnut"):
 			return -1754375530 /* GXTEntry: "Hungarian Halfbred~n~Liver Chestnut Coat" */;
 		case joaat("a_c_horse_missourifoxtrotter_sablechampagne"):
@@ -99440,7 +99440,7 @@ int func_2015(int iParam0)
 		case 4:
 			return -446539844 /* GXTEntry: "Master Hunter Gun Belt" */;
 		case 5:
-			return 2146082234;
+			return 2146082234 /* GXTEntry: "Horseman Gun Belt" */;
 		case 6:
 			return 330185476 /* GXTEntry: "Sharpshooter Gun Belt" */;
 		case 7:
@@ -99606,7 +99606,7 @@ int func_2023(int iParam0)
 		case 0:
 			return -2010021430 /* GXTEntry: "Horseman Bandolier" */;
 		case 1:
-			return 2146082234;
+			return 2146082234 /* GXTEntry: "Horseman Gun Belt" */;
 		case 2:
 			return 2072880089 /* GXTEntry: "Horseman Holster" */;
 		case 3:

@@ -1132,15 +1132,15 @@ int func_46()
 	{
 		switch (func_115(Global_1277020->f_50, 897456793, 1, -1))
 		{
-			case -1647055373:
+			case -1647055373: /* GXTEntry: "Basic D�cor" */
 				return 0;
-			case -660379727:
+			case -660379727: /* GXTEntry: "Floral D�cor" */
 				return 2;
-			case 729277565:
+			case 729277565: /* GXTEntry: "Hunter D�cor" */
 				return 1;
-			case -1262899184:
+			case -1262899184: /* GXTEntry: "Refined D�cor" */
 				return 3;
-			case -553448238:
+			case -553448238: /* GXTEntry: "Festive D�cor" */
 				return 4;
 			default:
 				break;
@@ -2818,15 +2818,15 @@ int func_119()
 	{
 		switch (func_115(Global_1277020->f_50, -1565675519, 1, -1))
 		{
-			case -1832936964:
+			case -1832936964: /* GXTEntry: "O\'Creagh\'s Run Photograph" */
 				return 2;
-			case -998343303:
+			case -998343303: /* GXTEntry: "Dockyard Photograph" */
 				return 3;
-			case -126163595:
+			case -126163595: /* GXTEntry: "Estate Photograph" */
 				return 4;
-			case -589877714:
+			case -589877714: /* GXTEntry: "Rio Bravo Photograph" */
 				return 6;
-			case -361084332:
+			case -361084332: /* GXTEntry: "Chapel Photograph" */
 				return 10;
 			case joaat("UPGRADE_MOONSHINER_BAR_PHOTO_05"):
 				return 5;
@@ -3635,34 +3635,34 @@ char* func_160(int iParam0)
 
 	switch (iParam0)
 	{
-		case 1958345007:
+		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_AGARITA_SUNRISE";
 			break;
-		case 348064119:
+		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_APPLE_BERRY_CRUMB";
 			break;
-		case -818346432:
+		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_COBBLER";
 			break;
-		case -610395813:
+		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_BERRY_MINT";
 			break;
-		case 2103594888:
+		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_EVERGREEN";
 			break;
-		case -624685730:
+		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_POISON_POPPYS";
 			break;
-		case 1739830455:
+		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_SPICED_ISLAND";
 			break;
-		case -1498871949:
+		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_TROPICAL_PUNCH";
 			break;
-		case 447784640:
+		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CIDER";
 			break;
-		case -1283370018:
+		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
 			sVar0 = "PROVISION_ROLE_MOONSHINER_MOONSHINE_FLAVOR_WILD_CREEK";
 			break;
 		default:
@@ -7105,9 +7105,9 @@ int func_307(int iParam0)
 		case 15:
 			return 1371028520;
 		case 16:
-			return 1479488426;
+			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
-			return -170363364;
+			return -170363364 /* GXTEntry: "Club Rewards" */;
 		default:
 			break;
 	}
@@ -9670,7 +9670,7 @@ int func_407(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_239(963726415, 1);
+		return func_239(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
 	}
 	return func_239(iParam0, 1);
 }
@@ -9776,7 +9776,7 @@ void func_409(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

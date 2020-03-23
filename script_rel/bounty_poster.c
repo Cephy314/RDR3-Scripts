@@ -1161,7 +1161,7 @@ void func_38(var uParam0)
 
 int func_39()
 {
-	if ((((((((((func_99(-1442477431 /* GXTEntry: "Bounty Poster - Joshua Brown" */, 0, 0) > 0 || func_99(-120239629 /* GXTEntry: "Bounty Poster - Mark Johnson" */, 0, 0) > 0) || func_99(-1129500286 /* GXTEntry: "Bounty Poster - Lindsey Wofford" */, 0, 0) > 0) || func_99(-1490222567 /* GXTEntry: "Bounty Poster - Ellie Anne Swan" */, 0, 0) > 0) || func_99(1117744418 /* GXTEntry: "Bounty Poster - Otis Skinner" */, 0, 0) > 0) || func_99(1900975545 /* GXTEntry: "Bounty Poster - Elias Green" */, 0, 0) > 0) || func_99(-233617698 /* GXTEntry: "Bounty Poster - Robbie Laidlaw" */, 0, 0) > 0) || func_99(1515293085 /* GXTEntry: "Bounty Poster - Anthony Foreman" */, 0, 0) > 0) || func_99(1129206837 /* GXTEntry: "Bounty Poster - Joaquín Arroyo" */, 0, 0) > 0) || func_99(-2012586584 /* GXTEntry: "Bounty Poster - Esteban Cortez" */, 0, 0) > 0) || func_99(-77412868 /* GXTEntry: "Bounty Poster" */, 0, 0) > 0)
+	if ((((((((((func_99(-1442477431 /* GXTEntry: "Bounty Poster - Joshua Brown" */, 0, 0) > 0 || func_99(-120239629 /* GXTEntry: "Bounty Poster - Mark Johnson" */, 0, 0) > 0) || func_99(-1129500286 /* GXTEntry: "Bounty Poster - Lindsey Wofford" */, 0, 0) > 0) || func_99(-1490222567 /* GXTEntry: "Bounty Poster - Ellie Anne Swan" */, 0, 0) > 0) || func_99(1117744418 /* GXTEntry: "Bounty Poster - Otis Skinner" */, 0, 0) > 0) || func_99(1900975545 /* GXTEntry: "Bounty Poster - Elias Green" */, 0, 0) > 0) || func_99(-233617698 /* GXTEntry: "Bounty Poster - Robbie Laidlaw" */, 0, 0) > 0) || func_99(1515293085 /* GXTEntry: "Bounty Poster - Anthony Foreman" */, 0, 0) > 0) || func_99(1129206837 /* GXTEntry: "Bounty Poster - Joaqu�n Arroyo" */, 0, 0) > 0) || func_99(-2012586584 /* GXTEntry: "Bounty Poster - Esteban Cortez" */, 0, 0) > 0) || func_99(-77412868 /* GXTEntry: "Bounty Poster" */, 0, 0) > 0)
 	{
 		return 1;
 	}
@@ -4096,7 +4096,7 @@ int func_151(var uParam0, var uParam1)
 	{
 		ENTITY::SET_ENTITY_VISIBLE(uParam0->f_6, true);
 		PED::SET_PED_CONFIG_FLAG(uParam0->f_6, 168, true);
-		WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_6, joaat("weapon_unarmed"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_6, joaat("WEAPON_UNARMED"), true, 0, false, false);
 		return 1;
 	}
 	return 0;
@@ -5196,7 +5196,7 @@ int func_197(int iParam0)
 		case 16:
 			return 1515293085 /* GXTEntry: "Bounty Poster - Anthony Foreman" */;
 		case 19:
-			return 1129206837 /* GXTEntry: "Bounty Poster - Joaquín Arroyo" */;
+			return 1129206837 /* GXTEntry: "Bounty Poster - Joaqu�n Arroyo" */;
 		case 20:
 			return -2012586584 /* GXTEntry: "Bounty Poster - Esteban Cortez" */;
 		case 155:
@@ -7779,7 +7779,7 @@ void func_295(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -12192,7 +12192,7 @@ int func_493(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_494(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_495(var uParam0)

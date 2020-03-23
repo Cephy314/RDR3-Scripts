@@ -7109,9 +7109,9 @@ int func_280(int iParam0)
 		case 15:
 			return 1371028520;
 		case 16:
-			return 1479488426;
+			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
-			return -170363364;
+			return -170363364 /* GXTEntry: "Club Rewards" */;
 		default:
 			break;
 	}

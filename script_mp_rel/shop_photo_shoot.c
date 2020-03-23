@@ -3326,14 +3326,14 @@ void func_70(int iParam0, int iParam1)
 	func_145(iParam0, iParam1);
 	if (WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, false, 2, false))
 	{
-		if (iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			WEAPON::SET_CURRENT_PED_WEAPON(iParam1, iVar0, true, 2, false, false);
 		}
 	}
 	if (WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, false, 4, false))
 	{
-		if (iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			WEAPON::SET_CURRENT_PED_WEAPON(iParam1, iVar0, true, 4, false, false);
 		}
@@ -7082,7 +7082,7 @@ void func_210(bool bParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

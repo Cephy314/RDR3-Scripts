@@ -2526,7 +2526,7 @@ void func_94()
 	{
 		return;
 	}
-	if (func_194(-1577890561, 1))
+	if (func_194(-1577890561 /* GXTEntry: "Harmonica Piece" */, 1))
 	{
 		if (func_194(joaat("UPGRADE_CAMP_MUSIC_HARMONICA_002"), 1))
 		{
@@ -2541,7 +2541,7 @@ void func_94()
 			((*Global_1128435)[iVar0 /*83*/])->f_38.f_26 = 9;
 		}
 	}
-	else if (func_194(-342106029, 1))
+	else if (func_194(-342106029 /* GXTEntry: "Harmonica Piece" */, 1))
 	{
 		if (func_194(joaat("UPGRADE_CAMP_MUSIC_HARMONICA_002"), 1))
 		{
@@ -2556,7 +2556,7 @@ void func_94()
 			((*Global_1128435)[iVar0 /*83*/])->f_38.f_26 = 6;
 		}
 	}
-	else if (func_194(2113111296, 1))
+	else if (func_194(2113111296 /* GXTEntry: "Harmonica Piece" */, 1))
 	{
 		if (func_194(joaat("UPGRADE_CAMP_MUSIC_HARMONICA_002"), 1))
 		{
@@ -5648,8 +5648,8 @@ void func_250(int iParam0)
 		return;
 	}
 	Global_1131092->f_339.f_9 = -1;
-	((*Global_1128435)[iVar0 /*83*/])->f_38.f_28.f_1 = 1046181202;
-	Global_1131092->f_339.f_1 = 1046181202;
+	((*Global_1128435)[iVar0 /*83*/])->f_38.f_28.f_1 = 1046181202; /* GXTEntry: "Base Quality Stew" */
+	Global_1131092->f_339.f_1 = 1046181202; /* GXTEntry: "Base Quality Stew" */
 }
 
 bool func_251()
@@ -6024,7 +6024,7 @@ int func_261(int iParam0)
 			return -855155400;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return 1743453709;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 1743453709;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 			return 1743453709;
@@ -6182,7 +6182,7 @@ int func_261(int iParam0)
 			return -352732121;
 		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
 			return -352732121;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return -352732121;
 		case 102446365: /* GXTEntry: "Perfect Skunk Carcass" */
 			return 117556329;
@@ -6476,7 +6476,7 @@ int func_261(int iParam0)
 			return 1684561350;
 		case 463481876: /* GXTEntry: "Perfect Gila Monster Skin" */
 			return 1763709491;
-		case 2136062430:
+		case 2136062430: /* GXTEntry: "Poor Gila Monster Skin" */
 			return 1763709491;
 		case 95044528: /* GXTEntry: "Good Gila Monster Skin" */
 			return 1763709491;
@@ -9376,15 +9376,15 @@ int func_372(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case 1046181202:
+		case 1046181202: /* GXTEntry: "Base Quality Stew" */
 			return 2;
-		case 1856073229:
+		case 1856073229: /* GXTEntry: "Low Quality Stew" */
 			return 3;
-		case -1612693182:
+		case -1612693182: /* GXTEntry: "Medium Quality Stew" */
 			return 4;
-		case 1689071181:
+		case 1689071181: /* GXTEntry: "High Quality Stew" */
 			return 5;
-		case -1171462349:
+		case -1171462349: /* GXTEntry: "Superior Quality Stew" */
 			return 6;
 		default:
 			break;
@@ -11341,7 +11341,7 @@ int func_437(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_438(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_439(int iParam0)
@@ -13185,7 +13185,7 @@ void func_504(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -14515,7 +14515,7 @@ int func_554(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_285(963726415, 1);
+		return func_285(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
 	}
 	return func_285(iParam0, 1);
 }

@@ -2077,7 +2077,7 @@ void func_49(var uParam0, bool bParam1)
 		case 14:
 			if (func_188(*uParam0))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_5, joaat("weapon_unarmed"), true, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_5, joaat("WEAPON_UNARMED"), true, 0, false, false);
 			}
 			break;
 		case 20:
@@ -4585,7 +4585,7 @@ int func_138(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;
@@ -5745,7 +5745,7 @@ int func_188(int iParam0)
 		{
 			if (WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &iVar1, true, 0, false))
 			{
-				if ((iVar1 != 1549070292 && iVar1 != 1030402560) && iVar1 != joaat("weapon_unarmed"))
+				if ((iVar1 != 1549070292 && iVar1 != 1030402560) && iVar1 != joaat("WEAPON_UNARMED"))
 				{
 					return 1;
 				}

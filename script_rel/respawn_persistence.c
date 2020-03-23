@@ -391,7 +391,7 @@ void func_4()
 	Global_1310720->f_29 = -1;
 	Global_1935630->f_4 = 0;
 	Global_1897952->f_40 = 0;
-	Global_1310720->f_24 = joaat("weapon_unarmed");
+	Global_1310720->f_24 = joaat("WEAPON_UNARMED");
 	Global_1310720->f_22 = -1;
 	func_32(0);
 }
@@ -11556,7 +11556,7 @@ int func_411(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_412(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_413(int iParam0)
@@ -11733,7 +11733,7 @@ void func_422(bool bParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

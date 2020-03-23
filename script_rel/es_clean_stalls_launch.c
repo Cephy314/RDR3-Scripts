@@ -533,7 +533,7 @@ void func_21(int iParam0, int iParam1)
 		{
 			if (!func_40(4))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
 			}
 		}
 		PED::_0x58F7DB5BD8FA2288(Global_35);

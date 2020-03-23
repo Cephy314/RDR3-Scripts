@@ -780,7 +780,7 @@ int func_2(int iParam0)
 						}
 						PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 						bLocal_439 = false;
-						if (func_74(Global_35, 1, 0, 0) != joaat("weapon_unarmed"))
+						if (func_74(Global_35, 1, 0, 0) != joaat("WEAPON_UNARMED"))
 						{
 							WEAPON::_0x94A3C1B804D291EC(Global_35, 0, 0, 0, 0);
 						}
@@ -2839,7 +2839,7 @@ int func_74(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;

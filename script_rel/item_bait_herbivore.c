@@ -55,7 +55,7 @@ void __EntryFunction__()
 				{
 					if (!Global_1935630->f_12)
 					{
-						if ((Var0.f_25 != joaat("weapon_unarmed") && Var0.f_26 != joaat("GROUP_PISTOL")) && Var0.f_26 != joaat("GROUP_REVOLVER"))
+						if ((Var0.f_25 != joaat("WEAPON_UNARMED") && Var0.f_26 != joaat("GROUP_PISTOL")) && Var0.f_26 != joaat("GROUP_REVOLVER"))
 						{
 							WEAPON::_0xFCCC886EDE3C63EC(Global_35, 2, false);
 						}
@@ -574,7 +574,7 @@ int func_19(var uParam0)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1971578095))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 2007785590))
 	{
@@ -1248,7 +1248,7 @@ int func_42(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_43(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_44(int iParam0)
@@ -1379,7 +1379,7 @@ void func_48(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -2524,7 +2524,7 @@ int func_97(int iParam0, int iParam1, int iParam2)
 			iVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			iVar9 = 2116770557;
+			iVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			iVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			iVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			iVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -2623,7 +2623,7 @@ int func_99(int iParam0)
 			return 7;
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return 25;
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
@@ -5469,7 +5469,7 @@ char* func_217(int iParam0)
 			return "COL_RO_LADY_SLIPPER_FOUND";
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return "COL_RO_MOCCASIN_FOUND";
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return "COL_GF_FOUND";
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return "COL_RO_ACUNAS_STAR_FOUND";

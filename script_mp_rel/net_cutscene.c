@@ -6535,7 +6535,7 @@ int func_215(int iParam0, int iParam1, int iParam2, int iParam3)
 			return 131;
 		case joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_SEASONAL_03"):
 			return 132;
-		case 1054660175:
+		case 1054660175: /* GXTEntry: "Standard 6" */
 			return 115;
 		case joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_GENERIC_07"):
 			return 116;
@@ -7207,7 +7207,7 @@ void func_244(int iParam0, int iParam1)
 		iVar2 = ((29 - 1) - iVar1);
 		if (WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar0, false, iVar2, false))
 		{
-			if (iVar0 != joaat("weapon_unarmed"))
+			if (iVar0 != joaat("WEAPON_UNARMED"))
 			{
 				if (iVar2 == 1)
 				{
@@ -11741,7 +11741,7 @@ int func_365(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_256(963726415, 1);
+		return func_256(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
 	}
 	return func_256(iParam0, 1);
 }
@@ -11916,7 +11916,7 @@ int func_371(int iParam0)
 			return 1364634153;
 		case -905031115: /* GXTEntry: "The Grizzlies Outlaw" */
 			return -388301838;
-		case 1928115537: /* GXTEntry: "The Déchaux" */
+		case 1928115537: /* GXTEntry: "The D�chaux" */
 			return 208175031;
 		case 453281150: /* GXTEntry: "The Mercer" */
 			return -98968806;
@@ -12076,53 +12076,53 @@ int func_371(int iParam0)
 			return -1036761924;
 		case -1140185331: /* GXTEntry: "The Tyringham" */
 			return -683249952;
-		case 913153433:
+		case 913153433: /* GXTEntry: "The Gatlinburg" */
 			return 194792351;
-		case 606730510:
+		case 606730510: /* GXTEntry: "The Gatlinburg" */
 			return -1974548202;
-		case -964051505:
+		case -964051505: /* GXTEntry: "The Gatlinburg" */
 			return 1014738289;
-		case -1267459676:
+		case -1267459676: /* GXTEntry: "The Gatlinburg" */
 			return 634486813;
-		case -483756272:
+		case -483756272: /* GXTEntry: "The Gatlinburg" */
 			return 1408261210;
-		case -805187393:
+		case -805187393: /* GXTEntry: "The Gatlinburg" */
 			return -768354077;
-		case -1116096467:
+		case -1116096467: /* GXTEntry: "The Dagenhart" */
 			return 1791083718;
-		case -4997980:
+		case -4997980: /* GXTEntry: "The Dagenhart" */
 			return 1484267571;
-		case -305588017:
+		case -305588017: /* GXTEntry: "The Dagenhart" */
 			return -632577068;
-		case -694850968:
+		case -694850968: /* GXTEntry: "The Dagenhart" */
 			return -872544455;
-		case -985380922:
+		case -985380922: /* GXTEntry: "The Dagenhart" */
 			return -1111430465;
-		case 974827889:
+		case 974827889: /* GXTEntry: "The Dagenhart" */
 			return -1351987694;
-		case -1156770257:
+		case -1156770257: /* GXTEntry: "The Pittsburg" */
 			return -803252891;
-		case -843695231:
+		case -843695231: /* GXTEntry: "The Pittsburg" */
 			return 2121544208;
-		case 1854078224:
+		case 1854078224: /* GXTEntry: "The Pittsburg" */
 			return -1667469728;
-		case -2137185980:
+		case -2137185980: /* GXTEntry: "The Pittsburg" */
 			return 466087145;
-		case -1830566447:
+		case -1830566447: /* GXTEntry: "The Pittsburg" */
 			return 98091275;
-		case -1537546049:
+		case -1537546049: /* GXTEntry: "The Pittsburg" */
 			return -1010615123;
-		case 469166476:
+		case 469166476: /* GXTEntry: "The Wilkesboro" */
 			return -32097795;
-		case 1229079574:
+		case 1229079574: /* GXTEntry: "The Wilkesboro" */
 			return -875834007;
-		case 990422947:
+		case 990422947: /* GXTEntry: "The Wilkesboro" */
 			return 68797956;
-		case -229665218:
+		case -229665218: /* GXTEntry: "The Wilkesboro" */
 			return -270885498;
-		case -527568197:
+		case -527568197: /* GXTEntry: "The Wilkesboro" */
 			return 682069807;
-		case 242634379:
+		case 242634379: /* GXTEntry: "The Wilkesboro" */
 			return 920726434;
 		case 275775515: /* GXTEntry: "The Copperhead Enforcer" */
 			return 1379601741;
@@ -12290,53 +12290,53 @@ int func_371(int iParam0)
 			return -1914569345;
 		case 2038967949: /* GXTEntry: "The Tyringham" */
 			return 1110533655;
-		case -1732116082:
+		case -1732116082: /* GXTEntry: "The Gatlinburg" */
 			return -2005854180;
-		case -2043224964:
+		case -2043224964: /* GXTEntry: "The Gatlinburg" */
 			return -1762511586;
-		case 1970158315:
+		case 1970158315: /* GXTEntry: "The Gatlinburg" */
 			return -1609283862;
-		case 1655444839:
+		case 1655444839: /* GXTEntry: "The Gatlinburg" */
 			return -1311675804;
-		case 1373270980:
+		case 1373270980: /* GXTEntry: "The Gatlinburg" */
 			return -1952932365;
-		case 1058885194:
+		case 1058885194: /* GXTEntry: "The Gatlinburg" */
 			return -1923309189;
-		case -1944199774:
+		case -1944199774: /* GXTEntry: "The Dagenhart" */
 			return -1262957735;
-		case 999079041:
+		case 999079041: /* GXTEntry: "The Dagenhart" */
 			return -1516622564;
-		case 635605293:
+		case 635605293: /* GXTEntry: "The Dagenhart" */
 			return -1741811132;
-		case 1493792634:
+		case 1493792634: /* GXTEntry: "The Dagenhart" */
 			return -1991740303;
-		case -213406744:
+		case -213406744: /* GXTEntry: "The Dagenhart" */
 			return 2071419087;
-		case -505870069:
+		case -505870069: /* GXTEntry: "The Dagenhart" */
 			return 1352008461;
-		case -152330007:
+		case -152330007: /* GXTEntry: "The Pittsburg" */
 			return -196656840;
-		case 2024678512:
+		case 2024678512: /* GXTEntry: "The Pittsburg" */
 			return 108848547;
-		case 1188643011:
+		case 1188643011: /* GXTEntry: "The Pittsburg" */
 			return -610365465;
-		case 1680243549:
+		case 1680243549: /* GXTEntry: "The Pittsburg" */
 			return -371774376;
-		case 845486043:
+		case 845486043: /* GXTEntry: "The Pittsburg" */
 			return -123352547;
-		case -1351118334:
+		case -1351118334: /* GXTEntry: "The Pittsburg" */
 			return 112125487;
-		case -1206325201:
+		case -1206325201: /* GXTEntry: "The Wilkesboro" */
 			return -741695871;
-		case -1514091649:
+		case -1514091649: /* GXTEntry: "The Wilkesboro" */
 			return -711024087;
-		case 1284413724:
+		case 1284413724: /* GXTEntry: "The Wilkesboro" */
 			return 784454766;
-		case 976581738:
+		case 976581738: /* GXTEntry: "The Wilkesboro" */
 			return 1114307520;
-		case 1895916033:
+		case 1895916033: /* GXTEntry: "The Wilkesboro" */
 			return 2026825867;
-		case 1588804965:
+		case 1588804965: /* GXTEntry: "The Wilkesboro" */
 			return 177900576;
 		default:
 			break;
@@ -12501,17 +12501,17 @@ int func_373(int iParam0)
 			return -1834221234;
 		case -528729190:
 			return -1526815245;
-		case -732726675:
+		case -732726675: /* GXTEntry: "Levens Holster" */
 			return 1127336149;
-		case -963846432:
+		case -963846432: /* GXTEntry: "Levens Holster" */
 			return 828941635;
-		case -1242022473:
+		case -1242022473: /* GXTEntry: "Levens Holster" */
 			return 531497422;
-		case -2026971099:
+		case -2026971099: /* GXTEntry: "Levens Holster" */
 			return 834643453;
-		case 2066466847:
+		case 2066466847: /* GXTEntry: "Levens Holster" */
 			return 526451008;
-		case 1835609242:
+		case 1835609242: /* GXTEntry: "Levens Holster" */
 			return -399699239;
 		case -542471226: /* GXTEntry: "Gunslinger Holster" */
 			return 1570234737;
@@ -12579,7 +12579,7 @@ int func_373(int iParam0)
 			return 1688754425;
 		case 1779645445: /* GXTEntry: "Deadboot Holster" */
 			return 1437777233;
-		case 2112644023:
+		case 2112644023: /* GXTEntry: "Deadboot Holster" */
 			return 1676958164;
 		case -909575313: /* GXTEntry: "Deadboot Holster" */
 			return -35123787;
@@ -12605,7 +12605,7 @@ int func_373(int iParam0)
 			return 1051595054;
 		case 1302861393: /* GXTEntry: "Bolger Holster" */
 			return 1338028883;
-		case 2145483459:
+		case 2145483459: /* GXTEntry: "Bolger Holster" */
 			return 574052421;
 		case 1916198766: /* GXTEntry: "Bolger Holster" */
 			return -1516904708;
@@ -12653,17 +12653,17 @@ int func_373(int iParam0)
 			return 1227104007;
 		case 676193620:
 			return -595245625;
-		case 1564617196:
+		case 1564617196: /* GXTEntry: "Levens Holster" */
 			return 1395189422;
-		case 1142159244:
+		case 1142159244: /* GXTEntry: "Levens Holster" */
 			return 1618444619;
-		case 834556641:
+		case 834556641: /* GXTEntry: "Levens Holster" */
 			return 1977920549;
-		case -1297099578:
+		case -1297099578: /* GXTEntry: "Levens Holster" */
 			return -2078652272;
-		case -1477066926:
+		case -1477066926: /* GXTEntry: "Levens Holster" */
 			return -1741786952;
-		case -1764025059:
+		case -1764025059: /* GXTEntry: "Levens Holster" */
 			return -1452207299;
 		default:
 			break;
@@ -14002,9 +14002,9 @@ int func_420(int iParam0)
 		case 15:
 			return 1371028520;
 		case 16:
-			return 1479488426;
+			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
-			return -170363364;
+			return -170363364 /* GXTEntry: "Club Rewards" */;
 		default:
 			break;
 	}
@@ -17100,7 +17100,7 @@ void func_537(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

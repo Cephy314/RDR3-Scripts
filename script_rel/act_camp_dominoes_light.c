@@ -3514,7 +3514,7 @@ int func_150(int iParam0, int iParam1)
 {
 	if (iParam1 == -1891229662)
 	{
-		return func_211(0, func_210(iParam1, 1), 11, 2116153146);
+		return func_211(0, func_210(iParam1, 1), 11, 2116153146 /* GXTEntry: "High and Low Finance" */);
 	}
 	return func_211(0, func_210(iParam1, 1), 11, iParam1);
 }

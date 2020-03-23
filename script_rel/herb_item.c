@@ -22,12 +22,12 @@ void __EntryFunction__()
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
-		if (func_3(Global_35, 0) != joaat("weapon_unarmed"))
+		if (func_3(Global_35, 0) != joaat("WEAPON_UNARMED"))
 		{
-			WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
 		}
 	}
-	PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), joaat("weapon_unarmed"), 0);
+	PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), joaat("WEAPON_UNARMED"), 0);
 	while (true)
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(Global_35) || ENTITY::IS_ENTITY_DEAD(Global_35))
@@ -37,7 +37,7 @@ void __EntryFunction__()
 		switch (func_4(&Var3))
 		{
 			case 0:
-				if (func_3(Global_35, 0) != joaat("weapon_unarmed"))
+				if (func_3(Global_35, 0) != joaat("WEAPON_UNARMED"))
 				{
 				}
 				else

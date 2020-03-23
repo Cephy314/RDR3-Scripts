@@ -4190,7 +4190,7 @@ int func_174(int iParam0)
 			return 1915869310;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return -291878865;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 628765193;
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
 			return 73897638;
@@ -4318,7 +4318,7 @@ int func_174(int iParam0)
 			return -2008306533;
 		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
 			return 1100437577;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return 1726381584;
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
 			return 1400293322;
@@ -7291,7 +7291,7 @@ void func_250(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -7940,7 +7940,7 @@ int func_274(int iParam0)
 			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
 			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
@@ -8068,7 +8068,7 @@ int func_274(int iParam0)
 			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
 		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
 			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
 			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
@@ -8674,7 +8674,7 @@ int func_290(int iParam0)
 		case -1850779170: /* GXTEntry: "Perfect Plucked Hawk Carcass" */
 			return -1440794801 /* GXTEntry: "Perfect Hawk Carcass" */;
 		case -121487803: /* GXTEntry: "Poor Plucked Hawk Carcass" */
-			return 2144711797;
+			return 2144711797 /* GXTEntry: "Poor Hawk Carcass" */;
 		case -1280499288: /* GXTEntry: "Good Skinned Heron Carcass" */
 			return 718825539 /* GXTEntry: "Good Heron Carcass" */;
 		case 820245961: /* GXTEntry: "Perfect Skinned Heron Carcass" */
@@ -8802,7 +8802,7 @@ int func_290(int iParam0)
 		case -955209948: /* GXTEntry: "Poor Plucked Seagull Carcass" */
 			return 431501574 /* GXTEntry: "Poor Seagull Carcass" */;
 		case 1459836898: /* GXTEntry: "Good Skinned Sheep Carcass" */
-			return 2126795269;
+			return 2126795269 /* GXTEntry: "Good Sheep Carcass" */;
 		case 303969766: /* GXTEntry: "Perfect Skinned Sheep Carcass" */
 			return 1489051752 /* GXTEntry: "Perfect Sheep Carcass" */;
 		case -1707588662: /* GXTEntry: "Poor Skinned Sheep Carcass" */

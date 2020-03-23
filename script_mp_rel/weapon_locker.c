@@ -1365,7 +1365,7 @@ int func_71(int iParam0)
 	func_104(Var0.f_4);
 	if (Var0.f_14 >= 0)
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, Var0.f_14, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, Var0.f_14, false, false);
 	}
 	return 1;
 }
@@ -1390,7 +1390,7 @@ int func_72(int iParam0)
 	}
 	if (Var0.f_14 >= 0)
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, Var0.f_14, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, Var0.f_14, false, false);
 	}
 	return 1;
 }

@@ -8515,7 +8515,7 @@ bool func_241(int iParam0, int iParam1)
 
 bool func_242(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_243(int iParam0)
@@ -10386,7 +10386,7 @@ int func_300(var uParam0, int iParam1, int iParam2)
 		if (!NETWORK::NETWORK_IS_IN_SESSION())
 		{
 			fVar0 = func_533(iParam2);
-			if (!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("weapon_unarmed"))
+			if (!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("WEAPON_UNARMED"))
 			{
 				PED::_0xD355E2F1BB41087E(iParam1, fVar0);
 			}
@@ -10399,7 +10399,7 @@ int func_300(var uParam0, int iParam1, int iParam2)
 				PED::_0xD355E2F1BB41087E(iParam1, fVar0);
 			}
 		}
-		if ((!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("weapon_unarmed")) || (WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) && WEAPON::_0x5809DBCA0A37C82B(Global_1935630->f_46)))
+		if ((!WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) || Global_1935630->f_46 == joaat("WEAPON_UNARMED")) || (WEAPON::IS_WEAPON_VALID(Global_1935630->f_46) && WEAPON::_0x5809DBCA0A37C82B(Global_1935630->f_46)))
 		{
 			fVar2 = 3f;
 			iVar1 = 3000;
@@ -12292,7 +12292,7 @@ void func_381(var uParam0, var uParam1)
 	if (func_171(uParam0, 524288) && PLAYER::_0xA81D24AE0AF99A5E(PLAYER::GET_PLAYER_INDEX()) > 0f)
 	{
 		iVar2 = func_586(*uParam1, 0, 1, 0);
-		if (iVar2 != joaat("weapon_unarmed"))
+		if (iVar2 != joaat("WEAPON_UNARMED"))
 		{
 			WEAPON::GET_AMMO_IN_CLIP(*uParam1, &iVar0, iVar2);
 			if (iVar0 <= 0)
@@ -12623,14 +12623,14 @@ int func_391(var uParam0, var uParam1)
 	func_600(uParam1, uParam0);
 	func_601(uParam0, uParam1);
 	iVar1 = func_602(Global_35, 1, 2, 0);
-	if ((iVar1 == joaat("weapon_unarmed") || iVar1 != uParam0->f_48) && !func_171(uParam1, 16777216))
+	if ((iVar1 == joaat("WEAPON_UNARMED") || iVar1 != uParam0->f_48) && !func_171(uParam1, 16777216))
 	{
 		func_603();
 		func_384(uParam1, 16777216);
 		func_604(*uParam0, uParam0->f_48, 0, 0, 2, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 1, 0, 0, 0);
 	}
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), false, 0, false, false);
-	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), false, 1, false, false);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), false, 0, false, false);
+	WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), false, 1, false, false);
 	TASK::TASK_SWAP_WEAPON(*uParam0, 1, 1, 0, 0);
 	iVar2 = 0;
 	if (func_170(uParam0, 512))
@@ -12639,8 +12639,8 @@ int func_391(var uParam0, var uParam1)
 	}
 	if (!func_170(uParam0, 262144))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("weapon_unarmed"), false, 0, false, false);
-		WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("weapon_unarmed"), false, 1, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("WEAPON_UNARMED"), false, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(uParam0->f_1, joaat("WEAPON_UNARMED"), false, 1, false, false);
 		TASK::TASK_SWAP_WEAPON(uParam0->f_1, 1, 1, 0, 0);
 		func_604(uParam0->f_1, uParam0->f_49, 0, 0, iVar2, 1, func_170(uParam0, 512), 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 1, 0, 0, 0);
 	}
@@ -13091,7 +13091,7 @@ int func_402(var uParam0, var uParam1)
 					WEAPON::_0xCC9C4393523833E2(*uParam0, uParam0->f_48, WEAPON::_0xEC97101A8F311282(uParam0->f_48));
 					WEAPON::SET_AMMO_IN_CLIP(*uParam0, uParam0->f_48, WEAPON::GET_MAX_AMMO_IN_CLIP(*uParam0, uParam0->f_48, true));
 					WEAPON::GET_CURRENT_PED_WEAPON(*uParam0, &iVar0, true, 3, false);
-					if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+					if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 					{
 						WEAPON::_0xCC9C4393523833E2(*uParam0, iVar0, WEAPON::_0xEC97101A8F311282(iVar0));
 						WEAPON::SET_AMMO_IN_CLIP(*uParam0, iVar0, WEAPON::GET_MAX_AMMO_IN_CLIP(*uParam0, iVar0, true));
@@ -13185,7 +13185,7 @@ int func_402(var uParam0, var uParam1)
 								CAM::_0x5B637D6F3B67716A(uParam0->f_1);
 								if (func_638(uParam0, uParam1, 0))
 								{
-									if (func_602(uParam0->f_1, 1, 0, 0) != joaat("weapon_unarmed"))
+									if (func_602(uParam0->f_1, 1, 0, 0) != joaat("WEAPON_UNARMED"))
 									{
 										WEAPON::_0xCEF4C65DE502D367(uParam0->f_1, 1, 0, 1, 0);
 									}
@@ -13392,7 +13392,7 @@ int func_406(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -17091,7 +17091,7 @@ int func_537(int iParam0)
 {
 	if (PED::GET_PED_CONFIG_FLAG(iParam0, 9, false))
 	{
-		if (Global_1935630->f_44 == joaat("weapon_unarmed"))
+		if (Global_1935630->f_44 == joaat("WEAPON_UNARMED"))
 		{
 			return 1;
 		}
@@ -18076,7 +18076,7 @@ int func_574(int iParam0)
 	{
 		return 0;
 	}
-	if (*iParam0 == joaat("weapon_unarmed"))
+	if (*iParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return 0;
 	}
@@ -18610,7 +18610,7 @@ int func_602(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;
@@ -18656,7 +18656,7 @@ int func_604(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 			iVar0 = WEAPON::_0xF8204EF17410BF43(iParam1, iParam7, iParam8, 0);
 			if (!WEAPON::IS_WEAPON_VALID(iVar0))
 			{
-				iVar0 = joaat("weapon_unarmed");
+				iVar0 = joaat("WEAPON_UNARMED");
 			}
 			break;
 		default:
@@ -18714,15 +18714,15 @@ int func_604(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 			iVar0 = WEAPON::_0xF8204EF17410BF43(iParam1, iParam7, iParam8, 0);
 			if (!WEAPON::IS_WEAPON_VALID(iVar0))
 			{
-				iVar0 = joaat("weapon_unarmed");
+				iVar0 = joaat("WEAPON_UNARMED");
 			}
 		}
 	}
-	if (iVar0 == joaat("weapon_unarmed") && iParam1 == joaat("weapon_unarmed"))
+	if (iVar0 == joaat("WEAPON_UNARMED") && iParam1 == joaat("WEAPON_UNARMED"))
 	{
 		return iVar0;
 	}
-	else if (iVar0 == joaat("weapon_unarmed"))
+	else if (iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		switch (iParam1)
 		{
@@ -18762,7 +18762,7 @@ int func_604(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				iParam9 = 0;
 			}
 		}
-		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("weapon_unarmed")) && !WEAPON::_0x79407D33328286C6(iVar0))
+		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(iVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
 			iVar24 = WEAPON::_0xD3750CCC00635FC2(iVar0) * 3;
@@ -19312,7 +19312,7 @@ int func_627(var uParam0, var uParam1)
 	if (!ENTITY::IS_ENTITY_DEAD(*uParam0))
 	{
 		iVar0 = func_586(*uParam0, 0, 1, 0);
-		if (func_246(iVar0, 0) && iVar0 != joaat("weapon_unarmed"))
+		if (func_246(iVar0, 0) && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			func_399(&(uParam0->f_20), 0);
 			func_143(&(uParam1->f_41));
@@ -20115,7 +20115,7 @@ char* func_657(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -21515,7 +21515,7 @@ int func_719(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	if (bParam3 || !ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
-		if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, joaat("weapon_unarmed"), iParam1))
+		if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, joaat("WEAPON_UNARMED"), iParam1))
 		{
 			return 1;
 		}
@@ -23306,7 +23306,7 @@ int func_781(var uParam0, var uParam1, bool bParam2)
 	else
 	{
 		iVar2 = func_586(*uParam0, 0, 1, 0);
-		if (iVar2 != joaat("weapon_unarmed"))
+		if (iVar2 != joaat("WEAPON_UNARMED"))
 		{
 			WEAPON::GET_AMMO_IN_CLIP(*uParam0, &iVar0, iVar2);
 			if (iVar0 <= 0)
@@ -23538,7 +23538,7 @@ int func_787(var uParam0, var uParam1, bool bParam2)
 	{
 		return 0;
 	}
-	if (iVar2 != joaat("weapon_unarmed"))
+	if (iVar2 != joaat("WEAPON_UNARMED"))
 	{
 		WEAPON::GET_AMMO_IN_CLIP(*uParam0, &iVar0, iVar2);
 		if (iVar0 <= 0)
@@ -24721,7 +24721,7 @@ void func_832(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

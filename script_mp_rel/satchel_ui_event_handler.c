@@ -926,7 +926,7 @@ void func_24()
 		}
 		if (Global_1939231->f_10477 == -156634416)
 		{
-			func_115(bVar10, 0, -883547903);
+			func_115(bVar10, 0, -883547903 /* GXTEntry: "Watches" */);
 		}
 		else
 		{
@@ -1101,10 +1101,10 @@ int func_29(var uParam0)
 	func_135(Global_1939231->f_10488);
 	DATABINDING::_DATABINDING_SET_TEMPLATED_UI_ITEM_LIST_SIZE(Global_1939231->f_10488, Global_1939231->f_10452);
 	iVar4 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST(*uParam0, "Collections");
-	iVar5 = 485071447;
+	iVar5 = 485071447; /* GXTEntry: "Satchel" */
 	if (func_136(-593948563 /* GXTEntry: "Legend of the East Satchel" */))
 	{
-		iVar5 = -1401261769;
+		iVar5 = -1401261769; /* GXTEntry: "Legendary Satchel" */
 	}
 	iVar6 = func_137(iVar4, "player", iVar5, "ALL SATCHEL", -1591664384);
 	if (iVar6 < 0)
@@ -1113,7 +1113,7 @@ int func_29(var uParam0)
 	}
 	if ((func_45() || func_47(Global_34, func_46(7), 1)) || (!(func_48(7) || func_49(7)) && func_23(0)))
 	{
-		func_137(iVar4, "saddle", -1186165261, "ALL", 724026534);
+		func_137(iVar4, "saddle", -1186165261 /* GXTEntry: "SADDLEBAGS" */, "ALL", 724026534);
 	}
 	func_66(iVar6, &iVar3);
 	if (Global_1939231->f_8)
@@ -1135,31 +1135,31 @@ int func_30(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1346594033;
+			return 1346594033 /* GXTEntry: "Recent" */;
 		case -1559802791:
-			return -352057134;
+			return -352057134 /* GXTEntry: "Materials" */;
 		case -1268291907:
-			return 845736308;
+			return 845736308 /* GXTEntry: "Ingredients" */;
 		case -96974025:
-			return -2057617490;
+			return -2057617490 /* GXTEntry: "Tonics" */;
 		case -1666604090:
-			return 991808728;
+			return 991808728 /* GXTEntry: "Provisions" */;
 		case 1561961676:
-			return -92112048;
+			return -92112048 /* GXTEntry: "Valuables" */;
 		case -156634416:
-			return 2047707540;
+			return 2047707540 /* GXTEntry: "Kit" */;
 		case 1061777683:
-			return -36657802;
+			return -36657802 /* GXTEntry: "Documents" */;
 		case 1783698482:
-			return -1236163301;
+			return -1236163301 /* GXTEntry: "Collections" */;
 		case -283002878:
-			return 262409577;
+			return 262409577 /* GXTEntry: "Horse Cargo" */;
 		case -889932290:
-			return 668180388;
+			return 668180388 /* GXTEntry: "Wagon Cargo" */;
 		case -2074770370:
-			return 1643818657;
+			return 1643818657 /* GXTEntry: "Donations" */;
 		case -693134279:
-			return -1077706770;
+			return -1077706770 /* GXTEntry: "Postable Items" */;
 		case -182626652:
 			if ((Global_1915180->f_20136 || Global_1915180->f_21989.f_1) && (Global_1915180->f_19742 == 16 || Global_1915180->f_19742 == 29))
 			{
@@ -1167,7 +1167,7 @@ int func_30(int iParam0)
 			}
 			else
 			{
-				return -161395681;
+				return -161395681 /* GXTEntry: "Sell" */;
 			}
 			break;
 	}
@@ -1179,39 +1179,39 @@ int func_31(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1315938069;
+			return 1315938069 /* GXTEntry: "Stores your most recently collected items." */;
 		case -1559802791:
-			return -1694952718;
+			return -1694952718 /* GXTEntry: "Stores all types of inedible materials to craft a variety of items." */;
 		case -1268291907:
-			return 1510785758;
+			return 1510785758 /* GXTEntry: "Stores all types of edible ingredients to craft provisions and tonics." */;
 		case -96974025:
-			return 392871877;
+			return 392871877 /* GXTEntry: "Stores all types of tonics from shop bought to crafted versions." */;
 		case -1666604090:
-			return 92275361;
+			return 92275361 /* GXTEntry: "Stores all types of provisions from shop bought to cooked meals." */;
 		case 1561961676:
-			return 983460938;
+			return 983460938 /* GXTEntry: "Stores all types of valuables that can be sold for cash." */;
 		case -156634416:
-			return -1579183876;
+			return -1579183876 /* GXTEntry: "Stores all types of equipment that will be used regularly." */;
 		case 1061777683:
-			return -419081072;
+			return -419081072 /* GXTEntry: "Stores all types of documents that can be further inspected or actioned on." */;
 		case 1783698482:
-			return 2061483699;
+			return 2061483699 /* GXTEntry: "Stores completed collectible sets that can be sold to Madam Nazar." */;
 		case -283002878:
-			return -1202687131;
+			return -1202687131 /* GXTEntry: "Displays all items that are stored on the Horse." */;
 		case -889932290:
-			return -1875341370;
+			return -1875341370 /* GXTEntry: "Displays all items that are stored on the Hunting Wagon." */;
 		case -2074770370:
-			return 89311517;
+			return 89311517 /* GXTEntry: "Displays all items that can be donated." */;
 		case -693134279:
-			return 1001811369;
+			return 1001811369 /* GXTEntry: "No items to post." */;
 		case -182626652:
 			if (Global_1915180->f_19742 == 29)
 			{
-				return 89311517;
+				return 89311517 /* GXTEntry: "Displays all items that can be donated." */;
 			}
 			else
 			{
-				return 288697952;
+				return 288697952 /* GXTEntry: "Displays all items that are suitable for selling." */;
 			}
 			break;
 	}
@@ -2228,7 +2228,7 @@ void func_65(int iParam0, int iParam1)
 	{
 		return;
 	}
-	if ((!func_69(iParam1, 747873593) && !func_69(iParam1, -1661502552)) && !func_69(iParam1, 2108217528))
+	if ((!func_69(iParam1, 747873593) && !func_69(iParam1, -1661502552 /* GXTEntry: "Letters" */)) && !func_69(iParam1, 2108217528 /* GXTEntry: "Notes" */))
 	{
 		return;
 	}
@@ -3465,7 +3465,7 @@ int func_108(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;
@@ -5874,7 +5874,7 @@ int func_193(int iParam0)
 			return -855155400;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return 1743453709;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 1743453709;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 			return 1743453709;
@@ -6032,7 +6032,7 @@ int func_193(int iParam0)
 			return -352732121;
 		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
 			return -352732121;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return -352732121;
 		case 102446365: /* GXTEntry: "Perfect Skunk Carcass" */
 			return 117556329;
@@ -11379,18 +11379,18 @@ int func_393(int iParam0)
 	{
 		if (func_69(iParam0, 316290104))
 		{
-			return -1896040097;
+			return -1896040097 /* GXTEntry: "Break Down" */;
 		}
 		else if (func_118(iParam0, 1, 0))
 		{
-			return -2086473757;
+			return -2086473757 /* GXTEntry: "Cook" */;
 		}
 	}
 	else if (func_69(iParam0, 1147021565))
 	{
 		if (func_69(iParam0, -1242251796))
 		{
-			return -31549930;
+			return -31549930 /* GXTEntry: "Use" */;
 		}
 		switch (func_6(iParam0, -949239683))
 		{
@@ -11399,26 +11399,26 @@ int func_393(int iParam0)
 			case 999632878:
 			case 1130235258:
 			case 1177617310:
-				return -1925143884;
+				return -1925143884 /* GXTEntry: "Drink" */;
 			case -1915958659:
 			case -809056541:
 			case 89124942:
 			case 1451036371:
 			case 1859991422:
 			case 1891031775:
-				return 356040554;
+				return 356040554 /* GXTEntry: "Eat" */;
 			case -1919515848:
 			case -262371497:
 			case 845883585:
 			case 1443104131:
-				return -31549930;
+				return -31549930 /* GXTEntry: "Use" */;
 		}
 	}
 	else if (func_6(iParam0, 1224357681) == -883547903)
 	{
-		return -1948542959;
+		return -1948542959 /* GXTEntry: "Equip" */;
 	}
-	return -31549930;
+	return -31549930 /* GXTEntry: "Use" */;
 }
 
 void func_394(int iParam0, var uParam1)
@@ -12643,9 +12643,9 @@ int func_453()
 	if (WEAPON::GET_CURRENT_PED_WEAPON(Global_34, &iVar1, true, 1, false))
 	{
 	}
-	if (iVar1 == joaat("weapon_unarmed"))
+	if (iVar1 == joaat("WEAPON_UNARMED"))
 	{
-		if (iVar0 == joaat("weapon_unarmed"))
+		if (iVar0 == joaat("WEAPON_UNARMED"))
 		{
 			return 1;
 		}
@@ -12666,7 +12666,7 @@ int func_453()
 			return 0;
 		}
 	}
-	else if (iVar0 == joaat("weapon_unarmed"))
+	else if (iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		return 1;
 	}
@@ -15345,7 +15345,7 @@ void func_526(int iParam0, int iParam1, var uParam2)
 			*iParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*iParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -16754,7 +16754,7 @@ int func_586(int iParam0)
 		case -1850779170: /* GXTEntry: "Perfect Plucked Hawk Carcass" */
 			return -1440794801 /* GXTEntry: "Perfect Hawk Carcass" */;
 		case -121487803: /* GXTEntry: "Poor Plucked Hawk Carcass" */
-			return 2144711797;
+			return 2144711797 /* GXTEntry: "Poor Hawk Carcass" */;
 		case -1280499288: /* GXTEntry: "Good Skinned Heron Carcass" */
 			return 718825539 /* GXTEntry: "Good Heron Carcass" */;
 		case 820245961: /* GXTEntry: "Perfect Skinned Heron Carcass" */
@@ -16882,7 +16882,7 @@ int func_586(int iParam0)
 		case -955209948: /* GXTEntry: "Poor Plucked Seagull Carcass" */
 			return 431501574 /* GXTEntry: "Poor Seagull Carcass" */;
 		case 1459836898: /* GXTEntry: "Good Skinned Sheep Carcass" */
-			return 2126795269;
+			return 2126795269 /* GXTEntry: "Good Sheep Carcass" */;
 		case 303969766: /* GXTEntry: "Perfect Skinned Sheep Carcass" */
 			return 1489051752 /* GXTEntry: "Perfect Sheep Carcass" */;
 		case -1707588662: /* GXTEntry: "Poor Skinned Sheep Carcass" */
@@ -16983,7 +16983,7 @@ int func_588(int iParam0)
 
 bool func_589(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_590(int iParam0)
@@ -18211,7 +18211,7 @@ int func_652(int iParam0, int iParam1, bool bParam2, int iParam3)
 	{
 		bParam2 = true;
 	}
-	else if (iParam0 == joaat("weapon_unarmed"))
+	else if (iParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return 0;
 	}
@@ -18386,7 +18386,7 @@ int func_658(int iParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			iVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415:
+		case 963726415: /* GXTEntry: "Toxic Moonshine" */
 			iVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -19385,7 +19385,7 @@ int func_695(int iParam0)
 			return 731537518 /* GXTEntry: "Goose" */;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 524696643 /* GXTEntry: "Hawk" */;
 		case -905842006: /* GXTEntry: "Poor Heron Carcass" */
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
@@ -19461,7 +19461,7 @@ int func_695(int iParam0)
 			return 1398366530;
 		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return -1427844561 /* GXTEntry: "Sheep" */;
 		case -2013445740: /* GXTEntry: "Good Skunk Carcass" */
 		case -1927342740: /* GXTEntry: "Poor Skunk Carcass" */
@@ -19920,7 +19920,7 @@ int func_709(int iParam0)
 			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
 			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
@@ -20048,7 +20048,7 @@ int func_709(int iParam0)
 			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
 		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
 			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
 			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
@@ -21401,7 +21401,7 @@ int func_758(int iParam0)
 			return 5;
 		case -1063340820: /* GXTEntry: "Outfit Six" */
 			return 6;
-		case 2127262701:
+		case 2127262701: /* GXTEntry: "Outfit Seven" */
 			return 7;
 		case -1323870201: /* GXTEntry: "Outfit Eight" */
 			return 8;
@@ -23029,22 +23029,22 @@ int func_815(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1894830400:
-		case -1661502552:
-		case -1460119729:
-		case -1434186802:
-		case -1274632976:
-		case -1021077955:
-		case -766632829:
-		case -753201933:
-		case -226501431:
-		case 106537031:
-		case 335574348:
-		case 758990751:
-		case 938635888:
-		case 1130538400:
-		case 1940412283:
-		case 2108217528:
+		case -1894830400: /* GXTEntry: "Hunting Requests" */
+		case -1661502552: /* GXTEntry: "Letters" */
+		case -1460119729: /* GXTEntry: "Treasure Maps" */
+		case -1434186802: /* GXTEntry: "Photographs" */
+		case -1274632976: /* GXTEntry: "Collector\'s Maps" */
+		case -1021077955: /* GXTEntry: "Recipe Pamphlets" */
+		case -766632829: /* GXTEntry: "Newspaper Scraps" */
+		case -753201933: /* GXTEntry: "Business Cards" */
+		case -226501431: /* GXTEntry: "Newspapers" */
+		case 106537031: /* GXTEntry: "Dinosaur Notes" */
+		case 335574348: /* GXTEntry: "Rock Carving Notes" */
+		case 758990751: /* GXTEntry: "Books" */
+		case 938635888: /* GXTEntry: "Drawings" */
+		case 1130538400: /* GXTEntry: "Bounty Posters" */
+		case 1940412283: /* GXTEntry: "Maps" */
+		case 2108217528: /* GXTEntry: "Notes" */
 			return 1;
 	}
 	if (func_888(iParam0))
@@ -23058,7 +23058,7 @@ int func_816(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -883547903:
+		case -883547903: /* GXTEntry: "Watches" */
 			return 1;
 	}
 	return 0;
@@ -23073,21 +23073,21 @@ int func_818(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1434404074:
-		case -1304157067:
-		case -1153279214:
-		case -907263478:
-		case -863446379:
-		case -743230903:
-		case -592101023:
-		case -193281342:
-		case -182347589:
-		case 13054047:
-		case 178390301:
-		case 634557535:
-		case 707002774:
-		case 1056119646:
-		case 1365509591:
+		case -1434404074: /* GXTEntry: "Cooked Game Bird Meat" */
+		case -1304157067: /* GXTEntry: "Cooked Big Game Meat" */
+		case -1153279214: /* GXTEntry: "Cooked Gristly Mutton" */
+		case -907263478: /* GXTEntry: "Cooked Herptile Meat" */
+		case -863446379: /* GXTEntry: "Cooked Succulent Fish" */
+		case -743230903: /* GXTEntry: "Cooked Stringy Meat" */
+		case -592101023: /* GXTEntry: "Cooked Mature Venison" */
+		case -193281342: /* GXTEntry: "Cooked Game Meat" */
+		case -182347589: /* GXTEntry: "Cooked Crustacean Meat" */
+		case 13054047: /* GXTEntry: "Cooked Flaky Fish" */
+		case 178390301: /* GXTEntry: "Cooked Plump Birds" */
+		case 634557535: /* GXTEntry: "Cooked Beef" */
+		case 707002774: /* GXTEntry: "Cooked Gritty Fish" */
+		case 1056119646: /* GXTEntry: "Cooked Tender Pork" */
+		case 1365509591: /* GXTEntry: "Cooked Exotic Birds" */
 			return 1;
 	}
 	return 0;
@@ -24606,18 +24606,18 @@ int func_888(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1943756076:
-		case -763325020:
-		case -687000066:
-		case -280003847:
-		case -258175882:
-		case 433947044:
-		case 469223329:
-		case 1014101275:
-		case 1054139581:
-		case 1447083768:
-		case 1499469209:
-		case 2078973319:
+		case -1943756076: /* GXTEntry: "Cigarette Cards" */
+		case -763325020: /* GXTEntry: "Cigarette Cards" */
+		case -687000066: /* GXTEntry: "Cigarette Cards" */
+		case -280003847: /* GXTEntry: "Cigarette Cards" */
+		case -258175882: /* GXTEntry: "Cigarette Cards" */
+		case 433947044: /* GXTEntry: "Cigarette Cards" */
+		case 469223329: /* GXTEntry: "Cigarette Cards" */
+		case 1014101275: /* GXTEntry: "Cigarette Cards" */
+		case 1054139581: /* GXTEntry: "Cigarette Cards" */
+		case 1447083768: /* GXTEntry: "Cigarette Cards" */
+		case 1499469209: /* GXTEntry: "Cigarette Cards" */
+		case 2078973319: /* GXTEntry: "Cigarette Cards" */
 			return 1;
 	}
 	return 0;

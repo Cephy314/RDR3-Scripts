@@ -4521,7 +4521,7 @@ void func_123(var uParam0)
 				uParam0->f_17 = 3;
 			}
 		}
-		if (func_293(Global_35, 1, 0, 0) != joaat("weapon_unarmed") && func_291(uParam0, 4096, 0, 1))
+		if (func_293(Global_35, 1, 0, 0) != joaat("WEAPON_UNARMED") && func_291(uParam0, 4096, 0, 1))
 		{
 			func_292(uParam0, 1);
 			uParam0->f_17 = 3;
@@ -4611,7 +4611,7 @@ void func_123(var uParam0)
 				}
 				uParam0->f_17 = 4;
 			}
-			else if ((VOLUME::_0xF256A75210C5C0EB(uParam0->f_7, Global_36) == 0 && func_293(Global_35, 1, 0, 0) == joaat("weapon_unarmed")) && !func_295(&uVar1))
+			else if ((VOLUME::_0xF256A75210C5C0EB(uParam0->f_7, Global_36) == 0 && func_293(Global_35, 1, 0, 0) == joaat("WEAPON_UNARMED")) && !func_295(&uVar1))
 			{
 				bVar3 = false;
 				if (func_291(uParam0, 8192, 0, 0))
@@ -10705,7 +10705,7 @@ int func_293(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;

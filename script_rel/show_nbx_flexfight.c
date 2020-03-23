@@ -975,9 +975,9 @@ void func_12(bool bParam0)
 	func_92(0);
 	if (bParam0)
 	{
-		if (INVENTORY::_0x3D10D7179D7034AF(func_93(0), joaat("weapon_unarmed"), false))
+		if (INVENTORY::_0x3D10D7179D7034AF(func_93(0), joaat("WEAPON_UNARMED"), false))
 		{
-			INVENTORY::_0x6A564540FAC12211(func_93(0), joaat("weapon_unarmed"));
+			INVENTORY::_0x6A564540FAC12211(func_93(0), joaat("WEAPON_UNARMED"));
 		}
 		if (!bVar0)
 		{
@@ -988,7 +988,7 @@ void func_12(bool bParam0)
 					VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 623901053);
 					if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bLocal_2, true, 2, false))
 					{
-						if ((bLocal_2 != joaat("weapon_unarmed") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560)
+						if ((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560)
 						{
 							if (INVENTORY::_0x3D10D7179D7034AF(func_93(0), bLocal_2, false))
 							{
@@ -1019,9 +1019,9 @@ void func_12(bool bParam0)
 			{
 				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 716706914, 1);
 				iVar7 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 713668775, 1);
-				if ((((((bLocal_2 != joaat("weapon_unarmed") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560) && iVar6 != 1) && iVar6 != 0) && iVar7 != 1) && iVar7 != 0)
+				if ((((((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560) && iVar6 != 1) && iVar6 != 0) && iVar7 != 1) && iVar7 != 0)
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), false, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
 					TASK::TASK_SWAP_WEAPON(Global_35, 1, 0, 0, 0);
 					if (PED::IS_PED_USING_ACTION_MODE(Global_35))
 					{
@@ -1087,7 +1087,7 @@ void func_12(bool bParam0)
 				{
 					if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bLocal_2, true, 2, false))
 					{
-						if ((bLocal_2 != joaat("weapon_unarmed") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560)
+						if ((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560)
 						{
 							if (INVENTORY::_0x3D10D7179D7034AF(func_93(0), bLocal_2, false))
 							{
@@ -3170,11 +3170,11 @@ void func_63(int iParam0)
 				TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(Global_35, &(iParam0->f_81[0]), 0, 0, 0, 1, 0);
 				ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(&(iParam0->f_81[0]), true, 300f);
 				PED::_0xD77AE48611B7B10A(&(iParam0->f_81[0]), 2f);
-				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
 				PED::SET_PED_CONFIG_FLAG(Global_35, 249, true);
 				func_251(&(iParam0->f_81[0]), 0);
 				WEAPON::REMOVE_ALL_PED_WEAPONS(&(iParam0->f_81[0]), true, true);
-				WEAPON::SET_CURRENT_PED_WEAPON(&(iParam0->f_81[0]), joaat("weapon_unarmed"), true, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(&(iParam0->f_81[0]), joaat("WEAPON_UNARMED"), true, 0, false, false);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[0]), 1269650476);
 				ENTITY::SET_ENTITY_INVINCIBLE(&(iParam0->f_81[0]), true);
 				PED::SET_PED_CONFIG_FLAG(&(iParam0->f_81[0]), 169, true);
@@ -10552,7 +10552,7 @@ int func_233(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;
@@ -10566,7 +10566,7 @@ int func_233(int iParam0, bool bParam1, int iParam2, bool bParam3)
 
 bool func_234(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 bool func_235(int iParam0, bool bParam1)
@@ -10962,8 +10962,8 @@ void func_250(bool bParam0)
 		func_347(&Global_35, 1, bParam0);
 		PLAYER::SET_PLAYER_CAN_USE_COVER(PLAYER::PLAYER_ID(), false);
 		PLAYER::_0xD1A70C1E8D1031FE(PLAYER::PLAYER_ID(), 0);
-		PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("weapon_unarmed"), 0);
-		PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("weapon_unarmed"), 1);
+		PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 0);
+		PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 1);
 	}
 }
 
@@ -12755,7 +12755,7 @@ int func_301(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -15691,7 +15691,7 @@ void func_347(var uParam0, bool bParam1, bool bParam2)
 				WEAPON::REMOVE_ALL_PED_WEAPONS(*uParam0, true, true);
 			}
 		}
-		WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("weapon_unarmed"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(*uParam0, joaat("WEAPON_UNARMED"), true, 0, false, false);
 		PED::SET_PED_CONFIG_FLAG(*uParam0, 249, bParam2);
 		PED::SET_PED_CONFIG_FLAG(*uParam0, 258, true);
 	}

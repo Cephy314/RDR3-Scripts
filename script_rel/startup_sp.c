@@ -1308,7 +1308,7 @@ var func_51(int iParam0)
 			cVar0 = ((*Global_1347702)[func_113(iParam0) /*49*/])->f_3;
 			break;
 		case 11:
-			if (iParam0 == func_114(0, 10, 11, 2116153146))
+			if (iParam0 == func_114(0, 10, 11, 2116153146 /* GXTEntry: "High and Low Finance" */))
 			{
 				StringCopy(&cVar0, "CABR01", 8);
 			}
@@ -18808,7 +18808,7 @@ void func_473(int iParam0, bool bParam1)
 	iVar0[8] = -1608451354; /* GXTEntry: "Boar Skin Rug" */
 	iVar19[8] = -2104773585;
 	iVar38[8] = func_712();
-	iVar0[9] = 2137149309;
+	iVar0[9] = 2137149309; /* GXTEntry: "Lean-to Cow Hide Ground Cover" */
 	iVar19[9] = -302735166;
 	iVar38[9] = func_712();
 	iVar0[10] = -1329287819; /* GXTEntry: "Pronghorn Skull" */
@@ -18904,7 +18904,7 @@ void func_474(int iParam0, bool bParam1)
 	int iVar19[18];
 	int iVar38[18];
 
-	iVar0[0] = 2137149309;
+	iVar0[0] = 2137149309; /* GXTEntry: "Lean-to Cow Hide Ground Cover" */
 	iVar19[0] = -1999825729;
 	iVar38[0] = func_712();
 	iVar0[1] = -147867326; /* GXTEntry: "Cougar Pelt Covered Chest" */
@@ -19028,7 +19028,7 @@ void func_475(int iParam0, bool bParam1)
 	bool bVar54;
 	bool bVar55;
 
-	iVar0[0] = 2137149309;
+	iVar0[0] = 2137149309; /* GXTEntry: "Lean-to Cow Hide Ground Cover" */
 	iVar19[0] = -134624703;
 	iVar0[1] = -147867326; /* GXTEntry: "Cougar Pelt Covered Chest" */
 	iVar19[1] = func_468();
@@ -19129,7 +19129,7 @@ void func_476(int iParam0, bool bParam1)
 	bool bVar58;
 	bool bVar59;
 
-	iVar0[0] = 2137149309;
+	iVar0[0] = 2137149309; /* GXTEntry: "Lean-to Cow Hide Ground Cover" */
 	iVar19[0] = 1104800593;
 	iVar38[0] = func_712();
 	iVar0[1] = -1145367359; /* GXTEntry: "Pronghorn Leather Table Tops" */
@@ -25385,13 +25385,13 @@ void func_634(int iParam0, int iParam1)
 {
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("weapon_unarmed"), true, 0, false, false);
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("weapon_unarmed"), true, 1, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), true, 1, false, false);
 		if (PED::IS_PED_A_PLAYER(iParam0) && iParam1 == 1)
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
-				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("weapon_unarmed"), 0);
+				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 0);
 			}
 		}
 	}
@@ -25993,7 +25993,7 @@ int func_661(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -30760,7 +30760,7 @@ bool func_814(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 			bVar0 = WEAPON::_0xF8204EF17410BF43(bParam1, iParam7, iParam8, 0);
 			if (!WEAPON::IS_WEAPON_VALID(bVar0))
 			{
-				bVar0 = joaat("weapon_unarmed");
+				bVar0 = joaat("WEAPON_UNARMED");
 			}
 			break;
 		default:
@@ -30818,15 +30818,15 @@ bool func_814(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 			bVar0 = WEAPON::_0xF8204EF17410BF43(bParam1, iParam7, iParam8, 0);
 			if (!WEAPON::IS_WEAPON_VALID(bVar0))
 			{
-				bVar0 = joaat("weapon_unarmed");
+				bVar0 = joaat("WEAPON_UNARMED");
 			}
 		}
 	}
-	if (bVar0 == joaat("weapon_unarmed") && bParam1 == joaat("weapon_unarmed"))
+	if (bVar0 == joaat("WEAPON_UNARMED") && bParam1 == joaat("WEAPON_UNARMED"))
 	{
 		return bVar0;
 	}
-	else if (bVar0 == joaat("weapon_unarmed"))
+	else if (bVar0 == joaat("WEAPON_UNARMED"))
 	{
 		switch (bParam1)
 		{
@@ -30866,7 +30866,7 @@ bool func_814(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 				bParam9 = false;
 			}
 		}
-		else if ((!WEAPON::_0x959383DCD42040DA(bVar0) && bVar0 != joaat("weapon_unarmed")) && !WEAPON::_0x79407D33328286C6(bVar0))
+		else if ((!WEAPON::_0x959383DCD42040DA(bVar0) && bVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(bVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, bVar0));
 			iVar24 = WEAPON::_0xD3750CCC00635FC2(bVar0) * 3;
@@ -31579,7 +31579,7 @@ char* func_842(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -34443,7 +34443,7 @@ void func_933(int iParam0, int iParam1)
 
 bool func_934(bool bParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(bParam0) && bParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(bParam0) && bParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_935(bool bParam0)
@@ -36690,7 +36690,7 @@ void func_997(bool bParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

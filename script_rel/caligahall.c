@@ -2651,7 +2651,7 @@ int func_97(bool bParam0, bool bParam1, bool bParam2)
 	{
 		switch (Global_1935630->f_44)
 		{
-			case joaat("weapon_unarmed"):
+			case joaat("WEAPON_UNARMED"):
 			case joaat("WEAPON_KIT_CAMERA"):
 			case joaat("WEAPON_KIT_DETECTOR"):
 				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != 1030835986)
@@ -2764,7 +2764,7 @@ void func_102()
 {
 	switch (Global_1935630->f_44)
 	{
-		case joaat("weapon_unarmed"):
+		case joaat("WEAPON_UNARMED"):
 		case joaat("WEAPON_FISHINGROD"):
 		case joaat("WEAPON_KIT_CAMERA"):
 		case joaat("WEAPON_MELEE_LANTERN"):
@@ -4831,7 +4831,7 @@ bool func_205()
 
 bool func_206(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 void func_207(int iParam0, int iParam1)

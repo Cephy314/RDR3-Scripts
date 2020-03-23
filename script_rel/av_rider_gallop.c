@@ -1765,7 +1765,7 @@ int func_31(var uParam0)
 				func_58(&((uParam0->f_20[1 /*14*/])->f_5), 50, 10, 0);
 				PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[1 /*14*/]), 297, true);
 				PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[1 /*14*/]), 130, false);
-				WEAPON::SET_CURRENT_PED_WEAPON(&(uParam0->f_20[1 /*14*/]), joaat("weapon_unarmed"), true, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(&(uParam0->f_20[1 /*14*/]), joaat("WEAPON_UNARMED"), true, 0, false, false);
 				PED::_0x931B241409216C1F(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 0);
 				func_59(&(uParam0->f_20[0 /*14*/]), (uParam0->f_20[1 /*14*/])->f_5, (uParam0->f_20[1 /*14*/])->f_8, 2, 1073741824 /* Float: 2f */);
 				func_60(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 1, -1, 1);

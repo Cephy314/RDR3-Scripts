@@ -2047,7 +2047,7 @@ int func_21(var uParam0, var uParam1, var uParam2)
 				func_72(uParam2, 0);
 				func_58(uParam2, 1);
 				func_183(uParam2, 0, uParam2->f_864.f_14);
-				func_184(uParam2, &(uParam2->f_113[0 /*6*/]), -1538856553, 0, 1);
+				func_184(uParam2, &(uParam2->f_113[0 /*6*/]), -1538856553 /* GXTEntry: "Return to the mission area" */, 0, 1);
 				func_166(&(uParam2->f_432.f_94), uParam2->f_2);
 				func_123(uParam1, uParam2, 2);
 			}
@@ -2059,53 +2059,64 @@ int func_21(var uParam0, var uParam1, var uParam2)
 		case 19:
 			func_187(uParam0, uParam1, uParam2);
 			func_188(uParam0, uParam2);
-			func_189(uParam2, -1571873137, -1, 0, 0);
+			func_189(uParam2, -1571873137 /* GXTEntry: "Meet Cripps at your ~COLOR_MP_OBJECTIVE~Camp" */, -1, 0, 0);
 			if (!func_170(uParam2, 5))
 			{
-				func_190(uParam2, 192763213, 10000, 0, 0);
+				func_190(uParam2, 192763213 /* GXTEntry: "You have bonded with your horse after purchasing a saddle for it. Your horse is i" +
+    "ndicated by a ~BLIP_HORSE_OWNED~ on the radar." */, 10000, 0, 0);
 				func_191(uParam2, 5);
 			}
 			else if (!func_170(uParam2, 6))
 			{
-				if (!func_192(uParam2, 192763213))
+				if (!func_192(uParam2, 192763213 /* GXTEntry: "You have bonded with your horse after purchasing a saddle for it. Your horse is i" +
+    "ndicated by a ~BLIP_HORSE_OWNED~ on the radar." */))
 				{
-					func_190(uParam2, -1512686022, 10000, 0, 0);
+					func_190(uParam2, -1512686022 /* GXTEntry: "Grooming and caring for your horse increases your bonding level. Continuing to bo" +
+    "nd with your horse improves its attributes." */, 10000, 0, 0);
 					func_191(uParam2, 6);
 				}
 			}
 			else if (!func_170(uParam2, 7))
 			{
-				if (func_192(uParam2, -1512686022))
+				if (func_192(uParam2, -1512686022 /* GXTEntry: "Grooming and caring for your horse increases your bonding level. Continuing to bo" +
+    "nd with your horse improves its attributes." */))
 				{
 					uParam2->f_432.f_91 = uParam2->f_14;
 				}
 				else if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(uParam2->f_432.f_91, uParam2->f_14)) > 5000)
 				{
-					func_190(uParam2, 1253851150, 10000, 0, 0);
+					func_190(uParam2, 1253851150 /* GXTEntry: "Horse Cores drain over time. Feed your horse to replenish its Cores. Hold ~INPUT_" +
+    "OPEN_WHEEL_MENU~ and press ~INPUT_SELECT_NEXT_WHEEL~ to select the Horse Wheel w" +
+    "hile next to or on your horse." */, 10000, 0, 0);
 					func_191(uParam2, 7);
 				}
 			}
 			else if (func_170(uParam2, 7) && !func_170(uParam2, 8))
 			{
-				if (func_192(uParam2, 1253851150))
+				if (func_192(uParam2, 1253851150 /* GXTEntry: "Horse Cores drain over time. Feed your horse to replenish its Cores. Hold ~INPUT_" +
+    "OPEN_WHEEL_MENU~ and press ~INPUT_SELECT_NEXT_WHEEL~ to select the Horse Wheel w" +
+    "hile next to or on your horse." */))
 				{
 					uParam2->f_432.f_91 = uParam2->f_14;
 				}
 				else if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(uParam2->f_432.f_91, uParam2->f_14)) > 5000)
 				{
-					func_190(uParam2, -308865274, 10000, 0, 0);
+					func_190(uParam2, -308865274 /* GXTEntry: "Extra stalls can be purchased in the Stable. These allow you to buy and manage ad" +
+    "ditional horses." */, 10000, 0, 0);
 					func_191(uParam2, 8);
 				}
 			}
 			else if (func_170(uParam2, 8) && !func_170(uParam2, 9))
 			{
-				if (func_192(uParam2, -308865274))
+				if (func_192(uParam2, -308865274 /* GXTEntry: "Extra stalls can be purchased in the Stable. These allow you to buy and manage ad" +
+    "ditional horses." */))
 				{
 					uParam2->f_432.f_91 = uParam2->f_14;
 				}
 				else if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(uParam2->f_432.f_91, uParam2->f_14)) > 5000)
 				{
-					func_190(uParam2, 789742911, 10000, 0, 0);
+					func_190(uParam2, 789742911 /* GXTEntry: "Purchasing Horse Insurance will allow your horse to automatically recover over ti" +
+    "me if it\'s critically injured." */, 10000, 0, 0);
 					func_191(uParam2, 9);
 				}
 			}
@@ -2186,7 +2197,7 @@ int func_22(var uParam0, var uParam1, var uParam2)
 			PAD::_0x2804658EB7D8A50B(4, 621422181);
 			if (!func_104((*uParam1)[uParam2->f_1 /*6*/], 2))
 			{
-				WEAPON::SET_CURRENT_PED_WEAPON(uParam2->f_432.f_74, joaat("weapon_unarmed"), false, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(uParam2->f_432.f_74, joaat("WEAPON_UNARMED"), false, 0, false, false);
 				WEAPON::_0x67E21ACC5C0C970C(uParam2->f_432.f_74, 16, false);
 				WEAPON::_0x67E21ACC5C0C970C(uParam2->f_432.f_74, 9, false);
 				WEAPON::_0x67E21ACC5C0C970C(uParam2->f_432.f_74, 18, false);
@@ -2217,7 +2228,7 @@ int func_22(var uParam0, var uParam1, var uParam2)
 			if (CAM::IS_SCREEN_FADED_OUT())
 			{
 				WEAPON::_0x4F806A6CFED89468(uParam2->f_432.f_74, 1);
-				WEAPON::SET_CURRENT_PED_WEAPON(uParam2->f_432.f_74, joaat("weapon_unarmed"), false, 0, false, false);
+				WEAPON::SET_CURRENT_PED_WEAPON(uParam2->f_432.f_74, joaat("WEAPON_UNARMED"), false, 0, false, false);
 				WEAPON::_0x67E21ACC5C0C970C(uParam2->f_432.f_74, 16, true);
 				WEAPON::_0x67E21ACC5C0C970C(uParam2->f_432.f_74, 9, true);
 				WEAPON::_0x67E21ACC5C0C970C(uParam2->f_432.f_74, 18, true);
@@ -2399,14 +2410,15 @@ int func_24(var uParam0, var uParam1, var uParam2)
 				func_126();
 				TASK::CLEAR_PED_TASKS(uParam2->f_4, 1, 0);
 				func_60(1, 2);
-				func_190(uParam2, -139084428, 10000, 0, 0);
+				func_190(uParam2, -139084428 /* GXTEntry: "The Player menu is used to send and receive invites, view nearby players and Poss" +
+    "es, access and form your own Posses and manage your Stable or Camp options." */, 10000, 0, 0);
 				func_144(&(uParam2->f_432.f_94), uParam2->f_2);
 				func_186(uParam2);
 				func_94(uParam1, uParam2, 24);
 			}
 			break;
 		case 24:
-			func_189(uParam2, 1878162598, -1, 0, 0);
+			func_189(uParam2, 1878162598 /* GXTEntry: "~INPUT_PLAYER_MENU~ Open the Player menu" */, -1, 0, 0);
 			if (UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")))
 			{
 				func_94(uParam1, uParam2, 25);
@@ -5588,7 +5600,7 @@ int func_146(var uParam0, int iParam1)
 					if (func_170(uParam0, 2))
 					{
 					}
-					else if (func_370(-1118096539 /* GXTEntry: "Saddle Voucher" */, 0, 1, 0) <= 0)
+					else if (func_370(-1118096539 /* GXTEntry: "Saddle Reward" */, 0, 1, 0) <= 0)
 					{
 						bVar0 = true;
 					}
@@ -6844,13 +6856,13 @@ void func_205(int iParam0, int iParam1)
 {
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("weapon_unarmed"), true, 0, false, false);
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("weapon_unarmed"), true, 1, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), true, 1, false, false);
 		if (PED::IS_PED_A_PLAYER(iParam0) && iParam1 == 1)
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
-				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("weapon_unarmed"), 0);
+				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 0);
 			}
 		}
 	}
@@ -7020,9 +7032,11 @@ void func_214(var uParam0, var uParam1)
 		iVar0 = func_440(13);
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
-			func_190(uParam1, 292620101, 10000, 0, 0);
+			func_190(uParam1, 292620101 /* GXTEntry: "Visit General Stores ~BLIP_SHOP_STORE~ and Tailors ~BLIP_SHOP_TAILOR~ for supplie" +
+    "s and clothing." */, 10000, 0, 0);
 		}
-		if (func_192(uParam1, 292620101))
+		if (func_192(uParam1, 292620101 /* GXTEntry: "Visit General Stores ~BLIP_SHOP_STORE~ and Tailors ~BLIP_SHOP_TAILOR~ for supplie" +
+    "s and clothing." */))
 		{
 			func_191(uParam1, 13);
 		}
@@ -7043,9 +7057,9 @@ void func_214(var uParam0, var uParam1)
 		iVar0 = func_440(15);
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
-			func_190(uParam1, 377888522, 10000, 0, 0);
+			func_190(uParam1, 377888522 /* GXTEntry: "Gunsmiths ~BLIP_SHOP_GUNSMITH~ will sell and upgrade your weapons." */, 10000, 0, 0);
 		}
-		if (func_192(uParam1, 377888522))
+		if (func_192(uParam1, 377888522 /* GXTEntry: "Gunsmiths ~BLIP_SHOP_GUNSMITH~ will sell and upgrade your weapons." */))
 		{
 			func_191(uParam1, 15);
 		}
@@ -7066,9 +7080,9 @@ void func_214(var uParam0, var uParam1)
 		iVar0 = func_440(17);
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
-			func_190(uParam1, 1852588690, 10000, joaat("BLIP_MP_GUN_FOR_HIRE"), 1699087565);
+			func_190(uParam1, 1852588690 /* GXTEntry: "Find and accept Free Roam missions from various characters ~1b~." */, 10000, joaat("BLIP_MP_GUN_FOR_HIRE"), 1699087565);
 		}
-		if (func_192(uParam1, 1852588690))
+		if (func_192(uParam1, 1852588690 /* GXTEntry: "Find and accept Free Roam missions from various characters ~1b~." */))
 		{
 			func_191(uParam1, 17);
 		}
@@ -7089,9 +7103,9 @@ void func_214(var uParam0, var uParam1)
 		iVar0 = func_440(19);
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
-			func_190(uParam1, -111504592, 10000, 0, 0);
+			func_190(uParam1, -111504592 /* GXTEntry: "Or counter a rival player\'s mission for your own reward." */, 10000, 0, 0);
 		}
-		if (func_192(uParam1, -111504592))
+		if (func_192(uParam1, -111504592 /* GXTEntry: "Or counter a rival player\'s mission for your own reward." */))
 		{
 			func_191(uParam1, 19);
 		}
@@ -7112,9 +7126,11 @@ void func_214(var uParam0, var uParam1)
 		iVar0 = func_440(21);
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
-			func_190(uParam1, -1576091782, 10000, joaat("BLIP_ADVERSARY_LARGE"), 1476777140);
+			func_190(uParam1, -1576091782 /* GXTEntry: "Enter a Series and compete against others by using a Series Marker ~1b~ or throug" +
+    "h the Player menu." */, 10000, joaat("BLIP_ADVERSARY_LARGE"), 1476777140);
 		}
-		if (func_192(uParam1, -1576091782))
+		if (func_192(uParam1, -1576091782 /* GXTEntry: "Enter a Series and compete against others by using a Series Marker ~1b~ or throug" +
+    "h the Player menu." */))
 		{
 			func_191(uParam1, 21);
 		}
@@ -7135,9 +7151,11 @@ void func_214(var uParam0, var uParam1)
 		iVar0 = func_440(23);
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
-			func_190(uParam1, 910507549, 10000, 0, 0);
+			func_190(uParam1, 910507549 /* GXTEntry: "Form or join a Posse with other players, and improve your chance of success in Re" +
+    "d Dead Online." */, 10000, 0, 0);
 		}
-		if (func_192(uParam1, 910507549))
+		if (func_192(uParam1, 910507549 /* GXTEntry: "Form or join a Posse with other players, and improve your chance of success in Re" +
+    "d Dead Online." */))
 		{
 			func_191(uParam1, 23);
 		}
@@ -7372,7 +7390,7 @@ void func_223(var uParam0, var uParam1)
 		func_139(uParam1, 25);
 	}
 	WEAPON::_0x4F806A6CFED89468(uParam1->f_432.f_74, 1);
-	WEAPON::SET_CURRENT_PED_WEAPON(uParam1->f_432.f_74, joaat("weapon_unarmed"), false, 0, false, false);
+	WEAPON::SET_CURRENT_PED_WEAPON(uParam1->f_432.f_74, joaat("WEAPON_UNARMED"), false, 0, false, false);
 	WEAPON::_0x67E21ACC5C0C970C(uParam1->f_432.f_74, 16, true);
 	WEAPON::_0x67E21ACC5C0C970C(uParam1->f_432.f_74, 9, true);
 	WEAPON::_0x67E21ACC5C0C970C(uParam1->f_432.f_74, 18, true);
@@ -9991,7 +10009,7 @@ int func_311(int iParam0)
 		case 12:
 			return -1810065318 /* GXTEntry: "Disturbing the Peace" */;
 		case 13:
-			return 2140177766;
+			return 2140177766 /* GXTEntry: "Disturbing the Peace" */;
 		default:
 			break;
 	}
@@ -16196,7 +16214,7 @@ int func_617(int iParam0, int iParam1, bool bParam2, bool bParam3)
 
 bool func_618(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_619(int iParam0, int iParam1)
@@ -18287,7 +18305,7 @@ bool func_705(var uParam0, var uParam1)
 	else if (!func_824(&(uParam1->f_18), &(uParam1->f_24)))
 	{
 	}
-	if (uParam0->f_5 == joaat("weapon_fall"))
+	if (uParam0->f_5 == joaat("WEAPON_FALL"))
 	{
 		if ((*uParam0 != uParam0->f_1 && ENTITY::DOES_ENTITY_EXIST(uParam0->f_1)) && ENTITY::IS_ENTITY_A_PED(uParam0->f_1))
 		{
@@ -18297,7 +18315,7 @@ bool func_705(var uParam0, var uParam1)
 			return true;
 		}
 	}
-	if (uParam0->f_5 == joaat("weapon_drowning"))
+	if (uParam0->f_5 == joaat("WEAPON_DROWNING"))
 	{
 		if ((*uParam0 != uParam0->f_1 && ENTITY::DOES_ENTITY_EXIST(uParam0->f_1)) && ENTITY::IS_ENTITY_A_PED(uParam0->f_1))
 		{
@@ -18307,7 +18325,7 @@ bool func_705(var uParam0, var uParam1)
 			return true;
 		}
 	}
-	if (uParam0->f_5 == joaat("weapon_drowning_in_vehicle"))
+	if (uParam0->f_5 == joaat("WEAPON_DROWNING_IN_VEHICLE"))
 	{
 		return true;
 	}
@@ -18340,7 +18358,7 @@ int func_706(var uParam0)
 	{
 		return 2;
 	}
-	if (uParam0->f_30.f_5 == joaat("weapon_fall") && uParam0->f_18 == 1)
+	if (uParam0->f_30.f_5 == joaat("WEAPON_FALL") && uParam0->f_18 == 1)
 	{
 		if (uParam0->f_6 == 1 || uParam0->f_12 == 1)
 		{
@@ -18350,7 +18368,7 @@ int func_706(var uParam0)
 			return 2;
 		}
 	}
-	if ((uParam0->f_30.f_5 == joaat("weapon_drowning") || uParam0->f_30.f_5 == joaat("weapon_drowning_in_vehicle")) && uParam0->f_18 == 1)
+	if ((uParam0->f_30.f_5 == joaat("WEAPON_DROWNING") || uParam0->f_30.f_5 == joaat("WEAPON_DROWNING_IN_VEHICLE")) && uParam0->f_18 == 1)
 	{
 		if (uParam0->f_6 == 1 || uParam0->f_12 == 1)
 		{
@@ -19640,7 +19658,7 @@ void func_760(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -23893,7 +23911,7 @@ int func_924(int iParam0, bool bParam1)
 	}
 	else if (iParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_739(963726415, 1);
+		return func_739(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
 	}
 	return func_739(iParam0, 1);
 }

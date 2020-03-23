@@ -6148,7 +6148,7 @@ void func_14(var uParam0)
 			return;
 		}
 		STREAMING::REQUEST_MODEL((uParam0->f_16[iVar10 /*1205*/])->f_5, false);
-		Var5.f_2 = -2020161868; /* GXTEntry: "~z~Ain\'t you a pretty girl?" */
+		Var5.f_2 = -2020161868;
 		if (!DATAFILE::_DATAFILE_GET_HASH(&uVar0, &Var5))
 		{
 			func_71(uParam0, 3010);
@@ -9147,7 +9147,7 @@ void func_104(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, i
 	{
 		uParam1->f_474.f_20 = 0;
 		uParam1->f_474.f_24 = 0;
-		uParam1->f_474.f_19 = -960808083;
+		uParam1->f_474.f_19 = -960808083; /* GXTEntry: "Custom" */
 		uParam1->f_75 = &Global_1951141->f_1657.f_1[1 /*3*/];
 	}
 	if (iVar0 == 0)
@@ -9168,7 +9168,7 @@ void func_104(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, i
 		{
 			uParam1->f_474.f_22 = 0;
 			uParam1->f_474.f_23 = 0;
-			uParam1->f_474.f_21 = -960808083;
+			uParam1->f_474.f_21 = -960808083; /* GXTEntry: "Custom" */
 			uParam1->f_76 = &Global_1951141->f_1657.f_1[4 /*3*/];
 		}
 	}
@@ -14703,7 +14703,7 @@ int func_269(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4)
 						}
 						iVar0++;
 						*uParam3 = 0;
-						*uParam4 = -960808083;
+						*uParam4 = -960808083; /* GXTEntry: "Custom" */
 						return 0;
 					}
 				}
@@ -19717,7 +19717,7 @@ int func_429(int iParam0)
 			return 5;
 		case -1063340820: /* GXTEntry: "Outfit Six" */
 			return 6;
-		case 2127262701:
+		case 2127262701: /* GXTEntry: "Outfit Seven" */
 			return 7;
 		case -1323870201: /* GXTEntry: "Outfit Eight" */
 			return 8;
@@ -24307,7 +24307,7 @@ int func_612(int iParam0)
 		case 6:
 			return -1063340820 /* GXTEntry: "Outfit Six" */;
 		case 7:
-			return 2127262701;
+			return 2127262701 /* GXTEntry: "Outfit Seven" */;
 		case 8:
 			return -1323870201 /* GXTEntry: "Outfit Eight" */;
 		case 9:
@@ -28991,44 +28991,44 @@ void func_753(var uParam0, int iParam1)
 	}
 	else
 	{
-		iVar1 = 2130295590;
+		iVar1 = 2130295590; /* GXTEntry: "Custom" */
 	}
 	switch (uParam0->f_649.f_46)
 	{
 		case 0:
-			iVar0 = 1361833557;
-			iVar1 = 1574464441;
+			iVar0 = 1361833557; /* GXTEntry: "CHARACTER" */
+			iVar1 = 1574464441; /* GXTEntry: "Main Menu" */
 			break;
 		case 1:
 			iVar0 = 2023080022; /* GXTEntry: "APPEARANCE" */
-			iVar1 = 1515800788;
+			iVar1 = 1515800788; /* GXTEntry: "Options" */
 			break;
 		case 14:
 			iVar0 = 1145866392; /* GXTEntry: "HAIR" */
-			iVar1 = 1216803761;
+			iVar1 = 1216803761; /* GXTEntry: "Styles" */
 			break;
 		case 15:
-			iVar0 = 714945534;
-			iVar1 = 1762559596;
+			iVar0 = 714945534; /* GXTEntry: "Facial Hair" */
+			iVar1 = 1762559596; /* GXTEntry: "Style" */
 			break;
 		case 12:
 			iVar0 = 905496722; /* GXTEntry: "LIFESTYLE" */
-			iVar1 = 235786205;
+			iVar1 = 235786205; /* GXTEntry: "Options" */
 			break;
 		case 13:
 			iVar0 = 1316776880; /* GXTEntry: "MAKEUP" */
-			iVar1 = -1498735544;
+			iVar1 = -1498735544; /* GXTEntry: "Options" */
 			break;
 		case 19:
 			iVar0 = -752143290; /* GXTEntry: "WHISTLE" */
-			iVar1 = 98903087;
+			iVar1 = 98903087; /* GXTEntry: "Options" */
 			break;
 		case 20:
 			iVar0 = -1914879697; /* GXTEntry: "ATTRIBUTES" */
-			iVar1 = 188769002;
+			iVar1 = 188769002; /* GXTEntry: "Points" */
 			break;
 		case 3:
-			iVar0 = 2032639917;
+			iVar0 = 2032639917; /* GXTEntry: "Cranial Proportions" */
 			iVar1 = uParam0->f_1193.f_474.f_26;
 			break;
 		case 5:
@@ -30171,7 +30171,7 @@ void func_796(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

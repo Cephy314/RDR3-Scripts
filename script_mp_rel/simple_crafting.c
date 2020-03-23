@@ -1189,7 +1189,7 @@ void func_10(var uParam0, int iParam1)
 				iVar10 = PED::_0x569F1E1237508DEB(Global_34);
 				if (iVar10 != -518407211 && iVar10 != 1662215698)
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
 				}
 				iVar8 = func_60(uParam0->f_73, -1636519629);
 				iVar11 = func_73(uParam0, iVar8);
@@ -1263,7 +1263,7 @@ void func_10(var uParam0, int iParam1)
 				iVar14 = PED::_0x569F1E1237508DEB(Global_34);
 				if (iVar14 != -518407211 && iVar14 != 1662215698)
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
 				}
 				ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(iVar13, "player", Global_34);
 				func_6(uParam0, 15);
@@ -1838,10 +1838,10 @@ int func_37(var uParam0)
 		uParam0->f_26 = func_110(iVar0);
 		uParam0->f_27 = func_111(iVar0);
 		func_112(uParam0, uParam0->f_26, 1472825031);
-		func_112(uParam0, -1171462349, 1472825031);
-		func_112(uParam0, 1689071181, 1472825031);
-		func_112(uParam0, -1612693182, 1472825031);
-		func_112(uParam0, 1856073229, 1472825031);
+		func_112(uParam0, -1171462349 /* GXTEntry: "Superior Quality Stew" */, 1472825031);
+		func_112(uParam0, 1689071181 /* GXTEntry: "High Quality Stew" */, 1472825031);
+		func_112(uParam0, -1612693182 /* GXTEntry: "Medium Quality Stew" */, 1472825031);
+		func_112(uParam0, 1856073229 /* GXTEntry: "Low Quality Stew" */, 1472825031);
 		return 1;
 	}
 	if (uParam0->f_50 == 0)
@@ -1879,7 +1879,7 @@ int func_38(var uParam0)
 		return 1;
 	}
 	uParam0->f_35 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "CraftingDatastore");
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_35, "filter", func_115(uParam0->f_25, -583079595, func_114(uParam0->f_48)));
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_35, "filter", func_115(uParam0->f_25, -583079595 /* GXTEntry: "Recipes" */, func_114(uParam0->f_48)));
 	if (uParam0->f_25)
 	{
 		DATABINDING::_DATABINDING_ADD_DATA_INT(uParam0->f_35, "filterCount", true);
@@ -3153,7 +3153,7 @@ bool func_72(bool bParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			bVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415:
+		case 963726415: /* GXTEntry: "Toxic Moonshine" */
 			bVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -4002,17 +4002,17 @@ int func_114(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1795740370;
+			return 1795740370 /* GXTEntry: "Provisions" */;
 		case 1:
-			return 461149715;
+			return 461149715 /* GXTEntry: "Tonics" */;
 		case 2:
-			return 210507310;
+			return 210507310 /* GXTEntry: "Ammo" */;
 		case 3:
-			return -1182908601;
+			return -1182908601 /* GXTEntry: "Weapons" */;
 		case 4:
-			return 1647118377;
+			return 1647118377 /* GXTEntry: "Hunting" */;
 		case 5:
-			return -867280435;
+			return -867280435 /* GXTEntry: "Horse Care" */;
 		default:
 			break;
 	}
@@ -7933,15 +7933,15 @@ int func_215(bool bParam0)
 {
 	switch (bParam0)
 	{
-		case -1171462349:
+		case -1171462349: /* GXTEntry: "Superior Quality Stew" */
 			return 4;
-		case 1689071181:
+		case 1689071181: /* GXTEntry: "High Quality Stew" */
 			return 3;
-		case -1612693182:
+		case -1612693182: /* GXTEntry: "Medium Quality Stew" */
 			return 2;
-		case 1856073229:
+		case 1856073229: /* GXTEntry: "Low Quality Stew" */
 			return 1;
-		case 1046181202:
+		case 1046181202: /* GXTEntry: "Base Quality Stew" */
 			return 0;
 		default:
 			break;
@@ -9130,7 +9130,7 @@ struct<2> func_247(int iParam0, bool bParam1)
 
 bool func_248(bool bParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(bParam0) && bParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(bParam0) && bParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_249(bool bParam0, bool bParam1, int iParam2, var uParam3, var uParam4, bool bParam5, int iParam6)
@@ -9739,7 +9739,7 @@ int func_271(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		bParam2 = true;
 	}
-	else if (bParam0 == joaat("weapon_unarmed"))
+	else if (bParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return 0;
 	}
@@ -11276,7 +11276,7 @@ void func_348(bool bParam0, int iParam1, var uParam2)
 			*iParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*iParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -15005,7 +15005,7 @@ int func_492(int iParam0)
 			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
 			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
@@ -15133,7 +15133,7 @@ int func_492(int iParam0)
 			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
 		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
 			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
 			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
@@ -16395,7 +16395,7 @@ int func_538(bool bParam0)
 			return 731537518 /* GXTEntry: "Goose" */;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 524696643 /* GXTEntry: "Hawk" */;
 		case -905842006: /* GXTEntry: "Poor Heron Carcass" */
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
@@ -17093,7 +17093,7 @@ int func_558(bool bParam0)
 		case -1850779170: /* GXTEntry: "Perfect Plucked Hawk Carcass" */
 			return -1440794801 /* GXTEntry: "Perfect Hawk Carcass" */;
 		case -121487803: /* GXTEntry: "Poor Plucked Hawk Carcass" */
-			return 2144711797;
+			return 2144711797 /* GXTEntry: "Poor Hawk Carcass" */;
 		case -1280499288: /* GXTEntry: "Good Skinned Heron Carcass" */
 			return 718825539 /* GXTEntry: "Good Heron Carcass" */;
 		case 820245961: /* GXTEntry: "Perfect Skinned Heron Carcass" */
@@ -17221,7 +17221,7 @@ int func_558(bool bParam0)
 		case -955209948: /* GXTEntry: "Poor Plucked Seagull Carcass" */
 			return 431501574 /* GXTEntry: "Poor Seagull Carcass" */;
 		case 1459836898: /* GXTEntry: "Good Skinned Sheep Carcass" */
-			return 2126795269;
+			return 2126795269 /* GXTEntry: "Good Sheep Carcass" */;
 		case 303969766: /* GXTEntry: "Perfect Skinned Sheep Carcass" */
 			return 1489051752 /* GXTEntry: "Perfect Sheep Carcass" */;
 		case -1707588662: /* GXTEntry: "Poor Skinned Sheep Carcass" */

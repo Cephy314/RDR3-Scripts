@@ -5886,7 +5886,7 @@ void func_221()
 			iVar2 = PLAYER::GET_PLAYER_PED(Local_13.f_7.f_21);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar2) && !PED::IS_PED_DEAD_OR_DYING(iVar2, true))
 			{
-				iVar4 = joaat("weapon_unarmed");
+				iVar4 = joaat("WEAPON_UNARMED");
 				if (WEAPON::GET_CURRENT_PED_WEAPON(iVar2, &iVar4, false, 0, false))
 				{
 					if (iVar4 == joaat("WEAPON_KIT_CAMERA"))
@@ -5909,7 +5909,7 @@ void func_221()
 			iVar2 = PLAYER::GET_PLAYER_PED(iVar1);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar2) && !PED::IS_PED_DEAD_OR_DYING(iVar2, true))
 			{
-				iVar4 = joaat("weapon_unarmed");
+				iVar4 = joaat("WEAPON_UNARMED");
 				if (WEAPON::GET_CURRENT_PED_WEAPON(iVar2, &iVar4, false, 0, false))
 				{
 					if (iVar4 == joaat("WEAPON_KIT_CAMERA"))
@@ -11727,7 +11727,7 @@ void func_416()
 			}
 			if (WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &iVar1, false, 0, false))
 			{
-				if (iVar1 == joaat("weapon_unarmed"))
+				if (iVar1 == joaat("WEAPON_UNARMED"))
 				{
 					if (func_459(iVar0, 716706914, 1, 0))
 					{
@@ -11892,9 +11892,9 @@ void func_423()
 		{
 			if (WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &iVar3, false, 0, false))
 			{
-				if (iVar3 != joaat("weapon_unarmed"))
+				if (iVar3 != joaat("WEAPON_UNARMED"))
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("weapon_unarmed"), false, 0, false, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("WEAPON_UNARMED"), false, 0, false, false);
 					TASK::TASK_SWAP_WEAPON(iVar0, 1, 1, 0, 0);
 				}
 			}
@@ -11998,7 +11998,7 @@ void func_425()
 					case 9:
 						if (WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &iVar5, false, 0, false))
 						{
-							if (iVar5 != joaat("weapon_unarmed"))
+							if (iVar5 != joaat("WEAPON_UNARMED"))
 							{
 								WEAPON::_0xCEF4C65DE502D367(iVar0, 0, 0, 1, 0);
 							}
@@ -12137,9 +12137,9 @@ void func_429()
 			{
 				if (WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &iVar3, false, 0, false))
 				{
-					if (iVar3 != joaat("weapon_unarmed"))
+					if (iVar3 != joaat("WEAPON_UNARMED"))
 					{
-						WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("weapon_unarmed"), false, 0, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("WEAPON_UNARMED"), false, 0, false, false);
 						TASK::TASK_SWAP_WEAPON(iVar0, 1, 1, 0, 0);
 					}
 				}
@@ -18435,11 +18435,11 @@ int func_692()
 		{
 			if (WEAPON::GET_CURRENT_PED_WEAPON(iVar0, &iVar1, false, 0, false))
 			{
-				if (iVar1 != joaat("weapon_unarmed"))
+				if (iVar1 != joaat("WEAPON_UNARMED"))
 				{
 					if (func_459(iVar0, 716706914, 1, 0))
 					{
-						WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("weapon_unarmed"), false, 0, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(iVar0, joaat("WEAPON_UNARMED"), false, 0, false, false);
 						TASK::TASK_SWAP_WEAPON(iVar0, 1, 0, 0, 0);
 					}
 				}
@@ -20497,7 +20497,7 @@ int func_772(int iParam0, int iParam1, var uParam2)
 		if (!NETWORK::NETWORK_IS_IN_SESSION())
 		{
 			fVar0 = func_901(uParam2);
-			if (!WEAPON::IS_WEAPON_VALID(Global_1939178->f_40) || Global_1939178->f_40 == joaat("weapon_unarmed"))
+			if (!WEAPON::IS_WEAPON_VALID(Global_1939178->f_40) || Global_1939178->f_40 == joaat("WEAPON_UNARMED"))
 			{
 				PED::_0xD355E2F1BB41087E(iParam1, fVar0);
 			}
@@ -20510,7 +20510,7 @@ int func_772(int iParam0, int iParam1, var uParam2)
 				PED::_0xD355E2F1BB41087E(iParam1, fVar0);
 			}
 		}
-		if ((!WEAPON::IS_WEAPON_VALID(Global_1939178->f_40) || Global_1939178->f_40 == joaat("weapon_unarmed")) || (WEAPON::IS_WEAPON_VALID(Global_1939178->f_40) && WEAPON::_0x5809DBCA0A37C82B(Global_1939178->f_40)))
+		if ((!WEAPON::IS_WEAPON_VALID(Global_1939178->f_40) || Global_1939178->f_40 == joaat("WEAPON_UNARMED")) || (WEAPON::IS_WEAPON_VALID(Global_1939178->f_40) && WEAPON::_0x5809DBCA0A37C82B(Global_1939178->f_40)))
 		{
 			fVar2 = 3f;
 			iVar1 = 3000;
@@ -23262,7 +23262,7 @@ int func_904(int iParam0)
 {
 	if (PED::GET_PED_CONFIG_FLAG(iParam0, 9, false))
 	{
-		if (Global_1939178->f_38 == joaat("weapon_unarmed"))
+		if (Global_1939178->f_38 == joaat("WEAPON_UNARMED"))
 		{
 			return 1;
 		}
@@ -24456,7 +24456,7 @@ int func_954(int iParam0, int iParam1, bool bParam2, bool bParam3)
 {
 	if (bParam3 || !ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
-		if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, joaat("weapon_unarmed"), iParam1))
+		if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, joaat("WEAPON_UNARMED"), iParam1))
 		{
 			return 1;
 		}
@@ -24519,7 +24519,7 @@ int func_957(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;

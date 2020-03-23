@@ -19401,10 +19401,10 @@ void func_628(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4,
 		func_348(16);
 		WEAPON::GET_CURRENT_PED_WEAPON(iVar1, &iVar9, true, 0, false);
 		WEAPON::GET_CURRENT_PED_WEAPON(iVar1, &iVar10, true, 1, false);
-		if ((iVar9 != joaat("weapon_unarmed") && iVar9 != 0) || (iVar10 != joaat("weapon_unarmed") && iVar10 != 0))
+		if ((iVar9 != joaat("WEAPON_UNARMED") && iVar9 != 0) || (iVar10 != joaat("WEAPON_UNARMED") && iVar10 != 0))
 		{
-			WEAPON::SET_CURRENT_PED_WEAPON(iVar1, joaat("weapon_unarmed"), false, 0, false, false);
-			WEAPON::SET_CURRENT_PED_WEAPON(iVar1, joaat("weapon_unarmed"), false, 1, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(iVar1, joaat("WEAPON_UNARMED"), false, 0, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(iVar1, joaat("WEAPON_UNARMED"), false, 1, false, false);
 			TASK::TASK_SWAP_WEAPON(iVar1, 0, 1, 0, 0);
 		}
 	}
@@ -30527,9 +30527,9 @@ int func_1137(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4)
 	{
 		return 0;
 	}
-	if (func_866(iParam3, 0, 1, 0) != joaat("weapon_unarmed"))
+	if (func_866(iParam3, 0, 1, 0) != joaat("WEAPON_UNARMED"))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(iParam3, joaat("weapon_unarmed"), false, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(iParam3, joaat("WEAPON_UNARMED"), false, 0, false, false);
 		TASK::TASK_SWAP_WEAPON(iParam3, 1, 0, 0, 0);
 		return 0;
 	}
@@ -67198,7 +67198,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	}
 	INVENTORY::_0xC04F47D488EF9EBA(iVar7, iVar8, &uVar9, 0);
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 0, false);
-	if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+	if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 	{
 		iVar1 = WEAPON::_0xCAD4FE9398820D24(iParam6, 0);
 		switch (iVar1)
@@ -67232,7 +67232,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 		}
 	}
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 1, false);
-	if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+	if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 	{
 		iVar1 = WEAPON::_0xCAD4FE9398820D24(iParam6, 1);
 		switch (iVar1)
@@ -67268,7 +67268,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	if (!bVar4)
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 7, false);
-		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			if (WEAPON::_0xC4DEC3CA8C365A5D(iVar0))
 			{
@@ -67280,7 +67280,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	if (!bVar4)
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 9, false);
-		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			if (((WEAPON::_0xDDB2578E95EF7138(iVar0) || WEAPON::_0x0A82317B7EBFC420(iVar0)) || WEAPON::_0x6AD66548840472E5(iVar0)) || (WEAPON::_0xC75386174ECE95D5(iVar0) && iVar0 != joaat("WEAPON_SHOTGUN_SAWEDOFF")))
 			{
@@ -67292,7 +67292,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	if (!bVar5)
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 8, false);
-		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			if (WEAPON::_0xC4DEC3CA8C365A5D(iVar0))
 			{
@@ -67304,7 +67304,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	if (!bVar5)
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 10, false);
-		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			if (((WEAPON::_0xDDB2578E95EF7138(iVar0) || WEAPON::_0x0A82317B7EBFC420(iVar0)) || WEAPON::_0x6AD66548840472E5(iVar0)) || (WEAPON::_0xC75386174ECE95D5(iVar0) && iVar0 != joaat("WEAPON_SHOTGUN_SAWEDOFF")))
 			{
@@ -67318,7 +67318,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 		if (!bVar3)
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 3, false);
-			if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+			if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 			{
 				if ((WEAPON::_0xDDC64F5E31EEDAB6(iVar0) || WEAPON::_0xC212F1D05A8232BB(iVar0)) || iVar0 == joaat("WEAPON_SHOTGUN_SAWEDOFF"))
 				{
@@ -67331,7 +67331,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	if (!bVar2)
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 2, false);
-		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			if ((WEAPON::_0xDDC64F5E31EEDAB6(iVar0) || WEAPON::_0xC212F1D05A8232BB(iVar0)) || iVar0 == joaat("WEAPON_SHOTGUN_SAWEDOFF"))
 			{
@@ -67343,7 +67343,7 @@ void func_1260(var uParam0, int iParam1, int iParam2, vector3 vParam3, int iPara
 	if (!bVar6)
 	{
 		WEAPON::GET_CURRENT_PED_WEAPON(iParam6, &iVar0, false, 4, false);
-		if (iVar0 != 0 && iVar0 != joaat("weapon_unarmed"))
+		if (iVar0 != 0 && iVar0 != joaat("WEAPON_UNARMED"))
 		{
 			if (WEAPON::_0x959383DCD42040DA(iVar0))
 			{

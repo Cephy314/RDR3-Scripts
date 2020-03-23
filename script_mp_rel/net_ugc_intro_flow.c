@@ -756,23 +756,23 @@ int func_26()
 	{
 		switch (Global_2359296->f_155)
 		{
-			case -533426613:
+			case -533426613: /* GXTEntry: "Team" */
 				return 1088509777;
-			case -1437925683:
-			case 1272390114:
+			case -1437925683: /* GXTEntry: "Name Your Weapon (Teams)" */
+			case 1272390114: /* GXTEntry: "Name Your Weapon (FFA)" */
 				return -1482087471;
-			case -725256130:
+			case -725256130: /* GXTEntry: "Gun Rush Teams" */
 				return 478789200;
-			case -222655798:
+			case -222655798: /* GXTEntry: "Gun Rush" */
 				return -1863716933;
 			case -559809431:
 				return -679566803;
-			case -1918441640:
-			case 1153715636:
+			case -1918441640: /* GXTEntry: "LTS" */
+			case 1153715636: /* GXTEntry: "LOS" */
 				return 1315254565;
-			case -1581094459:
+			case -1581094459: /* GXTEntry: "Make It Count" */
 				return 1468907451;
-			case -457802746:
+			case -457802746: /* GXTEntry: "FTB" */
 				return -274237802;
 			default:
 				break;
@@ -783,13 +783,13 @@ int func_26()
 	{
 		switch (Global_2097152->f_32)
 		{
-			case 1579717899:
+			case 1579717899: /* GXTEntry: "Combat" */
 				return -938054684;
 			case 218185167:
 				return -1684650239;
 			case -1185533313:
 				return 1744089234;
-			case 1744858848:
+			case 1744858848: /* GXTEntry: "Open" */
 				return 1646695636;
 			default:
 				break;
@@ -835,23 +835,23 @@ int func_27()
 	{
 		switch (Global_2359296->f_155)
 		{
-			case -533426613:
+			case -533426613: /* GXTEntry: "Team" */
 				return 307231279;
-			case -1437925683:
-			case 1272390114:
+			case -1437925683: /* GXTEntry: "Name Your Weapon (Teams)" */
+			case 1272390114: /* GXTEntry: "Name Your Weapon (FFA)" */
 				return -53621227;
-			case -725256130:
+			case -725256130: /* GXTEntry: "Gun Rush Teams" */
 				return 1597260708;
-			case -222655798:
+			case -222655798: /* GXTEntry: "Gun Rush" */
 				return 1586694926;
 			case -559809431:
 				return -913897922;
-			case -1918441640:
-			case 1153715636:
+			case -1918441640: /* GXTEntry: "LTS" */
+			case 1153715636: /* GXTEntry: "LOS" */
 				return -1544168383;
-			case -1581094459:
+			case -1581094459: /* GXTEntry: "Make It Count" */
 				return 1168382952;
-			case -457802746:
+			case -457802746: /* GXTEntry: "FTB" */
 				return -1964987130;
 			default:
 				break;
@@ -862,9 +862,9 @@ int func_27()
 	{
 		switch (Global_2097152->f_32)
 		{
-			case 1579717899:
+			case 1579717899: /* GXTEntry: "Combat" */
 				return -1177563305;
-			case 1744858848:
+			case 1744858848: /* GXTEntry: "Open" */
 				return 868825114;
 			case 218185167:
 				return 419480024;
@@ -1671,23 +1671,23 @@ char* func_62(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1816768801:
+		case 1816768801: /* GXTEntry: "Standard" */
 			return "GST_DEATHMATCH";
-		case -533426613:
+		case -533426613: /* GXTEntry: "Team" */
 			return "GST_DEATHMATCH_TEAM";
-		case -1918441640:
+		case -1918441640: /* GXTEntry: "LTS" */
 			return "GST_DEATHMATCH_LTS";
-		case -457802746:
+		case -457802746: /* GXTEntry: "FTB" */
 			return "GST_DEATHMATCH_FTB";
 		case 1788958412:
 			return "GST_DEATHMATCH_PITP";
-		case 1153715636:
+		case 1153715636: /* GXTEntry: "LOS" */
 			return "GST_DEATHMATCH_LMS";
-		case 424482930:
+		case 424482930: /* GXTEntry: "MM" */
 			return "GST_DEATHMATCH_MM";
-		case 1272390114:
+		case 1272390114: /* GXTEntry: "Name Your Weapon (FFA)" */
 			return "GST_DEATHMATCH_WOC";
-		case -1581094459:
+		case -1581094459: /* GXTEntry: "Make It Count" */
 			return "GST_DEATHMATCH_EXC";
 		case 1842544025:
 			return "GST_DEATHMATCH_TLG";
@@ -1697,15 +1697,15 @@ char* func_62(int iParam0)
 			return "GST_DEATHMATCH_HT";
 		case 1175500245:
 			return "GST_DEATHMATCH_TFTB";
-		case -1437925683:
+		case -1437925683: /* GXTEntry: "Name Your Weapon (Teams)" */
 			return "GST_DEATHMATCH_TWOC";
 		case -548018579:
 			return "GST_DEATHMATCH_EC";
 		case 10577687:
 			return "GST_DEATHMATCH_MC";
-		case -222655798:
+		case -222655798: /* GXTEntry: "Gun Rush" */
 			return "GST_DEATHMATCH_GR";
-		case -725256130:
+		case -725256130: /* GXTEntry: "Gun Rush Teams" */
 			return "GST_DEATHMATCH_TGR";
 		default:
 			break;
@@ -1717,9 +1717,9 @@ char* func_63(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -784189810:
+		case -784189810: /* GXTEntry: "Standard" */
 			return "GST_RACE_STANDA";
-		case 1579717899:
+		case 1579717899: /* GXTEntry: "Combat" */
 			return "GST_RACE_COMBAT";
 		case -63669280:
 			return "GST_RACE_DUALCO";
@@ -1735,7 +1735,7 @@ char* func_63(int iParam0)
 			return "GST_RACE_RUNAWT";
 		case 218185167:
 			return "GST_RACE_TARRAC";
-		case 1744858848:
+		case 1744858848: /* GXTEntry: "Open" */
 			return "GST_RACE_OPERAC";
 		case -1185533313:
 			return "GST_RACE_OPTARA";
@@ -2821,7 +2821,7 @@ void func_101(int iParam0)
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar1, true, 1, true);
 	bVar4 = (func_115(iVar0) && func_115(iVar1));
 	iVar2 = func_116(iVar0);
-	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("weapon_unarmed"))
+	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		iVar3 = 0;
 	}
@@ -2887,7 +2887,7 @@ void func_102(int iParam0)
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar1, true, 1, true);
 	bVar4 = (func_115(iVar0) && func_115(iVar1));
 	iVar2 = func_116(iVar0);
-	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("weapon_unarmed"))
+	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		iVar3 = 0;
 	}
@@ -2949,7 +2949,7 @@ void func_103(int iParam0, int iParam1)
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar1, true, 1, true);
 	bVar6 = (func_115(iVar0) && func_115(iVar1));
 	iVar2 = func_116(iVar0);
-	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("weapon_unarmed"))
+	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		iVar5 = 0;
 	}
@@ -3008,7 +3008,7 @@ void func_104(int iParam0, int iParam1)
 	WEAPON::GET_CURRENT_PED_WEAPON(iParam0, &iVar1, true, 1, true);
 	bVar6 = (func_115(iVar0) && func_115(iVar1));
 	iVar2 = func_116(iVar0);
-	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("weapon_unarmed"))
+	if (!WEAPON::IS_WEAPON_VALID(iVar0) || iVar0 == joaat("WEAPON_UNARMED"))
 	{
 		iVar5 = 0;
 	}
@@ -3387,7 +3387,7 @@ Vector3 func_114(int iParam0, int iParam1, bool bParam2)
 
 bool func_115(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_116(int iParam0)

@@ -2595,7 +2595,7 @@ void func_20(var uParam0)
 	}
 	if (WEAPON::GET_CURRENT_PED_WEAPON(iVar1, &iVar2, true, 0, false) || WEAPON::GET_CURRENT_PED_WEAPON(iVar1, &iVar2, true, 1, false))
 	{
-		if (iVar2 != joaat("weapon_unarmed"))
+		if (iVar2 != joaat("WEAPON_UNARMED"))
 		{
 			WEAPON::_0x94A3C1B804D291EC(iVar1, 0, 0, 1, 1);
 		}
@@ -5200,9 +5200,9 @@ int func_101(var uParam0)
 				else if (!Global_1939178->f_6 && func_238(uParam0->f_3))
 				{
 					WEAPON::_0xFCCC886EDE3C63EC(Global_34, 2, 1);
-					if (func_409(Global_34, 0) != joaat("weapon_unarmed"))
+					if (func_409(Global_34, 0) != joaat("WEAPON_UNARMED"))
 					{
-						WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 0, false, false);
+						WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
 					}
 				}
 				if (PED::_0xD5FE956C70FF370B(Global_34))
@@ -9167,7 +9167,7 @@ int func_240(var uParam0, bool bParam1)
 			}
 			switch (func_242(Global_34, 1, 0, 0))
 			{
-				case joaat("weapon_unarmed"):
+				case joaat("WEAPON_UNARMED"):
 					break;
 				case 1549070292: /* GXTEntry: "Melee Object 1" */
 					iVar3 = 1;
@@ -9182,8 +9182,8 @@ int func_240(var uParam0, bool bParam1)
 			else if (uParam0->f_2404 == 0 || uParam0->f_2404 > 30)
 			{
 				WEAPON::_0xFCCC886EDE3C63EC(Global_34, 2, 0);
-				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("weapon_unarmed"), 0);
-				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("weapon_unarmed"), 1);
+				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 0);
+				PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::PLAYER_ID(), joaat("WEAPON_UNARMED"), 1);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK2"), false);
@@ -9236,7 +9236,7 @@ int func_242(int iParam0, bool bParam1, int iParam2, bool bParam3)
 {
 	int iVar0;
 
-	iVar0 = joaat("weapon_unarmed");
+	iVar0 = joaat("WEAPON_UNARMED");
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || !PED::IS_PED_HUMAN(iParam0))
 	{
 		return iVar0;
@@ -9548,7 +9548,7 @@ int func_269(var uParam0)
 	bool bVar0;
 
 	bVar0 = func_242(Global_34, 1, 0, 0);
-	if (bVar0 != joaat("weapon_unarmed"))
+	if (bVar0 != joaat("WEAPON_UNARMED"))
 	{
 		if (bVar0 != 1549070292 && (func_546(bVar0) || func_560(bVar0, -1653669750)))
 		{
@@ -9626,7 +9626,7 @@ int func_271(var uParam0, bool bParam1)
 			}
 		}
 	}
-	if (func_242(Global_34, 1, 0, 0) != joaat("weapon_unarmed"))
+	if (func_242(Global_34, 1, 0, 0) != joaat("WEAPON_UNARMED"))
 	{
 		if (uParam0->f_59 == 0)
 		{
@@ -11942,7 +11942,7 @@ int func_359(var uParam0)
 					uParam0->f_44 = func_836(53);
 					return 1;
 				}
-				if (func_560(uParam0->f_13, -1274632976))
+				if (func_560(uParam0->f_13, -1274632976 /* GXTEntry: "Collector\'s Maps" */))
 				{
 					uParam0->f_44 = func_836(54);
 					return 1;
@@ -12097,7 +12097,7 @@ int func_362(var uParam0, int iParam1, var uParam2)
 			uParam0->f_44 = func_836(26);
 			return 1;
 		}
-		if (func_560(uParam0->f_13, -1274632976))
+		if (func_560(uParam0->f_13, -1274632976 /* GXTEntry: "Collector\'s Maps" */))
 		{
 			uParam0->f_44 = func_836(30);
 			return 1;
@@ -18551,7 +18551,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 					*bParam2 = 568713409; /* GXTEntry: "A Collector outfit must be equipped." */
 					break;
 				case 1392205317:
-					*bParam2 = 430829022;
+					*bParam2 = 430829022; /* GXTEntry: "A Moonshiner outfit must be equipped." */
 					break;
 				default:
 					*bParam2 = 1676404845; /* GXTEntry: "Your outfit does not support this item." */
@@ -18570,7 +18570,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 	bVar7 = func_996(bParam1, 0);
 	if ((!bVar7 && !func_562(bParam1)) && PED::_0x5FF9A878C3D115B8(bParam1, func_997(Global_1951141->f_1), 1) == 0)
 	{
-		*bParam2 = 70662961;
+		*bParam2 = 70662961; /* GXTEntry: "Failed to find shop item." */
 		return 0;
 	}
 	iVar2 = 34;
@@ -18611,7 +18611,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 							bVar3 = &Global_1951141->f_1657.f_1[iVar2 /*3*/];
 							if (&Global_1951141->f_1657.f_1[iVar2 /*3*/] != &Global_1951141->f_81[iVar2 /*12*/] && func_560(bVar3, 675650051))
 							{
-								*bParam2 = 1549351713;
+								*bParam2 = 1549351713; /* GXTEntry: "Your poncho does not support this." */
 								return 0;
 							}
 							Jump @2283; //curOff = 737
@@ -18665,7 +18665,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 										{
 											if (func_560(bParam1, -2093434733))
 											{
-												*bParam2 = 2122529806;
+												*bParam2 = 2122529806; /* GXTEntry: "Your skirt does not support this." */
 												return 0;
 											}
 										}
@@ -18686,7 +18686,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 											iVar2 = 36;
 											if (&Global_1951141->f_1657.f_1[iVar2 /*3*/] == &Global_1951141->f_81[iVar2 /*12*/])
 											{
-												*bParam2 = -279809718;
+												*bParam2 = -279809718; /* GXTEntry: "You must be wearing boots for this." */
 												return 0;
 											}
 											if (func_560(&(Global_1951141->f_1657.f_1[iVar2 /*3*/]), -1278198125) || PED::_0xFB4891BD7578CDC1(iParam0, -1968556728))
@@ -18709,7 +18709,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 												iVar2 = 34;
 												if (684307653 == func_813(&(Global_1951141->f_1657.f_1[iVar2 /*3*/])) && func_560(bParam1, 525391395))
 												{
-													*bParam2 = 2122529806;
+													*bParam2 = 2122529806; /* GXTEntry: "Your skirt does not support this." */
 													return 0;
 												}
 												Jump @2283; //curOff = 1316
@@ -18740,7 +18740,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 													iVar2 = 18;
 													if (912453393 == func_813(&(Global_1951141->f_1657.f_1[iVar2 /*3*/])))
 													{
-														*bParam2 = 710806085;
+														*bParam2 = 710806085; /* GXTEntry: "Your corset does not support this." */
 														return 0;
 													}
 													Jump @2283; //curOff = 1486
@@ -18774,7 +18774,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 															{
 																if (684307653 == func_813(bVar3))
 																{
-																	*bParam2 = 2122529806;
+																	*bParam2 = 2122529806; /* GXTEntry: "Your skirt does not support this." */
 																	return 0;
 																}
 																return 0;
@@ -18796,7 +18796,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 																bVar3 = &Global_1951141->f_1657.f_1[iVar2 /*3*/];
 																if (&Global_1951141->f_1657.f_1[iVar2 /*3*/] != &Global_1951141->f_81[iVar2 /*12*/] && func_560(bVar3, 1126863852))
 																{
-																	*bParam2 = -1379615715;
+																	*bParam2 = -1379615715; /* GXTEntry: "Your shirt does not support this." */
 																	return 0;
 																}
 																iVar2 = 34;
@@ -18824,7 +18824,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 																		iVar2 = 16;
 																		if (func_560(&(Global_1951141->f_1657.f_1[iVar2 /*3*/]), 525391395))
 																		{
-																			*bParam2 = -1379615715;
+																			*bParam2 = -1379615715; /* GXTEntry: "Your shirt does not support this." */
 																			return 0;
 																		}
 																	}
@@ -18838,7 +18838,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 																		bVar3 = &Global_1951141->f_1657.f_1[iVar2 /*3*/];
 																		if (684307653 == func_813(bVar3))
 																		{
-																			*bParam2 = 2122529806;
+																			*bParam2 = 2122529806; /* GXTEntry: "Your skirt does not support this." */
 																			return 0;
 																		}
 																		if (func_813(bParam1) == 1769055947)
@@ -18869,7 +18869,7 @@ int func_566(int iParam0, bool bParam1, bool bParam2)
 																			iVar2 = 36;
 																			if (&Global_1951141->f_1657.f_1[iVar2 /*3*/] == &Global_1951141->f_81[iVar2 /*12*/])
 																			{
-																				*bParam2 = -279809718;
+																				*bParam2 = -279809718; /* GXTEntry: "You must be wearing boots for this." */
 																				return 0;
 																			}
 																			bVar3 = &Global_1951141->f_1657.f_1[iVar2 /*3*/];
@@ -26070,9 +26070,9 @@ int func_810(bool bParam0)
 			return 470581068 /* GXTEntry: "All Bandanas" */;
 		case -1374090963:
 		case -734602591:
-			return -1377522460;
+			return -1377522460 /* GXTEntry: "All Bandoliers" */;
 		case 844191056:
-			return -827507241;
+			return -827507241 /* GXTEntry: "All Corsets" */;
 		case -1579982579:
 			return -642620072 /* GXTEntry: "Emote Styles" */;
 	}
@@ -32646,7 +32646,7 @@ int func_992(bool bParam0)
 			return 5;
 		case -1063340820: /* GXTEntry: "Outfit Six" */
 			return 6;
-		case 2127262701:
+		case 2127262701: /* GXTEntry: "Outfit Seven" */
 			return 7;
 		case -1323870201: /* GXTEntry: "Outfit Eight" */
 			return 8;
@@ -32877,7 +32877,7 @@ int func_1001(bool bParam0)
 	bVar1 = &Global_1951141->f_1657.f_1[iVar0 /*3*/];
 	if (&Global_1951141->f_1657.f_1[iVar0 /*3*/] != &Global_1951141->f_81[iVar0 /*12*/] && func_560(bVar1, -1527414429))
 	{
-		return -295714253;
+		return -295714253 /* GXTEntry: "Your vest does not support this." */;
 	}
 	return 0;
 }
@@ -33704,7 +33704,7 @@ int func_1027(bool bParam0)
 			return 1364634153;
 		case -905031115: /* GXTEntry: "The Grizzlies Outlaw" */
 			return -388301838;
-		case 1928115537: /* GXTEntry: "The Déchaux" */
+		case 1928115537: /* GXTEntry: "The D�chaux" */
 			return 208175031;
 		case 453281150: /* GXTEntry: "The Mercer" */
 			return -98968806;
@@ -33864,53 +33864,53 @@ int func_1027(bool bParam0)
 			return -1036761924;
 		case -1140185331: /* GXTEntry: "The Tyringham" */
 			return -683249952;
-		case 913153433:
+		case 913153433: /* GXTEntry: "The Gatlinburg" */
 			return 194792351;
-		case 606730510:
+		case 606730510: /* GXTEntry: "The Gatlinburg" */
 			return -1974548202;
-		case -964051505:
+		case -964051505: /* GXTEntry: "The Gatlinburg" */
 			return 1014738289;
-		case -1267459676:
+		case -1267459676: /* GXTEntry: "The Gatlinburg" */
 			return 634486813;
-		case -483756272:
+		case -483756272: /* GXTEntry: "The Gatlinburg" */
 			return 1408261210;
-		case -805187393:
+		case -805187393: /* GXTEntry: "The Gatlinburg" */
 			return -768354077;
-		case -1116096467:
+		case -1116096467: /* GXTEntry: "The Dagenhart" */
 			return 1791083718;
-		case -4997980:
+		case -4997980: /* GXTEntry: "The Dagenhart" */
 			return 1484267571;
-		case -305588017:
+		case -305588017: /* GXTEntry: "The Dagenhart" */
 			return -632577068;
-		case -694850968:
+		case -694850968: /* GXTEntry: "The Dagenhart" */
 			return -872544455;
-		case -985380922:
+		case -985380922: /* GXTEntry: "The Dagenhart" */
 			return -1111430465;
-		case 974827889:
+		case 974827889: /* GXTEntry: "The Dagenhart" */
 			return -1351987694;
-		case -1156770257:
+		case -1156770257: /* GXTEntry: "The Pittsburg" */
 			return -803252891;
-		case -843695231:
+		case -843695231: /* GXTEntry: "The Pittsburg" */
 			return 2121544208;
-		case 1854078224:
+		case 1854078224: /* GXTEntry: "The Pittsburg" */
 			return -1667469728;
-		case -2137185980:
+		case -2137185980: /* GXTEntry: "The Pittsburg" */
 			return 466087145;
-		case -1830566447:
+		case -1830566447: /* GXTEntry: "The Pittsburg" */
 			return 98091275;
-		case -1537546049:
+		case -1537546049: /* GXTEntry: "The Pittsburg" */
 			return -1010615123;
-		case 469166476:
+		case 469166476: /* GXTEntry: "The Wilkesboro" */
 			return -32097795;
-		case 1229079574:
+		case 1229079574: /* GXTEntry: "The Wilkesboro" */
 			return -875834007;
-		case 990422947:
+		case 990422947: /* GXTEntry: "The Wilkesboro" */
 			return 68797956;
-		case -229665218:
+		case -229665218: /* GXTEntry: "The Wilkesboro" */
 			return -270885498;
-		case -527568197:
+		case -527568197: /* GXTEntry: "The Wilkesboro" */
 			return 682069807;
-		case 242634379:
+		case 242634379: /* GXTEntry: "The Wilkesboro" */
 			return 920726434;
 		case 275775515: /* GXTEntry: "The Copperhead Enforcer" */
 			return 1379601741;
@@ -34078,53 +34078,53 @@ int func_1027(bool bParam0)
 			return -1914569345;
 		case 2038967949: /* GXTEntry: "The Tyringham" */
 			return 1110533655;
-		case -1732116082:
+		case -1732116082: /* GXTEntry: "The Gatlinburg" */
 			return -2005854180;
-		case -2043224964:
+		case -2043224964: /* GXTEntry: "The Gatlinburg" */
 			return -1762511586;
-		case 1970158315:
+		case 1970158315: /* GXTEntry: "The Gatlinburg" */
 			return -1609283862;
-		case 1655444839:
+		case 1655444839: /* GXTEntry: "The Gatlinburg" */
 			return -1311675804;
-		case 1373270980:
+		case 1373270980: /* GXTEntry: "The Gatlinburg" */
 			return -1952932365;
-		case 1058885194:
+		case 1058885194: /* GXTEntry: "The Gatlinburg" */
 			return -1923309189;
-		case -1944199774:
+		case -1944199774: /* GXTEntry: "The Dagenhart" */
 			return -1262957735;
-		case 999079041:
+		case 999079041: /* GXTEntry: "The Dagenhart" */
 			return -1516622564;
-		case 635605293:
+		case 635605293: /* GXTEntry: "The Dagenhart" */
 			return -1741811132;
-		case 1493792634:
+		case 1493792634: /* GXTEntry: "The Dagenhart" */
 			return -1991740303;
-		case -213406744:
+		case -213406744: /* GXTEntry: "The Dagenhart" */
 			return 2071419087;
-		case -505870069:
+		case -505870069: /* GXTEntry: "The Dagenhart" */
 			return 1352008461;
-		case -152330007:
+		case -152330007: /* GXTEntry: "The Pittsburg" */
 			return -196656840;
-		case 2024678512:
+		case 2024678512: /* GXTEntry: "The Pittsburg" */
 			return 108848547;
-		case 1188643011:
+		case 1188643011: /* GXTEntry: "The Pittsburg" */
 			return -610365465;
-		case 1680243549:
+		case 1680243549: /* GXTEntry: "The Pittsburg" */
 			return -371774376;
-		case 845486043:
+		case 845486043: /* GXTEntry: "The Pittsburg" */
 			return -123352547;
-		case -1351118334:
+		case -1351118334: /* GXTEntry: "The Pittsburg" */
 			return 112125487;
-		case -1206325201:
+		case -1206325201: /* GXTEntry: "The Wilkesboro" */
 			return -741695871;
-		case -1514091649:
+		case -1514091649: /* GXTEntry: "The Wilkesboro" */
 			return -711024087;
-		case 1284413724:
+		case 1284413724: /* GXTEntry: "The Wilkesboro" */
 			return 784454766;
-		case 976581738:
+		case 976581738: /* GXTEntry: "The Wilkesboro" */
 			return 1114307520;
-		case 1895916033:
+		case 1895916033: /* GXTEntry: "The Wilkesboro" */
 			return 2026825867;
-		case 1588804965:
+		case 1588804965: /* GXTEntry: "The Wilkesboro" */
 			return 177900576;
 		default:
 			break;
@@ -34289,17 +34289,17 @@ int func_1029(bool bParam0)
 			return -1834221234;
 		case -528729190:
 			return -1526815245;
-		case -732726675:
+		case -732726675: /* GXTEntry: "Levens Holster" */
 			return 1127336149;
-		case -963846432:
+		case -963846432: /* GXTEntry: "Levens Holster" */
 			return 828941635;
-		case -1242022473:
+		case -1242022473: /* GXTEntry: "Levens Holster" */
 			return 531497422;
-		case -2026971099:
+		case -2026971099: /* GXTEntry: "Levens Holster" */
 			return 834643453;
-		case 2066466847:
+		case 2066466847: /* GXTEntry: "Levens Holster" */
 			return 526451008;
-		case 1835609242:
+		case 1835609242: /* GXTEntry: "Levens Holster" */
 			return -399699239;
 		case -542471226: /* GXTEntry: "Gunslinger Holster" */
 			return 1570234737;
@@ -34367,7 +34367,7 @@ int func_1029(bool bParam0)
 			return 1688754425;
 		case 1779645445: /* GXTEntry: "Deadboot Holster" */
 			return 1437777233;
-		case 2112644023:
+		case 2112644023: /* GXTEntry: "Deadboot Holster" */
 			return 1676958164;
 		case -909575313: /* GXTEntry: "Deadboot Holster" */
 			return -35123787;
@@ -34393,7 +34393,7 @@ int func_1029(bool bParam0)
 			return 1051595054;
 		case 1302861393: /* GXTEntry: "Bolger Holster" */
 			return 1338028883;
-		case 2145483459:
+		case 2145483459: /* GXTEntry: "Bolger Holster" */
 			return 574052421;
 		case 1916198766: /* GXTEntry: "Bolger Holster" */
 			return -1516904708;
@@ -34441,17 +34441,17 @@ int func_1029(bool bParam0)
 			return 1227104007;
 		case 676193620:
 			return -595245625;
-		case 1564617196:
+		case 1564617196: /* GXTEntry: "Levens Holster" */
 			return 1395189422;
-		case 1142159244:
+		case 1142159244: /* GXTEntry: "Levens Holster" */
 			return 1618444619;
-		case 834556641:
+		case 834556641: /* GXTEntry: "Levens Holster" */
 			return 1977920549;
-		case -1297099578:
+		case -1297099578: /* GXTEntry: "Levens Holster" */
 			return -2078652272;
-		case -1477066926:
+		case -1477066926: /* GXTEntry: "Levens Holster" */
 			return -1741786952;
-		case -1764025059:
+		case -1764025059: /* GXTEntry: "Levens Holster" */
 			return -1452207299;
 		default:
 			break;
@@ -34591,7 +34591,7 @@ int func_1033(bool bParam0, bool bParam1)
 	}
 	else if (bParam0 == joaat("DOCUMENT_PAMPHLET_POISON_BOTTLE"))
 	{
-		return func_592(963726415, 1);
+		return func_592(963726415 /* GXTEntry: "Toxic Moonshine" */, 1);
 	}
 	return func_592(bParam0, 1);
 }
@@ -37191,11 +37191,11 @@ int func_1128(var uParam0, var uParam1)
 
 	if (!func_1536(uParam0))
 	{
-		func_811(uParam0, 4, 1945003767, 0, 0, 0);
+		func_811(uParam0, 4, 1945003767 /* GXTEntry: "Save Outfit" */, 0, 0, 0);
 	}
 	else
 	{
-		func_811(uParam0, 4, 1945003767, func_1537(), 1, 0);
+		func_811(uParam0, 4, 1945003767 /* GXTEntry: "Save Outfit" */, func_1537(), 1, 0);
 	}
 	switch (*uParam1)
 	{
@@ -37210,11 +37210,11 @@ int func_1128(var uParam0, var uParam1)
 					iVar0 = func_992(uParam1->f_9);
 					if ((iVar0 <= -1 || func_1539() == uParam1->f_9) || !func_993(2, iVar0))
 					{
-						func_811(uParam0, 4, 904671343, 0, 0, 0);
+						func_811(uParam0, 4, 904671343 /* GXTEntry: "Delete Outfit" */, 0, 0, 0);
 					}
 					else
 					{
-						func_811(uParam0, 4, 904671343, 1, 1, 0);
+						func_811(uParam0, 4, 904671343 /* GXTEntry: "Delete Outfit" */, 1, 1, 0);
 					}
 				}
 				if (func_1538(uParam1->f_9) && uParam1->f_9 != 491602716)
@@ -37231,43 +37231,43 @@ int func_1128(var uParam0, var uParam1)
 				}
 				if (func_1539() == uParam1->f_9 || func_996(uParam1->f_9, 0))
 				{
-					func_811(uParam0, 2, -1208531349, 0, 0, 0);
+					func_811(uParam0, 2, -1208531349 /* GXTEntry: "Remove From Horse" */, 0, 0, 0);
 				}
 				else if (func_1540(uParam1->f_9))
 				{
-					func_811(uParam0, 2, -1208531349, 1, 1, 0);
+					func_811(uParam0, 2, -1208531349 /* GXTEntry: "Remove From Horse" */, 1, 1, 0);
 				}
 				else
 				{
 					iVar0 = func_992(uParam1->f_9);
 					if (iVar0 <= -1)
 					{
-						func_811(uParam0, 2, 920855044, func_1541() > 0, 1, 0);
+						func_811(uParam0, 2, 920855044 /* GXTEntry: "Store On Horse" */, func_1541() > 0, 1, 0);
 					}
 					else if (uParam1->f_9 == 491602716)
 					{
 						if (func_1539() == 491602716)
 						{
-							func_811(uParam0, 2, 920855044, (func_1541() > 0 && func_993(2, iVar0)), 1, 0);
+							func_811(uParam0, 2, 920855044 /* GXTEntry: "Store On Horse" */, (func_1541() > 0 && func_993(2, iVar0)), 1, 0);
 						}
 					}
 					else
 					{
-						func_811(uParam0, 2, 920855044, (func_1541() > 0 && func_993(2, iVar0)), 1, 0);
+						func_811(uParam0, 2, 920855044 /* GXTEntry: "Store On Horse" */, (func_1541() > 0 && func_993(2, iVar0)), 1, 0);
 					}
 				}
 				Jump @768; //curOff = 496
 				if (func_1542(uParam1->f_9) || func_996(uParam1->f_9, 0))
 				{
-					func_811(uParam0, 2, -1208531349, 0, 0, 0);
+					func_811(uParam0, 2, -1208531349 /* GXTEntry: "Remove From Horse" */, 0, 0, 0);
 				}
 				else if (func_1540(uParam1->f_9))
 				{
-					func_811(uParam0, 2, -1208531349, 1, 1, 0);
+					func_811(uParam0, 2, -1208531349 /* GXTEntry: "Remove From Horse" */, 1, 1, 0);
 				}
 				else
 				{
-					func_811(uParam0, 2, 920855044, func_1543(-525676072, 0), 1, 0);
+					func_811(uParam0, 2, 920855044 /* GXTEntry: "Store On Horse" */, func_1543(-525676072, 0), 1, 0);
 				}
 				Jump @768; //curOff = 596
 				if (func_1339(-55206167, func_1327(1), joaat("SLOTID_PROGRESSION"), 1, 0, 0) >= 5)
@@ -37276,15 +37276,15 @@ int func_1128(var uParam0, var uParam1)
 					{
 						if (func_996(uParam1->f_9, 0))
 						{
-							func_811(uParam0, 2, -1208531349, 0, 0, 0);
+							func_811(uParam0, 2, -1208531349 /* GXTEntry: "Remove From Horse" */, 0, 0, 0);
 						}
 						else if (func_1540(uParam1->f_9))
 						{
-							func_811(uParam0, 2, -1208531349, uParam1->f_9 != func_1544(1108822547), 1, 0);
+							func_811(uParam0, 2, -1208531349 /* GXTEntry: "Remove From Horse" */, uParam1->f_9 != func_1544(1108822547), 1, 0);
 						}
 						else
 						{
-							func_811(uParam0, 2, 920855044, func_1543(-2061583405, 0), 1, 0);
+							func_811(uParam0, 2, 920855044 /* GXTEntry: "Store On Horse" */, func_1543(-2061583405, 0), 1, 0);
 						}
 					}
 				}
@@ -37305,7 +37305,7 @@ int func_1128(var uParam0, var uParam1)
 			}
 			if (func_807(uParam0) == 1256151078 && !func_477(64))
 			{
-				func_811(uParam0, 2, -810523886, 1, 1, 0);
+				func_811(uParam0, 2, -810523886 /* GXTEntry: "Modify" */, 1, 1, 0);
 			}
 			return 1;
 		}
@@ -37332,7 +37332,7 @@ int func_1129(var uParam0, var uParam1)
 			bVar1 = func_821();
 			if (func_807(uParam0) == 1256151078)
 			{
-				func_1525(uParam0, -1934515925, 1, -1, 1, 1, 1, 0);
+				func_1525(uParam0, -1934515925 /* GXTEntry: "Modify" */, 1, -1, 1, 1, 1, 0);
 				return 1;
 			}
 			switch (*uParam1)
@@ -37447,7 +37447,7 @@ void func_1130(var uParam0, var uParam1, int iParam2)
 		func_1162(uParam0, 64);
 		if (func_1556(uParam0, 4) || func_1557(uParam0, 4))
 		{
-			func_811(uParam0, 4, 1945003767, 0, 0, 0);
+			func_811(uParam0, 4, 1945003767 /* GXTEntry: "Save Outfit" */, 0, 0, 0);
 		}
 		iVar0 = func_804();
 		if ((((iVar0 == 761079318 || iVar0 == -2056428614) || iVar0 == 1942587409) || iVar0 == -395279071) || iVar0 == -348190488)
@@ -39917,7 +39917,7 @@ void func_1200(var uParam0)
 			func_1683(uParam0, &uVar37);
 			if (func_804() == -239176093)
 			{
-				func_811(uParam0, 5, -1451828257, 1, 1, 0);
+				func_811(uParam0, 5, -1451828257 /* GXTEntry: "Gender" */, 1, 1, 0);
 			}
 			if (func_1680(uParam0))
 			{
@@ -43440,9 +43440,9 @@ int func_1338(int iParam0)
 		case 15:
 			return 1371028520;
 		case 16:
-			return 1479488426;
+			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
-			return -170363364;
+			return -170363364 /* GXTEntry: "Club Rewards" */;
 		default:
 			break;
 	}
@@ -45402,9 +45402,9 @@ int func_1412(int iParam0)
 		case 11:
 			return -163058845 /* GXTEntry: "Trader" */;
 		case 12:
-			return 2147120840;
+			return 2147120840 /* GXTEntry: "Collector" */;
 		case 15:
-			return 470667784;
+			return 470667784 /* GXTEntry: "Moonshiner" */;
 		default:
 			break;
 	}
@@ -46571,7 +46571,7 @@ bool func_1443(bool bParam0, bool bParam1)
 		case 34372170: /* GXTEntry: "Bolas" */
 			bVar0 = joaat("WEAPON_THROWN_BOLAS");
 			break;
-		case 963726415:
+		case 963726415: /* GXTEntry: "Toxic Moonshine" */
 			bVar0 = joaat("WEAPON_THROWN_POISONBOTTLE");
 			break;
 		case 424030678: /* GXTEntry: "Hatchet" */
@@ -46872,7 +46872,7 @@ int func_1452(char* sParam0, int iParam1, bool bParam2, int iParam3, bool bParam
 
 bool func_1453(bool bParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(bParam0) && bParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(bParam0) && bParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_1454(bool bParam0)
@@ -47773,7 +47773,7 @@ void func_1483(bool bParam0, int iParam1, var uParam2)
 			*iParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*iParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -50025,7 +50025,7 @@ int func_1555(int iParam0)
 		case 6:
 			return -1063340820 /* GXTEntry: "Outfit Six" */;
 		case 7:
-			return 2127262701;
+			return 2127262701 /* GXTEntry: "Outfit Seven" */;
 		case 8:
 			return -1323870201 /* GXTEntry: "Outfit Eight" */;
 		case 9:
@@ -53203,11 +53203,11 @@ int func_1683(var uParam0, var uParam1)
 			{
 				if (func_607(uParam1->f_9))
 				{
-					func_2225(uParam0, -561536925);
+					func_2225(uParam0, -561536925 /* GXTEntry: "This Offer can no longer be used." */);
 				}
 				else
 				{
-					func_2225(uParam0, -1886429826);
+					func_2225(uParam0, -1886429826 /* GXTEntry: "This Reward can no longer be used." */);
 				}
 			}
 			else
@@ -53215,15 +53215,15 @@ int func_1683(var uParam0, var uParam1)
 				func_608(Global_1051388->f_3214, uParam1->f_9, &Var11);
 				if (Var11 != 0 || Var11.f_1 != 0)
 				{
-					func_2225(uParam0, -224345454);
+					func_2225(uParam0, -224345454 /* GXTEntry: "You cannot afford this Offer." */);
 				}
 				else if (func_607(uParam1->f_9))
 				{
-					func_2225(uParam0, 402282547);
+					func_2225(uParam0, 402282547 /* GXTEntry: "This Offer does not apply to the selected item." */);
 				}
 				else
 				{
-					func_2225(uParam0, 1326194393);
+					func_2225(uParam0, 1326194393 /* GXTEntry: "This Reward does not apply to the selected item." */);
 				}
 			}
 			return 1;
@@ -54270,9 +54270,9 @@ int func_1697(bool bParam0)
 		case 2:
 			return 1116743896 /* GXTEntry: "Boots" */;
 		case 3:
-			return -741448415;
+			return -741448415 /* GXTEntry: "Bandolier" */;
 		case 4:
-			return -551953039;
+			return -551953039 /* GXTEntry: "Corset" */;
 		default:
 			break;
 	}
@@ -55274,7 +55274,7 @@ int func_1714(var uParam0, bool bParam1, int iParam2, int iParam3)
 						{
 							switch (iVar6)
 							{
-								case 2119176479:
+								case 2119176479: /* GXTEntry: "Horse Care Package" */
 									if (func_2262(uParam0, bVar3))
 									{
 										bVar3++;
@@ -56200,7 +56200,7 @@ int func_1736(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4)
 	{
 		if (iParam1 == 1045621973 && !bParam2)
 		{
-			iVar3 = func_2316(uParam0, iParam1, 21550967, iVar0, bVar1, iParam3, bParam4);
+			iVar3 = func_2316(uParam0, iParam1, 21550967 /* GXTEntry: "Gift from Rockstar" */, iVar0, bVar1, iParam3, bParam4);
 		}
 		bVar2 = false;
 		while (bVar2 < bVar1)
@@ -62436,33 +62436,33 @@ int func_1929(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -135031081:
+		case -135031081: /* GXTEntry: "Newspaper: First Edition" */
 			return 0;
-		case 687405277:
+		case 687405277: /* GXTEntry: "Newspaper: Second Edition" */
 			return 1;
-		case -1151230536:
+		case -1151230536: /* GXTEntry: "Newspaper: Third Edition" */
 			return 2;
-		case -1114660332:
+		case -1114660332: /* GXTEntry: "Newspaper: Fourth Edition" */
 			return 3;
-		case -808040799:
+		case -808040799: /* GXTEntry: "Newspaper: Fifth Edition" */
 			return 4;
-		case -464818293:
+		case -464818293: /* GXTEntry: "Newspaper: Sixth Edition" */
 			return 5;
-		case -2054573559:
+		case -2054573559: /* GXTEntry: "Newspaper: Seventh Edition" */
 			return 6;
-		case -1799597970:
+		case -1799597970: /* GXTEntry: "Newspaper: Eighth Edition" */
 			return 7;
-		case -1441891566:
+		case -1441891566: /* GXTEntry: "Newspaper: Ninth Edition" */
 			return 8;
-		case 1337541877:
+		case 1337541877: /* GXTEntry: "Newspaper: Tenth Edition" */
 			return 9;
-		case -43048862:
+		case -43048862: /* GXTEntry: "Newspaper: Eleventh Edition" */
 			return 10;
-		case -199422530:
+		case -199422530: /* GXTEntry: "Newspaper: Twelfth Edition" */
 			return 11;
-		case 568125757:
+		case 568125757: /* GXTEntry: "Newspaper: Thirteenth Edition" */
 			return 12;
-		case 411031171:
+		case 411031171: /* GXTEntry: "Newspaper: Fourteenth Edition" */
 			return 13;
 	}
 	return -1;
@@ -64976,7 +64976,7 @@ int func_2024(var uParam0, var uParam1)
 	bool bVar0;
 
 	bVar0 = func_1795();
-	func_811(uParam0, 1, 1749124412, bVar0, !func_2215(uParam0, uParam1->f_9), 1);
+	func_811(uParam0, 1, 1749124412 /* GXTEntry: "Add Flavor" */, bVar0, !func_2215(uParam0, uParam1->f_9), 1);
 	return 1;
 }
 
@@ -65000,7 +65000,7 @@ int func_2025(var uParam0, var uParam1)
 	}
 	func_811(uParam0, 1, iVar2, bVar0, 1, 1);
 	bVar3 = func_2238(uParam1->f_9, 0);
-	func_1681(uParam0, 1494657737, 0, bVar3, 0, 0, -1, 0, -1);
+	func_1681(uParam0, 1494657737 /* GXTEntry: "Mash Price" */, 0, bVar3, 0, 0, -1, 0, -1);
 	return 1;
 }
 
@@ -65009,8 +65009,8 @@ int func_2026(var uParam0, var uParam1)
 	bool bVar0;
 
 	bVar0 = func_1795();
-	func_811(uParam0, 1, 170728136, bVar0, 1, 1);
-	func_1681(uParam0, 1592437185, 0, 100, 0, 0, -1, 0, -1);
+	func_811(uParam0, 1, 170728136 /* GXTEntry: "Start Sell Mission" */, bVar0, 1, 1);
+	func_1681(uParam0, 1592437185 /* GXTEntry: "Buyer Offer" */, 0, 100, 0, 0, -1, 0, -1);
 	return 1;
 }
 
@@ -65240,7 +65240,7 @@ int func_2034(var uParam0, var uParam1)
 	if (bVar0)
 	{
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(uParam1->f_11, func_1686(), true);
-		func_811(uParam0, 5, -1451828257, 1, 1, 0);
+		func_811(uParam0, 5, -1451828257 /* GXTEntry: "Gender" */, 1, 1, 0);
 	}
 	func_2563(uParam0, uParam1->f_9, func_1795());
 	return 1;
@@ -65724,7 +65724,7 @@ int func_2044(var uParam0, var uParam1)
 				}
 				else if (bVar0 == func_2104(0))
 				{
-					func_2239(uParam0, 223046265);
+					func_2239(uParam0, 223046265 /* GXTEntry: "This will always stay on your Horse" */);
 				}
 				else
 				{
@@ -65963,7 +65963,7 @@ int func_2051(var uParam0, var uParam1)
 		func_811(uParam0, 1, -507073631 /* GXTEntry: "Equip" */, 0, 1, 0);
 		if (func_1539() == 166243423)
 		{
-			func_2239(uParam0, 1985110445);
+			func_2239(uParam0, 1985110445 /* GXTEntry: "This outfit is not saved and can be lost when stored on a horse." */);
 		}
 		else
 		{
@@ -66019,16 +66019,16 @@ int func_2053(var uParam0, var uParam1)
 		{
 			case 0:
 			case 1:
-				bVar2 = 536681653;
+				bVar2 = 536681653; /* GXTEntry: "Modify your shirts appearance" */
 				break;
 			case 2:
-				bVar2 = -934544273;
+				bVar2 = -934544273; /* GXTEntry: "Modify your boots appearance" */
 				break;
 			case 4:
-				bVar2 = -183990471;
+				bVar2 = -183990471; /* GXTEntry: "Modify your corset\'s appearance" */
 				break;
 			case 3:
-				bVar2 = -906825718;
+				bVar2 = -906825718; /* GXTEntry: "Modify your bandolier\'s appearance" */
 				break;
 			default:
 				bVar2 = 1243347373;
@@ -66041,19 +66041,19 @@ int func_2053(var uParam0, var uParam1)
 		{
 			case 0:
 			case 1:
-				bVar2 = -1078622262;
+				bVar2 = -1078622262; /* GXTEntry: "You can\'t modify your shirt currently" */
 				break;
 			case 2:
-				bVar2 = -929695534;
+				bVar2 = -929695534; /* GXTEntry: "You can\'t modify your boots currently" */
 				break;
 			case 4:
-				bVar2 = -1529754281;
+				bVar2 = -1529754281; /* GXTEntry: "You cannot modify your corset\'s appearance" */
 				break;
 			case 3:
-				bVar2 = -598571172;
+				bVar2 = -598571172; /* GXTEntry: "You cannot modify your bandolier\'s appearance" */
 				break;
 			default:
-				bVar2 = 836317122;
+				bVar2 = 836317122; /* GXTEntry: "You can\'t modify this part of your outfit." */
 				break;
 		}
 	}
@@ -66117,16 +66117,16 @@ int func_2055(var uParam0, var uParam1)
 		{
 			if (func_1465(bVar1))
 			{
-				func_2225(uParam0, -1091091272);
+				func_2225(uParam0, -1091091272 /* GXTEntry: "Pay your bounty to stop bounty hunters" */);
 			}
 			else
 			{
-				func_2225(uParam0, -156356253);
+				func_2225(uParam0, -156356253 /* GXTEntry: "You do not have enough cash to pay this" */);
 			}
 		}
 		else
 		{
-			func_2225(uParam0, 1900320479);
+			func_2225(uParam0, 1900320479 /* GXTEntry: "You have no bounty to pay" */);
 		}
 	}
 	else
@@ -66216,7 +66216,7 @@ int func_2057(var uParam0, var uParam1)
 	func_1591(uParam0, 1);
 	func_2582(uParam0, HUD::_GET_LABEL_TEXT_BY_HASH(func_1395(uParam1->f_9)), 0);
 	func_1593(uParam0, 1);
-	func_2583(uParam0, -1158492426, 0);
+	func_2583(uParam0, -1158492426 /* GXTEntry: "See Offers & Rewards in Benefits for details" */, 0);
 	func_1793(uParam0, uParam1->f_9);
 	return 1;
 }
@@ -67138,7 +67138,7 @@ int func_2081(var uParam0, struct<11> Param1, var uParam12, var uParam13, var uP
 		Var8 = { func_1053(Param1.f_7, func_1469(0), bVar7, 0) };
 		if ((WEAPON::_0xD955FEE4B87AFA07(Param1.f_7) && WEAPON::_0x6929E22158E52265(Global_34, iVar6, &uVar12)) && func_1709(&Var8, &uVar12))
 		{
-			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 3, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 3, false, false);
 		}
 		else
 		{
@@ -69841,7 +69841,7 @@ int func_2188(var uParam0)
 	{
 		if (!func_2324(uParam0, -520826364) && !UNLOCK::_UNLOCK_IS_UNLOCKED(1296415408))
 		{
-			func_2225(uParam0, -2128376342);
+			func_2225(uParam0, -2128376342 /* GXTEntry: "The Outlaw Pass No. 2 is required" */);
 		}
 	}
 	func_1708(uParam0, func_2138(uParam0), 0);
@@ -70228,7 +70228,7 @@ int func_2197(var uParam0)
 			}
 			else
 			{
-				func_811(uParam0, 2, 1942046266, 1, 1, 0);
+				func_811(uParam0, 2, 1942046266 /* GXTEntry: "Buyers" */, 1, 1, 0);
 			}
 		}
 		else if (!func_2215(uParam0, bVar0))
@@ -71178,7 +71178,7 @@ int func_2218(int iParam0)
 		case 12:
 			return 698143630 /* GXTEntry: "~COLOR_RED~~BLIP_MP_ROLES_COLLECTOR_LOCK~~s~" */;
 		case 15:
-			return 194212856;
+			return 194212856 /* GXTEntry: "~COLOR_RED~~BLIP_MP_ROLES_MOONSHINER_LOCK~~s~" */;
 		default:
 			break;
 	}
@@ -72037,131 +72037,131 @@ int func_2240(int iParam0)
 	switch (iParam0)
 	{
 		case 1508306587:
-			return 956753366;
+			return 956753366 /* GXTEntry: "Accessory" */;
 		case 2029752284:
-			return 229848043;
+			return 229848043 /* GXTEntry: "Apron" */;
 		case -413129408:
-			return 588559743;
+			return 588559743 /* GXTEntry: "Badge" */;
 		case 1132079111:
-			return -1165477807;
+			return -1165477807 /* GXTEntry: "Bag" */;
 		case 478744432:
-			return 542482997;
+			return 542482997 /* GXTEntry: "Bag Strap" */;
 		case -68128151:
-			return -1598999798;
+			return -1598999798 /* GXTEntry: "Bandana" */;
 		case -686686829:
-			return -1964604515;
+			return -1964604515 /* GXTEntry: "Belt" */;
 		case -1396424476:
-			return -1964604515;
+			return -1964604515 /* GXTEntry: "Belt" */;
 		case 1201276490:
-			return -950324859;
+			return -950324859 /* GXTEntry: "Blouse" */;
 		case -839140560:
-			return -1768217088;
+			return -1768217088 /* GXTEntry: "Boots" */;
 		case -298391753:
-			return -647442474;
+			return -647442474 /* GXTEntry: "Spurs" */;
 		case 1589583617:
-			return -1669395156;
+			return -1669395156 /* GXTEntry: "Buckle" */;
 		case 1769055947:
-			return 2099263972;
+			return 2099263972 /* GXTEntry: "Chaps" */;
 		case 1545016984:
-			return 2099263972;
+			return 2099263972 /* GXTEntry: "Chaps" */;
 		case 1868067663:
-			return 1177470655;
+			return 1177470655 /* GXTEntry: "Coat" */;
 		case -1080198344:
-			return 1177470655;
+			return 1177470655 /* GXTEntry: "Coat" */;
 		case 294388917:
-			return -768798238;
+			return -768798238 /* GXTEntry: "Poncho" */;
 		case 912453393:
-			return -145955678;
+			return -145955678 /* GXTEntry: "Corset" */;
 		case 562107429:
-			return 1758406353;
+			return 1758406353 /* GXTEntry: "Dress" */;
 		case -163032984:
-			return 332275111;
+			return 332275111 /* GXTEntry: "Glasses" */;
 		case -1719060085:
-			return 1533215112;
+			return 1533215112 /* GXTEntry: "Gloves" */;
 		case 1033860813:
-			return 1990307743;
+			return 1990307743 /* GXTEntry: "Gun Belt" */;
 		case -2061583405:
-			return 1314684259;
+			return 1314684259 /* GXTEntry: "Hat" */;
 		case 58819564:
-			return -1942508740;
+			return -1942508740 /* GXTEntry: "Hat Accessory" */;
 		case -646147237:
-			return 2145255488;
+			return 2145255488 /* GXTEntry: "Headwear" */;
 		case 1096747416:
-			return 1735590610;
+			return 1735590610 /* GXTEntry: "Bandolier" */;
 		case -852381396:
-			return -1804458598;
+			return -1804458598 /* GXTEntry: "Holster" */;
 		case 153430294:
-			return -1804458598;
+			return -1804458598 /* GXTEntry: "Holster" */;
 		case 81053684:
-			return -2096103467;
+			return -2096103467 /* GXTEntry: "Mask" */;
 		case -525676072:
-			return -2096103467;
+			return -2096103467 /* GXTEntry: "Mask" */;
 		case -497931013:
-			return -572044425;
+			return -572044425 /* GXTEntry: "Neckwear" */;
 		case 172394747:
-			return -1893707445;
+			return -1893707445 /* GXTEntry: "Bandana" */;
 		case 461122406:
-			return -572044425;
+			return -572044425 /* GXTEntry: "Neckwear" */;
 		case -999503751:
-			return 1704476318;
+			return 1704476318 /* GXTEntry: "Outfit" */;
 		case 502936876:
-			return 1135086855;
+			return 1135086855 /* GXTEntry: "Overalls" */;
 		case 2047428024:
-			return -1118685671;
+			return -1118685671 /* GXTEntry: "Pants" */;
 		case -1358040092:
-			return 1373811563;
+			return 1373811563 /* GXTEntry: "Ring" */;
 		case -590250209:
-			return -551303313;
+			return -551303313 /* GXTEntry: "Satchel" */;
 		case 1477698721:
-			return -1962451182;
+			return -1962451182 /* GXTEntry: "Scarf" */;
 		case 688587926:
-			return -999848467;
+			return -999848467 /* GXTEntry: "Shirt" */;
 		case 684307653:
-			return 2123406071;
+			return 2123406071 /* GXTEntry: "Skirt" */;
 		case -923693316:
-			return 106280714;
+			return 106280714 /* GXTEntry: "Spats" */;
 		case 2016058810:
-			return 406014096;
+			return 406014096 /* GXTEntry: "Stockings" */;
 		case 1282123855:
-			return -350927420;
+			return -350927420 /* GXTEntry: "Suspenders" */;
 		case -795466267:
-			return -494519208;
+			return -494519208 /* GXTEntry: "Tie" */;
 		case 2112290568:
-			return 834235656;
+			return 834235656 /* GXTEntry: "Undergarment" */;
 		case 698653232:
-			return 1488981351;
+			return 1488981351 /* GXTEntry: "Vest" */;
 		case -1423861687:
-			return -1622329839;
+			return -1622329839 /* GXTEntry: "Bracelet" */;
 		case -1126146024:
-			return 1995280482;
+			return 1995280482 /* GXTEntry: "Knife Holster" */;
 		case 684852611:
-			return -1596855333;
+			return -1596855333 /* GXTEntry: "Talisman" */;
 		case -1934420714:
-			return -1596855333;
+			return -1596855333 /* GXTEntry: "Talisman" */;
 		case -1972808239:
-			return -1596855333;
+			return -1596855333 /* GXTEntry: "Talisman" */;
 		case -2085606460:
-			return -1596855333;
+			return -1596855333 /* GXTEntry: "Talisman" */;
 		case 1772421657:
-			return -1596855333;
+			return -1596855333 /* GXTEntry: "Talisman" */;
 		case -1407809882:
-			return -721165241;
+			return -721165241 /* GXTEntry: "Vest Accessory" */;
 		case 1061770183:
-			return -1134874053;
+			return -1134874053 /* GXTEntry: "Wrist Accessory" */;
 		case -1044137471:
-			return 1436397544;
+			return 1436397544 /* GXTEntry: "Upper garb" */;
 		case 884451223:
-			return 1737462569;
+			return 1737462569 /* GXTEntry: "Lower garb" */;
 		case 826594019:
-			return 614921588;
+			return 614921588 /* GXTEntry: "Gun belt trinket" */;
 		case 320619384:
-			return -1811813854;
+			return -1811813854 /* GXTEntry: "Left-hand ring" */;
 		case -13558554:
-			return 1910916313;
+			return 1910916313 /* GXTEntry: "Right-hand ring" */;
 		case 1024667707:
-			return 1040778386;
+			return 1040778386 /* GXTEntry: "Eyewear" */;
 		case 1297434125:
-			return -1084600277;
+			return -1084600277 /* GXTEntry: "Gauntlets" */;
 		default:
 			break;
 	}
@@ -72247,9 +72247,9 @@ int func_2249(int iParam0)
 			return 1;
 		case 1116743896: /* GXTEntry: "Boots" */
 			return 2;
-		case -741448415:
+		case -741448415: /* GXTEntry: "Bandolier" */
 			return 3;
-		case -551953039:
+		case -551953039: /* GXTEntry: "Corset" */
 			return 4;
 		default:
 			break;
@@ -73216,7 +73216,7 @@ int func_2285(int iParam0)
 		case joaat("a_c_horse_ardennes_strawberryroan"):
 			return 1686036388 /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */;
 		case joaat("a_c_horse_belgian_blondchestnut"):
-			return 2125477381;
+			return 2125477381 /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */;
 		case joaat("a_c_horse_belgian_mealychestnut"):
 			return 1808724704 /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */;
 		case joaat("a_c_horse_dutchwarmblood_sootybuckskin"):
@@ -73332,23 +73332,23 @@ int func_2285(int iParam0)
 		case -1846319726:
 			return -878000957 /* GXTEntry: "Kladruber~n~Silver Coat" */;
 		case 1007570567:
-			return -2145947333;
+			return -2145947333 /* GXTEntry: "Norfolk Roadster~n~Black Coat" */;
 		case 1029339151:
-			return 156528857;
+			return 156528857 /* GXTEntry: "Norfolk Roadster~n~Speckled Grey Coat" */;
 		case -1424767799:
-			return -1240970285;
+			return -1240970285 /* GXTEntry: "Norfolk Roadster~n~Piebald Roan Coat" */;
 		case -217135948:
-			return -1933497088;
+			return -1933497088 /* GXTEntry: "Norfolk Roadster~n~Rose Grey Coat" */;
 		case -156439156:
-			return -1116314766;
+			return -1116314766 /* GXTEntry: "Norfolk Roadster~n~Dappled Buckskin Coat" */;
 		case 1344011125:
-			return -877141885;
+			return -877141885 /* GXTEntry: "Norfolk Roadster~n~Spotted Tricolor Coat" */;
 		case joaat("a_c_donkey_01"):
 			return -285185056;
 		case joaat("a_c_horse_appaloosa_blacksnowflake"):
 			return -1692268955 /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */;
 		case joaat("a_c_horse_arabian_grey"):
-			return 2130706226;
+			return 2130706226 /* GXTEntry: "Arabian~n~Grey Coat" */;
 		case joaat("a_c_horse_arabian_redchestnut"):
 			return 1214981718 /* GXTEntry: "Arabian~n~Red Chestnut Coat" */;
 		case joaat("a_c_horse_hungarianhalfbred_liverchestnut"):
@@ -74986,12 +74986,12 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			iVar0 = 25;
 			if (&Global_1951141->f_1657.f_1[iVar0 /*3*/] == &Global_1951141->f_81[iVar0 /*12*/])
 			{
-				*uParam2 = 2016241289;
+				*uParam2 = 2016241289; /* GXTEntry: "You must be wearing a bandolier for this." */
 				return 0;
 			}
 			if ((Global_1951141->f_1461.f_1[bParam1 /*9*/])->f_7 <= 1)
 			{
-				*uParam2 = 1391009982;
+				*uParam2 = 1391009982; /* GXTEntry: "Your bandolier does not support this." */
 				return 0;
 			}
 			break;
@@ -74999,7 +74999,7 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			iVar0 = 18;
 			if (&Global_1951141->f_1657.f_1[iVar0 /*3*/] == &Global_1951141->f_81[iVar0 /*12*/] || 698653232 == func_813(&(Global_1951141->f_1657.f_1[iVar0 /*3*/])))
 			{
-				*uParam2 = 524717989;
+				*uParam2 = 524717989; /* GXTEntry: "You must be wearing a corset for this." */
 				return 0;
 			}
 			iVar0 = 35;
@@ -75016,7 +75016,7 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			}
 			if ((Global_1951141->f_1461.f_1[bParam1 /*9*/])->f_7 <= 1)
 			{
-				*uParam2 = 710806085;
+				*uParam2 = 710806085; /* GXTEntry: "Your corset does not support this." */
 				return 0;
 			}
 			break;
@@ -75040,13 +75040,13 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			iVar0 = 20;
 			if (&Global_1951141->f_1657.f_1[iVar0 /*3*/] != &Global_1951141->f_81[iVar0 /*12*/] && func_560(&(Global_1951141->f_1657.f_1[iVar0 /*3*/]), -985549034))
 			{
-				*uParam2 = -15902206;
+				*uParam2 = -15902206; /* GXTEntry: "Your coat is covering your shirt collar." */
 				return 0;
 			}
 			iVar0 = 18;
 			if (&Global_1951141->f_1657.f_1[iVar0 /*3*/] != &Global_1951141->f_81[iVar0 /*12*/] && func_560(&(Global_1951141->f_1657.f_1[iVar0 /*3*/]), -985549034))
 			{
-				*uParam2 = -651987738;
+				*uParam2 = -651987738; /* GXTEntry: "Your vest is covering your shirt collar." */
 				return 0;
 			}
 			iVar0 = 16;
@@ -75057,7 +75057,7 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			}
 			if ((Global_1951141->f_1461.f_1[bParam1 /*9*/])->f_7 <= 1)
 			{
-				*uParam2 = -1379615715;
+				*uParam2 = -1379615715; /* GXTEntry: "Your shirt does not support this." */
 				return 0;
 			}
 			return 1;
@@ -75077,7 +75077,7 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			}
 			if ((Global_1951141->f_1461.f_1[bParam1 /*9*/])->f_7 <= 1)
 			{
-				*uParam2 = -1379615715;
+				*uParam2 = -1379615715; /* GXTEntry: "Your shirt does not support this." */
 				return 0;
 			}
 			return 1;
@@ -75085,7 +75085,7 @@ int func_2344(int iParam0, bool bParam1, var uParam2)
 			iVar0 = 36;
 			if (&Global_1951141->f_1657.f_1[iVar0 /*3*/] == &Global_1951141->f_81[iVar0 /*12*/])
 			{
-				*uParam2 = -279809718;
+				*uParam2 = -279809718; /* GXTEntry: "You must be wearing boots for this." */
 				return 0;
 			}
 			iVar0 = 34;
@@ -75641,7 +75641,7 @@ int func_2365(bool bParam0)
 			return joaat("a_c_horse_ardennes_bayroan");
 		case 1686036388: /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */
 			return joaat("a_c_horse_ardennes_strawberryroan");
-		case 2125477381:
+		case 2125477381: /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */
 			return joaat("a_c_horse_belgian_blondchestnut");
 		case 1808724704: /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */
 			return joaat("a_c_horse_belgian_mealychestnut");
@@ -75757,23 +75757,23 @@ int func_2365(bool bParam0)
 			return -647020346;
 		case -878000957: /* GXTEntry: "Kladruber~n~Silver Coat" */
 			return -1846319726;
-		case -2145947333:
+		case -2145947333: /* GXTEntry: "Norfolk Roadster~n~Black Coat" */
 			return 1007570567;
-		case 156528857:
+		case 156528857: /* GXTEntry: "Norfolk Roadster~n~Speckled Grey Coat" */
 			return 1029339151;
-		case -1240970285:
+		case -1240970285: /* GXTEntry: "Norfolk Roadster~n~Piebald Roan Coat" */
 			return -1424767799;
-		case -1933497088:
+		case -1933497088: /* GXTEntry: "Norfolk Roadster~n~Rose Grey Coat" */
 			return -217135948;
-		case -1116314766:
+		case -1116314766: /* GXTEntry: "Norfolk Roadster~n~Dappled Buckskin Coat" */
 			return -156439156;
-		case -877141885:
+		case -877141885: /* GXTEntry: "Norfolk Roadster~n~Spotted Tricolor Coat" */
 			return 1344011125;
 		case -285185056:
 			return joaat("a_c_donkey_01");
 		case -1692268955: /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */
 			return joaat("a_c_horse_appaloosa_blacksnowflake");
-		case 2130706226:
+		case 2130706226: /* GXTEntry: "Arabian~n~Grey Coat" */
 			return joaat("a_c_horse_arabian_grey");
 		case 1214981718: /* GXTEntry: "Arabian~n~Red Chestnut Coat" */
 			return joaat("a_c_horse_arabian_redchestnut");
@@ -77292,31 +77292,31 @@ int func_2441(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1346594033;
+			return 1346594033 /* GXTEntry: "Recent" */;
 		case -1559802791:
-			return -352057134;
+			return -352057134 /* GXTEntry: "Materials" */;
 		case -1268291907:
-			return 845736308;
+			return 845736308 /* GXTEntry: "Ingredients" */;
 		case -96974025:
-			return -2057617490;
+			return -2057617490 /* GXTEntry: "Tonics" */;
 		case -1666604090:
-			return 991808728;
+			return 991808728 /* GXTEntry: "Provisions" */;
 		case 1561961676:
-			return -92112048;
+			return -92112048 /* GXTEntry: "Valuables" */;
 		case -156634416:
-			return 2047707540;
+			return 2047707540 /* GXTEntry: "Kit" */;
 		case 1061777683:
-			return -36657802;
+			return -36657802 /* GXTEntry: "Documents" */;
 		case 1783698482:
-			return -1236163301;
+			return -1236163301 /* GXTEntry: "Collections" */;
 		case -283002878:
-			return 262409577;
+			return 262409577 /* GXTEntry: "Horse Cargo" */;
 		case -889932290:
-			return 668180388;
+			return 668180388 /* GXTEntry: "Wagon Cargo" */;
 		case -2074770370:
-			return 1643818657;
+			return 1643818657 /* GXTEntry: "Donations" */;
 		case -693134279:
-			return -1077706770;
+			return -1077706770 /* GXTEntry: "Postable Items" */;
 		case -182626652:
 			if ((Global_1915180->f_20136 || Global_1915180->f_21989.f_1) && (Global_1915180->f_19742 == 16 || Global_1915180->f_19742 == 29))
 			{
@@ -77324,7 +77324,7 @@ int func_2441(int iParam0)
 			}
 			else
 			{
-				return -161395681;
+				return -161395681 /* GXTEntry: "Sell" */;
 			}
 			break;
 	}
@@ -77967,7 +77967,7 @@ int func_2459(bool bParam0)
 		case -1850779170: /* GXTEntry: "Perfect Plucked Hawk Carcass" */
 			return -1440794801 /* GXTEntry: "Perfect Hawk Carcass" */;
 		case -121487803: /* GXTEntry: "Poor Plucked Hawk Carcass" */
-			return 2144711797;
+			return 2144711797 /* GXTEntry: "Poor Hawk Carcass" */;
 		case -1280499288: /* GXTEntry: "Good Skinned Heron Carcass" */
 			return 718825539 /* GXTEntry: "Good Heron Carcass" */;
 		case 820245961: /* GXTEntry: "Perfect Skinned Heron Carcass" */
@@ -78095,7 +78095,7 @@ int func_2459(bool bParam0)
 		case -955209948: /* GXTEntry: "Poor Plucked Seagull Carcass" */
 			return 431501574 /* GXTEntry: "Poor Seagull Carcass" */;
 		case 1459836898: /* GXTEntry: "Good Skinned Sheep Carcass" */
-			return 2126795269;
+			return 2126795269 /* GXTEntry: "Good Sheep Carcass" */;
 		case 303969766: /* GXTEntry: "Perfect Skinned Sheep Carcass" */
 			return 1489051752 /* GXTEntry: "Perfect Sheep Carcass" */;
 		case -1707588662: /* GXTEntry: "Poor Skinned Sheep Carcass" */
@@ -78645,7 +78645,7 @@ int func_2469(bool bParam0)
 			return 731537518 /* GXTEntry: "Goose" */;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 524696643 /* GXTEntry: "Hawk" */;
 		case -905842006: /* GXTEntry: "Poor Heron Carcass" */
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
@@ -78721,7 +78721,7 @@ int func_2469(bool bParam0)
 			return 1398366530;
 		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return -1427844561 /* GXTEntry: "Sheep" */;
 		case -2013445740: /* GXTEntry: "Good Skunk Carcass" */
 		case -1927342740: /* GXTEntry: "Poor Skunk Carcass" */
@@ -79071,7 +79071,7 @@ int func_2472(bool bParam0)
 			return -855155400;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return 1743453709;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 1743453709;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 			return 1743453709;
@@ -79229,7 +79229,7 @@ int func_2472(bool bParam0)
 			return -352732121;
 		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
 			return -352732121;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return -352732121;
 		case 102446365: /* GXTEntry: "Perfect Skunk Carcass" */
 			return 117556329;
@@ -79523,7 +79523,7 @@ int func_2472(bool bParam0)
 			return 1684561350;
 		case 463481876: /* GXTEntry: "Perfect Gila Monster Skin" */
 			return 1763709491;
-		case 2136062430:
+		case 2136062430: /* GXTEntry: "Poor Gila Monster Skin" */
 			return 1763709491;
 		case 95044528: /* GXTEntry: "Good Gila Monster Skin" */
 			return 1763709491;
@@ -80060,7 +80060,7 @@ int func_2489(bool bParam0)
 			return 2004662589;
 		case 95044528: /* GXTEntry: "Good Gila Monster Skin" */
 			return 432134278;
-		case 2136062430:
+		case 2136062430: /* GXTEntry: "Poor Gila Monster Skin" */
 			return 56287881;
 		case 463481876: /* GXTEntry: "Perfect Gila Monster Skin" */
 			return 2038260929;
@@ -80476,7 +80476,7 @@ int func_2489(bool bParam0)
 			return -759993020;
 		case -1559227925: /* GXTEntry: "Perfect Goose Carcass" */
 			return -1625595431;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return 1402002731;
 		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
 			return -893738363;
@@ -80592,7 +80592,7 @@ int func_2489(bool bParam0)
 			return 393351033;
 		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
 			return -755636829;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return -1849715375;
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
 			return -751278632;
@@ -83562,16 +83562,16 @@ int func_2581(int iParam0, int iParam1, var uParam2)
 {
 	if (!func_54(iParam0))
 	{
-		*uParam2 = -676468980;
+		*uParam2 = -676468980; /* GXTEntry: "Trains are currently unavailable." */
 		return 0;
 	}
 	if (!func_54(iParam1))
 	{
-		*uParam2 = -676468980;
+		*uParam2 = -676468980; /* GXTEntry: "Trains are currently unavailable." */
 		return 0;
 	}
 	return 0;
-	*uParam2 = 1510530693;
+	*uParam2 = 1510530693; /* GXTEntry: "Choose a destination to travel to" */
 	return 1;
 }
 
@@ -83680,9 +83680,9 @@ int func_2586(bool bParam0)
 	switch (bParam0)
 	{
 		case 882648233: /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[0] = 57366885; /* GXTEntry: "Bounty Hunter Grip" */
-			Global_1051388->f_46[1] = -880097252; /* GXTEntry: "Bounty Hunter Barrel" */
-			Global_1051388->f_46[2] = -1391305890; /* GXTEntry: "Bounty Hunter Sights" */
+			Global_1051388->f_46[0] = 57366885;
+			Global_1051388->f_46[1] = -880097252;
+			Global_1051388->f_46[2] = -1391305890;
 			Global_1051388->f_46[3] = 882648233; /* GXTEntry: "Bounty Hunter Variant" */
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
@@ -83692,10 +83692,10 @@ int func_2586(bool bParam0)
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
 		case -1814368974: /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[0] = 1043980328; /* GXTEntry: "Bounty Hunter Grain" */
+			Global_1051388->f_46[0] = 1043980328;
 			Global_1051388->f_46[1] = -1814368974; /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[2] = 1419411400; /* GXTEntry: "Wrap" */
-			Global_1051388->f_46[3] = 1905286511;
+			Global_1051388->f_46[2] = 1419411400; /* GXTEntry: "Leather Wrap" */
+			Global_1051388->f_46[3] = 1905286511; /* GXTEntry: "Cloth Wrap" */
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83704,8 +83704,8 @@ int func_2586(bool bParam0)
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
 		case -840678979: /* GXTEntry: "Collector Variant" */
-			Global_1051388->f_46[0] = -385288709; /* GXTEntry: "Collector Grain" */
-			Global_1051388->f_46[1] = 1799288707; /* GXTEntry: "Collector Wrap" */
+			Global_1051388->f_46[0] = -385288709;
+			Global_1051388->f_46[1] = 1799288707;
 			Global_1051388->f_46[2] = -840678979; /* GXTEntry: "Collector Variant" */
 			Global_1051388->f_46[3] = 0;
 			Global_1051388->f_46[4] = 0;
@@ -83716,9 +83716,9 @@ int func_2586(bool bParam0)
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
 		case -454335124: /* GXTEntry: "Collector Variant" */
-			Global_1051388->f_46[0] = -49512990; /* GXTEntry: "Collector Grip" */
-			Global_1051388->f_46[1] = -108436614; /* GXTEntry: "Collector Barrel" */
-			Global_1051388->f_46[2] = -858357099; /* GXTEntry: "Collector Sights" */
+			Global_1051388->f_46[0] = -49512990;
+			Global_1051388->f_46[1] = -108436614;
+			Global_1051388->f_46[2] = -858357099;
 			Global_1051388->f_46[3] = -454335124; /* GXTEntry: "Collector Variant" */
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
@@ -83728,35 +83728,35 @@ int func_2586(bool bParam0)
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
 		case -107914178: /* GXTEntry: "Trader Variant" */
-			Global_1051388->f_46[0] = -1850951144; /* GXTEntry: "Trader Grain" */
-			Global_1051388->f_46[1] = -169059359; /* GXTEntry: "Trader Grain" */
+			Global_1051388->f_46[0] = -1850951144;
+			Global_1051388->f_46[1] = -169059359;
 			Global_1051388->f_46[2] = -107914178; /* GXTEntry: "Trader Variant" */
-			Global_1051388->f_46[3] = 1509466794; /* GXTEntry: "Wrap" */
-			Global_1051388->f_46[4] = 930176412;
+			Global_1051388->f_46[3] = 1509466794; /* GXTEntry: "Leather Wrap" */
+			Global_1051388->f_46[4] = 930176412; /* GXTEntry: "Cloth Wrap" */
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -2141733109:
+		case -2141733109: /* GXTEntry: "Moonshiner Variant" */
 			Global_1051388->f_46[0] = 1772087572;
 			Global_1051388->f_46[1] = 537597023;
-			Global_1051388->f_46[2] = -2141733109;
-			Global_1051388->f_46[3] = 635989042; /* GXTEntry: "Wrap" */
-			Global_1051388->f_46[4] = -221706764;
+			Global_1051388->f_46[2] = -2141733109; /* GXTEntry: "Moonshiner Variant" */
+			Global_1051388->f_46[3] = 635989042; /* GXTEntry: "Leather Wrap" */
+			Global_1051388->f_46[4] = -221706764; /* GXTEntry: "Cloth Wrap" */
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -1468648029:
+		case -1468648029: /* GXTEntry: "Krampus Variant" */
 			Global_1051388->f_46[0] = -766495288;
 			Global_1051388->f_46[1] = -563652421;
-			Global_1051388->f_46[2] = -1468648029;
-			Global_1051388->f_46[3] = -240387438; /* GXTEntry: "Wrap" */
-			Global_1051388->f_46[4] = -470655201;
+			Global_1051388->f_46[2] = -1468648029; /* GXTEntry: "Krampus Variant" */
+			Global_1051388->f_46[3] = -240387438; /* GXTEntry: "Leather Wrap" */
+			Global_1051388->f_46[4] = -470655201; /* GXTEntry: "Cloth Wrap" */
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
@@ -90973,7 +90973,7 @@ int func_2805(int iParam0)
 			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
 		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
 			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
-		case 2144711797:
+		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
 			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
 		case 718825539: /* GXTEntry: "Good Heron Carcass" */
 			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
@@ -91101,7 +91101,7 @@ int func_2805(int iParam0)
 			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
 		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
 			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
-		case 2126795269:
+		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
 			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
 		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
 			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
@@ -94148,11 +94148,11 @@ int func_2886(int* iParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 		iVar5 = 0;
 		if (bParam1 == joaat("WEAPON_LASSO_REINFORCED"))
 		{
-			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 5, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 5, false, false);
 		}
 		else if (bParam1 == joaat("WEAPON_MELEE_MACHETE") || bParam1 == joaat("WEAPON_MELEE_MACHETE_COLLECTOR"))
 		{
-			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 13, false, false);
+			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 13, false, false);
 		}
 	}
 	if (func_585(bParam1, &bVar6))
@@ -99231,7 +99231,7 @@ int func_3098(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		bParam2 = true;
 	}
-	else if (bParam0 == joaat("weapon_unarmed"))
+	else if (bParam0 == joaat("WEAPON_UNARMED"))
 	{
 		return 0;
 	}
@@ -102166,7 +102166,7 @@ int func_3201(int iParam0, bool bParam1, int iParam2, int iParam3)
 			return 131;
 		case joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_SEASONAL_03"):
 			return 132;
-		case 1054660175:
+		case 1054660175: /* GXTEntry: "Standard 6" */
 			return 115;
 		case joaat("UPGRADE_CAMP_FOLLOWER_OUTFIT_GENERIC_07"):
 			return 116;
@@ -107258,22 +107258,22 @@ int func_3409(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1894830400:
-		case -1661502552:
-		case -1460119729:
-		case -1434186802:
-		case -1274632976:
-		case -1021077955:
-		case -766632829:
-		case -753201933:
-		case -226501431:
-		case 106537031:
-		case 335574348:
-		case 758990751:
-		case 938635888:
-		case 1130538400:
-		case 1940412283:
-		case 2108217528:
+		case -1894830400: /* GXTEntry: "Hunting Requests" */
+		case -1661502552: /* GXTEntry: "Letters" */
+		case -1460119729: /* GXTEntry: "Treasure Maps" */
+		case -1434186802: /* GXTEntry: "Photographs" */
+		case -1274632976: /* GXTEntry: "Collector\'s Maps" */
+		case -1021077955: /* GXTEntry: "Recipe Pamphlets" */
+		case -766632829: /* GXTEntry: "Newspaper Scraps" */
+		case -753201933: /* GXTEntry: "Business Cards" */
+		case -226501431: /* GXTEntry: "Newspapers" */
+		case 106537031: /* GXTEntry: "Dinosaur Notes" */
+		case 335574348: /* GXTEntry: "Rock Carving Notes" */
+		case 758990751: /* GXTEntry: "Books" */
+		case 938635888: /* GXTEntry: "Drawings" */
+		case 1130538400: /* GXTEntry: "Bounty Posters" */
+		case 1940412283: /* GXTEntry: "Maps" */
+		case 2108217528: /* GXTEntry: "Notes" */
 			return 1;
 	}
 	if (func_3433(iParam0))
@@ -107292,7 +107292,7 @@ int func_3411(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -883547903:
+		case -883547903: /* GXTEntry: "Watches" */
 			return 1;
 	}
 	return 0;
@@ -107307,21 +107307,21 @@ int func_3413(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1434404074:
-		case -1304157067:
-		case -1153279214:
-		case -907263478:
-		case -863446379:
-		case -743230903:
-		case -592101023:
-		case -193281342:
-		case -182347589:
-		case 13054047:
-		case 178390301:
-		case 634557535:
-		case 707002774:
-		case 1056119646:
-		case 1365509591:
+		case -1434404074: /* GXTEntry: "Cooked Game Bird Meat" */
+		case -1304157067: /* GXTEntry: "Cooked Big Game Meat" */
+		case -1153279214: /* GXTEntry: "Cooked Gristly Mutton" */
+		case -907263478: /* GXTEntry: "Cooked Herptile Meat" */
+		case -863446379: /* GXTEntry: "Cooked Succulent Fish" */
+		case -743230903: /* GXTEntry: "Cooked Stringy Meat" */
+		case -592101023: /* GXTEntry: "Cooked Mature Venison" */
+		case -193281342: /* GXTEntry: "Cooked Game Meat" */
+		case -182347589: /* GXTEntry: "Cooked Crustacean Meat" */
+		case 13054047: /* GXTEntry: "Cooked Flaky Fish" */
+		case 178390301: /* GXTEntry: "Cooked Plump Birds" */
+		case 634557535: /* GXTEntry: "Cooked Beef" */
+		case 707002774: /* GXTEntry: "Cooked Gritty Fish" */
+		case 1056119646: /* GXTEntry: "Cooked Tender Pork" */
+		case 1365509591: /* GXTEntry: "Cooked Exotic Birds" */
 			return 1;
 	}
 	return 0;
@@ -108171,18 +108171,18 @@ int func_3433(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1943756076:
-		case -763325020:
-		case -687000066:
-		case -280003847:
-		case -258175882:
-		case 433947044:
-		case 469223329:
-		case 1014101275:
-		case 1054139581:
-		case 1447083768:
-		case 1499469209:
-		case 2078973319:
+		case -1943756076: /* GXTEntry: "Cigarette Cards" */
+		case -763325020: /* GXTEntry: "Cigarette Cards" */
+		case -687000066: /* GXTEntry: "Cigarette Cards" */
+		case -280003847: /* GXTEntry: "Cigarette Cards" */
+		case -258175882: /* GXTEntry: "Cigarette Cards" */
+		case 433947044: /* GXTEntry: "Cigarette Cards" */
+		case 469223329: /* GXTEntry: "Cigarette Cards" */
+		case 1014101275: /* GXTEntry: "Cigarette Cards" */
+		case 1054139581: /* GXTEntry: "Cigarette Cards" */
+		case 1447083768: /* GXTEntry: "Cigarette Cards" */
+		case 1499469209: /* GXTEntry: "Cigarette Cards" */
+		case 2078973319: /* GXTEntry: "Cigarette Cards" */
 			return 1;
 	}
 	return 0;

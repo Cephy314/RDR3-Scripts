@@ -38,7 +38,7 @@ void __EntryFunction__()
 	if (!ENTITY::IS_ENTITY_DEAD(Global_34))
 	{
 		iVar0 = func_2(Global_34, 0);
-		if ((iVar0 != joaat("weapon_unarmed") && iVar0 != joaat("WEAPON_MELEE_TORCH")) && iVar0 != joaat("WEAPON_FISHINGROD"))
+		if ((iVar0 != joaat("WEAPON_UNARMED") && iVar0 != joaat("WEAPON_MELEE_TORCH")) && iVar0 != joaat("WEAPON_FISHINGROD"))
 		{
 			if (Global_17140 == 0)
 			{
@@ -55,7 +55,7 @@ void __EntryFunction__()
 		}
 		WEAPON::_0xFCCC886EDE3C63EC(Global_34, 2, 0);
 	}
-	PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), joaat("weapon_unarmed"), 0);
+	PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), joaat("WEAPON_UNARMED"), 0);
 	Global_1939231->f_10516 = 0;
 	Global_1939231->f_10517 = 0;
 	iVar2 = -1723036365;

@@ -1431,7 +1431,7 @@ void func_60()
 	bool bVar9;
 	int iVar10;
 
-	iVar0[0] = -774242862; /* GXTEntry: "Wróbel\'s Valuables" */
+	iVar0[0] = -774242862; /* GXTEntry: "Wr�bel\'s Valuables" */
 	iVar0[1] = -498064062; /* GXTEntry: "Lilly\'s Debt Money" */
 	iVar0[2] = -2100684454; /* GXTEntry: "Winton\'s Debt Money" */
 	iVar0[3] = joaat("money_loanshark_gwen_debt");
@@ -2284,7 +2284,7 @@ int func_101(int iParam0)
 			return 3800;
 		case 513694516: /* GXTEntry: "Chick\'s Debt Money" */
 			return 4000;
-		case -774242862: /* GXTEntry: "Wróbel\'s Valuables" */
+		case -774242862: /* GXTEntry: "Wr�bel\'s Valuables" */
 			return 4300;
 		default:
 			break;
@@ -2298,7 +2298,7 @@ int func_102(int iParam0)
 	{
 		case -2100684454: /* GXTEntry: "Winton\'s Debt Money" */
 		case joaat("money_loanshark_gwen_debt"):
-		case -774242862: /* GXTEntry: "Wróbel\'s Valuables" */
+		case -774242862: /* GXTEntry: "Wr�bel\'s Valuables" */
 		case -498064062: /* GXTEntry: "Lilly\'s Debt Money" */
 		case 396444962: /* GXTEntry: "Algie\'s Debt Money" */
 		case 513694516: /* GXTEntry: "Chick\'s Debt Money" */
@@ -3719,7 +3719,7 @@ void func_159(bool bParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
@@ -4088,7 +4088,7 @@ int func_173(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -4806,7 +4806,7 @@ void func_208(int iParam0)
 
 bool func_209(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 struct<4> func_210(bool bParam0)
@@ -5015,7 +5015,7 @@ int func_224(bool bParam0, bool bParam1, int iParam2)
 			bVar11 = joaat("PROVISION_RO_FLOWER_MOCCASIN");
 			break;
 		case 4:
-			bVar9 = 2116770557;
+			bVar9 = 2116770557; /* GXTEntry: "Gator Egg" */
 			bVar10 = joaat("PROVISION_RO_FLOWER_ACUNAS_STAR");
 			bVar11 = joaat("PROVISION_RO_FLOWER_CIGAR");
 			bVar12 = joaat("PROVISION_RO_FLOWER_GHOST");
@@ -5114,7 +5114,7 @@ int func_226(bool bParam0)
 			return 7;
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return 10;
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return 25;
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return 3;
@@ -5713,7 +5713,7 @@ char* func_241(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";
@@ -8483,7 +8483,7 @@ char* func_309(bool bParam0)
 			return "COL_RO_LADY_SLIPPER_FOUND";
 		case joaat("PROVISION_RO_FLOWER_MOCCASIN"):
 			return "COL_RO_MOCCASIN_FOUND";
-		case 2116770557:
+		case 2116770557: /* GXTEntry: "Gator Egg" */
 			return "COL_GF_FOUND";
 		case joaat("PROVISION_RO_FLOWER_ACUNAS_STAR"):
 			return "COL_RO_ACUNAS_STAR_FOUND";

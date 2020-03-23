@@ -663,7 +663,7 @@ int func_16()
 				}
 				func_44(&(uLocal_466[0]), 0, 1);
 				func_45(&(uLocal_466[0]));
-				func_46(&(uLocal_466[0]), 2120018935, 1, 0);
+				func_46(&(uLocal_466[0]), 2120018935 /* GXTEntry: "Lost Letter to Bonnie" */, 1, 0);
 				ENTITY::_0x8C03CD6B5E0E85E8(&(uLocal_466[0]), joaat("WASHED_ASHORE"));
 				PED::_0x6569F31A01B4C097(&(uLocal_466[0]), 0, true);
 				PED::_0x6569F31A01B4C097(&(uLocal_466[0]), 1, false);
@@ -920,7 +920,7 @@ int func_18()
 			}
 			break;
 		case 5:
-			func_72(&uLocal_642, &uLocal_662, Global_36, joaat("ui_letter_bonnie"), 2120018935, joaat("p_cs_letter03x"));
+			func_72(&uLocal_642, &uLocal_662, Global_36, joaat("ui_letter_bonnie"), 2120018935 /* GXTEntry: "Lost Letter to Bonnie" */, joaat("p_cs_letter03x"));
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 270819865))
 			{
 				PED::_0x2208438012482A1A(Global_35, false, false);
@@ -5357,7 +5357,7 @@ int func_156(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -9359,7 +9359,7 @@ int func_272(int iParam0)
 
 bool func_273(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 bool func_274()

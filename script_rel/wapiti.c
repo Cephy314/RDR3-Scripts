@@ -3323,7 +3323,7 @@ int func_116(bool bParam0, int iParam1, int iParam2)
 	{
 		switch (Global_1935630->f_44)
 		{
-			case joaat("weapon_unarmed"):
+			case joaat("WEAPON_UNARMED"):
 			case joaat("WEAPON_KIT_CAMERA"):
 			case joaat("WEAPON_KIT_DETECTOR"):
 				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != 1030835986)
@@ -3436,7 +3436,7 @@ void func_121()
 {
 	switch (Global_1935630->f_44)
 	{
-		case joaat("weapon_unarmed"):
+		case joaat("WEAPON_UNARMED"):
 		case joaat("WEAPON_FISHINGROD"):
 		case joaat("WEAPON_KIT_CAMERA"):
 		case joaat("WEAPON_MELEE_LANTERN"):
@@ -5468,7 +5468,7 @@ int func_220(int iParam0)
 	{
 		case 0:
 			return -1;
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return 1;
 		case 1142025875: /* GXTEntry: "Murder" */
 			return 2;
@@ -5840,7 +5840,7 @@ bool func_233()
 
 bool func_234(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 void func_235(int iParam0, int iParam1)
@@ -6265,7 +6265,7 @@ char* func_258(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2139774588:
+		case 2139774588: /* GXTEntry: "Loot Innocent" */
 			return "HONOR_EVENT_LOOT_INNOCENT";
 		case 1142025875: /* GXTEntry: "Murder" */
 			return "HONOR_EVENT_AMBIENT_KILL";

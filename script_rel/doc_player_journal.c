@@ -706,8 +706,8 @@ void __EntryFunction__()
 	PLAYER::_0x76F7E1BCD623A429(PLAYER::GET_PLAYER_INDEX());
 	if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 0, false, false);
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("weapon_unarmed"), true, 1, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 1, false, false);
 		if (PED::_0xD5FE956C70FF370B(Global_35))
 		{
 			PED::_0x7DE9692C6F64CFE8(Global_35, false, 0, 0);
@@ -920,7 +920,7 @@ int func_7(var uParam0)
 		case 1:
 			if (func_25(uParam0))
 			{
-				if (func_26(PLAYER::PLAYER_PED_ID(), 0, 1, 0) != joaat("weapon_unarmed") || func_26(PLAYER::PLAYER_PED_ID(), 1, 1, 0) != joaat("weapon_unarmed"))
+				if (func_26(PLAYER::PLAYER_PED_ID(), 0, 1, 0) != joaat("WEAPON_UNARMED") || func_26(PLAYER::PLAYER_PED_ID(), 1, 1, 0) != joaat("WEAPON_UNARMED"))
 				{
 					WEAPON::_0x94A3C1B804D291EC(Global_35, 1, 0, 1, 1);
 				}

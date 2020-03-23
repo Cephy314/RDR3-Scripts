@@ -68,7 +68,7 @@ void __EntryFunction__()
 				{
 					if (!Global_1939178->f_6)
 					{
-						if ((Var0.f_24 != joaat("weapon_unarmed") && Var0.f_25 != joaat("GROUP_PISTOL")) && Var0.f_25 != joaat("GROUP_REVOLVER"))
+						if ((Var0.f_24 != joaat("WEAPON_UNARMED") && Var0.f_25 != joaat("GROUP_PISTOL")) && Var0.f_25 != joaat("GROUP_REVOLVER"))
 						{
 							WEAPON::_0xFCCC886EDE3C63EC(Global_34, 2, 0);
 						}
@@ -563,7 +563,7 @@ int func_18(var uParam0)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 1971578095))
 	{
-		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("weapon_unarmed"), true, 0, false, false);
+		WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), true, 0, false, false);
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 2007785590))
 	{
@@ -1484,7 +1484,7 @@ int func_44(var uParam0, int iParam1, int iParam2, int iParam3)
 
 bool func_45(int iParam0)
 {
-	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("weapon_unarmed"));
+	return (WEAPON::IS_WEAPON_VALID(iParam0) && iParam0 != joaat("WEAPON_UNARMED"));
 }
 
 int func_46(int iParam0)
@@ -1732,7 +1732,7 @@ void func_56(int iParam0, var uParam1, var uParam2)
 			*uParam1 = joaat("repeater_ammo_box");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495:
+		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
 			*uParam1 = joaat("repeater_ammo_box_used");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;

@@ -377,22 +377,22 @@ int func_15(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1498871949:
-		case -1283370018:
+		case -1498871949: /* GXTEntry: "Tropical Punch Moonshine" */
+		case -1283370018: /* GXTEntry: "Wild Creek Moonshine" */
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_MEDIUM"):
-		case -818346432:
-		case -624685730:
-		case -610395813:
+		case -818346432: /* GXTEntry: "Berry Cobbler Moonshine" */
+		case -624685730: /* GXTEntry: "Poison Poppy\'s Moonshine" */
+		case -610395813: /* GXTEntry: "Berry Mint Moonshine" */
 		case -545779394:
-		case 348064119:
-		case 447784640:
+		case 348064119: /* GXTEntry: "Apple Berry Crumb Moonshine" */
+		case 447784640: /* GXTEntry: "Wild Cider Moonshine" */
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_LOW"):
 		case joaat("PROVISION_ROLE_MOONSHINER_MASH_HIGH"):
 		case 1532695640:
-		case 1739830455:
+		case 1739830455: /* GXTEntry: "Spiced Island Moonshine" */
 		case 1847740267:
-		case 1958345007:
-		case 2103594888:
+		case 1958345007: /* GXTEntry: "Agarita Sunrise Moonshine" */
+		case 2103594888: /* GXTEntry: "Evergreen Moonshine" */
 			return 0;
 	}
 	return 1;
@@ -570,21 +570,21 @@ void func_25(var uParam0)
 {
 	switch (*uParam0)
 	{
-		case -2109344034:
-		case -2053642092:
-		case -1806099704:
-		case -1563450693:
-		case -1499480171:
-		case -1437186306:
-		case -669703557:
-		case -30746180:
-		case 429428887:
-		case 812236345:
-		case 1023793009:
-		case 1271821570:
-		case 1454312131:
-		case 1879593571:
-		case 1934214136:
+		case -2109344034: /* GXTEntry: "Stew o\' the Earth" */
+		case -2053642092: /* GXTEntry: "Cowboy Bean Stew" */
+		case -1806099704: /* GXTEntry: "Guarma Stew" */
+		case -1563450693: /* GXTEntry: "Son of a Gun Stew" */
+		case -1499480171: /* GXTEntry: "Minty Lamb and Peas Stew" */
+		case -1437186306: /* GXTEntry: "Herbalist\'s Heaven" */
+		case -669703557: /* GXTEntry: "Fruit and Bird Medley" */
+		case -30746180: /* GXTEntry: "Fish o\' the Sea Stew" */
+		case 429428887: /* GXTEntry: "Chocolate Game Chilli" */
+		case 812236345: /* GXTEntry: "Venison and Mushroom Stew" */
+		case 1023793009: /* GXTEntry: "Cowpoke Supper" */
+		case 1271821570: /* GXTEntry: "Colter Hot-Pot" */
+		case 1454312131: /* GXTEntry: "Saint Denis Stew" */
+		case 1879593571: /* GXTEntry: "Pork and Apple Stew" */
+		case 1934214136: /* GXTEntry: "Drunkard\'s Lunch" */
 			func_49(1614000521, -179343615, 8100);
 			break;
 	}

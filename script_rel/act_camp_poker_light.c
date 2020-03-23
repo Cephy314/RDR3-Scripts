@@ -3052,7 +3052,7 @@ int func_126(int iParam0, int iParam1)
 {
 	if (iParam1 == -1891229662)
 	{
-		return func_185(0, func_184(iParam1, 1), 11, 2116153146);
+		return func_185(0, func_184(iParam1, 1), 11, 2116153146 /* GXTEntry: "High and Low Finance" */);
 	}
 	return func_185(0, func_184(iParam1, 1), 11, iParam1);
 }
