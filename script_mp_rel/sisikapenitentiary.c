@@ -5347,25 +5347,25 @@ int func_196(var uParam0)
 	}
 	switch (uParam0->f_18.f_5)
 	{
-		case -1976316465:
+		case joaat("REL_CIVMALE"):
 			return 10;
-		case 841021282:
+		case joaat("REL_CIVFEMALE"):
 			return 10;
-		case -350651841:
+		case joaat("REL_CIVNATIVE"):
 			return 10;
-		case -1683752762:
+		case joaat("REL_DOMESTICATED_ANIMAL"):
 			if (FLOCK::_0x3B005FF0538ED2A9(uParam0->f_18.f_2) == 1)
 			{
 				return 14;
 			}
 			return 10;
-		case -1329647920:
+		case joaat("REL_HEN_ANIMAL"):
 			return 10;
-		case 707888648:
+		case joaat("REL_COP"):
 			return 11;
-		case 106566339:
+		case joaat("REL_GUAMA_LAW"):
 			return 11;
-		case -50399569:
+		case joaat("REL_PINKERTONS"):
 			return 11;
 		case -767591988:
 			return 14;
@@ -5377,111 +5377,111 @@ int func_196(var uParam0)
 			return 15;
 		case -319516747:
 			return 15;
-		case 1269650476:
+		case joaat("REL_PLAYER_ENEMY"):
 			return 12;
-		case 1222652248:
+		case joaat("REL_CRIMINALS"):
 			return 12;
-		case -350226955:
+		case joaat("REL_GUNSLINGERS"):
 			return 12;
-		case 1030835986:
+		case joaat("REL_GANG_DUTCHS"):
 			return 12;
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 12;
-		case 266218800:
+		case joaat("REL_GANG_CREOLE"):
 			return 12;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 12;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 12;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 12;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 12;
-		case 1733741057:
+		case joaat("REL_NETWORK_FREE_AGENT"):
 			return 19;
-		case -2003007004:
+		case joaat("REL_GT_FFA"):
 			return 19;
-		case 1965820175:
+		case joaat("REL_GT_TEAM_0"):
 			return 19;
-		case -1164995627:
+		case joaat("REL_GT_TEAM_1"):
 			return 19;
-		case -1406404850:
+		case joaat("REL_GT_TEAM_2"):
 			return 19;
-		case 892340488:
+		case joaat("REL_GT_TEAM_3"):
 			return 19;
-		case 570352286:
+		case joaat("REL_GT_TEAM_4"):
 			return 19;
-		case 1809249877:
+		case joaat("REL_GT_TEAM_5"):
 			return 19;
-		case 1185197041:
+		case joaat("REL_GT_TEAM_6"):
 			return 19;
-		case -1901478918:
+		case joaat("REL_GT_TEAM_7"):
 			return 19;
-		case 2097877918:
+		case joaat("REL_PLAYER_COP"):
 			return 19;
-		case -1158905413:
+		case joaat("REL_PLAYER_0"):
 			return 19;
-		case 358397622:
+		case joaat("REL_PLAYER_1"):
 			return 19;
-		case 65999835:
+		case joaat("REL_PLAYER_2"):
 			return 19;
-		case 814443795:
+		case joaat("REL_PLAYER_3"):
 			return 19;
-		case 519621102:
+		case joaat("REL_PLAYER_4"):
 			return 19;
-		case -1628223003:
+		case joaat("REL_PLAYER_5"):
 			return 19;
-		case 1278256225:
+		case joaat("REL_PLAYER_6"):
 			return 19;
-		case 2038628101:
+		case joaat("REL_PLAYER_7"):
 			return 19;
-		case 1742494648:
+		case joaat("REL_PLAYER_8"):
 			return 19;
-		case -1010166918:
+		case joaat("REL_PLAYER_9"):
 			return 19;
-		case 660170868:
+		case joaat("REL_PLAYER_10"):
 			return 19;
-		case -1278312096:
+		case joaat("REL_PLAYER_11"):
 			return 19;
-		case -509158128:
+		case joaat("REL_PLAYER_12"):
 			return 19;
-		case -226656579:
+		case joaat("REL_PLAYER_13"):
 			return 19;
-		case 2115868159:
+		case joaat("REL_PLAYER_14"):
 			return 19;
-		case 1495813101:
+		case joaat("REL_PLAYER_15"):
 			return 19;
-		case 1197385818:
+		case joaat("REL_PLAYER_16"):
 			return 19;
-		case 1015780020:
+		case joaat("REL_PLAYER_17"):
 			return 19;
-		case -1286733825:
+		case joaat("REL_PLAYER_18"):
 			return 19;
-		case -1670393277:
+		case joaat("REL_PLAYER_19"):
 			return 19;
-		case -415733461:
+		case joaat("REL_PLAYER_20"):
 			return 19;
-		case -1207924036:
+		case joaat("REL_PLAYER_21"):
 			return 19;
-		case 497702414:
+		case joaat("REL_PLAYER_22"):
 			return 19;
-		case 719188085:
+		case joaat("REL_PLAYER_23"):
 			return 19;
-		case 43753457:
+		case joaat("REL_PLAYER_24"):
 			return 19;
-		case 771290791:
+		case joaat("REL_PLAYER_25"):
 			return 19;
-		case 20356387:
+		case joaat("REL_PLAYER_26"):
 			return 19;
-		case 309149584:
+		case joaat("REL_PLAYER_27"):
 			return 19;
-		case 1613781781:
+		case joaat("REL_PLAYER_28"):
 			return 19;
-		case 1693607065:
+		case joaat("REL_PLAYER_29"):
 			return 19;
-		case 1132176120:
+		case joaat("REL_PLAYER_30"):
 			return 19;
-		case 869270437:
+		case joaat("REL_PLAYER_31"):
 			return 19;
 		default:
 			break;
@@ -5558,21 +5558,21 @@ int func_197(var uParam0)
 	}
 	switch (iVar3)
 	{
-		case -1976316465:
+		case joaat("REL_CIVMALE"):
 			return 20;
-		case 841021282:
+		case joaat("REL_CIVFEMALE"):
 			return 20;
-		case -350651841:
+		case joaat("REL_CIVNATIVE"):
 			return 20;
-		case -1683752762:
+		case joaat("REL_DOMESTICATED_ANIMAL"):
 			return 20;
-		case -1329647920:
+		case joaat("REL_HEN_ANIMAL"):
 			return 20;
-		case 707888648:
+		case joaat("REL_COP"):
 			return 21;
-		case 106566339:
+		case joaat("REL_GUAMA_LAW"):
 			return 21;
-		case -50399569:
+		case joaat("REL_PINKERTONS"):
 			return 21;
 		case -767591988:
 			return 24;
@@ -5584,111 +5584,111 @@ int func_197(var uParam0)
 			return 25;
 		case -319516747:
 			return 25;
-		case 1269650476:
+		case joaat("REL_PLAYER_ENEMY"):
 			return 22;
-		case 1222652248:
+		case joaat("REL_CRIMINALS"):
 			return 22;
-		case -350226955:
+		case joaat("REL_GUNSLINGERS"):
 			return 22;
-		case 1030835986:
+		case joaat("REL_GANG_DUTCHS"):
 			return 22;
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 22;
-		case 266218800:
+		case joaat("REL_GANG_CREOLE"):
 			return 22;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 22;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 22;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 22;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 22;
-		case 1733741057:
+		case joaat("REL_NETWORK_FREE_AGENT"):
 			return 26;
-		case -2003007004:
+		case joaat("REL_GT_FFA"):
 			return 26;
-		case 1965820175:
+		case joaat("REL_GT_TEAM_0"):
 			return 26;
-		case -1164995627:
+		case joaat("REL_GT_TEAM_1"):
 			return 26;
-		case -1406404850:
+		case joaat("REL_GT_TEAM_2"):
 			return 26;
-		case 892340488:
+		case joaat("REL_GT_TEAM_3"):
 			return 26;
-		case 570352286:
+		case joaat("REL_GT_TEAM_4"):
 			return 26;
-		case 1809249877:
+		case joaat("REL_GT_TEAM_5"):
 			return 26;
-		case 1185197041:
+		case joaat("REL_GT_TEAM_6"):
 			return 26;
-		case -1901478918:
+		case joaat("REL_GT_TEAM_7"):
 			return 26;
-		case 2097877918:
+		case joaat("REL_PLAYER_COP"):
 			return 26;
-		case -1158905413:
+		case joaat("REL_PLAYER_0"):
 			return 26;
-		case 358397622:
+		case joaat("REL_PLAYER_1"):
 			return 26;
-		case 65999835:
+		case joaat("REL_PLAYER_2"):
 			return 26;
-		case 814443795:
+		case joaat("REL_PLAYER_3"):
 			return 26;
-		case 519621102:
+		case joaat("REL_PLAYER_4"):
 			return 26;
-		case -1628223003:
+		case joaat("REL_PLAYER_5"):
 			return 26;
-		case 1278256225:
+		case joaat("REL_PLAYER_6"):
 			return 26;
-		case 2038628101:
+		case joaat("REL_PLAYER_7"):
 			return 26;
-		case 1742494648:
+		case joaat("REL_PLAYER_8"):
 			return 26;
-		case -1010166918:
+		case joaat("REL_PLAYER_9"):
 			return 26;
-		case 660170868:
+		case joaat("REL_PLAYER_10"):
 			return 26;
-		case -1278312096:
+		case joaat("REL_PLAYER_11"):
 			return 26;
-		case -509158128:
+		case joaat("REL_PLAYER_12"):
 			return 26;
-		case -226656579:
+		case joaat("REL_PLAYER_13"):
 			return 26;
-		case 2115868159:
+		case joaat("REL_PLAYER_14"):
 			return 26;
-		case 1495813101:
+		case joaat("REL_PLAYER_15"):
 			return 26;
-		case 1197385818:
+		case joaat("REL_PLAYER_16"):
 			return 26;
-		case 1015780020:
+		case joaat("REL_PLAYER_17"):
 			return 26;
-		case -1286733825:
+		case joaat("REL_PLAYER_18"):
 			return 26;
-		case -1670393277:
+		case joaat("REL_PLAYER_19"):
 			return 26;
-		case -415733461:
+		case joaat("REL_PLAYER_20"):
 			return 26;
-		case -1207924036:
+		case joaat("REL_PLAYER_21"):
 			return 26;
-		case 497702414:
+		case joaat("REL_PLAYER_22"):
 			return 26;
-		case 719188085:
+		case joaat("REL_PLAYER_23"):
 			return 26;
-		case 43753457:
+		case joaat("REL_PLAYER_24"):
 			return 26;
-		case 771290791:
+		case joaat("REL_PLAYER_25"):
 			return 26;
-		case 20356387:
+		case joaat("REL_PLAYER_26"):
 			return 26;
-		case 309149584:
+		case joaat("REL_PLAYER_27"):
 			return 26;
-		case 1613781781:
+		case joaat("REL_PLAYER_28"):
 			return 26;
-		case 1693607065:
+		case joaat("REL_PLAYER_29"):
 			return 26;
-		case 1132176120:
+		case joaat("REL_PLAYER_30"):
 			return 26;
-		case 869270437:
+		case joaat("REL_PLAYER_31"):
 			return 26;
 		default:
 			break;

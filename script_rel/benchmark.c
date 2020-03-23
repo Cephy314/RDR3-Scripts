@@ -3870,7 +3870,7 @@ int func_125(var uParam0)
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_18, true);
 					ENTITY::_SET_ENTITY_COORDS_AND_HEADING(uParam0->f_16, func_280(), 102.26f, true, false, true);
 					uParam0->f_35 = ENTITY::_0x4735E2A4BB83D9DA(uParam0->f_33);
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_16, -1538724068);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_16, joaat("REL_PLAYER_ALLY"));
 					MISC::CLEAR_AREA(2859.193f, -1203.106f, 51.45742f, 5f, 1048576);
 					func_283(uParam0);
 					func_278(uParam0, 3);
@@ -4673,7 +4673,7 @@ int func_167(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -7138,7 +7138,7 @@ int func_286(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -7178,7 +7178,7 @@ int func_286(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -7487,8 +7487,8 @@ int func_296(var uParam0)
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_66, true);
 				ENTITY::SET_ENTITY_INVINCIBLE(uParam0->f_65, true);
 				ENTITY::SET_ENTITY_INVINCIBLE(uParam0->f_66, true);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_65, 1269650476);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_66, 1269650476);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_65, joaat("REL_PLAYER_ENEMY"));
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_66, joaat("REL_PLAYER_ENEMY"));
 				PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_66, 111, true);
 				PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_66, 57, true);
 				func_460(uParam0, 5);
@@ -7724,12 +7724,12 @@ int func_297(var uParam0)
 		case 9:
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_69))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_69, 1269650476);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_69, joaat("REL_PLAYER_ENEMY"));
 				TASK::TASK_COMBAT_PED(uParam0->f_69, uParam0->f_16, 0, 0);
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_70))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_70, 1269650476);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_70, joaat("REL_PLAYER_ENEMY"));
 				TASK::TASK_COMBAT_PED(uParam0->f_70, uParam0->f_16, 0, 0);
 			}
 			func_471(uParam0, 10);
@@ -11434,7 +11434,7 @@ void func_457(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}

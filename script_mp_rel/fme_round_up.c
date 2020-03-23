@@ -12615,7 +12615,7 @@ int func_634(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -16211,7 +16211,7 @@ void func_718(var uParam0, int iParam1)
 		case joaat("injured"):
 			func_1041(uParam0, iParam1);
 			break;
-		case 1324097645:
+		case joaat("SURRENDER"):
 			func_1042(uParam0, iParam1);
 			break;
 		case 1866880973:
@@ -19130,7 +19130,7 @@ void func_860(var uParam0, var uParam1, int iParam2)
 		case joaat("injured"):
 			func_1167(uParam0, uParam1, iParam2);
 			break;
-		case 1324097645:
+		case joaat("SURRENDER"):
 			func_1168(uParam0, uParam1, iParam2);
 			break;
 		case 1866880973:
@@ -20478,7 +20478,7 @@ void func_899()
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(&(Local_0.f_67[iVar0 /*40*/])) && NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID(&(Local_0.f_67[iVar0 /*40*/])))
 		{
 			iVar1 = NETWORK::NET_TO_PED(&(Local_0.f_67[iVar0 /*40*/]));
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, -1976316465);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, joaat("REL_CIVMALE"));
 		}
 		iVar0++;
 	}
@@ -25753,7 +25753,7 @@ void func_1168(var uParam0, var uParam1, int iParam2)
 	float fVar1;
 	int iVar2;
 
-	if ((uParam0->f_67[iParam2 /*40*/])->f_4 != 1324097645)
+	if (uParam0->f_67[iParam2 /*40*/])->f_4 != joaat("SURRENDER")
 	{
 		func_1358(uParam1, iParam2, (uParam0->f_67[iParam2 /*40*/])->f_4);
 	}

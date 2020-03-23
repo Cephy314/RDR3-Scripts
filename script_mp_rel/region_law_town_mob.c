@@ -508,7 +508,7 @@ void func_13()
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_50[iVar0]), 0, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_50[iVar0]), 58, true);
 			PED::_0x815C0074A1BC0D93(&(iLocal_50[iVar0]), 0);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_50[iVar0]), 1622308690);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_50[iVar0]), joaat("REL_TOWN_MOB"));
 			PED::REGISTER_TARGET(&(iLocal_50[iVar0]), Global_34, 1);
 			PED::SET_PED_ACCURACY(&(iLocal_50[iVar0]), 60);
 			PED::SET_PED_CONFIG_FLAG(&(iLocal_50[iVar0]), 279, true);

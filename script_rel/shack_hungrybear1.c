@@ -4105,7 +4105,7 @@ int func_142(var uParam0, var uParam1, int iParam2)
 	{
 		ENTITY::SET_ENTITY_AS_MISSION_ENTITY(*uParam0, true, true);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, -1976316465);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, joaat("REL_CIVMALE"));
 		PED::SET_PED_CONFIG_FLAG(*uParam0, 6, true);
 		func_209(uParam0, 0);
 		func_210(uParam0, 0);
@@ -4679,7 +4679,7 @@ int func_176(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 

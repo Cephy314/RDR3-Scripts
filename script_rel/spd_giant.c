@@ -1204,21 +1204,21 @@ void func_48(int iParam0, bool bParam1)
 		case 0:
 			if (bParam1)
 			{
-				func_79(joaat("journal_special_peds_agnes_dowd_ar"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_AGNES_DOWD_AR"), 0);
 			}
 			else
 			{
-				func_79(joaat("journal_special_peds_agnes_dowd_jn"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_AGNES_DOWD_JN"), 0);
 			}
 			break;
 		case 4:
 			if (bParam1)
 			{
-				func_79(joaat("journal_special_peds_cassidy_ar"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_CASSIDY_AR"), 0);
 			}
 			else
 			{
-				func_79(joaat("journal_special_peds_cassidy_jn"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_CASSIDY_JN"), 0);
 			}
 			break;
 		case 5:
@@ -1228,27 +1228,27 @@ void func_48(int iParam0, bool bParam1)
 			}
 			else if (func_80(55))
 			{
-				func_79(joaat("journal_rc_crkpt4_1b_jn"), 0);
+				func_79(joaat("JOURNAL_RC_CRKPT4_1B_JN"), 0);
 			}
 			else
 			{
-				func_79(joaat("journal_rc_crkpt4_1a_jn"), 0);
+				func_79(joaat("JOURNAL_RC_CRKPT4_1A_JN"), 0);
 			}
 			break;
 		case 12:
 			if (bParam1)
 			{
-				func_79(joaat("journal_special_peds_giant_ar"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_GIANT_AR"), 0);
 			}
 			else
 			{
-				func_79(joaat("journal_special_peds_giant_jn"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_GIANT_JN"), 0);
 			}
 			break;
 		case 20:
 			if (bParam1)
 			{
-				func_79(joaat("journal_special_peds_philosopher_cave_ar"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_PHILOSOPHER_CAVE_AR"), 0);
 			}
 			else
 			{
@@ -1262,17 +1262,17 @@ void func_48(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_79(joaat("journal_special_peds_tree_monkey_jn"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_TREE_MONKEY_JN"), 0);
 			}
 			break;
 		case 28:
 			if (bParam1)
 			{
-				func_79(joaat("journal_special_peds_cabin_hermit_ar"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_CABIN_HERMIT_AR"), 0);
 			}
 			else
 			{
-				func_79(joaat("journal_special_peds_cabin_hermit_jn"), 0);
+				func_79(joaat("JOURNAL_SPECIAL_PEDS_CABIN_HERMIT_JN"), 0);
 			}
 			break;
 		default:

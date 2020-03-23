@@ -361,11 +361,11 @@ int func_12(var uParam0)
 				Global_40.f_9045.f_6 = 1;
 				if (func_29())
 				{
-					iVar0 = joaat("journal_town_secret_annesburg_ar");
+					iVar0 = joaat("JOURNAL_TOWN_SECRET_ANNESBURG_AR");
 				}
 				else
 				{
-					iVar0 = joaat("journal_town_secret_annesburg_jn");
+					iVar0 = joaat("JOURNAL_TOWN_SECRET_ANNESBURG_JN");
 				}
 				func_30(iVar0, 0);
 				if (func_31())

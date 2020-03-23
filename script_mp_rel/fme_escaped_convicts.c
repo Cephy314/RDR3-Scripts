@@ -9476,9 +9476,9 @@ void func_455()
 	PED::ADD_RELATIONSHIP_GROUP(&cVar0, &(Local_2203.f_1144));
 	func_768(2, Local_2203.f_1144, iVar4);
 	func_768(2, Local_2203.f_1144, Local_2203.f_1145);
-	func_768(2, iVar4, -1976316465);
-	func_768(2, iVar4, 841021282);
-	func_768(2, iVar4, 707888648);
+	func_768(2, iVar4, joaat("REL_CIVMALE"));
+	func_768(2, iVar4, joaat("REL_CIVFEMALE"));
+	func_768(2, iVar4, joaat("REL_COP"));
 }
 
 void func_456()
@@ -13367,7 +13367,7 @@ int func_654(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -15062,7 +15062,7 @@ void func_734(int iParam0, int iParam1)
 		case joaat("injured"):
 			func_1099(iParam0, iParam1);
 			break;
-		case 1324097645:
+		case joaat("SURRENDER"):
 			func_1100(iParam0, iParam1);
 			break;
 		case joaat("combat"):
@@ -16163,25 +16163,25 @@ void func_769(int iParam0)
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar1, true);
 	if (iVar0 == joaat("enemy"))
 	{
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, func_1137(iVar0), 707888648);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, 707888648, func_1137(iVar0));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, func_1137(iVar0), joaat("REL_COP"));
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("REL_COP"), func_1137(iVar0));
 		if (iVar3 == 3)
 		{
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, func_1137(iVar0), -1976316465);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(8, -1976316465, func_1137(iVar0));
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, func_1137(iVar0), 841021282);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(8, 841021282, func_1137(iVar0));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, func_1137(iVar0), joaat("REL_CIVMALE"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(8, joaat("REL_CIVMALE"), func_1137(iVar0));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, func_1137(iVar0), joaat("REL_CIVFEMALE"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(8, joaat("REL_CIVFEMALE"), func_1137(iVar0));
 		}
 		else
 		{
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, func_1137(iVar0), -1976316465);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(7, -1976316465, func_1137(iVar0));
-			func_768(6, func_1137(iVar0), 841021282);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, func_1137(iVar0), joaat("REL_CIVMALE"));
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(7, joaat("REL_CIVMALE"), func_1137(iVar0));
+			func_768(6, func_1137(iVar0), joaat("REL_CIVFEMALE"));
 		}
 		func_768(6, func_1137(iVar0), iVar2);
-		ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iVar1, false, 707888648);
-		ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iVar1, false, -1976316465);
-		ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iVar1, false, 841021282);
+		ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iVar1, false, joaat("REL_COP"));
+		ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iVar1, false, joaat("REL_CIVMALE"));
+		ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(iVar1, false, joaat("REL_CIVFEMALE"));
 		ENTITY::_0xFF83AF534156B399(iVar1, 1);
 	}
 }
@@ -18585,7 +18585,7 @@ void func_891(int iParam0, int iParam1, int iParam2)
 		case joaat("injured"):
 			func_1260(iParam0, iParam1, iParam2);
 			break;
-		case 1324097645:
+		case joaat("SURRENDER"):
 			func_1261(iParam0, iParam1, iParam2);
 			break;
 		case joaat("combat"):
@@ -20386,11 +20386,11 @@ void func_949()
 			iVar1 = NETWORK::NET_TO_PED(&(Local_0.f_1[iVar0 /*18*/]));
 			if (Local_0.f_1[iVar0 /*18*/])->f_12 == joaat("guard")
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, 707888648);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, joaat("REL_COP"));
 			}
 			else
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, -1976316465);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, joaat("REL_CIVMALE"));
 			}
 		}
 		iVar0++;
@@ -23463,7 +23463,7 @@ void func_1094(var uParam0, int iParam1)
 		else if (iVar4 == 2)
 		{
 			func_1422(&Local_794, 256, iParam1);
-			func_1418(uParam0, iParam1, 1324097645);
+			func_1418(uParam0, iParam1, joaat("SURRENDER"));
 		}
 		else if (iVar4 != 0)
 		{
@@ -23485,7 +23485,7 @@ void func_1094(var uParam0, int iParam1)
 			}
 			else
 			{
-				func_1418(uParam0, iParam1, 1324097645);
+				func_1418(uParam0, iParam1, joaat("SURRENDER"));
 			}
 		}
 	}
@@ -23569,7 +23569,7 @@ void func_1095(var uParam0, int iParam1)
 		}
 		else
 		{
-			func_1418(uParam0, iParam1, 1324097645);
+			func_1418(uParam0, iParam1, joaat("SURRENDER"));
 		}
 	}
 }
@@ -23588,7 +23588,7 @@ void func_1096(var uParam0, int iParam1)
 	iVar2 = PLAYER::GET_PLAYER_PED(func_1420(ENTITY::GET_ENTITY_COORDS(iVar0, true, false), &fVar1, 1176255488 /* Float: 9999f */, iVar0, 0));
 	if (func_1421(&Local_794, 64, iParam1))
 	{
-		func_1418(uParam0, iParam1, 1324097645);
+		func_1418(uParam0, iParam1, joaat("SURRENDER"));
 	}
 	else if (func_1421(&Local_794, 256, iParam1))
 	{
@@ -23651,7 +23651,7 @@ void func_1097(var uParam0, int iParam1)
 	}
 	else if (((((func_1421(&Local_794, 64, iParam1) && iVar3 != -888025197) && iVar3 != 1960511636) && iVar3 != 383511963) && iVar3 != 1573098355) && iVar3 != joaat("sniper"))
 	{
-		func_1418(uParam0, iParam1, 1324097645);
+		func_1418(uParam0, iParam1, joaat("SURRENDER"));
 	}
 	else if ((((((uParam0->f_1[iParam1 /*18*/])->f_7 != joaat("combat") && (fVar1 <= 4.5f || (PED::_0xA911EE21EDF69DAF(iVar2) && fVar1 <= (4.5f * 1.5f)))) || ((uParam0->f_1[iParam1 /*18*/])->f_7 == joaat("combat") && (fVar1 <= (4.5f / 2f) || (PED::_0xA911EE21EDF69DAF(iVar2) && fVar1 <= 4.5f)))) && PED::_0x336B3D200AB007CB(iVar2, ENTITY::GET_ENTITY_COORDS(iVar2, true, false), 4.5f, 0) < 2) && fVar7 > 20f) && (iVar3 == 1955843275 || iVar3 == 383511963))
 	{
@@ -23729,7 +23729,7 @@ void func_1098(var uParam0, int iParam1)
 		}
 		else
 		{
-			func_1418(uParam0, iParam1, 1324097645);
+			func_1418(uParam0, iParam1, joaat("SURRENDER"));
 		}
 	}
 }
@@ -24246,7 +24246,7 @@ void func_1109(var uParam0, int iParam1)
 	else if (func_1421(&Local_794, 64, iParam1) && iVar4 != 0)
 	{
 		func_1422(&Local_794, 64, iParam1);
-		func_1418(uParam0, iParam1, 1324097645);
+		func_1418(uParam0, iParam1, joaat("SURRENDER"));
 	}
 }
 
@@ -24364,7 +24364,7 @@ void func_1112(var uParam0, int iParam1)
 		}
 		else
 		{
-			func_1418(uParam0, iParam1, 1324097645);
+			func_1418(uParam0, iParam1, joaat("SURRENDER"));
 		}
 	}
 }
@@ -27448,7 +27448,7 @@ void func_1261(var uParam0, var uParam1, int iParam2)
 	float fVar1;
 	int iVar2;
 
-	if ((uParam0->f_1[iParam2 /*18*/])->f_6 != 1324097645)
+	if (uParam0->f_1[iParam2 /*18*/])->f_6 != joaat("SURRENDER")
 	{
 		func_1498(uParam1, iParam2, (uParam0->f_1[iParam2 /*18*/])->f_6);
 	}

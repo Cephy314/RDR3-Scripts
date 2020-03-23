@@ -102,7 +102,7 @@ void func_1()
 				{
 					PED::SET_PED_CONFIG_FLAG(&(iLocal_46[iVar1]), 156, false);
 				}
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_46[iVar1]), -1976316465);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_46[iVar1]), joaat("REL_CIVMALE"));
 			}
 			func_7(iLocal_46[iVar1], 1, 0, 1);
 		}
@@ -626,7 +626,7 @@ void func_17()
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_46[iVar0]), 0, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_46[iVar0]), 58, true);
 			PED::_0x815C0074A1BC0D93(&(iLocal_46[iVar0]), 0);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_46[iVar0]), 1622308690);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_46[iVar0]), joaat("REL_TOWN_MOB"));
 			PED::REGISTER_TARGET(&(iLocal_46[iVar0]), Global_35, 1);
 			PED::SET_PED_ACCURACY(&(iLocal_46[iVar0]), 60);
 			PED::SET_PED_CONFIG_FLAG(&(iLocal_46[iVar0]), 279, true);

@@ -2271,21 +2271,21 @@ void func_55(int iParam0, var uParam1, var uParam2, int iParam3)
 			((*uParam2)[0 /*32*/])->f_1 = joaat("g_m_m_unimountainmen_01");
 			(*uParam2)[0 /*32*/] = 22;
 			((*uParam2)[0 /*32*/])->f_3 = 1883215998;
-			((*uParam2)[0 /*32*/])->f_31 = -1448293989;
+			((*uParam2)[0 /*32*/])->f_31 = joaat("REL_GANG_SKINNER_BROTHERS");
 			StringCopy(&(((*uParam2)[0 /*32*/])->f_23), "0258_G_M_M_UniMountainMen_02_WHITE_02", 64);
 			((*uParam2)[0 /*32*/])->f_6 = { -2.37f, -0.17f, 0f };
 			func_202(&(((*uParam2)[0 /*32*/])->f_22));
 			((*uParam2)[1 /*32*/])->f_1 = joaat("g_m_m_unimountainmen_01");
 			(*uParam2)[1 /*32*/] = 22;
 			((*uParam2)[1 /*32*/])->f_3 = -2104935151;
-			((*uParam2)[1 /*32*/])->f_31 = -1448293989;
+			((*uParam2)[1 /*32*/])->f_31 = joaat("REL_GANG_SKINNER_BROTHERS");
 			StringCopy(&(((*uParam2)[1 /*32*/])->f_23), "0260_G_M_M_UniMountainMen_03_NATIVE_02", 64);
 			((*uParam2)[1 /*32*/])->f_6 = { -2.11f, -2.62f, 0f };
 			func_202(&(((*uParam2)[1 /*32*/])->f_22));
 			((*uParam2)[2 /*32*/])->f_1 = joaat("g_m_m_unimountainmen_01");
 			(*uParam2)[2 /*32*/] = 22;
 			((*uParam2)[2 /*32*/])->f_3 = -1789762909;
-			((*uParam2)[2 /*32*/])->f_31 = -1448293989;
+			((*uParam2)[2 /*32*/])->f_31 = joaat("REL_GANG_SKINNER_BROTHERS");
 			StringCopy(&(((*uParam2)[2 /*32*/])->f_23), "0259_G_M_M_UniMountainMen_03_NATIVE_01", 64);
 			((*uParam2)[2 /*32*/])->f_6 = { 2.23f, -1.79f, 0f };
 			func_202(&(((*uParam2)[2 /*32*/])->f_22));
@@ -2309,14 +2309,14 @@ void func_55(int iParam0, var uParam1, var uParam2, int iParam3)
 			((*uParam2)[0 /*32*/])->f_1 = joaat("g_m_m_unimountainmen_01");
 			(*uParam2)[0 /*32*/] = 22;
 			((*uParam2)[0 /*32*/])->f_3 = 1883215998;
-			((*uParam2)[0 /*32*/])->f_31 = -1448293989;
+			((*uParam2)[0 /*32*/])->f_31 = joaat("REL_GANG_SKINNER_BROTHERS");
 			StringCopy(&(((*uParam2)[0 /*32*/])->f_23), "0255_G_M_M_UniMountainMen_01_WHITE_01", 64);
 			((*uParam2)[0 /*32*/])->f_6 = { -2.37f, -0.17f, 0f };
 			func_202(&(((*uParam2)[0 /*32*/])->f_22));
 			((*uParam2)[1 /*32*/])->f_1 = joaat("g_m_m_unimountainmen_01");
 			(*uParam2)[1 /*32*/] = 22;
 			((*uParam2)[1 /*32*/])->f_3 = -2104935151;
-			((*uParam2)[1 /*32*/])->f_31 = -1448293989;
+			((*uParam2)[1 /*32*/])->f_31 = joaat("REL_GANG_SKINNER_BROTHERS");
 			StringCopy(&(((*uParam2)[1 /*32*/])->f_23), "0256_G_M_M_UniMountainMen_01_WHITE_02", 64);
 			((*uParam2)[1 /*32*/])->f_6 = { -2.11f, -2.62f, 0f };
 			((*uParam2)[1 /*32*/])->f_10 = 1;
@@ -2324,7 +2324,7 @@ void func_55(int iParam0, var uParam1, var uParam2, int iParam3)
 			((*uParam2)[2 /*32*/])->f_1 = joaat("g_m_m_unimountainmen_01");
 			(*uParam2)[2 /*32*/] = 22;
 			((*uParam2)[2 /*32*/])->f_3 = -1789762909;
-			((*uParam2)[2 /*32*/])->f_31 = -1448293989;
+			((*uParam2)[2 /*32*/])->f_31 = joaat("REL_GANG_SKINNER_BROTHERS");
 			StringCopy(&(((*uParam2)[2 /*32*/])->f_23), "0257_G_M_M_UniMountainMen_02_WHITE_01", 64);
 			((*uParam2)[2 /*32*/])->f_6 = { 3.21f, -5.06f, 0f };
 			func_202(&(((*uParam2)[2 /*32*/])->f_22));
@@ -7814,7 +7814,7 @@ int func_245(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -7854,7 +7854,7 @@ int func_245(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -12742,17 +12742,17 @@ int func_374(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;
@@ -15049,7 +15049,7 @@ void func_437(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -15363,7 +15363,7 @@ int func_453(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -22715,19 +22715,19 @@ int func_722(int iParam0, int iParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -23425,13 +23425,13 @@ int func_750(int iParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

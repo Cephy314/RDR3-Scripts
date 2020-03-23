@@ -11516,7 +11516,7 @@ int func_396(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -11879,7 +11879,7 @@ void func_413(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -14892,7 +14892,7 @@ bool func_561(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 				return bParam1;
 			}
 			bVar0 = bParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(bVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -14932,7 +14932,7 @@ bool func_561(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 		{
 			bVar22 = true;
 		}
-		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -15811,7 +15811,7 @@ void func_589(var uParam0, vector3 vParam1, int iParam4, bool bParam5)
 			func_545(uParam0, Local_643.f_2, "RHNTN_RockVillager", 1);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_643.f_2, true);
 			PED::SET_PED_CAN_BE_TARGETTED(Local_643.f_2, false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_643.f_2, -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_643.f_2, joaat("REL_PLAYER_ALLY"));
 			PED::SET_PED_CONFIG_FLAG(Local_643.f_2, 138, true);
 			if (bParam5)
 			{
@@ -15833,7 +15833,7 @@ void func_590(var uParam0, vector3 vParam1, int iParam4, bool bParam5)
 			func_545(uParam0, Local_653.f_2, "RHNTN_Fisherman", 1);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_653.f_2, true);
 			PED::SET_PED_CAN_BE_TARGETTED(Local_653.f_2, false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_653.f_2, -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_653.f_2, joaat("REL_PLAYER_ALLY"));
 			TASK::SET_PED_PATH_MAY_ENTER_WATER(Local_653.f_2, true);
 			PED::SET_PED_CONFIG_FLAG(Local_653.f_2, 265, false);
 			PED::SET_PED_CONFIG_FLAG(Local_653.f_2, 138, true);
@@ -19006,15 +19006,15 @@ int func_724(bool bParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = 0;
-	if (LAW::_0x76CF93D4B416B288(752193127) < 2)
+	if (LAW::_0x76CF93D4B416B288(joaat("BountyHuntersGlobalCooldown")) < 2)
 	{
-		iVar0 = (LAW::_0x76CF93D4B416B288(752193127) + iParam1);
+		iVar0 = (LAW::_0x76CF93D4B416B288(joaat("BountyHuntersGlobalCooldown")) + iParam1);
 	}
 	if (iVar0 < 0)
 	{
 		iVar0 = 0;
 	}
-	LAW::_0xF19706B1F8FFA88F(752193127, iVar0);
+	LAW::_0xF19706B1F8FFA88F(joaat("BountyHuntersGlobalCooldown"), iVar0);
 	func_396(bParam0);
 	return 1;
 }
@@ -19078,16 +19078,16 @@ void func_729(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 67:
-			func_1110(joaat("JOURNAL_ENTRY_CHAP8_ABIGAIL2x1_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP8_ABIGAIL2X1_1"), iParam1);
 			break;
 		case 18:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_BRAITHWAITE1_1"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_BRAITHWAITE1_2"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_BRAITHWAITE1_4"), iParam1);
-			func_1110(joaat("journal_gt_braithwaites_1"), iParam1);
+			func_1110(joaat("JOURNAL_GT_BRAITHWAITES_1"), iParam1);
 			break;
 		case 20:
-			func_1110(joaat("journal_gt_braithwaites_2"), iParam1);
+			func_1110(joaat("JOURNAL_GT_BRAITHWAITES_2"), iParam1);
 			break;
 		case 2:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP1_ODRISCOLL1_1"), iParam1);
@@ -19143,9 +19143,9 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_GRAYS1_3"), iParam1);
 			break;
 		case 19:
-			func_1110(joaat("journal_entry_chap3_grays2_1"), iParam1);
-			func_1110(joaat("journal_entry_chap3_grays2_2"), iParam1);
-			func_1110(joaat("journal_gt_grays_2"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP3_GRAYS2_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP3_GRAYS2_2"), iParam1);
+			func_1110(joaat("JOURNAL_GT_GRAYS_2"), iParam1);
 			break;
 		case 21:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_GRAYS3_1"), iParam1);
@@ -19162,13 +19162,13 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_INDUSTRY1_4"), iParam1);
 			break;
 		case 34:
-			func_1110(joaat("journal_gt_industry_3"), iParam1);
+			func_1110(joaat("JOURNAL_GT_INDUSTRY_3"), iParam1);
 			break;
 		case 64:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP8_LARAMIE1_1"), iParam1);
 			break;
 		case 60:
-			func_1110(joaat("journal_chap8_pronghorn"), iParam1);
+			func_1110(joaat("JOURNAL_CHAP8_PRONGHORN"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP8_MARSTON1_2"), iParam1);
 			break;
 		case 73:
@@ -19202,22 +19202,22 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case 27:
-			func_1110(joaat("journal_entry_chap4_mob1_1"), iParam1);
-			func_1110(joaat("journal_entry_chap4_mob1_2"), iParam1);
-			func_1110(joaat("journal_entry_chap4_mob1_3"), iParam1);
-			func_1110(joaat("journal_entry_chap4_mob1_4"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB1_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB1_2"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB1_3"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB1_4"), iParam1);
 			break;
 		case 28:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB2_1"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB2_2"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB2_3"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB2_4"), iParam1);
-			func_1110(joaat("journal_gt_mob_2"), iParam1);
+			func_1110(joaat("JOURNAL_GT_MOB_2"), iParam1);
 			break;
 		case 29:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB3_1"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB3_2"), iParam1);
-			func_1110(joaat("journal_gt_mob_3"), iParam1);
+			func_1110(joaat("JOURNAL_GT_MOB_3"), iParam1);
 			break;
 		case 31:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB5_1"), iParam1);
@@ -19226,7 +19226,7 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MOB5_4"), iParam1);
 			break;
 		case 4:
-			func_1110(joaat("journal_chap2_horseshoe"), iParam1);
+			func_1110(joaat("JOURNAL_CHAP2_HORSESHOE"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_MUDTOWN1_2"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_MUDTOWN1_3"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_MUDTOWN1_5"), iParam1);
@@ -19248,20 +19248,20 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case 25:
-			func_1110(joaat("journal_gt_mudtown_3b"), iParam1);
+			func_1110(joaat("JOURNAL_GT_MUDTOWN_3B"), iParam1);
 			break;
 		case 24:
 			if (&Global_1357515 == -1)
 			{
-				func_1110(joaat("journal_gt_mudtwon_5_5000"), iParam1);
+				func_1110(joaat("JOURNAL_GT_MUDTWON_5_5000"), iParam1);
 			}
 			else if (&Global_1357515 == 0)
 			{
-				func_1110(joaat("journal_gt_mudtwon_5_7500"), iParam1);
+				func_1110(joaat("JOURNAL_GT_MUDTWON_5_7500"), iParam1);
 			}
 			else if (&Global_1357515 == 1)
 			{
-				func_1110(joaat("journal_gt_mudtwon_5_10000"), iParam1);
+				func_1110(joaat("JOURNAL_GT_MUDTWON_5_10000"), iParam1);
 			}
 			break;
 		case 48:
@@ -19295,7 +19295,7 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case 58:
-			func_1110(joaat("journal_gt_native_3"), iParam1);
+			func_1110(joaat("JOURNAL_GT_NATIVE_3"), iParam1);
 			break;
 		case 50:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_NATIVESON1_1"), iParam1);
@@ -19349,7 +19349,7 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case 37:
-			func_1110(joaat("journal_gt_saint_denis_1"), iParam1);
+			func_1110(joaat("JOURNAL_GT_SAINT_DENIS_1"), iParam1);
 			break;
 		case 9:
 			if (&Global_1357515 == -1)
@@ -19368,7 +19368,7 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_SEAN1_3"), iParam1);
 			break;
 		case 53:
-			func_1110(joaat("journal_gt_cornwall_1"), iParam1);
+			func_1110(joaat("JOURNAL_GT_CORNWALL_1"), iParam1);
 			break;
 		case 54:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_TRAINROBBERY1_1"), iParam1);
@@ -19378,14 +19378,14 @@ void func_729(int iParam0, int iParam1, int iParam2)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_TRAINROBBERY3_3"), iParam1);
 			break;
 		case 57:
-			func_1110(joaat("journal_gt_train_robbery_4"), iParam1);
+			func_1110(joaat("JOURNAL_GT_TRAIN_ROBBERY_4"), iParam1);
 			break;
 		case 22:
-			func_1110(joaat("journal_entry_chap3_trelawny1_1"), iParam1);
-			func_1110(joaat("journal_entry_chap3_trelawny1_2"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP3_TRELAWNY1_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP3_TRELAWNY1_2"), iParam1);
 			break;
 		case 12:
-			func_1110(joaat("journal_gt_utopia_2"), iParam1);
+			func_1110(joaat("JOURNAL_GT_UTOPIA_2"), iParam1);
 			break;
 		case 0:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP1_WINTER1_1"), iParam1);
@@ -19399,14 +19399,14 @@ void func_729(int iParam0, int iParam1, int iParam2)
 		case 3:
 			if (func_759())
 			{
-				if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("journal_gt_winter_4")))
+				if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_GT_WINTER_4")))
 				{
 					func_1110(joaat("JOURNAL_GT_WINTER_4_SE"), iParam1);
 				}
 			}
 			else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_GT_WINTER_4_SE")))
 			{
-				func_1110(joaat("journal_gt_winter_4"), iParam1);
+				func_1110(joaat("JOURNAL_GT_WINTER_4"), iParam1);
 			}
 			break;
 		default:
@@ -19424,14 +19424,14 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_ABIGAIL1_4"), iParam1);
 			break;
 		case 1:
-			func_1110(joaat("JOURNAL_ENTRY_CHAP9_ABIGAIL2x2_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP9_ABIGAIL2X2_1"), iParam1);
 			break;
 		case 2:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP9_ABIGAIL3_1"), iParam1);
 			break;
 		case 9:
-			func_1110(joaat("journal_chap9_beechershope"), iParam1);
-			func_1110(joaat("JOURNAL_ENTRY_CHAP9_BEECHERS1x3_1"), iParam1);
+			func_1110(joaat("JOURNAL_CHAP9_BEECHERSHOPE"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP9_BEECHERS1X3_1"), iParam1);
 			if (func_469(((*Global_1835011)[69 /*74*/])->f_1, 1))
 			{
 				func_1110(joaat("JOURNAL_ENTRY_BEECHERS_DEBT_1A"), iParam1);
@@ -19442,7 +19442,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 22:
-			func_1110(joaat("JOURNAL_ENTRY_CHAP4_CALDERON1x1_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP4_CALDERON1X1_1"), iParam1);
 			break;
 		case 26:
 			if (bParam3 == 1)
@@ -19460,7 +19460,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			if (bParam3 == 1)
 			{
 				func_1110(joaat("JOURNAL_RC_CALLOWAY_3_1_AR"), iParam1);
-				func_1110(joaat("journal_rc_calloway_3_2_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_CALLOWAY_3_2_AR"), iParam1);
 			}
 			else if (func_1112(26))
 			{
@@ -19550,13 +19550,13 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			break;
 		case 37:
-			func_1110(joaat("journal_gt_coach_rob_rsc"), iParam1);
+			func_1110(joaat("JOURNAL_GT_COACH_ROB_RSC"), iParam1);
 			break;
 		case 53:
 			if (bParam3 == 1)
 			{
 				func_1110(joaat("JOURNAL_RC_CRKPT1_1_AR"), iParam1);
-				func_1110(joaat("journal_rc_crkpt1_2_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_CRKPT1_2_AR"), iParam1);
 			}
 			else
 			{
@@ -19595,7 +19595,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_cig1_1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_CIG1_1_JN"), iParam1);
 			}
 			break;
 		case 39:
@@ -19627,11 +19627,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			{
 				if (func_463(((*Global_1835011)[33 /*74*/])->f_1) == 1)
 				{
-					func_1110(joaat("journal_rc_exotic1_1b_ar_a"), iParam1);
+					func_1110(joaat("JOURNAL_RC_EXOTIC1_1B_AR_A"), iParam1);
 				}
 				else
 				{
-					func_1110(joaat("journal_rc_exotic1_1a_ar_a"), iParam1);
+					func_1110(joaat("JOURNAL_RC_EXOTIC1_1A_AR_A"), iParam1);
 				}
 			}
 			else
@@ -19642,7 +19642,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 		case 45:
 			if (bParam3 == 1)
 			{
-				func_1110(joaat("journal_rc_exotic3_1_ar_a"), iParam1);
+				func_1110(joaat("JOURNAL_RC_EXOTIC3_1_AR_A"), iParam1);
 			}
 			else if (func_1112(43))
 			{
@@ -19650,7 +19650,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_exotic3_1_jn_a"), iParam1);
+				func_1110(joaat("JOURNAL_RC_EXOTIC3_1_JN_A"), iParam1);
 			}
 			break;
 		case 41:
@@ -19666,11 +19666,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 		case 42:
 			if (func_1112(41))
 			{
-				func_1110(joaat("journal_rc_fish2_1_jn_b"), iParam1);
+				func_1110(joaat("JOURNAL_RC_FISH2_1_JN_B"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_fish2_1_jn_a"), iParam1);
+				func_1110(joaat("JOURNAL_RC_FISH2_1_JN_A"), iParam1);
 			}
 			break;
 		case 49:
@@ -19686,16 +19686,16 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 		case 50:
 			if (bParam3 == 1)
 			{
-				func_1110(joaat("journal_rc_rockcarv2_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_ROCKCARV2_AR"), iParam1);
 			}
 			else if (func_1112(49))
 			{
-				func_1110(joaat("journal_rc_rockcarv2_jn_b"), iParam1);
+				func_1110(joaat("JOURNAL_RC_ROCKCARV2_JN_B"), iParam1);
 				func_1110(joaat("JOURNAL_RC_ROCKCARV2_JN_B2"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_rockcarv2_jn_a"), iParam1);
+				func_1110(joaat("JOURNAL_RC_ROCKCARV2_JN_A"), iParam1);
 			}
 			break;
 		case 51:
@@ -19721,7 +19721,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			break;
 		case 63:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_ODRISCOLL2_2B"), iParam1);
-			func_1110(joaat("journal_gt_odriscoll_2"), iParam1);
+			func_1110(joaat("JOURNAL_GT_ODRISCOLL_2"), iParam1);
 			break;
 		case 65:
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_ODRISCOLL6_1"), iParam1);
@@ -19730,19 +19730,19 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_ODRISCOLL6_4"), iParam1);
 			break;
 		case 66:
-			func_1110(joaat("journal_chap3_clemens"), iParam1);
+			func_1110(joaat("JOURNAL_CHAP3_CLEMENS"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_DUTCH1_1"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_DUTCH1_2"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP2_DUTCH1_3"), iParam1);
 			func_1111(1);
 			break;
 		case 67:
-			func_1110(joaat("journal_chap4_shadybelle"), iParam1);
+			func_1110(joaat("JOURNAL_CHAP4_SHADYBELLE"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_DUTCH2_1"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP3_DUTCH2_2"), iParam1);
 			break;
 		case 68:
-			func_1110(joaat("journal_chap6_beaverhollow"), iParam1);
+			func_1110(joaat("JOURNAL_CHAP6_BEAVERHOLLOW"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_DUTCH3_2"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_DUTCH3_2B"), iParam1);
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_DUTCH3_3"), iParam1);
@@ -19752,13 +19752,13 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_1110(joaat("JOURNAL_ENTRY_CHAP6_EDITHDOWNE2_1"), iParam1);
 			break;
 		case 71:
-			func_1110(joaat("journal_rc_miller1_jn"), iParam1);
+			func_1110(joaat("JOURNAL_RC_MILLER1_JN"), iParam1);
 			break;
 		case 73:
-			func_1110(joaat("journal_rc_miller3_jn"), iParam1);
+			func_1110(joaat("JOURNAL_RC_MILLER3_JN"), iParam1);
 			break;
 		case 75:
-			func_1110(joaat("journal_rc_miller4_jn"), iParam1);
+			func_1110(joaat("JOURNAL_RC_MILLER4_JN"), iParam1);
 			break;
 		case 77:
 			if (bParam3 == 1)
@@ -19774,7 +19774,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			if (bParam3 == 1)
 			{
 				func_1110(joaat("JOURNAL_RC_FMA3_1_AR"), iParam1);
-				func_1110(joaat("journal_rc_fma3_2_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_FMA3_2_AR"), iParam1);
 			}
 			else if (func_1112(78))
 			{
@@ -19846,7 +19846,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_hkk1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_HKK1_JN"), iParam1);
 			}
 			break;
 		case 92:
@@ -19868,7 +19868,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_hkk5_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_HKK5_JN"), iParam1);
 			}
 			break;
 		case 94:
@@ -19881,10 +19881,10 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			{
 				func_1110(joaat("JOURNAL_ENTRY_CHAP2_HOMEROBBERY0_2B"), iParam1);
 			}
-			func_1110(joaat("journal_gt_home_rob"), iParam1);
+			func_1110(joaat("JOURNAL_GT_HOME_ROB"), iParam1);
 			break;
 		case 99:
-			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MARY3x1_1"), iParam1);
+			func_1110(joaat("JOURNAL_ENTRY_CHAP4_MARY3X1_1"), iParam1);
 			break;
 		case 101:
 			if (bParam3 == 1)
@@ -19892,7 +19892,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 				func_1110(joaat("JOURNAL_RC_MASON1_1_AR"), iParam1);
 				if (&Global_1357515 == -1)
 				{
-					func_1110(joaat("journal_rc_mason1_2_ar_b"), iParam1);
+					func_1110(joaat("JOURNAL_RC_MASON1_2_AR_B"), iParam1);
 				}
 				else
 				{
@@ -19928,7 +19928,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 		case 104:
 			if (bParam3 == 1)
 			{
-				func_1110(joaat("journal_rc_mason4_1_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MASON4_1_AR"), iParam1);
 				func_1110(joaat("JOURNAL_RC_MASON4_2_AR"), iParam1);
 			}
 			else if (func_1112(103))
@@ -19961,11 +19961,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			if (bParam3 == 1)
 			{
 				func_1110(joaat("JOURNAL_RC_MAYOR1_AR"), iParam1);
-				func_1110(joaat("journal_rc_mayor1_ar_b"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR1_AR_B"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_mayor1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR1_JN"), iParam1);
 				func_1110(joaat("JOURNAL_RC_MAYOR1B_JN"), iParam1);
 			}
 			break;
@@ -19976,11 +19976,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else if (func_1112(109))
 			{
-				func_1110(joaat("journal_rc_mayor2b_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR2B_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_mayor2a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR2A_JN"), iParam1);
 			}
 			break;
 		case 111:
@@ -19999,22 +19999,22 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			{
 				if (&Global_1357515 == 0)
 				{
-					func_1110(joaat("journal_rc_mayor3c_jn"), iParam1);
+					func_1110(joaat("JOURNAL_RC_MAYOR3C_JN"), iParam1);
 				}
 				else
 				{
-					func_1110(joaat("journal_rc_mayor3d_jn"), iParam1);
-					func_1110(joaat("journal_rc_mayor3d_2_jn"), iParam1);
+					func_1110(joaat("JOURNAL_RC_MAYOR3D_JN"), iParam1);
+					func_1110(joaat("JOURNAL_RC_MAYOR3D_2_JN"), iParam1);
 				}
 			}
 			else if (&Global_1357515 == 0)
 			{
-				func_1110(joaat("journal_rc_mayor3a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR3A_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_mayor3b_jn"), iParam1);
-				func_1110(joaat("journal_rc_mayor3b_2_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR3B_JN"), iParam1);
+				func_1110(joaat("JOURNAL_RC_MAYOR3B_2_JN"), iParam1);
 			}
 			break;
 		case 115:
@@ -20028,7 +20028,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_oddf1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_ODDF1_JN"), iParam1);
 			}
 			break;
 		case 144:
@@ -20038,14 +20038,14 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_oddf2_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_ODDF2_JN"), iParam1);
 			}
 			break;
 		case 117:
 			if (bParam3 == 1)
 			{
 				func_1110(joaat("JOURNAL_RC_OHBRO1_1_AR"), iParam1);
-				func_1110(joaat("journal_rc_ohbro1_2_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_OHBRO1_2_AR"), iParam1);
 			}
 			else
 			{
@@ -20087,7 +20087,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_pw1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_PW1_JN"), iParam1);
 			}
 			break;
 		case 122:
@@ -20097,11 +20097,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else if (func_1112(121))
 			{
-				func_1110(joaat("journal_rc_pw3b_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_PW3B_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_pw3a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_PW3A_JN"), iParam1);
 			}
 			break;
 		case 124:
@@ -20111,11 +20111,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else if (func_1112(122))
 			{
-				func_1110(joaat("journal_rc_pw4b_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_PW4B_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_pw4a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_PW4A_JN"), iParam1);
 			}
 			break;
 		case 125:
@@ -20126,7 +20126,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_pw5_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_PW5_JN"), iParam1);
 				func_1110(joaat("JOURNAL_RC_PW5B_JN"), iParam1);
 			}
 			break;
@@ -20137,7 +20137,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			func_1110(joaat("JOURNAL_RC_RTL3_AR"), iParam1);
 			break;
 		case 131:
-			func_1110(joaat("journal_rc_rtl5_ar"), iParam1);
+			func_1110(joaat("JOURNAL_RC_RTL5_AR"), iParam1);
 			break;
 		case 133:
 			func_1110(joaat("JOURNAL_RC_RTL7_AR"), iParam1);
@@ -20161,20 +20161,20 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			{
 				if (&Global_1357515 == -1)
 				{
-					func_1110(joaat("journal_rc_killer4a_jn"), iParam1);
+					func_1110(joaat("JOURNAL_RC_KILLER4A_JN"), iParam1);
 				}
 				else
 				{
-					func_1110(joaat("journal_rc_killer4b_jn"), iParam1);
+					func_1110(joaat("JOURNAL_RC_KILLER4B_JN"), iParam1);
 				}
 			}
 			else if (&Global_1357515 == -1)
 			{
-				func_1110(joaat("journal_rc_killer4c_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_KILLER4C_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_killer4d_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_KILLER4D_JN"), iParam1);
 			}
 			break;
 		case 136:
@@ -20184,24 +20184,24 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_slvc1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_SLVC1_JN"), iParam1);
 			}
 			break;
 		case 137:
 			if (bParam3 == 1)
 			{
 				func_1110(joaat("JOURNAL_RC_SLVC2_AR"), iParam1);
-				func_1110(joaat("journal_rc_slvc3a_ar"), iParam1);
+				func_1110(joaat("JOURNAL_RC_SLVC3A_AR"), iParam1);
 			}
 			else if (func_1112(136))
 			{
-				func_1110(joaat("journal_rc_slvc2b_jn"), iParam1);
-				func_1110(joaat("journal_rc_slvc3c_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_SLVC2B_JN"), iParam1);
+				func_1110(joaat("JOURNAL_RC_SLVC3C_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_slvc2a_jn"), iParam1);
-				func_1110(joaat("journal_rc_slvc3a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_SLVC2A_JN"), iParam1);
+				func_1110(joaat("JOURNAL_RC_SLVC3A_JN"), iParam1);
 			}
 			break;
 		case 142:
@@ -20243,7 +20243,7 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_warvet1_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET1_JN"), iParam1);
 			}
 			break;
 		case 148:
@@ -20253,11 +20253,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else if (func_1112(147))
 			{
-				func_1110(joaat("journal_rc_warvet2b_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET2B_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_warvet2a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET2A_JN"), iParam1);
 			}
 			break;
 		case 149:
@@ -20267,11 +20267,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else if (func_1112(148))
 			{
-				func_1110(joaat("journal_rc_warvet3b_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET3B_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_warvet3a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET3A_JN"), iParam1);
 			}
 			break;
 		case 150:
@@ -20281,11 +20281,11 @@ void func_730(int iParam0, int iParam1, int iParam2, bool bParam3)
 			}
 			else if (func_1112(149))
 			{
-				func_1110(joaat("journal_rc_warvet4b_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET4B_JN"), iParam1);
 			}
 			else
 			{
-				func_1110(joaat("journal_rc_warvet4a_jn"), iParam1);
+				func_1110(joaat("JOURNAL_RC_WARVET4A_JN"), iParam1);
 			}
 			break;
 		default:
@@ -26691,7 +26691,7 @@ void func_941(int iParam0, bool bParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -27030,7 +27030,7 @@ void func_959(var uParam0, var uParam1, bool bParam2, vector3 vParam3, int iPara
 				func_544(*uParam1, -1183379522);
 			}
 			EVENT::SET_DECISION_MAKER(*uParam1, 568783903);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, 1269650476);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, joaat("REL_PLAYER_ENEMY"));
 			PED::_SET_PED_SCALE(*uParam1, MISC::GET_RANDOM_FLOAT_IN_RANGE(1.1f, 1.3f));
 			func_1380(*uParam1, iParam7, -1, 0, 0, -1082130432 /* Float: -1f */);
 			PED::SET_PED_FLEE_ATTRIBUTES(*uParam1, 512, true);
@@ -59008,19 +59008,19 @@ int func_1950(bool bParam0, var uParam1, bool bParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -59662,13 +59662,13 @@ int func_1978(var uParam0, bool bParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

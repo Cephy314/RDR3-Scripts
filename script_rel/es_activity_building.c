@@ -1654,7 +1654,7 @@ int func_78(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -2265,7 +2265,7 @@ int func_111(var uParam0, vector3 vParam1, vector3 vParam4, bool bParam7, vector
 	func_171(&(uParam0->f_4), 8);
 	func_171(&(uParam0->f_4), 16);
 	uParam0->f_6 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam1, vParam4, 20f, 10f, 10f, "volFriendly");
-	VOLUME::_0xFD010A2154B40676(uParam0->f_6, 1030835986);
+	VOLUME::_0xFD010A2154B40676(uParam0->f_6, joaat("REL_GANG_DUTCHS"));
 	uParam0->f_9 = OBJECT::CREATE_OBJECT(func_108(3), vParam1, true, true, false, false, true);
 	uParam0->f_10 = OBJECT::CREATE_OBJECT(func_108(4), vParam1, true, true, false, false, true);
 	uParam0->f_11 = OBJECT::CREATE_OBJECT(func_108(5), vParam1, true, true, false, false, true);

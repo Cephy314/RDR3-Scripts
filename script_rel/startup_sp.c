@@ -6728,7 +6728,7 @@ int func_179(bool bParam0, bool bParam1)
 	if (func_310(94263042))
 	{
 		func_302(-1499162505);
-		func_302(1916362667);
+		func_302(joaat("amb_camp_grz_finale2"));
 		if (func_310(-2106445152))
 		{
 			func_313(-1832103801);
@@ -6747,7 +6747,7 @@ int func_179(bool bParam0, bool bParam1)
 	else
 	{
 		func_313(-1499162505);
-		func_313(1916362667);
+		func_313(joaat("amb_camp_grz_finale2"));
 		func_313(-1832103801);
 		func_314(230);
 		func_328("fin2_micah_hideout");
@@ -6836,57 +6836,57 @@ int func_179(bool bParam0, bool bParam1)
 	if (func_310(1306158345))
 	{
 		func_313(943998860);
-		func_313(1949854427);
+		func_313(joaat("carni_nbd_kittykitty_brokewagon01"));
 		func_313(580700069);
 		func_313(1347068672);
 		func_328("HKK_Trashed_Wagons");
 		func_328("HKK_Part_Fixed");
 		func_328("HKK_Camp_Only");
-		func_343(1949854427);
+		func_343(joaat("carni_nbd_kittykitty_brokewagon01"));
 	}
 	else if (func_310(1952610440))
 	{
 		func_313(943998860);
-		func_302(1949854427);
+		func_302(joaat("carni_nbd_kittykitty_brokewagon01"));
 		func_302(580700069);
 		func_302(1347068672);
 		func_328("HKK_Part_Fixed");
 		func_328("HKK_Camp_Only");
 		func_327("HKK_Trashed_Wagons");
-		func_344(1949854427);
+		func_344(joaat("carni_nbd_kittykitty_brokewagon01"));
 	}
 	else if (func_310(-223469678))
 	{
 		func_302(943998860);
-		func_302(1949854427);
+		func_302(joaat("carni_nbd_kittykitty_brokewagon01"));
 		func_313(580700069);
 		func_313(1347068672);
 		func_328("HKK_Trashed_Wagons");
 		func_328("HKK_Camp_Only");
 		func_327("HKK_Part_Fixed");
-		func_344(1949854427);
+		func_344(joaat("carni_nbd_kittykitty_brokewagon01"));
 	}
 	else if (func_310(-404698347))
 	{
 		func_302(943998860);
-		func_313(1949854427);
+		func_313(joaat("carni_nbd_kittykitty_brokewagon01"));
 		func_313(580700069);
 		func_313(1347068672);
 		func_328("HKK_Trashed_Wagons");
 		func_328("HKK_Part_Fixed");
 		func_327("HKK_Camp_Only");
-		func_344(1949854427);
+		func_344(joaat("carni_nbd_kittykitty_brokewagon01"));
 	}
 	else if (func_310(1517904467))
 	{
 		func_313(943998860);
-		func_313(1949854427);
+		func_313(joaat("carni_nbd_kittykitty_brokewagon01"));
 		func_313(580700069);
 		func_313(1347068672);
 		func_328("HKK_Trashed_Wagons");
 		func_328("HKK_Part_Fixed");
 		func_328("HKK_Camp_Only");
-		func_343(1949854427);
+		func_343(joaat("carni_nbd_kittykitty_brokewagon01"));
 	}
 	if (func_310(-1405998267))
 	{
@@ -7361,13 +7361,13 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	if (func_310(1410198831))
 	{
-		func_302(-1132206051);
-		func_344(-1132206051);
+		func_302(joaat("reg_hrt_hunting02"));
+		func_344(joaat("reg_hrt_hunting02"));
 	}
 	else
 	{
-		func_313(-1132206051);
-		func_343(-1132206051);
+		func_313(joaat("reg_hrt_hunting02"));
+		func_343(joaat("reg_hrt_hunting02"));
 	}
 	if (func_310(-538889627))
 	{
@@ -7932,11 +7932,11 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	if (func_310(651395116))
 	{
-		func_302(1989203268);
+		func_302(joaat("dis_scm_00_kieran_grave"));
 	}
 	else
 	{
-		func_313(1989203268);
+		func_313(joaat("dis_scm_00_kieran_grave"));
 	}
 	if (func_310(1488286867))
 	{
@@ -8149,27 +8149,27 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	if (func_310(1186594126))
 	{
-		func_302(-1382351182);
+		func_302(joaat("cvb_murdertree"));
 	}
 	else
 	{
-		func_313(-1382351182);
+		func_313(joaat("cvb_murdertree"));
 	}
 	if (func_310(469053995))
 	{
-		func_302(1263244828);
+		func_302(joaat("m_07_p_murderrock"));
 	}
 	else
 	{
-		func_313(1263244828);
+		func_313(joaat("m_07_p_murderrock"));
 	}
 	if (func_310(476714362))
 	{
-		func_302(-1773409329);
+		func_302(joaat("m_09_p_campfiremurder"));
 	}
 	else
 	{
-		func_313(-1773409329);
+		func_313(joaat("m_09_p_campfiremurder"));
 	}
 	if (func_310(1947931439))
 	{
@@ -8195,19 +8195,19 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	if (func_310(1050128548))
 	{
-		func_302(-1453850836);
+		func_302(joaat("re_sp_savagewarning_01"));
 	}
 	else
 	{
-		func_313(-1453850836);
+		func_313(joaat("re_sp_savagewarning_01"));
 	}
 	if (func_310(868326136))
 	{
-		func_302(2006850489);
+		func_302(joaat("re_sp_savagewarning_02"));
 	}
 	else
 	{
-		func_313(2006850489);
+		func_313(joaat("re_sp_savagewarning_02"));
 	}
 	if (func_310(-515561750))
 	{
@@ -8236,16 +8236,16 @@ int func_179(bool bParam0, bool bParam1)
 	{
 		if (func_345(45))
 		{
-			func_313(882236853);
+			func_313(joaat("k_11_p_mary1_camp"));
 			func_328("MS_MARY1_CAMP");
-			func_302(-833696851);
+			func_302(joaat("k_11_p_chelonian_camp"));
 			func_327("MS_CHELONIAN_CAMP");
 		}
 		else
 		{
-			func_313(-833696851);
+			func_313(joaat("k_11_p_chelonian_camp"));
 			func_328("MS_CHELONIAN_CAMP");
-			func_302(882236853);
+			func_302(joaat("k_11_p_mary1_camp"));
 			func_327("MS_MARY1_CAMP");
 		}
 		func_354(&(Global_1934765->f_17), 928.2264f, 1345.357f, 194.5221f, 4.5f);
@@ -8254,8 +8254,8 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	else
 	{
-		func_313(882236853);
-		func_313(-833696851);
+		func_313(joaat("k_11_p_mary1_camp"));
+		func_313(joaat("k_11_p_chelonian_camp"));
 		func_355(&(Global_1934765->f_17), 1);
 		func_355(&(Global_1934765->f_18), 1);
 		func_355(&(Global_1934765->f_19), 1);
@@ -8326,12 +8326,12 @@ int func_179(bool bParam0, bool bParam1)
 		func_313(-2092712551);
 		func_313(-1307469679);
 	}
-	func_356(1512816328, 1590446437);
-	func_356(1207048789, -1789074439);
-	func_356(-1230112817, 499096137);
-	func_356(-1278074582, 1466088082);
-	func_356(-1436021162, -1852056457);
-	func_356(407136781, 556704039);
+	func_356(1512816328, joaat("gang_skinaftermath_loc01_01"));
+	func_356(1207048789, joaat("gang_skinaftermath_loc02_01"));
+	func_356(-1230112817, joaat("gang_skinaftermath_loc03_01"));
+	func_356(-1278074582, joaat("gang_skinaftermath_loc01_02"));
+	func_356(-1436021162, joaat("gang_skinaftermath_loc02_02"));
+	func_356(407136781, joaat("gang_skinaftermath_loc03_02"));
 	if (func_310(-978957786))
 	{
 		func_302(1111220101);
@@ -8482,14 +8482,14 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	if (func_310(-736853952))
 	{
-		func_302(-1123141803);
-		func_344(-1123141803);
+		func_302(joaat("mission_sean_1"));
+		func_344(joaat("mission_sean_1"));
 		PATHFIND::_0x4BDEBEA5702B97A9(-1363.724f, -839.4881f, 65.44287f, 20f, 0, 1);
 	}
 	else
 	{
-		func_313(-1123141803);
-		func_343(-1123141803);
+		func_313(joaat("mission_sean_1"));
+		func_343(joaat("mission_sean_1"));
 		PATHFIND::_0x4BDEBEA5702B97A9(-1363.724f, -839.4881f, 65.44287f, 20f, 1, 1);
 	}
 	if (func_310(1478132521))
@@ -8517,18 +8517,18 @@ int func_179(bool bParam0, bool bParam1)
 	if (func_310(2024383613))
 	{
 		func_313(-753844687);
-		func_302(-1045062790);
+		func_302(joaat("nat_native1_coh_02"));
 		func_327("ntv1_cohutta");
 	}
 	else
 	{
 		func_302(-753844687);
-		func_313(-1045062790);
+		func_313(joaat("nat_native1_coh_02"));
 		func_328("ntv1_cohutta");
 	}
 	if (func_310(-622554983))
 	{
-		func_302(746475990);
+		func_302(joaat("nat_native1_army_01"));
 		func_327("ntv1_armycamp");
 		if (!Global_1934765->f_287)
 		{
@@ -8538,7 +8538,7 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	else
 	{
-		func_313(746475990);
+		func_313(joaat("nat_native1_army_01"));
 		func_328("ntv1_armycamp");
 		if (Global_1934765->f_287)
 		{
@@ -8626,19 +8626,19 @@ int func_179(bool bParam0, bool bParam1)
 	}
 	if (func_310(1446719356))
 	{
-		func_302(-502582154);
+		func_302(joaat("p_12p_blackwhite_camp"));
 	}
 	else
 	{
-		func_313(-502582154);
+		func_313(joaat("p_12p_blackwhite_camp"));
 	}
 	if (func_310(171107021))
 	{
-		func_302(1624069429);
+		func_302(joaat("n_11p_blackwhite_setupcamp"));
 	}
 	else
 	{
-		func_313(1624069429);
+		func_313(joaat("n_11p_blackwhite_setupcamp"));
 	}
 	return 1;
 }
@@ -10393,7 +10393,7 @@ int func_240(int iParam0, int iParam1)
 				case 0:
 					return func_468();
 				case 1:
-					return 414622870;
+					return joaat("shb_p_camp_02");
 				case 2:
 					return 557551306;
 				default:
@@ -10411,17 +10411,17 @@ void func_241(int iParam0, bool bParam1)
 	iVar0 = -1;
 	switch (iParam0)
 	{
-		case -1999825729:
-			iVar0 = -1999825729;
+		case joaat("cle_upg_campfire_rug_cow"):
+			iVar0 = joaat("cle_upg_campfire_rug_cow");
 			break;
-		case 414622870:
-			iVar0 = 414622870;
+		case joaat("shb_p_camp_02"):
+			iVar0 = joaat("shb_p_camp_02");
 			break;
 		case joaat("dewclm_p_camp_02"):
 			iVar0 = joaat("dewclm_p_camp_02");
 			break;
 		case joaat("hso_p_camp_02"):
-			iVar0 = 446964392;
+			iVar0 = joaat("vegmods_hso_pearson_wagon");
 			break;
 	}
 	if (iVar0 != -1)
@@ -12547,7 +12547,7 @@ int func_301()
 	}
 	if (func_533(1649996811))
 	{
-		if (func_534(197447134))
+		if (func_534(joaat("bee_01_camp")))
 		{
 			return 1;
 		}
@@ -13104,7 +13104,7 @@ void func_308()
 		func_302(-1012618146);
 		func_302(1757739778);
 		func_327("nav_mesh_beech_shack_with_fire");
-		func_302(197447134);
+		func_302(joaat("bee_01_camp"));
 		func_302(578474998);
 		func_302(-1253110600);
 		func_302(-1402083909);
@@ -13114,7 +13114,7 @@ void func_308()
 	}
 	else if (func_310(1649996811))
 	{
-		func_302(197447134);
+		func_302(joaat("bee_01_camp"));
 		func_327("nav_mesh_beech_camp_with_rubble");
 		func_302(578474998);
 		func_302(-1253110600);
@@ -13125,7 +13125,7 @@ void func_308()
 	}
 	else if (func_310(227918160))
 	{
-		func_302(197447134);
+		func_302(joaat("bee_01_camp"));
 		func_302(-1253110600);
 		func_302(-1402083909);
 		func_302(1970695826);
@@ -13135,7 +13135,7 @@ void func_308()
 	}
 	else if (func_310(168171957))
 	{
-		func_302(197447134);
+		func_302(joaat("bee_01_camp"));
 		func_302(-1667461262);
 		func_302(-974480336);
 		func_302(411742897);
@@ -13214,8 +13214,8 @@ void func_308()
 		func_302(1344772301);
 		func_302(-918785150);
 		func_302(-692583342);
-		func_302(-803019223);
-		func_344(-803019223);
+		func_302(joaat("bee_craftingfire01"));
+		func_344(joaat("bee_craftingfire01"));
 		func_302(-1860722801);
 		func_302(637627640);
 		func_302(349494711);
@@ -13256,8 +13256,8 @@ void func_308()
 		func_302(1344772301);
 		func_302(-918785150);
 		func_302(-692583342);
-		func_302(-803019223);
-		func_344(-803019223);
+		func_302(joaat("bee_craftingfire01"));
+		func_344(joaat("bee_craftingfire01"));
 		func_302(-1860722801);
 		func_302(637627640);
 		func_302(349494711);
@@ -13306,8 +13306,8 @@ void func_308()
 		func_302(1344772301);
 		func_302(-918785150);
 		func_302(-692583342);
-		func_302(-803019223);
-		func_344(-803019223);
+		func_302(joaat("bee_craftingfire01"));
+		func_344(joaat("bee_craftingfire01"));
 		func_302(-1860722801);
 		func_302(637627640);
 		func_302(-218940381);
@@ -17023,7 +17023,7 @@ int func_416(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 			}
 			func_622(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -17377,7 +17377,7 @@ void func_422(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -18905,7 +18905,7 @@ void func_474(int iParam0, bool bParam1)
 	int iVar38[18];
 
 	iVar0[0] = 2137149309; /* GXTEntry: "Lean-to Cow Hide Ground Cover" */
-	iVar19[0] = -1999825729;
+	iVar19[0] = joaat("cle_upg_campfire_rug_cow");
 	iVar38[0] = func_712();
 	iVar0[1] = -147867326; /* GXTEntry: "Cougar Pelt Covered Chest" */
 	iVar19[1] = -1774140220;
@@ -21958,8 +21958,8 @@ void func_551()
 	if ((!func_310(-491981251) && !func_310(-639037538)) && !func_310(-618620429))
 	{
 		func_313(1532009326);
-		func_313(-803019223);
-		GRAPHICS::_0xDD0BC0EDCB2162F6(-803019223);
+		func_313(joaat("bee_craftingfire01"));
+		GRAPHICS::_0xDD0BC0EDCB2162F6(joaat("bee_craftingfire01"));
 		func_313(-1860722801);
 		func_313(637627640);
 	}
@@ -22022,7 +22022,7 @@ void func_551()
 	}
 	if (!func_310(227918160) && !func_310(168171957))
 	{
-		func_313(197447134);
+		func_313(joaat("bee_01_camp"));
 	}
 	if (!func_310(168171957))
 	{
@@ -30769,7 +30769,7 @@ bool func_814(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 				return bParam1;
 			}
 			bVar0 = bParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(bVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -30809,7 +30809,7 @@ bool func_814(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 		{
 			bVar22 = true;
 		}
-		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -33847,7 +33847,7 @@ int func_900(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -34584,7 +34584,7 @@ void func_937(int iParam0, bool bParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}

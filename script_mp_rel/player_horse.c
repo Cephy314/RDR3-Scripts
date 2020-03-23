@@ -1234,7 +1234,7 @@ void func_41(struct<4> Param0, var uParam4, var uParam5, var uParam6, struct<5> 
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		iVar2 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iVar0);
-		if ((iVar2 != -1538724068 && iVar2 != 1391706777) && iVar2 != 1030835986)
+		if ((iVar2 != joaat("REL_PLAYER_ALLY") && iVar2 != joaat("REL_PLAYER_LIKE")) && iVar2 != joaat("REL_GANG_DUTCHS"))
 		{
 			func_140(iParam19, iVar0);
 		}
@@ -5658,7 +5658,7 @@ int func_171(vector3 vParam0, float fParam3, bool bParam4)
 	{
 		ENTITY::_0x9587913B9E772D29(iVar1, 0);
 	}
-	TASK::_0xF0B4F759F35CC7F5(iVar1, 822715387, 0, 0, 0);
+	TASK::_0xF0B4F759F35CC7F5(iVar1, joaat("CARRIABLE_SADDLE_BUNDLE"), 0, 0, 0);
 	return 1;
 }
 
@@ -11217,20 +11217,20 @@ int func_388(int iParam0, int iParam1)
 	}
 	switch (PED::_GET_DEFAULT_RELATIONSHIP_GROUP_HASH(ENTITY::GET_ENTITY_MODEL(iParam0)))
 	{
-		case -1996978098:
-		case -1663301869:
-		case -1535431934:
-		case -1448293989:
-		case -401180987:
-		case -350226955:
-		case -50399569:
-		case 106566339:
-		case 266218800:
-		case 555364152:
-		case 707888648:
-		case 1078461828:
-		case 1222652248:
-		case 1269650476:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SMUGGLERS"):
+		case joaat("REL_GANG_LARAMIE_GANG"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_PLAYER_DISLIKE"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_COP"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
+		case joaat("REL_PLAYER_ENEMY"):
 			return 1;
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(iParam1))

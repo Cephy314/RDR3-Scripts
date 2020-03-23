@@ -1124,7 +1124,7 @@ int func_29(int iParam0)
 	func_25(iParam0, 2048);
 	HUD::_TEXT_DATABASE_REQUEST("MRY1");
 	MISC::_SET_WEATHER_TYPE(joaat("overcast"), false, true, true, 30f, false);
-	func_144(882236853);
+	func_144(joaat("k_11_p_mary1_camp"));
 	Global_43837 = iLocal_41;
 	PLAYER::_0x946D46CD6DFB9742(PLAYER::GET_PLAYER_INDEX(), 0, 621714131);
 	return 1;
@@ -1290,9 +1290,9 @@ void func_39(int iParam0)
 {
 	if (!bLocal_50)
 	{
-		if (func_155(882236853))
+		if (func_155(joaat("k_11_p_mary1_camp")))
 		{
-			GRAPHICS::_0xDFEA23EC90113657(882236853);
+			GRAPHICS::_0xDFEA23EC90113657(joaat("k_11_p_mary1_camp"));
 			bLocal_50 = true;
 		}
 	}
@@ -1486,7 +1486,7 @@ int func_53(int iParam0)
 	else
 	{
 		MISC::CLEAR_WEATHER_TYPE_PERSIST();
-		GRAPHICS::_0xDD0BC0EDCB2162F6(882236853);
+		GRAPHICS::_0xDD0BC0EDCB2162F6(joaat("k_11_p_mary1_camp"));
 		iVar1 = 0;
 		while (iVar1 < Local_14.f_3)
 		{
@@ -7219,7 +7219,7 @@ void func_310(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -11094,7 +11094,7 @@ int func_457(int iParam0, bool bParam1, int iParam2, var uParam3, var uParam4, v
 			}
 			func_479(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -11312,7 +11312,7 @@ void func_459(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 		PED::FORCE_PED_MOTION_STATE(bParam0, joaat("motionstate_idle"), true, 0, false);
 		PED::_0x7DE9692C6F64CFE8(bParam0, false, 0, false);
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, 1030835986);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, joaat("REL_GANG_DUTCHS"));
 	ENTITY::_SET_ENTITY_HEALTH(bParam0, ENTITY::GET_ENTITY_MAX_HEALTH(bParam0, false), 0);
 	if (bParam3)
 	{
@@ -12409,7 +12409,7 @@ int func_516(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -12449,7 +12449,7 @@ int func_516(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -14679,7 +14679,7 @@ void func_606(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}

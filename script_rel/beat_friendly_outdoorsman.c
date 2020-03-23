@@ -10647,19 +10647,19 @@ int func_311(int iParam0, int iParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -11395,13 +11395,13 @@ int func_341(int iParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;
@@ -12693,17 +12693,17 @@ int func_410(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;
@@ -14793,7 +14793,7 @@ int func_458(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -15873,431 +15873,431 @@ void func_520(int iParam0, int iParam1)
 		case 1:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_acunas_star_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_ACUNAS_STAR_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_acunas_star_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_ACUNAS_STAR_ORCHID_JN"), 0);
 			}
 			break;
 		case 2:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_alaskan_ginseng_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_ALASKAN_GINSENG_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_alaskan_ginseng_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_ALASKAN_GINSENG_JN"), 0);
 			}
 			break;
 		case 3:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_american_ginseng_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_AMERICAN_GINSENG_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_american_ginseng_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_AMERICAN_GINSENG_JN"), 0);
 			}
 			break;
 		case 4:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_bay_bolete_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_BAY_BOLETE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_bay_bolete_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_BAY_BOLETE_JN"), 0);
 			}
 			break;
 		case 5:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_blackberry_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_BLACKBERRY_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_blackberry_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_BLACKBERRY_JN"), 0);
 			}
 			break;
 		case 6:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_black_currant_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_BLACK_CURRANT_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_black_currant_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_BLACK_CURRANT_JN"), 0);
 			}
 			break;
 		case 11:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_bulrush_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_BULRUSH_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_bulrush_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_BULRUSH_JN"), 0);
 			}
 			break;
 		case 7:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_burdock_root_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_BURDOCK_ROOT_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_burdock_root_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_BURDOCK_ROOT_JN"), 0);
 			}
 			break;
 		case 39:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_carrot_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_CARROT_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_carrot_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_CARROT_JN"), 0);
 			}
 			break;
 		case 8:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_chanterelle_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_CHANTERELLE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_chanterelle_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_CHANTERELLE_JN"), 0);
 			}
 			break;
 		case 9:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_cigar_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_CIGAR_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_cigar_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_CIGAR_ORCHID_JN"), 0);
 			}
 			break;
 		case 10:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_clamshell_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_CLAMSHELL_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_clamshell_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_CLAMSHELL_ORCHID_JN"), 0);
 			}
 			break;
 		case 12:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_creeping_thyme_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_CREEPING_THYME_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_creeping_thyme_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_CREEPING_THYME_JN"), 0);
 			}
 			break;
 		case 13:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_desert_sage_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_DESERT_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_desert_sage_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_DESERT_SAGE_JN"), 0);
 			}
 			break;
 		case 14:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_dragons_mouth_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_dragons_mouth_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_JN"), 0);
 			}
 			break;
 		case 15:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_english_mace_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_ENGLISH_MACE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_english_mace_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_ENGLISH_MACE_JN"), 0);
 			}
 			break;
 		case 40:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_feverfew_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_FEVERFEW_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_feverfew_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_FEVERFEW_JN"), 0);
 			}
 			break;
 		case 17:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_ghost_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_GHOST_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_ghost_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_GHOST_ORCHID_JN"), 0);
 			}
 			break;
 		case 18:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_golden_currant_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_GOLDEN_CURRANT_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_golden_currant_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_GOLDEN_CURRANT_JN"), 0);
 			}
 			break;
 		case 16:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_huckleberry_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_HUCKLEBERRY_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_huckleberry_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_HUCKLEBERRY_JN"), 0);
 			}
 			break;
 		case 19:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_hummingbird_sage_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_HUMMINGBIRD_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_hummingbird_sage_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_HUMMINGBIRD_SAGE_JN"), 0);
 			}
 			break;
 		case 20:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_indian_tobacco_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_INDIAN_TOBACCO_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_indian_tobacco_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_INDIAN_TOBACCO_JN"), 0);
 			}
 			break;
 		case 21:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_lady_of_the_night_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_lady_of_the_night_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_JN"), 0);
 			}
 			break;
 		case 22:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_lady_slipper_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_LADY_SLIPPER_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_lady_slipper_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_LADY_SLIPPER_ORCHID_JN"), 0);
 			}
 			break;
 		case 23:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_milkweed_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_MILKWEED_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_milkweed_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_MILKWEED_JN"), 0);
 			}
 			break;
 		case 41:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_mint_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_MINT_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_mint_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_MINT_JN"), 0);
 			}
 			break;
 		case 24:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_moccasin_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_MOCCASIN_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_moccasin_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_MOCCASIN_ORCHID_JN"), 0);
 			}
 			break;
 		case 25:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_night_scented_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_night_scented_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_JN"), 0);
 			}
 			break;
 		case 26:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_oleander_sage_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_OLEANDER_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_oleander_sage_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_OLEANDER_SAGE_JN"), 0);
 			}
 			break;
 		case 27:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_oregano_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_OREGANO_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_oregano_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_OREGANO_JN"), 0);
 			}
 			break;
 		case 28:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_parasol_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_PARASOL_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_parasol_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_PARASOL_JN"), 0);
 			}
 			break;
 		case 29:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_prairie_poppy_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_PRAIRIE_POPPY_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_prairie_poppy_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_PRAIRIE_POPPY_JN"), 0);
 			}
 			break;
 		case 30:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_queens_orchids_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_QUEENS_ORCHIDS_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_queens_orchids_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_QUEENS_ORCHIDS_JN"), 0);
 			}
 			break;
 		case 31:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_ramshead_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_RAMSHEAD_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_ramshead_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_RAMSHEAD_ORCHID_JN"), 0);
 			}
 			break;
 		case 33:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_raspberry_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_RASPBERRY_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_raspberry_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_RASPBERRY_JN"), 0);
 			}
 			break;
 		case 32:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_rat_tail_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_RAT_TAIL_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_rat_tail_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_RAT_TAIL_ORCHID_JN"), 0);
 			}
 			break;
 		case 34:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_red_sage_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_RED_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_red_sage_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_RED_SAGE_JN"), 0);
 			}
 			break;
 		case 35:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_sparrows_egg_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_SPARROWS_EGG_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_sparrows_egg_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_SPARROWS_EGG_ORCHID_JN"), 0);
 			}
 			break;
 		case 36:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_spider_orchid_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_SPIDER_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_spider_orchid_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_SPIDER_ORCHID_JN"), 0);
 			}
 			break;
 		case 37:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_vanilla_flower_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_VANILLA_FLOWER_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_vanilla_flower_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_VANILLA_FLOWER_JN"), 0);
 			}
 			break;
 		case 38:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_violet_snowdrop_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_VIOLET_SNOWDROP_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_violet_snowdrop_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_VIOLET_SNOWDROP_JN"), 0);
 			}
 			break;
 		case 42:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_winterberry_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_WINTERBERRY_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_winterberry_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_WINTERBERRY_JN"), 0);
 			}
 			break;
 		case 43:
 			if (iParam1 == 1)
 			{
-				func_590(joaat("journal_herb_yarrow_ar"), 0);
+				func_590(joaat("JOURNAL_HERB_YARROW_AR"), 0);
 			}
 			else
 			{
-				func_590(joaat("journal_herb_yarrow_jn"), 0);
+				func_590(joaat("JOURNAL_HERB_YARROW_JN"), 0);
 			}
 			break;
 		default:

@@ -594,7 +594,7 @@ void func_9()
 	{
 		if (func_62(&(iLocal_1041[5]), 0, 1))
 		{
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[5]), -1247684992);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[5]), joaat("REL_COMPANION_GROUP"));
 		}
 		func_63();
 	}
@@ -1061,7 +1061,7 @@ void func_23()
 			if (func_62(&(iLocal_1041[5]), 0, 1))
 			{
 				WEAPON::REMOVE_ALL_PED_WEAPONS(&(iLocal_1041[5]), true, true);
-				ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(iLocal_1041[5]), false, 1030835986);
+				ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(iLocal_1041[5]), false, joaat("REL_GANG_DUTCHS"));
 				func_105(&(iLocal_1041[5]), vLocal_1001 + (Local_279[5 /*32*/])->f_6, (Local_279[iVar0 /*32*/])->f_9, 2, 1073741824 /* Float: 2f */);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(iLocal_1041[5]), true);
 				ENTITY::SET_ENTITY_IS_TARGET_PRIORITY(&(iLocal_1041[5]), false, 0f);
@@ -1073,7 +1073,7 @@ void func_23()
 				ENTITY::SET_ENTITY_PROOFS(&(iLocal_1041[5]), 2, false);
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[5]), iLocal_1222);
 				PED::SET_PED_CAN_BE_TARGETTED(&(iLocal_1041[5]), false);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[7]), -1247684992);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[7]), joaat("REL_COMPANION_GROUP"));
 			}
 		}
 		else if (func_62(&(iLocal_1041[iVar0]), 0, 1) && iVar0 != 6)
@@ -1567,12 +1567,12 @@ void func_44()
 {
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, iLocal_1222, joaat("player"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(2, joaat("player"), iLocal_1222);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1220, 1030835986);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1220, -1247684992);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1220, joaat("REL_GANG_DUTCHS"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1220, joaat("REL_COMPANION_GROUP"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1220, joaat("player"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, 1030835986, iLocal_1220);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, joaat("REL_GANG_DUTCHS"), iLocal_1220);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, joaat("player"), iLocal_1220);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, -1247684992, iLocal_1220);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, joaat("REL_COMPANION_GROUP"), iLocal_1220);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1221, joaat("player"));
 }
 
@@ -1987,7 +1987,7 @@ int func_48()
 					func_43(&iLocal_979, 1073741824 /* Float: 2f */);
 				}
 				Local_85.f_44 = 1;
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[5]), -1247684992);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iLocal_1041[5]), joaat("REL_COMPANION_GROUP"));
 				iLocal_582 = 14;
 			}
 			break;
@@ -2304,14 +2304,14 @@ bool func_62(int iParam0, int iParam1, bool bParam2)
 
 void func_63()
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1220, 1030835986);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, 1030835986, iLocal_1220);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1220, joaat("REL_GANG_DUTCHS"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("REL_GANG_DUTCHS"), iLocal_1220);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1220, joaat("player"));
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("player"), iLocal_1220);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1220, iLocal_1222);
 	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1222, iLocal_1220);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1221, 1030835986);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, 1030835986, iLocal_1221);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, iLocal_1221, joaat("REL_GANG_DUTCHS"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(3, joaat("REL_GANG_DUTCHS"), iLocal_1221);
 }
 
 void func_64()
@@ -3115,7 +3115,7 @@ int func_98(int iParam0, bool bParam1, int iParam2, var uParam3, var uParam4, va
 			}
 			func_277(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -4327,7 +4327,7 @@ void func_138()
 				iVar1 = PED::_0xCD66FEA29400A0B5(Global_35);
 				if ((iVar1 != 0 && ENTITY::IS_ENTITY_A_PED(iVar1)) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1)))
 				{
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1), 1269650476);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1), joaat("REL_PLAYER_ENEMY"));
 				}
 				TASK::TASK_COMBAT_HATED_TARGETS_IN_AREA(&(iLocal_1041[4]), Global_36, 50f, 0, 16);
 				func_365(iLocal_548, 1, 0, 1, 1, 0);
@@ -5863,7 +5863,7 @@ int func_178(int iParam0, bool bParam1)
 	func_424(iParam0, 1);
 	Global_1359489->f_15 = func_232(1);
 	func_279(iParam0, 32, 1);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], -1247684992);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_COMPANION_GROUP"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, true);
 	PED::_0x9238A3D970BBB0A9(Global_1360165[iParam0 /*1157*/], -1972074710);
 	PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, true);
@@ -7528,7 +7528,7 @@ void func_237(int iParam0)
 	func_277(iParam0, 32, 1);
 	if (func_227(Global_1360165[iParam0 /*1157*/], 0))
 	{
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, false);
 		PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, false);
 		Var1 = PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX());
@@ -7606,7 +7606,7 @@ void func_238(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -10566,7 +10566,7 @@ int func_306(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -10606,7 +10606,7 @@ int func_306(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -16269,17 +16269,17 @@ int func_497(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;
@@ -19727,7 +19727,7 @@ void func_561(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -19943,7 +19943,7 @@ int func_570(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -26280,8 +26280,8 @@ void func_787(int iParam0, int iParam1)
 	{
 		func_279(iParam1, 38, 1);
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0, -1856989775);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, -1856989775);
+	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0, joaat("REL_GANG_DUTCHS_HORSES"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, joaat("REL_GANG_DUTCHS_HORSES"));
 	if (Global_40.f_4283 == 0)
 	{
 		PED::SET_PED_CONFIG_FLAG(iParam0, 172, true);
@@ -29853,19 +29853,19 @@ int func_895(int iParam0, int iParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -30546,13 +30546,13 @@ int func_921(int iParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

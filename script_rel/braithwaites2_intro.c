@@ -1227,7 +1227,7 @@ int func_29(int iParam0)
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_3[0]), func_145(), 0);
 	VEHICLE::SET_VEHICLE_EXTRA(&(Local_14.f_3[0]), 2, false);
 	PED::SET_PED_CAN_BE_TARGETTED(&(Local_14.f_7[0]), false);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_7[0]), -1538724068);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_7[0]), joaat("REL_PLAYER_ALLY"));
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_7[1]), func_145(), 0);
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_7[2]), func_145(), 1);
 	DECORATOR::DECOR_SET_INT(&(Local_14.f_7[0]), func_145(), 2);
@@ -1482,7 +1482,7 @@ void func_39(int iParam0)
 		{
 			func_150(iParam0, iVar0);
 			PED::SET_PED_CONFIG_FLAG(iVar0, 301, true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, joaat("REL_PLAYER_ALLY"));
 			bLocal_163 = true;
 		}
 	}
@@ -1493,7 +1493,7 @@ void func_39(int iParam0)
 		{
 			func_150(iParam0, iVar1);
 			PED::SET_PED_CONFIG_FLAG(iVar1, 301, true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, joaat("REL_PLAYER_ALLY"));
 			bLocal_164 = true;
 		}
 	}
@@ -9434,7 +9434,7 @@ void func_389(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -12571,7 +12571,7 @@ int func_532(int iParam0, bool bParam1, int iParam2, var uParam3, var uParam4, v
 			}
 			func_601(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -12789,7 +12789,7 @@ void func_534(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 		PED::FORCE_PED_MOTION_STATE(bParam0, joaat("motionstate_idle"), true, 0, false);
 		PED::_0x7DE9692C6F64CFE8(bParam0, false, 0, 0);
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, 1030835986);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, joaat("REL_GANG_DUTCHS"));
 	ENTITY::_SET_ENTITY_HEALTH(bParam0, ENTITY::GET_ENTITY_MAX_HEALTH(bParam0, false), 0);
 	if (bParam3)
 	{
@@ -15720,7 +15720,7 @@ int func_640(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -15760,7 +15760,7 @@ int func_640(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -19878,7 +19878,7 @@ void func_789(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}

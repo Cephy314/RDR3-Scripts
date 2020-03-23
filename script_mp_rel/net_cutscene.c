@@ -11115,63 +11115,63 @@ int func_337(int iParam0, int iParam1)
 		case 0:
 			return joaat("player");
 		case 1:
-			return -1976316465;
+			return joaat("REL_CIVMALE");
 		case 2:
-			return 841021282;
+			return joaat("REL_CIVFEMALE");
 		case 3:
-			return -350651841;
+			return joaat("REL_CIVNATIVE");
 		case 4:
-			return 707888648;
+			return joaat("REL_COP");
 		case 5:
 			return 623901053;
 		case 6:
-			return 1269650476;
+			return joaat("REL_PLAYER_ENEMY");
 		case 7:
-			return -1538724068;
+			return joaat("REL_PLAYER_ALLY");
 		case 8:
-			return 1391706777;
+			return joaat("REL_PLAYER_LIKE");
 		case 9:
-			return -401180987;
+			return joaat("REL_PLAYER_DISLIKE");
 		case 10:
-			return -1247684992;
+			return joaat("REL_COMPANION_GROUP");
 		case 11:
 			return -767591988;
 		case 12:
 			return -989642646;
 		case 13:
-			return -1683752762;
+			return joaat("REL_DOMESTICATED_ANIMAL");
 		case 14:
-			return 543319108;
+			return joaat("REL_DOMESTICATED_PET_ANIMAL");
 		case 15:
-			return -886193798;
+			return joaat("REL_BOUNTY_HUNTER");
 		case 16:
-			return 106566339;
+			return joaat("REL_GUAMA_LAW");
 		case 17:
-			return -50399569;
+			return joaat("REL_PINKERTONS");
 		case 18:
-			return 1622308690;
+			return joaat("REL_TOWN_MOB");
 		case 19:
-			return 1222652248;
+			return joaat("REL_CRIMINALS");
 		case 20:
-			return -350226955;
+			return joaat("REL_GUNSLINGERS");
 		case 21:
-			return 1030835986;
+			return joaat("REL_GANG_DUTCHS");
 		case 22:
-			return -1856989775;
+			return joaat("REL_GANG_DUTCHS_HORSES");
 		case 23:
-			return -1535431934;
+			return joaat("REL_GANG_LARAMIE_GANG");
 		case 24:
-			return -1448293989;
+			return joaat("REL_GANG_SKINNER_BROTHERS");
 		case 25:
-			return 266218800;
+			return joaat("REL_GANG_CREOLE");
 		case 26:
-			return 555364152;
+			return joaat("REL_GANG_LEMOYNE_RAIDERS");
 		case 27:
-			return -1663301869;
+			return joaat("REL_GANG_SMUGGLERS");
 		case 28:
-			return -1996978098;
+			return joaat("REL_GANG_ODRISCOLL");
 		case 29:
-			return 1078461828;
+			return joaat("REL_GANG_MURFREE_BROOD");
 		case 30:
 			return 1986610512;
 		case 31:
@@ -11179,113 +11179,113 @@ int func_337(int iParam0, int iParam1)
 		case 32:
 			return -319516747;
 		case 33:
-			return -1329647920;
+			return joaat("REL_HEN_ANIMAL");
 		case 34:
-			return -225988669;
+			return joaat("REL_MINIGAME_PLAYER");
 		case 35:
-			return -1694487418;
+			return joaat("REL_BRAITHWAITES");
 		case 36:
-			return 1878159675;
+			return joaat("REL_GREYS");
 		case 37:
-			return -1505548114;
+			return joaat("REL_RE_VICTIM");
 		case 38:
-			return 1856892754;
+			return joaat("REL_RE_ENEMY");
 		case 39:
-			return 1609284507;
+			return joaat("REL_MP_LIKE_ALL_PLAYERS");
 		case 40:
-			return 747813878;
+			return joaat("REL_FETCH_ENEMY_1");
 		case 41:
-			return -40378879;
+			return joaat("REL_FETCH_ENEMY_2");
 		case 42:
-			return -415798358;
+			return joaat("REL_NETWORK_SAFE");
 		case 43:
-			return 1733741057;
+			return joaat("REL_NETWORK_FREE_AGENT");
 		case 44:
-			return 886389029;
+			return joaat("REL_MP_WANTED_CRIMINAL");
 		case 45:
-			return -2003007004;
+			return joaat("REL_GT_FFA");
 		case 46:
-			return 1965820175;
+			return joaat("REL_GT_TEAM_0");
 		case 47:
-			return -1164995627;
+			return joaat("REL_GT_TEAM_1");
 		case 48:
-			return -1406404850;
+			return joaat("REL_GT_TEAM_2");
 		case 49:
-			return 892340488;
+			return joaat("REL_GT_TEAM_3");
 		case 50:
-			return 570352286;
+			return joaat("REL_GT_TEAM_4");
 		case 51:
-			return 1809249877;
+			return joaat("REL_GT_TEAM_5");
 		case 52:
-			return 1185197041;
+			return joaat("REL_GT_TEAM_6");
 		case 53:
-			return -1901478918;
+			return joaat("REL_GT_TEAM_7");
 		case 54:
-			return 2097877918;
+			return joaat("REL_PLAYER_COP");
 		case 55:
-			return -1158905413;
+			return joaat("REL_PLAYER_0");
 		case 56:
-			return 358397622;
+			return joaat("REL_PLAYER_1");
 		case 57:
-			return 65999835;
+			return joaat("REL_PLAYER_2");
 		case 58:
-			return 814443795;
+			return joaat("REL_PLAYER_3");
 		case 59:
-			return 519621102;
+			return joaat("REL_PLAYER_4");
 		case 60:
-			return -1628223003;
+			return joaat("REL_PLAYER_5");
 		case 61:
-			return 1278256225;
+			return joaat("REL_PLAYER_6");
 		case 62:
-			return 2038628101;
+			return joaat("REL_PLAYER_7");
 		case 63:
-			return 1742494648;
+			return joaat("REL_PLAYER_8");
 		case 64:
-			return -1010166918;
+			return joaat("REL_PLAYER_9");
 		case 65:
-			return 660170868;
+			return joaat("REL_PLAYER_10");
 		case 66:
-			return -1278312096;
+			return joaat("REL_PLAYER_11");
 		case 67:
-			return -509158128;
+			return joaat("REL_PLAYER_12");
 		case 68:
-			return -226656579;
+			return joaat("REL_PLAYER_13");
 		case 69:
-			return 2115868159;
+			return joaat("REL_PLAYER_14");
 		case 70:
-			return 1495813101;
+			return joaat("REL_PLAYER_15");
 		case 71:
-			return 1197385818;
+			return joaat("REL_PLAYER_16");
 		case 72:
-			return 1015780020;
+			return joaat("REL_PLAYER_17");
 		case 73:
-			return -1286733825;
+			return joaat("REL_PLAYER_18");
 		case 74:
-			return -1670393277;
+			return joaat("REL_PLAYER_19");
 		case 75:
-			return -415733461;
+			return joaat("REL_PLAYER_20");
 		case 76:
-			return -1207924036;
+			return joaat("REL_PLAYER_21");
 		case 77:
-			return 497702414;
+			return joaat("REL_PLAYER_22");
 		case 78:
-			return 719188085;
+			return joaat("REL_PLAYER_23");
 		case 79:
-			return 43753457;
+			return joaat("REL_PLAYER_24");
 		case 80:
-			return 771290791;
+			return joaat("REL_PLAYER_25");
 		case 81:
-			return 20356387;
+			return joaat("REL_PLAYER_26");
 		case 82:
-			return 309149584;
+			return joaat("REL_PLAYER_27");
 		case 83:
-			return 1613781781;
+			return joaat("REL_PLAYER_28");
 		case 84:
-			return 1693607065;
+			return joaat("REL_PLAYER_29");
 		case 85:
-			return 1132176120;
+			return joaat("REL_PLAYER_30");
 		case 86:
-			return 869270437;
+			return joaat("REL_PLAYER_31");
 		default:
 			break;
 	}

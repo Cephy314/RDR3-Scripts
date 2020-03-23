@@ -275,7 +275,7 @@ void __EntryFunction__()
 				}
 				break;
 			case 6:
-				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[Local_22.f_125 /*31*/])->f_4, 1030835986);
+				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[Local_22.f_125 /*31*/])->f_4, joaat("REL_GANG_DUTCHS"));
 				func_4(&(Global_1394141->f_1326), 4096);
 				BUILTIN::SETTIMERA(0);
 				func_14(&Local_22, 7);
@@ -755,7 +755,7 @@ void func_11(bool bParam0)
 		{
 			if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && bVar3)
 			{
-				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 1030835986);
+				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_GANG_DUTCHS"));
 				func_2(&(Global_1394141->f_1326), 8);
 			}
 		}
@@ -1882,7 +1882,7 @@ int func_47(int iParam0)
 		PED::SET_PED_CONFIG_FLAG(iParam0->f_126, 448, true);
 		AUDIO::STOP_PED_SPEAKING(iParam0->f_126, true);
 		PED::SET_PED_CAN_BE_TARGETTED(iParam0->f_126, false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0->f_126, -1538724068);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0->f_126, joaat("REL_PLAYER_ALLY"));
 		PED::SET_PED_CAN_PLAY_GESTURE_ANIMS(iParam0->f_126, 0, 1);
 		PED::SET_PED_CONFIG_FLAG(iParam0->f_126, 169, true);
 	}
@@ -2128,7 +2128,7 @@ int func_53(var uParam0, int iParam1)
 			PED::SET_PED_CONFIG_FLAG(uParam0[iVar1 /*10*/], 448, true);
 			AUDIO::STOP_PED_SPEAKING(uParam0[iVar1 /*10*/], true);
 			PED::SET_PED_CAN_BE_TARGETTED(uParam0[iVar1 /*10*/], false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], joaat("REL_PLAYER_ALLY"));
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0[iVar1 /*10*/], true);
 			func_195(uParam0[iVar1 /*10*/], 0);
 		}
@@ -3147,7 +3147,7 @@ int func_79(bool bParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(iVar7);
-				if (iVar8 == -1992418870 || iVar8 == 822715387)
+				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}

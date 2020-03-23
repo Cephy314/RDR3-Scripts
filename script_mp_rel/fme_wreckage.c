@@ -14000,7 +14000,7 @@ int func_662(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -33305,7 +33305,7 @@ void func_1451(var uParam0, var uParam1)
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(*uParam1, false);
 	WEAPON::_0x431240A58484D5D0(*uParam1, 0);
 	WEAPON::_0x45E57FDD531C9477(*uParam1, 0);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, 1269650476);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, joaat("REL_PLAYER_ENEMY"));
 	if (func_1458(uParam0, uParam1, 0))
 	{
 	}
@@ -33341,11 +33341,11 @@ void func_1451(var uParam0, var uParam1)
 			PED::SET_PED_SPHERE_DEFENSIVE_AREA(*uParam1, uParam1->f_5, 4f, 0, false, 0);
 			if (uParam1->f_16 == 0)
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, 747813878);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, joaat("REL_FETCH_ENEMY_1"));
 			}
 			else
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, -40378879);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam1, joaat("REL_FETCH_ENEMY_2"));
 			}
 			break;
 		case joaat("Collector"):
@@ -40700,19 +40700,19 @@ int func_1726(int iParam0, var uParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -41477,13 +41477,13 @@ int func_1759(var uParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

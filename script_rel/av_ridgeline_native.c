@@ -2872,7 +2872,7 @@ void func_69(var uParam0, bool bParam1, int iParam2)
 				{
 					PED::REQUEST_PED_VISIBILITY_TRACKING(&(uParam0->f_20[iParam2 /*14*/]));
 				}
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_20[iParam2 /*14*/]), -401180987);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_20[iParam2 /*14*/]), joaat("REL_PLAYER_DISLIKE"));
 				PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[iParam2 /*14*/]), 146, true);
 				func_107(uParam0->f_20[iParam2 /*14*/], 1, 1);
 				WEAPON::_GIVE_WEAPON_TO_PED_2(&(uParam0->f_20[iParam2 /*14*/]), joaat("WEAPON_BOW"), 500, false, true, 0, false, 0.5f, 1f, 752097756, true, 0f, false);
@@ -2901,7 +2901,7 @@ void func_69(var uParam0, bool bParam1, int iParam2)
 				func_108(&(uParam0->f_20[iParam2 /*14*/]), &(uParam0->f_20[5 /*14*/]), 1, -1, 1);
 				PED::_0x931B241409216C1F(&(uParam0->f_20[iParam2 /*14*/]), &(uParam0->f_20[5 /*14*/]), 0);
 			}
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_20[iParam2 /*14*/]), -401180987);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_20[iParam2 /*14*/]), joaat("REL_PLAYER_DISLIKE"));
 			PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[iParam2 /*14*/]), 146, true);
 			func_107(uParam0->f_20[iParam2 /*14*/], 1, 1);
 			WEAPON::_GIVE_WEAPON_TO_PED_2(&(uParam0->f_20[iParam2 /*14*/]), joaat("WEAPON_BOW"), 500, false, true, 0, false, 0.5f, 1f, 752097756, true, 0f, false);
@@ -5876,19 +5876,19 @@ int func_179(int iParam0, var uParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -6630,13 +6630,13 @@ int func_210(var uParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

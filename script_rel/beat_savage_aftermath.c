@@ -1175,13 +1175,13 @@ int func_25(int iParam0, int iParam1, var uParam2)
 			switch (iParam0)
 			{
 				case 0:
-					func_89(uParam2, 1512816328, 1590446437, -2196.84f, -1559.751f, 149.5575f, 0f, 0f, -84.788f, -2197.298f, -1559.963f, 150.0799f, 0f);
+					func_89(uParam2, 1512816328, joaat("gang_skinaftermath_loc01_01"), -2196.84f, -1559.751f, 149.5575f, 0f, 0f, -84.788f, -2197.298f, -1559.963f, 150.0799f, 0f);
 					break;
 				case 1:
-					func_89(uParam2, 1207048789, -1789074439, -2099.315f, -1258.704f, 121.9125f, 0f, 0f, -78.263f, -2099.858f, -1258.75f, 121.9525f, 0f);
+					func_89(uParam2, 1207048789, joaat("gang_skinaftermath_loc02_01"), -2099.315f, -1258.704f, 121.9125f, 0f, 0f, -78.263f, -2099.858f, -1258.75f, 121.9525f, 0f);
 					break;
 				case 2:
-					func_89(uParam2, -1230112817, 499096137, -2492.975f, -1465.848f, 146.605f, 0f, 0f, 67.8f, -2492.199f, -1466.013f, 147.2462f, 0f);
+					func_89(uParam2, -1230112817, joaat("gang_skinaftermath_loc03_01"), -2492.975f, -1465.848f, 146.605f, 0f, 0f, 67.8f, -2492.199f, -1466.013f, 147.2462f, 0f);
 					break;
 				default:
 					return 0;
@@ -1191,13 +1191,13 @@ int func_25(int iParam0, int iParam1, var uParam2)
 			switch (iParam0)
 			{
 				case 0:
-					func_90(uParam2, -1278074582, 1466088082, -2195.773f, -1556.27f, 149.5209f, 0f, 0f, 0f);
+					func_90(uParam2, -1278074582, joaat("gang_skinaftermath_loc01_02"), -2195.773f, -1556.27f, 149.5209f, 0f, 0f, 0f);
 					break;
 				case 1:
-					func_90(uParam2, -1436021162, -1852056457, -2100.959f, -1261.823f, 121.9974f, 0f, 0f, -133.414f);
+					func_90(uParam2, -1436021162, joaat("gang_skinaftermath_loc02_02"), -2100.959f, -1261.823f, 121.9974f, 0f, 0f, -133.414f);
 					break;
 				case 2:
-					func_90(uParam2, 407136781, 556704039, -2496.366f, -1467.077f, 146.5837f, 0f, 0f, 20f);
+					func_90(uParam2, 407136781, joaat("gang_skinaftermath_loc03_02"), -2496.366f, -1467.077f, 146.5837f, 0f, 0f, 20f);
 					break;
 				default:
 					return 0;
@@ -12533,17 +12533,17 @@ int func_416(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;
@@ -15664,7 +15664,7 @@ int func_474(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -20059,19 +20059,19 @@ int func_652(int iParam0, int iParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -20700,13 +20700,13 @@ int func_678(int iParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

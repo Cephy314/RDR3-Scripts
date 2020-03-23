@@ -18918,7 +18918,7 @@ int func_220(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -20308,15 +20308,15 @@ int func_314(bool bParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = 0;
-	if (LAW::_0x76CF93D4B416B288(752193127) < 2)
+	if (LAW::_0x76CF93D4B416B288(joaat("BountyHuntersGlobalCooldown")) < 2)
 	{
-		iVar0 = (LAW::_0x76CF93D4B416B288(752193127) + iParam1);
+		iVar0 = (LAW::_0x76CF93D4B416B288(joaat("BountyHuntersGlobalCooldown")) + iParam1);
 	}
 	if (iVar0 < 0)
 	{
 		iVar0 = 0;
 	}
-	LAW::_0xF19706B1F8FFA88F(752193127, iVar0);
+	LAW::_0xF19706B1F8FFA88F(joaat("BountyHuntersGlobalCooldown"), iVar0);
 	func_220(bParam0);
 	return 1;
 }
@@ -20377,16 +20377,16 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 	switch (iParam0)
 	{
 		case 67:
-			func_605(joaat("JOURNAL_ENTRY_CHAP8_ABIGAIL2x1_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP8_ABIGAIL2X1_1"), iParam1);
 			break;
 		case 18:
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_BRAITHWAITE1_1"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_BRAITHWAITE1_2"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_BRAITHWAITE1_4"), iParam1);
-			func_605(joaat("journal_gt_braithwaites_1"), iParam1);
+			func_605(joaat("JOURNAL_GT_BRAITHWAITES_1"), iParam1);
 			break;
 		case 20:
-			func_605(joaat("journal_gt_braithwaites_2"), iParam1);
+			func_605(joaat("JOURNAL_GT_BRAITHWAITES_2"), iParam1);
 			break;
 		case 2:
 			func_605(joaat("JOURNAL_ENTRY_CHAP1_ODRISCOLL1_1"), iParam1);
@@ -20442,9 +20442,9 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_GRAYS1_3"), iParam1);
 			break;
 		case 19:
-			func_605(joaat("journal_entry_chap3_grays2_1"), iParam1);
-			func_605(joaat("journal_entry_chap3_grays2_2"), iParam1);
-			func_605(joaat("journal_gt_grays_2"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP3_GRAYS2_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP3_GRAYS2_2"), iParam1);
+			func_605(joaat("JOURNAL_GT_GRAYS_2"), iParam1);
 			break;
 		case 21:
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_GRAYS3_1"), iParam1);
@@ -20461,13 +20461,13 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_INDUSTRY1_4"), iParam1);
 			break;
 		case 34:
-			func_605(joaat("journal_gt_industry_3"), iParam1);
+			func_605(joaat("JOURNAL_GT_INDUSTRY_3"), iParam1);
 			break;
 		case 64:
 			func_605(joaat("JOURNAL_ENTRY_CHAP8_LARAMIE1_1"), iParam1);
 			break;
 		case 60:
-			func_605(joaat("journal_chap8_pronghorn"), iParam1);
+			func_605(joaat("JOURNAL_CHAP8_PRONGHORN"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP8_MARSTON1_2"), iParam1);
 			break;
 		case 73:
@@ -20501,22 +20501,22 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			}
 			break;
 		case 27:
-			func_605(joaat("journal_entry_chap4_mob1_1"), iParam1);
-			func_605(joaat("journal_entry_chap4_mob1_2"), iParam1);
-			func_605(joaat("journal_entry_chap4_mob1_3"), iParam1);
-			func_605(joaat("journal_entry_chap4_mob1_4"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB1_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB1_2"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB1_3"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB1_4"), iParam1);
 			break;
 		case 28:
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB2_1"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB2_2"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB2_3"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB2_4"), iParam1);
-			func_605(joaat("journal_gt_mob_2"), iParam1);
+			func_605(joaat("JOURNAL_GT_MOB_2"), iParam1);
 			break;
 		case 29:
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB3_1"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB3_2"), iParam1);
-			func_605(joaat("journal_gt_mob_3"), iParam1);
+			func_605(joaat("JOURNAL_GT_MOB_3"), iParam1);
 			break;
 		case 31:
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB5_1"), iParam1);
@@ -20525,7 +20525,7 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			func_605(joaat("JOURNAL_ENTRY_CHAP4_MOB5_4"), iParam1);
 			break;
 		case 4:
-			func_605(joaat("journal_chap2_horseshoe"), iParam1);
+			func_605(joaat("JOURNAL_CHAP2_HORSESHOE"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_MUDTOWN1_2"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_MUDTOWN1_3"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_MUDTOWN1_5"), iParam1);
@@ -20547,20 +20547,20 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			}
 			break;
 		case 25:
-			func_605(joaat("journal_gt_mudtown_3b"), iParam1);
+			func_605(joaat("JOURNAL_GT_MUDTOWN_3B"), iParam1);
 			break;
 		case 24:
 			if (&Global_1357515 == -1)
 			{
-				func_605(joaat("journal_gt_mudtwon_5_5000"), iParam1);
+				func_605(joaat("JOURNAL_GT_MUDTWON_5_5000"), iParam1);
 			}
 			else if (&Global_1357515 == 0)
 			{
-				func_605(joaat("journal_gt_mudtwon_5_7500"), iParam1);
+				func_605(joaat("JOURNAL_GT_MUDTWON_5_7500"), iParam1);
 			}
 			else if (&Global_1357515 == 1)
 			{
-				func_605(joaat("journal_gt_mudtwon_5_10000"), iParam1);
+				func_605(joaat("JOURNAL_GT_MUDTWON_5_10000"), iParam1);
 			}
 			break;
 		case 48:
@@ -20594,7 +20594,7 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			}
 			break;
 		case 58:
-			func_605(joaat("journal_gt_native_3"), iParam1);
+			func_605(joaat("JOURNAL_GT_NATIVE_3"), iParam1);
 			break;
 		case 50:
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_NATIVESON1_1"), iParam1);
@@ -20648,7 +20648,7 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			}
 			break;
 		case 37:
-			func_605(joaat("journal_gt_saint_denis_1"), iParam1);
+			func_605(joaat("JOURNAL_GT_SAINT_DENIS_1"), iParam1);
 			break;
 		case 9:
 			if (&Global_1357515 == -1)
@@ -20667,7 +20667,7 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_SEAN1_3"), iParam1);
 			break;
 		case 53:
-			func_605(joaat("journal_gt_cornwall_1"), iParam1);
+			func_605(joaat("JOURNAL_GT_CORNWALL_1"), iParam1);
 			break;
 		case 54:
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_TRAINROBBERY1_1"), iParam1);
@@ -20677,14 +20677,14 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_TRAINROBBERY3_3"), iParam1);
 			break;
 		case 57:
-			func_605(joaat("journal_gt_train_robbery_4"), iParam1);
+			func_605(joaat("JOURNAL_GT_TRAIN_ROBBERY_4"), iParam1);
 			break;
 		case 22:
-			func_605(joaat("journal_entry_chap3_trelawny1_1"), iParam1);
-			func_605(joaat("journal_entry_chap3_trelawny1_2"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP3_TRELAWNY1_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP3_TRELAWNY1_2"), iParam1);
 			break;
 		case 12:
-			func_605(joaat("journal_gt_utopia_2"), iParam1);
+			func_605(joaat("JOURNAL_GT_UTOPIA_2"), iParam1);
 			break;
 		case 0:
 			func_605(joaat("JOURNAL_ENTRY_CHAP1_WINTER1_1"), iParam1);
@@ -20698,14 +20698,14 @@ void func_319(int iParam0, int iParam1, bool bParam2)
 		case 3:
 			if (func_354())
 			{
-				if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("journal_gt_winter_4")))
+				if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_GT_WINTER_4")))
 				{
 					func_605(joaat("JOURNAL_GT_WINTER_4_SE"), iParam1);
 				}
 			}
 			else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_GT_WINTER_4_SE")))
 			{
-				func_605(joaat("journal_gt_winter_4"), iParam1);
+				func_605(joaat("JOURNAL_GT_WINTER_4"), iParam1);
 			}
 			break;
 		default:
@@ -20736,14 +20736,14 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_ABIGAIL1_4"), iParam1);
 			break;
 		case 1:
-			func_605(joaat("JOURNAL_ENTRY_CHAP9_ABIGAIL2x2_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP9_ABIGAIL2X2_1"), iParam1);
 			break;
 		case 2:
 			func_605(joaat("JOURNAL_ENTRY_CHAP9_ABIGAIL3_1"), iParam1);
 			break;
 		case 9:
-			func_605(joaat("journal_chap9_beechershope"), iParam1);
-			func_605(joaat("JOURNAL_ENTRY_CHAP9_BEECHERS1x3_1"), iParam1);
+			func_605(joaat("JOURNAL_CHAP9_BEECHERSHOPE"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP9_BEECHERS1X3_1"), iParam1);
 			if (func_343(((*Global_1835011)[69 /*74*/])->f_1, 1))
 			{
 				func_605(joaat("JOURNAL_ENTRY_BEECHERS_DEBT_1A"), iParam1);
@@ -20754,7 +20754,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			break;
 		case 22:
-			func_605(joaat("JOURNAL_ENTRY_CHAP4_CALDERON1x1_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP4_CALDERON1X1_1"), iParam1);
 			break;
 		case 26:
 			if (bParam3 == 1)
@@ -20772,7 +20772,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			if (bParam3 == 1)
 			{
 				func_605(joaat("JOURNAL_RC_CALLOWAY_3_1_AR"), iParam1);
-				func_605(joaat("journal_rc_calloway_3_2_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_CALLOWAY_3_2_AR"), iParam1);
 			}
 			else if (func_607(26))
 			{
@@ -20862,13 +20862,13 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			break;
 		case 37:
-			func_605(joaat("journal_gt_coach_rob_rsc"), iParam1);
+			func_605(joaat("JOURNAL_GT_COACH_ROB_RSC"), iParam1);
 			break;
 		case 53:
 			if (bParam3 == 1)
 			{
 				func_605(joaat("JOURNAL_RC_CRKPT1_1_AR"), iParam1);
-				func_605(joaat("journal_rc_crkpt1_2_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_CRKPT1_2_AR"), iParam1);
 			}
 			else
 			{
@@ -20907,7 +20907,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_cig1_1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_CIG1_1_JN"), iParam1);
 			}
 			break;
 		case 39:
@@ -20939,11 +20939,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			{
 				if (func_377(((*Global_1835011)[33 /*74*/])->f_1) == 1)
 				{
-					func_605(joaat("journal_rc_exotic1_1b_ar_a"), iParam1);
+					func_605(joaat("JOURNAL_RC_EXOTIC1_1B_AR_A"), iParam1);
 				}
 				else
 				{
-					func_605(joaat("journal_rc_exotic1_1a_ar_a"), iParam1);
+					func_605(joaat("JOURNAL_RC_EXOTIC1_1A_AR_A"), iParam1);
 				}
 			}
 			else
@@ -20954,7 +20954,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		case 45:
 			if (bParam3 == 1)
 			{
-				func_605(joaat("journal_rc_exotic3_1_ar_a"), iParam1);
+				func_605(joaat("JOURNAL_RC_EXOTIC3_1_AR_A"), iParam1);
 			}
 			else if (func_607(43))
 			{
@@ -20962,7 +20962,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_exotic3_1_jn_a"), iParam1);
+				func_605(joaat("JOURNAL_RC_EXOTIC3_1_JN_A"), iParam1);
 			}
 			break;
 		case 41:
@@ -20978,11 +20978,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		case 42:
 			if (func_607(41))
 			{
-				func_605(joaat("journal_rc_fish2_1_jn_b"), iParam1);
+				func_605(joaat("JOURNAL_RC_FISH2_1_JN_B"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_fish2_1_jn_a"), iParam1);
+				func_605(joaat("JOURNAL_RC_FISH2_1_JN_A"), iParam1);
 			}
 			break;
 		case 49:
@@ -20998,16 +20998,16 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		case 50:
 			if (bParam3 == 1)
 			{
-				func_605(joaat("journal_rc_rockcarv2_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_ROCKCARV2_AR"), iParam1);
 			}
 			else if (func_607(49))
 			{
-				func_605(joaat("journal_rc_rockcarv2_jn_b"), iParam1);
+				func_605(joaat("JOURNAL_RC_ROCKCARV2_JN_B"), iParam1);
 				func_605(joaat("JOURNAL_RC_ROCKCARV2_JN_B2"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_rockcarv2_jn_a"), iParam1);
+				func_605(joaat("JOURNAL_RC_ROCKCARV2_JN_A"), iParam1);
 			}
 			break;
 		case 51:
@@ -21033,7 +21033,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			break;
 		case 63:
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_ODRISCOLL2_2B"), iParam1);
-			func_605(joaat("journal_gt_odriscoll_2"), iParam1);
+			func_605(joaat("JOURNAL_GT_ODRISCOLL_2"), iParam1);
 			break;
 		case 65:
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_ODRISCOLL6_1"), iParam1);
@@ -21042,19 +21042,19 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_ODRISCOLL6_4"), iParam1);
 			break;
 		case 66:
-			func_605(joaat("journal_chap3_clemens"), iParam1);
+			func_605(joaat("JOURNAL_CHAP3_CLEMENS"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_DUTCH1_1"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_DUTCH1_2"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP2_DUTCH1_3"), iParam1);
 			func_606(1);
 			break;
 		case 67:
-			func_605(joaat("journal_chap4_shadybelle"), iParam1);
+			func_605(joaat("JOURNAL_CHAP4_SHADYBELLE"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_DUTCH2_1"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP3_DUTCH2_2"), iParam1);
 			break;
 		case 68:
-			func_605(joaat("journal_chap6_beaverhollow"), iParam1);
+			func_605(joaat("JOURNAL_CHAP6_BEAVERHOLLOW"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_DUTCH3_2"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_DUTCH3_2B"), iParam1);
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_DUTCH3_3"), iParam1);
@@ -21064,13 +21064,13 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			func_605(joaat("JOURNAL_ENTRY_CHAP6_EDITHDOWNE2_1"), iParam1);
 			break;
 		case 71:
-			func_605(joaat("journal_rc_miller1_jn"), iParam1);
+			func_605(joaat("JOURNAL_RC_MILLER1_JN"), iParam1);
 			break;
 		case 73:
-			func_605(joaat("journal_rc_miller3_jn"), iParam1);
+			func_605(joaat("JOURNAL_RC_MILLER3_JN"), iParam1);
 			break;
 		case 75:
-			func_605(joaat("journal_rc_miller4_jn"), iParam1);
+			func_605(joaat("JOURNAL_RC_MILLER4_JN"), iParam1);
 			break;
 		case 77:
 			if (bParam3 == 1)
@@ -21086,7 +21086,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			if (bParam3 == 1)
 			{
 				func_605(joaat("JOURNAL_RC_FMA3_1_AR"), iParam1);
-				func_605(joaat("journal_rc_fma3_2_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_FMA3_2_AR"), iParam1);
 			}
 			else if (func_607(78))
 			{
@@ -21158,7 +21158,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_hkk1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_HKK1_JN"), iParam1);
 			}
 			break;
 		case 92:
@@ -21180,7 +21180,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_hkk5_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_HKK5_JN"), iParam1);
 			}
 			break;
 		case 94:
@@ -21193,10 +21193,10 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			{
 				func_605(joaat("JOURNAL_ENTRY_CHAP2_HOMEROBBERY0_2B"), iParam1);
 			}
-			func_605(joaat("journal_gt_home_rob"), iParam1);
+			func_605(joaat("JOURNAL_GT_HOME_ROB"), iParam1);
 			break;
 		case 99:
-			func_605(joaat("JOURNAL_ENTRY_CHAP4_MARY3x1_1"), iParam1);
+			func_605(joaat("JOURNAL_ENTRY_CHAP4_MARY3X1_1"), iParam1);
 			break;
 		case 101:
 			if (bParam3 == 1)
@@ -21204,7 +21204,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 				func_605(joaat("JOURNAL_RC_MASON1_1_AR"), iParam1);
 				if (&Global_1357515 == -1)
 				{
-					func_605(joaat("journal_rc_mason1_2_ar_b"), iParam1);
+					func_605(joaat("JOURNAL_RC_MASON1_2_AR_B"), iParam1);
 				}
 				else
 				{
@@ -21240,7 +21240,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		case 104:
 			if (bParam3 == 1)
 			{
-				func_605(joaat("journal_rc_mason4_1_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_MASON4_1_AR"), iParam1);
 				func_605(joaat("JOURNAL_RC_MASON4_2_AR"), iParam1);
 			}
 			else if (func_607(103))
@@ -21273,11 +21273,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			if (bParam3 == 1)
 			{
 				func_605(joaat("JOURNAL_RC_MAYOR1_AR"), iParam1);
-				func_605(joaat("journal_rc_mayor1_ar_b"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR1_AR_B"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_mayor1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR1_JN"), iParam1);
 				func_605(joaat("JOURNAL_RC_MAYOR1B_JN"), iParam1);
 			}
 			break;
@@ -21288,11 +21288,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else if (func_607(109))
 			{
-				func_605(joaat("journal_rc_mayor2b_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR2B_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_mayor2a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR2A_JN"), iParam1);
 			}
 			break;
 		case 111:
@@ -21311,22 +21311,22 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			{
 				if (&Global_1357515 == 0)
 				{
-					func_605(joaat("journal_rc_mayor3c_jn"), iParam1);
+					func_605(joaat("JOURNAL_RC_MAYOR3C_JN"), iParam1);
 				}
 				else
 				{
-					func_605(joaat("journal_rc_mayor3d_jn"), iParam1);
-					func_605(joaat("journal_rc_mayor3d_2_jn"), iParam1);
+					func_605(joaat("JOURNAL_RC_MAYOR3D_JN"), iParam1);
+					func_605(joaat("JOURNAL_RC_MAYOR3D_2_JN"), iParam1);
 				}
 			}
 			else if (&Global_1357515 == 0)
 			{
-				func_605(joaat("journal_rc_mayor3a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR3A_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_mayor3b_jn"), iParam1);
-				func_605(joaat("journal_rc_mayor3b_2_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR3B_JN"), iParam1);
+				func_605(joaat("JOURNAL_RC_MAYOR3B_2_JN"), iParam1);
 			}
 			break;
 		case 115:
@@ -21340,7 +21340,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_oddf1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_ODDF1_JN"), iParam1);
 			}
 			break;
 		case 144:
@@ -21350,14 +21350,14 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_oddf2_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_ODDF2_JN"), iParam1);
 			}
 			break;
 		case 117:
 			if (bParam3 == 1)
 			{
 				func_605(joaat("JOURNAL_RC_OHBRO1_1_AR"), iParam1);
-				func_605(joaat("journal_rc_ohbro1_2_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_OHBRO1_2_AR"), iParam1);
 			}
 			else
 			{
@@ -21399,7 +21399,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_pw1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_PW1_JN"), iParam1);
 			}
 			break;
 		case 122:
@@ -21409,11 +21409,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else if (func_607(121))
 			{
-				func_605(joaat("journal_rc_pw3b_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_PW3B_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_pw3a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_PW3A_JN"), iParam1);
 			}
 			break;
 		case 124:
@@ -21423,11 +21423,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else if (func_607(122))
 			{
-				func_605(joaat("journal_rc_pw4b_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_PW4B_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_pw4a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_PW4A_JN"), iParam1);
 			}
 			break;
 		case 125:
@@ -21438,7 +21438,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_pw5_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_PW5_JN"), iParam1);
 				func_605(joaat("JOURNAL_RC_PW5B_JN"), iParam1);
 			}
 			break;
@@ -21449,7 +21449,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			func_605(joaat("JOURNAL_RC_RTL3_AR"), iParam1);
 			break;
 		case 131:
-			func_605(joaat("journal_rc_rtl5_ar"), iParam1);
+			func_605(joaat("JOURNAL_RC_RTL5_AR"), iParam1);
 			break;
 		case 133:
 			func_605(joaat("JOURNAL_RC_RTL7_AR"), iParam1);
@@ -21473,20 +21473,20 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			{
 				if (&Global_1357515 == -1)
 				{
-					func_605(joaat("journal_rc_killer4a_jn"), iParam1);
+					func_605(joaat("JOURNAL_RC_KILLER4A_JN"), iParam1);
 				}
 				else
 				{
-					func_605(joaat("journal_rc_killer4b_jn"), iParam1);
+					func_605(joaat("JOURNAL_RC_KILLER4B_JN"), iParam1);
 				}
 			}
 			else if (&Global_1357515 == -1)
 			{
-				func_605(joaat("journal_rc_killer4c_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_KILLER4C_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_killer4d_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_KILLER4D_JN"), iParam1);
 			}
 			break;
 		case 136:
@@ -21496,24 +21496,24 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_slvc1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_SLVC1_JN"), iParam1);
 			}
 			break;
 		case 137:
 			if (bParam3 == 1)
 			{
 				func_605(joaat("JOURNAL_RC_SLVC2_AR"), iParam1);
-				func_605(joaat("journal_rc_slvc3a_ar"), iParam1);
+				func_605(joaat("JOURNAL_RC_SLVC3A_AR"), iParam1);
 			}
 			else if (func_607(136))
 			{
-				func_605(joaat("journal_rc_slvc2b_jn"), iParam1);
-				func_605(joaat("journal_rc_slvc3c_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_SLVC2B_JN"), iParam1);
+				func_605(joaat("JOURNAL_RC_SLVC3C_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_slvc2a_jn"), iParam1);
-				func_605(joaat("journal_rc_slvc3a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_SLVC2A_JN"), iParam1);
+				func_605(joaat("JOURNAL_RC_SLVC3A_JN"), iParam1);
 			}
 			break;
 		case 142:
@@ -21555,7 +21555,7 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else
 			{
-				func_605(joaat("journal_rc_warvet1_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET1_JN"), iParam1);
 			}
 			break;
 		case 148:
@@ -21565,11 +21565,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else if (func_607(147))
 			{
-				func_605(joaat("journal_rc_warvet2b_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET2B_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_warvet2a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET2A_JN"), iParam1);
 			}
 			break;
 		case 149:
@@ -21579,11 +21579,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else if (func_607(148))
 			{
-				func_605(joaat("journal_rc_warvet3b_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET3B_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_warvet3a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET3A_JN"), iParam1);
 			}
 			break;
 		case 150:
@@ -21593,11 +21593,11 @@ void func_321(int iParam0, int iParam1, bool bParam2, bool bParam3)
 			}
 			else if (func_607(149))
 			{
-				func_605(joaat("journal_rc_warvet4b_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET4B_JN"), iParam1);
 			}
 			else
 			{
-				func_605(joaat("journal_rc_warvet4a_jn"), iParam1);
+				func_605(joaat("JOURNAL_RC_WARVET4A_JN"), iParam1);
 			}
 			break;
 		default:
@@ -25036,9 +25036,9 @@ void func_406()
 	{
 		PED::ADD_RELATIONSHIP_GROUP("Micah and Dutch", &iLocal_1487);
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1487, joaat("player"));
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1487, 1269650476);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, iLocal_1487, joaat("REL_PLAYER_ENEMY"));
 		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, joaat("player"), iLocal_1487);
-		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, 1269650476, iLocal_1487);
+		PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, joaat("REL_PLAYER_ENEMY"), iLocal_1487);
 		func_498(&uLocal_425, 16);
 	}
 }
@@ -31146,7 +31146,7 @@ void func_567(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -44394,7 +44394,7 @@ void func_1006(var uParam0, bool bParam1)
 		}
 		if (!func_20() == 0)
 		{
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_5411, 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0->f_5411, joaat("REL_GANG_DUTCHS"));
 		}
 		else
 		{
@@ -57422,7 +57422,7 @@ int func_1356(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(bParam0));
@@ -57462,7 +57462,7 @@ int func_1356(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && bParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && bParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -63175,10 +63175,10 @@ int func_1487(var uParam0, bool bParam1)
 			PED::SET_COMBAT_FLOAT(&(Local_317[iVar0 /*9*/]), 1, 4f);
 			PED::SET_COMBAT_FLOAT(&(Local_317[iVar0 /*9*/]), 3, 0.75f);
 			PED::SET_PED_CONFIG_FLAG(&(Local_317[iVar0 /*9*/]), 307, true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_317[iVar0 /*9*/]), 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_317[iVar0 /*9*/]), joaat("REL_GANG_DUTCHS"));
 			if (!ENTITY::IS_ENTITY_DEAD((Local_317[iVar0 /*9*/])->f_1))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH((Local_317[iVar0 /*9*/])->f_1, 1030835986);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH((Local_317[iVar0 /*9*/])->f_1, joaat("REL_GANG_DUTCHS"));
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_317[iVar0 /*9*/]), true);
 			ENTITY::SET_ENTITY_INVINCIBLE(&(Local_317[iVar0 /*9*/]), true);
@@ -63894,7 +63894,7 @@ int func_1507(var uParam0, bool bParam1)
 		}
 		func_498(&uLocal_425, 1);
 		Local_1478 = func_2129(joaat("cs_edgarross"), 2370.956f, 1305.475f, 108.4658f, 11.9386f, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_1478, 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_1478, joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_1478, true);
 		PED::SET_PED_CAN_BE_TARGETTED(Local_1478, false);
 		PED::_0xFD6943B6DF77E449(Local_1478, false);
@@ -70165,7 +70165,7 @@ int func_1672(int iParam0, bool bParam1, int iParam2, var uParam3, var uParam4, 
 			}
 			func_1090(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -81738,7 +81738,7 @@ void func_2004(bool bParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -85720,7 +85720,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[0]), "Goon01");
 		func_2599(Local_14.f_129, &(Local_14.f_131[0]));
 		func_2105(&(Local_14.f_131[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[0]), true);
 		if (bParam1)
 		{
@@ -85740,7 +85740,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[1]), "Goon02");
 		func_2599(Local_14.f_129, &(Local_14.f_131[1]));
 		func_2105(&(Local_14.f_131[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[1]), true);
 		if (bParam1)
 		{
@@ -85760,7 +85760,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[2]), "Goon03");
 		func_2599(Local_14.f_129, &(Local_14.f_131[2]));
 		func_2105(&(Local_14.f_131[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[2]), true);
 		if (bParam1)
 		{
@@ -85780,7 +85780,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[3]), "Goon04");
 		func_2599(Local_14.f_129, &(Local_14.f_131[3]));
 		func_2105(&(Local_14.f_131[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[3]), true);
 		if (bParam1)
 		{
@@ -85800,7 +85800,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[4]), "Goon05");
 		func_2599(Local_14.f_129, &(Local_14.f_131[4]));
 		func_2105(&(Local_14.f_131[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[4]), true);
 		if (bParam1)
 		{
@@ -85820,7 +85820,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[5]), "Goon06");
 		func_2599(Local_14.f_129, &(Local_14.f_131[5]));
 		func_2105(&(Local_14.f_131[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[5]), true);
 		if (bParam1)
 		{
@@ -85840,7 +85840,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[6]), "Goon07");
 		func_2599(Local_14.f_129, &(Local_14.f_131[6]));
 		func_2105(&(Local_14.f_131[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[6]), true);
 		if (bParam1)
 		{
@@ -85860,7 +85860,7 @@ int func_2155(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_131[7]), "Goon08");
 		func_2599(Local_14.f_129, &(Local_14.f_131[7]));
 		func_2105(&(Local_14.f_131[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_131[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_131[7]), true);
 		if (bParam1)
 		{
@@ -87247,7 +87247,7 @@ void func_2220(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 		PED::FORCE_PED_MOTION_STATE(bParam0, joaat("motionstate_idle"), true, 0, false);
 		PED::_0x7DE9692C6F64CFE8(bParam0, false, 0, 0);
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, 1030835986);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, joaat("REL_GANG_DUTCHS"));
 	ENTITY::_SET_ENTITY_HEALTH(bParam0, ENTITY::GET_ENTITY_MAX_HEALTH(bParam0, false), 0);
 	if (bParam3)
 	{
@@ -87307,7 +87307,7 @@ void func_2222(var uParam0, bool bParam1, int iParam2, char* sParam3)
 		func_2642(uParam0->f_5421, bParam1);
 	}
 	DECORATOR::DECOR_SET_INT(bParam1, func_2643(), iParam2);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam1, 1030835986);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam1, joaat("REL_GANG_DUTCHS"));
 	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(bParam1, false);
 	PED::_0x15F4732C357B1D6D(bParam1, PLAYER::GET_PLAYER_INDEX(), 10);
 	PED::_0x15F4732C357B1D6D(bParam1, PLAYER::GET_PLAYER_INDEX(), 11);
@@ -89740,7 +89740,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[0]), "Goon01");
 		func_2599(Local_14.f_1, &(Local_14.f_3[0]));
 		func_2105(&(Local_14.f_3[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[0]), true);
 		if (bParam1)
 		{
@@ -89760,7 +89760,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[1]), "Goon02");
 		func_2599(Local_14.f_1, &(Local_14.f_3[1]));
 		func_2105(&(Local_14.f_3[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[1]), true);
 		if (bParam1)
 		{
@@ -89780,7 +89780,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[2]), "Goon03");
 		func_2599(Local_14.f_1, &(Local_14.f_3[2]));
 		func_2105(&(Local_14.f_3[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[2]), true);
 		if (bParam1)
 		{
@@ -89800,7 +89800,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[3]), "Goon04");
 		func_2599(Local_14.f_1, &(Local_14.f_3[3]));
 		func_2105(&(Local_14.f_3[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[3]), true);
 		if (bParam1)
 		{
@@ -89820,7 +89820,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[4]), "Goon05");
 		func_2599(Local_14.f_1, &(Local_14.f_3[4]));
 		func_2105(&(Local_14.f_3[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[4]), true);
 		if (bParam1)
 		{
@@ -89840,7 +89840,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[5]), "Goon06");
 		func_2599(Local_14.f_1, &(Local_14.f_3[5]));
 		func_2105(&(Local_14.f_3[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[5]), true);
 		if (bParam1)
 		{
@@ -89860,7 +89860,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[6]), "Goon07");
 		func_2599(Local_14.f_1, &(Local_14.f_3[6]));
 		func_2105(&(Local_14.f_3[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[6]), true);
 		if (bParam1)
 		{
@@ -89880,7 +89880,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[7]), "Goon08");
 		func_2599(Local_14.f_1, &(Local_14.f_3[7]));
 		func_2105(&(Local_14.f_3[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[7]), true);
 		if (bParam1)
 		{
@@ -89900,7 +89900,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[8]), "Goon09");
 		func_2599(Local_14.f_1, &(Local_14.f_3[8]));
 		func_2105(&(Local_14.f_3[8]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[8]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[8]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[8]), true);
 		if (bParam1)
 		{
@@ -89920,7 +89920,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[9]), "Goon10");
 		func_2599(Local_14.f_1, &(Local_14.f_3[9]));
 		func_2105(&(Local_14.f_3[9]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[9]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[9]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[9]), true);
 		if (bParam1)
 		{
@@ -89940,7 +89940,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[10]), "Goon11");
 		func_2599(Local_14.f_1, &(Local_14.f_3[10]));
 		func_2105(&(Local_14.f_3[10]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[10]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[10]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[10]), true);
 		if (bParam1)
 		{
@@ -89960,7 +89960,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[11]), "Goon12");
 		func_2599(Local_14.f_1, &(Local_14.f_3[11]));
 		func_2105(&(Local_14.f_3[11]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[11]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[11]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[11]), true);
 		if (bParam1)
 		{
@@ -89980,7 +89980,7 @@ int func_2319(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_3[12]), "Goon13");
 		func_2599(Local_14.f_1, &(Local_14.f_3[12]));
 		func_2105(&(Local_14.f_3[12]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[12]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_3[12]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_3[12]), true);
 		if (bParam1)
 		{
@@ -90358,7 +90358,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[0]), "Goon01");
 		func_2599(Local_14.f_17, &(Local_14.f_19[0]));
 		func_2105(&(Local_14.f_19[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[0]), true);
 		if (bParam1)
 		{
@@ -90378,7 +90378,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[1]), "Goon02");
 		func_2599(Local_14.f_17, &(Local_14.f_19[1]));
 		func_2105(&(Local_14.f_19[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[1]), true);
 		if (bParam1)
 		{
@@ -90398,7 +90398,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[2]), "Goon03");
 		func_2599(Local_14.f_17, &(Local_14.f_19[2]));
 		func_2105(&(Local_14.f_19[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[2]), true);
 		if (bParam1)
 		{
@@ -90418,7 +90418,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[3]), "Goon04");
 		func_2599(Local_14.f_17, &(Local_14.f_19[3]));
 		func_2105(&(Local_14.f_19[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[3]), true);
 		if (bParam1)
 		{
@@ -90438,7 +90438,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[4]), "Goon05");
 		func_2599(Local_14.f_17, &(Local_14.f_19[4]));
 		func_2105(&(Local_14.f_19[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[4]), true);
 		if (bParam1)
 		{
@@ -90458,7 +90458,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[5]), "Goon06");
 		func_2599(Local_14.f_17, &(Local_14.f_19[5]));
 		func_2105(&(Local_14.f_19[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[5]), true);
 		if (bParam1)
 		{
@@ -90478,7 +90478,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[6]), "Goon07");
 		func_2599(Local_14.f_17, &(Local_14.f_19[6]));
 		func_2105(&(Local_14.f_19[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[6]), true);
 		if (bParam1)
 		{
@@ -90498,7 +90498,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[7]), "Goon08");
 		func_2599(Local_14.f_17, &(Local_14.f_19[7]));
 		func_2105(&(Local_14.f_19[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[7]), true);
 		if (bParam1)
 		{
@@ -90518,7 +90518,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[8]), "Goon09");
 		func_2599(Local_14.f_17, &(Local_14.f_19[8]));
 		func_2105(&(Local_14.f_19[8]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[8]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[8]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[8]), true);
 		if (bParam1)
 		{
@@ -90538,7 +90538,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[9]), "Goon10");
 		func_2599(Local_14.f_17, &(Local_14.f_19[9]));
 		func_2105(&(Local_14.f_19[9]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[9]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[9]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[9]), true);
 		if (bParam1)
 		{
@@ -90558,7 +90558,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[10]), "Goon11");
 		func_2599(Local_14.f_17, &(Local_14.f_19[10]));
 		func_2105(&(Local_14.f_19[10]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[10]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[10]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[10]), true);
 		if (bParam1)
 		{
@@ -90578,7 +90578,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[11]), "Goon12");
 		func_2599(Local_14.f_17, &(Local_14.f_19[11]));
 		func_2105(&(Local_14.f_19[11]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[11]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[11]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[11]), true);
 		if (bParam1)
 		{
@@ -90598,7 +90598,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[12]), "Goon13");
 		func_2599(Local_14.f_17, &(Local_14.f_19[12]));
 		func_2105(&(Local_14.f_19[12]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[12]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[12]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[12]), true);
 		if (bParam1)
 		{
@@ -90618,7 +90618,7 @@ int func_2322(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_19[13]), "Goon14");
 		func_2599(Local_14.f_17, &(Local_14.f_19[13]));
 		func_2105(&(Local_14.f_19[13]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[13]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_19[13]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_19[13]), true);
 		if (bParam1)
 		{
@@ -90652,7 +90652,7 @@ int func_2323(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_46[0]), "Milton");
 		func_2599(Local_14.f_44, &(Local_14.f_46[0]));
 		func_2105(&(Local_14.f_46[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_46[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_46[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_46[0]), true);
 		if (bParam1)
 		{
@@ -90672,7 +90672,7 @@ int func_2323(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_46[1]), "Goon01");
 		func_2599(Local_14.f_44, &(Local_14.f_46[1]));
 		func_2105(&(Local_14.f_46[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_46[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_46[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_46[1]), true);
 		if (bParam1)
 		{
@@ -90692,7 +90692,7 @@ int func_2323(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_46[2]), "Goon02");
 		func_2599(Local_14.f_44, &(Local_14.f_46[2]));
 		func_2105(&(Local_14.f_46[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_46[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_46[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_46[2]), true);
 		if (bParam1)
 		{
@@ -90736,7 +90736,7 @@ int func_2325(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_142[0]), "Goon01");
 		func_2599(Local_14.f_140, &(Local_14.f_142[0]));
 		func_2105(&(Local_14.f_142[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_142[0]), true);
 		if (bParam1)
 		{
@@ -90756,7 +90756,7 @@ int func_2325(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_142[1]), "Goon02");
 		func_2599(Local_14.f_140, &(Local_14.f_142[1]));
 		func_2105(&(Local_14.f_142[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_142[1]), true);
 		if (bParam1)
 		{
@@ -90776,7 +90776,7 @@ int func_2325(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_142[2]), "Goon03");
 		func_2599(Local_14.f_140, &(Local_14.f_142[2]));
 		func_2105(&(Local_14.f_142[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_142[2]), true);
 		if (bParam1)
 		{
@@ -90796,7 +90796,7 @@ int func_2325(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_142[3]), "Goon04");
 		func_2599(Local_14.f_140, &(Local_14.f_142[3]));
 		func_2105(&(Local_14.f_142[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_142[3]), true);
 		if (bParam1)
 		{
@@ -90816,7 +90816,7 @@ int func_2325(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_142[4]), "Goon05");
 		func_2599(Local_14.f_140, &(Local_14.f_142[4]));
 		func_2105(&(Local_14.f_142[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_142[4]), true);
 		if (bParam1)
 		{
@@ -90836,7 +90836,7 @@ int func_2325(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_142[5]), "Goon06");
 		func_2599(Local_14.f_140, &(Local_14.f_142[5]));
 		func_2105(&(Local_14.f_142[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_142[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_142[5]), true);
 		if (bParam1)
 		{
@@ -90919,7 +90919,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[0]), "Goon01");
 		func_2599(Local_14.f_50, &(Local_14.f_52[0]));
 		func_2105(&(Local_14.f_52[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[0]), true);
 		if (bParam1)
 		{
@@ -90939,7 +90939,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[1]), "Goon02");
 		func_2599(Local_14.f_50, &(Local_14.f_52[1]));
 		func_2105(&(Local_14.f_52[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[1]), true);
 		if (bParam1)
 		{
@@ -90959,7 +90959,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[2]), "Goon03");
 		func_2599(Local_14.f_50, &(Local_14.f_52[2]));
 		func_2105(&(Local_14.f_52[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[2]), true);
 		if (bParam1)
 		{
@@ -90979,7 +90979,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[3]), "Goon04");
 		func_2599(Local_14.f_50, &(Local_14.f_52[3]));
 		func_2105(&(Local_14.f_52[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[3]), true);
 		if (bParam1)
 		{
@@ -90999,7 +90999,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[4]), "Goon05");
 		func_2599(Local_14.f_50, &(Local_14.f_52[4]));
 		func_2105(&(Local_14.f_52[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[4]), true);
 		if (bParam1)
 		{
@@ -91019,7 +91019,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[5]), "Goon06");
 		func_2599(Local_14.f_50, &(Local_14.f_52[5]));
 		func_2105(&(Local_14.f_52[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[5]), true);
 		if (bParam1)
 		{
@@ -91039,7 +91039,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[6]), "Goon07");
 		func_2599(Local_14.f_50, &(Local_14.f_52[6]));
 		func_2105(&(Local_14.f_52[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[6]), true);
 		if (bParam1)
 		{
@@ -91059,7 +91059,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[7]), "Goon08");
 		func_2599(Local_14.f_50, &(Local_14.f_52[7]));
 		func_2105(&(Local_14.f_52[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[7]), true);
 		if (bParam1)
 		{
@@ -91079,7 +91079,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[8]), "Goon09");
 		func_2599(Local_14.f_50, &(Local_14.f_52[8]));
 		func_2105(&(Local_14.f_52[8]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[8]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[8]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[8]), true);
 		if (bParam1)
 		{
@@ -91099,7 +91099,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[9]), "Goon10");
 		func_2599(Local_14.f_50, &(Local_14.f_52[9]));
 		func_2105(&(Local_14.f_52[9]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[9]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[9]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[9]), true);
 		if (bParam1)
 		{
@@ -91119,7 +91119,7 @@ int func_2328(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_52[10]), "Goon11");
 		func_2599(Local_14.f_50, &(Local_14.f_52[10]));
 		func_2105(&(Local_14.f_52[10]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[10]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_52[10]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_52[10]), true);
 		if (bParam1)
 		{
@@ -91162,7 +91162,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[0]), "Goon01");
 		func_2599(Local_14.f_64, &(Local_14.f_66[0]));
 		func_2105(&(Local_14.f_66[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[0]), true);
 		if (bParam1)
 		{
@@ -91182,7 +91182,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[1]), "Goon02");
 		func_2599(Local_14.f_64, &(Local_14.f_66[1]));
 		func_2105(&(Local_14.f_66[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[1]), true);
 		if (bParam1)
 		{
@@ -91202,7 +91202,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[2]), "Goon03");
 		func_2599(Local_14.f_64, &(Local_14.f_66[2]));
 		func_2105(&(Local_14.f_66[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[2]), true);
 		if (bParam1)
 		{
@@ -91222,7 +91222,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[3]), "Goon04");
 		func_2599(Local_14.f_64, &(Local_14.f_66[3]));
 		func_2105(&(Local_14.f_66[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[3]), true);
 		if (bParam1)
 		{
@@ -91242,7 +91242,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[4]), "Goon05");
 		func_2599(Local_14.f_64, &(Local_14.f_66[4]));
 		func_2105(&(Local_14.f_66[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[4]), true);
 		if (bParam1)
 		{
@@ -91262,7 +91262,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[5]), "Goon06");
 		func_2599(Local_14.f_64, &(Local_14.f_66[5]));
 		func_2105(&(Local_14.f_66[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[5]), true);
 		if (bParam1)
 		{
@@ -91282,7 +91282,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[6]), "Goon07");
 		func_2599(Local_14.f_64, &(Local_14.f_66[6]));
 		func_2105(&(Local_14.f_66[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[6]), true);
 		if (bParam1)
 		{
@@ -91302,7 +91302,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[7]), "Goon08");
 		func_2599(Local_14.f_64, &(Local_14.f_66[7]));
 		func_2105(&(Local_14.f_66[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[7]), true);
 		if (bParam1)
 		{
@@ -91322,7 +91322,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[8]), "Goon09");
 		func_2599(Local_14.f_64, &(Local_14.f_66[8]));
 		func_2105(&(Local_14.f_66[8]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[8]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[8]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[8]), true);
 		if (bParam1)
 		{
@@ -91342,7 +91342,7 @@ int func_2330(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_66[9]), "Goon10");
 		func_2599(Local_14.f_64, &(Local_14.f_66[9]));
 		func_2105(&(Local_14.f_66[9]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[9]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_66[9]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_66[9]), true);
 		if (bParam1)
 		{
@@ -91376,7 +91376,7 @@ int func_2331(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_79[0]), "Goon01");
 		func_2599(Local_14.f_77, &(Local_14.f_79[0]));
 		func_2105(&(Local_14.f_79[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_79[0]), true);
 		if (bParam1)
 		{
@@ -91396,7 +91396,7 @@ int func_2331(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_79[1]), "Goon02");
 		func_2599(Local_14.f_77, &(Local_14.f_79[1]));
 		func_2105(&(Local_14.f_79[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_79[1]), true);
 		if (bParam1)
 		{
@@ -91416,7 +91416,7 @@ int func_2331(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_79[2]), "Goon03");
 		func_2599(Local_14.f_77, &(Local_14.f_79[2]));
 		func_2105(&(Local_14.f_79[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_79[2]), true);
 		if (bParam1)
 		{
@@ -91436,7 +91436,7 @@ int func_2331(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_79[3]), "Goon04");
 		func_2599(Local_14.f_77, &(Local_14.f_79[3]));
 		func_2105(&(Local_14.f_79[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_79[3]), true);
 		if (bParam1)
 		{
@@ -91456,7 +91456,7 @@ int func_2331(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_79[4]), "Goon05");
 		func_2599(Local_14.f_77, &(Local_14.f_79[4]));
 		func_2105(&(Local_14.f_79[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_79[4]), true);
 		if (bParam1)
 		{
@@ -91476,7 +91476,7 @@ int func_2331(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_79[5]), "Goon06");
 		func_2599(Local_14.f_77, &(Local_14.f_79[5]));
 		func_2105(&(Local_14.f_79[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_79[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_79[5]), true);
 		if (bParam1)
 		{
@@ -91510,7 +91510,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[0]), "Goon01");
 		func_2599(Local_14.f_97, &(Local_14.f_99[0]));
 		func_2105(&(Local_14.f_99[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[0]), true);
 		if (bParam1)
 		{
@@ -91530,7 +91530,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[1]), "Goon02");
 		func_2599(Local_14.f_97, &(Local_14.f_99[1]));
 		func_2105(&(Local_14.f_99[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[1]), true);
 		if (bParam1)
 		{
@@ -91550,7 +91550,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[2]), "Goon03");
 		func_2599(Local_14.f_97, &(Local_14.f_99[2]));
 		func_2105(&(Local_14.f_99[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[2]), true);
 		if (bParam1)
 		{
@@ -91570,7 +91570,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[3]), "Goon04");
 		func_2599(Local_14.f_97, &(Local_14.f_99[3]));
 		func_2105(&(Local_14.f_99[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[3]), true);
 		if (bParam1)
 		{
@@ -91590,7 +91590,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[4]), "Goon05");
 		func_2599(Local_14.f_97, &(Local_14.f_99[4]));
 		func_2105(&(Local_14.f_99[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[4]), true);
 		if (bParam1)
 		{
@@ -91610,7 +91610,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[5]), "Goon06");
 		func_2599(Local_14.f_97, &(Local_14.f_99[5]));
 		func_2105(&(Local_14.f_99[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[5]), true);
 		if (bParam1)
 		{
@@ -91630,7 +91630,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[6]), "Goon07");
 		func_2599(Local_14.f_97, &(Local_14.f_99[6]));
 		func_2105(&(Local_14.f_99[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[6]), true);
 		if (bParam1)
 		{
@@ -91650,7 +91650,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[7]), "Goon08");
 		func_2599(Local_14.f_97, &(Local_14.f_99[7]));
 		func_2105(&(Local_14.f_99[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[7]), true);
 		if (bParam1)
 		{
@@ -91670,7 +91670,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[8]), "Goon09");
 		func_2599(Local_14.f_97, &(Local_14.f_99[8]));
 		func_2105(&(Local_14.f_99[8]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[8]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[8]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[8]), true);
 		if (bParam1)
 		{
@@ -91690,7 +91690,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[9]), "Goon10");
 		func_2599(Local_14.f_97, &(Local_14.f_99[9]));
 		func_2105(&(Local_14.f_99[9]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[9]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[9]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[9]), true);
 		if (bParam1)
 		{
@@ -91710,7 +91710,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[10]), "Goon11");
 		func_2599(Local_14.f_97, &(Local_14.f_99[10]));
 		func_2105(&(Local_14.f_99[10]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[10]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[10]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[10]), true);
 		if (bParam1)
 		{
@@ -91730,7 +91730,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[11]), "Goon12");
 		func_2599(Local_14.f_97, &(Local_14.f_99[11]));
 		func_2105(&(Local_14.f_99[11]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[11]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[11]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[11]), true);
 		if (bParam1)
 		{
@@ -91750,7 +91750,7 @@ int func_2332(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_99[12]), "Goon13");
 		func_2599(Local_14.f_97, &(Local_14.f_99[12]));
 		func_2105(&(Local_14.f_99[12]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[12]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_99[12]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_99[12]), true);
 		if (bParam1)
 		{
@@ -91804,7 +91804,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[0]), "Goon01");
 		func_2599(Local_14.f_113, &(Local_14.f_115[0]));
 		func_2105(&(Local_14.f_115[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[0]), true);
 		if (bParam1)
 		{
@@ -91824,7 +91824,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[1]), "Goon02");
 		func_2599(Local_14.f_113, &(Local_14.f_115[1]));
 		func_2105(&(Local_14.f_115[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[1]), true);
 		if (bParam1)
 		{
@@ -91844,7 +91844,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[2]), "Goon03");
 		func_2599(Local_14.f_113, &(Local_14.f_115[2]));
 		func_2105(&(Local_14.f_115[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[2]), true);
 		if (bParam1)
 		{
@@ -91864,7 +91864,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[3]), "Goon04");
 		func_2599(Local_14.f_113, &(Local_14.f_115[3]));
 		func_2105(&(Local_14.f_115[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[3]), true);
 		if (bParam1)
 		{
@@ -91884,7 +91884,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[4]), "Goon05");
 		func_2599(Local_14.f_113, &(Local_14.f_115[4]));
 		func_2105(&(Local_14.f_115[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[4]), true);
 		if (bParam1)
 		{
@@ -91904,7 +91904,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[5]), "Goon06");
 		func_2599(Local_14.f_113, &(Local_14.f_115[5]));
 		func_2105(&(Local_14.f_115[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[5]), true);
 		if (bParam1)
 		{
@@ -91924,7 +91924,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[6]), "Goon07");
 		func_2599(Local_14.f_113, &(Local_14.f_115[6]));
 		func_2105(&(Local_14.f_115[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[6]), true);
 		if (bParam1)
 		{
@@ -91944,7 +91944,7 @@ int func_2334(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_115[7]), "Goon08");
 		func_2599(Local_14.f_113, &(Local_14.f_115[7]));
 		func_2105(&(Local_14.f_115[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_115[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_115[7]), true);
 		if (bParam1)
 		{
@@ -96871,7 +96871,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[0]), "Goon01");
 		func_2599(Local_14.f_34, &(Local_14.f_36[0]));
 		func_2105(&(Local_14.f_36[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[0]), true);
 		if (bParam1)
 		{
@@ -96891,7 +96891,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[1]), "Goon02");
 		func_2599(Local_14.f_34, &(Local_14.f_36[1]));
 		func_2105(&(Local_14.f_36[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[1]), true);
 		if (bParam1)
 		{
@@ -96911,7 +96911,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[2]), "Goon03");
 		func_2599(Local_14.f_34, &(Local_14.f_36[2]));
 		func_2105(&(Local_14.f_36[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[2]), true);
 		if (bParam1)
 		{
@@ -96931,7 +96931,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[3]), "Goon04");
 		func_2599(Local_14.f_34, &(Local_14.f_36[3]));
 		func_2105(&(Local_14.f_36[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[3]), true);
 		if (bParam1)
 		{
@@ -96951,7 +96951,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[4]), "Goon05");
 		func_2599(Local_14.f_34, &(Local_14.f_36[4]));
 		func_2105(&(Local_14.f_36[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[4]), true);
 		if (bParam1)
 		{
@@ -96971,7 +96971,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[5]), "Goon06");
 		func_2599(Local_14.f_34, &(Local_14.f_36[5]));
 		func_2105(&(Local_14.f_36[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[5]), true);
 		if (bParam1)
 		{
@@ -96991,7 +96991,7 @@ int func_2580(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_36[6]), "Goon07");
 		func_2599(Local_14.f_34, &(Local_14.f_36[6]));
 		func_2105(&(Local_14.f_36[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_36[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_36[6]), true);
 		if (bParam1)
 		{
@@ -97147,7 +97147,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[0]), "Goon01");
 		func_2599(Local_14.f_86, &(Local_14.f_88[0]));
 		func_2105(&(Local_14.f_88[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[0]), true);
 		if (bParam1)
 		{
@@ -97167,7 +97167,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[1]), "Goon02");
 		func_2599(Local_14.f_86, &(Local_14.f_88[1]));
 		func_2105(&(Local_14.f_88[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[1]), true);
 		if (bParam1)
 		{
@@ -97187,7 +97187,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[2]), "Goon03");
 		func_2599(Local_14.f_86, &(Local_14.f_88[2]));
 		func_2105(&(Local_14.f_88[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[2]), true);
 		if (bParam1)
 		{
@@ -97207,7 +97207,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[3]), "Goon04");
 		func_2599(Local_14.f_86, &(Local_14.f_88[3]));
 		func_2105(&(Local_14.f_88[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[3]), true);
 		if (bParam1)
 		{
@@ -97227,7 +97227,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[4]), "Goon05");
 		func_2599(Local_14.f_86, &(Local_14.f_88[4]));
 		func_2105(&(Local_14.f_88[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[4]), true);
 		if (bParam1)
 		{
@@ -97247,7 +97247,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[5]), "Goon06");
 		func_2599(Local_14.f_86, &(Local_14.f_88[5]));
 		func_2105(&(Local_14.f_88[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[5]), true);
 		if (bParam1)
 		{
@@ -97267,7 +97267,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[6]), "Goon07");
 		func_2599(Local_14.f_86, &(Local_14.f_88[6]));
 		func_2105(&(Local_14.f_88[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[6]), true);
 		if (bParam1)
 		{
@@ -97287,7 +97287,7 @@ int func_2588(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_88[7]), "Goon08");
 		func_2599(Local_14.f_86, &(Local_14.f_88[7]));
 		func_2105(&(Local_14.f_88[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_88[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_88[7]), true);
 		if (bParam1)
 		{
@@ -97517,8 +97517,8 @@ void func_2592(bool bParam0, int iParam1)
 	{
 		func_1122(iParam1, 38, 1);
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam0, -1856989775);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, -1856989775);
+	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam0, joaat("REL_GANG_DUTCHS_HORSES"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, joaat("REL_GANG_DUTCHS_HORSES"));
 	if (Global_40.f_4283 == 0)
 	{
 		PED::SET_PED_CONFIG_FLAG(bParam0, 172, true);
@@ -97859,7 +97859,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[0]), "Goon01");
 		func_2599(Local_14.f_149, &(Local_14.f_151[0]));
 		func_2105(&(Local_14.f_151[0]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[0]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[0]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[0]), true);
 		if (bParam1)
 		{
@@ -97879,7 +97879,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[1]), "Goon02");
 		func_2599(Local_14.f_149, &(Local_14.f_151[1]));
 		func_2105(&(Local_14.f_151[1]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[1]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[1]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[1]), true);
 		if (bParam1)
 		{
@@ -97899,7 +97899,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[2]), "Goon03");
 		func_2599(Local_14.f_149, &(Local_14.f_151[2]));
 		func_2105(&(Local_14.f_151[2]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[2]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[2]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[2]), true);
 		if (bParam1)
 		{
@@ -97919,7 +97919,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[3]), "Goon04");
 		func_2599(Local_14.f_149, &(Local_14.f_151[3]));
 		func_2105(&(Local_14.f_151[3]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[3]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[3]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[3]), true);
 		if (bParam1)
 		{
@@ -97939,7 +97939,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[4]), "Goon05");
 		func_2599(Local_14.f_149, &(Local_14.f_151[4]));
 		func_2105(&(Local_14.f_151[4]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[4]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[4]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[4]), true);
 		if (bParam1)
 		{
@@ -97959,7 +97959,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[5]), "Goon06");
 		func_2599(Local_14.f_149, &(Local_14.f_151[5]));
 		func_2105(&(Local_14.f_151[5]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[5]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[5]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[5]), true);
 		if (bParam1)
 		{
@@ -97979,7 +97979,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[6]), "Goon07");
 		func_2599(Local_14.f_149, &(Local_14.f_151[6]));
 		func_2105(&(Local_14.f_151[6]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[6]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[6]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[6]), true);
 		if (bParam1)
 		{
@@ -97999,7 +97999,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[7]), "Goon08");
 		func_2599(Local_14.f_149, &(Local_14.f_151[7]));
 		func_2105(&(Local_14.f_151[7]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[7]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[7]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[7]), true);
 		if (bParam1)
 		{
@@ -98019,7 +98019,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[8]), "Goon09");
 		func_2599(Local_14.f_149, &(Local_14.f_151[8]));
 		func_2105(&(Local_14.f_151[8]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[8]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[8]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[8]), true);
 		if (bParam1)
 		{
@@ -98039,7 +98039,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[9]), "Goon10");
 		func_2599(Local_14.f_149, &(Local_14.f_151[9]));
 		func_2105(&(Local_14.f_151[9]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[9]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[9]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[9]), true);
 		if (bParam1)
 		{
@@ -98059,7 +98059,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[10]), "Goon11");
 		func_2599(Local_14.f_149, &(Local_14.f_151[10]));
 		func_2105(&(Local_14.f_151[10]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[10]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[10]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[10]), true);
 		if (bParam1)
 		{
@@ -98079,7 +98079,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[11]), "Goon12");
 		func_2599(Local_14.f_149, &(Local_14.f_151[11]));
 		func_2105(&(Local_14.f_151[11]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[11]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[11]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[11]), true);
 		if (bParam1)
 		{
@@ -98099,7 +98099,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[12]), "Goon13");
 		func_2599(Local_14.f_149, &(Local_14.f_151[12]));
 		func_2105(&(Local_14.f_151[12]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[12]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[12]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[12]), true);
 		if (bParam1)
 		{
@@ -98119,7 +98119,7 @@ int func_2610(int iParam0, bool bParam1)
 		PED::SET_PED_NAME_DEBUG(&(Local_14.f_151[13]), "Goon14");
 		func_2599(Local_14.f_149, &(Local_14.f_151[13]));
 		func_2105(&(Local_14.f_151[13]), Local_14);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[13]), 1269650476);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_14.f_151[13]), joaat("REL_PLAYER_ENEMY"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_14.f_151[13]), true);
 		if (bParam1)
 		{
@@ -110242,7 +110242,7 @@ int func_3021(int iParam0, bool bParam1)
 	func_3099(iParam0, 1);
 	Global_1359489->f_15 = func_3101(1);
 	func_1122(iParam0, 32, 1);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], -1247684992);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_COMPANION_GROUP"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, true);
 	PED::_0x9238A3D970BBB0A9(Global_1360165[iParam0 /*1157*/], -1972074710);
 	PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, true);
@@ -110291,7 +110291,7 @@ void func_3022(int iParam0)
 	func_1090(iParam0, 32, 1);
 	if (func_1124(Global_1360165[iParam0 /*1157*/], 0))
 	{
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, false);
 		PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, false);
 		Var1 = PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX());
@@ -110519,19 +110519,19 @@ int func_3032(bool bParam0, var uParam1, bool bParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -111232,13 +111232,13 @@ int func_3060(var uParam0, bool bParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

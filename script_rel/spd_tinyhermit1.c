@@ -351,21 +351,21 @@ void func_7(int iParam0, bool bParam1)
 		case 0:
 			if (bParam1)
 			{
-				func_47(joaat("journal_special_peds_agnes_dowd_ar"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_AGNES_DOWD_AR"), 0);
 			}
 			else
 			{
-				func_47(joaat("journal_special_peds_agnes_dowd_jn"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_AGNES_DOWD_JN"), 0);
 			}
 			break;
 		case 4:
 			if (bParam1)
 			{
-				func_47(joaat("journal_special_peds_cassidy_ar"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_CASSIDY_AR"), 0);
 			}
 			else
 			{
-				func_47(joaat("journal_special_peds_cassidy_jn"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_CASSIDY_JN"), 0);
 			}
 			break;
 		case 5:
@@ -375,27 +375,27 @@ void func_7(int iParam0, bool bParam1)
 			}
 			else if (func_48(55))
 			{
-				func_47(joaat("journal_rc_crkpt4_1b_jn"), 0);
+				func_47(joaat("JOURNAL_RC_CRKPT4_1B_JN"), 0);
 			}
 			else
 			{
-				func_47(joaat("journal_rc_crkpt4_1a_jn"), 0);
+				func_47(joaat("JOURNAL_RC_CRKPT4_1A_JN"), 0);
 			}
 			break;
 		case 12:
 			if (bParam1)
 			{
-				func_47(joaat("journal_special_peds_giant_ar"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_GIANT_AR"), 0);
 			}
 			else
 			{
-				func_47(joaat("journal_special_peds_giant_jn"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_GIANT_JN"), 0);
 			}
 			break;
 		case 20:
 			if (bParam1)
 			{
-				func_47(joaat("journal_special_peds_philosopher_cave_ar"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_PHILOSOPHER_CAVE_AR"), 0);
 			}
 			else
 			{
@@ -409,17 +409,17 @@ void func_7(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_47(joaat("journal_special_peds_tree_monkey_jn"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_TREE_MONKEY_JN"), 0);
 			}
 			break;
 		case 28:
 			if (bParam1)
 			{
-				func_47(joaat("journal_special_peds_cabin_hermit_ar"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_CABIN_HERMIT_AR"), 0);
 			}
 			else
 			{
-				func_47(joaat("journal_special_peds_cabin_hermit_jn"), 0);
+				func_47(joaat("JOURNAL_SPECIAL_PEDS_CABIN_HERMIT_JN"), 0);
 			}
 			break;
 		default:
@@ -1057,7 +1057,7 @@ void func_26(var uParam0, int iParam1)
 				WEAPON::_GIVE_WEAPON_TO_PED_2(&(uParam0->f_149[0]), joaat("WEAPON_SHOTGUN_DOUBLEBARREL_EXOTIC"), -1, true, false, 0, false, 0.5f, 1f, 752097756, true, 0f, false);
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(uParam0->f_149[0]), true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_149[0]), -1976316465);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_149[0]), joaat("REL_CIVMALE"));
 			PED::SET_PED_KEEP_TASK(&(uParam0->f_149[0]), true);
 			func_119(uParam0, 0);
 			PED::SET_PED_MAX_HEALTH(&(uParam0->f_149[0]), 250);
@@ -3438,7 +3438,7 @@ bool func_118(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 				return bParam1;
 			}
 			bVar0 = bParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(bVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -3478,7 +3478,7 @@ bool func_118(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 		{
 			bVar22 = true;
 		}
-		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -6618,7 +6618,7 @@ void func_236(int iParam0, bool bParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -7621,19 +7621,19 @@ int func_288(bool bParam0, var uParam1, bool bParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -8305,13 +8305,13 @@ int func_317(var uParam0, bool bParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;
@@ -11705,17 +11705,17 @@ int func_446(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;

@@ -1014,7 +1014,7 @@ void func_12(bool bParam0)
 		{
 			if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && bVar3)
 			{
-				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 1030835986);
+				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_GANG_DUTCHS"));
 				func_3(&(Global_1394141->f_1326), 8);
 			}
 		}
@@ -2206,7 +2206,7 @@ int func_39(var uParam0, int iParam1)
 			PED::SET_PED_CONFIG_FLAG(uParam0[iVar1 /*10*/], 448, true);
 			AUDIO::STOP_PED_SPEAKING(uParam0[iVar1 /*10*/], true);
 			PED::SET_PED_CAN_BE_TARGETTED(uParam0[iVar1 /*10*/], false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], joaat("REL_PLAYER_ALLY"));
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0[iVar1 /*10*/], true);
 			func_188(uParam0[iVar1 /*10*/], 0);
 		}
@@ -11373,7 +11373,7 @@ void func_277(int iParam0)
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		PED::SET_PED_CAN_BE_TARGETTED(iParam0, false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, -1538724068);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, joaat("REL_PLAYER_ALLY"));
 	}
 }
 

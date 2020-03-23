@@ -594,9 +594,9 @@ void func_7()
 	{
 		if (bLocal_786)
 		{
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1])) == 1391706777)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1])) == joaat("REL_PLAYER_LIKE"))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 841021282);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_CIVFEMALE"));
 				bLocal_786 = false;
 			}
 		}
@@ -4454,9 +4454,9 @@ void func_99()
 			{
 				if (bLocal_786)
 				{
-					if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1])) == 1391706777)
+					if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1])) == joaat("REL_PLAYER_LIKE"))
 					{
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 841021282);
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_CIVFEMALE"));
 						bLocal_786 = false;
 					}
 				}
@@ -4658,7 +4658,7 @@ void func_104()
 			ENTITY::_SET_ENTITY_COORDS_AND_HEADING(&(uLocal_443[5]), (Local_229[5 /*32*/])->f_6, (Local_229[4 /*32*/])->f_9, true, true, true);
 			ENTITY::_0x9587913B9E772D29(&(uLocal_443[4]), 0);
 			ENTITY::_0x9587913B9E772D29(&(uLocal_443[5]), 0);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 1269650476);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_PLAYER_ENEMY"));
 			WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_443[1]), joaat("WEAPON_REVOLVER_CATTLEMAN"), false, 0, false, false);
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_LOOK_BEHIND"), false);
 			func_344();
@@ -4987,7 +4987,7 @@ void func_105()
 			ENTITY::_SET_ENTITY_COORDS_AND_HEADING(&(uLocal_443[5]), (Local_229[5 /*32*/])->f_6, (Local_229[4 /*32*/])->f_9, true, true, false);
 			ENTITY::_0x9587913B9E772D29(&(uLocal_443[4]), 0);
 			ENTITY::_0x9587913B9E772D29(&(uLocal_443[5]), 0);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 1269650476);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_PLAYER_ENEMY"));
 			func_192(&(uLocal_443[1]), uLocal_488[0], 0, 0);
 			vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(ENTITY::GET_ENTITY_COORDS(&(uLocal_443[1]), true, false), ENTITY::GET_ENTITY_HEADING(&(uLocal_443[1])), 0f, -7f, 0f) };
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_500);
@@ -5074,7 +5074,7 @@ void func_106()
 			iLocal_450[1] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(uLocal_443[1]));
 			PLAYER::RESET_PLAYER_ARREST_STATE(PLAYER::PLAYER_ID());
 			PLAYER::_0xCBB54CC7FFFFAB86(PLAYER::PLAYER_ID(), 0, 0, 0);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 1269650476);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_PLAYER_ENEMY"));
 			PED::_0xD8736EFDA38EDC5C(&(uLocal_443[1]), ENTITY::GET_ENTITY_COORDS(Global_35, true, false), 3f);
 			WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_443[1]), joaat("WEAPON_REVOLVER_CATTLEMAN"), false, 0, false, false);
 			iLocal_619 = 1;
@@ -13593,7 +13593,7 @@ void func_322()
 							iVar0 = PED::GET_VEHICLE_PED_IS_IN(&(uLocal_443[1]), true);
 							if (!bLocal_786)
 							{
-								PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 1391706777);
+								PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_PLAYER_LIKE"));
 								bLocal_786 = true;
 							}
 							func_342(iVar0, &iLocal_780, 408396114, 0, 0, 0);
@@ -15430,17 +15430,17 @@ int func_380(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;
@@ -18209,7 +18209,7 @@ int func_447(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -18249,7 +18249,7 @@ int func_447(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -19045,7 +19045,7 @@ int func_471(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -20755,9 +20755,9 @@ void func_538()
 		TASK::CLEAR_SEQUENCE_TASK(&iLocal_783);
 		if (bLocal_786)
 		{
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1])) == 1391706777)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1])) == joaat("REL_PLAYER_LIKE"))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), 841021282);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_443[1]), joaat("REL_CIVFEMALE"));
 				bLocal_786 = false;
 			}
 		}
@@ -23375,7 +23375,7 @@ void func_634(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -32300,19 +32300,19 @@ int func_885(int iParam0, int iParam1, int iParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -32998,13 +32998,13 @@ int func_912(int iParam0, int iParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;

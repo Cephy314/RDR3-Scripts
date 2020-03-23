@@ -3172,7 +3172,7 @@ int func_100(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4, i
 			ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iParam2, true, true);
 		}
 	}
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam2, -225988669);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam2, joaat("REL_MINIGAME_PLAYER"));
 	PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(iParam2, true);
 	PED::SET_PED_CONFIG_FLAG(iParam2, 453, true);
 	PED::SET_PED_CONFIG_FLAG(iParam2, 130, false);

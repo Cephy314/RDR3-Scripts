@@ -1565,247 +1565,247 @@ Vector3 func_26(int iParam0)
 	}
 	switch (func_158(iParam0))
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			vVar3 = { 498.174f, -256.7451f, 143.3717f };
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			vVar3 = { -1164.453f, 91.68877f, 44.62806f };
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			vVar3 = { -1582.034f, 498.4228f, 114.0487f };
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			vVar3 = { 1172.784f, -2180.536f, 54.65417f };
 			break;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			vVar3 = { 2121.892f, -138.5448f, 49.74233f };
 			break;
-		case 298607063:
+		case joaat("gang_murfreeransack_loc01_shoe"):
 			vVar3 = { 2121.77f, -139.2138f, 49.71836f };
 			break;
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			vVar3 = { 2467f, -89.99516f, 45.19795f };
 			break;
-		case 1117165375:
+		case joaat("gang_murfreeransack_loc02_shoe"):
 			vVar3 = { 2464.787f, -91.20225f, 45.15141f };
 			break;
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			vVar3 = { 2555.149f, -66.95429f, 49.53902f };
 			break;
-		case -1985868973:
+		case joaat("gang_murfreeransack_loc03_shoe"):
 			vVar3 = { 2550.89f, -70.14941f, 49.58291f };
 			break;
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			vVar3 = { 2320.137f, 9.97915f, 47.49155f };
 			break;
-		case 354638936:
+		case joaat("gang_murfreeransack_loc04_shoe"):
 			vVar3 = { 2319.414f, 11.21736f, 47.49919f };
 			break;
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			vVar3 = { 2440.252f, 647.3441f, 69.38534f };
 			break;
-		case 1416094782:
+		case joaat("gang_murfreeransack_loc05_shoe"):
 			vVar3 = { 2436.895f, 641.1175f, 69.33932f };
 			break;
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			vVar3 = { 2425.307f, 779.8348f, 67.81346f };
 			break;
-		case 1062381624:
+		case joaat("gang_murfreeransack_loc06_shoe"):
 			vVar3 = { 2420.318f, 777.536f, 67.6056f };
 			break;
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			vVar3 = { 2361.987f, 841.1643f, 78.79051f };
 			break;
-		case -1986775954:
+		case joaat("gang_murfreeransack_loc07_shoe"):
 			vVar3 = { 2358.234f, 840.37f, 78.72357f };
 			break;
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			vVar3 = { 2409.418f, 884.5353f, 73.20782f };
 			break;
-		case -899261623:
+		case joaat("gang_murfreeransack_loc08_shoe"):
 			vVar3 = { 2404.697f, 883.5768f, 73.29004f };
 			break;
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			vVar3 = { 2503.454f, 883.302f, 72.8469f };
 			break;
-		case -557729610:
+		case joaat("gang_murfreeransack_loc09_shoe"):
 			vVar3 = { 2507.415f, 881.9269f, 72.64252f };
 			break;
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			vVar3 = { 2391.311f, 1024.629f, 89.66936f };
 			break;
-		case -1991979537:
+		case joaat("gang_murfreeransack_loc10_shoe"):
 			vVar3 = { 2386.943f, 1024.219f, 89.71957f };
 			break;
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			vVar3 = { 2302.055f, 1055.938f, 115.7271f };
 			break;
-		case 1193231534:
+		case joaat("gang_murfreeransack_loc11_shoe"):
 			vVar3 = { 2299.388f, 1052.703f, 115.6931f };
 			break;
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			vVar3 = { 2518.389f, 1749.014f, 87.51678f };
 			break;
-		case 1807258239:
+		case joaat("gang_murfreeransack_loc12_shoe"):
 			vVar3 = { 2516.159f, 1746.446f, 87.39398f };
 			break;
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			vVar3 = { 2793.999f, 2009.131f, 164.7415f };
 			break;
-		case 787640784:
+		case joaat("gang_murfreeransack_loc13_shoe"):
 			vVar3 = { 2793.361f, 2009.616f, 164.7349f };
 			break;
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			vVar3 = { 2622.838f, 2106.842f, 173.2784f };
 			break;
-		case -1414272575:
+		case joaat("gang_murfreeransack_loc14_shoe"):
 			vVar3 = { 2617.052f, 2106.459f, 173.1849f };
 			break;
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			vVar3 = { -2000.054f, -1828.726f, 112.4916f };
 			break;
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			vVar3 = { -2130.4f, -1775.59f, 141.8341f };
 			break;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			vVar3 = { -2672.631f, -1457.476f, 145.6802f };
 			break;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			vVar3 = { -2429.996f, -1337.574f, 152.9727f };
 			break;
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			vVar3 = { -2102.945f, -1257.687f, 122.1524f };
 			break;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			vVar3 = { -2033.818f, -1269.037f, 114.7918f };
 			break;
 		default:
@@ -6317,7 +6317,7 @@ void func_146(int iParam0, var uParam1)
 			iParam0->f_413 = iVar23;
 		}
 	}
-	if ((((((!bVar4 && !iParam0->f_416) && !iParam0->f_415) && !iParam0->f_419) && iParam0->f_616 != -1710969071) && !func_380(iParam0->f_97, iParam0->f_101)) && func_377())
+	if ((((((!bVar4 && !iParam0->f_416) && !iParam0->f_415) && !iParam0->f_419) && iParam0->f_616 != joaat("amb_camp_bgv_drunk01")) && !func_380(iParam0->f_97, iParam0->f_101)) && func_377())
 	{
 		func_381(iParam0);
 	}
@@ -7729,69 +7729,69 @@ char* func_187(var uParam0)
 	{
 		case 1503442953:
 			return "ac_nav_bay_squat_macomb";
-		case -1227807056:
+		case joaat("amb_camp_bay_story_specter"):
 			return "ac_nav_bay_story_specter";
-		case 31909846:
+		case joaat("amb_camp_bay_story_copperhead"):
 			return "ac_nav_bay_story_copperhead";
-		case -315113250:
+		case joaat("amb_camp_cml_story_valentine"):
 			return "ac_nav_cml_story_valentine";
 		case -1928361302:
 			return "ac_nav_cml_story_stdenis";
 		case 1283988553:
 			return "ac_nav_gre_story_hunter";
-		case 416759610:
+		case joaat("amb_camp_gre_story_treasure"):
 			return "ac_nav_gre_story_treasure";
-		case 840395410:
+		case joaat("amb_camp_grt_story_manzanita"):
 			return "ac_nav_grt_story_manzanita";
 		case 292362182:
 			return "ac_nav_hen_story_harlow";
-		case -1235304557:
+		case joaat("amb_camp_hrt_story_cannibal"):
 			return "ac_nav_hrt_story_cannibal";
-		case 508853087:
+		case joaat("amb_camp_hrt_story_chelonian"):
 			return "ac_nav_hrt_story_chelonian";
-		case -985843618:
+		case joaat("amb_camp_roa_story_rhodes"):
 			return "ac_nav_roa_story_rhodes";
-		case -248246131:
+		case joaat("amb_camp_roa_creep01"):
 			return "ac_nav_roa_creep01";
-		case 1532041436:
+		case joaat("amb_camp_roa_story_pigfarm"):
 			return "ac_nav_roa_story_pigfarm";
-		case 1993833091:
+		case joaat("amb_camp_roa_story_princess"):
 			return "ac_nav_roa_story_princess";
-		case 1344880374:
+		case joaat("amb_camp_scm_story_murfee"):
 			return "ac_nav_scm_story_murfee";
-		case 1234648758:
+		case joaat("amb_camp_tal_story_emranch"):
 			return "ac_nav_tal_story_emranch";
-		case 808313916:
+		case joaat("amb_camp_bgv_hunt01"):
 			return "ac_nav_bgv_hunt01";
-		case 929504930:
+		case joaat("amb_camp_bgv_glamp01"):
 			return "ac_nav_bgv_glamp01";
-		case 1499112197:
+		case joaat("amb_camp_bgv_explr01"):
 			return "ac_nav_bgv_explr01";
-		case -1710969071:
+		case joaat("amb_camp_bgv_drunk01"):
 			return "ac_nav_bgv_drunk01";
-		case 1049849921:
+		case joaat("amb_camp_bgv_006"):
 			return "ac_nav_bgv_006";
-		case 1252084553:
+		case joaat("amb_camp_bgv_basket"):
 			return "ac_nav_bgv_basket";
-		case 37622013:
+		case joaat("amb_camp_bgv_gold01"):
 			return "ac_nav_bgv_gold01";
 		case 276427301:
 			return "ac_nav_mount_view_1";
-		case 722810050:
+		case joaat("amb_camp_bgv_dead01"):
 			return "ac_nav_bgv_dead01";
-		case -1501864740:
+		case joaat("amb_camp_bgv_ovrhang"):
 			return "ac_nav_bgv_ovrhang";
-		case 539464064:
+		case joaat("amb_camp_bgv_mount_view_2"):
 			return "ac_nav_bgv_mount_view_2";
-		case -995906750:
+		case joaat("amb_camp_bgv_canoe01"):
 			return "ac_nav_bgv_canoe01";
-		case -1070814495:
+		case joaat("amb_camp_bgv_robbery"):
 			return "ac_nav_bgv_robbery";
 		case -2112989134:
 			return "ac_nav_bgv_cave";
 		case -792399058:
 			return "ac_nav_bgv_wagon01";
-		case -433293752:
+		case joaat("amb_camp_hrt_agro"):
 			return "ac_nav_hrt_agro";
 		default:
 			break;
@@ -8496,7 +8496,7 @@ void func_223(var uParam0)
 	{
 		if (((MISC::GET_FRAME_COUNT() % 10) == 0 && STREAMING::_0x73B40D97D7BAAD77(uParam0->f_616, Global_36)) && func_273(Global_35, uParam0->f_97, 1) < 50f)
 		{
-			iVar0 = 1212186523;
+			iVar0 = joaat("CARRIABLE_ANIMAL_SKIN_ML");
 			iVar1 = joaat("p_cs_pelt_medlarge");
 			switch (uParam0->f_616)
 			{
@@ -8789,8 +8789,8 @@ int func_228(var uParam0)
 	}
 	switch (uParam0->f_616)
 	{
-		case 37622013:
-		case 808313916:
+		case joaat("amb_camp_bgv_gold01"):
+		case joaat("amb_camp_bgv_hunt01"):
 			return 1;
 		default:
 			break;
@@ -13253,7 +13253,7 @@ struct<55> func_350(var uParam0)
 	Var1.f_41 = 13;
 	switch (iVar0)
 	{
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1184.418f, -2181.725f, 54.2527f };
 			Var1.f_41[0] = joaat("p_lampkerosene01x");
@@ -13270,7 +13270,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1167.087f, -2183.198f, 54.7602f };
 			Var1.f_41[6] = joaat("p_lantern05x");
 			break;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1422.627f, -2181.514f, 50.5542f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -13287,7 +13287,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1437.228f, -2186.275f, 49.0088f };
 			Var1.f_41[6] = joaat("p_lampkerosene01x");
 			break;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1561.611f, -2059.282f, 48.0019f };
 			Var1.f_41[0] = joaat("p_lampkerosene01x");
@@ -13304,7 +13304,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1559.208f, -2040.987f, 47.7164f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1696.398f, -2005.459f, 44.1072f };
 			Var1.f_41[0] = joaat("p_candlegroup07x");
@@ -13321,7 +13321,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1704.241f, -2019.003f, 44.0485f };
 			Var1.f_41[6] = joaat("p_lampkerosene01x");
 			break;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1382.157f, -1703.239f, 68.8942f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -13338,7 +13338,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1391.651f, -1696.529f, 66.8421f };
 			Var1.f_41[6] = joaat("p_lampkerosene01x");
 			break;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1633.671f, -1652.616f, 57.4065f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -13355,7 +13355,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1628.574f, -1652.788f, 59.1847f };
 			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
 			break;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1497.783f, -1472.077f, 73.6557f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -13372,7 +13372,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1502.219f, -1476.813f, 74.6078f };
 			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
 			break;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 860.4436f, -1332.898f, 55.3573f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13389,7 +13389,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 876.8427f, -1331.112f, 56.2669f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 940.3016f, -1315.425f, 60.4181f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -13406,7 +13406,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 936.7681f, -1321.387f, 58.8479f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1084.867f, -1273.158f, 69.5768f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -13423,7 +13423,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1076.237f, -1268.929f, 68.0022f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 695.9939f, -1178.061f, 47.9312f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13440,7 +13440,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 708.3448f, -1178.119f, 50.5765f };
 			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
 			break;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 853.5038f, -1131.041f, 59.584f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -13457,7 +13457,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 868.3735f, -1136.573f, 58.4377f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 677.5172f, -993.4567f, 53.7063f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13474,7 +13474,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 679.7295f, -989.2327f, 54.6695f };
 			Var1.f_41[6] = joaat("p_lanternhang01x");
 			break;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 904.6342f, -989.0264f, 57.6638f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13491,7 +13491,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 922.5073f, -988.9283f, 58.2261f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 710.9292f, -882.8296f, 50.5003f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -13508,7 +13508,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 705.0671f, -897.5851f, 49.632f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1345.887f, -597.2509f, 75.7548f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -13525,7 +13525,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1326.754f, -597.4252f, 75.2768f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 878.5245f, -532.8374f, 89.3256f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13542,7 +13542,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 877.1887f, -549.1096f, 89.4168f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 957.7977f, -569.6921f, 91.4616f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -13559,7 +13559,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 953.9346f, -576.1766f, 89.7646f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1019.714f, -395.6589f, 92.4492f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -13576,7 +13576,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1008.41f, -395.6642f, 92.6918f };
 			Var1.f_41[6] = joaat("p_lanternhang01x");
 			break;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1121.141f, -214.8689f, 90.7092f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13585,7 +13585,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1121.042f, -222.9238f, 90.2776f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -981.358f, -208.8575f, 90.2115f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -13594,14 +13594,14 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -987.7882f, -214.0844f, 90.5625f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2594.284f, -19.94f, 160.1174f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
 			*(Var1.f_1[1 /*3*/]) = { -2600.86f, -25.2972f, 160.4258f };
 			Var1.f_41[1] = joaat("p_lantern09x");
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -796.8143f, -76.1614f, 81.4096f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13610,7 +13610,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -790.3673f, -82.7891f, 81.8288f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -2758.406f, 119.9791f, 164.233f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13619,7 +13619,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -2754.349f, 113.3577f, 165.2431f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1448.537f, 94.5786f, 90.5483f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13628,7 +13628,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1447.146f, 99.1479f, 90.2709f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1582.723f, 493.9426f, 114.5219f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13637,7 +13637,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1576.344f, 495.3961f, 115.5541f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1346.524f, 494.7462f, 96.7929f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13646,7 +13646,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1346.454f, 487.3717f, 96.3597f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1712.421f, 601.9015f, 118.4892f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13655,7 +13655,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1706.754f, 603.1379f, 119.4988f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1623.011f, 824.3295f, 154.614f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -13664,14 +13664,14 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1629.251f, 818.8979f, 154.8488f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 0.6993f, 950.7767f, 211.5146f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { -5.5571f, 949.0652f, 210.7931f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 643.8716f, 1300.858f, 194.4375f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13680,7 +13680,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 646.558f, 1303.353f, 194.2214f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 100.8803f, 1418.555f, 167.8691f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13689,7 +13689,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 107.4312f, 1411.843f, 168.5385f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 595.0633f, 1426.475f, 186.757f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -13698,7 +13698,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 588.549f, 1421.198f, 187.0105f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 503.036f, 1499.736f, 173.4577f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13707,7 +13707,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 502.9444f, 1507.644f, 173.5802f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -643.7875f, -389.3485f, 80.5294f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13716,7 +13716,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -650.041f, -388.051f, 79.9709f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 497.8333f, -253.464f, 144.3131f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13725,7 +13725,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 503.8024f, -259.8799f, 144.9664f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 651.0438f, -108.303f, 150.7209f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13734,7 +13734,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 644.7845f, -102.0038f, 150.102f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 1076.3f, 36.5688f, 88.2713f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13743,7 +13743,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 1070.186f, 35.1987f, 86.785f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1160.354f, 98.4753f, 45.7867f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13752,7 +13752,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1166.028f, 95.7244f, 45.0446f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -960.1163f, 298.1846f, 94.5743f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -13761,7 +13761,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -956.6438f, 293.1663f, 95.0279f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -638.4341f, 277.9949f, 90.7025f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13770,7 +13770,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -638.7745f, 285.8612f, 91.2351f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -190.7069f, 294.138f, 97.7753f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13779,7 +13779,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -196.8738f, 292.9286f, 96.3611f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 179.6932f, 340.8179f, 120.4203f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13788,7 +13788,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 179.5466f, 348.3829f, 120.8608f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -848.6968f, 464.2803f, 90.2008f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13797,7 +13797,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -848.2307f, 475.265f, 89.953f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 439.3978f, 834.7624f, 146.5218f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13806,7 +13806,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 444.9662f, 830.0444f, 146.8524f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 280.3633f, 834.4491f, 191.3079f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13815,7 +13815,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 273.7414f, 832.9695f, 190.239f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 999.8769f, 989.3497f, 152.7125f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -13824,112 +13824,112 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 997.5594f, 978.8789f, 151.1462f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2119.388f, -143.2577f, 51.74896f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2120.497f, -135.0572f, 49.4091f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2464.06f, -86.0444f, 46.5518f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2471.861f, -86.7413f, 45.1533f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2557.538f, -72.6367f, 51.0503f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2550.229f, -69.1811f, 49.3466f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2323.838f, 12.3615f, 48.9343f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2317.69f, 7.2237f, 47.3146f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2442.597f, 642.1541f, 71.1171f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2435.375f, 645.5943f, 68.8323f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2427.814f, 774.8948f, 68.8389f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2421.24f, 776.8815f, 67.4171f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2357.085f, 839.507f, 78.5513f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2364.479f, 836.6267f, 80.2272f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2404.657f, 882.7617f, 73.2369f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2410.936f, 879.4398f, 74.655f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2506.826f, 879.7056f, 74.1281f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2499.95f, 877.4795f, 72.8496f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2392.38f, 1020.881f, 91.1603f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2385.737f, 1023.847f, 89.4941f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2296.813f, 1055.442f, 115.564f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2303.54f, 1051.743f, 117.1823f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2521.276f, 1744.299f, 88.8357f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2513.138f, 1747.778f, 87.2408f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2788.514f, 2007.866f, 164.2861f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2796.658f, 2009.502f, 165.8971f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2626.094f, 2103.049f, 174.8151f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2617.896f, 2105.501f, 173.0599f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2000.564f, -1815.177f, 111.6976f };
 			Var1.f_41[0] = joaat("p_candlegroup06x");
 			*(Var1.f_1[1 /*3*/]) = { -1993.893f, -1829.005f, 112.6046f };
 			Var1.f_41[1] = joaat("p_candlebot01x");
 			break;
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			Var1 = 5;
 			*(Var1.f_1[0 /*3*/]) = { -2137.73f, -1777.193f, 142.9314f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -13942,7 +13942,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[4 /*3*/]) = { -2123.251f, -1777.829f, 141.6141f };
 			Var1.f_41[4] = joaat("p_candle01x");
 			break;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			Var1 = 6;
 			*(Var1.f_1[0 /*3*/]) = { -2668.985f, -1455.632f, 146.0624f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -13957,14 +13957,14 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[5 /*3*/]) = { -2643.468f, -1475.554f, 145.5627f };
 			Var1.f_41[5] = joaat("p_candle01x");
 			break;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2441.974f, -1346.05f, 153.5024f };
 			Var1.f_41[0] = joaat("p_lantern09x");
 			*(Var1.f_1[1 /*3*/]) = { -2437.223f, -1338.827f, 154.0883f };
 			Var1.f_41[1] = joaat("p_lantern07x");
 			break;
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			Var1 = 4;
 			*(Var1.f_1[0 /*3*/]) = { -2110.283f, -1259.22f, 123.2854f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -13975,7 +13975,7 @@ struct<55> func_350(var uParam0)
 			*(Var1.f_1[3 /*3*/]) = { -2115.433f, -1269.648f, 122.9037f };
 			Var1.f_41[3] = joaat("p_lantern04xlowfuel");
 			break;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			Var1 = 6;
 			*(Var1.f_1[0 /*3*/]) = { -2021.801f, -1260.781f, 113.8459f };
 			Var1.f_41[0] = joaat("p_candlebot01x");
@@ -20862,8 +20862,8 @@ void func_431(var uParam0, var uParam1)
 	iVar0 = 2;
 	iVar5[0] = joaat("p_cs_pelt_medlarge");
 	iVar5[1] = joaat("p_cs_pelt_large");
-	iVar8[0] = 1212186523;
-	iVar8[1] = -1161106381;
+	iVar8[0] = joaat("CARRIABLE_ANIMAL_SKIN_ML");
+	iVar8[1] = joaat("CARRIABLE_ANIMAL_SKIN_L");
 	iVar11 = ITEMSET::CREATE_ITEMSET(true);
 	iVar1 = 0;
 	while (iVar1 < 6)
@@ -24436,7 +24436,7 @@ void func_553(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -26510,7 +26510,7 @@ int func_627(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -26550,7 +26550,7 @@ int func_627(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -28465,19 +28465,19 @@ int func_702(bool bParam0, var uParam1, bool bParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -29174,13 +29174,13 @@ int func_729(var uParam0, bool bParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;
@@ -29941,7 +29941,7 @@ int func_770(int iParam0, bool bParam1)
 	func_900(iParam0, 1);
 	Global_1359489->f_15 = func_548(1);
 	func_754(iParam0, 32, 1);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], -1247684992);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_COMPANION_GROUP"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, true);
 	PED::_0x9238A3D970BBB0A9(Global_1360165[iParam0 /*1157*/], -1972074710);
 	PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, true);
@@ -30819,7 +30819,7 @@ void func_814(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -34354,17 +34354,17 @@ int func_932(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;

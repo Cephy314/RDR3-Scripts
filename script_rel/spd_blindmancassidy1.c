@@ -1917,7 +1917,7 @@ int func_15(var uParam0)
 			AUDIO::ADD_ENTITY_TO_AUDIO_MIX_GROUP(&(uParam0->f_143[0]), "special_ped_group", 0f);
 			PED::ADD_RELATIONSHIP_GROUP("blind_man_cassidy", &(uParam0->f_202));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_143[0]), uParam0->f_202);
-			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, uParam0->f_202, 707888648);
+			PED::SET_RELATIONSHIP_BETWEEN_GROUPS(6, uParam0->f_202, joaat("REL_COP"));
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(uParam0->f_143[0]), true);
 			PED::SET_PED_CONFIG_FLAG(&(uParam0->f_143[0]), 297, true);
 			PED::SET_PED_CONFIG_FLAG(&(uParam0->f_143[0]), 130, true);
@@ -4287,21 +4287,21 @@ void func_102(int iParam0, bool bParam1)
 		case 0:
 			if (bParam1)
 			{
-				func_258(joaat("journal_special_peds_agnes_dowd_ar"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_AGNES_DOWD_AR"), 0);
 			}
 			else
 			{
-				func_258(joaat("journal_special_peds_agnes_dowd_jn"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_AGNES_DOWD_JN"), 0);
 			}
 			break;
 		case 4:
 			if (bParam1)
 			{
-				func_258(joaat("journal_special_peds_cassidy_ar"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_CASSIDY_AR"), 0);
 			}
 			else
 			{
-				func_258(joaat("journal_special_peds_cassidy_jn"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_CASSIDY_JN"), 0);
 			}
 			break;
 		case 5:
@@ -4311,27 +4311,27 @@ void func_102(int iParam0, bool bParam1)
 			}
 			else if (func_259(55))
 			{
-				func_258(joaat("journal_rc_crkpt4_1b_jn"), 0);
+				func_258(joaat("JOURNAL_RC_CRKPT4_1B_JN"), 0);
 			}
 			else
 			{
-				func_258(joaat("journal_rc_crkpt4_1a_jn"), 0);
+				func_258(joaat("JOURNAL_RC_CRKPT4_1A_JN"), 0);
 			}
 			break;
 		case 12:
 			if (bParam1)
 			{
-				func_258(joaat("journal_special_peds_giant_ar"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_GIANT_AR"), 0);
 			}
 			else
 			{
-				func_258(joaat("journal_special_peds_giant_jn"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_GIANT_JN"), 0);
 			}
 			break;
 		case 20:
 			if (bParam1)
 			{
-				func_258(joaat("journal_special_peds_philosopher_cave_ar"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_PHILOSOPHER_CAVE_AR"), 0);
 			}
 			else
 			{
@@ -4345,17 +4345,17 @@ void func_102(int iParam0, bool bParam1)
 			}
 			else
 			{
-				func_258(joaat("journal_special_peds_tree_monkey_jn"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_TREE_MONKEY_JN"), 0);
 			}
 			break;
 		case 28:
 			if (bParam1)
 			{
-				func_258(joaat("journal_special_peds_cabin_hermit_ar"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_CABIN_HERMIT_AR"), 0);
 			}
 			else
 			{
-				func_258(joaat("journal_special_peds_cabin_hermit_jn"), 0);
+				func_258(joaat("JOURNAL_SPECIAL_PEDS_CABIN_HERMIT_JN"), 0);
 			}
 			break;
 		default:
@@ -6506,7 +6506,7 @@ int func_202(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -11753,7 +11753,7 @@ int func_363(bool bParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(bVar7);
-				if (iVar8 == -1992418870 || iVar8 == 822715387)
+				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}
@@ -13657,19 +13657,19 @@ int func_433(bool bParam0, var uParam1, bool bParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -14402,13 +14402,13 @@ int func_463(var uParam0, bool bParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;
@@ -14850,17 +14850,17 @@ int func_484(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;

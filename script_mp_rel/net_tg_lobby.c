@@ -662,39 +662,39 @@ void func_32(bool bParam0)
 
 void func_33(int iParam0, int iParam1)
 {
-	func_89(iParam0, iParam1, 2097877918);
-	func_89(iParam0, iParam1, -1158905413);
-	func_89(iParam0, iParam1, 358397622);
-	func_89(iParam0, iParam1, 65999835);
-	func_89(iParam0, iParam1, 814443795);
-	func_89(iParam0, iParam1, 519621102);
-	func_89(iParam0, iParam1, -1628223003);
-	func_89(iParam0, iParam1, 1278256225);
-	func_89(iParam0, iParam1, 2038628101);
-	func_89(iParam0, iParam1, 1742494648);
-	func_89(iParam0, iParam1, -1010166918);
-	func_89(iParam0, iParam1, 660170868);
-	func_89(iParam0, iParam1, -1278312096);
-	func_89(iParam0, iParam1, -509158128);
-	func_89(iParam0, iParam1, -226656579);
-	func_89(iParam0, iParam1, 2115868159);
-	func_89(iParam0, iParam1, 1495813101);
-	func_89(iParam0, iParam1, 1197385818);
-	func_89(iParam0, iParam1, 1015780020);
-	func_89(iParam0, iParam1, -1286733825);
-	func_89(iParam0, iParam1, -1670393277);
-	func_89(iParam0, iParam1, -415733461);
-	func_89(iParam0, iParam1, -1207924036);
-	func_89(iParam0, iParam1, 497702414);
-	func_89(iParam0, iParam1, 719188085);
-	func_89(iParam0, iParam1, 43753457);
-	func_89(iParam0, iParam1, 771290791);
-	func_89(iParam0, iParam1, 20356387);
-	func_89(iParam0, iParam1, 309149584);
-	func_89(iParam0, iParam1, 1613781781);
-	func_89(iParam0, iParam1, 1693607065);
-	func_89(iParam0, iParam1, 1132176120);
-	func_89(iParam0, iParam1, 869270437);
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_COP"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_0"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_1"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_2"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_3"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_4"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_5"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_6"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_7"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_8"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_9"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_10"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_11"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_12"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_13"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_14"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_15"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_16"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_17"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_18"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_19"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_20"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_21"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_22"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_23"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_24"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_25"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_26"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_27"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_28"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_29"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_30"));
+	func_89(iParam0, iParam1, joaat("REL_PLAYER_31"));
 }
 
 int func_34(int iParam0)
@@ -2019,7 +2019,7 @@ int func_79(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 

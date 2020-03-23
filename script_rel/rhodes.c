@@ -2476,7 +2476,7 @@ int func_79(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, in
 			}
 			func_218(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -7437,7 +7437,7 @@ void func_219(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -11159,7 +11159,7 @@ int func_302(bool bParam0, bool bParam1, bool bParam2)
 	}
 	if (bParam1 || bParam2)
 	{
-		if (VOLUME::_0x666C2F53ABEFC952(bParam0) == 1030835986)
+		if (VOLUME::_0x666C2F53ABEFC952(bParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			VOLUME::_0xFD010A2154B40676(bParam0, 623901053);
 		}
@@ -11172,9 +11172,9 @@ int func_302(bool bParam0, bool bParam1, bool bParam2)
 			case joaat("WEAPON_UNARMED"):
 			case joaat("WEAPON_KIT_CAMERA"):
 			case joaat("WEAPON_KIT_DETECTOR"):
-				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != joaat("REL_GANG_DUTCHS"))
 				{
-					VOLUME::_0xFD010A2154B40676(bParam0, 1030835986);
+					VOLUME::_0xFD010A2154B40676(bParam0, joaat("REL_GANG_DUTCHS"));
 				}
 				break;
 			case joaat("WEAPON_FISHINGROD"):
@@ -11184,15 +11184,15 @@ int func_302(bool bParam0, bool bParam1, bool bParam2)
 			case 1030402560: /* GXTEntry: "Melee Object 2" */
 			case joaat("WEAPON_MELEE_DAVY_LANTERN"):
 			case 1549070292: /* GXTEntry: "Melee Object 1" */
-				if (VOLUME::_0x666C2F53ABEFC952(bParam0) == 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam0) == joaat("REL_GANG_DUTCHS"))
 				{
 					VOLUME::_0xFD010A2154B40676(bParam0, 623901053);
 				}
 				break;
 			default:
-				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != joaat("REL_GANG_DUTCHS"))
 				{
-					VOLUME::_0xFD010A2154B40676(bParam0, 1030835986);
+					VOLUME::_0xFD010A2154B40676(bParam0, joaat("REL_GANG_DUTCHS"));
 				}
 				break;
 		}
@@ -16316,7 +16316,7 @@ bool func_461(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 				return bParam1;
 			}
 			bVar0 = bParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(bVar0) || WEAPON::_0x959383DCD42040DA(bVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(bVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -16356,7 +16356,7 @@ bool func_461(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 		{
 			bVar22 = true;
 		}
-		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((bVar4 == bVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -23188,7 +23188,7 @@ void func_704(int iParam0, bool bParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -33595,7 +33595,7 @@ int func_1035(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 

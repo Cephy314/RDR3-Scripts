@@ -5570,7 +5570,7 @@ int func_249(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -11999,60 +11999,60 @@ bool func_483(int iParam0)
 
 void func_484(int iParam0, int iParam1)
 {
-	func_642(iParam0, iParam1, 2097877918, 0);
-	func_642(iParam0, iParam1, -1158905413, 0);
-	func_642(iParam0, iParam1, 358397622, 0);
-	func_642(iParam0, iParam1, 65999835, 0);
-	func_642(iParam0, iParam1, 814443795, 0);
-	func_642(iParam0, iParam1, 519621102, 0);
-	func_642(iParam0, iParam1, -1628223003, 0);
-	func_642(iParam0, iParam1, 1278256225, 0);
-	func_642(iParam0, iParam1, 2038628101, 0);
-	func_642(iParam0, iParam1, 1742494648, 0);
-	func_642(iParam0, iParam1, -1010166918, 0);
-	func_642(iParam0, iParam1, 660170868, 0);
-	func_642(iParam0, iParam1, -1278312096, 0);
-	func_642(iParam0, iParam1, -509158128, 0);
-	func_642(iParam0, iParam1, -226656579, 0);
-	func_642(iParam0, iParam1, 2115868159, 0);
-	func_642(iParam0, iParam1, 1495813101, 0);
-	func_642(iParam0, iParam1, 1197385818, 0);
-	func_642(iParam0, iParam1, 1015780020, 0);
-	func_642(iParam0, iParam1, -1286733825, 0);
-	func_642(iParam0, iParam1, -1670393277, 0);
-	func_642(iParam0, iParam1, -415733461, 0);
-	func_642(iParam0, iParam1, -1207924036, 0);
-	func_642(iParam0, iParam1, 497702414, 0);
-	func_642(iParam0, iParam1, 719188085, 0);
-	func_642(iParam0, iParam1, 43753457, 0);
-	func_642(iParam0, iParam1, 771290791, 0);
-	func_642(iParam0, iParam1, 20356387, 0);
-	func_642(iParam0, iParam1, 309149584, 0);
-	func_642(iParam0, iParam1, 1613781781, 0);
-	func_642(iParam0, iParam1, 1693607065, 0);
-	func_642(iParam0, iParam1, 1132176120, 0);
-	func_642(iParam0, iParam1, 869270437, 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_COP"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_0"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_1"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_2"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_3"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_4"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_5"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_6"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_7"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_8"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_9"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_10"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_11"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_12"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_13"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_14"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_15"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_16"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_17"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_18"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_19"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_20"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_21"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_22"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_23"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_24"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_25"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_26"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_27"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_28"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_29"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_30"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PLAYER_31"), 0);
 }
 
 void func_485(int iParam0, int iParam1)
 {
-	func_642(iParam0, iParam1, 106566339, 0);
-	func_642(iParam0, iParam1, -50399569, 0);
-	func_642(iParam0, iParam1, 1222652248, 0);
-	func_642(iParam0, iParam1, -350226955, 0);
-	func_642(iParam0, iParam1, 1030835986, 0);
-	func_642(iParam0, iParam1, -1535431934, 0);
-	func_642(iParam0, iParam1, -1448293989, 0);
-	func_642(iParam0, iParam1, 266218800, 0);
-	func_642(iParam0, iParam1, 555364152, 0);
-	func_642(iParam0, iParam1, -1996978098, 0);
-	func_642(iParam0, iParam1, 1078461828, 0);
+	func_642(iParam0, iParam1, joaat("REL_GUAMA_LAW"), 0);
+	func_642(iParam0, iParam1, joaat("REL_PINKERTONS"), 0);
+	func_642(iParam0, iParam1, joaat("REL_CRIMINALS"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GUNSLINGERS"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_DUTCHS"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_LARAMIE_GANG"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_SKINNER_BROTHERS"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_CREOLE"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_LEMOYNE_RAIDERS"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_ODRISCOLL"), 0);
+	func_642(iParam0, iParam1, joaat("REL_GANG_MURFREE_BROOD"), 0);
 }
 
 void func_486(int iParam0, int iParam1)
 {
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(iParam0, iParam1, -1976316465);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(iParam0, iParam1, 841021282);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(iParam0, iParam1, joaat("REL_CIVMALE"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(iParam0, iParam1, joaat("REL_CIVFEMALE"));
 }
 
 void func_487(int iParam0, int iParam1)
@@ -12064,10 +12064,10 @@ void func_487(int iParam0, int iParam1)
 void func_488(int iParam0, int iParam1)
 {
 	func_642(iParam0, iParam1, -767591988, 0);
-	func_642(iParam0, iParam1, -1683752762, 0);
+	func_642(iParam0, iParam1, joaat("REL_DOMESTICATED_ANIMAL"), 0);
 	func_642(iParam0, iParam1, 1986610512, 0);
 	func_642(iParam0, iParam1, -319516747, 0);
-	func_642(iParam0, iParam1, -1329647920, 0);
+	func_642(iParam0, iParam1, joaat("REL_HEN_ANIMAL"), 0);
 }
 
 void func_489(int iParam0, int iParam1, int iParam2, int iParam3)
@@ -12077,7 +12077,7 @@ void func_489(int iParam0, int iParam1, int iParam2, int iParam3)
 
 void func_490(int iParam0, int iParam1)
 {
-	func_642(iParam0, iParam1, 707888648, 0);
+	func_642(iParam0, iParam1, joaat("REL_COP"), 0);
 }
 
 struct<2> func_491(int iParam0, var uParam1)

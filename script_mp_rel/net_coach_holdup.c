@@ -3139,11 +3139,11 @@ void func_130(float fParam0)
 	func_267(2, fParam0->f_10.f_15, -989642646, 1);
 	func_267(2, fParam0->f_10.f_15, 889541022, 1);
 	func_267(2, fParam0->f_10.f_15, -319516747, 1);
-	func_267(1, fParam0->f_10.f_15, -1976316465, 1);
-	func_267(1, fParam0->f_10.f_15, 841021282, 1);
-	func_267(2, fParam0->f_10.f_15, 707888648, 1);
-	func_267(2, fParam0->f_10.f_17, 707888648, 1);
-	func_267(2, fParam0->f_10.f_16, 707888648, 1);
+	func_267(1, fParam0->f_10.f_15, joaat("REL_CIVMALE"), 1);
+	func_267(1, fParam0->f_10.f_15, joaat("REL_CIVFEMALE"), 1);
+	func_267(2, fParam0->f_10.f_15, joaat("REL_COP"), 1);
+	func_267(2, fParam0->f_10.f_17, joaat("REL_COP"), 1);
+	func_267(2, fParam0->f_10.f_16, joaat("REL_COP"), 1);
 	func_267(2, fParam0->f_10.f_17, func_266(), 1);
 	func_267(2, fParam0->f_10.f_16, func_266(), 1);
 }
@@ -30135,7 +30135,7 @@ int func_1059(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4,
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -30175,7 +30175,7 @@ int func_1059(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4,
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_26386) && iParam0 != Global_34) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_26386) && iParam0 != Global_34) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -31539,7 +31539,7 @@ int func_1124(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -34510,7 +34510,7 @@ void func_1252(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}

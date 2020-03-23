@@ -1020,7 +1020,7 @@ void func_12(bool bParam0)
 		{
 			if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && bVar3)
 			{
-				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 1030835986);
+				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_GANG_DUTCHS"));
 				func_3(&(Global_1394141->f_1326), 8);
 			}
 		}
@@ -2205,7 +2205,7 @@ int func_39(var uParam0, int iParam1)
 			PED::SET_PED_CONFIG_FLAG(uParam0[iVar1 /*10*/], 448, true);
 			AUDIO::STOP_PED_SPEAKING(uParam0[iVar1 /*10*/], true);
 			PED::SET_PED_CAN_BE_TARGETTED(uParam0[iVar1 /*10*/], false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], joaat("REL_PLAYER_ALLY"));
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0[iVar1 /*10*/], true);
 			func_187(uParam0[iVar1 /*10*/], 0);
 		}
@@ -4913,7 +4913,7 @@ void func_168(int iParam0)
 	ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0->f_48, "SNAKE", &(iParam0->f_81[1]), 0);
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(iParam0->f_81[1]), true);
 	TASK::CLEAR_PED_TASKS_IMMEDIATELY(&(iParam0->f_81[1]), false, true);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[1]), 543319108);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[1]), joaat("REL_DOMESTICATED_PET_ANIMAL"));
 }
 
 struct<11> func_169(int iParam0, int iParam1)

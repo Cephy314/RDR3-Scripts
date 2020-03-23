@@ -416,7 +416,7 @@ int func_2(int iParam0)
 			else
 			{
 				VEHICLE::_0x0CD7914D17A970AB(Local_14.f_15, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_14.f_16, -1538724068);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_14.f_16, joaat("REL_PLAYER_ALLY"));
 				PED::SET_PED_INTO_VEHICLE(Local_14.f_16, Local_14.f_15, -1);
 				PED::SET_PED_INTO_VEHICLE(Global_35, Local_14.f_15, 0);
 				PED::_0x2208438012482A1A(Global_35, false, false);
@@ -2073,7 +2073,7 @@ void func_41(int iParam0, int iParam1)
 					func_45(&(iParam0->f_406), 1, 1);
 				}
 				func_50(Global_35, "PLAYER_ASK_FOR_RIDE", 1808677283, iParam0->f_16, 1, 0, 0, 1);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0->f_16, -1538724068);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0->f_16, joaat("REL_PLAYER_ALLY"));
 				TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
 				*iParam0 = 11;
 			}

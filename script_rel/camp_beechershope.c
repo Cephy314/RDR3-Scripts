@@ -877,7 +877,7 @@ void func_22()
 						ANIMSCENE::RESET_ANIM_SCENE(Global_1357549->f_1669, 0);
 						ANIMSCENE::_DELETE_ANIM_SCENE(Global_1357549->f_1669);
 						TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(func_178(&(Global_1357549->f_1659[iVar2])), 1030835986);
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(func_178(&(Global_1357549->f_1659[iVar2])), joaat("REL_GANG_DUTCHS"));
 						PED::SET_PED_CONFIG_FLAG(func_178(&(Global_1357549->f_1659[iVar2])), 40, false);
 						PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 						PERSCHAR::_0x631CD2D77FDC0316(PERSCHAR::_0x32A1E3B83D501096(func_178(&(Global_1357549->f_1659[iVar2]))));
@@ -1735,8 +1735,8 @@ void func_49(int iParam0)
 	bool bVar0;
 	int iVar1;
 
-	VOLUME::_0xFD010A2154B40676(&(Global_1357549->f_3[2]), 1030835986);
-	VOLUME::_0xFD010A2154B40676(&(Global_1357549->f_3[3]), 1030835986);
+	VOLUME::_0xFD010A2154B40676(&(Global_1357549->f_3[2]), joaat("REL_GANG_DUTCHS"));
+	VOLUME::_0xFD010A2154B40676(&(Global_1357549->f_3[3]), joaat("REL_GANG_DUTCHS"));
 	if (iParam0->f_1713 != 0)
 	{
 		VOLUME::_0xB469CFD9E065EB99(&(Global_1357549->f_3[4]), iParam0->f_1713);
@@ -5698,7 +5698,7 @@ int func_185(int iParam0, bool bParam1, int iParam2, int iParam3, int iParam4, i
 			}
 			func_422(iParam0, 18, 1);
 			ENTITY::SET_ENTITY_VISIBLE(Global_1360165[iParam0 /*1157*/], true);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 0);
 			PERSCHAR::_0x6759BEE6762E140B(((*Global_1360165)[iParam0 /*1157*/])->f_1);
 			PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 130, false);
@@ -5950,7 +5950,7 @@ void func_187(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -6157,17 +6157,17 @@ void func_190()
 	(Global_1357549->f_12[27 /*14*/])->f_5 = joaat("p_lantern05x");
 	(Global_1357549->f_12[27 /*14*/])->f_6 = 0f;
 	Global_1357549->f_12[36 /*14*/] = 3;
-	(Global_1357549->f_12[36 /*14*/])->f_1 = 414622870;
+	(Global_1357549->f_12[36 /*14*/])->f_1 = joaat("shb_p_camp_02");
 	(Global_1357549->f_12[36 /*14*/])->f_2 = { 1878.206f, -1864.335f, 43.5632f };
 	(Global_1357549->f_12[36 /*14*/])->f_5 = joaat("p_lantern09x");
 	(Global_1357549->f_12[36 /*14*/])->f_6 = 0f;
 	Global_1357549->f_12[37 /*14*/] = 3;
-	(Global_1357549->f_12[37 /*14*/])->f_1 = 414622870;
+	(Global_1357549->f_12[37 /*14*/])->f_1 = joaat("shb_p_camp_02");
 	(Global_1357549->f_12[37 /*14*/])->f_2 = { 1872.988f, -1881.333f, 44.1306f };
 	(Global_1357549->f_12[37 /*14*/])->f_5 = joaat("p_lantern07x");
 	(Global_1357549->f_12[37 /*14*/])->f_6 = 0f;
 	Global_1357549->f_12[38 /*14*/] = 3;
-	(Global_1357549->f_12[38 /*14*/])->f_1 = 414622870;
+	(Global_1357549->f_12[38 /*14*/])->f_1 = joaat("shb_p_camp_02");
 	(Global_1357549->f_12[38 /*14*/])->f_2 = { 1883.117f, -1885.653f, 43.7719f };
 	(Global_1357549->f_12[38 /*14*/])->f_5 = joaat("p_lantern09xmoths");
 	(Global_1357549->f_12[38 /*14*/])->f_6 = 0f;
@@ -6192,17 +6192,17 @@ void func_190()
 	(Global_1357549->f_12[31 /*14*/])->f_5 = joaat("p_candlegroup07x");
 	(Global_1357549->f_12[31 /*14*/])->f_6 = 0f;
 	Global_1357549->f_12[34 /*14*/] = 3;
-	(Global_1357549->f_12[34 /*14*/])->f_1 = 414622870;
+	(Global_1357549->f_12[34 /*14*/])->f_1 = joaat("shb_p_camp_02");
 	(Global_1357549->f_12[34 /*14*/])->f_2 = { 1889.558f, -1879.846f, 42.6053f };
 	(Global_1357549->f_12[34 /*14*/])->f_5 = joaat("p_lantern04x");
 	(Global_1357549->f_12[34 /*14*/])->f_6 = 0f;
 	Global_1357549->f_12[35 /*14*/] = 3;
-	(Global_1357549->f_12[35 /*14*/])->f_1 = 414622870;
+	(Global_1357549->f_12[35 /*14*/])->f_1 = joaat("shb_p_camp_02");
 	(Global_1357549->f_12[35 /*14*/])->f_2 = { 1875.46f, -1860.001f, 42.5923f };
 	(Global_1357549->f_12[35 /*14*/])->f_5 = joaat("p_lantern09x");
 	(Global_1357549->f_12[35 /*14*/])->f_6 = 0f;
 	Global_1357549->f_12[32 /*14*/] = 3;
-	(Global_1357549->f_12[32 /*14*/])->f_1 = 414622870;
+	(Global_1357549->f_12[32 /*14*/])->f_1 = joaat("shb_p_camp_02");
 	(Global_1357549->f_12[32 /*14*/])->f_2 = { 1868.881f, -1874.209f, 42.3693f };
 	(Global_1357549->f_12[32 /*14*/])->f_5 = joaat("p_lantern04x");
 	(Global_1357549->f_12[32 /*14*/])->f_6 = 0f;
@@ -10402,7 +10402,7 @@ int func_330(vector3 vParam0, float fParam3, bool bParam4)
 	{
 		ENTITY::_0x9587913B9E772D29(bVar1, 0);
 	}
-	TASK::_0xF0B4F759F35CC7F5(bVar1, 822715387, 0, 0, 0);
+	TASK::_0xF0B4F759F35CC7F5(bVar1, joaat("CARRIABLE_SADDLE_BUNDLE"), 0, 0, 0);
 	return 1;
 }
 
@@ -10485,7 +10485,7 @@ int func_334(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 
@@ -10872,7 +10872,7 @@ void func_351(int iParam0)
 	func_422(iParam0, 32, 1);
 	if (func_336(Global_1360165[iParam0 /*1157*/], 0))
 	{
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, false);
 		PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, false);
 		Var1 = PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX());
@@ -14559,7 +14559,7 @@ int func_479(bool bParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(iVar7);
-				if (iVar8 == -1992418870 || iVar8 == 822715387)
+				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}
@@ -15089,7 +15089,7 @@ int func_517(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	bVar2 = ((func_12(4) || Global_1357549->f_1614) || bParam3);
 	if (bVar2)
 	{
-		if (VOLUME::_0x666C2F53ABEFC952(bParam1) == 1030835986)
+		if (VOLUME::_0x666C2F53ABEFC952(bParam1) == joaat("REL_GANG_DUTCHS"))
 		{
 			VOLUME::_0xFD010A2154B40676(bParam1, 623901053);
 			VOLUME::_0xFD010A2154B40676(bParam2, 623901053);
@@ -15141,10 +15141,10 @@ int func_517(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 		switch (Global_1935630->f_44)
 		{
 			case joaat("WEAPON_UNARMED"):
-				if (VOLUME::_0x666C2F53ABEFC952(bParam1) != 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam1) != joaat("REL_GANG_DUTCHS"))
 				{
-					VOLUME::_0xFD010A2154B40676(bParam1, 1030835986);
-					VOLUME::_0xFD010A2154B40676(bParam2, 1030835986);
+					VOLUME::_0xFD010A2154B40676(bParam1, joaat("REL_GANG_DUTCHS"));
+					VOLUME::_0xFD010A2154B40676(bParam2, joaat("REL_GANG_DUTCHS"));
 				}
 				iVar4 = func_219(Global_35, 1, 1, 0);
 				if (((!func_12(536870912) && !func_38(4)) && iVar4 != 0) && iVar4 != joaat("WEAPON_UNARMED"))
@@ -15161,7 +15161,7 @@ int func_517(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 			case joaat("WEAPON_MELEE_DAVY_LANTERN"):
 			case 1549070292: /* GXTEntry: "Melee Object 1" */
 				bVar3 = true;
-				if (VOLUME::_0x666C2F53ABEFC952(bParam1) == 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam1) == joaat("REL_GANG_DUTCHS"))
 				{
 					VOLUME::_0xFD010A2154B40676(bParam1, 623901053);
 					VOLUME::_0xFD010A2154B40676(bParam2, 623901053);
@@ -15172,10 +15172,10 @@ int func_517(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 				{
 					WEAPON::_0xFCCC886EDE3C63EC(Global_35, 2, 0);
 				}
-				if (VOLUME::_0x666C2F53ABEFC952(bParam1) != 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam1) != joaat("REL_GANG_DUTCHS"))
 				{
-					VOLUME::_0xFD010A2154B40676(bParam1, 1030835986);
-					VOLUME::_0xFD010A2154B40676(bParam2, 1030835986);
+					VOLUME::_0xFD010A2154B40676(bParam1, joaat("REL_GANG_DUTCHS"));
+					VOLUME::_0xFD010A2154B40676(bParam2, joaat("REL_GANG_DUTCHS"));
 				}
 				break;
 		}
@@ -15215,10 +15215,10 @@ int func_517(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 			func_50(2097152);
 			PED::SET_PED_CONFIG_FLAG(Global_35, 334, false);
 		}
-		if (VOLUME::_0x666C2F53ABEFC952(bParam1) != 1030835986)
+		if (VOLUME::_0x666C2F53ABEFC952(bParam1) != joaat("REL_GANG_DUTCHS"))
 		{
-			VOLUME::_0xFD010A2154B40676(bParam1, 1030835986);
-			VOLUME::_0xFD010A2154B40676(bParam2, 1030835986);
+			VOLUME::_0xFD010A2154B40676(bParam1, joaat("REL_GANG_DUTCHS"));
+			VOLUME::_0xFD010A2154B40676(bParam2, joaat("REL_GANG_DUTCHS"));
 		}
 	}
 	if (func_12(2) || bVar2)
@@ -27667,7 +27667,7 @@ int func_879(int iParam0)
 						DECORATOR::DECOR_SET_BOOL(bVar5, "CaravanLivestock", true);
 					}
 				}
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(bVar5, -1538724068);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(bVar5, joaat("REL_PLAYER_ALLY"));
 				func_832(iVar1, 128);
 			}
 		}
@@ -29308,7 +29308,7 @@ int func_913(int iParam0, bool bParam1)
 	func_1317(iParam0, 1);
 	Global_1359489->f_15 = func_816(1);
 	func_535(iParam0, 32, 1);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], -1247684992);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_COMPANION_GROUP"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, true);
 	PED::_0x9238A3D970BBB0A9(Global_1360165[iParam0 /*1157*/], -1972074710);
 	PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, true);
@@ -31437,7 +31437,7 @@ int func_975(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -31477,7 +31477,7 @@ int func_975(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -40484,7 +40484,7 @@ int func_1278(int iParam0, int iParam1)
 				case 0:
 					return func_1259();
 				case 1:
-					return 414622870;
+					return joaat("shb_p_camp_02");
 				case 2:
 					return 557551306;
 				default:
@@ -40502,17 +40502,17 @@ void func_1279(int iParam0, bool bParam1)
 	iVar0 = -1;
 	switch (iParam0)
 	{
-		case -1999825729:
-			iVar0 = -1999825729;
+		case joaat("cle_upg_campfire_rug_cow"):
+			iVar0 = joaat("cle_upg_campfire_rug_cow");
 			break;
-		case 414622870:
-			iVar0 = 414622870;
+		case joaat("shb_p_camp_02"):
+			iVar0 = joaat("shb_p_camp_02");
 			break;
 		case joaat("dewclm_p_camp_02"):
 			iVar0 = joaat("dewclm_p_camp_02");
 			break;
 		case joaat("hso_p_camp_02"):
-			iVar0 = 446964392;
+			iVar0 = joaat("vegmods_hso_pearson_wagon");
 			break;
 	}
 	if (iVar0 != -1)
@@ -42598,7 +42598,7 @@ void func_1364(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}
@@ -48089,15 +48089,15 @@ void func_1521(int iParam0, struct<11> Param1, var uParam12, var uParam13, var u
 		case -1952196650: /* GXTEntry: "Letter from the Mayor\'s Office" */
 			if (func_205())
 			{
-				func_1837(joaat("journal_rc_mayor4_ar"), 0);
+				func_1837(joaat("JOURNAL_RC_MAYOR4_AR"), 0);
 			}
-			else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("journal_rc_mayor4_ar")))
+			else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_RC_MAYOR4_AR")))
 			{
-				func_1837(joaat("journal_rc_mayor4b_jn"), 0);
+				func_1837(joaat("JOURNAL_RC_MAYOR4B_JN"), 0);
 			}
 			break;
 		case -1566711999: /* GXTEntry: "Letter from the Mayor\'s Office" */
-			func_1837(joaat("journal_rc_mayor4a_jn"), 0);
+			func_1837(joaat("JOURNAL_RC_MAYOR4A_JN"), 0);
 			break;
 		case -1237758927: /* GXTEntry: "Letter to Mayor Timmins from Belinda" */
 			break;
@@ -48166,11 +48166,11 @@ void func_1521(int iParam0, struct<11> Param1, var uParam12, var uParam13, var u
 				{
 					if (func_205() == 1)
 					{
-						func_1837(joaat("journal_rc_rockcarv15_ar"), 0);
+						func_1837(joaat("JOURNAL_RC_ROCKCARV15_AR"), 0);
 					}
-					else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("journal_rc_rockcarv15_ar")))
+					else if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_RC_ROCKCARV15_AR")))
 					{
-						func_1837(joaat("journal_rc_rockcarv15_jn"), 0);
+						func_1837(joaat("JOURNAL_RC_ROCKCARV15_JN"), 0);
 					}
 				}
 			}
@@ -51875,8 +51875,8 @@ void func_1660(bool bParam0)
 	{
 	}
 	DECORATOR::DECOR_SET_BOOL(bParam0, "CaravanCommonHorse", true);
-	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam0, -1856989775);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, -1856989775);
+	PED::SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam0, joaat("REL_GANG_DUTCHS_HORSES"));
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, joaat("REL_GANG_DUTCHS_HORSES"));
 	PED::SET_PED_CONFIG_FLAG(bParam0, 324, true);
 	PED::SET_PED_CONFIG_FLAG(bParam0, 330, true);
 	PED::SET_PED_CONFIG_FLAG(bParam0, 331, true);
@@ -62129,7 +62129,7 @@ void func_1949(int iParam0, bool bParam1)
 	int iVar38[18];
 
 	iVar0[0] = 2137149309; /* GXTEntry: "Lean-to Cow Hide Ground Cover" */
-	iVar19[0] = -1999825729;
+	iVar19[0] = joaat("cle_upg_campfire_rug_cow");
 	iVar38[0] = func_1634();
 	iVar0[1] = -147867326; /* GXTEntry: "Cougar Pelt Covered Chest" */
 	iVar19[1] = -1774140220;
@@ -72507,431 +72507,431 @@ void func_2351(int iParam0, bool bParam1)
 		case 1:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_acunas_star_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_ACUNAS_STAR_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_acunas_star_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_ACUNAS_STAR_ORCHID_JN"), 0);
 			}
 			break;
 		case 2:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_alaskan_ginseng_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_ALASKAN_GINSENG_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_alaskan_ginseng_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_ALASKAN_GINSENG_JN"), 0);
 			}
 			break;
 		case 3:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_american_ginseng_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_AMERICAN_GINSENG_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_american_ginseng_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_AMERICAN_GINSENG_JN"), 0);
 			}
 			break;
 		case 4:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_bay_bolete_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_BAY_BOLETE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_bay_bolete_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_BAY_BOLETE_JN"), 0);
 			}
 			break;
 		case 5:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_blackberry_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_BLACKBERRY_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_blackberry_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_BLACKBERRY_JN"), 0);
 			}
 			break;
 		case 6:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_black_currant_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_BLACK_CURRANT_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_black_currant_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_BLACK_CURRANT_JN"), 0);
 			}
 			break;
 		case 11:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_bulrush_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_BULRUSH_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_bulrush_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_BULRUSH_JN"), 0);
 			}
 			break;
 		case 7:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_burdock_root_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_BURDOCK_ROOT_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_burdock_root_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_BURDOCK_ROOT_JN"), 0);
 			}
 			break;
 		case 39:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_carrot_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_CARROT_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_carrot_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_CARROT_JN"), 0);
 			}
 			break;
 		case 8:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_chanterelle_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_CHANTERELLE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_chanterelle_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_CHANTERELLE_JN"), 0);
 			}
 			break;
 		case 9:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_cigar_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_CIGAR_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_cigar_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_CIGAR_ORCHID_JN"), 0);
 			}
 			break;
 		case 10:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_clamshell_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_CLAMSHELL_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_clamshell_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_CLAMSHELL_ORCHID_JN"), 0);
 			}
 			break;
 		case 12:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_creeping_thyme_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_CREEPING_THYME_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_creeping_thyme_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_CREEPING_THYME_JN"), 0);
 			}
 			break;
 		case 13:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_desert_sage_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_DESERT_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_desert_sage_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_DESERT_SAGE_JN"), 0);
 			}
 			break;
 		case 14:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_dragons_mouth_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_dragons_mouth_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_DRAGONS_MOUTH_ORCHID_JN"), 0);
 			}
 			break;
 		case 15:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_english_mace_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_ENGLISH_MACE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_english_mace_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_ENGLISH_MACE_JN"), 0);
 			}
 			break;
 		case 40:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_feverfew_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_FEVERFEW_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_feverfew_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_FEVERFEW_JN"), 0);
 			}
 			break;
 		case 17:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_ghost_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_GHOST_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_ghost_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_GHOST_ORCHID_JN"), 0);
 			}
 			break;
 		case 18:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_golden_currant_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_GOLDEN_CURRANT_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_golden_currant_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_GOLDEN_CURRANT_JN"), 0);
 			}
 			break;
 		case 16:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_huckleberry_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_HUCKLEBERRY_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_huckleberry_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_HUCKLEBERRY_JN"), 0);
 			}
 			break;
 		case 19:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_hummingbird_sage_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_HUMMINGBIRD_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_hummingbird_sage_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_HUMMINGBIRD_SAGE_JN"), 0);
 			}
 			break;
 		case 20:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_indian_tobacco_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_INDIAN_TOBACCO_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_indian_tobacco_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_INDIAN_TOBACCO_JN"), 0);
 			}
 			break;
 		case 21:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_lady_of_the_night_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_lady_of_the_night_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_LADY_OF_THE_NIGHT_ORCHID_JN"), 0);
 			}
 			break;
 		case 22:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_lady_slipper_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_LADY_SLIPPER_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_lady_slipper_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_LADY_SLIPPER_ORCHID_JN"), 0);
 			}
 			break;
 		case 23:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_milkweed_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_MILKWEED_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_milkweed_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_MILKWEED_JN"), 0);
 			}
 			break;
 		case 41:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_mint_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_MINT_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_mint_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_MINT_JN"), 0);
 			}
 			break;
 		case 24:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_moccasin_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_MOCCASIN_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_moccasin_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_MOCCASIN_ORCHID_JN"), 0);
 			}
 			break;
 		case 25:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_night_scented_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_night_scented_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_NIGHT_SCENTED_ORCHID_JN"), 0);
 			}
 			break;
 		case 26:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_oleander_sage_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_OLEANDER_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_oleander_sage_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_OLEANDER_SAGE_JN"), 0);
 			}
 			break;
 		case 27:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_oregano_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_OREGANO_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_oregano_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_OREGANO_JN"), 0);
 			}
 			break;
 		case 28:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_parasol_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_PARASOL_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_parasol_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_PARASOL_JN"), 0);
 			}
 			break;
 		case 29:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_prairie_poppy_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_PRAIRIE_POPPY_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_prairie_poppy_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_PRAIRIE_POPPY_JN"), 0);
 			}
 			break;
 		case 30:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_queens_orchids_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_QUEENS_ORCHIDS_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_queens_orchids_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_QUEENS_ORCHIDS_JN"), 0);
 			}
 			break;
 		case 31:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_ramshead_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_RAMSHEAD_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_ramshead_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_RAMSHEAD_ORCHID_JN"), 0);
 			}
 			break;
 		case 33:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_raspberry_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_RASPBERRY_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_raspberry_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_RASPBERRY_JN"), 0);
 			}
 			break;
 		case 32:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_rat_tail_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_RAT_TAIL_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_rat_tail_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_RAT_TAIL_ORCHID_JN"), 0);
 			}
 			break;
 		case 34:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_red_sage_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_RED_SAGE_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_red_sage_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_RED_SAGE_JN"), 0);
 			}
 			break;
 		case 35:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_sparrows_egg_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_SPARROWS_EGG_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_sparrows_egg_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_SPARROWS_EGG_ORCHID_JN"), 0);
 			}
 			break;
 		case 36:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_spider_orchid_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_SPIDER_ORCHID_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_spider_orchid_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_SPIDER_ORCHID_JN"), 0);
 			}
 			break;
 		case 37:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_vanilla_flower_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_VANILLA_FLOWER_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_vanilla_flower_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_VANILLA_FLOWER_JN"), 0);
 			}
 			break;
 		case 38:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_violet_snowdrop_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_VIOLET_SNOWDROP_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_violet_snowdrop_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_VIOLET_SNOWDROP_JN"), 0);
 			}
 			break;
 		case 42:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_winterberry_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_WINTERBERRY_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_winterberry_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_WINTERBERRY_JN"), 0);
 			}
 			break;
 		case 43:
 			if (bParam1 == 1)
 			{
-				func_1837(joaat("journal_herb_yarrow_ar"), 0);
+				func_1837(joaat("JOURNAL_HERB_YARROW_AR"), 0);
 			}
 			else
 			{
-				func_1837(joaat("journal_herb_yarrow_jn"), 0);
+				func_1837(joaat("JOURNAL_HERB_YARROW_JN"), 0);
 			}
 			break;
 		default:

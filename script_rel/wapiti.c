@@ -3313,7 +3313,7 @@ int func_116(bool bParam0, int iParam1, int iParam2)
 	}
 	if (iParam1 || iParam2)
 	{
-		if (VOLUME::_0x666C2F53ABEFC952(bParam0) == 1030835986)
+		if (VOLUME::_0x666C2F53ABEFC952(bParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			VOLUME::_0xFD010A2154B40676(bParam0, 623901053);
 		}
@@ -3326,9 +3326,9 @@ int func_116(bool bParam0, int iParam1, int iParam2)
 			case joaat("WEAPON_UNARMED"):
 			case joaat("WEAPON_KIT_CAMERA"):
 			case joaat("WEAPON_KIT_DETECTOR"):
-				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != joaat("REL_GANG_DUTCHS"))
 				{
-					VOLUME::_0xFD010A2154B40676(bParam0, 1030835986);
+					VOLUME::_0xFD010A2154B40676(bParam0, joaat("REL_GANG_DUTCHS"));
 				}
 				break;
 			case joaat("WEAPON_FISHINGROD"):
@@ -3338,15 +3338,15 @@ int func_116(bool bParam0, int iParam1, int iParam2)
 			case 1030402560: /* GXTEntry: "Melee Object 2" */
 			case joaat("WEAPON_MELEE_DAVY_LANTERN"):
 			case 1549070292: /* GXTEntry: "Melee Object 1" */
-				if (VOLUME::_0x666C2F53ABEFC952(bParam0) == 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam0) == joaat("REL_GANG_DUTCHS"))
 				{
 					VOLUME::_0xFD010A2154B40676(bParam0, 623901053);
 				}
 				break;
 			default:
-				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != 1030835986)
+				if (VOLUME::_0x666C2F53ABEFC952(bParam0) != joaat("REL_GANG_DUTCHS"))
 				{
-					VOLUME::_0xFD010A2154B40676(bParam0, 1030835986);
+					VOLUME::_0xFD010A2154B40676(bParam0, joaat("REL_GANG_DUTCHS"));
 				}
 				break;
 		}

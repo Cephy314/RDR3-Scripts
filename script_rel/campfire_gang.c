@@ -1102,247 +1102,247 @@ Vector3 func_19(int iParam0)
 	}
 	switch (func_33(iParam0))
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			vVar3 = { 498.174f, -256.7451f, 143.3717f };
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			vVar3 = { -1164.453f, 91.68877f, 44.62806f };
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			vVar3 = { -1582.034f, 498.4228f, 114.0487f };
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			vVar3 = { 1172.784f, -2180.536f, 54.65417f };
 			break;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			vVar3 = { 2121.892f, -138.5448f, 49.74233f };
 			break;
-		case 298607063:
+		case joaat("gang_murfreeransack_loc01_shoe"):
 			vVar3 = { 2121.77f, -139.2138f, 49.71836f };
 			break;
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			vVar3 = { 2467f, -89.99516f, 45.19795f };
 			break;
-		case 1117165375:
+		case joaat("gang_murfreeransack_loc02_shoe"):
 			vVar3 = { 2464.787f, -91.20225f, 45.15141f };
 			break;
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			vVar3 = { 2555.149f, -66.95429f, 49.53902f };
 			break;
-		case -1985868973:
+		case joaat("gang_murfreeransack_loc03_shoe"):
 			vVar3 = { 2550.89f, -70.14941f, 49.58291f };
 			break;
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			vVar3 = { 2320.137f, 9.97915f, 47.49155f };
 			break;
-		case 354638936:
+		case joaat("gang_murfreeransack_loc04_shoe"):
 			vVar3 = { 2319.414f, 11.21736f, 47.49919f };
 			break;
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			vVar3 = { 2440.252f, 647.3441f, 69.38534f };
 			break;
-		case 1416094782:
+		case joaat("gang_murfreeransack_loc05_shoe"):
 			vVar3 = { 2436.895f, 641.1175f, 69.33932f };
 			break;
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			vVar3 = { 2425.307f, 779.8348f, 67.81346f };
 			break;
-		case 1062381624:
+		case joaat("gang_murfreeransack_loc06_shoe"):
 			vVar3 = { 2420.318f, 777.536f, 67.6056f };
 			break;
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			vVar3 = { 2361.987f, 841.1643f, 78.79051f };
 			break;
-		case -1986775954:
+		case joaat("gang_murfreeransack_loc07_shoe"):
 			vVar3 = { 2358.234f, 840.37f, 78.72357f };
 			break;
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			vVar3 = { 2409.418f, 884.5353f, 73.20782f };
 			break;
-		case -899261623:
+		case joaat("gang_murfreeransack_loc08_shoe"):
 			vVar3 = { 2404.697f, 883.5768f, 73.29004f };
 			break;
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			vVar3 = { 2503.454f, 883.302f, 72.8469f };
 			break;
-		case -557729610:
+		case joaat("gang_murfreeransack_loc09_shoe"):
 			vVar3 = { 2507.415f, 881.9269f, 72.64252f };
 			break;
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			vVar3 = { 2391.311f, 1024.629f, 89.66936f };
 			break;
-		case -1991979537:
+		case joaat("gang_murfreeransack_loc10_shoe"):
 			vVar3 = { 2386.943f, 1024.219f, 89.71957f };
 			break;
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			vVar3 = { 2302.055f, 1055.938f, 115.7271f };
 			break;
-		case 1193231534:
+		case joaat("gang_murfreeransack_loc11_shoe"):
 			vVar3 = { 2299.388f, 1052.703f, 115.6931f };
 			break;
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			vVar3 = { 2518.389f, 1749.014f, 87.51678f };
 			break;
-		case 1807258239:
+		case joaat("gang_murfreeransack_loc12_shoe"):
 			vVar3 = { 2516.159f, 1746.446f, 87.39398f };
 			break;
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			vVar3 = { 2793.999f, 2009.131f, 164.7415f };
 			break;
-		case 787640784:
+		case joaat("gang_murfreeransack_loc13_shoe"):
 			vVar3 = { 2793.361f, 2009.616f, 164.7349f };
 			break;
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			vVar3 = { 2622.838f, 2106.842f, 173.2784f };
 			break;
-		case -1414272575:
+		case joaat("gang_murfreeransack_loc14_shoe"):
 			vVar3 = { 2617.052f, 2106.459f, 173.1849f };
 			break;
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			vVar3 = { -2000.054f, -1828.726f, 112.4916f };
 			break;
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			vVar3 = { -2130.4f, -1775.59f, 141.8341f };
 			break;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			vVar3 = { -2672.631f, -1457.476f, 145.6802f };
 			break;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			vVar3 = { -2429.996f, -1337.574f, 152.9727f };
 			break;
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			vVar3 = { -2102.945f, -1257.687f, 122.1524f };
 			break;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			vVar3 = { -2033.818f, -1269.037f, 114.7918f };
 			break;
 		default:
@@ -1841,32 +1841,32 @@ void func_40(var uParam0)
 		case 2:
 			switch (iVar0)
 			{
-				case -1192753172:
+				case joaat("gang_odriscollboys_cml002"):
 					vVar2 = { 650.721f, 1279.266f, 200.87f };
 					vVar5 = { 4f, 4f, 4f };
 					iVar11 = 17;
 					break;
-				case -236914211:
+				case joaat("gang_odriscollboys_cml004"):
 					vVar2 = { 603.46f, 1442.761f, 188.913f };
 					vVar5 = { 3f, 3f, 3f };
 					iVar11 = 17;
 					break;
-				case 2130187273:
+				case joaat("gang_odriscollboys_cml005"):
 					vVar2 = { 486.391f, 1490.451f, 173.164f };
 					vVar5 = { 3f, 3f, 3f };
 					iVar11 = 17;
 					break;
-				case 1352837232:
+				case joaat("gang_odriscollboys_bgv006"):
 					vVar2 = { -1429.311f, 102.654f, 90.095f };
 					vVar5 = { 3f, 3f, 3f };
 					iVar11 = 17;
 					break;
-				case 2118488614:
+				case joaat("gang_odoriscollboys_hrt005"):
 					vVar2 = { -1199.097f, 87.256f, 41.566f };
 					vVar5 = { 3f, 3f, 3f };
 					iVar11 = 17;
 					break;
-				case 1726559781:
+				case joaat("gang_odriscollboys_hrt006"):
 					vVar2 = { -952.537f, 310.582f, 94.728f };
 					vVar5 = { 2f, 2f, 3f };
 					iVar11 = 17;
@@ -6306,167 +6306,167 @@ char* func_181(var uParam0)
 	iVar0 = func_33(uParam0->f_136);
 	switch (iVar0)
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			return "GC_ODRIS_HRT01";
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			return "GC_ODRIS_HRT02";
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			return "GC_ODRIS_HRT03";
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			return "GC_ODRIS_HRT04";
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			return "GC_ODRIS_HRT05";
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			return "GC_ODRIS_HRT06";
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			return "GC_ODRIS_HRT07";
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			return "GC_ODRIS_HRT08";
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			return "GC_ODRIS_HRT09";
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			return "GC_ODRIS_HRT10";
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			return "GC_ODRIS_HRT11";
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			return "GC_ODRIS_HRT12";
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			return "GC_ODRIS_HRT13";
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			return "GC_ODRIS_BGV01";
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			return "GC_ODRIS_BGV02";
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			return "GC_ODRIS_BGV03";
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			return "GC_ODRIS_BGV04";
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			return "GC_ODRIS_BGV05";
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			return "GC_ODRIS_BGV06";
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			return "GC_ODRIS_BGV07";
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			return "GC_ODRIS_BGV08";
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			return "GC_ODRIS_BGV09";
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			return "GC_ODRIS_BGV10";
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			return "GC_ODRIS_CML01";
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			return "GC_ODRIS_CML02";
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			return "GC_ODRIS_CML03";
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			return "GC_ODRIS_CML04";
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			return "GC_ODRIS_CML05";
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			return "GC_EXC_SCM01";
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			return "GC_EXC_SCM02";
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			return "GC_EXC_SCM03";
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			return "GC_EXC_SCM04";
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			return "GC_EXC_SCM05";
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			return "GC_EXC_SCM06";
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			return "GC_EXC_SCM07";
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			return "GC_EXC_SCM08";
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			return "GC_EXC_SCM09";
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			return "GC_EXC_SCM10";
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			return "GC_EXC_SCM11";
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			return "GC_EXC_SCM12";
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			return "GC_EXC_SCM13";
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			return "GC_EXC_SCM14";
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			return "GC_EXC_SCM15";
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			return "GC_EXC_SCM16";
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			return "GC_EXC_SCM17";
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			return "GC_EXC_SCM18";
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			return "GC_EXC_SCM19";
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			return "GC_SAV_TAL01";
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			return "GC_SAV_TAL02";
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			return "GC_SAV_TAL03";
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			return "GC_SAV_TAL04";
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			return "GC_SAV_TAL05";
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			return "GC_SAV_TAL06";
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			return "GC_INB_ROA01_HAT";
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			return "GC_INB_ROA02_HAT";
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			return "GC_INB_ROA03_HAT";
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			return "GC_INB_ROA04_HAT";
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			return "GC_INB_ROA05_HAT";
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			return "GC_INB_ROA06_HAT";
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			return "GC_INB_ROA07_HAT";
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			return "GC_INB_ROA08_HAT";
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			return "GC_INB_ROA09_HAT";
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			return "GC_INB_ROA10_HAT";
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			return "GC_INB_ROA11_HAT";
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			return "GC_INB_ROA12_HAT";
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			return "GC_INB_ROA13_HAT";
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			return "GC_INB_ROA14_HAT";
-		case 298607063:
+		case joaat("gang_murfreeransack_loc01_shoe"):
 			return "GC_INB_ROA01_SHOE";
-		case 1117165375:
+		case joaat("gang_murfreeransack_loc02_shoe"):
 			return "GC_INB_ROA02_SHOE";
-		case -1985868973:
+		case joaat("gang_murfreeransack_loc03_shoe"):
 			return "GC_INB_ROA03_SHOE";
-		case 354638936:
+		case joaat("gang_murfreeransack_loc04_shoe"):
 			return "GC_INB_ROA04_SHOE";
-		case 1416094782:
+		case joaat("gang_murfreeransack_loc05_shoe"):
 			return "GC_INB_ROA05_SHOE";
-		case 1062381624:
+		case joaat("gang_murfreeransack_loc06_shoe"):
 			return "GC_INB_ROA06_SHOE";
-		case -1986775954:
+		case joaat("gang_murfreeransack_loc07_shoe"):
 			return "GC_INB_ROA07_SHOE";
-		case -899261623:
+		case joaat("gang_murfreeransack_loc08_shoe"):
 			return "GC_INB_ROA08_SHOE";
-		case -557729610:
+		case joaat("gang_murfreeransack_loc09_shoe"):
 			return "GC_INB_ROA09_SHOE";
-		case -1991979537:
+		case joaat("gang_murfreeransack_loc10_shoe"):
 			return "GC_INB_ROA10_SHOE";
-		case 1193231534:
+		case joaat("gang_murfreeransack_loc11_shoe"):
 			return "GC_INB_ROA11_SHOE";
-		case 1807258239:
+		case joaat("gang_murfreeransack_loc12_shoe"):
 			return "GC_INB_ROA12_SHOE";
-		case 787640784:
+		case joaat("gang_murfreeransack_loc13_shoe"):
 			return "GC_INB_ROA13_SHOE";
-		case -1414272575:
+		case joaat("gang_murfreeransack_loc14_shoe"):
 			return "GC_INB_ROA14_SHOE";
 		default:
 			break;
@@ -6505,87 +6505,87 @@ int func_183(var uParam0)
 	iVar0 = func_33(uParam0->f_136);
 	switch (iVar0)
 	{
-		case -2009032789:
-		case -1993836161:
-		case -1991979537:
-		case -1986775954:
-		case -1985868973:
-		case -1885599866:
-		case -1740687448:
-		case -1695492178:
-		case -1508256931:
-		case -1419371417:
-		case -1414272575:
-		case -1300575561:
-		case -1298966347:
-		case -1287270695:
-		case -1279832420:
-		case -1232784731:
-		case -1199296193:
-		case -1192753172:
-		case -1139312905:
-		case -1069586228:
-		case -1003150953:
-		case -936204805:
-		case -900541220:
-		case -899261623:
-		case -822172378:
-		case -817060178:
-		case -688744902:
-		case -663999418:
-		case -643041038:
-		case -639956757:
-		case -557729610:
-		case -553189820:
-		case -482898935:
-		case -482255714:
-		case -476849231:
-		case -368895393:
-		case -340009312:
-		case -290546285:
-		case -259044425:
-		case -236914211:
-		case -118171082:
-		case -108299713:
-		case -105596478:
-		case 104287396:
-		case 129717520:
-		case 190078209:
-		case 298607063:
-		case 301558156:
-		case 354638936:
-		case 401043460:
-		case 402954041:
-		case 546408124:
-		case 561187138:
-		case 616706228:
-		case 715920781:
-		case 748846068:
-		case 787640784:
-		case 859352269:
-		case 929785619:
-		case 933157597:
-		case 1014446371:
-		case 1023328345:
-		case 1062381624:
-		case 1117165375:
-		case 1122045165:
-		case 1193231534:
-		case 1199768352:
-		case 1313890873:
-		case 1352837232:
-		case 1416094782:
-		case 1455068616:
-		case 1542551103:
-		case 1548242606:
-		case 1683033662:
-		case 1726559781:
-		case 1739445890:
-		case 1807258239:
-		case 1859330882:
-		case 1971923782:
-		case 2118488614:
-		case 2130187273:
+		case joaat("gang_odriscollboys_bgv002"):
+		case joaat("gang_odriscollboys_hrt010"):
+		case joaat("gang_murfreeransack_loc10_shoe"):
+		case joaat("gang_murfreeransack_loc07_shoe"):
+		case joaat("gang_murfreeransack_loc03_shoe"):
+		case joaat("gang_odriscollboys_hrt003"):
+		case joaat("gang_odriscollboys_bgv007"):
+		case joaat("gang_murfreeransack_loc03_hat"):
+		case joaat("gang_odriscollboys_bgv008"):
+		case joaat("gang_lemoyne_scm018"):
+		case joaat("gang_murfreeransack_loc14_shoe"):
+		case joaat("gang_murfreeransack_loc04_hat"):
+		case joaat("gang_murfreeransack_loc02_hat"):
+		case joaat("gang_odriscollboys_hrt001"):
+		case joaat("gang_odriscollboys_hrt013"):
+		case joaat("gang_lemoyne_scm013"):
+		case joaat("gang_lemoyne_scm007"):
+		case joaat("gang_odriscollboys_cml002"):
+		case joaat("gang_murfreeransack_loc06_hat"):
+		case joaat("gang_odriscollboys_hrt008"):
+		case joaat("gang_murfreeransack_loc07_hat"):
+		case joaat("gang_odoriscollboys_hrt002"):
+		case joaat("gang_lemoyne_scm006"):
+		case joaat("gang_murfreeransack_loc08_shoe"):
+		case joaat("gang_odriscollboys_bgv003"):
+		case joaat("gang_odriscollboys_bgv010"):
+		case joaat("gang_odriscollboys_hrt009"):
+		case joaat("gang_murfreeransack_loc12_hat"):
+		case joaat("gang_lemoyne_scm019"):
+		case joaat("gang_murfreeransack_loc10_hat"):
+		case joaat("gang_murfreeransack_loc09_shoe"):
+		case joaat("gang_lemoyne_scm009"):
+		case joaat("gang_lemoyne_scm014"):
+		case joaat("gang_odriscollboys_cml003"):
+		case joaat("gang_murfreeransack_loc09_hat"):
+		case joaat("gang_skinner_tal001"):
+		case joaat("gang_odriscollboys_bgv004"):
+		case joaat("gang_lemoyne_scm008"):
+		case joaat("gang_murfreeransack_loc13_hat"):
+		case joaat("gang_odriscollboys_cml004"):
+		case joaat("gang_odriscollboys_hrt004"):
+		case joaat("gang_odriscollboys_bgv001"):
+		case joaat("gang_skinner_tal002"):
+		case joaat("gang_lemoyne_scm003"):
+		case joaat("gang_lemoyne_scm012"):
+		case joaat("gang_skinner_tal003"):
+		case joaat("gang_murfreeransack_loc01_shoe"):
+		case joaat("gang_lemoyne_scm015"):
+		case joaat("gang_murfreeransack_loc04_shoe"):
+		case joaat("gang_lemoyne_scm002"):
+		case joaat("gang_odriscollboys_hrt011"):
+		case joaat("gang_lemoyne_scm010"):
+		case joaat("gang_skinner_tal004"):
+		case joaat("gang_odriscollboys_hrt012"):
+		case joaat("gang_lemoyne_scm005"):
+		case joaat("gang_murfreeransack_loc11_hat"):
+		case joaat("gang_murfreeransack_loc13_shoe"):
+		case joaat("gang_skinner_tal005"):
+		case joaat("gang_murfreeransack_loc08_hat"):
+		case joaat("gang_murfreeransack_loc05_hat"):
+		case joaat("gang_lemoyne_scm004"):
+		case joaat("gang_skinner_tal006"):
+		case joaat("gang_murfreeransack_loc06_shoe"):
+		case joaat("gang_murfreeransack_loc02_shoe"):
+		case joaat("gang_odriscollboys_bgv005"):
+		case joaat("gang_murfreeransack_loc11_shoe"):
+		case joaat("gang_murfreeransack_loc14_hat"):
+		case joaat("gang_lemoyne_scm011"):
+		case joaat("gang_odriscollboys_bgv006"):
+		case joaat("gang_murfreeransack_loc05_shoe"):
+		case joaat("gang_odriscollboys_hrt007"):
+		case joaat("gang_murfreeransack_loc01_hat"):
+		case joaat("gang_odriscollboys_cml001"):
+		case joaat("gang_lemoyne_scm017"):
+		case joaat("gang_odriscollboys_hrt006"):
+		case joaat("gang_odriscollboys_bgv009"):
+		case joaat("gang_murfreeransack_loc12_shoe"):
+		case joaat("gang_lemoyne_scm016"):
+		case joaat("gang_lemoyne_scm001"):
+		case joaat("gang_odoriscollboys_hrt005"):
+		case joaat("gang_odriscollboys_cml005"):
 			return 1;
 		default:
 			break;
@@ -7396,7 +7396,7 @@ void func_212(var uParam0)
 	if (func_42(&(uParam0->f_40[4]), 0, 1))
 	{
 		func_197(uParam0, &(uParam0->f_40[4]), joaat("GROUP_REVOLVER"), -1, 0, 0, 0.85f, 0.5f, 1);
-		if (func_33(uParam0->f_136) == 2118488614)
+		if (func_33(uParam0->f_136) == joaat("gang_odoriscollboys_hrt005"))
 		{
 			TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP(&(uParam0->f_40[4]), -1169.618f, 93.70457f, 43.84094f, 2.9f, 0, false, false, false, false);
 			func_491(uParam0, 4, 1);
@@ -7442,7 +7442,7 @@ void func_213(var uParam0)
 	if (func_42(&(uParam0->f_40[4]), 0, 1))
 	{
 		func_197(uParam0, &(uParam0->f_40[4]), joaat("GROUP_REVOLVER"), -1, 0, 0, 0.85f, 0.5f, 1);
-		if (func_33(uParam0->f_136) == 2118488614)
+		if (func_33(uParam0->f_136) == joaat("gang_odoriscollboys_hrt005"))
 		{
 			TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP(&(uParam0->f_40[4]), -1169.618f, 93.70457f, 43.84094f, 2.9f, 0, false, false, false, false);
 			func_491(uParam0, 4, 1);
@@ -7690,7 +7690,7 @@ int func_222(var uParam0)
 			{
 				switch (iVar21)
 				{
-					case -1287270695:
+					case joaat("gang_odriscollboys_hrt001"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7706,7 +7706,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -936204805:
+					case joaat("gang_odoriscollboys_hrt002"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7732,7 +7732,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -1885599866:
+					case joaat("gang_odriscollboys_hrt003"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7758,7 +7758,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -118171082:
+					case joaat("gang_odriscollboys_hrt004"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7774,7 +7774,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 2118488614:
+					case joaat("gang_odoriscollboys_hrt005"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7790,7 +7790,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 1726559781:
+					case joaat("gang_odriscollboys_hrt006"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7806,7 +7806,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 1455068616:
+					case joaat("gang_odriscollboys_hrt007"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7822,7 +7822,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -1069586228:
+					case joaat("gang_odriscollboys_hrt008"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7838,7 +7838,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -688744902:
+					case joaat("gang_odriscollboys_hrt009"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7864,7 +7864,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -1993836161:
+					case joaat("gang_odriscollboys_hrt010"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7880,7 +7880,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 402954041:
+					case joaat("gang_odriscollboys_hrt011"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7906,7 +7906,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 616706228:
+					case joaat("gang_odriscollboys_hrt012"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7927,7 +7927,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -1279832420:
+					case joaat("gang_odriscollboys_hrt013"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7943,7 +7943,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 1548242606:
+					case joaat("gang_odriscollboys_cml001"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7964,7 +7964,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -1192753172:
+					case joaat("gang_odriscollboys_cml002"):
 						switch (iVar23)
 						{
 							case 0:
@@ -7985,7 +7985,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -482255714:
+					case joaat("gang_odriscollboys_cml003"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8001,7 +8001,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -236914211:
+					case joaat("gang_odriscollboys_cml004"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8017,7 +8017,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 2130187273:
+					case joaat("gang_odriscollboys_cml005"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8033,7 +8033,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -108299713:
+					case joaat("gang_odriscollboys_bgv001"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8049,7 +8049,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -2009032789:
+					case joaat("gang_odriscollboys_bgv002"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8065,7 +8065,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -822172378:
+					case joaat("gang_odriscollboys_bgv003"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8081,7 +8081,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -340009312:
+					case joaat("gang_odriscollboys_bgv004"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8097,7 +8097,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 1122045165:
+					case joaat("gang_odriscollboys_bgv005"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8123,7 +8123,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 1352837232:
+					case joaat("gang_odriscollboys_bgv006"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8139,7 +8139,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -1740687448:
+					case joaat("gang_odriscollboys_bgv007"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8154,7 +8154,7 @@ int func_222(var uParam0)
 								break;
 						}
 						break;
-					case -1508256931:
+					case joaat("gang_odriscollboys_bgv008"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8170,7 +8170,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case 1739445890:
+					case joaat("gang_odriscollboys_bgv009"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8186,7 +8186,7 @@ int func_222(var uParam0)
 						}
 						func_339(uParam0, iVar23, 2);
 						break;
-					case -817060178:
+					case joaat("gang_odriscollboys_bgv010"):
 						switch (iVar23)
 						{
 							case 0:
@@ -8332,7 +8332,7 @@ int func_223(var uParam0)
 			{
 				switch (iVar27)
 				{
-					case 1971923782:
+					case joaat("gang_lemoyne_scm001"):
 						switch (iVar29)
 						{
 							case 0:
@@ -8700,7 +8700,7 @@ int func_224(var uParam0)
 			{
 				switch (iVar29)
 				{
-					case -368895393:
+					case joaat("gang_skinner_tal001"):
 						switch (iVar30)
 						{
 							case 0:
@@ -8721,7 +8721,7 @@ int func_224(var uParam0)
 						}
 						func_339(uParam0, iVar30, 2);
 						break;
-					case -105596478:
+					case joaat("gang_skinner_tal002"):
 						switch (iVar30)
 						{
 							case 0:
@@ -8742,7 +8742,7 @@ int func_224(var uParam0)
 						}
 						func_339(uParam0, iVar30, 2);
 						break;
-					case 190078209:
+					case joaat("gang_skinner_tal003"):
 						switch (iVar30)
 						{
 							case 0:
@@ -8763,7 +8763,7 @@ int func_224(var uParam0)
 						}
 						func_339(uParam0, iVar30, 2);
 						break;
-					case 561187138:
+					case joaat("gang_skinner_tal004"):
 						switch (iVar30)
 						{
 							case 0:
@@ -8784,7 +8784,7 @@ int func_224(var uParam0)
 						}
 						func_339(uParam0, iVar30, 2);
 						break;
-					case 859352269:
+					case joaat("gang_skinner_tal005"):
 						switch (iVar30)
 						{
 							case 0:
@@ -8805,7 +8805,7 @@ int func_224(var uParam0)
 						}
 						func_339(uParam0, iVar30, 2);
 						break;
-					case 1023328345:
+					case joaat("gang_skinner_tal006"):
 						switch (iVar30)
 						{
 							case 0:
@@ -13179,7 +13179,7 @@ void func_343(int iParam0)
 			{
 				return;
 			}
-			ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(iParam0->f_40[4]), false, 555364152);
+			ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(iParam0->f_40[4]), false, joaat("REL_GANG_LEMOYNE_RAIDERS"));
 			PED::SET_PED_CONFIG_FLAG(&(iParam0->f_40[4]), 448, true);
 			func_49(&(iParam0->f_68), 0);
 			func_161(&(iParam0->f_68), 1);
@@ -14358,167 +14358,167 @@ char* func_369(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			return "GCODR_NAV_HRT_001";
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			return "GCODR_NAV_HRT_002";
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			return "GCODR_NAV_HRT_003";
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			return "GCODR_NAV_HRT_004";
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			return "GCODR_NAV_HRT_005";
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			return "GCODR_NAV_HRT_006";
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			return "GCODR_NAV_HRT_007";
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			return "GCODR_NAV_HRT_008";
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			return "GCODR_NAV_HRT_009";
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			return "GCODR_NAV_HRT_010";
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			return "GCODR_NAV_HRT_011";
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			return "GCODR_NAV_HRT_012";
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			return "GCODR_NAV_HRT_013";
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			return "GCODR_NAV_BGV_001";
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			return "GCODR_NAV_BGV_002";
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			return "GCODR_NAV_BGV_003";
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			return "GCODR_NAV_BGV_004";
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			return "GCODR_NAV_BGV_005";
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			return "GCODR_NAV_BGV_006";
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			return "GCODR_NAV_BGV_007";
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			return "GCODR_NAV_BGV_008";
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			return "GCODR_NAV_BGV_009";
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			return "GCODR_NAV_BGV_010";
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			return "GCODR_NAV_CML_001";
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			return "GCODR_NAV_CML_002";
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			return "GCODR_NAV_CML_003";
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			return "GCODR_NAV_CML_004";
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			return "GCODR_NAV_CML_005";
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			return "GCEXC_NAV_SCM_001";
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			return "GCEXC_NAV_SCM_002";
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			return "GCEXC_NAV_SCM_003";
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			return "GCEXC_NAV_SCM_004";
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			return "GCEXC_NAV_SCM_005";
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			return "GCEXC_NAV_SCM_006";
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			return "GCEXC_NAV_SCM_007";
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			return "GCEXC_NAV_SCM_008";
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			return "GCEXC_NAV_SCM_009";
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			return "GCEXC_NAV_SCM_010";
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			return "GCEXC_NAV_SCM_011";
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			return "GCEXC_NAV_SCM_012";
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			return "GCEXC_NAV_SCM_013";
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			return "GCEXC_NAV_SCM_014";
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			return "GCEXC_NAV_SCM_015";
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			return "GCEXC_NAV_SCM_016";
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			return "GCEXC_NAV_SCM_017";
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			return "GCEXC_NAV_SCM_018";
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			return "GCEXC_NAV_SCM_019";
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			return "GCSAV_NAV_TAL_001";
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			return "GCSAV_NAV_TAL_002";
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			return "GCSAV_NAV_TAL_003";
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			return "GCSAV_NAV_TAL_004";
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			return "GCSAV_NAV_TAL_005";
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			return "GCSAV_NAV_TAL_006";
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			return "GCINB_NAV_ROA_HAT_001";
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			return "GCINB_NAV_ROA_HAT_002";
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			return "GCINB_NAV_ROA_HAT_003";
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			return "GCINB_NAV_ROA_HAT_004";
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			return "GCINB_NAV_ROA_HAT_005";
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			return "GCINB_NAV_ROA_HAT_006";
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			return "GCINB_NAV_ROA_HAT_007";
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			return "GCINB_NAV_ROA_HAT_008";
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			return "GCINB_NAV_ROA_HAT_009";
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			return "GCINB_NAV_ROA_HAT_010";
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			return "GCINB_NAV_ROA_HAT_011";
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			return "GCINB_NAV_ROA_HAT_012";
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			return "GCINB_NAV_ROA_HAT_013";
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			return "GCINB_NAV_ROA_HAT_014";
-		case 298607063:
+		case joaat("gang_murfreeransack_loc01_shoe"):
 			return "GCINB_NAV_ROA_SHOE_001";
-		case 1117165375:
+		case joaat("gang_murfreeransack_loc02_shoe"):
 			return "GCINB_NAV_ROA_SHOE_002";
-		case -1985868973:
+		case joaat("gang_murfreeransack_loc03_shoe"):
 			return "GCINB_NAV_ROA_SHOE_003";
-		case 354638936:
+		case joaat("gang_murfreeransack_loc04_shoe"):
 			return "GCINB_NAV_ROA_SHOE_004";
-		case 1416094782:
+		case joaat("gang_murfreeransack_loc05_shoe"):
 			return "GCINB_NAV_ROA_SHOE_005";
-		case 1062381624:
+		case joaat("gang_murfreeransack_loc06_shoe"):
 			return "GCINB_NAV_ROA_SHOE_006";
-		case -1986775954:
+		case joaat("gang_murfreeransack_loc07_shoe"):
 			return "GCINB_NAV_ROA_SHOE_007";
-		case -899261623:
+		case joaat("gang_murfreeransack_loc08_shoe"):
 			return "GCINB_NAV_ROA_SHOE_008";
-		case -557729610:
+		case joaat("gang_murfreeransack_loc09_shoe"):
 			return "GCINB_NAV_ROA_SHOE_009";
-		case -1991979537:
+		case joaat("gang_murfreeransack_loc10_shoe"):
 			return "GCINB_NAV_ROA_SHOE_010";
-		case 1193231534:
+		case joaat("gang_murfreeransack_loc11_shoe"):
 			return "GCINB_NAV_ROA_SHOE_011";
-		case 1807258239:
+		case joaat("gang_murfreeransack_loc12_shoe"):
 			return "GCINB_NAV_ROA_SHOE_012";
-		case 787640784:
+		case joaat("gang_murfreeransack_loc13_shoe"):
 			return "GCINB_NAV_ROA_SHOE_013";
-		case -1414272575:
+		case joaat("gang_murfreeransack_loc14_shoe"):
 			return "GCINB_NAV_ROA_SHOE_014";
 		default:
 			break;
@@ -15118,43 +15118,43 @@ int func_400(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			return joaat("p_trunk05x");
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			return joaat("p_trunk05x");
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			return joaat("p_trunk05x");
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			return joaat("p_trunk05x");
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			return joaat("p_trunk05x");
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			return joaat("p_trunk05x");
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			return joaat("p_trunk05x");
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			return joaat("p_trunk05x");
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			return joaat("p_trunk05x");
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			return joaat("p_trunk05x");
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			return joaat("p_trunk05x");
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			return joaat("p_trunk05x");
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			return joaat("p_trunk05x");
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			return joaat("p_trunk05x");
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			return joaat("p_trunk05x");
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			return joaat("p_trunk05x");
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			return joaat("p_trunk05x");
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			return joaat("p_trunk05x");
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			return joaat("p_trunk05x");
 		default:
 			break;
@@ -15169,43 +15169,43 @@ Vector3 func_401(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			return 1180.958f, -2185.625f, 54.1356f;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			return 1433.899f, -2189.819f, 48.2984f;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			return 1557.551f, -2056.062f, 47.6287f;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			return 1700.198f, -2015.753f, 43.6478f;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			return 1388.435f, -1700.694f, 66.5359f;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			return 1630.093f, -1655.047f, 56.0324f;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			return 1500.022f, -1478.32f, 71.5329f;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			return 874.5448f, -1335.144f, 54.838f;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			return 951.4972f, -1323.337f, 58.165f;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			return 1091.083f, -1270.88f, 67.4971f;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			return 709.8589f, -1180.291f, 47.2907f;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			return 864.7245f, -1138.949f, 57.2908f;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			return 690.9203f, -997.1108f, 52.4205f;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			return 918.8745f, -991.2834f, 56.9325f;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			return 702.7732f, -893.9205f, 48.2629f;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			return 1342.207f, -599.5588f, 74.721f;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			return 874.5544f, -546.0947f, 88.0385f;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			return 968.9468f, -577.5758f, 89.1545f;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			return 1020.303f, -388.9139f, 90.5539f;
 		default:
 			break;
@@ -15308,17 +15308,17 @@ int func_407(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			return joaat("p_boxlrgtin01x");
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			return joaat("p_boxmeddeposit01x");
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			return joaat("p_boxsmlammo01x");
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			return joaat("p_boxlrgtin01x");
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			return joaat("p_boxsmlammo01x");
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			return joaat("p_boxlrgtin01x");
 		default:
 			break;
@@ -15333,17 +15333,17 @@ Vector3 func_408(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			return -1995.449f, -1837.293f, 112.2457f;
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			return -2123.816f, -1772.784f, 141.6892f;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			return -2680.846f, -1460.075f, 146.1349f;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			return -2434.103f, -1330.182f, 152.2319f;
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			return -2106.493f, -1257.111f, 121.9289f;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			return -2031.931f, -1279.419f, 114.6214f;
 		default:
 			break;
@@ -15358,49 +15358,49 @@ int func_409(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -1993836161:
-		case -1885599866:
-		case -1287270695:
-		case -1279832420:
-		case -1069586228:
-		case -936204805:
-		case -688744902:
-		case -118171082:
-		case 402954041:
-		case 616706228:
-		case 1455068616:
-		case 1726559781:
-		case 2118488614:
+		case joaat("gang_odriscollboys_hrt010"):
+		case joaat("gang_odriscollboys_hrt003"):
+		case joaat("gang_odriscollboys_hrt001"):
+		case joaat("gang_odriscollboys_hrt013"):
+		case joaat("gang_odriscollboys_hrt008"):
+		case joaat("gang_odoriscollboys_hrt002"):
+		case joaat("gang_odriscollboys_hrt009"):
+		case joaat("gang_odriscollboys_hrt004"):
+		case joaat("gang_odriscollboys_hrt011"):
+		case joaat("gang_odriscollboys_hrt012"):
+		case joaat("gang_odriscollboys_hrt007"):
+		case joaat("gang_odriscollboys_hrt006"):
+		case joaat("gang_odoriscollboys_hrt005"):
 			return joaat("p_boxsmlammo01x");
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			return joaat("p_boxmedmedical01x");
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			return joaat("p_boxmedmedical01x");
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			return joaat("p_boxmedmedical01x");
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			return joaat("p_boxsmlammo01x");
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			return joaat("p_boxmedmedical01x");
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			return joaat("p_boxmedmedical01x");
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			return joaat("p_boxsmlammo01x");
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			return joaat("p_boxsmlammo01x");
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			return joaat("p_boxmedmedical01x");
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			return joaat("p_boxmedmedical01x");
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			return joaat("p_boxsmlammo01x");
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			return joaat("p_boxmedmedical01x");
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			return joaat("p_boxmedmedical01x");
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			return joaat("p_boxmedmedical01x");
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			return joaat("p_boxsmlammo01x");
 		default:
 			break;
@@ -15415,61 +15415,61 @@ Vector3 func_410(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			return -649.7249f, -395.1516f, 78.6402f;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			return 497.9019f, -260.7928f, 143.015f;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			return 645.0981f, -109.1484f, 148.868f;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			return 1070.414f, 35.5955f, 85.9799f;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			return -1168.961f, 90.198f, 43.9119f;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			return -962.6133f, 299.8505f, 94.0861f;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			return -638.2568f, 278.425f, 89.9113f;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			return -196.7142f, 293.3584f, 95.5719f;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			return 179.9373f, 341.1954f, 119.621f;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			return -848.4222f, 464.6545f, 89.3952f;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			return 439.6509f, 834.4133f, 145.7116f;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			return 273.9229f, 833.3763f, 189.4324f;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			return 997.9755f, 979.1554f, 150.4163f;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			return -6.5002f, 945.991f, 209.9738f;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			return 644.6239f, 1296.29f, 194.3651f;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			return 97.4432f, 1411.123f, 166.6809f;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			return 592.5739f, 1428.343f, 186.2702f;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			return 499.3595f, 1500.395f, 172.661f;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			return -1124.679f, -222.2912f, 89.4724f;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			return -983.7515f, -208.4442f, 89.7443f;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			return -2596.901f, -18.939f, 159.6348f;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			return -800.1869f, -83.4713f, 79.6492f;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			return -2764.248f, 112.5854f, 163.4329f;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			return -1442.854f, 106.3923f, 89.5202f;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			return -1586.371f, 494.4865f, 113.7887f;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			return -1350.271f, 487.9342f, 95.5567f;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			return -1716.656f, 602.4106f, 117.7034f;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			return -1625.473f, 826.2224f, 154.0743f;
 		default:
 			break;
@@ -15487,7 +15487,7 @@ struct<55> func_411(var uParam0)
 	Var1.f_41 = 13;
 	switch (iVar0)
 	{
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1184.418f, -2181.725f, 54.2527f };
 			Var1.f_41[0] = joaat("p_lampkerosene01x");
@@ -15504,7 +15504,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1167.087f, -2183.198f, 54.7602f };
 			Var1.f_41[6] = joaat("p_lantern05x");
 			break;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1422.627f, -2181.514f, 50.5542f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -15521,7 +15521,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1437.228f, -2186.275f, 49.0088f };
 			Var1.f_41[6] = joaat("p_lampkerosene01x");
 			break;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1561.611f, -2059.282f, 48.0019f };
 			Var1.f_41[0] = joaat("p_lampkerosene01x");
@@ -15538,7 +15538,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1559.208f, -2040.987f, 47.7164f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1696.398f, -2005.459f, 44.1072f };
 			Var1.f_41[0] = joaat("p_candlegroup07x");
@@ -15555,7 +15555,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1704.241f, -2019.003f, 44.0485f };
 			Var1.f_41[6] = joaat("p_lampkerosene01x");
 			break;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1382.157f, -1703.239f, 68.8942f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -15572,7 +15572,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1391.651f, -1696.529f, 66.8421f };
 			Var1.f_41[6] = joaat("p_lampkerosene01x");
 			break;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1633.671f, -1652.616f, 57.4065f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -15589,7 +15589,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1628.574f, -1652.788f, 59.1847f };
 			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
 			break;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1497.783f, -1472.077f, 73.6557f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -15606,7 +15606,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1502.219f, -1476.813f, 74.6078f };
 			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
 			break;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 860.4436f, -1332.898f, 55.3573f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15623,7 +15623,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 876.8427f, -1331.112f, 56.2669f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 940.3016f, -1315.425f, 60.4181f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -15640,7 +15640,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 936.7681f, -1321.387f, 58.8479f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1084.867f, -1273.158f, 69.5768f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -15657,7 +15657,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1076.237f, -1268.929f, 68.0022f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 695.9939f, -1178.061f, 47.9312f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15674,7 +15674,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 708.3448f, -1178.119f, 50.5765f };
 			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
 			break;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 853.5038f, -1131.041f, 59.584f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -15691,7 +15691,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 868.3735f, -1136.573f, 58.4377f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 677.5172f, -993.4567f, 53.7063f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15708,7 +15708,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 679.7295f, -989.2327f, 54.6695f };
 			Var1.f_41[6] = joaat("p_lanternhang01x");
 			break;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 904.6342f, -989.0264f, 57.6638f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15725,7 +15725,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 922.5073f, -988.9283f, 58.2261f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 710.9292f, -882.8296f, 50.5003f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -15742,7 +15742,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 705.0671f, -897.5851f, 49.632f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1345.887f, -597.2509f, 75.7548f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -15759,7 +15759,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1326.754f, -597.4252f, 75.2768f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 878.5245f, -532.8374f, 89.3256f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15776,7 +15776,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 877.1887f, -549.1096f, 89.4168f };
 			Var1.f_41[6] = joaat("p_lantern07x");
 			break;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 957.7977f, -569.6921f, 91.4616f };
 			Var1.f_41[0] = joaat("p_lanternhang01x");
@@ -15793,7 +15793,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 953.9346f, -576.1766f, 89.7646f };
 			Var1.f_41[6] = joaat("p_candlegroup07x");
 			break;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1019.714f, -395.6589f, 92.4492f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
@@ -15810,7 +15810,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[6 /*3*/]) = { 1008.41f, -395.6642f, 92.6918f };
 			Var1.f_41[6] = joaat("p_lanternhang01x");
 			break;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1121.141f, -214.8689f, 90.7092f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15819,7 +15819,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1121.042f, -222.9238f, 90.2776f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -981.358f, -208.8575f, 90.2115f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -15828,14 +15828,14 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -987.7882f, -214.0844f, 90.5625f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2594.284f, -19.94f, 160.1174f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
 			*(Var1.f_1[1 /*3*/]) = { -2600.86f, -25.2972f, 160.4258f };
 			Var1.f_41[1] = joaat("p_lantern09x");
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -796.8143f, -76.1614f, 81.4096f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15844,7 +15844,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -790.3673f, -82.7891f, 81.8288f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -2758.406f, 119.9791f, 164.233f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15853,7 +15853,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -2754.349f, 113.3577f, 165.2431f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1448.537f, 94.5786f, 90.5483f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15862,7 +15862,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1447.146f, 99.1479f, 90.2709f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1582.723f, 493.9426f, 114.5219f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15871,7 +15871,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1576.344f, 495.3961f, 115.5541f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1346.524f, 494.7462f, 96.7929f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15880,7 +15880,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1346.454f, 487.3717f, 96.3597f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1712.421f, 601.9015f, 118.4892f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15889,7 +15889,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1706.754f, 603.1379f, 119.4988f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1623.011f, 824.3295f, 154.614f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -15898,14 +15898,14 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1629.251f, 818.8979f, 154.8488f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 0.6993f, 950.7767f, 211.5146f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { -5.5571f, 949.0652f, 210.7931f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 643.8716f, 1300.858f, 194.4375f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15914,7 +15914,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 646.558f, 1303.353f, 194.2214f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 100.8803f, 1418.555f, 167.8691f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15923,7 +15923,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 107.4312f, 1411.843f, 168.5385f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 595.0633f, 1426.475f, 186.757f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -15932,7 +15932,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 588.549f, 1421.198f, 187.0105f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 503.036f, 1499.736f, 173.4577f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15941,7 +15941,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 502.9444f, 1507.644f, 173.5802f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -643.7875f, -389.3485f, 80.5294f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15950,7 +15950,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -650.041f, -388.051f, 79.9709f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 497.8333f, -253.464f, 144.3131f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15959,7 +15959,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 503.8024f, -259.8799f, 144.9664f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 651.0438f, -108.303f, 150.7209f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15968,7 +15968,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 644.7845f, -102.0038f, 150.102f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 1076.3f, 36.5688f, 88.2713f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -15977,7 +15977,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 1070.186f, 35.1987f, 86.785f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1160.354f, 98.4753f, 45.7867f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -15986,7 +15986,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -1166.028f, 95.7244f, 45.0446f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -960.1163f, 298.1846f, 94.5743f };
 			Var1.f_41[0] = joaat("p_candlelamp01x");
@@ -15995,7 +15995,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -956.6438f, 293.1663f, 95.0279f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -638.4341f, 277.9949f, 90.7025f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16004,7 +16004,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -638.7745f, 285.8612f, 91.2351f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -190.7069f, 294.138f, 97.7753f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16013,7 +16013,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -196.8738f, 292.9286f, 96.3611f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 179.6932f, 340.8179f, 120.4203f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16022,7 +16022,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 179.5466f, 348.3829f, 120.8608f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -848.6968f, 464.2803f, 90.2008f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16031,7 +16031,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { -848.2307f, 475.265f, 89.953f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 439.3978f, 834.7624f, 146.5218f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16040,7 +16040,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 444.9662f, 830.0444f, 146.8524f };
 			Var1.f_41[2] = joaat("p_lantern09x");
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 280.3633f, 834.4491f, 191.3079f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16049,7 +16049,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 273.7414f, 832.9695f, 190.239f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 999.8769f, 989.3497f, 152.7125f };
 			Var1.f_41[0] = joaat("p_lantern05x");
@@ -16058,112 +16058,112 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[2 /*3*/]) = { 997.5594f, 978.8789f, 151.1462f };
 			Var1.f_41[2] = joaat("p_lantern05x");
 			break;
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2119.388f, -143.2577f, 51.74896f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2120.497f, -135.0572f, 49.4091f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2464.06f, -86.0444f, 46.5518f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2471.861f, -86.7413f, 45.1533f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2557.538f, -72.6367f, 51.0503f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2550.229f, -69.1811f, 49.3466f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2323.838f, 12.3615f, 48.9343f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2317.69f, 7.2237f, 47.3146f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2442.597f, 642.1541f, 71.1171f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2435.375f, 645.5943f, 68.8323f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2427.814f, 774.8948f, 68.8389f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2421.24f, 776.8815f, 67.4171f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2357.085f, 839.507f, 78.5513f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2364.479f, 836.6267f, 80.2272f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2404.657f, 882.7617f, 73.2369f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2410.936f, 879.4398f, 74.655f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2506.826f, 879.7056f, 74.1281f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2499.95f, 877.4795f, 72.8496f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2392.38f, 1020.881f, 91.1603f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2385.737f, 1023.847f, 89.4941f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2296.813f, 1055.442f, 115.564f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2303.54f, 1051.743f, 117.1823f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2521.276f, 1744.299f, 88.8357f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2513.138f, 1747.778f, 87.2408f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2788.514f, 2007.866f, 164.2861f };
 			Var1.f_41[0] = joaat("p_lantern05x");
 			*(Var1.f_1[1 /*3*/]) = { 2796.658f, 2009.502f, 165.8971f };
 			Var1.f_41[1] = joaat("p_lantern09xmoths");
 			break;
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2626.094f, 2103.049f, 174.8151f };
 			Var1.f_41[0] = joaat("p_lantern09xmoths");
 			*(Var1.f_1[1 /*3*/]) = { 2617.896f, 2105.501f, 173.0599f };
 			Var1.f_41[1] = joaat("p_lantern05x");
 			break;
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2000.564f, -1815.177f, 111.6976f };
 			Var1.f_41[0] = joaat("p_candlegroup06x");
 			*(Var1.f_1[1 /*3*/]) = { -1993.893f, -1829.005f, 112.6046f };
 			Var1.f_41[1] = joaat("p_candlebot01x");
 			break;
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			Var1 = 5;
 			*(Var1.f_1[0 /*3*/]) = { -2137.73f, -1777.193f, 142.9314f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -16176,7 +16176,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[4 /*3*/]) = { -2123.251f, -1777.829f, 141.6141f };
 			Var1.f_41[4] = joaat("p_candle01x");
 			break;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			Var1 = 6;
 			*(Var1.f_1[0 /*3*/]) = { -2668.985f, -1455.632f, 146.0624f };
 			Var1.f_41[0] = joaat("p_lantern09x");
@@ -16191,14 +16191,14 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[5 /*3*/]) = { -2643.468f, -1475.554f, 145.5627f };
 			Var1.f_41[5] = joaat("p_candle01x");
 			break;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2441.974f, -1346.05f, 153.5024f };
 			Var1.f_41[0] = joaat("p_lantern09x");
 			*(Var1.f_1[1 /*3*/]) = { -2437.223f, -1338.827f, 154.0883f };
 			Var1.f_41[1] = joaat("p_lantern07x");
 			break;
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			Var1 = 4;
 			*(Var1.f_1[0 /*3*/]) = { -2110.283f, -1259.22f, 123.2854f };
 			Var1.f_41[0] = joaat("p_lantern07x");
@@ -16209,7 +16209,7 @@ struct<55> func_411(var uParam0)
 			*(Var1.f_1[3 /*3*/]) = { -2115.433f, -1269.648f, 122.9037f };
 			Var1.f_41[3] = joaat("p_lantern04xlowfuel");
 			break;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			Var1 = 6;
 			*(Var1.f_1[0 /*3*/]) = { -2021.801f, -1260.781f, 113.8459f };
 			Var1.f_41[0] = joaat("p_candlebot01x");
@@ -16420,79 +16420,79 @@ int func_424(var uParam0)
 	iVar0 = func_492();
 	if (func_884(uParam0->f_131, 1172.801f, -2180.63f, 54.1324f, 8f, 0))
 	{
-		iVar0 = 1971923782;
+		iVar0 = joaat("gang_lemoyne_scm001");
 	}
 	else if (func_884(uParam0->f_131, 1425.688f, -2184.663f, 48.29141f, 8f, 0))
 	{
-		iVar0 = 401043460;
+		iVar0 = joaat("gang_lemoyne_scm002");
 	}
 	else if (func_884(uParam0->f_131, 1562.246f, -2047.412f, 47.3446f, 8f, 0))
 	{
-		iVar0 = 104287396;
+		iVar0 = joaat("gang_lemoyne_scm003");
 	}
 	else if (func_884(uParam0->f_131, 1704.892f, -2007.252f, 43.79116f, 8f, 0))
 	{
-		iVar0 = 1014446371;
+		iVar0 = joaat("gang_lemoyne_scm004");
 	}
 	else if (func_884(uParam0->f_131, 1379.948f, -1696.249f, 66.86113f, 8f, 0))
 	{
-		iVar0 = 715920781;
+		iVar0 = joaat("gang_lemoyne_scm005");
 	}
 	else if (func_884(uParam0->f_131, 1621.595f, -1650.258f, 56.03105f, 8f, 0))
 	{
-		iVar0 = -900541220;
+		iVar0 = joaat("gang_lemoyne_scm006");
 	}
 	else if (func_884(uParam0->f_131, 1504.914f, -1469.925f, 71.38271f, 8f, 0))
 	{
-		iVar0 = -1199296193;
+		iVar0 = joaat("gang_lemoyne_scm007");
 	}
 	else if (func_884(uParam0->f_131, 866.1378f, -1330.241f, 54.74931f, 8f, 0))
 	{
-		iVar0 = -290546285;
+		iVar0 = joaat("gang_lemoyne_scm008");
 	}
 	else if (func_884(uParam0->f_131, 943.1058f, -1318.438f, 58.1866f, 8f, 0))
 	{
-		iVar0 = -553189820;
+		iVar0 = joaat("gang_lemoyne_scm009");
 	}
 	else if (func_884(uParam0->f_131, 1082.685f, -1265.978f, 67.5664f, 8f, 0))
 	{
-		iVar0 = 546408124;
+		iVar0 = joaat("gang_lemoyne_scm010");
 	}
 	else if (func_884(uParam0->f_131, 701.4727f, -1175.392f, 47.27374f, 8f, 0))
 	{
-		iVar0 = 1313890873;
+		iVar0 = joaat("gang_lemoyne_scm011");
 	}
 	else if (func_884(uParam0->f_131, 856.3353f, -1134.047f, 57.39069f, 8f, 0))
 	{
-		iVar0 = 129717520;
+		iVar0 = joaat("gang_lemoyne_scm012");
 	}
 	else if (func_884(uParam0->f_131, 682.5216f, -992.2086f, 53.22313f, 8f, 0))
 	{
-		iVar0 = -1232784731;
+		iVar0 = joaat("gang_lemoyne_scm013");
 	}
 	else if (func_884(uParam0->f_131, 910.479f, -986.384f, 56.95998f, 8f, 0))
 	{
-		iVar0 = -482898935;
+		iVar0 = joaat("gang_lemoyne_scm014");
 	}
 	else if (func_884(uParam0->f_131, 707.8307f, -885.6594f, 48.26217f, 8f, 0))
 	{
-		iVar0 = 301558156;
+		iVar0 = joaat("gang_lemoyne_scm015");
 	}
 	else if (func_884(uParam0->f_131, 1333.917f, -594.5532f, 74.6698f, 8f, 0))
 	{
-		iVar0 = 1859330882;
+		iVar0 = joaat("gang_lemoyne_scm016");
 	}
 	else if (func_884(uParam0->f_131, 879.6473f, -537.8669f, 88.16708f, 8f, 0))
 	{
-		iVar0 = 1683033662;
+		iVar0 = joaat("gang_lemoyne_scm017");
 	}
 	else if (func_884(uParam0->f_131, 960.5345f, -572.7078f, 89.22559f, 8f, 0))
 	{
-		iVar0 = -1419371417;
+		iVar0 = joaat("gang_lemoyne_scm018");
 	}
 	else if (func_884(uParam0->f_131, 1012.322f, -394.373f, 90.43443f, 8f, 0))
 	{
-		iVar0 = -643041038;
+		iVar0 = joaat("gang_lemoyne_scm019");
 	}
 	return iVar0;
 }
@@ -16517,117 +16517,117 @@ int func_427(var uParam0)
 		case 13:
 			if (func_884(uParam0->f_131, 2120.055f, -139.9399f, 49.39753f, 8f, 0))
 			{
-				iVar0 = 1542551103;
+				iVar0 = joaat("gang_murfreeransack_loc01_hat");
 			}
 			else if (func_884(uParam0->f_131, 2467.536f, -85.13482f, 44.90603f, 8f, 0))
 			{
-				iVar0 = -1298966347;
+				iVar0 = joaat("gang_murfreeransack_loc02_hat");
 			}
 			else if (func_884(uParam0->f_131, 2554.546f, -70.72034f, 49.34921f, 8f, 0))
 			{
-				iVar0 = -1695492178;
+				iVar0 = joaat("gang_murfreeransack_loc03_hat");
 			}
 			else if (func_884(uParam0->f_131, 2322.143f, 10.5461f, 47.17888f, 8f, 0))
 			{
-				iVar0 = -1300575561;
+				iVar0 = joaat("gang_murfreeransack_loc04_hat");
 			}
 			else if (func_884(uParam0->f_131, 2439.399f, 643.9258f, 69.05087f, 8f, 0))
 			{
-				iVar0 = 933157597;
+				iVar0 = joaat("gang_murfreeransack_loc05_hat");
 			}
 			else if (func_884(uParam0->f_131, 2424.775f, 776.5992f, 67.14359f, 8f, 0))
 			{
-				iVar0 = -1139312905;
+				iVar0 = joaat("gang_murfreeransack_loc06_hat");
 			}
 			else if (func_884(uParam0->f_131, 2361.054f, 837.9192f, 78.37531f, 8f, 0))
 			{
-				iVar0 = -1003150953;
+				iVar0 = joaat("gang_murfreeransack_loc07_hat");
 			}
 			else if (func_884(uParam0->f_131, 2408.873f, 881.5157f, 73.6795f, 8f, 0))
 			{
-				iVar0 = 929785619;
+				iVar0 = joaat("gang_murfreeransack_loc08_hat");
 			}
 			else if (func_884(uParam0->f_131, 2503.609f, 879.1027f, 72.58246f, 8f, 0))
 			{
-				iVar0 = -476849231;
+				iVar0 = joaat("gang_murfreeransack_loc09_hat");
 			}
 			else if (func_884(uParam0->f_131, 2389.684f, 1021.687f, 89.64238f, 8f, 0))
 			{
-				iVar0 = -639956757;
+				iVar0 = joaat("gang_murfreeransack_loc10_hat");
 			}
 			else if (func_884(uParam0->f_131, 2301.047f, 1053.477f, 115.3882f, 8f, 0))
 			{
-				iVar0 = 748846068;
+				iVar0 = joaat("gang_murfreeransack_loc11_hat");
 			}
 			else if (func_884(uParam0->f_131, 2517.614f, 1746.538f, 87.30142f, 8f, 0))
 			{
-				iVar0 = -663999418;
+				iVar0 = joaat("gang_murfreeransack_loc12_hat");
 			}
 			else if (func_884(uParam0->f_131, 2792.256f, 2006.863f, 164.2473f, 8f, 0))
 			{
-				iVar0 = -259044425;
+				iVar0 = joaat("gang_murfreeransack_loc13_hat");
 			}
 			else if (func_884(uParam0->f_131, 2622.118f, 2104.529f, 172.9557f, 8f, 0))
 			{
-				iVar0 = 1199768352;
+				iVar0 = joaat("gang_murfreeransack_loc14_hat");
 			}
 			break;
 		case 12:
 			if (func_884(uParam0->f_131, 2120.055f, -139.9399f, 49.39753f, 8f, 0))
 			{
-				iVar0 = 298607063;
+				iVar0 = joaat("gang_murfreeransack_loc01_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2467.536f, -85.13482f, 44.90603f, 8f, 0))
 			{
-				iVar0 = 1117165375;
+				iVar0 = joaat("gang_murfreeransack_loc02_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2554.546f, -70.72034f, 49.34921f, 8f, 0))
 			{
-				iVar0 = -1985868973;
+				iVar0 = joaat("gang_murfreeransack_loc03_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2322.143f, 10.5461f, 47.17888f, 8f, 0))
 			{
-				iVar0 = 354638936;
+				iVar0 = joaat("gang_murfreeransack_loc04_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2439.399f, 643.9258f, 69.05087f, 8f, 0))
 			{
-				iVar0 = 1416094782;
+				iVar0 = joaat("gang_murfreeransack_loc05_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2424.775f, 776.5992f, 67.14359f, 8f, 0))
 			{
-				iVar0 = 1062381624;
+				iVar0 = joaat("gang_murfreeransack_loc06_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2361.054f, 837.9192f, 78.37531f, 8f, 0))
 			{
-				iVar0 = -1986775954;
+				iVar0 = joaat("gang_murfreeransack_loc07_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2408.873f, 881.5157f, 73.6795f, 8f, 0))
 			{
-				iVar0 = -899261623;
+				iVar0 = joaat("gang_murfreeransack_loc08_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2503.609f, 879.1027f, 72.58246f, 8f, 0))
 			{
-				iVar0 = -557729610;
+				iVar0 = joaat("gang_murfreeransack_loc09_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2389.684f, 1021.687f, 89.64238f, 8f, 0))
 			{
-				iVar0 = -1991979537;
+				iVar0 = joaat("gang_murfreeransack_loc10_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2301.047f, 1053.477f, 115.3882f, 8f, 0))
 			{
-				iVar0 = 1193231534;
+				iVar0 = joaat("gang_murfreeransack_loc11_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2517.614f, 1746.538f, 87.30142f, 8f, 0))
 			{
-				iVar0 = 1807258239;
+				iVar0 = joaat("gang_murfreeransack_loc12_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2792.256f, 2006.863f, 164.2473f, 8f, 0))
 			{
-				iVar0 = 787640784;
+				iVar0 = joaat("gang_murfreeransack_loc13_shoe");
 			}
 			else if (func_884(uParam0->f_131, 2622.118f, 2104.529f, 172.9557f, 8f, 0))
 			{
-				iVar0 = -1414272575;
+				iVar0 = joaat("gang_murfreeransack_loc14_shoe");
 			}
 			break;
 	}
@@ -16644,135 +16644,135 @@ int func_428(var uParam0)
 		case 9:
 			if (func_884(uParam0->f_131, -649.5008f, -390.8956f, 79.01965f, 8f, 0))
 			{
-				iVar0 = -1287270695;
+				iVar0 = joaat("gang_odriscollboys_hrt001");
 			}
 			else if (func_884(uParam0->f_131, 498.1978f, -256.6951f, 143.0399f, 8f, 0))
 			{
-				iVar0 = -936204805;
+				iVar0 = joaat("gang_odoriscollboys_hrt002");
 			}
 			else if (func_884(uParam0->f_131, 645.4185f, -105.0322f, 149.1825f, 8f, 0))
 			{
-				iVar0 = -1885599866;
+				iVar0 = joaat("gang_odriscollboys_hrt003");
 			}
 			else if (func_884(uParam0->f_131, 1070.751f, 39.72955f, 86.17001f, 8f, 0))
 			{
-				iVar0 = -118171082;
+				iVar0 = joaat("gang_odriscollboys_hrt004");
 			}
 			else if (func_884(uParam0->f_131, -1164.604f, 91.67564f, 44.39952f, 8f, 0))
 			{
-				iVar0 = 2118488614;
+				iVar0 = joaat("gang_odoriscollboys_hrt005");
 			}
 			else if (func_884(uParam0->f_131, -966.0297f, 296.5843f, 94.38394f, 8f, 0))
 			{
-				iVar0 = 1726559781;
+				iVar0 = joaat("gang_odriscollboys_hrt006");
 			}
 			else if (func_884(uParam0->f_131, -637.8889f, 282.4434f, 89.95146f, 8f, 0))
 			{
-				iVar0 = 1455068616;
+				iVar0 = joaat("gang_odriscollboys_hrt007");
 			}
 			else if (func_884(uParam0->f_131, -196.3359f, 297.4024f, 95.93667f, 8f, 0))
 			{
-				iVar0 = -1069586228;
+				iVar0 = joaat("gang_odriscollboys_hrt008");
 			}
 			else if (func_884(uParam0->f_131, 180.3119f, 345.1467f, 119.6248f, 8f, 0))
 			{
-				iVar0 = -688744902;
+				iVar0 = joaat("gang_odriscollboys_hrt009");
 			}
 			else if (func_884(uParam0->f_131, -848.158f, 468.8612f, 89.74363f, 8f, 0))
 			{
-				iVar0 = -1993836161;
+				iVar0 = joaat("gang_odriscollboys_hrt010");
 			}
 			else if (func_884(uParam0->f_131, 442.5106f, 831.5317f, 145.8235f, 8f, 0))
 			{
-				iVar0 = 402954041;
+				iVar0 = joaat("gang_odriscollboys_hrt011");
 			}
 			else if (func_884(uParam0->f_131, 274.3777f, 837.4482f, 189.4315f, 8f, 0))
 			{
-				iVar0 = 616706228;
+				iVar0 = joaat("gang_odriscollboys_hrt012");
 			}
 			else if (func_884(uParam0->f_131, 998.2932f, 983.3121f, 150.9924f, 8f, 0))
 			{
-				iVar0 = -1279832420;
+				iVar0 = joaat("gang_odriscollboys_hrt013");
 			}
 			else if (func_884(uParam0->f_131, -5.033648f, 954.0292f, 210.2745f, 8f, 0))
 			{
-				iVar0 = 1548242606;
+				iVar0 = joaat("gang_odriscollboys_cml001");
 			}
 			break;
 		case 1:
 			if (func_884(uParam0->f_131, -1165.043f, 91.94646f, 43.90535f, 8f, 0))
 			{
-				iVar0 = 2118488614;
+				iVar0 = joaat("gang_odoriscollboys_hrt005");
 			}
 			else if (func_884(uParam0->f_131, -966.0297f, 296.5843f, 94.38394f, 8f, 0))
 			{
-				iVar0 = 1726559781;
+				iVar0 = joaat("gang_odriscollboys_hrt006");
 			}
 			else if (func_884(uParam0->f_131, -1120.411f, -218.3708f, 89.53584f, 8f, 0))
 			{
-				iVar0 = -108299713;
+				iVar0 = joaat("gang_odriscollboys_bgv001");
 			}
 			else if (func_884(uParam0->f_131, -987.2717f, -210.2211f, 89.75452f, 8f, 0))
 			{
-				iVar0 = -2009032789;
+				iVar0 = joaat("gang_odriscollboys_bgv002");
 			}
 			else if (func_884(uParam0->f_131, -795.9763f, -79.53944f, 80.04455f, 8f, 0))
 			{
-				iVar0 = -340009312;
+				iVar0 = joaat("gang_odriscollboys_bgv004");
 			}
 			else if (func_884(uParam0->f_131, -2600.19f, -21.5133f, 159.7608f, 8f, 0))
 			{
-				iVar0 = -822172378;
+				iVar0 = joaat("gang_odriscollboys_bgv003");
 			}
 			else if (func_884(uParam0->f_131, -2760.028f, 116.5977f, 163.7518f, 8f, 0))
 			{
-				iVar0 = 1122045165;
+				iVar0 = joaat("gang_odriscollboys_bgv005");
 			}
 			else if (func_884(uParam0->f_131, -1446.531f, 102.9837f, 89.52882f, 8f, 0))
 			{
-				iVar0 = 1352837232;
+				iVar0 = joaat("gang_odriscollboys_bgv006");
 			}
 			else if (func_884(uParam0->f_131, -1582.088f, 498.4823f, 113.7488f, 8f, 0))
 			{
-				iVar0 = -1740687448;
+				iVar0 = joaat("gang_odriscollboys_bgv007");
 			}
 			else if (func_884(uParam0->f_131, -1345.989f, 491.817f, 95.55481f, 8f, 0))
 			{
-				iVar0 = -1508256931;
+				iVar0 = joaat("gang_odriscollboys_bgv008");
 			}
 			else if (func_884(uParam0->f_131, -1712.438f, 606.3528f, 117.7065f, 8f, 0))
 			{
-				iVar0 = 1739445890;
+				iVar0 = joaat("gang_odriscollboys_bgv009");
 			}
 			else if (func_884(uParam0->f_131, -1628.818f, 822.9825f, 154.3161f, 8f, 0))
 			{
-				iVar0 = -817060178;
+				iVar0 = joaat("gang_odriscollboys_bgv010");
 			}
 			break;
 		case 3:
 			if (func_884(uParam0->f_131, -5.033648f, 954.0292f, 210.2745f, 8f, 0))
 			{
-				iVar0 = 1548242606;
+				iVar0 = joaat("gang_odriscollboys_cml001");
 			}
 			else if (func_884(uParam0->f_131, 647.1512f, 1307.319f, 193.4366f, 8f, 0))
 			{
-				iVar0 = -1192753172;
+				iVar0 = joaat("gang_odriscollboys_cml002");
 			}
 			else if (func_884(uParam0->f_131, 101.8255f, 1415.083f, 167.0065f, 8f, 0))
 			{
-				iVar0 = -482255714;
+				iVar0 = joaat("gang_odriscollboys_cml003");
 			}
 			else if (func_884(uParam0->f_131, 589.22f, 1425.059f, 186.3595f, 8f, 0))
 			{
-				iVar0 = -236914211;
+				iVar0 = joaat("gang_odriscollboys_cml004");
 			}
 			else if (func_884(uParam0->f_131, 503.6744f, 1504.417f, 172.9537f, 8f, 0))
 			{
-				iVar0 = 2130187273;
+				iVar0 = joaat("gang_odriscollboys_cml005");
 			}
 			else if (func_884(uParam0->f_131, 274.3777f, 837.4482f, 189.4315f, 8f, 0))
 			{
-				iVar0 = 616706228;
+				iVar0 = joaat("gang_odriscollboys_hrt012");
 			}
 			break;
 	}
@@ -16790,27 +16790,27 @@ int func_429(var uParam0)
 	iVar0 = func_492();
 	if (func_884(uParam0->f_131, -1996.547f, -1829.144f, 112.1866f, 8f, 0))
 	{
-		iVar0 = -368895393;
+		iVar0 = joaat("gang_skinner_tal001");
 	}
 	else if (func_884(uParam0->f_131, -2126.851f, -1775.917f, 141.4737f, 8f, 0))
 	{
-		iVar0 = -105596478;
+		iVar0 = joaat("gang_skinner_tal002");
 	}
 	else if (func_884(uParam0->f_131, -2669.104f, -1457.868f, 145.2413f, 8f, 0))
 	{
-		iVar0 = 190078209;
+		iVar0 = joaat("gang_skinner_tal003");
 	}
 	else if (func_884(uParam0->f_131, -2426.465f, -1337.975f, 152.7466f, 8f, 0))
 	{
-		iVar0 = 561187138;
+		iVar0 = joaat("gang_skinner_tal004");
 	}
 	else if (func_884(uParam0->f_131, -2099.341f, -1258.051f, 121.9286f, 8f, 0))
 	{
-		iVar0 = 859352269;
+		iVar0 = joaat("gang_skinner_tal005");
 	}
 	else if (func_884(uParam0->f_131, -2030.279f, -1269.426f, 114.5621f, 8f, 0))
 	{
-		iVar0 = 1023328345;
+		iVar0 = joaat("gang_skinner_tal006");
 	}
 	return iVar0;
 }
@@ -17480,7 +17480,7 @@ int func_451(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					if (func_33(iParam0->f_136) != 748846068)
+					if (func_33(iParam0->f_136) != joaat("gang_murfreeransack_loc11_hat"))
 					{
 						return 64;
 					}
@@ -25422,121 +25422,121 @@ int func_529(var uParam0, var uParam1)
 	iVar0 = func_33(uParam0->f_136);
 	switch (iVar0)
 	{
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			uParam0->f_548[0 /*9*/] = -1728606380;
 			(uParam0->f_548[0 /*9*/])->f_3 = { -1166.644f, 87.669f, 45.742f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 76.25f, 0f, 0f };
 			*uParam1 = 1;
 			break;
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1173.938f, -2176.663f, 54.99f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 76.318f, 2.88f, 10.082f };
 			*uParam1 = 1;
 			break;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1426.775f, -2180.543f, 49.165f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 75f, 0f, 0f };
 			*uParam1 = 1;
 			break;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1566.35f, -2048.692f, 48.195f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 75f, 0f, 270f };
 			*uParam1 = 1;
 			break;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1705.86f, -2004.03f, 44.726f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 75f, 0f, 340f };
 			*uParam1 = 1;
 			break;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1381.235f, -1691.92f, 67.573f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 65f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1622.686f, -1646.19f, 56.89f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1509.036f, -1471.199f, 72.052f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 260f };
 			*uParam1 = 1;
 			break;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 867.432f, -1326.049f, 55.513f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 944.404f, -1314.26f, 59.045f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1083.973f, -1261.82f, 68.341f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 702.773f, -1171.215f, 48.151f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 857.605f, -1129.874f, 58.186f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 683.811f, -988.046f, 53.298f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 911.806f, -982.23f, 57.802f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 355f };
 			*uParam1 = 1;
 			break;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 712.014f, -886.95f, 49.105f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 255f };
 			*uParam1 = 1;
 			break;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1335.174f, -590.432f, 75.668f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 340f };
 			*uParam1 = 1;
 			break;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 883.776f, -539.161f, 88.875f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 255f };
 			*uParam1 = 1;
 			break;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 961.831f, -568.522f, 90.014f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 350f };
 			*uParam1 = 1;
 			break;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			uParam0->f_548[0 /*9*/] = -1352383975;
 			(uParam0->f_548[0 /*9*/])->f_3 = { 1009.068f, -391.56f, 91.221f };
 			(uParam0->f_548[0 /*9*/])->f_6 = { 70f, 0f, 55f };
@@ -25623,181 +25623,181 @@ struct<21> func_534(var uParam0)
 	Var1 = 2;
 	switch (iVar0)
 	{
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1112.348f, -226.247f, 91.011f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -43.725f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -997.118f, -220.082f, 91.787f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 29.411f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -788.021f, -87.656f, 81.748f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -40.497f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -2752.078f, 108.641f, 164.599f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -39.689f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1451.515f, 90.296f, 91.591f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -105.743f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1573.939f, 490.848f, 115.221f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -37.958f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1337.985f, 483.938f, 97.036f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -40.066f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1704.457f, 598.366f, 117.848f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -41.065f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 5f };
 			break;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1638.78f, 819.148f, 153.958f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 25.925f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 3.086f, 945.821f, 210.697f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -43.994f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 5f };
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 639.403f, 1298.248f, 195.516f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 57.638f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 6f };
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 109.88f, 1407.075f, 168.516f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -40.019f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 583.821f, 1414.877f, 186.504f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 56.806f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 6f };
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 511.547f, 1496.388f, 174.044f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -41.77f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -638.833f, -390.018f, 80.258f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 14.284f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 506.257f, -264.761f, 144.719f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -41.139f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 653.47f, -113.199f, 150.686f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -39.7f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1078.837f, 31.721f, 88.512f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -39.077f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -1155.069f, 98.633f, 46.936f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 27.035f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -953.945f, 289.181f, 95.923f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -35.534f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -629.915f, 274.398f, 90.373f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -39.037f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -188.109f, 289.512f, 97.22f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -37.566f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 188.4f, 337.04f, 121.283f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -41.434f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -840.43f, 460.771f, 90.926f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -44.228f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 431.283f, 830.884f, 147.231f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 7.391f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 283.466f, 829.387f, 190.147f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -41.196f };
 			(Var1[0 /*10*/])->f_6 = { 7.751f, 4.295f, 4.075f };
 			break;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1001.492f, 994.267f, 151.728f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -84.123f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4f, 4f };
 			break;
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -2013.916f, -1836.608f, 114.307f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 19.255f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 4.414f, 4f };
 			break;
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { -2140.309f, -1792.14f, 142.762f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 45.004f };
 			(Var1[0 /*10*/])->f_6 = { 7f, 3.591f, 4f };
 			break;
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1182.182f, -2184.422f, 55.402f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -18.664f };
@@ -25807,7 +25807,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -73.589f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.61f, 4f };
 			break;
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1434.79f, -2188.753f, 50.105f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -21.423f };
@@ -25817,7 +25817,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -72.594f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1558.937f, -2057.142f, 49.118f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 74.578f };
@@ -25827,7 +25827,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, 20.02f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1703.242f, -2016.781f, 45.236f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 77.471f };
@@ -25837,7 +25837,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, 38.73f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1382.395f, -1706.186f, 68.755f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -71.649f };
@@ -25847,7 +25847,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -13.789f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1623.896f, -1659.689f, 57.691f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -72.892f };
@@ -25857,7 +25857,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -15.784f };
 			(Var1[1 /*10*/])->f_6 = { 3f, 3.5f, 4f };
 			break;
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1501.381f, -1478.578f, 72.653f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 72.211f };
@@ -25867,7 +25867,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, 16.994f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 875.61f, -1333.743f, 56.595f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -15.913f };
@@ -25877,7 +25877,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -72.328f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 952.31f, -1321.947f, 59.934f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -16.32f };
@@ -25887,7 +25887,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -74.281f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1091.891f, -1269.509f, 68.839f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -15.918f };
@@ -25897,7 +25897,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -72.032f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 710.789f, -1178.864f, 47.972f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -15.741f };
@@ -25907,7 +25907,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -71.64f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 866.393f, -1137.941f, 58.722f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -16.194f };
@@ -25917,7 +25917,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -70.209f };
 			(Var1[1 /*10*/])->f_6 = { 6f, 3.5f, 4f };
 			break;
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 692.679f, -996.153f, 54.218f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -15.28f };
@@ -25927,7 +25927,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -71.309f };
 			(Var1[1 /*10*/])->f_6 = { 6f, 3.5f, 4f };
 			break;
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 912.892f, -997.168f, 58.412f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -72.64f };
@@ -25937,7 +25937,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -16.601f };
 			(Var1[1 /*10*/])->f_6 = { 6f, 3.5f, 4f };
 			break;
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 703.859f, -895.091f, 49.85f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 72.655f };
@@ -25947,7 +25947,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, 15.591f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1343.373f, -598.695f, 76.375f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -22.172f };
@@ -25957,7 +25957,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -70.982f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 869.083f, -539.934f, 89.8f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 17.02f };
@@ -25967,7 +25967,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, 70.524f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 970.197f, -576.41f, 90.658f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, -16.927f };
@@ -25977,7 +25977,7 @@ struct<21> func_534(var uParam0)
 			(Var1[1 /*10*/])->f_3 = { 0f, 0f, -70.682f };
 			(Var1[1 /*10*/])->f_6 = { 5f, 3.5f, 4f };
 			break;
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			(Var1[0 /*10*/])->f_9 = -1612834106;
 			*(Var1[0 /*10*/]) = { 1019.688f, -387.217f, 92.03f };
 			(Var1[0 /*10*/])->f_3 = { 0f, 0f, 47.689f };
@@ -33495,7 +33495,7 @@ void func_757(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fPara
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -35435,167 +35435,167 @@ char* func_826(int iParam0)
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			return "GC_ODRIS_HRT01_SCAVENGER";
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			return "GC_ODRIS_HRT02_SCAVENGER";
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			return "GC_ODRIS_HRT03_SCAVENGER";
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			return "GC_ODRIS_HRT04_SCAVENGER";
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			return "GC_ODRIS_HRT05_SCAVENGER";
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			return "GC_ODRIS_HRT06_SCAVENGER";
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			return "GC_ODRIS_HRT07_SCAVENGER";
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			return "GC_ODRIS_HRT08_SCAVENGER";
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			return "GC_ODRIS_HRT09_SCAVENGER";
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			return "GC_ODRIS_HRT10_SCAVENGER";
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			return "GC_ODRIS_HRT11_SCAVENGER";
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			return "GC_ODRIS_HRT12_SCAVENGER";
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			return "GC_ODRIS_HRT13_SCAVENGER";
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			return "GC_ODRIS_BGV01_SCAVENGER";
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			return "GC_ODRIS_BGV02_SCAVENGER";
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			return "GC_ODRIS_BGV03_SCAVENGER";
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			return "GC_ODRIS_BGV04_SCAVENGER";
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			return "GC_ODRIS_BGV05_SCAVENGER";
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			return "GC_ODRIS_BGV06_SCAVENGER";
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			return "GC_ODRIS_BGV07_SCAVENGER";
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			return "GC_ODRIS_BGV08_SCAVENGER";
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			return "GC_ODRIS_BGV09_SCAVENGER";
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			return "GC_ODRIS_BGV10_SCAVENGER";
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			return "GC_ODRIS_CML01_SCAVENGER";
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			return "GC_ODRIS_CML02_SCAVENGER";
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			return "GC_ODRIS_CML03_SCAVENGER";
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			return "GC_ODRIS_CML04_SCAVENGER";
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			return "GC_ODRIS_CML05_SCAVENGER";
-		case 1971923782:
+		case joaat("gang_lemoyne_scm001"):
 			return "GC_EXC_SCM01_SCAVENGER";
-		case 401043460:
+		case joaat("gang_lemoyne_scm002"):
 			return "GC_EXC_SCM02_SCAVENGER";
-		case 104287396:
+		case joaat("gang_lemoyne_scm003"):
 			return "GC_EXC_SCM03_SCAVENGER";
-		case 1014446371:
+		case joaat("gang_lemoyne_scm004"):
 			return "GC_EXC_SCM04_SCAVENGER";
-		case 715920781:
+		case joaat("gang_lemoyne_scm005"):
 			return "GC_EXC_SCM05_SCAVENGER";
-		case -900541220:
+		case joaat("gang_lemoyne_scm006"):
 			return "GC_EXC_SCM06_SCAVENGER";
-		case -1199296193:
+		case joaat("gang_lemoyne_scm007"):
 			return "GC_EXC_SCM07_SCAVENGER";
-		case -290546285:
+		case joaat("gang_lemoyne_scm008"):
 			return "GC_EXC_SCM08_SCAVENGER";
-		case -553189820:
+		case joaat("gang_lemoyne_scm009"):
 			return "GC_EXC_SCM09_SCAVENGER";
-		case 546408124:
+		case joaat("gang_lemoyne_scm010"):
 			return "GC_EXC_SCM10_SCAVENGER";
-		case 1313890873:
+		case joaat("gang_lemoyne_scm011"):
 			return "GC_EXC_SCM11_SCAVENGER";
-		case 129717520:
+		case joaat("gang_lemoyne_scm012"):
 			return "GC_EXC_SCM12_SCAVENGER";
-		case -1232784731:
+		case joaat("gang_lemoyne_scm013"):
 			return "GC_EXC_SCM13_SCAVENGER";
-		case -482898935:
+		case joaat("gang_lemoyne_scm014"):
 			return "GC_EXC_SCM14_SCAVENGER";
-		case 301558156:
+		case joaat("gang_lemoyne_scm015"):
 			return "GC_EXC_SCM15_SCAVENGER";
-		case 1859330882:
+		case joaat("gang_lemoyne_scm016"):
 			return "GC_EXC_SCM16_SCAVENGER";
-		case 1683033662:
+		case joaat("gang_lemoyne_scm017"):
 			return "GC_EXC_SCM17_SCAVENGER";
-		case -1419371417:
+		case joaat("gang_lemoyne_scm018"):
 			return "GC_EXC_SCM18_SCAVENGER";
-		case -643041038:
+		case joaat("gang_lemoyne_scm019"):
 			return "GC_EXC_SCM19_SCAVENGER";
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			return "GC_SAV_TAL01_SCAVENGER";
-		case -105596478:
+		case joaat("gang_skinner_tal002"):
 			return "GC_SAV_TAL02_SCAVENGER";
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			return "GC_SAV_TAL03_SCAVENGER";
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			return "GC_SAV_TAL04_SCAVENGER";
-		case 859352269:
+		case joaat("gang_skinner_tal005"):
 			return "GC_SAV_TAL05_SCAVENGER";
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			return "GC_SAV_TAL06_SCAVENGER";
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			return "GC_INB_HAT_ROA01_SCAVENGER";
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			return "GC_INB_HAT_ROA02_SCAVENGER";
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			return "GC_INB_HAT_ROA03_SCAVENGER";
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			return "GC_INB_HAT_ROA04_SCAVENGER";
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			return "GC_INB_HAT_ROA05_SCAVENGER";
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			return "GC_INB_HAT_ROA06_SCAVENGER";
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			return "GC_INB_HAT_ROA07_SCAVENGER";
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			return "GC_INB_HAT_ROA08_SCAVENGER";
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			return "GC_INB_HAT_ROA09_SCAVENGER";
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			return "GC_INB_HAT_ROA10_SCAVENGER";
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			return "GC_INB_HAT_ROA11_SCAVENGER";
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			return "GC_INB_HAT_ROA12_SCAVENGER";
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			return "GC_INB_HAT_ROA13_SCAVENGER";
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			return "GC_INB_HAT_ROA14_SCAVENGER";
-		case 298607063:
+		case joaat("gang_murfreeransack_loc01_shoe"):
 			return "GC_INB_SHOE_ROA01_SCAVENGER";
-		case 1117165375:
+		case joaat("gang_murfreeransack_loc02_shoe"):
 			return "GC_INB_SHOE_ROA02_SCAVENGER";
-		case -1985868973:
+		case joaat("gang_murfreeransack_loc03_shoe"):
 			return "GC_INB_SHOE_ROA03_SCAVENGER";
-		case 354638936:
+		case joaat("gang_murfreeransack_loc04_shoe"):
 			return "GC_INB_SHOE_ROA04_SCAVENGER";
-		case 1416094782:
+		case joaat("gang_murfreeransack_loc05_shoe"):
 			return "GC_INB_SHOE_ROA05_SCAVENGER";
-		case 1062381624:
+		case joaat("gang_murfreeransack_loc06_shoe"):
 			return "GC_INB_SHOE_ROA06_SCAVENGER";
-		case -1986775954:
+		case joaat("gang_murfreeransack_loc07_shoe"):
 			return "GC_INB_SHOE_ROA07_SCAVENGER";
-		case -899261623:
+		case joaat("gang_murfreeransack_loc08_shoe"):
 			return "GC_INB_SHOE_ROA08_SCAVENGER";
-		case -557729610:
+		case joaat("gang_murfreeransack_loc09_shoe"):
 			return "GC_INB_SHOE_ROA09_SCAVENGER";
-		case -1991979537:
+		case joaat("gang_murfreeransack_loc10_shoe"):
 			return "GC_INB_SHOE_ROA10_SCAVENGER";
-		case 1193231534:
+		case joaat("gang_murfreeransack_loc11_shoe"):
 			return "GC_INB_SHOE_ROA11_SCAVENGER";
-		case 1807258239:
+		case joaat("gang_murfreeransack_loc12_shoe"):
 			return "GC_INB_SHOE_ROA12_SCAVENGER";
-		case 787640784:
+		case joaat("gang_murfreeransack_loc13_shoe"):
 			return "GC_INB_SHOE_ROA13_SCAVENGER";
-		case -1414272575:
+		case joaat("gang_murfreeransack_loc14_shoe"):
 			return "GC_INB_SHOE_ROA14_SCAVENGER";
 		default:
 			break;
@@ -35650,7 +35650,7 @@ int func_829(int iParam0, bool bParam1)
 		{
 			if ((!PED::IS_PED_IN_COMBAT(&(iParam0->f_40[iVar0]), 0) && !PED::_0x3AA24CCC0D451379(&(iParam0->f_40[iVar0]))) && !func_46(iParam0, iVar0, 4096))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_40[iVar0]), -401180987);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_40[iVar0]), joaat("REL_PLAYER_DISLIKE"));
 			}
 		}
 		if (func_1195(iParam0, &(iParam0->f_40[iVar0]), bParam1))
@@ -35727,7 +35727,7 @@ int func_832(int iParam0, bool bParam1)
 		{
 			if (!PED::IS_PED_IN_COMBAT(&(iParam0->f_208[iVar0]), 0) && !PED::_0x3AA24CCC0D451379(&(iParam0->f_208[iVar0])))
 			{
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_208[iVar0]), -401180987);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_208[iVar0]), joaat("REL_PLAYER_DISLIKE"));
 			}
 		}
 		if (func_1195(iParam0, &(iParam0->f_208[iVar0]), bParam1))
@@ -35968,17 +35968,17 @@ int func_844(int iParam0)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(iParam0);
 	switch (iVar0)
 	{
-		case -1448293989:
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
 			return 3;
-		case 555364152:
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
 			return 2;
-		case -1996978098:
+		case joaat("REL_GANG_ODRISCOLL"):
 			return 0;
-		case 1078461828:
+		case joaat("REL_GANG_MURFREE_BROOD"):
 			return 1;
-		case -1535431934:
+		case joaat("REL_GANG_LARAMIE_GANG"):
 			return 4;
-		case -1663301869:
+		case joaat("REL_GANG_SMUGGLERS"):
 			return 5;
 		default:
 			break;
@@ -36772,71 +36772,71 @@ void func_885(var uParam0)
 			*(uParam0->f_174[4 /*3*/]) = { func_108(uParam0, 6.16f, 2.12f, 0.65f) };
 			switch (iVar0)
 			{
-				case 1971923782:
+				case joaat("gang_lemoyne_scm001"):
 					*(uParam0->f_174[2 /*3*/]) = { 1170.264f, -2178.121f, 54.13226f };
 					break;
-				case 401043460:
+				case joaat("gang_lemoyne_scm002"):
 					*(uParam0->f_174[2 /*3*/]) = { 1423.072f, -2181.869f, 48.29141f };
 					*(uParam0->f_174[3 /*3*/]) = { 1423.594f, -2187.553f, 48.29141f };
 					break;
-				case 104287396:
+				case joaat("gang_lemoyne_scm003"):
 					*(uParam0->f_174[2 /*3*/]) = { 1564.812f, -2045.07f, 47.41991f };
 					*(uParam0->f_174[3 /*3*/]) = { 1559.448f, -2045.295f, 47.35368f };
 					break;
-				case 1014446371:
+				case joaat("gang_lemoyne_scm004"):
 					*(uParam0->f_174[2 /*3*/]) = { 1701.962f, -2004.266f, 43.68702f };
 					break;
-				case 715920781:
+				case joaat("gang_lemoyne_scm005"):
 					*(uParam0->f_174[3 /*3*/]) = { 1378.271f, -1699.333f, 66.89154f };
 					break;
-				case -900541220:
+				case joaat("gang_lemoyne_scm006"):
 					*(uParam0->f_174[2 /*3*/]) = { 1619.09f, -1647.749f, 56.02488f };
 					*(uParam0->f_174[3 /*3*/]) = { 1619.521f, -1653.145f, 56.02491f };
 					break;
-				case -1199296193:
+				case joaat("gang_lemoyne_scm007"):
 					*(uParam0->f_174[2 /*3*/]) = { 1507.522f, -1467.585f, 71.31122f };
 					break;
-				case -290546285:
+				case joaat("gang_lemoyne_scm008"):
 					*(uParam0->f_174[2 /*3*/]) = { 863.723f, -1327.581f, 54.66751f };
 					break;
-				case -553189820:
+				case joaat("gang_lemoyne_scm009"):
 					*(uParam0->f_174[2 /*3*/]) = { 940.7196f, -1315.8f, 58.18652f };
 					*(uParam0->f_174[3 /*3*/]) = { 941.0473f, -1321.266f, 58.1935f };
 					break;
-				case 546408124:
+				case joaat("gang_lemoyne_scm010"):
 					*(uParam0->f_174[2 /*3*/]) = { 1080.355f, -1263.337f, 67.49545f };
 					*(uParam0->f_174[3 /*3*/]) = { 1080.513f, -1268.764f, 67.49545f };
 					break;
-				case 1313890873:
+				case joaat("gang_lemoyne_scm011"):
 					*(uParam0->f_174[2 /*3*/]) = { 699.1359f, -1172.781f, 47.2929f };
 					*(uParam0->f_174[3 /*3*/]) = { 699.3298f, -1178.31f, 47.26611f };
 					break;
-				case 129717520:
+				case joaat("gang_lemoyne_scm012"):
 					*(uParam0->f_174[2 /*3*/]) = { 853.9451f, -1131.407f, 57.3689f };
 					*(uParam0->f_174[3 /*3*/]) = { 854.2436f, -1136.936f, 57.41179f };
 					break;
-				case -1232784731:
+				case joaat("gang_lemoyne_scm013"):
 					*(uParam0->f_174[2 /*3*/]) = { 680.1561f, -989.5919f, 52.4207f };
 					break;
-				case -482898935:
+				case joaat("gang_lemoyne_scm014"):
 					*(uParam0->f_174[2 /*3*/]) = { 908.1458f, -983.7635f, 56.95998f };
 					*(uParam0->f_174[3 /*3*/]) = { 908.3596f, -989.2557f, 56.95998f };
 					break;
-				case 301558156:
+				case joaat("gang_lemoyne_scm015"):
 					*(uParam0->f_174[2 /*3*/]) = { 710.5704f, -883.3065f, 48.26224f };
 					*(uParam0->f_174[3 /*3*/]) = { 704.9125f, -883.5399f, 48.31003f };
 					break;
-				case 1859330882:
+				case joaat("gang_lemoyne_scm016"):
 					*(uParam0->f_174[2 /*3*/]) = { 1331.554f, -591.9526f, 74.80914f };
 					*(uParam0->f_174[3 /*3*/]) = { 1331.545f, -597.0761f, 74.77538f };
 					break;
-				case 1683033662:
+				case joaat("gang_lemoyne_scm017"):
 					*(uParam0->f_174[2 /*3*/]) = { 882.3284f, -535.5234f, 88.03556f };
 					break;
-				case -1419371417:
+				case joaat("gang_lemoyne_scm018"):
 					*(uParam0->f_174[2 /*3*/]) = { 958.2362f, -570.0494f, 89.19124f };
 					break;
-				case -643041038:
+				case joaat("gang_lemoyne_scm019"):
 					*(uParam0->f_174[2 /*3*/]) = { 1008.924f, -395.4394f, 90.44528f };
 					break;
 			}
@@ -36850,13 +36850,13 @@ void func_885(var uParam0)
 			*(uParam0->f_174[4 /*3*/]) = { func_108(uParam0, 1.9f, -1.64f, 0f) };
 			switch (iVar0)
 			{
-				case 1014446371:
+				case joaat("gang_lemoyne_scm004"):
 					*(uParam0->f_174[0 /*3*/]) = { 1702.021f, -2008.901f, 43.65408f };
 					break;
-				case -290546285:
+				case joaat("gang_lemoyne_scm008"):
 					*(uParam0->f_174[0 /*3*/]) = { 868.3043f, -1333.866f, 54.67201f };
 					break;
-				case 1313890873:
+				case joaat("gang_lemoyne_scm011"):
 					*(uParam0->f_174[0 /*3*/]) = { 704.3996f, -1175.537f, 47.2897f };
 					break;
 			}
@@ -36871,7 +36871,7 @@ void func_885(var uParam0)
 			*(uParam0->f_174[3 /*3*/]) = { func_108(uParam0, 4.62f, -4.02f, 0f) };
 			switch (iVar0)
 			{
-				case 1313890873:
+				case joaat("gang_lemoyne_scm011"):
 					*(uParam0->f_174[2 /*3*/]) = { 698.879f, -1177.652f, 47.26611f };
 					break;
 			}
@@ -36901,46 +36901,46 @@ void func_886(var uParam0)
 	iVar0 = func_33(uParam0->f_136);
 	switch (iVar0)
 	{
-		case 1542551103:
+		case joaat("gang_murfreeransack_loc01_hat"):
 			uParam0->f_193[3] = 20f;
 			break;
-		case -1298966347:
+		case joaat("gang_murfreeransack_loc02_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2466.027f, -88.0602f, 44.86972f };
 			break;
-		case -1695492178:
+		case joaat("gang_murfreeransack_loc03_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2552.896f, -73.47205f, 49.28383f };
 			break;
-		case -1300575561:
+		case joaat("gang_murfreeransack_loc04_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2320.212f, 7.31054f, 47.17688f };
 			break;
-		case 933157597:
+		case joaat("gang_murfreeransack_loc05_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2437.679f, 641.2162f, 68.97804f };
 			break;
-		case -1139312905:
+		case joaat("gang_murfreeransack_loc06_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2423.046f, 773.9297f, 67.03932f };
 			break;
-		case -1003150953:
+		case joaat("gang_murfreeransack_loc07_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2359.266f, 835.2441f, 78.39855f };
 			break;
-		case 929785619:
+		case joaat("gang_murfreeransack_loc08_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2407.126f, 878.9678f, 72.89781f };
 			break;
-		case -476849231:
+		case joaat("gang_murfreeransack_loc09_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2501.774f, 876.8507f, 72.63812f };
 			break;
-		case -639956757:
+		case joaat("gang_murfreeransack_loc10_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2388.062f, 1018.178f, 89.34949f };
 			break;
-		case 748846068:
+		case joaat("gang_murfreeransack_loc11_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2299.081f, 1049.963f, 115.4868f };
 			break;
-		case -663999418:
+		case joaat("gang_murfreeransack_loc12_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2515.764f, 1743.942f, 87.09506f };
 			break;
-		case -259044425:
+		case joaat("gang_murfreeransack_loc13_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2791.136f, 2003.716f, 164.1187f };
 			break;
-		case 1199768352:
+		case joaat("gang_murfreeransack_loc14_hat"):
 			*(uParam0->f_174[3 /*3*/]) = { 2620.318f, 2101.96f, 172.9872f };
 			break;
 	}
@@ -36963,16 +36963,16 @@ void func_887(var uParam0)
 			*(uParam0->f_174[5 /*3*/]) = { func_108(uParam0, 5f, 0f, 0f) };
 			switch (iVar0)
 			{
-				case -822172378:
+				case joaat("gang_odriscollboys_bgv003"):
 					*(uParam0->f_174[2 /*3*/]) = { -2603.197f, -22.6721f, 159.6295f };
 					break;
-				case -1192753172:
+				case joaat("gang_odriscollboys_cml002"):
 					*(uParam0->f_174[2 /*3*/]) = { 642.6586f, 1306.578f, 193.4365f };
 					break;
-				case -236914211:
+				case joaat("gang_odriscollboys_cml004"):
 					*(uParam0->f_174[2 /*3*/]) = { 586.92f, 1421.812f, 186.133f };
 					break;
-				case 1726559781:
+				case joaat("gang_odriscollboys_hrt006"):
 					*(uParam0->f_174[2 /*3*/]) = { -969.1506f, 294.8101f, 94.07943f };
 					break;
 			}
@@ -36987,142 +36987,142 @@ void func_887(var uParam0)
 			*(uParam0->f_174[5 /*3*/]) = { func_108(uParam0, 5f, 0f, 0f) };
 			switch (iVar0)
 			{
-				case -108299713:
+				case joaat("gang_odriscollboys_bgv001"):
 					*(uParam0->f_174[3 /*3*/]) = { -1122.121f, -215.966f, 90.612f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -2009032789:
+				case joaat("gang_odriscollboys_bgv002"):
 					*(uParam0->f_174[3 /*3*/]) = { -989.0411f, -207.7321f, 90.8556f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -822172378:
+				case joaat("gang_odriscollboys_bgv003"):
 					*(uParam0->f_174[3 /*3*/]) = { -2601.99f, -18.9833f, 160.7514f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -340009312:
+				case joaat("gang_odriscollboys_bgv004"):
 					*(uParam0->f_174[3 /*3*/]) = { -797.7507f, -77.0575f, 81.241f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 1122045165:
+				case joaat("gang_odriscollboys_bgv005"):
 					*(uParam0->f_174[3 /*3*/]) = { -2761.577f, 118.9376f, 163.5052f };
 					uParam0->f_193[3] = 220.0052f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 1352837232:
+				case joaat("gang_odriscollboys_bgv006"):
 					*(uParam0->f_174[3 /*3*/]) = { -1448.269f, 105.3494f, 89.95f };
 					uParam0->f_193[3] = 219.8644f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1740687448:
+				case joaat("gang_odriscollboys_bgv007"):
 					*(uParam0->f_174[3 /*3*/]) = { -1583.846f, 500.9681f, 114.9469f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1508256931:
+				case joaat("gang_odriscollboys_bgv008"):
 					*(uParam0->f_174[3 /*3*/]) = { -1347.422f, 494.1284f, 96.6653f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 1739445890:
+				case joaat("gang_odriscollboys_bgv009"):
 					*(uParam0->f_174[3 /*3*/]) = { -1714.112f, 608.6243f, 117.7064f };
 					uParam0->f_193[3] = -141.84f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -817060178:
+				case joaat("gang_odriscollboys_bgv010"):
 					*(uParam0->f_174[3 /*3*/]) = { -1630.57f, 825.4442f, 155.1952f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 1548242606:
+				case joaat("gang_odriscollboys_cml001"):
 					*(uParam0->f_174[3 /*3*/]) = { -6.8336f, 956.5592f, 211.0947f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1192753172:
+				case joaat("gang_odriscollboys_cml002"):
 					*(uParam0->f_174[3 /*3*/]) = { 645.3512f, 1309.849f, 194.5564f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -482255714:
+				case joaat("gang_odriscollboys_cml003"):
 					*(uParam0->f_174[3 /*3*/]) = { 100.0255f, 1417.613f, 167.8024f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -236914211:
+				case joaat("gang_odriscollboys_cml004"):
 					*(uParam0->f_174[3 /*3*/]) = { 587.5543f, 1427.4f, 187.318f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 2130187273:
+				case joaat("gang_odriscollboys_cml005"):
 					*(uParam0->f_174[3 /*3*/]) = { 502.1629f, 1506.557f, 173.7768f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1287270695:
+				case joaat("gang_odriscollboys_hrt001"):
 					*(uParam0->f_174[3 /*3*/]) = { -650.8534f, -388.3092f, 79.8117f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -936204805:
+				case joaat("gang_odoriscollboys_hrt002"):
 					*(uParam0->f_174[3 /*3*/]) = { 496.6169f, -254.3402f, 144.1373f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1885599866:
+				case joaat("gang_odriscollboys_hrt003"):
 					*(uParam0->f_174[3 /*3*/]) = { 644.006f, -102.9951f, 149.9743f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -118171082:
+				case joaat("gang_odriscollboys_hrt004"):
 					*(uParam0->f_174[3 /*3*/]) = { 1068.951f, 42.2596f, 86.9435f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 2118488614:
+				case joaat("gang_odoriscollboys_hrt005"):
 					*(uParam0->f_174[4 /*3*/]) = { -1160.843f, 95.37766f, 44.66689f };
 					uParam0->f_193[4] = 134.37f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 1726559781:
+				case joaat("gang_odriscollboys_hrt006"):
 					*(uParam0->f_174[3 /*3*/]) = { -967.8297f, 299.1143f, 95.2014f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 1455068616:
+				case joaat("gang_odriscollboys_hrt007"):
 					*(uParam0->f_174[3 /*3*/]) = { -639.4288f, 284.7121f, 91.0681f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1069586228:
+				case joaat("gang_odriscollboys_hrt008"):
 					*(uParam0->f_174[3 /*3*/]) = { -197.8849f, 299.7423f, 95.6519f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -688744902:
+				case joaat("gang_odriscollboys_hrt009"):
 					*(uParam0->f_174[3 /*3*/]) = { 178.7887f, 347.3347f, 120.7478f };
 					uParam0->f_193[3] = -144.57f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1993836161:
+				case joaat("gang_odriscollboys_hrt010"):
 					*(uParam0->f_174[3 /*3*/]) = { -849.6883f, 474.1143f, 88.66689f };
 					uParam0->f_193[3] = -143.75f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 402954041:
+				case joaat("gang_odriscollboys_hrt011"):
 					*(uParam0->f_174[3 /*3*/]) = { 444.8971f, 831.3879f, 146.7016f };
 					uParam0->f_193[3] = 85.72f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case 616706228:
+				case joaat("gang_odriscollboys_hrt012"):
 					*(uParam0->f_174[3 /*3*/]) = { 272.8875f, 839.6589f, 189.3641f };
 					uParam0->f_193[3] = -146.02f;
 					func_491(uParam0, 3, 65536);
 					break;
-				case -1279832420:
+				case joaat("gang_odriscollboys_hrt013"):
 					*(uParam0->f_174[3 /*3*/]) = { 996.8287f, 985.4003f, 150.8418f };
 					uParam0->f_193[3] = -144.96f;
 					func_491(uParam0, 3, 65536);
@@ -37162,7 +37162,7 @@ void func_887(var uParam0)
 	}
 	switch (iVar0)
 	{
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			switch (uParam0->f_99)
 			{
 				case 4:
@@ -37179,7 +37179,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37188,7 +37188,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37197,7 +37197,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37206,7 +37206,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37215,7 +37215,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			switch (uParam0->f_99)
 			{
 				case 5:
@@ -37230,7 +37230,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			switch (uParam0->f_99)
 			{
 				case 5:
@@ -37244,7 +37244,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37253,7 +37253,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37264,7 +37264,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37275,7 +37275,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37286,7 +37286,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37297,7 +37297,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37308,7 +37308,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37319,7 +37319,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -817060178:
+		case joaat("gang_odriscollboys_bgv010"):
 			switch (uParam0->f_99)
 			{
 				case 5:
@@ -37333,7 +37333,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37344,7 +37344,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37355,7 +37355,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37364,7 +37364,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37373,7 +37373,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			switch (uParam0->f_99)
 			{
 				case 5:
@@ -37384,7 +37384,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			switch (uParam0->f_99)
 			{
 				case 5:
@@ -37396,7 +37396,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37405,7 +37405,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37414,7 +37414,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37423,7 +37423,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			switch (uParam0->f_99)
 			{
 				case 5:
@@ -37435,7 +37435,7 @@ void func_887(var uParam0)
 					break;
 			}
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			switch (uParam0->f_99)
 			{
 				case 6:
@@ -37488,18 +37488,18 @@ void func_888(var uParam0)
 			uParam0->f_193[5] = func_493(*(uParam0->f_174[5 /*3*/]), uParam0->f_131, 1);
 			switch (iVar0)
 			{
-				case -368895393:
+				case joaat("gang_skinner_tal001"):
 					*(uParam0->f_174[1 /*3*/]) = { -1994.094f, -1830.335f, 112.2692f };
 					uParam0->f_193[1] = (func_493(*(uParam0->f_174[1 /*3*/]), uParam0->f_131, 1) + 55f);
 					break;
-				case -105596478:
+				case joaat("gang_skinner_tal002"):
 					*(uParam0->f_174[5 /*3*/]) = { -2133.855f, -1776.574f, 141.6043f };
 					break;
-				case 561187138:
+				case joaat("gang_skinner_tal004"):
 					*(uParam0->f_174[5 /*3*/]) = { -2433.666f, -1334.918f, 152.7449f };
 					uParam0->f_193[5] = (func_493(*(uParam0->f_174[5 /*3*/]), uParam0->f_131, 1) - 10f);
 					break;
-				case 859352269:
+				case joaat("gang_skinner_tal005"):
 					*(uParam0->f_174[5 /*3*/]) = { -2105.688f, -1259.885f, 121.9285f };
 					uParam0->f_193[5] = (func_493(*(uParam0->f_174[5 /*3*/]), uParam0->f_131, 1) + 30f);
 					break;
@@ -37928,7 +37928,7 @@ int func_902(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -37968,7 +37968,7 @@ int func_902(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		{
 			bVar22 = true;
 		}
-		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+		else if (((iVar4 == iVar0 && !Global_43890) && iParam0 != Global_35) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 		{
 			bVar22 = true;
 		}
@@ -38674,24 +38674,24 @@ int func_933(var uParam0, int iParam1, var uParam2)
 {
 	switch (iParam1)
 	{
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			(uParam0->f_528.f_1[0 /*9*/])->f_7 = joaat("a_f_m_unicorpse_01");
 			(uParam0->f_528.f_1[0 /*9*/])->f_8 = -266874643;
 			(uParam0->f_528.f_1[1 /*9*/])->f_7 = joaat("a_m_m_unicorpse_01");
 			(uParam0->f_528.f_1[1 /*9*/])->f_8 = 2086038695;
 			*uParam2 = 1;
 			break;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			(uParam0->f_528.f_1[0 /*9*/])->f_7 = joaat("a_m_m_unicorpse_01");
 			(uParam0->f_528.f_1[0 /*9*/])->f_8 = 615241965;
 			*uParam2 = 1;
 			break;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			(uParam0->f_528.f_1[0 /*9*/])->f_7 = joaat("a_m_m_unicorpse_01");
 			(uParam0->f_528.f_1[0 /*9*/])->f_8 = -967922158;
 			*uParam2 = 1;
 			break;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			(uParam0->f_528.f_1[0 /*9*/])->f_7 = joaat("a_f_m_unicorpse_01");
 			(uParam0->f_528.f_1[0 /*9*/])->f_8 = -1756110012;
 			*uParam2 = 1;
@@ -38802,17 +38802,17 @@ int func_938(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case -368895393:
+		case joaat("gang_skinner_tal001"):
 			func_1249(uParam0, 0, -1986.71f, -1820.55f, 121.91f, 1.56f);
 			func_1249(uParam0, 1, -1991.93f, -1843.98f, 118.12f, 2.1f);
 			break;
-		case 190078209:
+		case joaat("gang_skinner_tal003"):
 			func_1249(uParam0, 0, -2640.56f, -1466.92f, 147.23f, 0.7f);
 			break;
-		case 561187138:
+		case joaat("gang_skinner_tal004"):
 			func_1249(uParam0, 0, -2419.08f, -1355.54f, 157.81f, 1.5f);
 			break;
-		case 1023328345:
+		case joaat("gang_skinner_tal006"):
 			func_1249(uParam0, 0, -2016.8f, -1247.3f, 117.8f, 1.5f);
 			break;
 	}
@@ -39644,19 +39644,19 @@ int func_974(bool bParam0, var uParam1, bool bParam2)
 	iVar3 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(bParam2);
 	switch (iVar2)
 	{
-		case -1976316465:
-		case -1505548114:
-		case -350651841:
-		case -50399569:
-		case 106566339:
-		case 707888648:
-		case 841021282:
+		case joaat("REL_CIVMALE"):
+		case joaat("REL_RE_VICTIM"):
+		case joaat("REL_CIVNATIVE"):
+		case joaat("REL_PINKERTONS"):
+		case joaat("REL_GUAMA_LAW"):
+		case joaat("REL_COP"):
+		case joaat("REL_CIVFEMALE"):
 			switch (iVar3)
 			{
-				case -1976316465:
-				case -1505548114:
-				case -350651841:
-				case 841021282:
+				case joaat("REL_CIVMALE"):
+				case joaat("REL_RE_VICTIM"):
+				case joaat("REL_CIVNATIVE"):
+				case joaat("REL_CIVFEMALE"):
 					return 1;
 			}
 			break;
@@ -40358,13 +40358,13 @@ int func_1001(var uParam0, bool bParam1)
 	iVar0 = PED::GET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH(bParam1);
 	switch (iVar0)
 	{
-		case -1996978098:
-		case -1448293989:
-		case -350226955:
-		case 266218800:
-		case 555364152:
-		case 1078461828:
-		case 1222652248:
+		case joaat("REL_GANG_ODRISCOLL"):
+		case joaat("REL_GANG_SKINNER_BROTHERS"):
+		case joaat("REL_GUNSLINGERS"):
+		case joaat("REL_GANG_CREOLE"):
+		case joaat("REL_GANG_LEMOYNE_RAIDERS"):
+		case joaat("REL_GANG_MURFREE_BROOD"):
+		case joaat("REL_CRIMINALS"):
 			return 1;
 		default:
 			break;
@@ -41059,7 +41059,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 	iVar0 = func_33(iParam0->f_136);
 	switch (iVar0)
 	{
-		case -1287270695:
+		case joaat("gang_odriscollboys_hrt001"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41077,7 +41077,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -936204805:
+		case joaat("gang_odoriscollboys_hrt002"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41095,7 +41095,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1885599866:
+		case joaat("gang_odriscollboys_hrt003"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41113,7 +41113,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -118171082:
+		case joaat("gang_odriscollboys_hrt004"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41131,7 +41131,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 2118488614:
+		case joaat("gang_odoriscollboys_hrt005"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41149,7 +41149,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 1726559781:
+		case joaat("gang_odriscollboys_hrt006"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41167,7 +41167,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 1455068616:
+		case joaat("gang_odriscollboys_hrt007"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41185,7 +41185,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1069586228:
+		case joaat("gang_odriscollboys_hrt008"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41203,7 +41203,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -688744902:
+		case joaat("gang_odriscollboys_hrt009"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41221,7 +41221,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1993836161:
+		case joaat("gang_odriscollboys_hrt010"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41239,7 +41239,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 402954041:
+		case joaat("gang_odriscollboys_hrt011"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41257,7 +41257,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 616706228:
+		case joaat("gang_odriscollboys_hrt012"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41275,7 +41275,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1279832420:
+		case joaat("gang_odriscollboys_hrt013"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41293,7 +41293,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 1548242606:
+		case joaat("gang_odriscollboys_cml001"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41311,7 +41311,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1192753172:
+		case joaat("gang_odriscollboys_cml002"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41329,7 +41329,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -482255714:
+		case joaat("gang_odriscollboys_cml003"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41347,7 +41347,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -236914211:
+		case joaat("gang_odriscollboys_cml004"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41365,7 +41365,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 2130187273:
+		case joaat("gang_odriscollboys_cml005"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41383,7 +41383,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -108299713:
+		case joaat("gang_odriscollboys_bgv001"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41401,7 +41401,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -2009032789:
+		case joaat("gang_odriscollboys_bgv002"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41419,7 +41419,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -822172378:
+		case joaat("gang_odriscollboys_bgv003"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41437,7 +41437,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -340009312:
+		case joaat("gang_odriscollboys_bgv004"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41455,7 +41455,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 1122045165:
+		case joaat("gang_odriscollboys_bgv005"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41473,7 +41473,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 1352837232:
+		case joaat("gang_odriscollboys_bgv006"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41491,7 +41491,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1740687448:
+		case joaat("gang_odriscollboys_bgv007"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41509,7 +41509,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case -1508256931:
+		case joaat("gang_odriscollboys_bgv008"):
 			switch (iParam1)
 			{
 				case 0:
@@ -41527,7 +41527,7 @@ void func_1034(int iParam0, int iParam1, var uParam2, float fParam3, int iParam4
 					break;
 			}
 			break;
-		case 1739445890:
+		case joaat("gang_odriscollboys_bgv009"):
 			switch (iParam1)
 			{
 				case 0:
@@ -43893,7 +43893,7 @@ int func_1135(int iParam0, bool bParam1)
 	func_1332(iParam0, 1);
 	Global_1359489->f_15 = func_752(1);
 	func_1119(iParam0, 32, 1);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], -1247684992);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_COMPANION_GROUP"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(Global_1360165[iParam0 /*1157*/], 83, true);
 	PED::_0x9238A3D970BBB0A9(Global_1360165[iParam0 /*1157*/], -1972074710);
 	PED::SET_PED_CONFIG_FLAG(Global_1360165[iParam0 /*1157*/], 152, true);
@@ -46308,7 +46308,7 @@ void func_1231(int iParam0, int iParam1, float fParam2)
 			break;
 		default:
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.4f);
-			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == 1030835986)
+			if (PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				bVar0 = false;
 			}

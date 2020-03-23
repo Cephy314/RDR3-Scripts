@@ -307,7 +307,7 @@ void func_15(int iParam0, bool bParam1, bool bParam2, bool bParam3, float fParam
 				PED::SET_PED_KEEP_TASK(Global_1360165[iParam0 /*1157*/], true);
 			}
 			POPULATION::_0xF74E134F40192884(Global_1360165[iParam0 /*1157*/], 1);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], 1030835986);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(Global_1360165[iParam0 /*1157*/], joaat("REL_GANG_DUTCHS"));
 		}
 		if (bVar2)
 		{
@@ -393,7 +393,7 @@ bool func_20(var uParam0, int iParam1)
 int func_21(var uParam0)
 {
 	iLocal_14 = func_43(joaat("cs_rainsfall"), 1584.673f, 1460.016f, 145.623f, 240.1411f, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
-	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_14, 1030835986);
+	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_14, joaat("REL_GANG_DUTCHS"));
 	PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(iLocal_14, false);
 	func_44(1);
 	return 1;

@@ -9039,7 +9039,7 @@ int func_450()
 		PED::SET_PED_CAN_RAGDOLL(iVar1, false);
 		PED::SET_RAGDOLL_BLOCKING_FLAGS(iVar1, 524369);
 		PED::SET_PED_CONFIG_FLAG(iVar1, 2, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, 1609284507);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, joaat("REL_MP_LIKE_ALL_PLAYERS"));
 		func_453(16);
 	}
 	return 1;
@@ -12204,7 +12204,7 @@ int func_642(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(752193127, bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
 	return 1;
 }
 

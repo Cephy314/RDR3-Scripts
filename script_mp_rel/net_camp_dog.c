@@ -1204,20 +1204,20 @@ void func_41(var uParam0, int iParam1)
 	{
 		return;
 	}
-	func_112(2, Global_1131496->f_5, 707888648);
-	func_112(6, Global_1131496->f_5, 106566339);
-	func_112(6, Global_1131496->f_5, -50399569);
-	func_112(6, Global_1131496->f_5, 1222652248);
-	func_112(6, Global_1131496->f_5, -350226955);
-	func_112(6, Global_1131496->f_5, -1535431934);
-	func_112(6, Global_1131496->f_5, -1448293989);
-	func_112(6, Global_1131496->f_5, 266218800);
-	func_112(6, Global_1131496->f_5, 555364152);
-	func_112(6, Global_1131496->f_5, -1663301869);
-	func_112(6, Global_1131496->f_5, -1996978098);
-	func_112(6, Global_1131496->f_5, 1078461828);
-	func_112(6, Global_1131496->f_5, 747813878);
-	func_112(6, Global_1131496->f_5, -40378879);
+	func_112(2, Global_1131496->f_5, joaat("REL_COP"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GUAMA_LAW"));
+	func_112(6, Global_1131496->f_5, joaat("REL_PINKERTONS"));
+	func_112(6, Global_1131496->f_5, joaat("REL_CRIMINALS"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GUNSLINGERS"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_LARAMIE_GANG"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_SKINNER_BROTHERS"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_CREOLE"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_LEMOYNE_RAIDERS"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_SMUGGLERS"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_ODRISCOLL"));
+	func_112(6, Global_1131496->f_5, joaat("REL_GANG_MURFREE_BROOD"));
+	func_112(6, Global_1131496->f_5, joaat("REL_FETCH_ENEMY_1"));
+	func_112(6, Global_1131496->f_5, joaat("REL_FETCH_ENEMY_2"));
 	if (Global_1126368->f_2026 != 0)
 	{
 		func_112(2, Global_1131496->f_5, Global_1126368->f_2026);

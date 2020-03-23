@@ -10366,119 +10366,119 @@ int func_127(int iParam0, bool bParam1, int iParam2)
 			case -321841939:
 				return joaat("JOURNAL_DISC_DREAMCATCHER_MAP_AR");
 			case -1958832660:
-				return joaat("journal_disc_abandoned_church_ar");
+				return joaat("JOURNAL_DISC_ABANDONED_CHURCH_AR");
 			case 247563739:
-				return joaat("journal_disc_abandoned_trading_post_ar");
+				return joaat("JOURNAL_DISC_ABANDONED_TRADING_POST_AR");
 			case -1300082860:
-				return joaat("journal_disc_oil_well_ar");
+				return joaat("JOURNAL_DISC_OIL_WELL_AR");
 			case -1287911066:
-				return joaat("journal_disc_barrel_rider_ar");
+				return joaat("JOURNAL_DISC_BARREL_RIDER_AR");
 			case 1861313914:
-				return joaat("journal_disc_braithwaite_secret_ar");
+				return joaat("JOURNAL_DISC_BRAITHWAITE_SECRET_AR");
 			case 1734766691:
-				return joaat("journal_disc_brush_fire_ar");
+				return joaat("JOURNAL_DISC_BRUSH_FIRE_AR");
 			case 657666087:
-				return joaat("journal_disc_circus_wagons_ar");
+				return joaat("JOURNAL_DISC_CIRCUS_WAGONS_AR");
 			case 1535254161:
-				return joaat("journal_disc_civil_war_ar");
+				return joaat("JOURNAL_DISC_CIVIL_WAR_AR");
 			case 58958195:
-				return joaat("journal_disc_crashed_airship_ar");
+				return joaat("JOURNAL_DISC_CRASHED_AIRSHIP_AR");
 			case -1109016944:
-				return joaat("journal_disc_dead_town_ar");
+				return joaat("JOURNAL_DISC_DEAD_TOWN_AR");
 			case -780455182:
-				return joaat("journal_disc_defaced_grave_ar");
+				return joaat("JOURNAL_DISC_DEFACED_GRAVE_AR");
 			case -1636964661:
-				return joaat("journal_disc_donkey_lady_ar");
+				return joaat("JOURNAL_DISC_DONKEY_LADY_AR");
 			case -2009137002:
-				return joaat("journal_disc_face_cliff_ar");
+				return joaat("JOURNAL_DISC_FACE_CLIFF_AR");
 			case -1243267511:
-				return joaat("journal_disc_face_trees_ar");
+				return joaat("JOURNAL_DISC_FACE_TREES_AR");
 			case -1053108445:
-				return joaat("journal_disc_flying_machine_ar");
+				return joaat("JOURNAL_DISC_FLYING_MACHINE_AR");
 			case -1646022773:
-				return joaat("journal_disc_fossilised_man_ar");
+				return joaat("JOURNAL_DISC_FOSSILISED_MAN_AR");
 			case 1284679164:
-				return joaat("journal_disc_frankenstein_ar");
+				return joaat("JOURNAL_DISC_FRANKENSTEIN_AR");
 			case 2134589549:
-				return joaat("journal_disc_frozen_settler_ar");
+				return joaat("JOURNAL_DISC_FROZEN_SETTLER_AR");
 			case -1787770845:
-				return joaat("journal_disc_giant_remains_ar");
+				return joaat("JOURNAL_DISC_GIANT_REMAINS_AR");
 			case -1887999095:
-				return joaat("journal_disc_grays_secret_ar");
+				return joaat("JOURNAL_DISC_GRAYS_SECRET_AR");
 			case 1519228573:
-				return joaat("journal_disc_hand_swamp_ar");
+				return joaat("JOURNAL_DISC_HAND_SWAMP_AR");
 			case 1982045664:
-				return joaat("journal_disc_hermit_woman_ar");
+				return joaat("JOURNAL_DISC_HERMIT_WOMAN_AR");
 			case 308500632:
-				return joaat("journal_disc_hidden_tunnel_ar");
+				return joaat("JOURNAL_DISC_HIDDEN_TUNNEL_AR");
 			case -849582265:
-				return joaat("journal_disc_indian_burial_ar");
+				return joaat("JOURNAL_DISC_INDIAN_BURIAL_AR");
 			case 429544447:
-				return joaat("journal_disc_jesuit_ar");
+				return joaat("JOURNAL_DISC_JESUIT_AR");
 			case -148407339:
-				return joaat("journal_disc_mammoth_ar");
+				return joaat("JOURNAL_DISC_MAMMOTH_AR");
 			case -415839138:
-				return joaat("journal_disc_meditating_monk_ar");
+				return joaat("JOURNAL_DISC_MEDITATING_MONK_AR");
 			case -709811179:
-				return joaat("journal_disc_meteorite_ar");
+				return joaat("JOURNAL_DISC_METEORITE_AR");
 			case 1673499939:
-				return joaat("journal_disc_meteor_house_ar");
+				return joaat("JOURNAL_DISC_METEOR_HOUSE_AR");
 			case -979575591:
-				return joaat("journal_disc_obelisk_ar");
+				return joaat("JOURNAL_DISC_OBELISK_AR");
 			case -1609238411:
-				return joaat("journal_disc_old_scripts_ar");
+				return joaat("JOURNAL_DISC_OLD_SCRIPTS_AR");
 			case 921081956:
-				return joaat("journal_disc_one_room_church_ar");
+				return joaat("JOURNAL_DISC_ONE_ROOM_CHURCH_AR");
 			case -739986731:
-				return joaat("journal_disc_pagan_ritual_ar");
+				return joaat("JOURNAL_DISC_PAGAN_RITUAL_AR");
 			case 1034793488:
-				return joaat("journal_disc_painting_cabin_ar");
+				return joaat("JOURNAL_DISC_PAINTING_CABIN_AR");
 			case -1614148516:
-				return joaat("journal_disc_phonograph_ar");
+				return joaat("JOURNAL_DISC_PHONOGRAPH_AR");
 			case -1761189332:
-				return joaat("journal_disc_register_rock_ar");
+				return joaat("JOURNAL_DISC_REGISTER_ROCK_AR");
 			case -607940493:
-				return joaat("journal_disc_serpent_mound_ar");
+				return joaat("JOURNAL_DISC_SERPENT_MOUND_AR");
 			case 1986618633:
-				return joaat("journal_disc_sperm_whale_ar");
+				return joaat("JOURNAL_DISC_SPERM_WHALE_AR");
 			case -161804536:
-				return joaat("journal_disc_stonehenge_ar");
+				return joaat("JOURNAL_DISC_STONEHENGE_AR");
 			case 2000209669:
 				if (iParam2 == 11)
 				{
-					return joaat("journal_disc_strange_statues_painting_ar");
+					return joaat("JOURNAL_DISC_STRANGE_STATUES_PAINTING_AR");
 				}
 				else
 				{
-					return joaat("journal_disc_strange_statues_ar");
+					return joaat("JOURNAL_DISC_STRANGE_STATUES_AR");
 				}
 				break;
 			case -232974724:
-				return joaat("journal_disc_trading_post_ar");
+				return joaat("JOURNAL_DISC_TRADING_POST_AR");
 			case -1272862985:
 				if (iParam2 == 0)
 				{
-					return joaat("journal_discover_trail_trees_tree_01_ar");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_01_AR");
 				}
 				else if (iParam2 == 1)
 				{
-					return joaat("journal_discover_trail_trees_tree_02_ar");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_02_AR");
 				}
 				else if (iParam2 == 2)
 				{
-					return joaat("journal_discover_trail_trees_tree_03_ar");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_03_AR");
 				}
 				else if (iParam2 == 3)
 				{
-					return joaat("journal_discover_trail_trees_tree_04_ar");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_04_AR");
 				}
 				break;
 			case -1891628345:
-				return joaat("journal_disc_ute_wickiup");
+				return joaat("JOURNAL_DISC_UTE_WICKIUP");
 			case -1960242214:
-				return joaat("journal_disc_colony_ar");
+				return joaat("JOURNAL_DISC_COLONY_AR");
 			case -1505275983:
-				return joaat("journal_disc_warped_tree_ar");
+				return joaat("JOURNAL_DISC_WARPED_TREE_AR");
 			case -890175011:
 				if (iParam2 == 0)
 				{
@@ -10502,7 +10502,7 @@ int func_127(int iParam0, bool bParam1, int iParam2)
 				}
 				break;
 			case -986176781:
-				return joaat("journal_disc_whale_bone_ar");
+				return joaat("JOURNAL_DISC_WHALE_BONE_AR");
 			default:
 				break;
 		}
@@ -10514,145 +10514,145 @@ int func_127(int iParam0, bool bParam1, int iParam2)
 			case -321841939:
 				return joaat("JOURNAL_DISC_DREAMCATCHER_MAP_JN");
 			case -1958832660:
-				return joaat("journal_disc_abandoned_church_jn");
+				return joaat("JOURNAL_DISC_ABANDONED_CHURCH_JN");
 			case 247563739:
-				return joaat("journal_disc_abandoned_trading_post_jn");
+				return joaat("JOURNAL_DISC_ABANDONED_TRADING_POST_JN");
 			case -1300082860:
-				return joaat("journal_disc_oil_well_jn");
+				return joaat("JOURNAL_DISC_OIL_WELL_JN");
 			case 677950956:
 				if (iParam2 == 0)
 				{
-					return joaat("journal_town_secret_aztec_1_jn");
+					return joaat("JOURNAL_TOWN_SECRET_AZTEC_1_JN");
 				}
 				else if (iParam2 == 1)
 				{
-					return joaat("journal_town_secret_aztec_2_jn");
+					return joaat("JOURNAL_TOWN_SECRET_AZTEC_2_JN");
 				}
 				else if (iParam2 == 2)
 				{
-					return joaat("journal_town_secret_aztec_3_jn");
+					return joaat("JOURNAL_TOWN_SECRET_AZTEC_3_JN");
 				}
 				else if (iParam2 == 3)
 				{
-					return joaat("journal_town_secret_aztec_4_jn");
+					return joaat("JOURNAL_TOWN_SECRET_AZTEC_4_JN");
 				}
 				else if (iParam2 == 4)
 				{
-					return joaat("journal_town_secret_aztec_5_jn");
+					return joaat("JOURNAL_TOWN_SECRET_AZTEC_5_JN");
 				}
 				else if (iParam2 == 5)
 				{
-					return joaat("journal_town_secret_aztec_6_jn");
+					return joaat("JOURNAL_TOWN_SECRET_AZTEC_6_JN");
 				}
 				break;
 			case -1287911066:
-				return joaat("journal_disc_barrel_rider_jn");
+				return joaat("JOURNAL_DISC_BARREL_RIDER_JN");
 			case 1734766691:
-				return joaat("journal_disc_brush_fire_jn");
+				return joaat("JOURNAL_DISC_BRUSH_FIRE_JN");
 			case 657666087:
-				return joaat("journal_disc_circus_wagons_jn");
+				return joaat("JOURNAL_DISC_CIRCUS_WAGONS_JN");
 			case 1535254161:
-				return joaat("journal_disc_civil_war_jn");
+				return joaat("JOURNAL_DISC_CIVIL_WAR_JN");
 			case 58958195:
-				return joaat("journal_disc_crashed_airship_jn");
+				return joaat("JOURNAL_DISC_CRASHED_AIRSHIP_JN");
 			case -1109016944:
-				return joaat("journal_disc_dead_town_jn");
+				return joaat("JOURNAL_DISC_DEAD_TOWN_JN");
 			case -780455182:
-				return joaat("journal_disc_defaced_grave_jn");
+				return joaat("JOURNAL_DISC_DEFACED_GRAVE_JN");
 			case -1636964661:
-				return joaat("journal_disc_donkey_lady_jn");
+				return joaat("JOURNAL_DISC_DONKEY_LADY_JN");
 			case -2009137002:
-				return joaat("journal_disc_face_cliff_jn");
+				return joaat("JOURNAL_DISC_FACE_CLIFF_JN");
 			case -1243267511:
-				return joaat("journal_disc_face_trees_jn");
+				return joaat("JOURNAL_DISC_FACE_TREES_JN");
 			case -1053108445:
-				return joaat("journal_disc_flying_machine_jn");
+				return joaat("JOURNAL_DISC_FLYING_MACHINE_JN");
 			case -1646022773:
-				return joaat("journal_disc_fossilised_man_jn");
+				return joaat("JOURNAL_DISC_FOSSILISED_MAN_JN");
 			case 1284679164:
-				return joaat("journal_disc_frankenstein_jn");
+				return joaat("JOURNAL_DISC_FRANKENSTEIN_JN");
 			case 2134589549:
-				return joaat("journal_disc_frozen_settler_jn");
+				return joaat("JOURNAL_DISC_FROZEN_SETTLER_JN");
 			case -1787770845:
-				return joaat("journal_disc_giant_remains_jn");
+				return joaat("JOURNAL_DISC_GIANT_REMAINS_JN");
 			case -1887999095:
-				return joaat("journal_disc_grays_secret_jn");
+				return joaat("JOURNAL_DISC_GRAYS_SECRET_JN");
 			case 1519228573:
-				return joaat("journal_disc_hand_swamp_jn");
+				return joaat("JOURNAL_DISC_HAND_SWAMP_JN");
 			case 1982045664:
-				return joaat("journal_disc_hermit_woman_jn");
+				return joaat("JOURNAL_DISC_HERMIT_WOMAN_JN");
 			case 308500632:
-				return joaat("journal_disc_hidden_tunnel_jn");
+				return joaat("JOURNAL_DISC_HIDDEN_TUNNEL_JN");
 			case -849582265:
-				return joaat("journal_disc_indian_burial_jn");
+				return joaat("JOURNAL_DISC_INDIAN_BURIAL_JN");
 			case 429544447:
-				return joaat("journal_disc_jesuit_jn");
+				return joaat("JOURNAL_DISC_JESUIT_JN");
 			case -148407339:
-				return joaat("journal_disc_mammoth_jn");
+				return joaat("JOURNAL_DISC_MAMMOTH_JN");
 			case -415839138:
-				return joaat("journal_disc_meditating_monk_jn");
+				return joaat("JOURNAL_DISC_MEDITATING_MONK_JN");
 			case -709811179:
-				return joaat("journal_disc_meteorite_jn");
+				return joaat("JOURNAL_DISC_METEORITE_JN");
 			case 1673499939:
-				return joaat("journal_disc_meteor_house_jn");
+				return joaat("JOURNAL_DISC_METEOR_HOUSE_JN");
 			case -979575591:
-				return joaat("journal_disc_obelisk_jn");
+				return joaat("JOURNAL_DISC_OBELISK_JN");
 			case -1609238411:
-				return joaat("journal_disc_old_scripts_jn");
+				return joaat("JOURNAL_DISC_OLD_SCRIPTS_JN");
 			case 921081956:
-				return joaat("journal_disc_one_room_church_jn");
+				return joaat("JOURNAL_DISC_ONE_ROOM_CHURCH_JN");
 			case -739986731:
-				return joaat("journal_disc_pagan_ritual_jn");
+				return joaat("JOURNAL_DISC_PAGAN_RITUAL_JN");
 			case 1034793488:
-				return joaat("journal_disc_painting_cabin_jn");
+				return joaat("JOURNAL_DISC_PAINTING_CABIN_JN");
 			case -1614148516:
-				return joaat("journal_disc_phonograph_jn");
+				return joaat("JOURNAL_DISC_PHONOGRAPH_JN");
 			case -1761189332:
-				return joaat("journal_disc_register_rock_jn");
+				return joaat("JOURNAL_DISC_REGISTER_ROCK_JN");
 			case -607940493:
-				return joaat("journal_disc_serpent_mound_jn");
+				return joaat("JOURNAL_DISC_SERPENT_MOUND_JN");
 			case 1986618633:
-				return joaat("journal_disc_sperm_whale_jn");
+				return joaat("JOURNAL_DISC_SPERM_WHALE_JN");
 			case -161804536:
-				return joaat("journal_disc_stonehenge_jn");
+				return joaat("JOURNAL_DISC_STONEHENGE_JN");
 			case 2000209669:
 				if (iParam2 == 11)
 				{
-					return joaat("journal_disc_strange_statues_painting_jn");
+					return joaat("JOURNAL_DISC_STRANGE_STATUES_PAINTING_JN");
 				}
 				else
 				{
-					return joaat("journal_disc_strange_statues_jn");
+					return joaat("JOURNAL_DISC_STRANGE_STATUES_JN");
 				}
 				break;
 			case -232974724:
-				return joaat("journal_disc_trading_post_jn");
+				return joaat("JOURNAL_DISC_TRADING_POST_JN");
 			case -1272862985:
 				if (iParam2 == 0)
 				{
-					return joaat("journal_discover_trail_trees_tree_01_jn");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_01_JN");
 				}
 				else if (iParam2 == 1)
 				{
-					return joaat("journal_discover_trail_trees_tree_02_jn");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_02_JN");
 				}
 				else if (iParam2 == 2)
 				{
-					return joaat("journal_discover_trail_trees_tree_03_jn");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_03_JN");
 				}
 				else if (iParam2 == 3)
 				{
-					return joaat("journal_discover_trail_trees_tree_04_jn");
+					return joaat("JOURNAL_DISCOVER_TRAIL_TREES_TREE_04_JN");
 				}
 				break;
 			case -1891628345:
-				return joaat("journal_disc_ute_wickiup_jn");
+				return joaat("JOURNAL_DISC_UTE_WICKIUP_JN");
 			case -1960242214:
-				return joaat("journal_disc_colony_jn");
+				return joaat("JOURNAL_DISC_COLONY_JN");
 			case -1505275983:
-				return joaat("journal_disc_warped_tree_jn");
+				return joaat("JOURNAL_DISC_WARPED_TREE_JN");
 			case -986176781:
-				return joaat("journal_disc_whale_bone_jn");
+				return joaat("JOURNAL_DISC_WHALE_BONE_JN");
 			case -890175011:
 				if (iParam2 == 0)
 				{

@@ -1009,7 +1009,7 @@ void func_12(bool bParam0)
 		{
 			if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && bVar3)
 			{
-				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 1030835986);
+				VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_GANG_DUTCHS"));
 				func_3(&(Global_1394141->f_1326), 8);
 			}
 		}
@@ -2220,7 +2220,7 @@ int func_39(var uParam0, int iParam1)
 			PED::SET_PED_CONFIG_FLAG(uParam0[iVar1 /*10*/], 448, true);
 			AUDIO::STOP_PED_SPEAKING(uParam0[iVar1 /*10*/], true);
 			PED::SET_PED_CAN_BE_TARGETTED(uParam0[iVar1 /*10*/], false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], -1538724068);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar1 /*10*/], joaat("REL_PLAYER_ALLY"));
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0[iVar1 /*10*/], true);
 			func_188(uParam0[iVar1 /*10*/], 0);
 		}
@@ -3143,7 +3143,7 @@ void func_63(int iParam0)
 					PED::_0xFC3DB99C8144CD81(&(iParam0->f_81[0]), &(Local_1155.f_2[3]), 0, false, 0);
 					PED::_0xFC3DB99C8144CD81(Global_35, &(Local_1155.f_2[3]), 0, false, 0);
 					PED::_0x57F35552E771BE9D(&(iParam0->f_81[0]), 12);
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[0]), 1269650476);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[0]), joaat("REL_PLAYER_ENEMY"));
 					if (func_248(&Global_35))
 					{
 						Local_1155.f_20 = 1;
@@ -3175,7 +3175,7 @@ void func_63(int iParam0)
 				func_251(&(iParam0->f_81[0]), 0);
 				WEAPON::REMOVE_ALL_PED_WEAPONS(&(iParam0->f_81[0]), true, true);
 				WEAPON::SET_CURRENT_PED_WEAPON(&(iParam0->f_81[0]), joaat("WEAPON_UNARMED"), true, 0, false, false);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[0]), 1269650476);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(iParam0->f_81[0]), joaat("REL_PLAYER_ENEMY"));
 				ENTITY::SET_ENTITY_INVINCIBLE(&(iParam0->f_81[0]), true);
 				PED::SET_PED_CONFIG_FLAG(&(iParam0->f_81[0]), 169, true);
 				PED::SET_PED_CONFIG_FLAG(&(iParam0->f_81[0]), 258, true);
