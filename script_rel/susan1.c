@@ -30884,7 +30884,7 @@ void func_622(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -30892,11 +30892,11 @@ void func_622(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1083(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_609(bParam0)), iVar1), iVar12);
@@ -49168,7 +49168,7 @@ void func_1175(var uParam0)
 		if (!MAP::DOES_BLIP_EXIST(iLocal_62))
 		{
 			iLocal_62 = func_1167(-308585968, Local_31, 1);
-			MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE("susan_1_gps_route", 0, 513, 76603059, false, true);
+			MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE("susan_1_gps_route", 0, 513, joaat("COLOR_OBJECTIVE"), false, true);
 			MAP::SET_GPS_CUSTOM_ROUTE_RENDER(true, 3, 30);
 			AUDIO::SET_GPS_ACTIVE(true);
 		}
@@ -56697,10 +56697,10 @@ int func_1399(var uParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_1866(uParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_1867(uParam0, uParam1, iVar0);
 				break;

@@ -13959,10 +13959,10 @@ int func_495(int iParam0, int iParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -14395,7 +14395,7 @@ int func_505(int iParam0, int iParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*iParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*iParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -14759,10 +14759,10 @@ int func_516(int iParam0, int iParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -14783,7 +14783,7 @@ int func_516(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -20711,7 +20711,7 @@ void func_712(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -20719,11 +20719,11 @@ void func_712(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_833(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_832(iParam0)), iVar1), iVar12);
@@ -22019,7 +22019,7 @@ int func_762(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case 1387172233:
+				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;

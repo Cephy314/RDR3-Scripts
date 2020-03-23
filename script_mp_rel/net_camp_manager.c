@@ -3417,7 +3417,7 @@ void func_140()
 		{
 			if (func_105((Global_1126368->f_1[iVar3 /*62*/])->f_5) && NETWORK::NETWORK_IS_PLAYER_ACTIVE(((*Global_1125276)[iVar3 /*27*/])->f_9))
 			{
-				sVar4 = MISC::_CREATE_VAR_STRING(10, "GC_CAMP_MERGE", func_253(func_252(((*Global_1125276)[iVar3 /*27*/])->f_9), -963477619), func_16((Global_1126368->f_1[iVar3 /*62*/])->f_5));
+				sVar4 = MISC::_CREATE_VAR_STRING(10, "GC_CAMP_MERGE", func_253(func_252(((*Global_1125276)[iVar3 /*27*/])->f_9), joaat("COLOR_POSSE_ALLY")), func_16((Global_1126368->f_1[iVar3 /*62*/])->f_5));
 				_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 1);
 				Global_1131092->f_375 = func_136(sVar4, 10000, 0, 0, 0, 1);
 				Global_1131092->f_376 = Global_1275573->f_15;

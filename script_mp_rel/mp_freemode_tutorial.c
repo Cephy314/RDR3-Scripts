@@ -6386,7 +6386,7 @@ void func_187(var uParam0, var uParam1, var uParam2)
 	{
 		return;
 	}
-	func_422(uParam2, 0, 1341618894, 1, 1);
+	func_422(uParam2, 0, joaat("COLOR_MP_OBJECTIVE"), 1, 1);
 	iVar4 = 0;
 	while (iVar4 < iVar0)
 	{

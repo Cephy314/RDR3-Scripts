@@ -21355,11 +21355,11 @@ void func_469()
 	bool bVar2;
 	float fVar3;
 
-	if (BUILTIN::VDIST(Global_36, func_1569()) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, func_1569(), 2f))
+	if (BUILTIN::VDIST(Global_36, func_1569()) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), func_1569(), 2f))
 	{
 		func_22(2);
 	}
-	else if (BUILTIN::VDIST(Global_36, func_1570()) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, func_1570(), 2f))
+	else if (BUILTIN::VDIST(Global_36, func_1570()) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), func_1570(), 2f))
 	{
 		func_22(2);
 	}
@@ -22257,7 +22257,7 @@ int func_494()
 	{
 		return 1;
 	}
-	if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(872115874, 1622.944f, -362.7807f, 76.55563f, 20f) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, 1622.944f, -362.7807f, 76.55563f, 20f))
+	if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(872115874, 1622.944f, -362.7807f, 76.55563f, 20f) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), 1622.944f, -362.7807f, 76.55563f, 20f))
 	{
 		bLocal_6009 = true;
 		return 1;
@@ -38053,10 +38053,10 @@ int func_895(bool bParam0, var uParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(bParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -38554,7 +38554,7 @@ int func_906(bool bParam0, var uParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*bParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*bParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -38930,10 +38930,10 @@ int func_918(bool bParam0, var uParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(bParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(bParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -38954,7 +38954,7 @@ int func_918(bool bParam0, var uParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(bParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(bParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -52022,7 +52022,7 @@ int func_1335()
 
 int func_1336()
 {
-	if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, 1318.458f, -2288.042f, 51.03976f, 5f) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"), 1318.458f, -2288.042f, 51.03976f, 5f))
+	if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), 1318.458f, -2288.042f, 51.03976f, 5f) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"), 1318.458f, -2288.042f, 51.03976f, 5f))
 	{
 		return 1;
 	}
@@ -53976,7 +53976,7 @@ int func_1444()
 
 	vVar0 = { -422.3328f, 1734.842f, 216.2954f };
 	fVar3 = 3.8f;
-	if (BUILTIN::VDIST(Global_36, vVar0) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, vVar0, fVar3))
+	if (BUILTIN::VDIST(Global_36, vVar0) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), vVar0, fVar3))
 	{
 		return 1;
 	}
@@ -53990,13 +53990,13 @@ int func_1445()
 
 	vVar0 = { -400.2669f, 1732.68f, 216.3562f };
 	fVar3 = 5.8f;
-	if (BUILTIN::VDIST(Global_36, vVar0) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, vVar0, fVar3))
+	if (BUILTIN::VDIST(Global_36, vVar0) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), vVar0, fVar3))
 	{
 		return 1;
 	}
 	vVar0 = { -393.5957f, 1726.443f, 216.5655f };
 	fVar3 = 4f;
-	if (BUILTIN::VDIST(Global_36, vVar0) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, vVar0, fVar3))
+	if (BUILTIN::VDIST(Global_36, vVar0) < 30f && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), vVar0, fVar3))
 	{
 		return 1;
 	}
@@ -62543,7 +62543,7 @@ void func_1774(bool bParam0)
 		switch (iVar2)
 		{
 			case -313265754:
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2988(iVar1, bParam0);
 				break;
@@ -68555,7 +68555,7 @@ int func_1987()
 	{
 		return 1;
 	}
-	else if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(2044016570, func_3092(), 4.5f))
+	else if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_WINDOW_SMASHED"), func_3092(), 4.5f))
 	{
 		return 1;
 	}
@@ -76478,7 +76478,7 @@ int func_2387(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case 1387172233:
+				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;
@@ -88315,7 +88315,7 @@ void func_2834(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -88323,11 +88323,11 @@ void func_2834(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_3563(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_2821(iParam0)), iVar1), iVar12);

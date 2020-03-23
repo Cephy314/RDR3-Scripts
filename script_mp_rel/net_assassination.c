@@ -611,7 +611,7 @@ void func_15()
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar1))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_82(iVar1);
 				break;
 		}
@@ -17207,9 +17207,9 @@ char* func_566(int iParam0)
 		{
 			return "";
 		}
-		return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_PLAYER_KILLED", func_848(PLAYER::GET_PLAYER_NAME(iParam0), -5208416));
+		return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_PLAYER_KILLED", func_848(PLAYER::GET_PLAYER_NAME(iParam0), joaat("COLOR_ENEMY")));
 	}
-	return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_PLAYER_KILLED", func_848(PLAYER::GET_PLAYER_NAME(iParam0), -963477619));
+	return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_PLAYER_KILLED", func_848(PLAYER::GET_PLAYER_NAME(iParam0), joaat("COLOR_POSSE_ALLY")));
 }
 
 void func_567(char* sParam0)
@@ -17229,9 +17229,9 @@ char* func_568(int iParam0)
 	}
 	if (func_47(Local_299[Local_556.f_1008 /*8*/], 4))
 	{
-		return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_TARGET_PLAYER_DISCONNECTED", func_848(func_851(iParam0), -5208416));
+		return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_TARGET_PLAYER_DISCONNECTED", func_848(func_851(iParam0), joaat("COLOR_ENEMY")));
 	}
-	return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_TARGET_PLAYER_DISCONNECTED", func_848(func_851(iParam0), -963477619));
+	return MISC::_CREATE_VAR_STRING(10, "NET_AS_UPDATE_TARGET_PLAYER_DISCONNECTED", func_848(func_851(iParam0), joaat("COLOR_POSSE_ALLY")));
 }
 
 void func_569(int iParam0)
@@ -20400,7 +20400,7 @@ char* func_677(bool bParam0)
 			}
 			return "NET_AS_SHARD_BODY_START_TARGET";
 		case 4:
-			return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_START_ALLY", func_921(PLAYER::GET_PLAYER_NAME(&(Local_17.f_234[0 /*2*/])), -963477619));
+			return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_START_ALLY", func_921(PLAYER::GET_PLAYER_NAME(&(Local_17.f_234[0 /*2*/])), joaat("COLOR_POSSE_ALLY")));
 		default:
 			break;
 	}
@@ -25259,7 +25259,7 @@ int func_913(int iParam0, int iParam1, int iParam2)
 		case joaat("EVENT_SHOT_FIRED_BULLET_IMPACT"):
 		case joaat("EVENT_SHOT_FIRED_WHIZZED_BY"):
 		case joaat("EVENT_RESPONDED_TO_THREAT"):
-		case -141209784:
+		case joaat("EVENT_EXPLOSION_HEARD"):
 			bVar3 = true;
 			break;
 		case joaat("EVENT_GUN_AIMED_AT"):
@@ -25267,7 +25267,7 @@ int func_913(int iParam0, int iParam1, int iParam2)
 			bVar3 = true;
 			bVar5 = true;
 			break;
-		case -1604965832:
+		case joaat("EVENT_SHOCKING_PAIN_VOCALIZATION"):
 		case joaat("EVENT_SHOT_FIRED"):
 			bVar3 = true;
 			bVar4 = true;
@@ -25277,7 +25277,7 @@ int func_913(int iParam0, int iParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (iVar0 == -1604965832 && (Local_17.f_2[iParam0 /*9*/])->f_4 == 5)
+	if (iVar0 == joaat("EVENT_SHOCKING_PAIN_VOCALIZATION") && (Local_17.f_2[iParam0 /*9*/])->f_4 == 5)
 	{
 		return 0;
 	}
@@ -25865,7 +25865,7 @@ char* func_928(int iParam0, int iParam1, char* sParam2)
 			}
 			return "";
 		case 2:
-			return MISC::_CREATE_VAR_STRING(42, "NET_AS_HELP_ALLY_SELECTED", func_1124(iParam1, -963477619), func_1126(joaat("COLOR_RED")));
+			return MISC::_CREATE_VAR_STRING(42, "NET_AS_HELP_ALLY_SELECTED", func_1124(iParam1, joaat("COLOR_POSSE_ALLY")), func_1126(joaat("COLOR_RED")));
 		case 3:
 			if (Local_556.f_20.f_549 > 1)
 			{
@@ -26701,9 +26701,9 @@ char* func_968(int iParam0, bool bParam1)
 					{
 						if (bParam1)
 						{
-							return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_WIN", func_848(func_851(0), -5208416));
+							return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_WIN", func_848(func_851(0), joaat("COLOR_ENEMY")));
 						}
-						return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_WIN", func_848(func_1152(), -5208416));
+						return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_WIN", func_848(func_1152(), joaat("COLOR_ENEMY")));
 					}
 					if (bParam1)
 					{
@@ -26727,7 +26727,7 @@ char* func_968(int iParam0, bool bParam1)
 						{
 							if (func_850(0))
 							{
-								return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_PLAYER", func_848(func_851(0), -5208416));
+								return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_PLAYER", func_848(func_851(0), joaat("COLOR_ENEMY")));
 							}
 							else
 							{
@@ -26738,7 +26738,7 @@ char* func_968(int iParam0, bool bParam1)
 						{
 							if (func_1153())
 							{
-								return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_POSSE", func_848(func_1152(), -5208416));
+								return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_POSSE", func_848(func_1152(), joaat("COLOR_ENEMY")));
 							}
 							else
 							{
@@ -26810,7 +26810,7 @@ char* func_968(int iParam0, bool bParam1)
 				{
 					if (func_850(0))
 					{
-						return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_PLAYER", func_848(func_851(0), -963477619));
+						return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_PLAYER", func_848(func_851(0), joaat("COLOR_POSSE_ALLY")));
 					}
 					else
 					{
@@ -26821,7 +26821,7 @@ char* func_968(int iParam0, bool bParam1)
 				{
 					if (func_1153())
 					{
-						return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_POSSE", func_848(func_1152(), -963477619));
+						return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_FAIL_DC_POSSE", func_848(func_1152(), joaat("COLOR_POSSE_ALLY")));
 					}
 					else
 					{
@@ -26832,7 +26832,7 @@ char* func_968(int iParam0, bool bParam1)
 			switch (iParam0)
 			{
 				case 1:
-					return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_ALLY_WIN", func_848(func_851(0), -963477619));
+					return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_ALLY_WIN", func_848(func_851(0), joaat("COLOR_POSSE_ALLY")));
 				case 0:
 					return MISC::_CREATE_VAR_STRING(2, "NET_AS_SHARD_BODY_PVP_POSSE_OVER", sVar2, sVar3);
 				case 2:
@@ -26840,7 +26840,7 @@ char* func_968(int iParam0, bool bParam1)
 					{
 						return "NET_AS_SHARD_BODY_PVP_POSSE_FAIL";
 					}
-					return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_ALLY_FAIL", func_848(func_851(0), -963477619));
+					return MISC::_CREATE_VAR_STRING(10, "NET_AS_SHARD_BODY_PVP_ALLY_FAIL", func_848(func_851(0), joaat("COLOR_POSSE_ALLY")));
 				default:
 					break;
 			}
@@ -30828,7 +30828,7 @@ char* func_1161()
 	}
 	if (NETWORK::_0x255A5EF65EDA9167(iVar0) && NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar0))
 	{
-		return MISC::_CREATE_VAR_STRING(10, "NET_AS_OBJ_PLAYER_TARGET_HELP_SPECIFIC", func_921(PLAYER::GET_PLAYER_NAME(iVar0), -963477619));
+		return MISC::_CREATE_VAR_STRING(10, "NET_AS_OBJ_PLAYER_TARGET_HELP_SPECIFIC", func_921(PLAYER::GET_PLAYER_NAME(iVar0), joaat("COLOR_POSSE_ALLY")));
 	}
 	return "NET_AS_OBJ_PLAYER_TARGET_HELP";
 }
@@ -30855,14 +30855,14 @@ char* func_1163()
 	{
 		if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(&(Local_17.f_234[0 /*2*/])))
 		{
-			return MISC::_CREATE_VAR_STRING(10, "NET_AS_OBJ_ASSASSINATE_PVP", func_921(PLAYER::GET_PLAYER_NAME(&(Local_17.f_234[0 /*2*/])), -5208416));
+			return MISC::_CREATE_VAR_STRING(10, "NET_AS_OBJ_ASSASSINATE_PVP", func_921(PLAYER::GET_PLAYER_NAME(&(Local_17.f_234[0 /*2*/])), joaat("COLOR_ENEMY")));
 		}
 	}
 	else if (Local_556.f_20.f_16 == joaat("POSSE"))
 	{
 		if (Local_17.f_281 != 0 && _NAMESPACE26::_0x0F99F6436528A089(Local_17.f_281))
 		{
-			return MISC::_CREATE_VAR_STRING(10, "NET_AS_OBJ_ASSASSINATE_PVP", func_921(func_653(Local_17.f_281, 1, 0), -5208416));
+			return MISC::_CREATE_VAR_STRING(10, "NET_AS_OBJ_ASSASSINATE_PVP", func_921(func_653(Local_17.f_281, 1, 0), joaat("COLOR_ENEMY")));
 		}
 	}
 	return "";
@@ -32729,17 +32729,17 @@ void func_1245(int iParam0, var uParam1, int iParam2, bool bParam3, bool bParam4
 
 int func_1246()
 {
-	return 1937193856;
+	return joaat("COLOR_MP_OBJECTIVE_ENEMY");
 }
 
 int func_1247()
 {
-	return -1640778959;
+	return joaat("COLOR_MP_OBJECTIVE_FRIENDLY");
 }
 
 int func_1248()
 {
-	return -1428663542;
+	return joaat("COLOR_MP_OBJECTIVE_NEUTRAL");
 }
 
 void func_1249(var uParam0, int iParam1)
@@ -33645,7 +33645,7 @@ int func_1294(int iParam0)
 		case 22:
 			return -1019997170;
 		case 24:
-			return -5208416;
+			return joaat("COLOR_ENEMY");
 		case 18:
 			return joaat("COLOR_PURE_WHITE");
 		case 25:

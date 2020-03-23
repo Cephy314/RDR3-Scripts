@@ -12684,7 +12684,7 @@ void func_264(var uParam0, bool bParam1)
 							}
 							else if (func_660(uParam0, iVar0))
 							{
-								if (iVar2 == 1428655956 && !func_259(&(uParam0->f_2[iVar0]), 713668775))
+								if (iVar2 == joaat("EVENT_ANIMAL_DETECTED_THREAT") && !func_259(&(uParam0->f_2[iVar0]), 713668775))
 								{
 									if (((ENTITY::DOES_ENTITY_EXIST(iVar3) && !PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar3))) && !func_661(iVar3)) && !func_662(uParam0, 131072))
 									{
@@ -12700,7 +12700,7 @@ void func_264(var uParam0, bool bParam1)
 											Jump @421; //curOff = 402
 											EVENT::_0x1A5C5D350068A673(&(uParam0->f_2[iVar0]), 0);
 											Jump @942; //curOff = 418
-											if (iVar2 == 1428655956)
+											if (iVar2 == joaat("EVENT_ANIMAL_DETECTED_THREAT"))
 											{
 												if (ENTITY::DOES_ENTITY_EXIST(iVar3))
 												{
@@ -12735,7 +12735,7 @@ void func_264(var uParam0, bool bParam1)
 																		{
 																			vVar4 = { ENTITY::GET_ENTITY_COORDS(iVar3, false, false) };
 																		}
-																		if (FLOCK::_0x8D913E493BAFE0A3(*uParam0) && iVar2 != 151661781)
+																		if (FLOCK::_0x8D913E493BAFE0A3(*uParam0) && iVar2 != joaat("EVENT_ON_FIRE"))
 																		{
 																			if (func_659(uParam0, 60f, iVar0, iVar3, 1, 0))
 																			{
@@ -12754,7 +12754,7 @@ void func_264(var uParam0, bool bParam1)
 																					EVENT::_0x1A5C5D350068A673(&(uParam0->f_2[iVar0]), 0);
 																					Jump @942; //curOff = 729
 																				}
-																				else if (iVar2 == 151661781)
+																				else if (iVar2 == joaat("EVENT_ON_FIRE"))
 																				{
 																					uParam0->f_23[iVar0] = 10;
 																					TASK::_TASK_SMART_FLEE_STYLE_COORD(&(uParam0->f_2[iVar0]), ENTITY::GET_ENTITY_COORDS(&(uParam0->f_2[iVar0]), true, false), 4, 0, 600f, -1, 0);
@@ -21185,7 +21185,7 @@ void func_510(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -21193,11 +21193,11 @@ void func_510(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_988(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_497(iParam0)), iVar1), iVar12);
@@ -27008,7 +27008,7 @@ int func_663(var uParam0, int iParam1)
 
 int func_664(var uParam0, int iParam1, bool bParam2)
 {
-	if (((((((((((((!((((((func_259(&(uParam0->f_2[iParam1]), 1139527981) || func_259(&(uParam0->f_2[iParam1]), 518218985)) || func_259(&(uParam0->f_2[iParam1]), 242628503)) || func_259(&(uParam0->f_2[iParam1]), 713668775)) || func_259(&(uParam0->f_2[iParam1]), -1775383291)) || func_259(&(uParam0->f_2[iParam1]), 1056466932)) || func_259(&(uParam0->f_2[iParam1]), 993674639)) && !ENTITY::IS_ENTITY_DEAD(&(uParam0->f_2[iParam1]))) && !PED::IS_PED_FLEEING(&(uParam0->f_2[iParam1]))) && !PED::_0x40C9155AF8BC13F3(&(uParam0->f_2[iParam1]))) && !PED::_0x77525BBF433F2CD6(&(uParam0->f_2[iParam1]))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), 1428655956)) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), -1922859932)) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), 2129777492)) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), joaat("EVENT_SHOT_FIRED_BULLET_IMPACT"))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), joaat("EVENT_SHOT_FIRED_WHIZZED_BY"))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), -1891898498)) && !TASK::_0x0C3CB2E600C8977D(&(uParam0->f_2[iParam1]), 1)) && !(FLOCK::_0x8D913E493BAFE0A3(*uParam0) && FLOCK::_0x9E13ACC38BA8F9C3(*uParam0, &(uParam0->f_2[iParam1])))) && !func_1147(uParam0, iParam1))
+	if (((((((((((((!((((((func_259(&(uParam0->f_2[iParam1]), 1139527981) || func_259(&(uParam0->f_2[iParam1]), 518218985)) || func_259(&(uParam0->f_2[iParam1]), 242628503)) || func_259(&(uParam0->f_2[iParam1]), 713668775)) || func_259(&(uParam0->f_2[iParam1]), -1775383291)) || func_259(&(uParam0->f_2[iParam1]), 1056466932)) || func_259(&(uParam0->f_2[iParam1]), 993674639)) && !ENTITY::IS_ENTITY_DEAD(&(uParam0->f_2[iParam1]))) && !PED::IS_PED_FLEEING(&(uParam0->f_2[iParam1]))) && !PED::_0x40C9155AF8BC13F3(&(uParam0->f_2[iParam1]))) && !PED::_0x77525BBF433F2CD6(&(uParam0->f_2[iParam1]))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), joaat("EVENT_ANIMAL_DETECTED_THREAT"))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), -1922859932)) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), 2129777492)) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), joaat("EVENT_SHOT_FIRED_BULLET_IMPACT"))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), joaat("EVENT_SHOT_FIRED_WHIZZED_BY"))) && !PED::IS_PED_RESPONDING_TO_EVENT(&(uParam0->f_2[iParam1]), joaat("EVENT_SHOT_FIRED_WHIZZED_BY_ENTITY"))) && !TASK::_0x0C3CB2E600C8977D(&(uParam0->f_2[iParam1]), 1)) && !(FLOCK::_0x8D913E493BAFE0A3(*uParam0) && FLOCK::_0x9E13ACC38BA8F9C3(*uParam0, &(uParam0->f_2[iParam1])))) && !func_1147(uParam0, iParam1))
 	{
 		if (VOLUME::_DOES_VOLUME_EXIST(bParam2))
 		{
@@ -28246,10 +28246,10 @@ int func_715(int iParam0, var uParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -28747,7 +28747,7 @@ int func_726(int iParam0, var uParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*iParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*iParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -29123,10 +29123,10 @@ int func_738(int iParam0, var uParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -29147,7 +29147,7 @@ int func_738(int iParam0, var uParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -57925,7 +57925,7 @@ int func_1588(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case 1387172233:
+				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;

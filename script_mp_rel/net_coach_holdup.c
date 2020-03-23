@@ -451,7 +451,7 @@ void func_15(var uParam0, var uParam1, var uParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 				func_37(iVar0, uParam0, uParam1, uParam2);
 				break;
 		}
@@ -19772,20 +19772,20 @@ char* func_668()
 			{
 				if (bVar2)
 				{
-					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_POSSE_JOIN_PLURAL", func_1051(iVar1, -5208416));
+					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_POSSE_JOIN_PLURAL", func_1051(iVar1, joaat("COLOR_ENEMY")));
 				}
 				else
 				{
-					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_POSSE_JOIN", func_1051(iVar1, -5208416));
+					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_POSSE_JOIN", func_1051(iVar1, joaat("COLOR_ENEMY")));
 				}
 			}
 			else if (bVar2)
 			{
-				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_PLAYER_JOIN_PLURAL", func_1051(iVar1, -5208416));
+				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_PLAYER_JOIN_PLURAL", func_1051(iVar1, joaat("COLOR_ENEMY")));
 			}
 			else
 			{
-				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_PLAYER_JOIN", func_1051(iVar1, -5208416));
+				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_KIDNAP_PVP_PLAYER_JOIN", func_1051(iVar1, joaat("COLOR_ENEMY")));
 			}
 			break;
 		case -409129282:
@@ -19793,20 +19793,20 @@ char* func_668()
 			{
 				if (bVar2)
 				{
-					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_POSSE_JOIN_PLURAL", func_1051(iVar1, -5208416));
+					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_POSSE_JOIN_PLURAL", func_1051(iVar1, joaat("COLOR_ENEMY")));
 				}
 				else
 				{
-					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_POSSE_JOIN", func_1051(iVar1, -5208416));
+					return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_POSSE_JOIN", func_1051(iVar1, joaat("COLOR_ENEMY")));
 				}
 			}
 			else if (bVar2)
 			{
-				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_PLAYER_JOIN_PLURAL", func_1051(iVar1, -5208416));
+				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_PLAYER_JOIN_PLURAL", func_1051(iVar1, joaat("COLOR_ENEMY")));
 			}
 			else
 			{
-				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_PLAYER_JOIN", func_1051(iVar1, -5208416));
+				return MISC::_CREATE_VAR_STRING(10, "NET_CHU_UPDATE_ROBBERY_PVP_PLAYER_JOIN", func_1051(iVar1, joaat("COLOR_ENEMY")));
 			}
 			break;
 	}
@@ -28591,11 +28591,11 @@ char* func_1000(int iParam0, int iParam1, char* sParam2)
 					}
 					else if (Local_17.f_321 < 2)
 					{
-						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_KIDNAP", func_1217(iParam1, -963477619), func_1216(joaat("COLOR_RED")), sParam2);
+						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_KIDNAP", func_1217(iParam1, joaat("COLOR_POSSE_ALLY")), func_1216(joaat("COLOR_RED")), sParam2);
 					}
 					else
 					{
-						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_KIDNAP_PLURAL", func_1217(iParam1, -963477619), func_1216(joaat("COLOR_RED")), sParam2);
+						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_KIDNAP_PLURAL", func_1217(iParam1, joaat("COLOR_POSSE_ALLY")), func_1216(joaat("COLOR_RED")), sParam2);
 					}
 					break;
 				case -409129282:
@@ -28612,11 +28612,11 @@ char* func_1000(int iParam0, int iParam1, char* sParam2)
 					}
 					else if (Local_17.f_322 < 2)
 					{
-						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_ROBBERY", func_1217(iParam1, -963477619), func_1216(joaat("COLOR_RED")), sParam2);
+						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_ROBBERY", func_1217(iParam1, joaat("COLOR_POSSE_ALLY")), func_1216(joaat("COLOR_RED")), sParam2);
 					}
 					else
 					{
-						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_ROBBERY_PLURAL", func_1217(iParam1, -963477619), func_1216(joaat("COLOR_RED")), sParam2);
+						return MISC::_CREATE_VAR_STRING(42, "NET_CHU_HELP_INTRO_SECONDARY_ROBBERY_PLURAL", func_1217(iParam1, joaat("COLOR_POSSE_ALLY")), func_1216(joaat("COLOR_RED")), sParam2);
 					}
 					break;
 			}
@@ -29287,11 +29287,11 @@ char* func_1031(bool bParam0)
 					{
 						if (bParam0)
 						{
-							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_KIDNAP_PVP", func_1229(iVar4, iVar5, -5208416));
+							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_KIDNAP_PVP", func_1229(iVar4, iVar5, joaat("COLOR_ENEMY")));
 						}
 						else
 						{
-							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_KIDNAP_PVP_PLURAL", func_1229(iVar4, iVar5, -5208416));
+							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_KIDNAP_PVP_PLURAL", func_1229(iVar4, iVar5, joaat("COLOR_ENEMY")));
 						}
 					}
 					else if (bParam0)
@@ -29319,11 +29319,11 @@ char* func_1031(bool bParam0)
 					{
 						if (bParam0)
 						{
-							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_ROBBERY_PVP", func_1229(iVar4, iVar5, -5208416));
+							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_ROBBERY_PVP", func_1229(iVar4, iVar5, joaat("COLOR_ENEMY")));
 						}
 						else
 						{
-							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_ROBBERY_PVP_PLURAL", func_1229(iVar4, iVar5, -5208416));
+							return MISC::_CREATE_VAR_STRING(10, "NET_CHU_TOAST_END_BODY_FAILED_ROBBERY_PVP_PLURAL", func_1229(iVar4, iVar5, joaat("COLOR_ENEMY")));
 						}
 					}
 					else if (bParam0)
@@ -36140,17 +36140,17 @@ void func_1321(int iParam0, var uParam1, int iParam2, bool bParam3, bool bParam4
 
 int func_1322()
 {
-	return 1937193856;
+	return joaat("COLOR_MP_OBJECTIVE_ENEMY");
 }
 
 int func_1323()
 {
-	return -1640778959;
+	return joaat("COLOR_MP_OBJECTIVE_FRIENDLY");
 }
 
 int func_1324()
 {
-	return -1428663542;
+	return joaat("COLOR_MP_OBJECTIVE_NEUTRAL");
 }
 
 void func_1325(var uParam0, int iParam1)
@@ -38568,7 +38568,7 @@ int func_1389(int iParam0)
 		case 22:
 			return -1019997170;
 		case 24:
-			return -5208416;
+			return joaat("COLOR_ENEMY");
 		case 18:
 			return joaat("COLOR_PURE_WHITE");
 		case 25:

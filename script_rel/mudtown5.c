@@ -31939,7 +31939,7 @@ void func_632(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -31947,11 +31947,11 @@ void func_632(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1115(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_619(iParam0)), iVar1), iVar12);
@@ -62424,10 +62424,10 @@ int func_1427(char[4] cParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2084(cParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2085(cParam0, uParam1, iVar0);
 				break;

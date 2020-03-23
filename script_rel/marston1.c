@@ -32299,7 +32299,7 @@ void func_659(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -32307,11 +32307,11 @@ void func_659(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1213(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_646(iParam0)), iVar1), iVar12);
@@ -60146,7 +60146,7 @@ void func_1554()
 	MAP::CLEAR_GPS_CUSTOM_ROUTE();
 	MAP::CLEAR_GPS_MULTI_ROUTE();
 	iLocal_541 = func_1354(408396114, *(vLocal_668[1 /*3*/]), 1109393408 /* Float: 40f */, 1);
-	MAP::START_GPS_MULTI_ROUTE(76603059, true, false);
+	MAP::START_GPS_MULTI_ROUTE(joaat("COLOR_OBJECTIVE"), true, false);
 	MAP::ADD_POINT_TO_GPS_MULTI_ROUTE(func_385(0, 8), false);
 	MAP::ADD_POINT_TO_GPS_MULTI_ROUTE(func_385(7, 3), false);
 	MAP::SET_GPS_MULTI_ROUTE_RENDER(true);
@@ -61321,10 +61321,10 @@ int func_1607(char[4] cParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2115(cParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2116(cParam0, uParam1, iVar0);
 				break;
@@ -89910,7 +89910,7 @@ int func_2609(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case 1387172233:
+				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;

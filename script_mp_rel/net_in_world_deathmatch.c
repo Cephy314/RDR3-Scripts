@@ -3148,7 +3148,7 @@ bool func_111(var uParam0, int iParam1)
 	switch (iParam1->f_1046)
 	{
 		case 1:
-			iVar0 = func_110(MISC::_CREATE_VAR_STRING(10, "GF_FEUD_HELP_ACCEPTED_SENDER", func_47(PLAYER::GET_PLAYER_NAME(_NAMESPACE26::_0x4BE6C13A45CCA8EC(uParam0->f_91)), -5208416)), 10000, 0, 0, 0, 1);
+			iVar0 = func_110(MISC::_CREATE_VAR_STRING(10, "GF_FEUD_HELP_ACCEPTED_SENDER", func_47(PLAYER::GET_PLAYER_NAME(_NAMESPACE26::_0x4BE6C13A45CCA8EC(uParam0->f_91)), joaat("COLOR_ENEMY"))), 10000, 0, 0, 0, 1);
 			break;
 		case 4:
 			iVar0 = func_110(MISC::_CREATE_VAR_STRING(10, "GF_POSSE_FEUD_HELP_ACCEPTED_SENDER", func_49(uParam0->f_91, 1, 0)), 10000, 0, 0, 0, 1);
@@ -3185,7 +3185,7 @@ bool func_112(var uParam0, int iParam1)
 	switch (iParam1->f_1046)
 	{
 		case 1:
-			iVar0 = func_110(MISC::_CREATE_VAR_STRING(170, sVar1, func_237(iParam1->f_1046), func_47(PLAYER::GET_PLAYER_NAME(_NAMESPACE26::_0x4BE6C13A45CCA8EC(uParam0->f_90)), -5208416), "NET_IWD_FEUD_EXTRA_HELP"), 10000, 0, 0, 0, 1);
+			iVar0 = func_110(MISC::_CREATE_VAR_STRING(170, sVar1, func_237(iParam1->f_1046), func_47(PLAYER::GET_PLAYER_NAME(_NAMESPACE26::_0x4BE6C13A45CCA8EC(uParam0->f_90)), joaat("COLOR_ENEMY")), "NET_IWD_FEUD_EXTRA_HELP"), 10000, 0, 0, 0, 1);
 			break;
 		case 4:
 			iVar0 = func_110(MISC::_CREATE_VAR_STRING(170, sVar1, func_237(iParam1->f_1046), func_49(uParam0->f_90, 1, 0), "NET_IWD_FEUD_EXTRA_HELP"), 10000, 0, 0, 0, 1);
@@ -3724,12 +3724,12 @@ int func_140(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		}
 		else
 		{
-			return 636925055;
+			return joaat("COLOR_POSSE_NEUTRAL");
 		}
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
 	iVar2 = iParam0;
 	if (func_138(func_254(0)) && func_260(func_254(0)) == 7)
@@ -3753,7 +3753,7 @@ int func_140(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		if (bVar0 && bVar1)
 		{
 			iVar6 = func_261(iParam0);
-			if (iVar6 == -1031763995 && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
+			if (iVar6 == joaat("COLOR_NET_PLAYER2") && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
 			{
 				return joaat("COLOR_WHITE");
 			}
@@ -3773,7 +3773,7 @@ int func_140(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	if (func_135((Global_1070356->f_19683.f_1[iVar2 /*8*/])->f_7, 1024))
 	{
-		return -508184943;
+		return joaat("COLOR_WINNING_PLAYER");
 	}
 	iVar7 = func_263(iParam0, 1);
 	if (!bVar0)
@@ -3786,23 +3786,23 @@ int func_140(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		{
 			if (func_266(iParam0, bParam1))
 			{
-				return 1891514641;
+				return joaat("COLOR_POSSE_ENEMY");
 			}
 			else
 			{
 				if (iVar7 > 5)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 3)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 1)
 				{
-					return 1201428499;
+					return joaat("COLOR_NOTORIETY_MEDIUM");
 				}
-				return 63157909;
+				return joaat("COLOR_NOTORIETY_LOW");
 			}
 		}
 	}
@@ -3827,9 +3827,9 @@ int func_140(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	else if (func_265(iParam0, bParam1))
 	{
-		return 1891514641;
+		return joaat("COLOR_POSSE_ENEMY");
 	}
-	return 830499243;
+	return joaat("COLOR_FRIENDLY");
 }
 
 int func_141(var uParam0)
@@ -5275,7 +5275,7 @@ void func_207(var uParam0, var uParam1, int iParam2)
 					{
 						if ((_NAMESPACE26::_0xD6F6ACF4392187FB(iParam2->f_1056) && _NAMESPACE26::_0x149A2751AB66AC02(iParam2->f_1056) > 0) && NETWORK::_0x255A5EF65EDA9167(_NAMESPACE26::_0x4BE6C13A45CCA8EC(iParam2->f_1056)))
 						{
-							iParam2->f_1149 = func_316(MISC::_CREATE_VAR_STRING(10, "NET_IWD_DEATHMATCH_POSLEADFEUD_OBJ", func_47(PLAYER::GET_PLAYER_NAME(_NAMESPACE26::_0x4BE6C13A45CCA8EC(iParam2->f_1056)), -5208416)), -1, 0, 0, 1);
+							iParam2->f_1149 = func_316(MISC::_CREATE_VAR_STRING(10, "NET_IWD_DEATHMATCH_POSLEADFEUD_OBJ", func_47(PLAYER::GET_PLAYER_NAME(_NAMESPACE26::_0x4BE6C13A45CCA8EC(iParam2->f_1056)), joaat("COLOR_ENEMY"))), -1, 0, 0, 1);
 							iParam2->f_1039 = uParam1->f_1;
 							iParam2->f_1040 = 2;
 						}
@@ -5766,18 +5766,18 @@ void func_217(var uParam0, int iParam1, bool bParam2)
 			}
 			else if (bParam2)
 			{
-				func_351(iVar1, -5208416);
+				func_351(iVar1, joaat("COLOR_ENEMY"));
 			}
 			else
 			{
 				iVar3 = iVar0;
 				if (((*uParam0)[iVar3 /*25*/])->f_6 == ((*uParam0)[iParam1 /*25*/])->f_6)
 				{
-					func_351(iVar1, -963477619);
+					func_351(iVar1, joaat("COLOR_POSSE_ALLY"));
 				}
 				else
 				{
-					func_351(iVar1, -5208416);
+					func_351(iVar1, joaat("COLOR_ENEMY"));
 				}
 			}
 		}
@@ -6699,36 +6699,36 @@ int func_261(int iParam0)
 	switch (PLAYER::GET_PLAYER_TEAM(iParam0))
 	{
 		case 0:
-			return -275684858;
+			return joaat("COLOR_NET_PLAYER3");
 		case 1:
-			return -1561147190;
+			return joaat("COLOR_NET_PLAYER4");
 		case 2:
-			return -736318691;
+			return joaat("COLOR_NET_PLAYER5");
 		case 3:
-			return 158864851;
+			return joaat("COLOR_NET_PLAYER6");
 		case 4:
-			return 923463928;
+			return joaat("COLOR_NET_PLAYER7");
 		case 5:
-			return -317694716;
+			return joaat("COLOR_NET_PLAYER8");
 		case 6:
-			return 461388259;
+			return joaat("COLOR_NET_PLAYER9");
 		case 7:
-			return 1811916478;
+			return joaat("COLOR_NET_PLAYER10");
 		case 8:
-			return 1713937168;
+			return joaat("COLOR_NET_PLAYER11");
 		default:
 			break;
 	}
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 int func_262(int iParam0)
 {
 	if (_NAMESPACE26::_0x901E0DC25080C8B9(iParam0) != Global_1275573->f_15 && !func_96())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
-	return -963477619;
+	return joaat("COLOR_POSSE_ALLY");
 }
 
 int func_263(int iParam0, bool bParam1)
@@ -8015,9 +8015,9 @@ void func_329(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)
 	bool bVar0;
 
 	iParam3 |= 8;
-	if (func_444(iParam0, &bVar0) && func_448(iParam0, iParam1, iParam3, 551037070, joaat("COLOR_RED"), joaat("COLOR_WHITE"), joaat("COLOR_WHITE"), iParam4))
+	if (func_444(iParam0, &bVar0) && func_448(iParam0, iParam1, iParam3, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_WHITE"), joaat("COLOR_WHITE"), iParam4))
 	{
-		func_449(iParam1, uParam2, iParam3 | 8, 551037070, joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam4);
+		func_449(iParam1, uParam2, iParam3 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam4);
 	}
 	if (bVar0)
 	{
@@ -15588,7 +15588,7 @@ void func_604(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4,
 				if (bParam4 && ((*uParam1)[iVar0 /*23*/])->f_13)
 				{
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam0->f_12[iVar0]), "Blip", "BLIP_MVP");
-					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", -1777836132);
+					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", joaat("COLOR_YELLOW"));
 				}
 				else
 				{
@@ -17598,7 +17598,7 @@ int func_649(int iParam0)
 		case 22:
 			return -1019997170;
 		case 24:
-			return -5208416;
+			return joaat("COLOR_ENEMY");
 		case 18:
 			return joaat("COLOR_PURE_WHITE");
 		case 25:
@@ -19774,12 +19774,12 @@ int func_707(int iParam0, var uParam1, var uParam2)
 
 int func_708()
 {
-	return -1640778959;
+	return joaat("COLOR_MP_OBJECTIVE_FRIENDLY");
 }
 
 int func_709()
 {
-	return 1937193856;
+	return joaat("COLOR_MP_OBJECTIVE_ENEMY");
 }
 
 int func_710()
@@ -19825,21 +19825,21 @@ int func_713(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 			switch (iParam0)
 			{
 				case 0:
-					return -275684858;
+					return joaat("COLOR_NET_PLAYER3");
 				case 1:
-					return -1561147190;
+					return joaat("COLOR_NET_PLAYER4");
 				case 2:
-					return -736318691;
+					return joaat("COLOR_NET_PLAYER5");
 				case 3:
-					return 158864851;
+					return joaat("COLOR_NET_PLAYER6");
 				case 4:
-					return 923463928;
+					return joaat("COLOR_NET_PLAYER7");
 				case 5:
-					return -317694716;
+					return joaat("COLOR_NET_PLAYER8");
 				case 6:
-					return 461388259;
+					return joaat("COLOR_NET_PLAYER9");
 				case 7:
-					return 1811916478;
+					return joaat("COLOR_NET_PLAYER10");
 				default:
 					break;
 			}
@@ -19847,7 +19847,7 @@ int func_713(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 		}
 		if (iParam1 == iParam0)
 		{
-			return 1765299542;
+			return joaat("COLOR_NET_PLAYER1");
 		}
 	}
 	else if (bParam4)
@@ -19858,10 +19858,10 @@ int func_713(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 		}
 		else
 		{
-			return 1765299542;
+			return joaat("COLOR_NET_PLAYER1");
 		}
 	}
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 var func_714()
@@ -20089,7 +20089,7 @@ void func_721(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4,
 				if (bParam4 && ((*uParam1)[iVar0 /*23*/])->f_13)
 				{
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam0->f_12[iVar0]), "Blip", "BLIP_MVP");
-					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", -1777836132);
+					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", joaat("COLOR_YELLOW"));
 				}
 				else
 				{

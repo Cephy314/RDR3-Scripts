@@ -5878,7 +5878,7 @@ void func_174(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar16 = 0;
 	if (bVar0)
 	{
-		iVar13 = 619977481;
+		iVar13 = joaat("COLOR_GREYMID");
 		sVar14 = "Transaction_Negative";
 		iVar16 = 1;
 	}
@@ -5895,16 +5895,16 @@ void func_174(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar13 = -856358433;
+			iVar13 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar13 = -1905433004;
+			iVar13 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	if (func_71(bParam0, 1816585950))
 	{
-		iVar13 = 76603059;
+		iVar13 = joaat("COLOR_OBJECTIVE");
 	}
 	iVar18 = func_262(bParam0);
 	if ((func_263(iVar12) && func_71(bParam0, -306684263)) && iVar18 != 0)

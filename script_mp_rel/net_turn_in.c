@@ -1580,7 +1580,7 @@ void func_42(var uParam0, var uParam1)
 			case joaat("EVENT_SHOT_FIRED_BULLET_IMPACT"):
 			case joaat("EVENT_SHOT_FIRED"):
 			case joaat("EVENT_SHOCKING_SEEN_MELEE_ACTION"):
-			case -141209784:
+			case joaat("EVENT_EXPLOSION_HEARD"):
 			case joaat("EVENT_SHOCKING_FIRE"):
 			case joaat("EVENT_SHOCKING_SEEN_PED_KILLED"):
 			case joaat("EVENT_EXPLOSION"):

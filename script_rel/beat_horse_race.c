@@ -3364,10 +3364,10 @@ void func_76()
 			{
 				iLocal_426 = MAP::_BLIP_ADD_FOR_COORD(408396114, *(vLocal_501[iLocal_1018 /*3*/]));
 			}
-			MAP::START_GPS_MULTI_ROUTE(-1777836132, true, false);
+			MAP::START_GPS_MULTI_ROUTE(joaat("COLOR_YELLOW"), true, false);
 			TASK::WAYPOINT_RECORDING_GET_NUM_POINTS(&(sLocal_529[iLocal_1017]), &iVar1);
 			TASK::WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT(&(sLocal_529[iLocal_1017]), Global_36, &iVar2);
-			MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE(&(sLocal_529[iLocal_1017]), iVar2, iVar1, -1777836132, false, true);
+			MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE(&(sLocal_529[iLocal_1017]), iVar2, iVar1, joaat("COLOR_YELLOW"), false, true);
 			MAP::SET_GPS_MULTI_ROUTE_RENDER(true);
 			func_230();
 			func_197(&uLocal_906);
@@ -16502,10 +16502,10 @@ int func_441(int iParam0, int iParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -16938,7 +16938,7 @@ int func_451(int iParam0, int iParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*iParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*iParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -17314,10 +17314,10 @@ int func_463(int iParam0, int iParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -17338,7 +17338,7 @@ int func_463(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -22449,7 +22449,7 @@ int func_652(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case 1387172233:
+				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;

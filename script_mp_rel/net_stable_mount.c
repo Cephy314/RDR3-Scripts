@@ -757,7 +757,7 @@ void func_8(var uParam0, int iParam1)
 			{
 				HUD::_0x5F57522BC1EB9D9D(uParam0->f_5, joaat("player_horse"));
 			}
-			HUD::_0x84BD27DDF9575816(uParam0->f_5, 830499243);
+			HUD::_0x84BD27DDF9575816(uParam0->f_5, joaat("COLOR_FRIENDLY"));
 			HUD::_0x93171DDDAB274EB8(uParam0->f_5, uParam0->f_6);
 			if (func_38(&(iParam1->f_7), uParam0->f_4, 0, 0))
 			{

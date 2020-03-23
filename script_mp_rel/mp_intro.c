@@ -22136,7 +22136,7 @@ void func_425(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar16 = 0;
 	if (bVar0)
 	{
-		iVar13 = 619977481;
+		iVar13 = joaat("COLOR_GREYMID");
 		sVar14 = "Transaction_Negative";
 		iVar16 = 1;
 	}
@@ -22153,16 +22153,16 @@ void func_425(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar13 = -856358433;
+			iVar13 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar13 = -1905433004;
+			iVar13 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	if (func_891(iParam0, 1816585950))
 	{
-		iVar13 = 76603059;
+		iVar13 = joaat("COLOR_OBJECTIVE");
 	}
 	iVar18 = func_917(iParam0);
 	if ((func_963(iVar12) && func_891(iParam0, -306684263)) && iVar18 != 0)
@@ -22351,7 +22351,7 @@ void func_437(int iParam0, char* sParam1)
 		sParam1 = "NUMBER";
 	}
 	fVar0 = (IntToFloat(func_976(iParam0)) + (IntToFloat(func_977(iParam0, 1)) * (1f / 100f)));
-	func_970(MISC::_CREATE_VAR_STRING(6, sParam1, fVar0), "ITEMTYPE_TEXTURES", joaat("itemtype_gold"), 0, 1684603218, 0, 0, 0, 1);
+	func_970(MISC::_CREATE_VAR_STRING(6, sParam1, fVar0), "ITEMTYPE_TEXTURES", joaat("itemtype_gold"), 0, joaat("COLOR_CASH_GOLD"), 0, 0, 0, 1);
 }
 
 bool func_438()
@@ -54888,7 +54888,7 @@ void func_1737(int iParam0, int iParam1)
 			break;
 		case 1:
 			sVar4 = "Transaction_Negative";
-			iVar6 = 619977481;
+			iVar6 = joaat("COLOR_GREYMID");
 			iVar7 = func_816(iParam0);
 			if ((iVar7 > 0 && iVar7 < 11) && func_1569(4, iVar7))
 			{
@@ -82556,7 +82556,7 @@ int func_2620(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 	DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam4, func_1941(), iParam2);
 	DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam4, func_1909(), -841939068);
 	func_2570(iParam4, *uParam1);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam4, "textColor", 2082211070);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam4, "textColor", joaat("COLOR_MENU_TEXT"));
 	bVar19 = false;
 	if (!func_2451(uParam1))
 	{
@@ -82576,7 +82576,7 @@ int func_2620(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 				{
 					bVar19 = true;
 				}
-				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*iParam4, "textColor", 1684603218);
+				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*iParam4, "textColor", joaat("COLOR_CASH_GOLD"));
 			}
 		}
 		else if (func_2626(Global_1051388->f_3214, iParam2) != 0)
@@ -105132,7 +105132,7 @@ void func_3397(bool bParam0, int iParam1)
 	iVar6 = 0;
 	if (!bParam0)
 	{
-		iVar4 = 619977481;
+		iVar4 = joaat("COLOR_GREYMID");
 		sVar5 = "Transaction_Negative";
 		iVar6 = 1;
 	}
@@ -111697,11 +111697,11 @@ int func_3624(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -880922108;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_1");
 				case 1:
-					return 712437748;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_2");
 				case 2:
-					return -132314303;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_3");
 				default:
 					break;
 			}
@@ -111710,11 +111710,11 @@ int func_3624(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1098244389;
+					return joaat("ABILITY_CARD_COMBAT_TIER_1");
 				case 1:
-					return 856704090;
+					return joaat("ABILITY_CARD_COMBAT_TIER_2");
 				case 2:
-					return -1750135398;
+					return joaat("ABILITY_CARD_COMBAT_TIER_3");
 				default:
 					break;
 			}
@@ -111723,11 +111723,11 @@ int func_3624(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -216428280;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_1");
 				case 1:
-					return 283298970;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_2");
 				case 2:
-					return -1044664755;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_3");
 				default:
 					break;
 			}
@@ -111736,11 +111736,11 @@ int func_3624(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -75395410;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_1");
 				case 1:
-					return 1111923763;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_2");
 				case 2:
-					return 1350842542;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_3");
 				default:
 					break;
 			}

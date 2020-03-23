@@ -5641,7 +5641,7 @@ int func_211()
 		{
 			return 1;
 		}
-		if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(-1360035949, vLocal_214, 50f) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOT_FIRED_WHIZZED_BY"), vLocal_214, 50f))
+		if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_DEATH"), vLocal_214, 50f) || EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOT_FIRED_WHIZZED_BY"), vLocal_214, 50f))
 		{
 			return 1;
 		}
@@ -35015,7 +35015,7 @@ void func_1248(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPar
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -35023,11 +35023,11 @@ void func_1248(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPar
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1624(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_1235(bParam0)), iVar1), iVar12);

@@ -626,7 +626,7 @@ int func_30()
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
 			case joaat("EVENT_DAMAGE"):
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 				if (func_48(iVar0))
 				{
 					return 1;

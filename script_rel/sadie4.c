@@ -30722,7 +30722,7 @@ void func_619(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -30730,11 +30730,11 @@ void func_619(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1077(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_606(bParam0)), iVar1), iVar12);
@@ -49549,7 +49549,7 @@ void func_1217()
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 				SCRIPTS::GET_EVENT_DATA(0, iVar0, &iVar1, 9);
 				if ((ENTITY::DOES_ENTITY_EXIST(iVar1) && ENTITY::IS_ENTITY_A_PED(iVar1)) && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1) == Local_100)
 				{
@@ -55181,10 +55181,10 @@ int func_1384(var uParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_1849(uParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_1850(uParam0, uParam1, iVar0);
 				break;

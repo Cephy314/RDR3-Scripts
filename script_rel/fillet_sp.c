@@ -16955,10 +16955,10 @@ void func_606(var uParam0)
 		uParam0->f_74 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(uParam0->f_70, "score");
 		uParam0->f_75 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_74, "leftScoreVisible", 0);
 		uParam0->f_76 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_74, "leftScore", "");
-		uParam0->f_77 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_74, "leftScoreColor", -1640778959);
+		uParam0->f_77 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_74, "leftScoreColor", joaat("COLOR_MP_OBJECTIVE_FRIENDLY"));
 		uParam0->f_78 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_74, "rightScoreVisible", 0);
 		uParam0->f_79 = DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_74, "rightScore", "");
-		uParam0->f_80 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_74, "rightScoreColor", 1937193856);
+		uParam0->f_80 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_74, "rightScoreColor", joaat("COLOR_MP_OBJECTIVE_ENEMY"));
 		func_521(uParam0, 2);
 	}
 }

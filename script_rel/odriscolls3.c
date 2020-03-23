@@ -33844,7 +33844,7 @@ void func_697(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -33852,11 +33852,11 @@ void func_697(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1218(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_684(iParam0)), iVar1), iVar12);
@@ -36424,7 +36424,7 @@ int func_796(var uParam0)
 					func_1314(1, &(Local_133[7 /*6*/]));
 					func_1315(uParam0, 1);
 					func_1319(func_470(7));
-					func_1320(uParam0, &(Local_133[7 /*6*/]), -2045797884, 422991367, 1, 1);
+					func_1320(uParam0, &(Local_133[7 /*6*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 					func_1313(24);
 					_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
 					func_134(uParam0, 2);
@@ -36567,7 +36567,7 @@ int func_797(var uParam0)
 	PED::REMOVE_GROUP(iLocal_1179);
 	func_167(0);
 	func_176(8);
-	func_1320(uParam0, &(Local_133[7 /*6*/]), -2045797884, 422991367, 0, 1);
+	func_1320(uParam0, &(Local_133[7 /*6*/]), joaat("COLOR_NEUTRAL"), 422991367, 0, 1);
 	func_167(0);
 	return 1;
 }
@@ -54386,7 +54386,7 @@ void func_1303(var uParam0)
 		{
 			if (!func_165(44))
 			{
-				func_1320(uParam0, &(Local_133[7 /*6*/]), -2045797884, 422991367, 1, 1);
+				func_1320(uParam0, &(Local_133[7 /*6*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 				_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
 				func_1853(uParam0, func_1300(23), -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
 				func_1360(23);
@@ -55417,7 +55417,7 @@ void func_1337(bool bParam0)
 {
 	if (bParam0)
 	{
-		MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE(func_496(93), 0, -1, 76603059, false, true);
+		MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE(func_496(93), 0, -1, joaat("COLOR_OBJECTIVE"), false, true);
 	}
 	else
 	{
@@ -58877,7 +58877,7 @@ void func_1420(var uParam0)
 											break;
 										case 42:
 											iVar10 = EVENT::_0x796EECFF0C6D39BE(&(Local_133[iVar8 /*6*/]), 0, 0);
-											if (((iVar10 == 178452260 || iVar10 == joaat("EVENT_SHOCKING_DEAD_BODY")) || iVar10 == -196899787) || iVar10 == 1589923363)
+											if (((iVar10 == joaat("EVENT_PED_SEEN_DEAD_PED") || iVar10 == joaat("EVENT_SHOCKING_DEAD_BODY")) || iVar10 == joaat("EVENT_ACQUAINTANCE_PED_DEAD")) || iVar10 == joaat("EVENT_DEAD_PED_FOUND"))
 											{
 												iVar11 = EVENT::_0x822A001BCEA5BD81(&(Local_133[iVar8 /*6*/]), iVar10, 0, 0);
 											}
@@ -66184,10 +66184,10 @@ int func_1615(var uParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2130(uParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2131(uParam0, uParam1, iVar0);
 				break;
@@ -87024,10 +87024,10 @@ int func_2358(bool bParam0, int iParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(bParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -87460,7 +87460,7 @@ int func_2368(bool bParam0, int iParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*bParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*bParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -87824,10 +87824,10 @@ int func_2379(bool bParam0, int iParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(bParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(bParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -87848,7 +87848,7 @@ int func_2379(bool bParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(bParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(bParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))

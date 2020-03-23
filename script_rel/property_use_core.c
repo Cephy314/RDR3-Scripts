@@ -22711,7 +22711,7 @@ void func_838(bool bParam0, int iParam1)
 		case 1:
 			sVar3 = "ITEM_DELETED";
 			sVar4 = "Transaction_Negative";
-			iVar5 = 619977481;
+			iVar5 = joaat("COLOR_GREYMID");
 			break;
 		case 2:
 			sVar3 = "ITEM_STORED";
@@ -27178,7 +27178,7 @@ void func_970(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -27186,11 +27186,11 @@ void func_970(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1340(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_1154(bParam0)), iVar1), iVar12);

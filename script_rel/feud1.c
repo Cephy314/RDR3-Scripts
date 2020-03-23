@@ -33955,7 +33955,7 @@ void func_669(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -33963,11 +33963,11 @@ void func_669(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1221(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_656(iParam0)), iVar1), iVar12);
@@ -72980,10 +72980,10 @@ int func_1591(char[4] cParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2148(cParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2149(cParam0, uParam1, iVar0);
 				break;
@@ -82891,7 +82891,7 @@ int func_1899(bool bParam0, bool bParam1, int iParam2)
 		{
 			return 1;
 		}
-		if ((PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_EXPLOSION")) || PED::_0xC8D523BF5BBD3808(bParam0, -141209784)) || PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_SHOCKING_EXPLOSION")))
+		if ((PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_EXPLOSION")) || PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_EXPLOSION_HEARD"))) || PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_SHOCKING_EXPLOSION")))
 		{
 			return 1;
 		}
@@ -82910,7 +82910,7 @@ int func_1899(bool bParam0, bool bParam1, int iParam2)
 				return 1;
 			}
 		}
-		if ((PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_PED_COLLISION_WITH_PLAYER")) || PED::_0xC8D523BF5BBD3808(bParam0, 318280644)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(bParam0, bParam1, 1, 1))
+		if ((PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_PED_COLLISION_WITH_PLAYER")) || PED::_0xC8D523BF5BBD3808(bParam0, joaat("EVENT_PLAYER_COLLISION_WITH_PED"))) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(bParam0, bParam1, 1, 1))
 		{
 			return 1;
 		}

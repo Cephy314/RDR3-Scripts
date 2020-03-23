@@ -24591,7 +24591,7 @@ void func_484(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar16 = 0;
 	if (bVar0)
 	{
-		iVar13 = 619977481;
+		iVar13 = joaat("COLOR_GREYMID");
 		sVar14 = "Transaction_Negative";
 		iVar16 = 1;
 	}
@@ -24608,16 +24608,16 @@ void func_484(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar13 = -856358433;
+			iVar13 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar13 = -1905433004;
+			iVar13 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	if (func_241(bParam0, 1816585950))
 	{
-		iVar13 = 76603059;
+		iVar13 = joaat("COLOR_OBJECTIVE");
 	}
 	iVar18 = func_715(bParam0);
 	if ((func_716(iVar12) && func_241(bParam0, -306684263)) && iVar18 != 0)
@@ -25365,7 +25365,7 @@ void func_513(int iParam0, char* sParam1)
 		sParam1 = "NUMBER";
 	}
 	fVar0 = (IntToFloat(func_800(iParam0)) + (IntToFloat(func_801(iParam0, 1)) * (1f / 100f)));
-	func_708(MISC::_CREATE_VAR_STRING(6, sParam1, fVar0), "ITEMTYPE_TEXTURES", joaat("itemtype_gold"), 0, 1684603218, 0, 0, 0, 1);
+	func_708(MISC::_CREATE_VAR_STRING(6, sParam1, fVar0), "ITEMTYPE_TEXTURES", joaat("itemtype_gold"), 0, joaat("COLOR_CASH_GOLD"), 0, 0, 0, 1);
 }
 
 int func_514(int iParam0)
@@ -26547,12 +26547,12 @@ void func_554(bool bParam0, bool bParam1)
 	if (bVar2)
 	{
 		Var5 = 2;
-		Var5.f_2 = func_540(sVar1, -759435717);
+		Var5.f_2 = func_540(sVar1, joaat("COLOR_VIP"));
 		Var5.f_3 = MISC::_CREATE_VAR_STRING(2, "SR_RANK_TOAST_TIER", sVar4);
 		Var5.f_4 = "NM_TI_VIEW_NOTIFICATION";
 		Var5.f_6 = joaat("toasts_mp_generic");
 		Var5.f_7 = joaat("toast_mp_season_reward");
-		Var5.f_8 = -759435717;
+		Var5.f_8 = joaat("COLOR_VIP");
 		Var5.f_17 = "HUD_Toast_Soundset";
 		Var5.f_18 = "season_reward_vip";
 		Var5.f_19 = joaat("rewards");
@@ -26561,7 +26561,7 @@ void func_554(bool bParam0, bool bParam1)
 		if (bParam1)
 		{
 			sVar27 = MISC::_CREATE_VAR_STRING(2, "SR_RANK_TOAST_REWARD_TITLE", sVar3);
-			func_843(func_540(sVar27, -759435717), MISC::_CREATE_VAR_STRING(2, "SR_RANK_TOAST_DELIVERY", sVar4), joaat("toasts_mp_generic"), joaat("toast_mp_season_reward"), -759435717, 8000, "HUD_Toast_Soundset", "season_reward", 0, 0, 1, 1);
+			func_843(func_540(sVar27, joaat("COLOR_VIP")), MISC::_CREATE_VAR_STRING(2, "SR_RANK_TOAST_DELIVERY", sVar4), joaat("toasts_mp_generic"), joaat("toast_mp_season_reward"), joaat("COLOR_VIP"), 8000, "HUD_Toast_Soundset", "season_reward", 0, 0, 1, 1);
 		}
 	}
 	else
@@ -27343,7 +27343,7 @@ void func_584(int iParam0)
 	if (!func_809(bVar0, &Var1, 0, 0, 0, 0))
 	{
 	}
-	iVar4 = 619977481;
+	iVar4 = joaat("COLOR_GREYMID");
 	sVar5 = "Transaction_Negative";
 	iVar6 = 1;
 	sVar7 = func_718(MISC::_CREATE_VAR_STRING(10, "ITEM_GET_PUMP", MISC::_CREATE_VAR_STRING(0, bVar0)), iVar4);
@@ -27375,7 +27375,7 @@ void func_586(bool bParam0, int iParam1)
 	iVar6 = 0;
 	if (!bParam0)
 	{
-		iVar4 = 619977481;
+		iVar4 = joaat("COLOR_GREYMID");
 		sVar5 = "Transaction_Negative";
 		iVar6 = 1;
 	}
@@ -33475,7 +33475,7 @@ void func_834(bool bParam0)
 
 void func_835(char* sParam0)
 {
-	func_708(MISC::_CREATE_VAR_STRING(2, "NUMBER", sParam0), "ITEMTYPE_TEXTURES", 1614874381, 0, 1369714994, 0, 0, 0, 1);
+	func_708(MISC::_CREATE_VAR_STRING(2, "NUMBER", sParam0), "ITEMTYPE_TEXTURES", 1614874381, 0, joaat("COLOR_TOKENS"), 0, 0, 0, 1);
 }
 
 bool func_836(int iParam0)
@@ -44868,11 +44868,11 @@ int func_1273(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -880922108;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_1");
 				case 1:
-					return 712437748;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_2");
 				case 2:
-					return -132314303;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_3");
 				default:
 					break;
 			}
@@ -44881,11 +44881,11 @@ int func_1273(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1098244389;
+					return joaat("ABILITY_CARD_COMBAT_TIER_1");
 				case 1:
-					return 856704090;
+					return joaat("ABILITY_CARD_COMBAT_TIER_2");
 				case 2:
-					return -1750135398;
+					return joaat("ABILITY_CARD_COMBAT_TIER_3");
 				default:
 					break;
 			}
@@ -44894,11 +44894,11 @@ int func_1273(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -216428280;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_1");
 				case 1:
-					return 283298970;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_2");
 				case 2:
-					return -1044664755;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_3");
 				default:
 					break;
 			}
@@ -44907,11 +44907,11 @@ int func_1273(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -75395410;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_1");
 				case 1:
-					return 1111923763;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_2");
 				case 2:
-					return 1350842542;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_3");
 				default:
 					break;
 			}

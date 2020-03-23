@@ -18261,7 +18261,7 @@ int func_534(var uParam0, var uParam1, int iParam2, int iParam3)
 {
 	if (func_536(uParam1) || Global_524288->f_39792 == -698288936)
 	{
-		return -963477619;
+		return joaat("COLOR_POSSE_ALLY");
 	}
 	if (func_426(uParam0) == 1)
 	{
@@ -18271,7 +18271,7 @@ int func_534(var uParam0, var uParam1, int iParam2, int iParam3)
 		}
 		else
 		{
-			return 1891514641;
+			return joaat("COLOR_POSSE_ENEMY");
 		}
 	}
 	return func_722(iParam3, 1, 0);
@@ -23151,21 +23151,21 @@ int func_722(int iParam0, bool bParam1, bool bParam2)
 	switch (iParam0)
 	{
 		case 0:
-			return -275684858;
+			return joaat("COLOR_NET_PLAYER3");
 		case 1:
-			return -1561147190;
+			return joaat("COLOR_NET_PLAYER4");
 		case 2:
-			return -736318691;
+			return joaat("COLOR_NET_PLAYER5");
 		case 3:
-			return 158864851;
+			return joaat("COLOR_NET_PLAYER6");
 		case 4:
-			return 923463928;
+			return joaat("COLOR_NET_PLAYER7");
 		case 5:
-			return -317694716;
+			return joaat("COLOR_NET_PLAYER8");
 		case 6:
-			return 461388259;
+			return joaat("COLOR_NET_PLAYER9");
 		case 7:
-			return 1811916478;
+			return joaat("COLOR_NET_PLAYER10");
 		default:
 			break;
 	}
@@ -26786,12 +26786,12 @@ int func_859(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		}
 		else
 		{
-			return 636925055;
+			return joaat("COLOR_POSSE_NEUTRAL");
 		}
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
 	iVar2 = iParam0;
 	if (func_454(func_677(0)) && func_684(func_677(0)) == 7)
@@ -26815,7 +26815,7 @@ int func_859(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		if (bVar0 && bVar1)
 		{
 			iVar6 = func_1134(iParam0);
-			if (iVar6 == -1031763995 && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
+			if (iVar6 == joaat("COLOR_NET_PLAYER2") && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
 			{
 				return joaat("COLOR_WHITE");
 			}
@@ -26835,7 +26835,7 @@ int func_859(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	if (func_191((Global_1070356->f_19683.f_1[iVar2 /*8*/])->f_7, 1024))
 	{
-		return -508184943;
+		return joaat("COLOR_WINNING_PLAYER");
 	}
 	iVar7 = func_1136(iParam0, 1);
 	if (!bVar0)
@@ -26848,23 +26848,23 @@ int func_859(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		{
 			if (func_1139(iParam0, bParam1))
 			{
-				return 1891514641;
+				return joaat("COLOR_POSSE_ENEMY");
 			}
 			else
 			{
 				if (iVar7 > 5)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 3)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 1)
 				{
-					return 1201428499;
+					return joaat("COLOR_NOTORIETY_MEDIUM");
 				}
-				return 63157909;
+				return joaat("COLOR_NOTORIETY_LOW");
 			}
 		}
 	}
@@ -26889,9 +26889,9 @@ int func_859(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	else if (func_1138(iParam0, bParam1))
 	{
-		return 1891514641;
+		return joaat("COLOR_POSSE_ENEMY");
 	}
-	return 830499243;
+	return joaat("COLOR_FRIENDLY");
 }
 
 int func_860(var uParam0)
@@ -28855,14 +28855,14 @@ int func_935()
 	}
 	if (func_653(14))
 	{
-		return 830499243;
+		return joaat("COLOR_FRIENDLY");
 	}
-	return 1765299542;
+	return joaat("COLOR_NET_PLAYER1");
 }
 
 int func_936()
 {
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 void func_937(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7)
@@ -32256,7 +32256,7 @@ int func_1056(int iParam0)
 	}
 	else if (_NAMESPACE26::_0x149A2751AB66AC02(iParam0) == _NAMESPACE26::_0x853B0FA4D8732C57(iParam0))
 	{
-		func_383("NG_FULL", func_1299(iParam0, 1, 0), 340002725);
+		func_383("NG_FULL", func_1299(iParam0, 1, 0), joaat("COLOR_PURPLE"));
 		return 0;
 	}
 	if (func_994(iParam0))
@@ -34069,36 +34069,36 @@ int func_1134(int iParam0)
 	switch (PLAYER::GET_PLAYER_TEAM(iParam0))
 	{
 		case 0:
-			return -275684858;
+			return joaat("COLOR_NET_PLAYER3");
 		case 1:
-			return -1561147190;
+			return joaat("COLOR_NET_PLAYER4");
 		case 2:
-			return -736318691;
+			return joaat("COLOR_NET_PLAYER5");
 		case 3:
-			return 158864851;
+			return joaat("COLOR_NET_PLAYER6");
 		case 4:
-			return 923463928;
+			return joaat("COLOR_NET_PLAYER7");
 		case 5:
-			return -317694716;
+			return joaat("COLOR_NET_PLAYER8");
 		case 6:
-			return 461388259;
+			return joaat("COLOR_NET_PLAYER9");
 		case 7:
-			return 1811916478;
+			return joaat("COLOR_NET_PLAYER10");
 		case 8:
-			return 1713937168;
+			return joaat("COLOR_NET_PLAYER11");
 		default:
 			break;
 	}
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 int func_1135(int iParam0)
 {
 	if (_NAMESPACE26::_0x901E0DC25080C8B9(iParam0) != Global_1275573->f_15 && !func_1429())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
-	return -963477619;
+	return joaat("COLOR_POSSE_ALLY");
 }
 
 int func_1136(int iParam0, bool bParam1)
@@ -40617,7 +40617,7 @@ void func_1369(char* sParam0, var uParam1, var uParam2)
 	Var0.f_86 = 255;
 	Var0.f_87 = -2147483647;
 	Var0.f_1 = 1;
-	Var0.f_2 = -963477619;
+	Var0.f_2 = joaat("COLOR_POSSE_ALLY");
 	Var0.f_4 = joaat("player_menu");
 	Var0.f_8 = 1;
 	Var0.f_9 = 1;
@@ -53447,11 +53447,11 @@ int func_1916(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -880922108;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_1");
 				case 1:
-					return 712437748;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_2");
 				case 2:
-					return -132314303;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_3");
 				default:
 					break;
 			}
@@ -53460,11 +53460,11 @@ int func_1916(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1098244389;
+					return joaat("ABILITY_CARD_COMBAT_TIER_1");
 				case 1:
-					return 856704090;
+					return joaat("ABILITY_CARD_COMBAT_TIER_2");
 				case 2:
-					return -1750135398;
+					return joaat("ABILITY_CARD_COMBAT_TIER_3");
 				default:
 					break;
 			}
@@ -53473,11 +53473,11 @@ int func_1916(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -216428280;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_1");
 				case 1:
-					return 283298970;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_2");
 				case 2:
-					return -1044664755;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_3");
 				default:
 					break;
 			}
@@ -53486,11 +53486,11 @@ int func_1916(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -75395410;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_1");
 				case 1:
-					return 1111923763;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_2");
 				case 2:
-					return 1350842542;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_3");
 				default:
 					break;
 			}
@@ -54213,7 +54213,7 @@ int func_1955(bool bParam0)
 		case 3:
 			if (bParam0)
 			{
-				iVar1 = -1236056262;
+				iVar1 = joaat("COLOR_REDLIGHT");
 			}
 			else
 			{
@@ -54225,7 +54225,7 @@ int func_1955(bool bParam0)
 		case 6:
 			if (bParam0)
 			{
-				iVar1 = -437407570;
+				iVar1 = joaat("COLOR_NOTORIETY_HIGH");
 			}
 			else
 			{

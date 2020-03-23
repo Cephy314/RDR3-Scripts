@@ -33015,7 +33015,7 @@ void func_671(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -33023,11 +33023,11 @@ void func_671(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1210(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_658(iParam0)), iVar1), iVar12);
@@ -52990,7 +52990,7 @@ void func_1291(char[4] cParam0)
 			if (!MAP::DOES_BLIP_EXIST(iLocal_41))
 			{
 				iLocal_41 = func_1299(408396114, func_1298(12, 0), 1);
-				func_1800("mar2_drive_out_ranch", 0, 76603059);
+				func_1800("mar2_drive_out_ranch", 0, joaat("COLOR_OBJECTIVE"));
 				func_467(30, 1);
 			}
 			func_1801(cParam0, "MAR2_OBJ01", -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
@@ -56271,7 +56271,7 @@ void func_1374(char[4] cParam0)
 				iLocal_41 = func_1299(408396114, func_1298(12, 5), 1);
 				MAP::_0x662D364ABF16DE2F(iLocal_41, -1878373110);
 				MAP::SET_GPS_FLAGS(512, 0f);
-				func_1800("mar2_ride_after_ambush", 0, 76603059);
+				func_1800("mar2_ride_after_ambush", 0, joaat("COLOR_OBJECTIVE"));
 			}
 			func_1798(cParam0, "MAR2_OBJ08", 0, 7500, 0, -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
 			func_225(&uLocal_218);
@@ -56765,7 +56765,7 @@ void func_1384(char[4] cParam0)
 		iLocal_41 = func_1299(408396114, func_1298(12, 5), 1);
 		MAP::_0x662D364ABF16DE2F(iLocal_41, -1878373110);
 		MAP::SET_GPS_FLAGS(512, 0f);
-		func_1800("mar2_drive_in_ranch", 0, 76603059);
+		func_1800("mar2_drive_in_ranch", 0, joaat("COLOR_OBJECTIVE"));
 		func_1798(cParam0, "MAR2_OBJ09", 0, 7500, 1, -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
 	}
 	switch (func_1310(cParam0))
@@ -56776,7 +56776,7 @@ void func_1384(char[4] cParam0)
 				iLocal_41 = func_1299(408396114, func_1298(12, 5), 1);
 				MAP::_0x662D364ABF16DE2F(iLocal_41, -1878373110);
 				MAP::SET_GPS_FLAGS(512, 0f);
-				func_1800("mar2_drive_in_ranch", 0, 76603059);
+				func_1800("mar2_drive_in_ranch", 0, joaat("COLOR_OBJECTIVE"));
 			}
 			func_1801(cParam0, "MAR2_OBJ09", -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
 			func_135(cParam0, 1);
@@ -62781,10 +62781,10 @@ int func_1573(char[4] cParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2106(cParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2107(cParam0, uParam1, iVar0);
 				break;
@@ -93233,7 +93233,7 @@ int func_2732(int iParam0)
 		{
 			switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 			{
-				case 1387172233:
+				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					if (SCRIPTS::GET_EVENT_DATA(0, iVar0, &vVar3, 10))
 					{
 						iVar2 = vVar3.x;

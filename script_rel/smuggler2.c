@@ -32094,7 +32094,7 @@ void func_629(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -32102,11 +32102,11 @@ void func_629(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1092(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_616(bParam0)), iVar1), iVar12);
@@ -52915,7 +52915,7 @@ void func_1237(var uParam0)
 			else if (iLocal_2161 == 55)
 			{
 				MAP::_0x662D364ABF16DE2F((Local_424[3 /*8*/])->f_1, -401963276);
-				func_1719(uParam0, &(Local_424[2 /*8*/]), -2045797884, 422991367, 1, 1);
+				func_1719(uParam0, &(Local_424[2 /*8*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 			}
 		}
 		else if (fVar0 >= 45f)
@@ -52927,7 +52927,7 @@ void func_1237(var uParam0)
 	{
 		func_898(func_1190(56), 7500, 0, 1, 0, 0, -1, -1, 0);
 		MAP::_0x662D364ABF16DE2F((Local_424[3 /*8*/])->f_1, -401963276);
-		func_1719(uParam0, &(Local_424[2 /*8*/]), -2045797884, 422991367, 1, 1);
+		func_1719(uParam0, &(Local_424[2 /*8*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 		func_849(43);
 	}
 }
@@ -53254,7 +53254,7 @@ void func_1238(var uParam0)
 									{
 										func_1184(50);
 									}
-									func_1719(uParam0, &(Local_424[2 /*8*/]), -2045797884, 422991367, 1, 1);
+									func_1719(uParam0, &(Local_424[2 /*8*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 									MAP::_0x662D364ABF16DE2F((Local_424[3 /*8*/])->f_1, -401963276);
 								}
 								func_1690(iVar0, 34);
@@ -53436,7 +53436,7 @@ void func_1238(var uParam0)
 																	func_1182(uParam0, 4);
 																	iLocal_2161 = 55;
 																	func_1683(uParam0, func_1190(55), -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
-																	func_1719(uParam0, &(Local_424[2 /*8*/]), -2045797884, 422991367, 1, 1);
+																	func_1719(uParam0, &(Local_424[2 /*8*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 																	MAP::_0x662D364ABF16DE2F((Local_424[3 /*8*/])->f_1, -401963276);
 																	func_1257(0, 1);
 																}
@@ -54945,7 +54945,7 @@ void func_1261(var uParam0)
 							func_47(0, 0);
 							func_1184(84);
 							func_849(61);
-							func_1719(uParam0, &(Local_424[2 /*8*/]), -2045797884, 422991367, 1, 1);
+							func_1719(uParam0, &(Local_424[2 /*8*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 							func_27(vLocal_1569[19 /*3*/], 1);
 						}
 						else
@@ -62082,7 +62082,7 @@ int func_1432(var uParam0)
 		if (func_1937(uParam0, Global_35, "ARTHUR", 0, 1, 1))
 		{
 			PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 2f, 2000, -100f, false, false);
-			func_1719(uParam0, &(Local_424[2 /*8*/]), -2045797884, 422991367, 1, 1);
+			func_1719(uParam0, &(Local_424[2 /*8*/]), joaat("COLOR_NEUTRAL"), 422991367, 1, 1);
 			MAP::_0x662D364ABF16DE2F((Local_424[3 /*8*/])->f_1, -401963276);
 			func_849(44);
 		}
@@ -62903,10 +62903,10 @@ int func_1462(var uParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_1968(uParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_1969(uParam0, uParam1, iVar0);
 				break;

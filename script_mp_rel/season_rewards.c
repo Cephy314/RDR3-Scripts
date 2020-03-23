@@ -4829,7 +4829,7 @@ int func_221(int iParam0, int iParam1, int iParam2, bool bParam3)
 	{
 		StringCopy(&(iParam0->f_27), MISC::_CREATE_VAR_STRING(2, "SR_PRICE_CLUB_REWARD"), 128);
 		iParam0->f_43 = 1;
-		iParam0->f_44 = -759435717;
+		iParam0->f_44 = joaat("COLOR_VIP");
 	}
 	if (!func_280(iParam0, &(Var0.f_2), &cVar112))
 	{
@@ -5018,7 +5018,7 @@ int func_226(int iParam0, int iParam1, int iParam2, bool bParam3)
 	{
 		StringCopy(&(iParam0->f_27), MISC::_CREATE_VAR_STRING(2, "SR_PRICE_CLUB_REWARD"), 128);
 		iParam0->f_43 = 1;
-		iParam0->f_44 = -759435717;
+		iParam0->f_44 = joaat("COLOR_VIP");
 	}
 	if (!func_280(iParam0, &(Var0.f_732.f_2), &cVar844))
 	{

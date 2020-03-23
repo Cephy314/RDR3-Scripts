@@ -5700,7 +5700,7 @@ void func_276(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 
 	Local_243.f_11 = iParam2;
 	Local_243.f_12 = iParam3;
-	iVar0 = 551037070;
+	iVar0 = joaat("COLOR_BLUE");
 	iVar1 = joaat("COLOR_PURE_WHITE");
 	iVar2 = joaat("COLOR_RED");
 	iVar3 = joaat("COLOR_PURE_WHITE");
@@ -5717,7 +5717,7 @@ void func_276(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	}
 	else if (func_561())
 	{
-		iVar2 = 551037070;
+		iVar2 = joaat("COLOR_BLUE");
 		iVar3 = joaat("COLOR_BLACK");
 		iVar0 = joaat("COLOR_WHITE");
 		iVar1 = joaat("COLOR_BLACK");
@@ -5728,7 +5728,7 @@ void func_276(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	}
 	else if (func_562())
 	{
-		iVar2 = 551037070;
+		iVar2 = joaat("COLOR_BLUE");
 	}
 	if (Local_243.f_1 == 7)
 	{
@@ -5749,12 +5749,12 @@ void func_276(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				if ((((func_313(&(Local_243.f_13), 1) > 0f && (Local_243.f_13.f_210[1 /*23*/])->f_14 != 255) && NETWORK::NETWORK_IS_PLAYER_ACTIVE((Local_243.f_13.f_210[1 /*23*/])->f_14)) && _NAMESPACE26::_0x81FB74C83C2ED69F((Local_243.f_13.f_210[1 /*23*/])->f_14)) && !func_563((Local_243.f_13.f_210[1 /*23*/])->f_14, 1))
 				{
-					iVar2 = 551037070;
+					iVar2 = joaat("COLOR_BLUE");
 				}
 			}
 			else if (_NAMESPACE26::_0x81FB74C83C2ED69F((Local_243.f_13.f_210[0 /*23*/])->f_14) && !func_563((Local_243.f_13.f_210[0 /*23*/])->f_14, 1))
 			{
-				iVar2 = 551037070;
+				iVar2 = joaat("COLOR_BLUE");
 			}
 		}
 	}
@@ -5783,7 +5783,7 @@ void func_276(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			func_569(&(Local_243.f_1005), &(Local_243.f_1020), &(Local_243.f_13), &uVar4, iParam0, 0, iParam4, func_564(), 404851220, 0, iParam1, iVar0, iVar2, iVar1, iVar3, 1);
 			break;
 		case 227643027:
-			func_570(&(Local_243.f_1005), &(Local_243.f_1020), &(Local_243.f_13), iParam0, &uVar4, 0, iParam4, func_564(), 404851220, 0, 0, 1, 0, iParam1, 1, 551037070, joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"));
+			func_570(&(Local_243.f_1005), &(Local_243.f_1020), &(Local_243.f_13), iParam0, &uVar4, 0, iParam4, func_564(), 404851220, 0, 0, 1, 0, iParam1, 1, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"));
 			break;
 		case 1086838518:
 			func_565(&(Local_243.f_1005), &(Local_243.f_13), &uVar4, iParam1, 1);
@@ -10318,12 +10318,12 @@ int func_533(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		}
 		else
 		{
-			return 636925055;
+			return joaat("COLOR_POSSE_NEUTRAL");
 		}
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
 	iVar2 = iParam0;
 	if (func_361(func_373(0)) && func_646(func_373(0)) == 7)
@@ -10347,7 +10347,7 @@ int func_533(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		if (bVar0 && bVar1)
 		{
 			iVar6 = func_817(iParam0);
-			if (iVar6 == -1031763995 && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
+			if (iVar6 == joaat("COLOR_NET_PLAYER2") && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
 			{
 				return joaat("COLOR_WHITE");
 			}
@@ -10367,7 +10367,7 @@ int func_533(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	if (func_78((Global_1070356->f_19683.f_1[iVar2 /*8*/])->f_7, 1024))
 	{
-		return -508184943;
+		return joaat("COLOR_WINNING_PLAYER");
 	}
 	iVar7 = func_819(iParam0, 1);
 	if (!bVar0)
@@ -10380,23 +10380,23 @@ int func_533(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		{
 			if (func_563(iParam0, bParam1))
 			{
-				return 1891514641;
+				return joaat("COLOR_POSSE_ENEMY");
 			}
 			else
 			{
 				if (iVar7 > 5)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 3)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 1)
 				{
-					return 1201428499;
+					return joaat("COLOR_NOTORIETY_MEDIUM");
 				}
-				return 63157909;
+				return joaat("COLOR_NOTORIETY_LOW");
 			}
 		}
 	}
@@ -10421,9 +10421,9 @@ int func_533(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	else if (func_821(iParam0, bParam1))
 	{
-		return 1891514641;
+		return joaat("COLOR_POSSE_ENEMY");
 	}
-	return 830499243;
+	return joaat("COLOR_FRIENDLY");
 }
 
 char* func_534(char* sParam0, int iParam1)
@@ -10942,9 +10942,9 @@ void func_565(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)
 	bool bVar0;
 
 	iParam3 |= 8;
-	if (func_765(uParam0, &bVar0) && func_848(uParam0, uParam1, iParam3, 551037070, joaat("COLOR_RED"), joaat("COLOR_WHITE"), joaat("COLOR_WHITE"), iParam4))
+	if (func_765(uParam0, &bVar0) && func_848(uParam0, uParam1, iParam3, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_WHITE"), joaat("COLOR_WHITE"), iParam4))
 	{
-		func_849(uParam1, uParam2, iParam3 | 8, 551037070, joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam4);
+		func_849(uParam1, uParam2, iParam3 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam4);
 	}
 	if (bVar0)
 	{
@@ -10957,7 +10957,7 @@ void func_566(var uParam0, var uParam1, var uParam2, int iParam3, bool bParam4, 
 {
 	bool bVar0;
 
-	if (((func_765(uParam0, &bVar0) && func_766(uParam0)) && func_848(uParam0, uParam1, iParam7 | 8, 551037070, joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam12)) && func_767(uParam0, -1700692449, &bVar0))
+	if (((func_765(uParam0, &bVar0) && func_766(uParam0)) && func_848(uParam0, uParam1, iParam7 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam12)) && func_767(uParam0, -1700692449, &bVar0))
 	{
 		func_768(uParam0, iParam3, bParam4, iParam5, sParam6);
 		func_849(uParam1, uParam2, iParam7 | 8, iParam8, iParam9, iParam10, iParam11, iParam12);
@@ -11023,7 +11023,7 @@ void func_570(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, b
 {
 	bool bVar0;
 
-	if ((((func_765(uParam0, &bVar0) && func_766(uParam0)) && func_850(uParam0, uParam1, iParam9)) && func_848(uParam0, uParam2, iParam13 | 8, 551037070, joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam14)) && func_767(uParam0, 774310187, &bVar0))
+	if ((((func_765(uParam0, &bVar0) && func_766(uParam0)) && func_850(uParam0, uParam1, iParam9)) && func_848(uParam0, uParam2, iParam13 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam14)) && func_767(uParam0, 774310187, &bVar0))
 	{
 		func_768(uParam0, iParam3, bParam5, iParam6, sParam7);
 		func_851(uParam1, iParam8, iParam9, bParam10, bParam11, bParam12);
@@ -14285,7 +14285,7 @@ int func_724(vector3 vParam0, float fParam3)
 	{
 		return 0;
 	}
-	func_1028(-276653911, &fVar0, &fVar1, &fVar2);
+	func_1028(joaat("COLOR_FREEMODE_EVENT"), &fVar0, &fVar1, &fVar2);
 	GRAPHICS::SET_PARTICLE_FX_NON_LOOPED_COLOUR(fVar0, fVar1, fVar2);
 	if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD("scr_fme_smoke_puff_tint", vParam0, 0f, 0f, 0f, fParam3, false, false, false))
 	{
@@ -14680,8 +14680,8 @@ int func_736(int iParam0, int iParam1, var uParam2, struct<2> Param3)
 		Var0.f_31.f_2 = MISC::_CREATE_VAR_STRING(10, "FME_TOAST_OPT_IN_TITLE", &Var53);
 		Var0.f_16 = MISC::_CREATE_VAR_STRING(2, &Var53);
 		Var0.f_17 = MISC::_CREATE_VAR_STRING(2, "FME_PI_MENU_BODY");
-		Var0.f_2 = -276653911;
-		Var0.f_19 = -276653911;
+		Var0.f_2 = joaat("COLOR_FREEMODE_EVENT");
+		Var0.f_19 = joaat("COLOR_FREEMODE_EVENT");
 	}
 	else
 	{
@@ -16015,36 +16015,36 @@ int func_817(int iParam0)
 	switch (PLAYER::GET_PLAYER_TEAM(iParam0))
 	{
 		case 0:
-			return -275684858;
+			return joaat("COLOR_NET_PLAYER3");
 		case 1:
-			return -1561147190;
+			return joaat("COLOR_NET_PLAYER4");
 		case 2:
-			return -736318691;
+			return joaat("COLOR_NET_PLAYER5");
 		case 3:
-			return 158864851;
+			return joaat("COLOR_NET_PLAYER6");
 		case 4:
-			return 923463928;
+			return joaat("COLOR_NET_PLAYER7");
 		case 5:
-			return -317694716;
+			return joaat("COLOR_NET_PLAYER8");
 		case 6:
-			return 461388259;
+			return joaat("COLOR_NET_PLAYER9");
 		case 7:
-			return 1811916478;
+			return joaat("COLOR_NET_PLAYER10");
 		case 8:
-			return 1713937168;
+			return joaat("COLOR_NET_PLAYER11");
 		default:
 			break;
 	}
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 int func_818(int iParam0)
 {
 	if (_NAMESPACE26::_0x901E0DC25080C8B9(iParam0) != Global_1275573->f_15 && !func_77())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
-	return -963477619;
+	return joaat("COLOR_POSSE_ALLY");
 }
 
 int func_819(int iParam0, bool bParam1)
@@ -29396,7 +29396,7 @@ void func_1314(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4
 				if (bParam4 && ((*uParam1)[iVar0 /*23*/])->f_13)
 				{
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam0->f_12[iVar0]), "Blip", "BLIP_MVP");
-					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", -1777836132);
+					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", joaat("COLOR_YELLOW"));
 				}
 				else
 				{
@@ -29758,17 +29758,17 @@ void func_1324(var uParam0)
 
 int func_1325()
 {
-	return 1937193856;
+	return joaat("COLOR_MP_OBJECTIVE_ENEMY");
 }
 
 int func_1326()
 {
-	return -1640778959;
+	return joaat("COLOR_MP_OBJECTIVE_FRIENDLY");
 }
 
 int func_1327()
 {
-	return -1428663542;
+	return joaat("COLOR_MP_OBJECTIVE_NEUTRAL");
 }
 
 void func_1328(var uParam0, int iParam1)
@@ -32165,7 +32165,7 @@ void func_1435(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	iVar16 = 0;
 	if (bVar0)
 	{
-		iVar13 = 619977481;
+		iVar13 = joaat("COLOR_GREYMID");
 		sVar14 = "Transaction_Negative";
 		iVar16 = 1;
 	}
@@ -32182,16 +32182,16 @@ void func_1435(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar13 = -856358433;
+			iVar13 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar13 = -1905433004;
+			iVar13 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	if (func_1361(iParam0, 1816585950))
 	{
-		iVar13 = 76603059;
+		iVar13 = joaat("COLOR_OBJECTIVE");
 	}
 	iVar18 = func_1426(iParam0);
 	if ((func_1638(iVar12) && func_1361(iParam0, -306684263)) && iVar18 != 0)
@@ -32907,7 +32907,7 @@ int func_1462(int iParam0)
 		case 22:
 			return -1019997170;
 		case 24:
-			return -5208416;
+			return joaat("COLOR_ENEMY");
 		case 18:
 			return joaat("COLOR_PURE_WHITE");
 		case 25:
@@ -33313,10 +33313,10 @@ int func_1475(int iParam0, var uParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -33749,7 +33749,7 @@ int func_1485(int iParam0, var uParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*iParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*iParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -34142,10 +34142,10 @@ int func_1499(int iParam0, var uParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			if (func_1691(uParam1))
 			{
 				EVENT::_0x1A5C5D350068A673(iParam0, 0);
@@ -34171,7 +34171,7 @@ int func_1499(int iParam0, var uParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -39184,21 +39184,21 @@ int func_1699(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 			switch (iParam0)
 			{
 				case 0:
-					return -275684858;
+					return joaat("COLOR_NET_PLAYER3");
 				case 1:
-					return -1561147190;
+					return joaat("COLOR_NET_PLAYER4");
 				case 2:
-					return -736318691;
+					return joaat("COLOR_NET_PLAYER5");
 				case 3:
-					return 158864851;
+					return joaat("COLOR_NET_PLAYER6");
 				case 4:
-					return 923463928;
+					return joaat("COLOR_NET_PLAYER7");
 				case 5:
-					return -317694716;
+					return joaat("COLOR_NET_PLAYER8");
 				case 6:
-					return 461388259;
+					return joaat("COLOR_NET_PLAYER9");
 				case 7:
-					return 1811916478;
+					return joaat("COLOR_NET_PLAYER10");
 				default:
 					break;
 			}
@@ -39206,7 +39206,7 @@ int func_1699(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 		}
 		if (iParam1 == iParam0)
 		{
-			return 1765299542;
+			return joaat("COLOR_NET_PLAYER1");
 		}
 	}
 	else if (bParam4)
@@ -39217,10 +39217,10 @@ int func_1699(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 		}
 		else
 		{
-			return 1765299542;
+			return joaat("COLOR_NET_PLAYER1");
 		}
 	}
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 var func_1700()
@@ -39448,7 +39448,7 @@ void func_1707(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4
 				if (bParam4 && ((*uParam1)[iVar0 /*23*/])->f_13)
 				{
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam0->f_12[iVar0]), "Blip", "BLIP_MVP");
-					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", -1777836132);
+					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam0->f_12[iVar0]), "BlipColor", joaat("COLOR_YELLOW"));
 				}
 				else
 				{
@@ -46394,11 +46394,11 @@ int func_1968(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -880922108;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_1");
 				case 1:
-					return 712437748;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_2");
 				case 2:
-					return -132314303;
+					return joaat("ABILITY_CARD_DEAD_EYE_TIER_3");
 				default:
 					break;
 			}
@@ -46407,11 +46407,11 @@ int func_1968(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1098244389;
+					return joaat("ABILITY_CARD_COMBAT_TIER_1");
 				case 1:
-					return 856704090;
+					return joaat("ABILITY_CARD_COMBAT_TIER_2");
 				case 2:
-					return -1750135398;
+					return joaat("ABILITY_CARD_COMBAT_TIER_3");
 				default:
 					break;
 			}
@@ -46420,11 +46420,11 @@ int func_1968(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -216428280;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_1");
 				case 1:
-					return 283298970;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_2");
 				case 2:
-					return -1044664755;
+					return joaat("ABILITY_CARD_DEFENSE_TIER_3");
 				default:
 					break;
 			}
@@ -46433,11 +46433,11 @@ int func_1968(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -75395410;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_1");
 				case 1:
-					return 1111923763;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_2");
 				case 2:
-					return 1350842542;
+					return joaat("ABILITY_CARD_RECOVERY_TIER_3");
 				default:
 					break;
 			}

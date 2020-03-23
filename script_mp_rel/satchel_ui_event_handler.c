@@ -4557,7 +4557,7 @@ void func_152(struct<12> Param0, var uParam12, var uParam13)
 		{
 			if (func_69(Param0.f_4, 1816585950))
 			{
-				iVar5 = -1777836132;
+				iVar5 = joaat("COLOR_YELLOW");
 			}
 		}
 		DATABINDING::_DATABINDING_WRITE_DATA_SCRIPT_VARIABLES(0, iVar2, sVar0, Param0.f_11, Param0.f_10, sVar3, iVar5);
@@ -5192,7 +5192,7 @@ void func_176(struct<12> Param0, var uParam12, var uParam13, bool bParam14)
 		{
 			if (func_69(Param0.f_4, 1816585950))
 			{
-				iVar7 = -1777836132;
+				iVar7 = joaat("COLOR_YELLOW");
 			}
 		}
 		func_376(-1553587059, sVar1, &vVar3, bVar0, Param0.f_11, bVar2, sVar6, iVar7);
@@ -9673,7 +9673,7 @@ void func_323(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar16 = 0;
 	if (bVar0)
 	{
-		iVar13 = 619977481;
+		iVar13 = joaat("COLOR_GREYMID");
 		sVar14 = "Transaction_Negative";
 		iVar16 = 1;
 	}
@@ -9690,16 +9690,16 @@ void func_323(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar13 = -856358433;
+			iVar13 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar13 = -1905433004;
+			iVar13 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	if (func_69(iParam0, 1816585950))
 	{
-		iVar13 = 76603059;
+		iVar13 = joaat("COLOR_OBJECTIVE");
 	}
 	iVar18 = func_190(iParam0);
 	if ((func_533(iVar12) && func_69(iParam0, -306684263)) && iVar18 != 0)

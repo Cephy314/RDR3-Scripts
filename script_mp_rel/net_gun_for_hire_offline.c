@@ -30677,7 +30677,7 @@ int func_1144(int iParam0, int iParam1, int iParam2, int iParam3)
 			case joaat("EVENT_SHOT_FIRED_WHIZZED_BY"):
 			case joaat("EVENT_SHOT_FIRED"):
 			case joaat("EVENT_SHOCKING_SEEN_MELEE_ACTION"):
-			case -141209784:
+			case joaat("EVENT_EXPLOSION_HEARD"):
 			case joaat("EVENT_SHOCKING_FIRE"):
 			case joaat("EVENT_SHOCKING_SEEN_PED_KILLED"):
 			case joaat("EVENT_EXPLOSION"):
@@ -87286,7 +87286,7 @@ int func_1411(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, i
 					return 1;
 				}
 				break;
-			case -141209784:
+			case joaat("EVENT_EXPLOSION_HEARD"):
 				if (func_1271(uParam2, 5, 1))
 				{
 					func_1269(uParam2, 3, 6000, 8000);

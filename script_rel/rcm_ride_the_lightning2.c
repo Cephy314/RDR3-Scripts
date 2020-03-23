@@ -29345,7 +29345,7 @@ void func_1019(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPar
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -29353,11 +29353,11 @@ void func_1019(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPar
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1394(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_1006(bParam0)), iVar1), iVar12);

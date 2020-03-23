@@ -11955,7 +11955,7 @@ void func_244(int iParam0)
 			return;
 		}
 	}
-	sVar45 = func_265(NETWORK::_0xE59F4924BD3A718D(iVar22), 636925055);
+	sVar45 = func_265(NETWORK::_0xE59F4924BD3A718D(iVar22), joaat("COLOR_POSSE_NEUTRAL"));
 	Var46 = 1;
 	Var46.f_1 = 1;
 	Var46.f_2 = joaat("COLOR_WHITE");
@@ -14648,7 +14648,7 @@ void func_357(char* sParam0, var uParam1, char* sParam2, bool bParam3)
 	char* sVar17;
 
 	iVar0 = NETWORK::_0x27B1AE4D8C652F08(sParam0->f_11);
-	sVar1 = func_265(NETWORK::_0xE59F4924BD3A718D(iVar0), 636925055);
+	sVar1 = func_265(NETWORK::_0xE59F4924BD3A718D(iVar0), joaat("COLOR_POSSE_NEUTRAL"));
 	iVar2 = MISC::GET_HASH_KEY(sParam2);
 	uParam1->f_24 = 1;
 	uParam1->f_25 = sParam0->f_11;

@@ -4538,7 +4538,7 @@ void func_166()
 										if (iVar1 > 0)
 										{
 											fVar2 = (IntToFloat(func_389(iVar1)) + (IntToFloat(func_390(iVar1, 1)) * (1f / 100f)));
-											func_387(MISC::_CREATE_VAR_STRING(6, "SHOP_GOLD_PRICE_READ", fVar2), "ITEMTYPE_TEXTURES", joaat("itemtype_gold"), 0, 1684603218, 0, 0, 0, 1);
+											func_387(MISC::_CREATE_VAR_STRING(6, "SHOP_GOLD_PRICE_READ", fVar2), "ITEMTYPE_TEXTURES", joaat("itemtype_gold"), 0, joaat("COLOR_CASH_GOLD"), 0, 0, 0, 1);
 										}
 										iVar1 = (func_378(0) - func_391());
 										if (iVar1 > 0)

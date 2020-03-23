@@ -395,7 +395,7 @@ int func_17(var uParam0)
 	{
 		return 1;
 	}
-	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, 1428655956))
+	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, joaat("EVENT_ANIMAL_DETECTED_THREAT")))
 	{
 		return 1;
 	}

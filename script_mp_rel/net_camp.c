@@ -12793,12 +12793,12 @@ int func_347(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		}
 		else
 		{
-			return 636925055;
+			return joaat("COLOR_POSSE_NEUTRAL");
 		}
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
 	iVar2 = iParam0;
 	if (func_590(func_251(0)) && func_591(func_251(0)) == 7)
@@ -12822,7 +12822,7 @@ int func_347(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		if (bVar0 && bVar1)
 		{
 			iVar6 = func_592(iParam0);
-			if (iVar6 == -1031763995 && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
+			if (iVar6 == joaat("COLOR_NET_PLAYER2") && NETWORK::_NETWORK_IS_PLAYER_IN_SPECTATOR_MODE(iParam0))
 			{
 				return joaat("COLOR_WHITE");
 			}
@@ -12842,7 +12842,7 @@ int func_347(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	if (func_20((Global_1070356->f_19683.f_1[iVar2 /*8*/])->f_7, 1024))
 	{
-		return -508184943;
+		return joaat("COLOR_WINNING_PLAYER");
 	}
 	iVar7 = func_594(iParam0, 1);
 	if (!bVar0)
@@ -12855,23 +12855,23 @@ int func_347(int iParam0, bool bParam1, int iParam2, bool bParam3)
 		{
 			if (func_597(iParam0, bParam1))
 			{
-				return 1891514641;
+				return joaat("COLOR_POSSE_ENEMY");
 			}
 			else
 			{
 				if (iVar7 > 5)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 3)
 				{
-					return -437407570;
+					return joaat("COLOR_NOTORIETY_HIGH");
 				}
 				else if (iVar7 > 1)
 				{
-					return 1201428499;
+					return joaat("COLOR_NOTORIETY_MEDIUM");
 				}
-				return 63157909;
+				return joaat("COLOR_NOTORIETY_LOW");
 			}
 		}
 	}
@@ -12896,9 +12896,9 @@ int func_347(int iParam0, bool bParam1, int iParam2, bool bParam3)
 	}
 	else if (func_596(iParam0, bParam1))
 	{
-		return 1891514641;
+		return joaat("COLOR_POSSE_ENEMY");
 	}
-	return 830499243;
+	return joaat("COLOR_FRIENDLY");
 }
 
 char* func_348(char* sParam0, int iParam1)
@@ -19100,36 +19100,36 @@ int func_592(int iParam0)
 	switch (PLAYER::GET_PLAYER_TEAM(iParam0))
 	{
 		case 0:
-			return -275684858;
+			return joaat("COLOR_NET_PLAYER3");
 		case 1:
-			return -1561147190;
+			return joaat("COLOR_NET_PLAYER4");
 		case 2:
-			return -736318691;
+			return joaat("COLOR_NET_PLAYER5");
 		case 3:
-			return 158864851;
+			return joaat("COLOR_NET_PLAYER6");
 		case 4:
-			return 923463928;
+			return joaat("COLOR_NET_PLAYER7");
 		case 5:
-			return -317694716;
+			return joaat("COLOR_NET_PLAYER8");
 		case 6:
-			return 461388259;
+			return joaat("COLOR_NET_PLAYER9");
 		case 7:
-			return 1811916478;
+			return joaat("COLOR_NET_PLAYER10");
 		case 8:
-			return 1713937168;
+			return joaat("COLOR_NET_PLAYER11");
 		default:
 			break;
 	}
-	return -1031763995;
+	return joaat("COLOR_NET_PLAYER2");
 }
 
 int func_593(int iParam0)
 {
 	if (_NAMESPACE26::_0x901E0DC25080C8B9(iParam0) != Global_1275573->f_15 && !func_47())
 	{
-		return 636925055;
+		return joaat("COLOR_POSSE_NEUTRAL");
 	}
-	return -963477619;
+	return joaat("COLOR_POSSE_ALLY");
 }
 
 int func_594(int iParam0, bool bParam1)
@@ -39358,10 +39358,10 @@ int func_1205(int iParam0, int iParam1)
 	}
 	switch (iVar0)
 	{
-		case -196899787:
-		case 178452260:
+		case joaat("EVENT_ACQUAINTANCE_PED_DEAD"):
+		case joaat("EVENT_PED_SEEN_DEAD_PED"):
 		case joaat("EVENT_SHOCKING_DEAD_BODY"):
-		case 1589923363:
+		case joaat("EVENT_DEAD_PED_FOUND"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar0, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar1))
 			{
@@ -39794,7 +39794,7 @@ int func_1215(int iParam0, int iParam1)
 	switch (iVar0)
 	{
 		case joaat("EVENT_SHOCKING_PROPERTY_DAMAGE"):
-		case 2044016570:
+		case joaat("EVENT_SHOCKING_WINDOW_SMASHED"):
 			iVar1 = EVENT::_0x822A001BCEA5BD81(*iParam0, iVar0, 0, 0);
 			iVar2 = EVENT::_0x38497F139981C5C9(*iParam0, iVar0, 0, 0);
 			vVar5 = { ENTITY::GET_ENTITY_COORDS(iVar1, false, false) };
@@ -40182,10 +40182,10 @@ int func_1228(int iParam0, int iParam1)
 	}
 	switch (iVar1)
 	{
-		case -2027383723:
-		case -870494873:
+		case joaat("EVENT_SHOCKING_SEEN_PED_ROBBED"):
+		case joaat("EVENT_SHOCKING_SEEN_PED_INTIMIDATED"):
 		case joaat("EVENT_SHOCKING_SEEN_CAR_STOLEN"):
-		case 1201762715:
+		case joaat("EVENT_SHOCKING_MOUNT_STOLEN"):
 			if (func_1767(iParam1))
 			{
 				EVENT::_0x1A5C5D350068A673(iParam0, 0);
@@ -40211,7 +40211,7 @@ int func_1228(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case -1601932249:
+		case joaat("EVENT_SHOCKING_ENTITY_HOGTIED"):
 			iVar2 = EVENT::_0x822A001BCEA5BD81(iParam0, iVar1, 0, 0);
 			iVar3 = EVENT::_0x38497F139981C5C9(iParam0, iVar1, 0, 0);
 			if (!ENTITY::IS_ENTITY_A_PED(iVar2) || !ENTITY::IS_ENTITY_A_PED(iVar3))
@@ -42820,7 +42820,7 @@ void func_1312(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	iVar16 = 0;
 	if (bVar0)
 	{
-		iVar13 = 619977481;
+		iVar13 = joaat("COLOR_GREYMID");
 		sVar14 = "Transaction_Negative";
 		iVar16 = 1;
 	}
@@ -42837,16 +42837,16 @@ void func_1312(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar13 = -856358433;
+			iVar13 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar13 = -1905433004;
+			iVar13 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	if (func_443(iParam0, 1816585950))
 	{
-		iVar13 = 76603059;
+		iVar13 = joaat("COLOR_OBJECTIVE");
 	}
 	iVar18 = func_1861(iParam0);
 	if ((func_1862(iVar12) && func_443(iParam0, -306684263)) && iVar18 != 0)
@@ -45333,7 +45333,7 @@ void func_1359(int iParam0, int iParam1)
 			break;
 		case 1:
 			sVar4 = "Transaction_Negative";
-			iVar6 = 619977481;
+			iVar6 = joaat("COLOR_GREYMID");
 			iVar7 = func_672(iParam0);
 			if ((iVar7 > 0 && iVar7 < 11) && func_1185(4, iVar7))
 			{
@@ -76887,7 +76887,7 @@ int func_2351(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 	DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam4, func_1569(), iParam2);
 	DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam4, func_1533(), -841939068);
 	func_2304(iParam4, *uParam1);
-	DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam4, "textColor", 2082211070);
+	DATABINDING::_DATABINDING_ADD_DATA_HASH(*iParam4, "textColor", joaat("COLOR_MENU_TEXT"));
 	bVar19 = false;
 	if (!func_2181(uParam1))
 	{
@@ -76907,7 +76907,7 @@ int func_2351(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 				{
 					bVar19 = true;
 				}
-				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*iParam4, "textColor", 1684603218);
+				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(*iParam4, "textColor", joaat("COLOR_CASH_GOLD"));
 			}
 		}
 		else if (func_2355(Global_1051388->f_3214, iParam2) != 0)
@@ -105099,7 +105099,7 @@ void func_3295(bool bParam0, int iParam1)
 	iVar6 = 0;
 	if (!bParam0)
 	{
-		iVar4 = 619977481;
+		iVar4 = joaat("COLOR_GREYMID");
 		sVar5 = "Transaction_Negative";
 		iVar6 = 1;
 	}

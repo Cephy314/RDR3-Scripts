@@ -18377,7 +18377,7 @@ int func_388(var uParam0, int iParam1)
 			uParam0->f_891[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(&(uParam0->f_891[248]), "beard_color");
 			break;
 		case 254:
-			uParam0->f_891[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_HASH(&(uParam0->f_891[253]), "SelectedOption", -1364375908);
+			uParam0->f_891[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_HASH(&(uParam0->f_891[253]), "SelectedOption", joaat("COLOR_BLUELIGHT"));
 			break;
 		case 255:
 			uParam0->f_891[iParam1] = DATABINDING::_DATABINDING_ADD_DATA_BOOL(&(uParam0->f_891[253]), "enabled", true);

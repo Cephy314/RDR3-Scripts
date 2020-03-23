@@ -14589,7 +14589,7 @@ void func_321(int iParam0)
 		NETWORK::_0x981146E5C9CE9250(iVar22);
 		func_398(0);
 	}
-	sVar23 = func_337(NETWORK::_0xE59F4924BD3A718D(iVar22), 636925055);
+	sVar23 = func_337(NETWORK::_0xE59F4924BD3A718D(iVar22), joaat("COLOR_POSSE_NEUTRAL"));
 	Var24 = 1;
 	Var24.f_1 = 1;
 	Var24.f_2 = joaat("COLOR_WHITE");

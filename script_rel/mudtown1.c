@@ -32672,7 +32672,7 @@ void func_672(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -32680,11 +32680,11 @@ void func_672(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1167(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_659(iParam0)), iVar1), iVar12);
@@ -53465,8 +53465,8 @@ void func_1307(char[4] cParam0)
 			}
 			break;
 		case 2:
-			MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE("mudtown1_HorseShoeGPSRoute", 0, 5, 76603059, false, true);
-			func_1771("mudtown1_HorseShoeGPSRoute", 0, 76603059);
+			MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE("mudtown1_HorseShoeGPSRoute", 0, 5, joaat("COLOR_OBJECTIVE"), false, true);
+			func_1771("mudtown1_HorseShoeGPSRoute", 0, joaat("COLOR_OBJECTIVE"));
 			AUDIO::SET_GPS_ACTIVE(true);
 			func_135(cParam0, 3);
 			break;
@@ -53600,8 +53600,8 @@ void func_1309()
 	}
 	if (bLocal_612 && func_1269(&(iLocal_423[4]), vVar0, 20f, 1, 0))
 	{
-		MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE("mudtown1_HorseShoeGPSRoute", 0, 5, 76603059, false, true);
-		func_1771("mudtown1_HorseShoeGPSRoute", 0, 76603059);
+		MAP::_START_GPS_CUSTOM_ROUTE_FROM_WAYPOINT_RECORDING_ROUTE("mudtown1_HorseShoeGPSRoute", 0, 5, joaat("COLOR_OBJECTIVE"), false, true);
+		func_1771("mudtown1_HorseShoeGPSRoute", 0, joaat("COLOR_OBJECTIVE"));
 		bLocal_612 = false;
 	}
 }
@@ -59351,10 +59351,10 @@ int func_1508(char[4] cParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2000(cParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2001(cParam0, uParam1, iVar0);
 				break;

@@ -32792,7 +32792,7 @@ void func_663(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar14 = 0;
 	if (bVar0)
 	{
-		iVar12 = 619977481;
+		iVar12 = joaat("COLOR_GREYMID");
 		sVar13 = "Transaction_Negative";
 		iVar14 = 1;
 	}
@@ -32800,11 +32800,11 @@ void func_663(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		if (!bVar0 && !bParam2)
 		{
-			iVar12 = -856358433;
+			iVar12 = joaat("COLOR_RPG_SPECIAL_1");
 		}
 		else
 		{
-			iVar12 = -1905433004;
+			iVar12 = joaat("COLOR_YELLOWDARK");
 		}
 	}
 	sVar15 = func_1151(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_650(iParam0)), iVar1), iVar12);
@@ -35227,7 +35227,7 @@ int func_761(var uParam0)
 	func_182(-964389706, 1, 0f, 0, 0, 0, 1, 0);
 	func_182(-1508394076, 1, 0f, 0, 0, 0, 1, 0);
 	func_182(-1947039910, 1, 0f, 0, 0, 0, 1, 0);
-	func_1238("brt2_GoToCaligaHall_gps_route", 0, 76603059);
+	func_1238("brt2_GoToCaligaHall_gps_route", 0, joaat("COLOR_OBJECTIVE"));
 	MAP::SET_GPS_CUSTOM_ROUTE_RENDER(false, 3, 30);
 	return 1;
 }
@@ -35311,7 +35311,7 @@ int func_762(var uParam0)
 					iLocal_770[0] = func_1262(408396114, func_391(1, 0), 1);
 					MAP::_0x662D364ABF16DE2F(&(iLocal_770[0]), -1878373110);
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_770[0]), "BRT2_B_CLHL");
-					func_1238("brt2_GoToCaligaHall_gps_route", 0, 76603059);
+					func_1238("brt2_GoToCaligaHall_gps_route", 0, joaat("COLOR_OBJECTIVE"));
 					func_1259(uParam0, 3);
 					func_135(uParam0, 4);
 				}
@@ -35339,7 +35339,7 @@ int func_762(var uParam0)
 					iLocal_770[0] = func_1262(408396114, func_391(1, 0), 1);
 					MAP::_0x662D364ABF16DE2F(&(iLocal_770[0]), -1878373110);
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_770[0]), "BRT2_B_CLHL");
-					func_1238("brt2_GoToCaligaHall_gps_route", 0, 76603059);
+					func_1238("brt2_GoToCaligaHall_gps_route", 0, joaat("COLOR_OBJECTIVE"));
 					func_1259(uParam0, 3);
 					func_223(&uLocal_239);
 					func_135(uParam0, 4);
@@ -35377,7 +35377,7 @@ int func_762(var uParam0)
 					iLocal_770[0] = func_1262(408396114, func_391(1, 0), 1);
 					MAP::_0x662D364ABF16DE2F(&(iLocal_770[0]), -1878373110);
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_770[0]), "BRT2_B_CLHL");
-					func_1238("brt2_GoToCaligaHall_gps_route", 0, 76603059);
+					func_1238("brt2_GoToCaligaHall_gps_route", 0, joaat("COLOR_OBJECTIVE"));
 					func_1259(uParam0, 3);
 					func_1265(uParam0);
 					func_223(&uLocal_239);
@@ -35735,7 +35735,7 @@ int func_770(var uParam0)
 		return 0;
 	}
 	func_905(0, 0);
-	func_1238("brt2_GoToCaligaHall_gps_route", 0, 76603059);
+	func_1238("brt2_GoToCaligaHall_gps_route", 0, joaat("COLOR_OBJECTIVE"));
 	iLocal_770[0] = func_1262(408396114, func_391(1, 0), 1);
 	MAP::_0x662D364ABF16DE2F(&(iLocal_770[0]), -1878373110);
 	MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_770[0]), "BRT2_B_CLHL");
@@ -61833,10 +61833,10 @@ int func_1555(var uParam0, var uParam1, bool bParam2)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case -140551285:
+			case joaat("EVENT_ENTITY_EXPLOSION"):
 				func_2119(uParam0, uParam1, iVar0);
 				break;
-			case 402722103:
+			case joaat("EVENT_ENTITY_DAMAGED"):
 			case 2145012826:
 				func_2120(uParam0, uParam1, iVar0);
 				break;
@@ -82407,12 +82407,12 @@ int func_2306(var uParam0)
 				break;
 		}
 	}
-	if (EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == 1384795140)
+	if (EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_FIRE_NEARBY"))
 	{
 		iLocal_223 = 0;
 		return 1;
 	}
-	if (((EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SHOCKING_SEEN_PED_KILLED") || EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == -1426473624) || EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SHOCKING_INJURED_PED")) || EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == -1601932249)
+	if (((EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SHOCKING_SEEN_PED_KILLED") || EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SHOCKING_PED_KNOCKED_OUT")) || EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SHOCKING_INJURED_PED")) || EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SHOCKING_ENTITY_HOGTIED"))
 	{
 		iLocal_223 = 1;
 		return 1;
@@ -82493,10 +82493,10 @@ int func_2309(var uParam0, var uParam1)
 			return 1;
 		}
 	}
-	if (EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == 379908161)
+	if (EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_SUSPICIOUS_ACTIVITY"))
 	{
-		PED::_0xCB8F4C9343EBE240(*uParam0, 379908161, uParam1);
-		iVar1 = PED::_0x5E9FAF6C513347B4(*uParam0, 379908161);
+		PED::_0xCB8F4C9343EBE240(*uParam0, joaat("EVENT_SUSPICIOUS_ACTIVITY"), uParam1);
+		iVar1 = PED::_0x5E9FAF6C513347B4(*uParam0, joaat("EVENT_SUSPICIOUS_ACTIVITY"));
 		iVar0 = iVar1;
 		if (func_399(*uParam1) && ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
@@ -82508,10 +82508,10 @@ int func_2309(var uParam0, var uParam1)
 			return 1;
 		}
 	}
-	if (EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == -1054071698)
+	if (EVENT::_0x796EECFF0C6D39BE(*uParam0, 0, 0) == joaat("EVENT_WHISTLING_HEARD"))
 	{
 		*uParam1 = { Global_36 };
-		iVar1 = PED::_0x5E9FAF6C513347B4(*uParam0, -1054071698);
+		iVar1 = PED::_0x5E9FAF6C513347B4(*uParam0, joaat("EVENT_WHISTLING_HEARD"));
 		iVar0 = iVar1;
 		if (func_399(*uParam1) && ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
