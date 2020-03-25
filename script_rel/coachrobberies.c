@@ -34359,7 +34359,7 @@ void func_975(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_412(func_1311(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -37498,20 +37498,20 @@ void func_1069()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1411(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1411(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1411(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1411(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1411(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1411(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1411(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1411(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1411(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1411(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1411(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1411(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1411(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1411(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1411(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1411(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1411(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1411(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1411(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1411(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1411(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1411(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1411(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1411(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1411(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1411(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1411(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1411(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_569())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -39543,19 +39543,19 @@ int func_1126(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 void func_1127(var uParam0, bool bParam1)
@@ -55608,7 +55608,7 @@ void func_1703(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1776(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1344(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1777(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1344(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1777(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1704(int iParam0, int iParam1)

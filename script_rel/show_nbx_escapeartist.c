@@ -5220,15 +5220,15 @@ int func_176(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -7009108;
+			return joaat("NBX_CIVILIANS");
 		case 1:
-			return -7009108;
+			return joaat("NBX_CIVILIANS");
 		case 3:
-			return 99634802;
+			return joaat("VAL_CIVILIANS");
 		case 4:
-			return 10098011;
+			return joaat("BLA_UPPERCLASS");
 	}
-	return -7009108;
+	return joaat("NBX_CIVILIANS");
 }
 
 int func_177(int iParam0, int iParam1)

@@ -918,7 +918,7 @@ int func_44(int iParam0)
 		func_80();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_62, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, 1055032020))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
 		{
 			switch (iLocal_62)
 			{

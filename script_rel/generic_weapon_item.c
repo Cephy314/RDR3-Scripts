@@ -1798,7 +1798,7 @@ void func_72(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_20(func_90(iVar0, 10), 1, 0))
 		{
 			if (bParam2)

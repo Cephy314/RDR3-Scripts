@@ -1894,7 +1894,7 @@ bool func_55(int iParam0, bool bParam1)
 
 void func_56()
 {
-	if (UIAPPS::_IS_APP_ACTIVE(1833066477) && func_61() != 0)
+	if (UIAPPS::_IS_APP_ACTIVE(joaat("fast_travel_menu")) && func_61() != 0)
 	{
 		func_60(&Global_43906, 16);
 	}
@@ -1922,7 +1922,7 @@ bool func_58(int iParam0, bool bParam1)
 
 bool func_59()
 {
-	return (((!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")) && !Global_1898068->f_4) && !func_135()) && UIAPPS::_CAN_LAUNCH_APP_BY_HASH(1833066477));
+	return (((!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")) && !Global_1898068->f_4) && !func_135()) && UIAPPS::_CAN_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")));
 }
 
 void func_60(var uParam0, int iParam1)
@@ -12983,7 +12983,7 @@ void func_456(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_317(func_719(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -22832,55 +22832,55 @@ int func_762(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -27899,7 +27899,7 @@ void func_984(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1034(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_582(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1035(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_582(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1035(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_985()

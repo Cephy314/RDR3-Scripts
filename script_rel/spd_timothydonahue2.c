@@ -8429,7 +8429,7 @@ int func_325(bool bParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(bVar7);
-				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
+				if (iVar8 == joaat("CARRIABLE_SADDLE") || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}

@@ -85,7 +85,7 @@ void __EntryFunction__()
 								case -1287062382:
 									func_15(Var1.f_1, &(Var1.f_3));
 									break;
-								case -1706653313:
+								case joaat("USABLE_ITEM"):
 								case 1086195311:
 									ATTRIBUTE::_0xD962F8579D702DB5();
 									func_12(Var1.f_1, &(Var1.f_3));
@@ -115,7 +115,7 @@ void __EntryFunction__()
 					case -1203660660:
 						switch (Var1.f_2)
 						{
-							case -1706653313:
+							case joaat("USABLE_ITEM"):
 							case -594808149:
 							case 1086195311:
 								if (func_19() || func_20())
@@ -19214,7 +19214,7 @@ int func_695(int iParam0)
 		case -1457420231: /* GXTEntry: "Good Bat Carcass" */
 		case 563848610: /* GXTEntry: "Poor Bat Carcass" */
 		case 1432949803: /* GXTEntry: "Perfect Bat Carcass" */
-			return 783089120 /* GXTEntry: "Bat" */;
+			return joaat("AT_BAT");
 		case -2120099592: /* GXTEntry: "Poor Blue Jay Carcass" */
 		case -983831788: /* GXTEntry: "Perfect Blue Jay Carcass" */
 		case 1848456619: /* GXTEntry: "Good Blue Jay Carcass" */

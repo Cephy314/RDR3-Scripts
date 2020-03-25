@@ -170,7 +170,7 @@ void __EntryFunction__()
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	fLocal_406 = 30f;
-	iLocal_485 = -756969178;
+	iLocal_485 = joaat("MoodCurious");
 	iLocal_486 = 13;
 	func_1(&Local_14, &uScriptParam_0);
 	func_2(&Local_14, 1);
@@ -4670,7 +4670,7 @@ int func_150()
 				}
 				else
 				{
-					PED::_0x8ACC0506743A8A5C(&(uLocal_225[0]), 166028666, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_225[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 					TASK::CLEAR_PED_SECONDARY_TASK(&(uLocal_225[0]));
 					if (Local_208.f_3 == 0)
 					{
@@ -5328,19 +5328,19 @@ int func_184(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 void func_185(var uParam0, int iParam1)
@@ -11385,7 +11385,7 @@ void func_347(int iParam0)
 					}
 					break;
 			}
-			iLocal_485 = -988409641;
+			iLocal_485 = joaat("MoodAgitated");
 			TASK::TASK_LOOK_AT_ENTITY(0, Global_35, -1, 0, 51, 0);
 			func_146(0, iLocal_215, 2f, -2f, -1, 2048, 0, 0, 0, 0, 0);
 			func_54(&(uLocal_225[0]), &iVar0, 0, 0, 1, 1);
@@ -11421,7 +11421,7 @@ void func_347(int iParam0)
 			func_146(0, 17, 8f, -2f, -1, 67108864, 0, 0, 32768, 0, 0);
 			func_146(0, 14, 2f, -2f, -1, 67108865, 0, 0, 32768, 0, 0);
 			func_54(&(uLocal_225[0]), &iVar0, 0, 0, 1, 1);
-			iLocal_485 = -988409641;
+			iLocal_485 = joaat("MoodAgitated");
 			func_117(&uLocal_438);
 			iLocal_215 = 17;
 			break;
@@ -11468,7 +11468,7 @@ void func_347(int iParam0)
 				func_146(0, 14, 2f, -2f, -1, 67108865, 0, 0, 32768, 0, 0);
 				func_54(&(uLocal_225[0]), &iVar0, 0, 0, 1, 1);
 			}
-			iLocal_485 = -988409641;
+			iLocal_485 = joaat("MoodAgitated");
 			break;
 		case 7:
 			func_133(&iLocal_228);
@@ -14322,7 +14322,7 @@ int func_433(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

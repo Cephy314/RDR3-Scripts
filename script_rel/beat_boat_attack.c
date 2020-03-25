@@ -1700,7 +1700,7 @@ void func_48()
 		func_135(&(uLocal_395[1]), joaat("CONSUMABLE_CIGARETTE_BOX"), 1, 0);
 		func_135(&(uLocal_395[2]), joaat("CONSUMABLE_CIGARETTE_BOX"), 1, 0);
 		VEHICLE::SET_BOAT_ANCHOR(iLocal_407, true);
-		PED::_0x8ACC0506743A8A5C(&(uLocal_395[2]), 166028666, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_395[2]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 	}
 	else
 	{
@@ -2085,7 +2085,7 @@ void func_61()
 		switch (iLocal_710)
 		{
 			case 0:
-				PED::_0x8B3B71C80A29A4BB(&(uLocal_395[1]), -988409641, 6);
+				PED::_0x8B3B71C80A29A4BB(&(uLocal_395[1]), joaat("MoodAgitated"), 6);
 				break;
 			case 1:
 				PED::_0x8B3B71C80A29A4BB(&(uLocal_395[1]), 320243264, 6);
@@ -12164,7 +12164,7 @@ int func_321(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

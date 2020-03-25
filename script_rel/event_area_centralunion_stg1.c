@@ -15208,11 +15208,11 @@ void func_388(bool bParam0)
 {
 	if (bParam0)
 	{
-		VOLUME::_0x52572B331E693AED(&(iLocal_2305[2]), -411455723, 415013298);
+		VOLUME::_0x52572B331E693AED(&(iLocal_2305[2]), joaat("CARRIABLE_INVENTORY_ITEM"), joaat("STEAL_ITEM_PROMPT_TABLE"));
 	}
 	else
 	{
-		VOLUME::_0x52572B331E693AED(&(iLocal_2305[2]), -411455723, 257258026);
+		VOLUME::_0x52572B331E693AED(&(iLocal_2305[2]), joaat("CARRIABLE_INVENTORY_ITEM"), joaat("NULL_OVERRIDE_CARRIABLE_PROMPT_TABLE"));
 	}
 	func_7(16777216, !bParam0);
 }
@@ -17937,7 +17937,7 @@ int func_395(bool bParam0)
 								func_196(1);
 								if (!ENTITY::IS_ENTITY_DEAD(&(iLocal_3981[0])))
 								{
-									PED::_0x8B3B71C80A29A4BB(&(iLocal_3981[0]), -988409641, 6);
+									PED::_0x8B3B71C80A29A4BB(&(iLocal_3981[0]), joaat("MoodAgitated"), 6);
 								}
 								if (!ENTITY::IS_ENTITY_DEAD(&(iLocal_3981[1])))
 								{
@@ -17991,7 +17991,7 @@ int func_395(bool bParam0)
 					Jump @10648; //curOff = 5558
 					if (!ENTITY::IS_ENTITY_DEAD(&(iLocal_3981[0])))
 					{
-						PED::_0x8B3B71C80A29A4BB(&(iLocal_3981[0]), -988409641, 6);
+						PED::_0x8B3B71C80A29A4BB(&(iLocal_3981[0]), joaat("MoodAgitated"), 6);
 					}
 					if (!ENTITY::IS_ENTITY_DEAD(&(iLocal_3981[1])))
 					{
@@ -29189,7 +29189,7 @@ void func_822()
 			if (!ENTITY::IS_ENTITY_DEAD(&(iLocal_3981[0])) && func_25(32768))
 			{
 				func_328(Local_2370[1 /*7*/], &(iLocal_3981[0]), "vic");
-				TASK::_0xF0B4F759F35CC7F5(&(iLocal_3981[0]), -2146271366, 0, 0, 0);
+				TASK::_0xF0B4F759F35CC7F5(&(iLocal_3981[0]), joaat("HOGTIED_PED"), 0, 0, 0);
 			}
 			if (func_4(Local_3653.f_136, 8))
 			{
@@ -51300,7 +51300,7 @@ void func_1560(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_12(func_1911(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -54632,20 +54632,20 @@ void func_1659()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_2009(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_2009(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_2009(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_2009(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_2009(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_2009(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_2009(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_2009(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_2009(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_2009(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_2009(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_2009(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_2009(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_2009(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_2009(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_2009(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_2009(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_2009(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_2009(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_2009(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_2009(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_2009(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_2009(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_2009(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_2009(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_2009(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_2009(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_2009(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_848())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -74355,7 +74355,7 @@ void func_2284(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2357(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_909(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2358(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_909(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2358(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2285(int iParam0, int iParam1)

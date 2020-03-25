@@ -3950,7 +3950,7 @@ void func_114()
 					{
 						PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_410[1]), 93, true);
 						PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_410[1]), 92, true);
-						PED::_0x8ACC0506743A8A5C(&(uLocal_410[1]), 82540408, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(uLocal_410[1]), joaat("SituationNormal"), 1, -1082130432);
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					PED::REGISTER_TARGET(&(uLocal_410[1]), Global_35, 1);
@@ -4008,7 +4008,7 @@ void func_114()
 				{
 					PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_410[1]), 93, true);
 					PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_410[1]), 92, true);
-					PED::_0x8ACC0506743A8A5C(&(uLocal_410[1]), 82540408, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_410[1]), joaat("SituationNormal"), 1, -1082130432);
 					TASK::TASK_COMBAT_PED(0, Global_35, 68157440, 4096);
 				}
 				else
@@ -15252,7 +15252,7 @@ int func_421(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -21036,7 +21036,7 @@ void func_627(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_751(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_753(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_752(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_753(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_752(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_628(int iParam0, int iParam1)
@@ -27338,7 +27338,7 @@ void func_826(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_828(func_966(iVar0, 10), 1, 0))
 		{
 			if (bParam2)

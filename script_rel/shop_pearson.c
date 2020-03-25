@@ -16470,7 +16470,7 @@ void func_505(var uParam0, var uParam1, var uParam2)
 			uParam1->f_3 = { -46.5883f, 0.8548f, -40.8771f };
 			uParam1->f_6 = 43.2665f;
 		}
-		else if ((iVar3 == 1905987493 || bVar0 == 1419411400) || bVar4)
+		else if ((iVar3 == 1905987493 || bVar0 == joaat("COMPONENT_RIFLE_BOLTACTION_WRAP")) || bVar4)
 		{
 			*uParam1 = { -0.289f, -0.1903f, 0.4845f };
 			uParam1->f_3 = { -38.1148f, 0.8549f, -27.4051f };
@@ -32850,7 +32850,7 @@ void func_1004(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_541(func_1466(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -34153,39 +34153,39 @@ int func_1050(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2099882877:
+		case joaat("SDN_BARTENDER_SLUMS"):
 		case joaat("RHD_Bartender"):
 		case joaat("val_doctor"):
 		case joaat("val_gunsmith"):
-		case -1472222264:
-		case -1456173883:
+		case joaat("AMD_GENERAL_STORE"):
+		case joaat("TBL_BUTCHER"):
 		case joaat("VAL_General_Store"):
-		case -934649940:
+		case joaat("RHD_TRAIN_STAT_OWNER"):
 		case joaat("RHD_General_Store"):
 		case joaat("VHT_Station_Clerk"):
-		case -495174442:
+		case joaat("RGS_POSTMASTER"):
 		case joaat("val_hotel_owner"):
 		case joaat("BLW_Bartender"):
-		case 19124873:
+		case joaat("AMD_BARTENDER"):
 		case joaat("VHT_Bartender"):
 		case joaat("VAL_Bartender"):
-		case 135431031:
-		case 156473432:
+		case joaat("STR_WELCOME_CENTER_CLERK"):
+		case joaat("SDN_Gen_Store_Shady"):
 		case joaat("val_butcher"):
-		case 344419080:
-		case 785713260:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
+		case joaat("SDN_BARTENDER"):
 		case joaat("ASB_Gunsmith"):
-		case 1016865322:
-		case 1057927283:
-		case 1198640232:
+		case joaat("TBL_BARTENDER"):
+		case joaat("TBL_GUNSMITH_OWNER"):
+		case joaat("SDN_GUNSMITH"):
 		case joaat("emr_son1"):
 		case joaat("BLW_General_Store"):
 		case joaat("BLW_Train_Worker"):
-		case 1659593009:
+		case joaat("SDN_Gen_Store_Owner"):
 		case joaat("VHT_Exotic_Store"):
 		case joaat("VAL_Barber"):
 		case joaat("RHD_Gunsmith"):
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 		case joaat("prin_p4_28"):
 		case joaat("STR_Freight_Clerk"):
 			return 1;
@@ -39232,7 +39232,7 @@ void func_1197()
 	iVar6 = 0;
 	while (iVar6 < 5)
 	{
-		if (func_541(func_1466(COLLECTION::_0x126CBEBBA46693CF(iVar6, joaat("taxidermy"), -1160144609), 10), 1, 0))
+		if (func_541(func_1466(COLLECTION::_0x126CBEBBA46693CF(iVar6, joaat("taxidermy"), joaat("TAXIDERMY_ORDER")), 10), 1, 0))
 		{
 			Global_1914319->f_18981 = 1;
 			Global_1914319->f_18992++;
@@ -40126,7 +40126,7 @@ void func_1222()
 		iVar6 = 0;
 		while (iVar6 < 5)
 		{
-			if (func_541(func_1466(COLLECTION::_0x126CBEBBA46693CF(iVar6, joaat("taxidermy"), -1160144609), 10), 1, 0))
+			if (func_541(func_1466(COLLECTION::_0x126CBEBBA46693CF(iVar6, joaat("taxidermy"), joaat("TAXIDERMY_ORDER")), 10), 1, 0))
 			{
 				Global_1914319->f_18993++;
 			}
@@ -41341,55 +41341,55 @@ int func_1272(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -62246,7 +62246,7 @@ void func_1860(int iParam0)
 
 int func_1861()
 {
-	return COLLECTION::_0x3A65F4844913A047(joaat("taxidermy"), -1160144609);
+	return COLLECTION::_0x3A65F4844913A047(joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 }
 
 int func_1862(int iParam0, int iParam1)
@@ -63765,31 +63765,31 @@ int func_1901(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -79629,7 +79629,7 @@ int func_2448(bool bParam0)
 		case -1457420231: /* GXTEntry: "Good Bat Carcass" */
 		case 563848610: /* GXTEntry: "Poor Bat Carcass" */
 		case 1432949803: /* GXTEntry: "Perfect Bat Carcass" */
-			return 783089120 /* GXTEntry: "Bat" */;
+			return joaat("AT_BAT");
 		case -2120099592: /* GXTEntry: "Poor Blue Jay Carcass" */
 		case -983831788: /* GXTEntry: "Perfect Blue Jay Carcass" */
 		case 1848456619: /* GXTEntry: "Good Blue Jay Carcass" */
@@ -84886,7 +84886,7 @@ void func_2588(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2919(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1424(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2920(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1424(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2920(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2589(int iParam0, int iParam1)
@@ -97305,13 +97305,13 @@ int func_3050(int iParam0)
 		case 0:
 			return joaat("horse_blankets");
 		case 1:
-			return -385635273;
+			return joaat("horse_reins");
 		case 2:
 			return joaat("HORSE_SADDLES");
 		case 3:
-			return 561239516;
+			return joaat("saddle_horn");
 		case 7:
-			return 168005805;
+			return joaat("SADDLE_STIRRUP");
 		case 9:
 			return joaat("horse_bedrolls");
 		case 10:

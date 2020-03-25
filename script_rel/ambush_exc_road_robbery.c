@@ -3304,7 +3304,7 @@ int func_118(int iParam0)
 		case 1:
 			return 1846188867;
 		case 4:
-			return -87251158;
+			return joaat("Gang_Laramie");
 		case 3:
 			return -61242338;
 		case 5:
@@ -4160,7 +4160,7 @@ int func_144()
 		{
 			iVar1 = -1;
 			sVar0 = func_306(&uLocal_15, &Local_274, 0, &iVar1);
-			PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[0]), Global_35, 3000, 0, 1);
 			func_164(&(uLocal_15[0]), uLocal_15.f_22[0], joaat("BLIP_STYLE_ENEMY"), 0, 0, 0);
 			func_164(&(uLocal_15[1]), uLocal_15.f_22[1], joaat("BLIP_STYLE_ENEMY"), 0, 0, 0);
@@ -4861,7 +4861,7 @@ int func_162()
 						if (func_331(0, 1, Global_35, 1))
 						{
 							sVar0 = func_370(&uLocal_15, &Local_274, 1, &iVar6);
-							PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), 166028666, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 							TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[1]), Global_35, -1, 0, 1);
 							func_307(&(uLocal_15[1]), Global_35, sVar0, -1073741824 /* Float: -2f */, 1, 1744022339, iVar6);
 							func_202(Local_274.f_58[3 /*3*/]);
@@ -4888,7 +4888,7 @@ int func_162()
 				if (func_368())
 				{
 					sVar0 = func_306(&uLocal_15, &Local_274, 0, &iVar6);
-					PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 					TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[0]), Global_35, 3000, 0, 1);
 					func_307(&(uLocal_15[0]), Global_35, sVar0, -1073741824 /* Float: -2f */, 1, 1744022339, iVar6);
 					func_143(&Local_274, 4);
@@ -4901,7 +4901,7 @@ int func_162()
 				if (func_368())
 				{
 					sVar0 = func_306(&uLocal_15, &Local_274, 0, &iVar6);
-					PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 					TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[0]), Global_35, 3000, 0, 1);
 					func_307(&(uLocal_15[0]), Global_35, sVar0, -1073741824 /* Float: -2f */, 1, 1744022339, iVar6);
 					func_143(&Local_274, 4);
@@ -4912,7 +4912,7 @@ int func_162()
 				if (!func_368())
 				{
 					func_321(&(Local_274.f_37), &(uLocal_15[0]), 0, 50f);
-					PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), 166028666, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 					TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[1]), Global_35, 3000, 0, 1);
 					func_143(&Local_274, 32768);
 				}
@@ -5701,7 +5701,7 @@ int func_200(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -7812,19 +7812,19 @@ int func_268(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 int func_269(int iParam0, int iParam1, int iParam2)
@@ -10583,7 +10583,7 @@ int func_353()
 				func_164(&(uLocal_15[0]), uLocal_15.f_22[0], joaat("BLIP_STYLE_ENEMY"), 0, 0, 0);
 				func_164(&(uLocal_15[1]), uLocal_15.f_22[1], joaat("BLIP_STYLE_ENEMY"), 0, 0, 0);
 				func_307(&(uLocal_15[1]), Global_35, "HEADS_UP_STORY_MEMORY_RXCF1", -1073741824 /* Float: -2f */, 1, 1744022339, 1);
-				PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), 166028666, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 				TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[1]), Global_35, 3000, 0, 1);
 				func_143(&Local_274, 4);
 				return 1;
@@ -10633,7 +10633,7 @@ int func_354()
 				{
 					sVar0 = func_306(&uLocal_15, &Local_274, 0, &iVar1);
 					func_307(&(uLocal_15[0]), Global_35, sVar0, -1073741824 /* Float: -2f */, 1, 1744022339, iVar1);
-					PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 					TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[0]), Global_35, 3000, 0, 1);
 					func_143(&Local_274, 4);
 					return 1;
@@ -10753,7 +10753,7 @@ int func_357()
 				func_321(&(Local_274.f_37), &(uLocal_15[0]), 1, 50f);
 				PLAYER::_0x45EF176B532CA851(PLAYER::PLAYER_ID(), "AMBUSH_PLAYER_SURRENDER");
 				PLAYER::_0xBED386157F65942C(PLAYER::PLAYER_ID(), 1);
-				PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), 166028666, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 				TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[1]), Global_35, -1, 0, 1);
 				func_202(Local_274.f_58[1 /*3*/]);
 				return 1;
@@ -10773,7 +10773,7 @@ int func_358()
 		iVar1 = -1;
 		sVar0 = func_306(&uLocal_15, &Local_274, 0, &iVar1);
 		func_307(&(uLocal_15[0]), Global_35, sVar0, -1073741824 /* Float: -2f */, 1, 1744022339, iVar1);
-		PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 		TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[0]), Global_35, 3000, 0, 1);
 		func_164(&(uLocal_15[0]), uLocal_15.f_22[0], joaat("BLIP_STYLE_ENEMY"), 0, 0, 0);
 		func_164(&(uLocal_15[1]), uLocal_15.f_22[1], joaat("BLIP_STYLE_ENEMY"), 0, 0, 0);
@@ -10800,7 +10800,7 @@ int func_359()
 		sVar1 = func_527(&uLocal_15, &Local_274, 1, &iVar2);
 		if (func_307(&(uLocal_15[1]), Global_35, sVar1, -1073741824 /* Float: -2f */, 1, 1744022339, iVar2))
 		{
-			PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_15[0]), WEAPON::GET_BEST_PED_WEAPON(&(uLocal_15[0]), false, false), false, 0, false, false);
 			TASK::TASK_SWAP_WEAPON(&(uLocal_15[0]), 1, 0, 0, 0);
 			TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_15[0]), Global_35, -1, 0, 1);
@@ -25931,7 +25931,7 @@ void func_882(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_708(func_979(iVar0, 10), 1, 0))
 		{
 			if (bParam2)

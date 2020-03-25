@@ -614,7 +614,7 @@ void func_11(var uParam0)
 
 void func_12(var uParam0)
 {
-	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(1833066477))
+	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")))
 	{
 		return;
 	}
@@ -624,7 +624,7 @@ void func_12(var uParam0)
 		{
 			return;
 		}
-		if (UIAPPS::_LAUNCH_APP_BY_HASH(1833066477) == 0)
+		if (UIAPPS::_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")) == 0)
 		{
 		}
 		else
@@ -1836,9 +1836,9 @@ void func_58(var uParam0, var uParam1)
 	struct<4> Var0;
 	int iVar4;
 
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(1833066477))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("fast_travel_menu")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(1833066477, &Var0))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("fast_travel_menu"), &Var0))
 		{
 			iVar4 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var0.f_3, "locationArrayIndex");
 			switch (Var0)
@@ -1881,7 +1881,7 @@ void func_58(var uParam0, var uParam1)
 					}
 					break;
 			}
-			UIEVENTS::_EVENT_MANAGER_POP_EVENT(1833066477);
+			UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("fast_travel_menu"));
 		}
 	}
 }
@@ -2662,7 +2662,7 @@ void func_84()
 	{
 		func_115(0, 1);
 	}
-	UIAPPS::_CLOSE_APP_BY_HASH(1833066477);
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("fast_travel_menu"));
 }
 
 int func_85(int iParam0)
@@ -3409,7 +3409,7 @@ void func_120(var uParam0)
 			Var1.f_18 = iVar21;
 			Var1.f_6 = 42753526;
 			Var1.f_5 = 42753526;
-			Var1.f_4 = 1833066477;
+			Var1.f_4 = joaat("fast_travel_menu");
 			func_185(Global_1070356->f_22101.f_5.f_7[iVar0 /*21*/], Var1, iVar0);
 		}
 		iVar0++;
@@ -4855,7 +4855,7 @@ void func_186(var uParam0)
 		Var0.f_18 = iVar20;
 		Var0.f_6 = 42753526;
 		Var0.f_5 = 42753526;
-		Var0.f_4 = 1833066477;
+		Var0.f_4 = joaat("fast_travel_menu");
 		func_249(&(Global_1070356->f_22101.f_5.f_317), Var0, 14);
 		return;
 	}
@@ -4887,7 +4887,7 @@ void func_186(var uParam0)
 	Var0.f_18 = iVar20;
 	Var0.f_6 = 42753526;
 	Var0.f_5 = 42753526;
-	Var0.f_4 = 1833066477;
+	Var0.f_4 = joaat("fast_travel_menu");
 	func_249(&(Global_1070356->f_22101.f_5.f_317), Var0, 14);
 }
 
@@ -4938,7 +4938,7 @@ void func_187(var uParam0)
 		Var0.f_18 = iVar20;
 		Var0.f_6 = 42753526;
 		Var0.f_5 = 42753526;
-		Var0.f_4 = 1833066477;
+		Var0.f_4 = joaat("fast_travel_menu");
 		func_250(&(Global_1070356->f_22101.f_5.f_339), Var0, 15);
 		return;
 	}
@@ -4970,7 +4970,7 @@ void func_187(var uParam0)
 	Var0.f_18 = iVar20;
 	Var0.f_6 = 42753526;
 	Var0.f_5 = 42753526;
-	Var0.f_4 = 1833066477;
+	Var0.f_4 = joaat("fast_travel_menu");
 	func_250(&(Global_1070356->f_22101.f_5.f_339), Var0, 15);
 }
 

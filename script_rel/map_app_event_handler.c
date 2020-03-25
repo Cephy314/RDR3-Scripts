@@ -3732,9 +3732,9 @@ int func_117(int iParam0)
 			return joaat("GFH_OBEDIAH_HINTON");
 		case 539824333:
 			return joaat("GFH_LANGTON");
-		case 1309348282:
+		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
-		case 2048329431:
+		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");

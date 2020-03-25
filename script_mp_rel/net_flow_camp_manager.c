@@ -201,7 +201,7 @@ int func_3()
 	if (func_12(Var0))
 	{
 		iVar2 = func_13(Var0);
-		if (iVar2 > 13 && !UIAPPS::_IS_APP_RUNNING(1473691941))
+		if (iVar2 > 13 && !UIAPPS::_IS_APP_RUNNING(joaat("lobbies_menu")))
 		{
 			return 1;
 		}
@@ -210,7 +210,7 @@ int func_3()
 	{
 		return 1;
 	}
-	if (func_14() && !UIAPPS::_IS_APP_RUNNING(1473691941))
+	if (func_14() && !UIAPPS::_IS_APP_RUNNING(joaat("lobbies_menu")))
 	{
 		return 1;
 	}

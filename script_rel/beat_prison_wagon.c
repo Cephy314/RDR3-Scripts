@@ -13963,7 +13963,7 @@ int func_374(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -25016,7 +25016,7 @@ void func_737(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_827(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_813(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_828(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_813(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_828(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_738(int iParam0, int iParam1)

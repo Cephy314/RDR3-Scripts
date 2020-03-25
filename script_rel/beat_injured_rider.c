@@ -893,7 +893,7 @@ int func_10()
 				func_85();
 				func_86();
 				func_87();
-				TASK::_0xFF745B0346E19E2C(-421224518);
+				TASK::_0xFF745B0346E19E2C(joaat("INJURED_CARRIABLE_HUMAN"));
 				iLocal_885 = 1;
 			}
 			break;
@@ -922,7 +922,7 @@ int func_10()
 			{
 				return 0;
 			}
-			if (!TASK::_0xB8F52A3F84A7CC59(-421224518))
+			if (!TASK::_0xB8F52A3F84A7CC59(joaat("INJURED_CARRIABLE_HUMAN")))
 			{
 				return 0;
 			}
@@ -2470,7 +2470,7 @@ int func_42()
 				}
 				else if (iLocal_310 == 1)
 				{
-					TASK::_0xF0B4F759F35CC7F5(&(uLocal_860[0]), -421224518, 0, 0, 1);
+					TASK::_0xF0B4F759F35CC7F5(&(uLocal_860[0]), joaat("INJURED_CARRIABLE_HUMAN"), 0, 0, 1);
 					PED::SET_PED_KEEP_TASK(&(uLocal_860[0]), true);
 					iLocal_1002 = 2;
 					func_202(Local_1046[0 /*17*/], 1, 0);
@@ -12754,19 +12754,19 @@ int func_296(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 void func_297(int iParam0)
@@ -21157,7 +21157,7 @@ int func_582(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

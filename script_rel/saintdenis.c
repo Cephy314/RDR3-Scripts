@@ -1645,8 +1645,8 @@ void func_35(int iParam0)
 		return;
 	}
 	func_100();
-	func_101(0, -7009108);
-	func_101(2, -348077625);
+	func_101(0, joaat("NBX_CIVILIANS"));
+	func_101(2, joaat("NBX_POLICE"));
 }
 
 bool func_36(int iParam0)

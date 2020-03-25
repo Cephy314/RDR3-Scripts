@@ -346,7 +346,7 @@ int func_8()
 				STREAMING::REQUEST_MODEL(iLocal_616, false);
 				iLocal_16 = 1;
 				STREAMING::REQUEST_ANIM_DICT(cLocal_612);
-				TASK::_0xFF745B0346E19E2C(-2146271366);
+				TASK::_0xFF745B0346E19E2C(joaat("HOGTIED_PED"));
 			}
 			break;
 		case 1:
@@ -366,7 +366,7 @@ int func_8()
 			{
 				return 0;
 			}
-			if (!TASK::_0xB8F52A3F84A7CC59(-2146271366))
+			if (!TASK::_0xB8F52A3F84A7CC59(joaat("HOGTIED_PED")))
 			{
 				return 0;
 			}
@@ -13478,7 +13478,7 @@ int func_415(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

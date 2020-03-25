@@ -12792,15 +12792,15 @@ int func_665(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 854093187;
+					return joaat("TH_HRT_CHEST");
 				case 1:
-					return -52527354;
+					return joaat("TH_HRT_ROCKS");
 				case 2:
 					return 528696119;
 				case 3:
 					return -849305869;
 				case 4:
-					return -275091101;
+					return joaat("TH_HRT_MAP");
 				default:
 					break;
 			}
@@ -12814,15 +12814,15 @@ Vector3 func_666(int iParam0, int iParam1)
 		case 2129020695:
 			switch (iParam1)
 			{
-				case 854093187:
+				case joaat("TH_HRT_CHEST"):
 					return -0.008715f, 1.018275f, 0f;
-				case -52527354:
+				case joaat("TH_HRT_ROCKS"):
 					return -0.008715f, 1.018275f, 0f;
 				case 528696119:
 					return 0.054435f, 0.980646f, 0.101269f;
 				case -849305869:
 					return 0.019404f, 0.978131f, 0.106024f;
-				case -275091101:
+				case joaat("TH_HRT_MAP"):
 					return -0.081336f, 0.089546f, -1f;
 				default:
 					break;
@@ -12837,15 +12837,15 @@ Vector3 func_667(int iParam0, int iParam1)
 		case 2129020695:
 			switch (iParam1)
 			{
-				case 854093187:
+				case joaat("TH_HRT_CHEST"):
 					return 0f, 0f, 0f;
-				case -52527354:
+				case joaat("TH_HRT_ROCKS"):
 					return 0f, 0f, 0f;
 				case 528696119:
 					return 10.34671f, -4.88114f, 1.486373f;
 				case -849305869:
 					return 9.050551f, 0f, 0f;
-				case -275091101:
+				case joaat("TH_HRT_MAP"):
 					return 74.73452f, -80.48813f, -72.84706f;
 				default:
 					break;
@@ -12860,15 +12860,15 @@ int func_668(int iParam0, int iParam1)
 		case 2129020695:
 			switch (iParam1)
 			{
-				case 854093187:
+				case joaat("TH_HRT_CHEST"):
 					return joaat("s_treasureheartlands02x");
-				case -52527354:
+				case joaat("TH_HRT_ROCKS"):
 					return joaat("s_treasureheartlands01x");
 				case 528696119:
 					return joaat("p_coinstack02");
 				case -849305869:
 					return joaat("p_coinstack02");
-				case -275091101:
+				case joaat("TH_HRT_MAP"):
 					return joaat("s_twofoldmap01x");
 				default:
 					break;
@@ -15217,15 +15217,15 @@ int func_793(int iParam0, int iParam1)
 		case 2129020695:
 			switch (iParam1)
 			{
-				case 854093187:
+				case joaat("TH_HRT_CHEST"):
 					return 0;
-				case -52527354:
+				case joaat("TH_HRT_ROCKS"):
 					return 0;
 				case 528696119:
 					return 1218665241;
 				case -849305869:
 					return -1955372868;
-				case -275091101:
+				case joaat("TH_HRT_MAP"):
 					return joaat("map");
 				default:
 					break;
@@ -20159,15 +20159,15 @@ char* func_1040(int iParam0, int iParam1)
 		case 2129020695:
 			switch (iParam1)
 			{
-				case 854093187:
+				case joaat("TH_HRT_CHEST"):
 					return "CHEST";
-				case -52527354:
+				case joaat("TH_HRT_ROCKS"):
 					return "ROCKS";
 				case 528696119:
 					return "OBJECT1";
 				case -849305869:
 					return "OBJECT2";
-				case -275091101:
+				case joaat("TH_HRT_MAP"):
 					return "OBJECT3";
 				default:
 					break;

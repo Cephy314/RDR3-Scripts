@@ -8079,7 +8079,7 @@ void func_403()
 					iVar2 = NETWORK::NET_TO_ENT(&(uLocal_0[iVar1]));
 					if (ENTITY::DOES_ENTITY_EXIST(iVar2))
 					{
-						TASK::_0xF0B4F759F35CC7F5(iVar2, -2141086268, 0, 0, 0);
+						TASK::_0xF0B4F759F35CC7F5(iVar2, joaat("MP_MONEYBAG"), 0, 0, 0);
 						ENTITY::_0xBD94CECFB2D65119(iVar2, 1, 3f, 0.1f, 20f, 1);
 						ENTITY::_0x18FF3110CF47115D(iVar2, 25, 1);
 						uLocal_0.f_16[iVar1] = 1;

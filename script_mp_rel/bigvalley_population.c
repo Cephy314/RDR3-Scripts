@@ -254,7 +254,7 @@ void func_7()
 	{
 		return;
 	}
-	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(-703427271);
+	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(joaat("PAI_RANCHHAND_02"));
 	if (!PERSCHAR::_0x800DF3FC913355F3(iVar0))
 	{
 		return;

@@ -6697,7 +6697,7 @@ int func_300(int iParam0)
 		case joaat("CONSUMABLE_BIG_GAME_MEAT_THYME_COOKED"):
 			iVar0 = 46;
 			break;
-		case 1610737930: /* GXTEntry: "Plain Big Game" */
+		case joaat("CONSUMABLE_BIG_GAME_MEAT_COOKED"):
 			iVar0 = 45;
 			break;
 		case joaat("CONSUMABLE_EXOTIC_BIRD_WILD_MINT_COOKED"):
@@ -6790,46 +6790,46 @@ int func_300(int iParam0)
 		case joaat("CONSUMABLE_PLUMP_BIRD_THYME_COOKED"):
 			iVar0 = 15;
 			break;
-		case 532201260: /* GXTEntry: "Plain Exotic Bird" */
+		case joaat("CONSUMABLE_EXOTIC_BIRD_COOKED"):
 			iVar0 = 14;
 			break;
-		case -348823399: /* GXTEntry: "Plain Game" */
+		case joaat("CONSUMABLE_GAME_MEAT_COOKED"):
 			iVar0 = 13;
 			break;
-		case -151108755: /* GXTEntry: "Plain Venison" */
+		case joaat("CONSUMABLE_MATURE_VENISON_COOKED"):
 			iVar0 = 12;
 			break;
-		case -1240620284: /* GXTEntry: "Plain Succulent Fish" */
+		case joaat("CONSUMABLE_SUCCULENT_FISH_COOKED"):
 			iVar0 = 11;
 			break;
-		case -1535978095: /* GXTEntry: "Plain Prime Beef" */
+		case joaat("CONSUMABLE_PRIME_BEEF_COOKED"):
 			iVar0 = 10;
 			break;
-		case 1663095412: /* GXTEntry: "Plain Pork" */
+		case joaat("CONSUMABLE_TENDER_PORK_COOKED"):
 			iVar0 = 9;
 			break;
-		case -546209848: /* GXTEntry: "Plain Mutton" */
+		case joaat("CONSUMABLE_GRISTLY_MUTTON_COOKED"):
 			iVar0 = 8;
 			break;
-		case -1277667710: /* GXTEntry: "Plain Crustacean" */
+		case joaat("CONSUMABLE_CRUSTACEAN_MEAT_COOKED"):
 			iVar0 = 7;
 			break;
-		case 2058993648: /* GXTEntry: "Plain Plump Bird" */
+		case joaat("CONSUMABLE_PLUMP_BIRD_COOKED"):
 			iVar0 = 6;
 			break;
-		case 880496229: /* GXTEntry: "Plain Flaky Fish" */
+		case joaat("CONSUMABLE_FLAKEY_FISH_COOKED"):
 			iVar0 = 5;
 			break;
-		case 166398389: /* GXTEntry: "Plain Game Bird" */
+		case joaat("CONSUMABLE_GAMEY_BIRD_COOKED"):
 			iVar0 = 4;
 			break;
-		case -467118139: /* GXTEntry: "Plain Stringy Meat" */
+		case joaat("CONSUMABLE_STRING_MEAT_COOKED"):
 			iVar0 = 3;
 			break;
-		case -1768405210: /* GXTEntry: "Gritty Fish" */
+		case joaat("CONSUMABLE_GRITTY_FISH_MEAT_COOKED"):
 			iVar0 = 2;
 			break;
-		case 524620511: /* GXTEntry: "Plain Herptile" */
+		case joaat("CONSUMABLE_HERPTILE_MEAT_COOKED"):
 			iVar0 = 1;
 			break;
 	}

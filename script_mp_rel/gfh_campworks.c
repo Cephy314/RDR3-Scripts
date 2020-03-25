@@ -10746,7 +10746,7 @@ int func_233(int iParam0, int iParam1)
 						return 5828;
 					case -818832924:
 						return 2795;
-					case -818624178:
+					case joaat("Bindings_Feet_Bulky"):
 						return 5701;
 					case -818126608:
 						return 1825;
@@ -11622,7 +11622,7 @@ int func_233(int iParam0, int iParam1)
 						return 83;
 					case joaat("hat_mr1_011"):
 						return 4615;
-					case -493878254:
+					case joaat("Bindings_Hands_Default"):
 						return 5704;
 					case -492406189:
 						return 4087;
@@ -15050,7 +15050,7 @@ int func_233(int iParam0, int iParam1)
 						return 2362;
 					case 772091720:
 						return 401;
-					case 772247508:
+					case joaat("Bindings_Feet_Default"):
 						return 5702;
 					case 772307571:
 						return 4221;
@@ -16610,7 +16610,7 @@ int func_233(int iParam0, int iParam1)
 						return 2494;
 					case 1314808215:
 						return 5740;
-					case 1314832239:
+					case joaat("Bindings_Hands_Bulky"):
 						return 5703;
 					case 1314941335:
 						return 5216;

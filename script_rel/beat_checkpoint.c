@@ -2661,7 +2661,7 @@ void func_57()
 						vVar12 = { vVar6 + vVar9 * Vector(4f, 4f, 4f) };
 					}
 					func_119(&vVar12, 15, 10, 0);
-					PED::_0x8ACC0506743A8A5C(iLocal_1347, -1962193144, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(iLocal_1347, joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 					if (func_182(Global_35, iLocal_1347, 0, 1) < (4f + 1f))
 					{
 						PED::_0x802092B07E3B1EEA(iLocal_1347, Global_36, 3);
@@ -7926,7 +7926,7 @@ void func_214()
 	}
 	else
 	{
-		PED::_0x8ACC0506743A8A5C(&(uLocal_810[1]), -1962193144, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_810[1]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_1351);
 		WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_810[1]), joaat("WEAPON_REVOLVER_CATTLEMAN"), false, 0, false, false);
 		TASK::TASK_SWAP_WEAPON(0, 1, 0, 0, 0);
@@ -13992,7 +13992,7 @@ void func_399()
 			if (iLocal_1347 != &uLocal_810[3])
 			{
 				PED::_0x802092B07E3B1EEA(&(uLocal_810[3]), Global_36, 3);
-				PED::_0x8ACC0506743A8A5C(&(uLocal_810[3]), -1962193144, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(uLocal_810[3]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 				TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_810[3]), Global_35, -1, false, 1);
 				if (!PED::IS_PED_ON_MOUNT(&(uLocal_810[3])))
 				{
@@ -14002,7 +14002,7 @@ void func_399()
 			else if (!ENTITY::IS_ENTITY_PLAYING_ANIM(&(uLocal_810[2]), &(Local_53[13 /*2*/]), (Local_53[13 /*2*/])->f_1, 1))
 			{
 				PED::_0x802092B07E3B1EEA(&(uLocal_810[2]), Global_36, 3);
-				PED::_0x8ACC0506743A8A5C(&(uLocal_810[2]), -1962193144, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(uLocal_810[2]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 				TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_810[2]), Global_35, -1, false, 1);
 				if (!PED::IS_PED_ON_MOUNT(&(uLocal_810[2])))
 				{
@@ -18426,7 +18426,7 @@ int func_501(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

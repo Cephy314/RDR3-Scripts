@@ -11099,7 +11099,7 @@ void func_394(int iParam0, int iParam1, int iParam2, int iParam3)
 			PED::SET_PED_COMBAT_RANGE(&(iParam0->f_310[iParam1 /*14*/]), 0);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iParam0->f_310[iParam1 /*14*/]), 50, false);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iParam0->f_310[iParam1 /*14*/]), 42, false);
-			PED::_0x8ACC0506743A8A5C(&(iParam0->f_310[iParam1 /*14*/]), 1093694531, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(iParam0->f_310[iParam1 /*14*/]), joaat("OnAMovingTrain"), 1, -1082130432);
 			PED::SET_PED_CONFIG_FLAG(&(iParam0->f_310[iParam1 /*14*/]), 189, true);
 			func_499(&(iParam0->f_310[iParam1 /*14*/]));
 			break;
@@ -11108,7 +11108,7 @@ void func_394(int iParam0, int iParam1, int iParam2, int iParam3)
 			PED::SET_PED_COMBAT_RANGE(&(iParam0->f_310[iParam1 /*14*/]), 0);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iParam0->f_310[iParam1 /*14*/]), 50, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(iParam0->f_310[iParam1 /*14*/]), 42, false);
-			PED::_0x8ACC0506743A8A5C(&(iParam0->f_310[iParam1 /*14*/]), 1093694531, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(iParam0->f_310[iParam1 /*14*/]), joaat("OnAMovingTrain"), 1, -1082130432);
 			PED::SET_PED_CONFIG_FLAG(&(iParam0->f_310[iParam1 /*14*/]), 189, true);
 			func_499(&(iParam0->f_310[iParam1 /*14*/]));
 			break;

@@ -10291,7 +10291,7 @@ void func_284(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_219(func_462(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -18014,7 +18014,7 @@ void func_499(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_627(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_419(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_628(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_419(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_628(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 int func_500(int iParam0)

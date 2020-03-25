@@ -2090,7 +2090,7 @@ int func_89()
 	switch (iLocal_29)
 	{
 		case 0:
-			return 1198640232;
+			return joaat("SDN_GUNSMITH");
 		case 1:
 			return joaat("RHD_Gunsmith");
 		case 2:
@@ -23509,7 +23509,7 @@ void func_769(var uParam0, var uParam1, bool bParam2, bool bParam3)
 				if (!func_120(32))
 				{
 					func_453(0, 0);
-					COMPENDIUM::COMPENDIUM_GANG_ENCOUNTERED(55818986);
+					COMPENDIUM::COMPENDIUM_GANG_ENCOUNTERED(joaat("Gang_ODriscoll"));
 					func_517(32);
 				}
 			}
@@ -28474,7 +28474,7 @@ int func_963(bool bParam0, var uParam1)
 	func_224(2);
 	func_30(1, 8);
 	func_587(Local_62.f_1355[3 /*2*/], 1324.981f, -1323.507f, 78.32263f, 0f, 0f, 164.3203f, 9.572388f, 9.145508f, 2.818016f, "AMBRES_RHDGUN_MAIN_SHOP");
-	POPULATION::_0xB56D41A694E42E86(&(Local_62.f_1355[3 /*2*/]), 0, 0, 0, -1, 872186388, 0);
+	POPULATION::_0xB56D41A694E42E86(&(Local_62.f_1355[3 /*2*/]), 0, 0, 0, -1, joaat("SHOP_PEDS_RHODES"), 0);
 	func_317(Local_62.f_1392[3 /*3*/]);
 	PED::SET_PED_RESET_FLAG(Global_35, 53, true);
 	return 1;
@@ -53015,7 +53015,7 @@ void func_1880(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_1435(func_2139(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -54568,20 +54568,20 @@ void func_1925()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_2187(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_2187(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_2187(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_2187(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_2187(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_2187(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_2187(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_2187(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_2187(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_2187(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_2187(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_2187(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_2187(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_2187(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_2187(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_2187(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_2187(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_2187(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_2187(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_2187(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_2187(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_2187(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_2187(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_2187(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_2187(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_2187(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_2187(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_2187(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_2188())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bVar15, false, 2, false);
@@ -69365,7 +69365,7 @@ void func_2404(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2497(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_2106(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2498(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_2106(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2498(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2405(int iParam0, int iParam1)

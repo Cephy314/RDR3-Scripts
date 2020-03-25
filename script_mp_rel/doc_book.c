@@ -744,7 +744,7 @@ void func_29(var uParam0, var uParam1)
 	uParam0->f_120 = 1;
 	switch (TASK::_0x804425C4BBD00883(Global_34))
 	{
-		case 2129073771: /* GXTEntry: "Mary-Beth\'s Notebook" */
+		case joaat("DOCUMENT_MARY_BETH_JOURNAL"):
 			iLocal_27 = joaat("ui_doc_mb_diary1");
 			TXD::_REQUEST_STREAMED_TXD(iLocal_27, false);
 			break;

@@ -1285,9 +1285,9 @@ void func_30()
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_569[0]), 57, false);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_569[1]), 57, false);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_569[2]), 57, false);
-	PED::_0x8ACC0506743A8A5C(&(uLocal_569[0]), -1838134243, 1, 10f);
-	PED::_0x8ACC0506743A8A5C(&(uLocal_569[1]), -1838134243, 1, 10f);
-	PED::_0x8ACC0506743A8A5C(&(uLocal_569[2]), -1838134243, 1, 10f);
+	PED::_0x8ACC0506743A8A5C(&(uLocal_569[0]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
+	PED::_0x8ACC0506743A8A5C(&(uLocal_569[1]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
+	PED::_0x8ACC0506743A8A5C(&(uLocal_569[2]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
 	PED::_0x815C0074A1BC0D93(&(uLocal_569[0]), 2);
 	PED::_0x815C0074A1BC0D93(&(uLocal_569[1]), 2);
 	PED::_0x815C0074A1BC0D93(&(uLocal_569[2]), 2);
@@ -10059,7 +10059,7 @@ int func_273(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

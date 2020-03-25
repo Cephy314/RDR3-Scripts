@@ -3147,7 +3147,7 @@ int func_79(bool bParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(iVar7);
-				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
+				if (iVar8 == joaat("CARRIABLE_SADDLE") || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}
@@ -5256,15 +5256,15 @@ int func_184(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -7009108;
+			return joaat("NBX_CIVILIANS");
 		case 1:
-			return -7009108;
+			return joaat("NBX_CIVILIANS");
 		case 3:
-			return 99634802;
+			return joaat("VAL_CIVILIANS");
 		case 4:
-			return 10098011;
+			return joaat("BLA_UPPERCLASS");
 	}
-	return -7009108;
+	return joaat("NBX_CIVILIANS");
 }
 
 int func_185(int iParam0, int iParam1)

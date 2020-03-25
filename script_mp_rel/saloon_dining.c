@@ -7807,21 +7807,21 @@ int func_163(int iParam0)
 		case 5:
 			return joaat("VAL_Bartender");
 		case 6:
-			return 1690461416;
+			return joaat("VAL_SLUM_BARTENDER");
 		case 3:
 			return joaat("RHD_Bartender");
 		case 2:
-			return 785713260;
+			return joaat("SDN_BARTENDER");
 		case 1:
-			return -2099882877;
+			return joaat("SDN_BARTENDER_SLUMS");
 		case 8:
 			return joaat("VHT_Bartender");
 		case 0:
 			return joaat("BLW_Bartender");
 		case 4:
-			return 1016865322;
+			return joaat("TBL_BARTENDER");
 		case 7:
-			return 19124873;
+			return joaat("AMD_BARTENDER");
 		default:
 			break;
 	}

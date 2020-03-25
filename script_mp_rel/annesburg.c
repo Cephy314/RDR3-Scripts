@@ -825,8 +825,8 @@ void func_37(int iParam0)
 		return;
 	}
 	func_71();
-	func_72(0, -1855532022);
-	func_72(2, 617504531);
+	func_72(0, joaat("ASB_CIVILIANS"));
+	func_72(2, joaat("ASB_LAW_DEPUTIES"));
 }
 
 bool func_38(int iParam0)
@@ -960,7 +960,7 @@ int func_44(int iParam0)
 		func_92();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_73, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, 1055032020))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
 		{
 			switch (iLocal_73)
 			{

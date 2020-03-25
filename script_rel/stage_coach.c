@@ -132,7 +132,7 @@ void func_1(int iParam0)
 	}
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_430);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(bLocal_431);
-	if (UIAPPS::_IS_APP_ACTIVE(1833066477))
+	if (UIAPPS::_IS_APP_ACTIVE(joaat("fast_travel_menu")))
 	{
 		func_8(&Local_422);
 		func_9(&Local_14);
@@ -426,7 +426,7 @@ int func_2(int iParam0)
 			}
 			break;
 		case 11:
-			if (UIAPPS::_IS_ANY_APP_RUNNING() && !UIAPPS::_IS_APP_ACTIVE(1833066477))
+			if (UIAPPS::_IS_ANY_APP_RUNNING() && !UIAPPS::_IS_APP_ACTIVE(joaat("fast_travel_menu")))
 			{
 				func_8(&Local_422);
 				func_9(&Local_14);
@@ -1092,7 +1092,7 @@ void func_7(bool bParam0)
 void func_8(var uParam0)
 {
 	func_90();
-	UIAPPS::_CLOSE_APP_BY_HASH(1833066477);
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("fast_travel_menu"));
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_2);
 	PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
 	MAP::DISPLAY_RADAR(true);
@@ -2275,10 +2275,10 @@ int func_49(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(1833066477))
+	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")))
 	{
 	}
-	else if (UIAPPS::_LAUNCH_APP_BY_HASH(1833066477) == 0)
+	else if (UIAPPS::_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")) == 0)
 	{
 	}
 	func_141(uParam0, iParam1);
@@ -2313,9 +2313,9 @@ int func_51(var uParam0)
 	iVar0 = 1;
 	MAP::DISPLAY_RADAR(false);
 	func_143(0);
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(1833066477))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("fast_travel_menu")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(1833066477, &Var3))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("fast_travel_menu"), &Var3))
 		{
 			if (Var3.f_2 == -997855324)
 			{
@@ -2353,7 +2353,7 @@ int func_51(var uParam0)
 				}
 			}
 		}
-		UIEVENTS::_EVENT_MANAGER_POP_EVENT(1833066477);
+		UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("fast_travel_menu"));
 	}
 	return iVar0;
 }

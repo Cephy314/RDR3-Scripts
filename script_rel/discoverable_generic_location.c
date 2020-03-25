@@ -6059,7 +6059,7 @@ int func_77(var uParam0, int iParam1)
 		case 429544447:
 			return 1157890702 /* GXTEntry: "Letter to Brother Rodolfo" */;
 		case 1347913620:
-			return 1264764089 /* GXTEntry: "Civil War Report" */;
+			return joaat("DOCUMENT_CWFORT_JOURNAL");
 		case -2009137002:
 			return -1303435604 /* GXTEntry: "Note from the Sculptor" */;
 		case -780455182:

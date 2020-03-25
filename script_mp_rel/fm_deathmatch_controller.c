@@ -11047,7 +11047,7 @@ void func_323()
 
 void func_324(int iParam0)
 {
-	if (iLocal_15848 != 401860102)
+	if (iLocal_15848 != joaat("MoodNone"))
 	{
 		PED::_0x8B3B71C80A29A4BB(*iParam0, iLocal_15848, 6);
 	}
@@ -34595,7 +34595,7 @@ void func_1201(var uParam0)
 
 	sVar0 = "Out_of_Bounds";
 	sVar1 = "RDRO_Countdown_Sounds";
-	if ((((((((((((UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) && UIAPPS::_0x96FD694FE5BE55DC(joaat("pause_menu")) != 1271225230) || UIAPPS::_IS_APP_RUNNING(joaat("social_club_feed"))) || UIAPPS::_IS_APP_RUNNING(683057487)) || UIAPPS::_IS_APP_RUNNING(-1318692639)) || UIAPPS::_IS_APP_RUNNING(joaat("help_menu"))) || UIAPPS::_IS_APP_RUNNING(joaat("policies_menu"))) || UIAPPS::_IS_APP_RUNNING(1916894743)) || UIAPPS::_IS_APP_RUNNING(joaat("abilities"))) || UIAPPS::_IS_APP_RUNNING(joaat("store"))) || UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay"))) || UIAPPS::_IS_APP_RUNNING(joaat("progress_menu"))) || UIAPPS::_IS_APP_RUNNING(-479097442))
+	if ((((((((((((UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) && UIAPPS::_0x96FD694FE5BE55DC(joaat("pause_menu")) != 1271225230) || UIAPPS::_IS_APP_RUNNING(joaat("social_club_feed"))) || UIAPPS::_IS_APP_RUNNING(683057487)) || UIAPPS::_IS_APP_RUNNING(-1318692639)) || UIAPPS::_IS_APP_RUNNING(joaat("help_menu"))) || UIAPPS::_IS_APP_RUNNING(joaat("policies_menu"))) || UIAPPS::_IS_APP_RUNNING(joaat("settings_menu"))) || UIAPPS::_IS_APP_RUNNING(joaat("abilities"))) || UIAPPS::_IS_APP_RUNNING(joaat("store"))) || UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay"))) || UIAPPS::_IS_APP_RUNNING(joaat("progress_menu"))) || UIAPPS::_IS_APP_RUNNING(joaat("stats_menu")))
 	{
 		bVar2 = true;
 	}
@@ -51680,7 +51680,7 @@ int func_1762(int iParam0, bool bParam1)
 			return 0;
 		}
 		iVar1 = NETWORK::NET_TO_OBJ(iVar0);
-		TASK::_0xF0B4F759F35CC7F5(iVar1, -2141086268, 0, 0, 0);
+		TASK::_0xF0B4F759F35CC7F5(iVar1, joaat("MP_MONEYBAG"), 0, 0, 0);
 		ENTITY::_0x18FF3110CF47115D(iVar1, 2, true);
 		ENTITY::_0x18FF3110CF47115D(iVar1, 11, true);
 		ENTITY::_0x18FF3110CF47115D(iVar1, 4, true);

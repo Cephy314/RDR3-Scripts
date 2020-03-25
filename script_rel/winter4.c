@@ -32389,7 +32389,7 @@ void func_648(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_196(func_1197(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -33737,20 +33737,20 @@ void func_690()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1233(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1233(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1233(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1233(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1233(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1233(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1233(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1233(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1233(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1233(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1233(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1233(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1233(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1233(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1233(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1233(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1233(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1233(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1233(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1233(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1233(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1233(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1233(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1233(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1233(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1233(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1233(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1233(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_29())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bVar15, false, 2, false);
@@ -63199,7 +63199,7 @@ void func_1447()
 		PED::REMOVE_PED_DEFENSIVE_AREA(&(Local_14.f_3[6]), true);
 		PED::_0xFC3DB99C8144CD81(&(Local_14.f_3[6]), &(iLocal_592[3]), 0, false, 0);
 		TASK::TASK_LOOK_AT_ENTITY(&(Local_14.f_3[6]), bVar0, -1, 48, 51, 0);
-		PED::_0x8ACC0506743A8A5C(&(Local_14.f_3[6]), 1240409539, 2, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(Local_14.f_3[6]), joaat("Script_MidCombat"), 2, -1082130432);
 		PED::SET_PED_CONFIG_FLAG(&(Local_14.f_3[6]), 189, true);
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_484);
 		TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
@@ -63921,7 +63921,7 @@ void func_1487(var uParam0)
 			if (!func_1328(Global_35, func_1466(1, 0), 2f, 1, 1))
 			{
 				PED::_0xD8736EFDA38EDC5C(&(iLocal_199[5]), func_397(9, 0), 100f);
-				PED::_0x8ACC0506743A8A5C(&(iLocal_199[5]), 1307780291, 2, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(iLocal_199[5]), joaat("Script_StartOfCombat_CoveringFire"), 2, -1082130432);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_484);
 				TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
 				TASK::TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD_USING_COMBAT_STYLE(0, func_397(9, 0), func_397(5, 24), 2f, 1, 3f, 4f, 1, 0, 0, joaat("firing_pattern_burst_fire"));
@@ -64184,7 +64184,7 @@ int func_1489()
 		func_934(&(Local_14.f_14[3]), -357.2004f, 1388.024f, 154.7759f, 249.2648f, 2, 1073741824 /* Float: 2f */);
 		func_2098(Local_14.f_14[3], 0.25f);
 		PED::_0xFC3DB99C8144CD81(&(Local_14.f_14[3]), &(iLocal_579[2]), 0, false, 0);
-		PED::_0x8ACC0506743A8A5C(&(Local_14.f_14[3]), -26381796, 2, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(Local_14.f_14[3]), joaat("Script_PreCombat"), 2, -1082130432);
 		TASK::OPEN_SEQUENCE_TASK(&iVar1);
 		TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
 		TASK::TASK_STAND_STILL(0, 500);
@@ -85288,7 +85288,7 @@ void func_2102(var uParam0)
 			{
 				if ((!ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_9, 0) || ANIMSCENE::_0xCDC5512A407CF08D(uParam0->f_9)) || ANIMSCENE::_0x3FBC3F51BF12DFBF(uParam0->f_9) > uParam0->f_10)
 				{
-					PED::_0x8ACC0506743A8A5C(*uParam0, 1819659395, 2, -1082130432);
+					PED::_0x8ACC0506743A8A5C(*uParam0, joaat("Script_StartOfCombat_UnderFire"), 2, -1082130432);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_484);
 					TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
 					TASK::TASK_GO_TO_COORD_AND_AIM_AT_HATED_ENTITIES_NEAR_COORD_USING_COMBAT_STYLE(0, uParam0->f_15, Global_36, 2f, 1, 3f, 4f, 1, 8193, 0, joaat("firing_pattern_burst_fire"));
@@ -91484,55 +91484,55 @@ int func_2362(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -91992,31 +91992,31 @@ int func_2388(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -92378,7 +92378,7 @@ void func_2401(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2792(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1158(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2793(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1158(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2793(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2402(int iParam0, int iParam1)
@@ -107435,11 +107435,11 @@ int func_3000(int iParam0)
 	}
 	switch (((*Global_1360165)[iParam0 /*1157*/])->f_127)
 	{
-		case -784953535:
-		case -543937540:
-		case -233385727:
-		case 893704044:
-		case 1132950513:
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_2"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_3"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_1"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_4"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_5"):
 			return 1;
 		default:
 			break;

@@ -3146,7 +3146,7 @@ int func_118(int iParam0)
 		case 1:
 			return 1846188867;
 		case 4:
-			return -87251158;
+			return joaat("Gang_Laramie");
 		case 3:
 			return -61242338;
 		case 5:
@@ -4512,7 +4512,7 @@ int func_187(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

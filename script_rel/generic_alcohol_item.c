@@ -3718,7 +3718,7 @@ void func_165(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_202(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_204(sVar7, sVar1, uVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_203(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_204(sVar7, sVar1, uVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_203(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_166(char* sParam0, char* sParam1, int iParam2)

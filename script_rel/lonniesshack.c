@@ -2327,9 +2327,9 @@ int func_88(int iParam0, bool bParam1)
 
 void func_89(bool bParam0, bool bParam1, bool bParam2)
 {
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1117620256, bParam0);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1737126224, bParam1);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-796231184, bParam2);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CFJ_FATHER"), bParam0);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CFJ_SON"), bParam1);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("CFJ_SON_OLDER"), bParam2);
 }
 
 void func_90(bool bParam0, bool bParam1, bool bParam2, bool bParam3)

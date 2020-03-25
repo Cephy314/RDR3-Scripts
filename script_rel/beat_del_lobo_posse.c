@@ -9857,7 +9857,7 @@ void func_211()
 		case 0:
 			func_22(Local_421[2 /*21*/], &Local_527);
 			func_215(uLocal_372[2]);
-			PED::_0x8ACC0506743A8A5C(&(uLocal_372[2]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_372[2]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			func_142(&(uLocal_372[2]), func_141(131072, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */), 100, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
 			func_152(vLocal_617[2 /*3*/]);
 			iLocal_588[2] = 1;
@@ -9900,7 +9900,7 @@ void func_211()
 		case 0:
 			func_22(Local_421[3 /*21*/], &Local_527);
 			func_215(uLocal_372[3]);
-			PED::_0x8ACC0506743A8A5C(&(uLocal_372[3]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_372[3]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			func_142(&(uLocal_372[3]), func_143(0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */), 100, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
 			func_152(vLocal_617[3 /*3*/]);
 			iLocal_588[3] = 1;
@@ -11449,7 +11449,7 @@ void func_236()
 		case 0:
 			func_22(Local_421[2 /*21*/], &Local_527);
 			func_215(uLocal_372[2]);
-			PED::_0x8ACC0506743A8A5C(&(uLocal_372[2]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_372[2]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			func_142(&(uLocal_372[2]), func_141(131072, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */), 100, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
 			func_152(vLocal_617[2 /*3*/]);
 			iLocal_588[2] = 1;
@@ -11492,7 +11492,7 @@ void func_236()
 		case 0:
 			func_22(Local_421[3 /*21*/], &Local_527);
 			func_215(uLocal_372[3]);
-			PED::_0x8ACC0506743A8A5C(&(uLocal_372[3]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_372[3]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			func_142(&(uLocal_372[3]), func_141(131072, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */), 100, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
 			func_152(vLocal_617[3 /*3*/]);
 			iLocal_588[3] = 1;
@@ -14906,7 +14906,7 @@ int func_350(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

@@ -863,7 +863,7 @@ void func_19()
 			func_92(&(uLocal_447[1]), joaat("WEAPON_THROWN_DYNAMITE"), 0, 0, 0, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 			func_93(&(Local_118.f_5), &(uLocal_447[0]), 1, 20f, 60f, 1084227584 /* Float: 5f */);
 			func_93(&(Local_118.f_5), &(uLocal_447[1]), 1, 20f, 90f, 40f);
-			iLocal_734[0] = -988409641;
+			iLocal_734[0] = joaat("MoodAgitated");
 			iLocal_734[1] = -78783508;
 			break;
 		case 0:
@@ -5029,7 +5029,7 @@ int func_157()
 				PED::_0x935CF6E42BAF7F4D(&(uLocal_447[0]));
 				if (iLocal_473 == 0)
 				{
-					iLocal_734[0] = -988409641;
+					iLocal_734[0] = joaat("MoodAgitated");
 				}
 				else
 				{
@@ -14442,7 +14442,7 @@ int func_402(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

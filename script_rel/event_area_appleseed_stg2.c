@@ -640,7 +640,7 @@ void __EntryFunction__()
 	func_13(65536, func_31());
 	func_13(256, func_32());
 	func_33();
-	Local_614.f_13 = 925190986;
+	Local_614.f_13 = joaat("LOGGING_WORKERS");
 	func_34();
 	if (!func_22(&Local_1617, 32))
 	{
@@ -3710,7 +3710,7 @@ void func_89()
 	{
 		if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[5])))
 		{
-			iVar5 = func_285(&uVar0, &uLocal_2182, 4, &(iLocal_75[5]), 0, 0, 0, -555162361, 1, 0, 1, 0);
+			iVar5 = func_285(&uVar0, &uLocal_2182, 4, &(iLocal_75[5]), 0, 0, 0, joaat("DOMESTIC_DRAFT_HORSE"), 1, 0, 1, 0);
 			iVar6 = 0;
 			while (iVar6 < iVar5)
 			{

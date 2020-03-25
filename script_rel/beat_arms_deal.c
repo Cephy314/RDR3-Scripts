@@ -5226,7 +5226,7 @@ int func_146()
 			break;
 		case 4:
 			fVar3 = func_351(func_286(&Local_51, iLocal_1252), 0f, 8f);
-			PED::_0x8ACC0506743A8A5C(&(iLocal_35[iLocal_1252]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(iLocal_35[iLocal_1252]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			TASK::OPEN_SEQUENCE_TASK(&iVar4);
 			if ((iLocal_1252 == 3 && !func_352(&(iLocal_35[iLocal_1252]))) || (iLocal_1252 == 1 && func_352(&(iLocal_35[iLocal_1252]))))
 			{
@@ -9080,7 +9080,7 @@ void func_256(var uParam0)
 	{
 		return;
 	}
-	PED::_0x8ACC0506743A8A5C(*uParam0, 166028666, 1, -1082130432);
+	PED::_0x8ACC0506743A8A5C(*uParam0, joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 }
 
 void func_257(int iParam0, int iParam1)
@@ -18436,7 +18436,7 @@ int func_588(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

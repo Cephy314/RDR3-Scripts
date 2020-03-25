@@ -8185,19 +8185,19 @@ int func_209(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 bool func_210()
@@ -10198,7 +10198,7 @@ int func_267(int iParam0)
 						{
 							if (func_253(iParam0, 1, 0))
 							{
-								PED::_0x8ACC0506743A8A5C(&(iParam0->f_16[0]), -1962193144, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(iParam0->f_16[0]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 								TASK::TASK_AIM_GUN_AT_ENTITY(&(iParam0->f_16[0]), Global_35, 15000, false, 1);
 								func_469(iParam0, "FINAL_WARNING", 4096, -1082130432 /* Float: -1f */, 1, 0, 3);
 								func_124(&(iParam0->f_477));
@@ -18195,13 +18195,13 @@ int func_405(int iParam0, int iParam1)
 			case 1322:
 				return -1893576881;
 			case 1323:
-				return 818304266;
+				return joaat("LEVDES_SPAWN_AGED_PIRATE_RUM");
 			case 1324:
-				return 645213611;
+				return joaat("LEVDES_SPAWN_ALASKAN_GINSENG_PICKUP");
 			case 1325:
-				return 1423386116;
+				return joaat("LEVDES_SPAWN_AMERICAN_GINSENG_PICKUP");
 			case 1326:
-				return 1343454834;
+				return joaat("LEVDES_SPAWN_ANY_GUN_AMMO");
 			case 1327:
 				return -478288727;
 			case 1328:
@@ -18229,7 +18229,7 @@ int func_405(int iParam0, int iParam1)
 			case 1339:
 				return 1666816032;
 			case 1340:
-				return -982949949;
+				return joaat("LEVDES_SPAWN_BURDOCK_PICKUP");
 			case 1341:
 				return 2080227480;
 			case 1342:
@@ -18283,9 +18283,9 @@ int func_405(int iParam0, int iParam1)
 			case 1366:
 				return -34945532;
 			case 1367:
-				return 871552017;
+				return joaat("LEVDES_SPAWN_GINSENG_ELIXER");
 			case 1368:
-				return 737053162;
+				return joaat("LEVDES_SPAWN_GOLDEN_CURRANT_PICKUP");
 			case 1369:
 				return 874796504;
 			case 1370:
@@ -18293,9 +18293,9 @@ int func_405(int iParam0, int iParam1)
 			case 1371:
 				return -1739681058;
 			case 1372:
-				return 879757384;
+				return joaat("LEVDES_SPAWN_HUMMINGBIRD_SAGE_PICKUP");
 			case 1373:
-				return -742260621;
+				return joaat("LEVDES_SPAWN_HUNTER_PICKUPS");
 			case 1374:
 				return -1249899728;
 			case 1375:
@@ -18309,7 +18309,7 @@ int func_405(int iParam0, int iParam1)
 			case 1379:
 				return -867409802;
 			case 1380:
-				return -2033066696;
+				return joaat("LEVDES_SPAWN_MILKWEED_PICKUP");
 			case 1381:
 				return -1278411717;
 			case 1382:
@@ -18405,15 +18405,15 @@ int func_405(int iParam0, int iParam1)
 			case 1427:
 				return -1330027742;
 			case 1428:
-				return -2097390394;
+				return joaat("LEVDES_SPAWN_VALERIAN_ROOT");
 			case 1429:
 				return 662036617;
 			case 1430:
 				return 1026701561;
 			case 1431:
-				return 942706082;
+				return joaat("LEVDES_SPAWN_WILD_TOBACCO_PICKUP");
 			case 1432:
-				return -2015791616;
+				return joaat("LEVDES_SPAWN_YARROW_PICKUP");
 			case 1433:
 				return 920290480;
 			case 1434:
@@ -25236,7 +25236,7 @@ int func_591(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -34746,55 +34746,55 @@ int func_954(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -34836,31 +34836,31 @@ int func_957(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:

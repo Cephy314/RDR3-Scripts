@@ -32345,7 +32345,7 @@ void func_602(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_331(func_1064(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -33898,20 +33898,20 @@ void func_647()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1116(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1116(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1116(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1116(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1116(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1116(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1116(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1116(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1116(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1116(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1116(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1116(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1116(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1116(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1116(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1116(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1116(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1116(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1116(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1116(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1116(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1116(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1116(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1116(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1116(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1116(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1116(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1116(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_29())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -53973,7 +53973,7 @@ void func_1221(char[4] cParam0)
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[0 /*49*/]), true);
 				TASK::CLEAR_PED_TASKS(&(Local_121[0 /*49*/]), 1, 0);
 				(Local_121[0 /*49*/])->f_7 = { Vector(47.8039f, -3305.655f, 3871.533f) + vLocal_4957 };
-				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, Vector(49.9f, -3320f, 3863.7f) + vLocal_4957, 2f, 0, 0.2f, 0.2f, 1, 512, 0, joaat("firing_pattern_burst_fire"), 0);
 				TASK::TASK_AIM_GUN_AT_COORD(0, Vector(49.9f, -3320f, 3863.7f) + vLocal_4957, -1, false, false);
@@ -54031,7 +54031,7 @@ void func_1221(char[4] cParam0)
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[0 /*49*/]), true);
 				TASK::CLEAR_PED_TASKS(&(Local_121[0 /*49*/]), 1, 0);
 				(Local_121[0 /*49*/])->f_7 = { Vector(47.7695f, -3316.378f, 3865.333f) + vLocal_4957 };
-				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, Vector(51.8f, -3340.7f, 3861.9f) + vLocal_4957, 2f, 0, 0.2f, 0.2f, 1, 512, 0, joaat("firing_pattern_burst_fire"), 0);
 				TASK::TASK_AIM_GUN_AT_COORD(0, Vector(51.8f, -3340.7f, 3861.9f) + vLocal_4957, -1, false, false);
@@ -54079,7 +54079,7 @@ void func_1221(char[4] cParam0)
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[0 /*49*/]), true);
 					TASK::CLEAR_PED_TASKS(&(Local_121[0 /*49*/]), 1, 0);
 					(Local_121[0 /*49*/])->f_7 = { Vector(47.7695f, -3316.378f, 3865.333f) + vLocal_4957 };
-					PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), -26381796, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 					TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, Vector(51.8f, -3340.7f, 3861.9f) + vLocal_4957, 2f, 0, 0.2f, 0.2f, 1, 512, 0, joaat("firing_pattern_burst_fire"), 0);
 					TASK::TASK_AIM_GUN_AT_COORD(0, Vector(51.8f, -3340.7f, 3861.9f) + vLocal_4957, -1, false, false);
@@ -54242,7 +54242,7 @@ void func_1221(char[4] cParam0)
 				(Local_121[0 /*49*/])->f_43 = 1;
 				(Local_121[0 /*49*/])->f_44 = 0;
 				(Local_121[0 /*49*/])->f_21 = 0;
-				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), -1838134243, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, 1336.1f, -6925f, 58.4f, 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -54465,7 +54465,7 @@ void func_1222(char[4] cParam0)
 				Local_1743.f_43 = 1;
 				Local_1743.f_44 = 0;
 				Local_1743.f_21 = 0;
-				PED::_0x8ACC0506743A8A5C(Local_1743, 1819659395, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(Local_1743, joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_1743, true);
 				TASK::CLEAR_PED_TASKS(Local_1743, 1, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
@@ -54588,7 +54588,7 @@ void func_1222(char[4] cParam0)
 			}
 			else
 			{
-				PED::_0x8ACC0506743A8A5C(Local_1743, -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(Local_1743, joaat("Script_PreCombat"), 1, -1082130432);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_1743, true);
 				TASK::CLEAR_PED_TASKS(Local_1743, 1, 0);
 				Local_1743.f_7 = { Vector(53.1513f, -3348.167f, 3862.28f) + vLocal_4957 };
@@ -54613,7 +54613,7 @@ void func_1222(char[4] cParam0)
 			{
 				if (!func_1680("GUA3_IG2") || ANIMSCENE::_0xD8254CB2C586412B(iLocal_4909, 0))
 				{
-					PED::_0x8ACC0506743A8A5C(Local_1743, -26381796, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(Local_1743, joaat("Script_PreCombat"), 1, -1082130432);
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_1743, true);
 					TASK::CLEAR_PED_TASKS(Local_1743, 1, 0);
 					Local_1743.f_7 = { Vector(53.1513f, -3348.167f, 3862.28f) + vLocal_4957 };
@@ -54890,7 +54890,7 @@ void func_1223(char[4] cParam0)
 		case 2:
 			if (PED::IS_PED_INJURED(&(Local_466[0 /*49*/])) || func_1679(PLAYER::PLAYER_PED_ID(), &(uLocal_4962[2]), 1, 0))
 			{
-				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				PED::_0x437C08DB4FEBE2BD(&(Local_121[3 /*49*/]), "stealth", 1f, -1);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[3 /*49*/]), true);
 				(Local_121[3 /*49*/])->f_7 = { Vector(47.3393f, -3286.894f, 3881.856f) + vLocal_4957 };
@@ -54927,7 +54927,7 @@ void func_1223(char[4] cParam0)
 			}
 			if ((func_1711(Local_466[2 /*49*/]) && func_1711(Local_466[3 /*49*/])) && func_1711(Local_466[4 /*49*/]))
 			{
-				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[3 /*49*/]), true);
 				TASK::CLEAR_PED_TASKS(&(Local_121[3 /*49*/]), 1, 0);
 				(Local_121[3 /*49*/])->f_7 = { Vector(47.8021f, -3311.593f, 3869.86f) + vLocal_4957 };
@@ -54977,7 +54977,7 @@ void func_1223(char[4] cParam0)
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(Local_121[3 /*49*/]), 30, false);
 				(Local_121[3 /*49*/])->f_7 = { 1302.598f, -6898.627f, 48.29556f };
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(Local_121[3 /*49*/]), 27, false);
-				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), 1240409539, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), joaat("Script_MidCombat"), 1, -1082130432);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[3 /*49*/]), true);
 				TASK::CLEAR_PED_TASKS(&(Local_121[3 /*49*/]), 1, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
@@ -55012,7 +55012,7 @@ void func_1223(char[4] cParam0)
 			}
 			else if (PED::IS_PED_INJURED(&(Local_466[6 /*49*/])))
 			{
-				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				(Local_121[3 /*49*/])->f_7 = { Vector(47.37f, -3324.752f, 3866.226f) + vLocal_4957 };
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[3 /*49*/])->f_7, Vector(54.6f, -3344.2f, 3862.2f) + vLocal_4957, 2f, 0, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
@@ -55350,7 +55350,7 @@ void func_1224()
 							iLocal_48[iVar0] = 2;
 							break;
 						case 5:
-							PED::_0x8ACC0506743A8A5C(&(Local_466[iVar0 /*49*/]), 1819659395, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_466[iVar0 /*49*/]), joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 							TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY_USING_COMBAT_STYLE(0, (Local_466[iVar0 /*49*/])->f_7, PLAYER::PLAYER_PED_ID(), 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -55363,7 +55363,7 @@ void func_1224()
 							iLocal_48[iVar0] = 2;
 							break;
 						case 7:
-							PED::_0x8ACC0506743A8A5C(&(Local_466[iVar0 /*49*/]), -26381796, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_466[iVar0 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 							TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY_USING_COMBAT_STYLE(0, (Local_466[iVar0 /*49*/])->f_7, PLAYER::PLAYER_PED_ID(), 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -55541,7 +55541,7 @@ void func_1224()
 							{
 								if (func_1670(&(Local_466[iVar0 /*49*/]), 242628503, -2, 1))
 								{
-									PED::_0x8ACC0506743A8A5C(&(Local_466[iVar0 /*49*/]), 1240409539, 1, -1082130432);
+									PED::_0x8ACC0506743A8A5C(&(Local_466[iVar0 /*49*/]), joaat("Script_MidCombat"), 1, -1082130432);
 									TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 									TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY_USING_COMBAT_STYLE(0, (Local_466[iVar0 /*49*/])->f_7, PLAYER::PLAYER_PED_ID(), 2f, 0, 0.2f, 0.2f, 0, 512, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
 									TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -56330,7 +56330,7 @@ void func_1235(char[4] cParam0)
 			break;
 		case 4:
 			(Local_121[0 /*49*/])->f_7 = { 1357.347f, -6999.174f, 53.9364f };
-			PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), 1240409539, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), joaat("Script_MidCombat"), 1, -1082130432);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 			TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, 1368.6f, -6999f, 57f, 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -56365,7 +56365,7 @@ void func_1235(char[4] cParam0)
 				(Local_121[0 /*49*/])->f_7 = { Vector(53.6668f, -3415.205f, 3922.707f) + vLocal_4957 };
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[0 /*49*/]), true);
 				TASK::CLEAR_PED_TASKS(&(Local_121[0 /*49*/]), 1, 0);
-				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, Vector(57.3f, -3414.2f, 3936.5f) + vLocal_4957, 2f, 0, 0.2f, 0.2f, 1, 512, 0, joaat("firing_pattern_burst_fire"), 0);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -56528,7 +56528,7 @@ void func_1236(char[4] cParam0)
 			break;
 		case 2:
 			(Local_121[3 /*49*/])->f_7 = { 1345.833f, -6983.418f, 59.75917f };
-			PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), -26381796, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(Local_121[3 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 			TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[3 /*49*/])->f_7, 1375.2f, -6999.9f, 59.1f, 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -56573,7 +56573,7 @@ void func_1236(char[4] cParam0)
 					{
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[3 /*49*/]), true);
 						TASK::CLEAR_PED_TASKS(&(Local_121[3 /*49*/]), 1, 0);
-						PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), 1240409539, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_MidCombat"), 1, -1082130432);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, Vector(58.2662f, -3399.66f, 3905.416f) + vLocal_4957, Vector(56.5f, -3408.8f, 3924.6f) + vLocal_4957, 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -56861,7 +56861,7 @@ void func_1240(char[4] cParam0)
 			{
 				TASK::WAYPOINT_PLAYBACK_OVERRIDE_SPEED(Local_1743, 2f, 0, -1082130432, 0);
 			}
-			PED::_0x8ACC0506743A8A5C(Local_1743, -1681148485, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(Local_1743, joaat("Script_GetIntoPositionWhileAimingButNotShooting"), 1, -1082130432);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 			TASK::TASK_PAUSE(0, 500);
 			TASK::TASK_FOLLOW_WAYPOINT_RECORDING(false, "guama_3_stage_3_hercule_0", 0, 296, -1, 0, 0, -1);
@@ -56942,7 +56942,7 @@ void func_1240(char[4] cParam0)
 				Local_1743.f_42 = &iLocal_5020[1];
 				Local_1743.f_43 = 1;
 				Local_1743.f_44 = 0;
-				PED::_0x8ACC0506743A8A5C(Local_1743, -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(Local_1743, joaat("Script_PreCombat"), 1, -1082130432);
 				PED::_0x7DE9692C6F64CFE8(Local_1743, false, "null", 0);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_PAUSE(0, 500);
@@ -56983,7 +56983,7 @@ void func_1240(char[4] cParam0)
 			{
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_1743, true);
 				TASK::CLEAR_PED_TASKS(Local_1743, 1, 0);
-				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), 1240409539, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_MidCombat"), 1, -1082130432);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, Vector(56.42972f, -3402.418f, 3932.66f) + vLocal_4957, Vector(58.1f, -3405.5f, 3925.7f) + vLocal_4957, 2f, 1, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_5019);
@@ -58472,7 +58472,7 @@ void func_1264()
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_121[0 /*49*/]), true);
 				TASK::CLEAR_PED_TASKS(&(Local_121[0 /*49*/]), 1, 0);
 				(Local_121[0 /*49*/])->f_7 = { Vector(51.74603f, -3419.736f, 3878.66f) + vLocal_4957 };
-				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), -26381796, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(Local_121[0 /*49*/]), joaat("Script_PreCombat"), 1, -1082130432);
 				PED::_0x437C08DB4FEBE2BD(&(Local_121[0 /*49*/]), "cautious", 1f, -1);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_5019);
 				TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_COORD_USING_COMBAT_STYLE(0, (Local_121[0 /*49*/])->f_7, Vector(50.1f, -3399.4f, 3844.4f) + vLocal_4957, 2f, 0, 0.5f, 0.5f, 1, 0, 0, joaat("firing_pattern_burst_fire"), 0);
@@ -82796,55 +82796,55 @@ int func_2023(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -82891,31 +82891,31 @@ int func_2026(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -83277,7 +83277,7 @@ void func_2039(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2367(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1023(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2368(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1023(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2368(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2040(int iParam0, int iParam1)

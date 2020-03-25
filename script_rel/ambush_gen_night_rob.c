@@ -3041,7 +3041,7 @@ int func_118(int iParam0)
 		case 1:
 			return 1846188867;
 		case 4:
-			return -87251158;
+			return joaat("Gang_Laramie");
 		case 3:
 			return -61242338;
 		case 5:
@@ -3620,7 +3620,7 @@ void func_144()
 		vVar0 = { func_280(&Local_274, 0) };
 		fVar3 = func_281(&Local_274, 0);
 		PED::_0x7DE9692C6F64CFE8(&(uLocal_15[0]), false, 0, 0);
-		PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), 166028666, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_15[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_15[0]), vVar0, 3f, 20000, 0.25f, 2048, fVar3);
 		TASK::OPEN_SEQUENCE_TASK(&iVar4);
 		TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, vVar0, Global_35, 2f, 0, 1056964608, 1082130432, 1, 2048, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
@@ -3640,7 +3640,7 @@ void func_144()
 		vVar0 = { func_280(&Local_274, 1) };
 		fVar3 = func_281(&Local_274, 1);
 		PED::_0x7DE9692C6F64CFE8(&(uLocal_15[1]), false, 0, 0);
-		PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), 166028666, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 		TASK::OPEN_SEQUENCE_TASK(&iVar4);
 		TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, vVar0, Global_35, 3f, 0, 1056964608, 1082130432, 1, 2048, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
 		TASK::TASK_AIM_GUN_AT_ENTITY(0, Global_35, -1, 0, 1);
@@ -3651,7 +3651,7 @@ void func_144()
 		vVar0 = { func_280(&Local_274, 2) };
 		fVar3 = func_281(&Local_274, 2);
 		PED::_0x7DE9692C6F64CFE8(&(uLocal_15[2]), false, 0, 0);
-		PED::_0x8ACC0506743A8A5C(&(uLocal_15[2]), 166028666, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_15[2]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 		TASK::OPEN_SEQUENCE_TASK(&iVar4);
 		TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, vVar0, Global_35, 3f, 0, 1056964608, 1082130432, 1, 2048, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
 		TASK::TASK_AIM_GUN_AT_ENTITY(0, Global_35, -1, 0, 1);
@@ -3833,7 +3833,7 @@ int func_145()
 				func_40(Local_274.f_152[6 /*3*/], 0);
 				if (func_297(Local_274.f_152[6 /*3*/], 1.5f))
 				{
-					PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), 691988098, 1, -1082130432);
+					PED::_0x8ACC0506743A8A5C(&(uLocal_15[1]), joaat("RobPed"), 1, -1082130432);
 				}
 			}
 			if (func_47(Local_274.f_152[1 /*3*/], 3.5f))
@@ -4670,7 +4670,7 @@ int func_178(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -20279,7 +20279,7 @@ void func_723(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_613(func_779(iVar0, 10), 1, 0))
 		{
 			if (bParam2)

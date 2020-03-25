@@ -698,7 +698,7 @@ int func_9()
 		func_94();
 		PED::SET_PED_HEARING_RANGE(&(iLocal_211[0]), 40f);
 		PED::SET_PED_SEEING_RANGE(&(iLocal_211[0]), 80f);
-		func_95(&uLocal_379, -756969178, 5, 0);
+		func_95(&uLocal_379, joaat("MoodCurious"), 5, 0);
 		func_96();
 		func_97();
 		func_87(&(Local_15.f_5), &(iLocal_211[0]), &(uLocal_213[0]), 0);
@@ -3629,7 +3629,7 @@ void func_123()
 						bLocal_405 = true;
 						bLocal_406 = true;
 						iLocal_399 = 2;
-						func_95(&uLocal_379, -988409641, 5, 1);
+						func_95(&uLocal_379, joaat("MoodAgitated"), 5, 1);
 					}
 				}
 			}
@@ -3661,7 +3661,7 @@ void func_123()
 				if (func_310(3))
 				{
 					func_25(536870912);
-					func_95(&uLocal_379, -988409641, 5, 1);
+					func_95(&uLocal_379, joaat("MoodAgitated"), 5, 1);
 				}
 			}
 		}
@@ -4490,7 +4490,7 @@ void func_147(int iParam0, bool bParam1, bool bParam2)
 			PED::SET_PED_KEEP_TASK(&(iLocal_211[0]), true);
 			PED::_0x2208438012482A1A(&(iLocal_211[0]), false, false);
 			func_95(&uLocal_379, joaat("moodangry"), 5, 1);
-			func_376(&uLocal_379, -642840584, 5, 5f);
+			func_376(&uLocal_379, joaat("MoodNervous"), 5, 5f);
 			func_373();
 			break;
 		case 6:
@@ -4498,7 +4498,7 @@ void func_147(int iParam0, bool bParam1, bool bParam2)
 			{
 				func_377(0, 0);
 			}
-			func_95(&uLocal_379, -988409641, 5, 1);
+			func_95(&uLocal_379, joaat("MoodAgitated"), 5, 1);
 			func_376(&uLocal_379, joaat("moodangry"), 5, 5f);
 			break;
 		case 7:
@@ -4522,7 +4522,7 @@ void func_147(int iParam0, bool bParam1, bool bParam2)
 			func_58(&(iLocal_211[0]), &iVar0, 0, 0, 1, 1);
 			PED::SET_PED_KEEP_TASK(&(iLocal_211[0]), true);
 			func_95(&uLocal_379, joaat("moodangry"), 5, 1);
-			func_376(&uLocal_379, -642840584, 5, 5f);
+			func_376(&uLocal_379, joaat("MoodNervous"), 5, 5f);
 			func_373();
 			break;
 	}
@@ -10384,7 +10384,7 @@ void func_330()
 			func_349(&(Local_15.f_5), 15f);
 			func_378(&Local_561, 1, 0);
 			func_89(&Local_332, "FLAG_LOOP", 0);
-			func_95(&uLocal_379, -756969178, 5, 1);
+			func_95(&uLocal_379, joaat("MoodCurious"), 5, 1);
 			break;
 	}
 }
@@ -11379,8 +11379,8 @@ void func_372(int iParam0, bool bParam1)
 	TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, iParam0, 0, -1082130432, -1, &(uLocal_213[0]));
 	TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 	func_58(&(iLocal_211[0]), &iVar0, 0, 0, 1, 1);
-	func_95(&uLocal_379, -1711720069, 5, 1);
-	func_376(&uLocal_379, -578377130, 5, 30f);
+	func_95(&uLocal_379, joaat("MoodShocked"), 5, 1);
+	func_376(&uLocal_379, joaat("MoodScared"), 5, 30f);
 	TASK::SET_PED_PATH_PREFER_TO_AVOID_WATER(&(iLocal_211[0]), false, 1f);
 	ENTITY::SET_PED_AS_NO_LONGER_NEEDED(iLocal_211[0]);
 	ENTITY::SET_PED_AS_NO_LONGER_NEEDED(uLocal_213[0]);
@@ -14846,7 +14846,7 @@ int func_496(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

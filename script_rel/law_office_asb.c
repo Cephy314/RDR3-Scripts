@@ -375,7 +375,7 @@ void func_10(int iParam0, bool bParam1)
 			func_41(iParam0->f_387);
 			if (func_24(iParam0->f_389, 32))
 			{
-				TASK::_0xF0B4F759F35CC7F5(iParam0->f_387, -2146271366, false, 0, 0);
+				TASK::_0xF0B4F759F35CC7F5(iParam0->f_387, joaat("HOGTIED_PED"), false, 0, 0);
 				PED::SET_PED_KEEP_TASK(iParam0->f_387, true);
 			}
 			else if (bParam1)
@@ -3237,9 +3237,9 @@ void func_94(var uParam0)
 			{
 				if (!TASK::_0x0CCFE72B43C9CF96(uParam0->f_67))
 				{
-					if (ENTITY::_0x0FD25587BB306C86(uParam0->f_67) != -2146271366)
+					if (ENTITY::_0x0FD25587BB306C86(uParam0->f_67) != joaat("HOGTIED_PED"))
 					{
-						TASK::_0xF0B4F759F35CC7F5(uParam0->f_67, -2146271366, false, 0, 9);
+						TASK::_0xF0B4F759F35CC7F5(uParam0->f_67, joaat("HOGTIED_PED"), false, 0, 9);
 						func_36(&(uParam0->f_329), 16777216);
 					}
 				}
@@ -14887,7 +14887,7 @@ void func_524(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_185(func_614(iVar0, 10), 1, 0))
 		{
 			if (bParam2)

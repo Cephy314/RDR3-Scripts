@@ -32260,7 +32260,7 @@ void func_644(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_361(func_1155(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -33813,20 +33813,20 @@ void func_689()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1207(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1207(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1207(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1207(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1207(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1207(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1207(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1207(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1207(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1207(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1207(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1207(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1207(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1207(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1207(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1207(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1207(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1207(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1207(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1207(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1207(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1207(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1207(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1207(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1207(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1207(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1207(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1207(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_29())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -36602,7 +36602,7 @@ bool func_807(var uParam0)
 	func_1296(1, 1, 1);
 	func_1279(3, 0, 0);
 	func_199(1);
-	PED::_0x8ACC0506743A8A5C(&(Local_311[1 /*10*/]), -1838134243, 1, -1082130432);
+	PED::_0x8ACC0506743A8A5C(&(Local_311[1 /*10*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 	PED::SET_PED_SPHERE_DEFENSIVE_AREA(&(Local_311[1 /*10*/]), func_479(12, iLocal_405), 5f, true, false, 0);
 	TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(&(Local_311[1 /*10*/]), 200f, 0, 66);
 	PED::FORCE_PED_MOTION_STATE(&(Local_311[1 /*10*/]), joaat("motionstate_run"), false, 0, false);
@@ -51700,7 +51700,7 @@ void func_1282()
 							func_1525(Local_555[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 							func_1014(&(Local_555[iVar0 /*8*/]), 1);
 							PED::_0xC2266AA617668AD3(&(Local_555[iVar0 /*8*/]), 1f);
-							PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), 1819659395, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 							ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(&(Local_555[iVar0 /*8*/]), true);
 							iVar1++;
 							func_1777(Local_555[iVar0 /*8*/], 8, 1);
@@ -51721,7 +51721,7 @@ void func_1282()
 							Jump @426; //curOff = 357
 							if (func_1359(&(Local_555[iVar0 /*8*/]), func_479(1, (10 + iVar0)), 1) <= 5f)
 							{
-								PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), 1240409539, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), joaat("Script_MidCombat"), 1, -1082130432);
 								func_1777(Local_555[iVar0 /*8*/], 34, 1);
 							}
 							Jump @647; //curOff = 426
@@ -52310,7 +52310,7 @@ void func_1301()
 						{
 							func_1525(Local_555[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 							PED::_0xC2266AA617668AD3(&(Local_555[iVar0 /*8*/]), 1f);
-							PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), 1819659395, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 							ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(&(Local_555[iVar0 /*8*/]), true);
 							func_1777(Local_555[iVar0 /*8*/], 8, 1);
 							iVar1++;
@@ -52331,7 +52331,7 @@ void func_1301()
 							Jump @414; //curOff = 345
 							if (func_1359(&(Local_555[iVar0 /*8*/]), func_479(1, (10 + iVar0)), 1) <= 5f)
 							{
-								PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), 1240409539, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_555[iVar0 /*8*/]), joaat("Script_MidCombat"), 1, -1082130432);
 								func_1777(Local_555[iVar0 /*8*/], 34, 1);
 							}
 							Jump @635; //curOff = 414
@@ -52533,7 +52533,7 @@ void func_1303()
 						case 5:
 							if (ANIMSCENE::_0xB89FCFF19DAFFF28(&(iLocal_386[1]), "CS_HoseaMatthews"))
 							{
-								PED::_0x8B1E8E35A6E814EA(&(Local_210[iVar0 /*10*/]), 1929963417, -1082130432);
+								PED::_0x8B1E8E35A6E814EA(&(Local_210[iVar0 /*10*/]), joaat("BlockOpenDoorsInCover"), -1082130432);
 								TASK::TASK_FOLLOW_WAYPOINT_RECORDING(&(Local_210[iVar0 /*10*/]), sLocal_1145, 0, 21518, -1, 0, 0, -1);
 								PED::FORCE_PED_MOTION_STATE(&(Local_210[iVar0 /*10*/]), -1415276238, false, 0, false);
 								PED::_0x2208438012482A1A(&(Local_210[iVar0 /*10*/]), false, false);
@@ -53304,7 +53304,7 @@ void func_1317()
 						}
 						else
 						{
-							PED::_0x8ACC0506743A8A5C(&(Local_636[iVar0 /*8*/]), 1819659395, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_636[iVar0 /*8*/]), joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 							PED::_0x57F35552E771BE9D(&(Local_636[iVar0 /*8*/]), 12);
 							func_867(&((Local_636[iVar0 /*8*/])->f_7), 32768);
 							if (iVar0 == 4 || iVar0 == 5)
@@ -53343,7 +53343,7 @@ void func_1317()
 								Jump @782; //curOff = 468
 								if (func_1311(&((Local_636[iVar0 /*8*/])->f_4)) >= 5f)
 								{
-									PED::_0x8ACC0506743A8A5C(&(Local_636[iVar0 /*8*/]), 1240409539, 1, -1082130432);
+									PED::_0x8ACC0506743A8A5C(&(Local_636[iVar0 /*8*/]), joaat("Script_MidCombat"), 1, -1082130432);
 									PED::SET_PED_SPHERE_DEFENSIVE_AREA(&(Local_636[iVar0 /*8*/]), func_479(2, (6 + iVar0)), 5f, false, false, 0);
 									func_1777(Local_636[iVar0 /*8*/], 11, 1);
 								}
@@ -53361,7 +53361,7 @@ void func_1317()
 								Jump @782; //curOff = 628
 								func_1525(Local_636[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 								func_1807(&(Local_636[iVar0 /*8*/]), 50);
-								PED::_0xF6B82FCE03B43A37(&(Local_636[iVar0 /*8*/]), -70511741);
+								PED::_0xF6B82FCE03B43A37(&(Local_636[iVar0 /*8*/]), joaat("HEALTH_ENEMY_EASY"));
 								PED::SET_PED_COMBAT_ATTRIBUTES(&(Local_636[iVar0 /*8*/]), 98, true);
 								PED::SET_PED_COMBAT_ATTRIBUTES(&(Local_636[iVar0 /*8*/]), 123, true);
 								TASK::TASK_FOLLOW_WAYPOINT_RECORDING(&(Local_636[iVar0 /*8*/]), "odriscolls4_HorseAttack", 0, 4194316, -1, 0, 1, -1);
@@ -53988,7 +53988,7 @@ void func_1329()
 						}
 						else
 						{
-							PED::_0x8ACC0506743A8A5C(&(Local_636[iVar0 /*8*/]), 1307780291, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_636[iVar0 /*8*/]), joaat("Script_StartOfCombat_CoveringFire"), 1, -1082130432);
 							PED::_0x57F35552E771BE9D(&(Local_636[iVar0 /*8*/]), 12);
 							PED::_0xB8DE69D9473B7593(&(Local_636[iVar0 /*8*/]), 33);
 							func_1807(&(Local_636[iVar0 /*8*/]), (75 + iLocal_403 * 10));
@@ -54137,7 +54137,7 @@ void func_1330()
 							{
 								func_1325(Local_506[iVar0 /*8*/], iLocal_1158[0], 4, 1);
 							}
-							PED::_0x8ACC0506743A8A5C(&(Local_506[iVar0 /*8*/]), 1819659395, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_506[iVar0 /*8*/]), joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 							func_1777(Local_506[iVar0 /*8*/], 8, 1);
 						}
 						break;
@@ -54257,7 +54257,7 @@ void func_1331()
 				switch ((Local_685[iVar0 /*8*/])->f_3)
 				{
 					case 0:
-						PED::_0x8ACC0506743A8A5C(&(Local_685[iVar0 /*8*/]), 1307780291, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_685[iVar0 /*8*/]), joaat("Script_StartOfCombat_CoveringFire"), 1, -1082130432);
 						PED::_0x57F35552E771BE9D(&(Local_685[iVar0 /*8*/]), 12);
 						PED::_0xB8DE69D9473B7593(&(Local_685[iVar0 /*8*/]), 33);
 						func_1807(&(Local_685[iVar0 /*8*/]), (75 + iLocal_403 * 10));
@@ -55425,9 +55425,9 @@ void func_1343()
 					case 0:
 						func_1525(Local_750[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 						TASK::CLEAR_PED_TASKS(&(Local_750[iVar0 /*8*/]), 1, 0);
-						PED::_0x8ACC0506743A8A5C(&(Local_750[iVar0 /*8*/]), -1838134243, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_750[iVar0 /*8*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 						PED::_0x57F35552E771BE9D(&(Local_750[iVar0 /*8*/]), 12);
-						PED::_0xF6B82FCE03B43A37(&(Local_750[iVar0 /*8*/]), -70511741);
+						PED::_0xF6B82FCE03B43A37(&(Local_750[iVar0 /*8*/]), joaat("HEALTH_ENEMY_EASY"));
 						PED::_0xC2266AA617668AD3(&(Local_750[iVar0 /*8*/]), 1f);
 						ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(&(Local_750[iVar0 /*8*/]), true);
 						if (iVar0 == 12 || iVar0 == 13)
@@ -56371,9 +56371,9 @@ void func_1355()
 						if (iVar3 < 1 && !func_1813(&(Local_750[iVar0 /*8*/]), 1116471296 /* Float: 70f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */))
 						{
 							func_1525(Local_750[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
-							PED::_0xF6B82FCE03B43A37(&(Local_750[iVar0 /*8*/]), -70511741);
+							PED::_0xF6B82FCE03B43A37(&(Local_750[iVar0 /*8*/]), joaat("HEALTH_ENEMY_EASY"));
 							PED::_0xC2266AA617668AD3(&(Local_750[iVar0 /*8*/]), 1f);
-							PED::_0x8ACC0506743A8A5C(&(Local_750[iVar0 /*8*/]), -1838134243, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_750[iVar0 /*8*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 							PED::_0x57F35552E771BE9D(&(Local_750[iVar0 /*8*/]), 12);
 							iVar3++;
 							func_827(&(Local_750[iVar0 /*8*/]), func_1846(3, iVar0), 2, 1073741824 /* Float: 2f */);
@@ -57165,7 +57165,7 @@ void func_1372()
 						{
 							func_1525(Local_863[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 							PED::_0xC2266AA617668AD3(&(Local_863[iVar0 /*8*/]), 1f);
-							PED::_0x8ACC0506743A8A5C(&(Local_863[iVar0 /*8*/]), 1307780291, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_863[iVar0 /*8*/]), joaat("Script_StartOfCombat_CoveringFire"), 1, -1082130432);
 							PED::_0x57F35552E771BE9D(&(Local_863[iVar0 /*8*/]), 12);
 							PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_863[iVar0 /*8*/]), &(uLocal_1104[0]));
 							if (iVar0 == 3)
@@ -57584,7 +57584,7 @@ void func_1378(var uParam0)
 							PED::_0xFD6943B6DF77E449(&(Local_311[iVar0 /*10*/]), true);
 							ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(&(Local_311[iVar0 /*10*/]), false);
 							PED::SET_COMBAT_FLOAT(&(Local_311[iVar0 /*10*/]), 2, 30f);
-							PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), -1838134243, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 							func_1778(Local_311[iVar0 /*10*/], 15, 1);
 						}
 					}
@@ -57624,7 +57624,7 @@ void func_1378(var uParam0)
 							{
 								func_1778(Local_311[iVar0 /*10*/], 15, 1);
 								func_135(uParam0, 3);
-								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), -1838134243, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 								iLocal_405 = 1;
 							}
 							break;
@@ -57633,7 +57633,7 @@ void func_1378(var uParam0)
 							{
 								func_1778(Local_311[iVar0 /*10*/], 15, 1);
 								func_135(uParam0, 5);
-								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), -1838134243, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 								iLocal_405 = 2;
 							}
 							break;
@@ -57641,7 +57641,7 @@ void func_1378(var uParam0)
 							if ((func_1855(*(Local_863[5 /*8*/])) && func_1855(*(Local_863[6 /*8*/]))) && func_1855(*(Local_863[7 /*8*/])))
 							{
 								func_1778(Local_311[iVar0 /*10*/], 15, 1);
-								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), -1838134243, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 								iLocal_405 = 3;
 							}
 							break;
@@ -57650,14 +57650,14 @@ void func_1378(var uParam0)
 							{
 								func_1778(Local_311[iVar0 /*10*/], 15, 1);
 								PED::SET_COMBAT_FLOAT(&(Local_311[iVar0 /*10*/]), 2, -1f);
-								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 								iLocal_405 = 5;
 							}
 							else if (func_1350(Global_35, func_182(12, 2), 5f, 1, 1))
 							{
 								func_1778(Local_311[iVar0 /*10*/], 15, 1);
 								PED::SET_COMBAT_FLOAT(&(Local_311[iVar0 /*10*/]), 2, -1f);
-								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 								iLocal_405 = 4;
 							}
 							break;
@@ -57666,7 +57666,7 @@ void func_1378(var uParam0)
 							{
 								func_1778(Local_311[iVar0 /*10*/], 15, 1);
 								PED::SET_COMBAT_FLOAT(&(Local_311[iVar0 /*10*/]), 2, -1f);
-								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 								iLocal_405 = 5;
 							}
 							break;
@@ -57783,7 +57783,7 @@ void func_1380(var uParam0)
 						{
 							func_1525(Local_863[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 							PED::_0xC2266AA617668AD3(&(Local_863[iVar0 /*8*/]), 1f);
-							PED::_0x8ACC0506743A8A5C(&(Local_863[iVar0 /*8*/]), 1307780291, 1, -1082130432);
+							PED::_0x8ACC0506743A8A5C(&(Local_863[iVar0 /*8*/]), joaat("Script_StartOfCombat_CoveringFire"), 1, -1082130432);
 							PED::_0x57F35552E771BE9D(&(Local_750[iVar0 /*8*/]), 12);
 							PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_863[iVar0 /*8*/]), &(uLocal_1104[0]));
 							if (iVar0 == 3)
@@ -57817,7 +57817,7 @@ void func_1380(var uParam0)
 							else if (iVar0 == 2)
 							{
 								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_863[iVar0 /*8*/]), true);
-								PED::_0xF6B82FCE03B43A37(&(Local_863[iVar0 /*8*/]), -70511741);
+								PED::_0xF6B82FCE03B43A37(&(Local_863[iVar0 /*8*/]), joaat("HEALTH_ENEMY_EASY"));
 								PED::REQUEST_PED_VISIBILITY_TRACKING(&(Local_863[iVar0 /*8*/]));
 								func_1777(Local_863[iVar0 /*8*/], 9, 1);
 							}
@@ -58220,7 +58220,7 @@ void func_1388()
 						PED::_0xC2266AA617668AD3(&(Local_457[iVar0 /*8*/]), 1f);
 						PED::_0x57F35552E771BE9D(&(Local_457[iVar0 /*8*/]), 12);
 						PED::SET_PED_CAN_BE_TARGETTED(&(Local_457[iVar0 /*8*/]), true);
-						PED::_0x8ACC0506743A8A5C(&(Local_457[iVar0 /*8*/]), 1819659395, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_457[iVar0 /*8*/]), joaat("Script_StartOfCombat_UnderFire"), 1, -1082130432);
 						PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(Local_457[iVar0 /*8*/]), joaat("REL_PLAYER_ENEMY"));
 						func_1525(Local_457[iVar0 /*8*/], joaat("BLIP_STYLE_ENEMY"), 0);
 						func_1777(Local_457[iVar0 /*8*/], 8, 1);
@@ -61863,7 +61863,7 @@ int func_1510(var uParam0, bool bParam1)
 				switch ((Local_311[iVar0 /*10*/])->f_8)
 				{
 					case 0:
-						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 						func_1274(&(Local_311[iVar0 /*10*/]), joaat("WEAPON_REVOLVER_SCHOFIELD_DUTCH"), 0, 0, 2, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 						func_1274(&(Local_311[iVar0 /*10*/]), joaat("WEAPON_REVOLVER_SCHOFIELD_DUTCH_DUALWIELD"), 0, 0, 3, 1, 1, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 						if (func_33(uParam0) == iLocal_420)
@@ -61878,15 +61878,15 @@ int func_1510(var uParam0, bool bParam1)
 						}
 						break;
 					case 1:
-						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 						break;
 					case 7:
 						func_1274(&(Local_311[iVar0 /*10*/]), joaat("WEAPON_REPEATER_WINCHESTER"), 1, 1, 0, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
-						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 						break;
 					case 11:
 						PED::SET_PED_ACCURACY(&(Local_311[iVar0 /*10*/]), 50);
-						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), 1240409539, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(&(Local_311[iVar0 /*10*/]), joaat("Script_MidCombat"), 1, -1082130432);
 						PED::SET_PED_COMBAT_RANGE(&(Local_311[iVar0 /*10*/]), 1);
 						WEAPON::REMOVE_ALL_PED_WEAPONS(&(Local_311[iVar0 /*10*/]), true, true);
 						func_1999(uParam0, &(Local_311[iVar0 /*10*/]), 480);
@@ -72764,7 +72764,7 @@ float func_1840(vector3 vParam0, vector3 vParam3)
 
 void func_1841(bool bParam0)
 {
-	PED::_0x8ACC0506743A8A5C(bParam0, 1307780291, 1, -1082130432);
+	PED::_0x8ACC0506743A8A5C(bParam0, joaat("Script_StartOfCombat_CoveringFire"), 1, -1082130432);
 	PED::_0x57F35552E771BE9D(bParam0, 12);
 	PED::_0xB8DE69D9473B7593(bParam0, 33);
 	PED::_0xC2266AA617668AD3(bParam0, 0.2f);
@@ -79394,55 +79394,55 @@ int func_2086(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -79489,31 +79489,31 @@ int func_2089(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -79875,7 +79875,7 @@ void func_2102(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2429(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1113(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2430(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1113(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2430(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2103(int iParam0, int iParam1)
@@ -94455,11 +94455,11 @@ int func_2679(int iParam0)
 	}
 	switch (((*Global_1360165)[iParam0 /*1157*/])->f_127)
 	{
-		case -784953535:
-		case -543937540:
-		case -233385727:
-		case 893704044:
-		case 1132950513:
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_2"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_3"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_1"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_4"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_5"):
 			return 1;
 		default:
 			break;

@@ -1008,9 +1008,9 @@ void func_35(int iParam0)
 		return;
 	}
 	func_70();
-	func_71(0, -771890971);
-	func_71(3, -1440548693);
-	func_71(4, -1440548693);
+	func_71(0, joaat("VHT_CIVILIANS"));
+	func_71(3, joaat("VHT_LOCAL_TOUGHS"));
+	func_71(4, joaat("VHT_LOCAL_TOUGHS"));
 }
 
 bool func_36(int iParam0)

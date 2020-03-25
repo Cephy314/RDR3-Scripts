@@ -1194,7 +1194,7 @@ int func_4(var uParam0, var uParam1)
 				PED::_0xFC3DB99C8144CD81(uParam0->f_13, bVar6, 0, false, 0);
 				PED::SET_PED_COMBAT_MOVEMENT(uParam0->f_13, 1);
 			}
-			PED::_0x8ACC0506743A8A5C(uParam0->f_13, 1307780291, 2, -1082130432);
+			PED::_0x8ACC0506743A8A5C(uParam0->f_13, joaat("Script_StartOfCombat_CoveringFire"), 2, -1082130432);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0->f_13, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_13, 58, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(uParam0->f_13, 5, true);
@@ -8100,21 +8100,21 @@ int func_191(int iParam0)
 		case 5:
 			return joaat("VAL_Bartender");
 		case 6:
-			return 1690461416;
+			return joaat("VAL_SLUM_BARTENDER");
 		case 3:
 			return joaat("RHD_Bartender");
 		case 2:
-			return 785713260;
+			return joaat("SDN_BARTENDER");
 		case 1:
-			return -2099882877;
+			return joaat("SDN_BARTENDER_SLUMS");
 		case 8:
 			return joaat("VHT_Bartender");
 		case 0:
 			return joaat("BLW_Bartender");
 		case 4:
-			return 1016865322;
+			return joaat("TBL_BARTENDER");
 		case 7:
-			return 19124873;
+			return joaat("AMD_BARTENDER");
 		default:
 			break;
 	}

@@ -10147,95 +10147,95 @@ void func_295(int iParam0)
 	{
 		case 0:
 			func_886(5, joaat("ANIMALS_ALLIGATOR"));
-			func_886(10, -530650579);
+			func_886(10, joaat("ANIMALS_DEER"));
 			func_886(11, joaat("ANIMALS_ALLIGATOR"));
-			func_886(12, -79992523);
-			func_886(13, -1608748833);
-			func_886(7, -1243003160);
+			func_886(12, joaat("ANIMALS_BOAR"));
+			func_886(13, joaat("ANIMALS_FOX"));
+			func_886(7, joaat("ANIMALS_PELICAN"));
 			break;
 		case 1:
-			func_886(5, -431794078);
-			func_886(10, -530650579);
-			func_886(11, 2024364203);
-			func_886(12, 1131021608);
-			func_886(13, -2064541187);
-			func_886(7, -604466256);
+			func_886(5, joaat("ANIMALS_MOOSE"));
+			func_886(10, joaat("ANIMALS_DEER"));
+			func_886(11, joaat("ANIMALS_WOLF"));
+			func_886(12, joaat("ANIMALS_RABBIT"));
+			func_886(13, joaat("ANIMALS_COYOTES"));
+			func_886(7, joaat("ANIMALS_HAWKS"));
 			break;
 		case 2:
-			func_886(5, -715307145);
-			func_886(10, 1784992423);
+			func_886(5, joaat("ANIMALS_TURTLE"));
+			func_886(10, joaat("ANIMALS_POSSUMS"));
 			func_886(11, joaat("ANIMALS_ALLIGATOR"));
-			func_886(12, 1784992423);
-			func_886(13, -1608748833);
-			func_886(7, 486487548);
+			func_886(12, joaat("ANIMALS_POSSUMS"));
+			func_886(13, joaat("ANIMALS_FOX"));
+			func_886(7, joaat("ANIMALS_SONGBIRD"));
 			break;
 		case 3:
-			func_886(5, -2064541187);
-			func_886(10, -530650579);
-			func_886(11, 2024364203);
-			func_886(12, 1131021608);
-			func_886(13, -2064541187);
-			func_886(7, 506825778);
+			func_886(5, joaat("ANIMALS_COYOTES"));
+			func_886(10, joaat("ANIMALS_DEER"));
+			func_886(11, joaat("ANIMALS_WOLF"));
+			func_886(12, joaat("ANIMALS_RABBIT"));
+			func_886(13, joaat("ANIMALS_COYOTES"));
+			func_886(7, joaat("ANIMALS_VULTURES"));
 			break;
 		case 4:
-			func_886(5, -530650579);
-			func_886(10, -530650579);
-			func_886(11, 2024364203);
-			func_886(12, -1897088481);
-			func_886(13, -2064541187);
-			func_886(7, -604466256);
-			func_886(8, 239028334);
+			func_886(5, joaat("ANIMALS_DEER"));
+			func_886(10, joaat("ANIMALS_DEER"));
+			func_886(11, joaat("ANIMALS_WOLF"));
+			func_886(12, joaat("ANIMALS_RACCOON"));
+			func_886(13, joaat("ANIMALS_COYOTES"));
+			func_886(7, joaat("ANIMALS_HAWKS"));
+			func_886(8, joaat("ANIMALS_BUFFALO"));
 			break;
 		case 5:
 		case 6:
 		case 7:
-			func_886(5, -530650579);
-			func_886(10, -1608748833);
-			func_886(11, 1455354960);
-			func_886(12, -530650579);
-			func_886(13, -1608748833);
-			func_886(7, 188176855);
+			func_886(5, joaat("ANIMALS_DEER"));
+			func_886(10, joaat("ANIMALS_FOX"));
+			func_886(11, joaat("ANIMALS_COUGAR"));
+			func_886(12, joaat("ANIMALS_DEER"));
+			func_886(13, joaat("ANIMALS_FOX"));
+			func_886(7, joaat("ANIMALS_EAGLES"));
 			break;
 		case 8:
-			func_886(5, -79992523);
-			func_886(10, -79992523);
-			func_886(11, 796850253);
+			func_886(5, joaat("ANIMALS_BOAR"));
+			func_886(10, joaat("ANIMALS_BOAR"));
+			func_886(11, joaat("ANIMALS_SNAKE"));
 			func_886(12, joaat("animal_hen"));
-			func_886(13, -79992523);
-			func_886(7, -1063650279);
+			func_886(13, joaat("ANIMALS_BOAR"));
+			func_886(7, joaat("ANIMALS_SEAGULL"));
 			break;
 		case 9:
-			func_886(5, -530650579);
-			func_886(10, -530650579);
-			func_886(11, 1455354960);
-			func_886(12, -79992523);
-			func_886(13, -2064541187);
-			func_886(7, -604466256);
-			func_886(8, 239028334);
+			func_886(5, joaat("ANIMALS_DEER"));
+			func_886(10, joaat("ANIMALS_DEER"));
+			func_886(11, joaat("ANIMALS_COUGAR"));
+			func_886(12, joaat("ANIMALS_BOAR"));
+			func_886(13, joaat("ANIMALS_COYOTES"));
+			func_886(7, joaat("ANIMALS_HAWKS"));
+			func_886(8, joaat("ANIMALS_BUFFALO"));
 			break;
 		case 10:
-			func_886(5, -2064541187);
-			func_886(10, -530650579);
-			func_886(11, 1455354960);
-			func_886(12, 1131021608);
-			func_886(13, -2064541187);
-			func_886(7, -604466256);
+			func_886(5, joaat("ANIMALS_COYOTES"));
+			func_886(10, joaat("ANIMALS_DEER"));
+			func_886(11, joaat("ANIMALS_COUGAR"));
+			func_886(12, joaat("ANIMALS_RABBIT"));
+			func_886(13, joaat("ANIMALS_COYOTES"));
+			func_886(7, joaat("ANIMALS_HAWKS"));
 			break;
 		case 11:
-			func_886(5, -530650579);
-			func_886(10, -1074047115);
-			func_886(11, -1608748833);
-			func_886(12, -1897088481);
-			func_886(13, -1608748833);
-			func_886(7, 662736559);
+			func_886(5, joaat("ANIMALS_DEER"));
+			func_886(10, joaat("ANIMALS_TURKEYS_WILD"));
+			func_886(11, joaat("ANIMALS_FOX"));
+			func_886(12, joaat("ANIMALS_RACCOON"));
+			func_886(13, joaat("ANIMALS_FOX"));
+			func_886(7, joaat("ANIMALS_DUCKS"));
 			break;
 		case 12:
-			func_886(5, -530650579);
-			func_886(10, -1608748833);
-			func_886(11, -1504621559);
-			func_886(12, 1131021608);
-			func_886(13, -2064541187);
-			func_886(7, 486487548);
+			func_886(5, joaat("ANIMALS_DEER"));
+			func_886(10, joaat("ANIMALS_FOX"));
+			func_886(11, joaat("ANIMALS_BEAR"));
+			func_886(12, joaat("ANIMALS_RABBIT"));
+			func_886(13, joaat("ANIMALS_COYOTES"));
+			func_886(7, joaat("ANIMALS_SONGBIRD"));
 			break;
 	}
 }

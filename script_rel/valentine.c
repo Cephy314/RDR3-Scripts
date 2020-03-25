@@ -1331,10 +1331,10 @@ void func_35(int iParam0)
 		return;
 	}
 	func_101();
-	func_102(8, -65821257);
-	func_102(0, 99634802);
-	func_102(1, 1017247197);
-	func_102(2, 2122993982);
+	func_102(8, joaat("ANIMALS_PIGS"));
+	func_102(0, joaat("VAL_CIVILIANS"));
+	func_102(1, joaat("HRT_HORSE_RIDERS"));
+	func_102(2, joaat("VAL_LAW_DEPUTIES"));
 }
 
 bool func_36(int iParam0)

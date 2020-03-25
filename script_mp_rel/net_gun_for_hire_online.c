@@ -3245,11 +3245,11 @@ int func_114(int iParam0)
 			return joaat("GFH_ANTHONY_FOREMAN");
 		case 539824333:
 			return joaat("GFH_LANGTON");
-		case 1309348282:
+		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
 		case -701311458:
 			return joaat("GFH_SHERIFF_FREEMAN");
-		case 2048329431:
+		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
@@ -3257,7 +3257,7 @@ int func_114(int iParam0)
 			return joaat("GFH_ALDEN");
 		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
-		case -399874304:
+		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
 		case -743855838:
 			return joaat("GFH_ABERDEEN_PIG_FARMERS");

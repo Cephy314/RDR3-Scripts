@@ -821,9 +821,9 @@ void func_37(int iParam0)
 		return;
 	}
 	func_75();
-	func_76(0, -771890971);
-	func_76(3, -1440548693);
-	func_76(4, -1440548693);
+	func_76(0, joaat("VHT_CIVILIANS"));
+	func_76(3, joaat("VHT_LOCAL_TOUGHS"));
+	func_76(4, joaat("VHT_LOCAL_TOUGHS"));
 }
 
 bool func_38(int iParam0)
@@ -943,7 +943,7 @@ int func_44(int iParam0)
 		func_93();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_42, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, 1055032020))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
 		{
 			switch (iLocal_42)
 			{

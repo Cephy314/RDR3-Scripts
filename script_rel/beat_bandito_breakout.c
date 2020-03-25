@@ -9491,7 +9491,7 @@ int func_263(int iParam0)
 	}
 	else if (func_261(&(iLocal_82[iParam0]), Global_35, 0.9f))
 	{
-		PED::_0x8ACC0506743A8A5C(&(iLocal_82[iParam0]), 166028666, 2, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(iLocal_82[iParam0]), joaat("Script_ClassicMoveAndAim"), 2, -1082130432);
 		TASK::TASK_AIM_GUN_AT_ENTITY(&(iLocal_82[iParam0]), Global_35, -1, true, 0);
 		return 1;
 	}
@@ -19138,7 +19138,7 @@ int func_567(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

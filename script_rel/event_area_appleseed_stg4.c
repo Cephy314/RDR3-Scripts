@@ -627,7 +627,7 @@ void __EntryFunction__()
 	func_13(65536, func_31());
 	func_13(256, func_32());
 	func_33();
-	Local_526.f_13 = 925190986;
+	Local_526.f_13 = joaat("LOGGING_WORKERS");
 	func_34();
 	if (!func_22(&Local_1529, 32))
 	{

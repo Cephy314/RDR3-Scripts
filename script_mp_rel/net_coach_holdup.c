@@ -10331,7 +10331,7 @@ int func_394(int iParam0, var uParam1, var uParam2)
 			return 0;
 		}
 		iVar12 = NETWORK::NET_TO_OBJ(&(uParam1->f_257[uParam1->f_322 /*5*/]));
-		TASK::_0xF0B4F759F35CC7F5(iVar12, -2141086268, iVar11, 0, 0);
+		TASK::_0xF0B4F759F35CC7F5(iVar12, joaat("MP_MONEYBAG"), iVar11, 0, 0);
 		MISC::_0x7FA58CED69405F9A(iVar12, 3);
 		ENTITY::_0x18FF3110CF47115D(iVar12, 12, true);
 		ENTITY::_0x18FF3110CF47115D(iVar12, 22, true);
@@ -14722,7 +14722,7 @@ void func_543(bool bParam0)
 		PED::_0xED00D72F81CF7278(iVar2, 0, 0);
 		ENTITY::DETACH_ENTITY(iVar2, true, true);
 		TASK::_0x9EBD34958AB6F824(iVar2);
-		TASK::_0xF0B4F759F35CC7F5(iVar2, -2141086268, iVar1, 0, 0);
+		TASK::_0xF0B4F759F35CC7F5(iVar2, joaat("MP_MONEYBAG"), iVar1, 0, 0);
 		ENTITY::SET_ENTITY_VISIBLE(iVar2, true);
 		MISC::_0x7FA58CED69405F9A(iVar2, 3);
 	}
@@ -16590,7 +16590,7 @@ void func_582(int iParam0)
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
-		ENTITY::_0xCDB682BB47C02F0A(iParam0, 257258026);
+		ENTITY::_0xCDB682BB47C02F0A(iParam0, joaat("NULL_OVERRIDE_CARRIABLE_PROMPT_TABLE"));
 	}
 }
 
@@ -20288,17 +20288,17 @@ void func_692(int iParam0)
 	}
 	if ((WEAPON::_0x95CA12E2C68043E5(iParam0, 0) || WEAPON::_0x80BB243789008A82(iParam0, 0)) || WEAPON::_0x495A04CAEC263AF8(iParam0, 0))
 	{
-		PED::_0x8B1E8E35A6E814EA(iParam0, -289314967, -1f);
+		PED::_0x8B1E8E35A6E814EA(iParam0, joaat("MountedCombat_RangedRifle"), -1f);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 128, true);
 	}
 	else if (WEAPON::_0xABC18A28BAD4B46F(iParam0, 0))
 	{
-		PED::_0x8B1E8E35A6E814EA(iParam0, 1164657302, -1f);
+		PED::_0x8B1E8E35A6E814EA(iParam0, joaat("MountedCombat_RangedShotgun"), -1f);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 128, true);
 	}
 	else if (WEAPON::_0x5B235F24472F2C3B(iParam0, 0) || WEAPON::_0xBFCA7AFABF9D7967(iParam0, 0))
 	{
-		PED::_0x8B1E8E35A6E814EA(iParam0, -68970303, -1f);
+		PED::_0x8B1E8E35A6E814EA(iParam0, joaat("MountedCombat_RangedRevolver"), -1f);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 128, true);
 	}
 }
@@ -23454,11 +23454,11 @@ int func_803(int iParam0)
 			return joaat("GFH_ANTHONY_FOREMAN");
 		case 539824333:
 			return joaat("GFH_LANGTON");
-		case 1309348282:
+		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
 		case -701311458:
 			return joaat("GFH_SHERIFF_FREEMAN");
-		case 2048329431:
+		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
@@ -23466,7 +23466,7 @@ int func_803(int iParam0)
 			return joaat("GFH_ALDEN");
 		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
-		case -399874304:
+		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
 		case -743855838:
 			return joaat("GFH_ABERDEEN_PIG_FARMERS");

@@ -4166,7 +4166,7 @@ void func_191(var uParam0, var uParam1)
 
 int func_192()
 {
-	return 8658837;
+	return joaat("pg_mp_campfire02x");
 }
 
 void func_193()

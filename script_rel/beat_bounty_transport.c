@@ -1643,7 +1643,7 @@ void func_21()
 		PED::_0xD05AD61F242C626B(&(uLocal_561[0]), 10f);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_561[0]), iLocal_571);
 		func_80(&(uLocal_561[0]), func_79(1072590268, 0, -1));
-		func_81(uLocal_561[0], -988409641);
+		func_81(uLocal_561[0], joaat("MoodAgitated"));
 		func_82(&(uLocal_561[0]), 0);
 		PED::SET_PED_CONFIG_FLAG(&(uLocal_561[0]), 6, false);
 		LAW::_0x00DB0BC05E3FAA4E(&(uLocal_561[0]), 64);
@@ -1655,7 +1655,7 @@ void func_21()
 		PED::_0xD05AD61F242C626B(&(uLocal_561[1]), 10f);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_561[1]), iLocal_571);
 		func_80(&(uLocal_561[1]), func_79(1072590268, 0, -1));
-		func_81(uLocal_561[1], -988409641);
+		func_81(uLocal_561[1], joaat("MoodAgitated"));
 		func_82(&(uLocal_561[1]), 0);
 		PED::SET_PED_CONFIG_FLAG(&(uLocal_561[1]), 6, false);
 		LAW::_0x00DB0BC05E3FAA4E(&(uLocal_561[1]), 64);
@@ -1702,7 +1702,7 @@ void func_21()
 		PED::_0xB8B6430EAD2D2437(&(uLocal_561[2]), 673924189);
 		func_82(&(uLocal_561[2]), 0);
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_561[2]), 623901053);
-		func_81(uLocal_561[2], -564970554);
+		func_81(uLocal_561[2], joaat("MoodPanic"));
 	}
 	if (!PED::DOES_GROUP_EXIST(iLocal_570))
 	{
@@ -2245,11 +2245,11 @@ int func_41()
 				{
 					if (iLocal_572 == 0)
 					{
-						func_81(uLocal_561[2], -642840584);
+						func_81(uLocal_561[2], joaat("MoodNervous"));
 					}
 					else
 					{
-						func_81(uLocal_561[2], -988409641);
+						func_81(uLocal_561[2], joaat("MoodAgitated"));
 					}
 					iLocal_78 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(513747494, &(uLocal_561[2]), -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
 					TASK::_0x2E1D6D87346BB7D2(&(uLocal_561[2]), Global_35, 1, 0);
@@ -2346,7 +2346,7 @@ int func_41()
 					{
 						func_38(&(uLocal_561[2]), Global_35, 1048576, -1073741824 /* Float: -2f */, 1, 1744022339);
 					}
-					func_81(uLocal_561[2], -578377130);
+					func_81(uLocal_561[2], joaat("MoodScared"));
 					func_48(uLocal_565[2]);
 					func_56(bLocal_969);
 					func_53(1);
@@ -2383,7 +2383,7 @@ int func_41()
 				if (func_108(&(uLocal_561[2]), 0, &(Local_573.f_5), &iLocal_941, 0, 0))
 				{
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uLocal_561[2]), joaat("REL_PLAYER_DISLIKE"));
-					func_81(uLocal_561[2], -564970554);
+					func_81(uLocal_561[2], joaat("MoodPanic"));
 					func_53(1);
 					func_135();
 					func_144();
@@ -5418,7 +5418,7 @@ int func_133()
 					iLocal_74 = 3;
 					if (iLocal_572 == 1 && !func_31(1073741824 /* Float: 2f */))
 					{
-						func_81(uLocal_561[2], -564970554);
+						func_81(uLocal_561[2], joaat("MoodPanic"));
 						func_33(1073741824 /* Float: 2f */);
 					}
 					if (func_345(&uLocal_970, 0.25f))
@@ -5430,7 +5430,7 @@ int func_133()
 					iLocal_74 = 5;
 					if (iLocal_572 == 1 && !func_31(268435456))
 					{
-						func_81(uLocal_561[2], -642840584);
+						func_81(uLocal_561[2], joaat("MoodNervous"));
 						func_33(268435456);
 					}
 					if (func_345(&uLocal_970, 2f))
@@ -5444,7 +5444,7 @@ int func_133()
 					{
 						if (iLocal_572 == 1)
 						{
-							func_81(uLocal_561[2], -564970554);
+							func_81(uLocal_561[2], joaat("MoodPanic"));
 						}
 						func_137(&((Local_1004[2 /*75*/])->f_21), 0, 0);
 						func_138(Local_1004[2 /*75*/], 0);
@@ -16245,7 +16245,7 @@ int func_476(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

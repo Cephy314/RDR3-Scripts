@@ -3455,7 +3455,7 @@ int func_66()
 					func_38(Local_729.f_3, 2, 1);
 				}
 				func_38(Local_729.f_3, 5, 1);
-				TASK::_0xFF745B0346E19E2C(1361896662);
+				TASK::_0xFF745B0346E19E2C(joaat("DEAD_CARRIABLE_HUMAN"));
 				iLocal_1026 = 5;
 			}
 			fVar3 = func_67(Global_35, Local_923, 1);
@@ -11001,7 +11001,7 @@ void func_243()
 							STREAMING::REQUEST_MODEL(iLocal_1489, false);
 							func_39(&iLocal_1164, 8);
 							func_48();
-							TASK::_0xFF745B0346E19E2C(1361896662);
+							TASK::_0xFF745B0346E19E2C(joaat("DEAD_CARRIABLE_HUMAN"));
 							ANIMSCENE::SET_ANIM_SCENE_ENTITY(Local_1012.f_1, "PLAYER", Global_35, 0);
 							WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 0, false, false);
 							WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), true, 1, false, false);
@@ -11036,14 +11036,14 @@ void func_243()
 						func_62(Global_35, &(uLocal_1250[1]), func_61("DISPOSE_A", 0), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 					}
 					func_39(&iLocal_1165, 4096);
-					TASK::_0xFF745B0346E19E2C(1361896662);
+					TASK::_0xFF745B0346E19E2C(joaat("DEAD_CARRIABLE_HUMAN"));
 					ENTITY::_0x18FF3110CF47115D(&(uLocal_1250[0]), 7, 1);
 					ENTITY::_0x18FF3110CF47115D(&(uLocal_1250[0]), 2, 1);
 					iLocal_1171++;
 				}
 				else if (iLocal_1011 == 1)
 				{
-					TASK::_0xFF745B0346E19E2C(1361896662);
+					TASK::_0xFF745B0346E19E2C(joaat("DEAD_CARRIABLE_HUMAN"));
 					iLocal_1171++;
 				}
 			}
@@ -24838,7 +24838,7 @@ int func_601(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -26321,7 +26321,7 @@ void func_670()
 					{
 						ANIMSCENE::SET_ANIM_SCENE_BOOL(Local_1012.f_1, "dead_bool", true, false);
 					}
-					TASK::_0xFF745B0346E19E2C(1361896662);
+					TASK::_0xFF745B0346E19E2C(joaat("DEAD_CARRIABLE_HUMAN"));
 					iLocal_1031 = 7;
 				}
 			}
@@ -26436,7 +26436,7 @@ void func_670()
 			{
 				ENTITY::_0x18FF3110CF47115D(&(uLocal_1250[0]), 7, 1);
 				ENTITY::_0x18FF3110CF47115D(&(uLocal_1250[0]), 2, 1);
-				if (ANIMSCENE::_0xD8254CB2C586412B(Local_1012.f_1, 0) && TASK::_0xB8F52A3F84A7CC59(1361896662))
+				if (ANIMSCENE::_0xD8254CB2C586412B(Local_1012.f_1, 0) && TASK::_0xB8F52A3F84A7CC59(joaat("DEAD_CARRIABLE_HUMAN")))
 				{
 					ANIMSCENE::_DELETE_ANIM_SCENE(Local_1012.f_1);
 					ENTITY::_0x18FF3110CF47115D(&(uLocal_1250[0]), 7, 1);
@@ -31157,7 +31157,7 @@ void func_847(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_911(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_913(sVar7, sVar1, uVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_912(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_913(sVar7, sVar1, uVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_912(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_848(int iParam0, int iParam1)

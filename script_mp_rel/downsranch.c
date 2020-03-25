@@ -872,7 +872,7 @@ int func_44(int iParam0)
 		func_77();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_30, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, 1055032020))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
 		{
 			switch (iLocal_30)
 			{
@@ -1216,7 +1216,7 @@ void func_64()
 {
 	int iVar0;
 
-	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(440337996);
+	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(joaat("DOR_HUSBAND"));
 	if (!PERSCHAR::_0x800DF3FC913355F3(iVar0))
 	{
 		if (!TASK::_IS_SCENARIO_GROUP_ENABLED_HASH(-1625875143))

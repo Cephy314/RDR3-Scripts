@@ -101,7 +101,7 @@ void __EntryFunction__()
 							case -1287062382:
 								func_19(Var3.f_1, &(Var3.f_3));
 								break;
-							case -1706653313:
+							case joaat("USABLE_ITEM"):
 							case 1086195311:
 								ATTRIBUTE::_0xD962F8579D702DB5();
 								if (!func_20())
@@ -127,7 +127,7 @@ void __EntryFunction__()
 					case -1203660660:
 						switch (Var3.f_2)
 						{
-							case -1706653313:
+							case joaat("USABLE_ITEM"):
 							case -594808149:
 							case 1086195311:
 								if (func_23() || func_24())
@@ -11949,7 +11949,7 @@ void func_410(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_257(func_698(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -30383,7 +30383,7 @@ void func_1020(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1103(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_569(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1104(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_569(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1104(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1021()

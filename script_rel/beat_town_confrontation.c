@@ -849,7 +849,7 @@ int func_17()
 			func_63();
 			if (func_64(&Local_14, 1f, 1114636288 /* Float: 60f */, 40f, 1, 0, 0, -1082130432 /* Float: -1f */, 1, 1125515264 /* Float: 150f */, 0, 0))
 			{
-				PED::_0x8B3B71C80A29A4BB(&(uLocal_365[0]), -988409641, 6);
+				PED::_0x8B3B71C80A29A4BB(&(uLocal_365[0]), joaat("MoodAgitated"), 6);
 				func_59(1);
 			}
 			break;
@@ -12204,7 +12204,7 @@ int func_330(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

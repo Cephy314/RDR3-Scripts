@@ -16457,7 +16457,7 @@ void func_497(var uParam0, var uParam1, var uParam2)
 			uParam1->f_3 = { -46.5883f, 0.8548f, -40.8771f };
 			uParam1->f_6 = 43.2665f;
 		}
-		else if ((iVar3 == 1905987493 || bVar0 == 1419411400) || bVar4)
+		else if ((iVar3 == 1905987493 || bVar0 == joaat("COMPONENT_RIFLE_BOLTACTION_WRAP")) || bVar4)
 		{
 			*uParam1 = { -0.289f, -0.1903f, 0.4845f };
 			uParam1->f_3 = { -38.1148f, 0.8549f, -27.4051f };
@@ -32692,7 +32692,7 @@ void func_978(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_533(func_1539(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -33974,39 +33974,39 @@ int func_1023(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2099882877:
+		case joaat("SDN_BARTENDER_SLUMS"):
 		case joaat("RHD_Bartender"):
 		case joaat("val_doctor"):
 		case joaat("val_gunsmith"):
-		case -1472222264:
-		case -1456173883:
+		case joaat("AMD_GENERAL_STORE"):
+		case joaat("TBL_BUTCHER"):
 		case joaat("VAL_General_Store"):
-		case -934649940:
+		case joaat("RHD_TRAIN_STAT_OWNER"):
 		case joaat("RHD_General_Store"):
 		case joaat("VHT_Station_Clerk"):
-		case -495174442:
+		case joaat("RGS_POSTMASTER"):
 		case joaat("val_hotel_owner"):
 		case joaat("BLW_Bartender"):
-		case 19124873:
+		case joaat("AMD_BARTENDER"):
 		case joaat("VHT_Bartender"):
 		case joaat("VAL_Bartender"):
-		case 135431031:
-		case 156473432:
+		case joaat("STR_WELCOME_CENTER_CLERK"):
+		case joaat("SDN_Gen_Store_Shady"):
 		case joaat("val_butcher"):
-		case 344419080:
-		case 785713260:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
+		case joaat("SDN_BARTENDER"):
 		case joaat("ASB_Gunsmith"):
-		case 1016865322:
-		case 1057927283:
-		case 1198640232:
+		case joaat("TBL_BARTENDER"):
+		case joaat("TBL_GUNSMITH_OWNER"):
+		case joaat("SDN_GUNSMITH"):
 		case joaat("emr_son1"):
 		case joaat("BLW_General_Store"):
 		case joaat("BLW_Train_Worker"):
-		case 1659593009:
+		case joaat("SDN_Gen_Store_Owner"):
 		case joaat("VHT_Exotic_Store"):
 		case joaat("VAL_Barber"):
 		case joaat("RHD_Gunsmith"):
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 		case joaat("prin_p4_28"):
 		case joaat("STR_Freight_Clerk"):
 			return 1;
@@ -78400,7 +78400,7 @@ void func_2431(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2727(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1497(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2728(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1497(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2728(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2432(int iParam0, int iParam1)
@@ -84171,13 +84171,13 @@ int func_2654(int iParam0)
 		case 0:
 			return joaat("horse_blankets");
 		case 1:
-			return -385635273;
+			return joaat("horse_reins");
 		case 2:
 			return joaat("HORSE_SADDLES");
 		case 3:
-			return 561239516;
+			return joaat("saddle_horn");
 		case 7:
-			return 168005805;
+			return joaat("SADDLE_STIRRUP");
 		case 9:
 			return joaat("horse_bedrolls");
 		case 10:

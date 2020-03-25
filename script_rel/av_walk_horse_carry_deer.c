@@ -87,7 +87,7 @@ void __EntryFunction__()
 
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
-	iLocal_10 = 1959114253;
+	iLocal_10 = joaat("DEAD_CARRIABLE_DEER");
 	iLocal_68 = 41788943;
 	iLocal_69 = joaat("a_c_deer_01");
 	iLocal_70 = func_1(joaat("HORSE_CLASS_RIDING"), 1);
@@ -298,19 +298,19 @@ int func_1(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 void func_2(var uParam0)
@@ -1252,17 +1252,17 @@ void func_15(var uParam0, vector3 vParam1, vector3 vParam4)
 	{
 		case 67:
 			sLocal_71 = "PD_Deer_Shot";
-			iLocal_10 = 1959114253;
+			iLocal_10 = joaat("DEAD_CARRIABLE_DEER");
 			iLocal_69 = joaat("a_c_deer_01");
 			break;
 		case 68:
 			sLocal_71 = "PD_Deer_Shot";
-			iLocal_10 = -1105342294;
+			iLocal_10 = joaat("DEAD_CARRIABLE_GOAT");
 			iLocal_69 = joaat("a_c_goat_01");
 			break;
 		case 69:
 			sLocal_71 = "PD_Deer_Shot";
-			iLocal_10 = -836761165;
+			iLocal_10 = joaat("DEAD_CARRIABLE_PRONGHORN");
 			iLocal_69 = joaat("a_c_pronghorn_01");
 			if (uParam0->f_489 == 1)
 			{
@@ -1279,7 +1279,7 @@ void func_15(var uParam0, vector3 vParam1, vector3 vParam4)
 			break;
 		case 70:
 			sLocal_71 = "PD_Ram_Shot";
-			iLocal_10 = 2111375698;
+			iLocal_10 = joaat("DEAD_CARRIABLE_BIGHORNRAM");
 			iLocal_69 = joaat("a_c_bighornram_01");
 			if (uParam0->f_489 == 1)
 			{
@@ -1289,13 +1289,13 @@ void func_15(var uParam0, vector3 vParam1, vector3 vParam4)
 			break;
 		case 46:
 			sLocal_71 = "PD_Deer_Shot";
-			iLocal_10 = -1105342294;
+			iLocal_10 = joaat("DEAD_CARRIABLE_GOAT");
 			iLocal_69 = joaat("a_c_goat_01");
 			bLocal_72 = false;
 			break;
 		case 53:
 			sLocal_71 = "PD_Ram_Shot";
-			iLocal_10 = 2111375698;
+			iLocal_10 = joaat("DEAD_CARRIABLE_BIGHORNRAM");
 			iLocal_69 = joaat("a_c_bighornram_01");
 			bLocal_72 = false;
 			iVar1 = 0;

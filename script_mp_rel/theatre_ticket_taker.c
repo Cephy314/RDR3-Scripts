@@ -11260,11 +11260,11 @@ int func_376(int iParam0)
 	switch (iParam0)
 	{
 		case 5:
-			return -7009108;
+			return joaat("NBX_CIVILIANS");
 		case 81:
-			return 99634802;
+			return joaat("VAL_CIVILIANS");
 		case 40:
-			return 10098011;
+			return joaat("BLA_UPPERCLASS");
 		default:
 			break;
 	}

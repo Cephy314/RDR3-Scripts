@@ -466,8 +466,8 @@ int func_9(var uParam0)
 			iLocal_7 = func_22(uParam0, joaat("WORLD_CAMP_FIRE_SEATED_GROUND"), -141.17f, -40.56f, 94.51f, -163.644f, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1082130432 /* Float: -1f */);
 			iLocal_8 = func_22(uParam0, joaat("PROP_CAMP_FIRE_SEATED"), -137.62f, -40.93f, 94.98f, 125.1381f, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", -1082130432 /* Float: -1f */);
 			iLocal_9 = func_22(uParam0, joaat("stand"), -134.823f, -40.2142f, 95.5573f, 131.4639f, 0, -1082130432 /* Float: -1f */);
-			iLocal_10 = func_23(uParam0, -139.35f, -28.86f, 95.59f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, -2087487524, -1612834106);
-			iLocal_11 = func_23(uParam0, -133.43f, -32.32f, 96.2704f, 89.89f, 1.2f, 1.2f, 3f, 1, 1, 2017216891, -1612834106);
+			iLocal_10 = func_23(uParam0, -139.35f, -28.86f, 95.59f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_BILL"), -1612834106);
+			iLocal_11 = func_23(uParam0, -133.43f, -32.32f, 96.2704f, 89.89f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_DUTCH"), -1612834106);
 			func_24(uParam0, iLocal_10);
 			func_24(uParam0, iLocal_11);
 			break;
@@ -475,7 +475,7 @@ int func_9(var uParam0)
 			iLocal_5 = func_22(uParam0, joaat("GENERIC_SEAT_CHAIR_TABLE_SCENARIO"), 666.6291f, -1244.918f, 43.5988f, 49.05f, 0, -1082130432 /* Float: -1f */);
 			iLocal_7 = func_22(uParam0, joaat("WORLD_CAMP_FIRE_SEATED_GROUND"), 684.534f, -1245.42f, 42.99273f, 48.47628f, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1082130432 /* Float: -1f */);
 			iLocal_8 = func_22(uParam0, joaat("PROP_CAMP_FIRE_SEATED"), 681.367f, -1246.951f, 43.495f, -22.742f, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", -1082130432 /* Float: -1f */);
-			iLocal_10 = func_23(uParam0, 666.629f, -1244.92f, 43.5988f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, -2087487524, -1612834106);
+			iLocal_10 = func_23(uParam0, 666.629f, -1244.92f, 43.5988f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_BILL"), -1612834106);
 			func_24(uParam0, iLocal_10);
 			break;
 	}
@@ -1093,53 +1093,53 @@ int func_41(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2087487524:
+		case joaat("APMS_COMP_BILL"):
 			return 3;
-		case 463023307:
+		case joaat("APMS_COMP_CHARLES"):
 			return 7;
-		case 2017216891:
+		case joaat("APMS_COMP_DUTCH"):
 			return 0;
-		case 1267380940:
+		case joaat("APMS_COMP_HOSEA"):
 			return 5;
-		case -1749490051:
+		case joaat("APMS_COMP_JACK"):
 			return 14;
-		case -1495061186:
+		case joaat("APMS_COMP_JOHN"):
 			return 1;
-		case 271759394:
+		case joaat("APMS_COMP_JAVIER"):
 			return 2;
-		case -676766751:
+		case joaat("APMS_COMP_LENNY"):
 			return 9;
-		case 1632043240:
+		case joaat("APMS_COMP_MICAH"):
 			return 6;
-		case 211687389:
+		case joaat("APMS_COMP_KIERAN"):
 			return 10;
-		case -1386303207:
+		case joaat("APMS_COMP_PEARSON"):
 			return 17;
-		case 1418411488:
+		case joaat("APMS_COMP_SEAN"):
 			return 8;
-		case 1383943725:
+		case joaat("APMS_COMP_STRAUSS"):
 			return 18;
-		case 1243438920:
+		case joaat("APMS_COMP_SWANSON"):
 			return 21;
-		case 1833688716:
+		case joaat("APMS_COMP_TRELAWNY"):
 			return 23;
-		case 1877049591:
+		case joaat("APMS_COMP_UNCLE"):
 			return 4;
-		case -2055224817:
+		case joaat("APMS_COMP_ABIGAIL"):
 			return 13;
-		case -695792551:
+		case joaat("APMS_COMP_KAREN"):
 			return 20;
-		case -1377448058:
+		case joaat("APMS_COMP_MARYBETH"):
 			return 15;
-		case -727195357:
+		case joaat("APMS_COMP_MOLLY"):
 			return 16;
-		case -1525321670:
+		case joaat("APMS_COMP_ADLERS"):
 			return 11;
-		case -1689743484:
+		case joaat("APMS_COMP_GRIMSHAW"):
 			return 19;
-		case -950285770:
+		case joaat("APMS_COMP_TILLY"):
 			return 22;
-		case 640922451:
+		case joaat("APMS_DOG_LAB"):
 			return 12;
 		default:
 			break;
@@ -1811,55 +1811,55 @@ int func_61(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -4627,31 +4627,31 @@ int func_158(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:

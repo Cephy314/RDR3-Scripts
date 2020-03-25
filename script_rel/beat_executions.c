@@ -1916,7 +1916,7 @@ void func_47()
 				vVar0 = { func_168(Global_36 - (Local_233[3 /*32*/])->f_6) };
 				vVar3 = { (Local_233[3 /*32*/])->f_6 + vVar0 * Vector(4f, 4f, 4f) };
 				func_169(&vVar3, 15, 10, 0);
-				PED::_0x8ACC0506743A8A5C(&(uLocal_893[3]), -1962193144, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(uLocal_893[3]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 				if (func_167(Global_35, &(uLocal_893[3]), 0, 1) < (4f + 2.5f))
 				{
 					TASK::TASK_AIM_GUN_AT_ENTITY(&(uLocal_893[3]), Global_35, -1, false, 1);
@@ -6773,7 +6773,7 @@ void func_182()
 		}
 		func_41(&(uLocal_893[2]), 0);
 		TASK::OPEN_SEQUENCE_TASK(&iVar1);
-		PED::_0x8ACC0506743A8A5C(&(uLocal_893[2]), -1962193144, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_893[2]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
 		TASK::TASK_AIM_AT_ENTITY(0, Global_35, 1200, 1, 1);
 		TASK::TASK_COMBAT_PED(0, Global_35, 100663296, 0);
 		TASK::CLOSE_SEQUENCE_TASK(iVar1);
@@ -7551,7 +7551,7 @@ void func_205()
 			PED::_0x9238A3D970BBB0A9(&(uLocal_893[2]), 1963457635);
 			PED::_0x9A4AC116CC1EEE14(&(uLocal_893[3]));
 			PED::_0x9A4AC116CC1EEE14(&(uLocal_893[2]));
-			PED::_0x8ACC0506743A8A5C(&(uLocal_893[2]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_893[2]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			if (func_72(&(uLocal_893[4]), 0, 1))
 			{
 				if (!func_411(&(uLocal_893[2]), &(uLocal_893[4]), 0))
@@ -12633,7 +12633,7 @@ int func_362(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

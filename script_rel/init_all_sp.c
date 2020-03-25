@@ -184,21 +184,21 @@ int func_4()
 	}
 	Global_1897950 = -1;
 	func_34(1, joaat("VAL_Bartender"), 76, 0);
-	func_34(2, 1690461416, 76, 0);
+	func_34(2, joaat("VAL_SLUM_BARTENDER"), 76, 0);
 	func_34(8, joaat("VAL_Barber"), 76, 1048576);
 	func_34(11, joaat("val_doctor"), 76, 1048576);
 	func_34(9, joaat("val_gunsmith"), 76, 1048576);
 	func_34(10, joaat("VAL_General_Store"), 76, 1048576);
-	func_34(45, 634873317, 76, 1048576);
+	func_34(45, joaat("VAL_HORSE_SHOP_OWNER"), 76, 1048576);
 	func_34(6, joaat("val_butcher"), 76, 1048576);
-	func_34(14, -1140662688, 76, 0);
+	func_34(14, joaat("VAL_PIANO_PLAYER"), 76, 0);
 	func_34(15, -995669103, 76, 0);
 	func_34(16, joaat("val_hotel_owner"), 76, 0);
 	func_34(3, joaat("VAL_Sheriff"), 76, 2097152);
 	func_34(4, 618226436, 76, 2097152);
 	func_34(18, joaat("val_blacksmith"), 76, 0);
 	func_34(17, -1806066471, 76, 0);
-	func_34(7, -30525524, 76, 1048576);
+	func_34(7, joaat("VAL_AUCTION_BOSS"), 76, 1048576);
 	func_34(20, -1277088161, 76, 0);
 	func_34(21, 1068409161, 76, 0);
 	func_34(19, joaat("val_livery"), 76, 0);
@@ -209,16 +209,16 @@ int func_4()
 	func_34(25, -812818133, 76, 0);
 	func_34(26, -1118028599, 76, 0);
 	func_34(33, 736975015, 76, 0);
-	func_34(48, 1656839609, 76, 0);
+	func_34(48, joaat("VAL_TOWN_DOG_1"), 76, 0);
 	func_34(49, -201686995, 76, 0);
 	func_34(50, 104604848, 76, 0);
-	func_34(51, -244526191, 76, 0);
+	func_34(51, joaat("VAL_GUARD_DOG"), 76, 0);
 	func_34(27, -1961179109, 76, 0);
 	func_34(28, 1245166027, 76, 0);
 	func_34(29, -1607750211, 76, 0);
 	func_34(30, -2070186335, 76, 0);
 	func_34(31, -1836482558, 76, 0);
-	func_34(32, 895371587, 76, 0);
+	func_34(32, joaat("VAL_NEWSPAPER_VENDOR"), 76, 0);
 	func_34(34, 264534993, 76, 0);
 	func_34(35, -1128486965, 76, 0);
 	func_34(36, 1392166676, 76, 0);
@@ -233,7 +233,7 @@ int func_4()
 	func_34(0, 1401242493, 76, 0);
 	func_34(52, 1888394171, 76, 0);
 	func_34(12, joaat("val_bank_manager"), 76, 0);
-	func_34(13, 919554560, 76, 0);
+	func_34(13, joaat("VAL_BANK_GUARD"), 76, 0);
 	func_34(46, -1340789607, 76, 0);
 	func_34(47, -2094083379, 76, 0);
 	func_34(53, 471710352, 76, 0);
@@ -250,19 +250,19 @@ int func_4()
 	func_34(69, joaat("RHD_Bartender"), 105, 0);
 	func_34(73, joaat("RHD_Gunsmith"), 105, 1048576);
 	func_34(74, joaat("RHD_General_Store"), 105, 1048576);
-	func_34(78, 1317192638, 105, 1048576);
+	func_34(78, joaat("rhd_fence"), 105, 1048576);
 	func_34(79, -1718376372, 105, 0);
 	func_34(80, 1912531847, 105, 0);
 	func_34(70, joaat("RHD_Sheriff"), 105, 2097152);
 	func_34(71, -2057585848, 105, 2097152);
-	func_34(81, -1443844880, 105, 0);
-	func_34(72, -934649940, 105, 0);
-	func_34(77, 1010118053, 105, 0);
+	func_34(81, joaat("RHD_LIVERY_WORKER"), 105, 0);
+	func_34(72, joaat("RHD_TRAIN_STAT_OWNER"), 105, 0);
+	func_34(77, joaat("RHD_BUTCHER"), 105, 0);
 	func_34(82, 268610998, 105, 0);
-	func_34(76, 281515571, 105, 0);
+	func_34(76, joaat("RHD_BANK_MANAGER"), 105, 0);
 	func_34(75, 638961001, 105, 0);
 	func_34(127, 1603921876, 105, 0);
-	func_34(88, 225456100, 105, 0);
+	func_34(88, joaat("RHD_NEWSPAPER_VENDOR"), 105, 0);
 	func_34(83, -982352339, 105, 0);
 	func_34(84, 1110715329, 105, 0);
 	func_34(85, -1531318061, 105, 0);
@@ -282,9 +282,9 @@ int func_4()
 	func_34(100, 1050498884, 105, 0);
 	func_34(101, -175005039, 105, 0);
 	func_34(102, 126109302, 105, 0);
-	func_34(103, -1778670397, 105, 0);
-	func_34(104, -582339745, 105, 0);
-	func_34(105, 1860044939, 105, 0);
+	func_34(103, joaat("RHD_MANSION_WORKER_1"), 105, 0);
+	func_34(104, joaat("RHD_MANSION_WORKER_2"), 105, 0);
+	func_34(105, joaat("RHD_PARLOR_WORKER_1"), 105, 0);
 	func_34(106, 235946838, 105, 0);
 	func_34(107, 717388986, 105, 0);
 	func_34(108, 2125997224, 105, 0);
@@ -350,7 +350,7 @@ int func_4()
 	func_34(616, -657495007, 93, 0);
 	func_34(615, -256967423, 93, 0);
 	func_34(644, -942182507, 3, 0);
-	func_34(645, 1908738551, 3, 0);
+	func_34(645, joaat("Lag_Mother1"), 3, 0);
 	func_34(646, -2091340518, 3, 0);
 	func_34(647, 1906182565, 3, 0);
 	func_34(648, -1513247652, 3, 0);
@@ -362,15 +362,15 @@ int func_4()
 	func_34(653, 1119874694, 3, 0);
 	func_34(654, 817515131, 3, 0);
 	func_34(655, 1679469080, 3, 0);
-	func_34(657, -1403834649, 6, 0);
-	func_34(658, -751178313, 6, 0);
+	func_34(657, joaat("ORA_FOREMAN"), 6, 0);
+	func_34(658, joaat("ORA_GUARD"), 6, 0);
 	func_34(207, 714186141, 5, 0);
 	func_34(208, -384459834, 5, 0);
 	func_34(209, 575840716, 5, 0);
-	func_34(201, -533772707, 5, 1048576);
-	func_34(137, 785713260, 5, 0);
-	func_34(138, -2099882877, 5, 0);
-	func_34(139, 1709214177, 5, 1048576);
+	func_34(201, joaat("SDN_BARBER"), 5, 1048576);
+	func_34(137, joaat("SDN_BARTENDER"), 5, 0);
+	func_34(138, joaat("SDN_BARTENDER_SLUMS"), 5, 0);
+	func_34(139, joaat("SDN_BUTCHER"), 5, 1048576);
 	func_34(144, 1994678334, 5, 0);
 	func_34(145, -788881557, 5, 0);
 	func_34(146, -905277479, 5, 0);
@@ -404,7 +404,7 @@ int func_4()
 	func_34(174, -1341230766, 5, 0);
 	func_34(175, 861927419, 5, 0);
 	func_34(176, 1152457373, 5, 0);
-	func_34(140, -1116668486, 5, 1048576);
+	func_34(140, joaat("SDN_DOCTOR"), 5, 1048576);
 	func_34(177, 67702950, 5, 0);
 	func_34(178, -1132257020, 5, 0);
 	func_34(210, -76434981, 5, 0);
@@ -438,17 +438,17 @@ int func_4()
 	func_34(197, -248518429, 5, 0);
 	func_34(198, -1532702143, 5, 0);
 	func_34(199, 1618186913, 5, 0);
-	func_34(200, 1659593009, 5, 1048576);
-	func_34(219, 156473432, 5, 1048576);
+	func_34(200, joaat("SDN_Gen_Store_Owner"), 5, 1048576);
+	func_34(219, joaat("SDN_Gen_Store_Shady"), 5, 1048576);
 	func_34(220, 352107054, 5, 0);
 	func_34(221, 658726587, 5, 0);
 	func_34(222, 963216139, 5, 0);
 	func_34(223, 1270818742, 5, 0);
 	func_34(224, 1510655053, 5, 0);
-	func_34(202, 1198640232, 5, 1048576);
+	func_34(202, joaat("SDN_GUNSMITH"), 5, 1048576);
 	func_34(203, 782092035, 5, 0);
 	func_34(204, 1006690761, 5, 0);
-	func_34(205, -615386674, 5, 1048576);
+	func_34(205, joaat("SDN_HORSE_SHOP_OWNER"), 5, 1048576);
 	func_34(206, -1401836773, 5, 0);
 	func_34(225, 1495697810, 5, 0);
 	func_34(226, -1091742430, 5, 0);
@@ -462,25 +462,25 @@ int func_4()
 	func_34(236, -1007786853, 5, 0);
 	func_34(237, -1310998410, 5, 0);
 	func_34(238, -392745492, 5, 0);
-	func_34(231, 144084003, 5, 0);
+	func_34(231, joaat("SDN_IND_CASTILLE_DOG"), 5, 0);
 	func_34(232, 1240897568, 5, 0);
 	func_34(239, -220368289, 5, 0);
 	func_34(240, -993946072, 5, 0);
-	func_34(241, 135353273, 5, 0);
-	func_34(242, 986295353, 5, 0);
-	func_34(243, 1231178090, 5, 0);
+	func_34(241, joaat("SDN_Market_Vendor1"), 5, 0);
+	func_34(242, joaat("SDN_FrenchMarket_Vendor_1"), 5, 0);
+	func_34(243, joaat("SDN_FrenchMarket_Vendor_2"), 5, 0);
 	func_34(245, 315437407, 5, 0);
 	func_34(244, -1672524711, 5, 0);
 	func_34(246, 1932404803, 5, 0);
 	func_34(247, -1106821736, 5, 0);
 	func_34(248, -612613235, 5, 0);
 	func_34(249, -1213811305, 5, 0);
-	func_34(250, 914062048, 5, 0);
-	func_34(251, -634913711, 5, 0);
+	func_34(250, joaat("SDN_MUSICIAN"), 5, 0);
+	func_34(251, joaat("SDN_Newspaper_Vendor"), 5, 0);
 	func_34(252, 1079155508, 5, 0);
 	func_34(253, 1124966570, 5, 0);
 	func_34(254, -338726357, 5, 0);
-	func_34(256, 2141998185, 5, 0);
+	func_34(256, joaat("SDN_POLICE_CHIEF"), 5, 0);
 	func_34(265, -645886721, 5, 0);
 	func_34(266, -138414451, 5, 0);
 	func_34(257, 1810173982, 5, 0);
@@ -501,16 +501,16 @@ int func_4()
 	func_34(274, -323815184, 5, 0);
 	func_34(275, 66332530, 5, 0);
 	func_34(276, -367009848, 5, 0);
-	func_34(277, -717325460, 5, 0);
-	func_34(278, 397581942, 5, 0);
+	func_34(277, joaat("SDN_GARDEN_CAT"), 5, 0);
+	func_34(278, joaat("SDN_GARDEN_DOG"), 5, 0);
 	func_34(279, -1572331579, 5, 0);
 	func_34(280, 160099809, 5, 0);
-	func_34(143, -2098805802, 5, 0);
+	func_34(143, joaat("SDN_PHOTOGRAPHER"), 5, 0);
 	func_34(281, -1320904521, 5, 0);
 	func_34(282, -595955934, 5, 0);
 	func_34(283, -1825359258, 5, 1048576);
 	func_34(284, -1918028711, 5, 1048576);
-	func_34(142, -650257138, 5, 1048576);
+	func_34(142, joaat("SDN_TAILOR"), 5, 1048576);
 	func_34(305, -588684278, 5, 0);
 	func_34(306, 1375587058, 5, 0);
 	func_34(141, -537633957, 5, 0);
@@ -547,11 +547,11 @@ int func_4()
 	func_34(308, -1690839954, 5, 0);
 	func_34(309, -851462035, 5, 0);
 	func_34(310, 2044793265, 5, 0);
-	func_34(311, 1382360398, 5, 0);
-	func_34(312, 1092518593, 5, 0);
-	func_34(313, 909143269, 5, 0);
-	func_34(314, 613730734, 5, 0);
-	func_34(315, -1688553672, 5, 0);
+	func_34(311, joaat("SDN_SLUMS_DOG_1"), 5, 0);
+	func_34(312, joaat("SDN_SLUMS_DOG_2"), 5, 0);
+	func_34(313, joaat("SDN_SLUMS_DOG_3"), 5, 0);
+	func_34(314, joaat("SDN_SLUMS_DOG_4"), 5, 0);
+	func_34(315, joaat("SDN_SLUMS_DOG_5"), 5, 0);
 	func_34(334, 1253712755, 32, 0);
 	func_34(335, 1574528689, 32, 0);
 	func_34(325, 1707536095, 32, 0);
@@ -573,15 +573,15 @@ int func_4()
 	func_34(343, 1025050559, 32, 0);
 	func_34(344, 651680573, 32, 0);
 	func_34(345, -1539749746, 115, 0);
-	func_34(351, 1016865322, 115, 0);
-	func_34(352, -1456173883, 115, 0);
+	func_34(351, joaat("TBL_BARTENDER"), 115, 0);
+	func_34(352, joaat("TBL_BUTCHER"), 115, 0);
 	func_34(346, 893869817, 115, 0);
-	func_34(347, -1363309974, 115, 0);
+	func_34(347, joaat("TBL_HORSE_SHOP_OWNER"), 115, 0);
 	func_34(375, -1341155876, 115, 0);
 	func_34(372, 700911581, 115, 0);
 	func_34(373, 1533586135, 115, 0);
 	func_34(374, 1220183419, 115, 0);
-	func_34(348, 1328671773, 115, 2097152);
+	func_34(348, joaat("TBL_SHERRIF"), 115, 2097152);
 	func_34(367, -2071150779, 115, 0);
 	func_34(368, -691575879, 115, 0);
 	func_34(369, -984825660, 115, 0);
@@ -589,7 +589,7 @@ int func_4()
 	func_34(371, 883907471, 115, 0);
 	func_34(349, 459633733, 115, 0);
 	func_34(350, -1150605395, 115, 0);
-	func_34(353, 344419080, 115, 0);
+	func_34(353, joaat("TBL_GENERAL_STORE_OWNER"), 115, 0);
 	func_34(366, 548880004, 115, 0);
 	func_34(354, -64979033, 115, 0);
 	func_34(355, -1991156492, 115, 0);
@@ -602,12 +602,12 @@ int func_4()
 	func_34(362, -865515850, 115, 0);
 	func_34(363, -40916734, 115, 0);
 	func_34(364, -2110082474, 115, 0);
-	func_34(365, 1057927283, 115, 0);
+	func_34(365, joaat("TBL_GUNSMITH_OWNER"), 115, 0);
 	func_34(376, 1856587176, 125, 0);
 	func_34(377, 1674400507, 125, 0);
 	func_34(378, 436191073, 125, 0);
 	func_34(379, -160335743, 125, 0);
-	func_34(507, 1819108658, 117, 0);
+	func_34(507, joaat("BEN_TRAINSTATIONWORKER"), 117, 0);
 	func_34(791, 1510112722, 124, 0);
 	func_34(792, -389866671, 124, 0);
 	func_34(793, 1750920171, 124, 0);
@@ -629,7 +629,7 @@ int func_4()
 	func_34(599, 700740986, 69, 0);
 	func_34(600, 1383745253, 69, 0);
 	func_34(601, 1144072787, 69, 0);
-	func_34(606, 51451159, 69, 0);
+	func_34(606, joaat("EMR_DOG"), 69, 0);
 	func_34(607, -1158145445, 69, 0);
 	func_34(608, 297846763, 69, 0);
 	func_34(594, joaat("EMR_Farmhand1"), 69, 0);
@@ -641,7 +641,7 @@ int func_4()
 	func_34(555, -1009895802, 68, 32);
 	func_34(556, -1331958578, 68, 32);
 	func_34(557, -1246216160, 68, 0);
-	func_34(565, 440337996, 68, 0);
+	func_34(565, joaat("DOR_HUSBAND"), 68, 0);
 	func_34(560, 1135749730, 68, 0);
 	func_34(561, 741137816, 68, 0);
 	func_34(562, 56231475, 68, 0);
@@ -659,17 +659,17 @@ int func_4()
 	func_34(700, -406270063, 35, 0);
 	func_34(694, -453200980, 35, 0);
 	func_34(695, 1326453704, 35, 0);
-	func_34(701, -1757724474, 56, 1048576);
-	func_34(704, -1017891437, 56, 0);
-	func_34(703, -1727872517, 56, 0);
-	func_34(705, 526406201, 56, 0);
-	func_34(702, 1768453996, 56, 0);
+	func_34(701, joaat("WAP_SHOPKEEPER"), 56, 1048576);
+	func_34(704, joaat("WAP_HEADBRAVE"), 56, 0);
+	func_34(703, joaat("WAP_OFFICIAL"), 56, 0);
+	func_34(705, joaat("WAP_SIOUXCHEF"), 56, 0);
+	func_34(702, joaat("WAP_MEDICINEMAN"), 56, 0);
 	func_34(706, 1421023642, 56, 0);
 	func_34(707, 1907774332, 56, 0);
 	func_34(708, 1609379818, 56, 0);
 	func_34(659, -1830126976, 82, 0);
 	func_34(660, 1689558549, 82, 0);
-	func_34(665, -1859840878, 82, 32);
+	func_34(665, joaat("BUT_SHAMAN"), 82, 32);
 	func_34(674, 1669351080, 82, 0);
 	func_34(675, 1900470837, 82, 0);
 	func_34(676, -137695425, 82, 0);
@@ -692,8 +692,8 @@ int func_4()
 	func_34(688, 1785595291, 82, 0);
 	func_34(667, 1458690821, 82, 0);
 	func_34(668, 1508696315, 82, 0);
-	func_34(689, 1735476333, 82, 0);
-	func_34(690, 4622517, 82, 0);
+	func_34(689, joaat("BUT_SOLITARY_FARMER"), 82, 0);
+	func_34(690, joaat("BUT_SOLITARY_DOG"), 82, 0);
 	func_34(669, 2081940850, 82, 0);
 	func_34(670, 1247216113, 82, 0);
 	func_34(671, -279688223, 82, 0);
@@ -701,22 +701,22 @@ int func_4()
 	func_34(673, -2064773372, 82, 0);
 	func_34(474, joaat("prin_p4_28"), 26, 1048576);
 	func_34(472, joaat("STR_Sheriff"), 26, 2097152);
-	func_34(473, -1516739988, 26, 2097152);
+	func_34(473, joaat("STR_SHERIFF_DEPUTY"), 26, 2097152);
 	func_34(476, joaat("STR_Freight_Clerk"), 26, 0);
-	func_34(483, -1797882553, 26, 32);
-	func_34(477, -1391735686, 26, 0);
+	func_34(483, joaat("STR_MAYOR"), 26, 32);
+	func_34(477, joaat("Str_Newspaper_Vendor"), 26, 0);
 	func_34(487, 788835218, 26, 0);
 	func_34(488, -1303334312, 26, 0);
 	func_34(489, -1467638078, 26, 0);
-	func_34(492, 135431031, 26, 0);
+	func_34(492, joaat("STR_WELCOME_CENTER_CLERK"), 26, 0);
 	func_34(490, 1227727310, 26, 32);
 	func_34(491, 1520714939, 26, 32);
 	func_34(501, -983640113, 26, 0);
-	func_34(502, 1350470165, 26, 0);
+	func_34(502, joaat("STR_TOWN_DOG"), 26, 0);
 	func_34(497, -2143795291, 26, 0);
 	func_34(498, 962509299, 26, 0);
 	func_34(485, 1324534658, 26, 0);
-	func_34(486, -1066735787, 26, 0);
+	func_34(486, joaat("Str_Wood_Chop_Wife"), 26, 0);
 	func_34(481, -181640430, 26, 0);
 	func_34(480, -1926375476, 26, 0);
 	func_34(484, 219957276, 26, 0);
@@ -728,8 +728,8 @@ int func_4()
 	func_34(493, 2004887219, 26, 0);
 	func_34(499, -201327901, 26, 0);
 	func_34(500, -984015466, 26, 0);
-	func_34(478, 1645786537, 26, 0);
-	func_34(479, 1504117515, 26, 0);
+	func_34(478, joaat("STR_BUTCHER"), 26, 0);
+	func_34(479, joaat("STR_HORSE_SHOP_OWNER"), 26, 0);
 	func_34(709, 1033990353, -1, 0);
 	func_34(710, 1981782315, -1, 0);
 	func_34(711, -603941227, -1, 0);
@@ -752,9 +752,9 @@ int func_4()
 	func_34(728, -269627217, 110, 0);
 	func_34(729, 1258855524, 110, 0);
 	func_34(730, -465903752, 110, 0);
-	func_34(566, 1421239436, 65, 0);
+	func_34(566, joaat("CKT_WORKER"), 65, 0);
 	func_34(567, 1290174726, 65, 0);
-	func_34(568, 784815419, 65, 0);
+	func_34(568, joaat("HTL_FOREMAN"), 65, 0);
 	func_34(569, 915620652, 65, 0);
 	func_34(572, 1478928751, 65, 0);
 	func_34(573, 1759791850, 65, 0);
@@ -777,7 +777,7 @@ int func_4()
 	func_34(571, 94190389, 65, 0);
 	func_34(443, joaat("VHT_Bartender"), 92, 0);
 	func_34(444, joaat("VHT_Exotic_Store"), 92, 1048576);
-	func_34(471, 877956841, 92, 0);
+	func_34(471, joaat("VHT_MUSICIAN"), 92, 0);
 	func_34(446, -867511689, 92, 0);
 	func_34(447, -628363527, 92, 0);
 	func_34(448, 1771932958, 92, 0);
@@ -788,15 +788,15 @@ int func_4()
 	func_34(453, -306544214, 92, 0);
 	func_34(445, -470160148, 92, 0);
 	func_34(454, -192845641, 92, 0);
-	func_34(459, 2122947426, 92, 0);
+	func_34(459, joaat("VHT_HORSE_SHOP_OWNER"), 92, 0);
 	func_34(460, 723224993, 92, 0);
 	func_34(455, -337174541, 92, 0);
 	func_34(456, -7813322, 92, 0);
 	func_34(457, 290122426, 92, 0);
 	func_34(458, -1596225059, 92, 0);
-	func_34(461, 1491412530, 92, 0);
-	func_34(462, 1483761854, 92, 0);
-	func_34(463, 35562466, 92, 0);
+	func_34(461, joaat("VHT_SQUATTER_DOG"), 92, 0);
+	func_34(462, joaat("VHT_TOWN_DOG_1"), 92, 0);
+	func_34(463, joaat("VHT_GEN_GUARD_DOG"), 92, 0);
 	func_34(465, 630492414, 92, 0);
 	func_34(464, -307762219, 92, 0);
 	func_34(466, -1266799329, 92, 0);
@@ -804,19 +804,19 @@ int func_4()
 	func_34(468, -399041944, 92, 0);
 	func_34(469, 128079000, 92, 0);
 	func_34(470, joaat("VHT_Station_Clerk"), 92, 0);
-	func_34(741, 1117620256, 96, 0);
-	func_34(743, -1737126224, 96, 0);
-	func_34(742, -796231184, 96, 0);
+	func_34(741, joaat("CFJ_FATHER"), 96, 0);
+	func_34(743, joaat("CFJ_SON"), 96, 0);
+	func_34(742, joaat("CFJ_SON_OLDER"), 96, 0);
 	func_34(513, joaat("BLW_General_Store"), 38, 1048576);
-	func_34(516, 190718941, 38, 1048576);
+	func_34(516, joaat("BLW_HORSE_SHOP_OWNER"), 38, 1048576);
 	func_34(517, -329070872, 38, 0);
-	func_34(521, 914853768, 38, 1048576);
-	func_34(529, 618535878, 38, 1048576);
-	func_34(532, -1337007991, 38, 1048576);
+	func_34(521, joaat("BLW_TAILOR"), 38, 1048576);
+	func_34(529, joaat("Blw_Barber"), 38, 1048576);
+	func_34(532, joaat("Blw_Butcher"), 38, 1048576);
 	func_34(522, joaat("BLW_Train_Worker"), 38, 0);
-	func_34(524, -556457729, 38, 0);
+	func_34(524, joaat("BLW_NEWSPAPER"), 38, 0);
 	func_34(514, joaat("BLW_Photographer"), 38, 0);
-	func_34(515, 971095921, 38, 0);
+	func_34(515, joaat("BLW_PIANO_PLAYER"), 38, 0);
 	func_34(509, joaat("BLW_Police_Chief"), 38, 0);
 	func_34(510, 2144602443, 38, 0);
 	func_34(511, -1446087243, 38, 0);
@@ -824,8 +824,8 @@ int func_4()
 	func_34(519, joaat("BLW_Bank_Clerk"), 38, 0);
 	func_34(520, 1242338739, 38, 0);
 	func_34(508, joaat("BLW_Bartender"), 38, 0);
-	func_34(525, 1231529767, 38, 0);
-	func_34(526, -855455408, 38, 0);
+	func_34(525, joaat("BLW_TICKET_VENDOR"), 38, 0);
+	func_34(526, joaat("BLW_LIVERY_WORKER"), 38, 0);
 	func_34(527, -1107567149, 38, 0);
 	func_34(528, 1352207508, 38, 0);
 	func_34(530, 352342199, 38, 0);
@@ -853,13 +853,13 @@ int func_4()
 	func_34(523, 582148833, 38, 0);
 	func_34(552, 2126880888, 38, 0);
 	func_34(553, 1879835397, 38, 0);
-	func_34(432, 19124873, 120, 0);
+	func_34(432, joaat("AMD_BARTENDER"), 120, 0);
 	func_34(433, 256555048, 120, 0);
-	func_34(434, -1472222264, 120, 0);
-	func_34(435, -736367663, 120, 0);
+	func_34(434, joaat("AMD_GENERAL_STORE"), 120, 0);
+	func_34(435, joaat("AMD_UNDERTAKER"), 120, 0);
 	func_34(436, 275206192, 120, 0);
 	func_34(437, 874853533, 120, 0);
-	func_34(434, -1472222264, 120, 0);
+	func_34(434, joaat("AMD_GENERAL_STORE"), 120, 0);
 	func_34(438, -420015764, 120, 0);
 	func_34(439, 770101057, 120, 0);
 	func_34(440, 1555082452, 120, 0);
@@ -868,7 +868,7 @@ int func_4()
 	func_34(385, joaat("ASB_Gunsmith"), 78, 1048576);
 	func_34(382, joaat("ASB_Sheriff"), 78, 2097152);
 	func_34(383, -2081875533, 78, 2097152);
-	func_34(386, 1193985110, 78, 0);
+	func_34(386, joaat("Asb_Newspaper_Vendor"), 78, 0);
 	func_34(430, -191231906, 78, 0);
 	func_34(431, 42017836, 78, 0);
 	func_34(387, 614706666, 78, 0);
@@ -914,7 +914,7 @@ int func_4()
 	func_34(427, -96858409, 78, 0);
 	func_34(428, 57942347, 78, 0);
 	func_34(429, 1453148060, 78, 0);
-	func_34(384, -245648230, 78, 0);
+	func_34(384, joaat("ASB_TRAINSTATIONWORKER"), 78, 0);
 	func_34(768, -240260680, 86, 0);
 	func_34(769, 1910401559, 86, 0);
 	func_34(770, 68882066, 86, 0);
@@ -927,26 +927,26 @@ int func_4()
 	func_34(777, 206212839, 126, 0);
 	func_34(778, -397583624, 126, 0);
 	func_34(779, 2069332234, 126, 0);
-	func_34(780, -703427271, 21, 0);
+	func_34(780, joaat("PAI_RANCHHAND_02"), 21, 0);
 	func_34(782, 1535435821, 21, 0);
 	func_34(781, -657140614, 21, 0);
-	func_34(764, -2091847717, 102, 0);
-	func_34(765, -1826091235, 102, 0);
-	func_34(766, -183446799, 102, 0);
-	func_34(767, -425576940, 102, 0);
-	func_34(745, -35439674, 66, 0);
-	func_34(746, -1635184241, 66, 0);
+	func_34(764, joaat("LNS_TENANT_1"), 102, 0);
+	func_34(765, joaat("LNS_TENANT_2"), 102, 0);
+	func_34(766, joaat("LNS_TENANT_3"), 102, 0);
+	func_34(767, joaat("LNS_TENANT_4"), 102, 0);
+	func_34(745, joaat("CRO_RANCHER"), 66, 0);
+	func_34(746, joaat("CRO_RANCH_HAND"), 66, 0);
 	func_34(747, -293090879, 66, 0);
 	func_34(748, 648915453, 66, 0);
 	func_34(749, 1667281975, 66, 0);
 	func_34(750, -111460537, 66, 0);
-	func_34(751, 1359918978, 70, 0);
+	func_34(751, joaat("GRH_RANCH_HAND"), 70, 0);
 	func_34(754, 1034786103, 70, 0);
 	func_34(752, -1567959563, 70, 0);
 	func_34(753, -484952477, 70, 0);
 	func_34(755, 1067039038, 100, 0);
-	func_34(760, -1110918177, 100, 0);
-	func_34(761, 1297060780, 100, 0);
+	func_34(760, joaat("DAI_RANCHER"), 100, 0);
+	func_34(761, joaat("DAI_RANCH_HAND"), 100, 0);
 	func_34(762, 296364985, 100, 0);
 	func_34(756, -678561551, 100, 0);
 	func_34(757, 248735611, 100, 0);
@@ -958,25 +958,25 @@ int func_4()
 	func_34(796, joaat("CHE_SON_01"), 42, 0);
 	func_34(797, joaat("CHE_SON_02"), 42, 0);
 	func_34(798, joaat("CHE_SON_03"), 42, 0);
-	func_34(733, -1956453623, 72, 0);
+	func_34(733, joaat("LAR_TENANT_01"), 72, 0);
 	func_34(735, -1495156960, 72, 0);
 	func_34(734, -1994890988, 72, 0);
 	func_34(736, -1674816163, 64, 0);
 	func_34(737, 1825517903, 64, 0);
-	func_34(740, 1044155489, 64, 32);
-	func_34(783, -1014014599, 116, 0);
-	func_34(784, 1990364644, 116, 0);
+	func_34(740, joaat("CRD_TENANT_02"), 64, 32);
+	func_34(783, joaat("RKF_RANCHER"), 116, 0);
+	func_34(784, joaat("RKF_RANCH_HAND"), 116, 0);
 	func_34(790, -1952476971, 116, 0);
 	func_34(789, 41332007, 116, 0);
-	func_34(785, -970549571, 116, 0);
-	func_34(786, 2095678528, 116, 0);
-	func_34(787, -357998654, 116, 0);
-	func_34(788, -2144269709, 116, 0);
-	func_34(799, 746383647, 89, 0);
+	func_34(785, joaat("RKF_DOG_1"), 116, 0);
+	func_34(786, joaat("RKF_DOG_2"), 116, 0);
+	func_34(787, joaat("RKF_DOG_3"), 116, 0);
+	func_34(788, joaat("RKF_DOG_4"), 116, 0);
+	func_34(799, joaat("RKS_TENANT"), 89, 0);
 	func_34(800, -819975538, 89, 0);
-	func_34(801, -495174442, 23, 0);
-	func_34(802, 1787657353, 28, 0);
-	func_34(803, -1760134268, 28, 0);
+	func_34(801, joaat("RGS_POSTMASTER"), 23, 0);
+	func_34(802, joaat("WAL_TRAIN_CLERK"), 28, 0);
+	func_34(803, joaat("WAL_GENSHOPKEEPER"), 28, 0);
 	func_34(503, -1679792557, 75, 0);
 	func_34(505, -1132587088, 75, 0);
 	func_34(506, 659451480, 75, 0);
@@ -1011,9 +1011,9 @@ int func_4()
 	func_34(833, -1668100667, 11, 0);
 	func_34(808, 1635210214, 11, 0);
 	func_34(809, 2009980618, 11, 0);
-	func_34(64, -1086821801, 76, 4194304);
-	func_34(65, 212415041, 76, 4194304);
-	func_34(66, -16935190, 76, 4194304);
+	func_34(64, joaat("EA_HMSTD_FOREMAN"), 76, 4194304);
+	func_34(65, joaat("EA_HMSTD_WORKER_1"), 76, 4194304);
+	func_34(66, joaat("EA_HMSTD_WORKER_2"), 76, 4194304);
 	func_34(67, 1961507132, 76, 4194304);
 	func_34(68, 1926750024, 76, 4194304);
 	func_34(858, 486251723, -1, 256);
@@ -2752,24 +2752,24 @@ bool func_32()
 
 void func_33()
 {
-	PERSCHAR::_0x70605812ABC9FF0F(-1500363608, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1831454165, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-189361791, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-657495007, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-164988371, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(195405924, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(700911581, 1267906477);
-	PERSCHAR::_0x70605812ABC9FF0F(2106212657, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-329070872, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-2135232939, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1421023642, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1907774332, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1609379818, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1433442827, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1510112722, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-389866671, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(-399041944, -1573365377);
-	PERSCHAR::_0x70605812ABC9FF0F(1888394171, -1573365377);
+	PERSCHAR::_0x70605812ABC9FF0F(-1500363608, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1831454165, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-189361791, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-657495007, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-164988371, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(195405924, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(700911581, joaat("ANIMAL_HORSE_CORRAL_SCALED_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(2106212657, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-329070872, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-2135232939, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1421023642, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1907774332, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1609379818, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1433442827, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1510112722, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-389866671, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(-399041944, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
+	PERSCHAR::_0x70605812ABC9FF0F(1888394171, joaat("ANIMAL_HORSE_CORRAL_PC_CONTENT_LOCKED"));
 }
 
 void func_34(int iParam0, int iParam1, int iParam2, int iParam3)
@@ -12241,20 +12241,20 @@ void func_131()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_418(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_418(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_418(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_418(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_418(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_418(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_418(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_418(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_418(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_418(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_418(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_418(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_418(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_418(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_418(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_418(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_418(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_418(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_418(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_418(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_418(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_418(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_418(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_418(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_418(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_418(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_418(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_418(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_419())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -19708,31 +19708,31 @@ int func_423(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -26860,7 +26860,7 @@ void func_627(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_410(func_880(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -39812,7 +39812,7 @@ void func_1087(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1127(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_843(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1128(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_843(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1128(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1088(int iParam0, int iParam1)

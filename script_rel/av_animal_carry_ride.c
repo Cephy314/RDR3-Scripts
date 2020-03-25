@@ -55,7 +55,7 @@ void __EntryFunction__()
 
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
-	iLocal_10 = 1959114253;
+	iLocal_10 = joaat("DEAD_CARRIABLE_DEER");
 	sLocal_41 = "PD_Deer_Shot";
 	Var0.f_1 = -1;
 	Var0.f_3.f_9 = 3;
@@ -1199,21 +1199,21 @@ void func_14(var uParam0, vector3 vParam1, vector3 vParam4)
 		case 38:
 			iVar2 = joaat("a_c_deer_01");
 			iVar0 = func_49(func_48(), 0, 1, 0, 1, 0, 1);
-			iLocal_10 = 1959114253;
+			iLocal_10 = joaat("DEAD_CARRIABLE_DEER");
 			sLocal_39 = "CREATURES_MAMMAL@DEER@NORMAL@DEAD";
 			sLocal_40 = "dead_right";
 			break;
 		case 39:
 			iVar0 = func_49(func_48(), 1, 1, 1, 1, 0, 1);
 			iVar2 = joaat("a_c_deer_01");
-			iLocal_10 = 1959114253;
+			iLocal_10 = joaat("DEAD_CARRIABLE_DEER");
 			sLocal_39 = "CREATURES_MAMMAL@DEER@NORMAL@DEAD";
 			sLocal_40 = "dead_right";
 			break;
 		case 41:
 			iVar0 = func_49(func_48(), 1, 1, 1, 1, 0, 1);
 			iVar2 = joaat("a_c_duck_01");
-			iLocal_10 = 144834402;
+			iLocal_10 = joaat("DEAD_CARRIABLE_DUCK");
 			sLocal_39 = "CREATURES_BIRD@DUCK@NORMAL@DEAD";
 			sLocal_40 = "dead_left";
 			break;
@@ -2545,19 +2545,19 @@ int func_47(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 int func_48()

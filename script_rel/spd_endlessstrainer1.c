@@ -14361,7 +14361,7 @@ void func_421(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_258(func_632(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -15914,20 +15914,20 @@ void func_466()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_684(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_684(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_684(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_684(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_684(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_684(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_684(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_684(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_684(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_684(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_684(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_684(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_684(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_684(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_684(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_684(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_684(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_684(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_684(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_684(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_684(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_684(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_684(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_684(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_684(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_684(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_684(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_684(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_685())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bVar15, false, 2, false);
@@ -30770,7 +30770,7 @@ void func_892(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_989(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_586(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_990(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_586(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_990(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_893(int iParam0, int iParam1)

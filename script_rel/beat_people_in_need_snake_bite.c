@@ -5475,7 +5475,7 @@ void func_152()
 	switch (iLocal_451)
 	{
 		case 0:
-			PED::_0x8B3B71C80A29A4BB(&(uLocal_761[0]), -1280780849, 6);
+			PED::_0x8B3B71C80A29A4BB(&(uLocal_761[0]), joaat("MoodInjuredMild"), 6);
 			break;
 		case 1:
 			PED::_0x8B3B71C80A29A4BB(&(uLocal_761[0]), -1982843846, 6);
@@ -16276,7 +16276,7 @@ int func_470(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -19922,7 +19922,7 @@ void func_633(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_248(func_719(iVar0, 10), 1, 0))
 		{
 			if (bParam2)

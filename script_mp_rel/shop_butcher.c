@@ -445,7 +445,7 @@ void __EntryFunction__()
 				{
 					if (ENTITY::IS_ENTITY_IN_VOLUME(Global_34, Var0.f_1997, true, 0))
 					{
-						SCRIPTS::_0x7D654266025E921B(-219582252);
+						SCRIPTS::_0x7D654266025E921B(joaat("CHAL_CTX_IN_SHOP"));
 						func_15(&Var0, 4);
 						Global_1957553->f_674 = 1;
 						func_46(&(Var0.f_2248), 0);
@@ -637,7 +637,7 @@ void __EntryFunction__()
 				func_90(&Var0, bVar2589);
 				if (!func_91(Global_34, Var0.f_1997, 0, 1) || bVar2595)
 				{
-					SCRIPTS::_0x50B72A754EE64A71(-219582252);
+					SCRIPTS::_0x50B72A754EE64A71(joaat("CHAL_CTX_IN_SHOP"));
 					func_15(&Var0, 8);
 				}
 				break;
@@ -16224,7 +16224,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 		}
 		else if (iVar4 == -140369351 || (bVar5 && bVar1 == joaat("WEAPON_REPEATER_CARBINE")))
 		{
-			if (bVar0 == -2006479051)
+			if (bVar0 == joaat("COMPONENT_REPEATER_CARBINE_WRAP2"))
 			{
 				*uParam1 = { -0.1175f, 0.0312f, 0.4676f };
 				uParam1->f_3 = { -58.405f, 0.8548f, -24.0052f };
@@ -16245,7 +16245,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 		}
 		else if (iVar4 == 1601295268 || (bVar5 && bVar1 == joaat("WEAPON_REPEATER_EVANS")))
 		{
-			if (bVar0 == 1213912331)
+			if (bVar0 == joaat("COMPONENT_REPEATER_EVANS_WRAP2"))
 			{
 				*uParam1 = { -0.1545f, 0.0547f, 0.342f };
 				uParam1->f_3 = { -51.367f, 0.8549f, -26.4523f };
@@ -16260,7 +16260,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 		}
 		else if (iVar4 == -241638635 || (bVar5 && bVar1 == joaat("WEAPON_REPEATER_WINCHESTER")))
 		{
-			if (bVar0 == -974982909)
+			if (bVar0 == joaat("COMPONENT_REPEATER_WINCHESTER_WRAP2"))
 			{
 				*uParam1 = { -0.2727f, 0.0474f, 0.4046f };
 				uParam1->f_3 = { -56.678f, 0.8549f, -22.9235f };
@@ -16275,7 +16275,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 		}
 		else if (iVar4 == -62390436 || (bVar5 && bVar1 == joaat("WEAPON_RIFLE_BOLTACTION")))
 		{
-			if (bVar0 == 1905286511)
+			if (bVar0 == joaat("COMPONENT_RIFLE_BOLTACTION_WRAP2"))
 			{
 				*uParam1 = { -0.3187f, -0.0085f, 0.5234f };
 				uParam1->f_3 = { -56.0213f, 0.8549f, -25.5432f };
@@ -16290,7 +16290,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 		}
 		else if (iVar4 == -548371721 || (bVar5 && bVar1 == joaat("WEAPON_RIFLE_SPRINGFIELD")))
 		{
-			if (bVar0 == -722454818)
+			if (bVar0 == joaat("COMPONENT_RIFLE_SPRINGFIELD_WRAP2"))
 			{
 				*uParam1 = { -0.2586f, -0.1552f, 0.5759f };
 				uParam1->f_3 = { -48.249f, 0.8549f, -28.9161f };
@@ -16311,7 +16311,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 		}
 		else if (iVar4 == -1693422950 || (bVar5 && bVar1 == joaat("WEAPON_SNIPERRIFLE_ROLLINGBLOCK")))
 		{
-			if (bVar0 == 627382224)
+			if (bVar0 == joaat("COMPONENT_RIFLE_ROLLINGBLOCK_WRAP2"))
 			{
 				*uParam1 = { -0.2141f, 0.0336f, 0.4167f };
 				uParam1->f_3 = { -52.2811f, 0.8533f, -29.52f };
@@ -16324,7 +16324,7 @@ void func_518(var uParam0, var uParam1, var uParam2)
 				uParam1->f_6 = 43.2665f;
 			}
 		}
-		else if ((iVar4 == 1905987493 || bVar0 == 1419411400) || bVar5)
+		else if ((iVar4 == 1905987493 || bVar0 == joaat("COMPONENT_RIFLE_BOLTACTION_WRAP")) || bVar5)
 		{
 			*uParam1 = { -0.4132f, 0.0389f, 0.6274f };
 			uParam1->f_3 = { -60.2867f, 0.854f, -24.6065f };
@@ -56609,7 +56609,7 @@ int func_1722(var uParam0, bool bParam1, int iParam2)
 		else if (bVar5)
 		{
 			DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam2, "frontSlotTextureDict", joaat("menu_textures"));
-			DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam2, "frontSlotTexture", 1974973834);
+			DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam2, "frontSlotTexture", joaat("horse_saddle"));
 		}
 		else
 		{
@@ -56815,7 +56815,7 @@ int func_1724(var uParam0, bool bParam1, struct<4> Param2, int iParam6, bool bPa
 				{
 					DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam6, "backTextureVisible", true);
 					DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam6, "backTextureDict", joaat("menu_textures"));
-					DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam6, "backTexture", 1974973834);
+					DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam6, "backTexture", joaat("horse_saddle"));
 				}
 			}
 		}
@@ -78394,7 +78394,7 @@ int func_2448(bool bParam0)
 		case -1457420231: /* GXTEntry: "Good Bat Carcass" */
 		case 563848610: /* GXTEntry: "Poor Bat Carcass" */
 		case 1432949803: /* GXTEntry: "Perfect Bat Carcass" */
-			return 783089120 /* GXTEntry: "Bat" */;
+			return joaat("AT_BAT");
 		case -2120099592: /* GXTEntry: "Poor Blue Jay Carcass" */
 		case -983831788: /* GXTEntry: "Perfect Blue Jay Carcass" */
 		case 1848456619: /* GXTEntry: "Good Blue Jay Carcass" */
@@ -83367,11 +83367,11 @@ int func_2566(bool bParam0)
 {
 	switch (bParam0)
 	{
-		case 882648233: /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[0] = 57366885;
-			Global_1051388->f_46[1] = -880097252;
-			Global_1051388->f_46[2] = -1391305890;
-			Global_1051388->f_46[3] = 882648233; /* GXTEntry: "Bounty Hunter Variant" */
+		case joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_SCHOFIELD_BOUNTY"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP_BOUNTY");
+			Global_1051388->f_46[1] = joaat("COMPONENT_REVOLVER_SCHOFIELD_BARREL_BOUNTY");
+			Global_1051388->f_46[2] = joaat("COMPONENT_REVOLVER_SCHOFIELD_SIGHT_BOUNTY");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_SCHOFIELD_BOUNTY");
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83379,11 +83379,11 @@ int func_2566(bool bParam0)
 			Global_1051388->f_46.f_6[3] = 1;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -1814368974: /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[0] = 1043980328;
-			Global_1051388->f_46[1] = -1814368974; /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[2] = 1419411400; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[3] = 1905286511; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_BOLTACTION_BOUNTY"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_RIFLE_BOLTACTION_GRIP_BOUNTY");
+			Global_1051388->f_46[1] = joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_BOLTACTION_BOUNTY");
+			Global_1051388->f_46[2] = joaat("COMPONENT_RIFLE_BOLTACTION_WRAP");
+			Global_1051388->f_46[3] = joaat("COMPONENT_RIFLE_BOLTACTION_WRAP2");
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83391,10 +83391,10 @@ int func_2566(bool bParam0)
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -840678979: /* GXTEntry: "Collector Variant" */
-			Global_1051388->f_46[0] = -385288709;
-			Global_1051388->f_46[1] = 1799288707;
-			Global_1051388->f_46[2] = -840678979; /* GXTEntry: "Collector Variant" */
+		case joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_WINCHESTER_COLLECTOR"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_REPEATER_WINCHESTER_GRIP_COLLECTOR");
+			Global_1051388->f_46[1] = joaat("COMPONENT_REPEATER_WINCHESTER_WRAP_COLLECTOR");
+			Global_1051388->f_46[2] = joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_WINCHESTER_COLLECTOR");
 			Global_1051388->f_46[3] = 0;
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
@@ -83403,11 +83403,11 @@ int func_2566(bool bParam0)
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -454335124: /* GXTEntry: "Collector Variant" */
-			Global_1051388->f_46[0] = -49512990;
-			Global_1051388->f_46[1] = -108436614;
-			Global_1051388->f_46[2] = -858357099;
-			Global_1051388->f_46[3] = -454335124; /* GXTEntry: "Collector Variant" */
+		case joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_VOLCANIC_COLLECTOR"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_PISTOL_VOLCANIC_GRIP_COLLECTOR");
+			Global_1051388->f_46[1] = joaat("COMPONENT_PISTOL_VOLCANIC_BARREL_COLLECTOR");
+			Global_1051388->f_46[2] = joaat("COMPONENT_PISTOL_VOLCANIC_SIGHT_COLLECTOR");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_VOLCANIC_COLLECTOR");
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83415,36 +83415,36 @@ int func_2566(bool bParam0)
 			Global_1051388->f_46.f_6[3] = 1;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -107914178: /* GXTEntry: "Trader Variant" */
-			Global_1051388->f_46[0] = -1850951144;
-			Global_1051388->f_46[1] = -169059359;
-			Global_1051388->f_46[2] = -107914178; /* GXTEntry: "Trader Variant" */
-			Global_1051388->f_46[3] = 1509466794; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[4] = 930176412; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_PUMP_TRADER"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_SHOTGUN_PUMP_GRIP_TRADER");
+			Global_1051388->f_46[1] = joaat("COMPONENT_SHOTGUN_PUMP_CLIP_TRADER");
+			Global_1051388->f_46[2] = joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_PUMP_TRADER");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHOTGUN_PUMP_WRAP1");
+			Global_1051388->f_46[4] = joaat("COMPONENT_SHOTGUN_PUMP_WRAP2");
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -2141733109: /* GXTEntry: "Moonshiner Variant" */
-			Global_1051388->f_46[0] = 1772087572;
-			Global_1051388->f_46[1] = 537597023;
-			Global_1051388->f_46[2] = -2141733109; /* GXTEntry: "Moonshiner Variant" */
-			Global_1051388->f_46[3] = 635989042; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[4] = -221706764; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_SAWEDOFF_MOONSHINER"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_SHOTGUN_SAWEDOFF_GRIP_MOONSHINER");
+			Global_1051388->f_46[1] = joaat("COMPONENT_SHOTGUN_SAWED_SIGHT_MOONSHINER");
+			Global_1051388->f_46[2] = joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_SAWEDOFF_MOONSHINER");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHOTGUN_SAWEDOFF_WRAP1");
+			Global_1051388->f_46[4] = joaat("COMPONENT_SHOTGUN_SAWEDOFF_WRAP2");
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -1468648029: /* GXTEntry: "Krampus Variant" */
-			Global_1051388->f_46[0] = -766495288;
-			Global_1051388->f_46[1] = -563652421;
-			Global_1051388->f_46[2] = -1468648029; /* GXTEntry: "Krampus Variant" */
-			Global_1051388->f_46[3] = -240387438; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[4] = -470655201; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_DOUBLEBARREL_KRAMPUS"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_KRAMPUS");
+			Global_1051388->f_46[1] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_KRAMPUS");
+			Global_1051388->f_46[2] = joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_DOUBLEBARREL_KRAMPUS");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_WRAP1");
+			Global_1051388->f_46[4] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_WRAP2");
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;

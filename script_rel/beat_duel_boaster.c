@@ -841,7 +841,7 @@ void func_20()
 	switch (func_4())
 	{
 		case 105:
-			iLocal_498 = 390157385;
+			iLocal_498 = joaat("RHO_CIVILIANS");
 			func_67();
 			*(Local_652[3 /*12*/]) = { 1341.218f, -1377.62f, 79.48064f };
 			func_68(&((Local_652[3 /*12*/])->f_11), 11);
@@ -1872,8 +1872,8 @@ int func_38()
 			{
 				func_24(1, 1, 0);
 				func_151(1);
-				iLocal_499 = -578377130;
-				iLocal_500 = -217808743;
+				iLocal_499 = joaat("MoodScared");
+				iLocal_500 = joaat("MoodDefuse");
 				PED::_0xD2F0FE8805D91647(&(uLocal_727[0]), 1598480633);
 				EVENT::_0xB6F4825153920582();
 				if (func_75(&(uLocal_727[0]), 0, 1))
@@ -11869,7 +11869,7 @@ int func_356(int iParam0, int iParam1)
 		if (iLocal_876[1] || !PED::IS_PED_USING_ANY_SCENARIO(&(uLocal_727[1])))
 		{
 			func_353();
-			iLocal_499 = -988409641;
+			iLocal_499 = joaat("MoodAgitated");
 			return 1;
 		}
 	}
@@ -16253,7 +16253,7 @@ int func_494(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

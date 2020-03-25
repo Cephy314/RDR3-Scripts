@@ -851,7 +851,7 @@ void func_24()
 				}
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_463[iVar0]), 5, true);
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_463[iVar0]), 50, true);
-				PED::_0x8ACC0506743A8A5C(&(uLocal_463[iVar0]), 166028666, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(uLocal_463[iVar0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			}
 			else
 			{
@@ -3873,7 +3873,7 @@ bool func_123(bool bParam0)
 				}
 				else
 				{
-					PED::_0x8B1E8E35A6E814EA(&(uLocal_463[0]), -1973287917, 2000f);
+					PED::_0x8B1E8E35A6E814EA(&(uLocal_463[0]), joaat("CombatStartNoThreat"), 2000f);
 					func_308(0, 0);
 				}
 				func_33(&uLocal_696);
@@ -3897,7 +3897,7 @@ bool func_123(bool bParam0)
 				}
 				else
 				{
-					PED::_0x8B1E8E35A6E814EA(&(uLocal_463[1]), -1973287917, 2000f);
+					PED::_0x8B1E8E35A6E814EA(&(uLocal_463[1]), joaat("CombatStartNoThreat"), 2000f);
 					func_308(1, 0);
 				}
 				func_33(&uLocal_696);
@@ -3923,7 +3923,7 @@ bool func_123(bool bParam0)
 					}
 					else
 					{
-						PED::_0x8B1E8E35A6E814EA(&(uLocal_463[2]), -1973287917, 2000f);
+						PED::_0x8B1E8E35A6E814EA(&(uLocal_463[2]), joaat("CombatStartNoThreat"), 2000f);
 						func_308(2, 16384);
 					}
 				}
@@ -13186,7 +13186,7 @@ int func_396(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

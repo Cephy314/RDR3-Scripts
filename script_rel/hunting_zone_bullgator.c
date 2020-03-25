@@ -2775,7 +2775,7 @@ int func_81(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BADGER_JN");
 			}
 			break;
-		case 783089120: /* GXTEntry: "Bat" */
+		case joaat("AT_BAT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BAT_AR");

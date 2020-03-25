@@ -22903,11 +22903,11 @@ int func_800(int iParam0)
 			return joaat("GFH_ANTHONY_FOREMAN");
 		case 539824333:
 			return joaat("GFH_LANGTON");
-		case 1309348282:
+		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
 		case -701311458:
 			return joaat("GFH_SHERIFF_FREEMAN");
-		case 2048329431:
+		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
@@ -22915,7 +22915,7 @@ int func_800(int iParam0)
 			return joaat("GFH_ALDEN");
 		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
-		case -399874304:
+		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
 		case -743855838:
 			return joaat("GFH_ABERDEEN_PIG_FARMERS");
@@ -30978,17 +30978,17 @@ void func_1169(int iParam0)
 	}
 	if ((WEAPON::_0x95CA12E2C68043E5(iParam0, 0) || WEAPON::_0x80BB243789008A82(iParam0, 0)) || WEAPON::_0x495A04CAEC263AF8(iParam0, 0))
 	{
-		PED::_0x8B1E8E35A6E814EA(iParam0, -289314967, -1f);
+		PED::_0x8B1E8E35A6E814EA(iParam0, joaat("MountedCombat_RangedRifle"), -1f);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 128, true);
 	}
 	else if (WEAPON::_0xABC18A28BAD4B46F(iParam0, 0))
 	{
-		PED::_0x8B1E8E35A6E814EA(iParam0, 1164657302, -1f);
+		PED::_0x8B1E8E35A6E814EA(iParam0, joaat("MountedCombat_RangedShotgun"), -1f);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 128, true);
 	}
 	else if (WEAPON::_0x5B235F24472F2C3B(iParam0, 0) || WEAPON::_0xBFCA7AFABF9D7967(iParam0, 0))
 	{
-		PED::_0x8B1E8E35A6E814EA(iParam0, -68970303, -1f);
+		PED::_0x8B1E8E35A6E814EA(iParam0, joaat("MountedCombat_RangedRevolver"), -1f);
 		PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 128, true);
 	}
 }

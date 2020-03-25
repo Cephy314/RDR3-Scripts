@@ -4860,7 +4860,7 @@ int func_144(int iParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(iVar7);
-				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
+				if (iVar8 == joaat("CARRIABLE_SADDLE") || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}
@@ -17468,7 +17468,7 @@ int func_496(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -21126,7 +21126,7 @@ void func_661(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_663(func_870(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -35608,7 +35608,7 @@ void func_1136(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1212(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_823(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1213(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_823(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1213(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1137(int iParam0, int iParam1)

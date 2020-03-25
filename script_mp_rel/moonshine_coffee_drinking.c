@@ -72,12 +72,12 @@ void __EntryFunction__()
 				break;
 			case 1:
 				func_8(&Var0);
-				if (!func_9(Var0.f_184, 4) && TASK::_0x6AA3DCA2C6F5EB6D(Global_34) != -1200848232)
+				if (!func_9(Var0.f_184, 4) && TASK::_0x6AA3DCA2C6F5EB6D(Global_34) != joaat("MP_MOONSHINE_DRINK_COFFEE_HOLD"))
 				{
 					func_10(&(Var0.f_184), 4);
 					func_11(&Var0, 0);
 				}
-				else if (func_9(Var0.f_184, 4) && TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -1200848232)
+				else if (func_9(Var0.f_184, 4) && TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINK_COFFEE_HOLD"))
 				{
 					func_12(&(Var0.f_184), 4);
 					func_11(&Var0, 1);
@@ -121,7 +121,7 @@ void __EntryFunction__()
 				}
 				break;
 			case 2:
-				if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -1200848232)
+				if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINK_COFFEE_HOLD"))
 				{
 					if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 0) && ((PED::_0x569F1E1237508DEB(Global_34) == 254049387 || PED::_0x569F1E1237508DEB(Global_34) == -1451987280) || PED::_0x569F1E1237508DEB(Global_34) == joaat("WORLD_PLAYER_DYNAMIC_CAMP_FIRE_KNEEL_ARTHUR")))
 					{
@@ -129,7 +129,7 @@ void __EntryFunction__()
 					}
 					else
 					{
-						TASK::_0xB35370D5353995CB(Global_34, -993390176, 1048576000);
+						TASK::_0xB35370D5353995CB(Global_34, joaat("MP_MOONSHINE_DRINK_COFFEE_PUT_AWAY"), 1048576000);
 					}
 					func_7(&Var0, 3);
 				}

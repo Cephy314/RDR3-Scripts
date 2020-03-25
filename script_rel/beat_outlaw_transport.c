@@ -8821,19 +8821,19 @@ int func_204(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-62570976, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-165971473, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(-2049218219, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(989061023, 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(1468170991, 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
 }
 
 bool func_205(int iParam0, bool bParam1)
@@ -12249,7 +12249,7 @@ void func_317(int iParam0, bool bParam1)
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	if (func_50(iLocal_819, 32768))
 	{
-		PED::_0x8ACC0506743A8A5C(&(uLocal_801[iParam0]), 166028666, 1, -1082130432);
+		PED::_0x8ACC0506743A8A5C(&(uLocal_801[iParam0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 		if (func_373(&(uLocal_801[iParam0]), *(vLocal_828[iParam0 /*3*/]), 1) < 10f)
 		{
 			TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY_USING_COMBAT_STYLE(0, *(vLocal_828[iParam0 /*3*/]), Global_35, 1.5f, 0, 1056964608, 1082130432, 1, 0, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
@@ -12360,7 +12360,7 @@ int func_322(int iParam0, bool bParam1)
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
 		if (bParam1)
 		{
-			PED::_0x8ACC0506743A8A5C(&(uLocal_801[iParam0]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_801[iParam0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			TASK::TASK_GO_TO_ENTITY_WHILE_AIMING_AT_ENTITY_USING_COMBAT_STYLE(0, Global_35, Global_35, 1.5f, 0, 7f, 1082130432, 1, 0, joaat("firing_pattern_burst_fire"), 0);
 		}
 		TASK::TASK_AIM_GUN_AT_ENTITY(0, Global_35, -1, false, 1);
@@ -12439,7 +12439,7 @@ void func_324(int iParam0, int iParam1, int iParam2)
 					}
 					if (PED::_0x7F9B9791D4CB71F6(iParam0, Global_35, false, 0) == 1)
 					{
-						PED::_0x8ACC0506743A8A5C(iParam0, 166028666, 1, -1082130432);
+						PED::_0x8ACC0506743A8A5C(iParam0, joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 						TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY_USING_COMBAT_STYLE(0, vLocal_889, Global_35, 2f, 0, 1056964608, 1082130432, 1, 0, 0, joaat("firing_pattern_burst_fire"), 20000, 0);
 					}
 					else if (func_373(iParam0, vLocal_889, 1) > 10f)
@@ -16906,7 +16906,7 @@ int func_447(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

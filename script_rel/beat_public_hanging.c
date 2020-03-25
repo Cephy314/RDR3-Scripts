@@ -14358,7 +14358,7 @@ int func_343(int iParam0, int iParam1)
 			if (func_51(iLocal_1020, 32768) || iLocal_1419 == 2048)
 			{
 				PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 93, true);
-				PED::_0x8ACC0506743A8A5C(iParam0, 82540408, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(iParam0, joaat("SituationNormal"), 1, -1082130432);
 				PED::REGISTER_TARGET(iParam0, Global_35, 1);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
@@ -19276,7 +19276,7 @@ int func_473(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -21613,7 +21613,7 @@ int func_561(int iParam0, int iParam1, bool bParam2, float fParam3, float fParam
 			}
 			else if (PED::GET_MOUNT(iParam0) == 0)
 			{
-				PED::_0x8ACC0506743A8A5C(iParam0, 82540408, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(iParam0, joaat("SituationNormal"), 1, -1082130432);
 				TASK::TASK_AIM_GUN_AT_ENTITY(0, iParam1, -1, false, 1);
 			}
 			else
@@ -22141,19 +22141,19 @@ int func_579(int iParam0)
 	switch (iParam0)
 	{
 		case 76:
-			return 685634567;
+			return joaat("VAL_PRISONERS");
 		case 26:
-			return -935154888;
+			return joaat("STR_PRISONERS");
 		case 105:
-			return -1762155239;
+			return joaat("RHD_PRISONERS");
 		case 78:
-			return 550408623;
+			return joaat("ASB_PRISONERS");
 		case 5:
-			return -122235554;
+			return joaat("SDN_PRISONERS");
 		case 38:
-			return -1264444972;
+			return joaat("BLA_PRISONER");
 		case 115:
-			return -1705419773;
+			return joaat("TBL_PRISONERS");
 		default:
 			break;
 	}

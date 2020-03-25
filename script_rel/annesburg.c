@@ -1025,8 +1025,8 @@ void func_35(int iParam0)
 		return;
 	}
 	func_76();
-	func_77(0, -1855532022);
-	func_77(2, 617504531);
+	func_77(0, joaat("ASB_CIVILIANS"));
+	func_77(2, joaat("ASB_LAW_DEPUTIES"));
 }
 
 bool func_36(int iParam0)

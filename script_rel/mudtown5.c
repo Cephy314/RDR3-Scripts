@@ -30910,7 +30910,7 @@ void func_600(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_325(func_1074(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -32463,20 +32463,20 @@ void func_645()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1126(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1126(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1126(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1126(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1126(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1126(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1126(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1126(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1126(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1126(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1126(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1126(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1126(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1126(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1126(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1126(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1126(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1126(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1126(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1126(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1126(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1126(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1126(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1126(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1126(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1126(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1126(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1126(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_29())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -52420,7 +52420,7 @@ void func_1208(char[4] cParam0, var uParam1, var uParam2)
 				func_1732(uParam1, &iLocal_1485);
 				func_1732(uParam1, &uLocal_1488);
 				PED::SET_PED_ACCURACY(&(uLocal_621[2]), 75);
-				PED::_0x8ACC0506743A8A5C(*uParam1, 1307780291, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(*uParam1, joaat("Script_StartOfCombat_CoveringFire"), 1, -1082130432);
 				PED::SET_PED_COMBAT_MOVEMENT(&(uLocal_621[2]), 1);
 				func_1733();
 				iLocal_2862 = 0;
@@ -53307,7 +53307,7 @@ void func_1210(char[4] cParam0, var uParam1, var uParam2)
 				func_1732(uParam1, &iLocal_1485);
 				func_1732(uParam1, &uLocal_1488);
 				PED::SET_PED_ACCURACY(&(uLocal_621[1]), 75);
-				PED::_0x8ACC0506743A8A5C(*uParam1, 1240409539, 1, -1082130432);
+				PED::_0x8ACC0506743A8A5C(*uParam1, joaat("Script_MidCombat"), 1, -1082130432);
 				PED::SET_PED_COMBAT_MOVEMENT(&(uLocal_621[1]), 1);
 				func_1731(*uParam1, joaat("WEAPON_REVOLVER_CATTLEMAN_LENNY"));
 				func_1755();
@@ -56214,7 +56214,7 @@ int func_1252(char[4] cParam0)
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_621[0]), 26, true);
 	PED::SET_PED_COMBAT_MOVEMENT(&(uLocal_621[0]), 1);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_621[0]), 0, false);
-	PED::_0x8ACC0506743A8A5C(&(uLocal_621[0]), 1240409539, 1, -1082130432);
+	PED::_0x8ACC0506743A8A5C(&(uLocal_621[0]), joaat("Script_MidCombat"), 1, -1082130432);
 	func_1206(Local_629[0 /*41*/], 74);
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(Local_14.f_97[1]), false, joaat("REL_PLAYER_ENEMY"));
 	ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(Local_14.f_97[1]), false, joaat("REL_PLAYER_ALLY"));
@@ -85686,31 +85686,31 @@ int func_2121(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -86628,55 +86628,55 @@ int func_2170(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -86961,7 +86961,7 @@ void func_2180(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2657(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1031(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2658(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1031(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2658(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2181(int iParam0, int iParam1)
@@ -91332,7 +91332,7 @@ void func_2362(char[4] cParam0, var uParam1, var uParam2)
 			ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(*uParam1, uParam2->f_14);
 			PED::_0x733C87D4CE22BEA2(*uParam1);
 			PED::SET_PED_CONFIG_FLAG(*uParam1, 103, false);
-			PED::_0x8ACC0506743A8A5C(*uParam1, 1240409539, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(*uParam1, joaat("Script_MidCombat"), 1, -1082130432);
 			PED::SET_COMBAT_FLOAT(*uParam1, 4, 3f);
 			PED::SET_COMBAT_FLOAT(*uParam1, 1, 4f);
 			PED::SET_COMBAT_FLOAT(*uParam1, 3, 0.75f);
@@ -92381,7 +92381,7 @@ void func_2375(char[4] cParam0, var uParam1, var uParam2)
 			ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(*uParam1, true);
 			func_1738(*uParam1, 1, 1);
 			PED::SET_PED_COMBAT_RANGE(*uParam1, 3);
-			PED::_0x8ACC0506743A8A5C(*uParam1, -1838134243, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(*uParam1, joaat("Script_StartOfCombat_RunThenShoot5m"), 1, -1082130432);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam1, false);
 			PED::_0xFC3DB99C8144CD81(*uParam1, &(iLocal_123[57]), 0, false, 0);
 			PED::SET_PED_CONFIG_FLAG(*uParam1, 186, false);
@@ -111658,11 +111658,11 @@ int func_3017(int iParam0)
 	}
 	switch (((*Global_1360165)[iParam0 /*1157*/])->f_127)
 	{
-		case -784953535:
-		case -543937540:
-		case -233385727:
-		case 893704044:
-		case 1132950513:
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_2"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_3"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_1"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_4"):
+		case joaat("PERSCHAR_COMP_HORSE_COMMON_5"):
 			return 1;
 		default:
 			break;

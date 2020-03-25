@@ -18370,7 +18370,7 @@ void func_516(var uParam0, var uParam1, var uParam2)
 			uParam1->f_3 = { -46.5883f, 0.8548f, -40.8771f };
 			uParam1->f_6 = 43.2665f;
 		}
-		else if ((iVar3 == 1905987493 || bVar0 == 1419411400) || bVar4)
+		else if ((iVar3 == 1905987493 || bVar0 == joaat("COMPONENT_RIFLE_BOLTACTION_WRAP")) || bVar4)
 		{
 			*uParam1 = { -0.289f, -0.1903f, 0.4845f };
 			uParam1->f_3 = { -38.1148f, 0.8549f, -27.4051f };
@@ -29338,48 +29338,48 @@ int func_866(bool bParam0)
 	iVar0 = func_35(func_118(bParam0, 0));
 	switch (iVar0)
 	{
-		case -2098805802:
-		case -1760134268:
+		case joaat("SDN_PHOTOGRAPHER"):
+		case joaat("WAL_GENSHOPKEEPER"):
 		case joaat("val_doctor"):
 		case joaat("val_gunsmith"):
-		case -1472222264:
-		case -1456173883:
-		case -1391735686:
-		case -1337007991:
+		case joaat("AMD_GENERAL_STORE"):
+		case joaat("TBL_BUTCHER"):
+		case joaat("Str_Newspaper_Vendor"):
+		case joaat("Blw_Butcher"):
 		case joaat("VAL_General_Store"):
-		case -1116668486:
+		case joaat("SDN_DOCTOR"):
 		case joaat("RHD_General_Store"):
-		case -650257138:
-		case -634913711:
-		case -615386674:
-		case -556457729:
-		case -533772707:
+		case joaat("SDN_TAILOR"):
+		case joaat("SDN_Newspaper_Vendor"):
+		case joaat("SDN_HORSE_SHOP_OWNER"):
+		case joaat("BLW_NEWSPAPER"):
+		case joaat("SDN_BARBER"):
 		case joaat("BLW_Photographer"):
-		case 135353273:
-		case 156473432:
-		case 225456100:
+		case joaat("SDN_Market_Vendor1"):
+		case joaat("SDN_Gen_Store_Shady"):
+		case joaat("RHD_NEWSPAPER_VENDOR"):
 		case joaat("val_butcher"):
-		case 344419080:
-		case 618535878:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
+		case joaat("Blw_Barber"):
 		case joaat("ASB_Gunsmith"):
-		case 895371587:
-		case 914853768:
-		case 986295353:
-		case 1010118053:
-		case 1057927283:
-		case 1193985110:
-		case 1198640232:
-		case 1231178090:
-		case 1317192638:
+		case joaat("VAL_NEWSPAPER_VENDOR"):
+		case joaat("BLW_TAILOR"):
+		case joaat("SDN_FrenchMarket_Vendor_1"):
+		case joaat("RHD_BUTCHER"):
+		case joaat("TBL_GUNSMITH_OWNER"):
+		case joaat("Asb_Newspaper_Vendor"):
+		case joaat("SDN_GUNSMITH"):
+		case joaat("SDN_FrenchMarket_Vendor_2"):
+		case joaat("rhd_fence"):
 		case joaat("emr_son1"):
 		case joaat("BLW_General_Store"):
-		case 1645786537:
-		case 1659593009:
+		case joaat("STR_BUTCHER"):
+		case joaat("SDN_Gen_Store_Owner"):
 		case joaat("VHT_Exotic_Store"):
-		case 1709214177:
+		case joaat("SDN_BUTCHER"):
 		case joaat("VAL_Barber"):
 		case joaat("RHD_Gunsmith"):
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 		case joaat("prin_p4_28"):
 			return 1;
 		default:
@@ -29458,45 +29458,45 @@ int func_869(int iParam0)
 {
 	if (!func_32(iParam0))
 	{
-		return 320012143;
+		return joaat("SHOP_GUARD_DOG");
 	}
 	switch (func_726(iParam0))
 	{
 		case 78:
-			return -745800003;
+			return joaat("SHOP_PEDS_ANNESBURG");
 		case 38:
-			return -131175708;
+			return joaat("SHOP_PEDS_BLACKWATER");
 		case 69:
-			return 105086774;
+			return joaat("SHOP_PEDS_EMERALDRANCH");
 		case 3:
-			return -952561203;
+			return joaat("SHOP_PEDS_LAGRAS");
 		case 5:
-			return -1332404091;
+			return joaat("SHOP_PEDS_STDENIS");
 		case 105:
-			return 872186388;
+			return joaat("SHOP_PEDS_RHODES");
 		case 23:
-			return 410265074;
+			return joaat("SHOP_PEDS_RIGGSSTATION");
 		case 26:
-			return -437531556;
+			return joaat("SHOP_PEDS_STRAWBERRY");
 		case 76:
-			return -1159046135;
+			return joaat("SHOP_PEDS_VALENTINE");
 		case 92:
-			return 692025686;
+			return joaat("SHOP_PEDS_VANHORN");
 		case 28:
-			return -1316957294;
+			return joaat("SHOP_PEDS_WALLACESTATION");
 		case 115:
-			return 1475477895;
+			return joaat("SHOP_PEDS_TUMBLEWEED");
 		case 13:
 		case 14:
 		case 90:
 		case 113:
 		case 128:
-			return 1056936303;
+			return joaat("SHOP_PEDS_TRAPPERS");
 		default:
 			break;
 	}
-	return 320012143;
-	return 320012143;
+	return joaat("SHOP_GUARD_DOG");
+	return joaat("SHOP_GUARD_DOG");
 }
 
 void func_870(int iParam0, bool bParam1)
@@ -38050,7 +38050,7 @@ void func_1115(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_552(func_1707(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -39353,39 +39353,39 @@ int func_1161(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2099882877:
+		case joaat("SDN_BARTENDER_SLUMS"):
 		case joaat("RHD_Bartender"):
 		case joaat("val_doctor"):
 		case joaat("val_gunsmith"):
-		case -1472222264:
-		case -1456173883:
+		case joaat("AMD_GENERAL_STORE"):
+		case joaat("TBL_BUTCHER"):
 		case joaat("VAL_General_Store"):
-		case -934649940:
+		case joaat("RHD_TRAIN_STAT_OWNER"):
 		case joaat("RHD_General_Store"):
 		case joaat("VHT_Station_Clerk"):
-		case -495174442:
+		case joaat("RGS_POSTMASTER"):
 		case joaat("val_hotel_owner"):
 		case joaat("BLW_Bartender"):
-		case 19124873:
+		case joaat("AMD_BARTENDER"):
 		case joaat("VHT_Bartender"):
 		case joaat("VAL_Bartender"):
-		case 135431031:
-		case 156473432:
+		case joaat("STR_WELCOME_CENTER_CLERK"):
+		case joaat("SDN_Gen_Store_Shady"):
 		case joaat("val_butcher"):
-		case 344419080:
-		case 785713260:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
+		case joaat("SDN_BARTENDER"):
 		case joaat("ASB_Gunsmith"):
-		case 1016865322:
-		case 1057927283:
-		case 1198640232:
+		case joaat("TBL_BARTENDER"):
+		case joaat("TBL_GUNSMITH_OWNER"):
+		case joaat("SDN_GUNSMITH"):
 		case joaat("emr_son1"):
 		case joaat("BLW_General_Store"):
 		case joaat("BLW_Train_Worker"):
-		case 1659593009:
+		case joaat("SDN_Gen_Store_Owner"):
 		case joaat("VHT_Exotic_Store"):
 		case joaat("VAL_Barber"):
 		case joaat("RHD_Gunsmith"):
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 		case joaat("prin_p4_28"):
 		case joaat("STR_Freight_Clerk"):
 			return 1;
@@ -47399,75 +47399,75 @@ char* func_1449(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1472222264:
+		case joaat("AMD_GENERAL_STORE"):
 			return "Armadillo/AMD_GENERAL_STORE";
 		case joaat("ASB_Gunsmith"):
 			return "Annesburg/Asb_Gunsmith";
-		case 1193985110:
+		case joaat("Asb_Newspaper_Vendor"):
 			return "Annesburg/Asb_Newspaper_Vendor";
-		case 618535878:
+		case joaat("Blw_Barber"):
 			return "Blackwater/Blw_Barber";
-		case -1337007991:
+		case joaat("Blw_Butcher"):
 			return "Blackwater/Blw_Butcher";
 		case joaat("BLW_General_Store"):
 			return "Blackwater/Blw_General_Store";
-		case -556457729:
+		case joaat("BLW_NEWSPAPER"):
 			return "Blackwater/Blw_Newspaper";
 		case joaat("BLW_Photographer"):
 			return "Blackwater/Blw_Photographer";
-		case 914853768:
+		case joaat("BLW_TAILOR"):
 			return "Blackwater/Blw_Tailor";
 		case joaat("emr_son1"):
 			return "EmeraldRanch/Emr_Son1";
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 			return "Lagras/Lag_Mother1";
-		case 1010118053:
+		case joaat("RHD_BUTCHER"):
 			return "Rhodes/rhd_Butcher";
-		case 1317192638:
+		case joaat("rhd_fence"):
 			return "Rhodes/rhd_fence";
 		case joaat("RHD_General_Store"):
 			return "Rhodes/rhd_general_store";
 		case joaat("RHD_Gunsmith"):
 			return "Rhodes/rhd_gunsmith";
-		case 225456100:
+		case joaat("RHD_NEWSPAPER_VENDOR"):
 			return "Rhodes/rhd_newspaper_vendor";
-		case -533772707:
+		case joaat("SDN_BARBER"):
 			return "SaintDenis/SDN_Barber";
-		case 1709214177:
+		case joaat("SDN_BUTCHER"):
 			return "SaintDenis/SDN_Butcher";
-		case -1116668486:
+		case joaat("SDN_DOCTOR"):
 			return "SaintDenis/SDN_Doctor";
-		case 156473432:
+		case joaat("SDN_Gen_Store_Shady"):
 			return "SaintDenis/SDN_Gen_Store_Shady";
-		case 1659593009:
+		case joaat("SDN_Gen_Store_Owner"):
 			return "SaintDenis/SDN_Gen_Store_Owner";
-		case 1198640232:
+		case joaat("SDN_GUNSMITH"):
 			return "SaintDenis/SDN_Gunsmith";
-		case -615386674:
+		case joaat("SDN_HORSE_SHOP_OWNER"):
 			return "SaintDenis/SDN_Horse_Shop_Owner";
-		case -650257138:
+		case joaat("SDN_TAILOR"):
 			return "SaintDenis/SDN_Tailor";
-		case 135353273:
+		case joaat("SDN_Market_Vendor1"):
 			return "SaintDenis/SDN_Market_Vendor1";
-		case 986295353:
+		case joaat("SDN_FrenchMarket_Vendor_1"):
 			return "SaintDenis/SDN_FrenchMarket_Vendor_1";
-		case 1231178090:
+		case joaat("SDN_FrenchMarket_Vendor_2"):
 			return "SaintDenis/SDN_FrenchMarket_Vendor_2";
-		case -634913711:
+		case joaat("SDN_Newspaper_Vendor"):
 			return "SaintDenis/SDN_Newspaper_Vendor";
-		case -2098805802:
+		case joaat("SDN_PHOTOGRAPHER"):
 			return "SaintDenis/SDN_Photographer";
-		case 1645786537:
+		case joaat("STR_BUTCHER"):
 			return "Strawberry/STR_Butcher";
 		case joaat("prin_p4_28"):
 			return "Strawberry/Str_General_Store";
-		case -1391735686:
+		case joaat("Str_Newspaper_Vendor"):
 			return "Strawberry/Str_Newspaper_Vendor";
-		case -1456173883:
+		case joaat("TBL_BUTCHER"):
 			return "Tumbleweed/TBL_BUTCHER";
-		case 344419080:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
 			return "Tumbleweed/TBL_GENERAL_STORE_RESIDENT";
-		case 1057927283:
+		case joaat("TBL_GUNSMITH_OWNER"):
 			return "Tumbleweed/TBL_GUNSMITH_OWNER";
 		case joaat("VAL_Barber"):
 			return "Valentine/Val_Barber";
@@ -47479,11 +47479,11 @@ char* func_1449(int iParam0)
 			return "Valentine/Val_General_Store";
 		case joaat("val_gunsmith"):
 			return "Valentine/Val_Gunsmith";
-		case 895371587:
+		case joaat("VAL_NEWSPAPER_VENDOR"):
 			return "Valentine/Val_Newspaper_Vendor";
 		case joaat("VHT_Exotic_Store"):
 			return "VanHornTradingPost/vht_exotic_store";
-		case -1760134268:
+		case joaat("WAL_GENSHOPKEEPER"):
 			return "WallaceStation/WAL_GENSHOPKEEPER";
 		default:
 			break;
@@ -47509,75 +47509,75 @@ char* func_1451(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1472222264:
+		case joaat("AMD_GENERAL_STORE"):
 			return "Armadillo/Shops/AMD_GENERAL_STORE";
 		case joaat("ASB_Gunsmith"):
 			return "Annesburg/Shops/Asb_Gunsmith";
-		case 1193985110:
+		case joaat("Asb_Newspaper_Vendor"):
 			return "Annesburg/Shops/Asb_Newspaper_Vendor";
-		case 618535878:
+		case joaat("Blw_Barber"):
 			return "Blackwater/Shops/Blw_Barber";
-		case -1337007991:
+		case joaat("Blw_Butcher"):
 			return "Blackwater/Shops/Blw_Butcher";
 		case joaat("BLW_General_Store"):
 			return "Blackwater/Shops/Blw_General_Store";
-		case -556457729:
+		case joaat("BLW_NEWSPAPER"):
 			return "Blackwater/Shops/Blw_Newspaper";
 		case joaat("BLW_Photographer"):
 			return "Blackwater/Shops/Blw_Photographer";
-		case 914853768:
+		case joaat("BLW_TAILOR"):
 			return "Blackwater/Shops/Blw_Tailor";
 		case joaat("emr_son1"):
 			return "EmeraldRanch/Shops/Emr_Son1";
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 			return "Lagras/Shops/Lag_Mother1";
-		case 1010118053:
+		case joaat("RHD_BUTCHER"):
 			return "Rhodes/Shops/rhd_Butcher";
-		case 1317192638:
+		case joaat("rhd_fence"):
 			return "Rhodes/Shops/rhd_fence";
 		case joaat("RHD_General_Store"):
 			return "Rhodes/Shops/rhd_general_store";
 		case joaat("RHD_Gunsmith"):
 			return "Rhodes/Shops/rhd_gunsmith";
-		case 225456100:
+		case joaat("RHD_NEWSPAPER_VENDOR"):
 			return "Rhodes/Shops/rhd_newspaper_vendor";
-		case -533772707:
+		case joaat("SDN_BARBER"):
 			return "SaintDenis/Shops/SDN_Barber";
-		case 1709214177:
+		case joaat("SDN_BUTCHER"):
 			return "SaintDenis/Shops/SDN_Butcher";
-		case -1116668486:
+		case joaat("SDN_DOCTOR"):
 			return "SaintDenis/Shops/SDN_Doctor";
-		case 156473432:
+		case joaat("SDN_Gen_Store_Shady"):
 			return "SaintDenis/Shops/SDN_Gen_Store_Shady";
-		case 1659593009:
+		case joaat("SDN_Gen_Store_Owner"):
 			return "SaintDenis/Shops/SDN_Gen_Store_Owner";
-		case 1198640232:
+		case joaat("SDN_GUNSMITH"):
 			return "SaintDenis/Shops/SDN_Gunsmith";
-		case -615386674:
+		case joaat("SDN_HORSE_SHOP_OWNER"):
 			return "SaintDenis/Shops/SDN_Horse_Shop_Owner";
-		case -650257138:
+		case joaat("SDN_TAILOR"):
 			return "SaintDenis/Shops/SDN_Tailor";
-		case 135353273:
+		case joaat("SDN_Market_Vendor1"):
 			return "SaintDenis/Shops/SDN_Market_Vendor1";
-		case 986295353:
+		case joaat("SDN_FrenchMarket_Vendor_1"):
 			return "SaintDenis/Shops/SDN_FrenchMarket_Vendor_1";
-		case 1231178090:
+		case joaat("SDN_FrenchMarket_Vendor_2"):
 			return "SaintDenis/Shops/SDN_FrenchMarket_Vendor_2";
-		case -634913711:
+		case joaat("SDN_Newspaper_Vendor"):
 			return "SaintDenis/Shops/SDN_Newspaper_Vendor";
-		case -2098805802:
+		case joaat("SDN_PHOTOGRAPHER"):
 			return "SaintDenis/Shops/SDN_Photographer";
-		case 1645786537:
+		case joaat("STR_BUTCHER"):
 			return "Strawberry/Shops/STR_Butcher";
 		case joaat("prin_p4_28"):
 			return "Strawberry/Shops/Str_General_Store";
-		case -1391735686:
+		case joaat("Str_Newspaper_Vendor"):
 			return "Strawberry/Shops/Str_Newspaper_Vendor";
-		case -1456173883:
+		case joaat("TBL_BUTCHER"):
 			return "Tumbleweed/Shops/TBL_BUTCHER";
-		case 344419080:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
 			return "Tumbleweed/Shops/TBL_GENERAL_STORE_RESIDENT";
-		case 1057927283:
+		case joaat("TBL_GUNSMITH_OWNER"):
 			return "Tumbleweed/Shops/TBL_GUNSMITH_OWNER";
 		case joaat("VAL_Barber"):
 			return "Valentine/Shops/Val_Barber";
@@ -47589,11 +47589,11 @@ char* func_1451(int iParam0)
 			return "Valentine/Shops/Val_General_Store";
 		case joaat("val_gunsmith"):
 			return "Valentine/Shops/Val_Gunsmith";
-		case 895371587:
+		case joaat("VAL_NEWSPAPER_VENDOR"):
 			return "Valentine/Shops/Val_Newspaper_Vendor";
 		case joaat("VHT_Exotic_Store"):
 			return "VanHornTradingPost/Shops/vht_exotic_store";
-		case -1760134268:
+		case joaat("WAL_GENSHOPKEEPER"):
 			return "WallaceStation/Shops/WAL_GENSHOPKEEPER";
 		default:
 			break;
@@ -48263,7 +48263,7 @@ int func_1481(bool bParam0)
 				{
 				}
 				iVar8 = ENTITY::_0x0FD25587BB306C86(bVar7);
-				if (iVar8 == -1992418870 || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
+				if (iVar8 == joaat("CARRIABLE_SADDLE") || iVar8 == joaat("CARRIABLE_SADDLE_BUNDLE"))
 				{
 					return 1;
 				}
@@ -90392,7 +90392,7 @@ void func_2766(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_3056(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1664(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_3057(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1664(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_3057(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_2767(int iParam0, int iParam1)
@@ -95151,13 +95151,13 @@ int func_2964(int iParam0)
 		case 0:
 			return joaat("horse_blankets");
 		case 1:
-			return -385635273;
+			return joaat("horse_reins");
 		case 2:
 			return joaat("HORSE_SADDLES");
 		case 3:
-			return 561239516;
+			return joaat("saddle_horn");
 		case 7:
-			return 168005805;
+			return joaat("SADDLE_STIRRUP");
 		case 9:
 			return joaat("horse_bedrolls");
 		case 10:

@@ -6998,11 +6998,11 @@ void func_39(var uParam0, var uParam1)
 	}
 	if (uParam1->f_87.f_2 == -1794869146)
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(1473691941);
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("lobbies_menu"));
 	}
 	else
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH(1473691941);
+		UIAPPS::_CLOSE_APP_BY_HASH(joaat("lobbies_menu"));
 	}
 	func_139();
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam1->f_87.f_30);
@@ -8347,7 +8347,7 @@ void func_115(var uParam0, var uParam1, var uParam2)
 		GRAPHICS::TOGGLE_PAUSED_RENDERPHASES(false);
 		if ((!CAM::IS_SCREEN_FADING_OUT() && !CAM::IS_SCREEN_FADED_OUT()) && !func_265())
 		{
-			UIAPPS::_CLOSE_APP_BY_HASH(1473691941);
+			UIAPPS::_CLOSE_APP_BY_HASH(joaat("lobbies_menu"));
 			CAM::DO_SCREEN_FADE_OUT(1000);
 		}
 		func_129(&(uParam2->f_87), 64);
@@ -8386,7 +8386,7 @@ void func_117(var uParam0, var uParam1, var uParam2)
 	{
 		if (!CAM::IS_SCREEN_FADING_OUT() && !CAM::IS_SCREEN_FADED_OUT())
 		{
-			UIAPPS::_CLOSE_APP_BY_HASH(1473691941);
+			UIAPPS::_CLOSE_APP_BY_HASH(joaat("lobbies_menu"));
 			CAM::DO_SCREEN_FADE_OUT(1000);
 		}
 		return;
@@ -11209,11 +11209,11 @@ void func_253(var uParam0, bool bParam1)
 		switch (uParam0->f_87.f_2)
 		{
 			case -1794869146:
-				UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, joaat("no"));
+				UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), joaat("no"));
 				break;
 			case -761066372: /* GXTEntry: "Invite Players" */
 			case -587541440:
-				UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, joaat("back"));
+				UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), joaat("back"));
 				break;
 		}
 	}
@@ -14033,25 +14033,25 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								{
 									if (_NAMESPACE26::_0x149A2751AB66AC02(iVar21) == 1)
 									{
-										UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, 962885784);
+										UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), 962885784);
 									}
 									else if (func_536(uParam2))
 									{
-										UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, 1037078506);
+										UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), 1037078506);
 									}
 									else
 									{
-										UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, -1614690942);
+										UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), -1614690942);
 									}
 								}
 								else
 								{
-									UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, -1913939249);
+									UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), -1913939249);
 								}
 							}
 							else
 							{
-								UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, 962885784);
+								UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), 962885784);
 							}
 							break;
 						case -1539764988:
@@ -15958,7 +15958,7 @@ void func_447(var uParam0, int iParam1, int iParam2)
 	}
 	if ((iParam2 == 0 && iParam1 == uParam0->f_5234) && uParam0->f_2 == joaat("outfits"))
 	{
-		UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, joaat("back"));
+		UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), joaat("back"));
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(((uParam0->f_3970[iParam1 /*631*/])->f_325[iParam2 /*9*/])->f_3))
 	{
@@ -20709,7 +20709,7 @@ void func_620(var uParam0, var uParam1, var uParam2)
 		}
 	}
 	_NAMESPACE79::_0x1C38C3577901AF1F();
-	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(1473691941);
+	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("lobbies_menu"));
 	if (uParam2->f_87.f_2 != iVar1)
 	{
 		if (uParam2->f_87.f_2 == 409305524 && iVar1 == 723208654)
@@ -20901,7 +20901,7 @@ void func_623(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	}
 	if (uParam0->f_87.f_5257 != iVar0)
 	{
-		if (!func_128(&(uParam0->f_87), 128) && UIAPPS::_0x96FD694FE5BE55DC(1473691941) == 1549204131)
+		if (!func_128(&(uParam0->f_87), 128) && UIAPPS::_0x96FD694FE5BE55DC(joaat("lobbies_menu")) == 1549204131)
 		{
 			uParam0->f_87.f_5257 = iVar0;
 			if (bParam2)
@@ -26900,11 +26900,11 @@ int func_860(var uParam0)
 
 	if (!func_128(&(uParam0->f_87), 131072))
 	{
-		if (UIAPPS::_CAN_LAUNCH_APP_BY_HASH_WITH_ENTRY(1473691941, -515341293))
+		if (UIAPPS::_CAN_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("lobbies_menu"), -515341293))
 		{
 			if (!UIAPPS::_IS_APP_RUNNING(joaat("leaderboards")))
 			{
-				iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(1473691941, -515341293);
+				iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("lobbies_menu"), -515341293);
 				if (iVar0 != 0)
 				{
 				}
@@ -26919,7 +26919,7 @@ int func_860(var uParam0)
 	}
 	else if (!func_128(&(uParam0->f_87), 262144))
 	{
-		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(1473691941, 53664663))
+		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("lobbies_menu"), 53664663))
 		{
 			func_446(&(uParam0->f_87), 262144);
 			return 1;
@@ -27005,9 +27005,9 @@ void func_862(var uParam0, var uParam1)
 	}
 	if (uParam1->f_87.f_2 == joaat("stable"))
 	{
-		if (UIAPPS::_IS_APP_RUNNING(1473691941) && !DATABINDING::_DATABINDING_READ_DATA_BOOL(uParam1->f_87.f_55.f_60))
+		if (UIAPPS::_IS_APP_RUNNING(joaat("lobbies_menu")) && !DATABINDING::_DATABINDING_READ_DATA_BOOL(uParam1->f_87.f_55.f_60))
 		{
-			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1473691941, joaat("back"));
+			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("lobbies_menu"), joaat("back"));
 			return;
 		}
 	}
@@ -27079,9 +27079,9 @@ void func_863(var uParam0, var uParam1, var uParam2)
 		iVar0 = NETWORK::NETWORK_GET_PARTICIPANT_INDEX(uParam1->f_87.f_9);
 		if (func_268(uParam0, iVar0) || func_30((*uParam2)[iVar0 /*21*/]) == 15)
 		{
-			if (UIAPPS::_IS_APP_RUNNING(1473691941))
+			if (UIAPPS::_IS_APP_RUNNING(joaat("lobbies_menu")))
 			{
-				UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1473691941, joaat("back"));
+				UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("lobbies_menu"), joaat("back"));
 			}
 		}
 	}

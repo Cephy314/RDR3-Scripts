@@ -14123,7 +14123,7 @@ int func_393(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, b
 		case 4:
 			if (!func_361(iVar0, joaat("SCRIPT_TASK_CARRIABLE")))
 			{
-				TASK::_0xF0B4F759F35CC7F5(iVar0, -2146271366, ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar14), 0, 0);
+				TASK::_0xF0B4F759F35CC7F5(iVar0, joaat("HOGTIED_PED"), ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar14), 0, 0);
 				if (!ENTITY::DOES_ENTITY_EXIST(iVar14))
 				{
 					ENTITY::_0x9587913B9E772D29(iVar0, 0);

@@ -18286,7 +18286,7 @@ int func_561(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -26372,7 +26372,7 @@ void func_839(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_841(func_968(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -36599,7 +36599,7 @@ void func_1158(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1206(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_924(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1207(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_924(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1207(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1159(int iParam0, int iParam1)

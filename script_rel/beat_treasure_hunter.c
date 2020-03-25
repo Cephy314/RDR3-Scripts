@@ -4986,7 +4986,7 @@ void func_136()
 	switch (iLocal_495)
 	{
 		case 0:
-			PED::_0x8B3B71C80A29A4BB(&(uLocal_496[0]), 816500609, 6);
+			PED::_0x8B3B71C80A29A4BB(&(uLocal_496[0]), joaat("MoodIntimidated"), 6);
 			break;
 		case 1:
 			PED::_0x8B3B71C80A29A4BB(&(uLocal_496[0]), joaat("moodhappy"), 6);
@@ -14152,7 +14152,7 @@ void func_382(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_167(func_633(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -18166,7 +18166,7 @@ int func_502(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -31686,7 +31686,7 @@ void func_943(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1032(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_585(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1033(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_585(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1033(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_944(int iParam0, int iParam1)

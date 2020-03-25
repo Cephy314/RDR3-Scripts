@@ -15492,7 +15492,7 @@ void func_559(var uParam0)
 	uParam0->f_84 = 0f;
 	uParam0->f_85 = 20f;
 	uParam0->f_86 = 0;
-	uParam0->f_87 = 76293634;
+	uParam0->f_87 = joaat("HEALTH_STANDARD_PED");
 	uParam0->f_88 = -1;
 	uParam0->f_89 = -1;
 	uParam0->f_90 = 1f;
@@ -37019,7 +37019,7 @@ void func_900(var uParam0)
 		(Global_524288->f_46810[iVar2 /*351*/])->f_84 = func_1007(uVar19, iVar2, 0f, bVar20);
 		(Global_524288->f_46810[iVar2 /*351*/])->f_85 = func_1007(uVar21, iVar2, 20f, bVar22);
 		(Global_524288->f_46810[iVar2 /*351*/])->f_86 = func_1000(uVar23, iVar2, 0, bVar24);
-		(Global_524288->f_46810[iVar2 /*351*/])->f_87 = func_1009(uVar25, iVar2, 76293634, bVar26);
+		(Global_524288->f_46810[iVar2 /*351*/])->f_87 = func_1009(uVar25, iVar2, joaat("HEALTH_STANDARD_PED"), bVar26);
 		(Global_524288->f_46810[iVar2 /*351*/])->f_88 = func_1000(uVar27, iVar2, -1, bVar28);
 		(Global_524288->f_46810[iVar2 /*351*/])->f_89 = func_1000(uVar29, iVar2, -1, bVar30);
 		(Global_524288->f_46810[iVar2 /*351*/])->f_90 = func_1007(uVar31, iVar2, 1f, bVar32);
@@ -74015,11 +74015,11 @@ void func_1169()
 	iVar0 = 0;
 	while (iVar0 <= (Global_3145858->f_18605 - 1))
 	{
-		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == 1895040107)
+		if (Global_3145858->f_18606[iVar0 /*93*/])->f_8 == joaat("p_bedRollClosed02x")
 		{
 			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = joaat("p_bedrollclosed01x");
 		}
-		if ((Global_3145858->f_18606[iVar0 /*93*/])->f_8 == -240399263)
+		if (Global_3145858->f_18606[iVar0 /*93*/])->f_8 == joaat("p_bedRollOpen04x")
 		{
 			(Global_3145858->f_18606[iVar0 /*93*/])->f_8 = joaat("p_bedrollopen03x");
 		}

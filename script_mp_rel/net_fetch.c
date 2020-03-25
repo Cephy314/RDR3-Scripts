@@ -18040,7 +18040,7 @@ int func_622(int iParam0, var uParam1, var uParam2, bool bParam3)
 				return 1;
 			}
 			break;
-		case -732626304:
+		case joaat("mp006_p_moonshiner_still03x"):
 			if (bParam3)
 			{
 				return 0;
@@ -47879,7 +47879,7 @@ void func_1716(int iParam0)
 						}
 						if (((Local_3972.f_6[iParam0 /*71*/])->f_11 != 0 && (Local_3972.f_6[iParam0 /*71*/])->f_12 >= 0) && func_1588((Local_3972.f_6[iParam0 /*71*/])->f_11, (Local_3972.f_6[iParam0 /*71*/])->f_12, -1) == joaat("train"))
 						{
-							PED::_0x8B1E8E35A6E814EA(iVar1, 1075632931, -1f);
+							PED::_0x8B1E8E35A6E814EA(iVar1, joaat("DefendMovingTrain"), -1f);
 						}
 					}
 				}
@@ -59538,11 +59538,11 @@ int func_2164(int iParam0, bool bParam1)
 		if (func_1341(iParam0, joaat("ped"), 111077579, -1, 0, 0, 0) != -1 && (Local_356.f_1[iParam0 /*21*/])->f_11 != -1)
 		{
 			iVar14 = NETWORK::NET_TO_PED((Local_356.f_1[(Local_356.f_1[iParam0 /*21*/])->f_11 /*21*/])->f_14);
-			TASK::_0xF0B4F759F35CC7F5(iVar7, -2146271366, iVar14, 5, 0);
+			TASK::_0xF0B4F759F35CC7F5(iVar7, joaat("HOGTIED_PED"), iVar14, 5, 0);
 		}
 		else
 		{
-			TASK::_0xF0B4F759F35CC7F5(iVar7, -2146271366, 0, 0, 0);
+			TASK::_0xF0B4F759F35CC7F5(iVar7, joaat("HOGTIED_PED"), 0, 0, 0);
 		}
 		ENTITY::_0x18FF3110CF47115D(iVar7, 10, false);
 		PED::_0x6569F31A01B4C097(iVar7, 4, false);
@@ -72000,11 +72000,11 @@ int func_2644(int iParam0)
 			return joaat("GFH_ANTHONY_FOREMAN");
 		case 539824333:
 			return joaat("GFH_LANGTON");
-		case 1309348282:
+		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
 		case -701311458:
 			return joaat("GFH_SHERIFF_FREEMAN");
-		case 2048329431:
+		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
@@ -72012,7 +72012,7 @@ int func_2644(int iParam0)
 			return joaat("GFH_ALDEN");
 		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
-		case -399874304:
+		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
 		case -743855838:
 			return joaat("GFH_ABERDEEN_PIG_FARMERS");
@@ -75569,7 +75569,7 @@ void func_2783(bool bParam0)
 	iVar0 = (Local_3972.f_6[bParam0 /*71*/])->f_61;
 	if (PED::IS_PED_HUMAN(iVar0) && func_1306(&(Local_3972.f_3350), -1464524185, 0, 216708688, (Local_3972.f_6[bParam0 /*71*/])->f_68, 0, 0, 0, 0, 0) == 0)
 	{
-		PED::_0xF6B82FCE03B43A37(iVar0, 76293634);
+		PED::_0xF6B82FCE03B43A37(iVar0, joaat("HEALTH_STANDARD_PED"));
 	}
 	TASK::_0x88E32DB8C1A4AA4B(iVar0, 0.1f);
 	if (PED::_0x936E7CAD0AE2EE14(iVar0) == 1f)
@@ -75589,7 +75589,7 @@ void func_2783(bool bParam0)
 	{
 		PED::SET_PED_COMBAT_ATTRIBUTES(iVar0, 49, true);
 	}
-	PED::_0x1FA132CBCD7CB239(iVar0, -513622743);
+	PED::_0x1FA132CBCD7CB239(iVar0, joaat("Gang_Murfree"));
 }
 
 void func_2784(int iParam0, bool bParam1, int iParam2)
@@ -75870,33 +75870,33 @@ void func_2788(bool bParam0)
 	{
 		if (bVar2)
 		{
-			iVar1 = 1518505373;
+			iVar1 = joaat("MountedCombat_RangedRifle_City");
 		}
 		else
 		{
-			iVar1 = -289314967;
+			iVar1 = joaat("MountedCombat_RangedRifle");
 		}
 	}
 	else if (WEAPON::_0xABC18A28BAD4B46F(iVar0, 0))
 	{
 		if (bVar2)
 		{
-			iVar1 = -723907970;
+			iVar1 = joaat("MountedCombat_RangedShotgun_City");
 		}
 		else
 		{
-			iVar1 = 1164657302;
+			iVar1 = joaat("MountedCombat_RangedShotgun");
 		}
 	}
 	else if (WEAPON::_0x5B235F24472F2C3B(iVar0, 0) || WEAPON::_0xBFCA7AFABF9D7967(iVar0, 0))
 	{
 		if (bVar2)
 		{
-			iVar1 = 157785302;
+			iVar1 = joaat("MountedCombat_RangedRevolver_City");
 		}
 		else
 		{
-			iVar1 = -68970303;
+			iVar1 = joaat("MountedCombat_RangedRevolver");
 		}
 	}
 	PED::_0x8B1E8E35A6E814EA(iVar0, iVar1, -1f);
@@ -91310,7 +91310,7 @@ float func_3397(struct<2> Param0, int iParam2, struct<2> Param3, Vector3 vParam5
 
 bool func_3398(var uParam0)
 {
-	return func_525(uParam0, 2096309041, 1966732903, -801742902, 0, 0, 0, 0, 0, 0);
+	return func_525(uParam0, 2096309041, joaat("DRAFT_HORSES"), -801742902, 0, 0, 0, 0, 0, 0);
 }
 
 int func_3399(var uParam0, int iParam1, vector3 vParam2, bool bParam5, bool bParam6, bool bParam7, bool bParam8, bool bParam9)
@@ -101439,7 +101439,7 @@ void func_3823(int iParam0)
 		iVar2 = func_4497(&(Local_3972.f_3350), (Local_3972.f_1072[iParam0 /*31*/])->f_9);
 		if (iVar2 == 0)
 		{
-			iVar2 = -2141086268;
+			iVar2 = joaat("MP_MONEYBAG");
 		}
 		if ((Local_3972.f_1072[iParam0 /*31*/])->f_29 == joaat("ped") && NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((Local_356.f_1[(Local_3972.f_1072[iParam0 /*31*/])->f_30 /*21*/])->f_14))
 		{
@@ -101535,7 +101535,7 @@ void func_3825(int iParam0)
 			iVar1 = func_4497(&(Local_3972.f_3350), (Local_3972.f_1072[iParam0 /*31*/])->f_9);
 			if (iVar1 == 0)
 			{
-				iVar1 = -2141086268;
+				iVar1 = joaat("MP_MONEYBAG");
 			}
 			TASK::_0xF0B4F759F35CC7F5(iVar0, iVar1, 0, 0, 0);
 			func_2827(2048, iParam0);
@@ -112704,7 +112704,7 @@ int func_4139(int iParam0, int iParam1)
 				return 5828;
 			case -818832924:
 				return 2795;
-			case -818624178:
+			case joaat("Bindings_Feet_Bulky"):
 				return 5701;
 			case -818126608:
 				return 1825;
@@ -113580,7 +113580,7 @@ int func_4139(int iParam0, int iParam1)
 				return 83;
 			case joaat("hat_mr1_011"):
 				return 4615;
-			case -493878254:
+			case joaat("Bindings_Hands_Default"):
 				return 5704;
 			case -492406189:
 				return 4087;
@@ -117008,7 +117008,7 @@ int func_4139(int iParam0, int iParam1)
 				return 2362;
 			case 772091720:
 				return 401;
-			case 772247508:
+			case joaat("Bindings_Feet_Default"):
 				return 5702;
 			case 772307571:
 				return 4221;
@@ -118568,7 +118568,7 @@ int func_4139(int iParam0, int iParam1)
 				return 2494;
 			case 1314808215:
 				return 5740;
-			case 1314832239:
+			case joaat("Bindings_Hands_Bulky"):
 				return 5703;
 			case 1314941335:
 				return 5216;
@@ -127331,7 +127331,7 @@ void func_4399(bool bParam0)
 			}
 			else if (ENTITY::DOES_ENTITY_EXIST(iVar3) && !func_52(17, bParam0))
 			{
-				PED::_0x8ACC0506743A8A5C(iVar0, 934428438, 2, -1082130432);
+				PED::_0x8ACC0506743A8A5C(iVar0, joaat("SeekCover_KeepDistanceFromTarget"), 2, -1082130432);
 				if (func_4479(bParam0, -507416935))
 				{
 					Var4 = iVar0;
@@ -127671,7 +127671,7 @@ void func_4406(int iParam0)
 				{
 					VOLUME::_DELETE_VOLUME(iVar2);
 				}
-				PED::_0x8B1E8E35A6E814EA(iVar0, -2116799727, -1f);
+				PED::_0x8B1E8E35A6E814EA(iVar0, joaat("ModCombatSprint"), -1f);
 				vVar4 = { 15f, 15f, 15f };
 				vVar7 = { 0f, 15f, 0f };
 				vVar10 = { 0f, 0f, 0f };
@@ -128611,8 +128611,8 @@ void func_4435(int iParam0)
 	func_1228(ENTITY::GET_ENTITY_COORDS(iVar0, true, false), &fVar9, 1203982208 /* Float: 99999f */, 0, 0, joaat("defend"), 0, 0, 0, 0);
 	if (fVar9 > 30f)
 	{
-		TASK::_0xFF745B0346E19E2C(-2146271366);
-		if (TASK::_0xB8F52A3F84A7CC59(-2146271366) && !func_437(iVar0, joaat("SCRIPT_TASK_CARRIABLE")))
+		TASK::_0xFF745B0346E19E2C(joaat("HOGTIED_PED"));
+		if (TASK::_0xB8F52A3F84A7CC59(joaat("HOGTIED_PED")) && !func_437(iVar0, joaat("SCRIPT_TASK_CARRIABLE")))
 		{
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0) && !PED::_0x3AA24CCC0D451379(iVar0))
 			{
@@ -130538,7 +130538,7 @@ int func_4496(int iParam0)
 
 int func_4497(var uParam0, int iParam1)
 {
-	return func_1306(uParam0, 309279449, -2141086268, -384272353, iParam1, 0, 0, 0, 0, 0);
+	return func_1306(uParam0, 309279449, joaat("MP_MONEYBAG"), -384272353, iParam1, 0, 0, 0, 0, 0);
 }
 
 void func_4498(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4, bool bParam5, bool bParam6, bool bParam7, bool bParam8)
@@ -140967,19 +140967,19 @@ void func_4884(int iParam0)
 	func_4865(iParam0, (Local_3972.f_6[iParam0 /*71*/])->f_38, (Local_3972.f_6[iParam0 /*71*/])->f_38, -1082130432 /* Float: -1f */, -1, 0, 1);
 	if ((func_575((Local_356.f_1[iParam0 /*21*/])->f_13) && func_655((Local_356.f_1[iParam0 /*21*/])->f_13) > 5000) || func_611(16, iParam0))
 	{
-		PED::_0x8ACC0506743A8A5C(iVar0, -1838134243, 1, 10f);
+		PED::_0x8ACC0506743A8A5C(iVar0, joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
 		func_603(iParam0, 13, 1, 0, joaat("speech_params_standard"));
 		func_5255(iParam0, 1, 0, 0);
 	}
 	else
 	{
-		PED::_0x8ACC0506743A8A5C(iVar0, -1838134243, 1, 10f);
+		PED::_0x8ACC0506743A8A5C(iVar0, joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
 		func_603(iParam0, 12, 1, 0, joaat("speech_params_standard"));
 		func_5243(iParam0, 1, 0, 0);
 	}
 	if (PED::_0x09D7AFD3716DA8E1(iVar0, 5000))
 	{
-		PED::_0x8ACC0506743A8A5C(iVar0, 1819659395, 1, 10f);
+		PED::_0x8ACC0506743A8A5C(iVar0, joaat("Script_StartOfCombat_UnderFire"), 1, 10f);
 		func_603(iParam0, 14, 1, 0, joaat("speech_params_standard"));
 		func_1200(0, 0);
 	}
@@ -141061,7 +141061,7 @@ void func_4887(int iParam0, int iParam1)
 				}
 				else
 				{
-					PED::_0x8ACC0506743A8A5C(iVar0, -1838134243, 1, 10f);
+					PED::_0x8ACC0506743A8A5C(iVar0, joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
 					func_5255(iParam0, 0, 0, iVar1);
 				}
 			}
@@ -141077,7 +141077,7 @@ void func_4887(int iParam0, int iParam1)
 				}
 				else
 				{
-					PED::_0x8ACC0506743A8A5C(iVar0, -1838134243, 1, 10f);
+					PED::_0x8ACC0506743A8A5C(iVar0, joaat("Script_StartOfCombat_RunThenShoot5m"), 1, 10f);
 					func_5255(iParam0, 0, 0, iVar1);
 				}
 			}
@@ -141101,7 +141101,7 @@ void func_4887(int iParam0, int iParam1)
 	}
 	if ((((PED::_0x09D7AFD3716DA8E1(iVar0, 5000) || ENTITY::HAS_ANIM_EVENT_FIRED(iVar0, joaat("blendout"))) || PED::_0x3AA24CCC0D451379(iVar0)) || bVar8) || PED::_0x5203038FF8BAE577(iVar0, 46, 5000))
 	{
-		PED::_0x8ACC0506743A8A5C(iVar0, 1819659395, 1, 10f);
+		PED::_0x8ACC0506743A8A5C(iVar0, joaat("Script_StartOfCombat_UnderFire"), 1, 10f);
 		func_1200(0, 0);
 	}
 }

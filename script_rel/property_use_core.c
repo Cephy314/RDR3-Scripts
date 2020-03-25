@@ -3582,7 +3582,7 @@ int func_112(int iParam0)
 
 void func_113(var uParam0)
 {
-	UIAPPS::_CLOSE_APP_BY_HASH(1833066477);
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("fast_travel_menu"));
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(uParam0->f_2);
 	MAP::DISPLAY_RADAR(true);
 	func_84(0);
@@ -4115,10 +4115,10 @@ void func_139(var uParam0, int iParam1)
 
 int func_140(var uParam0)
 {
-	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(1833066477))
+	if (!UIAPPS::_CAN_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")))
 	{
 	}
-	else if (UIAPPS::_LAUNCH_APP_BY_HASH(1833066477) == 0)
+	else if (UIAPPS::_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")) == 0)
 	{
 	}
 	func_354(uParam0);
@@ -4136,9 +4136,9 @@ int func_141(var uParam0)
 	iVar0 = 1;
 	MAP::DISPLAY_RADAR(false);
 	func_355(0);
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(1833066477))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("fast_travel_menu")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(1833066477, &Var2))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("fast_travel_menu"), &Var2))
 		{
 			if (Var2.f_2 == -997855324)
 			{
@@ -4160,7 +4160,7 @@ int func_141(var uParam0)
 				}
 			}
 		}
-		UIEVENTS::_EVENT_MANAGER_POP_EVENT(1833066477);
+		UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("fast_travel_menu"));
 	}
 	return iVar0;
 }
@@ -37385,55 +37385,55 @@ int func_1311(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -40096,7 +40096,7 @@ void func_1396(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_794(func_1826(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -46177,13 +46177,13 @@ int func_1637(int iParam0)
 		case 0:
 			return joaat("horse_blankets");
 		case 1:
-			return -385635273;
+			return joaat("horse_reins");
 		case 2:
 			return joaat("HORSE_SADDLES");
 		case 3:
-			return 561239516;
+			return joaat("saddle_horn");
 		case 7:
-			return 168005805;
+			return joaat("SADDLE_STIRRUP");
 		case 9:
 			return joaat("horse_bedrolls");
 		case 10:
@@ -66532,7 +66532,7 @@ void func_2281(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2390(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1787(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2391(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1787(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2391(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 int func_2282(int iParam0)

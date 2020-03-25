@@ -2458,7 +2458,7 @@ int func_60(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:
@@ -16181,7 +16181,7 @@ void func_493(int iParam0, vector3 vParam1, int iParam4, char[4] cParam5, int iP
 		func_643(iParam0, iParam4, 1, 0, 0, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 		if (bParam8)
 		{
-			PED::_0x8ACC0506743A8A5C(iParam0, -324611190, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(iParam0, joaat("Script_CalmAimPostCombat_Low"), 1, -1082130432);
 		}
 		WEAPON::_0x5230D3F6EE56CFE6(iParam0, 0);
 		if (!func_40(48))

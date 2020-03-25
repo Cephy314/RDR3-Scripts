@@ -1499,7 +1499,7 @@ void func_24()
 			uLocal_817[1] = (Local_284[1 /*32*/])->f_11;
 			func_120(&(uLocal_817[0]), func_119(iLocal_77, iLocal_87, iLocal_88, 0), (Local_284[0 /*32*/])->f_18, 2, 1073741824 /* Float: 2f */);
 			func_120(&(uLocal_817[1]), func_119(iLocal_77, iLocal_87, iLocal_88, 1), (Local_284[1 /*32*/])->f_18, 2, 1073741824 /* Float: 2f */);
-			PED::_0x8ACC0506743A8A5C(&(uLocal_814[0]), 166028666, 1, -1082130432);
+			PED::_0x8ACC0506743A8A5C(&(uLocal_814[0]), joaat("Script_ClassicMoveAndAim"), 1, -1082130432);
 			func_122(&(Local_90.f_5), &(uLocal_814[0]), &(uLocal_817[1]), 0);
 			PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_814[0]), 5, true);
 			PED::_0x24C82EF607105FAA(&(uLocal_814[0]), joaat("aggressive"));
@@ -3314,7 +3314,7 @@ void func_82()
 
 int func_83()
 {
-	return -2097390394;
+	return joaat("LEVDES_SPAWN_VALERIAN_ROOT");
 }
 
 void func_84(int iParam0, var uParam1)
@@ -6746,7 +6746,7 @@ void func_201(int iParam0, int iParam1, int iParam2)
 
 int func_202()
 {
-	return -2097390394;
+	return joaat("LEVDES_SPAWN_VALERIAN_ROOT");
 }
 
 int func_203()
@@ -16311,7 +16311,7 @@ int func_477(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

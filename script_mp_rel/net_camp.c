@@ -5960,7 +5960,7 @@ void func_101(var uParam0, var uParam1)
 	if (!func_41(vVar6))
 	{
 		uParam1->f_13 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(uParam0->f_6, 0f, 0f, 0f, vVar6, sVar5);
-		func_236(uParam1->f_13, 2092027263);
+		func_236(uParam1->f_13, joaat("ANIMALS_RESTRICTED_TRADER_UPDATE"));
 	}
 	fVar2 = (fVar0 * 1.5f);
 	func_237(uParam1, 0, uParam0->f_6, 0f, 0f, 0f, fVar2, fVar2, 15f);
@@ -19982,11 +19982,11 @@ int func_628(int iParam0)
 			return joaat("GFH_ANTHONY_FOREMAN");
 		case 539824333:
 			return joaat("GFH_LANGTON");
-		case 1309348282:
+		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
 		case -701311458:
 			return joaat("GFH_SHERIFF_FREEMAN");
-		case 2048329431:
+		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
@@ -19994,7 +19994,7 @@ int func_628(int iParam0)
 			return joaat("GFH_ALDEN");
 		case joaat("Hector"):
 			return joaat("GFH_HECTOR");
-		case -399874304:
+		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
 		case -743855838:
 			return joaat("GFH_ABERDEEN_PIG_FARMERS");
@@ -23875,7 +23875,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1808268995;
+					return joaat("pg_mp_possecamp_campfire01x");
 				case 1:
 					return 1567200326;
 				default:
@@ -23958,7 +23958,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1781147485;
+					return joaat("pg_mp_possecamp_decor_small010x");
 				default:
 					break;
 			}
@@ -23976,7 +23976,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 8311289;
+					return joaat("pg_mp_possecamp_hobo_small010x");
 				default:
 					break;
 			}
@@ -23994,7 +23994,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1785590141;
+					return joaat("pg_mp_possecamp_sur_small010x");
 				default:
 					break;
 			}
@@ -24075,7 +24075,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1713661850;
+					return joaat("pg_mp_possecamp_decor_small004x");
 				default:
 					break;
 			}
@@ -24120,7 +24120,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1961414816;
+					return joaat("pg_mp_possecamp_decor_medium010x");
 				default:
 					break;
 			}
@@ -24156,7 +24156,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1458436096;
+					return joaat("pg_mp_possecamp_decor_medium006x");
 				default:
 					break;
 			}
@@ -24165,7 +24165,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -96420473;
+					return joaat("pg_mp_possecamp_decor_medium007x");
 				default:
 					break;
 			}
@@ -24174,7 +24174,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1420052545;
+					return joaat("pg_mp_possecamp_decor_medium008x");
 				default:
 					break;
 			}
@@ -24219,7 +24219,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -14621142;
+					return joaat("pg_mp_possecamp_decor_medium011x");
 				default:
 					break;
 			}
@@ -24228,7 +24228,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 643338332;
+					return joaat("pg_mp_possecamp_culture_medium011x");
 				default:
 					break;
 			}
@@ -24237,7 +24237,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1423069557;
+					return joaat("pg_mp_possecamp_hobo_medium011x");
 				default:
 					break;
 			}
@@ -24246,7 +24246,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 109723457;
+					return joaat("pg_mp_possecamp_mil_medium011x");
 				default:
 					break;
 			}
@@ -24255,7 +24255,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 377217378;
+					return joaat("pg_mp_possecamp_surv_medium011x");
 				default:
 					break;
 			}
@@ -24264,7 +24264,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1409469276;
+					return joaat("pg_mp_possecamp_decor_bnty_table");
 				default:
 					break;
 			}
@@ -24273,7 +24273,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -2138995135;
+					return joaat("pg_mp_possecamp_decor_col_table");
 				default:
 					break;
 			}
@@ -24282,7 +24282,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1029500991;
+					return joaat("pg_mp_possecamp_decor_trad_table");
 				default:
 					break;
 			}
@@ -24306,7 +24306,7 @@ int func_761(int iParam0, int iParam1)
 				case 0:
 					return 1279798793;
 				case 1:
-					return 1398921015;
+					return joaat("pg_mp_possecamp_decor_large007x_b");
 				case 2:
 					return -398982891;
 				default:
@@ -24334,7 +24334,7 @@ int func_761(int iParam0, int iParam1)
 				case 1:
 					return -1411571310;
 				case 2:
-					return 18336774;
+					return joaat("pg_mp_possecamp_decor_large004x_c");
 				default:
 					break;
 			}
@@ -24445,9 +24445,9 @@ int func_761(int iParam0, int iParam1)
 				case 0:
 					return 1451245639;
 				case 1:
-					return 807165489;
+					return joaat("pg_mp_possecamp_followertent_large002x_b");
 				case 2:
-					return 1055587278;
+					return joaat("pg_mp_possecamp_followertent_large002x_c");
 				default:
 					break;
 			}
@@ -24469,7 +24469,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2086409315;
+					return joaat("pg_mp_possecamp_horseenclosure_extralarge000x");
 				case 1:
 					return -488374858;
 				case 2:
@@ -24500,7 +24500,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2087080073;
+					return joaat("pg_mp_possecamp_butchertable01x");
 				default:
 					break;
 			}
@@ -24509,7 +24509,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2087080073;
+					return joaat("pg_mp_possecamp_butchertable01x");
 				default:
 					break;
 			}
@@ -24518,7 +24518,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 817121222;
+					return joaat("pg_mp_possecamp_butchertable02x");
 				default:
 					break;
 			}
@@ -24527,7 +24527,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1128721995;
+					return joaat("pg_mp_possecamp_butchertable03x");
 				default:
 					break;
 			}
@@ -24536,7 +24536,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -8199388;
+					return joaat("pg_mp_possecamp_butchertable04x");
 				default:
 					break;
 			}
@@ -24554,7 +24554,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1206391586;
+					return joaat("pg_mp_possecamp_goodspile01x");
 				default:
 					break;
 			}
@@ -24563,7 +24563,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1206391586;
+					return joaat("pg_mp_possecamp_goodspile01x");
 				default:
 					break;
 			}
@@ -24572,7 +24572,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2007329510;
+					return joaat("pg_mp_possecamp_goodspile02x");
 				default:
 					break;
 			}
@@ -24581,7 +24581,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 66650727;
+					return joaat("pg_mp_possecamp_goodspile03x");
 				default:
 					break;
 			}
@@ -24590,7 +24590,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1516714880;
+					return joaat("pg_mp_possecamp_goodspile04x");
 				default:
 					break;
 			}
@@ -24599,7 +24599,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -833277401;
+					return joaat("pg_mp_possecamp_stewpot01x");
 				default:
 					break;
 			}
@@ -24608,11 +24608,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1665061821;
+					return joaat("pg_mp_possecamp_playertent_large004x");
 				case 1:
-					return -2127574953;
+					return joaat("pg_mp_possecamp_playertent_large004x_b");
 				case 2:
-					return 884322100;
+					return joaat("pg_mp_possecamp_playertent_large004x_c");
 				default:
 					break;
 			}
@@ -24621,11 +24621,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 391918429;
+					return joaat("pg_mp_possecamp_tent_aframetent_culture01");
 				case 1:
-					return 316396656;
+					return joaat("pg_mp_possecamp_tent_aframetent_culture01_b");
 				case 2:
-					return -312243840;
+					return joaat("pg_mp_possecamp_tent_aframetent_culture01_c");
 				default:
 					break;
 			}
@@ -24634,11 +24634,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1677462667;
+					return joaat("pg_mp_possecamp_tent_aframetent_hobo01");
 				case 1:
-					return -1725687050;
+					return joaat("pg_mp_possecamp_tent_aframetent_hobo01_b");
 				case 2:
-					return -59973242;
+					return joaat("pg_mp_possecamp_tent_aframetent_hobo01_c");
 				default:
 					break;
 			}
@@ -24647,11 +24647,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -318874414;
+					return joaat("pg_mp_possecamp_tent_aframetent_military01");
 				case 1:
-					return -1567046505;
+					return joaat("pg_mp_possecamp_tent_aframetent_military01_b");
 				case 2:
-					return -1107690663;
+					return joaat("pg_mp_possecamp_tent_aframetent_military01_c");
 				default:
 					break;
 			}
@@ -24660,11 +24660,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1732383534;
+					return joaat("pg_mp_possecamp_tent_aframetent_survivor01");
 				case 1:
-					return 1806293626;
+					return joaat("pg_mp_possecamp_tent_aframetent_survivor01_b");
 				case 2:
-					return 2070444535;
+					return joaat("pg_mp_possecamp_tent_aframetent_survivor01_c");
 				default:
 					break;
 			}
@@ -24673,11 +24673,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 385480388;
+					return joaat("pg_mp_possecamp_tent_bounty03x");
 				case 1:
-					return 43647758;
+					return joaat("pg_mp_possecamp_tent_bounty03x_b");
 				case 2:
-					return -2079554059;
+					return joaat("pg_mp_possecamp_tent_bounty03x_c");
 				default:
 					break;
 			}
@@ -24686,11 +24686,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2059274296;
+					return joaat("pg_mp_possecamp_tent_collector03x");
 				case 1:
-					return 1738250988;
+					return joaat("pg_mp_possecamp_tent_collector03x_b");
 				case 2:
-					return -1837502296;
+					return joaat("pg_mp_possecamp_tent_collector03x_c");
 				default:
 					break;
 			}
@@ -24699,11 +24699,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -360281516;
+					return joaat("pg_mp_possecamp_tent_trader03x");
 				case 1:
-					return 1971887092;
+					return joaat("pg_mp_possecamp_tent_trader03x_b");
 				case 2:
-					return 967976008;
+					return joaat("pg_mp_possecamp_tent_trader03x_c");
 				default:
 					break;
 			}
@@ -24712,11 +24712,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 989774025;
+					return joaat("pg_mp_possecamp_playertent_medium000x");
 				case 1:
-					return 33638723;
+					return joaat("pg_mp_possecamp_playertent_medium000x_b");
 				case 2:
-					return -1271779930;
+					return joaat("pg_mp_possecamp_playertent_medium000x_c");
 				default:
 					break;
 			}
@@ -24725,11 +24725,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -2071207172;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_culture01");
 				case 1:
-					return 617665820;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_culture01_b");
 				case 2:
-					return -136086718;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_culture01_c");
 				default:
 					break;
 			}
@@ -24738,11 +24738,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1910685448;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_hobo01");
 				case 1:
-					return -1547518466;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_hobo01_b");
 				case 2:
-					return -1335830726;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_hobo01_c");
 				default:
 					break;
 			}
@@ -24751,11 +24751,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 73249336;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_military01");
 				case 1:
-					return -1252901452;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_military01_b");
 				case 2:
-					return 1592627432;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_military01_c");
 				default:
 					break;
 			}
@@ -24764,11 +24764,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1055390078;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_survivor01");
 				case 1:
-					return -306896422;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_survivor01_b");
 				case 2:
-					return 1112460044;
+					return joaat("pg_mp_possecamp_tent_simplebedroll_survivor01_c");
 				default:
 					break;
 			}
@@ -24777,9 +24777,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1677234932;
+					return joaat("pg_mp_possecamp_tent_bounty01x");
 				case 1:
-					return 799197269;
+					return joaat("pg_mp_possecamp_tent_bounty01x_b");
 				default:
 					break;
 			}
@@ -24788,9 +24788,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1314719695;
+					return joaat("pg_mp_possecamp_tent_collector01x");
 				case 1:
-					return -274186981;
+					return joaat("pg_mp_possecamp_tent_collector01x_b");
 				default:
 					break;
 			}
@@ -24799,11 +24799,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1475148910;
+					return joaat("pg_mp_possecamp_tent_trader01x");
 				case 1:
-					return -2106339097;
+					return joaat("pg_mp_possecamp_tent_trader01x_b");
 				case 2:
-					return 1888169262;
+					return joaat("pg_mp_possecamp_tent_trader01x_c");
 				default:
 					break;
 			}
@@ -24812,9 +24812,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1134950394;
+					return joaat("pg_mp_possecamp_playertent_large002x");
 				case 1:
-					return -503999573;
+					return joaat("pg_mp_possecamp_playertent_large002x_c");
 				default:
 					break;
 			}
@@ -24823,9 +24823,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1246604785;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_culture01");
 				case 1:
-					return 972469141;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_culture01_b");
 				default:
 					break;
 			}
@@ -24834,9 +24834,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 971028470;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_hobo01");
 				case 1:
-					return -968274015;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_hobo01_b");
 				default:
 					break;
 			}
@@ -24845,9 +24845,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 530952697;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_military01");
 				case 1:
-					return -1828576459;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_military01_b");
 				default:
 					break;
 			}
@@ -24856,9 +24856,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1971966565;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_survivor01");
 				case 1:
-					return 1816066415;
+					return joaat("pg_mp_possecamp_tent_coveredleanto_survivor01_b");
 				default:
 					break;
 			}
@@ -24867,9 +24867,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1249050801;
+					return joaat("pg_mp_possecamp_tent_bounty06x");
 				case 1:
-					return 605748345;
+					return joaat("pg_mp_possecamp_tent_bounty06x_b");
 				default:
 					break;
 			}
@@ -24878,9 +24878,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 864745687;
+					return joaat("pg_mp_possecamp_tent_collector06x");
 				case 1:
-					return 1298378845;
+					return joaat("pg_mp_possecamp_tent_collector06x_b");
 				default:
 					break;
 			}
@@ -24889,11 +24889,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 882319324;
+					return joaat("pg_mp_possecamp_tent_trader06x");
 				case 1:
-					return -1316683930;
+					return joaat("pg_mp_possecamp_tent_trader06x_b");
 				case 2:
-					return -2144133949;
+					return joaat("pg_mp_possecamp_tent_trader06x_c");
 				default:
 					break;
 			}
@@ -24902,9 +24902,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -955972886;
+					return joaat("pg_mp_possecamp_playertent_large005x");
 				case 1:
-					return -1314445006;
+					return joaat("pg_mp_possecamp_playertent_large005x_b");
 				default:
 					break;
 			}
@@ -24913,9 +24913,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -935053193;
+					return joaat("pg_mp005_possecamp_tent_coveredtent_culture01");
 				case 1:
-					return 1487706098;
+					return joaat("pg_mp_possecamp_tent_coveredtent_culture01_c");
 				default:
 					break;
 			}
@@ -24924,9 +24924,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 8923007;
+					return joaat("pg_mp_possecamp_tent_coveredtent_hobo01");
 				case 1:
-					return 982279746;
+					return joaat("pg_mp_possecamp_tent_coveredtent_hobo01_b");
 				default:
 					break;
 			}
@@ -24935,9 +24935,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1424924456;
+					return joaat("pg_mp_possecamp_tent_coveredtent_military01");
 				case 1:
-					return -1021506779;
+					return joaat("pg_mp_possecamp_tent_coveredtent_military01_b");
 				default:
 					break;
 			}
@@ -24946,9 +24946,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1582754317;
+					return joaat("pg_mp_possecamp_tent_coveredtent_survivor01");
 				case 1:
-					return 632699679;
+					return joaat("pg_mp_possecamp_tent_coveredtent_survivor01_c");
 				default:
 					break;
 			}
@@ -24957,11 +24957,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2131973153;
+					return joaat("pg_mp_possecamp_tent_bounty07x");
 				case 1:
-					return 1429690130;
+					return joaat("pg_mp_possecamp_tent_bounty07x_b");
 				case 2:
-					return -1492190528;
+					return joaat("pg_mp_possecamp_tent_bounty07x_c");
 				default:
 					break;
 			}
@@ -24970,9 +24970,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1886000480;
+					return joaat("pg_mp_possecamp_tent_collector07x");
 				case 1:
-					return -1670639412;
+					return joaat("pg_mp_possecamp_tent_collector07x_b");
 				default:
 					break;
 			}
@@ -24981,11 +24981,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 873982998;
+					return joaat("pg_mp_possecamp_tent_trader07x");
 				case 1:
-					return -2023715487;
+					return joaat("pg_mp_possecamp_tent_trader07x_b");
 				case 2:
-					return -1792726806;
+					return joaat("pg_mp_possecamp_tent_trader07x_c");
 				default:
 					break;
 			}
@@ -24994,11 +24994,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -895842627;
+					return joaat("pg_mp_possecamp_playertent_large001x");
 				case 1:
-					return 1937572282;
+					return joaat("pg_mp_possecamp_playertent_large001x_b");
 				case 2:
-					return 416959594;
+					return joaat("pg_mp_possecamp_playertent_large001x_c");
 				default:
 					break;
 			}
@@ -25007,11 +25007,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -322237995;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_culture01");
 				case 1:
-					return -1586711149;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_culture01_b");
 				case 2:
-					return 1871696342;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_culture01_c");
 				default:
 					break;
 			}
@@ -25020,11 +25020,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 729024430;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_hobo01");
 				case 1:
-					return 286045778;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_hobo01_b");
 				case 2:
-					return 1674927078;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_hobo01_c");
 				default:
 					break;
 			}
@@ -25033,11 +25033,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 462515524;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_military01");
 				case 1:
-					return 907094344;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_military01_b");
 				case 2:
-					return -52054286;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_military01_c");
 				default:
 					break;
 			}
@@ -25046,11 +25046,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -918030852;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_survivor01");
 				case 1:
-					return -198743828;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_survivor01_b");
 				case 2:
-					return 99552379;
+					return joaat("pg_mp_possecamp_tent_simpleleanto_survivor01_c");
 				default:
 					break;
 			}
@@ -25059,9 +25059,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1777999895;
+					return joaat("pg_mp_possecamp_tent_bounty02x");
 				case 1:
-					return -103611011;
+					return joaat("pg_mp_possecamp_tent_bounty02x_b");
 				default:
 					break;
 			}
@@ -25070,9 +25070,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1669050608;
+					return joaat("pg_mp_possecamp_tent_collector02x");
 				case 1:
-					return -311221031;
+					return joaat("pg_mp_possecamp_tent_collector02x_b");
 				default:
 					break;
 			}
@@ -25081,11 +25081,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1478360676;
+					return joaat("pg_mp_possecamp_tent_trader02x");
 				case 1:
-					return 1476409321;
+					return joaat("pg_mp_possecamp_tent_trader02x_b");
 				case 2:
-					return 1765431901;
+					return joaat("pg_mp_possecamp_tent_trader02x_c");
 				default:
 					break;
 			}
@@ -25094,9 +25094,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 128582427;
+					return joaat("pg_mp_possecamp_playertent_large003x");
 				case 1:
-					return 735165138;
+					return joaat("pg_mp_possecamp_playertent_large003x_c");
 				default:
 					break;
 			}
@@ -25105,11 +25105,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 790654615;
+					return joaat("pg_mp_possecamp_tent_openleanto_culture01");
 				case 1:
-					return -456605112;
+					return joaat("pg_mp_possecamp_tent_openleanto_culture01_b");
 				case 2:
-					return -610029570;
+					return joaat("pg_mp_possecamp_tent_openleanto_culture01_c");
 				default:
 					break;
 			}
@@ -25118,11 +25118,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1573560838;
+					return joaat("pg_mp_possecamp_tent_openleanto_hobo01");
 				case 1:
-					return -1168327431;
+					return joaat("pg_mp_possecamp_tent_openleanto_hobo01_b");
 				case 2:
-					return 50253372;
+					return joaat("pg_mp_possecamp_tent_openleanto_hobo01_c");
 				default:
 					break;
 			}
@@ -25131,9 +25131,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 1733930198;
+					return joaat("pg_mp_possecamp_tent_openleanto_military01");
 				case 1:
-					return -1436871283;
+					return joaat("pg_mp_possecamp_tent_openleanto_military01_b");
 				default:
 					break;
 			}
@@ -25142,7 +25142,7 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 500439684;
+					return joaat("pg_mp_possecamp_tent_openleanto_survivor01_b");
 				default:
 					break;
 			}
@@ -25151,9 +25151,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1239525662;
+					return joaat("pg_mp_possecamp_tent_bounty05x");
 				case 1:
-					return 1147933547;
+					return joaat("pg_mp_possecamp_tent_bounty05x_b");
 				default:
 					break;
 			}
@@ -25162,9 +25162,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -821842250;
+					return joaat("pg_mp_possecamp_tent_collector05x");
 				case 1:
-					return -1168753556;
+					return joaat("pg_mp_possecamp_tent_collector05x_b");
 				default:
 					break;
 			}
@@ -25173,11 +25173,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1725287507;
+					return joaat("pg_mp_possecamp_tent_trader05x");
 				case 1:
-					return 1119015356;
+					return joaat("pg_mp_possecamp_tent_trader05x_b");
 				case 2:
-					return 1459419728;
+					return joaat("pg_mp_possecamp_tent_trader05x_c");
 				default:
 					break;
 			}
@@ -25186,9 +25186,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -2129397328;
+					return joaat("pg_mp_possecamp_tent_tallleanto_survivor01");
 				case 1:
-					return -2075415593;
+					return joaat("pg_mp_possecamp_tent_tallleanto_survivor01_b");
 				default:
 					break;
 			}
@@ -25197,9 +25197,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 310117163;
+					return joaat("pg_mp_possecamp_tent_tallleanto_culture01");
 				case 1:
-					return 1464005163;
+					return joaat("pg_mp_possecamp_tent_tallleanto_culture01_b");
 				default:
 					break;
 			}
@@ -25208,9 +25208,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -44082786;
+					return joaat("pg_mp_possecamp_tent_tallleanto_hobo01");
 				case 1:
-					return -879126926;
+					return joaat("pg_mp_possecamp_tent_tallleanto_hobo01_b");
 				default:
 					break;
 			}
@@ -25219,9 +25219,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -191291516;
+					return joaat("pg_mp_possecamp_tent_tallleanto_military01");
 				case 1:
-					return 1261058737;
+					return joaat("pg_mp_possecamp_tent_tallleanto_military01_b");
 				default:
 					break;
 			}
@@ -25230,9 +25230,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1581942421;
+					return joaat("pg_mp_possecamp_playertent_large000x");
 				case 1:
-					return 1060114223;
+					return joaat("pg_mp_possecamp_playertent_large000x_b");
 				default:
 					break;
 			}
@@ -25241,9 +25241,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 2130495472;
+					return joaat("pg_mp_possecamp_tent_bounty04x");
 				case 1:
-					return -92122221;
+					return joaat("pg_mp_possecamp_tent_bounty04x_b");
 				default:
 					break;
 			}
@@ -25252,9 +25252,9 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return 717416799;
+					return joaat("pg_mp_possecamp_tent_collector04x");
 				case 1:
-					return 1696375712;
+					return joaat("pg_mp_possecamp_tent_collector04x_b");
 				default:
 					break;
 			}
@@ -25263,11 +25263,11 @@ int func_761(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return -1948103631;
+					return joaat("pg_mp_possecamp_tent_trader04x");
 				case 1:
-					return -1345114872;
+					return joaat("pg_mp_possecamp_tent_trader04x_b");
 				case 2:
-					return -954213471;
+					return joaat("pg_mp_possecamp_tent_trader04x_c");
 				default:
 					break;
 			}
@@ -31862,7 +31862,7 @@ int func_955(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -833277401:
+		case joaat("pg_mp_possecamp_stewpot01x"):
 			return joaat("p_campfirecombined01x");
 		default:
 			break;
@@ -52931,7 +52931,7 @@ int func_1597(var uParam0, int iParam1, int iParam2)
 		else if (bVar5)
 		{
 			DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam2, "frontSlotTextureDict", joaat("menu_textures"));
-			DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam2, "frontSlotTexture", 1974973834);
+			DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam2, "frontSlotTexture", joaat("horse_saddle"));
 		}
 		else
 		{
@@ -53137,7 +53137,7 @@ int func_1599(var uParam0, int iParam1, struct<4> Param2, int iParam6, bool bPar
 				{
 					DATABINDING::_DATABINDING_ADD_DATA_BOOL(*iParam6, "backTextureVisible", true);
 					DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam6, "backTextureDict", joaat("menu_textures"));
-					DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam6, "backTexture", 1974973834);
+					DATABINDING::_DATABINDING_ADD_DATA_INT(*iParam6, "backTexture", joaat("horse_saddle"));
 				}
 			}
 		}
@@ -58203,7 +58203,7 @@ int func_1781(int iParam0)
 		case joaat("a_c_eagle_01"):
 		case joaat("a_c_bluejay_01"):
 		case joaat("a_c_cardinal_01"):
-			return 166398389 /* GXTEntry: "Plain Game Bird" */;
+			return joaat("CONSUMABLE_GAMEY_BIRD_COOKED");
 		case joaat("a_c_armadillo_01"):
 		case joaat("a_c_snakeredboa_01"):
 		case joaat("a_c_chipmunk_01"):
@@ -58221,14 +58221,14 @@ int func_1781(int iParam0)
 		case joaat("a_c_raccoon_01"):
 		case joaat("a_c_snakeferdelance_01"):
 		case joaat("a_c_squirrel_01"):
-			return -467118139 /* GXTEntry: "Plain Stringy Meat" */;
+			return joaat("CONSUMABLE_STRING_MEAT_COOKED");
 		case joaat("a_c_iguana_01"):
 		case joaat("a_c_turtlesea_01"):
 		case joaat("a_c_frogbull_01"):
 		case joaat("a_c_iguanadesert_01"):
 		case joaat("a_c_turtlesnapping_01"):
 		case joaat("a_c_toad_01"):
-			return 524620511 /* GXTEntry: "Plain Herptile" */;
+			return joaat("CONSUMABLE_HERPTILE_MEAT_COOKED");
 		case joaat("a_c_fishbluegil_01_sm"):
 		case joaat("a_c_fishchannelcatfish_01_xl"):
 		case joaat("a_c_fishlongnosegar_01_lg"):
@@ -58236,11 +58236,11 @@ int func_1781(int iParam0)
 		case joaat("a_c_fishbullheadcat_01_sm"):
 		case joaat("a_c_fishchannelcatfish_01_lg"):
 		case joaat("a_c_fishbluegil_01_ms"):
-			return -1768405210 /* GXTEntry: "Gritty Fish" */;
+			return joaat("CONSUMABLE_GRITTY_FISH_MEAT_COOKED");
 		case joaat("a_c_bighornram_01"):
 		case joaat("a_c_goat_01"):
 		case joaat("a_c_sheep_01"):
-			return -546209848 /* GXTEntry: "Plain Mutton" */;
+			return joaat("CONSUMABLE_GRISTLY_MUTTON_COOKED");
 		case joaat("a_c_fishrockbass_01_ms"):
 		case joaat("a_c_fishsmallmouthbass_01_lg"):
 		case joaat("a_c_fishmuskie_01_lg"):
@@ -58256,7 +58256,7 @@ int func_1781(int iParam0)
 		case joaat("a_c_fishnorthernpike_01_lg"):
 		case joaat("a_c_fishperch_01_sm"):
 		case joaat("a_c_fishsmallmouthbass_01_ms"):
-			return 880496229 /* GXTEntry: "Plain Flaky Fish" */;
+			return joaat("CONSUMABLE_FLAKEY_FISH_COOKED");
 		case joaat("a_c_chicken_01"):
 		case joaat("a_c_turkeywild_01"):
 		case joaat("a_c_turkey_01"):
@@ -58264,36 +58264,36 @@ int func_1781(int iParam0)
 		case joaat("a_c_goosecanada_01"):
 		case joaat("a_c_rooster_01"):
 		case joaat("a_c_prairiechicken_01"):
-			return 2058993648 /* GXTEntry: "Plain Plump Bird" */;
+			return joaat("CONSUMABLE_PLUMP_BIRD_COOKED");
 		case joaat("a_c_cow"):
 		case joaat("a_c_bull_01"):
 		case joaat("a_c_ox_01"):
 		case joaat("a_c_buffalo_01"):
-			return -1535978095 /* GXTEntry: "Plain Prime Beef" */;
+			return joaat("CONSUMABLE_PRIME_BEEF_COOKED");
 		case joaat("a_c_elk_01"):
 		case joaat("a_c_buck_01"):
 		case joaat("a_c_moose_01"):
 		case joaat("a_c_deer_01"):
 		case joaat("a_c_pronghorn_01"):
-			return -151108755 /* GXTEntry: "Plain Venison" */;
+			return joaat("CONSUMABLE_MATURE_VENISON_COOKED");
 		case joaat("a_c_pig_01"):
 		case joaat("a_c_javelina_01"):
 		case joaat("a_c_boar_01"):
-			return 1663095412 /* GXTEntry: "Plain Pork" */;
+			return joaat("CONSUMABLE_TENDER_PORK_COOKED");
 		case joaat("a_c_duck_01"):
 		case joaat("a_c_rabbit_01"):
 		case joaat("a_c_pheasant_01"):
 		case joaat("a_c_quail_01"):
-			return -348823399 /* GXTEntry: "Plain Game" */;
+			return joaat("CONSUMABLE_GAME_MEAT_COOKED");
 		case joaat("a_c_fishsalmonsockeye_01_ms"):
 		case joaat("a_c_fishrainbowtrout_01_lg"):
 		case joaat("a_c_fishrainbowtrout_01_ms"):
 		case joaat("a_c_fishsalmonsockeye_01_lg"):
-			return -1240620284 /* GXTEntry: "Plain Succulent Fish" */;
+			return joaat("CONSUMABLE_SUCCULENT_FISH_COOKED");
 		case joaat("a_c_parrot_01"):
 		case joaat("a_c_pelican_01"):
 		case joaat("a_c_carolinaparakeet_01"):
-			return 532201260 /* GXTEntry: "Plain Exotic Bird" */;
+			return joaat("CONSUMABLE_EXOTIC_BIRD_COOKED");
 		case joaat("a_c_alligator_01"):
 		case joaat("a_c_alligator_02"):
 		case joaat("a_c_alligator_03"):
@@ -58304,9 +58304,9 @@ int func_1781(int iParam0)
 		case joaat("a_c_cougar_01"):
 		case joaat("a_c_bearblack_01"):
 		case joaat("a_c_panther_01"):
-			return 1610737930 /* GXTEntry: "Plain Big Game" */;
+			return joaat("CONSUMABLE_BIG_GAME_MEAT_COOKED");
 		case joaat("a_c_crab_01"):
-			return -1277667710 /* GXTEntry: "Plain Crustacean" */;
+			return joaat("CONSUMABLE_CRUSTACEAN_MEAT_COOKED");
 	}
 	return 0;
 }
@@ -83509,11 +83509,11 @@ int func_2581(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 882648233: /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[0] = 57366885;
-			Global_1051388->f_46[1] = -880097252;
-			Global_1051388->f_46[2] = -1391305890;
-			Global_1051388->f_46[3] = 882648233; /* GXTEntry: "Bounty Hunter Variant" */
+		case joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_SCHOFIELD_BOUNTY"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP_BOUNTY");
+			Global_1051388->f_46[1] = joaat("COMPONENT_REVOLVER_SCHOFIELD_BARREL_BOUNTY");
+			Global_1051388->f_46[2] = joaat("COMPONENT_REVOLVER_SCHOFIELD_SIGHT_BOUNTY");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_SCHOFIELD_BOUNTY");
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83521,11 +83521,11 @@ int func_2581(int iParam0)
 			Global_1051388->f_46.f_6[3] = 1;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -1814368974: /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[0] = 1043980328;
-			Global_1051388->f_46[1] = -1814368974; /* GXTEntry: "Bounty Hunter Variant" */
-			Global_1051388->f_46[2] = 1419411400; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[3] = 1905286511; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_BOLTACTION_BOUNTY"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_RIFLE_BOLTACTION_GRIP_BOUNTY");
+			Global_1051388->f_46[1] = joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_BOLTACTION_BOUNTY");
+			Global_1051388->f_46[2] = joaat("COMPONENT_RIFLE_BOLTACTION_WRAP");
+			Global_1051388->f_46[3] = joaat("COMPONENT_RIFLE_BOLTACTION_WRAP2");
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83533,10 +83533,10 @@ int func_2581(int iParam0)
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -840678979: /* GXTEntry: "Collector Variant" */
-			Global_1051388->f_46[0] = -385288709;
-			Global_1051388->f_46[1] = 1799288707;
-			Global_1051388->f_46[2] = -840678979; /* GXTEntry: "Collector Variant" */
+		case joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_WINCHESTER_COLLECTOR"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_REPEATER_WINCHESTER_GRIP_COLLECTOR");
+			Global_1051388->f_46[1] = joaat("COMPONENT_REPEATER_WINCHESTER_WRAP_COLLECTOR");
+			Global_1051388->f_46[2] = joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_WINCHESTER_COLLECTOR");
 			Global_1051388->f_46[3] = 0;
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
@@ -83545,11 +83545,11 @@ int func_2581(int iParam0)
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -454335124: /* GXTEntry: "Collector Variant" */
-			Global_1051388->f_46[0] = -49512990;
-			Global_1051388->f_46[1] = -108436614;
-			Global_1051388->f_46[2] = -858357099;
-			Global_1051388->f_46[3] = -454335124; /* GXTEntry: "Collector Variant" */
+		case joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_VOLCANIC_COLLECTOR"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_PISTOL_VOLCANIC_GRIP_COLLECTOR");
+			Global_1051388->f_46[1] = joaat("COMPONENT_PISTOL_VOLCANIC_BARREL_COLLECTOR");
+			Global_1051388->f_46[2] = joaat("COMPONENT_PISTOL_VOLCANIC_SIGHT_COLLECTOR");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_VOLCANIC_COLLECTOR");
 			Global_1051388->f_46[4] = 0;
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
@@ -83557,36 +83557,36 @@ int func_2581(int iParam0)
 			Global_1051388->f_46.f_6[3] = 1;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -107914178: /* GXTEntry: "Trader Variant" */
-			Global_1051388->f_46[0] = -1850951144;
-			Global_1051388->f_46[1] = -169059359;
-			Global_1051388->f_46[2] = -107914178; /* GXTEntry: "Trader Variant" */
-			Global_1051388->f_46[3] = 1509466794; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[4] = 930176412; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_PUMP_TRADER"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_SHOTGUN_PUMP_GRIP_TRADER");
+			Global_1051388->f_46[1] = joaat("COMPONENT_SHOTGUN_PUMP_CLIP_TRADER");
+			Global_1051388->f_46[2] = joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_PUMP_TRADER");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHOTGUN_PUMP_WRAP1");
+			Global_1051388->f_46[4] = joaat("COMPONENT_SHOTGUN_PUMP_WRAP2");
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -2141733109: /* GXTEntry: "Moonshiner Variant" */
-			Global_1051388->f_46[0] = 1772087572;
-			Global_1051388->f_46[1] = 537597023;
-			Global_1051388->f_46[2] = -2141733109; /* GXTEntry: "Moonshiner Variant" */
-			Global_1051388->f_46[3] = 635989042; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[4] = -221706764; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_SAWEDOFF_MOONSHINER"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_SHOTGUN_SAWEDOFF_GRIP_MOONSHINER");
+			Global_1051388->f_46[1] = joaat("COMPONENT_SHOTGUN_SAWED_SIGHT_MOONSHINER");
+			Global_1051388->f_46[2] = joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_SAWEDOFF_MOONSHINER");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHOTGUN_SAWEDOFF_WRAP1");
+			Global_1051388->f_46[4] = joaat("COMPONENT_SHOTGUN_SAWEDOFF_WRAP2");
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
 			Global_1051388->f_46.f_6[3] = 0;
 			Global_1051388->f_46.f_6[4] = 0;
 			return 1;
-		case -1468648029: /* GXTEntry: "Krampus Variant" */
-			Global_1051388->f_46[0] = -766495288;
-			Global_1051388->f_46[1] = -563652421;
-			Global_1051388->f_46[2] = -1468648029; /* GXTEntry: "Krampus Variant" */
-			Global_1051388->f_46[3] = -240387438; /* GXTEntry: "Leather Wrap" */
-			Global_1051388->f_46[4] = -470655201; /* GXTEntry: "Cloth Wrap" */
+		case joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_DOUBLEBARREL_KRAMPUS"):
+			Global_1051388->f_46[0] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_KRAMPUS");
+			Global_1051388->f_46[1] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_KRAMPUS");
+			Global_1051388->f_46[2] = joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_DOUBLEBARREL_KRAMPUS");
+			Global_1051388->f_46[3] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_WRAP1");
+			Global_1051388->f_46[4] = joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_WRAP2");
 			Global_1051388->f_46.f_6[0] = 1;
 			Global_1051388->f_46.f_6[1] = 1;
 			Global_1051388->f_46.f_6[2] = 1;
@@ -101370,7 +101370,7 @@ int func_3151(int iParam0)
 		case -1457420231: /* GXTEntry: "Good Bat Carcass" */
 		case 563848610: /* GXTEntry: "Poor Bat Carcass" */
 		case 1432949803: /* GXTEntry: "Perfect Bat Carcass" */
-			return 783089120 /* GXTEntry: "Bat" */;
+			return joaat("AT_BAT");
 		case -2120099592: /* GXTEntry: "Poor Blue Jay Carcass" */
 		case -983831788: /* GXTEntry: "Perfect Blue Jay Carcass" */
 		case 1848456619: /* GXTEntry: "Good Blue Jay Carcass" */

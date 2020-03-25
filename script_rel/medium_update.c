@@ -21098,75 +21098,75 @@ char* func_691(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1472222264:
+		case joaat("AMD_GENERAL_STORE"):
 			return "Armadillo/AMD_GENERAL_STORE";
 		case joaat("ASB_Gunsmith"):
 			return "Annesburg/Asb_Gunsmith";
-		case 1193985110:
+		case joaat("Asb_Newspaper_Vendor"):
 			return "Annesburg/Asb_Newspaper_Vendor";
-		case 618535878:
+		case joaat("Blw_Barber"):
 			return "Blackwater/Blw_Barber";
-		case -1337007991:
+		case joaat("Blw_Butcher"):
 			return "Blackwater/Blw_Butcher";
 		case joaat("BLW_General_Store"):
 			return "Blackwater/Blw_General_Store";
-		case -556457729:
+		case joaat("BLW_NEWSPAPER"):
 			return "Blackwater/Blw_Newspaper";
 		case joaat("BLW_Photographer"):
 			return "Blackwater/Blw_Photographer";
-		case 914853768:
+		case joaat("BLW_TAILOR"):
 			return "Blackwater/Blw_Tailor";
 		case joaat("emr_son1"):
 			return "EmeraldRanch/Emr_Son1";
-		case 1908738551:
+		case joaat("Lag_Mother1"):
 			return "Lagras/Lag_Mother1";
-		case 1010118053:
+		case joaat("RHD_BUTCHER"):
 			return "Rhodes/rhd_Butcher";
-		case 1317192638:
+		case joaat("rhd_fence"):
 			return "Rhodes/rhd_fence";
 		case joaat("RHD_General_Store"):
 			return "Rhodes/rhd_general_store";
 		case joaat("RHD_Gunsmith"):
 			return "Rhodes/rhd_gunsmith";
-		case 225456100:
+		case joaat("RHD_NEWSPAPER_VENDOR"):
 			return "Rhodes/rhd_newspaper_vendor";
-		case -533772707:
+		case joaat("SDN_BARBER"):
 			return "SaintDenis/SDN_Barber";
-		case 1709214177:
+		case joaat("SDN_BUTCHER"):
 			return "SaintDenis/SDN_Butcher";
-		case -1116668486:
+		case joaat("SDN_DOCTOR"):
 			return "SaintDenis/SDN_Doctor";
-		case 156473432:
+		case joaat("SDN_Gen_Store_Shady"):
 			return "SaintDenis/SDN_Gen_Store_Shady";
-		case 1659593009:
+		case joaat("SDN_Gen_Store_Owner"):
 			return "SaintDenis/SDN_Gen_Store_Owner";
-		case 1198640232:
+		case joaat("SDN_GUNSMITH"):
 			return "SaintDenis/SDN_Gunsmith";
-		case -615386674:
+		case joaat("SDN_HORSE_SHOP_OWNER"):
 			return "SaintDenis/SDN_Horse_Shop_Owner";
-		case -650257138:
+		case joaat("SDN_TAILOR"):
 			return "SaintDenis/SDN_Tailor";
-		case 135353273:
+		case joaat("SDN_Market_Vendor1"):
 			return "SaintDenis/SDN_Market_Vendor1";
-		case 986295353:
+		case joaat("SDN_FrenchMarket_Vendor_1"):
 			return "SaintDenis/SDN_FrenchMarket_Vendor_1";
-		case 1231178090:
+		case joaat("SDN_FrenchMarket_Vendor_2"):
 			return "SaintDenis/SDN_FrenchMarket_Vendor_2";
-		case -634913711:
+		case joaat("SDN_Newspaper_Vendor"):
 			return "SaintDenis/SDN_Newspaper_Vendor";
-		case -2098805802:
+		case joaat("SDN_PHOTOGRAPHER"):
 			return "SaintDenis/SDN_Photographer";
-		case 1645786537:
+		case joaat("STR_BUTCHER"):
 			return "Strawberry/STR_Butcher";
 		case joaat("prin_p4_28"):
 			return "Strawberry/Str_General_Store";
-		case -1391735686:
+		case joaat("Str_Newspaper_Vendor"):
 			return "Strawberry/Str_Newspaper_Vendor";
-		case -1456173883:
+		case joaat("TBL_BUTCHER"):
 			return "Tumbleweed/TBL_BUTCHER";
-		case 344419080:
+		case joaat("TBL_GENERAL_STORE_OWNER"):
 			return "Tumbleweed/TBL_GENERAL_STORE_RESIDENT";
-		case 1057927283:
+		case joaat("TBL_GUNSMITH_OWNER"):
 			return "Tumbleweed/TBL_GUNSMITH_OWNER";
 		case joaat("VAL_Barber"):
 			return "Valentine/Val_Barber";
@@ -21178,11 +21178,11 @@ char* func_691(int iParam0)
 			return "Valentine/Val_General_Store";
 		case joaat("val_gunsmith"):
 			return "Valentine/Val_Gunsmith";
-		case 895371587:
+		case joaat("VAL_NEWSPAPER_VENDOR"):
 			return "Valentine/Val_Newspaper_Vendor";
 		case joaat("VHT_Exotic_Store"):
 			return "VanHornTradingPost/vht_exotic_store";
-		case -1760134268:
+		case joaat("WAL_GENSHOPKEEPER"):
 			return "WallaceStation/WAL_GENSHOPKEEPER";
 		default:
 			break;
@@ -27039,11 +27039,11 @@ int func_851(int iParam0)
 	switch (iParam0)
 	{
 		case 5:
-			return -1540127150;
+			return joaat("SALOON_PEDS_VALENTINE");
 		default:
 			break;
 	}
-	return -146477090;
+	return joaat("SALOON_PEDS");
 	return -1;
 }
 
@@ -27212,21 +27212,21 @@ int func_862(int iParam0)
 		case 5:
 			return joaat("VAL_Bartender");
 		case 6:
-			return 1690461416;
+			return joaat("VAL_SLUM_BARTENDER");
 		case 3:
 			return joaat("RHD_Bartender");
 		case 2:
-			return 785713260;
+			return joaat("SDN_BARTENDER");
 		case 1:
-			return -2099882877;
+			return joaat("SDN_BARTENDER_SLUMS");
 		case 8:
 			return joaat("VHT_Bartender");
 		case 0:
 			return joaat("BLW_Bartender");
 		case 4:
-			return 1016865322;
+			return joaat("TBL_BARTENDER");
 		case 7:
-			return 19124873;
+			return joaat("AMD_BARTENDER");
 		default:
 			break;
 	}
@@ -44765,7 +44765,7 @@ int func_1380(int iParam0)
 		case 17:
 			return 0;
 		case 18:
-			return -1797882553;
+			return joaat("STR_MAYOR");
 		case 19:
 			return 0;
 		case 20:
@@ -44773,7 +44773,7 @@ int func_1380(int iParam0)
 		case 21:
 			return 0;
 		case 22:
-			return 1328671773;
+			return joaat("TBL_SHERRIF");
 		case 23:
 			return 0;
 		case 24:
@@ -45415,7 +45415,7 @@ void func_1389(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1740(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_1643(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1741(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_1643(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1741(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1390(int iParam0, int iParam1)
@@ -68992,7 +68992,7 @@ void func_2101(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_1478(func_1873(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -70447,20 +70447,20 @@ void func_2142()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_2263(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_2263(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_2263(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_2263(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_2263(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_2263(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_2263(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_2263(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_2263(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_2263(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_2263(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_2263(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_2263(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_2263(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_2263(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_2263(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_2263(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_2263(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_2263(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_2263(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_2263(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_2263(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_2263(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_2263(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_2263(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_2263(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_2263(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_2263(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_216())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);

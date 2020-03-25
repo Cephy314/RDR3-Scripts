@@ -6491,7 +6491,7 @@ int func_179(bool bParam0, bool bParam1)
 			func_327("str_nav_construction_stage_0");
 			if (func_27() == -1)
 			{
-				PERSCHAR::_0x187D65F3AEC5D679(-1066735787, "Strawberry/Str_Wood_Chop_Wife");
+				PERSCHAR::_0x187D65F3AEC5D679(joaat("Str_Wood_Chop_Wife"), "Strawberry/Str_Wood_Chop_Wife");
 			}
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_INACTIVE", true);
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_ACTIVE", false);
@@ -6511,7 +6511,7 @@ int func_179(bool bParam0, bool bParam1)
 			func_327("str_nav_construction_stage_1");
 			if (func_27() == -1)
 			{
-				PERSCHAR::_0x187D65F3AEC5D679(-1066735787, "Strawberry/Construction_House_Active/Str_Wood_Chop_Wife");
+				PERSCHAR::_0x187D65F3AEC5D679(joaat("Str_Wood_Chop_Wife"), "Strawberry/Construction_House_Active/Str_Wood_Chop_Wife");
 			}
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_INACTIVE", false);
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_ACTIVE", true);
@@ -6531,7 +6531,7 @@ int func_179(bool bParam0, bool bParam1)
 			func_327("str_nav_construction_stage_2");
 			if (func_27() == -1)
 			{
-				PERSCHAR::_0x187D65F3AEC5D679(-1066735787, "Strawberry/Construction_House_Active/Str_Wood_Chop_Wife");
+				PERSCHAR::_0x187D65F3AEC5D679(joaat("Str_Wood_Chop_Wife"), "Strawberry/Construction_House_Active/Str_Wood_Chop_Wife");
 			}
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_INACTIVE", false);
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_ACTIVE", true);
@@ -6551,7 +6551,7 @@ int func_179(bool bParam0, bool bParam1)
 			func_327("str_nav_construction_stage_3");
 			if (func_27() == -1)
 			{
-				PERSCHAR::_0x187D65F3AEC5D679(-1066735787, "Strawberry/Construction_House_Active/Str_Wood_Chop_Wife");
+				PERSCHAR::_0x187D65F3AEC5D679(joaat("Str_Wood_Chop_Wife"), "Strawberry/Construction_House_Active/Str_Wood_Chop_Wife");
 			}
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_INACTIVE", false);
 			TASK::SET_SCENARIO_GROUP_ENABLED("STR_CONSTRUCTION_HOUSE_ACTIVE", true);
@@ -15672,95 +15672,95 @@ void func_393(int iParam0)
 	{
 		case 0:
 			func_605(5, joaat("ANIMALS_ALLIGATOR"));
-			func_605(10, -530650579);
+			func_605(10, joaat("ANIMALS_DEER"));
 			func_605(11, joaat("ANIMALS_ALLIGATOR"));
-			func_605(12, -79992523);
-			func_605(13, -1608748833);
-			func_605(7, -1243003160);
+			func_605(12, joaat("ANIMALS_BOAR"));
+			func_605(13, joaat("ANIMALS_FOX"));
+			func_605(7, joaat("ANIMALS_PELICAN"));
 			break;
 		case 1:
-			func_605(5, -431794078);
-			func_605(10, -530650579);
-			func_605(11, 2024364203);
-			func_605(12, 1131021608);
-			func_605(13, -2064541187);
-			func_605(7, -604466256);
+			func_605(5, joaat("ANIMALS_MOOSE"));
+			func_605(10, joaat("ANIMALS_DEER"));
+			func_605(11, joaat("ANIMALS_WOLF"));
+			func_605(12, joaat("ANIMALS_RABBIT"));
+			func_605(13, joaat("ANIMALS_COYOTES"));
+			func_605(7, joaat("ANIMALS_HAWKS"));
 			break;
 		case 2:
-			func_605(5, -715307145);
-			func_605(10, 1784992423);
+			func_605(5, joaat("ANIMALS_TURTLE"));
+			func_605(10, joaat("ANIMALS_POSSUMS"));
 			func_605(11, joaat("ANIMALS_ALLIGATOR"));
-			func_605(12, 1784992423);
-			func_605(13, -1608748833);
-			func_605(7, 486487548);
+			func_605(12, joaat("ANIMALS_POSSUMS"));
+			func_605(13, joaat("ANIMALS_FOX"));
+			func_605(7, joaat("ANIMALS_SONGBIRD"));
 			break;
 		case 3:
-			func_605(5, -2064541187);
-			func_605(10, -530650579);
-			func_605(11, 2024364203);
-			func_605(12, 1131021608);
-			func_605(13, -2064541187);
-			func_605(7, 506825778);
+			func_605(5, joaat("ANIMALS_COYOTES"));
+			func_605(10, joaat("ANIMALS_DEER"));
+			func_605(11, joaat("ANIMALS_WOLF"));
+			func_605(12, joaat("ANIMALS_RABBIT"));
+			func_605(13, joaat("ANIMALS_COYOTES"));
+			func_605(7, joaat("ANIMALS_VULTURES"));
 			break;
 		case 4:
-			func_605(5, -530650579);
-			func_605(10, -530650579);
-			func_605(11, 2024364203);
-			func_605(12, -1897088481);
-			func_605(13, -2064541187);
-			func_605(7, -604466256);
-			func_605(8, 239028334);
+			func_605(5, joaat("ANIMALS_DEER"));
+			func_605(10, joaat("ANIMALS_DEER"));
+			func_605(11, joaat("ANIMALS_WOLF"));
+			func_605(12, joaat("ANIMALS_RACCOON"));
+			func_605(13, joaat("ANIMALS_COYOTES"));
+			func_605(7, joaat("ANIMALS_HAWKS"));
+			func_605(8, joaat("ANIMALS_BUFFALO"));
 			break;
 		case 5:
 		case 6:
 		case 7:
-			func_605(5, -530650579);
-			func_605(10, -1608748833);
-			func_605(11, 1455354960);
-			func_605(12, -530650579);
-			func_605(13, -1608748833);
-			func_605(7, 188176855);
+			func_605(5, joaat("ANIMALS_DEER"));
+			func_605(10, joaat("ANIMALS_FOX"));
+			func_605(11, joaat("ANIMALS_COUGAR"));
+			func_605(12, joaat("ANIMALS_DEER"));
+			func_605(13, joaat("ANIMALS_FOX"));
+			func_605(7, joaat("ANIMALS_EAGLES"));
 			break;
 		case 8:
-			func_605(5, -79992523);
-			func_605(10, -79992523);
-			func_605(11, 796850253);
+			func_605(5, joaat("ANIMALS_BOAR"));
+			func_605(10, joaat("ANIMALS_BOAR"));
+			func_605(11, joaat("ANIMALS_SNAKE"));
 			func_605(12, joaat("animal_hen"));
-			func_605(13, -79992523);
-			func_605(7, -1063650279);
+			func_605(13, joaat("ANIMALS_BOAR"));
+			func_605(7, joaat("ANIMALS_SEAGULL"));
 			break;
 		case 9:
-			func_605(5, -530650579);
-			func_605(10, -530650579);
-			func_605(11, 1455354960);
-			func_605(12, -79992523);
-			func_605(13, -2064541187);
-			func_605(7, -604466256);
-			func_605(8, 239028334);
+			func_605(5, joaat("ANIMALS_DEER"));
+			func_605(10, joaat("ANIMALS_DEER"));
+			func_605(11, joaat("ANIMALS_COUGAR"));
+			func_605(12, joaat("ANIMALS_BOAR"));
+			func_605(13, joaat("ANIMALS_COYOTES"));
+			func_605(7, joaat("ANIMALS_HAWKS"));
+			func_605(8, joaat("ANIMALS_BUFFALO"));
 			break;
 		case 10:
-			func_605(5, -2064541187);
-			func_605(10, -530650579);
-			func_605(11, 1455354960);
-			func_605(12, 1131021608);
-			func_605(13, -2064541187);
-			func_605(7, -604466256);
+			func_605(5, joaat("ANIMALS_COYOTES"));
+			func_605(10, joaat("ANIMALS_DEER"));
+			func_605(11, joaat("ANIMALS_COUGAR"));
+			func_605(12, joaat("ANIMALS_RABBIT"));
+			func_605(13, joaat("ANIMALS_COYOTES"));
+			func_605(7, joaat("ANIMALS_HAWKS"));
 			break;
 		case 11:
-			func_605(5, -530650579);
-			func_605(10, -1074047115);
-			func_605(11, -1608748833);
-			func_605(12, -1897088481);
-			func_605(13, -1608748833);
-			func_605(7, 662736559);
+			func_605(5, joaat("ANIMALS_DEER"));
+			func_605(10, joaat("ANIMALS_TURKEYS_WILD"));
+			func_605(11, joaat("ANIMALS_FOX"));
+			func_605(12, joaat("ANIMALS_RACCOON"));
+			func_605(13, joaat("ANIMALS_FOX"));
+			func_605(7, joaat("ANIMALS_DUCKS"));
 			break;
 		case 12:
-			func_605(5, -530650579);
-			func_605(10, -1608748833);
-			func_605(11, -1504621559);
-			func_605(12, 1131021608);
-			func_605(13, -2064541187);
-			func_605(7, 486487548);
+			func_605(5, joaat("ANIMALS_DEER"));
+			func_605(10, joaat("ANIMALS_FOX"));
+			func_605(11, joaat("ANIMALS_BEAR"));
+			func_605(12, joaat("ANIMALS_RABBIT"));
+			func_605(13, joaat("ANIMALS_COYOTES"));
+			func_605(7, joaat("ANIMALS_SONGBIRD"));
 			break;
 	}
 }
@@ -21520,40 +21520,40 @@ void func_540(int iParam0)
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("ASB_Gunsmith"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("ASB_Sheriff"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("ea_lcmp_foreman"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-1472222264, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-736367663, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(19124873, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("AMD_GENERAL_STORE"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("AMD_UNDERTAKER"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("AMD_BARTENDER"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("BLW_Bartender"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("BLW_General_Store"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("BLW_Police_Chief"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("BRA_Stable_Hand"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-1086821801, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(212415041, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-16935190, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("EA_HMSTD_FOREMAN"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("EA_HMSTD_WORKER_1"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("EA_HMSTD_WORKER_2"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("ea_rcamp_foreman"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("EMR_Father"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("emr_son1"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1908738551, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-35439674, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("Lag_Mother1"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("CRO_RANCHER"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("RHD_Bartender"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1317192638, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("rhd_fence"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("RHD_Gunsmith"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("RHD_Sheriff"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-934649940, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(785713260, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-2099882877, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1659593009, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(156473432, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1198640232, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(2141998185, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("RHD_TRAIN_STAT_OWNER"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("SDN_BARTENDER"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("SDN_BARTENDER_SLUMS"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("SDN_Gen_Store_Owner"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("SDN_Gen_Store_Shady"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("SDN_GUNSMITH"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("SDN_POLICE_CHIEF"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("STR_Freight_Clerk"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("prin_p4_28"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("STR_Sheriff"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(135431031, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1016865322, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(-1456173883, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(344419080, iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1057927283, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("STR_WELCOME_CENTER_CLERK"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("TBL_BARTENDER"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("TBL_BUTCHER"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("TBL_GENERAL_STORE_OWNER"), iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("TBL_GUNSMITH_OWNER"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VAL_Barber"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VAL_Bartender"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("val_butcher"), iParam0);
@@ -21562,7 +21562,7 @@ void func_540(int iParam0)
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("val_gunsmith"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("val_hotel_owner"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VAL_Sheriff"), iParam0);
-	PERSCHAR::_0x2DF89CD2ED1D0BDE(1690461416, iParam0);
+	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VAL_SLUM_BARTENDER"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VHT_Bartender"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VHT_Station_Clerk"), iParam0);
 	PERSCHAR::_0x2DF89CD2ED1D0BDE(joaat("VHT_Exotic_Store"), iParam0);
@@ -35733,55 +35733,55 @@ int func_948(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:
@@ -35828,31 +35828,31 @@ int func_951(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:

@@ -3941,7 +3941,7 @@ void func_106()
 		}
 		if (func_26(iLocal_824, 8192) && !func_26(iLocal_824, 2097152))
 		{
-			PED::_0x8B3B71C80A29A4BB(Global_35, 112825101, 6);
+			PED::_0x8B3B71C80A29A4BB(Global_35, joaat("MoodKnockedOut"), 6);
 		}
 		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_677[0]), joaat("YOU_CAN_TELL")))
 		{
@@ -15252,7 +15252,7 @@ int func_412(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

@@ -114,7 +114,7 @@ void func_3(var uParam0, int iParam1, vector3 vParam2, int iParam5)
 
 void func_4(int iParam0)
 {
-	if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, 1055032020))
+	if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
 	{
 		switch (iParam0)
 		{

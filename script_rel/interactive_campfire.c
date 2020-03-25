@@ -2962,7 +2962,7 @@ bool func_71(int iParam0, bool bParam1)
 
 bool func_72()
 {
-	return (((!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")) && !Global_1898068->f_4) && !func_164()) && UIAPPS::_CAN_LAUNCH_APP_BY_HASH(1833066477));
+	return (((!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")) && !Global_1898068->f_4) && !func_164()) && UIAPPS::_CAN_LAUNCH_APP_BY_HASH(joaat("fast_travel_menu")));
 }
 
 void func_73(var uParam0, int iParam1)
@@ -2998,7 +2998,7 @@ void func_75(var uParam0, bool bParam1)
 
 void func_76()
 {
-	if (UIAPPS::_IS_APP_ACTIVE(1833066477) && func_77() != 0)
+	if (UIAPPS::_IS_APP_ACTIVE(joaat("fast_travel_menu")) && func_77() != 0)
 	{
 		func_73(&Global_43906, 16);
 	}
@@ -11374,7 +11374,7 @@ int func_316(int iParam0)
 		case joaat("a_c_eagle_01"):
 		case joaat("a_c_bluejay_01"):
 		case joaat("a_c_cardinal_01"):
-			return 166398389 /* GXTEntry: "Plain Game Bird" */;
+			return joaat("CONSUMABLE_GAMEY_BIRD_COOKED");
 		case joaat("a_c_armadillo_01"):
 		case joaat("a_c_snakeredboa_01"):
 		case joaat("a_c_chipmunk_01"):
@@ -11392,14 +11392,14 @@ int func_316(int iParam0)
 		case joaat("a_c_raccoon_01"):
 		case joaat("a_c_snakeferdelance_01"):
 		case joaat("a_c_squirrel_01"):
-			return -467118139 /* GXTEntry: "Plain Stringy Meat" */;
+			return joaat("CONSUMABLE_STRING_MEAT_COOKED");
 		case joaat("a_c_iguana_01"):
 		case joaat("a_c_turtlesea_01"):
 		case joaat("a_c_frogbull_01"):
 		case joaat("a_c_iguanadesert_01"):
 		case joaat("a_c_turtlesnapping_01"):
 		case joaat("a_c_toad_01"):
-			return 524620511 /* GXTEntry: "Plain Herptile" */;
+			return joaat("CONSUMABLE_HERPTILE_MEAT_COOKED");
 		case joaat("a_c_fishbluegil_01_sm"):
 		case joaat("a_c_fishchannelcatfish_01_xl"):
 		case joaat("a_c_fishlongnosegar_01_lg"):
@@ -11407,11 +11407,11 @@ int func_316(int iParam0)
 		case joaat("a_c_fishbullheadcat_01_sm"):
 		case joaat("a_c_fishchannelcatfish_01_lg"):
 		case joaat("a_c_fishbluegil_01_ms"):
-			return -1768405210 /* GXTEntry: "Gritty Fish" */;
+			return joaat("CONSUMABLE_GRITTY_FISH_MEAT_COOKED");
 		case joaat("a_c_bighornram_01"):
 		case joaat("a_c_goat_01"):
 		case joaat("a_c_sheep_01"):
-			return -546209848 /* GXTEntry: "Plain Mutton" */;
+			return joaat("CONSUMABLE_GRISTLY_MUTTON_COOKED");
 		case joaat("a_c_fishrockbass_01_ms"):
 		case joaat("a_c_fishsmallmouthbass_01_lg"):
 		case joaat("a_c_fishmuskie_01_lg"):
@@ -11427,7 +11427,7 @@ int func_316(int iParam0)
 		case joaat("a_c_fishnorthernpike_01_lg"):
 		case joaat("a_c_fishperch_01_sm"):
 		case joaat("a_c_fishsmallmouthbass_01_ms"):
-			return 880496229 /* GXTEntry: "Plain Flaky Fish" */;
+			return joaat("CONSUMABLE_FLAKEY_FISH_COOKED");
 		case joaat("a_c_chicken_01"):
 		case joaat("a_c_turkeywild_01"):
 		case joaat("a_c_turkey_01"):
@@ -11435,36 +11435,36 @@ int func_316(int iParam0)
 		case joaat("a_c_goosecanada_01"):
 		case joaat("a_c_rooster_01"):
 		case joaat("a_c_prairiechicken_01"):
-			return 2058993648 /* GXTEntry: "Plain Plump Bird" */;
+			return joaat("CONSUMABLE_PLUMP_BIRD_COOKED");
 		case joaat("a_c_cow"):
 		case joaat("a_c_bull_01"):
 		case joaat("a_c_ox_01"):
 		case joaat("a_c_buffalo_01"):
-			return -1535978095 /* GXTEntry: "Plain Prime Beef" */;
+			return joaat("CONSUMABLE_PRIME_BEEF_COOKED");
 		case joaat("a_c_elk_01"):
 		case joaat("a_c_buck_01"):
 		case joaat("a_c_moose_01"):
 		case joaat("a_c_deer_01"):
 		case joaat("a_c_pronghorn_01"):
-			return -151108755 /* GXTEntry: "Plain Venison" */;
+			return joaat("CONSUMABLE_MATURE_VENISON_COOKED");
 		case joaat("a_c_pig_01"):
 		case joaat("a_c_javelina_01"):
 		case joaat("a_c_boar_01"):
-			return 1663095412 /* GXTEntry: "Plain Pork" */;
+			return joaat("CONSUMABLE_TENDER_PORK_COOKED");
 		case joaat("a_c_duck_01"):
 		case joaat("a_c_rabbit_01"):
 		case joaat("a_c_pheasant_01"):
 		case joaat("a_c_quail_01"):
-			return -348823399 /* GXTEntry: "Plain Game" */;
+			return joaat("CONSUMABLE_GAME_MEAT_COOKED");
 		case joaat("a_c_fishsalmonsockeye_01_ms"):
 		case joaat("a_c_fishrainbowtrout_01_lg"):
 		case joaat("a_c_fishrainbowtrout_01_ms"):
 		case joaat("a_c_fishsalmonsockeye_01_lg"):
-			return -1240620284 /* GXTEntry: "Plain Succulent Fish" */;
+			return joaat("CONSUMABLE_SUCCULENT_FISH_COOKED");
 		case joaat("a_c_parrot_01"):
 		case joaat("a_c_pelican_01"):
 		case joaat("a_c_carolinaparakeet_01"):
-			return 532201260 /* GXTEntry: "Plain Exotic Bird" */;
+			return joaat("CONSUMABLE_EXOTIC_BIRD_COOKED");
 		case joaat("a_c_alligator_01"):
 		case joaat("a_c_alligator_02"):
 		case joaat("a_c_alligator_03"):
@@ -11475,9 +11475,9 @@ int func_316(int iParam0)
 		case joaat("a_c_cougar_01"):
 		case joaat("a_c_bearblack_01"):
 		case joaat("a_c_panther_01"):
-			return 1610737930 /* GXTEntry: "Plain Big Game" */;
+			return joaat("CONSUMABLE_BIG_GAME_MEAT_COOKED");
 		case joaat("a_c_crab_01"):
-			return -1277667710 /* GXTEntry: "Plain Crustacean" */;
+			return joaat("CONSUMABLE_CRUSTACEAN_MEAT_COOKED");
 	}
 	return 0;
 }
@@ -15888,7 +15888,7 @@ void func_474(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_25(func_795(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -30321,7 +30321,7 @@ void func_911(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1127(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_687(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1128(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_687(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1128(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 int func_912(int iParam0)

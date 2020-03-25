@@ -692,7 +692,7 @@ int func_15()
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_1009[iVar0]), 27, true);
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_1009[iVar0]), 5, true);
 				PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_1009[iVar0]), 58, true);
-				PED::_0x8ACC0506743A8A5C(&(iLocal_1009[iVar0]), 1519648269, 2, -1082130432);
+				PED::_0x8ACC0506743A8A5C(&(iLocal_1009[iVar0]), joaat("GenericHigh"), 2, -1082130432);
 				PED::_0x815C0074A1BC0D93(&(iLocal_1009[iVar0]), 2);
 				PED::SET_PED_SHOOT_RATE(&(iLocal_1009[iVar0]), 200);
 				PED::SET_PED_FIRING_PATTERN(&(iLocal_1009[iVar0]), joaat("firing_pattern_full_auto"));
@@ -14862,7 +14862,7 @@ int func_410(int iParam0)
 		case 1:
 			return -1797026825 /* GXTEntry: "The Murfree Brood" */;
 		case 0:
-			return 55818986 /* GXTEntry: "O\'Driscoll Boys" */;
+			return joaat("Gang_ODriscoll");
 		case 4:
 			return -2100600611 /* GXTEntry: "The Laramie Gang" */;
 		case 3:

@@ -124,13 +124,13 @@ void func_3(bool bParam0)
 						}
 						else
 						{
-							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1916894743, -1882247919);
+							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("settings_menu"), -1882247919);
 						}
 						Jump @459; //curOff = 269
 						func_17();
 						if (func_18(Local_9.f_43))
 						{
-							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1916894743, -1882247919);
+							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("settings_menu"), -1882247919);
 						}
 						else
 						{
@@ -146,24 +146,24 @@ void func_3(bool bParam0)
 							}
 							else
 							{
-								UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1916894743, 415950302);
+								UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("settings_menu"), 415950302);
 							}
 							else
 							{
 								Jump @453; //curOff = 364
 								if (func_20(iVar4))
 								{
-									UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1916894743, -1954024225);
+									UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("settings_menu"), -1954024225);
 								}
 								else if (func_21(iVar4) == 0)
 								{
 									if (!func_22(iVar4))
 									{
-										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1916894743, -1001071426);
+										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("settings_menu"), -1001071426);
 									}
 									else
 									{
-										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(1916894743, 526258797);
+										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("settings_menu"), 526258797);
 										func_23(iVar4);
 									}
 									UIEVENTS::_EVENT_MANAGER_POP_EVENT(76559005);

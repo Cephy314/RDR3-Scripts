@@ -14595,7 +14595,7 @@ void func_369(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_138(func_749(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -18704,9 +18704,9 @@ void func_529(int iParam0)
 
 void func_530()
 {
-	PERSCHAR::_0x8BC555034A5A5E8C(230221572, joaat("a_c_horse_gang_charles"));
-	PERSCHAR::_0x8BC555034A5A5E8C(948152617, joaat("a_c_horse_gang_sadie"));
-	PERSCHAR::_0x8BC555034A5A5E8C(404801781, joaat("a_c_horse_gang_uncle"));
+	PERSCHAR::_0x8BC555034A5A5E8C(joaat("PERSCHAR_COMP_HORSE_CHARLES"), joaat("a_c_horse_gang_charles"));
+	PERSCHAR::_0x8BC555034A5A5E8C(joaat("PERSCHAR_COMP_HORSE_SADIE"), joaat("a_c_horse_gang_sadie"));
+	PERSCHAR::_0x8BC555034A5A5E8C(joaat("PERSCHAR_COMP_HORSE_UNCLE"), joaat("a_c_horse_gang_uncle"));
 	(Global_40.f_4942[7 /*60*/])->f_7 = 0;
 	(Global_40.f_4942[11 /*60*/])->f_7 = 0;
 	(Global_40.f_4942[4 /*60*/])->f_7 = 0;
@@ -23051,20 +23051,20 @@ void func_675()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1167(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1167(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1167(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1167(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1167(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1167(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1167(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1167(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1167(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1167(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1167(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1167(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1167(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1167(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1167(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1167(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1167(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1167(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1167(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1167(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1167(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1167(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1167(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1167(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1167(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1167(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1167(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1167(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_1168())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -68625,107 +68625,107 @@ int func_1357(int iParam0, int iParam1)
 			case 13303:
 				return joaat("COMPONENT_BINOCULARS_SCOPE01");
 			case 13304:
-				return -467403948;
+				return joaat("COMPONENT_DYNAMITE_MOLOTOV_TORCH_MATCHSTICK");
 			case 13305:
-				return 942245533 /* GXTEntry: "Fishing Line" */;
+				return joaat("COMPONENT_FISHING_LINE");
 			case 13306:
-				return 112855978;
+				return joaat("COMPONENT_LEFTSHOULDER_STRAP01");
 			case 13307:
-				return 443679705 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_1");
 			case 13308:
-				return -1719565838 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_2");
 			case 13309:
-				return -1748861324 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_3");
 			case 13310:
-				return -1103410331 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_4");
 			case 13311:
-				return -98051139 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_1");
 			case 13312:
-				return 2026592518 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_2");
 			case 13313:
-				return 1585980544 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_3");
 			case 13314:
-				return 1298235955 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_4");
 			case 13315:
-				return -1024168617 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_5");
 			case 13316:
-				return 508830741 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_6");
 			case 13317:
-				return 336465801 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_7");
 			case 13318:
-				return 2105762458 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_8");
 			case 13319:
-				return 1875494695 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_9");
 			case 13320:
 				return 2011907927 /* GXTEntry: "None" */;
 			case 13321:
-				return 175610042 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_1");
 			case 13322:
-				return 471677957 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_2");
 			case 13323:
-				return -267000841 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_3");
 			case 13324:
-				return -1043593372 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_4");
 			case 13325:
-				return 1133578988 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_5");
 			case 13326:
-				return 1457729936 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_6");
 			case 13327:
-				return 681399557 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_7");
 			case 13328:
-				return 983988503 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_8");
 			case 13329:
-				return -1132266290 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_BARREL_MATERIAL_9");
 			case 13330:
-				return 488786388 /* GXTEntry: "Improved Rifling" */;
+				return joaat("COMPONENT_LONGARM_BARREL_RIFLING_1");
 			case 13331:
 				return 1152149058 /* GXTEntry: "Standard Rifling" */;
 			case 13332:
-				return 1232485146 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_1");
 			case 13333:
-				return 1463113368 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_2");
 			case 13334:
-				return 1768651524 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_3");
 			case 13335:
-				return -72867981 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_4");
 			case 13336:
-				return 280451724 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_1");
 			case 13337:
-				return -16763106 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_2");
 			case 13338:
-				return -328560141 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_3");
 			case 13339:
-				return 1251692115 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_4");
 			case 13340:
-				return 969714870 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_5");
 			case 13341:
-				return 661915653 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_6");
 			case 13342:
-				return -1772952127 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_7");
 			case 13343:
-				return -2077671058 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_8");
 			case 13344:
-				return -1633094031 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_9");
 			case 13345:
 				return -199044434 /* GXTEntry: "None" */;
 			case 13346:
-				return 716152381 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_1");
 			case 13347:
-				return -1948295013 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_2");
 			case 13348:
-				return 2116797748 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_3");
 			case 13349:
-				return 1908517984 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_4");
 			case 13350:
-				return -739610444 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_5");
 			case 13351:
-				return -986393783 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_6");
 			case 13352:
-				return -1217972306 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_7");
 			case 13353:
-				return -1425465614 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_8");
 			case 13354:
-				return 221635402 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_CYLINDER_MATERIAL_9");
 			case 13355:
 				return 926614691 /* GXTEntry: "Baroque" */;
 			case 13356:
@@ -68753,301 +68753,301 @@ int func_1357(int iParam0, int iParam1)
 			case 13367:
 				return -303311470 /* GXTEntry: "Copper" */;
 			case 13368:
-				return -501379718 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_1");
 			case 13369:
-				return 1338763465 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_2");
 			case 13370:
-				return 1042400629 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_3");
 			case 13371:
-				return 744497650 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_4");
 			case 13372:
-				return -1814368974 /* GXTEntry: "Bounty Hunter Variant" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_BOLTACTION_BOUNTY");
 			case 13373:
-				return -1422269997 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_1");
 			case 13374:
-				return -451553910 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_2");
 			case 13375:
-				return -1822969329 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_3");
 			case 13376:
-				return -778293609 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_4");
 			case 13377:
-				return -1075475670 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_5");
 			case 13378:
-				return 717185184 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_6");
 			case 13379:
-				return 477479949 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_7");
 			case 13380:
-				return 440123289 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_8");
 			case 13381:
-				return -68517129 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_9");
 			case 13382:
 				return 810656746 /* GXTEntry: "None" */;
 			case 13383:
-				return -840678979 /* GXTEntry: "Collector Variant" */;
+				return joaat("COMPONENT_LONGARM_FRAME_ENGRAVING_WINCHESTER_COLLECTOR");
 			case 13384:
-				return -2031983973 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_1");
 			case 13385:
-				return 486837985 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_2");
 			case 13386:
-				return 715270684 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_3");
 			case 13387:
-				return -1070377672 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_4");
 			case 13388:
-				return -789973339 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_5");
 			case 13389:
-				return 1675631767 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_6");
 			case 13390:
-				return 1906948138 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_7");
 			case 13391:
-				return 955336382 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_8");
 			case 13392:
-				return 1193534243 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_FRAME_MATERIAL_9");
 			case 13393:
 				return 726009467 /* GXTEntry: "None" */;
 			case 13394:
-				return -725174224 /* GXTEntry: "Buck Scene" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_1");
 			case 13395:
-				return -617954056 /* GXTEntry: "Wolf Scene" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_2");
 			case 13396:
-				return -331258075 /* GXTEntry: "Eagle Scene" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_3");
 			case 13397:
-				return -90831918 /* GXTEntry: "Ram" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_4");
 			case 13398:
-				return 2110982730 /* GXTEntry: "Flying Eagle" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_5");
 			case 13399:
-				return -1540008178 /* GXTEntry: "Bear" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_6");
 			case 13400:
 				return 1852586958 /* GXTEntry: "None" */;
 			case 13401:
-				return 1835641615 /* GXTEntry: "Birch" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_1");
 			case 13402:
-				return 1538951089 /* GXTEntry: "Black Walnut" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_2");
 			case 13403:
-				return 1207296036 /* GXTEntry: "Bocote" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_3");
 			case 13404:
-				return 907787376 /* GXTEntry: "Dark Rosewood" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_4");
 			case 13405:
-				return -1300318920 /* GXTEntry: "Bubinga" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_5");
 			case 13406:
-				return -1597632057 /* GXTEntry: "Cocobolo" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_6");
 			case 13407:
-				return -1862569422 /* GXTEntry: "Ebony" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_7");
 			case 13408:
-				return 2131971682 /* GXTEntry: "Walnut" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_A_8");
 			case 13409:
-				return -2072914516 /* GXTEntry: "Mahogany" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_1");
 			case 13410:
-				return 1621790238 /* GXTEntry: "Maple" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_2");
 			case 13411:
-				return 1862675157 /* GXTEntry: "Mesquite" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_3");
 			case 13412:
-				return -277828692 /* GXTEntry: "Myrtle" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_4");
 			case 13413:
-				return -1128839622 /* GXTEntry: "Rosewood" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_5");
 			case 13414:
-				return -910303161 /* GXTEntry: "Wild Cherry" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_6");
 			case 13415:
-				return -1476813633 /* GXTEntry: "Bright Maple" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_7");
 			case 13416:
-				return 180970089 /* GXTEntry: "Dark Walnut" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_B_8");
 			case 13417:
-				return 389992984 /* GXTEntry: "Gray Birch" */;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_GRAY_BIRCH");
 			case 13418:
-				return 646796223;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_GUTTAPERCHA");
 			case 13419:
-				return -386817091;
+				return joaat("COMPONENT_LONGARM_GRIPSTOCK_TINT_PEARL");
 			case 13420:
-				return -578256105 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_1");
 			case 13421:
-				return -271964262 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_2");
 			case 13422:
-				return -1194015 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_3");
 			case 13423:
-				return 288090717 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_4");
 			case 13424:
-				return -1532817079 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_5");
 			case 13425:
-				return -1226263084 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_6");
 			case 13426:
-				return -897983242 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_7");
 			case 13427:
-				return 1569194772 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_8");
 			case 13428:
-				return 1876666299 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_HAMMER_MATERIAL_9");
 			case 13429:
-				return -1468648029 /* GXTEntry: "Krampus Variant" */;
+				return joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_DOUBLEBARREL_KRAMPUS");
 			case 13430:
-				return -2141733109 /* GXTEntry: "Moonshiner Variant" */;
+				return joaat("COMPONENT_LONGARM_ROLE_ENGRAVING_SAWEDOFF_MOONSHINER");
 			case 13431:
-				return -1332551708 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_1");
 			case 13432:
-				return -1712803184 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_2");
 			case 13433:
-				return -1992289985 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_3");
 			case 13434:
-				return -181540583 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_4");
 			case 13435:
-				return -411415118 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_5");
 			case 13436:
-				return -794550266 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_6");
 			case 13437:
-				return -1021999895 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_7");
 			case 13438:
-				return 1147799440 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_8");
 			case 13439:
-				return 1042152184 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_SIGHT_MATERIAL_9");
 			case 13440:
-				return 339864361 /* GXTEntry: "Hazelnut" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_1");
 			case 13441:
-				return -1809028352 /* GXTEntry: "Chestnut" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_2");
 			case 13442:
-				return -2036740133 /* GXTEntry: "Olive" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_3");
 			case 13443:
-				return -1345052081 /* GXTEntry: "Walnut" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_4");
 			case 13444:
-				return -1574664464 /* GXTEntry: "Brick Red" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_5");
 			case 13445:
-				return 691082523 /* GXTEntry: "Tobacco" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_6");
 			case 13446:
-				return 1170689607 /* GXTEntry: "Chocolate" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_7");
 			case 13447:
-				return 1875747395 /* GXTEntry: "Pebble" */;
+				return joaat("COMPONENT_LONGARM_STRAP_TINT_A_8");
 			case 13448:
-				return -543707309 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_1");
 			case 13449:
-				return -860092004 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_2");
 			case 13450:
-				return -1172577192 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_3");
 			case 13451:
-				return -1491485100 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_4");
 			case 13452:
-				return -1789125927 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_5");
 			case 13453:
-				return -2088831201 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_6");
 			case 13454:
-				return 1907905426 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_7");
 			case 13455:
-				return 1728003616 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_8");
 			case 13456:
-				return 1430624941 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_LONGARM_TRIGGER_MATERIAL_9");
 			case 13457:
-				return -1547828348;
+				return joaat("COMPONENT_LONGARM_WRAP_MATERIAL_CLOTH");
 			case 13458:
-				return -125604404;
+				return joaat("COMPONENT_LONGARM_WRAP_MATERIAL_LEATHER");
 			case 13459:
-				return -694938602 /* GXTEntry: "Hazelnut" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_1");
 			case 13460:
-				return 1834893776 /* GXTEntry: "Chestnut" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_2");
 			case 13461:
-				return 1595450693 /* GXTEntry: "Olive" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_3");
 			case 13462:
-				return 253101337 /* GXTEntry: "Walnut" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_4");
 			case 13463:
-				return -1952154020 /* GXTEntry: "Brick Red" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_5");
 			case 13464:
-				return -1311421763 /* GXTEntry: "Tobacco" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_6");
 			case 13465:
-				return -1550668232 /* GXTEntry: "Chocolate" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_7");
 			case 13466:
-				return 1313932214 /* GXTEntry: "Pebble" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_A_8");
 			case 13467:
-				return -586336057 /* GXTEntry: "Cream" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_1");
 			case 13468:
-				return -796483654 /* GXTEntry: "Ash" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_2");
 			case 13469:
-				return -240590338 /* GXTEntry: "Tobacco" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_3");
 			case 13470:
-				return -488946589 /* GXTEntry: "Cherry" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_4");
 			case 13471:
-				return -226761816 /* GXTEntry: "Crimson" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_5");
 			case 13472:
-				return -466467051 /* GXTEntry: "Ginger" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_6");
 			case 13473:
-				return 372878115 /* GXTEntry: "Sage" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_7");
 			case 13474:
-				return 143069118 /* GXTEntry: "Cobalt" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_B_8");
 			case 13475:
-				return -1954915781 /* GXTEntry: "Black" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_BLACK");
 			case 13476:
-				return -1453572442 /* GXTEntry: "White" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_1");
 			case 13477:
-				return -51976774 /* GXTEntry: "Cyan" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_2");
 			case 13478:
-				return -835155874 /* GXTEntry: "Saffron" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_3");
 			case 13479:
-				return -530961247 /* GXTEntry: "Amethyst" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_4");
 			case 13480:
-				return 868471671 /* GXTEntry: "Magenta" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_5");
 			case 13481:
-				return 1174304748 /* GXTEntry: "Scarlet" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_6");
 			case 13482:
-				return 860279425 /* GXTEntry: "Amber" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_7");
 			case 13483:
-				return 1160083006 /* GXTEntry: "Emerald" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_8");
 			case 13484:
-				return 399711130 /* GXTEntry: "Indigo" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_C_9");
 			case 13485:
-				return 2039637799 /* GXTEntry: "Russet" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_1");
 			case 13486:
-				return -1381314725 /* GXTEntry: "Coffee" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_2");
 			case 13487:
-				return 1540139932 /* GXTEntry: "Umber" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_3");
 			case 13488:
-				return -1842440093 /* GXTEntry: "Charcoal" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_4");
 			case 13489:
-				return -1061325440 /* GXTEntry: "Walnut" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_5");
 			case 13490:
-				return -1806099276 /* GXTEntry: "Natural" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_6");
 			case 13491:
-				return -1039599597 /* GXTEntry: "Chestnut" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_7");
 			case 13492:
-				return -137600103 /* GXTEntry: "Hickory" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_D_8");
 			case 13493:
-				return 1170373926 /* GXTEntry: "White" */;
+				return joaat("COMPONENT_LONGARM_WRAP_TINT_WHITE");
 			case 13494:
-				return -118327353 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_1");
 			case 13495:
-				return -941124174 /* GXTEntry: "Skulls" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_2");
 			case 13496:
-				return -715706223 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_3");
 			case 13497:
-				return 113006350 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_1");
 			case 13498:
-				return -1413603057 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_2");
 			case 13499:
-				return -1576530525 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_3");
 			case 13500:
-				return -913449806 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_4");
 			case 13501:
-				return -1210042025 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_5");
 			case 13502:
-				return 1712231861 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_6");
 			case 13503:
-				return -742592240 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_7");
 			case 13504:
-				return -2103816500 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_8");
 			case 13505:
-				return 1885383257 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_9");
 			case 13506:
 				return 2098478769 /* GXTEntry: "None" */;
 			case 13507:
-				return -2081104194 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_1");
 			case 13508:
-				return -2058821274 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_2");
 			case 13509:
-				return 1362458940 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_3");
 			case 13510:
-				return -491643845 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_4");
 			case 13511:
-				return 754626759 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_5");
 			case 13512:
-				return 1076483877 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_6");
 			case 13513:
-				return 139061098 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_7");
 			case 13514:
-				return -1696461668 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_8");
 			case 13515:
-				return -459497456 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_MELEE_BLADE_MATERIAL_9");
 			case 13516:
 				return -280746747 /* GXTEntry: "Baroque" */;
 			case 13517:
@@ -69075,473 +69075,473 @@ int func_1357(int iParam0, int iParam1)
 			case 13528:
 				return 841778380 /* GXTEntry: "None" */;
 			case 13529:
-				return 580024792 /* GXTEntry: "Birch" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_1");
 			case 13530:
-				return -1412166567 /* GXTEntry: "Black Walnut" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_2");
 			case 13531:
-				return -1241374539 /* GXTEntry: "Bocote" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_3");
 			case 13532:
-				return 2135241532 /* GXTEntry: "Dark Rosewood" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_4");
 			case 13533:
-				return -781428855 /* GXTEntry: "Bubinga" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_5");
 			case 13534:
-				return -1617660966 /* GXTEntry: "Cocobolo" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_6");
 			case 13535:
-				return 1902024559 /* GXTEntry: "Ebony" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_7");
 			case 13536:
-				return 1119435313 /* GXTEntry: "Walnut" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_A_8");
 			case 13537:
-				return 1808791845 /* GXTEntry: "Mahogany" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_1");
 			case 13538:
-				return 2115870144 /* GXTEntry: "Maple" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_2");
 			case 13539:
-				return -1058004100 /* GXTEntry: "Mesquite" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_3");
 			case 13540:
-				return -811155223 /* GXTEntry: "Myrtle" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_4");
 			case 13541:
-				return -1528337581 /* GXTEntry: "Rosewood" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_5");
 			case 13542:
-				return -1237512682 /* GXTEntry: "Wild Cherry" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_6");
 			case 13543:
-				return 657584130 /* GXTEntry: "Bright Maple" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_7");
 			case 13544:
-				return 973378983 /* GXTEntry: "Dark Walnut" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_B_8");
 			case 13545:
-				return 371049455 /* GXTEntry: "Gray Birch" */;
+				return joaat("COMPONENT_MELEE_GRIP_TINT_GRAY_BIRCH");
 			case 13546:
-				return 829903539 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_MELEE_KNIFE02_GRIP");
 			case 13547:
-				return -131291125;
+				return joaat("COMPONENT_MELEE_KNIFE13_GRIP");
 			case 13548:
-				return 1663083010 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_PISTOL_M1899_BARREL_LONG");
 			case 13549:
-				return -1506093569 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_PISTOL_M1899_BARREL_SHORT");
 			case 13550:
-				return 305716642 /* GXTEntry: "Basic Clip" */;
+				return joaat("COMPONENT_PISTOL_M1899_CLIP");
 			case 13551:
-				return -312520751 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_PISTOL_M1899_GRIP");
 			case 13552:
-				return -1476624562 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_PISTOL_M1899_GRIP_EBONY");
 			case 13553:
-				return 484200990 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_PISTOL_M1899_GRIP_IRONWOOD");
 			case 13554:
-				return -1696458698 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_PISTOL_M1899_GRIP_PEARL");
 			case 13555:
-				return 85701152 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_PISTOL_M1899_SIGHT_NARROW");
 			case 13556:
-				return 1846607767 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_PISTOL_M1899_SIGHT_WIDE");
 			case 13557:
-				return 602857821 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_BARREL_LONG");
 			case 13558:
-				return -1362226668 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_BARREL_SHORT");
 			case 13559:
-				return -1234637791 /* GXTEntry: "Basic Clip" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_CLIP");
 			case 13560:
-				return -1276097361;
+				return joaat("COMPONENT_PISTOL_MAUSER_CLIP_EMPTY");
 			case 13561:
-				return -718224651 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_GRIP");
 			case 13562:
-				return 332352979 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_GRIP_EBONY");
 			case 13563:
-				return 702783910 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_GRIP_IRONWOOD");
 			case 13564:
-				return -1860555870 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_GRIP_PEARL");
 			case 13565:
-				return 923577170 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_SIGHT_NARROW");
 			case 13566:
-				return 444690491 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_PISTOL_MAUSER_SIGHT_WIDE");
 			case 13567:
-				return 471561141 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_BARREL_LONG");
 			case 13568:
-				return -1926042726 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_BARREL_SHORT");
 			case 13569:
-				return 1158493350 /* GXTEntry: "Basic Clip" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_CLIP");
 			case 13570:
-				return -1361506282 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_GRIP");
 			case 13571:
-				return -478219023 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_GRIP_EBONY");
 			case 13572:
-				return 1129152595 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_GRIP_IRONWOOD");
 			case 13573:
-				return -67987027 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_GRIP_PEARL");
 			case 13574:
-				return -1625261053 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_SIGHT_NARROW");
 			case 13575:
-				return 1234620219 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_PISTOL_SEMIAUTO_SIGHT_WIDE");
 			case 13576:
-				return -108436614;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_BARREL_COLLECTOR");
 			case 13577:
-				return 101620928 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_BARREL_LONG");
 			case 13578:
-				return 761409807 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_BARREL_SHORT");
 			case 13579:
-				return 1349850451 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_GRIP");
 			case 13580:
-				return -49512990;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_GRIP_COLLECTOR");
 			case 13581:
-				return -153641544 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_GRIP_EBONY");
 			case 13582:
-				return 1857585472 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_GRIP_IRONWOOD");
 			case 13583:
-				return 1693826660 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_GRIP_PEARL");
 			case 13584:
-				return -858357099;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_SIGHT_COLLECTOR");
 			case 13585:
-				return -1364839165 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_SIGHT_NARROW");
 			case 13586:
-				return -1620844433 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_PISTOL_VOLCANIC_SIGHT_WIDE");
 			case 13587:
-				return -2078473090 /* GXTEntry: "Basic Clip" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_CLIP");
 			case 13588:
-				return -1907430552 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_GRIP");
 			case 13589:
-				return -1774830908 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_GRIP_ENGRAVED");
 			case 13590:
-				return -1277277764 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_GRIP_IRONWOOD");
 			case 13591:
-				return 1258698427 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_SIGHT_NARROW");
 			case 13592:
-				return -1098615404 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_SIGHT_WIDE");
 			case 13593:
-				return -267035269;
+				return joaat("COMPONENT_REPEATER_CARBINE_TUBE");
 			case 13594:
-				return -819094336 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_WRAP1");
 			case 13595:
-				return -2006479051 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_REPEATER_CARBINE_WRAP2");
 			case 13596:
-				return 1116666443 /* GXTEntry: "Strap" */;
+				return joaat("COMPONENT_REPEATER_CLOTH_STRAP01");
 			case 13597:
-				return -1725020232 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_REPEATER_EVANS_GRIP");
 			case 13598:
-				return 590829769 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_REPEATER_EVANS_GRIP_ENGRAVED");
 			case 13599:
-				return 2104230701 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_REPEATER_EVANS_GRIP_IRONWOOD");
 			case 13600:
-				return 2084694184 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REPEATER_EVANS_SIGHT_NARROW");
 			case 13601:
-				return 431616357 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REPEATER_EVANS_SIGHT_WIDE");
 			case 13602:
-				return -1013433120 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_REPEATER_EVANS_WRAP");
 			case 13603:
-				return 1213912331 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_REPEATER_EVANS_WRAP2");
 			case 13604:
-				return 1885705815 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_REPEATER_HENRY_GRIP");
 			case 13605:
-				return 286341385 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_REPEATER_HENRY_GRIP_ENGRAVED");
 			case 13606:
-				return -473026721 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_REPEATER_HENRY_GRIP_IRONWOOD");
 			case 13607:
-				return 1052491799 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REPEATER_HENRY_SIGHT_NARROW");
 			case 13608:
-				return -1165022028 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REPEATER_HENRY_SIGHT_WIDE");
 			case 13609:
-				return 327383714 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_REPEATER_HENRY_WRAP1");
 			case 13610:
-				return 557684246 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_REPEATER_HENRY_WRAP2");
 			case 13611:
-				return -742525284 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REPEATER_PUMPACTION_SIGHT_NARROW");
 			case 13612:
-				return 1862340615 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REPEATER_PUMPACTION_SIGHT_WIDE");
 			case 13613:
-				return 382783643 /* GXTEntry: "Strap" */;
+				return joaat("COMPONENT_REPEATER_STRAP01");
 			case 13614:
-				return -1073505101 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_GRIP");
 			case 13615:
-				return -385288709;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_GRIP_COLLECTOR");
 			case 13616:
-				return 108554778 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_GRIP_ENGRAVED");
 			case 13617:
-				return -1265054553 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_GRIP_IRONWOOD");
 			case 13618:
-				return -110216219 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_SIGHT_NARROW");
 			case 13619:
-				return 1894027710 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_SIGHT_WIDE");
 			case 13620:
-				return 1799288707;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_WRAP_COLLECTOR");
 			case 13621:
-				return 1673079985 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_WRAP1");
 			case 13622:
-				return -974982909 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_REPEATER_WINCHESTER_WRAP2");
 			case 13623:
-				return -600565073 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_BARREL_LONG");
 			case 13624:
-				return 1657142792 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_BARREL_SHORT");
 			case 13625:
-				return 2144486002 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_GRIP");
 			case 13626:
-				return 1645085645 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_GRIP_EBONY");
 			case 13627:
-				return -1634668636 /* GXTEntry: "Hero Pearl Grip" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_GRIP_GOOD_HONOR");
 			case 13628:
-				return 1502655719 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_GRIP_IRONWOOD");
 			case 13629:
-				return 42338655 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_GRIP_PEARL");
 			case 13630:
-				return 173773832 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_SIGHT_NARROW");
 			case 13631:
-				return 453873243 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REVOLVER_CATTLEMAN_SIGHT_WIDE");
 			case 13632:
-				return -202131179 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG");
 			case 13633:
-				return 426065833 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_SHORT");
 			case 13634:
-				return 315410471 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP");
 			case 13635:
-				return 239026921 /* GXTEntry: "Gunslinger Ebony Grip" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_BAD_HONOR");
 			case 13636:
-				return 213673305 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_EBONY");
 			case 13637:
-				return 1491810126 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_IRONWOOD");
 			case 13638:
-				return -2055673461 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL");
 			case 13639:
-				return -1092538649 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_SIGHT_NARROW");
 			case 13640:
-				return 129601018 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_SIGHT_WIDE");
 			case 13641:
-				return 24476175;
+				return joaat("COMPONENT_REVOLVER_LEMAT_AMMO_REVOLVER");
 			case 13642:
-				return 474096657;
+				return joaat("COMPONENT_REVOLVER_LEMAT_AMMO_SHOTGUN");
 			case 13643:
-				return -621546174 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_BARREL_LONG");
 			case 13644:
-				return 1656680898 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_BARREL_SHORT");
 			case 13645:
-				return -4173940 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_GRIP");
 			case 13646:
-				return -783684318 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_GRIP_EBONY");
 			case 13647:
-				return 1954995285 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_GRIP_IRONWOOD");
 			case 13648:
-				return 392234002 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_GRIP_PEARL");
 			case 13649:
-				return -235237690 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_SIGHT_NARROW");
 			case 13650:
-				return 490457035 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REVOLVER_LEMAT_SIGHT_WIDE");
 			case 13651:
-				return 2009942204;
+				return joaat("COMPONENT_REVOLVER_NAVY_AMMO_REVOLVER");
 			case 13652:
-				return -487256647;
+				return joaat("COMPONENT_REVOLVER_NAVY_BARREL_CROSSOVER");
 			case 13653:
-				return -1684500628 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_BARREL_LONG");
 			case 13654:
-				return -95541890 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_BARREL_SHORT");
 			case 13655:
-				return 962241027 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_GRIP");
 			case 13656:
-				return 2014172276;
+				return joaat("COMPONENT_REVOLVER_NAVY_GRIP_CROSSOVER");
 			case 13657:
-				return -1651316916 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_GRIP_EBONY");
 			case 13658:
-				return 1559968953 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_GRIP_IRONWOOD");
 			case 13659:
-				return 1019786905 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_GRIP_PEARL");
 			case 13660:
-				return -571318630;
+				return joaat("COMPONENT_REVOLVER_NAVY_SIGHT_CROSSOVER");
 			case 13661:
-				return -1994266763 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_SIGHT_NARROW");
 			case 13662:
-				return -2001035717 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REVOLVER_NAVY_SIGHT_WIDE");
 			case 13663:
-				return -880097252;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_BARREL_BOUNTY");
 			case 13664:
-				return -467044313 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_BARREL_LONG");
 			case 13665:
-				return 2039796623 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_BARREL_SHORT");
 			case 13666:
-				return 1036385716 /* GXTEntry: "Basic Grip" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP");
 			case 13667:
-				return 57366885;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP_BOUNTY");
 			case 13668:
-				return -716143865 /* GXTEntry: "Ebony Grip" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP_EBONY");
 			case 13669:
-				return 1300801256 /* GXTEntry: "Ironwood Grip" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP_IRONWOOD");
 			case 13670:
-				return -1368261825 /* GXTEntry: "Pearl Grip" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_GRIP_PEARL");
 			case 13671:
-				return -1391305890;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_SIGHT_BOUNTY");
 			case 13672:
-				return -406421242 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_SIGHT_NARROW");
 			case 13673:
-				return 449305157 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_REVOLVER_SCHOFIELD_SIGHT_WIDE");
 			case 13674:
-				return 1314436576 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_GRIP");
 			case 13675:
-				return 1043980328;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_GRIP_BOUNTY");
 			case 13676:
-				return -6205275 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_GRIP_ENGRAVED");
 			case 13677:
-				return -1776314974 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_GRIP_IRONWOOD");
 			case 13678:
-				return -285783134 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_SIGHT_NARROW");
 			case 13679:
-				return 1311478812 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_SIGHT_WIDE");
 			case 13680:
-				return 1419411400 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_WRAP");
 			case 13681:
-				return 1905286511 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_RIFLE_BOLTACTION_WRAP2");
 			case 13682:
-				return -2102806603 /* GXTEntry: "Basic Clip" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_CLIP");
 			case 13683:
-				return 345537422;
+				return joaat("COMPONENT_RIFLE_CARCANO_CLIP_EMPTY");
 			case 13684:
-				return 1460520000 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_GRIP");
 			case 13685:
-				return 445539346 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_GRIP_ENGRAVED");
 			case 13686:
-				return 2099965087 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_GRIP_IRONWOOD");
 			case 13687:
-				return -1301050378 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_SIGHT_NARROW");
 			case 13688:
-				return -298805818 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_SIGHT_WIDE");
 			case 13689:
-				return -1649438395 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_WRAP1");
 			case 13690:
-				return 1958362959 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_RIFLE_CARCANO_WRAP2");
 			case 13691:
-				return 712231239 /* GXTEntry: "Strap" */;
+				return joaat("COMPONENT_RIFLE_CS_STRAP01");
 			case 13692:
-				return 664246020 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_RIFLE_ROLLINGBLOCK_SIGHT_NARROW");
 			case 13693:
-				return -555346213 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_RIFLE_ROLLINGBLOCK_SIGHT_WIDE");
 			case 13694:
-				return 1373106357 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_RIFLE_ROLLINGBLOCK_WRAP1");
 			case 13695:
-				return 627382224 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_RIFLE_ROLLINGBLOCK_WRAP2");
 			case 13696:
-				return -404520310 /* GXTEntry: "Short Scope" */;
+				return joaat("COMPONENT_RIFLE_SCOPE02");
 			case 13697:
-				return -1844750633 /* GXTEntry: "Medium Scope" */;
+				return joaat("COMPONENT_RIFLE_SCOPE03");
 			case 13698:
-				return -1545766277 /* GXTEntry: "Long Scope" */;
+				return joaat("COMPONENT_RIFLE_SCOPE04");
 			case 13699:
-				return 1702268295 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_GRIP");
 			case 13700:
-				return -407737365 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_GRIP_ENGRAVED");
 			case 13701:
-				return 1161381174 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_GRIP_IRONWOOD");
 			case 13702:
-				return 893095238 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_SIGHT_NARROW");
 			case 13703:
-				return -1747228523 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_SIGHT_WIDE");
 			case 13704:
-				return -960882062 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_WRAP1");
 			case 13705:
-				return -722454818 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_RIFLE_SPRINGFIELD_WRAP2");
 			case 13706:
-				return -1296971123;
+				return joaat("COMPONENT_RIFLE_VARMINT_CLIP");
 			case 13707:
-				return -1962449658;
+				return joaat("COMPONENT_RIFLE_VARMINT_CLIP_ENGRAVED");
 			case 13708:
-				return -1473144140;
+				return joaat("COMPONENT_RIFLE_VARMINT_CLIP_IRONWOOD");
 			case 13709:
-				return -51470750 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_RIFLE_VARMINT_GRIP");
 			case 13710:
-				return 933139260 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_RIFLE_VARMINT_GRIP_ENGRAVED");
 			case 13711:
-				return 36111154 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_RIFLE_VARMINT_GRIP_IRONWOOD");
 			case 13712:
-				return 1485926521 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_RIFLE_VARMINT_WRAP1");
 			case 13713:
-				return 1800607228 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_RIFLE_VARMINT_WRAP2");
 			case 13714:
 				return -1220336138 /* GXTEntry: "No Scope" */;
 			case 13715:
-				return -1114256243 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1");
 			case 13716:
-				return -1368707528 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_2");
 			case 13717:
-				return -1709570666 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_3");
 			case 13718:
-				return 1029393446 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_4");
 			case 13719:
-				return -857285521 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_1");
 			case 13720:
-				return 1089127557 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_2");
 			case 13721:
-				return 1382016879 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_3");
 			case 13722:
-				return 546636762 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_4");
 			case 13723:
-				return 901918260 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_5");
 			case 13724:
-				return -2025729742 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_6");
 			case 13725:
-				return -1653277288 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7");
 			case 13726:
-				return 1797200109 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_8");
 			case 13727:
-				return 1917396801 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_9");
 			case 13728:
 				return -181137597 /* GXTEntry: "None" */;
 			case 13729:
-				return -1148732422 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_1");
 			case 13730:
-				return 165402785 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_2");
 			case 13731:
-				return 405927245 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_3");
 			case 13732:
-				return -427290118 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_4");
 			case 13733:
-				return -1677230850 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_5");
 			case 13734:
-				return 1776195757 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_6");
 			case 13735:
-				return 2013836545 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7");
 			case 13736:
-				return -960769434 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_8");
 			case 13737:
-				return 1420029480 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_9");
 			case 13738:
-				return -1614979531 /* GXTEntry: "Improved Rifling" */;
+				return joaat("COMPONENT_SHORTARM_BARREL_RIFLING_1");
 			case 13739:
 				return 499413145 /* GXTEntry: "Standard Rifling" */;
 			case 13740:
-				return 1869398132 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1");
 			case 13741:
-				return 1730326496 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_2");
 			case 13742:
-				return -1392133211 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_3");
 			case 13743:
-				return -2119277321 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_4");
 			case 13744:
-				return -1839171917 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_1");
 			case 13745:
-				return -1605823856 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_2");
 			case 13746:
-				return 1913468429 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_3");
 			case 13747:
-				return -2143038854 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_4");
 			case 13748:
-				return 1451851526 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_5");
 			case 13749:
-				return 1689066317 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_6");
 			case 13750:
-				return 459868358 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7");
 			case 13751:
-				return 690627656 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_8");
 			case 13752:
-				return -1093169 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_9");
 			case 13753:
 				return -1511218351 /* GXTEntry: "None" */;
 			case 13754:
-				return -1162940149 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_1");
 			case 13755:
-				return -1393273450 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_2");
 			case 13756:
-				return 240654424 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_3");
 			case 13757:
-				return 1082850493 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_4");
 			case 13758:
-				return 717082915 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_5");
 			case 13759:
-				return -588860042 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_6");
 			case 13760:
-				return 1497476650 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7");
 			case 13761:
-				return 1131381382 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_8");
 			case 13762:
-				return 1974822673 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_9");
 			case 13763:
 				return -87939125 /* GXTEntry: "Baroque" */;
 			case 13764:
@@ -69569,219 +69569,219 @@ int func_1357(int iParam0, int iParam1)
 			case 13775:
 				return -2028284453 /* GXTEntry: "Copper" */;
 			case 13776:
-				return -1371140647 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1");
 			case 13777:
-				return 709494243 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_2");
 			case 13778:
-				return 596834421 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_3");
 			case 13779:
-				return 362765454 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_4");
 			case 13780:
-				return 484521079 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_1");
 			case 13781:
-				return -2005660773 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_2");
 			case 13782:
-				return -1171394802 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_3");
 			case 13783:
-				return -1547124156 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_4");
 			case 13784:
-				return 1402380769 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_5");
 			case 13785:
-				return -1725944581 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_6");
 			case 13786:
-				return -2074737817 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7");
 			case 13787:
-				return -1240406308 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_8");
 			case 13788:
-				return -1345594798 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_9");
 			case 13789:
 				return -1642404207 /* GXTEntry: "None" */;
 			case 13790:
-				return 882648233 /* GXTEntry: "Bounty Hunter Variant" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_SCHOFIELD_BOUNTY");
 			case 13791:
-				return -454335124 /* GXTEntry: "Collector Variant" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_VOLCANIC_COLLECTOR");
 			case 13792:
-				return 765412429 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_1");
 			case 13793:
-				return 461873182 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_2");
 			case 13794:
-				return 1408995585 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_3");
 			case 13795:
-				return -1309913887 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_4");
 			case 13796:
-				return 2022201882 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_5");
 			case 13797:
-				return 1712534832 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_6");
 			case 13798:
-				return -19142973 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7");
 			case 13799:
-				return -323992980 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_8");
 			case 13800:
-				return -1552961560 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_9");
 			case 13801:
 				return 902806957 /* GXTEntry: "None" */;
 			case 13802:
-				return 1559083578;
+				return joaat("COMPONENT_SHORTARM_GRIP_MATERIAL_PEARL");
 			case 13803:
-				return 1501734346 /* GXTEntry: "Rattlesnake" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_1");
 			case 13804:
-				return 719145088 /* GXTEntry: "Scorpion" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_2");
 			case 13805:
-				return 1017375757 /* GXTEntry: "Puma" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_3");
 			case 13806:
-				return 547075069 /* GXTEntry: "Deer" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_4");
 			case 13807:
-				return -261958776 /* GXTEntry: "Eagle" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_5");
 			case 13808:
-				return 34109139 /* GXTEntry: "Buck" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_6");
 			case 13809:
 				return -33826832 /* GXTEntry: "None" */;
 			case 13810:
-				return 1465547693 /* GXTEntry: "Birch" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_1");
 			case 13811:
-				return 1226104610 /* GXTEntry: "Black Walnut" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_2");
 			case 13812:
-				return 1322019453 /* GXTEntry: "Bocote" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_3");
 			case 13813:
-				return 1017628212 /* GXTEntry: "Dark Rosewood" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_4");
 			case 13814:
-				return 1866214240 /* GXTEntry: "Bubinga" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_5");
 			case 13815:
-				return 1629196063 /* GXTEntry: "Cocobolo" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_6");
 			case 13816:
-				return -2083859331 /* GXTEntry: "Ebony" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_7");
 			case 13817:
-				return -1234421313 /* GXTEntry: "Walnut" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_8");
 			case 13818:
-				return -1600309953 /* GXTEntry: "Mahogany" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_1");
 			case 13819:
-				return -1890610524 /* GXTEntry: "Maple" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_2");
 			case 13820:
-				return 736218054 /* GXTEntry: "Mesquite" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_3");
 			case 13821:
-				return -642898080 /* GXTEntry: "Myrtle" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_4");
 			case 13822:
-				return 74415330 /* GXTEntry: "Rosewood" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_5");
 			case 13823:
-				return -228140847 /* GXTEntry: "Wild Cherry" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_6");
 			case 13824:
-				return 1925273992 /* GXTEntry: "Bright Maple" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_7");
 			case 13825:
-				return 540914814 /* GXTEntry: "Dark Walnut" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_B_8");
 			case 13826:
-				return -1196615113 /* GXTEntry: "Gray Birch" */;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_GRAY_BIRCH");
 			case 13827:
-				return 2119999057;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_GUTTAPERCHA");
 			case 13828:
-				return -211478373;
+				return joaat("COMPONENT_SHORTARM_GRIPSTOCK_TINT_PEARL");
 			case 13829:
-				return 2123648621 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_1");
 			case 13830:
-				return -679804867 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_2");
 			case 13831:
-				return -306828109 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_3");
 			case 13832:
-				return -1007265484 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_4");
 			case 13833:
-				return -736462468 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_5");
 			case 13834:
-				return 836580604 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_6");
 			case 13835:
-				return 1063571467 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7");
 			case 13836:
-				return -14332015 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_8");
 			case 13837:
-				return 216132362 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_9");
 			case 13838:
-				return -567250635 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_1");
 			case 13839:
-				return -1161942447 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_2");
 			case 13840:
-				return 160352245 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_3");
 			case 13841:
-				return 390161242 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_4");
 			case 13842:
-				return -491947309 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_5");
 			case 13843:
-				return -740270791 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_6");
 			case 13844:
-				return 2107224237 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7");
 			case 13845:
-				return 1867256850 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_8");
 			case 13846:
-				return -278948805 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_9");
 			case 13847:
-				return 1150701045 /* GXTEntry: "Iron" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_1");
 			case 13848:
-				return -387606891 /* GXTEntry: "Nickel" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_2");
 			case 13849:
-				return 537035982 /* GXTEntry: "Blued Steel" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_3");
 			case 13850:
-				return 1382672796 /* GXTEntry: "Blackened Steel" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_4");
 			case 13851:
-				return -1953113053 /* GXTEntry: "Browned Steel" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_5");
 			case 13852:
-				return 768548967 /* GXTEntry: "Brass" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_6");
 			case 13853:
-				return 1747981656 /* GXTEntry: "Gold" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7");
 			case 13854:
-				return -1710393070 /* GXTEntry: "Silver" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_8");
 			case 13855:
-				return -755930407 /* GXTEntry: "Copper" */;
+				return joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_9");
 			case 13856:
-				return 42103005 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_SHOTGUN_BARREL_ENGRAVING_1");
 			case 13857:
-				return -246067581 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_SHOTGUN_BARREL_ENGRAVING_2");
 			case 13858:
-				return -1613812872 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_SHOTGUN_BARREL_ENGRAVING_3");
 			case 13859:
-				return -1921186092 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_SHOTGUN_BARREL_ENGRAVING_4");
 			case 13860:
 				return 967064262 /* GXTEntry: "None" */;
 			case 13861:
-				return -2067456386 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_SHOTGUN_CYLINDER_ENGRAVING_1");
 			case 13862:
-				return -1486199864 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_SHOTGUN_CYLINDER_ENGRAVING_2");
 			case 13863:
-				return -1725446333 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_SHOTGUN_CYLINDER_ENGRAVING_3");
 			case 13864:
-				return 1241196775 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_SHOTGUN_CYLINDER_ENGRAVING_4");
 			case 13865:
 				return 1468626624 /* GXTEntry: "None" */;
 			case 13866:
-				return -563652421;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_KRAMPUS");
 			case 13867:
-				return -1590225051 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_LONG");
 			case 13868:
-				return -1681495857 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_SHORT");
 			case 13869:
-				return -1567580344 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP");
 			case 13870:
-				return -282809632 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_ENGRAVED");
 			case 13871:
-				return -687912583;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_EXOTIC");
 			case 13872:
-				return -808741305 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_IRONWOOD");
 			case 13873:
-				return -766495288;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_KRAMPUS");
 			case 13874:
-				return 761928444 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_MAG");
 			case 13875:
-				return 1148024425 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_MAG_ENGRAVED");
 			case 13876:
-				return -258042081;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_MAG_EXOTIC");
 			case 13877:
-				return 1935465860 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_MAG_IRONWOOD");
 			case 13878:
-				return -453748016;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_MAG_KRAMPUS");
 			case 13879:
-				return -2125472551 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_SIGHT_NARROW");
 			case 13880:
-				return 1465866430 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_SIGHT_WIDE");
 			case 13881:
-				return -240387438 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_WRAP1");
 			case 13882:
-				return -470655201 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_DOUBLEBARREL_WRAP2");
 			case 13883:
 				return -787047797 /* GXTEntry: "Baroque" */;
 			case 13884:
@@ -69799,115 +69799,115 @@ int func_1357(int iParam0, int iParam1)
 			case 13890:
 				return 439724522;
 			case 13891:
-				return -1612952239 /* GXTEntry: "Baroque" */;
+				return joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_1");
 			case 13892:
-				return -148145170 /* GXTEntry: "Art Nouveau" */;
+				return joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_2");
 			case 13893:
-				return 209430158 /* GXTEntry: "Victorian" */;
+				return joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_3");
 			case 13894:
-				return -677495596 /* GXTEntry: "Ornamental" */;
+				return joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_4");
 			case 13895:
 				return -2086934583 /* GXTEntry: "None" */;
 			case 13896:
-				return -107914178 /* GXTEntry: "Trader Variant" */;
+				return joaat("COMPONENT_SHOTGUN_FRAME_ENGRAVING_PUMP_TRADER");
 			case 13897:
 				return 493688651 /* GXTEntry: "None" */;
 			case 13898:
-				return -400453956 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_BARREL_LONG");
 			case 13899:
-				return -1620125025 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_BARREL_SHORT");
 			case 13900:
-				return -108317384 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_CLIP");
 			case 13901:
-				return -1029328528 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_CLIP_ENGRAVED");
 			case 13902:
-				return 1371373184 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_CLIP_IRONWOOD");
 			case 13903:
-				return -169059359;
+				return joaat("COMPONENT_SHOTGUN_PUMP_CLIP_TRADER");
 			case 13904:
-				return 371627529 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_GRIP");
 			case 13905:
-				return -1341331027 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_GRIP_ENGRAVED");
 			case 13906:
-				return -364352498 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_GRIP_IRONWOOD");
 			case 13907:
-				return -1850951144;
+				return joaat("COMPONENT_SHOTGUN_PUMP_GRIP_TRADER");
 			case 13908:
-				return -660073031 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_SIGHT_NARROW");
 			case 13909:
-				return -1381877519 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_SIGHT_WIDE");
 			case 13910:
-				return 1509466794 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_WRAP1");
 			case 13911:
-				return 930176412 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_PUMP_WRAP2");
 			case 13912:
-				return 1507247743 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING_BARREL_LONG");
 			case 13913:
-				return -1286455616 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING_BARREL_SHORT");
 			case 13914:
-				return -2029196240 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING_SIGHT_NARROW");
 			case 13915:
-				return -379338353 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING_SIGHT_WIDE");
 			case 13916:
-				return -1788311015 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING01_GRIP");
 			case 13917:
-				return -454348329 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING01_GRIP_ENGRAVED");
 			case 13918:
-				return 313236058 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING01_GRIP_IRONWOOD");
 			case 13919:
-				return -1356443316 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING01_WRAP1");
 			case 13920:
-				return -856257300 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_REPEATING01_WRAP2");
 			case 13921:
-				return 537597023;
+				return joaat("COMPONENT_SHOTGUN_SAWED_SIGHT_MOONSHINER");
 			case 13922:
-				return -934064686 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_SHOTGUN_SAWED_SIGHT_NARROW");
 			case 13923:
-				return -755483347 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_SHOTGUN_SAWED_SIGHT_WIDE");
 			case 13924:
-				return -106256990 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_GRIP");
 			case 13925:
-				return -976603528 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_GRIP_EBONY");
 			case 13926:
-				return -1049082913 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_GRIP_IRONWOOD");
 			case 13927:
-				return 1772087572;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_GRIP_MOONSHINER");
 			case 13928:
-				return -962621495 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_STOCK");
 			case 13929:
-				return -17410716 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_STOCK_EBONY");
 			case 13930:
-				return -397338182 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_STOCK_IRONWOOD");
 			case 13931:
-				return -614716351;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_STOCK_MOONSHINER");
 			case 13932:
-				return 635989042 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_WRAP1");
 			case 13933:
-				return -221706764 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_SAWEDOFF_WRAP2");
 			case 13934:
-				return 2041665692 /* GXTEntry: "Long Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_BARREL_LONG");
 			case 13935:
-				return -1724608539 /* GXTEntry: "Short Barrel" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_BARREL_SHORT");
 			case 13936:
-				return -1250002899 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_GRIP");
 			case 13937:
-				return -827932793 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_GRIP_ENGRAVED");
 			case 13938:
-				return 1316725623 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_GRIP_IRONWOOD");
 			case 13939:
-				return 760525697 /* GXTEntry: "Stock Sights" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_SIGHT_NARROW");
 			case 13940:
-				return 161409167 /* GXTEntry: "Improved Sights" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_SIGHT_WIDE");
 			case 13941:
-				return 1680068337 /* GXTEntry: "Leather Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_WRAP1");
 			case 13942:
-				return -1332582451 /* GXTEntry: "Cloth Wrap" */;
+				return joaat("COMPONENT_SHOTGUN_SEMIAUTO_WRAP2");
 			case 13943:
-				return -1922168936 /* GXTEntry: "Basic Grain" */;
+				return joaat("COMPONENT_SNIPERRIFLE_ROLLINGBLOCK_GRIP");
 			case 13944:
-				return -1186786648 /* GXTEntry: "Wide Grain" */;
+				return joaat("COMPONENT_SNIPERRIFLE_ROLLINGBLOCK_GRIP_ENGRAVED");
 			case 13945:
-				return -821378099 /* GXTEntry: "Straight Grain" */;
+				return joaat("COMPONENT_SNIPERRIFLE_ROLLINGBLOCK_GRIP_IRONWOOD");
 			case 13946:
 				return -1787199997;
 			case 13947:
@@ -69925,7 +69925,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13953:
 				return joaat("CONSUMABLE_BEETS");
 			case 13954:
-				return 1610737930 /* GXTEntry: "Plain Big Game" */;
+				return joaat("CONSUMABLE_BIG_GAME_MEAT_COOKED");
 			case 13955:
 				return joaat("CONSUMABLE_BIG_GAME_MEAT_OREGANO_COOKED");
 			case 13956:
@@ -69999,7 +69999,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13990:
 				return -520953319;
 			case 13991:
-				return -1277667710 /* GXTEntry: "Plain Crustacean" */;
+				return joaat("CONSUMABLE_CRUSTACEAN_MEAT_COOKED");
 			case 13992:
 				return joaat("CONSUMABLE_CRUSTACEAN_MEAT_MINT_COOKED");
 			case 13993:
@@ -70009,7 +70009,7 @@ int func_1357(int iParam0, int iParam1)
 			case 13995:
 				return joaat("CONSUMABLE_CYPRUS_BRANDY");
 			case 13996:
-				return 532201260 /* GXTEntry: "Plain Exotic Bird" */;
+				return joaat("CONSUMABLE_EXOTIC_BIRD_COOKED");
 			case 13997:
 				return joaat("CONSUMABLE_EXOTIC_BIRD_OREGANO_COOKED");
 			case 13998:
@@ -70029,7 +70029,7 @@ int func_1357(int iParam0, int iParam1)
 		switch (iParam0)
 		{
 			case 14000:
-				return 880496229 /* GXTEntry: "Plain Flaky Fish" */;
+				return joaat("CONSUMABLE_FLAKEY_FISH_COOKED");
 			case 14001:
 				return joaat("CONSUMABLE_FLAKEY_FISH_OREGANO_COOKED");
 			case 14002:
@@ -70037,7 +70037,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14003:
 				return joaat("CONSUMABLE_FLAKEY_FISH_WILD_MINT_COOKED");
 			case 14004:
-				return -348823399 /* GXTEntry: "Plain Game" */;
+				return joaat("CONSUMABLE_GAME_MEAT_COOKED");
 			case 14005:
 				return joaat("CONSUMABLE_GAME_MEAT_OREGANO_COOKED");
 			case 14006:
@@ -70045,13 +70045,13 @@ int func_1357(int iParam0, int iParam1)
 			case 14007:
 				return joaat("CONSUMABLE_GAME_MEAT_WILD_MINT_COOKED");
 			case 14008:
-				return 166398389 /* GXTEntry: "Plain Game Bird" */;
+				return joaat("CONSUMABLE_GAMEY_BIRD_COOKED");
 			case 14009:
 				return joaat("CONSUMABLE_GIN");
 			case 14010:
 				return joaat("CONSUMABLE_GIN_USED");
 			case 14011:
-				return -546209848 /* GXTEntry: "Plain Mutton" */;
+				return joaat("CONSUMABLE_GRISTLY_MUTTON_COOKED");
 			case 14012:
 				return joaat("CONSUMABLE_GRISTLY_MUTTON_OREGANO_COOKED");
 			case 14013:
@@ -70059,7 +70059,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14014:
 				return joaat("CONSUMABLE_GRISTLY_MUTTON_WILD_MINT_COOKED");
 			case 14015:
-				return -1768405210 /* GXTEntry: "Gritty Fish" */;
+				return joaat("CONSUMABLE_GRITTY_FISH_MEAT_COOKED");
 			case 14016:
 				return joaat("CONSUMABLE_HAIR_GREASE");
 			case 14017:
@@ -70133,7 +70133,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14051:
 				return joaat("CONSUMABLE_HERBIVORE_BAIT");
 			case 14052:
-				return 524620511 /* GXTEntry: "Plain Herptile" */;
+				return joaat("CONSUMABLE_HERPTILE_MEAT_COOKED");
 			case 14053:
 				return -1724045811 /* GXTEntry: "Horse Care Package" */;
 			case 14054:
@@ -70161,7 +70161,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14065:
 				return joaat("CONSUMABLE_LONDRY_GIN");
 			case 14066:
-				return -151108755 /* GXTEntry: "Plain Venison" */;
+				return joaat("CONSUMABLE_MATURE_VENISON_COOKED");
 			case 14067:
 				return joaat("CONSUMABLE_MATURE_VENISON_OREGANO_COOKED");
 			case 14068:
@@ -70259,7 +70259,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14114:
 				return joaat("CONSUMABLE_PINEAPPLES_CAN");
 			case 14115:
-				return 2058993648 /* GXTEntry: "Plain Plump Bird" */;
+				return joaat("CONSUMABLE_PLUMP_BIRD_COOKED");
 			case 14116:
 				return joaat("CONSUMABLE_PLUMP_BIRD_OREGANO_COOKED");
 			case 14117:
@@ -70289,7 +70289,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14129:
 				return joaat("CONSUMABLE_PREDATOR_BAIT");
 			case 14130:
-				return -1535978095 /* GXTEntry: "Plain Prime Beef" */;
+				return joaat("CONSUMABLE_PRIME_BEEF_COOKED");
 			case 14131:
 				return joaat("CONSUMABLE_PRIME_BEEF_OREGANO_COOKED");
 			case 14132:
@@ -70337,9 +70337,9 @@ int func_1357(int iParam0, int iParam1)
 			case 14153:
 				return joaat("CONSUMABLE_STRAWBERRIES_CAN");
 			case 14154:
-				return -467118139 /* GXTEntry: "Plain Stringy Meat" */;
+				return joaat("CONSUMABLE_STRING_MEAT_COOKED");
 			case 14155:
-				return -1240620284 /* GXTEntry: "Plain Succulent Fish" */;
+				return joaat("CONSUMABLE_SUCCULENT_FISH_COOKED");
 			case 14156:
 				return joaat("CONSUMABLE_SUCCULENT_FISH_OREGANO_COOKED");
 			case 14157:
@@ -70351,7 +70351,7 @@ int func_1357(int iParam0, int iParam1)
 			case 14160:
 				return joaat("CONSUMABLE_SWEET_CORN_CAN");
 			case 14161:
-				return 1663095412 /* GXTEntry: "Plain Pork" */;
+				return joaat("CONSUMABLE_TENDER_PORK_COOKED");
 			case 14162:
 				return joaat("CONSUMABLE_TENDER_PORK_OREGANO_COOKED");
 			case 14163:
@@ -79845,9 +79845,9 @@ int func_1357(int iParam0, int iParam1)
 			case 18883:
 				return 1164374808 /* GXTEntry: "Winter Outfit" */;
 			case 18884:
-				return 1633416556;
+				return joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_EXOTIC");
 			case 18885:
-				return 2146804528;
+				return joaat("COMPONENT_SNIPERRIFLE_ROLLINGBLOCK_GRIP_EXOTIC");
 			case 18886:
 				return joaat("CONSUMABLE_AGED_PIRATE_RUM");
 			case 18887:
@@ -79985,7 +79985,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18953:
 				return joaat("DOCUMENT_BOOK_LADY_MANOR");
 			case 18954:
-				return 546049583 /* GXTEntry: "Swanson\'s Bible" */;
+				return joaat("DOCUMENT_BOOK_REV_DRUG_BIBLE");
 			case 18955:
 				return joaat("DOCUMENT_BOOK_SHREW");
 			case 18956:
@@ -80015,7 +80015,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18968:
 				return -493899648 /* GXTEntry: "Slim Grant Photograph" */;
 			case 18969:
-				return -1032502725 /* GXTEntry: "Flower" */;
+				return joaat("DOCUMENT_CANYON_LIVE_FOREVER_FLOWER_JAR");
 			case 18970:
 				return -5456641;
 			case 18971:
@@ -80377,7 +80377,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19143:
 				return 637702958 /* GXTEntry: "Brenda\'s Letter" */;
 			case 19144:
-				return 1264764089 /* GXTEntry: "Civil War Report" */;
+				return joaat("DOCUMENT_CWFORT_JOURNAL");
 			case 19145:
 				return 925148953 /* GXTEntry: "Heartlands Oil Field Bone Location" */;
 			case 19146:
@@ -80639,7 +80639,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19274:
 				return -302977409 /* GXTEntry: "Bank Credit Letter" */;
 			case 19275:
-				return 2129073771 /* GXTEntry: "Mary-Beth\'s Notebook" */;
+				return joaat("DOCUMENT_MARY_BETH_JOURNAL");
 			case 19276:
 				return 1925314970 /* GXTEntry: "Letter from Mary" */;
 			case 19277:
@@ -83787,7 +83787,7 @@ void func_1443()
 	func_440(joaat("CONSUMABLE_APPLE"), 1, 752097756);
 	func_440(joaat("CONSUMABLE_CHEWING_TOBACCO"), 1, 752097756);
 	func_440(joaat("CONSUMABLE_POTENT_MEDICINE"), 1, 752097756);
-	func_440(-467118139 /* GXTEntry: "Plain Stringy Meat" */, 2, 752097756);
+	func_440(joaat("CONSUMABLE_STRING_MEAT_COOKED"), 2, 752097756);
 	func_440(joaat("PROVISION_MARYS_RING"), 1, 752097756);
 	func_440(joaat("CONSUMABLE_BAKED_BEANS_CAN"), 1, 752097756);
 	func_440(joaat("CONSUMABLE_CORNEDBEEF_CAN"), 1, 752097756);
@@ -84673,7 +84673,7 @@ void func_1482(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_1802(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_723(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_1803(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_723(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_1803(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1483(int iParam0, int iParam1)
@@ -90953,31 +90953,31 @@ int func_1712(bool bParam0, bool bParam1)
 	switch (bParam0)
 	{
 		case 3:
-			return -698095578;
+			return joaat("PERSCHAR_COMP_HORSE_BILL");
 		case 7:
-			return 230221572;
+			return joaat("PERSCHAR_COMP_HORSE_CHARLES");
 		case 0:
-			return 47961446;
+			return joaat("PERSCHAR_COMP_HORSE_DUTCH");
 		case 5:
-			return 1268955201;
+			return joaat("PERSCHAR_COMP_HORSE_HOSEA");
 		case 2:
-			return 2103924091;
+			return joaat("PERSCHAR_COMP_HORSE_JAVIER");
 		case 1:
-			return 1554677062;
+			return joaat("PERSCHAR_COMP_HORSE_JOHN");
 		case 9:
-			return 984702223;
+			return joaat("PERSCHAR_COMP_HORSE_LENNY");
 		case 6:
-			return -1825091419;
+			return joaat("PERSCHAR_COMP_HORSE_MICAH");
 		case 11:
-			return 948152617;
+			return joaat("PERSCHAR_COMP_HORSE_SADIE");
 		case 8:
-			return 795059774;
+			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
 			return -1880884094;
 		case 20:
-			return 849012978;
+			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
-			return 404801781;
+			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
 			return -1094022447;
 		case 26:
@@ -91619,55 +91619,55 @@ int func_1715(bool bParam0)
 	switch (bParam0)
 	{
 		case 1:
-			return -177936449;
+			return joaat("PERSCHAR_COMP_JOHN");
 		case 0:
-			return -1758735922;
+			return joaat("PERSCHAR_COMP_DUTCH");
 		case 6:
-			return -680519380;
+			return joaat("PERSCHAR_COMP_MICAH");
 		case 3:
-			return 263744889;
+			return joaat("PERSCHAR_COMP_BILL");
 		case 7:
-			return 351057032;
+			return joaat("PERSCHAR_COMP_CHARLES");
 		case 4:
-			return 1172283326;
+			return joaat("PERSCHAR_COMP_UNCLE");
 		case 2:
-			return -1046310682;
+			return joaat("PERSCHAR_COMP_JAVIER");
 		case 5:
-			return 652984488;
+			return joaat("PERSCHAR_COMP_HOSEA");
 		case 8:
-			return 1389665576;
+			return joaat("PERSCHAR_COMP_SEAN");
 		case 9:
-			return -1066280913;
+			return joaat("PERSCHAR_COMP_LENNY");
 		case 13:
-			return 1975793632;
+			return joaat("PERSCHAR_COMP_ABIGAIL");
 		case 14:
-			return -1887627202;
+			return joaat("PERSCHAR_COMP_JACK");
 		case 15:
-			return 1851096281;
+			return joaat("PERSCHAR_COMP_MARYBETH");
 		case 16:
 			return joaat("PERSCHAR_COMP_MOLLY");
 		case 17:
-			return 1762683397;
+			return joaat("PERSCHAR_COMP_PEARSON");
 		case 18:
-			return -1154551809;
+			return joaat("PERSCHAR_COMP_STRAUSS");
 		case 19:
-			return -333682158;
+			return joaat("PERSCHAR_COMP_GRIMSHAW");
 		case 20:
-			return 1465089966;
+			return joaat("PERSCHAR_COMP_KAREN");
 		case 21:
-			return 511213393;
+			return joaat("PERSCHAR_COMP_SWANSON");
 		case 22:
-			return -1214580355;
+			return joaat("PERSCHAR_COMP_TILLY");
 		case 23:
-			return -1397900723;
+			return joaat("PERSCHAR_COMP_TRELAWNY");
 		case 10:
-			return 541398842;
+			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
 			return -1960060437;
 		case 25:
 			return 1634371177;
 		case 26:
-			return -1308114737;
+			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
 			return 683250525;
 		case 12:

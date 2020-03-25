@@ -1210,8 +1210,8 @@ void func_35(int iParam0)
 		return;
 	}
 	func_92();
-	func_93(0, -380739391);
-	func_93(2, 345568588);
+	func_93(0, joaat("BLA_DOWNTOWN"));
+	func_93(2, joaat("BLA_LAW_DEPUTIES"));
 }
 
 bool func_36(int iParam0)

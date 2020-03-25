@@ -4073,15 +4073,15 @@ int func_187(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -233385727;
+			return joaat("PERSCHAR_COMP_HORSE_COMMON_1");
 		case 1:
-			return -784953535;
+			return joaat("PERSCHAR_COMP_HORSE_COMMON_2");
 		case 2:
-			return -543937540;
+			return joaat("PERSCHAR_COMP_HORSE_COMMON_3");
 		case 3:
-			return 893704044;
+			return joaat("PERSCHAR_COMP_HORSE_COMMON_4");
 		case 4:
-			return 1132950513;
+			return joaat("PERSCHAR_COMP_HORSE_COMMON_5");
 		default:
 			break;
 	}
@@ -7103,7 +7103,7 @@ void func_291(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_338(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_340(sVar7, sVar1, uVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_339(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_340(sVar7, sVar1, uVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_339(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_292(int iParam0, int iParam1)

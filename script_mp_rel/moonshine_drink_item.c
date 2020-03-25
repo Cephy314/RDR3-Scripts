@@ -390,55 +390,55 @@ void func_8(var uParam0)
 {
 	switch (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174))
 	{
-		case 1627871020:
+		case joaat("mp006_s_tinMug_moonshine01x"):
 			switch (&Global_1939008)
 			{
 				case 0:
-					uParam0->f_187[0] = 2099039304;
+					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD");
 					uParam0->f_187[1] = -366893967;
 					uParam0->f_187[2] = -965063707;
-					uParam0->f_187[3] = -1902748769;
+					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_SOBER_SIP_TRANS_BASE");
 					uParam0->f_187[4] = -1632398441;
-					uParam0->f_187[5] = -918201157;
+					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[6] = 466323971;
-					uParam0->f_187[7] = -468547873;
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
 					uParam0->f_187[13] = 1642022542;
 					uParam0->f_187[12] = 841023474;
-					uParam0->f_187[8] = -1741992774;
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_SIP_TRANS_BASE");
 					uParam0->f_187[11] = 846008983;
-					uParam0->f_187[9] = -1277599014;
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[10] = -1004140292;
 					break;
 				case 1:
-					uParam0->f_187[0] = -207806059;
+					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD");
 					uParam0->f_187[1] = -1703290751;
 					uParam0->f_187[2] = -250923967;
-					uParam0->f_187[3] = 462001116;
+					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_DRUNK_SIP_TRANS_BASE");
 					uParam0->f_187[4] = -2084040005;
-					uParam0->f_187[5] = -411267883;
+					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[6] = 1792747783;
-					uParam0->f_187[7] = -638132672;
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
 					uParam0->f_187[13] = -1021227765;
 					uParam0->f_187[12] = -553515202;
-					uParam0->f_187[8] = 1201934695;
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
 					uParam0->f_187[11] = -1159114752;
-					uParam0->f_187[9] = -1762037660;
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[10] = -1297229685;
 					break;
 				case 2:
-					uParam0->f_187[0] = 1306789391;
+					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD");
 					uParam0->f_187[1] = 223258152;
 					uParam0->f_187[2] = -1461841052;
-					uParam0->f_187[3] = 971216744;
+					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_WASTED_SIP_TRANS_BASE");
 					uParam0->f_187[4] = -1491965375;
-					uParam0->f_187[5] = 665331659;
+					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[6] = 1154356209;
-					uParam0->f_187[7] = -638132672;
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
 					uParam0->f_187[13] = -1021227765;
 					uParam0->f_187[12] = -553515202;
-					uParam0->f_187[8] = 1201934695;
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
 					uParam0->f_187[11] = -1159114752;
-					uParam0->f_187[9] = -1762037660;
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[10] = -1297229685;
 					break;
 			}
@@ -447,51 +447,51 @@ void func_8(var uParam0)
 			switch (&Global_1939008)
 			{
 				case 0:
-					uParam0->f_187[0] = 2099039304;
-					uParam0->f_187[1] = -1538022348;
+					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD");
+					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_SOBER_DISCARD");
 					uParam0->f_187[2] = 1018151539;
-					uParam0->f_187[3] = -1902748769;
+					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_SOBER_SIP_TRANS_BASE");
 					uParam0->f_187[4] = 1775995628;
-					uParam0->f_187[5] = -918201157;
+					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[6] = -1083346834;
-					uParam0->f_187[7] = -468547873;
-					uParam0->f_187[13] = -1613539009;
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
+					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_DISCARD");
 					uParam0->f_187[12] = -176911354;
-					uParam0->f_187[8] = -1741992774;
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_SIP_TRANS_BASE");
 					uParam0->f_187[11] = -603565807;
-					uParam0->f_187[9] = -1277599014;
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[10] = -1078116948;
 					break;
 				case 1:
-					uParam0->f_187[0] = -207806059;
-					uParam0->f_187[1] = -2123146421;
+					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD");
+					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_DRUNK_DISCARD");
 					uParam0->f_187[2] = 867868037;
-					uParam0->f_187[3] = 462001116;
+					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_DRUNK_SIP_TRANS_BASE");
 					uParam0->f_187[4] = 2043890671;
-					uParam0->f_187[5] = -411267883;
+					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[6] = -419950106;
-					uParam0->f_187[7] = -638132672;
-					uParam0->f_187[13] = -1247588270;
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
+					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_DISCARD");
 					uParam0->f_187[12] = -1080252797;
-					uParam0->f_187[8] = 1201934695;
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
 					uParam0->f_187[11] = 1272306923;
-					uParam0->f_187[9] = -1762037660;
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[10] = -1757318252;
 					break;
 				case 2:
-					uParam0->f_187[0] = 1306789391;
-					uParam0->f_187[1] = 457217638;
+					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD");
+					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_WASTED_DISCARD");
 					uParam0->f_187[2] = 1181480000;
-					uParam0->f_187[3] = 971216744;
+					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_WASTED_SIP_TRANS_BASE");
 					uParam0->f_187[4] = -2065428388;
-					uParam0->f_187[5] = 665331659;
+					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[6] = -1504019657;
-					uParam0->f_187[7] = -638132672;
-					uParam0->f_187[13] = -1247588270;
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
+					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_DISCARD");
 					uParam0->f_187[12] = -1080252797;
-					uParam0->f_187[8] = 1201934695;
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
 					uParam0->f_187[11] = 1272306923;
-					uParam0->f_187[9] = -1762037660;
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					uParam0->f_187[10] = -1757318252;
 					break;
 			}
@@ -506,7 +506,7 @@ float func_9(var uParam0, int iParam1)
 	iVar0 = func_1();
 	switch (ENTITY::GET_ENTITY_MODEL(iParam1))
 	{
-		case 1627871020:
+		case joaat("mp006_s_tinMug_moonshine01x"):
 			if (uParam0->f_204 == -1370915905)
 			{
 				if (((*Global_1277166)[iVar0 /*86*/])->f_19.f_19 == 0)
@@ -789,7 +789,7 @@ void func_15(var uParam0)
 		{
 			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == func_46())
 			{
-				uParam0->f_203 = -468547873;
+				uParam0->f_203 = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
 				TASK::_0xB35370D5353995CB(Global_34, func_45(), 1048576000);
 			}
 		}
@@ -797,35 +797,35 @@ void func_15(var uParam0)
 		{
 			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == func_45())
 			{
-				uParam0->f_203 = -638132672;
+				uParam0->f_203 = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
 				TASK::_0xB35370D5353995CB(Global_34, func_46(), 1048576000);
 			}
 		}
 	}
 	else
 	{
-		if (uParam0->f_179 == 0 && uParam0->f_203 != 2099039304)
+		if (uParam0->f_179 == 0 && uParam0->f_203 != joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD"))
 		{
-			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == 1306789391 || TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -207806059)
+			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD") || TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD"))
 			{
-				uParam0->f_203 = 2099039304;
-				TASK::_0xB35370D5353995CB(Global_34, 2099039304, 1048576000);
+				uParam0->f_203 = joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD");
+				TASK::_0xB35370D5353995CB(Global_34, joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD"), 1048576000);
 			}
 		}
-		if (uParam0->f_179 == 1 && uParam0->f_203 != -207806059)
+		if (uParam0->f_179 == 1 && uParam0->f_203 != joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD"))
 		{
-			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == 1306789391 || TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == 2099039304)
+			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD") || TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD"))
 			{
-				uParam0->f_203 = -207806059;
-				TASK::_0xB35370D5353995CB(Global_34, -207806059, 1048576000);
+				uParam0->f_203 = joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD");
+				TASK::_0xB35370D5353995CB(Global_34, joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD"), 1048576000);
 			}
 		}
-		if (uParam0->f_179 == 2 && uParam0->f_203 != 1306789391)
+		if (uParam0->f_179 == 2 && uParam0->f_203 != joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD"))
 		{
-			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == 2099039304 || TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -207806059)
+			if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD") || TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD"))
 			{
-				uParam0->f_203 = 1306789391;
-				TASK::_0xB35370D5353995CB(Global_34, 1306789391, 1048576000);
+				uParam0->f_203 = joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD");
+				TASK::_0xB35370D5353995CB(Global_34, joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD"), 1048576000);
 			}
 		}
 	}
@@ -1060,7 +1060,7 @@ void func_28(var uParam0, int iParam1)
 		iVar0 = func_1();
 		switch (ENTITY::GET_ENTITY_MODEL(iParam1))
 		{
-			case 1627871020:
+			case joaat("mp006_s_tinMug_moonshine01x"):
 				if (uParam0->f_204 == -1370915905)
 				{
 					func_67(iVar0);
@@ -1354,10 +1354,10 @@ void func_44(var uParam0)
 			switch (&Global_1939008)
 			{
 				case 0:
-					uParam0->f_187[7] = 10479869;
-					uParam0->f_187[8] = -98905469;
-					uParam0->f_187[9] = -269091281;
-					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == 1627871020)
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_HOLD");
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_SIP_TRANS_BASE");
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHEERS_LO_TRANS_SIP_BASE");
+					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("mp006_s_tinMug_moonshine01x"))
 					{
 						uParam0->f_187[13] = 70200837;
 						uParam0->f_187[12] = -1904446110;
@@ -1367,17 +1367,17 @@ void func_44(var uParam0)
 					else
 					{
 						uParam0->f_187[10] = -911864475;
-						uParam0->f_187[13] = 1457577152;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_DISCARD");
 						uParam0->f_187[12] = 928079862;
 						uParam0->f_187[11] = 1067500305;
 					}
 					break;
 				case 1:
 				case 2:
-					uParam0->f_187[7] = -948634471;
-					uParam0->f_187[8] = -1130568975;
-					uParam0->f_187[9] = 1326326265;
-					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == 1627871020)
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_HOLD");
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_SIP_TRANS_BASE");
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHEERS_LO_TRANS_SIP_BASE");
+					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("mp006_s_tinMug_moonshine01x"))
 					{
 						uParam0->f_187[13] = -931616856;
 						uParam0->f_187[12] = -1171949494;
@@ -1387,7 +1387,7 @@ void func_44(var uParam0)
 					else
 					{
 						uParam0->f_187[10] = -2145686352;
-						uParam0->f_187[13] = 444699049;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_DISCARD");
 						uParam0->f_187[12] = 1351299120;
 						uParam0->f_187[11] = -408165963;
 					}
@@ -1409,10 +1409,10 @@ void func_44(var uParam0)
 			switch (&Global_1939008)
 			{
 				case 0:
-					uParam0->f_187[7] = -1842130926;
-					uParam0->f_187[8] = -1060064137;
-					uParam0->f_187[9] = 1439999116;
-					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == 1627871020)
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_HOLD");
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_SIP_TRANS_BASE");
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHEERS_LO_TRANS_SIP_BASE");
+					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("mp006_s_tinMug_moonshine01x"))
 					{
 						uParam0->f_187[13] = -1298041581;
 						uParam0->f_187[12] = 525085366;
@@ -1422,17 +1422,17 @@ void func_44(var uParam0)
 					else
 					{
 						uParam0->f_187[10] = 1729142180;
-						uParam0->f_187[13] = -306782526;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_DISCARD");
 						uParam0->f_187[12] = 1733007823;
 						uParam0->f_187[11] = 1122183656;
 					}
 					break;
 				case 1:
 				case 2:
-					uParam0->f_187[7] = -214160871;
-					uParam0->f_187[8] = 1956116017;
-					uParam0->f_187[9] = 626222989;
-					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == 1627871020)
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_HOLD");
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_SIP_TRANS_BASE");
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHEERS_LO_TRANS_SIP_BASE");
+					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("mp006_s_tinMug_moonshine01x"))
 					{
 						uParam0->f_187[13] = -168572957;
 						uParam0->f_187[12] = 55551996;
@@ -1442,7 +1442,7 @@ void func_44(var uParam0)
 					else
 					{
 						uParam0->f_187[10] = 1192127603;
-						uParam0->f_187[13] = -1395771465;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_DISCARD");
 						uParam0->f_187[12] = 749044204;
 						uParam0->f_187[11] = -504440314;
 					}
@@ -1453,10 +1453,10 @@ void func_44(var uParam0)
 			switch (&Global_1939008)
 			{
 				case 0:
-					uParam0->f_187[7] = -468547873;
-					uParam0->f_187[8] = -1741992774;
-					uParam0->f_187[9] = -1277599014;
-					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == 1627871020)
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_SIP_TRANS_BASE");
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_LO_TRANS_SIP_BASE");
+					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("mp006_s_tinMug_moonshine01x"))
 					{
 						uParam0->f_187[13] = 1642022542;
 						uParam0->f_187[12] = 841023474;
@@ -1466,17 +1466,17 @@ void func_44(var uParam0)
 					else
 					{
 						uParam0->f_187[10] = -1078116948;
-						uParam0->f_187[13] = -1613539009;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_DISCARD");
 						uParam0->f_187[12] = -176911354;
 						uParam0->f_187[11] = -603565807;
 					}
 					break;
 				case 1:
 				case 2:
-					uParam0->f_187[7] = -638132672;
-					uParam0->f_187[8] = 1201934695;
-					uParam0->f_187[9] = -1762037660;
-					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == 1627871020)
+					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
+					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
+					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
+					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("mp006_s_tinMug_moonshine01x"))
 					{
 						uParam0->f_187[13] = -1021227765;
 						uParam0->f_187[12] = -553515202;
@@ -1486,7 +1486,7 @@ void func_44(var uParam0)
 					else
 					{
 						uParam0->f_187[10] = -1757318252;
-						uParam0->f_187[13] = -1247588270;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_DISCARD");
 						uParam0->f_187[12] = -1080252797;
 						uParam0->f_187[11] = 1272306923;
 					}
@@ -1504,7 +1504,7 @@ int func_45()
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_DRUNK_MALE_A"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_FEMALE_A"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_A"):
-			return 10479869;
+			return joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_HOLD");
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_DRUNK_FEMALE_C"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_F"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_DRUNK_MALE_F"):
@@ -1517,11 +1517,11 @@ int func_45()
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_FEMALE_C"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_C"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_D"):
-			return -1842130926;
+			return joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_HOLD");
 		default:
 			break;
 	}
-	return -468547873;
+	return joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
 }
 
 int func_46()
@@ -1532,7 +1532,7 @@ int func_46()
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_DRUNK_MALE_A"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_FEMALE_A"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_A"):
-			return -948634471;
+			return joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_HOLD");
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_DRUNK_FEMALE_C"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_F"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_DRUNK_MALE_F"):
@@ -1545,11 +1545,11 @@ int func_46()
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_FEMALE_C"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_C"):
 		case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER_SOBER_MALE_D"):
-			return -214160871;
+			return joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_HOLD");
 		default:
 			break;
 	}
-	return -638132672;
+	return joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
 }
 
 void func_47(var uParam0, bool bParam1)

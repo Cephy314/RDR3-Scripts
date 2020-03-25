@@ -636,7 +636,7 @@ void __EntryFunction__()
 	func_13(65536, func_31());
 	func_13(256, func_32());
 	func_33();
-	Local_611.f_13 = 925190986;
+	Local_611.f_13 = joaat("LOGGING_WORKERS");
 	func_34();
 	if (!func_22(&Local_1614, 32))
 	{
@@ -3723,7 +3723,7 @@ void func_89()
 	{
 		if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[5])))
 		{
-			iVar5 = func_287(&uVar0, &uLocal_2199, 4, &(iLocal_75[5]), 0, 0, 0, -555162361, 1, 0, 1, 0);
+			iVar5 = func_287(&uVar0, &uLocal_2199, 4, &(iLocal_75[5]), 0, 0, 0, joaat("DOMESTIC_DRAFT_HORSE"), 1, 0, 1, 0);
 			iVar6 = 0;
 			while (iVar6 < iVar5)
 			{
@@ -48074,7 +48074,7 @@ void func_1509(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	iVar1 = 0;
 	while (iVar1 < 5)
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), -1160144609);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("taxidermy"), joaat("TAXIDERMY_ORDER"));
 		if (func_1307(func_1724(iVar0, 10), 1, 0))
 		{
 			if (bParam2)
@@ -49620,20 +49620,20 @@ void func_1553()
 	}
 	if (INVENTORY::_0xB881CA836CC4B6D4(&Var1))
 	{
-		func_1767(-2055673461 /* GXTEntry: "Pearl Grip" */, Var1, 1423542233);
-		func_1767(-202131179 /* GXTEntry: "Long Barrel" */, Var1, -1264898804);
-		func_1767(2013836545 /* GXTEntry: "Gold" */, Var1, 1592019450);
-		func_1767(1497476650 /* GXTEntry: "Gold" */, Var1, 1117400455);
-		func_1767(1063571467 /* GXTEntry: "Gold" */, Var1, 1150213537);
-		func_1767(2107224237 /* GXTEntry: "Gold" */, Var1, 1598825281);
-		func_1767(1747981656 /* GXTEntry: "Gold" */, Var1, -712527121);
-		func_1767(-1371140647 /* GXTEntry: "Baroque" */, Var1, 454332195);
-		func_1767(-19142973 /* GXTEntry: "Gold" */, Var1, 256105670);
-		func_1767(-2074737817 /* GXTEntry: "Gold" */, Var1, -1328061889);
-		func_1767(-1114256243 /* GXTEntry: "Baroque" */, Var1, -782241404);
-		func_1767(-1653277288 /* GXTEntry: "Gold" */, Var1, 1669853467);
-		func_1767(1869398132 /* GXTEntry: "Baroque" */, Var1, -1559225678);
-		func_1767(459868358 /* GXTEntry: "Gold" */, Var1, -266425508);
+		func_1767(joaat("COMPONENT_REVOLVER_DOUBLEACTION_GRIP_PEARL"), Var1, 1423542233);
+		func_1767(joaat("COMPONENT_REVOLVER_DOUBLEACTION_BARREL_LONG"), Var1, -1264898804);
+		func_1767(joaat("COMPONENT_SHORTARM_BARREL_MATERIAL_7"), Var1, 1592019450);
+		func_1767(joaat("COMPONENT_SHORTARM_CYLINDER_MATERIAL_7"), Var1, 1117400455);
+		func_1767(joaat("COMPONENT_SHORTARM_HAMMER_MATERIAL_7"), Var1, 1150213537);
+		func_1767(joaat("COMPONENT_SHORTARM_SIGHT_MATERIAL_7"), Var1, 1598825281);
+		func_1767(joaat("COMPONENT_SHORTARM_TRIGGER_MATERIAL_7"), Var1, -712527121);
+		func_1767(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_1"), Var1, 454332195);
+		func_1767(joaat("COMPONENT_SHORTARM_FRAME_MATERIAL_7"), Var1, 256105670);
+		func_1767(joaat("COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_7"), Var1, -1328061889);
+		func_1767(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_1"), Var1, -782241404);
+		func_1767(joaat("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_7"), Var1, 1669853467);
+		func_1767(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1"), Var1, -1559225678);
+		func_1767(joaat("COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7"), Var1, -266425508);
 		if (!ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_35, -1) && !func_1326())
 		{
 			WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &iVar15, false, 2, false);
@@ -61955,7 +61955,7 @@ void func_1968(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_2038(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_864(sVar7, sVar1, iVar8, iVar9, -479097442, "INPUT_FEED_INTERACT_GENERIC", func_2039(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_864(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_2039(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_1969(int iParam0, int iParam1)
