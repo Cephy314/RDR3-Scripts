@@ -2907,8 +2907,8 @@ int func_21(var uParam0)
 		uParam0->f_24 = 4;
 		uParam0->f_23 = 2;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = joaat("cs_escapeartist");
-		uParam0->f_1401[1] = joaat("cs_escapeartistassistant");
+		uParam0->f_1401[0] = joaat("CS_EscapeArtist");
+		uParam0->f_1401[1] = joaat("CS_EscapeArtistAssistant");
 		uParam0->f_1385[0] = joaat("s_noosestand01x");
 		uParam0->f_1385[1] = joaat("p_cs_straightjacket");
 		uParam0->f_1385[2] = joaat("p_divider01x");
@@ -4264,7 +4264,7 @@ int func_96(var uParam0)
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_17))
 	{
-		if (func_154(&iLocal_17, joaat("p_shotglass01x"), 2546.771f, -1310.344f, 50.83665f))
+		if (func_154(&iLocal_17, joaat("p_shotGlass01x"), 2546.771f, -1310.344f, 50.83665f))
 		{
 			iLocal_16 = PHYSICS::_0xE9C59F6809373A99(2546.724f, -1309.638f, 50.76665f, 0f, 0f, 0f, 0.3f, 1, 0, -1, -1082130432);
 			PHYSICS::_0x462FF2A432733A44(iLocal_16, iLocal_17, &(uParam0->f_1393[3]), 0f, 0f, 0f, 0f, 0f, 0f, 0, 0);
@@ -4341,7 +4341,7 @@ void func_103(var uParam0, int iParam1)
 
 int func_104()
 {
-	return joaat("cs_escapeartist");
+	return joaat("CS_EscapeArtist");
 }
 
 int func_105(int iParam0)
@@ -7701,7 +7701,7 @@ void func_219(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

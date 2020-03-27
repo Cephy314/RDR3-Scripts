@@ -64,7 +64,7 @@ void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	iLocal_78 = joaat("a_c_doghound_01");
+	iLocal_78 = joaat("A_C_DogHound_01");
 	iLocal_76 = iScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -131,7 +131,7 @@ void func_4()
 			iLocal_79 = func_9(2, 2, -156825994, 1, 0, 0f, 0f, 0f);
 			if (!STREAMING::IS_MODEL_VALID(iLocal_79))
 			{
-				iLocal_79 = joaat("s_m_m_ambientlawrural_01");
+				iLocal_79 = joaat("S_M_M_AmbientLawRural_01");
 			}
 			iLocal_77 = 2;
 			break;
@@ -1401,7 +1401,7 @@ void func_34(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -1494,7 +1494,7 @@ int func_38(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GreatPlains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -1502,17 +1502,17 @@ int func_38(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("Heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("scarlettMeadows"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TallTrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RioBravo"):
 			return 14;
 		case -108848014:
 			return 15;

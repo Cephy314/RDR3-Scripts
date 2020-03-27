@@ -60,7 +60,7 @@ void __EntryFunction__()
 		}
 	}
 	STREAMING::_REQUEST_CLIP_SET_BY_HASH(-703333072);
-	STREAMING::REQUEST_MODEL(joaat("p_spoon01x_food"), false);
+	STREAMING::REQUEST_MODEL(joaat("p_spoon01x_Food"), false);
 	Var0.f_1 = bVar180;
 	if (!ScriptParam_0.f_3)
 	{
@@ -75,9 +75,9 @@ void __EntryFunction__()
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ENTER"), false);
 			if (!ENTITY::DOES_ENTITY_EXIST(Var0.f_179))
 			{
-				if (STREAMING::HAS_MODEL_LOADED(joaat("p_spoon01x_food")))
+				if (STREAMING::HAS_MODEL_LOADED(joaat("p_spoon01x_Food")))
 				{
-					Var0.f_179 = OBJECT::CREATE_OBJECT(joaat("p_spoon01x_food"), Global_36, false, true, false, false, true);
+					Var0.f_179 = OBJECT::CREATE_OBJECT(joaat("p_spoon01x_Food"), Global_36, false, true, false, false, true);
 					ENTITY::ATTACH_ENTITY_TO_ENTITY(Var0.f_179, Global_35, PED::GET_PED_BONE_INDEX(Global_35, 7966), 0f, 0f, 0f, 0f, 0f, 0f, false, false, false, false, 2, true, false, false);
 					ENTITY::SET_ENTITY_VISIBLE(Var0.f_179, false);
 				}
@@ -967,7 +967,7 @@ void func_34(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_70(func_73(joaat("used"), joaat("whiskey")), 1);
+			func_70(func_73(joaat("used"), joaat("WHISKEY")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
@@ -1613,7 +1613,7 @@ void func_72(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_73(joaat("eaten"), func_108(iParam0)) };
+	Var0 = { func_73(joaat("EATEN"), func_108(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_70(func_109(joaat("HERBS_EATEN")), bParam1);
 }
@@ -1633,7 +1633,7 @@ int func_74()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}
@@ -2820,7 +2820,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 0f;
 	}

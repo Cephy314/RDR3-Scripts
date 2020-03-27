@@ -40,7 +40,7 @@ void __EntryFunction__()
 	}
 	iLocal_21 = func_3();
 	vLocal_16 = { TASK::_0xA8452DD321607029(iLocal_20, 1) };
-	if (iLocal_21 == 560825326)
+	if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_13"))
 	{
 		if (!func_4(21))
 		{
@@ -50,7 +50,7 @@ void __EntryFunction__()
 			}
 		}
 	}
-	if (iLocal_21 == 858269539 && !func_6(148))
+	if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_14") && !func_6(148))
 	{
 		func_2(&uLocal_14);
 	}
@@ -249,7 +249,7 @@ int func_13(var uParam0)
 			}
 			if (func_25(Global_35, vLocal_16, 0) < IntToFloat(iLocal_22))
 			{
-				if (iLocal_21 == 858269539 || iLocal_21 == 560825326)
+				if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_14") || iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_13"))
 				{
 					if (!func_4(21) && !func_5(687859577))
 					{
@@ -479,13 +479,13 @@ int func_28(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1261163843:
-		case -963523016:
-		case -138366827:
-		case 1053540370:
-		case 1362715885:
-		case 1667205433:
-		case 1972645282:
+		case joaat("LEGENDARY_FISHING_SPOT_11"):
+		case joaat("LEGENDARY_FISHING_SPOT_12"):
+		case joaat("LEGENDARY_FISHING_SPOT_10"):
+		case joaat("LEGENDARY_FISHING_SPOT_06"):
+		case joaat("LEGENDARY_FISHING_SPOT_05"):
+		case joaat("LEGENDARY_FISHING_SPOT_04"):
+		case joaat("LEGENDARY_FISHING_SPOT_03"):
 			return 1;
 	}
 	return 0;
@@ -495,20 +495,20 @@ int func_29(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1972645282:
-			return -1409326024;
-		case 1362715885:
-			return -946988203;
-		case 1053540370:
-			return -646136018;
-		case 1667205433:
-			return -641744968;
-		case -138366827:
-			return 1764383959;
-		case -1261163843:
-			return 317501533;
-		case -963523016:
-			return 817753087;
+		case joaat("LEGENDARY_FISHING_SPOT_03"):
+			return joaat("LEGENDARY_FISH_03");
+		case joaat("LEGENDARY_FISHING_SPOT_05"):
+			return joaat("LEGENDARY_FISH_05");
+		case joaat("LEGENDARY_FISHING_SPOT_06"):
+			return joaat("LEGENDARY_FISH_06");
+		case joaat("LEGENDARY_FISHING_SPOT_04"):
+			return joaat("LEGENDARY_FISH_04");
+		case joaat("LEGENDARY_FISHING_SPOT_10"):
+			return joaat("LEGENDARY_FISH_10");
+		case joaat("LEGENDARY_FISHING_SPOT_11"):
+			return joaat("LEGENDARY_FISH_11");
+		case joaat("LEGENDARY_FISHING_SPOT_12"):
+			return joaat("LEGENDARY_FISH_12");
 		default:
 			break;
 	}
@@ -524,31 +524,31 @@ int func_31(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -642026005:
+		case joaat("LEGENDARY_FISHING_SPOT_01"):
 			return 1791726215;
-		case -940584364:
+		case joaat("LEGENDARY_FISHING_SPOT_02"):
 			return -1553566002;
-		case 1972645282:
+		case joaat("LEGENDARY_FISHING_SPOT_03"):
 			return -528070704;
-		case 1667205433:
+		case joaat("LEGENDARY_FISHING_SPOT_04"):
 			return 1214218277;
-		case 1362715885:
+		case joaat("LEGENDARY_FISHING_SPOT_05"):
 			return -1424874851;
-		case 1053540370:
+		case joaat("LEGENDARY_FISHING_SPOT_06"):
 			return -414895106;
-		case -1100103852:
+		case joaat("LEGENDARY_FISHING_SPOT_07"):
 			return -1560294747;
-		case -1409869209:
+		case joaat("LEGENDARY_FISHING_SPOT_08"):
 			return 1937997726;
-		case -1760235357:
+		case joaat("LEGENDARY_FISHING_SPOT_09"):
 			return 505929754;
-		case -138366827:
+		case joaat("LEGENDARY_FISHING_SPOT_10"):
 			return -312076753;
-		case -1261163843:
+		case joaat("LEGENDARY_FISHING_SPOT_11"):
 			return 235447783;
-		case -963523016:
+		case joaat("LEGENDARY_FISHING_SPOT_12"):
 			return 1793239293;
-		case 560825326:
+		case joaat("LEGENDARY_FISHING_SPOT_13"):
 			return -1142443514;
 		default:
 			break;

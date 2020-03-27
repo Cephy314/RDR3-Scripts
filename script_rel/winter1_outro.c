@@ -410,7 +410,7 @@ int func_21(var uParam0)
 	}
 	func_45(Global_1935630, 1048576);
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
-	MISC::_SET_WEATHER_TYPE(joaat("whiteout"), true, true, false, 0f, false);
+	MISC::_SET_WEATHER_TYPE(joaat("WHITEOUT"), true, true, false, 0f, false);
 	CLOCK::SET_CLOCK_TIME(8, 0, 0);
 	return 1;
 }
@@ -874,7 +874,7 @@ char* func_44(int iParam0)
 	}
 	if (iParam0 == Global_35)
 	{
-		if (ENTITY::GET_ENTITY_MODEL(Global_35) == joaat("player_three"))
+		if (ENTITY::GET_ENTITY_MODEL(Global_35) == joaat("Player_Three"))
 		{
 			return "John";
 		}
@@ -1147,372 +1147,372 @@ char* func_64(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("player_zero"):
+		case joaat("PLAYER_ZERO"):
 			return "Arthur";
-		case joaat("cs_abe"):
+		case joaat("CS_abe"):
 			return "Abe";
-		case joaat("cs_edmundlowry"):
+		case joaat("CS_EDMUNDLOWRY"):
 			return "EdmundLowry";
-		case joaat("cs_aberdeenpigfarmer"):
+		case joaat("CS_AberdeenPigFarmer"):
 			return "ABERDEENPIGFARMER";
-		case joaat("cs_aberdeensister"):
+		case joaat("CS_AberdeenSister"):
 			return "ABERDEENSISTER";
-		case joaat("cs_abigailroberts"):
+		case joaat("CS_abigailroberts"):
 			return "AbigailRoberts";
-		case joaat("cs_albertmason"):
+		case joaat("CS_albertmason"):
 			return "AlbertMason";
-		case joaat("cs_archiedown"):
+		case joaat("CS_ArchieDown"):
 			return "ArchieDown";
-		case joaat("cs_baptiste"):
+		case joaat("CS_baptiste"):
 			return "Baptiste";
-		case joaat("cs_bartholomewbraithwaite"):
+		case joaat("CS_bartholomewbraithwaite"):
 			return "BartholomewBraithwaite";
-		case joaat("cs_beatenupcaptain"):
+		case joaat("CS_BeatenUpCaptain"):
 			return "CS_BEATENUPCAPTAIN";
-		case joaat("cs_beaugray"):
+		case joaat("CS_beaugray"):
 			return "BeauGray";
-		case joaat("cs_penelopebraithwaite"):
+		case joaat("CS_penelopebraithwaite"):
 			return "PenelopeBraithwaite";
-		case joaat("cs_billwilliamson"):
+		case joaat("CS_billwilliamson"):
 			return "BillWilliamson";
-		case joaat("cs_braithwaiteservant"):
+		case joaat("CS_braithwaiteservant"):
 			return "BraithwaiteServant";
-		case joaat("cs_catherinebraithwaite"):
+		case joaat("CS_catherinebraithwaite"):
 			return "CatherineBraithwaite";
-		case joaat("cs_charlessmith"):
+		case joaat("CS_charlessmith"):
 			return "CharlesSmith";
-		case joaat("cs_cigcardguy"):
+		case joaat("CS_CigCardGuy"):
 			return "CS_CIGCARDGUY";
-		case joaat("cs_dinoboneslady"):
+		case joaat("CS_DinoBonesLady"):
 			return "CS_DINOBONESLADY";
-		case joaat("cs_cleet"):
+		case joaat("CS_CLEET"):
 			return "Cleet";
-		case joaat("cs_colmodriscoll"):
+		case joaat("CS_ColmODriscoll"):
 			return "ColmODriscoll";
-		case joaat("cs_creoleguy"):
+		case joaat("CS_creoleguy"):
 			return "CreoleGuy";
-		case joaat("cs_sddoctor_01"):
+		case joaat("CS_SDDOCTOR_01"):
 			return "SDDoctor_01";
-		case joaat("cs_dalemaroney"):
+		case joaat("CS_dalemaroney"):
 			return "DaleMaroney";
-		case joaat("cs_dutch"):
+		case joaat("CS_dutch"):
 			return "Dutch";
-		case joaat("cs_edithdown"):
+		case joaat("CS_EdithDown"):
 			return "EdithDown";
-		case joaat("cs_fussar"):
+		case joaat("CS_fussar"):
 			return "Fussar";
-		case joaat("cs_fishcollector"):
+		case joaat("cs_FISHCOLLECTOR"):
 			return "cs_fishcollector";
-		case joaat("cs_bronte"):
+		case joaat("CS_bronte"):
 			return "Bronte";
-		case joaat("cs_guidomartelli"):
+		case joaat("CS_GuidoMartelli"):
 			return "GuidoMartelli";
-		case joaat("u_m_m_nbxbrontegoon_01"):
+		case joaat("U_M_M_NbxBronteGoon_01"):
 			return "U_M_M_NBXBRONTEGOON_01";
-		case joaat("g_m_m_unibrontegoons_01"):
+		case joaat("G_M_M_UniBronteGoons_01"):
 			return "G_M_M_UNIBRONTEGOONS_01";
-		case joaat("cs_garethbraithwaite"):
+		case joaat("CS_garethbraithwaite"):
 			return "GarethBraithwaite";
-		case joaat("cs_genstoryfemale"):
+		case joaat("CS_genstoryfemale"):
 			return "GenStoryFemale";
-		case joaat("cs_genstorymale"):
+		case joaat("CS_genstorymale"):
 			return "GenStoryMale";
-		case joaat("cs_leon"):
+		case joaat("CS_leon"):
 			return "Leon";
-		case joaat("cs_geraldbraithwaite"):
+		case joaat("CS_geraldbraithwaite"):
 			return "GeraldBraithwaite";
-		case joaat("cs_hoseamatthews"):
+		case joaat("CS_hoseamatthews"):
 			return "HoseaMatthews";
-		case joaat("cs_jackmarston"):
+		case joaat("CS_jackmarston"):
 			return "JackMarston";
-		case joaat("cs_jackmarston_teen"):
+		case joaat("CS_jackmarston_teen"):
 			return "JackMarston_Teen";
-		case joaat("cs_jamie"):
+		case joaat("CS_JAMIE"):
 			return "Jamie";
-		case joaat("cs_javierescuella"):
+		case joaat("CS_javierescuella"):
 			return "JavierEscuella";
-		case joaat("cs_jimcalloway"):
+		case joaat("CS_jimcalloway"):
 			return "JimCalloway";
-		case joaat("cs_joe"):
+		case joaat("CS_Joe"):
 			return "Joe";
-		case joaat("cs_johnmarston"):
+		case joaat("CS_johnmarston"):
 			return "JohnMarston";
-		case joaat("cs_johnweathers"):
+		case joaat("CS_JohnWeathers"):
 			return "CS_JOHNWEATHERS";
-		case joaat("cs_josiahtrelawny"):
+		case joaat("CS_josiahtrelawny"):
 			return "JosiahTrelawny";
-		case joaat("cs_karen"):
+		case joaat("CS_karen"):
 			return "Karen";
-		case joaat("cs_mrsadler"):
+		case joaat("CS_mrsadler"):
 			return "MrsAdler";
-		case joaat("cs_kieran"):
+		case joaat("CS_Kieran"):
 			return "Kieran";
-		case joaat("cs_leostrauss"):
+		case joaat("CS_leostrauss"):
 			return "LeoStrauss";
-		case joaat("cs_londonderryson"):
+		case joaat("CS_LondonderrySon"):
 			return "LondonderrySon";
-		case joaat("cs_marybeth"):
+		case joaat("CS_marybeth"):
 			return "MaryBeth";
-		case joaat("cs_marylinton"):
+		case joaat("CS_marylinton"):
 			return "MaryLinton";
-		case joaat("cs_micahbell"):
+		case joaat("CS_MICAHBELL"):
 			return "MicahBell";
-		case joaat("cs_mollyoshea"):
+		case joaat("CS_mollyoshea"):
 			return "MollyOshea";
-		case joaat("cs_mrlinton"):
+		case joaat("cs_MRLINTON"):
 			return "CS_MrLinton";
-		case joaat("cs_mrpearson"):
+		case joaat("CS_mrpearson"):
 			return "MrPearson";
-		case joaat("cs_mrslondonderry"):
+		case joaat("CS_MrsLondonderry"):
 			return "MrsLondonderry";
-		case joaat("cs_mud2bigguy"):
+		case joaat("CS_mud2bigguy"):
 			return "Mud2BigGuy";
-		case joaat("cs_professorbell"):
+		case joaat("CS_professorbell"):
 			return "ProfessorBell";
-		case joaat("cs_revswanson"):
+		case joaat("CS_RevSwanson"):
 			return "RevSwanson";
-		case joaat("cs_samaritan"):
+		case joaat("CS_samaritan"):
 			return "CS_Samaritan";
-		case joaat("cs_strdeputy_01"):
+		case joaat("CS_strdeputy_01"):
 			return "StrDeputy_01";
-		case joaat("cs_strdeputy_02"):
+		case joaat("CS_strdeputy_02"):
 			return "StrDeputy_02";
-		case joaat("cs_strsheriff_01"):
-		case joaat("u_m_m_strsherriff_01"):
+		case joaat("CS_strsheriff_01"):
+		case joaat("U_M_M_STRSHERRIFF_01"):
 			return "StrSheriff_01";
-		case joaat("cs_susangrimshaw"):
+		case joaat("CS_susangrimshaw"):
 			return "SusanGrimshaw";
-		case joaat("cs_tavishgray"):
+		case joaat("CS_tavishgray"):
 			return "TavishGray";
-		case joaat("cs_theodorelevin"):
+		case joaat("CS_theodorelevin"):
 			return "TheodoreLevin";
-		case joaat("cs_thomasdown"):
+		case joaat("CS_thomasdown"):
 			return "ThomasDown";
-		case joaat("cs_tilly"):
+		case joaat("CS_tilly"):
 			return "Tilly";
-		case joaat("cs_uncle"):
+		case joaat("CS_UNCLE"):
 			return "Uncle";
-		case joaat("g_m_m_unicriminals_01"):
+		case joaat("G_M_M_UNICRIMINALS_01"):
 			return "G_M_M_UniCriminals_01";
-		case joaat("g_m_m_uniduster_01"):
+		case joaat("G_M_M_UniDuster_01"):
 			return "G_M_M_UNIDUSTER_01";
-		case joaat("cs_valsheriff"):
+		case joaat("CS_VALSHERIFF"):
 			return "CS_VALSHERIFF";
-		case joaat("s_m_m_marshallsrural_01"):
+		case joaat("S_M_M_MARSHALLSRURAL_01"):
 			return "S_M_M_MARSHALLSRURAL_01";
-		case joaat("u_m_o_vhtexoticshopkeeper_01"):
+		case joaat("U_M_O_VhTExoticShopkeeper_01"):
 			return "U_M_O_VHTEXOTICSHOPKEEPER_01";
-		case joaat("cs_sean"):
+		case joaat("CS_SEAN"):
 			return "Sean";
-		case joaat("cs_lenny"):
+		case joaat("CS_lenny"):
 			return "Lenny";
-		case joaat("cs_hercule"):
+		case joaat("CS_hercule"):
 			return "Hercule";
-		case joaat("cs_creolecaptain"):
+		case joaat("CS_CREOLECAPTAIN"):
 			return "CreoleCaptain";
-		case joaat("u_m_m_creolecaptain_01"):
+		case joaat("U_M_M_CreoleCaptain_01"):
 			return "U_M_M_CREOLECAPTAIN_01";
-		case joaat("cs_ringmaster"):
+		case joaat("CS_ringmaster"):
 			return "RingMaster";
-		case joaat("u_m_m_valbartender_01"):
+		case joaat("U_M_M_ValBartender_01"):
 			return "U_M_M_VALBARTENDER_01";
-		case joaat("a_m_m_emrfarmhand_01"):
+		case joaat("A_M_M_EmRFarmHand_01"):
 			return "A_M_M_EMRFARMHAND_01";
-		case joaat("a_m_m_grisurvivalist_01"):
+		case joaat("A_M_M_GriSurvivalist_01"):
 			return "A_M_M_GriSurvivalist_01";
-		case joaat("cs_lillymillet"):
+		case joaat("CS_lillymillet"):
 			return "LillyMillet";
-		case joaat("a_f_m_strtownfolk_01"):
+		case joaat("A_F_M_StrTownfolk_01"):
 			return "A_F_M_STRTOWNFOLK_01";
-		case joaat("a_m_m_strtownfolk_01"):
+		case joaat("A_M_M_StrTownfolk_01"):
 			return "A_M_M_STRTOWNFOLK_01";
-		case joaat("s_m_m_strlumberjack_01"):
+		case joaat("S_M_M_StrLumberjack_01"):
 			return "S_M_M_STRLUMBERJACK_01";
-		case joaat("g_m_m_unicriminals_02"):
+		case joaat("G_M_M_UNICRIMINALS_02"):
 			return "G_M_M_UniCriminals_02";
-		case joaat("g_m_m_unicornwallgoons_01"):
+		case joaat("G_M_M_UniCornwallGoons_01"):
 			return "G_M_M_UNICORNWALLGOONS_01";
-		case joaat("a_m_m_nbxupperclass_01"):
+		case joaat("A_M_M_NBXUpperClass_01"):
 			return "A_M_M_NBXUPPERCLASS_01";
-		case joaat("a_f_m_nbxupperclass_01"):
+		case joaat("A_F_M_NBXUpperClass_01"):
 			return "A_F_M_NBXUPPERCLASS_01";
-		case joaat("a_m_m_valfarmer_01"):
+		case joaat("A_M_M_ValFarmer_01"):
 			return "A_M_M_VALFARMER_01";
-		case joaat("a_m_m_valtownfolk_01"):
+		case joaat("A_M_M_ValTownfolk_01"):
 			return "A_M_M_VALTOWNFOLK_01";
-		case joaat("a_m_m_valtownfolk_02"):
+		case joaat("A_M_M_ValTownfolk_02"):
 			return "A_M_M_VALTOWNFOLK_02";
-		case joaat("a_f_m_valtownfolk_01"):
+		case joaat("A_F_M_ValTownfolk_01"):
 			return "A_F_M_VALTOWNFOLK_01";
-		case joaat("u_m_m_nbxbartender_01"):
+		case joaat("U_M_M_NbxBartender_01"):
 			return "U_M_M_NBXBARTENDER_01";
-		case joaat("cs_nbxexecuted"):
+		case joaat("CS_NbxExecuted"):
 			return "NBXExecuted";
-		case joaat("cs_rhodeputy_01"):
+		case joaat("CS_rhodeputy_01"):
 			return "RHODEPUTY_01";
-		case joaat("u_m_m_rhdsheriff_01"):
+		case joaat("U_M_M_RhdSheriff_01"):
 			return "RHDSHERIFF_01";
-		case joaat("cs_leighgray"):
+		case joaat("CS_leighgray"):
 			return "LeighGray";
-		case joaat("a_c_horse_morgan_flaxenchestnut"):
+		case joaat("A_C_Horse_Morgan_FlaxenChestnut"):
 			return "Horse_01";
-		case joaat("u_m_m_strgenstoreowner_01"):
+		case joaat("U_M_M_STRGENSTOREOWNER_01"):
 			return "U_M_M_StrGenStoreOwner_01";
-		case joaat("cs_tomdickens"):
+		case joaat("CS_TomDickens"):
 			return "TomDickens";
-		case joaat("cs_davidgeddes"):
+		case joaat("CS_DavidGeddes"):
 			return "DavidGeddes";
-		case joaat("cs_ansel_atherton"):
+		case joaat("CS_ansel_atherton"):
 			return "ANSEL_ATHERTON";
-		case joaat("cs_wrobel"):
+		case joaat("CS_WROBEL"):
 			return "CS_Wrobel";
-		case joaat("a_c_cow"):
+		case joaat("A_C_COW"):
 			return "COW";
-		case joaat("a_c_bull_01"):
+		case joaat("A_C_BULL_01"):
 			return "BULL";
-		case joaat("cs_albertcakeesquire"):
+		case joaat("CS_albertcakeesquire"):
 			return "ALBERTCAKEESQUIRE";
-		case joaat("u_m_o_blwgeneralstoreowner_01"):
+		case joaat("U_M_O_BlWGeneralStoreOwner_01"):
 			return "U_M_O_BLWGENERALSTOREOWNER_01";
-		case joaat("a_c_dogcatahoulacur_01"):
+		case joaat("A_C_DOGcatahoulacur_01"):
 			return "A_C_DOGCATAHOULACUR_01";
-		case joaat("a_c_dogrufus_01"):
+		case joaat("A_C_DogRufus_01"):
 			return "A_C_DOGRUFUS_01";
-		case joaat("a_c_doglion_01"):
+		case joaat("A_C_DogLion_01"):
 			return "A_C_DOGLION_01";
-		case joaat("cs_tigerhandler"):
+		case joaat("CS_TigerHandler"):
 			return "Handler";
-		case joaat("cs_valauctionboss_01"):
+		case joaat("CS_valauctionboss_01"):
 			return "VALAUCTIONBOSS_01";
-		case joaat("cs_nbxreceptionist_01"):
+		case joaat("CS_nbxreceptionist_01"):
 			return "NbxReceptionist_01";
-		case joaat("u_m_m_bivforeman_01"):
+		case joaat("U_M_M_BIVFOREMAN_01"):
 			return "U_M_M_BiVForeman_01";
-		case joaat("u_m_m_racforeman_01"):
+		case joaat("U_M_M_RaCForeman_01"):
 			return "U_M_M_RACFOREMAN_01";
-		case joaat("cs_chainprisoner_01"):
+		case joaat("CS_chainprisoner_01"):
 			return "CHAINPRISONER_01";
-		case joaat("cs_chainprisoner_02"):
+		case joaat("CS_chainprisoner_02"):
 			return "CHAINPRISONER_02";
-		case joaat("u_m_m_valpokerplayer_01"):
+		case joaat("U_M_M_VALPOKERPLAYER_01"):
 			return "U_M_M_ValPokerPlayer_01";
-		case joaat("u_m_m_valpokerplayer_02"):
+		case joaat("U_M_M_VALPOKERPLAYER_02"):
 			return "U_M_M_ValPokerPlayer_02";
-		case joaat("cs_duncangeddes"):
+		case joaat("CS_DUNCANGEDDES"):
 			return "DUNCANGEDDES";
-		case joaat("cs_angusgeddes"):
+		case joaat("CS_ANGUSGEDDES"):
 			return "ANGUSGEDDES";
-		case joaat("cs_evelynmiller"):
+		case joaat("CS_evelynmiller"):
 			return "EvelynMiller";
-		case joaat("cs_sistercalderon"):
+		case joaat("CS_sistercalderon"):
 			return "SISTERCALDERON";
-		case joaat("cs_edgarross"):
+		case joaat("CS_edgarross"):
 			return "EDGARROSS";
-		case joaat("cs_wintonholmes"):
+		case joaat("CS_WintonHolmes"):
 			return "U_M_M_GriSurvivalist_01";
-		case joaat("u_f_m_rkshomesteadtenant_01"):
+		case joaat("U_F_M_RkSHomesteadTenant_01"):
 			return "U_F_M_RKSHOMESTEADTENANT_01";
-		case joaat("cs_rockyseven_widow"):
+		case joaat("CS_ROCKYSEVEN_WIDOW"):
 			return "U_F_M_RKSHOMESTEADTENANT_01";
-		case joaat("u_m_m_bht_strawberryduel"):
+		case joaat("U_M_M_BHT_STRAWBERRYDUEL"):
 			return "U_M_M_BHT_STRAWBERRYDUEL";
-		case joaat("u_m_m_rhdtrainstationworker_01"):
+		case joaat("U_M_M_RhdTrainStationWorker_01"):
 			return "StationWorker";
-		case joaat("cs_levisimon"):
+		case joaat("CS_LeviSimon"):
 			return "LEVISIMON";
-		case joaat("s_m_m_fussarhenchman_01"):
+		case joaat("S_M_M_FussarHenchman_01"):
 			return "S_M_M_GULFUSSARS_01";
-		case joaat("a_c_donkey_01"):
+		case joaat("A_C_Donkey_01"):
 			return "A_C_DONKEY_01";
-		case joaat("a_m_m_guatownfolk_01"):
+		case joaat("A_M_M_GuaTownfolk_01"):
 			return "S_M_M_ISPWORKER_01";
-		case joaat("a_m_o_guatownfolk_01"):
+		case joaat("A_M_O_GuaTownfolk_01"):
 			return "S_M_M_ISPWORKER_02";
-		case joaat("u_m_o_valbartender_01"):
+		case joaat("U_M_O_ValBartender_01"):
 			return "U_M_O_ValBartender_01";
-		case joaat("u_m_m_nbxbartender_02"):
+		case joaat("U_M_M_NbxBartender_02"):
 			return "U_M_M_NBXBARTENDER_02";
-		case joaat("cs_unidusterjail_01"):
+		case joaat("CS_UNIDUSTERJAIL_01"):
 			return "CS_UNIDUSTERJAIL_01";
-		case joaat("a_m_m_rhdtownfolk_01"):
+		case joaat("A_M_M_RHDTownFolk_01"):
 			return "A_M_M_RHDTOWNFOLK_01";
-		case joaat("u_m_m_unibountyhunter_01"):
+		case joaat("U_M_M_UniBountyHunter_01"):
 			return "U_M_M_UNIBOUNTYHUNTER_01";
-		case joaat("u_m_m_unibountyhunter_02"):
+		case joaat("U_M_M_UniBountyHunter_02"):
 			return "U_M_M_UNIBOUNTYHUNTER_02";
-		case joaat("cs_brotherdorkins"):
+		case joaat("CS_brotherdorkins"):
 			return "BrotherDorkins";
-		case joaat("g_m_m_unibraithwaites_01"):
+		case joaat("G_M_M_UNIBRAITHWAITES_01"):
 			return "G_M_M_UniBraithwaites_01";
-		case joaat("a_m_m_gamhighsociety_01"):
+		case joaat("A_M_M_GaMHighSociety_01"):
 			return "A_M_M_GAMHIGHSOCIETY_01";
-		case joaat("u_m_m_strfreightstationowner_01"):
+		case joaat("U_M_M_StrFreightStationOwner_01"):
 			return "U_M_M_STRFREIGHTSTATIONOWNER_01";
-		case joaat("cs_eagleflies"):
+		case joaat("CS_EAGLEFLIES"):
 			return "EagleFlies";
-		case joaat("cs_rainsfall"):
+		case joaat("CS_rainsfall"):
 			return "CS_RAINSFALL";
-		case joaat("a_m_m_wapwarriors_01"):
+		case joaat("A_M_M_WAPWARRIORS_01"):
 			return "A_M_M_WapWarriors_01";
-		case joaat("a_m_y_nbxstreetkids_01"):
+		case joaat("A_M_Y_NBXStreetKids_01"):
 			return "A_M_Y_NBXSTREETKIDS_01";
-		case joaat("u_m_m_bht_shackescape"):
+		case joaat("U_M_M_BHT_SHACKESCAPE"):
 			return "U_M_M_BHT_SHACKESCAPE";
-		case joaat("a_m_m_htlroughtravellers_01"):
+		case joaat("A_M_M_HtlRoughTravellers_01"):
 			return "A_M_M_HTLROUGHTRAVELLERS_01";
-		case joaat("cs_lemiuxassistant"):
+		case joaat("CS_LemiuxAssistant"):
 			return "LemiuxAssistant";
-		case joaat("p_keys01x"):
+		case joaat("P_KEYS01X"):
 			return "p_keys01x";
-		case joaat("cs_balloonoperator"):
+		case joaat("CS_balloonoperator"):
 			return "CS_BALLOONOPERATOR";
-		case joaat("a_m_m_bivworker_01"):
+		case joaat("A_M_M_BIVWORKER_01"):
 			return "Worker1";
-		case joaat("u_m_m_bht_mineforeman"):
+		case joaat("U_M_M_BHT_MineForeman"):
 			return "U_M_M_BHT_MINEFOREMAN";
-		case joaat("a_m_m_nbxslums_01"):
+		case joaat("A_M_M_NBXSLUMS_01"):
 			return "A_M_M_NbxSlums_01";
-		case joaat("cs_sdpriest"):
+		case joaat("CS_SDPRIEST"):
 			return "U_M_M_NBXPRIEST_01";
-		case joaat("a_c_bear_01"):
+		case joaat("A_C_BEAR_01"):
 			return "A_C_BEAR_01";
-		case joaat("cs_marshall_thurwell"):
+		case joaat("CS_MARSHALL_THURWELL"):
 			return "MARSHALL_THURWELL";
-		case joaat("cs_famousgunslinger_02"):
+		case joaat("CS_famousgunslinger_02"):
 			return "CS_FAMOUSGUNSLINGER_02";
-		case joaat("cs_sd_streetkid_01"):
+		case joaat("CS_SD_STREETKID_01"):
 			return "cs_sd_streetkid_01";
-		case joaat("cs_sd_streetkid_02"):
+		case joaat("CS_SD_STREETKID_02"):
 			return "cs_sd_streetkid_02";
-		case joaat("cs_obediahhinton"):
+		case joaat("CS_obediahhinton"):
 			return "ObediahHinton";
-		case joaat("cs_poisonwellshaman"):
+		case joaat("CS_POISONWELLSHAMAN"):
 			return "PoisonWellShaman";
-		case joaat("cs_cooper"):
+		case joaat("CS_COOPER"):
 			return "A_M_M_EMRFARMHAND_01";
-		case joaat("u_m_m_bht_benedictallbright"):
+		case joaat("u_m_M_BHT_BENEDICTALLBRIGHT"):
 			return "u_m_m_bht_benedictallbright";
-		case joaat("cs_jules"):
+		case joaat("CS_Jules"):
 			return "Jules";
-		case joaat("cs_mrdevon"):
+		case joaat("CS_MRDEVON"):
 			return "MRDEVON";
-		case joaat("cs_mrwayne"):
+		case joaat("CS_MRWAYNE"):
 			return "MRWAYNE";
-		case joaat("cs_paytah"):
+		case joaat("CS_PAYTAH"):
 			return "PAYTAH";
-		case joaat("cs_valdeputy_01"):
+		case joaat("cs_VALDEPUTY_01"):
 			return "CS_VALDEPUTY_01";
-		case joaat("mes_sadie5_males_01"):
+		case joaat("MES_SADIE5_Males_01"):
 			return "MES_SADIE5_MALES_01^1";
-		case joaat("a_m_m_nbxdockworkers_01"):
+		case joaat("A_M_M_NbxDockWorkers_01"):
 			return "A_M_M_NBXDOCKWORKERS_01";
-		case joaat("u_m_m_valsheriff_01"):
+		case joaat("U_M_M_ValSheriff_01"):
 			return "U_M_M_VALSHERIFF_01";
-		case joaat("s_m_m_bankclerk_01"):
+		case joaat("S_M_M_BankClerk_01"):
 			return "S_M_M_BANKCLERK_01";
-		case joaat("u_m_m_nbxbronteasc_01"):
+		case joaat("U_M_M_NbxBronteAsc_01"):
 			return "U_M_M_NBXBRONTEASC_01";
-		case joaat("p_c_horse_01"):
+		case joaat("P_C_Horse_01"):
 			return "P_C_HORSE_01";
 	}
 	return "";

@@ -161,11 +161,11 @@ void func_6()
 				iVar0 = ENTITY::GET_ENTITY_MODEL(Local_18.f_5);
 				switch (iVar0)
 				{
-					case joaat("s_maprolled01x"):
+					case joaat("S_MAPROLLED01X"):
 						break;
-					case joaat("s_maprolled02x"):
+					case joaat("S_MAPROLLED02X"):
 						break;
-					case joaat("s_maprolled03x"):
+					case joaat("S_MAPROLLED03X"):
 						break;
 					default:
 						break;

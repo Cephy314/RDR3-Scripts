@@ -619,9 +619,9 @@ void func_14(int iParam0)
 	iParam0 = iParam0;
 	if (func_20() == -1)
 	{
-		func_46(&uLocal_19, 945, 3, "", joaat("chuckwagon000x"), 2066.077f, -879.7555f, 42.3275f, -179.75f, 2031331786, 0);
-		func_46(&uLocal_39, 946, 5, "", joaat("chuckwagon000x"), 2070.248f, -798.5662f, 42.3792f, -1.05f, 2031331786, 0);
-		func_46(&uLocal_59, 947, 5, "", joaat("chuckwagon000x"), 2009.136f, -822.2015f, 42.3163f, -78f, 2031331786, 0);
+		func_46(&uLocal_19, 945, 3, "", joaat("CHUCKWAGON000X"), 2066.077f, -879.7555f, 42.3275f, -179.75f, 2031331786, 0);
+		func_46(&uLocal_39, 946, 5, "", joaat("CHUCKWAGON000X"), 2070.248f, -798.5662f, 42.3792f, -1.05f, 2031331786, 0);
+		func_46(&uLocal_59, 947, 5, "", joaat("CHUCKWAGON000X"), 2009.136f, -822.2015f, 42.3163f, -78f, 2031331786, 0);
 	}
 }
 
@@ -1523,7 +1523,7 @@ void func_65(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_119(Global_1935630, 8192);
-	func_121(func_120(-1532769513, joaat("areas")), 1);
+	func_121(func_120(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1868,14 +1868,14 @@ int func_72(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
+		case joaat("DRIZZLE"):
 		case joaat("thunder"):
-		case joaat("shower"):
+		case joaat("SHOWER"):
 		case joaat("sleet"):
-		case joaat("hurricane"):
+		case joaat("HURRICANE"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -4018,7 +4018,7 @@ int func_142()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}

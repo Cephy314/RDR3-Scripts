@@ -827,7 +827,7 @@ int func_44(int iParam0)
 		func_76();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_26, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_Travel"), joaat("MPAC_Travel_012")))
 		{
 			switch (iLocal_26)
 			{
@@ -904,15 +904,15 @@ int func_47()
 
 int func_48()
 {
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_mission_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Mission_Controller"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_deathmatch_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Deathmatch_Controller"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_race_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Race_Controller"), -1, 0, 0))
 	{
 		return 1;
 	}
@@ -1380,7 +1380,7 @@ void func_73(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_121(Global_1939178, 16384);
-	func_123(func_122(-1532769513, joaat("areas")), 1);
+	func_123(func_122(-1532769513, joaat("AREAS")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -1647,14 +1647,14 @@ int func_75(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
+		case joaat("DRIZZLE"):
 		case joaat("thunder"):
-		case joaat("shower"):
+		case joaat("SHOWER"):
 		case joaat("sleet"):
-		case joaat("hurricane"):
+		case joaat("HURRICANE"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -1951,7 +1951,7 @@ int func_77(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }

@@ -4183,7 +4183,7 @@ int func_189(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case joaat("bounty_board"):
-		case joaat("GUN_FOR_HIRE"):
+		case joaat("Gun_for_Hire"):
 		case -260420884:
 		case -232478158:
 		case 78055447:

@@ -1074,7 +1074,7 @@ int func_46()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -1176,7 +1176,7 @@ int func_50()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}
@@ -1940,7 +1940,7 @@ void func_78(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_152(Global_1935630, 8192);
-	func_154(func_153(-1532769513, joaat("areas")), 1);
+	func_154(func_153(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -2285,14 +2285,14 @@ int func_85(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
+		case joaat("DRIZZLE"):
 		case joaat("thunder"):
-		case joaat("shower"):
+		case joaat("SHOWER"):
 		case joaat("sleet"):
-		case joaat("hurricane"):
+		case joaat("HURRICANE"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -3359,51 +3359,51 @@ int func_117(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("annesburg"):
+		case joaat("Annesburg"):
 			return 78;
-		case joaat("ARMADILLO"):
+		case joaat("Armadillo"):
 			return 120;
-		case joaat("beechershope"):
+		case joaat("BeechersHope"):
 			return 37;
-		case joaat("blackwater"):
+		case joaat("BLACKWATER"):
 			return 38;
 		case 1778899666:
 			return 93;
-		case joaat("BUTCHER"):
+		case joaat("Butcher"):
 			return 82;
 		case 1862420670:
 			return 95;
-		case joaat("cornwall"):
+		case joaat("CORNWALL"):
 			return 65;
 		case -473051294:
 			return 69;
-		case joaat("lagras"):
+		case joaat("Lagras"):
 			return 3;
 		case 1463094051:
 			return 110;
-		case joaat("rhodes"):
+		case joaat("Rhodes"):
 			return 105;
 		case -765540529:
 			return 5;
 		case 2147354003:
 			return 32;
-		case joaat("strawberry"):
+		case joaat("Strawberry"):
 			return 26;
-		case joaat("tumbleweed"):
+		case joaat("Tumbleweed"):
 			return 115;
-		case joaat("valentine"):
+		case joaat("Valentine"):
 			return 76;
-		case joaat("vanhorn"):
+		case joaat("VanHorn"):
 			return 92;
 		case joaat("wallace"):
 			return 35;
-		case joaat("wapiti"):
+		case joaat("Wapiti"):
 			return 56;
 		case -1207133769:
 		case 201158410:
 		case 1654810713:
 			return 57;
-		case joaat("manicato"):
+		case joaat("Manicato"):
 			return 61;
 	}
 	return -1;
@@ -5706,7 +5706,7 @@ void func_222(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 			}
 		}
 	}
-	Var8 = { func_257(joaat("honor_current")) };
+	Var8 = { func_257(joaat("HONOR_CURRENT")) };
 	STATS::STAT_ID_SET_INT(&Var8, Global_40.f_11095.f_35, true);
 	if (!bParam1)
 	{

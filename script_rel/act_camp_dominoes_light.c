@@ -226,7 +226,7 @@ int func_2()
 					{
 						vLocal_39 = { func_33(func_16()) };
 						vLocal_39.f_2 = (vLocal_39.z + 1.1f);
-						iLocal_38 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vLocal_39, 0f, 0f, 0f, fLocal_42, false, 2);
+						iLocal_38 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vLocal_39, 0f, 0f, 0f, fLocal_42, false, 2);
 					}
 					bLocal_33 = true;
 					func_34(4);
@@ -274,7 +274,7 @@ int func_2()
 						{
 							OBJECT::DELETE_OBJECT(&iVar5);
 						}
-						iVar5 = func_44(vLocal_19, joaat("p_bowl04x_stew"), 4f, 1);
+						iVar5 = func_44(vLocal_19, joaat("P_BOWL04X_STEW"), 4f, 1);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar5))
 						{
 							OBJECT::DELETE_OBJECT(&iVar5);
@@ -2757,7 +2757,7 @@ int func_111(int iParam0, int iParam1)
 		case 3:
 			return joaat("fillet_sp");
 		case 4:
-			return joaat("milking_cow");
+			return joaat("MILKING_COW");
 		case 5:
 			return joaat("es_clean_stalls");
 		case 6:
@@ -5372,7 +5372,7 @@ int func_234(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("prop_human_seat_chair")))
+			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
 			{
 				return 1;
 			}
@@ -9517,7 +9517,7 @@ float func_349()
 
 float func_350()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 0f;
 	}

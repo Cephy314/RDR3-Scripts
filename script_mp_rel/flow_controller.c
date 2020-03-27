@@ -2535,8 +2535,8 @@ int func_93()
 {
 	int iVar0;
 
-	iVar0 = func_164(joaat("wins"), joaat("FETCH_TRADER_SELL_CONTESTED"));
-	iVar0 = (iVar0 + func_164(joaat("wins"), joaat("FETCH_TRADER_SELL_SELL_GOODS")));
+	iVar0 = func_164(joaat("WINS"), joaat("FETCH_TRADER_SELL_CONTESTED"));
+	iVar0 = (iVar0 + func_164(joaat("WINS"), joaat("FETCH_TRADER_SELL_SELL_GOODS")));
 	if (iVar0 > 0)
 	{
 		return -2;
@@ -4404,8 +4404,8 @@ int func_162(int iParam0)
 	Var2.f_26 = 2;
 	Var2.f_26.f_1 = -1;
 	Var2.f_26.f_1.f_1 = -1;
-	Var2.f_29 = joaat("none");
-	Var2.f_29.f_1 = joaat("none");
+	Var2.f_29 = joaat("None");
+	Var2.f_29.f_1 = joaat("None");
 	Var33.f_1 = -1;
 	if (!func_228())
 	{
@@ -5384,8 +5384,8 @@ int func_229(var uParam0, int iParam1)
 	Var225.f_26 = 2;
 	Var225.f_26.f_1 = -1;
 	Var225.f_26.f_1.f_1 = -1;
-	Var225.f_29 = joaat("none");
-	Var225.f_29.f_1 = joaat("none");
+	Var225.f_29 = joaat("None");
+	Var225.f_29.f_1 = joaat("None");
 	Var256 = -1;
 	Var256.f_1 = -1;
 	Var256.f_2 = -1;
@@ -5396,8 +5396,8 @@ int func_229(var uParam0, int iParam1)
 	Var256.f_26 = 2;
 	Var256.f_26.f_1 = -1;
 	Var256.f_26.f_1.f_1 = -1;
-	Var256.f_29 = joaat("none");
-	Var256.f_29.f_1 = joaat("none");
+	Var256.f_29 = joaat("None");
+	Var256.f_29.f_1 = joaat("None");
 	Var287 = 3;
 	Var287.f_1 = -1;
 	Var287.f_1.f_1 = -1;
@@ -5409,8 +5409,8 @@ int func_229(var uParam0, int iParam1)
 	Var287.f_1.f_26 = 2;
 	Var287.f_1.f_26.f_1 = -1;
 	Var287.f_1.f_26.f_1.f_1 = -1;
-	Var287.f_1.f_29 = joaat("none");
-	Var287.f_1.f_29.f_1 = joaat("none");
+	Var287.f_1.f_29 = joaat("None");
+	Var287.f_1.f_29.f_1 = joaat("None");
 	Var287.f_1.f_31 = -1;
 	Var287.f_1.f_31.f_1 = -1;
 	Var287.f_1.f_31.f_2 = -1;
@@ -5421,8 +5421,8 @@ int func_229(var uParam0, int iParam1)
 	Var287.f_1.f_31.f_26 = 2;
 	Var287.f_1.f_31.f_26.f_1 = -1;
 	Var287.f_1.f_31.f_26.f_1.f_1 = -1;
-	Var287.f_1.f_31.f_29 = joaat("none");
-	Var287.f_1.f_31.f_29.f_1 = joaat("none");
+	Var287.f_1.f_31.f_29 = joaat("None");
+	Var287.f_1.f_31.f_29.f_1 = joaat("None");
 	Var287.f_1.f_31.f_31 = -1;
 	Var287.f_1.f_31.f_31.f_1 = -1;
 	Var287.f_1.f_31.f_31.f_2 = -1;
@@ -5433,8 +5433,8 @@ int func_229(var uParam0, int iParam1)
 	Var287.f_1.f_31.f_31.f_26 = 2;
 	Var287.f_1.f_31.f_31.f_26.f_1 = -1;
 	Var287.f_1.f_31.f_31.f_26.f_1.f_1 = -1;
-	Var287.f_1.f_31.f_31.f_29 = joaat("none");
-	Var287.f_1.f_31.f_31.f_29.f_1 = joaat("none");
+	Var287.f_1.f_31.f_31.f_29 = joaat("None");
+	Var287.f_1.f_31.f_31.f_29.f_1 = joaat("None");
 	uVar381 = 3;
 	Var395 = -1;
 	uVar397 = -1;
@@ -6926,7 +6926,7 @@ int func_300(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case joaat("bounty_board"):
-		case joaat("GUN_FOR_HIRE"):
+		case joaat("Gun_for_Hire"):
 		case -260420884:
 		case -232478158:
 		case 78055447:
@@ -10018,7 +10018,7 @@ int func_340(int iParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (uParam1->f_29.f_1 == joaat("none"))
+	if (uParam1->f_29.f_1 == joaat("None"))
 	{
 		return 0;
 	}
@@ -10044,13 +10044,13 @@ int func_340(int iParam0, var uParam1, int iParam2)
 	}
 	switch (uParam1->f_29.f_1)
 	{
-		case joaat("positive"):
+		case joaat("POSITIVE"):
 			if (iVar1 != 1)
 			{
 				return 7;
 			}
 			break;
-		case joaat("negative"):
+		case joaat("NEGATIVE"):
 			if (iVar1 != 2)
 			{
 				return 8;
@@ -10100,8 +10100,8 @@ int func_342(var uParam0, int iParam1)
 	Var0.f_26 = 2;
 	Var0.f_26.f_1 = -1;
 	Var0.f_26.f_1.f_1 = -1;
-	Var0.f_29 = joaat("none");
-	Var0.f_29.f_1 = joaat("none");
+	Var0.f_29 = joaat("None");
+	Var0.f_29.f_1 = joaat("None");
 	func_384(&Var0);
 	if (!func_30(Var0))
 	{
@@ -10237,7 +10237,7 @@ int func_345(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			if (func_391(vVar8))
 			{
 			}
-			else if (VOLUME::_0x397769175A7DBB30(vVar8, 20f, 0, 0, joaat("net_train")))
+			else if (VOLUME::_0x397769175A7DBB30(vVar8, 20f, 0, 0, joaat("NET_TRAIN")))
 			{
 				return 34;
 			}
@@ -10267,7 +10267,7 @@ int func_346(var uParam0, int iParam1)
 			if (func_391(vVar4))
 			{
 			}
-			else if (VOLUME::_0x397769175A7DBB30(vVar4, 20f, 0, 0, joaat("net_train")))
+			else if (VOLUME::_0x397769175A7DBB30(vVar4, 20f, 0, 0, joaat("NET_TRAIN")))
 			{
 				return 34;
 			}
@@ -11580,36 +11580,36 @@ int func_414(int iParam0, int iParam1)
 
 	if (!func_443(iParam0))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	if (!func_444(&Var1))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 7, 0, 0, 1))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 8, iParam0, 0, 1))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 24, 0, 0, 0))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 25, -1395074057, 0, 0))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	iVar0 = func_447(Var1, 4);
 	if (iVar0 != 1)
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	if (!func_445(Var1, &(Var1.f_1), 26, 0, 0, 1))
 	{
-		return joaat("none");
+		return joaat("None");
 	}
 	uVar6 = func_448(Var1);
 	if (iParam1 == 0)
@@ -11629,37 +11629,37 @@ int func_415(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4)
 	if (!func_443(iParam0))
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	if (!func_444(&Var0))
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 7, 0, 0, 1))
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 8, iParam0, 0, 1))
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 21, 0, 0, 0))
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	if (!func_445(Var0, &(Var0.f_1), 22, iParam2, 0, 0))
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	*uParam3 = func_449(Var0);
@@ -11675,7 +11675,7 @@ int func_415(int iParam0, int iParam1, int iParam2, var uParam3, var uParam4)
 	if (*uParam3 == 0)
 	{
 		*uParam3 = -1;
-		*uParam4 = joaat("none");
+		*uParam4 = joaat("None");
 		return 0;
 	}
 	return 1;
@@ -12089,7 +12089,7 @@ int func_438(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("Challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -12098,7 +12098,7 @@ int func_438(int iParam0)
 			iVar0 = joaat("feature");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -12122,16 +12122,16 @@ int func_438(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("Title");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -12431,7 +12431,7 @@ bool func_457(vector3 vParam0, float fParam3, bool bParam4)
 
 	if (!bParam4)
 	{
-		iVar0 = joaat("net_train");
+		iVar0 = joaat("NET_TRAIN");
 	}
 	return VOLUME::_0x397769175A7DBB30(vParam0, fParam3, 0, 0, iVar0);
 }
@@ -12490,9 +12490,9 @@ int func_462(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("primary"):
+		case joaat("Primary"):
 			return 0;
-		case joaat("secondary"):
+		case joaat("Secondary"):
 			return 1;
 		case joaat("Trolley"):
 			return 2;
@@ -12734,7 +12734,7 @@ int func_481(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("bounty_board"):
-		case joaat("GUN_FOR_HIRE"):
+		case joaat("Gun_for_Hire"):
 		case -260420884:
 		case -232478158:
 		case 78055447:

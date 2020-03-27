@@ -1172,7 +1172,7 @@ int func_7(var uParam0)
 			break;
 		case 10:
 			func_17(uParam0);
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("journal")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("JOURNAL")) == 0)
 			{
 				AUDIO::_0xAC84686C06184B0D("read_page", "journal_scenes");
 				func_20(uParam0, 11);

@@ -96,7 +96,7 @@ void func_6()
 		iLocal_0 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("ObjectExchange")))
 	{
 		func_12(12.5f, 1, 0, 1);
 		func_13(10f, 1);
@@ -2167,7 +2167,7 @@ int func_117()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}
@@ -2448,7 +2448,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 0f;
 	}

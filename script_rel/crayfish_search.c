@@ -173,8 +173,8 @@ int func_7(var uParam0, int iParam1)
 	if (iParam1->f_5 && func_17())
 	{
 		iParam1->f_5 = 0;
-		func_19(joaat("AT_CRAYFISH"), joaat("a_c_crawfish_01"), func_18(PLAYER::PLAYER_ID()), 1, 1);
-		Var0 = { func_20(joaat("collected"), joaat("AT_CRAYFISH")) };
+		func_19(joaat("AT_CRAYFISH"), joaat("A_C_Crawfish_01"), func_18(PLAYER::PLAYER_ID()), 1, 1);
+		Var0 = { func_20(joaat("COLLECTED"), joaat("AT_CRAYFISH")) };
 		STATS::_0x6A0184E904CDF25E(&Var0, 1);
 		return 1;
 	}
@@ -434,7 +434,7 @@ void func_19(int iParam0, int iParam1, vector3 vParam2, bool bParam5, int iParam
 	}
 	if (Global_1572887->f_12 == -1)
 	{
-		if (Global_40.f_39 == joaat("player_zero"))
+		if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 		{
 			iVar2 = func_28(iParam0, iParam1, 1);
 			if (iVar2 != 0)
@@ -614,7 +614,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 {
 	switch (iParam0)
 	{
-		case -43987615: /* GXTEntry: "Armadillo" */
+		case joaat("AT_ARMADILLO"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ARMADILLO_AR");
@@ -624,7 +624,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ARMADILLO_JN");
 			}
 			break;
-		case 597440621: /* GXTEntry: "Badger" */
+		case joaat("AT_BADGER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BADGER_AR");
@@ -674,7 +674,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BEAR_JN");
 			}
 			break;
-		case 1297902195: /* GXTEntry: "Beaver" */
+		case joaat("AT_BEAVER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BEAVER_AR");
@@ -684,7 +684,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BEAVER_JN");
 			}
 			break;
-		case 636730081:
+		case joaat("AT_BEAVER_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BEAVER_AR");
@@ -694,7 +694,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BEAVER_JN");
 			}
 			break;
-		case 1516275256: /* GXTEntry: "Blue Jay" */
+		case joaat("AT_BLUEJAY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BLUE_JAY_AR");
@@ -704,7 +704,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BLUE_JAY_JN");
 			}
 			break;
-		case 640966621: /* GXTEntry: "Boar" */
+		case joaat("AT_BOAR"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WILD_BOAR_AR");
@@ -714,7 +714,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_WILD_BOAR_JN");
 			}
 			break;
-		case 950257367:
+		case joaat("AT_BOAR_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BOAR_AR");
@@ -724,7 +724,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BOAR_JN");
 			}
 			break;
-		case -1055552242: /* GXTEntry: "Buck" */
+		case joaat("AT_BUCK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WHITETAIL_BUCK_AR");
@@ -734,7 +734,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_WHITETAIL_BUCK_JN");
 			}
 			break;
-		case -1894468643:
+		case joaat("AT_BUCK_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BUCK_AR");
@@ -744,7 +744,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BUCK_JN");
 			}
 			break;
-		case 1489890323: /* GXTEntry: "Bison" */
+		case joaat("AT_BUFFALO"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BISON_AR");
@@ -754,7 +754,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BISON_JN");
 			}
 			break;
-		case 2111267495:
+		case joaat("AT_BUFFALO_TATANKA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BUFFALO_AR");
@@ -764,7 +764,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BUFFALO_JN");
 			}
 			break;
-		case -1550790546:
+		case joaat("AT_BUFFALO_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_WHITE_BUFFALO_AR");
@@ -774,7 +774,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_WHITE_BUFFALO_JN");
 			}
 			break;
-		case 1028084064:
+		case joaat("AT_BULL_ANGUS"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BULL_AR");
@@ -784,7 +784,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BULL_JN");
 			}
 			break;
-		case -1327130182:
+		case joaat("AT_BULL_DEVON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DEVON_BULL_AR");
@@ -794,7 +794,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DEVON_BULL_JN");
 			}
 			break;
-		case -375262254:
+		case joaat("AT_BULL_HEREFORD"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_HEREFORD_BULL_AR");
@@ -804,7 +804,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_HEREFORD_BULL_JN");
 			}
 			break;
-		case 1339926283: /* GXTEntry: "Bullfrog" */
+		case joaat("AT_BULLFROG"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BULLFROG_AR");
@@ -814,7 +814,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BULLFROG_JN");
 			}
 			break;
-		case -1847199476: /* GXTEntry: "Californian Condor" */
+		case joaat("AT_CALIFORNIACONDOR"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CALIFORNIAN_CONDOR_AR");
@@ -824,7 +824,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CALIFORNIAN_CONDOR_JN");
 			}
 			break;
-		case 1075520399: /* GXTEntry: "Cardinal" */
+		case joaat("AT_CARDINAL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CARDINAL_AR");
@@ -844,7 +844,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CAT_JN");
 			}
 			break;
-		case -1273168083: /* GXTEntry: "Cedar Waxwing" */
+		case joaat("AT_CEDARWAXWING"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CEDAR_WAXWING_AR");
@@ -854,7 +854,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CEDAR_WAXWING_JN");
 			}
 			break;
-		case 2059272711: /* GXTEntry: "Chicken" */
+		case joaat("AT_CHICKEN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DOMINIQUE_CHICKEN_AR");
@@ -864,7 +864,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DOMINIQUE_CHICKEN_JN");
 			}
 			break;
-		case -943371758: /* GXTEntry: "Chicken" */
+		case joaat("AT_CHICKEN_PRAIRIE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PRARIE_CHICKEN_AR");
@@ -874,7 +874,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PRARIE_CHICKEN_JN");
 			}
 			break;
-		case 1190285160:
+		case joaat("AT_CHICKEN_LEGHORN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGHORN_CHICKEN_AR");
@@ -884,7 +884,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGHORN_CHICKEN_JN");
 			}
 			break;
-		case -674936781:
+		case joaat("AT_CHICKEN_JAVA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_JAVA_CHICKEN_AR");
@@ -894,7 +894,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_JAVA_CHICKEN_JN");
 			}
 			break;
-		case -2045434273: /* GXTEntry: "Chipmunk" */
+		case joaat("AT_CHIPMUNK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CHIPMUNK_AR");
@@ -904,7 +904,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CHIPMUNK_JN");
 			}
 			break;
-		case 1677450645: /* GXTEntry: "Cormorant" */
+		case joaat("AT_CORMORANT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DOUBLE_CRESTED_CORMORANT_AR");
@@ -914,7 +914,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DOUBLE_CRESTED_CORMORANT_JN");
 			}
 			break;
-		case -2069413633:
+		case joaat("AT_CORMORANT_NEO"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_NEOTROPIC_CORMORANT_AR");
@@ -924,7 +924,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_NEOTROPIC_CORMORANT_JN");
 			}
 			break;
-		case -1071812884: /* GXTEntry: "Cougar" */
+		case joaat("AT_COUGAR"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_COUGAR_AR");
@@ -934,7 +934,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_COUGAR_JN");
 			}
 			break;
-		case -973690007:
+		case joaat("AT_COUGAR_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_COUGAR_AR");
@@ -954,7 +954,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CRACKER_COW_JN");
 			}
 			break;
-		case -564442545: /* GXTEntry: "Coyote" */
+		case joaat("AT_COYOTE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_COYOTE_AR");
@@ -964,7 +964,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_COYOTE_JN");
 			}
 			break;
-		case 1210759497:
+		case joaat("AT_COYOTE_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_COYOTE_AR");
@@ -974,7 +974,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_COYOTE_JN");
 			}
 			break;
-		case 1220494366: /* GXTEntry: "Crab" */
+		case joaat("AT_CRAB"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CRAB_AR");
@@ -984,7 +984,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CRAB_JN");
 			}
 			break;
-		case -1923720634: /* GXTEntry: "Crane" */
+		case joaat("AT_CRANE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WHOOPING_CRANE_AR");
@@ -994,7 +994,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_WHOOPING_CRANE_JN");
 			}
 			break;
-		case -1136838805:
+		case joaat("AT_CRANE_SAND"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SANDHILL_CRANE_AR");
@@ -1014,7 +1014,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CRAYFISH_JN");
 			}
 			break;
-		case 613321581: /* GXTEntry: "Crow" */
+		case joaat("AT_CROW"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_AMERICAN_CROW_AR");
@@ -1024,7 +1024,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_AMERICAN_CROW_JN");
 			}
 			break;
-		case -510702611: /* GXTEntry: "Deer" */
+		case joaat("AT_DEER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DEER_AR");
@@ -1164,7 +1164,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DONKEY_JN");
 			}
 			break;
-		case -1350246467: /* GXTEntry: "Duck" */
+		case joaat("AT_DUCK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_MALLARD_DUCK_AR");
@@ -1174,7 +1174,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_MALLARD_DUCK_JN");
 			}
 			break;
-		case -2146232868:
+		case joaat("AT_DUCK_PEKIN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PEKING_DUCK_AR");
@@ -1184,7 +1184,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PEKING_DUCK_JN");
 			}
 			break;
-		case 2104011353: /* GXTEntry: "Eagle" */
+		case joaat("AT_EAGLE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BALD_EAGLE_AR");
@@ -1194,7 +1194,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BALD_EAGLE_JN");
 			}
 			break;
-		case -1673415831:
+		case joaat("AT_EAGLE_GOLDEN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_GOLDEN_EAGLE_AR");
@@ -1204,7 +1204,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_GOLDEN_EAGLE_JN");
 			}
 			break;
-		case 1157397403: /* GXTEntry: "Egret" */
+		case joaat("AT_EGRET"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_REDDISH_EGRET_AR");
@@ -1214,7 +1214,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_REDDISH_EGRET_JN");
 			}
 			break;
-		case 1374755253:
+		case joaat("AT_EGRET_LITTLE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LITTLE_EGRET_AR");
@@ -1224,7 +1224,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LITTLE_EGRET_JN");
 			}
 			break;
-		case -1203519405:
+		case joaat("AT_EGRET_SNOWY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SNOWY_EGRET_AR");
@@ -1234,7 +1234,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SNOWY_EGRET_JN");
 			}
 			break;
-		case -74829863: /* GXTEntry: "Elk" */
+		case joaat("AT_ELK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ELK_F_AR");
@@ -1244,7 +1244,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ELK_F_JN");
 			}
 			break;
-		case 702805627:
+		case joaat("AT_ELK_BULL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ELK_AR");
@@ -1254,7 +1254,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ELK_JN");
 			}
 			break;
-		case 1895708243:
+		case joaat("AT_ELK_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_ELK_AR");
@@ -1264,7 +1264,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_ELK_JN");
 			}
 			break;
-		case -1003674917: /* GXTEntry: "Fox" */
+		case joaat("AT_FOX"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_FOX_AR");
@@ -1274,7 +1274,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_FOX_JN");
 			}
 			break;
-		case -487429551:
+		case joaat("AT_FOX_GRAY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_GREY_FOX_AR");
@@ -1284,7 +1284,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_GREY_FOX_JN");
 			}
 			break;
-		case -853417084:
+		case joaat("AT_FOX_SILVER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SILVER_FOX_AR");
@@ -1294,7 +1294,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SILVER_FOX_JN");
 			}
 			break;
-		case 225698625:
+		case joaat("AT_FOX_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_FOX_AR");
@@ -1314,7 +1314,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ALIGATOR_JN");
 			}
 			break;
-		case 1044478494:
+		case joaat("AT_GATOR_BULL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BULLGATOR_AR");
@@ -1324,7 +1324,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_BULLGATOR_JN");
 			}
 			break;
-		case 1735171971: /* GXTEntry: "Lizard" */
+		case joaat("AT_GILAMONSTER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_GILA_MONSTER_AR");
@@ -1344,7 +1344,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ALPINE_GOAT_JN");
 			}
 			break;
-		case 731537518: /* GXTEntry: "Goose" */
+		case joaat("AT_GOOSE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CANADA_GOOSE_AR");
@@ -1354,7 +1354,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CANADA_GOOSE_JN");
 			}
 			break;
-		case 1859834293:
+		case joaat("AT_HAWK_RED"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_HAWK_AR");
@@ -1364,7 +1364,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_HAWK_JN");
 			}
 			break;
-		case 524696643: /* GXTEntry: "Hawk" */
+		case joaat("AT_HAWK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_FERRUGINIOUS_HAWK_AR");
@@ -1374,7 +1374,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_FERRUGINIOUS_HAWK_JN");
 			}
 			break;
-		case 132914876:
+		case joaat("AT_HAWK_ROUGH"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ROUGH_LEGGED_HAWK_AR");
@@ -1384,7 +1384,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ROUGH_LEGGED_HAWK_JN");
 			}
 			break;
-		case 768271981: /* GXTEntry: "Heron" */
+		case joaat("AT_HERON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BLUE_HERON_AR");
@@ -1394,7 +1394,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BLUE_HERON_JN");
 			}
 			break;
-		case -1245666683:
+		case joaat("AT_HERON_TRI"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BLUE_HERON_AR");
@@ -1405,7 +1405,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case joaat("AT_HORSE"):
-			if (((iParam1 == joaat("a_c_horse_americanpaint_overo") || iParam1 == joaat("a_c_horse_americanpaint_splashedwhite")) || iParam1 == joaat("a_c_horse_americanpaint_tobiano")) || iParam1 == joaat("a_c_horse_americanpaint_greyovero"))
+			if (((iParam1 == joaat("A_C_Horse_AmericanPaint_Overo") || iParam1 == joaat("A_C_Horse_AmericanPaint_SplashedWhite")) || iParam1 == joaat("A_C_Horse_AmericanPaint_Tobiano")) || iParam1 == joaat("A_C_Horse_AmericanPaint_Greyovero"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1416,7 +1416,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_AMERICAN_PAINT_JN");
 				}
 			}
-			else if (((iParam1 == joaat("a_c_horse_americanstandardbred_black") || iParam1 == joaat("a_c_horse_americanstandardbred_buckskin")) || iParam1 == joaat("a_c_horse_americanstandardbred_palominodapple")) || iParam1 == joaat("a_c_horse_americanstandardbred_silvertailbuckskin"))
+			else if (((iParam1 == joaat("A_C_Horse_AmericanStandardbred_Black") || iParam1 == joaat("A_C_Horse_AmericanStandardbred_Buckskin")) || iParam1 == joaat("A_C_Horse_AmericanStandardbred_PalominoDapple")) || iParam1 == joaat("A_C_Horse_AmericanStandardbred_SilverTailBuckskin"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1427,7 +1427,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_AMERICAN_STANDARDBRED_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_andalusian_darkbay") || iParam1 == joaat("a_c_horse_andalusian_perlino")) || iParam1 == joaat("a_c_horse_andalusian_rosegray"))
+			else if ((iParam1 == joaat("A_C_Horse_Andalusian_DarkBay") || iParam1 == joaat("A_C_Horse_Andalusian_Perlino")) || iParam1 == joaat("A_C_Horse_Andalusian_RoseGray"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1438,7 +1438,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_ANDALUSIAN_JN");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_appaloosa_blanket") || iParam1 == joaat("a_c_horse_appaloosa_leopard")) || iParam1 == joaat("a_c_horse_appaloosa_leopardblanket")) || iParam1 == joaat("a_c_horse_appaloosa_brownleopard")) || iParam1 == joaat("a_c_horse_appaloosa_fewspotted_pc"))
+			else if ((((iParam1 == joaat("A_C_Horse_Appaloosa_Blanket") || iParam1 == joaat("A_C_Horse_Appaloosa_Leopard")) || iParam1 == joaat("A_C_Horse_Appaloosa_LeopardBlanket")) || iParam1 == joaat("A_C_Horse_Appaloosa_BrownLeopard")) || iParam1 == joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1449,7 +1449,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_APPALOOSA_JN");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_arabian_black") || iParam1 == joaat("a_c_horse_arabian_redchestnut")) || iParam1 == joaat("a_c_horse_arabian_rosegreybay")) || iParam1 == joaat("a_c_horse_arabian_warpedbrindle_pc")) || iParam1 == joaat("a_c_horse_arabian_white"))
+			else if ((((iParam1 == joaat("A_C_Horse_Arabian_Black") || iParam1 == joaat("A_C_HORSE_ARABIAN_REDCHESTNUT")) || iParam1 == joaat("A_C_Horse_Arabian_RoseGreyBay")) || iParam1 == joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC")) || iParam1 == joaat("A_C_Horse_Arabian_White"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1460,7 +1460,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_ARABIAN_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_ardennes_bayroan") || iParam1 == joaat("a_c_horse_ardennes_irongreyroan")) || iParam1 == joaat("a_c_horse_ardennes_strawberryroan"))
+			else if ((iParam1 == joaat("A_C_Horse_Ardennes_BayRoan") || iParam1 == joaat("A_C_Horse_Ardennes_IronGreyRoan")) || iParam1 == joaat("A_C_Horse_Ardennes_StrawberryRoan"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1471,7 +1471,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_ARDENNES_JN");
 				}
 			}
-			else if (iParam1 == joaat("a_c_horse_belgian_blondchestnut") || iParam1 == joaat("a_c_horse_belgian_mealychestnut"))
+			else if (iParam1 == joaat("A_C_Horse_Belgian_BlondChestnut") || iParam1 == joaat("A_C_Horse_Belgian_MealyChestnut"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1482,7 +1482,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_BELGIAN_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_dutchwarmblood_chocolateroan") || iParam1 == joaat("a_c_horse_dutchwarmblood_sealbrown")) || iParam1 == joaat("a_c_horse_dutchwarmblood_sootybuckskin"))
+			else if ((iParam1 == joaat("A_C_Horse_DutchWarmblood_ChocolateRoan") || iParam1 == joaat("A_C_Horse_DutchWarmblood_SealBrown")) || iParam1 == joaat("A_C_Horse_DutchWarmblood_SootyBuckskin"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1493,7 +1493,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_DUTCH_WARMBLOOD_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_hungarianhalfbred_darkdapplegrey") || iParam1 == joaat("a_c_horse_hungarianhalfbred_flaxenchestnut")) || iParam1 == joaat("a_c_horse_hungarianhalfbred_piebaldtobiano"))
+			else if ((iParam1 == joaat("A_C_Horse_HungarianHalfbred_DarkDappleGrey") || iParam1 == joaat("A_C_Horse_HungarianHalfbred_FlaxenChestnut")) || iParam1 == joaat("A_C_Horse_HungarianHalfbred_PiebaldTobiano"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1504,7 +1504,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_HUNGARIAN_HALFBRED_JN");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_kentuckysaddle_black") || iParam1 == joaat("a_c_horse_kentuckysaddle_buttermilkbuckskin_pc")) || iParam1 == joaat("a_c_horse_kentuckysaddle_chestnutpinto")) || iParam1 == joaat("a_c_horse_kentuckysaddle_grey")) || iParam1 == joaat("a_c_horse_kentuckysaddle_silverbay"))
+			else if ((((iParam1 == joaat("A_C_Horse_KentuckySaddle_Black") || iParam1 == joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC")) || iParam1 == joaat("A_C_HORSE_KENTUCKYSADDLE_ChestnutPinto")) || iParam1 == joaat("A_C_HORSE_KENTUCKYSADDLE_Grey")) || iParam1 == joaat("A_C_HORSE_KENTUCKYSADDLE_SilverBay"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1515,7 +1515,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_KENTUCKY_SADDLER_JN");
 				}
 			}
-			else if (iParam1 == joaat("a_c_horse_missourifoxtrotter_amberchampagne") || iParam1 == joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"))
+			else if (iParam1 == joaat("A_C_Horse_MissouriFoxTrotter_AmberChampagne") || iParam1 == joaat("A_C_Horse_MissouriFoxTrotter_SilverDapplePinto"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1526,7 +1526,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_MISSOURI_FOXTROTTER_JN");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_morgan_bay") || iParam1 == joaat("a_c_horse_morgan_bayroan")) || iParam1 == joaat("a_c_horse_morgan_liverchestnut_pc")) || iParam1 == joaat("a_c_horse_morgan_flaxenchestnut")) || iParam1 == joaat("a_c_horse_morgan_palomino"))
+			else if ((((iParam1 == joaat("A_C_HORSE_Morgan_Bay") || iParam1 == joaat("A_C_HORSE_Morgan_BayRoan")) || iParam1 == joaat("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC")) || iParam1 == joaat("A_C_Horse_Morgan_FlaxenChestnut")) || iParam1 == joaat("A_C_Horse_Morgan_Palomino"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1537,7 +1537,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_MORGAN_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_mustang_grullodun") || iParam1 == joaat("a_c_horse_mustang_tigerstripedbay")) || iParam1 == joaat("a_c_horse_mustang_wildbay"))
+			else if ((iParam1 == joaat("A_C_Horse_Mustang_GrulloDun") || iParam1 == joaat("A_C_Horse_Mustang_TigerStripedBay")) || iParam1 == joaat("A_C_Horse_Mustang_WildBay"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1548,7 +1548,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_MUSTANG_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_nokota_blueroan") || iParam1 == joaat("a_c_horse_nokota_reversedappleroan")) || iParam1 == joaat("a_c_horse_nokota_whiteroan"))
+			else if ((iParam1 == joaat("A_C_Horse_Nokota_BlueRoan") || iParam1 == joaat("A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN")) || iParam1 == joaat("A_C_Horse_Nokota_WhiteRoan"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1559,7 +1559,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_NOKOTA_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_shire_darkbay") || iParam1 == joaat("a_c_horse_shire_lightgrey")) || iParam1 == joaat("a_c_horse_shire_ravenblack"))
+			else if ((iParam1 == joaat("A_C_Horse_Shire_DarkBay") || iParam1 == joaat("A_C_Horse_Shire_LightGrey")) || iParam1 == joaat("A_C_Horse_Shire_RavenBlack"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1570,7 +1570,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_SHIRE_JN");
 				}
 			}
-			else if (iParam1 == joaat("a_c_horse_suffolkpunch_redchestnut") || iParam1 == joaat("a_c_horse_suffolkpunch_sorrel"))
+			else if (iParam1 == joaat("A_C_Horse_SuffolkPunch_RedChestnut") || iParam1 == joaat("A_C_Horse_SuffolkPunch_Sorrel"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1581,7 +1581,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_SUFFOLK_PUNCH_JN");
 				}
 			}
-			else if ((((((iParam1 == joaat("a_c_horse_tennesseewalker_blackrabicano") || iParam1 == joaat("a_c_horse_tennesseewalker_chestnut")) || iParam1 == joaat("a_c_horse_tennesseewalker_dapplebay")) || iParam1 == joaat("a_c_horse_tennesseewalker_goldpalomino_pc")) || iParam1 == joaat("a_c_horse_tennesseewalker_mahoganybay")) || iParam1 == joaat("a_c_horse_tennesseewalker_redroan")) || iParam1 == joaat("a_c_horse_tennesseewalker_flaxenroan"))
+			else if ((((((iParam1 == joaat("A_C_Horse_TennesseeWalker_BlackRabicano") || iParam1 == joaat("A_C_Horse_TennesseeWalker_Chestnut")) || iParam1 == joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY")) || iParam1 == joaat("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC")) || iParam1 == joaat("A_C_Horse_TennesseeWalker_MahoganyBay")) || iParam1 == joaat("A_C_Horse_TennesseeWalker_RedRoan")) || iParam1 == joaat("A_C_Horse_TennesseeWalker_FlaxenRoan"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1592,7 +1592,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_TENNESSEE_WALKER_JN");
 				}
 			}
-			else if ((((iParam1 == joaat("a_c_horse_thoroughbred_blackchestnut") || iParam1 == joaat("a_c_horse_thoroughbred_bloodbay")) || iParam1 == joaat("a_c_horse_thoroughbred_brindle")) || iParam1 == joaat("a_c_horse_thoroughbred_dapplegrey")) || iParam1 == joaat("a_c_horse_thoroughbred_reversedappleblack"))
+			else if ((((iParam1 == joaat("A_C_Horse_Thoroughbred_BlackChestnut") || iParam1 == joaat("A_C_Horse_Thoroughbred_BloodBay")) || iParam1 == joaat("A_C_Horse_Thoroughbred_Brindle")) || iParam1 == joaat("A_C_Horse_Thoroughbred_DappleGrey")) || iParam1 == joaat("A_C_Horse_Thoroughbred_ReverseDappleBlack"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1603,7 +1603,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 					return joaat("JOURNAL_ANIMAL_THOROUGHBRED_JN");
 				}
 			}
-			else if ((iParam1 == joaat("a_c_horse_turkoman_darkbay") || iParam1 == joaat("a_c_horse_turkoman_gold")) || iParam1 == joaat("a_c_horse_turkoman_silver"))
+			else if ((iParam1 == joaat("A_C_Horse_Turkoman_DarkBay") || iParam1 == joaat("A_C_Horse_Turkoman_Gold")) || iParam1 == joaat("A_C_Horse_Turkoman_Silver"))
 			{
 				if (iParam2 == 1)
 				{
@@ -1615,7 +1615,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				}
 			}
 			break;
-		case 843200239: /* GXTEntry: "Iguana" */
+		case joaat("AT_IGUANA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_IGUANA_AR");
@@ -1625,7 +1625,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_IGUANA_JN");
 			}
 			break;
-		case -557089338:
+		case joaat("AT_IGUANA_DESERT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DESERT_IGUANA_AR");
@@ -1635,7 +1635,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DESERT_IGUANA_JN");
 			}
 			break;
-		case -409730157: /* GXTEntry: "Javelina" */
+		case joaat("AT_JAVELINA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PECCARY_AR");
@@ -1645,7 +1645,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PECCARY_JN");
 			}
 			break;
-		case -1453172462: /* GXTEntry: "Loon" */
+		case joaat("AT_LOON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_COMMON_LOON_AR");
@@ -1655,7 +1655,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_COMMON_LOON_JN");
 			}
 			break;
-		case 2084223993:
+		case joaat("AT_LOON_PACIFIC"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PACIFIC_LOON_AR");
@@ -1665,7 +1665,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PACIFIC_LOON_JN");
 			}
 			break;
-		case 1449149245:
+		case joaat("AT_LOON_YELLOW"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_YELLOW_BILLED_LOON_AR");
@@ -1675,7 +1675,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_YELLOW_BILLED_LOON_JN");
 			}
 			break;
-		case 230694645:
+		case joaat("AT_MOOSE_BULL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_MOOSE_AR");
@@ -1685,7 +1685,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_MOOSE_JN");
 			}
 			break;
-		case -1998732171:
+		case joaat("AT_MOOSE_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_MOOSE_AR");
@@ -1705,7 +1705,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_MULE_JN");
 			}
 			break;
-		case 1053713682: /* GXTEntry: "Muskrat" */
+		case joaat("AT_MUSKRAT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_MUSKRAT_AR");
@@ -1715,7 +1715,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_MUSKRAT_JN");
 			}
 			break;
-		case 562612880: /* GXTEntry: "Oriole" */
+		case joaat("AT_ORIOLE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ORIOLE_AR");
@@ -1725,7 +1725,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ORIOLE_JN");
 			}
 			break;
-		case 1488906430:
+		case joaat("AT_ORIOLE_HOODED"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_HOODED_ORIOLE_AR");
@@ -1735,8 +1735,8 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_HOODED_ORIOLE_JN");
 			}
 			break;
-		case -1002311676:
-		case 313926162: /* GXTEntry: "Owl" */
+		case joaat("AT_OWL_NORTH"):
+		case joaat("AT_OWL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_HORNED_OWL_AR");
@@ -1746,7 +1746,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_HORNED_OWL_JN");
 			}
 			break;
-		case 1434063188:
+		case joaat("AT_OWL_CALI"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_GREAT_HORNED_OWL_AR");
@@ -1756,7 +1756,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_GREAT_HORNED_OWL_JN");
 			}
 			break;
-		case 1296784312: /* GXTEntry: "Ox" */
+		case joaat("AT_OX"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_OXEN_AR");
@@ -1766,7 +1766,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_OXEN_JN");
 			}
 			break;
-		case -1192335484:
+		case joaat("AT_OX_DEVON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DEVON_OXEN_AR");
@@ -1776,7 +1776,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DEVON_OXEN_JN");
 			}
 			break;
-		case 184430925: /* GXTEntry: "Panther" */
+		case joaat("AT_PANTHER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_FLORIDA_PANTHER_AR");
@@ -1786,7 +1786,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_FLORIDA_PANTHER_JN");
 			}
 			break;
-		case 1631667828:
+		case joaat("AT_PANTHER_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_PANTHER_AR");
@@ -1796,7 +1796,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_PANTHER_JN");
 			}
 			break;
-		case 1623821606: /* GXTEntry: "Parrot" */
+		case joaat("AT_PARROT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PARROT_AR");
@@ -1806,7 +1806,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PARROT_JN");
 			}
 			break;
-		case 631108475:
+		case joaat("AT_PARROT_GREEN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_GREAT_GREEN_MACAW_AR");
@@ -1816,7 +1816,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_GREAT_GREEN_MACAW_JN");
 			}
 			break;
-		case -679868805:
+		case joaat("AT_PARROT_SCARLET"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SCARLET_MACAW_AR");
@@ -1826,7 +1826,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SCARLET_MACAW_JN");
 			}
 			break;
-		case -454952368: /* GXTEntry: "Pelican" */
+		case joaat("AT_PELICAN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PELICAN_AR");
@@ -1836,7 +1836,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PELICAN_JN");
 			}
 			break;
-		case 512575690:
+		case joaat("AT_PELICAN_BROWN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BROWN_PELICAN_AR");
@@ -1846,7 +1846,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BROWN_PELICAN_JN");
 			}
 			break;
-		case -1315516671: /* GXTEntry: "Pheasant" */
+		case joaat("AT_PHEASANT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RING_NECKED_PHEASANT_AR");
@@ -1856,7 +1856,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RING_NECKED_PHEASANT_JN");
 			}
 			break;
-		case -2032722392:
+		case joaat("AT_PHEASANT_CHINESE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PHEASANT_AR");
@@ -1866,7 +1866,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PHEASANT_JN");
 			}
 			break;
-		case 238849077: /* GXTEntry: "Pig" */
+		case joaat("AT_PIG"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PIG_AR");
@@ -1876,7 +1876,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PIG_JN");
 			}
 			break;
-		case -812395905:
+		case joaat("AT_PIG_CHINA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_CHINA_PIG_AR");
@@ -1886,7 +1886,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_CHINA_PIG_JN");
 			}
 			break;
-		case 1252173965:
+		case joaat("AT_PIG_SPOT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_OLD_SPOT_PIG_AR");
@@ -1896,7 +1896,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_OLD_SPOT_PIG_JN");
 			}
 			break;
-		case 1948286917: /* GXTEntry: "Pigeon" */
+		case joaat("AT_PIGEON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PIGEON_AR");
@@ -1906,7 +1906,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PIGEON_JN");
 			}
 			break;
-		case 886717998:
+		case joaat("AT_PIGEON_BAND"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BAND_TAILED_PIGEON_AR");
@@ -1926,7 +1926,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_POSSUM_JN");
 			}
 			break;
-		case -10873946: /* GXTEntry: "Pronghorn" */
+		case joaat("AT_PRONGHORN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_PRONGHORN_AR");
@@ -1936,7 +1936,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_PRONGHORN_JN");
 			}
 			break;
-		case -1850027464:
+		case joaat("AT_PRONGHORN_BAJA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BAJA_CALIFORNIAN_PRONGHORN_AR");
@@ -1946,7 +1946,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BAJA_CALIFORNIAN_PRONGHORN_JN");
 			}
 			break;
-		case -1559343651:
+		case joaat("AT_PRONGHORN_SONO"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SONORAN_PRONGHORN_AR");
@@ -1956,7 +1956,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SONORAN_PRONGHORN_JN");
 			}
 			break;
-		case -908129790:
+		case joaat("AT_PRONGHORN_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_PRONGHORN_AR");
@@ -1966,7 +1966,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_PRONGHORN_JN");
 			}
 			break;
-		case -756458312: /* GXTEntry: "Quail" */
+		case joaat("AT_QUAIL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_QUAIL_AR");
@@ -1976,7 +1976,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_QUAIL_JN");
 			}
 			break;
-		case -1523680261: /* GXTEntry: "Rabbit" */
+		case joaat("AT_RABBIT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RABBIT_AR");
@@ -1986,7 +1986,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RABBIT_JN");
 			}
 			break;
-		case 915670869: /* GXTEntry: "Raccoon" */
+		case joaat("AT_RACCOON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RACCOON_AR");
@@ -1996,7 +1996,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RACCOON_JN");
 			}
 			break;
-		case 1241049848:
+		case joaat("AT_RAMSHEEP_ROCKY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BIGHORN_AR");
@@ -2006,7 +2006,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BIGHORN_JN");
 			}
 			break;
-		case 1642062303:
+		case joaat("AT_RAMSHEEP_DESERT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DESERT_BIG_HORN_SHEEP_AR");
@@ -2016,7 +2016,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DESERT_BIG_HORN_SHEEP_JN");
 			}
 			break;
-		case -868889795:
+		case joaat("AT_RAM_DESERT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_DESERT_BIGHORN_RAM_AR");
@@ -2026,7 +2026,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_DESERT_BIGHORN_RAM_JN");
 			}
 			break;
-		case -245437166:
+		case joaat("AT_RAM_ROCKY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ROCKY_MOUNTAIN_BIGHORN_AR");
@@ -2036,7 +2036,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ROCKY_MOUNTAIN_BIGHORN_JN");
 			}
 			break;
-		case -587357648:
+		case joaat("AT_RAM_SIERRA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SIERRA_NEVADA_BIGHORN_AR");
@@ -2046,7 +2046,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SIERRA_NEVADA_BIGHORN_JN");
 			}
 			break;
-		case 1161966186:
+		case joaat("AT_RAMSHEEP_SIERRA"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SIERRA_NEVADA_BIGHORN_SHEEP_AR");
@@ -2056,7 +2056,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SIERRA_NEVADA_BIGHORN_SHEEP_JN");
 			}
 			break;
-		case -795241033:
+		case joaat("AT_RAM_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_LONG_HORN_AR");
@@ -2066,7 +2066,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_LONG_HORN_JN");
 			}
 			break;
-		case -366264193:
+		case joaat("AT_RAT_BLACK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RAT_AR");
@@ -2076,7 +2076,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RAT_JN");
 			}
 			break;
-		case -705312705: /* GXTEntry: "Rat" */
+		case joaat("AT_RAT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BROWN_RAT_AR");
@@ -2086,7 +2086,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BROWN_RAT_JN");
 			}
 			break;
-		case -1592962144: /* GXTEntry: "Raven" */
+		case joaat("AT_RAVEN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RAVEN_AR");
@@ -2096,7 +2096,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RAVEN_JN");
 			}
 			break;
-		case 886059398: /* GXTEntry: "Bird" */
+		case joaat("AT_REDFOOTEDBOOBY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RED_FOOTED_BOOBY_AR");
@@ -2106,7 +2106,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RED_FOOTED_BOOBY_JN");
 			}
 			break;
-		case 2018874380: /* GXTEntry: "Robin" */
+		case joaat("AT_ROBIN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ROBIN_AR");
@@ -2116,9 +2116,9 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ROBIN_JN");
 			}
 			break;
-		case -1467886026:
-		case -262717989: /* GXTEntry: "Rooster" */
-		case 1100342668:
+		case joaat("AT_ROOSTER_JAVA"):
+		case joaat("AT_ROOSTER"):
+		case joaat("AT_ROOSTER_LEGHORN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_ROOSTER_AR");
@@ -2128,7 +2128,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_ROOSTER_JN");
 			}
 			break;
-		case -1181288733: /* GXTEntry: "Spoonbill" */
+		case joaat("AT_ROSESPOONBILL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SPOONBILL_AR");
@@ -2138,7 +2138,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SPOONBILL_JN");
 			}
 			break;
-		case 1398366530:
+		case joaat("AT_SEAGULL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SEAGULL_AR");
@@ -2148,7 +2148,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SEAGULL_JN");
 			}
 			break;
-		case 1145409805:
+		case joaat("AT_SEAGULL_LAUGH"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LAUGHING_GULL_AR");
@@ -2158,7 +2158,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LAUGHING_GULL_JN");
 			}
 			break;
-		case 733223128:
+		case joaat("AT_SEAGULL_RING"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_HERRING_GULL_AR");
@@ -2178,7 +2178,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SHEEP_JN");
 			}
 			break;
-		case -998653403: /* GXTEntry: "Skunk" */
+		case joaat("AT_SKUNK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SKUNK_AR");
@@ -2188,9 +2188,9 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SKUNK_JN");
 			}
 			break;
-		case -547357240: /* GXTEntry: "Snake" */
-		case 491620790:
-		case 888613388:
+		case joaat("AT_SNAKE_BOA"):
+		case joaat("AT_SNAKE_BOA_RAINBOW"):
+		case joaat("AT_SNAKE_BOA_SUN"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RED_BOA_AR");
@@ -2200,9 +2200,9 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RED_BOA_JN");
 			}
 			break;
-		case -764925634: /* GXTEntry: "Snake" */
-		case -518676029:
-		case -21336386:
+		case joaat("AT_SNAKE_FERDELANCE"):
+		case joaat("AT_SNAKE_COPPER_NORTH"):
+		case joaat("AT_SNAKE_COPPER_SOUTH"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_FERDELANCE_SNAKE_AR");
@@ -2212,7 +2212,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_FERDELANCE_SNAKE_JN");
 			}
 			break;
-		case -946474842: /* GXTEntry: "Black-tailed Rattlesnake" */
+		case joaat("AT_SNAKE_BLACK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BLACK_TAIL_RATTLESNAKE_AR");
@@ -2222,7 +2222,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BLACKTAILED_RATTLE_SNAKE_JN");
 			}
 			break;
-		case -1363455176:
+		case joaat("AT_SNAKE_COTTON"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_COTTONMOUTH_SNAKE_AR");
@@ -2232,7 +2232,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_COTTONMOUTH_SNAKE_JN");
 			}
 			break;
-		case 234935858:
+		case joaat("AT_SNAKE_DIAMOND"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RATTLESNAKE_AR");
@@ -2242,7 +2242,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RATTLESNAKE_JN");
 			}
 			break;
-		case 395345271: /* GXTEntry: "Songbird" */
+		case joaat("AT_SONGBIRD"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SONGBIRD_AR");
@@ -2252,7 +2252,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SONGBIRD_JN");
 			}
 			break;
-		case -1049737813:
+		case joaat("AT_SONGBIRD_SCARLET"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SCARLET_TANAGER_SONGBIRD_AR");
@@ -2262,7 +2262,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SCARLET_TANAGER_SONGBIRD_JN");
 			}
 			break;
-		case -143561573: /* GXTEntry: "Sparrow" */
+		case joaat("AT_SPARROW"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SPARROW_AR");
@@ -2272,7 +2272,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SPARROW_JN");
 			}
 			break;
-		case -1099435331:
+		case joaat("AT_SPARROW_EURO"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_EURASIAN_TREE_SPARROW_AR");
@@ -2282,7 +2282,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_EURASIAN_TREE_SPARROW_JN");
 			}
 			break;
-		case -2058116954:
+		case joaat("AT_SPARROW_GOLD"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_GOLDEN_CROWNED_SPARROW_AR");
@@ -2292,7 +2292,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_GOLDEN_CROWNED_SPARROW_JN");
 			}
 			break;
-		case -581264978: /* GXTEntry: "Squirrel" */
+		case joaat("AT_SQUIRREL"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SQUIRREL_AR");
@@ -2302,7 +2302,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SQUIRREL_JN");
 			}
 			break;
-		case -1851619259:
+		case joaat("AT_SQUIRREL_RED"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RED_SQUIRREL_AR");
@@ -2312,7 +2312,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_RED_SQUIRREL_JN");
 			}
 			break;
-		case -1055590463:
+		case joaat("AT_SQUIRREL_BLACK"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_BLACK_SQUIRREL_AR");
@@ -2322,8 +2322,8 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_BLACK_SQUIRREL_JN");
 			}
 			break;
-		case 725092441: /* GXTEntry: "Toad" */
-		case 1202456973:
+		case joaat("AT_TOAD"):
+		case joaat("AT_TOAD_DESERT"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_TOAD_AR");
@@ -2333,7 +2333,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_TOAD_JN");
 			}
 			break;
-		case -2087684184: /* GXTEntry: "Turkey" */
+		case joaat("AT_TURKEY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_TURKEY_AR");
@@ -2343,7 +2343,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_TURKEY_JN");
 			}
 			break;
-		case -1771094723:
+		case joaat("AT_TURKEY_RIO"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_RIO_GRANDE_TURKEY_AR");
@@ -2363,7 +2363,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SEA_TURTLE_JN");
 			}
 			break;
-		case 288450344:
+		case joaat("AT_TURTLE_SNAP"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_SNAPPING_TURTLE_AR");
@@ -2373,7 +2373,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_SNAPPING_TURTLE_JN");
 			}
 			break;
-		case -1914955935:
+		case joaat("AT_VULTURE_EAST"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_EASTERN_TURKEY_VULTURE_AR");
@@ -2383,7 +2383,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_EASTERN_TURKEY_VULTURE_JN");
 			}
 			break;
-		case 848629876: /* GXTEntry: "Vulture" */
+		case joaat("AT_VULTURE"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WESTERN_VULTURE_AR");
@@ -2393,7 +2393,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_WESTERN_VULTURE_JN");
 			}
 			break;
-		case -439919843: /* GXTEntry: "Wolf" */
+		case joaat("AT_WOLF"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WOLF_AR");
@@ -2403,7 +2403,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_WOLF_JN");
 			}
 			break;
-		case -377162693:
+		case joaat("AT_WOLF_LEGENDARY"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_WOLF_AR");
@@ -2413,7 +2413,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_LEGENDARY_WOLF_JN");
 			}
 			break;
-		case 330512330:
+		case joaat("AT_WOLF_TIMBER"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_TIMBER_WOLF_AR");
@@ -2423,7 +2423,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_TIMBER_WOLF_JN");
 			}
 			break;
-		case 595771513:
+		case joaat("AT_WOODPECKER_RED"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WOOD_PECKER_AR");
@@ -2433,7 +2433,7 @@ int func_28(int iParam0, int iParam1, int iParam2)
 				return joaat("JOURNAL_ANIMAL_WOOD_PECKER_JN");
 			}
 			break;
-		case -391309265:
+		case joaat("AT_WOODPECKER_PILEATED"):
 			if (iParam2 == 1)
 			{
 				return joaat("JOURNAL_ANIMAL_WOOD_PECKER_02_AR");

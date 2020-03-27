@@ -928,18 +928,18 @@ struct<5> func_39(int iParam0, bool bParam1, int iParam2)
 	Var0.f_4 = 1084182731;
 	switch (func_55(iParam0))
 	{
-		case joaat("clothing"):
+		case joaat("CLOTHING"):
 			if (!INVENTORY::_0x780C5B9AE2819807(iParam0, 1034665895))
 			{
-				Var0 = { func_56(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
+				Var0 = { func_56(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
 			}
 			else
 			{
 				Var0.f_4 = 1034665895;
 			}
 			break;
-		case joaat("weapon"):
+		case joaat("Weapon"):
 			Var0 = { func_57(bParam1) };
 			if (iParam2 && func_58(iParam0, 1))
 			{
@@ -966,10 +966,10 @@ struct<5> func_39(int iParam0, bool bParam1, int iParam2)
 				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
-		case joaat("horse"):
+		case joaat("HORSE"):
 			Var0.f_4 = 1782082944;
 			break;
-		case joaat("Emote"):
+		case joaat("EMOTE"):
 			Var0.f_4 = -813824107;
 			Var0 = { func_61(bParam1) };
 			switch (func_10(iParam0))
@@ -988,7 +988,7 @@ struct<5> func_39(int iParam0, bool bParam1, int iParam2)
 					break;
 			}
 			break;
-		case joaat("Upgrade"):
+		case joaat("UPGRADE"):
 			if (func_62(iParam0, -1823706425))
 			{
 				Var0 = { func_56(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
@@ -996,8 +996,8 @@ struct<5> func_39(int iParam0, bool bParam1, int iParam2)
 			}
 			else if (func_62(iParam0, -1483207246))
 			{
-				Var0 = { func_56(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
+				Var0 = { func_56(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
 			}
 			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1311702610))
 			{
@@ -1027,7 +1027,7 @@ struct<5> func_39(int iParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("character"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -1459,7 +1459,7 @@ int func_53()
 
 struct<4> func_54(bool bParam0)
 {
-	return func_56(joaat("character"), func_70(), -1591664384, bParam0);
+	return func_56(joaat("CHARACTER"), func_70(), -1591664384, bParam0);
 }
 
 int func_55(int iParam0)

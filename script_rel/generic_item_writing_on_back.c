@@ -163,7 +163,7 @@ void func_5(var uParam0)
 		}
 		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 		{
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("GENERIC")) == 0)
 			{
 				uParam0->f_5.f_1 = 1;
 				func_9(uParam0);
@@ -194,7 +194,7 @@ void func_6(var uParam0)
 		}
 		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 		{
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("GENERIC")) == 0)
 			{
 				uParam0->f_5.f_1 = 1;
 				func_9(uParam0);

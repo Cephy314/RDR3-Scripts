@@ -732,7 +732,7 @@ void func_20(var uParam0, var uParam1, int iParam2)
 				}
 				iVar2++;
 			}
-			func_91(func_90(joaat("attempts"), joaat("POSSE_VERSUS")), 1);
+			func_91(func_90(joaat("ATTEMPTS"), joaat("Posse_Versus")), 1);
 			func_92(8);
 			func_84(iParam2, 5);
 			break;
@@ -810,14 +810,14 @@ void func_20(var uParam0, var uParam1, int iParam2)
 			func_110(uParam0, iParam2);
 			if (uParam0->f_48 == PLAYER::PLAYER_ID())
 			{
-				func_91(func_90(joaat("wins"), joaat("RACE_IMPROMPTU")), 1);
-				func_91(func_90(joaat("wins"), joaat("POSSE_VERSUS")), 1);
-				func_91(func_111(joaat("placed_top_posse_versus")), 1);
+				func_91(func_90(joaat("WINS"), joaat("RACE_IMPROMPTU")), 1);
+				func_91(func_90(joaat("WINS"), joaat("Posse_Versus")), 1);
+				func_91(func_111(joaat("PLACED_TOP_POSSE_VERSUS")), 1);
 			}
 			else
 			{
-				func_91(func_90(joaat("losses"), joaat("RACE_IMPROMPTU")), 1);
-				func_91(func_90(joaat("losses"), joaat("POSSE_VERSUS")), 1);
+				func_91(func_90(joaat("LOSSES"), joaat("RACE_IMPROMPTU")), 1);
+				func_91(func_90(joaat("LOSSES"), joaat("Posse_Versus")), 1);
 			}
 			func_84(iParam2, 14);
 			break;
@@ -1625,7 +1625,7 @@ void func_51(struct<2> Param0)
 		{
 			if (Var0.f_29 == joaat("RACE_IMPROMPTU"))
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("RACE"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -6582,7 +6582,7 @@ int func_320(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case joaat("bounty_board"):
-		case joaat("GUN_FOR_HIRE"):
+		case joaat("Gun_for_Hire"):
 		case -260420884:
 		case -232478158:
 		case 78055447:
@@ -8008,7 +8008,7 @@ int func_327(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("Challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -8017,7 +8017,7 @@ int func_327(int iParam0)
 			iVar0 = joaat("feature");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -8041,16 +8041,16 @@ int func_327(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("Title");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -8160,15 +8160,15 @@ int func_330(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("blackjack"):
+		case joaat("Blackjack"):
 			return 0;
-		case joaat("Dominoes"):
+		case joaat("DOMINOES"):
 			return 1;
-		case joaat("Poker"):
+		case joaat("POKER"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("milking_cow"):
+		case joaat("MILKING_COW"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -8186,7 +8186,7 @@ int func_331(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("challenges"):
+		case joaat("Challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -8256,7 +8256,7 @@ int func_333(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("null"):
+		case joaat("Null"):
 			return -1;
 		case joaat("normal"):
 			return 0;
@@ -8270,19 +8270,19 @@ int func_333(int iParam0)
 			return 4;
 		case 1419735597:
 			return 5;
-		case 1004744465:
+		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("bountyhunter"):
+		case joaat("BountyHunter"):
 			return 7;
 		case joaat("Gunslinger"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("hunter"):
+		case joaat("Hunter"):
 			return 10;
 		case joaat("Trader"):
 			return 11;
-		case joaat("Collector"):
+		case joaat("collector"):
 			return 12;
 		case -218234180:
 			return 13;
@@ -11873,11 +11873,11 @@ void func_461(var uParam0)
 
 int func_462()
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("fm_mission_controller")) != 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("FM_Mission_Controller")) != 0)
 	{
 		return 0;
 	}
-	else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("fm_deathmatch_controller")) != 0)
+	else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("FM_Deathmatch_Controller")) != 0)
 	{
 		return 1;
 	}

@@ -879,7 +879,7 @@ int func_44(int iParam0)
 		func_81();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_110, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(-663946200, joaat("MPAC_Travel_012")))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_Travel"), joaat("MPAC_Travel_012")))
 		{
 			switch (iLocal_110)
 			{
@@ -956,15 +956,15 @@ int func_47()
 
 int func_48()
 {
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_mission_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Mission_Controller"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_deathmatch_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Deathmatch_Controller"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_race_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Race_Controller"), -1, 0, 0))
 	{
 		return 1;
 	}
@@ -1095,11 +1095,11 @@ void func_54()
 	fLocal_99[2] = 0.4f;
 	fLocal_99[3] = 0.6f;
 	fLocal_99[4] = 0.8f;
-	iLocal_55[0] = joaat("a_c_rabbit_01");
-	iLocal_55[1] = joaat("a_c_coyote_01");
-	iLocal_55[2] = joaat("a_c_coyote_01");
-	iLocal_55[3] = joaat("a_c_rabbit_01");
-	iLocal_55[4] = joaat("a_c_rabbit_01");
+	iLocal_55[0] = joaat("A_C_RABBIT_01");
+	iLocal_55[1] = joaat("A_C_COYOTE_01");
+	iLocal_55[2] = joaat("A_C_COYOTE_01");
+	iLocal_55[3] = joaat("A_C_RABBIT_01");
+	iLocal_55[4] = joaat("A_C_RABBIT_01");
 	sLocal_61[0] = "PD_Ex_Small_aged_carcass_Hvy";
 	sLocal_61[1] = "PD_Small_aged_carcass_Hvy";
 	sLocal_61[2] = "PD_Small_aged_carcass_Hvy";
@@ -1642,7 +1642,7 @@ void func_78(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_126(Global_1939178, 16384);
-	func_128(func_127(-1532769513, joaat("areas")), 1);
+	func_128(func_127(-1532769513, joaat("AREAS")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -1909,14 +1909,14 @@ int func_80(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
+		case joaat("DRIZZLE"):
 		case joaat("thunder"):
-		case joaat("shower"):
+		case joaat("SHOWER"):
 		case joaat("sleet"):
-		case joaat("hurricane"):
+		case joaat("HURRICANE"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -2213,7 +2213,7 @@ int func_82(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }
@@ -2440,11 +2440,11 @@ int func_93(int iParam0)
 			iVar9 = 33646;
 			switch (&iLocal_55[iParam0])
 			{
-				case joaat("a_c_coyote_01"):
+				case joaat("A_C_COYOTE_01"):
 					vVar6 = { 0f, -0.005f, -0.025f };
 					vVar0 = { 0f, 90f, 0f };
 					break;
-				case joaat("a_c_rabbit_01"):
+				case joaat("A_C_RABBIT_01"):
 					vVar6 = { -0.0125f, 0f, -0.025f };
 					vVar0 = { 0f, 90f, 0f };
 					break;
@@ -5242,7 +5242,7 @@ void func_189(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -5432,7 +5432,7 @@ int func_194(int iParam0)
 		case 69:
 			return joaat("SHOP_STR_GENERAL_STORE");
 		case 70:
-			return joaat("rage_p2_3");
+			return joaat("SHOP_STR_WELCOME_CENTER");
 		case 71:
 			return joaat("SHOP_STR_HORSE_SHOP");
 		case 74:
@@ -5510,9 +5510,9 @@ int func_194(int iParam0)
 		case 100:
 			return joaat("SHOP_WAL_TRAIN_STATION");
 		case 119:
-			return joaat("shop_dynamic");
+			return joaat("SHOP_DYNAMIC");
 		case 133:
-			return joaat("shop_wilderness_supplies");
+			return joaat("SHOP_WILDERNESS_SUPPLIES");
 		case 148:
 			return joaat("SHOP_ANYWHERE_HANDHELD");
 		case 172:
@@ -5522,7 +5522,7 @@ int func_194(int iParam0)
 		case 174:
 			return joaat("SHOP_CAMP_SHAVING");
 		case 149:
-			return joaat("shop_camp_lockbox");
+			return joaat("SHOP_CAMP_LOCKBOX");
 		case 150:
 			return joaat("shop_camp_butchertable");
 		case 147:
@@ -5568,7 +5568,7 @@ int func_194(int iParam0)
 		case 134:
 			return -765151559;
 		case 175:
-			return joaat("shop_wardrobe");
+			return joaat("SHOP_WARDROBE");
 		case 151:
 			return joaat("SHOP_BVH_DOCTOR");
 		case 152:

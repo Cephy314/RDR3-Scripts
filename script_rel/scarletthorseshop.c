@@ -1805,7 +1805,7 @@ void func_76(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_168(Global_1935630, 8192);
-	func_170(func_169(-1532769513, joaat("areas")), 1);
+	func_170(func_169(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -2150,14 +2150,14 @@ int func_83(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
+		case joaat("DRIZZLE"):
 		case joaat("thunder"):
-		case joaat("shower"):
+		case joaat("SHOWER"):
 		case joaat("sleet"):
-		case joaat("hurricane"):
+		case joaat("HURRICANE"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -6126,17 +6126,17 @@ char* func_190(var uParam0, char* sParam1, char* sParam2, char* sParam3)
 				sVar0 = func_270(*(Global_1393529->f_288[9 /*8*/]));
 				switch (MISC::GET_HASH_KEY(sVar0))
 				{
-					case joaat("0825_s_m_m_liveryworker_01_white_01"):
+					case joaat("0825_S_M_M_LiveryWorker_01_WHITE_01"):
 						func_95(uParam0, 2);
 						uParam0->f_37 = "0825_LIVERY";
 						uParam0->f_21 = -1;
 						return sParam1;
-					case joaat("0826_s_m_m_liveryworker_01_white_02"):
+					case joaat("0826_S_M_M_LiveryWorker_01_WHITE_02"):
 						uParam0->f_37 = "0826_LIVERY";
 						uParam0->f_21 = -1;
 						func_95(uParam0, 2);
 						return sParam2;
-					case joaat("0827_s_m_m_liveryworker_01_white_03"):
+					case joaat("0827_S_M_M_LiveryWorker_01_WHITE_03"):
 						uParam0->f_37 = "0827_LIVERY";
 						uParam0->f_21 = -1;
 						func_95(uParam0, 2);
@@ -7283,7 +7283,7 @@ int func_239()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -7384,7 +7384,7 @@ int func_244()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}

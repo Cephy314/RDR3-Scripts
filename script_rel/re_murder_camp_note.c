@@ -148,13 +148,13 @@ void func_6()
 				iVar0 = ENTITY::GET_ENTITY_MODEL(Local_5.f_5);
 				switch (iVar0)
 				{
-					case joaat("s_maprolled01x"):
+					case joaat("S_MAPROLLED01X"):
 						Local_5.f_15.f_2 = 2019023183; /* GXTEntry: "Killer Clue 1 Piece" */
 						break;
-					case joaat("s_maprolled02x"):
+					case joaat("S_MAPROLLED02X"):
 						Local_5.f_15.f_2 = -1043796944; /* GXTEntry: "Killer Clue 2 Piece" */
 						break;
-					case joaat("s_maprolled03x"):
+					case joaat("S_MAPROLLED03X"):
 						Local_5.f_15.f_2 = 1272643670; /* GXTEntry: "Killer Clue 3 Piece" */
 						break;
 					default:

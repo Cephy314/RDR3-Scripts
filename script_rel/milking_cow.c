@@ -2002,7 +2002,7 @@ int func_111(var uParam0, vector3 vParam1)
 	while (iVar3 < iVar2)
 	{
 		iVar4 = MISC::_0x3FFB15534067DCD4(ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar3, iVar0));
-		if ((ENTITY::DOES_ENTITY_EXIST(iVar4) && !PED::IS_PED_INJURED(iVar4)) && ENTITY::GET_ENTITY_MODEL(iVar4) == joaat("a_c_cow"))
+		if ((ENTITY::DOES_ENTITY_EXIST(iVar4) && !PED::IS_PED_INJURED(iVar4)) && ENTITY::GET_ENTITY_MODEL(iVar4) == joaat("A_C_COW"))
 		{
 			*uParam0 = iVar4;
 			func_167(bVar1);
@@ -2144,10 +2144,10 @@ void func_118(int iParam0)
 		func_171(-859971527, Global_35, 0, 1);
 	}
 	iParam0->f_43.f_30 = "Milking";
-	iParam0->f_43.f_1 = joaat("default");
+	iParam0->f_43.f_1 = joaat("Default");
 	iParam0->f_43 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@MILK_COW");
 	iParam0->f_77.f_30 = "Wobble";
-	iParam0->f_77.f_1 = joaat("default");
+	iParam0->f_77.f_1 = joaat("Default");
 	PED::SET_PED_CAN_LEG_IK(Global_35, false);
 	PED::SET_PED_LEG_IK_MODE(Global_35, 0);
 	PED::SET_PED_CAN_LEG_IK(iParam0->f_5, false);
@@ -5750,7 +5750,7 @@ void func_242(var uParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4
 			if (func_252(iVar3, 8))
 			{
 			}
-			else if (&(Global_1946804->f_57[iVar1 /*11*/])->f_2[0] == joaat("MISSING") || &uParam0->f_1[iVar1 /*3*/] == 0)
+			else if (&(Global_1946804->f_57[iVar1 /*11*/])->f_2[0] == joaat("missing") || &uParam0->f_1[iVar1 /*3*/] == 0)
 			{
 			}
 			else
@@ -6339,7 +6339,7 @@ int func_266(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return joaat("hats");
+			return joaat("HATS");
 		case -525676072:
 			return 1249071452;
 		default:

@@ -4245,7 +4245,7 @@ void func_101(var uParam0, int iParam1)
 
 int func_102()
 {
-	return joaat("cs_escapeartist");
+	return joaat("CS_EscapeArtist");
 }
 
 int func_103(int iParam0)
@@ -7488,7 +7488,7 @@ void func_210(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

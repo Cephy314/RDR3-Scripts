@@ -489,7 +489,7 @@ void func_12(var uParam0)
 	int iVar1;
 
 	bVar0 = false;
-	if (((SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4) && func_54()) && func_55(PLAYER::PLAYER_ID(), 1, 0)) && func_56(0) == joaat("herbalist"))
+	if (((SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4) && func_54()) && func_55(PLAYER::PLAYER_ID(), 1, 0)) && func_56(0) == joaat("HERBALIST"))
 	{
 		bVar0 = true;
 	}
@@ -1925,7 +1925,7 @@ int func_89(int iParam0, int iParam1, int iParam2, bool bParam3, vector3 vParam4
 					}
 				}
 			}
-			func_136(func_135(joaat("pick"), uVar2), bParam3);
+			func_136(func_135(joaat("PICK"), uVar2), bParam3);
 			func_136(func_137(joaat("HERBS_PICKED_TOTAL")), bParam3);
 			if (func_138(iParam0))
 			{
@@ -2182,13 +2182,13 @@ void func_93(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	}
 	iVar6 = func_146(iParam0);
 	iVar10 = 0;
-	iVar11 = joaat("inventory");
-	if ((iVar6 == joaat("ammo") && iParam0 != 424030678) && iParam0 != -1188697038)
+	iVar11 = joaat("Inventory");
+	if ((iVar6 == joaat("AMMO") && iParam0 != joaat("AMMO_HATCHET")) && iParam0 != joaat("AMMO_HATCHET_CLEAVER"))
 	{
-		iVar10 = joaat("AMMO_TYPES");
-		iVar11 = joaat("AMMO_TYPES");
+		iVar10 = joaat("ammo_types");
+		iVar11 = joaat("ammo_types");
 	}
-	if (iVar6 == joaat("WEAPON_MOD") || iVar6 == 658570475)
+	if (iVar6 == joaat("WEAPON_MOD") || iVar6 == joaat("WEAPON_DECORATION"))
 	{
 		Var7 = "ITEMTYPE_UPGRADES";
 		Var7.f_1 = "itemtype_textures";
@@ -2238,7 +2238,7 @@ void func_94(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_135(joaat("eaten"), func_131(iParam0)) };
+	Var0 = { func_135(joaat("EATEN"), func_131(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_136(func_137(joaat("HERBS_EATEN")), bParam1);
 }
@@ -3918,7 +3918,7 @@ int func_189()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -4850,7 +4850,7 @@ int func_226()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}
@@ -5767,7 +5767,7 @@ float func_270()
 
 float func_271()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 0f;
 	}

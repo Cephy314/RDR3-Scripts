@@ -206,7 +206,7 @@ void func_7(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_18(joaat("eaten"), func_11(iParam0)) };
+	Var0 = { func_18(joaat("EATEN"), func_11(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_20(func_19(joaat("HERBS_EATEN")), bParam1);
 }
@@ -1140,7 +1140,7 @@ int func_43()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}

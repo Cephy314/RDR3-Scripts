@@ -294,9 +294,9 @@ void func_6()
 	func_24(3, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_DRAIN_RATE"), sVar13, bVar14, func_40(fVar23), "pausemenu_player_update", fVar23 != 100f, iVar19);
 	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_43());
 	func_24(4, 0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_STORY_COMPLETE"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(joaat("kills")));
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(joaat("KILLS")));
 	func_24(4, 1, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_TOTAL_KILLS"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
-	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(joaat("deaths")));
+	sVar13 = MISC::_CREATE_VAR_STRING(2, "STRING", func_44(joaat("DEATHS")));
 	func_24(4, 2, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_TOTAL_DEATHS"), sVar13, 0, "", "", 0, joaat("COLOR_WHITE"));
 }
 
@@ -1349,11 +1349,11 @@ void func_56()
 	func_102(4, "PMPLAYER_CASH_SPENT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_GOLD", func_109((func_108(joaat("total_gold_spent")) / 100f), 2)), 64);
 	func_102(5, "PMPLAYER_GOLD_SPENT", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_44(joaat("kills")), 64);
+	IntToString(&cVar0, func_44(joaat("KILLS")), 64);
 	func_102(6, "PMPLAYER_TOTAL_KILLS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_44(joaat("deaths")), 64);
+	IntToString(&cVar0, func_44(joaat("DEATHS")), 64);
 	func_102(7, "PMPLAYER_TOTAL_DEATHS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (func_44(joaat("total_playing_time")) / 1000);
+	iVar8 = (func_44(joaat("TOTAL_PLAYING_TIME")) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);
@@ -1374,13 +1374,13 @@ void func_56()
 	}
 	func_102(9, "PMPLAYER_HORSES_OWNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(10, "PMPLAYER_CRIME_STAT");
-	IntToString(&cVar0, func_44(joaat("kills_players")), 64);
+	IntToString(&cVar0, func_44(joaat("KILLS_PLAYERS")), 64);
 	func_102(11, "PMPLAYER_PLAYERS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(joaat("kills"), joaat("law")), 64);
+	IntToString(&cVar0, func_115(joaat("KILLS"), joaat("LAW")), 64);
 	func_102(12, "PMPLAYER_LAW_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(joaat("kills"), joaat("CIVILIAN")), 64);
+	IntToString(&cVar0, func_115(joaat("KILLS"), joaat("CIVILIAN")), 64);
 	func_102(13, "PMPLAYER_PEDS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar8 = (func_115(joaat("time_in_wanted_level"), -2140438327) / 1000);
+	iVar8 = (func_115(joaat("TIME_IN_WANTED_LEVEL"), -2140438327) / 1000);
 	iVar9 = (iVar8 / 60);
 	iVar10 = (iVar9 / 60);
 	iVar11 = (iVar10 / 24);
@@ -1388,18 +1388,18 @@ void func_56()
 	iVar9 = (iVar9 % 60);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_DAYS_HOURS_MINUTES", iVar11, iVar10, iVar9), 64);
 	func_102(14, "PMPLAYER_TIME_WANTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(joaat("looted"), joaat("HUMANS")), 64);
+	IntToString(&cVar0, func_115(joaat("LOOTED"), joaat("HUMANS")), 64);
 	func_102(15, "PMPLAYER_PEDS_LOOTED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	func_101(16, "PMPLAYER_HUNTING");
-	IntToString(&cVar0, func_115(joaat("kills"), joaat("animal")), 64);
+	IntToString(&cVar0, func_115(joaat("KILLS"), joaat("ANIMAL")), 64);
 	func_102(17, "PMPLAYER_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_116(joaat("ANIMALS"), joaat("killed")), 64);
+	IntToString(&cVar0, func_116(joaat("Animals"), joaat("KILLED")), 64);
 	func_102(18, "PMPLAYER_UNIQUE_ANIMALS_KILLED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, ((func_115(joaat("skinned"), joaat("SMALL_ANIMALS")) + func_115(joaat("skinned"), joaat("MEDIUM_ANIMALS"))) + func_115(joaat("skinned"), joaat("LARGE_ANIMALS"))), 64);
+	IntToString(&cVar0, ((func_115(joaat("SKINNED"), joaat("SMALL_ANIMALS")) + func_115(joaat("SKINNED"), joaat("MEDIUM_ANIMALS"))) + func_115(joaat("SKINNED"), joaat("LARGE_ANIMALS"))), 64);
 	func_102(19, "PMPLAYER_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, ((func_116(joaat("ANIMALS"), joaat("skinned")) + func_116(joaat("ANIMALS"), joaat("plucked"))) + func_116(joaat("ANIMALS"), joaat("collected"))), 64);
+	IntToString(&cVar0, ((func_116(joaat("Animals"), joaat("SKINNED")) + func_116(joaat("Animals"), joaat("PLUCKED"))) + func_116(joaat("Animals"), joaat("COLLECTED"))), 64);
 	func_102(20, "PMPLAYER_UNIQUE_ANIMALS_SKINNED", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	IntToString(&cVar0, func_115(joaat("skinned_pelt_quality"), joaat("Perfect")), 64);
+	IntToString(&cVar0, func_115(joaat("skinned_pelt_quality"), joaat("PERFECT")), 64);
 	func_102(21, "PMPLAYER_PERFEECT_KILLS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(10, "PMPLAYER_MONEY", func_109((func_108(joaat("total_hunting_money_earned")) / 100f), 2)), 64);
 	func_102(22, "PMPLAYER_HUNTING_PROFITS", &cVar0, 1, 0, 0, 0, 0, 0, 0);
@@ -1420,8 +1420,8 @@ void func_56()
 	func_101(25, "PMPLAYER_CONTENT");
 	IntToString(&cVar0, func_43(), 64);
 	func_102(26, "PMPLAYER_STORY_COMPLETE", &cVar0, 1, 0, 0, 0, 0, 0, 0);
-	iVar18 = func_115(joaat("wins"), joaat("UGC_SERIES"));
-	iVar19 = func_115(joaat("losses"), joaat("UGC_SERIES"));
+	iVar18 = func_115(joaat("WINS"), joaat("UGC_SERIES"));
+	iVar19 = func_115(joaat("LOSSES"), joaat("UGC_SERIES"));
 	StringCopy(&cVar0, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_CORE_PC_VALUE", (iVar18 * 100 / (iVar18 + iVar19))), 64);
 	func_102(27, "PMPLAYER_SERIES_COMPLETE_PER", &cVar0, 1, 0, 0, 0, 0, 0, 0);
 	IntToString(&cVar0, (iVar18 + iVar19), 64);
@@ -2806,7 +2806,7 @@ void func_107()
 	char cVar9[16];
 	int iVar11;
 
-	Var0 = { func_88(joaat("date_character_created")) };
+	Var0 = { func_88(joaat("DATE_CHARACTER_CREATED")) };
 	STATS::STAT_ID_GET_DATE(&Var0, &vVar2);
 	iVar11 = LOCALIZATION::_LOCALIZATION_GET_USER_LANGUAGE();
 	switch (iVar11)
@@ -4309,129 +4309,129 @@ int func_170(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("BREED_AMERICANPAINT_OVERO"):
-			return joaat("a_c_horse_americanpaint_overo");
+			return joaat("A_C_Horse_AmericanPaint_Overo");
 		case joaat("BREED_AMERICANPAINT_TOBIANO"):
-			return joaat("a_c_horse_americanpaint_tobiano");
+			return joaat("A_C_Horse_AmericanPaint_Tobiano");
 		case joaat("BREED_AMERICANPAINT_SPLASHEDWHITE"):
-			return joaat("a_c_horse_americanpaint_splashedwhite");
+			return joaat("A_C_Horse_AmericanPaint_SplashedWhite");
 		case joaat("BREED_AMERICANPAINT_GREYOVERO"):
-			return joaat("a_c_horse_americanpaint_greyovero");
+			return joaat("A_C_Horse_AmericanPaint_Greyovero");
 		case joaat("BREED_AMERICANSTANDARDBRED_BLACK"):
-			return joaat("a_c_horse_americanstandardbred_black");
+			return joaat("A_C_Horse_AmericanStandardbred_Black");
 		case joaat("BREED_AMERICANSTANDARDBRED_BUCKSKIN"):
-			return joaat("a_c_horse_americanstandardbred_buckskin");
+			return joaat("A_C_Horse_AmericanStandardbred_Buckskin");
 		case joaat("BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE"):
-			return joaat("a_c_horse_americanstandardbred_palominodapple");
+			return joaat("A_C_Horse_AmericanStandardbred_PalominoDapple");
 		case joaat("BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN"):
-			return joaat("a_c_horse_americanstandardbred_silvertailbuckskin");
+			return joaat("A_C_Horse_AmericanStandardbred_SilverTailBuckskin");
 		case joaat("BREED_ANDALUSIAN_DARKBAY"):
-			return joaat("a_c_horse_andalusian_darkbay");
+			return joaat("A_C_Horse_Andalusian_DarkBay");
 		case joaat("BREED_ANDALUSIAN_ROSEGRAY"):
-			return joaat("a_c_horse_andalusian_rosegray");
+			return joaat("A_C_Horse_Andalusian_RoseGray");
 		case joaat("BREED_ANDALUSIAN_PERLINO"):
-			return joaat("a_c_horse_andalusian_perlino");
+			return joaat("A_C_Horse_Andalusian_Perlino");
 		case joaat("BREED_APPALOOSA_BLANKET"):
-			return joaat("a_c_horse_appaloosa_blanket");
+			return joaat("A_C_Horse_Appaloosa_Blanket");
 		case joaat("BREED_APPALOOSA_LEOPARDBLANKET"):
-			return joaat("a_c_horse_appaloosa_leopardblanket");
+			return joaat("A_C_Horse_Appaloosa_LeopardBlanket");
 		case joaat("BREED_APPALOOSA_BROWNLEOPARD"):
-			return joaat("a_c_horse_appaloosa_brownleopard");
+			return joaat("A_C_Horse_Appaloosa_BrownLeopard");
 		case joaat("BREED_APPALOOSA_LEOPARD"):
-			return joaat("a_c_horse_appaloosa_leopard");
+			return joaat("A_C_Horse_Appaloosa_Leopard");
 		case joaat("BREED_ARABIAN_BLACK"):
-			return joaat("a_c_horse_arabian_black");
+			return joaat("A_C_Horse_Arabian_Black");
 		case joaat("BREED_ARABIAN_ROSEGREYBAY"):
-			return joaat("a_c_horse_arabian_rosegreybay");
+			return joaat("A_C_Horse_Arabian_RoseGreyBay");
 		case joaat("BREED_ARABIAN_WHITE"):
-			return joaat("a_c_horse_arabian_white");
+			return joaat("A_C_Horse_Arabian_White");
 		case joaat("BREED_ARDENNES_BAYROAN"):
-			return joaat("a_c_horse_ardennes_bayroan");
+			return joaat("A_C_Horse_Ardennes_BayRoan");
 		case joaat("BREED_ARDENNES_STRAWBERRYROAN"):
-			return joaat("a_c_horse_ardennes_strawberryroan");
+			return joaat("A_C_Horse_Ardennes_StrawberryRoan");
 		case joaat("BREED_ARDENNES_IRONGREYROAN"):
-			return joaat("a_c_horse_ardennes_irongreyroan");
+			return joaat("A_C_Horse_Ardennes_IronGreyRoan");
 		case joaat("BREED_BELGIAN_BLONDCHESTNUT"):
-			return joaat("a_c_horse_belgian_blondchestnut");
+			return joaat("A_C_Horse_Belgian_BlondChestnut");
 		case joaat("BREED_BELGIAN_MEALYCHESTNUT"):
-			return joaat("a_c_horse_belgian_mealychestnut");
+			return joaat("A_C_Horse_Belgian_MealyChestnut");
 		case joaat("BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN"):
-			return joaat("a_c_horse_dutchwarmblood_sootybuckskin");
+			return joaat("A_C_Horse_DutchWarmblood_SootyBuckskin");
 		case joaat("BREED_DUTCHWARMBLOOD_SEALBROWN"):
-			return joaat("a_c_horse_dutchwarmblood_sealbrown");
+			return joaat("A_C_Horse_DutchWarmblood_SealBrown");
 		case joaat("BREED_DUTCHWARMBLOOD_CHOCOLATEROAN"):
-			return joaat("a_c_horse_dutchwarmblood_chocolateroan");
+			return joaat("A_C_Horse_DutchWarmblood_ChocolateRoan");
 		case joaat("BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT"):
-			return joaat("a_c_horse_hungarianhalfbred_flaxenchestnut");
+			return joaat("A_C_Horse_HungarianHalfbred_FlaxenChestnut");
 		case joaat("BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO"):
-			return joaat("a_c_horse_hungarianhalfbred_piebaldtobiano");
+			return joaat("A_C_Horse_HungarianHalfbred_PiebaldTobiano");
 		case joaat("BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY"):
-			return joaat("a_c_horse_hungarianhalfbred_darkdapplegrey");
+			return joaat("A_C_Horse_HungarianHalfbred_DarkDappleGrey");
 		case -1955947684:
-			return joaat("a_c_horse_kentuckysaddle_black");
+			return joaat("A_C_Horse_KentuckySaddle_Black");
 		case joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
-			return joaat("a_c_horse_kentuckysaddle_chestnutpinto");
+			return joaat("A_C_HORSE_KENTUCKYSADDLE_ChestnutPinto");
 		case joaat("BREED_KENTUCKYSADDLE_GREY"):
-			return joaat("a_c_horse_kentuckysaddle_grey");
+			return joaat("A_C_HORSE_KENTUCKYSADDLE_Grey");
 		case joaat("BREED_KENTUCKYSADDLE_SILVERBAY"):
-			return joaat("a_c_horse_kentuckysaddle_silverbay");
+			return joaat("A_C_HORSE_KENTUCKYSADDLE_SilverBay");
 		case joaat("BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE"):
-			return joaat("a_c_horse_missourifoxtrotter_amberchampagne");
+			return joaat("A_C_Horse_MissouriFoxTrotter_AmberChampagne");
 		case joaat("BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO"):
-			return joaat("a_c_horse_missourifoxtrotter_silverdapplepinto");
+			return joaat("A_C_Horse_MissouriFoxTrotter_SilverDapplePinto");
 		case joaat("BREED_MORGAN_BAY"):
-			return joaat("a_c_horse_morgan_bay");
+			return joaat("A_C_HORSE_Morgan_Bay");
 		case joaat("BREED_MORGAN_BAYROAN"):
-			return joaat("a_c_horse_morgan_bayroan");
+			return joaat("A_C_HORSE_Morgan_BayRoan");
 		case joaat("BREED_MORGAN_FLAXENCHESTNUT"):
-			return joaat("a_c_horse_morgan_flaxenchestnut");
+			return joaat("A_C_Horse_Morgan_FlaxenChestnut");
 		case joaat("BREED_MORGAN_PALOMINO"):
-			return joaat("a_c_horse_morgan_palomino");
+			return joaat("A_C_Horse_Morgan_Palomino");
 		case joaat("BREED_MUSTANG_GRULLODUN"):
-			return joaat("a_c_horse_mustang_grullodun");
+			return joaat("A_C_Horse_Mustang_GrulloDun");
 		case joaat("BREED_MUSTANG_WILDBAY"):
-			return joaat("a_c_horse_mustang_wildbay");
+			return joaat("A_C_Horse_Mustang_WildBay");
 		case joaat("BREED_MUSTANG_TIGERSTRIPEDBAY"):
-			return joaat("a_c_horse_mustang_tigerstripedbay");
+			return joaat("A_C_Horse_Mustang_TigerStripedBay");
 		case joaat("BREED_NOKOTA_BLUEROAN"):
-			return joaat("a_c_horse_nokota_blueroan");
+			return joaat("A_C_Horse_Nokota_BlueRoan");
 		case joaat("BREED_NOKOTA_WHITEROAN"):
-			return joaat("a_c_horse_nokota_whiteroan");
+			return joaat("A_C_Horse_Nokota_WhiteRoan");
 		case joaat("BREED_NOKOTA_REVERSEDAPPLEROAN"):
-			return joaat("a_c_horse_nokota_reversedappleroan");
+			return joaat("A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN");
 		case joaat("BREED_SHIRE_DARKBAY"):
-			return joaat("a_c_horse_shire_darkbay");
+			return joaat("A_C_Horse_Shire_DarkBay");
 		case joaat("BREED_SHIRE_LIGHTGREY"):
-			return joaat("a_c_horse_shire_lightgrey");
+			return joaat("A_C_Horse_Shire_LightGrey");
 		case joaat("BREED_SUFFOLKPUNCH_SORREL"):
-			return joaat("a_c_horse_suffolkpunch_sorrel");
+			return joaat("A_C_Horse_SuffolkPunch_Sorrel");
 		case joaat("BREED_SUFFOLKPUNCH_REDCHESTNUT"):
-			return joaat("a_c_horse_suffolkpunch_redchestnut");
+			return joaat("A_C_Horse_SuffolkPunch_RedChestnut");
 		case joaat("BREED_TENNESSEEWALKER_BLACKRABICANO"):
-			return joaat("a_c_horse_tennesseewalker_blackrabicano");
+			return joaat("A_C_Horse_TennesseeWalker_BlackRabicano");
 		case joaat("BREED_TENNESSEEWALKER_CHESTNUT"):
-			return joaat("a_c_horse_tennesseewalker_chestnut");
+			return joaat("A_C_Horse_TennesseeWalker_Chestnut");
 		case joaat("BREED_TENNESSEEWALKER_DAPPLEBAY"):
-			return joaat("a_c_horse_tennesseewalker_dapplebay");
+			return joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY");
 		case joaat("BREED_TENNESSEEWALKER_REDROAN"):
-			return joaat("a_c_horse_tennesseewalker_redroan");
+			return joaat("A_C_Horse_TennesseeWalker_RedRoan");
 		case joaat("BREED_TENNESSEEWALKER_FLAXENROAN"):
-			return joaat("a_c_horse_tennesseewalker_flaxenroan");
+			return joaat("A_C_Horse_TennesseeWalker_FlaxenRoan");
 		case joaat("BREED_THOROUGHBRED_BLOODBAY"):
-			return joaat("a_c_horse_thoroughbred_bloodbay");
+			return joaat("A_C_Horse_Thoroughbred_BloodBay");
 		case joaat("BREED_THOROUGHBRED_DAPPLEGREY"):
-			return joaat("a_c_horse_thoroughbred_dapplegrey");
+			return joaat("A_C_Horse_Thoroughbred_DappleGrey");
 		case joaat("BREED_THOROUGHBRED_BRINDLE"):
-			return joaat("a_c_horse_thoroughbred_brindle");
+			return joaat("A_C_Horse_Thoroughbred_Brindle");
 		case joaat("BREED_THOROUGHBRED_BLACKCHESTNUT"):
-			return joaat("a_c_horse_thoroughbred_blackchestnut");
+			return joaat("A_C_Horse_Thoroughbred_BlackChestnut");
 		case joaat("BREED_THOROUGHBRED_REVERSEDAPPLEBLACK"):
-			return joaat("a_c_horse_thoroughbred_reversedappleblack");
+			return joaat("A_C_Horse_Thoroughbred_ReverseDappleBlack");
 		case joaat("BREED_TURKOMAN_DARKBAY"):
-			return joaat("a_c_horse_turkoman_darkbay");
+			return joaat("A_C_Horse_Turkoman_DarkBay");
 		case joaat("BREED_TURKOMAN_GOLD"):
-			return joaat("a_c_horse_turkoman_gold");
+			return joaat("A_C_Horse_Turkoman_Gold");
 		case joaat("BREED_TURKOMAN_SILVER"):
-			return joaat("a_c_horse_turkoman_silver");
+			return joaat("A_C_Horse_Turkoman_Silver");
 		case joaat("BREED_BRETON_REDROAN"):
 			return joaat("A_C_Horse_Breton_RedRoan");
 		case joaat("BREED_BRETON_SORREL"):
@@ -4481,43 +4481,43 @@ int func_170(int iParam0)
 		case joaat("BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR"):
 			return 1344011125;
 		case joaat("BREED_DONKEY"):
-			return joaat("a_c_donkey_01");
+			return joaat("A_C_Donkey_01");
 		case joaat("BREED_MULE"):
-			return joaat("a_c_horsemule_01");
+			return joaat("A_C_HorseMule_01");
 		case joaat("BREED_MULE_PAINTED"):
-			return joaat("a_c_horsemulepainted_01");
+			return joaat("A_C_HorseMulePainted_01");
 		case joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN"):
 			return joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
 		case joaat("BREED_APPALOOSA_BLACKSNOWFLAKE"):
-			return joaat("a_c_horse_appaloosa_blacksnowflake");
+			return joaat("A_C_Horse_Appaloosa_BlackSnowflake");
 		case joaat("BREED_ARABIAN_GREY"):
-			return joaat("a_c_horse_arabian_grey");
+			return joaat("A_C_Horse_Arabian_Grey");
 		case joaat("BREED_ARABIAN_REDCHESTNUT"):
-			return joaat("a_c_horse_arabian_redchestnut");
+			return joaat("A_C_HORSE_ARABIAN_REDCHESTNUT");
 		case joaat("BREED_HUNGARIANHALFBRED_LIVERCHESTNUT"):
-			return joaat("a_c_horse_hungarianhalfbred_liverchestnut");
+			return joaat("A_C_Horse_HungarianHalfbred_LiverChestnut");
 		case joaat("BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE"):
-			return joaat("a_c_horse_missourifoxtrotter_sablechampagne");
+			return joaat("A_C_Horse_MissouriFoxTrotter_SableChampagne");
 		case joaat("BREED_MUSTANG_GOLDENDUN"):
-			return joaat("a_c_horse_mustang_goldendun");
+			return joaat("A_C_Horse_Mustang_GoldenDun");
 		case joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY"):
-			return joaat("a_c_horse_tennesseewalker_mahoganybay");
+			return joaat("A_C_Horse_TennesseeWalker_MahoganyBay");
 		case joaat("BREED_SHIRE_RAVENBLACK"):
-			return joaat("a_c_horse_shire_ravenblack");
+			return joaat("A_C_Horse_Shire_RavenBlack");
 		case joaat("BREED_BUELL_WARVETS"):
-			return joaat("a_c_horse_buell_warvets");
+			return joaat("A_C_Horse_Buell_WarVets");
 		case joaat("BREED_JOHN_ENDLESSSUMMER"):
-			return joaat("a_c_horse_john_endlesssummer");
+			return joaat("A_C_Horse_John_EndlessSummer");
 		case joaat("BREED_MURFREEBROOD_MANGE_01"):
-			return joaat("a_c_horse_murfreebrood_mange_01");
+			return joaat("A_C_Horse_MurfreeBrood_Mange_01");
 		case joaat("BREED_MURFREEBROOD_MANGE_02"):
-			return joaat("a_c_horse_murfreebrood_mange_02");
+			return joaat("A_C_Horse_MurfreeBrood_Mange_02");
 		case joaat("BREED_MURFREEBROOD_MANGE_03"):
-			return joaat("a_c_horse_murfreebrood_mange_03");
+			return joaat("A_C_Horse_MurfreeBrood_Mange_03");
 		case joaat("BREED_WINTER02_01"):
-			return joaat("a_c_horse_winter02_01");
+			return joaat("A_C_Horse_WINTER02_01");
 		case joaat("BREED_MANGY_BACKUP"):
-			return joaat("a_c_horse_mp_mangy_backup");
+			return joaat("A_C_Horse_MP_Mangy_Backup");
 		default:
 			break;
 	}
@@ -4758,135 +4758,135 @@ int func_184(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, b
 
 int func_185(int iParam0)
 {
-	if (iParam0 == joaat("a_c_horse_mp_mangy_backup"))
+	if (iParam0 == joaat("A_C_Horse_MP_Mangy_Backup"))
 	{
 		return 779169510;
 	}
 	switch (iParam0)
 	{
-		case joaat("a_c_horse_americanpaint_overo"):
+		case joaat("A_C_Horse_AmericanPaint_Overo"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_americanpaint_tobiano"):
+		case joaat("A_C_Horse_AmericanPaint_Tobiano"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_americanpaint_splashedwhite"):
+		case joaat("A_C_Horse_AmericanPaint_SplashedWhite"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_americanpaint_greyovero"):
+		case joaat("A_C_Horse_AmericanPaint_Greyovero"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_americanstandardbred_black"):
+		case joaat("A_C_Horse_AmericanStandardbred_Black"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_americanstandardbred_buckskin"):
+		case joaat("A_C_Horse_AmericanStandardbred_Buckskin"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_americanstandardbred_palominodapple"):
+		case joaat("A_C_Horse_AmericanStandardbred_PalominoDapple"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_americanstandardbred_silvertailbuckskin"):
+		case joaat("A_C_Horse_AmericanStandardbred_SilverTailBuckskin"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_andalusian_darkbay"):
+		case joaat("A_C_Horse_Andalusian_DarkBay"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_andalusian_rosegray"):
+		case joaat("A_C_Horse_Andalusian_RoseGray"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_andalusian_perlino"):
+		case joaat("A_C_Horse_Andalusian_Perlino"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_appaloosa_blanket"):
+		case joaat("A_C_Horse_Appaloosa_Blanket"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_appaloosa_leopardblanket"):
+		case joaat("A_C_Horse_Appaloosa_LeopardBlanket"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_appaloosa_brownleopard"):
+		case joaat("A_C_Horse_Appaloosa_BrownLeopard"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_appaloosa_leopard"):
+		case joaat("A_C_Horse_Appaloosa_Leopard"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_arabian_black"):
+		case joaat("A_C_Horse_Arabian_Black"):
 			return joaat("HORSE_CLASS_SUPERIOR");
-		case joaat("a_c_horse_arabian_rosegreybay"):
+		case joaat("A_C_Horse_Arabian_RoseGreyBay"):
 			return joaat("HORSE_CLASS_SUPERIOR");
-		case joaat("a_c_horse_arabian_white"):
+		case joaat("A_C_Horse_Arabian_White"):
 			return joaat("HORSE_CLASS_SUPERIOR");
-		case joaat("a_c_horse_ardennes_bayroan"):
+		case joaat("A_C_Horse_Ardennes_BayRoan"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_ardennes_strawberryroan"):
+		case joaat("A_C_Horse_Ardennes_StrawberryRoan"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_ardennes_irongreyroan"):
+		case joaat("A_C_Horse_Ardennes_IronGreyRoan"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_belgian_blondchestnut"):
+		case joaat("A_C_Horse_Belgian_BlondChestnut"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_belgian_mealychestnut"):
+		case joaat("A_C_Horse_Belgian_MealyChestnut"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_dutchwarmblood_sootybuckskin"):
+		case joaat("A_C_Horse_DutchWarmblood_SootyBuckskin"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_dutchwarmblood_sealbrown"):
+		case joaat("A_C_Horse_DutchWarmblood_SealBrown"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_dutchwarmblood_chocolateroan"):
+		case joaat("A_C_Horse_DutchWarmblood_ChocolateRoan"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_hungarianhalfbred_flaxenchestnut"):
+		case joaat("A_C_Horse_HungarianHalfbred_FlaxenChestnut"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_hungarianhalfbred_piebaldtobiano"):
+		case joaat("A_C_Horse_HungarianHalfbred_PiebaldTobiano"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_hungarianhalfbred_darkdapplegrey"):
+		case joaat("A_C_Horse_HungarianHalfbred_DarkDappleGrey"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_kentuckysaddle_black"):
+		case joaat("A_C_Horse_KentuckySaddle_Black"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_kentuckysaddle_chestnutpinto"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_ChestnutPinto"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_kentuckysaddle_grey"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_Grey"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_kentuckysaddle_silverbay"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_SilverBay"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_missourifoxtrotter_amberchampagne"):
+		case joaat("A_C_Horse_MissouriFoxTrotter_AmberChampagne"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
+		case joaat("A_C_Horse_MissouriFoxTrotter_SilverDapplePinto"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_morgan_bay"):
+		case joaat("A_C_HORSE_Morgan_Bay"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_morgan_bayroan"):
+		case joaat("A_C_HORSE_Morgan_BayRoan"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_morgan_flaxenchestnut"):
+		case joaat("A_C_Horse_Morgan_FlaxenChestnut"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_morgan_palomino"):
+		case joaat("A_C_Horse_Morgan_Palomino"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_mustang_grullodun"):
+		case joaat("A_C_Horse_Mustang_GrulloDun"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_mustang_wildbay"):
+		case joaat("A_C_Horse_Mustang_WildBay"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_mustang_tigerstripedbay"):
+		case joaat("A_C_Horse_Mustang_TigerStripedBay"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_nokota_blueroan"):
+		case joaat("A_C_Horse_Nokota_BlueRoan"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_nokota_whiteroan"):
+		case joaat("A_C_Horse_Nokota_WhiteRoan"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_nokota_reversedappleroan"):
+		case joaat("A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_shire_darkbay"):
+		case joaat("A_C_Horse_Shire_DarkBay"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_shire_lightgrey"):
+		case joaat("A_C_Horse_Shire_LightGrey"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_suffolkpunch_sorrel"):
+		case joaat("A_C_Horse_SuffolkPunch_Sorrel"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_suffolkpunch_redchestnut"):
+		case joaat("A_C_Horse_SuffolkPunch_RedChestnut"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_tennesseewalker_blackrabicano"):
+		case joaat("A_C_Horse_TennesseeWalker_BlackRabicano"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_tennesseewalker_chestnut"):
+		case joaat("A_C_Horse_TennesseeWalker_Chestnut"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_tennesseewalker_dapplebay"):
+		case joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_tennesseewalker_redroan"):
+		case joaat("A_C_Horse_TennesseeWalker_RedRoan"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_tennesseewalker_flaxenroan"):
+		case joaat("A_C_Horse_TennesseeWalker_FlaxenRoan"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_thoroughbred_bloodbay"):
+		case joaat("A_C_Horse_Thoroughbred_BloodBay"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_thoroughbred_dapplegrey"):
+		case joaat("A_C_Horse_Thoroughbred_DappleGrey"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_thoroughbred_brindle"):
+		case joaat("A_C_Horse_Thoroughbred_Brindle"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_thoroughbred_blackchestnut"):
+		case joaat("A_C_Horse_Thoroughbred_BlackChestnut"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_thoroughbred_reversedappleblack"):
+		case joaat("A_C_Horse_Thoroughbred_ReverseDappleBlack"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_turkoman_darkbay"):
+		case joaat("A_C_Horse_Turkoman_DarkBay"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_turkoman_gold"):
+		case joaat("A_C_Horse_Turkoman_Gold"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_turkoman_silver"):
+		case joaat("A_C_Horse_Turkoman_Silver"):
 			return joaat("HORSE_CLASS_MULTI");
 		case joaat("A_C_Horse_Breton_RedRoan"):
 			return joaat("HORSE_CLASS_MULTI");
@@ -4936,41 +4936,41 @@ int func_185(int iParam0)
 			return joaat("HORSE_CLASS_MULTI");
 		case 1344011125:
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_donkey_01"):
+		case joaat("A_C_Donkey_01"):
 			return joaat("HORSE_CLASS_OTHER");
-		case joaat("a_c_horsemule_01"):
+		case joaat("A_C_HorseMule_01"):
 			return joaat("HORSE_CLASS_OTHER");
-		case joaat("a_c_horsemulepainted_01"):
+		case joaat("A_C_HorseMulePainted_01"):
 			return joaat("HORSE_CLASS_OTHER");
 		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_appaloosa_blacksnowflake"):
+		case joaat("A_C_Horse_Appaloosa_BlackSnowflake"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_arabian_grey"):
+		case joaat("A_C_Horse_Arabian_Grey"):
 			return joaat("HORSE_CLASS_SUPERIOR");
-		case joaat("a_c_horse_arabian_redchestnut"):
+		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT"):
 			return joaat("HORSE_CLASS_SUPERIOR");
-		case joaat("a_c_horse_hungarianhalfbred_liverchestnut"):
+		case joaat("A_C_Horse_HungarianHalfbred_LiverChestnut"):
 			return joaat("HORSE_CLASS_WAR");
-		case joaat("a_c_horse_missourifoxtrotter_sablechampagne"):
+		case joaat("A_C_Horse_MissouriFoxTrotter_SableChampagne"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_mustang_goldendun"):
+		case joaat("A_C_Horse_Mustang_GoldenDun"):
 			return joaat("HORSE_CLASS_MULTI");
-		case joaat("a_c_horse_tennesseewalker_mahoganybay"):
+		case joaat("A_C_Horse_TennesseeWalker_MahoganyBay"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_shire_ravenblack"):
+		case joaat("A_C_Horse_Shire_RavenBlack"):
 			return joaat("HORSE_CLASS_DRAFT");
-		case joaat("a_c_horse_buell_warvets"):
+		case joaat("A_C_Horse_Buell_WarVets"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_john_endlesssummer"):
+		case joaat("A_C_Horse_John_EndlessSummer"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_murfreebrood_mange_01"):
+		case joaat("A_C_Horse_MurfreeBrood_Mange_01"):
 			return joaat("HORSE_CLASS_RIDING");
-		case joaat("a_c_horse_murfreebrood_mange_02"):
+		case joaat("A_C_Horse_MurfreeBrood_Mange_02"):
 			return joaat("HORSE_CLASS_RACE");
-		case joaat("a_c_horse_murfreebrood_mange_03"):
+		case joaat("A_C_Horse_MurfreeBrood_Mange_03"):
 			return joaat("HORSE_CLASS_WORK");
-		case joaat("a_c_horse_winter02_01"):
+		case joaat("A_C_Horse_WINTER02_01"):
 			return joaat("HORSE_CLASS_RACE");
 		default:
 			break;
@@ -5278,7 +5278,7 @@ int func_189(int iParam0, int iParam1)
 
 	if (!STREAMING::IS_MODEL_VALID(iParam0))
 	{
-		iParam0 = joaat("a_c_horse_tennesseewalker_chestnut");
+		iParam0 = joaat("A_C_Horse_TennesseeWalker_Chestnut");
 	}
 	iVar0 = ATTRIBUTE::GET_DEFAULT_ATTRIBUTE_POINTS_NEEDED_FOR_RANK(iParam0, 7, iParam1);
 	return iVar0;
@@ -6404,7 +6404,7 @@ struct<4> func_251(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(Global_1272170))
 			{
-				*Global_1272170 = { func_242(joaat("character"), func_77(), -1591664384, bParam0) };
+				*Global_1272170 = { func_242(joaat("CHARACTER"), func_77(), -1591664384, bParam0) };
 			}
 			return *Global_1272170;
 		}
@@ -6412,12 +6412,12 @@ struct<4> func_251(bool bParam0)
 		{
 			if (!INVENTORY::_0xB881CA836CC4B6D4(&(Global_1272170->f_12)))
 			{
-				Global_1272170->f_12 = { func_242(joaat("character"), func_77(), -1591664384, 0) };
+				Global_1272170->f_12 = { func_242(joaat("CHARACTER"), func_77(), -1591664384, 0) };
 			}
 			return Global_1272170->f_12;
 		}
 	}
-	return func_242(joaat("character"), func_77(), -1591664384, bParam0);
+	return func_242(joaat("CHARACTER"), func_77(), -1591664384, bParam0);
 }
 
 int func_252(int iParam0)
@@ -6852,135 +6852,135 @@ void func_277(var uParam0, int iParam1)
 
 int func_278(int iParam0)
 {
-	if (iParam0 == joaat("a_c_horse_mp_mangy_backup"))
+	if (iParam0 == joaat("A_C_Horse_MP_Mangy_Backup"))
 	{
 		return joaat("BREED_MANGY_BACKUP");
 	}
 	switch (iParam0)
 	{
-		case joaat("a_c_horse_americanpaint_overo"):
+		case joaat("A_C_Horse_AmericanPaint_Overo"):
 			return joaat("BREED_AMERICANPAINT_OVERO");
-		case joaat("a_c_horse_americanpaint_tobiano"):
+		case joaat("A_C_Horse_AmericanPaint_Tobiano"):
 			return joaat("BREED_AMERICANPAINT_TOBIANO");
-		case joaat("a_c_horse_americanpaint_splashedwhite"):
+		case joaat("A_C_Horse_AmericanPaint_SplashedWhite"):
 			return joaat("BREED_AMERICANPAINT_SPLASHEDWHITE");
-		case joaat("a_c_horse_americanpaint_greyovero"):
+		case joaat("A_C_Horse_AmericanPaint_Greyovero"):
 			return joaat("BREED_AMERICANPAINT_GREYOVERO");
-		case joaat("a_c_horse_americanstandardbred_black"):
+		case joaat("A_C_Horse_AmericanStandardbred_Black"):
 			return joaat("BREED_AMERICANSTANDARDBRED_BLACK");
-		case joaat("a_c_horse_americanstandardbred_buckskin"):
+		case joaat("A_C_Horse_AmericanStandardbred_Buckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_BUCKSKIN");
-		case joaat("a_c_horse_americanstandardbred_palominodapple"):
+		case joaat("A_C_Horse_AmericanStandardbred_PalominoDapple"):
 			return joaat("BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE");
-		case joaat("a_c_horse_americanstandardbred_silvertailbuckskin"):
+		case joaat("A_C_Horse_AmericanStandardbred_SilverTailBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN");
-		case joaat("a_c_horse_andalusian_darkbay"):
+		case joaat("A_C_Horse_Andalusian_DarkBay"):
 			return joaat("BREED_ANDALUSIAN_DARKBAY");
-		case joaat("a_c_horse_andalusian_rosegray"):
+		case joaat("A_C_Horse_Andalusian_RoseGray"):
 			return joaat("BREED_ANDALUSIAN_ROSEGRAY");
-		case joaat("a_c_horse_andalusian_perlino"):
+		case joaat("A_C_Horse_Andalusian_Perlino"):
 			return joaat("BREED_ANDALUSIAN_PERLINO");
-		case joaat("a_c_horse_appaloosa_blanket"):
+		case joaat("A_C_Horse_Appaloosa_Blanket"):
 			return joaat("BREED_APPALOOSA_BLANKET");
-		case joaat("a_c_horse_appaloosa_leopardblanket"):
+		case joaat("A_C_Horse_Appaloosa_LeopardBlanket"):
 			return joaat("BREED_APPALOOSA_LEOPARDBLANKET");
-		case joaat("a_c_horse_appaloosa_brownleopard"):
+		case joaat("A_C_Horse_Appaloosa_BrownLeopard"):
 			return joaat("BREED_APPALOOSA_BROWNLEOPARD");
-		case joaat("a_c_horse_appaloosa_leopard"):
+		case joaat("A_C_Horse_Appaloosa_Leopard"):
 			return joaat("BREED_APPALOOSA_LEOPARD");
-		case joaat("a_c_horse_arabian_black"):
+		case joaat("A_C_Horse_Arabian_Black"):
 			return joaat("BREED_ARABIAN_BLACK");
-		case joaat("a_c_horse_arabian_rosegreybay"):
+		case joaat("A_C_Horse_Arabian_RoseGreyBay"):
 			return joaat("BREED_ARABIAN_ROSEGREYBAY");
-		case joaat("a_c_horse_arabian_white"):
+		case joaat("A_C_Horse_Arabian_White"):
 			return joaat("BREED_ARABIAN_WHITE");
-		case joaat("a_c_horse_ardennes_bayroan"):
+		case joaat("A_C_Horse_Ardennes_BayRoan"):
 			return joaat("BREED_ARDENNES_BAYROAN");
-		case joaat("a_c_horse_ardennes_strawberryroan"):
+		case joaat("A_C_Horse_Ardennes_StrawberryRoan"):
 			return joaat("BREED_ARDENNES_STRAWBERRYROAN");
-		case joaat("a_c_horse_ardennes_irongreyroan"):
+		case joaat("A_C_Horse_Ardennes_IronGreyRoan"):
 			return joaat("BREED_ARDENNES_IRONGREYROAN");
-		case joaat("a_c_horse_belgian_blondchestnut"):
+		case joaat("A_C_Horse_Belgian_BlondChestnut"):
 			return joaat("BREED_BELGIAN_BLONDCHESTNUT");
-		case joaat("a_c_horse_belgian_mealychestnut"):
+		case joaat("A_C_Horse_Belgian_MealyChestnut"):
 			return joaat("BREED_BELGIAN_MEALYCHESTNUT");
-		case joaat("a_c_horse_dutchwarmblood_sootybuckskin"):
+		case joaat("A_C_Horse_DutchWarmblood_SootyBuckskin"):
 			return joaat("BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN");
-		case joaat("a_c_horse_dutchwarmblood_sealbrown"):
+		case joaat("A_C_Horse_DutchWarmblood_SealBrown"):
 			return joaat("BREED_DUTCHWARMBLOOD_SEALBROWN");
-		case joaat("a_c_horse_dutchwarmblood_chocolateroan"):
+		case joaat("A_C_Horse_DutchWarmblood_ChocolateRoan"):
 			return joaat("BREED_DUTCHWARMBLOOD_CHOCOLATEROAN");
-		case joaat("a_c_horse_hungarianhalfbred_flaxenchestnut"):
+		case joaat("A_C_Horse_HungarianHalfbred_FlaxenChestnut"):
 			return joaat("BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT");
-		case joaat("a_c_horse_hungarianhalfbred_piebaldtobiano"):
+		case joaat("A_C_Horse_HungarianHalfbred_PiebaldTobiano"):
 			return joaat("BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO");
-		case joaat("a_c_horse_hungarianhalfbred_darkdapplegrey"):
+		case joaat("A_C_Horse_HungarianHalfbred_DarkDappleGrey"):
 			return joaat("BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY");
-		case joaat("a_c_horse_kentuckysaddle_black"):
+		case joaat("A_C_Horse_KentuckySaddle_Black"):
 			return -1955947684;
-		case joaat("a_c_horse_kentuckysaddle_chestnutpinto"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_ChestnutPinto"):
 			return joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO");
-		case joaat("a_c_horse_kentuckysaddle_grey"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_Grey"):
 			return joaat("BREED_KENTUCKYSADDLE_GREY");
-		case joaat("a_c_horse_kentuckysaddle_silverbay"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_SilverBay"):
 			return joaat("BREED_KENTUCKYSADDLE_SILVERBAY");
-		case joaat("a_c_horse_missourifoxtrotter_amberchampagne"):
+		case joaat("A_C_Horse_MissouriFoxTrotter_AmberChampagne"):
 			return joaat("BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE");
-		case joaat("a_c_horse_missourifoxtrotter_silverdapplepinto"):
+		case joaat("A_C_Horse_MissouriFoxTrotter_SilverDapplePinto"):
 			return joaat("BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO");
-		case joaat("a_c_horse_morgan_bay"):
+		case joaat("A_C_HORSE_Morgan_Bay"):
 			return joaat("BREED_MORGAN_BAY");
-		case joaat("a_c_horse_morgan_bayroan"):
+		case joaat("A_C_HORSE_Morgan_BayRoan"):
 			return joaat("BREED_MORGAN_BAYROAN");
-		case joaat("a_c_horse_morgan_flaxenchestnut"):
+		case joaat("A_C_Horse_Morgan_FlaxenChestnut"):
 			return joaat("BREED_MORGAN_FLAXENCHESTNUT");
-		case joaat("a_c_horse_morgan_palomino"):
+		case joaat("A_C_Horse_Morgan_Palomino"):
 			return joaat("BREED_MORGAN_PALOMINO");
-		case joaat("a_c_horse_mustang_grullodun"):
+		case joaat("A_C_Horse_Mustang_GrulloDun"):
 			return joaat("BREED_MUSTANG_GRULLODUN");
-		case joaat("a_c_horse_mustang_wildbay"):
+		case joaat("A_C_Horse_Mustang_WildBay"):
 			return joaat("BREED_MUSTANG_WILDBAY");
-		case joaat("a_c_horse_mustang_tigerstripedbay"):
+		case joaat("A_C_Horse_Mustang_TigerStripedBay"):
 			return joaat("BREED_MUSTANG_TIGERSTRIPEDBAY");
-		case joaat("a_c_horse_nokota_blueroan"):
+		case joaat("A_C_Horse_Nokota_BlueRoan"):
 			return joaat("BREED_NOKOTA_BLUEROAN");
-		case joaat("a_c_horse_nokota_whiteroan"):
+		case joaat("A_C_Horse_Nokota_WhiteRoan"):
 			return joaat("BREED_NOKOTA_WHITEROAN");
-		case joaat("a_c_horse_nokota_reversedappleroan"):
+		case joaat("A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN"):
 			return joaat("BREED_NOKOTA_REVERSEDAPPLEROAN");
-		case joaat("a_c_horse_shire_darkbay"):
+		case joaat("A_C_Horse_Shire_DarkBay"):
 			return joaat("BREED_SHIRE_DARKBAY");
-		case joaat("a_c_horse_shire_lightgrey"):
+		case joaat("A_C_Horse_Shire_LightGrey"):
 			return joaat("BREED_SHIRE_LIGHTGREY");
-		case joaat("a_c_horse_suffolkpunch_sorrel"):
+		case joaat("A_C_Horse_SuffolkPunch_Sorrel"):
 			return joaat("BREED_SUFFOLKPUNCH_SORREL");
-		case joaat("a_c_horse_suffolkpunch_redchestnut"):
+		case joaat("A_C_Horse_SuffolkPunch_RedChestnut"):
 			return joaat("BREED_SUFFOLKPUNCH_REDCHESTNUT");
-		case joaat("a_c_horse_tennesseewalker_blackrabicano"):
+		case joaat("A_C_Horse_TennesseeWalker_BlackRabicano"):
 			return joaat("BREED_TENNESSEEWALKER_BLACKRABICANO");
-		case joaat("a_c_horse_tennesseewalker_chestnut"):
+		case joaat("A_C_Horse_TennesseeWalker_Chestnut"):
 			return joaat("BREED_TENNESSEEWALKER_CHESTNUT");
-		case joaat("a_c_horse_tennesseewalker_dapplebay"):
+		case joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY"):
 			return joaat("BREED_TENNESSEEWALKER_DAPPLEBAY");
-		case joaat("a_c_horse_tennesseewalker_redroan"):
+		case joaat("A_C_Horse_TennesseeWalker_RedRoan"):
 			return joaat("BREED_TENNESSEEWALKER_REDROAN");
-		case joaat("a_c_horse_tennesseewalker_flaxenroan"):
+		case joaat("A_C_Horse_TennesseeWalker_FlaxenRoan"):
 			return joaat("BREED_TENNESSEEWALKER_FLAXENROAN");
-		case joaat("a_c_horse_thoroughbred_bloodbay"):
+		case joaat("A_C_Horse_Thoroughbred_BloodBay"):
 			return joaat("BREED_THOROUGHBRED_BLOODBAY");
-		case joaat("a_c_horse_thoroughbred_dapplegrey"):
+		case joaat("A_C_Horse_Thoroughbred_DappleGrey"):
 			return joaat("BREED_THOROUGHBRED_DAPPLEGREY");
-		case joaat("a_c_horse_thoroughbred_brindle"):
+		case joaat("A_C_Horse_Thoroughbred_Brindle"):
 			return joaat("BREED_THOROUGHBRED_BRINDLE");
-		case joaat("a_c_horse_thoroughbred_blackchestnut"):
+		case joaat("A_C_Horse_Thoroughbred_BlackChestnut"):
 			return joaat("BREED_THOROUGHBRED_BLACKCHESTNUT");
-		case joaat("a_c_horse_thoroughbred_reversedappleblack"):
+		case joaat("A_C_Horse_Thoroughbred_ReverseDappleBlack"):
 			return joaat("BREED_THOROUGHBRED_REVERSEDAPPLEBLACK");
-		case joaat("a_c_horse_turkoman_darkbay"):
+		case joaat("A_C_Horse_Turkoman_DarkBay"):
 			return joaat("BREED_TURKOMAN_DARKBAY");
-		case joaat("a_c_horse_turkoman_gold"):
+		case joaat("A_C_Horse_Turkoman_Gold"):
 			return joaat("BREED_TURKOMAN_GOLD");
-		case joaat("a_c_horse_turkoman_silver"):
+		case joaat("A_C_Horse_Turkoman_Silver"):
 			return joaat("BREED_TURKOMAN_SILVER");
 		case joaat("A_C_Horse_Breton_RedRoan"):
 			return joaat("BREED_BRETON_REDROAN");
@@ -7030,41 +7030,41 @@ int func_278(int iParam0)
 			return joaat("BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN");
 		case 1344011125:
 			return joaat("BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR");
-		case joaat("a_c_donkey_01"):
+		case joaat("A_C_Donkey_01"):
 			return joaat("BREED_DONKEY");
-		case joaat("a_c_horsemule_01"):
+		case joaat("A_C_HorseMule_01"):
 			return joaat("BREED_MULE");
-		case joaat("a_c_horsemulepainted_01"):
+		case joaat("A_C_HorseMulePainted_01"):
 			return joaat("BREED_MULE_PAINTED");
 		case joaat("A_C_Horse_AmericanStandardbred_LightBuckskin"):
 			return joaat("BREED_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
-		case joaat("a_c_horse_appaloosa_blacksnowflake"):
+		case joaat("A_C_Horse_Appaloosa_BlackSnowflake"):
 			return joaat("BREED_APPALOOSA_BLACKSNOWFLAKE");
-		case joaat("a_c_horse_arabian_grey"):
+		case joaat("A_C_Horse_Arabian_Grey"):
 			return joaat("BREED_ARABIAN_GREY");
-		case joaat("a_c_horse_arabian_redchestnut"):
+		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT"):
 			return joaat("BREED_ARABIAN_REDCHESTNUT");
-		case joaat("a_c_horse_hungarianhalfbred_liverchestnut"):
+		case joaat("A_C_Horse_HungarianHalfbred_LiverChestnut"):
 			return joaat("BREED_HUNGARIANHALFBRED_LIVERCHESTNUT");
-		case joaat("a_c_horse_missourifoxtrotter_sablechampagne"):
+		case joaat("A_C_Horse_MissouriFoxTrotter_SableChampagne"):
 			return joaat("BREED_MISSOURIFOXTROTTER_SABLECHAMPAGNE");
-		case joaat("a_c_horse_mustang_goldendun"):
+		case joaat("A_C_Horse_Mustang_GoldenDun"):
 			return joaat("BREED_MUSTANG_GOLDENDUN");
-		case joaat("a_c_horse_tennesseewalker_mahoganybay"):
+		case joaat("A_C_Horse_TennesseeWalker_MahoganyBay"):
 			return joaat("BREED_TENNESSEEWALKER_MAHOGANYBAY");
-		case joaat("a_c_horse_shire_ravenblack"):
+		case joaat("A_C_Horse_Shire_RavenBlack"):
 			return joaat("BREED_SHIRE_RAVENBLACK");
-		case joaat("a_c_horse_buell_warvets"):
+		case joaat("A_C_Horse_Buell_WarVets"):
 			return joaat("BREED_BUELL_WARVETS");
-		case joaat("a_c_horse_john_endlesssummer"):
+		case joaat("A_C_Horse_John_EndlessSummer"):
 			return joaat("BREED_JOHN_ENDLESSSUMMER");
-		case joaat("a_c_horse_murfreebrood_mange_01"):
+		case joaat("A_C_Horse_MurfreeBrood_Mange_01"):
 			return joaat("BREED_MURFREEBROOD_MANGE_01");
-		case joaat("a_c_horse_murfreebrood_mange_02"):
+		case joaat("A_C_Horse_MurfreeBrood_Mange_02"):
 			return joaat("BREED_MURFREEBROOD_MANGE_02");
-		case joaat("a_c_horse_murfreebrood_mange_03"):
+		case joaat("A_C_Horse_MurfreeBrood_Mange_03"):
 			return joaat("BREED_MURFREEBROOD_MANGE_03");
-		case joaat("a_c_horse_winter02_01"):
+		case joaat("A_C_Horse_WINTER02_01"):
 			return joaat("BREED_WINTER02_01");
 		default:
 			break;

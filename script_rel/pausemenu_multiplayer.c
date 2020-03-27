@@ -130,7 +130,7 @@ char* func_7(int iParam0)
 		case 0:
 			sVar0 = "";
 			break;
-		case joaat("NEW_GAME"):
+		case joaat("new_game"):
 			sVar0 = "new_game";
 			break;
 		case joaat("shift_f"):
@@ -175,7 +175,7 @@ char* func_7(int iParam0)
 		case joaat("last_location"):
 			sVar0 = "last_location";
 			break;
-		case joaat("camp"):
+		case joaat("Camp"):
 			sVar0 = "camp";
 			break;
 		case joaat("handheld"):

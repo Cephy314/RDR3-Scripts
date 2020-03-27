@@ -338,7 +338,7 @@ void __EntryFunction__()
 	iLocal_251 = joaat("INPUT_JUMP");
 	iLocal_252 = joaat("INPUT_RELOAD");
 	iLocal_353 = 673107768;
-	iLocal_359 = joaat("s_m_m_ambientlawrural_01");
+	iLocal_359 = joaat("S_M_M_AmbientLawRural_01");
 	iLocal_360 = joaat("s_inv_moneyclip01x");
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
@@ -355,7 +355,7 @@ void __EntryFunction__()
 			{
 				if (func_2(&uLocal_373))
 				{
-					func_5(func_3(joaat("jail_time")), func_4(&uLocal_373));
+					func_5(func_3(joaat("JAIL_TIME")), func_4(&uLocal_373));
 					func_6(&uLocal_373);
 				}
 				if (!MISC::IS_BIT_SET(Local_182.f_3, 0))
@@ -498,7 +498,7 @@ void func_10()
 							func_26(1);
 						}
 					}
-					func_5(func_3(joaat("busted")), 1);
+					func_5(func_3(joaat("BUSTED")), 1);
 					func_27(1);
 					func_28(Local_182.f_17, 0f, 1);
 					if (!UNLOCK::_UNLOCK_IS_UNLOCKED(1444561974))
@@ -751,8 +751,8 @@ void func_17(var uParam0, float fParam1)
 
 void func_18()
 {
-	Global_1901929->f_741 = func_69(joaat("Jail"), joaat("NET_JAIL_BRIBE_AMOUNT_MULTIPLIER"), 0.5f, "NET_JAIL_BRIBE_AMOUNT_MULTIPLIER");
-	Global_1901929->f_741.f_1 = func_69(joaat("Jail"), -589363792, 2f, "NET_JAIL_BRIBE_REDUCTION_TIME");
+	Global_1901929->f_741 = func_69(joaat("JAIL"), joaat("NET_JAIL_BRIBE_AMOUNT_MULTIPLIER"), 0.5f, "NET_JAIL_BRIBE_AMOUNT_MULTIPLIER");
+	Global_1901929->f_741.f_1 = func_69(joaat("JAIL"), -589363792, 2f, "NET_JAIL_BRIBE_REDUCTION_TIME");
 	func_70(Global_1901929->f_741, 0f, 1f);
 	func_70(Global_1901929->f_741.f_1, 1f, 10f);
 }
@@ -3337,11 +3337,11 @@ int func_135(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = joaat("name");
+	Var0.f_2 = joaat("Name");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("Name")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
@@ -3354,17 +3354,17 @@ int func_135(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("Default")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("Default")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("Default")))
 				{
 				}
 				break;
@@ -3384,13 +3384,13 @@ int func_135(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("MAX"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("MAX"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("MAX"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -4387,13 +4387,13 @@ int func_181(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("int"):
+		case joaat("INT"):
 			iVar0 = 0;
 			break;
 		case joaat("float"):
 			iVar0 = 1;
 			break;
-		case joaat("bool"):
+		case joaat("BOOL"):
 			iVar0 = 2;
 			break;
 	}
@@ -4484,57 +4484,57 @@ int func_189(int iParam0)
 		case 11:
 			return joaat("AMMO_DYNAMITE_VOLATILE");
 		case 12:
-			return 424030678 /* GXTEntry: "Hatchet" */;
+			return joaat("AMMO_HATCHET");
 		case 13:
-			return 446901936 /* GXTEntry: "Hunter Hatchet" */;
+			return joaat("AMMO_HATCHET_HUNTER");
 		case 14:
 			return -355466967 /* GXTEntry: "Lasso Ammo" */;
 		case 15:
-			return joaat("ammo_molotov");
+			return joaat("AMMO_MOLOTOV");
 		case 16:
-			return -2006166057 /* GXTEntry: "Fire Bottle - Volatile" */;
+			return joaat("AMMO_MOLOTOV_VOLATILE");
 		case 17:
-			return joaat("ammo_pistol");
+			return joaat("AMMO_PISTOL");
 		case 18:
 			return joaat("AMMO_PISTOL_EXPRESS");
 		case 19:
-			return 1185302722 /* GXTEntry: "Pistol Cartridges - Explosive" */;
+			return joaat("AMMO_PISTOL_EXPRESS_EXPLOSIVE");
 		case 20:
 			return joaat("AMMO_PISTOL_HIGH_VELOCITY");
 		case 21:
-			return 236338048 /* GXTEntry: "Pistol Cartridges - Split Point" */;
+			return joaat("AMMO_PISTOL_SPLIT_POINT");
 		case 22:
 			return joaat("AMMO_REPEATER");
 		case 23:
 			return joaat("AMMO_REPEATER_EXPRESS");
 		case 24:
-			return -1668585578 /* GXTEntry: "Repeater Cartridges - Explosive" */;
+			return joaat("AMMO_REPEATER_EXPRESS_EXPLOSIVE");
 		case 25:
 			return joaat("AMMO_REPEATER_HIGH_VELOCITY");
 		case 26:
-			return 1148521608 /* GXTEntry: "Repeater Cartridges - Split Point" */;
+			return joaat("AMMO_REPEATER_SPLIT_POINT");
 		case 27:
 			return joaat("AMMO_REVOLVER");
 		case 28:
 			return joaat("AMMO_REVOLVER_EXPRESS");
 		case 29:
-			return 78180283 /* GXTEntry: "Revolver Cartridges - Explosive" */;
+			return joaat("AMMO_REVOLVER_EXPRESS_EXPLOSIVE");
 		case 30:
 			return joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 		case 31:
-			return 1243983880 /* GXTEntry: "Revolver Cartridges - Split Point" */;
+			return joaat("AMMO_REVOLVER_SPLIT_POINT");
 		case 32:
-			return joaat("ammo_rifle");
+			return joaat("AMMO_RIFLE");
 		case 33:
 			return joaat("AMMO_RIFLE_EXPRESS");
 		case 34:
-			return 1838310467 /* GXTEntry: "Rifle Cartridges - Explosive" */;
+			return joaat("AMMO_RIFLE_EXPRESS_EXPLOSIVE");
 		case 35:
 			return joaat("AMMO_RIFLE_HIGH_VELOCITY");
 		case 36:
-			return 200254898 /* GXTEntry: "Rifle Cartridges - Split Point" */;
+			return joaat("AMMO_RIFLE_SPLIT_POINT");
 		case 37:
-			return joaat("ammo_shotgun");
+			return joaat("AMMO_SHOTGUN");
 		case 38:
 			return joaat("AMMO_SHOTGUN_BUCKSHOT_INCENDIARY");
 		case 39:
@@ -4673,7 +4673,7 @@ void func_194(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -5091,7 +5091,7 @@ void func_214(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 		if (func_226(iVar2, 8))
 		{
 		}
-		else if (&(Global_1951141->f_81[iVar0 /*12*/])->f_3[0] == joaat("MISSING") || &uParam0->f_1[iVar0 /*3*/] == 0)
+		else if (&(Global_1951141->f_81[iVar0 /*12*/])->f_3[0] == joaat("missing") || &uParam0->f_1[iVar0 /*3*/] == 0)
 		{
 		}
 		else if (!func_232(iVar0, iParam3))

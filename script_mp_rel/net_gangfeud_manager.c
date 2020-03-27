@@ -4154,7 +4154,7 @@ int func_193(int iParam0, int iParam1, int iParam2)
 	{
 		return 2;
 	}
-	if (func_216(iParam0) == joaat("POSSE_VERSUS"))
+	if (func_216(iParam0) == joaat("Posse_Versus"))
 	{
 		if (func_217(iParam1, 1))
 		{
@@ -4231,11 +4231,11 @@ int func_195(int iParam0)
 		case 12:
 		case 13:
 		case 14:
-			return joaat("POSSE_VERSUS");
+			return joaat("Posse_Versus");
 		default:
 			break;
 	}
-	return joaat("standard");
+	return joaat("Standard");
 }
 
 int func_196(int iParam0)
@@ -4246,7 +4246,7 @@ int func_196(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("standard"):
+		case joaat("Standard"):
 		case 1038512660:
 			iVar0 = 0;
 			iVar1 = 0;
@@ -4255,7 +4255,7 @@ int func_196(int iParam0)
 			iVar0 = 1;
 			iVar1 = 1;
 			break;
-		case joaat("POSSE_VERSUS"):
+		case joaat("Posse_Versus"):
 			iVar0 = 2;
 			iVar1 = 7;
 			break;
@@ -4373,7 +4373,7 @@ int func_199(int iParam0, int iParam1)
 	{
 		return 3;
 	}
-	if (func_216(iParam0) == joaat("POSSE_VERSUS"))
+	if (func_216(iParam0) == joaat("Posse_Versus"))
 	{
 		vVar0 = { func_228(iParam0, iParam1) };
 		if (!func_189(vVar0) && (VOLUME::_0x769BB7626B8CDB06(vVar0, 100f, 0, 0, 0) || VOLUME::_0xAA9EE2AAFC717623(vVar0, 0, 0, 0)))
@@ -4472,7 +4472,7 @@ int func_205(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GreatPlains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -4480,17 +4480,17 @@ int func_205(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("Heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("scarlettMeadows"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TallTrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RioBravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -5133,7 +5133,7 @@ int func_245(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return joaat("challenges");
+			return joaat("Challenges");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -5325,7 +5325,7 @@ int func_252(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("Challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -5334,7 +5334,7 @@ int func_252(int iParam0)
 			iVar0 = joaat("feature");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -5358,16 +5358,16 @@ int func_252(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("Title");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -5477,15 +5477,15 @@ int func_255(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("blackjack"):
+		case joaat("Blackjack"):
 			return 0;
-		case joaat("Dominoes"):
+		case joaat("DOMINOES"):
 			return 1;
-		case joaat("Poker"):
+		case joaat("POKER"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("milking_cow"):
+		case joaat("MILKING_COW"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -5503,7 +5503,7 @@ int func_256(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("challenges"):
+		case joaat("Challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -5573,7 +5573,7 @@ int func_258(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("null"):
+		case joaat("Null"):
 			return -1;
 		case joaat("normal"):
 			return 0;
@@ -5587,19 +5587,19 @@ int func_258(int iParam0)
 			return 4;
 		case 1419735597:
 			return 5;
-		case 1004744465:
+		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("bountyhunter"):
+		case joaat("BountyHunter"):
 			return 7;
 		case joaat("Gunslinger"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("hunter"):
+		case joaat("Hunter"):
 			return 10;
 		case joaat("Trader"):
 			return 11;
-		case joaat("Collector"):
+		case joaat("collector"):
 			return 12;
 		case -218234180:
 			return 13;

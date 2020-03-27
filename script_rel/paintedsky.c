@@ -1446,7 +1446,7 @@ void func_69(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_119(Global_1935630, 8192);
-	func_121(func_120(-1532769513, joaat("areas")), 1);
+	func_121(func_120(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1791,14 +1791,14 @@ int func_76(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
+		case joaat("DRIZZLE"):
 		case joaat("thunder"):
-		case joaat("shower"):
+		case joaat("SHOWER"):
 		case joaat("sleet"):
-		case joaat("hurricane"):
+		case joaat("HURRICANE"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -3806,7 +3806,7 @@ int func_143()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}
@@ -4990,7 +4990,7 @@ int func_200()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}

@@ -797,7 +797,7 @@ void func_28(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -2171,17 +2171,17 @@ int func_77()
 			{
 				iLocal_243 = 1834537343;
 				iLocal_246 = 22956558;
-				iLocal_247 = joaat("clouds");
+				iLocal_247 = joaat("Clouds");
 				if (MISC::IS_BIT_SET(iLocal_398, 12))
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 30))
 					{
-						iLocal_247 = joaat("misty");
+						iLocal_247 = joaat("MISTY");
 						func_181(-0.26f, -0.042f, 630f, 2354.531f, -2155.473f, -2101.975f);
 					}
 					else
 					{
-						iLocal_247 = joaat("fog");
+						iLocal_247 = joaat("FOG");
 						func_181(0.354f, -0.55f, 534f, 2695.09f, 1101.355f, -2409.212f);
 					}
 					StringCopy(&cLocal_248, "mp_winlose_predator_", 64);
@@ -2189,7 +2189,7 @@ int func_77()
 				}
 				else if (MISC::IS_BIT_SET(iLocal_396, 31))
 				{
-					iLocal_247 = joaat("overcastdark");
+					iLocal_247 = joaat("OVERCASTDARK");
 					func_181(0.386f, -0.072f, 597f, 1831.857f, 29.148f, -1795.856f);
 				}
 				else if (MISC::IS_BIT_SET(iLocal_396, 30))
@@ -2215,7 +2215,7 @@ int func_77()
 				iLocal_246 = 435889881;
 				iLocal_244 = -1616778617;
 				iLocal_245 = -1852748182;
-				iLocal_247 = joaat("sunny");
+				iLocal_247 = joaat("SUNNY");
 			}
 			StringConCat(&cLocal_248, "heartlands", 64);
 			break;
@@ -2224,12 +2224,12 @@ int func_77()
 			{
 				iLocal_243 = -1645988897;
 				iLocal_246 = 1614850834;
-				iLocal_247 = joaat("fog");
+				iLocal_247 = joaat("FOG");
 				if (MISC::IS_BIT_SET(iLocal_398, 12))
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 30))
 					{
-						iLocal_247 = joaat("misty");
+						iLocal_247 = joaat("MISTY");
 						func_181(-0.522f, 0.198f, 990.5f, 2461.041f, -2391.535f, -2293.49f);
 					}
 					StringCopy(&cLocal_248, "mp_winlose_predator_", 64);
@@ -2246,13 +2246,13 @@ int func_77()
 				iLocal_246 = -2036638644;
 				iLocal_244 = -209782407;
 				iLocal_245 = -1068985587;
-				iLocal_247 = joaat("misty");
+				iLocal_247 = joaat("MISTY");
 			}
 			StringConCat(&cLocal_248, "swamp", 64);
 			StringConCat(&cLocal_256, "_swamp", 64);
 			break;
 		case 3:
-			iLocal_247 = joaat("snowlight");
+			iLocal_247 = joaat("SNOWLIGHT");
 			if (MISC::IS_BIT_SET(iLocal_398, 10))
 			{
 				iLocal_243 = joaat("mp001_celeb_screen_snow");
@@ -2261,19 +2261,19 @@ int func_77()
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 30))
 					{
-						iLocal_247 = joaat("misty");
+						iLocal_247 = joaat("MISTY");
 						func_181(-0.522f, 0.198f, 990.5f, 2461.041f, -2391.535f, -2293.49f);
 					}
 					else
 					{
-						iLocal_247 = joaat("fog");
+						iLocal_247 = joaat("FOG");
 					}
 					StringCopy(&cLocal_248, "mp_winlose_predator_", 64);
 					iLocal_244 = -415953049;
 				}
 				else if (MISC::IS_BIT_SET(iLocal_396, 31))
 				{
-					iLocal_247 = joaat("snow");
+					iLocal_247 = joaat("SNOW");
 				}
 				else if (MISC::IS_BIT_SET(iLocal_396, 30))
 				{
@@ -2301,19 +2301,19 @@ int func_77()
 			StringConCat(&cLocal_256, "_snow", 64);
 			break;
 		case 4:
-			iLocal_247 = joaat("highpressure");
+			iLocal_247 = joaat("HIGHPRESSURE");
 			if (MISC::IS_BIT_SET(iLocal_398, 10))
 			{
 				if (MISC::IS_BIT_SET(iLocal_398, 12))
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 30))
 					{
-						iLocal_247 = joaat("misty");
+						iLocal_247 = joaat("MISTY");
 						func_181(-0.522f, 0.198f, 990.5f, 2461.041f, -2391.535f, -2293.49f);
 					}
 					else
 					{
-						iLocal_247 = joaat("fog");
+						iLocal_247 = joaat("FOG");
 						func_181(0.011f, -0.669f, -109.5f, 3843.674f, 407.221f, -81.17f);
 					}
 					StringCopy(&cLocal_248, "mp_winlose_predator_", 64);
@@ -2321,7 +2321,7 @@ int func_77()
 				}
 				else if (MISC::IS_BIT_SET(iLocal_396, 30))
 				{
-					iLocal_247 = joaat("sunny");
+					iLocal_247 = joaat("SUNNY");
 					if (MISC::IS_BIT_SET(iLocal_398, 9) || MISC::IS_BIT_SET(iLocal_398, 3))
 					{
 						iLocal_278 = 20;
@@ -2347,19 +2347,19 @@ int func_77()
 		case 5:
 			if (MISC::IS_BIT_SET(iLocal_398, 10))
 			{
-				iLocal_247 = joaat("overcastdark");
+				iLocal_247 = joaat("OVERCASTDARK");
 				iLocal_243 = 1755785548;
 				iLocal_246 = 1481756818;
 				if (MISC::IS_BIT_SET(iLocal_398, 12))
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 30))
 					{
-						iLocal_247 = joaat("misty");
+						iLocal_247 = joaat("MISTY");
 						func_181(0.839f, 0.768f, 577f, 2412.601f, -2271.631f, -2202.794f);
 					}
 					else
 					{
-						iLocal_247 = joaat("fog");
+						iLocal_247 = joaat("FOG");
 					}
 					StringCopy(&cLocal_248, "mp_winlose_predator_", 64);
 					iLocal_244 = -1344285417;
@@ -2368,7 +2368,7 @@ int func_77()
 				{
 					if (MISC::IS_BIT_SET(iLocal_396, 31))
 					{
-						iLocal_247 = joaat("clouds");
+						iLocal_247 = joaat("Clouds");
 						func_181(0.978f, -0.448f, 329f, 3233.729f, 262.921f, -2070.11f);
 					}
 					else if (MISC::IS_BIT_SET(iLocal_396, 30))
@@ -2388,13 +2388,13 @@ int func_77()
 				}
 				else
 				{
-					iLocal_247 = joaat("clouds");
+					iLocal_247 = joaat("Clouds");
 					func_181(0.418f, 0.191f, 698.75f, 487.565f, 1166.487f, -492.181f);
 				}
 			}
 			else
 			{
-				iLocal_247 = joaat("overcastdark");
+				iLocal_247 = joaat("OVERCASTDARK");
 				func_181(0.648f, -0.814f, 481.25f, -2237.9f, -1281.34f, -3051.36f);
 				iLocal_243 = joaat("mp001_mp_winlose_forest");
 				iLocal_246 = 205032683;
@@ -3037,14 +3037,14 @@ void func_109()
 	{
 		if (MISC::IS_BIT_SET(iLocal_398, 9))
 		{
-			STREAMING::REQUEST_MODEL(joaat("cart06"), false);
-			if (STREAMING::HAS_MODEL_LOADED(joaat("cart06")))
+			STREAMING::REQUEST_MODEL(joaat("CART06"), false);
+			if (STREAMING::HAS_MODEL_LOADED(joaat("CART06")))
 			{
-				iLocal_546 = VEHICLE::CREATE_VEHICLE(joaat("cart06"), vLocal_237, 0f, false, true, false, false);
+				iLocal_546 = VEHICLE::CREATE_VEHICLE(joaat("CART06"), vLocal_237, 0f, false, true, false, false);
 				ENTITY::SET_ENTITY_COLLISION(iLocal_546, false, false);
 				ENTITY::FREEZE_ENTITY_POSITION(iLocal_546, true);
 				ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_232, "cart06", iLocal_546, 0);
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("cart06"));
+				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("CART06"));
 				MISC::SET_BIT(&iLocal_399, 5);
 			}
 			return;
@@ -3223,8 +3223,8 @@ void func_109()
 	}
 	if (!MISC::IS_BIT_SET(iLocal_399, 6))
 	{
-		STREAMING::REQUEST_MODEL(joaat("p_bottlejd01x"), false);
-		if (STREAMING::HAS_MODEL_LOADED(joaat("p_bottlejd01x")))
+		STREAMING::REQUEST_MODEL(joaat("P_BOTTLEJD01X"), false);
+		if (STREAMING::HAS_MODEL_LOADED(joaat("P_BOTTLEJD01X")))
 		{
 			iVar0 = 0;
 			while (iVar0 <= 7)
@@ -3233,7 +3233,7 @@ void func_109()
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_505[iVar0])) && MISC::IS_BIT_SET(iLocal_393, iVar0))
 					{
-						iLocal_505[iVar0] = OBJECT::CREATE_OBJECT(joaat("p_bottlejd01x"), vLocal_237, false, true, false, false, true);
+						iLocal_505[iVar0] = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEJD01X"), vLocal_237, false, true, false, false, true);
 						StringCopy(&cVar1, "JD_BOTTLE_0", 16);
 						StringIntConCat(&cVar1, iVar0 + 1, 16);
 						func_199(iLocal_505[iVar0], cVar1);
@@ -3502,7 +3502,7 @@ void func_120()
 	sVar1 = PLAYER::GET_PLAYER_NAME(iVar0);
 	if ((NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar0) && !MISC::IS_STRING_NULL_OR_EMPTY(Local_286[0 /*18*/])) && MISC::ARE_STRINGS_EQUAL(Local_286[0 /*18*/], sVar1))
 	{
-		Var2 = { func_54(joaat("times_mvp"), 0) };
+		Var2 = { func_54(joaat("TIMES_MVP"), 0) };
 		STATS::_0x6A0184E904CDF25E(&Var2, 1);
 		Global_1049148->f_8 = 1;
 		Global_1049232 = &Global_1049232 + 1;
@@ -3511,7 +3511,7 @@ void func_120()
 	{
 		Global_1049232 = 0;
 	}
-	Var4 = { func_54(joaat("highest_streak_mvp"), joaat("SHOWDOWN")) };
+	Var4 = { func_54(joaat("HIGHEST_STREAK_MVP"), joaat("SHOWDOWN")) };
 	STATS::_0x91A4F58E01ED5E4C(&Var4, &Global_1049232);
 }
 
@@ -3655,7 +3655,7 @@ void func_126()
 			func_216(&Local_32, &cVar0);
 			if (Global_1048684->f_459 != 0)
 			{
-				func_55(func_54(joaat("gold_won"), Global_1048684->f_459), Global_1048684->f_436);
+				func_55(func_54(joaat("GOLD_WON"), Global_1048684->f_459), Global_1048684->f_436);
 			}
 			MISC::SET_BIT(&iLocal_397, 2);
 		}
@@ -3673,7 +3673,7 @@ void func_126()
 			func_218(&Local_32, &cVar12);
 			if (Global_1048684->f_459 != 0)
 			{
-				func_55(func_54(joaat("cash_won"), Global_1048684->f_459), (Global_1048684->f_392.f_8 + Global_1048684->f_408.f_8));
+				func_55(func_54(joaat("CASH_WON"), Global_1048684->f_459), (Global_1048684->f_392.f_8 + Global_1048684->f_408.f_8));
 			}
 			MISC::SET_BIT(&iLocal_397, 3);
 		}
@@ -5897,7 +5897,7 @@ int func_255(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GreatPlains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -5905,17 +5905,17 @@ int func_255(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("Heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("scarlettMeadows"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TallTrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RioBravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -9107,11 +9107,11 @@ float func_364(var uParam0, int iParam1)
 
 int func_365()
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("fm_mission_controller")) != 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("FM_Mission_Controller")) != 0)
 	{
 		return 0;
 	}
-	else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("fm_deathmatch_controller")) != 0)
+	else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("FM_Deathmatch_Controller")) != 0)
 	{
 		return 1;
 	}

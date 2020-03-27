@@ -405,8 +405,8 @@ int func_18(int iParam0)
 		case 0:
 			switch (iVar0)
 			{
-				case joaat("highpressure"):
-				case joaat("sunny"):
+				case joaat("HIGHPRESSURE"):
+				case joaat("SUNNY"):
 					return 1;
 				default:
 					return 0;
@@ -416,10 +416,10 @@ int func_18(int iParam0)
 			switch (iVar0)
 			{
 				case joaat("overcast"):
-				case joaat("highpressure"):
-				case joaat("overcastdark"):
-				case joaat("clouds"):
-				case joaat("sunny"):
+				case joaat("HIGHPRESSURE"):
+				case joaat("OVERCASTDARK"):
+				case joaat("Clouds"):
+				case joaat("SUNNY"):
 					return 1;
 				default:
 					return 0;
@@ -428,16 +428,16 @@ int func_18(int iParam0)
 		case 2:
 			switch (iVar0)
 			{
-				case joaat("drizzle"):
+				case joaat("DRIZZLE"):
 				case joaat("overcast"):
-				case joaat("fog"):
-				case joaat("highpressure"):
-				case joaat("overcastdark"):
-				case joaat("snowlight"):
-				case joaat("clouds"):
-				case joaat("misty"):
-				case joaat("sunny"):
-				case joaat("snowclearing"):
+				case joaat("FOG"):
+				case joaat("HIGHPRESSURE"):
+				case joaat("OVERCASTDARK"):
+				case joaat("SNOWLIGHT"):
+				case joaat("Clouds"):
+				case joaat("MISTY"):
+				case joaat("SUNNY"):
+				case joaat("SNOWCLEARING"):
 					return 1;
 				default:
 					return 0;
@@ -446,20 +446,20 @@ int func_18(int iParam0)
 		case 3:
 			switch (iVar0)
 			{
-				case joaat("drizzle"):
+				case joaat("DRIZZLE"):
 				case joaat("thunder"):
 				case joaat("overcast"):
-				case joaat("fog"):
-				case joaat("shower"):
-				case joaat("snow"):
-				case joaat("highpressure"):
+				case joaat("FOG"):
+				case joaat("SHOWER"):
+				case joaat("SNOW"):
+				case joaat("HIGHPRESSURE"):
 				case joaat("sleet"):
-				case joaat("overcastdark"):
-				case joaat("clouds"):
+				case joaat("OVERCASTDARK"):
+				case joaat("Clouds"):
 				case joaat("rain"):
-				case joaat("misty"):
-				case joaat("sunny"):
-				case joaat("snowclearing"):
+				case joaat("MISTY"):
+				case joaat("SUNNY"):
+				case joaat("SNOWCLEARING"):
 					return 1;
 				default:
 					return 0;
@@ -470,8 +470,8 @@ int func_18(int iParam0)
 		case 5:
 			switch (iVar0)
 			{
-				case joaat("fog"):
-				case joaat("misty"):
+				case joaat("FOG"):
+				case joaat("MISTY"):
 					return 1;
 			}
 			break;

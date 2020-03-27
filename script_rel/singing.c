@@ -469,8 +469,8 @@ int func_18(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("highpressure"):
-		case joaat("sunny"):
+		case joaat("HIGHPRESSURE"):
+		case joaat("SUNNY"):
 			return 1;
 		default:
 			break;
@@ -750,7 +750,7 @@ int func_26()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("Player_Three"))
 	{
 		return 1;
 	}

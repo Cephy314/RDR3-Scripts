@@ -99,7 +99,7 @@ void __EntryFunction__()
 				}
 				if (PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 				{
-					if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) != 0)
+					if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("GENERIC")) != 0)
 					{
 					}
 					else

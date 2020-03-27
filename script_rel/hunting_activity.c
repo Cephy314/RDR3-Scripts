@@ -357,19 +357,19 @@ char* func_13(int iParam0)
 			return "ACT_HUNTING_TARGET_ALLIGATOR";
 		case 1506237323: /* GXTEntry: "Bear" */
 			return "ACT_HUNTING_TARGET_BEAR";
-		case 640966621: /* GXTEntry: "Boar" */
+		case joaat("AT_BOAR"):
 			return "ACT_HUNTING_TARGET_BOAR";
-		case -1055552242: /* GXTEntry: "Buck" */
+		case joaat("AT_BUCK"):
 			return "ACT_HUNTING_TARGET_BUCK";
-		case -1071812884: /* GXTEntry: "Cougar" */
+		case joaat("AT_COUGAR"):
 			return "ACT_HUNTING_TARGET_COUGAR";
-		case -510702611: /* GXTEntry: "Deer" */
+		case joaat("AT_DEER"):
 			return "ACT_HUNTING_TARGET_DEER";
-		case -1350246467: /* GXTEntry: "Duck" */
+		case joaat("AT_DUCK"):
 			return "ACT_HUNTING_TARGET_DUCK";
-		case -74829863: /* GXTEntry: "Elk" */
+		case joaat("AT_ELK"):
 			return "ACT_HUNTING_TARGET_ELK";
-		case -439919843: /* GXTEntry: "Wolf" */
+		case joaat("AT_WOLF"):
 			return "ACT_HUNTING_TARGET_WOLF";
 		default:
 			break;
@@ -580,23 +580,23 @@ int func_20()
 	switch (iVar0)
 	{
 		case 0:
-			return -1055552242 /* GXTEntry: "Buck" */;
+			return joaat("AT_BUCK");
 		case 1:
-			return -1003674917 /* GXTEntry: "Fox" */;
+			return joaat("AT_FOX");
 		case 2:
-			return -510702611 /* GXTEntry: "Deer" */;
+			return joaat("AT_DEER");
 		case 3:
-			return -1350246467 /* GXTEntry: "Duck" */;
+			return joaat("AT_DUCK");
 		case 5:
 			return joaat("AT_GATOR");
 		case 6:
-			return -1071812884 /* GXTEntry: "Cougar" */;
+			return joaat("AT_COUGAR");
 		case 7:
-			return -1055552242 /* GXTEntry: "Buck" */;
+			return joaat("AT_BUCK");
 		case 8:
 			return 1506237323 /* GXTEntry: "Bear" */;
 	}
-	return -510702611 /* GXTEntry: "Deer" */;
+	return joaat("AT_DEER");
 }
 
 int func_21(var uParam0, var uParam1)
@@ -1258,9 +1258,9 @@ int func_62(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("AT_GATOR"):
-		case -1071812884: /* GXTEntry: "Cougar" */
-		case -1055552242: /* GXTEntry: "Buck" */
-		case -74829863: /* GXTEntry: "Elk" */
+		case joaat("AT_COUGAR"):
+		case joaat("AT_BUCK"):
+		case joaat("AT_ELK"):
 		case 1506237323: /* GXTEntry: "Bear" */
 			return 1;
 		default:

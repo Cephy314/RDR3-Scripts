@@ -4564,7 +4564,7 @@ int func_115(int iParam0, int iParam1)
 		case 0:
 			switch (iParam1)
 			{
-				case joaat("p_windsorchair03x"):
+				case joaat("p_Windsorchair03x"):
 					return 1;
 				case joaat("p_windsorchair01x"):
 				case joaat("p_chair38x"):
@@ -4577,19 +4577,19 @@ int func_115(int iParam0, int iParam1)
 			}
 			break;
 		case 2:
-			if (iParam1 == joaat("p_chair13x"))
+			if (iParam1 == joaat("P_CHAIR13X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair05x"))
+			if (iParam1 == joaat("P_CHAIR05X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair06x"))
+			if (iParam1 == joaat("P_CHAIR06X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_windsorchair03x"))
+			if (iParam1 == joaat("p_Windsorchair03x"))
 			{
 				return 1;
 			}
@@ -4611,7 +4611,7 @@ int func_115(int iParam0, int iParam1)
 			}
 			break;
 		case 1:
-			if (iParam1 == joaat("p_chair02x"))
+			if (iParam1 == joaat("P_CHAIR02X"))
 			{
 				return 1;
 			}
@@ -4623,11 +4623,11 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stoolwinter01x"))
+			if (iParam1 == joaat("P_STOOLWINTER01X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stoolfolding01x"))
+			if (iParam1 == joaat("p_stoolFolding01x"))
 			{
 				return 1;
 			}
@@ -4635,29 +4635,29 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chairfolding02x"))
+			if (iParam1 == joaat("P_CHAIRFOLDING02X"))
 			{
 				return 1;
 			}
 			break;
 		case 3:
-			if (iParam1 == joaat("p_chair06x"))
+			if (iParam1 == joaat("P_CHAIR06X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("s_crateseat03x"))
+			if (iParam1 == joaat("s_crateSeat03x"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair_crate02x"))
+			if (iParam1 == joaat("P_CHAIR_CRATE02X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stoolfolding01x"))
+			if (iParam1 == joaat("p_stoolFolding01x"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chairfolding02x"))
+			if (iParam1 == joaat("P_CHAIRFOLDING02X"))
 			{
 				return 1;
 			}
@@ -5636,7 +5636,7 @@ char* func_134(int iParam0)
 
 int func_135(var uParam0, var uParam1, var uParam2)
 {
-	return joaat("a_m_m_cardgameplayers_01");
+	return joaat("a_m_m_CARDGAMEPLAYERS_01");
 }
 
 int func_136(var uParam0, int iParam1, vector3 vParam2, int iParam5, bool bParam6, bool bParam7, int iParam8, bool bParam9, bool bParam10)
@@ -5690,13 +5690,13 @@ int func_137(int iParam0)
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
 	switch (iVar0)
 	{
-		case joaat("s_m_m_blwdealer_01"):
-		case joaat("s_m_m_valdealer_01"):
-		case joaat("s_m_m_asbdealer_01"):
-		case joaat("s_m_m_rhddealer_01"):
-		case joaat("s_m_m_vhtdealer_01"):
-		case joaat("s_m_m_strdealer_01"):
-		case joaat("s_m_m_sddealer_01"):
+		case joaat("S_M_M_BLWDEALER_01"):
+		case joaat("S_M_M_VALDEALER_01"):
+		case joaat("S_M_M_ASBDEALER_01"):
+		case joaat("S_M_M_RHDDEALER_01"):
+		case joaat("S_M_M_VHTDEALER_01"):
+		case joaat("S_M_M_STRDEALER_01"):
+		case joaat("S_M_M_SDDEALER_01"):
 			return 1;
 		default:
 			break;

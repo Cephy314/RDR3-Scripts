@@ -61,7 +61,7 @@ void __EntryFunction__()
 	iVar2 = -1723036365;
 	if (func_3(0))
 	{
-		iVar2 = joaat("shop");
+		iVar2 = joaat("SHOP");
 	}
 	while (!func_4())
 	{
@@ -73,7 +73,7 @@ void __EntryFunction__()
 				{
 					func_7();
 				}
-				if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("satchel"), iVar2) != 0)
+				if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SATCHEL"), iVar2) != 0)
 				{
 				}
 				else
@@ -86,7 +86,7 @@ void __EntryFunction__()
 				{
 					func_7();
 				}
-				if (((((!UIAPPS::_IS_APP_ACTIVE(joaat("satchel")) || &Global_1939231 == 2) || Global_13) || PED::IS_PED_DEAD_OR_DYING(Global_34, true)) || !func_9(255)) || func_10(512))
+				if (((((!UIAPPS::_IS_APP_ACTIVE(joaat("SATCHEL")) || &Global_1939231 == 2) || Global_13) || PED::IS_PED_DEAD_OR_DYING(Global_34, true)) || !func_9(255)) || func_10(512))
 				{
 					func_8(2);
 				}
@@ -113,7 +113,7 @@ void __EntryFunction__()
 
 void func_1()
 {
-	UIAPPS::_CLOSE_APP_BY_HASH(joaat("satchel"));
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("SATCHEL"));
 	if (!func_10(512))
 	{
 		func_12(0);

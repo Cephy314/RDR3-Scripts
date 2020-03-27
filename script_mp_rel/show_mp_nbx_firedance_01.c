@@ -2905,7 +2905,7 @@ int func_21(var uParam0)
 		uParam0->f_24 = 6;
 		uParam0->f_23 = 2;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = joaat("cs_fire_breather");
+		uParam0->f_1401[0] = joaat("CS_Fire_Breather");
 		uParam0->f_1385[0] = joaat("p_bottle03x");
 		uParam0->f_1385[1] = joaat("p_light_sd_theater01x");
 		uParam0->f_1385[3] = joaat("p_table_sd_theater01x");
@@ -4323,7 +4323,7 @@ void func_101(var uParam0, int iParam1)
 
 int func_102()
 {
-	return joaat("cs_escapeartist");
+	return joaat("CS_EscapeArtist");
 }
 
 int func_103(int iParam0)
@@ -7666,7 +7666,7 @@ void func_216(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

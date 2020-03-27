@@ -2229,7 +2229,7 @@ int func_108(int iParam0)
 	{
 		case 1:
 		case 2:
-			return joaat("s_proghornfence02x");
+			return joaat("S_PROGHORNFENCE02X");
 		case 3:
 		case 4:
 		case 5:
@@ -2280,8 +2280,8 @@ int func_111(var uParam0, vector3 vParam1, vector3 vParam4, bool bParam7, vector
 		ENTITY::SET_ENTITY_COORDS(uParam0->f_13, vParam1 + Vector(0.67f, 0f, 0f), true, false, true, true);
 		ENTITY::SET_ENTITY_ROTATION(uParam0->f_13, vParam4, 2, true);
 	}
-	uParam0->f_50.f_1 = joaat("default");
-	uParam0->f_84.f_1 = joaat("default");
+	uParam0->f_50.f_1 = joaat("Default");
+	uParam0->f_84.f_1 = joaat("Default");
 	uParam0->f_50 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@FIX_FENCE@ADD_TO_RIGHT@PED");
 	uParam0->f_84 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@FIX_FENCE@ADD_TO_RIGHT@NEW_POST");
 	uParam0->f_50.f_30 = "Intro";

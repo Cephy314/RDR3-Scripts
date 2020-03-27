@@ -2905,10 +2905,10 @@ int func_21(var uParam0)
 		uParam0->f_24 = 8;
 		uParam0->f_23 = 4;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = joaat("cs_bandbassist");
-		uParam0->f_1401[1] = joaat("cs_banddrummer");
-		uParam0->f_1401[2] = joaat("cs_bandpianist");
-		uParam0->f_1401[3] = joaat("cs_bandsinger");
+		uParam0->f_1401[0] = joaat("CS_bandbassist");
+		uParam0->f_1401[1] = joaat("CS_banddrummer");
+		uParam0->f_1401[2] = joaat("CS_bandpianist");
+		uParam0->f_1401[3] = joaat("CS_bandsinger");
 		uParam0->f_1385[0] = joaat("p_benchpiano02x");
 		uParam0->f_1385[1] = joaat("p_cs_contrabass01x");
 		uParam0->f_1385[2] = joaat("p_cs_drumkit01x");
@@ -4384,7 +4384,7 @@ void func_102(var uParam0, int iParam1)
 
 int func_103()
 {
-	return joaat("cs_escapeartist");
+	return joaat("CS_EscapeArtist");
 }
 
 int func_104(int iParam0)
@@ -7745,7 +7745,7 @@ void func_217(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
