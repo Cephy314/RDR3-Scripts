@@ -425,7 +425,7 @@ void func_31(int iParam0)
 
 int func_32()
 {
-	return joaat("U_F_M_EMRDAUGHTER_01");
+	return joaat("u_f_m_emrdaughter_01");
 }
 
 struct<11> func_33(int iParam0)

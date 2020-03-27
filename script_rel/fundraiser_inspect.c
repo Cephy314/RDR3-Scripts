@@ -46,7 +46,7 @@ int func_1(struct<2> Param0, var uParam2)
 			if (func_2() && STREAMING::_IS_IMAP_ACTIVE_2(204868257))
 			{
 				iLocal_0 = func_3("INSPECT_GENERIC", joaat("INPUT_CONTEXT_Y"), TASK::_0xA8452DD321607029(Param0.f_1, 1), 4f, 1, 1, 0, 3, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0);
-				iLocal_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), 2511.907f, -1160.024f, 52.5668f, -3.9115f, 0f, -90.0969f, 51.282f, false, 2);
+				iLocal_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), 2511.907f, -1160.024f, 52.5668f, -3.9115f, 0f, -90.0969f, 51.282f, false, 2);
 				iLocal_10 = 1;
 			}
 			break;
@@ -94,7 +94,7 @@ int func_2()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}

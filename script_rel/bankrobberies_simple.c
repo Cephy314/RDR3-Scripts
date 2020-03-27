@@ -2031,7 +2031,7 @@ int func_102()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}

@@ -1566,7 +1566,7 @@ void func_42(var uParam0, var uParam1)
 				if (bVar8)
 				{
 					bVar10 = true;
-					iVar12 = joaat("AIM");
+					iVar12 = joaat("aim");
 					iVar13 = 3;
 					iVar14 = 1;
 				}
@@ -1593,7 +1593,7 @@ void func_42(var uParam0, var uParam1)
 	}
 	if (!bVar10)
 	{
-		if (func_169(uParam0, iVar0, joaat("Push")))
+		if (func_169(uParam0, iVar0, joaat("push")))
 		{
 			if (fVar7 <= 1.5f)
 			{
@@ -1602,7 +1602,7 @@ void func_42(var uParam0, var uParam1)
 					if ((MISC::GET_GAME_TIMER() - func_171(uParam0, iVar0)) >= 3000)
 					{
 						bVar10 = true;
-						iVar12 = joaat("Push");
+						iVar12 = joaat("push");
 						iVar13 = 2;
 						iVar14 = 1;
 					}
@@ -1621,9 +1621,9 @@ void func_42(var uParam0, var uParam1)
 	}
 	if (!bVar10)
 	{
-		if (func_169(uParam0, iVar0, joaat("IDLE")))
+		if (func_169(uParam0, iVar0, joaat("idle")))
 		{
-			iVar15 = func_72(uParam0, joaat("LOITER"));
+			iVar15 = func_72(uParam0, joaat("loiter"));
 			if (VOLUME::_DOES_VOLUME_EXIST(iVar15))
 			{
 				if (func_175(iVar3, iVar15, 1, 0))
@@ -1633,7 +1633,7 @@ void func_42(var uParam0, var uParam1)
 						if ((MISC::GET_GAME_TIMER() - func_176(uParam0, iVar0)) >= 20000)
 						{
 							bVar10 = true;
-							iVar12 = joaat("IDLE");
+							iVar12 = joaat("idle");
 							iVar13 = 1;
 							iVar14 = 2;
 						}
@@ -1673,10 +1673,10 @@ void func_42(var uParam0, var uParam1)
 	{
 		switch (iVar12)
 		{
-			case joaat("Push"):
+			case joaat("push"):
 				func_174(uParam0, uParam1, iVar0, 1);
 				break;
-			case joaat("IDLE"):
+			case joaat("idle"):
 				func_174(uParam0, uParam1, iVar0, 2);
 				break;
 		}
@@ -2010,7 +2010,7 @@ int func_71(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("LOITER");
+			return joaat("loiter");
 		default:
 			break;
 	}
@@ -2337,7 +2337,7 @@ int func_105(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("LOITER"):
+		case joaat("loiter"):
 			return 0;
 		default:
 			break;
@@ -4669,9 +4669,9 @@ int func_290(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("AIM"):
+		case joaat("aim"):
 			return 3;
-		case joaat("Push"):
+		case joaat("push"):
 			return 3;
 		case 1526847194:
 			return 3;
@@ -4687,9 +4687,9 @@ int func_291(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("AIM"):
+		case joaat("aim"):
 			return -1196486071;
-		case joaat("Push"):
+		case joaat("push"):
 			return -1931716778;
 		case 1526847194:
 			return 664793774;
@@ -4891,13 +4891,13 @@ int func_307(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("AIM"):
+		case joaat("aim"):
 			return 0;
 		case -1196486071:
 			return 0;
-		case joaat("IDLE"):
+		case joaat("idle"):
 			return 4;
-		case joaat("Push"):
+		case joaat("push"):
 			return 3;
 		case -1931716778:
 			return 3;
@@ -5039,7 +5039,7 @@ int func_322(int iParam0, int iParam1)
 		case 2:
 			return -1196486071;
 		case 3:
-			return joaat("AIM");
+			return joaat("aim");
 		case 4:
 			return 1532606305;
 		case 5:
@@ -5047,9 +5047,9 @@ int func_322(int iParam0, int iParam1)
 		case 6:
 			return -1931716778;
 		case 7:
-			return joaat("Push");
+			return joaat("push");
 		case 8:
-			return joaat("IDLE");
+			return joaat("idle");
 		default:
 			break;
 	}
@@ -5357,7 +5357,7 @@ int func_340(int iParam0, int iParam1)
 	{
 		case -1931716778:
 			return 6;
-		case joaat("AIM"):
+		case joaat("aim"):
 			return 3;
 		case -1196486071:
 			return 2;
@@ -5369,9 +5369,9 @@ int func_340(int iParam0, int iParam1)
 			return 4;
 		case 1730381531:
 			return 5;
-		case joaat("IDLE"):
+		case joaat("idle"):
 			return 8;
-		case joaat("Push"):
+		case joaat("push"):
 			return 7;
 		default:
 			break;
@@ -5928,7 +5928,7 @@ int func_383(int iParam0, int iParam1)
 			return 1;
 		case 1955535331:
 			return 6;
-		case joaat("Push"):
+		case joaat("push"):
 			return 11;
 		default:
 			break;
@@ -5966,7 +5966,7 @@ int func_385(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("Dummy"):
+		case joaat("dummy"):
 			return 0;
 		default:
 			break;
@@ -6001,7 +6001,7 @@ void func_387(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

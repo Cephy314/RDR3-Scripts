@@ -4822,50 +4822,50 @@ void func_172(int iParam0, bool bParam1, float fParam2)
 	}
 	switch (iVar1)
 	{
-		case joaat("G_M_M_UniDuster_03"):
-		case joaat("U_M_M_UNIDUSTERHENCHMAN_03"):
-		case joaat("G_M_M_UNIDUSTER_04"):
-		case joaat("U_M_M_UNIDUSTERHENCHMAN_02"):
-		case joaat("G_M_M_UniDuster_02"):
-		case joaat("U_M_M_FATDUSTER_01"):
-		case joaat("U_M_M_UNIDUSTERHENCHMAN_01"):
-		case joaat("G_M_M_UniDuster_01"):
-		case joaat("CS_DisguisedDuster_01"):
-		case joaat("G_F_M_UNIDUSTER_01"):
-		case joaat("U_M_M_UniDusterLeader_01"):
-		case joaat("CS_DisguisedDuster_03"):
-		case joaat("G_M_M_UNIDUSTER_05"):
-		case joaat("CS_DisguisedDuster_02"):
+		case joaat("g_m_m_uniduster_03"):
+		case joaat("u_m_m_unidusterhenchman_03"):
+		case joaat("g_m_m_uniduster_04"):
+		case joaat("u_m_m_unidusterhenchman_02"):
+		case joaat("g_m_m_uniduster_02"):
+		case joaat("u_m_m_fatduster_01"):
+		case joaat("u_m_m_unidusterhenchman_01"):
+		case joaat("g_m_m_uniduster_01"):
+		case joaat("cs_disguisedduster_01"):
+		case joaat("g_f_m_uniduster_01"):
+		case joaat("u_m_m_unidusterleader_01"):
+		case joaat("cs_disguisedduster_03"):
+		case joaat("g_m_m_uniduster_05"):
+		case joaat("cs_disguisedduster_02"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("G_M_Y_UNIEXCONFEDS_02"):
-		case joaat("G_M_Y_UniExConfeds_01"):
-		case joaat("G_M_O_UniExConfeds_01"):
-		case joaat("CS_exconfedsleader_01"):
-		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
+		case joaat("g_m_y_uniexconfeds_02"):
+		case joaat("g_m_y_uniexconfeds_01"):
+		case joaat("g_m_o_uniexconfeds_01"):
+		case joaat("cs_exconfedsleader_01"):
+		case joaat("u_m_m_uniexconfedsbounty_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.375f);
 			break;
-		case joaat("G_M_M_UniInbred_01"):
+		case joaat("g_m_m_uniinbred_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.7f, 0.875f);
 			break;
-		case joaat("U_M_M_BHT_SKINNERSEARCH"):
-		case joaat("G_M_M_UniMountainMen_01"):
-		case joaat("U_M_M_BHT_SKINNERBROTHER"):
+		case joaat("u_m_m_bht_skinnersearch"):
+		case joaat("g_m_m_unimountainmen_01"):
+		case joaat("u_m_m_bht_skinnerbrother"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.4f, 0.6f);
 			break;
-		case joaat("G_M_M_UniRanchers_01"):
-		case joaat("CS_LARAMIE"):
+		case joaat("g_m_m_uniranchers_01"):
+		case joaat("cs_laramie"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.25f);
 			break;
-		case joaat("U_M_M_BHT_BANDITOSHACK"):
-		case joaat("U_M_M_BHT_BANDITOMINE"):
-		case joaat("G_M_M_UNIBANDITOS_01"):
+		case joaat("u_m_m_bht_banditoshack"):
+		case joaat("u_m_m_bht_banditomine"):
+		case joaat("g_m_m_unibanditos_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("U_M_M_NbxBronteGoon_01"):
-		case joaat("U_M_M_NbxBronteSecForm_01"):
-		case joaat("U_M_M_NbxBronteAsc_01"):
-		case joaat("G_M_M_UniBronteGoons_01"):
+		case joaat("u_m_m_nbxbrontegoon_01"):
+		case joaat("u_m_m_nbxbrontesecform_01"):
+		case joaat("u_m_m_nbxbronteasc_01"):
+		case joaat("g_m_m_unibrontegoons_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.125f);
 			break;
 		default:
@@ -5244,18 +5244,18 @@ struct<5> func_184(bool bParam0, bool bParam1, int iParam2)
 	Var0.f_4 = 1084182731;
 	switch (func_195(bParam0))
 	{
-		case joaat("CLOTHING"):
+		case joaat("clothing"):
 			if (!INVENTORY::_0x780C5B9AE2819807(bParam0, 1034665895))
 			{
-				Var0 = { func_188(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("WARDROBE"));
+				Var0 = { func_188(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("Wardrobe"));
 			}
 			else
 			{
 				Var0.f_4 = 1034665895;
 			}
 			break;
-		case joaat("Weapon"):
+		case joaat("weapon"):
 			Var0 = { func_196(bParam1) };
 			if (iParam2 && func_197(bParam0, 1))
 			{
@@ -5282,10 +5282,10 @@ struct<5> func_184(bool bParam0, bool bParam1, int iParam2)
 				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
-		case joaat("HORSE"):
+		case joaat("horse"):
 			Var0.f_4 = 1782082944;
 			break;
-		case joaat("EMOTE"):
+		case joaat("Emote"):
 			Var0.f_4 = -813824107;
 			Var0 = { func_198(bParam1) };
 			switch (func_199(bParam0))
@@ -5304,7 +5304,7 @@ struct<5> func_184(bool bParam0, bool bParam1, int iParam2)
 					break;
 			}
 			break;
-		case joaat("UPGRADE"):
+		case joaat("Upgrade"):
 			if (func_200(bParam0, -1823706425))
 			{
 				Var0 = { func_188(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
@@ -5312,8 +5312,8 @@ struct<5> func_184(bool bParam0, bool bParam1, int iParam2)
 			}
 			else if (func_200(bParam0, -1483207246))
 			{
-				Var0 = { func_188(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("WARDROBE"));
+				Var0 = { func_188(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("Wardrobe"));
 			}
 			else if (INVENTORY::_0x780C5B9AE2819807(bParam0, -1311702610))
 			{
@@ -5343,7 +5343,7 @@ struct<5> func_184(bool bParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("CHARACTER"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(bParam0, joaat("character"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -6636,7 +6636,7 @@ int func_193(int iParam0, int iParam1, int iParam2)
 
 struct<4> func_194(bool bParam0)
 {
-	return func_188(joaat("CHARACTER"), func_210(), -1591664384, bParam0);
+	return func_188(joaat("character"), func_210(), -1591664384, bParam0);
 }
 
 int func_195(bool bParam0)

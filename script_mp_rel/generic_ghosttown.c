@@ -496,7 +496,7 @@ int func_8(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("WILDERNESS");
+		return joaat("Wilderness");
 	}
 	return 0;
 }

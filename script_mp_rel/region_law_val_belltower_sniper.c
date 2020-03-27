@@ -59,7 +59,7 @@ void __EntryFunction__()
 {
 	fLocal_15 = 1f;
 	fLocal_16 = 1f;
-	iLocal_48 = joaat("S_M_M_AmbientLawRural_01");
+	iLocal_48 = joaat("s_m_m_ambientlawrural_01");
 	vLocal_49 = { -230.9494f, 797.3469f, 134.418f };
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -461,7 +461,7 @@ void func_23(int iParam0)
 	LAW::_0x819ADD5EF1742F47(iParam0, 2);
 	LAW::_0x819ADD5EF1742F47(iParam0, 1);
 	PED::SET_PED_CONFIG_FLAG(iParam0, 188, true);
-	PED::_0xBD75500141E4725C(iParam0, joaat("LAW"));
+	PED::_0xBD75500141E4725C(iParam0, joaat("law"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 39, true);
 	TASK::_0x9DE63896B176EA94(iParam0, false);
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(iParam0, false);
@@ -485,7 +485,7 @@ void func_26(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

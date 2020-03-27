@@ -163,16 +163,16 @@ void func_4()
 				switch (iLocal_45)
 				{
 					case 81:
-						iLocal_47 = joaat("A_M_M_VALDEPUTYRESIDENT_01");
+						iLocal_47 = joaat("a_m_m_valdeputyresident_01");
 						break;
 					case 26:
-						iLocal_47 = joaat("A_M_M_STRDEPUTYRESIDENT_01");
+						iLocal_47 = joaat("a_m_m_strdeputyresident_01");
 						break;
 					case 111:
-						iLocal_47 = joaat("A_M_M_RHDDEPUTYRESIDENT_01");
+						iLocal_47 = joaat("a_m_m_rhddeputyresident_01");
 						break;
 					default:
-						iLocal_47 = joaat("A_M_M_VALDEPUTYRESIDENT_01");
+						iLocal_47 = joaat("a_m_m_valdeputyresident_01");
 						break;
 				}
 				iLocal_46 = 2;
@@ -914,7 +914,7 @@ void func_39(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

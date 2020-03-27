@@ -488,7 +488,7 @@ int func_23(var uParam0)
 			case 0:
 				if (ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_2, 0) && ANIMSCENE::_0x8D81E7824B7753F7(uParam0->f_2, "Shot1", 1))
 				{
-					MISC::_SET_WEATHER_TYPE(joaat("SUNNY"), true, true, false, 0f, false);
+					MISC::_SET_WEATHER_TYPE(joaat("sunny"), true, true, false, 0f, false);
 					CLOCK::SET_CLOCK_TIME(9, 0, 0);
 					GRAPHICS::SET_TIMECYCLE_MODIFIER("winter4_introCMEmod");
 					iLocal_14++;
@@ -497,7 +497,7 @@ int func_23(var uParam0)
 			case 1:
 				if (ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_2, 0) && ANIMSCENE::_0x8D81E7824B7753F7(uParam0->f_2, "SHOT2", 1))
 				{
-					MISC::_SET_WEATHER_TYPE(joaat("SUNNY"), true, true, false, 0f, false);
+					MISC::_SET_WEATHER_TYPE(joaat("sunny"), true, true, false, 0f, false);
 					CLOCK::SET_CLOCK_TIME(9, 0, 0);
 					GRAPHICS::SET_TIMECYCLE_MODIFIER("winter4_introCMEmod");
 					iLocal_14++;
@@ -507,7 +507,7 @@ int func_23(var uParam0)
 				if (ANIMSCENE::_0xCBFC7725DE6CE2E0(uParam0->f_2, 0) && ANIMSCENE::_0x8D81E7824B7753F7(uParam0->f_2, "SHOT3", 1))
 				{
 					MISC::_0x3373779BAF7CAF48("snowclearing", "snowclearing_mud1");
-					MISC::_SET_WEATHER_TYPE(joaat("SNOWCLEARING"), true, true, false, 0f, false);
+					MISC::_SET_WEATHER_TYPE(joaat("snowclearing"), true, true, false, 0f, false);
 					CLOCK::SET_CLOCK_TIME(7, 0, 0);
 					GRAPHICS::SET_TIMECYCLE_MODIFIER("winter4_introCMEmod");
 					iLocal_14++;
@@ -2012,7 +2012,7 @@ int func_95(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4)
 	{
 		return 1;
 	}
-	if (((((((func_124(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_124(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_127()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_147(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_124(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_124(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_127()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_147(Global_35, joaat("Prop_player_sleep_tent_a_frame"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_128(iParam0, iVar0) || (fParam1 >= (func_148(iParam0) * func_148(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{

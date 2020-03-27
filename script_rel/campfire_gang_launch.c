@@ -545,15 +545,15 @@ int func_16()
 	{
 		case joaat("sandstorm"):
 		case joaat("thunder"):
-		case joaat("SNOW"):
+		case joaat("snow"):
 		case joaat("sleet"):
 		case joaat("blizzard"):
-		case joaat("WHITEOUT"):
-		case joaat("HURRICANE"):
+		case joaat("whiteout"):
+		case joaat("hurricane"):
 		case joaat("rain"):
-		case joaat("SNOWCLEARING"):
+		case joaat("snowclearing"):
 		case joaat("hail"):
-		case joaat("THUNDERSTORM"):
+		case joaat("thunderstorm"):
 		case joaat("groundblizzard"):
 			return 1;
 	}
@@ -1301,7 +1301,7 @@ int func_56()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
@@ -1766,7 +1766,7 @@ int func_76(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("GreatPlains"):
+		case joaat("greatplains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -1774,17 +1774,17 @@ int func_76(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("Heartlands"):
+		case joaat("heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettMeadows"):
+		case joaat("scarlettmeadows"):
 			return 11;
-		case joaat("TallTrees"):
+		case joaat("talltrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("RioBravo"):
+		case joaat("riobravo"):
 			return 14;
 		case -108848014:
 			return 15;

@@ -3983,11 +3983,11 @@ int func_183(int iParam0)
 			switch (func_227())
 			{
 				case 0:
-					return joaat("A_C_DEER_01");
+					return joaat("a_c_deer_01");
 				case 1:
-					return joaat("A_C_COYOTE_01");
+					return joaat("a_c_coyote_01");
 				case 2:
-					return joaat("A_C_Wolf_Medium");
+					return joaat("a_c_wolf_medium");
 				default:
 					break;
 			}
@@ -4312,7 +4312,7 @@ void func_201()
 					TASK::TASK_ANIMAL_WRITHE((Local_110.f_18.f_4[0 /*2*/])->f_1, 0, 0);
 				}
 				func_240(1);
-				Var0 = { func_236(joaat("BLIP")) };
+				Var0 = { func_236(joaat("Blip")) };
 				func_237(&Var0);
 			}
 		}
@@ -4883,7 +4883,7 @@ void func_226(int iParam0)
 				}
 			}
 			break;
-		case joaat("BLIP"):
+		case joaat("Blip"):
 			Var4.f_6 = -1082130432;
 			Var4.f_7 = -1082130432;
 			Var4.f_8 = -1082130432;
@@ -5608,7 +5608,7 @@ int func_266(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case joaat("bounty_board"):
-		case joaat("Gun_for_Hire"):
+		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
 		case 78055447:
@@ -6199,7 +6199,7 @@ void func_292(struct<2> Param0)
 		{
 			if (Var0.f_29 == joaat("RACE_IMPROMPTU"))
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("RACE"));
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -7122,7 +7122,7 @@ int func_335(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("Challenge");
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -7131,7 +7131,7 @@ int func_335(int iParam0)
 			iVar0 = joaat("feature");
 			break;
 		case -2:
-			iVar0 = joaat("GOLD");
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -7155,16 +7155,16 @@ int func_335(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("PROPERTY");
+			iVar0 = joaat("property");
 			break;
 		case 10:
-			iVar0 = joaat("RECIPE");
+			iVar0 = joaat("recipe");
 			break;
 		case 11:
-			iVar0 = joaat("Title");
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -7274,15 +7274,15 @@ int func_338(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("Blackjack"):
+		case joaat("blackjack"):
 			return 0;
-		case joaat("DOMINOES"):
+		case joaat("Dominoes"):
 			return 1;
-		case joaat("POKER"):
+		case joaat("Poker"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("MILKING_COW"):
+		case joaat("milking_cow"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -7300,7 +7300,7 @@ int func_339(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("Challenges"):
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -7370,7 +7370,7 @@ int func_341(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("Null"):
+		case joaat("null"):
 			return -1;
 		case joaat("normal"):
 			return 0;
@@ -7386,17 +7386,17 @@ int func_341(int iParam0)
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("BountyHunter"):
+		case joaat("bountyhunter"):
 			return 7;
 		case joaat("Gunslinger"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("Hunter"):
+		case joaat("hunter"):
 			return 10;
 		case joaat("Trader"):
 			return 11;
-		case joaat("collector"):
+		case joaat("Collector"):
 			return 12;
 		case -218234180:
 			return 13;

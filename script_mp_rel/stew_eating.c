@@ -30,7 +30,7 @@ void __EntryFunction__()
 	Var0.f_1.f_2 = 1086324736;
 	Var0.f_1.f_11.f_1 = 20;
 	Var0.f_1.f_33 = 20;
-	Var0.f_182 = joaat("P_BOWL04X_STEW");
+	Var0.f_182 = joaat("p_bowl04x_stew");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(Var0.f_179))
@@ -49,7 +49,7 @@ void __EntryFunction__()
 		bVar183 = 599184882; /* GXTEntry: "Beef Stew" */
 	}
 	STREAMING::_REQUEST_CLIP_SET_BY_HASH(-703333072);
-	STREAMING::REQUEST_MODEL(joaat("p_spoon01x_Food"), false);
+	STREAMING::REQUEST_MODEL(joaat("p_spoon01x_food"), false);
 	NETWORK::_0xE7DDA8BD3BCF751C(2);
 	Var0.f_1 = bVar183;
 	if (!ScriptParam_0.f_3)
@@ -202,9 +202,9 @@ void func_4(var uParam0)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_179))
 	{
-		if (STREAMING::HAS_MODEL_LOADED(joaat("p_spoon01x_Food")))
+		if (STREAMING::HAS_MODEL_LOADED(joaat("p_spoon01x_food")))
 		{
-			uParam0->f_179 = OBJECT::CREATE_OBJECT(joaat("p_spoon01x_Food"), Global_35, false, true, false, false, true);
+			uParam0->f_179 = OBJECT::CREATE_OBJECT(joaat("p_spoon01x_food"), Global_35, false, true, false, false, true);
 			ENTITY::ATTACH_ENTITY_TO_ENTITY(uParam0->f_179, Global_34, PED::GET_PED_BONE_INDEX(Global_34, 7966), 0f, 0f, 0f, 0f, 0f, 0f, false, false, false, false, 2, true, false, false);
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_179, false);
 		}
@@ -217,8 +217,8 @@ void func_4(var uParam0)
 	{
 		ENTITY::SET_ENTITY_VISIBLE(uParam0->f_179, false);
 	}
-	func_11(uParam0->f_1, &(uParam0->f_180), joaat("p_bowl04x_stew_PH_L_HAND"), uParam0->f_182, 1);
-	func_11(uParam0->f_1, &(uParam0->f_181), joaat("p_spoon01x_PH_R_HAND"), joaat("P_SPOON01X"), 0);
+	func_11(uParam0->f_1, &(uParam0->f_180), joaat("p_bowl04x_stew_ph_l_hand"), uParam0->f_182, 1);
+	func_11(uParam0->f_1, &(uParam0->f_181), joaat("p_spoon01x_ph_r_hand"), joaat("p_spoon01x"), 0);
 }
 
 bool func_5(var uParam0)
@@ -724,7 +724,7 @@ void func_29(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_57(func_60(joaat("used"), joaat("WHISKEY")), 1);
+			func_57(func_60(joaat("used"), joaat("whiskey")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
@@ -1687,7 +1687,7 @@ void func_59(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_60(joaat("EATEN"), func_114(iParam0)) };
+	Var0 = { func_60(joaat("eaten"), func_114(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_57(func_115(joaat("HERBS_EATEN")), bParam1);
 }
@@ -1737,7 +1737,7 @@ void func_62(bool bParam0, int iParam1)
 		{
 			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1380824593, 1);
 		}
-		if (((func_17(bParam0, -887064662) || func_17(bParam0, -839724752)) || func_17(bParam0, 1264218912)) || bParam0 == joaat("CONSUMABLE_OFFAL"))
+		if (((func_17(bParam0, joaat("CI_TAG_ITEM_MEAT_ANIMAL")) || func_17(bParam0, -839724752)) || func_17(bParam0, 1264218912)) || bParam0 == joaat("CONSUMABLE_OFFAL"))
 		{
 			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 381139323, 1);
 		}
@@ -6032,11 +6032,11 @@ int func_213(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = joaat("Name");
+	Var0.f_2 = joaat("name");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("Name")))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
@@ -6049,17 +6049,17 @@ int func_213(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("Default")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("Default")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("Default")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
 				{
 				}
 				break;
@@ -6079,13 +6079,13 @@ int func_213(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("MAX"));
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("MAX"));
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("MAX"));
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -6161,13 +6161,13 @@ int func_217(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("INT"):
+		case joaat("int"):
 			iVar0 = 0;
 			break;
 		case joaat("float"):
 			iVar0 = 1;
 			break;
-		case joaat("BOOL"):
+		case joaat("bool"):
 			iVar0 = 2;
 			break;
 	}

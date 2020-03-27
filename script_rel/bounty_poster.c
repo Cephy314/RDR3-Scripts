@@ -537,7 +537,7 @@ void func_7(var uParam0, int iParam1, bool bParam2)
 	{
 		func_53(uParam0, bParam2);
 		STREAMING::_0x4EDDD9E9CA5AF985(-318144249);
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("P_JOURNAL_OPEN01X"));
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("p_journal_open01x"));
 		func_54(iParam1);
 	}
 	if (uParam0->f_10 != 0)
@@ -979,7 +979,7 @@ int func_29()
 
 void func_30(var uParam0)
 {
-	STREAMING::REQUEST_MODEL(joaat("P_JOURNAL_OPEN01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("p_journal_open01x"), false);
 	STREAMING::_0x19A6BE7D9C6884D3(-318144249, 15, 0, 0);
 	func_93(uParam0->f_2);
 }
@@ -991,7 +991,7 @@ void func_31(int iParam0)
 
 int func_32(var uParam0)
 {
-	if (func_94(uParam0->f_2) && STREAMING::HAS_MODEL_LOADED(joaat("P_JOURNAL_OPEN01X")))
+	if (func_94(uParam0->f_2) && STREAMING::HAS_MODEL_LOADED(joaat("p_journal_open01x")))
 	{
 		return 1;
 	}
@@ -2115,12 +2115,12 @@ int func_76(var uParam0, var uParam1)
 					{
 						if (uParam1->f_2 == 115)
 						{
-							uParam0->f_8 = OBJECT::CREATE_OBJECT(joaat("P_JOURNAL_OPEN01X"), -5530.3f, -2930.37f, -1.575f, true, true, false, false, true);
+							uParam0->f_8 = OBJECT::CREATE_OBJECT(joaat("p_journal_open01x"), -5530.3f, -2930.37f, -1.575f, true, true, false, false, true);
 							ENTITY::SET_ENTITY_HEADING(uParam0->f_8, -59.08f);
 						}
 						else if (uParam1->f_2 == 76)
 						{
-							uParam0->f_8 = OBJECT::CREATE_OBJECT(joaat("P_JOURNAL_OPEN01X"), -276.93f, 804.75f, 119.18f, true, true, false, false, true);
+							uParam0->f_8 = OBJECT::CREATE_OBJECT(joaat("p_journal_open01x"), -276.93f, 804.75f, 119.18f, true, true, false, false, true);
 							ENTITY::SET_ENTITY_HEADING(uParam0->f_8, -55f);
 						}
 					}
@@ -3019,7 +3019,7 @@ int func_99(int iParam0, bool bParam1, bool bParam2)
 		return 0;
 	}
 	iVar0 = func_199(iParam0);
-	if (iVar0 == joaat("AMMO") || (bParam1 && iVar0 == joaat("Weapon")))
+	if (iVar0 == joaat("ammo") || (bParam1 && iVar0 == joaat("weapon")))
 	{
 		iVar1 = func_200(iParam0, 1);
 		if (iVar1 != 0)
@@ -3027,7 +3027,7 @@ int func_99(int iParam0, bool bParam1, bool bParam2)
 			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, iVar1);
 		}
 	}
-	else if (iVar0 == joaat("Weapon"))
+	else if (iVar0 == joaat("weapon"))
 	{
 		return func_201(iParam0, 0);
 	}
@@ -4796,7 +4796,7 @@ int func_181()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
@@ -5171,8 +5171,8 @@ int func_196(int iParam0)
 		default:
 			break;
 	}
-	return joaat("P_CS_WANTEDALIVE01X");
-	return joaat("P_CS_WANTEDALIVE01X");
+	return joaat("p_cs_wantedalive01x");
+	return joaat("p_cs_wantedalive01x");
 }
 
 int func_197(int iParam0)
@@ -5246,11 +5246,11 @@ int func_200(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = func_199(iParam0);
-	if (iVar0 == joaat("Weapon") && WEAPON::IS_WEAPON_VALID(iParam0))
+	if (iVar0 == joaat("weapon") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
 		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("ammo") && WEAPON::_0x1F7977C9101F807F(iParam0))
 	{
 		return iParam0;
 	}
@@ -6873,17 +6873,17 @@ int func_257(int iParam0)
 		case 5:
 			return joaat("p_chairdesk02x");
 		case 105:
-			return joaat("P_WOODENCHAIR01X");
+			return joaat("p_woodenchair01x");
 		case 26:
 			return joaat("p_chair24x");
 		case 76:
-			return joaat("P_DININGCHAIRS01X");
+			return joaat("p_diningchairs01x");
 		case 38:
-			return joaat("P_DININGCHAIRS01X");
+			return joaat("p_diningchairs01x");
 		case 115:
-			return joaat("p_Windsorchair03x");
+			return joaat("p_windsorchair03x");
 		case 78:
-			return joaat("P_WOODENCHAIR01X");
+			return joaat("p_woodenchair01x");
 	}
 	return joaat("p_chair24x");
 }
@@ -7745,11 +7745,11 @@ void func_295(int iParam0, var uParam1, var uParam2)
 			break;
 		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
 			*uParam1 = joaat("pistol_ammo_box");
-			*uParam2 = joaat("AMMO_PISTOL");
+			*uParam2 = joaat("ammo_pistol");
 			break;
 		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
 			*uParam1 = joaat("pistol_ammo_box_used");
-			*uParam2 = joaat("AMMO_PISTOL");
+			*uParam2 = joaat("ammo_pistol");
 			break;
 		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
 			*uParam1 = joaat("pistol_ammo_box_express");
@@ -7761,11 +7761,11 @@ void func_295(int iParam0, var uParam1, var uParam2)
 			break;
 		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
 			*uParam1 = joaat("rifle_ammo_box");
-			*uParam2 = joaat("AMMO_RIFLE");
+			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
 			*uParam1 = joaat("rifle_ammo_box_used");
-			*uParam2 = joaat("AMMO_RIFLE");
+			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
 			*uParam1 = joaat("rifle_ammo_box_express");
@@ -7793,11 +7793,11 @@ void func_295(int iParam0, var uParam1, var uParam2)
 			break;
 		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
 			*uParam1 = joaat("shotgun_ammo_box");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
 			*uParam1 = joaat("shotgun_ammo_box_used");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case 305770744: /* GXTEntry: "Shotgun - Slug" */
 			*uParam1 = joaat("shotgun_ammo_box_slug");
@@ -10664,7 +10664,7 @@ bool func_395(int iParam0, int iParam1, bool bParam2)
 		return false;
 	}
 	iVar0 = func_199(iParam0);
-	if (iVar0 == joaat("Weapon"))
+	if (iVar0 == joaat("weapon"))
 	{
 		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
 		{
@@ -10675,7 +10675,7 @@ bool func_395(int iParam0, int iParam1, bool bParam2)
 			return false;
 		}
 	}
-	else if (iVar0 == joaat("AMMO"))
+	else if (iVar0 == joaat("ammo"))
 	{
 		if (!func_462(iParam0, 1))
 		{
@@ -10687,7 +10687,7 @@ bool func_395(int iParam0, int iParam1, bool bParam2)
 
 struct<4> func_396(bool bParam0)
 {
-	return func_397(joaat("CHARACTER"), func_463(), -1591664384, bParam0);
+	return func_397(joaat("character"), func_463(), -1591664384, bParam0);
 }
 
 struct<4> func_397(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, int iParam5, bool bParam6)

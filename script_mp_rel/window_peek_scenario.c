@@ -145,7 +145,7 @@ void func_6()
 	switch (iLocal_19)
 	{
 		case 0:
-			iLocal_20 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -287.0813f, 818.8734f, 119.85f, -11.269f, 0f, -171.0697f, 50f, false, 2);
+			iLocal_20 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), -287.0813f, 818.8734f, 119.85f, -11.269f, 0f, -171.0697f, 50f, false, 2);
 			func_15(1);
 			func_16(1);
 			break;
@@ -163,7 +163,7 @@ void func_6()
 			{
 				return;
 			}
-			iLocal_21 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vLocal_32, vLocal_35, 40f, false, 2);
+			iLocal_21 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vLocal_32, vLocal_35, 40f, false, 2);
 			CAM::SET_CAM_ACTIVE_WITH_INTERP(iLocal_21, iLocal_20, 4000, 3, 1);
 			CAM::DESTROY_CAM(iLocal_20, false);
 			func_16(3);

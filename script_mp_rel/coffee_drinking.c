@@ -135,7 +135,7 @@ void func_1(int iParam0)
 
 void func_2(var uParam0)
 {
-	func_12(uParam0->f_1, &(uParam0->f_179), joaat("p_mugCoffee01x_PH_R_HAND"), joaat("P_MUGCOFFEE01X"));
+	func_12(uParam0->f_1, &(uParam0->f_179), joaat("p_mugcoffee01x_ph_r_hand"), joaat("p_mugcoffee01x"));
 }
 
 int func_3(int iParam0, int iParam1)
@@ -631,7 +631,7 @@ void func_26(int iParam0, bool bParam1, bool bParam2, int iParam3)
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_51(func_54(joaat("used"), joaat("WHISKEY")), 1);
+			func_51(func_54(joaat("used"), joaat("whiskey")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
@@ -1321,7 +1321,7 @@ void func_53(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_54(joaat("EATEN"), func_99(iParam0)) };
+	Var0 = { func_54(joaat("eaten"), func_99(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
 	func_51(func_100(joaat("HERBS_EATEN")), iParam1);
 }
@@ -1371,7 +1371,7 @@ void func_56(int iParam0, int iParam1)
 		{
 			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1380824593, 1);
 		}
-		if (((func_14(iParam0, -887064662) || func_14(iParam0, -839724752)) || func_14(iParam0, 1264218912)) || iParam0 == joaat("CONSUMABLE_OFFAL"))
+		if (((func_14(iParam0, joaat("CI_TAG_ITEM_MEAT_ANIMAL")) || func_14(iParam0, -839724752)) || func_14(iParam0, 1264218912)) || iParam0 == joaat("CONSUMABLE_OFFAL"))
 		{
 			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 381139323, 1);
 		}
@@ -5448,11 +5448,11 @@ int func_190(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = joaat("Name");
+	Var0.f_2 = joaat("name");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("Name")))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
@@ -5465,17 +5465,17 @@ int func_190(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("Default")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("Default")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("Default")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
 				{
 				}
 				break;
@@ -5495,13 +5495,13 @@ int func_190(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("MAX"));
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("MAX"));
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("MAX"));
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -5590,13 +5590,13 @@ int func_195(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("INT"):
+		case joaat("int"):
 			iVar0 = 0;
 			break;
 		case joaat("float"):
 			iVar0 = 1;
 			break;
-		case joaat("BOOL"):
+		case joaat("bool"):
 			iVar0 = 2;
 			break;
 	}

@@ -2905,11 +2905,11 @@ int func_21(var uParam0)
 		uParam0->f_24 = 5;
 		uParam0->f_23 = 2;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = joaat("CS_FeatsOfStrength");
-		uParam0->f_1401[1] = joaat("U_M_M_SDSTRONGWOMANASSISTANT_01");
+		uParam0->f_1401[0] = joaat("cs_featsofstrength");
+		uParam0->f_1401[1] = joaat("u_m_m_sdstrongwomanassistant_01");
 		uParam0->f_1385[0] = joaat("s_re_strongbar01x");
 		uParam0->f_1385[1] = joaat("p_sdtheater_chest01x");
-		uParam0->f_1385[2] = joaat("p_sledgeHammer01x");
+		uParam0->f_1385[2] = joaat("p_sledgehammer01x");
 		uParam0->f_1385[3] = joaat("s_cinderblock01x");
 		uParam0->f_1385[4] = joaat("s_rippablebook01x");
 		uParam0->f_1436 = "SHSDAUD";
@@ -4338,7 +4338,7 @@ void func_103(var uParam0, int iParam1)
 
 int func_104()
 {
-	return joaat("CS_EscapeArtist");
+	return joaat("cs_escapeartist");
 }
 
 int func_105(int iParam0)
@@ -7700,7 +7700,7 @@ void func_219(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

@@ -173,7 +173,7 @@ int func_6(var uParam0)
 		{
 			return 0;
 		}
-		if (!STREAMING::HAS_MODEL_LOADED(joaat("p_cs_sackCorn01x")))
+		if (!STREAMING::HAS_MODEL_LOADED(joaat("p_cs_sackcorn01x")))
 		{
 			return 0;
 		}
@@ -466,7 +466,7 @@ void func_19(var uParam0)
 	}
 	if (func_22(5))
 	{
-		STREAMING::REQUEST_MODEL(joaat("p_cs_sackCorn01x"), false);
+		STREAMING::REQUEST_MODEL(joaat("p_cs_sackcorn01x"), false);
 	}
 }
 
@@ -560,7 +560,7 @@ int func_24(var uParam0)
 	{
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_17))
 		{
-			iLocal_17 = OBJECT::CREATE_OBJECT(joaat("p_cs_sackCorn01x"), -2517.9f, 424.8f, 147.9f, true, true, false, false, true);
+			iLocal_17 = OBJECT::CREATE_OBJECT(joaat("p_cs_sackcorn01x"), -2517.9f, 424.8f, 147.9f, true, true, false, false, true);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_17))
 			{
 				ENTITY::SET_ENTITY_COORDS(iLocal_17, -2517.9f, 424.8f, 147.9f, true, false, true, true);
@@ -3626,7 +3626,7 @@ int func_155(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_225()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_241(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_225()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_241(Global_35, joaat("Prop_player_sleep_tent_a_frame"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_226(iParam0, iVar0) || (fParam1 >= (func_242(iParam0) * func_242(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -4183,7 +4183,7 @@ int func_179(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 			if (iVar1 < 0 || iVar1 > 39)
 			{
 			}
-			else if (!DATAFILE::_0x44B3A36933AC009C(&iVar0, &Var4, joaat("COMPONENT")))
+			else if (!DATAFILE::_0x44B3A36933AC009C(&iVar0, &Var4, joaat("component")))
 			{
 			}
 			else
@@ -4195,7 +4195,7 @@ int func_179(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 				{
 					if (!DATAFILE::_0x44B3A36933AC009C(&iVar0, &Var4, 1441384))
 					{
-						(uParam0->f_1[iVar1 /*3*/])->f_1 = joaat("BASE");
+						(uParam0->f_1[iVar1 /*3*/])->f_1 = joaat("base");
 					}
 					else
 					{
@@ -4277,7 +4277,7 @@ void func_183(var uParam0, bool bParam1, int iParam2)
 			if (func_195(iVar5, 8))
 			{
 			}
-			else if (&(Global_1946804->f_57[iVar0 /*11*/])->f_2[0] == joaat("missing") || &uParam0->f_1[iVar0 /*3*/] == 0)
+			else if (&(Global_1946804->f_57[iVar0 /*11*/])->f_2[0] == joaat("MISSING") || &uParam0->f_1[iVar0 /*3*/] == 0)
 			{
 			}
 			else if (func_195(iVar5, 6) || &uParam0->f_1[iVar0 /*3*/] == &Global_1946804->f_57[iVar0 /*11*/])
@@ -4316,7 +4316,7 @@ void func_183(var uParam0, bool bParam1, int iParam2)
 							if (func_195(iVar5, 8))
 							{
 							}
-							else if (&(Global_1946804->f_57[iVar0 /*11*/])->f_2[0] == joaat("missing") || &uParam0->f_1[iVar0 /*3*/] == 0)
+							else if (&(Global_1946804->f_57[iVar0 /*11*/])->f_2[0] == joaat("MISSING") || &uParam0->f_1[iVar0 /*3*/] == 0)
 							{
 							}
 							else if (func_195(iVar5, 6) || &uParam0->f_1[iVar0 /*3*/] == &Global_1946804->f_57[iVar0 /*11*/])
@@ -4729,7 +4729,7 @@ void func_202(var uParam0, bool bParam1, bool bParam2, int iParam3, bool bParam4
 			if (func_195(iVar3, 8))
 			{
 			}
-			else if (&(Global_1946804->f_57[iVar1 /*11*/])->f_2[0] == joaat("missing") || &uParam0->f_1[iVar1 /*3*/] == 0)
+			else if (&(Global_1946804->f_57[iVar1 /*11*/])->f_2[0] == joaat("MISSING") || &uParam0->f_1[iVar1 /*3*/] == 0)
 			{
 			}
 			else
@@ -6036,7 +6036,7 @@ int func_256(int iParam0)
 
 int func_257(var uParam0, int iParam1, int iParam2)
 {
-	*iParam2 = joaat("BASE");
+	*iParam2 = joaat("base");
 	return 1;
 }
 
@@ -6100,7 +6100,7 @@ void func_258(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 			else
 			{
 				iVar0 = 16;
-				if ((uParam0->f_1[iVar0 /*3*/])->f_1 == joaat("BASE") || (uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430)
+				if ((uParam0->f_1[iVar0 /*3*/])->f_1 == joaat("base") || (uParam0->f_1[iVar0 /*3*/])->f_1 == 1530758430)
 				{
 					uParam0->f_1[iVar1 /*3*/] = &Global_1946804->f_57[iVar1 /*11*/];
 					(uParam0->f_1[iVar1 /*3*/])->f_1 = 0;
@@ -6112,7 +6112,7 @@ void func_258(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 				Jump @1170; //curOff = 525
 				func_307(uParam0, (1 && bParam4), (1 && bParam4), (1 && bParam4), bParam3);
 				iVar1 = 16;
-				if (uParam0->f_1[iVar1 /*3*/])->f_1 == joaat("BASE")
+				if (uParam0->f_1[iVar1 /*3*/])->f_1 == joaat("base")
 				{
 					(uParam0->f_1[iVar1 /*3*/])->f_1 = -1539589426;
 					if (bParam4)
@@ -6259,7 +6259,7 @@ int func_260(int iParam0, int iParam1, int iParam2, bool bParam3)
 				break;
 		}
 	}
-	iVar0 = (iVar0 + PED::_0x31B2E7F2E3C58B89(iParam0, joaat("BASE"), iParam2, bParam3));
+	iVar0 = (iVar0 + PED::_0x31B2E7F2E3C58B89(iParam0, joaat("base"), iParam2, bParam3));
 	return iVar0;
 }
 
@@ -6947,7 +6947,7 @@ void func_307(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 		else
 		{
 			(uParam0->f_1[iVar3 /*3*/])->f_1 = -1539589426;
-			(uParam0->f_1[iVar1 /*3*/])->f_1 = joaat("BASE");
+			(uParam0->f_1[iVar1 /*3*/])->f_1 = joaat("base");
 		}
 		if (bParam2)
 		{
@@ -6958,9 +6958,9 @@ void func_307(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 			func_262(iVar3, iVar0);
 		}
 	}
-	if ((uParam0->f_1[iVar2 /*3*/])->f_1 == -1333118809 || (uParam0->f_1[iVar2 /*3*/])->f_1 == joaat("Custom"))
+	if ((uParam0->f_1[iVar2 /*3*/])->f_1 == -1333118809 || (uParam0->f_1[iVar2 /*3*/])->f_1 == joaat("custom"))
 	{
-		(uParam0->f_1[iVar2 /*3*/])->f_1 = joaat("BASE");
+		(uParam0->f_1[iVar2 /*3*/])->f_1 = joaat("base");
 		if (bParam3)
 		{
 			func_262(iVar2, iVar0);
@@ -7064,7 +7064,7 @@ int func_312(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return joaat("HATS");
+			return joaat("hats");
 		case -525676072:
 			return 1249071452;
 		default:

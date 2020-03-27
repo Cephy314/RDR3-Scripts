@@ -2717,7 +2717,7 @@ void func_98(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_223(Global_1935630, 8192);
-	func_225(func_224(-1532769513, joaat("AREAS")), 1);
+	func_225(func_224(-1532769513, joaat("areas")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -3043,14 +3043,14 @@ int func_105(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DRIZZLE"):
+		case joaat("drizzle"):
 		case joaat("thunder"):
-		case joaat("SHOWER"):
+		case joaat("shower"):
 		case joaat("sleet"):
-		case joaat("HURRICANE"):
+		case joaat("hurricane"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("THUNDERSTORM"):
+		case joaat("thunderstorm"):
 			return 1;
 		default:
 			break;
@@ -3618,13 +3618,13 @@ Vector3 func_133(var uParam0)
 		iVar2 = MISC::GET_HASH_KEY(sVar1);
 		switch (iVar2)
 		{
-			case joaat("0832_S_M_M_TrainStationWorker_01_WHITE_01"):
+			case joaat("0832_s_m_m_trainstationworker_01_white_01"):
 				uParam0->f_37 = "0832_TRAINWORKER";
 				return func_252("ASBG_TSW3SICK");
-			case joaat("0833_S_M_M_TrainStationWorker_01_WHITE_02"):
+			case joaat("0833_s_m_m_trainstationworker_01_white_02"):
 				uParam0->f_37 = "0833_TRAINWORKER";
 				return func_252("ASBG_TSW2SICK");
-			case joaat("0834_S_M_M_TrainStationWorker_01_WHITE_03"):
+			case joaat("0834_s_m_m_trainstationworker_01_white_03"):
 				uParam0->f_37 = "0834_TRAINWORKER";
 				return func_252("ASBG_TSW1SICK");
 			default:
@@ -6531,11 +6531,11 @@ int func_201(int iParam0)
 		case 1:
 			return joaat("s_cs_nh_newspaper01x");
 		case 2:
-			return joaat("S_CS_SD_NEWSPAPER01X");
+			return joaat("s_cs_sd_newspaper01x");
 		default:
-			return joaat("S_CS_SD_NEWSPAPER01X");
+			return joaat("s_cs_sd_newspaper01x");
 	}
-	return joaat("S_CS_SD_NEWSPAPER01X");
+	return joaat("s_cs_sd_newspaper01x");
 }
 
 bool func_202(bool bParam0, vector3 vParam1)
@@ -9008,7 +9008,7 @@ int func_305()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
+	if (Global_40.f_39 == joaat("player_zero"))
 	{
 		return 1;
 	}
@@ -9085,7 +9085,7 @@ int func_309()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}

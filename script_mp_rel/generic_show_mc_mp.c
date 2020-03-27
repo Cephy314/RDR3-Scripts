@@ -2547,7 +2547,7 @@ void func_63(var uParam0, var uParam1)
 			{
 				if (!CAM::DOES_CAM_EXIST(uParam1->f_252))
 				{
-					uParam1->f_252 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), func_163(0), func_164(0), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
+					uParam1->f_252 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), func_163(0), func_164(0), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
 				}
 				func_162(&(uParam1->f_257), 1);
 			}
@@ -3758,7 +3758,7 @@ int func_95(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("CS_CABARETMC");
+			return joaat("cs_cabaretmc");
 		case 1:
 			return joaat("p_new_theater_curtain");
 		default:
@@ -5769,7 +5769,7 @@ void func_213(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

@@ -1464,7 +1464,7 @@ void func_66(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_134(Global_1935630, 8192);
-	func_136(func_135(-1532769513, joaat("AREAS")), 1);
+	func_136(func_135(-1532769513, joaat("areas")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1809,14 +1809,14 @@ int func_73(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DRIZZLE"):
+		case joaat("drizzle"):
 		case joaat("thunder"):
-		case joaat("SHOWER"):
+		case joaat("shower"):
 		case joaat("sleet"):
-		case joaat("HURRICANE"):
+		case joaat("hurricane"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("THUNDERSTORM"):
+		case joaat("thunderstorm"):
 			return 1;
 		default:
 			break;
@@ -2687,51 +2687,51 @@ int func_98(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("Annesburg"):
+		case joaat("annesburg"):
 			return 78;
-		case joaat("Armadillo"):
+		case joaat("ARMADILLO"):
 			return 120;
-		case joaat("BeechersHope"):
+		case joaat("beechershope"):
 			return 37;
-		case joaat("BLACKWATER"):
+		case joaat("blackwater"):
 			return 38;
 		case 1778899666:
 			return 93;
-		case joaat("Butcher"):
+		case joaat("BUTCHER"):
 			return 82;
 		case 1862420670:
 			return 95;
-		case joaat("CORNWALL"):
+		case joaat("cornwall"):
 			return 65;
 		case -473051294:
 			return 69;
-		case joaat("Lagras"):
+		case joaat("lagras"):
 			return 3;
 		case 1463094051:
 			return 110;
-		case joaat("Rhodes"):
+		case joaat("rhodes"):
 			return 105;
 		case -765540529:
 			return 5;
 		case 2147354003:
 			return 32;
-		case joaat("Strawberry"):
+		case joaat("strawberry"):
 			return 26;
-		case joaat("Tumbleweed"):
+		case joaat("tumbleweed"):
 			return 115;
-		case joaat("Valentine"):
+		case joaat("valentine"):
 			return 76;
-		case joaat("VanHorn"):
+		case joaat("vanhorn"):
 			return 92;
 		case joaat("wallace"):
 			return 35;
-		case joaat("Wapiti"):
+		case joaat("wapiti"):
 			return 56;
 		case -1207133769:
 		case 201158410:
 		case 1654810713:
 			return 57;
-		case joaat("Manicato"):
+		case joaat("manicato"):
 			return 61;
 	}
 	return -1;
@@ -4314,7 +4314,7 @@ int func_171()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}

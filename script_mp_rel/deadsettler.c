@@ -363,7 +363,7 @@ void func_5(int iParam0, int iParam1)
 
 void func_6(int iParam0)
 {
-	STREAMING::REQUEST_MODEL(joaat("A_M_M_UNICORPSE_01"), false);
+	STREAMING::REQUEST_MODEL(joaat("a_m_m_unicorpse_01"), false);
 	PED::_0xED9582B3DA8F02B4(6);
 	iLocal_20 = ANIMSCENE::_CREATE_ANIM_SCENE(func_53(), 8, func_54(), false, true);
 	ANIMSCENE::LOAD_ANIM_SCENE(iLocal_20);
@@ -731,7 +731,7 @@ int func_40(int iParam0)
 	switch (iLocal_21)
 	{
 		case 0:
-			if ((((STREAMING::HAS_MODEL_LOADED(joaat("A_M_M_UNICORPSE_01")) && PED::_0x5E420FF293EE5472()) && ANIMSCENE::_0x25557E324489393C(iLocal_20)) && ANIMSCENE::_0x477122B8D05E7968(iLocal_20, 1, 0)) && !func_62())
+			if ((((STREAMING::HAS_MODEL_LOADED(joaat("a_m_m_unicorpse_01")) && PED::_0x5E420FF293EE5472()) && ANIMSCENE::_0x25557E324489393C(iLocal_20)) && ANIMSCENE::_0x477122B8D05E7968(iLocal_20, 1, 0)) && !func_62())
 			{
 				iLocal_21 = 1;
 			}
@@ -949,15 +949,15 @@ int func_47()
 
 int func_48()
 {
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Mission_Controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_mission_controller"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Deathmatch_Controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_deathmatch_controller"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_Race_Controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_race_controller"), -1, 0, 0))
 	{
 		return 1;
 	}
@@ -1161,7 +1161,7 @@ int func_63()
 {
 	var uVar0;
 
-	if (((((func_102(uLocal_13[0], joaat("A_M_M_UNICORPSE_01"), &uVar0, func_100(0), func_101(0)) && func_102(uLocal_13[1], joaat("A_M_M_UNICORPSE_01"), &uVar0, func_100(1), func_101(1))) && func_102(uLocal_13[2], joaat("A_M_M_UNICORPSE_01"), &uVar0, func_100(2), func_101(2))) && func_102(uLocal_13[3], joaat("A_M_M_UNICORPSE_01"), &uVar0, func_100(3), func_101(3))) && func_102(uLocal_13[4], joaat("A_M_M_UNICORPSE_01"), &uVar0, func_100(4), func_101(4))) && func_102(uLocal_13[5], joaat("A_M_M_UNICORPSE_01"), &uVar0, func_100(5), func_101(5)))
+	if (((((func_102(uLocal_13[0], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(0), func_101(0)) && func_102(uLocal_13[1], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(1), func_101(1))) && func_102(uLocal_13[2], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(2), func_101(2))) && func_102(uLocal_13[3], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(3), func_101(3))) && func_102(uLocal_13[4], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(4), func_101(4))) && func_102(uLocal_13[5], joaat("a_m_m_unicorpse_01"), &uVar0, func_100(5), func_101(5)))
 	{
 		return 1;
 	}
@@ -1444,7 +1444,7 @@ void func_80(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_127(Global_1939178, 16384);
-	func_129(func_128(-1532769513, joaat("AREAS")), 1);
+	func_129(func_128(-1532769513, joaat("areas")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -1711,14 +1711,14 @@ int func_82(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DRIZZLE"):
+		case joaat("drizzle"):
 		case joaat("thunder"):
-		case joaat("SHOWER"):
+		case joaat("shower"):
 		case joaat("sleet"):
-		case joaat("HURRICANE"):
+		case joaat("hurricane"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("THUNDERSTORM"):
+		case joaat("thunderstorm"):
 			return 1;
 		default:
 			break;
@@ -2015,7 +2015,7 @@ int func_84(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("WILDERNESS");
+		return joaat("Wilderness");
 	}
 	return 0;
 }
@@ -2051,7 +2051,7 @@ void func_87(int iParam0)
 	PED::DELETE_PED(uLocal_13[3]);
 	PED::DELETE_PED(uLocal_13[4]);
 	PED::DELETE_PED(uLocal_13[5]);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_M_M_UNICORPSE_01"));
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("a_m_m_unicorpse_01"));
 	PED::_0x7D4E70A67A651C71(6);
 	ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_20);
 }
@@ -5074,7 +5074,7 @@ void func_205(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

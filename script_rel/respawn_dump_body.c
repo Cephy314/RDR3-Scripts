@@ -397,7 +397,7 @@ void __EntryFunction__()
 				func_43(&Local_32, 0);
 				if (func_45(func_44()))
 				{
-					MISC::_SET_WEATHER_TYPE(joaat("OVERCASTDARK"), true, false, false, 0f, true);
+					MISC::_SET_WEATHER_TYPE(joaat("overcastdark"), true, false, false, 0f, true);
 				}
 				MISC::_SET_WEATHER_TYPE_FROZEN(true);
 				GRAPHICS::_0x503941F65DBA24EC(1);
@@ -777,7 +777,7 @@ void func_1(bool bParam0)
 		{
 			OBJECT::DELETE_OBJECT(Local_32.f_64[iVar0]);
 		}
-		if (&Local_32.f_61[iVar0] == joaat("P_CIGARETTE_CS02X"))
+		if (&Local_32.f_61[iVar0] == joaat("p_cigarette_cs02x"))
 		{
 			func_77(joaat("CONSUMABLE_CIGARETTE_BOX"), 1);
 		}
@@ -842,7 +842,7 @@ void func_2(var uParam0, int iParam1)
 
 void func_3(var uParam0)
 {
-	*uParam0 = CAM::CREATE_CAMERA(joaat("DEFAULT_SCRIPTED_CAMERA"), false);
+	*uParam0 = CAM::CREATE_CAMERA(joaat("default_scripted_camera"), false);
 	uParam0->f_7 = 70f;
 	uParam0->f_9 = -180f;
 	uParam0->f_10 = 180f;
@@ -987,7 +987,7 @@ void func_6(var uParam0)
 					uParam0->f_97 = 1;
 				}
 			}
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("ObjectExchange")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), joaat("objectExchange")))
 			{
 				OBJECT::DELETE_OBJECT(uParam0->f_64[iVar1]);
 			}
@@ -1124,7 +1124,7 @@ int func_12(var uParam0, int iParam1, int iParam2)
 	DATAFILE::_DATAFILE_GET_HASH(&iVar10, &(uParam0->f_5));
 	if (func_107(iVar10))
 	{
-		iVar10 = joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@A");
+		iVar10 = joaat("script_respawn@one_shot@hybrid@generic@unarmed@crack_neck@a");
 	}
 	uParam0->f_11 = func_108(iVar10);
 	uParam0->f_15 = func_109(iVar10);
@@ -1510,7 +1510,7 @@ bool func_25()
 			return true;
 		}
 	}
-	return (PED::_0xFB4891BD7578CDC1(Global_35, joaat("HATS")) || func_125(-2061583405, &uVar0));
+	return (PED::_0xFB4891BD7578CDC1(Global_35, joaat("hats")) || func_125(-2061583405, &uVar0));
 }
 
 void func_26(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
@@ -1907,14 +1907,14 @@ int func_45(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("DRIZZLE"):
+		case joaat("drizzle"):
 		case joaat("thunder"):
-		case joaat("SHOWER"):
+		case joaat("shower"):
 		case joaat("sleet"):
-		case joaat("HURRICANE"):
+		case joaat("hurricane"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("THUNDERSTORM"):
+		case joaat("thunderstorm"):
 			return 1;
 		default:
 			break;
@@ -1994,7 +1994,7 @@ void func_49(var uParam0, bool bParam1)
 		sVar0 = "";
 		if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_64[iVar1])))
 		{
-			if ((&uParam0->f_61[iVar1] == joaat("p_journal01x") || &uParam0->f_61[iVar1] == joaat("S_LEV_JOURNAL_BOOK")) || &uParam0->f_61[iVar1] == joaat("s_playerjournal01x"))
+			if ((&uParam0->f_61[iVar1] == joaat("p_journal01x") || &uParam0->f_61[iVar1] == joaat("s_lev_journal_book")) || &uParam0->f_61[iVar1] == joaat("s_playerjournal01x"))
 			{
 				if (bParam1)
 				{
@@ -2986,123 +2986,123 @@ char* func_108(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@crack_neck@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@crack_neck@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@CRACK_NECK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@crack_neck@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@CRACK_NECK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@CRACK_NECK@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@crack_neck@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@CRACK_NECK@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CLOSE_JOURNAL@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@close_journal@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CLOSE_JOURNAL@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CLOSE_JOURNAL@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@close_journal@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CLOSE_JOURNAL@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@A"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_wash@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@B"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_wash@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@C"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_wash@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_DRINK@A"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_drink@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_DRINK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@LONGARM_LHAND@CROUCH_STREAM_DRINK@A"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@longarm_lhand@crouch_stream_drink@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@LONGARM_LHAND@CROUCH_STREAM_DRINK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@STAND_LEAN_BACK_FLASK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@stand_lean_back_flask@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@STAND_LEAN_BACK_FLASK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@STAND_LEAN_BACK_FLASK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@stand_lean_back_flask@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@STAND_LEAN_BACK_FLASK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@FRONT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@front"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@FRONT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@LEFT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@left"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@LEFT";
 		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@RIGHT"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@RIGHT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@C"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@FRONT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing@front"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@FRONT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@LEFT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing@left"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@LEFT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@RIGHT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing@right"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@RIGHT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_BOOT_CLEAN@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@stand_boot_clean@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_BOOT_CLEAN@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_BOOT_CLEAN@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_boot_clean@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_BOOT_CLEAN@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_adjust_belt@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@B"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_adjust_belt@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@C"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_adjust_belt@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_ADJUST_BELT@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@stand_adjust_belt@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_ADJUST_BELT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_ADJUST_BELT@B"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@stand_adjust_belt@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_ADJUST_BELT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_RHAND@STAND_ADJUST_BELT@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_rhand@stand_adjust_belt@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_RHAND@STAND_ADJUST_BELT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@CROUCH_SMOKE_END@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@crouch_smoke_end@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@CROUCH_SMOKE_END@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@CROUCH_SMOKE_END@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@crouch_smoke_end@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@CROUCH_SMOKE_END@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@CROUCH_SMOKE_END@B"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@crouch_smoke_end@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@CROUCH_SMOKE_END@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@A"):
+		case joaat("script_respawn@one_shot@upperbody@flies@unarmed@swat_flies@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@B"):
+		case joaat("script_respawn@one_shot@upperbody@flies@unarmed@swat_flies@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@C"):
+		case joaat("script_respawn@one_shot@upperbody@flies@unarmed@swat_flies@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@LONGARM_LHAND@SWAT_FLIES@A"):
+		case joaat("script_respawn@one_shot@upperbody@flies@longarm_lhand@swat_flies@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@LONGARM_LHAND@SWAT_FLIES@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@LONGARM_LHAND@SWAT_FLIES@B"):
+		case joaat("script_respawn@one_shot@upperbody@flies@longarm_lhand@swat_flies@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@LONGARM_LHAND@SWAT_FLIES@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_LHAND@WIPE_BROW@A"):
+		case joaat("script_respawn@one_shot@upperbody@hot@hat_lhand@wipe_brow@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_LHAND@WIPE_BROW@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_RHAND@WIPE_BROW@A"):
+		case joaat("script_respawn@one_shot@upperbody@hot@hat_rhand@wipe_brow@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_RHAND@WIPE_BROW@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_RHAND@WIPE_BROW@B"):
+		case joaat("script_respawn@one_shot@upperbody@hot@hat_rhand@wipe_brow@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_RHAND@WIPE_BROW@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@LONGARM_LHAND@WIPE_BROW@A"):
+		case joaat("script_respawn@one_shot@upperbody@hot@longarm_lhand@wipe_brow@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@LONGARM_LHAND@WIPE_BROW@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@LONGARM_LHAND@WIPE_BROW@B"):
+		case joaat("script_respawn@one_shot@upperbody@hot@longarm_lhand@wipe_brow@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@LONGARM_LHAND@WIPE_BROW@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@A"):
+		case joaat("script_respawn@one_shot@upperbody@spit@a"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@B"):
+		case joaat("script_respawn@one_shot@upperbody@spit@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@C"):
+		case joaat("script_respawn@one_shot@upperbody@spit@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@C";
 		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@A"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@B"):
+		case joaat("script_respawn@one_shot@upperbody@spitlongarm_lhand@b"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@C"):
+		case joaat("script_respawn@one_shot@upperbody@spitlongarm_lhand@c"):
 			return "SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@C";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@crouch_admire_view@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_rhand@crouch_admire_view@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_2hand@crouch_admire_view@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED_HAT@SIT_WAKE_UP@A"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed_hat@sit_wake_up@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED_HAT@SIT_WAKE_UP@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@lean_left_arms_crossed@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@lean_left_arms_crossed@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A";
 		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@sit_lean_forwards@a"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A";
-		case joaat("SCRIPT_RESPAWN@HORSE@MOUNTED_UNARMED"):
+		case joaat("script_respawn@horse@mounted_unarmed"):
 			return "SCRIPT_RESPAWN@HORSE@MOUNTED_UNARMED";
 		case joaat("SADDLE_LEAN_FWD_PETWHISPERS_LT"):
 			return "SADDLE_LEAN_FWD_PETWHISPERS_LT";
@@ -3118,21 +3118,21 @@ char* func_108(int iParam0)
 			return "SADDLE_LEAN_FWD_EXIT_ADJUST";
 		case joaat("SADDLE_LEAN_FWD_EXIT_LEG_STRETCH"):
 			return "SADDLE_LEAN_FWD_EXIT_LEG_STRETCH";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@crouch_admire_view@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_rhand@crouch_admire_view@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_2hand@crouch_admire_view@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED_HAT@SIT_WAKE_UP@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed_hat@sit_wake_up@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED_HAT@SIT_WAKE_UP@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@lean_left_arms_crossed@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@lean_left_arms_crossed@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@sit_lean_forwards@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@sit_lean_forwards@a@idles"):
 			return "SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A@IDLES";
 		default:
 			break;
@@ -3144,139 +3144,139 @@ char* func_109(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@crack_neck@a"):
 			return "UNARMED@CRACK_NECK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CRACK_NECK@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@crack_neck@b"):
 			return "UNARMED@CRACK_NECK@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@CRACK_NECK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@crack_neck@a"):
 			return "LHAND@CRACK_NECK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@CRACK_NECK@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@crack_neck@b"):
 			return "LHAND@CRACK_NECK@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CLOSE_JOURNAL@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@close_journal@a"):
 			return "UNARMED@CLOSE_JOURNAL@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@CLOSE_JOURNAL@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@close_journal@b"):
 			return "UNARMED@CLOSE_JOURNAL@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@A"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_wash@a"):
 			return "UNARMED@CROUCH_STREAM_WASH@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@B"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_wash@b"):
 			return "UNARMED@CROUCH_STREAM_WASH@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_WASH@C"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_wash@c"):
 			return "UNARMED@CROUCH_STREAM_WASH@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@LONGARM_LHAND@CROUCH_STREAM_DRINK@A"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@longarm_lhand@crouch_stream_drink@a"):
 			return "LHAND@CROUCH_STREAM_DRINK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@NEAR_WATER@UNARMED@CROUCH_STREAM_DRINK@A"):
+		case joaat("script_respawn@one_shot@hybrid@near_water@unarmed@crouch_stream_drink@a"):
 			return "UNARMED@CROUCH_STREAM_DRINK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@STAND_LEAN_BACK_FLASK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@stand_lean_back_flask@a"):
 			return "UNARMED@STAND_LEAN_BACK_FLASK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@STAND_LEAN_BACK_FLASK@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@stand_lean_back_flask@a"):
 			return "LHAND@STAND_LEAN_BACK_FLASK@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@FRONT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@front"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@FRONT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@LEFT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@left"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@LEFT";
 		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@RIGHT"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@RIGHT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@A"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@a"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@B"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@b"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@UNARMED@SITTING_JOURNAL_WRITING@C"):
+		case joaat("script_respawn@one_shot@hybrid@generic@unarmed@sitting_journal_writing@c"):
 			return "UNARMED@SITTING_JOURNAL_WRITING@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing"):
 			return "LHAND@SITTING_JOURNAL_WRITING";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@FRONT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing@front"):
 			return "LHAND@SITTING_JOURNAL_WRITING@FRONT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@LEFT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing@left"):
 			return "LHAND@SITTING_JOURNAL_WRITING@LEFT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@HYBRID@GENERIC@LONGARM_LHAND@SITTING_JOURNAL_WRITING@RIGHT"):
+		case joaat("script_respawn@one_shot@hybrid@generic@longarm_lhand@sitting_journal_writing@right"):
 			return "LHAND@SITTING_JOURNAL_WRITING@RIGHT";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_BOOT_CLEAN@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@stand_boot_clean@a"):
 			return "LHAND@STAND_BOOT_CLEAN@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_BOOT_CLEAN@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_boot_clean@a"):
 			return "UNARMED@STAND_BOOT_CLEAN@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_adjust_belt@a"):
 			return "UNARMED@STAND_ADJUST_BELT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@B"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_adjust_belt@b"):
 			return "UNARMED@STAND_ADJUST_BELT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@STAND_ADJUST_BELT@C"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@stand_adjust_belt@c"):
 			return "UNARMED@STAND_ADJUST_BELT@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_ADJUST_BELT@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@stand_adjust_belt@a"):
 			return "LHAND@STAND_ADJUST_BELT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@STAND_ADJUST_BELT@B"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@stand_adjust_belt@b"):
 			return "LHAND@STAND_ADJUST_BELT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_RHAND@STAND_ADJUST_BELT@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_rhand@stand_adjust_belt@a"):
 			return "RHAND@STAND_ADJUST_BELT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@UNARMED@CROUCH_SMOKE_END@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@unarmed@crouch_smoke_end@a"):
 			return "UNARMED@CROUCH_SMOKE_END@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@CROUCH_SMOKE_END@A"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@crouch_smoke_end@a"):
 			return "LHAND@CROUCH_SMOKE_END@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@FULLBODY@GENERIC@LONGARM_LHAND@CROUCH_SMOKE_END@B"):
+		case joaat("script_respawn@one_shot@fullbody@generic@longarm_lhand@crouch_smoke_end@b"):
 			return "LHAND@CROUCH_SMOKE_END@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@A"):
+		case joaat("script_respawn@one_shot@upperbody@flies@unarmed@swat_flies@a"):
 			return "UNARMED@SWAT_FLIES@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@B"):
+		case joaat("script_respawn@one_shot@upperbody@flies@unarmed@swat_flies@b"):
 			return "UNARMED@SWAT_FLIES@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@UNARMED@SWAT_FLIES@C"):
+		case joaat("script_respawn@one_shot@upperbody@flies@unarmed@swat_flies@c"):
 			return "UNARMED@SWAT_FLIES@C";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@LONGARM_LHAND@SWAT_FLIES@A"):
+		case joaat("script_respawn@one_shot@upperbody@flies@longarm_lhand@swat_flies@a"):
 			return "LHAND@SWAT_FLIES@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@FLIES@LONGARM_LHAND@SWAT_FLIES@B"):
+		case joaat("script_respawn@one_shot@upperbody@flies@longarm_lhand@swat_flies@b"):
 			return "LHAND@SWAT_FLIES@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_LHAND@WIPE_BROW@A"):
+		case joaat("script_respawn@one_shot@upperbody@hot@hat_lhand@wipe_brow@a"):
 			return "LHAND@WIPE_BROW@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_RHAND@WIPE_BROW@A"):
+		case joaat("script_respawn@one_shot@upperbody@hot@hat_rhand@wipe_brow@a"):
 			return "RHAND@WIPE_BROW@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@HAT_RHAND@WIPE_BROW@B"):
+		case joaat("script_respawn@one_shot@upperbody@hot@hat_rhand@wipe_brow@b"):
 			return "RHAND@WIPE_BROW@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@LONGARM_LHAND@WIPE_BROW@A"):
+		case joaat("script_respawn@one_shot@upperbody@hot@longarm_lhand@wipe_brow@a"):
 			return "LHAND@WIPE_BROW@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@HOT@LONGARM_LHAND@WIPE_BROW@B"):
+		case joaat("script_respawn@one_shot@upperbody@hot@longarm_lhand@wipe_brow@b"):
 			return "LHAND@WIPE_BROW@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@A"):
+		case joaat("script_respawn@one_shot@upperbody@spit@a"):
 			return "UNARMED@SPIT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@B"):
+		case joaat("script_respawn@one_shot@upperbody@spit@b"):
 			return "UNARMED@SPIT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPIT@C"):
+		case joaat("script_respawn@one_shot@upperbody@spit@c"):
 			return "UNARMED@SPIT@C";
 		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@A"):
 			return "LHAND@SPIT@A";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@B"):
+		case joaat("script_respawn@one_shot@upperbody@spitlongarm_lhand@b"):
 			return "LHAND@SPIT@B";
-		case joaat("SCRIPT_RESPAWN@ONE_SHOT@UPPERBODY@SPITLONGARM_LHAND@C"):
+		case joaat("script_respawn@one_shot@upperbody@spitlongarm_lhand@c"):
 			return "LHAND@SPIT@C";
-		case joaat("SCRIPT_RESPAWN@HORSE@MOUNTED_UNARMED"):
+		case joaat("script_respawn@horse@mounted_unarmed"):
 			return "HORSE@MOUNTED_UNARMED";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@crouch_admire_view@a"):
 			return "UNARMED@CROUCH_ADMIRE_VIEW@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_rhand@crouch_admire_view@a"):
 			return "LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_2hand@crouch_admire_view@a"):
 			return "LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED_HAT@SIT_WAKE_UP@A"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed_hat@sit_wake_up@a"):
 			return "UNARMED_HAT@SIT_WAKE_UP@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@lean_left_arms_crossed@a"):
 			return "UNARMED@LEAN_LEFT_ARMS_CROSSED@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@lean_left_arms_crossed@a"):
 			return "LHAND@LEAN_LEFT_ARMS_CROSSED@A";
 		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A"):
 			return "UNARMED@SIT_LEAN_FORWARDS@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@sit_lean_forwards@a"):
 			return "LONGARM_LHAND@SIT_LEAN_FORWARDS@A";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@CROUCH_ADMIRE_VIEW@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@crouch_admire_view@a@idles"):
 			return "UNARMED@CROUCH_ADMIRE_VIEW@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_RHAND@CROUCH_ADMIRE_VIEW@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_rhand@crouch_admire_view@a@idles"):
 			return "RHAND@CROUCH_ADMIRE_VIEW@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_2HAND@CROUCH_ADMIRE_VIEW@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_2hand@crouch_admire_view@a@idles"):
 			return "2HAND@CROUCH_ADMIRE_VIEW@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED_HAT@SIT_WAKE_UP@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed_hat@sit_wake_up@a@idles"):
 			return "UNARMED_HAT@SIT_WAKE_UP@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@LEAN_LEFT_ARMS_CROSSED@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@lean_left_arms_crossed@a@idles"):
 			return "UNARMED@LEAN_LEFT_ARMS_CROSSED@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@LEAN_LEFT_ARMS_CROSSED@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@lean_left_arms_crossed@a@idles"):
 			return "LHAND@LEAN_LEFT_ARMS_CROSSED@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@UNARMED@SIT_LEAN_FORWARDS@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@unarmed@sit_lean_forwards@a@idles"):
 			return "UNARMED@SIT_LEAN_FORWARDS@A@IDLES";
-		case joaat("SCRIPT_RESPAWN@LOOPING@HYBRID@GENERIC@LONGARM_LHAND@SIT_LEAN_FORWARDS@A@IDLES"):
+		case joaat("script_respawn@looping@hybrid@generic@longarm_lhand@sit_lean_forwards@a@idles"):
 			return "LHAND@SIT_LEAN_FORWARDS@A@IDLES";
 		default:
 			break;
@@ -3422,7 +3422,7 @@ int func_114(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("GreatPlains"):
+		case joaat("greatplains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -3430,17 +3430,17 @@ int func_114(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("Heartlands"):
+		case joaat("heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettMeadows"):
+		case joaat("scarlettmeadows"):
 			return 11;
-		case joaat("TallTrees"):
+		case joaat("talltrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("RioBravo"):
+		case joaat("riobravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -3745,31 +3745,31 @@ var func_120(int iParam0)
 	}
 	switch (iVar0)
 	{
-		case joaat("HIGHPRESSURE"):
-		case joaat("Clouds"):
-		case joaat("MISTY"):
-		case joaat("SUNNY"):
-		case joaat("SNOWCLEARING"):
+		case joaat("highpressure"):
+		case joaat("clouds"):
+		case joaat("misty"):
+		case joaat("sunny"):
+		case joaat("snowclearing"):
 			StringConCat(&cVar1, "_01Clear", 64);
 			break;
-		case joaat("DRIZZLE"):
+		case joaat("drizzle"):
 		case joaat("thunder"):
 		case joaat("overcast"):
-		case joaat("FOG"):
-		case joaat("SHOWER"):
-		case joaat("SNOW"):
+		case joaat("fog"):
+		case joaat("shower"):
+		case joaat("snow"):
 		case joaat("sleet"):
-		case joaat("SNOWLIGHT"):
+		case joaat("snowlight"):
 			StringConCat(&cVar1, "_03Clouds", 64);
 			break;
 		case joaat("sandstorm"):
-		case joaat("OVERCASTDARK"):
+		case joaat("overcastdark"):
 		case joaat("blizzard"):
-		case joaat("WHITEOUT"):
-		case joaat("HURRICANE"):
+		case joaat("whiteout"):
+		case joaat("hurricane"):
 		case joaat("rain"):
 		case joaat("hail"):
-		case joaat("THUNDERSTORM"):
+		case joaat("thunderstorm"):
 		case joaat("groundblizzard"):
 			StringConCat(&cVar1, "_04Storm", 64);
 			break;
@@ -4898,10 +4898,10 @@ int func_169(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("PLAYER_ZERO"):
-			return joaat("ARTHUR");
-		case joaat("Player_Three"):
-			return joaat("JOHN");
+		case joaat("player_zero"):
+			return joaat("arthur");
+		case joaat("player_three"):
+			return joaat("john");
 		default:
 			break;
 	}
@@ -4910,12 +4910,12 @@ int func_169(int iParam0)
 
 void func_170()
 {
-	if (func_169(ENTITY::GET_ENTITY_MODEL(Global_35)) == joaat("JOHN"))
+	if (func_169(ENTITY::GET_ENTITY_MODEL(Global_35)) == joaat("john"))
 	{
 		PED::_0x2B4CE170DE09F346(Global_35, joaat("dutch_gang"));
-		PED::_0x2B4CE170DE09F346(Global_35, joaat("JOHN"));
-		PED::_0x1E017404784AA6A3(Global_35, joaat("Player"));
-		PED::_0x1E017404784AA6A3(Global_35, joaat("PLAYER_JOHN"));
+		PED::_0x2B4CE170DE09F346(Global_35, joaat("john"));
+		PED::_0x1E017404784AA6A3(Global_35, joaat("player"));
+		PED::_0x1E017404784AA6A3(Global_35, joaat("player_john"));
 		PED::_0x1E017404784AA6A3(Global_35, 487851963);
 	}
 }
@@ -6887,7 +6887,7 @@ bool func_257(bool bParam0, int iParam1, bool bParam2)
 		return false;
 	}
 	iVar0 = func_185(bParam0);
-	if (iVar0 == joaat("Weapon"))
+	if (iVar0 == joaat("weapon"))
 	{
 		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, bParam0, 0, false))
 		{
@@ -6898,7 +6898,7 @@ bool func_257(bool bParam0, int iParam1, bool bParam2)
 			return false;
 		}
 	}
-	else if (iVar0 == joaat("AMMO"))
+	else if (iVar0 == joaat("ammo"))
 	{
 		if (!func_407(bParam0, 1))
 		{
@@ -10513,7 +10513,7 @@ int func_408(bool bParam0, bool bParam1, bool bParam2)
 		return 0;
 	}
 	iVar0 = func_185(bParam0);
-	if (iVar0 == joaat("AMMO") || (bParam1 && iVar0 == joaat("Weapon")))
+	if (iVar0 == joaat("ammo") || (bParam1 && iVar0 == joaat("weapon")))
 	{
 		bVar1 = func_529(bParam0, 1);
 		if (bVar1 != 0)
@@ -10521,7 +10521,7 @@ int func_408(bool bParam0, bool bParam1, bool bParam2)
 			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, bVar1);
 		}
 	}
-	else if (iVar0 == joaat("Weapon"))
+	else if (iVar0 == joaat("weapon"))
 	{
 		return func_533(bParam0, 0);
 	}
@@ -11076,7 +11076,7 @@ int func_438()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
@@ -12512,7 +12512,7 @@ float func_470()
 
 float func_471()
 {
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 0f;
 	}
@@ -13178,7 +13178,7 @@ void func_506(bool bParam0)
 	}
 	PED::_0xBCC76708E5677E1D(bParam0, 0);
 	PED::_0x931B241409216C1F(Global_35, bParam0, 0);
-	PED::_0xB8B6430EAD2D2437(bParam0, joaat("PLAYER_HORSE"));
+	PED::_0xB8B6430EAD2D2437(bParam0, joaat("player_horse"));
 	iVar1 = ENTITY::GET_ENTITY_MODEL(bParam0);
 	iVar2 = PED::_GET_DEFAULT_RELATIONSHIP_GROUP_HASH(iVar1);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(bParam0, iVar2);
@@ -13547,7 +13547,7 @@ void func_523(bool bParam0)
 	{
 	}
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_blankets"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_saddles"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLES"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_horns"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("saddle_stirrups"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("horse_bedrolls"), 0, false);
@@ -13777,11 +13777,11 @@ int func_529(bool bParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = func_185(bParam0);
-	if (iVar0 == joaat("Weapon") && WEAPON::IS_WEAPON_VALID(bParam0))
+	if (iVar0 == joaat("weapon") && WEAPON::IS_WEAPON_VALID(bParam0))
 	{
 		return WEAPON::_0x5C2EA6C44F515F34(bParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(bParam0))
+	else if (iVar0 == joaat("ammo") && WEAPON::_0x1F7977C9101F807F(bParam0))
 	{
 		return bParam0;
 	}
@@ -14219,13 +14219,13 @@ int func_557(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT_PC"):
-		case joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
-		case joaat("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC"):
-		case joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"):
-		case joaat("A_C_Horse_Andalusian_Perlino"):
-		case joaat("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC"):
-		case joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC"):
+		case joaat("a_c_horse_arabian_redchestnut_pc"):
+		case joaat("a_c_horse_kentuckysaddle_buttermilkbuckskin_pc"):
+		case joaat("a_c_horse_morgan_liverchestnut_pc"):
+		case joaat("a_c_horse_appaloosa_fewspotted_pc"):
+		case joaat("a_c_horse_andalusian_perlino"):
+		case joaat("a_c_horse_tennesseewalker_goldpalomino_pc"):
+		case joaat("a_c_horse_arabian_warpedbrindle_pc"):
 			return 1;
 	}
 	return 0;
@@ -14857,7 +14857,7 @@ int func_570()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
+	if (Global_40.f_39 == joaat("player_zero"))
 	{
 		return 1;
 	}
@@ -14871,7 +14871,7 @@ int func_571()
 
 int func_572()
 {
-	return joaat("A_C_Horse_TennesseeWalker_MahoganyBay");
+	return joaat("a_c_horse_tennesseewalker_mahoganybay");
 }
 
 int func_573()
@@ -14886,7 +14886,7 @@ int func_574()
 
 int func_575()
 {
-	return joaat("A_C_Horse_TennesseeWalker_Chestnut");
+	return joaat("a_c_horse_tennesseewalker_chestnut");
 }
 
 int func_576()
@@ -14901,7 +14901,7 @@ int func_577()
 
 int func_578()
 {
-	return joaat("A_C_Horse_John_EndlessSummer");
+	return joaat("a_c_horse_john_endlesssummer");
 }
 
 int func_579()
@@ -14916,7 +14916,7 @@ int func_580()
 
 int func_581()
 {
-	return joaat("A_C_Horse_TennesseeWalker_Chestnut");
+	return joaat("a_c_horse_tennesseewalker_chestnut");
 }
 
 int func_582()
@@ -14931,7 +14931,7 @@ int func_583()
 
 int func_584()
 {
-	return joaat("A_C_HORSE_Morgan_Bay");
+	return joaat("a_c_horse_morgan_bay");
 }
 
 int func_585()
@@ -14946,7 +14946,7 @@ int func_586()
 
 int func_587()
 {
-	return joaat("A_C_HORSE_KENTUCKYSADDLE_Grey");
+	return joaat("a_c_horse_kentuckysaddle_grey");
 }
 
 int func_588()
@@ -15067,11 +15067,11 @@ void func_594(bool bParam0, var uParam1, var uParam2)
 			break;
 		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
 			*uParam1 = joaat("pistol_ammo_box");
-			*uParam2 = joaat("AMMO_PISTOL");
+			*uParam2 = joaat("ammo_pistol");
 			break;
 		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
 			*uParam1 = joaat("pistol_ammo_box_used");
-			*uParam2 = joaat("AMMO_PISTOL");
+			*uParam2 = joaat("ammo_pistol");
 			break;
 		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
 			*uParam1 = joaat("pistol_ammo_box_express");
@@ -15083,11 +15083,11 @@ void func_594(bool bParam0, var uParam1, var uParam2)
 			break;
 		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
 			*uParam1 = joaat("rifle_ammo_box");
-			*uParam2 = joaat("AMMO_RIFLE");
+			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
 			*uParam1 = joaat("rifle_ammo_box_used");
-			*uParam2 = joaat("AMMO_RIFLE");
+			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
 			*uParam1 = joaat("rifle_ammo_box_express");
@@ -15115,11 +15115,11 @@ void func_594(bool bParam0, var uParam1, var uParam2)
 			break;
 		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
 			*uParam1 = joaat("shotgun_ammo_box");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
 			*uParam1 = joaat("shotgun_ammo_box_used");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case 305770744: /* GXTEntry: "Shotgun - Slug" */
 			*uParam1 = joaat("shotgun_ammo_box_slug");
@@ -15930,7 +15930,7 @@ int func_612(int iParam0)
 
 struct<4> func_613(bool bParam0)
 {
-	return func_610(joaat("CHARACTER"), func_638(), -1591664384, bParam0);
+	return func_610(joaat("character"), func_638(), -1591664384, bParam0);
 }
 
 int func_614(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4, var uParam5, int iParam6, bool bParam7)
@@ -16088,7 +16088,7 @@ int func_620(struct<4> Param0, struct<4> Param4, int iParam8, bool bParam9)
 	iVar60 = -1;
 	if (bParam9)
 	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar60, joaat("BASKET"), 1168099063))
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar60, joaat("basket"), 1168099063))
 		{
 			if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_ADD_ITEM(iVar60, &Var28, 16) && NETSHOPPING::_CASHINVENTORY_TRANSACTION_ADD_ITEM(iVar60, &Var44, 16))
 			{
@@ -16125,24 +16125,24 @@ int func_621(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("A_C_HORSE_GANG_BILL"):
-		case joaat("A_C_Horse_Gang_Sean"):
-		case joaat("A_C_Horse_Gang_John"):
-		case joaat("A_C_HORSE_GANG_KAREN"):
-		case joaat("A_C_HORSE_GANG_DUTCH"):
-		case joaat("A_C_Horse_EagleFlies"):
-		case joaat("A_C_HORSE_GANG_JAVIER"):
-		case joaat("A_C_HORSE_GANG_SADIE"):
-		case joaat("A_C_HORSE_GANG_LENNY"):
-		case joaat("A_C_HORSE_GANG_MICAH"):
-		case joaat("A_C_Horse_Gang_Hosea"):
-		case joaat("A_C_HORSE_GANG_SADIE_ENDLESSSUMMER"):
-		case joaat("A_C_HORSE_GANG_CHARLES"):
-		case joaat("A_C_HORSE_GANG_UNCLE_ENDLESSSUMMER"):
-		case joaat("A_C_HORSE_GANG_TRELAWNEY"):
-		case joaat("A_C_HORSE_GANG_KIERAN"):
-		case joaat("A_C_HORSE_GANG_UNCLE"):
-		case joaat("A_C_HORSE_GANG_CHARLES_ENDLESSSUMMER"):
+		case joaat("a_c_horse_gang_bill"):
+		case joaat("a_c_horse_gang_sean"):
+		case joaat("a_c_horse_gang_john"):
+		case joaat("a_c_horse_gang_karen"):
+		case joaat("a_c_horse_gang_dutch"):
+		case joaat("a_c_horse_eagleflies"):
+		case joaat("a_c_horse_gang_javier"):
+		case joaat("a_c_horse_gang_sadie"):
+		case joaat("a_c_horse_gang_lenny"):
+		case joaat("a_c_horse_gang_micah"):
+		case joaat("a_c_horse_gang_hosea"):
+		case joaat("a_c_horse_gang_sadie_endlesssummer"):
+		case joaat("a_c_horse_gang_charles"):
+		case joaat("a_c_horse_gang_uncle_endlesssummer"):
+		case joaat("a_c_horse_gang_trelawney"):
+		case joaat("a_c_horse_gang_kieran"):
+		case joaat("a_c_horse_gang_uncle"):
+		case joaat("a_c_horse_gang_charles_endlesssummer"):
 			return 1;
 	}
 	return 0;
@@ -16432,21 +16432,21 @@ int func_636(struct<4> Param0, int iParam4, bool bParam5)
 		return iVar0;
 	}
 	iVar15 = func_185(Var1.f_4);
-	if (iVar15 == joaat("HORSE"))
+	if (iVar15 == joaat("horse"))
 	{
 		Var16 = { func_649(Param0, 1) };
 		Var16.f_10 = iParam4;
-		iVar0 = func_650(joaat("UPDATE"), &Var16, bParam5);
+		iVar0 = func_650(joaat("update"), &Var16, bParam5);
 		if (iVar0 == -1)
 		{
 			return iVar0;
 		}
 	}
-	else if (iVar15 == joaat("CLOTHING"))
+	else if (iVar15 == joaat("clothing"))
 	{
 		Var44 = { func_651(Param0, 1) };
 		Var44.f_10 = iParam4;
-		iVar0 = func_652(joaat("UPDATE"), &Var44, bParam5);
+		iVar0 = func_652(joaat("update"), &Var44, bParam5);
 		if (iVar0 == -1)
 		{
 			return iVar0;
@@ -16456,7 +16456,7 @@ int func_636(struct<4> Param0, int iParam4, bool bParam5)
 	{
 		Var61 = { func_640(&Var1) };
 		Var61.f_10 = iParam4;
-		iVar0 = func_641(joaat("UPDATE"), &Var61, bParam5);
+		iVar0 = func_641(joaat("update"), &Var61, bParam5);
 		if (iVar0 == -1)
 		{
 			return iVar0;
@@ -16517,7 +16517,7 @@ int func_641(int iParam0, var uParam1, bool bParam2)
 	iVar0 = -1;
 	if (bParam2)
 	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("BASKET"), iParam0))
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("basket"), iParam0))
 		{
 			if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_ADD_ITEM(iVar0, uParam1, 16))
 			{
@@ -16679,7 +16679,7 @@ int func_650(int iParam0, var uParam1, bool bParam2)
 	iVar0 = -1;
 	if (bParam2)
 	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("BASKET"), iParam0))
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("basket"), iParam0))
 		{
 			if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_ADD_ITEM(iVar0, uParam1, 28))
 			{
@@ -16734,7 +16734,7 @@ int func_652(int iParam0, var uParam1, bool bParam2)
 	iVar0 = -1;
 	if (bParam2)
 	{
-		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("BASKET"), iParam0))
+		if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_START(&iVar0, joaat("basket"), iParam0))
 		{
 			if (NETSHOPPING::_CASHINVENTORY_TRANSACTION_ADD_ITEM(iVar0, uParam1, 17))
 			{

@@ -362,7 +362,7 @@ void func_7(int iParam0)
 			{
 				if (&Local_9.f_44[iVar3] == 0)
 				{
-					DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(uVar0, func_6(5), joaat("Unlocked"));
+					DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(uVar0, func_6(5), joaat("unlocked"));
 				}
 				else
 				{
@@ -400,7 +400,7 @@ char* func_8(int iParam0)
 	bVar3 = func_51(&(Local_9.f_4[iParam0]));
 	switch (iVar0)
 	{
-		case joaat("Unlocked"):
+		case joaat("unlocked"):
 			if (func_40(iVar1) || bVar3)
 			{
 				if (func_52(iVar1))
@@ -620,7 +620,7 @@ void func_15()
 								}
 								else if (func_20(iVar1))
 								{
-									DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[&Local_9.f_93[iVar3]]), func_6(5), joaat("Unlocked"));
+									DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[&Local_9.f_93[iVar3]]), func_6(5), joaat("unlocked"));
 								}
 								else
 								{
@@ -695,7 +695,7 @@ bool func_18(int iParam0)
 	{
 		return false;
 	}
-	return func_25(&(Local_9.f_4[iParam0])) == joaat("Unlocked");
+	return func_25(&(Local_9.f_4[iParam0])) == joaat("unlocked");
 }
 
 int func_19(int iParam0)
@@ -1373,7 +1373,7 @@ int func_39(int iParam0)
 			}
 			else if (func_20(iParam0))
 			{
-				return joaat("Unlocked");
+				return joaat("unlocked");
 			}
 			else
 			{
@@ -1399,7 +1399,7 @@ int func_39(int iParam0)
 			}
 			else
 			{
-				return joaat("Unlocked");
+				return joaat("unlocked");
 			}
 		}
 		else if (func_60(iParam0) != 0)
@@ -1410,7 +1410,7 @@ int func_39(int iParam0)
 			}
 			else
 			{
-				return joaat("Unlocked");
+				return joaat("unlocked");
 			}
 		}
 		else if (func_40(iParam0))
@@ -1422,12 +1422,12 @@ int func_39(int iParam0)
 			}
 			else
 			{
-				return joaat("Unlocked");
+				return joaat("unlocked");
 			}
 		}
 		else
 		{
-			return joaat("Unlocked");
+			return joaat("unlocked");
 		}
 	}
 	return 369178237;
@@ -1986,7 +1986,7 @@ void func_65(int iParam0, int iParam1, int iParam2)
 	iVar0 = func_25(&(Local_9.f_4[iParam0]));
 	if (iParam1 == 0)
 	{
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("Unlocked"));
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("unlocked"));
 		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(18), func_46(iParam1));
 		return;
 	}
@@ -1998,9 +1998,9 @@ void func_65(int iParam0, int iParam1, int iParam2)
 	}
 	if (func_20(iVar1))
 	{
-		if (iVar0 != joaat("Unlocked"))
+		if (iVar0 != joaat("unlocked"))
 		{
-			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("Unlocked"));
+			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("unlocked"));
 		}
 	}
 	else if (iVar0 != 1726108579)
@@ -2479,7 +2479,7 @@ bool func_92(int iParam0, int iParam1, bool bParam2)
 		return false;
 	}
 	iVar0 = func_104(iParam0);
-	if (iVar0 == joaat("Weapon"))
+	if (iVar0 == joaat("weapon"))
 	{
 		if (WEAPON::HAS_PED_GOT_WEAPON(Global_35, iParam0, 0, false))
 		{
@@ -2490,7 +2490,7 @@ bool func_92(int iParam0, int iParam1, bool bParam2)
 			return false;
 		}
 	}
-	else if (iVar0 == joaat("AMMO"))
+	else if (iVar0 == joaat("ammo"))
 	{
 		if (!func_105(iParam0, 1))
 		{
@@ -2798,7 +2798,7 @@ int func_106(int iParam0, bool bParam1, bool bParam2)
 		return 0;
 	}
 	iVar0 = func_104(iParam0);
-	if (iVar0 == joaat("AMMO") || (bParam1 && iVar0 == joaat("Weapon")))
+	if (iVar0 == joaat("ammo") || (bParam1 && iVar0 == joaat("weapon")))
 	{
 		iVar1 = func_117(iParam0, 1);
 		if (iVar1 != 0)
@@ -2806,7 +2806,7 @@ int func_106(int iParam0, bool bParam1, bool bParam2)
 			return WEAPON::GET_PED_AMMO_BY_TYPE(Global_35, iVar1);
 		}
 	}
-	else if (iVar0 == joaat("Weapon"))
+	else if (iVar0 == joaat("weapon"))
 	{
 		return func_122(iParam0, 0);
 	}
@@ -3036,11 +3036,11 @@ int func_117(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = func_104(iParam0);
-	if (iVar0 == joaat("Weapon") && WEAPON::IS_WEAPON_VALID(iParam0))
+	if (iVar0 == joaat("weapon") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
 		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("ammo") && WEAPON::_0x1F7977C9101F807F(iParam0))
 	{
 		return iParam0;
 	}
@@ -3250,11 +3250,11 @@ void func_132(int iParam0, var uParam1, var uParam2)
 			break;
 		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
 			*uParam1 = joaat("pistol_ammo_box");
-			*uParam2 = joaat("AMMO_PISTOL");
+			*uParam2 = joaat("ammo_pistol");
 			break;
 		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
 			*uParam1 = joaat("pistol_ammo_box_used");
-			*uParam2 = joaat("AMMO_PISTOL");
+			*uParam2 = joaat("ammo_pistol");
 			break;
 		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
 			*uParam1 = joaat("pistol_ammo_box_express");
@@ -3266,11 +3266,11 @@ void func_132(int iParam0, var uParam1, var uParam2)
 			break;
 		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
 			*uParam1 = joaat("rifle_ammo_box");
-			*uParam2 = joaat("AMMO_RIFLE");
+			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
 			*uParam1 = joaat("rifle_ammo_box_used");
-			*uParam2 = joaat("AMMO_RIFLE");
+			*uParam2 = joaat("ammo_rifle");
 			break;
 		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
 			*uParam1 = joaat("rifle_ammo_box_express");
@@ -3298,11 +3298,11 @@ void func_132(int iParam0, var uParam1, var uParam2)
 			break;
 		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
 			*uParam1 = joaat("shotgun_ammo_box");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
 			*uParam1 = joaat("shotgun_ammo_box_used");
-			*uParam2 = joaat("AMMO_SHOTGUN");
+			*uParam2 = joaat("ammo_shotgun");
 			break;
 		case 305770744: /* GXTEntry: "Shotgun - Slug" */
 			*uParam1 = joaat("shotgun_ammo_box_slug");
@@ -3439,7 +3439,7 @@ int func_140(int iParam0)
 
 struct<4> func_141(bool bParam0)
 {
-	return func_142(joaat("CHARACTER"), func_144(), -1591664384, bParam0);
+	return func_142(joaat("character"), func_144(), -1591664384, bParam0);
 }
 
 struct<4> func_142(int iParam0, var uParam1, int iParam2, bool bParam3, var uParam4, int iParam5, bool bParam6)

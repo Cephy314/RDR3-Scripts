@@ -50,7 +50,7 @@ void __EntryFunction__()
 	fLocal_16 = 1f;
 	iLocal_18 = 1;
 	iLocal_35 = 10;
-	iLocal_38 = joaat("S_M_M_PinLaw_01");
+	iLocal_38 = joaat("s_m_m_pinlaw_01");
 	uScriptParam_0 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -249,9 +249,9 @@ void func_6()
 	{
 		case 1:
 			func_21(&uLocal_44);
-			iLocal_39[0] = joaat("A_C_Horse_AmericanStandardbred_Black");
-			iLocal_39[1] = joaat("A_C_Horse_Mustang_GrulloDun");
-			iLocal_39[2] = joaat("A_C_Horse_Thoroughbred_BloodBay");
+			iLocal_39[0] = joaat("a_c_horse_americanstandardbred_black");
+			iLocal_39[1] = joaat("a_c_horse_mustang_grullodun");
+			iLocal_39[2] = joaat("a_c_horse_thoroughbred_bloodbay");
 			iLocal_33 = MISC::GET_RANDOM_INT_IN_RANGE(4, 7);
 			PED::_0xED9582B3DA8F02B4(14);
 			if (!func_22(135))
@@ -888,7 +888,7 @@ void func_33(int iParam0)
 	TASK::_0x9DE63896B176EA94(&(iLocal_47[iParam0]), false);
 	LAW::_0x819ADD5EF1742F47(&(iLocal_47[iParam0]), 1);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_47[iParam0]), 27, true);
-	PED::_0x712B2C2B2471B493(&(iLocal_47[iParam0]), joaat("Disabled"));
+	PED::_0x712B2C2B2471B493(&(iLocal_47[iParam0]), joaat("disabled"));
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(&(iLocal_47[iParam0]), false);
 	WEAPON::_GIVE_WEAPON_TO_PED_2(&(iLocal_47[iParam0]), joaat("GROUP_SNIPER"), 100, true, false, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 }
@@ -1887,7 +1887,7 @@ int func_59(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("GreatPlains"):
+		case joaat("greatplains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -1895,17 +1895,17 @@ int func_59(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("Heartlands"):
+		case joaat("heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettMeadows"):
+		case joaat("scarlettmeadows"):
 			return 11;
-		case joaat("TallTrees"):
+		case joaat("talltrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("RioBravo"):
+		case joaat("riobravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -2186,7 +2186,7 @@ void func_78(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

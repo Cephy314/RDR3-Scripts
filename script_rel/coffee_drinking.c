@@ -687,7 +687,7 @@ void func_23(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_52(func_55(joaat("used"), joaat("WHISKEY")), 1);
+			func_52(func_55(joaat("used"), joaat("whiskey")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
@@ -1284,7 +1284,7 @@ void func_54(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_55(joaat("EATEN"), func_100(iParam0)) };
+	Var0 = { func_55(joaat("eaten"), func_100(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
 	func_52(func_101(joaat("HERBS_EATEN")), iParam1);
 }
@@ -1304,7 +1304,7 @@ int func_56()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
@@ -2721,7 +2721,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 0f;
 	}

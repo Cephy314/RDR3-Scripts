@@ -211,7 +211,7 @@ void func_7(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_18(joaat("EATEN"), func_11(iParam0)) };
+	Var0 = { func_18(joaat("eaten"), func_11(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
 	func_20(func_19(joaat("HERBS_EATEN")), iParam1);
 }

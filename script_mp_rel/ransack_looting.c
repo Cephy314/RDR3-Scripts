@@ -2258,7 +2258,7 @@ int func_82(int iParam0)
 
 bool func_83(int iParam0)
 {
-	return func_88(iParam0) == joaat("Weapon");
+	return func_88(iParam0) == joaat("weapon");
 }
 
 bool func_84(int iParam0)

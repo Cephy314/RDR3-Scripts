@@ -4934,15 +4934,15 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
-							return joaat("s_brandy_Used01x");
+							return joaat("s_brandy_used01x");
 						case 3:
-							return joaat("s_brandy_Used01x");
+							return joaat("s_brandy_used01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
 							return joaat("s_brandy01x");
 						case 6:
@@ -4955,19 +4955,19 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
-							return joaat("s_inv_gin_Used01x");
+							return joaat("s_inv_gin_used01x");
 						case 3:
-							return joaat("s_inv_gin_Used01x");
+							return joaat("s_inv_gin_used01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
-							return joaat("s_inv_Gin01x");
+							return joaat("s_inv_gin01x");
 						case 6:
-							return joaat("s_inv_Gin01x");
+							return joaat("s_inv_gin01x");
 						default:
 							break;
 					}
@@ -4976,19 +4976,19 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
-							return joaat("s_inv_gin_Used01x");
+							return joaat("s_inv_gin_used01x");
 						case 3:
-							return joaat("s_inv_gin_Used01x");
+							return joaat("s_inv_gin_used01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
-							return joaat("s_inv_Gin01x");
+							return joaat("s_inv_gin01x");
 						case 6:
-							return joaat("s_inv_Gin01x");
+							return joaat("s_inv_gin01x");
 						default:
 							break;
 					}
@@ -4997,19 +4997,19 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
 							return joaat("s_inv_whiskey_used01x");
 						case 3:
 							return joaat("s_inv_whiskey_used01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
-							return joaat("S_INV_WHISKEY01X");
+							return joaat("s_inv_whiskey01x");
 						case 6:
-							return joaat("S_INV_WHISKEY01X");
+							return joaat("s_inv_whiskey01x");
 						default:
 							break;
 					}
@@ -5018,19 +5018,19 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
 							return joaat("s_inv_whiskey_used01x");
 						case 3:
 							return joaat("s_inv_whiskey_used01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
-							return joaat("S_INV_WHISKEY01X");
+							return joaat("s_inv_whiskey01x");
 						case 6:
-							return joaat("S_INV_WHISKEY01X");
+							return joaat("s_inv_whiskey01x");
 						default:
 							break;
 					}
@@ -5039,15 +5039,15 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
-							return joaat("s_brandy_Used01x");
+							return joaat("s_brandy_used01x");
 						case 3:
-							return joaat("s_inv_gin_Used01x");
+							return joaat("s_inv_gin_used01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
 							return joaat("s_sherry01x");
 						case 6:
@@ -5060,15 +5060,15 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
-							return joaat("s_inv_usedRum01x");
+							return joaat("s_inv_usedrum01x");
 						case 3:
-							return joaat("s_inv_usedRum01x");
+							return joaat("s_inv_usedrum01x");
 						case 4:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 5:
 							return joaat("s_inv_rum01x");
 						case 6:
@@ -5089,19 +5089,19 @@ int func_215(int iParam0)
 					switch (iParam0)
 					{
 						case 0:
-							return joaat("s_lootableMoneyBox");
+							return joaat("s_lootablemoneybox");
 						case 1:
-							return joaat("p_lantern05X");
+							return joaat("p_lantern05x");
 						case 2:
-							return joaat("P_FOLDEDBILLSSMALL01X");
+							return joaat("p_foldedbillssmall01x");
 						case 3:
-							return joaat("s_inv_pocketwatch03X");
+							return joaat("s_inv_pocketwatch03x");
 						case 4:
-							return joaat("s_inv_tonicHalf01x");
+							return joaat("s_inv_tonichalf01x");
 						case 5:
-							return joaat("s_inv_pocketwatch03X");
+							return joaat("s_inv_pocketwatch03x");
 						case 6:
-							return joaat("s_inv_tonicHalf01x");
+							return joaat("s_inv_tonichalf01x");
 						default:
 							break;
 					}
@@ -5136,7 +5136,7 @@ int func_217(int iParam0)
 			switch (iParam0)
 			{
 				case 0:
-					return joaat("RE_CRASHEDWAGON_MALES_01");
+					return joaat("re_crashedwagon_males_01");
 				default:
 					break;
 			}
@@ -9248,7 +9248,7 @@ int func_418(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case joaat("bounty_board"):
-		case joaat("Gun_for_Hire"):
+		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
 		case 78055447:
@@ -11473,7 +11473,7 @@ void func_518(struct<2> Param0)
 		{
 			if (Var0.f_29 == joaat("RACE_IMPROMPTU"))
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("RACE"));
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -14438,11 +14438,11 @@ int func_629(int iParam0)
 	{
 		return 0;
 	}
-	if (((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("Prop_human_sleep_bed_pillow")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT")) || iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))
+	if (((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT")) || iVar0 == joaat("Prop_player_sleep_tent_a_frame"))
 	{
 		return 1;
 	}
-	if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(iParam0);
 		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
@@ -15025,7 +15025,7 @@ int func_658(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("Challenge");
+			iVar0 = joaat("challenge");
 			break;
 		case -3:
 			iVar0 = 1300413597;
@@ -15034,7 +15034,7 @@ int func_658(int iParam0)
 			iVar0 = joaat("feature");
 			break;
 		case -2:
-			iVar0 = joaat("GOLD");
+			iVar0 = joaat("gold");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -15058,16 +15058,16 @@ int func_658(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("PROPERTY");
+			iVar0 = joaat("property");
 			break;
 		case 10:
-			iVar0 = joaat("RECIPE");
+			iVar0 = joaat("recipe");
 			break;
 		case 11:
-			iVar0 = joaat("Title");
+			iVar0 = joaat("title");
 			break;
 		case 12:
-			iVar0 = joaat("SHOP");
+			iVar0 = joaat("shop");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -15177,15 +15177,15 @@ int func_661(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("Blackjack"):
+		case joaat("blackjack"):
 			return 0;
-		case joaat("DOMINOES"):
+		case joaat("Dominoes"):
 			return 1;
-		case joaat("POKER"):
+		case joaat("Poker"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("MILKING_COW"):
+		case joaat("milking_cow"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -15203,7 +15203,7 @@ int func_662(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("Challenges"):
+		case joaat("challenges"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -15273,7 +15273,7 @@ int func_664(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("Null"):
+		case joaat("null"):
 			return -1;
 		case joaat("normal"):
 			return 0;
@@ -15289,17 +15289,17 @@ int func_664(int iParam0)
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("BountyHunter"):
+		case joaat("bountyhunter"):
 			return 7;
 		case joaat("Gunslinger"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("Hunter"):
+		case joaat("hunter"):
 			return 10;
 		case joaat("Trader"):
 			return 11;
-		case joaat("collector"):
+		case joaat("Collector"):
 			return 12;
 		case -218234180:
 			return 13;

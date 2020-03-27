@@ -75,7 +75,7 @@ void __EntryFunction__()
 					func_2(&Var0, 9650, vVar187, vVar181);
 					bVar192 = true;
 				}
-				else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("Detach")))
+				else if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("detach")))
 				{
 					ENTITY::DETACH_ENTITY(Var0.f_180, true, true);
 					bVar192 = false;
@@ -826,7 +826,7 @@ void func_26(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_54(func_57(joaat("used"), joaat("WHISKEY")), 1);
+			func_54(func_57(joaat("used"), joaat("whiskey")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
@@ -877,7 +877,7 @@ int func_27()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
@@ -1415,7 +1415,7 @@ void func_56(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_57(joaat("EATEN"), func_100(iParam0)) };
+	Var0 = { func_57(joaat("eaten"), func_100(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_54(func_101(joaat("HERBS_EATEN")), bParam1);
 }
@@ -2849,7 +2849,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 0f;
 	}

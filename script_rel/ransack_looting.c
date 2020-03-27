@@ -1337,7 +1337,7 @@ int func_41(int iParam0)
 	int iVar0;
 
 	iVar0 = 0;
-	if (func_35(3) && ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == joaat("P_DESK09bx"))
+	if (func_35(3) && ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == joaat("p_desk09bx"))
 	{
 		iVar0 = joaat("p_wnt4_drwdressing01x");
 	}

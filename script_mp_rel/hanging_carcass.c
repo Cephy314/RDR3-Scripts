@@ -294,12 +294,12 @@ int func_10(var uParam0)
 			{
 				case 0:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@DEER@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("A_C_DEER_01");
+					uParam0->f_38 = joaat("a_c_deer_01");
 					StringCopy(&(uParam0->f_30), "PD_Deer_aged_carcass_Hvy", 64);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@WOLF_MEDIUM@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("A_C_Wolf_Medium");
+					uParam0->f_38 = joaat("a_c_wolf_medium");
 					break;
 			}
 			uParam0->f_50 = 45454;
@@ -324,21 +324,21 @@ int func_10(var uParam0)
 			{
 				case 0:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@FOX@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("A_C_FOX_01");
+					uParam0->f_38 = joaat("a_c_fox_01");
 					StringCopy(&(uParam0->f_30), "PD_Small_aged_carcass_Hvy", 64);
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@RABBIT@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("A_C_RABBIT_01");
+					uParam0->f_38 = joaat("a_c_rabbit_01");
 					StringCopy(&(uParam0->f_30), "PD_Ex_Small_aged_carcass_Hvy", 64);
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_14), "CREATURES_BIRD@DUCK@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("a_c_Duck_01");
+					uParam0->f_38 = joaat("a_c_duck_01");
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 14285;
 					break;
@@ -349,10 +349,10 @@ int func_10(var uParam0)
 			switch (iVar9)
 			{
 				case 0:
-					uParam0->f_38 = joaat("A_C_FISHRAINBOWTROUT_01_MS");
+					uParam0->f_38 = joaat("a_c_fishrainbowtrout_01_ms");
 					break;
 				case 1:
-					uParam0->f_38 = joaat("A_C_FISHSALMONSOCKEYE_01_MS");
+					uParam0->f_38 = joaat("a_c_fishsalmonsockeye_01_ms");
 					break;
 			}
 			uParam0->f_55 = 3;
@@ -844,11 +844,11 @@ void func_32(var uParam0)
 	vVar8 = { 0f, 90f, 0f };
 	switch (uParam0->f_38)
 	{
-		case joaat("A_C_FOX_01"):
+		case joaat("a_c_fox_01"):
 			vVar5 = { -0.0125f, -0.03f, 0.0125f };
 			vVar8 = { 90f, 0f, 90f };
 			break;
-		case joaat("A_C_RABBIT_01"):
+		case joaat("a_c_rabbit_01"):
 			vVar2 = { -0.0125f, 0f, -0.025f };
 			vVar8 = { 0f, 90f, 0f };
 			break;
@@ -949,7 +949,7 @@ int func_36(int iParam0)
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("GreatPlains"):
+		case joaat("greatplains"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -957,17 +957,17 @@ int func_36(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("Heartlands"):
+		case joaat("heartlands"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettMeadows"):
+		case joaat("scarlettmeadows"):
 			return 11;
-		case joaat("TallTrees"):
+		case joaat("talltrees"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("RioBravo"):
+		case joaat("riobravo"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -1113,7 +1113,7 @@ void func_42(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

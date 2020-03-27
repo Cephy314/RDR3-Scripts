@@ -421,7 +421,7 @@ void func_14(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -2954,7 +2954,7 @@ int func_67()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("Player_Three"))
+	if (Global_40.f_39 == joaat("player_three"))
 	{
 		return 1;
 	}
@@ -4577,33 +4577,33 @@ int func_119(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("u_m_M_BHT_BENEDICTALLBRIGHT"):
+		case joaat("u_m_m_bht_benedictallbright"):
 			return 2;
-		case joaat("U_F_M_BHT_WIFE"):
+		case joaat("u_f_m_bht_wife"):
 			return 3;
-		case joaat("U_M_M_BHT_STRAWBERRYDUEL"):
+		case joaat("u_m_m_bht_strawberryduel"):
 			return 4;
-		case joaat("U_M_M_HtlRancherBounty_01"):
+		case joaat("u_m_m_htlrancherbounty_01"):
 			return 6;
-		case joaat("U_M_M_BHT_SHACKESCAPE"):
+		case joaat("u_m_m_bht_shackescape"):
 			return 8;
-		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
+		case joaat("u_m_m_uniexconfedsbounty_01"):
 			return 9;
-		case joaat("CS_ANTONYFOREMEN"):
+		case joaat("cs_antonyforemen"):
 			return 10;
-		case joaat("U_M_M_BHT_SKINNERSEARCH"):
+		case joaat("u_m_m_bht_skinnersearch"):
 			return 11;
-		case joaat("U_M_M_BHT_SKINNERBROTHER"):
+		case joaat("u_m_m_bht_skinnerbrother"):
 			return 12;
-		case joaat("U_M_M_BHT_BANDITOSHACK"):
+		case joaat("u_m_m_bht_banditoshack"):
 			return 14;
-		case joaat("U_M_M_BHT_BANDITOMINE"):
+		case joaat("u_m_m_bht_banditomine"):
 			return 15;
-		case joaat("U_M_M_BHT_LARAMIESLEEPING"):
+		case joaat("u_m_m_bht_laramiesleeping"):
 			return 5;
-		case joaat("U_M_M_BHT_EXCONFEDCAMPRETURN"):
+		case joaat("u_m_m_bht_exconfedcampreturn"):
 			return 7;
-		case joaat("U_M_M_BHT_BLACKWATERHUNT"):
+		case joaat("u_m_m_bht_blackwaterhunt"):
 			return 13;
 		default:
 			break;
@@ -7097,11 +7097,11 @@ int func_236(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("Prop_human_sleep_bed_pillow")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
-	if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
 		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
