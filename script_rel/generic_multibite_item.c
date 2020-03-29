@@ -653,7 +653,7 @@ void func_22(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (bParam3 || func_8(iParam0, -537818634))
 	{
-		func_50(func_49(joaat("medicine_items_used")), 1);
+		func_50(func_49(joaat("MEDICINE_ITEMS_USED")), 1);
 	}
 	if (func_8(iParam0, -1457797660))
 	{
@@ -665,60 +665,60 @@ void func_22(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (func_8(iParam0, 1939071949))
 	{
-		func_50(func_53(joaat("used"), joaat("TONIC")), 1);
+		func_50(func_53(joaat("USED"), joaat("TONIC")), 1);
 	}
 	switch (iParam0)
 	{
 		case joaat("CONSUMABLE_OAT_CAKES"):
 		case joaat("CONSUMABLE_SUGARCUBE"):
 		case joaat("CONSUMABLE_HAYCUBE"):
-			func_50(func_53(joaat("used"), joaat("FEED_BAG")), 1);
+			func_50(func_53(joaat("USED"), joaat("FEED_BAG")), 1);
 			break;
 	}
 	switch (iParam0)
 	{
 		case joaat("CONSUMABLE_MOONSHINE"):
-			func_50(func_53(joaat("used"), joaat("MOONSHINE")), 1);
+			func_50(func_53(joaat("USED"), joaat("MOONSHINE")), 1);
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_50(func_53(joaat("used"), joaat("whiskey")), 1);
+			func_50(func_53(joaat("USED"), joaat("WHISKEY")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
-			func_50(func_53(joaat("used"), joaat("COCAINE_GUM")), 1);
+			func_50(func_53(joaat("USED"), joaat("COCAINE_GUM")), 1);
 			break;
 		case joaat("CONSUMABLE_SNAKE_OIL"):
 		case joaat("CONSUMABLE_POTENT_SNAKE_OIL"):
 		case joaat("CONSUMABLE_SNAKE_OIL_USED"):
-			func_50(func_53(joaat("used"), joaat("SNAKE_OIL")), 1);
+			func_50(func_53(joaat("USED"), joaat("SNAKE_OIL")), 1);
 			break;
 		case joaat("CONSUMABLE_CHEWING_TOBACCO"):
 		case joaat("CONSUMABLE_CHEWING_TOBACCO_USED"):
-			func_50(func_53(joaat("used"), joaat("CHEWING_TOBACCO")), 1);
+			func_50(func_53(joaat("USED"), joaat("CHEWING_TOBACCO")), 1);
 			break;
 		case joaat("CONSUMABLE_HORSE_MEDICINE"):
 		case joaat("CONSUMABLE_HORSE_MEDICINE_USED"):
-			func_50(func_53(joaat("used"), joaat("HORSE_PILLS")), 1);
+			func_50(func_53(joaat("USED"), joaat("HORSE_PILLS")), 1);
 			break;
 		case 433340626: /* GXTEntry: "Opened Cover Scent" */
 		case 1895068170: /* GXTEntry: "Cover Scent Lotion" */
-			func_50(func_53(joaat("used"), joaat("COVER_SCENT")), 1);
+			func_50(func_53(joaat("USED"), joaat("COVER_SCENT")), 1);
 			break;
 		case joaat("CONSUMABLE_HERBIVORE_BAIT"):
 		case joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT"):
-			func_50(func_53(joaat("used"), joaat("POTENT_HERBIVORE_BAIT")), 1);
+			func_50(func_53(joaat("USED"), joaat("POTENT_HERBIVORE_BAIT")), 1);
 			break;
 		case joaat("CONSUMABLE_PREDATOR_BAIT"):
 		case joaat("CONSUMABLE_POTENT_PREDATOR_BAIT"):
-			func_50(func_53(joaat("used"), joaat("POTENT_PREDATOR_BAIT")), 1);
+			func_50(func_53(joaat("USED"), joaat("POTENT_PREDATOR_BAIT")), 1);
 			break;
 	}
 	if (func_23() == -1)
 	{
 		if (iParam0 == -1976480343)
 		{
-			func_50(func_53(joaat("used"), joaat("SPECIAL_TONIC")), 1);
+			func_50(func_53(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam2)
@@ -1267,7 +1267,7 @@ void func_52(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_53(joaat("eaten"), func_98(iParam0)) };
+	Var0 = { func_53(joaat("EATEN"), func_98(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_50(func_99(joaat("HERBS_EATEN")), bParam1);
 }
@@ -1287,7 +1287,7 @@ int func_54()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -2704,7 +2704,7 @@ float func_132()
 
 float func_133()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 0f;
 	}

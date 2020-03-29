@@ -597,7 +597,7 @@ void func_14(int iParam0)
 	func_49(-1874862635, bVar0, 0f, 0, 0, 0, 1, 0);
 	bVar1 = VOLUME::_CREATE_VOLUME_BOX(1010.465f, -1772.747f, 54.474f, 0f, 0f, 0f, 46.182f, 45.55f, 29.43f);
 	iVar2 = ITEMSET::CREATE_ITEMSET(true);
-	iVar3 = ENTITY::_0x84CCF9A12942C83D(bVar1, iVar2, 3, 1, joaat("p_win_jtxl_dirty01x"), 0);
+	iVar3 = ENTITY::_0x84CCF9A12942C83D(bVar1, iVar2, 3, 1, joaat("P_WIN_JTXL_DIRTY01X"), 0);
 	iVar4 = 0;
 	while (iVar4 < iVar3)
 	{
@@ -1426,7 +1426,7 @@ void func_70(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_123(Global_1935630, 8192);
-	func_125(func_124(-1532769513, joaat("areas")), 1);
+	func_125(func_124(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1771,14 +1771,14 @@ int func_77(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -4554,7 +4554,7 @@ int func_146()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

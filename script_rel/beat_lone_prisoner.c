@@ -623,9 +623,9 @@ void func_10()
 	if (iLocal_675 == 0)
 	{
 		iLocal_675 = 1;
-		if (MISC::_0x0D0AE5081F88CFE1(joaat("a_m_m_skpprisonline_01")))
+		if (MISC::_0x0D0AE5081F88CFE1(joaat("A_M_M_SKPPRISONLINE_01")))
 		{
-			MISC::_0x154340E87D8CC178(joaat("a_m_m_skpprisonline_01"));
+			MISC::_0x154340E87D8CC178(joaat("A_M_M_SKPPRISONLINE_01"));
 		}
 		func_53("PRIS_SHOOT_CHAIN", 1);
 		if (VOLUME::_DOES_VOLUME_EXIST(bLocal_491))
@@ -2881,14 +2881,14 @@ void func_65()
 		case 1:
 		case 4:
 		case 9:
-			(Local_422[0 /*32*/])->f_1 = joaat("re_loneprisoner_males_01");
+			(Local_422[0 /*32*/])->f_1 = joaat("RE_LONEPRISONER_MALES_01");
 			(Local_422[0 /*32*/])->f_3 = 629490500;
 			StringCopy(&((Local_422[0 /*32*/])->f_23), "1057_G_M_M_UniCriminals_01_WHITE_04", 64);
 			break;
 		case 0:
 		case 2:
 		case 11:
-			(Local_422[0 /*32*/])->f_1 = joaat("re_loneprisoner_males_01");
+			(Local_422[0 /*32*/])->f_1 = joaat("RE_LONEPRISONER_MALES_01");
 			(Local_422[0 /*32*/])->f_3 = 937486331;
 			StringCopy(&((Local_422[0 /*32*/])->f_23), "1056_G_M_M_UniCriminals_01_WHITE_03", 64);
 			break;
@@ -3277,7 +3277,7 @@ void func_83(int iParam0)
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		DECORATOR::DECOR_SET_BOOL(iParam0, "scripted_loot_only", true);
-		ENTITY::_0x8C03CD6B5E0E85E8(iParam0, joaat("empty"));
+		ENTITY::_0x8C03CD6B5E0E85E8(iParam0, joaat("EMPTY"));
 	}
 }
 
@@ -3288,7 +3288,7 @@ bool func_84(int iParam0, int iParam1)
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0) && ENTITY::IS_ENTITY_A_PED(iParam0))
 	{
 		iVar0 = func_265(iParam0);
-		return func_266(iParam0, joaat("currency_cash"), iParam1, iVar0);
+		return func_266(iParam0, joaat("CURRENCY_CASH"), iParam1, iVar0);
 	}
 	return DECORATOR::DECOR_SET_INT(iParam0, "loot_money", iParam1);
 }
@@ -3323,7 +3323,7 @@ void func_87(var uParam0)
 	uParam0->f_3 = 0f;
 	uParam0->f_4 = 1f;
 	uParam0->f_5 = 1f;
-	uParam0->f_16 = joaat("FacialOnly_filter");
+	uParam0->f_16 = joaat("FACIALONLY_FILTER");
 	uParam0->f_17 = 0f;
 	uParam0->f_18 = 0.5f;
 	uParam0->f_19 = -1;
@@ -5366,16 +5366,16 @@ void func_143()
 	switch (iLocal_687)
 	{
 		case 0:
-			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("MoodDefuse"), 6);
+			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("MOODDEFUSE"), 6);
 			break;
 		case 1:
-			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("moodhappy"), 6);
+			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("MOODHAPPY"), 6);
 			break;
 		case 2:
-			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("moodnormal"), 6);
+			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("MOODNORMAL"), 6);
 			break;
 		case 3:
-			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("MoodScared"), 6);
+			PED::_0x8B3B71C80A29A4BB(&(uLocal_484[0]), joaat("MOODSCARED"), 6);
 			break;
 	}
 }
@@ -5737,12 +5737,12 @@ void func_147()
 				if (bLocal_195)
 				{
 					sLocal_686 = "RE_LP_PLN_V1_HR_ABERDEEN";
-					iLocal_663 = joaat("re_lp_pln_v1_hr_aberdeen");
+					iLocal_663 = joaat("RE_LP_PLN_V1_HR_ABERDEEN");
 				}
 				else if (bLocal_196)
 				{
 					sLocal_686 = "RE_LP_LWL_V1_HR_ABERDEEN";
-					iLocal_663 = joaat("re_lp_lwl_v1_hr_aberdeen");
+					iLocal_663 = joaat("RE_LP_LWL_V1_HR_ABERDEEN");
 				}
 				break;
 			case 3:
@@ -7394,7 +7394,7 @@ int func_216()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -7871,7 +7871,7 @@ int func_226(var uParam0, var uParam1)
 {
 	if (func_75(uParam0->f_3, 16777216))
 	{
-		if (func_428(*uParam1) != -1 || ENTITY::GET_ENTITY_MODEL(*uParam1) == joaat("g_m_m_unibrontegoons_01"))
+		if (func_428(*uParam1) != -1 || ENTITY::GET_ENTITY_MODEL(*uParam1) == joaat("G_M_M_UNIBRONTEGOONS_01"))
 		{
 			return 1;
 		}
@@ -10713,7 +10713,7 @@ int func_291(int iParam0)
 	{
 		return 1;
 	}
-	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(iParam0);
 		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
@@ -13022,7 +13022,7 @@ void func_366(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 	{
 		if (iParam0 > 0)
 		{
-			func_542(func_541(joaat("honor_positive_total")), 1);
+			func_542(func_541(joaat("HONOR_POSITIVE_TOTAL")), 1);
 			Global_1347477->f_204 = 1;
 			if (ENTITY::DOES_ENTITY_EXIST(iParam5))
 			{
@@ -13055,7 +13055,7 @@ void func_366(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 		}
 		else
 		{
-			func_542(func_541(joaat("honor_negative_total")), 1);
+			func_542(func_541(joaat("HONOR_NEGATIVE_TOTAL")), 1);
 			Global_1347477->f_204 = 0;
 			if (!bParam1)
 			{
@@ -13083,7 +13083,7 @@ void func_366(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 			}
 		}
 	}
-	Var8 = { func_541(joaat("honor_current")) };
+	Var8 = { func_541(joaat("HONOR_CURRENT")) };
 	STATS::STAT_ID_SET_INT(&Var8, Global_40.f_11095.f_35, true);
 	if (!bParam1)
 	{
@@ -13698,11 +13698,11 @@ int func_387(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return joaat("itemtype_player_stamina");
+			return joaat("ITEMTYPE_PLAYER_STAMINA");
 		case 0:
-			return joaat("itemtype_player_health");
+			return joaat("ITEMTYPE_PLAYER_HEALTH");
 		case 2:
-			return joaat("itemtype_player_deadeye");
+			return joaat("ITEMTYPE_PLAYER_DEADEYE");
 		default:
 			break;
 	}
@@ -16321,14 +16321,14 @@ int func_464(int iParam0, int iParam1)
 	}
 	switch (iParam0)
 	{
-		case joaat("u_m_m_nbxbrontegoon_01"):
-		case joaat("g_m_m_uniswamp_01"):
-		case joaat("u_m_m_nbxbrontesecform_01"):
-		case joaat("u_m_m_nbxbronteasc_01"):
-		case joaat("g_m_m_unibrontegoons_01"):
+		case joaat("U_M_M_NBXBRONTEGOON_01"):
+		case joaat("G_M_M_UNISWAMP_01"):
+		case joaat("U_M_M_NBXBRONTESECFORM_01"):
+		case joaat("U_M_M_NBXBRONTEASC_01"):
+		case joaat("G_M_M_UNIBRONTEGOONS_01"):
 			return 1;
-		case joaat("g_m_m_unicriminals_02"):
-		case joaat("g_m_m_unicriminals_01"):
+		case joaat("G_M_M_UNICRIMINALS_02"):
+		case joaat("G_M_M_UNICRIMINALS_01"):
 			return iParam1;
 		default:
 			break;
@@ -16603,7 +16603,7 @@ int func_478(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
 	return 1;
 }
 
@@ -16714,7 +16714,7 @@ int func_486(int iParam0)
 		case 1:
 			return joaat("GANG_INBRED");
 		case 0:
-			return joaat("Gang_ODriscoll");
+			return joaat("GANG_ODRISCOLL");
 		case 4:
 			return joaat("GANG_RANCHERS");
 		case 3:
@@ -16773,12 +16773,12 @@ int func_492(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("overcast"):
-		case joaat("highpressure"):
-		case joaat("overcastdark"):
-		case joaat("clouds"):
-		case joaat("misty"):
-		case joaat("sunny"):
+		case joaat("OVERCAST"):
+		case joaat("HIGHPRESSURE"):
+		case joaat("OVERCASTDARK"):
+		case joaat("CLOUDS"):
+		case joaat("MISTY"):
+		case joaat("SUNNY"):
 			return 1;
 		default:
 			break;
@@ -16790,14 +16790,14 @@ int func_493(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -16809,11 +16809,11 @@ int func_494(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("snow"):
-		case joaat("snowlight"):
-		case joaat("blizzard"):
-		case joaat("whiteout"):
-		case joaat("snowclearing"):
+		case joaat("SNOW"):
+		case joaat("SNOWLIGHT"):
+		case joaat("BLIZZARD"):
+		case joaat("WHITEOUT"):
+		case joaat("SNOWCLEARING"):
 			return 1;
 		default:
 			break;
@@ -16825,7 +16825,7 @@ int func_495(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("fog"):
+		case joaat("FOG"):
 			return 1;
 		default:
 			break;
@@ -16837,9 +16837,9 @@ int func_496(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("misty"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("MISTY"):
 			return 1;
 		default:
 			break;
@@ -16851,8 +16851,8 @@ int func_497(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("snowlight"):
-		case joaat("snowclearing"):
+		case joaat("SNOWLIGHT"):
+		case joaat("SNOWCLEARING"):
 			return 1;
 		default:
 			break;
@@ -16864,7 +16864,7 @@ int func_498(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("sandstorm"):
+		case joaat("SANDSTORM"):
 			return 1;
 		default:
 			break;
@@ -16984,13 +16984,13 @@ int func_507(int iParam0)
 		INTERIOR::_GET_INTERIOR_INFO(iParam0, &uVar0, &iVar3);
 		switch (iVar3)
 		{
-			case joaat("l_14_cave_int"):
-			case joaat("gap_mine_int"):
+			case joaat("L_14_CAVE_INT"):
+			case joaat("GAP_MINE_INT"):
 			case -1269216817:
-			case joaat("m05_bearcave_main"):
-			case joaat("elh_seacaves_int"):
-			case joaat("bea_01_int"):
-			case joaat("agu_fus_cave_int"):
+			case joaat("M05_BEARCAVE_MAIN"):
+			case joaat("ELH_SEACAVES_INT"):
+			case joaat("BEA_01_INT"):
+			case joaat("AGU_FUS_CAVE_INT"):
 			case 1633500362:
 				return 1;
 		}
@@ -17008,19 +17008,19 @@ int func_508(int iParam0)
 		INTERIOR::_GET_INTERIOR_INFO(iParam0, &uVar0, &iVar3);
 		switch (iVar3)
 		{
-			case joaat("q0304_tunnel_ent"):
-			case joaat("j_10p_tunnel_1a_int"):
-			case joaat("bac_tunnelcurve_int"):
-			case joaat("q0304_tunnel_int"):
-			case joaat("l_08_train_tunnel2_int"):
-			case joaat("bac_tunnelexit_int"):
-			case joaat("bac_tunnelent_int"):
-			case joaat("j_14_tunnel01_int"):
+			case joaat("Q0304_TUNNEL_ENT"):
+			case joaat("J_10P_TUNNEL_1A_INT"):
+			case joaat("BAC_TUNNELCURVE_INT"):
+			case joaat("Q0304_TUNNEL_INT"):
+			case joaat("L_08_TRAIN_TUNNEL2_INT"):
+			case joaat("BAC_TUNNELEXIT_INT"):
+			case joaat("BAC_TUNNELENT_INT"):
+			case joaat("J_14_TUNNEL01_INT"):
 			case 653987431:
-			case joaat("bac_tunnel_int"):
-			case joaat("hea_tunnel_01"):
-			case joaat("hea_tunnel_02"):
-			case joaat("q0304_tunnel_exit"):
+			case joaat("BAC_TUNNEL_INT"):
+			case joaat("HEA_TUNNEL_01"):
+			case joaat("HEA_TUNNEL_02"):
+			case joaat("Q0304_TUNNEL_EXIT"):
 			case 1911907177:
 				return 1;
 		}
@@ -17608,15 +17608,15 @@ int func_530(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bayounwa"):
+		case joaat("BAYOUNWA"):
 			return 0;
-		case joaat("bigvalley"):
+		case joaat("BIGVALLEY"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GREATPLAINS"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -17624,17 +17624,17 @@ int func_530(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("HEARTLANDS"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TALLTREES"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RIOBRAVO"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -18230,13 +18230,13 @@ int func_550(int iParam0)
 						case 13:
 							return -108185610;
 						case 14:
-							return joaat("re_lp_pln_v1_hr_catfish");
+							return joaat("RE_LP_PLN_V1_HR_CATFISH");
 						case 15:
-							return joaat("re_lp_pln_v1_hr_chez");
+							return joaat("RE_LP_PLN_V1_HR_CHEZ");
 						case 16:
-							return joaat("re_lp_pln_v1_hr_rocky");
+							return joaat("RE_LP_PLN_V1_HR_ROCKY");
 						case 17:
-							return joaat("re_lp_pln_v1_hr_watson");
+							return joaat("RE_LP_PLN_V1_HR_WATSON");
 						case 18:
 							return 1816675293;
 						case 19:
@@ -18246,7 +18246,7 @@ int func_550(int iParam0)
 						case 21:
 							return 799422712;
 						case 22:
-							return joaat("re_lp_pln_v1_hr_aberdeen");
+							return joaat("RE_LP_PLN_V1_HR_ABERDEEN");
 					}
 					break;
 				case 1:
@@ -18281,13 +18281,13 @@ int func_550(int iParam0)
 						case 13:
 							return -108185610;
 						case 14:
-							return joaat("re_lp_pln_v1_hr_catfish");
+							return joaat("RE_LP_PLN_V1_HR_CATFISH");
 						case 15:
-							return joaat("re_lp_pln_v1_hr_chez");
+							return joaat("RE_LP_PLN_V1_HR_CHEZ");
 						case 16:
-							return joaat("re_lp_pln_v1_hr_rocky");
+							return joaat("RE_LP_PLN_V1_HR_ROCKY");
 						case 17:
-							return joaat("re_lp_pln_v1_hr_watson");
+							return joaat("RE_LP_PLN_V1_HR_WATSON");
 						case 18:
 							return 1816675293;
 						case 19:
@@ -18297,7 +18297,7 @@ int func_550(int iParam0)
 						case 21:
 							return 799422712;
 						case 22:
-							return joaat("re_lp_pln_v1_hr_aberdeen");
+							return joaat("RE_LP_PLN_V1_HR_ABERDEEN");
 					}
 					break;
 			}
@@ -18337,15 +18337,15 @@ int func_550(int iParam0)
 						case 12:
 							return 1914467392;
 						case 13:
-							return joaat("re_lp_lwl_v1_hr_catfish");
+							return joaat("RE_LP_LWL_V1_HR_CATFISH");
 						case 14:
-							return joaat("re_lp_lwl_v1_hr_catfish");
+							return joaat("RE_LP_LWL_V1_HR_CATFISH");
 						case 15:
-							return joaat("re_lp_lwl_v1_hr_chez");
+							return joaat("RE_LP_LWL_V1_HR_CHEZ");
 						case 16:
-							return joaat("re_lp_lwl_v1_hr_rocky");
+							return joaat("RE_LP_LWL_V1_HR_ROCKY");
 						case 17:
-							return joaat("re_lp_lwl_v1_hr_watson");
+							return joaat("RE_LP_LWL_V1_HR_WATSON");
 						case 18:
 							return 339201214;
 						case 19:
@@ -18355,7 +18355,7 @@ int func_550(int iParam0)
 						case 21:
 							return 799422712;
 						case 22:
-							return joaat("re_lp_lwl_v1_hr_aberdeen");
+							return joaat("RE_LP_LWL_V1_HR_ABERDEEN");
 					}
 					break;
 				case 1:
@@ -18388,15 +18388,15 @@ int func_550(int iParam0)
 						case 12:
 							return 1914467392;
 						case 13:
-							return joaat("re_lp_lwl_v1_hr_catfish");
+							return joaat("RE_LP_LWL_V1_HR_CATFISH");
 						case 14:
-							return joaat("re_lp_lwl_v1_hr_catfish");
+							return joaat("RE_LP_LWL_V1_HR_CATFISH");
 						case 15:
-							return joaat("re_lp_lwl_v1_hr_chez");
+							return joaat("RE_LP_LWL_V1_HR_CHEZ");
 						case 16:
-							return joaat("re_lp_lwl_v1_hr_rocky");
+							return joaat("RE_LP_LWL_V1_HR_ROCKY");
 						case 17:
-							return joaat("re_lp_lwl_v1_hr_watson");
+							return joaat("RE_LP_LWL_V1_HR_WATSON");
 						case 18:
 							return 339201214;
 						case 19:
@@ -18406,7 +18406,7 @@ int func_550(int iParam0)
 						case 21:
 							return 799422712;
 						case 22:
-							return joaat("re_lp_lwl_v1_hr_aberdeen");
+							return joaat("RE_LP_LWL_V1_HR_ABERDEEN");
 					}
 					break;
 			}
@@ -18504,7 +18504,7 @@ void func_553(int iParam0, bool bParam1)
 	{
 		return;
 	}
-	func_677(sVar1, 0, iVar3, iVar2, joaat("player_menu"), 0, -1, -2, func_68(), "robbery_tip_wipe_on", 0, 0, 1, 1, 1);
+	func_677(sVar1, 0, iVar3, iVar2, joaat("PLAYER_MENU"), 0, -1, -2, func_68(), "robbery_tip_wipe_on", 0, 0, 1, 1, 1);
 	func_678(iParam0, 1073741824 /* Float: 2f */);
 	func_597(0, -1);
 }
@@ -18802,7 +18802,7 @@ void func_565(int iParam0, int iParam1, int iParam2)
 		Var10.f_5 = func_689(iParam0);
 		UILOG::_UILOG_POST_NOTIFICATION(&Var10);
 	}
-	func_691(sVar7, sVar1, iVar8, iVar9, joaat("stats_menu"), "INPUT_FEED_INTERACT_GENERIC", func_690(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
+	func_691(sVar7, sVar1, iVar8, iVar9, joaat("STATS_MENU"), "INPUT_FEED_INTERACT_GENERIC", func_690(iParam0), -2, sVar5, sVar6, 0, 0, 1, 1);
 }
 
 void func_566(int iParam0, int iParam1)
@@ -19679,39 +19679,39 @@ int func_622(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("g_m_m_uniduster_03"):
-		case joaat("u_m_m_unidusterhenchman_03"):
-		case joaat("g_m_m_uniduster_04"):
-		case joaat("u_m_m_unidusterhenchman_02"):
-		case joaat("g_m_m_uniduster_02"):
-		case joaat("u_m_m_fatduster_01"):
-		case joaat("u_m_m_unidusterhenchman_01"):
-		case joaat("g_m_m_uniduster_01"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("g_f_m_uniduster_01"):
-		case joaat("u_m_m_unidusterleader_01"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("g_m_m_uniduster_05"):
-		case joaat("cs_disguisedduster_02"):
+		case joaat("G_M_M_UNIDUSTER_03"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_03"):
+		case joaat("G_M_M_UNIDUSTER_04"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_02"):
+		case joaat("G_M_M_UNIDUSTER_02"):
+		case joaat("U_M_M_FATDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_01"):
+		case joaat("G_M_M_UNIDUSTER_01"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("G_F_M_UNIDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERLEADER_01"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("G_M_M_UNIDUSTER_05"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
 			return 0;
-		case joaat("g_m_y_uniexconfeds_02"):
-		case joaat("g_m_y_uniexconfeds_01"):
-		case joaat("g_m_o_uniexconfeds_01"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("u_m_m_uniexconfedsbounty_01"):
+		case joaat("G_M_Y_UNIEXCONFEDS_02"):
+		case joaat("G_M_Y_UNIEXCONFEDS_01"):
+		case joaat("G_M_O_UNIEXCONFEDS_01"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
 			return 2;
-		case joaat("g_m_m_uniinbred_01"):
+		case joaat("G_M_M_UNIINBRED_01"):
 			return 1;
-		case joaat("u_m_m_bht_skinnersearch"):
-		case joaat("g_m_m_unimountainmen_01"):
-		case joaat("u_m_m_bht_skinnerbrother"):
+		case joaat("U_M_M_BHT_SKINNERSEARCH"):
+		case joaat("G_M_M_UNIMOUNTAINMEN_01"):
+		case joaat("U_M_M_BHT_SKINNERBROTHER"):
 			return 3;
-		case joaat("g_m_m_uniranchers_01"):
-		case joaat("cs_laramie"):
+		case joaat("G_M_M_UNIRANCHERS_01"):
+		case joaat("CS_LARAMIE"):
 			return 4;
-		case joaat("u_m_m_bht_banditoshack"):
-		case joaat("u_m_m_bht_banditomine"):
-		case joaat("g_m_m_unibanditos_01"):
+		case joaat("U_M_M_BHT_BANDITOSHACK"):
+		case joaat("U_M_M_BHT_BANDITOMINE"):
+		case joaat("G_M_M_UNIBANDITOS_01"):
 			return 5;
 	}
 	return -1;
@@ -20909,17 +20909,17 @@ int func_676(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("prhm1");
+			return joaat("PRHM1");
 		case 2:
-			return joaat("prhm2");
+			return joaat("PRHM2");
 		case 3:
-			return joaat("prhm6");
+			return joaat("PRHM6");
 		case 4:
-			return joaat("prhm3");
+			return joaat("PRHM3");
 		case 6:
-			return joaat("prhm7");
+			return joaat("PRHM7");
 		case 7:
-			return joaat("prhm5");
+			return joaat("PRHM5");
 		default:
 			break;
 	}
@@ -20938,7 +20938,7 @@ var func_677(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	}
 	if (iParam2 == -1)
 	{
-		iParam2 = joaat("elements_stamps_icons");
+		iParam2 = joaat("ELEMENTS_STAMPS_ICONS");
 	}
 	if (iParam3 == -1)
 	{
@@ -20950,7 +20950,7 @@ var func_677(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	}
 	if (iParam6 == -1)
 	{
-		iParam6 = joaat("sp_notifications");
+		iParam6 = joaat("SP_NOTIFICATIONS");
 	}
 	if (!bParam14)
 	{
@@ -21082,11 +21082,11 @@ int func_688(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return joaat("toast_rpg_level_stamina");
+			return joaat("TOAST_RPG_LEVEL_STAMINA");
 		case 0:
-			return joaat("toast_rpg_level_health");
+			return joaat("TOAST_RPG_LEVEL_HEALTH");
 		case 2:
-			return joaat("toast_rpg_level_deadeye");
+			return joaat("TOAST_RPG_LEVEL_DEADEYE");
 		default:
 			break;
 	}
@@ -23994,187 +23994,187 @@ int func_780(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("cs_sistercalderon"):
-		case joaat("cs_strsheriff_01"):
-		case joaat("cs_mud2bigguy"):
-		case joaat("cs_rainsfall"):
-		case joaat("cs_penelopebraithwaite"):
-		case joaat("cs_swampweirdosonny"):
-		case joaat("cs_unidusterjail_01"):
-		case joaat("cs_iangray"):
-		case joaat("cs_tinyhermit"):
-		case joaat("cs_timothydonahue"):
-		case joaat("cs_princessisabeau"):
-		case joaat("cs_leviticuscornwall"):
-		case joaat("cs_didsbury"):
-		case joaat("cs_featherstonchambers"):
-		case joaat("cs_featsofstrength"):
-		case joaat("cs_bandpianist"):
-		case joaat("cs_escapeartistassistant"):
-		case joaat("cs_garethbraithwaite"):
-		case joaat("cs_creoleguy"):
-		case joaat("cs_leighgray"):
-		case joaat("cs_strawberryoutlaw_02"):
-		case joaat("cs_gloria"):
-		case joaat("cs_warvet"):
-		case joaat("cs_jockgray"):
-		case joaat("cs_davidgeddes"):
-		case joaat("cs_guidomartelli"):
-		case joaat("cs_duncangeddes"):
-		case joaat("cs_dusterinformant_01"):
-		case joaat("cs_pinkertongoon"):
-		case joaat("cs_mickey"):
-		case joaat("cs_twinbrother_02"):
-		case joaat("cs_hestonjameson"):
-		case joaat("cs_strdeputy_01"):
-		case joaat("cs_abe"):
-		case joaat("cs_oddfellowspinhead"):
-		case joaat("cs_swampfreak"):
-		case joaat("cs_mradler"):
-		case joaat("cs_aberdeenpigfarmer"):
-		case joaat("cs_hobartcrawley"):
-		case joaat("cs_formyartbigwoman"):
-		case joaat("cs_norrisforsythe"):
-		case joaat("cs_jules"):
-		case joaat("cs_tomdickens"):
-		case joaat("cs_geraldbraithwaite"):
-		case joaat("cs_paytah"):
-		case joaat("cs_cancan_03"):
-		case joaat("cs_grizzledjon"):
-		case joaat("cs_wrobel"):
-		case joaat("cs_meredith"):
-		case joaat("cs_creepyoldlady"):
-		case joaat("cs_nbxreceptionist_01"):
-		case joaat("cs_nbxpolicechiefformal"):
-		case joaat("cs_cornwalltrainconductor"):
-		case joaat("cs_rhodeputy_01"):
-		case joaat("cs_drmalcolmmacintosh"):
-		case joaat("cs_leon"):
-		case joaat("cs_sheriffowens"):
-		case joaat("cs_sddoctor_01"):
-		case joaat("cs_scottgray"):
-		case joaat("cs_cancan_01"):
-		case joaat("cs_creolecaptain"):
-		case joaat("cs_brontesbutler"):
-		case joaat("cs_janson"):
-		case joaat("cs_forgivenwife_01"):
-		case joaat("cs_tigerhandler"):
-		case joaat("cs_frenchartist"):
-		case joaat("cs_genstorymale"):
-		case joaat("cs_clay"):
-		case joaat("cs_strdeputy_02"):
-		case joaat("cs_famousgunslinger_03"):
-		case joaat("cs_bivcoachdriver"):
-		case joaat("cs_braithwaitebutler"):
-		case joaat("cs_cleet"):
-		case joaat("cs_joe"):
-		case joaat("cs_slavecatcher"):
-		case joaat("cs_braithwaitemaid"):
-		case joaat("cs_twingroupie_02"):
-		case joaat("cs_mrsgeddes"):
-		case joaat("cs_samaritan"):
-		case joaat("cs_exconfedinformant"):
-		case joaat("cs_frenchman_01"):
-		case joaat("cs_bandsinger"):
-		case joaat("cs_baptiste"):
-		case joaat("cs_angusgeddes"):
-		case joaat("cs_mysteriousstranger"):
-		case joaat("cs_famousgunslinger_01"):
-		case joaat("cs_bartholomewbraithwaite"):
-		case joaat("cs_mixedracekid"):
-		case joaat("cs_beatenupcaptain"):
-		case joaat("cs_edgarross"):
-		case joaat("cs_twingroupie_01"):
-		case joaat("cs_mrsweathers"):
-		case joaat("cs_jamie"):
-		case joaat("cs_karensjohn_01"):
-		case joaat("cs_thomasdown"):
-		case joaat("cs_obediahhinton"):
-		case joaat("cs_agnesdowd"):
-		case joaat("cs_cavehermit"):
-		case joaat("cs_brynntildon"):
-		case joaat("cs_germanson"):
-		case joaat("cs_brendacrawley"):
-		case joaat("cs_colfavours"):
-		case joaat("cs_rhodeskidnapvictim"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("cs_cancan_04"):
-		case joaat("cs_towncrier"):
-		case joaat("cs_famousgunslinger_04"):
-		case joaat("cs_dalemaroney"):
-		case joaat("cs_angryhusband"):
-		case joaat("cs_lillianpowell"):
-		case joaat("cs_andershelgerson"):
-		case joaat("cs_poorjoe"):
-		case joaat("cs_braithwaiteservant"):
-		case joaat("cs_brotherdorkins"):
-		case joaat("cs_albertmason"):
-		case joaat("cs_famousgunslinger_05"):
-		case joaat("cs_balloonoperator"):
-		case joaat("cs_albertcakeesquire"):
-		case joaat("cs_mrsfellows"):
-		case joaat("cs_cancanman_01"):
-		case joaat("cs_poisonwellshaman"):
-		case joaat("cs_cancan_02"):
-		case joaat("cs_meredithsmother"):
-		case joaat("cs_angel"):
-		case joaat("cs_archerfordham"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("cs_chelonianmaster"):
-		case joaat("cs_twinbrother_01"):
-		case joaat("cs_germandaughter"):
-		case joaat("cs_lemiuxassistant"):
-		case joaat("cs_creoledoctor"):
-		case joaat("cs_crackpotrobot"):
-		case joaat("cs_bandbassist"):
-		case joaat("cs_genstoryfemale"):
-		case joaat("cs_marylinton"):
-		case joaat("cs_valprayingman"):
-		case joaat("cs_johnthebaptisingmadman"):
-		case joaat("cs_mrs_calhoun"):
-		case joaat("cs_theodorelevin"):
-		case joaat("cs_nicholastimmins"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("cs_dinoboneslady"):
-		case joaat("cs_beaugray"):
-		case joaat("cs_strawberryoutlaw_01"):
-		case joaat("cs_crackpotinventor"):
-		case joaat("cs_hercule"):
-		case joaat("cs_gavin"):
-		case joaat("cs_levisimon"):
-		case joaat("cs_londonderryson"):
-		case joaat("cs_captainmonroe"):
-		case joaat("cs_famousgunslinger_02"):
-		case joaat("cs_mrslondonderry"):
-		case joaat("cs_soothsayer"):
-		case joaat("cs_tavishgray"):
-		case joaat("cs_joebutler"):
-		case joaat("cs_banddrummer"):
-		case joaat("cs_lillymillet"):
-		case joaat("cs_ansel_atherton"):
-		case joaat("cs_rhodeputy_02"):
-		case joaat("cs_edmundlowry"):
-		case joaat("cs_disguisedduster_02"):
-		case joaat("cs_magnifico"):
-		case joaat("cs_artappraiser"):
-		case joaat("cs_forgivenhusband_01"):
-		case joaat("cs_reverendfortheringham"):
-		case joaat("cs_daveycallender"):
-		case joaat("cs_desmond"):
-		case joaat("cs_adamgray"):
-		case joaat("cs_jimcalloway"):
-		case joaat("cs_sdsaloondrunk_01"):
-		case joaat("cs_nbxdrunk"):
-		case joaat("cs_germanmother"):
-		case joaat("cs_ringmaster"):
-		case joaat("cs_lucanapoli"):
-		case joaat("cs_rhodesassistant"):
-		case joaat("cs_aberdeensister"):
-		case joaat("cs_nbxexecuted"):
-		case joaat("cs_famousgunslinger_06"):
-		case joaat("cs_johnweathers"):
-		case joaat("cs_professorbell"):
-		case joaat("cs_rhodessaloonbouncer"):
+		case joaat("CS_SISTERCALDERON"):
+		case joaat("CS_STRSHERIFF_01"):
+		case joaat("CS_MUD2BIGGUY"):
+		case joaat("CS_RAINSFALL"):
+		case joaat("CS_PENELOPEBRAITHWAITE"):
+		case joaat("CS_SWAMPWEIRDOSONNY"):
+		case joaat("CS_UNIDUSTERJAIL_01"):
+		case joaat("CS_IANGRAY"):
+		case joaat("CS_TINYHERMIT"):
+		case joaat("CS_TIMOTHYDONAHUE"):
+		case joaat("CS_PRINCESSISABEAU"):
+		case joaat("CS_LEVITICUSCORNWALL"):
+		case joaat("CS_DIDSBURY"):
+		case joaat("CS_FEATHERSTONCHAMBERS"):
+		case joaat("CS_FEATSOFSTRENGTH"):
+		case joaat("CS_BANDPIANIST"):
+		case joaat("CS_ESCAPEARTISTASSISTANT"):
+		case joaat("CS_GARETHBRAITHWAITE"):
+		case joaat("CS_CREOLEGUY"):
+		case joaat("CS_LEIGHGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_02"):
+		case joaat("CS_GLORIA"):
+		case joaat("CS_WARVET"):
+		case joaat("CS_JOCKGRAY"):
+		case joaat("CS_DAVIDGEDDES"):
+		case joaat("CS_GUIDOMARTELLI"):
+		case joaat("CS_DUNCANGEDDES"):
+		case joaat("CS_DUSTERINFORMANT_01"):
+		case joaat("CS_PINKERTONGOON"):
+		case joaat("CS_MICKEY"):
+		case joaat("CS_TWINBROTHER_02"):
+		case joaat("CS_HESTONJAMESON"):
+		case joaat("CS_STRDEPUTY_01"):
+		case joaat("CS_ABE"):
+		case joaat("CS_ODDFELLOWSPINHEAD"):
+		case joaat("CS_SWAMPFREAK"):
+		case joaat("CS_MRADLER"):
+		case joaat("CS_ABERDEENPIGFARMER"):
+		case joaat("CS_HOBARTCRAWLEY"):
+		case joaat("CS_FORMYARTBIGWOMAN"):
+		case joaat("CS_NORRISFORSYTHE"):
+		case joaat("CS_JULES"):
+		case joaat("CS_TOMDICKENS"):
+		case joaat("CS_GERALDBRAITHWAITE"):
+		case joaat("CS_PAYTAH"):
+		case joaat("CS_CANCAN_03"):
+		case joaat("CS_GRIZZLEDJON"):
+		case joaat("CS_WROBEL"):
+		case joaat("CS_MEREDITH"):
+		case joaat("CS_CREEPYOLDLADY"):
+		case joaat("CS_NBXRECEPTIONIST_01"):
+		case joaat("CS_NBXPOLICECHIEFFORMAL"):
+		case joaat("CS_CORNWALLTRAINCONDUCTOR"):
+		case joaat("CS_RHODEPUTY_01"):
+		case joaat("CS_DRMALCOLMMACINTOSH"):
+		case joaat("CS_LEON"):
+		case joaat("CS_SHERIFFOWENS"):
+		case joaat("CS_SDDOCTOR_01"):
+		case joaat("CS_SCOTTGRAY"):
+		case joaat("CS_CANCAN_01"):
+		case joaat("CS_CREOLECAPTAIN"):
+		case joaat("CS_BRONTESBUTLER"):
+		case joaat("CS_JANSON"):
+		case joaat("CS_FORGIVENWIFE_01"):
+		case joaat("CS_TIGERHANDLER"):
+		case joaat("CS_FRENCHARTIST"):
+		case joaat("CS_GENSTORYMALE"):
+		case joaat("CS_CLAY"):
+		case joaat("CS_STRDEPUTY_02"):
+		case joaat("CS_FAMOUSGUNSLINGER_03"):
+		case joaat("CS_BIVCOACHDRIVER"):
+		case joaat("CS_BRAITHWAITEBUTLER"):
+		case joaat("CS_CLEET"):
+		case joaat("CS_JOE"):
+		case joaat("CS_SLAVECATCHER"):
+		case joaat("CS_BRAITHWAITEMAID"):
+		case joaat("CS_TWINGROUPIE_02"):
+		case joaat("CS_MRSGEDDES"):
+		case joaat("CS_SAMARITAN"):
+		case joaat("CS_EXCONFEDINFORMANT"):
+		case joaat("CS_FRENCHMAN_01"):
+		case joaat("CS_BANDSINGER"):
+		case joaat("CS_BAPTISTE"):
+		case joaat("CS_ANGUSGEDDES"):
+		case joaat("CS_MYSTERIOUSSTRANGER"):
+		case joaat("CS_FAMOUSGUNSLINGER_01"):
+		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
+		case joaat("CS_MIXEDRACEKID"):
+		case joaat("CS_BEATENUPCAPTAIN"):
+		case joaat("CS_EDGARROSS"):
+		case joaat("CS_TWINGROUPIE_01"):
+		case joaat("CS_MRSWEATHERS"):
+		case joaat("CS_JAMIE"):
+		case joaat("CS_KARENSJOHN_01"):
+		case joaat("CS_THOMASDOWN"):
+		case joaat("CS_OBEDIAHHINTON"):
+		case joaat("CS_AGNESDOWD"):
+		case joaat("CS_CAVEHERMIT"):
+		case joaat("CS_BRYNNTILDON"):
+		case joaat("CS_GERMANSON"):
+		case joaat("CS_BRENDACRAWLEY"):
+		case joaat("CS_COLFAVOURS"):
+		case joaat("CS_RHODESKIDNAPVICTIM"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("CS_CANCAN_04"):
+		case joaat("CS_TOWNCRIER"):
+		case joaat("CS_FAMOUSGUNSLINGER_04"):
+		case joaat("CS_DALEMARONEY"):
+		case joaat("CS_ANGRYHUSBAND"):
+		case joaat("CS_LILLIANPOWELL"):
+		case joaat("CS_ANDERSHELGERSON"):
+		case joaat("CS_POORJOE"):
+		case joaat("CS_BRAITHWAITESERVANT"):
+		case joaat("CS_BROTHERDORKINS"):
+		case joaat("CS_ALBERTMASON"):
+		case joaat("CS_FAMOUSGUNSLINGER_05"):
+		case joaat("CS_BALLOONOPERATOR"):
+		case joaat("CS_ALBERTCAKEESQUIRE"):
+		case joaat("CS_MRSFELLOWS"):
+		case joaat("CS_CANCANMAN_01"):
+		case joaat("CS_POISONWELLSHAMAN"):
+		case joaat("CS_CANCAN_02"):
+		case joaat("CS_MEREDITHSMOTHER"):
+		case joaat("CS_ANGEL"):
+		case joaat("CS_ARCHERFORDHAM"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("CS_CHELONIANMASTER"):
+		case joaat("CS_TWINBROTHER_01"):
+		case joaat("CS_GERMANDAUGHTER"):
+		case joaat("CS_LEMIUXASSISTANT"):
+		case joaat("CS_CREOLEDOCTOR"):
+		case joaat("CS_CRACKPOTROBOT"):
+		case joaat("CS_BANDBASSIST"):
+		case joaat("CS_GENSTORYFEMALE"):
+		case joaat("CS_MARYLINTON"):
+		case joaat("CS_VALPRAYINGMAN"):
+		case joaat("CS_JOHNTHEBAPTISINGMADMAN"):
+		case joaat("CS_MRS_CALHOUN"):
+		case joaat("CS_THEODORELEVIN"):
+		case joaat("CS_NICHOLASTIMMINS"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("CS_DINOBONESLADY"):
+		case joaat("CS_BEAUGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_01"):
+		case joaat("CS_CRACKPOTINVENTOR"):
+		case joaat("CS_HERCULE"):
+		case joaat("CS_GAVIN"):
+		case joaat("CS_LEVISIMON"):
+		case joaat("CS_LONDONDERRYSON"):
+		case joaat("CS_CAPTAINMONROE"):
+		case joaat("CS_FAMOUSGUNSLINGER_02"):
+		case joaat("CS_MRSLONDONDERRY"):
+		case joaat("CS_SOOTHSAYER"):
+		case joaat("CS_TAVISHGRAY"):
+		case joaat("CS_JOEBUTLER"):
+		case joaat("CS_BANDDRUMMER"):
+		case joaat("CS_LILLYMILLET"):
+		case joaat("CS_ANSEL_ATHERTON"):
+		case joaat("CS_RHODEPUTY_02"):
+		case joaat("CS_EDMUNDLOWRY"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
+		case joaat("CS_MAGNIFICO"):
+		case joaat("CS_ARTAPPRAISER"):
+		case joaat("CS_FORGIVENHUSBAND_01"):
+		case joaat("CS_REVERENDFORTHERINGHAM"):
+		case joaat("CS_DAVEYCALLENDER"):
+		case joaat("CS_DESMOND"):
+		case joaat("CS_ADAMGRAY"):
+		case joaat("CS_JIMCALLOWAY"):
+		case joaat("CS_SDSALOONDRUNK_01"):
+		case joaat("CS_NBXDRUNK"):
+		case joaat("CS_GERMANMOTHER"):
+		case joaat("CS_RINGMASTER"):
+		case joaat("CS_LUCANAPOLI"):
+		case joaat("CS_RHODESASSISTANT"):
+		case joaat("CS_ABERDEENSISTER"):
+		case joaat("CS_NBXEXECUTED"):
+		case joaat("CS_FAMOUSGUNSLINGER_06"):
+		case joaat("CS_JOHNWEATHERS"):
+		case joaat("CS_PROFESSORBELL"):
+		case joaat("CS_RHODESSALOONBOUNCER"):
 			return 1;
 		default:
 			break;
@@ -24219,7 +24219,7 @@ void func_782(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

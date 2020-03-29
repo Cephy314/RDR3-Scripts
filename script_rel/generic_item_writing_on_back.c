@@ -163,7 +163,7 @@ void func_5(var uParam0)
 		}
 		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 		{
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("TRANSLATION_OVERLAY"), joaat("GENERIC")) == 0)
 			{
 				uParam0->f_5.f_1 = 1;
 				func_9(uParam0);
@@ -174,7 +174,7 @@ void func_5(var uParam0)
 	{
 		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 0, -1);
 	}
-	if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 	{
 		HUD::_0xC9CAEAEEC1256E54(382897689);
 	}
@@ -194,7 +194,7 @@ void func_6(var uParam0)
 		}
 		if (PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE") && PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 		{
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("TRANSLATION_OVERLAY"), joaat("GENERIC")) == 0)
 			{
 				uParam0->f_5.f_1 = 1;
 				func_9(uParam0);
@@ -205,7 +205,7 @@ void func_6(var uParam0)
 	{
 		PED::_0xCB9401F918CB0F75(Global_35, "GENERIC_BOOK_READ_AVAILABLE", 0, -1);
 	}
-	if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 	{
 		HUD::_0xC9CAEAEEC1256E54(382897689);
 	}
@@ -217,7 +217,7 @@ void func_6(var uParam0)
 
 void func_7(var uParam0)
 {
-	if (uParam0->f_5.f_1 && !UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
+	if (uParam0->f_5.f_1 && !UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 	{
 		AUDIO::PLAY_SOUND_FRONTEND("READ", "HUD_SHOP_SOUNDSET", true, 0);
 		uParam0->f_5.f_1 = 0;

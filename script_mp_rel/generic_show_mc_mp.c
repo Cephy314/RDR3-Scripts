@@ -2547,7 +2547,7 @@ void func_63(var uParam0, var uParam1)
 			{
 				if (!CAM::DOES_CAM_EXIST(uParam1->f_252))
 				{
-					uParam1->f_252 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), func_163(0), func_164(0), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
+					uParam1->f_252 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), func_163(0), func_164(0), CAM::GET_FINAL_RENDERED_CAM_FOV(), false, 2);
 				}
 				func_162(&(uParam1->f_257), 1);
 			}
@@ -3758,9 +3758,9 @@ int func_95(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("cs_cabaretmc");
+			return joaat("CS_CABARETMC");
 		case 1:
-			return joaat("p_new_theater_curtain");
+			return joaat("P_NEW_THEATER_CURTAIN");
 		default:
 			break;
 	}
@@ -4511,9 +4511,9 @@ int func_150(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_lamp35x");
+			return joaat("P_LAMP35X");
 		case 1:
-			return joaat("p_lampwall03x");
+			return joaat("P_LAMPWALL03X");
 		case 2:
 			return 0;
 	}
@@ -4587,9 +4587,9 @@ int func_154(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_stageshelllight01x");
+			return joaat("P_STAGESHELLLIGHT01X");
 		case 1:
-			return joaat("p_bulb_g_stage01x");
+			return joaat("P_BULB_G_STAGE01X");
 		case 2:
 			return 0;
 	}
@@ -4696,9 +4696,9 @@ int func_157(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_lampwall04x");
+			return joaat("P_LAMPWALL04X");
 		case 1:
-			return joaat("p_napoleonlight01x");
+			return joaat("P_NAPOLEONLIGHT01X");
 		case 2:
 			return 0;
 	}
@@ -4745,11 +4745,11 @@ int func_159(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_stageshelllight_long01x");
+					return joaat("P_STAGESHELLLIGHT_LONG01X");
 				case 1:
-					return joaat("p_stageshelllight_red01x");
+					return joaat("P_STAGESHELLLIGHT_RED01X");
 				case 2:
-					return joaat("p_stageshelllight_red01x");
+					return joaat("P_STAGESHELLLIGHT_RED01X");
 				default:
 					break;
 			}
@@ -5769,7 +5769,7 @@ void func_213(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

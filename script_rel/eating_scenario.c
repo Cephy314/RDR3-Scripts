@@ -96,7 +96,7 @@ void func_6()
 		iLocal_0 = 0;
 		return;
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("OBJECTEXCHANGE")))
 	{
 		func_12(12.5f, 1, 0, 1);
 		func_13(10f, 1);
@@ -355,7 +355,7 @@ void func_14(int iParam0, bool bParam1)
 		}
 		if (iVar42 || func_35(iParam0, -537818634))
 		{
-			func_49(func_48(joaat("medicine_items_used")), 1);
+			func_49(func_48(joaat("MEDICINE_ITEMS_USED")), 1);
 		}
 		if (func_35(iParam0, -1457797660))
 		{
@@ -2167,7 +2167,7 @@ int func_117()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -2448,7 +2448,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 0f;
 	}

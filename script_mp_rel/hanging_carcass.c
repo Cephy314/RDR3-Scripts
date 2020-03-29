@@ -25,8 +25,8 @@ void __EntryFunction__()
 		SCRIPTS::_0xE7282390542F570D(ScriptParam_0);
 		SCRIPTS::TERMINATE_THIS_THREAD();
 	}
-	Var0.f_40 = joaat("p_carcasshanglrg02x");
-	Var0.f_41 = joaat("p_carcasshangmed01b");
+	Var0.f_40 = joaat("P_CARCASSHANGLRG02X");
+	Var0.f_41 = joaat("P_CARCASSHANGMED01B");
 	Var0 = SCRIPTS::GET_ID_OF_THIS_THREAD();
 	Var0.f_1 = { TASK::_0xA8452DD321607029(ScriptParam_0.f_1, 1) };
 	Var0.f_4 = TASK::_0xB93EA7184BAA85C3(ScriptParam_0.f_1, 1);
@@ -270,7 +270,7 @@ int func_10(var uParam0)
 	}
 	switch (uParam0->f_39)
 	{
-		case joaat("p_carcasshanglrg01x"):
+		case joaat("P_CARCASSHANGLRG01X"):
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (func_23(uParam0->f_1))
 			{
@@ -294,22 +294,22 @@ int func_10(var uParam0)
 			{
 				case 0:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@DEER@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("a_c_deer_01");
+					uParam0->f_38 = joaat("A_C_DEER_01");
 					StringCopy(&(uParam0->f_30), "PD_Deer_aged_carcass_Hvy", 64);
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@WOLF_MEDIUM@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("a_c_wolf_medium");
+					uParam0->f_38 = joaat("A_C_WOLF_MEDIUM");
 					break;
 			}
 			uParam0->f_50 = 45454;
 			uParam0->f_51 = 33646;
 			uParam0->f_55 = 0;
 			break;
-		case joaat("p_carcasshangmed01a"):
-		case joaat("p_carcasshangmed01x"):
+		case joaat("P_CARCASSHANGMED01A"):
+		case joaat("P_CARCASSHANGMED01X"):
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 3);
-			if (uParam0->f_39 == joaat("p_carcasshangmed01x"))
+			if (uParam0->f_39 == joaat("P_CARCASSHANGMED01X"))
 			{
 				if (func_7(uParam0, 128))
 				{
@@ -324,40 +324,40 @@ int func_10(var uParam0)
 			{
 				case 0:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@FOX@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("a_c_fox_01");
+					uParam0->f_38 = joaat("A_C_FOX_01");
 					StringCopy(&(uParam0->f_30), "PD_Small_aged_carcass_Hvy", 64);
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
 				case 1:
 					StringCopy(&(uParam0->f_14), "CREATURES_MAMMAL@RABBIT@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("a_c_rabbit_01");
+					uParam0->f_38 = joaat("A_C_RABBIT_01");
 					StringCopy(&(uParam0->f_30), "PD_Ex_Small_aged_carcass_Hvy", 64);
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 33646;
 					break;
 				case 2:
 					StringCopy(&(uParam0->f_14), "CREATURES_BIRD@DUCK@NORMAL@DEAD", 64);
-					uParam0->f_38 = joaat("a_c_duck_01");
+					uParam0->f_38 = joaat("A_C_DUCK_01");
 					uParam0->f_55 = 1;
 					uParam0->f_50 = 14285;
 					break;
 			}
 			break;
-		case joaat("p_carcasshangfish01a"):
+		case joaat("P_CARCASSHANGFISH01A"):
 			iVar9 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 			switch (iVar9)
 			{
 				case 0:
-					uParam0->f_38 = joaat("a_c_fishrainbowtrout_01_ms");
+					uParam0->f_38 = joaat("A_C_FISHRAINBOWTROUT_01_MS");
 					break;
 				case 1:
-					uParam0->f_38 = joaat("a_c_fishsalmonsockeye_01_ms");
+					uParam0->f_38 = joaat("A_C_FISHSALMONSOCKEYE_01_MS");
 					break;
 			}
 			uParam0->f_55 = 3;
 			break;
-		case joaat("p_carcasshangsml01x"):
+		case joaat("P_CARCASSHANGSML01X"):
 			break;
 	}
 	return 1;
@@ -467,13 +467,13 @@ int func_15(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return uParam1->f_39 == joaat("p_carcasshanglrg01x");
+			return uParam1->f_39 == joaat("P_CARCASSHANGLRG01X");
 		case 1:
-			return (uParam1->f_39 == joaat("p_carcasshangmed01x") || uParam1->f_39 == joaat("p_carcasshangmed01a"));
+			return (uParam1->f_39 == joaat("P_CARCASSHANGMED01X") || uParam1->f_39 == joaat("P_CARCASSHANGMED01A"));
 		case 2:
-			return uParam1->f_39 == joaat("p_carcasshangsml01x");
+			return uParam1->f_39 == joaat("P_CARCASSHANGSML01X");
 		case 3:
-			return uParam1->f_39 == joaat("p_carcasshangfish01a");
+			return uParam1->f_39 == joaat("P_CARCASSHANGFISH01A");
 		default:
 			break;
 	}
@@ -601,7 +601,7 @@ int func_20(var uParam0)
 		{
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_43, false);
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_42, true);
-			uParam0->f_44 = OBJECT::CREATE_OBJECT(joaat("p_carcasshanglrg02x"), uParam0->f_1, false, true, false, false, false);
+			uParam0->f_44 = OBJECT::CREATE_OBJECT(joaat("P_CARCASSHANGLRG02X"), uParam0->f_1, false, true, false, false, false);
 			ENTITY::SET_ENTITY_COLLISION(uParam0->f_44, false, false);
 			ENTITY::ATTACH_ENTITY_TO_ENTITY_PHYSICALLY(uParam0->f_44, Global_34, 4, PED::GET_PED_BONE_INDEX(Global_34, 7966), 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, -1f, 1, 1, 0, 0, 0, 1, 1065353216, 1065353216);
 			func_22(uParam0, 1);
@@ -733,12 +733,12 @@ Vector3 func_24(var uParam0)
 
 	switch (uParam0->f_39)
 	{
-		case joaat("p_carcasshanglrg01x"):
+		case joaat("P_CARCASSHANGLRG01X"):
 			iVar3 = 4;
 			break;
-		case joaat("p_carcasshangmed01a"):
-		case joaat("p_carcasshangmed01x"):
-		case joaat("p_carcasshangfish01a"):
+		case joaat("P_CARCASSHANGMED01A"):
+		case joaat("P_CARCASSHANGMED01X"):
+		case joaat("P_CARCASSHANGFISH01A"):
 			iVar3 = 4;
 			break;
 	}
@@ -844,11 +844,11 @@ void func_32(var uParam0)
 	vVar8 = { 0f, 90f, 0f };
 	switch (uParam0->f_38)
 	{
-		case joaat("a_c_fox_01"):
+		case joaat("A_C_FOX_01"):
 			vVar5 = { -0.0125f, -0.03f, 0.0125f };
 			vVar8 = { 90f, 0f, 90f };
 			break;
-		case joaat("a_c_rabbit_01"):
+		case joaat("A_C_RABBIT_01"):
 			vVar2 = { -0.0125f, 0f, -0.025f };
 			vVar8 = { 0f, 90f, 0f };
 			break;
@@ -900,12 +900,12 @@ void func_34(var uParam0)
 	vVar1 = { 0f, 0f, 0f };
 	switch (uParam0->f_39)
 	{
-		case joaat("p_carcasshanglrg01x"):
+		case joaat("P_CARCASSHANGLRG01X"):
 			iVar0 = joaat("WORLD_PLAYER_CARCASS_PEG_2M15");
 			vVar1 = { 0.155f, -0.9f, 0f };
 			break;
-		case joaat("p_carcasshangmed01a"):
-		case joaat("p_carcasshangfish01a"):
+		case joaat("P_CARCASSHANGMED01A"):
+		case joaat("P_CARCASSHANGFISH01A"):
 			iVar0 = joaat("WORLD_PLAYER_CARCASS_CUT_1M80");
 			vVar1 = { -0.1f, -0.61f, 0f };
 			break;
@@ -941,15 +941,15 @@ int func_36(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bayounwa"):
+		case joaat("BAYOUNWA"):
 			return 0;
-		case joaat("bigvalley"):
+		case joaat("BIGVALLEY"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GREATPLAINS"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -957,17 +957,17 @@ int func_36(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("HEARTLANDS"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TALLTREES"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RIOBRAVO"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -1059,7 +1059,7 @@ int func_41(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("p_carcasshanglrg01x"):
+		case joaat("P_CARCASSHANGLRG01X"):
 			if (iParam1 == 0)
 			{
 				return 4;
@@ -1069,9 +1069,9 @@ int func_41(int iParam0, int iParam1)
 				return 5;
 			}
 			break;
-		case joaat("p_carcasshangmed01a"):
-		case joaat("p_carcasshangmed01x"):
-		case joaat("p_carcasshangfish01a"):
+		case joaat("P_CARCASSHANGMED01A"):
+		case joaat("P_CARCASSHANGMED01X"):
+		case joaat("P_CARCASSHANGFISH01A"):
 			if (iParam1 == 3)
 			{
 				return 2;
@@ -1089,7 +1089,7 @@ int func_41(int iParam0, int iParam1)
 				return 6;
 			}
 			break;
-		case joaat("p_carcasshangsml01x"):
+		case joaat("P_CARCASSHANGSML01X"):
 			if (iParam1 == 2)
 			{
 				return 6;
@@ -1113,7 +1113,7 @@ void func_42(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

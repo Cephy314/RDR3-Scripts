@@ -123,7 +123,7 @@ void __EntryFunction__()
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
 	iLocal_75 = -791673850;
-	iLocal_76 = joaat("s_valerianroot01x");
+	iLocal_76 = joaat("S_VALERIANROOT01X");
 	vLocal_78 = { -350.6435f, 288.2812f, 97.46367f };
 	fLocal_81 = 7f;
 	fLocal_82 = 0f;
@@ -131,7 +131,7 @@ void __EntryFunction__()
 	fLocal_84 = 100f;
 	fLocal_85 = 100f;
 	fLocal_86 = 0f;
-	iLocal_87 = joaat("ui_note_dutch");
+	iLocal_87 = joaat("UI_NOTE_DUTCH");
 	iLocal_88 = joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X");
 	vLocal_92 = { -129.1927f, -68.5704f, 90.6221f };
 	func_1();
@@ -406,7 +406,7 @@ int func_11()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

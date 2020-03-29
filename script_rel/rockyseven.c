@@ -1283,16 +1283,16 @@ void func_64()
 	}
 	if (func_100(6, 16384))
 	{
-		func_128(joaat("roc_01_garden01_die"));
+		func_128(joaat("ROC_01_GARDEN01_DIE"));
 		func_128(-786579336);
-		func_129(joaat("roc_01_garden01_nice"));
+		func_129(joaat("ROC_01_GARDEN01_NICE"));
 		func_129(-1305545118);
 	}
 	else
 	{
-		func_128(joaat("roc_01_garden01_nice"));
+		func_128(joaat("ROC_01_GARDEN01_NICE"));
 		func_128(-1305545118);
-		func_129(joaat("roc_01_garden01_die"));
+		func_129(joaat("ROC_01_GARDEN01_DIE"));
 		func_129(-786579336);
 	}
 	func_130(6, 64);
@@ -1513,7 +1513,7 @@ void func_75(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_153(Global_1935630, 8192);
-	func_155(func_154(-1532769513, joaat("areas")), 1);
+	func_155(func_154(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1858,14 +1858,14 @@ int func_82(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -2630,7 +2630,7 @@ int func_102()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -2924,15 +2924,15 @@ void func_131()
 	switch (iLocal_19)
 	{
 		case 0:
-			STREAMING::REQUEST_MODEL(joaat("p_fireplacelogs02x"), false);
+			STREAMING::REQUEST_MODEL(joaat("P_FIREPLACELOGS02X"), false);
 			func_189(1);
 			break;
 		case 1:
-			if (!STREAMING::HAS_MODEL_LOADED(joaat("p_fireplacelogs02x")))
+			if (!STREAMING::HAS_MODEL_LOADED(joaat("P_FIREPLACELOGS02X")))
 			{
 				return;
 			}
-			if (!func_190(&bLocal_16, joaat("p_fireplacelogs02x"), &uLocal_17, 2992.59f, 2194.709f, 165.788f, 4, 0))
+			if (!func_190(&bLocal_16, joaat("P_FIREPLACELOGS02X"), &uLocal_17, 2992.59f, 2194.709f, 165.788f, 4, 0))
 			{
 				return;
 			}

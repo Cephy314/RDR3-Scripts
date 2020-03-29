@@ -483,7 +483,7 @@ void func_12(var uParam0)
 	int iVar1;
 
 	bVar0 = false;
-	if (((SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4) && func_55()) && func_56(PLAYER::PLAYER_ID(), 1, 0)) && func_57(0) == joaat("herbalist"))
+	if (((SCRIPTS::_GET_GLOBAL_BLOCK_CAN_BE_ACCESSED(4) && func_55()) && func_56(PLAYER::PLAYER_ID(), 1, 0)) && func_57(0) == joaat("HERBALIST"))
 	{
 		bVar0 = true;
 	}
@@ -1930,7 +1930,7 @@ int func_90(int iParam0, int iParam1, int iParam2, bool bParam3, vector3 vParam4
 					}
 				}
 			}
-			func_143(func_142(joaat("pick"), uVar2), bParam3);
+			func_143(func_142(joaat("PICK"), uVar2), bParam3);
 			func_143(func_144(joaat("HERBS_PICKED_TOTAL")), bParam3);
 			if (func_145(iParam0))
 			{
@@ -2118,7 +2118,7 @@ void func_93(int iParam0, bool bParam1)
 		}
 		if (iVar42 || func_152(iParam0, -537818634))
 		{
-			func_143(func_167(joaat("medicine_items_used")), 1);
+			func_143(func_167(joaat("MEDICINE_ITEMS_USED")), 1);
 		}
 		if (func_152(iParam0, -1457797660))
 		{
@@ -2187,8 +2187,8 @@ void func_94(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	}
 	iVar6 = func_153(iParam0);
 	iVar10 = 0;
-	iVar11 = joaat("inventory");
-	if ((iVar6 == joaat("ammo") && iParam0 != joaat("AMMO_HATCHET")) && iParam0 != joaat("AMMO_HATCHET_CLEAVER"))
+	iVar11 = joaat("INVENTORY");
+	if ((iVar6 == joaat("AMMO") && iParam0 != joaat("AMMO_HATCHET")) && iParam0 != joaat("AMMO_HATCHET_CLEAVER"))
 	{
 		iVar10 = joaat("AMMO_TYPES");
 		iVar11 = joaat("AMMO_TYPES");
@@ -2198,7 +2198,7 @@ void func_94(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 		Var7 = "ITEMTYPE_UPGRADES";
 		Var7.f_1 = "itemtype_textures";
 	}
-	else if (!func_173(iParam0, &Var7, iVar11, iVar10, 0, joaat("ui_itemviewer")))
+	else if (!func_173(iParam0, &Var7, iVar11, iVar10, 0, joaat("UI_ITEMVIEWER")))
 	{
 		Var7 = "_PLACEHOLDER";
 		Var7.f_1 = "inventory_items";
@@ -2243,7 +2243,7 @@ void func_95(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_142(joaat("eaten"), func_138(iParam0)) };
+	Var0 = { func_142(joaat("EATEN"), func_138(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_143(func_144(joaat("HERBS_EATEN")), bParam1);
 }
@@ -4485,7 +4485,7 @@ int func_198()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -5417,7 +5417,7 @@ int func_235()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -6334,7 +6334,7 @@ float func_279()
 
 float func_280()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 0f;
 	}

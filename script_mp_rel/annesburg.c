@@ -960,7 +960,7 @@ int func_44(int iParam0)
 		func_92();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_73, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_Travel"), joaat("MPAC_Travel_012")))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_TRAVEL"), joaat("MPAC_TRAVEL_012")))
 		{
 			switch (iLocal_73)
 			{
@@ -1037,15 +1037,15 @@ int func_47()
 
 int func_48()
 {
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_mission_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_MISSION_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_deathmatch_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_DEATHMATCH_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_race_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_RACE_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
@@ -1239,17 +1239,17 @@ void func_56()
 void func_57()
 {
 	STREAMING::REQUEST_ANIM_DICT(sLocal_69);
-	STREAMING::REQUEST_MODEL(joaat("p_anncoalbin01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annsteameng01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor02x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor03x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor04x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconvmid1x_belt"), false);
-	STREAMING::REQUEST_MODEL(joaat("s_ann_coalchutes01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annpulleys03x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annpulleys04x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annsifter01x"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCOALBIN01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNSTEAMENG01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR02X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR03X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR04X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVMID1X_BELT"), false);
+	STREAMING::REQUEST_MODEL(joaat("S_ANN_COALCHUTES01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNPULLEYS03X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNPULLEYS04X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNSIFTER01X"), false);
 }
 
 int func_58(int iParam0, int iParam1, int iParam2, bool bParam3)
@@ -1524,47 +1524,47 @@ int func_73()
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_anncoalbin01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCOALBIN01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annsteameng01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNSTEAMENG01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor02x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR02X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor03x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR03X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor04x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR04X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconvmid1x_belt")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVMID1X_BELT")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("s_ann_coalchutes01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("S_ANN_COALCHUTES01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annpulleys03x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNPULLEYS03X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annpulleys04x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNPULLEYS04X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annsifter01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNSIFTER01X")))
 	{
 		return 0;
 	}
@@ -1575,67 +1575,67 @@ void func_74()
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_57))
 	{
-		iLocal_57 = OBJECT::CREATE_OBJECT(joaat("p_anncoalbin01x"), 2882.77f, 1400.54f, 64.53f, false, false, false, false, true);
+		iLocal_57 = OBJECT::CREATE_OBJECT(joaat("P_ANNCOALBIN01X"), 2882.77f, 1400.54f, 64.53f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_57, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_57, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_58))
 	{
-		iLocal_58 = OBJECT::CREATE_OBJECT(joaat("p_annsteameng01x"), 2881.89f, 1399.2f, 65.8f, false, false, false, false, true);
+		iLocal_58 = OBJECT::CREATE_OBJECT(joaat("P_ANNSTEAMENG01X"), 2881.89f, 1399.2f, 65.8f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_58, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_58, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_59))
 	{
-		iLocal_59 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor01x"), 2888.39f, 1398.65f, 63.92f, false, false, false, false, true);
+		iLocal_59 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR01X"), 2888.39f, 1398.65f, 63.92f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_59, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_59, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_60))
 	{
-		iLocal_60 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor02x"), 2887.73f, 1399.23f, 63.88f, false, false, false, false, true);
+		iLocal_60 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR02X"), 2887.73f, 1399.23f, 63.88f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_60, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_60, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_61))
 	{
-		iLocal_61 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor03x"), 2921.67f, 1386.704f, 55.256f, false, false, false, false, true);
+		iLocal_61 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR03X"), 2921.67f, 1386.704f, 55.256f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_61, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_61, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_62))
 	{
-		iLocal_62 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor04x"), 2932.304f, 1382.867f, 55.01f, false, false, false, false, true);
+		iLocal_62 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR04X"), 2932.304f, 1382.867f, 55.01f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_62, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_62, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_63))
 	{
-		iLocal_63 = OBJECT::CREATE_OBJECT(joaat("p_annconvmid1x_belt"), 2902.988f, 1393.29f, 57.85f, false, false, false, false, true);
+		iLocal_63 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVMID1X_BELT"), 2902.988f, 1393.29f, 57.85f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_63, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_63, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_64))
 	{
-		iLocal_64 = OBJECT::CREATE_OBJECT(joaat("s_ann_coalchutes01x"), 2941.816f, 1378.873f, 47.656f, false, false, false, false, true);
+		iLocal_64 = OBJECT::CREATE_OBJECT(joaat("S_ANN_COALCHUTES01X"), 2941.816f, 1378.873f, 47.656f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_64, 0f, 0f, -20.1736f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_64, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_65))
 	{
-		iLocal_65 = OBJECT::CREATE_OBJECT(joaat("p_annpulleys03x"), 2921.67f, 1386.654f, 55.226f, false, false, false, false, true);
+		iLocal_65 = OBJECT::CREATE_OBJECT(joaat("P_ANNPULLEYS03X"), 2921.67f, 1386.654f, 55.226f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_65, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_65, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_66))
 	{
-		iLocal_66 = OBJECT::CREATE_OBJECT(joaat("p_annpulleys04x"), 2932.304f, 1382.867f, 55.17f, false, false, false, false, true);
+		iLocal_66 = OBJECT::CREATE_OBJECT(joaat("P_ANNPULLEYS04X"), 2932.304f, 1382.867f, 55.17f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_66, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_66, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_67))
 	{
-		iLocal_67 = OBJECT::CREATE_OBJECT(joaat("p_annsifter01x"), 2921.489f, 1386.78f, 56.556f, false, false, false, false, true);
+		iLocal_67 = OBJECT::CREATE_OBJECT(joaat("P_ANNSIFTER01X"), 2921.489f, 1386.78f, 56.556f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_67, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_67, true);
 	}
@@ -1968,7 +1968,7 @@ void func_89(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_162(Global_1939178, 16384);
-	func_144(func_163(-1532769513, joaat("areas")), 1);
+	func_144(func_163(-1532769513, joaat("AREAS")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -2235,14 +2235,14 @@ int func_91(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -2539,7 +2539,7 @@ int func_93(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }
@@ -4353,7 +4353,7 @@ struct<2> func_143(int iParam0)
 	int iVar0;
 
 	iVar0 = func_204(iParam0);
-	return func_163(joaat("visited"), iVar0);
+	return func_163(joaat("VISITED"), iVar0);
 }
 
 void func_144(var uParam0, int iParam1, int iParam2)
@@ -6587,7 +6587,7 @@ int func_243(int iParam0)
 		case 69:
 			return joaat("SHOP_STR_GENERAL_STORE");
 		case 70:
-			return joaat("SHOP_STR_WELCOME_CENTER");
+			return joaat("RAGE_P2_3");
 		case 71:
 			return joaat("SHOP_STR_HORSE_SHOP");
 		case 74:
@@ -6665,9 +6665,9 @@ int func_243(int iParam0)
 		case 100:
 			return joaat("SHOP_WAL_TRAIN_STATION");
 		case 119:
-			return joaat("shop_dynamic");
+			return joaat("SHOP_DYNAMIC");
 		case 133:
-			return joaat("shop_wilderness_supplies");
+			return joaat("SHOP_WILDERNESS_SUPPLIES");
 		case 148:
 			return joaat("SHOP_ANYWHERE_HANDHELD");
 		case 172:
@@ -6677,9 +6677,9 @@ int func_243(int iParam0)
 		case 174:
 			return joaat("SHOP_CAMP_SHAVING");
 		case 149:
-			return joaat("shop_camp_lockbox");
+			return joaat("SHOP_CAMP_LOCKBOX");
 		case 150:
-			return joaat("shop_camp_butchertable");
+			return joaat("SHOP_CAMP_BUTCHERTABLE");
 		case 147:
 			return 191185611;
 		case 135:
@@ -6707,23 +6707,23 @@ int func_243(int iParam0)
 		case 146:
 			return 1672297313;
 		case 47:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 32:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 21:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 115:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 92:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 131:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 20:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 134:
 			return -765151559;
 		case 175:
-			return joaat("shop_wardrobe");
+			return joaat("SHOP_WARDROBE");
 		case 151:
 			return joaat("SHOP_BVH_DOCTOR");
 		case 152:
@@ -7656,16 +7656,16 @@ int func_277(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("CHALLENGE");
 			break;
 		case -3:
 			iVar0 = 1300413597;
 			break;
 		case 1:
-			iVar0 = joaat("feature");
+			iVar0 = joaat("FEATURE");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -7689,16 +7689,16 @@ int func_277(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("TITLE");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;

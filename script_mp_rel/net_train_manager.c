@@ -1078,7 +1078,7 @@ int func_60(int iParam0, int iParam1)
 			vVar1 = { -281.0263f, -319.5532f, 88.02095f };
 			break;
 		case -245962931:
-			iVar0 = joaat("trains3");
+			iVar0 = joaat("TRAINS3");
 			vVar1 = { 1481.509f, 648.3527f, 91.52025f };
 			break;
 		case -500348165:
@@ -1086,23 +1086,23 @@ int func_60(int iParam0, int iParam1)
 			vVar1 = { 1529.881f, 467.6379f, 89.20429f };
 			break;
 		case 476945523:
-			iVar0 = joaat("trains3");
+			iVar0 = joaat("TRAINS3");
 			vVar1 = { 1692.865f, 544.3328f, 97.59906f };
 			break;
 		case -1420724065:
-			iVar0 = joaat("trains3");
+			iVar0 = joaat("TRAINS3");
 			vVar1 = { 2659.843f, -435.6971f, 42.38826f };
 			break;
 		case 1548096282:
-			iVar0 = joaat("trains3");
+			iVar0 = joaat("TRAINS3");
 			vVar1 = { 31.56687f, -29.40786f, 102.3233f };
 			break;
 		case joaat("MACFARLANES_RANCH"):
-			iVar0 = joaat("trains_old_west01");
+			iVar0 = joaat("TRAINS_OLD_WEST01");
 			vVar1 = { -2174.342f, -2508.351f, 64.79848f };
 			break;
 		case 1603023256:
-			iVar0 = joaat("trains_old_west03");
+			iVar0 = joaat("TRAINS_OLD_WEST03");
 			vVar1 = { -4916.622f, -3009.565f, -19.15694f };
 			break;
 		case -421036188:

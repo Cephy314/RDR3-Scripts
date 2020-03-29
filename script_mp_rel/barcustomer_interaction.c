@@ -211,12 +211,12 @@ void func_6()
 			}
 			bLocal_32 = false;
 			bLocal_39 = false;
-			STREAMING::REQUEST_MODEL(joaat("p_coin01x"), false);
+			STREAMING::REQUEST_MODEL(joaat("P_COIN01X"), false);
 			bLocal_38 = false;
 			iLocal_27 = 0;
 			if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 			{
-				STREAMING::REQUEST_MODEL(joaat("p_bottlebeer01x"), false);
+				STREAMING::REQUEST_MODEL(joaat("P_BOTTLEBEER01X"), false);
 				iVar4 = joaat("WORLD_HUMAN_BARTENDER_BEER");
 				iLocal_18 = 130648332;
 				iLocal_19 = -1003673600;
@@ -240,8 +240,8 @@ void func_6()
 				iLocal_25 = 1054334670;
 				iLocal_26 = 1885925117;
 				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 262144, 0, 0);
-				STREAMING::REQUEST_MODEL(joaat("p_shotglass01x"), false);
-				STREAMING::REQUEST_MODEL(joaat("p_bottlejd01x"), false);
+				STREAMING::REQUEST_MODEL(joaat("P_SHOTGLASS01X"), false);
+				STREAMING::REQUEST_MODEL(joaat("P_BOTTLEJD01X"), false);
 			}
 			fVar5 = TASK::_0xB93EA7184BAA85C3(uLocal_16, 1);
 			uLocal_42 = TASK::CREATE_SCENARIO_POINT(iVar4, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(uLocal_16, 1), fVar5, func_21()), (fVar5 - 180f), 0, 0, 0);
@@ -269,13 +269,13 @@ void func_6()
 			}
 			break;
 		case 1:
-			if (!STREAMING::HAS_MODEL_LOADED(joaat("p_coin01x")))
+			if (!STREAMING::HAS_MODEL_LOADED(joaat("P_COIN01X")))
 			{
 				return;
 			}
 			if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_BEER"))
 			{
-				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_bottlebeer01x")))
+				if (!STREAMING::HAS_MODEL_LOADED(joaat("P_BOTTLEBEER01X")))
 				{
 					return;
 				}
@@ -286,11 +286,11 @@ void func_6()
 			}
 			else
 			{
-				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_shotglass01x")))
+				if (!STREAMING::HAS_MODEL_LOADED(joaat("P_SHOTGLASS01X")))
 				{
 					return;
 				}
-				if (!STREAMING::HAS_MODEL_LOADED(joaat("p_bottlejd01x")))
+				if (!STREAMING::HAS_MODEL_LOADED(joaat("P_BOTTLEJD01X")))
 				{
 					return;
 				}
@@ -530,7 +530,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 			{
-				iLocal_53 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+				iLocal_53 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_30, iLocal_53, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARCUSTOMER_BEER", "WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A", 1))
 			{
@@ -544,7 +544,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_54))
 			{
-				iLocal_54 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+				iLocal_54 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_30, iLocal_54, "p_shotGlass01x_PH_L_Hand", "WORLD_HUMAN_BARCUSTOMER_WHISKEY", "WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A", 1))
 			{
@@ -570,7 +570,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 			{
-				iLocal_53 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+				iLocal_53 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_30, iLocal_53, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARCUSTOMER_BEER", "WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A", 1))
 			{
@@ -585,7 +585,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_54))
 			{
-				iLocal_54 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+				iLocal_54 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_30, iLocal_54, "p_shotGlass01x_PH_L_Hand", "WORLD_HUMAN_BARCUSTOMER_WHISKEY", "WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A", 1))
 			{
@@ -1313,15 +1313,15 @@ void func_48()
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53))
 			{
-				iLocal_53 = OBJECT::CREATE_OBJECT(joaat("p_bottlebeer01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+				iLocal_53 = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEBEER01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
 				PED::_0x3BBDD6143FF16F98(iLocal_31, iLocal_53, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARTENDER_BEER", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 				bLocal_39 = true;
 			}
 		}
 		else if (!ENTITY::DOES_ENTITY_EXIST(iLocal_53) && !ENTITY::DOES_ENTITY_EXIST(iLocal_54))
 		{
-			iLocal_53 = OBJECT::CREATE_OBJECT(joaat("p_bottlejd01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
-			iLocal_54 = OBJECT::CREATE_OBJECT(joaat("p_shotglass01x"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+			iLocal_53 = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEJD01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
+			iLocal_54 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(uLocal_42, 1), true, true, false, false, true);
 			PED::_0x3BBDD6143FF16F98(iLocal_31, iLocal_53, "p_bottleJD01x_ph_r_hand", "WORLD_HUMAN_BARTENDER_WHISKEY", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 			PED::_0x3BBDD6143FF16F98(iLocal_31, iLocal_54, "p_shotGlass01x_PH_L_HAND", "WORLD_HUMAN_BARTENDER_WHISKEY", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 			bLocal_39 = true;

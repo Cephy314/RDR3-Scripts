@@ -2539,7 +2539,7 @@ int func_113(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_149(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_149(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_152()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_168(Global_35, joaat("Prop_player_sleep_tent_a_frame"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_149(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_149(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_152()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_168(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_153(iParam0, iVar0) || (fParam1 >= (func_169(iParam0) * func_169(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -2893,7 +2893,7 @@ int func_127(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("flow"):
+		case joaat("FLOW"):
 			return 7;
 		case 1784174017:
 			return 8;
@@ -2901,15 +2901,15 @@ int func_127(int iParam0)
 			return 10;
 		case 2051438686:
 			return 11;
-		case joaat("base"):
+		case joaat("BASE"):
 			return 1;
 		case 1871598:
 			return 9;
-		case joaat("event"):
+		case joaat("EVENT"):
 			return 6;
 		case 1059981727:
 			return 2;
-		case joaat("griefing"):
+		case joaat("GRIEFING"):
 			return 4;
 		case 1191674135:
 			return 3;

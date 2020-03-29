@@ -35,7 +35,7 @@ void __EntryFunction__()
 	uLocal_18 = uLocal_18;
 	while (func_2())
 	{
-		func_3(&uLocal_20, &iLocal_21, 3018.27f, 558.1332f, 44.5092f, joaat("p_doorcatjak_01x"));
+		func_3(&uLocal_20, &iLocal_21, 3018.27f, 558.1332f, 44.5092f, joaat("P_DOORCATJAK_01X"));
 		BUILTIN::WAIT(0);
 		uLocal_19 = uLocal_19;
 	}
@@ -114,7 +114,7 @@ void func_3(var uParam0, int iParam1, vector3 vParam2, int iParam5)
 
 void func_4(int iParam0)
 {
-	if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_Travel"), joaat("MPAC_Travel_012")))
+	if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_TRAVEL"), joaat("MPAC_TRAVEL_012")))
 	{
 		switch (iParam0)
 		{
@@ -496,7 +496,7 @@ int func_8(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }

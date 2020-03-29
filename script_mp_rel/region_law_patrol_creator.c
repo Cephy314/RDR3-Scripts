@@ -306,25 +306,25 @@ void func_9()
 			switch (iVar0)
 			{
 				case 0:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 1:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 2:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 3:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 5:
-					iLocal_32 = joaat("s_m_m_fussarhenchman_01");
+					iLocal_32 = joaat("S_M_M_FUSSARHENCHMAN_01");
 					break;
 				default:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 			}
-			iLocal_33 = joaat("a_c_horse_morgan_flaxenchestnut");
+			iLocal_33 = joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT");
 			iLocal_18 = 2;
 			break;
 		case 2:
@@ -1900,7 +1900,7 @@ void func_61(int iParam0)
 	LAW::_0x819ADD5EF1742F47(iParam0, 2);
 	LAW::_0x819ADD5EF1742F47(iParam0, 1);
 	PED::SET_PED_CONFIG_FLAG(iParam0, 188, true);
-	PED::_0xBD75500141E4725C(iParam0, joaat("law"));
+	PED::_0xBD75500141E4725C(iParam0, joaat("LAW"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam0, 39, true);
 	TASK::_0x9DE63896B176EA94(iParam0, false);
 	WEAPON::SET_PED_DROPS_WEAPONS_WHEN_DEAD(iParam0, false);
@@ -2129,15 +2129,15 @@ int func_75(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bayounwa"):
+		case joaat("BAYOUNWA"):
 			return 0;
-		case joaat("bigvalley"):
+		case joaat("BIGVALLEY"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GREATPLAINS"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -2145,17 +2145,17 @@ int func_75(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("HEARTLANDS"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TALLTREES"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RIOBRAVO"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -2173,7 +2173,7 @@ void func_76(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

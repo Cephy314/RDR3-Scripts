@@ -535,7 +535,7 @@ void func_13(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (func_54(uParam0) - 1))
 	{
-		if (func_55(uParam0, iVar0) == joaat("search"))
+		if (func_55(uParam0, iVar0) == joaat("SEARCH"))
 		{
 		}
 		else
@@ -578,13 +578,13 @@ void func_15(var uParam0, var uParam1)
 		iVar1 = func_58(uParam0, iVar2);
 		switch (func_55(uParam0, iVar2))
 		{
-			case joaat("create"):
+			case joaat("CREATE"):
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					OBJECT::DELETE_OBJECT(&iVar1);
 				}
 				break;
-			case joaat("pin"):
+			case joaat("PIN"):
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (func_59(uParam1, iVar2))
@@ -604,7 +604,7 @@ void func_15(var uParam0, var uParam1)
 					func_66(uParam0, uParam1, iVar2, 0);
 				}
 				break;
-			case joaat("search"):
+			case joaat("SEARCH"):
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (func_59(uParam1, iVar2))
@@ -972,7 +972,7 @@ void func_31(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (func_54(uParam0) - 1))
 	{
-		if (func_55(uParam0, iVar0) == joaat("create"))
+		if (func_55(uParam0, iVar0) == joaat("CREATE"))
 		{
 			STREAMING::REQUEST_MODEL(func_56(uParam0, iVar0), false);
 		}
@@ -1260,16 +1260,16 @@ void func_38(var uParam0, var uParam1)
 		case 1:
 			switch (func_55(uParam0, iVar0))
 			{
-				case joaat("create"):
+				case joaat("CREATE"):
 					if (func_131(uParam0, iVar0))
 					{
 						func_129(uParam0, uParam1, iVar0, 2);
 					}
 					break;
-				case joaat("pin"):
+				case joaat("PIN"):
 					func_129(uParam0, uParam1, iVar0, 3);
 					break;
-				case joaat("search"):
+				case joaat("SEARCH"):
 					func_129(uParam0, uParam1, iVar0, 4);
 					break;
 				default:
@@ -1566,7 +1566,7 @@ void func_42(var uParam0, var uParam1)
 				if (bVar8)
 				{
 					bVar10 = true;
-					iVar12 = joaat("aim");
+					iVar12 = joaat("AIM");
 					iVar13 = 3;
 					iVar14 = 1;
 				}
@@ -1593,7 +1593,7 @@ void func_42(var uParam0, var uParam1)
 	}
 	if (!bVar10)
 	{
-		if (func_169(uParam0, iVar0, joaat("push")))
+		if (func_169(uParam0, iVar0, joaat("PUSH")))
 		{
 			if (fVar7 <= 1.5f)
 			{
@@ -1602,7 +1602,7 @@ void func_42(var uParam0, var uParam1)
 					if ((MISC::GET_GAME_TIMER() - func_171(uParam0, iVar0)) >= 3000)
 					{
 						bVar10 = true;
-						iVar12 = joaat("push");
+						iVar12 = joaat("PUSH");
 						iVar13 = 2;
 						iVar14 = 1;
 					}
@@ -1621,9 +1621,9 @@ void func_42(var uParam0, var uParam1)
 	}
 	if (!bVar10)
 	{
-		if (func_169(uParam0, iVar0, joaat("idle")))
+		if (func_169(uParam0, iVar0, joaat("IDLE")))
 		{
-			iVar15 = func_72(uParam0, joaat("loiter"));
+			iVar15 = func_72(uParam0, joaat("LOITER"));
 			if (VOLUME::_DOES_VOLUME_EXIST(iVar15))
 			{
 				if (func_175(iVar3, iVar15, 1, 0))
@@ -1633,7 +1633,7 @@ void func_42(var uParam0, var uParam1)
 						if ((MISC::GET_GAME_TIMER() - func_176(uParam0, iVar0)) >= 20000)
 						{
 							bVar10 = true;
-							iVar12 = joaat("idle");
+							iVar12 = joaat("IDLE");
 							iVar13 = 1;
 							iVar14 = 2;
 						}
@@ -1673,10 +1673,10 @@ void func_42(var uParam0, var uParam1)
 	{
 		switch (iVar12)
 		{
-			case joaat("push"):
+			case joaat("PUSH"):
 				func_174(uParam0, uParam1, iVar0, 1);
 				break;
-			case joaat("idle"):
+			case joaat("IDLE"):
 				func_174(uParam0, uParam1, iVar0, 2);
 				break;
 		}
@@ -1942,7 +1942,7 @@ int func_63(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	return func_189(Var0, joaat("attributes"));
+	return func_189(Var0, joaat("ATTRIBUTES"));
 }
 
 void func_64(int iParam0, int iParam1)
@@ -1951,7 +1951,7 @@ void func_64(int iParam0, int iParam1)
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(iParam0, false);
 	}
-	if (func_190(iParam1, joaat("invincible")))
+	if (func_190(iParam1, joaat("INVINCIBLE")))
 	{
 		ENTITY::SET_ENTITY_CAN_BE_DAMAGED(iParam0, true);
 		ENTITY::SET_ENTITY_PROOFS(iParam0, 0, false);
@@ -2010,7 +2010,7 @@ int func_71(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("loiter");
+			return joaat("LOITER");
 		default:
 			break;
 	}
@@ -2337,7 +2337,7 @@ int func_105(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("loiter"):
+		case joaat("LOITER"):
 			return 0;
 		default:
 			break;
@@ -2448,7 +2448,7 @@ int func_114(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (func_54(uParam0) - 1))
 	{
-		if (func_55(uParam0, iVar0) != joaat("create"))
+		if (func_55(uParam0, iVar0) != joaat("CREATE"))
 		{
 		}
 		else if (STREAMING::HAS_MODEL_LOADED(func_56(uParam0, iVar0)))
@@ -2938,7 +2938,7 @@ int func_141(var uParam0, var uParam1, int iParam2)
 			WEAPON::GET_CURRENT_PED_WEAPON(iVar6, &iVar8, false, func_238(uParam0, iParam2, iVar7), false);
 			switch (func_239(uParam0, iParam2, iVar7))
 			{
-				case joaat("add"):
+				case joaat("ADD"):
 					if (iVar8 == func_240(uParam0, iParam2, iVar7))
 					{
 					}
@@ -2952,7 +2952,7 @@ int func_141(var uParam0, var uParam1, int iParam2)
 						}
 					}
 					break;
-				case joaat("remove"):
+				case joaat("REMOVE"):
 					WEAPON::REMOVE_WEAPON_FROM_PED(iVar6, iVar8, true, -142743235);
 					break;
 			}
@@ -3982,7 +3982,7 @@ int func_216(var uParam0, int iParam1, var uParam2)
 	}
 	*uParam2 = { func_101(Var0, 1) };
 	uParam2->f_3 = { func_108(Var0) };
-	uParam2->f_10 = func_189(Var0, joaat("attributes"));
+	uParam2->f_10 = func_189(Var0, joaat("ATTRIBUTES"));
 	uParam2->f_11 = func_189(Var0, 391715055);
 	return 1;
 }
@@ -4006,7 +4006,7 @@ void func_219(var uParam0, var uParam1, int iParam2, int iParam3)
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
 	}
-	if (func_190(iParam3, joaat("invincible")))
+	if (func_190(iParam3, joaat("INVINCIBLE")))
 	{
 		ENTITY::SET_ENTITY_CAN_BE_DAMAGED(iVar0, false);
 		ENTITY::SET_ENTITY_PROOFS(iVar0, 255, false);
@@ -4052,7 +4052,7 @@ int func_220(var uParam0, int iParam1, var uParam2)
 	uParam2->f_6 = { func_101(Var0, 1) };
 	*uParam2 = { func_335(Var0) };
 	uParam2->f_3 = { func_336(Var0) };
-	uParam2->f_10 = func_189(Var0, joaat("attributes"));
+	uParam2->f_10 = func_189(Var0, joaat("ATTRIBUTES"));
 	uParam2->f_11 = func_189(Var0, 391715055);
 	return 1;
 }
@@ -4087,7 +4087,7 @@ int func_221(var uParam0, int iParam1, var uParam2)
 	}
 	uParam2->f_6 = { func_101(Var0, 1) };
 	uParam2->f_9 = func_205(Var0, 1);
-	uParam2->f_10 = func_189(Var0, joaat("attributes"));
+	uParam2->f_10 = func_189(Var0, joaat("ATTRIBUTES"));
 	uParam2->f_11 = func_189(Var0, 391715055);
 	return 1;
 }
@@ -4370,7 +4370,7 @@ int func_242(var uParam0, var uParam1, int iParam2)
 		uParam1->f_7.f_6 = { func_350(Var0) };
 	}
 	Var0.f_1 = uVar5;
-	uParam1->f_1.f_5 = func_189(Var0, joaat("scenario"));
+	uParam1->f_1.f_5 = func_189(Var0, joaat("SCENARIO"));
 	return 1;
 }
 
@@ -4669,9 +4669,9 @@ int func_290(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("aim"):
+		case joaat("AIM"):
 			return 3;
-		case joaat("push"):
+		case joaat("PUSH"):
 			return 3;
 		case 1526847194:
 			return 3;
@@ -4687,9 +4687,9 @@ int func_291(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("aim"):
+		case joaat("AIM"):
 			return -1196486071;
-		case joaat("push"):
+		case joaat("PUSH"):
 			return -1931716778;
 		case 1526847194:
 			return 664793774;
@@ -4891,13 +4891,13 @@ int func_307(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("aim"):
+		case joaat("AIM"):
 			return 0;
 		case -1196486071:
 			return 0;
-		case joaat("idle"):
+		case joaat("IDLE"):
 			return 4;
-		case joaat("push"):
+		case joaat("PUSH"):
 			return 3;
 		case -1931716778:
 			return 3;
@@ -5039,7 +5039,7 @@ int func_322(int iParam0, int iParam1)
 		case 2:
 			return -1196486071;
 		case 3:
-			return joaat("aim");
+			return joaat("AIM");
 		case 4:
 			return 1532606305;
 		case 5:
@@ -5047,9 +5047,9 @@ int func_322(int iParam0, int iParam1)
 		case 6:
 			return -1931716778;
 		case 7:
-			return joaat("push");
+			return joaat("PUSH");
 		case 8:
-			return joaat("idle");
+			return joaat("IDLE");
 		default:
 			break;
 	}
@@ -5078,7 +5078,7 @@ int func_323(var uParam0, var uParam1, int iParam2, int iParam3)
 	switch (Var0.f_6)
 	{
 		case 963581738:
-			bVar7 = func_375(func_57(uParam0, iParam2), &(Var0.f_1), joaat("speech_params_allow_repeat"), 0, 0, 0, 0, 0);
+			bVar7 = func_375(func_57(uParam0, iParam2), &(Var0.f_1), joaat("SPEECH_PARAMS_ALLOW_REPEAT"), 0, 0, 0, 0, 0);
 			break;
 		case 479504197:
 			func_376(uParam0);
@@ -5130,16 +5130,16 @@ var func_324(struct<5> Param0, int iParam5)
 			{
 				switch (iParam5)
 				{
-					case joaat("attributes"):
+					case joaat("ATTRIBUTES"):
 						iVar2 = func_325(iVar1, 1);
 						break;
 					case -344945370:
 						iVar2 = func_344(iVar1, 1);
 						break;
-					case joaat("scenario"):
+					case joaat("SCENARIO"):
 						iVar2 = func_351(iVar1, 1);
 						break;
-					case joaat("veg_mod"):
+					case joaat("VEG_MOD"):
 						iVar2 = func_383(iVar1, 1);
 						break;
 					case 1275965103:
@@ -5177,7 +5177,7 @@ int func_325(int iParam0, int iParam1)
 	{
 		case -1857841301:
 			return 2;
-		case joaat("invincible"):
+		case joaat("INVINCIBLE"):
 			return 1;
 		case -479622762:
 			return 3;
@@ -5357,7 +5357,7 @@ int func_340(int iParam0, int iParam1)
 	{
 		case -1931716778:
 			return 6;
-		case joaat("aim"):
+		case joaat("AIM"):
 			return 3;
 		case -1196486071:
 			return 2;
@@ -5369,9 +5369,9 @@ int func_340(int iParam0, int iParam1)
 			return 4;
 		case 1730381531:
 			return 5;
-		case joaat("idle"):
+		case joaat("IDLE"):
 			return 8;
-		case joaat("push"):
+		case joaat("PUSH"):
 			return 7;
 		default:
 			break;
@@ -5906,11 +5906,11 @@ int func_383(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("flatten"):
+		case joaat("FLATTEN"):
 			return 8;
 		case -1155906572:
 			return 5;
-		case joaat("cull"):
+		case joaat("CULL"):
 			return 7;
 		case -560457212:
 			return 3;
@@ -5918,17 +5918,17 @@ int func_383(int iParam0, int iParam1)
 			return 4;
 		case 331632914:
 			return 9;
-		case joaat("debris"):
+		case joaat("DEBRIS"):
 			return 0;
 		case 1152024837:
 			return 10;
 		case joaat("BUSHES"):
 			return 2;
-		case joaat("grass"):
+		case joaat("GRASS"):
 			return 1;
 		case 1955535331:
 			return 6;
-		case joaat("push"):
+		case joaat("PUSH"):
 			return 11;
 		default:
 			break;
@@ -5966,7 +5966,7 @@ int func_385(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("dummy"):
+		case joaat("DUMMY"):
 			return 0;
 		default:
 			break;
@@ -5985,9 +5985,9 @@ int func_386(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("right_holster"):
+		case joaat("RIGHT_HOLSTER"):
 			return 2;
-		case joaat("left_holster"):
+		case joaat("LEFT_HOLSTER"):
 			return 3;
 		default:
 			break;
@@ -6001,7 +6001,7 @@ void func_387(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

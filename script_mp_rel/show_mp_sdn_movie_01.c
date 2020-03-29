@@ -2901,8 +2901,8 @@ int func_21(var uParam0)
 {
 	uParam0->f_1564 = "PL_TOON_DIRECT_CURRENT_DAMNATION";
 	uParam0->f_1563 = "bla_theater";
-	uParam0->f_1574 = joaat("script_rt_val_magiclantern");
-	uParam0->f_1575 = joaat("s_movieprojection01x");
+	uParam0->f_1574 = joaat("SCRIPT_RT_VAL_MAGICLANTERN");
+	uParam0->f_1575 = joaat("S_MOVIEPROJECTION01X");
 	uParam0->f_1560 = 0;
 	uParam0->f_1559 = 1;
 	uParam0->f_1561 = 1;
@@ -3337,7 +3337,7 @@ int func_41()
 	{
 		return 1;
 	}
-	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("end_of_movie_marker")))
+	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("END_OF_MOVIE_MARKER")))
 	{
 		return 1;
 	}
@@ -4245,7 +4245,7 @@ void func_101(var uParam0, int iParam1)
 
 int func_102()
 {
-	return joaat("cs_escapeartist");
+	return joaat("CS_ESCAPEARTIST");
 }
 
 int func_103(int iParam0)
@@ -4257,11 +4257,11 @@ int func_103(int iParam0)
 		case 2:
 		case 3:
 		case 4:
-			return joaat("p_magiclanternslide01x");
+			return joaat("P_MAGICLANTERNSLIDE01X");
 		default:
 			break;
 	}
-	return joaat("p_magiclanternslide01x");
+	return joaat("P_MAGICLANTERNSLIDE01X");
 }
 
 Vector3 func_104(int iParam0)
@@ -6520,9 +6520,9 @@ int func_165(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_lamp35x");
+			return joaat("P_LAMP35X");
 		case 1:
-			return joaat("p_lampwall03x");
+			return joaat("P_LAMPWALL03X");
 		case 2:
 			return 0;
 	}
@@ -6596,9 +6596,9 @@ int func_169(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_stageshelllight01x");
+			return joaat("P_STAGESHELLLIGHT01X");
 		case 1:
-			return joaat("p_bulb_g_stage01x");
+			return joaat("P_BULB_G_STAGE01X");
 		case 2:
 			return 0;
 	}
@@ -6705,9 +6705,9 @@ int func_172(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_lampwall04x");
+			return joaat("P_LAMPWALL04X");
 		case 1:
-			return joaat("p_napoleonlight01x");
+			return joaat("P_NAPOLEONLIGHT01X");
 		case 2:
 			return 0;
 	}
@@ -6754,11 +6754,11 @@ int func_174(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_stageshelllight_long01x");
+					return joaat("P_STAGESHELLLIGHT_LONG01X");
 				case 1:
-					return joaat("p_stageshelllight_red01x");
+					return joaat("P_STAGESHELLLIGHT_RED01X");
 				case 2:
-					return joaat("p_stageshelllight_red01x");
+					return joaat("P_STAGESHELLLIGHT_RED01X");
 				default:
 					break;
 			}
@@ -7488,7 +7488,7 @@ void func_210(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

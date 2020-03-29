@@ -1529,7 +1529,7 @@ void func_70(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_136(Global_1935630, 8192);
-	func_138(func_137(-1532769513, joaat("areas")), 1);
+	func_138(func_137(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1874,14 +1874,14 @@ int func_77(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -5095,13 +5095,13 @@ Vector3 func_154(var uParam0)
 		iVar2 = MISC::GET_HASH_KEY(sVar1);
 		switch (iVar2)
 		{
-			case joaat("0832_s_m_m_trainstationworker_01_white_01"):
+			case joaat("0832_S_M_M_TRAINSTATIONWORKER_01_WHITE_01"):
 				uParam0->f_37 = "0832_TRAINWORKER";
 				return func_210("WALLST_TSW3SICK");
-			case joaat("0833_s_m_m_trainstationworker_01_white_02"):
+			case joaat("0833_S_M_M_TRAINSTATIONWORKER_01_WHITE_02"):
 				uParam0->f_37 = "0833_TRAINWORKER";
 				return func_210("WALLST_TSW2SICK");
-			case joaat("0834_s_m_m_trainstationworker_01_white_03"):
+			case joaat("0834_S_M_M_TRAINSTATIONWORKER_01_WHITE_03"):
 				uParam0->f_37 = "0834_TRAINWORKER";
 				return func_210("WALLST_TSW1SICK");
 			default:
@@ -5810,7 +5810,7 @@ int func_183()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -6760,7 +6760,7 @@ void func_240()
 			func_293(8);
 		}
 	}
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("generic_wagon_fence_core")) > 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("GENERIC_WAGON_FENCE_CORE")) > 0)
 	{
 		func_293(4);
 	}
@@ -6879,7 +6879,7 @@ int func_244()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}

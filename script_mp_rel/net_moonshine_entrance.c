@@ -770,7 +770,7 @@ void func_15(int* iParam0)
 				{
 					if (func_85())
 					{
-						iParam0->f_2 = joaat("mp006_p_wreath01x");
+						iParam0->f_2 = joaat("MP006_P_WREATH01X");
 					}
 				}
 				if (iParam0->f_2 != 0)
@@ -3085,7 +3085,7 @@ bool func_108(int iParam0, bool bParam1)
 
 int func_109()
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("camera_item")) > 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("CAMERA_ITEM")) > 0)
 	{
 		return 1;
 	}
@@ -3363,7 +3363,7 @@ void func_121(bool bParam0)
 	{
 		Global_1956186 = 1;
 	}
-	if (func_193(joaat("camera_item")))
+	if (func_193(joaat("CAMERA_ITEM")))
 	{
 	}
 	if (bParam0 && Global_1939178->f_38 == joaat("WEAPON_KIT_CAMERA"))

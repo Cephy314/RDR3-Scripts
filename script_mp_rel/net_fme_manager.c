@@ -781,13 +781,13 @@ void func_41()
 			func_61(0);
 			return;
 		}
-		if (func_62(joaat("standard")))
+		if (func_62(joaat("STANDARD")))
 		{
 			func_39();
 		}
 		else
 		{
-			func_63(joaat("standard"));
+			func_63(joaat("STANDARD"));
 		}
 	}
 }
@@ -814,13 +814,13 @@ void func_42()
 			func_61(1);
 			return;
 		}
-		if (func_62(joaat("themed")))
+		if (func_62(joaat("THEMED")))
 		{
 			func_40();
 		}
 		else
 		{
-			func_63(joaat("themed"));
+			func_63(joaat("THEMED"));
 		}
 	}
 }
@@ -1045,14 +1045,14 @@ bool func_62(int iParam0)
 	MISC::SET_RANDOM_SEED(iVar0);
 	switch (iParam0)
 	{
-		case joaat("standard"):
+		case joaat("STANDARD"):
 			if (!func_76(&iVar1, &iVar2, &iVar3))
 			{
 				MISC::SET_RANDOM_SEED(MISC::GET_GAME_TIMER());
 				return false;
 			}
 			break;
-		case joaat("themed"):
+		case joaat("THEMED"):
 			if (!func_77(&iVar1, &iVar2, &iVar3))
 			{
 				MISC::SET_RANDOM_SEED(MISC::GET_GAME_TIMER());
@@ -1066,10 +1066,10 @@ bool func_62(int iParam0)
 	{
 		switch (iParam0)
 		{
-			case joaat("standard"):
+			case joaat("STANDARD"):
 				Global_1184573->f_224 = iVar1;
 				break;
-			case joaat("themed"):
+			case joaat("THEMED"):
 				Global_1184573->f_225 = iVar1;
 				break;
 		}
@@ -1092,10 +1092,10 @@ void func_63(int iParam0)
 	CLOCK::_0x28EEACE9B43D9597(&uVar0, &Var14, &Var7);
 	switch (iParam0)
 	{
-		case joaat("standard"):
+		case joaat("STANDARD"):
 			Global_1184573->f_210 = { Var7 };
 			break;
-		case joaat("themed"):
+		case joaat("THEMED"):
 			Global_1184573->f_217 = { Var7 };
 			break;
 	}
@@ -1271,9 +1271,9 @@ struct<7> func_74(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("standard"):
+		case joaat("STANDARD"):
 			return Global_1184573->f_210;
-		case joaat("themed"):
+		case joaat("THEMED"):
 			return Global_1184573->f_217;
 		default:
 			break;
@@ -1531,7 +1531,7 @@ void func_82(int iParam0)
 		return;
 	}
 	Global_1185132->f_1[iParam0 /*4*/] = func_113(iParam0);
-	if (&Global_1185132->f_1[iParam0 /*4*/] == joaat("themed"))
+	if (&Global_1185132->f_1[iParam0 /*4*/] == joaat("THEMED"))
 	{
 		(Global_1185132->f_1[iParam0 /*4*/])->f_3 = func_114(iParam0);
 	}
@@ -2913,23 +2913,23 @@ int func_133(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("micro"):
+		case joaat("MICRO"):
 			return 128;
-		case joaat("net_fetch_hideout_leader"):
+		case joaat("NET_FETCH_HIDEOUT_LEADER"):
 			return 200;
 		case 746035441:
 			return 400;
-		case joaat("mini"):
+		case joaat("MINI"):
 			return 512;
 		case 1567969312:
 			return 600;
 		case 849942934:
 			return 800;
-		case joaat("default"):
+		case joaat("DEFAULT"):
 			return 1024;
 		case 662654967:
 			return 1026;
-		case joaat("update"):
+		case joaat("UPDATE"):
 			return 1300;
 		case 356437857:
 			return 1301;
@@ -2939,7 +2939,7 @@ int func_133(int iParam0)
 			return 1600;
 		case joaat("POSSE_FEUD"):
 			return 1800;
-		case joaat("pause_menu_script"):
+		case joaat("PAUSE_MENU_SCRIPT"):
 			return 2000;
 		case 1371455820:
 			return 2024;
@@ -2957,7 +2957,7 @@ int func_133(int iParam0)
 			return 2549;
 		case 1875090462:
 			return 2050;
-		case joaat("net_cutscene"):
+		case joaat("NET_CUTSCENE"):
 			return 2051;
 		case 141976779:
 			return 2452;
@@ -2973,15 +2973,15 @@ int func_133(int iParam0)
 			return 3081;
 		case -1582256496:
 			return 3088;
-		case joaat("net_gun_for_hire_online"):
+		case joaat("NET_GUN_FOR_HIRE_ONLINE"):
 			return 3090;
-		case joaat("net_beat_manager"):
+		case joaat("NET_BEAT_MANAGER"):
 			return 3500;
-		case joaat("script_xml"):
+		case joaat("SCRIPT_XML"):
 			return 4592;
 		case -299117668:
 			return 4700;
-		case joaat("camp"):
+		case joaat("CAMP"):
 			return 5000;
 		case 1442743587:
 			return 5001;
@@ -2993,11 +2993,11 @@ int func_133(int iParam0)
 			return 5501;
 		case -544337485:
 			return 5502;
-		case joaat("region"):
+		case joaat("REGION"):
 			return 5503;
 		case joaat("SHOWS"):
 			return 5504;
-		case joaat("fishing"):
+		case joaat("FISHING"):
 			return 5505;
 		case 2122926971:
 			return 5506;
@@ -3007,13 +3007,13 @@ int func_133(int iParam0)
 			return 6001;
 		case -45677744:
 			return 6002;
-		case joaat("shop"):
+		case joaat("SHOP"):
 			return 6005;
-		case joaat("net_gun_for_hire_offline"):
+		case joaat("NET_GUN_FOR_HIRE_OFFLINE"):
 			return 6010;
-		case joaat("camp_item"):
+		case joaat("CAMP_ITEM"):
 			return 6400;
-		case joaat("minigame"):
+		case joaat("MINIGAME"):
 			return 6500;
 		case 364255091:
 			return 7000;
@@ -3033,31 +3033,31 @@ int func_133(int iParam0)
 			return 10003;
 		case 2013232686:
 			return 14335;
-		case joaat("transition"):
+		case joaat("TRANSITION"):
 			return 25500;
-		case joaat("mission_creator"):
+		case joaat("MISSION_CREATOR"):
 			return 40500;
-		case joaat("mission"):
+		case joaat("MISSION"):
 			return 45000;
 		case 56269207:
 			return 68000;
-		case joaat("net_background"):
+		case joaat("NET_BACKGROUND"):
 			return 1631;
-		case joaat("net_moonshine_property"):
+		case joaat("NET_MOONSHINE_PROPERTY"):
 			return 3482;
-		case joaat("soak_test"):
+		case joaat("SOAK_TEST"):
 			return 4088;
-		case joaat("network_bot"):
+		case joaat("NETWORK_BOT"):
 			return 4096;
-		case joaat("debug_script"):
+		case joaat("DEBUG_SCRIPT"):
 			return 4080;
-		case joaat("debug_menu"):
+		case joaat("DEBUG_MENU"):
 			return 50000;
 		case 708358771:
 			return 65536;
 		case -800826243:
 			return 32768;
-		case joaat("virtualization_unit_test_support"):
+		case joaat("VIRTUALIZATION_UNIT_TEST_SUPPORT"):
 			return 129;
 		default:
 			break;
@@ -3296,12 +3296,12 @@ int func_142(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("standard"):
+		case joaat("STANDARD"):
 		case 1038512660:
 			iVar0 = 0;
 			iVar1 = 0;
 			break;
-		case joaat("themed"):
+		case joaat("THEMED"):
 			iVar0 = 1;
 			iVar1 = 1;
 			break;
@@ -3824,7 +3824,7 @@ int func_164(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return joaat("challenges");
+			return joaat("CHALLENGES");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -4490,7 +4490,7 @@ int func_194(int iParam0, int iParam1, int iParam2, int iParam3, struct<2> Param
 	{
 		if (!func_225(268435456))
 		{
-			if (!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")))
+			if (!UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU")))
 			{
 				func_226(1, 0);
 			}
@@ -4622,16 +4622,16 @@ int func_201(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("CHALLENGE");
 			break;
 		case -3:
 			iVar0 = 1300413597;
 			break;
 		case 1:
-			iVar0 = joaat("feature");
+			iVar0 = joaat("FEATURE");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -4655,16 +4655,16 @@ int func_201(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("TITLE");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -4726,7 +4726,7 @@ int func_203(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case joaat("ambush"):
+		case joaat("AMBUSH"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -4774,15 +4774,15 @@ int func_204(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("blackjack"):
+		case joaat("BLACKJACK"):
 			return 0;
-		case joaat("Dominoes"):
+		case joaat("DOMINOES"):
 			return 1;
-		case joaat("Poker"):
+		case joaat("POKER"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("milking_cow"):
+		case joaat("MILKING_COW"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -4800,7 +4800,7 @@ int func_205(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("challenges"):
+		case joaat("CHALLENGES"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -4870,9 +4870,9 @@ int func_207(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("null"):
+		case joaat("NULL"):
 			return -1;
-		case joaat("normal"):
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -4886,17 +4886,17 @@ int func_207(int iParam0)
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("bountyhunter"):
+		case joaat("BOUNTYHUNTER"):
 			return 7;
-		case joaat("Gunslinger"):
+		case joaat("GUNSLINGER"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("hunter"):
+		case joaat("HUNTER"):
 			return 10;
-		case joaat("Trader"):
+		case joaat("TRADER"):
 			return 11;
-		case joaat("Collector"):
+		case joaat("COLLECTOR"):
 			return 12;
 		case -218234180:
 			return 13;

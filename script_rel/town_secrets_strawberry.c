@@ -43,7 +43,7 @@ void __EntryFunction__()
 {
 	fLocal_7 = 1f;
 	fLocal_8 = 1f;
-	iLocal_20 = joaat("s_ufo01x");
+	iLocal_20 = joaat("S_UFO01X");
 	fLocal_27 = 15f;
 	fLocal_28 = 0f;
 	fLocal_29 = 0f;

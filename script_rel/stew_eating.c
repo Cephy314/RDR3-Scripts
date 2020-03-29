@@ -60,7 +60,7 @@ void __EntryFunction__()
 		}
 	}
 	STREAMING::_REQUEST_CLIP_SET_BY_HASH(-703333072);
-	STREAMING::REQUEST_MODEL(joaat("p_spoon01x_food"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_SPOON01X_FOOD"), false);
 	Var0.f_1 = bVar180;
 	if (!ScriptParam_0.f_3)
 	{
@@ -75,9 +75,9 @@ void __EntryFunction__()
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ENTER"), false);
 			if (!ENTITY::DOES_ENTITY_EXIST(Var0.f_179))
 			{
-				if (STREAMING::HAS_MODEL_LOADED(joaat("p_spoon01x_food")))
+				if (STREAMING::HAS_MODEL_LOADED(joaat("P_SPOON01X_FOOD")))
 				{
-					Var0.f_179 = OBJECT::CREATE_OBJECT(joaat("p_spoon01x_food"), Global_36, false, true, false, false, true);
+					Var0.f_179 = OBJECT::CREATE_OBJECT(joaat("P_SPOON01X_FOOD"), Global_36, false, true, false, false, true);
 					ENTITY::ATTACH_ENTITY_TO_ENTITY(Var0.f_179, Global_35, PED::GET_PED_BONE_INDEX(Global_35, 7966), 0f, 0f, 0f, 0f, 0f, 0f, false, false, false, false, 2, true, false, false);
 					ENTITY::SET_ENTITY_VISIBLE(Var0.f_179, false);
 				}
@@ -938,7 +938,7 @@ void func_34(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (bParam3 || func_20(bParam0, -537818634))
 	{
-		func_70(func_69(joaat("medicine_items_used")), 1);
+		func_70(func_69(joaat("MEDICINE_ITEMS_USED")), 1);
 	}
 	if (func_20(bParam0, -1457797660))
 	{
@@ -950,60 +950,60 @@ void func_34(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (func_20(bParam0, 1939071949))
 	{
-		func_70(func_73(joaat("used"), joaat("TONIC")), 1);
+		func_70(func_73(joaat("USED"), joaat("TONIC")), 1);
 	}
 	switch (bParam0)
 	{
 		case joaat("CONSUMABLE_OAT_CAKES"):
 		case joaat("CONSUMABLE_SUGARCUBE"):
 		case joaat("CONSUMABLE_HAYCUBE"):
-			func_70(func_73(joaat("used"), joaat("FEED_BAG")), 1);
+			func_70(func_73(joaat("USED"), joaat("FEED_BAG")), 1);
 			break;
 	}
 	switch (bParam0)
 	{
 		case joaat("CONSUMABLE_MOONSHINE"):
-			func_70(func_73(joaat("used"), joaat("MOONSHINE")), 1);
+			func_70(func_73(joaat("USED"), joaat("MOONSHINE")), 1);
 			break;
 		case joaat("CONSUMABLE_WHISKEY_USED"):
 		case joaat("CONSUMABLE_WHISKEY"):
-			func_70(func_73(joaat("used"), joaat("whiskey")), 1);
+			func_70(func_73(joaat("USED"), joaat("WHISKEY")), 1);
 			break;
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM_USED"):
 		case joaat("CONSUMABLE_COCAINE_CHEWING_GUM"):
-			func_70(func_73(joaat("used"), joaat("COCAINE_GUM")), 1);
+			func_70(func_73(joaat("USED"), joaat("COCAINE_GUM")), 1);
 			break;
 		case joaat("CONSUMABLE_SNAKE_OIL"):
 		case joaat("CONSUMABLE_POTENT_SNAKE_OIL"):
 		case joaat("CONSUMABLE_SNAKE_OIL_USED"):
-			func_70(func_73(joaat("used"), joaat("SNAKE_OIL")), 1);
+			func_70(func_73(joaat("USED"), joaat("SNAKE_OIL")), 1);
 			break;
 		case joaat("CONSUMABLE_CHEWING_TOBACCO"):
 		case joaat("CONSUMABLE_CHEWING_TOBACCO_USED"):
-			func_70(func_73(joaat("used"), joaat("CHEWING_TOBACCO")), 1);
+			func_70(func_73(joaat("USED"), joaat("CHEWING_TOBACCO")), 1);
 			break;
 		case joaat("CONSUMABLE_HORSE_MEDICINE"):
 		case joaat("CONSUMABLE_HORSE_MEDICINE_USED"):
-			func_70(func_73(joaat("used"), joaat("HORSE_PILLS")), 1);
+			func_70(func_73(joaat("USED"), joaat("HORSE_PILLS")), 1);
 			break;
 		case 433340626: /* GXTEntry: "Opened Cover Scent" */
 		case 1895068170: /* GXTEntry: "Cover Scent Lotion" */
-			func_70(func_73(joaat("used"), joaat("COVER_SCENT")), 1);
+			func_70(func_73(joaat("USED"), joaat("COVER_SCENT")), 1);
 			break;
 		case joaat("CONSUMABLE_HERBIVORE_BAIT"):
 		case joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT"):
-			func_70(func_73(joaat("used"), joaat("POTENT_HERBIVORE_BAIT")), 1);
+			func_70(func_73(joaat("USED"), joaat("POTENT_HERBIVORE_BAIT")), 1);
 			break;
 		case joaat("CONSUMABLE_PREDATOR_BAIT"):
 		case joaat("CONSUMABLE_POTENT_PREDATOR_BAIT"):
-			func_70(func_73(joaat("used"), joaat("POTENT_PREDATOR_BAIT")), 1);
+			func_70(func_73(joaat("USED"), joaat("POTENT_PREDATOR_BAIT")), 1);
 			break;
 	}
 	if (func_45() == -1)
 	{
 		if (bParam0 == -1976480343)
 		{
-			func_70(func_73(joaat("used"), joaat("SPECIAL_TONIC")), 1);
+			func_70(func_73(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam2)
@@ -1613,7 +1613,7 @@ void func_72(int iParam0, bool bParam1)
 {
 	struct<2> Var0;
 
-	Var0 = { func_73(joaat("eaten"), func_108(iParam0)) };
+	Var0 = { func_73(joaat("EATEN"), func_108(iParam0)) };
 	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
 	func_70(func_109(joaat("HERBS_EATEN")), bParam1);
 }
@@ -1633,7 +1633,7 @@ int func_74()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -2820,7 +2820,7 @@ float func_134()
 
 float func_135()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 0f;
 	}

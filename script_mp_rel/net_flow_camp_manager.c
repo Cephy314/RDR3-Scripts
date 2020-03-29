@@ -59,8 +59,8 @@ void __EntryFunction__()
 	Var0.f_4.f_1.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var0.f_4.f_1.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var0.f_4.f_1.f_293 = 2;
-	Var0.f_4.f_1.f_293.f_1.f_1 = joaat("testpropgroup01x");
-	Var0.f_4.f_1.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
+	Var0.f_4.f_1.f_293.f_1.f_1 = joaat("TESTPROPGROUP01X");
+	Var0.f_4.f_1.f_293.f_1.f_8.f_1 = joaat("TESTPROPGROUP01X");
 	Var0.f_4.f_1.f_310 = 1;
 	Var0.f_4.f_1.f_326 = 6;
 	Var0.f_4.f_1.f_375 = 10;
@@ -100,8 +100,8 @@ void __EntryFunction__()
 	Var0.f_4.f_1.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var0.f_4.f_1.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var0.f_4.f_1.f_420.f_293 = 2;
-	Var0.f_4.f_1.f_420.f_293.f_1.f_1 = joaat("testpropgroup01x");
-	Var0.f_4.f_1.f_420.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
+	Var0.f_4.f_1.f_420.f_293.f_1.f_1 = joaat("TESTPROPGROUP01X");
+	Var0.f_4.f_1.f_420.f_293.f_1.f_8.f_1 = joaat("TESTPROPGROUP01X");
 	Var0.f_4.f_1.f_420.f_310 = 1;
 	Var0.f_4.f_1.f_420.f_326 = 6;
 	Var0.f_4.f_1.f_420.f_375 = 10;
@@ -141,8 +141,8 @@ void __EntryFunction__()
 	Var0.f_4.f_1.f_420.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var0.f_4.f_1.f_420.f_420.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var0.f_4.f_1.f_420.f_420.f_293 = 2;
-	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_1 = joaat("testpropgroup01x");
-	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
+	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_1 = joaat("TESTPROPGROUP01X");
+	Var0.f_4.f_1.f_420.f_420.f_293.f_1.f_8.f_1 = joaat("TESTPROPGROUP01X");
 	Var0.f_4.f_1.f_420.f_420.f_310 = 1;
 	Var0.f_4.f_1.f_420.f_420.f_326 = 6;
 	Var0.f_4.f_1.f_420.f_420.f_375 = 10;
@@ -201,7 +201,7 @@ int func_3()
 	if (func_12(Var0))
 	{
 		iVar2 = func_13(Var0);
-		if (iVar2 > 13 && !UIAPPS::_IS_APP_RUNNING(joaat("lobbies_menu")))
+		if (iVar2 > 13 && !UIAPPS::_IS_APP_RUNNING(joaat("LOBBIES_MENU")))
 		{
 			return 1;
 		}
@@ -210,7 +210,7 @@ int func_3()
 	{
 		return 1;
 	}
-	if (func_14() && !UIAPPS::_IS_APP_RUNNING(joaat("lobbies_menu")))
+	if (func_14() && !UIAPPS::_IS_APP_RUNNING(joaat("LOBBIES_MENU")))
 	{
 		return 1;
 	}
@@ -218,7 +218,7 @@ int func_3()
 	{
 		return 1;
 	}
-	if (func_17(func_16(joaat("bounty_board"), PLAYER::PLAYER_ID(), 1, 0)))
+	if (func_17(func_16(joaat("BOUNTY_BOARD"), PLAYER::PLAYER_ID(), 1, 0)))
 	{
 		return 1;
 	}
@@ -834,8 +834,8 @@ void func_26(var uParam0)
 	Var1.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 	Var1.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 	Var1.f_293 = 2;
-	Var1.f_293.f_1.f_1 = joaat("testpropgroup01x");
-	Var1.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
+	Var1.f_293.f_1.f_1 = joaat("TESTPROPGROUP01X");
+	Var1.f_293.f_1.f_8.f_1 = joaat("TESTPROPGROUP01X");
 	Var1.f_310 = 1;
 	Var1.f_326 = 6;
 	Var1.f_375 = 10;
@@ -1546,8 +1546,8 @@ int func_62(var uParam0, vector3 vParam1, bool bParam4)
 		Var4.f_127.f_1.f_33.f_33.f_33.f_33.f_4 = 3;
 		Var4.f_127.f_1.f_33.f_33.f_33.f_33.f_19 = -1;
 		Var4.f_293 = 2;
-		Var4.f_293.f_1.f_1 = joaat("testpropgroup01x");
-		Var4.f_293.f_1.f_8.f_1 = joaat("testpropgroup01x");
+		Var4.f_293.f_1.f_1 = joaat("TESTPROPGROUP01X");
+		Var4.f_293.f_1.f_8.f_1 = joaat("TESTPROPGROUP01X");
 		Var4.f_310 = 1;
 		Var4.f_326 = 6;
 		Var4.f_375 = 10;
@@ -1869,53 +1869,53 @@ int func_82(var uParam0, vector3 vParam1)
 				case 9:
 				default:
 					return 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_CLIVE");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 1135.67f, -1386.39f, 63.68f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("MP_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { 1134.67f, -1385.39f, 63.68f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT");
 					(uParam0->f_127[2 /*33*/])->f_9 = { 1133.67f, -1384.39f, 63.68f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_1 = joaat("a_c_horse_shire_lightgrey");
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_HORSE_SHIRE_LIGHTGREY");
 					(uParam0->f_127[3 /*33*/])->f_9 = { 1132.67f, -1383.39f, 63.68f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cratetable01x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CRATETABLE01X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { 1136.753f, -1385.331f, 63.332f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 6.73f, -1.948f, -49.086f };
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { 1137.671f, -1384.275f, 63.535f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 5.521f, -6.622f, 0.32f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "STOOL0", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { 1135.873f, -1386.258f, 63.206f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0.889f, -7.076f, 0.375f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_chips01x10_rho");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CHIPS01X10_RHO");
 					(uParam0->f_6[3 /*12*/])->f_2 = { 1136.753f, -1385.331f, 63.332f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 6.73f, -1.948f, -49.086f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "CHIPS0", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_6[4 /*12*/])->f_1 = joaat("p_chips05x10_rho");
+					(uParam0->f_6[4 /*12*/])->f_1 = joaat("P_CHIPS05X10_RHO");
 					(uParam0->f_6[4 /*12*/])->f_2 = { 1136.753f, -1385.331f, 63.332f };
 					(uParam0->f_6[4 /*12*/])->f_5 = { 6.73f, -1.948f, -49.086f };
 					StringCopy(&((uParam0->f_6[4 /*12*/])->f_8.f_1), "CHIPS1", 24);
 					(uParam0->f_6[4 /*12*/])->f_8 = 0;
-					(uParam0->f_6[5 /*12*/])->f_1 = joaat("p_cardssplit01x");
+					(uParam0->f_6[5 /*12*/])->f_1 = joaat("P_CARDSSPLIT01X");
 					(uParam0->f_6[5 /*12*/])->f_2 = { 1136.753f, -1385.331f, 63.332f };
 					(uParam0->f_6[5 /*12*/])->f_5 = { 6.73f, -1.948f, -49.086f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("WAGON05X");
 					(uParam0->f_326[0 /*8*/])->f_2 = { 1135.12f, -1383.86f, 63.259f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -44.4f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -1929,53 +1929,53 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_409[0 /*10*/])->f_5 = 1f;
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 				case 10:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_CLIVE");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -444.3115f, 506.6391f, 97.084f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("MP_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -448.3115f, 506.6391f, 97.084f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -443.3115f, 505.6391f, 97.084f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_1 = joaat("a_c_horse_shire_lightgrey");
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_HORSE_SHIRE_LIGHTGREY");
 					(uParam0->f_127[3 /*33*/])->f_9 = { -442.3115f, 504.6391f, 97.084f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -446.9913f, 505.8683f, 97.093f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 3.557f, -1.415f, 84.858f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "STOOL0", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cratetable01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CRATETABLE01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -446.3115f, 506.6391f, 97.084f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 2.59f, -42.6f };
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -445.709f, 507.4592f, 97.086f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 3.2f, -7.305f, 85.035f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_chips01x10_rho");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CHIPS01X10_RHO");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -446.3115f, 506.6391f, 97.084f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 0f, 2.59f, -42.6f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "CHIPS0", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_6[4 /*12*/])->f_1 = joaat("p_chips05x10_rho");
+					(uParam0->f_6[4 /*12*/])->f_1 = joaat("P_CHIPS05X10_RHO");
 					(uParam0->f_6[4 /*12*/])->f_2 = { -446.3115f, 506.6391f, 97.084f };
 					(uParam0->f_6[4 /*12*/])->f_5 = { 0f, 2.59f, -42.6f };
 					StringCopy(&((uParam0->f_6[4 /*12*/])->f_8.f_1), "CHIPS1", 24);
 					(uParam0->f_6[4 /*12*/])->f_8 = 0;
-					(uParam0->f_6[5 /*12*/])->f_1 = joaat("p_cardssplit01x");
+					(uParam0->f_6[5 /*12*/])->f_1 = joaat("P_CARDSSPLIT01X");
 					(uParam0->f_6[5 /*12*/])->f_2 = { -446.3115f, 506.6391f, 97.084f };
 					(uParam0->f_6[5 /*12*/])->f_5 = { 0f, 2.59f, -42.6f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("WAGON05X");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -448.13f, 507.72f, 97.239f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -34.4f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -1990,53 +1990,53 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 					break;
 				case 11:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_CLIVE");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -1991.63f, -1366.66f, 116.45f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("MP_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1990.63f, -1365.66f, 116.45f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -1989.63f, -1364.66f, 116.45f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_1 = joaat("a_c_horse_shire_lightgrey");
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_HORSE_SHIRE_LIGHTGREY");
 					(uParam0->f_127[3 /*33*/])->f_9 = { -1988.63f, -1363.66f, 116.45f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cratetable01x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CRATETABLE01X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1990.325f, -1367.081f, 115.897f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { -3.038f, -6.286f, -108.907f };
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1991.502f, -1366.705f, 115.984f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 4.168f, -5.602f, -171.135f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "STOOL0", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1989.128f, -1367.312f, 115.83f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 4.187f, -5.588f, -171.33f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_chips01x10_rho");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CHIPS01X10_RHO");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -1990.325f, -1367.081f, 115.897f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { -3.038f, -6.286f, -108.907f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "CHIPS0", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_6[4 /*12*/])->f_1 = joaat("p_chips05x10_rho");
+					(uParam0->f_6[4 /*12*/])->f_1 = joaat("P_CHIPS05X10_RHO");
 					(uParam0->f_6[4 /*12*/])->f_2 = { -1990.325f, -1367.081f, 115.897f };
 					(uParam0->f_6[4 /*12*/])->f_5 = { -3.038f, -6.286f, -108.907f };
 					StringCopy(&((uParam0->f_6[4 /*12*/])->f_8.f_1), "CHIPS1", 24);
 					(uParam0->f_6[4 /*12*/])->f_8 = 0;
-					(uParam0->f_6[5 /*12*/])->f_1 = joaat("p_cardssplit01x");
+					(uParam0->f_6[5 /*12*/])->f_1 = joaat("P_CARDSSPLIT01X");
 					(uParam0->f_6[5 /*12*/])->f_2 = { -1990.325f, -1367.081f, 115.897f };
 					(uParam0->f_6[5 /*12*/])->f_5 = { -3.038f, -6.286f, -108.907f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("WAGON05X");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -1989.874f, -1364.961f, 115.751f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -106.002f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -2051,53 +2051,53 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 					break;
 				case 12:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_clive");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_CLIVE");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -5564.081f, -2576.2f, -9.8824f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CLIVE", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_CLAY");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("MP_CLAY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -5563.081f, -2576.2f, -9.8824f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 225f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "CLAY", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_belgian_blondchestnut");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -5562.081f, -2575.2f, -9.8824f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
-					(uParam0->f_127[3 /*33*/])->f_1 = joaat("a_c_horse_shire_lightgrey");
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_HORSE_SHIRE_LIGHTGREY");
 					(uParam0->f_127[3 /*33*/])->f_9 = { -5561.081f, -2574.2f, -9.8824f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -5569.834f, -2576.894f, -9.8723f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 2.29f, 1.715f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "STOOL0", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cratetable01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CRATETABLE01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -5569.081f, -2576.2f, -9.8824f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { -0.87f, 2.785f, -56.82f };
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stool02x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_STOOL02X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -5568.231f, -2575.562f, -9.8988f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 2.235f, 1.065f, 0f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "STOOL1", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_chips01x10_rho");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CHIPS01X10_RHO");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -5569.081f, -2576.2f, -9.8824f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 3.27f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "CHIPS0", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_6[4 /*12*/])->f_1 = joaat("p_chips05x10_rho");
+					(uParam0->f_6[4 /*12*/])->f_1 = joaat("P_CHIPS05X10_RHO");
 					(uParam0->f_6[4 /*12*/])->f_2 = { -5569.081f, -2576.2f, -9.8824f };
 					(uParam0->f_6[4 /*12*/])->f_5 = { 3.27f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[4 /*12*/])->f_8.f_1), "CHIPS1", 24);
 					(uParam0->f_6[4 /*12*/])->f_8 = 0;
-					(uParam0->f_6[5 /*12*/])->f_1 = joaat("p_cardssplit01x");
+					(uParam0->f_6[5 /*12*/])->f_1 = joaat("P_CARDSSPLIT01X");
 					(uParam0->f_6[5 /*12*/])->f_2 = { -5569.081f, -2576.2f, -9.8824f };
 					(uParam0->f_6[5 /*12*/])->f_5 = { 3.27f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[5 /*12*/])->f_8.f_1), "CARDS", 24);
 					(uParam0->f_6[5 /*12*/])->f_8 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = joaat("wagon05x");
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("WAGON05X");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -5570.55f, -2574.661f, -9.772f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -49.601f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mpclay2@int_loops@action", 64);
@@ -2112,12 +2112,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_14 = 1;
 					break;
 				case 13:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_sherifffreeman");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_SHERIFFFREEMAN");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -5531.03f, -2930.72f, -1.85f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 295f };
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "Sheriff", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("cs_mp_terrance");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("CS_MP_TERRANCE");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -5531.53f, -2931.72f, -1.85f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 295f };
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "male", 24);
@@ -2133,40 +2133,40 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 7;
 					(uParam0->f_127[0 /*33*/])->f_8 = joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING");
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("cs_valsheriff");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("CS_VALSHERIFF");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -613.06f, -27.86f, 84.97f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 33f };
 					(uParam0->f_127[1 /*33*/])->f_8 = joaat("WORLD_HUMAN_SMOKE_NERVOUS_STRESSED");
 					(uParam0->f_127[1 /*33*/])->f_3 = 1;
 					(uParam0->f_127[1 /*33*/])->f_4[0] = 0;
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_crate012x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CRATE012X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1389.002f, 385.6888f, 102.5657f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, -82.4f };
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_crate012x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CRATE012X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1382.063f, 384.5938f, 102.4458f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, -164.8f };
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_crate012x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_CRATE012X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1382.63f, 386.7712f, 102.3897f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { -1.7546f, 4.6972f, 6.072f };
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_crate012x");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CRATE012X");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -1381.796f, 382.9696f, 102.4978f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 4.8315f, 2.3736f, 106.6999f };
-					(uParam0->f_6[4 /*12*/])->f_1 = joaat("p_crate012x");
+					(uParam0->f_6[4 /*12*/])->f_1 = joaat("P_CRATE012X");
 					(uParam0->f_6[4 /*12*/])->f_2 = { -1382.817f, 376.3205f, 102.9958f };
 					(uParam0->f_6[4 /*12*/])->f_5 = { 0f, 0f, -169.6f };
-					(uParam0->f_6[5 /*12*/])->f_1 = joaat("p_campfire05x");
+					(uParam0->f_6[5 /*12*/])->f_1 = joaat("P_CAMPFIRE05X");
 					(uParam0->f_6[5 /*12*/])->f_2 = { -1384.642f, 381.7076f, 102.6675f };
 					(uParam0->f_6[5 /*12*/])->f_5 = { 0f, 0f, -125.2f };
-					(uParam0->f_6[6 /*12*/])->f_1 = joaat("p_tentarmypup01x");
+					(uParam0->f_6[6 /*12*/])->f_1 = joaat("P_TENTARMYPUP01X");
 					(uParam0->f_6[6 /*12*/])->f_2 = { -1380f, 379.7227f, 102.7455f };
 					(uParam0->f_6[6 /*12*/])->f_5 = { -2.2298f, -8.5421f, -97.7666f };
-					(uParam0->f_6[7 /*12*/])->f_1 = joaat("p_tentarmypup01x");
+					(uParam0->f_6[7 /*12*/])->f_1 = joaat("P_TENTARMYPUP01X");
 					(uParam0->f_6[7 /*12*/])->f_2 = { -1384.472f, 389.1875f, 102.5022f };
 					(uParam0->f_6[7 /*12*/])->f_5 = { 0f, 0f, -26.4001f };
-					(uParam0->f_6[8 /*12*/])->f_1 = joaat("p_bench03x");
+					(uParam0->f_6[8 /*12*/])->f_1 = joaat("P_BENCH03X");
 					(uParam0->f_6[8 /*12*/])->f_2 = { -1383.465f, 378.1525f, 102.9387f };
 					(uParam0->f_6[8 /*12*/])->f_5 = { 0f, 0f, 11.6f };
-					(uParam0->f_6[9 /*12*/])->f_1 = joaat("p_bench03x");
+					(uParam0->f_6[9 /*12*/])->f_1 = joaat("P_BENCH03X");
 					(uParam0->f_6[9 /*12*/])->f_2 = { -1387.804f, 387.6171f, 102.598f };
 					(uParam0->f_6[9 /*12*/])->f_5 = { 0f, 0f, 30.8f };
 					(uParam0->f_310[0 /*15*/])->f_3 = { -604.8222f, -25.74674f, 86.09907f };
@@ -2176,22 +2176,22 @@ int func_82(var uParam0, vector3 vParam1)
 					break;
 				case 15:
 					MISC::SET_BIT(&(uParam0->f_1), 2);
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_spoon01x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_SPOON01X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -2692.991f, -2180.69f, 80.0547f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_spoon01x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_camp_cup_01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CAMP_CUP_01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -2693.17f, -2180.609f, 80.0526f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "p_camp_cup_01x", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_stickfirepoker01x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_STICKFIREPOKER01X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -2691.177f, -2181.325f, 80.2533f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "p_stickFirePoker01x", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_campfireburnedout05x");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CAMPFIREBURNEDOUT05X");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -2690.51f, -2180.73f, 79.86f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { -2.37f, 3.55f, -1.16f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "p_campfireburnedout05x", 24);
@@ -2202,13 +2202,13 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_2 = 795148174;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "DEPUTY", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("mp_u_m_o_blwpolicechief_01");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("MP_U_M_O_BLWPOLICECHIEF_01");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -2692.15f, -2181.35f, 80f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 282f };
 					(uParam0->f_127[1 /*33*/])->f_2 = -405456199;
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "Blackwater_Chief", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_arabian_rosegreybay");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -2698f, -2178f, 80.2f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 316f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -2219,7 +2219,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
-					(uParam0->f_127[3 /*33*/])->f_1 = joaat("a_c_horse_arabian_rosegreybay");
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY");
 					(uParam0->f_127[3 /*33*/])->f_9 = { -2698.7f, -2176.1f, 80.1f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 272f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
@@ -2242,31 +2242,31 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 13f, 13f, 13f };
 					break;
 				case 16:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cigarette01x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CIGARETTE01X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { 1172.35f, -184.19f, 100.34f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cigarette01x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cigarette01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CIGARETTE01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { 1171.35f, -185.19f, 100.34f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "p_cigarette01x^1", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_samson_finch");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_SAMSON_FINCH");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 1172.35f, -184.19f, 100.34f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 287f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "samson", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("cs_mp_horley");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("CS_MP_HORLEY");
 					(uParam0->f_127[1 /*33*/])->f_9 = { 1171.35f, -185.19f, 100.34f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 287f };
 					(uParam0->f_127[1 /*33*/])->f_3 = 1;
 					(uParam0->f_127[1 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "Horley", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_missourifoxtrotter_sablechampagne");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_MISSOURIFOXTROTTER_SABLECHAMPAGNE");
 					(uParam0->f_127[2 /*33*/])->f_9 = { 1176.979f, -180.266f, 100.157f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 103f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -2277,7 +2277,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[2 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[2 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[2 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
-					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
+					(uParam0->f_127[3 /*33*/])->f_1 = joaat("A_C_HORSE_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 					(uParam0->f_127[3 /*33*/])->f_9 = { 1179.021f, -188.304f, 99.837f };
 					(uParam0->f_127[3 /*33*/])->f_12 = { 0f, 0f, 100f };
 					(uParam0->f_127[3 /*33*/])->f_18 = 1;
@@ -2297,12 +2297,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 17:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("s_jerky01bx");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("S_JERKY01BX");
 					(uParam0->f_6[0 /*12*/])->f_2 = { 299.76f, 1292.42f, 196.75f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cs_jerky01x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_samson_finch");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_SAMSON_FINCH");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 298.34f, 1289.21f, 197.23f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 277f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
@@ -2323,24 +2323,24 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 18:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_stoolfolding01x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_STOOLFOLDING01X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1934.802f, -1416.514f, 107.501f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 314.67f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "STOOL", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_mugcoffee01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_MUGCOFFEE01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1934.802f, -1416.514f, 107.501f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 314.67f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "MUG", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_marshall_davies");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_MARSHALL_DAVIES");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -1934.89f, -1416.58f, 107.96f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 313f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "Samson", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("a_c_horse_mustang_goldendun");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("A_C_HORSE_MUSTANG_GOLDENDUN");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1923.228f, -1401.2f, 106.146f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 1066.013f };
 					(uParam0->f_127[1 /*33*/])->f_18 = 1;
@@ -2364,22 +2364,22 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 23f, 23f, 23f };
 					break;
 				case 19:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_chair02x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CHAIR02X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { 2941.635f, 776.584f, 51.144f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 118.8f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_chair02x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cigar01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CIGAR01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { 2941.635f, 776.584f, 51.144f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 118.8f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "p_cigar01x", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_matchstick01x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_MATCHSTICK01X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { 2941.635f, 776.584f, 51.144f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 90f, 118.8f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "p_matchstick01x", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_marshall_davies");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_MARSHALL_DAVIES");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 2944.09f, 777.45f, 51.16f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 311f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
@@ -2395,14 +2395,14 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 20:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_horley");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_HORLEY");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -3843f, -3013.1f, -7.9f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 230f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "CS_MP_HORLEY", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("A_C_HORSE_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -3841.03f, -3016.24f, -7.12f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 17.61f };
 					(uParam0->f_127[1 /*33*/])->f_3 = 3;
@@ -2417,7 +2417,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[1 /*33*/])->f_23.f_5 = joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_NEW_000");
 					(uParam0->f_127[1 /*33*/])->f_31 = 319697946; /* GXTEntry: "Regular" */
 					(uParam0->f_127[1 /*33*/])->f_31.f_1 = -838912614; /* GXTEntry: "Regular" */
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("a_c_horse_thoroughbred_dapplegrey");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_THOROUGHBRED_DAPPLEGREY");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -3840.626f, -3023.605f, -7.148f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, -137.86f };
 					(uParam0->f_127[2 /*33*/])->f_18 = 1;
@@ -2434,41 +2434,41 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 12.99734f, 9.82149f, 20f };
 					break;
 				case 21:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_chair02x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CHAIR02X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1505.81f, -792.59f, 103.42f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 56.07f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "chair02x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_chair02x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CHAIR02X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1505.21f, -792.2f, 103.41f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 26.03f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "chair02x_1", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("p_cigarette01x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("P_CIGARETTE01X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1505.21f, -792.2f, 103.41f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 0f, 26.03f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "cigarette01x", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = joaat("p_cigarette01x");
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("P_CIGARETTE01X");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -1505.21f, -792.2f, 103.41f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 0f, 0f, 26.03f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "cigarette01x_1", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_horley");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_HORLEY");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -1504.64f, -792.07f, 104.42f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 50f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "HORLEY", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("cs_mp_samson_finch");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("CS_MP_SAMSON_FINCH");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1505.79f, -792.68f, 104.06f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 50f };
 					(uParam0->f_127[1 /*33*/])->f_3 = 1;
 					(uParam0->f_127[1 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "male", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_Horse_AmericanStandardbred_LightBuckskin");
+					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_AMERICANSTANDARDBRED_LIGHTBUCKSKIN");
 					(uParam0->f_127[2 /*33*/])->f_9 = { -1496.477f, -787.971f, 103.27f };
 					(uParam0->f_127[2 /*33*/])->f_12 = { 0f, 0f, 90f };
 					(uParam0->f_127[2 /*33*/])->f_3 = 3;
@@ -2495,14 +2495,14 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 13.5f, 13.5f, 13.5f };
 					break;
 				case 22:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_samson_finch");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_SAMSON_FINCH");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 2692.49f, -1115.1f, 50.41f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 181f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "SAMSON", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = joaat("stagecoach004_2x");
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("STAGECOACH004_2X");
 					(uParam0->f_326[0 /*8*/])->f_2 = { 2692.52f, -1133.73f, 50.1f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, 92f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mppout4@int@int_loops", 64);
@@ -2518,7 +2518,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 23:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_oldman_jones");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_OLDMAN_JONES");
 					(uParam0->f_127[0 /*33*/])->f_9 = { 134.71f, 161.9f, 111.15f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
@@ -2538,7 +2538,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 15f, 15f, 15f };
 					break;
 				case 24:
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("a_c_horse_arabian_grey");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("A_C_HORSE_ARABIAN_GREY");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -4796.42f, -2729.059f, -14.245f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, -71.37f };
 					(uParam0->f_127[0 /*33*/])->f_18 = 1;
@@ -2555,15 +2555,15 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 					break;
 				case 25:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_bench09x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_BENCH09X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 62.132f };
-					(uParam0->f_6[1 /*12*/])->f_1 = joaat("p_cs_book_small01x");
+					(uParam0->f_6[1 /*12*/])->f_1 = joaat("P_CS_BOOK_SMALL01X");
 					(uParam0->f_6[1 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[1 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					StringCopy(&((uParam0->f_6[1 /*12*/])->f_8.f_1), "Jessica_Book", 24);
 					(uParam0->f_6[1 /*12*/])->f_8 = 0;
-					(uParam0->f_6[2 /*12*/])->f_1 = joaat("s_penelopepurse01x");
+					(uParam0->f_6[2 /*12*/])->f_1 = joaat("S_PENELOPEPURSE01X");
 					(uParam0->f_6[2 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "Jessica_Purse", 24);
@@ -2573,20 +2573,20 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[3 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "PARASOL", 24);
 					(uParam0->f_6[3 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_horley");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_HORLEY");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -1200.69f, -1951.04f, 42.72f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 33f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
 					(uParam0->f_127[0 /*33*/])->f_4[0] = 0;
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "HORLEY", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
-					(uParam0->f_127[1 /*33*/])->f_1 = joaat("cs_mp_jessica");
+					(uParam0->f_127[1 /*33*/])->f_1 = joaat("CS_MP_JESSICA");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -1205.63f, -1955.92f, 43.1f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 241f };
 					(uParam0->f_127[1 /*33*/])->f_2 = -1254178458;
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "JESSICA", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
-					(uParam0->f_326[0 /*8*/])->f_1 = joaat("coach6");
+					(uParam0->f_326[0 /*8*/])->f_1 = joaat("COACH6");
 					(uParam0->f_326[0 /*8*/])->f_2 = { -1210.336f, -1938.885f, 42.65f };
 					(uParam0->f_326[0 /*8*/])->f_5 = { 0f, 0f, -12.8f };
 					StringCopy(&((uParam0->f_388[0 /*20*/])->f_3), "script@mpstory@mprev2@int_leadin@loops", 64);
@@ -2608,12 +2608,12 @@ int func_82(var uParam0, vector3 vParam1)
 				case 1:
 				default:
 					return 0;
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cs_book04x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CS_BOOK04X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -870.1846f, -1276.62f, 42.2367f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cs_book04x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_horley");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_HORLEY");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -870.1846f, -1276.62f, 42.2367f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
@@ -2632,12 +2632,12 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_310[0 /*15*/])->f_6 = { 16.51891f, 17.09237f, 5.384514f };
 					(uParam0->f_310[0 /*15*/])->f_12 = 1;
 				case 2:
-					(uParam0->f_6[0 /*12*/])->f_1 = joaat("p_cs_book04x");
+					(uParam0->f_6[0 /*12*/])->f_1 = joaat("P_CS_BOOK04X");
 					(uParam0->f_6[0 /*12*/])->f_2 = { -870.1846f, -1276.62f, 42.2367f };
 					(uParam0->f_6[0 /*12*/])->f_5 = { 0f, 0f, 0f };
 					StringCopy(&((uParam0->f_6[0 /*12*/])->f_8.f_1), "p_cs_book04x", 24);
 					(uParam0->f_6[0 /*12*/])->f_8 = 0;
-					(uParam0->f_127[0 /*33*/])->f_1 = joaat("cs_mp_horley");
+					(uParam0->f_127[0 /*33*/])->f_1 = joaat("CS_MP_HORLEY");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -870.1846f, -1276.62f, 42.2367f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 0f };
 					(uParam0->f_127[0 /*33*/])->f_3 = 1;
@@ -3561,7 +3561,7 @@ int func_107(var uParam0)
 	iVar0 = 0;
 	while (iVar0 < 2)
 	{
-		if (uParam0->f_293[iVar0 /*8*/])->f_1 == joaat("testpropgroup01x")
+		if (uParam0->f_293[iVar0 /*8*/])->f_1 == joaat("TESTPROPGROUP01X")
 		{
 		}
 		else if (PROPSET::_DOES_PROPSET_EXIST(&(uParam0->f_293[iVar0 /*8*/])))
@@ -4269,7 +4269,7 @@ int func_130(var uParam0, int iParam1)
 		case 21:
 			switch (iParam1)
 			{
-				case joaat("cs_mp_samson_finch"):
+				case joaat("CS_MP_SAMSON_FINCH"):
 					return joaat("WEAPON_REVOLVER_CATTLEMAN");
 				default:
 					break;
@@ -4806,7 +4806,7 @@ int func_154(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("player");
+			return joaat("PLAYER");
 		case 1:
 			return joaat("REL_CIVMALE");
 		case 2:
@@ -5045,11 +5045,11 @@ void func_157(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_blankets"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_BLANKETS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLES"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_horns"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("saddle_stirrups"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("horse_bedrolls"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_HORNS"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_STIRRUPS"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_BEDROLLS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);

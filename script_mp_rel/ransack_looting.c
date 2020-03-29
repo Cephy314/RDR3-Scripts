@@ -752,7 +752,7 @@ void func_23(int iParam0)
 			iVar24 = TASK::_0xE47DD64B9F02677D(&(Var0.f_1[iVar23]));
 			if (iVar24 == 0 && &iParam0->f_26[iVar23] != 0)
 			{
-				iParam0->f_12[iVar23] = joaat("scriptedball");
+				iParam0->f_12[iVar23] = joaat("SCRIPTEDBALL");
 			}
 			else
 			{
@@ -912,7 +912,7 @@ void func_27(int iParam0, var uParam1, int iParam2, vector3 vParam3, vector3 vPa
 		case 1:
 			if (STREAMING::HAS_MODEL_LOADED(*uParam1))
 			{
-				if (*uParam1 == joaat("p_dressinglcmhay01x"))
+				if (*uParam1 == joaat("P_DRESSINGLCMHAY01X"))
 				{
 					vParam3 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vParam3, vParam6.z, 0f, 0f, 0.08f) };
 				}
@@ -1007,7 +1007,7 @@ void func_35(int iParam0)
 			break;
 		case 934878503:
 		case 1753153202:
-			if (ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == joaat("p_medicinechest01x"))
+			if (ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == joaat("P_MEDICINECHEST01X"))
 			{
 				iParam0->f_8 = 2;
 			}
@@ -1474,13 +1474,13 @@ void func_41(int iParam0)
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		DECORATOR::DECOR_SET_BOOL(iParam0, "scripted_loot_only", true);
-		ENTITY::_0x8C03CD6B5E0E85E8(iParam0, joaat("empty"));
+		ENTITY::_0x8C03CD6B5E0E85E8(iParam0, joaat("EMPTY"));
 	}
 }
 
 int func_42()
 {
-	return joaat("p_dressinglcmhay01x");
+	return joaat("P_DRESSINGLCMHAY01X");
 }
 
 int func_43()
@@ -1493,16 +1493,16 @@ int func_43()
 	switch (iVar0)
 	{
 		case 0:
-			iVar1 = joaat("s_lootablebedchest_a");
+			iVar1 = joaat("S_LOOTABLEBEDCHEST_A");
 			break;
 		case 1:
-			iVar1 = joaat("s_lootablebedchest_b");
+			iVar1 = joaat("S_LOOTABLEBEDCHEST_B");
 			break;
 		case 2:
-			iVar1 = joaat("s_lootablebedchest_c");
+			iVar1 = joaat("S_LOOTABLEBEDCHEST_C");
 			break;
 		case 3:
-			iVar1 = joaat("s_lootablebedchest_d");
+			iVar1 = joaat("S_LOOTABLEBEDCHEST_D");
 			break;
 	}
 	return 0;
@@ -1602,7 +1602,7 @@ void func_52(int iParam0, var uParam1, int iParam2, int iParam3)
 	{
 		iParam2 = ENTITY::GET_ENTITY_MODEL(*uParam1);
 	}
-	if (iParam2 == joaat("mp004_s_mp_bondrolled01x") || iParam3 == joaat("KIT_PLACED_EXPLOSIVES"))
+	if (iParam2 == joaat("MP004_S_MP_BONDROLLED01X") || iParam3 == joaat("KIT_PLACED_EXPLOSIVES"))
 	{
 		DECORATOR::DECOR_SET_BOOL(*uParam1, "loot_mp_mission_only", true);
 	}
@@ -1966,7 +1966,7 @@ int func_70(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		*uParam1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_money");
 		DECORATOR::DECOR_REMOVE(iParam0, "loot_money");
 		*uParam2 = 0;
-		return joaat("currency_cash");
+		return joaat("CURRENCY_CASH");
 	}
 	if (DECORATOR::DECOR_EXIST_ON(iParam0, "fLoot_money"))
 	{
@@ -2258,7 +2258,7 @@ int func_82(int iParam0)
 
 bool func_83(int iParam0)
 {
-	return func_88(iParam0) == joaat("weapon");
+	return func_88(iParam0) == joaat("WEAPON");
 }
 
 bool func_84(int iParam0)

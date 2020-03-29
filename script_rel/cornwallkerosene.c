@@ -625,8 +625,8 @@ void func_14(int iParam0)
 	iParam0 = iParam0;
 	if (func_20() == -1 && !func_48(664571177))
 	{
-		func_49(&uLocal_20, 943, 5, "", joaat("cart05"), 442.7123f, 667.0687f, 114.9347f, 8.68f, 0, 0);
-		func_49(&uLocal_40, 944, 5, "", joaat("cart05"), 436.3587f, 671.5928f, 114.8581f, -28.76f, 0, 0);
+		func_49(&uLocal_20, 943, 5, "", joaat("CART05"), 442.7123f, 667.0687f, 114.9347f, 8.68f, 0, 0);
+		func_49(&uLocal_40, 944, 5, "", joaat("CART05"), 436.3587f, 671.5928f, 114.8581f, -28.76f, 0, 0);
 	}
 }
 
@@ -1522,7 +1522,7 @@ void func_68(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_125(Global_1935630, 8192);
-	func_127(func_126(-1532769513, joaat("areas")), 1);
+	func_127(func_126(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1867,14 +1867,14 @@ int func_75(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -4768,7 +4768,7 @@ int func_149()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

@@ -63,11 +63,11 @@ void func_1(bool bParam0)
 	func_4(68);
 	if (bParam0)
 	{
-		func_5(joaat("freeroam"), 16);
+		func_5(joaat("FREEROAM"), 16);
 	}
 	else
 	{
-		func_5(joaat("freeroam"), 0);
+		func_5(joaat("FREEROAM"), 0);
 	}
 	func_6(3);
 }
@@ -83,7 +83,7 @@ int func_2()
 		}
 	}
 	func_4(68);
-	func_5(joaat("mission_creator"), 2);
+	func_5(joaat("MISSION_CREATOR"), 2);
 	func_6(3);
 	return 1;
 }
@@ -92,11 +92,11 @@ void func_3()
 {
 	func_4(4);
 	func_6(2);
-	if (NETWORK::_0x02E97CE283648CD9(func_7(joaat("benchmark"))))
+	if (NETWORK::_0x02E97CE283648CD9(func_7(joaat("BENCHMARK"))))
 	{
 		Global_43892 = 1;
 	}
-	func_5(joaat("single_player"), 0);
+	func_5(joaat("SINGLE_PLAYER"), 0);
 }
 
 void func_4(int iParam0)
@@ -133,55 +133,55 @@ char* func_7(int iParam0)
 		case joaat("NEW_GAME"):
 			sVar0 = "new_game";
 			break;
-		case joaat("shift_f"):
+		case joaat("SHIFT_F"):
 			sVar0 = "shift_f";
 			break;
-		case joaat("demo"):
+		case joaat("DEMO"):
 			sVar0 = "demo";
 			break;
-		case joaat("intro_not_done"):
+		case joaat("INTRO_NOT_DONE"):
 			sVar0 = "intro_not_done";
 			break;
-		case joaat("private"):
+		case joaat("PRIVATE"):
 			sVar0 = "private";
 			break;
-		case joaat("friendly"):
+		case joaat("FRIENDLY"):
 			sVar0 = "friendly";
 			break;
-		case joaat("hardcore"):
+		case joaat("HARDCORE"):
 			sVar0 = "hardcore";
 			break;
-		case joaat("near_posse"):
+		case joaat("NEAR_POSSE"):
 			sVar0 = "near_posse";
 			break;
-		case joaat("random_posse"):
+		case joaat("RANDOM_POSSE"):
 			sVar0 = "random_posse";
 			break;
-		case joaat("open_posse"):
+		case joaat("OPEN_POSSE"):
 			sVar0 = "open_posse";
 			break;
-		case joaat("follow_invite"):
+		case joaat("FOLLOW_INVITE"):
 			sVar0 = "follow_invite";
 			break;
-		case joaat("random_region"):
+		case joaat("RANDOM_REGION"):
 			sVar0 = "random_region";
 			break;
-		case joaat("last_region"):
+		case joaat("LAST_REGION"):
 			sVar0 = "last_region";
 			break;
-		case joaat("spawn_location"):
+		case joaat("SPAWN_LOCATION"):
 			sVar0 = "spawn_location";
 			break;
-		case joaat("last_location"):
+		case joaat("LAST_LOCATION"):
 			sVar0 = "last_location";
 			break;
-		case joaat("camp"):
+		case joaat("CAMP"):
 			sVar0 = "camp";
 			break;
-		case joaat("handheld"):
+		case joaat("HANDHELD"):
 			sVar0 = "handheld";
 			break;
-		case joaat("benchmark"):
+		case joaat("BENCHMARK"):
 			sVar0 = "benchmark";
 			break;
 	}

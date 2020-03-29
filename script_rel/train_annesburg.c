@@ -104,9 +104,9 @@ int func_2()
 			func_9(bLocal_2, 0, iLocal_12);
 			if (func_10(bLocal_3, Global_35, 1) < 2500f)
 			{
-				if (VEHICLE::_0x86AFC343CF7F0B34(joaat("trains_intersection1_ann"), 2940.988f, 1374.5f, 43.1838f, &iVar1))
+				if (VEHICLE::_0x86AFC343CF7F0B34(joaat("TRAINS_INTERSECTION1_ANN"), 2940.988f, 1374.5f, 43.1838f, &iVar1))
 				{
-					VEHICLE::_0x3ABFA128F5BF5A70(joaat("trains_intersection1_ann"), iVar1, 1);
+					VEHICLE::_0x3ABFA128F5BF5A70(joaat("TRAINS_INTERSECTION1_ANN"), iVar1, 1);
 				}
 				VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(bLocal_3, true);
 				VEHICLE::_0xA7966807953A18EE(((*Global_1425371)[7 /*373*/])->f_1, 0.5f);
@@ -380,13 +380,13 @@ void func_12()
 		VEHICLE::_0x3ABFA128F5BF5A70(iVar1, iVar0, 1);
 	}
 	iVar0 = 0;
-	iVar1 = joaat("trains_nb1");
+	iVar1 = joaat("TRAINS_NB1");
 	if (VEHICLE::_0x86AFC343CF7F0B34(iVar1, 2748.4f, -1434.3f, 45f, &iVar0))
 	{
 		VEHICLE::_0x3ABFA128F5BF5A70(iVar1, iVar0, 1);
 	}
 	iVar0 = 0;
-	iVar1 = joaat("trains_nb1");
+	iVar1 = joaat("TRAINS_NB1");
 	if (VEHICLE::_0x86AFC343CF7F0B34(iVar1, 2624.2f, -1477.2f, 45f, &iVar0))
 	{
 		VEHICLE::_0x3ABFA128F5BF5A70(iVar1, iVar0, 1);

@@ -356,7 +356,7 @@ int func_13()
 {
 	int iVar0;
 
-	iVar0 = joaat("beechers_cow");
+	iVar0 = joaat("BEECHERS_COW");
 	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(iVar0) > 0)
 	{
 		return 1;

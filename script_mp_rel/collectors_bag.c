@@ -6,9 +6,9 @@ void __EntryFunction__()
 	{
 		func_1();
 	}
-	if (!UIAPPS::_IS_APP_ACTIVE(joaat("collectors")))
+	if (!UIAPPS::_IS_APP_ACTIVE(joaat("COLLECTORS")))
 	{
-		iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH(joaat("collectors"));
+		iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH(joaat("COLLECTORS"));
 		if (iVar0 != 0)
 		{
 			func_1();
@@ -23,7 +23,7 @@ void __EntryFunction__()
 
 void func_1()
 {
-	UIAPPS::_CLOSE_APP_BY_HASH(joaat("collectors"));
+	UIAPPS::_CLOSE_APP_BY_HASH(joaat("COLLECTORS"));
 	SCRIPTS::TERMINATE_THIS_THREAD();
 }
 
@@ -37,7 +37,7 @@ int func_2()
 	{
 		return 1;
 	}
-	if (!UIAPPS::_IS_APP_ACTIVE(joaat("collectors")))
+	if (!UIAPPS::_IS_APP_ACTIVE(joaat("COLLECTORS")))
 	{
 		return 1;
 	}

@@ -586,12 +586,12 @@ void func_27()
 {
 	if ((!func_33(uLocal_14, 1) && func_34(&(Local_0.f_5), 6000)) && func_35())
 	{
-		func_36(Local_0.f_13, "HIDEOUT_LEADER_FLEE", joaat("speech_params_standard"), 0, 1, 0, 0, 1);
+		func_36(Local_0.f_13, "HIDEOUT_LEADER_FLEE", joaat("SPEECH_PARAMS_STANDARD"), 0, 1, 0, 0, 1);
 		func_37(&uLocal_14, 1);
 	}
 	if ((!func_33(uLocal_14, 2) && func_34(&(Local_0.f_8), 1000)) && PED::_0x5203038FF8BAE577(Local_0.f_13, 26, 750))
 	{
-		func_36(Local_0.f_13, "HIDEOUT_LEADER_TURN", joaat("speech_params_standard"), 0, 1, 0, 0, 1);
+		func_36(Local_0.f_13, "HIDEOUT_LEADER_TURN", joaat("SPEECH_PARAMS_STANDARD"), 0, 1, 0, 0, 1);
 		func_37(&uLocal_14, 2);
 	}
 }

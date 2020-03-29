@@ -1565,247 +1565,247 @@ Vector3 func_26(int iParam0)
 	}
 	switch (func_158(iParam0))
 	{
-		case joaat("gang_odriscollboys_hrt001"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odoriscollboys_hrt002"):
+		case joaat("GANG_ODORISCOLLBOYS_HRT002"):
 			vVar3 = { 498.174f, -256.7451f, 143.3717f };
 			break;
-		case joaat("gang_odriscollboys_hrt003"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt004"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odoriscollboys_hrt005"):
+		case joaat("GANG_ODORISCOLLBOYS_HRT005"):
 			vVar3 = { -1164.453f, 91.68877f, 44.62806f };
 			break;
-		case joaat("gang_odriscollboys_hrt006"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt007"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT007"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt008"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt009"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt010"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt011"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT011"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt012"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT012"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_hrt013"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT013"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv001"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv002"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv003"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv004"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv005"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv006"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv007"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV007"):
 			vVar3 = { -1582.034f, 498.4228f, 114.0487f };
 			break;
-		case joaat("gang_odriscollboys_bgv008"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv009"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_bgv010"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_cml001"):
+		case joaat("GANG_ODRISCOLLBOYS_CML001"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_cml002"):
+		case joaat("GANG_ODRISCOLLBOYS_CML002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_cml003"):
+		case joaat("GANG_ODRISCOLLBOYS_CML003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_cml004"):
+		case joaat("GANG_ODRISCOLLBOYS_CML004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_odriscollboys_cml005"):
+		case joaat("GANG_ODRISCOLLBOYS_CML005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm001"):
+		case joaat("GANG_LEMOYNE_SCM001"):
 			vVar3 = { 1172.784f, -2180.536f, 54.65417f };
 			break;
-		case joaat("gang_lemoyne_scm002"):
+		case joaat("GANG_LEMOYNE_SCM002"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm003"):
+		case joaat("GANG_LEMOYNE_SCM003"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm004"):
+		case joaat("GANG_LEMOYNE_SCM004"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm005"):
+		case joaat("GANG_LEMOYNE_SCM005"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm006"):
+		case joaat("GANG_LEMOYNE_SCM006"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm007"):
+		case joaat("GANG_LEMOYNE_SCM007"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm008"):
+		case joaat("GANG_LEMOYNE_SCM008"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm009"):
+		case joaat("GANG_LEMOYNE_SCM009"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm010"):
+		case joaat("GANG_LEMOYNE_SCM010"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm011"):
+		case joaat("GANG_LEMOYNE_SCM011"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm012"):
+		case joaat("GANG_LEMOYNE_SCM012"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm013"):
+		case joaat("GANG_LEMOYNE_SCM013"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm014"):
+		case joaat("GANG_LEMOYNE_SCM014"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm015"):
+		case joaat("GANG_LEMOYNE_SCM015"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm016"):
+		case joaat("GANG_LEMOYNE_SCM016"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm017"):
+		case joaat("GANG_LEMOYNE_SCM017"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm018"):
+		case joaat("GANG_LEMOYNE_SCM018"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_lemoyne_scm019"):
+		case joaat("GANG_LEMOYNE_SCM019"):
 			vVar3 = { 0f, 0f, 0f };
 			break;
-		case joaat("gang_murfreeransack_loc01_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC01_HAT"):
 			vVar3 = { 2121.892f, -138.5448f, 49.74233f };
 			break;
-		case joaat("gang_murfreeransack_loc01_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC01_SHOE"):
 			vVar3 = { 2121.77f, -139.2138f, 49.71836f };
 			break;
-		case joaat("gang_murfreeransack_loc02_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC02_HAT"):
 			vVar3 = { 2467f, -89.99516f, 45.19795f };
 			break;
-		case joaat("gang_murfreeransack_loc02_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC02_SHOE"):
 			vVar3 = { 2464.787f, -91.20225f, 45.15141f };
 			break;
-		case joaat("gang_murfreeransack_loc03_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC03_HAT"):
 			vVar3 = { 2555.149f, -66.95429f, 49.53902f };
 			break;
-		case joaat("gang_murfreeransack_loc03_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC03_SHOE"):
 			vVar3 = { 2550.89f, -70.14941f, 49.58291f };
 			break;
-		case joaat("gang_murfreeransack_loc04_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC04_HAT"):
 			vVar3 = { 2320.137f, 9.97915f, 47.49155f };
 			break;
-		case joaat("gang_murfreeransack_loc04_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC04_SHOE"):
 			vVar3 = { 2319.414f, 11.21736f, 47.49919f };
 			break;
-		case joaat("gang_murfreeransack_loc05_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC05_HAT"):
 			vVar3 = { 2440.252f, 647.3441f, 69.38534f };
 			break;
-		case joaat("gang_murfreeransack_loc05_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC05_SHOE"):
 			vVar3 = { 2436.895f, 641.1175f, 69.33932f };
 			break;
-		case joaat("gang_murfreeransack_loc06_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC06_HAT"):
 			vVar3 = { 2425.307f, 779.8348f, 67.81346f };
 			break;
-		case joaat("gang_murfreeransack_loc06_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC06_SHOE"):
 			vVar3 = { 2420.318f, 777.536f, 67.6056f };
 			break;
-		case joaat("gang_murfreeransack_loc07_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC07_HAT"):
 			vVar3 = { 2361.987f, 841.1643f, 78.79051f };
 			break;
-		case joaat("gang_murfreeransack_loc07_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC07_SHOE"):
 			vVar3 = { 2358.234f, 840.37f, 78.72357f };
 			break;
-		case joaat("gang_murfreeransack_loc08_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC08_HAT"):
 			vVar3 = { 2409.418f, 884.5353f, 73.20782f };
 			break;
-		case joaat("gang_murfreeransack_loc08_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC08_SHOE"):
 			vVar3 = { 2404.697f, 883.5768f, 73.29004f };
 			break;
-		case joaat("gang_murfreeransack_loc09_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC09_HAT"):
 			vVar3 = { 2503.454f, 883.302f, 72.8469f };
 			break;
-		case joaat("gang_murfreeransack_loc09_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC09_SHOE"):
 			vVar3 = { 2507.415f, 881.9269f, 72.64252f };
 			break;
-		case joaat("gang_murfreeransack_loc10_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC10_HAT"):
 			vVar3 = { 2391.311f, 1024.629f, 89.66936f };
 			break;
-		case joaat("gang_murfreeransack_loc10_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC10_SHOE"):
 			vVar3 = { 2386.943f, 1024.219f, 89.71957f };
 			break;
-		case joaat("gang_murfreeransack_loc11_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC11_HAT"):
 			vVar3 = { 2302.055f, 1055.938f, 115.7271f };
 			break;
-		case joaat("gang_murfreeransack_loc11_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC11_SHOE"):
 			vVar3 = { 2299.388f, 1052.703f, 115.6931f };
 			break;
-		case joaat("gang_murfreeransack_loc12_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC12_HAT"):
 			vVar3 = { 2518.389f, 1749.014f, 87.51678f };
 			break;
-		case joaat("gang_murfreeransack_loc12_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC12_SHOE"):
 			vVar3 = { 2516.159f, 1746.446f, 87.39398f };
 			break;
-		case joaat("gang_murfreeransack_loc13_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC13_HAT"):
 			vVar3 = { 2793.999f, 2009.131f, 164.7415f };
 			break;
-		case joaat("gang_murfreeransack_loc13_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC13_SHOE"):
 			vVar3 = { 2793.361f, 2009.616f, 164.7349f };
 			break;
-		case joaat("gang_murfreeransack_loc14_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC14_HAT"):
 			vVar3 = { 2622.838f, 2106.842f, 173.2784f };
 			break;
-		case joaat("gang_murfreeransack_loc14_shoe"):
+		case joaat("GANG_MURFREERANSACK_LOC14_SHOE"):
 			vVar3 = { 2617.052f, 2106.459f, 173.1849f };
 			break;
-		case joaat("gang_skinner_tal001"):
+		case joaat("GANG_SKINNER_TAL001"):
 			vVar3 = { -2000.054f, -1828.726f, 112.4916f };
 			break;
-		case joaat("gang_skinner_tal002"):
+		case joaat("GANG_SKINNER_TAL002"):
 			vVar3 = { -2130.4f, -1775.59f, 141.8341f };
 			break;
-		case joaat("gang_skinner_tal003"):
+		case joaat("GANG_SKINNER_TAL003"):
 			vVar3 = { -2672.631f, -1457.476f, 145.6802f };
 			break;
-		case joaat("gang_skinner_tal004"):
+		case joaat("GANG_SKINNER_TAL004"):
 			vVar3 = { -2429.996f, -1337.574f, 152.9727f };
 			break;
-		case joaat("gang_skinner_tal005"):
+		case joaat("GANG_SKINNER_TAL005"):
 			vVar3 = { -2102.945f, -1257.687f, 122.1524f };
 			break;
-		case joaat("gang_skinner_tal006"):
+		case joaat("GANG_SKINNER_TAL006"):
 			vVar3 = { -2033.818f, -1269.037f, 114.7918f };
 			break;
 		default:
@@ -1878,7 +1878,7 @@ int func_28(int iParam0)
 
 int func_29(int iParam0)
 {
-	return joaat("p_campfireburntout02x");
+	return joaat("P_CAMPFIREBURNTOUT02X");
 }
 
 void func_30(var uParam0)
@@ -1900,167 +1900,167 @@ int func_31(int iParam0)
 	switch (iParam0)
 	{
 		case -2044823653:
-			return joaat("pg_ambcamp01x_tent_pupstripe");
+			return joaat("PG_AMBCAMP01X_TENT_PUPSTRIPE");
 		case 1582835727:
-			return joaat("pg_ambcamp01x_tent_pupoil");
+			return joaat("PG_AMBCAMP01X_TENT_PUPOIL");
 		case -1328526086:
-			return joaat("pg_ambcamp01x_tent_leantopine");
+			return joaat("PG_AMBCAMP01X_TENT_LEANTOPINE");
 		case -1160421116:
-			return joaat("pg_ambcamp01x_tent_snow");
+			return joaat("PG_AMBCAMP01X_TENT_SNOW");
 		case -1965850367:
-			return joaat("pg_ambcamp01x_tent_pup");
+			return joaat("PG_AMBCAMP01X_TENT_PUP");
 		case -1659624062:
-			return joaat("pg_ambcamp01x_tent_leanto01");
+			return joaat("PG_AMBCAMP01X_TENT_LEANTO01");
 		case -111813116:
-			return joaat("pg_ambcamp01x_tent_leanto02");
+			return joaat("PG_AMBCAMP01X_TENT_LEANTO02");
 		case 60355210:
-			return joaat("pg_ambcamp01x_tent_leanto03");
+			return joaat("PG_AMBCAMP01X_TENT_LEANTO03");
 		case -743238977:
-			return joaat("pg_ambcamp01x_tent_abandon01");
+			return joaat("PG_AMBCAMP01X_TENT_ABANDON01");
 		case 1296723921:
-			return joaat("pg_ambcamp01x_tent_blanket");
+			return joaat("PG_AMBCAMP01X_TENT_BLANKET");
 		case 990366540:
-			return joaat("pg_ambcamp01x_tent_burlap");
+			return joaat("PG_AMBCAMP01X_TENT_BURLAP");
 		case 2145015028:
-			return joaat("pg_ambcamp01x_tent_burlap_lean");
+			return joaat("PG_AMBCAMP01X_TENT_BURLAP_LEAN");
 		case 765079665:
-			return joaat("pg_ambcamp01x_tent_canvas_leanto01");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO01");
 		case -209109940:
-			return joaat("pg_ambcamp01x_tent_canvas_leanto02");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO02");
 		case -487351519:
-			return joaat("pg_ambcamp01x_tent_canvas_leanto03");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO03");
 		case 1228302245:
-			return joaat("pg_ambcamp01x_tent_canvas_leanto04");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO04");
 		case 912769544:
-			return joaat("pg_ambcamp01x_tent_canvas_pup01");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_PUP01");
 		case -1664119074:
-			return joaat("pg_ambcamp01x_tent_canvas_pup02");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_PUP02");
 		case -937564806:
-			return joaat("pg_ambcamp01x_tent_canvas_tall01");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_TALL01");
 		case 222985850:
-			return joaat("pg_ambcamp01x_tent_canvas_tall02");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_TALL02");
 		case -536075266:
-			return joaat("pg_ambcamp01x_tent_canvas_wedge_plain");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_WEDGE_PLAIN");
 		case 700987253:
-			return joaat("pg_ambcamp01x_tent_canvas_wedge_stripe");
+			return joaat("PG_AMBCAMP01X_TENT_CANVAS_WEDGE_STRIPE");
 		case -58794781:
-			return joaat("pg_ambcamp01x_tent_debris01");
+			return joaat("PG_AMBCAMP01X_TENT_DEBRIS01");
 		case -1304508312:
-			return joaat("pg_ambcamp01x_tent_destroyed");
+			return joaat("PG_AMBCAMP01X_TENT_DESTROYED");
 		case -1005032421:
-			return joaat("pg_ambcamp01x_tent_frame_dome");
+			return joaat("PG_AMBCAMP01X_TENT_FRAME_DOME");
 		case -817724817:
-			return joaat("pg_ambcamp01x_tent_frame_pup");
+			return joaat("PG_AMBCAMP01X_TENT_FRAME_PUP");
 		case -520935984:
-			return joaat("pg_ambcamp01x_tent_grass_lean");
+			return joaat("PG_AMBCAMP01X_TENT_GRASS_LEAN");
 		case 2074434358:
-			return joaat("pg_ambcamp01x_tent_ground01");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND01");
 		case -1920925971:
-			return joaat("pg_ambcamp01x_tent_ground02");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND02");
 		case -1239527077:
-			return joaat("pg_ambcamp01x_tent_ground03");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND03");
 		case -925632826:
-			return joaat("pg_ambcamp01x_tent_ground04");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND04");
 		case -1715300188:
-			return joaat("pg_ambcamp01x_tent_ground05");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND05");
 		case -1403175463:
-			return joaat("pg_ambcamp01x_tent_ground06");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND06");
 		case -2110625432:
-			return joaat("pg_ambcamp01x_tent_ground07");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND07");
 		case 1417448957:
-			return joaat("pg_ambcamp01x_tent_ground08");
+			return joaat("PG_AMBCAMP01X_TENT_GROUND08");
 		case -1236840047:
-			return joaat("pg_ambcamp01x_tent_hide");
+			return joaat("PG_AMBCAMP01X_TENT_HIDE");
 		case -956501252:
-			return joaat("pg_ambcamp01x_tent_hide_lean");
+			return joaat("PG_AMBCAMP01X_TENT_HIDE_LEAN");
 		case 1213560263:
-			return joaat("pg_ambcamp01x_tent_leather");
+			return joaat("PG_AMBCAMP01X_TENT_LEATHER");
 		case 430119011:
-			return joaat("pg_ambcamp01x_tent_leather_lean");
+			return joaat("PG_AMBCAMP01X_TENT_LEATHER_LEAN");
 		case 1492423585:
-			return joaat("pg_ambcamp01x_tent_leaves");
+			return joaat("PG_AMBCAMP01X_TENT_LEAVES");
 		case 1790654254:
-			return joaat("pg_ambcamp01x_tent_leaves_lean");
+			return joaat("PG_AMBCAMP01X_TENT_LEAVES_LEAN");
 		case 1943030104:
-			return joaat("pg_ambcamp01x_tent_oilskin01");
+			return joaat("PG_AMBCAMP01X_TENT_OILSKIN01");
 		case -2054296365:
-			return joaat("pg_ambcamp01x_tent_oilskin_lean01");
+			return joaat("PG_AMBCAMP01X_TENT_OILSKIN_LEAN01");
 		case 1015274172:
-			return joaat("pg_ambcamp01x_tent_oilskin_lean02");
+			return joaat("PG_AMBCAMP01X_TENT_OILSKIN_LEAN02");
 		case 1312783923:
-			return joaat("pg_ambcamp01x_tent_patchwork");
+			return joaat("PG_AMBCAMP01X_TENT_PATCHWORK");
 		case 1490916215:
-			return joaat("pg_ambcamp01x_tent_patchwork_lean");
+			return joaat("PG_AMBCAMP01X_TENT_PATCHWORK_LEAN");
 		case 1789146884:
-			return joaat("pg_ambcamp01x_tent_plaid01");
+			return joaat("PG_AMBCAMP01X_TENT_PLAID01");
 		case -350504979:
-			return joaat("pg_ambcamp01x_tent_plaid_lean01");
+			return joaat("PG_AMBCAMP01X_TENT_PLAID_LEAN01");
 		case -212744103:
-			return joaat("pg_ambcamp01x_tent_plaid_lean02");
+			return joaat("PG_AMBCAMP01X_TENT_PLAID_LEAN02");
 		case -925174672:
-			return joaat("pg_ambcamp01x_tent_pupoil01");
+			return joaat("PG_AMBCAMP01X_TENT_PUPOIL01");
 		case -477353518:
-			return joaat("pg_ambcamp01x_tent_pupoil02");
+			return joaat("PG_AMBCAMP01X_TENT_PUPOIL02");
 		case -1386726037:
-			return joaat("pg_ambcamp01x_tent_pupstripe_glamp");
+			return joaat("PG_AMBCAMP01X_TENT_PUPSTRIPE_GLAMP");
 		case -1716644329:
-			return joaat("pg_ambcamp01x_tent_scrub");
+			return joaat("PG_AMBCAMP01X_TENT_SCRUB");
 		case -1582324194:
-			return joaat("pg_ambcamp01x_tent_scrub_lean");
+			return joaat("PG_AMBCAMP01X_TENT_SCRUB_LEAN");
 		case -1671390336:
-			return joaat("pg_ambcamp01x_tent_shelter_boat");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_BOAT");
 		case -2044006635:
-			return joaat("pg_ambcamp01x_tent_shelter_build");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_BUILD");
 		case 1861533865:
-			return joaat("pg_ambcamp01x_tent_shelter_cart");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_CART");
 		case 956191925:
-			return joaat("pg_ambcamp01x_tent_shelter_firewood");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_FIREWOOD");
 		case 1413712711:
-			return joaat("pg_ambcamp01x_tent_shelter_scaff");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_SCAFF");
 		case -1616863608:
-			return joaat("pg_ambcamp01x_tent_shelter_tree_scaff");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_SCAFF");
 		case -1919550861:
-			return joaat("pg_ambcamp01x_tent_shelter_tree_tie01");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_TIE01");
 		case -1137944673:
-			return joaat("pg_ambcamp01x_tent_shelter_tree_tie02");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_TIE02");
 		case -1443318984:
-			return joaat("pg_ambcamp01x_tent_shelter_tree_trunk");
+			return joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_TRUNK");
 		case -1064017813:
-			return joaat("pg_ambcamp01x_tent_snow01");
+			return joaat("PG_AMBCAMP01X_TENT_SNOW01");
 		case -1220588095:
-			return joaat("pg_ambcamp01x_tent_snow02");
+			return joaat("PG_AMBCAMP01X_TENT_SNOW02");
 		case -318621370:
-			return joaat("pg_ambcamp01x_tent_sticks");
+			return joaat("PG_AMBCAMP01X_TENT_STICKS");
 		case -579626455:
-			return joaat("pg_ambcamp01x_tent_sticks_tall");
+			return joaat("PG_AMBCAMP01X_TENT_STICKS_TALL");
 		case 159248957:
-			return joaat("pg_ambcamp01x_tent_string");
+			return joaat("PG_AMBCAMP01X_TENT_STRING");
 		case -7414177:
-			return joaat("pg_ambcamp01x_tent_string_lean");
+			return joaat("PG_AMBCAMP01X_TENT_STRING_LEAN");
 		case -1575148327:
-			return joaat("pg_ambcamp01x_tent_string_tarp");
+			return joaat("PG_AMBCAMP01X_TENT_STRING_TARP");
 		case -1880457100:
-			return joaat("pg_ambcamp01x_tent_wagon_debris");
+			return joaat("PG_AMBCAMP01X_TENT_WAGON_DEBRIS");
 		case -844170244:
-			return joaat("pg_ambcamp01x_tent_woven");
+			return joaat("PG_AMBCAMP01X_TENT_WOVEN");
 		case -1285437598:
-			return joaat("pg_ambcamp01x_tent_woven_lean");
+			return joaat("PG_AMBCAMP01X_TENT_WOVEN_LEAN");
 		case 2113625210:
-			return joaat("pg_ambcamp01x_tent_plaid");
+			return joaat("PG_AMBCAMP01X_TENT_PLAID");
 		case 430292578:
-			return joaat("pg_ambcamp02x_tent_combo01");
+			return joaat("PG_AMBCAMP02X_TENT_COMBO01");
 		case 1727977751:
-			return joaat("pg_ambcamp02x_tent_pup");
+			return joaat("PG_AMBCAMP02X_TENT_PUP");
 		case 771254023:
-			return joaat("pg_ambcamp02x_tent_pupoil");
+			return joaat("PG_AMBCAMP02X_TENT_PUPOIL");
 		case 145562737:
-			return joaat("pg_ambcamp02x_tent_snow");
+			return joaat("PG_AMBCAMP02X_TENT_SNOW");
 		case 1851124237:
-			return joaat("pg_ambient_campfire03x_tent_trap");
+			return joaat("PG_AMBIENT_CAMPFIRE03X_TENT_TRAP");
 		case 2089223791:
-			return joaat("pg_ambcamp03x_tent_leanto01");
+			return joaat("PG_AMBCAMP03X_TENT_LEANTO01");
 		case -1982815998:
-			return joaat("pg_ambcamp03x_tent_leanto02");
+			return joaat("PG_AMBCAMP03X_TENT_LEANTO02");
 		default:
 			break;
 	}
@@ -2215,131 +2215,131 @@ int func_33(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return joaat("pg_player_campfire_add03x_stool");
+			return joaat("PG_PLAYER_CAMPFIRE_ADD03X_STOOL");
 		case 2:
-			return joaat("pg_ambient_camp_add_cart01");
+			return joaat("PG_AMBIENT_CAMP_ADD_CART01");
 		case 3:
-			return joaat("pg_ambient_camp_add_pack01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACK01");
 		case 4:
-			return joaat("pg_ambient_camp_add_pack02");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACK02");
 		case 5:
-			return joaat("pg_ambient_camp_add_pack03");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACK03");
 		case 6:
-			return joaat("pg_ambient_camp_add_pack04");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACK04");
 		case 7:
-			return joaat("pg_ambient_camp_add_packcart01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKCART01");
 		case 8:
-			return joaat("pg_ambient_camp_add_packcart02");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKCART02");
 		case 9:
-			return joaat("pg_ambient_camp_add_packcart03");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKCART03");
 		case 10:
-			return joaat("pg_ambient_camp_add_packcart04");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKCART04");
 		case 11:
-			return joaat("pg_ambient_camp_add_packcart05");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKCART05");
 		case 12:
-			return joaat("pg_ambient_camp_add_packcart06");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKCART06");
 		case 13:
-			return joaat("pg_ambient_camp_add_packwagonbutcher01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONBUTCHER01");
 		case 14:
-			return joaat("pg_ambient_camp_add_packwagonconvoy01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONCONVOY01");
 		case 15:
-			return joaat("pg_ambient_camp_add_packwagoncookprep01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONCOOKPREP01");
 		case 16:
-			return joaat("pg_ambient_camp_add_packwagonpacked01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONPACKED01");
 		case 21:
-			return joaat("pg_ambient_camp_add_bathtub01");
+			return joaat("PG_AMBIENT_CAMP_ADD_BATHTUB01");
 		case 22:
-			return joaat("pg_ambient_camp_add_build");
+			return joaat("PG_AMBIENT_CAMP_ADD_BUILD");
 		case 23:
-			return joaat("pg_ambient_camp_add_butcher01");
+			return joaat("PG_AMBIENT_CAMP_ADD_BUTCHER01");
 		case 24:
-			return joaat("pg_ambient_camp_add_cloth01");
+			return joaat("PG_AMBIENT_CAMP_ADD_CLOTH01");
 		case 25:
-			return joaat("pg_ambient_camp_add_clothesline01");
+			return joaat("PG_AMBIENT_CAMP_ADD_CLOTHESLINE01");
 		case 26:
-			return joaat("pg_ambient_camp_add_cook01");
+			return joaat("PG_AMBIENT_CAMP_ADD_COOK01");
 		case 27:
-			return joaat("pg_ambient_camp_add_cook02");
+			return joaat("PG_AMBIENT_CAMP_ADD_COOK02");
 		case 28:
-			return joaat("pg_ambient_camp_add_debris01");
+			return joaat("PG_AMBIENT_CAMP_ADD_DEBRIS01");
 		case 29:
-			return joaat("pg_ambient_camp_add_explore");
+			return joaat("PG_AMBIENT_CAMP_ADD_EXPLORE");
 		case 30:
-			return joaat("pg_ambient_camp_add_farmer01");
+			return joaat("PG_AMBIENT_CAMP_ADD_FARMER01");
 		case 31:
-			return joaat("pg_ambient_camp_add_fishgut01");
+			return joaat("PG_AMBIENT_CAMP_ADD_FISHGUT01");
 		case 32:
-			return joaat("pg_ambient_camp_add_forage01");
+			return joaat("PG_AMBIENT_CAMP_ADD_FORAGE01");
 		case 33:
-			return joaat("pg_ambient_camp_add_forage02");
+			return joaat("PG_AMBIENT_CAMP_ADD_FORAGE02");
 		case 34:
-			return joaat("pg_ambient_camp_add_gamepole01");
+			return joaat("PG_AMBIENT_CAMP_ADD_GAMEPOLE01");
 		case 35:
-			return joaat("pg_ambient_camp_add_games01");
+			return joaat("PG_AMBIENT_CAMP_ADD_GAMES01");
 		case 36:
-			return joaat("pg_ambient_camp_add_gear01");
+			return joaat("PG_AMBIENT_CAMP_ADD_GEAR01");
 		case 37:
-			return joaat("pg_ambient_camp_add_gear02");
+			return joaat("PG_AMBIENT_CAMP_ADD_GEAR02");
 		case 38:
-			return joaat("pg_ambient_camp_add_gear03");
+			return joaat("PG_AMBIENT_CAMP_ADD_GEAR03");
 		case 39:
-			return joaat("pg_ambient_camp_add_glamp");
+			return joaat("PG_AMBIENT_CAMP_ADD_GLAMP");
 		case 40:
-			return joaat("pg_ambient_camp_add_hanglrg");
+			return joaat("PG_AMBIENT_CAMP_ADD_HANGLRG");
 		case 41:
-			return joaat("pg_ambient_camp_add_hangmed");
+			return joaat("PG_AMBIENT_CAMP_ADD_HANGMED");
 		case 42:
-			return joaat("pg_ambient_camp_add_hangmix");
+			return joaat("PG_AMBIENT_CAMP_ADD_HANGMIX");
 		case 43:
-			return joaat("pg_ambient_camp_add_hangsml");
+			return joaat("PG_AMBIENT_CAMP_ADD_HANGSML");
 		case 44:
-			return joaat("pg_ambient_camp_add_horsetack01");
+			return joaat("PG_AMBIENT_CAMP_ADD_HORSETACK01");
 		case 45:
-			return joaat("pg_ambient_camp_add_hunt01");
+			return joaat("PG_AMBIENT_CAMP_ADD_HUNT01");
 		case 46:
-			return joaat("pg_ambient_camp_add_hunt02");
+			return joaat("PG_AMBIENT_CAMP_ADD_HUNT02");
 		case 47:
-			return joaat("pg_ambient_camp_add_lamppost01");
+			return joaat("PG_AMBIENT_CAMP_ADD_LAMPPOST01");
 		case 48:
-			return joaat("pg_ambient_camp_add_laundry");
+			return joaat("PG_AMBIENT_CAMP_ADD_LAUNDRY");
 		case 49:
-			return joaat("pg_ambient_camp_add_makeshifttable01");
+			return joaat("PG_AMBIENT_CAMP_ADD_MAKESHIFTTABLE01");
 		case 50:
-			return joaat("pg_ambient_camp_add_makeshifttable02");
+			return joaat("PG_AMBIENT_CAMP_ADD_MAKESHIFTTABLE02");
 		case 51:
-			return joaat("pg_ambient_camp_add_mine");
+			return joaat("PG_AMBIENT_CAMP_ADD_MINE");
 		case 52:
-			return joaat("pg_ambient_camp_add_native01");
+			return joaat("PG_AMBIENT_CAMP_ADD_NATIVE01");
 		case 53:
-			return joaat("pg_ambient_camp_add_pelts01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PELTS01");
 		case 54:
-			return joaat("pg_ambient_camp_add_picnic01");
+			return joaat("PG_AMBIENT_CAMP_ADD_PICNIC01");
 		case 55:
-			return joaat("pg_ambient_camp_add_station");
+			return joaat("PG_AMBIENT_CAMP_ADD_STATION");
 		case 56:
-			return joaat("pg_ambient_camp_add_station02");
+			return joaat("PG_AMBIENT_CAMP_ADD_STATION02");
 		case 57:
-			return joaat("pg_ambient_camp_add_tarp01");
+			return joaat("PG_AMBIENT_CAMP_ADD_TARP01");
 		case 58:
-			return joaat("pg_ambient_camp_add_umbrella01");
+			return joaat("PG_AMBIENT_CAMP_ADD_UMBRELLA01");
 		case 59:
-			return joaat("pg_ambient_camp_add_water01");
+			return joaat("PG_AMBIENT_CAMP_ADD_WATER01");
 		case 17:
-			return joaat("pg_ambient_camp_add_boat01");
+			return joaat("PG_AMBIENT_CAMP_ADD_BOAT01");
 		case 18:
-			return joaat("pg_ambient_camp_add_boat02");
+			return joaat("PG_AMBIENT_CAMP_ADD_BOAT02");
 		case 19:
-			return joaat("pg_ambient_camp_add_canoe01");
+			return joaat("PG_AMBIENT_CAMP_ADD_CANOE01");
 		case 20:
-			return joaat("pg_ambient_camp_add_canoe02");
+			return joaat("PG_AMBIENT_CAMP_ADD_CANOE02");
 		case 60:
-			return joaat("pg_ambient_camp_add_debrisveg01");
+			return joaat("PG_AMBIENT_CAMP_ADD_DEBRISVEG01");
 		case 61:
-			return joaat("pg_ambient_camp_add_fish01");
+			return joaat("PG_AMBIENT_CAMP_ADD_FISH01");
 		case 62:
-			return joaat("pg_ambient_camp_add_snow01");
+			return joaat("PG_AMBIENT_CAMP_ADD_SNOW01");
 		case 63:
-			return joaat("pg_ambient_camp_add_wood");
+			return joaat("PG_AMBIENT_CAMP_ADD_WOOD");
 		default:
 			break;
 	}
@@ -3128,7 +3128,7 @@ void func_64(var uParam0)
 					}
 					if (!uParam0->f_415)
 					{
-						PED::_0x24C82EF607105FAA(&(uParam0->f_16[iVar1]), joaat("guarddog"));
+						PED::_0x24C82EF607105FAA(&(uParam0->f_16[iVar1]), joaat("GUARDDOG"));
 					}
 				}
 				if (PED::IS_PED_HUMAN(&(uParam0->f_16[iVar1])))
@@ -3141,7 +3141,7 @@ void func_64(var uParam0)
 					{
 						PED::_0xB8B6430EAD2D2437(&(uParam0->f_16[iVar1]), -771952391);
 					}
-					PED::_0x24C82EF607105FAA(&(uParam0->f_16[iVar1]), joaat("aggressivecamper"));
+					PED::_0x24C82EF607105FAA(&(uParam0->f_16[iVar1]), joaat("AGGRESSIVECAMPER"));
 				}
 				if (!bVar0)
 				{
@@ -3253,8 +3253,8 @@ int func_66(int iParam0)
 		}
 		if (PED::_0x5E420FF293EE5472())
 		{
-			STREAMING::REQUEST_MODEL(joaat("a_c_vulture_01"), false);
-			if (!STREAMING::HAS_MODEL_LOADED(joaat("a_c_vulture_01")))
+			STREAMING::REQUEST_MODEL(joaat("A_C_VULTURE_01"), false);
+			if (!STREAMING::HAS_MODEL_LOADED(joaat("A_C_VULTURE_01")))
 			{
 				return 0;
 			}
@@ -3291,7 +3291,7 @@ int func_66(int iParam0)
 							iVar5 = 0;
 							break;
 					}
-					iParam0->f_442[iVar0] = func_194(joaat("a_c_vulture_01"), vVar1, fVar4, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
+					iParam0->f_442[iVar0] = func_194(joaat("A_C_VULTURE_01"), vVar1, fVar4, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0);
 					if (iVar5 != 0)
 					{
 						func_208(&(iParam0->f_442[iVar0]), iVar5, 0, 0, 0, -1082130432 /* Float: -1f */);
@@ -3305,7 +3305,7 @@ int func_66(int iParam0)
 				}
 				iVar0++;
 			}
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("a_c_vulture_01"));
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("A_C_VULTURE_01"));
 			return 1;
 		}
 		return 0;
@@ -3381,7 +3381,7 @@ int func_66(int iParam0)
 					}
 					break;
 			}
-			POPULATION::_0xB56D41A694E42E86(iParam0->f_411, 2304, 0, -1190799868, joaat("animal_horse"), -1, 8);
+			POPULATION::_0xB56D41A694E42E86(iParam0->f_411, 2304, 0, -1190799868, joaat("ANIMAL_HORSE"), -1, 8);
 			if (!VOLUME::_DOES_VOLUME_EXIST(iParam0->f_412))
 			{
 				switch (func_28(iParam0->f_102))
@@ -5757,15 +5757,15 @@ int func_133(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bayounwa"):
+		case joaat("BAYOUNWA"):
 			return 0;
-		case joaat("bigvalley"):
+		case joaat("BIGVALLEY"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GREATPLAINS"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -5773,17 +5773,17 @@ int func_133(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("HEARTLANDS"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TALLTREES"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RIOBRAVO"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -6019,19 +6019,19 @@ int func_142(int iParam0)
 	{
 		if (iParam0->f_413 == -155757539)
 		{
-			(iParam0->f_3[1 /*6*/])->f_3 = joaat("a_c_dogbluetickcoonhound_01");
+			(iParam0->f_3[1 /*6*/])->f_3 = joaat("A_C_DOGBLUETICKCOONHOUND_01");
 			iParam0->f_103 = 2;
 			*(iParam0->f_140[1 /*3*/]) = { -1911.18f, -1086.666f, 74.746f };
 		}
 		else if (iParam0->f_413 == -713082107)
 		{
-			(iParam0->f_3[1 /*6*/])->f_3 = joaat("a_c_dogbluetickcoonhound_01");
+			(iParam0->f_3[1 /*6*/])->f_3 = joaat("A_C_DOGBLUETICKCOONHOUND_01");
 			iParam0->f_103 = 2;
 			*(iParam0->f_140[1 /*3*/]) = { -1527.035f, -309.3184f, 141.4144f };
 		}
 		else if (iParam0->f_413 == -1295756736)
 		{
-			(iParam0->f_3[1 /*6*/])->f_3 = joaat("a_c_doglab_01");
+			(iParam0->f_3[1 /*6*/])->f_3 = joaat("A_C_DOGLAB_01");
 			iParam0->f_103 = 2;
 			*(iParam0->f_140[1 /*3*/]) = { -707.0224f, -456.7815f, 40.56417f };
 		}
@@ -6039,17 +6039,17 @@ int func_142(int iParam0)
 		{
 			if (iParam0->f_101 == 12)
 			{
-				(iParam0->f_3[0 /*6*/])->f_3 = joaat("a_c_bear_01");
+				(iParam0->f_3[0 /*6*/])->f_3 = joaat("A_C_BEAR_01");
 			}
 			else if (iParam0->f_101 == 10)
 			{
-				(iParam0->f_3[0 /*6*/])->f_3 = joaat("a_c_cougar_01");
+				(iParam0->f_3[0 /*6*/])->f_3 = joaat("A_C_COUGAR_01");
 			}
 			*(iParam0->f_140[0 /*3*/]) = { func_115(iParam0, -2.554f, -1.825f, -1f) };
 		}
 		else if (iParam0->f_413 == 1500241378)
 		{
-			(iParam0->f_3[0 /*6*/])->f_3 = joaat("a_m_m_unicorpse_01");
+			(iParam0->f_3[0 /*6*/])->f_3 = joaat("A_M_M_UNICORPSE_01");
 		}
 	}
 	if (iParam0->f_162 != 0 && iParam0->f_162 != -1)
@@ -6317,7 +6317,7 @@ void func_146(int iParam0, var uParam1)
 			iParam0->f_413 = iVar23;
 		}
 	}
-	if ((((((!bVar4 && !iParam0->f_416) && !iParam0->f_415) && !iParam0->f_419) && iParam0->f_616 != joaat("amb_camp_bgv_drunk01")) && !func_380(iParam0->f_97, iParam0->f_101)) && func_377())
+	if ((((((!bVar4 && !iParam0->f_416) && !iParam0->f_415) && !iParam0->f_419) && iParam0->f_616 != joaat("AMB_CAMP_BGV_DRUNK01")) && !func_380(iParam0->f_97, iParam0->f_101)) && func_377())
 	{
 		func_381(iParam0);
 	}
@@ -6459,19 +6459,19 @@ int func_147(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("pg_ambient_campfire01x"):
+		case joaat("PG_AMBIENT_CAMPFIRE01X"):
 			return 3;
-		case joaat("pg_ambient_campfire01ax"):
+		case joaat("PG_AMBIENT_CAMPFIRE01AX"):
 			return 4;
-		case joaat("pg_ambient_campfire01bx"):
+		case joaat("PG_AMBIENT_CAMPFIRE01BX"):
 			return 5;
-		case joaat("pg_ambient_campfire02x"):
+		case joaat("PG_AMBIENT_CAMPFIRE02X"):
 			return 6;
-		case joaat("pg_ambient_campfire03x"):
+		case joaat("PG_AMBIENT_CAMPFIRE03X"):
 			return 7;
-		case joaat("pg_ambient_campfire04x"):
+		case joaat("PG_AMBIENT_CAMPFIRE04X"):
 			return 8;
-		case joaat("pg_ambient_campfire05x"):
+		case joaat("PG_AMBIENT_CAMPFIRE05X"):
 			return 9;
 		default:
 			break;
@@ -6488,167 +6488,167 @@ int func_149(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("pg_ambcamp01x_tent_pupstripe"):
+		case joaat("PG_AMBCAMP01X_TENT_PUPSTRIPE"):
 			return -2044823653;
-		case joaat("pg_ambcamp01x_tent_pupoil"):
+		case joaat("PG_AMBCAMP01X_TENT_PUPOIL"):
 			return 1582835727;
-		case joaat("pg_ambcamp01x_tent_leantopine"):
+		case joaat("PG_AMBCAMP01X_TENT_LEANTOPINE"):
 			return -1328526086;
-		case joaat("pg_ambcamp01x_tent_snow"):
+		case joaat("PG_AMBCAMP01X_TENT_SNOW"):
 			return -1160421116;
-		case joaat("pg_ambcamp01x_tent_pup"):
+		case joaat("PG_AMBCAMP01X_TENT_PUP"):
 			return -1965850367;
-		case joaat("pg_ambcamp01x_tent_leanto01"):
+		case joaat("PG_AMBCAMP01X_TENT_LEANTO01"):
 			return -1659624062;
-		case joaat("pg_ambcamp01x_tent_leanto02"):
+		case joaat("PG_AMBCAMP01X_TENT_LEANTO02"):
 			return -111813116;
-		case joaat("pg_ambcamp01x_tent_leanto03"):
+		case joaat("PG_AMBCAMP01X_TENT_LEANTO03"):
 			return 60355210;
-		case joaat("pg_ambcamp01x_tent_abandon01"):
+		case joaat("PG_AMBCAMP01X_TENT_ABANDON01"):
 			return -743238977;
-		case joaat("pg_ambcamp01x_tent_blanket"):
+		case joaat("PG_AMBCAMP01X_TENT_BLANKET"):
 			return 1296723921;
-		case joaat("pg_ambcamp01x_tent_burlap"):
+		case joaat("PG_AMBCAMP01X_TENT_BURLAP"):
 			return 990366540;
-		case joaat("pg_ambcamp01x_tent_burlap_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_BURLAP_LEAN"):
 			return 2145015028;
-		case joaat("pg_ambcamp01x_tent_canvas_leanto01"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO01"):
 			return 765079665;
-		case joaat("pg_ambcamp01x_tent_canvas_leanto02"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO02"):
 			return -209109940;
-		case joaat("pg_ambcamp01x_tent_canvas_leanto03"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO03"):
 			return -487351519;
-		case joaat("pg_ambcamp01x_tent_canvas_leanto04"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_LEANTO04"):
 			return 1228302245;
-		case joaat("pg_ambcamp01x_tent_canvas_pup01"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_PUP01"):
 			return 912769544;
-		case joaat("pg_ambcamp01x_tent_canvas_pup02"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_PUP02"):
 			return -1664119074;
-		case joaat("pg_ambcamp01x_tent_canvas_tall01"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_TALL01"):
 			return -937564806;
-		case joaat("pg_ambcamp01x_tent_canvas_tall02"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_TALL02"):
 			return 222985850;
-		case joaat("pg_ambcamp01x_tent_canvas_wedge_plain"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_WEDGE_PLAIN"):
 			return -536075266;
-		case joaat("pg_ambcamp01x_tent_canvas_wedge_stripe"):
+		case joaat("PG_AMBCAMP01X_TENT_CANVAS_WEDGE_STRIPE"):
 			return 700987253;
-		case joaat("pg_ambcamp01x_tent_debris01"):
+		case joaat("PG_AMBCAMP01X_TENT_DEBRIS01"):
 			return -58794781;
-		case joaat("pg_ambcamp01x_tent_destroyed"):
+		case joaat("PG_AMBCAMP01X_TENT_DESTROYED"):
 			return -1304508312;
-		case joaat("pg_ambcamp01x_tent_frame_dome"):
+		case joaat("PG_AMBCAMP01X_TENT_FRAME_DOME"):
 			return -1005032421;
-		case joaat("pg_ambcamp01x_tent_frame_pup"):
+		case joaat("PG_AMBCAMP01X_TENT_FRAME_PUP"):
 			return -817724817;
-		case joaat("pg_ambcamp01x_tent_grass_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_GRASS_LEAN"):
 			return -520935984;
-		case joaat("pg_ambcamp01x_tent_ground01"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND01"):
 			return 2074434358;
-		case joaat("pg_ambcamp01x_tent_ground02"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND02"):
 			return -1920925971;
-		case joaat("pg_ambcamp01x_tent_ground03"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND03"):
 			return -1239527077;
-		case joaat("pg_ambcamp01x_tent_ground04"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND04"):
 			return -925632826;
-		case joaat("pg_ambcamp01x_tent_ground05"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND05"):
 			return -1715300188;
-		case joaat("pg_ambcamp01x_tent_ground06"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND06"):
 			return -1403175463;
-		case joaat("pg_ambcamp01x_tent_ground07"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND07"):
 			return -2110625432;
-		case joaat("pg_ambcamp01x_tent_ground08"):
+		case joaat("PG_AMBCAMP01X_TENT_GROUND08"):
 			return 1417448957;
-		case joaat("pg_ambcamp01x_tent_hide"):
+		case joaat("PG_AMBCAMP01X_TENT_HIDE"):
 			return -1236840047;
-		case joaat("pg_ambcamp01x_tent_hide_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_HIDE_LEAN"):
 			return -956501252;
-		case joaat("pg_ambcamp01x_tent_leather"):
+		case joaat("PG_AMBCAMP01X_TENT_LEATHER"):
 			return 1213560263;
-		case joaat("pg_ambcamp01x_tent_leather_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_LEATHER_LEAN"):
 			return 430119011;
-		case joaat("pg_ambcamp01x_tent_leaves"):
+		case joaat("PG_AMBCAMP01X_TENT_LEAVES"):
 			return 1492423585;
-		case joaat("pg_ambcamp01x_tent_leaves_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_LEAVES_LEAN"):
 			return 1790654254;
-		case joaat("pg_ambcamp01x_tent_oilskin01"):
+		case joaat("PG_AMBCAMP01X_TENT_OILSKIN01"):
 			return 1943030104;
-		case joaat("pg_ambcamp01x_tent_oilskin_lean01"):
+		case joaat("PG_AMBCAMP01X_TENT_OILSKIN_LEAN01"):
 			return -2054296365;
-		case joaat("pg_ambcamp01x_tent_oilskin_lean02"):
+		case joaat("PG_AMBCAMP01X_TENT_OILSKIN_LEAN02"):
 			return 1015274172;
-		case joaat("pg_ambcamp01x_tent_patchwork"):
+		case joaat("PG_AMBCAMP01X_TENT_PATCHWORK"):
 			return 1312783923;
-		case joaat("pg_ambcamp01x_tent_patchwork_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_PATCHWORK_LEAN"):
 			return 1490916215;
-		case joaat("pg_ambcamp01x_tent_plaid01"):
+		case joaat("PG_AMBCAMP01X_TENT_PLAID01"):
 			return 1789146884;
-		case joaat("pg_ambcamp01x_tent_plaid_lean01"):
+		case joaat("PG_AMBCAMP01X_TENT_PLAID_LEAN01"):
 			return -350504979;
-		case joaat("pg_ambcamp01x_tent_plaid_lean02"):
+		case joaat("PG_AMBCAMP01X_TENT_PLAID_LEAN02"):
 			return -212744103;
-		case joaat("pg_ambcamp01x_tent_pupoil01"):
+		case joaat("PG_AMBCAMP01X_TENT_PUPOIL01"):
 			return -925174672;
-		case joaat("pg_ambcamp01x_tent_pupoil02"):
+		case joaat("PG_AMBCAMP01X_TENT_PUPOIL02"):
 			return -477353518;
-		case joaat("pg_ambcamp01x_tent_pupstripe_glamp"):
+		case joaat("PG_AMBCAMP01X_TENT_PUPSTRIPE_GLAMP"):
 			return -1386726037;
-		case joaat("pg_ambcamp01x_tent_scrub"):
+		case joaat("PG_AMBCAMP01X_TENT_SCRUB"):
 			return -1716644329;
-		case joaat("pg_ambcamp01x_tent_scrub_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_SCRUB_LEAN"):
 			return -1582324194;
-		case joaat("pg_ambcamp01x_tent_shelter_boat"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_BOAT"):
 			return -1671390336;
-		case joaat("pg_ambcamp01x_tent_shelter_build"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_BUILD"):
 			return -2044006635;
-		case joaat("pg_ambcamp01x_tent_shelter_cart"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_CART"):
 			return 1861533865;
-		case joaat("pg_ambcamp01x_tent_shelter_firewood"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_FIREWOOD"):
 			return 956191925;
-		case joaat("pg_ambcamp01x_tent_shelter_scaff"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_SCAFF"):
 			return 1413712711;
-		case joaat("pg_ambcamp01x_tent_shelter_tree_scaff"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_SCAFF"):
 			return -1616863608;
-		case joaat("pg_ambcamp01x_tent_shelter_tree_tie01"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_TIE01"):
 			return -1919550861;
-		case joaat("pg_ambcamp01x_tent_shelter_tree_tie02"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_TIE02"):
 			return -1137944673;
-		case joaat("pg_ambcamp01x_tent_shelter_tree_trunk"):
+		case joaat("PG_AMBCAMP01X_TENT_SHELTER_TREE_TRUNK"):
 			return -1443318984;
-		case joaat("pg_ambcamp01x_tent_snow01"):
+		case joaat("PG_AMBCAMP01X_TENT_SNOW01"):
 			return -1064017813;
-		case joaat("pg_ambcamp01x_tent_snow02"):
+		case joaat("PG_AMBCAMP01X_TENT_SNOW02"):
 			return -1220588095;
-		case joaat("pg_ambcamp01x_tent_sticks"):
+		case joaat("PG_AMBCAMP01X_TENT_STICKS"):
 			return -318621370;
-		case joaat("pg_ambcamp01x_tent_sticks_tall"):
+		case joaat("PG_AMBCAMP01X_TENT_STICKS_TALL"):
 			return -579626455;
-		case joaat("pg_ambcamp01x_tent_string"):
+		case joaat("PG_AMBCAMP01X_TENT_STRING"):
 			return 159248957;
-		case joaat("pg_ambcamp01x_tent_string_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_STRING_LEAN"):
 			return -7414177;
-		case joaat("pg_ambcamp01x_tent_string_tarp"):
+		case joaat("PG_AMBCAMP01X_TENT_STRING_TARP"):
 			return -1575148327;
-		case joaat("pg_ambcamp01x_tent_wagon_debris"):
+		case joaat("PG_AMBCAMP01X_TENT_WAGON_DEBRIS"):
 			return -1880457100;
-		case joaat("pg_ambcamp01x_tent_woven"):
+		case joaat("PG_AMBCAMP01X_TENT_WOVEN"):
 			return -844170244;
-		case joaat("pg_ambcamp01x_tent_woven_lean"):
+		case joaat("PG_AMBCAMP01X_TENT_WOVEN_LEAN"):
 			return -1285437598;
-		case joaat("pg_ambcamp01x_tent_plaid"):
+		case joaat("PG_AMBCAMP01X_TENT_PLAID"):
 			return 2113625210;
-		case joaat("pg_ambcamp02x_tent_combo01"):
+		case joaat("PG_AMBCAMP02X_TENT_COMBO01"):
 			return 430292578;
-		case joaat("pg_ambcamp02x_tent_pup"):
+		case joaat("PG_AMBCAMP02X_TENT_PUP"):
 			return 1727977751;
-		case joaat("pg_ambcamp02x_tent_pupoil"):
+		case joaat("PG_AMBCAMP02X_TENT_PUPOIL"):
 			return 771254023;
-		case joaat("pg_ambcamp02x_tent_snow"):
+		case joaat("PG_AMBCAMP02X_TENT_SNOW"):
 			return 145562737;
-		case joaat("pg_ambient_campfire03x_tent_trap"):
+		case joaat("PG_AMBIENT_CAMPFIRE03X_TENT_TRAP"):
 			return 1851124237;
-		case joaat("pg_ambcamp03x_tent_leanto01"):
+		case joaat("PG_AMBCAMP03X_TENT_LEANTO01"):
 			return 2089223791;
-		case joaat("pg_ambcamp03x_tent_leanto02"):
+		case joaat("PG_AMBCAMP03X_TENT_LEANTO02"):
 			return -1982815998;
 		default:
 			break;
@@ -6665,129 +6665,129 @@ int func_151(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("pg_ambient_camp_add_cart01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_CART01"):
 			return -440554661;
-		case joaat("pg_ambient_camp_add_pack01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACK01"):
 			return -561234502;
-		case joaat("pg_ambient_camp_add_pack02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACK02"):
 			return -849700009;
-		case joaat("pg_ambient_camp_add_pack03"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACK03"):
 			return -1309121389;
-		case joaat("pg_ambient_camp_add_pack04"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACK04"):
 			return 865920986;
-		case joaat("pg_ambient_camp_add_packcart01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART01"):
 			return 840750793;
-		case joaat("pg_ambient_camp_add_packcart02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART02"):
 			return 1272842827;
-		case joaat("pg_ambient_camp_add_packcart03"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART03"):
 			return -828665916;
-		case joaat("pg_ambient_camp_add_packcart04"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART04"):
 			return -126753936;
-		case joaat("pg_ambient_camp_add_packcart05"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART05"):
 			return -217589604;
-		case joaat("pg_ambient_camp_add_packcart06"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART06"):
 			return 617921593;
-		case joaat("pg_ambient_camp_add_packwagonbutcher01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONBUTCHER01"):
 			return -1413556206;
-		case joaat("pg_ambient_camp_add_packwagonconvoy01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONCONVOY01"):
 			return 118277289;
-		case joaat("pg_ambient_camp_add_packwagoncookprep01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONCOOKPREP01"):
 			return -809021816;
-		case joaat("pg_ambient_camp_add_packwagonpacked01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONPACKED01"):
 			return -1129374452;
-		case joaat("pg_ambient_camp_add_bathtub01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_BATHTUB01"):
 			return -844730787;
-		case joaat("pg_ambient_camp_add_build"):
+		case joaat("PG_AMBIENT_CAMP_ADD_BUILD"):
 			return 1928071154;
-		case joaat("pg_ambient_camp_add_butcher01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_BUTCHER01"):
 			return -1429303515;
-		case joaat("pg_ambient_camp_add_cloth01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_CLOTH01"):
 			return -1531474302;
-		case joaat("pg_ambient_camp_add_clothesline01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_CLOTHESLINE01"):
 			return -63412650;
-		case joaat("pg_ambient_camp_add_cook01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_COOK01"):
 			return 612482931;
-		case joaat("pg_ambient_camp_add_cook02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_COOK02"):
 			return 315038718;
-		case joaat("pg_ambient_camp_add_debris01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_DEBRIS01"):
 			return -121653661;
-		case joaat("pg_ambient_camp_add_explore"):
+		case joaat("PG_AMBIENT_CAMP_ADD_EXPLORE"):
 			return 994772348;
-		case joaat("pg_ambient_camp_add_farmer01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_FARMER01"):
 			return -1287040912;
-		case joaat("pg_ambient_camp_add_fishgut01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_FISHGUT01"):
 			return -1073719258;
-		case joaat("pg_ambient_camp_add_forage01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_FORAGE01"):
 			return -931467831;
-		case joaat("pg_ambient_camp_add_forage02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_FORAGE02"):
 			return -1811315469;
-		case joaat("pg_ambient_camp_add_gamepole01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_GAMEPOLE01"):
 			return 674623419;
-		case joaat("pg_ambient_camp_add_games01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_GAMES01"):
 			return 1254584327;
-		case joaat("pg_ambient_camp_add_gear01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_GEAR01"):
 			return 1773929796;
-		case joaat("pg_ambient_camp_add_gear02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_GEAR02"):
 			return 1543301570;
-		case joaat("pg_ambient_camp_add_gear03"):
+		case joaat("PG_AMBIENT_CAMP_ADD_GEAR03"):
 			return 358210685;
-		case joaat("pg_ambient_camp_add_glamp"):
+		case joaat("PG_AMBIENT_CAMP_ADD_GLAMP"):
 			return -1763169123;
-		case joaat("pg_ambient_camp_add_hanglrg"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HANGLRG"):
 			return -1206075062;
-		case joaat("pg_ambient_camp_add_hangmed"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HANGMED"):
 			return 1521151419;
-		case joaat("pg_ambient_camp_add_hangmix"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HANGMIX"):
 			return -1177232043;
-		case joaat("pg_ambient_camp_add_hangsml"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HANGSML"):
 			return -1525143843;
-		case joaat("pg_ambient_camp_add_horsetack01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HORSETACK01"):
 			return -1020957334;
-		case joaat("pg_ambient_camp_add_hunt01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HUNT01"):
 			return -214180569;
-		case joaat("pg_ambient_camp_add_hunt02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_HUNT02"):
 			return -577719855;
-		case joaat("pg_ambient_camp_add_lamppost01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_LAMPPOST01"):
 			return -338197600;
-		case joaat("pg_ambient_camp_add_laundry"):
+		case joaat("PG_AMBIENT_CAMP_ADD_LAUNDRY"):
 			return 26008643;
-		case joaat("pg_ambient_camp_add_makeshifttable01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_MAKESHIFTTABLE01"):
 			return -199201643;
-		case joaat("pg_ambient_camp_add_makeshifttable02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_MAKESHIFTTABLE02"):
 			return -546684119;
-		case joaat("pg_ambient_camp_add_mine"):
+		case joaat("PG_AMBIENT_CAMP_ADD_MINE"):
 			return 1317191629;
-		case joaat("pg_ambient_camp_add_native01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_NATIVE01"):
 			return 357515551;
-		case joaat("pg_ambient_camp_add_pelts01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PELTS01"):
 			return 1969406386;
-		case joaat("pg_ambient_camp_add_picnic01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_PICNIC01"):
 			return 1532878885;
-		case joaat("pg_ambient_camp_add_station"):
+		case joaat("PG_AMBIENT_CAMP_ADD_STATION"):
 			return 1396416777;
-		case joaat("pg_ambient_camp_add_station02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_STATION02"):
 			return -1609140432;
-		case joaat("pg_ambient_camp_add_tarp01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_TARP01"):
 			return 1248440189;
-		case joaat("pg_ambient_camp_add_umbrella01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_UMBRELLA01"):
 			return 847277475;
-		case joaat("pg_ambient_camp_add_water01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_WATER01"):
 			return -794668362;
-		case joaat("pg_ambient_camp_add_boat01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_BOAT01"):
 			return -2030181590;
-		case joaat("pg_ambient_camp_add_boat02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_BOAT02"):
 			return -1174714080;
-		case joaat("pg_ambient_camp_add_canoe01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_CANOE01"):
 			return 1538845686;
-		case joaat("pg_ambient_camp_add_canoe02"):
+		case joaat("PG_AMBIENT_CAMP_ADD_CANOE02"):
 			return -1999026630;
-		case joaat("pg_ambient_camp_add_debrisveg01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_DEBRISVEG01"):
 			return 300892676;
-		case joaat("pg_ambient_camp_add_fish01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_FISH01"):
 			return -858162957;
-		case joaat("pg_ambient_camp_add_snow01"):
+		case joaat("PG_AMBIENT_CAMP_ADD_SNOW01"):
 			return -1605807534;
-		case joaat("pg_ambient_camp_add_wood"):
+		case joaat("PG_AMBIENT_CAMP_ADD_WOOD"):
 			return 2053296115;
 		default:
 			break;
@@ -6926,53 +6926,53 @@ int func_160(int iParam0)
 	{
 		case 2:
 		case 3:
-			return joaat("pg_ambient_campfire01x");
+			return joaat("PG_AMBIENT_CAMPFIRE01X");
 		case 4:
-			return joaat("pg_ambient_campfire01ax");
+			return joaat("PG_AMBIENT_CAMPFIRE01AX");
 		case 5:
-			return joaat("pg_ambient_campfire01bx");
+			return joaat("PG_AMBIENT_CAMPFIRE01BX");
 		case 6:
-			return joaat("pg_ambient_campfire02x");
+			return joaat("PG_AMBIENT_CAMPFIRE02X");
 		case 7:
-			return joaat("pg_ambient_campfire03x");
+			return joaat("PG_AMBIENT_CAMPFIRE03X");
 		case 8:
-			return joaat("pg_ambient_campfire04x");
+			return joaat("PG_AMBIENT_CAMPFIRE04X");
 		case 9:
-			return joaat("pg_ambient_campfire05x");
+			return joaat("PG_AMBIENT_CAMPFIRE05X");
 		case 16:
-			return joaat("pg_gangcamp_skinner_argument");
+			return joaat("PG_GANGCAMP_SKINNER_ARGUMENT");
 		case 17:
-			return joaat("pg_gangcamp_skinner_torture");
+			return joaat("PG_GANGCAMP_SKINNER_TORTURE");
 		case 18:
-			return joaat("pg_gangcamp_skinner_general");
+			return joaat("PG_GANGCAMP_SKINNER_GENERAL");
 		case 19:
-			return joaat("pg_re_odoriscollboysgang01x");
+			return joaat("PG_RE_ODORISCOLLBOYSGANG01X");
 		case 20:
-			return joaat("pg_re_odoriscollboysgang02x");
+			return joaat("PG_RE_ODORISCOLLBOYSGANG02X");
 		case 21:
-			return joaat("pg_re_odoriscollboysgang03x");
+			return joaat("PG_RE_ODORISCOLLBOYSGANG03X");
 		case 22:
-			return joaat("pg_gangcamp_odriscolls_general");
+			return joaat("PG_GANGCAMP_ODRISCOLLS_GENERAL");
 		case 23:
-			return joaat("pg_gangcamp_odriscolls_robbery");
+			return joaat("PG_GANGCAMP_ODRISCOLLS_ROBBERY");
 		case 24:
-			return joaat("pg_gangcamp_odriscolls_politics");
+			return joaat("PG_GANGCAMP_ODRISCOLLS_POLITICS");
 		case 25:
-			return joaat("pg_re_exconfederategang02x");
+			return joaat("PG_RE_EXCONFEDERATEGANG02X");
 		case 27:
-			return joaat("pg_ambient_campfireexconfed01x");
+			return joaat("PG_AMBIENT_CAMPFIREEXCONFED01X");
 		case 29:
-			return joaat("pg_re_lemoyneraiders01x");
+			return joaat("PG_RE_LEMOYNERAIDERS01X");
 		case 30:
-			return joaat("pg_re_lemoyneraiders01x");
+			return joaat("PG_RE_LEMOYNERAIDERS01X");
 		case 26:
-			return joaat("pg_gangcamp_lemoyne_general");
+			return joaat("PG_GANGCAMP_LEMOYNE_GENERAL");
 		case 28:
-			return joaat("pg_gangcamp_lemoyne_warstory");
+			return joaat("PG_GANGCAMP_LEMOYNE_WARSTORY");
 		case 31:
-			return joaat("pg_gangcamp_lemoyne_captive");
+			return joaat("PG_GANGCAMP_LEMOYNE_CAPTIVE");
 		case 33:
-			return joaat("pg_ambient_campfireransacked04x");
+			return joaat("PG_AMBIENT_CAMPFIRERANSACKED04X");
 		default:
 			break;
 	}
@@ -7603,13 +7603,13 @@ void func_185(int iParam0)
 					{
 						switch (iVar7)
 						{
-							case joaat("call"):
+							case joaat("CALL"):
 								func_207(&((iParam0->f_164[iVar8 /*8*/])->f_7), 1024);
 								break;
-							case joaat("invite"):
+							case joaat("INVITE"):
 								func_207(&((iParam0->f_164[iVar8 /*8*/])->f_7), 2048);
 								break;
-							case joaat("intro"):
+							case joaat("INTRO"):
 								func_207(&((iParam0->f_164[iVar8 /*8*/])->f_7), 512);
 								break;
 						}
@@ -7729,69 +7729,69 @@ char* func_187(var uParam0)
 	{
 		case 1503442953:
 			return "ac_nav_bay_squat_macomb";
-		case joaat("amb_camp_bay_story_specter"):
+		case joaat("AMB_CAMP_BAY_STORY_SPECTER"):
 			return "ac_nav_bay_story_specter";
-		case joaat("amb_camp_bay_story_copperhead"):
+		case joaat("AMB_CAMP_BAY_STORY_COPPERHEAD"):
 			return "ac_nav_bay_story_copperhead";
-		case joaat("amb_camp_cml_story_valentine"):
+		case joaat("AMB_CAMP_CML_STORY_VALENTINE"):
 			return "ac_nav_cml_story_valentine";
 		case -1928361302:
 			return "ac_nav_cml_story_stdenis";
 		case 1283988553:
 			return "ac_nav_gre_story_hunter";
-		case joaat("amb_camp_gre_story_treasure"):
+		case joaat("AMB_CAMP_GRE_STORY_TREASURE"):
 			return "ac_nav_gre_story_treasure";
-		case joaat("amb_camp_grt_story_manzanita"):
+		case joaat("AMB_CAMP_GRT_STORY_MANZANITA"):
 			return "ac_nav_grt_story_manzanita";
 		case 292362182:
 			return "ac_nav_hen_story_harlow";
-		case joaat("amb_camp_hrt_story_cannibal"):
+		case joaat("AMB_CAMP_HRT_STORY_CANNIBAL"):
 			return "ac_nav_hrt_story_cannibal";
-		case joaat("amb_camp_hrt_story_chelonian"):
+		case joaat("AMB_CAMP_HRT_STORY_CHELONIAN"):
 			return "ac_nav_hrt_story_chelonian";
-		case joaat("amb_camp_roa_story_rhodes"):
+		case joaat("AMB_CAMP_ROA_STORY_RHODES"):
 			return "ac_nav_roa_story_rhodes";
-		case joaat("amb_camp_roa_creep01"):
+		case joaat("AMB_CAMP_ROA_CREEP01"):
 			return "ac_nav_roa_creep01";
-		case joaat("amb_camp_roa_story_pigfarm"):
+		case joaat("AMB_CAMP_ROA_STORY_PIGFARM"):
 			return "ac_nav_roa_story_pigfarm";
-		case joaat("amb_camp_roa_story_princess"):
+		case joaat("AMB_CAMP_ROA_STORY_PRINCESS"):
 			return "ac_nav_roa_story_princess";
-		case joaat("amb_camp_scm_story_murfee"):
+		case joaat("AMB_CAMP_SCM_STORY_MURFEE"):
 			return "ac_nav_scm_story_murfee";
-		case joaat("amb_camp_tal_story_emranch"):
+		case joaat("AMB_CAMP_TAL_STORY_EMRANCH"):
 			return "ac_nav_tal_story_emranch";
-		case joaat("amb_camp_bgv_hunt01"):
+		case joaat("AMB_CAMP_BGV_HUNT01"):
 			return "ac_nav_bgv_hunt01";
-		case joaat("amb_camp_bgv_glamp01"):
+		case joaat("AMB_CAMP_BGV_GLAMP01"):
 			return "ac_nav_bgv_glamp01";
-		case joaat("amb_camp_bgv_explr01"):
+		case joaat("AMB_CAMP_BGV_EXPLR01"):
 			return "ac_nav_bgv_explr01";
-		case joaat("amb_camp_bgv_drunk01"):
+		case joaat("AMB_CAMP_BGV_DRUNK01"):
 			return "ac_nav_bgv_drunk01";
-		case joaat("amb_camp_bgv_006"):
+		case joaat("AMB_CAMP_BGV_006"):
 			return "ac_nav_bgv_006";
-		case joaat("amb_camp_bgv_basket"):
+		case joaat("AMB_CAMP_BGV_BASKET"):
 			return "ac_nav_bgv_basket";
-		case joaat("amb_camp_bgv_gold01"):
+		case joaat("AMB_CAMP_BGV_GOLD01"):
 			return "ac_nav_bgv_gold01";
 		case 276427301:
 			return "ac_nav_mount_view_1";
-		case joaat("amb_camp_bgv_dead01"):
+		case joaat("AMB_CAMP_BGV_DEAD01"):
 			return "ac_nav_bgv_dead01";
-		case joaat("amb_camp_bgv_ovrhang"):
+		case joaat("AMB_CAMP_BGV_OVRHANG"):
 			return "ac_nav_bgv_ovrhang";
-		case joaat("amb_camp_bgv_mount_view_2"):
+		case joaat("AMB_CAMP_BGV_MOUNT_VIEW_2"):
 			return "ac_nav_bgv_mount_view_2";
-		case joaat("amb_camp_bgv_canoe01"):
+		case joaat("AMB_CAMP_BGV_CANOE01"):
 			return "ac_nav_bgv_canoe01";
-		case joaat("amb_camp_bgv_robbery"):
+		case joaat("AMB_CAMP_BGV_ROBBERY"):
 			return "ac_nav_bgv_robbery";
 		case -2112989134:
 			return "ac_nav_bgv_cave";
 		case -792399058:
 			return "ac_nav_bgv_wagon01";
-		case joaat("amb_camp_hrt_agro"):
+		case joaat("AMB_CAMP_HRT_AGRO"):
 			return "ac_nav_hrt_agro";
 		default:
 			break;
@@ -7971,14 +7971,14 @@ int func_199(int iParam0, int iParam1)
 	}
 	switch (iParam0)
 	{
-		case joaat("u_m_m_nbxbrontegoon_01"):
-		case joaat("g_m_m_uniswamp_01"):
-		case joaat("u_m_m_nbxbrontesecform_01"):
-		case joaat("u_m_m_nbxbronteasc_01"):
-		case joaat("g_m_m_unibrontegoons_01"):
+		case joaat("U_M_M_NBXBRONTEGOON_01"):
+		case joaat("G_M_M_UNISWAMP_01"):
+		case joaat("U_M_M_NBXBRONTESECFORM_01"):
+		case joaat("U_M_M_NBXBRONTEASC_01"):
+		case joaat("G_M_M_UNIBRONTEGOONS_01"):
 			return 1;
-		case joaat("g_m_m_unicriminals_02"):
-		case joaat("g_m_m_unicriminals_01"):
+		case joaat("G_M_M_UNICRIMINALS_02"):
+		case joaat("G_M_M_UNICRIMINALS_01"):
 			return iParam1;
 		default:
 			break;
@@ -8253,19 +8253,19 @@ int func_213(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("a_c_horse_americanpaint_splashedwhite");
+			return joaat("A_C_HORSE_AMERICANPAINT_SPLASHEDWHITE");
 		case 1:
-			return joaat("a_c_horse_andalusian_perlino");
+			return joaat("A_C_HORSE_ANDALUSIAN_PERLINO");
 		case 2:
-			return joaat("a_c_horse_appaloosa_fewspotted_pc");
+			return joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC");
 		case 3:
-			return joaat("a_c_horse_arabian_redchestnut_pc");
+			return joaat("A_C_HORSE_ARABIAN_REDCHESTNUT_PC");
 		case 4:
-			return joaat("a_c_horse_arabian_warpedbrindle_pc");
+			return joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC");
 		case 5:
-			return joaat("a_c_horse_arabian_white");
+			return joaat("A_C_HORSE_ARABIAN_WHITE");
 		case 6:
-			return joaat("a_c_horse_mustang_tigerstripedbay");
+			return joaat("A_C_HORSE_MUSTANG_TIGERSTRIPEDBAY");
 		default:
 			break;
 	}
@@ -8497,7 +8497,7 @@ void func_223(var uParam0)
 		if (((MISC::GET_FRAME_COUNT() % 10) == 0 && STREAMING::_0x73B40D97D7BAAD77(uParam0->f_616, Global_36)) && func_273(Global_35, uParam0->f_97, 1) < 50f)
 		{
 			iVar0 = joaat("CARRIABLE_ANIMAL_SKIN_ML");
-			iVar1 = joaat("p_cs_pelt_medlarge");
+			iVar1 = joaat("P_CS_PELT_MEDLARGE");
 			switch (uParam0->f_616)
 			{
 				case 1283988553:
@@ -8575,10 +8575,10 @@ void func_224(var uParam0)
 				iVar9 = ENTITY::GET_ENTITY_MODEL(&(uParam0->f_432[iVar0]));
 				switch (iVar9)
 				{
-					case joaat("p_cs_pelt_medlarge"):
+					case joaat("P_CS_PELT_MEDLARGE"):
 						iVar3 = -817214692;
 						break;
-					case joaat("p_cs_pelt_large"):
+					case joaat("P_CS_PELT_LARGE"):
 						iVar3 = -1002310952;
 						break;
 					default:
@@ -8604,7 +8604,7 @@ void func_224(var uParam0)
 							{
 								switch (iVar9)
 								{
-									case joaat("p_cs_pelt_medlarge"):
+									case joaat("P_CS_PELT_MEDLARGE"):
 										if (func_211())
 										{
 											iVar10 = joaat("PROVISION_COYOTE_FUR");
@@ -8614,7 +8614,7 @@ void func_224(var uParam0)
 											iVar10 = -794277189; /* GXTEntry: "Perfect Coyote Pelt" */
 										}
 										break;
-									case joaat("p_cs_pelt_large"):
+									case joaat("P_CS_PELT_LARGE"):
 										if (func_211())
 										{
 											iVar10 = joaat("PROVISION_DEER_HIDE");
@@ -8690,18 +8690,18 @@ int func_226()
 	}
 	switch (iVar3)
 	{
-		case joaat("sandstorm"):
-		case joaat("thunder"):
-		case joaat("snow"):
-		case joaat("sleet"):
-		case joaat("blizzard"):
-		case joaat("whiteout"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("snowclearing"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
-		case joaat("groundblizzard"):
+		case joaat("SANDSTORM"):
+		case joaat("THUNDER"):
+		case joaat("SNOW"):
+		case joaat("SLEET"):
+		case joaat("BLIZZARD"):
+		case joaat("WHITEOUT"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("SNOWCLEARING"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
+		case joaat("GROUNDBLIZZARD"):
 			return 1;
 	}
 	return 0;
@@ -8789,8 +8789,8 @@ int func_228(var uParam0)
 	}
 	switch (uParam0->f_616)
 	{
-		case joaat("amb_camp_bgv_gold01"):
-		case joaat("amb_camp_bgv_hunt01"):
+		case joaat("AMB_CAMP_BGV_GOLD01"):
+		case joaat("AMB_CAMP_BGV_HUNT01"):
 			return 1;
 		default:
 			break;
@@ -9028,7 +9028,7 @@ int func_243(int iParam0)
 			return 1;
 		case 1034443817:
 			return 1;
-		case joaat("RANSACK_REACH_OVER_VOLUME_1m5_0m5_2m0"):
+		case joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M5_2M0"):
 			return 1;
 		case joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M8_2M0"):
 			return 1;
@@ -9056,7 +9056,7 @@ int func_243(int iParam0)
 			return 1;
 		case -218540408:
 			return 1;
-		case joaat("RANSACK_VOLUME_0m8_0m5_2m0"):
+		case joaat("RANSACK_VOLUME_0M8_0M5_2M0"):
 			return 1;
 		case -1616347668:
 			return 1;
@@ -9070,7 +9070,7 @@ int func_243(int iParam0)
 			return 1;
 		case -1341692684:
 			return 1;
-		case joaat("RANSACK_VOLUME_1m5_0m5_2m0"):
+		case joaat("RANSACK_VOLUME_1M5_0M5_2M0"):
 			return 1;
 		case 1187533117:
 			return 1;
@@ -9155,7 +9155,7 @@ int func_244(bool bParam0)
 	{
 		return 1;
 	}
-	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
 		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))
@@ -9517,7 +9517,7 @@ int func_259()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -10090,7 +10090,7 @@ int func_267(int iParam0)
 								{
 									TASK::CLEAR_PED_TASKS(&(iParam0->f_16[1]), 1, 0);
 									TASK::TASK_MOVE_BE_IN_FORMATION(&(iParam0->f_16[1]), &(iParam0->f_16[0]), 0f, -2f, 0f, -1082130432, 0);
-									PED::_0x24C82EF607105FAA(&(iParam0->f_16[1]), joaat("lazydog"));
+									PED::_0x24C82EF607105FAA(&(iParam0->f_16[1]), joaat("LAZYDOG"));
 									PED::SET_PED_CONFIG_FLAG(&(iParam0->f_16[1]), 301, true);
 								}
 							}
@@ -10198,7 +10198,7 @@ int func_267(int iParam0)
 						{
 							if (func_253(iParam0, 1, 0))
 							{
-								PED::_0x8ACC0506743A8A5C(&(iParam0->f_16[0]), joaat("InvestigatorChallenge_CombatStart"), 1, -1082130432);
+								PED::_0x8ACC0506743A8A5C(&(iParam0->f_16[0]), joaat("INVESTIGATORCHALLENGE_COMBATSTART"), 1, -1082130432);
 								TASK::TASK_AIM_GUN_AT_ENTITY(&(iParam0->f_16[0]), Global_35, 15000, false, 1);
 								func_469(iParam0, "FINAL_WARNING", 4096, -1082130432 /* Float: -1f */, 1, 0, 3);
 								func_124(&(iParam0->f_477));
@@ -13253,742 +13253,742 @@ struct<55> func_350(var uParam0)
 	Var1.f_41 = 13;
 	switch (iVar0)
 	{
-		case joaat("gang_lemoyne_scm001"):
+		case joaat("GANG_LEMOYNE_SCM001"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1184.418f, -2181.725f, 54.2527f };
-			Var1.f_41[0] = joaat("p_lampkerosene01x");
+			Var1.f_41[0] = joaat("P_LAMPKEROSENE01X");
 			*(Var1.f_1[1 /*3*/]) = { 1179.429f, -2183.405f, 57.3078f };
-			Var1.f_41[1] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[1] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[2 /*3*/]) = { 1174.444f, -2187.665f, 56.1884f };
-			Var1.f_41[2] = joaat("p_lantern09xmoths");
+			Var1.f_41[2] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[3 /*3*/]) = { 1167.855f, -2181.771f, 55.3664f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1169.797f, -2177.767f, 56.3811f };
-			Var1.f_41[4] = joaat("p_lanternhang01x");
+			Var1.f_41[4] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[5 /*3*/]) = { 1166.267f, -2183.475f, 54.6403f };
-			Var1.f_41[5] = joaat("p_candlegroup07x");
+			Var1.f_41[5] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[6 /*3*/]) = { 1167.087f, -2183.198f, 54.7602f };
-			Var1.f_41[6] = joaat("p_lantern05x");
+			Var1.f_41[6] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_lemoyne_scm002"):
+		case joaat("GANG_LEMOYNE_SCM002"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1422.627f, -2181.514f, 50.5542f };
-			Var1.f_41[0] = joaat("p_lanternhang01x");
+			Var1.f_41[0] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[1 /*3*/]) = { 1420.463f, -2185.792f, 49.543f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 1418.869f, -2187.489f, 48.8169f };
-			Var1.f_41[2] = joaat("p_candlegroup07x");
+			Var1.f_41[2] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[3 /*3*/]) = { 1419.691f, -2187.215f, 48.9369f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1432.345f, -2187.747f, 51.4948f };
-			Var1.f_41[4] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[4] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[5 /*3*/]) = { 1427.635f, -2191.858f, 50.3253f };
-			Var1.f_41[5] = joaat("p_lantern09xmoths");
+			Var1.f_41[5] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[6 /*3*/]) = { 1437.228f, -2186.275f, 49.0088f };
-			Var1.f_41[6] = joaat("p_lampkerosene01x");
+			Var1.f_41[6] = joaat("P_LAMPKEROSENE01X");
 			break;
-		case joaat("gang_lemoyne_scm003"):
+		case joaat("GANG_LEMOYNE_SCM003"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1561.611f, -2059.282f, 48.0019f };
-			Var1.f_41[0] = joaat("p_lampkerosene01x");
+			Var1.f_41[0] = joaat("P_LAMPKEROSENE01X");
 			*(Var1.f_1[1 /*3*/]) = { 1565.173f, -2044.64f, 49.6936f };
-			Var1.f_41[1] = joaat("p_lanternhang01x");
+			Var1.f_41[1] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[2 /*3*/]) = { 1559.801f, -2054.432f, 50.672f };
-			Var1.f_41[2] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[2] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[3 /*3*/]) = { 1560.84f, -2042.461f, 48.6073f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1555.101f, -2049.827f, 49.4634f };
-			Var1.f_41[4] = joaat("p_lantern09xmoths");
+			Var1.f_41[4] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[5 /*3*/]) = { 1559.512f, -2041.803f, 47.9567f };
-			Var1.f_41[5] = joaat("p_lantern05x");
+			Var1.f_41[5] = joaat("P_LANTERN05X");
 			*(Var1.f_1[6 /*3*/]) = { 1559.208f, -2040.987f, 47.7164f };
-			Var1.f_41[6] = joaat("p_candlegroup07x");
+			Var1.f_41[6] = joaat("P_CANDLEGROUP07X");
 			break;
-		case joaat("gang_lemoyne_scm004"):
+		case joaat("GANG_LEMOYNE_SCM004"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1696.398f, -2005.459f, 44.1072f };
-			Var1.f_41[0] = joaat("p_candlegroup07x");
+			Var1.f_41[0] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[1 /*3*/]) = { 1701.58f, -2003.817f, 46.0177f };
-			Var1.f_41[1] = joaat("p_lanternhang01x");
+			Var1.f_41[1] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[2 /*3*/]) = { 1697.239f, -2005.646f, 44.3463f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 1698.699f, -2005.19f, 44.8863f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1696.402f, -2012.473f, 46.8717f };
-			Var1.f_41[4] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[4] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[5 /*3*/]) = { 1704.592f, -2013.725f, 45.7062f };
-			Var1.f_41[5] = joaat("p_lantern09xmoths");
+			Var1.f_41[5] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[6 /*3*/]) = { 1704.241f, -2019.003f, 44.0485f };
-			Var1.f_41[6] = joaat("p_lampkerosene01x");
+			Var1.f_41[6] = joaat("P_LAMPKEROSENE01X");
 			break;
-		case joaat("gang_lemoyne_scm005"):
+		case joaat("GANG_LEMOYNE_SCM005"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1382.157f, -1703.239f, 68.8942f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 1386.823f, -1698.535f, 69.7191f };
-			Var1.f_41[1] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[1] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[2 /*3*/]) = { 1375.249f, -1697.697f, 68.1259f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 1374.498f, -1699.173f, 67.5745f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1377.188f, -1693.271f, 69.0829f };
-			Var1.f_41[4] = joaat("p_lanternhang01x");
+			Var1.f_41[4] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[5 /*3*/]) = { 1373.691f, -1699.509f, 67.3902f };
-			Var1.f_41[5] = joaat("p_candlegroup07x");
+			Var1.f_41[5] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[6 /*3*/]) = { 1391.651f, -1696.529f, 66.8421f };
-			Var1.f_41[6] = joaat("p_lampkerosene01x");
+			Var1.f_41[6] = joaat("P_LAMPKEROSENE01X");
 			break;
-		case joaat("gang_lemoyne_scm006"):
+		case joaat("GANG_LEMOYNE_SCM006"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1633.671f, -1652.616f, 57.4065f };
-			Var1.f_41[0] = joaat("p_lantern07x");
+			Var1.f_41[0] = joaat("P_LANTERN07X");
 			*(Var1.f_1[1 /*3*/]) = { 1615.043f, -1653.317f, 56.5388f };
-			Var1.f_41[1] = joaat("p_candlegroup07x");
+			Var1.f_41[1] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[2 /*3*/]) = { 1615.85f, -1653.015f, 56.7591f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 1623.872f, -1657.361f, 58.1372f };
-			Var1.f_41[3] = joaat("p_lantern09xmoths");
+			Var1.f_41[3] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[4 /*3*/]) = { 1616.574f, -1651.563f, 57.3548f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 1618.61f, -1647.417f, 58.2653f };
-			Var1.f_41[5] = joaat("p_lanternhang01x");
+			Var1.f_41[5] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[6 /*3*/]) = { 1628.574f, -1652.788f, 59.1847f };
-			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[6] = joaat("P_LANTERN04XLOWFUEL");
 			break;
-		case joaat("gang_lemoyne_scm007"):
+		case joaat("GANG_LEMOYNE_SCM007"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1497.783f, -1472.077f, 73.6557f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 1501.978f, -1463.306f, 71.9093f };
-			Var1.f_41[1] = joaat("p_candlegroup07x");
+			Var1.f_41[1] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[2 /*3*/]) = { 1502.267f, -1464.123f, 72.0882f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 1503.707f, -1465.016f, 72.6705f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1507.9f, -1467.219f, 73.5573f };
-			Var1.f_41[4] = joaat("p_lanternhang01x");
+			Var1.f_41[4] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[5 /*3*/]) = { 1502.415f, -1481.954f, 72.761f };
-			Var1.f_41[5] = joaat("p_lantern07x");
+			Var1.f_41[5] = joaat("P_LANTERN07X");
 			*(Var1.f_1[6 /*3*/]) = { 1502.219f, -1476.813f, 74.6078f };
-			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[6] = joaat("P_LANTERN04XLOWFUEL");
 			break;
-		case joaat("gang_lemoyne_scm008"):
+		case joaat("GANG_LEMOYNE_SCM008"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 860.4436f, -1332.898f, 55.3573f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 868.3304f, -1337.388f, 56.6966f };
-			Var1.f_41[1] = joaat("p_lantern09xmoths");
+			Var1.f_41[1] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[2 /*3*/]) = { 859.6268f, -1333.187f, 55.1812f };
-			Var1.f_41[2] = joaat("p_candlegroup07x");
+			Var1.f_41[2] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[3 /*3*/]) = { 873.0344f, -1332.865f, 57.9546f };
-			Var1.f_41[3] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[3] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[4 /*3*/]) = { 861.2067f, -1331.458f, 55.9355f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 863.345f, -1327.259f, 56.9092f };
-			Var1.f_41[5] = joaat("p_lanternhang01x");
+			Var1.f_41[5] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[6 /*3*/]) = { 876.8427f, -1331.112f, 56.2669f };
-			Var1.f_41[6] = joaat("p_lantern07x");
+			Var1.f_41[6] = joaat("P_LANTERN07X");
 			break;
-		case joaat("gang_lemoyne_scm009"):
+		case joaat("GANG_LEMOYNE_SCM009"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 940.3016f, -1315.425f, 60.4181f };
-			Var1.f_41[0] = joaat("p_lanternhang01x");
+			Var1.f_41[0] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[1 /*3*/]) = { 949.9424f, -1321.195f, 61.388f };
-			Var1.f_41[1] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[1] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[2 /*3*/]) = { 938.3439f, -1319.66f, 59.587f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 955.1417f, -1320.97f, 59.3485f };
-			Var1.f_41[3] = joaat("p_lantern07x");
+			Var1.f_41[3] = joaat("P_LANTERN07X");
 			*(Var1.f_1[4 /*3*/]) = { 937.5468f, -1321.098f, 59.0078f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 945.2447f, -1325.613f, 60.2829f };
-			Var1.f_41[5] = joaat("p_lantern09xmoths");
+			Var1.f_41[5] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[6 /*3*/]) = { 936.7681f, -1321.387f, 58.8479f };
-			Var1.f_41[6] = joaat("p_candlegroup07x");
+			Var1.f_41[6] = joaat("P_CANDLEGROUP07X");
 			break;
-		case joaat("gang_lemoyne_scm010"):
+		case joaat("GANG_LEMOYNE_SCM010"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1084.867f, -1273.158f, 69.5768f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 1094.714f, -1266.865f, 68.7336f };
-			Var1.f_41[1] = joaat("p_lantern07x");
+			Var1.f_41[1] = joaat("P_LANTERN07X");
 			*(Var1.f_1[2 /*3*/]) = { 1089.468f, -1268.689f, 70.6977f };
-			Var1.f_41[2] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[2] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[3 /*3*/]) = { 1077.793f, -1267.2f, 68.72f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1077.048f, -1268.64f, 68.2678f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 1079.919f, -1263.01f, 69.7569f };
-			Var1.f_41[5] = joaat("p_lanternhang01x");
+			Var1.f_41[5] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[6 /*3*/]) = { 1076.237f, -1268.929f, 68.0022f };
-			Var1.f_41[6] = joaat("p_candlegroup07x");
+			Var1.f_41[6] = joaat("P_CANDLEGROUP07X");
 			break;
-		case joaat("gang_lemoyne_scm011"):
+		case joaat("GANG_LEMOYNE_SCM011"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 695.9939f, -1178.061f, 47.9312f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 712.189f, -1175.619f, 48.6615f };
-			Var1.f_41[1] = joaat("p_lantern07x");
+			Var1.f_41[1] = joaat("P_LANTERN07X");
 			*(Var1.f_1[2 /*3*/]) = { 703.6238f, -1182.358f, 49.1855f };
-			Var1.f_41[2] = joaat("p_lantern09xmoths");
+			Var1.f_41[2] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[3 /*3*/]) = { 698.6546f, -1172.45f, 49.528f };
-			Var1.f_41[3] = joaat("p_lanternhang01x");
+			Var1.f_41[3] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[4 /*3*/]) = { 696.7354f, -1176.621f, 48.5879f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 695.1771f, -1178.35f, 47.7707f };
-			Var1.f_41[5] = joaat("p_candlegroup07x");
+			Var1.f_41[5] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[6 /*3*/]) = { 708.3448f, -1178.119f, 50.5765f };
-			Var1.f_41[6] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[6] = joaat("P_LANTERN04XLOWFUEL");
 			break;
-		case joaat("gang_lemoyne_scm012"):
+		case joaat("GANG_LEMOYNE_SCM012"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 853.5038f, -1131.041f, 59.584f };
-			Var1.f_41[0] = joaat("p_lanternhang01x");
+			Var1.f_41[0] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[1 /*3*/]) = { 863.1398f, -1136.755f, 60.4731f };
-			Var1.f_41[1] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[1] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[2 /*3*/]) = { 851.5411f, -1135.122f, 58.65f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 858.4277f, -1141.065f, 59.5602f };
-			Var1.f_41[3] = joaat("p_lantern09xmoths");
+			Var1.f_41[3] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[4 /*3*/]) = { 850.7066f, -1136.599f, 58.0136f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 849.9604f, -1136.851f, 57.843f };
-			Var1.f_41[5] = joaat("p_candlegroup07x");
+			Var1.f_41[5] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[6 /*3*/]) = { 868.3735f, -1136.573f, 58.4377f };
-			Var1.f_41[6] = joaat("p_lantern07x");
+			Var1.f_41[6] = joaat("P_LANTERN07X");
 			break;
-		case joaat("gang_lemoyne_scm013"):
+		case joaat("GANG_LEMOYNE_SCM013"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 677.5172f, -993.4567f, 53.7063f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 684.5549f, -999.291f, 54.4841f };
-			Var1.f_41[1] = joaat("p_lantern09xmoths");
+			Var1.f_41[1] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[2 /*3*/]) = { 676.7542f, -994.8964f, 53.1047f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 675.9374f, -995.1853f, 52.9263f };
-			Var1.f_41[3] = joaat("p_candlegroup07x");
+			Var1.f_41[3] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[4 /*3*/]) = { 694.5394f, -994.7386f, 53.7967f };
-			Var1.f_41[4] = joaat("p_lantern07x");
+			Var1.f_41[4] = joaat("P_LANTERN07X");
 			*(Var1.f_1[5 /*3*/]) = { 689.322f, -994.9884f, 55.6035f };
-			Var1.f_41[5] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[5] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[6 /*3*/]) = { 679.7295f, -989.2327f, 54.6695f };
-			Var1.f_41[6] = joaat("p_lanternhang01x");
+			Var1.f_41[6] = joaat("P_LANTERNHANG01X");
 			break;
-		case joaat("gang_lemoyne_scm014"):
+		case joaat("GANG_LEMOYNE_SCM014"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 904.6342f, -989.0264f, 57.6638f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 903.8174f, -989.3347f, 57.4615f };
-			Var1.f_41[1] = joaat("p_candlegroup07x");
+			Var1.f_41[1] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[2 /*3*/]) = { 907.7012f, -983.396f, 59.2006f };
-			Var1.f_41[2] = joaat("p_lanternhang01x");
+			Var1.f_41[2] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[3 /*3*/]) = { 905.5062f, -987.6062f, 58.257f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 912.5378f, -993.3411f, 58.8106f };
-			Var1.f_41[4] = joaat("p_lantern09xmoths");
+			Var1.f_41[4] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[5 /*3*/]) = { 917.3025f, -989.1194f, 60.1038f };
-			Var1.f_41[5] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[5] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[6 /*3*/]) = { 922.5073f, -988.9283f, 58.2261f };
-			Var1.f_41[6] = joaat("p_lantern07x");
+			Var1.f_41[6] = joaat("P_LANTERN07X");
 			break;
-		case joaat("gang_lemoyne_scm015"):
+		case joaat("GANG_LEMOYNE_SCM015"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 710.9292f, -882.8296f, 50.5003f };
-			Var1.f_41[0] = joaat("p_lanternhang01x");
+			Var1.f_41[0] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[1 /*3*/]) = { 706.6802f, -880.9763f, 49.7384f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 705.2748f, -880.0984f, 49.143f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			*(Var1.f_1[3 /*3*/]) = { 705.0087f, -879.2778f, 48.9191f };
-			Var1.f_41[3] = joaat("p_candlegroup07x");
+			Var1.f_41[3] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[4 /*3*/]) = { 700.8831f, -887.5852f, 50.2678f };
-			Var1.f_41[4] = joaat("p_lantern09xmoths");
+			Var1.f_41[4] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[5 /*3*/]) = { 704.9729f, -892.3865f, 51.4396f };
-			Var1.f_41[5] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[5] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[6 /*3*/]) = { 705.0671f, -897.5851f, 49.632f };
-			Var1.f_41[6] = joaat("p_lantern07x");
+			Var1.f_41[6] = joaat("P_LANTERN07X");
 			break;
-		case joaat("gang_lemoyne_scm016"):
+		case joaat("GANG_LEMOYNE_SCM016"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1345.887f, -597.2509f, 75.7548f };
-			Var1.f_41[0] = joaat("p_lantern07x");
+			Var1.f_41[0] = joaat("P_LANTERN07X");
 			*(Var1.f_1[1 /*3*/]) = { 1340.748f, -597.3141f, 77.9899f };
-			Var1.f_41[1] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[1] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[2 /*3*/]) = { 1331.08f, -591.6338f, 77.0284f };
-			Var1.f_41[2] = joaat("p_lanternhang01x");
+			Var1.f_41[2] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[3 /*3*/]) = { 1328.356f, -595.7177f, 76.0662f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 1335.852f, -601.441f, 76.8419f };
-			Var1.f_41[4] = joaat("p_lantern09xmoths");
+			Var1.f_41[4] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[5 /*3*/]) = { 1327.574f, -597.147f, 75.4693f };
-			Var1.f_41[5] = joaat("p_lantern05x");
+			Var1.f_41[5] = joaat("P_LANTERN05X");
 			*(Var1.f_1[6 /*3*/]) = { 1326.754f, -597.4252f, 75.2768f };
-			Var1.f_41[6] = joaat("p_candlegroup07x");
+			Var1.f_41[6] = joaat("P_CANDLEGROUP07X");
 			break;
-		case joaat("gang_lemoyne_scm017"):
+		case joaat("GANG_LEMOYNE_SCM017"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 878.5245f, -532.8374f, 89.3256f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 877.1034f, -532.0406f, 88.7607f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 876.8337f, -531.2173f, 88.5414f };
-			Var1.f_41[2] = joaat("p_candlegroup07x");
+			Var1.f_41[2] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[3 /*3*/]) = { 882.7054f, -535.0305f, 90.2655f };
-			Var1.f_41[3] = joaat("p_lanternhang01x");
+			Var1.f_41[3] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[4 /*3*/]) = { 872.5471f, -539.6162f, 90.1057f };
-			Var1.f_41[4] = joaat("p_lantern09xmoths");
+			Var1.f_41[4] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[5 /*3*/]) = { 876.8123f, -544.6343f, 91.2147f };
-			Var1.f_41[5] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[5] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[6 /*3*/]) = { 877.1887f, -549.1096f, 89.4168f };
-			Var1.f_41[6] = joaat("p_lantern07x");
+			Var1.f_41[6] = joaat("P_LANTERN07X");
 			break;
-		case joaat("gang_lemoyne_scm018"):
+		case joaat("GANG_LEMOYNE_SCM018"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 957.7977f, -569.6921f, 91.4616f };
-			Var1.f_41[0] = joaat("p_lanternhang01x");
+			Var1.f_41[0] = joaat("P_LANTERNHANG01X");
 			*(Var1.f_1[1 /*3*/]) = { 971.9662f, -574.682f, 90.7887f };
-			Var1.f_41[1] = joaat("p_lantern07x");
+			Var1.f_41[1] = joaat("P_LANTERN07X");
 			*(Var1.f_1[2 /*3*/]) = { 967.4099f, -575.464f, 92.4755f };
-			Var1.f_41[2] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[2] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[3 /*3*/]) = { 955.5117f, -574.4479f, 90.5403f };
-			Var1.f_41[3] = joaat("p_lantern05x");
+			Var1.f_41[3] = joaat("P_LANTERN05X");
 			*(Var1.f_1[4 /*3*/]) = { 962.6882f, -579.6523f, 91.2069f };
-			Var1.f_41[4] = joaat("p_lantern09xmoths");
+			Var1.f_41[4] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[5 /*3*/]) = { 954.7477f, -575.8871f, 89.9692f };
-			Var1.f_41[5] = joaat("p_lantern05x");
+			Var1.f_41[5] = joaat("P_LANTERN05X");
 			*(Var1.f_1[6 /*3*/]) = { 953.9346f, -576.1766f, 89.7646f };
-			Var1.f_41[6] = joaat("p_candlegroup07x");
+			Var1.f_41[6] = joaat("P_CANDLEGROUP07X");
 			break;
-		case joaat("gang_lemoyne_scm019"):
+		case joaat("GANG_LEMOYNE_SCM019"):
 			Var1 = 7;
 			*(Var1.f_1[0 /*3*/]) = { 1019.714f, -395.6589f, 92.4492f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 1019.705f, -384.6876f, 92.0255f };
-			Var1.f_41[1] = joaat("p_lantern07x");
+			Var1.f_41[1] = joaat("P_LANTERN07X");
 			*(Var1.f_1[2 /*3*/]) = { 1017.726f, -389.3529f, 93.7908f };
-			Var1.f_41[2] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[2] = joaat("P_LANTERN04XLOWFUEL");
 			*(Var1.f_1[3 /*3*/]) = { 1012.578f, -401.6143f, 91.0696f };
-			Var1.f_41[3] = joaat("p_candlegroup07x");
+			Var1.f_41[3] = joaat("P_CANDLEGROUP07X");
 			*(Var1.f_1[4 /*3*/]) = { 1012.66f, -400.7502f, 91.1507f };
-			Var1.f_41[4] = joaat("p_lantern05x");
+			Var1.f_41[4] = joaat("P_LANTERN05X");
 			*(Var1.f_1[5 /*3*/]) = { 1011.676f, -399.4269f, 91.9114f };
-			Var1.f_41[5] = joaat("p_lantern05x");
+			Var1.f_41[5] = joaat("P_LANTERN05X");
 			*(Var1.f_1[6 /*3*/]) = { 1008.41f, -395.6642f, 92.6918f };
-			Var1.f_41[6] = joaat("p_lanternhang01x");
+			Var1.f_41[6] = joaat("P_LANTERNHANG01X");
 			break;
-		case joaat("gang_odriscollboys_bgv001"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV001"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1121.141f, -214.8689f, 90.7092f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -1114.74f, -221.6054f, 91.3047f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -1121.042f, -222.9238f, 90.2776f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_bgv002"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -981.358f, -208.8575f, 90.2115f };
-			Var1.f_41[0] = joaat("p_candlelamp01x");
+			Var1.f_41[0] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[1 /*3*/]) = { -991.5618f, -211.594f, 90.7462f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { -987.7882f, -214.0844f, 90.5625f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_bgv003"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV003"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2594.284f, -19.94f, 160.1174f };
-			Var1.f_41[0] = joaat("p_candlelamp01x");
+			Var1.f_41[0] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[1 /*3*/]) = { -2600.86f, -25.2972f, 160.4258f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_bgv004"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -796.8143f, -76.1614f, 81.4096f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -796.5698f, -84.397f, 80.4637f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -790.3673f, -82.7891f, 81.8288f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_bgv005"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -2758.406f, 119.9791f, 164.233f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -2760.435f, 112.0182f, 164.2512f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -2754.349f, 113.3577f, 165.2431f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_bgv006"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV006"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1448.537f, 94.5786f, 90.5483f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -1440.704f, 104.3632f, 90.0282f };
-			Var1.f_41[1] = joaat("p_candlelamp01x");
+			Var1.f_41[1] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[2 /*3*/]) = { -1447.146f, 99.1479f, 90.2709f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_bgv007"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV007"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1582.723f, 493.9426f, 114.5219f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -1582.733f, 502.547f, 115.1659f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { -1576.344f, 495.3961f, 115.5541f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_bgv008"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV008"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1346.524f, 494.7462f, 96.7929f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -1340.338f, 488.6046f, 97.415f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -1346.454f, 487.3717f, 96.3597f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_bgv009"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV009"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1712.421f, 601.9015f, 118.4892f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -1712.717f, 609.4304f, 118.9511f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { -1706.754f, 603.1379f, 119.4988f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_bgv010"):
+		case joaat("GANG_ODRISCOLLBOYS_BGV010"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1623.011f, 824.3295f, 154.614f };
-			Var1.f_41[0] = joaat("p_candlelamp01x");
+			Var1.f_41[0] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[1 /*3*/]) = { -1633.643f, 818.8926f, 154.9843f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { -1629.251f, 818.8979f, 154.8488f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_cml001"):
+		case joaat("GANG_ODRISCOLLBOYS_CML001"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 0.6993f, 950.7767f, 211.5146f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -5.5571f, 949.0652f, 210.7931f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_cml002"):
+		case joaat("GANG_ODRISCOLLBOYS_CML002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 643.8716f, 1300.858f, 194.4375f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { 652.9864f, 1308.745f, 193.9372f };
-			Var1.f_41[1] = joaat("p_candlelamp01x");
+			Var1.f_41[1] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[2 /*3*/]) = { 646.558f, 1303.353f, 194.2214f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_cml003"):
+		case joaat("GANG_ODRISCOLLBOYS_CML003"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 100.8803f, 1418.555f, 167.8691f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { 101.3384f, 1410.252f, 167.4946f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 107.4312f, 1411.843f, 168.5385f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_cml004"):
+		case joaat("GANG_ODRISCOLLBOYS_CML004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 595.0633f, 1426.475f, 186.757f };
-			Var1.f_41[0] = joaat("p_candlelamp01x");
+			Var1.f_41[0] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[1 /*3*/]) = { 588.2114f, 1417.307f, 187.0511f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { 588.549f, 1421.198f, 187.0105f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_cml005"):
+		case joaat("GANG_ODRISCOLLBOYS_CML005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 503.036f, 1499.736f, 173.4577f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 509.3129f, 1501.172f, 174.3883f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 502.9444f, 1507.644f, 173.5802f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt001"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT001"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -643.7875f, -389.3485f, 80.5294f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -650.0063f, -395.4368f, 79.4406f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -650.041f, -388.051f, 79.9709f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odoriscollboys_hrt002"):
+		case joaat("GANG_ODORISCOLLBOYS_HRT002"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 497.8333f, -253.464f, 144.3131f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { 497.7257f, -261.2002f, 143.817f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 503.8024f, -259.8799f, 144.9664f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_hrt003"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT003"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 651.0438f, -108.303f, 150.7209f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 644.838f, -109.536f, 149.67f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 644.7845f, -102.0038f, 150.102f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt004"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT004"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 1076.3f, 36.5688f, 88.2713f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 1070.225f, 42.8958f, 87.0861f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { 1070.186f, 35.1987f, 86.785f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odoriscollboys_hrt005"):
+		case joaat("GANG_ODORISCOLLBOYS_HRT005"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -1160.354f, 98.4753f, 45.7867f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -1170.435f, 92.9432f, 44.3248f };
-			Var1.f_41[1] = joaat("p_candlelamp01x");
+			Var1.f_41[1] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[2 /*3*/]) = { -1166.028f, 95.7244f, 45.0446f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt006"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT006"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -960.1163f, 298.1846f, 94.5743f };
-			Var1.f_41[0] = joaat("p_candlelamp01x");
+			Var1.f_41[0] = joaat("P_CANDLELAMP01X");
 			*(Var1.f_1[1 /*3*/]) = { -966.6812f, 292.723f, 94.8737f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { -956.6438f, 293.1663f, 95.0279f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt007"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT007"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -638.4341f, 277.9949f, 90.7025f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -632.2081f, 279.1647f, 91.7312f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -638.7745f, 285.8612f, 91.2351f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt008"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT008"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -190.7069f, 294.138f, 97.7753f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -196.8839f, 300.4896f, 96.8675f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { -196.8738f, 292.9286f, 96.3611f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_hrt009"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT009"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 179.6932f, 340.8179f, 120.4203f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 185.944f, 341.915f, 121.4923f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 179.5466f, 348.3829f, 120.8608f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt010"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT010"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { -848.6968f, 464.2803f, 90.2008f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { -842.5364f, 465.6595f, 91.2832f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { -848.2307f, 475.265f, 89.953f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt011"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT011"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 439.3978f, 834.7624f, 146.5218f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 436.3915f, 829.2693f, 147.5475f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			*(Var1.f_1[2 /*3*/]) = { 444.9662f, 830.0444f, 146.8524f };
-			Var1.f_41[2] = joaat("p_lantern09x");
+			Var1.f_41[2] = joaat("P_LANTERN09X");
 			break;
-		case joaat("gang_odriscollboys_hrt012"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT012"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 280.3633f, 834.4491f, 191.3079f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 274.2213f, 840.5585f, 190.7668f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { 273.7414f, 832.9695f, 190.239f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_odriscollboys_hrt013"):
+		case joaat("GANG_ODRISCOLLBOYS_HRT013"):
 			Var1 = 3;
 			*(Var1.f_1[0 /*3*/]) = { 999.8769f, 989.3497f, 152.7125f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 997.9625f, 986.1836f, 151.9793f };
-			Var1.f_41[1] = joaat("p_lantern09x");
+			Var1.f_41[1] = joaat("P_LANTERN09X");
 			*(Var1.f_1[2 /*3*/]) = { 997.5594f, 978.8789f, 151.1462f };
-			Var1.f_41[2] = joaat("p_lantern05x");
+			Var1.f_41[2] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc01_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC01_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2119.388f, -143.2577f, 51.74896f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2120.497f, -135.0572f, 49.4091f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc02_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC02_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2464.06f, -86.0444f, 46.5518f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2471.861f, -86.7413f, 45.1533f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc03_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC03_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2557.538f, -72.6367f, 51.0503f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2550.229f, -69.1811f, 49.3466f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc04_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC04_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2323.838f, 12.3615f, 48.9343f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2317.69f, 7.2237f, 47.3146f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc05_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC05_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2442.597f, 642.1541f, 71.1171f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2435.375f, 645.5943f, 68.8323f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc06_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC06_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2427.814f, 774.8948f, 68.8389f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2421.24f, 776.8815f, 67.4171f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc07_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC07_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2357.085f, 839.507f, 78.5513f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 2364.479f, 836.6267f, 80.2272f };
-			Var1.f_41[1] = joaat("p_lantern09xmoths");
+			Var1.f_41[1] = joaat("P_LANTERN09XMOTHS");
 			break;
-		case joaat("gang_murfreeransack_loc08_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC08_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2404.657f, 882.7617f, 73.2369f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 2410.936f, 879.4398f, 74.655f };
-			Var1.f_41[1] = joaat("p_lantern09xmoths");
+			Var1.f_41[1] = joaat("P_LANTERN09XMOTHS");
 			break;
-		case joaat("gang_murfreeransack_loc09_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC09_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2506.826f, 879.7056f, 74.1281f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2499.95f, 877.4795f, 72.8496f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc10_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC10_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2392.38f, 1020.881f, 91.1603f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2385.737f, 1023.847f, 89.4941f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc11_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC11_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2296.813f, 1055.442f, 115.564f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 2303.54f, 1051.743f, 117.1823f };
-			Var1.f_41[1] = joaat("p_lantern09xmoths");
+			Var1.f_41[1] = joaat("P_LANTERN09XMOTHS");
 			break;
-		case joaat("gang_murfreeransack_loc12_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC12_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2521.276f, 1744.299f, 88.8357f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2513.138f, 1747.778f, 87.2408f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_murfreeransack_loc13_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC13_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2788.514f, 2007.866f, 164.2861f };
-			Var1.f_41[0] = joaat("p_lantern05x");
+			Var1.f_41[0] = joaat("P_LANTERN05X");
 			*(Var1.f_1[1 /*3*/]) = { 2796.658f, 2009.502f, 165.8971f };
-			Var1.f_41[1] = joaat("p_lantern09xmoths");
+			Var1.f_41[1] = joaat("P_LANTERN09XMOTHS");
 			break;
-		case joaat("gang_murfreeransack_loc14_hat"):
+		case joaat("GANG_MURFREERANSACK_LOC14_HAT"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { 2626.094f, 2103.049f, 174.8151f };
-			Var1.f_41[0] = joaat("p_lantern09xmoths");
+			Var1.f_41[0] = joaat("P_LANTERN09XMOTHS");
 			*(Var1.f_1[1 /*3*/]) = { 2617.896f, 2105.501f, 173.0599f };
-			Var1.f_41[1] = joaat("p_lantern05x");
+			Var1.f_41[1] = joaat("P_LANTERN05X");
 			break;
-		case joaat("gang_skinner_tal001"):
+		case joaat("GANG_SKINNER_TAL001"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2000.564f, -1815.177f, 111.6976f };
-			Var1.f_41[0] = joaat("p_candlegroup06x");
+			Var1.f_41[0] = joaat("P_CANDLEGROUP06X");
 			*(Var1.f_1[1 /*3*/]) = { -1993.893f, -1829.005f, 112.6046f };
-			Var1.f_41[1] = joaat("p_candlebot01x");
+			Var1.f_41[1] = joaat("P_CANDLEBOT01X");
 			break;
-		case joaat("gang_skinner_tal002"):
+		case joaat("GANG_SKINNER_TAL002"):
 			Var1 = 5;
 			*(Var1.f_1[0 /*3*/]) = { -2137.73f, -1777.193f, 142.9314f };
-			Var1.f_41[0] = joaat("p_lantern07x");
+			Var1.f_41[0] = joaat("P_LANTERN07X");
 			*(Var1.f_1[1 /*3*/]) = { -2124.835f, -1772.383f, 142.3489f };
-			Var1.f_41[1] = joaat("p_candlebot01x");
+			Var1.f_41[1] = joaat("P_CANDLEBOT01X");
 			*(Var1.f_1[2 /*3*/]) = { -2125.125f, -1772.388f, 142.649f };
-			Var1.f_41[2] = joaat("p_candle01x");
+			Var1.f_41[2] = joaat("P_CANDLE01X");
 			*(Var1.f_1[3 /*3*/]) = { -2124.641f, -1772.679f, 142.3532f };
-			Var1.f_41[3] = joaat("p_candle01x");
+			Var1.f_41[3] = joaat("P_CANDLE01X");
 			*(Var1.f_1[4 /*3*/]) = { -2123.251f, -1777.829f, 141.6141f };
-			Var1.f_41[4] = joaat("p_candle01x");
+			Var1.f_41[4] = joaat("P_CANDLE01X");
 			break;
-		case joaat("gang_skinner_tal003"):
+		case joaat("GANG_SKINNER_TAL003"):
 			Var1 = 6;
 			*(Var1.f_1[0 /*3*/]) = { -2668.985f, -1455.632f, 146.0624f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -2680.621f, -1458.447f, 147.3244f };
-			Var1.f_41[1] = joaat("p_lantern07x");
+			Var1.f_41[1] = joaat("P_LANTERN07X");
 			*(Var1.f_1[2 /*3*/]) = { -2642.14f, -1475.483f, 145.5504f };
-			Var1.f_41[2] = joaat("p_candlegroup04x");
+			Var1.f_41[2] = joaat("P_CANDLEGROUP04X");
 			*(Var1.f_1[3 /*3*/]) = { -2643.664f, -1475.585f, 145.5708f };
-			Var1.f_41[3] = joaat("p_candlebot01x");
+			Var1.f_41[3] = joaat("P_CANDLEBOT01X");
 			*(Var1.f_1[4 /*3*/]) = { -2643.378f, -1475.794f, 145.5627f };
-			Var1.f_41[4] = joaat("p_candle01x");
+			Var1.f_41[4] = joaat("P_CANDLE01X");
 			*(Var1.f_1[5 /*3*/]) = { -2643.468f, -1475.554f, 145.5627f };
-			Var1.f_41[5] = joaat("p_candle01x");
+			Var1.f_41[5] = joaat("P_CANDLE01X");
 			break;
-		case joaat("gang_skinner_tal004"):
+		case joaat("GANG_SKINNER_TAL004"):
 			Var1 = 2;
 			*(Var1.f_1[0 /*3*/]) = { -2441.974f, -1346.05f, 153.5024f };
-			Var1.f_41[0] = joaat("p_lantern09x");
+			Var1.f_41[0] = joaat("P_LANTERN09X");
 			*(Var1.f_1[1 /*3*/]) = { -2437.223f, -1338.827f, 154.0883f };
-			Var1.f_41[1] = joaat("p_lantern07x");
+			Var1.f_41[1] = joaat("P_LANTERN07X");
 			break;
-		case joaat("gang_skinner_tal005"):
+		case joaat("GANG_SKINNER_TAL005"):
 			Var1 = 4;
 			*(Var1.f_1[0 /*3*/]) = { -2110.283f, -1259.22f, 123.2854f };
-			Var1.f_41[0] = joaat("p_lantern07x");
+			Var1.f_41[0] = joaat("P_LANTERN07X");
 			*(Var1.f_1[1 /*3*/]) = { -2097.275f, -1255.555f, 124.1867f };
-			Var1.f_41[1] = joaat("p_candlegroup04x");
+			Var1.f_41[1] = joaat("P_CANDLEGROUP04X");
 			*(Var1.f_1[2 /*3*/]) = { -2103.777f, -1254.281f, 122.4018f };
-			Var1.f_41[2] = joaat("p_candle01x");
+			Var1.f_41[2] = joaat("P_CANDLE01X");
 			*(Var1.f_1[3 /*3*/]) = { -2115.433f, -1269.648f, 122.9037f };
-			Var1.f_41[3] = joaat("p_lantern04xlowfuel");
+			Var1.f_41[3] = joaat("P_LANTERN04XLOWFUEL");
 			break;
-		case joaat("gang_skinner_tal006"):
+		case joaat("GANG_SKINNER_TAL006"):
 			Var1 = 6;
 			*(Var1.f_1[0 /*3*/]) = { -2021.801f, -1260.781f, 113.8459f };
-			Var1.f_41[0] = joaat("p_candlebot01x");
+			Var1.f_41[0] = joaat("P_CANDLEBOT01X");
 			*(Var1.f_1[1 /*3*/]) = { -2036.151f, -1265.2f, 114.5484f };
-			Var1.f_41[1] = joaat("p_candle01x");
+			Var1.f_41[1] = joaat("P_CANDLE01X");
 			*(Var1.f_1[2 /*3*/]) = { -2022.75f, -1262.489f, 114.4221f };
-			Var1.f_41[2] = joaat("p_candle01x");
+			Var1.f_41[2] = joaat("P_CANDLE01X");
 			*(Var1.f_1[3 /*3*/]) = { -2022.91f, -1263.003f, 114.7621f };
-			Var1.f_41[3] = joaat("p_candle01x");
+			Var1.f_41[3] = joaat("P_CANDLE01X");
 			*(Var1.f_1[4 /*3*/]) = { -2031.549f, -1278.254f, 116.4567f };
-			Var1.f_41[4] = joaat("p_lantern09x");
+			Var1.f_41[4] = joaat("P_LANTERN09X");
 			*(Var1.f_1[5 /*3*/]) = { -2022.994f, -1262.743f, 114.4465f };
-			Var1.f_41[5] = joaat("p_candlebot01x");
+			Var1.f_41[5] = joaat("P_CANDLEBOT01X");
 			break;
 	}
 	return Var1;
@@ -14292,45 +14292,45 @@ int func_362(int iParam0)
 	switch (iParam0)
 	{
 		case 4:
-			return joaat("u_m_m_story_cannibal_01");
+			return joaat("U_M_M_STORY_CANNIBAL_01");
 		case 1:
-			return joaat("u_m_m_story_chelonian_01");
+			return joaat("U_M_M_STORY_CHELONIAN_01");
 		case 8:
-			return joaat("u_m_m_story_copperhead_01");
+			return joaat("U_M_M_STORY_COPPERHEAD_01");
 		case 2:
-			return joaat("u_m_m_story_creeper_01");
+			return joaat("U_M_M_STORY_CREEPER_01");
 		case 65536:
-			return joaat("u_m_m_story_emeraldranch_01");
+			return joaat("U_M_M_STORY_EMERALDRANCH_01");
 		case 4096:
-			return joaat("u_m_m_story_hunter_01");
+			return joaat("U_M_M_STORY_HUNTER_01");
 		case 2048:
-			return joaat("u_m_m_story_manzanita_01");
+			return joaat("U_M_M_STORY_MANZANITA_01");
 		case 32:
-			return joaat("u_m_m_story_murfee_01");
+			return joaat("U_M_M_STORY_MURFEE_01");
 		case 128:
-			return joaat("u_m_m_story_pigfarm_01");
+			return joaat("U_M_M_STORY_PIGFARM_01");
 		case 512:
-			return joaat("u_m_m_story_princess_01");
+			return joaat("U_M_M_STORY_PRINCESS_01");
 		case 16384:
-			return joaat("u_m_m_story_redharlow_01");
+			return joaat("U_M_M_STORY_REDHARLOW_01");
 		case 64:
-			return joaat("u_m_m_story_rhodes_01");
+			return joaat("U_M_M_STORY_RHODES_01");
 		case 32768:
-			return joaat("u_m_m_story_sdstatue_01");
+			return joaat("U_M_M_STORY_SDSTATUE_01");
 		case 8192:
-			return joaat("u_m_m_story_spectre_01");
+			return joaat("U_M_M_STORY_SPECTRE_01");
 		case 1024:
-			return joaat("u_m_m_story_treasure_01");
+			return joaat("U_M_M_STORY_TREASURE_01");
 		case 16:
-			return joaat("u_m_m_story_valentine_01");
+			return joaat("U_M_M_STORY_VALENTINE_01");
 		case 131072:
-			return joaat("u_f_m_story_blackbelle_01");
+			return joaat("U_F_M_STORY_BLACKBELLE_01");
 		case 262144:
-			return joaat("u_f_m_story_nightfolk_01");
+			return joaat("U_F_M_STORY_NIGHTFOLK_01");
 		case 524288:
-			return joaat("u_m_m_story_tumbleweed_01");
+			return joaat("U_M_M_STORY_TUMBLEWEED_01");
 		case 1048576:
-			return joaat("u_m_m_story_armadillo_01");
+			return joaat("U_M_M_STORY_ARMADILLO_01");
 		default:
 			break;
 	}
@@ -14711,15 +14711,15 @@ int func_377()
 
 int func_378(int iParam0, int iParam1)
 {
-	if (iParam1 == joaat("criminal"))
+	if (iParam1 == joaat("CRIMINAL"))
 	{
 		if (func_211())
 		{
-			return joaat("g_m_m_unicriminals_01");
+			return joaat("G_M_M_UNICRIMINALS_01");
 		}
 		else
 		{
-			return joaat("g_m_m_unicriminals_02");
+			return joaat("G_M_M_UNICRIMINALS_02");
 		}
 	}
 	switch (iParam0->f_101)
@@ -14732,16 +14732,16 @@ int func_378(int iParam0, int iParam1)
 		case 16:
 			switch (iParam1)
 			{
-				case joaat("generic"):
-				case joaat("rough"):
-					return joaat("a_m_m_htlroughtravellers_01");
-				case joaat("hunter"):
+				case joaat("GENERIC"):
+				case joaat("ROUGH"):
+					return joaat("A_M_M_HTLROUGHTRAVELLERS_01");
+				case joaat("HUNTER"):
 				case 148812922:
-					return joaat("a_m_m_huntertravelers_warm_01");
-				case joaat("Fancy"):
-					return joaat("a_m_m_htlfancytravellers_01");
-				case joaat("rancher"):
-					return joaat("a_m_m_ranchertravelers_warm_01");
+					return joaat("A_M_M_HUNTERTRAVELERS_WARM_01");
+				case joaat("FANCY"):
+					return joaat("A_M_M_HTLFANCYTRAVELLERS_01");
+				case joaat("RANCHER"):
+					return joaat("A_M_M_RANCHERTRAVELERS_WARM_01");
 				default:
 					break;
 			}
@@ -14749,16 +14749,16 @@ int func_378(int iParam0, int iParam1)
 		case 1:
 			switch (iParam1)
 			{
-				case joaat("generic"):
-				case joaat("rough"):
-					return joaat("a_m_m_bivroughtravellers_01");
-				case joaat("hunter"):
+				case joaat("GENERIC"):
+				case joaat("ROUGH"):
+					return joaat("A_M_M_BIVROUGHTRAVELLERS_01");
+				case joaat("HUNTER"):
 				case 148812922:
-					return joaat("a_m_m_huntertravelers_cool_01");
-				case joaat("Fancy"):
-					return joaat("a_m_m_bivfancytravellers_01");
-				case joaat("rancher"):
-					return joaat("a_m_m_ranchertravelers_cool_01");
+					return joaat("A_M_M_HUNTERTRAVELERS_COOL_01");
+				case joaat("FANCY"):
+					return joaat("A_M_M_BIVFANCYTRAVELLERS_01");
+				case joaat("RANCHER"):
+					return joaat("A_M_M_RANCHERTRAVELERS_COOL_01");
 				default:
 					break;
 			}
@@ -14766,16 +14766,16 @@ int func_378(int iParam0, int iParam1)
 		case 10:
 			switch (iParam1)
 			{
-				case joaat("generic"):
-				case joaat("rough"):
-					return joaat("a_m_m_rkrroughtravellers_01");
-				case joaat("hunter"):
+				case joaat("GENERIC"):
+				case joaat("ROUGH"):
+					return joaat("A_M_M_RKRROUGHTRAVELLERS_01");
+				case joaat("HUNTER"):
 				case 148812922:
-					return joaat("a_m_m_huntertravelers_warm_01");
-				case joaat("Fancy"):
-					return joaat("a_m_m_rkrfancytravellers_01");
-				case joaat("rancher"):
-					return joaat("a_m_m_ranchertravelers_warm_01");
+					return joaat("A_M_M_HUNTERTRAVELERS_WARM_01");
+				case joaat("FANCY"):
+					return joaat("A_M_M_RKRFANCYTRAVELLERS_01");
+				case joaat("RANCHER"):
+					return joaat("A_M_M_RANCHERTRAVELERS_WARM_01");
 				default:
 					break;
 			}
@@ -14783,16 +14783,16 @@ int func_378(int iParam0, int iParam1)
 		case 11:
 			switch (iParam1)
 			{
-				case joaat("generic"):
-				case joaat("rough"):
-					return joaat("a_m_m_sclroughtravellers_01");
-				case joaat("hunter"):
+				case joaat("GENERIC"):
+				case joaat("ROUGH"):
+					return joaat("A_M_M_SCLROUGHTRAVELLERS_01");
+				case joaat("HUNTER"):
 				case 148812922:
-					return joaat("a_m_m_huntertravelers_warm_01");
-				case joaat("Fancy"):
-					return joaat("a_m_m_sclfancytravellers_01");
-				case joaat("rancher"):
-					return joaat("a_m_m_ranchertravelers_warm_01");
+					return joaat("A_M_M_HUNTERTRAVELERS_WARM_01");
+				case joaat("FANCY"):
+					return joaat("A_M_M_SCLFANCYTRAVELLERS_01");
+				case joaat("RANCHER"):
+					return joaat("A_M_M_RANCHERTRAVELERS_WARM_01");
 				default:
 					break;
 			}
@@ -14801,16 +14801,16 @@ int func_378(int iParam0, int iParam1)
 		case 2:
 			switch (iParam1)
 			{
-				case joaat("generic"):
-				case joaat("rough"):
-					return joaat("a_m_m_bynroughtravellers_01");
-				case joaat("hunter"):
+				case joaat("GENERIC"):
+				case joaat("ROUGH"):
+					return joaat("A_M_M_BYNROUGHTRAVELLERS_01");
+				case joaat("HUNTER"):
 				case 148812922:
-					return joaat("a_m_m_huntertravelers_warm_01");
-				case joaat("Fancy"):
-					return joaat("a_m_m_bynfancytravellers_01");
-				case joaat("rancher"):
-					return joaat("a_m_m_ranchertravelers_warm_01");
+					return joaat("A_M_M_HUNTERTRAVELERS_WARM_01");
+				case joaat("FANCY"):
+					return joaat("A_M_M_BYNFANCYTRAVELLERS_01");
+				case joaat("RANCHER"):
+					return joaat("A_M_M_RANCHERTRAVELERS_WARM_01");
 				default:
 					break;
 			}
@@ -14819,22 +14819,22 @@ int func_378(int iParam0, int iParam1)
 		case 7:
 			switch (iParam1)
 			{
-				case joaat("generic"):
-				case joaat("rough"):
-					return joaat("a_m_m_griroughtravellers_01");
-				case joaat("hunter"):
+				case joaat("GENERIC"):
+				case joaat("ROUGH"):
+					return joaat("A_M_M_GRIROUGHTRAVELLERS_01");
+				case joaat("HUNTER"):
 				case 148812922:
-					return joaat("a_m_m_huntertravelers_cool_01");
-				case joaat("Fancy"):
-					return joaat("a_m_m_grifancytravellers_01");
-				case joaat("rancher"):
-					return joaat("a_m_m_ranchertravelers_cool_01");
+					return joaat("A_M_M_HUNTERTRAVELERS_COOL_01");
+				case joaat("FANCY"):
+					return joaat("A_M_M_GRIFANCYTRAVELLERS_01");
+				case joaat("RANCHER"):
+					return joaat("A_M_M_RANCHERTRAVELERS_COOL_01");
 				default:
 					break;
 			}
 			break;
 	}
-	return joaat("a_m_m_htlroughtravellers_01");
+	return joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 }
 
 int func_379(int iParam0, bool bParam1, bool bParam2)
@@ -15385,9 +15385,9 @@ int func_402(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_cigarette_cs01x");
+					return joaat("P_CIGARETTE_CS01X");
 				case 1:
-					return joaat("p_cigarette_cs02x");
+					return joaat("P_CIGARETTE_CS02X");
 				default:
 					break;
 			}
@@ -15397,9 +15397,9 @@ int func_402(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("s_ropehogtiehandssmall01x");
+					return joaat("S_ROPEHOGTIEHANDSSMALL01X");
 				case 1:
-					return joaat("s_ropehogtiehandssmall01x");
+					return joaat("S_ROPEHOGTIEHANDSSMALL01X");
 				default:
 					break;
 			}
@@ -15408,9 +15408,9 @@ int func_402(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_sharpeningstone01x");
+					return joaat("P_SHARPENINGSTONE01X");
 				case 1:
-					return joaat("p_sharpeningstone01x");
+					return joaat("P_SHARPENINGSTONE01X");
 				default:
 					break;
 			}
@@ -15419,7 +15419,7 @@ int func_402(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_ladle02x");
+					return joaat("P_LADLE02X");
 				default:
 					break;
 			}
@@ -15428,7 +15428,7 @@ int func_402(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_hatbowler01x");
+					return joaat("P_HATBOWLER01X");
 				default:
 					break;
 			}
@@ -15437,13 +15437,13 @@ int func_402(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_shoe01x");
+					return joaat("P_SHOE01X");
 				case 1:
-					return joaat("p_bottlebeer01x");
+					return joaat("P_BOTTLEBEER01X");
 				case 2:
-					return joaat("p_bottleslim01x");
+					return joaat("P_BOTTLESLIM01X");
 				case 3:
-					return joaat("p_bottlebeer01x");
+					return joaat("P_BOTTLEBEER01X");
 				default:
 					break;
 			}
@@ -16093,7 +16093,7 @@ int func_405(int iParam0, int iParam1)
 			case 277:
 				return joaat("PROP_HUMAN_PASSED_OUT_TABLE");
 			case 278:
-				return joaat("prop_human_seat_bench");
+				return joaat("PROP_HUMAN_SEAT_BENCH");
 			case 279:
 				return joaat("PROP_HUMAN_SEAT_BENCH_BACK");
 			case 280:
@@ -16105,7 +16105,7 @@ int func_405(int iParam0, int iParam1)
 			case 283:
 				return joaat("PROP_HUMAN_SEAT_BENCH_TRAIN");
 			case 284:
-				return joaat("prop_human_seat_chair");
+				return joaat("PROP_HUMAN_SEAT_CHAIR");
 			case 285:
 				return joaat("PROP_HUMAN_SEAT_CHAIR_CIGAR");
 			case 286:
@@ -17489,11 +17489,11 @@ int func_405(int iParam0, int iParam1)
 			case 975:
 				return 819339686;
 			case 976:
-				return joaat("cig_card_act_10");
+				return joaat("CIG_CARD_ACT_10");
 			case 977:
-				return joaat("cig_card_act_11");
+				return joaat("CIG_CARD_ACT_11");
 			case 978:
-				return joaat("cig_card_act_12");
+				return joaat("CIG_CARD_ACT_12");
 			case 979:
 				return 1746565836;
 			case 980:
@@ -17513,11 +17513,11 @@ int func_405(int iParam0, int iParam1)
 			case 987:
 				return 1161082157;
 			case 988:
-				return joaat("cig_card_aml_10");
+				return joaat("CIG_CARD_AML_10");
 			case 989:
-				return joaat("cig_card_aml_11");
+				return joaat("CIG_CARD_AML_11");
 			case 990:
-				return joaat("cig_card_aml_12");
+				return joaat("CIG_CARD_AML_12");
 			case 991:
 				return 270641597;
 			case 992:
@@ -17549,11 +17549,11 @@ int func_405(int iParam0, int iParam1)
 		switch (iParam0)
 		{
 			case 1000:
-				return joaat("cig_card_art_10");
+				return joaat("CIG_CARD_ART_10");
 			case 1001:
-				return joaat("cig_card_art_11");
+				return joaat("CIG_CARD_ART_11");
 			case 1002:
-				return joaat("cig_card_art_12");
+				return joaat("CIG_CARD_ART_12");
 			case 1003:
 				return 1365245800;
 			case 1004:
@@ -17573,11 +17573,11 @@ int func_405(int iParam0, int iParam1)
 			case 1011:
 				return -1619485796;
 			case 1012:
-				return joaat("cig_card_grl_10");
+				return joaat("CIG_CARD_GRL_10");
 			case 1013:
-				return joaat("cig_card_grl_11");
+				return joaat("CIG_CARD_GRL_11");
 			case 1014:
-				return joaat("cig_card_grl_12");
+				return joaat("CIG_CARD_GRL_12");
 			case 1015:
 				return 513593;
 			case 1016:
@@ -17597,11 +17597,11 @@ int func_405(int iParam0, int iParam1)
 			case 1023:
 				return 1851306717;
 			case 1024:
-				return joaat("cig_card_gun_10");
+				return joaat("CIG_CARD_GUN_10");
 			case 1025:
-				return joaat("cig_card_gun_11");
+				return joaat("CIG_CARD_GUN_11");
 			case 1026:
-				return joaat("cig_card_gun_12");
+				return joaat("CIG_CARD_GUN_12");
 			case 1027:
 				return 1556435468;
 			case 1028:
@@ -17645,11 +17645,11 @@ int func_405(int iParam0, int iParam1)
 			case 1047:
 				return 1332555329;
 			case 1048:
-				return joaat("cig_card_inv_10");
+				return joaat("CIG_CARD_INV_10");
 			case 1049:
-				return joaat("cig_card_inv_11");
+				return joaat("CIG_CARD_INV_11");
 			case 1050:
-				return joaat("cig_card_inv_12");
+				return joaat("CIG_CARD_INV_12");
 			case 1051:
 				return 1016517991;
 			case 1052:
@@ -17669,11 +17669,11 @@ int func_405(int iParam0, int iParam1)
 			case 1059:
 				return -1373030254;
 			case 1060:
-				return joaat("cig_card_lnd_10");
+				return joaat("CIG_CARD_LND_10");
 			case 1061:
-				return joaat("cig_card_lnd_11");
+				return joaat("CIG_CARD_LND_11");
 			case 1062:
-				return joaat("cig_card_lnd_12");
+				return joaat("CIG_CARD_LND_12");
 			case 1063:
 				return 1442007381;
 			case 1064:
@@ -17693,11 +17693,11 @@ int func_405(int iParam0, int iParam1)
 			case 1071:
 				return -547791841;
 			case 1072:
-				return joaat("cig_card_pam_10");
+				return joaat("CIG_CARD_PAM_10");
 			case 1073:
-				return joaat("cig_card_pam_11");
+				return joaat("CIG_CARD_PAM_11");
 			case 1074:
-				return joaat("cig_card_pam_12");
+				return joaat("CIG_CARD_PAM_12");
 			case 1075:
 				return -1538102870;
 			case 1076:
@@ -17717,11 +17717,11 @@ int func_405(int iParam0, int iParam1)
 			case 1083:
 				return 1542117716;
 			case 1084:
-				return joaat("cig_card_plt_10");
+				return joaat("CIG_CARD_PLT_10");
 			case 1085:
-				return joaat("cig_card_plt_11");
+				return joaat("CIG_CARD_PLT_11");
 			case 1086:
-				return joaat("cig_card_plt_12");
+				return joaat("CIG_CARD_PLT_12");
 			case 1087:
 				return 39815316;
 			case 1088:
@@ -17741,11 +17741,11 @@ int func_405(int iParam0, int iParam1)
 			case 1095:
 				return -1336449919;
 			case 1096:
-				return joaat("cig_card_spt_10");
+				return joaat("CIG_CARD_SPT_10");
 			case 1097:
-				return joaat("cig_card_spt_11");
+				return joaat("CIG_CARD_SPT_11");
 			case 1098:
-				return joaat("cig_card_spt_12");
+				return joaat("CIG_CARD_SPT_12");
 			case 1099:
 				return 815223604;
 			case 1100:
@@ -17765,17 +17765,17 @@ int func_405(int iParam0, int iParam1)
 			case 1107:
 				return -620648438;
 			case 1108:
-				return joaat("cig_card_veh_10");
+				return joaat("CIG_CARD_VEH_10");
 			case 1109:
-				return joaat("cig_card_veh_11");
+				return joaat("CIG_CARD_VEH_11");
 			case 1110:
-				return joaat("cig_card_veh_12");
+				return joaat("CIG_CARD_VEH_12");
 			case 1111:
 				return -1123284534;
 			case 1112:
 				return -997313628;
 			case 1113:
-				return joaat("code_human_cower");
+				return joaat("CODE_HUMAN_COWER");
 			case 1114:
 				return -1623268913;
 			case 1115:
@@ -17783,11 +17783,11 @@ int func_405(int iParam0, int iParam1)
 			case 1116:
 				return 2127401246;
 			case 1117:
-				return joaat("code_human_stand_cower");
+				return joaat("CODE_HUMAN_STAND_COWER");
 			case 1118:
 				return -874584587;
 			case 1119:
-				return joaat("drive");
+				return joaat("DRIVE");
 			case 1120:
 				return joaat("FALL_OVER_WALL");
 			case 1121:
@@ -17801,7 +17801,7 @@ int func_405(int iParam0, int iParam1)
 			case 1125:
 				return 1268568298;
 			case 1126:
-				return joaat("park_vehicle");
+				return joaat("PARK_VEHICLE");
 			case 1127:
 				return 502001704;
 			case 1128:
@@ -17813,17 +17813,17 @@ int func_405(int iParam0, int iParam1)
 			case 1131:
 				return 751811579;
 			case 1132:
-				return joaat("ride");
+				return joaat("RIDE");
 			case 1133:
 				return -70257497;
 			case 1134:
-				return joaat("stand");
+				return joaat("STAND");
 			case 1135:
 				return 1070946599;
 			case 1136:
-				return joaat("teeter");
+				return joaat("TEETER");
 			case 1137:
-				return joaat("walk");
+				return joaat("WALK");
 			case 1138:
 				return 1374622682;
 			case 1139:
@@ -18508,7 +18508,7 @@ int func_405(int iParam0, int iParam1)
 				return joaat("PROP_PLAYER_SEAT_CHAIR_PLAYER_CAMP");
 				return 1690225020;
 				return -1054012177;
-				return joaat("Prop_player_sleep_tent_a_frame");
+				return joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME");
 				return joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE_PLAYER");
 				return joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1");
 				return joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2");
@@ -18693,7 +18693,7 @@ int func_405(int iParam0, int iParam1)
 				return 1021152268;
 				return -2087653744;
 				return -658509002;
-				return joaat("re_pbr_uni_v1_ride_intro_02");
+				return joaat("RE_PBR_UNI_V1_RIDE_INTRO_02");
 				return -519544825;
 				return 750926406;
 				return -1893910834;
@@ -18925,7 +18925,7 @@ int func_405(int iParam0, int iParam1)
 				return -228293404;
 				return 553276660;
 				return 1034443817;
-				return joaat("RANSACK_REACH_OVER_VOLUME_1m5_0m5_2m0");
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M5_2M0");
 				return joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M8_2M0");
 				return -1126887526;
 				return 10753225;
@@ -18964,14 +18964,14 @@ int func_405(int iParam0, int iParam1)
 				return 1608515746;
 				return -1840784802;
 				return -1060784354;
-				return joaat("RANSACK_VOLUME_0m8_0m5_2m0");
+				return joaat("RANSACK_VOLUME_0M8_0M5_2M0");
 				return -1616347668;
 				return 111647220;
 				return 1217254422;
 				return -1184202704;
 				return -1291249576;
 				return -1341692684;
-				return joaat("RANSACK_VOLUME_1m5_0m5_2m0");
+				return joaat("RANSACK_VOLUME_1M5_0M5_2M0");
 				return 1187533117;
 				return 1998863259;
 				return 1962997581;
@@ -20446,39 +20446,39 @@ int func_411(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("g_m_m_uniduster_03"):
-		case joaat("u_m_m_unidusterhenchman_03"):
-		case joaat("g_m_m_uniduster_04"):
-		case joaat("u_m_m_unidusterhenchman_02"):
-		case joaat("g_m_m_uniduster_02"):
-		case joaat("u_m_m_fatduster_01"):
-		case joaat("u_m_m_unidusterhenchman_01"):
-		case joaat("g_m_m_uniduster_01"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("g_f_m_uniduster_01"):
-		case joaat("u_m_m_unidusterleader_01"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("g_m_m_uniduster_05"):
-		case joaat("cs_disguisedduster_02"):
+		case joaat("G_M_M_UNIDUSTER_03"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_03"):
+		case joaat("G_M_M_UNIDUSTER_04"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_02"):
+		case joaat("G_M_M_UNIDUSTER_02"):
+		case joaat("U_M_M_FATDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_01"):
+		case joaat("G_M_M_UNIDUSTER_01"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("G_F_M_UNIDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERLEADER_01"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("G_M_M_UNIDUSTER_05"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
 			return 0;
-		case joaat("g_m_y_uniexconfeds_02"):
-		case joaat("g_m_y_uniexconfeds_01"):
-		case joaat("g_m_o_uniexconfeds_01"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("u_m_m_uniexconfedsbounty_01"):
+		case joaat("G_M_Y_UNIEXCONFEDS_02"):
+		case joaat("G_M_Y_UNIEXCONFEDS_01"):
+		case joaat("G_M_O_UNIEXCONFEDS_01"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
 			return 2;
-		case joaat("g_m_m_uniinbred_01"):
+		case joaat("G_M_M_UNIINBRED_01"):
 			return 1;
-		case joaat("u_m_m_bht_skinnersearch"):
-		case joaat("g_m_m_unimountainmen_01"):
-		case joaat("u_m_m_bht_skinnerbrother"):
+		case joaat("U_M_M_BHT_SKINNERSEARCH"):
+		case joaat("G_M_M_UNIMOUNTAINMEN_01"):
+		case joaat("U_M_M_BHT_SKINNERBROTHER"):
 			return 3;
-		case joaat("g_m_m_uniranchers_01"):
-		case joaat("cs_laramie"):
+		case joaat("G_M_M_UNIRANCHERS_01"):
+		case joaat("CS_LARAMIE"):
 			return 4;
-		case joaat("u_m_m_bht_banditoshack"):
-		case joaat("u_m_m_bht_banditomine"):
-		case joaat("g_m_m_unibanditos_01"):
+		case joaat("U_M_M_BHT_BANDITOSHACK"):
+		case joaat("U_M_M_BHT_BANDITOMINE"):
+		case joaat("G_M_M_UNIBANDITOS_01"):
 			return 5;
 	}
 	return -1;
@@ -20537,13 +20537,13 @@ int func_418(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("a_c_horse_arabian_redchestnut_pc"):
-		case joaat("a_c_horse_kentuckysaddle_buttermilkbuckskin_pc"):
-		case joaat("a_c_horse_morgan_liverchestnut_pc"):
-		case joaat("a_c_horse_appaloosa_fewspotted_pc"):
-		case joaat("a_c_horse_andalusian_perlino"):
-		case joaat("a_c_horse_tennesseewalker_goldpalomino_pc"):
-		case joaat("a_c_horse_arabian_warpedbrindle_pc"):
+		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT_PC"):
+		case joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
+		case joaat("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC"):
+		case joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"):
+		case joaat("A_C_HORSE_ANDALUSIAN_PERLINO"):
+		case joaat("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC"):
+		case joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC"):
 			return 1;
 	}
 	return 0;
@@ -20860,8 +20860,8 @@ void func_431(var uParam0, var uParam1)
 	int iVar12;
 
 	iVar0 = 2;
-	iVar5[0] = joaat("p_cs_pelt_medlarge");
-	iVar5[1] = joaat("p_cs_pelt_large");
+	iVar5[0] = joaat("P_CS_PELT_MEDLARGE");
+	iVar5[1] = joaat("P_CS_PELT_LARGE");
 	iVar8[0] = joaat("CARRIABLE_ANIMAL_SKIN_ML");
 	iVar8[1] = joaat("CARRIABLE_ANIMAL_SKIN_L");
 	iVar11 = ITEMSET::CREATE_ITEMSET(true);
@@ -25236,7 +25236,7 @@ int func_591(int iParam0)
 		case 1:
 			return joaat("GANG_INBRED");
 		case 0:
-			return joaat("Gang_ODriscoll");
+			return joaat("GANG_ODRISCOLL");
 		case 4:
 			return joaat("GANG_RANCHERS");
 		case 3:
@@ -25409,103 +25409,103 @@ int func_601(var uParam0, int iParam1)
 		case 6:
 		case 7:
 		case 8:
-			return joaat("g_m_m_uniduster_01");
+			return joaat("G_M_M_UNIDUSTER_01");
 		case 2:
 			switch (iVar0)
 			{
 				case 0:
-					return joaat("g_m_y_uniexconfeds_01");
+					return joaat("G_M_Y_UNIEXCONFEDS_01");
 				case 1:
-					return joaat("g_m_o_uniexconfeds_01");
+					return joaat("G_M_O_UNIEXCONFEDS_01");
 				case 4:
-					return joaat("s_m_m_ambientsdpolice_01");
+					return joaat("S_M_M_AMBIENTSDPOLICE_01");
 				case 2:
-					return joaat("g_m_o_uniexconfeds_01");
+					return joaat("G_M_O_UNIEXCONFEDS_01");
 				case 3:
-					return joaat("g_m_y_uniexconfeds_01");
+					return joaat("G_M_Y_UNIEXCONFEDS_01");
 				default:
 					break;
 			}
-			return joaat("g_m_y_uniexconfeds_01");
+			return joaat("G_M_Y_UNIEXCONFEDS_01");
 		case 3:
 			switch (iVar0)
 			{
 				case 0:
-					return joaat("g_m_y_uniexconfeds_01");
+					return joaat("G_M_Y_UNIEXCONFEDS_01");
 				case 1:
-					return joaat("g_m_o_uniexconfeds_01");
+					return joaat("G_M_O_UNIEXCONFEDS_01");
 				case 4:
-					return joaat("gc_lemoynecaptive_males_01");
+					return joaat("GC_LEMOYNECAPTIVE_MALES_01");
 				case 2:
-					return joaat("g_m_o_uniexconfeds_01");
+					return joaat("G_M_O_UNIEXCONFEDS_01");
 				case 3:
-					return joaat("g_m_y_uniexconfeds_01");
+					return joaat("G_M_Y_UNIEXCONFEDS_01");
 				default:
 					break;
 			}
-			return joaat("g_m_y_uniexconfeds_01");
+			return joaat("G_M_Y_UNIEXCONFEDS_01");
 		case 1:
 			switch (iVar0)
 			{
 				case 0:
 				case 1:
-					return joaat("g_m_o_uniexconfeds_01");
+					return joaat("G_M_O_UNIEXCONFEDS_01");
 				default:
 					break;
 			}
-			return joaat("g_m_y_uniexconfeds_01");
+			return joaat("G_M_Y_UNIEXCONFEDS_01");
 		case 0:
 			switch (iVar0)
 			{
 				case 1:
 				case 2:
-					return joaat("g_m_o_uniexconfeds_01");
+					return joaat("G_M_O_UNIEXCONFEDS_01");
 				default:
 					break;
 			}
-			return joaat("g_m_y_uniexconfeds_01");
+			return joaat("G_M_Y_UNIEXCONFEDS_01");
 		case 12:
 			switch (iVar0)
 			{
 				case 0:
 				case 1:
-					return joaat("g_m_m_uniinbred_01");
+					return joaat("G_M_M_UNIINBRED_01");
 				case 2:
-					return joaat("a_m_m_unicorpse_01");
+					return joaat("A_M_M_UNICORPSE_01");
 				case 3:
-					return joaat("a_f_m_unicorpse_01");
+					return joaat("A_F_M_UNICORPSE_01");
 				default:
 					break;
 			}
-			return joaat("g_m_m_uniinbred_01");
+			return joaat("G_M_M_UNIINBRED_01");
 		case 13:
 			switch (iVar0)
 			{
 				case 0:
 				case 1:
-					return joaat("g_m_m_uniinbred_01");
+					return joaat("G_M_M_UNIINBRED_01");
 				case 2:
 				case 3:
-					return joaat("a_m_m_unicorpse_01");
+					return joaat("A_M_M_UNICORPSE_01");
 				default:
 					break;
 			}
-			return joaat("g_m_m_uniinbred_01");
+			return joaat("G_M_M_UNIINBRED_01");
 		case 9:
 		case 10:
 		case 11:
-			return joaat("g_m_m_unimountainmen_01");
+			return joaat("G_M_M_UNIMOUNTAINMEN_01");
 	}
 	switch (uParam0->f_66)
 	{
 		case 2:
-			return joaat("g_m_m_uniduster_01");
+			return joaat("G_M_M_UNIDUSTER_01");
 		case 0:
-			return joaat("g_m_y_uniexconfeds_01");
+			return joaat("G_M_Y_UNIEXCONFEDS_01");
 		case 3:
-			return joaat("g_m_m_uniinbred_01");
+			return joaat("G_M_M_UNIINBRED_01");
 		case 1:
-			return joaat("g_m_m_unimountainmen_01");
+			return joaat("G_M_M_UNIMOUNTAINMEN_01");
 		default:
 			break;
 	}
@@ -26207,187 +26207,187 @@ int func_621(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("cs_sistercalderon"):
-		case joaat("cs_strsheriff_01"):
-		case joaat("cs_mud2bigguy"):
-		case joaat("cs_rainsfall"):
-		case joaat("cs_penelopebraithwaite"):
-		case joaat("cs_swampweirdosonny"):
-		case joaat("cs_unidusterjail_01"):
-		case joaat("cs_iangray"):
-		case joaat("cs_tinyhermit"):
-		case joaat("cs_timothydonahue"):
-		case joaat("cs_princessisabeau"):
-		case joaat("cs_leviticuscornwall"):
-		case joaat("cs_didsbury"):
-		case joaat("cs_featherstonchambers"):
-		case joaat("cs_featsofstrength"):
-		case joaat("cs_bandpianist"):
-		case joaat("cs_escapeartistassistant"):
-		case joaat("cs_garethbraithwaite"):
-		case joaat("cs_creoleguy"):
-		case joaat("cs_leighgray"):
-		case joaat("cs_strawberryoutlaw_02"):
-		case joaat("cs_gloria"):
-		case joaat("cs_warvet"):
-		case joaat("cs_jockgray"):
-		case joaat("cs_davidgeddes"):
-		case joaat("cs_guidomartelli"):
-		case joaat("cs_duncangeddes"):
-		case joaat("cs_dusterinformant_01"):
-		case joaat("cs_pinkertongoon"):
-		case joaat("cs_mickey"):
-		case joaat("cs_twinbrother_02"):
-		case joaat("cs_hestonjameson"):
-		case joaat("cs_strdeputy_01"):
-		case joaat("cs_abe"):
-		case joaat("cs_oddfellowspinhead"):
-		case joaat("cs_swampfreak"):
-		case joaat("cs_mradler"):
-		case joaat("cs_aberdeenpigfarmer"):
-		case joaat("cs_hobartcrawley"):
-		case joaat("cs_formyartbigwoman"):
-		case joaat("cs_norrisforsythe"):
-		case joaat("cs_jules"):
-		case joaat("cs_tomdickens"):
-		case joaat("cs_geraldbraithwaite"):
-		case joaat("cs_paytah"):
-		case joaat("cs_cancan_03"):
-		case joaat("cs_grizzledjon"):
-		case joaat("cs_wrobel"):
-		case joaat("cs_meredith"):
-		case joaat("cs_creepyoldlady"):
-		case joaat("cs_nbxreceptionist_01"):
-		case joaat("cs_nbxpolicechiefformal"):
-		case joaat("cs_cornwalltrainconductor"):
-		case joaat("cs_rhodeputy_01"):
-		case joaat("cs_drmalcolmmacintosh"):
-		case joaat("cs_leon"):
-		case joaat("cs_sheriffowens"):
-		case joaat("cs_sddoctor_01"):
-		case joaat("cs_scottgray"):
-		case joaat("cs_cancan_01"):
-		case joaat("cs_creolecaptain"):
-		case joaat("cs_brontesbutler"):
-		case joaat("cs_janson"):
-		case joaat("cs_forgivenwife_01"):
-		case joaat("cs_tigerhandler"):
-		case joaat("cs_frenchartist"):
-		case joaat("cs_genstorymale"):
-		case joaat("cs_clay"):
-		case joaat("cs_strdeputy_02"):
-		case joaat("cs_famousgunslinger_03"):
-		case joaat("cs_bivcoachdriver"):
-		case joaat("cs_braithwaitebutler"):
-		case joaat("cs_cleet"):
-		case joaat("cs_joe"):
-		case joaat("cs_slavecatcher"):
-		case joaat("cs_braithwaitemaid"):
-		case joaat("cs_twingroupie_02"):
-		case joaat("cs_mrsgeddes"):
-		case joaat("cs_samaritan"):
-		case joaat("cs_exconfedinformant"):
-		case joaat("cs_frenchman_01"):
-		case joaat("cs_bandsinger"):
-		case joaat("cs_baptiste"):
-		case joaat("cs_angusgeddes"):
-		case joaat("cs_mysteriousstranger"):
-		case joaat("cs_famousgunslinger_01"):
-		case joaat("cs_bartholomewbraithwaite"):
-		case joaat("cs_mixedracekid"):
-		case joaat("cs_beatenupcaptain"):
-		case joaat("cs_edgarross"):
-		case joaat("cs_twingroupie_01"):
-		case joaat("cs_mrsweathers"):
-		case joaat("cs_jamie"):
-		case joaat("cs_karensjohn_01"):
-		case joaat("cs_thomasdown"):
-		case joaat("cs_obediahhinton"):
-		case joaat("cs_agnesdowd"):
-		case joaat("cs_cavehermit"):
-		case joaat("cs_brynntildon"):
-		case joaat("cs_germanson"):
-		case joaat("cs_brendacrawley"):
-		case joaat("cs_colfavours"):
-		case joaat("cs_rhodeskidnapvictim"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("cs_cancan_04"):
-		case joaat("cs_towncrier"):
-		case joaat("cs_famousgunslinger_04"):
-		case joaat("cs_dalemaroney"):
-		case joaat("cs_angryhusband"):
-		case joaat("cs_lillianpowell"):
-		case joaat("cs_andershelgerson"):
-		case joaat("cs_poorjoe"):
-		case joaat("cs_braithwaiteservant"):
-		case joaat("cs_brotherdorkins"):
-		case joaat("cs_albertmason"):
-		case joaat("cs_famousgunslinger_05"):
-		case joaat("cs_balloonoperator"):
-		case joaat("cs_albertcakeesquire"):
-		case joaat("cs_mrsfellows"):
-		case joaat("cs_cancanman_01"):
-		case joaat("cs_poisonwellshaman"):
-		case joaat("cs_cancan_02"):
-		case joaat("cs_meredithsmother"):
-		case joaat("cs_angel"):
-		case joaat("cs_archerfordham"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("cs_chelonianmaster"):
-		case joaat("cs_twinbrother_01"):
-		case joaat("cs_germandaughter"):
-		case joaat("cs_lemiuxassistant"):
-		case joaat("cs_creoledoctor"):
-		case joaat("cs_crackpotrobot"):
-		case joaat("cs_bandbassist"):
-		case joaat("cs_genstoryfemale"):
-		case joaat("cs_marylinton"):
-		case joaat("cs_valprayingman"):
-		case joaat("cs_johnthebaptisingmadman"):
-		case joaat("cs_mrs_calhoun"):
-		case joaat("cs_theodorelevin"):
-		case joaat("cs_nicholastimmins"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("cs_dinoboneslady"):
-		case joaat("cs_beaugray"):
-		case joaat("cs_strawberryoutlaw_01"):
-		case joaat("cs_crackpotinventor"):
-		case joaat("cs_hercule"):
-		case joaat("cs_gavin"):
-		case joaat("cs_levisimon"):
-		case joaat("cs_londonderryson"):
-		case joaat("cs_captainmonroe"):
-		case joaat("cs_famousgunslinger_02"):
-		case joaat("cs_mrslondonderry"):
-		case joaat("cs_soothsayer"):
-		case joaat("cs_tavishgray"):
-		case joaat("cs_joebutler"):
-		case joaat("cs_banddrummer"):
-		case joaat("cs_lillymillet"):
-		case joaat("cs_ansel_atherton"):
-		case joaat("cs_rhodeputy_02"):
-		case joaat("cs_edmundlowry"):
-		case joaat("cs_disguisedduster_02"):
-		case joaat("cs_magnifico"):
-		case joaat("cs_artappraiser"):
-		case joaat("cs_forgivenhusband_01"):
-		case joaat("cs_reverendfortheringham"):
-		case joaat("cs_daveycallender"):
-		case joaat("cs_desmond"):
-		case joaat("cs_adamgray"):
-		case joaat("cs_jimcalloway"):
-		case joaat("cs_sdsaloondrunk_01"):
-		case joaat("cs_nbxdrunk"):
-		case joaat("cs_germanmother"):
-		case joaat("cs_ringmaster"):
-		case joaat("cs_lucanapoli"):
-		case joaat("cs_rhodesassistant"):
-		case joaat("cs_aberdeensister"):
-		case joaat("cs_nbxexecuted"):
-		case joaat("cs_famousgunslinger_06"):
-		case joaat("cs_johnweathers"):
-		case joaat("cs_professorbell"):
-		case joaat("cs_rhodessaloonbouncer"):
+		case joaat("CS_SISTERCALDERON"):
+		case joaat("CS_STRSHERIFF_01"):
+		case joaat("CS_MUD2BIGGUY"):
+		case joaat("CS_RAINSFALL"):
+		case joaat("CS_PENELOPEBRAITHWAITE"):
+		case joaat("CS_SWAMPWEIRDOSONNY"):
+		case joaat("CS_UNIDUSTERJAIL_01"):
+		case joaat("CS_IANGRAY"):
+		case joaat("CS_TINYHERMIT"):
+		case joaat("CS_TIMOTHYDONAHUE"):
+		case joaat("CS_PRINCESSISABEAU"):
+		case joaat("CS_LEVITICUSCORNWALL"):
+		case joaat("CS_DIDSBURY"):
+		case joaat("CS_FEATHERSTONCHAMBERS"):
+		case joaat("CS_FEATSOFSTRENGTH"):
+		case joaat("CS_BANDPIANIST"):
+		case joaat("CS_ESCAPEARTISTASSISTANT"):
+		case joaat("CS_GARETHBRAITHWAITE"):
+		case joaat("CS_CREOLEGUY"):
+		case joaat("CS_LEIGHGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_02"):
+		case joaat("CS_GLORIA"):
+		case joaat("CS_WARVET"):
+		case joaat("CS_JOCKGRAY"):
+		case joaat("CS_DAVIDGEDDES"):
+		case joaat("CS_GUIDOMARTELLI"):
+		case joaat("CS_DUNCANGEDDES"):
+		case joaat("CS_DUSTERINFORMANT_01"):
+		case joaat("CS_PINKERTONGOON"):
+		case joaat("CS_MICKEY"):
+		case joaat("CS_TWINBROTHER_02"):
+		case joaat("CS_HESTONJAMESON"):
+		case joaat("CS_STRDEPUTY_01"):
+		case joaat("CS_ABE"):
+		case joaat("CS_ODDFELLOWSPINHEAD"):
+		case joaat("CS_SWAMPFREAK"):
+		case joaat("CS_MRADLER"):
+		case joaat("CS_ABERDEENPIGFARMER"):
+		case joaat("CS_HOBARTCRAWLEY"):
+		case joaat("CS_FORMYARTBIGWOMAN"):
+		case joaat("CS_NORRISFORSYTHE"):
+		case joaat("CS_JULES"):
+		case joaat("CS_TOMDICKENS"):
+		case joaat("CS_GERALDBRAITHWAITE"):
+		case joaat("CS_PAYTAH"):
+		case joaat("CS_CANCAN_03"):
+		case joaat("CS_GRIZZLEDJON"):
+		case joaat("CS_WROBEL"):
+		case joaat("CS_MEREDITH"):
+		case joaat("CS_CREEPYOLDLADY"):
+		case joaat("CS_NBXRECEPTIONIST_01"):
+		case joaat("CS_NBXPOLICECHIEFFORMAL"):
+		case joaat("CS_CORNWALLTRAINCONDUCTOR"):
+		case joaat("CS_RHODEPUTY_01"):
+		case joaat("CS_DRMALCOLMMACINTOSH"):
+		case joaat("CS_LEON"):
+		case joaat("CS_SHERIFFOWENS"):
+		case joaat("CS_SDDOCTOR_01"):
+		case joaat("CS_SCOTTGRAY"):
+		case joaat("CS_CANCAN_01"):
+		case joaat("CS_CREOLECAPTAIN"):
+		case joaat("CS_BRONTESBUTLER"):
+		case joaat("CS_JANSON"):
+		case joaat("CS_FORGIVENWIFE_01"):
+		case joaat("CS_TIGERHANDLER"):
+		case joaat("CS_FRENCHARTIST"):
+		case joaat("CS_GENSTORYMALE"):
+		case joaat("CS_CLAY"):
+		case joaat("CS_STRDEPUTY_02"):
+		case joaat("CS_FAMOUSGUNSLINGER_03"):
+		case joaat("CS_BIVCOACHDRIVER"):
+		case joaat("CS_BRAITHWAITEBUTLER"):
+		case joaat("CS_CLEET"):
+		case joaat("CS_JOE"):
+		case joaat("CS_SLAVECATCHER"):
+		case joaat("CS_BRAITHWAITEMAID"):
+		case joaat("CS_TWINGROUPIE_02"):
+		case joaat("CS_MRSGEDDES"):
+		case joaat("CS_SAMARITAN"):
+		case joaat("CS_EXCONFEDINFORMANT"):
+		case joaat("CS_FRENCHMAN_01"):
+		case joaat("CS_BANDSINGER"):
+		case joaat("CS_BAPTISTE"):
+		case joaat("CS_ANGUSGEDDES"):
+		case joaat("CS_MYSTERIOUSSTRANGER"):
+		case joaat("CS_FAMOUSGUNSLINGER_01"):
+		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
+		case joaat("CS_MIXEDRACEKID"):
+		case joaat("CS_BEATENUPCAPTAIN"):
+		case joaat("CS_EDGARROSS"):
+		case joaat("CS_TWINGROUPIE_01"):
+		case joaat("CS_MRSWEATHERS"):
+		case joaat("CS_JAMIE"):
+		case joaat("CS_KARENSJOHN_01"):
+		case joaat("CS_THOMASDOWN"):
+		case joaat("CS_OBEDIAHHINTON"):
+		case joaat("CS_AGNESDOWD"):
+		case joaat("CS_CAVEHERMIT"):
+		case joaat("CS_BRYNNTILDON"):
+		case joaat("CS_GERMANSON"):
+		case joaat("CS_BRENDACRAWLEY"):
+		case joaat("CS_COLFAVOURS"):
+		case joaat("CS_RHODESKIDNAPVICTIM"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("CS_CANCAN_04"):
+		case joaat("CS_TOWNCRIER"):
+		case joaat("CS_FAMOUSGUNSLINGER_04"):
+		case joaat("CS_DALEMARONEY"):
+		case joaat("CS_ANGRYHUSBAND"):
+		case joaat("CS_LILLIANPOWELL"):
+		case joaat("CS_ANDERSHELGERSON"):
+		case joaat("CS_POORJOE"):
+		case joaat("CS_BRAITHWAITESERVANT"):
+		case joaat("CS_BROTHERDORKINS"):
+		case joaat("CS_ALBERTMASON"):
+		case joaat("CS_FAMOUSGUNSLINGER_05"):
+		case joaat("CS_BALLOONOPERATOR"):
+		case joaat("CS_ALBERTCAKEESQUIRE"):
+		case joaat("CS_MRSFELLOWS"):
+		case joaat("CS_CANCANMAN_01"):
+		case joaat("CS_POISONWELLSHAMAN"):
+		case joaat("CS_CANCAN_02"):
+		case joaat("CS_MEREDITHSMOTHER"):
+		case joaat("CS_ANGEL"):
+		case joaat("CS_ARCHERFORDHAM"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("CS_CHELONIANMASTER"):
+		case joaat("CS_TWINBROTHER_01"):
+		case joaat("CS_GERMANDAUGHTER"):
+		case joaat("CS_LEMIUXASSISTANT"):
+		case joaat("CS_CREOLEDOCTOR"):
+		case joaat("CS_CRACKPOTROBOT"):
+		case joaat("CS_BANDBASSIST"):
+		case joaat("CS_GENSTORYFEMALE"):
+		case joaat("CS_MARYLINTON"):
+		case joaat("CS_VALPRAYINGMAN"):
+		case joaat("CS_JOHNTHEBAPTISINGMADMAN"):
+		case joaat("CS_MRS_CALHOUN"):
+		case joaat("CS_THEODORELEVIN"):
+		case joaat("CS_NICHOLASTIMMINS"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("CS_DINOBONESLADY"):
+		case joaat("CS_BEAUGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_01"):
+		case joaat("CS_CRACKPOTINVENTOR"):
+		case joaat("CS_HERCULE"):
+		case joaat("CS_GAVIN"):
+		case joaat("CS_LEVISIMON"):
+		case joaat("CS_LONDONDERRYSON"):
+		case joaat("CS_CAPTAINMONROE"):
+		case joaat("CS_FAMOUSGUNSLINGER_02"):
+		case joaat("CS_MRSLONDONDERRY"):
+		case joaat("CS_SOOTHSAYER"):
+		case joaat("CS_TAVISHGRAY"):
+		case joaat("CS_JOEBUTLER"):
+		case joaat("CS_BANDDRUMMER"):
+		case joaat("CS_LILLYMILLET"):
+		case joaat("CS_ANSEL_ATHERTON"):
+		case joaat("CS_RHODEPUTY_02"):
+		case joaat("CS_EDMUNDLOWRY"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
+		case joaat("CS_MAGNIFICO"):
+		case joaat("CS_ARTAPPRAISER"):
+		case joaat("CS_FORGIVENHUSBAND_01"):
+		case joaat("CS_REVERENDFORTHERINGHAM"):
+		case joaat("CS_DAVEYCALLENDER"):
+		case joaat("CS_DESMOND"):
+		case joaat("CS_ADAMGRAY"):
+		case joaat("CS_JIMCALLOWAY"):
+		case joaat("CS_SDSALOONDRUNK_01"):
+		case joaat("CS_NBXDRUNK"):
+		case joaat("CS_GERMANMOTHER"):
+		case joaat("CS_RINGMASTER"):
+		case joaat("CS_LUCANAPOLI"):
+		case joaat("CS_RHODESASSISTANT"):
+		case joaat("CS_ABERDEENSISTER"):
+		case joaat("CS_NBXEXECUTED"):
+		case joaat("CS_FAMOUSGUNSLINGER_06"):
+		case joaat("CS_JOHNWEATHERS"):
+		case joaat("CS_PROFESSORBELL"):
+		case joaat("CS_RHODESSALOONBOUNCER"):
 			return 1;
 		default:
 			break;
@@ -26432,7 +26432,7 @@ void func_623(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -28265,7 +28265,7 @@ void func_695(int iParam0, bool bParam1)
 	{
 		return;
 	}
-	func_874(sVar1, 0, iVar3, iVar2, joaat("player_menu"), 0, -1, -2, func_264(), "robbery_tip_wipe_on", 0, 0, 1, 1, 1);
+	func_874(sVar1, 0, iVar3, iVar2, joaat("PLAYER_MENU"), 0, -1, -2, func_264(), "robbery_tip_wipe_on", 0, 0, 1, 1, 1);
 	func_875(iParam0, 1073741824 /* Float: 2f */);
 	func_333(0, -1);
 }
@@ -30183,7 +30183,7 @@ int func_788(var uParam0, int iParam1)
 	}
 	if (uParam0->f_416)
 	{
-		return joaat("g_m_m_unicriminals_01");
+		return joaat("G_M_M_UNICRIMINALS_01");
 	}
 	switch (uParam0->f_101)
 	{
@@ -30191,78 +30191,78 @@ int func_788(var uParam0, int iParam1)
 		case 14:
 		case 15:
 		case 16:
-			return joaat("a_m_m_htlroughtravellers_01");
+			return joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 		case 4:
 		case 9:
 			if (iParam1 == 2)
 			{
-				return joaat("a_m_m_htlroughtravellers_01");
+				return joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 			}
 			else
 			{
-				return joaat("a_f_m_htlfancytravellers_01");
+				return joaat("A_F_M_HTLFANCYTRAVELLERS_01");
 			}
 			break;
 		case 1:
 			if (iParam1 == 2)
 			{
-				return joaat("a_m_m_bivroughtravellers_01");
+				return joaat("A_M_M_BIVROUGHTRAVELLERS_01");
 			}
 			else
 			{
-				return joaat("a_f_m_bivfancytravellers_01");
+				return joaat("A_F_M_BIVFANCYTRAVELLERS_01");
 			}
 			break;
 		case 6:
 		case 10:
 			if (iParam1 == 2)
 			{
-				return joaat("a_m_m_rkrroughtravellers_01");
+				return joaat("A_M_M_RKRROUGHTRAVELLERS_01");
 			}
 			else
 			{
-				return joaat("a_f_m_rkrfancytravellers_01");
+				return joaat("A_F_M_RKRFANCYTRAVELLERS_01");
 			}
 			break;
 		case 11:
 			if (iParam1 == 2)
 			{
-				return joaat("a_m_m_sclroughtravellers_01");
+				return joaat("A_M_M_SCLROUGHTRAVELLERS_01");
 			}
 			else
 			{
-				return joaat("a_f_m_sclfancytravellers_01");
+				return joaat("A_F_M_SCLFANCYTRAVELLERS_01");
 			}
 			break;
 		case 0:
 		case 2:
 			if (iParam1 == 2)
 			{
-				return joaat("a_m_m_bynroughtravellers_01");
+				return joaat("A_M_M_BYNROUGHTRAVELLERS_01");
 			}
 			else
 			{
-				return joaat("a_f_m_bynfancytravellers_01");
+				return joaat("A_F_M_BYNFANCYTRAVELLERS_01");
 			}
 			break;
 		case 7:
 			if (iParam1 == 2)
 			{
-				return joaat("a_m_m_griroughtravellers_01");
+				return joaat("A_M_M_GRIROUGHTRAVELLERS_01");
 			}
 			else
 			{
-				return joaat("a_f_m_grifancytravellers_01");
+				return joaat("A_F_M_GRIFANCYTRAVELLERS_01");
 			}
 			break;
 	}
 	if (iParam1 == 2)
 	{
-		return joaat("a_m_m_htlroughtravellers_01");
+		return joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 	}
 	else
 	{
-		return joaat("a_f_m_rkrfancytravellers_01");
+		return joaat("A_F_M_RKRFANCYTRAVELLERS_01");
 	}
 	return func_910(0, iParam1, 0, 0, 0, 0f, 0f, 0f);
 }
@@ -30406,12 +30406,12 @@ int func_796(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("overcast"):
-		case joaat("highpressure"):
-		case joaat("overcastdark"):
-		case joaat("clouds"):
-		case joaat("misty"):
-		case joaat("sunny"):
+		case joaat("OVERCAST"):
+		case joaat("HIGHPRESSURE"):
+		case joaat("OVERCASTDARK"):
+		case joaat("CLOUDS"):
+		case joaat("MISTY"):
+		case joaat("SUNNY"):
 			return 1;
 		default:
 			break;
@@ -30423,14 +30423,14 @@ int func_797(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -30442,11 +30442,11 @@ int func_798(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("snow"):
-		case joaat("snowlight"):
-		case joaat("blizzard"):
-		case joaat("whiteout"):
-		case joaat("snowclearing"):
+		case joaat("SNOW"):
+		case joaat("SNOWLIGHT"):
+		case joaat("BLIZZARD"):
+		case joaat("WHITEOUT"):
+		case joaat("SNOWCLEARING"):
 			return 1;
 		default:
 			break;
@@ -30458,7 +30458,7 @@ int func_799(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("fog"):
+		case joaat("FOG"):
 			return 1;
 		default:
 			break;
@@ -30470,9 +30470,9 @@ int func_800(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("misty"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("MISTY"):
 			return 1;
 		default:
 			break;
@@ -30484,8 +30484,8 @@ int func_801(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("snowlight"):
-		case joaat("snowclearing"):
+		case joaat("SNOWLIGHT"):
+		case joaat("SNOWCLEARING"):
 			return 1;
 		default:
 			break;
@@ -30497,7 +30497,7 @@ int func_802(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("sandstorm"):
+		case joaat("SANDSTORM"):
 			return 1;
 		default:
 			break;
@@ -30771,50 +30771,50 @@ void func_814(int iParam0, int iParam1, float fParam2)
 	}
 	switch (iVar1)
 	{
-		case joaat("g_m_m_uniduster_03"):
-		case joaat("u_m_m_unidusterhenchman_03"):
-		case joaat("g_m_m_uniduster_04"):
-		case joaat("u_m_m_unidusterhenchman_02"):
-		case joaat("g_m_m_uniduster_02"):
-		case joaat("u_m_m_fatduster_01"):
-		case joaat("u_m_m_unidusterhenchman_01"):
-		case joaat("g_m_m_uniduster_01"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("g_f_m_uniduster_01"):
-		case joaat("u_m_m_unidusterleader_01"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("g_m_m_uniduster_05"):
-		case joaat("cs_disguisedduster_02"):
+		case joaat("G_M_M_UNIDUSTER_03"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_03"):
+		case joaat("G_M_M_UNIDUSTER_04"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_02"):
+		case joaat("G_M_M_UNIDUSTER_02"):
+		case joaat("U_M_M_FATDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_01"):
+		case joaat("G_M_M_UNIDUSTER_01"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("G_F_M_UNIDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERLEADER_01"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("G_M_M_UNIDUSTER_05"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("g_m_y_uniexconfeds_02"):
-		case joaat("g_m_y_uniexconfeds_01"):
-		case joaat("g_m_o_uniexconfeds_01"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("u_m_m_uniexconfedsbounty_01"):
+		case joaat("G_M_Y_UNIEXCONFEDS_02"):
+		case joaat("G_M_Y_UNIEXCONFEDS_01"):
+		case joaat("G_M_O_UNIEXCONFEDS_01"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.375f);
 			break;
-		case joaat("g_m_m_uniinbred_01"):
+		case joaat("G_M_M_UNIINBRED_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.7f, 0.875f);
 			break;
-		case joaat("u_m_m_bht_skinnersearch"):
-		case joaat("g_m_m_unimountainmen_01"):
-		case joaat("u_m_m_bht_skinnerbrother"):
+		case joaat("U_M_M_BHT_SKINNERSEARCH"):
+		case joaat("G_M_M_UNIMOUNTAINMEN_01"):
+		case joaat("U_M_M_BHT_SKINNERBROTHER"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.4f, 0.6f);
 			break;
-		case joaat("g_m_m_uniranchers_01"):
-		case joaat("cs_laramie"):
+		case joaat("G_M_M_UNIRANCHERS_01"):
+		case joaat("CS_LARAMIE"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.25f);
 			break;
-		case joaat("u_m_m_bht_banditoshack"):
-		case joaat("u_m_m_bht_banditomine"):
-		case joaat("g_m_m_unibanditos_01"):
+		case joaat("U_M_M_BHT_BANDITOSHACK"):
+		case joaat("U_M_M_BHT_BANDITOMINE"):
+		case joaat("G_M_M_UNIBANDITOS_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("u_m_m_nbxbrontegoon_01"):
-		case joaat("u_m_m_nbxbrontesecform_01"):
-		case joaat("u_m_m_nbxbronteasc_01"):
-		case joaat("g_m_m_unibrontegoons_01"):
+		case joaat("U_M_M_NBXBRONTEGOON_01"):
+		case joaat("U_M_M_NBXBRONTESECFORM_01"):
+		case joaat("U_M_M_NBXBRONTEASC_01"):
+		case joaat("G_M_M_UNIBRONTEGOONS_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.125f);
 			break;
 		default:
@@ -30974,7 +30974,7 @@ int func_824(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_stoolfolding01x");
+			return joaat("P_STOOLFOLDING01X");
 		default:
 			break;
 	}
@@ -30986,7 +30986,7 @@ int func_825(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_amb_tent01x");
+			return joaat("P_AMB_TENT01X");
 		default:
 			break;
 	}
@@ -30998,7 +30998,7 @@ int func_826(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_amb_tent03x");
+			return joaat("P_AMB_TENT03X");
 		default:
 			break;
 	}
@@ -31894,17 +31894,17 @@ int func_872(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("prhm1");
+			return joaat("PRHM1");
 		case 2:
-			return joaat("prhm2");
+			return joaat("PRHM2");
 		case 3:
-			return joaat("prhm6");
+			return joaat("PRHM6");
 		case 4:
-			return joaat("prhm3");
+			return joaat("PRHM3");
 		case 6:
-			return joaat("prhm7");
+			return joaat("PRHM7");
 		case 7:
-			return joaat("prhm5");
+			return joaat("PRHM5");
 		default:
 			break;
 	}
@@ -31949,7 +31949,7 @@ var func_874(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	}
 	if (iParam2 == -1)
 	{
-		iParam2 = joaat("elements_stamps_icons");
+		iParam2 = joaat("ELEMENTS_STAMPS_ICONS");
 	}
 	if (iParam3 == -1)
 	{
@@ -31961,7 +31961,7 @@ var func_874(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	}
 	if (iParam6 == -1)
 	{
-		iParam6 = joaat("sp_notifications");
+		iParam6 = joaat("SP_NOTIFICATIONS");
 	}
 	if (!bParam14)
 	{
@@ -32726,7 +32726,7 @@ int func_909(var uParam0)
 	bool bVar6;
 	bool bVar7;
 
-	iVar1 = joaat("a_m_m_htlroughtravellers_01");
+	iVar1 = joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 	bVar2 = false;
 	bVar3 = false;
 	bVar4 = false;
@@ -32881,18 +32881,18 @@ struct<5> func_919(int iParam0, bool bParam1, int iParam2)
 	Var0.f_4 = 1084182731;
 	switch (func_977(iParam0))
 	{
-		case joaat("clothing"):
+		case joaat("CLOTHING"):
 			if (!INVENTORY::_0x780C5B9AE2819807(iParam0, 1034665895))
 			{
-				Var0 = { func_923(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
+				Var0 = { func_923(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
 			}
 			else
 			{
 				Var0.f_4 = 1034665895;
 			}
 			break;
-		case joaat("weapon"):
+		case joaat("WEAPON"):
 			Var0 = { func_978(bParam1) };
 			if (iParam2 && func_979(iParam0, 1))
 			{
@@ -32919,10 +32919,10 @@ struct<5> func_919(int iParam0, bool bParam1, int iParam2)
 				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
-		case joaat("horse"):
+		case joaat("HORSE"):
 			Var0.f_4 = 1782082944;
 			break;
-		case joaat("Emote"):
+		case joaat("EMOTE"):
 			Var0.f_4 = -813824107;
 			Var0 = { func_980(bParam1) };
 			switch (func_866(iParam0))
@@ -32941,7 +32941,7 @@ struct<5> func_919(int iParam0, bool bParam1, int iParam2)
 					break;
 			}
 			break;
-		case joaat("Upgrade"):
+		case joaat("UPGRADE"):
 			if (func_981(iParam0, -1823706425))
 			{
 				Var0 = { func_923(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
@@ -32949,8 +32949,8 @@ struct<5> func_919(int iParam0, bool bParam1, int iParam2)
 			}
 			else if (func_981(iParam0, -1483207246))
 			{
-				Var0 = { func_923(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
+				Var0 = { func_923(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
 			}
 			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1311702610))
 			{
@@ -32980,7 +32980,7 @@ struct<5> func_919(int iParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("character"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -35170,38 +35170,38 @@ int func_969(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	int iVar1[6];
 	int iVar8;
 
-	iVar0 = joaat("a_m_m_htlroughtravellers_01");
+	iVar0 = joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 	if (bParam6)
 	{
 		switch (iParam0)
 		{
 			case 0:
 			case 2:
-				iVar1[iVar8] = joaat("a_m_m_bynroughtravellers_01");
+				iVar1[iVar8] = joaat("A_M_M_BYNROUGHTRAVELLERS_01");
 				iVar8++;
 				break;
 			case 1:
-				iVar1[iVar8] = joaat("a_m_m_bivroughtravellers_01");
+				iVar1[iVar8] = joaat("A_M_M_BIVROUGHTRAVELLERS_01");
 				iVar8++;
 				break;
 			case 3:
 			case 4:
 			case 9:
 			case 12:
-				iVar1[iVar8] = joaat("a_m_m_htlroughtravellers_01");
+				iVar1[iVar8] = joaat("A_M_M_HTLROUGHTRAVELLERS_01");
 				iVar8++;
 				break;
 			case 6:
 			case 7:
-				iVar1[iVar8] = joaat("a_m_m_griroughtravellers_01");
+				iVar1[iVar8] = joaat("A_M_M_GRIROUGHTRAVELLERS_01");
 				iVar8++;
 				break;
 			case 10:
-				iVar1[iVar8] = joaat("a_m_m_rkrroughtravellers_01");
+				iVar1[iVar8] = joaat("A_M_M_RKRROUGHTRAVELLERS_01");
 				iVar8++;
 				break;
 			case 11:
-				iVar1[iVar8] = joaat("a_m_m_sclroughtravellers_01");
+				iVar1[iVar8] = joaat("A_M_M_SCLROUGHTRAVELLERS_01");
 				iVar8++;
 				break;
 		}
@@ -35214,54 +35214,54 @@ int func_969(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 		case 12:
 			if (bParam1)
 			{
-				iVar1[iVar8] = joaat("a_m_m_farmtravelers_cool_01");
+				iVar1[iVar8] = joaat("A_M_M_FARMTRAVELERS_COOL_01");
 				iVar8++;
 			}
 			if (bParam2)
 			{
-				iVar1[iVar8] = joaat("a_m_m_huntertravelers_cool_01");
+				iVar1[iVar8] = joaat("A_M_M_HUNTERTRAVELERS_COOL_01");
 				iVar8++;
 			}
 			if (bParam3)
 			{
-				iVar1[iVar8] = joaat("a_m_m_familytravelers_cool_01");
+				iVar1[iVar8] = joaat("A_M_M_FAMILYTRAVELERS_COOL_01");
 				iVar8++;
 			}
 			if (bParam4)
 			{
-				iVar1[iVar8] = joaat("a_m_m_ranchertravelers_cool_01");
+				iVar1[iVar8] = joaat("A_M_M_RANCHERTRAVELERS_COOL_01");
 				iVar8++;
 			}
 			if (bParam5)
 			{
-				iVar1[iVar8] = joaat("a_m_m_deliverytravelers_cool_01");
+				iVar1[iVar8] = joaat("A_M_M_DELIVERYTRAVELERS_COOL_01");
 				iVar8++;
 			}
 			break;
 		default:
 			if (bParam1)
 			{
-				iVar1[iVar8] = joaat("a_m_m_farmtravelers_warm_01");
+				iVar1[iVar8] = joaat("A_M_M_FARMTRAVELERS_WARM_01");
 				iVar8++;
 			}
 			if (bParam2)
 			{
-				iVar1[iVar8] = joaat("a_m_m_huntertravelers_warm_01");
+				iVar1[iVar8] = joaat("A_M_M_HUNTERTRAVELERS_WARM_01");
 				iVar8++;
 			}
 			if (bParam3)
 			{
-				iVar1[iVar8] = joaat("a_m_m_familytravelers_warm_01");
+				iVar1[iVar8] = joaat("A_M_M_FAMILYTRAVELERS_WARM_01");
 				iVar8++;
 			}
 			if (bParam4)
 			{
-				iVar1[iVar8] = joaat("a_m_m_ranchertravelers_warm_01");
+				iVar1[iVar8] = joaat("A_M_M_RANCHERTRAVELERS_WARM_01");
 				iVar8++;
 			}
 			if (bParam5)
 			{
-				iVar1[iVar8] = joaat("a_m_m_deliverytravelers_warm_01");
+				iVar1[iVar8] = joaat("A_M_M_DELIVERYTRAVELERS_WARM_01");
 				iVar8++;
 			}
 			break;
@@ -35401,7 +35401,7 @@ void func_975()
 
 struct<4> func_976(bool bParam0)
 {
-	return func_923(joaat("character"), func_1008(), -1591664384, bParam0);
+	return func_923(joaat("CHARACTER"), func_1008(), -1591664384, bParam0);
 }
 
 int func_977(int iParam0)

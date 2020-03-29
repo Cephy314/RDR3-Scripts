@@ -76,11 +76,11 @@ void func_1(bool bParam0)
 	func_4(68);
 	if (bParam0)
 	{
-		func_5(joaat("freeroam"), 16);
+		func_5(joaat("FREEROAM"), 16);
 	}
 	else
 	{
-		func_5(joaat("freeroam"), 0);
+		func_5(joaat("FREEROAM"), 0);
 	}
 	func_6(3);
 }
@@ -96,7 +96,7 @@ int func_2()
 		}
 	}
 	func_4(68);
-	func_5(joaat("mission_creator"), 2);
+	func_5(joaat("MISSION_CREATOR"), 2);
 	func_6(3);
 	return 1;
 }
@@ -105,7 +105,7 @@ void func_3()
 {
 	func_4(4);
 	func_6(2);
-	func_5(joaat("single_player"), 0);
+	func_5(joaat("SINGLE_PLAYER"), 0);
 }
 
 void func_4(int iParam0)

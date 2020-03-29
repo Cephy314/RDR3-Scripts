@@ -178,8 +178,8 @@ bool func_6(var uParam0)
 
 void func_7(var uParam0)
 {
-	uParam0->f_3[0] = joaat("p_cs_billsingle01bx");
-	uParam0->f_3[1] = joaat("p_cs_billsingle01bx");
+	uParam0->f_3[0] = joaat("P_CS_BILLSINGLE01BX");
+	uParam0->f_3[1] = joaat("P_CS_BILLSINGLE01BX");
 	if (!ANIMSCENE::_0x25557E324489393C(uParam0->f_11))
 	{
 		uParam0->f_11 = ANIMSCENE::_CREATE_ANIM_SCENE("script@proc@shoprobberies@GLOBAL@EVENT_OPEN_REGISTER@BASE", 2, 0, false, true);

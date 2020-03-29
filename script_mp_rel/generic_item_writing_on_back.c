@@ -99,7 +99,7 @@ void __EntryFunction__()
 				}
 				if (PAD::IS_CONTROL_JUST_RELEASED(0, joaat("INPUT_CONTEXT_X")))
 				{
-					if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("generic")) != 0)
+					if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("TRANSLATION_OVERLAY"), joaat("GENERIC")) != 0)
 					{
 					}
 					else
@@ -119,9 +119,9 @@ void __EntryFunction__()
 			{
 				PED::_0xCB9401F918CB0F75(Global_34, "GENERIC_BOOK_READ_AVAILABLE", 0, -1);
 			}
-			if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
+			if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 			{
-				UIAPPS::_CLOSE_APP_BY_HASH(joaat("translation_overlay"));
+				UIAPPS::_CLOSE_APP_BY_HASH(joaat("TRANSLATION_OVERLAY"));
 			}
 		}
 		BUILTIN::WAIT(0);

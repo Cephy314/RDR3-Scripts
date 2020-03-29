@@ -121,7 +121,7 @@ void __EntryFunction__()
 						}
 						else
 						{
-							PED::_0xD710A5007C2AC539(Local_47.f_3, joaat("eyewear"), 1);
+							PED::_0xD710A5007C2AC539(Local_47.f_3, joaat("EYEWEAR"), 1);
 						}
 						func_14(Local_47.f_3, 1, 1);
 					}
@@ -421,7 +421,7 @@ void func_14(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -1190,7 +1190,7 @@ int func_43(int iParam0, int iParam1)
 	switch (iParam0->f_7)
 	{
 		case 1:
-			func_79(iParam0->f_3, "NPE_PRIS_GREET", joaat("speech_params_add_blip"), 0, 1, 0, 0, 1);
+			func_79(iParam0->f_3, "NPE_PRIS_GREET", joaat("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
 			return 1;
 	}
 	return 0;
@@ -2954,7 +2954,7 @@ int func_67()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -4577,33 +4577,33 @@ int func_119(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("u_m_m_bht_benedictallbright"):
+		case joaat("U_M_M_BHT_BENEDICTALLBRIGHT"):
 			return 2;
-		case joaat("u_f_m_bht_wife"):
+		case joaat("U_F_M_BHT_WIFE"):
 			return 3;
-		case joaat("u_m_m_bht_strawberryduel"):
+		case joaat("U_M_M_BHT_STRAWBERRYDUEL"):
 			return 4;
-		case joaat("u_m_m_htlrancherbounty_01"):
+		case joaat("U_M_M_HTLRANCHERBOUNTY_01"):
 			return 6;
-		case joaat("u_m_m_bht_shackescape"):
+		case joaat("U_M_M_BHT_SHACKESCAPE"):
 			return 8;
-		case joaat("u_m_m_uniexconfedsbounty_01"):
+		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
 			return 9;
-		case joaat("cs_antonyforemen"):
+		case joaat("CS_ANTONYFOREMEN"):
 			return 10;
-		case joaat("u_m_m_bht_skinnersearch"):
+		case joaat("U_M_M_BHT_SKINNERSEARCH"):
 			return 11;
-		case joaat("u_m_m_bht_skinnerbrother"):
+		case joaat("U_M_M_BHT_SKINNERBROTHER"):
 			return 12;
-		case joaat("u_m_m_bht_banditoshack"):
+		case joaat("U_M_M_BHT_BANDITOSHACK"):
 			return 14;
-		case joaat("u_m_m_bht_banditomine"):
+		case joaat("U_M_M_BHT_BANDITOMINE"):
 			return 15;
-		case joaat("u_m_m_bht_laramiesleeping"):
+		case joaat("U_M_M_BHT_LARAMIESLEEPING"):
 			return 5;
-		case joaat("u_m_m_bht_exconfedcampreturn"):
+		case joaat("U_M_M_BHT_EXCONFEDCAMPRETURN"):
 			return 7;
-		case joaat("u_m_m_bht_blackwaterhunt"):
+		case joaat("U_M_M_BHT_BLACKWATERHUNT"):
 			return 13;
 		default:
 			break;
@@ -7101,7 +7101,7 @@ int func_236(bool bParam0)
 	{
 		return 1;
 	}
-	if (iVar0 == joaat("Prop_player_sleep_tent_a_frame") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+	if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME") || iVar0 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 	{
 		iVar0 = PED::_0xC22AA08A8ADB87D4(bParam0);
 		if (iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_MALE_A"))

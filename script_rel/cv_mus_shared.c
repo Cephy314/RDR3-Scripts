@@ -1574,11 +1574,11 @@ void func_57(var uParam0, int iParam1, bool bParam2)
 			{
 				if (func_117())
 				{
-					iVar3 = joaat("arthur");
+					iVar3 = joaat("ARTHUR");
 				}
 				else
 				{
-					iVar3 = joaat("john");
+					iVar3 = joaat("JOHN");
 				}
 				iVar6 = iVar2;
 				while (iVar6 >= 60)
@@ -3308,9 +3308,9 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_16 = func_154(uParam0, 14, "JACKMARSTON_TEEN");
 			iLocal_14 = func_154(uParam0, 13, "AbigailRoberts");
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.19768f, -1.86904f, -0.0285873f, "p_chairfolding02x", 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.86246f, -0.82945f, -0.0207748f, "p_chair_crate02x", 1, 0, 1);
-			iLocal_25 = func_155(uParam0, joaat("p_bench_log07x"), -1.36866f, 1.60212f, -0.0298996f, "p_bench_log07x", 1, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.19768f, -1.86904f, -0.0285873f, "p_chairfolding02x", 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, "p_chair_crate02x", 1, 0, 1);
+			iLocal_25 = func_155(uParam0, joaat("P_BENCH_LOG07X"), -1.36866f, 1.60212f, -0.0298996f, "p_bench_log07x", 1, 0, 1);
 			func_156(uParam0, "CAJHBAU");
 			func_157(uParam0, "script@vignette@music@abigail_jack_1@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@abigail_jack_1@action", 0, 0, 1, 0);
@@ -3325,10 +3325,10 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_16 = func_154(uParam0, 14, "JACKMARSTON_TEEN");
 			iLocal_14 = func_154(uParam0, 13, "AbigailRoberts");
-			iLocal_35 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.19768f, -1.86904f, -0.0285873f, "p_chairfolding02x", 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.86246f, -0.82945f, -0.0207748f, "p_chair_crate02x", 1, 0, 1);
-			iLocal_25 = func_155(uParam0, joaat("p_bench_log07x"), -1.36866f, 1.60212f, -0.0298996f, "p_bench_log07x", 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.19768f, -1.86904f, -0.0285873f, "p_chairfolding02x", 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, "p_chair_crate02x", 1, 0, 1);
+			iLocal_25 = func_155(uParam0, joaat("P_BENCH_LOG07X"), -1.36866f, 1.60212f, -0.0298996f, "p_bench_log07x", 1, 0, 1);
 			func_156(uParam0, "CAJLJAU");
 			func_157(uParam0, "script@vignette@music@abigail_and_jack_1_little_joe_wrangler@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@abigail_and_jack_1_little_joe_wrangler@action", 0, 0, 1, 0);
@@ -3347,10 +3347,10 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_16 = func_154(uParam0, 14, "JackMarston_Teen");
 			iLocal_14 = func_154(uParam0, 13, "AbigailRoberts");
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BottleJD01x^1", 0, 0, 1);
-			iLocal_28 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42003f, -0.46233f, 0.000724792f, 0, 1, 0, 1);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_barrel04b"), -0.58518f, -1.37149f, -0.000541687f, 0, 1, 0, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636238f, 1.32548f, -0.00389862f, "Chair_crate15x", 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BottleJD01x^1", 0, 0, 1);
+			iLocal_28 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42003f, -0.46233f, 0.000724792f, 0, 1, 0, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.58518f, -1.37149f, -0.000541687f, 0, 1, 0, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636238f, 1.32548f, -0.00389862f, "Chair_crate15x", 1, 0, 1);
 			func_156(uParam0, "CAJNDAU");
 			func_157(uParam0, "script@vignette@music@abigail_and_jack_1_never_get_drunk@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@abigail_and_jack_1_never_get_drunk@action", 0, 0, 1, 0);
@@ -3368,15 +3368,15 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_16 = func_154(uParam0, 14, "JACKMARSTON_TEEN");
 			iLocal_14 = func_154(uParam0, 13, "AbigailRoberts");
-			iLocal_35 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.19768f, -1.86904f, -0.0285873f, "p_chairfolding02x", 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.86246f, -0.82945f, -0.0207748f, "p_chair_crate02x", 1, 0, 1);
-			iLocal_25 = func_155(uParam0, joaat("p_bench_log07x"), -1.36866f, 1.60212f, -0.0298996f, "p_bench_log07x", 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.19768f, -1.86904f, -0.0285873f, "p_chairfolding02x", 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, "p_chair_crate02x", 1, 0, 1);
+			iLocal_25 = func_155(uParam0, joaat("P_BENCH_LOG07X"), -1.36866f, 1.60212f, -0.0298996f, "p_bench_log07x", 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@abigail_and_jack_1_wild_rover@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@abigail_and_jack_1_wild_rover@action", 0, 0, 1, 0);
 			func_156(uParam0, "CAJWRAU");
-			func_158(uParam0, iLocal_14, 3, joaat("prop_human_seat_chair"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", iLocal_25, 0);
-			func_159(uParam0, iLocal_14, 2, joaat("prop_human_seat_chair"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", iLocal_25, 0, -1073741824 /* Float: -2f */, 0f, 1);
+			func_158(uParam0, iLocal_14, 3, joaat("PROP_HUMAN_SEAT_CHAIR"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", iLocal_25, 0);
+			func_159(uParam0, iLocal_14, 2, joaat("PROP_HUMAN_SEAT_CHAIR"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", iLocal_25, 0, -1073741824 /* Float: -2f */, 0f, 1);
 			func_158(uParam0, iLocal_16, 3, joaat("WORLD_CAMP_JACK_ES_FIRE_SEAT_BOX"), "WORLD_CAMP_JACK_ES_FIRE_SEAT_BOX_MALE_A", iLocal_24, 0);
 			func_159(uParam0, iLocal_16, 3, joaat("WORLD_CAMP_JACK_ES_FIRE_SEAT_BOX"), "WORLD_CAMP_JACK_ES_FIRE_SEAT_BOX_MALE_A", iLocal_24, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 			func_158(uParam0, iLocal_22, 3, joaat("CC_PROP_CAMP_FIRE_SEATED_DRINKING"), "PROP_CAMP_FIRE_SEATED_DRINKING_WHISKEY_MALE_C", iLocal_23, 0);
@@ -3389,8 +3389,8 @@ int func_76(var uParam0)
 		case 431:
 			iLocal_15 = func_154(uParam0, 7, 0);
 			iLocal_21 = func_154(uParam0, 19, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_harmonica01x"), 0f, 0f, 0f, "HARMONICA", 0, 1, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.19768f, -1.86904f, -0.0285873f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 1, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.19768f, -1.86904f, -0.0285873f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@charles_4@p1_normal@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@charles_4@p1_normal@action", 0, 0, 1, 0);
 			func_156(uParam0, "CHRM4AU");
@@ -3403,7 +3403,7 @@ int func_76(var uParam0)
 			iLocal_17 = func_154(uParam0, 2, 0);
 			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
 			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
 			func_156(uParam0, "JSNG1AU");
 			func_157(uParam0, "script@vignette@music@javier_1@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@javier_1@action", 0, 0, 1, 0);
@@ -3414,7 +3414,7 @@ int func_76(var uParam0)
 			iLocal_17 = func_154(uParam0, 2, 0);
 			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
 			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			func_156(uParam0, "JSNG2AU");
 			func_157(uParam0, "script@vignette@music@javier_2@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@javier_2@action", 0, 0, 1, 0);
@@ -3433,7 +3433,7 @@ int func_76(var uParam0)
 				func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
 				func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, joaat("APMS_COMP_JAVIER"), 1, 1, 1);
 			}
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			if (!func_164(14) && !func_164(15))
 			{
 				func_157(uParam0, "script@vignette@music@javier_4@base", 1, 1, 0, 0);
@@ -3468,7 +3468,7 @@ int func_76(var uParam0)
 			iLocal_17 = func_154(uParam0, 2, 0);
 			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
 			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			func_157(uParam0, "script@vignette@music@javier_5@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@javier_5@action", 0, 0, 1, 0);
 			func_156(uParam0, "JSNG5AU");
@@ -3484,7 +3484,7 @@ int func_76(var uParam0)
 			iLocal_17 = func_154(uParam0, 2, 0);
 			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
 			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			func_156(uParam0, "JSNG6AU");
 			func_157(uParam0, "script@vignette@music@javier_6@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@javier_6@action", 0, 0, 1, 0);
@@ -3496,8 +3496,8 @@ int func_76(var uParam0)
 			iLocal_14 = func_154(uParam0, 13, 0);
 			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
 			func_163(uParam0, 0f, 0f, 0f, 0f, 4f, 4f, 2.5f, 665633627, -1, 1, 1, 1);
-			func_155(uParam0, joaat("p_harmonica01x"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
+			func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
 			func_156(uParam0, "CJKS1AU");
 			func_157(uParam0, "script@vignette@music@jack_1@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@jack_1@action", 0, 0, 1, 0);
@@ -3510,20 +3510,20 @@ int func_76(var uParam0)
 			iLocal_14 = func_154(uParam0, 13, 0);
 			func_163(uParam0, -0.5789f, -1.348f, 0.5829f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
 			func_163(uParam0, 1.4366f, -0.3767f, 0.5659f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_harmonica01x"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_lily_of_the_valley@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@jack_1_lily_of_the_valley@action", 2, 0, 1, 0);
 			iLocal_42 = func_157(uParam0, "script@vignette@music@jack_1_lily_of_the_valley@exit_action", 0, 0, 0, 0);
 			func_156(uParam0, "CJKS2AU");
-			func_159(uParam0, iLocal_14, 2, joaat("prop_human_seat_chair"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+			func_159(uParam0, iLocal_14, 2, joaat("PROP_HUMAN_SEAT_CHAIR"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 			break;
 		case 439:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
 			func_163(uParam0, -1.769f, -0.8052f, 0.7632f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
 			func_163(uParam0, -0.709111f, 2.14099f, 0.980247f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			func_155(uParam0, joaat("p_harmonica01x"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
+			func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_oh_shenendoh@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@jack_1_oh_shenendoh@action", 0, 0, 1, 0);
 			func_156(uParam0, "CJKS3AU");
@@ -3535,22 +3535,22 @@ int func_76(var uParam0)
 			iLocal_14 = func_154(uParam0, 13, 0);
 			func_163(uParam0, -0.5789f, -1.348f, 0.5829f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
 			func_163(uParam0, 1.4366f, -0.3767f, 0.5659f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			func_155(uParam0, joaat("p_harmonica01x"), 0f, 0f, 0f, "HARMONICA", 0, 1, 1);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42003f, -0.46233f, 0.000724792f, 0, 1, 0, 1);
+			func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 1, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42003f, -0.46233f, 0.000724792f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_oh_susanna@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@jack_1_oh_susanna@action", 2, 0, 1, 0);
 			iLocal_42 = func_157(uParam0, "script@vignette@music@jack_1_oh_susanna@exit_action", 0, 0, 0, 0);
 			func_156(uParam0, "CJKS4AU");
 			func_158(uParam0, iLocal_14, 2, joaat("PROP_HUMAN_CAMP_FIRE_SEAT_BOX"), "PROP_HUMAN_CAMP_FIRE_SEAT_BOX_FEMALE_A", -1, 0);
-			func_159(uParam0, iLocal_14, 3, joaat("prop_human_seat_chair"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", iLocal_29, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+			func_159(uParam0, iLocal_14, 3, joaat("PROP_HUMAN_SEAT_CHAIR"), "PROP_HUMAN_SEAT_CHAIR_GENERIC_FEMALE_C", iLocal_29, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 			break;
 		case 441:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
 			func_163(uParam0, -1.769f, -0.8052f, 0.7632f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
 			func_163(uParam0, -0.709111f, 2.14099f, 0.980247f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_harmonica01x"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_yellwo_rose_of_texas@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@jack_1_yellwo_rose_of_texas@action", 0, 0, 1, 0);
 			func_156(uParam0, "CJKS5AU");
@@ -3571,14 +3571,14 @@ int func_76(var uParam0)
 			iLocal_20 = func_154(uParam0, 8, 0);
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_28 = func_155(uParam0, joaat("p_chair_barrel04b"), -0.584518f, -1.37169f, -0.000602722f, 0, 1, 0, 1);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
-			iLocal_31 = func_155(uParam0, joaat("s_crateseat03x"), -1.28888f, 0.763515f, -0.000335693f, 0, 1, 0, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 0, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_KAREN", 0, 0, 1);
-			iLocal_37 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 1, 1);
+			iLocal_28 = func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.584518f, -1.37169f, -0.000602722f, 0, 1, 0, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			iLocal_31 = func_155(uParam0, joaat("S_CRATESEAT03X"), -1.28888f, 0.763515f, -0.000335693f, 0, 1, 0, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE_KAREN", 0, 0, 1);
+			iLocal_37 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 1, 1);
 			if (!func_164(14))
 			{
 				func_157(uParam0, "script@vignette@music@karen_sean_uncle_javier_1@base", 1, 1, 0, 0);
@@ -3627,11 +3627,11 @@ int func_76(var uParam0)
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			func_155(uParam0, joaat("p_chair_barrel04b"), -0.584518f, -1.37169f, -0.000602722f, "BARREL", 1, 0, 1);
-			func_155(uParam0, joaat("s_crateseat03x"), -1.28888f, 0.763515f, -0.000335693f, "CRATE", 1, 0, 1);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01a"), 0f, 0f, 0f, "pearson_bottle", 0, 0, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01a"), 0f, 0f, 0f, "karen_bottle", 0, 0, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
+			func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.584518f, -1.37169f, -0.000602722f, "BARREL", 1, 0, 1);
+			func_155(uParam0, joaat("S_CRATESEAT03X"), -1.28888f, 0.763515f, -0.000335693f, "CRATE", 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01A"), 0f, 0f, 0f, "pearson_bottle", 0, 0, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01A"), 0f, 0f, 0f, "karen_bottle", 0, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
 			func_157(uParam0, "script@vignette@music@pearson_karen_and_javier_1@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@pearson_karen_and_javier_1@action", 0, 0, 1, 0);
 			func_156(uParam0, "CPNK1AU");
@@ -3652,9 +3652,9 @@ int func_76(var uParam0)
 		case 445:
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_cs_concertina01x"), 0f, 0f, 0f, "CONCERTINA", 0, 0, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_CS_CONCERTINA01X"), 0f, 0f, 0f, "CONCERTINA", 0, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@pearson_and_sean_1@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@pearson_and_sean_1@action", 0, 0, 1, 0);
 			func_156(uParam0, "CPNS1AU");
@@ -3676,9 +3676,9 @@ int func_76(var uParam0)
 		case 446:
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_cs_concertina01x"), 0f, 0f, 0f, "CONCERTINA", 0, 0, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_CS_CONCERTINA01X"), 0f, 0f, 0f, "CONCERTINA", 0, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@pearson_and_sean_4@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@pearson_and_sean_4@action", 0, 0, 1, 0);
 			func_156(uParam0, "CPNS4AU");
@@ -3700,9 +3700,9 @@ int func_76(var uParam0)
 		case 447:
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_cs_concertina01x"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_CS_CONCERTINA01X"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			func_156(uParam0, "CPSG7AU");
 			func_157(uParam0, "script@vignette@music@pearson_7@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@pearson_7@action", 0, 0, 1, 0);
@@ -3715,10 +3715,10 @@ int func_76(var uParam0)
 		case 448:
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			func_155(uParam0, joaat("p_cs_concertina01x"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
-			iLocal_27 = func_155(uParam0, joaat("p_chair_barrel04b"), -0.516f, -0.988f, -0.001f, "BARREL", 1, 0, 1);
-			iLocal_23 = func_155(uParam0, joaat("s_crateseat03x"), -1.289f, 0.764f, 0f, 0, 1, 0, 1);
+			func_155(uParam0, joaat("P_CS_CONCERTINA01X"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+			iLocal_27 = func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.516f, -0.988f, -0.001f, "BARREL", 1, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("S_CRATESEAT03X"), -1.289f, 0.764f, 0f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@pearson_5@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@pearson_5@action", 0, 0, 1, 0);
 			func_156(uParam0, "CPSG5AU");
@@ -3731,8 +3731,8 @@ int func_76(var uParam0)
 			iLocal_19 = func_154(uParam0, 17, 0);
 			func_162(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, 1);
 			func_163(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, -1, 1, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_cs_concertina01x"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_CS_CONCERTINA01X"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
 			func_156(uParam0, "CPSG8AU");
 			func_157(uParam0, "script@vignette@music@pearson_8@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@pearson_8@action", 0, 0, 1, 0);
@@ -3772,7 +3772,7 @@ int func_76(var uParam0)
 			iLocal_20 = func_154(uParam0, 8, 0);
 			func_162(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, 1);
 			func_163(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, -1, 1, 1, 1);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 			func_156(uParam0, "SSNG1");
 			if (!func_164(14))
 			{
@@ -3794,10 +3794,10 @@ int func_76(var uParam0)
 		case 452:
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE^1", 0, 1, 1);
-			iLocal_28 = func_155(uParam0, joaat("p_chair_barrel04b"), -0.584518f, -1.37169f, -0.000602722f, 0, 1, 0, 1);
-			iLocal_31 = func_155(uParam0, joaat("s_crateseat03x"), -1.28888f, 0.763515f, -0.000335693f, 0, 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE^1", 0, 1, 1);
+			iLocal_28 = func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.584518f, -1.37169f, -0.000602722f, 0, 1, 0, 1);
+			iLocal_31 = func_155(uParam0, joaat("S_CRATESEAT03X"), -1.28888f, 0.763515f, -0.000335693f, 0, 1, 0, 1);
 			if (!func_164(15))
 			{
 				func_157(uParam0, "script@vignette@music@susan_and_karen_2@base", 1, 1, 0, 0);
@@ -3830,9 +3830,9 @@ int func_76(var uParam0)
 			iLocal_18 = func_154(uParam0, 20, 0);
 			func_163(uParam0, 1.7625f, 2.95f, 0.85f, 0f, 1.3f, 1.3f, 3.2075f, -1612834106, joaat("APMS_COMP_KAREN"), 1, 1, 1);
 			func_163(uParam0, 1.425f, -0.6125f, 0.85f, 0f, 1.3f, 1.3f, 3.2075f, -1612834106, joaat("APMS_COMP_GRIMSHAW"), 1, 1, 1);
-			iLocal_157 = func_155(uParam0, joaat("p_washboard01x"), 3.73538f, 2.82993f, -0.2192f, "WASHBOARD", 0, 1, 1);
-			func_155(uParam0, joaat("p_cs_rag02x"), 0f, 0f, 0f, "RAG", 0, 1, 1);
-			iLocal_39 = func_155(uParam0, joaat("p_cigarette_cs01x"), 0f, 0f, 0f, "CIGARETTE", 0, 0, 1);
+			iLocal_157 = func_155(uParam0, joaat("P_WASHBOARD01X"), 3.73538f, 2.82993f, -0.2192f, "WASHBOARD", 0, 1, 1);
+			func_155(uParam0, joaat("P_CS_RAG02X"), 0f, 0f, 0f, "RAG", 0, 1, 1);
+			iLocal_39 = func_155(uParam0, joaat("P_CIGARETTE_CS01X"), 0f, 0f, 0f, "CIGARETTE", 0, 0, 1);
 			func_157(uParam0, "script@vignette@music@susan_and_karen_3@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@susan_and_karen_3@action", 0, 0, 1, 0);
 			func_156(uParam0, "SKAG3AU");
@@ -3846,12 +3846,12 @@ int func_76(var uParam0)
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
-			func_155(uParam0, joaat("p_cigarette_cs01x"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
-			func_155(uParam0, joaat("p_cs_sock01x"), 0f, 0f, 0f, "Sock", 0, 1, 1);
-			iLocal_32 = func_155(uParam0, joaat("p_chair_crate02x"), 1.67959f, -0.624872f, 0.00317383f, 0, 1, 0, 1);
-			iLocal_33 = func_155(uParam0, joaat("p_chair_crate15x"), 0f, 0f, 0f, 0, 1, 0, 1);
-			iLocal_26 = func_155(uParam0, joaat("p_cs_sock01x"), 0f, 0f, 0f, "Sock", 0, 1, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			func_155(uParam0, joaat("P_CIGARETTE_CS01X"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
+			func_155(uParam0, joaat("P_CS_SOCK01X"), 0f, 0f, 0f, "Sock", 0, 1, 1);
+			iLocal_32 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.67959f, -0.624872f, 0.00317383f, 0, 1, 0, 1);
+			iLocal_33 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0f, 0f, 0f, 0, 1, 0, 1);
+			iLocal_26 = func_155(uParam0, joaat("P_CS_SOCK01X"), 0f, 0f, 0f, "Sock", 0, 1, 1);
 			func_157(uParam0, "script@vignette@music@susan_karen_javier_1@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@susan_karen_javier_1@action", 0, 0, 1, 0);
 			func_156(uParam0, "CSNJ1AU");
@@ -3875,11 +3875,11 @@ int func_76(var uParam0)
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
-			func_155(uParam0, joaat("p_cigarette_cs01x"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
-			iLocal_26 = func_155(uParam0, joaat("p_cs_sock01x"), 0f, 0f, 0f, "Sock", 0, 1, 1);
-			iLocal_32 = func_155(uParam0, joaat("p_chair_crate02x"), 1.67959f, -0.624872f, 0.00317383f, 0, 1, 0, 1);
-			iLocal_33 = func_155(uParam0, joaat("p_chair_crate15x"), 0f, 0f, 0f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			func_155(uParam0, joaat("P_CIGARETTE_CS01X"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
+			iLocal_26 = func_155(uParam0, joaat("P_CS_SOCK01X"), 0f, 0f, 0f, "Sock", 0, 1, 1);
+			iLocal_32 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.67959f, -0.624872f, 0.00317383f, 0, 1, 0, 1);
+			iLocal_33 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0f, 0f, 0f, 0, 1, 0, 1);
 			func_156(uParam0, "CSNJ2AU");
 			func_157(uParam0, "script@vignette@music@susan_karen_javier_2@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@susan_karen_javier_2@action", 0, 0, 1, 0);
@@ -3896,8 +3896,8 @@ int func_76(var uParam0)
 			break;
 		case 460:
 			iLocal_22 = func_154(uParam0, 4, 0);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "P_BOTTLEJD01X", 0, 1, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "P_BOTTLEJD01X", 0, 1, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
 			func_163(uParam0, 0.6375f, 1f, 0f, -24.75f, 1f, 1f, 3f, -1612834106, joaat("APMS_COMP_UNCLE"), 1, 1, 1);
 			func_157(uParam0, "script@vignette@music@uncle_1_drunk@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_1_drunk@action", 0, 0, 1, 0);
@@ -3907,8 +3907,8 @@ int func_76(var uParam0)
 			break;
 		case 461:
 			iLocal_22 = func_154(uParam0, 4, 0);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "P_BOTTLEJD01X", 0, 1, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "P_BOTTLEJD01X", 0, 1, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
 			func_163(uParam0, 0.4875f, 1f, 0f, -24.75f, 1f, 1f, 3f, -1612834106, joaat("APMS_COMP_UNCLE"), 1, 1, 1);
 			func_157(uParam0, "script@vignette@music@uncle_1_sober@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_1_sober@action", 0, 0, 1, 0);
@@ -3918,7 +3918,7 @@ int func_76(var uParam0)
 			break;
 		case 462:
 			iLocal_22 = func_154(uParam0, 4, 0);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 			func_156(uParam0, "UNSG2AU");
 			func_157(uParam0, "script@vignette@music@uncle_2@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_2@action", 0, 0, 1, 0);
@@ -3930,8 +3930,8 @@ int func_76(var uParam0)
 			iLocal_17 = func_154(uParam0, 2, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_21 = func_154(uParam0, 19, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			func_156(uParam0, "USNG1AU");
 			func_157(uParam0, "script@vignette@music@uncle_javier_susan_karen_1@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@uncle_javier_susan_karen_1@action", 0, 0, 1, 0);
@@ -3949,8 +3949,8 @@ int func_76(var uParam0)
 		case 464:
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_19 = func_154(uParam0, 17, 0);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42059f, -0.462698f, 0.000679016f, "UNCLE_CRATE", 1, 0, 1);
-			iLocal_31 = func_155(uParam0, joaat("s_crateseat03x"), -1.28888f, 0.763515f, -0.000335693f, "PEARSON_CRATE", 1, 0, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42059f, -0.462698f, 0.000679016f, "UNCLE_CRATE", 1, 0, 1);
+			iLocal_31 = func_155(uParam0, joaat("S_CRATESEAT03X"), -1.28888f, 0.763515f, -0.000335693f, "PEARSON_CRATE", 1, 0, 1);
 			func_156(uParam0, "CUNP1AU");
 			if (!func_164(15))
 			{
@@ -3964,8 +3964,8 @@ int func_76(var uParam0)
 			StringCopy(&cLocal_146, "CUNP1_ART", 24);
 			if (func_164(15))
 			{
-				iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 1, 1);
-				iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "PEARSON_BOTTLE", 0, 1, 1);
+				iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 1, 1);
+				iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "PEARSON_BOTTLE", 0, 1, 1);
 				func_175(uParam0, iLocal_22, 1);
 				func_171(uParam0, iLocal_22, -1f);
 				func_169(uParam0, iLocal_19, 1);
@@ -3976,8 +3976,8 @@ int func_76(var uParam0)
 			}
 			else
 			{
-				iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 0, 1);
-				iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "PEARSON_BOTTLE", 0, 0, 1);
+				iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 0, 1);
+				iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "PEARSON_BOTTLE", 0, 0, 1);
 				func_160(uParam0, iLocal_19, iLocal_36, "p_bottleBeer01x_PH_R_HAND", 0, 0);
 				func_160(uParam0, iLocal_22, iLocal_35, "p_bottleBeer01x_PH_R_HAND", 0, 0);
 			}
@@ -3987,12 +3987,12 @@ int func_76(var uParam0)
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_0", 0, 1, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_1", 0, 1, 1);
-			iLocal_37 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE_2", 0, 1, 1);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE_0", 0, 1, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE_1", 0, 1, 1);
+			iLocal_37 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE_2", 0, 1, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
 			func_156(uParam0, "UNPNSAU");
 			func_157(uParam0, "script@vignette@music@uncle_pearson_karen_javier_1@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@uncle_pearson_karen_javier_1@action", 0, 0, 1, 0);
@@ -4016,12 +4016,12 @@ int func_76(var uParam0)
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01a"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 0, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01a"), 0f, 0f, 0f, "BOTTLE_PEARSON", 0, 0, 1);
-			iLocal_37 = func_155(uParam0, joaat("p_bottlebeer01a"), 0f, 0f, 0f, "BOTTLE_KAREN", 0, 0, 1);
-			iLocal_38 = func_155(uParam0, joaat("p_bottlebeer01a"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 0, 1);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01A"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 0, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01A"), 0f, 0f, 0f, "BOTTLE_PEARSON", 0, 0, 1);
+			iLocal_37 = func_155(uParam0, joaat("P_BOTTLEBEER01A"), 0f, 0f, 0f, "BOTTLE_KAREN", 0, 0, 1);
+			iLocal_38 = func_155(uParam0, joaat("P_BOTTLEBEER01A"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 0, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
 			func_156(uParam0, "CUNS5AU");
 			func_157(uParam0, "script@vignette@music@uncle_pearson_karen_sean_1@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_pearson_karen_sean_1@action", 0, 0, 1, 0);
@@ -4046,12 +4046,12 @@ int func_76(var uParam0)
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 1, 1);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 1, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-			iLocal_25 = func_155(uParam0, joaat("p_bench_log07x"), -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 1, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 1, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_25 = func_155(uParam0, joaat("P_BENCH_LOG07X"), -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			if (!func_164(14))
 			{
 				func_157(uParam0, "script@vignette@music@uncle_pearson_sean_javier_2@base", 1, 1, 0, 0);
@@ -4098,10 +4098,10 @@ int func_76(var uParam0)
 			iLocal_19 = func_154(uParam0, 17, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, -1.5f, "JAVIER_GUITAR", 0, 1, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-			iLocal_25 = func_155(uParam0, joaat("p_bench_log07x"), -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, -1.5f, "JAVIER_GUITAR", 0, 1, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_25 = func_155(uParam0, joaat("P_BENCH_LOG07X"), -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			func_156(uParam0, "USNG3AU");
 			func_157(uParam0, "script@vignette@music@uncle_pearson_sean_javier_3@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@uncle_pearson_sean_javier_3@action", 0, 0, 1, 0);
@@ -4123,11 +4123,11 @@ int func_76(var uParam0)
 		case 469:
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 0, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 0, 1);
-			func_155(uParam0, joaat("p_shotglass01x"), 0f, 0f, 0f, "SHOTGLASS_0_", 0, 0, 1);
-			func_155(uParam0, joaat("p_shotglass01x"), 0f, 0f, 0f, "SHOTGLASS_1_", 0, 0, 1);
-			iLocal_28 = func_155(uParam0, joaat("p_chair_barrel04b"), -0.5845f, -1.3717f, -0.0006f, "BARREL", 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE_UNCLE", 0, 0, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE_SEAN", 0, 0, 1);
+			func_155(uParam0, joaat("P_SHOTGLASS01X"), 0f, 0f, 0f, "SHOTGLASS_0_", 0, 0, 1);
+			func_155(uParam0, joaat("P_SHOTGLASS01X"), 0f, 0f, 0f, "SHOTGLASS_1_", 0, 0, 1);
+			iLocal_28 = func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.5845f, -1.3717f, -0.0006f, "BARREL", 1, 0, 1);
 			func_156(uParam0, "CUNS7");
 			func_157(uParam0, "script@vignette@music@uncle_sean_2@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@uncle_sean_2@action", 0, 0, 1, 0);
@@ -4144,8 +4144,8 @@ int func_76(var uParam0)
 		case 470:
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE^1", 0, 1, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE^1", 0, 1, 1);
 			func_157(uParam0, "script@vignette@music@uncle_and_sean_3@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_and_sean_3@action", 0, 0, 1, 0);
 			func_156(uParam0, "CUNS3AU");
@@ -4161,11 +4161,11 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE_0", 0, 1, 1);
-			func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "BOTTLE_1", 0, 1, 1);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
-			iLocal_23 = func_155(uParam0, joaat("p_chairfolding02x"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
-			iLocal_24 = func_155(uParam0, joaat("p_chair_crate02x"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE_0", 0, 1, 1);
+			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE_1", 0, 1, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
+			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
+			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
 			if (!func_164(14))
 			{
 				func_157(uParam0, "script@vignette@music@uncle_sean_javier_1@base", 1, 1, 0, 0);
@@ -4202,13 +4202,13 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 1, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "SUSAN_BOTTLE", 0, 1, 1);
-			iLocal_37 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "KAREN_BOTTLE", 0, 1, 1);
-			func_155(uParam0, joaat("p_chair_barrel04b"), -0.584518f, -1.37169f, -0.000602722f, "KAREN_BARREL", 1, 0, 1);
-			func_155(uParam0, joaat("p_chair_crate15x"), 0.441177f, 0.966955f, 0.629509f, "UNCLE_CRATE", 1, 0, 1);
-			func_155(uParam0, joaat("s_crateseat03x"), -1.28888f, 0.763515f, -0.000335693f, "SUSAN_CRATE", 1, 0, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 1, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "SUSAN_BOTTLE", 0, 1, 1);
+			iLocal_37 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "KAREN_BOTTLE", 0, 1, 1);
+			func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.584518f, -1.37169f, -0.000602722f, "KAREN_BARREL", 1, 0, 1);
+			func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.441177f, 0.966955f, 0.629509f, "UNCLE_CRATE", 1, 0, 1);
+			func_155(uParam0, joaat("S_CRATESEAT03X"), -1.28888f, 0.763515f, -0.000335693f, "SUSAN_CRATE", 1, 0, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
 			func_156(uParam0, "CUSK1AU");
 			func_157(uParam0, "script@vignette@music@uncle_susan_karen_1@intro_base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_susan_karen_1@action", 0, 0, 1, 0);
@@ -4230,14 +4230,14 @@ int func_76(var uParam0)
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_17 = func_154(uParam0, 2, 0);
-			iLocal_34 = func_155(uParam0, joaat("p_guitar01x"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "KAREN_BOTTLE", 0, 1, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "SUSAN_BOTTLE", 0, 1, 1);
-			iLocal_37 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 1, 1);
-			iLocal_28 = func_155(uParam0, joaat("p_chair_barrel04b"), -0.584518f, -1.37169f, -0.000602722f, 0, 1, 0, 1);
-			iLocal_29 = func_155(uParam0, joaat("p_chair_crate02x"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
-			iLocal_30 = func_155(uParam0, joaat("p_chair_crate15x"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
-			iLocal_31 = func_155(uParam0, joaat("s_crateseat03x"), -1.28888f, 0.763515f, -0.000335693f, 0, 1, 0, 1);
+			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "KAREN_BOTTLE", 0, 1, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "SUSAN_BOTTLE", 0, 1, 1);
+			iLocal_37 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 1, 1);
+			iLocal_28 = func_155(uParam0, joaat("P_CHAIR_BARREL04B"), -0.584518f, -1.37169f, -0.000602722f, 0, 1, 0, 1);
+			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42059f, -0.462698f, 0.000679016f, 0, 1, 0, 1);
+			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
+			iLocal_31 = func_155(uParam0, joaat("S_CRATESEAT03X"), -1.28888f, 0.763515f, -0.000335693f, 0, 1, 0, 1);
 			func_156(uParam0, "CUNS4AU");
 			if (!func_164(15))
 			{
@@ -4290,9 +4290,9 @@ int func_76(var uParam0)
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
 			iLocal_20 = func_154(uParam0, 8, 0);
-			iLocal_35 = func_155(uParam0, joaat("p_bottlejd01x"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 0, 1);
-			iLocal_36 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "KAREN_BOTTLE", 0, 0, 1);
-			iLocal_37 = func_155(uParam0, joaat("p_bottlebeer01x"), 0f, 0f, 0f, "SEAN_BOTTLE", 0, 0, 1);
+			iLocal_35 = func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "UNCLE_BOTTLE", 0, 0, 1);
+			iLocal_36 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "KAREN_BOTTLE", 0, 0, 1);
+			iLocal_37 = func_155(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "SEAN_BOTTLE", 0, 0, 1);
 			func_156(uParam0, "CUNS2");
 			if (!func_164(14))
 			{
@@ -5087,53 +5087,53 @@ int func_115(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("dutch");
+			return joaat("DUTCH");
 		case 1:
-			return joaat("john");
+			return joaat("JOHN");
 		case 2:
-			return joaat("javier");
+			return joaat("JAVIER");
 		case 3:
-			return joaat("bill");
+			return joaat("BILL");
 		case 4:
-			return joaat("uncle");
+			return joaat("UNCLE");
 		case 5:
-			return joaat("hosea");
+			return joaat("HOSEA");
 		case 6:
-			return joaat("micah");
+			return joaat("MICAH");
 		case 7:
-			return joaat("charles");
+			return joaat("CHARLES");
 		case 8:
-			return joaat("sean");
+			return joaat("SEAN");
 		case 9:
-			return joaat("lenny");
+			return joaat("LENNY");
 		case 10:
-			return joaat("kieran");
+			return joaat("KIERAN");
 		case 11:
-			return joaat("sadie");
+			return joaat("SADIE");
 		case 12:
 			return 0;
 		case 13:
-			return joaat("abigail");
+			return joaat("ABIGAIL");
 		case 14:
-			return joaat("jack");
+			return joaat("JACK");
 		case 15:
-			return joaat("marybeth");
+			return joaat("MARYBETH");
 		case 16:
-			return joaat("molly");
+			return joaat("MOLLY");
 		case 17:
-			return joaat("pearson");
+			return joaat("PEARSON");
 		case 18:
-			return joaat("strauss");
+			return joaat("STRAUSS");
 		case 19:
 			return joaat("GRIMSHAW");
 		case 20:
-			return joaat("karen");
+			return joaat("KAREN");
 		case 21:
-			return joaat("swanson");
+			return joaat("SWANSON");
 		case 22:
-			return joaat("tilly");
+			return joaat("TILLY");
 		case 23:
-			return joaat("trelawny");
+			return joaat("TRELAWNY");
 		case 26:
 			return 0;
 		default:
@@ -5156,7 +5156,7 @@ int func_117()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -7889,7 +7889,7 @@ void func_240(var uParam0, int iParam1, char* sParam2)
 	{
 		return;
 	}
-	func_346(func_52(uParam0, iParam1), sParam2, joaat("speech_params_standard"), 0, 1, 0, 0, 1);
+	func_346(func_52(uParam0, iParam1), sParam2, joaat("SPEECH_PARAMS_STANDARD"), 0, 1, 0, 0, 1);
 }
 
 bool func_241(int iParam0, int iParam1)
@@ -8528,7 +8528,7 @@ int func_281()
 
 int func_282()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("objectExchange")))
+	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("OBJECTEXCHANGE")))
 	{
 		return 1;
 	}
@@ -9705,7 +9705,7 @@ int func_319()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -10975,13 +10975,13 @@ int func_379(int iParam0)
 		INTERIOR::_GET_INTERIOR_INFO(iParam0, &uVar0, &iVar3);
 		switch (iVar3)
 		{
-			case joaat("l_14_cave_int"):
-			case joaat("gap_mine_int"):
+			case joaat("L_14_CAVE_INT"):
+			case joaat("GAP_MINE_INT"):
 			case -1269216817:
-			case joaat("m05_bearcave_main"):
-			case joaat("elh_seacaves_int"):
-			case joaat("bea_01_int"):
-			case joaat("agu_fus_cave_int"):
+			case joaat("M05_BEARCAVE_MAIN"):
+			case joaat("ELH_SEACAVES_INT"):
+			case joaat("BEA_01_INT"):
+			case joaat("AGU_FUS_CAVE_INT"):
 			case 1633500362:
 				return 1;
 		}
@@ -10999,19 +10999,19 @@ int func_380(int iParam0)
 		INTERIOR::_GET_INTERIOR_INFO(iParam0, &uVar0, &iVar3);
 		switch (iVar3)
 		{
-			case joaat("q0304_tunnel_ent"):
-			case joaat("j_10p_tunnel_1a_int"):
-			case joaat("bac_tunnelcurve_int"):
-			case joaat("q0304_tunnel_int"):
-			case joaat("l_08_train_tunnel2_int"):
-			case joaat("bac_tunnelexit_int"):
-			case joaat("bac_tunnelent_int"):
-			case joaat("j_14_tunnel01_int"):
+			case joaat("Q0304_TUNNEL_ENT"):
+			case joaat("J_10P_TUNNEL_1A_INT"):
+			case joaat("BAC_TUNNELCURVE_INT"):
+			case joaat("Q0304_TUNNEL_INT"):
+			case joaat("L_08_TRAIN_TUNNEL2_INT"):
+			case joaat("BAC_TUNNELEXIT_INT"):
+			case joaat("BAC_TUNNELENT_INT"):
+			case joaat("J_14_TUNNEL01_INT"):
 			case 653987431:
-			case joaat("bac_tunnel_int"):
-			case joaat("hea_tunnel_01"):
-			case joaat("hea_tunnel_02"):
-			case joaat("q0304_tunnel_exit"):
+			case joaat("BAC_TUNNEL_INT"):
+			case joaat("HEA_TUNNEL_01"):
+			case joaat("HEA_TUNNEL_02"):
+			case joaat("Q0304_TUNNEL_EXIT"):
 			case 1911907177:
 				return 1;
 		}
@@ -13062,187 +13062,187 @@ int func_424(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("cs_sistercalderon"):
-		case joaat("cs_strsheriff_01"):
-		case joaat("cs_mud2bigguy"):
-		case joaat("cs_rainsfall"):
-		case joaat("cs_penelopebraithwaite"):
-		case joaat("cs_swampweirdosonny"):
-		case joaat("cs_unidusterjail_01"):
-		case joaat("cs_iangray"):
-		case joaat("cs_tinyhermit"):
-		case joaat("cs_timothydonahue"):
-		case joaat("cs_princessisabeau"):
-		case joaat("cs_leviticuscornwall"):
-		case joaat("cs_didsbury"):
-		case joaat("cs_featherstonchambers"):
-		case joaat("cs_featsofstrength"):
-		case joaat("cs_bandpianist"):
-		case joaat("cs_escapeartistassistant"):
-		case joaat("cs_garethbraithwaite"):
-		case joaat("cs_creoleguy"):
-		case joaat("cs_leighgray"):
-		case joaat("cs_strawberryoutlaw_02"):
-		case joaat("cs_gloria"):
-		case joaat("cs_warvet"):
-		case joaat("cs_jockgray"):
-		case joaat("cs_davidgeddes"):
-		case joaat("cs_guidomartelli"):
-		case joaat("cs_duncangeddes"):
-		case joaat("cs_dusterinformant_01"):
-		case joaat("cs_pinkertongoon"):
-		case joaat("cs_mickey"):
-		case joaat("cs_twinbrother_02"):
-		case joaat("cs_hestonjameson"):
-		case joaat("cs_strdeputy_01"):
-		case joaat("cs_abe"):
-		case joaat("cs_oddfellowspinhead"):
-		case joaat("cs_swampfreak"):
-		case joaat("cs_mradler"):
-		case joaat("cs_aberdeenpigfarmer"):
-		case joaat("cs_hobartcrawley"):
-		case joaat("cs_formyartbigwoman"):
-		case joaat("cs_norrisforsythe"):
-		case joaat("cs_jules"):
-		case joaat("cs_tomdickens"):
-		case joaat("cs_geraldbraithwaite"):
-		case joaat("cs_paytah"):
-		case joaat("cs_cancan_03"):
-		case joaat("cs_grizzledjon"):
-		case joaat("cs_wrobel"):
-		case joaat("cs_meredith"):
-		case joaat("cs_creepyoldlady"):
-		case joaat("cs_nbxreceptionist_01"):
-		case joaat("cs_nbxpolicechiefformal"):
-		case joaat("cs_cornwalltrainconductor"):
-		case joaat("cs_rhodeputy_01"):
-		case joaat("cs_drmalcolmmacintosh"):
-		case joaat("cs_leon"):
-		case joaat("cs_sheriffowens"):
-		case joaat("cs_sddoctor_01"):
-		case joaat("cs_scottgray"):
-		case joaat("cs_cancan_01"):
-		case joaat("cs_creolecaptain"):
-		case joaat("cs_brontesbutler"):
-		case joaat("cs_janson"):
-		case joaat("cs_forgivenwife_01"):
-		case joaat("cs_tigerhandler"):
-		case joaat("cs_frenchartist"):
-		case joaat("cs_genstorymale"):
-		case joaat("cs_clay"):
-		case joaat("cs_strdeputy_02"):
-		case joaat("cs_famousgunslinger_03"):
-		case joaat("cs_bivcoachdriver"):
-		case joaat("cs_braithwaitebutler"):
-		case joaat("cs_cleet"):
-		case joaat("cs_joe"):
-		case joaat("cs_slavecatcher"):
-		case joaat("cs_braithwaitemaid"):
-		case joaat("cs_twingroupie_02"):
-		case joaat("cs_mrsgeddes"):
-		case joaat("cs_samaritan"):
-		case joaat("cs_exconfedinformant"):
-		case joaat("cs_frenchman_01"):
-		case joaat("cs_bandsinger"):
-		case joaat("cs_baptiste"):
-		case joaat("cs_angusgeddes"):
-		case joaat("cs_mysteriousstranger"):
-		case joaat("cs_famousgunslinger_01"):
-		case joaat("cs_bartholomewbraithwaite"):
-		case joaat("cs_mixedracekid"):
-		case joaat("cs_beatenupcaptain"):
-		case joaat("cs_edgarross"):
-		case joaat("cs_twingroupie_01"):
-		case joaat("cs_mrsweathers"):
-		case joaat("cs_jamie"):
-		case joaat("cs_karensjohn_01"):
-		case joaat("cs_thomasdown"):
-		case joaat("cs_obediahhinton"):
-		case joaat("cs_agnesdowd"):
-		case joaat("cs_cavehermit"):
-		case joaat("cs_brynntildon"):
-		case joaat("cs_germanson"):
-		case joaat("cs_brendacrawley"):
-		case joaat("cs_colfavours"):
-		case joaat("cs_rhodeskidnapvictim"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("cs_cancan_04"):
-		case joaat("cs_towncrier"):
-		case joaat("cs_famousgunslinger_04"):
-		case joaat("cs_dalemaroney"):
-		case joaat("cs_angryhusband"):
-		case joaat("cs_lillianpowell"):
-		case joaat("cs_andershelgerson"):
-		case joaat("cs_poorjoe"):
-		case joaat("cs_braithwaiteservant"):
-		case joaat("cs_brotherdorkins"):
-		case joaat("cs_albertmason"):
-		case joaat("cs_famousgunslinger_05"):
-		case joaat("cs_balloonoperator"):
-		case joaat("cs_albertcakeesquire"):
-		case joaat("cs_mrsfellows"):
-		case joaat("cs_cancanman_01"):
-		case joaat("cs_poisonwellshaman"):
-		case joaat("cs_cancan_02"):
-		case joaat("cs_meredithsmother"):
-		case joaat("cs_angel"):
-		case joaat("cs_archerfordham"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("cs_chelonianmaster"):
-		case joaat("cs_twinbrother_01"):
-		case joaat("cs_germandaughter"):
-		case joaat("cs_lemiuxassistant"):
-		case joaat("cs_creoledoctor"):
-		case joaat("cs_crackpotrobot"):
-		case joaat("cs_bandbassist"):
-		case joaat("cs_genstoryfemale"):
-		case joaat("cs_marylinton"):
-		case joaat("cs_valprayingman"):
-		case joaat("cs_johnthebaptisingmadman"):
-		case joaat("cs_mrs_calhoun"):
-		case joaat("cs_theodorelevin"):
-		case joaat("cs_nicholastimmins"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("cs_dinoboneslady"):
-		case joaat("cs_beaugray"):
-		case joaat("cs_strawberryoutlaw_01"):
-		case joaat("cs_crackpotinventor"):
-		case joaat("cs_hercule"):
-		case joaat("cs_gavin"):
-		case joaat("cs_levisimon"):
-		case joaat("cs_londonderryson"):
-		case joaat("cs_captainmonroe"):
-		case joaat("cs_famousgunslinger_02"):
-		case joaat("cs_mrslondonderry"):
-		case joaat("cs_soothsayer"):
-		case joaat("cs_tavishgray"):
-		case joaat("cs_joebutler"):
-		case joaat("cs_banddrummer"):
-		case joaat("cs_lillymillet"):
-		case joaat("cs_ansel_atherton"):
-		case joaat("cs_rhodeputy_02"):
-		case joaat("cs_edmundlowry"):
-		case joaat("cs_disguisedduster_02"):
-		case joaat("cs_magnifico"):
-		case joaat("cs_artappraiser"):
-		case joaat("cs_forgivenhusband_01"):
-		case joaat("cs_reverendfortheringham"):
-		case joaat("cs_daveycallender"):
-		case joaat("cs_desmond"):
-		case joaat("cs_adamgray"):
-		case joaat("cs_jimcalloway"):
-		case joaat("cs_sdsaloondrunk_01"):
-		case joaat("cs_nbxdrunk"):
-		case joaat("cs_germanmother"):
-		case joaat("cs_ringmaster"):
-		case joaat("cs_lucanapoli"):
-		case joaat("cs_rhodesassistant"):
-		case joaat("cs_aberdeensister"):
-		case joaat("cs_nbxexecuted"):
-		case joaat("cs_famousgunslinger_06"):
-		case joaat("cs_johnweathers"):
-		case joaat("cs_professorbell"):
-		case joaat("cs_rhodessaloonbouncer"):
+		case joaat("CS_SISTERCALDERON"):
+		case joaat("CS_STRSHERIFF_01"):
+		case joaat("CS_MUD2BIGGUY"):
+		case joaat("CS_RAINSFALL"):
+		case joaat("CS_PENELOPEBRAITHWAITE"):
+		case joaat("CS_SWAMPWEIRDOSONNY"):
+		case joaat("CS_UNIDUSTERJAIL_01"):
+		case joaat("CS_IANGRAY"):
+		case joaat("CS_TINYHERMIT"):
+		case joaat("CS_TIMOTHYDONAHUE"):
+		case joaat("CS_PRINCESSISABEAU"):
+		case joaat("CS_LEVITICUSCORNWALL"):
+		case joaat("CS_DIDSBURY"):
+		case joaat("CS_FEATHERSTONCHAMBERS"):
+		case joaat("CS_FEATSOFSTRENGTH"):
+		case joaat("CS_BANDPIANIST"):
+		case joaat("CS_ESCAPEARTISTASSISTANT"):
+		case joaat("CS_GARETHBRAITHWAITE"):
+		case joaat("CS_CREOLEGUY"):
+		case joaat("CS_LEIGHGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_02"):
+		case joaat("CS_GLORIA"):
+		case joaat("CS_WARVET"):
+		case joaat("CS_JOCKGRAY"):
+		case joaat("CS_DAVIDGEDDES"):
+		case joaat("CS_GUIDOMARTELLI"):
+		case joaat("CS_DUNCANGEDDES"):
+		case joaat("CS_DUSTERINFORMANT_01"):
+		case joaat("CS_PINKERTONGOON"):
+		case joaat("CS_MICKEY"):
+		case joaat("CS_TWINBROTHER_02"):
+		case joaat("CS_HESTONJAMESON"):
+		case joaat("CS_STRDEPUTY_01"):
+		case joaat("CS_ABE"):
+		case joaat("CS_ODDFELLOWSPINHEAD"):
+		case joaat("CS_SWAMPFREAK"):
+		case joaat("CS_MRADLER"):
+		case joaat("CS_ABERDEENPIGFARMER"):
+		case joaat("CS_HOBARTCRAWLEY"):
+		case joaat("CS_FORMYARTBIGWOMAN"):
+		case joaat("CS_NORRISFORSYTHE"):
+		case joaat("CS_JULES"):
+		case joaat("CS_TOMDICKENS"):
+		case joaat("CS_GERALDBRAITHWAITE"):
+		case joaat("CS_PAYTAH"):
+		case joaat("CS_CANCAN_03"):
+		case joaat("CS_GRIZZLEDJON"):
+		case joaat("CS_WROBEL"):
+		case joaat("CS_MEREDITH"):
+		case joaat("CS_CREEPYOLDLADY"):
+		case joaat("CS_NBXRECEPTIONIST_01"):
+		case joaat("CS_NBXPOLICECHIEFFORMAL"):
+		case joaat("CS_CORNWALLTRAINCONDUCTOR"):
+		case joaat("CS_RHODEPUTY_01"):
+		case joaat("CS_DRMALCOLMMACINTOSH"):
+		case joaat("CS_LEON"):
+		case joaat("CS_SHERIFFOWENS"):
+		case joaat("CS_SDDOCTOR_01"):
+		case joaat("CS_SCOTTGRAY"):
+		case joaat("CS_CANCAN_01"):
+		case joaat("CS_CREOLECAPTAIN"):
+		case joaat("CS_BRONTESBUTLER"):
+		case joaat("CS_JANSON"):
+		case joaat("CS_FORGIVENWIFE_01"):
+		case joaat("CS_TIGERHANDLER"):
+		case joaat("CS_FRENCHARTIST"):
+		case joaat("CS_GENSTORYMALE"):
+		case joaat("CS_CLAY"):
+		case joaat("CS_STRDEPUTY_02"):
+		case joaat("CS_FAMOUSGUNSLINGER_03"):
+		case joaat("CS_BIVCOACHDRIVER"):
+		case joaat("CS_BRAITHWAITEBUTLER"):
+		case joaat("CS_CLEET"):
+		case joaat("CS_JOE"):
+		case joaat("CS_SLAVECATCHER"):
+		case joaat("CS_BRAITHWAITEMAID"):
+		case joaat("CS_TWINGROUPIE_02"):
+		case joaat("CS_MRSGEDDES"):
+		case joaat("CS_SAMARITAN"):
+		case joaat("CS_EXCONFEDINFORMANT"):
+		case joaat("CS_FRENCHMAN_01"):
+		case joaat("CS_BANDSINGER"):
+		case joaat("CS_BAPTISTE"):
+		case joaat("CS_ANGUSGEDDES"):
+		case joaat("CS_MYSTERIOUSSTRANGER"):
+		case joaat("CS_FAMOUSGUNSLINGER_01"):
+		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
+		case joaat("CS_MIXEDRACEKID"):
+		case joaat("CS_BEATENUPCAPTAIN"):
+		case joaat("CS_EDGARROSS"):
+		case joaat("CS_TWINGROUPIE_01"):
+		case joaat("CS_MRSWEATHERS"):
+		case joaat("CS_JAMIE"):
+		case joaat("CS_KARENSJOHN_01"):
+		case joaat("CS_THOMASDOWN"):
+		case joaat("CS_OBEDIAHHINTON"):
+		case joaat("CS_AGNESDOWD"):
+		case joaat("CS_CAVEHERMIT"):
+		case joaat("CS_BRYNNTILDON"):
+		case joaat("CS_GERMANSON"):
+		case joaat("CS_BRENDACRAWLEY"):
+		case joaat("CS_COLFAVOURS"):
+		case joaat("CS_RHODESKIDNAPVICTIM"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("CS_CANCAN_04"):
+		case joaat("CS_TOWNCRIER"):
+		case joaat("CS_FAMOUSGUNSLINGER_04"):
+		case joaat("CS_DALEMARONEY"):
+		case joaat("CS_ANGRYHUSBAND"):
+		case joaat("CS_LILLIANPOWELL"):
+		case joaat("CS_ANDERSHELGERSON"):
+		case joaat("CS_POORJOE"):
+		case joaat("CS_BRAITHWAITESERVANT"):
+		case joaat("CS_BROTHERDORKINS"):
+		case joaat("CS_ALBERTMASON"):
+		case joaat("CS_FAMOUSGUNSLINGER_05"):
+		case joaat("CS_BALLOONOPERATOR"):
+		case joaat("CS_ALBERTCAKEESQUIRE"):
+		case joaat("CS_MRSFELLOWS"):
+		case joaat("CS_CANCANMAN_01"):
+		case joaat("CS_POISONWELLSHAMAN"):
+		case joaat("CS_CANCAN_02"):
+		case joaat("CS_MEREDITHSMOTHER"):
+		case joaat("CS_ANGEL"):
+		case joaat("CS_ARCHERFORDHAM"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("CS_CHELONIANMASTER"):
+		case joaat("CS_TWINBROTHER_01"):
+		case joaat("CS_GERMANDAUGHTER"):
+		case joaat("CS_LEMIUXASSISTANT"):
+		case joaat("CS_CREOLEDOCTOR"):
+		case joaat("CS_CRACKPOTROBOT"):
+		case joaat("CS_BANDBASSIST"):
+		case joaat("CS_GENSTORYFEMALE"):
+		case joaat("CS_MARYLINTON"):
+		case joaat("CS_VALPRAYINGMAN"):
+		case joaat("CS_JOHNTHEBAPTISINGMADMAN"):
+		case joaat("CS_MRS_CALHOUN"):
+		case joaat("CS_THEODORELEVIN"):
+		case joaat("CS_NICHOLASTIMMINS"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("CS_DINOBONESLADY"):
+		case joaat("CS_BEAUGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_01"):
+		case joaat("CS_CRACKPOTINVENTOR"):
+		case joaat("CS_HERCULE"):
+		case joaat("CS_GAVIN"):
+		case joaat("CS_LEVISIMON"):
+		case joaat("CS_LONDONDERRYSON"):
+		case joaat("CS_CAPTAINMONROE"):
+		case joaat("CS_FAMOUSGUNSLINGER_02"):
+		case joaat("CS_MRSLONDONDERRY"):
+		case joaat("CS_SOOTHSAYER"):
+		case joaat("CS_TAVISHGRAY"):
+		case joaat("CS_JOEBUTLER"):
+		case joaat("CS_BANDDRUMMER"):
+		case joaat("CS_LILLYMILLET"):
+		case joaat("CS_ANSEL_ATHERTON"):
+		case joaat("CS_RHODEPUTY_02"):
+		case joaat("CS_EDMUNDLOWRY"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
+		case joaat("CS_MAGNIFICO"):
+		case joaat("CS_ARTAPPRAISER"):
+		case joaat("CS_FORGIVENHUSBAND_01"):
+		case joaat("CS_REVERENDFORTHERINGHAM"):
+		case joaat("CS_DAVEYCALLENDER"):
+		case joaat("CS_DESMOND"):
+		case joaat("CS_ADAMGRAY"):
+		case joaat("CS_JIMCALLOWAY"):
+		case joaat("CS_SDSALOONDRUNK_01"):
+		case joaat("CS_NBXDRUNK"):
+		case joaat("CS_GERMANMOTHER"):
+		case joaat("CS_RINGMASTER"):
+		case joaat("CS_LUCANAPOLI"):
+		case joaat("CS_RHODESASSISTANT"):
+		case joaat("CS_ABERDEENSISTER"):
+		case joaat("CS_NBXEXECUTED"):
+		case joaat("CS_FAMOUSGUNSLINGER_06"):
+		case joaat("CS_JOHNWEATHERS"):
+		case joaat("CS_PROFESSORBELL"):
+		case joaat("CS_RHODESSALOONBOUNCER"):
 			return 1;
 		default:
 			break;
@@ -13287,7 +13287,7 @@ void func_426(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -13880,13 +13880,13 @@ int func_450(int iParam0, vector3 vParam1, int iParam4, int iParam5, bool bParam
 	switch (((*Global_1360165)[iParam0 /*1157*/])->f_3)
 	{
 		case 0:
-			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("def_comp_brain")))
+			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("DEF_COMP_BRAIN")))
 			{
-				SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(joaat("def_comp_brain"));
+				SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(joaat("DEF_COMP_BRAIN"));
 			}
 			((*Global_1360165)[iParam0 /*1157*/])->f_3 = 1;
 		case 1:
-			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("def_comp_brain")))
+			if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("DEF_COMP_BRAIN")))
 			{
 				return 0;
 			}
@@ -17641,50 +17641,50 @@ void func_517(int iParam0, int iParam1, float fParam2)
 	}
 	switch (iVar1)
 	{
-		case joaat("g_m_m_uniduster_03"):
-		case joaat("u_m_m_unidusterhenchman_03"):
-		case joaat("g_m_m_uniduster_04"):
-		case joaat("u_m_m_unidusterhenchman_02"):
-		case joaat("g_m_m_uniduster_02"):
-		case joaat("u_m_m_fatduster_01"):
-		case joaat("u_m_m_unidusterhenchman_01"):
-		case joaat("g_m_m_uniduster_01"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("g_f_m_uniduster_01"):
-		case joaat("u_m_m_unidusterleader_01"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("g_m_m_uniduster_05"):
-		case joaat("cs_disguisedduster_02"):
+		case joaat("G_M_M_UNIDUSTER_03"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_03"):
+		case joaat("G_M_M_UNIDUSTER_04"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_02"):
+		case joaat("G_M_M_UNIDUSTER_02"):
+		case joaat("U_M_M_FATDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERHENCHMAN_01"):
+		case joaat("G_M_M_UNIDUSTER_01"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("G_F_M_UNIDUSTER_01"):
+		case joaat("U_M_M_UNIDUSTERLEADER_01"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("G_M_M_UNIDUSTER_05"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("g_m_y_uniexconfeds_02"):
-		case joaat("g_m_y_uniexconfeds_01"):
-		case joaat("g_m_o_uniexconfeds_01"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("u_m_m_uniexconfedsbounty_01"):
+		case joaat("G_M_Y_UNIEXCONFEDS_02"):
+		case joaat("G_M_Y_UNIEXCONFEDS_01"):
+		case joaat("G_M_O_UNIEXCONFEDS_01"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("U_M_M_UNIEXCONFEDSBOUNTY_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.375f);
 			break;
-		case joaat("g_m_m_uniinbred_01"):
+		case joaat("G_M_M_UNIINBRED_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.7f, 0.875f);
 			break;
-		case joaat("u_m_m_bht_skinnersearch"):
-		case joaat("g_m_m_unimountainmen_01"):
-		case joaat("u_m_m_bht_skinnerbrother"):
+		case joaat("U_M_M_BHT_SKINNERSEARCH"):
+		case joaat("G_M_M_UNIMOUNTAINMEN_01"):
+		case joaat("U_M_M_BHT_SKINNERBROTHER"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.4f, 0.6f);
 			break;
-		case joaat("g_m_m_uniranchers_01"):
-		case joaat("cs_laramie"):
+		case joaat("G_M_M_UNIRANCHERS_01"):
+		case joaat("CS_LARAMIE"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.25f);
 			break;
-		case joaat("u_m_m_bht_banditoshack"):
-		case joaat("u_m_m_bht_banditomine"):
-		case joaat("g_m_m_unibanditos_01"):
+		case joaat("U_M_M_BHT_BANDITOSHACK"):
+		case joaat("U_M_M_BHT_BANDITOMINE"):
+		case joaat("G_M_M_UNIBANDITOS_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.3f, 0.5f);
 			break;
-		case joaat("u_m_m_nbxbrontegoon_01"):
-		case joaat("u_m_m_nbxbrontesecform_01"):
-		case joaat("u_m_m_nbxbronteasc_01"):
-		case joaat("g_m_m_unibrontegoons_01"):
+		case joaat("U_M_M_NBXBRONTEGOON_01"):
+		case joaat("U_M_M_NBXBRONTESECFORM_01"):
+		case joaat("U_M_M_NBXBRONTEASC_01"):
+		case joaat("G_M_M_UNIBRONTEGOONS_01"):
 			*fParam2 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0.125f, 0.125f);
 			break;
 		default:
@@ -17951,18 +17951,18 @@ struct<5> func_523(int iParam0, bool bParam1, int iParam2)
 	Var0.f_4 = 1084182731;
 	switch (func_535(iParam0))
 	{
-		case joaat("clothing"):
+		case joaat("CLOTHING"):
 			if (!INVENTORY::_0x780C5B9AE2819807(iParam0, 1034665895))
 			{
-				Var0 = { func_527(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
+				Var0 = { func_527(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
 			}
 			else
 			{
 				Var0.f_4 = 1034665895;
 			}
 			break;
-		case joaat("weapon"):
+		case joaat("WEAPON"):
 			Var0 = { func_536(bParam1) };
 			if (iParam2 && func_537(iParam0, 1))
 			{
@@ -17989,10 +17989,10 @@ struct<5> func_523(int iParam0, bool bParam1, int iParam2)
 				Var0.f_4 = 1728382685; /* GXTEntry: "Right" */
 			}
 			break;
-		case joaat("horse"):
+		case joaat("HORSE"):
 			Var0.f_4 = 1782082944;
 			break;
-		case joaat("Emote"):
+		case joaat("EMOTE"):
 			Var0.f_4 = -813824107;
 			Var0 = { func_538(bParam1) };
 			switch (func_539(iParam0))
@@ -18011,7 +18011,7 @@ struct<5> func_523(int iParam0, bool bParam1, int iParam2)
 					break;
 			}
 			break;
-		case joaat("Upgrade"):
+		case joaat("UPGRADE"):
 			if (func_540(iParam0, -1823706425))
 			{
 				Var0 = { func_527(joaat("KIT_CAMP"), Var0, 1084182731, bParam1) };
@@ -18019,8 +18019,8 @@ struct<5> func_523(int iParam0, bool bParam1, int iParam2)
 			}
 			else if (func_540(iParam0, -1483207246))
 			{
-				Var0 = { func_527(joaat("Wardrobe"), Var0, 1034665895, bParam1) };
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("Wardrobe"));
+				Var0 = { func_527(joaat("WARDROBE"), Var0, 1034665895, bParam1) };
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("WARDROBE"));
 			}
 			else if (INVENTORY::_0x780C5B9AE2819807(iParam0, -1311702610))
 			{
@@ -18050,7 +18050,7 @@ struct<5> func_523(int iParam0, bool bParam1, int iParam2)
 			}
 			else
 			{
-				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("character"));
+				Var0.f_4 = INVENTORY::_0x6452B1D357D81742(iParam0, joaat("CHARACTER"));
 				if (Var0.f_4 == 0)
 				{
 				}
@@ -19146,7 +19146,7 @@ bool func_533(int iParam0)
 
 struct<4> func_534(bool bParam0)
 {
-	return func_527(joaat("character"), func_549(), -1591664384, bParam0);
+	return func_527(joaat("CHARACTER"), func_549(), -1591664384, bParam0);
 }
 
 int func_535(int iParam0)

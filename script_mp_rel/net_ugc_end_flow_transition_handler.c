@@ -44,7 +44,7 @@ void __EntryFunction__()
 {
 	fLocal_29 = 1f;
 	fLocal_30 = 1f;
-	iLocal_31 = joaat("w_binocular_inner01");
+	iLocal_31 = joaat("W_BINOCULAR_INNER01");
 	if (bScriptParam_0)
 	{
 	}
@@ -257,13 +257,13 @@ void func_3(bool bParam0)
 
 void func_4()
 {
-	if (UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) || UIAPPS::_IS_APP_ACTIVE(joaat("pause_menu")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("PAUSE_MENU")) || UIAPPS::_IS_APP_ACTIVE(joaat("PAUSE_MENU")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("pause_menu"));
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("PAUSE_MENU"));
 	}
-	if (UIAPPS::_IS_APP_RUNNING(joaat("abilities")) || UIAPPS::_IS_APP_ACTIVE(joaat("abilities")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("ABILITIES")) || UIAPPS::_IS_APP_ACTIVE(joaat("ABILITIES")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("abilities"));
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("ABILITIES"));
 	}
 	if (func_25())
 	{
@@ -309,7 +309,7 @@ void func_5()
 	{
 		uVar1 = -1;
 		func_31(Global_3407872, &uVar1);
-		iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(joaat("net_ugc_end_flow_transition_online"), &uVar1, 1, 14335);
+		iVar2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(joaat("NET_UGC_END_FLOW_TRANSITION_ONLINE"), &uVar1, 1, 14335);
 		if (SCRIPTS::_DOES_THREAD_EXIST(iVar2))
 		{
 			iLocal_35 = 1;
@@ -514,7 +514,7 @@ int func_20(var uParam0, bool bParam1, bool bParam2)
 
 bool func_21()
 {
-	return SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("net_ugc_end_flow_transition_online")) > 0;
+	return SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("NET_UGC_END_FLOW_TRANSITION_ONLINE")) > 0;
 }
 
 void func_22()
@@ -564,7 +564,7 @@ void func_28()
 
 void func_29()
 {
-	SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(joaat("net_ugc_end_flow_transition_online"));
+	SCRIPTS::REQUEST_SCRIPT_WITH_NAME_HASH(joaat("NET_UGC_END_FLOW_TRANSITION_ONLINE"));
 }
 
 int func_30()
@@ -574,7 +574,7 @@ int func_30()
 	int iVar2;
 	int iVar3;
 
-	if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("net_ugc_end_flow_transition_online")))
+	if (!SCRIPTS::HAS_SCRIPT_WITH_NAME_HASH_LOADED(joaat("NET_UGC_END_FLOW_TRANSITION_ONLINE")))
 	{
 		return 0;
 	}

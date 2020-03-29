@@ -874,7 +874,7 @@ int func_31()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -1815,7 +1815,7 @@ void func_58(int iParam0, bool bParam1)
 	}
 	func_8(iParam0, 32);
 	func_116(Global_1935630, 8192);
-	func_118(func_117(-1532769513, joaat("areas")), 1);
+	func_118(func_117(-1532769513, joaat("AREAS")), 1);
 	switch (func_104(iParam0))
 	{
 		case 0:

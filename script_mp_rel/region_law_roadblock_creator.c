@@ -58,8 +58,8 @@ void __EntryFunction__()
 	fLocal_16 = 1f;
 	iLocal_18 = 1;
 	iLocal_28 = joaat("WORLD_HUMAN_PEE");
-	iLocal_33 = joaat("policewagon01x");
-	iLocal_34 = joaat("s_campfire02_amb");
+	iLocal_33 = joaat("POLICEWAGON01X");
+	iLocal_34 = joaat("S_CAMPFIRE02_AMB");
 	uScriptParam_0 = uScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(514))
 	{
@@ -268,22 +268,22 @@ void func_6()
 			switch (iVar0)
 			{
 				case 0:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 1:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 2:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 3:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 				case 5:
-					iLocal_32 = joaat("s_m_m_fussarhenchman_01");
+					iLocal_32 = joaat("S_M_M_FUSSARHENCHMAN_01");
 					break;
 				default:
-					iLocal_32 = joaat("s_m_m_ambientlawrural_01");
+					iLocal_32 = joaat("S_M_M_AMBIENTLAWRURAL_01");
 					break;
 			}
 			iLocal_18 = 2;
@@ -2187,15 +2187,15 @@ int func_74(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bayounwa"):
+		case joaat("BAYOUNWA"):
 			return 0;
-		case joaat("bigvalley"):
+		case joaat("BIGVALLEY"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GREATPLAINS"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -2203,17 +2203,17 @@ int func_74(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("HEARTLANDS"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TALLTREES"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RIOBRAVO"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -2231,7 +2231,7 @@ void func_75(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

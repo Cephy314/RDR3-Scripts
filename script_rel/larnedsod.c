@@ -1232,7 +1232,7 @@ void func_60()
 	}
 	if (func_104(func_52(735), 0) && !bLocal_29)
 	{
-		PED::_0x24C82EF607105FAA(func_52(735), joaat("guarddog"));
+		PED::_0x24C82EF607105FAA(func_52(735), joaat("GUARDDOG"));
 		bLocal_29 = true;
 	}
 	else if (!func_104(func_52(735), 0) && bLocal_29)
@@ -1455,7 +1455,7 @@ void func_71(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_123(Global_1935630, 8192);
-	func_125(func_124(-1532769513, joaat("areas")), 1);
+	func_125(func_124(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1800,14 +1800,14 @@ int func_78(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -2635,8 +2635,8 @@ int func_103(var uParam0, vector3 vParam1, int iParam4, int iParam5)
 		}
 		return 1;
 	}
-	STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("scr_distance_smoke"));
-	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("scr_distance_smoke")))
+	STREAMING::REQUEST_NAMED_PTFX_ASSET(joaat("SCR_DISTANCE_SMOKE"));
+	if (STREAMING::HAS_NAMED_PTFX_ASSET_LOADED(joaat("SCR_DISTANCE_SMOKE")))
 	{
 		if (!func_147(uParam0->f_1, 8))
 		{
@@ -3699,7 +3699,7 @@ void func_135(var uParam0, int iParam1)
 	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(*uParam0))
 	{
 		GRAPHICS::STOP_PARTICLE_FX_LOOPED(*uParam0, false);
-		STREAMING::REMOVE_NAMED_PTFX_ASSET(joaat("scr_distance_smoke"));
+		STREAMING::REMOVE_NAMED_PTFX_ASSET(joaat("SCR_DISTANCE_SMOKE"));
 		func_156(&(uParam0->f_1), 4);
 	}
 }
@@ -4042,7 +4042,7 @@ int func_158()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

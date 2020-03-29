@@ -194,7 +194,7 @@ int func_2()
 				{
 					vLocal_39 = { func_25(func_24()) };
 					vLocal_39.f_2 = (vLocal_39.z + 1.1f);
-					iLocal_38 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vLocal_39, 0f, 0f, 0f, fLocal_42, false, 2);
+					iLocal_38 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vLocal_39, 0f, 0f, 0f, fLocal_42, false, 2);
 				}
 				bLocal_34 = true;
 				func_26(4);
@@ -220,15 +220,15 @@ int func_2()
 						ANIMSCENE::SET_ANIM_SCENE_ORIGIN(iLocal_44, vVar4, 0f, 0f, 0f, 2);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(Global_35, false, true);
 						ANIMSCENE::START_ANIM_SCENE(iLocal_44);
-						func_29(Global_35, "MINIGAME_PLAYER_CAMP_CALLOVER_PLAYERS_POKER", joaat("speech_params_add_blip"), 0, 1, 0, 0, 1);
+						func_29(Global_35, "MINIGAME_PLAYER_CAMP_CALLOVER_PLAYERS_POKER", joaat("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
 						func_30(2, iLocal_44);
 						func_31(vLocal_23, 4f, 0);
-						iVar7 = func_32(vLocal_23, joaat("p_bowl04x"), 4f, 1);
+						iVar7 = func_32(vLocal_23, joaat("P_BOWL04X"), 4f, 1);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar7))
 						{
 							OBJECT::DELETE_OBJECT(&iVar7);
 						}
-						iVar7 = func_32(vLocal_23, joaat("p_bowl04x_stew"), 4f, 1);
+						iVar7 = func_32(vLocal_23, joaat("P_BOWL04X_STEW"), 4f, 1);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar7))
 						{
 							OBJECT::DELETE_OBJECT(&iVar7);
@@ -266,7 +266,7 @@ int func_2()
 			{
 				if (!AUDIO::IS_ANY_SPEECH_PLAYING(Global_35))
 				{
-					if (func_29(&(iLocal_15[2]), "MINIGAME_COMPANION_CALLOVER_RESPONSE", joaat("speech_params_force_frontend"), Global_35, 1, 0, 0, 1))
+					if (func_29(&(iLocal_15[2]), "MINIGAME_COMPANION_CALLOVER_RESPONSE", joaat("SPEECH_PARAMS_FORCE_FRONTEND"), Global_35, 1, 0, 0, 1))
 					{
 						bLocal_36 = true;
 					}
@@ -2377,24 +2377,24 @@ int func_91(int iParam0, int iParam1)
 {
 	if (iParam1 == 1 && iParam0 == 2)
 	{
-		return joaat("poker_sp");
+		return joaat("POKER_SP");
 	}
 	switch (iParam0)
 	{
 		case 2:
-			return joaat("poker_sp");
+			return joaat("POKER_SP");
 		case 0:
-			return joaat("bjack_sp");
+			return joaat("BJACK_SP");
 		case 1:
-			return joaat("dominoes_sp");
+			return joaat("DOMINOES_SP");
 		case 3:
-			return joaat("fillet_sp");
+			return joaat("FILLET_SP");
 		case 4:
-			return joaat("milking_cow");
+			return joaat("MILKING_COW");
 		case 5:
-			return joaat("es_clean_stalls");
+			return joaat("ES_CLEAN_STALLS");
 		case 6:
-			return joaat("es_activity_building");
+			return joaat("ES_ACTIVITY_BUILDING");
 		default:
 			break;
 	}
@@ -4797,7 +4797,7 @@ int func_208(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("prop_human_seat_chair")))
+			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
 			{
 				return 1;
 			}
@@ -4810,7 +4810,7 @@ int func_208(int iParam0, int iParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == joaat("TaskMovePoker")))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(iParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(iParam1) && TASK::_0xCACC2F9D994504B7(iParam1) == joaat("TASKMOVEPOKER")))
 		{
 			return 0;
 		}
@@ -4902,7 +4902,7 @@ void func_210(int iParam0)
 	Var13 = { Var5 };
 	StringConCat(&Var13, "_DESC", 64);
 	UILOG::_UILOG_ADD_ENTRY_HASH(1, iVar1, vVar2, ((*Global_1835011)[iParam0 /*74*/])->f_26, MISC::GET_HASH_KEY(&Var13), iVar21);
-	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, ((*Global_1835011)[iParam0 /*74*/])->f_26, joaat("toast_log_blips"));
+	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(1, iVar1, ((*Global_1835011)[iParam0 /*74*/])->f_26, joaat("TOAST_LOG_BLIPS"));
 }
 
 void func_211(int iParam0)
@@ -4949,7 +4949,7 @@ int func_213(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
 	return 1;
 }
 
@@ -8879,7 +8879,7 @@ float func_322()
 
 float func_323()
 {
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 0f;
 	}

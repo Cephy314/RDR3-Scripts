@@ -525,8 +525,8 @@ void func_25(var uParam0)
 {
 	int iVar0;
 
-	uParam0->f_267 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), *(uParam0->f_267.f_4[uParam0->f_603 /*26*/]), (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_3, 51.2f, true, 2);
-	uParam0->f_267.f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_6, (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_9, 51.2f, func_37((uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_25, 1), 2);
+	uParam0->f_267 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), *(uParam0->f_267.f_4[uParam0->f_603 /*26*/]), (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_3, 51.2f, true, 2);
+	uParam0->f_267.f_1 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_6, (uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_9, 51.2f, func_37((uParam0->f_267.f_4[uParam0->f_603 /*26*/])->f_25, 1), 2);
 	if (PED::IS_PED_ON_MOUNT(Global_1225638->f_8))
 	{
 		uParam0->f_613 = PED::GET_MOUNT(Global_1225638->f_8);

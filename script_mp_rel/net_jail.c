@@ -338,8 +338,8 @@ void __EntryFunction__()
 	iLocal_251 = joaat("INPUT_JUMP");
 	iLocal_252 = joaat("INPUT_RELOAD");
 	iLocal_353 = 673107768;
-	iLocal_359 = joaat("s_m_m_ambientlawrural_01");
-	iLocal_360 = joaat("s_inv_moneyclip01x");
+	iLocal_359 = joaat("S_M_M_AMBIENTLAWRURAL_01");
+	iLocal_360 = joaat("S_INV_MONEYCLIP01X");
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 	while (!func_1())
@@ -355,7 +355,7 @@ void __EntryFunction__()
 			{
 				if (func_2(&uLocal_373))
 				{
-					func_5(func_3(joaat("jail_time")), func_4(&uLocal_373));
+					func_5(func_3(joaat("JAIL_TIME")), func_4(&uLocal_373));
 					func_6(&uLocal_373);
 				}
 				if (!MISC::IS_BIT_SET(Local_182.f_3, 0))
@@ -498,7 +498,7 @@ void func_10()
 							func_26(1);
 						}
 					}
-					func_5(func_3(joaat("busted")), 1);
+					func_5(func_3(joaat("BUSTED")), 1);
 					func_27(1);
 					func_28(Local_182.f_17, 0f, 1);
 					if (!UNLOCK::_UNLOCK_IS_UNLOCKED(1444561974))
@@ -615,7 +615,7 @@ void func_10()
 					if (func_56())
 					{
 						Global_1275565->f_2.f_4 = 0;
-						func_57(joaat("motionstate_walk"), 2000, 0, 1, 0, Local_182.f_13, 0, 0);
+						func_57(joaat("MOTIONSTATE_WALK"), 2000, 0, 1, 0, Local_182.f_13, 0, 0);
 						func_44(500);
 						Global_1275565->f_2.f_1 = -1;
 						func_58(0, -1343026476);
@@ -751,8 +751,8 @@ void func_17(var uParam0, float fParam1)
 
 void func_18()
 {
-	Global_1901929->f_741 = func_69(joaat("Jail"), joaat("NET_JAIL_BRIBE_AMOUNT_MULTIPLIER"), 0.5f, "NET_JAIL_BRIBE_AMOUNT_MULTIPLIER");
-	Global_1901929->f_741.f_1 = func_69(joaat("Jail"), -589363792, 2f, "NET_JAIL_BRIBE_REDUCTION_TIME");
+	Global_1901929->f_741 = func_69(joaat("JAIL"), joaat("NET_JAIL_BRIBE_AMOUNT_MULTIPLIER"), 0.5f, "NET_JAIL_BRIBE_AMOUNT_MULTIPLIER");
+	Global_1901929->f_741.f_1 = func_69(joaat("JAIL"), -589363792, 2f, "NET_JAIL_BRIBE_REDUCTION_TIME");
 	func_70(Global_1901929->f_741, 0f, 1f);
 	func_70(Global_1901929->f_741.f_1, 1f, 10f);
 }
@@ -833,7 +833,7 @@ void func_24()
 			Local_182.f_14 = { 2904.273f, 1314.341f, 43.9358f };
 			Local_182.f_20 = 69.26f;
 			Local_182.f_5 = 1657401918;
-			Local_182.f_21 = joaat("p_foldedblanket02x");
+			Local_182.f_21 = joaat("P_FOLDEDBLANKET02X");
 			Local_182.f_17 = { 2902.887f, 1316.057f, 44.559f };
 			(Local_215[0 /*9*/])->f_1 = { 2902.022f, 1314.107f, 45.2794f };
 			(Local_215[0 /*9*/])->f_4 = { -7.0278f, 0f, -47.8387f };
@@ -856,7 +856,7 @@ void func_24()
 			Local_182.f_14 = { -3619.148f, -2604.207f, -14.3516f };
 			Local_182.f_20 = -65f;
 			Local_182.f_5 = -59369632;
-			Local_182.f_21 = joaat("p_abe_cabinet01");
+			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -3616.951f, -2604.411f, -13.6566f };
 			(Local_215[0 /*9*/])->f_1 = { -3618.892f, -2601.67f, -13.1624f };
 			(Local_215[0 /*9*/])->f_4 = { -4.5768f, 0f, -163.6841f };
@@ -879,7 +879,7 @@ void func_24()
 			Local_182.f_14 = { -763.5278f, -1262.461f, 43.0233f };
 			Local_182.f_20 = -90f;
 			Local_182.f_5 = -2127191462;
-			Local_182.f_21 = joaat("p_abe_cabinet01");
+			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -761.6234f, -1263.575f, 43.7253f };
 			(Local_215[0 /*9*/])->f_1 = { -761.3599f, -1262.154f, 44.124f };
 			(Local_215[0 /*9*/])->f_4 = { -2.1078f, -0.6279f, 141.409f };
@@ -902,7 +902,7 @@ void func_24()
 			Local_182.f_14 = { 1357.334f, -1302.453f, 76.7602f };
 			Local_182.f_20 = 70f;
 			Local_182.f_5 = 1878514758;
-			Local_182.f_21 = joaat("p_pillow03x");
+			Local_182.f_21 = joaat("P_PILLOW03X");
 			Local_182.f_17 = { 1355.037f, -1301.035f, 77.4625f };
 			(Local_215[0 /*9*/])->f_1 = { 1357.638f, -1303.693f, 78.306f };
 			(Local_215[0 /*9*/])->f_4 = { -5.9084f, 0f, 39.6998f };
@@ -925,7 +925,7 @@ void func_24()
 			Local_182.f_14 = { 2502.43f, -1307.856f, 47.9533f };
 			Local_182.f_20 = 0f;
 			Local_182.f_5 = 1711767580;
-			Local_182.f_21 = joaat("p_pillow01x");
+			Local_182.f_21 = joaat("P_PILLOW01X");
 			Local_182.f_17 = { 2503.544f, -1305.952f, 48.6754f };
 			(Local_215[0 /*9*/])->f_1 = { 2505.7f, -1307.3f, 49.2f };
 			(Local_215[0 /*9*/])->f_4 = { -5.6f, 0f, 72.2f };
@@ -948,7 +948,7 @@ void func_24()
 			Local_182.f_14 = { -1812.01f, -351.921f, 160.4684f };
 			Local_182.f_20 = -25f;
 			Local_182.f_5 = 1207903970;
-			Local_182.f_21 = joaat("p_pillow01x");
+			Local_182.f_21 = joaat("P_PILLOW01X");
 			Local_182.f_17 = { -1810.196f, -350.6658f, 161.1676f };
 			(Local_215[0 /*9*/])->f_1 = { -1809.129f, -350.83f, 161.5122f };
 			(Local_215[0 /*9*/])->f_4 = { -1.9754f, 0.4731f, 105.8348f };
@@ -971,7 +971,7 @@ void func_24()
 			Local_182.f_14 = { -5529.914f, -2925.074f, -2.3601f };
 			Local_182.f_20 = -65f;
 			Local_182.f_5 = 831345624;
-			Local_182.f_21 = joaat("p_abe_cabinet01");
+			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -5529.914f, -2925.074f, -2.3601f };
 			(Local_215[0 /*9*/])->f_1 = { -5528.064f, -2923.999f, -1.1571f };
 			(Local_215[0 /*9*/])->f_4 = { -2.6775f, 0f, 164.663f };
@@ -994,7 +994,7 @@ void func_24()
 			Local_182.f_14 = { -272.0521f, 808.2583f, 118.3685f };
 			Local_182.f_20 = -170f;
 			Local_182.f_5 = 193903155;
-			Local_182.f_21 = joaat("p_abe_cabinet01");
+			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -272.0521f, 808.2583f, 118.3685f };
 			(Local_215[0 /*9*/])->f_1 = { -275.3474f, 807.1092f, 119.2897f };
 			(Local_215[0 /*9*/])->f_4 = { 0.6224f, 0f, -96.0022f };
@@ -1149,7 +1149,7 @@ int func_37()
 	{
 		return 1;
 	}
-	if (Local_182.f_21 == joaat("p_abe_cabinet01"))
+	if (Local_182.f_21 == joaat("P_ABE_CABINET01"))
 	{
 		MISC::SET_BIT(&(Local_182.f_3), 12);
 		return 1;
@@ -1893,7 +1893,7 @@ void func_57(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 	fVar0 = 1f;
 	switch (iParam0)
 	{
-		case joaat("motionstate_idle"):
+		case joaat("MOTIONSTATE_IDLE"):
 		case 1140525470:
 			fVar0 = 0f;
 			break;
@@ -1901,14 +1901,14 @@ void func_57(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 		case 1823606944:
 			fVar0 = 1.5f;
 			break;
-		case joaat("motionstate_run"):
+		case joaat("MOTIONSTATE_RUN"):
 		case 898879241:
 			fVar0 = 2f;
 			break;
 		case -1115154469:
 			fVar0 = 3f;
 			break;
-		case joaat("motionstate_walk"):
+		case joaat("MOTIONSTATE_WALK"):
 		case 147004056:
 			break;
 	}
@@ -3337,34 +3337,34 @@ int func_135(int iParam0, int iParam1, var uParam2)
 
 	Var0 = -178401592;
 	Var0.f_1 = iParam0;
-	Var0.f_2 = joaat("name");
+	Var0.f_2 = joaat("NAME");
 	Var0.f_3 = 1;
 	Var0.f_4 = iParam1;
 	DATAFILE::_0x91DED5DD64BB2691(&Var0);
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("name")))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("NAME")))
 	{
 		*uParam2 = iParam0;
 		uParam2->f_9 = iParam1;
 		StringCopy(&(uParam2->f_1), "", 64);
 		StringIntConCat(&(uParam2->f_1), iVar7, 64);
-		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("type"));
+		DATAFILE::_0x44B3A36933AC009C(&iVar7, &Var0, joaat("TYPE"));
 		uParam2->f_10.f_3 = func_181(iVar7);
 		uParam2->f_14.f_3 = uParam2->f_10.f_3;
 		uParam2->f_18.f_3 = uParam2->f_10.f_3;
 		switch (uParam2->f_10.f_3)
 		{
 			case 0:
-				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("default")))
+				if (!DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_10), &Var0, joaat("DEFAULT")))
 				{
 				}
 				break;
 			case 1:
-				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("default")))
+				if (!DATAFILE::_0xB2B42607F7867576(&(uParam2->f_10.f_1), &Var0, joaat("DEFAULT")))
 				{
 				}
 				break;
 			case 2:
-				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("default")))
+				if (!DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_10.f_2), &Var0, joaat("DEFAULT")))
 				{
 				}
 				break;
@@ -3372,25 +3372,25 @@ int func_135(int iParam0, int iParam1, var uParam2)
 		switch (uParam2->f_14.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, joaat("min"));
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_14), &Var0, joaat("MIN"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, joaat("min"));
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_14.f_1), &Var0, joaat("MIN"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, joaat("min"));
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_14.f_2), &Var0, joaat("MIN"));
 				break;
 		}
 		switch (uParam2->f_18.f_3)
 		{
 			case 0:
-				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("max"));
+				DATAFILE::_0x52FC26D2D2FC2987(&(uParam2->f_18), &Var0, joaat("MAX"));
 				break;
 			case 1:
-				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("max"));
+				DATAFILE::_0xB2B42607F7867576(&(uParam2->f_18.f_1), &Var0, joaat("MAX"));
 				break;
 			case 2:
-				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("max"));
+				DATAFILE::_0xA63CD20F19B961AB(&(uParam2->f_18.f_2), &Var0, joaat("MAX"));
 				break;
 		}
 		switch (uParam2->f_10.f_3)
@@ -3869,7 +3869,7 @@ int func_153(int iParam0, int iParam1)
 		case 109:
 			return -1948083328;
 		case 110:
-			return joaat("slot_unarmed");
+			return joaat("SLOT_UNARMED");
 		case 111:
 			return 1314299724;
 		case 112:
@@ -4387,13 +4387,13 @@ int func_181(int iParam0)
 
 	switch (iParam0)
 	{
-		case joaat("int"):
+		case joaat("INT"):
 			iVar0 = 0;
 			break;
-		case joaat("float"):
+		case joaat("FLOAT"):
 			iVar0 = 1;
 			break;
-		case joaat("bool"):
+		case joaat("BOOL"):
 			iVar0 = 2;
 			break;
 	}
@@ -4490,11 +4490,11 @@ int func_189(int iParam0)
 		case 14:
 			return -355466967 /* GXTEntry: "Lasso Ammo" */;
 		case 15:
-			return joaat("ammo_molotov");
+			return joaat("AMMO_MOLOTOV");
 		case 16:
 			return joaat("AMMO_MOLOTOV_VOLATILE");
 		case 17:
-			return joaat("ammo_pistol");
+			return joaat("AMMO_PISTOL");
 		case 18:
 			return joaat("AMMO_PISTOL_EXPRESS");
 		case 19:
@@ -4524,7 +4524,7 @@ int func_189(int iParam0)
 		case 31:
 			return joaat("AMMO_REVOLVER_SPLIT_POINT");
 		case 32:
-			return joaat("ammo_rifle");
+			return joaat("AMMO_RIFLE");
 		case 33:
 			return joaat("AMMO_RIFLE_EXPRESS");
 		case 34:
@@ -4534,7 +4534,7 @@ int func_189(int iParam0)
 		case 36:
 			return joaat("AMMO_RIFLE_SPLIT_POINT");
 		case 37:
-			return joaat("ammo_shotgun");
+			return joaat("AMMO_SHOTGUN");
 		case 38:
 			return joaat("AMMO_SHOTGUN_BUCKSHOT_INCENDIARY");
 		case 39:
@@ -4673,7 +4673,7 @@ void func_194(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

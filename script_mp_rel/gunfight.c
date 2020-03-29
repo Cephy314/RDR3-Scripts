@@ -828,7 +828,7 @@ int func_44(int iParam0)
 		func_73();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_26, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_Travel"), joaat("MPAC_Travel_012")))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_TRAVEL"), joaat("MPAC_TRAVEL_012")))
 		{
 			switch (iLocal_26)
 			{
@@ -905,15 +905,15 @@ int func_47()
 
 int func_48()
 {
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_mission_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_MISSION_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_deathmatch_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_DEATHMATCH_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_race_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_RACE_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
@@ -1008,10 +1008,10 @@ int func_53(bool bParam0)
 	int iVar6[4];
 	int iVar11;
 
-	iVar6[0] = joaat("s_lootablemoneybox");
-	iVar6[1] = joaat("p_goldnugget01x");
-	iVar6[2] = joaat("s_inv_pocketwatch01x");
-	iVar6[3] = joaat("s_jewlerybox_sm_fancy01x");
+	iVar6[0] = joaat("S_LOOTABLEMONEYBOX");
+	iVar6[1] = joaat("P_GOLDNUGGET01X");
+	iVar6[2] = joaat("S_INV_POCKETWATCH01X");
+	iVar6[3] = joaat("S_JEWLERYBOX_SM_FANCY01X");
 	if (func_83(&uVar1, &iVar6, 4, 1583.83f, 2193.08f, 324.18f, 5f) > 0)
 	{
 		iVar11 = 0;
@@ -1329,7 +1329,7 @@ void func_70(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_108(Global_1939178, 16384);
-	func_110(func_109(-1532769513, joaat("areas")), 1);
+	func_110(func_109(-1532769513, joaat("AREAS")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -1596,14 +1596,14 @@ int func_72(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -1900,7 +1900,7 @@ int func_74(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }

@@ -821,7 +821,7 @@ void func_27(int iParam0)
 	func_58(2, 2057841001, 0, 0);
 	if (func_59())
 	{
-		PERSCHAR::_0x187D65F3AEC5D679(joaat("emr_son1"), "EmeraldRanch/Emr_Son1");
+		PERSCHAR::_0x187D65F3AEC5D679(joaat("EMR_SON1"), "EmeraldRanch/Emr_Son1");
 		func_57(4, 598, bLocal_214, iParam0, bLocal_214, 0, 44, -1082130432 /* Float: -1f */, 0, 0);
 	}
 	func_60(220516644, 1);
@@ -2154,7 +2154,7 @@ void func_79(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_174(Global_1935630, 8192);
-	func_176(func_175(-1532769513, joaat("areas")), 1);
+	func_176(func_175(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -2499,14 +2499,14 @@ int func_86(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -5077,39 +5077,39 @@ int func_152(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("cart02"):
-		case joaat("wagon03x"):
-		case joaat("buggy03"):
-		case joaat("coach5"):
-		case joaat("wagon05x"):
-		case joaat("supplywagon"):
-		case joaat("logwagon"):
-		case joaat("coach6"):
-		case joaat("stagecoach006x"):
-		case joaat("cart03"):
-		case joaat("buggy01"):
-		case joaat("buggy02"):
-		case joaat("oilwagon01x"):
-		case joaat("stagecoach005x"):
-		case joaat("cart01"):
-		case joaat("cart04"):
-		case joaat("stagecoach003x"):
-		case joaat("cart08"):
-		case joaat("wagon02x"):
-		case joaat("coach3"):
-		case joaat("cart07"):
-		case joaat("coach4"):
-		case joaat("wagondairy01x"):
-		case joaat("cart06"):
-		case joaat("cart05"):
-		case joaat("utilliwag"):
-		case joaat("wagon06x"):
-		case joaat("chuckwagon000x"):
-		case joaat("stagecoach002x"):
-		case joaat("coach2"):
-		case joaat("chuckwagon002x"):
-		case joaat("wagon04x"):
-		case joaat("stagecoach001x"):
+		case joaat("CART02"):
+		case joaat("WAGON03X"):
+		case joaat("BUGGY03"):
+		case joaat("COACH5"):
+		case joaat("WAGON05X"):
+		case joaat("SUPPLYWAGON"):
+		case joaat("LOGWAGON"):
+		case joaat("COACH6"):
+		case joaat("STAGECOACH006X"):
+		case joaat("CART03"):
+		case joaat("BUGGY01"):
+		case joaat("BUGGY02"):
+		case joaat("OILWAGON01X"):
+		case joaat("STAGECOACH005X"):
+		case joaat("CART01"):
+		case joaat("CART04"):
+		case joaat("STAGECOACH003X"):
+		case joaat("CART08"):
+		case joaat("WAGON02X"):
+		case joaat("COACH3"):
+		case joaat("CART07"):
+		case joaat("COACH4"):
+		case joaat("WAGONDAIRY01X"):
+		case joaat("CART06"):
+		case joaat("CART05"):
+		case joaat("UTILLIWAG"):
+		case joaat("WAGON06X"):
+		case joaat("CHUCKWAGON000X"):
+		case joaat("STAGECOACH002X"):
+		case joaat("COACH2"):
+		case joaat("CHUCKWAGON002X"):
+		case joaat("WAGON04X"):
+		case joaat("STAGECOACH001X"):
 			return 1;
 		default:
 			break;
@@ -6153,21 +6153,21 @@ void func_187(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("town_secrets_sd_trelawny")) > 0)
+			if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("TOWN_SECRETS_SD_TRELAWNY")) > 0)
 			{
-				SCRIPTS::_0x7423F7835770F619(joaat("town_secrets_sd_trelawny"));
+				SCRIPTS::_0x7423F7835770F619(joaat("TOWN_SECRETS_SD_TRELAWNY"));
 			}
 			break;
 		case 2:
-			if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("town_secrets_er_daughter")) > 0)
+			if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("TOWN_SECRETS_ER_DAUGHTER")) > 0)
 			{
-				SCRIPTS::_0x7423F7835770F619(joaat("town_secrets_er_daughter"));
+				SCRIPTS::_0x7423F7835770F619(joaat("TOWN_SECRETS_ER_DAUGHTER"));
 			}
 			break;
 		case 3:
-			if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("town_secrets_val_moira")) > 0)
+			if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("TOWN_SECRETS_VAL_MOIRA")) > 0)
 			{
-				SCRIPTS::_0x7423F7835770F619(joaat("town_secrets_val_moira"));
+				SCRIPTS::_0x7423F7835770F619(joaat("TOWN_SECRETS_VAL_MOIRA"));
 			}
 			break;
 	}
@@ -6439,10 +6439,10 @@ Vector3 func_203(var uParam0)
 		iVar2 = MISC::GET_HASH_KEY(sVar1);
 		switch (iVar2)
 		{
-			case joaat("0832_s_m_m_trainstationworker_01_white_01"):
+			case joaat("0832_S_M_M_TRAINSTATIONWORKER_01_WHITE_01"):
 				uParam0->f_37 = "0832_TRAINWORKER";
 				return func_274("EMRH_TSW3SICK");
-			case joaat("0834_s_m_m_trainstationworker_01_white_03"):
+			case joaat("0834_S_M_M_TRAINSTATIONWORKER_01_WHITE_03"):
 				uParam0->f_37 = "0834_TRAINWORKER";
 				return func_274("EMRH_TSW1SICK");
 			default:
@@ -7301,7 +7301,7 @@ int func_252()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}
@@ -7824,7 +7824,7 @@ int func_276()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -8354,7 +8354,7 @@ void func_311()
 			func_358(8);
 		}
 	}
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("generic_wagon_fence_core")) > 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("GENERIC_WAGON_FENCE_CORE")) > 0)
 	{
 		func_358(4);
 	}

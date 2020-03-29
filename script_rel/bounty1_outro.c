@@ -125,7 +125,7 @@
 
 void __EntryFunction__()
 {
-	iLocal_3 = joaat("u_m_m_bht_benedictallbright");
+	iLocal_3 = joaat("U_M_M_BHT_BENEDICTALLBRIGHT");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(555))
 	{
 		func_1(&Local_111);

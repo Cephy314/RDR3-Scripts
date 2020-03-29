@@ -898,13 +898,13 @@ void func_46()
 	{
 		if (!Global_1934765->f_296)
 		{
-			MAP::_0x1392105DA88BBFFB(joaat("Exterior_ThievesLandingBoat"), -1350f, -2300f, 0, 0);
+			MAP::_0x1392105DA88BBFFB(joaat("EXTERIOR_THIEVESLANDINGBOAT"), -1350f, -2300f, 0, 0);
 			Global_1934765->f_296 = 1;
 		}
 	}
 	else if (Global_1934765->f_296)
 	{
-		MAP::_0xE057FEA9A22EB3EE(joaat("Exterior_ThievesLandingBoat"));
+		MAP::_0xE057FEA9A22EB3EE(joaat("EXTERIOR_THIEVESLANDINGBOAT"));
 		Global_1934765->f_296 = 0;
 	}
 }
@@ -1190,7 +1190,7 @@ void func_62(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_104(Global_1935630, 8192);
-	func_106(func_105(-1532769513, joaat("areas")), 1);
+	func_106(func_105(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1535,14 +1535,14 @@ int func_69(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -4180,7 +4180,7 @@ int func_127()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

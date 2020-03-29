@@ -28,7 +28,7 @@ void __EntryFunction__()
 	fLocal_16 = 1f;
 	func_1();
 	func_2();
-	ENTITY::CREATE_MODEL_HIDE(3366.87f, -680.8071f, 41.6795f, 1f, joaat("ann_jail_main_door_01"), true);
+	ENTITY::CREATE_MODEL_HIDE(3366.87f, -680.8071f, 41.6795f, 1f, joaat("ANN_JAIL_MAIN_DOOR_01"), true);
 	bVar0 = true;
 	while (bVar0)
 	{
@@ -150,7 +150,7 @@ int func_4(bool bParam0, bool bParam1)
 
 void func_5()
 {
-	ENTITY::REMOVE_MODEL_HIDE(3366.87f, -680.8071f, 41.6795f, 1f, joaat("ann_jail_main_door_01"), 0);
+	ENTITY::REMOVE_MODEL_HIDE(3366.87f, -680.8071f, 41.6795f, 1f, joaat("ANN_JAIL_MAIN_DOOR_01"), 0);
 }
 
 void func_6(int iParam0, int iParam1, bool bParam2)

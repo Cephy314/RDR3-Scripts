@@ -145,11 +145,11 @@ void func_8(var uParam0)
 	{
 		func_15(uParam0, 1, 0);
 	}
-	if (!UIAPPS::_IS_APP_ACTIVE(joaat("hub")))
+	if (!UIAPPS::_IS_APP_ACTIVE(joaat("HUB")))
 	{
 		return;
 	}
-	bVar0 = UIAPPS::_IS_APP_RUNNING(joaat("hub"));
+	bVar0 = UIAPPS::_IS_APP_RUNNING(joaat("HUB"));
 	if (*uParam0 != bVar0)
 	{
 		*uParam0 = bVar0;
@@ -165,7 +165,7 @@ void func_9(var uParam0)
 	int iVar0;
 	int iVar1;
 
-	iVar0 = UIAPPS::_0x96FD694FE5BE55DC(joaat("hub"));
+	iVar0 = UIAPPS::_0x96FD694FE5BE55DC(joaat("HUB"));
 	iVar1 = func_16(uParam0);
 	if (iVar0 != iVar1)
 	{
@@ -203,7 +203,7 @@ int func_11(int iParam0, int iParam1)
 		case 0:
 			return 0;
 		case 1:
-			return joaat("hub");
+			return joaat("HUB");
 		default:
 			break;
 	}
@@ -221,7 +221,7 @@ int func_12(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case joaat("hub"):
+		case joaat("HUB"):
 			return func_21(uParam0);
 	}
 	return 0;
@@ -263,7 +263,7 @@ void func_17(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case joaat("hub"):
+		case joaat("HUB"):
 			func_26(uParam0);
 			break;
 	}
@@ -273,7 +273,7 @@ void func_18(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case joaat("hub"):
+		case joaat("HUB"):
 			func_27(uParam0);
 			break;
 	}
@@ -283,7 +283,7 @@ void func_19(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case joaat("hub"):
+		case joaat("HUB"):
 			func_28(uParam0);
 			break;
 	}
@@ -293,7 +293,7 @@ void func_20(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case joaat("hub"):
+		case joaat("HUB"):
 			func_29(uParam0);
 			break;
 	}
@@ -1059,7 +1059,7 @@ int func_74(var uParam0, var uParam1, char[4] cParam2, char[4] cParam3, char[4] 
 	(*uParam0)[0] = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER(*uParam1, &cParam2);
 	(*uParam0)[1] = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(uParam0[0], 440050042, *uParam10);
 	(*uParam0)[2] = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(uParam0[0], 1058850005, uParam10->f_1);
-	(*uParam0)[3] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(uParam0[0], joaat("enabled"), uParam10->f_2);
+	(*uParam0)[3] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(uParam0[0], joaat("ENABLED"), uParam10->f_2);
 	(*uParam0)[4] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(uParam0[0], 1024435631, uParam10->f_3);
 	(*uParam0)[5] = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(uParam0[0], 596676017, uParam10->f_4);
 	return 1;
@@ -1086,7 +1086,7 @@ int func_76(var uParam0, char[4] cParam1)
 	}
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 440050042, *cParam1);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT_BY_HASH(*uParam0, 1058850005, cParam1->f_1);
-	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, joaat("enabled"), cParam1->f_2);
+	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, joaat("ENABLED"), cParam1->f_2);
 	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 1024435631, cParam1->f_3);
 	DATABINDING::_0xBFC83DA249BEFCC9(*uParam0, 596676017, cParam1->f_4);
 	return 1;

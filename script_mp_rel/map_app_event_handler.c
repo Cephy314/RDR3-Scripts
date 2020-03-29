@@ -58,7 +58,7 @@ void __EntryFunction__()
 					func_5(&Var0, &Var4);
 					switch (Var0.f_2)
 					{
-						case joaat("zone"):
+						case joaat("ZONE"):
 							Var4.f_4 = { Var0 };
 							Var4 = { Var0 };
 							switch (Var0)
@@ -74,7 +74,7 @@ void __EntryFunction__()
 							}
 							Var4.f_37 = 1;
 							break;
-						case joaat("Blip"):
+						case joaat("BLIP"):
 							Var4 = { Var0 };
 							switch (Var0)
 							{
@@ -165,7 +165,7 @@ void func_5(int iParam0, var uParam1)
 {
 	switch (iParam0->f_2)
 	{
-		case joaat("district"):
+		case joaat("DISTRICT"):
 			switch (*iParam0)
 			{
 				case -1740156697:
@@ -192,7 +192,7 @@ void func_5(int iParam0, var uParam1)
 					break;
 			}
 			break;
-		case joaat("town"):
+		case joaat("TOWN"):
 			switch (*iParam0)
 			{
 				case -1740156697:
@@ -309,7 +309,7 @@ int func_10(var uParam0)
 		if (!uParam0->f_28)
 		{
 			uParam0->f_38 = 0;
-			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), joaat("show_info"));
+			UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("MAP"), joaat("SHOW_INFO"));
 			return 1;
 		}
 	}
@@ -429,7 +429,7 @@ void func_14(int iParam0, var uParam1)
 			func_5(&Var0, uParam1);
 			switch (Var0.f_2)
 			{
-				case joaat("zone"):
+				case joaat("ZONE"):
 					uParam1->f_4 = { Var0 };
 					*uParam1 = { Var0 };
 					switch (Var0)
@@ -442,7 +442,7 @@ void func_14(int iParam0, var uParam1)
 							break;
 					}
 					break;
-				case joaat("Blip"):
+				case joaat("BLIP"):
 					*uParam1 = { Var0 };
 					switch (Var0)
 					{
@@ -459,12 +459,12 @@ void func_14(int iParam0, var uParam1)
 							break;
 					}
 					break;
-				case joaat("card"):
+				case joaat("CARD"):
 					if (Var0 == -1203660660)
 					{
 						if (func_46(uParam1))
 						{
-							UIAPPS::_CLOSE_APP_BY_HASH(joaat("pause_menu"));
+							UIAPPS::_CLOSE_APP_BY_HASH(joaat("PAUSE_MENU"));
 						}
 					}
 					break;
@@ -531,15 +531,15 @@ int func_19(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bayounwa"):
+		case joaat("BAYOUNWA"):
 			return 0;
-		case joaat("bigvalley"):
+		case joaat("BIGVALLEY"):
 			return 1;
 		case 1308232528:
 			return 2;
 		case 1835499550:
 			return 3;
-		case joaat("greatplains"):
+		case joaat("GREATPLAINS"):
 			return 4;
 		case -120156735:
 			return 6;
@@ -547,17 +547,17 @@ int func_19(int iParam0)
 			return 7;
 		case -512529193:
 			return 8;
-		case joaat("heartlands"):
+		case joaat("HEARTLANDS"):
 			return 9;
 		case 178647645:
 			return 10;
-		case joaat("scarlettmeadows"):
+		case joaat("SCARLETTMEADOWS"):
 			return 11;
-		case joaat("talltrees"):
+		case joaat("TALLTREES"):
 			return 12;
 		case -2066240242:
 			return 13;
-		case joaat("riobravo"):
+		case joaat("RIOBRAVO"):
 			return 14;
 		case -108848014:
 			return 15;
@@ -573,13 +573,13 @@ int func_20(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("annesburg"):
+		case joaat("ANNESBURG"):
 			return 83;
 		case joaat("ARMADILLO"):
 			return 127;
-		case joaat("beechershope"):
+		case joaat("BEECHERSHOPE"):
 			return 39;
-		case joaat("blackwater"):
+		case joaat("BLACKWATER"):
 			return 40;
 		case 1778899666:
 			return 99;
@@ -587,37 +587,37 @@ int func_20(int iParam0)
 			return 87;
 		case 1862420670:
 			return 101;
-		case joaat("cornwall"):
+		case joaat("CORNWALL"):
 			return 70;
 		case -473051294:
 			return 74;
-		case joaat("lagras"):
+		case joaat("LAGRAS"):
 			return 3;
 		case 1463094051:
 			return 116;
-		case joaat("rhodes"):
+		case joaat("RHODES"):
 			return 111;
 		case -765540529:
 			return 5;
 		case 2147354003:
 			return 33;
-		case joaat("strawberry"):
+		case joaat("STRAWBERRY"):
 			return 26;
-		case joaat("tumbleweed"):
+		case joaat("TUMBLEWEED"):
 			return 121;
-		case joaat("valentine"):
+		case joaat("VALENTINE"):
 			return 81;
-		case joaat("vanhorn"):
+		case joaat("VANHORN"):
 			return 98;
-		case joaat("wallace"):
+		case joaat("WALLACE"):
 			return 37;
-		case joaat("wapiti"):
+		case joaat("WAPITI"):
 			return 60;
 		case -1207133769:
 		case 201158410:
 		case 1654810713:
 			return 62;
-		case joaat("manicato"):
+		case joaat("MANICATO"):
 			return 66;
 	}
 	return -1;
@@ -655,7 +655,7 @@ int func_22(int iParam0)
 			return -594748684;
 		case joaat("LEMOYNE"):
 			return 1072597802;
-		case joaat("newaustin"):
+		case joaat("NEWAUSTIN"):
 			return 1259085938;
 		case joaat("NEWHANOVER"):
 			return 1762760291;
@@ -665,7 +665,7 @@ int func_22(int iParam0)
 			return -960313506;
 		case -1247148211:
 			return -1581676015;
-		case joaat("guarma"):
+		case joaat("GUARMA"):
 			return -1431514117;
 		default:
 			break;
@@ -958,7 +958,7 @@ int func_23(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }
@@ -1097,27 +1097,27 @@ int func_28(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("lagras"):
+		case joaat("LAGRAS"):
 			return 412187666;
 		case -765540529:
 			return -48955357;
-		case joaat("strawberry"):
+		case joaat("STRAWBERRY"):
 			return -1366448499;
-		case joaat("blackwater"):
+		case joaat("BLACKWATER"):
 			return -2142170718;
 		case -473051294:
 			return -652262915;
-		case joaat("valentine"):
+		case joaat("VALENTINE"):
 			return 1109427018;
-		case joaat("annesburg"):
+		case joaat("ANNESBURG"):
 			return -1353234788;
-		case joaat("vanhorn"):
+		case joaat("VANHORN"):
 			return -1965958161;
-		case joaat("rhodes"):
+		case joaat("RHODES"):
 			return -1059106609;
 		case joaat("ARMADILLO"):
 			return -1119990720;
-		case joaat("tumbleweed"):
+		case joaat("TUMBLEWEED"):
 			return 539298361;
 		default:
 			break;
@@ -1276,7 +1276,7 @@ void func_31(var uParam0)
 
 void func_32(var uParam0)
 {
-	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("map"), joaat("hide_info")))
+	if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("MAP"), joaat("HIDE_INFO")))
 	{
 		uParam0->f_38 = 1;
 	}
@@ -1806,18 +1806,18 @@ void func_54(var uParam0, var uParam1)
 			else
 			{
 				iVar6 = func_101(iVar4);
-				if (iVar6 == joaat("none"))
+				if (iVar6 == joaat("NONE"))
 				{
 				}
 				else
 				{
-					if (func_102(iVar4) != joaat("Bounty"))
+					if (func_102(iVar4) != joaat("BOUNTY"))
 					{
-						if (func_103(iVar4) == joaat("sadie_adler"))
+						if (func_103(iVar4) == joaat("SADIE_ADLER"))
 						{
 							if (!func_104(func_103(iVar4)))
 							{
-								iVar6 = joaat("secondary");
+								iVar6 = joaat("SECONDARY");
 							}
 						}
 						iVar5 = PLAYER::_0x8E84119A23C16623(func_105(iVar4, iVar6), 0, 0);
@@ -1831,13 +1831,13 @@ void func_54(var uParam0, var uParam1)
 							{
 								switch (iVar6)
 								{
-									case joaat("primary"):
+									case joaat("PRIMARY"):
 										iVar3 = uParam1->f_8;
 										iVar1 = uParam1->f_12;
 										iVar2 = uParam1->f_13;
 										break;
-									case joaat("secondary"):
-										if (func_103(iVar4) == joaat("sadie_adler"))
+									case joaat("SECONDARY"):
+										if (func_103(iVar4) == joaat("SADIE_ADLER"))
 										{
 											iVar3 = uParam1->f_8;
 											iVar1 = uParam1->f_12;
@@ -1860,17 +1860,17 @@ void func_54(var uParam0, var uParam1)
 							{
 								switch (func_106(iVar4, iVar6))
 								{
-									case joaat("female"):
+									case joaat("FEMALE"):
 										iVar3 = -648664377; /* GXTEntry: "A stranger has some business for you." */
 										break;
-									case joaat("male"):
+									case joaat("MALE"):
 										iVar3 = 1463582430; /* GXTEntry: "A stranger has some business for you." */
 										break;
 									default:
 										break;
 								}
 								iVar1 = -1859668514;
-								iVar2 = joaat("image");
+								iVar2 = joaat("IMAGE");
 							}
 							Jump @401; //curOff = 367
 							iVar0 = func_107(iVar4, -1100859510);
@@ -1896,7 +1896,7 @@ void func_54(var uParam0, var uParam1)
 							func_108(iVar7);
 							uParam0->f_18 = 0;
 							uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(uParam0->f_9, "startable", true);
-							uParam0->f_17 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "startPrompt", joaat("start_matchmaking"));
+							uParam0->f_17 = DATABINDING::_DATABINDING_ADD_DATA_HASH(uParam0->f_9, "startPrompt", joaat("START_MATCHMAKING"));
 							func_55(uParam0);
 						}
 						DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam0->f_8, -1, &(uParam1->f_25), uParam0->f_9);
@@ -1929,7 +1929,7 @@ void func_55(var uParam0)
 			}
 			else
 			{
-				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_17, joaat("start_matchmaking"));
+				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(uParam0->f_17, joaat("START_MATCHMAKING"));
 			}
 			uParam0->f_18 = bVar2;
 		}
@@ -3401,7 +3401,7 @@ bool func_104(int iParam0)
 {
 	struct<2> Var0;
 
-	Var0 = { func_149(joaat("has_been_interacted_with"), func_148(iParam0)) };
+	Var0 = { func_149(joaat("HAS_BEEN_INTERACTED_WITH"), func_148(iParam0)) };
 	return func_150(Var0);
 }
 
@@ -4299,27 +4299,27 @@ char* func_129(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("vanhorn"):
+		case joaat("VANHORN"):
 			return "VHT";
 		case -473051294:
 			return "EMR";
-		case joaat("annesburg"):
+		case joaat("ANNESBURG"):
 			return "ANN";
-		case joaat("lagras"):
+		case joaat("LAGRAS"):
 			return "LAG";
-		case joaat("rhodes"):
+		case joaat("RHODES"):
 			return "RHO";
-		case joaat("strawberry"):
+		case joaat("STRAWBERRY"):
 			return "STR";
-		case joaat("blackwater"):
+		case joaat("BLACKWATER"):
 			return "BLA";
 		case -765540529:
 			return "NBX";
-		case joaat("valentine"):
+		case joaat("VALENTINE"):
 			return "VAL";
 		case joaat("ARMADILLO"):
 			return "AMD";
-		case joaat("tumbleweed"):
+		case joaat("TUMBLEWEED"):
 			return "TBL";
 		default:
 			break;
@@ -4705,7 +4705,7 @@ int func_143(int iParam0, int iParam1, int iParam2, int iParam3, struct<2> Param
 	{
 		if (!func_182(268435456))
 		{
-			if (!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")))
+			if (!UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU")))
 			{
 				func_183(1, 0);
 			}
@@ -4915,13 +4915,13 @@ int func_148(int iParam0)
 			return joaat("GFH_FLACO_HERNANDEZ");
 		case -8716208:
 			return joaat("GFH_JOSIAH_TRELAWNY");
-		case joaat("joe"):
+		case joaat("JOE"):
 			return joaat("GFH_JOE");
 		case -705903163:
 			return joaat("GFH_SEAN_MACQUIRE");
-		case joaat("black_belle"):
+		case joaat("BLACK_BELLE"):
 			return joaat("GFH_BLACK_BELLE");
-		case joaat("sadie_adler"):
+		case joaat("SADIE_ADLER"):
 			return joaat("GFH_SADIE_ADLER");
 		case 842749101:
 			return joaat("GFH_MAMMA_WATSON");
@@ -4929,7 +4929,7 @@ int func_148(int iParam0)
 			return joaat("GFH_THOMAS_SKIFF_CAPTAIN");
 		case 220113328:
 			return joaat("GFH_OBEDIAH_HINTON");
-		case joaat("anthony_foreman"):
+		case joaat("ANTHONY_FOREMAN"):
 			return joaat("GFH_ANTHONY_FOREMAN");
 		case 539824333:
 			return joaat("GFH_LANGTON");
@@ -4941,9 +4941,9 @@ int func_148(int iParam0)
 			return joaat("GFH_SHAKY");
 		case -1601260627:
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
-		case joaat("alden"):
+		case joaat("ALDEN"):
 			return joaat("GFH_ALDEN");
-		case joaat("Hector"):
+		case joaat("HECTOR"):
 			return joaat("GFH_HECTOR");
 		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
@@ -5015,11 +5015,11 @@ int func_151(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("secondary"):
+		case joaat("SECONDARY"):
 			return 2;
-		case joaat("primary"):
+		case joaat("PRIMARY"):
 			return 1;
-		case joaat("none"):
+		case joaat("NONE"):
 			return 0;
 		default:
 			break;
@@ -5888,11 +5888,11 @@ int func_198(int iParam0)
 		case 8:
 			return -1224238785;
 		case 9:
-			return joaat("stamp_gold");
+			return joaat("STAMP_GOLD");
 		case 10:
 			return joaat("STAMP_LOCK");
 		case 11:
-			return joaat("stamp_locked_rank");
+			return joaat("STAMP_LOCKED_RANK");
 		case 12:
 			return 876516058;
 		case 13:
@@ -6852,16 +6852,16 @@ int func_250(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("CHALLENGE");
 			break;
 		case -3:
 			iVar0 = 1300413597;
 			break;
 		case 1:
-			iVar0 = joaat("feature");
+			iVar0 = joaat("FEATURE");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -6885,16 +6885,16 @@ int func_250(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("TITLE");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -6928,7 +6928,7 @@ int func_251(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return joaat("challenges");
+			return joaat("CHALLENGES");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -7014,7 +7014,7 @@ int func_255(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case joaat("ambush"):
+		case joaat("AMBUSH"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -7062,15 +7062,15 @@ int func_256(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("blackjack"):
+		case joaat("BLACKJACK"):
 			return 0;
-		case joaat("Dominoes"):
+		case joaat("DOMINOES"):
 			return 1;
-		case joaat("Poker"):
+		case joaat("POKER"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("milking_cow"):
+		case joaat("MILKING_COW"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -7088,7 +7088,7 @@ int func_257(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("challenges"):
+		case joaat("CHALLENGES"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -7158,9 +7158,9 @@ int func_259(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("null"):
+		case joaat("NULL"):
 			return -1;
-		case joaat("normal"):
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -7174,17 +7174,17 @@ int func_259(int iParam0)
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("bountyhunter"):
+		case joaat("BOUNTYHUNTER"):
 			return 7;
-		case joaat("Gunslinger"):
+		case joaat("GUNSLINGER"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("hunter"):
+		case joaat("HUNTER"):
 			return 10;
-		case joaat("Trader"):
+		case joaat("TRADER"):
 			return 11;
-		case joaat("Collector"):
+		case joaat("COLLECTOR"):
 			return 12;
 		case -218234180:
 			return 13;

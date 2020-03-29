@@ -739,9 +739,9 @@ void func_1()
 
 	HUD::_0x8BC7C1F929D07BF3(382897689);
 	Global_1357517 = 0;
-	if (UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("translation_overlay"));
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("TRANSLATION_OVERLAY"));
 	}
 	iVar0 = 0;
 	while (iVar0 < 4)
@@ -891,7 +891,7 @@ int func_7(var uParam0)
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_2))
 	{
-		uParam0->f_2 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Global_36, 10f, joaat("s_playerjournal01x"), true, false, true);
+		uParam0->f_2 = OBJECT::GET_CLOSEST_OBJECT_OF_TYPE(Global_36, 10f, joaat("S_PLAYERJOURNAL01X"), true, false, true);
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 407174929))
 	{
@@ -1172,7 +1172,7 @@ int func_7(var uParam0)
 			break;
 		case 10:
 			func_17(uParam0);
-			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("translation_overlay"), joaat("journal")) == 0)
+			if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("TRANSLATION_OVERLAY"), joaat("JOURNAL")) == 0)
 			{
 				AUDIO::_0xAC84686C06184B0D("read_page", "journal_scenes");
 				func_20(uParam0, 11);
@@ -1180,7 +1180,7 @@ int func_7(var uParam0)
 			break;
 		case 11:
 			func_17(uParam0);
-			if (!UIAPPS::_IS_APP_RUNNING(joaat("translation_overlay")))
+			if (!UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 			{
 				AUDIO::_0xAC84686C06184B0D("journal_closeup", "journal_scenes");
 				func_20(uParam0, 3);
@@ -2525,9 +2525,9 @@ int func_71()
 {
 	if (HUD::_JOURNAL_CAN_WRITE_ENTRY(joaat("JOURNAL_GT_WINTER_4")))
 	{
-		return joaat("gang_takes_special_icon");
+		return joaat("GANG_TAKES_SPECIAL_ICON");
 	}
-	return joaat("gang_takes_icon");
+	return joaat("GANG_TAKES_ICON");
 }
 
 int func_72(int iParam0, var uParam1)

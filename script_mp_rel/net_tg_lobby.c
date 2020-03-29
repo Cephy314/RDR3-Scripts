@@ -982,7 +982,7 @@ void func_40(int iParam0)
 						StringCopy(&(iParam0->f_16.f_1), "MG_ALERT", 16);
 						StringCopy(&(iParam0->f_16.f_3), "MG_ALERT_GANGLB", 16);
 						iParam0->f_16.f_43 = 1;
-						iParam0->f_16.f_44[0] = joaat("ib_ok");
+						iParam0->f_16.f_44[0] = joaat("IB_OK");
 						func_107(&(iParam0->f_16), 0);
 						func_35(iParam0, 4, 1, 1);
 					}
@@ -993,7 +993,7 @@ void func_40(int iParam0)
 						StringCopy(&(iParam0->f_16.f_1), "MG_ALERT", 16);
 						StringCopy(&(iParam0->f_16.f_3), "MG_ALERT_GANGLM", 16);
 						iParam0->f_16.f_43 = 1;
-						iParam0->f_16.f_44[0] = joaat("ib_ok");
+						iParam0->f_16.f_44[0] = joaat("IB_OK");
 						func_107(&(iParam0->f_16), 0);
 						func_35(iParam0, 4, 1, 1);
 					}
@@ -1060,7 +1060,7 @@ void func_41(int iParam0)
 
 	if (_NAMESPACE76::_0x07954320D77F6A3D(iParam0->f_16) >= 3)
 	{
-		iVar0 = func_113(&(iParam0->f_16), joaat("warning_feed"), &(iParam0->f_16.f_49), 1);
+		iVar0 = func_113(&(iParam0->f_16), joaat("WARNING_FEED"), &(iParam0->f_16.f_49), 1);
 		if (func_13(iParam0, 4096) || func_13(iParam0, 32768))
 		{
 			if (iVar0 == 0)
@@ -2019,7 +2019,7 @@ int func_79(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
 	return 1;
 }
 
@@ -2566,7 +2566,7 @@ void func_106(bool bParam0)
 	{
 		Global_1956186 = 1;
 	}
-	if (func_209(joaat("camera_item")))
+	if (func_209(joaat("CAMERA_ITEM")))
 	{
 	}
 	if (bParam0 && Global_1939178->f_38 == joaat("WEAPON_KIT_CAMERA"))
@@ -2985,7 +2985,7 @@ int func_126(int iParam0, var uParam1, int iParam2, int iParam3, struct<2> Param
 	{
 		if (!func_150(268435456))
 		{
-			if (!UIAPPS::_IS_APP_ACTIVE(joaat("player_menu")))
+			if (!UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU")))
 			{
 				func_101(1, 0);
 			}
@@ -4698,7 +4698,7 @@ int func_200(int iParam0)
 	{
 		return 0;
 	}
-	else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("generic_weapon_item")) > 0)
+	else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("GENERIC_WEAPON_ITEM")) > 0)
 	{
 		return 0;
 	}
@@ -4792,7 +4792,7 @@ int func_202(int iParam0)
 		iParam0->f_15 = func_128("MG_POSSE_MEM_IN_JAIL", 10000, 0, 0, 0, 1);
 		return 0;
 	}
-	else if (func_102() || SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("generic_weapon_item")) > 0)
+	else if (func_102() || SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("GENERIC_WEAPON_ITEM")) > 0)
 	{
 		return 0;
 	}
@@ -4904,7 +4904,7 @@ void func_207(int iParam0)
 
 int func_208()
 {
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("camera_item")) > 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("CAMERA_ITEM")) > 0)
 	{
 		return 1;
 	}
@@ -5553,7 +5553,7 @@ void func_248(struct<2> Param0)
 		{
 			if (Var0.f_29 == joaat("RACE_IMPROMPTU"))
 			{
-				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("race"));
+				STATS::_0xF21A5D66874FCEDD(Var0.f_2, 0, joaat("RACE"));
 			}
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_29, 0);
 			STATS::_0xF21A5D66874FCEDD(Var0.f_2, Var0.f_30, 0);
@@ -5907,7 +5907,7 @@ int func_271(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case joaat("bounty_board"):
+		case joaat("BOUNTY_BOARD"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -5917,7 +5917,7 @@ int func_271(int iParam0, int iParam1)
 		case 1532822440:
 		case 1918154385:
 			return 1;
-		case joaat("dynamic"):
+		case joaat("DYNAMIC"):
 			return iParam1;
 		default:
 			break;
@@ -9129,7 +9129,7 @@ int func_379(int iParam0)
 		case 0:
 			return 1697883736;
 		case 1:
-			return joaat("challenges");
+			return joaat("CHALLENGES");
 		case 2:
 			return -1363591469;
 		case 3:
@@ -9188,16 +9188,16 @@ int func_382(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("CHALLENGE");
 			break;
 		case -3:
 			iVar0 = 1300413597;
 			break;
 		case 1:
-			iVar0 = joaat("feature");
+			iVar0 = joaat("FEATURE");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -9221,16 +9221,16 @@ int func_382(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("TITLE");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -9292,7 +9292,7 @@ int func_384(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case joaat("ambush"):
+		case joaat("AMBUSH"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -9340,15 +9340,15 @@ int func_385(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("blackjack"):
+		case joaat("BLACKJACK"):
 			return 0;
-		case joaat("Dominoes"):
+		case joaat("DOMINOES"):
 			return 1;
-		case joaat("Poker"):
+		case joaat("POKER"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("milking_cow"):
+		case joaat("MILKING_COW"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -9366,7 +9366,7 @@ int func_386(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("challenges"):
+		case joaat("CHALLENGES"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -9436,9 +9436,9 @@ int func_388(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("null"):
+		case joaat("NULL"):
 			return -1;
-		case joaat("normal"):
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -9452,17 +9452,17 @@ int func_388(int iParam0)
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("bountyhunter"):
+		case joaat("BOUNTYHUNTER"):
 			return 7;
-		case joaat("Gunslinger"):
+		case joaat("GUNSLINGER"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("hunter"):
+		case joaat("HUNTER"):
 			return 10;
-		case joaat("Trader"):
+		case joaat("TRADER"):
 			return 11;
-		case joaat("Collector"):
+		case joaat("COLLECTOR"):
 			return 12;
 		case -218234180:
 			return 13;

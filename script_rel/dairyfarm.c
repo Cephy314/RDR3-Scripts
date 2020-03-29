@@ -600,8 +600,8 @@ void func_14(int iParam0)
 	iParam0 = iParam0;
 	if (func_20() == -1)
 	{
-		func_46(&uLocal_19, 936, 0, "", joaat("wagondairy01x"), 1363.079f, -834.7169f, 70.945f, 114.51f, -106866375, 0);
-		func_46(&uLocal_39, 937, 2, "", joaat("wagondairy01x"), 1398.492f, -851.074f, 65.6284f, -171.36f, -106866375, 0);
+		func_46(&uLocal_19, 936, 0, "", joaat("WAGONDAIRY01X"), 1363.079f, -834.7169f, 70.945f, 114.51f, -106866375, 0);
+		func_46(&uLocal_39, 937, 2, "", joaat("WAGONDAIRY01X"), 1398.492f, -851.074f, 65.6284f, -171.36f, -106866375, 0);
 	}
 }
 
@@ -1080,8 +1080,8 @@ int func_50(int iParam0)
 
 void func_51()
 {
-	ENTITY::CREATE_MODEL_HIDE(1399.447f, -844.6359f, 64.8634f, 5f, joaat("p_russlinggatelock02x"), true);
-	ENTITY::CREATE_MODEL_HIDE(1399.883f, -847.0065f, 65.6747f, 1f, joaat("p_cs_chainlink01x"), true);
+	ENTITY::CREATE_MODEL_HIDE(1399.447f, -844.6359f, 64.8634f, 5f, joaat("P_RUSSLINGGATELOCK02X"), true);
+	ENTITY::CREATE_MODEL_HIDE(1399.883f, -847.0065f, 65.6747f, 1f, joaat("P_CS_CHAINLINK01X"), true);
 }
 
 void func_52(var uParam0, bool bParam1, int iParam2)
@@ -1528,7 +1528,7 @@ void func_67(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_124(Global_1935630, 8192);
-	func_126(func_125(-1532769513, joaat("areas")), 1);
+	func_126(func_125(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -1873,14 +1873,14 @@ int func_74(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -3802,8 +3802,8 @@ void func_135(bool bParam0)
 
 void func_136()
 {
-	ENTITY::REMOVE_MODEL_HIDE(1399.447f, -844.6359f, 64.8634f, 5f, joaat("p_russlinggatelock02x"), 0);
-	ENTITY::REMOVE_MODEL_HIDE(1399.883f, -847.0065f, 65.6747f, 1f, joaat("p_cs_chainlink01x"), 0);
+	ENTITY::REMOVE_MODEL_HIDE(1399.447f, -844.6359f, 64.8634f, 5f, joaat("P_RUSSLINGGATELOCK02X"), 0);
+	ENTITY::REMOVE_MODEL_HIDE(1399.883f, -847.0065f, 65.6747f, 1f, joaat("P_CS_CHAINLINK01X"), 0);
 }
 
 void func_137(int iParam0)
@@ -4040,7 +4040,7 @@ int func_149()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

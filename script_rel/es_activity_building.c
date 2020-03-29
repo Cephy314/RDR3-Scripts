@@ -1654,7 +1654,7 @@ int func_78(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
 	return 1;
 }
 
@@ -2229,13 +2229,13 @@ int func_108(int iParam0)
 	{
 		case 1:
 		case 2:
-			return joaat("s_proghornfence02x");
+			return joaat("S_PROGHORNFENCE02X");
 		case 3:
 		case 4:
 		case 5:
-			return joaat("p_propemfence01x");
+			return joaat("P_PROPEMFENCE01X");
 		case 0:
-			return joaat("p_sledgehammer03x");
+			return joaat("P_SLEDGEHAMMER03X");
 		default:
 			break;
 	}
@@ -2280,8 +2280,8 @@ int func_111(var uParam0, vector3 vParam1, vector3 vParam4, bool bParam7, vector
 		ENTITY::SET_ENTITY_COORDS(uParam0->f_13, vParam1 + Vector(0.67f, 0f, 0f), true, false, true, true);
 		ENTITY::SET_ENTITY_ROTATION(uParam0->f_13, vParam4, 2, true);
 	}
-	uParam0->f_50.f_1 = joaat("default");
-	uParam0->f_84.f_1 = joaat("default");
+	uParam0->f_50.f_1 = joaat("DEFAULT");
+	uParam0->f_84.f_1 = joaat("DEFAULT");
 	uParam0->f_50 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@FIX_FENCE@ADD_TO_RIGHT@PED");
 	uParam0->f_84 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@FIX_FENCE@ADD_TO_RIGHT@NEW_POST");
 	uParam0->f_50.f_30 = "Intro";
@@ -2480,7 +2480,7 @@ int func_118(var uParam0)
 	}
 	if (*uParam0 == 11)
 	{
-		if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")))
+		if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GAMEFINISHED")))
 		{
 		}
 		else
@@ -2792,7 +2792,7 @@ int func_118(var uParam0)
 			{
 				func_171(&(uParam0->f_4), 64);
 			}
-			if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")))
+			if ((func_126(uParam0->f_4, 64) && func_176()) || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GAMEFINISHED")))
 			{
 				if (Local_0 == 0)
 				{

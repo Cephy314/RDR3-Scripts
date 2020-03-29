@@ -698,7 +698,7 @@ int func_38(int iParam0)
 	struct<2> Var0;
 	var uVar2;
 
-	Var0 = { func_71(iParam0, joaat("variations_seen")) };
+	Var0 = { func_71(iParam0, joaat("VARIATIONS_SEEN")) };
 	if (!STATS::STAT_ID_GET_INT(&Var0, &uVar2))
 	{
 		return -1;
@@ -2275,7 +2275,7 @@ void func_53(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			switch (iParam1)
 			{
 				case 16:
-					iParam0->f_8 = joaat("Hideout");
+					iParam0->f_8 = joaat("HIDEOUT");
 					break;
 				case 17:
 					iParam0->f_8 = 1112069699;
@@ -3124,35 +3124,35 @@ int func_105(int iParam0)
 		case 0:
 			return 0;
 		case 1:
-			return joaat("nb_animal_attack");
+			return joaat("NB_ANIMAL_ATTACK");
 		case 2:
-			return joaat("nb_arrowhead_injury");
+			return joaat("NB_ARROWHEAD_INJURY");
 		case 3:
-			return joaat("nb_egg_protector");
+			return joaat("NB_EGG_PROTECTOR");
 		case 4:
-			return joaat("nb_graverobber");
+			return joaat("NB_GRAVEROBBER");
 		case 6:
-			return joaat("nb_kidnapped");
+			return joaat("NB_KIDNAPPED");
 		case 7:
-			return joaat("nb_photography");
+			return joaat("NB_PHOTOGRAPHY");
 		case 5:
-			return joaat("nb_rival_collector");
+			return joaat("NB_RIVAL_COLLECTOR");
 		case 11:
-			return joaat("nb_runaway_wagon");
+			return joaat("NB_RUNAWAY_WAGON");
 		case 8:
-			return joaat("nb_tied_up_ped");
+			return joaat("NB_TIED_UP_PED");
 		case 9:
-			return joaat("nb_treasure_hunter");
+			return joaat("NB_TREASURE_HUNTER");
 		case 10:
-			return joaat("nb_tree_map");
+			return joaat("NB_TREE_MAP");
 		case 12:
-			return joaat("nb_hobo_dog");
+			return joaat("NB_HOBO_DOG");
 		case 13:
-			return joaat("nb_wildman");
+			return joaat("NB_WILDMAN");
 		case 14:
-			return joaat("nb_duel");
+			return joaat("NB_DUEL");
 		case 15:
-			return joaat("nb_moonshine_camp");
+			return joaat("NB_MOONSHINE_CAMP");
 		default:
 			break;
 	}
@@ -4971,7 +4971,7 @@ float func_192(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		iVar0 = func_55(iParam1);
 		iVar1 = func_222(iVar0);
-		if (iVar1 == joaat("ambush") && PLAYER::_0xFB6EB8785F808551(PLAYER::PLAYER_ID(), Global_1901929->f_230.f_29, false))
+		if (iVar1 == joaat("AMBUSH") && PLAYER::_0xFB6EB8785F808551(PLAYER::PLAYER_ID(), Global_1901929->f_230.f_29, false))
 		{
 			func_155(iParam0, iParam2, 65536, 0);
 			return 0f;
@@ -5549,7 +5549,7 @@ int func_221(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var0 = { func_71(iParam0, joaat("last_interaction_timestamp")) };
+	Var0 = { func_71(iParam0, joaat("LAST_INTERACTION_TIMESTAMP")) };
 	if (!STATS::STAT_ID_GET_INT(&Var0, &iVar2))
 	{
 		return 0;
@@ -5939,16 +5939,16 @@ int func_234(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("CHALLENGE");
 			break;
 		case -3:
 			iVar0 = 1300413597;
 			break;
 		case 1:
-			iVar0 = joaat("feature");
+			iVar0 = joaat("FEATURE");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -5972,16 +5972,16 @@ int func_234(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("TITLE");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
@@ -6043,7 +6043,7 @@ int func_236(int iParam0)
 			return 8;
 		case 1158195437:
 			return 9;
-		case joaat("ambush"):
+		case joaat("AMBUSH"):
 			return 10;
 		case -621956193:
 			return 11;
@@ -6091,15 +6091,15 @@ int func_237(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("blackjack"):
+		case joaat("BLACKJACK"):
 			return 0;
-		case joaat("Dominoes"):
+		case joaat("DOMINOES"):
 			return 1;
-		case joaat("Poker"):
+		case joaat("POKER"):
 			return 2;
 		case joaat("FILLET"):
 			return 3;
-		case joaat("milking_cow"):
+		case joaat("MILKING_COW"):
 			return 4;
 		case joaat("CLEAN_STALLS"):
 			return 5;
@@ -6117,7 +6117,7 @@ int func_238(int iParam0)
 	{
 		case 1697883736:
 			return 0;
-		case joaat("challenges"):
+		case joaat("CHALLENGES"):
 			return 1;
 		case -1363591469:
 			return 2;
@@ -6187,9 +6187,9 @@ int func_240(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("null"):
+		case joaat("NULL"):
 			return -1;
-		case joaat("normal"):
+		case joaat("NORMAL"):
 			return 0;
 		case -640677282:
 			return 1;
@@ -6203,17 +6203,17 @@ int func_240(int iParam0)
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
-		case joaat("bountyhunter"):
+		case joaat("BOUNTYHUNTER"):
 			return 7;
-		case joaat("Gunslinger"):
+		case joaat("GUNSLINGER"):
 			return 8;
 		case 408825843:
 			return 9;
-		case joaat("hunter"):
+		case joaat("HUNTER"):
 			return 10;
-		case joaat("Trader"):
+		case joaat("TRADER"):
 			return 11;
-		case joaat("Collector"):
+		case joaat("COLLECTOR"):
 			return 12;
 		case -218234180:
 			return 13;
@@ -6906,7 +6906,7 @@ bool func_282(vector3 vParam0, float fParam3, bool bParam4)
 
 	if (!bParam4)
 	{
-		iVar0 = joaat("net_train");
+		iVar0 = joaat("NET_TRAIN");
 	}
 	return VOLUME::_0x397769175A7DBB30(vParam0, fParam3, 0, 0, iVar0);
 }
@@ -6928,11 +6928,11 @@ int func_284(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("primary"):
+		case joaat("PRIMARY"):
 			return 0;
-		case joaat("secondary"):
+		case joaat("SECONDARY"):
 			return 1;
-		case joaat("Trolley"):
+		case joaat("TROLLEY"):
 			return 2;
 	}
 	return 0;
@@ -7104,7 +7104,7 @@ int func_299(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("bounty_board"):
+		case joaat("BOUNTY_BOARD"):
 		case joaat("GUN_FOR_HIRE"):
 		case -260420884:
 		case -232478158:
@@ -7113,13 +7113,13 @@ int func_299(int iParam0)
 		case 974227447:
 		case 1427578635:
 		case 1532822440:
-		case joaat("dynamic"):
+		case joaat("DYNAMIC"):
 		case 1884341302:
 		case 1918154385:
 			return 1;
-		case joaat("ambush"):
+		case joaat("AMBUSH"):
 		case -669677371:
-		case joaat("Hideout"):
+		case joaat("HIDEOUT"):
 			return 8;
 		default:
 			break;

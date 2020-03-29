@@ -2905,15 +2905,15 @@ int func_21(var uParam0)
 		uParam0->f_24 = 8;
 		uParam0->f_23 = 4;
 		uParam0->f_2 = 0;
-		uParam0->f_1401[0] = joaat("cs_bandbassist");
-		uParam0->f_1401[1] = joaat("cs_banddrummer");
-		uParam0->f_1401[2] = joaat("cs_bandpianist");
-		uParam0->f_1401[3] = joaat("cs_bandsinger");
-		uParam0->f_1385[0] = joaat("p_benchpiano02x");
-		uParam0->f_1385[1] = joaat("p_cs_contrabass01x");
-		uParam0->f_1385[2] = joaat("p_cs_drumkit01x");
-		uParam0->f_1385[3] = joaat("p_drumstick01x");
-		uParam0->f_1385[4] = joaat("p_nbxpiano01x");
+		uParam0->f_1401[0] = joaat("CS_BANDBASSIST");
+		uParam0->f_1401[1] = joaat("CS_BANDDRUMMER");
+		uParam0->f_1401[2] = joaat("CS_BANDPIANIST");
+		uParam0->f_1401[3] = joaat("CS_BANDSINGER");
+		uParam0->f_1385[0] = joaat("P_BENCHPIANO02X");
+		uParam0->f_1385[1] = joaat("P_CS_CONTRABASS01X");
+		uParam0->f_1385[2] = joaat("P_CS_DRUMKIT01X");
+		uParam0->f_1385[3] = joaat("P_DRUMSTICK01X");
+		uParam0->f_1385[4] = joaat("P_NBXPIANO01X");
 		uParam0->f_1436 = "SHSDAUD";
 		func_18(&(uParam0->f_1358), 131072);
 		uParam0->f_1377 = { 2546.453f, -1303.998f, 46.793f };
@@ -3354,7 +3354,7 @@ int func_41()
 	{
 		return 1;
 	}
-	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("end_of_movie_marker")))
+	if (GRAPHICS::_IS_TV_PLAYLIST_ITEM_PLAYING(joaat("END_OF_MOVIE_MARKER")))
 	{
 		return 1;
 	}
@@ -4384,7 +4384,7 @@ void func_102(var uParam0, int iParam1)
 
 int func_103()
 {
-	return joaat("cs_escapeartist");
+	return joaat("CS_ESCAPEARTIST");
 }
 
 int func_104(int iParam0)
@@ -4396,11 +4396,11 @@ int func_104(int iParam0)
 		case 2:
 		case 3:
 		case 4:
-			return joaat("p_magiclanternslide01x");
+			return joaat("P_MAGICLANTERNSLIDE01X");
 		default:
 			break;
 	}
-	return joaat("p_magiclanternslide01x");
+	return joaat("P_MAGICLANTERNSLIDE01X");
 }
 
 Vector3 func_105(int iParam0)
@@ -6777,9 +6777,9 @@ int func_172(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_lamp35x");
+			return joaat("P_LAMP35X");
 		case 1:
-			return joaat("p_lampwall03x");
+			return joaat("P_LAMPWALL03X");
 		case 2:
 			return 0;
 	}
@@ -6853,9 +6853,9 @@ int func_176(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_stageshelllight01x");
+			return joaat("P_STAGESHELLLIGHT01X");
 		case 1:
-			return joaat("p_bulb_g_stage01x");
+			return joaat("P_BULB_G_STAGE01X");
 		case 2:
 			return 0;
 	}
@@ -6962,9 +6962,9 @@ int func_179(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("p_lampwall04x");
+			return joaat("P_LAMPWALL04X");
 		case 1:
-			return joaat("p_napoleonlight01x");
+			return joaat("P_NAPOLEONLIGHT01X");
 		case 2:
 			return 0;
 	}
@@ -7011,11 +7011,11 @@ int func_181(int iParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 0:
-					return joaat("p_stageshelllight_long01x");
+					return joaat("P_STAGESHELLLIGHT_LONG01X");
 				case 1:
-					return joaat("p_stageshelllight_red01x");
+					return joaat("P_STAGESHELLLIGHT_RED01X");
 				case 2:
-					return joaat("p_stageshelllight_red01x");
+					return joaat("P_STAGESHELLLIGHT_RED01X");
 				default:
 					break;
 			}
@@ -7745,7 +7745,7 @@ void func_217(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

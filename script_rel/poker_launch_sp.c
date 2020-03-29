@@ -943,7 +943,7 @@ int func_27(var uParam0)
 		func_1(uParam0->f_2);
 		return 1;
 	}
-	if ((uParam0->f_1 == 2 && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("poker_sp")) == 0) || uParam0->f_1 != 2)
+	if ((uParam0->f_1 == 2 && SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("POKER_SP")) == 0) || uParam0->f_1 != 2)
 	{
 		if (uParam0->f_90 > fVar1)
 		{
@@ -966,7 +966,7 @@ int func_27(var uParam0)
 			{
 				if (func_88())
 				{
-					if (uParam0->f_2 == 0 && SCRIPTS::GET_HASH_OF_THIS_SCRIPT_NAME() == joaat("poker_launch_sp"))
+					if (uParam0->f_2 == 0 && SCRIPTS::GET_HASH_OF_THIS_SCRIPT_NAME() == joaat("POKER_LAUNCH_SP"))
 					{
 						return 0;
 					}
@@ -2415,24 +2415,24 @@ int func_75(int iParam0, int iParam1)
 {
 	if (iParam1 == 1 && iParam0 == 2)
 	{
-		return joaat("poker_sp");
+		return joaat("POKER_SP");
 	}
 	switch (iParam0)
 	{
 		case 2:
-			return joaat("poker_sp");
+			return joaat("POKER_SP");
 		case 0:
-			return joaat("bjack_sp");
+			return joaat("BJACK_SP");
 		case 1:
-			return joaat("dominoes_sp");
+			return joaat("DOMINOES_SP");
 		case 3:
-			return joaat("fillet_sp");
+			return joaat("FILLET_SP");
 		case 4:
-			return joaat("milking_cow");
+			return joaat("MILKING_COW");
 		case 5:
-			return joaat("es_clean_stalls");
+			return joaat("ES_CLEAN_STALLS");
 		case 6:
-			return joaat("es_activity_building");
+			return joaat("ES_ACTIVITY_BUILDING");
 		default:
 			break;
 	}
@@ -3765,100 +3765,100 @@ int func_111(int iParam0, int iParam1)
 		case 0:
 			switch (iParam1)
 			{
-				case joaat("p_windsorchair03x"):
+				case joaat("P_WINDSORCHAIR03X"):
 					return 1;
-				case joaat("p_windsorchair01x"):
-				case joaat("p_chair38x"):
+				case joaat("P_WINDSORCHAIR01X"):
+				case joaat("P_CHAIR38X"):
 					return 1;
-				case joaat("p_chair24x"):
-				case joaat("p_chair22x"):
+				case joaat("P_CHAIR24X"):
+				case joaat("P_CHAIR22X"):
 					return 1;
 				default:
 					break;
 			}
 			break;
 		case 2:
-			if (iParam1 == joaat("p_chair13x"))
+			if (iParam1 == joaat("P_CHAIR13X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair05x"))
+			if (iParam1 == joaat("P_CHAIR05X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair06x"))
+			if (iParam1 == joaat("P_CHAIR06X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_windsorchair03x"))
+			if (iParam1 == joaat("P_WINDSORCHAIR03X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair12x"))
+			if (iParam1 == joaat("P_CHAIR12X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair14x"))
+			if (iParam1 == joaat("P_CHAIR14X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair11x"))
+			if (iParam1 == joaat("P_CHAIR11X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair26x"))
+			if (iParam1 == joaat("P_CHAIR26X"))
 			{
 				return 1;
 			}
 			break;
 		case 1:
-			if (iParam1 == joaat("p_chair02x"))
+			if (iParam1 == joaat("P_CHAIR02X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stool02x"))
+			if (iParam1 == joaat("P_STOOL02X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stool03x"))
+			if (iParam1 == joaat("P_STOOL03X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stoolwinter01x"))
+			if (iParam1 == joaat("P_STOOLWINTER01X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stoolfolding01x"))
+			if (iParam1 == joaat("P_STOOLFOLDING01X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair_barrel04b"))
+			if (iParam1 == joaat("P_CHAIR_BARREL04B"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chairfolding02x"))
+			if (iParam1 == joaat("P_CHAIRFOLDING02X"))
 			{
 				return 1;
 			}
 			break;
 		case 3:
-			if (iParam1 == joaat("p_chair06x"))
+			if (iParam1 == joaat("P_CHAIR06X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("s_crateseat03x"))
+			if (iParam1 == joaat("S_CRATESEAT03X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chair_crate02x"))
+			if (iParam1 == joaat("P_CHAIR_CRATE02X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_stoolfolding01x"))
+			if (iParam1 == joaat("P_STOOLFOLDING01X"))
 			{
 				return 1;
 			}
-			if (iParam1 == joaat("p_chairfolding02x"))
+			if (iParam1 == joaat("P_CHAIRFOLDING02X"))
 			{
 				return 1;
 			}
@@ -4028,84 +4028,84 @@ int func_121(int iParam0, int iParam1, int iParam2)
 	iVar5 = 0;
 	if (iParam0 == 3)
 	{
-		return joaat("a_m_m_fivefingerfilletplayers_01");
+		return joaat("A_M_M_FIVEFINGERFILLETPLAYERS_01");
 	}
 	else if (iParam0 == 2 || iParam0 == 0)
 	{
-		return joaat("a_m_m_cardgameplayers_01");
+		return joaat("A_M_M_CARDGAMEPLAYERS_01");
 	}
 	else if (iParam0 == 1)
 	{
-		return joaat("a_m_m_dominoesplayers_01");
+		return joaat("A_M_M_DOMINOESPLAYERS_01");
 	}
 	switch (iParam1)
 	{
 		case 76:
-			iVar0[0] = joaat("a_m_m_valtownfolk_01");
-			iVar0[1] = joaat("a_m_m_valtownfolk_02");
+			iVar0[0] = joaat("A_M_M_VALTOWNFOLK_01");
+			iVar0[1] = joaat("A_M_M_VALTOWNFOLK_02");
 			iVar5 = 2;
 			break;
 		case 105:
-			iVar0[0] = joaat("a_m_m_rhdupperclass_01");
+			iVar0[0] = joaat("A_M_M_RHDUPPERCLASS_01");
 			iVar5 = 1;
 			break;
 		case 38:
 			if (iParam0 == 1)
 			{
-				iVar0[0] = joaat("a_m_m_blwlaborer_01");
-				iVar0[1] = joaat("a_m_m_blwlaborer_02");
+				iVar0[0] = joaat("A_M_M_BLWLABORER_01");
+				iVar0[1] = joaat("A_M_M_BLWLABORER_02");
 				iVar5 = 2;
 			}
 			else
 			{
-				iVar0[0] = joaat("a_m_m_blwupperclass_01");
+				iVar0[0] = joaat("A_M_M_BLWUPPERCLASS_01");
 				iVar5 = 1;
 			}
 			break;
 		case 115:
-			iVar0[0] = joaat("a_m_m_tumtownfolk_01");
-			iVar0[1] = joaat("a_m_m_tumtownfolk_02");
+			iVar0[0] = joaat("A_M_M_TUMTOWNFOLK_01");
+			iVar0[1] = joaat("A_M_M_TUMTOWNFOLK_02");
 			iVar5 = 2;
 			break;
 		case 26:
-			iVar0[0] = joaat("s_m_m_strlumberjack_01");
+			iVar0[0] = joaat("S_M_M_STRLUMBERJACK_01");
 			iVar5 = 1;
 			break;
 		case 5:
 			if (iParam0 == 1)
 			{
-				iVar0[0] = joaat("a_m_m_middlesdtownfolk_01");
-				iVar0[1] = joaat("a_m_m_middlesdtownfolk_02");
-				iVar0[2] = joaat("a_m_m_middlesdtownfolk_03");
+				iVar0[0] = joaat("A_M_M_MIDDLESDTOWNFOLK_01");
+				iVar0[1] = joaat("A_M_M_MIDDLESDTOWNFOLK_02");
+				iVar0[2] = joaat("A_M_M_MIDDLESDTOWNFOLK_03");
 				iVar5 = 3;
 			}
 			else
 			{
-				iVar0[0] = joaat("a_m_o_sdupperclass_01");
-				iVar0[1] = joaat("a_m_o_sdupperclass_01");
+				iVar0[0] = joaat("A_M_O_SDUPPERCLASS_01");
+				iVar0[1] = joaat("A_M_O_SDUPPERCLASS_01");
 				iVar5 = 2;
 			}
 			break;
 		case 92:
-			iVar0[0] = joaat("a_m_m_vhttownfolk_01");
+			iVar0[0] = joaat("A_M_M_VHTTOWNFOLK_01");
 			iVar5 = 1;
 			break;
 		case 69:
 			if (iParam0 == 1)
 			{
-				iVar0[0] = joaat("a_m_m_emrfarmhand_01");
+				iVar0[0] = joaat("A_M_M_EMRFARMHAND_01");
 				iVar5 = 1;
 			}
 			else
 			{
-				iVar0[0] = joaat("a_m_m_emrfarmhand_01");
+				iVar0[0] = joaat("A_M_M_EMRFARMHAND_01");
 				iVar5 = 1;
 			}
 			break;
 		case 75:
-			iVar0[0] = joaat("a_m_m_valtownfolk_01");
-			iVar0[1] = joaat("a_m_m_valtownfolk_02");
-			iVar0[2] = joaat("s_m_m_valcowpoke_01");
+			iVar0[0] = joaat("A_M_M_VALTOWNFOLK_01");
+			iVar0[1] = joaat("A_M_M_VALTOWNFOLK_02");
+			iVar0[2] = joaat("S_M_M_VALCOWPOKE_01");
 			iVar5 = 3;
 			break;
 	}
@@ -4136,21 +4136,21 @@ int func_122(int iParam0)
 	switch (iParam0)
 	{
 		case 105:
-			return joaat("s_m_m_rhddealer_01");
+			return joaat("S_M_M_RHDDEALER_01");
 		case 5:
-			return joaat("s_m_m_sddealer_01");
+			return joaat("S_M_M_SDDEALER_01");
 		case 26:
-			return joaat("s_m_m_strdealer_01");
+			return joaat("S_M_M_STRDEALER_01");
 		case 76:
-			return joaat("s_m_m_valdealer_01");
+			return joaat("S_M_M_VALDEALER_01");
 		case 92:
-			return joaat("s_m_m_vhtdealer_01");
+			return joaat("S_M_M_VHTDEALER_01");
 		case 78:
-			return joaat("s_m_m_asbdealer_01");
+			return joaat("S_M_M_ASBDEALER_01");
 		case 38:
-			return joaat("s_m_m_blwdealer_01");
+			return joaat("S_M_M_BLWDEALER_01");
 		case 75:
-			return joaat("s_m_m_valdealer_01");
+			return joaat("S_M_M_VALDEALER_01");
 		default:
 			break;
 	}
@@ -4410,7 +4410,7 @@ int func_128()
 {
 	int iVar0;
 
-	iVar0 = joaat("p_chips05x10_rho");
+	iVar0 = joaat("P_CHIPS05X10_RHO");
 	if (func_233(&iVar0, iLocal_0))
 	{
 		return iVar0;
@@ -6567,13 +6567,13 @@ int func_180(int iParam0)
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
 	switch (iVar0)
 	{
-		case joaat("s_m_m_blwdealer_01"):
-		case joaat("s_m_m_valdealer_01"):
-		case joaat("s_m_m_asbdealer_01"):
-		case joaat("s_m_m_rhddealer_01"):
-		case joaat("s_m_m_vhtdealer_01"):
-		case joaat("s_m_m_strdealer_01"):
-		case joaat("s_m_m_sddealer_01"):
+		case joaat("S_M_M_BLWDEALER_01"):
+		case joaat("S_M_M_VALDEALER_01"):
+		case joaat("S_M_M_ASBDEALER_01"):
+		case joaat("S_M_M_RHDDEALER_01"):
+		case joaat("S_M_M_VHTDEALER_01"):
+		case joaat("S_M_M_STRDEALER_01"):
+		case joaat("S_M_M_SDDEALER_01"):
 			return 1;
 		default:
 			break;
@@ -6588,7 +6588,7 @@ int func_181(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)
 		return 0;
 	}
 	*iParam4 = 0;
-	if (iParam1 == 1 && iParam0 == joaat("a_m_m_dominoesplayers_01"))
+	if (iParam1 == 1 && iParam0 == joaat("A_M_M_DOMINOESPLAYERS_01"))
 	{
 		switch (iParam2)
 		{
@@ -6734,7 +6734,7 @@ int func_181(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)
 				return 0;
 		}
 	}
-	else if (iParam1 == 0 && iParam0 == joaat("a_m_m_cardgameplayers_01"))
+	else if (iParam1 == 0 && iParam0 == joaat("A_M_M_CARDGAMEPLAYERS_01"))
 	{
 		switch (iParam2)
 		{
@@ -6898,7 +6898,7 @@ int func_181(int iParam0, int iParam1, int iParam2, var uParam3, int iParam4)
 				return 0;
 		}
 	}
-	else if (iParam1 == 2 && iParam0 == joaat("a_m_m_cardgameplayers_01"))
+	else if (iParam1 == 2 && iParam0 == joaat("A_M_M_CARDGAMEPLAYERS_01"))
 	{
 		switch (iParam2)
 		{
@@ -7221,7 +7221,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 	{
 		switch (iParam0)
 		{
-			case joaat("a_m_m_fivefingerfilletplayers_01"):
+			case joaat("A_M_M_FIVEFINGERFILLETPLAYERS_01"):
 				func_263(uParam2, 43);
 				*iParam3++;
 				func_263(uParam2, 44);
@@ -7247,7 +7247,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 	{
 		switch (iParam0)
 		{
-			case joaat("a_m_m_cardgameplayers_01"):
+			case joaat("A_M_M_CARDGAMEPLAYERS_01"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7357,9 +7357,9 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 41);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_valtownfolk_01"):
-			case joaat("a_m_m_valtownfolk_02"):
-			case joaat("s_m_m_valcowpoke_01"):
+			case joaat("A_M_M_VALTOWNFOLK_01"):
+			case joaat("A_M_M_VALTOWNFOLK_02"):
+			case joaat("S_M_M_VALCOWPOKE_01"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7463,15 +7463,15 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 84);
 				*iParam3++;
 				break;
-			case joaat("u_m_m_valgunsmith_01"):
+			case joaat("U_M_M_VALGUNSMITH_01"):
 				func_263(uParam2, 84);
 				*iParam3++;
 				break;
-			case joaat("u_m_m_valdoctor_01"):
+			case joaat("U_M_M_VALDOCTOR_01"):
 				func_263(uParam2, 82);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_blwupperclass_01"):
+			case joaat("A_M_M_BLWUPPERCLASS_01"):
 				func_263(uParam2, 2);
 				*iParam3++;
 				func_263(uParam2, 12);
@@ -7497,7 +7497,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 76);
 				*iParam3++;
 				break;
-			case joaat("a_m_o_blwupperclass_01"):
+			case joaat("A_M_O_BLWUPPERCLASS_01"):
 				func_263(uParam2, 2);
 				*iParam3++;
 				func_263(uParam2, 12);
@@ -7517,11 +7517,11 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 76);
 				*iParam3++;
 				break;
-			case joaat("u_m_o_blwgeneralstoreowner_01"):
+			case joaat("U_M_O_BLWGENERALSTOREOWNER_01"):
 				func_263(uParam2, 86);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_blwforeman_01"):
+			case joaat("A_M_M_BLWFOREMAN_01"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7575,7 +7575,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 76);
 				*iParam3++;
 				break;
-			case joaat("a_m_o_sdupperclass_01"):
+			case joaat("A_M_O_SDUPPERCLASS_01"):
 				func_263(uParam2, 2);
 				*iParam3++;
 				func_263(uParam2, 26);
@@ -7589,7 +7589,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 50);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_rhdupperclass_01"):
+			case joaat("A_M_M_RHDUPPERCLASS_01"):
 				func_263(uParam2, 2);
 				*iParam3++;
 				func_263(uParam2, 12);
@@ -7619,7 +7619,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 75);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_rhdforeman_01"):
+			case joaat("A_M_M_RHDFOREMAN_01"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7655,12 +7655,12 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 64);
 				*iParam3++;
 				break;
-			case joaat("u_m_m_rhdgenstoreowner_01"):
+			case joaat("U_M_M_RHDGENSTOREOWNER_01"):
 				func_263(uParam2, 80);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_vhtthug_01"):
-			case joaat("a_m_m_vhttownfolk_01"):
+			case joaat("A_M_M_VHTTHUG_01"):
+			case joaat("A_M_M_VHTTOWNFOLK_01"):
 				func_263(uParam2, 3);
 				*iParam3++;
 				func_263(uParam2, 4);
@@ -7740,8 +7740,8 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 79);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_blwlaborer_01"):
-			case joaat("a_m_m_blwlaborer_02"):
+			case joaat("A_M_M_BLWLABORER_01"):
+			case joaat("A_M_M_BLWLABORER_02"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7817,9 +7817,9 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 76);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_middlesdtownfolk_03"):
-			case joaat("a_m_m_middlesdtownfolk_02"):
-			case joaat("a_m_m_middlesdtownfolk_01"):
+			case joaat("A_M_M_MIDDLESDTOWNFOLK_03"):
+			case joaat("A_M_M_MIDDLESDTOWNFOLK_02"):
+			case joaat("A_M_M_MIDDLESDTOWNFOLK_01"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7855,7 +7855,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 53);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_emrfarmhand_01"):
+			case joaat("A_M_M_EMRFARMHAND_01"):
 				func_263(uParam2, 1);
 				*iParam3++;
 				func_263(uParam2, 2);
@@ -7949,8 +7949,8 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 76);
 				*iParam3++;
 				break;
-			case joaat("a_m_m_tumtownfolk_01"):
-			case joaat("a_m_m_tumtownfolk_02"):
+			case joaat("A_M_M_TUMTOWNFOLK_01"):
+			case joaat("A_M_M_TUMTOWNFOLK_02"):
 				func_263(uParam2, 45);
 				*iParam3++;
 				func_263(uParam2, 46);
@@ -8000,8 +8000,8 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 76);
 				*iParam3++;
 				break;
-			case joaat("s_m_m_blwdealer_01"):
-			case joaat("s_m_m_rhddealer_01"):
+			case joaat("S_M_M_BLWDEALER_01"):
+			case joaat("S_M_M_RHDDEALER_01"):
 				func_263(uParam2, 87);
 				*iParam3++;
 				func_263(uParam2, 89);
@@ -8011,7 +8011,7 @@ int func_183(int iParam0, int iParam1, var uParam2, int iParam3)
 				func_263(uParam2, 91);
 				*iParam3++;
 				break;
-			case joaat("s_m_m_vhtdealer_01"):
+			case joaat("S_M_M_VHTDEALER_01"):
 				func_263(uParam2, 62);
 				*iParam3++;
 				func_263(uParam2, 79);
@@ -8521,7 +8521,7 @@ void func_203(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 6:
-			if (func_281(uParam0, iVar120) >= 1f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_281(uParam0, iVar120) >= 1f || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iVar0 = 0;
 				while (iVar0 < 6)
@@ -8699,7 +8699,7 @@ void func_205(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_290(uParam1, "ActionDone") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_290(uParam1, "ActionDone") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_138(iParam2->f_5[iVar0 /*62*/], 1, 0, 0);
 				return;
@@ -8970,7 +8970,7 @@ void func_208(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (!func_291(uParam0, iVar7, "PickupCards") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (!func_291(uParam0, iVar7, "PickupCards") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
 			}
@@ -9025,7 +9025,7 @@ void func_209(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar7, "HoldCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar7, "HoldCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
 			}
@@ -9098,7 +9098,7 @@ void func_210(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iParam2->f_380 = 1;
 				func_138(iParam2->f_5[iVar9 /*62*/], 1, 0, 0);
@@ -9116,7 +9116,7 @@ void func_210(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iParam2->f_380 = 1;
 				func_138(iParam2->f_5[iVar9 /*62*/], 1, 0, 0);
@@ -9185,7 +9185,7 @@ void func_211(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iParam2->f_381 = 1;
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
@@ -9203,7 +9203,7 @@ void func_211(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iParam2->f_381 = 1;
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
@@ -9272,7 +9272,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iParam2->f_382 = 1;
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
@@ -9290,7 +9290,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iParam2->f_382 = 1;
 				func_271(iParam2->f_5[iVar6 /*62*/], 1);
@@ -9352,7 +9352,7 @@ void func_213(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iVar0 = (32 + iVar7);
 				vVar1 = { ENTITY::GET_ENTITY_COORDS((uParam0->f_281[iVar0 /*24*/])->f_4, true, false) };
@@ -9463,7 +9463,7 @@ void func_215(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if ((func_291(uParam0, iVar7, "NoCardsLoopA") || func_291(uParam0, iVar7, "RecieveDeckExit")) || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if ((func_291(uParam0, iVar7, "NoCardsLoopA") || func_291(uParam0, iVar7, "RecieveDeckExit")) || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				if (func_190())
 				{
@@ -9526,7 +9526,7 @@ void func_216(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar8, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iVar6 = (32 + iVar7);
 				vVar0 = { ENTITY::GET_ENTITY_COORDS((uParam0->f_281[iVar6 /*24*/])->f_4, true, false) };
@@ -9591,7 +9591,7 @@ void func_217(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9638,7 +9638,7 @@ void func_218(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9691,7 +9691,7 @@ void func_219(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9740,7 +9740,7 @@ void func_220(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 2:
-			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar7, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				func_138(iParam2->f_5[iVar6 /*62*/], 1, 0, 0);
 			}
@@ -9918,7 +9918,7 @@ void func_222(var uParam0, var uParam1, int iParam2)
 			}
 			break;
 		case 3:
-			if (func_291(uParam0, iVar9, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("Interruptible")))
+			if (func_291(uParam0, iVar9, "NoCardsLoopA") || ENTITY::HAS_ANIM_EVENT_FIRED(uParam1->f_11, joaat("INTERRUPTIBLE")))
 			{
 				iVar6 = 0;
 				while (iVar6 < 7)
@@ -10249,7 +10249,7 @@ int func_231(int iParam0, int iParam1)
 			{
 				return uVar1;
 			}
-			return joaat("p_cardssplit01x");
+			return joaat("P_CARDSSPLIT01X");
 		case 68:
 			return func_128();
 		case 25:
@@ -10344,31 +10344,31 @@ int func_233(int iParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 0:
-			*iParam0 = joaat("p_chips_bla01x");
+			*iParam0 = joaat("P_CHIPS_BLA01X");
 			return 1;
 		case 1:
-			*iParam0 = joaat("p_chips_camp01x");
+			*iParam0 = joaat("P_CHIPS_CAMP01X");
 			return 1;
 		case 2:
-			*iParam0 = joaat("p_chips_gar_kor01x");
+			*iParam0 = joaat("P_CHIPS_GAR_KOR01X");
 			return 1;
 		case 3:
-			*iParam0 = joaat("p_chips05x10_rho");
+			*iParam0 = joaat("P_CHIPS05X10_RHO");
 			return 1;
 		case 4:
-			*iParam0 = joaat("p_chips_fla01x");
+			*iParam0 = joaat("P_CHIPS_FLA01X");
 			return 1;
 		case 5:
-			*iParam0 = joaat("p_chips_la_bas01x");
+			*iParam0 = joaat("P_CHIPS_LA_BAS01X");
 			return 1;
 		case 6:
-			*iParam0 = joaat("p_chips_opi01x");
+			*iParam0 = joaat("P_CHIPS_OPI01X");
 			return 1;
 		case 7:
-			*iParam0 = joaat("p_chips_val01x");
+			*iParam0 = joaat("P_CHIPS_VAL01X");
 			return 1;
 		case 8:
-			*iParam0 = joaat("p_chips_val01x");
+			*iParam0 = joaat("P_CHIPS_VAL01X");
 			return 1;
 		default:
 			break;
@@ -10708,7 +10708,7 @@ int func_250(var uParam0, bool bParam1, char* sParam2)
 	{
 		return 0;
 	}
-	return func_321(bParam1, sParam2, joaat("speech_params_add_blip"), 0, 1, 0, 0, 1);
+	return func_321(bParam1, sParam2, joaat("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
 }
 
 var func_251(int iParam0, var uParam1, int iParam2, int iParam3)
@@ -10797,7 +10797,7 @@ int func_252(int iParam0, bool bParam1)
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("prop_human_seat_chair")))
+			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
 			{
 				return 1;
 			}
@@ -10810,7 +10810,7 @@ int func_252(int iParam0, bool bParam1)
 		{
 			return 1;
 		}
-		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == joaat("TaskMovePoker")))
+		if (((!ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_a", 1) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_b", 1)) && !ENTITY::IS_ENTITY_PLAYING_ANIM(bParam1, "mini_games@poker_mg@base", "no_cards_idle_c", 1)) && !(TASK::IS_TASK_MOVE_NETWORK_ACTIVE(bParam1) && TASK::_0xCACC2F9D994504B7(bParam1) == joaat("TASKMOVEPOKER")))
 		{
 			return 0;
 		}
@@ -10933,187 +10933,187 @@ int func_258(bool bParam0)
 {
 	switch (bParam0)
 	{
-		case joaat("cs_sistercalderon"):
-		case joaat("cs_strsheriff_01"):
-		case joaat("cs_mud2bigguy"):
-		case joaat("cs_rainsfall"):
-		case joaat("cs_penelopebraithwaite"):
-		case joaat("cs_swampweirdosonny"):
-		case joaat("cs_unidusterjail_01"):
-		case joaat("cs_iangray"):
-		case joaat("cs_tinyhermit"):
-		case joaat("cs_timothydonahue"):
-		case joaat("cs_princessisabeau"):
-		case joaat("cs_leviticuscornwall"):
-		case joaat("cs_didsbury"):
-		case joaat("cs_featherstonchambers"):
-		case joaat("cs_featsofstrength"):
-		case joaat("cs_bandpianist"):
-		case joaat("cs_escapeartistassistant"):
-		case joaat("cs_garethbraithwaite"):
-		case joaat("cs_creoleguy"):
-		case joaat("cs_leighgray"):
-		case joaat("cs_strawberryoutlaw_02"):
-		case joaat("cs_gloria"):
-		case joaat("cs_warvet"):
-		case joaat("cs_jockgray"):
-		case joaat("cs_davidgeddes"):
-		case joaat("cs_guidomartelli"):
-		case joaat("cs_duncangeddes"):
-		case joaat("cs_dusterinformant_01"):
-		case joaat("cs_pinkertongoon"):
-		case joaat("cs_mickey"):
-		case joaat("cs_twinbrother_02"):
-		case joaat("cs_hestonjameson"):
-		case joaat("cs_strdeputy_01"):
-		case joaat("cs_abe"):
-		case joaat("cs_oddfellowspinhead"):
-		case joaat("cs_swampfreak"):
-		case joaat("cs_mradler"):
-		case joaat("cs_aberdeenpigfarmer"):
-		case joaat("cs_hobartcrawley"):
-		case joaat("cs_formyartbigwoman"):
-		case joaat("cs_norrisforsythe"):
-		case joaat("cs_jules"):
-		case joaat("cs_tomdickens"):
-		case joaat("cs_geraldbraithwaite"):
-		case joaat("cs_paytah"):
-		case joaat("cs_cancan_03"):
-		case joaat("cs_grizzledjon"):
-		case joaat("cs_wrobel"):
-		case joaat("cs_meredith"):
-		case joaat("cs_creepyoldlady"):
-		case joaat("cs_nbxreceptionist_01"):
-		case joaat("cs_nbxpolicechiefformal"):
-		case joaat("cs_cornwalltrainconductor"):
-		case joaat("cs_rhodeputy_01"):
-		case joaat("cs_drmalcolmmacintosh"):
-		case joaat("cs_leon"):
-		case joaat("cs_sheriffowens"):
-		case joaat("cs_sddoctor_01"):
-		case joaat("cs_scottgray"):
-		case joaat("cs_cancan_01"):
-		case joaat("cs_creolecaptain"):
-		case joaat("cs_brontesbutler"):
-		case joaat("cs_janson"):
-		case joaat("cs_forgivenwife_01"):
-		case joaat("cs_tigerhandler"):
-		case joaat("cs_frenchartist"):
-		case joaat("cs_genstorymale"):
-		case joaat("cs_clay"):
-		case joaat("cs_strdeputy_02"):
-		case joaat("cs_famousgunslinger_03"):
-		case joaat("cs_bivcoachdriver"):
-		case joaat("cs_braithwaitebutler"):
-		case joaat("cs_cleet"):
-		case joaat("cs_joe"):
-		case joaat("cs_slavecatcher"):
-		case joaat("cs_braithwaitemaid"):
-		case joaat("cs_twingroupie_02"):
-		case joaat("cs_mrsgeddes"):
-		case joaat("cs_samaritan"):
-		case joaat("cs_exconfedinformant"):
-		case joaat("cs_frenchman_01"):
-		case joaat("cs_bandsinger"):
-		case joaat("cs_baptiste"):
-		case joaat("cs_angusgeddes"):
-		case joaat("cs_mysteriousstranger"):
-		case joaat("cs_famousgunslinger_01"):
-		case joaat("cs_bartholomewbraithwaite"):
-		case joaat("cs_mixedracekid"):
-		case joaat("cs_beatenupcaptain"):
-		case joaat("cs_edgarross"):
-		case joaat("cs_twingroupie_01"):
-		case joaat("cs_mrsweathers"):
-		case joaat("cs_jamie"):
-		case joaat("cs_karensjohn_01"):
-		case joaat("cs_thomasdown"):
-		case joaat("cs_obediahhinton"):
-		case joaat("cs_agnesdowd"):
-		case joaat("cs_cavehermit"):
-		case joaat("cs_brynntildon"):
-		case joaat("cs_germanson"):
-		case joaat("cs_brendacrawley"):
-		case joaat("cs_colfavours"):
-		case joaat("cs_rhodeskidnapvictim"):
-		case joaat("cs_exconfedsleader_01"):
-		case joaat("cs_cancan_04"):
-		case joaat("cs_towncrier"):
-		case joaat("cs_famousgunslinger_04"):
-		case joaat("cs_dalemaroney"):
-		case joaat("cs_angryhusband"):
-		case joaat("cs_lillianpowell"):
-		case joaat("cs_andershelgerson"):
-		case joaat("cs_poorjoe"):
-		case joaat("cs_braithwaiteservant"):
-		case joaat("cs_brotherdorkins"):
-		case joaat("cs_albertmason"):
-		case joaat("cs_famousgunslinger_05"):
-		case joaat("cs_balloonoperator"):
-		case joaat("cs_albertcakeesquire"):
-		case joaat("cs_mrsfellows"):
-		case joaat("cs_cancanman_01"):
-		case joaat("cs_poisonwellshaman"):
-		case joaat("cs_cancan_02"):
-		case joaat("cs_meredithsmother"):
-		case joaat("cs_angel"):
-		case joaat("cs_archerfordham"):
-		case joaat("cs_disguisedduster_01"):
-		case joaat("cs_chelonianmaster"):
-		case joaat("cs_twinbrother_01"):
-		case joaat("cs_germandaughter"):
-		case joaat("cs_lemiuxassistant"):
-		case joaat("cs_creoledoctor"):
-		case joaat("cs_crackpotrobot"):
-		case joaat("cs_bandbassist"):
-		case joaat("cs_genstoryfemale"):
-		case joaat("cs_marylinton"):
-		case joaat("cs_valprayingman"):
-		case joaat("cs_johnthebaptisingmadman"):
-		case joaat("cs_mrs_calhoun"):
-		case joaat("cs_theodorelevin"):
-		case joaat("cs_nicholastimmins"):
-		case joaat("cs_disguisedduster_03"):
-		case joaat("cs_dinoboneslady"):
-		case joaat("cs_beaugray"):
-		case joaat("cs_strawberryoutlaw_01"):
-		case joaat("cs_crackpotinventor"):
-		case joaat("cs_hercule"):
-		case joaat("cs_gavin"):
-		case joaat("cs_levisimon"):
-		case joaat("cs_londonderryson"):
-		case joaat("cs_captainmonroe"):
-		case joaat("cs_famousgunslinger_02"):
-		case joaat("cs_mrslondonderry"):
-		case joaat("cs_soothsayer"):
-		case joaat("cs_tavishgray"):
-		case joaat("cs_joebutler"):
-		case joaat("cs_banddrummer"):
-		case joaat("cs_lillymillet"):
-		case joaat("cs_ansel_atherton"):
-		case joaat("cs_rhodeputy_02"):
-		case joaat("cs_edmundlowry"):
-		case joaat("cs_disguisedduster_02"):
-		case joaat("cs_magnifico"):
-		case joaat("cs_artappraiser"):
-		case joaat("cs_forgivenhusband_01"):
-		case joaat("cs_reverendfortheringham"):
-		case joaat("cs_daveycallender"):
-		case joaat("cs_desmond"):
-		case joaat("cs_adamgray"):
-		case joaat("cs_jimcalloway"):
-		case joaat("cs_sdsaloondrunk_01"):
-		case joaat("cs_nbxdrunk"):
-		case joaat("cs_germanmother"):
-		case joaat("cs_ringmaster"):
-		case joaat("cs_lucanapoli"):
-		case joaat("cs_rhodesassistant"):
-		case joaat("cs_aberdeensister"):
-		case joaat("cs_nbxexecuted"):
-		case joaat("cs_famousgunslinger_06"):
-		case joaat("cs_johnweathers"):
-		case joaat("cs_professorbell"):
-		case joaat("cs_rhodessaloonbouncer"):
+		case joaat("CS_SISTERCALDERON"):
+		case joaat("CS_STRSHERIFF_01"):
+		case joaat("CS_MUD2BIGGUY"):
+		case joaat("CS_RAINSFALL"):
+		case joaat("CS_PENELOPEBRAITHWAITE"):
+		case joaat("CS_SWAMPWEIRDOSONNY"):
+		case joaat("CS_UNIDUSTERJAIL_01"):
+		case joaat("CS_IANGRAY"):
+		case joaat("CS_TINYHERMIT"):
+		case joaat("CS_TIMOTHYDONAHUE"):
+		case joaat("CS_PRINCESSISABEAU"):
+		case joaat("CS_LEVITICUSCORNWALL"):
+		case joaat("CS_DIDSBURY"):
+		case joaat("CS_FEATHERSTONCHAMBERS"):
+		case joaat("CS_FEATSOFSTRENGTH"):
+		case joaat("CS_BANDPIANIST"):
+		case joaat("CS_ESCAPEARTISTASSISTANT"):
+		case joaat("CS_GARETHBRAITHWAITE"):
+		case joaat("CS_CREOLEGUY"):
+		case joaat("CS_LEIGHGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_02"):
+		case joaat("CS_GLORIA"):
+		case joaat("CS_WARVET"):
+		case joaat("CS_JOCKGRAY"):
+		case joaat("CS_DAVIDGEDDES"):
+		case joaat("CS_GUIDOMARTELLI"):
+		case joaat("CS_DUNCANGEDDES"):
+		case joaat("CS_DUSTERINFORMANT_01"):
+		case joaat("CS_PINKERTONGOON"):
+		case joaat("CS_MICKEY"):
+		case joaat("CS_TWINBROTHER_02"):
+		case joaat("CS_HESTONJAMESON"):
+		case joaat("CS_STRDEPUTY_01"):
+		case joaat("CS_ABE"):
+		case joaat("CS_ODDFELLOWSPINHEAD"):
+		case joaat("CS_SWAMPFREAK"):
+		case joaat("CS_MRADLER"):
+		case joaat("CS_ABERDEENPIGFARMER"):
+		case joaat("CS_HOBARTCRAWLEY"):
+		case joaat("CS_FORMYARTBIGWOMAN"):
+		case joaat("CS_NORRISFORSYTHE"):
+		case joaat("CS_JULES"):
+		case joaat("CS_TOMDICKENS"):
+		case joaat("CS_GERALDBRAITHWAITE"):
+		case joaat("CS_PAYTAH"):
+		case joaat("CS_CANCAN_03"):
+		case joaat("CS_GRIZZLEDJON"):
+		case joaat("CS_WROBEL"):
+		case joaat("CS_MEREDITH"):
+		case joaat("CS_CREEPYOLDLADY"):
+		case joaat("CS_NBXRECEPTIONIST_01"):
+		case joaat("CS_NBXPOLICECHIEFFORMAL"):
+		case joaat("CS_CORNWALLTRAINCONDUCTOR"):
+		case joaat("CS_RHODEPUTY_01"):
+		case joaat("CS_DRMALCOLMMACINTOSH"):
+		case joaat("CS_LEON"):
+		case joaat("CS_SHERIFFOWENS"):
+		case joaat("CS_SDDOCTOR_01"):
+		case joaat("CS_SCOTTGRAY"):
+		case joaat("CS_CANCAN_01"):
+		case joaat("CS_CREOLECAPTAIN"):
+		case joaat("CS_BRONTESBUTLER"):
+		case joaat("CS_JANSON"):
+		case joaat("CS_FORGIVENWIFE_01"):
+		case joaat("CS_TIGERHANDLER"):
+		case joaat("CS_FRENCHARTIST"):
+		case joaat("CS_GENSTORYMALE"):
+		case joaat("CS_CLAY"):
+		case joaat("CS_STRDEPUTY_02"):
+		case joaat("CS_FAMOUSGUNSLINGER_03"):
+		case joaat("CS_BIVCOACHDRIVER"):
+		case joaat("CS_BRAITHWAITEBUTLER"):
+		case joaat("CS_CLEET"):
+		case joaat("CS_JOE"):
+		case joaat("CS_SLAVECATCHER"):
+		case joaat("CS_BRAITHWAITEMAID"):
+		case joaat("CS_TWINGROUPIE_02"):
+		case joaat("CS_MRSGEDDES"):
+		case joaat("CS_SAMARITAN"):
+		case joaat("CS_EXCONFEDINFORMANT"):
+		case joaat("CS_FRENCHMAN_01"):
+		case joaat("CS_BANDSINGER"):
+		case joaat("CS_BAPTISTE"):
+		case joaat("CS_ANGUSGEDDES"):
+		case joaat("CS_MYSTERIOUSSTRANGER"):
+		case joaat("CS_FAMOUSGUNSLINGER_01"):
+		case joaat("CS_BARTHOLOMEWBRAITHWAITE"):
+		case joaat("CS_MIXEDRACEKID"):
+		case joaat("CS_BEATENUPCAPTAIN"):
+		case joaat("CS_EDGARROSS"):
+		case joaat("CS_TWINGROUPIE_01"):
+		case joaat("CS_MRSWEATHERS"):
+		case joaat("CS_JAMIE"):
+		case joaat("CS_KARENSJOHN_01"):
+		case joaat("CS_THOMASDOWN"):
+		case joaat("CS_OBEDIAHHINTON"):
+		case joaat("CS_AGNESDOWD"):
+		case joaat("CS_CAVEHERMIT"):
+		case joaat("CS_BRYNNTILDON"):
+		case joaat("CS_GERMANSON"):
+		case joaat("CS_BRENDACRAWLEY"):
+		case joaat("CS_COLFAVOURS"):
+		case joaat("CS_RHODESKIDNAPVICTIM"):
+		case joaat("CS_EXCONFEDSLEADER_01"):
+		case joaat("CS_CANCAN_04"):
+		case joaat("CS_TOWNCRIER"):
+		case joaat("CS_FAMOUSGUNSLINGER_04"):
+		case joaat("CS_DALEMARONEY"):
+		case joaat("CS_ANGRYHUSBAND"):
+		case joaat("CS_LILLIANPOWELL"):
+		case joaat("CS_ANDERSHELGERSON"):
+		case joaat("CS_POORJOE"):
+		case joaat("CS_BRAITHWAITESERVANT"):
+		case joaat("CS_BROTHERDORKINS"):
+		case joaat("CS_ALBERTMASON"):
+		case joaat("CS_FAMOUSGUNSLINGER_05"):
+		case joaat("CS_BALLOONOPERATOR"):
+		case joaat("CS_ALBERTCAKEESQUIRE"):
+		case joaat("CS_MRSFELLOWS"):
+		case joaat("CS_CANCANMAN_01"):
+		case joaat("CS_POISONWELLSHAMAN"):
+		case joaat("CS_CANCAN_02"):
+		case joaat("CS_MEREDITHSMOTHER"):
+		case joaat("CS_ANGEL"):
+		case joaat("CS_ARCHERFORDHAM"):
+		case joaat("CS_DISGUISEDDUSTER_01"):
+		case joaat("CS_CHELONIANMASTER"):
+		case joaat("CS_TWINBROTHER_01"):
+		case joaat("CS_GERMANDAUGHTER"):
+		case joaat("CS_LEMIUXASSISTANT"):
+		case joaat("CS_CREOLEDOCTOR"):
+		case joaat("CS_CRACKPOTROBOT"):
+		case joaat("CS_BANDBASSIST"):
+		case joaat("CS_GENSTORYFEMALE"):
+		case joaat("CS_MARYLINTON"):
+		case joaat("CS_VALPRAYINGMAN"):
+		case joaat("CS_JOHNTHEBAPTISINGMADMAN"):
+		case joaat("CS_MRS_CALHOUN"):
+		case joaat("CS_THEODORELEVIN"):
+		case joaat("CS_NICHOLASTIMMINS"):
+		case joaat("CS_DISGUISEDDUSTER_03"):
+		case joaat("CS_DINOBONESLADY"):
+		case joaat("CS_BEAUGRAY"):
+		case joaat("CS_STRAWBERRYOUTLAW_01"):
+		case joaat("CS_CRACKPOTINVENTOR"):
+		case joaat("CS_HERCULE"):
+		case joaat("CS_GAVIN"):
+		case joaat("CS_LEVISIMON"):
+		case joaat("CS_LONDONDERRYSON"):
+		case joaat("CS_CAPTAINMONROE"):
+		case joaat("CS_FAMOUSGUNSLINGER_02"):
+		case joaat("CS_MRSLONDONDERRY"):
+		case joaat("CS_SOOTHSAYER"):
+		case joaat("CS_TAVISHGRAY"):
+		case joaat("CS_JOEBUTLER"):
+		case joaat("CS_BANDDRUMMER"):
+		case joaat("CS_LILLYMILLET"):
+		case joaat("CS_ANSEL_ATHERTON"):
+		case joaat("CS_RHODEPUTY_02"):
+		case joaat("CS_EDMUNDLOWRY"):
+		case joaat("CS_DISGUISEDDUSTER_02"):
+		case joaat("CS_MAGNIFICO"):
+		case joaat("CS_ARTAPPRAISER"):
+		case joaat("CS_FORGIVENHUSBAND_01"):
+		case joaat("CS_REVERENDFORTHERINGHAM"):
+		case joaat("CS_DAVEYCALLENDER"):
+		case joaat("CS_DESMOND"):
+		case joaat("CS_ADAMGRAY"):
+		case joaat("CS_JIMCALLOWAY"):
+		case joaat("CS_SDSALOONDRUNK_01"):
+		case joaat("CS_NBXDRUNK"):
+		case joaat("CS_GERMANMOTHER"):
+		case joaat("CS_RINGMASTER"):
+		case joaat("CS_LUCANAPOLI"):
+		case joaat("CS_RHODESASSISTANT"):
+		case joaat("CS_ABERDEENSISTER"):
+		case joaat("CS_NBXEXECUTED"):
+		case joaat("CS_FAMOUSGUNSLINGER_06"):
+		case joaat("CS_JOHNWEATHERS"):
+		case joaat("CS_PROFESSORBELL"):
+		case joaat("CS_RHODESSALOONBOUNCER"):
 			return 1;
 		default:
 			break;
@@ -11158,7 +11158,7 @@ void func_260(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("hats"), 1);
+	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -11472,43 +11472,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*iParam0 = joaat("p_crd_2_c01x_bla");
+							*iParam0 = joaat("P_CRD_2_C01X_BLA");
 							return 1;
 						case 3:
-							*iParam0 = joaat("p_crd_3_c01x_bla");
+							*iParam0 = joaat("P_CRD_3_C01X_BLA");
 							return 1;
 						case 4:
-							*iParam0 = joaat("p_crd_4_c01x_bla");
+							*iParam0 = joaat("P_CRD_4_C01X_BLA");
 							return 1;
 						case 5:
-							*iParam0 = joaat("p_crd_5_c01x_bla");
+							*iParam0 = joaat("P_CRD_5_C01X_BLA");
 							return 1;
 						case 6:
-							*iParam0 = joaat("p_crd_6_c01x_bla");
+							*iParam0 = joaat("P_CRD_6_C01X_BLA");
 							return 1;
 						case 7:
-							*iParam0 = joaat("p_crd_7_c01x_bla");
+							*iParam0 = joaat("P_CRD_7_C01X_BLA");
 							return 1;
 						case 8:
-							*iParam0 = joaat("p_crd_8_c01x_bla");
+							*iParam0 = joaat("P_CRD_8_C01X_BLA");
 							return 1;
 						case 9:
-							*iParam0 = joaat("p_crd_9_c01x_bla");
+							*iParam0 = joaat("P_CRD_9_C01X_BLA");
 							return 1;
 						case 10:
-							*iParam0 = joaat("p_crd_10_c01x_bla");
+							*iParam0 = joaat("P_CRD_10_C01X_BLA");
 							return 1;
 						case 11:
-							*iParam0 = joaat("p_crd_j_c01x_bla");
+							*iParam0 = joaat("P_CRD_J_C01X_BLA");
 							return 1;
 						case 12:
-							*iParam0 = joaat("p_crd_q_c01x_bla");
+							*iParam0 = joaat("P_CRD_Q_C01X_BLA");
 							return 1;
 						case 13:
-							*iParam0 = joaat("p_crd_k_c01x_bla");
+							*iParam0 = joaat("P_CRD_K_C01X_BLA");
 							return 1;
 						case 14:
-							*iParam0 = joaat("p_crd_a_c01x_bla");
+							*iParam0 = joaat("P_CRD_A_C01X_BLA");
 							return 1;
 						default:
 							break;
@@ -11518,43 +11518,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*iParam0 = joaat("p_crd_2_d01x_bla");
+							*iParam0 = joaat("P_CRD_2_D01X_BLA");
 							return 1;
 						case 3:
-							*iParam0 = joaat("p_crd_3_d01x_bla");
+							*iParam0 = joaat("P_CRD_3_D01X_BLA");
 							return 1;
 						case 4:
-							*iParam0 = joaat("p_crd_4_d01x_bla");
+							*iParam0 = joaat("P_CRD_4_D01X_BLA");
 							return 1;
 						case 5:
-							*iParam0 = joaat("p_crd_5_d01x_bla");
+							*iParam0 = joaat("P_CRD_5_D01X_BLA");
 							return 1;
 						case 6:
-							*iParam0 = joaat("p_crd_6_d01x_bla");
+							*iParam0 = joaat("P_CRD_6_D01X_BLA");
 							return 1;
 						case 7:
-							*iParam0 = joaat("p_crd_7_d01x_bla");
+							*iParam0 = joaat("P_CRD_7_D01X_BLA");
 							return 1;
 						case 8:
-							*iParam0 = joaat("p_crd_8_d01x_bla");
+							*iParam0 = joaat("P_CRD_8_D01X_BLA");
 							return 1;
 						case 9:
-							*iParam0 = joaat("p_crd_9_d01x_bla");
+							*iParam0 = joaat("P_CRD_9_D01X_BLA");
 							return 1;
 						case 10:
-							*iParam0 = joaat("p_crd_10_d01x_bla");
+							*iParam0 = joaat("P_CRD_10_D01X_BLA");
 							return 1;
 						case 11:
-							*iParam0 = joaat("p_crd_j_d01x_bla");
+							*iParam0 = joaat("P_CRD_J_D01X_BLA");
 							return 1;
 						case 12:
-							*iParam0 = joaat("p_crd_q_d01x_bla");
+							*iParam0 = joaat("P_CRD_Q_D01X_BLA");
 							return 1;
 						case 13:
-							*iParam0 = joaat("p_crd_k_d01x_bla");
+							*iParam0 = joaat("P_CRD_K_D01X_BLA");
 							return 1;
 						case 14:
-							*iParam0 = joaat("p_crd_a_d01x_bla");
+							*iParam0 = joaat("P_CRD_A_D01X_BLA");
 							return 1;
 						default:
 							break;
@@ -11564,43 +11564,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*iParam0 = joaat("p_crd_2_h01x_bla");
+							*iParam0 = joaat("P_CRD_2_H01X_BLA");
 							return 1;
 						case 3:
-							*iParam0 = joaat("p_crd_3_h01x_bla");
+							*iParam0 = joaat("P_CRD_3_H01X_BLA");
 							return 1;
 						case 4:
-							*iParam0 = joaat("p_crd_4_h01x_bla");
+							*iParam0 = joaat("P_CRD_4_H01X_BLA");
 							return 1;
 						case 5:
-							*iParam0 = joaat("p_crd_5_h01x_bla");
+							*iParam0 = joaat("P_CRD_5_H01X_BLA");
 							return 1;
 						case 6:
-							*iParam0 = joaat("p_crd_6_h01x_bla");
+							*iParam0 = joaat("P_CRD_6_H01X_BLA");
 							return 1;
 						case 7:
-							*iParam0 = joaat("p_crd_7_h01x_bla");
+							*iParam0 = joaat("P_CRD_7_H01X_BLA");
 							return 1;
 						case 8:
-							*iParam0 = joaat("p_crd_8_h01x_bla");
+							*iParam0 = joaat("P_CRD_8_H01X_BLA");
 							return 1;
 						case 9:
-							*iParam0 = joaat("p_crd_9_h01x_bla");
+							*iParam0 = joaat("P_CRD_9_H01X_BLA");
 							return 1;
 						case 10:
-							*iParam0 = joaat("p_crd_10_h01x_bla");
+							*iParam0 = joaat("P_CRD_10_H01X_BLA");
 							return 1;
 						case 11:
-							*iParam0 = joaat("p_crd_j_h01x_bla");
+							*iParam0 = joaat("P_CRD_J_H01X_BLA");
 							return 1;
 						case 12:
-							*iParam0 = joaat("p_crd_q_h01x_bla");
+							*iParam0 = joaat("P_CRD_Q_H01X_BLA");
 							return 1;
 						case 13:
-							*iParam0 = joaat("p_crd_k_h01x_bla");
+							*iParam0 = joaat("P_CRD_K_H01X_BLA");
 							return 1;
 						case 14:
-							*iParam0 = joaat("p_crd_a_h01x_bla");
+							*iParam0 = joaat("P_CRD_A_H01X_BLA");
 							return 1;
 						default:
 							break;
@@ -11610,43 +11610,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*iParam0 = joaat("p_crd_2_s01x_bla");
+							*iParam0 = joaat("P_CRD_2_S01X_BLA");
 							return 1;
 						case 3:
-							*iParam0 = joaat("p_crd_3_s01x_bla");
+							*iParam0 = joaat("P_CRD_3_S01X_BLA");
 							return 1;
 						case 4:
-							*iParam0 = joaat("p_crd_4_s01x_bla");
+							*iParam0 = joaat("P_CRD_4_S01X_BLA");
 							return 1;
 						case 5:
-							*iParam0 = joaat("p_crd_5_s01x_bla");
+							*iParam0 = joaat("P_CRD_5_S01X_BLA");
 							return 1;
 						case 6:
-							*iParam0 = joaat("p_crd_6_s01x_bla");
+							*iParam0 = joaat("P_CRD_6_S01X_BLA");
 							return 1;
 						case 7:
-							*iParam0 = joaat("p_crd_7_s01x_bla");
+							*iParam0 = joaat("P_CRD_7_S01X_BLA");
 							return 1;
 						case 8:
-							*iParam0 = joaat("p_crd_8_s01x_bla");
+							*iParam0 = joaat("P_CRD_8_S01X_BLA");
 							return 1;
 						case 9:
-							*iParam0 = joaat("p_crd_9_s01x_bla");
+							*iParam0 = joaat("P_CRD_9_S01X_BLA");
 							return 1;
 						case 10:
-							*iParam0 = joaat("p_crd_10_s01x_bla");
+							*iParam0 = joaat("P_CRD_10_S01X_BLA");
 							return 1;
 						case 11:
-							*iParam0 = joaat("p_crd_j_s01x_bla");
+							*iParam0 = joaat("P_CRD_J_S01X_BLA");
 							return 1;
 						case 12:
-							*iParam0 = joaat("p_crd_q_s01x_bla");
+							*iParam0 = joaat("P_CRD_Q_S01X_BLA");
 							return 1;
 						case 13:
-							*iParam0 = joaat("p_crd_k_s01x_bla");
+							*iParam0 = joaat("P_CRD_K_S01X_BLA");
 							return 1;
 						case 14:
-							*iParam0 = joaat("p_crd_a_s01x_bla");
+							*iParam0 = joaat("P_CRD_A_S01X_BLA");
 							return 1;
 						default:
 							break;
@@ -11661,84 +11661,84 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 					switch (Param1)
 					{
 						case 2:
-							*iParam0 = joaat("p_crd_2_c01x_camp");
+							*iParam0 = joaat("P_CRD_2_C01X_CAMP");
 							return 1;
 						case 3:
-							*iParam0 = joaat("p_crd_3_c01x_camp");
+							*iParam0 = joaat("P_CRD_3_C01X_CAMP");
 							return 1;
 						case 4:
-							*iParam0 = joaat("p_crd_4_c01x_camp");
+							*iParam0 = joaat("P_CRD_4_C01X_CAMP");
 							return 1;
 						case 5:
-							*iParam0 = joaat("p_crd_5_c01x_camp");
+							*iParam0 = joaat("P_CRD_5_C01X_CAMP");
 							return 1;
 						case 6:
-							*iParam0 = joaat("p_crd_6_c01x_camp");
+							*iParam0 = joaat("P_CRD_6_C01X_CAMP");
 							return 1;
 						case 7:
-							*iParam0 = joaat("p_crd_7_c01x_camp");
+							*iParam0 = joaat("P_CRD_7_C01X_CAMP");
 							return 1;
 						case 8:
-							*iParam0 = joaat("p_crd_8_c01x_camp");
+							*iParam0 = joaat("P_CRD_8_C01X_CAMP");
 							return 1;
 						case 9:
-							*iParam0 = joaat("p_crd_9_c01x_camp");
+							*iParam0 = joaat("P_CRD_9_C01X_CAMP");
 							return 1;
 						case 10:
-							*iParam0 = joaat("p_crd_10_c01x_camp");
+							*iParam0 = joaat("P_CRD_10_C01X_CAMP");
 							return 1;
 						case 11:
-							*iParam0 = joaat("p_crd_j_c01x_camp");
+							*iParam0 = joaat("P_CRD_J_C01X_CAMP");
 							return 1;
 						case 12:
-							*iParam0 = joaat("p_crd_q_c01x_camp");
+							*iParam0 = joaat("P_CRD_Q_C01X_CAMP");
 							return 1;
 						case 13:
-							*iParam0 = joaat("p_crd_k_c01x_camp");
+							*iParam0 = joaat("P_CRD_K_C01X_CAMP");
 							return 1;
-							*iParam0 = joaat("p_crd_a_c01x_camp");
+							*iParam0 = joaat("P_CRD_A_C01X_CAMP");
 							return 1;
 							Jump @2103; //curOff = 1365
 							switch (Param1)
 							{
 								case 2:
-									*iParam0 = joaat("p_crd_2_d01x_camp");
+									*iParam0 = joaat("P_CRD_2_D01X_CAMP");
 									return 1;
 								case 3:
-									*iParam0 = joaat("p_crd_3_d01x_camp");
+									*iParam0 = joaat("P_CRD_3_D01X_CAMP");
 									return 1;
 								case 4:
-									*iParam0 = joaat("p_crd_4_d01x_camp");
+									*iParam0 = joaat("P_CRD_4_D01X_CAMP");
 									return 1;
 								case 5:
-									*iParam0 = joaat("p_crd_5_d01x_camp");
+									*iParam0 = joaat("P_CRD_5_D01X_CAMP");
 									return 1;
 								case 6:
-									*iParam0 = joaat("p_crd_6_d01x_camp");
+									*iParam0 = joaat("P_CRD_6_D01X_CAMP");
 									return 1;
 								case 7:
-									*iParam0 = joaat("p_crd_7_d01x_camp");
+									*iParam0 = joaat("P_CRD_7_D01X_CAMP");
 									return 1;
 								case 8:
-									*iParam0 = joaat("p_crd_8_d01x_camp");
+									*iParam0 = joaat("P_CRD_8_D01X_CAMP");
 									return 1;
 								case 9:
-									*iParam0 = joaat("p_crd_9_d01x_camp");
+									*iParam0 = joaat("P_CRD_9_D01X_CAMP");
 									return 1;
 								case 10:
-									*iParam0 = joaat("p_crd_10_d01x_camp");
+									*iParam0 = joaat("P_CRD_10_D01X_CAMP");
 									return 1;
 								case 11:
-									*iParam0 = joaat("p_crd_j_d01x_camp");
+									*iParam0 = joaat("P_CRD_J_D01X_CAMP");
 									return 1;
 								case 12:
-									*iParam0 = joaat("p_crd_q_d01x_camp");
+									*iParam0 = joaat("P_CRD_Q_D01X_CAMP");
 									return 1;
 								case 13:
-									*iParam0 = joaat("p_crd_k_d01x_camp");
+									*iParam0 = joaat("P_CRD_K_D01X_CAMP");
 									return 1;
 								case 14:
-									*iParam0 = joaat("p_crd_a_d01x_camp");
+									*iParam0 = joaat("P_CRD_A_D01X_CAMP");
 									return 1;
 								default:
 									break;
@@ -11747,43 +11747,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 							switch (Param1)
 							{
 								case 2:
-									*iParam0 = joaat("p_crd_2_h01x_camp");
+									*iParam0 = joaat("P_CRD_2_H01X_CAMP");
 									return 1;
 								case 3:
-									*iParam0 = joaat("p_crd_3_h01x_camp");
+									*iParam0 = joaat("P_CRD_3_H01X_CAMP");
 									return 1;
 								case 4:
-									*iParam0 = joaat("p_crd_4_h01x_camp");
+									*iParam0 = joaat("P_CRD_4_H01X_CAMP");
 									return 1;
 								case 5:
-									*iParam0 = joaat("p_crd_5_h01x_camp");
+									*iParam0 = joaat("P_CRD_5_H01X_CAMP");
 									return 1;
 								case 6:
-									*iParam0 = joaat("p_crd_6_h01x_camp");
+									*iParam0 = joaat("P_CRD_6_H01X_CAMP");
 									return 1;
 								case 7:
-									*iParam0 = joaat("p_crd_7_h01x_camp");
+									*iParam0 = joaat("P_CRD_7_H01X_CAMP");
 									return 1;
 								case 8:
-									*iParam0 = joaat("p_crd_8_h01x_camp");
+									*iParam0 = joaat("P_CRD_8_H01X_CAMP");
 									return 1;
 								case 9:
-									*iParam0 = joaat("p_crd_9_h01x_camp");
+									*iParam0 = joaat("P_CRD_9_H01X_CAMP");
 									return 1;
 								case 10:
-									*iParam0 = joaat("p_crd_10_h01x_camp");
+									*iParam0 = joaat("P_CRD_10_H01X_CAMP");
 									return 1;
 								case 11:
-									*iParam0 = joaat("p_crd_j_h01x_camp");
+									*iParam0 = joaat("P_CRD_J_H01X_CAMP");
 									return 1;
 								case 12:
-									*iParam0 = joaat("p_crd_q_h01x_camp");
+									*iParam0 = joaat("P_CRD_Q_H01X_CAMP");
 									return 1;
 								case 13:
-									*iParam0 = joaat("p_crd_k_h01x_camp");
+									*iParam0 = joaat("P_CRD_K_H01X_CAMP");
 									return 1;
 								case 14:
-									*iParam0 = joaat("p_crd_a_h01x_camp");
+									*iParam0 = joaat("P_CRD_A_H01X_CAMP");
 									return 1;
 								default:
 									break;
@@ -11792,43 +11792,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 							switch (Param1)
 							{
 								case 2:
-									*iParam0 = joaat("p_crd_2_s01x_camp");
+									*iParam0 = joaat("P_CRD_2_S01X_CAMP");
 									return 1;
 								case 3:
-									*iParam0 = joaat("p_crd_3_s01x_camp");
+									*iParam0 = joaat("P_CRD_3_S01X_CAMP");
 									return 1;
 								case 4:
-									*iParam0 = joaat("p_crd_4_s01x_camp");
+									*iParam0 = joaat("P_CRD_4_S01X_CAMP");
 									return 1;
 								case 5:
-									*iParam0 = joaat("p_crd_5_s01x_camp");
+									*iParam0 = joaat("P_CRD_5_S01X_CAMP");
 									return 1;
 								case 6:
-									*iParam0 = joaat("p_crd_6_s01x_camp");
+									*iParam0 = joaat("P_CRD_6_S01X_CAMP");
 									return 1;
 								case 7:
-									*iParam0 = joaat("p_crd_7_s01x_camp");
+									*iParam0 = joaat("P_CRD_7_S01X_CAMP");
 									return 1;
 								case 8:
-									*iParam0 = joaat("p_crd_8_s01x_camp");
+									*iParam0 = joaat("P_CRD_8_S01X_CAMP");
 									return 1;
 								case 9:
-									*iParam0 = joaat("p_crd_9_s01x_camp");
+									*iParam0 = joaat("P_CRD_9_S01X_CAMP");
 									return 1;
 								case 10:
-									*iParam0 = joaat("p_crd_10_s01x_camp");
+									*iParam0 = joaat("P_CRD_10_S01X_CAMP");
 									return 1;
 								case 11:
-									*iParam0 = joaat("p_crd_j_s01x_camp");
+									*iParam0 = joaat("P_CRD_J_S01X_CAMP");
 									return 1;
 								case 12:
-									*iParam0 = joaat("p_crd_q_s01x_camp");
+									*iParam0 = joaat("P_CRD_Q_S01X_CAMP");
 									return 1;
 								case 13:
-									*iParam0 = joaat("p_crd_k_s01x_camp");
+									*iParam0 = joaat("P_CRD_K_S01X_CAMP");
 									return 1;
 								case 14:
-									*iParam0 = joaat("p_crd_a_s01x_camp");
+									*iParam0 = joaat("P_CRD_A_S01X_CAMP");
 									return 1;
 								default:
 									break;
@@ -11840,43 +11840,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_gk");
+											*iParam0 = joaat("P_CRD_2_C01X_GK");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_gk");
+											*iParam0 = joaat("P_CRD_3_C01X_GK");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_gk");
+											*iParam0 = joaat("P_CRD_4_C01X_GK");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_gk");
+											*iParam0 = joaat("P_CRD_5_C01X_GK");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_gk");
+											*iParam0 = joaat("P_CRD_6_C01X_GK");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_gk");
+											*iParam0 = joaat("P_CRD_7_C01X_GK");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_gk");
+											*iParam0 = joaat("P_CRD_8_C01X_GK");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_gk");
+											*iParam0 = joaat("P_CRD_9_C01X_GK");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_gk");
+											*iParam0 = joaat("P_CRD_10_C01X_GK");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_gk");
+											*iParam0 = joaat("P_CRD_J_C01X_GK");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_gk");
+											*iParam0 = joaat("P_CRD_Q_C01X_GK");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_gk");
+											*iParam0 = joaat("P_CRD_K_C01X_GK");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_gk");
+											*iParam0 = joaat("P_CRD_A_C01X_GK");
 											return 1;
 										default:
 											break;
@@ -11886,43 +11886,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_gk");
+											*iParam0 = joaat("P_CRD_2_D01X_GK");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_gk");
+											*iParam0 = joaat("P_CRD_3_D01X_GK");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_gk");
+											*iParam0 = joaat("P_CRD_4_D01X_GK");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_gk");
+											*iParam0 = joaat("P_CRD_5_D01X_GK");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_gk");
+											*iParam0 = joaat("P_CRD_6_D01X_GK");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_gk");
+											*iParam0 = joaat("P_CRD_7_D01X_GK");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_gk");
+											*iParam0 = joaat("P_CRD_8_D01X_GK");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_gk");
+											*iParam0 = joaat("P_CRD_9_D01X_GK");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_gk");
+											*iParam0 = joaat("P_CRD_10_D01X_GK");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_gk");
+											*iParam0 = joaat("P_CRD_J_D01X_GK");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_gk");
+											*iParam0 = joaat("P_CRD_Q_D01X_GK");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_gk");
+											*iParam0 = joaat("P_CRD_K_D01X_GK");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_gk");
+											*iParam0 = joaat("P_CRD_A_D01X_GK");
 											return 1;
 										default:
 											break;
@@ -11932,43 +11932,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_gk");
+											*iParam0 = joaat("P_CRD_2_H01X_GK");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_gk");
+											*iParam0 = joaat("P_CRD_3_H01X_GK");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_gk");
+											*iParam0 = joaat("P_CRD_4_H01X_GK");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_gk");
+											*iParam0 = joaat("P_CRD_5_H01X_GK");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_gk");
+											*iParam0 = joaat("P_CRD_6_H01X_GK");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_gk");
+											*iParam0 = joaat("P_CRD_7_H01X_GK");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_gk");
+											*iParam0 = joaat("P_CRD_8_H01X_GK");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_gk");
+											*iParam0 = joaat("P_CRD_9_H01X_GK");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_gk");
+											*iParam0 = joaat("P_CRD_10_H01X_GK");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_gk");
+											*iParam0 = joaat("P_CRD_J_H01X_GK");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_gk");
+											*iParam0 = joaat("P_CRD_Q_H01X_GK");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_gk");
+											*iParam0 = joaat("P_CRD_K_H01X_GK");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_gk");
+											*iParam0 = joaat("P_CRD_A_H01X_GK");
 											return 1;
 										default:
 											break;
@@ -11978,43 +11978,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_gk");
+											*iParam0 = joaat("P_CRD_2_S01X_GK");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_gk");
+											*iParam0 = joaat("P_CRD_3_S01X_GK");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_gk");
+											*iParam0 = joaat("P_CRD_4_S01X_GK");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_gk");
+											*iParam0 = joaat("P_CRD_5_S01X_GK");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_gk");
+											*iParam0 = joaat("P_CRD_6_S01X_GK");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_gk");
+											*iParam0 = joaat("P_CRD_7_S01X_GK");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_gk");
+											*iParam0 = joaat("P_CRD_8_S01X_GK");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_gk");
+											*iParam0 = joaat("P_CRD_9_S01X_GK");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_gk");
+											*iParam0 = joaat("P_CRD_10_S01X_GK");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_gk");
+											*iParam0 = joaat("P_CRD_J_S01X_GK");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_gk");
+											*iParam0 = joaat("P_CRD_Q_S01X_GK");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_gk");
+											*iParam0 = joaat("P_CRD_K_S01X_GK");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_gk");
+											*iParam0 = joaat("P_CRD_A_S01X_GK");
 											return 1;
 										default:
 											break;
@@ -12028,43 +12028,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_rho");
+											*iParam0 = joaat("P_CRD_2_C01X_RHO");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_rho");
+											*iParam0 = joaat("P_CRD_3_C01X_RHO");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_rho");
+											*iParam0 = joaat("P_CRD_4_C01X_RHO");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_rho");
+											*iParam0 = joaat("P_CRD_5_C01X_RHO");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_rho");
+											*iParam0 = joaat("P_CRD_6_C01X_RHO");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_rho");
+											*iParam0 = joaat("P_CRD_7_C01X_RHO");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_rho");
+											*iParam0 = joaat("P_CRD_8_C01X_RHO");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_rho");
+											*iParam0 = joaat("P_CRD_9_C01X_RHO");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_rho");
+											*iParam0 = joaat("P_CRD_10_C01X_RHO");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_rho");
+											*iParam0 = joaat("P_CRD_J_C01X_RHO");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_rho");
+											*iParam0 = joaat("P_CRD_Q_C01X_RHO");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_rho");
+											*iParam0 = joaat("P_CRD_K_C01X_RHO");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_rho");
+											*iParam0 = joaat("P_CRD_A_C01X_RHO");
 											return 1;
 										default:
 											break;
@@ -12074,43 +12074,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_rho");
+											*iParam0 = joaat("P_CRD_2_D01X_RHO");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_rho");
+											*iParam0 = joaat("P_CRD_3_D01X_RHO");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_rho");
+											*iParam0 = joaat("P_CRD_4_D01X_RHO");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_rho");
+											*iParam0 = joaat("P_CRD_5_D01X_RHO");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_rho");
+											*iParam0 = joaat("P_CRD_6_D01X_RHO");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_rho");
+											*iParam0 = joaat("P_CRD_7_D01X_RHO");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_rho");
+											*iParam0 = joaat("P_CRD_8_D01X_RHO");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_rho");
+											*iParam0 = joaat("P_CRD_9_D01X_RHO");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_rho");
+											*iParam0 = joaat("P_CRD_10_D01X_RHO");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_rho");
+											*iParam0 = joaat("P_CRD_J_D01X_RHO");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_rho");
+											*iParam0 = joaat("P_CRD_Q_D01X_RHO");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_rho");
+											*iParam0 = joaat("P_CRD_K_D01X_RHO");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_rho");
+											*iParam0 = joaat("P_CRD_A_D01X_RHO");
 											return 1;
 										default:
 											break;
@@ -12120,43 +12120,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_rho");
+											*iParam0 = joaat("P_CRD_2_H01X_RHO");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_rho");
+											*iParam0 = joaat("P_CRD_3_H01X_RHO");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_rho");
+											*iParam0 = joaat("P_CRD_4_H01X_RHO");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_rho");
+											*iParam0 = joaat("P_CRD_5_H01X_RHO");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_rho");
+											*iParam0 = joaat("P_CRD_6_H01X_RHO");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_rho");
+											*iParam0 = joaat("P_CRD_7_H01X_RHO");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_rho");
+											*iParam0 = joaat("P_CRD_8_H01X_RHO");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_rho");
+											*iParam0 = joaat("P_CRD_9_H01X_RHO");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_rho");
+											*iParam0 = joaat("P_CRD_10_H01X_RHO");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_rho");
+											*iParam0 = joaat("P_CRD_J_H01X_RHO");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_rho");
+											*iParam0 = joaat("P_CRD_Q_H01X_RHO");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_rho");
+											*iParam0 = joaat("P_CRD_K_H01X_RHO");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_rho");
+											*iParam0 = joaat("P_CRD_A_H01X_RHO");
 											return 1;
 										default:
 											break;
@@ -12166,43 +12166,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_rho");
+											*iParam0 = joaat("P_CRD_2_S01X_RHO");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_rho");
+											*iParam0 = joaat("P_CRD_3_S01X_RHO");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_rho");
+											*iParam0 = joaat("P_CRD_4_S01X_RHO");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_rho");
+											*iParam0 = joaat("P_CRD_5_S01X_RHO");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_rho");
+											*iParam0 = joaat("P_CRD_6_S01X_RHO");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_rho");
+											*iParam0 = joaat("P_CRD_7_S01X_RHO");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_rho");
+											*iParam0 = joaat("P_CRD_8_S01X_RHO");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_rho");
+											*iParam0 = joaat("P_CRD_9_S01X_RHO");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_rho");
+											*iParam0 = joaat("P_CRD_10_S01X_RHO");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_rho");
+											*iParam0 = joaat("P_CRD_J_S01X_RHO");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_rho");
+											*iParam0 = joaat("P_CRD_Q_S01X_RHO");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_rho");
+											*iParam0 = joaat("P_CRD_K_S01X_RHO");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_rho");
+											*iParam0 = joaat("P_CRD_A_S01X_RHO");
 											return 1;
 										default:
 											break;
@@ -12216,43 +12216,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_rrs");
+											*iParam0 = joaat("P_CRD_2_C01X_RRS");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_rrs");
+											*iParam0 = joaat("P_CRD_3_C01X_RRS");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_rrs");
+											*iParam0 = joaat("P_CRD_4_C01X_RRS");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_rrs");
+											*iParam0 = joaat("P_CRD_5_C01X_RRS");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_rrs");
+											*iParam0 = joaat("P_CRD_6_C01X_RRS");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_rrs");
+											*iParam0 = joaat("P_CRD_7_C01X_RRS");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_rrs");
+											*iParam0 = joaat("P_CRD_8_C01X_RRS");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_rrs");
+											*iParam0 = joaat("P_CRD_9_C01X_RRS");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_rrs");
+											*iParam0 = joaat("P_CRD_10_C01X_RRS");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_rrs");
+											*iParam0 = joaat("P_CRD_J_C01X_RRS");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_rrs");
+											*iParam0 = joaat("P_CRD_Q_C01X_RRS");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_rrs");
+											*iParam0 = joaat("P_CRD_K_C01X_RRS");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_rrs");
+											*iParam0 = joaat("P_CRD_A_C01X_RRS");
 											return 1;
 										default:
 											break;
@@ -12262,43 +12262,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_rrs");
+											*iParam0 = joaat("P_CRD_2_D01X_RRS");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_rrs");
+											*iParam0 = joaat("P_CRD_3_D01X_RRS");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_rrs");
+											*iParam0 = joaat("P_CRD_4_D01X_RRS");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_rrs");
+											*iParam0 = joaat("P_CRD_5_D01X_RRS");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_rrs");
+											*iParam0 = joaat("P_CRD_6_D01X_RRS");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_rrs");
+											*iParam0 = joaat("P_CRD_7_D01X_RRS");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_rrs");
+											*iParam0 = joaat("P_CRD_8_D01X_RRS");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_rrs");
+											*iParam0 = joaat("P_CRD_9_D01X_RRS");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_rrs");
+											*iParam0 = joaat("P_CRD_10_D01X_RRS");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_rrs");
+											*iParam0 = joaat("P_CRD_J_D01X_RRS");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_rrs");
+											*iParam0 = joaat("P_CRD_Q_D01X_RRS");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_rrs");
+											*iParam0 = joaat("P_CRD_K_D01X_RRS");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_rrs");
+											*iParam0 = joaat("P_CRD_A_D01X_RRS");
 											return 1;
 										default:
 											break;
@@ -12308,43 +12308,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_rrs");
+											*iParam0 = joaat("P_CRD_2_H01X_RRS");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_rrs");
+											*iParam0 = joaat("P_CRD_3_H01X_RRS");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_rrs");
+											*iParam0 = joaat("P_CRD_4_H01X_RRS");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_rrs");
+											*iParam0 = joaat("P_CRD_5_H01X_RRS");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_rrs");
+											*iParam0 = joaat("P_CRD_6_H01X_RRS");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_rrs");
+											*iParam0 = joaat("P_CRD_7_H01X_RRS");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_rrs");
+											*iParam0 = joaat("P_CRD_8_H01X_RRS");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_rrs");
+											*iParam0 = joaat("P_CRD_9_H01X_RRS");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_rrs");
+											*iParam0 = joaat("P_CRD_10_H01X_RRS");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_rrs");
+											*iParam0 = joaat("P_CRD_J_H01X_RRS");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_rrs");
+											*iParam0 = joaat("P_CRD_Q_H01X_RRS");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_rrs");
+											*iParam0 = joaat("P_CRD_K_H01X_RRS");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_rrs");
+											*iParam0 = joaat("P_CRD_A_H01X_RRS");
 											return 1;
 										default:
 											break;
@@ -12354,43 +12354,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_rrs");
+											*iParam0 = joaat("P_CRD_2_S01X_RRS");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_rrs");
+											*iParam0 = joaat("P_CRD_3_S01X_RRS");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_rrs");
+											*iParam0 = joaat("P_CRD_4_S01X_RRS");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_rrs");
+											*iParam0 = joaat("P_CRD_5_S01X_RRS");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_rrs");
+											*iParam0 = joaat("P_CRD_6_S01X_RRS");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_rrs");
+											*iParam0 = joaat("P_CRD_7_S01X_RRS");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_rrs");
+											*iParam0 = joaat("P_CRD_8_S01X_RRS");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_rrs");
+											*iParam0 = joaat("P_CRD_9_S01X_RRS");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_rrs");
+											*iParam0 = joaat("P_CRD_10_S01X_RRS");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_rrs");
+											*iParam0 = joaat("P_CRD_J_S01X_RRS");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_rrs");
+											*iParam0 = joaat("P_CRD_Q_S01X_RRS");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_rrs");
+											*iParam0 = joaat("P_CRD_K_S01X_RRS");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_rrs");
+											*iParam0 = joaat("P_CRD_A_S01X_RRS");
 											return 1;
 										default:
 											break;
@@ -12404,43 +12404,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_2_C01X_STD_LABASTILLE");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_3_C01X_STD_LABASTILLE");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_4_C01X_STD_LABASTILLE");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_5_C01X_STD_LABASTILLE");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_6_C01X_STD_LABASTILLE");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_7_C01X_STD_LABASTILLE");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_8_C01X_STD_LABASTILLE");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_9_C01X_STD_LABASTILLE");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_10_C01X_STD_LABASTILLE");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_J_C01X_STD_LABASTILLE");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_Q_C01X_STD_LABASTILLE");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_K_C01X_STD_LABASTILLE");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_std_labastille");
+											*iParam0 = joaat("P_CRD_A_C01X_STD_LABASTILLE");
 											return 1;
 										default:
 											break;
@@ -12450,43 +12450,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_2_D01X_STD_LABASTILLE");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_3_D01X_STD_LABASTILLE");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_4_D01X_STD_LABASTILLE");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_5_D01X_STD_LABASTILLE");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_6_D01X_STD_LABASTILLE");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_7_D01X_STD_LABASTILLE");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_8_D01X_STD_LABASTILLE");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_9_D01X_STD_LABASTILLE");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_10_D01X_STD_LABASTILLE");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_J_D01X_STD_LABASTILLE");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_Q_D01X_STD_LABASTILLE");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_K_D01X_STD_LABASTILLE");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_std_labastille");
+											*iParam0 = joaat("P_CRD_A_D01X_STD_LABASTILLE");
 											return 1;
 										default:
 											break;
@@ -12496,43 +12496,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_2_H01X_STD_LABASTILLE");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_3_H01X_STD_LABASTILLE");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_4_H01X_STD_LABASTILLE");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_5_H01X_STD_LABASTILLE");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_6_H01X_STD_LABASTILLE");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_7_H01X_STD_LABASTILLE");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_8_H01X_STD_LABASTILLE");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_9_H01X_STD_LABASTILLE");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_10_H01X_STD_LABASTILLE");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_J_H01X_STD_LABASTILLE");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_Q_H01X_STD_LABASTILLE");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_K_H01X_STD_LABASTILLE");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_std_labastille");
+											*iParam0 = joaat("P_CRD_A_H01X_STD_LABASTILLE");
 											return 1;
 										default:
 											break;
@@ -12542,43 +12542,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_2_S01X_STD_LABASTILLE");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_3_S01X_STD_LABASTILLE");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_4_S01X_STD_LABASTILLE");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_5_S01X_STD_LABASTILLE");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_6_S01X_STD_LABASTILLE");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_7_S01X_STD_LABASTILLE");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_8_S01X_STD_LABASTILLE");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_9_S01X_STD_LABASTILLE");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_10_S01X_STD_LABASTILLE");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_J_S01X_STD_LABASTILLE");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_Q_S01X_STD_LABASTILLE");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_K_S01X_STD_LABASTILLE");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_std_labastille");
+											*iParam0 = joaat("P_CRD_A_S01X_STD_LABASTILLE");
 											return 1;
 										default:
 											break;
@@ -12592,43 +12592,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_2_C01X_STD_OPIUM");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_3_C01X_STD_OPIUM");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_4_C01X_STD_OPIUM");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_5_C01X_STD_OPIUM");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_6_C01X_STD_OPIUM");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_7_C01X_STD_OPIUM");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_8_C01X_STD_OPIUM");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_9_C01X_STD_OPIUM");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_10_C01X_STD_OPIUM");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_J_C01X_STD_OPIUM");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_Q_C01X_STD_OPIUM");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_K_C01X_STD_OPIUM");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_std_opium");
+											*iParam0 = joaat("P_CRD_A_C01X_STD_OPIUM");
 											return 1;
 										default:
 											break;
@@ -12638,43 +12638,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_2_D01X_STD_OPIUM");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_3_D01X_STD_OPIUM");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_4_D01X_STD_OPIUM");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_5_D01X_STD_OPIUM");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_6_D01X_STD_OPIUM");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_7_D01X_STD_OPIUM");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_8_D01X_STD_OPIUM");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_9_D01X_STD_OPIUM");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_10_D01X_STD_OPIUM");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_J_D01X_STD_OPIUM");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_Q_D01X_STD_OPIUM");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_K_D01X_STD_OPIUM");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_std_opium");
+											*iParam0 = joaat("P_CRD_A_D01X_STD_OPIUM");
 											return 1;
 										default:
 											break;
@@ -12684,43 +12684,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_2_H01X_STD_OPIUM");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_3_H01X_STD_OPIUM");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_4_H01X_STD_OPIUM");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_5_H01X_STD_OPIUM");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_6_H01X_STD_OPIUM");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_7_H01X_STD_OPIUM");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_8_H01X_STD_OPIUM");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_9_H01X_STD_OPIUM");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_10_H01X_STD_OPIUM");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_J_H01X_STD_OPIUM");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_Q_H01X_STD_OPIUM");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_K_H01X_STD_OPIUM");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_std_opium");
+											*iParam0 = joaat("P_CRD_A_H01X_STD_OPIUM");
 											return 1;
 										default:
 											break;
@@ -12730,43 +12730,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_2_S01X_STD_OPIUM");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_3_S01X_STD_OPIUM");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_4_S01X_STD_OPIUM");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_5_S01X_STD_OPIUM");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_6_S01X_STD_OPIUM");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_7_S01X_STD_OPIUM");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_8_S01X_STD_OPIUM");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_9_S01X_STD_OPIUM");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_10_S01X_STD_OPIUM");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_J_S01X_STD_OPIUM");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_Q_S01X_STD_OPIUM");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_K_S01X_STD_OPIUM");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_std_opium");
+											*iParam0 = joaat("P_CRD_A_S01X_STD_OPIUM");
 											return 1;
 										default:
 											break;
@@ -12780,43 +12780,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_val");
+											*iParam0 = joaat("P_CRD_2_C01X_VAL");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_val");
+											*iParam0 = joaat("P_CRD_3_C01X_VAL");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_val");
+											*iParam0 = joaat("P_CRD_4_C01X_VAL");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_val");
+											*iParam0 = joaat("P_CRD_5_C01X_VAL");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_val");
+											*iParam0 = joaat("P_CRD_6_C01X_VAL");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_val");
+											*iParam0 = joaat("P_CRD_7_C01X_VAL");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_val");
+											*iParam0 = joaat("P_CRD_8_C01X_VAL");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_val");
+											*iParam0 = joaat("P_CRD_9_C01X_VAL");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_val");
+											*iParam0 = joaat("P_CRD_10_C01X_VAL");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_val");
+											*iParam0 = joaat("P_CRD_J_C01X_VAL");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_val");
+											*iParam0 = joaat("P_CRD_Q_C01X_VAL");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_val");
+											*iParam0 = joaat("P_CRD_K_C01X_VAL");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_val");
+											*iParam0 = joaat("P_CRD_A_C01X_VAL");
 											return 1;
 										default:
 											break;
@@ -12826,43 +12826,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_val");
+											*iParam0 = joaat("P_CRD_2_D01X_VAL");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_val");
+											*iParam0 = joaat("P_CRD_3_D01X_VAL");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_val");
+											*iParam0 = joaat("P_CRD_4_D01X_VAL");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_val");
+											*iParam0 = joaat("P_CRD_5_D01X_VAL");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_val");
+											*iParam0 = joaat("P_CRD_6_D01X_VAL");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_val");
+											*iParam0 = joaat("P_CRD_7_D01X_VAL");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_val");
+											*iParam0 = joaat("P_CRD_8_D01X_VAL");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_val");
+											*iParam0 = joaat("P_CRD_9_D01X_VAL");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_val");
+											*iParam0 = joaat("P_CRD_10_D01X_VAL");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_val");
+											*iParam0 = joaat("P_CRD_J_D01X_VAL");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_val");
+											*iParam0 = joaat("P_CRD_Q_D01X_VAL");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_val");
+											*iParam0 = joaat("P_CRD_K_D01X_VAL");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_val");
+											*iParam0 = joaat("P_CRD_A_D01X_VAL");
 											return 1;
 										default:
 											break;
@@ -12872,43 +12872,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_val");
+											*iParam0 = joaat("P_CRD_2_H01X_VAL");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_val");
+											*iParam0 = joaat("P_CRD_3_H01X_VAL");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_val");
+											*iParam0 = joaat("P_CRD_4_H01X_VAL");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_val");
+											*iParam0 = joaat("P_CRD_5_H01X_VAL");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_val");
+											*iParam0 = joaat("P_CRD_6_H01X_VAL");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_val");
+											*iParam0 = joaat("P_CRD_7_H01X_VAL");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_val");
+											*iParam0 = joaat("P_CRD_8_H01X_VAL");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_val");
+											*iParam0 = joaat("P_CRD_9_H01X_VAL");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_val");
+											*iParam0 = joaat("P_CRD_10_H01X_VAL");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_val");
+											*iParam0 = joaat("P_CRD_J_H01X_VAL");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_val");
+											*iParam0 = joaat("P_CRD_Q_H01X_VAL");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_val");
+											*iParam0 = joaat("P_CRD_K_H01X_VAL");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_val");
+											*iParam0 = joaat("P_CRD_A_H01X_VAL");
 											return 1;
 										default:
 											break;
@@ -12918,43 +12918,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_val");
+											*iParam0 = joaat("P_CRD_2_S01X_VAL");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_val");
+											*iParam0 = joaat("P_CRD_3_S01X_VAL");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_val");
+											*iParam0 = joaat("P_CRD_4_S01X_VAL");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_val");
+											*iParam0 = joaat("P_CRD_5_S01X_VAL");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_val");
+											*iParam0 = joaat("P_CRD_6_S01X_VAL");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_val");
+											*iParam0 = joaat("P_CRD_7_S01X_VAL");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_val");
+											*iParam0 = joaat("P_CRD_8_S01X_VAL");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_val");
+											*iParam0 = joaat("P_CRD_9_S01X_VAL");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_val");
+											*iParam0 = joaat("P_CRD_10_S01X_VAL");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_val");
+											*iParam0 = joaat("P_CRD_J_S01X_VAL");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_val");
+											*iParam0 = joaat("P_CRD_Q_S01X_VAL");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_val");
+											*iParam0 = joaat("P_CRD_K_S01X_VAL");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_val");
+											*iParam0 = joaat("P_CRD_A_S01X_VAL");
 											return 1;
 										default:
 											break;
@@ -12968,43 +12968,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_c01x_van");
+											*iParam0 = joaat("P_CRD_2_C01X_VAN");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_c01x_van");
+											*iParam0 = joaat("P_CRD_3_C01X_VAN");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_c01x_van");
+											*iParam0 = joaat("P_CRD_4_C01X_VAN");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_c01x_van");
+											*iParam0 = joaat("P_CRD_5_C01X_VAN");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_c01x_van");
+											*iParam0 = joaat("P_CRD_6_C01X_VAN");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_c01x_van");
+											*iParam0 = joaat("P_CRD_7_C01X_VAN");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_c01x_van");
+											*iParam0 = joaat("P_CRD_8_C01X_VAN");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_c01x_van");
+											*iParam0 = joaat("P_CRD_9_C01X_VAN");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_c01x_van");
+											*iParam0 = joaat("P_CRD_10_C01X_VAN");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_c01x_van");
+											*iParam0 = joaat("P_CRD_J_C01X_VAN");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_c01x_van");
+											*iParam0 = joaat("P_CRD_Q_C01X_VAN");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_c01x_van");
+											*iParam0 = joaat("P_CRD_K_C01X_VAN");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_c01x_van");
+											*iParam0 = joaat("P_CRD_A_C01X_VAN");
 											return 1;
 										default:
 											break;
@@ -13014,43 +13014,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_d01x_van");
+											*iParam0 = joaat("P_CRD_2_D01X_VAN");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_d01x_van");
+											*iParam0 = joaat("P_CRD_3_D01X_VAN");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_d01x_van");
+											*iParam0 = joaat("P_CRD_4_D01X_VAN");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_d01x_van");
+											*iParam0 = joaat("P_CRD_5_D01X_VAN");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_d01x_van");
+											*iParam0 = joaat("P_CRD_6_D01X_VAN");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_d01x_van");
+											*iParam0 = joaat("P_CRD_7_D01X_VAN");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_d01x_van");
+											*iParam0 = joaat("P_CRD_8_D01X_VAN");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_d01x_van");
+											*iParam0 = joaat("P_CRD_9_D01X_VAN");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_d01x_van");
+											*iParam0 = joaat("P_CRD_10_D01X_VAN");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_d01x_van");
+											*iParam0 = joaat("P_CRD_J_D01X_VAN");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_d01x_van");
+											*iParam0 = joaat("P_CRD_Q_D01X_VAN");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_d01x_van");
+											*iParam0 = joaat("P_CRD_K_D01X_VAN");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_d01x_van");
+											*iParam0 = joaat("P_CRD_A_D01X_VAN");
 											return 1;
 										default:
 											break;
@@ -13060,43 +13060,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_h01x_van");
+											*iParam0 = joaat("P_CRD_2_H01X_VAN");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_h01x_van");
+											*iParam0 = joaat("P_CRD_3_H01X_VAN");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_h01x_van");
+											*iParam0 = joaat("P_CRD_4_H01X_VAN");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_h01x_van");
+											*iParam0 = joaat("P_CRD_5_H01X_VAN");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_h01x_van");
+											*iParam0 = joaat("P_CRD_6_H01X_VAN");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_h01x_van");
+											*iParam0 = joaat("P_CRD_7_H01X_VAN");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_h01x_van");
+											*iParam0 = joaat("P_CRD_8_H01X_VAN");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_h01x_van");
+											*iParam0 = joaat("P_CRD_9_H01X_VAN");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_h01x_van");
+											*iParam0 = joaat("P_CRD_10_H01X_VAN");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_h01x_van");
+											*iParam0 = joaat("P_CRD_J_H01X_VAN");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_h01x_van");
+											*iParam0 = joaat("P_CRD_Q_H01X_VAN");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_h01x_van");
+											*iParam0 = joaat("P_CRD_K_H01X_VAN");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_h01x_van");
+											*iParam0 = joaat("P_CRD_A_H01X_VAN");
 											return 1;
 										default:
 											break;
@@ -13106,43 +13106,43 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 									switch (Param1)
 									{
 										case 2:
-											*iParam0 = joaat("p_crd_2_s01x_van");
+											*iParam0 = joaat("P_CRD_2_S01X_VAN");
 											return 1;
 										case 3:
-											*iParam0 = joaat("p_crd_3_s01x_van");
+											*iParam0 = joaat("P_CRD_3_S01X_VAN");
 											return 1;
 										case 4:
-											*iParam0 = joaat("p_crd_4_s01x_van");
+											*iParam0 = joaat("P_CRD_4_S01X_VAN");
 											return 1;
 										case 5:
-											*iParam0 = joaat("p_crd_5_s01x_van");
+											*iParam0 = joaat("P_CRD_5_S01X_VAN");
 											return 1;
 										case 6:
-											*iParam0 = joaat("p_crd_6_s01x_van");
+											*iParam0 = joaat("P_CRD_6_S01X_VAN");
 											return 1;
 										case 7:
-											*iParam0 = joaat("p_crd_7_s01x_van");
+											*iParam0 = joaat("P_CRD_7_S01X_VAN");
 											return 1;
 										case 8:
-											*iParam0 = joaat("p_crd_8_s01x_van");
+											*iParam0 = joaat("P_CRD_8_S01X_VAN");
 											return 1;
 										case 9:
-											*iParam0 = joaat("p_crd_9_s01x_van");
+											*iParam0 = joaat("P_CRD_9_S01X_VAN");
 											return 1;
 										case 10:
-											*iParam0 = joaat("p_crd_10_s01x_van");
+											*iParam0 = joaat("P_CRD_10_S01X_VAN");
 											return 1;
 										case 11:
-											*iParam0 = joaat("p_crd_j_s01x_van");
+											*iParam0 = joaat("P_CRD_J_S01X_VAN");
 											return 1;
 										case 12:
-											*iParam0 = joaat("p_crd_q_s01x_van");
+											*iParam0 = joaat("P_CRD_Q_S01X_VAN");
 											return 1;
 										case 13:
-											*iParam0 = joaat("p_crd_k_s01x_van");
+											*iParam0 = joaat("P_CRD_K_S01X_VAN");
 											return 1;
 										case 14:
-											*iParam0 = joaat("p_crd_a_s01x_van");
+											*iParam0 = joaat("P_CRD_A_S01X_VAN");
 											return 1;
 										default:
 											break;
@@ -13154,31 +13154,31 @@ int func_279(int iParam0, struct<2> Param1, int iParam3, bool bParam4)
 							switch (iParam3)
 							{
 								case 0:
-									*iParam0 = joaat("p_crd_01x_bla");
+									*iParam0 = joaat("P_CRD_01X_BLA");
 									return 0;
 								case 1:
-									*iParam0 = joaat("p_crd_01x_camp");
+									*iParam0 = joaat("P_CRD_01X_CAMP");
 									return 0;
 								case 2:
-									*iParam0 = joaat("p_crd_01x_gk");
+									*iParam0 = joaat("P_CRD_01X_GK");
 									return 0;
 								case 3:
-									*iParam0 = joaat("p_crd_01x_rho");
+									*iParam0 = joaat("P_CRD_01X_RHO");
 									return 0;
 								case 4:
-									*iParam0 = joaat("p_crd_01x_rrs");
+									*iParam0 = joaat("P_CRD_01X_RRS");
 									return 0;
 								case 5:
-									*iParam0 = joaat("p_crd_01x_std_labastille");
+									*iParam0 = joaat("P_CRD_01X_STD_LABASTILLE");
 									return 0;
 								case 6:
-									*iParam0 = joaat("p_crd_01x_std_opium");
+									*iParam0 = joaat("P_CRD_01X_STD_OPIUM");
 									return 0;
 								case 7:
-									*iParam0 = joaat("p_crd_01x_val");
+									*iParam0 = joaat("P_CRD_01X_VAL");
 									return 0;
 								case 8:
-									*iParam0 = joaat("p_crd_01x_van");
+									*iParam0 = joaat("P_CRD_01X_VAN");
 									return 0;
 								default:
 									break;
@@ -14065,31 +14065,31 @@ int func_307(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 0:
-			*uParam0 = joaat("p_cardssplit01x_bla");
+			*uParam0 = joaat("P_CARDSSPLIT01X_BLA");
 			return 1;
 		case 1:
-			*uParam0 = joaat("p_cardssplit01x_camp");
+			*uParam0 = joaat("P_CARDSSPLIT01X_CAMP");
 			return 1;
 		case 2:
-			*uParam0 = joaat("p_cardssplit01x_gk");
+			*uParam0 = joaat("P_CARDSSPLIT01X_GK");
 			return 1;
 		case 3:
-			*uParam0 = joaat("p_cardssplit01x_rho");
+			*uParam0 = joaat("P_CARDSSPLIT01X_RHO");
 			return 1;
 		case 4:
-			*uParam0 = joaat("p_cardssplit01x_rrs");
+			*uParam0 = joaat("P_CARDSSPLIT01X_RRS");
 			return 1;
 		case 5:
-			*uParam0 = joaat("p_cardssplit01x_std_labastille");
+			*uParam0 = joaat("P_CARDSSPLIT01X_STD_LABASTILLE");
 			return 1;
 		case 6:
-			*uParam0 = joaat("p_cardssplit01x_std_opium");
+			*uParam0 = joaat("P_CARDSSPLIT01X_STD_OPIUM");
 			return 1;
 		case 7:
-			*uParam0 = joaat("p_cardssplit01x_val");
+			*uParam0 = joaat("P_CARDSSPLIT01X_VAL");
 			return 1;
 		case 8:
-			*uParam0 = joaat("p_cardssplit01x_van");
+			*uParam0 = joaat("P_CARDSSPLIT01X_VAN");
 			return 1;
 		default:
 			break;

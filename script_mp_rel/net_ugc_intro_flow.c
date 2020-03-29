@@ -127,7 +127,7 @@ void __EntryFunction__()
 			}
 			else
 			{
-				if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("net_ugc_end_flow")) == 0)
+				if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("NET_UGC_END_FLOW")) == 0)
 				{
 					func_15(0);
 				}
@@ -138,7 +138,7 @@ void __EntryFunction__()
 				}
 			}
 		}
-		else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("net_ugc_end_flow")) != 0)
+		else if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("NET_UGC_END_FLOW")) != 0)
 		{
 		}
 		else if (func_11() && func_9())
@@ -993,13 +993,13 @@ void func_35(var uParam0, bool bParam1, bool bParam2)
 
 void func_36()
 {
-	if (UIAPPS::_IS_APP_RUNNING(joaat("pause_menu")) || UIAPPS::_IS_APP_ACTIVE(joaat("pause_menu")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("PAUSE_MENU")) || UIAPPS::_IS_APP_ACTIVE(joaat("PAUSE_MENU")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("pause_menu"));
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("PAUSE_MENU"));
 	}
-	if (UIAPPS::_IS_APP_RUNNING(joaat("abilities")) || UIAPPS::_IS_APP_ACTIVE(joaat("abilities")))
+	if (UIAPPS::_IS_APP_RUNNING(joaat("ABILITIES")) || UIAPPS::_IS_APP_ACTIVE(joaat("ABILITIES")))
 	{
-		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("abilities"));
+		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("ABILITIES"));
 	}
 	if (func_67())
 	{
@@ -2273,8 +2273,8 @@ int func_79()
 		}
 		else
 		{
-			iLocal_53[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), *(Global_3145858->f_38605[iLocal_42 /*22*/]), (Global_3145858->f_38605[iLocal_42 /*22*/])->f_6, (Global_3145858->f_38605[iLocal_42 /*22*/])->f_12, false, 2);
-			iLocal_53[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), (Global_3145858->f_38605[iLocal_42 /*22*/])->f_3, (Global_3145858->f_38605[iLocal_42 /*22*/])->f_9, (Global_3145858->f_38605[iLocal_42 /*22*/])->f_13, false, 2);
+			iLocal_53[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), *(Global_3145858->f_38605[iLocal_42 /*22*/]), (Global_3145858->f_38605[iLocal_42 /*22*/])->f_6, (Global_3145858->f_38605[iLocal_42 /*22*/])->f_12, false, 2);
+			iLocal_53[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), (Global_3145858->f_38605[iLocal_42 /*22*/])->f_3, (Global_3145858->f_38605[iLocal_42 /*22*/])->f_9, (Global_3145858->f_38605[iLocal_42 /*22*/])->f_13, false, 2);
 		}
 	}
 	if (MISC::IS_BIT_SET(iLocal_46, 3))
@@ -2695,8 +2695,8 @@ int func_92(vector3 vParam0, bool bParam3)
 
 void func_93(vector3 vParam0, vector3 vParam3, float fParam6)
 {
-	iLocal_53[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vParam0, vParam3, fParam6, false, 2);
-	iLocal_53[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vParam0, vParam3, fParam6, false, 2);
+	iLocal_53[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vParam0, vParam3, fParam6, false, 2);
+	iLocal_53[1] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vParam0, vParam3, fParam6, false, 2);
 }
 
 int func_94()
@@ -2746,7 +2746,7 @@ void func_95(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 
 	vVar0 = { CAM::GET_GAMEPLAY_CAM_COORD() };
 	vVar3 = { CAM::GET_GAMEPLAY_CAM_ROT(2) };
-	iLocal_56[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("default_scripted_camera"), vVar0, vVar3, 65f, false, 2);
+	iLocal_56[0] = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), vVar0, vVar3, 65f, false, 2);
 	if (bParam1)
 	{
 	}

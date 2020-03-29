@@ -924,8 +924,8 @@ void func_42(var uParam0)
 	Local_20.f_41 = "script_mar5_milkcow_bucket";
 	Local_20.f_42 = "MGMLK";
 	Local_20.f_135 = "MAR5_Sounds";
-	STREAMING::REQUEST_MODEL(joaat("p_stool02x"), false);
-	STREAMING::REQUEST_MODEL(joaat("s_bucketmilk01x"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_STOOL02X"), false);
+	STREAMING::REQUEST_MODEL(joaat("S_BUCKETMILK01X"), false);
 	STREAMING::_0x2B6529C54D29037A(Local_20.f_39);
 	STREAMING::_0x2B6529C54D29037A(Local_20.f_40);
 	STREAMING::_0x2B6529C54D29037A(Local_20.f_41);
@@ -988,11 +988,11 @@ int func_43(var uParam0)
 
 int func_44(var uParam0)
 {
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_stool02x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_STOOL02X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("s_bucketmilk01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("S_BUCKETMILK01X")))
 	{
 		return 0;
 	}
@@ -1295,7 +1295,7 @@ int func_65(var uParam0)
 			func_125(&Local_20, 4);
 			break;
 		case 4:
-			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")))
+			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GAMEFINISHED")))
 			{
 				PED::SET_PED_CAN_LEG_IK(Global_35, true);
 				PED::SET_PED_LEG_IK_MODE(Global_35, 2);
@@ -1599,7 +1599,7 @@ int func_79(bool bParam0)
 	{
 		return 0;
 	}
-	LAW::_0xC61EDEBF16CD9668(joaat("BountyHuntersGlobalCooldown"), bParam0, 0);
+	LAW::_0xC61EDEBF16CD9668(joaat("BOUNTYHUNTERSGLOBALCOOLDOWN"), bParam0, 0);
 	return 1;
 }
 
@@ -2002,7 +2002,7 @@ int func_111(var uParam0, vector3 vParam1)
 	while (iVar3 < iVar2)
 	{
 		iVar4 = MISC::_0x3FFB15534067DCD4(ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar3, iVar0));
-		if ((ENTITY::DOES_ENTITY_EXIST(iVar4) && !PED::IS_PED_INJURED(iVar4)) && ENTITY::GET_ENTITY_MODEL(iVar4) == joaat("a_c_cow"))
+		if ((ENTITY::DOES_ENTITY_EXIST(iVar4) && !PED::IS_PED_INJURED(iVar4)) && ENTITY::GET_ENTITY_MODEL(iVar4) == joaat("A_C_COW"))
 		{
 			*uParam0 = iVar4;
 			func_167(bVar1);
@@ -2022,10 +2022,10 @@ int func_112(vector3 vParam0)
 {
 	int iVar0;
 
-	iVar0 = func_168(vParam0, joaat("p_stool02x"), 4f, 1);
+	iVar0 = func_168(vParam0, joaat("P_STOOL02X"), 4f, 1);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
-		iVar0 = OBJECT::CREATE_OBJECT(joaat("p_stool02x"), vParam0, true, true, false, false, false);
+		iVar0 = OBJECT::CREATE_OBJECT(joaat("P_STOOL02X"), vParam0, true, true, false, false, false);
 	}
 	ENTITY::SET_ENTITY_COORDS(iVar0, vParam0, true, false, true, true);
 	ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
@@ -2038,15 +2038,15 @@ int func_113(vector3 vParam0)
 
 	if (func_55(61))
 	{
-		iVar0 = func_168(vParam0, joaat("s_bucketmilk01x"), 0.2f, 1);
+		iVar0 = func_168(vParam0, joaat("S_BUCKETMILK01X"), 0.2f, 1);
 	}
 	else
 	{
-		iVar0 = func_168(vParam0, joaat("s_bucketmilk01x"), 4f, 1);
+		iVar0 = func_168(vParam0, joaat("S_BUCKETMILK01X"), 4f, 1);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
-		iVar0 = OBJECT::CREATE_OBJECT(joaat("s_bucketmilk01x"), vParam0, true, true, false, false, false);
+		iVar0 = OBJECT::CREATE_OBJECT(joaat("S_BUCKETMILK01X"), vParam0, true, true, false, false, false);
 	}
 	ENTITY::SET_ENTITY_COORDS(iVar0, vParam0, true, false, true, true);
 	ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
@@ -2144,10 +2144,10 @@ void func_118(int iParam0)
 		func_171(-859971527, Global_35, 0, 1);
 	}
 	iParam0->f_43.f_30 = "Milking";
-	iParam0->f_43.f_1 = joaat("default");
+	iParam0->f_43.f_1 = joaat("DEFAULT");
 	iParam0->f_43 = joaat("CLIPSET@MINI_GAMES@STORY@MAR5@MILK_COW");
 	iParam0->f_77.f_30 = "Wobble";
-	iParam0->f_77.f_1 = joaat("default");
+	iParam0->f_77.f_1 = joaat("DEFAULT");
 	PED::SET_PED_CAN_LEG_IK(Global_35, false);
 	PED::SET_PED_LEG_IK_MODE(Global_35, 0);
 	PED::SET_PED_CAN_LEG_IK(iParam0->f_5, false);
@@ -2243,7 +2243,7 @@ int func_119(int iParam0)
 			}
 			break;
 		case 4:
-			if ((ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GameFinished")) || func_55(61)) || func_55(67))
+			if ((ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("GAMEFINISHED")) || func_55(61)) || func_55(67))
 			{
 				PED::SET_PED_CAN_LEG_IK(Global_35, true);
 				PED::SET_PED_LEG_IK_MODE(Global_35, 2);
@@ -6339,7 +6339,7 @@ int func_266(int iParam0)
 	switch (iVar0)
 	{
 		case -2061583405:
-			return joaat("hats");
+			return joaat("HATS");
 		case -525676072:
 			return 1249071452;
 		default:

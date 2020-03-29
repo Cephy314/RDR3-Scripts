@@ -738,7 +738,7 @@ void func_14(int iParam0)
 	if (func_20() == -1)
 	{
 		HUD::_TEXT_DATABASE_REQUEST("ASBGAUD");
-		func_54(&uLocal_290, 935, 0, "", joaat("coal_wagon"), 2808.681f, 1367.038f, 70.8212f, -149.18f, 0, 0);
+		func_54(&uLocal_290, 935, 0, "", joaat("COAL_WAGON"), 2808.681f, 1367.038f, 70.8212f, -149.18f, 0, 0);
 		func_55();
 		func_56();
 		if (!bLocal_312)
@@ -785,7 +785,7 @@ int func_15(int iParam0)
 	}
 	if (bVar0)
 	{
-		if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("train_annesburg")) <= 0)
+		if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("TRAIN_ANNESBURG")) <= 0)
 		{
 			iVar2 = iLocal_322;
 			SCRIPTS::START_NEW_SCRIPT_WITH_ARGS("train_annesburg", &iVar2, 1, 1024);
@@ -1483,17 +1483,17 @@ void func_52(int iParam0, bool bParam1, float fParam2, bool bParam3, bool bParam
 void func_53()
 {
 	STREAMING::REQUEST_ANIM_DICT(sLocal_326);
-	STREAMING::REQUEST_MODEL(joaat("p_anncoalbin01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annsteameng01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor02x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor03x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconveyor04x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annconvmid1x_belt"), false);
-	STREAMING::REQUEST_MODEL(joaat("s_ann_coalchutes01x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annpulleys03x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annpulleys04x"), false);
-	STREAMING::REQUEST_MODEL(joaat("p_annsifter01x"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCOALBIN01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNSTEAMENG01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR02X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR03X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVEYOR04X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNCONVMID1X_BELT"), false);
+	STREAMING::REQUEST_MODEL(joaat("S_ANN_COALCHUTES01X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNPULLEYS03X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNPULLEYS04X"), false);
+	STREAMING::REQUEST_MODEL(joaat("P_ANNSIFTER01X"), false);
 }
 
 void func_54(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, vector3 vParam5, float fParam8, int iParam9, int iParam10)
@@ -1586,47 +1586,47 @@ int func_58()
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_anncoalbin01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCOALBIN01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annsteameng01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNSTEAMENG01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor02x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR02X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor03x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR03X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconveyor04x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVEYOR04X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annconvmid1x_belt")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNCONVMID1X_BELT")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("s_ann_coalchutes01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("S_ANN_COALCHUTES01X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annpulleys03x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNPULLEYS03X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annpulleys04x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNPULLEYS04X")))
 	{
 		return 0;
 	}
-	if (!STREAMING::HAS_MODEL_LOADED(joaat("p_annsifter01x")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("P_ANNSIFTER01X")))
 	{
 		return 0;
 	}
@@ -1637,67 +1637,67 @@ void func_59()
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_315))
 	{
-		iLocal_315 = OBJECT::CREATE_OBJECT(joaat("p_anncoalbin01x"), 2882.77f, 1400.54f, 64.53f, false, false, false, false, true);
+		iLocal_315 = OBJECT::CREATE_OBJECT(joaat("P_ANNCOALBIN01X"), 2882.77f, 1400.54f, 64.53f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_315, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_315, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_316))
 	{
-		iLocal_316 = OBJECT::CREATE_OBJECT(joaat("p_annsteameng01x"), 2881.89f, 1399.2f, 65.8f, false, false, false, false, true);
+		iLocal_316 = OBJECT::CREATE_OBJECT(joaat("P_ANNSTEAMENG01X"), 2881.89f, 1399.2f, 65.8f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_316, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_316, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_317))
 	{
-		iLocal_317 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor01x"), 2888.39f, 1398.65f, 63.92f, false, false, false, false, true);
+		iLocal_317 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR01X"), 2888.39f, 1398.65f, 63.92f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_317, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_317, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_318))
 	{
-		iLocal_318 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor02x"), 2887.73f, 1399.23f, 63.88f, false, false, false, false, true);
+		iLocal_318 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR02X"), 2887.73f, 1399.23f, 63.88f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_318, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_318, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_319))
 	{
-		iLocal_319 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor03x"), 2921.67f, 1386.704f, 55.256f, false, false, false, false, true);
+		iLocal_319 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR03X"), 2921.67f, 1386.704f, 55.256f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_319, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_319, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_320))
 	{
-		iLocal_320 = OBJECT::CREATE_OBJECT(joaat("p_annconveyor04x"), 2932.304f, 1382.867f, 55.01f, false, false, false, false, true);
+		iLocal_320 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVEYOR04X"), 2932.304f, 1382.867f, 55.01f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_320, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_320, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_321))
 	{
-		iLocal_321 = OBJECT::CREATE_OBJECT(joaat("p_annconvmid1x_belt"), 2902.988f, 1393.29f, 57.85f, false, false, false, false, true);
+		iLocal_321 = OBJECT::CREATE_OBJECT(joaat("P_ANNCONVMID1X_BELT"), 2902.988f, 1393.29f, 57.85f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_321, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_321, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_322))
 	{
-		iLocal_322 = OBJECT::CREATE_OBJECT(joaat("s_ann_coalchutes01x"), 2941.816f, 1378.873f, 47.656f, false, false, false, false, true);
+		iLocal_322 = OBJECT::CREATE_OBJECT(joaat("S_ANN_COALCHUTES01X"), 2941.816f, 1378.873f, 47.656f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_322, 0f, 0f, -20.1736f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_322, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_323))
 	{
-		iLocal_323 = OBJECT::CREATE_OBJECT(joaat("p_annpulleys03x"), 2921.67f, 1386.654f, 55.226f, false, false, false, false, true);
+		iLocal_323 = OBJECT::CREATE_OBJECT(joaat("P_ANNPULLEYS03X"), 2921.67f, 1386.654f, 55.226f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_323, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_323, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_324))
 	{
-		iLocal_324 = OBJECT::CREATE_OBJECT(joaat("p_annpulleys04x"), 2932.304f, 1382.867f, 55.17f, false, false, false, false, true);
+		iLocal_324 = OBJECT::CREATE_OBJECT(joaat("P_ANNPULLEYS04X"), 2932.304f, 1382.867f, 55.17f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_324, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_324, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_325))
 	{
-		iLocal_325 = OBJECT::CREATE_OBJECT(joaat("p_annsifter01x"), 2921.489f, 1386.78f, 56.556f, false, false, false, false, true);
+		iLocal_325 = OBJECT::CREATE_OBJECT(joaat("P_ANNSIFTER01X"), 2921.489f, 1386.78f, 56.556f, false, false, false, false, true);
 		ENTITY::SET_ENTITY_ROTATION(iLocal_325, 0f, 0f, -20f, 0, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_325, true);
 	}
@@ -2049,7 +2049,7 @@ void func_73(int iParam0, bool bParam1)
 	{
 		if (!func_170("region_town_lockdown_generic"))
 		{
-			Global_1415404 = SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("region_town_lockdown_generic")) > 0;
+			Global_1415404 = SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("REGION_TOWN_LOCKDOWN_GENERIC")) > 0;
 		}
 		return;
 	}
@@ -2717,7 +2717,7 @@ void func_98(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_223(Global_1935630, 8192);
-	func_225(func_224(-1532769513, joaat("areas")), 1);
+	func_225(func_224(-1532769513, joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
@@ -3043,14 +3043,14 @@ int func_105(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -3618,13 +3618,13 @@ Vector3 func_133(var uParam0)
 		iVar2 = MISC::GET_HASH_KEY(sVar1);
 		switch (iVar2)
 		{
-			case joaat("0832_s_m_m_trainstationworker_01_white_01"):
+			case joaat("0832_S_M_M_TRAINSTATIONWORKER_01_WHITE_01"):
 				uParam0->f_37 = "0832_TRAINWORKER";
 				return func_252("ASBG_TSW3SICK");
-			case joaat("0833_s_m_m_trainstationworker_01_white_02"):
+			case joaat("0833_S_M_M_TRAINSTATIONWORKER_01_WHITE_02"):
 				uParam0->f_37 = "0833_TRAINWORKER";
 				return func_252("ASBG_TSW2SICK");
-			case joaat("0834_s_m_m_trainstationworker_01_white_03"):
+			case joaat("0834_S_M_M_TRAINSTATIONWORKER_01_WHITE_03"):
 				uParam0->f_37 = "0834_TRAINWORKER";
 				return func_252("ASBG_TSW1SICK");
 			default:
@@ -6527,15 +6527,15 @@ int func_201(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return joaat("s_cs_bl_newspaper01x");
+			return joaat("S_CS_BL_NEWSPAPER01X");
 		case 1:
-			return joaat("s_cs_nh_newspaper01x");
+			return joaat("S_CS_NH_NEWSPAPER01X");
 		case 2:
-			return joaat("s_cs_sd_newspaper01x");
+			return joaat("S_CS_SD_NEWSPAPER01X");
 		default:
-			return joaat("s_cs_sd_newspaper01x");
+			return joaat("S_CS_SD_NEWSPAPER01X");
 	}
-	return joaat("s_cs_sd_newspaper01x");
+	return joaat("S_CS_SD_NEWSPAPER01X");
 }
 
 bool func_202(bool bParam0, vector3 vParam1)
@@ -8889,7 +8889,7 @@ void func_301()
 			func_382(8);
 		}
 	}
-	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("generic_wagon_fence_core")) > 0)
+	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("GENERIC_WAGON_FENCE_CORE")) > 0)
 	{
 		func_382(4);
 	}
@@ -9008,7 +9008,7 @@ int func_305()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_zero"))
+	if (Global_40.f_39 == joaat("PLAYER_ZERO"))
 	{
 		return 1;
 	}
@@ -9085,7 +9085,7 @@ int func_309()
 	{
 		return 0;
 	}
-	if (Global_40.f_39 == joaat("player_three"))
+	if (Global_40.f_39 == joaat("PLAYER_THREE"))
 	{
 		return 1;
 	}

@@ -574,9 +574,9 @@ int func_15(int iParam0)
 void func_16(int iParam0)
 {
 	iParam0 = iParam0;
-	ENTITY::CREATE_MODEL_HIDE(1446.648f, 371.4435f, 89.77228f, 0.25f, joaat("p_bottlebeer01x"), true);
-	ENTITY::CREATE_MODEL_HIDE(1446.594f, 371.3564f, 89.84016f, 0.25f, joaat("p_bottlemedicine15x"), true);
-	ENTITY::CREATE_MODEL_HIDE(1446.431f, 371.1044f, 89.73589f, 0.25f, joaat("p_bottlebeer01a_2"), true);
+	ENTITY::CREATE_MODEL_HIDE(1446.648f, 371.4435f, 89.77228f, 0.25f, joaat("P_BOTTLEBEER01X"), true);
+	ENTITY::CREATE_MODEL_HIDE(1446.594f, 371.3564f, 89.84016f, 0.25f, joaat("P_BOTTLEMEDICINE15X"), true);
+	ENTITY::CREATE_MODEL_HIDE(1446.431f, 371.1044f, 89.73589f, 0.25f, joaat("P_BOTTLEBEER01A_2"), true);
 	TASK::_0x6C269F673C47031E(-736104133);
 }
 
@@ -804,7 +804,7 @@ int func_40(int iParam0)
 			func_69(-336949584, 1);
 		}
 	}
-	func_70(&uLocal_33, &iLocal_34, 1422.583f, 377.0824f, 89.0055f, joaat("p_door41x"));
+	func_70(&uLocal_33, &iLocal_34, 1422.583f, 377.0824f, 89.0055f, joaat("P_DOOR41X"));
 	func_71(25, iLocal_26, &uLocal_25);
 	if (func_72(6) && !func_73(6))
 	{
@@ -915,7 +915,7 @@ int func_44(int iParam0)
 		func_86();
 		LAW::_0x9BBDCB8DF789EBC1(PLAYER::PLAYER_ID(), 0);
 		func_21(iLocal_38, 2048);
-		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_Travel"), joaat("MPAC_Travel_012")))
+		if (STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_TRAVEL"), joaat("MPAC_TRAVEL_012")))
 		{
 			switch (iLocal_38)
 			{
@@ -992,15 +992,15 @@ int func_47()
 
 int func_48()
 {
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_mission_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_MISSION_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_deathmatch_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_DEATHMATCH_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
-	if (NETWORK::_0x1B89BC43B6E69107(joaat("fm_race_controller"), -1, 0, 0))
+	if (NETWORK::_0x1B89BC43B6E69107(joaat("FM_RACE_CONTROLLER"), -1, 0, 0))
 	{
 		return 1;
 	}
@@ -1653,7 +1653,7 @@ void func_83(int iParam0, bool bParam1)
 	}
 	func_21(iParam0, 32);
 	func_150(Global_1939178, 16384);
-	func_130(func_151(-1532769513, joaat("areas")), 1);
+	func_130(func_151(-1532769513, joaat("AREAS")), 1);
 	switch (func_9(iParam0))
 	{
 		case 0:
@@ -1920,14 +1920,14 @@ int func_85(int iParam0)
 {
 	switch (iParam0)
 	{
-		case joaat("drizzle"):
-		case joaat("thunder"):
-		case joaat("shower"):
-		case joaat("sleet"):
-		case joaat("hurricane"):
-		case joaat("rain"):
-		case joaat("hail"):
-		case joaat("thunderstorm"):
+		case joaat("DRIZZLE"):
+		case joaat("THUNDER"):
+		case joaat("SHOWER"):
+		case joaat("SLEET"):
+		case joaat("HURRICANE"):
+		case joaat("RAIN"):
+		case joaat("HAIL"):
+		case joaat("THUNDERSTORM"):
 			return 1;
 		default:
 			break;
@@ -2224,7 +2224,7 @@ int func_87(int iParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		return joaat("Wilderness");
+		return joaat("WILDERNESS");
 	}
 	return 0;
 }
@@ -3979,7 +3979,7 @@ struct<2> func_129(int iParam0)
 	int iVar0;
 
 	iVar0 = func_195(iParam0);
-	return func_151(joaat("visited"), iVar0);
+	return func_151(joaat("VISITED"), iVar0);
 }
 
 void func_130(var uParam0, int iParam1, int iParam2)
@@ -6265,7 +6265,7 @@ int func_230(int iParam0)
 		case 69:
 			return joaat("SHOP_STR_GENERAL_STORE");
 		case 70:
-			return joaat("SHOP_STR_WELCOME_CENTER");
+			return joaat("RAGE_P2_3");
 		case 71:
 			return joaat("SHOP_STR_HORSE_SHOP");
 		case 74:
@@ -6343,9 +6343,9 @@ int func_230(int iParam0)
 		case 100:
 			return joaat("SHOP_WAL_TRAIN_STATION");
 		case 119:
-			return joaat("shop_dynamic");
+			return joaat("SHOP_DYNAMIC");
 		case 133:
-			return joaat("shop_wilderness_supplies");
+			return joaat("SHOP_WILDERNESS_SUPPLIES");
 		case 148:
 			return joaat("SHOP_ANYWHERE_HANDHELD");
 		case 172:
@@ -6355,9 +6355,9 @@ int func_230(int iParam0)
 		case 174:
 			return joaat("SHOP_CAMP_SHAVING");
 		case 149:
-			return joaat("shop_camp_lockbox");
+			return joaat("SHOP_CAMP_LOCKBOX");
 		case 150:
-			return joaat("shop_camp_butchertable");
+			return joaat("SHOP_CAMP_BUTCHERTABLE");
 		case 147:
 			return 191185611;
 		case 135:
@@ -6385,23 +6385,23 @@ int func_230(int iParam0)
 		case 146:
 			return 1672297313;
 		case 47:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 32:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 21:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 115:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 92:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 131:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 20:
-			return joaat("shop_moonshine_still");
+			return joaat("SHOP_MOONSHINE_STILL");
 		case 134:
 			return -765151559;
 		case 175:
-			return joaat("shop_wardrobe");
+			return joaat("SHOP_WARDROBE");
 		case 151:
 			return joaat("SHOP_BVH_DOCTOR");
 		case 152:
@@ -7301,16 +7301,16 @@ int func_261(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = joaat("challenge");
+			iVar0 = joaat("CHALLENGE");
 			break;
 		case -3:
 			iVar0 = 1300413597;
 			break;
 		case 1:
-			iVar0 = joaat("feature");
+			iVar0 = joaat("FEATURE");
 			break;
 		case -2:
-			iVar0 = joaat("gold");
+			iVar0 = joaat("GOLD");
 			break;
 		case 2:
 			iVar0 = -1599460565;
@@ -7334,16 +7334,16 @@ int func_261(int iParam0)
 			iVar0 = 1753821005;
 			break;
 		case 9:
-			iVar0 = joaat("property");
+			iVar0 = joaat("PROPERTY");
 			break;
 		case 10:
-			iVar0 = joaat("recipe");
+			iVar0 = joaat("RECIPE");
 			break;
 		case 11:
-			iVar0 = joaat("title");
+			iVar0 = joaat("TITLE");
 			break;
 		case 12:
-			iVar0 = joaat("shop");
+			iVar0 = joaat("SHOP");
 			break;
 		case 13:
 			iVar0 = 1252941330;
