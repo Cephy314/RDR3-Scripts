@@ -197,7 +197,7 @@ void func_2()
 
 	vVar0 = { fLocal_81, fLocal_82, fLocal_83 };
 	vVar3 = { fLocal_84, fLocal_85, fLocal_86 };
-	FLOCK::_0xF2CCA7B68CFAB2B9(904876610, 725.8305f, -468.8784f, 149f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
+	FLOCK::_0xF2CCA7B68CFAB2B9(joaat("SPECIES_BIRD_CROW"), 725.8305f, -468.8784f, 149f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
 }
 
 void func_3()
@@ -351,7 +351,7 @@ void func_7()
 	{
 		return;
 	}
-	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(546824119);
+	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(joaat("HRT_CRD_TENANT_01"));
 	if (!PERSCHAR::_0x800DF3FC913355F3(iVar0))
 	{
 		return;
@@ -382,7 +382,7 @@ void func_8()
 
 void func_9()
 {
-	FLOCK::_0xFB16F08F47B83B4C(904876610);
+	FLOCK::_0xFB16F08F47B83B4C(joaat("SPECIES_BIRD_CROW"));
 	func_24();
 }
 

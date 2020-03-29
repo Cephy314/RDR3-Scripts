@@ -744,7 +744,7 @@ int func_25(int iParam0)
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(bLocal_835, false, true);
 				func_63(bLocal_835, 1180.4f, -1554.3f, 53.4f, 19.7f, 1, 1073741824 /* Float: 2f */);
 				func_63(&(iLocal_833[0]), 1178.3f, -1559f, 53.7f, 19.7f, 1, 1073741824 /* Float: 2f */);
-				PED::FORCE_PED_MOTION_STATE(&(iLocal_833[0]), -1115154469, false, 0, false);
+				PED::FORCE_PED_MOTION_STATE(&(iLocal_833[0]), joaat("MOTIONSTATE_SPRINT"), false, 0, false);
 				PLAYER::SIMULATE_PLAYER_INPUT_GAIT(PLAYER::PLAYER_ID(), 1.75f, 2000, 0f, true, false);
 				TASK::TASK_FOLLOW_WAYPOINT_RECORDING_AT_OFFSET(&(uLocal_729[iParam0]), sLocal_852, -1.5f, 5, 4196386, -1, 0);
 				TASK::TASK_FOLLOW_WAYPOINT_RECORDING_AT_OFFSET(Global_35, sLocal_852, 1f, 5, 11266, -1, 0);
@@ -2936,7 +2936,7 @@ int func_110(bool bParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(bParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(bParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -3453,7 +3453,7 @@ int func_139(bool bParam0, vector3 vParam1, float fParam4, bool bParam5)
 	}
 	func_190(vParam1, fParam4, 0);
 	TASK::CLEAR_PED_TASKS(bParam0, 1, 0);
-	iVar0 = -1805387726;
+	iVar0 = joaat("PROP_HITCHINGPOST");
 	iVar1 = TASK::_0xF533D68FF970D190(vParam1, iVar0, fParam4, 1, 0);
 	if (TASK::_0x841475AC96E794D1(iVar1))
 	{
@@ -3504,15 +3504,15 @@ int func_141(int iParam0, bool bParam1)
 		case 8:
 			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return -1880884094;
+			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
 			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
 			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return -1094022447;
+			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return -1484815615;
+			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;
@@ -3651,15 +3651,15 @@ int func_146(int iParam0)
 		case 10:
 			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return -1960060437;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return 1634371177;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
 			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return 683250525;
+			return joaat("PERSCHAR_COMP_SADIE");
 		case 12:
-			return -814958461;
+			return joaat("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -4255,7 +4255,7 @@ int func_170(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_217(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_217(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_220()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_239(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_217(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_217(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_220()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_239(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_SLEEP_BED"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_221(iParam0, iVar0) || (fParam1 >= (func_240(iParam0) * func_240(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -5465,7 +5465,7 @@ int func_205(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 178615350:
-			return 331645018;
+			return joaat("META_OUTFIT_COLD_WEATHER");
 		case 2094043703:
 			return -1395382793;
 		case -695701225:
@@ -5537,7 +5537,7 @@ int func_205(int iParam0, int iParam1)
 		case -1678882891:
 			return -1638703055;
 		case -268604689:
-			return -1496612359;
+			return joaat("META_OUTFIT_COOL_WEATHER");
 		case 1818898449:
 			return 30596609;
 		case -922193456:
@@ -5545,7 +5545,7 @@ int func_205(int iParam0, int iParam1)
 			{
 				case 24:
 				case 25:
-					return 41788943;
+					return joaat("META_OUTFIT_DEFAULT");
 				default:
 					break;
 			}
@@ -5631,9 +5631,9 @@ int func_205(int iParam0, int iParam1)
 		case 867156718:
 			return 241911854;
 		case -426171916:
-			return 41788943;
+			return joaat("META_OUTFIT_DEFAULT");
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 bool func_206(bool bParam0, int iParam1)
@@ -5709,9 +5709,9 @@ void func_210(int iParam0, bool bParam1, bool bParam2)
 	{
 		return;
 	}
-	if (PED::_0xFB4891BD7578CDC1(bParam1, 1933068772))
+	if (PED::_0xFB4891BD7578CDC1(bParam1, joaat("WEARABLE_MASKS")))
 	{
-		PED::_0xD710A5007C2AC539(bParam1, 1933068772, 1);
+		PED::_0xD710A5007C2AC539(bParam1, joaat("WEARABLE_MASKS"), 1);
 	}
 	if (PED::_0xFB4891BD7578CDC1(bParam1, 494009478))
 	{
@@ -7201,7 +7201,7 @@ int func_268(int iParam0)
 	switch (iParam0)
 	{
 		case -268604689:
-			return -1496612359;
+			return joaat("META_OUTFIT_COOL_WEATHER");
 		case -1632589543:
 			return 1052055818;
 		case -1862464078:
@@ -7217,7 +7217,7 @@ int func_268(int iParam0)
 		default:
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 void func_269(int iParam0, int iParam1)

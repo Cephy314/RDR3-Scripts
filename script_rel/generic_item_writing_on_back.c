@@ -186,7 +186,7 @@ void func_5(var uParam0)
 
 void func_6(var uParam0)
 {
-	if (uParam0->f_131 > 0 && uParam0->f_128 == -197923977)
+	if (uParam0->f_131 > 0 && uParam0->f_128 == joaat("DOCUMENT_SLAVE_CATCHER_PHOTO"))
 	{
 		if (!PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_BOOK_READ_AVAILABLE"))
 		{

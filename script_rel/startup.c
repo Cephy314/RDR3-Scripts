@@ -8628,7 +8628,7 @@ int func_207(int iParam0, int iParam1)
 			case 1460:
 				return 1351016737;
 			case 1461:
-				return 648514907;
+				return joaat("TOBACCO_PICK");
 			case 1462:
 				return -1570232590;
 			case 1463:
@@ -11603,7 +11603,7 @@ void func_217(int iParam0)
 {
 	if (iParam0 != Global_1956578->f_3)
 	{
-		COMPAPP::_0x74BCCEB233AD95B2(612972714, iParam0);
+		COMPAPP::_0x74BCCEB233AD95B2(joaat("MAPSTATE"), iParam0);
 		Global_1956578->f_3 = iParam0;
 	}
 }

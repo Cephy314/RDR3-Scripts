@@ -6237,11 +6237,11 @@ int func_263(int iParam0, int iParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (*iParam1 == 414878641 && Global_1572887->f_13 != 0)
+	if (*iParam1 == joaat("MP_ACHIEVEMENTS") && Global_1572887->f_13 != 0)
 	{
 		return 0;
 	}
-	else if (*iParam1 == -816321659 && Global_1572887->f_13 != -1)
+	else if (*iParam1 == joaat("SP_ACHIEVEMENTS") && Global_1572887->f_13 != -1)
 	{
 		return 0;
 	}
@@ -8176,150 +8176,150 @@ int func_308(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = -816321659;
-			*iParam2 = -987026056;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP1");
 			break;
 		case 1:
-			*iParam1 = -816321659;
-			*iParam2 = -1822602787;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP2");
 			break;
 		case 2:
-			*iParam1 = -816321659;
-			*iParam2 = -1602329569;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP3");
 			break;
 		case 3:
-			*iParam1 = -816321659;
-			*iParam2 = 1881899898;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP4");
 			break;
 		case 4:
-			*iParam1 = -816321659;
-			*iParam2 = -1906196506;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP5");
 			break;
 		case 5:
-			*iParam1 = -816321659;
-			*iParam2 = -674995867;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_GOLDRUSH");
 			break;
 		case 6:
-			*iParam1 = -816321659;
-			*iParam2 = -734156617;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MINIGAMES");
 			break;
 		case 7:
-			*iParam1 = -816321659;
-			*iParam2 = 261758426;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_B_AND_E");
 			break;
 		case 8:
-			*iParam1 = -816321659;
-			*iParam2 = 1545586131;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RCKPT");
 			break;
 		case 9:
-			*iParam1 = -816321659;
-			*iParam2 = -489125522;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_TO_POOR");
 			break;
 		case 10:
-			*iParam1 = -816321659;
-			*iParam2 = 1190367681;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_HONOR");
 			break;
 		case 11:
-			*iParam1 = -816321659;
-			*iParam2 = -1179367301;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RC");
 			break;
 		case 12:
-			*iParam1 = -816321659;
-			*iParam2 = 1154513253;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BOUNTY");
 			break;
 		case 13:
 			if (Global_1572887->f_13 != 0)
 			{
-				*iParam1 = -816321659;
+				*iParam1 = joaat("SP_ACHIEVEMENTS");
 			}
 			else
 			{
-				*iParam1 = 414878641;
+				*iParam1 = joaat("MP_ACHIEVEMENTS");
 			}
-			*iParam2 = -1825640214;
+			*iParam2 = joaat("ACH_UPGR_W");
 			break;
 		case 14:
-			*iParam1 = -816321659;
-			*iParam2 = 1209829059;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BEAR");
 			break;
 		case 15:
-			*iParam1 = -816321659;
-			*iParam2 = -1713230487;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_ART");
 			break;
 		case 16:
-			*iParam1 = -816321659;
-			*iParam2 = 2092309893;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_COLLECT");
 			break;
 		case 17:
-			*iParam1 = 414878641;
-			*iParam2 = -86751100;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_PERSISTENT");
 			break;
 		case 18:
-			*iParam1 = 414878641;
-			*iParam2 = -291172486;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_BUCKLE");
 			break;
 		case 19:
-			*iParam1 = 414878641;
-			*iParam2 = -1798248949;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_MVP");
 			break;
 		case 20:
-			*iParam1 = 414878641;
-			*iParam2 = 1774145653;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_HORSES");
 			break;
 		case 21:
-			*iParam1 = 414878641;
-			*iParam2 = -1655602026;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_COUNTER");
 			break;
 		case 22:
-			*iParam1 = 414878641;
-			*iParam2 = 1198571251;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_HOME");
 			break;
 		case 23:
-			*iParam1 = 414878641;
-			*iParam2 = -922560112;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_CRAFTAMMO");
 			break;
 		case 24:
-			*iParam1 = 414878641;
-			*iParam2 = -1772642867;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_CRAFT");
 			break;
 		case 25:
-			*iParam1 = 414878641;
-			*iParam2 = -301889617;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_BUTCHER");
 			break;
 		case 26:
-			*iParam1 = 414878641;
-			*iParam2 = -208754119;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_HERBS");
 			break;
 		case 27:
-			*iParam1 = 414878641;
-			*iParam2 = -2020396827;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_INTRO");
 			break;
 		case 29:
-			*iParam1 = 414878641;
-			*iParam2 = 1094779500;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_SERIES");
 			break;
 		case 28:
-			*iParam1 = 414878641;
-			*iParam2 = 332706138;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_GUN4HIRE");
 			break;
 		case 30:
-			*iParam1 = 414878641;
-			*iParam2 = 1757851809;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_FREEMODE");
 			break;
 		case 31:
-			*iParam1 = 414878641;
-			*iParam2 = -140696447;
+			*iParam1 = joaat("MP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MP_POSSE");
 			break;
 		case 32:
 			if (Global_1572887->f_13 != 0)
 			{
-				*iParam1 = -816321659;
+				*iParam1 = joaat("SP_ACHIEVEMENTS");
 			}
 			else
 			{
-				*iParam1 = 414878641;
+				*iParam1 = joaat("MP_ACHIEVEMENTS");
 			}
-			*iParam2 = 937267231;
+			*iParam2 = joaat("ACH_MP_BONDING");
 			break;
 		default:
 			return 0;
@@ -11598,7 +11598,7 @@ int func_414(int iParam0, int iParam1)
 	{
 		return joaat("NONE");
 	}
-	if (!func_445(Var1, &(Var1.f_1), 25, -1395074057, 0, 0))
+	if (!func_445(Var1, &(Var1.f_1), 25, joaat("HONOR"), 0, 0))
 	{
 		return joaat("NONE");
 	}

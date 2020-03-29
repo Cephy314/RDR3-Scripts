@@ -580,43 +580,43 @@ int func_9(int iParam0)
 	switch (iParam0)
 	{
 		case 38:
-			iVar0 = -34953917;
+			iVar0 = joaat("BLACKWATER_RESIDENTS");
 			break;
 		case 82:
-			iVar0 = -1182515549;
+			iVar0 = joaat("BUTCHERCREEK_RESIDENTS");
 			break;
 		case 69:
-			iVar0 = -180439396;
+			iVar0 = joaat("EMERALDRANCH_RESIDENTS");
 			break;
 		case 61:
-			iVar0 = -380981263;
+			iVar0 = joaat("MANICATO_RESIDENTS");
 			break;
 		case 110:
-			iVar0 = 960614592;
+			iVar0 = joaat("MANZANITAPOST_RESIDENTS");
 			break;
 		case 5:
-			iVar0 = -896916581;
+			iVar0 = joaat("SAINTDENIS_RESIDENTS");
 			break;
 		case 35:
-			iVar0 = 503372696;
+			iVar0 = joaat("OLDFORTWALLACE_RESIDENTS");
 			break;
 		case 105:
-			iVar0 = 1004478670;
+			iVar0 = joaat("RHODES_RESIDENTS");
 			break;
 		case 26:
-			iVar0 = -1545648199;
+			iVar0 = joaat("STRAWBERRY_RESIDENTS");
 			break;
 		case 76:
-			iVar0 = -379634634;
+			iVar0 = joaat("VALENTINE_RESIDENTS");
 			break;
 		case 92:
-			iVar0 = 288297518;
+			iVar0 = joaat("VANHORNPOST_RESIDENTS");
 			break;
 		case 56:
-			iVar0 = 1812404612;
+			iVar0 = joaat("WAPITI_RESIDENTS");
 			break;
 		case 78:
-			iVar0 = 1827444358;
+			iVar0 = joaat("ANNESBURG_RESIDENTS");
 			break;
 		default:
 			iVar0 = 0;
@@ -3674,7 +3674,7 @@ void func_107(var uParam0)
 		case joaat("BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO"):
 			func_258(uParam0->f_22, "BUY_HORSE_HUNGARIAN_HALF_BRED", joaat("SPEECH_PARAMS_FORCE_NORMAL_CLEAR"), 0, 1, 0, 0, 1);
 			break;
-		case -1955947684:
+		case joaat("BREED_KENTUCKYSADDLE_BLACK"):
 		case joaat("BREED_KENTUCKYSADDLE_SILVERBAY"):
 		case joaat("BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
 		case joaat("BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
@@ -4060,37 +4060,37 @@ void func_125(int iParam0, bool bParam1)
 	}
 	func_19(iParam0, 32);
 	func_286(Global_1935630, 8192);
-	func_308(func_324(-1532769513, joaat("AREAS")), 1);
+	func_308(func_324(joaat("DISCOVERED"), joaat("AREAS")), 1);
 	switch (func_6(iParam0))
 	{
 		case 0:
 		case 2:
 		case 11:
-			func_308(func_324(-1532769513, joaat("LOWLANDS_AREAS")), 1);
+			func_308(func_324(joaat("DISCOVERED"), joaat("LOWLANDS_AREAS")), 1);
 			break;
 		case 1:
 		case 5:
 		case 6:
 		case 7:
 		case 12:
-			func_308(func_324(-1532769513, joaat("MOUNTAIN_AREAS")), 1);
+			func_308(func_324(joaat("DISCOVERED"), joaat("MOUNTAIN_AREAS")), 1);
 			break;
 		case 3:
 		case 10:
-			func_308(func_324(-1532769513, joaat("FOOTHILLS_AREAS")), 1);
+			func_308(func_324(joaat("DISCOVERED"), joaat("FOOTHILLS_AREAS")), 1);
 			break;
 		case 4:
 		case 9:
-			func_308(func_324(-1532769513, joaat("PLAINS_AREAS")), 1);
+			func_308(func_324(joaat("DISCOVERED"), joaat("PLAINS_AREAS")), 1);
 			break;
 		case 8:
-			func_308(func_324(-1532769513, joaat("GUAMA_AREAS")), 1);
+			func_308(func_324(joaat("DISCOVERED"), joaat("GUAMA_AREAS")), 1);
 			break;
 		case 13:
 		case 14:
 		case 15:
 		case 16:
-			func_308(func_324(-1532769513, joaat("NEW_AUSTIN_AREAS")), 1);
+			func_308(func_324(joaat("DISCOVERED"), joaat("NEW_AUSTIN_AREAS")), 1);
 			break;
 	}
 	switch (iParam0)
@@ -8334,7 +8334,7 @@ int func_249(bool bParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(bParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(bParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -9082,7 +9082,7 @@ int func_287(int iParam0)
 		case joaat("A_C_HORSE_HUNGARIANHALFBRED_DARKDAPPLEGREY"):
 			return joaat("BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BLACK"):
-			return -1955947684;
+			return joaat("BREED_KENTUCKYSADDLE_BLACK");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
 			return joaat("BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_CHESTNUTPINTO"):
@@ -10013,7 +10013,7 @@ char* func_312(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_CAIRN_LAKE";
 				*uParam6 = 1;
 				break;
-			case -804804953:
+			case joaat("WATER_CATTIAL_POND"):
 				sVar0 = "WATER_CATTAIL_POND";
 				*uParam6 = 1;
 				break;
@@ -10073,7 +10073,7 @@ char* func_312(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_MOONSTONE_POND";
 				*uParam6 = 1;
 				break;
-			case -1817904483:
+			case joaat("WATER_O_CREAGHS_RUN"):
 				sVar0 = "WATER_OCREAGHS_RUN";
 				*uParam6 = 1;
 				break;
@@ -10294,9 +10294,9 @@ int func_316(int iParam0)
 			return 1;
 		case joaat("WATER_CAIRN_LAKE"):
 			return 0;
-		case 231313522:
+		case joaat("WATER_CALMUT_RAVINE"):
 			return 0;
-		case -804804953:
+		case joaat("WATER_CATTIAL_POND"):
 			return 0;
 		case joaat("WATER_DAKOTA_RIVER"):
 			return 1;
@@ -10330,7 +10330,7 @@ int func_316(int iParam0)
 			return 0;
 		case joaat("WATER_MOONSTONE_POND"):
 			return 0;
-		case -1817904483:
+		case joaat("WATER_O_CREAGHS_RUN"):
 			return 0;
 		case joaat("WATER_OWANJILA"):
 			return 0;
@@ -13923,7 +13923,7 @@ void func_502(int iParam0, bool bParam1, float fParam2, int iParam3, int iParam4
 	if (iVar1 > 0)
 	{
 		MONEY::_MONEY_INCREMENT_CASH_BALANCE(iVar1, iParam4);
-		func_308(func_307(1644987397), iVar1);
+		func_308(func_307(joaat("CAREER_CASH")), iVar1);
 	}
 }
 
@@ -15893,7 +15893,7 @@ int func_576(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -16813,115 +16813,115 @@ int func_613(int iParam0, int iParam1)
 		case 0:
 			return joaat("PROVISION_BEAVER_FUR");
 		case 1:
-			return -1569450319 /* GXTEntry: "Poor Beaver Pelt" */;
+			return joaat("PROVISION_BEAVER_FUR_POOR");
 		case 2:
-			return 854596618 /* GXTEntry: "Perfect Beaver Pelt" */;
+			return joaat("PROVISION_BEAVER_FUR_PRISTINE");
 		case 3:
-			return -150200864 /* GXTEntry: "Legendary Beaver Pelt" */;
+			return joaat("PROVISION_BEAVER_LEGENDARY_FUR_PRISTINE");
 		case 4:
-			return 2109269555 /* GXTEntry: "Legendary Boar Pelt" */;
+			return joaat("PROVISION_BOAR_LEGENDARY_SKIN_PRISTINE");
 		case 5:
 			return joaat("PROVISION_BOAR_SKIN");
 		case 6:
-			return 1248540072 /* GXTEntry: "Poor Boar Pelt" */;
+			return joaat("PROVISION_BOAR_SKIN_POOR");
 		case 7:
-			return -1858513856 /* GXTEntry: "Perfect Boar Pelt" */;
+			return joaat("PROVISION_BOAR_SKIN_PRISTINE");
 		case 8:
 			return joaat("PROVISION_BUCK_FUR");
 		case 9:
-			return 1603936352 /* GXTEntry: "Poor Buck Pelt" */;
+			return joaat("PROVISION_BUCK_FUR_POOR");
 		case 10:
-			return -702790226 /* GXTEntry: "Perfect Buck Pelt" */;
+			return joaat("PROVISION_BUCK_FUR_PRISTINE");
 		case 11:
-			return -888740979 /* GXTEntry: "Legendary Buck Pelt" */;
+			return joaat("PROVISION_BUCK_LEGENDARY_FUR_PRISTINE");
 		case 12:
 			return joaat("PROVISION_COUGAR_FUR");
 		case 13:
-			return 1914602340 /* GXTEntry: "Poor Cougar Pelt" */;
+			return joaat("PROVISION_COUGAR_FUR_POOR");
 		case 14:
-			return -1791452194 /* GXTEntry: "Perfect Cougar Pelt" */;
+			return joaat("PROVISION_COUGAR_FUR_PRISTINE");
 		case 15:
-			return 1528935719 /* GXTEntry: "Legendary Cougar Pelt" */;
+			return joaat("PROVISION_COUGAR_LEGENDARY_FUR_PRISTINE");
 		case 16:
 			return joaat("PROVISION_COYOTE_FUR");
 		case 17:
-			return -1558096473 /* GXTEntry: "Poor Coyote Pelt" */;
+			return joaat("PROVISION_COYOTE_FUR_POOR");
 		case 18:
-			return -794277189 /* GXTEntry: "Perfect Coyote Pelt" */;
+			return joaat("PROVISION_COYOTE_FUR_PRISTINE");
 		case 19:
-			return -1517904196 /* GXTEntry: "Legendary Coyote Pelt" */;
+			return joaat("PROVISION_COYOTE_LEGENDARY_FUR_PRISTINE");
 		case 20:
 			return joaat("PROVISION_DEER_HIDE");
 		case 21:
-			return -662178186 /* GXTEntry: "Poor Deer Pelt" */;
+			return joaat("PROVISION_DEER_HIDE_POOR");
 		case 22:
-			return -1035515486 /* GXTEntry: "Perfect Deer Pelt" */;
+			return joaat("PROVISION_DEER_HIDE_PRISTINE");
 		case 23:
 			return joaat("PROVISION_FOX_FUR");
 		case 24:
-			return 1647012424 /* GXTEntry: "Poor Fox Pelt" */;
+			return joaat("PROVISION_FOX_FUR_POOR");
 		case 25:
-			return 500722008 /* GXTEntry: "Perfect Fox Pelt" */;
+			return joaat("PROVISION_FOX_FUR_PRISTINE");
 		case 26:
-			return 1642484975 /* GXTEntry: "Legendary Fox Pelt" */;
+			return joaat("PROVISION_FOX_LEGENDARY_FUR_PRISTINE");
 		case 27:
 			return joaat("PROVISION_GOAT_HAIR");
 		case 28:
-			return 699990316 /* GXTEntry: "Poor Goat Hide" */;
+			return joaat("PROVISION_GOAT_HAIR_POOR");
 		case 29:
-			return -1648383828 /* GXTEntry: "Perfect Goat Hide" */;
+			return joaat("PROVISION_GOAT_HAIR_PRISTINE");
 		case 30:
 			return joaat("PROVISION_JAVELINA_SKIN");
 		case 31:
-			return -99092070 /* GXTEntry: "Poor Collared Peccary Pig Pelt" */;
+			return joaat("PROVISION_JAVELINA_SKIN_POOR");
 		case 32:
-			return 1963510418 /* GXTEntry: "Perfect Collared Peccary Pig Pelt" */;
+			return joaat("PROVISION_JAVELINA_SKIN_PRISTINE");
 		case 33:
 			return joaat("PROVISION_LOANSHARK_SKINS");
 		case 34:
 			return joaat("PROVISION_PANTHER_FUR");
 		case 35:
-			return 1584468323 /* GXTEntry: "Poor Panther Pelt" */;
+			return joaat("PROVISION_PANTHER_FUR_POOR");
 		case 36:
-			return 1969175294 /* GXTEntry: "Perfect Panther Pelt" */;
+			return joaat("PROVISION_PANTHER_FUR_PRISTINE");
 		case 37:
-			return 657906142 /* GXTEntry: "Legendary Panther Pelt" */;
+			return joaat("PROVISION_PANTHER_LEGENDARY_FUR_PRISTINE");
 		case 38:
 			return joaat("PROVISION_PIG_SKIN");
 		case 39:
-			return -308965548 /* GXTEntry: "Poor Pig Hide" */;
+			return joaat("PROVISION_PIG_SKIN_POOR");
 		case 40:
-			return -1102272634 /* GXTEntry: "Perfect Pig Hide" */;
+			return joaat("PROVISION_PIG_SKIN_PRISTINE");
 		case 41:
 			return joaat("PROVISION_PRONGHORN_FUR");
 		case 42:
-			return -983605026 /* GXTEntry: "Poor Pronghorn Hide" */;
+			return joaat("PROVISION_PRONGHORN_FUR_POOR");
 		case 43:
-			return -1544126829 /* GXTEntry: "Perfect Pronghorn Hide" */;
+			return joaat("PROVISION_PRONGHORN_FUR_PRISTINE");
 		case 44:
-			return -103050851 /* GXTEntry: "Legendary Pronghorn Hide" */;
+			return joaat("PROVISION_PRONGHORN_LEGENDARY_FUR_PRISTINE");
 		case 45:
 			return joaat("PROVISION_RAM_HIDE");
 		case 46:
-			return 1796037447 /* GXTEntry: "Poor Ram Hide" */;
+			return joaat("PROVISION_RAM_HIDE_POOR");
 		case 47:
-			return 1795984405 /* GXTEntry: "Perfect Ram Hide" */;
+			return joaat("PROVISION_RAM_HIDE_PRISTINE");
 		case 48:
-			return -734947450 /* GXTEntry: "Legendary Ram Hide" */;
+			return joaat("PROVISION_RAM_LEGENDARY_HIDE_PRISTINE");
 		case 49:
 			return joaat("PROVISION_SHEEP_WOOL");
 		case 50:
-			return 1729948479 /* GXTEntry: "Poor Sheep Hide" */;
+			return joaat("PROVISION_SHEEP_WOOL_POOR");
 		case 51:
-			return 1466150167 /* GXTEntry: "Perfect Sheep Hide" */;
+			return joaat("PROVISION_SHEEP_WOOL_PRISTINE");
 		case 52:
 			return joaat("PROVISION_WOLF_FUR");
 		case 53:
-			return 85441452 /* GXTEntry: "Poor Wolf Pelt" */;
+			return joaat("PROVISION_WOLF_FUR_POOR");
 		case 54:
-			return 653400939 /* GXTEntry: "Perfect Wolf Pelt" */;
+			return joaat("PROVISION_WOLF_FUR_PRISTINE");
 		case 55:
-			return 552246565 /* GXTEntry: "Legendary Wolf Pelt" */;
+			return joaat("PROVISION_WOLF_LEGENDARY_FUR_PRISTINE");
 		case 56:
 			return 0;
 		default:
@@ -19129,9 +19129,9 @@ void func_691(int iParam0)
 
 void func_692(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 bool func_693()
@@ -19148,7 +19148,7 @@ void func_694(int iParam0)
 		iParam0 = 0;
 	}
 	Global_40.f_4283.f_325 = iParam0;
-	Var0 = { func_307(1356759001) };
+	Var0 = { func_307(joaat("GANG_SAVINGS_CASH")) };
 	STATS::STAT_ID_SET_INT(&Var0, iParam0, true);
 }
 
@@ -19869,7 +19869,7 @@ int func_720(int iParam0)
 		case -2061583405:
 			return joaat("HATS");
 		case -525676072:
-			return 1249071452;
+			return joaat("MASKS_LARGE");
 		default:
 			break;
 	}
@@ -21667,115 +21667,115 @@ int func_743(int iParam0, int iParam1)
 	{
 		case joaat("PROVISION_BEAVER_FUR"):
 			return 0;
-		case -1858513856: /* GXTEntry: "Perfect Boar Pelt" */
+		case joaat("PROVISION_BOAR_SKIN_PRISTINE"):
 			return 7;
 		case joaat("PROVISION_DEER_HIDE"):
 			return 20;
-		case -1791452194: /* GXTEntry: "Perfect Cougar Pelt" */
+		case joaat("PROVISION_COUGAR_FUR_PRISTINE"):
 			return 14;
-		case -1648383828: /* GXTEntry: "Perfect Goat Hide" */
+		case joaat("PROVISION_GOAT_HAIR_PRISTINE"):
 			return 29;
-		case -1569450319: /* GXTEntry: "Poor Beaver Pelt" */
+		case joaat("PROVISION_BEAVER_FUR_POOR"):
 			return 1;
-		case -1558096473: /* GXTEntry: "Poor Coyote Pelt" */
+		case joaat("PROVISION_COYOTE_FUR_POOR"):
 			return 17;
-		case -1544126829: /* GXTEntry: "Perfect Pronghorn Hide" */
+		case joaat("PROVISION_PRONGHORN_FUR_PRISTINE"):
 			return 43;
-		case -1517904196: /* GXTEntry: "Legendary Coyote Pelt" */
+		case joaat("PROVISION_COYOTE_LEGENDARY_FUR_PRISTINE"):
 			return 19;
 		case joaat("PROVISION_JAVELINA_SKIN"):
 			return 30;
 		case joaat("PROVISION_SHEEP_WOOL"):
 			return 49;
-		case -1102272634: /* GXTEntry: "Perfect Pig Hide" */
+		case joaat("PROVISION_PIG_SKIN_PRISTINE"):
 			return 40;
-		case -1035515486: /* GXTEntry: "Perfect Deer Pelt" */
+		case joaat("PROVISION_DEER_HIDE_PRISTINE"):
 			return 22;
-		case -983605026: /* GXTEntry: "Poor Pronghorn Hide" */
+		case joaat("PROVISION_PRONGHORN_FUR_POOR"):
 			return 42;
-		case -888740979: /* GXTEntry: "Legendary Buck Pelt" */
+		case joaat("PROVISION_BUCK_LEGENDARY_FUR_PRISTINE"):
 			return 11;
 		case joaat("PROVISION_BUCK_FUR"):
 			return 8;
-		case -794277189: /* GXTEntry: "Perfect Coyote Pelt" */
+		case joaat("PROVISION_COYOTE_FUR_PRISTINE"):
 			return 18;
-		case -734947450: /* GXTEntry: "Legendary Ram Hide" */
+		case joaat("PROVISION_RAM_LEGENDARY_HIDE_PRISTINE"):
 			return 48;
-		case -702790226: /* GXTEntry: "Perfect Buck Pelt" */
+		case joaat("PROVISION_BUCK_FUR_PRISTINE"):
 			return 10;
-		case -662178186: /* GXTEntry: "Poor Deer Pelt" */
+		case joaat("PROVISION_DEER_HIDE_POOR"):
 			return 21;
 		case joaat("PROVISION_RAM_HIDE"):
 			return 45;
 		case joaat("PROVISION_PANTHER_FUR"):
 			return 34;
-		case -308965548: /* GXTEntry: "Poor Pig Hide" */
+		case joaat("PROVISION_PIG_SKIN_POOR"):
 			return 39;
-		case -150200864: /* GXTEntry: "Legendary Beaver Pelt" */
+		case joaat("PROVISION_BEAVER_LEGENDARY_FUR_PRISTINE"):
 			return 3;
-		case -103050851: /* GXTEntry: "Legendary Pronghorn Hide" */
+		case joaat("PROVISION_PRONGHORN_LEGENDARY_FUR_PRISTINE"):
 			return 44;
-		case -99092070: /* GXTEntry: "Poor Collared Peccary Pig Pelt" */
+		case joaat("PROVISION_JAVELINA_SKIN_POOR"):
 			return 31;
 		case joaat("PROVISION_PIG_SKIN"):
 			return 38;
 		case 0:
 			return 56;
-		case 85441452: /* GXTEntry: "Poor Wolf Pelt" */
+		case joaat("PROVISION_WOLF_FUR_POOR"):
 			return 53;
 		case joaat("PROVISION_FOX_FUR"):
 			return 23;
 		case joaat("PROVISION_COUGAR_FUR"):
 			return 12;
-		case 500722008: /* GXTEntry: "Perfect Fox Pelt" */
+		case joaat("PROVISION_FOX_FUR_PRISTINE"):
 			return 25;
-		case 552246565: /* GXTEntry: "Legendary Wolf Pelt" */
+		case joaat("PROVISION_WOLF_LEGENDARY_FUR_PRISTINE"):
 			return 55;
 		case joaat("PROVISION_PRONGHORN_FUR"):
 			return 41;
-		case 653400939: /* GXTEntry: "Perfect Wolf Pelt" */
+		case joaat("PROVISION_WOLF_FUR_PRISTINE"):
 			return 54;
-		case 657906142: /* GXTEntry: "Legendary Panther Pelt" */
+		case joaat("PROVISION_PANTHER_LEGENDARY_FUR_PRISTINE"):
 			return 37;
-		case 699990316: /* GXTEntry: "Poor Goat Hide" */
+		case joaat("PROVISION_GOAT_HAIR_POOR"):
 			return 28;
-		case 854596618: /* GXTEntry: "Perfect Beaver Pelt" */
+		case joaat("PROVISION_BEAVER_FUR_PRISTINE"):
 			return 2;
 		case joaat("PROVISION_WOLF_FUR"):
 			return 52;
 		case joaat("PROVISION_COYOTE_FUR"):
 			return 16;
-		case 1248540072: /* GXTEntry: "Poor Boar Pelt" */
+		case joaat("PROVISION_BOAR_SKIN_POOR"):
 			return 6;
-		case 1466150167: /* GXTEntry: "Perfect Sheep Hide" */
+		case joaat("PROVISION_SHEEP_WOOL_PRISTINE"):
 			return 51;
-		case 1528935719: /* GXTEntry: "Legendary Cougar Pelt" */
+		case joaat("PROVISION_COUGAR_LEGENDARY_FUR_PRISTINE"):
 			return 15;
-		case 1584468323: /* GXTEntry: "Poor Panther Pelt" */
+		case joaat("PROVISION_PANTHER_FUR_POOR"):
 			return 35;
-		case 1603936352: /* GXTEntry: "Poor Buck Pelt" */
+		case joaat("PROVISION_BUCK_FUR_POOR"):
 			return 9;
-		case 1642484975: /* GXTEntry: "Legendary Fox Pelt" */
+		case joaat("PROVISION_FOX_LEGENDARY_FUR_PRISTINE"):
 			return 26;
-		case 1647012424: /* GXTEntry: "Poor Fox Pelt" */
+		case joaat("PROVISION_FOX_FUR_POOR"):
 			return 24;
 		case joaat("PROVISION_GOAT_HAIR"):
 			return 27;
-		case 1729948479: /* GXTEntry: "Poor Sheep Hide" */
+		case joaat("PROVISION_SHEEP_WOOL_POOR"):
 			return 50;
-		case 1795984405: /* GXTEntry: "Perfect Ram Hide" */
+		case joaat("PROVISION_RAM_HIDE_PRISTINE"):
 			return 47;
-		case 1796037447: /* GXTEntry: "Poor Ram Hide" */
+		case joaat("PROVISION_RAM_HIDE_POOR"):
 			return 46;
-		case 1914602340: /* GXTEntry: "Poor Cougar Pelt" */
+		case joaat("PROVISION_COUGAR_FUR_POOR"):
 			return 13;
-		case 1963510418: /* GXTEntry: "Perfect Collared Peccary Pig Pelt" */
+		case joaat("PROVISION_JAVELINA_SKIN_PRISTINE"):
 			return 32;
-		case 1969175294: /* GXTEntry: "Perfect Panther Pelt" */
+		case joaat("PROVISION_PANTHER_FUR_PRISTINE"):
 			return 36;
 		case joaat("PROVISION_LOANSHARK_SKINS"):
 			return 33;
-		case 2109269555: /* GXTEntry: "Legendary Boar Pelt" */
+		case joaat("PROVISION_BOAR_LEGENDARY_SKIN_PRISTINE"):
 			return 4;
 		case joaat("PROVISION_BOAR_SKIN"):
 			return 5;
@@ -21816,7 +21816,7 @@ struct<2> func_745(int iParam0)
 		{
 			if (func_687(iParam0, -537818634))
 			{
-				return func_307(189951448);
+				return func_307(joaat("MEDICINE_AND_DEADEYE_ITEMS"));
 			}
 			else
 			{
@@ -21998,7 +21998,7 @@ void func_749(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 		}
 	}
 	sVar15 = func_446(MISC::_CREATE_VAR_STRING(10, &cVar2, MISC::_CREATE_VAR_STRING(0, func_796(iParam0)), iVar1), iVar12);
-	if (((((iParam1 == 1 || func_687(iParam0, 1443104131)) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX")) || iParam0 == -1424823393) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_CHEAP")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_CHEAP_USED"))
+	if (((((iParam1 == 1 || func_687(iParam0, 1443104131)) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_USED")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_CHEAP")) || iParam0 == joaat("CONSUMABLE_CIGARETTE_BOX_CHEAP_USED"))
 	{
 		sVar15 = MISC::_CREATE_VAR_STRING(0, func_796(iParam0));
 	}
@@ -23426,83 +23426,83 @@ void func_826(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;

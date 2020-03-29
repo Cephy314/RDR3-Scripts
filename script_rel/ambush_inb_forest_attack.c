@@ -1135,7 +1135,7 @@ void func_25(var uParam0, bool bParam1)
 		Var0.f_11 = -1082130432;
 		Var0.f_12 = -1;
 		Var0.f_13 = -1;
-		Var0 = -1215290486;
+		Var0 = joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW");
 		Var0.f_6 = 100f;
 		if (!func_69(uParam0->f_212))
 		{
@@ -2824,7 +2824,7 @@ int func_93(int iParam0)
 		{
 			uLocal_15.f_75[iParam0] = func_94();
 		}
-		if (&uLocal_15.f_75[iParam0] == 1268180497)
+		if (&uLocal_15.f_75[iParam0] == joaat("META_HORSE_SADDLE_ONLY"))
 		{
 			uLocal_15.f_75[iParam0] = func_94();
 		}
@@ -2834,7 +2834,7 @@ int func_93(int iParam0)
 
 int func_94()
 {
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 int func_95()
@@ -3128,23 +3128,23 @@ int func_118(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -651526383;
+			return joaat("GANG_ODRISCOLLS");
 		case 2:
-			return 114942645;
+			return joaat("GANG_LEMOYNE_RAIDERS");
 		case 1:
-			return 1846188867;
+			return joaat("GANG_MURFREE_BROOD");
 		case 4:
 			return joaat("GANG_LARAMIE");
 		case 3:
-			return -61242338;
+			return joaat("GANG_SKINNER_BROS");
 		case 5:
-			return 744552419;
+			return joaat("GANG_DEL_LOBOS");
 		case 10:
-			return -655472496;
+			return joaat("LAW_PROFESSIONAL");
 		default:
 			break;
 	}
-	return 353608996;
+	return joaat("AGGRESSIVE_TOWNSFOLK");
 }
 
 int func_119(int iParam0)
@@ -3338,7 +3338,7 @@ void func_130(var uParam0, int iParam1, bool bParam2)
 void func_131(var uParam0, int iParam1, int iParam2, int iParam3)
 {
 	PED::SET_PED_FIRING_PATTERN(uParam0[iParam1], joaat("FIRING_PATTERN_BURST_FIRE"));
-	PED::_0x20E54854DEF6A54A(uParam0[iParam1], 40051185);
+	PED::_0x20E54854DEF6A54A(uParam0[iParam1], joaat("FIRING_PATTERN_BURST_FIRE_IN_COVER"));
 	switch (uParam0->f_181)
 	{
 		case 2:
@@ -6597,19 +6597,19 @@ int func_248(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, joaat("SPECIES_HORSE"), true, false, 0f, 0f, 0f);
 }
 
 int func_249(int iParam0, int iParam1, int iParam2)
@@ -6830,7 +6830,7 @@ int func_250(int iParam0, int iParam1, int iParam2)
 	int iVar1;
 	int iVar2;
 
-	iVar2 = 1268180497;
+	iVar2 = joaat("META_HORSE_SADDLE_ONLY");
 	iVar1 = func_376(iParam0);
 	if ((func_179(iParam2, 1) || iParam1 >= iVar1) || iParam1 < 0)
 	{
@@ -7114,7 +7114,7 @@ void func_258(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_379(iParam1))
 		{
-			func_380(iParam0, 41788943);
+			func_380(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -10161,7 +10161,7 @@ void func_382(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -12311,31 +12311,31 @@ int func_445(int iParam0, bool bParam1)
 		case joaat("WEAPON_SHOTGUN_DOUBLEBARREL"):
 			if (bParam1)
 			{
-				iVar0 = 706668430;
+				iVar0 = joaat("LO_GANG_INB_SHOTGUN_DOUBLEBARREL_EQUIPPED");
 			}
 			else
 			{
-				iVar0 = 993304958;
+				iVar0 = joaat("LO_GANG_INB_SHOTGUN_DOUBLEBARREL");
 			}
 			break;
 		case joaat("WEAPON_SHOTGUN_SAWEDOFF"):
 			if (bParam1)
 			{
-				iVar0 = 666997742;
+				iVar0 = joaat("LO_GANG_INB_SHOTGUN_SAWEDOFF_EQUIPPED");
 			}
 			else
 			{
-				iVar0 = 1472661451;
+				iVar0 = joaat("LO_GANG_INB_SHOTGUN_SAWEDOFF");
 			}
 			break;
 		case joaat("WEAPON_REVOLVER_CATTLEMAN"):
 			if (bParam1)
 			{
-				iVar0 = 1568939990;
+				iVar0 = joaat("LO_GANG_INB_REVOLVER_CATTLEMAN_EQUIPPED");
 			}
 			else
 			{
-				iVar0 = -2130489351;
+				iVar0 = joaat("LO_GANG_INB_REVOLVER_CATTLEMAN");
 			}
 			break;
 	}
@@ -12343,8 +12343,8 @@ int func_445(int iParam0, bool bParam1)
 	{
 		switch (iVar0)
 		{
-			case -2130489351:
-				iVar0 = 1568939990;
+			case joaat("LO_GANG_INB_REVOLVER_CATTLEMAN"):
+				iVar0 = joaat("LO_GANG_INB_REVOLVER_CATTLEMAN_EQUIPPED");
 				break;
 		}
 	}
@@ -12427,51 +12427,51 @@ int func_446(int iParam0, bool bParam1)
 		case joaat("WEAPON_REPEATER_CARBINE"):
 			if (!bParam1)
 			{
-				iVar1 = -1803831742;
+				iVar1 = joaat("LO_GANG_BND_REPEATER_CARBINE");
 			}
 			else
 			{
-				iVar1 = 1151959390;
+				iVar1 = joaat("LO_GANG_BND_REPEATER_CARBINE_EQUIPPED");
 			}
 			break;
 		case joaat("WEAPON_REPEATER_HENRY"):
 			if (!bParam1)
 			{
-				iVar1 = -975773155;
+				iVar1 = joaat("LO_GANG_BND_REPEATER_HENRY");
 			}
 			else
 			{
-				iVar1 = 1943142735;
+				iVar1 = joaat("LO_GANG_BND_REPEATER_HENRY_EQUIPPED");
 			}
 			break;
 		case joaat("WEAPON_REVOLVER_SCHOFIELD"):
 			if (!bParam1)
 			{
-				iVar1 = 75445266;
+				iVar1 = joaat("LO_GANG_BND_REVOLVER_SCHOFIELD");
 			}
 			else
 			{
-				iVar1 = -525293038;
+				iVar1 = joaat("LO_GANG_BND_REVOLVER_SCHOFIELD_EQUIPPED");
 			}
 			break;
 		case joaat("WEAPON_REVOLVER_DOUBLEACTION"):
 			if (!bParam1)
 			{
-				iVar1 = -317201336;
+				iVar1 = joaat("LO_GANG_BND_REVOLVER_DOUBLEACTION");
 			}
 			else
 			{
-				iVar1 = -1610312847;
+				iVar1 = joaat("LO_GANG_BND_REVOLVER_DOUBLEACTION_EQUIPPED");
 			}
 			break;
 		case joaat("WEAPON_REVOLVER_CATTLEMAN"):
 			if (!bParam1)
 			{
-				iVar1 = 1366755867;
+				iVar1 = joaat("LO_GANG_BND_REVOLVER_CATTLEMAN");
 			}
 			else
 			{
-				iVar1 = 886870984;
+				iVar1 = joaat("LO_GANG_BND_REVOLVER_CATTLEMAN_EQUIPPED");
 			}
 			break;
 	}
@@ -17858,33 +17858,33 @@ int func_586(int iParam0)
 			return 0;
 		case joaat("BIGVALLEY"):
 			return 1;
-		case 1308232528:
+		case joaat("BLUEWATERMARSH"):
 			return 2;
-		case 1835499550:
+		case joaat("CUMBERLAND"):
 			return 3;
 		case joaat("GREATPLAINS"):
 			return 4;
-		case -120156735:
+		case joaat("GRIZZLIESEAST"):
 			return 6;
-		case 1645618177:
+		case joaat("GRIZZLIESWEST"):
 			return 7;
-		case -512529193:
+		case joaat("GUARMAD"):
 			return 8;
 		case joaat("HEARTLANDS"):
 			return 9;
-		case 178647645:
+		case joaat("ROANOKE"):
 			return 10;
 		case joaat("SCARLETTMEADOWS"):
 			return 11;
 		case joaat("TALLTREES"):
 			return 12;
-		case -2066240242:
+		case joaat("GAPTOOTHRIDGE"):
 			return 13;
 		case joaat("RIOBRAVO"):
 			return 14;
-		case -108848014:
+		case joaat("CHOLLASPRINGS"):
 			return 15;
-		case 892930832:
+		case joaat("HENNIGANSSTEAD"):
 			return 16;
 		default:
 			break;
@@ -18722,7 +18722,7 @@ int func_627(int iParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(iParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(iParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -19217,7 +19217,7 @@ int func_653(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -19278,7 +19278,7 @@ int func_656(int iParam0)
 
 bool func_657()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(99890643);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
 }
 
 int func_658(int iParam0, int iParam1)

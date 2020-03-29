@@ -58,7 +58,7 @@ void __EntryFunction__()
 	PLAYER::_0xCFFC3ECCD7A5CCEB(PLAYER::GET_PLAYER_INDEX(), joaat("WEAPON_UNARMED"), 0);
 	Global_1939231->f_10516 = 0;
 	Global_1939231->f_10517 = 0;
-	iVar2 = -1723036365;
+	iVar2 = joaat("INGAME");
 	if (func_3(0))
 	{
 		iVar2 = joaat("SHOP");

@@ -1124,7 +1124,7 @@ bool func_45(var uParam0)
 	{
 		if (!func_8(Local_21.f_1, 1))
 		{
-			PROPSET::_0x75F90E4051CC084C(uParam0->f_3, 295596934);
+			PROPSET::_0x75F90E4051CC084C(uParam0->f_3, joaat("PG_MP005_HUNTINGWAGONTARP01"));
 			func_13(&(Local_21.f_1), 1);
 			bVar0 = false;
 		}
@@ -1134,7 +1134,7 @@ bool func_45(var uParam0)
 		}
 		if (!func_8(Local_21.f_1, 2))
 		{
-			PROPSET::_0xC0F0417A90402742(uParam0->f_3, 696075367);
+			PROPSET::_0xC0F0417A90402742(uParam0->f_3, joaat("PG_VEH_CART06_LANTERNS01"));
 			func_13(&(Local_21.f_1), 2);
 			bVar0 = false;
 		}
@@ -3924,471 +3924,471 @@ int func_174(int iParam0)
 	{
 		case joaat("PROVISION_ALLIGATOR_SKIN"):
 			return -1670497261;
-		case 1806153689: /* GXTEntry: "Poor Alligator Skin" */
+		case joaat("PROVISION_ALLIGATOR_SKIN_POOR"):
 			return -280711232;
-		case -1625078531: /* GXTEntry: "Perfect Alligator Skin" */
+		case joaat("PROVISION_ALLIGATOR_SKIN_PRISTINE"):
 			return 596590814;
 		case joaat("PROVISION_BEAR_FUR"):
 			return 1824983669;
-		case 957520252: /* GXTEntry: "Poor Bear Pelt" */
+		case joaat("PROVISION_BEAR_FUR_POOR"):
 			return 928262209;
-		case 1292673537: /* GXTEntry: "Perfect Bear Pelt" */
+		case joaat("PROVISION_BEAR_FUR_PRISTINE"):
 			return 541735817;
 		case joaat("PROVISION_BEAVER_FUR"):
 			return 478256501;
-		case -1569450319: /* GXTEntry: "Poor Beaver Pelt" */
+		case joaat("PROVISION_BEAVER_FUR_POOR"):
 			return -232007656;
-		case 854596618: /* GXTEntry: "Perfect Beaver Pelt" */
+		case joaat("PROVISION_BEAVER_FUR_PRISTINE"):
 			return 19595959;
 		case joaat("PROVISION_BLACK_BEAR_FUR"):
 			return -101065075;
-		case 1083865179: /* GXTEntry: "Poor Black Bear Pelt" */
+		case joaat("PROVISION_BLACK_BEAR_FUR_POOR"):
 			return 2105875134;
-		case 663376218: /* GXTEntry: "Perfect Black Bear Pelt" */
+		case joaat("PROVISION_BLACK_BEAR_FUR_PRISTINE"):
 			return 294194582;
 		case joaat("PROVISION_BOAR_SKIN"):
 			return 837315235;
-		case 1248540072: /* GXTEntry: "Poor Boar Pelt" */
+		case joaat("PROVISION_BOAR_SKIN_POOR"):
 			return -1818319295;
-		case -1858513856: /* GXTEntry: "Perfect Boar Pelt" */
+		case joaat("PROVISION_BOAR_SKIN_PRISTINE"):
 			return -1597636811;
 		case joaat("PROVISION_BUCK_FUR"):
 			return -1985596288;
-		case 1603936352: /* GXTEntry: "Poor Buck Pelt" */
+		case joaat("PROVISION_BUCK_FUR_POOR"):
 			return -440737957;
-		case -702790226: /* GXTEntry: "Perfect Buck Pelt" */
+		case joaat("PROVISION_BUCK_FUR_PRISTINE"):
 			return -1886002303;
 		case joaat("PROVISION_BUFFALO_FUR"):
 			return -901855085;
-		case -1730060063: /* GXTEntry: "Poor Bison Pelt" */
+		case joaat("PROVISION_BUFFALO_FUR_POOR"):
 			return 891487295;
-		case -237756948: /* GXTEntry: "Perfect Bison Pelt" */
+		case joaat("PROVISION_BUFFALO_FUR_PRISTINE"):
 			return -1647829735;
 		case joaat("PROVISION_BULL_HIDE"):
 			return 1698233050;
-		case 9293261: /* GXTEntry: "Poor Bull Hide" */
+		case joaat("PROVISION_BULL_HIDE_POOR"):
 			return -1939379896;
-		case -53270317: /* GXTEntry: "Perfect Bull Hide" */
+		case joaat("PROVISION_BULL_HIDE_PRISTINE"):
 			return -1903865243;
 		case joaat("PROVISION_COUGAR_FUR"):
 			return 2116155169;
-		case 1914602340: /* GXTEntry: "Poor Cougar Pelt" */
+		case joaat("PROVISION_COUGAR_FUR_POOR"):
 			return -1373796272;
-		case -1791452194: /* GXTEntry: "Perfect Cougar Pelt" */
+		case joaat("PROVISION_COUGAR_FUR_PRISTINE"):
 			return 834120727;
 		case joaat("PROVISION_COW_HIDE"):
 			return -976686879;
-		case 334093551: /* GXTEntry: "Poor Cow Hide" */
+		case joaat("PROVISION_COW_HIDE_POOR"):
 			return 622542686;
-		case -845037222: /* GXTEntry: "Perfect Cow Hide" */
+		case joaat("PROVISION_COW_HIDE_PRISTINE"):
 			return -96726590;
 		case joaat("PROVISION_COYOTE_FUR"):
 			return 493864472;
-		case -1558096473: /* GXTEntry: "Poor Coyote Pelt" */
+		case joaat("PROVISION_COYOTE_FUR_POOR"):
 			return -1364685383;
-		case -794277189: /* GXTEntry: "Perfect Coyote Pelt" */
+		case joaat("PROVISION_COYOTE_FUR_PRISTINE"):
 			return 501072671;
 		case joaat("PROVISION_DEER_HIDE"):
 			return -1832121185;
-		case -662178186: /* GXTEntry: "Poor Deer Pelt" */
+		case joaat("PROVISION_DEER_HIDE_POOR"):
 			return 332878276;
-		case -1035515486: /* GXTEntry: "Perfect Deer Pelt" */
+		case joaat("PROVISION_DEER_HIDE_PRISTINE"):
 			return 226674781;
 		case joaat("PROVISION_ELK_FUR"):
 			return 945521246;
-		case 2053771712: /* GXTEntry: "Poor Elk Pelt" */
+		case joaat("PROVISION_ELK_FUR_POOR"):
 			return 1013673835;
-		case -1332163079: /* GXTEntry: "Perfect Elk Pelt" */
+		case joaat("PROVISION_ELK_FUR_PRISTINE"):
 			return 1080677561;
 		case joaat("PROVISION_FOX_FUR"):
 			return 441281843;
-		case 1647012424: /* GXTEntry: "Poor Fox Pelt" */
+		case joaat("PROVISION_FOX_FUR_POOR"):
 			return 2100972340;
-		case 500722008: /* GXTEntry: "Perfect Fox Pelt" */
+		case joaat("PROVISION_FOX_FUR_PRISTINE"):
 			return 731989586;
 		case joaat("PROVISION_GOAT_HAIR"):
 			return -312223536;
-		case 699990316: /* GXTEntry: "Poor Goat Hide" */
+		case joaat("PROVISION_GOAT_HAIR_POOR"):
 			return 919524407;
-		case -1648383828: /* GXTEntry: "Perfect Goat Hide" */
+		case joaat("PROVISION_GOAT_HAIR_PRISTINE"):
 			return 45874041;
 		case joaat("PROVISION_JAVELINA_SKIN"):
 			return -1135509110;
-		case -99092070: /* GXTEntry: "Poor Collared Peccary Pig Pelt" */
+		case joaat("PROVISION_JAVELINA_SKIN_POOR"):
 			return -1991809269;
-		case 1963510418: /* GXTEntry: "Perfect Collared Peccary Pig Pelt" */
+		case joaat("PROVISION_JAVELINA_SKIN_PRISTINE"):
 			return -882315424;
 		case joaat("PROVISION_MOOSE_FUR"):
 			return -1198430015;
-		case 1868576868: /* GXTEntry: "Poor Moose Pelt" */
+		case joaat("PROVISION_MOOSE_FUR_POOR"):
 			return 610503310;
-		case -217731719: /* GXTEntry: "Perfect Moose Pelt" */
+		case joaat("PROVISION_MOOSE_FUR_PRISTINE"):
 			return -2104728156;
 		case joaat("PROVISION_OXEN_HIDE"):
 			return -1848951328;
-		case 462348928: /* GXTEntry: "Poor Ox Hide" */
+		case joaat("PROVISION_OXEN_HIDE_POOR"):
 			return -1522563214;
-		case 659601266: /* GXTEntry: "Perfect Ox Hide" */
+		case joaat("PROVISION_OXEN_HIDE_PRISTINE"):
 			return 701524769;
 		case joaat("PROVISION_PANTHER_FUR"):
 			return -1125735460;
-		case 1584468323: /* GXTEntry: "Poor Panther Pelt" */
+		case joaat("PROVISION_PANTHER_FUR_POOR"):
 			return -912340422;
-		case 1969175294: /* GXTEntry: "Perfect Panther Pelt" */
+		case joaat("PROVISION_PANTHER_FUR_PRISTINE"):
 			return -339216640;
 		case joaat("PROVISION_PIG_SKIN"):
 			return -850815155;
-		case -308965548: /* GXTEntry: "Poor Pig Hide" */
+		case joaat("PROVISION_PIG_SKIN_POOR"):
 			return 980503581;
-		case -1102272634: /* GXTEntry: "Perfect Pig Hide" */
+		case joaat("PROVISION_PIG_SKIN_PRISTINE"):
 			return 222730798;
 		case joaat("PROVISION_PRONGHORN_FUR"):
 			return -615127816;
-		case -983605026: /* GXTEntry: "Poor Pronghorn Hide" */
+		case joaat("PROVISION_PRONGHORN_FUR_POOR"):
 			return -588738567;
-		case -1544126829: /* GXTEntry: "Perfect Pronghorn Hide" */
+		case joaat("PROVISION_PRONGHORN_FUR_PRISTINE"):
 			return -1194176543;
 		case joaat("PROVISION_RAM_HIDE"):
 			return -963727698;
-		case 1796037447: /* GXTEntry: "Poor Ram Hide" */
+		case joaat("PROVISION_RAM_HIDE_POOR"):
 			return -553292391;
-		case 1795984405: /* GXTEntry: "Perfect Ram Hide" */
+		case joaat("PROVISION_RAM_HIDE_PRISTINE"):
 			return 1964559810;
 		case joaat("PROVISION_SHEEP_WOOL"):
 			return -30369031;
-		case 1729948479: /* GXTEntry: "Poor Sheep Hide" */
+		case joaat("PROVISION_SHEEP_WOOL_POOR"):
 			return 1200593517;
-		case 1466150167: /* GXTEntry: "Perfect Sheep Hide" */
+		case joaat("PROVISION_SHEEP_WOOL_PRISTINE"):
 			return 1386213093;
 		case joaat("PROVISION_WOLF_FUR"):
 			return -1853692477;
-		case 85441452: /* GXTEntry: "Poor Wolf Pelt" */
+		case joaat("PROVISION_WOLF_FUR_POOR"):
 			return -265369183;
-		case 653400939: /* GXTEntry: "Perfect Wolf Pelt" */
+		case joaat("PROVISION_WOLF_FUR_PRISTINE"):
 			return 1490994314;
-		case 915880986: /* GXTEntry: "Good Alligator Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_HIGH_QUALITY"):
 			return -560512119;
-		case -1424697962: /* GXTEntry: "Perfect Alligator Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_PERFECT"):
 			return -372283616;
-		case -1643384846: /* GXTEntry: "Poor Alligator Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_POOR"):
 			return 643029198;
-		case -847420802: /* GXTEntry: "Good Armadillo Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_HIGH_QUALITY"):
 			return -507336551;
-		case -662726703: /* GXTEntry: "Perfect Armadillo Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_PERFECT"):
 			return -1633300610;
-		case 1760886130: /* GXTEntry: "Poor Armadillo Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_POOR"):
 			return 312232747;
-		case -1243653490: /* GXTEntry: "Good Badger Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_HIGH_QUALITY"):
 			return -369028960;
-		case 1988467099: /* GXTEntry: "Perfect Badger Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_PERFECT"):
 			return 56997271;
-		case -674590015: /* GXTEntry: "Poor Badger Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_POOR"):
 			return -562880581;
-		case -1480423460: /* GXTEntry: "Good Beaver Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_HIGH_QUALITY"):
 			return 1914482046;
-		case 924882045: /* GXTEntry: "Perfect Beaver Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_PERFECT"):
 			return -398123506;
-		case 1415608202: /* GXTEntry: "Poor Beaver Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_POOR"):
 			return -154193613;
-		case -593311590: /* GXTEntry: "Good Bighorn Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_HIGH_QUALITY"):
 			return 253511830;
-		case 765085831: /* GXTEntry: "Perfect Bighorn Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_PERFECT"):
 			return 25196805;
-		case 2094730711: /* GXTEntry: "Poor Bighorn Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_POOR"):
 			return -585570711;
-		case -1310590179: /* GXTEntry: "Good Buck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_HIGH_QUALITY"):
 			return 738250137;
-		case 992366796: /* GXTEntry: "Perfect Buck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_PERFECT"):
 			return -255175472;
-		case -244657613: /* GXTEntry: "Poor Buck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_POOR"):
 			return 2029824605;
-		case -2026210939: /* GXTEntry: "Good California Condor Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_HIGH_QUALITY"):
 			return 637459650;
-		case -1252472243: /* GXTEntry: "Perfect California Condor Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_PERFECT"):
 			return -1763677083;
-		case -980016656: /* GXTEntry: "Poor California Condor Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_POOR"):
 			return 105057785;
-		case -758005668: /* GXTEntry: "Good Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_HIGH_QUALITY"):
 			return 2109109029;
-		case -2139551030: /* GXTEntry: "Perfect Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_PERFECT"):
 			return 590763523;
-		case 1607144310: /* GXTEntry: "Poor Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_POOR"):
 			return -1415366968;
-		case 80093385: /* GXTEntry: "Good Cormorant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_HIGH_QUALITY"):
 			return 1525242558;
-		case -867655342: /* GXTEntry: "Perfect Cormorant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_PERFECT"):
 			return -1053027662;
-		case 991092621: /* GXTEntry: "Poor Cormorant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_POOR"):
 			return 170878033;
-		case 871746664: /* GXTEntry: "Good Cougar Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_HIGH_QUALITY"):
 			return 1176700965;
-		case 1626949878: /* GXTEntry: "Perfect Cougar Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_PERFECT"):
 			return 956769558;
-		case -1722483116: /* GXTEntry: "Poor Cougar Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_POOR"):
 			return -92340513;
-		case -1739474417: /* GXTEntry: "Good Coyote Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_HIGH_QUALITY"):
 			return -1628899142;
-		case -161524199: /* GXTEntry: "Perfect Coyote Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_PERFECT"):
 			return -1009793706;
-		case 156979555: /* GXTEntry: "Poor Coyote Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_POOR"):
 			return 69303734;
-		case 322141256: /* GXTEntry: "Good Crane Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_HIGH_QUALITY"):
 			return 1934146069;
-		case 1310120320: /* GXTEntry: "Perfect Crane Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_PERFECT"):
 			return 1251861193;
-		case -1228376431: /* GXTEntry: "Poor Crane Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_POOR"):
 			return -1201528492;
-		case 472142656: /* GXTEntry: "Good Deer Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DEER_HIGH_QUALITY"):
 			return -584564578;
-		case -1837840093: /* GXTEntry: "Perfect Deer Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DEER_PERFECT"):
 			return 1257170615;
-		case 58634176: /* GXTEntry: "Poor Deer Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DEER_POOR"):
 			return -443353688;
-		case 1023080408: /* GXTEntry: "Good Duck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_HIGH_QUALITY"):
 			return -726514003;
-		case 1001171791: /* GXTEntry: "Perfect Duck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_PERFECT"):
 			return -1178975683;
-		case 1210345318: /* GXTEntry: "Poor Duck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_POOR"):
 			return -1735020859;
-		case 399553313: /* GXTEntry: "Good Eagle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_HIGH_QUALITY"):
 			return 1066403056;
-		case -1422869557: /* GXTEntry: "Perfect Eagle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_PERFECT"):
 			return 379141135;
-		case -1378812236: /* GXTEntry: "Poor Eagle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_POOR"):
 			return 178588058;
-		case 1011003885: /* GXTEntry: "Good Egret Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_HIGH_QUALITY"):
 			return 250119098;
-		case 651035143: /* GXTEntry: "Perfect Egret Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_PERFECT"):
 			return 1462096210;
-		case 2013022756: /* GXTEntry: "Poor Egret Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_POOR"):
 			return 125705494;
-		case -1186289527: /* GXTEntry: "Good Fox Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_FOX_HIGH_QUALITY"):
 			return 1955497943;
-		case 877935135: /* GXTEntry: "Perfect Fox Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_FOX_PERFECT"):
 			return -239746263;
-		case -39646495: /* GXTEntry: "Poor Fox Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_FOX_POOR"):
 			return 483041697;
-		case 1582593525: /* GXTEntry: "Good Gila Monster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GILA_HIGH_QUALITY"):
 			return 2115836262;
-		case -246542229: /* GXTEntry: "Perfect Gila Monster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GILA_PERFECT"):
 			return 127221449;
-		case -529454751: /* GXTEntry: "Poor Gila Monster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GILA_POOR"):
 			return 1281075400;
-		case -46978629: /* GXTEntry: "Good Goat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_HIGH_QUALITY"):
 			return -187017787;
-		case -1347000030: /* GXTEntry: "Perfect Goat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_PERFECT"):
 			return 2084769890;
-		case -505583391: /* GXTEntry: "Poor Goat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_POOR"):
 			return -1860395611;
-		case 1645887374: /* GXTEntry: "Good Goose Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_HIGH_QUALITY"):
 			return -925132283;
-		case -1559227925: /* GXTEntry: "Perfect Goose Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_PERFECT"):
 			return 1221255602;
-		case 1562528937: /* GXTEntry: "Poor Goose Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_POOR"):
 			return -1971512016;
-		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_HIGH_QUALITY"):
 			return 1915869310;
-		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_PERFECT"):
 			return -291878865;
-		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_POOR"):
 			return 628765193;
-		case 718825539: /* GXTEntry: "Good Heron Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HERON_HIGH_QUALITY"):
 			return 73897638;
-		case 2105263879: /* GXTEntry: "Perfect Heron Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HERON_PERFECT"):
 			return -520524691;
-		case -905842006: /* GXTEntry: "Poor Heron Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HERON_POOR"):
 			return -677211393;
-		case 1191274340: /* GXTEntry: "Good Iguana Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_HIGH_QUALITY"):
 			return 607200259;
-		case 1613453781: /* GXTEntry: "Perfect Iguana Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_PERFECT"):
 			return -422975251;
-		case -1030182399: /* GXTEntry: "Poor Iguana Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_POOR"):
 			return -162653027;
-		case 987967309: /* GXTEntry: "Good Loon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_LOON_HIGH_QUALITY"):
 			return -1918690839;
-		case -1060737769: /* GXTEntry: "Perfect Loon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_LOON_PERFECT"):
 			return 885447719;
-		case 553310445: /* GXTEntry: "Poor Loon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_LOON_POOR"):
 			return 1359956914;
-		case -1838865945: /* GXTEntry: "Good Muskrat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_HIGH_QUALITY"):
 			return -509393273;
-		case 1418092959: /* GXTEntry: "Perfect Muskrat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_PERFECT"):
 			return 1728485205;
-		case -1315697778: /* GXTEntry: "Poor Muskrat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_POOR"):
 			return 179793498;
-		case -1772126340: /* GXTEntry: "Good Opossum Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_HIGH_QUALITY"):
 			return -1846596769;
-		case -935543049: /* GXTEntry: "Perfect Opossum Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_PERFECT"):
 			return 1833664130;
-		case 1772544356: /* GXTEntry: "Poor Opossum Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_POOR"):
 			return joaat("DLC_MP_ARENA_M_JBIB_7_13");
-		case -266273535: /* GXTEntry: "Good Owl Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OWL_HIGH_QUALITY"):
 			return 2094969043;
-		case -1670544626: /* GXTEntry: "Perfect Owl Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OWL_PERFECT"):
 			return -1582650542;
-		case 1290960696: /* GXTEntry: "Poor Owl Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OWL_POOR"):
 			return 1799724359;
-		case 1913571052: /* GXTEntry: "Good Panther Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_HIGH_QUALITY"):
 			return 1598789118;
-		case 1717601520: /* GXTEntry: "Perfect Panther Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_PERFECT"):
 			return 1824349223;
-		case 430397370: /* GXTEntry: "Poor Panther Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_POOR"):
 			return 696418077;
-		case 16287711: /* GXTEntry: "Good Parrot Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_HIGH_QUALITY"):
 			return 1106697533;
-		case -1356230367: /* GXTEntry: "Perfect Parrot Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_PERFECT"):
 			return -1454259523;
-		case 1417331079: /* GXTEntry: "Poor Parrot Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_POOR"):
 			return -1896235488;
-		case -884124246: /* GXTEntry: "Good Pelican Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_HIGH_QUALITY"):
 			return 276180683;
-		case 1884610748: /* GXTEntry: "Perfect Pelican Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_PERFECT"):
 			return -747881514;
-		case 746558492: /* GXTEntry: "Poor Pelican Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_POOR"):
 			return 1262126135;
-		case -892811627: /* GXTEntry: "Good Pheasant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_HIGH_QUALITY"):
 			return 2265787;
-		case -2040522845: /* GXTEntry: "Perfect Pheasant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_PERFECT"):
 			return -2129601667;
-		case -1224510844: /* GXTEntry: "Poor Pheasant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_POOR"):
 			return 75684692;
-		case 1334837390: /* GXTEntry: "Good Pig Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIG_HIGH_QUALITY"):
 			return 1900817837;
-		case 339620522: /* GXTEntry: "Perfect Pig Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIG_PERFECT"):
 			return -1956299475;
-		case 1770451033: /* GXTEntry: "Poor Pig Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIG_POOR"):
 			return 694522728;
-		case 756657535: /* GXTEntry: "Good Prairie Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_HIGH_QUALITY"):
 			return 765710924;
-		case 862898895: /* GXTEntry: "Perfect Prairie Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_PERFECT"):
 			return 893337488;
-		case 1997845858: /* GXTEntry: "Poor Prairie Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_POOR"):
 			return 154935767;
-		case -1930144509: /* GXTEntry: "Good Pronghorn Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_HIGH_QUALITY"):
 			return -568415076;
-		case 1846915545: /* GXTEntry: "Perfect Pronghorn Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_PERFECT"):
 			return 1274028936;
-		case -1816929509: /* GXTEntry: "Poor Pronghorn Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_POOR"):
 			return -1140231877;
-		case 1197831625: /* GXTEntry: "Good Rabbit Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_HIGH_QUALITY"):
 			return -27138549;
-		case -1866642239: /* GXTEntry: "Perfect Rabbit Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_PERFECT"):
 			return 659005977;
-		case -1508120809: /* GXTEntry: "Poor Rabbit Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_POOR"):
 			return -771957300;
-		case -1007681885: /* GXTEntry: "Good Raccoon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_HIGH_QUALITY"):
 			return 29804808;
-		case 434924608: /* GXTEntry: "Perfect Raccoon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_PERFECT"):
 			return 1551511426;
-		case 1666393029: /* GXTEntry: "Poor Raccoon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_POOR"):
 			return 800713897;
-		case -1814593136: /* GXTEntry: "Good Ram Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAM_HIGH_QUALITY"):
 			return 1612873893;
-		case -1188120304: /* GXTEntry: "Perfect Ram Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAM_PERFECT"):
 			return 1434794005;
-		case 1978734761: /* GXTEntry: "Poor Ram Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAM_POOR"):
 			return -1919690611;
-		case -824902132: /* GXTEntry: "Good Raven Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_HIGH_QUALITY"):
 			return 1742727635;
-		case -1015531226: /* GXTEntry: "Perfect Raven Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_PERFECT"):
 			return 539212240;
-		case -581619522: /* GXTEntry: "Poor Raven Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_POOR"):
 			return -1730963015;
-		case -861854914: /* GXTEntry: "Good Red-footed Booby Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_HIGH_QUALITY"):
 			return 392259955;
-		case -545447034: /* GXTEntry: "Perfect Red-footed Booby Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_PERFECT"):
 			return 1775800065;
-		case -1824684934: /* GXTEntry: "Poor Red-footed Booby Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_POOR"):
 			return 1100310307;
-		case 980653387: /* GXTEntry: "Good Rooster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_HIGH_QUALITY"):
 			return 844987909;
-		case -1011598664: /* GXTEntry: "Perfect Rooster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_PERFECT"):
 			return -278500197;
-		case -177476569: /* GXTEntry: "Poor Rooster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_POOR"):
 			return 887422410;
-		case 416630124: /* GXTEntry: "Good Roseate Spoonbill Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_HIGH_QUALITY"):
 			return -1794448450;
-		case 1925728375: /* GXTEntry: "Perfect Roseate Spoonbill Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_PERFECT"):
 			return 2054761774;
-		case -1080457688: /* GXTEntry: "Poor Roseate Spoonbill Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_POOR"):
 			return -1608758596;
-		case 1742676369: /* GXTEntry: "Good Seagull Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_HIGH_QUALITY"):
 			return 1688649464;
-		case -899751553: /* GXTEntry: "Perfect Seagull Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_PERFECT"):
 			return -2008306533;
-		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_POOR"):
 			return 1100437577;
-		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_HIGH_QUALITY"):
 			return 1726381584;
-		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_PERFECT"):
 			return 1400293322;
-		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_POOR"):
 			return 995534052;
-		case -2013445740: /* GXTEntry: "Good Skunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_HIGH_QUALITY"):
 			return 1922992885;
-		case 102446365: /* GXTEntry: "Perfect Skunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_PERFECT"):
 			return 81605402;
-		case -1927342740: /* GXTEntry: "Poor Skunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_POOR"):
 			return -286651444;
-		case -410900360: /* GXTEntry: "Good Black-tailed Rattlesnake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_HIGH_QUALITY"):
 			return -2064547947;
-		case -1073614594: /* GXTEntry: "Perfect Black-tailed Rattlesnake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_PERFECT"):
 			return -176022019;
-		case 2060013792: /* GXTEntry: "Poor Black-tailed Rattlesnake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_POOR"):
 			return 1232227412;
-		case 581032175: /* GXTEntry: "Good Red Boa Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_HIGH_QUALITY"):
 			return -893789138;
-		case -581931638: /* GXTEntry: "Perfect Red Boa Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_PERFECT"):
 			return 2050798648;
-		case -1528265128: /* GXTEntry: "Poor Red Boa Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_POOR"):
 			return -798568163;
-		case -142632645: /* GXTEntry: "Good Copperhead Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_HIGH_QUALITY"):
 			return 230404077;
-		case -2048519180: /* GXTEntry: "Perfect Copperhead Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_PERFECT"):
 			return -1383606050;
-		case 1442025993: /* GXTEntry: "Poor Copperhead Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_POOR"):
 			return 1090514323;
-		case 441195430: /* GXTEntry: "Good Fer-de-Lance Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_HIGH_QUALITY"):
 			return 1374677981;
-		case 748665395: /* GXTEntry: "Perfect Fer-de-Lance Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_PERFECT"):
 			return -636161424;
-		case 351048413: /* GXTEntry: "Poor Fer-de-Lance Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_POOR"):
 			return -1083700033;
-		case -914779013: /* GXTEntry: "Good Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_HIGH_QUALITY"):
 			return 63328590;
-		case 1323485831: /* GXTEntry: "Perfect Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_PERFECT"):
 			return -676594955;
-		case -365111821: /* GXTEntry: "Poor Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_POOR"):
 			return -654290128;
-		case 101495387: /* GXTEntry: "Good Water Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_HIGH_QUALITY"):
 			return -66423751;
-		case 157917500: /* GXTEntry: "Perfect Water Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_PERFECT"):
 			return -237024085;
-		case -936537044: /* GXTEntry: "Poor Water Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_POOR"):
 			return 431553826;
-		case -1610329427: /* GXTEntry: "Good Turkey Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_HIGH_QUALITY"):
 			return -979079160;
-		case -1836227998: /* GXTEntry: "Perfect Turkey Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_PERFECT"):
 			return 1045329345;
-		case 619479575: /* GXTEntry: "Poor Turkey Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_POOR"):
 			return 908385665;
-		case -1444929945: /* GXTEntry: "Good Snapping Turtle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_HIGH_QUALITY"):
 			return 1675254736;
-		case -929322235: /* GXTEntry: "Perfect Snapping Turtle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_PERFECT"):
 			return 564968345;
-		case -548076717: /* GXTEntry: "Poor Snapping Turtle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_POOR"):
 			return 1401257519;
-		case -281211381: /* GXTEntry: "Good Vulture Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_HIGH_QUALITY"):
 			return 1935981234;
-		case 493457089: /* GXTEntry: "Perfect Vulture Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_PERFECT"):
 			return 1930921435;
-		case -479485786: /* GXTEntry: "Poor Vulture Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_POOR"):
 			return 4633231;
-		case 27838955: /* GXTEntry: "Good Wolf Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_HIGH_QUALITY"):
 			return -588047787;
-		case 1641833719: /* GXTEntry: "Perfect Wolf Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_PERFECT"):
 			return -1503391831;
-		case -314933180: /* GXTEntry: "Poor Wolf Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_POOR"):
 			return -1409703989;
 		case joaat("PROVISION_FISH_CHANNEL_CATFISH"):
 			return 1754322973;
@@ -7239,83 +7239,83 @@ void func_250(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;
@@ -7636,103 +7636,103 @@ int func_268(int iParam0, int iParam1)
 		case 0:
 			return joaat("PROVISION_ALLIGATOR_SKIN");
 		case 1:
-			return 1806153689 /* GXTEntry: "Poor Alligator Skin" */;
+			return joaat("PROVISION_ALLIGATOR_SKIN_POOR");
 		case 2:
-			return -1625078531 /* GXTEntry: "Perfect Alligator Skin" */;
+			return joaat("PROVISION_ALLIGATOR_SKIN_PRISTINE");
 		case 3:
 			return joaat("PROVISION_BEAVER_FUR");
 		case 4:
-			return -1569450319 /* GXTEntry: "Poor Beaver Pelt" */;
+			return joaat("PROVISION_BEAVER_FUR_POOR");
 		case 5:
-			return 854596618 /* GXTEntry: "Perfect Beaver Pelt" */;
+			return joaat("PROVISION_BEAVER_FUR_PRISTINE");
 		case 6:
 			return joaat("PROVISION_BOAR_SKIN");
 		case 7:
-			return 1248540072 /* GXTEntry: "Poor Boar Pelt" */;
+			return joaat("PROVISION_BOAR_SKIN_POOR");
 		case 8:
-			return -1858513856 /* GXTEntry: "Perfect Boar Pelt" */;
+			return joaat("PROVISION_BOAR_SKIN_PRISTINE");
 		case 9:
 			return joaat("PROVISION_BUCK_FUR");
 		case 10:
-			return 1603936352 /* GXTEntry: "Poor Buck Pelt" */;
+			return joaat("PROVISION_BUCK_FUR_POOR");
 		case 11:
-			return -702790226 /* GXTEntry: "Perfect Buck Pelt" */;
+			return joaat("PROVISION_BUCK_FUR_PRISTINE");
 		case 12:
 			return joaat("PROVISION_COUGAR_FUR");
 		case 13:
-			return 1914602340 /* GXTEntry: "Poor Cougar Pelt" */;
+			return joaat("PROVISION_COUGAR_FUR_POOR");
 		case 14:
-			return -1791452194 /* GXTEntry: "Perfect Cougar Pelt" */;
+			return joaat("PROVISION_COUGAR_FUR_PRISTINE");
 		case 15:
 			return joaat("PROVISION_COYOTE_FUR");
 		case 16:
-			return -1558096473 /* GXTEntry: "Poor Coyote Pelt" */;
+			return joaat("PROVISION_COYOTE_FUR_POOR");
 		case 17:
-			return -794277189 /* GXTEntry: "Perfect Coyote Pelt" */;
+			return joaat("PROVISION_COYOTE_FUR_PRISTINE");
 		case 18:
 			return joaat("PROVISION_DEER_HIDE");
 		case 19:
-			return -662178186 /* GXTEntry: "Poor Deer Pelt" */;
+			return joaat("PROVISION_DEER_HIDE_POOR");
 		case 20:
-			return -1035515486 /* GXTEntry: "Perfect Deer Pelt" */;
+			return joaat("PROVISION_DEER_HIDE_PRISTINE");
 		case 21:
 			return joaat("PROVISION_FOX_FUR");
 		case 22:
-			return 1647012424 /* GXTEntry: "Poor Fox Pelt" */;
+			return joaat("PROVISION_FOX_FUR_POOR");
 		case 23:
-			return 500722008 /* GXTEntry: "Perfect Fox Pelt" */;
+			return joaat("PROVISION_FOX_FUR_PRISTINE");
 		case 24:
 			return joaat("PROVISION_GOAT_HAIR");
 		case 25:
-			return 699990316 /* GXTEntry: "Poor Goat Hide" */;
+			return joaat("PROVISION_GOAT_HAIR_POOR");
 		case 26:
-			return -1648383828 /* GXTEntry: "Perfect Goat Hide" */;
+			return joaat("PROVISION_GOAT_HAIR_PRISTINE");
 		case 27:
 			return joaat("PROVISION_JAVELINA_SKIN");
 		case 28:
-			return -99092070 /* GXTEntry: "Poor Collared Peccary Pig Pelt" */;
+			return joaat("PROVISION_JAVELINA_SKIN_POOR");
 		case 29:
-			return 1963510418 /* GXTEntry: "Perfect Collared Peccary Pig Pelt" */;
+			return joaat("PROVISION_JAVELINA_SKIN_PRISTINE");
 		case 30:
 			return joaat("PROVISION_LOANSHARK_SKINS");
 		case 31:
 			return joaat("PROVISION_PANTHER_FUR");
 		case 32:
-			return 1584468323 /* GXTEntry: "Poor Panther Pelt" */;
+			return joaat("PROVISION_PANTHER_FUR_POOR");
 		case 33:
-			return 1969175294 /* GXTEntry: "Perfect Panther Pelt" */;
+			return joaat("PROVISION_PANTHER_FUR_PRISTINE");
 		case 34:
-			return 657906142 /* GXTEntry: "Legendary Panther Pelt" */;
+			return joaat("PROVISION_PANTHER_LEGENDARY_FUR_PRISTINE");
 		case 35:
 			return joaat("PROVISION_PIG_SKIN");
 		case 36:
-			return -308965548 /* GXTEntry: "Poor Pig Hide" */;
+			return joaat("PROVISION_PIG_SKIN_POOR");
 		case 37:
-			return -1102272634 /* GXTEntry: "Perfect Pig Hide" */;
+			return joaat("PROVISION_PIG_SKIN_PRISTINE");
 		case 38:
 			return joaat("PROVISION_PRONGHORN_FUR");
 		case 39:
-			return -983605026 /* GXTEntry: "Poor Pronghorn Hide" */;
+			return joaat("PROVISION_PRONGHORN_FUR_POOR");
 		case 40:
-			return -1544126829 /* GXTEntry: "Perfect Pronghorn Hide" */;
+			return joaat("PROVISION_PRONGHORN_FUR_PRISTINE");
 		case 41:
 			return joaat("PROVISION_RAM_HIDE");
 		case 42:
-			return 1796037447 /* GXTEntry: "Poor Ram Hide" */;
+			return joaat("PROVISION_RAM_HIDE_POOR");
 		case 43:
-			return 1795984405 /* GXTEntry: "Perfect Ram Hide" */;
+			return joaat("PROVISION_RAM_HIDE_PRISTINE");
 		case 44:
 			return joaat("PROVISION_SHEEP_WOOL");
 		case 45:
-			return 1729948479 /* GXTEntry: "Poor Sheep Hide" */;
+			return joaat("PROVISION_SHEEP_WOOL_POOR");
 		case 46:
-			return 1466150167 /* GXTEntry: "Perfect Sheep Hide" */;
+			return joaat("PROVISION_SHEEP_WOOL_PRISTINE");
 		case 47:
 			return joaat("PROVISION_WOLF_FUR");
 		case 48:
-			return 85441452 /* GXTEntry: "Poor Wolf Pelt" */;
+			return joaat("PROVISION_WOLF_FUR_POOR");
 		case 49:
-			return 653400939 /* GXTEntry: "Perfect Wolf Pelt" */;
+			return joaat("PROVISION_WOLF_FUR_PRISTINE");
 		case 50:
 			return 0;
 		default:
@@ -7816,329 +7816,329 @@ int func_274(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 915880986: /* GXTEntry: "Good Alligator Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_HIGH_QUALITY"):
 			return 1908704263 /* GXTEntry: "Good Skinned Alligator Carcass" */;
-		case -1424697962: /* GXTEntry: "Perfect Alligator Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_PERFECT"):
 			return -2112217546 /* GXTEntry: "Perfect Skinned Alligator Carcass" */;
-		case -1643384846: /* GXTEntry: "Poor Alligator Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_POOR"):
 			return -1745255175 /* GXTEntry: "Poor Skinned Alligator Carcass" */;
-		case -847420802: /* GXTEntry: "Good Armadillo Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_HIGH_QUALITY"):
 			return -237368063 /* GXTEntry: "Good Skinned Armadillo Carcass" */;
-		case -662726703: /* GXTEntry: "Perfect Armadillo Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_PERFECT"):
 			return 1598967299 /* GXTEntry: "Perfect Skinned Armadillo Carcass" */;
-		case 1760886130: /* GXTEntry: "Poor Armadillo Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_POOR"):
 			return -1809464109 /* GXTEntry: "Poor Skinned Armadillo Carcass" */;
-		case -1243653490: /* GXTEntry: "Good Badger Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_HIGH_QUALITY"):
 			return -165201917 /* GXTEntry: "Good Skinned Badger Carcass" */;
-		case 1988467099: /* GXTEntry: "Perfect Badger Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_PERFECT"):
 			return 815147738 /* GXTEntry: "Perfect Skinned Badger Carcass" */;
-		case -674590015: /* GXTEntry: "Poor Badger Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_POOR"):
 			return 1287583539 /* GXTEntry: "Poor Skinned Badger Carcass" */;
-		case -1480423460: /* GXTEntry: "Good Beaver Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_HIGH_QUALITY"):
 			return -2126985311 /* GXTEntry: "Good Skinned Beaver Carcass" */;
-		case 924882045: /* GXTEntry: "Perfect Beaver Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_PERFECT"):
 			return -1268352491 /* GXTEntry: "Perfect Skinned Beaver Carcass" */;
-		case 1415608202: /* GXTEntry: "Poor Beaver Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_POOR"):
 			return -1940225526 /* GXTEntry: "Poor Skinned Beaver Carcass" */;
-		case -593311590: /* GXTEntry: "Good Bighorn Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_HIGH_QUALITY"):
 			return -212307068 /* GXTEntry: "Good Skinned Bighorn Sheep Carcass" */;
-		case 765085831: /* GXTEntry: "Perfect Bighorn Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_PERFECT"):
 			return 355421032 /* GXTEntry: "Perfect Skinned Bighorn Sheep Carcass" */;
-		case 2094730711: /* GXTEntry: "Poor Bighorn Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_POOR"):
 			return 1657729714 /* GXTEntry: "Poor Skinned Bighorn Sheep Carcass" */;
-		case -1310590179: /* GXTEntry: "Good Buck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_HIGH_QUALITY"):
 			return 1350692346 /* GXTEntry: "Good Skinned Buck Carcass" */;
-		case 992366796: /* GXTEntry: "Perfect Buck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_PERFECT"):
 			return -257850294 /* GXTEntry: "Perfect Skinned Buck Carcass" */;
-		case -244657613: /* GXTEntry: "Poor Buck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_POOR"):
 			return -918541014 /* GXTEntry: "Poor Skinned Buck Carcass" */;
-		case -2026210939: /* GXTEntry: "Good California Condor Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_HIGH_QUALITY"):
 			return -947573795 /* GXTEntry: "Good Plucked California Condor Carcass" */;
-		case -1252472243: /* GXTEntry: "Perfect California Condor Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_PERFECT"):
 			return -2068302756 /* GXTEntry: "Perfect Plucked California Condor Carcass" */;
-		case -980016656: /* GXTEntry: "Poor California Condor Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_POOR"):
 			return 1650829985 /* GXTEntry: "Poor Plucked California Condor Carcass" */;
-		case -758005668: /* GXTEntry: "Good Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_HIGH_QUALITY"):
 			return -1808044035 /* GXTEntry: "Good Skinned Chicken Carcass" */;
-		case -2139551030: /* GXTEntry: "Perfect Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_PERFECT"):
 			return -1952647655 /* GXTEntry: "Perfect Skinned Chicken Carcass" */;
-		case 1607144310: /* GXTEntry: "Poor Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_POOR"):
 			return 1293221440 /* GXTEntry: "Poor Skinned Chicken Carcass" */;
-		case 80093385: /* GXTEntry: "Good Cormorant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_HIGH_QUALITY"):
 			return -642946194 /* GXTEntry: "Good Plucked Cormorant Carcass" */;
-		case -867655342: /* GXTEntry: "Perfect Cormorant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_PERFECT"):
 			return 819214075 /* GXTEntry: "Perfect Plucked Cormorant Carcass" */;
-		case 991092621: /* GXTEntry: "Poor Cormorant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_POOR"):
 			return -858652427 /* GXTEntry: "Poor Plucked Cormorant Carcass" */;
-		case 871746664: /* GXTEntry: "Good Cougar Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_HIGH_QUALITY"):
 			return 395625948 /* GXTEntry: "Good Skinned Cougar Carcass" */;
-		case 1626949878: /* GXTEntry: "Perfect Cougar Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_PERFECT"):
 			return -2063800922 /* GXTEntry: "Perfect Skinned Cougar Carcass" */;
-		case -1722483116: /* GXTEntry: "Poor Cougar Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_POOR"):
 			return -2117103642 /* GXTEntry: "Poor Skinned Cougar Carcass" */;
-		case -1739474417: /* GXTEntry: "Good Coyote Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_HIGH_QUALITY"):
 			return -1583694057 /* GXTEntry: "Good Skinned Coyote Carcass" */;
-		case -161524199: /* GXTEntry: "Perfect Coyote Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_PERFECT"):
 			return -1550918713 /* GXTEntry: "Perfect Skinned Coyote Carcass" */;
-		case 156979555: /* GXTEntry: "Poor Coyote Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_POOR"):
 			return 836539658 /* GXTEntry: "Poor Skinned Coyote Carcass" */;
-		case 322141256: /* GXTEntry: "Good Crane Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_HIGH_QUALITY"):
 			return 773062352 /* GXTEntry: "Good Plucked Crane Carcass" */;
-		case 1310120320: /* GXTEntry: "Perfect Crane Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_PERFECT"):
 			return 1306100270 /* GXTEntry: "Perfect Plucked Crane Carcass" */;
-		case -1228376431: /* GXTEntry: "Poor Crane Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_POOR"):
 			return -1063194668 /* GXTEntry: "Poor Plucked Crane Carcass" */;
-		case 472142656: /* GXTEntry: "Good Deer Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DEER_HIGH_QUALITY"):
 			return 337839068 /* GXTEntry: "Good Skinned Deer Carcass" */;
-		case -1837840093: /* GXTEntry: "Perfect Deer Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DEER_PERFECT"):
 			return -1426520714 /* GXTEntry: "Perfect Skinned Deer Carcass" */;
-		case 58634176: /* GXTEntry: "Poor Deer Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DEER_POOR"):
 			return -1456429189 /* GXTEntry: "Poor Skinned Deer Carcass" */;
-		case 1023080408: /* GXTEntry: "Good Duck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_HIGH_QUALITY"):
 			return -2032809253 /* GXTEntry: "Good Skinned Duck Carcass" */;
-		case 1001171791: /* GXTEntry: "Perfect Duck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_PERFECT"):
 			return 781728005 /* GXTEntry: "Perfect Skinned Duck Carcass" */;
-		case 1210345318: /* GXTEntry: "Poor Duck Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_POOR"):
 			return 1202409779 /* GXTEntry: "Poor Skinned Duck Carcass" */;
-		case 399553313: /* GXTEntry: "Good Eagle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_HIGH_QUALITY"):
 			return 1520877300 /* GXTEntry: "Good Plucked Eagle Carcass" */;
-		case -1422869557: /* GXTEntry: "Perfect Eagle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_PERFECT"):
 			return -1736624361 /* GXTEntry: "Perfect Plucked Eagle Carcass" */;
-		case -1378812236: /* GXTEntry: "Poor Eagle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_POOR"):
 			return 719465997 /* GXTEntry: "Poor Plucked Eagle Carcass" */;
-		case 1011003885: /* GXTEntry: "Good Egret Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_HIGH_QUALITY"):
 			return -361486526 /* GXTEntry: "Good Skinned Egret Carcass" */;
-		case 651035143: /* GXTEntry: "Perfect Egret Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_PERFECT"):
 			return -765274711 /* GXTEntry: "Perfect Skinned Egret Carcass" */;
-		case 2013022756: /* GXTEntry: "Poor Egret Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_POOR"):
 			return -887205673 /* GXTEntry: "Poor Skinned Egret Carcass" */;
-		case -1186289527: /* GXTEntry: "Good Fox Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_FOX_HIGH_QUALITY"):
 			return -784020903 /* GXTEntry: "Good Skinned Fox Carcass" */;
-		case 877935135: /* GXTEntry: "Perfect Fox Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_FOX_PERFECT"):
 			return -886117938 /* GXTEntry: "Perfect Skinned Fox Carcass" */;
-		case -39646495: /* GXTEntry: "Poor Fox Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_FOX_POOR"):
 			return -1416771220 /* GXTEntry: "Poor Skinned Fox Carcass" */;
-		case 1582593525: /* GXTEntry: "Good Gila Monster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GILA_HIGH_QUALITY"):
 			return 1648676911 /* GXTEntry: "Good Skinned Gila Monster Carcass" */;
-		case -246542229: /* GXTEntry: "Perfect Gila Monster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GILA_PERFECT"):
 			return 2103833563 /* GXTEntry: "Perfect Skinned Gila Monster Carcass" */;
-		case -529454751: /* GXTEntry: "Poor Gila Monster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GILA_POOR"):
 			return -831636369 /* GXTEntry: "Poor Skinned Gila Monster Carcass" */;
-		case -46978629: /* GXTEntry: "Good Goat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_HIGH_QUALITY"):
 			return -852290935 /* GXTEntry: "Good Skinned Goat Carcass" */;
-		case -1347000030: /* GXTEntry: "Perfect Goat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_PERFECT"):
 			return -1870415962 /* GXTEntry: "Perfect Skinned Goat Carcass" */;
-		case -505583391: /* GXTEntry: "Poor Goat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_POOR"):
 			return -788684109 /* GXTEntry: "Poor Skinned Goat Carcass" */;
-		case 1645887374: /* GXTEntry: "Good Goose Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_HIGH_QUALITY"):
 			return 1416435145 /* GXTEntry: "Good Skinned Goose Carcass" */;
-		case -1559227925: /* GXTEntry: "Perfect Goose Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_PERFECT"):
 			return -1483088274 /* GXTEntry: "Perfect Skinned Goose Carcass" */;
-		case 1562528937: /* GXTEntry: "Poor Goose Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_POOR"):
 			return -791867098 /* GXTEntry: "Poor Skinned Goose Carcass" */;
-		case -1471526136: /* GXTEntry: "Good Hawk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_HIGH_QUALITY"):
 			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
-		case -1440794801: /* GXTEntry: "Perfect Hawk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_PERFECT"):
 			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
-		case 2144711797: /* GXTEntry: "Poor Hawk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_POOR"):
 			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
-		case 718825539: /* GXTEntry: "Good Heron Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HERON_HIGH_QUALITY"):
 			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
-		case 2105263879: /* GXTEntry: "Perfect Heron Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HERON_PERFECT"):
 			return 820245961 /* GXTEntry: "Perfect Skinned Heron Carcass" */;
-		case -905842006: /* GXTEntry: "Poor Heron Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_HERON_POOR"):
 			return -889526774 /* GXTEntry: "Poor Skinned Heron Carcass" */;
-		case 1191274340: /* GXTEntry: "Good Iguana Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_HIGH_QUALITY"):
 			return -521025998 /* GXTEntry: "Good Skinned Iguana Carcass" */;
-		case 1613453781: /* GXTEntry: "Perfect Iguana Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_PERFECT"):
 			return 1583031244 /* GXTEntry: "Perfect Skinned Iguana Carcass" */;
-		case -1030182399: /* GXTEntry: "Poor Iguana Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_POOR"):
 			return -2115599211 /* GXTEntry: "Poor Skinned Iguana Carcass" */;
-		case 987967309: /* GXTEntry: "Good Loon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_LOON_HIGH_QUALITY"):
 			return -767176802 /* GXTEntry: "Good Skinned Loon Carcass" */;
-		case -1060737769: /* GXTEntry: "Perfect Loon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_LOON_PERFECT"):
 			return -750945821 /* GXTEntry: "Perfect Skinned Loon Carcass" */;
-		case 553310445: /* GXTEntry: "Poor Loon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_LOON_POOR"):
 			return -2135749211 /* GXTEntry: "Poor Skinned Loon Carcass" */;
-		case -1838865945: /* GXTEntry: "Good Muskrat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_HIGH_QUALITY"):
 			return 2063108046 /* GXTEntry: "Good Skinned Muskrat Carcass" */;
-		case 1418092959: /* GXTEntry: "Perfect Muskrat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_PERFECT"):
 			return 1299111759 /* GXTEntry: "Perfect Skinned Muskrat Carcass" */;
-		case -1315697778: /* GXTEntry: "Poor Muskrat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_POOR"):
 			return 1595322723 /* GXTEntry: "Poor Skinned Muskrat Carcass" */;
-		case -1772126340: /* GXTEntry: "Good Opossum Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_HIGH_QUALITY"):
 			return 784918835 /* GXTEntry: "Good Skinned Opossum Carcass" */;
-		case -935543049: /* GXTEntry: "Perfect Opossum Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_PERFECT"):
 			return -676310905 /* GXTEntry: "Perfect Skinned Opossum Carcass" */;
-		case 1772544356: /* GXTEntry: "Poor Opossum Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_POOR"):
 			return -1719545959 /* GXTEntry: "Poor Skinned Opossum Carcass" */;
-		case -266273535: /* GXTEntry: "Good Owl Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OWL_HIGH_QUALITY"):
 			return -2142423934 /* GXTEntry: "Good Plucked Owl Carcass" */;
-		case -1670544626: /* GXTEntry: "Perfect Owl Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OWL_PERFECT"):
 			return 747751566 /* GXTEntry: "Perfect Plucked Owl Carcass" */;
-		case 1290960696: /* GXTEntry: "Poor Owl Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_OWL_POOR"):
 			return -1942682403 /* GXTEntry: "Poor Plucked Owl Carcass" */;
-		case 1913571052: /* GXTEntry: "Good Panther Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_HIGH_QUALITY"):
 			return 1018433784 /* GXTEntry: "Good Skinned Panther Carcass" */;
-		case 1717601520: /* GXTEntry: "Perfect Panther Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_PERFECT"):
 			return -796185392 /* GXTEntry: "Perfect Skinned Panther Carcass" */;
-		case 430397370: /* GXTEntry: "Poor Panther Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_POOR"):
 			return -49549406 /* GXTEntry: "Poor Skinned Panther Carcass" */;
-		case 16287711: /* GXTEntry: "Good Parrot Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_HIGH_QUALITY"):
 			return 857788498 /* GXTEntry: "Good Plucked Parrot Carcass" */;
-		case -1356230367: /* GXTEntry: "Perfect Parrot Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_PERFECT"):
 			return 1223148871 /* GXTEntry: "Perfect Plucked Parrot Carcass" */;
-		case 1417331079: /* GXTEntry: "Poor Parrot Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_POOR"):
 			return 939407236 /* GXTEntry: "Poor Plucked Parrot Carcass" */;
-		case -884124246: /* GXTEntry: "Good Pelican Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_HIGH_QUALITY"):
 			return 1608778431 /* GXTEntry: "Good Plucked Pelican Carcass" */;
-		case 1884610748: /* GXTEntry: "Perfect Pelican Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_PERFECT"):
 			return -2033821082 /* GXTEntry: "Perfect Plucked Pelican Carcass" */;
-		case 746558492: /* GXTEntry: "Poor Pelican Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_POOR"):
 			return -993340234 /* GXTEntry: "Poor Plucked Pelican Carcass" */;
-		case -892811627: /* GXTEntry: "Good Pheasant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_HIGH_QUALITY"):
 			return -1861062075 /* GXTEntry: "Good Skinned Pheasant Carcass" */;
-		case -2040522845: /* GXTEntry: "Perfect Pheasant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_PERFECT"):
 			return 1645001514 /* GXTEntry: "Perfect Skinned Pheasant Carcass" */;
-		case -1224510844: /* GXTEntry: "Poor Pheasant Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_POOR"):
 			return 782371031 /* GXTEntry: "Poor Skinned Pheasant Carcass" */;
-		case 1334837390: /* GXTEntry: "Good Pig Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIG_HIGH_QUALITY"):
 			return 1255529169 /* GXTEntry: "Good Skinned Pig Carcass" */;
-		case 339620522: /* GXTEntry: "Perfect Pig Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIG_PERFECT"):
 			return 70898308 /* GXTEntry: "Perfect Skinned Pig Carcass" */;
-		case 1770451033: /* GXTEntry: "Poor Pig Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIG_POOR"):
 			return -1050350982 /* GXTEntry: "Poor Skinned Pig Carcass" */;
-		case 756657535: /* GXTEntry: "Good Prairie Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_HIGH_QUALITY"):
 			return 581781784 /* GXTEntry: "Good Skinned Prairie Chicken Carcass" */;
-		case 862898895: /* GXTEntry: "Perfect Prairie Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_PERFECT"):
 			return -1363330863 /* GXTEntry: "Perfect Skinned Prairie Chicken Carcass" */;
-		case 1997845858: /* GXTEntry: "Poor Prairie Chicken Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_POOR"):
 			return -1780911288 /* GXTEntry: "Poor Skinned Prairie Chicken Carcass" */;
-		case -1930144509: /* GXTEntry: "Good Pronghorn Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_HIGH_QUALITY"):
 			return 1018306802 /* GXTEntry: "Good Skinned Pronghorn Carcass" */;
-		case 1846915545: /* GXTEntry: "Perfect Pronghorn Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_PERFECT"):
 			return 1615521415 /* GXTEntry: "Perfect Skinned Pronghorn Carcass" */;
-		case -1816929509: /* GXTEntry: "Poor Pronghorn Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_POOR"):
 			return -1499066338 /* GXTEntry: "Poor Skinned Pronghorn Carcass" */;
-		case 1197831625: /* GXTEntry: "Good Rabbit Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_HIGH_QUALITY"):
 			return 1711081908 /* GXTEntry: "Good Skinned Rabbit Carcass" */;
-		case -1866642239: /* GXTEntry: "Perfect Rabbit Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_PERFECT"):
 			return -164705 /* GXTEntry: "Perfect Skinned Rabbit Carcass" */;
-		case -1508120809: /* GXTEntry: "Poor Rabbit Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_POOR"):
 			return -2044044647 /* GXTEntry: "Poor Skinned Rabbit Carcass" */;
-		case -1007681885: /* GXTEntry: "Good Raccoon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_HIGH_QUALITY"):
 			return -859583379 /* GXTEntry: "Good Skinned Raccoon Carcass" */;
-		case 434924608: /* GXTEntry: "Perfect Raccoon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_PERFECT"):
 			return -759504052 /* GXTEntry: "Perfect Skinned Raccoon Carcass" */;
-		case 1666393029: /* GXTEntry: "Poor Raccoon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_POOR"):
 			return 700225820 /* GXTEntry: "Poor Skinned Raccoon Carcass" */;
-		case -1814593136: /* GXTEntry: "Good Ram Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAM_HIGH_QUALITY"):
 			return 136458586 /* GXTEntry: "Good Skinned Ram Carcass" */;
-		case -1188120304: /* GXTEntry: "Perfect Ram Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAM_PERFECT"):
 			return 799105420 /* GXTEntry: "Perfect Skinned Ram Carcass" */;
-		case 1978734761: /* GXTEntry: "Poor Ram Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAM_POOR"):
 			return -481655757 /* GXTEntry: "Poor Skinned Ram Carcass" */;
-		case -824902132: /* GXTEntry: "Good Raven Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_HIGH_QUALITY"):
 			return 484160931 /* GXTEntry: "Good Plucked Raven Carcass" */;
-		case -1015531226: /* GXTEntry: "Perfect Raven Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_PERFECT"):
 			return 1010699907 /* GXTEntry: "Perfect Plucked Raven Carcass" */;
-		case -581619522: /* GXTEntry: "Poor Raven Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_POOR"):
 			return 1550264248 /* GXTEntry: "Poor Plucked Raven Carcass" */;
-		case -861854914: /* GXTEntry: "Good Red-footed Booby Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_HIGH_QUALITY"):
 			return -371992731 /* GXTEntry: "Good Plucked Red-footed Booby Carcass" */;
-		case -545447034: /* GXTEntry: "Perfect Red-footed Booby Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_PERFECT"):
 			return 1090294483 /* GXTEntry: "Perfect Plucked Red-footed Booby Carcass" */;
-		case -1824684934: /* GXTEntry: "Poor Red-footed Booby Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_POOR"):
 			return -274175035 /* GXTEntry: "Poor Plucked Red-footed Booby Carcass" */;
-		case 980653387: /* GXTEntry: "Good Rooster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_HIGH_QUALITY"):
 			return -1064414912 /* GXTEntry: "Good Skinned Rooster Carcass" */;
-		case -1011598664: /* GXTEntry: "Perfect Rooster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_PERFECT"):
 			return -2091620305 /* GXTEntry: "Perfect Skinned Rooster Carcass" */;
-		case -177476569: /* GXTEntry: "Poor Rooster Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_POOR"):
 			return -468684824 /* GXTEntry: "Poor Skinned Rooster Carcass" */;
-		case 416630124: /* GXTEntry: "Good Roseate Spoonbill Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_HIGH_QUALITY"):
 			return 1668870118 /* GXTEntry: "Good Skinned Roseate Spoonbill Carcass" */;
-		case 1925728375: /* GXTEntry: "Perfect Roseate Spoonbill Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_PERFECT"):
 			return -534004020 /* GXTEntry: "Perfect Skinned Roseate Spoonbill Carcass" */;
-		case -1080457688: /* GXTEntry: "Poor Roseate Spoonbill Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_POOR"):
 			return -2126925270 /* GXTEntry: "Poor Skinned Roseate Spoonbill Carcass" */;
-		case 1742676369: /* GXTEntry: "Good Seagull Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_HIGH_QUALITY"):
 			return 2008380517 /* GXTEntry: "Good Plucked Seagull Carcass" */;
-		case -899751553: /* GXTEntry: "Perfect Seagull Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_PERFECT"):
 			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
-		case 431501574: /* GXTEntry: "Poor Seagull Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_POOR"):
 			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
-		case 2126795269: /* GXTEntry: "Good Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_HIGH_QUALITY"):
 			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
-		case 1489051752: /* GXTEntry: "Perfect Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_PERFECT"):
 			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
-		case -1705499323: /* GXTEntry: "Poor Sheep Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_POOR"):
 			return -1707588662 /* GXTEntry: "Poor Skinned Sheep Carcass" */;
-		case -2013445740: /* GXTEntry: "Good Skunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_HIGH_QUALITY"):
 			return -1224075784 /* GXTEntry: "Good Skinned Skunk Carcass" */;
-		case 102446365: /* GXTEntry: "Perfect Skunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_PERFECT"):
 			return -1806671048 /* GXTEntry: "Perfect Skinned Skunk Carcass" */;
-		case -1927342740: /* GXTEntry: "Poor Skunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_POOR"):
 			return 749765420 /* GXTEntry: "Poor Skinned Skunk Carcass" */;
-		case -410900360: /* GXTEntry: "Good Black-tailed Rattlesnake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_HIGH_QUALITY"):
 			return 462936163 /* GXTEntry: "Good Skinned Black-Tailed Rattlesnake Carcass" */;
-		case -1073614594: /* GXTEntry: "Perfect Black-tailed Rattlesnake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_PERFECT"):
 			return -8888941 /* GXTEntry: "Perfect Skinned Black-Tailed Rattlesnake Carcass" */;
-		case 2060013792: /* GXTEntry: "Poor Black-tailed Rattlesnake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_POOR"):
 			return 1640227110 /* GXTEntry: "Poor Skinned Black-Tailed Rattlesnake Carcass" */;
-		case 581032175: /* GXTEntry: "Good Red Boa Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_HIGH_QUALITY"):
 			return -1241188722 /* GXTEntry: "Good Skinned Red Boa Carcass" */;
-		case -581931638: /* GXTEntry: "Perfect Red Boa Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_PERFECT"):
 			return -1030962659 /* GXTEntry: "Perfect Skinned Red Boa Carcass" */;
-		case -1528265128: /* GXTEntry: "Poor Red Boa Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_POOR"):
 			return 112552982 /* GXTEntry: "Poor Skinned Red Boa Carcass" */;
-		case -142632645: /* GXTEntry: "Good Copperhead Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_HIGH_QUALITY"):
 			return -1599578931 /* GXTEntry: "Good Skinned Copperhead Carcass" */;
-		case -2048519180: /* GXTEntry: "Perfect Copperhead Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_PERFECT"):
 			return 1296331626 /* GXTEntry: "Perfect Skinned Copperhead Carcass" */;
-		case 1442025993: /* GXTEntry: "Poor Copperhead Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_POOR"):
 			return -1256398198 /* GXTEntry: "Poor Skinned Copperhead Carcass" */;
-		case 441195430: /* GXTEntry: "Good Fer-de-Lance Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_HIGH_QUALITY"):
 			return 1297800973 /* GXTEntry: "Good Skinned Fer-de-lance Carcass" */;
-		case 748665395: /* GXTEntry: "Perfect Fer-de-Lance Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_PERFECT"):
 			return 1772582754 /* GXTEntry: "Perfect Skinned Fer-de-lance Carcass" */;
-		case 351048413: /* GXTEntry: "Poor Fer-de-Lance Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_POOR"):
 			return -1459876379 /* GXTEntry: "Poor Skinned Fer-de-lance Carcass" */;
-		case -914779013: /* GXTEntry: "Good Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_HIGH_QUALITY"):
 			return 1127406863 /* GXTEntry: "Good Skinned Snake Carcass" */;
-		case 1323485831: /* GXTEntry: "Perfect Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_PERFECT"):
 			return 1779996957 /* GXTEntry: "Perfect Skinned Snake Carcass" */;
-		case -365111821: /* GXTEntry: "Poor Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_POOR"):
 			return 1885306923 /* GXTEntry: "Poor Skinned Snake Carcass" */;
-		case 101495387: /* GXTEntry: "Good Water Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_HIGH_QUALITY"):
 			return 1244107697 /* GXTEntry: "Good Skinned Water Snake Carcass" */;
-		case 157917500: /* GXTEntry: "Perfect Water Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_PERFECT"):
 			return -1201555940 /* GXTEntry: "Perfect Skinned Water Snake Carcass" */;
-		case -936537044: /* GXTEntry: "Poor Water Snake Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_POOR"):
 			return -668487833 /* GXTEntry: "Poor Skinned Water Snake Carcass" */;
-		case -1610329427: /* GXTEntry: "Good Turkey Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_HIGH_QUALITY"):
 			return -1178150148 /* GXTEntry: "Good Skinned Turkey Carcass" */;
-		case -1836227998: /* GXTEntry: "Perfect Turkey Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_PERFECT"):
 			return 1171158615 /* GXTEntry: "Perfect Skinned Turkey Carcass" */;
-		case 619479575: /* GXTEntry: "Poor Turkey Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_POOR"):
 			return -2123554124 /* GXTEntry: "Poor Skinned Turkey Carcass" */;
-		case -1444929945: /* GXTEntry: "Good Snapping Turtle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_HIGH_QUALITY"):
 			return 1806705761 /* GXTEntry: "Good Skinned Snapping Turtle Carcass" */;
-		case -929322235: /* GXTEntry: "Perfect Snapping Turtle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_PERFECT"):
 			return 404581836 /* GXTEntry: "Perfect Skinned Snapping Turtle Carcass" */;
-		case -548076717: /* GXTEntry: "Poor Snapping Turtle Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_POOR"):
 			return 987197489 /* GXTEntry: "Poor Skinned Snapping Turtle Carcass" */;
-		case -281211381: /* GXTEntry: "Good Vulture Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_HIGH_QUALITY"):
 			return -1259715647 /* GXTEntry: "Good Plucked Vulture Carcass" */;
-		case 493457089: /* GXTEntry: "Perfect Vulture Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_PERFECT"):
 			return -1716717840 /* GXTEntry: "Perfect Plucked Vulture Carcass" */;
-		case -479485786: /* GXTEntry: "Poor Vulture Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_POOR"):
 			return -196277007 /* GXTEntry: "Poor Plucked Vulture Carcass" */;
-		case 27838955: /* GXTEntry: "Good Wolf Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_HIGH_QUALITY"):
 			return -2064457926 /* GXTEntry: "Good Skinned Wolf Carcass" */;
-		case 1641833719: /* GXTEntry: "Perfect Wolf Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_PERFECT"):
 			return 561267454 /* GXTEntry: "Perfect Skinned Wolf Carcass" */;
-		case -314933180: /* GXTEntry: "Poor Wolf Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_POOR"):
 			return 686253083 /* GXTEntry: "Poor Skinned Wolf Carcass" */;
 		default:
 			break;
@@ -8550,329 +8550,329 @@ int func_290(int iParam0)
 	switch (iParam0)
 	{
 		case 1908704263: /* GXTEntry: "Good Skinned Alligator Carcass" */
-			return 915880986 /* GXTEntry: "Good Alligator Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_HIGH_QUALITY");
 		case -2112217546: /* GXTEntry: "Perfect Skinned Alligator Carcass" */
-			return -1424697962 /* GXTEntry: "Perfect Alligator Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_PERFECT");
 		case -1745255175: /* GXTEntry: "Poor Skinned Alligator Carcass" */
-			return -1643384846 /* GXTEntry: "Poor Alligator Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_POOR");
 		case -237368063: /* GXTEntry: "Good Skinned Armadillo Carcass" */
-			return -847420802 /* GXTEntry: "Good Armadillo Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_HIGH_QUALITY");
 		case 1598967299: /* GXTEntry: "Perfect Skinned Armadillo Carcass" */
-			return -662726703 /* GXTEntry: "Perfect Armadillo Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_PERFECT");
 		case -1809464109: /* GXTEntry: "Poor Skinned Armadillo Carcass" */
-			return 1760886130 /* GXTEntry: "Poor Armadillo Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_POOR");
 		case -165201917: /* GXTEntry: "Good Skinned Badger Carcass" */
-			return -1243653490 /* GXTEntry: "Good Badger Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BADGER_HIGH_QUALITY");
 		case 815147738: /* GXTEntry: "Perfect Skinned Badger Carcass" */
-			return 1988467099 /* GXTEntry: "Perfect Badger Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BADGER_PERFECT");
 		case 1287583539: /* GXTEntry: "Poor Skinned Badger Carcass" */
-			return -674590015 /* GXTEntry: "Poor Badger Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BADGER_POOR");
 		case -2126985311: /* GXTEntry: "Good Skinned Beaver Carcass" */
-			return -1480423460 /* GXTEntry: "Good Beaver Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BEAVER_HIGH_QUALITY");
 		case -1268352491: /* GXTEntry: "Perfect Skinned Beaver Carcass" */
-			return 924882045 /* GXTEntry: "Perfect Beaver Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BEAVER_PERFECT");
 		case -1940225526: /* GXTEntry: "Poor Skinned Beaver Carcass" */
-			return 1415608202 /* GXTEntry: "Poor Beaver Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BEAVER_POOR");
 		case -212307068: /* GXTEntry: "Good Skinned Bighorn Sheep Carcass" */
-			return -593311590 /* GXTEntry: "Good Bighorn Sheep Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_HIGH_QUALITY");
 		case 355421032: /* GXTEntry: "Perfect Skinned Bighorn Sheep Carcass" */
-			return 765085831 /* GXTEntry: "Perfect Bighorn Sheep Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_PERFECT");
 		case 1657729714: /* GXTEntry: "Poor Skinned Bighorn Sheep Carcass" */
-			return 2094730711 /* GXTEntry: "Poor Bighorn Sheep Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_POOR");
 		case 1350692346: /* GXTEntry: "Good Skinned Buck Carcass" */
-			return -1310590179 /* GXTEntry: "Good Buck Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BUCK_HIGH_QUALITY");
 		case -257850294: /* GXTEntry: "Perfect Skinned Buck Carcass" */
-			return 992366796 /* GXTEntry: "Perfect Buck Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BUCK_PERFECT");
 		case -918541014: /* GXTEntry: "Poor Skinned Buck Carcass" */
-			return -244657613 /* GXTEntry: "Poor Buck Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_BUCK_POOR");
 		case -947573795: /* GXTEntry: "Good Plucked California Condor Carcass" */
-			return -2026210939 /* GXTEntry: "Good California Condor Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_HIGH_QUALITY");
 		case -2068302756: /* GXTEntry: "Perfect Plucked California Condor Carcass" */
-			return -1252472243 /* GXTEntry: "Perfect California Condor Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_PERFECT");
 		case 1650829985: /* GXTEntry: "Poor Plucked California Condor Carcass" */
-			return -980016656 /* GXTEntry: "Poor California Condor Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_POOR");
 		case -1808044035: /* GXTEntry: "Good Skinned Chicken Carcass" */
-			return -758005668 /* GXTEntry: "Good Chicken Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_HIGH_QUALITY");
 		case -1952647655: /* GXTEntry: "Perfect Skinned Chicken Carcass" */
-			return -2139551030 /* GXTEntry: "Perfect Chicken Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_PERFECT");
 		case 1293221440: /* GXTEntry: "Poor Skinned Chicken Carcass" */
-			return 1607144310 /* GXTEntry: "Poor Chicken Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_POOR");
 		case -642946194: /* GXTEntry: "Good Plucked Cormorant Carcass" */
-			return 80093385 /* GXTEntry: "Good Cormorant Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_HIGH_QUALITY");
 		case 819214075: /* GXTEntry: "Perfect Plucked Cormorant Carcass" */
-			return -867655342 /* GXTEntry: "Perfect Cormorant Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_PERFECT");
 		case -858652427: /* GXTEntry: "Poor Plucked Cormorant Carcass" */
-			return 991092621 /* GXTEntry: "Poor Cormorant Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_POOR");
 		case 395625948: /* GXTEntry: "Good Skinned Cougar Carcass" */
-			return 871746664 /* GXTEntry: "Good Cougar Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_COUGAR_HIGH_QUALITY");
 		case -2063800922: /* GXTEntry: "Perfect Skinned Cougar Carcass" */
-			return 1626949878 /* GXTEntry: "Perfect Cougar Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_COUGAR_PERFECT");
 		case -2117103642: /* GXTEntry: "Poor Skinned Cougar Carcass" */
-			return -1722483116 /* GXTEntry: "Poor Cougar Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_COUGAR_POOR");
 		case -1583694057: /* GXTEntry: "Good Skinned Coyote Carcass" */
-			return -1739474417 /* GXTEntry: "Good Coyote Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_COYOTE_HIGH_QUALITY");
 		case -1550918713: /* GXTEntry: "Perfect Skinned Coyote Carcass" */
-			return -161524199 /* GXTEntry: "Perfect Coyote Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_COYOTE_PERFECT");
 		case 836539658: /* GXTEntry: "Poor Skinned Coyote Carcass" */
-			return 156979555 /* GXTEntry: "Poor Coyote Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_COYOTE_POOR");
 		case 773062352: /* GXTEntry: "Good Plucked Crane Carcass" */
-			return 322141256 /* GXTEntry: "Good Crane Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CRANE_HIGH_QUALITY");
 		case 1306100270: /* GXTEntry: "Perfect Plucked Crane Carcass" */
-			return 1310120320 /* GXTEntry: "Perfect Crane Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CRANE_PERFECT");
 		case -1063194668: /* GXTEntry: "Poor Plucked Crane Carcass" */
-			return -1228376431 /* GXTEntry: "Poor Crane Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_CRANE_POOR");
 		case 337839068: /* GXTEntry: "Good Skinned Deer Carcass" */
-			return 472142656 /* GXTEntry: "Good Deer Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_DEER_HIGH_QUALITY");
 		case -1426520714: /* GXTEntry: "Perfect Skinned Deer Carcass" */
-			return -1837840093 /* GXTEntry: "Perfect Deer Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_DEER_PERFECT");
 		case -1456429189: /* GXTEntry: "Poor Skinned Deer Carcass" */
-			return 58634176 /* GXTEntry: "Poor Deer Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_DEER_POOR");
 		case -2032809253: /* GXTEntry: "Good Skinned Duck Carcass" */
-			return 1023080408 /* GXTEntry: "Good Duck Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_DUCK_HIGH_QUALITY");
 		case 781728005: /* GXTEntry: "Perfect Skinned Duck Carcass" */
-			return 1001171791 /* GXTEntry: "Perfect Duck Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_DUCK_PERFECT");
 		case 1202409779: /* GXTEntry: "Poor Skinned Duck Carcass" */
-			return 1210345318 /* GXTEntry: "Poor Duck Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_DUCK_POOR");
 		case 1520877300: /* GXTEntry: "Good Plucked Eagle Carcass" */
-			return 399553313 /* GXTEntry: "Good Eagle Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_EAGLE_HIGH_QUALITY");
 		case -1736624361: /* GXTEntry: "Perfect Plucked Eagle Carcass" */
-			return -1422869557 /* GXTEntry: "Perfect Eagle Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_EAGLE_PERFECT");
 		case 719465997: /* GXTEntry: "Poor Plucked Eagle Carcass" */
-			return -1378812236 /* GXTEntry: "Poor Eagle Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_EAGLE_POOR");
 		case -361486526: /* GXTEntry: "Good Skinned Egret Carcass" */
-			return 1011003885 /* GXTEntry: "Good Egret Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_EGRET_HIGH_QUALITY");
 		case -765274711: /* GXTEntry: "Perfect Skinned Egret Carcass" */
-			return 651035143 /* GXTEntry: "Perfect Egret Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_EGRET_PERFECT");
 		case -887205673: /* GXTEntry: "Poor Skinned Egret Carcass" */
-			return 2013022756 /* GXTEntry: "Poor Egret Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_EGRET_POOR");
 		case -784020903: /* GXTEntry: "Good Skinned Fox Carcass" */
-			return -1186289527 /* GXTEntry: "Good Fox Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_FOX_HIGH_QUALITY");
 		case -886117938: /* GXTEntry: "Perfect Skinned Fox Carcass" */
-			return 877935135 /* GXTEntry: "Perfect Fox Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_FOX_PERFECT");
 		case -1416771220: /* GXTEntry: "Poor Skinned Fox Carcass" */
-			return -39646495 /* GXTEntry: "Poor Fox Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_FOX_POOR");
 		case 1648676911: /* GXTEntry: "Good Skinned Gila Monster Carcass" */
-			return 1582593525 /* GXTEntry: "Good Gila Monster Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GILA_HIGH_QUALITY");
 		case 2103833563: /* GXTEntry: "Perfect Skinned Gila Monster Carcass" */
-			return -246542229 /* GXTEntry: "Perfect Gila Monster Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GILA_PERFECT");
 		case -831636369: /* GXTEntry: "Poor Skinned Gila Monster Carcass" */
-			return -529454751 /* GXTEntry: "Poor Gila Monster Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GILA_POOR");
 		case -852290935: /* GXTEntry: "Good Skinned Goat Carcass" */
-			return -46978629 /* GXTEntry: "Good Goat Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GOAT_HIGH_QUALITY");
 		case -1870415962: /* GXTEntry: "Perfect Skinned Goat Carcass" */
-			return -1347000030 /* GXTEntry: "Perfect Goat Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GOAT_PERFECT");
 		case -788684109: /* GXTEntry: "Poor Skinned Goat Carcass" */
-			return -505583391 /* GXTEntry: "Poor Goat Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GOAT_POOR");
 		case 1416435145: /* GXTEntry: "Good Skinned Goose Carcass" */
-			return 1645887374 /* GXTEntry: "Good Goose Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GOOSE_HIGH_QUALITY");
 		case -1483088274: /* GXTEntry: "Perfect Skinned Goose Carcass" */
-			return -1559227925 /* GXTEntry: "Perfect Goose Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GOOSE_PERFECT");
 		case -791867098: /* GXTEntry: "Poor Skinned Goose Carcass" */
-			return 1562528937 /* GXTEntry: "Poor Goose Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_GOOSE_POOR");
 		case -1689552552: /* GXTEntry: "Good Plucked Hawk Carcass" */
-			return -1471526136 /* GXTEntry: "Good Hawk Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HAWK_HIGH_QUALITY");
 		case -1850779170: /* GXTEntry: "Perfect Plucked Hawk Carcass" */
-			return -1440794801 /* GXTEntry: "Perfect Hawk Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HAWK_PERFECT");
 		case -121487803: /* GXTEntry: "Poor Plucked Hawk Carcass" */
-			return 2144711797 /* GXTEntry: "Poor Hawk Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HAWK_POOR");
 		case -1280499288: /* GXTEntry: "Good Skinned Heron Carcass" */
-			return 718825539 /* GXTEntry: "Good Heron Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HERON_HIGH_QUALITY");
 		case 820245961: /* GXTEntry: "Perfect Skinned Heron Carcass" */
-			return 2105263879 /* GXTEntry: "Perfect Heron Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HERON_PERFECT");
 		case -889526774: /* GXTEntry: "Poor Skinned Heron Carcass" */
-			return -905842006 /* GXTEntry: "Poor Heron Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HERON_POOR");
 		case -521025998: /* GXTEntry: "Good Skinned Iguana Carcass" */
-			return 1191274340 /* GXTEntry: "Good Iguana Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_IGUANA_HIGH_QUALITY");
 		case 1583031244: /* GXTEntry: "Perfect Skinned Iguana Carcass" */
-			return 1613453781 /* GXTEntry: "Perfect Iguana Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_IGUANA_PERFECT");
 		case -2115599211: /* GXTEntry: "Poor Skinned Iguana Carcass" */
-			return -1030182399 /* GXTEntry: "Poor Iguana Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_IGUANA_POOR");
 		case -767176802: /* GXTEntry: "Good Skinned Loon Carcass" */
-			return 987967309 /* GXTEntry: "Good Loon Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_LOON_HIGH_QUALITY");
 		case -750945821: /* GXTEntry: "Perfect Skinned Loon Carcass" */
-			return -1060737769 /* GXTEntry: "Perfect Loon Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_LOON_PERFECT");
 		case -2135749211: /* GXTEntry: "Poor Skinned Loon Carcass" */
-			return 553310445 /* GXTEntry: "Poor Loon Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_LOON_POOR");
 		case 2063108046: /* GXTEntry: "Good Skinned Muskrat Carcass" */
-			return -1838865945 /* GXTEntry: "Good Muskrat Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_HIGH_QUALITY");
 		case 1299111759: /* GXTEntry: "Perfect Skinned Muskrat Carcass" */
-			return 1418092959 /* GXTEntry: "Perfect Muskrat Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_PERFECT");
 		case 1595322723: /* GXTEntry: "Poor Skinned Muskrat Carcass" */
-			return -1315697778 /* GXTEntry: "Poor Muskrat Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_POOR");
 		case 784918835: /* GXTEntry: "Good Skinned Opossum Carcass" */
-			return -1772126340 /* GXTEntry: "Good Opossum Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_HIGH_QUALITY");
 		case -676310905: /* GXTEntry: "Perfect Skinned Opossum Carcass" */
-			return -935543049 /* GXTEntry: "Perfect Opossum Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_PERFECT");
 		case -1719545959: /* GXTEntry: "Poor Skinned Opossum Carcass" */
-			return 1772544356 /* GXTEntry: "Poor Opossum Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_POOR");
 		case -2142423934: /* GXTEntry: "Good Plucked Owl Carcass" */
-			return -266273535 /* GXTEntry: "Good Owl Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_OWL_HIGH_QUALITY");
 		case 747751566: /* GXTEntry: "Perfect Plucked Owl Carcass" */
-			return -1670544626 /* GXTEntry: "Perfect Owl Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_OWL_PERFECT");
 		case -1942682403: /* GXTEntry: "Poor Plucked Owl Carcass" */
-			return 1290960696 /* GXTEntry: "Poor Owl Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_OWL_POOR");
 		case 1018433784: /* GXTEntry: "Good Skinned Panther Carcass" */
-			return 1913571052 /* GXTEntry: "Good Panther Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PANTHER_HIGH_QUALITY");
 		case -796185392: /* GXTEntry: "Perfect Skinned Panther Carcass" */
-			return 1717601520 /* GXTEntry: "Perfect Panther Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PANTHER_PERFECT");
 		case -49549406: /* GXTEntry: "Poor Skinned Panther Carcass" */
-			return 430397370 /* GXTEntry: "Poor Panther Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PANTHER_POOR");
 		case 857788498: /* GXTEntry: "Good Plucked Parrot Carcass" */
-			return 16287711 /* GXTEntry: "Good Parrot Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PARROT_HIGH_QUALITY");
 		case 1223148871: /* GXTEntry: "Perfect Plucked Parrot Carcass" */
-			return -1356230367 /* GXTEntry: "Perfect Parrot Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PARROT_PERFECT");
 		case 939407236: /* GXTEntry: "Poor Plucked Parrot Carcass" */
-			return 1417331079 /* GXTEntry: "Poor Parrot Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PARROT_POOR");
 		case 1608778431: /* GXTEntry: "Good Plucked Pelican Carcass" */
-			return -884124246 /* GXTEntry: "Good Pelican Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PELICAN_HIGH_QUALITY");
 		case -2033821082: /* GXTEntry: "Perfect Plucked Pelican Carcass" */
-			return 1884610748 /* GXTEntry: "Perfect Pelican Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PELICAN_PERFECT");
 		case -993340234: /* GXTEntry: "Poor Plucked Pelican Carcass" */
-			return 746558492 /* GXTEntry: "Poor Pelican Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PELICAN_POOR");
 		case -1861062075: /* GXTEntry: "Good Skinned Pheasant Carcass" */
-			return -892811627 /* GXTEntry: "Good Pheasant Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_HIGH_QUALITY");
 		case 1645001514: /* GXTEntry: "Perfect Skinned Pheasant Carcass" */
-			return -2040522845 /* GXTEntry: "Perfect Pheasant Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_PERFECT");
 		case 782371031: /* GXTEntry: "Poor Skinned Pheasant Carcass" */
-			return -1224510844 /* GXTEntry: "Poor Pheasant Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_POOR");
 		case 1255529169: /* GXTEntry: "Good Skinned Pig Carcass" */
-			return 1334837390 /* GXTEntry: "Good Pig Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PIG_HIGH_QUALITY");
 		case 70898308: /* GXTEntry: "Perfect Skinned Pig Carcass" */
-			return 339620522 /* GXTEntry: "Perfect Pig Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PIG_PERFECT");
 		case -1050350982: /* GXTEntry: "Poor Skinned Pig Carcass" */
-			return 1770451033 /* GXTEntry: "Poor Pig Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PIG_POOR");
 		case 581781784: /* GXTEntry: "Good Skinned Prairie Chicken Carcass" */
-			return 756657535 /* GXTEntry: "Good Prairie Chicken Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_HIGH_QUALITY");
 		case -1363330863: /* GXTEntry: "Perfect Skinned Prairie Chicken Carcass" */
-			return 862898895 /* GXTEntry: "Perfect Prairie Chicken Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_PERFECT");
 		case -1780911288: /* GXTEntry: "Poor Skinned Prairie Chicken Carcass" */
-			return 1997845858 /* GXTEntry: "Poor Prairie Chicken Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_POOR");
 		case 1018306802: /* GXTEntry: "Good Skinned Pronghorn Carcass" */
-			return -1930144509 /* GXTEntry: "Good Pronghorn Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_HIGH_QUALITY");
 		case 1615521415: /* GXTEntry: "Perfect Skinned Pronghorn Carcass" */
-			return 1846915545 /* GXTEntry: "Perfect Pronghorn Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_PERFECT");
 		case -1499066338: /* GXTEntry: "Poor Skinned Pronghorn Carcass" */
-			return -1816929509 /* GXTEntry: "Poor Pronghorn Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_POOR");
 		case 1711081908: /* GXTEntry: "Good Skinned Rabbit Carcass" */
-			return 1197831625 /* GXTEntry: "Good Rabbit Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RABBIT_HIGH_QUALITY");
 		case -164705: /* GXTEntry: "Perfect Skinned Rabbit Carcass" */
-			return -1866642239 /* GXTEntry: "Perfect Rabbit Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RABBIT_PERFECT");
 		case -2044044647: /* GXTEntry: "Poor Skinned Rabbit Carcass" */
-			return -1508120809 /* GXTEntry: "Poor Rabbit Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RABBIT_POOR");
 		case -859583379: /* GXTEntry: "Good Skinned Raccoon Carcass" */
-			return -1007681885 /* GXTEntry: "Good Raccoon Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RACOON_HIGH_QUALITY");
 		case -759504052: /* GXTEntry: "Perfect Skinned Raccoon Carcass" */
-			return 434924608 /* GXTEntry: "Perfect Raccoon Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RACOON_PERFECT");
 		case 700225820: /* GXTEntry: "Poor Skinned Raccoon Carcass" */
-			return 1666393029 /* GXTEntry: "Poor Raccoon Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RACOON_POOR");
 		case 136458586: /* GXTEntry: "Good Skinned Ram Carcass" */
-			return -1814593136 /* GXTEntry: "Good Ram Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RAM_HIGH_QUALITY");
 		case 799105420: /* GXTEntry: "Perfect Skinned Ram Carcass" */
-			return -1188120304 /* GXTEntry: "Perfect Ram Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RAM_PERFECT");
 		case -481655757: /* GXTEntry: "Poor Skinned Ram Carcass" */
-			return 1978734761 /* GXTEntry: "Poor Ram Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RAM_POOR");
 		case 484160931: /* GXTEntry: "Good Plucked Raven Carcass" */
-			return -824902132 /* GXTEntry: "Good Raven Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RAVEN_HIGH_QUALITY");
 		case 1010699907: /* GXTEntry: "Perfect Plucked Raven Carcass" */
-			return -1015531226 /* GXTEntry: "Perfect Raven Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RAVEN_PERFECT");
 		case 1550264248: /* GXTEntry: "Poor Plucked Raven Carcass" */
-			return -581619522 /* GXTEntry: "Poor Raven Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_RAVEN_POOR");
 		case -371992731: /* GXTEntry: "Good Plucked Red-footed Booby Carcass" */
-			return -861854914 /* GXTEntry: "Good Red-footed Booby Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_HIGH_QUALITY");
 		case 1090294483: /* GXTEntry: "Perfect Plucked Red-footed Booby Carcass" */
-			return -545447034 /* GXTEntry: "Perfect Red-footed Booby Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_PERFECT");
 		case -274175035: /* GXTEntry: "Poor Plucked Red-footed Booby Carcass" */
-			return -1824684934 /* GXTEntry: "Poor Red-footed Booby Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_POOR");
 		case -1064414912: /* GXTEntry: "Good Skinned Rooster Carcass" */
-			return 980653387 /* GXTEntry: "Good Rooster Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_HIGH_QUALITY");
 		case -2091620305: /* GXTEntry: "Perfect Skinned Rooster Carcass" */
-			return -1011598664 /* GXTEntry: "Perfect Rooster Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_PERFECT");
 		case -468684824: /* GXTEntry: "Poor Skinned Rooster Carcass" */
-			return -177476569 /* GXTEntry: "Poor Rooster Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_POOR");
 		case 1668870118: /* GXTEntry: "Good Skinned Roseate Spoonbill Carcass" */
-			return 416630124 /* GXTEntry: "Good Roseate Spoonbill Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_HIGH_QUALITY");
 		case -534004020: /* GXTEntry: "Perfect Skinned Roseate Spoonbill Carcass" */
-			return 1925728375 /* GXTEntry: "Perfect Roseate Spoonbill Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_PERFECT");
 		case -2126925270: /* GXTEntry: "Poor Skinned Roseate Spoonbill Carcass" */
-			return -1080457688 /* GXTEntry: "Poor Roseate Spoonbill Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_POOR");
 		case 2008380517: /* GXTEntry: "Good Plucked Seagull Carcass" */
-			return 1742676369 /* GXTEntry: "Good Seagull Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_HIGH_QUALITY");
 		case -510697884: /* GXTEntry: "Perfect Plucked Seagull Carcass" */
-			return -899751553 /* GXTEntry: "Perfect Seagull Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_PERFECT");
 		case -955209948: /* GXTEntry: "Poor Plucked Seagull Carcass" */
-			return 431501574 /* GXTEntry: "Poor Seagull Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_POOR");
 		case 1459836898: /* GXTEntry: "Good Skinned Sheep Carcass" */
-			return 2126795269 /* GXTEntry: "Good Sheep Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SHEEP_HIGH_QUALITY");
 		case 303969766: /* GXTEntry: "Perfect Skinned Sheep Carcass" */
-			return 1489051752 /* GXTEntry: "Perfect Sheep Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SHEEP_PERFECT");
 		case -1707588662: /* GXTEntry: "Poor Skinned Sheep Carcass" */
-			return -1705499323 /* GXTEntry: "Poor Sheep Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SHEEP_POOR");
 		case -1224075784: /* GXTEntry: "Good Skinned Skunk Carcass" */
-			return -2013445740 /* GXTEntry: "Good Skunk Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SKUNK_HIGH_QUALITY");
 		case -1806671048: /* GXTEntry: "Perfect Skinned Skunk Carcass" */
-			return 102446365 /* GXTEntry: "Perfect Skunk Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SKUNK_PERFECT");
 		case 749765420: /* GXTEntry: "Poor Skinned Skunk Carcass" */
-			return -1927342740 /* GXTEntry: "Poor Skunk Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SKUNK_POOR");
 		case 462936163: /* GXTEntry: "Good Skinned Black-Tailed Rattlesnake Carcass" */
-			return -410900360 /* GXTEntry: "Good Black-tailed Rattlesnake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_HIGH_QUALITY");
 		case -8888941: /* GXTEntry: "Perfect Skinned Black-Tailed Rattlesnake Carcass" */
-			return -1073614594 /* GXTEntry: "Perfect Black-tailed Rattlesnake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_PERFECT");
 		case 1640227110: /* GXTEntry: "Poor Skinned Black-Tailed Rattlesnake Carcass" */
-			return 2060013792 /* GXTEntry: "Poor Black-tailed Rattlesnake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_POOR");
 		case -1241188722: /* GXTEntry: "Good Skinned Red Boa Carcass" */
-			return 581032175 /* GXTEntry: "Good Red Boa Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_HIGH_QUALITY");
 		case -1030962659: /* GXTEntry: "Perfect Skinned Red Boa Carcass" */
-			return -581931638 /* GXTEntry: "Perfect Red Boa Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_PERFECT");
 		case 112552982: /* GXTEntry: "Poor Skinned Red Boa Carcass" */
-			return -1528265128 /* GXTEntry: "Poor Red Boa Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_POOR");
 		case -1599578931: /* GXTEntry: "Good Skinned Copperhead Carcass" */
-			return -142632645 /* GXTEntry: "Good Copperhead Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_HIGH_QUALITY");
 		case 1296331626: /* GXTEntry: "Perfect Skinned Copperhead Carcass" */
-			return -2048519180 /* GXTEntry: "Perfect Copperhead Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_PERFECT");
 		case -1256398198: /* GXTEntry: "Poor Skinned Copperhead Carcass" */
-			return 1442025993 /* GXTEntry: "Poor Copperhead Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_POOR");
 		case 1297800973: /* GXTEntry: "Good Skinned Fer-de-lance Carcass" */
-			return 441195430 /* GXTEntry: "Good Fer-de-Lance Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_HIGH_QUALITY");
 		case 1772582754: /* GXTEntry: "Perfect Skinned Fer-de-lance Carcass" */
-			return 748665395 /* GXTEntry: "Perfect Fer-de-Lance Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_PERFECT");
 		case -1459876379: /* GXTEntry: "Poor Skinned Fer-de-lance Carcass" */
-			return 351048413 /* GXTEntry: "Poor Fer-de-Lance Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_POOR");
 		case 1127406863: /* GXTEntry: "Good Skinned Snake Carcass" */
-			return -914779013 /* GXTEntry: "Good Snake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_HIGH_QUALITY");
 		case 1779996957: /* GXTEntry: "Perfect Skinned Snake Carcass" */
-			return 1323485831 /* GXTEntry: "Perfect Snake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_PERFECT");
 		case 1885306923: /* GXTEntry: "Poor Skinned Snake Carcass" */
-			return -365111821 /* GXTEntry: "Poor Snake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_POOR");
 		case 1244107697: /* GXTEntry: "Good Skinned Water Snake Carcass" */
-			return 101495387 /* GXTEntry: "Good Water Snake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_HIGH_QUALITY");
 		case -1201555940: /* GXTEntry: "Perfect Skinned Water Snake Carcass" */
-			return 157917500 /* GXTEntry: "Perfect Water Snake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_PERFECT");
 		case -668487833: /* GXTEntry: "Poor Skinned Water Snake Carcass" */
-			return -936537044 /* GXTEntry: "Poor Water Snake Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_POOR");
 		case -1178150148: /* GXTEntry: "Good Skinned Turkey Carcass" */
-			return -1610329427 /* GXTEntry: "Good Turkey Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_TURKEY_HIGH_QUALITY");
 		case 1171158615: /* GXTEntry: "Perfect Skinned Turkey Carcass" */
-			return -1836227998 /* GXTEntry: "Perfect Turkey Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_TURKEY_PERFECT");
 		case -2123554124: /* GXTEntry: "Poor Skinned Turkey Carcass" */
-			return 619479575 /* GXTEntry: "Poor Turkey Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_TURKEY_POOR");
 		case 1806705761: /* GXTEntry: "Good Skinned Snapping Turtle Carcass" */
-			return -1444929945 /* GXTEntry: "Good Snapping Turtle Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_HIGH_QUALITY");
 		case 404581836: /* GXTEntry: "Perfect Skinned Snapping Turtle Carcass" */
-			return -929322235 /* GXTEntry: "Perfect Snapping Turtle Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_PERFECT");
 		case 987197489: /* GXTEntry: "Poor Skinned Snapping Turtle Carcass" */
-			return -548076717 /* GXTEntry: "Poor Snapping Turtle Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_POOR");
 		case -1259715647: /* GXTEntry: "Good Plucked Vulture Carcass" */
-			return -281211381 /* GXTEntry: "Good Vulture Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_VULTURE_HIGH_QUALITY");
 		case -1716717840: /* GXTEntry: "Perfect Plucked Vulture Carcass" */
-			return 493457089 /* GXTEntry: "Perfect Vulture Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_VULTURE_PERFECT");
 		case -196277007: /* GXTEntry: "Poor Plucked Vulture Carcass" */
-			return -479485786 /* GXTEntry: "Poor Vulture Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_VULTURE_POOR");
 		case -2064457926: /* GXTEntry: "Good Skinned Wolf Carcass" */
-			return 27838955 /* GXTEntry: "Good Wolf Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_WOLF_HIGH_QUALITY");
 		case 561267454: /* GXTEntry: "Perfect Skinned Wolf Carcass" */
-			return 1641833719 /* GXTEntry: "Perfect Wolf Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_WOLF_PERFECT");
 		case 686253083: /* GXTEntry: "Poor Skinned Wolf Carcass" */
-			return -314933180 /* GXTEntry: "Poor Wolf Carcass" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_WOLF_POOR");
 		default:
 			break;
 	}

@@ -5447,19 +5447,19 @@ int func_200(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, joaat("SPECIES_HORSE"), true, false, 0f, 0f, 0f);
 }
 
 int func_201()
@@ -15138,19 +15138,19 @@ int func_550()
 	switch (iVar0)
 	{
 		case 3:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 4:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 5:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 6:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 7:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		default:
 			break;
 	}
-	return 161068336;
+	return joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW");
 }
 
 bool func_551(var uParam0, int iParam1, char* sParam2)
@@ -15190,19 +15190,19 @@ int func_552()
 	switch (iVar0)
 	{
 		case 3:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 4:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 5:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 6:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 7:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		default:
 			break;
 	}
-	return 161068336;
+	return joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW");
 }
 
 void func_553(var uParam0, int iParam1, int iParam2)
@@ -19251,7 +19251,7 @@ void func_731(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -22293,33 +22293,33 @@ int func_848()
 	switch (iVar0)
 	{
 		case 0:
-			return 697410695;
+			return joaat("EVENT_SHOCKING_BEAT_AMUSING_NEW");
 		case 1:
-			return 161068336;
+			return joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW");
 		case 2:
-			return 697410695;
+			return joaat("EVENT_SHOCKING_BEAT_AMUSING_NEW");
 		case 3:
-			return -1215290486;
+			return joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW");
 		case 4:
-			return -1227782948;
+			return joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW");
 		case 5:
-			return -1215290486;
+			return joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW");
 		case 6:
-			return -1215290486;
+			return joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW");
 		case 7:
-			return -1215290486;
+			return joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW");
 		case 8:
-			return 161068336;
+			return joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW");
 		case 9:
-			return -1130398329;
+			return joaat("EVENT_SHOCKING_BEAT_INTERESTING_NEW");
 		case 10:
-			return -1130398329;
+			return joaat("EVENT_SHOCKING_BEAT_INTERESTING_NEW");
 		case 11:
-			return 697410695;
+			return joaat("EVENT_SHOCKING_BEAT_AMUSING_NEW");
 		default:
 			break;
 	}
-	return 161068336;
+	return joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW");
 }
 
 bool func_849(int iParam0)
@@ -24494,7 +24494,7 @@ int func_955(int iParam0)
 	{
 		return 0;
 	}
-	if (((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT")) || iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))
+	if (((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT")) || iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))
 	{
 		return 1;
 	}
@@ -25284,7 +25284,7 @@ int func_986(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -25296,7 +25296,7 @@ int func_986(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;

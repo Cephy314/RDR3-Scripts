@@ -710,7 +710,7 @@ void func_26()
 	Local_78[7 /*4*/] = joaat("WORLD_HUMAN_SMOKE");
 	(Local_78[7 /*4*/])->f_1 = { -2f, -2.5f, 0f };
 	Local_45[0 /*4*/] = joaat("WORLD_HUMAN_SMOKE");
-	Local_45[1 /*4*/] = 597682689;
+	Local_45[1 /*4*/] = joaat("WORLD_CAMP_FIRE_COOKING");
 	Local_45[2 /*4*/] = joaat("WORLD_HUMAN_FIRE_TEND_KNEEL");
 	Local_45[3 /*4*/] = joaat("WORLD_HUMAN_STAND_WAITING");
 	Local_45[4 /*4*/] = joaat("WORLD_HUMAN_SMOKE_NERVOUS_STRESSED");
@@ -1981,7 +1981,7 @@ void func_73(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		if (func_74(bParam1))
 		{
-			func_75(bParam0, 41788943);
+			func_75(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -2266,7 +2266,7 @@ void func_77(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

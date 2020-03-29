@@ -536,7 +536,7 @@ void func_7(var uParam0, int iParam1, bool bParam2)
 	if (bParam2)
 	{
 		func_53(uParam0, bParam2);
-		STREAMING::_0x4EDDD9E9CA5AF985(-318144249);
+		STREAMING::_0x4EDDD9E9CA5AF985(joaat("SC_BOUNTY_HUNTER_SHERIFF"));
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("P_JOURNAL_OPEN01X"));
 		func_54(iParam1);
 	}
@@ -980,7 +980,7 @@ int func_29()
 void func_30(var uParam0)
 {
 	STREAMING::REQUEST_MODEL(joaat("P_JOURNAL_OPEN01X"), false);
-	STREAMING::_0x19A6BE7D9C6884D3(-318144249, 15, 0, 0);
+	STREAMING::_0x19A6BE7D9C6884D3(joaat("SC_BOUNTY_HUNTER_SHERIFF"), 15, 0, 0);
 	func_93(uParam0->f_2);
 }
 
@@ -1161,7 +1161,7 @@ void func_38(var uParam0)
 
 int func_39()
 {
-	if ((((((((((func_99(-1442477431 /* GXTEntry: "Bounty Poster - Joshua Brown" */, 0, 0) > 0 || func_99(-120239629 /* GXTEntry: "Bounty Poster - Mark Johnson" */, 0, 0) > 0) || func_99(-1129500286 /* GXTEntry: "Bounty Poster - Lindsey Wofford" */, 0, 0) > 0) || func_99(-1490222567 /* GXTEntry: "Bounty Poster - Ellie Anne Swan" */, 0, 0) > 0) || func_99(1117744418 /* GXTEntry: "Bounty Poster - Otis Skinner" */, 0, 0) > 0) || func_99(1900975545 /* GXTEntry: "Bounty Poster - Elias Green" */, 0, 0) > 0) || func_99(-233617698 /* GXTEntry: "Bounty Poster - Robbie Laidlaw" */, 0, 0) > 0) || func_99(1515293085 /* GXTEntry: "Bounty Poster - Anthony Foreman" */, 0, 0) > 0) || func_99(1129206837 /* GXTEntry: "Bounty Poster - Joaqu�n Arroyo" */, 0, 0) > 0) || func_99(-2012586584 /* GXTEntry: "Bounty Poster - Esteban Cortez" */, 0, 0) > 0) || func_99(-77412868 /* GXTEntry: "Bounty Poster" */, 0, 0) > 0)
+	if ((((((((((func_99(-1442477431 /* GXTEntry: "Bounty Poster - Joshua Brown" */, 0, 0) > 0 || func_99(-120239629 /* GXTEntry: "Bounty Poster - Mark Johnson" */, 0, 0) > 0) || func_99(-1129500286 /* GXTEntry: "Bounty Poster - Lindsey Wofford" */, 0, 0) > 0) || func_99(-1490222567 /* GXTEntry: "Bounty Poster - Ellie Anne Swan" */, 0, 0) > 0) || func_99(1117744418 /* GXTEntry: "Bounty Poster - Otis Skinner" */, 0, 0) > 0) || func_99(1900975545 /* GXTEntry: "Bounty Poster - Elias Green" */, 0, 0) > 0) || func_99(-233617698 /* GXTEntry: "Bounty Poster - Robbie Laidlaw" */, 0, 0) > 0) || func_99(joaat("DOCUMENT_POSTER_SD_SALOON"), 0, 0) > 0) || func_99(1129206837 /* GXTEntry: "Bounty Poster - Joaqu�n Arroyo" */, 0, 0) > 0) || func_99(-2012586584 /* GXTEntry: "Bounty Poster - Esteban Cortez" */, 0, 0) > 0) || func_99(-77412868 /* GXTEntry: "Bounty Poster" */, 0, 0) > 0)
 	{
 		return 1;
 	}
@@ -2101,11 +2101,11 @@ int func_76(var uParam0, var uParam1)
 				}
 				else if (func_146(uParam1))
 				{
-					uParam0->f_9 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(uParam0->f_7, -318144249, 0.0086562f, 0.0409636f, 0.5f, 179.9999f, 0, 0, 1);
+					uParam0->f_9 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(uParam0->f_7, joaat("SC_BOUNTY_HUNTER_SHERIFF"), 0.0086562f, 0.0409636f, 0.5f, 179.9999f, 0, 0, 1);
 				}
 				else
 				{
-					uParam0->f_9 = TASK::CREATE_SCENARIO_POINT(-318144249, func_147(), func_148(), 0f, 0, 0);
+					uParam0->f_9 = TASK::CREATE_SCENARIO_POINT(joaat("SC_BOUNTY_HUNTER_SHERIFF"), func_147(), func_148(), 0f, 0, 0);
 				}
 				TASK::_0xE69FDA40AAC3EFC0(uParam0->f_9, 0);
 				TASK::_0xA7479FB665361EDB(uParam0->f_9, 0);
@@ -5095,7 +5095,7 @@ int func_191(int iParam0)
 		case 155:
 			return 3000;
 	}
-	return func_293(-1531790128, 0, -1);
+	return func_293(joaat("REWARD_BOUNTYHUNTING_MEDIUM"), 0, -1);
 }
 
 int func_192(int iParam0)
@@ -5194,7 +5194,7 @@ int func_197(int iParam0)
 		case 15:
 			return -233617698 /* GXTEntry: "Bounty Poster - Robbie Laidlaw" */;
 		case 16:
-			return 1515293085 /* GXTEntry: "Bounty Poster - Anthony Foreman" */;
+			return joaat("DOCUMENT_POSTER_SD_SALOON");
 		case 19:
 			return 1129206837 /* GXTEntry: "Bounty Poster - Joaqu�n Arroyo" */;
 		case 20:
@@ -7662,7 +7662,7 @@ int func_291(int iParam0)
 
 bool func_292()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(99890643);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
 }
 
 int func_293(int iParam0, int iParam1, int iParam2)
@@ -7727,83 +7727,83 @@ void func_295(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;
@@ -11457,7 +11457,7 @@ int func_454(int iParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(iParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(iParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}

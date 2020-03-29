@@ -263,7 +263,7 @@ int func_3(int iParam0)
 		default:
 			break;
 	}
-	return -1496612359;
+	return joaat("META_OUTFIT_COOL_WEATHER");
 }
 
 bool func_4(int iParam0, int iParam1)
@@ -2513,7 +2513,7 @@ int func_85(int iParam0)
 		case -2061583405:
 			return joaat("HATS");
 		case -525676072:
-			return 1249071452;
+			return joaat("MASKS_LARGE");
 		default:
 			break;
 	}

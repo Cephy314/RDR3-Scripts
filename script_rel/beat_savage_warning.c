@@ -143,11 +143,11 @@ int func_2(var uParam0, var uParam1)
 {
 	switch (uParam0->f_2)
 	{
-		case 1704047055:
+		case joaat("WB_RE_SAVAGE_WARNING01"):
 			uParam1->f_194 = 0;
 			uParam1->f_195 = 1050128548;
 			break;
-		case 259425682:
+		case joaat("WB_RE_SAVAGE_WARNING02"):
 			uParam1->f_194 = 1;
 			uParam1->f_195 = 868326136;
 			break;
@@ -1855,10 +1855,10 @@ void func_65()
 	switch (Local_3.f_194)
 	{
 		case 0:
-			iLocal_224 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-2108467590, func_63(&Local_3), 0f, 40f, 30f, -1082130432, -1082130432, -1, -1);
+			iLocal_224 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_TERRIFYING_NEW"), func_63(&Local_3), 0f, 40f, 30f, -1082130432, -1082130432, -1, -1);
 			break;
 		case 1:
-			iLocal_224 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-2108467590, func_63(&Local_3), 0f, 40f, 30f, -1082130432, -1082130432, -1, -1);
+			iLocal_224 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_TERRIFYING_NEW"), func_63(&Local_3), 0f, 40f, 30f, -1082130432, -1082130432, -1, -1);
 			break;
 	}
 }
@@ -5207,14 +5207,14 @@ int func_125(var uParam0)
 			return 0;
 		}
 	}
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
 			uParam0->f_5 = PED::_REQUEST_METAPED_OUTFIT(uParam0->f_1, uParam0->f_3);
 			if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 			{
-				uParam0->f_3 = 41788943;
+				uParam0->f_3 = joaat("META_OUTFIT_DEFAULT");
 			}
 			return 0;
 		}
@@ -6217,7 +6217,7 @@ int func_178(int iParam0, var uParam1, vector3 vParam2, bool bParam5, bool bPara
 			PED::SET_PED_CONFIG_FLAG(iVar0, 4, func_226(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 297, !func_227(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 317, !func_227(&(uParam1->f_22)));
-			if (uParam1->f_31 != 623901053)
+			if (uParam1->f_31 != joaat("REL_NO_RELATIONSHIP"))
 			{
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, uParam1->f_31);
 			}
@@ -6708,7 +6708,7 @@ int func_212(var uParam0, var uParam1)
 
 int func_213(var uParam0)
 {
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
@@ -7804,7 +7804,7 @@ void func_260(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_283(iParam1))
 		{
-			func_284(iParam0, 41788943);
+			func_284(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -8942,7 +8942,7 @@ void func_286(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

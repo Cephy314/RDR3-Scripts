@@ -939,7 +939,7 @@ void func_17(int iParam0, int iParam1)
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "JOHN", Global_35, 0);
 			if (iLocal_9 == 0)
 			{
-				bLocal_10 = PERSCHAR::_0x31C70A716CAE1FEE(PERSCHAR::_0x112DDF56300BC6E5(1033990353));
+				bLocal_10 = PERSCHAR::_0x31C70A716CAE1FEE(PERSCHAR::_0x112DDF56300BC6E5(joaat("PHR_DAVID_GEDDES")));
 			}
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "DavidGeddes", bLocal_10, 0);
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "Horse_01", iLocal_2, 0);
@@ -948,7 +948,7 @@ void func_17(int iParam0, int iParam1)
 		case 4:
 			if (iLocal_9 == 0)
 			{
-				bLocal_10 = PERSCHAR::_0x31C70A716CAE1FEE(PERSCHAR::_0x112DDF56300BC6E5(1981782315));
+				bLocal_10 = PERSCHAR::_0x31C70A716CAE1FEE(PERSCHAR::_0x112DDF56300BC6E5(joaat("PHR_TOM_DICKENS")));
 			}
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "JOHN", Global_35, 0);
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "TomDickens", bLocal_10, 0);
@@ -958,7 +958,7 @@ void func_17(int iParam0, int iParam1)
 		case 1:
 			if (iLocal_9 == 0)
 			{
-				bLocal_10 = PERSCHAR::_0x31C70A716CAE1FEE(PERSCHAR::_0x112DDF56300BC6E5(1899337255));
+				bLocal_10 = PERSCHAR::_0x31C70A716CAE1FEE(PERSCHAR::_0x112DDF56300BC6E5(joaat("PHR_ABE")));
 			}
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "JOHN", Global_35, 0);
 			ANIMSCENE::SET_ANIM_SCENE_ENTITY(iParam0, "ABE", bLocal_10, 0);
@@ -2372,7 +2372,7 @@ void func_86(bool bParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_113(iParam1))
 		{
-			func_114(bParam0, 41788943);
+			func_114(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -3357,7 +3357,7 @@ void func_116(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -4834,7 +4834,7 @@ int func_171(int iParam0)
 		case -2061583405:
 			return joaat("HATS");
 		case -525676072:
-			return 1249071452;
+			return joaat("MASKS_LARGE");
 		default:
 			break;
 	}

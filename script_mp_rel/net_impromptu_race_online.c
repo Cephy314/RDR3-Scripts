@@ -8276,7 +8276,7 @@ int func_333(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -8288,7 +8288,7 @@ int func_333(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;
@@ -10563,7 +10563,7 @@ char* func_413(int iParam0)
 {
 	if (iParam0 != 0)
 	{
-		return STATS::_0xB112B9262EC29C20(1852874750, iParam0);
+		return STATS::_0xB112B9262EC29C20(joaat("MP_PLAYINGSTYLES"), iParam0);
 	}
 	return "";
 }

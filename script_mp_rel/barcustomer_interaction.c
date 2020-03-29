@@ -218,27 +218,27 @@ void func_6()
 			{
 				STREAMING::REQUEST_MODEL(joaat("P_BOTTLEBEER01X"), false);
 				iVar4 = joaat("WORLD_HUMAN_BARTENDER_BEER");
-				iLocal_18 = 130648332;
-				iLocal_19 = -1003673600;
-				iLocal_21 = 817534410;
-				iLocal_22 = -425323829;
-				iLocal_23 = -79611391;
-				iLocal_24 = -1378615306;
+				iLocal_18 = joaat("CUSTOMER_GRAB_BEER");
+				iLocal_19 = joaat("CUSTOMER_GRAB_BEER_MALE_B");
+				iLocal_21 = joaat("BARFRONT_TRANS_UNDER_BEER");
+				iLocal_22 = joaat("UNDERBAR_TRANS_OVERBAR_BEER");
+				iLocal_23 = joaat("BARTENDER_RETURN_TO_IDLE");
+				iLocal_24 = joaat("BARTENDER_CLEAN_BEER_OVER_BAR");
 				iLocal_25 = -1931194237;
-				iLocal_26 = 18806614;
+				iLocal_26 = joaat("BARTENDER_CLEAN_BEER_UNDER_TRANS_BARFRONT");
 				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_BEER"), 262144, 0, 0);
 			}
 			else
 			{
 				iVar4 = joaat("WORLD_HUMAN_BARTENDER_WHISKEY");
-				iLocal_18 = -766432658;
-				iLocal_19 = 391391121;
-				iLocal_21 = -226695311;
-				iLocal_22 = 1999132356;
-				iLocal_23 = -467366400;
-				iLocal_24 = 2127356704;
-				iLocal_25 = 1054334670;
-				iLocal_26 = 1885925117;
+				iLocal_18 = joaat("CUSTOMER_GRAB_WHISKEY");
+				iLocal_19 = joaat("CUSTOMER_GRAB_WHISKEY_MALE_B");
+				iLocal_21 = joaat("BARFRONT_TRANS_UNDER_WHISKEY");
+				iLocal_22 = joaat("UNDER_TRANS_OVER_WHISKEY");
+				iLocal_23 = joaat("UNDER_TRANS_BARFRONT_WHISKEY");
+				iLocal_24 = joaat("BARTENDER_CLEAN_WHISKEY_OVER_BAR");
+				iLocal_25 = joaat("BARTENDER_CLEAN_WHISKEY_OVER_TRANS_UNDER_BAR");
+				iLocal_26 = joaat("BARTENDER_CLEAN_WHISKEY_UNDER_TRANS_BARFRONT");
 				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 262144, 0, 0);
 				STREAMING::REQUEST_MODEL(joaat("P_SHOTGLASS01X"), false);
 				STREAMING::REQUEST_MODEL(joaat("P_BOTTLEJD01X"), false);
@@ -912,7 +912,7 @@ void func_27(bool bParam0, bool bParam1, bool bParam2)
 				PED::_0x6D07B371E9439019(iLocal_31);
 				if (iLocal_17 == joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY"))
 				{
-					iLocal_21 = 780205091;
+					iLocal_21 = joaat("OVER_TRANS_UNDER_WHISKEY");
 				}
 				func_25(&uLocal_49, 1);
 				iLocal_28 = 4;

@@ -888,7 +888,7 @@ bool func_32()
 
 bool func_33()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(99890643);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
 }
 
 int func_34(int iParam0, bool bParam1)
@@ -1815,37 +1815,37 @@ void func_58(int iParam0, bool bParam1)
 	}
 	func_8(iParam0, 32);
 	func_116(Global_1935630, 8192);
-	func_118(func_117(-1532769513, joaat("AREAS")), 1);
+	func_118(func_117(joaat("DISCOVERED"), joaat("AREAS")), 1);
 	switch (func_104(iParam0))
 	{
 		case 0:
 		case 2:
 		case 11:
-			func_118(func_117(-1532769513, joaat("LOWLANDS_AREAS")), 1);
+			func_118(func_117(joaat("DISCOVERED"), joaat("LOWLANDS_AREAS")), 1);
 			break;
 		case 1:
 		case 5:
 		case 6:
 		case 7:
 		case 12:
-			func_118(func_117(-1532769513, joaat("MOUNTAIN_AREAS")), 1);
+			func_118(func_117(joaat("DISCOVERED"), joaat("MOUNTAIN_AREAS")), 1);
 			break;
 		case 3:
 		case 10:
-			func_118(func_117(-1532769513, joaat("FOOTHILLS_AREAS")), 1);
+			func_118(func_117(joaat("DISCOVERED"), joaat("FOOTHILLS_AREAS")), 1);
 			break;
 		case 4:
 		case 9:
-			func_118(func_117(-1532769513, joaat("PLAINS_AREAS")), 1);
+			func_118(func_117(joaat("DISCOVERED"), joaat("PLAINS_AREAS")), 1);
 			break;
 		case 8:
-			func_118(func_117(-1532769513, joaat("GUAMA_AREAS")), 1);
+			func_118(func_117(joaat("DISCOVERED"), joaat("GUAMA_AREAS")), 1);
 			break;
 		case 13:
 		case 14:
 		case 15:
 		case 16:
-			func_118(func_117(-1532769513, joaat("NEW_AUSTIN_AREAS")), 1);
+			func_118(func_117(joaat("DISCOVERED"), joaat("NEW_AUSTIN_AREAS")), 1);
 			break;
 	}
 	switch (iParam0)
@@ -3394,7 +3394,7 @@ char* func_102(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_CAIRN_LAKE";
 				*uParam6 = 1;
 				break;
-			case -804804953:
+			case joaat("WATER_CATTIAL_POND"):
 				sVar0 = "WATER_CATTAIL_POND";
 				*uParam6 = 1;
 				break;
@@ -3454,7 +3454,7 @@ char* func_102(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4,
 				sVar0 = "WATER_MOONSTONE_POND";
 				*uParam6 = 1;
 				break;
-			case -1817904483:
+			case joaat("WATER_O_CREAGHS_RUN"):
 				sVar0 = "WATER_OCREAGHS_RUN";
 				*uParam6 = 1;
 				break;
@@ -3748,9 +3748,9 @@ int func_107(int iParam0)
 			return 1;
 		case joaat("WATER_CAIRN_LAKE"):
 			return 0;
-		case 231313522:
+		case joaat("WATER_CALMUT_RAVINE"):
 			return 0;
-		case -804804953:
+		case joaat("WATER_CATTIAL_POND"):
 			return 0;
 		case joaat("WATER_DAKOTA_RIVER"):
 			return 1;
@@ -3784,7 +3784,7 @@ int func_107(int iParam0)
 			return 0;
 		case joaat("WATER_MOONSTONE_POND"):
 			return 0;
-		case -1817904483:
+		case joaat("WATER_O_CREAGHS_RUN"):
 			return 0;
 		case joaat("WATER_OWANJILA"):
 			return 0;
@@ -6515,15 +6515,15 @@ int func_208(int iParam0)
 		case 10:
 			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return -1960060437;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return 1634371177;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
 			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return 683250525;
+			return joaat("PERSCHAR_COMP_SADIE");
 		case 12:
-			return -814958461;
+			return joaat("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }

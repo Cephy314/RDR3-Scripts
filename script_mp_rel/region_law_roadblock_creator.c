@@ -684,7 +684,7 @@ void func_23()
 	Local_82[7 /*4*/] = joaat("WORLD_HUMAN_SMOKE");
 	(Local_82[7 /*4*/])->f_1 = { -2f, -2.5f, 0f };
 	Local_49[0 /*4*/] = joaat("WORLD_HUMAN_SMOKE");
-	Local_49[1 /*4*/] = 597682689;
+	Local_49[1 /*4*/] = joaat("WORLD_CAMP_FIRE_COOKING");
 	Local_49[2 /*4*/] = joaat("WORLD_HUMAN_FIRE_TEND_KNEEL");
 	Local_49[3 /*4*/] = joaat("WORLD_HUMAN_STAND_WAITING");
 	Local_49[4 /*4*/] = joaat("WORLD_HUMAN_SMOKE_NERVOUS_STRESSED");
@@ -2191,33 +2191,33 @@ int func_74(int iParam0)
 			return 0;
 		case joaat("BIGVALLEY"):
 			return 1;
-		case 1308232528:
+		case joaat("BLUEWATERMARSH"):
 			return 2;
-		case 1835499550:
+		case joaat("CUMBERLAND"):
 			return 3;
 		case joaat("GREATPLAINS"):
 			return 4;
-		case -120156735:
+		case joaat("GRIZZLIESEAST"):
 			return 6;
-		case 1645618177:
+		case joaat("GRIZZLIESWEST"):
 			return 7;
-		case -512529193:
+		case joaat("GUARMAD"):
 			return 8;
 		case joaat("HEARTLANDS"):
 			return 9;
-		case 178647645:
+		case joaat("ROANOKE"):
 			return 10;
 		case joaat("SCARLETTMEADOWS"):
 			return 11;
 		case joaat("TALLTREES"):
 			return 12;
-		case -2066240242:
+		case joaat("GAPTOOTHRIDGE"):
 			return 13;
 		case joaat("RIOBRAVO"):
 			return 14;
-		case -108848014:
+		case joaat("CHOLLASPRINGS"):
 			return 15;
-		case 892930832:
+		case joaat("HENNIGANSSTEAD"):
 			return 16;
 		default:
 			break;
@@ -2247,7 +2247,7 @@ void func_76(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

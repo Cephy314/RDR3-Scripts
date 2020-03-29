@@ -1020,7 +1020,7 @@ void func_47(int iParam0, int iParam1)
 
 int func_48(int iParam0)
 {
-	func_129(&(Local_14.f_3), &uLocal_655, 161068336, 20f, 1);
+	func_129(&(Local_14.f_3), &uLocal_655, joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW"), 20f, 1);
 	PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), "JBMenicsBubble");
 	PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), "JBMSmallBubble");
 	AUDIO::STOP_PED_SPEAKING(iParam0->f_3, false);
@@ -1695,7 +1695,7 @@ int func_70(var uParam0)
 		}
 		else
 		{
-			func_169(Local_14.f_3, 41788943);
+			func_169(Local_14.f_3, joaat("META_OUTFIT_DEFAULT"));
 		}
 		func_170(Local_14.f_3, 15);
 		iLocal_547 = PROPSET::_CREATE_PROPSET(iLocal_548, Var4, 5, Var4.f_3, 1200f, false, true);
@@ -1717,7 +1717,7 @@ int func_70(var uParam0)
 		VOLUME::_0x5B23DFF8E0948BB2(bLocal_557, 0);
 		VOLUME::_0xBE551C2CC421185D(bLocal_557, 1);
 		PED::_0x7C00CFC48A782DC0(bLocal_557, Local_14.f_3, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
-		func_171(&(Local_14.f_3), &uLocal_655, 161068336, 20f, -1082130432 /* Float: -1f */);
+		func_171(&(Local_14.f_3), &uLocal_655, joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW"), 20f, -1082130432 /* Float: -1f */);
 		PED::SET_PED_CONFIG_FLAG(Local_14.f_3, 344, true);
 		PED::_0x24C82EF607105FAA(Local_14.f_3, joaat("TIMID"));
 		func_172(bLocal_556, 0, 224, 0);
@@ -10461,7 +10461,7 @@ void func_399(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (func_472(bParam1))
 		{
-			func_169(bParam0, 41788943);
+			func_169(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -11209,7 +11209,7 @@ int func_441(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -12144,7 +12144,7 @@ void func_474(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

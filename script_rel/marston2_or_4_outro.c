@@ -586,11 +586,11 @@ int func_24(var uParam0)
 	}
 	func_58(1, 7);
 	func_59(1);
-	func_60(708233372);
-	func_60(-662428360);
-	func_60(-1140790226);
-	func_60(-1438431053);
-	func_60(-1588250921);
+	func_60(joaat("PHR_RANCH_HAND1"));
+	func_60(joaat("PHR_RANCH_HAND2"));
+	func_60(joaat("PHR_RANCH_HAND3"));
+	func_60(joaat("PHR_RANCH_HAND4"));
+	func_60(joaat("PHR_RANCH_HAND5"));
 	func_61(0);
 	return 1;
 }
@@ -2176,15 +2176,15 @@ int func_108(int iParam0)
 		case 10:
 			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return -1960060437;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return 1634371177;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
 			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return 683250525;
+			return joaat("PERSCHAR_COMP_SADIE");
 		case 12:
-			return -814958461;
+			return joaat("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -2259,15 +2259,15 @@ int func_112(int iParam0, bool bParam1)
 		case 8:
 			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return -1880884094;
+			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
 			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
 			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return -1094022447;
+			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return -1484815615;
+			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;
@@ -3626,7 +3626,7 @@ int func_155(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_225()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_241(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, -1054012177)) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_225()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_241(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_SLEEP_BED"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_226(iParam0, iVar0) || (fParam1 >= (func_242(iParam0) * func_242(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -7066,7 +7066,7 @@ int func_312(int iParam0)
 		case -2061583405:
 			return joaat("HATS");
 		case -525676072:
-			return 1249071452;
+			return joaat("MASKS_LARGE");
 		default:
 			break;
 	}

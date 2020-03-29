@@ -1465,7 +1465,7 @@ int func_5(var uParam0, var uParam1)
 					}
 					if (!TASK::_0x841475AC96E794D1(uParam0->f_8))
 					{
-						uParam0->f_8 = TASK::CREATE_SCENARIO_POINT(1579488576, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(uParam0->f_10, uParam0->f_9, func_73()), (uParam0->f_9 - 180f), 0, 0, 0);
+						uParam0->f_8 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_BARTENDER"), OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(uParam0->f_10, uParam0->f_9, func_73()), (uParam0->f_9 - 180f), 0, 0, 0);
 						TASK::_0xA7479FB665361EDB(uParam0->f_8, 0);
 						TASK::_0xE69FDA40AAC3EFC0(uParam0->f_8, 0);
 					}
@@ -1530,7 +1530,7 @@ int func_5(var uParam0, var uParam1)
 					if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 264094903))
 					{
 						uParam0->f_157[5 /*4*/] = PED::_0x4D0D2E3D8BC000EB(Global_34, "p_bottleBeer01x_PH_R_HAND", 1);
-						TASK::_TASK_ITEM_INTERACTION_2(Global_34, -24362764, &(uParam0->f_157[5 /*4*/]), joaat("P_BOTTLEBEER01X_PH_R_HAND"), 1587785400, 1, 0, -1082130432);
+						TASK::_TASK_ITEM_INTERACTION_2(Global_34, joaat("CONSUMABLE_SALOON_BEER"), &(uParam0->f_157[5 /*4*/]), joaat("P_BOTTLEBEER01X_PH_R_HAND"), 1587785400, 1, 0, -1082130432);
 						uParam0->f_157[5 /*4*/] = 0;
 					}
 					if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, -1763749661))
@@ -1582,9 +1582,9 @@ int func_5(var uParam0, var uParam1)
 					}
 					break;
 				case 2:
-					if (!PED::_0x68821369A2CEADD5(Global_34, -308722001))
+					if (!PED::_0x68821369A2CEADD5(Global_34, joaat("NO_DRINK_REORDER")))
 					{
-						PED::_0xD65FDC686A031C83(Global_34, -308722001, 2f);
+						PED::_0xD65FDC686A031C83(Global_34, joaat("NO_DRINK_REORDER"), 2f);
 						PED::_0x6D07B371E9439019(Global_34);
 					}
 					if (PED::_0xC488B8C0E52560D8(Global_34))
@@ -1661,7 +1661,7 @@ int func_5(var uParam0, var uParam1)
 						if (uParam0->f_224 == 1)
 						{
 							uParam0->f_157[5 /*4*/] = PED::_0x4D0D2E3D8BC000EB(Global_34, "p_bottleBeer01x_PH_R_HAND", 1);
-							TASK::_TASK_ITEM_INTERACTION_2(Global_34, -24362764, &(uParam0->f_157[5 /*4*/]), joaat("P_BOTTLEBEER01X_PH_R_HAND"), 1587785400, 1, 0, -1082130432);
+							TASK::_TASK_ITEM_INTERACTION_2(Global_34, joaat("CONSUMABLE_SALOON_BEER"), &(uParam0->f_157[5 /*4*/]), joaat("P_BOTTLEBEER01X_PH_R_HAND"), 1587785400, 1, 0, -1082130432);
 							ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(uParam0->f_157[5 /*4*/]);
 							uParam0->f_157[5 /*4*/] = 0;
 							PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 42, 1, 1);
@@ -1862,7 +1862,7 @@ int func_5(var uParam0, var uParam1)
 					POPULATION::_0x18262CAFEBB5FBE1(uParam0->f_238, 10208, 0, 0, -1, -1, 0);
 				}
 				func_17(uParam0->f_1, 2);
-				func_67(func_66(-1081285383), 1);
+				func_67(func_66(joaat("BAR_MEALS_CONSUMED")), 1);
 				func_87(&(uParam0->f_245), 1);
 				func_30(uParam0, 14);
 			}
@@ -1994,7 +1994,7 @@ int func_5(var uParam0, var uParam1)
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_157[5 /*4*/])))
 					{
-						TASK::_TASK_ITEM_INTERACTION_2(Global_34, -24362764, &(uParam0->f_157[5 /*4*/]), joaat("P_BOTTLEBEER01X_PH_R_HAND"), -664271430, 1, 0, 0f);
+						TASK::_TASK_ITEM_INTERACTION_2(Global_34, joaat("CONSUMABLE_SALOON_BEER"), &(uParam0->f_157[5 /*4*/]), joaat("P_BOTTLEBEER01X_PH_R_HAND"), -664271430, 1, 0, 0f);
 					}
 				}
 				else if (uParam0->f_211.f_2 == 5)
@@ -2124,7 +2124,7 @@ int func_5(var uParam0, var uParam1)
 					case 3:
 						uParam0->f_211 = { *(uParam0->f_24[6 /*12*/]) };
 						func_17(uParam0->f_1, 4);
-						uParam0->f_259 = 1406647490;
+						uParam0->f_259 = joaat("PLAYER_BARCUSTOMER_GRAB_BEER");
 						if (uParam0->f_225 == 2)
 						{
 							uParam0->f_211 = { *(uParam0->f_24[8 /*12*/]) };
@@ -2138,7 +2138,7 @@ int func_5(var uParam0, var uParam1)
 						iVar25 = &uParam0->f_622.f_332[2];
 						break;
 					case 2:
-						uParam0->f_259 = -1017213009;
+						uParam0->f_259 = joaat("PLAYER_GRAB_WHISKEY");
 						uParam0->f_211 = { *(uParam0->f_24[7 /*12*/]) };
 						func_17(uParam0->f_1, 8);
 						if (uParam0->f_225 == 1 || uParam0->f_225 == 3)
@@ -3471,15 +3471,15 @@ void func_25(var uParam0, var uParam1)
 	if (*uParam0 == 6)
 	{
 		func_26(&(uParam0->f_622), 2);
-		func_168(&(uParam0->f_622), func_60(uParam0, 4), 0, -24362764 /* GXTEntry: "Beer" */, -368374107);
+		func_168(&(uParam0->f_622), func_60(uParam0, 4), 0, joaat("CONSUMABLE_SALOON_BEER"), joaat("CONSUMABLE_SALOON_WHISKEY"));
 	}
 	else if (!func_165(*uParam0))
 	{
-		func_168(&(uParam0->f_622), 0, 0, -24362764 /* GXTEntry: "Beer" */, -368374107);
+		func_168(&(uParam0->f_622), 0, 0, joaat("CONSUMABLE_SALOON_BEER"), joaat("CONSUMABLE_SALOON_WHISKEY"));
 	}
 	else
 	{
-		func_168(&(uParam0->f_622), func_60(uParam0, 4), func_60(uParam0, 5), -24362764 /* GXTEntry: "Beer" */, -368374107);
+		func_168(&(uParam0->f_622), func_60(uParam0, 4), func_60(uParam0, 5), joaat("CONSUMABLE_SALOON_BEER"), joaat("CONSUMABLE_SALOON_WHISKEY"));
 	}
 	uParam0->f_244 = 0;
 	if (func_35(uParam0->f_237))
@@ -4449,11 +4449,11 @@ int func_60(var uParam0, int iParam1)
 			switch (iParam1)
 			{
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4464,11 +4464,11 @@ int func_60(var uParam0, int iParam1)
 				case 4:
 					return 567164682 /* GXTEntry: "Oatmeal" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4481,11 +4481,11 @@ int func_60(var uParam0, int iParam1)
 				case 5:
 					return -1403873319 /* GXTEntry: "Prairie Chicken" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4498,11 +4498,11 @@ int func_60(var uParam0, int iParam1)
 				case 5:
 					return -1939600995 /* GXTEntry: "Prime Rib" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4515,11 +4515,11 @@ int func_60(var uParam0, int iParam1)
 				case 5:
 					return 1955751248 /* GXTEntry: "Roast Beef" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4532,11 +4532,11 @@ int func_60(var uParam0, int iParam1)
 				case 5:
 					return -1505924449 /* GXTEntry: "Fried Catfish" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4549,11 +4549,11 @@ int func_60(var uParam0, int iParam1)
 				case 5:
 					return -1335566375 /* GXTEntry: "Lamb Fry" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -4566,11 +4566,11 @@ int func_60(var uParam0, int iParam1)
 				case 5:
 					return -2034071102 /* GXTEntry: "Lamb Heart" */;
 				case 1:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				case 2:
-					return -368374107;
+					return joaat("CONSUMABLE_SALOON_WHISKEY");
 				case 3:
-					return -24362764 /* GXTEntry: "Beer" */;
+					return joaat("CONSUMABLE_SALOON_BEER");
 				default:
 					break;
 			}
@@ -6101,7 +6101,7 @@ void func_109(var uParam0)
 	}
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 574156416))
 	{
-		PED::_0xD65FDC686A031C83(Global_34, -872596011, 3f);
+		PED::_0xD65FDC686A031C83(Global_34, joaat("PLAYER_BARCUSTOMER_RETURN_BEER"), 3f);
 		PED::_0x6D07B371E9439019(Global_34);
 		func_71();
 	}
@@ -6120,7 +6120,7 @@ void func_109(var uParam0)
 		uParam0->f_265.f_1 = 0;
 		if (uParam0->f_224 == 1 || uParam0->f_224 == 3)
 		{
-			PED::_0xD65FDC686A031C83(Global_34, -872596011, 1f);
+			PED::_0xD65FDC686A031C83(Global_34, joaat("PLAYER_BARCUSTOMER_RETURN_BEER"), 1f);
 			PED::_0x6D07B371E9439019(Global_34);
 			func_71();
 		}
@@ -9280,7 +9280,7 @@ void func_216(int iParam0)
 		iParam0 = func_92();
 	}
 	MONEY::_MONEY_DECREMENT_CASH_BALANCE(iParam0);
-	Var0 = { func_66(1644987397) };
+	Var0 = { func_66(joaat("CAREER_CASH")) };
 	STATS::_0xBD861AE8A5181ED7(&Var0, iParam0);
 }
 
@@ -10116,14 +10116,14 @@ void func_246(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	}
 	if (func_2() == -1)
 	{
-		if (iParam0 == -1976480343)
+		if (iParam0 == joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED"))
 		{
 			func_67(func_69(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam1)
 	{
-		func_67(func_66(704570463), 1);
+		func_67(func_66(joaat("DEADEYE_ITEMS_USED")), 1);
 	}
 	func_405(iParam0, iParam3);
 }
@@ -11258,7 +11258,7 @@ int func_300(int iParam0)
 	iVar0 = func_345(Global_34, 1, 0, 0);
 	if (iVar0 != joaat("WEAPON_UNARMED"))
 	{
-		if (iVar0 != 1549070292 && (func_444(iVar0) || func_234(iVar0, -1653669750)))
+		if (iVar0 != joaat("OBJECT_1") && (func_444(iVar0) || func_234(iVar0, -1653669750)))
 		{
 			return 0;
 		}
@@ -12717,7 +12717,7 @@ int func_346(int iParam0)
 	int iVar0;
 
 	iVar0 = func_345(Global_34, 1, 0, 0);
-	if (((iVar0 != 1549070292 && (func_444(iVar0) || func_234(iVar0, -1653669750))) && !(*iParam0 == 6 && func_499(iParam0))) && !(WEAPON::_0x6ABAD7B0A854F8FB(iVar0) || WEAPON::_0x49E40483948AF062(iVar0)))
+	if (((iVar0 != joaat("OBJECT_1") && (func_444(iVar0) || func_234(iVar0, -1653669750))) && !(*iParam0 == 6 && func_499(iParam0))) && !(WEAPON::_0x6ABAD7B0A854F8FB(iVar0) || WEAPON::_0x49E40483948AF062(iVar0)))
 	{
 		return 1;
 	}
@@ -13698,15 +13698,15 @@ int func_380(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = -24362764; /* GXTEntry: "Beer" */
+	iVar0 = joaat("CONSUMABLE_SALOON_BEER");
 	switch (iParam0)
 	{
 		case 1:
 		case 3:
-			iVar0 = -24362764; /* GXTEntry: "Beer" */
+			iVar0 = joaat("CONSUMABLE_SALOON_BEER");
 			break;
 		case 2:
-			iVar0 = -368374107;
+			iVar0 = joaat("CONSUMABLE_SALOON_WHISKEY");
 			break;
 	}
 	return iVar0;
@@ -13727,10 +13727,10 @@ float func_382(int iParam0)
 
 	switch (iParam0)
 	{
-		case -24362764: /* GXTEntry: "Beer" */
+		case joaat("CONSUMABLE_SALOON_BEER"):
 			fVar0 = 0.025f;
 			break;
-		case -368374107:
+		case joaat("CONSUMABLE_SALOON_WHISKEY"):
 			fVar0 = 0.025f;
 			break;
 		default:
@@ -14369,31 +14369,31 @@ void func_405(int iParam0, int iParam1)
 		}
 		if (func_234(iParam0, -136654233))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -609313610, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_CANNEDGOODSEATEN_00"), 1);
 		}
 		if ((func_234(iParam0, 1765172170) || 1443104131 == iVar0) || -1919515848 == iVar0)
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 733633210, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_TOBACCOSMOKEDCHEWED_00"), 1);
 		}
 		if (func_234(iParam0, 1573112293))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -1274788474, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_HERBSTASTED_00"), 1);
 		}
 		if (func_234(iParam0, -2085281117) && !func_234(iParam0, -1237028043))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -1456129530, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_FRESHPRODUCEEATEN_00"), 1);
 		}
 		if (func_234(iParam0, 200705431))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1380824593, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_DRYGOODSEATEN_00"), 1);
 		}
 		if (((func_234(iParam0, joaat("CI_TAG_ITEM_MEAT_ANIMAL")) || func_234(iParam0, -839724752)) || func_234(iParam0, 1264218912)) || iParam0 == joaat("CONSUMABLE_OFFAL"))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 381139323, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_MEATEATEN_00"), 1);
 		}
 		if (func_234(iParam0, -764700608))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1844266867, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_TONICOILUSED_00"), 1);
 		}
 	}
 }
@@ -17878,9 +17878,9 @@ int func_525(bool bParam0, int iParam1, var uParam2)
 
 void func_526(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 bool func_527()
@@ -24579,83 +24579,83 @@ void func_714(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;

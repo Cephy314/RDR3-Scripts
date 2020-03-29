@@ -8890,14 +8890,14 @@ int func_397(int iParam0)
 	}
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
 	iParam0 = NETWORK::GET_UNIQUE_INT_FOR_PLAYER(&(Global_1275573->f_154[iParam0]));
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
-	iVar0 = 623901053;
+	iVar0 = joaat("REL_NO_RELATIONSHIP");
 	switch (iParam0)
 	{
 		case 0:
@@ -12060,7 +12060,7 @@ int func_486(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -12072,7 +12072,7 @@ int func_486(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;
@@ -66400,7 +66400,7 @@ void func_1019()
 		{
 			(Global_3145858->f_6742[iVar0 /*33*/])->f_17 = joaat("PICKUP_WEAPON_RIFLE_VARMINT_MP");
 		}
-		if (!DLC::IS_DLC_PRESENT(593192905) && !DLC::IS_DLC_PRESENT(2106296953))
+		if (!DLC::IS_DLC_PRESENT(593192905) && !DLC::IS_DLC_PRESENT(joaat("MP001")))
 		{
 			if ((Global_3145858->f_6742[iVar0 /*33*/])->f_17 == 2040103540)
 			{
@@ -69893,11 +69893,11 @@ void func_1075(var uParam0, var uParam1)
 				}
 				else if (iVar1 <= 2)
 				{
-					(Global_524288->f_40188[iVar0 /*331*/])->f_189 = 1753096650;
+					(Global_524288->f_40188[iVar0 /*331*/])->f_189 = joaat("PLAYER_FOCUS_TIMING");
 				}
 				else
 				{
-					(Global_524288->f_40188[iVar0 /*331*/])->f_189 = 1891588183;
+					(Global_524288->f_40188[iVar0 /*331*/])->f_189 = joaat("PLAYER_REACTION_TIMING");
 				}
 				func_1166(uParam0);
 			}

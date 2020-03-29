@@ -230,7 +230,7 @@ int func_6(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1605488611:
+		case joaat("WB_DISCO_GEYSER"):
 			return 1351526287;
 		default:
 			break;
@@ -521,7 +521,7 @@ void func_16(int iParam0, int iParam1)
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_13[iParam0 /*10*/])->f_8, "Erupt", 1f, false);
 				if (Local_13.f_33 == 0)
 				{
-					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-998484125, func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
+					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_34)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_34)))
 				{
@@ -538,7 +538,7 @@ void func_16(int iParam0, int iParam1)
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_13[iParam0 /*10*/])->f_8, "Erupt", 1f, false);
 				if (Local_13.f_33 == 0)
 				{
-					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(-998484125, func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
+					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_34)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_34)))
 				{

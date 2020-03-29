@@ -3113,8 +3113,8 @@ int func_72(var uParam0)
 	iLocal_18 = func_154(uParam0, "script@vignette@dutch_and_hosea_4@action_b", 0, 0, 0, 0);
 	iLocal_19 = func_154(uParam0, "script@vignette@dutch_and_hosea_4@action_b_alt", 0, 0, 0, 1);
 	func_155(uParam0, "CCDH4AU");
-	func_156(uParam0, iLocal_14, 2, -787460071, "SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING_MALE_A", -1, 0);
-	func_157(uParam0, iLocal_14, 2, -787460071, "SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING_MALE_A", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
+	func_156(uParam0, iLocal_14, 2, joaat("SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING"), "SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING_MALE_A", -1, 0);
+	func_157(uParam0, iLocal_14, 2, joaat("SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING"), "SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING_MALE_A", -1, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
 	func_158(uParam0, iLocal_14, iLocal_16, "p_cs_bookEvelynMiller_PH_R_HAND", 0, 0);
 	func_159(uParam0, iLocal_15, 2, 1, 0, 0, 0);
 	Local_20 = { func_160(uParam0, -1.2233f, 0.4f, 1.0699f, 177.84f, 9f, 0.41f, 0.38f) };
@@ -3405,7 +3405,7 @@ int func_93(var uParam0)
 	{
 		if (func_199(uParam0, Local_20, 1, 0) || func_199(uParam0, Local_30, 1, 0))
 		{
-			func_200(uParam0, 383097382, 2055271530);
+			func_200(uParam0, joaat("COMP_DNHCNV4"), joaat("PLAYER_DNHCNV4"));
 			func_201(uParam0, iLocal_14, 1, -1);
 			func_190(uParam0, iLocal_19, 1);
 		}
@@ -6383,15 +6383,15 @@ int func_212(int iParam0, bool bParam1)
 		case 8:
 			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return -1880884094;
+			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
 			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
 			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return -1094022447;
+			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return -1484815615;
+			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;
@@ -6932,7 +6932,7 @@ int func_248()
 
 int func_249()
 {
-	if (PED::_0x34D6AC1157C8226C(Global_35, 1855656219) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("OBJECTEXCHANGE")))
+	if (PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_OPEN_CASHBOX")) && ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("OBJECTEXCHANGE")))
 	{
 		return 1;
 	}
@@ -8450,15 +8450,15 @@ int func_272(int iParam0)
 		case 10:
 			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return -1960060437;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return 1634371177;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
 			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return 683250525;
+			return joaat("PERSCHAR_COMP_SADIE");
 		case 12:
-			return -814958461;
+			return joaat("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -9951,7 +9951,7 @@ void func_337(bool bParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		if (func_371(iParam1))
 		{
-			func_372(bParam0, 41788943);
+			func_372(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -11052,7 +11052,7 @@ void func_374(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -14669,7 +14669,7 @@ int func_442(bool bParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(bParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(bParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -14705,7 +14705,7 @@ int func_445(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 178615350:
-			return 331645018;
+			return joaat("META_OUTFIT_COLD_WEATHER");
 		case 2094043703:
 			return -1395382793;
 		case -695701225:
@@ -14777,7 +14777,7 @@ int func_445(int iParam0, int iParam1)
 		case -1678882891:
 			return -1638703055;
 		case -268604689:
-			return -1496612359;
+			return joaat("META_OUTFIT_COOL_WEATHER");
 		case 1818898449:
 			return 30596609;
 		case -922193456:
@@ -14785,7 +14785,7 @@ int func_445(int iParam0, int iParam1)
 			{
 				case 24:
 				case 25:
-					return 41788943;
+					return joaat("META_OUTFIT_DEFAULT");
 				default:
 					break;
 			}
@@ -14871,9 +14871,9 @@ int func_445(int iParam0, int iParam1)
 		case 867156718:
 			return 241911854;
 		case -426171916:
-			return 41788943;
+			return joaat("META_OUTFIT_DEFAULT");
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 void func_446(int iParam0, bool bParam1, bool bParam2)
@@ -14882,9 +14882,9 @@ void func_446(int iParam0, bool bParam1, bool bParam2)
 	{
 		return;
 	}
-	if (PED::_0xFB4891BD7578CDC1(bParam1, 1933068772))
+	if (PED::_0xFB4891BD7578CDC1(bParam1, joaat("WEARABLE_MASKS")))
 	{
-		PED::_0xD710A5007C2AC539(bParam1, 1933068772, 1);
+		PED::_0xD710A5007C2AC539(bParam1, joaat("WEARABLE_MASKS"), 1);
 	}
 	if (PED::_0xFB4891BD7578CDC1(bParam1, 494009478))
 	{
@@ -15262,7 +15262,7 @@ bool func_452(int iParam0, int iParam1)
 
 int func_453(int iParam0)
 {
-	return 1268180497;
+	return joaat("META_HORSE_SADDLE_ONLY");
 }
 
 int func_454(int iParam0)
@@ -15535,7 +15535,7 @@ int func_465(int iParam0)
 	switch (iParam0)
 	{
 		case -268604689:
-			return -1496612359;
+			return joaat("META_OUTFIT_COOL_WEATHER");
 		case -1632589543:
 			return 1052055818;
 		case -1862464078:
@@ -15551,7 +15551,7 @@ int func_465(int iParam0)
 		default:
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 void func_466(int iParam0, int iParam1)

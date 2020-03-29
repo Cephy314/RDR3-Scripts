@@ -105,7 +105,7 @@ void func_6()
 			case joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER"):
 				func_14(-241345764 /* GXTEntry: "Almonds" */, 1);
 				break;
-			case 1637554487:
+			case joaat("PROP_PLAYER_EAT_PICKLED_EGG"):
 				func_14(-1735850413 /* GXTEntry: "Pickled Egg" */, 1);
 				break;
 		}
@@ -363,7 +363,7 @@ void func_14(int iParam0, bool bParam1)
 		}
 		if (bVar40)
 		{
-			func_49(func_48(704570463), 1);
+			func_49(func_48(joaat("DEADEYE_ITEMS_USED")), 1);
 		}
 		PLAYER::_0x0E1DB1F8F5B561DC(fVar30, fVar32, fVar31, BUILTIN::ROUND((fVar33 / 2f)), BUILTIN::ROUND((fVar35 / 2f)), BUILTIN::ROUND((fVar34 / 2f)));
 	}

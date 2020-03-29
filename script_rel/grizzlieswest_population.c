@@ -482,11 +482,11 @@ int func_20(var uParam0)
 	{
 		return 1;
 	}
-	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, 1379175797))
+	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, joaat("EVENT_ANIMAL_TAMING_CALLOUT")))
 	{
 		return 1;
 	}
-	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, 1312307149))
+	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, joaat("EVENT_PLAYER_IN_CLOSE_PROXIMITY_TO_HORSE")))
 	{
 		return 1;
 	}
@@ -1344,7 +1344,7 @@ int func_28(bool bParam0)
 
 bool func_29()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(99890643);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
 }
 
 int func_30(int iParam0)
@@ -1496,7 +1496,7 @@ void func_34(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		if (func_50(bParam1))
 		{
-			func_51(bParam0, 41788943);
+			func_51(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -1934,7 +1934,7 @@ void func_53(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

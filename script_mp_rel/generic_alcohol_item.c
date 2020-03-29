@@ -133,7 +133,7 @@ void __EntryFunction__()
 					{
 						if (iVar184 == 1342098323)
 						{
-							PED::_0xD65FDC686A031C83(Global_34, -1268666326, 1.5f);
+							PED::_0xD65FDC686A031C83(Global_34, joaat("A_WHISKEY_TRANS_GENERIC_A"), 1.5f);
 							PED::_0x6D07B371E9439019(Global_34);
 							func_12(&Var0, 4);
 						}
@@ -142,12 +142,12 @@ void __EntryFunction__()
 					{
 						if (TASK::_0x2D0571BB55879DA2(Global_34) != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 						{
-							PED::_0xD65FDC686A031C83(Global_34, -872596011, 3f);
+							PED::_0xD65FDC686A031C83(Global_34, joaat("PLAYER_BARCUSTOMER_RETURN_BEER"), 3f);
 							PED::_0x6D07B371E9439019(Global_34);
 						}
 						else
 						{
-							PED::_0xD65FDC686A031C83(Global_34, 1114994170, 1.5f);
+							PED::_0xD65FDC686A031C83(Global_34, joaat("A_BEER_TRANS_GENERIC_A"), 1.5f);
 							PED::_0x6D07B371E9439019(Global_34);
 						}
 						func_12(&Var0, 4);
@@ -248,11 +248,11 @@ float func_4(var uParam0, var uParam1)
 		case joaat("CONSUMABLE_RUM"):
 			fVar0 = 0.17f;
 			break;
-		case -24362764: /* GXTEntry: "Beer" */
+		case joaat("CONSUMABLE_SALOON_BEER"):
 			fVar0 = 0.025f;
 			uParam0->f_180 = 0;
 			break;
-		case -368374107:
+		case joaat("CONSUMABLE_SALOON_WHISKEY"):
 			fVar0 = 0.025f;
 			uParam0->f_180 = 0;
 			break;
@@ -309,13 +309,13 @@ float func_4(var uParam0, var uParam1)
 				iVar1 = ENTITY::GET_ENTITY_MODEL(*uParam1);
 				if (iVar1 == joaat("P_BOTTLEBEER01A"))
 				{
-					uParam0->f_2 = -24362764; /* GXTEntry: "Beer" */
+					uParam0->f_2 = joaat("CONSUMABLE_SALOON_BEER");
 					fVar0 = 0.025f;
 					uParam0->f_180 = 0;
 				}
 				else if (iVar1 == joaat("P_BOTTLEJD01X"))
 				{
-					uParam0->f_2 = -368374107;
+					uParam0->f_2 = joaat("CONSUMABLE_SALOON_WHISKEY");
 					fVar0 = 0.025f;
 					uParam0->f_180 = 0;
 				}
@@ -331,20 +331,20 @@ void func_5()
 	{
 		if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -664271430)
 		{
-			STREAMING::_REQUEST_CLIP_SET_BY_HASH(-1154614502);
+			STREAMING::_REQUEST_CLIP_SET_BY_HASH(joaat("MECH_DYNAMIC@PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE@ARTHUR@TRANS@A_BEER_TRANS_GENERIC_A"));
 		}
 		else
 		{
-			STREAMING::_REQUEST_CLIP_SET_BY_HASH(-1734420286);
+			STREAMING::_REQUEST_CLIP_SET_BY_HASH(joaat("MECH_DYNAMIC@PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE@ARTHUR@TRANS@A_WHISKEY_TRANS_GENERIC_A"));
 		}
 	}
 	else if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) == -664271430)
 	{
-		STREAMING::_REQUEST_CLIP_SET_BY_HASH(-56368229);
+		STREAMING::_REQUEST_CLIP_SET_BY_HASH(joaat("MP_AMB_PLAYER@PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE@MP_FEMALE_A@TRANS@A_BEER_TRANS_GENERIC_A"));
 	}
 	else
 	{
-		STREAMING::_REQUEST_CLIP_SET_BY_HASH(-756564139);
+		STREAMING::_REQUEST_CLIP_SET_BY_HASH(joaat("MP_AMB_PLAYER@PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE@MP_FEMALE_A@TRANS@A_WHISKEY_TRANS_GENERIC_A"));
 	}
 }
 
@@ -398,7 +398,7 @@ void func_7(var uParam0)
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 574156416))
 	{
 		PED::_0x6D07B371E9439019(Global_34);
-		PED::_0xD65FDC686A031C83(Global_34, 1114994170, 1.5f);
+		PED::_0xD65FDC686A031C83(Global_34, joaat("A_BEER_TRANS_GENERIC_A"), 1.5f);
 	}
 }
 
@@ -407,7 +407,7 @@ void func_8(var uParam0)
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_34, 574156416))
 	{
 		PED::_0x6D07B371E9439019(Global_34);
-		PED::_0xD65FDC686A031C83(Global_34, -1268666326, 1.5f);
+		PED::_0xD65FDC686A031C83(Global_34, joaat("A_WHISKEY_TRANS_GENERIC_A"), 1.5f);
 	}
 }
 
@@ -1044,14 +1044,14 @@ void func_36(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	}
 	if (func_18() == -1)
 	{
-		if (iParam0 == -1976480343)
+		if (iParam0 == joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED"))
 		{
 			func_67(func_70(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam1)
 	{
-		func_67(func_66(704570463), 1);
+		func_67(func_66(joaat("DEADEYE_ITEMS_USED")), 1);
 	}
 	func_71(iParam0, iParam3);
 }
@@ -1856,31 +1856,31 @@ void func_71(int iParam0, int iParam1)
 		}
 		if (func_20(iParam0, -136654233))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -609313610, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_CANNEDGOODSEATEN_00"), 1);
 		}
 		if ((func_20(iParam0, 1765172170) || 1443104131 == iVar0) || -1919515848 == iVar0)
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 733633210, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_TOBACCOSMOKEDCHEWED_00"), 1);
 		}
 		if (func_20(iParam0, 1573112293))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -1274788474, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_HERBSTASTED_00"), 1);
 		}
 		if (func_20(iParam0, -2085281117) && !func_20(iParam0, -1237028043))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -1456129530, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_FRESHPRODUCEEATEN_00"), 1);
 		}
 		if (func_20(iParam0, 200705431))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1380824593, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_DRYGOODSEATEN_00"), 1);
 		}
 		if (((func_20(iParam0, joaat("CI_TAG_ITEM_MEAT_ANIMAL")) || func_20(iParam0, -839724752)) || func_20(iParam0, 1264218912)) || iParam0 == joaat("CONSUMABLE_OFFAL"))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 381139323, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_MEATEATEN_00"), 1);
 		}
 		if (func_20(iParam0, -764700608))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1844266867, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_TONICOILUSED_00"), 1);
 		}
 	}
 }

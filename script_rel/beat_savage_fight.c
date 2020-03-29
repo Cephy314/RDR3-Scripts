@@ -523,7 +523,7 @@ void __EntryFunction__()
 	vLocal_451 = { 0f, 0f, 0f };
 	vLocal_454 = { 0f, 0f, 0f };
 	iLocal_460 = 1;
-	iLocal_462 = 623901053;
+	iLocal_462 = joaat("REL_NO_RELATIONSHIP");
 	fLocal_856 = 0f;
 	iLocal_1263 = -1;
 	bVar0 = false;
@@ -667,7 +667,7 @@ void func_1()
 	func_38();
 	func_39(54);
 	func_40(Global_1935630, 4);
-	func_41(-2048655016);
+	func_41(joaat("SC_WORLD_HUMAN_KNEELING"));
 	func_42(&uLocal_1257, 106);
 	func_43();
 	func_44(1073741824 /* Float: 2f */);
@@ -855,7 +855,7 @@ int func_9()
 				func_79(&Local_659);
 				STREAMING::REQUEST_ANIM_DICT(func_80());
 				PROPSET::_REQUEST_PROPSET(joaat("PG_RE_SAVAGEFIGHT01X"));
-				if (!func_81(-2048655016, 1, (Local_497[0 /*32*/])->f_1, 0))
+				if (!func_81(joaat("SC_WORLD_HUMAN_KNEELING"), 1, (Local_497[0 /*32*/])->f_1, 0))
 				{
 				}
 				WEAPON::_0x72D4CB5DB927009C(joaat("WEAPON_BOW"), -1, 0);
@@ -885,7 +885,7 @@ int func_9()
 			{
 				return 0;
 			}
-			if (!func_85(-2048655016))
+			if (!func_85(joaat("SC_WORLD_HUMAN_KNEELING")))
 			{
 				return 0;
 			}
@@ -7664,14 +7664,14 @@ int func_241(var uParam0)
 			return 0;
 		}
 	}
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
 			uParam0->f_5 = PED::_REQUEST_METAPED_OUTFIT(uParam0->f_1, uParam0->f_3);
 			if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 			{
-				uParam0->f_3 = 41788943;
+				uParam0->f_3 = joaat("META_OUTFIT_DEFAULT");
 			}
 			return 0;
 		}
@@ -8859,7 +8859,7 @@ int func_276(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -10718,7 +10718,7 @@ int func_336(int iParam0)
 				}
 				else if (ENTITY::IS_ENTITY_PLAYING_ANIM(&(uLocal_469[0]), "script_re@campfire_massacre", "cry_idle_man", 1))
 				{
-					func_558(&(uLocal_469[0]), -2048655016, -1, 0, 124012004, -1082130432 /* Float: -1f */);
+					func_558(&(uLocal_469[0]), joaat("SC_WORLD_HUMAN_KNEELING"), -1, 0, joaat("SCRIPT_COMMON_KNEEL_MOURNING_MALE_A"), -1082130432 /* Float: -1f */);
 					iLocal_467 = 9;
 					return 0;
 				}
@@ -10802,7 +10802,7 @@ int func_336(int iParam0)
 							func_309(&(uLocal_469[0]), &(iLocal_472[1]));
 							func_309(&(uLocal_469[0]), &(iLocal_472[2]));
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_208);
-							if (func_565() || ENTITY::HAS_ANIM_EVENT_FIRED(&(uLocal_469[0]), 1651887863))
+							if (func_565() || ENTITY::HAS_ANIM_EVENT_FIRED(&(uLocal_469[0]), joaat("COMBATBREAKOUT")))
 							{
 								TASK::TASK_PLAY_ANIM(0, "SCRIPT_RE@CAMPFIRE_MASSACRE", "BREAKOUT_THUG_A", 4f, -4f, -1, 0, 0f, false, 0, false, 0, false);
 								iLocal_1263++;
@@ -11191,7 +11191,7 @@ int func_336(int iParam0)
 				{
 					TASK::TASK_PLAY_ANIM(0, "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_BREAKOUT_MAN", 2f, -8f, -1, 0, 0f, false, 0, false, 0, false);
 				}
-				else if (PED::_0x34D6AC1157C8226C(&(uLocal_469[0]), -2048655016))
+				else if (PED::_0x34D6AC1157C8226C(&(uLocal_469[0]), joaat("SC_WORLD_HUMAN_KNEELING")))
 				{
 					PED::_0xF1C03A5352243A30(&(uLocal_469[0]));
 					TASK::TASK_PLAY_ANIM(0, "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_BREAKOUT_MAN", 16f, -8f, -1, 0, 0f, false, 0, false, 0, false);
@@ -11226,7 +11226,7 @@ int func_336(int iParam0)
 				{
 					TASK::TASK_PLAY_ANIM(&(uLocal_469[0]), "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_GETUP_MAN", 2f, -2f, -1, 0, 0f, false, 0, false, 0, false);
 				}
-				else if (PED::_0x34D6AC1157C8226C(&(uLocal_469[0]), -2048655016))
+				else if (PED::_0x34D6AC1157C8226C(&(uLocal_469[0]), joaat("SC_WORLD_HUMAN_KNEELING")))
 				{
 					PED::_0xF1C03A5352243A30(&(uLocal_469[0]));
 					TASK::TASK_PLAY_ANIM(&(uLocal_469[0]), "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_GETUP_MAN", 16f, -2f, -1, 8192, 0f, false, 0, false, 0, false);
@@ -12943,19 +12943,19 @@ int func_389(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case joaat("HORSE_CLASS_RIDING"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_DRAFT"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_DRAFT"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_RACE"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RACE"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WAR"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WAR"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		case joaat("HORSE_CLASS_WORK"):
-			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, -1190799868, bParam1, false, 0f, 0f, 0f);
+			return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_WORK"), 0, joaat("SPECIES_HORSE"), bParam1, false, 0f, 0f, 0f);
 		default:
 			break;
 	}
-	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, -1190799868, true, false, 0f, 0f, 0f);
+	return POPULATION::GET_RANDOM_MODEL_FROM_POPULATION_SET(joaat("HORSE_TYPE_RIDING"), 0, joaat("SPECIES_HORSE"), true, false, 0f, 0f, 0f);
 }
 
 void func_390(var uParam0, char* sParam1, char* sParam2, char* sParam3, bool bParam4)
@@ -14819,7 +14819,7 @@ int func_428(int iParam0, var uParam1, vector3 vParam2, bool bParam5, bool bPara
 			PED::SET_PED_CONFIG_FLAG(iVar0, 4, func_655(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 297, !func_656(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 317, !func_656(&(uParam1->f_22)));
-			if (uParam1->f_31 != 623901053)
+			if (uParam1->f_31 != joaat("REL_NO_RELATIONSHIP"))
 			{
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, uParam1->f_31);
 			}
@@ -15157,7 +15157,7 @@ int func_445(int iParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(iParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(iParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -17892,7 +17892,7 @@ void func_557()
 	}
 	TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, &(uLocal_469[1]), 0, -1082130432, -1082130432, -1082130432);
 	TASK::TASK_PLAY_ANIM(0, "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_ENTER_MAN", 4f, -1000f, -1, 16384, 0f, false, 0, false, 0, false);
-	func_558(0, -2048655016, -1, 0, 124012004, -1082130432 /* Float: -1f */);
+	func_558(0, joaat("SC_WORLD_HUMAN_KNEELING"), -1, 0, joaat("SCRIPT_COMMON_KNEEL_MOURNING_MALE_A"), -1082130432 /* Float: -1f */);
 	func_45(&(uLocal_469[0]), &iLocal_208, 0, 0, 1, 1);
 }
 
@@ -19121,7 +19121,7 @@ int func_613(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (iVar0 == -816321659 && Global_1572887->f_12 != -1)
+	if (iVar0 == joaat("SP_ACHIEVEMENTS") && Global_1572887->f_12 != -1)
 	{
 		return 0;
 	}
@@ -19188,7 +19188,7 @@ int func_617(int iParam0, int iParam1, bool bParam2)
 			{
 				TASK::TASK_PLAY_ANIM(0, "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_GETUP_MAN", 2f, -2f, -1, 0, 0f, false, 0, false, 0, false);
 			}
-			else if (PED::_0x34D6AC1157C8226C(&(uLocal_469[0]), -2048655016))
+			else if (PED::_0x34D6AC1157C8226C(&(uLocal_469[0]), joaat("SC_WORLD_HUMAN_KNEELING")))
 			{
 				PED::_0xF1C03A5352243A30(&(uLocal_469[0]));
 				TASK::TASK_PLAY_ANIM(0, "SCRIPT_RE@CAMPFIRE_MASSACRE", "CRY_GETUP_MAN", 16f, -2f, -1, 0, 0f, false, 0, false, 0, false);
@@ -19754,7 +19754,7 @@ int func_643(var uParam0, var uParam1)
 
 int func_644(var uParam0)
 {
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
@@ -23784,7 +23784,7 @@ void func_777(int iParam0, bool bParam1)
 
 void func_778(int iParam0)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-156028329, iParam0);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("HONORMETERVALUE"), iParam0);
 }
 
 char* func_779(int iParam0)
@@ -23954,9 +23954,9 @@ int func_785()
 
 void func_786(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 int func_787(int iParam0)
@@ -23987,72 +23987,72 @@ int func_789(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = -816321659;
-			*iParam2 = -987026056;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP1");
 			break;
 		case 1:
-			*iParam1 = -816321659;
-			*iParam2 = -1822602787;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP2");
 			break;
 		case 2:
-			*iParam1 = -816321659;
-			*iParam2 = -1602329569;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP3");
 			break;
 		case 3:
-			*iParam1 = -816321659;
-			*iParam2 = 1881899898;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP4");
 			break;
 		case 4:
-			*iParam1 = -816321659;
-			*iParam2 = -1906196506;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP5");
 			break;
 		case 5:
-			*iParam1 = -816321659;
-			*iParam2 = -674995867;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_GOLDRUSH");
 			break;
 		case 6:
-			*iParam1 = -816321659;
-			*iParam2 = -734156617;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MINIGAMES");
 			break;
 		case 7:
-			*iParam1 = -816321659;
-			*iParam2 = 261758426;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_B_AND_E");
 			break;
 		case 8:
-			*iParam1 = -816321659;
-			*iParam2 = 1545586131;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RCKPT");
 			break;
 		case 9:
-			*iParam1 = -816321659;
-			*iParam2 = -489125522;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_TO_POOR");
 			break;
 		case 10:
-			*iParam1 = -816321659;
-			*iParam2 = 1190367681;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_HONOR");
 			break;
 		case 11:
-			*iParam1 = -816321659;
-			*iParam2 = -1179367301;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RC");
 			break;
 		case 12:
-			*iParam1 = -816321659;
-			*iParam2 = 1154513253;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BOUNTY");
 			break;
 		case 13:
-			*iParam1 = -816321659;
-			*iParam2 = -1825640214;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_UPGR_W");
 			break;
 		case 14:
-			*iParam1 = -816321659;
-			*iParam2 = 1209829059;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BEAR");
 			break;
 		case 15:
-			*iParam1 = -816321659;
-			*iParam2 = -1713230487;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_ART");
 			break;
 		case 16:
-			*iParam1 = -816321659;
-			*iParam2 = 2092309893;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_COLLECT");
 			break;
 		default:
 			return 0;
@@ -24607,7 +24607,7 @@ void func_809(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_888(iParam1))
 		{
-			func_889(iParam0, 41788943);
+			func_889(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -27034,7 +27034,7 @@ void func_891(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -27424,7 +27424,7 @@ var func_913(char[4] cParam0, char[4] cParam1, char[4] cParam2)
 
 void func_914(bool bParam0)
 {
-	COMPAPP::_0xB6FD96420C0126A1(-1056478928, bParam0);
+	COMPAPP::_0xB6FD96420C0126A1(joaat("HONORMETERVISIBLE"), bParam0);
 }
 
 bool func_915(int iParam0)

@@ -102,7 +102,7 @@ void __EntryFunction__()
 
 void func_1(var uParam0, vector3 vParam1)
 {
-	if (vParam1.z == 1260056893)
+	if (vParam1.z == joaat("WB_DIG_BURIED_RANDOM"))
 	{
 		if (!func_9(uParam0, 32))
 		{
@@ -2095,25 +2095,25 @@ int func_19(int iParam0)
 			return joaat("PROVISION_ARROWHEAD_SLATE");
 		case joaat("COLLECTIBLE_ARROWHEAD_SPLINTERED"):
 			return joaat("PROVISION_ARROWHEAD_SPLINTERED");
-		case -1132845243:
+		case joaat("COLLECTIBLE_HRLM_BRUSH_BOAR"):
 			return joaat("PROVISION_HRLM_BRUSH_BOAR");
-		case 1606281828:
+		case joaat("COLLECTIBLE_HRLM_BRUSH_EBONY"):
 			return joaat("PROVISION_HRLM_BRUSH_EBONY");
-		case 530382704:
+		case joaat("COLLECTIBLE_HRLM_BRUSH_GOATHAIR"):
 			return joaat("PROVISION_HRLM_BRUSH_GOATHAIR");
-		case -1519010704:
+		case joaat("COLLECTIBLE_HRLM_BRUSH_HORSEHAIR"):
 			return joaat("PROVISION_HRLM_BRUSH_HORSEHAIR");
-		case 520232109:
+		case joaat("COLLECTIBLE_HRLM_BRUSH_ROSEWOOD"):
 			return joaat("PROVISION_HRLM_BRUSH_ROSEWOOD");
-		case -364070233:
+		case joaat("COLLECTIBLE_HRLM_BRUSH_ROSEWOOD_NG"):
 			return joaat("PROVISION_HRLM_BRUSH_ROSEWOOD_NG");
-		case -1296260337:
+		case joaat("COLLECTIBLE_HRLM_COMB_BOXWOOD"):
 			return joaat("PROVISION_HRLM_COMB_BOXWOOD");
-		case 127681874:
+		case joaat("COLLECTIBLE_HRLM_COMB_CHERRYWOOD"):
 			return joaat("PROVISION_HRLM_COMB_CHERRYWOOD");
-		case 1290286961:
+		case joaat("COLLECTIBLE_HRLM_COMB_IVORY"):
 			return joaat("PROVISION_HRLM_COMB_IVORY");
-		case 1628530735:
+		case joaat("COLLECTIBLE_HRLM_COMB_TORTOISESHELL"):
 			return joaat("PROVISION_HRLM_COMB_TORTOISESHELL");
 		case joaat("COLLECTIBLE_HRLM_HAIRPIN_EBONY"):
 			return joaat("PROVISION_HRLM_HAIRPIN_EBONY");
@@ -2233,25 +2233,25 @@ int func_19(int iParam0)
 			return joaat("PROVISION_COIN_1800_GLD_QTR");
 		case joaat("COLLECTIBLE_COIN_1800_HLF_DIME"):
 			return joaat("PROVISION_COIN_1800_HLF_DIME");
-		case 521036731:
+		case joaat("COLLECTIBLE_EGG_CONDOR"):
 			return joaat("PROVISION_CONDOR_EGG");
-		case 1510925660:
+		case joaat("COLLECTIBLE_EGG_DUCK"):
 			return joaat("PROVISION_DUCK_EGG");
-		case -1667316569:
+		case joaat("COLLECTIBLE_EGG_EAGLE"):
 			return joaat("PROVISION_EAGLE_EGG");
-		case 875971115:
+		case joaat("COLLECTIBLE_EGG_EGRET"):
 			return joaat("PROVISION_EGRET_EGG");
-		case -1390165137:
+		case joaat("COLLECTIBLE_EGG_GOOSE"):
 			return joaat("PROVISION_GOOSE_EGG");
-		case 512666633:
+		case joaat("COLLECTIBLE_EGG_HAWK"):
 			return joaat("PROVISION_HAWK_EGG");
-		case 1056235591:
+		case joaat("COLLECTIBLE_EGG_HERON"):
 			return joaat("PROVISION_HERON_EGG");
-		case 1824947548:
+		case joaat("COLLECTIBLE_EGG_LOON"):
 			return joaat("PROVISION_LOON_EGG");
-		case -297415734:
+		case joaat("COLLECTIBLE_EGG_SPOONBILL"):
 			return joaat("PROVISION_SPOONBILL_EGG");
-		case -744964659:
+		case joaat("COLLECTIBLE_EGG_VULTURE"):
 			return joaat("PROVISION_VULTURE_EGG");
 		default:
 			break;
@@ -3328,11 +3328,11 @@ int func_67(var uParam0)
 		((*Global_1200815)[PLAYER::PLAYER_ID() /*9*/])->f_7 = 1;
 		if (func_9(uParam0, 1))
 		{
-			uParam0->f_28 = -990197142;
+			uParam0->f_28 = joaat("COLLECTIBLE_ITEMS_BURIED_MOUNDS");
 		}
 		else
 		{
-			uParam0->f_28 = -795783582;
+			uParam0->f_28 = joaat("COLLECTIBLE_ITEMS_BURIED_FLAT_GROUND");
 		}
 	}
 	while (!func_112(uParam0->f_28, &uVar0))
@@ -4270,7 +4270,7 @@ bool func_112(int iParam0, var uParam1)
 	struct<2> Var0;
 
 	Var0.f_1 = 10;
-	func_142(&Var0, 1356624740);
+	func_142(&Var0, joaat("LOOT_TYPE_NORMAL"));
 	return func_143(iParam0, &Var0, uParam1, 0);
 }
 
@@ -4769,24 +4769,24 @@ void func_142(var uParam0, int iParam1)
 		}
 		switch (iParam1)
 		{
-			case 291123060:
-			case 617531372:
-				if (&uParam0->f_1[iVar1] == 617531372 || &uParam0->f_1[iVar1] == 291123060)
+			case joaat("LOOTER_PED_IS_FEMALE"):
+			case joaat("LOOTER_PED_IS_MALE"):
+				if (&uParam0->f_1[iVar1] == joaat("LOOTER_PED_IS_MALE") || &uParam0->f_1[iVar1] == joaat("LOOTER_PED_IS_FEMALE"))
 				{
 					bVar0 = true;
 				}
 				break;
-			case 1356624740:
-			case 1884295263:
-				if (&uParam0->f_1[iVar1] == 1356624740 || &uParam0->f_1[iVar1] == 1884295263)
+			case joaat("LOOT_TYPE_NORMAL"):
+			case joaat("LOOT_TYPE_SKINNING"):
+				if (&uParam0->f_1[iVar1] == joaat("LOOT_TYPE_NORMAL") || &uParam0->f_1[iVar1] == joaat("LOOT_TYPE_SKINNING"))
 				{
 					bVar0 = true;
 				}
 				break;
-			case -1850666435:
-			case 1551239286:
-			case 1937393363:
-				if ((&uParam0->f_1[iVar1] == 1551239286 || &uParam0->f_1[iVar1] == -1850666435) || &uParam0->f_1[iVar1] == 1937393363)
+			case joaat("FISHING_RESULT_RUINED"):
+			case joaat("FISHING_RESULT_NORMAL"):
+			case joaat("FISHING_RESULT_LEGENDARY"):
+				if ((&uParam0->f_1[iVar1] == joaat("FISHING_RESULT_NORMAL") || &uParam0->f_1[iVar1] == joaat("FISHING_RESULT_RUINED")) || &uParam0->f_1[iVar1] == joaat("FISHING_RESULT_LEGENDARY"))
 				{
 					bVar0 = true;
 				}
@@ -5238,7 +5238,7 @@ int func_167(var uParam0)
 		case joaat("CONSUMABLE_CHEWING_TOBACCO_USED"):
 			*uParam0 = joaat("CONSUMABLE_CHEWING_TOBACCO");
 			break;
-		case -1424823393: /* GXTEntry: "Opened Cigarettes" */
+		case joaat("CONSUMABLE_CIGARETTE_BOX_USED"):
 			*uParam0 = joaat("CONSUMABLE_CIGARETTE_BOX");
 			break;
 		default:
@@ -5379,14 +5379,14 @@ int func_176(int iParam0, struct<4> Param1, int iParam5, bool bParam6, bool bPar
 
 void func_177(var uParam0)
 {
-	func_142(uParam0, 143479330);
+	func_142(uParam0, joaat("MULTIPLAYER_GAME"));
 	if (func_194() == 2026485318)
 	{
-		func_142(uParam0, 617531372);
+		func_142(uParam0, joaat("LOOTER_PED_IS_MALE"));
 	}
 	else
 	{
-		func_142(uParam0, 291123060);
+		func_142(uParam0, joaat("LOOTER_PED_IS_FEMALE"));
 	}
 }
 
@@ -5533,83 +5533,83 @@ void func_186(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;

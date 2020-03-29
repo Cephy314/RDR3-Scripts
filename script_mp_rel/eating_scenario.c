@@ -125,7 +125,7 @@ void func_6()
 			case joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER_NO_DOF"):
 				func_14(-241345764 /* GXTEntry: "Almonds" */);
 				break;
-			case 1637554487:
+			case joaat("PROP_PLAYER_EAT_PICKLED_EGG"):
 				func_14(-1735850413 /* GXTEntry: "Pickled Egg" */);
 				break;
 		}
@@ -342,11 +342,11 @@ void func_14(int iParam0)
 		}
 		if (bVar38)
 		{
-			func_41(func_40(704570463), 1);
+			func_41(func_40(joaat("DEADEYE_ITEMS_USED")), 1);
 		}
 		if (iParam0 == -241345764 || iParam0 == -1735850413)
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1517929953, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_SALOONSNACK_00"), 1);
 		}
 		PLAYER::_0x0E1DB1F8F5B561DC(uVar30, uVar32, uVar31, BUILTIN::ROUND((fVar33 / 2f)), BUILTIN::ROUND((fVar35 / 2f)), BUILTIN::ROUND((fVar34 / 2f)));
 	}

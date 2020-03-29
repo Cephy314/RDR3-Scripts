@@ -840,16 +840,16 @@ void func_30(int iParam0)
 {
 	switch (iParam0->f_7)
 	{
-		case -556299774:
+		case joaat("RANSACK_PROP_CHEST_MEDIUM_OPEN"):
 			iParam0->f_8 = 0;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -1844699338:
+		case joaat("RANSACK_PROP_CHEST_LARGE_OPEN"):
 			iParam0->f_8 = 1;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case 934878503:
-		case 1753153202:
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_OPEN_B"):
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_OPEN_A"):
 			if (ENTITY::GET_ENTITY_MODEL(iParam0->f_5) == joaat("P_MEDICINECHEST01X"))
 			{
 				iParam0->f_8 = 2;
@@ -860,147 +860,147 @@ void func_30(int iParam0)
 			}
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -1520256117:
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_MID_OPEN"):
 			iParam0->f_8 = 5;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -1023377132:
-		case -507789686:
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_OPEN_B"):
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_OPEN_A"):
 			iParam0->f_8 = 6;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -580247852:
+		case joaat("RANSACK_PROP_CUPBOARD_WIDE_HIGH_OPEN"):
 			iParam0->f_8 = 4;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case 675799862:
+		case joaat("RANSACK_PROP_CUPBOARD_WIDE_MID_OPEN"):
 			iParam0->f_8 = 9;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -529258369:
+		case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_OPEN"):
 			iParam0->f_8 = 10;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case 2050785088:
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_LEFT_OPEN"):
 			iParam0->f_8 = 7;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case 113259694:
+		case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_RIGHT_OPEN"):
 			iParam0->f_8 = 8;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case 1954699087:
+		case joaat("RANSACK_PROP_DRAWER_SINGLE_1_OPEN"):
 			iParam0->f_8 = 16;
 			iParam0->f_154 = func_54(iParam0, 0);
 			iParam0->f_4 = 1;
 			break;
-		case -832608606:
+		case joaat("RANSACK_PROP_DRAWER_SINGLE_2_OPEN"):
 			iParam0->f_8 = 16;
 			iParam0->f_154 = func_54(iParam0, 1);
 			iParam0->f_4 = 1;
 			break;
-		case -1198581396:
+		case joaat("RANSACK_PROP_DRAWER_SINGLE_3_OPEN"):
 			iParam0->f_8 = 16;
 			iParam0->f_154 = func_54(iParam0, 2);
 			iParam0->f_4 = 1;
 			break;
-		case -2092256791:
+		case joaat("RANSACK_PROP_DRAWER_SINGLE_4_OPEN"):
 			iParam0->f_8 = 16;
 			iParam0->f_154 = func_54(iParam0, 3);
 			iParam0->f_4 = 1;
 			break;
-		case -1350870117:
-		case -643955342:
-		case 425046062:
-		case 2113302033:
+		case joaat("RANSACK_ATTACHED_DS_12"):
+		case joaat("RANSACK_ATTACHED_DS_234"):
+		case joaat("RANSACK_ATTACHED_DS_23"):
+		case joaat("RANSACK_ATTACHED_DS_123"):
 			iParam0->f_8 = 16;
 			iParam0->f_154 = func_54(iParam0, 0);
 			iParam0->f_4 = 1;
 			break;
-		case 1021152268:
+		case joaat("RANSACK_PROP_DRAWER_DOUBLE_1_OPEN"):
 			iParam0->f_8 = 17;
 			iParam0->f_154 = func_54(iParam0, 4);
 			iParam0->f_4 = 1;
 			break;
-		case -658509002:
+		case joaat("RANSACK_PROP_DRAWER_DOUBLE_2_OPEN"):
 			iParam0->f_8 = 17;
 			iParam0->f_154 = func_54(iParam0, 5);
 			iParam0->f_4 = 1;
 			break;
-		case -519544825:
+		case joaat("RANSACK_PROP_DRAWER_DOUBLE_3_OPEN"):
 			iParam0->f_8 = 17;
 			iParam0->f_154 = func_54(iParam0, 6);
 			iParam0->f_4 = 1;
 			break;
-		case -1893910834:
+		case joaat("RANSACK_PROP_DRAWER_DOUBLE_4_OPEN"):
 			iParam0->f_8 = 17;
 			iParam0->f_154 = func_54(iParam0, 7);
 			iParam0->f_4 = 1;
 			break;
-		case -1384407567:
+		case joaat("RANSACK_ATTACHED_DD_123"):
 		case joaat("RANSACK_ATTACHED_DD_234"):
-		case -733157857:
-		case 1956439393:
+		case joaat("RANSACK_ATTACHED_DD_1234"):
+		case joaat("RANSACK_ATTACHED_DD_34"):
 			iParam0->f_8 = 17;
 			iParam0->f_154 = func_54(iParam0, 4);
 			iParam0->f_4 = 1;
 			break;
-		case -619465711:
-		case -380363474:
-		case -308358537:
-		case -235670490:
-		case -69078291:
-		case 434713043:
-		case 949215578:
-		case 1182859337:
-		case 1468081052:
-		case 1472197696:
-		case 1884809780:
-		case 1941854706:
-		case 1956408893:
-		case 1992236106:
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_1M05"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_1M05"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M0"):
 			iParam0->f_8 = 13;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -2132089563:
-		case -1050797783:
-		case -774297062:
-		case -602690338:
-		case -428719204:
-		case -426093511:
-		case -371405990:
-		case -280896888:
-		case 180206120:
-		case 322611816:
-		case 795742498:
-		case 990258706:
-		case 1532541314:
-		case 1824320289:
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_1M05"):
+		case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_1M05"):
 			iParam0->f_8 = 14;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -1980304607:
-		case -1146648371:
-		case -1003656747:
-		case -749434233:
-		case -99422178:
-		case 167092195:
-		case 419796913:
-		case 555612790:
-		case 837758692:
-		case 884959174:
-		case 1186922655:
-		case 1609966682:
-		case 1921610057:
-		case 1947556039:
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_1M05"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M60"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M80"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M45"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_1M05"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M0"):
+		case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M60"):
 			iParam0->f_8 = 15;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case 1681044150:
+		case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_LEFT_OPEN"):
 			iParam0->f_8 = 11;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;
-		case -419231450:
+		case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_RIGHT_OPEN"):
 			iParam0->f_8 = 12;
 			iParam0->f_154 = func_54(iParam0, -1);
 			break;

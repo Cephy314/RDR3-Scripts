@@ -1252,7 +1252,7 @@ int func_31()
 				func_97(&uLocal_1245);
 				func_98();
 				vVar0 = { func_99(&Local_355) };
-				iLocal_1188 = func_100(-1221061763, vVar0, 0f, 5f, 0, 0);
+				iLocal_1188 = func_100(joaat("WORLD_PLAYER_LOOKAT_POINT"), vVar0, 0f, 5f, 0, 0);
 				fLocal_1327 = 2f;
 				func_97(&uLocal_1324);
 				iLocal_1191 = 1;
@@ -3253,7 +3253,7 @@ void func_93()
 			{
 				PED::SET_PED_MAX_MOVE_BLEND_RATIO(iLocal_1223, 0f);
 				TASK::TASK_HORSE_ACTION(iLocal_1223, 5, 0, 0);
-				iLocal_1182 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(513747494, vLocal_15, -1f, -1f, -1f, -1082130432, -1082130432, -1, -1);
+				iLocal_1182 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_DANGEROUS"), vLocal_15, -1f, -1f, -1f, -1082130432, -1082130432, -1, -1);
 				AUDIO::_PLAY_SOUND_FROM_POSITION("creature_scream", vLocal_15, "RESSH_sounds", false, 0, true, 0);
 				if (!func_233(&uLocal_1263))
 				{
@@ -7040,7 +7040,7 @@ int func_184(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -13543,7 +13543,7 @@ void func_385(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_464(iParam1))
 		{
-			func_465(iParam0, 41788943);
+			func_465(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -15401,7 +15401,7 @@ void func_467(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

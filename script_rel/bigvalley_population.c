@@ -68,10 +68,10 @@ void __EntryFunction__()
 	}
 	else
 	{
-		PERSCHAR::_0x187D65F3AEC5D679(-402695257, "BigValley/BGV_Trapper_1");
-		if (PERSCHAR::_0x800DF3FC913355F3(PERSCHAR::_0x112DDF56300BC6E5(-402695257)))
+		PERSCHAR::_0x187D65F3AEC5D679(joaat("GLO_WILDERNESS_TRAPPER"), "BigValley/BGV_Trapper_1");
+		if (PERSCHAR::_0x800DF3FC913355F3(PERSCHAR::_0x112DDF56300BC6E5(joaat("GLO_WILDERNESS_TRAPPER"))))
 		{
-			PERSCHAR::_0xD4B614179BCD0654(PERSCHAR::_0x112DDF56300BC6E5(-402695257));
+			PERSCHAR::_0xD4B614179BCD0654(PERSCHAR::_0x112DDF56300BC6E5(joaat("GLO_WILDERNESS_TRAPPER")));
 		}
 	}
 	bVar0 = true;
@@ -110,7 +110,7 @@ void func_2()
 
 	vVar0 = { fLocal_26, fLocal_27, fLocal_28 };
 	vVar3 = { fLocal_29, fLocal_30, fLocal_31 };
-	FLOCK::_0xF2CCA7B68CFAB2B9(904876610, -1927.953f, 412.0278f, 180f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
+	FLOCK::_0xF2CCA7B68CFAB2B9(joaat("SPECIES_BIRD_CROW"), -1927.953f, 412.0278f, 180f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
 }
 
 void func_3()
@@ -284,7 +284,7 @@ void func_7()
 	}
 	if (func_27(8))
 	{
-		iVar0 = PERSCHAR::_0x112DDF56300BC6E5(-1452704117);
+		iVar0 = PERSCHAR::_0x112DDF56300BC6E5(joaat("BGV_PAI_RANCHHAND_01"));
 		iVar1 = PERSCHAR::_0x112DDF56300BC6E5(joaat("PAI_RANCHHAND_02"));
 		if (!PERSCHAR::_0x800DF3FC913355F3(iVar0) || !PERSCHAR::_0x800DF3FC913355F3(iVar1))
 		{
@@ -338,7 +338,7 @@ void func_7()
 void func_8()
 {
 	func_21(&uLocal_14);
-	FLOCK::_0xFB16F08F47B83B4C(904876610);
+	FLOCK::_0xFB16F08F47B83B4C(joaat("SPECIES_BIRD_CROW"));
 	if (func_5() == -1)
 	{
 		func_31();
@@ -650,11 +650,11 @@ int func_25(var uParam0)
 	{
 		return 1;
 	}
-	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, 1379175797))
+	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, joaat("EVENT_ANIMAL_TAMING_CALLOUT")))
 	{
 		return 1;
 	}
-	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, 1312307149))
+	if (PED::IS_PED_RESPONDING_TO_EVENT(uParam0->f_3, joaat("EVENT_PLAYER_IN_CLOSE_PROXIMITY_TO_HORSE")))
 	{
 		return 1;
 	}
@@ -823,7 +823,7 @@ int func_36(int iParam0)
 
 bool func_37()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(99890643);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_PC_TIMED_EXCLUSIVE"));
 }
 
 int func_38(int iParam0)
@@ -975,7 +975,7 @@ void func_42(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	{
 		if (func_60(iParam1))
 		{
-			func_61(iParam0, 41788943);
+			func_61(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -2203,7 +2203,7 @@ void func_63(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

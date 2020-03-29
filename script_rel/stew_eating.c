@@ -59,7 +59,7 @@ void __EntryFunction__()
 			}
 		}
 	}
-	STREAMING::_REQUEST_CLIP_SET_BY_HASH(-703333072);
+	STREAMING::_REQUEST_CLIP_SET_BY_HASH(joaat("MECH_DYNAMIC@PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE@ARTHUR@TRANS@A_STEW_TRANS_GENERIC_A"));
 	STREAMING::REQUEST_MODEL(joaat("P_SPOON01X_FOOD"), false);
 	Var0.f_1 = bVar180;
 	if (!ScriptParam_0.f_3)
@@ -165,7 +165,7 @@ void __EntryFunction__()
 					if (!func_9(-1))
 					{
 						PED::_0x6D07B371E9439019(Global_35);
-						PED::_0xD65FDC686A031C83(Global_35, -1134349867, 1.5f);
+						PED::_0xD65FDC686A031C83(Global_35, joaat("A_STEW_TRANS_GENERIC_A"), 1.5f);
 					}
 				}
 				break;
@@ -986,8 +986,8 @@ void func_34(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 		case joaat("CONSUMABLE_HORSE_MEDICINE_USED"):
 			func_70(func_73(joaat("USED"), joaat("HORSE_PILLS")), 1);
 			break;
-		case 433340626: /* GXTEntry: "Opened Cover Scent" */
-		case 1895068170: /* GXTEntry: "Cover Scent Lotion" */
+		case joaat("CONSUMABLE_COVER_SCENT_USED"):
+		case joaat("CONSUMABLE_COVER_SCENT"):
 			func_70(func_73(joaat("USED"), joaat("COVER_SCENT")), 1);
 			break;
 		case joaat("CONSUMABLE_HERBIVORE_BAIT"):
@@ -1001,14 +1001,14 @@ void func_34(bool bParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (func_45() == -1)
 	{
-		if (bParam0 == -1976480343)
+		if (bParam0 == joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED"))
 		{
 			func_70(func_73(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam2)
 	{
-		func_70(func_69(704570463), 1);
+		func_70(func_69(joaat("DEADEYE_ITEMS_USED")), 1);
 	}
 }
 

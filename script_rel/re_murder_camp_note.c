@@ -149,13 +149,13 @@ void func_6()
 				switch (iVar0)
 				{
 					case joaat("S_MAPROLLED01X"):
-						Local_5.f_15.f_2 = 2019023183; /* GXTEntry: "Killer Clue 1 Piece" */
+						Local_5.f_15.f_2 = joaat("DOCUMENT_SERIAL_KILLER_CLUE1");
 						break;
 					case joaat("S_MAPROLLED02X"):
-						Local_5.f_15.f_2 = -1043796944; /* GXTEntry: "Killer Clue 2 Piece" */
+						Local_5.f_15.f_2 = joaat("DOCUMENT_SERIAL_KILLER_CLUE2");
 						break;
 					case joaat("S_MAPROLLED03X"):
-						Local_5.f_15.f_2 = 1272643670; /* GXTEntry: "Killer Clue 3 Piece" */
+						Local_5.f_15.f_2 = joaat("DOCUMENT_SERIAL_KILLER_CLUE3");
 						break;
 					default:
 						break;
@@ -369,11 +369,11 @@ void func_17(int iParam0)
 
 void func_18()
 {
-	if (Local_5.f_30 == 1220378078)
+	if (Local_5.f_30 == joaat("PROP_PLAYER_RE_MURDER_CAMP_TREE_NOTE"))
 	{
 		StringCopy(&(Local_5.f_7), "script_re@murder_campfire@knife_note", 64);
 	}
-	else if (Local_5.f_30 == 579020276)
+	else if (Local_5.f_30 == joaat("PROP_PLAYER_RE_MURDER_CAMP_ROCK_NOTE"))
 	{
 		StringCopy(&(Local_5.f_7), "script_re@murder_campfire@head_note", 64);
 	}

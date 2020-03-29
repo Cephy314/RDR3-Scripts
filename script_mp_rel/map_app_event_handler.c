@@ -174,7 +174,7 @@ void func_5(int iParam0, var uParam1)
 					break;
 			}
 			break;
-		case -2006263512:
+		case joaat("TEXT_WRITTEN"):
 			switch (*iParam0)
 			{
 				case -1740156697:
@@ -183,7 +183,7 @@ void func_5(int iParam0, var uParam1)
 					break;
 			}
 			break;
-		case -1666016325:
+		case joaat("TEXT_PRINTED"):
 			switch (*iParam0)
 			{
 				case -1740156697:
@@ -535,33 +535,33 @@ int func_19(int iParam0)
 			return 0;
 		case joaat("BIGVALLEY"):
 			return 1;
-		case 1308232528:
+		case joaat("BLUEWATERMARSH"):
 			return 2;
-		case 1835499550:
+		case joaat("CUMBERLAND"):
 			return 3;
 		case joaat("GREATPLAINS"):
 			return 4;
-		case -120156735:
+		case joaat("GRIZZLIESEAST"):
 			return 6;
-		case 1645618177:
+		case joaat("GRIZZLIESWEST"):
 			return 7;
-		case -512529193:
+		case joaat("GUARMAD"):
 			return 8;
 		case joaat("HEARTLANDS"):
 			return 9;
-		case 178647645:
+		case joaat("ROANOKE"):
 			return 10;
 		case joaat("SCARLETTMEADOWS"):
 			return 11;
 		case joaat("TALLTREES"):
 			return 12;
-		case -2066240242:
+		case joaat("GAPTOOTHRIDGE"):
 			return 13;
 		case joaat("RIOBRAVO"):
 			return 14;
-		case -108848014:
+		case joaat("CHOLLASPRINGS"):
 			return 15;
-		case 892930832:
+		case joaat("HENNIGANSSTEAD"):
 			return 16;
 		default:
 			break;
@@ -581,25 +581,25 @@ int func_20(int iParam0)
 			return 39;
 		case joaat("BLACKWATER"):
 			return 40;
-		case 1778899666:
+		case joaat("BRAITHWAITE"):
 			return 99;
 		case joaat("BUTCHER"):
 			return 87;
-		case 1862420670:
+		case joaat("CALIGA"):
 			return 101;
 		case joaat("CORNWALL"):
 			return 70;
-		case -473051294:
+		case joaat("EMERALD"):
 			return 74;
 		case joaat("LAGRAS"):
 			return 3;
-		case 1463094051:
+		case joaat("MANZANITA"):
 			return 116;
 		case joaat("RHODES"):
 			return 111;
-		case -765540529:
+		case joaat("STDENIS"):
 			return 5;
-		case 2147354003:
+		case joaat("SISKA"):
 			return 33;
 		case joaat("STRAWBERRY"):
 			return 26;
@@ -613,9 +613,9 @@ int func_20(int iParam0)
 			return 37;
 		case joaat("WAPITI"):
 			return 60;
-		case -1207133769:
-		case 201158410:
-		case 1654810713:
+		case joaat("AGUASDULCESVILLA"):
+		case joaat("AGUASDULCESRUINS"):
+		case joaat("AGUASDULCESFARM"):
 			return 62;
 		case joaat("MANICATO"):
 			return 66;
@@ -661,9 +661,9 @@ int func_22(int iParam0)
 			return 1762760291;
 		case joaat("WESTELIZABETH"):
 			return 1715468631;
-		case -1973391500:
+		case joaat("LOWERWESTELIZABETH"):
 			return -960313506;
-		case -1247148211:
+		case joaat("UPPERWESTELIZABETH"):
 			return -1581676015;
 		case joaat("GUARMA"):
 			return -1431514117;
@@ -1099,13 +1099,13 @@ int func_28(int iParam0)
 	{
 		case joaat("LAGRAS"):
 			return 412187666;
-		case -765540529:
+		case joaat("STDENIS"):
 			return -48955357;
 		case joaat("STRAWBERRY"):
 			return -1366448499;
 		case joaat("BLACKWATER"):
 			return -2142170718;
-		case -473051294:
+		case joaat("EMERALD"):
 			return -652262915;
 		case joaat("VALENTINE"):
 			return 1109427018;
@@ -1979,129 +1979,129 @@ int func_59(int iParam0, bool bParam1, bool bParam2)
 		case 81:
 			if (func_111(iParam0))
 			{
-				return 305496830;
+				return joaat("LAW_REGION_VALENTINE_LOCKDOWN");
 			}
 			else
 			{
-				return -1482428221;
+				return joaat("LAW_REGION_VALENTINE");
 			}
 			break;
 		case 111:
 			if (func_111(iParam0))
 			{
-				return -1323821455;
+				return joaat("LAW_REGION_RHODES_LOCKDOWN");
 			}
 			else
 			{
-				return -1994249944;
+				return joaat("LAW_REGION_RHODES");
 			}
 			break;
 		case 5:
-			if (func_1() != -1 && func_112() == 1339372314)
+			if (func_1() != -1 && func_112() == joaat("LAW_REGION_SAINT_DENIS_RURAL"))
 			{
-				return 1339372314;
+				return joaat("LAW_REGION_SAINT_DENIS_RURAL");
 			}
 			else
 			{
-				return 1559741032;
+				return joaat("LAW_REGION_SAINT_DENIS");
 			}
 			break;
 		case 66:
-			return 60667583;
+			return joaat("LAW_REGION_MANICATO");
 		case 83:
-			return 1758133584;
+			return joaat("LAW_REGION_ANNESBURG");
 		case 26:
-			return -577559008;
+			return joaat("LAW_REGION_STRAWBERRY");
 		case 40:
 			if (!bParam1 || func_1() != -1)
 			{
-				return 1624541293;
+				return joaat("LAW_REGION_BLACKWATER");
 			}
 			if (func_113(44))
 			{
-				return 1624541293;
+				return joaat("LAW_REGION_BLACKWATER");
 			}
 			else
 			{
-				return 1716860278;
+				return joaat("LAW_REGION_BLACKWATER_MAINGAME");
 			}
 			break;
 		case 98:
 			if (func_1() != -1)
 			{
-				return 1178102426;
+				return joaat("LAW_REGION_ROANOKE_RIDGE");
 			}
 			else
 			{
-				return 1637569166;
+				return joaat("LAW_REGION_VAN_HORN");
 			}
 			break;
 		case 70:
-			return -867798278;
+			return joaat("LAW_REGION_CORNWALL");
 		case 74:
-			return 1543937523;
+			return joaat("LAW_REGION_EMERALD_RANCH");
 		case 99:
-			return 1030875135;
+			return joaat("LAW_REGION_BRAITHWAITE_MANOR");
 		case 101:
-			return -201437056;
+			return joaat("LAW_REGION_CALIGA_HALL");
 		case 62:
-			return 794246846;
+			return joaat("LAW_REGION_AGUASDULCES");
 		case 3:
-			return -968357677;
+			return joaat("LAW_REGION_LAGRAS");
 		case 33:
-			return 728480338;
+			return joaat("LAW_REGION_SISIKA");
 		case 87:
 			if (func_1() != -1)
 			{
-				return 1178102426;
+				return joaat("LAW_REGION_ROANOKE_RIDGE");
 			}
 			else
 			{
-				return 725489698;
+				return joaat("LAW_REGION_BUTCHER_CREEK");
 			}
 			break;
 		case 37:
-			return 183652754;
+			return joaat("LAW_REGION_FORT_WALLACE");
 		case 60:
 			if (func_1() != -1)
 			{
-				return -1147969487;
+				return joaat("LAW_REGION_GRIZZLIES");
 			}
 			else
 			{
-				return 2056744450;
+				return joaat("LAW_REGION_WAPITI");
 			}
 			break;
 		case 134:
-			return 963280223;
+			return joaat("LAW_REGION_MACFARLANES_RANCH");
 		case 127:
-			return -256309418;
+			return joaat("LAW_REGION_ARMADILLO");
 		case 131:
-			return 1666986024;
+			return joaat("LAW_REGION_RIDGEWOOD_FARM");
 		case 121:
-			return 251328732;
+			return joaat("LAW_REGION_TUMBLEWEED");
 		case 135:
 			if (func_1() != -1)
 			{
-				return -877373104;
+				return joaat("LAW_REGION_OLD_MAP_WILDERNESS");
 			}
 			if (!bParam1)
 			{
-				return 1024208566;
+				return joaat("LAW_REGION_THIEVES_LANDING");
 			}
 			if (func_113(44))
 			{
-				return 1024208566;
+				return joaat("LAW_REGION_THIEVES_LANDING");
 			}
 			else
 			{
-				return 1640255731;
+				return joaat("LAW_REGION_THIEVES_LANDING_MAINGAME");
 			}
 			break;
 		case 22:
-			return 965626876;
+			return joaat("LAW_REGION_PRONGHORN_RANCH");
 		case 39:
-			return -497792649;
+			return joaat("LAW_REGION_BEECHERS_HOPE");
 		case 4:
 		case 9:
 		case 45:
@@ -2111,7 +2111,7 @@ int func_59(int iParam0, bool bParam1, bool bParam2)
 		case 104:
 			break;
 		case 116:
-			return -1990305778;
+			return joaat("LAW_REGION_MANZANITA_POST");
 	}
 	if (bParam2)
 	{
@@ -2129,59 +2129,59 @@ int func_60(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-		case 2126166785:
+		case joaat("LAW_REGION_OCCUPIED_CARAVAN_CAMP"):
 			return -1;
-		case -2119728378:
-		case -1482428221:
-		case -1391142299:
-		case -867798278:
-		case 183652754:
-		case 305496830:
-		case 725489698:
-		case 1178102426:
-		case 1543937523:
-		case 1637569166:
-		case 1758133584:
-		case 2056744450:
+		case joaat("LAW_REGION_CUMBERLAND_FOREST"):
+		case joaat("LAW_REGION_VALENTINE"):
+		case joaat("LAW_REGION_HEARTLANDS"):
+		case joaat("LAW_REGION_CORNWALL"):
+		case joaat("LAW_REGION_FORT_WALLACE"):
+		case joaat("LAW_REGION_VALENTINE_LOCKDOWN"):
+		case joaat("LAW_REGION_BUTCHER_CREEK"):
+		case joaat("LAW_REGION_ROANOKE_RIDGE"):
+		case joaat("LAW_REGION_EMERALD_RANCH"):
+		case joaat("LAW_REGION_VAN_HORN"):
+		case joaat("LAW_REGION_ANNESBURG"):
+		case joaat("LAW_REGION_WAPITI"):
 			return 1;
-		case -2137625828:
-		case -1994249944:
-		case -1323821455:
-		case -968357677:
-		case -201437056:
-		case 493546894:
-		case 728480338:
-		case 1030875135:
-		case 1559741032:
-		case 1608357655:
+		case joaat("LAW_REGION_BAYOU_NWA"):
+		case joaat("LAW_REGION_RHODES"):
+		case joaat("LAW_REGION_RHODES_LOCKDOWN"):
+		case joaat("LAW_REGION_LAGRAS"):
+		case joaat("LAW_REGION_CALIGA_HALL"):
+		case joaat("LAW_REGION_BLUEGILL_MARSH"):
+		case joaat("LAW_REGION_SISIKA"):
+		case joaat("LAW_REGION_BRAITHWAITE_MANOR"):
+		case joaat("LAW_REGION_SAINT_DENIS"):
+		case joaat("LAW_REGION_SCARLETT_MEADOWS"):
 			return 2;
-		case -1147969487:
+		case joaat("LAW_REGION_GRIZZLIES"):
 			return 0;
-		case 60667583:
-		case 537788226:
-		case 794246846:
+		case joaat("LAW_REGION_MANICATO"):
+		case joaat("LAW_REGION_GUAMA"):
+		case joaat("LAW_REGION_AGUASDULCES"):
 			return 5;
-		case -1990305778:
-		case -1738342532:
-		case -1679988168:
-		case -1308265478:
-		case -650528936:
-		case -577559008:
-		case -497792649:
-		case 139139039:
-		case 965626876:
-		case 1039226266:
-		case 1624541293:
-		case 1716860278:
+		case joaat("LAW_REGION_MANZANITA_POST"):
+		case joaat("LAW_REGION_GREAT_PLAINS_MAINGAME"):
+		case joaat("LAW_REGION_MANZANITA_POST_MAINGAME"):
+		case joaat("LAW_REGION_GREAT_PLAINS"):
+		case joaat("LAW_REGION_TALL_TREES"):
+		case joaat("LAW_REGION_STRAWBERRY"):
+		case joaat("LAW_REGION_BEECHERS_HOPE"):
+		case joaat("LAW_REGION_TALL_TREES_MAINGAME"):
+		case joaat("LAW_REGION_PRONGHORN_RANCH"):
+		case joaat("LAW_REGION_BIG_VALLEY"):
+		case joaat("LAW_REGION_BLACKWATER"):
+		case joaat("LAW_REGION_BLACKWATER_MAINGAME"):
 			return 3;
-		case -1618764825:
-		case -877373104:
-		case -256309418:
-		case 251328732:
-		case 963280223:
-		case 1024208566:
-		case 1640255731:
-		case 1666986024:
+		case joaat("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME"):
+		case joaat("LAW_REGION_OLD_MAP_WILDERNESS"):
+		case joaat("LAW_REGION_ARMADILLO"):
+		case joaat("LAW_REGION_TUMBLEWEED"):
+		case joaat("LAW_REGION_MACFARLANES_RANCH"):
+		case joaat("LAW_REGION_THIEVES_LANDING"):
+		case joaat("LAW_REGION_THIEVES_LANDING_MAINGAME"):
+		case joaat("LAW_REGION_RIDGEWOOD_FARM"):
 			return 4;
 	}
 	return -1;
@@ -3600,53 +3600,53 @@ int func_115(int iParam0, bool bParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return -2137625828;
+			return joaat("LAW_REGION_BAYOU_NWA");
 		case 1:
-			return 1039226266;
+			return joaat("LAW_REGION_BIG_VALLEY");
 		case 2:
-			return 493546894;
+			return joaat("LAW_REGION_BLUEGILL_MARSH");
 		case 3:
-			return -2119728378;
+			return joaat("LAW_REGION_CUMBERLAND_FOREST");
 		case 4:
 			if (!bParam1 || func_1() != -1)
 			{
-				return -1308265478;
+				return joaat("LAW_REGION_GREAT_PLAINS");
 			}
 			if (func_113(44))
 			{
-				return -1308265478;
+				return joaat("LAW_REGION_GREAT_PLAINS");
 			}
 			else
 			{
-				return -1738342532;
+				return joaat("LAW_REGION_GREAT_PLAINS_MAINGAME");
 			}
 			break;
 		case 5:
-			return -1147969487;
+			return joaat("LAW_REGION_GRIZZLIES");
 		case 6:
-			return -1147969487;
+			return joaat("LAW_REGION_GRIZZLIES");
 		case 7:
-			return -1147969487;
+			return joaat("LAW_REGION_GRIZZLIES");
 		case 8:
-			return 537788226;
+			return joaat("LAW_REGION_GUAMA");
 		case 9:
-			return -1391142299;
+			return joaat("LAW_REGION_HEARTLANDS");
 		case 10:
-			return 1178102426;
+			return joaat("LAW_REGION_ROANOKE_RIDGE");
 		case 11:
-			return 1608357655;
+			return joaat("LAW_REGION_SCARLETT_MEADOWS");
 		case 12:
 			if (!bParam1 || func_1() != -1)
 			{
-				return -650528936;
+				return joaat("LAW_REGION_TALL_TREES");
 			}
 			if (func_113(44))
 			{
-				return -650528936;
+				return joaat("LAW_REGION_TALL_TREES");
 			}
 			else
 			{
-				return 139139039;
+				return joaat("LAW_REGION_TALL_TREES_MAINGAME");
 			}
 			break;
 		case 13:
@@ -3655,15 +3655,15 @@ int func_115(int iParam0, bool bParam1)
 		case 16:
 			if (!bParam1 || func_1() != -1)
 			{
-				return -877373104;
+				return joaat("LAW_REGION_OLD_MAP_WILDERNESS");
 			}
 			if (func_113(44))
 			{
-				return -877373104;
+				return joaat("LAW_REGION_OLD_MAP_WILDERNESS");
 			}
 			else
 			{
-				return -1618764825;
+				return joaat("LAW_REGION_OLD_MAP_WILDERNESS_MAINGAME");
 			}
 			break;
 	}
@@ -4010,279 +4010,279 @@ int func_127(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -787401661: /* GXTEntry: "Abandoned Mission, Gaptooth Ridge, NA" */
+		case joaat("W_4_ABANDONED_MISSION"):
 			return 993246734;
-		case 1154382595: /* GXTEntry: "Abandoned Trading Post, Roanoke Ridge, NH" */
+		case joaat("W_4_ABANDONED_TRADING_POST"):
 			return 1352537560;
-		case -744066564: /* GXTEntry: "Fire Lookout Tower, Roanoke Ridge, NH" */
+		case joaat("W_4_FIRE_LOOKOUT_TOWER"):
 			return -1262808306;
-		case 1448805167: /* GXTEntry: "Flattened Cabin, Grizzlies, AM" */
+		case joaat("W_4_FLATTENED_CABIN"):
 			return 1582457845;
-		case -1753216046: /* GXTEntry: "Fort Brennand, Roanoke Ridge, NH" */
+		case joaat("W_5_FORT_BRENNAND"):
 			return 460210291;
-		case -832065774: /* GXTEntry: "Limpany, The Heartlands, NH" */
+		case joaat("W_5_LIMPANY"):
 			return 2021420613;
-		case -1942169613: /* GXTEntry: "Meteor House, Roanoke Ridge, NH" */
+		case joaat("W_4_METEOR_HOUSE"):
 			return 1195199040;
-		case 1307292947: /* GXTEntry: "Oil Derrick, The Heartlands, NH" */
+		case joaat("W_4_OIL_DERRICK"):
 			return -1212881551;
-		case 893044669: /* GXTEntry: "Pleasance, Scarlett Meadows, LE" */
+		case joaat("W_4_PLEASANCE"):
 			return -2011320133;
-		case 1716154100: /* GXTEntry: "Roadside Brothel, Roanoke Ridge, NH" */
+		case joaat("W_4_ROADSIDE_BROTHEL"):
 			return -1988847961;
-		case -1173672830: /* GXTEntry: "The Old Bacchus Place, Hennigan\'s Stead, NA" */
+		case joaat("W_4_THE_OLD_BACCHUS_PLACE"):
 			return 2056389698;
-		case -2074284650: /* GXTEntry: "Trading Post, The Heartlands, NH" */
+		case joaat("W_4_TRADING_POST"):
 			return -942443338;
-		case -2133063188: /* GXTEntry: "Two Crows, Cholla Springs, NA" */
+		case joaat("W_4_TWO_CROWS"):
 			return 539572870;
-		case -769726319: /* GXTEntry: "Mysterious Hill Home, Grizzlies, AM" */
+		case joaat("W_4_UTOPIAN_COLONY_BUILDING"):
 			return 66159563;
-		case 863351250: /* GXTEntry: "Witches Cauldron, Grizzlies, AM" */
+		case joaat("W_4_WITCHES_CAULDRON"):
 			return 387869270;
-		case -419963911: /* GXTEntry: "Appleseed Timber Co., Big Valley, WE" */
+		case joaat("W_4_APPLESEED_TIMBER_COMPANY"):
 			return -496244122;
-		case -619014970: /* GXTEntry: "Castor\'s Ridge, The Heartlands, NH" */
+		case joaat("W_4_CASTORS_RIDGE"):
 			return -238119963;
-		case 538198805: /* GXTEntry: "Central Union Railroad, Roanoke Ridge, NH" */
+		case joaat("W_4_CENTRAL_UNION_RAILROAD_1"):
 			return 1028223611;
-		case 1557904547: /* GXTEntry: "Central Union Railroad, Roanoke Ridge, NH" */
+		case joaat("W_4_CENTRAL_UNION_RAILROAD_2"):
 			return 730222325;
-		case 1251481628: /* GXTEntry: "Central Union Railroad, Roanoke Ridge, NH" */
+		case joaat("W_4_CENTRAL_UNION_RAILROAD_3"):
 			return -597970767;
-		case -828659305: /* GXTEntry: "Fort Riggs Holding Camp, Big Valley, WE" */
+		case joaat("W_4_FORT_RIGGS_HOLDING_CAMP"):
 			return -732274047;
-		case -139400310: /* GXTEntry: "Beaver Hollow, Roanoke Ridge, NH" */
+		case joaat("W_5_BEAVER_HOLLOW"):
 			return -1368676121;
-		case 1830267951: /* GXTEntry: "Clemens Point, Scarlett Meadows, LE" */
+		case joaat("W_4_CLEMENS_POINT"):
 			return 759314201;
-		case -1496551068: /* GXTEntry: "Colter, Grizzlies, AM" */
+		case joaat("W_4_COLTER"):
 			return 1826504111;
-		case 39999178: /* GXTEntry: "Gaptooth Breach, Gaptooth Ridge, NA" */
+		case joaat("W_4_GAPTOOTH_BREACH"):
 			return 1728445882;
-		case -103399754: /* GXTEntry: "Hanging Dog Ranch, Big Valley, WE" */
+		case joaat("W_4_HANGING_DOG_RANCH"):
 			return -12216052;
-		case -1359523911: /* GXTEntry: "Horseshoe Overlook, The Heartlands, NH" */
+		case joaat("W_4_HORSESHOE_OVERLOOK"):
 			return -431488293;
-		case -336631570: /* GXTEntry: "Pike\'s Basin, Hennigan\'s Stead, NA" */
+		case joaat("W_4_PIKES_BASIN"):
 			return 1474106589;
-		case 866178028: /* GXTEntry: "Shady Belle, Bayou Nwa, LE" */
+		case joaat("W_4_SHADY_BELLE"):
 			return -353968602;
-		case 2056953687: /* GXTEntry: "Six Point Cabin, Cumberland Forest, NH" */
+		case joaat("W_4_SIX_POINT_CABIN"):
 			return -918096609;
-		case 878474860: /* GXTEntry: "Solomon\'s Folly, Gaptooth Ridge, NA" */
+		case joaat("W_4_SOLOMONS_FOLLY"):
 			return 1979340260;
-		case 219097977: /* GXTEntry: "Aberdeen Pig Farm, Scarlett Meadows, LE" */
+		case joaat("W_4_ABERDEEN_PIG_FARM"):
 			return 1472232821;
-		case -1043500161: /* GXTEntry: "Adler Ranch, Grizzlies, AM" */
+		case joaat("W_4_ADLER_RANCH"):
 			return 462373845;
-		case -1902025470: /* GXTEntry: "Carmody Dell, The Heartlands, NH" */
+		case joaat("W_4_CARMODY_DELL"):
 			return -1836330842;
-		case 1701820039: /* GXTEntry: "Catfish Jacksons, Scarlett Meadows, LE" */
+		case joaat("W_4_CATFISH_JACKSONS"):
 			return -1150244084;
-		case -2034338067: /* GXTEntry: "Chez Porter, Grizzlies, AM" */
+		case joaat("W_4_CHEZ_PORTER"):
 			return -1727895786;
-		case 1767462106: /* GXTEntry: "Larned Sod, The Heartlands, NH" */
+		case joaat("W_4_LARNED_SOD"):
 			return -1101810198;
-		case 770707682: /* GXTEntry: "Lonnie\'s Shack, Scarlett Meadows, LE" */
+		case joaat("W_4_LONNIES_SHACK"):
 			return 2143316225;
-		case -1592070727: /* GXTEntry: "Maclean\'s House, Roanoke Ridge, NH" */
+		case joaat("W_4_MACLEANS_HOUSE"):
 			return 121074776;
-		case -1521776363: /* GXTEntry: "Painted Sky, Big Valley, WE" */
+		case joaat("W_4_PAINTED_SKY"):
 			return -2086563810;
-		case 1544029611: /* GXTEntry: "Ridgewood Farm, Cholla Springs, NA" */
+		case joaat("W_4_RIDGEWOOD_FARM"):
 			return -1332669948;
-		case 881209616: /* GXTEntry: "Van Horn Mansion, Roanoke Ridge, NH" */
+		case joaat("W_4_VAN_HORN_MANSION"):
 			return 85299473;
-		case -1161186391: /* GXTEntry: "Watson\'s Cabin, Big Valley, WE" */
+		case joaat("W_4_WATSONS_CABIN"):
 			return -1813267128;
-		case -154855189: /* GXTEntry: "Willard\'s Rest, Roanoke Ridge, NH" */
+		case joaat("W_4_WILLARDS_REST"):
 			return 458479023;
-		case 1212679502: /* GXTEntry: "Beryl\'s Dream, Big Valley, WE" */
+		case joaat("W_5_BERYLS_DREAM"):
 			return -678676588;
-		case -969933882: /* GXTEntry: "Black Balsam Rise, Roanoke Ridge, NH" */
+		case joaat("W_5_BLACK_BALSAM_RISE"):
 			return 1602161184;
-		case -1539536559: /* GXTEntry: "Black Bone Forest, Big Valley, WE" */
+		case joaat("W_5_BLACK_BONE_FOREST"):
 			return -656861063;
-		case -916903901: /* GXTEntry: "Brittlebrush Trawl, Hennigan\'s Stead, NA" */
+		case joaat("W_4_BRITTLEBRUSH_TRAWL"):
 			return 1735191955;
-		case -2126414432: /* GXTEntry: "Broken Tree, Great Plains, WE" */
+		case joaat("W_5_BROKEN_TREE"):
 			return 2073023198;
-		case 580715948: /* GXTEntry: "Canebreak Manor, Bluewater Marsh, LE" */
+		case joaat("W_4_CANEBREAK_MANOR"):
 			return -1941572412;
-		case -814535426: /* GXTEntry: "Chadwick Farm, The Heartlands, NH" */
+		case joaat("W_5_CHADWICK_FARM"):
 			return 215480587;
-		case 1987954784: /* GXTEntry: "Clingman, Roanoke Ridge, NH" */
+		case joaat("W_4_CLINGMAN"):
 			return 545498183;
-		case 320988519: /* GXTEntry: "Cochinay, Tall Trees, WE" */
+		case joaat("W_4_COCHINAY"):
 			return 820139809;
-		case 522499758: /* GXTEntry: "Compsons Stead, Scarlett Meadows, LE" */
+		case joaat("W_4_COMPSONS_STEAD"):
 			return 2063457042;
-		case 1082216465: /* GXTEntry: "Copperhead Landing, Bluewater Marsh, LE" */
+		case joaat("W_4_COPPERHEAD_LANDING"):
 			return 1006072805;
-		case 1247830528: /* GXTEntry: "Cueva Seca, Gaptooth Ridge, NA" */
+		case joaat("W_4_CUEVA_SECA"):
 			return 428613469;
-		case -645154787: /* GXTEntry: "Doverhill, Roanoke Ridge, NH" */
+		case joaat("W_4_DOVERHILL"):
 			return -161135375;
-		case -657053325: /* GXTEntry: "Downes Ranch, The Heartlands, NH" */
+		case joaat("W_4_DOWNES_RANCH"):
 			return -1276637644;
-		case 1030217084: /* GXTEntry: "Evelyn Miller Camp, Tall Trees, WE" */
+		case joaat("W_4_EVELYN_MILLER_CAMP"):
 			return -960425936;
-		case -1821194396: /* GXTEntry: "Face Rock, Scarlett Meadows, LE" */
+		case joaat("W_4_FACE_ROCK"):
 			return 532401286;
-		case -146460093: /* GXTEntry: "Firwood Rise, Cumberland Forest, NH" */
+		case joaat("W_4_FIRWOOD_RISE"):
 			return -1347759053;
-		case 2087258933: /* GXTEntry: "Fishing Spot, Bayou Nwa, LE" */
+		case joaat("W_5_FISHINGSPOT"):
 			return 1542246539;
-		case 1922831023: /* GXTEntry: "Greenhollow, Hennigan\'s Stead, NA" */
+		case joaat("W_4_GREENHOLLOW"):
 			return 1740117339;
-		case -1472363892: /* GXTEntry: "Guthrie Farm, The Heartlands, NH" */
+		case joaat("W_4_GUTHRIE_FARM"):
 			return 770074951;
-		case 30800579: /* GXTEntry: "Hagen Orchards, Bayou Nwa, LE" */
+		case joaat("W_4_HAGEN_ORCHARDS"):
 			return -237206861;
-		case -1769528472: /* GXTEntry: "Hill Haven Ranch, Scarlett Meadows, LE" */
+		case joaat("W_4_HILL_HAVEN_RANCH"):
 			return 1877776161;
-		case 1895254880: /* GXTEntry: "Houseboat, Bluewater Marsh, LE" */
+		case joaat("W_4_HOUSEBOAT"):
 			return 1837393665;
-		case -1692509313: /* GXTEntry: "Lake Don Julio House, Cholla Springs, NA" */
+		case joaat("W_4_LAKE_DON_JULIO_HOUSE"):
 			return 1603579970;
-		case -576782619: /* GXTEntry: "Lone Mule Stead, Big Valley, WE" */
+		case joaat("W_4_LONE_MULE_STEAD"):
 			return -1456731677;
-		case 229479634: /* GXTEntry: "Lucky\'s Cabin, The Heartlands, NH" */
+		case joaat("W_4_LUCKYS_CABIN"):
 			return -1344767066;
-		case 1062452343: /* GXTEntry: "Macomb\'s End, Bayou Nwa, LE" */
+		case joaat("W_4_MACOMBS_END"):
 			return 1092217275;
-		case 1350749955: /* GXTEntry: "Merkins Waller, Bayou Nwa, LE" */
+		case joaat("W_4_MERKINS_WALLER"):
 			return 1855549007;
-		case 1506834348: /* GXTEntry: "Micah\'s Hideout, Grizzlies, AM" */
+		case joaat("W_4_MICAHS_HIDEOUT"):
 			return -875696111;
-		case 2132554759: /* GXTEntry: "Millesani Claim, Grizzlies, AM" */
+		case joaat("W_4_MILLESANI_CLAIM"):
 			return -91026072;
-		case 1016304714: /* GXTEntry: "Mossy Flats, Roanoke Ridge, NH" */
+		case joaat("W_4_MOSSY_FLATS"):
 			return 1876184276;
-		case 375900073: /* GXTEntry: "Nekoti Rock, Tall Trees, WE" */
+		case joaat("W_4_NEKOTI_ROCK"):
 			return -876779166;
-		case -631265576: /* GXTEntry: "Oddfellow\'s Rest, Cholla Springs, NA" */
+		case joaat("W_4_ODDFELLOWS_REST"):
 			return -1116738159;
-		case -291091669: /* GXTEntry: "Old Greenbank Mill, Scarlett Meadows, LE" */
+		case joaat("W_4_OLD_GREENBANK_MILL"):
 			return 415864829;
-		case 1603158849: /* GXTEntry: "Old Tom\'s Blind, Big Valley, WE" */
+		case joaat("W_4_OLD_TOMS_BLIND"):
 			return -1408667066;
-		case -2035208924: /* GXTEntry: "Pleasance House, Cholla Springs, NA" */
+		case joaat("W_4_PLEASANCE_HOUSE"):
 			return -1730421200;
-		case 1860552235: /* GXTEntry: "Prinz & Co., Bayou Nwa, LE" */
+		case joaat("W_4_PRINZ_CO"):
 			return 1374995365;
-		case 1987585677: /* GXTEntry: "Radley\'s House, Scarlett Meadows, LE" */
+		case joaat("W_6_RADLEYS_HOUSE"):
 			return -1393093729;
-		case -259784188: /* GXTEntry: "Radley\'s Pasture, Scarlett Meadows, LE" */
+		case joaat("W_5_RADLEYS_PASTURE"):
 			return -1623232489;
-		case 1477464408: /* GXTEntry: "Rattlesnake Hollow, Cholla Springs, NA" */
+		case joaat("W_4_RATTLESNAKE_HOLLOW"):
 			return -1394664008;
-		case 1136441188: /* GXTEntry: "Repentance, Rio Bravo, NA" */
+		case joaat("W_4_REPENTANCE"):
 			return -325788416;
-		case 738939338: /* GXTEntry: "Riley\'s Charge, Cholla Springs, NA" */
+		case joaat("W_4_RILEYS_CHARGE"):
 			return -1807212021;
-		case -1247294802: /* GXTEntry: "Rio del Lobo House, Cholla Springs, NA" */
+		case joaat("W_4_RIO_DEL_LOBO_HOUSE"):
 			return -792566558;
-		case 6184171: /* GXTEntry: "Scratching Post, Gaptooth Ridge, NA" */
+		case joaat("W_4_SCRATCHING_POST"):
 			return -2089448537;
-		case -868607615: /* GXTEntry: "Silent Stead, Gaptooth Ridge, NA" */
+		case joaat("W_4_SILENT_STEAD"):
 			return 82527577;
-		case 930788089: /* GXTEntry: "Siltwater Strand, Scarlett Meadows, LE" */
+		case joaat("W_4_SILTWATER_STRAND"):
 			return -1354901649;
-		case 1871224592: /* GXTEntry: "Stillwater Cabin, Hennigan\'s Stead, NA" */
+		case joaat("W_4_STILLWATER_CABIN"):
 			return -1585921053;
-		case 1094048700: /* GXTEntry: "Stilt Shack, Big Valley, WE" */
+		case joaat("W_4_STILT_SHACK"):
 			return 222265732;
-		case -1419869345: /* GXTEntry: "Tanner\'s Reach, Tall Trees, WE" */
+		case joaat("W_4_TANNERS_REACH"):
 			return 1561007383;
-		case -1894004139: /* GXTEntry: "Taxidermist House, Big Valley, WE" */
+		case joaat("W_4_TAXIDERMIST_HOUSE"):
 			return 1104975149;
-		case 31314838: /* GXTEntry: "The Hanging Rock, Cholla Springs, NA" */
+		case joaat("W_4_THE_HANGING_ROCK"):
 			return 1515744307;
-		case -438809735: /* GXTEntry: "The Loft, Grizzlies, AM" */
+		case joaat("W_4_THE_LOFT"):
 			return 893855320;
-		case 690770514: /* GXTEntry: "Valley View, Big Valley, WE" */
+		case joaat("W_5_VALLEY_VIEW"):
 			return 235472255;
-		case 126047903: /* GXTEntry: "Venter\'s Place, Cholla Springs, NA" */
+		case joaat("W_4_VENTERS_PLACE"):
 			return -1173041902;
-		case 1001341519: /* GXTEntry: "Veteran\'s Homestead, Grizzlies, AM" */
+		case joaat("W_4_VETERANS_HOMESTEAD"):
 			return 326709244;
-		case 1704544150: /* GXTEntry: "Wallace Overlook, Big Valley, WE" */
+		case joaat("W_4_WALLACE_OVERLOOK"):
 			return -1337880478;
-		case 245588937: /* GXTEntry: "Argil Rise, Scarlett Meadows, LE" */
+		case joaat("W_5_ARGIL_RISE"):
 			return 205568929;
-		case 199607503: /* GXTEntry: "Baygall Edge, Bayou Nwa, LE" */
+		case joaat("W_4_BAYGALL_EDGE"):
 			return 276890716;
-		case -264897431: /* GXTEntry: "Bear Claw, Tall Trees, WE" */
+		case joaat("W_4_BEAR_CLAW"):
 			return -2110824426;
-		case -2000021141: /* GXTEntry: "Cairn Lodge, Grizzlies, AM" */
+		case joaat("W_4_CAIRN_LODGE"):
 			return 43681669;
-		case 1645047683: /* GXTEntry: "Clawson\'s Rest, Grizzlies, AM" */
+		case joaat("W_4_CLAWSONS_REST"):
 			return 562599937;
-		case -1164281509: /* GXTEntry: "Crawdad Willies, Bayou Nwa, LE" */
+		case joaat("W_4_CRAWDAD_WILLIES"):
 			return 1822876181;
-		case 696910142: /* GXTEntry: "Deer Cottage, Roanoke Ridge, NH" */
+		case joaat("W_5_DEER_COTTAGE"):
 			return -683043834;
-		case -1768736648: /* GXTEntry: "Dodd\'s Bluff, Grizzlies, AM" */
+		case joaat("W_4_DODDS_BLUFF"):
 			return 532503220;
-		case -930437658: /* GXTEntry: "Dormin Crest, Grizzlies, AM" */
+		case joaat("W_4_DORMIN_CREST"):
 			return 379859357;
-		case -1622112934: /* GXTEntry: "Fairvale Shanty, Grizzlies, AM" */
+		case joaat("W_4_FAIRVALE_SHANTY"):
 			return 1610646968;
-		case -9585484: /* GXTEntry: "Gill Landing, The Heartlands, NH" */
+		case joaat("W_4_GILL_LANDING"):
 			return 1268001912;
-		case -870780939: /* GXTEntry: "Granger\'s Hoggery, The Heartlands, NH" */
+		case joaat("W_4_GRANGERS_HOGGERY"):
 			return 653958186;
-		case 570617421: /* GXTEntry: "Hani\'s Bethel, The Heartlands, NH" */
+		case joaat("W_4_HANIS_BETHEL"):
 			return -1917132299;
-		case 230920996: /* GXTEntry: "Huron Glen, Roanoke Ridge, NH" */
+		case joaat("W_5_HURON_GLEN"):
 			return -134804027;
-		case 1071862910: /* GXTEntry: "Lenora View, Big Valley, WE" */
+		case joaat("W_5_LENORA_VIEW"):
 			return 1116308524;
-		case 1436995883: /* GXTEntry: "Manito Glade, Roanoke Ridge, NH" */
+		case joaat("W_4_MANITO_GLADE"):
 			return 1625008147;
-		case 806217109: /* GXTEntry: "Martha\'s Swain, Grizzlies, AM" */
+		case joaat("W_4_MARTHAS_SWAIN"):
 			return -727372692;
-		case 1347794144: /* GXTEntry: "Old Harry Fen, Scarlett Meadows, LE" */
+		case joaat("W_4_OLD_HARRY_FEN"):
 			return 1354284392;
-		case -215175141: /* GXTEntry: "Old Trail Rise, Scarlett Meadows, LE" */
+		case joaat("W_4_OLD_TRAIL_RISE"):
 			return 1871337449;
-		case 359085936: /* GXTEntry: "Osman Grove, Roanoke Ridge, NH" */
+		case joaat("W_4_OSMAN_GROVE"):
 			return -1249289544;
-		case -1699818764: /* GXTEntry: "Planter\'s Bawn, Grizzlies, AM" */
+		case joaat("W_4_PLANTERS_BAWN"):
 			return 1714554710;
-		case 1499492436: /* GXTEntry: "Reed Cottage, Roanoke Ridge, NH" */
+		case joaat("W_6_REED_COTTAGE"):
 			return -443207523;
-		case -793097117: /* GXTEntry: "Ridge View, The Heartlands, NH" */
+		case joaat("W_4_RIDGE_VIEW"):
 			return -33677540;
-		case 1400897589: /* GXTEntry: "Robard Farm, Scarlett Meadows, LE" */
+		case joaat("W_4_ROBARD_FARM"):
 			return -763271696;
-		case 848488661: /* GXTEntry: "Sawbone Clearing, Roanoke Ridge, NH" */
+		case joaat("W_4_SAWBONE_CLEARING"):
 			return 2027689141;
-		case -504005310: /* GXTEntry: "Shepherds Rise, Big Valley, WE" */
+		case joaat("W_4_SHEPHERDS_RISE"):
 			return -1484929764;
-		case -1099073636: /* GXTEntry: "Swadbass Point, Tall Trees, WE" */
+		case joaat("W_4_SWADBASS_POINT"):
 			return -1430883057;
-		case 372957665: /* GXTEntry: "Trapper\'s Cabin, Bluewater Marsh, LE" */
+		case joaat("W_4_TRAPPERS_CABIN"):
 			return 2133877879;
-		case 1427239788: /* GXTEntry: "Vetter\'s Echo, Big Valley, WE" */
+		case joaat("W_5_VETTERS_ECHO"):
 			return -508074447;
-		case 1677148641: /* GXTEntry: "Beecher\'s Hope, Great Plains, WE" */
+		case joaat("W_4_BEECHERS_HOPE"):
 			return -507075109;
-		case -425430549: /* GXTEntry: "Butcher Creek, Roanoke Ridge, NH" */
+		case joaat("W_4_BUTCHER_CREEK"):
 			return 147256338;
-		case -61172588: /* GXTEntry: "Coots Chapel, Cholla Springs, NA" */
+		case joaat("W_4_COOTS_CHAPEL"):
 			return 929640770;
-		case 492552869: /* GXTEntry: "Cornwall Kerosene & Tar, The Heartlands, NH" */
+		case joaat("W_4_CORNWALL_KEROSENE_TAR"):
 			return 648073069;
-		case -545967610: /* GXTEntry: "Ewing Basin, Grizzlies, AM" */
+		case joaat("W_4_EWING_BASIN"):
 			return 653799702;
-		case -1999797981: /* GXTEntry: "Grand Korrigan, Lannahechee River" */
+		case joaat("W_5_GRAND_KORRIGAN_DOCKED"):
 			return -296815465;
-		case 1613985721: /* GXTEntry: "Grand Korrigan, Lannahechee River" */
+		case joaat("W_5_GRAND_KORRIGAN_SEA"):
 			return 1944800674;
-		case -120578354: /* GXTEntry: "Pronghorn Ranch, Big Valley, WE" */
+		case joaat("W_4_PRONGHORN_RANCH"):
 			return 221661572;
 		default:
 			break;
@@ -4301,7 +4301,7 @@ char* func_129(int iParam0)
 	{
 		case joaat("VANHORN"):
 			return "VHT";
-		case -473051294:
+		case joaat("EMERALD"):
 			return "EMR";
 		case joaat("ANNESBURG"):
 			return "ANN";
@@ -4313,7 +4313,7 @@ char* func_129(int iParam0)
 			return "STR";
 		case joaat("BLACKWATER"):
 			return "BLA";
-		case -765540529:
+		case joaat("STDENIS"):
 			return "NBX";
 		case joaat("VALENTINE"):
 			return "VAL";
@@ -4977,7 +4977,7 @@ int func_148(int iParam0)
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
 		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return joaat("GFH_MAGGIE");
 		case joaat("MARCEL"):
 			return joaat("GFH_MARCEL");
@@ -7178,7 +7178,7 @@ int func_259(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -7190,7 +7190,7 @@ int func_259(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;

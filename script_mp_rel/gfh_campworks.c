@@ -1641,7 +1641,7 @@ int func_56(var uParam0, int iParam1, int iParam2, bool bParam3, var uParam4)
 											else
 											{
 												Jump @1524; //curOff = 1493
-												if (iVar512 != -1562099170)
+												if (iVar512 != joaat("RESUPPLY"))
 												{
 												}
 												else if (func_114(Var505, 1))
@@ -2475,7 +2475,7 @@ void func_96(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 	switch (iParam0)
 	{
 		case joaat("MOTIONSTATE_IDLE"):
-		case 1140525470:
+		case joaat("MOTIONSTATE_CROUCH_IDLE"):
 			fVar0 = 0f;
 			break;
 		case -1415276238:
@@ -2483,14 +2483,14 @@ void func_96(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 			fVar0 = 1.5f;
 			break;
 		case joaat("MOTIONSTATE_RUN"):
-		case 898879241:
+		case joaat("MOTIONSTATE_CROUCH_RUN"):
 			fVar0 = 2f;
 			break;
-		case -1115154469:
+		case joaat("MOTIONSTATE_SPRINT"):
 			fVar0 = 3f;
 			break;
 		case joaat("MOTIONSTATE_WALK"):
-		case 147004056:
+		case joaat("MOTIONSTATE_CROUCH_WALK"):
 			break;
 	}
 	PED::FORCE_PED_MOTION_STATE(Global_34, iParam0, bParam2, iParam3, false);
@@ -5591,7 +5591,7 @@ int func_158(int iParam0)
 		case 124:
 			return 2125074568;
 		case 110:
-			return 41788943;
+			return joaat("META_OUTFIT_DEFAULT");
 		case 111:
 			return -1359472568;
 		case 112:
@@ -7356,7 +7356,7 @@ int func_233(int iParam0, int iParam1)
 				return 4112;
 			case -2139769274:
 				return 1379;
-			case -2137753947:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_BUCK"):
 				return 51;
 			case -2137715194:
 				return 1024;
@@ -7372,7 +7372,7 @@ int func_233(int iParam0, int iParam1)
 				return 4023;
 			case -2135256078:
 				return 2641;
-			case -2133302615:
+			case joaat("META_OUTFIT_VAL_PIANO_PLAYER_03"):
 				return 636;
 			case -2132617886:
 				return 4038;
@@ -7400,7 +7400,7 @@ int func_233(int iParam0, int iParam1)
 				return 5666;
 			case -2123160869:
 				return 2796;
-			case -2122774804:
+			case joaat("META_ANIMAL_OUTFIT_BEARBLACK_001"):
 				return 23;
 			case -2122500420:
 				return 1474;
@@ -7410,7 +7410,7 @@ int func_233(int iParam0, int iParam1)
 				return 19;
 			case joaat("HAT_MR1_020_ALT02A"):
 				return 4633;
-			case -2120236310:
+			case joaat("META_OUTFIT_ANIMAL_ORIOLEHOODED"):
 				return 210;
 			case -2119975294:
 				return 342;
@@ -7422,7 +7422,7 @@ int func_233(int iParam0, int iParam1)
 				return 2758;
 			case -2116779830:
 				return 5198;
-			case -2116663991:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMDESERT_001"):
 				return 33;
 			case -2116139111:
 				return 774;
@@ -7436,11 +7436,11 @@ int func_233(int iParam0, int iParam1)
 				return 1350;
 			case -2111983088:
 				return 5835;
-			case -2111653907:
+			case joaat("META_OUTFIT_ANIMAL_POISON_REDFIN"):
 				return 151;
 			case -2109073297:
 				return 3324;
-			case -2108783749:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJA"):
 				return 228;
 			case -2105118656:
 				return 4217;
@@ -7510,7 +7510,7 @@ int func_233(int iParam0, int iParam1)
 				return 5023;
 			case -2079843276:
 				return 1922;
-			case -2078090703:
+			case joaat("META_OUTFIT_ANIMAL_SNAKEREDTAILBOASUN"):
 				return 272;
 			case -2078086178:
 				return 2556;
@@ -7548,7 +7548,7 @@ int func_233(int iParam0, int iParam1)
 				return 1877;
 			case -2064780282:
 				return 1965;
-			case -2064564980:
+			case joaat("META_OUTFIT_ANIMAL_DESERT"):
 				return 283;
 			case -2064018994:
 				return 5553;
@@ -7578,7 +7578,7 @@ int func_233(int iParam0, int iParam1)
 				return 3574;
 			case -2053540488:
 				return 2000;
-			case -2053341513:
+			case joaat("META_OUTFIT_ANNESBURG_VAR_01"):
 				return 4247;
 			case -2052395687:
 				return 3470;
@@ -7602,7 +7602,7 @@ int func_233(int iParam0, int iParam1)
 				return 4621;
 			case -2047589163:
 				return 2355;
-			case -2046877254:
+			case joaat("META_ANIMAL_OUTFIT_BEAVER_000"):
 				return 25;
 			case -2046800601:
 				return 1545;
@@ -7654,7 +7654,7 @@ int func_233(int iParam0, int iParam1)
 				return 1506;
 			case -2030519833:
 				return 4952;
-			case -2029723322:
+			case joaat("META_OUTFIT_RHODES_VAR_03"):
 				return 398;
 			case joaat("GOON2"):
 				return 1158;
@@ -7870,9 +7870,9 @@ int func_233(int iParam0, int iParam1)
 				return 187;
 			case -1954329196:
 				return 3239;
-			case -1950203877:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_LARGEMOUTHBASS"):
 				return 144;
-			case -1950122094:
+			case joaat("META_OUTFIT_STRAWBERRY_VAR_03"):
 				return 467;
 			case -1949892659:
 				return 929;
@@ -7884,7 +7884,7 @@ int func_233(int iParam0, int iParam1)
 				return 5084;
 			case -1947283266:
 				return 2354;
-			case -1946665070:
+			case joaat("META_OUTFIT_WALLACESTATION_VAR_01"):
 				return 4283;
 			case -1946599558:
 				return 2648;
@@ -7910,7 +7910,7 @@ int func_233(int iParam0, int iParam1)
 				return 5152;
 			case -1940225037:
 				return 2190;
-			case -1939155122:
+			case joaat("META_OUTFIT_ANIMAL_POISON_DEER"):
 				return 90;
 			case -1938788117:
 				return 5268;
@@ -7986,9 +7986,9 @@ int func_233(int iParam0, int iParam1)
 				return 1019;
 			case -1913713471:
 				return 2886;
-			case -1910028162:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_BULLHEADCATFISH"):
 				return 136;
-			case -1909918104:
+			case joaat("META_OUTFIT_ANIMAL_DUCKPEKIN"):
 				return 122;
 			case -1908798843:
 				return 3504;
@@ -8012,7 +8012,7 @@ int func_233(int iParam0, int iParam1)
 				return 1861;
 			case -1900033419:
 				return 1582;
-			case -1899670587:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPDESERT_001"):
 				return 41;
 			case -1897893751:
 				return 4426;
@@ -8080,7 +8080,7 @@ int func_233(int iParam0, int iParam1)
 				return 928;
 			case -1874781479:
 				return 4861;
-			case -1874493596:
+			case joaat("META_ANIMAL_OUTFIT_BOAR_001"):
 				return 47;
 			case -1874258837:
 				return 3666;
@@ -8104,7 +8104,7 @@ int func_233(int iParam0, int iParam1)
 				return 175;
 			case -1862234905:
 				return 114;
-			case -1861127026:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_M_000"):
 				return 208;
 			case -1859254916:
 				return 4541;
@@ -8168,7 +8168,7 @@ int func_233(int iParam0, int iParam1)
 				return 350;
 			case -1837924088:
 				return 1847;
-			case -1837792443:
+			case joaat("META_OUTFIT_ANIMAL_WOLFLARGE_001"):
 				return 290;
 			case -1837436619:
 				return 5762;
@@ -8180,7 +8180,7 @@ int func_233(int iParam0, int iParam1)
 				return 2559;
 			case -1835618648:
 				return 1217;
-			case -1834180478:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPROCKY"):
 				return 42;
 			case -1833636986:
 				return 431;
@@ -8262,7 +8262,7 @@ int func_233(int iParam0, int iParam1)
 				return 4457;
 			case -1804252262:
 				return 4990;
-			case -1803981367:
+			case joaat("META_ANIMAL_OUTFIT_BADGER_001"):
 				return 11;
 			case -1803656137:
 				return 340;
@@ -8334,7 +8334,7 @@ int func_233(int iParam0, int iParam1)
 				return 4880;
 			case -1784977954:
 				return 2410;
-			case -1784505363:
+			case joaat("META_ANIMAL_OUTFIT_BUFFALO_M"):
 				return 57;
 			case -1784309042:
 				return 3230;
@@ -8426,7 +8426,7 @@ int func_233(int iParam0, int iParam1)
 				return 4528;
 			case -1740992590:
 				return 3503;
-			case -1739715544:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_000"):
 				return 205;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_STACHE_002_04"):
 				return 5123;
@@ -8550,7 +8550,7 @@ int func_233(int iParam0, int iParam1)
 				return 1968;
 			case -1688988898:
 				return 4614;
-			case -1688984856:
+			case joaat("META_OUTFIT_ANIMAL_SNAKENORTHCOPPER"):
 				return 269;
 			case -1688724759:
 				return 3164;
@@ -8586,7 +8586,7 @@ int func_233(int iParam0, int iParam1)
 				return 828;
 			case -1680831884:
 				return 4815;
-			case -1680715241:
+			case joaat("META_OUTFIT_ANIMAL_COYOTE_001"):
 				return 80;
 			case -1679307687:
 				return 3342;
@@ -8622,7 +8622,7 @@ int func_233(int iParam0, int iParam1)
 				return 3820;
 			case -1668710380:
 				return 3798;
-			case -1667731605:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPDESERT_000"):
 				return 40;
 			case -1666457514:
 				return 1567;
@@ -8676,7 +8676,7 @@ int func_233(int iParam0, int iParam1)
 				return 3744;
 			case -1656392754:
 				return 1150;
-			case -1655190100:
+			case joaat("META_OUTFIT_ANIMAL_POSSUM_000"):
 				return 226;
 			case -1654350622:
 				return 5529;
@@ -8740,7 +8740,7 @@ int func_233(int iParam0, int iParam1)
 				return 1304;
 			case -1633479938:
 				return 3790;
-			case -1632133521:
+			case joaat("META_OUTFIT_VAL_PIANO_PLAYER_02"):
 				return 635;
 			case joaat("HAT_MR1_019_ALT01"):
 				return 5130;
@@ -8778,7 +8778,7 @@ int func_233(int iParam0, int iParam1)
 				return 2111;
 			case -1619093821:
 				return 1297;
-			case -1618780616:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_LONGNOSEGAR"):
 				return 145;
 			case -1618758214:
 				return 1714;
@@ -8866,7 +8866,7 @@ int func_233(int iParam0, int iParam1)
 				return 5606;
 			case -1582989764:
 				return 2068;
-			case -1582008655:
+			case joaat("META_OUTFIT_VANHORN_VAR_03"):
 				return 446;
 			case -1581934131:
 				return 1635;
@@ -8904,7 +8904,7 @@ int func_233(int iParam0, int iParam1)
 				return 2592;
 			case -1567077450:
 				return 3033;
-			case -1566130370:
+			case joaat("META_ANIMAL_OUTFIT_PARROTGREEN"):
 				return 218;
 			case -1564894869:
 				return 738;
@@ -8922,7 +8922,7 @@ int func_233(int iParam0, int iParam1)
 				return 5449;
 			case -1562249180:
 				return 453;
-			case -1561386138:
+			case joaat("MAGICLANTERN_TICKETS_BLW_01"):
 				return 4251;
 			case -1560798716:
 				return 2182;
@@ -8970,13 +8970,13 @@ int func_233(int iParam0, int iParam1)
 				return 1712;
 			case -1542012855:
 				return 5608;
-			case -1541074772:
+			case joaat("PANTHER_LEGENDARY"):
 				return 217;
 			case joaat("HAT_FR1_659"):
 				return 4481;
-			case -1540150672:
+			case joaat("META_OUTFIT_ANIMAL_SPARROWGOLD"):
 				return 277;
-			case -1538725798:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_M"):
 				return 207;
 			case -1538619724:
 				return 1310;
@@ -9256,7 +9256,7 @@ int func_233(int iParam0, int iParam1)
 						return 901;
 					case -1394369597:
 						return 1445;
-					case -1394281412:
+					case joaat("META_OUTFIT_ANIMAL_COYOTE_000"):
 						return 79;
 					case -1392573190:
 						return 3305;
@@ -9268,7 +9268,7 @@ int func_233(int iParam0, int iParam1)
 						return 2297;
 					case -1390102139:
 						return 4108;
-					case -1388818080:
+					case joaat("META_OUTFIT_ANIMAL_PIGOLDSPOT"):
 						return 224;
 					case -1388621527:
 						return 1713;
@@ -9286,7 +9286,7 @@ int func_233(int iParam0, int iParam1)
 						return 3361;
 					case -1383406675:
 						return 3048;
-					case -1383176768:
+					case joaat("META_OUTFIT_ANIMAL_FOX_000"):
 						return 157;
 					case -1382876584:
 						return 1069;
@@ -9320,7 +9320,7 @@ int func_233(int iParam0, int iParam1)
 						return 2948;
 					case -1372641200:
 						return 3220;
-					case -1372086773:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMDESERT_000"):
 						return 32;
 					case -1372069185:
 						return 3699;
@@ -9338,7 +9338,7 @@ int func_233(int iParam0, int iParam1)
 						return 5438;
 					case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHIN_001_07"):
 						return 5083;
-					case joaat("PLAYER_STOPS_HORSE_WNT2_RIDE1_12"):
+					case joaat("META_OUTFIT_ANIMAL_JAVELINA_000"):
 						return 199;
 					case -1362984132:
 						return 905;
@@ -9346,7 +9346,7 @@ int func_233(int iParam0, int iParam1)
 						return 3821;
 					case -1360427607:
 						return 2135;
-					case -1360285648:
+					case joaat("META_OUTFIT_ANIMAL_SQUIRREL_001"):
 						return 280;
 					case -1360074767:
 						return 2792;
@@ -9388,7 +9388,7 @@ int func_233(int iParam0, int iParam1)
 						return 5465;
 					case -1347740553:
 						return 4535;
-					case -1346378887:
+					case joaat("META_ANIMAL_OUTFIT_BEARBLACK_000"):
 						return 22;
 					case -1345986938:
 						return 659;
@@ -9468,7 +9468,7 @@ int func_233(int iParam0, int iParam1)
 						return 3826;
 					case -1313794193:
 						return 2121;
-					case -1313615167:
+					case joaat("META_OUTFIT_ANIMAL_SEAGULLRINGBILLED"):
 						return 260;
 					case -1313156546:
 						return 623;
@@ -9510,7 +9510,7 @@ int func_233(int iParam0, int iParam1)
 						return 2186;
 					case -1301107843:
 						return 2272;
-					case -1299761151:
+					case joaat("META_OUTFIT_ANIMAL_POISON_RABBIT"):
 						return 247;
 					case -1298683031:
 						return 2265;
@@ -9534,7 +9534,7 @@ int func_233(int iParam0, int iParam1)
 						return 3780;
 					case -1291718938:
 						return 5562;
-					case -1289532595:
+					case joaat("META_OUTFIT_ANIMAL_POISON_FROGBULL"):
 						return 162;
 					case -1288823878:
 						return 1378;
@@ -9698,19 +9698,19 @@ int func_233(int iParam0, int iParam1)
 						return 4197;
 					case -1237621599:
 						return 2663;
-					case -1236418802:
+					case joaat("META_ANIMAL_OUTFIT_BULLHEREFORD"):
 						return 68;
-					case -1235944432:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONOM_001"):
 						return 242;
 					case -1233239944:
 						return 404;
 					case -1232740429:
 						return 5658;
-					case -1232542282:
+					case joaat("META_ANIMAL_OUTFIT_LOONPACIFIC"):
 						return 202;
 					case -1231877150:
 						return 4024;
-					case -1229572111:
+					case joaat("META_OUTFIT_BUTCHERCREEK_COOK_01"):
 						return 366;
 					case -1229189677:
 						return 2384;
@@ -9748,7 +9748,7 @@ int func_233(int iParam0, int iParam1)
 						return 2998;
 					case -1213490302:
 						return 4201;
-					case -1212478257:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_BEAVER"):
 						return 27;
 					case -1211524678:
 						return 2601;
@@ -9762,7 +9762,7 @@ int func_233(int iParam0, int iParam1)
 						return 2283;
 					case -1207970304:
 						return 1902;
-					case -1207774806:
+					case joaat("META_OUTFIT_PANTS_HEELS"):
 						return 1051;
 					case -1207636623:
 						return 2890;
@@ -9826,7 +9826,7 @@ int func_233(int iParam0, int iParam1)
 						return 482;
 					case -1183889201:
 						return 2954;
-					case -1183379522:
+					case joaat("META_OUTFIT_ANIMAL_POISON_DOGBLUETICKCOONHOUND"):
 						return 98;
 					case -1182422112:
 						return 2136;
@@ -9868,7 +9868,7 @@ int func_233(int iParam0, int iParam1)
 						return 2708;
 					case -1168906910:
 						return 327;
-					case -1168722760:
+					case joaat("META_ANIMAL_OUTFIT_BUFFALO_000"):
 						return 55;
 					case -1168693508:
 						return 2416;
@@ -9882,7 +9882,7 @@ int func_233(int iParam0, int iParam1)
 						return 4107;
 					case -1160821004:
 						return 1438;
-					case -1160541758:
+					case joaat("META_OUTFIT_ANIMAL_OWLCALI"):
 						return 211;
 					case -1158072339:
 						return 2573;
@@ -9894,9 +9894,9 @@ int func_233(int iParam0, int iParam1)
 						return 1111;
 					case -1155056484:
 						return 3581;
-					case -1154853036:
+					case joaat("META_OUTFIT_VAL_PIANO_PLAYER_04"):
 						return 637;
-					case -1154821073:
+					case joaat("META_OUTFIT_ANIMAL_SNAKESOUTHCOPPER"):
 						return 270;
 					case -1153870429:
 						return 2497;
@@ -9912,7 +9912,7 @@ int func_233(int iParam0, int iParam1)
 						return 3536;
 					case -1151768825:
 						return 3490;
-					case -1151440774:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMROCKY_001"):
 						return 36;
 					case -1151108317:
 						return 5586;
@@ -9922,7 +9922,7 @@ int func_233(int iParam0, int iParam1)
 						return 5781;
 					case -1149853461:
 						return 362;
-					case -1148662080:
+					case joaat("META_ANIMAL_OUTFIT_PARROTSCARLET"):
 						return 219;
 					case joaat("HAT_MR1_021"):
 						return 4634;
@@ -9980,7 +9980,7 @@ int func_233(int iParam0, int iParam1)
 						return 2861;
 					case -1124489518:
 						return 4329;
-					case -1122285933:
+					case joaat("META_OUTFIT_ANIMAL_SNAKECOTTONMOUTH"):
 						return 273;
 					case -1121761142:
 						return 4336;
@@ -9990,7 +9990,7 @@ int func_233(int iParam0, int iParam1)
 						return 4801;
 					case -1120526485:
 						return 854;
-					case -1120159737:
+					case joaat("META_OUTFIT_ANIMAL_HERONTRICOLOR"):
 						return 165;
 					case -1118909346:
 						return 485;
@@ -10022,11 +10022,11 @@ int func_233(int iParam0, int iParam1)
 						return 2477;
 					case -1108823458:
 						return 3245;
-					case -1107406441:
+					case joaat("META_OUTFIT_ANIMAL_RAT_001"):
 						return 256;
 					case -1107173821:
 						return 4133;
-					case -1106231666:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_SOCKEYESALMON"):
 						return 154;
 					case -1104231275:
 						return 5267;
@@ -10052,7 +10052,7 @@ int func_233(int iParam0, int iParam1)
 						return 2069;
 					case -1090766132:
 						return 2748;
-					case -1090271092:
+					case joaat("META_OUTFIT_BUTCHERCREEK_COOK_03"):
 						return 368;
 					case -1090160065:
 						return 900;
@@ -10136,7 +10136,7 @@ int func_233(int iParam0, int iParam1)
 						return 5505;
 					case -1057784856:
 						return 2155;
-					case -1057615530:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONOM_000"):
 						return 241;
 					case -1057105953:
 						return 2755;
@@ -10154,7 +10154,7 @@ int func_233(int iParam0, int iParam1)
 						return 3097;
 					case -1049024234:
 						return 715;
-					case -1048557937:
+					case joaat("META_OUTFIT_ANIMAL_CRANESANDHILL"):
 						return 86;
 					case -1047835576:
 						return 2739;
@@ -10174,13 +10174,13 @@ int func_233(int iParam0, int iParam1)
 						return 5425;
 					case -1043480529:
 						return 5444;
-					case -1043092861:
+					case joaat("META_OUTFIT_EMERALDRANCH_VAR_01"):
 						return 459;
 					case -1042839329:
 						return 687;
 					case -1041197591:
 						return 4756;
-					case -1039768986:
+					case joaat("META_OUTFIT_ANIMAL_WOLFLARGE_000"):
 						return 289;
 					case -1039144232:
 						return 3093;
@@ -10220,11 +10220,11 @@ int func_233(int iParam0, int iParam1)
 						return 1654;
 					case -1024448528:
 						return 2144;
-					case -1024016038:
+					case joaat("META_OUTFIT_ANIMAL_POISON_DOGHOUND"):
 						return 109;
 					case -1021941369:
 						return 5338;
-					case -1021877830:
+					case joaat("META_OUTFIT_ANIMAL_MOOSE_001"):
 						return 206;
 					case -1020321828:
 						return 3584;
@@ -10350,7 +10350,7 @@ int func_233(int iParam0, int iParam1)
 						return 562;
 					case -967360518:
 						return 448;
-					case -967163299:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJAM_000"):
 						return 232;
 					case -966128464:
 						return 3461;
@@ -10392,7 +10392,7 @@ int func_233(int iParam0, int iParam1)
 						return 1754;
 					case -953321788:
 						return 3263;
-					case -953201595:
+					case joaat("META_OUTFIT_ANIMAL_SQUIRRELRED"):
 						return 282;
 					case -952256680:
 						return 4931;
@@ -10556,9 +10556,9 @@ int func_233(int iParam0, int iParam1)
 						return 1518;
 					case -890419023:
 						return 1085;
-					case -888580579:
+					case joaat("META_ANIMAL_OUTFIT_BUFFALO_001"):
 						return 56;
-					case -886836096:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMROCKY"):
 						return 34;
 					case -886808916:
 						return 2721;
@@ -10606,7 +10606,7 @@ int func_233(int iParam0, int iParam1)
 						return 2216;
 					case -872634833:
 						return 1129;
-					case -872382606:
+					case joaat("META_OUTFIT_ANIMAL_VULTUREEAST"):
 						return 287;
 					case -872023541:
 						return 3535;
@@ -10644,7 +10644,7 @@ int func_233(int iParam0, int iParam1)
 						return 3142;
 					case -856451469:
 						return 4947;
-					case -855293722:
+					case joaat("META_OUTFIT_EMERALDRANCH_VAR_02"):
 						return 460;
 					case -854737512:
 						return 2316;
@@ -10684,7 +10684,7 @@ int func_233(int iParam0, int iParam1)
 						return 4242;
 					case -841776651:
 						return 2838;
-					case -841151793:
+					case joaat("COUGAR_LEGENDARY"):
 						return 72;
 					case -840869937:
 						return 3647;
@@ -10760,7 +10760,7 @@ int func_233(int iParam0, int iParam1)
 						return 2459;
 					case -813988972:
 						return 987;
-					case -813373518:
+					case joaat("META_OUTFIT_ANIMAL_POISON_ELK"):
 						return 133;
 					case -813319677:
 						return 5782;
@@ -10774,7 +10774,7 @@ int func_233(int iParam0, int iParam1)
 						return 3901;
 					case -810311120:
 						return 4800;
-					case -809569000:
+					case joaat("META_OUTFIT_ANIMAL_RAT_000"):
 						return 255;
 					case -808171391:
 						return 4929;
@@ -10874,13 +10874,13 @@ int func_233(int iParam0, int iParam1)
 						return 1778;
 					case joaat("HAT_MR1_069"):
 						return 4675;
-					case -775451121:
+					case joaat("REINFORCED_BINDINGS_FEET_DEFAULT"):
 						return 5864;
 					case -775038432:
 						return 4453;
-					case -775023191:
+					case joaat("META_ANIMAL_OUTFIT_ALLIGATOR1_001"):
 						return 1;
-					case -774938341:
+					case joaat("META_ANIMAL_OUTFIT_BUFFALO_M_000"):
 						return 58;
 					case -774890814:
 						return 586;
@@ -10894,7 +10894,7 @@ int func_233(int iParam0, int iParam1)
 						return 3082;
 					case -771189064:
 						return 5660;
-					case -770027479:
+					case joaat("META_OUTFIT_ANIMAL_EGRETSNOWY"):
 						return 126;
 					case -769528659:
 						return 3071;
@@ -10986,7 +10986,7 @@ int func_233(int iParam0, int iParam1)
 						return 1380;
 					case -737737856:
 						return 4998;
-					case -737163478:
+					case joaat("META_OUTFIT_ANIMAL_SPARROWEURO"):
 						return 276;
 					case -737069165:
 						return 5409;
@@ -10994,7 +10994,7 @@ int func_233(int iParam0, int iParam1)
 						return 1543;
 					case -735881712:
 						return 2548;
-					case -735264359:
+					case joaat("META_OUTFIT_ANIMAL_HAWKROUGH"):
 						return 164;
 					case -734048099:
 						return 2212;
@@ -11006,7 +11006,7 @@ int func_233(int iParam0, int iParam1)
 						return 5461;
 					case -731144983:
 						return 5335;
-					case -730833443:
+					case joaat("META_OUTFIT_ANIMAL_PRONGHORN_001"):
 						return 245;
 					case -730531534:
 						return 2329;
@@ -11122,7 +11122,7 @@ int func_233(int iParam0, int iParam1)
 						return 3753;
 					case -683323972:
 						return 1071;
-					case -682671307:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMDESERT"):
 						return 31;
 					case -681987827:
 						return 661;
@@ -11182,7 +11182,7 @@ int func_233(int iParam0, int iParam1)
 						return 3498;
 					case -662009659:
 						return 1363;
-					case -661468397:
+					case joaat("META_OUTFIT_BLACKWATER_VAR_02"):
 						return 373;
 					case -661216614:
 						return 1560;
@@ -11192,7 +11192,7 @@ int func_233(int iParam0, int iParam1)
 						return 4498;
 					case -659415215:
 						return 3435;
-					case -658571380:
+					case joaat("META_ANIMAL_OUTFIT_LOONYELLOW"):
 						return 203;
 					case -657665461:
 						return 2674;
@@ -11274,7 +11274,7 @@ int func_233(int iParam0, int iParam1)
 						return 4416;
 					case -626875660:
 						return 5341;
-					case -626808707:
+					case joaat("META_OUTFIT_ANIMAL_CHICKENLEGHORN"):
 						return 70;
 					case -625287055:
 						return 3308;
@@ -11346,7 +11346,7 @@ int func_233(int iParam0, int iParam1)
 						return 94;
 					case -598268833:
 						return 3444;
-					case -595873616:
+					case joaat("META_OUTFIT_ANIMAL_SEAGULLLAUGHING"):
 						return 259;
 					case -594424327:
 						return 2495;
@@ -11366,7 +11366,7 @@ int func_233(int iParam0, int iParam1)
 						return 1767;
 					case -588745599:
 						return 3403;
-					case -588162907:
+					case joaat("META_OUTFIT_ANIMAL_WOLFSMALL_000"):
 						return 298;
 					case -587538794:
 						return 4009;
@@ -11410,7 +11410,7 @@ int func_233(int iParam0, int iParam1)
 						return 4856;
 					case -568056006:
 						return 2203;
-					case -566788959:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_ELK"):
 						return 127;
 					case -566183237:
 						return 4352;
@@ -11430,11 +11430,11 @@ int func_233(int iParam0, int iParam1)
 						return 5738;
 					case -562705141:
 						return 3034;
-					case -561697001:
+					case joaat("META_ANIMAL_OUTFIT_ALLIGATOR1_000"):
 						return 0;
 					case -561467984:
 						return 1824;
-					case -558577652:
+					case joaat("META_OUTFIT_ANIMAL_FOX_001"):
 						return 158;
 					case -558355746:
 						return 2200;
@@ -11508,7 +11508,7 @@ int func_233(int iParam0, int iParam1)
 						return 4344;
 					case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHIN_000_08"):
 						return 5075;
-					case -539469050:
+					case joaat("META_OUTFIT_ANIMAL_EAGLEGOLDEN"):
 						return 123;
 					case -539298145:
 						return 2801;
@@ -11522,7 +11522,7 @@ int func_233(int iParam0, int iParam1)
 						return 5803;
 					case -535425906:
 						return 726;
-					case -535101650:
+					case joaat("META_OUTFIT_ANIMAL_PHEASANTCHINESE"):
 						return 222;
 					case joaat("HAT_MR1_068"):
 						return 4674;
@@ -11552,7 +11552,7 @@ int func_233(int iParam0, int iParam1)
 						return 1501;
 					case -524076867:
 						return 5707;
-					case -523178350:
+					case joaat("MANGY_RAT"):
 						return 254;
 					case joaat("PLAYER_THREE_MS1_BEARD_SHV_STACHE_001_02"):
 						return 5114;
@@ -11564,7 +11564,7 @@ int func_233(int iParam0, int iParam1)
 						return 2428;
 					case -520362209:
 						return 5736;
-					case joaat("PLAYER_STOPS_HORSE_WNT2_RIDE1_13"):
+					case joaat("META_OUTFIT_ANIMAL_JAVELINA_001"):
 						return 200;
 					case -518969703:
 						return 5392;
@@ -11572,7 +11572,7 @@ int func_233(int iParam0, int iParam1)
 						return 3332;
 					case -514477014:
 						return 4783;
-					case -514120480:
+					case joaat("META_OUTFIT_ANIMAL_PIGEONBANDTAIL"):
 						return 225;
 					case -513353480:
 						return 1369;
@@ -11784,13 +11784,13 @@ int func_233(int iParam0, int iParam1)
 						return 4563;
 					case joaat("CS_MADELINEFUSSAR_FS1_TURBAN_000"):
 						return 4444;
-					case -435547108:
+					case joaat("META_OUTFIT_VALENTINE_VAR_01"):
 						return 432;
 					case -433020993:
 						return 3386;
 					case -432580312:
 						return 2913;
-					case -431954321:
+					case joaat("META_OUTFIT_BLACKWATER_VAR_03"):
 						return 374;
 					case -431707417:
 						return 2465;
@@ -11818,7 +11818,7 @@ int func_233(int iParam0, int iParam1)
 						return 3500;
 					case -420968901:
 						return 975;
-					case -420925418:
+					case joaat("META_WEARABLE_COMPONENT_MP_MONEYBAGS_MALE"):
 						return 5817;
 					case -420079395:
 						return 1870;
@@ -11910,7 +11910,7 @@ int func_233(int iParam0, int iParam1)
 						return 5098;
 					case -387344661:
 						return 1465;
-					case -386220147:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_PRONGHORN"):
 						return 243;
 					case -386016106:
 						return 5325;
@@ -11950,7 +11950,7 @@ int func_233(int iParam0, int iParam1)
 						return 2793;
 					case -376643170:
 						return 2701;
-					case -376191772:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMROCKY_000"):
 						return 35;
 					case -375551845:
 						return 4868;
@@ -11960,7 +11960,7 @@ int func_233(int iParam0, int iParam1)
 						return 2632;
 					case -374021869:
 						return 3125;
-					case -374015026:
+					case joaat("META_OUTFIT_ANIMAL_POISON_FOX"):
 						return 161;
 					case -371124820:
 						return 3614;
@@ -11986,7 +11986,7 @@ int func_233(int iParam0, int iParam1)
 						return 2528;
 					case -364813759:
 						return 3713;
-					case -364709180:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_MUSKIE"):
 						return 146;
 					case -359202364:
 						return 1953;
@@ -12098,7 +12098,7 @@ int func_233(int iParam0, int iParam1)
 						return 1265;
 					case -316466960:
 						return 4960;
-					case -315064955:
+					case joaat("META_OUTFIT_ANIMAL_DEER_001"):
 						return 89;
 					case -314862125:
 						return 262;
@@ -12128,7 +12128,7 @@ int func_233(int iParam0, int iParam1)
 						return 2232;
 					case -308184260:
 						return 2931;
-					case -307919990:
+					case joaat("META_OUTFIT_ANIMAL_ELK_001"):
 						return 129;
 					case -307000369:
 						return 1611;
@@ -12180,13 +12180,13 @@ int func_233(int iParam0, int iParam1)
 						return 1768;
 					case -290616418:
 						return 5428;
-					case -290259928:
+					case joaat("META_OUTFIT_ANIMAL_WOLFSMALL_001"):
 						return 299;
 					case joaat("HAT_MR1_085"):
 						return 4687;
 					case -287830874:
 						return 4525;
-					case -287190129:
+					case joaat("META_OUTFIT_ANIMAL_COUGAR_000"):
 						return 74;
 					case -286141027:
 						return 1707;
@@ -12276,7 +12276,7 @@ int func_233(int iParam0, int iParam1)
 						return 2704;
 					case -256765748:
 						return 1224;
-					case -256370740:
+					case joaat("META_OUTFIT_ANIMAL_POISON_SKUNK"):
 						return 263;
 					case -254794762:
 						return 915;
@@ -12346,7 +12346,7 @@ int func_233(int iParam0, int iParam1)
 						return 4613;
 					case -228472306:
 						return 4173;
-					case -226605573:
+					case joaat("META_OUTFIT_VAL_PIANO_PLAYER_01"):
 						return 634;
 					case -226375808:
 						return 542;
@@ -12368,9 +12368,9 @@ int func_233(int iParam0, int iParam1)
 						return 4305;
 					case -220774791:
 						return 5744;
-					case -220316070:
+					case joaat("META_OUTFIT_ANIMAL_SONGBIRDTANAGER"):
 						return 275;
-					case -219463491:
+					case joaat("META_OUTFIT_ANIMAL_PANTHER_000"):
 						return 214;
 					case -217195741:
 						return 2555;
@@ -12522,7 +12522,7 @@ int func_233(int iParam0, int iParam1)
 						return 4482;
 					case -164067433:
 						return 4579;
-					case -163914005:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAM_001"):
 						return 30;
 					case -163324029:
 						return 3445;
@@ -12544,7 +12544,7 @@ int func_233(int iParam0, int iParam1)
 						return 317;
 					case -156180016:
 						return 5632;
-					case -156048846:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPDESERT"):
 						return 39;
 					case -153914114:
 						return 2311;
@@ -12558,7 +12558,7 @@ int func_233(int iParam0, int iParam1)
 						return 5307;
 					case -150866858:
 						return 3579;
-					case -150174729:
+					case joaat("META_ANIMAL_OUTFIT_BEAVER_001"):
 						return 26;
 					case -149657157:
 						return 3346;
@@ -12610,7 +12610,7 @@ int func_233(int iParam0, int iParam1)
 						return 1555;
 					case -129904911:
 						return 3893;
-					case -128698192:
+					case joaat("META_OUTFIT_VALENTINE_VAR_02"):
 						return 433;
 					case -128035795:
 						return 1096;
@@ -12618,7 +12618,7 @@ int func_233(int iParam0, int iParam1)
 						return 3646;
 					case -127494429:
 						return 301;
-					case -126306239:
+					case joaat("AM_ROBTRAIN_REAR_GUARD_01"):
 						return 4289;
 					case -125900639:
 						return 2181;
@@ -12686,7 +12686,7 @@ int func_233(int iParam0, int iParam1)
 						return 3912;
 					case -103241551:
 						return 2322;
-					case -101240835:
+					case joaat("META_OUTFIT_ANIMAL_SPIRIT_COYOTE_A"):
 						return 82;
 					case -99355867:
 						return 653;
@@ -12714,7 +12714,7 @@ int func_233(int iParam0, int iParam1)
 						return 5834;
 					case -87854144:
 						return 4350;
-					case -87794079:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONO_000"):
 						return 238;
 					case -87015717:
 						return 5278;
@@ -12786,7 +12786,7 @@ int func_233(int iParam0, int iParam1)
 						return 4165;
 					case -61383994:
 						return 1855;
-					case -60896296:
+					case joaat("META_OUTFIT_ANIMAL_SNAKERAINBOWBOA"):
 						return 271;
 					case -59601903:
 						return 860;
@@ -12818,7 +12818,7 @@ int func_233(int iParam0, int iParam1)
 						return 4684;
 					case -48870448:
 						return 948;
-					case -48533502:
+					case joaat("META_OUTFIT_ANIMAL_COUGAR_001"):
 						return 75;
 					case -48181857:
 						return 3389;
@@ -12856,7 +12856,7 @@ int func_233(int iParam0, int iParam1)
 						return 4194;
 					case -38195500:
 						return 5795;
-					case -37747857:
+					case joaat("META_OUTFIT_ANIMAL_ELK_M"):
 						return 130;
 					case joaat("HAT_FR1_020"):
 						return 4466;
@@ -12874,11 +12874,11 @@ int func_233(int iParam0, int iParam1)
 						return 4825;
 					case -31571556:
 						return 1910;
-					case -31550146:
+					case joaat("META_ANIMAL_OUTFIT_BEAR_000"):
 						return 14;
 					case -29543774:
 						return 1023;
-					case -28012574:
+					case joaat("META_ANIMAL_OUTFIT_BULLDEVON"):
 						return 67;
 					case -27749127:
 						return 1580;
@@ -12902,7 +12902,7 @@ int func_233(int iParam0, int iParam1)
 						return 3513;
 					case -20984612:
 						return 1021;
-					case -20928664:
+					case joaat("META_OUTFIT_ANIMAL_PELICANWHITE"):
 						return 221;
 					case -20737928:
 						return 3319;
@@ -12916,7 +12916,7 @@ int func_233(int iParam0, int iParam1)
 						return 4420;
 					case -18780859:
 						return 1920;
-					case -14692129:
+					case joaat("META_OUTFIT_RIGGSSTATION_VAR_01"):
 						return 4280;
 					case -14515504:
 						return 4776;
@@ -12934,11 +12934,11 @@ int func_233(int iParam0, int iParam1)
 						return 4371;
 					case -8240077:
 						return 4956;
-					case -7367611:
+					case joaat("META_OUTFIT_ANIMAL_POISON_CHAINPICKEREL"):
 						return 138;
 					case -6942546:
 						return 3133;
-					case -6609035:
+					case joaat("META_OUTFIT_ANIMAL_ELK_000"):
 						return 128;
 					case -6199089:
 						return 4488;
@@ -12946,7 +12946,7 @@ int func_233(int iParam0, int iParam1)
 						return 4843;
 					case -4979474:
 						return 2776;
-					case -4595908:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_NORTHERNPIKE"):
 						return 147;
 					case -4228011:
 						return 1828;
@@ -12982,7 +12982,7 @@ int func_233(int iParam0, int iParam1)
 						return 667;
 					case 11964851:
 						return 3329;
-					case 13145675:
+					case joaat("META_OUTFIT_ANIMAL_CORMORANTNEO"):
 						return 71;
 					case 13248388:
 						return 2262;
@@ -13056,7 +13056,7 @@ int func_233(int iParam0, int iParam1)
 						return 3894;
 					case 41730569:
 						return 2364;
-					case 41788943:
+					case joaat("META_OUTFIT_DEFAULT"):
 						return 756;
 					case 41792611:
 						return 1223;
@@ -13124,7 +13124,7 @@ int func_233(int iParam0, int iParam1)
 						return 600;
 					case 67843882:
 						return 5284;
-					case 68127406:
+					case joaat("META_OUTFIT_SAINTDENIS_VAR_01"):
 						return 408;
 					case 70096421:
 						return 2542;
@@ -13134,7 +13134,7 @@ int func_233(int iParam0, int iParam1)
 						return 1125;
 					case 71890561:
 						return 631;
-					case 72307494:
+					case joaat("META_OUTFIT_BUTCHERCREEK_COOK_02"):
 						return 367;
 					case 72615086:
 						return 2730;
@@ -13166,7 +13166,7 @@ int func_233(int iParam0, int iParam1)
 						return 3979;
 					case 81480873:
 						return 5309;
-					case 83723733:
+					case joaat("META_ANIMAL_OUTFIT_DOGLABCHOC"):
 						return 111;
 					case 85324915:
 						return 2002;
@@ -13196,7 +13196,7 @@ int func_233(int iParam0, int iParam1)
 						return 300;
 					case 95127708:
 						return 5036;
-					case 95938134:
+					case joaat("META_OUTFIT_ANIMAL_PANTHER_001"):
 						return 215;
 					case 96688455:
 						return 3869;
@@ -13272,7 +13272,7 @@ int func_233(int iParam0, int iParam1)
 						return 5099;
 					case 122596261:
 						return 3339;
-					case 122941845:
+					case joaat("META_OUTFIT_ANIMAL_POISON_BEARBLACK"):
 						return 24;
 					case 124489516:
 						return 3569;
@@ -13488,7 +13488,7 @@ int func_233(int iParam0, int iParam1)
 						return 3055;
 					case 218350172:
 						return 4273;
-					case 218671895:
+					case joaat("META_OUTFIT_ANIMAL_POISON_COYOTE"):
 						return 81;
 					case 220757907:
 						return 4436;
@@ -13504,7 +13504,7 @@ int func_233(int iParam0, int iParam1)
 						return 4682;
 					case 224785123:
 						return 3819;
-					case 226255616:
+					case joaat("META_OUTFIT_VALENTINE_VAR_03"):
 						return 434;
 					case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHOPS_000_06"):
 						return 5091;
@@ -13668,7 +13668,7 @@ int func_233(int iParam0, int iParam1)
 						return 2597;
 					case 278819816:
 						return 3815;
-					case 279472558:
+					case joaat("DISCOVERABLES_WHITE_BUFFALO"):
 						return 54;
 					case 279688279:
 						return 5300;
@@ -13784,9 +13784,9 @@ int func_233(int iParam0, int iParam1)
 						return 1621;
 					case 315845604:
 						return 5235;
-					case 316456870:
+					case joaat("META_OUTFIT_BLACKWATER_VAR_01"):
 						return 372;
-					case 317399512:
+					case joaat("META_OUTFIT_FIELD_DRESSING_003"):
 						return 64;
 					case 317713758:
 						return 428;
@@ -13824,7 +13824,7 @@ int func_233(int iParam0, int iParam1)
 						return 4577;
 					case 328693452:
 						return 1547;
-					case 329430715:
+					case joaat("META_OUTFIT_PANTS_FLATS"):
 						return 1050;
 					case 330292936:
 						return 2973;
@@ -13832,7 +13832,7 @@ int func_233(int iParam0, int iParam1)
 						return 2868;
 					case 331537537:
 						return 1984;
-					case 331645018:
+					case joaat("META_OUTFIT_COLD_WEATHER"):
 						return 759;
 					case 331922849:
 						return 2681;
@@ -13930,7 +13930,7 @@ int func_233(int iParam0, int iParam1)
 						return 3368;
 					case 375471192:
 						return 498;
-					case 375593826:
+					case joaat("COYOTE_LEGENDARY"):
 						return 78;
 					case 377052846:
 						return 791;
@@ -13984,7 +13984,7 @@ int func_233(int iParam0, int iParam1)
 						return 886;
 					case joaat("HAT_TR1_062"):
 						return 4723;
-					case 389666332:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONO"):
 						return 237;
 					case 390787076:
 						return 4010;
@@ -14006,7 +14006,7 @@ int func_233(int iParam0, int iParam1)
 						return 21;
 					case 395705379:
 						return 5222;
-					case 395908581:
+					case joaat("META_OUTFIT_ANIMAL_POISON_SQUIRREL"):
 						return 278;
 					case 396254774:
 						return 2967;
@@ -14056,7 +14056,7 @@ int func_233(int iParam0, int iParam1)
 						return 5241;
 					case 413714842:
 						return 3633;
-					case 413989195:
+					case joaat("META_OUTFIT_ANIMAL_FOXGRAY"):
 						return 159;
 					case 414488971:
 						return 4916;
@@ -14100,7 +14100,7 @@ int func_233(int iParam0, int iParam1)
 						return 3268;
 					case 430539445:
 						return 1286;
-					case 432909265:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNM"):
 						return 234;
 					case 433552455:
 						return 5375;
@@ -14188,7 +14188,7 @@ int func_233(int iParam0, int iParam1)
 						return 514;
 					case 462249975:
 						return 2848;
-					case 463389154:
+					case joaat("META_OUTFIT_ANIMAL_SNAKENORTHERNWATER"):
 						return 274;
 					case 463584608:
 						return 4777;
@@ -14400,7 +14400,7 @@ int func_233(int iParam0, int iParam1)
 						return 1058;
 					case 538142238:
 						return 2260;
-					case 538936875:
+					case joaat("META_OUTFIT_ANIMAL_PIGBIGCHINA"):
 						return 223;
 					case 539239560:
 						return 5277;
@@ -14466,7 +14466,7 @@ int func_233(int iParam0, int iParam1)
 						return 3118;
 					case 564117607:
 						return 4058;
-					case 564171926:
+					case joaat("META_OUTFIT_BUTCHERCREEK_VAR_02"):
 						return 370;
 					case joaat("HAT_MR1_092"):
 						return 4693;
@@ -14492,7 +14492,7 @@ int func_233(int iParam0, int iParam1)
 						return 5391;
 					case 573025389:
 						return 3114;
-					case 573391333:
+					case joaat("REINFORCED_BINDINGS_HANDS_DEFAULT"):
 						return 5866;
 					case joaat("HEAD_03"):
 						return 4845;
@@ -14544,11 +14544,11 @@ int func_233(int iParam0, int iParam1)
 						return 1610;
 					case 593589265:
 						return 1209;
-					case 593663564:
+					case joaat("META_ANIMAL_OUTFIT_DOGLABYELLOW"):
 						return 112;
 					case 595825765:
 						return 4380;
-					case 597297690:
+					case joaat("BEAR_LEGENDARY"):
 						return 13;
 					case 597763850:
 						return 2918;
@@ -14608,7 +14608,7 @@ int func_233(int iParam0, int iParam1)
 						return 4124;
 					case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHIN_000_04"):
 						return 5071;
-					case 621642275:
+					case joaat("META_ANIMAL_OUTFIT_ALLIGATOR3_001"):
 						return 7;
 					case 621949248:
 						return 1561;
@@ -14634,7 +14634,7 @@ int func_233(int iParam0, int iParam1)
 						return 3965;
 					case 629126052:
 						return 3209;
-					case 629329300:
+					case joaat("META_OUTFIT_SAINTDENIS_VAR_03"):
 						return 410;
 					case 629381614:
 						return 2431;
@@ -14678,7 +14678,7 @@ int func_233(int iParam0, int iParam1)
 						return 115;
 					case 637524020:
 						return 3566;
-					case 638062700:
+					case joaat("META_OUTFIT_DRESS_FLATS"):
 						return 1047;
 					case 639109951:
 						return 4954;
@@ -14726,7 +14726,7 @@ int func_233(int iParam0, int iParam1)
 						return 1320;
 					case 658803113:
 						return 1874;
-					case 659982441:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_BOAR"):
 						return 48;
 					case 660162155:
 						return 1703;
@@ -14750,7 +14750,7 @@ int func_233(int iParam0, int iParam1)
 						return 3508;
 					case 666823002:
 						return 378;
-					case 667304357:
+					case joaat("META_ANIMAL_OUTFIT_BUCK_001"):
 						return 50;
 					case 667942732:
 						return 1504;
@@ -14770,7 +14770,7 @@ int func_233(int iParam0, int iParam1)
 						return 4926;
 					case 674973847:
 						return 3337;
-					case 675288905:
+					case joaat("META_OUTFIT_ANIMAL_POISON_TOAD"):
 						return 284;
 					case 676615008:
 						return 4020;
@@ -14778,7 +14778,7 @@ int func_233(int iParam0, int iParam1)
 						return 1173;
 					case 677578668:
 						return 2964;
-					case 680401050:
+					case joaat("META_OUTFIT_TUMBLEWEED_VAR_03"):
 						return 422;
 					case 680615675:
 						return 677;
@@ -14810,7 +14810,7 @@ int func_233(int iParam0, int iParam1)
 						return 2654;
 					case 687823400:
 						return 5373;
-					case 689325217:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAM_000"):
 						return 29;
 					case joaat("HAT_MR1_014"):
 						return 4620;
@@ -14832,15 +14832,15 @@ int func_233(int iParam0, int iParam1)
 						return 3235;
 					case 695841138:
 						return 4742;
-					case 696231378:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNRAM"):
 						return 28;
 					case 696680033:
 						return 2442;
 					case 696990949:
 						return 2480;
-					case 697508196:
+					case joaat("META_WEARABLE_COMPONENT_MP_MONEYBAGS_FEMALE"):
 						return 5816;
-					case 697666614:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNM_001"):
 						return 236;
 					case 697683187:
 						return 3145;
@@ -14886,7 +14886,7 @@ int func_233(int iParam0, int iParam1)
 						return 3906;
 					case 705859801:
 						return 4340;
-					case 707006636:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEP_000"):
 						return 37;
 					case 707549728:
 						return 4972;
@@ -14934,7 +14934,7 @@ int func_233(int iParam0, int iParam1)
 						return 3550;
 					case 723820900:
 						return 1732;
-					case 725155934:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_FOX"):
 						return 156;
 					case 729370429:
 						return 4229;
@@ -15072,7 +15072,7 @@ int func_233(int iParam0, int iParam1)
 						return 3727;
 					case 779191267:
 						return 1566;
-					case 780666035:
+					case joaat("META_OUTFIT_WALLACESTATION_VAR_03"):
 						return 4285;
 					case joaat("MSP_NATIVE1_AILING_NATIVE_02"):
 						return 3204;
@@ -15090,7 +15090,7 @@ int func_233(int iParam0, int iParam1)
 						return 4136;
 					case 783333033:
 						return 4779;
-					case 784342540:
+					case joaat("META_OUTFIT_ANIMAL_FOXSILVER"):
 						return 160;
 					case 784451235:
 						return 4822;
@@ -15110,7 +15110,7 @@ int func_233(int iParam0, int iParam1)
 						return 3270;
 					case 786696466:
 						return 2537;
-					case 786903081:
+					case joaat("META_OUTFIT_ANIMAL_SQUIRREL_000"):
 						return 279;
 					case 787112104:
 						return 4971;
@@ -15118,7 +15118,7 @@ int func_233(int iParam0, int iParam1)
 						return 2884;
 					case 787636659:
 						return 3841;
-					case 787732969:
+					case joaat("META_OUTFIT_FIELD_DRESSING_001"):
 						return 3;
 					case 789463698:
 						return 5393;
@@ -15158,7 +15158,7 @@ int func_233(int iParam0, int iParam1)
 						return 3700;
 					case 800997526:
 						return 4816;
-					case 801255637:
+					case joaat("META_OUTFIT_BUTCHERCREEK_VAR_03"):
 						return 371;
 					case 801529481:
 						return 652;
@@ -15168,7 +15168,7 @@ int func_233(int iParam0, int iParam1)
 						return 3805;
 					case joaat("HAT_FR1_010"):
 						return 4463;
-					case 802894091:
+					case joaat("META_OUTFIT_BUTCHERCREEK_VAR_01"):
 						return 369;
 					case 802926215:
 						return 2438;
@@ -15256,7 +15256,7 @@ int func_233(int iParam0, int iParam1)
 				{
 					case 833279350:
 						return 3032;
-					case 834383524:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPROCKY_000"):
 						return 43;
 					case 837425920:
 						return 2909;
@@ -15384,7 +15384,7 @@ int func_233(int iParam0, int iParam1)
 						return 1793;
 					case 888403806:
 						return 4875;
-					case 889331851:
+					case joaat("META_OUTFIT_ANIMAL_OWLNORTH"):
 						return 212;
 					case 889771567:
 						return 2866;
@@ -15454,7 +15454,7 @@ int func_233(int iParam0, int iParam1)
 						return 4172;
 					case 909995553:
 						return 1194;
-					case 912158539:
+					case joaat("META_OUTFIT_SAINTDENIS_VAR_02"):
 						return 409;
 					case 912389556:
 						return 3843;
@@ -15476,7 +15476,7 @@ int func_233(int iParam0, int iParam1)
 						return 3830;
 					case 921937100:
 						return 571;
-					case 922027494:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_WOLF"):
 						return 288;
 					case 922665377:
 						return 3156;
@@ -15504,7 +15504,7 @@ int func_233(int iParam0, int iParam1)
 						return 1436;
 					case 928671868:
 						return 3146;
-					case 929703644:
+					case joaat("META_ANIMAL_OUTFIT_ALLIGATOR3_000"):
 						return 6;
 					case joaat("FOREMAN"):
 						return 5262;
@@ -15542,7 +15542,7 @@ int func_233(int iParam0, int iParam1)
 						return 5832;
 					case 940313520:
 						return 2113;
-					case 940895564:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_CHAINPICKEREL"):
 						return 137;
 					case 941285114:
 						return 5316;
@@ -15552,7 +15552,7 @@ int func_233(int iParam0, int iParam1)
 						return 1670;
 					case 941441328:
 						return 2720;
-					case 943405819:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_BLUEGILL"):
 						return 134;
 					case 943566851:
 						return 4405;
@@ -15616,7 +15616,7 @@ int func_233(int iParam0, int iParam1)
 						return 2065;
 					case 965966943:
 						return 3961;
-					case 966583925:
+					case joaat("META_ANIMAL_OUTFIT_OXDEVON"):
 						return 213;
 					case joaat("HAT_MR1_089"):
 						return 4691;
@@ -15742,7 +15742,7 @@ int func_233(int iParam0, int iParam1)
 						return 4741;
 					case 1009966619:
 						return 1775;
-					case 1011154058:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJAM"):
 						return 231;
 					case 1011286169:
 						return 4059;
@@ -15750,7 +15750,7 @@ int func_233(int iParam0, int iParam1)
 						return 198;
 					case 1012383242:
 						return 1911;
-					case 1012768862:
+					case joaat("META_OUTFIT_WALLACESTATION_VAR_02"):
 						return 4284;
 					case 1012859469:
 						return 2054;
@@ -15900,7 +15900,7 @@ int func_233(int iParam0, int iParam1)
 						return 5482;
 					case 1057493963:
 						return 1970;
-					case 1058681367:
+					case joaat("META_OUTFIT_ANIMAL_PANTHERFLORIDA"):
 						return 216;
 					case 1059434053:
 						return 798;
@@ -15964,7 +15964,7 @@ int func_233(int iParam0, int iParam1)
 						return 2645;
 					case 1085275484:
 						return 1993;
-					case 1085373796:
+					case joaat("META_OUTFIT_FIELD_DRESSING_002"):
 						return 4;
 					case 1085627780:
 						return 1025;
@@ -16010,7 +16010,7 @@ int func_233(int iParam0, int iParam1)
 						return 3696;
 					case 1098316139:
 						return 3255;
-					case 1100735684:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_PERCH"):
 						return 148;
 					case 1101489618:
 						return 539;
@@ -16088,7 +16088,7 @@ int func_233(int iParam0, int iParam1)
 						return 4019;
 					case 1126225987:
 						return 3052;
-					case 1126570175:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONOM"):
 						return 240;
 					case 1127268175:
 						return 2370;
@@ -16182,9 +16182,9 @@ int func_233(int iParam0, int iParam1)
 						return 2462;
 					case 1163868428:
 						return 5432;
-					case 1164706043:
+					case joaat("META_OUTFIT_ANIMAL_RACCOON_001"):
 						return 253;
-					case 1165342204:
+					case joaat("META_OUTFIT_ANIMAL_CHICKENJAVA"):
 						return 69;
 					case 1165902306:
 						return 2009;
@@ -16198,7 +16198,7 @@ int func_233(int iParam0, int iParam1)
 						return 1720;
 					case 1170159487:
 						return 2257;
-					case 1171757588:
+					case joaat("META_ANIMAL_OUTFIT_DOGLABBLACK"):
 						return 110;
 					case 1172406525:
 						return 4999;
@@ -16248,7 +16248,7 @@ int func_233(int iParam0, int iParam1)
 						return 1219;
 					case 1194427184:
 						return 896;
-					case 1194574257:
+					case joaat("META_OUTFIT_VANHORN_VAR_01"):
 						return 444;
 					case 1195126440:
 						return 4123;
@@ -16370,7 +16370,7 @@ int func_233(int iParam0, int iParam1)
 						return 491;
 					case 1233260892:
 						return 5158;
-					case 1234539032:
+					case joaat("META_OUTFIT_ANIMAL_ROOSTERJAVA"):
 						return 257;
 					case 1235170386:
 						return 2161;
@@ -16434,7 +16434,7 @@ int func_233(int iParam0, int iParam1)
 						return 3662;
 					case 1257524659:
 						return 584;
-					case 1257983596:
+					case joaat("META_OUTFIT_ANIMAL_POISON_RACCOON"):
 						return 251;
 					case joaat("HAT_FR1_613"):
 						return 4477;
@@ -16480,7 +16480,7 @@ int func_233(int iParam0, int iParam1)
 						return 5014;
 					case 1268173643:
 						return 5479;
-					case 1268180497:
+					case joaat("META_HORSE_SADDLE_ONLY"):
 						return 118;
 					case 1269851066:
 						return 2561;
@@ -16538,7 +16538,7 @@ int func_233(int iParam0, int iParam1)
 						return 2198;
 					case 1291777022:
 						return 3755;
-					case 1292613885:
+					case joaat("LABORER"):
 						return 5351;
 					case 1293290589:
 						return 4067;
@@ -16546,7 +16546,7 @@ int func_233(int iParam0, int iParam1)
 						return 1632;
 					case joaat("HAT_MR1_097"):
 						return 4696;
-					case 1293931317:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_ROCKBASS"):
 						return 152;
 					case 1294637057:
 						return 1702;
@@ -16636,7 +16636,7 @@ int func_233(int iParam0, int iParam1)
 						return 4302;
 					case 1321056085:
 						return 5685;
-					case 1321911407:
+					case joaat("META_OUTFIT_EMERALDRANCH_VAR_03"):
 						return 461;
 					case 1322011626:
 						return 1502;
@@ -16662,7 +16662,7 @@ int func_233(int iParam0, int iParam1)
 						return 4909;
 					case 1327838986:
 						return 596;
-					case 1328336590:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_CHANNELCATFISH"):
 						return 141;
 					case 1329153734:
 						return 2344;
@@ -16696,9 +16696,9 @@ int func_233(int iParam0, int iParam1)
 						return 1119;
 					case 1338340040:
 						return 402;
-					case 1338586418:
+					case joaat("MAGICLANTERN_TICKETS_VAL_01"):
 						return 4253;
-					case 1340150593:
+					case joaat("META_OUTFIT_ANNESBURG_VAR_02"):
 						return 4248;
 					case 1340234857:
 						return 1817;
@@ -16764,7 +16764,7 @@ int func_233(int iParam0, int iParam1)
 						return 3860;
 					case 1369993929:
 						return 3275;
-					case 1370409852:
+					case joaat("META_OUTFIT_DRESS_HEELS"):
 						return 1048;
 					case 1371076591:
 						return 5729;
@@ -16800,9 +16800,9 @@ int func_233(int iParam0, int iParam1)
 						return 2376;
 					case 1382794278:
 						return 3216;
-					case 1383633612:
+					case joaat("META_OUTFIT_ANIMAL_RABBIT_000"):
 						return 248;
-					case 1389459977:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_BIGHORNRAM"):
 						return 45;
 					case 1389873418:
 						return 2682;
@@ -16846,7 +16846,7 @@ int func_233(int iParam0, int iParam1)
 						return 2115;
 					case joaat("ACCS_MR1_059"):
 						return 4489;
-					case 1402464644:
+					case joaat("META_OUTFIT_ANIMAL_HAWKREDTAIL"):
 						return 163;
 					case 1403421280:
 						return 2460;
@@ -16888,7 +16888,7 @@ int func_233(int iParam0, int iParam1)
 						return 2043;
 					case 1414721216:
 						return 861;
-					case 1415163930:
+					case joaat("META_OUTFIT_ANIMAL_ALBINO_MOOSE"):
 						return 204;
 					case 1415292890:
 						return 1251;
@@ -16966,7 +16966,7 @@ int func_233(int iParam0, int iParam1)
 						return 2251;
 					case 1436504192:
 						return 1675;
-					case 1437006206:
+					case joaat("META_OUTFIT_ANIMAL_EGRETLITTLE"):
 						return 125;
 					case 1437237816:
 						return 4790;
@@ -16994,7 +16994,7 @@ int func_233(int iParam0, int iParam1)
 						return 1925;
 					case 1447938793:
 						return 925;
-					case 1448942408:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_SMALLMOUTHBASS"):
 						return 155;
 					case 1449629166:
 						return 3801;
@@ -17002,9 +17002,9 @@ int func_233(int iParam0, int iParam1)
 						return 862;
 					case 1450454068:
 						return 5164;
-					case 1451491046:
+					case joaat("META_OUTFIT_ANIMAL_POISON_BLUEGIL"):
 						return 135;
-					case 1451635371:
+					case joaat("META_OUTFIT_ANIMAL_SKUNK_001"):
 						return 265;
 					case 1452165017:
 						return 3027;
@@ -17104,7 +17104,7 @@ int func_233(int iParam0, int iParam1)
 						return 5157;
 					case 1492392695:
 						return 5772;
-					case 1492558869:
+					case joaat("META_OUTFIT_ANIMAL_POISON_LAKESTURGEON"):
 						return 143;
 					case 1493140631:
 						return 3715;
@@ -17118,19 +17118,19 @@ int func_233(int iParam0, int iParam1)
 						return 5261;
 					case 1496433042:
 						return 2090;
-					case 1497369321:
+					case joaat("META_OUTFIT_ANIMAL_WOLFTIMBER"):
 						return 296;
 					case 1498104676:
 						return 4103;
 					case 1500197051:
 						return 1162;
-					case 1501573693:
+					case joaat("META_OUTFIT_ANIMAL_ELK_M_000"):
 						return 131;
 					case 1501644473:
 						return 4312;
 					case 1502946735:
 						return 5066;
-					case 1503798624:
+					case joaat("META_ANIMAL_OUTFIT_BUCK_000"):
 						return 49;
 					case 1507866692:
 						return 3998;
@@ -17140,7 +17140,7 @@ int func_233(int iParam0, int iParam1)
 						return 4803;
 					case 1509284778:
 						return 1881;
-					case 1509626576:
+					case joaat("META_ANIMAL_OUTFIT_BOAR_000"):
 						return 46;
 					case 1509908196:
 						return 3310;
@@ -17212,7 +17212,7 @@ int func_233(int iParam0, int iParam1)
 						return 348;
 					case 1526616306:
 						return 5786;
-					case 1526876460:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_REDFINPICKEREL"):
 						return 150;
 					case 1527655069:
 						return 3465;
@@ -17262,7 +17262,7 @@ int func_233(int iParam0, int iParam1)
 				}
 				return -1;
 			}
-			if (iParam0 <= 2146685523)
+			if (iParam0 <= joaat("META_OUTFIT_ANIMAL_MOOSE_M_001"))
 			{
 				switch (iParam0)
 				{
@@ -17282,7 +17282,7 @@ int func_233(int iParam0, int iParam1)
 						return 4078;
 					case 1551044416:
 						return 4542;
-					case 1553811810:
+					case joaat("META_OUTFIT_ANIMAL_SPIRIT_BUCK"):
 						return 53;
 					case 1554294233:
 						return 1613;
@@ -17338,7 +17338,7 @@ int func_233(int iParam0, int iParam1)
 						return 4127;
 					case 1571730313:
 						return 2665;
-					case 1572075467:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEP_001"):
 						return 38;
 					case 1572762119:
 						return 3231;
@@ -17352,7 +17352,7 @@ int func_233(int iParam0, int iParam1)
 						return 593;
 					case 1575482012:
 						return 1266;
-					case 1577016527:
+					case joaat("META_OUTFIT_ANIMAL_TURKEYWILDRIO"):
 						return 285;
 					case 1577023662:
 						return 3521;
@@ -17390,7 +17390,7 @@ int func_233(int iParam0, int iParam1)
 						return 1727;
 					case 1595559297:
 						return 2736;
-					case 1596049292:
+					case joaat("META_OUTFIT_ANIMAL_WOLFMEDIUM_000"):
 						return 294;
 					case 1596598302:
 						return 2479;
@@ -17400,7 +17400,7 @@ int func_233(int iParam0, int iParam1)
 						return 2618;
 					case 1598276604:
 						return 1006;
-					case 1598470798:
+					case joaat("META_OUTFIT_FIELD_DRESSING_000"):
 						return 2;
 					case 1599032627:
 						return 2224;
@@ -17474,7 +17474,7 @@ int func_233(int iParam0, int iParam1)
 						return 1539;
 					case 1620894109:
 						return 3000;
-					case 1621798704:
+					case joaat("META_OUTFIT_ANIMAL_RABBIT_001"):
 						return 249;
 					case 1622451963:
 						return 4502;
@@ -17494,7 +17494,7 @@ int func_233(int iParam0, int iParam1)
 						return 1333;
 					case 1631851432:
 						return 4935;
-					case 1632061593:
+					case joaat("REINFORCED_BINDINGS_HANDS_BULKY"):
 						return 5865;
 					case 1632707750:
 						return 3472;
@@ -17522,7 +17522,7 @@ int func_233(int iParam0, int iParam1)
 						return 2110;
 					case 1640861587:
 						return 1275;
-					case 1640961596:
+					case joaat("META_OUTFIT_RIGGSSTATION_VAR_02"):
 						return 4281;
 					case 1641060608:
 						return 2782;
@@ -17544,11 +17544,11 @@ int func_233(int iParam0, int iParam1)
 						return 4458;
 					case 1647366993:
 						return 4290;
-					case 1647753196:
+					case joaat("META_OUTFIT_ANNESBURG_VAR_03"):
 						return 4249;
 					case 1647961536:
 						return 2128;
-					case 1648068942:
+					case joaat("META_ANIMAL_OUTFIT_BADGER_000"):
 						return 10;
 					case 1648215160:
 						return 3903;
@@ -17694,13 +17694,13 @@ int func_233(int iParam0, int iParam1)
 						return 2788;
 					case 1700084561:
 						return 5580;
-					case 1700437490:
+					case joaat("META_OUTFIT_RHODES_VAR_02"):
 						return 397;
 					case 1700762242:
 						return 4997;
 					case 1703424209:
 						return 2896;
-					case 1703895940:
+					case joaat("META_OUTFIT_ANIMAL_ROOSTERLEGHORN"):
 						return 258;
 					case 1705136021:
 						return 3129;
@@ -17840,7 +17840,7 @@ int func_233(int iParam0, int iParam1)
 						return 2557;
 					case 1750236292:
 						return 605;
-					case 1752053992:
+					case joaat("META_OUTFIT_STRAWBERRY_VAR_01"):
 						return 465;
 					case 1752634861:
 						return 168;
@@ -17866,7 +17866,7 @@ int func_233(int iParam0, int iParam1)
 						return 117;
 					case 1760262584:
 						return 5370;
-					case 1762054474:
+					case joaat("META_OUTFIT_ANIMAL_ELK_M_001"):
 						return 132;
 					case 1762186298:
 						return 1686;
@@ -17976,7 +17976,7 @@ int func_233(int iParam0, int iParam1)
 						return 1940;
 					case 1792636094:
 						return 4970;
-					case 1792807042:
+					case joaat("REINFORCED_BINDINGS_FEET_BULKY"):
 						return 5863;
 					case 1794262346:
 						return 2492;
@@ -18038,7 +18038,7 @@ int func_233(int iParam0, int iParam1)
 						return 5327;
 					case 1820852714:
 						return 4927;
-					case 1821962809:
+					case joaat("META_ANIMAL_OUTFIT_BEAR_001"):
 						return 15;
 					case 1822008893:
 						return 5189;
@@ -18054,7 +18054,7 @@ int func_233(int iParam0, int iParam1)
 						return 1460;
 					case 1826319412:
 						return 2642;
-					case 1827496739:
+					case joaat("META_OUTFIT_ANIMAL_WOLFMEDIUM_001"):
 						return 295;
 					case 1828290413:
 						return 3854;
@@ -18082,7 +18082,7 @@ int func_233(int iParam0, int iParam1)
 						return 2874;
 					case 1839003840:
 						return 4839;
-					case 1839440580:
+					case joaat("META_OUTFIT_TUMBLEWEED_VAR_02"):
 						return 421;
 					case 1840364582:
 						return 2100;
@@ -18102,7 +18102,7 @@ int func_233(int iParam0, int iParam1)
 						return 4506;
 					case 1844032232:
 						return 1651;
-					case 1844089285:
+					case joaat("META_ANIMAL_OUTFIT_SNAKETIMBERRATTLE"):
 						return 266;
 					case 1844241543:
 						return 728;
@@ -18172,7 +18172,7 @@ int func_233(int iParam0, int iParam1)
 						return 3304;
 					case 1874592093:
 						return 3404;
-					case 1875804851:
+					case joaat("META_OUTFIT_ANIMAL_DEER_000"):
 						return 88;
 					case 1877664733:
 						return 4389;
@@ -18180,7 +18180,7 @@ int func_233(int iParam0, int iParam1)
 						return 5021;
 					case 1878790704:
 						return 525;
-					case 1879159457:
+					case joaat("META_OUTFIT_RIGGSSTATION_VAR_03"):
 						return 4282;
 					case 1879214637:
 						return 2598;
@@ -18244,7 +18244,7 @@ int func_233(int iParam0, int iParam1)
 						return 5386;
 					case 1897713958:
 						return 3021;
-					case 1900330120:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJA_000"):
 						return 229;
 					case 1903941038:
 						return 494;
@@ -18350,7 +18350,7 @@ int func_233(int iParam0, int iParam1)
 						return 4027;
 					case 1938775504:
 						return 5726;
-					case 1939496279:
+					case joaat("META_OUTFIT_ANIMAL_RACCOON_000"):
 						return 252;
 					case 1939719609:
 						return 4745;
@@ -18360,7 +18360,7 @@ int func_233(int iParam0, int iParam1)
 						return 1991;
 					case 1941811839:
 						return 864;
-					case 1942171995:
+					case joaat("META_OUTFIT_ANIMAL_POISON_ROCKBASS"):
 						return 153;
 					case 1942867832:
 						return 4914;
@@ -18384,7 +18384,7 @@ int func_233(int iParam0, int iParam1)
 						return 4016;
 					case 1949514659:
 						return 400;
-					case 1950818712:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNM_000"):
 						return 235;
 					case 1951334013:
 						return 3949;
@@ -18524,7 +18524,7 @@ int func_233(int iParam0, int iParam1)
 						return 2709;
 					case 1994002047:
 						return 2675;
-					case 1994046600:
+					case joaat("META_OUTFIT_ANIMAL_PELICANBROWN"):
 						return 220;
 					case 1996046145:
 						return 800;
@@ -18538,7 +18538,7 @@ int func_233(int iParam0, int iParam1)
 						return 1407;
 					case 1997221577:
 						return 4834;
-					case 1997427892:
+					case joaat("META_OUTFIT_ANIMAL_POISON_BUCK"):
 						return 52;
 					case 1997738637:
 						return 836;
@@ -18546,7 +18546,7 @@ int func_233(int iParam0, int iParam1)
 						return 4709;
 					case 1998895748:
 						return 1869;
-					case 1999086413:
+					case joaat("META_OUTFIT_ANIMAL_PRONGHORN_000"):
 						return 244;
 					case 1999468834:
 						return 1529;
@@ -18600,7 +18600,7 @@ int func_233(int iParam0, int iParam1)
 						return 2478;
 					case 2013517659:
 						return 3402;
-					case 2013845533:
+					case joaat("META_OUTFIT_STRAWBERRY_VAR_02"):
 						return 466;
 					case 2014317733:
 						return 5594;
@@ -18668,7 +18668,7 @@ int func_233(int iParam0, int iParam1)
 						return 167;
 					case 2036410304:
 						return 4670;
-					case 2037089404:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_STEELHEADTROUT"):
 						return 149;
 					case 2037368219:
 						return 2694;
@@ -18676,7 +18676,7 @@ int func_233(int iParam0, int iParam1)
 						return 5764;
 					case 2041503969:
 						return 4767;
-					case 2042092622:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONO_001"):
 						return 239;
 					case 2043576522:
 						return 4581;
@@ -18738,7 +18738,7 @@ int func_233(int iParam0, int iParam1)
 						return 3680;
 					case 2061539371:
 						return 1355;
-					case 2063794405:
+					case joaat("META_OUTFIT_ANIMAL_SQUIRRELBLACK"):
 						return 281;
 					case 2064992839:
 						return 4882;
@@ -18828,7 +18828,7 @@ int func_233(int iParam0, int iParam1)
 						return 5652;
 					case 2093761089:
 						return 4028;
-					case 2093821155:
+					case joaat("META_OUTFIT_VANHORN_VAR_02"):
 						return 445;
 					case 2094135436:
 						return 3794;
@@ -18850,11 +18850,11 @@ int func_233(int iParam0, int iParam1)
 						return 3374;
 					case 2098072132:
 						return 315;
-					case 2098180041:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJAM_001"):
 						return 233;
 					case 2098224441:
 						return 4540;
-					case 2098938291:
+					case joaat("META_OUTFIT_TUMBLEWEED_VAR_01"):
 						return 420;
 					case 2099062422:
 						return 121;
@@ -18890,7 +18890,7 @@ int func_233(int iParam0, int iParam1)
 						return 2353;
 					case 2108756715:
 						return 182;
-					case 2109101419:
+					case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJA_001"):
 						return 230;
 					case 2109321344:
 						return 1684;
@@ -18928,9 +18928,9 @@ int func_233(int iParam0, int iParam1)
 						return 5775;
 					case 2124067858:
 						return 1784;
-					case 2124438728:
+					case joaat("MAGICLANTERN_PROJECTOR_VAL_01"):
 						return 4250;
-					case 2124910668:
+					case joaat("META_OUTFIT_ANIMAL_POSSUM_001"):
 						return 227;
 					case 2125074568:
 						return 960;
@@ -18982,7 +18982,7 @@ int func_233(int iParam0, int iParam1)
 						return 2381;
 					case 2141256748:
 						return 5406;
-					case 2142400903:
+					case joaat("META_OUTFIT_ANIMAL_LEGENDARY_LAKESTURGEON"):
 						return 142;
 					case 2142605803:
 						return 2119;
@@ -18992,7 +18992,7 @@ int func_233(int iParam0, int iParam1)
 						return 1833;
 					case 2143787213:
 						return 1154;
-					case 2144062151:
+					case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPROCKY_001"):
 						return 44;
 					case 2145312194:
 						return 1723;
@@ -19000,7 +19000,7 @@ int func_233(int iParam0, int iParam1)
 						return 3210;
 					case 2146512102:
 						return 2616;
-					case 2146685523:
+					case joaat("META_OUTFIT_ANIMAL_MOOSE_M_001"):
 						return 209;
 					default:
 						break;
@@ -20409,7 +20409,7 @@ int func_323(int iParam0, int iParam1)
 	{
 		return joaat("NONE");
 	}
-	if (!func_361(Var1, &(Var1.f_1), 25, -1395074057, 0, 0))
+	if (!func_361(Var1, &(Var1.f_1), 25, joaat("HONOR"), 0, 0))
 	{
 		return joaat("NONE");
 	}
@@ -21585,7 +21585,7 @@ void func_394(var uParam0, int iParam1)
 		case joaat("REGULAR"):
 			func_413(uParam0, 512);
 			break;
-		case 1606989084:
+		case joaat("IMPROVED"):
 			func_413(uParam0, 1024);
 			break;
 		case joaat("SPECIAL"):
@@ -22522,83 +22522,83 @@ void func_452(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;

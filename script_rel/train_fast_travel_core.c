@@ -2778,7 +2778,7 @@ void func_99(bool bParam0)
 		bParam0 = func_129(1);
 	}
 	MONEY::_MONEY_DECREMENT_CASH_BALANCE(bParam0);
-	Var0 = { func_130(1644987397) };
+	Var0 = { func_130(joaat("CAREER_CASH")) };
 	STATS::_0xBD861AE8A5181ED7(&Var0, bParam0);
 }
 
@@ -2833,7 +2833,7 @@ int func_102(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	func_133(func_130(19354810), bParam1);
+	func_133(func_130(joaat("LIFETIME_MONEY_SPENT_IN_SHOPS")), bParam1);
 	(Global_20709[iVar0 /*45*/])->f_43 = ((Global_20709[iVar0 /*45*/])->f_43 + bParam1);
 	return 1;
 }
@@ -3294,7 +3294,7 @@ int func_109(bool bParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(bParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(bParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -3856,9 +3856,9 @@ int func_136(int iParam0, int iParam1, int iParam2)
 
 void func_137(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 bool func_138(bool bParam0)

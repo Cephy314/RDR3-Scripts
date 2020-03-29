@@ -3289,7 +3289,7 @@ int func_114(int iParam0)
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
 		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return joaat("GFH_MAGGIE");
 		case joaat("MARCEL"):
 			return joaat("GFH_MARCEL");
@@ -5618,7 +5618,7 @@ int func_240(var uParam0, var uParam1, var uParam2, var uParam3)
 			{
 				func_95(uParam2->f_99[iVar2], 1, 1);
 			}
-			uParam2->f_99[iVar2] = func_320("GFH_PURCHASE_BOUNTY_HUNTING_LICENSE", joaat("INPUT_GAME_MENU_ACCEPT"), ENTITY::GET_ENTITY_COORDS(iVar1, true, false), 10f, 3, 1, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, -2018976333, 0);
+			uParam2->f_99[iVar2] = func_320("GFH_PURCHASE_BOUNTY_HUNTING_LICENSE", joaat("INPUT_GAME_MENU_ACCEPT"), ENTITY::GET_ENTITY_COORDS(iVar1, true, false), 10f, 3, 1, 0, 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("LONG_TIMED_EVENT"), 0);
 			HUD::_UIPROMPT_SET_GROUP(func_316(&(uParam2->f_99[iVar2])), iVar3, 0);
 			func_317(&(uParam2->f_99[iVar2]), 10f, 0);
 			func_318(&(uParam2->f_99[iVar2]), 0, 0, 1);
@@ -10658,31 +10658,31 @@ int func_416(var uParam0)
 {
 	switch (func_591(uParam0->f_1))
 	{
-		case -86207568:
+		case joaat("GFH_BOUNTY_BOARD_ANNESBURG_SHERIFF"):
 			return 129;
-		case 1896585330:
+		case joaat("GFH_BOUNTY_BOARD_ARMADILLO_SHERIFF"):
 			return 111;
-		case 769966168:
+		case joaat("GFH_BOUNTY_BOARD_BENEDICT_POINT_STATION"):
 			return 117;
-		case 1087736289:
+		case joaat("GFH_BOUNTY_BOARD_BLACKWATER_SHERIFF"):
 			return 122;
-		case -2032510574:
+		case joaat("GFH_BOUNTY_BOARD_EMERALD_RANCH_STATION"):
 			return 24;
-		case 860783980:
+		case joaat("GFH_BOUNTY_BOARD_RHODES_SHERIFF"):
 			return 126;
-		case -953689515:
+		case joaat("GFH_BOUNTY_BOARD_RIGGS_STATION"):
 			return 27;
-		case 1194107589:
+		case joaat("GFH_BOUNTY_BOARD_SAINT_DENIS_SHERIFF"):
 			return 124;
-		case -233841303:
+		case joaat("GFH_BOUNTY_BOARD_STRAWBERRY_SHERIFF"):
 			return 127;
-		case 485557528:
+		case joaat("GFH_BOUNTY_BOARD_TUMBLEWEED_SHERIFF"):
 			return 148;
-		case -896565033:
+		case joaat("GFH_BOUNTY_BOARD_VALENTINE_SHERIFF"):
 			return 87;
-		case -979677797:
+		case joaat("GFH_BOUNTY_BOARD_VAN_HORN_POST_OFFICE"):
 			return 98;
-		case 1184730938:
+		case joaat("GFH_BOUNTY_BOARD_WALLACE_STATION"):
 			return 101;
 		default:
 			break;
@@ -14736,31 +14736,31 @@ int func_603(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -86207568:
+		case joaat("GFH_BOUNTY_BOARD_ANNESBURG_SHERIFF"):
 			return 5;
-		case 1896585330:
+		case joaat("GFH_BOUNTY_BOARD_ARMADILLO_SHERIFF"):
 			return 2;
-		case 769966168:
+		case joaat("GFH_BOUNTY_BOARD_BENEDICT_POINT_STATION"):
 			return 3;
-		case 1087736289:
+		case joaat("GFH_BOUNTY_BOARD_BLACKWATER_SHERIFF"):
 			return 7;
-		case -2032510574:
+		case joaat("GFH_BOUNTY_BOARD_EMERALD_RANCH_STATION"):
 			return 2;
-		case 860783980:
+		case joaat("GFH_BOUNTY_BOARD_RHODES_SHERIFF"):
 			return 0;
-		case -953689515:
+		case joaat("GFH_BOUNTY_BOARD_RIGGS_STATION"):
 			return 6;
-		case 1194107589:
+		case joaat("GFH_BOUNTY_BOARD_SAINT_DENIS_SHERIFF"):
 			return 4;
-		case -233841303:
+		case joaat("GFH_BOUNTY_BOARD_STRAWBERRY_SHERIFF"):
 			return 6;
-		case 485557528:
+		case joaat("GFH_BOUNTY_BOARD_TUMBLEWEED_SHERIFF"):
 			return 3;
-		case -896565033:
+		case joaat("GFH_BOUNTY_BOARD_VALENTINE_SHERIFF"):
 			return 1;
-		case -979677797:
+		case joaat("GFH_BOUNTY_BOARD_VAN_HORN_POST_OFFICE"):
 			return 5;
-		case 1184730938:
+		case joaat("GFH_BOUNTY_BOARD_WALLACE_STATION"):
 			return 1;
 		default:
 			break;
@@ -15241,7 +15241,7 @@ int func_613(int iParam0)
 		case joaat("CONSUMABLE_CHEWING_TOBACCO_USED"):
 			*iParam0 = joaat("CONSUMABLE_CHEWING_TOBACCO");
 			break;
-		case -1424823393: /* GXTEntry: "Opened Cigarettes" */
+		case joaat("CONSUMABLE_CIGARETTE_BOX_USED"):
 			*iParam0 = joaat("CONSUMABLE_CIGARETTE_BOX");
 			break;
 		default:
@@ -23898,7 +23898,7 @@ int func_970(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -893766361;
+			return joaat("ENGLISH");
 		case 1:
 			return -2027639951;
 		default:
@@ -24414,99 +24414,99 @@ int func_991(int iParam0)
 		case joaat("PROVISION_FISH_STEELHEAD_TROUT"):
 			iVar0 = joaat("A_C_FISHRAINBOWTROUT_01_MS");
 			break;
-		case -1457420231: /* GXTEntry: "Good Bat Carcass" */
-		case 563848610: /* GXTEntry: "Poor Bat Carcass" */
-		case 1432949803: /* GXTEntry: "Perfect Bat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BAT_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_BAT_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_BAT_PERFECT"):
 			iVar0 = joaat("A_C_BAT_01");
 			break;
-		case -2120099592: /* GXTEntry: "Poor Blue Jay Carcass" */
-		case -983831788: /* GXTEntry: "Perfect Blue Jay Carcass" */
-		case 1848456619: /* GXTEntry: "Good Blue Jay Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BLUEJAY_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_BLUEJAY_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_BLUEJAY_HIGH_QUALITY"):
 			iVar0 = joaat("A_C_BLUEJAY_01");
 			break;
-		case -1882344824: /* GXTEntry: "Perfect Bullfrog Carcass" */
-		case -1640704323: /* GXTEntry: "Good Bullfrog Carcass" */
-		case -1134447619: /* GXTEntry: "Poor Bullfrog Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_BULLFROG_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_BULLFROG_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_BULLFROG_POOR"):
 			iVar0 = joaat("A_C_FROGBULL_01");
 			break;
-		case -1969404854: /* GXTEntry: "Perfect Cardinal Carcass" */
-		case 183958842: /* GXTEntry: "Good Cardinal Carcass" */
-		case 1948158930: /* GXTEntry: "Poor Cardinal Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CARDINAL_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CARDINAL_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CARDINAL_POOR"):
 			iVar0 = joaat("A_C_CARDINAL_01");
 			break;
-		case -1323780599: /* GXTEntry: "Poor Cedar Waxwing Carcass" */
-		case -532099639: /* GXTEntry: "Good Cedar Waxwing Carcass" */
-		case 905173572: /* GXTEntry: "Perfect Cedar Waxwing Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CEDARWAXWING_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CEDARWAXWING_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CEDARWAXWING_PERFECT"):
 			iVar0 = joaat("A_C_CEDARWAXWING_01");
 			break;
-		case -1586332975: /* GXTEntry: "Poor Chipmunk Carcass" */
-		case -832850511: /* GXTEntry: "Perfect Chipmunk Carcass" */
-		case 1857501916: /* GXTEntry: "Good Chipmunk Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CHIPMUNK_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CHIPMUNK_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CHIPMUNK_HIGH_QUALITY"):
 			iVar0 = joaat("A_C_CHIPMUNK_01");
 			break;
-		case -1888757291: /* GXTEntry: "Perfect Crab Carcass" */
-		case 894877715: /* GXTEntry: "Good Crab Carcass" */
-		case 995863399: /* GXTEntry: "Poor Crab Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRAB_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CRAB_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CRAB_POOR"):
 			iVar0 = joaat("A_C_CRAB_01");
 			break;
-		case -1905834457: /* GXTEntry: "Good Crow Carcass" */
-		case -110353515: /* GXTEntry: "Poor Crow Carcass" */
-		case 59384454: /* GXTEntry: "Perfect Crow Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CROW_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CROW_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CROW_PERFECT"):
 			iVar0 = joaat("A_C_CROW_01");
 			break;
-		case -1464585113: /* GXTEntry: "Perfect Oriole Carcass" */
-		case -610456424: /* GXTEntry: "Poor Oriole Carcass" */
-		case -284151822: /* GXTEntry: "Good Oriole Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ORIOLE_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_ORIOLE_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_ORIOLE_HIGH_QUALITY"):
 			iVar0 = joaat("A_C_ORIOLE_01");
 			break;
-		case -1956973834: /* GXTEntry: "Perfect Carolina Parakeet Carcass" */
-		case -738999731: /* GXTEntry: "Poor Carolina Parakeet Carcass" */
-		case 566023444: /* GXTEntry: "Good Carolina Parakeet Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_CRLNAPARKET_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CRLNAPARKET_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_CRLNAPARKET_HIGH_QUALITY"):
 			iVar0 = joaat("A_C_CAROLINAPARAKEET_01");
 			break;
-		case -1999212658: /* GXTEntry: "Poor Pigeon Carcass" */
-		case -593435395: /* GXTEntry: "Good Pigeon Carcass" */
-		case -245335326: /* GXTEntry: "Perfect Pigeon Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_PIGEON_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_PIGEON_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_PIGEON_PERFECT"):
 			iVar0 = joaat("A_C_PIGEON");
 			break;
-		case -1726572562: /* GXTEntry: "Good Quail Carcass" */
-		case -1017987135: /* GXTEntry: "Perfect Quail Carcass" */
-		case 2058475216: /* GXTEntry: "Poor Quail Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_QUAIL_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_QUAIL_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_QUAIL_POOR"):
 			iVar0 = joaat("A_C_QUAIL_01");
 			break;
-		case -1909348309: /* GXTEntry: "Good Rat Carcass" */
-		case -1788506246: /* GXTEntry: "Poor Rat Carcass" */
-		case 1761263432: /* GXTEntry: "Perfect Rat Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_RAT_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_RAT_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_RAT_PERFECT"):
 			iVar0 = joaat("A_C_RAT_01");
 			break;
-		case -1290897778: /* GXTEntry: "Perfect Robin Carcass" */
-		case -350704687: /* GXTEntry: "Poor Robin Carcass" */
-		case 765892430: /* GXTEntry: "Good Robin Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_ROBIN_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_ROBIN_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_ROBIN_HIGH_QUALITY"):
 			iVar0 = joaat("A_C_ROBIN_01");
 			break;
-		case -318217782: /* GXTEntry: "Good Songbird Carcass" */
-		case -100913452: /* GXTEntry: "Perfect Songbird Carcass" */
-		case 72307351: /* GXTEntry: "Poor Songbird Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SONGBIRD_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_SONGBIRD_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_SONGBIRD_POOR"):
 			iVar0 = joaat("A_C_SONGBIRD_01");
 			break;
-		case -1867587109: /* GXTEntry: "Good Sparrow Carcass" */
-		case 182158309: /* GXTEntry: "Poor Sparrow Carcass" */
-		case 313332607: /* GXTEntry: "Perfect Sparrow Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SPARROW_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_SPARROW_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_SPARROW_PERFECT"):
 			iVar0 = joaat("A_C_SPARROW_01");
 			break;
-		case 444160793: /* GXTEntry: "Perfect Squirrel Carcass" */
-		case 1205453831: /* GXTEntry: "Poor Squirrel Carcass" */
-		case 1815539745: /* GXTEntry: "Good Squirrel Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_SQUIRREL_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_SQUIRREL_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_SQUIRREL_HIGH_QUALITY"):
 			iVar0 = joaat("A_C_SQUIRREL_01");
 			break;
-		case -2123600216: /* GXTEntry: "Poor Toad Carcass" */
-		case -146690338: /* GXTEntry: "Good Toad Carcass" */
-		case -124539232: /* GXTEntry: "Perfect Toad Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_TOAD_POOR"):
+		case joaat("PROVISION_ANIMAL_CARCASS_TOAD_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_TOAD_PERFECT"):
 			iVar0 = joaat("A_C_TOAD_01");
 			break;
-		case -1403731492: /* GXTEntry: "Good Woodpecker Carcass" */
-		case -843795569: /* GXTEntry: "Perfect Woodpecker Carcass" */
-		case 1496267371: /* GXTEntry: "Poor Woodpecker Carcass" */
+		case joaat("PROVISION_ANIMAL_CARCASS_WOODPECKER_HIGH_QUALITY"):
+		case joaat("PROVISION_ANIMAL_CARCASS_WOODPECKER_PERFECT"):
+		case joaat("PROVISION_ANIMAL_CARCASS_WOODPECKER_POOR"):
 			iVar0 = joaat("A_C_WOODPECKER_01");
 			break;
 	}
@@ -24968,7 +24968,7 @@ int func_1012(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -24980,7 +24980,7 @@ int func_1012(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;
@@ -26230,83 +26230,83 @@ void func_1073(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;
@@ -26471,7 +26471,7 @@ void func_1080(var uParam0, int iParam1)
 		case joaat("REGULAR"):
 			func_1108(uParam0, 512);
 			break;
-		case 1606989084:
+		case joaat("IMPROVED"):
 			func_1108(uParam0, 1024);
 			break;
 		case joaat("SPECIAL"):

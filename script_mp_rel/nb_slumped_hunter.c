@@ -6065,7 +6065,7 @@ int func_257(int iParam0)
 			}
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 Vector3 func_258(int iParam0)
@@ -6786,7 +6786,7 @@ void func_283()
 		PED::_0x6569F31A01B4C097(func_193(0), 4, true);
 		ENTITY::_0x8C03CD6B5E0E85E8(func_193(0), joaat("HUNTER"));
 		ENTITY::_0x18FF3110CF47115D(func_193(0), 7, false);
-		Local_281.f_18.f_1[0 /*4*/] = MAP::_BLIP_ADD_FOR_ENTITY(-773443467, func_193(0));
+		Local_281.f_18.f_1[0 /*4*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_LOOT"), func_193(0));
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(func_193(0), PED::GET_PED_RELATIONSHIP_GROUP_HASH(Global_34));
 		Local_281.f_18.f_49 = func_321("RE_LF_USECHECK", joaat("INPUT_CONTEXT_Y"), func_193(0), 2, 1, 0, 0, 5, 2f, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 		func_322(Local_281.f_18.f_49, HUD::_UIPROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY(func_193(0)), 0, 1);
@@ -7047,7 +7047,7 @@ void func_294()
 		}
 		else
 		{
-			PED::_0xBD75500141E4725C(func_193(1), -1270154578);
+			PED::_0xBD75500141E4725C(func_193(1), joaat("COMBAT_ANIMAL"));
 			PED::SET_PED_COMBAT_ATTRIBUTES(func_193(1), 5, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(func_193(1), 50, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(func_193(1), 67, true);
@@ -7216,7 +7216,7 @@ void func_307(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -9463,7 +9463,7 @@ int func_411(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -9475,7 +9475,7 @@ int func_411(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;

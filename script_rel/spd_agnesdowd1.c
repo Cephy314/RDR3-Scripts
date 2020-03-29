@@ -973,7 +973,7 @@ int func_18()
 			TASK::SET_SCENARIO_GROUP_ENABLED("RARE_ORCHIDS_AGNES_LADYSLIPPER", true);
 		}
 		func_79(bLocal_183, 0);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(bLocal_183, 623901053);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(bLocal_183, joaat("REL_NO_RELATIONSHIP"));
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(bLocal_183, true);
 		PED::SET_PED_KEEP_TASK(bLocal_183, true);
 		PED::SET_PED_CONFIG_FLAG(bLocal_183, 6, true);
@@ -6977,7 +6977,7 @@ void func_204(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	{
 		if (func_253(bParam1))
 		{
-			func_82(bParam0, 41788943);
+			func_82(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -8379,7 +8379,7 @@ void func_255(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -8664,7 +8664,7 @@ int func_268(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}

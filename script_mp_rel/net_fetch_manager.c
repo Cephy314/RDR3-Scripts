@@ -12057,16 +12057,16 @@ void func_486(int iParam0, int iParam1)
 
 void func_487(int iParam0, int iParam1)
 {
-	func_642(iParam0, iParam1, 889541022, 0);
-	func_642(iParam0, iParam1, -989642646, 0);
+	func_642(iParam0, iParam1, joaat("REL_ALLIGATOR"), 0);
+	func_642(iParam0, iParam1, joaat("REL_WILD_ANIMAL_PREDATOR"), 0);
 }
 
 void func_488(int iParam0, int iParam1)
 {
-	func_642(iParam0, iParam1, -767591988, 0);
+	func_642(iParam0, iParam1, joaat("REL_WILD_ANIMAL"), 0);
 	func_642(iParam0, iParam1, joaat("REL_DOMESTICATED_ANIMAL"), 0);
-	func_642(iParam0, iParam1, 1986610512, 0);
-	func_642(iParam0, iParam1, -319516747, 0);
+	func_642(iParam0, iParam1, joaat("REL_WILD_ANIMAL_BIRD"), 0);
+	func_642(iParam0, iParam1, joaat("REL_BOAR"), 0);
 	func_642(iParam0, iParam1, joaat("REL_HEN_ANIMAL"), 0);
 }
 
@@ -16220,7 +16220,7 @@ int func_643(int iParam0, int iParam1)
 {
 	if (!func_483(iParam1))
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
 	return &(((*Global_1225057)[iParam0 /*686*/])->f_566[iParam1]);
 }
@@ -16356,7 +16356,7 @@ int func_650(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -893766361;
+			return joaat("ENGLISH");
 		case 1:
 			return -2027639951;
 		default:
@@ -19915,31 +19915,31 @@ int func_784(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -86207568:
+		case joaat("GFH_BOUNTY_BOARD_ANNESBURG_SHERIFF"):
 			return joaat("ANNESBURG_SHERIFF_BOUNTY_BOARD");
-		case 1896585330:
+		case joaat("GFH_BOUNTY_BOARD_ARMADILLO_SHERIFF"):
 			return joaat("ARMADILLO_SHERIFF_BOUNTY_BOARD");
-		case 769966168:
+		case joaat("GFH_BOUNTY_BOARD_BENEDICT_POINT_STATION"):
 			return joaat("BENEDICT_POINT_STATION_BOUNTY_BOARD");
-		case 1087736289:
+		case joaat("GFH_BOUNTY_BOARD_BLACKWATER_SHERIFF"):
 			return joaat("BLACKWATER_SHERIFF_BOUNTY_BOARD");
-		case -2032510574:
+		case joaat("GFH_BOUNTY_BOARD_EMERALD_RANCH_STATION"):
 			return joaat("EMERALD_RANCH_STATION_BOUNTY_BOARD");
-		case 860783980:
+		case joaat("GFH_BOUNTY_BOARD_RHODES_SHERIFF"):
 			return joaat("RHODES_SHERIFF_BOUNTY_BOARD");
-		case -953689515:
+		case joaat("GFH_BOUNTY_BOARD_RIGGS_STATION"):
 			return joaat("RIGGS_STATION_BOUNTY_BOARD");
-		case 1194107589:
+		case joaat("GFH_BOUNTY_BOARD_SAINT_DENIS_SHERIFF"):
 			return joaat("SAINT_DENIS_SHERIFF_BOUNTY_BOARD");
-		case -233841303:
+		case joaat("GFH_BOUNTY_BOARD_STRAWBERRY_SHERIFF"):
 			return joaat("STRAWBERRY_SHERIFF_BOUNTY_BOARD");
-		case 485557528:
+		case joaat("GFH_BOUNTY_BOARD_TUMBLEWEED_SHERIFF"):
 			return joaat("TUMBLEWEED_SHERIFF_BOUNTY_BOARD");
-		case -896565033:
+		case joaat("GFH_BOUNTY_BOARD_VALENTINE_SHERIFF"):
 			return joaat("VALENTINE_SHERIFF_BOUNTY_BOARD");
-		case -979677797:
+		case joaat("GFH_BOUNTY_BOARD_VAN_HORN_POST_OFFICE"):
 			return joaat("VAN_HORN_POST_OFFICE_BOUNTY_BOARD");
-		case 1184730938:
+		case joaat("GFH_BOUNTY_BOARD_WALLACE_STATION"):
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
 		default:
 			break;
@@ -20945,7 +20945,7 @@ int func_835(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 146345170:
+		case joaat("TOWNSFOLK"):
 			return 0;
 		case joaat("AGGRESSIVE"):
 			return 1;
@@ -21135,83 +21135,83 @@ void func_850(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;
@@ -21819,7 +21819,7 @@ int func_872(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -21831,7 +21831,7 @@ int func_872(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;
@@ -21871,7 +21871,7 @@ int func_876(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 146345170;
+			return joaat("TOWNSFOLK");
 		case 1:
 			return joaat("AGGRESSIVE");
 		case 2:

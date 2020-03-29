@@ -107,7 +107,7 @@ int func_3(var uParam0, int iParam1)
 	vVar0 = { func_10(uParam0) };
 	if (!TASK::_0x841475AC96E794D1(&(iParam1->f_9[0])))
 	{
-		iParam1->f_9[0] = TASK::CREATE_SCENARIO_POINT(-1843735114, vVar0 - Vector(0f, 0.3f, 0f), 0f, 0f, 0, 0);
+		iParam1->f_9[0] = TASK::CREATE_SCENARIO_POINT(joaat("RANSACK_REACH_IN_CRAYSISH_HOLE"), vVar0 - Vector(0f, 0.3f, 0f), 0f, 0f, 0, 0);
 	}
 	STREAMING::REQUEST_MODEL(func_11(), false);
 	iParam1->f_4 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);

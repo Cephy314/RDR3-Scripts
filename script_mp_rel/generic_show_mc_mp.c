@@ -596,7 +596,7 @@ int func_6(var uParam0, var uParam1, var uParam2, bool bParam3)
 	{
 		if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_127) && VOLUME::_0x666C2F53ABEFC952(uParam0->f_127) != 5)
 		{
-			VOLUME::_0xFD010A2154B40676(uParam0->f_127, 623901053);
+			VOLUME::_0xFD010A2154B40676(uParam0->f_127, joaat("REL_NO_RELATIONSHIP"));
 		}
 		if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_159))
 		{
@@ -654,7 +654,7 @@ int func_6(var uParam0, var uParam1, var uParam2, bool bParam3)
 		}
 		if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_127) && VOLUME::_0x666C2F53ABEFC952(uParam0->f_127) != 5)
 		{
-			VOLUME::_0xFD010A2154B40676(uParam0->f_127, 623901053);
+			VOLUME::_0xFD010A2154B40676(uParam0->f_127, joaat("REL_NO_RELATIONSHIP"));
 		}
 		func_26(&(uParam2->f_5), &(uParam2->f_250));
 		func_27();
@@ -2409,14 +2409,14 @@ int func_62(int iParam0)
 	}
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
 	iParam0 = NETWORK::GET_UNIQUE_INT_FOR_PLAYER(&(Global_1275573->f_154[iParam0]));
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
-	iVar0 = 623901053;
+	iVar0 = joaat("REL_NO_RELATIONSHIP");
 	switch (iParam0)
 	{
 		case 0:
@@ -5785,7 +5785,7 @@ void func_214(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

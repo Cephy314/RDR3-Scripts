@@ -362,7 +362,7 @@ void func_8(int iParam0)
 	}
 	PED::_0x2208438012482A1A(iParam0, false, false);
 	PED::_0xC494C76A34266E82(iParam0, 0);
-	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(1925708505, iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
+	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
 	{
 	}
 	func_26(iVar0, 1);
@@ -421,7 +421,7 @@ void func_12(int iParam0, int iParam1)
 	}
 	PED::_0x2208438012482A1A(iParam0, false, false);
 	PED::_0xC494C76A34266E82(iParam0, 0);
-	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(1925708505, iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
+	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
 	{
 	}
 	func_26(iParam1, 1);
@@ -436,7 +436,7 @@ void func_13(int iParam0, int iParam1)
 	}
 	PED::_0x2208438012482A1A(iParam0, false, false);
 	PED::_0xC494C76A34266E82(iParam0, 0);
-	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(1925708505, iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
+	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
 	{
 	}
 	func_26(iParam1, 1);

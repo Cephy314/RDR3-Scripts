@@ -422,7 +422,7 @@ int func_13(int iParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case 2147443548:
+		case joaat("SC_WORLD_HUMAN_STRAW_BROOM_WORKING"):
 			switch (iParam0)
 			{
 				case 0:
@@ -455,7 +455,7 @@ int func_13(int iParam0, int iParam1)
 					return 1;
 			}
 			break;
-		case -1101156650:
+		case joaat("SC_WORLD_HUMAN_PUSH_BROOM_WORKING"):
 			switch (iParam0)
 			{
 				case 0:

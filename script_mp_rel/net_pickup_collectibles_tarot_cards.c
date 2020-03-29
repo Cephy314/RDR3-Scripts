@@ -212,62 +212,62 @@ void func_1(var uParam0, struct<2> Param1, var uParam3)
 	NETWORK::_0xE7DDA8BD3BCF751C(2);
 	uParam0->f_3 = 0;
 	uParam0->f_7 = Param1;
-	uParam0->f_10[0] = 877039894;
-	uParam0->f_10[1] = -109253143;
-	uParam0->f_10[2] = 560456382;
-	uParam0->f_10[3] = 1013172540;
-	uParam0->f_10[4] = 1510555152;
-	uParam0->f_10[5] = 865474133;
-	uParam0->f_10[6] = -806233255;
-	uParam0->f_10[7] = -189456511;
-	uParam0->f_10[8] = 657843514;
-	uParam0->f_10[9] = 335910776;
-	uParam0->f_10[10] = 860937518;
-	uParam0->f_10[11] = 1240345684;
-	uParam0->f_10[12] = 1858171884;
-	uParam0->f_10[13] = -459889340;
-	uParam0->f_10[14] = 1771423830;
-	uParam0->f_10[15] = -1197860878;
-	uParam0->f_10[16] = 326492680;
-	uParam0->f_10[17] = -521186997;
-	uParam0->f_10[18] = 249211141;
-	uParam0->f_10[19] = 438889198;
-	uParam0->f_10[20] = 177102263;
-	uParam0->f_10[21] = 349975866;
-	uParam0->f_10[22] = -728789150;
-	uParam0->f_10[23] = -756861846;
-	uParam0->f_10[24] = 1179614263;
-	uParam0->f_10[25] = -801732229;
-	uParam0->f_10[26] = -673018991;
-	uParam0->f_10[27] = -37548215;
-	uParam0->f_10[28] = 689854558;
-	uParam0->f_10[29] = 570401976;
-	uParam0->f_10[30] = -143273671;
-	uParam0->f_10[31] = 1381447131;
-	uParam0->f_10[32] = 904665444;
-	uParam0->f_10[33] = -232939852;
-	uParam0->f_10[34] = -100116410;
-	uParam0->f_10[35] = -1999646174;
-	uParam0->f_10[36] = -1738742270;
-	uParam0->f_10[37] = -1136458681;
-	uParam0->f_10[38] = 1591856082;
-	uParam0->f_10[39] = 1522648243;
-	uParam0->f_10[40] = 2000130193;
-	uParam0->f_10[41] = -714624881;
-	uParam0->f_10[42] = 1640400125;
-	uParam0->f_10[43] = 200362341;
-	uParam0->f_10[44] = -1982929650;
-	uParam0->f_10[45] = -1747063748;
-	uParam0->f_10[46] = -1459609903;
-	uParam0->f_10[47] = 188745754;
-	uParam0->f_10[48] = -2135036532;
-	uParam0->f_10[49] = -978489601;
-	uParam0->f_10[50] = 1806433140;
-	uParam0->f_10[51] = -2086114353;
-	uParam0->f_10[52] = -123759090;
-	uParam0->f_10[53] = -1314827402;
-	uParam0->f_10[54] = 371484799;
-	uParam0->f_10[55] = -1707983236;
+	uParam0->f_10[0] = joaat("MP_TCARD_ACE_CUPS");
+	uParam0->f_10[1] = joaat("MP_TCARD_ACE_PENTACLES");
+	uParam0->f_10[2] = joaat("MP_TCARD_ACE_SWORDS");
+	uParam0->f_10[3] = joaat("MP_TCARD_ACE_WANDS");
+	uParam0->f_10[4] = joaat("MP_TCARD_EIGHT_CUPS");
+	uParam0->f_10[5] = joaat("MP_TCARD_EIGHT_PENTACLES");
+	uParam0->f_10[6] = joaat("MP_TCARD_EIGHT_SWORDS");
+	uParam0->f_10[7] = joaat("MP_TCARD_EIGHT_WANDS");
+	uParam0->f_10[8] = joaat("MP_TCARD_FIVE_CUPS");
+	uParam0->f_10[9] = joaat("MP_TCARD_FIVE_PENTACLES");
+	uParam0->f_10[10] = joaat("MP_TCARD_FIVE_SWORDS");
+	uParam0->f_10[11] = joaat("MP_TCARD_FIVE_WANDS");
+	uParam0->f_10[12] = joaat("MP_TCARD_FOUR_CUPS");
+	uParam0->f_10[13] = joaat("MP_TCARD_FOUR_PENTACLES");
+	uParam0->f_10[14] = joaat("MP_TCARD_FOUR_SWORDS");
+	uParam0->f_10[15] = joaat("MP_TCARD_FOUR_WANDS");
+	uParam0->f_10[16] = joaat("MP_TCARD_KING_CUPS");
+	uParam0->f_10[17] = joaat("MP_TCARD_KING_PENTACLES");
+	uParam0->f_10[18] = joaat("MP_TCARD_KING_SWORDS");
+	uParam0->f_10[19] = joaat("MP_TCARD_KING_WANDS");
+	uParam0->f_10[20] = joaat("MP_TCARD_KNIGHT_CUPS");
+	uParam0->f_10[21] = joaat("MP_TCARD_KNIGHT_PENTACLES");
+	uParam0->f_10[22] = joaat("MP_TCARD_KNIGHT_SWORDS");
+	uParam0->f_10[23] = joaat("MP_TCARD_KNIGHT_WANDS");
+	uParam0->f_10[24] = joaat("MP_TCARD_NINE_CUPS");
+	uParam0->f_10[25] = joaat("MP_TCARD_NINE_PENTACLES");
+	uParam0->f_10[26] = joaat("MP_TCARD_NINE_SWORDS");
+	uParam0->f_10[27] = joaat("MP_TCARD_NINE_WANDS");
+	uParam0->f_10[28] = joaat("MP_TCARD_PAGE_CUPS");
+	uParam0->f_10[29] = joaat("MP_TCARD_PAGE_PENTACLES");
+	uParam0->f_10[30] = joaat("MP_TCARD_PAGE_SWORDS");
+	uParam0->f_10[31] = joaat("MP_TCARD_PAGE_WANDS");
+	uParam0->f_10[32] = joaat("MP_TCARD_QUEEN_CUPS");
+	uParam0->f_10[33] = joaat("MP_TCARD_QUEEN_PENTACLE");
+	uParam0->f_10[34] = joaat("MP_TCARD_QUEEN_SWORDS");
+	uParam0->f_10[35] = joaat("MP_TCARD_QUEEN_WANDS");
+	uParam0->f_10[36] = joaat("MP_TCARD_SEVEN_CUPS");
+	uParam0->f_10[37] = joaat("MP_TCARD_SEVEN_PENTACLES");
+	uParam0->f_10[38] = joaat("MP_TCARD_SEVEN_SWORDS");
+	uParam0->f_10[39] = joaat("MP_TCARD_SEVEN_WANDS");
+	uParam0->f_10[40] = joaat("MP_TCARD_SIX_CUPS");
+	uParam0->f_10[41] = joaat("MP_TCARD_SIX_PENTACLES");
+	uParam0->f_10[42] = joaat("MP_TCARD_SIX_SWORDS");
+	uParam0->f_10[43] = joaat("MP_TCARD_SIX_WANDS");
+	uParam0->f_10[44] = joaat("MP_TCARD_TEN_CUPS");
+	uParam0->f_10[45] = joaat("MP_TCARD_TEN_PENTACLES");
+	uParam0->f_10[46] = joaat("MP_TCARD_TEN_SWORDS");
+	uParam0->f_10[47] = joaat("MP_TCARD_TEN_WANDS");
+	uParam0->f_10[48] = joaat("MP_TCARD_THREE_CUPS");
+	uParam0->f_10[49] = joaat("MP_TCARD_THREE_PENTACLES");
+	uParam0->f_10[50] = joaat("MP_TCARD_THREE_SWORDS");
+	uParam0->f_10[51] = joaat("MP_TCARD_THREE_WANDS");
+	uParam0->f_10[52] = joaat("MP_TCARD_TWO_CUPS");
+	uParam0->f_10[53] = joaat("MP_TCARD_TWO_PENTACLES");
+	uParam0->f_10[54] = joaat("MP_TCARD_TWO_SWORDS");
+	uParam0->f_10[55] = joaat("MP_TCARD_TWO_WANDS");
 	uParam0->f_1 = Param1.f_1;
 	uParam0->f_4 = { TASK::_0xA8452DD321607029(uParam0->f_1, 1) };
 	uParam0->f_80[0] = joaat("MP005_S_CARDT_10C");
@@ -1417,83 +1417,83 @@ void func_70(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;

@@ -379,11 +379,11 @@ void func_17(int iParam0)
 
 void func_18()
 {
-	if (Local_18.f_30 == 1220378078)
+	if (Local_18.f_30 == joaat("PROP_PLAYER_RE_MURDER_CAMP_TREE_NOTE"))
 	{
 		StringCopy(&(Local_18.f_7), "script_re@murder_campfire@knife_note", 64);
 	}
-	else if (Local_18.f_30 == 579020276)
+	else if (Local_18.f_30 == joaat("PROP_PLAYER_RE_MURDER_CAMP_ROCK_NOTE"))
 	{
 		StringCopy(&(Local_18.f_7), "script_re@murder_campfire@head_note", 64);
 	}

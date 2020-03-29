@@ -617,7 +617,7 @@ void __EntryFunction__()
 								PED::SET_PED_COMBAT_ATTRIBUTES(bLocal_253, 5, false);
 								PED::_0x24C82EF607105FAA(bLocal_253, joaat("TIMID"));
 								AUDIO::STOP_PED_SPEAKING(bLocal_253, true);
-								func_69(&bLocal_253, &uLocal_273, 161068336, 20f, -1082130432 /* Float: -1f */);
+								func_69(&bLocal_253, &uLocal_273, joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW"), 20f, -1082130432 /* Float: -1f */);
 								func_36(&uLocal_17, bLocal_253, "LILLIAN_POWELL", 0);
 								ENTITY::_SET_ENTITY_COORDS_AND_HEADING(bLocal_253, 2636.429f, -1229.537f, 52.3795f, 358.7895f, true, false, true);
 								bLocal_265 = VOLUME::_0x0EB78C2B156635B1(665633627, 2636.429f, -1229.537f, 52.3795f, 0f, 0f, 0f, 1f, 1f, 1.3f);
@@ -1605,7 +1605,7 @@ void func_1()
 	func_169(bLocal_253);
 	PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), "LillianBubble");
 	PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), "LillianConvo");
-	func_170(&bLocal_253, &uLocal_273, 161068336, 20f, 1);
+	func_170(&bLocal_253, &uLocal_273, joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW"), 20f, 1);
 	if (func_34(iLocal_248) && (func_171(iLocal_248) || func_172(iLocal_248)))
 	{
 		func_173(iLocal_248, 0, 2);
@@ -8721,7 +8721,7 @@ void func_352(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (func_469(bParam1))
 		{
-			func_67(bParam0, 41788943);
+			func_67(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -11580,7 +11580,7 @@ void func_471(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -12827,7 +12827,7 @@ int func_499(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}

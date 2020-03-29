@@ -3670,11 +3670,11 @@ void func_135()
 			switch (iVar0)
 			{
 				case 0:
-					Local_763.f_18.f_56 = TASK::_0xD508FA229F1C4900(&(Local_763.f_18.f_1[iVar0]), 0f, -0.25f, 0f, 1765033373, 1f);
+					Local_763.f_18.f_56 = TASK::_0xD508FA229F1C4900(&(Local_763.f_18.f_1[iVar0]), 0f, -0.25f, 0f, joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED"), 1f);
 					if (TASK::_0x841475AC96E794D1(Local_763.f_18.f_56))
 					{
 						TASK::_0xEEE4829304F93EEE(Local_763.f_18.f_56, 0);
-						Local_763.f_18.f_56 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(&(Local_763.f_18.f_1[iVar0]), 75374539, 0f, -0.25f, 0f, 0f, 0f, 0f, 1);
+						Local_763.f_18.f_56 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(&(Local_763.f_18.f_1[iVar0]), joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_MP_SYNC_GOTO"), 0f, -0.25f, 0f, 0f, 0f, 0f, 1);
 					}
 					_NAMESPACE49::_0x9D16896F0DBE78A2(func_159(0), 2f);
 					func_228(func_215(0), func_159(0), Local_763.f_18.f_1[iVar0], 0, 0);
@@ -7735,7 +7735,7 @@ int func_321(int iParam0)
 			}
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 struct<2> func_322(int iParam0, int iParam1)
@@ -9443,7 +9443,7 @@ void func_433(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -12249,19 +12249,19 @@ int func_540()
 			switch (func_183())
 			{
 				case 0:
-					return 505459309;
+					return joaat("COLLECTIBLE_COGNAC");
 				case 1:
-					return 1962033744;
+					return joaat("COLLECTIBLE_OLDTOM_GIN");
 				case 2:
-					return -1583551360;
+					return joaat("COLLECTIBLE_PLYMOUTH_GIN");
 				case 3:
-					return 1331081117;
+					return joaat("COLLECTIBLE_TENN_WHISKEY");
 				case 4:
-					return 903574438;
+					return joaat("COLLECTIBLE_IRISH_WHISKEY");
 				case 5:
-					return 856057291;
+					return joaat("COLLECTIBLE_CYPRUS_BRANDY");
 				case 6:
-					return 259513172;
+					return joaat("COLLECTIBLE_CARIB_RUM");
 				default:
 					break;
 			}
@@ -12270,11 +12270,11 @@ int func_540()
 			switch (func_183())
 			{
 				case 0:
-					return -364070233;
+					return joaat("COLLECTIBLE_HRLM_BRUSH_ROSEWOOD_NG");
 				case 1:
-					return 1628530735;
+					return joaat("COLLECTIBLE_HRLM_COMB_TORTOISESHELL");
 				case 2:
-					return 530382704;
+					return joaat("COLLECTIBLE_HRLM_BRUSH_GOATHAIR");
 				case 3:
 					return joaat("COLLECTIBLE_HRLM_HAIRPIN_JADE");
 				default:
@@ -12282,7 +12282,7 @@ int func_540()
 			}
 			break;
 	}
-	return 856057291;
+	return joaat("COLLECTIBLE_CYPRUS_BRANDY");
 }
 
 int func_541(int iParam0, int iParam1)
@@ -12295,7 +12295,7 @@ int func_541(int iParam0, int iParam1)
 		return 0;
 	}
 	Var4.f_1 = 10;
-	func_617(&Var4, 1356624740);
+	func_617(&Var4, joaat("LOOT_TYPE_NORMAL"));
 	return func_618(iParam0, &Var4, &uVar0, iParam1);
 }
 
@@ -14114,24 +14114,24 @@ void func_617(var uParam0, int iParam1)
 		}
 		switch (iParam1)
 		{
-			case 291123060:
-			case 617531372:
-				if (&uParam0->f_1[iVar1] == 617531372 || &uParam0->f_1[iVar1] == 291123060)
+			case joaat("LOOTER_PED_IS_FEMALE"):
+			case joaat("LOOTER_PED_IS_MALE"):
+				if (&uParam0->f_1[iVar1] == joaat("LOOTER_PED_IS_MALE") || &uParam0->f_1[iVar1] == joaat("LOOTER_PED_IS_FEMALE"))
 				{
 					bVar0 = true;
 				}
 				break;
-			case 1356624740:
-			case 1884295263:
-				if (&uParam0->f_1[iVar1] == 1356624740 || &uParam0->f_1[iVar1] == 1884295263)
+			case joaat("LOOT_TYPE_NORMAL"):
+			case joaat("LOOT_TYPE_SKINNING"):
+				if (&uParam0->f_1[iVar1] == joaat("LOOT_TYPE_NORMAL") || &uParam0->f_1[iVar1] == joaat("LOOT_TYPE_SKINNING"))
 				{
 					bVar0 = true;
 				}
 				break;
-			case -1850666435:
-			case 1551239286:
-			case 1937393363:
-				if ((&uParam0->f_1[iVar1] == 1551239286 || &uParam0->f_1[iVar1] == -1850666435) || &uParam0->f_1[iVar1] == 1937393363)
+			case joaat("FISHING_RESULT_RUINED"):
+			case joaat("FISHING_RESULT_NORMAL"):
+			case joaat("FISHING_RESULT_LEGENDARY"):
+				if ((&uParam0->f_1[iVar1] == joaat("FISHING_RESULT_NORMAL") || &uParam0->f_1[iVar1] == joaat("FISHING_RESULT_RUINED")) || &uParam0->f_1[iVar1] == joaat("FISHING_RESULT_LEGENDARY"))
 				{
 					bVar0 = true;
 				}
@@ -14438,7 +14438,7 @@ int func_629(int iParam0)
 	{
 		return 0;
 	}
-	if (((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT")) || iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))
+	if (((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT")) || iVar0 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))
 	{
 		return 1;
 	}
@@ -14761,14 +14761,14 @@ void func_641(int iParam0)
 
 void func_642(var uParam0)
 {
-	func_617(uParam0, 143479330);
+	func_617(uParam0, joaat("MULTIPLAYER_GAME"));
 	if (func_656() == 2026485318)
 	{
-		func_617(uParam0, 617531372);
+		func_617(uParam0, joaat("LOOTER_PED_IS_MALE"));
 	}
 	else
 	{
-		func_617(uParam0, 291123060);
+		func_617(uParam0, joaat("LOOTER_PED_IS_FEMALE"));
 	}
 }
 
@@ -15293,7 +15293,7 @@ int func_664(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -15305,7 +15305,7 @@ int func_664(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;

@@ -213,45 +213,45 @@ void func_1(var uParam0, struct<2> Param1, var uParam3)
 	NETWORK::_0xE7DDA8BD3BCF751C(2);
 	uParam0->f_3 = 0;
 	uParam0->f_7 = Param1;
-	uParam0->f_10[0] = 555565008;
-	uParam0->f_10[1] = 1047639041;
-	uParam0->f_10[2] = 6459801;
-	uParam0->f_10[3] = -1193554482;
-	uParam0->f_10[4] = -375111022;
-	uParam0->f_10[5] = -1685795279;
-	uParam0->f_10[6] = 1557499261;
-	uParam0->f_10[7] = 1638241533;
-	uParam0->f_10[8] = 1381892893;
-	uParam0->f_10[9] = -1891494196;
-	uParam0->f_10[10] = 614601031;
-	uParam0->f_10[11] = 228390173;
-	uParam0->f_10[12] = 1059533441;
-	uParam0->f_10[13] = -1738556997;
-	uParam0->f_10[14] = -1602263347;
-	uParam0->f_10[15] = 1391900352;
-	uParam0->f_10[16] = -1207380412;
-	uParam0->f_10[17] = 2054053294;
-	uParam0->f_10[18] = 537842604;
-	uParam0->f_10[19] = -1965826694;
-	uParam0->f_10[20] = 1984607038;
-	uParam0->f_10[21] = 390341661;
-	uParam0->f_10[22] = -1471046819;
-	uParam0->f_10[23] = 1294299419;
-	uParam0->f_10[24] = -486123777;
-	uParam0->f_10[25] = -1421965287;
-	uParam0->f_10[26] = -874559555;
-	uParam0->f_10[27] = 585397373;
-	uParam0->f_10[28] = -1882486255;
-	uParam0->f_10[29] = 746416456;
-	uParam0->f_10[30] = 883965838;
-	uParam0->f_10[31] = -983691714;
-	uParam0->f_10[32] = 1350522279;
-	uParam0->f_10[33] = 1566230861;
-	uParam0->f_10[34] = 1020485513;
-	uParam0->f_10[35] = 1123926974;
-	uParam0->f_10[36] = -2094416950;
-	uParam0->f_10[37] = 751483325;
-	uParam0->f_10[38] = 2042302597;
+	uParam0->f_10[0] = joaat("MP_JEWELRY_AMETHYST_NECKLACE");
+	uParam0->f_10[1] = joaat("MP_JEWELRY_BLCK_PEARL_NECKLACE");
+	uParam0->f_10[2] = joaat("MP_JEWELRY_CARVED_BRACELET");
+	uParam0->f_10[3] = joaat("MP_JEWELRY_CORAL_DNGL_EARRING");
+	uParam0->f_10[4] = joaat("MP_JEWELRY_CORAL_RING");
+	uParam0->f_10[5] = joaat("MP_JEWELRY_DMND_BNGLE_BRACELET");
+	uParam0->f_10[6] = joaat("MP_JEWELRY_DMND_PENDT_EARRING");
+	uParam0->f_10[7] = joaat("MP_JEWELRY_DROP_EARRING");
+	uParam0->f_10[8] = joaat("MP_JEWELRY_ELK_TOOTH_EARRING");
+	uParam0->f_10[9] = joaat("MP_JEWELRY_EMERALD_EARRING");
+	uParam0->f_10[10] = joaat("MP_JEWELRY_EMERALD_RING");
+	uParam0->f_10[11] = joaat("MP_JEWELRY_FRENCH_DMND_RING");
+	uParam0->f_10[12] = joaat("MP_JEWELRY_GLD_BNGLE_BRACELET");
+	uParam0->f_10[13] = joaat("MP_JEWELRY_GLD_CROSS_NECKLACE");
+	uParam0->f_10[14] = joaat("MP_JEWELRY_GLD_PEARL_NECKLACE");
+	uParam0->f_10[15] = joaat("MP_JEWELRY_GLD_PENDT_NECKLACE");
+	uParam0->f_10[16] = joaat("MP_JEWELRY_GRNET_BRACELET");
+	uParam0->f_10[17] = joaat("MP_JEWELRY_GRNET_POST_EARRING");
+	uParam0->f_10[18] = joaat("MP_JEWELRY_MOON_RING");
+	uParam0->f_10[19] = joaat("MP_JEWELRY_MTHR_PEARL_NECKLACE");
+	uParam0->f_10[20] = joaat("MP_JEWELRY_ONYX_RING");
+	uParam0->f_10[21] = joaat("MP_JEWELRY_PEARL_BRACELET");
+	uParam0->f_10[22] = joaat("MP_JEWELRY_PEARL_EARRING");
+	uParam0->f_10[23] = joaat("MP_JEWELRY_PEARL_RING");
+	uParam0->f_10[24] = joaat("MP_JEWELRY_PERS_TURQ_RING");
+	uParam0->f_10[25] = joaat("MP_JEWELRY_PORCELAIN_NECKLACE");
+	uParam0->f_10[26] = joaat("MP_JEWELRY_QN_DMND_EARRING");
+	uParam0->f_10[27] = joaat("MP_JEWELRY_RUDY_DNGL_EARRING");
+	uParam0->f_10[28] = joaat("MP_JEWELRY_SLVR_PEARL_NECKLACE");
+	uParam0->f_10[29] = joaat("MP_JEWELRY_SPHR_BNGLE_BRACELET");
+	uParam0->f_10[30] = joaat("MP_JEWELRY_SPHR_BRACELET");
+	uParam0->f_10[31] = joaat("MP_JEWELRY_TOPAZ_NECKLACE");
+	uParam0->f_10[32] = joaat("MP_JEWELRY_TOPAZ_RING");
+	uParam0->f_10[33] = joaat("MP_JEWELRY_TURQ_STUD_EARRING");
+	uParam0->f_10[34] = joaat("MP_JEWELRY_TURQUOISE_BRACELET");
+	uParam0->f_10[35] = joaat("MP_JEWELRY_TURQUOISE_RING");
+	uParam0->f_10[36] = joaat("MP_JEWELRY_WHT_DMND_EARRING");
+	uParam0->f_10[37] = joaat("MP_JEWELRY_WHTGLD_DMND_RING");
+	uParam0->f_10[38] = joaat("MP_JEWELRY_YLWGLD_DMND_RING");
 	uParam0->f_1 = Param1.f_1;
 	uParam0->f_4 = { TASK::_0xA8452DD321607029(uParam0->f_1, 1) };
 	iVar2 = 0;
@@ -1419,83 +1419,83 @@ void func_70(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;

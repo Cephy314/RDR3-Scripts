@@ -118,7 +118,7 @@ void func_6()
 				{
 					StringCopy(&(Local_5.f_1), "WANTED_BOUNTY_POSTER_CHAIN_GANG", 32);
 					StringCopy(&(Local_5.f_18), "doc_bounty_poster_chain_gang", 32);
-					Local_5.f_8.f_2 = -1710279686; /* GXTEntry: "Bounty Poster - Mr Black & Mr White" */
+					Local_5.f_8.f_2 = joaat("DOCUMENT_BOUNTY_POSTER_CHAIN_GANG");
 				}
 				else if (Local_5.f_7 == -1325774943)
 				{

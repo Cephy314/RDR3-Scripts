@@ -10410,7 +10410,7 @@ int func_195(int iParam0, int iParam1)
 		case 4:
 			return joaat("REL_COP");
 		case 5:
-			return 623901053;
+			return joaat("REL_NO_RELATIONSHIP");
 		case 6:
 			return joaat("REL_PLAYER_ENEMY");
 		case 7:
@@ -10422,9 +10422,9 @@ int func_195(int iParam0, int iParam1)
 		case 10:
 			return joaat("REL_COMPANION_GROUP");
 		case 11:
-			return -767591988;
+			return joaat("REL_WILD_ANIMAL");
 		case 12:
-			return -989642646;
+			return joaat("REL_WILD_ANIMAL_PREDATOR");
 		case 13:
 			return joaat("REL_DOMESTICATED_ANIMAL");
 		case 14:
@@ -10460,11 +10460,11 @@ int func_195(int iParam0, int iParam1)
 		case 29:
 			return joaat("REL_GANG_MURFREE_BROOD");
 		case 30:
-			return 1986610512;
+			return joaat("REL_WILD_ANIMAL_BIRD");
 		case 31:
-			return 889541022;
+			return joaat("REL_ALLIGATOR");
 		case 32:
-			return -319516747;
+			return joaat("REL_BOAR");
 		case 33:
 			return joaat("REL_HEN_ANIMAL");
 		case 34:
@@ -16602,7 +16602,7 @@ int func_483(struct<5> Param0, int iParam5, int iParam6, var uParam7)
 	{
 		return 0;
 	}
-	if (!func_787(func_181(*uParam7), &Var33, &Var1, (((uParam7->f_4 == joaat("STANDARD") || uParam7->f_4 == joaat("SHERIFF")) || uParam7->f_4 == joaat("TRADER")) || uParam7->f_4 == 1766283257)))
+	if (!func_787(func_181(*uParam7), &Var33, &Var1, (((uParam7->f_4 == joaat("STANDARD") || uParam7->f_4 == joaat("SHERIFF")) || uParam7->f_4 == joaat("TRADER")) || uParam7->f_4 == joaat("MOONSHINER"))))
 	{
 		return 0;
 	}
@@ -17829,7 +17829,7 @@ int func_547(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -893766361;
+			return joaat("ENGLISH");
 		case 1:
 			return -2027639951;
 		default:
@@ -23789,7 +23789,7 @@ int func_828(int iParam0)
 	{
 		case -83251148:
 			return 1;
-		case -481311403:
+		case joaat("PASSED"):
 			return 2;
 		case -2034206938:
 			return 4;
@@ -25182,7 +25182,7 @@ int func_893(int iParam0)
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
 		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return joaat("GFH_MAGGIE");
 		case joaat("MARCEL"):
 			return joaat("GFH_MARCEL");
@@ -28707,7 +28707,7 @@ int func_1062(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1379545861:
+		case joaat("DISABLECOLLISION"):
 			return 3;
 		case -816807373:
 			return 4;
@@ -28976,11 +28976,11 @@ int func_1074(int iParam0)
 			return 4;
 		case -560457212:
 			return 8;
-		case -540896632:
+		case joaat("FLOWERS"):
 			return 16;
 		case -1155906572:
 			return 32;
-		case 1955535331:
+		case joaat("LONGGRASS"):
 			return 256;
 		default:
 			break;
@@ -34677,7 +34677,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7856;
 			case joaat("P_DOORFRAME_F1"):
 				return 2648;
-			case -1689676893:
+			case joaat("MP006_P_SHIPHORN_PULLROPE01X"):
 				return 9136;
 			case joaat("P_SHELFWALL02X"):
 				return 4072;
@@ -35913,7 +35913,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14329;
 			case joaat("P_SOFA02X"):
 				return 3809;
-			case -1522884667:
+			case joaat("MP005_P_MP_CRATESTACK01X"):
 				return 867;
 			case joaat("P_HATTOPHAT01X"):
 				return 1742;
@@ -36189,7 +36189,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12591;
 			case joaat("P_COALBIN01X"):
 				return 4997;
-			case -1487742800:
+			case joaat("MP006_S_MP_INTERACT_JUG"):
 				return 9080;
 			case joaat("P_VEH_PG_VL_TRADESMAN01X"):
 				return 14073;
@@ -36221,7 +36221,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14981;
 			case joaat("S_CRAFTEDTONIC_01X"):
 				return 13076;
-			case -1483407939:
+			case joaat("MP005_S_INV_TEXASBON01DX"):
 				return 8742;
 			case joaat("MP_FEMALE"):
 				return 15221;
@@ -36645,7 +36645,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13649;
 			case joaat("P_INT_COUGARCALLBOX01X"):
 				return 7121;
-			case -1424767799:
+			case joaat("A_C_HORSE_NORFOLKROADSTER_PIEBALDROAN"):
 				return 14409;
 			case joaat("P_TRAP03X"):
 				return 4272;
@@ -39067,7 +39067,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9853;
 			case joaat("W_MELEE_LASSO01"):
 				return 6;
-			case -1105571076:
+			case joaat("MP005_S_BDEG_SPOONBILL_EGG01X"):
 				return 8777;
 			case joaat("S_HOTAIRBALLOONFLAME01X"):
 				return 11080;
@@ -40259,7 +40259,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7692;
 			case joaat("MP_INTRO_FEMALES_01"):
 				return 15263;
-			case -946816685:
+			case joaat("MP005_S_BDEG_DUCK_EGG01X"):
 				return 8763;
 			case joaat("P_CS_BOOKEVELYNMILLER"):
 				return 12134;
@@ -45309,7 +45309,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15416;
 			case joaat("A_M_M_STRDEPUTYRESIDENT_01"):
 				return 14650;
-			case -264437520:
+			case joaat("MP001_S_HOTCHKISS_CANNON_CLIP"):
 				return 8202;
 			case joaat("P_BOTTLEMEDICINE20X"):
 				return 3028;
@@ -45693,7 +45693,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8100;
 			case -217698819:
 				return 13943;
-			case -217135948:
+			case joaat("A_C_HORSE_NORFOLKROADSTER_ROSEGREY"):
 				return 14410;
 			case joaat("MP_U_M_M_BOUNTYTARGET_005"):
 				return 15379;
@@ -46129,7 +46129,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4797;
 			case joaat("P_JUGGLINGBALL01X"):
 				return 4350;
-			case -156439156:
+			case joaat("A_C_HORSE_NORFOLKROADSTER_DAPPLEDBUCKSKIN"):
 				return 14408;
 			case joaat("S_PARCELRANCHERCLOTH01X"):
 				return 13210;
@@ -51871,7 +51871,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10324;
 			case joaat("S_OXHORN01X"):
 				return 13206;
-			case 622491397:
+			case joaat("MP005_S_INV_CARDINAL01DX"):
 				return 8721;
 			case joaat("P_CRD_10_C01X"):
 				return 12409;
@@ -52017,7 +52017,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1746;
 			case joaat("S_INTERACT_TORCH_CROWD"):
 				return 11099;
-			case 647812917:
+			case joaat("MP005_S_INV_CHOCDAISY01DX"):
 				return 8727;
 			case joaat("P_MARSTONWAGONPIECE02X"):
 				return 13414;
@@ -52847,7 +52847,7 @@ int func_1165(int iParam0, int iParam1)
 				return 2833;
 			case joaat("P_STANDGRAIN02X"):
 				return 3703;
-			case 755040865:
+			case joaat("MP005_S_BDEG_LOON_EGG01X"):
 				return 8775;
 			case 755516137:
 				return 9269;
@@ -53009,7 +53009,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4519;
 			case joaat("S_CANYONFLOWERJAR01X"):
 				return 13042;
-			case 781695271:
+			case joaat("W_PISTOL_SLOD"):
 				return 259;
 			case 781882897:
 				return 7209;
@@ -54793,7 +54793,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14450;
 			case joaat("DIS_BAY_CATFISHHOLE01_DECAL"):
 				return 594;
-			case 1007570567:
+			case joaat("A_C_HORSE_NORFOLKROADSTER_BLACK"):
 				return 14407;
 			case joaat("P_CHAIRMED01X"):
 				return 5628;
@@ -54851,7 +54851,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11864;
 			case joaat("P_DESK03X"):
 				return 5250;
-			case 1015895641:
+			case joaat("MP001_S_MP_CATALOGUE01X"):
 				return 8219;
 			case joaat("P_INT_ALLIGATORCALLBOX01X"):
 				return 7104;
@@ -54951,7 +54951,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3369;
 			case joaat("P_CRD_3_D01X_RHO"):
 				return 9598;
-			case 1029339151:
+			case joaat("A_C_HORSE_NORFOLKROADSTER_SPECKLEDGREY"):
 				return 14411;
 			case joaat("P_AMMO_CACHE_01X"):
 				return 874;
@@ -55129,7 +55129,7 @@ int func_1165(int iParam0, int iParam1)
 				return 305;
 			case joaat("RE_PRISONWAGON_FEMALES_01"):
 				return 15656;
-			case 1053450319:
+			case joaat("MP005_S_BDEG_HERON_EGG01X"):
 				return 8773;
 			case joaat("P_GLASS02X"):
 				return 2965;
@@ -56157,7 +56157,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8801;
 			case joaat("S_INV_ORCHID_LS_01X"):
 				return 11391;
-			case 1190244674:
+			case joaat("MP005_S_INV_RHUB01BX"):
 				return 8733;
 			case joaat("P_GATENBD03X"):
 				return 2729;
@@ -57297,7 +57297,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15759;
 			case 1343686692:
 				return 11753;
-			case 1344011125:
+			case joaat("A_C_HORSE_NORFOLKROADSTER_SPOTTEDTRICOLOR"):
 				return 14412;
 			case joaat("P_FLINTPIECE02X"):
 				return 6401;
@@ -57649,7 +57649,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5447;
 			case joaat("MP006_S_MP_BOOK_EMOTE01X"):
 				return 9079;
-			case 1390217426:
+			case joaat("MP005_S_BDEG_GOOSE_EGG01X"):
 				return 8769;
 			case 1390567643:
 				return 8687;
@@ -58019,7 +58019,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6976;
 			case 1438676538:
 				return 9425;
-			case 1438934506:
+			case joaat("MP005_S_BDEG_EGRET_EGG01X"):
 				return 8767;
 			case joaat("CS_LILLYMILLET"):
 				return 14862;
@@ -60009,7 +60009,7 @@ int func_1165(int iParam0, int iParam1)
 				return 623;
 			case joaat("P_VAL_HOTEL_DBL_DRAWER_01X"):
 				return 7747;
-			case 1684034790:
+			case joaat("MP006_P_CRATE01X_NOBRAND"):
 				return 868;
 			case 1684072721:
 				return 8976;
@@ -60603,7 +60603,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10337;
 			case joaat("P_DOMINO02_1_6"):
 				return 12626;
-			case 1763003085:
+			case joaat("MP005_S_INV_BLOODFLW01DX"):
 				return 8713;
 			case joaat("SCRIPT_RT_STD_THEATER"):
 				return 11734;
@@ -60963,7 +60963,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11069;
 			case joaat("P_FISHHANGING01X"):
 				return 6635;
-			case 1804804563:
+			case joaat("MP006_P_VEH_FLATCARKRGAT01X_1"):
 				return 13698;
 			case 1804844775:
 				return 952;
@@ -62001,7 +62001,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10434;
 			case joaat("CS_KIERAN"):
 				return 14852;
-			case 1939998736:
+			case joaat("MP006_S_SURRENDER_EMOTE01X"):
 				return 9083;
 			case 1940527974:
 				return 10179;
@@ -62243,7 +62243,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3742;
 			case joaat("P_DOV_LAB_GENERATOR01_LEVER"):
 				return 13395;
-			case joaat("P_POTSM01X"):
+			case joaat("LOG11"):
 				return 4546;
 			case joaat("P_BOTTLE008X_BIG"):
 				return 2903;
@@ -62761,7 +62761,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9572;
 			case joaat("S_CS_NH_NEWSPAPER04X"):
 				return 10640;
-			case 2037257400:
+			case joaat("MP005_S_INV_BITTERWEED01DX"):
 				return 8709;
 			case joaat("P_CARDSSPLIT01X_RHO"):
 				return 9499;
@@ -64499,7 +64499,7 @@ int func_1203(int iParam0, int iParam1)
 			return 173;
 		case joaat("PG_MP_POSSECAMP_TENT_TRADER01X_B"):
 			return 684;
-		case -2103461291:
+		case joaat("PG_RC_BEAUANDPENE201X"):
 			return 766;
 		case joaat("PG_AMBCAMP01X_TENT_WOVEN_LEAN"):
 			return 74;
@@ -64531,7 +64531,7 @@ int func_1203(int iParam0, int iParam1)
 			return 335;
 		case -2031659731:
 			return 193;
-		case -2026786984:
+		case joaat("PG_MP_MOONSHINEBIZ_SUPPLIES01X_CART03"):
 			return 348;
 		case joaat("PG_AMBIENT_CAMP_ADD_PACKCART02"):
 			return 144;
@@ -64565,7 +64565,7 @@ int func_1203(int iParam0, int iParam1)
 			return 605;
 		case joaat("PG_AMBIENT_CAMP_ADD_PACKWAGONCONVOY01"):
 			return 150;
-		case -1970994897:
+		case joaat("PG_MISSION_TNTWAGON01X"):
 			return 292;
 		case -1969866140:
 			return 678;
@@ -64631,7 +64631,7 @@ int func_1203(int iParam0, int iParam1)
 			return 863;
 		case -1820180737:
 			return 170;
-		case -1818274469:
+		case joaat("PG_RC_MONROE1_01X"):
 			return 779;
 		case -1811429542:
 			return 866;
@@ -64661,7 +64661,7 @@ int func_1203(int iParam0, int iParam1)
 			return 180;
 		case -1747228077:
 			return 717;
-		case -1742109836:
+		case joaat("PG_LS_SOLDIER2_01X"):
 			return 251;
 		case joaat("PG_MP_POSSECAMP_TENT_AFRAMETENT_SURVIVOR01"):
 			return 559;
@@ -64669,7 +64669,7 @@ int func_1203(int iParam0, int iParam1)
 			return 311;
 		case -1729090413:
 			return 737;
-		case -1728305280:
+		case joaat("PG_VEH_STAGECOACH003X_BOOTA"):
 			return 882;
 		case -1727792488:
 			return 333;
@@ -64767,7 +64767,7 @@ int func_1203(int iParam0, int iParam1)
 			return 242;
 		case -1530830467:
 			return 169;
-		case -1528275727:
+		case joaat("PG_AMBIENT_COACHROBBERY01X"):
 			return 188;
 		case -1527648871:
 			return 540;
@@ -64781,7 +64781,7 @@ int func_1203(int iParam0, int iParam1)
 			return 486;
 		case -1505588004:
 			return 844;
-		case -1504084621:
+		case joaat("PG_RE_CHECKPOINT01X"):
 			return 789;
 		case -1503532316:
 			return 496;
@@ -64873,7 +64873,7 @@ int func_1203(int iParam0, int iParam1)
 			return 537;
 		case joaat("PG_AMBCAMP01X_TENT_WOVEN"):
 			return 73;
-		case -1261431523:
+		case joaat("PG_GUNFORHIRE01X"):
 			return 237;
 		case -1260161722:
 			return 505;
@@ -64893,7 +64893,7 @@ int func_1203(int iParam0, int iParam1)
 			return 152;
 		case joaat("PG_MP_POSSECAMP_TENT_BOUNTY05X"):
 			return 571;
-		case -1238570474:
+		case joaat("PG_MISSION_MUD1_WAGON01X"):
 			return 284;
 		case joaat("PG_MISSION_TNTRAFT01X"):
 			return 291;
@@ -64901,7 +64901,7 @@ int func_1203(int iParam0, int iParam1)
 			return 541;
 		case -1230286782:
 			return 767;
-		case -1210356313:
+		case joaat("PG_RE_ARMSDEAL01X"):
 			return 785;
 		case joaat("PG_MP_POSSECAMP_GOODSPILE01X"):
 			return 490;
@@ -64925,7 +64925,7 @@ int func_1203(int iParam0, int iParam1)
 			return 128;
 		case joaat("PG_MP_POSSECAMP_TENT_AFRAMETENT_MILITARY01_C"):
 			return 555;
-		case -1097204956:
+		case joaat("PG_RE_SUPPLYDELIVERY01X"):
 			return 839;
 		case joaat("PG_AMBIENT_CAMP_ADD_BUILD"):
 			return 84;
@@ -64943,15 +64943,15 @@ int func_1203(int iParam0, int iParam1)
 			return 210;
 		case -1045099777:
 			return 773;
-		case -1031124636:
+		case joaat("PG_MISSION_MUD4_STRAUSWAG02X"):
 			return 288;
 		case joaat("PG_AMBIENT_CAMPFIRE04X"):
 			return 175;
-		case -1022516584:
+		case joaat("PG_GUNFORHIRE03X"):
 			return 239;
 		case -1022231102:
 			return 840;
-		case -1021554967:
+		case joaat("PG_MISSION_MARSTON7_LUMBER03X_DONELOADING"):
 			return 279;
 		case joaat("PG_MP_POSSECAMP_TENT_COVEREDTENT_MILITARY01_B"):
 			return 615;
@@ -64979,11 +64979,11 @@ int func_1203(int iParam0, int iParam1)
 			return 814;
 		case joaat("PG_MP_POSSECAMP_DECOR_LARGE000X_C"):
 			return 401;
-		case -973980807:
+		case joaat("PG_VEH_STAGECOACH002X_BOOTA"):
 			return 881;
-		case -973836254:
+		case joaat("PG_MISSION_MARSTON2_POSTOFFICE01X"):
 			return 276;
-		case -973527281:
+		case joaat("PG_GUNFORHIRE02X"):
 			return 238;
 		case joaat("PG_MP_POSSECAMP_TENT_COVEREDLEANTO_HOBO01_B"):
 			return 597;
@@ -65013,7 +65013,7 @@ int func_1203(int iParam0, int iParam1)
 			return 300;
 		case joaat("PG_SCENARIO_MOLOTOVMAKE"):
 			return 860;
-		case -906226543:
+		case joaat("PG_MIS_MUD1_WAGON02X"):
 			return 254;
 		case joaat("PG_MP_POSSECAMP_PLAYERTENT_LARGE001X"):
 			return 520;
@@ -65033,7 +65033,7 @@ int func_1203(int iParam0, int iParam1)
 			return 47;
 		case -852180896:
 			return 778;
-		case -851220308:
+		case joaat("PG_MISSION_UTP2_COACHLOCKBOX"):
 			return 309;
 		case -846550483:
 			return 181;
@@ -65073,7 +65073,7 @@ int func_1203(int iParam0, int iParam1)
 			return 227;
 		case -769500114:
 			return 853;
-		case -759553808:
+		case joaat("PG_MISSION_MUD1_WAGON03X"):
 			return 286;
 		case -750203114:
 			return 354;
@@ -65093,7 +65093,7 @@ int func_1203(int iParam0, int iParam1)
 			return 598;
 		case -729847598:
 			return 763;
-		case -729301986:
+		case joaat("PG_MP_MOONSHINEBIZ_SUPPLIES02X_SUPWAG"):
 			return 349;
 		case -724297262:
 			return 190;
@@ -65147,7 +65147,7 @@ int func_1203(int iParam0, int iParam1)
 			return 324;
 		case -613568443:
 			return 738;
-		case -611448842:
+		case joaat("PG_MIS_MUD1_WAGON02X_NOLOOSEPROPS"):
 			return 255;
 		case joaat("PG_MP_POSSECAMP_TENT_OPENLEANTO_CULTURE01_C"):
 			return 625;
@@ -65155,7 +65155,7 @@ int func_1203(int iParam0, int iParam1)
 			return 89;
 		case -588953865:
 			return 757;
-		case -581069256:
+		case joaat("PG_MISSION_BRT2"):
 			return 261;
 		case -574330745:
 			return 734;
@@ -65167,7 +65167,7 @@ int func_1203(int iParam0, int iParam1)
 			return 21;
 		case joaat("PG_AMBIENT_CAMP_ADD_TARP01"):
 			return 158;
-		case -509228265:
+		case joaat("PG_MISSION_BRT1_JUMP01X"):
 			return 259;
 		case -506504114:
 			return 805;
@@ -65175,7 +65175,7 @@ int func_1203(int iParam0, int iParam1)
 			return 525;
 		case joaat("PG_MP_POSSECAMP_DECOR_MEDIUM009X"):
 			return 432;
-		case -488847186:
+		case joaat("PG_MISSION_BRT2_ESCAPE01X"):
 			return 262;
 		case -488374858:
 			return 501;
@@ -65183,7 +65183,7 @@ int func_1203(int iParam0, int iParam1)
 			return 718;
 		case -487029834:
 			return 246;
-		case -486697517:
+		case joaat("PG_RE_TRAINHOLDUP01X"):
 			return 841;
 		case joaat("PG_AMBCAMP01X_TENT_STRING_TARP"):
 			return 70;
@@ -65213,7 +65213,7 @@ int func_1203(int iParam0, int iParam1)
 			return 739;
 		case joaat("PG_AMBIENT_CAMP_ADD_PACK02"):
 			return 140;
-		case -409323434:
+		case joaat("PG_WAGON02XCLIMBTEST01X"):
 			return 895;
 		case -407803663:
 			return 542;
@@ -65229,7 +65229,7 @@ int func_1203(int iParam0, int iParam1)
 			return 106;
 		case -376130058:
 			return 372;
-		case -375149463:
+		case joaat("PG_MISSION_MOONSHINESUPPLIES"):
 			return 282;
 		case -368094844:
 			return 350;
@@ -65251,7 +65251,7 @@ int func_1203(int iParam0, int iParam1)
 			return 374;
 		case -342958796:
 			return 92;
-		case -336173860:
+		case joaat("PG_MISSION_MARSTON7_LUMBER01X"):
 			return 277;
 		case -335759911:
 			return 375;
@@ -65273,7 +65273,7 @@ int func_1203(int iParam0, int iParam1)
 			return 740;
 		case joaat("PG_MP_POSSECAMP_TENT_SIMPLEBEDROLL_SURVIVOR01_B"):
 			return 651;
-		case -276407448:
+		case joaat("PG_MISSION_MUD1_WAGON02X"):
 			return 285;
 		case joaat("PG_MP_POSSECAMP_TENT_COLLECTOR01X_B"):
 			return 579;
@@ -65353,7 +65353,7 @@ int func_1203(int iParam0, int iParam1)
 			return 91;
 		case joaat("PG_MP_POSSECAMP_TENT_BOUNTY04X_B"):
 			return 570;
-		case -81834080:
+		case joaat("PG_MISSION_MARSTON1_SUPPLIES02X"):
 			return 275;
 		case -78950956:
 			return 218;
@@ -65405,7 +65405,7 @@ int func_1203(int iParam0, int iParam1)
 			return 817;
 		case joaat("PG_MP_POSSECAMP_PLAYERTENT_MEDIUM000X_B"):
 			return 536;
-		case 41200892:
+		case joaat("PG_MISSION_MARSTON7_LUMBER02X"):
 			return 278;
 		case joaat("PG_MP_POSSECAMP_TENT_BOUNTY03X_B"):
 			return 567;
@@ -65429,7 +65429,7 @@ int func_1203(int iParam0, int iParam1)
 			return 66;
 		case joaat("PG_MP_POSSECAMP_TENT_SIMPLELEANTO_SURVIVOR01_C"):
 			return 667;
-		case 100192451:
+		case joaat("PG_RC_EXCONFEDERATES1_01X"):
 			return 776;
 		case 101453941:
 			return 352;
@@ -65453,7 +65453,7 @@ int func_1203(int iParam0, int iParam1)
 			return 10;
 		case 169518827:
 			return 272;
-		case 174891252:
+		case joaat("PG_RC_NATIVEWAGONCORNWALL01X"):
 			return 780;
 		case 179060988:
 			return 270;
@@ -65485,7 +65485,7 @@ int func_1203(int iParam0, int iParam1)
 			return 748;
 		case 294392882:
 			return 340;
-		case 295596934:
+		case joaat("PG_MP005_HUNTINGWAGONTARP01"):
 			return 745;
 		case 299214532:
 			return 351;
@@ -65601,7 +65601,7 @@ int func_1203(int iParam0, int iParam1)
 			return 827;
 		case 581057371:
 			return 831;
-		case 582515068:
+		case joaat("PG_RE_FLEEINGFAMILY01X"):
 			return 802;
 		case 589459952:
 			return 845;
@@ -65753,7 +65753,7 @@ int func_1203(int iParam0, int iParam1)
 			return 531;
 		case 891861372:
 			return 463;
-		case 903797443:
+		case joaat("PG_RE_SAVAGEWAGON01X"):
 			return 833;
 		case 905217820:
 			return 497;
@@ -65799,7 +65799,7 @@ int func_1203(int iParam0, int iParam1)
 			return 612;
 		case 983406277:
 			return 439;
-		case 986026237:
+		case joaat("PG_RE_MOONSHINECAMPGROUPCART01X"):
 			return 818;
 		case 987321586:
 			return 264;
@@ -65809,13 +65809,13 @@ int func_1203(int iParam0, int iParam1)
 			return 556;
 		case joaat("PG_AMBCAMP01X_TENT_LEATHER"):
 			return 33;
-		case 1014756160:
+		case joaat("PG_RE_DEADBODIES01X_LIGHTS"):
 			return 795;
 		case 1014937589:
 			return 295;
 		case joaat("PG_AMBIENT_CAMP_ADD_BOAT01"):
 			return 82;
-		case 1020180548:
+		case joaat("PG_RE_SUPPLYDELIVERY_GSMITH01X"):
 			return 838;
 		case joaat("PG_MP_POSSECAMP_TENT_TALLLEANTO_MILITARY01_C"):
 			return 676;
@@ -65835,7 +65835,7 @@ int func_1203(int iParam0, int iParam1)
 			return 650;
 		case joaat("PG_MP_POSSECAMP_FOLLOWERTENT_LARGE002X_C"):
 			return 484;
-		case 1059278469:
+		case joaat("PG_MISSION_MARY3_01X"):
 			return 281;
 		case joaat("PG_MP_POSSECAMP_PLAYERTENT_LARGE000X_B"):
 			return 518;
@@ -65903,9 +65903,9 @@ int func_1203(int iParam0, int iParam1)
 			return 35;
 		case 1253107287:
 			return 209;
-		case 1256585360:
+		case joaat("PG_VEH_BOATSTEAM02X_1"):
 			return 874;
-		case 1259608942:
+		case joaat("PG_SP_MARSTONSWAGON02X"):
 			return 869;
 		case joaat("PG_MP_POSSECAMP_TENT_TALLLEANTO_MILITARY01_B"):
 			return 675;
@@ -65929,7 +65929,7 @@ int func_1203(int iParam0, int iParam1)
 			return 813;
 		case joaat("PG_AMBCAMP01X_TENT_GROUND01"):
 			return 19;
-		case 1291266059:
+		case joaat("PG_RE_CHECKPOINT02X_FOOD"):
 			return 790;
 		case joaat("PG_MP_POSSECAMP_PLAYERTENT_LARGE000X_C"):
 			return 519;
@@ -65943,7 +65943,7 @@ int func_1203(int iParam0, int iParam1)
 			return 153;
 		case 1304717394:
 			return 721;
-		case 1306345203:
+		case joaat("PG_MISSION_MARSTON1_SUPPLIES01X"):
 			return 274;
 		case joaat("PG_MP_POSSECAMP_TENT_COVEREDLEANTO_CULTURE01_C"):
 			return 595;
@@ -66121,7 +66121,7 @@ int func_1203(int iParam0, int iParam1)
 			return 564;
 		case joaat("PG_MP_POSSECAMP_DECOR_SMALL010X"):
 			return 454;
-		case 1783151449:
+		case joaat("PG_MISSION_BRA1_WAGON"):
 			return 258;
 		case 1787576636:
 			return 362;
@@ -66159,7 +66159,7 @@ int func_1203(int iParam0, int iParam1)
 			return 197;
 		case joaat("PG_SCENARIO_DYNAMITEMAKE"):
 			return 857;
-		case 1848755277:
+		case joaat("PG_RC_SADDIESUPPLIES01X"):
 			return 784;
 		case joaat("PG_AMBIENT_CAMP_ADD_NATIVE01"):
 			return 138;
@@ -66223,7 +66223,7 @@ int func_1203(int iParam0, int iParam1)
 			return 240;
 		case joaat("PG_AMBIENT_CAMPFIRE01X"):
 			return 164;
-		case 1996806757:
+		case joaat("PG_CS_MARSTON101X"):
 			return 220;
 		case 1998517028:
 			return 268;
@@ -66241,11 +66241,11 @@ int func_1203(int iParam0, int iParam1)
 			return 357;
 		case 2042176968:
 			return 310;
-		case 2043533861:
+		case joaat("PG_RC_SADDIESUPPLIES00X"):
 			return 783;
-		case 2047933667:
+		case joaat("PG_VEH_COACH2_BOOTA"):
 			return 875;
-		case 2053409431:
+		case joaat("PG_RC_RIDETHELIGHTNING01X"):
 			return 782;
 		case 2055505845:
 			return 320;
@@ -66273,7 +66273,7 @@ int func_1203(int iParam0, int iParam1)
 			return 243;
 		case 2118017939:
 			return 855;
-		case 2121258366:
+		case joaat("PG_MISSION_MUD1_JACKWAGON01X"):
 			return 283;
 		case joaat("PG_AMBIENT_CAMP_ADD_MAKESHIFTTABLE01"):
 			return 135;
@@ -67667,7 +67667,7 @@ struct<6> func_1277(int iParam0, int iParam1)
 		default:
 			switch (iParam1)
 			{
-				case 1766283257:
+				case joaat("MOONSHINER"):
 					Var0 = 0;
 					Var0.f_1 = Global_1901929->f_295.f_45;
 					Var0.f_2 = Global_1901929->f_295.f_44;
@@ -67895,7 +67895,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4112;
 			case -2139769274:
 				return 1379;
-			case -2137753947:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_BUCK"):
 				return 51;
 			case -2137715194:
 				return 1024;
@@ -67911,7 +67911,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4023;
 			case -2135256078:
 				return 2641;
-			case -2133302615:
+			case joaat("META_OUTFIT_VAL_PIANO_PLAYER_03"):
 				return 636;
 			case -2132617886:
 				return 4038;
@@ -67939,7 +67939,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5666;
 			case -2123160869:
 				return 2796;
-			case -2122774804:
+			case joaat("META_ANIMAL_OUTFIT_BEARBLACK_001"):
 				return 23;
 			case -2122500420:
 				return 1474;
@@ -67949,7 +67949,7 @@ int func_1287(int iParam0, int iParam1)
 				return 19;
 			case joaat("HAT_MR1_020_ALT02A"):
 				return 4633;
-			case -2120236310:
+			case joaat("META_OUTFIT_ANIMAL_ORIOLEHOODED"):
 				return 210;
 			case -2119975294:
 				return 342;
@@ -67961,7 +67961,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2758;
 			case -2116779830:
 				return 5198;
-			case -2116663991:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMDESERT_001"):
 				return 33;
 			case -2116139111:
 				return 774;
@@ -67975,11 +67975,11 @@ int func_1287(int iParam0, int iParam1)
 				return 1350;
 			case -2111983088:
 				return 5835;
-			case -2111653907:
+			case joaat("META_OUTFIT_ANIMAL_POISON_REDFIN"):
 				return 151;
 			case -2109073297:
 				return 3324;
-			case -2108783749:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJA"):
 				return 228;
 			case -2105118656:
 				return 4217;
@@ -68049,7 +68049,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5023;
 			case -2079843276:
 				return 1922;
-			case -2078090703:
+			case joaat("META_OUTFIT_ANIMAL_SNAKEREDTAILBOASUN"):
 				return 272;
 			case -2078086178:
 				return 2556;
@@ -68087,7 +68087,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1877;
 			case -2064780282:
 				return 1965;
-			case -2064564980:
+			case joaat("META_OUTFIT_ANIMAL_DESERT"):
 				return 283;
 			case -2064018994:
 				return 5553;
@@ -68117,7 +68117,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3574;
 			case -2053540488:
 				return 2000;
-			case -2053341513:
+			case joaat("META_OUTFIT_ANNESBURG_VAR_01"):
 				return 4247;
 			case -2052395687:
 				return 3470;
@@ -68141,7 +68141,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4621;
 			case -2047589163:
 				return 2355;
-			case -2046877254:
+			case joaat("META_ANIMAL_OUTFIT_BEAVER_000"):
 				return 25;
 			case -2046800601:
 				return 1545;
@@ -68193,7 +68193,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1506;
 			case -2030519833:
 				return 4952;
-			case -2029723322:
+			case joaat("META_OUTFIT_RHODES_VAR_03"):
 				return 398;
 			case joaat("GOON2"):
 				return 1158;
@@ -68409,9 +68409,9 @@ int func_1287(int iParam0, int iParam1)
 				return 187;
 			case -1954329196:
 				return 3239;
-			case -1950203877:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_LARGEMOUTHBASS"):
 				return 144;
-			case -1950122094:
+			case joaat("META_OUTFIT_STRAWBERRY_VAR_03"):
 				return 467;
 			case -1949892659:
 				return 929;
@@ -68423,7 +68423,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5084;
 			case -1947283266:
 				return 2354;
-			case -1946665070:
+			case joaat("META_OUTFIT_WALLACESTATION_VAR_01"):
 				return 4283;
 			case -1946599558:
 				return 2648;
@@ -68449,7 +68449,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5152;
 			case -1940225037:
 				return 2190;
-			case -1939155122:
+			case joaat("META_OUTFIT_ANIMAL_POISON_DEER"):
 				return 90;
 			case -1938788117:
 				return 5268;
@@ -68525,9 +68525,9 @@ int func_1287(int iParam0, int iParam1)
 				return 1019;
 			case -1913713471:
 				return 2886;
-			case -1910028162:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_BULLHEADCATFISH"):
 				return 136;
-			case -1909918104:
+			case joaat("META_OUTFIT_ANIMAL_DUCKPEKIN"):
 				return 122;
 			case -1908798843:
 				return 3504;
@@ -68551,7 +68551,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1861;
 			case -1900033419:
 				return 1582;
-			case -1899670587:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPDESERT_001"):
 				return 41;
 			case -1897893751:
 				return 4426;
@@ -68619,7 +68619,7 @@ int func_1287(int iParam0, int iParam1)
 				return 928;
 			case -1874781479:
 				return 4861;
-			case -1874493596:
+			case joaat("META_ANIMAL_OUTFIT_BOAR_001"):
 				return 47;
 			case -1874258837:
 				return 3666;
@@ -68643,7 +68643,7 @@ int func_1287(int iParam0, int iParam1)
 				return 175;
 			case -1862234905:
 				return 114;
-			case -1861127026:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_M_000"):
 				return 208;
 			case -1859254916:
 				return 4541;
@@ -68707,7 +68707,7 @@ int func_1287(int iParam0, int iParam1)
 				return 350;
 			case -1837924088:
 				return 1847;
-			case -1837792443:
+			case joaat("META_OUTFIT_ANIMAL_WOLFLARGE_001"):
 				return 290;
 			case -1837436619:
 				return 5762;
@@ -68719,7 +68719,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2559;
 			case -1835618648:
 				return 1217;
-			case -1834180478:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPROCKY"):
 				return 42;
 			case -1833636986:
 				return 431;
@@ -68801,7 +68801,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4457;
 			case -1804252262:
 				return 4990;
-			case -1803981367:
+			case joaat("META_ANIMAL_OUTFIT_BADGER_001"):
 				return 11;
 			case -1803656137:
 				return 340;
@@ -68873,7 +68873,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4880;
 			case -1784977954:
 				return 2410;
-			case -1784505363:
+			case joaat("META_ANIMAL_OUTFIT_BUFFALO_M"):
 				return 57;
 			case -1784309042:
 				return 3230;
@@ -68965,7 +68965,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4528;
 			case -1740992590:
 				return 3503;
-			case -1739715544:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_000"):
 				return 205;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_STACHE_002_04"):
 				return 5123;
@@ -69089,7 +69089,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1968;
 			case -1688988898:
 				return 4614;
-			case -1688984856:
+			case joaat("META_OUTFIT_ANIMAL_SNAKENORTHCOPPER"):
 				return 269;
 			case -1688724759:
 				return 3164;
@@ -69125,7 +69125,7 @@ int func_1287(int iParam0, int iParam1)
 				return 828;
 			case -1680831884:
 				return 4815;
-			case -1680715241:
+			case joaat("META_OUTFIT_ANIMAL_COYOTE_001"):
 				return 80;
 			case -1679307687:
 				return 3342;
@@ -69161,7 +69161,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3820;
 			case -1668710380:
 				return 3798;
-			case -1667731605:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPDESERT_000"):
 				return 40;
 			case -1666457514:
 				return 1567;
@@ -69215,7 +69215,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3744;
 			case -1656392754:
 				return 1150;
-			case -1655190100:
+			case joaat("META_OUTFIT_ANIMAL_POSSUM_000"):
 				return 226;
 			case -1654350622:
 				return 5529;
@@ -69279,7 +69279,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1304;
 			case -1633479938:
 				return 3790;
-			case -1632133521:
+			case joaat("META_OUTFIT_VAL_PIANO_PLAYER_02"):
 				return 635;
 			case joaat("HAT_MR1_019_ALT01"):
 				return 5130;
@@ -69317,7 +69317,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2111;
 			case -1619093821:
 				return 1297;
-			case -1618780616:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_LONGNOSEGAR"):
 				return 145;
 			case -1618758214:
 				return 1714;
@@ -69405,7 +69405,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5606;
 			case -1582989764:
 				return 2068;
-			case -1582008655:
+			case joaat("META_OUTFIT_VANHORN_VAR_03"):
 				return 446;
 			case -1581934131:
 				return 1635;
@@ -69443,7 +69443,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2592;
 			case -1567077450:
 				return 3033;
-			case -1566130370:
+			case joaat("META_ANIMAL_OUTFIT_PARROTGREEN"):
 				return 218;
 			case -1564894869:
 				return 738;
@@ -69461,7 +69461,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5449;
 			case -1562249180:
 				return 453;
-			case -1561386138:
+			case joaat("MAGICLANTERN_TICKETS_BLW_01"):
 				return 4251;
 			case -1560798716:
 				return 2182;
@@ -69509,13 +69509,13 @@ int func_1287(int iParam0, int iParam1)
 				return 1712;
 			case -1542012855:
 				return 5608;
-			case -1541074772:
+			case joaat("PANTHER_LEGENDARY"):
 				return 217;
 			case joaat("HAT_FR1_659"):
 				return 4481;
-			case -1540150672:
+			case joaat("META_OUTFIT_ANIMAL_SPARROWGOLD"):
 				return 277;
-			case -1538725798:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_M"):
 				return 207;
 			case -1538619724:
 				return 1310;
@@ -69633,7 +69633,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3616;
 			case -1496774448:
 				return 346;
-			case -1496612359:
+			case joaat("META_OUTFIT_COOL_WEATHER"):
 				return 760;
 			case -1496509817:
 				return 2223;
@@ -69679,7 +69679,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5061;
 			case -1484349655:
 				return 3553;
-			case -1484190577:
+			case joaat("META_ANIMAL_OUTFIT_BUFFALO_M_001"):
 				return 59;
 			case -1484058314:
 				return 2546;
@@ -69697,7 +69697,7 @@ int func_1287(int iParam0, int iParam1)
 				return 997;
 			case joaat("HAT_MR1_013"):
 				return 4618;
-			case -1471195588:
+			case joaat("META_OUTFIT_ANIMAL_SKUNK_000"):
 				return 264;
 			case -1469802522:
 				return 2747;
@@ -69737,7 +69737,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2145;
 			case -1451202427:
 				return 5521;
-			case -1449777556:
+			case joaat("META_OUTFIT_RHODES_VAR_01"):
 				return 396;
 			case -1449285706:
 				return 3390;
@@ -69771,7 +69771,7 @@ int func_1287(int iParam0, int iParam1)
 				return 319;
 			case -1438333946:
 				return 3478;
-			case -1438211309:
+			case joaat("META_ANIMAL_OUTFIT_BULLANGUS"):
 				return 66;
 			case -1437962122:
 				return 1001;
@@ -69917,7 +69917,7 @@ int func_1287(int iParam0, int iParam1)
 				return 901;
 			case -1394369597:
 				return 1445;
-			case -1394281412:
+			case joaat("META_OUTFIT_ANIMAL_COYOTE_000"):
 				return 79;
 			case -1392573190:
 				return 3305;
@@ -69929,7 +69929,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2297;
 			case -1390102139:
 				return 4108;
-			case -1388818080:
+			case joaat("META_OUTFIT_ANIMAL_PIGOLDSPOT"):
 				return 224;
 			case -1388621527:
 				return 1713;
@@ -69947,7 +69947,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3361;
 			case -1383406675:
 				return 3048;
-			case -1383176768:
+			case joaat("META_OUTFIT_ANIMAL_FOX_000"):
 				return 157;
 			case -1382876584:
 				return 1069;
@@ -69981,7 +69981,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2948;
 			case -1372641200:
 				return 3220;
-			case -1372086773:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMDESERT_000"):
 				return 32;
 			case -1372069185:
 				return 3699;
@@ -69999,7 +69999,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5438;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHIN_001_07"):
 				return 5083;
-			case joaat("PLAYER_STOPS_HORSE_WNT2_RIDE1_12"):
+			case joaat("META_OUTFIT_ANIMAL_JAVELINA_000"):
 				return 199;
 			case -1362984132:
 				return 905;
@@ -70007,7 +70007,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3821;
 			case -1360427607:
 				return 2135;
-			case -1360285648:
+			case joaat("META_OUTFIT_ANIMAL_SQUIRREL_001"):
 				return 280;
 			case -1360074767:
 				return 2792;
@@ -70049,7 +70049,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5465;
 			case -1347740553:
 				return 4535;
-			case -1346378887:
+			case joaat("META_ANIMAL_OUTFIT_BEARBLACK_000"):
 				return 22;
 			case -1345986938:
 				return 659;
@@ -70129,7 +70129,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3826;
 			case -1313794193:
 				return 2121;
-			case -1313615167:
+			case joaat("META_OUTFIT_ANIMAL_SEAGULLRINGBILLED"):
 				return 260;
 			case -1313156546:
 				return 623;
@@ -70171,7 +70171,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2186;
 			case -1301107843:
 				return 2272;
-			case -1299761151:
+			case joaat("META_OUTFIT_ANIMAL_POISON_RABBIT"):
 				return 247;
 			case -1298683031:
 				return 2265;
@@ -70195,7 +70195,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3780;
 			case -1291718938:
 				return 5562;
-			case -1289532595:
+			case joaat("META_OUTFIT_ANIMAL_POISON_FROGBULL"):
 				return 162;
 			case -1288823878:
 				return 1378;
@@ -70359,19 +70359,19 @@ int func_1287(int iParam0, int iParam1)
 				return 4197;
 			case -1237621599:
 				return 2663;
-			case -1236418802:
+			case joaat("META_ANIMAL_OUTFIT_BULLHEREFORD"):
 				return 68;
-			case -1235944432:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONOM_001"):
 				return 242;
 			case -1233239944:
 				return 404;
 			case -1232740429:
 				return 5658;
-			case -1232542282:
+			case joaat("META_ANIMAL_OUTFIT_LOONPACIFIC"):
 				return 202;
 			case -1231877150:
 				return 4024;
-			case -1229572111:
+			case joaat("META_OUTFIT_BUTCHERCREEK_COOK_01"):
 				return 366;
 			case -1229189677:
 				return 2384;
@@ -70409,7 +70409,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2998;
 			case -1213490302:
 				return 4201;
-			case -1212478257:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_BEAVER"):
 				return 27;
 			case -1211524678:
 				return 2601;
@@ -70423,7 +70423,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2283;
 			case -1207970304:
 				return 1902;
-			case -1207774806:
+			case joaat("META_OUTFIT_PANTS_HEELS"):
 				return 1051;
 			case -1207636623:
 				return 2890;
@@ -70487,7 +70487,7 @@ int func_1287(int iParam0, int iParam1)
 				return 482;
 			case -1183889201:
 				return 2954;
-			case -1183379522:
+			case joaat("META_OUTFIT_ANIMAL_POISON_DOGBLUETICKCOONHOUND"):
 				return 98;
 			case -1182422112:
 				return 2136;
@@ -70529,7 +70529,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2708;
 			case -1168906910:
 				return 327;
-			case -1168722760:
+			case joaat("META_ANIMAL_OUTFIT_BUFFALO_000"):
 				return 55;
 			case -1168693508:
 				return 2416;
@@ -70543,7 +70543,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4107;
 			case -1160821004:
 				return 1438;
-			case -1160541758:
+			case joaat("META_OUTFIT_ANIMAL_OWLCALI"):
 				return 211;
 			case -1158072339:
 				return 2573;
@@ -70555,9 +70555,9 @@ int func_1287(int iParam0, int iParam1)
 				return 1111;
 			case -1155056484:
 				return 3581;
-			case -1154853036:
+			case joaat("META_OUTFIT_VAL_PIANO_PLAYER_04"):
 				return 637;
-			case -1154821073:
+			case joaat("META_OUTFIT_ANIMAL_SNAKESOUTHCOPPER"):
 				return 270;
 			case -1153870429:
 				return 2497;
@@ -70573,7 +70573,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3536;
 			case -1151768825:
 				return 3490;
-			case -1151440774:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMROCKY_001"):
 				return 36;
 			case -1151108317:
 				return 5586;
@@ -70583,7 +70583,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5781;
 			case -1149853461:
 				return 362;
-			case -1148662080:
+			case joaat("META_ANIMAL_OUTFIT_PARROTSCARLET"):
 				return 219;
 			case joaat("HAT_MR1_021"):
 				return 4634;
@@ -70641,7 +70641,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2861;
 			case -1124489518:
 				return 4329;
-			case -1122285933:
+			case joaat("META_OUTFIT_ANIMAL_SNAKECOTTONMOUTH"):
 				return 273;
 			case -1121761142:
 				return 4336;
@@ -70651,7 +70651,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4801;
 			case -1120526485:
 				return 854;
-			case -1120159737:
+			case joaat("META_OUTFIT_ANIMAL_HERONTRICOLOR"):
 				return 165;
 			case -1118909346:
 				return 485;
@@ -70683,11 +70683,11 @@ int func_1287(int iParam0, int iParam1)
 				return 2477;
 			case -1108823458:
 				return 3245;
-			case -1107406441:
+			case joaat("META_OUTFIT_ANIMAL_RAT_001"):
 				return 256;
 			case -1107173821:
 				return 4133;
-			case -1106231666:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_SOCKEYESALMON"):
 				return 154;
 			case -1104231275:
 				return 5267;
@@ -70713,7 +70713,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2069;
 			case -1090766132:
 				return 2748;
-			case -1090271092:
+			case joaat("META_OUTFIT_BUTCHERCREEK_COOK_03"):
 				return 368;
 			case -1090160065:
 				return 900;
@@ -70797,7 +70797,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5505;
 			case -1057784856:
 				return 2155;
-			case -1057615530:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONOM_000"):
 				return 241;
 			case -1057105953:
 				return 2755;
@@ -70815,7 +70815,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3097;
 			case -1049024234:
 				return 715;
-			case -1048557937:
+			case joaat("META_OUTFIT_ANIMAL_CRANESANDHILL"):
 				return 86;
 			case -1047835576:
 				return 2739;
@@ -70835,13 +70835,13 @@ int func_1287(int iParam0, int iParam1)
 				return 5425;
 			case -1043480529:
 				return 5444;
-			case -1043092861:
+			case joaat("META_OUTFIT_EMERALDRANCH_VAR_01"):
 				return 459;
 			case -1042839329:
 				return 687;
 			case -1041197591:
 				return 4756;
-			case -1039768986:
+			case joaat("META_OUTFIT_ANIMAL_WOLFLARGE_000"):
 				return 289;
 			case -1039144232:
 				return 3093;
@@ -70881,11 +70881,11 @@ int func_1287(int iParam0, int iParam1)
 				return 1654;
 			case -1024448528:
 				return 2144;
-			case -1024016038:
+			case joaat("META_OUTFIT_ANIMAL_POISON_DOGHOUND"):
 				return 109;
 			case -1021941369:
 				return 5338;
-			case -1021877830:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_001"):
 				return 206;
 			case -1020321828:
 				return 3584;
@@ -71011,7 +71011,7 @@ int func_1287(int iParam0, int iParam1)
 				return 562;
 			case -967360518:
 				return 448;
-			case -967163299:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJAM_000"):
 				return 232;
 			case -966128464:
 				return 3461;
@@ -71053,7 +71053,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1754;
 			case -953321788:
 				return 3263;
-			case -953201595:
+			case joaat("META_OUTFIT_ANIMAL_SQUIRRELRED"):
 				return 282;
 			case -952256680:
 				return 4931;
@@ -71217,9 +71217,9 @@ int func_1287(int iParam0, int iParam1)
 				return 1518;
 			case -890419023:
 				return 1085;
-			case -888580579:
+			case joaat("META_ANIMAL_OUTFIT_BUFFALO_001"):
 				return 56;
-			case -886836096:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMROCKY"):
 				return 34;
 			case -886808916:
 				return 2721;
@@ -71267,7 +71267,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2216;
 			case -872634833:
 				return 1129;
-			case -872382606:
+			case joaat("META_OUTFIT_ANIMAL_VULTUREEAST"):
 				return 287;
 			case -872023541:
 				return 3535;
@@ -71305,7 +71305,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3142;
 			case -856451469:
 				return 4947;
-			case -855293722:
+			case joaat("META_OUTFIT_EMERALDRANCH_VAR_02"):
 				return 460;
 			case -854737512:
 				return 2316;
@@ -71345,7 +71345,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4242;
 			case -841776651:
 				return 2838;
-			case -841151793:
+			case joaat("COUGAR_LEGENDARY"):
 				return 72;
 			case -840869937:
 				return 3647;
@@ -71421,7 +71421,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2459;
 			case -813988972:
 				return 987;
-			case -813373518:
+			case joaat("META_OUTFIT_ANIMAL_POISON_ELK"):
 				return 133;
 			case -813319677:
 				return 5782;
@@ -71435,7 +71435,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3901;
 			case -810311120:
 				return 4800;
-			case -809569000:
+			case joaat("META_OUTFIT_ANIMAL_RAT_000"):
 				return 255;
 			case -808171391:
 				return 4929;
@@ -71535,13 +71535,13 @@ int func_1287(int iParam0, int iParam1)
 				return 1778;
 			case joaat("HAT_MR1_069"):
 				return 4675;
-			case -775451121:
+			case joaat("REINFORCED_BINDINGS_FEET_DEFAULT"):
 				return 5864;
 			case -775038432:
 				return 4453;
-			case -775023191:
+			case joaat("META_ANIMAL_OUTFIT_ALLIGATOR1_001"):
 				return 1;
-			case -774938341:
+			case joaat("META_ANIMAL_OUTFIT_BUFFALO_M_000"):
 				return 58;
 			case -774890814:
 				return 586;
@@ -71555,7 +71555,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3082;
 			case -771189064:
 				return 5660;
-			case -770027479:
+			case joaat("META_OUTFIT_ANIMAL_EGRETSNOWY"):
 				return 126;
 			case -769528659:
 				return 3071;
@@ -71647,7 +71647,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1380;
 			case -737737856:
 				return 4998;
-			case -737163478:
+			case joaat("META_OUTFIT_ANIMAL_SPARROWEURO"):
 				return 276;
 			case -737069165:
 				return 5409;
@@ -71655,7 +71655,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1543;
 			case -735881712:
 				return 2548;
-			case -735264359:
+			case joaat("META_OUTFIT_ANIMAL_HAWKROUGH"):
 				return 164;
 			case -734048099:
 				return 2212;
@@ -71667,7 +71667,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5461;
 			case -731144983:
 				return 5335;
-			case -730833443:
+			case joaat("META_OUTFIT_ANIMAL_PRONGHORN_001"):
 				return 245;
 			case -730531534:
 				return 2329;
@@ -71783,7 +71783,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3753;
 			case -683323972:
 				return 1071;
-			case -682671307:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMDESERT"):
 				return 31;
 			case -681987827:
 				return 661;
@@ -71843,7 +71843,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3498;
 			case -662009659:
 				return 1363;
-			case -661468397:
+			case joaat("META_OUTFIT_BLACKWATER_VAR_02"):
 				return 373;
 			case -661216614:
 				return 1560;
@@ -71853,7 +71853,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4498;
 			case -659415215:
 				return 3435;
-			case -658571380:
+			case joaat("META_ANIMAL_OUTFIT_LOONYELLOW"):
 				return 203;
 			case -657665461:
 				return 2674;
@@ -71935,7 +71935,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4416;
 			case -626875660:
 				return 5341;
-			case -626808707:
+			case joaat("META_OUTFIT_ANIMAL_CHICKENLEGHORN"):
 				return 70;
 			case -625287055:
 				return 3308;
@@ -72007,7 +72007,7 @@ int func_1287(int iParam0, int iParam1)
 				return 94;
 			case -598268833:
 				return 3444;
-			case -595873616:
+			case joaat("META_OUTFIT_ANIMAL_SEAGULLLAUGHING"):
 				return 259;
 			case -594424327:
 				return 2495;
@@ -72027,7 +72027,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1767;
 			case -588745599:
 				return 3403;
-			case -588162907:
+			case joaat("META_OUTFIT_ANIMAL_WOLFSMALL_000"):
 				return 298;
 			case -587538794:
 				return 4009;
@@ -72071,7 +72071,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4856;
 			case -568056006:
 				return 2203;
-			case -566788959:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_ELK"):
 				return 127;
 			case -566183237:
 				return 4352;
@@ -72091,11 +72091,11 @@ int func_1287(int iParam0, int iParam1)
 				return 5738;
 			case -562705141:
 				return 3034;
-			case -561697001:
+			case joaat("META_ANIMAL_OUTFIT_ALLIGATOR1_000"):
 				return 0;
 			case -561467984:
 				return 1824;
-			case -558577652:
+			case joaat("META_OUTFIT_ANIMAL_FOX_001"):
 				return 158;
 			case -558355746:
 				return 2200;
@@ -72169,7 +72169,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4344;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHIN_000_08"):
 				return 5075;
-			case -539469050:
+			case joaat("META_OUTFIT_ANIMAL_EAGLEGOLDEN"):
 				return 123;
 			case -539298145:
 				return 2801;
@@ -72183,7 +72183,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5803;
 			case -535425906:
 				return 726;
-			case -535101650:
+			case joaat("META_OUTFIT_ANIMAL_PHEASANTCHINESE"):
 				return 222;
 			case joaat("HAT_MR1_068"):
 				return 4674;
@@ -72213,7 +72213,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1501;
 			case -524076867:
 				return 5707;
-			case -523178350:
+			case joaat("MANGY_RAT"):
 				return 254;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_STACHE_001_02"):
 				return 5114;
@@ -72225,7 +72225,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2428;
 			case -520362209:
 				return 5736;
-			case joaat("PLAYER_STOPS_HORSE_WNT2_RIDE1_13"):
+			case joaat("META_OUTFIT_ANIMAL_JAVELINA_001"):
 				return 200;
 			case -518969703:
 				return 5392;
@@ -72233,7 +72233,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3332;
 			case -514477014:
 				return 4783;
-			case -514120480:
+			case joaat("META_OUTFIT_ANIMAL_PIGEONBANDTAIL"):
 				return 225;
 			case -513353480:
 				return 1369;
@@ -72445,13 +72445,13 @@ int func_1287(int iParam0, int iParam1)
 				return 4563;
 			case joaat("CS_MADELINEFUSSAR_FS1_TURBAN_000"):
 				return 4444;
-			case -435547108:
+			case joaat("META_OUTFIT_VALENTINE_VAR_01"):
 				return 432;
 			case -433020993:
 				return 3386;
 			case -432580312:
 				return 2913;
-			case -431954321:
+			case joaat("META_OUTFIT_BLACKWATER_VAR_03"):
 				return 374;
 			case -431707417:
 				return 2465;
@@ -72479,7 +72479,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3500;
 			case -420968901:
 				return 975;
-			case -420925418:
+			case joaat("META_WEARABLE_COMPONENT_MP_MONEYBAGS_MALE"):
 				return 5817;
 			case -420079395:
 				return 1870;
@@ -72571,7 +72571,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5098;
 			case -387344661:
 				return 1465;
-			case -386220147:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_PRONGHORN"):
 				return 243;
 			case -386016106:
 				return 5325;
@@ -72611,7 +72611,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2793;
 			case -376643170:
 				return 2701;
-			case -376191772:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAMROCKY_000"):
 				return 35;
 			case -375551845:
 				return 4868;
@@ -72621,7 +72621,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2632;
 			case -374021869:
 				return 3125;
-			case -374015026:
+			case joaat("META_OUTFIT_ANIMAL_POISON_FOX"):
 				return 161;
 			case -371124820:
 				return 3614;
@@ -72647,7 +72647,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2528;
 			case -364813759:
 				return 3713;
-			case -364709180:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_MUSKIE"):
 				return 146;
 			case -359202364:
 				return 1953;
@@ -72759,7 +72759,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1265;
 			case -316466960:
 				return 4960;
-			case -315064955:
+			case joaat("META_OUTFIT_ANIMAL_DEER_001"):
 				return 89;
 			case -314862125:
 				return 262;
@@ -72789,7 +72789,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2232;
 			case -308184260:
 				return 2931;
-			case -307919990:
+			case joaat("META_OUTFIT_ANIMAL_ELK_001"):
 				return 129;
 			case -307000369:
 				return 1611;
@@ -72841,13 +72841,13 @@ int func_1287(int iParam0, int iParam1)
 				return 1768;
 			case -290616418:
 				return 5428;
-			case -290259928:
+			case joaat("META_OUTFIT_ANIMAL_WOLFSMALL_001"):
 				return 299;
 			case joaat("HAT_MR1_085"):
 				return 4687;
 			case -287830874:
 				return 4525;
-			case -287190129:
+			case joaat("META_OUTFIT_ANIMAL_COUGAR_000"):
 				return 74;
 			case -286141027:
 				return 1707;
@@ -72937,7 +72937,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2704;
 			case -256765748:
 				return 1224;
-			case -256370740:
+			case joaat("META_OUTFIT_ANIMAL_POISON_SKUNK"):
 				return 263;
 			case -254794762:
 				return 915;
@@ -73007,7 +73007,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4613;
 			case -228472306:
 				return 4173;
-			case -226605573:
+			case joaat("META_OUTFIT_VAL_PIANO_PLAYER_01"):
 				return 634;
 			case -226375808:
 				return 542;
@@ -73029,9 +73029,9 @@ int func_1287(int iParam0, int iParam1)
 				return 4305;
 			case -220774791:
 				return 5744;
-			case -220316070:
+			case joaat("META_OUTFIT_ANIMAL_SONGBIRDTANAGER"):
 				return 275;
-			case -219463491:
+			case joaat("META_OUTFIT_ANIMAL_PANTHER_000"):
 				return 214;
 			case -217195741:
 				return 2555;
@@ -73183,7 +73183,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4482;
 			case -164067433:
 				return 4579;
-			case -163914005:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAM_001"):
 				return 30;
 			case -163324029:
 				return 3445;
@@ -73205,7 +73205,7 @@ int func_1287(int iParam0, int iParam1)
 				return 317;
 			case -156180016:
 				return 5632;
-			case -156048846:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPDESERT"):
 				return 39;
 			case -153914114:
 				return 2311;
@@ -73219,7 +73219,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5307;
 			case -150866858:
 				return 3579;
-			case -150174729:
+			case joaat("META_ANIMAL_OUTFIT_BEAVER_001"):
 				return 26;
 			case -149657157:
 				return 3346;
@@ -73271,7 +73271,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1555;
 			case -129904911:
 				return 3893;
-			case -128698192:
+			case joaat("META_OUTFIT_VALENTINE_VAR_02"):
 				return 433;
 			case -128035795:
 				return 1096;
@@ -73279,7 +73279,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3646;
 			case -127494429:
 				return 301;
-			case -126306239:
+			case joaat("AM_ROBTRAIN_REAR_GUARD_01"):
 				return 4289;
 			case -125900639:
 				return 2181;
@@ -73347,7 +73347,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3912;
 			case -103241551:
 				return 2322;
-			case -101240835:
+			case joaat("META_OUTFIT_ANIMAL_SPIRIT_COYOTE_A"):
 				return 82;
 			case -99355867:
 				return 653;
@@ -73375,7 +73375,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5834;
 			case -87854144:
 				return 4350;
-			case -87794079:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONO_000"):
 				return 238;
 			case -87015717:
 				return 5278;
@@ -73447,7 +73447,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4165;
 			case -61383994:
 				return 1855;
-			case -60896296:
+			case joaat("META_OUTFIT_ANIMAL_SNAKERAINBOWBOA"):
 				return 271;
 			case -59601903:
 				return 860;
@@ -73479,7 +73479,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4684;
 			case -48870448:
 				return 948;
-			case -48533502:
+			case joaat("META_OUTFIT_ANIMAL_COUGAR_001"):
 				return 75;
 			case -48181857:
 				return 3389;
@@ -73517,7 +73517,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4194;
 			case -38195500:
 				return 5795;
-			case -37747857:
+			case joaat("META_OUTFIT_ANIMAL_ELK_M"):
 				return 130;
 			case joaat("HAT_FR1_020"):
 				return 4466;
@@ -73535,11 +73535,11 @@ int func_1287(int iParam0, int iParam1)
 				return 4825;
 			case -31571556:
 				return 1910;
-			case -31550146:
+			case joaat("META_ANIMAL_OUTFIT_BEAR_000"):
 				return 14;
 			case -29543774:
 				return 1023;
-			case -28012574:
+			case joaat("META_ANIMAL_OUTFIT_BULLDEVON"):
 				return 67;
 			case -27749127:
 				return 1580;
@@ -73563,7 +73563,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3513;
 			case -20984612:
 				return 1021;
-			case -20928664:
+			case joaat("META_OUTFIT_ANIMAL_PELICANWHITE"):
 				return 221;
 			case -20737928:
 				return 3319;
@@ -73577,7 +73577,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4420;
 			case -18780859:
 				return 1920;
-			case -14692129:
+			case joaat("META_OUTFIT_RIGGSSTATION_VAR_01"):
 				return 4280;
 			case -14515504:
 				return 4776;
@@ -73595,11 +73595,11 @@ int func_1287(int iParam0, int iParam1)
 				return 4371;
 			case -8240077:
 				return 4956;
-			case -7367611:
+			case joaat("META_OUTFIT_ANIMAL_POISON_CHAINPICKEREL"):
 				return 138;
 			case -6942546:
 				return 3133;
-			case -6609035:
+			case joaat("META_OUTFIT_ANIMAL_ELK_000"):
 				return 128;
 			case -6199089:
 				return 4488;
@@ -73607,7 +73607,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4843;
 			case -4979474:
 				return 2776;
-			case -4595908:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_NORTHERNPIKE"):
 				return 147;
 			case -4228011:
 				return 1828;
@@ -73643,7 +73643,7 @@ int func_1287(int iParam0, int iParam1)
 				return 667;
 			case 11964851:
 				return 3329;
-			case 13145675:
+			case joaat("META_OUTFIT_ANIMAL_CORMORANTNEO"):
 				return 71;
 			case 13248388:
 				return 2262;
@@ -73717,7 +73717,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3894;
 			case 41730569:
 				return 2364;
-			case 41788943:
+			case joaat("META_OUTFIT_DEFAULT"):
 				return 756;
 			case 41792611:
 				return 1223;
@@ -73785,7 +73785,7 @@ int func_1287(int iParam0, int iParam1)
 				return 600;
 			case 67843882:
 				return 5284;
-			case 68127406:
+			case joaat("META_OUTFIT_SAINTDENIS_VAR_01"):
 				return 408;
 			case 70096421:
 				return 2542;
@@ -73795,7 +73795,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1125;
 			case 71890561:
 				return 631;
-			case 72307494:
+			case joaat("META_OUTFIT_BUTCHERCREEK_COOK_02"):
 				return 367;
 			case 72615086:
 				return 2730;
@@ -73827,7 +73827,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3979;
 			case 81480873:
 				return 5309;
-			case 83723733:
+			case joaat("META_ANIMAL_OUTFIT_DOGLABCHOC"):
 				return 111;
 			case 85324915:
 				return 2002;
@@ -73857,7 +73857,7 @@ int func_1287(int iParam0, int iParam1)
 				return 300;
 			case 95127708:
 				return 5036;
-			case 95938134:
+			case joaat("META_OUTFIT_ANIMAL_PANTHER_001"):
 				return 215;
 			case 96688455:
 				return 3869;
@@ -73933,7 +73933,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5099;
 			case 122596261:
 				return 3339;
-			case 122941845:
+			case joaat("META_OUTFIT_ANIMAL_POISON_BEARBLACK"):
 				return 24;
 			case 124489516:
 				return 3569;
@@ -74149,7 +74149,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3055;
 			case 218350172:
 				return 4273;
-			case 218671895:
+			case joaat("META_OUTFIT_ANIMAL_POISON_COYOTE"):
 				return 81;
 			case 220757907:
 				return 4436;
@@ -74165,7 +74165,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4682;
 			case 224785123:
 				return 3819;
-			case 226255616:
+			case joaat("META_OUTFIT_VALENTINE_VAR_03"):
 				return 434;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHOPS_000_06"):
 				return 5091;
@@ -74329,7 +74329,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2597;
 			case 278819816:
 				return 3815;
-			case 279472558:
+			case joaat("DISCOVERABLES_WHITE_BUFFALO"):
 				return 54;
 			case 279688279:
 				return 5300;
@@ -74445,9 +74445,9 @@ int func_1287(int iParam0, int iParam1)
 				return 1621;
 			case 315845604:
 				return 5235;
-			case 316456870:
+			case joaat("META_OUTFIT_BLACKWATER_VAR_01"):
 				return 372;
-			case 317399512:
+			case joaat("META_OUTFIT_FIELD_DRESSING_003"):
 				return 64;
 			case 317713758:
 				return 428;
@@ -74485,7 +74485,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4577;
 			case 328693452:
 				return 1547;
-			case 329430715:
+			case joaat("META_OUTFIT_PANTS_FLATS"):
 				return 1050;
 			case 330292936:
 				return 2973;
@@ -74493,7 +74493,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2868;
 			case 331537537:
 				return 1984;
-			case 331645018:
+			case joaat("META_OUTFIT_COLD_WEATHER"):
 				return 759;
 			case 331922849:
 				return 2681;
@@ -74591,7 +74591,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3368;
 			case 375471192:
 				return 498;
-			case 375593826:
+			case joaat("COYOTE_LEGENDARY"):
 				return 78;
 			case 377052846:
 				return 791;
@@ -74645,7 +74645,7 @@ int func_1287(int iParam0, int iParam1)
 				return 886;
 			case joaat("HAT_TR1_062"):
 				return 4723;
-			case 389666332:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONO"):
 				return 237;
 			case 390787076:
 				return 4010;
@@ -74667,7 +74667,7 @@ int func_1287(int iParam0, int iParam1)
 				return 21;
 			case 395705379:
 				return 5222;
-			case 395908581:
+			case joaat("META_OUTFIT_ANIMAL_POISON_SQUIRREL"):
 				return 278;
 			case 396254774:
 				return 2967;
@@ -74717,7 +74717,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5241;
 			case 413714842:
 				return 3633;
-			case 413989195:
+			case joaat("META_OUTFIT_ANIMAL_FOXGRAY"):
 				return 159;
 			case 414488971:
 				return 4916;
@@ -74761,7 +74761,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3268;
 			case 430539445:
 				return 1286;
-			case 432909265:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNM"):
 				return 234;
 			case 433552455:
 				return 5375;
@@ -74849,7 +74849,7 @@ int func_1287(int iParam0, int iParam1)
 				return 514;
 			case 462249975:
 				return 2848;
-			case 463389154:
+			case joaat("META_OUTFIT_ANIMAL_SNAKENORTHERNWATER"):
 				return 274;
 			case 463584608:
 				return 4777;
@@ -75061,7 +75061,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1058;
 			case 538142238:
 				return 2260;
-			case 538936875:
+			case joaat("META_OUTFIT_ANIMAL_PIGBIGCHINA"):
 				return 223;
 			case 539239560:
 				return 5277;
@@ -75127,7 +75127,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3118;
 			case 564117607:
 				return 4058;
-			case 564171926:
+			case joaat("META_OUTFIT_BUTCHERCREEK_VAR_02"):
 				return 370;
 			case joaat("HAT_MR1_092"):
 				return 4693;
@@ -75153,7 +75153,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5391;
 			case 573025389:
 				return 3114;
-			case 573391333:
+			case joaat("REINFORCED_BINDINGS_HANDS_DEFAULT"):
 				return 5866;
 			case joaat("HEAD_03"):
 				return 4845;
@@ -75205,11 +75205,11 @@ int func_1287(int iParam0, int iParam1)
 				return 1610;
 			case 593589265:
 				return 1209;
-			case 593663564:
+			case joaat("META_ANIMAL_OUTFIT_DOGLABYELLOW"):
 				return 112;
 			case 595825765:
 				return 4380;
-			case 597297690:
+			case joaat("BEAR_LEGENDARY"):
 				return 13;
 			case 597763850:
 				return 2918;
@@ -75269,7 +75269,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4124;
 			case joaat("PLAYER_THREE_MS1_BEARD_SHV_CHIN_000_04"):
 				return 5071;
-			case 621642275:
+			case joaat("META_ANIMAL_OUTFIT_ALLIGATOR3_001"):
 				return 7;
 			case 621949248:
 				return 1561;
@@ -75295,7 +75295,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3965;
 			case 629126052:
 				return 3209;
-			case 629329300:
+			case joaat("META_OUTFIT_SAINTDENIS_VAR_03"):
 				return 410;
 			case 629381614:
 				return 2431;
@@ -75339,7 +75339,7 @@ int func_1287(int iParam0, int iParam1)
 				return 115;
 			case 637524020:
 				return 3566;
-			case 638062700:
+			case joaat("META_OUTFIT_DRESS_FLATS"):
 				return 1047;
 			case 639109951:
 				return 4954;
@@ -75387,7 +75387,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1320;
 			case 658803113:
 				return 1874;
-			case 659982441:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_BOAR"):
 				return 48;
 			case 660162155:
 				return 1703;
@@ -75411,7 +75411,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3508;
 			case 666823002:
 				return 378;
-			case 667304357:
+			case joaat("META_ANIMAL_OUTFIT_BUCK_001"):
 				return 50;
 			case 667942732:
 				return 1504;
@@ -75431,7 +75431,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4926;
 			case 674973847:
 				return 3337;
-			case 675288905:
+			case joaat("META_OUTFIT_ANIMAL_POISON_TOAD"):
 				return 284;
 			case 676615008:
 				return 4020;
@@ -75439,7 +75439,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1173;
 			case 677578668:
 				return 2964;
-			case 680401050:
+			case joaat("META_OUTFIT_TUMBLEWEED_VAR_03"):
 				return 422;
 			case 680615675:
 				return 677;
@@ -75471,7 +75471,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2654;
 			case 687823400:
 				return 5373;
-			case 689325217:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAM_000"):
 				return 29;
 			case joaat("HAT_MR1_014"):
 				return 4620;
@@ -75493,15 +75493,15 @@ int func_1287(int iParam0, int iParam1)
 				return 3235;
 			case 695841138:
 				return 4742;
-			case 696231378:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNRAM"):
 				return 28;
 			case 696680033:
 				return 2442;
 			case 696990949:
 				return 2480;
-			case 697508196:
+			case joaat("META_WEARABLE_COMPONENT_MP_MONEYBAGS_FEMALE"):
 				return 5816;
-			case 697666614:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNM_001"):
 				return 236;
 			case 697683187:
 				return 3145;
@@ -75547,7 +75547,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3906;
 			case 705859801:
 				return 4340;
-			case 707006636:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEP_000"):
 				return 37;
 			case 707549728:
 				return 4972;
@@ -75595,7 +75595,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3550;
 			case 723820900:
 				return 1732;
-			case 725155934:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_FOX"):
 				return 156;
 			case 729370429:
 				return 4229;
@@ -75733,7 +75733,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3727;
 			case 779191267:
 				return 1566;
-			case 780666035:
+			case joaat("META_OUTFIT_WALLACESTATION_VAR_03"):
 				return 4285;
 			case joaat("MSP_NATIVE1_AILING_NATIVE_02"):
 				return 3204;
@@ -75751,7 +75751,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4136;
 			case 783333033:
 				return 4779;
-			case 784342540:
+			case joaat("META_OUTFIT_ANIMAL_FOXSILVER"):
 				return 160;
 			case 784451235:
 				return 4822;
@@ -75771,7 +75771,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3270;
 			case 786696466:
 				return 2537;
-			case 786903081:
+			case joaat("META_OUTFIT_ANIMAL_SQUIRREL_000"):
 				return 279;
 			case 787112104:
 				return 4971;
@@ -75779,7 +75779,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2884;
 			case 787636659:
 				return 3841;
-			case 787732969:
+			case joaat("META_OUTFIT_FIELD_DRESSING_001"):
 				return 3;
 			case 789463698:
 				return 5393;
@@ -75819,7 +75819,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3700;
 			case 800997526:
 				return 4816;
-			case 801255637:
+			case joaat("META_OUTFIT_BUTCHERCREEK_VAR_03"):
 				return 371;
 			case 801529481:
 				return 652;
@@ -75829,7 +75829,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3805;
 			case joaat("HAT_FR1_010"):
 				return 4463;
-			case 802894091:
+			case joaat("META_OUTFIT_BUTCHERCREEK_VAR_01"):
 				return 369;
 			case 802926215:
 				return 2438;
@@ -75917,7 +75917,7 @@ int func_1287(int iParam0, int iParam1)
 		{
 			case 833279350:
 				return 3032;
-			case 834383524:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPROCKY_000"):
 				return 43;
 			case 837425920:
 				return 2909;
@@ -76045,7 +76045,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1793;
 			case 888403806:
 				return 4875;
-			case 889331851:
+			case joaat("META_OUTFIT_ANIMAL_OWLNORTH"):
 				return 212;
 			case 889771567:
 				return 2866;
@@ -76115,7 +76115,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4172;
 			case 909995553:
 				return 1194;
-			case 912158539:
+			case joaat("META_OUTFIT_SAINTDENIS_VAR_02"):
 				return 409;
 			case 912389556:
 				return 3843;
@@ -76137,7 +76137,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3830;
 			case 921937100:
 				return 571;
-			case 922027494:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_WOLF"):
 				return 288;
 			case 922665377:
 				return 3156;
@@ -76165,7 +76165,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1436;
 			case 928671868:
 				return 3146;
-			case 929703644:
+			case joaat("META_ANIMAL_OUTFIT_ALLIGATOR3_000"):
 				return 6;
 			case joaat("FOREMAN"):
 				return 5262;
@@ -76203,7 +76203,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5832;
 			case 940313520:
 				return 2113;
-			case 940895564:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_CHAINPICKEREL"):
 				return 137;
 			case 941285114:
 				return 5316;
@@ -76213,7 +76213,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1670;
 			case 941441328:
 				return 2720;
-			case 943405819:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_BLUEGILL"):
 				return 134;
 			case 943566851:
 				return 4405;
@@ -76277,7 +76277,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2065;
 			case 965966943:
 				return 3961;
-			case 966583925:
+			case joaat("META_ANIMAL_OUTFIT_OXDEVON"):
 				return 213;
 			case joaat("HAT_MR1_089"):
 				return 4691;
@@ -76403,7 +76403,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4741;
 			case 1009966619:
 				return 1775;
-			case 1011154058:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJAM"):
 				return 231;
 			case 1011286169:
 				return 4059;
@@ -76411,7 +76411,7 @@ int func_1287(int iParam0, int iParam1)
 				return 198;
 			case 1012383242:
 				return 1911;
-			case 1012768862:
+			case joaat("META_OUTFIT_WALLACESTATION_VAR_02"):
 				return 4284;
 			case 1012859469:
 				return 2054;
@@ -76561,7 +76561,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5482;
 			case 1057493963:
 				return 1970;
-			case 1058681367:
+			case joaat("META_OUTFIT_ANIMAL_PANTHERFLORIDA"):
 				return 216;
 			case 1059434053:
 				return 798;
@@ -76625,7 +76625,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2645;
 			case 1085275484:
 				return 1993;
-			case 1085373796:
+			case joaat("META_OUTFIT_FIELD_DRESSING_002"):
 				return 4;
 			case 1085627780:
 				return 1025;
@@ -76671,7 +76671,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3696;
 			case 1098316139:
 				return 3255;
-			case 1100735684:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_PERCH"):
 				return 148;
 			case 1101489618:
 				return 539;
@@ -76749,7 +76749,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4019;
 			case 1126225987:
 				return 3052;
-			case 1126570175:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONOM"):
 				return 240;
 			case 1127268175:
 				return 2370;
@@ -76843,9 +76843,9 @@ int func_1287(int iParam0, int iParam1)
 				return 2462;
 			case 1163868428:
 				return 5432;
-			case 1164706043:
+			case joaat("META_OUTFIT_ANIMAL_RACCOON_001"):
 				return 253;
-			case 1165342204:
+			case joaat("META_OUTFIT_ANIMAL_CHICKENJAVA"):
 				return 69;
 			case 1165902306:
 				return 2009;
@@ -76859,7 +76859,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1720;
 			case 1170159487:
 				return 2257;
-			case 1171757588:
+			case joaat("META_ANIMAL_OUTFIT_DOGLABBLACK"):
 				return 110;
 			case 1172406525:
 				return 4999;
@@ -76909,7 +76909,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1219;
 			case 1194427184:
 				return 896;
-			case 1194574257:
+			case joaat("META_OUTFIT_VANHORN_VAR_01"):
 				return 444;
 			case 1195126440:
 				return 4123;
@@ -77031,7 +77031,7 @@ int func_1287(int iParam0, int iParam1)
 				return 491;
 			case 1233260892:
 				return 5158;
-			case 1234539032:
+			case joaat("META_OUTFIT_ANIMAL_ROOSTERJAVA"):
 				return 257;
 			case 1235170386:
 				return 2161;
@@ -77095,7 +77095,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3662;
 			case 1257524659:
 				return 584;
-			case 1257983596:
+			case joaat("META_OUTFIT_ANIMAL_POISON_RACCOON"):
 				return 251;
 			case joaat("HAT_FR1_613"):
 				return 4477;
@@ -77141,7 +77141,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5014;
 			case 1268173643:
 				return 5479;
-			case 1268180497:
+			case joaat("META_HORSE_SADDLE_ONLY"):
 				return 118;
 			case 1269851066:
 				return 2561;
@@ -77199,7 +77199,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2198;
 			case 1291777022:
 				return 3755;
-			case 1292613885:
+			case joaat("LABORER"):
 				return 5351;
 			case 1293290589:
 				return 4067;
@@ -77207,7 +77207,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1632;
 			case joaat("HAT_MR1_097"):
 				return 4696;
-			case 1293931317:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_ROCKBASS"):
 				return 152;
 			case 1294637057:
 				return 1702;
@@ -77297,7 +77297,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4302;
 			case 1321056085:
 				return 5685;
-			case 1321911407:
+			case joaat("META_OUTFIT_EMERALDRANCH_VAR_03"):
 				return 461;
 			case 1322011626:
 				return 1502;
@@ -77323,7 +77323,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4909;
 			case 1327838986:
 				return 596;
-			case 1328336590:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_CHANNELCATFISH"):
 				return 141;
 			case 1329153734:
 				return 2344;
@@ -77357,9 +77357,9 @@ int func_1287(int iParam0, int iParam1)
 				return 1119;
 			case 1338340040:
 				return 402;
-			case 1338586418:
+			case joaat("MAGICLANTERN_TICKETS_VAL_01"):
 				return 4253;
-			case 1340150593:
+			case joaat("META_OUTFIT_ANNESBURG_VAR_02"):
 				return 4248;
 			case 1340234857:
 				return 1817;
@@ -77425,7 +77425,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3860;
 			case 1369993929:
 				return 3275;
-			case 1370409852:
+			case joaat("META_OUTFIT_DRESS_HEELS"):
 				return 1048;
 			case 1371076591:
 				return 5729;
@@ -77461,9 +77461,9 @@ int func_1287(int iParam0, int iParam1)
 				return 2376;
 			case 1382794278:
 				return 3216;
-			case 1383633612:
+			case joaat("META_OUTFIT_ANIMAL_RABBIT_000"):
 				return 248;
-			case 1389459977:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_BIGHORNRAM"):
 				return 45;
 			case 1389873418:
 				return 2682;
@@ -77507,7 +77507,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2115;
 			case joaat("ACCS_MR1_059"):
 				return 4489;
-			case 1402464644:
+			case joaat("META_OUTFIT_ANIMAL_HAWKREDTAIL"):
 				return 163;
 			case 1403421280:
 				return 2460;
@@ -77549,7 +77549,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2043;
 			case 1414721216:
 				return 861;
-			case 1415163930:
+			case joaat("META_OUTFIT_ANIMAL_ALBINO_MOOSE"):
 				return 204;
 			case 1415292890:
 				return 1251;
@@ -77627,7 +77627,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2251;
 			case 1436504192:
 				return 1675;
-			case 1437006206:
+			case joaat("META_OUTFIT_ANIMAL_EGRETLITTLE"):
 				return 125;
 			case 1437237816:
 				return 4790;
@@ -77655,7 +77655,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1925;
 			case 1447938793:
 				return 925;
-			case 1448942408:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_SMALLMOUTHBASS"):
 				return 155;
 			case 1449629166:
 				return 3801;
@@ -77663,9 +77663,9 @@ int func_1287(int iParam0, int iParam1)
 				return 862;
 			case 1450454068:
 				return 5164;
-			case 1451491046:
+			case joaat("META_OUTFIT_ANIMAL_POISON_BLUEGIL"):
 				return 135;
-			case 1451635371:
+			case joaat("META_OUTFIT_ANIMAL_SKUNK_001"):
 				return 265;
 			case 1452165017:
 				return 3027;
@@ -77765,7 +77765,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5157;
 			case 1492392695:
 				return 5772;
-			case 1492558869:
+			case joaat("META_OUTFIT_ANIMAL_POISON_LAKESTURGEON"):
 				return 143;
 			case 1493140631:
 				return 3715;
@@ -77779,19 +77779,19 @@ int func_1287(int iParam0, int iParam1)
 				return 5261;
 			case 1496433042:
 				return 2090;
-			case 1497369321:
+			case joaat("META_OUTFIT_ANIMAL_WOLFTIMBER"):
 				return 296;
 			case 1498104676:
 				return 4103;
 			case 1500197051:
 				return 1162;
-			case 1501573693:
+			case joaat("META_OUTFIT_ANIMAL_ELK_M_000"):
 				return 131;
 			case 1501644473:
 				return 4312;
 			case 1502946735:
 				return 5066;
-			case 1503798624:
+			case joaat("META_ANIMAL_OUTFIT_BUCK_000"):
 				return 49;
 			case 1507866692:
 				return 3998;
@@ -77801,7 +77801,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4803;
 			case 1509284778:
 				return 1881;
-			case 1509626576:
+			case joaat("META_ANIMAL_OUTFIT_BOAR_000"):
 				return 46;
 			case 1509908196:
 				return 3310;
@@ -77873,7 +77873,7 @@ int func_1287(int iParam0, int iParam1)
 				return 348;
 			case 1526616306:
 				return 5786;
-			case 1526876460:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_REDFINPICKEREL"):
 				return 150;
 			case 1527655069:
 				return 3465;
@@ -77923,7 +77923,7 @@ int func_1287(int iParam0, int iParam1)
 		}
 		return -1;
 	}
-	if (iParam0 <= 2146685523)
+	if (iParam0 <= joaat("META_OUTFIT_ANIMAL_MOOSE_M_001"))
 	{
 		switch (iParam0)
 		{
@@ -77943,7 +77943,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4078;
 			case 1551044416:
 				return 4542;
-			case 1553811810:
+			case joaat("META_OUTFIT_ANIMAL_SPIRIT_BUCK"):
 				return 53;
 			case 1554294233:
 				return 1613;
@@ -77999,7 +77999,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4127;
 			case 1571730313:
 				return 2665;
-			case 1572075467:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEP_001"):
 				return 38;
 			case 1572762119:
 				return 3231;
@@ -78013,7 +78013,7 @@ int func_1287(int iParam0, int iParam1)
 				return 593;
 			case 1575482012:
 				return 1266;
-			case 1577016527:
+			case joaat("META_OUTFIT_ANIMAL_TURKEYWILDRIO"):
 				return 285;
 			case 1577023662:
 				return 3521;
@@ -78051,7 +78051,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1727;
 			case 1595559297:
 				return 2736;
-			case 1596049292:
+			case joaat("META_OUTFIT_ANIMAL_WOLFMEDIUM_000"):
 				return 294;
 			case 1596598302:
 				return 2479;
@@ -78061,7 +78061,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2618;
 			case 1598276604:
 				return 1006;
-			case 1598470798:
+			case joaat("META_OUTFIT_FIELD_DRESSING_000"):
 				return 2;
 			case 1599032627:
 				return 2224;
@@ -78135,7 +78135,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1539;
 			case 1620894109:
 				return 3000;
-			case 1621798704:
+			case joaat("META_OUTFIT_ANIMAL_RABBIT_001"):
 				return 249;
 			case 1622451963:
 				return 4502;
@@ -78155,7 +78155,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1333;
 			case 1631851432:
 				return 4935;
-			case 1632061593:
+			case joaat("REINFORCED_BINDINGS_HANDS_BULKY"):
 				return 5865;
 			case 1632707750:
 				return 3472;
@@ -78183,7 +78183,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2110;
 			case 1640861587:
 				return 1275;
-			case 1640961596:
+			case joaat("META_OUTFIT_RIGGSSTATION_VAR_02"):
 				return 4281;
 			case 1641060608:
 				return 2782;
@@ -78205,11 +78205,11 @@ int func_1287(int iParam0, int iParam1)
 				return 4458;
 			case 1647366993:
 				return 4290;
-			case 1647753196:
+			case joaat("META_OUTFIT_ANNESBURG_VAR_03"):
 				return 4249;
 			case 1647961536:
 				return 2128;
-			case 1648068942:
+			case joaat("META_ANIMAL_OUTFIT_BADGER_000"):
 				return 10;
 			case 1648215160:
 				return 3903;
@@ -78355,13 +78355,13 @@ int func_1287(int iParam0, int iParam1)
 				return 2788;
 			case 1700084561:
 				return 5580;
-			case 1700437490:
+			case joaat("META_OUTFIT_RHODES_VAR_02"):
 				return 397;
 			case 1700762242:
 				return 4997;
 			case 1703424209:
 				return 2896;
-			case 1703895940:
+			case joaat("META_OUTFIT_ANIMAL_ROOSTERLEGHORN"):
 				return 258;
 			case 1705136021:
 				return 3129;
@@ -78501,7 +78501,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2557;
 			case 1750236292:
 				return 605;
-			case 1752053992:
+			case joaat("META_OUTFIT_STRAWBERRY_VAR_01"):
 				return 465;
 			case 1752634861:
 				return 168;
@@ -78527,7 +78527,7 @@ int func_1287(int iParam0, int iParam1)
 				return 117;
 			case 1760262584:
 				return 5370;
-			case 1762054474:
+			case joaat("META_OUTFIT_ANIMAL_ELK_M_001"):
 				return 132;
 			case 1762186298:
 				return 1686;
@@ -78637,7 +78637,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1940;
 			case 1792636094:
 				return 4970;
-			case 1792807042:
+			case joaat("REINFORCED_BINDINGS_FEET_BULKY"):
 				return 5863;
 			case 1794262346:
 				return 2492;
@@ -78699,7 +78699,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5327;
 			case 1820852714:
 				return 4927;
-			case 1821962809:
+			case joaat("META_ANIMAL_OUTFIT_BEAR_001"):
 				return 15;
 			case 1822008893:
 				return 5189;
@@ -78715,7 +78715,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1460;
 			case 1826319412:
 				return 2642;
-			case 1827496739:
+			case joaat("META_OUTFIT_ANIMAL_WOLFMEDIUM_001"):
 				return 295;
 			case 1828290413:
 				return 3854;
@@ -78743,7 +78743,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2874;
 			case 1839003840:
 				return 4839;
-			case 1839440580:
+			case joaat("META_OUTFIT_TUMBLEWEED_VAR_02"):
 				return 421;
 			case 1840364582:
 				return 2100;
@@ -78763,7 +78763,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4506;
 			case 1844032232:
 				return 1651;
-			case 1844089285:
+			case joaat("META_ANIMAL_OUTFIT_SNAKETIMBERRATTLE"):
 				return 266;
 			case 1844241543:
 				return 728;
@@ -78833,7 +78833,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3304;
 			case 1874592093:
 				return 3404;
-			case 1875804851:
+			case joaat("META_OUTFIT_ANIMAL_DEER_000"):
 				return 88;
 			case 1877664733:
 				return 4389;
@@ -78841,7 +78841,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5021;
 			case 1878790704:
 				return 525;
-			case 1879159457:
+			case joaat("META_OUTFIT_RIGGSSTATION_VAR_03"):
 				return 4282;
 			case 1879214637:
 				return 2598;
@@ -78905,7 +78905,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5386;
 			case 1897713958:
 				return 3021;
-			case 1900330120:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJA_000"):
 				return 229;
 			case 1903941038:
 				return 494;
@@ -79011,7 +79011,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4027;
 			case 1938775504:
 				return 5726;
-			case 1939496279:
+			case joaat("META_OUTFIT_ANIMAL_RACCOON_000"):
 				return 252;
 			case 1939719609:
 				return 4745;
@@ -79021,7 +79021,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1991;
 			case 1941811839:
 				return 864;
-			case 1942171995:
+			case joaat("META_OUTFIT_ANIMAL_POISON_ROCKBASS"):
 				return 153;
 			case 1942867832:
 				return 4914;
@@ -79045,7 +79045,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4016;
 			case 1949514659:
 				return 400;
-			case 1950818712:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNM_000"):
 				return 235;
 			case 1951334013:
 				return 3949;
@@ -79185,7 +79185,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2709;
 			case 1994002047:
 				return 2675;
-			case 1994046600:
+			case joaat("META_OUTFIT_ANIMAL_PELICANBROWN"):
 				return 220;
 			case 1996046145:
 				return 800;
@@ -79199,7 +79199,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1407;
 			case 1997221577:
 				return 4834;
-			case 1997427892:
+			case joaat("META_OUTFIT_ANIMAL_POISON_BUCK"):
 				return 52;
 			case 1997738637:
 				return 836;
@@ -79207,7 +79207,7 @@ int func_1287(int iParam0, int iParam1)
 				return 4709;
 			case 1998895748:
 				return 1869;
-			case 1999086413:
+			case joaat("META_OUTFIT_ANIMAL_PRONGHORN_000"):
 				return 244;
 			case 1999468834:
 				return 1529;
@@ -79261,7 +79261,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2478;
 			case 2013517659:
 				return 3402;
-			case 2013845533:
+			case joaat("META_OUTFIT_STRAWBERRY_VAR_02"):
 				return 466;
 			case 2014317733:
 				return 5594;
@@ -79329,7 +79329,7 @@ int func_1287(int iParam0, int iParam1)
 				return 167;
 			case 2036410304:
 				return 4670;
-			case 2037089404:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_STEELHEADTROUT"):
 				return 149;
 			case 2037368219:
 				return 2694;
@@ -79337,7 +79337,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5764;
 			case 2041503969:
 				return 4767;
-			case 2042092622:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNSONO_001"):
 				return 239;
 			case 2043576522:
 				return 4581;
@@ -79399,7 +79399,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3680;
 			case 2061539371:
 				return 1355;
-			case 2063794405:
+			case joaat("META_OUTFIT_ANIMAL_SQUIRRELBLACK"):
 				return 281;
 			case 2064992839:
 				return 4882;
@@ -79489,7 +79489,7 @@ int func_1287(int iParam0, int iParam1)
 				return 5652;
 			case 2093761089:
 				return 4028;
-			case 2093821155:
+			case joaat("META_OUTFIT_VANHORN_VAR_02"):
 				return 445;
 			case 2094135436:
 				return 3794;
@@ -79511,11 +79511,11 @@ int func_1287(int iParam0, int iParam1)
 				return 3374;
 			case 2098072132:
 				return 315;
-			case 2098180041:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJAM_001"):
 				return 233;
 			case 2098224441:
 				return 4540;
-			case 2098938291:
+			case joaat("META_OUTFIT_TUMBLEWEED_VAR_01"):
 				return 420;
 			case 2099062422:
 				return 121;
@@ -79551,7 +79551,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2353;
 			case 2108756715:
 				return 182;
-			case 2109101419:
+			case joaat("META_ANIMAL_OUTFIT_PRONGHORNBAJA_001"):
 				return 230;
 			case 2109321344:
 				return 1684;
@@ -79589,9 +79589,9 @@ int func_1287(int iParam0, int iParam1)
 				return 5775;
 			case 2124067858:
 				return 1784;
-			case 2124438728:
+			case joaat("MAGICLANTERN_PROJECTOR_VAL_01"):
 				return 4250;
-			case 2124910668:
+			case joaat("META_OUTFIT_ANIMAL_POSSUM_001"):
 				return 227;
 			case 2125074568:
 				return 960;
@@ -79643,7 +79643,7 @@ int func_1287(int iParam0, int iParam1)
 				return 2381;
 			case 2141256748:
 				return 5406;
-			case 2142400903:
+			case joaat("META_OUTFIT_ANIMAL_LEGENDARY_LAKESTURGEON"):
 				return 142;
 			case 2142605803:
 				return 2119;
@@ -79653,7 +79653,7 @@ int func_1287(int iParam0, int iParam1)
 				return 1833;
 			case 2143787213:
 				return 1154;
-			case 2144062151:
+			case joaat("META_ANIMAL_OUTFIT_BIGHORNSHEEPROCKY_001"):
 				return 44;
 			case 2145312194:
 				return 1723;
@@ -79661,7 +79661,7 @@ int func_1287(int iParam0, int iParam1)
 				return 3210;
 			case 2146512102:
 				return 2616;
-			case 2146685523:
+			case joaat("META_OUTFIT_ANIMAL_MOOSE_M_001"):
 				return 209;
 			default:
 				break;
@@ -79760,41 +79760,41 @@ void func_1288(struct<5> Param0, var uParam5)
 
 int func_1289(int iParam0, int iParam1)
 {
-	if (iParam0 <= -419231450)
+	if (iParam0 <= joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_RIGHT_OPEN"))
 	{
 		switch (iParam0)
 		{
 			case joaat("WORLD_ANIMAL_SHEEP_INJURED_ON_GROUND"):
 				return 871;
-			case -2145791181:
+			case joaat("CNV_CAMP_CFUN4_GEN_MALE_A_EXIT"):
 				return 962;
-			case -2145018399:
+			case joaat("WB_DISCO_TRAIL_TREES"):
 				return 1302;
-			case -2140664311:
+			case joaat("WB_INTERACTIVE_CAMPFIRE_FIREPLACE"):
 				return 2615;
 			case joaat("WORLD_CAMP_FIRE_SEATED_GROUND"):
 				return 118;
-			case -2135036532:
+			case joaat("MP_TCARD_THREE_CUPS"):
 				return 2302;
-			case -2132089563:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M0"):
 				return 1723;
 			case joaat("WORLD_ANIMAL_SKUNK_EATING"):
 				return 875;
 			case joaat("WORLD_HUMAN_SIT_GROUND"):
 				return 383;
-			case -2114469108:
+			case joaat("WORLD_PLAYER_MOONSHINE_SERVING"):
 				return 2162;
 			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD"):
 				return 328;
 			case joaat("CIG_CARD_VEH_11"):
 				return 1109;
-			case -2110650313:
+			case joaat("CIG_CARD_SPT_08"):
 				return 1094;
-			case -2103804031:
+			case joaat("WB_FLOWER_AGARITA"):
 				return 2330;
-			case -2100908496:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARDFAC01X"):
 				return 2054;
-			case -2098912190:
+			case joaat("CNV_CAMP_CFAM1_GEN_MALE_C_EXIT"):
 				return 912;
 			case joaat("LEVDES_SPAWN_VALERIAN_ROOT"):
 				return 1428;
@@ -79804,79 +79804,79 @@ int func_1289(int iParam0, int iParam1)
 				return 518;
 			case joaat("PROP_VEHICLE_SEAT_PASSENGER_TRAIN_DINING"):
 				return 16;
-			case -2094416950:
+			case joaat("MP_JEWELRY_WHT_DMND_EARRING"):
 				return 2251;
 			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_CC"):
 				return 60;
 			case joaat("WORLD_HUMAN_FEED_PIGS"):
 				return 533;
-			case -2092256791:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_4_OPEN"):
 				return 1678;
-			case -2092161602:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_LANGTON"):
 				return 2394;
 			case joaat("WALK"):
 				return 1137;
-			case -2087653744:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_2_CLOSE"):
 				return 1665;
-			case -2087527692:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_MID"):
 				return 1824;
-			case -2086114353:
+			case joaat("MP_TCARD_THREE_WANDS"):
 				return 2305;
-			case -2085458327:
+			case joaat("WB_DISCO_CIV_WAR_KNIFE"):
 				return 1206;
-			case -2084592674:
+			case joaat("WB_DISCO_TREE_HOUSE"):
 				return 1304;
 			case joaat("WORLD_HUMAN_CHAMBERPOT_PICKUP_NO_CHAMBERPOT"):
 				return 508;
-			case -2081969392:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_0M80"):
 				return 1853;
 			case joaat("WORLD_ANIMAL_BEARBLACK_SNIFFING_GROUND"):
 				return 717;
-			case -2069948252:
+			case joaat("CIG_CARD_INV_04"):
 				return 1042;
 			case joaat("RANSACK_SHOP_VOL_1M50_0M50_2M0"):
 				return 1934;
 			case joaat("WORLD_ANIMAL_DOG_DRINK_GROUND"):
 				return 780;
-			case -2065167667:
+			case joaat("WB_EGG_NEST_CONDOR"):
 				return 2320;
 			case joaat("TEETER"):
 				return 1136;
-			case -2058254181:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_0M80"):
 				return 1707;
 			case joaat("WORLD_HUMAN_BUCKET_FILL"):
 				return 498;
 			case joaat("CC_WORLD_HUMAN_CAMP_FIRE_STAND"):
 				return 76;
-			case -2048655016:
+			case joaat("SC_WORLD_HUMAN_KNEELING"):
 				return 2477;
-			case -2048139083:
+			case joaat("RANSACK_BED"):
 				return 1873;
-			case -2044428668:
+			case joaat("RANSACK_ATTACHED_P_NIGHTSTANDWINTER03X"):
 				return 2097;
-			case -2043611403:
+			case joaat("MINIGAME_POKER_CAMP_PLAYER"):
 				return 2462;
 			case joaat("WORLD_ANIMAL_PIG_GRAZING"):
 				return 850;
-			case -2041729511:
+			case joaat("CIG_CARD_PLT_04"):
 				return 1078;
-			case -2039665345:
+			case joaat("CNV_CAMP_CFUN3_KEY_FEMALE_EXIT"):
 				return 958;
 			case joaat("PROP_HUMAN_SEAT_BENCH_PORCH"):
 				return 281;
-			case -2036016698:
+			case joaat("WB_HUNTING_ZONE_PANTHER_LEGENDARY"):
 				return 2610;
-			case -2035654710:
+			case joaat("WB_BERRY_EVERGREEN_HUCKLEBERRY"):
 				return 2536;
-			case -2035280042:
+			case joaat("LEVDES_SPAWN_THROWN_TOMAHAWK_HANDLE_DOWN"):
 				return 1423;
 			case joaat("LEVDES_SPAWN_MILKWEED_PICKUP"):
 				return 1380;
 			case joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_PAPER_W12_7_H17_78_P_CS_PHOTO_5X7"):
 				return 1543;
-			case -2027299560:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS_HANDOFF"):
 				return 253;
-			case -2026149201:
+			case joaat("CIG_CARD_LND_06"):
 				return 1056;
 			case joaat("WORLD_PLAYER_RIFLE_PICKUP_LEAN"):
 				return 1570;
@@ -79884,259 +79884,259 @@ int func_1289(int iParam0, int iParam1)
 				return 467;
 			case joaat("PROP_PLAYER_STR_GEN_BSMT_LOOT"):
 				return 2413;
-			case -2021309280:
+			case joaat("SC_PROP_HUMAN_TORCH"):
 				return 2469;
 			case joaat("WORLD_HUMAN_REPAIR_MED_OILCAN"):
 				return 576;
 			case joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"):
 				return 1482;
-			case -2016277239:
+			case joaat("WB_DISCO_BLACK_FLOWER"):
 				return 1188;
 			case joaat("LEVDES_SPAWN_YARROW_PICKUP"):
 				return 1432;
-			case -2014047549:
+			case joaat("WB_DISCO_MOUNTAIN_CLIMB"):
 				return 1261;
-			case -2012396119:
+			case joaat("WB_FLOWER_TEXAS_BLUE_BONNET_SINGLE"):
 				return 2343;
 			case joaat("WORLD_PLAYER_SEAT_LEDGE"):
 				return 1571;
-			case -2012078678:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_0M3_W_LOOT"):
 				return 1786;
-			case -2007688274:
+			case joaat("RANSACK_ATTACHED_P_CABOOSE03X_DRAWERS"):
 				return 2037;
-			case -2007463055:
+			case joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER"):
 				return 2158;
 			case joaat("RANSACK_ATTACHED_P_DESK07X"):
 				return 2057;
 			case joaat("WORLD_ANIMAL_HORSE_INJURED_ON_GROUND_RIGHT"):
 				return 828;
-			case -2003628894:
+			case joaat("WB_DIG_BURIED_RANDOM_SNOW_DIRT"):
 				return 2318;
-			case -2001504950:
+			case joaat("LEVDES_SPAWN_COIN"):
 				return 1353;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_UNLOAD_1"):
 				return 462;
 			case joaat("PROP_HUMAN_GRINDSTONE"):
 				return 423;
-			case -1999646174:
+			case joaat("MP_TCARD_QUEEN_WANDS"):
 				return 2289;
-			case -1987709625:
+			case joaat("WB_DISCO_ABANDONED_FURNITURE"):
 				return 1171;
 			case joaat("WORLD_ANIMAL_GOAT_GRAZING"):
 				return 815;
-			case -1985975956:
+			case joaat("CIG_CARD_GUN_03"):
 				return 1017;
-			case -1985369104:
+			case joaat("CIG_CARD_HRS_08"):
 				return 1034;
-			case -1982929650:
+			case joaat("MP_TCARD_TEN_CUPS"):
 				return 2298;
-			case -1982673468:
+			case joaat("WB_STRAWBERRY_UFO"):
 				return 2630;
 			case joaat("WORLD_HUMAN_SHOP_BROWSE"):
 				return 224;
-			case -1980304607:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M45"):
 				return 1757;
 			case joaat("WORLD_CAMP_JACK_ES_BUCKET_PICKUP_FULL"):
 				return 125;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_NO_PROPS"):
 				return 370;
-			case -1975560873:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_SAVAGE"):
 				return 2152;
-			case -1973379805:
+			case joaat("WB_INTERACTIVE_CAMPFIRE_FIREPLACE_IN_TOWNS"):
 				return 2616;
-			case -1969734852:
+			case joaat("LEVDES_SPAWN_PLANT_CREEPINGTHYME"):
 				return 1390;
 			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X"):
 				return 1546;
 			case joaat("WORLD_ANIMAL_FOX_DIGGING"):
 				return 805;
-			case -1965826694:
+			case joaat("MP_JEWELRY_MTHR_PEARL_NECKLACE"):
 				return 2234;
-			case -1965501170:
+			case joaat("WB_DISCO_LIGHTNING_ALLEY"):
 				return 1249;
-			case -1960501528:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M8_0M8_2M0"):
 				return 1968;
-			case -1955581039:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR_HANDOFF_PLAYER"):
 				return 260;
-			case -1952247065:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_1M05"):
 				return 1766;
 			case joaat("WORLD_ANIMAL_BUFFALO_RESTING"):
 				return 737;
-			case -1949040707:
+			case joaat("RANSACK_ATTACHED_P_ARMOIROFFICE66X"):
 				return 2010;
-			case -1946218483:
+			case joaat("RANSACK_ATTACHED_P_HUTCHWHITE01X_RIGHT"):
 				return 2087;
 			case joaat("PROP_PLAYER_OPEN_RIFLECHEST_WINCHESTER"):
 				return 1470;
 			case joaat("GENERIC_SEAT_CHAIR_SCENARIO"):
 				return 266;
-			case -1943395999:
+			case joaat("WB_ORCHID_NIGHT_SCENTED"):
 				return 2575;
 			case joaat("WORLD_ANIMAL_COW_RESTING"):
 				return 755;
-			case -1940645236:
+			case joaat("WORLD_PLAYER_CAMP_FIRE_SIT_TENT"):
 				return 1580;
 			case joaat("MP_LOBBY_PROP_HUMAN_SEAT_CHAIR_KNIFE_BADASS"):
 				return 273;
-			case -1939887874:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M60"):
 				return 1716;
 			case joaat("WORLD_HUMAN_SKETCHBOOK_PICKUP_PUTDOWN_GROUND"):
 				return 66;
-			case -1939316457:
+			case joaat("EA_WORLD_HUMAN_TREE_CHOP_NEW"):
 				return 2458;
-			case -1939078214:
+			case joaat("RANSACK_ATTACHED_P_ABE_CABINET01X"):
 				return 2001;
-			case -1932854998:
+			case joaat("CNV_CAMP_CFJM1_GEN_MALE_B_EXIT"):
 				return 924;
 			case joaat("WORLD_HUMAN_CAULDRON_ALWAYS"):
 				return 33;
-			case -1932469858:
+			case joaat("CIG_CARD_ACT_02"):
 				return 968;
 			case joaat("WORLD_ANIMAL_MUSKRAT_EATING"):
 				return 841;
-			case -1928592714:
+			case joaat("WB_DISCO_GHOST_TRAIN"):
 				return 1237;
-			case -1924319795:
+			case joaat("RANSACK_REACH_IN_TO_TABLE_OVER_PICKUP"):
 				return 1783;
-			case -1922154675:
+			case joaat("RANSACK_SHOP_VOL_0M80_0M50_2M0_GEN_STORE_MEAT_DISPLAY"):
 				return 1925;
-			case -1917646934:
+			case joaat("RANSACK_PICKUP_MEDCABINET_HIGH"):
 				return 1630;
 			case joaat("WORLD_ANIMAL_BEAVER_EAT_TREE"):
 				return 718;
-			case -1910224740:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_1M05"):
 				return 1737;
-			case -1910094762:
+			case joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_B_LEFT"):
 				return 2110;
-			case -1909595080:
+			case joaat("RANSACK_WALL_0M80_0M10_2M0"):
 				return 1976;
-			case -1907387938:
+			case joaat("WB_DIG_BURIED_JEWELRY"):
 				return 2314;
-			case -1904963482:
+			case joaat("RANSACK_ATTACHED_P_TABLECOFFEE05X_F"):
 				return 2118;
-			case -1903889587:
+			case joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD"):
 				return 243;
-			case -1899521858:
+			case joaat("PROP_CAMP_SEAT_CHAIR_TABLE_STEW_BEECHERS"):
 				return 160;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_CLEAN_RIFLE"):
 				return 108;
 			case joaat("WORLD_ANIMAL_BOAR_SLEEPING"):
 				return 731;
-			case -1893910834:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_4_OPEN"):
 				return 1670;
-			case -1893576881:
+			case joaat("LEVDES_FISHING_POLE"):
 				return 1322;
-			case -1893254403:
+			case joaat("WB_DISCO_INDIAN_BURIAL"):
 				return 1245;
-			case -1893200246:
+			case joaat("RANSACK_ATTACHED_CHEST_MEDIUM_OPEN_ONLY"):
 				return 1809;
-			case -1892291989:
+			case joaat("SCRIPT_REGR_MALE_A_POSE2"):
 				return 2443;
-			case -1891494196:
+			case joaat("MP_JEWELRY_EMERALD_EARRING"):
 				return 2224;
 			case joaat("WORLD_HUMAN_RUM_CRATE_PICKUP_1"):
 				return 577;
-			case -1889185507:
+			case joaat("MP_LOBBY_STANDING_D"):
 				return 2385;
 			case joaat("WORLD_ANIMAL_PIG_ROLL_MUD"):
 				return 853;
 			case joaat("WORLD_ANIMAL_MOOSE_EAT_LEAVES"):
 				return 837;
-			case -1884795646:
+			case joaat("WB_FLOWER_BLOOD_FLOWER_SINGLE"):
 				return 2335;
 			case joaat("WORLD_HUMAN_SEAT_LEDGE"):
 				return 421;
-			case -1883392228:
+			case joaat("CIG_CARD_HRS_10"):
 				return 1036;
 			case joaat("WORLD_HUMAN_FIDDLE_PICKUP_PUTDOWN"):
 				return 39;
-			case -1882486255:
+			case joaat("MP_JEWELRY_SLVR_PEARL_NECKLACE"):
 				return 2243;
-			case -1881279240:
+			case joaat("PROP_PLAYER_CHORES_WAGON_SACK_LOAD_1"):
 				return 1447;
 			case joaat("PROP_PLAYER_CASH_REGISTER_LOCKBREAK"):
 				return 1444;
-			case -1878803090:
+			case joaat("WB_HERB_HUMMINGBIRD_SAGE"):
 				return 2548;
 			case joaat("WORLD_ANIMAL_VULTURE_SUNNING_PERCHED"):
 				return 687;
-			case -1876924558:
+			case joaat("RANSACK_ATTACHED_P_TEACART01X"):
 				return 2128;
 			case joaat("WORLD_ANIMAL_SQUIRREL_EATING"):
 				return 877;
-			case -1873974894:
+			case joaat("RANSACK_ATTACHED_P_DESK10X"):
 				return 2062;
 			case joaat("PROP_HUMAN_PUMP_WATER_BUCKET"):
 				return 425;
-			case -1870678101:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_LOW_L"):
 				return 1810;
-			case -1869969225:
+			case joaat("WORLD_HUMAN_SHOPKEEPER_MP_CATALOG"):
 				return 626;
-			case -1869802111:
+			case joaat("RANSACK_ATTACHED_P_ADL_CABINET01X"):
 				return 2002;
-			case -1868740099:
+			case joaat("WORLD_ANIMAL_COW_EATING_GROUND"):
 				return 752;
 			case joaat("WORLD_HUMAN_GLASS_PUT_DOWN_CRATE_TABLE"):
 				return 202;
-			case -1857536219:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M80"):
 				return 1689;
-			case -1857427405:
+			case joaat("WB_HUNTING_ZONE_FOX"):
 				return 2608;
 			case joaat("WORLD_HUMAN_LEAN_BACK_RAILING"):
 				return 348;
-			case -1855260942:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARD05X"):
 				return 2051;
-			case -1854314849:
+			case joaat("CNV_CAMP_CFJM1_GEN_MALE_C_EXIT"):
 				return 925;
-			case -1853298373:
+			case joaat("CNV_CAMP_CCDNJ1_DUTCH_EXIT"):
 				return 898;
-			case -1850795302:
+			case joaat("MP_LOBBY_PHNS_STANDING_B"):
 				return 2359;
-			case -1850722156:
+			case joaat("WB_ORCHID_SPARROWS_EGG"):
 				return 2578;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_HATCHET_DOUBLE_BIT"):
 				return 1558;
-			case -1847100017:
+			case joaat("WB_DISCO_ABANDONED_OIL_WELL"):
 				return 1173;
-			case -1844699338:
+			case joaat("RANSACK_PROP_CHEST_LARGE_OPEN"):
 				return 1632;
-			case -1844078932:
+			case joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PUTDOWN_0M5_0M5"):
 				return 1795;
-			case -1843735114:
+			case joaat("RANSACK_REACH_IN_CRAYSISH_HOLE"):
 				return 1882;
 			case joaat("WORLD_ANIMAL_OX_GRAZING"):
 				return 843;
-			case -1842399202:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_1M0"):
 				return 1855;
 			case joaat("WORLD_HUMAN_FISHING_POLE_PICKUP_PUTDOWN"):
 				return 48;
-			case -1840784802:
+			case joaat("RANSACK_SHOP_VOL_1M70_0M50_2M0"):
 				return 1936;
 			case joaat("WORLD_HUMAN_SUGAR_SACK_PICKUP_COUNTER"):
 				return 612;
 			case joaat("WORLD_ANIMAL_WOLF_SLEEPING"):
 				return 889;
-			case -1837294946:
+			case joaat("MP_BOTTLE_CARIB_RUM"):
 				return 2176;
-			case -1837026863:
+			case joaat("RANSACK_COACH_BOOT"):
 				return 1880;
-			case -1836702551:
+			case joaat("CNV_CAMP_CFJM4_GEN_MALE_A_EXIT"):
 				return 941;
-			case -1835516139:
+			case joaat("WB_HERB_MILKWEED"):
 				return 2550;
-			case -1829889406:
+			case joaat("WB_EXOTICS_INTERACT"):
 				return 2594;
-			case -1829181716:
+			case joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_1M20"):
 				return 1618;
 			case joaat("WORLD_ANIMAL_ELK_EATING_LEAVES"):
 				return 800;
-			case -1823178954:
+			case joaat("WB_DISCO_PIRATE_RUM"):
 				return 1277;
 			case joaat("WORLD_ANIMAL_POSSUM_EAT_GROUND"):
 				return 856;
-			case -1823109923:
+			case joaat("WORLD_HUMAN_DANCING"):
 				return 264;
-			case -1820115868:
+			case joaat("RANSACK_REACH_OVER_VOLUME_0M8_0M8_2M0"):
 				return 1892;
 			case joaat("PROP_HUMAN_WOOD_CHOP_AND_SHARPEN_AXE"):
 				return 12;
@@ -80146,23 +80146,23 @@ int func_1289(int iParam0, int iParam1)
 				return 739;
 			case joaat("WORLD_ANIMAL_DONKEY_INJURED_ON_GROUND"):
 				return 795;
-			case -1811487294:
+			case joaat("WORLD_HUMAN_SMOKE_NAZAR"):
 				return 420;
 			case joaat("RANSACK_ATTACHED_P_BW_DESK01X"):
 				return 2019;
-			case -1806697370:
+			case joaat("WB_CAMPFIRE"):
 				return 2585;
-			case -1805387726:
+			case joaat("PROP_HITCHINGPOST"):
 				return 1128;
 			case joaat("WORLD_PLAYER_CHAMPAGNE_PICKUP_TRAY"):
 				return 1493;
-			case -1803138422:
+			case joaat("CIG_CARD_PLT_05"):
 				return 1079;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_FISHING_ROD"):
 				return 110;
 			case joaat("PROP_CAMP_MEAT_BOWL_PICKUP_TABLE"):
 				return 92;
-			case -1799583522:
+			case joaat("SC_WORLD_HUMAN_PREACHER"):
 				return 2479;
 			case joaat("WORLD_HUMAN_LNS_SEAN_IDLE"):
 				return 2419;
@@ -80170,7 +80170,7 @@ int func_1289(int iParam0, int iParam1)
 				return 375;
 			case joaat("WORLD_HUMAN_BANJO_PICKUP_PUTDOWN"):
 				return 25;
-			case -1789866539:
+			case joaat("WB_MUSHROOM_BAY_BOLETE"):
 				return 2563;
 			case joaat("WORLD_HUMAN_LEAN_BAR_READ_NEWSPAPER"):
 				return 357;
@@ -80182,15 +80182,15 @@ int func_1289(int iParam0, int iParam1)
 				return 128;
 			case joaat("WORLD_CAMP_FIRE_SIT_GROUND_RECLINE"):
 				return 120;
-			case -1773308460:
+			case joaat("PROP_PLAYER_PRPTY_SHAVE"):
 				return 1475;
-			case -1772504039:
+			case joaat("CIG_CARD_INV_03"):
 				return 1041;
 			case joaat("WORLD_CAMP_KIERAN_TREE_TIED"):
 				return 145;
-			case -1771411749:
+			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE05BX_C"):
 				return 2123;
-			case -1771237190:
+			case joaat("WB_DISCO_DEAD_BEAR"):
 				return 1210;
 			case joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4"):
 				return 1487;
@@ -80198,23 +80198,23 @@ int func_1289(int iParam0, int iParam1)
 				return 1084;
 			case joaat("WORLD_ANIMAL_BEAR_EATING_BERRIES"):
 				return 703;
-			case -1764243246:
+			case joaat("PULLOUT_PROP_LOCKBOX_SML_DISCO_BURNED_SETTLEMENT_0M0_0M70"):
 				return 1594;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_1_RAW"):
 				return 523;
-			case -1760513670:
+			case joaat("RANSACK_ATTACHED_P_NBMNIGHTSTAND03X"):
 				return 2094;
 			case joaat("WORLD_CAMP_STEW_BOWL_PUT_DOWN_GROUND"):
 				return 150;
-			case -1758273751:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_0M85"):
 				return 1846;
 			case joaat("WORLD_ANIMAL_RAT_EATING"):
 				return 865;
 			case joaat("WORLD_HUMAN_GUARD_LAZY"):
 				return 541;
-			case -1754824674:
+			case joaat("WB_DISCO_JESUIT_MISSIONARY"):
 				return 1246;
-			case -1752592742:
+			case joaat("LEVDES_SPAWN_CHEST"):
 				return 1343;
 			case joaat("WORLD_ANIMAL_BEAR_SITTING"):
 				return 707;
@@ -80224,89 +80224,89 @@ int func_1289(int iParam0, int iParam1)
 				return 207;
 			case joaat("PROP_CAMP_CAULDRON_UNHANG"):
 				return 79;
-			case -1747066226:
+			case joaat("WB_HERB_YARROW"):
 				return 2559;
-			case -1747063748:
+			case joaat("MP_TCARD_TEN_PENTACLES"):
 				return 2299;
-			case -1746866391:
+			case joaat("RANSACK_SHOP_VOL_1M10_0M50_2M0_TIGHT_ENVELOPE"):
 				return 1931;
 			case joaat("WORLD_HUMAN_FISHING_POLE_PICKUP_NO_FISHING_POLE"):
 				return 538;
-			case -1743380384:
+			case joaat("MP_COIN_1800_FIVE_DLR"):
 				return 2196;
-			case -1743010162:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M80"):
 				return 1712;
-			case -1739681058:
+			case joaat("LEVDES_SPAWN_HORSESTIMULANT"):
 				return 1371;
-			case -1738742270:
+			case joaat("MP_TCARD_SEVEN_CUPS"):
 				return 2290;
-			case -1738556997:
+			case joaat("MP_JEWELRY_GLD_CROSS_NECKLACE"):
 				return 2228;
 			case joaat("WORLD_HUMAN_SIT_GUITAR"):
 				return 226;
-			case -1736695237:
+			case joaat("RANSACK_ATTACHED_P_BAGGAGE01X_CABINET_DR02"):
 				return 2012;
-			case -1736298289:
+			case joaat("WB_DISCO_ROPE_BRIDGE"):
 				return 1286;
-			case -1735213851:
+			case joaat("WB_HERB_RED_SAGE"):
 				return 2555;
-			case -1728671945:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_0M85"):
 				return 1857;
-			case -1724744355:
+			case joaat("RANSACK_REACH_OVER_PICKUP_1M5_1M20_2M0"):
 				return 1791;
-			case -1724452361:
+			case joaat("LEVDES_SPAWN_CANNEDFOOD_FRUIT"):
 				return 1342;
 			case joaat("WORLD_HUMAN_PITCH_HAY_SCOOP"):
 				return 561;
-			case -1717249439:
+			case joaat("RANSACK_VOLUME_REACH_IN_TREE_HOLE_GROUND_PICKUP"):
 				return 2000;
-			case -1717188712:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M60"):
 				return 1740;
-			case -1714649883:
+			case joaat("WB_DINO_BONES"):
 				return 2592;
 			case joaat("WORLD_ANIMAL_HORSE_INJURED_ON_GROUND"):
 				return 827;
 			case joaat("WORLD_ANIMAL_OX_RESTING"):
 				return 844;
-			case -1708277338:
+			case joaat("WB_DISCO_QUARRY"):
 				return 1281;
-			case -1707983236:
+			case joaat("MP_TCARD_TWO_WANDS"):
 				return 2309;
 			case joaat("CIG_CARD_GUN_12"):
 				return 1026;
 			case joaat("WORLD_PLAYER_PLACE_BAIT"):
 				return 1568;
-			case -1702773118:
+			case joaat("WB_DIG_BURIED_COIN"):
 				return 2312;
 			case joaat("WORLD_HUMAN_SIT_GROUND_READ_NEWSPAPER"):
 				return 387;
-			case -1700065516:
+			case joaat("SC_PROP_STAND_REST_DRINK_MALES"):
 				return 2476;
-			case -1700058951:
+			case joaat("SC_PROP_HUMAN_TORCH_RALLY_A"):
 				return 2470;
 			case joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M8_2M0"):
 				return 1900;
-			case -1696819707:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M8_0M5_2M0"):
 				return 1953;
-			case -1696453945:
+			case joaat("WB_FLOWER_WILD_RHUBARB"):
 				return 2344;
-			case -1693728831:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_1M0"):
 				return 1847;
 			case joaat("PROP_CAMP_JACK_SEAT_CHAIR_STEW_EATING"):
 				return 88;
-			case -1689823970:
+			case joaat("LEVDES_SPAWN_POTENT_CHEWING_TOBACCO"):
 				return 1400;
 			case joaat("WORLD_PLAYER_SLEEP_GROUND"):
 				return 1575;
-			case -1685795279:
+			case joaat("MP_JEWELRY_DMND_BNGLE_BRACELET"):
 				return 2220;
 			case joaat("WORLD_CAMP_SIT_GROUND_STEW"):
 				return 148;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_LEFT"):
 				return 369;
-			case -1678984988:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M5_0M5_2M0"):
 				return 1951;
-			case -1678824488:
+			case joaat("SCRIPT_RETB_PREACHER"):
 				return 2446;
 			case joaat("WORLD_ANIMAL_MOOSE_INJURED_ON_GROUND"):
 				return 839;
@@ -80318,7 +80318,7 @@ int func_1289(int iParam0, int iParam1)
 				return 606;
 			case joaat("WORLD_HUMAN_THIEF_SEARCHING_TREE"):
 				return 2420;
-			case -1666348035:
+			case joaat("RANSACK_ATTACHED_P_WORKBENCHDESK01X_LEFT"):
 				return 2138;
 			case joaat("PROP_CAMP_SEAT_CHAIR_STEW"):
 				return 97;
@@ -80326,15 +80326,15 @@ int func_1289(int iParam0, int iParam1)
 				return 195;
 			case joaat("WORLD_HUMAN_VOMIT_KNEEL"):
 				return 236;
-			case -1659448997:
+			case joaat("MP_BOTTLE_OLDTOM_GIN"):
 				return 2181;
-			case -1658619823:
+			case joaat("RANSACK_COACH_BOOT_OPEN_LOCKBREAKER"):
 				return 1614;
 			case joaat("WORLD_HUMAN_SHOPKEEPER_MALE_A"):
 				return 598;
-			case -1656133042:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_1M0"):
 				return 1866;
-			case -1655947628:
+			case joaat("WB_ORCHID_GHOST"):
 				return 2571;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_3_GINNED"):
 				return 526;
@@ -80342,19 +80342,19 @@ int func_1289(int iParam0, int iParam1)
 				return 5;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_DRINKING"):
 				return 286;
-			case -1642576755:
+			case joaat("RANSACK_REACH_OVER_VOLUME_OPEN_CRATE_PICKUP_0M8_0M5_0M40"):
 				return 1909;
 			case joaat("WORLD_HUMAN_BASKET_PUT_DOWN"):
 				return 485;
-			case -1641262087:
+			case joaat("CIG_CARD_HRS_11"):
 				return 1037;
 			case joaat("WORLD_ANIMAL_BOAR_EAT_CARCASS"):
 				return 726;
-			case -1637581627:
+			case joaat("CIG_CARD_ACT_01"):
 				return 967;
-			case -1636507744:
+			case joaat("LEVDES_SPAWN_FIREBOTTLE"):
 				return 1362;
-			case -1631851776:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE_HANDOFF_PLAYER"):
 				return 257;
 			case joaat("WORLD_VEHICLE_DRIVE_SOLO"):
 				return 1151;
@@ -80362,9 +80362,9 @@ int func_1289(int iParam0, int iParam1)
 				return 708;
 			case joaat("WORLD_HUMAN_BROOM_PICKUP_PUTDOWN"):
 				return 30;
-			case -1629159913:
+			case joaat("RANSACK_SHOP_VOL_1M25_0M50_2M0_TIGHT_ENVELOPE"):
 				return 1933;
-			case -1628045135:
+			case joaat("RANSACK_CHIMNEY_SEARCH_NO_LOOT_0M70"):
 				return 1598;
 			case joaat("WORLD_ANIMAL_BUFFALO_INJURED_ON_GROUND"):
 				return 736;
@@ -80372,89 +80372,89 @@ int func_1289(int iParam0, int iParam1)
 				return 505;
 			case joaat("WORLD_HUMAN_BAR_DRINK_BARTENDER"):
 				return 318;
-			case -1623268913:
+			case joaat("CODE_HUMAN_SHOCKED_MAJOR"):
 				return 1114;
 			case joaat("RANSACK_VOLUME_0M8_0M5_2M0"):
 				return 1938;
-			case -1621572797:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_1M05"):
 				return 1685;
-			case -1619485796:
+			case joaat("CIG_CARD_GRL_09"):
 				return 1011;
-			case -1619201716:
+			case joaat("MP_LOBBY_STANDING_A"):
 				return 2382;
-			case -1616347668:
+			case joaat("RANSACK_VOLUME_0M8_0M8_2M0"):
 				return 1939;
-			case -1615452792:
+			case joaat("LEVDES_SPAWN_EMPTY_WHISKEY"):
 				return 1361;
-			case -1610817898:
+			case joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M5_0M5_0M60"):
 				return 1914;
 			case joaat("WORLD_HUMAN_RIFLE_PUT_DOWN_LEAN"):
 				return 221;
-			case -1605488611:
+			case joaat("WB_DISCO_GEYSER"):
 				return 1236;
-			case -1604663583:
+			case joaat("RANSACK_PROP_P_WNT4_DRWDBL01X_CLOSE"):
 				return 1768;
 			case joaat("MP_LOBBY_PROP_HUMAN_SEAT_BENCH_PORCH_DRINKING"):
 				return 270;
-			case -1602263347:
+			case joaat("MP_JEWELRY_GLD_PEARL_NECKLACE"):
 				return 2229;
 			case joaat("PROP_HUMAN_SEAT_BENCH_JAW_HARP_UPBEAT"):
 				return 180;
 			case joaat("WORLD_ANIMAL_DOG_INJURED_ON_GROUND"):
 				return 785;
-			case -1596797821:
+			case joaat("LEVDES_SPAWN_PLANT_BAYBOLETE"):
 				return 1387;
-			case -1590898241:
+			case joaat("CIG_CARD_INV_02"):
 				return 1040;
-			case -1588983332:
+			case joaat("TS_STR_INSPECT_RAZORBOX"):
 				return 1160;
 			case joaat("WORLD_HUMAN_PITCH_HAY_SPREAD"):
 				return 563;
-			case -1587187585:
+			case joaat("WORLD_ANIMAL_HORSE_RESTING"):
 				return 829;
 			case joaat("WORLD_HUMAN_FIDDLE_PICKUP_NO_FIDDLE"):
 				return 200;
 			case joaat("WORLD_ANIMAL_MOOSE_DRINK_WADING"):
 				return 836;
-			case -1573485601:
+			case joaat("MP_LOBBY_SCENARIO_09"):
 				return 2369;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING"):
 				return 353;
 			case joaat("WORLD_HUMAN_DRINKING_DRUNK"):
 				return 338;
-			case -1567948213:
+			case joaat("TS_VAL_INSPECT_SUBMERGED_ARTIFACT_3"):
 				return 1168;
-			case -1567729351:
+			case joaat("SC_WORLD_HUMAN_STAND_BAR"):
 				return 2484;
-			case -1566714772:
+			case joaat("WB_DISCO_DEAD_MICAH"):
 				return 1214;
-			case -1563294374:
+			case joaat("WB_DISCO_DERAILED_TRAIN"):
 				return 1219;
-			case -1557003371:
+			case joaat("TS_VAL_INSPECT_SUBMERGED_ARTIFACT_1"):
 				return 1166;
 			case joaat("WORLD_HUMAN_NEWSPAPER_PUTDOWN"):
 				return 216;
-			case -1554719581:
+			case joaat("WB_DISCO_METEOR_SHOWER"):
 				return 1258;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1522;
 			case joaat("WORLD_CAMP_JACK_TREE"):
 				return 141;
-			case -1550170582:
+			case joaat("SCRIP_REMC_RET_MALE_B_POSE2"):
 				return 2438;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_PICKUP_PUTDOWN"):
 				return 57;
 			case joaat("WORLD_HUMAN_SMOKE_CIGAR"):
 				return 404;
-			case -1542088648:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED_PULLOUT_0M0_0M80"):
 				return 1861;
-			case -1541598949:
+			case joaat("RANSACK_REACH_IN_PICKUP_BOOT"):
 				return 1776;
-			case -1540029476:
+			case joaat("WB_GATOR_EGG"):
 				return 2595;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING"):
 				return 301;
-			case -1538102870:
+			case joaat("CIG_CARD_PLT_01"):
 				return 1075;
 			case joaat("WORLD_CAMP_JACK_POKE_GROUND"):
 				return 132;
@@ -80462,31 +80462,31 @@ int func_1289(int iParam0, int iParam1)
 				return 1085;
 			case joaat("WORLD_ANIMAL_COYOTE_EATING_GROUND"):
 				return 759;
-			case -1532808475:
+			case joaat("WB_DISCO_BIRD_NEST"):
 				return 1187;
-			case -1529588078:
+			case joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M5_2M0_NO_REACH_UP"):
 				return 1894;
 			case joaat("WORLD_HUMAN_FIRE_GEN_COLD"):
 				return 42;
 			case joaat("RANSACK_ATTACHED_CHEST_MEDIUM"):
 				return 1808;
-			case -1522071438:
+			case joaat("WB_FLOWER_WILD_RHUBARB_SINGLE"):
 				return 2345;
-			case -1520281639:
+			case joaat("WB_DISCO_GRAYS_SECRET"):
 				return 1241;
-			case -1520256117:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_MID_OPEN"):
 				return 1652;
 			case joaat("WORLD_HUMAN_SACK_PICKUP_COUNTER"):
 				return 584;
-			case -1517174734:
+			case joaat("TS_STR_INSPECT_MAYOR_LETTER"):
 				return 1159;
 			case joaat("WORLD_HUMAN_CANNED_FOOD_COOKING"):
 				return 192;
-			case -1515755255:
+			case joaat("RANSACK_ATTACHED_P_DRESSER01X"):
 				return 2065;
-			case -1515405983:
+			case joaat("CIG_CARD_VEH_08"):
 				return 1106;
-			case -1512709755:
+			case joaat("WB_DISCO_DESERTED_FARM"):
 				return 1222;
 			case joaat("PROP_HUMAN_CATFISH_COWER_BED"):
 				return 2400;
@@ -80494,63 +80494,63 @@ int func_1289(int iParam0, int iParam1)
 				return 520;
 			case joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_C"):
 				return 2515;
-			case -1497157230:
+			case joaat("MP_COIN_1792_NICKEL"):
 				return 2189;
-			case -1497005692:
+			case joaat("WB_DISCO_DEFACED_GRAVE"):
 				return 1218;
 			case joaat("WORLD_HUMAN_COFFEE_DRINK"):
 				return 332;
-			case -1487588619:
+			case joaat("RANSACK_ATTACHED_P_NBMCHINACABINET02X"):
 				return 2093;
 			case joaat("WORLD_ANIMAL_OX_DRINK_GROUND"):
 				return 842;
 			case joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_PUTDOWN"):
 				return 71;
-			case -1478123812:
+			case joaat("WORLD_ANIMAL_SMALL_FLEE_AND_HOLD"):
 				return 894;
-			case -1476485404:
+			case joaat("LEVDES_SPAWN_THROWING_KNIFE"):
 				return 1420;
-			case -1473436841:
+			case joaat("MINIGAME_BLACKJACK_PLAYER"):
 				return 2459;
 			case joaat("RANSACK_VOLUME_1M5_0M5_2M0"):
 				return 1945;
-			case -1472242152:
+			case joaat("LEVDES_SPAWN_PICKLED_EGGS_FIXED_PHYSICS"):
 				return 1438;
-			case -1471046819:
+			case joaat("MP_JEWELRY_PEARL_EARRING"):
 				return 2237;
-			case -1469999374:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_RIGHT"):
 				return 1816;
 			case joaat("WORLD_HUMAN_LUMBER_PUT_DOWN_1"):
 				return 554;
-			case -1466504916:
+			case joaat("WB_RCM_FUNDRAISER_INSPECT"):
 				return 2625;
 			case joaat("WORLD_CAMP_SIT_GROUND_STEW_LAZY"):
 				return 149;
-			case -1459609903:
+			case joaat("MP_TCARD_TEN_SWORDS"):
 				return 2300;
 			case joaat("PROP_PLAYER_LNS_SACK_STASH"):
 				return 2405;
 			case joaat("WORLD_ANIMAL_BULL_RESTING"):
 				return 742;
-			case -1455022251:
+			case joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_2"):
 				return 1830;
-			case -1452925867:
+			case joaat("PROP_ROUNDEDHITCHINGPOST"):
 				return 1130;
-			case -1452428628:
+			case joaat("WB_DISCO_REGISTER_ROCK"):
 				return 1284;
-			case -1450526648:
+			case joaat("LEVDES_SPAWN_PLANT_CHANTERELLES"):
 				return 1389;
 			case joaat("WORLD_PLAYER_INSPECT_PHOTO_80CM_PAPER_W17_78_H12_7_P_CS_PHOTOR_5X7"):
 				return 1544;
 			case joaat("CIG_CARD_ART_11"):
 				return 1001;
-			case -1445107872:
+			case joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PICKUP_TIGHT_ENVELOPE"):
 				return 1913;
-			case -1441376597:
+			case joaat("PROP_PLAYER_LOOT_FLOORBOARD_P_CS_PHOTO_5X7"):
 				return 1453;
-			case -1440481526:
+			case joaat("CIG_CARD_AML_07"):
 				return 985;
-			case -1437877958:
+			case joaat("WB_DISCO_BURNED_SETTLEMENT"):
 				return 1199;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_UNLOAD_4"):
 				return 465;
@@ -80562,13 +80562,13 @@ int func_1289(int iParam0, int iParam1)
 				return 2028;
 			case joaat("WORLD_ANIMAL_ELK_DRINK_WADING"):
 				return 798;
-			case -1422320732:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_1_CLOSE"):
 				return 1663;
-			case -1422285647:
+			case joaat("MP_LOBBY_SCENARIO_14"):
 				return 2374;
-			case -1421965287:
+			case joaat("MP_JEWELRY_PORCELAIN_NECKLACE"):
 				return 2240;
-			case -1420736735:
+			case joaat("WB_DIG_BURIED_RANDOM_WATER_FRESH"):
 				return 2319;
 			case joaat("WORLD_HUMAN_FEEDBAG_PICKUP_PUTDOWN"):
 				return 38;
@@ -80578,29 +80578,29 @@ int func_1289(int iParam0, int iParam1)
 				return 682;
 			case joaat("WORLD_HUMAN_FIRE_GEN_SIT_COLD"):
 				return 45;
-			case -1405108472:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO"):
 				return 1988;
-			case -1398754432:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_0M3"):
 				return 1884;
 			case joaat("WORLD_HUMAN_FIRE_GEN_STAND_COLD"):
 				return 47;
-			case -1396710873:
+			case joaat("RANSACK_ATTACHED_P_NIGHTSTAND03X"):
 				return 2095;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_GROOMING_GROSS"):
 				return 288;
-			case -1394250926:
+			case joaat("WB_HERB_YARROW_SINGLE"):
 				return 2560;
 			case joaat("WORLD_HUMAN_RAKE_PUTDOWN"):
 				return 573;
-			case -1391735714:
+			case joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_B"):
 				return 2506;
-			case -1390169767:
+			case joaat("MP_COIN_1794_SLV_DLR"):
 				return 2191;
-			case -1386344008:
+			case joaat("WB_DISCO_BROKEN_BRIDGE"):
 				return 1195;
-			case -1384407567:
+			case joaat("RANSACK_ATTACHED_DD_123"):
 				return 1825;
-			case -1382458821:
+			case joaat("WB_BANDITO_SHACK"):
 				return 2583;
 			case joaat("PROP_HUMAN_SACK_STORAGE_IN"):
 				return 428;
@@ -80608,21 +80608,21 @@ int func_1289(int iParam0, int iParam1)
 				return 868;
 			case joaat("WORLD_CAMP_JACK_SLEEP"):
 				return 137;
-			case -1381480510:
+			case joaat("RANSACK_ATTACHED_P_SHELF06X"):
 				return 2099;
 			case joaat("WORLD_VEHICLE_ATTRACTOR"):
 				return 1148;
-			case -1377345125:
+			case joaat("RANSACK_ATTACHED_P_CARTCABINET01X"):
 				return 2038;
 			case joaat("WORLD_ANIMAL_RABBIT_GRAZING"):
 				return 858;
-			case -1373030254:
+			case joaat("CIG_CARD_LND_09"):
 				return 1059;
-			case -1370915905:
+			case joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_BAR"):
 				return 2160;
 			case joaat("WORLD_ANIMAL_WOLF_SITTING"):
 				return 888;
-			case -1367505007:
+			case joaat("CIG_CARD_AML_03"):
 				return 981;
 			case joaat("WORLD_HUMAN_TRUMPET_PUTDOWN"):
 				return 234;
@@ -80630,53 +80630,53 @@ int func_1289(int iParam0, int iParam1)
 				return 680;
 			case joaat("RANSACK_ATTACHED_DD_234"):
 				return 1827;
-			case -1357157684:
+			case joaat("LEVDES_SPAWN_DECO_CHEST"):
 				return 1358;
 			case joaat("WORLD_HUMAN_NEWSPAPER_PICKUP_PUTDOWN"):
 				return 55;
-			case -1354885594:
+			case joaat("WB_DISCO_DESERT_SKELETONS"):
 				return 1220;
 			case joaat("FALL_OVER_WALL"):
 				return 1120;
-			case -1353352183:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M60"):
 				return 1711;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_UNLOAD_2"):
 				return 463;
-			case -1350870117:
+			case joaat("RANSACK_ATTACHED_DS_12"):
 				return 1837;
 			case joaat("WORLD_HUMAN_GUITAR_PICKUP"):
 				return 205;
 			case joaat("WORLD_HUMAN_FIRE_GEN_SIT"):
 				return 44;
-			case -1342226726:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M80"):
 				return 1765;
-			case -1341692684:
+			case joaat("RANSACK_VOLUME_1M25_0M8_2M0"):
 				return 1944;
 			case joaat("WORLD_PLAYER_CAMP_FIRE_SIT"):
 				return 1488;
-			case -1341257406:
+			case joaat("LEVDES_SPAWN_CHEST_BOX"):
 				return 1344;
-			case -1338300561:
+			case joaat("RANSACK_ATTACHED_P_CABOOSE01X_DRAWERS"):
 				return 2035;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_RT_LETTERL_DBL"):
 				return 1533;
-			case -1337298951:
+			case joaat("RANSACK_ATTACHED_P_HUTCH03X"):
 				return 2085;
-			case -1336449919:
+			case joaat("CIG_CARD_SPT_09"):
 				return 1095;
-			case -1335123757:
+			case joaat("CIG_CARD_ACT_04"):
 				return 970;
-			case -1330873135:
+			case joaat("LEVDES_SPAWN_THROWN_TOMAHAWK_HANDLE_UP"):
 				return 1424;
-			case -1330027742:
+			case joaat("LEVDES_SPAWN_TONIC"):
 				return 1427;
-			case -1329035790:
+			case joaat("RANSACK_ATTACHED_P_BAGGAGE01X_TRE_DR01"):
 				return 2013;
 			case joaat("WORLD_ANIMAL_BEAVER_EATING"):
 				return 719;
 			case joaat("WORLD_ANIMAL_FOX_SLEEPING"):
 				return 812;
-			case -1327059943:
+			case joaat("WB_SPICE_CREEPING_THYME"):
 				return 2580;
 			case joaat("PROP_HUMAN_WOOD_CHOP"):
 				return 2524;
@@ -80684,107 +80684,107 @@ int func_1289(int iParam0, int iParam1)
 				return 802;
 			case joaat("WORLD_HUMAN_BUCKET_PICKUP_EMPTY_NO_BUCKET"):
 				return 500;
-			case -1314827402:
+			case joaat("MP_TCARD_TWO_PENTACLES"):
 				return 2307;
-			case -1311624685:
+			case joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_0M70"):
 				return 1616;
-			case -1310927999:
+			case joaat("LEVDES_SPAWN_STRONGBOX_WATER"):
 				return 1416;
 			case joaat("WORLD_HUMAN_RAKE_PICKUP_NO_RAKE"):
 				return 572;
-			case -1307214023:
+			case joaat("WB_INTERACTIVE_CAMPFIRE_MP_TWOPOINT"):
 				return 2636;
-			case -1305410229:
+			case joaat("WB_HUNTING_ZONE_WOLF"):
 				return 2612;
 			case joaat("WORLD_PLAYER_CHORES_VEHICLE_MILKJUG_LOAD"):
 				return 1517;
-			case -1302545667:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARD03X"):
 				return 2049;
 			case joaat("PROP_VEHICLE_WAGON_BALE_UNLOAD_1"):
 				return 438;
-			case -1298970333:
+			case joaat("WB_DISCO_WAGON_CHEST"):
 				return 1311;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_DRINKING"):
 				return 366;
-			case -1294043870:
+			case joaat("CIG_CARD_INV_01"):
 				return 1039;
-			case -1293789240:
+			case joaat("CIG_CARD_VEH_04"):
 				return 1102;
-			case -1291249576:
+			case joaat("RANSACK_VOLUME_1M10_0M8_2M0"):
 				return 1943;
-			case -1290790794:
+			case joaat("MP_LOBBY_STANDING_F"):
 				return 2387;
 			case joaat("WORLD_PLAYER_CHORES_PUMP_WATER"):
 				return 1511;
-			case -1287255281:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_0M3_NO_LOOT"):
 				return 1785;
-			case -1284571798:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M45"):
 				return 1739;
 			case joaat("PROP_PLAYER_OPEN_RIFLECHEST_PUMP_ACTION_SHOTGUN"):
 				return 1468;
 			case joaat("WORLD_ANIMAL_HORSE_DRINK_GROUND_DOMESTIC"):
 				return 823;
-			case -1278615205:
+			case joaat("SC_WORLD_HUMAN_SHOPKEEPER_MALE_C"):
 				return 2481;
-			case -1278411717:
+			case joaat("LEVDES_SPAWN_MONEYCLIP"):
 				return 1381;
 			case joaat("WORLD_ANIMAL_DEER_SLEEPING"):
 				return 772;
-			case -1275884820:
+			case joaat("WB_ORCHID_RAT_TAIL"):
 				return 2577;
 			case joaat("WORLD_HUMAN_WRITE_NOTEBOOK"):
 				return 617;
-			case -1272633412:
+			case joaat("MP_LOBBY_SCENARIO_08"):
 				return 2368;
-			case -1270124018:
+			case joaat("CIG_CARD_ART_09"):
 				return 999;
 			case joaat("WORLD_ANIMAL_SHEEP_GRAZING"):
 				return 870;
 			case joaat("RANSACK_ATTACHED_P_ARMOIR07X"):
 				return 2007;
-			case -1262901592:
+			case joaat("TS_VAL_INSPECT_SUBMERGED_ARTIFACT_2"):
 				return 1167;
-			case -1259804911:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_WHISKEY_MOONSHINE"):
 				return 412;
-			case -1258484958:
+			case joaat("SCRIPT_CF_EXCON_WS_SPEAKER_STANDING"):
 				return 2500;
-			case -1257513801:
+			case joaat("LEVDES_SPAWN_EMPTY_FOOD"):
 				return 1360;
-			case -1257113243:
+			case joaat("LEVDES_SPAWN_BONES_AND_BODY_PARTS"):
 				return 1332;
-			case -1254646113:
+			case joaat("SC_PROP_MOONSHINE_CAMP_MALE_B"):
 				return 2475;
-			case -1253780595:
+			case joaat("WB_ORCHID_MOCCASIN_FLOWER"):
 				return 2574;
 			case joaat("WORLD_ANIMAL_PIG_EAT_CARCASS"):
 				return 848;
-			case -1251426772:
+			case joaat("LEVDES_SPAWN_GANG_DRISCOLL_LETTER"):
 				return 1364;
-			case -1249899728:
+			case joaat("LEVDES_SPAWN_LAW"):
 				return 1374;
 			case joaat("WORLD_HUMAN_STRAW_BROOM_RESTING"):
 				return 608;
 			case joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PUT_DOWN"):
 				return 1510;
-			case -1247042764:
+			case joaat("RANSACK_REACH_IN_PICKUP_1M5_0M5_2M0"):
 				return 1775;
-			case -1246577092:
+			case joaat("LEVDES_SPAWN_BILLSTACK"):
 				return 1330;
-			case -1245800408:
+			case joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_1M0"):
 				return 1617;
-			case -1245423146:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_MP_SYNC_GOTO"):
 				return 1987;
 			case joaat("WORLD_ANIMAL_CROW_EATING_PERCHED"):
 				return 640;
 			case joaat("WORLD_PLAYER_DYNAMIC_KNEEL"):
 				return 1519;
-			case -1241326640:
+			case joaat("WB_NON_INTERACTIVE_CAMPFIRE_IN_TOWNS"):
 				return 2619;
 			case joaat("WORLD_HUMAN_BOX_PUT_DOWN_1"):
 				return 489;
 			case joaat("WORLD_PLAYER_CHORES_BUCKET_PICKUP_EMPTY"):
 				return 1497;
-			case -1235467171:
+			case joaat("PROP_PLAYER_WASH_FACE_BARREL"):
 				return 2143;
 			case joaat("WORLD_HUMAN_CONCERTINA_PICKUP"):
 				return 196;
@@ -80792,21 +80792,21 @@ int func_1289(int iParam0, int iParam1)
 				return 2428;
 			case joaat("WORLD_HUMAN_SHOP_BROWSE_COUNTER"):
 				return 225;
-			case -1228902905:
+			case joaat("LEVDES_SPAWN_GIN_BOTTLE"):
 				return 1365;
-			case -1225791323:
+			case joaat("RANSACK_CHIMNEY_WITH_MANTLE__BEECHERS_BEDROOM"):
 				return 1877;
 			case joaat("WORLD_ANIMAL_DOG_BARKING_VICIOUS"):
 				return 777;
-			case -1221061763:
+			case joaat("WORLD_PLAYER_LOOKAT_POINT"):
 				return 1146;
 			case joaat("WORLD_HUMAN_SHOVEL_PUTDOWN"):
 				return 604;
 			case joaat("WORLD_ANIMAL_BEARBLACK_EATING_BERRIES"):
 				return 711;
-			case -1220768327:
+			case joaat("RANSACK_PROP_CHEST_MEDIUM_CLOSE"):
 				return 1634;
-			case -1220359483:
+			case joaat("CIG_CARD_LND_08"):
 				return 1058;
 			case joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_3"):
 				return 1831;
@@ -80814,51 +80814,51 @@ int func_1289(int iParam0, int iParam1)
 				return 1000;
 			case joaat("WORLD_ANIMAL_PIGEON_EAT_GROUND"):
 				return 663;
-			case -1210129979:
+			case joaat("CIG_CARD_VEH_07"):
 				return 1105;
 			case joaat("WORLD_HUMAN_BARTENDER_WHISKEY"):
 				return 2531;
-			case -1207380412:
+			case joaat("MP_JEWELRY_GRNET_BRACELET"):
 				return 2231;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1525;
-			case -1202418356:
+			case joaat("MP_HRLM_BRUSH_ROSEWOOD"):
 				return 2204;
-			case -1200719659:
+			case joaat("RANSACK_SHOP_VOL_0M80_0M50_2M0_TIGHT_ENVELOPE"):
 				return 1926;
 			case joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER"):
 				return 1450;
-			case -1198581396:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_3_OPEN"):
 				return 1676;
 			case joaat("PROP_PLAYER_TS_BURIED_GOLD"):
 				return 2418;
-			case -1197860878:
+			case joaat("MP_TCARD_FOUR_WANDS"):
 				return 2269;
-			case -1197296696:
+			case joaat("PROP_HUMAN_FOODPREP_STEW_ALWAYS"):
 				return 2520;
 			case joaat("WORLD_ANIMAL_DOG_POOPING"):
 				return 787;
-			case -1193554482:
+			case joaat("MP_JEWELRY_CORAL_DNGL_EARRING"):
 				return 2218;
-			case -1189729144:
+			case joaat("WB_INTERACTIVE_CAMPFIRE_CARAVAN"):
 				return 2613;
-			case -1189218250:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_LOW_R_ADLERS"):
 				return 1813;
 			case joaat("WORLD_HUMAN_LUMBER_PUT_DOWN_2"):
 				return 555;
 			case joaat("WORLD_ANIMAL_BIG_CAT_RESTING"):
 				return 723;
-			case -1184202704:
+			case joaat("RANSACK_VOLUME_1M0_0M8_2M0"):
 				return 1942;
 			case joaat("PROP_PLAYER_RE_DRUNK_CAMP_SIT"):
 				return 2427;
-			case -1183643148:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M0"):
 				return 1714;
 			case joaat("PROP_PLAYER_SIT_ROCKY_SEV"):
 				return 2411;
-			case -1183099274:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M45"):
 				return 1763;
-			case -1182867720:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED_MP_SYNC_GOTO"):
 				return 1991;
 			case joaat("WORLD_HUMAN_BOOK_TABLE_PICKUP_NO_BOOK"):
 				return 324;
@@ -80868,17 +80868,17 @@ int func_1289(int iParam0, int iParam1)
 				return 729;
 			case joaat("WORLD_ANIMAL_SPARROW_EATING_GROUND_FROM_GROUND"):
 				return 678;
-			case -1180722116:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_READ_BOOK_TRELAWNY"):
 				return 2395;
-			case -1179456295:
+			case joaat("WB_COLLECTOR_CHEST_JEWELRY"):
 				return 2310;
 			case joaat("WORLD_ANIMAL_OX_SLEEPING"):
 				return 845;
-			case -1178385980:
+			case joaat("MP_LOBBY_SCENARIO_15"):
 				return 2375;
 			case joaat("WORLD_CAMP_FIRE_LAY_BACK_GROUND"):
 				return 116;
-			case -1178068078:
+			case joaat("MP_BOTTLE_COGNAC"):
 				return 2177;
 			case joaat("WORLD_ANIMAL_RAM_GRAZING"):
 				return 862;
@@ -80890,13 +80890,13 @@ int func_1289(int iParam0, int iParam1)
 				return 774;
 			case joaat("WORLD_ANIMAL_PIG_SITTING"):
 				return 854;
-			case -1165468313:
+			case joaat("MP_COOP_LOBBY_STANDING_D"):
 				return 2355;
-			case -1163011310:
+			case joaat("WORLD_ANIMAL_SHARK_SWIM"):
 				return 693;
 			case joaat("WORLD_HUMAN_CLIPBOARD_PICKUP_NO_CLIPBOARD"):
 				return 194;
-			case -1157499939:
+			case joaat("PLAYER_CAMP_TOOL_MP"):
 				return 1440;
 			case joaat("PROP_CAMP_FIRE_SEAT_LOG_LEAN"):
 				return 83;
@@ -80904,7 +80904,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1806;
 			case joaat("CIG_CARD_PLT_12"):
 				return 1086;
-			case -1151196838:
+			case joaat("CIG_CARD_AML_06"):
 				return 984;
 			case joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M5_2M0"):
 				return 1899;
@@ -80912,11 +80912,11 @@ int func_1289(int iParam0, int iParam1)
 				return 1565;
 			case joaat("WORLD_HUMAN_WASHBOARD"):
 				return 615;
-			case -1147060153:
+			case joaat("WB_HUNTING_ZONE_COYOTE"):
 				return 2606;
-			case -1146648371:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_1M05"):
 				return 1751;
-			case -1145853489:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_0M70_MP_SYNC_GOTO"):
 				return 1995;
 			case joaat("PROP_CAMP_SEAT_CHAIR_CRAFT_POISON_KNIVES"):
 				return 96;
@@ -80924,15 +80924,15 @@ int func_1289(int iParam0, int iParam1)
 				return 211;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_HATCHET_HEWING"):
 				return 1560;
-			case -1138798454:
+			case joaat("RANSACK_REACH_UP_PUTDOWN_SHALLOW_150"):
 				return 1800;
-			case -1138127439:
+			case joaat("WB_HERB_GOLDEN_CURRANT"):
 				return 2547;
 			case joaat("WORLD_ANIMAL_DOG_BEGGING"):
 				return 778;
 			case joaat("RANSACK_ATTACHED_P_SINK02X"):
 				return 2107;
-			case -1136458681:
+			case joaat("MP_TCARD_SEVEN_PENTACLES"):
 				return 2291;
 			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE"):
 				return 326;
@@ -80940,17 +80940,17 @@ int func_1289(int iParam0, int iParam1)
 				return 866;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_PORCH"):
 				return 292;
-			case -1132730647:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_3_CLOSE"):
 				return 1675;
-			case -1127764515:
+			case joaat("LEVDES_SPAWN_PLANT_REDRASPBERRY"):
 				return 1396;
-			case -1126887526:
+			case joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_0M5_0M5_0M40"):
 				return 1901;
 			case joaat("WORLD_HUMAN_WAITING_IMPATIENT"):
 				return 237;
-			case -1123284534:
+			case joaat("CODE_BEAR_WARN"):
 				return 1111;
-			case -1123279596:
+			case joaat("WORLD_ANIMAL_ALLIGATOR_ATTACK_BOAR_LINK"):
 				return 892;
 			case joaat("WORLD_HUMAN_DRINKING"):
 				return 337;
@@ -80960,27 +80960,27 @@ int func_1289(int iParam0, int iParam1)
 				return 168;
 			case joaat("WORLD_HUMAN_BOOK_PICKUP_GROUND_MALE"):
 				return 320;
-			case -1109336222:
+			case joaat("WB_HERB_INDIAN_TOBACCO"):
 				return 2549;
 			case joaat("CIG_CARD_ACT_12"):
 				return 978;
 			case joaat("WORLD_CAMP_JAVIER_KNIFE"):
 				return 142;
-			case -1103385934:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_HOBO"):
 				return 2145;
-			case -1102276961:
+			case joaat("RANSACK_ATTACHED_P_DRESSER04X"):
 				return 2067;
-			case -1101772431:
+			case joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_4"):
 				return 1832;
-			case -1101156650:
+			case joaat("SC_WORLD_HUMAN_PUSH_BROOM_WORKING"):
 				return 2480;
 			case joaat("WORLD_HUMAN_LEAN_WALL_RIGHT"):
 				return 377;
 			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN"):
 				return 59;
-			case -1094880609:
+			case joaat("MP_COIN_1795_HLF_EAG"):
 				return 2192;
-			case -1093245144:
+			case joaat("WB_DISCO_BARREL_RIDER"):
 				return 1185;
 			case joaat("WORLD_PLAYER_CARCASS_CUT_1M80"):
 				return 1490;
@@ -80990,17 +80990,17 @@ int func_1289(int iParam0, int iParam1)
 				return 1473;
 			case joaat("RANSACK_ATTACHED_P_DRESSERVAL01X"):
 				return 2075;
-			case -1083595936:
+			case joaat("MP_HRLM_HAIRPIN_IVORY"):
 				return 2211;
 			case joaat("PROP_VEHICLE_SEAT_PASSENGER_TRAIN_TABLE"):
 				return 17;
-			case -1080500277:
+			case joaat("LEVDES_SPAWN_PLANT_WINTERGREENBERRY"):
 				return 1398;
-			case -1079442574:
+			case joaat("CNV_CAMP_CCHSH8_KEY_FEMALE_EXIT"):
 				return 904;
-			case -1076160454:
+			case joaat("CIG_CARD_HRS_04"):
 				return 1030;
-			case -1076083213:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_0M35"):
 				return 1605;
 			case joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3"):
 				return 1486;
@@ -81016,9 +81016,9 @@ int func_1289(int iParam0, int iParam1)
 				return 597;
 			case joaat("WORLD_HUMAN_STAND_GEN_NIGHT_SALOON"):
 				return 69;
-			case -1061440619:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_READ_BOOK_WATSON"):
 				return 2396;
-			case -1060784354:
+			case joaat("RANSACK_STRANGE_STATUES_STASH"):
 				return 1937;
 			case joaat("WORLD_HUMAN_CAULDRON_STIR"):
 				return 153;
@@ -81026,49 +81026,49 @@ int func_1289(int iParam0, int iParam1)
 				return 65;
 			case joaat("WORLD_ANIMAL_GOAT_DRINK_GROUND"):
 				return 813;
-			case -1055971713:
+			case joaat("RANSACK_ATTACHED_P_BAGGAGE01X_TRE_DR02"):
 				return 2014;
-			case -1055524328:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_HIGH"):
 				return 1814;
 			case joaat("WORLD_PLAYER_CHORES_SACK_PUT_DOWN_1"):
 				return 1515;
-			case -1054012177:
+			case joaat("PROP_PLAYER_SLEEP_BED"):
 				return 1481;
 			case joaat("RANSACK_ATTACHED_P_DRMEDCABINET01X"):
 				return 2076;
-			case -1053011105:
+			case joaat("WB_DISCO_FACE_TREES"):
 				return 1228;
-			case -1052423783:
+			case joaat("RANSACK_ATTACHED_P_WNT4_DRWDBL01X"):
 				return 2137;
-			case -1052361389:
+			case joaat("RANSACK_REACH_OVER_VOLUME_0M8_0M5_2M0"):
 				return 1891;
-			case -1052240577:
+			case joaat("LEVDES_SPAWN_REPEATERAMMO"):
 				return 1402;
 			case joaat("WORLD_ANIMAL_OWL_EATING_GROUND"):
 				return 654;
-			case -1050797783:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M80"):
 				return 1721;
-			case -1049130960:
+			case joaat("WB_DISCO_RUNAWAY_CORPSE"):
 				return 1287;
 			case joaat("WORLD_VEHICLE_EMPTY"):
 				return 1153;
-			case -1046233664:
+			case joaat("CNV_CAMP_CFUN4_UNCLE_EXIT"):
 				return 966;
-			case -1046204957:
+			case joaat("LEVDES_SPAWN_CHEST_MUD"):
 				return 1345;
 			case joaat("WORLD_ANIMAL_DEER_INJURED_ON_GROUND"):
 				return 770;
-			case -1045705869:
+			case joaat("CNV_CAMP_CFJM1_KEY_MALE_A_EXIT"):
 				return 928;
 			case joaat("WORLD_HUMAN_SIT_FALL_ASLEEP"):
 				return 382;
-			case -1038944417:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_RIGHT_CLOSE"):
 				return 1659;
 			case joaat("PROP_HUMAN_SEAT_BENCH_CONCERTINA_UPBEAT"):
 				return 171;
-			case -1033884716:
+			case joaat("WB_DISCO_BOOTS_NOTE_NOTE"):
 				return 1191;
-			case -1033847736:
+			case joaat("WB_DISCO_ANCIENT_URN"):
 				return 1180;
 			case joaat("WORLD_HUMAN_SMOKE_NERVOUS_STRESSED"):
 				return 406;
@@ -81078,67 +81078,67 @@ int func_1289(int iParam0, int iParam1)
 				return 1541;
 			case joaat("WORLD_HUMAN_BOOK_PICKUP_GROUND"):
 				return 319;
-			case -1025087526:
+			case joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PUTDOWN_TIGHT"):
 				return 1782;
-			case -1024987019:
+			case joaat("CNV_CAMP_CFUN3_KEY_MALE_EXIT"):
 				return 959;
-			case -1023377132:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_OPEN_B"):
 				return 1648;
-			case -1018887286:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M5_0M5_2M0_TIGHT_ENVELOPE"):
 				return 1962;
 			case joaat("WORLD_ANIMAL_OWL_DRINK_GROUND"):
 				return 653;
 			case joaat("WORLD_ANIMAL_PIG_DRINK_TROUGH"):
 				return 847;
-			case -1013470348:
+			case joaat("RANSACK_FALLBACK_PICKUP"):
 				return 1623;
-			case -1009498204:
+			case joaat("CIG_CARD_ACT_03"):
 				return 969;
 			case joaat("WORLD_ANIMAL_DOG_DIGGING"):
 				return 779;
 			case joaat("WORLD_HUMAN_LUMBER_PUT_DOWN_3"):
 				return 556;
-			case -1005995225:
+			case joaat("RANSACK_REACH_OVER_GENERIC_LETTER_PROMPT_0M5_0M5_2M0"):
 				return 1890;
-			case -1003656747:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M60"):
 				return 1758;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W15_24_H10_16_P_CS_NOTE01X"):
 				return 1538;
 			case joaat("WORLD_HUMAN_VAL_BANKTELLER"):
 				return 2421;
-			case -1001339526:
+			case joaat("CNV_CAMP_CFAM1_GEN_MALE_A_EXIT"):
 				return 910;
 			case joaat("WORLD_HUMAN_SADDLE_PICKUP_STAND"):
 				return 590;
-			case -998117314:
+			case joaat("LEVDES_SPAWN_RUM_BOTTLE"):
 				return 1406;
-			case -997313628:
+			case joaat("CODE_COUGAR_WARN"):
 				return 1112;
-			case -992371678:
+			case joaat("RANSACK_ATTACHED_P_VANITY01X_LEFT"):
 				return 2130;
-			case -991489073:
+			case joaat("WB_TREASURE_HUNTER_LONG_DISTANCE"):
 				return 2637;
-			case -990331833:
+			case joaat("MP_LOBBY_STANDING_C"):
 				return 2384;
-			case -990094658:
+			case joaat("WB_DISCO_DONKEY_LADY"):
 				return 1223;
-			case -988677954:
+			case joaat("WB_HERB_VIOLET_SNOWDROP"):
 				return 2557;
 			case joaat("WORLD_ANIMAL_CAT_DRINKING"):
 				return 745;
-			case -983691714:
+			case joaat("MP_JEWELRY_TOPAZ_NECKLACE"):
 				return 2246;
 			case joaat("LEVDES_SPAWN_BURDOCK_PICKUP"):
 				return 1340;
-			case -981693493:
+			case joaat("WB_DISCO_ONE_ROOM_CHURCH"):
 				return 1270;
 			case joaat("WORLD_HUMAN_SEAT_LEDGE_NEW"):
 				return 378;
 			case joaat("WORLD_HUMAN_SLING_PUT_DOWN"):
 				return 605;
-			case -978489601:
+			case joaat("MP_TCARD_THREE_PENTACLES"):
 				return 2303;
-			case -978328802:
+			case joaat("CNV_CAMP_CFJM4_GEN_MALE_B_EXIT"):
 				return 942;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_TRAIN"):
 				return 305;
@@ -81146,39 +81146,39 @@ int func_1289(int iParam0, int iParam1)
 				return 367;
 			case joaat("PROP_VEHICLE_WAGON_BOX_UNLOAD_1"):
 				return 444;
-			case -973462873:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_LOW_R"):
 				return 1812;
-			case -969856216:
+			case joaat("WB_BERRY_WINTERGREEN_BERRY"):
 				return 2538;
-			case -967483978:
+			case joaat("MP_BOTTLE_TENN_WHISKEY"):
 				return 2184;
-			case -966479426:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M80"):
 				return 1736;
 			case joaat("WORLD_ANIMAL_BIG_CAT_EATING"):
 				return 721;
-			case -942853270:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M8_0M5_2M0_TIGHT"):
 				return 1967;
-			case -937226192:
+			case joaat("WB_MUSHROOM_CHANTERELLES"):
 				return 2564;
-			case -933427717:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_1M75_W_LOOT"):
 				return 1788;
 			case joaat("PROP_HUMAN_SEAT_BENCH_HARMONICA_DOWNBEAT"):
 				return 176;
-			case -931052716:
+			case joaat("MP_LOBBY_STANDING_G"):
 				return 2388;
-			case -927747820:
+			case joaat("WB_FLOWER_CARDINAL_FLOWER_SINGLE"):
 				return 2337;
-			case -927684526:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M0"):
 				return 1709;
-			case -924513320:
+			case joaat("PROP_PLAYER_OPEN_FOOTLOCKER_WAGON"):
 				return 1460;
 			case joaat("WORLD_PLAYER_CHORES_MILK_JUG_PUT_DOWN_1"):
 				return 1506;
-			case -921337927:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M80"):
 				return 1717;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_GUITAR"):
 				return 187;
-			case -916202951:
+			case joaat("MP_COIN_1787_CENT_TKN"):
 				return 2186;
 			case joaat("WORLD_HUMAN_SKETCHBOOK_PUT_DOWN_GROUND"):
 				return 399;
@@ -81188,119 +81188,119 @@ int func_1289(int iParam0, int iParam1)
 				return 287;
 			case joaat("WORLD_ANIMAL_PARROT_ON_PERCH"):
 				return 658;
-			case -912234551:
+			case joaat("WB_DISCO_OBJECT_IN_TREE"):
 				return 1263;
 			case joaat("WORLD_ANIMAL_MOOSE_DRINK_GROUND"):
 				return 835;
-			case -907007035:
+			case joaat("MP_HRLM_BRUSH_ROSEWOOD_NG"):
 				return 2205;
-			case -906256657:
+			case joaat("WB_DISCO_OLD_RAILROAD_CAMP"):
 				return 1268;
 			case joaat("WORLD_ANIMAL_DOG_BARKING_GROUND"):
 				return 775;
 			case joaat("WORLD_ANIMAL_DOG_HOWLING_SITTING"):
 				return 784;
-			case -895989882:
+			case joaat("MP_LOBBY_STANDING_E"):
 				return 2386;
-			case -895307070:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M5_0M5_2M0"):
 				return 1961;
-			case -894693642:
+			case joaat("WORLD_ANIMAL_FISH_FLEE"):
 				return 690;
 			case joaat("PROP_CAMP_JAVIER_SEAT_CRATE_BRUSH_HAT"):
 				return 90;
-			case -892220594:
+			case joaat("LEVDES_SPAWN_PISTOLAMMO"):
 				return 1386;
-			case -891620875:
+			case joaat("CIG_CARD_LND_07"):
 				return 1057;
-			case -890669940:
+			case joaat("SC_WORLD_HUMAN_STAND_ANTICIPATE"):
 				return 2483;
-			case -886679600:
+			case joaat("WB_INTERACTIVE_CAMPFIRE_TWOPOINT"):
 				return 2617;
 			case joaat("WORLD_ANIMAL_BAT_HANGING"):
 				return 627;
 			case joaat("WORLD_ANIMAL_BOAR_INJURED_ON_GROUND"):
 				return 728;
-			case -874584587:
+			case joaat("CODE_WOLF_WARN"):
 				return 1118;
-			case -874559555:
+			case joaat("MP_JEWELRY_QN_DMND_EARRING"):
 				return 2241;
 			case joaat("WORLD_ANIMAL_SEAGULL_EAT_GROUND_FROM_GROUND"):
 				return 671;
-			case -871818204:
+			case joaat("WB_EGG_NEST_SPOONBILL"):
 				return 2328;
 			case joaat("WORLD_ANIMAL_BEARBLACK_RESTING"):
 				return 714;
 			case joaat("WORLD_ANIMAL_BIRD_ON_PERCH"):
 				return 629;
-			case -867409802:
+			case joaat("LEVDES_SPAWN_MEDICINE_FTY"):
 				return 1379;
 			case joaat("WORLD_HUMAN_COFFEE_DRINK_WIP"):
 				return 333;
-			case -866489661:
+			case joaat("CNV_CAMP_CFJM3_GEN_MALE_A_EXIT"):
 				return 936;
-			case -865716008:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M5_0M8_2M0"):
 				return 1965;
 			case joaat("WORLD_HUMAN_HAMMER_GROUND"):
 				return 545;
 			case joaat("RANSACK_ATTACHED_P_DESK03X"):
 				return 2056;
-			case -862067678:
+			case joaat("WORLD_HUMAN_DRINKING_DRUNK_MOONSHINE"):
 				return 413;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_SMOKING"):
 				return 372;
-			case -859000955:
+			case joaat("MP_BOTTLE_IRISH_WHISKEY"):
 				return 2179;
-			case -854999443:
+			case joaat("WB_DISCO_ABANDONED_TRADING_POST"):
 				return 1174;
-			case -854031251:
+			case joaat("RANSACK_ATTACHED_DRAWER_SINGLE_3"):
 				return 1835;
-			case -853171193:
+			case joaat("WB_HERB_MILKWEED_SINGLE"):
 				return 2551;
-			case -851419454:
+			case joaat("CNV_CAMP_CFUN3_GEN_MALE_C_EXIT"):
 				return 957;
 			case joaat("PROP_HUMAN_SEAT_NO_BACK_COLLECTION"):
 				return 311;
-			case -850484515:
+			case joaat("CNV_CAMP_CFAM1_KEY_MALE_B_EXIT"):
 				return 914;
-			case -848301249:
+			case joaat("KNOCK_BACK"):
 				return 1122;
 			case joaat("WORLD_ANIMAL_EAGLE_EATING_GROUND_FROM_GROUND"):
 				return 645;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_RESTING"):
 				return 569;
-			case -844362279:
+			case joaat("SCRIPT_RE_DUEL_BOASTER_FRIEND"):
 				return 2441;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_1_GINNED"):
 				return 522;
-			case -842594626:
+			case joaat("WB_DISCO_RAILROAD_GRAVESTONE"):
 				return 1282;
 			case joaat("WORLD_ANIMAL_GOAT_RESTING_DOMESTIC"):
 				return 819;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_WHISKEY"):
 				return 306;
-			case -832608606:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_2_OPEN"):
 				return 1674;
 			case joaat("STAND"):
 				return 1134;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_LOAD_1"):
 				return 456;
-			case -826079709:
+			case joaat("WB_DISCO_TREE_TRUNK_BOAT"):
 				return 1306;
 			case joaat("WORLD_HUMAN_FIDDLE_PUTDOWN"):
 				return 201;
 			case joaat("WORLD_CAMP_KIERAN_TIED_UP_COLD"):
 				return 144;
-			case -823864913:
+			case joaat("CNV_CAMP_CFUN1_KEY_MALE_A_EXIT"):
 				return 948;
-			case -821795036:
+			case joaat("WB_DISCO_PIRATE_SKELETON"):
 				return 1278;
 			case joaat("WORLD_PLAYER_KNOCK_DOOR"):
 				return 1550;
-			case -815678773:
+			case joaat("LEVDES_SPAWN_DYNAMITE"):
 				return 1359;
 			case joaat("PROP_HUMAN_SEAT_BENCH_TIRED"):
 				return 282;
-			case -814861523:
+			case joaat("WORLD_HUMAN_RE_LOST_DRUNK_SLEEP"):
 				return 2448;
 			case joaat("PROP_HUMAN_SEAT_BENCH_BACK"):
 				return 279;
@@ -81310,51 +81310,51 @@ int func_1289(int iParam0, int iParam1)
 				return 1564;
 			case joaat("PROP_CAMP_SEAT_CHAIR_STEW_LAZY"):
 				return 99;
-			case -806233255:
+			case joaat("MP_TCARD_EIGHT_SWORDS"):
 				return 2260;
-			case -805024148:
+			case joaat("MP_ARROWHEAD_RAW"):
 				return 2172;
 			case joaat("WORLD_HUMAN_BROOM_RESTING"):
 				return 496;
-			case -804470066:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M60"):
 				return 1735;
-			case -801732229:
+			case joaat("MP_TCARD_NINE_PENTACLES"):
 				return 2279;
-			case -799755351:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M45"):
 				return 1744;
-			case -796563359:
+			case joaat("WB_DISCO_SCARECROW_1"):
 				return 1288;
-			case -794798046:
+			case joaat("PROP_HUMAN_SOAK_SKINS"):
 				return 621;
-			case -794209644:
+			case joaat("RANSACK_ATTACHED_P_GUNCABINET02X"):
 				return 2082;
-			case -792704004:
+			case joaat("WB_HERB_OLEANDER_SAGE"):
 				return 2552;
-			case -791359907:
+			case joaat("RANSACK_ATTACHED_P_TABLEBEDSIDE02X"):
 				return 2114;
-			case -787927293:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARD02X_RCSC2"):
 				return 2048;
 			case joaat("WORLD_ANIMAL_COYOTE_HOWLING_SITTING"):
 				return 761;
-			case -787460071:
+			case joaat("SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING"):
 				return 2468;
-			case -784638420:
+			case joaat("WORLD_HUMAN_LEAN_BACK_WALL_DRINKING_MOONSHINE"):
 				return 415;
 			case joaat("WORLD_HUMAN_LEAN_RAILING"):
 				return 365;
-			case -777481615:
+			case joaat("RANSACK_FALLBACK_PICKUP_CROUCH"):
 				return 1624;
-			case -774297062:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M60"):
 				return 1729;
-			case -773079973:
+			case joaat("CIG_CARD_HRS_07"):
 				return 1033;
 			case joaat("PROP_HUMAN_SEAT_BENCH_HARMONICA_UPBEAT"):
 				return 177;
 			case joaat("WORLD_ANIMAL_HORSE_SLEEPING_DOMESTIC"):
 				return 832;
-			case -768776184:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR"):
 				return 258;
-			case -768523571:
+			case joaat("WB_DISCO_ABANDONED_WELL"):
 				return 1175;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1520;
@@ -81364,21 +81364,21 @@ int func_1289(int iParam0, int iParam1)
 				return 2530;
 			case joaat("WORLD_HUMAN_SADDLE_PUT_DOWN_STAND"):
 				return 593;
-			case -757597222:
+			case joaat("CIG_CARD_GUN_07"):
 				return 1021;
-			case -756861846:
+			case joaat("MP_TCARD_KNIGHT_WANDS"):
 				return 2277;
-			case -753681029:
+			case joaat("WB_DISCO_HERMIT_WOMAN"):
 				return 1242;
-			case -751486804:
+			case joaat("PROP_PLAYER_REHR_SACK_STASH"):
 				return 2433;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_GROOMING_POSH"):
 				return 289;
-			case -749434233:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M80"):
 				return 1759;
-			case -744863883:
+			case joaat("WORLD_PLAYER_PLACE_BAIT_POTENT"):
 				return 1583;
-			case -742723944:
+			case joaat("LEVDES_SPAWN_MOONSHINE_FLASK"):
 				return 1383;
 			case joaat("LEVDES_SPAWN_HUNTER_PICKUPS"):
 				return 1373;
@@ -81388,47 +81388,47 @@ int func_1289(int iParam0, int iParam1)
 				return 1514;
 			case joaat("CIG_CARD_PAM_11"):
 				return 1073;
-			case -735391720:
+			case joaat("MP_HRLM_BRUSH_GOATHAIR"):
 				return 2202;
-			case -733157857:
+			case joaat("RANSACK_ATTACHED_DD_1234"):
 				return 1826;
-			case -728789150:
+			case joaat("MP_TCARD_KNIGHT_SWORDS"):
 				return 2276;
 			case joaat("PROP_CAMP_SEAT_CHAIR_TABLE_STEW_LAZY"):
 				return 102;
-			case -726569397:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M45"):
 				return 1734;
 			case joaat("WORLD_HUMAN_LEAN_WALL_LEFT"):
 				return 376;
-			case -717884433:
+			case joaat("PROP_HUMAN_FOODPREP_STEW"):
 				return 2519;
-			case -717379283:
+			case joaat("MP_COIN_1800_GLD_DLR"):
 				return 2197;
 			case joaat("WORLD_HUMAN_SIT_GROUND_READING_BOOK"):
 				return 389;
-			case -714624881:
+			case joaat("MP_TCARD_SIX_PENTACLES"):
 				return 2295;
 			case joaat("WORLD_CAMP_JACK_ES_BUCKET_FILL"):
 				return 123;
 			case joaat("CODE_HUMAN_COWER"):
 				return 1113;
-			case -711738013:
+			case joaat("CNV_CAMP_CFAM1_GEN_MALE_B_EXIT"):
 				return 911;
 			case joaat("WORLD_HUMAN_BROOM_PICKUP_NO_BROOM"):
 				return 494;
-			case -708846055:
+			case joaat("PULLOUT_PROP_LOCKBOX_SML_0M0_0M85"):
 				return 1592;
 			case joaat("WORLD_HUMAN_TRUMPET"):
 				return 231;
-			case -704010221:
+			case joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_0M35"):
 				return 1619;
-			case -703489066:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_HOBO"):
 				return 2150;
-			case -700440957:
+			case joaat("CIG_CARD_VEH_06"):
 				return 1104;
-			case -700392915:
+			case joaat("CNV_CAMP_CFBW1_GEN_MALE_B_EXIT"):
 				return 915;
-			case -700364382:
+			case joaat("TS_VAL_HIDEMAP_PIECE_04"):
 				return 1164;
 			case joaat("WORLD_VEHICLE_EMPTY_NO_ANIMALS"):
 				return 1154;
@@ -81436,87 +81436,87 @@ int func_1289(int iParam0, int iParam1)
 				return 472;
 			case joaat("WORLD_HUMAN_STAND_GEN_NIGHT"):
 				return 68;
-			case -698656928:
+			case joaat("LEVDES_SPAWN_TEST_GENERIC_LETTER_COLOR"):
 				return 1419;
-			case -697038446:
+			case joaat("CIG_CARD_GRL_05"):
 				return 1007;
-			case -695748117:
+			case joaat("WB_DISCO_CONESTOGA_WAGON"):
 				return 1207;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_WORKING"):
 				return 570;
-			case -686858613:
+			case joaat("WB_DIG_BURIED_HEIRLOOM"):
 				return 2313;
 			case joaat("WORLD_HUMAN_TWNREC_SCRUB_BLOOD_FLOOR_BUCKET"):
 				return 614;
 			case joaat("WORLD_ANIMAL_BEARBLACK_FORAGING_GROUND"):
 				return 712;
-			case -683445975:
+			case joaat("CNV_CAMP_CFUN3_UNCLE_EXIT"):
 				return 960;
-			case -682877430:
+			case joaat("WB_HUNTING_ZONE_BIG_HORN_RAM"):
 				return 2599;
 			case joaat("PROP_VEHICLE_WAGON_BOX_UNLOAD_2"):
 				return 446;
-			case -675056487:
+			case joaat("SC_WORLD_HUMAN_SIT_GROUND_PASSED_OUT"):
 				return 2482;
 			case joaat("WORLD_ANIMAL_PIGEON_BATHING"):
 				return 660;
-			case -673018991:
+			case joaat("MP_TCARD_NINE_SWORDS"):
 				return 2280;
 			case joaat("WORLD_ANIMAL_LIONMANGY_INJURED_ON_GROUND"):
 				return 834;
 			case joaat("WORLD_ANIMAL_EAGLE_DRINK_GROUND"):
 				return 643;
-			case -667943088:
+			case joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PICKUP"):
 				return 1912;
 			case joaat("WORLD_HAZARD_GATOR_PIT"):
 				return 1142;
 			case joaat("WORLD_PLAYER_CHORES_FEEDBAG_PICKUP"):
 				return 1503;
-			case -665744599:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M5_0M8_2M0"):
 				return 1952;
 			case joaat("MP_LOBBY_WORLD_HUMAN_STERNGUY_IDLES"):
 				return 275;
-			case -660448084:
+			case joaat("LEVDES_SPAWN_SUPER_TONIC"):
 				return 1417;
 			case joaat("RANSACK_ATTACHED_P_ARMOIR06X"):
 				return 2006;
-			case -658509002:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_2_OPEN"):
 				return 1666;
 			case joaat("WORLD_PLAYER_STR_GEN_BSMT_PEEK"):
 				return 2423;
-			case -652873177:
+			case joaat("CIG_CARD_ACT_06"):
 				return 972;
-			case -651491934:
+			case joaat("RANSACK_ATTACHED_P_ARMOIREREGAL01"):
 				return 2009;
-			case -651280676:
+			case joaat("LEVDES_SPAWN_CHEST_WATER"):
 				return 1348;
 			case joaat("WORLD_ANIMAL_EAGLE_EATING_GROUND"):
 				return 644;
-			case -647907276:
+			case joaat("MP_ARROWHEAD_OBSIDIAN"):
 				return 2170;
-			case -647854556:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M60"):
 				return 1764;
 			case joaat("WORLD_ANIMAL_DOG_GUARD_GROWL"):
 				return 782;
-			case -643955342:
+			case joaat("RANSACK_ATTACHED_DS_234"):
 				return 1840;
 			case joaat("WORLD_ANIMAL_PIGEON_ON_PERCH"):
 				return 666;
 			case joaat("PROP_CAMP_SEAT_CHAIR_STEW_FALLBACK"):
 				return 98;
-			case -639473151:
+			case joaat("RANSACK_ATTACHED_CHEST_LARGE_MP_SYNC_GOTO"):
 				return 1977;
 			case joaat("WORLD_CAMP_LENNY_LEAN_READING"):
 				return 147;
 			case joaat("WORLD_PLAYER_CHORES_BUCKET_POUR_HIGH"):
 				return 1499;
-			case -631907709:
+			case joaat("CNV_CAMP_CFJM4_KEY_MALE_EXIT"):
 				return 945;
-			case -631314673:
+			case joaat("MP_LOBBY_STANDING_H"):
 				return 2389;
-			case -628899594:
+			case joaat("WB_DISCO_EARLY_SETTLERS"):
 				return 1225;
-			case -627795312:
+			case joaat("RANSACK_SHOP_VOL_1M0_0M50_2M0"):
 				return 1927;
 			case joaat("WORLD_HUMAN_NEWSPAPER_PICKUP_NO_NEWSPAPER"):
 				return 215;
@@ -81524,15 +81524,15 @@ int func_1289(int iParam0, int iParam1)
 				return 792;
 			case joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_A"):
 				return 2505;
-			case -620648438:
+			case joaat("CIG_CARD_VEH_09"):
 				return 1107;
-			case -619465711:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M60"):
 				return 1697;
-			case -618551300:
+			case joaat("WB_PICKUP_COLLECTIBLE_BOTTLE"):
 				return 2348;
-			case -613801712:
+			case joaat("RANSACK_ATTACHED_DRAWER_SINGLE_2"):
 				return 1834;
-			case -612900221:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_DRINKING_MOONSHINE"):
 				return 409;
 			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_SI_WANTED_JAVIER01X"):
 				return 1548;
@@ -81540,71 +81540,71 @@ int func_1289(int iParam0, int iParam1)
 				return 329;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_OLDPAPER1889"):
 				return 1537;
-			case -602690338:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M45"):
 				return 1724;
 			case joaat("WORLD_HUMAN_CONCERTINA_PICKUP_NO_CONCERTINA"):
 				return 197;
-			case -600529453:
+			case joaat("CNV_CAMP_CFJM2_KEY_MALE_B_EXIT"):
 				return 934;
-			case -599685999:
+			case joaat("LEVDES_SPAWN_SNAKEOIL_FTY"):
 				return 1412;
-			case -597162951:
+			case joaat("WORLD_PLAYER_RANSACK_PICKUP_MONEYBAG_FRONT_TAKE_LEFT_SHOULDER"):
 				return 1802;
-			case -588400115:
+			case joaat("WB_HUNTING_ZONE_PRONGHORN"):
 				return 2611;
-			case -587941614:
+			case joaat("MP_LOBBY_SEATED_B"):
 				return 2377;
-			case -585131916:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_CULTURE"):
 				return 2149;
-			case -585021296:
+			case joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_0M35"):
 				return 1601;
-			case -584876158:
+			case joaat("MP_MOONSHINE_BAND_RESTING_GUITAR"):
 				return 249;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_UNLOAD_3"):
 				return 464;
-			case -584495003:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M80"):
 				return 1746;
 			case joaat("CIG_CARD_INV_12"):
 				return 1050;
-			case -582384899:
+			case joaat("WB_DISCO_POTS_TREE"):
 				return 1279;
 			case joaat("WORLD_HUMAN_GUITAR_PICKUP_NO_GUITAR"):
 				return 206;
 			case joaat("WORLD_HUMAN_COAL_SACK_PICKUP_1"):
 				return 516;
-			case -580988095:
+			case joaat("CIG_CARD_HRS_06"):
 				return 1032;
-			case -580632686:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_MID_CLOSE"):
 				return 1651;
-			case -580247852:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_HIGH_OPEN"):
 				return 1654;
-			case -574515357:
+			case joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_B"):
 				return 2514;
-			case -563929268:
+			case joaat("RANSACK_ATTACHED_P_COUNTERDOCTOR01X"):
 				return 2045;
-			case -561237812:
+			case joaat("WORLD_CAMP_GUARD_COLD_FEMALE"):
 				return 162;
-			case -561035247:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M60"):
 				return 1745;
-			case -557333917:
+			case joaat("MP_MOONSHINE_BAND_RESTING_BANJO"):
 				return 246;
-			case -557148012:
+			case joaat("MP_ARROWHEAD_CHIPPED"):
 				return 2166;
-			case -556299774:
+			case joaat("RANSACK_PROP_CHEST_MEDIUM_OPEN"):
 				return 1635;
-			case -552730006:
+			case joaat("RANSACK_SHOP_VOL_0M80_0M50_2M0"):
 				return 1924;
-			case -552438855:
+			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE03BX"):
 				return 2121;
-			case -551561379:
+			case joaat("LEVDES_SPAWN_REVOLVERAMMO_OPENED"):
 				return 1404;
-			case -547791841:
+			case joaat("CIG_CARD_PAM_09"):
 				return 1071;
 			case joaat("WORLD_ANIMAL_SEAGULL_ON_PERCH"):
 				return 672;
 			case joaat("WORLD_HUMAN_BARCUSTOMER"):
 				return 2526;
-			case -545032729:
+			case joaat("CNV_CAMP_CFUN2_GEN_MALE_B_EXIT"):
 				return 951;
 			case joaat("WORLD_ANIMAL_PELICAN_ON_PERCH"):
 				return 659;
@@ -81614,55 +81614,55 @@ int func_1289(int iParam0, int iParam1)
 				return 619;
 			case joaat("PROP_HUMAN_SEAT_BENCH_JAW_HARP"):
 				return 178;
-			case -537909116:
+			case joaat("WB_DISCO_OVERTURNED_HEARSE"):
 				return 1271;
-			case -537792622:
+			case joaat("WB_ORCHID_QUEENS"):
 				return 2576;
-			case -537565063:
+			case joaat("WB_DISCO_FRANKENSTEIN_BOOK"):
 				return 1234;
-			case -535856712:
+			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE05BX_R"):
 				return 2125;
 			case joaat("WORLD_HUMAN_DRUNK_BRACE_WALL_NO_VOMIT"):
 				return 342;
-			case -529258369:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_OPEN"):
 				return 1658;
 			case joaat("WORLD_PLAYER_INSPECT_PAMPHLET_80CM_PAPER_W11_5_H20_5_S_INV_PAMPPOTHORSE01X"):
 				return 1540;
-			case -521386873:
+			case joaat("PULLOUT_PROP_CHEST_MED_0M0"):
 				return 1584;
-			case -521186997:
+			case joaat("MP_TCARD_KING_PENTACLES"):
 				return 2271;
-			case -519544825:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_3_OPEN"):
 				return 1668;
-			case -518278086:
+			case joaat("CIG_CARD_VEH_03"):
 				return 1101;
 			case joaat("WORLD_ANIMAL_FOX_INJURED_ON_GROUND"):
 				return 809;
-			case -516851305:
+			case joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_B_RIGHT"):
 				return 2111;
 			case joaat("WORLD_HUMAN_SADDLE_PUT_DOWN_GROUND"):
 				return 592;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_PLAY_KNIFE"):
 				return 291;
-			case -507789686:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_OPEN_A"):
 				return 1647;
-			case -507776464:
+			case joaat("PROP_PLAYER_CASH_REGISTER_CLERK_OPENED_BENCHMARK_TEST"):
 				return 1577;
-			case -502985130:
+			case joaat("RANSACK_REACH_OVER_PICKUP_LH_1M5_0M5_2M0"):
 				return 1792;
 			case joaat("WORLD_HUMAN_TRUMPET_PICKUP_NO_TRUMPET"):
 				return 233;
-			case -501924978:
+			case joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_0M70"):
 				return 1620;
-			case -501791585:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_1M05"):
 				return 1713;
 			case joaat("WORLD_HUMAN_SAW_WOOD"):
 				return 594;
 			case joaat("WORLD_HUMAN_TRUMPET_PICKUP"):
 				return 232;
-			case -493351432:
+			case joaat("PROP_HITCHINGTREE"):
 				return 1129;
-			case -491792868:
+			case joaat("PROP_PLAYER_TREASURE_HUNTER_ROCK_STASH_NEW_THCHAINS"):
 				return 2425;
 			case joaat("WORLD_HUMAN_HAMMER_WALL"):
 				return 548;
@@ -81672,29 +81672,29 @@ int func_1289(int iParam0, int iParam1)
 				return 1576;
 			case joaat("WORLD_HUMAN_SEAT_LEDGE_JAW_HARP"):
 				return 223;
-			case -487173195:
+			case joaat("MP_HRLM_HAIRPIN_JADE"):
 				return 2212;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_READING_TRAIN"):
 				return 296;
-			case -486383894:
+			case joaat("RANSACK_ATTACHED_P_DRESSER05X"):
 				return 2068;
-			case -486123777:
+			case joaat("MP_JEWELRY_PERS_TURQ_RING"):
 				return 2239;
-			case -482419528:
+			case joaat("RANSACK_CHIMNEY_SEARCH_NO_LOOT_1M10"):
 				return 1599;
-			case -479194009:
+			case joaat("WB_DISCO_ALCHEMIST"):
 				return 1176;
-			case -478288727:
+			case joaat("LEVDES_SPAWN_APPLE"):
 				return 1327;
-			case -476352109:
+			case joaat("WB_BERRY_RED_RASPBERRY"):
 				return 2537;
 			case joaat("PROP_PLAYER_ROB_CASH_REGISTER"):
 				return 1476;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_CRAB_TRAP"):
 				return 109;
-			case -474853821:
+			case joaat("RANSACK_ATTACHED_P_SEWINGMACHINE02X"):
 				return 2098;
-			case -474301784:
+			case joaat("MP_COIN_1800_HLF_DIME"):
 				return 2199;
 			case joaat("WORLD_HUMAN_LEAN_READ_PAPER_TRAIN_PLANS"):
 				return 210;
@@ -81702,37 +81702,37 @@ int func_1289(int iParam0, int iParam1)
 				return 2522;
 			case joaat("PROP_HUMAN_REPAIR_WAGON_WHEEL_ON_LARGE"):
 				return 426;
-			case -471061804:
+			case joaat("RANSACK_REACH_IN_PUTDOWN_SHALLOW_45"):
 				return 1778;
-			case -470020262:
+			case joaat("RANSACK_STRANGE_STATUES_VOL_PICKUP"):
 				return 1801;
 			case joaat("CIG_CARD_ACT_10"):
 				return 976;
-			case -466067436:
+			case joaat("CIG_CARD_HRS_12"):
 				return 1038;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_3_RAW"):
 				return 527;
-			case -459889340:
+			case joaat("MP_TCARD_FOUR_PENTACLES"):
 				return 2267;
 			case joaat("PROP_HUMAN_SEAT_BENCH_HARMONICA"):
 				return 175;
 			case joaat("WORLD_ANIMAL_COYOTE_SNIFFING_GROUND"):
 				return 765;
-			case -456902200:
+			case joaat("MP_HRLM_COMB_BOXWOOD"):
 				return 2206;
-			case -455464142:
+			case joaat("EA_WORLD_HUMAN_SLEDGEHAMMER_NEW"):
 				return 2457;
-			case -450903034:
+			case joaat("CNV_CAMP_CFJE3_GEN_MALE_EXIT"):
 				return 919;
-			case -449869761:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_LOW_LEFT"):
 				return 1822;
-			case -449580942:
+			case joaat("WB_CAMPFIRE_SMALL"):
 				return 2589;
-			case -449416767:
+			case joaat("RANSACK_ATTACHED_P_TABLEBRA01X_LEFT"):
 				return 2115;
 			case joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"):
 				return 1477;
-			case -446987974:
+			case joaat("WB_DISCO_STUFFED_GORILLA"):
 				return 1298;
 			case joaat("WORLD_PLAYER_PICKUP_MONEY_STACK_45CM"):
 				return 1555;
@@ -81744,25 +81744,25 @@ int func_1289(int iParam0, int iParam1)
 				return 763;
 			case joaat("WORLD_HUMAN_INSPECT"):
 				return 550;
-			case -438207932:
+			case joaat("RANSACK_ATTACHED_P_BUFFET01X"):
 				return 2017;
-			case -437418925:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M25_0M5_2M0"):
 				return 1971;
-			case -432820749:
+			case joaat("RANSACK_ATTACHED_P_TABLEBRA01X_RIGHT"):
 				return 2116;
-			case -428719204:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M45"):
 				return 1728;
 			case joaat("WORLD_HUMAN_SKETCHBOOK_PICKUP_GROUND"):
 				return 396;
-			case -426093511:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M60"):
 				return 1720;
-			case -424836434:
+			case joaat("WB_DISCO_GRAVESTONE_TREE"):
 				return 1240;
-			case -423036889:
+			case joaat("CIG_CARD_AML_04"):
 				return 982;
-			case -422823195:
+			case joaat("WB_EGG_NEST_HERON"):
 				return 2326;
-			case -419231450:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_RIGHT_OPEN"):
 				return 1660;
 			default:
 				break;
@@ -81776,67 +81776,67 @@ int func_1289(int iParam0, int iParam1)
 	{
 		switch (iParam0)
 		{
-			case -417265460:
+			case joaat("RANSACK_VOLUME_REACH_IN_PICKUP_1M70_0M80_2M0"):
 				return 1950;
-			case -417141972:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARD02X"):
 				return 2047;
-			case -414211333:
+			case joaat("RANSACK_COACH_BOOT_WIP"):
 				return 1881;
 			case joaat("CIG_CARD_SPT_10"):
 				return 1096;
 			case joaat("WORLD_HUMAN_BOOK_PUT_DOWN_GROUND"):
 				return 322;
-			case -410747054:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_1M75_NO_LOOT"):
 				return 1787;
 			case joaat("WORLD_ANIMAL_EAGLE_EATING_PERCHED"):
 				return 646;
-			case -408198703:
+			case joaat("CNV_CAMP_CFJM3_KEY_MALE_B_EXIT"):
 				return 940;
-			case -407546843:
+			case joaat("WORLD_PLAYER_RSC_GIVE_MEDICINE"):
 				return 2455;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_CLEAN_PISTOL"):
 				return 111;
-			case -402120378:
+			case joaat("MINIGAME_DOMINOES_PLAYER"):
 				return 2460;
 			case joaat("WORLD_HUMAN_SEAT_STEPS"):
 				return 379;
-			case -401484807:
+			case joaat("CIG_CARD_SPT_03"):
 				return 1089;
-			case -399776159:
+			case joaat("LEVDES_SPAWN_BULLET_CASING_SG_SIDE"):
 				return 1336;
 			case joaat("PROP_VEHICLE_WAGON_COTTONBALE_UNLOAD_2"):
 				return 451;
 			case joaat("PROP_CAMP_JACK_ES_SLEEP_BED_PILLOW_LEFT"):
 				return 276;
-			case -391226571:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_0M80_MP_SYNC_GOTO"):
 				return 1983;
-			case -391101597:
+			case joaat("CIG_CARD_VEH_05"):
 				return 1103;
-			case -389213546:
+			case joaat("WB_ORCHID_SPIDER"):
 				return 2579;
-			case -387600931:
+			case joaat("SCRIP_REMC_RET_MALE_A_POSE2"):
 				return 2436;
-			case -386607107:
+			case joaat("WB_RARE_FISHING_SPOT"):
 				return 2624;
-			case -386395807:
+			case joaat("MP_LOBBY_SCENARIO_05"):
 				return 2365;
 			case joaat("PROP_VEHICLE_WAGON_CHICKEN_CRATE_UNLOAD_1"):
 				return 448;
 			case joaat("WORLD_HUMAN_BASKET_PICKUP"):
 				return 484;
-			case -381107352:
+			case joaat("RANSACK_ATTACHED_P_DRESSER06X_L"):
 				return 2069;
-			case -380929329:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_TIGHT"):
 				return 1859;
-			case -380472724:
+			case joaat("MP_BOTTLE_CYPRUS_BRANDY"):
 				return 2178;
-			case -380363474:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_1M05"):
 				return 1703;
-			case -378977910:
+			case joaat("RANSACK_SHOP_VOL_1M10_0M50_2M0"):
 				return 1930;
-			case -375111022:
+			case joaat("MP_JEWELRY_CORAL_RING"):
 				return 2219;
-			case -371405990:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M45"):
 				return 1719;
 			case joaat("WORLD_PLAYER_SIT_GROUND_GENERIC"):
 				return 72;
@@ -81848,43 +81848,43 @@ int func_1289(int iParam0, int iParam1)
 				return 791;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_SEWING"):
 				return 432;
-			case -360221901:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_1M05"):
 				return 1742;
-			case -360083955:
+			case joaat("WB_FLOWER_CARDINAL_FLOWER"):
 				return 2336;
-			case -359720889:
+			case joaat("PULLOUT_PROP_LOCKBOX_MED_0M0_0M80"):
 				return 1588;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WALL_DRINKING"):
 				return 351;
-			case -357210169:
+			case joaat("WB_DISCO_FROZEN_SETTLER"):
 				return 1235;
-			case -349377813:
+			case joaat("LEVDES_SPAWN_ARROWAMMO"):
 				return 1328;
-			case -349252218:
+			case joaat("MP_LOBBY_SEATED_C"):
 				return 2378;
 			case joaat("PROP_PLAYER_TREASURE_HUNTER_ROCK_STASH"):
 				return 2417;
-			case -344807332:
+			case joaat("WB_FLOWER_WISTERIA_SINGLE"):
 				return 2347;
 			case joaat("WORLD_HUMAN_BANJO_PICKUP_NO_BANJO"):
 				return 190;
 			case joaat("WORLD_ANIMAL_WOLF_HOWLING"):
 				return 883;
-			case -339175540:
+			case joaat("CIG_CARD_ACT_05"):
 				return 971;
-			case -333273965:
+			case joaat("WB_PICKUP_COLLECTIBLE_TAROT_CARD"):
 				return 2351;
 			case joaat("WORLD_ANIMAL_MOOSE_GRAZING"):
 				return 838;
 			case joaat("WORLD_HUMAN_FAN"):
 				return 344;
-			case -330645385:
+			case joaat("MP_HRLM_COMB_TORTOISESHELL"):
 				return 2209;
-			case -329962264:
+			case joaat("WB_HUNTING_ZONE_BOAR"):
 				return 2601;
-			case -329609996:
+			case joaat("WORLD_ANIMAL_FISH_IDLE"):
 				return 691;
-			case -327573307:
+			case joaat("WB_ORCHID_CLAMSHELL"):
 				return 2569;
 			case joaat("WORLD_HUMAN_STAND_FISHING"):
 				return 607;
@@ -81892,21 +81892,21 @@ int func_1289(int iParam0, int iParam1)
 				return 636;
 			case joaat("PROP_PLAYER_LOOT_WALL_STASH"):
 				return 2406;
-			case -325772919:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED_MP_SYNC_GOTO"):
 				return 1985;
 			case joaat("PROP_PLAYER_CASH_REGISTER_OPEN"):
 				return 1445;
-			case -318144249:
+			case joaat("SC_BOUNTY_HUNTER_SHERIFF"):
 				return 2467;
-			case -315883067:
+			case joaat("MP_FME_TH_ROCK_PILE_NO_PROPS"):
 				return 1156;
-			case -310461560:
+			case joaat("CNV_CAMP_CFUN4_GEN_FEMALE_EXIT"):
 				return 961;
-			case -308358537:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M45"):
 				return 1696;
 			case joaat("WORLD_ANIMAL_BEAR_FORAGING_GROUND"):
 				return 704;
-			case -298569441:
+			case joaat("MP_COIN_1792_QTR"):
 				return 2190;
 			case joaat("PROP_HUMAN_SEAT_BENCH_FIDDLE_DOWNBEAT"):
 				return 173;
@@ -81914,43 +81914,43 @@ int func_1289(int iParam0, int iParam1)
 				return 184;
 			case joaat("WORLD_HUMAN_CHAMBERPOT_PICKUP"):
 				return 507;
-			case -289883276:
+			case joaat("WB_HUNTING_ZONE_BISON"):
 				return 2600;
-			case -289481955:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M45"):
 				return 1687;
-			case -289473187:
+			case joaat("PROP_PLAYER_BARBER_SEAT"):
 				return 1442;
-			case -289116185:
+			case joaat("WB_DISCO_OLD_FIREPLACE"):
 				return 1266;
-			case -288630889:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_SHORT"):
 				return 1817;
 			case joaat("CIG_CARD_INV_11"):
 				return 1049;
-			case -285871200:
+			case joaat("WB_DISCO_AZTEC_MASK"):
 				return 1183;
-			case -283234320:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_1M0"):
 				return 1869;
-			case -283089637:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_SAVAGE"):
 				return 2147;
 			case joaat("PROP_PLAYER_CASH_REGISTER"):
 				return 13;
-			case -280896888:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M80"):
 				return 1730;
-			case -280724140:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M60"):
 				return 1688;
 			case joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW_NO_PILLOW"):
 				return 402;
 			case joaat("WORLD_HUMAN_BALE_PUT_DOWN_2"):
 				return 482;
-			case -277973152:
+			case joaat("CIG_CARD_HRS_09"):
 				return 1035;
-			case -277546477:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M45"):
 				return 1710;
-			case -274828640:
+			case joaat("PLAYER_CAMP_TOOL_OLD"):
 				return 1435;
-			case -274454759:
+			case joaat("LEVDES_SPAWN_PLANT_BLACKBERRY"):
 				return 1388;
-			case -273009449:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARD06X"):
 				return 2052;
 			case joaat("PROP_PLAYER_RHO_GUN_TRAP_DOOR"):
 				return 2409;
@@ -81958,45 +81958,45 @@ int func_1289(int iParam0, int iParam1)
 				return 146;
 			case joaat("CIG_CARD_GUN_10"):
 				return 1024;
-			case -267118527:
+			case joaat("WB_HERB_VANILLA_FLOWER"):
 				return 2556;
 			case joaat("WORLD_ANIMAL_DEER_RESTING"):
 				return 771;
-			case -266582150:
+			case joaat("WB_HERB_OLEANDER_SAGE_SINGLE"):
 				return 2553;
 			case joaat("WORLD_ANIMAL_SPARROW_BATHING"):
 				return 675;
-			case -262561469:
+			case joaat("WB_DISCO_DEAD_CHAIN_GANG"):
 				return 1211;
-			case -259947568:
+			case joaat("PROP_HUMAN_TANNING_RACK_FLESHING"):
 				return 623;
 			case joaat("WORLD_HUMAN_COAL_SACK_PICKUP_2"):
 				return 517;
 			case joaat("WORLD_HUMAN_GUARD_SCOUT"):
 				return 544;
-			case -254086338:
+			case joaat("CNV_CAMP_CFJM3_GEN_MALE_B_EXIT"):
 				return 937;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WALL_NO_PROPS"):
 				return 352;
-			case -248120522:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE"):
 				return 255;
 			case joaat("WORLD_HUMAN_SIT_GUITAR_UPBEAT"):
 				return 228;
-			case -246112144:
+			case joaat("WB_DISCO_CATTLE_CARCASSES"):
 				return 1201;
 			case joaat("WORLD_ANIMAL_GOAT_RESTING"):
 				return 818;
-			case -243331858:
+			case joaat("WB_CAMPFIRE_GANG"):
 				return 2586;
 			case joaat("WORLD_ANIMAL_DONKEY_RESTING"):
 				return 796;
-			case -242276345:
+			case joaat("RANSACK_ATTACHED_P_SIDETABLE02X"):
 				return 2102;
-			case -241925773:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARD01X"):
 				return 2046;
 			case joaat("WORLD_HUMAN_SHOVEL_PICKUP_NO_SHOVEL"):
 				return 603;
-			case -238317386:
+			case joaat("WB_DISCO_PIRATE_KNIFE"):
 				return 1276;
 			case joaat("WORLD_PLAYER_CHORES_PUTDOWN_PRODUCT"):
 				return 1513;
@@ -82004,11 +82004,11 @@ int func_1289(int iParam0, int iParam1)
 				return 11;
 			case joaat("CIG_CARD_ACT_11"):
 				return 977;
-			case -235670490:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M60"):
 				return 1701;
-			case -232939852:
+			case joaat("MP_TCARD_QUEEN_PENTACLE"):
 				return 2287;
-			case -232587958:
+			case joaat("WB_DISCO_ABANDONED_CHURCH"):
 				return 1170;
 			case joaat("PROP_PLAYER_TREASURE_HUNTER_PLAQUE_LOOT"):
 				return 2416;
@@ -82016,55 +82016,55 @@ int func_1289(int iParam0, int iParam1)
 				return 198;
 			case joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC"):
 				return 1478;
-			case -229160091:
+			case joaat("LEVDES_SPAWN_BINOCULARS"):
 				return 1331;
-			case -228293404:
+			case joaat("RANSACK_REACH_OVER_VOLUME_1M10_0M8_2M0"):
 				return 1896;
-			case -224542060:
+			case joaat("WB_HERB_ENGLISH_MACE"):
 				return 2545;
-			case -221052219:
+			case joaat("TS_VAL_HIDEMAP_PIECE_02"):
 				return 1162;
-			case -219941673:
+			case joaat("RANSACK_PROP_CHEST_LARGE_CLOSE"):
 				return 1631;
 			case joaat("WORLD_ANIMAL_PIGEON_DRINK_PERCHED"):
 				return 662;
 			case joaat("PROP_VEHICLE_WAGON_SACK_LOAD_1"):
 				return 470;
-			case -218540408:
+			case joaat("RANSACK_REACHOVER_VOLUME_1M0_0M8_0M55"):
 				return 1919;
-			case -215089835:
+			case joaat("CNV_CAMP_CFUN2_KEY_MALE_B_EXIT"):
 				return 953;
-			case -214666568:
+			case joaat("LEVDES_SPAWN_THROWN_TOMAHAWK_SIDE"):
 				return 1425;
-			case -214401444:
+			case joaat("CODE_HUMAN_SHOCKED_MINOR"):
 				return 1115;
 			case joaat("WORLD_HUMAN_GEN"):
 				return 49;
 			case joaat("WORLD_ANIMAL_BEARBLACK_SLEEPING"):
 				return 716;
-			case -207743044:
+			case joaat("WORLD_PLAYER_RE_DARK_ALLEY_DRUNK_STEAL"):
 				return 2452;
-			case -207709022:
+			case joaat("WORLD_HUMAN_STIR_SOUP"):
 				return 2399;
 			case joaat("WORLD_ANIMAL_COW_SLEEPING"):
 				return 756;
 			case joaat("WORLD_ANIMAL_HORSE_DRINK_GROUND"):
 				return 822;
-			case -203096485:
+			case joaat("PROP_PLAYER_TREASURE_HUNTER_ROCK_STASH_NEW_THCHAINS_GRAVE"):
 				return 2426;
 			case joaat("WORLD_HUMAN_SIT_GROUND_DRINKING_DRUNK_PASSED_OUT"):
 				return 386;
 			case joaat("WORLD_HUMAN_BUCKET_PICKUP_PUTDOWN_EMPTY"):
 				return 31;
-			case -195947434:
+			case joaat("PROP_PLAYER_OPEN_RIFLECHEST_SEMI_AUTO_SHOTGUN"):
 				return 1469;
 			case joaat("WORLD_HUMAN_CLEAN_TABLE"):
 				return 512;
-			case -192740726:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_4_CLOSE"):
 				return 1677;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_SKETCHING"):
 				return 298;
-			case -189456511:
+			case joaat("MP_TCARD_EIGHT_WANDS"):
 				return 2261;
 			case joaat("WORLD_CAMP_JACK_ES_BUCKET_PUTDOWN_EMPTY"):
 				return 127;
@@ -82072,13 +82072,13 @@ int func_1289(int iParam0, int iParam1)
 				return 455;
 			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE03X"):
 				return 2122;
-			case -186893030:
+			case joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_1M0"):
 				return 1621;
 			case joaat("WORLD_HUMAN_BUCKET_POUR_LOW"):
 				return 503;
-			case -186176782:
+			case joaat("TS_VAL_MASS_GRAVE"):
 				return 1169;
-			case -185630055:
+			case joaat("WORLD_PLAYER_CIG_CARDS"):
 				return 2635;
 			case joaat("WORLD_HUMAN_SACK_PICKUP_1"):
 				return 582;
@@ -82086,9 +82086,9 @@ int func_1289(int iParam0, int iParam1)
 				return 360;
 			case joaat("PROP_CAMP_SEAT_FIRE_GENERIC"):
 				return 6;
-			case -174562930:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M25_0M5_2M0"):
 				return 1959;
-			case -174276816:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_1_CLOSE"):
 				return 1671;
 			case joaat("CIG_CARD_SPT_11"):
 				return 1097;
@@ -82100,39 +82100,39 @@ int func_1289(int iParam0, int iParam1)
 				return 134;
 			case joaat("WORLD_ANIMAL_ELK_SLEEPING"):
 				return 804;
-			case -155511563:
+			case joaat("RANSACK_ATTACHED_P_VANITY01X_RIGHT"):
 				return 2131;
-			case -155090208:
+			case joaat("RANSACK_ATTACHED_P_DRESSER11X"):
 				return 2074;
-			case -155019243:
+			case joaat("LEVDES_SPAWN_PLANT_WILDMINT"):
 				return 1397;
 			case joaat("WORLD_ANIMAL_VULTURE_PREENING"):
 				return 685;
-			case -153614134:
+			case joaat("PULLOUT_PROP_LOCKBOX_LRG_0M0_1M0"):
 				return 1587;
 			case joaat("WORLD_PLAYER_CHORES_BALE_PICKUP_1"):
 				return 1494;
 			case joaat("LEAN_IN_DIRECTION"):
 				return 1123;
-			case -149190046:
+			case joaat("LEVDES_SPAWN_COCAINE_CHEWINGGUM"):
 				return 1351;
 			case joaat("WORLD_HUMAN_SHOVEL_PICKUP"):
 				return 602;
-			case -147728984:
+			case joaat("WB_DISCO_FACTORY_IN_SWAMP"):
 				return 1229;
 			case joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE"):
 				return 40;
 			case joaat("MP_LOBBY_PROP_HUMAN_SEAT_BENCH_PORCH_SMOKING"):
 				return 271;
-			case -143273671:
+			case joaat("MP_TCARD_PAGE_SWORDS"):
 				return 2284;
 			case joaat("WORLD_HUMAN_SKETCHBOOK_PICKUP_GROUND_NO_SKETCHBOOK"):
 				return 398;
-			case -135402872:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M45"):
 				return 1682;
-			case -135116434:
+			case joaat("RANSACK_ATTACHED_P_CABOOSE01X_CUPBOARD"):
 				return 2034;
-			case -134662402:
+			case joaat("RANSACK_VOLUME_NARROW_0M5_0M8_2M0"):
 				return 1949;
 			case joaat("PROP_VEHICLE_WAGON_BALE_UNLOAD_2_NO_BALE"):
 				return 441;
@@ -82140,15 +82140,15 @@ int func_1289(int iParam0, int iParam1)
 				return 734;
 			case joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_D"):
 				return 2516;
-			case -127362439:
+			case joaat("MP_ARROWHEAD_ROUGH"):
 				return 2173;
-			case -123759090:
+			case joaat("MP_TCARD_TWO_CUPS"):
 				return 2306;
-			case -122166685:
+			case joaat("WB_TAXIDERMY_MARITAL"):
 				return 2631;
 			case joaat("WORLD_HUMAN_FIDDLE_PICKUP"):
 				return 199;
-			case -121453179:
+			case joaat("PROP_PLAYER_OPEN_PISTOLCHEST_TABLE_SCHOFIELD"):
 				return 1466;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS"):
 				return 302;
@@ -82160,67 +82160,67 @@ int func_1289(int iParam0, int iParam1)
 				return 873;
 			case joaat("PROP_VEHICLE_WAGON_BALE_UNLOAD_2"):
 				return 440;
-			case -109253143:
+			case joaat("MP_TCARD_ACE_PENTACLES"):
 				return 2255;
-			case -109126822:
+			case joaat("WB_DISCO_ROADSIDE_BROTHEL"):
 				return 1285;
-			case -108928342:
+			case joaat("WB_DISCO_ANCIENT_TOMAHAWK"):
 				return 1179;
-			case -108828442:
+			case joaat("RANSACK_PROP_P_WNT4_DRWDBL01X_OPEN"):
 				return 1769;
 			case joaat("WORLD_ANIMAL_BEAR_INJURED_ON_GROUND"):
 				return 705;
-			case -103909518:
+			case joaat("CIG_CARD_SPT_02"):
 				return 1088;
 			case joaat("WORLD_CAMP_JACK_ES_FIRE_SEAT_BOX"):
 				return 129;
-			case -100116410:
+			case joaat("MP_TCARD_QUEEN_SWORDS"):
 				return 2288;
-			case -99422178:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M60"):
 				return 1754;
 			case joaat("WORLD_HUMAN_POCKET_MIRROR"):
 				return 218;
-			case -97075078:
+			case joaat("LEVDES_BEDROLL"):
 				return 1318;
 			case joaat("WORLD_ANIMAL_ELK_GRAZING"):
 				return 801;
-			case -94120997:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_1M75_GENERIC_PROMPT"):
 				return 1887;
-			case -92474507:
+			case joaat("WORLD_VEHICLE_DRIVE_PASSENGERS_NO_RAIN"):
 				return 1150;
-			case -92472245:
+			case joaat("LEVDES_SPAWN_BRANDY_BOTTLE"):
 				return 1334;
 			case joaat("WORLD_ANIMAL_CHICKEN_RESTING"):
 				return 634;
-			case -91671283:
+			case joaat("CIG_CARD_ACT_08"):
 				return 974;
 			case joaat("WORLD_ANIMAL_DOG_MARK_TERRITORY_A"):
 				return 786;
-			case -90963810:
+			case joaat("LEVDES_SPAWN_BULLET_CASING_SIDE"):
 				return 1338;
-			case -89155892:
+			case joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PICKUP"):
 				return 1779;
 			case joaat("WORLD_ANIMAL_BOAR_DRINK_GROUND"):
 				return 725;
-			case -88450435:
+			case joaat("WB_DISCO_TREASURE_MAP_HALVES"):
 				return 1303;
-			case -86234166:
+			case joaat("MP_HRLM_HAIRPIN_EBONY"):
 				return 2210;
-			case -84970090:
+			case joaat("WB_HUNTING_ZONE_BUFFALO_TATANKA"):
 				return 2603;
-			case -80955958:
+			case joaat("MP_LOBBY_SCENARIO_04"):
 				return 2364;
-			case -80552542:
+			case joaat("RANSACK_PROP_CHEST_PICKUP"):
 				return 1637;
-			case -78773636:
+			case joaat("RANSACK_REACH_SWIMMING"):
 				return 1798;
 			case joaat("WORLD_ANIMAL_CAT_RESTING"):
 				return 747;
-			case -70257497:
+			case joaat("ROLL_DOWN_STAIRS"):
 				return 1133;
 			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED"):
 				return 1841;
-			case -69078291:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M80"):
 				return 1698;
 			case joaat("WORLD_FLOURISH_TABLE_SMASH"):
 				return 1139;
@@ -82232,11 +82232,11 @@ int func_1289(int iParam0, int iParam1)
 				return 21;
 			case joaat("PROP_HUMAN_SEAT_BENCH_CONCERTINA_DOWNBEAT"):
 				return 170;
-			case -55367021:
+			case joaat("MINIGAME_POKER_PLAYER"):
 				return 2463;
 			case joaat("RANSACK_ATTACHED_P_STERILECABINET01X"):
 				return 2108;
-			case -52668830:
+			case joaat("CIG_CARD_GRL_06"):
 				return 1008;
 			case joaat("WORLD_HUMAN_BALE_PUT_DOWN_1"):
 				return 481;
@@ -82244,41 +82244,41 @@ int func_1289(int iParam0, int iParam1)
 				return 559;
 			case joaat("WORLD_ANIMAL_GOOSECANADA_GRAZING"):
 				return 648;
-			case -47896844:
+			case joaat("CNV_CAMP_CFJM1_JOHN_EXIT"):
 				return 927;
-			case -44323190:
+			case joaat("WB_DISCO_SHRINE"):
 				return 1294;
 			case joaat("PROP_CAMP_FIRE_SEATED"):
 				return 84;
-			case -37548215:
+			case joaat("MP_TCARD_NINE_WANDS"):
 				return 2281;
 			case joaat("WORLD_HUMAN_SKETCH_BOOK_TABLE_PICKUP"):
 				return 395;
-			case -34945532:
+			case joaat("LEVDES_SPAWN_GIN_BOTTLE_OPENED"):
 				return 1366;
 			case joaat("CIG_CARD_PAM_12"):
 				return 1074;
 			case joaat("WORLD_ANIMAL_DEER_DRINKING"):
 				return 766;
-			case -33589720:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_1M75"):
 				return 1886;
-			case -32173176:
+			case joaat("WORLD_PLAYER_RE_DARK_ALLEY_DESP_GIVE"):
 				return 2450;
-			case -31708551:
+			case joaat("WB_DISCO_BRAITH_3"):
 				return 1194;
-			case -28400804:
+			case joaat("RANSACK_ATTACHED_P_CORNERCABINET02X"):
 				return 2044;
 			case joaat("WORLD_ANIMAL_COW_DRINK_GROUND"):
 				return 750;
 			case joaat("RANSACK_REACH_OVER_VOLUME_NARROW_0M5_0M5_2M0"):
 				return 1906;
-			case -25476944:
+			case joaat("WB_DISCO_SHEEP_GUY"):
 				return 1293;
 			case joaat("WORLD_HUMAN_SIT_GROUND_READING_JOURNAL"):
 				return 391;
 			case joaat("WORLD_HUMAN_SMOKE"):
 				return 403;
-			case -20233099:
+			case joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD_HANDOFF_PLAYER"):
 				return 245;
 			case joaat("MP_LOBBY_PROP_HUMAN_SEAT_CHAIR"):
 				return 272;
@@ -82288,15 +82288,15 @@ int func_1289(int iParam0, int iParam1)
 				return 362;
 			case joaat("WORLD_ANIMAL_BADGER_EAT_GROUND"):
 				return 701;
-			case -11084973:
+			case joaat("TS_VAL_INSPECT_PLACED_ARTIFACT"):
 				return 1165;
-			case -11015957:
+			case joaat("RANSACK_ATTACHED_DRAWER_SINGLE_4"):
 				return 1836;
 			case joaat("WORLD_ANIMAL_HERON_RESTING"):
 				return 652;
-			case -3780507:
+			case joaat("SC_PROP_HUMAN_TORCH_TORCAP_B"):
 				return 2474;
-			case -2932209:
+			case joaat("CNV_CAMP_CFJM1_GEN_MALE_D_EXIT"):
 				return 926;
 			case joaat("WORLD_HUMAN_LEAN_READ_PAPER"):
 				return 209;
@@ -82306,53 +82306,53 @@ int func_1289(int iParam0, int iParam1)
 				return 2638;
 			case joaat("WORLD_ANIMAL_FOX_SITTING"):
 				return 811;
-			case 513593:
+			case joaat("CIG_CARD_GUN_01"):
 				return 1015;
 			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_W_PROP"):
 				return 62;
-			case 2187921:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_PICKUP"):
 				return 1732;
-			case 5441196:
+			case joaat("WORLD_VEHICLE_DRIVE_SOLO_NO_RAIN"):
 				return 1152;
-			case 6459801:
+			case joaat("MP_JEWELRY_CARVED_BRACELET"):
 				return 2217;
-			case 8039593:
+			case joaat("MP_LOBBY_CROUCHING_A"):
 				return 2356;
-			case 10019272:
+			case joaat("CNV_CAMP_CFJM3_JOHN_EXIT"):
 				return 938;
-			case 10753225:
+			case joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_0M5_0M7_0M40"):
 				return 1902;
-			case 12613321:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO"):
 				return 1992;
-			case 16632229:
+			case joaat("WB_DISCO_ABANDONED_MISSION"):
 				return 1172;
 			case joaat("CIG_CARD_PAM_10"):
 				return 1072;
 			case joaat("PROP_CAMP_MEAT_BOWL_DUMP_CAULDRON_LEAVE_W_BOWL"):
 				return 91;
-			case 18267955:
+			case joaat("WB_FLOWER_BITTERWEED_SINGLE"):
 				return 2333;
-			case 25318363:
+			case joaat("WB_HORSE_HERB_COMMON_BULRUSH"):
 				return 2561;
 			case joaat("WORLD_HUMAN_SIT_GROUND_WHITTLE"):
 				return 393;
-			case 27562885:
+			case joaat("RANSACK_ATTACHED_P_ICEBOX02X"):
 				return 2088;
 			case joaat("PROP_VEHICLE_WAGON_SUGAR_SACK_UNLOAD_2"):
 				return 477;
-			case 29256654:
+			case joaat("MP_COOP_LOBBY_STANDING_A"):
 				return 2352;
-			case 30805286:
+			case joaat("CIG_CARD_ART_02"):
 				return 992;
-			case 31857686:
+			case joaat("CNV_CAMP_CFJM2_JOHN_EXIT"):
 				return 932;
-			case 32789213:
+			case joaat("PROP_ANIMAL_HORSE_DRINK_TROUGH"):
 				return 699;
-			case 37520335:
+			case joaat("WB_HORSE_HERB_WILD_CARROTS"):
 				return 2562;
-			case 38091733:
+			case joaat("CNV_CAMP_CCHSH7_HOSEA_EXIT"):
 				return 900;
-			case 39815316:
+			case joaat("CIG_CARD_SPT_01"):
 				return 1087;
 			case joaat("WORLD_ANIMAL_WOODPECKER_PECKING_TREE"):
 				return 688;
@@ -82362,107 +82362,107 @@ int func_1289(int iParam0, int iParam1)
 				return 486;
 			case joaat("WORLD_HUMAN_TRUMPET_PICKUP_PUTDOWN"):
 				return 70;
-			case 45887683:
+			case joaat("RANSACK_SAFE"):
 				return 1920;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_PUTDOWN"):
 				return 568;
 			case joaat("WORLD_ANIMAL_BAT_HANGING_DEMO"):
 				return 628;
-			case 49167942:
+			case joaat("RANSACK_ATTACHED_P_CABINET06X"):
 				return 2023;
 			case joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP_NO_PITCHFORK"):
 				return 1509;
 			case joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT"):
 				return 315;
-			case 49909226:
+			case joaat("WB_RAIDER_CHURCH"):
 				return 2623;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS_WHISKEY"):
 				return 304;
-			case 51085445:
+			case joaat("WB_DISCO_DEAD_TOWN"):
 				return 1217;
-			case 51237607:
+			case joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_1"):
 				return 1829;
 			case joaat("CIG_CARD_SPT_12"):
 				return 1098;
 			case joaat("WORLD_HUMAN_SACK_PICKUP_2"):
 				return 583;
-			case 59483190:
+			case joaat("TS_VAL_HIDEMAP_PIECE_03"):
 				return 1163;
-			case 61551761:
+			case joaat("WORLD_HUMAN_HORSE_RIDER"):
 				return 1145;
-			case 62060715:
+			case joaat("RANSACK_ATTACHED_P_BAGGAGE01X_CABINET_DR01"):
 				return 2011;
 			case joaat("PROP_HUMAN_SEAT_BENCH_MANDOLIN"):
 				return 181;
 			case joaat("WORLD_HUMAN_DRUNK_BRACE_WALL"):
 				return 341;
-			case 65758950:
+			case joaat("WORLD_PLAYER_PEEK_WINDOW_NO_SCRIPT"):
 				return 2454;
-			case 75374539:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_MP_SYNC_GOTO"):
 				return 1993;
 			case joaat("WORLD_HUMAN_LEAN_POST_LEFT"):
 				return 361;
 			case joaat("SCRIPT_RELS_LOOT_SAFE_MALE_B"):
 				return 2445;
-			case 79752745:
+			case joaat("LEVDES_SPAWN_PICKLED_EGGS"):
 				return 1385;
-			case 82187915:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M5_0M8_2M0"):
 				return 1974;
-			case 82696855:
+			case joaat("RANSACK_CHIMNEY_WITH_MANTLE_GENERIC_02"):
 				return 1879;
-			case 82879076:
+			case joaat("CIG_CARD_HRS_03"):
 				return 1029;
 			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_TYPEGROUP"):
 				return 29;
-			case 86244240:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_DISCO_MAP_HALVES"):
 				return 1851;
-			case 87256266:
+			case joaat("WB_DIG_BURIED_ARROWHEAD"):
 				return 2311;
 			case joaat("WORLD_HUMAN_GEN_SIT"):
 				return 50;
 			case joaat("PROP_PLAYER_OPEN_ARMOIR_CORPSE"):
 				return 2408;
-			case 91471551:
+			case joaat("MP_MOONSHINE_BAND_RESTING_DOUBLE_BASS"):
 				return 247;
-			case 96250457:
+			case joaat("RANSACK_PROP_DRAWERS_PICKUP"):
 				return 1679;
 			case joaat("WORLD_HUMAN_GRAVE_MOURNING_KNEEL"):
 				return 204;
-			case 99506713:
+			case joaat("MP_LOBBY_SCENARIO_10"):
 				return 2370;
 			case joaat("WORLD_HUMAN_FISHING_POLE_PUTDOWN"):
 				return 539;
 			case joaat("PROP_VEHICLE_WAGON_RUM_CRATE_UNLOAD_1"):
 				return 468;
-			case 109319961:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_SURVIVOR"):
 				return 2153;
 			case joaat("WORLD_HUMAN_LEAN_CHECK_PISTOL"):
 				return 359;
-			case 109556135:
+			case joaat("PULLOUT_PROP_LOCKBOX_LRG_0M0_0M80"):
 				return 1585;
-			case 111647220:
+			case joaat("RANSACK_VOLUME_1M0_0M5_2M0"):
 				return 1940;
 			case joaat("PROP_HUMAN_WEAPON_RACK_DBSHOTGUN_PICKUP"):
 				return 188;
-			case 113259694:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_RIGHT_OPEN"):
 				return 1650;
-			case 113260486:
+			case joaat("RANSACK_REACH_OVER_VOLUME_SHELF_TOP_0M5_0M5_1M95"):
 				return 1911;
-			case 117002972:
+			case joaat("RE_MURDER_CAMPFIRE_RANGED_SCRIPT_SHORT"):
 				return 2435;
-			case 117748712:
+			case joaat("WB_FLOWER_CHOCOLATE_DAISY_SINGLE"):
 				return 2339;
 			case joaat("WORLD_PLAYER_CHORES_BUCKET_FILL"):
 				return 1496;
-			case 122885581:
+			case joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_B"):
 				return 2510;
 			case joaat("WORLD_CAMP_JACK_THROWS_ROCKS_LEDGE"):
 				return 139;
 			case joaat("WORLD_ANIMAL_BIG_CAT_INJURED_ON_GROUND"):
 				return 722;
-			case 129334770:
+			case joaat("PROP_ANIMAL_GOAT_EAT_TROUGH"):
 				return 698;
-			case 129409544:
+			case joaat("RANSACK_PROP_CHEST_PUTDOWN"):
 				return 1638;
 			case joaat("WORLD_ANIMAL_COYOTE_HOWLING"):
 				return 760;
@@ -82472,17 +82472,17 @@ int func_1289(int iParam0, int iParam1)
 				return 15;
 			case joaat("PROP_HUMAN_SEAT_BENCH_TRAIN"):
 				return 283;
-			case 134714762:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_CLOSE"):
 				return 1655;
-			case 135564269:
+			case joaat("CNV_CAMP_CCHSH8_HOSEA_INTRO"):
 				return 901;
-			case 136354949:
+			case joaat("PROP_PLAYER_RE_MURDER_CAMP_STAKE_NOTE"):
 				return 2431;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS_BEER"):
 				return 303;
-			case 139595712:
+			case joaat("MP_LOBBY_SEATED_F"):
 				return 2381;
-			case 140079138:
+			case joaat("RANSACK_ATTACHED_P_WASHSTAND02X"):
 				return 2135;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_RIGHT"):
 				return 371;
@@ -82492,55 +82492,55 @@ int func_1289(int iParam0, int iParam1)
 				return 1025;
 			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_CHAINGANG"):
 				return 1545;
-			case 147212665:
+			case joaat("LEVDES_SPAWN_SNAKEOIL"):
 				return 1411;
-			case 149149942:
+			case joaat("MP_HRLM_COMB_CHERRYWOOD"):
 				return 2207;
-			case 152960040:
+			case joaat("WB_PICKUP_COLLECTIBLE_HEIRLOOM"):
 				return 2349;
-			case 157685372:
+			case joaat("LEVDES_SPAWN_DEATHASSIST_SNAKEOIL"):
 				return 1356;
-			case 158172139:
+			case joaat("WB_DISCO_MAIL_TRUCK"):
 				return 1252;
-			case 160739485:
+			case joaat("CIG_CARD_PAM_08"):
 				return 1070;
 			case joaat("RANSACK_ATTACHED_P_WORKBENCHDESK01X_RIGHT"):
 				return 2139;
-			case 163298621:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_RIGHT_CLOSE"):
 				return 1649;
 			case joaat("WORLD_HUMAN_BANJO_PICKUP"):
 				return 189;
-			case 164482096:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_SURVIVOR"):
 				return 2148;
-			case 167092195:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M80"):
 				return 1755;
-			case 172138233:
+			case joaat("PROP_PLAYER_OPEN_FOOTLOCKER_MP_SYNCH"):
 				return 1459;
 			case joaat("WORLD_ANIMAL_GOAT_GRAZING_DOMESTIC"):
 				return 816;
 			case joaat("WORLD_HUMAN_BOX_PUT_DOWN_3"):
 				return 491;
-			case 177102263:
+			case joaat("MP_TCARD_KNIGHT_CUPS"):
 				return 2274;
-			case 178138246:
+			case joaat("RANSACK_CHIMNEY_WITH_MANTLE_CIV_BRD_SHK"):
 				return 1999;
-			case 180206120:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M0"):
 				return 1727;
-			case 185435576:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M8_0M5_2M0"):
 				return 1966;
-			case 188745754:
+			case joaat("MP_TCARD_TEN_WANDS"):
 				return 2301;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_KNIFE_BADASS"):
 				return 290;
 			case joaat("WORLD_HUMAN_GRAVE_MOURNING"):
 				return 203;
-			case 190237998:
+			case joaat("WB_DISCO_BANK_STAGECOACH"):
 				return 1184;
-			case 194071974:
+			case joaat("WB_TREASURE_HUNTER"):
 				return 2633;
-			case 195079210:
+			case joaat("WORLD_HUMAN_SIT_GROUND_DRINKING_DRUNK_PASSED_OUT_MOONSHINE"):
 				return 419;
-			case 196070706:
+			case joaat("SC_CAMP_VIG_SORE_JOINTS_MALE"):
 				return 2498;
 			case joaat("WORLD_ANIMAL_HORSE_GRAZING_DOMESTIC"):
 				return 826;
@@ -82548,15 +82548,15 @@ int func_1289(int iParam0, int iParam1)
 				return 2513;
 			case joaat("WORLD_HUMAN_FEEDBAG_PUTDOWN"):
 				return 536;
-			case 200362341:
+			case joaat("MP_TCARD_SIX_WANDS"):
 				return 2297;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_SMOKING"):
 				return 299;
-			case 201911354:
+			case joaat("WB_DISCO_CIV_WAR_BATTLEFIELD"):
 				return 1204;
 			case joaat("WORLD_HUMAN_BOX_PICKUP_3"):
 				return 488;
-			case 202274149:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_0M80"):
 				return 1856;
 			case joaat("WORLD_ANIMAL_DUCK_GROUND_RESTING"):
 				return 642;
@@ -82566,39 +82566,39 @@ int func_1289(int iParam0, int iParam1)
 				return 852;
 			case joaat("WORLD_ANIMAL_RAT_FLEE_HOLE"):
 				return 867;
-			case 212940922:
+			case joaat("WB_WILDERNESS_CHEST"):
 				return 2634;
-			case 215660666:
+			case joaat("RANSACK_ATTACHED_P_SIDETABLE09X"):
 				return 2105;
-			case 216161874:
+			case joaat("MP_BOTTLE_PLYMOUTH_GIN"):
 				return 2182;
-			case 216319735:
+			case joaat("RANSACK_REACH_IN_GROUND_HOLE_PICKUP_GENERIC_PROMPT"):
 				return 1774;
-			case 217936838:
+			case joaat("RANSACK_ATTACHED_P_DESK01X"):
 				return 2055;
-			case 221308504:
+			case joaat("WORLD_PLAYER_RANSACK_PICKUP_MONEYBAG_FRONT_TAKE_RIGHT_SHOULDER"):
 				return 1803;
-			case 224281059:
+			case joaat("PULLOUT_PROP_LOCKBOX_MED_0M0_1M0"):
 				return 1590;
-			case 225115854:
+			case joaat("LEVDES_SPAWN_BOOKS"):
 				return 1333;
 			case joaat("WORLD_FLOURISH_TROUGH"):
 				return 1140;
 			case joaat("WORLD_ANIMAL_PIGEON_EAT_GROUND_FROM_GROUND"):
 				return 664;
-			case 226472050:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_LEFT_CLOSE"):
 				return 1656;
-			case 227465803:
+			case joaat("WB_EGG_NEST_EGRET"):
 				return 2323;
-			case 228390173:
+			case joaat("MP_JEWELRY_FRENCH_DMND_RING"):
 				return 2226;
 			case joaat("PARK_VEHICLE"):
 				return 1126;
 			case joaat("WORLD_CAMP_JACK_ES_BUCKET_POUR"):
 				return 126;
-			case 238503723:
+			case joaat("RANSACK_CHIMNEY_SEARCH_NO_LOOT_GENERIC_PROMPT"):
 				return 1600;
-			case 238908068:
+			case joaat("CIG_CARD_GUN_02"):
 				return 1016;
 			case joaat("WORLD_CAMP_JACK_THROWS_ROCKS_CASUAL"):
 				return 138;
@@ -82608,141 +82608,141 @@ int func_1289(int iParam0, int iParam1)
 				return 668;
 			case joaat("PROP_PLAYER_NBX_GUN_GAMB_SAFE"):
 				return 2407;
-			case 249211141:
+			case joaat("MP_TCARD_KING_SWORDS"):
 				return 2272;
-			case 250485488:
+			case joaat("WORLD_ANIMAL_FISH_BREAK_SURFACE"):
 				return 689;
-			case 256401035:
+			case joaat("CIG_CARD_ACT_07"):
 				return 973;
 			case joaat("WORLD_HUMAN_LUMBER_PICKUP_1"):
 				return 551;
-			case 259425682:
+			case joaat("WB_RE_SAVAGE_WARNING02"):
 				return 2627;
 			case joaat("WORLD_HUMAN_NEWSPAPER_PICKUP"):
 				return 214;
-			case 264140056:
+			case joaat("WB_BOUNTY_POSTER"):
 				return 2584;
 			case joaat("WORLD_HUMAN_RIFLE_PICKUP_LEAN"):
 				return 219;
 			case joaat("PROP_CAMP_FIRE_SEATED_TEND_FIRE"):
 				return 85;
-			case 270641597:
+			case joaat("CIG_CARD_ART_01"):
 				return 991;
-			case 271472783:
+			case joaat("RANSACK_SHOP_VOL_1M0_0M80_2M0"):
 				return 1929;
 			case joaat("WORLD_HUMAN_FIRE_COFFEE_KETTLE_PEDS"):
 				return 157;
-			case 273203036:
+			case joaat("MP_HRLM_COMB_IVORY"):
 				return 2208;
-			case 276224334:
+			case joaat("RANSACK_REACH_OVER_VOLUME_WIDE_GROUND_PICKUP"):
 				return 1918;
-			case 276768972:
+			case joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_CASK"):
 				return 2161;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_SMOKING_TRAIN"):
 				return 300;
-			case 281802273:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_MID_CLOSE"):
 				return 1661;
-			case 282070889:
+			case joaat("WORLD_HUMAN_SLEDGEHAMMER"):
 				return 2492;
-			case 284604988:
+			case joaat("WB_DISCO_EASEL"):
 				return 1226;
-			case 286241319:
+			case joaat("WB_HUNTING_ZONE_BEAVER"):
 				return 2598;
-			case 287624414:
+			case joaat("CIG_CARD_AML_05"):
 				return 983;
-			case 288901709:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_LOW"):
 				return 1821;
 			case joaat("WORLD_HUMAN_SACK_PUT_DOWN_COUNTER"):
 				return 587;
-			case 293411693:
+			case joaat("PROP_ANIMAL_DOG_EATING_BONE"):
 				return 696;
 			case joaat("PROP_VEHICLE_WAGON_COTTONBALE_UNLOAD_1"):
 				return 450;
-			case 295645990:
+			case joaat("SCRIPT_RE_DUEL_BOASTER_BOASTER"):
 				return 2440;
 			case joaat("PROP_VEHICLE_WAGON_BOX_UNLOAD_1_NO_BOX"):
 				return 445;
-			case 298609310:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M0_0M5_2M0_TIGHT_ENVELOPE"):
 				return 1957;
-			case 299462770:
+			case joaat("MP_ARROWHEAD_FELDSPAR"):
 				return 2168;
-			case 302849977:
+			case joaat("RANSACK_REACH_OVER_PUTDOWN_1M5_0M5_2M0"):
 				return 1793;
 			case joaat("WORLD_VEHICLE_MINECART_COAL_DUMP"):
 				return 618;
-			case 304703384:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M0_0M5_2M0"):
 				return 1969;
 			case joaat("CIG_CARD_AML_11"):
 				return 989;
 			case joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW"):
 				return 401;
-			case 309944434:
+			case joaat("LEVDES_SPAWN_COFFEE"):
 				return 1352;
-			case 310637926:
+			case joaat("LEVDES_SPAWN_PREDATOR_BAIT"):
 				return 1401;
-			case 313051664:
+			case joaat("WB_DISCO_CIRCUS_WAGON"):
 				return 1203;
 			case joaat("WORLD_HUMAN_BOOK_TABLE_PICKUP_PUTDOWN"):
 				return 28;
 			case joaat("PROP_CAMP_CRIPPS_SEAT_CHAIR"):
 				return 73;
-			case 318556127:
+			case joaat("RANSACK_SHOP_VOL_0M50_0M50_2M0"):
 				return 1921;
 			case joaat("PROP_CAMP_BILL_SLEEP"):
 				return 77;
-			case 319662698:
+			case joaat("WB_CRAYFISH_HOLE"):
 				return 2591;
 			case joaat("WORLD_ANIMAL_WOLF_DRINKING"):
 				return 880;
 			case joaat("PROP_PLAYER_PEEK_SECURITY_DOOR"):
 				return 1471;
-			case 322611816:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M0"):
 				return 1718;
 			case joaat("WORLD_ANIMAL_ROOSTER_RESTING"):
 				return 669;
-			case 324116001:
+			case joaat("MP_LOBBY_PHNS_STANDING_A"):
 				return 2358;
-			case 325463335:
+			case joaat("PROP_PLAYER_CASH_REGISTER_CLERK_OPENED"):
 				return 1443;
-			case 326492680:
+			case joaat("MP_TCARD_KING_CUPS"):
 				return 2270;
-			case 329522555:
+			case joaat("RANSACK_PROP_DRAWERS_PUTDOWN"):
 				return 1680;
-			case 332855426:
+			case joaat("LEVDES_SPAWN_POCKETWATCH"):
 				return 1399;
-			case 333215221:
+			case joaat("MP_LOBBY_SCENARIO_11"):
 				return 2371;
 			case joaat("WORLD_HUMAN_REPAIR_HIGH_OILCAN"):
 				return 574;
-			case 335724012:
+			case joaat("SHACK_MISSING_HUSBAND_RS"):
 				return 1158;
-			case 335910776:
+			case joaat("MP_TCARD_FIVE_PENTACLES"):
 				return 2263;
-			case 337782253:
+			case joaat("RANSACK_ATTACHED_P_CABOOSE03X_CUPBOARD"):
 				return 2036;
 			case joaat("PROP_VEHICLE_WAGON_SUGAR_SACK_UNLOAD_1"):
 				return 476;
-			case 339892059:
+			case joaat("WB_DISCO_WAGON_CIRCLE"):
 				return 1312;
 			case joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"):
 				return 316;
 			case joaat("WORLD_PLAYER_CHORES_BUCKET_POUR_LOW"):
 				return 1500;
-			case 348936756:
+			case joaat("LEVDES_SPAWN_STRONGBOX_MUD"):
 				return 1413;
-			case 349975866:
+			case joaat("MP_TCARD_KNIGHT_PENTACLES"):
 				return 2275;
-			case 351906063:
+			case joaat("MP_LOBBY_SEATED_E"):
 				return 2380;
-			case 357468243:
+			case joaat("WORLD_HUMAN_LEAN_WALL_DRINKING_RIGHT_MOONSHINE"):
 				return 417;
-			case 360049244:
+			case joaat("MP_LOBBY_SCENARIO_07"):
 				return 2367;
 			case joaat("WORLD_ANIMAL_BEAR_RESTING"):
 				return 706;
 			case joaat("WORLD_ANIMAL_ELK_DRINKING"):
 				return 799;
-			case 362472762:
+			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE05BX_L"):
 				return 2124;
 			case joaat("WORLD_ANIMAL_WOLF_HOWLING_SITTING"):
 				return 884;
@@ -82752,211 +82752,211 @@ int func_1289(int iParam0, int iParam1)
 				return 1013;
 			case joaat("CODE_HUMAN_STAND_COWER"):
 				return 1117;
-			case 371484799:
+			case joaat("MP_TCARD_TWO_SWORDS"):
 				return 2308;
 			case joaat("WORLD_HUMAN_GUITAR_PICKUP_PUTDOWN"):
 				return 52;
-			case 373449848:
+			case joaat("CNV_CAMP_CFUN3_GEN_MALE_B_EXIT"):
 				return 956;
 			case joaat("WORLD_HUMAN_LEAN_BACK_RAILING_DRINKING"):
 				return 349;
-			case 376902028:
+			case joaat("WB_DISCO_VAMPIRE_CLUES"):
 				return 1309;
-			case 376983677:
+			case joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO"):
 				return 240;
 			case joaat("WORLD_HUMAN_COTTONBOX_PICKUP_2_GINNED"):
 				return 524;
-			case 383513667:
+			case joaat("SC_WORLD_STAND_MOURNING_MALE_A"):
 				return 2488;
-			case 383624950:
+			case joaat("RANSACK_REACH_UP_PICKUP_SHALLOW_150"):
 				return 1799;
-			case 384125679:
+			case joaat("WORLD_HUMAN_STARE_STOIC_CARRYING"):
 				return 2156;
-			case 385483619:
+			case joaat("WB_DISCO_OBELISK"):
 				return 1262;
-			case 389695223:
+			case joaat("CIG_CARD_HRS_02"):
 				return 1028;
-			case 390341661:
+			case joaat("MP_JEWELRY_PEARL_BRACELET"):
 				return 2236;
 			case joaat("WORLD_HUMAN_SADDLE_PICKUP_GROUND_NO_SADDLE"):
 				return 589;
-			case 392143296:
+			case joaat("RANSACK_ATTACHED_P_NBMCHINACABINET01X"):
 				return 2092;
-			case 393469536:
+			case joaat("WB_DISCO_WATER_DIVINER"):
 				return 1313;
 			case joaat("WORLD_ANIMAL_WOLF_MARK_TERRITORY"):
 				return 886;
-			case 395804650:
+			case joaat("RANSACK_CHIMNEY_WITH_MANTLE_GENERIC_01"):
 				return 1878;
-			case 396636265:
+			case joaat("RANSACK_COACH_BOOT_OPEN"):
 				return 1613;
-			case 397325435:
+			case joaat("LEVDES_SPAWN_RUM_BOTTLE_OPENED"):
 				return 1407;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_CLEAN_SADDLE"):
 				return 429;
-			case 399720358:
+			case joaat("LEVDES_SPAWN_ASHTRAY"):
 				return 1329;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_THEATER"):
 				return 9;
-			case 401197936:
+			case joaat("WORLD_HUMAN_LEAN_WALL_LEFT_DRINKING_MOONSHINE"):
 				return 418;
-			case 402062501:
+			case joaat("WB_DISCO_WHALE_BONE"):
 				return 1314;
-			case 402621992:
+			case joaat("CIG_CARD_GUN_04"):
 				return 1018;
-			case 403072797:
+			case joaat("RANSACK_ATTACHED_P_SIDETABLE07X"):
 				return 2104;
 			case joaat("WORLD_ANIMALS_SKUNK_GENERIC"):
 				return 22;
-			case 406957995:
+			case joaat("MP_LOBBY_SEATED_A"):
 				return 2376;
-			case 409403441:
+			case joaat("RANSACK_REACH_OVER_CENTERED_GROUND_PICKUP_TIGHT_ENVELOPE"):
 				return 1889;
 			case joaat("MP_LOBBY_PROP_HUMAN_SEAT_CHAIR_WHITTLE"):
 				return 274;
 			case joaat("WORLD_HUMAN_BOX_PUT_DOWN_2"):
 				return 490;
-			case 412999088:
+			case joaat("RANSACK_REACH_IN_CRAYSISH_HOLE_PICKUP"):
 				return 1773;
 			case joaat("WORLD_HUMAN_CONCERTINA_PICKUP_PUTDOWN"):
 				return 37;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_PICKUP"):
 				return 566;
-			case 415359671:
+			case joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PICKUP_0M5_0M5"):
 				return 1794;
 			case joaat("PROP_VEHICLE_WAGON_BOX_LOAD_2"):
 				return 443;
-			case 417960353:
+			case joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_F_LEFT"):
 				return 2112;
-			case 419796913:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M80"):
 				return 1750;
-			case 420892576:
+			case joaat("CIG_CARD_PAM_06"):
 				return 1068;
 			case joaat("PROP_CAMP_SEAT_CHAIR_TABLE_STEW_FALLBACK"):
 				return 101;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WALL"):
 				return 350;
-			case 425046062:
+			case joaat("RANSACK_ATTACHED_DS_23"):
 				return 1839;
 			case joaat("WORLD_ANIMAL_RACCOON_FLEE_HOLE"):
 				return 860;
 			case joaat("GENERIC_SIT_GROUND_SCENARIO"):
 				return 268;
-			case 428946548:
+			case joaat("WB_EGG_NEST_VULTURE"):
 				return 2329;
-			case 429473903:
+			case joaat("PROP_PLAYER_PRPTY_KNEEL_CHEST"):
 				return 1472;
 			case joaat("WORLD_ANIMAL_GOAT_SLEEPING"):
 				return 820;
-			case 430219797:
+			case joaat("WB_DISCO_PIG_MASK"):
 				return 1274;
 			case joaat("WORLD_HUMAN_COTTONBOX_DUMP"):
 				return 521;
-			case 433005472:
+			case joaat("WB_DISCO_MEDITATING_MONK"):
 				return 1254;
-			case 434713043:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M0"):
 				return 1695;
-			case 438198136:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_CLOSE_B"):
 				return 1644;
-			case 438889198:
+			case joaat("MP_TCARD_KING_WANDS"):
 				return 2273;
 			case joaat("WORLD_ANIMAL_HORSE_SLEEPING"):
 				return 831;
-			case 447176986:
+			case joaat("SPECIAL_PED_GJ02_STAND_BAR_DRINKING"):
 				return 2490;
-			case 450183406:
+			case joaat("PROP_CAMP_HOSEA_SEAT_CHAIR_CARVE_FLOAT"):
 				return 2465;
-			case 450422829:
+			case joaat("SC_WORLD_HUMAN_MOURNING"):
 				return 2478;
-			case 452617901:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO"):
 				return 1982;
 			case joaat("WORLD_ANIMAL_FOX_RESTING"):
 				return 810;
 			case joaat("WORLD_HUMAN_CHAMBERPOT_PUTDOWN"):
 				return 509;
-			case 457229797:
+			case joaat("WB_DISCO_BLACK_SHEEP"):
 				return 1189;
-			case 458151109:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS_MOONSHINE"):
 				return 410;
 			case joaat("WORLD_HUMAN_BROOM"):
 				return 492;
-			case 459984501:
+			case joaat("CNV_CAMP_CFJM4_JOHN_EXIT"):
 				return 944;
 			case joaat("MP_LOBBY_WORLD_HUMAN_STARE_STOIC"):
 				return 163;
 			case joaat("WORLD_HUMAN_DRINK_PUT_DOWN_TABLE"):
 				return 336;
-			case 461493407:
+			case joaat("LEVDES_SPAWN_TEST_GENERIC_LETTER"):
 				return 1418;
 			case joaat("PROP_VEHICLE_WAGON_CHICKEN_CRATE_UNLOAD_2"):
 				return 449;
-			case 469031280:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_CARVE_LURE"):
 				return 2466;
 			case joaat("WORLD_HUMAN_BOOK_PICKUP_PUTDOWN_GROUND"):
 				return 27;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_ANCIENT_HATCHET"):
 				return 1557;
-			case 473793001:
+			case joaat("CNV_CAMP_CFUN1_GEN_FEMALE_EXIT"):
 				return 946;
-			case 482808744:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_0M35"):
 				return 1609;
-			case 485363387:
+			case joaat("CNV_CAMP_CFJM1_GEN_MALE_A_EXIT"):
 				return 923;
 			case joaat("WORLD_HUMAN_BOOK_PICKUP_GROUND_NO_BOOK"):
 				return 321;
 			case joaat("PROP_CAMP_CAULDRON_HANG"):
 				return 78;
-			case 492051452:
+			case joaat("SC_CAMP_VIG_DUTCH_START_PHONOGRAPH"):
 				return 2494;
-			case 492107212:
+			case joaat("MP_ARROWHEAD_CRUDE"):
 				return 2167;
-			case 492744485:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE_HANDOFF"):
 				return 256;
-			case 495993521:
+			case joaat("GFH_PROP_HUMAN_SIT_DESK_WRITING"):
 				return 2391;
-			case 499456226:
+			case joaat("RANSACK_ATTACHED_P_SINK02X_MACLEANS"):
 				return 2141;
-			case 499797110:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M0_0M8_2M0"):
 				return 1958;
-			case 501995673:
+			case joaat("WB_DISCO_UTOPIAN_COLONY"):
 				return 1308;
-			case 502001704:
+			case joaat("PROP_HITCHINGGROUND"):
 				return 1127;
-			case 503860307:
+			case joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_1M20"):
 				return 1604;
-			case 504439316:
+			case joaat("LEVDES_SPAWN_PLANT_OREGANO"):
 				return 1393;
 			case joaat("WORLD_HUMAN_FIRE_GEN_NO_DRINKING"):
 				return 43;
-			case 513970265:
+			case joaat("WB_ROCK_CARVINGS"):
 				return 2629;
 			case joaat("WORLD_ANIMAL_FOX_FLEE"):
 				return 808;
-			case 515870905:
+			case joaat("CNV_CAMP_CFUN2_UNCLE_EXIT"):
 				return 954;
 			case joaat("WORLD_ANIMAL_CROW_EATING_GROUND"):
 				return 638;
-			case 523504733:
+			case joaat("LEVDES_SPAWN_PLANT_CROWSGARLIC"):
 				return 1391;
 			case joaat("WORLD_HUMAN_FEEDBAG_PICKUP"):
 				return 534;
-			case 526291251:
+			case joaat("RANSACK_REACH_OVER_CENTERED_GROUND_PICKUP"):
 				return 1888;
-			case 526725148:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_0M45"):
 				return 1706;
-			case 527370025:
+			case joaat("SC_WORLD_HUMAN_WILDERNESS_LOOTER"):
 				return 2487;
-			case 529202757:
+			case joaat("PROP_PLAYER_OPEN_CASHBOX_MP"):
 				return 1456;
-			case 532549969:
+			case joaat("CNV_CAMP_CFBW4_KEY_MALE_EXIT"):
 				return 916;
 			case joaat("PROP_VEHICLE_WAGON_BALE_LOAD_2"):
 				return 437;
 			case joaat("WORLD_HUMAN_WASH_FACE_BUCKET_GROUND_NO_BUCKET"):
 				return 239;
-			case 537842604:
+			case joaat("MP_JEWELRY_MOON_RING"):
 				return 2233;
-			case 538979249:
+			case joaat("RANSACK_FALLBACK_PICKUP_CROUCH_LH"):
 				return 1625;
 			case joaat("PROP_VEHICLE_WAGON_SACK_LOAD_2"):
 				return 471;
@@ -82964,45 +82964,45 @@ int func_1289(int iParam0, int iParam1)
 				return 14;
 			case joaat("WORLD_ANIMAL_SKUNK_FLEE_HOLE"):
 				return 876;
-			case 550135642:
+			case joaat("WB_DISCO_FOSSILIZED_MAN"):
 				return 1233;
-			case 551999935:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO"):
 				return 1986;
-			case 553276660:
+			case joaat("RANSACK_REACH_OVER_VOLUME_1M25_0M5_2M0"):
 				return 1897;
-			case 554573509:
+			case joaat("CIG_CARD_GRL_08"):
 				return 1010;
-			case 555565008:
+			case joaat("MP_JEWELRY_AMETHYST_NECKLACE"):
 				return 2215;
-			case 555612790:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M0"):
 				return 1747;
-			case 558222199:
+			case joaat("PROP_HUMAN_SEAT_BENCH_TIRED_SHAKY"):
 				return 2393;
-			case 560456382:
+			case joaat("MP_TCARD_ACE_SWORDS"):
 				return 2256;
-			case 562592628:
+			case joaat("RANSACK_REACH_IN_GROUND_HOLE_GENERIC_PROMPT"):
 				return 1883;
-			case 562630994:
+			case joaat("MP_LOBBY_SCENARIO_12"):
 				return 2372;
-			case 562970505:
+			case joaat("MP_ARROWHEAD_SLATE"):
 				return 2174;
-			case 563956065:
+			case joaat("LEVDES_SPAWN_SHOTGUNAMMO_OPENED"):
 				return 1409;
-			case 564695070:
+			case joaat("CNV_CAMP_CFJE3_JAVIER_EXIT"):
 				return 920;
-			case 565976741:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M0"):
 				return 1733;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X_COLOR"):
 				return 1526;
-			case 566938951:
+			case joaat("CNV_CAMP_CCBLL3_BILL_EXIT"):
 				return 897;
-			case 569502820:
+			case joaat("WB_DISCO_OLD_GRAVESTONES"):
 				return 1267;
 			case joaat("CIG_CARD_LND_10"):
 				return 1060;
-			case 570336578:
+			case joaat("SCRIPT_CF_EXCON_WS_SPEAKER_SITTING"):
 				return 2499;
-			case 570401976:
+			case joaat("MP_TCARD_PAGE_PENTACLES"):
 				return 2283;
 			case joaat("WORLD_HUMAN_WASH_FACE_BUCKET_GROUND"):
 				return 238;
@@ -83010,33 +83010,33 @@ int func_1289(int iParam0, int iParam1)
 				return 2497;
 			case joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M8_2M0"):
 				return 1895;
-			case 579020276:
+			case joaat("PROP_PLAYER_RE_MURDER_CAMP_ROCK_NOTE"):
 				return 2430;
-			case 580411614:
+			case joaat("WB_CAMPFIRE_LARGE"):
 				return 2588;
-			case 580883590:
+			case joaat("MP_ARROWHEAD_SPLINTERED"):
 				return 2175;
-			case 583581589:
+			case joaat("PROP_HUMAN_BUTCHER_DEER_ALWAYS"):
 				return 2518;
 			case joaat("PROP_CAMP_SEAT_STOOL_CAMPFIRE_PED_PLAYER"):
 				return 7;
-			case 585397373:
+			case joaat("MP_JEWELRY_RUDY_DNGL_EARRING"):
 				return 2242;
-			case 586138875:
+			case joaat("MP_LOBBY_SEATED_D"):
 				return 2379;
 			case joaat("WORLD_ANIMAL_CAT_EATING"):
 				return 746;
 			case joaat("WORLD_HUMAN_BUTCHER_RABBIT"):
 				return 2532;
-			case 587729686:
+			case joaat("WORLD_HUMAN_BUTCHER_RABBIT_ALWAYS"):
 				return 2533;
-			case 589651795:
+			case joaat("WORLD_ANIMAL_FISH_JUMPING"):
 				return 692;
 			case joaat("PROP_VEHICLE_WAGON_BOX_UNLOAD_2_NO_BOX"):
 				return 447;
-			case 590721838:
+			case joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PUTDOWN"):
 				return 1781;
-			case 591169603:
+			case joaat("CNV_CAMP_CCMCH1_MICAH_EXIT"):
 				return 907;
 			case joaat("WORLD_HUMAN_SKETCHBOOK_PICKUP_GROUND_FEMALE"):
 				return 397;
@@ -83044,39 +83044,39 @@ int func_1289(int iParam0, int iParam1)
 				return 1457;
 			case joaat("WORLD_CAMP_FIRE_STANDING"):
 				return 121;
-			case 597525083:
+			case joaat("WB_DISCO_DEAD_MINER"):
 				return 1215;
-			case 597682689:
+			case joaat("WORLD_CAMP_FIRE_COOKING"):
 				return 2525;
 			case joaat("WORLD_ANIMAL_PARROT_ON_GROUND"):
 				return 657;
 			case joaat("CIG_CARD_GRL_12"):
 				return 1014;
-			case 601867955:
+			case joaat("SCRIP_REMC_RET_MALE_B_POSE3"):
 				return 2439;
-			case 602269758:
+			case joaat("WB_DISCO_HORNET_NESTS"):
 				return 1244;
-			case 610589819:
+			case joaat("WB_EGG_NEST_DUCK"):
 				return 2321;
 			case joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_D"):
 				return 2512;
-			case 614601031:
+			case joaat("MP_JEWELRY_EMERALD_RING"):
 				return 2225;
-			case 615465554:
+			case joaat("WB_DISCO_FACE_IN_CLIFF"):
 				return 1227;
 			case joaat("WORLD_ANIMAL_HERON_ON_PERCH"):
 				return 651;
 			case joaat("CIG_CARD_AML_12"):
 				return 990;
-			case 620095944:
+			case joaat("WB_SPICE_WILD_MINT"):
 				return 2582;
 			case joaat("WORLD_PLAYER_INSPECT_POSTER_144CM_W32_2_H48_2_FOLD_VH_P_CS_WANTEDALIVE01X_SCT"):
 				return 1547;
-			case 621617219:
+			case joaat("CIG_CARD_GUN_05"):
 				return 1019;
 			case joaat("CIG_CARD_AML_10"):
 				return 988;
-			case 631990874:
+			case joaat("WB_EGG_NEST_HAWK"):
 				return 2325;
 			case joaat("WORLD_CAMP_BOWL_PUT_DOWN_WASHBASIN"):
 				return 114;
@@ -83084,7 +83084,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1554;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_LOAD_4"):
 				return 459;
-			case 637151746:
+			case joaat("RANSACK_REACH_OVER_VOLUME_OPEN_CRATE_PICKUP_0M5_0M5_0M40"):
 				return 1908;
 			case joaat("WORLD_PLAYER_CHORES_PICKUP_CHICKEN_EGGS_CRATE"):
 				return 1507;
@@ -83096,77 +83096,77 @@ int func_1289(int iParam0, int iParam1)
 				return 1452;
 			case joaat("LEVDES_SPAWN_ALASKAN_GINSENG_PICKUP"):
 				return 1324;
-			case 646833566:
+			case joaat("CIG_CARD_HRS_05"):
 				return 1031;
-			case 650111674:
+			case joaat("WB_PICKUP_COLLECTIBLE_JEWELRY"):
 				return 2350;
 			case joaat("WORLD_HUMAN_REPAIR_HIGH_WRENCH"):
 				return 575;
 			case joaat("PROP_PLAYER_SIT_SUPPER"):
 				return 2412;
-			case 652602175:
+			case joaat("CIG_CARD_PAM_07"):
 				return 1069;
-			case 655415262:
+			case joaat("WB_DISCO_BATS_IN_BARN"):
 				return 1186;
-			case 656484143:
+			case joaat("WB_DISCO_WHISKEY_TREE"):
 				return 1315;
-			case 657155772:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_MOONSHINE"):
 				return 411;
-			case 657843514:
+			case joaat("MP_TCARD_FIVE_CUPS"):
 				return 2262;
-			case 658733129:
+			case joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO_HANDOFF_PLAYER"):
 				return 242;
 			case joaat("PROP_HUMAN_SEAT_CRATE_CLEAN_BOOTS"):
 				return 310;
-			case 660966987:
+			case joaat("MP_LOBBY_SCENARIO_06"):
 				return 2366;
-			case 662036617:
+			case joaat("LEVDES_SPAWN_WHISKEY_BOTTLE"):
 				return 1429;
-			case 663276374:
+			case joaat("RANSACK_ATTACHED_BRICK_WALL"):
 				return 1805;
-			case 665864199:
+			case joaat("PROP_CAMP_CHARLES_SEAT_CHAIR_ARROW_FLETCH"):
 				return 2464;
 			case joaat("WORLD_HUMAN_STAND_GEN_MORNING"):
 				return 67;
-			case 668685328:
+			case joaat("WB_DISCO_METEOR_HOUSE"):
 				return 1257;
-			case 668969112:
+			case joaat("RANSACK_ATTACHED_P_BOOKCASE01X"):
 				return 2015;
-			case 669750263:
+			case joaat("RANSACK_ATTACHED_P_CHINACABINET01X"):
 				return 2040;
 			case joaat("WORLD_ANIMAL_BIG_CAT_SLEEPING"):
 				return 724;
 			case joaat("WORLD_ANIMAL_DEER_FLEE"):
 				return 767;
-			case 673669550:
+			case joaat("WB_DISCO_SUN_DIAL"):
 				return 1299;
-			case 675799862:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_MID_OPEN"):
 				return 1662;
-			case 675968469:
+			case joaat("WORLD_HAZARD_GATOR_PIT_LAND"):
 				return 1143;
 			case joaat("WORLD_ANIMAL_PIGEON_EAT_PERCHED"):
 				return 665;
-			case 676466743:
+			case joaat("RANSACK_SHOP_VOL_1M25_0M50_2M0"):
 				return 1932;
-			case 677005006:
+			case joaat("RANSACK_PUTDOWN_1M5_0M5_2M0"):
 				return 1770;
 			case joaat("PROP_VEHICLE_WAGON_BOX_LOAD_1"):
 				return 442;
-			case 685434522:
+			case joaat("WORLD_PLAYER_RE_ANIMAL_MAULING"):
 				return 2449;
-			case 689199900:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_LOW_L_ADLERS"):
 				return 1811;
-			case 689854558:
+			case joaat("MP_TCARD_PAGE_CUPS"):
 				return 2282;
-			case 696436162:
+			case joaat("MP_MOONSHINE_BAND_RESTING_WASHBOARD"):
 				return 251;
-			case 696549558:
+			case joaat("PROP_PLAYER_CHORES_WAGON_SACK_UNLOAD_1"):
 				return 1448;
 			case joaat("WORLD_ANIMAL_HORSE_GRAZING"):
 				return 824;
-			case 697996287:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR_HANDOFF"):
 				return 259;
-			case 703755620:
+			case joaat("CIG_CARD_PLT_06"):
 				return 1080;
 			case joaat("WORLD_HUMAN_BROOM_PUTDOWN"):
 				return 495;
@@ -83174,63 +83174,63 @@ int func_1289(int iParam0, int iParam1)
 				return 363;
 			case joaat("PROP_CAMP_JACK_ES_EAT_STEW"):
 				return 86;
-			case 706078864:
+			case joaat("RANSACK_ATTACHED_P_DRESSER09X"):
 				return 2072;
-			case 708861758:
+			case joaat("CNV_CAMP_CCHSH8_KEY_MALE_INTRO"):
 				return 906;
-			case 708947330:
+			case joaat("WORLD_PLAYER_RE_LOST_DOG_FEED"):
 				return 2453;
-			case 713309702:
+			case joaat("WB_DISCO_STRANGE_STATUES"):
 				return 1297;
-			case 713522856:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M25_0M8_2M0"):
 				return 1960;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W18_9_H28_2_FOLDVERTICALX2_P_CS_LETTERFOLDED01X"):
 				return 1531;
-			case 714483650:
+			case joaat("MP_COIN_1789_PNY"):
 				return 2187;
 			case joaat("WORLD_ANIMAL_HORSE_WALLOW"):
 				return 833;
-			case 718436607:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_0M85"):
 				return 1854;
 			case joaat("WORLD_ANIMAL_COW_INJURED_ON_GROUND"):
 				return 754;
-			case 720427300:
+			case joaat("WB_EGG_NEST_LOON"):
 				return 2327;
-			case 720741201:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED_PULLOUT_0M0_0M80"):
 				return 1850;
 			case joaat("WORLD_CAMP_BOWL_PICKUP_CRATE_TABLE"):
 				return 113;
-			case 722097259:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_LOW_RIGHT"):
 				return 1823;
 			case joaat("WORLD_HUMAN_LUMBER_PICKUP_2"):
 				return 552;
 			case joaat("RIDE"):
 				return 1132;
-			case 722940631:
+			case joaat("CIG_CARD_GRL_07"):
 				return 1009;
 			case joaat("WORLD_HUMAN_BOOK_TABLE_PICKUP"):
 				return 323;
 			case joaat("WORLD_ANIMAL_OWL_EATING_PERCHED"):
 				return 655;
-			case 729066301:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_LEFT_CLOSE"):
 				return 1645;
-			case 730474965:
+			case joaat("LEVDES_SPAWN_MOONSHINER_FLAVOR_1"):
 				return 1384;
-			case 731917036:
+			case joaat("WORLD_HUMAN_SACK_OUT_BIN_TARP"):
 				return 625;
-			case 731982681:
+			case joaat("WB_ORCHID_CIGAR"):
 				return 2568;
 			case joaat("WORLD_CAMP_JACK_ES_SLEEP"):
 				return 131;
 			case joaat("WORLD_HUMAN_MANDOLIN_PUTDOWN"):
 				return 213;
-			case 734765474:
+			case joaat("WB_DISCO_KILL_ZONE_02"):
 				return 1248;
-			case 735272401:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M8_0M5_2M0_TIGHT"):
 				return 1954;
 			case joaat("LEVDES_SPAWN_GOLDEN_CURRANT_PICKUP"):
 				return 1368;
-			case 737977713:
+			case joaat("WB_HERB_ALASKAN_GINSENG"):
 				return 2539;
 			case joaat("PROP_VEHICLE_WAGON_SACK_UNLOAD_2"):
 				return 474;
@@ -83238,43 +83238,43 @@ int func_1289(int iParam0, int iParam1)
 				return 764;
 			case joaat("WORLD_HUMAN_RIFLE_PICKUP_LEAN_NO_RIFLE"):
 				return 220;
-			case 745599470:
+			case joaat("RE_MURDER_CAMPFIRE_RANGED_SCRIPT"):
 				return 2434;
 			case joaat("WORLD_HUMAN_CROUCH_INSPECT_MOONSHINER_CAMP"):
 				return 529;
-			case 746416456:
+			case joaat("MP_JEWELRY_SPHR_BNGLE_BRACELET"):
 				return 2244;
-			case 750229998:
+			case joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD_HANDOFF"):
 				return 244;
-			case 750607202:
+			case joaat("CNV_CAMP_CFJM2_GEN_MALE_B_EXIT"):
 				return 931;
-			case 750926406:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_4_CLOSE"):
 				return 1669;
 			case joaat("RANSACK_ATTACHED_P_COMMODE01X"):
 				return 2041;
-			case 751483325:
+			case joaat("MP_JEWELRY_WHTGLD_DMND_RING"):
 				return 2252;
-			case 751811579:
+			case joaat("PROP_ROUNDEDHITCHINGPOSTTHATREQUIRESBEINGFACED"):
 				return 1131;
 			case joaat("WORLD_HUMAN_LEAN_POST_RIGHT_HAND_PLANTED"):
 				return 364;
-			case 752436745:
+			case joaat("WB_CAMPFIRE_GANG_ES"):
 				return 2587;
 			case joaat("WORLD_HUMAN_HAMMER_KNEEL"):
 				return 546;
-			case 754044632:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_1M20"):
 				return 1612;
-			case 756039399:
+			case joaat("RANSACK_ATTACHED_P_WASHSTAND03X"):
 				return 2136;
 			case joaat("WORLD_PLAYER_DRINK_WITCHES_BREW"):
 				return 1518;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W10_16_H15_24_P_CS_NOTE01X"):
 				return 1536;
-			case 758820539:
+			case joaat("RANSACK_ATTACHED_P_TABLEPREP02X"):
 				return 2126;
-			case 761676757:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M45"):
 				return 1715;
-			case 764300645:
+			case joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_C"):
 				return 2507;
 			case joaat("PROP_VEHICLE_WAGON_BALE_LOAD_1"):
 				return 436;
@@ -83282,25 +83282,25 @@ int func_1289(int iParam0, int iParam1)
 				return 504;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TRAIN"):
 				return 308;
-			case 768242070:
+			case joaat("PROP_PLAYER_OPEN_PISTOLCHEST_BED_DA_REVOLVER"):
 				return 1461;
-			case 771327210:
+			case joaat("WB_MUSHROOM_PARASOL_MUSHROOM"):
 				return 2565;
 			case joaat("PROP_PLAYER_SIT_ABERDEEN_DRINKING"):
 				return 2410;
-			case 773114028:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_0M70"):
 				return 1867;
-			case 773397373:
+			case joaat("RANSACK_BRICK_WALL"):
 				return 1597;
-			case 777511044:
+			case joaat("CIG_CARD_SPT_06"):
 				return 1092;
 			case joaat("WORLD_PLAYER_SEAT_LEDGE_HIDDEN"):
 				return 1572;
-			case 781550511:
+			case joaat("CNV_CAMP_CFUN2_GEN_MALE_A_EXIT"):
 				return 950;
-			case 781570345:
+			case joaat("WB_FLOWER_WISTERIA"):
 				return 2346;
-			case 782660593:
+			case joaat("RANSACK_ATTACHED_P_DRESSER07X"):
 				return 2071;
 			case joaat("WORLD_ANIMAL_COYOTE_DIGGING"):
 				return 757;
@@ -83308,149 +83308,149 @@ int func_1289(int iParam0, int iParam1)
 				return 1144;
 			case joaat("WORLD_ANIMAL_CAT_SITTING"):
 				return 748;
-			case 794701052:
+			case joaat("MP_LOBBY_SCENARIO_13"):
 				return 2373;
-			case 795742498:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M60"):
 				return 1725;
-			case 795896456:
+			case joaat("WB_DISCO_LIGHTNING_TREES"):
 				return 1250;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_EATING_KNIFE_FORK"):
 				return 2523;
-			case 807042387:
+			case joaat("TS_VAL_HIDEMAP_PIECE_01"):
 				return 1161;
 			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED"):
 				return 1852;
 			case joaat("WORLD_ANIMAL_BUCK_INJURED_ON_GROUND"):
 				return 733;
-			case 812671620:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M0_0M5_2M0"):
 				return 1956;
 			case joaat("RANSACK_ATTACHED_P_MEDICINECHEST01X"):
 				return 2091;
-			case 815223604:
+			case joaat("CIG_CARD_VEH_01"):
 				return 1099;
-			case 816253701:
+			case joaat("WB_DISCO_POWDER_KEG"):
 				return 1280;
 			case joaat("PROP_HUMAN_PIANO_SKETCHY"):
 				return 167;
 			case joaat("WORLD_HUMAN_BARCUSTOMER_BEER"):
 				return 2527;
-			case 817984844:
+			case joaat("RANSACK_REACH_OVER_VOLUME_SHELF_TOP_0M5_0M5_1M50"):
 				return 1910;
 			case joaat("LEVDES_SPAWN_AGED_PIRATE_RUM"):
 				return 1323;
-			case 819339686:
+			case joaat("CIG_CARD_ACT_09"):
 				return 975;
-			case 822224705:
+			case joaat("MP_FME_TH_ROCK_PILE"):
 				return 1155;
-			case 824314133:
+			case joaat("WORLD_CAMP_PEARSON_LEAN_TABLE_SHUFFLE_CARDS"):
 				return 2491;
 			case joaat("WORLD_ANIMAL_DOG_RESTING"):
 				return 788;
-			case 830115903:
+			case joaat("RANSACK_ATTACHED_P_CABINET11X"):
 				return 2027;
 			case joaat("WORLD_HUMAN_STARE_STOIC"):
 				return 230;
-			case 831075093:
+			case joaat("LEVDES_SPAWN_MONEYSTACK"):
 				return 1382;
-			case 834846614:
+			case joaat("SCRIP_REMC_RET_MALE_A_POSE3"):
 				return 2437;
-			case 836364870:
+			case joaat("PROP_ANIMAL_DOG_EATING"):
 				return 695;
-			case 837758692:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M0"):
 				return 1756;
 			case joaat("WORLD_HUMAN_BROOM_WORKING"):
 				return 497;
-			case 839791972:
+			case joaat("RANSACK_REACH_OVER_PICKUP_1M5_0M5_2M0"):
 				return 1790;
-			case 843794152:
+			case joaat("RANSACK_ATTACHED_CHEST_MED_PULLOUT_0M0"):
 				return 1807;
 			case joaat("WORLD_HUMAN_FIRE_STAND"):
 				return 158;
-			case 844081111:
+			case joaat("PULLOUT_PROP_LOCKBOX_MED_0M0_0M85"):
 				return 1589;
-			case 845630515:
+			case joaat("LEVDES_SPAWN_TOBACCO"):
 				return 1426;
 			case joaat("PROP_HUMAN_SEAT_STUMP_SHARPEN_AXE_NO_AXE"):
 				return 434;
-			case 849042336:
+			case joaat("LEVDES_SPAWN_PLANT_PARASOLMUSHROOM"):
 				return 1394;
 			case joaat("EA_HUMAN_FIRE_GEN"):
 				return 0;
-			case 853834207:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M80"):
 				return 1741;
 			case joaat("WORLD_HUMAN_GRAVEDIG"):
 				return 624;
 			case joaat("WORLD_ANIMAL_VULTURE_SUNNING"):
 				return 686;
-			case 857607577:
+			case joaat("WORLD_HUMAN_STAND_WAITING_CARRYING"):
 				return 2155;
-			case 858952896:
+			case joaat("WB_DISCO_BRUSH_FIRE"):
 				return 1197;
-			case 859201438:
+			case joaat("WB_HUNTING_ZONE_BEAR_LEGENDARY"):
 				return 2597;
 			case joaat("WORLD_HUMAN_BUCKET_PICKUP_FULL"):
 				return 501;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_LOAD_3"):
 				return 458;
-			case 860937518:
+			case joaat("MP_TCARD_FIVE_SWORDS"):
 				return 2264;
 			case joaat("PROP_VEHICLE_WAGON_BALE_UNLOAD_1_NO_BALE"):
 				return 439;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_INTERACTION"):
 				return 368;
-			case 861345651:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_0M80"):
 				return 1845;
-			case 862260731:
+			case joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_F_RIGHT"):
 				return 2113;
-			case 865474133:
+			case joaat("MP_TCARD_EIGHT_PENTACLES"):
 				return 2259;
-			case 869316798:
+			case joaat("WB_DIG_BURIED_RANDOM_SNOW"):
 				return 2317;
-			case 869401879:
+			case joaat("CIG_CARD_PAM_04"):
 				return 1066;
-			case 870395400:
+			case joaat("WB_DISCO_DEAD_SNAKE"):
 				return 1216;
 			case joaat("WORLD_HUMAN_BADASS"):
 				return 317;
 			case joaat("LEVDES_SPAWN_GINSENG_ELIXER"):
 				return 1367;
-			case 871999347:
+			case joaat("MP_LOBBY_SCENARIO_01"):
 				return 2361;
-			case 872022591:
+			case joaat("LEVDES_SPAWN_SNACKS"):
 				return 1410;
 			case joaat("WORLD_HUMAN_CLIPBOARD_PICKUP"):
 				return 193;
 			case joaat("PROP_CAMP_JAVIER_SEAT_CHAIR_CRICKETS"):
 				return 89;
-			case 874772745:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M0"):
 				return 1686;
-			case 874796504:
+			case joaat("LEVDES_SPAWN_GUN_OIL"):
 				return 1369;
-			case 874854362:
+			case joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M5_2M0"):
 				return 1893;
-			case 876966148:
+			case joaat("CNV_CAMP_CFAM1_KEY_MALE_A_EXIT"):
 				return 913;
-			case 877039894:
+			case joaat("MP_TCARD_ACE_CUPS"):
 				return 2254;
 			case joaat("WORLD_HUMAN_MANDOLIN_PICKUP_PUTDOWN"):
 				return 54;
-			case 877658416:
+			case joaat("RANSACK_ATTACHED_CHEST_MED_PULLOUT_0M0_MP_SYNC_GOTO"):
 				return 1978;
-			case 877778044:
+			case joaat("MP_HRLM_BRUSH_BOAR"):
 				return 2200;
-			case 879366011:
+			case joaat("MP_ARROWHEAD_FLINT"):
 				return 2169;
-			case 879716708:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_TIGHT_MP_SYNC_GOTO"):
 				return 1984;
 			case joaat("LEVDES_SPAWN_HUMMINGBIRD_SAGE_PICKUP"):
 				return 1372;
 			case joaat("PROP_VEHICLE_WAGON_BOX_LOAD_UNLOAD_1"):
 				return 20;
-			case 883965838:
+			case joaat("MP_JEWELRY_SPHR_BRACELET"):
 				return 2245;
-			case 884959174:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M45"):
 				return 1753;
-			case 887682613:
+			case joaat("LEVDES_SPAWN_PLANT_RAMSHEAD"):
 				return 1395;
 			case joaat("PROP_PLAYER_SEAT_CHAIR_PLAYER_CAMP"):
 				return 1479;
@@ -83458,43 +83458,43 @@ int func_1289(int iParam0, int iParam1)
 				return 1501;
 			case joaat("PROP_CAMP_SEAT_BENCH_STEW"):
 				return 95;
-			case 892032571:
+			case joaat("LEVDES_SPAWN_CIG"):
 				return 1349;
-			case 893268186:
+			case joaat("WORLD_HUMAN_WASH_DISHES_TABLE_LEFT"):
 				return 2534;
 			case joaat("WORLD_ANIMAL_CHICKEN_SLEEPING"):
 				return 635;
-			case 896364936:
+			case joaat("WB_COLLECTIBLE_POSTER"):
 				return 2590;
-			case 899090818:
+			case joaat("WB_DISCO_WITCHES_CAULDRON"):
 				return 1317;
-			case 899984418:
+			case joaat("WB_DISCO_DEAD_CHINESE_TRAVELLER"):
 				return 1212;
-			case 902935343:
+			case joaat("WB_DISCO_CRASHED_AIRSHIP"):
 				return 1209;
 			case joaat("WORLD_HUMAN_SEAT_LEDGE_HARMONICA"):
 				return 222;
-			case 904665444:
+			case joaat("MP_TCARD_QUEEN_CUPS"):
 				return 2286;
-			case 911050887:
+			case joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_C"):
 				return 2503;
-			case 918020448:
+			case joaat("RANSACK_REACH_IN_WALL_HOLE_0M3_GENERIC_PROMPT"):
 				return 1885;
-			case 918603353:
+			case joaat("WB_DISCO_METEORITE"):
 				return 1259;
-			case 920290480:
+			case joaat("PLAYER_CAMP_MARKER"):
 				return 1433;
 			case joaat("WORLD_CAMP_DUTCH_SMOKE_CIGAR"):
 				return 115;
-			case 920579087:
+			case joaat("LEVDES_SPAWN_PLANT_EVERGREENHUCKLEBERRY"):
 				return 1392;
 			case joaat("WORLD_HUMAN_LEAN_WALL_DRINKING"):
 				return 374;
 			case joaat("PROP_HUMAN_SEAT_BENCH_JAW_HARP_DOWNBEAT"):
 				return 179;
-			case 933272312:
+			case joaat("MP_LOBBY_CROUCHING_B"):
 				return 2357;
-			case 934878503:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_OPEN_B"):
 				return 1642;
 			case joaat("PROP_HUMAN_SEAT_BENCH"):
 				return 278;
@@ -83502,17 +83502,17 @@ int func_1289(int iParam0, int iParam1)
 				return 2508;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_SEWING_AND_KNITTING"):
 				return 8;
-			case 939659651:
+			case joaat("CIG_CARD_PLT_07"):
 				return 1081;
 			case joaat("LEVDES_SPAWN_WILD_TOBACCO_PICKUP"):
 				return 1431;
 			case joaat("PROP_VEHICLE_WAGON_RUM_CRATE_UNLOAD_2"):
 				return 469;
-			case 944017471:
+			case joaat("WB_DISCO_BOOTS_NOTE_RANGE"):
 				return 1192;
-			case 947363991:
+			case joaat("MP_ARROWHEAD_AGATE"):
 				return 2164;
-			case 949215578:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M80"):
 				return 1693;
 			case joaat("WORLD_HUMAN_LEAN_TABLE_SHARPEN_KNIFE"):
 				return 373;
@@ -83520,29 +83520,29 @@ int func_1289(int iParam0, int iParam1)
 				return 172;
 			case joaat("WORLD_HUMAN_FAN_MALE_SAL1"):
 				return 345;
-			case 951967118:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M5_0M5_2M0"):
 				return 1964;
 			case joaat("PROP_PLAYER_GENERIC_PAMPHLET_W11_5_H20_5_FLOOR_STASH"):
 				return 2401;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_WHITTLE"):
 				return 309;
-			case 955562538:
+			case joaat("WB_TAXIDERMY_NOTICE"):
 				return 2632;
 			case joaat("RANSACK_ATTACHED_P_WALNUTHUTCH01X"):
 				return 2133;
-			case 958776644:
+			case joaat("MP_COIN_1797_GLD_EAG"):
 				return 2194;
 			case joaat("PROP_HUMAN_SEAT_BENCH_CONCERTINA"):
 				return 169;
-			case 959936720:
+			case joaat("RANSACK_ENVELOPE_TEST"):
 				return 1436;
 			case joaat("WORLD_HUMAN_TREE_CHOP_RAYFIRE"):
 				return 613;
-			case 963459231:
+			case joaat("WORLD_HUMAN_SMOKE_CARRYING"):
 				return 2154;
-			case 964564385:
+			case joaat("WB_DISCO_MESSAGE_BOTTLE_1"):
 				return 1255;
-			case 966493677:
+			case joaat("RANSACK_ATTACHED_P_COMMODINI01X"):
 				return 2042;
 			case joaat("WORLD_HUMAN_SUGAR_SACK_PICKUP_2"):
 				return 611;
@@ -83556,11 +83556,11 @@ int func_1289(int iParam0, int iParam1)
 				return 769;
 			case joaat("PROP_CAMP_DUTCH_CHESS"):
 				return 80;
-			case 975923321:
+			case joaat("RANSACK_ATTACHED_P_DESK08X_L"):
 				return 2058;
-			case 979549082:
+			case joaat("RANSACK_ATTACHED_P_TROLLEYMAILDESK_01X"):
 				return 2129;
-			case 980619506:
+			case joaat("PROP_ANIMAL_GOAT_DRINK_TROUGH"):
 				return 697;
 			case joaat("WORLD_CAMP_JACK_SKY"):
 				return 136;
@@ -83570,41 +83570,41 @@ int func_1289(int iParam0, int iParam1)
 				return 585;
 			case joaat("WORLD_HUMAN_DRUNK_BAR_SLUMPED"):
 				return 340;
-			case 984162035:
+			case joaat("WB_DISCO_FLYING_MACHINE"):
 				return 1232;
-			case 985136483:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_1M05"):
 				return 1708;
-			case 988268170:
+			case joaat("MP_COIN_1798_SLV_DLR"):
 				return 2195;
 			case joaat("WORLD_HUMAN_LUMBER_PICKUP_3"):
 				return 553;
-			case 990258706:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M80"):
 				return 1726;
-			case 991577872:
+			case joaat("SC_PROP_HUMAN_TORCH_TORCAP_A"):
 				return 2473;
-			case 991715917:
+			case joaat("RANSACK_ATTACHED_P_NIGHTSTANDSIX01"):
 				return 2096;
 			case joaat("WORLD_ANIMAL_SPARROW_DRINK_GROUND"):
 				return 676;
-			case 999640896:
+			case joaat("LEVDES_SPAWN_DEATHASSIST_POTENT_HORSE_STIMULANT"):
 				return 1355;
 			case joaat("GENERIC_SEAT_BENCH_SCENARIO"):
 				return 265;
-			case 1002769919:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M0"):
 				return 1738;
 			case joaat("WORLD_HUMAN_CAULDRON_STIR_ALWAYS"):
 				return 154;
-			case 1009293668:
+			case joaat("RANSACK_FALLBACK_PICKUP_LH"):
 				return 1626;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_45CM_PAPER_W15_1_H24_FOLDVERTICAL_S_MOLLYLOVELETTER"):
 				return 1523;
 			case joaat("WORLD_HUMAN_BOX_PICKUP_2"):
 				return 487;
-			case 1013172540:
+			case joaat("MP_TCARD_ACE_WANDS"):
 				return 2257;
-			case 1015352373:
+			case joaat("SC_CAMP_VIG_FIRE_BLOW"):
 				return 2495;
-			case 1016517991:
+			case joaat("CIG_CARD_LND_01"):
 				return 1051;
 			case joaat("CIG_CARD_VEH_10"):
 				return 1108;
@@ -83612,27 +83612,27 @@ int func_1289(int iParam0, int iParam1)
 				return 499;
 			case joaat("PROP_PLAYER_RE_MOONSHINE_ADD_PLANT"):
 				return 2429;
-			case 1020485513:
+			case joaat("MP_JEWELRY_TURQUOISE_BRACELET"):
 				return 2249;
 			case joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1"):
 				return 1484;
-			case 1021152268:
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_1_OPEN"):
 				return 1664;
 			case joaat("WORLD_HUMAN_COAL_SACK_OUT_CART_TARP"):
 				return 515;
-			case 1021602412:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_TIGHT"):
 				return 1870;
-			case 1025600584:
+			case joaat("CIG_CARD_VEH_02"):
 				return 1100;
-			case 1026701561:
+			case joaat("LEVDES_SPAWN_WHISKEY_BOTTLE_OPENED"):
 				return 1430;
-			case 1027184951:
+			case joaat("RANSACK_ATTACHED_P_TABLE45X"):
 				return 2109;
 			case joaat("PROP_HUMAN_SEAT_BENCH_MOONSHINER_CAMP"):
 				return 280;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_BANJO_DOWNBEAT"):
 				return 185;
-			case 1034443817:
+			case joaat("RANSACK_REACH_OVER_VOLUME_1M25_0M8_2M0"):
 				return 1898;
 			case joaat("RANSACK_ATTACHED_P_ARMOIR02X"):
 				return 2003;
@@ -83640,7 +83640,7 @@ int func_1289(int iParam0, int iParam1)
 				return 212;
 			case joaat("WORLD_ANIMAL_SKUNK_DIGGING"):
 				return 874;
-			case 1037513717:
+			case joaat("LEVDES_COMPASS"):
 				return 1321;
 			case joaat("WORLD_ANIMAL_CAROLINAPARAKEET_ON_PERCH"):
 				return 631;
@@ -83652,19 +83652,19 @@ int func_1289(int iParam0, int iParam1)
 				return 140;
 			case joaat("WORLD_ANIMAL_TURKEY_GRAZING_DOMESTIC"):
 				return 681;
-			case 1045958732:
+			case joaat("WB_HERB_ENGLISH_MACE_SINGLE"):
 				return 2546;
-			case 1047639041:
+			case joaat("MP_JEWELRY_BLCK_PEARL_NECKLACE"):
 				return 2216;
 			case joaat("WORLD_HUMAN_SUGAR_SACK_PICKUP_1"):
 				return 610;
-			case 1049986774:
+			case joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"):
 				return 2163;
-			case 1050255114:
+			case joaat("RANSACK_REACH_IN_TO_TABLE_OVER_PUTDOWN"):
 				return 1784;
-			case 1050466130:
+			case joaat("RANSACK_CHIMNEY_GENERIC_02"):
 				return 1876;
-			case 1050622421:
+			case joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_1M0_0M5_0M40"):
 				return 1904;
 			case joaat("WORLD_PLAYER_CHORES_FEEDBAG_PUTDOWN"):
 				return 1504;
@@ -83672,17 +83672,17 @@ int func_1289(int iParam0, int iParam1)
 				return 75;
 			case joaat("WORLD_ANIMAL_RACCOON_EATING_GROUND"):
 				return 859;
-			case 1055001530:
+			case joaat("WB_DISCO_OLD_DIRTY_CABIN"):
 				return 1264;
 			case joaat("PROP_PLAYER_TREASURE_HUNTER_BGV_OBELISK_LOOT"):
 				return 2415;
-			case 1056917224:
+			case joaat("RANSACK_REACH_OVER_VOLUME_LONGREACH_0M7_0M8_1M5"):
 				return 1905;
-			case 1058019971:
+			case joaat("PROP_PLAYER_PRPTY_SETUP_SHAVE"):
 				return 1474;
-			case 1058274893:
+			case joaat("WB_HUNTING_ZONE_BUCK"):
 				return 2602;
-			case 1059533441:
+			case joaat("MP_JEWELRY_GLD_BNGLE_BRACELET"):
 				return 2227;
 			case joaat("PROP_CAMP_SLEEP_PEW_COLD"):
 				return 103;
@@ -83694,17 +83694,17 @@ int func_1289(int iParam0, int iParam1)
 				return 789;
 			case joaat("WORLD_HUMAN_SMOKE_INTERACTION"):
 				return 405;
-			case 1065967293:
+			case joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_1M0"):
 				return 1603;
-			case 1066884055:
+			case joaat("CIG_CARD_GRL_02"):
 				return 1004;
 			case joaat("PROP_HUMAN_CAULDRON_SERVE_STEW_PLAYER"):
 				return 1441;
-			case 1070751362:
+			case joaat("CNV_CAMP_CFJM2_KEY_MALE_A_EXIT"):
 				return 933;
-			case 1070946599:
+			case joaat("STAND_IMPRECISE"):
 				return 1135;
-			case 1071768797:
+			case joaat("WB_DISCO_BUCK_CARCASS"):
 				return 1198;
 			case joaat("PROP_VEHICLE_WAGON_BALE_LOAD_UNLOAD_1"):
 				return 18;
@@ -83712,19 +83712,19 @@ int func_1289(int iParam0, int iParam1)
 				return 562;
 			case joaat("RANSACK_ATTACHED_P_MEDBED01X"):
 				return 2090;
-			case 1077665754:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_DISCO_BURNED_SETTLEMENT_PULLOUT_0M0_0M70"):
 				return 1862;
 			case joaat("WORLD_HUMAN_BUCKET_PICKUP_PIGFEED"):
 				return 502;
-			case 1078072565:
+			case joaat("CNV_CAMP_CCHSH8_JOHN_EXIT"):
 				return 902;
-			case 1080325001:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_PICKUP"):
 				return 1761;
-			case 1081757606:
+			case joaat("WORLD_HUMAN_DRINKING_MOONSHINE"):
 				return 414;
-			case 1084611512:
+			case joaat("CNV_CAMP_CCMCH2_MICAH_EXIT"):
 				return 908;
-			case 1086866717:
+			case joaat("RANSACK_ATTACHED_P_ARMOIR04X"):
 				return 2004;
 			case joaat("WORLD_PLAYER_RHO_GUN_BSMT_PEEK"):
 				return 2422;
@@ -83738,15 +83738,15 @@ int func_1289(int iParam0, int iParam1)
 				return 1574;
 			case joaat("WORLD_ANIMAL_BEAR_SNIFFING_GROUND"):
 				return 709;
-			case 1108217698:
+			case joaat("WB_HERB_BURDOCK_ROOT"):
 				return 2542;
-			case 1114677844:
+			case joaat("CIG_CARD_PAM_05"):
 				return 1067;
-			case 1115410643:
+			case joaat("WB_DISCO_GRAVE"):
 				return 1239;
-			case 1116478389:
+			case joaat("MAGGIE_SEAT_CHAIR_DESK_WRITING"):
 				return 2392;
-			case 1117767181:
+			case joaat("CNV_CAMP_CFUN1_KEY_MALE_B_EXIT"):
 				return 949;
 			case joaat("WORLD_HUMAN_SIT_GROUND_COFFEE_DRINK"):
 				return 384;
@@ -83754,25 +83754,25 @@ int func_1289(int iParam0, int iParam1)
 				return 1532;
 			case joaat("WORLD_ANIMAL_BIG_CAT_DRINKING"):
 				return 720;
-			case 1122160964:
+			case joaat("WB_ORCHID_DRAGONS_MOUTH"):
 				return 2570;
-			case 1123926974:
+			case joaat("MP_JEWELRY_TURQUOISE_RING"):
 				return 2250;
 			case joaat("RANSACK_ATTACHED_P_ENDTABLE01X"):
 				return 2079;
-			case 1125994490:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED"):
 				return 1871;
-			case 1127868139:
+			case joaat("WB_NON_INTERACTIVE_CAMPFIRE_UNDERPOT_IN_TOWNS"):
 				return 2621;
-			case 1128993359:
+			case joaat("RANSACK_ATTACHED_CHEST_MEDIUM_MP_SYNC_GOTO"):
 				return 1979;
 			case joaat("EA_HUMAN_FIRE_GEN_NO_DRINKING"):
 				return 1;
 			case joaat("WORLD_ANIMAL_GOAT_SLEEPING_DOMESTIC"):
 				return 821;
-			case 1135998270:
+			case joaat("WB_HERB_AMERICAN_GINSENG"):
 				return 2540;
-			case 1139675266:
+			case joaat("RANSACK_ATTACHED_P_HUTCH01X"):
 				return 2083;
 			case joaat("WORLD_HUMAN_SACK_OUT_CART_TARP"):
 				return 581;
@@ -83784,15 +83784,15 @@ int func_1289(int iParam0, int iParam1)
 		}
 		return -1;
 	}
-	if (iParam0 <= 2147443548)
+	if (iParam0 <= joaat("SC_WORLD_HUMAN_STRAW_BROOM_WORKING"))
 	{
 		switch (iParam0)
 		{
-			case 1146892774:
+			case joaat("RANSACK_ATTACHED_P_CABINET15X"):
 				return 2029;
-			case 1148734673:
+			case joaat("CNV_CAMP_CFJM1_KEY_MALE_B_EXIT"):
 				return 929;
-			case 1149776256:
+			case joaat("MP_COIN_1800_GLD_QTR"):
 				return 2198;
 			case joaat("PROP_HUMAN_PASSED_OUT_TABLE"):
 				return 277;
@@ -83800,13 +83800,13 @@ int func_1289(int iParam0, int iParam1)
 				return 1578;
 			case joaat("WORLD_ANIMAL_RABBIT_FLEE_HOLE"):
 				return 857;
-			case 1157205070:
+			case joaat("SC_AMB_VIG_VOMIT_WALL"):
 				return 2493;
 			case joaat("WORLD_ANIMAL_PIG_DRINK_GROUND"):
 				return 846;
-			case 1161082157:
+			case joaat("CIG_CARD_AML_09"):
 				return 987;
-			case 1162435810:
+			case joaat("WORLD_ANIMAL_SMALL_FLEE"):
 				return 893;
 			case joaat("WORLD_HUMAN_SACK_PUT_DOWN_2"):
 				return 586;
@@ -83814,39 +83814,39 @@ int func_1289(int iParam0, int iParam1)
 				return 106;
 			case joaat("PROP_HUMAN_CAULDRON_SERVE_STEW"):
 				return 105;
-			case 1176085006:
+			case joaat("PULLOUT_PROP_LOCKBOX_SML_0M0_1M0"):
 				return 1593;
-			case 1176345841:
+			case joaat("RANSACK_ATTACHED_P_HUTCH02X"):
 				return 2084;
 			case joaat("WORLD_ANIMAL_EAGLE_ON_PERCH"):
 				return 647;
-			case 1177805349:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_0M70"):
 				return 1610;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER09X"):
 				return 1527;
 			case joaat("WORLD_ANIMAL_GOAT_INJURED_ON_GROUND"):
 				return 817;
-			case 1179614263:
+			case joaat("MP_TCARD_NINE_CUPS"):
 				return 2278;
-			case 1180873168:
+			case joaat("CNV_CAMP_CFJE3_KEY_MALE_A_EXIT"):
 				return 921;
-			case 1182859337:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M0"):
 				return 1699;
-			case 1186922655:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M45"):
 				return 1748;
-			case 1187533117:
+			case joaat("RANSACK_VOLUME_1M5_0M8_2M0"):
 				return 1946;
 			case joaat("WORLD_ANIMAL_BOAR_GRAZING"):
 				return 727;
-			case 1190050632:
+			case joaat("RANSACK_ATTACHED_P_DESK09X"):
 				return 2061;
 			case joaat("WORLD_HUMAN_HAMMER_TABLE"):
 				return 547;
-			case 1193272637:
+			case joaat("WB_DISCO_TREE_STRUCK"):
 				return 1305;
-			case 1193417037:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_CLEAN_RIFLE_SMOKE_JOE"):
 				return 2397;
-			case 1193661374:
+			case joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING_GENERIC_PROMPT"):
 				return 1772;
 			case joaat("DRIVE"):
 				return 1119;
@@ -83858,83 +83858,83 @@ int func_1289(int iParam0, int iParam1)
 				return 388;
 			case joaat("WORLD_ANIMAL_HORSE_GRAZING_CAMP"):
 				return 825;
-			case 1207677214:
+			case joaat("RANSACK_VOLUME_REACH_OVER_PICKUP_1M70_0M80_2M0"):
 				return 1975;
-			case 1208255499:
+			case joaat("WB_DISCO_CEREMONIAL_HATCHET"):
 				return 1202;
-			case 1210137256:
+			case joaat("WB_HUNTING_ZONE_MOOSE"):
 				return 2609;
-			case 1210310972:
+			case joaat("RANSACK_ATTACHED_P_WASHBASINREGAL01X"):
 				return 2134;
-			case 1210472036:
+			case joaat("RANSACK_ATTACHED_P_SIDETABLE01X"):
 				return 2101;
-			case 1211791851:
+			case joaat("WB_DISCO_BOAT_IN_TREE"):
 				return 1190;
-			case 1212196898:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_MP_SYNC_GOTO"):
 				return 1981;
 			case joaat("WORLD_HUMAN_BANJO_PICKUP_PUTDOWN_W_PROP"):
 				return 26;
-			case 1217254422:
+			case joaat("RANSACK_VOLUME_1M0_0M5_2M0_NO_REACH_UP"):
 				return 1941;
-			case 1217342730:
+			case joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_D"):
 				return 2504;
-			case 1218808474:
+			case joaat("WB_EGG_NEST_GOOSE"):
 				return 2324;
-			case 1220378078:
+			case joaat("PROP_PLAYER_RE_MURDER_CAMP_TREE_NOTE"):
 				return 2432;
-			case 1222150012:
+			case joaat("WB_FLOWER_BLOOD_FLOWER"):
 				return 2334;
 			case joaat("WORLD_ANIMAL_DONKEY_SLEEPING"):
 				return 797;
-			case 1222832172:
+			case joaat("MP_ARROWHEAD_BONE"):
 				return 2165;
 			case joaat("RANSACK_ATTACHED_P_DESK08X_R"):
 				return 2059;
-			case 1224013164:
+			case joaat("WB_ORCHID_ACUNAS_STAR"):
 				return 2567;
-			case 1224129984:
+			case joaat("WB_DISCO_UTE_WICKUP"):
 				return 1307;
-			case 1228786282:
+			case joaat("WB_NON_INTERACTIVE_CAMPFIRE"):
 				return 2618;
 			case joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY"):
 				return 2528;
-			case 1234846913:
+			case joaat("WORLD_ANIMAL_ALLIGATOR_FLEE"):
 				return 895;
-			case 1238063659:
+			case joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_0M35"):
 				return 1615;
 			case joaat("PROP_HUMAN_SLEEP_BED_PILLOW_HIGH"):
 				return 314;
 			case joaat("PROP_VEHICLE_WAGON_COTTONBOX_UNLOAD_2_GINNED"):
 				return 454;
-			case 1240345684:
+			case joaat("MP_TCARD_FIVE_WANDS"):
 				return 2265;
 			case joaat("WORLD_PLAYER_CARCASS_CUT_2M15"):
 				return 1491;
-			case 1241103201:
+			case joaat("WB_DISCO_GIANT_REMAINS"):
 				return 1238;
-			case 1242478275:
+			case joaat("WORLD_PLAYER_PLACE_BAIT_NORMAL"):
 				return 1582;
-			case 1243887494:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_0M80_MP_SYNC_GOTO"):
 				return 1989;
-			case 1244026355:
+			case joaat("RANSACK_ATTACHED_P_FILECABINETDOCTOR01X"):
 				return 2081;
-			case 1244643118:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_CLOSE_A"):
 				return 1643;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_HATCHET_DOUBLE_BIT_RUSTED"):
 				return 1559;
-			case 1244878437:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M5_0M5_2M0"):
 				return 1973;
-			case 1244936443:
+			case joaat("PULLOUT_PROP_LOCKBOX_LRG_0M0_0M85"):
 				return 1586;
-			case 1246310848:
+			case joaat("WB_HERB_BLACK_CURRANT"):
 				return 2541;
-			case 1247293257:
+			case joaat("WB_DISCO_KILL_ZONE"):
 				return 1247;
-			case 1247635643:
+			case joaat("PLAYER_CAMP_TOOL_NEW"):
 				return 1434;
-			case 1248800601:
+			case joaat("PROP_PLAYER_LOOT_FLOORBOARD_P_CS_RT_ENVELOPE01X"):
 				return 1454;
-			case 1249560493:
+			case joaat("LEVDES_CANTEEN"):
 				return 1319;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_READING"):
 				return 295;
@@ -83942,7 +83942,7 @@ int func_1289(int iParam0, int iParam1)
 				return 2024;
 			case joaat("WORLD_HUMAN_RIFLE_PICKUP_PUTDOWN_LEAN_CC_W_PROP"):
 				return 61;
-			case 1255549420:
+			case joaat("RANSACK_ATTACHED_P_DRESSER10X"):
 				return 2073;
 			case joaat("PROP_HUMAN_CAULDRON_SERVE_STEW_NO_POT"):
 				return 107;
@@ -83950,29 +83950,29 @@ int func_1289(int iParam0, int iParam1)
 				return 1562;
 			case joaat("WORLD_HUMAN_BALE_PICKUP_2"):
 				return 480;
-			case 1257937353:
+			case joaat("CIG_CARD_SPT_04"):
 				return 1090;
 			case joaat("WORLD_HUMAN_SHOPKEEPER_MALE_B"):
 				return 599;
-			case 1258987402:
+			case joaat("CIG_CARD_ART_08"):
 				return 998;
 			case joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2"):
 				return 1485;
-			case 1260056893:
+			case joaat("WB_DIG_BURIED_RANDOM"):
 				return 2315;
-			case 1263162521:
+			case joaat("WB_GATOR_EGG_NEST"):
 				return 2596;
 			case joaat("WORLD_ANIMAL_SEAGULL_RESTING_GROUND"):
 				return 673;
-			case 1268568298:
+			case joaat("MISSING_SCENARIO_THIS_IS_ASSERTING"):
 				return 1125;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_DESK_WRITING"):
 				return 430;
-			case 1273234535:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M80"):
 				return 1684;
-			case 1274239098:
+			case joaat("WORLD_PLAYER_MOONSHINE_GRAB_DRINK_FROM_BAR"):
 				return 2159;
-			case 1275144432:
+			case joaat("PROP_ANIMAL_SHEEP_DRINK_TROUGH"):
 				return 700;
 			case joaat("PROP_PLAYER_HIDDEN_CABINET"):
 				return 2402;
@@ -83984,65 +83984,65 @@ int func_1289(int iParam0, int iParam1)
 				return 335;
 			case joaat("WORLD_HUMAN_STRAW_BROOM_WORKING"):
 				return 609;
-			case 1288293061:
+			case joaat("PROP_PLAYER_TREASURE_HUNTER_PLAQUE_STATUE_LOOT"):
 				return 2424;
-			case 1289974751:
+			case joaat("RANSACK_CHIMNEY_GENERIC_01"):
 				return 1874;
-			case 1290045011:
+			case joaat("WB_DISCO_VIKING_GEAR"):
 				return 1310;
-			case 1292765231:
+			case joaat("WB_DISCO_PILE_SKULLS"):
 				return 1275;
-			case 1294299419:
+			case joaat("MP_JEWELRY_PEARL_RING"):
 				return 2238;
-			case 1297830245:
+			case joaat("RANSACK_REACH_OVER_VOLUME_NARROW_0M5_0M8_2M0"):
 				return 1907;
-			case 1298676815:
+			case joaat("CIG_CARD_PLT_08"):
 				return 1082;
 			case joaat("WORLD_HUMAN_FIRE_TEND_KNEEL"):
 				return 159;
-			case 1300611164:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_PICKUP"):
 				return 1704;
 			case joaat("WORLD_HUMAN_BANJO_PUTDOWN"):
 				return 191;
-			case 1302078710:
+			case joaat("WB_SPICE_OREGANO"):
 				return 2581;
 			case joaat("PROP_HUMAN_SEAT_BENCH_MANDOLIN_UPBEAT"):
 				return 183;
-			case 1307314385:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS_HANDOFF_PLAYER"):
 				return 254;
-			case 1308545316:
+			case joaat("RANSACK_ATTACHED_P_CABINETPOSTAL01X"):
 				return 2033;
-			case 1311766681:
+			case joaat("CIG_CARD_LND_02"):
 				return 1052;
 			case joaat("PROP_VEHICLE_WAGON_BALE_LOAD_UNLOAD_2"):
 				return 19;
-			case 1317919899:
+			case joaat("MP_LOBBY_SCENARIO_00"):
 				return 2360;
-			case 1318567553:
+			case joaat("WB_FLOWER_BITTERWEED"):
 				return 2332;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_LOAD_5"):
 				return 460;
 			case joaat("WORLD_HUMAN_FIRE_SIT"):
 				return 346;
-			case 1324260340:
+			case joaat("WB_DISCO_ANCIENT_SEALED_CLAY_URN"):
 				return 1178;
-			case 1326945204:
+			case joaat("WB_DISCO_BRA_SECRET"):
 				return 1193;
-			case 1329911409:
+			case joaat("WB_DISCO_AXE_IN_TREE"):
 				return 1182;
 			case joaat("WORLD_CAMP_FIRE_LAY_GROUND_SIDE"):
 				return 117;
-			case 1332095703:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED_PULLOUT_0M0_0M70"):
 				return 1872;
-			case 1332555329:
+			case joaat("CIG_CARD_INV_09"):
 				return 1047;
 			case joaat("PROP_HUMAN_WEAPON_DBSHOTGUN_PICKUP"):
 				return 10;
-			case 1336339027:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_1M20"):
 				return 1608;
-			case 1336579020:
+			case joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO_HANDOFF"):
 				return 241;
-			case 1337861328:
+			case joaat("CNV_CAMP_CFUN4_KEY_MALE_A_EXIT"):
 				return 964;
 			case joaat("WORLD_HUMAN_CAULDRON"):
 				return 32;
@@ -84052,17 +84052,17 @@ int func_1289(int iParam0, int iParam1)
 				return 1326;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_READ_NEWSPAPER"):
 				return 293;
-			case 1350522279:
+			case joaat("MP_JEWELRY_TOPAZ_RING"):
 				return 2247;
-			case 1352820450:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_TIGHT_MP_SYNC_GOTO"):
 				return 1996;
 			case joaat("WORLD_ANIMAL_PIG_INJURED_ON_GROUND"):
 				return 851;
-			case 1353246173:
+			case joaat("LEVDES_SPAWN_STRONGBOX_RUST"):
 				return 1414;
-			case 1355508089:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_HIGH"):
 				return 1820;
-			case 1357591727:
+			case joaat("MP_HRLM_HAIRPIN_METAL"):
 				return 2213;
 			case joaat("RANSACK_ATTACHED_P_ARMOIR05X"):
 				return 2005;
@@ -84070,81 +84070,81 @@ int func_1289(int iParam0, int iParam1)
 				return 2404;
 			case joaat("WORLD_ANIMAL_CALIFORNIACONDOR_ON_PERCH"):
 				return 630;
-			case 1365245800:
+			case joaat("CIG_CARD_GRL_01"):
 				return 1003;
-			case 1366101372:
+			case joaat("WB_DISCO_DREAMCATCHERS"):
 				return 1224;
-			case 1368822497:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_TIGHT"):
 				return 1848;
 			case joaat("WORLD_PLAYER_CHORES_VEHICLE_BOX_LOAD"):
 				return 1516;
 			case joaat("WORLD_PLAYER_CHORES_MILK_JUG_PICKUP_1"):
 				return 1505;
-			case 1371759506:
+			case joaat("PROP_HUMAN_TANNING_RACK_BRAINS"):
 				return 622;
 			case joaat("WORLD_ANIMAL_ELK_RESTING"):
 				return 803;
-			case 1374622682:
+			case joaat("WORLD_DEAD_BODY_SPAWN"):
 				return 1138;
-			case 1378560908:
+			case joaat("RANSACK_SHOP_VOL_1M0_0M50_2M0_TIGHT_ENVELOPE"):
 				return 1928;
-			case 1380964205:
+			case joaat("LEVDES_COFFEE_CUP"):
 				return 1320;
-			case 1381447131:
+			case joaat("MP_TCARD_PAGE_WANDS"):
 				return 2285;
 			case joaat("PROP_CAMP_MICAH_SEAT_CHAIR_CLEAN_GUN"):
 				return 94;
-			case 1381892893:
+			case joaat("MP_JEWELRY_ELK_TOOTH_EARRING"):
 				return 2223;
-			case 1383774960:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_DISCO_BURNED_SETTLEMENT_0M0"):
 				return 1596;
-			case 1385682936:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_CLOSE_B"):
 				return 1640;
-			case 1385956600:
+			case joaat("PROP_PLAYER_OPEN_FOOTLOCKER_MP_LOCAL"):
 				return 1458;
 			case joaat("WORLD_HUMAN_DRUNK_PASSED_OUT_FLOOR"):
 				return 343;
-			case 1386173291:
+			case joaat("SPECIAL_PED_GJ01_SEAT_CHAIR_TABLE_DRINKING"):
 				return 2489;
-			case 1386638752:
+			case joaat("CNV_CAMP_CFHM3_GEN_MALE_A_EXIT"):
 				return 917;
 			case joaat("WORLD_HUMAN_CAULDRON_NO_POT"):
 				return 34;
-			case 1391618133:
+			case joaat("WB_DISCO_OLD_FIREPIT"):
 				return 1265;
-			case 1391900352:
+			case joaat("MP_JEWELRY_GLD_PENDT_NECKLACE"):
 				return 2230;
-			case 1398045905:
+			case joaat("CIG_CARD_GUN_06"):
 				return 1020;
-			case 1399970529:
+			case joaat("WB_PROP_HANGING_CARCASS"):
 				return 2622;
-			case 1403978586:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_CULTURE"):
 				return 2144;
-			case 1403995973:
+			case joaat("WB_INTERACTIVE_CAMPFIRE_DFLT"):
 				return 2614;
-			case 1404848669:
+			case joaat("WB_DISCO_MESSAGE_BOTTLE_2"):
 				return 1256;
-			case 1407256401:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M5_0M8_2M0"):
 				return 1963;
-			case 1409565660:
+			case joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_A"):
 				return 2501;
-			case 1409752996:
+			case joaat("PROP_HUMAN_MOONSHINE_STIR_MASH"):
 				return 620;
 			case joaat("WORLD_PLAYER_CHORES_PITCH_FORK_PICKUP"):
 				return 1508;
-			case 1416906705:
+			case joaat("WB_EGG_NEST_EAGLE"):
 				return 2322;
 			case joaat("WORLD_ANIMAL_VULTURE_EATING_FROM_GROUND"):
 				return 683;
-			case 1419257506:
+			case joaat("FARMANIMAL"):
 				return 1121;
-			case 1419954406:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED_MP_SYNC_GOTO"):
 				return 1997;
-			case 1421921491:
+			case joaat("WB_ORCHID_LADY_OF_NIGHT"):
 				return 2572;
 			case joaat("LEVDES_SPAWN_AMERICAN_GINSENG_PICKUP"):
 				return 1325;
-			case 1429416313:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M0_0M8_2M0"):
 				return 1970;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_HATCHET_VIKING"):
 				return 1563;
@@ -84154,29 +84154,29 @@ int func_1289(int iParam0, int iParam1)
 				return 679;
 			case joaat("WORLD_HUMAN_SADDLE_PICKUP_STAND_NO_SADDLE"):
 				return 591;
-			case 1433900482:
+			case joaat("CNV_CAMP_CFJE3_KEY_MALE_B_EXIT"):
 				return 922;
-			case 1435546742:
+			case joaat("LEVDES_SPAWN_MEDICINE"):
 				return 1378;
-			case 1442007381:
+			case joaat("CIG_CARD_PAM_01"):
 				return 1063;
-			case 1442238332:
+			case joaat("PROP_PLAYER_OPEN_PISTOLCHEST_PISTOL_SCHO_BED"):
 				return 1463;
 			case joaat("WORLD_PLAYER_CHORES_BUCKET_PICKUP_FULL"):
 				return 1498;
-			case 1443601258:
+			case joaat("WB_DISCO_MICAH_CAMP"):
 				return 1260;
-			case 1444088734:
+			case joaat("MP_MOONSHINE_BAND_RESTING_PIANO"):
 				return 250;
-			case 1444251167:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_1M0"):
 				return 1607;
-			case 1444496914:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M0"):
 				return 1762;
 			case joaat("WORLD_CAMP_FIRE_SIT_GROUND"):
 				return 119;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_NOTE_80CM_PAPER_W15_24_H10_16_P_CS_NOTE01X_COMBAT"):
 				return 1539;
-			case 1448096276:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_1M0"):
 				return 1611;
 			case joaat("WORLD_PLAYER_PRPTY_FAST_TRAVEL"):
 				return 1569;
@@ -84184,93 +84184,93 @@ int func_1289(int iParam0, int iParam1)
 				return 542;
 			case joaat("PROP_HUMAN_SEAT_BENCH_MANDOLIN_DOWNBEAT"):
 				return 182;
-			case 1455709223:
+			case joaat("WORLD_HUMAN_SHOPKEEPER_MP"):
 				return 2398;
 			case joaat("WORLD_HUMAN_PEE"):
 				return 217;
 			case joaat("WORLD_ANIMAL_SQUIRREL_ON_LOG"):
 				return 879;
-			case 1458340379:
+			case joaat("MP_COIN_1700_NY_TKN"):
 				return 2185;
 			case joaat("RANSACK_ATTACHED_P_DRYSINK01X"):
 				return 2077;
-			case 1466135075:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_MILITARY"):
 				return 2146;
-			case 1468081052:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M45"):
 				return 1691;
-			case 1471613978:
+			case joaat("LEVDES_SPAWN_RIFLEAMMO"):
 				return 1405;
-			case 1472197696:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_1M05"):
 				return 1694;
-			case 1476594765:
+			case joaat("CNV_CAMP_CCHSH8_JOHN_INTRO"):
 				return 903;
-			case 1479448174:
+			case joaat("MP_HRLM_BRUSH_EBONY"):
 				return 2201;
 			case joaat("WORLD_HUMAN_SHOVEL_COAL_PICKUP"):
 				return 601;
-			case 1479634602:
+			case joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_0M70"):
 				return 1602;
-			case 1482001755:
+			case joaat("CIG_CARD_GRL_04"):
 				return 1006;
 			case joaat("WORLD_HUMAN_BOOK_TABLE_PUTDOWN"):
 				return 325;
-			case 1486312833:
+			case joaat("MINIGAME_FFF_PLAYER"):
 				return 2461;
 			case joaat("WORLD_PLAYER_PICKUP_MONEY_STACK_80CM"):
 				return 1556;
-			case 1488931084:
+			case joaat("RANSACK_ATTACHED_P_EXAMTBLEDOCTOR01X"):
 				return 2080;
-			case 1489517317:
+			case joaat("CIG_CARD_ART_07"):
 				return 997;
 			case joaat("WORLD_HUMAN_SIT_GROUND_READING_BOOK_STOW"):
 				return 390;
-			case 1493109034:
+			case joaat("RANSACK_ATTACHED_P_DESK14X"):
 				return 2063;
-			case 1493561739:
+			case joaat("MP_LOBBY_SCENARIO_03"):
 				return 2363;
-			case 1500194388:
+			case joaat("RANSACK_ATTACHED_P_TABLECOFFEE05X_B"):
 				return 2117;
-			case 1502807256:
+			case joaat("RANSACK_ATTACHED_P_DRYSINK03X"):
 				return 2078;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_50CM_PAPER_W15_1_H24_FOLDVERTICAL_P_CS_LETTER03X"):
 				return 1524;
-			case 1504407535:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS"):
 				return 252;
-			case 1506833252:
+			case joaat("WB_FLOWER_CREEK_PLUM_SINGLE"):
 				return 2341;
 			case joaat("WORLD_ANIMAL_BEARBLACK_SITTING"):
 				return 715;
-			case 1510555152:
+			case joaat("MP_TCARD_EIGHT_CUPS"):
 				return 2258;
-			case 1512260521:
+			case joaat("CIG_CARD_INV_06"):
 				return 1044;
-			case 1514562087:
+			case joaat("GFH_PROP_HUMAN_SEAT_CHAIR_KNIFE_BADASS"):
 				return 2390;
-			case 1514816507:
+			case joaat("CIG_CARD_INV_08"):
 				return 1046;
-			case 1515427200:
+			case joaat("MP_MOONSHINE_BAND_RESTING_FIDDLE"):
 				return 248;
 			case joaat("WORLD_HUMAN_LEAN_BARREL"):
 				return 358;
-			case 1516035921:
+			case joaat("CIG_CARD_AML_02"):
 				return 980;
 			case joaat("WORLD_HUMAN_RAKE_PICKUP"):
 				return 571;
-			case 1516213694:
+			case joaat("MP_COIN_1792_LIB_QTR"):
 				return 2188;
-			case 1519142390:
+			case joaat("RANSACK_SHOP_VOL_0M50_0M80_2M0"):
 				return 1923;
-			case 1522648243:
+			case joaat("MP_TCARD_SEVEN_WANDS"):
 				return 2293;
 			case joaat("WORLD_CAMP_GUARD_COLD"):
 				return 122;
-			case 1524240877:
+			case joaat("CIG_CARD_LND_03"):
 				return 1053;
 			case joaat("WORLD_PLAYER_PICKUP_BROKEN_RCSC_PISTOL"):
 				return 1553;
 			case joaat("PROP_CAMP_BUTCHER"):
 				return 3;
-			case 1528349639:
+			case joaat("RANSACK_ATTACHED_P_CABINETDOCTOR02X"):
 				return 2032;
 			case joaat("WORLD_PLAYER_CHORES_BALE_PUT_DOWN_1"):
 				return 1495;
@@ -84278,115 +84278,115 @@ int func_1289(int iParam0, int iParam1)
 				return 431;
 			case joaat("WORLD_ANIMAL_WOLF_INJURED_ON_GROUND"):
 				return 885;
-			case 1532541314:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_1M05"):
 				return 1722;
 			case joaat("RANSACK_ATTACHED_P_BOOKCASE04X"):
 				return 2016;
-			case 1542117716:
+			case joaat("CIG_CARD_PLT_09"):
 				return 1083;
 			case joaat("WORLD_ANIMAL_DEER_TREE_RUB"):
 				return 773;
-			case 1545086067:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO"):
 				return 261;
-			case 1545192181:
+			case joaat("WORLD_PLAYER_INSPECT_MAP_144CM_W48_8_H32_2_FOLDVERTICALHORIZONTAL_S_TWOFOLDMAP01X"):
 				return 1581;
 			case joaat("WORLD_HUMAN_CROUCH_INSPECT"):
 				return 528;
 			case joaat("WORLD_PLAYER_INSPECT_SLAVE_CATCHER_LETTER"):
 				return 1549;
-			case 1550351677:
+			case joaat("WB_DISCO_RAM_MASK"):
 				return 1283;
-			case 1551127842:
+			case joaat("MP_WEAPON_LOCKER_LOCATION"):
 				return 2142;
 			case joaat("WORLD_ANIMAL_BUFFALO_GRAZING"):
 				return 735;
-			case 1553988071:
+			case joaat("LEVDES_SPAWN_THROWING_KNIFE_HANDLE_UP"):
 				return 1422;
-			case 1554901830:
+			case joaat("LEVDES_SPAWN_REVOLVERAMMO"):
 				return 1403;
-			case 1556435468:
+			case joaat("CIG_CARD_HRS_01"):
 				return 1027;
-			case 1557499261:
+			case joaat("MP_JEWELRY_DMND_PENDT_EARRING"):
 				return 2221;
-			case joaat("RE_PBR_UNI_V1_RIDE_INTRO_02"):
+			case joaat("RANSACK_PROP_DRAWER_DOUBLE_3_CLOSE"):
 				return 1667;
-			case 1560952296:
+			case joaat("CIG_CARD_SPT_07"):
 				return 1093;
 			case joaat("PROP_CAMP_MEAT_BOWL"):
 				return 4;
-			case 1562972286:
+			case joaat("CIG_CARD_GUN_08"):
 				return 1022;
-			case 1565054188:
+			case joaat("MP_COIN_1796_HLF_PNY"):
 				return 2193;
-			case 1566196781:
+			case joaat("CIG_CARD_ART_04"):
 				return 994;
-			case 1566230861:
+			case joaat("MP_JEWELRY_TURQ_STUD_EARRING"):
 				return 2248;
-			case 1569198532:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_0M70"):
 				return 1864;
 			case joaat("WORLD_ANIMAL_PIGEON_DRINK_GROUND"):
 				return 661;
-			case 1569670291:
+			case joaat("CIG_CARD_ART_06"):
 				return 996;
-			case 1571524038:
+			case joaat("WB_HERB_WILD_FEVERFEW"):
 				return 2558;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_105CM_PAPER_W15_1_H24_FOLDVERTICAL_S_JACKDRAWING01X"):
 				return 1521;
 			case joaat("PROP_VEHICLE_WAGON_COTTONBOX_UNLOAD_1_GINNED"):
 				return 452;
-			case 1578503684:
+			case joaat("WB_FLOWER_TEXAS_BLUE_BONNET"):
 				return 2342;
 			case joaat("WORLD_ANIMAL_DOG_PLAYER_TENT_TG"):
 				return 74;
-			case 1579488576:
+			case joaat("WORLD_HUMAN_BARTENDER"):
 				return 2529;
-			case 1580303291:
+			case joaat("WB_DISCO_SCARECROW_2"):
 				return 1289;
-			case 1585817968:
+			case joaat("RANSACK_REACH_SHALLOW_SHOP_VOL_PICKUP"):
 				return 1796;
-			case 1588618021:
+			case joaat("WB_NON_INTERACTIVE_CAMPFIRE_UNDERPOT"):
 				return 2620;
 			case joaat("WORLD_ANIMAL_WOLF_RESTING"):
 				return 887;
-			case 1589325060:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_0M80"):
 				return 1842;
-			case 1591856082:
+			case joaat("MP_TCARD_SEVEN_SWORDS"):
 				return 2292;
 			case joaat("WORLD_ANIMAL_CHICKEN_EATING_SITTING"):
 				return 633;
-			case 1594566254:
+			case joaat("MP_COOP_LOBBY_STANDING_B"):
 				return 2353;
 			case joaat("PROP_HUMAN_PIANO"):
 				return 165;
-			case 1602497360:
+			case joaat("WB_HUNTING_ZONE_BULLGATOR"):
 				return 2604;
-			case 1602500054:
+			case joaat("WB_DISCO_ARTHUR_GRAVE"):
 				return 1181;
-			case 1602852348:
+			case joaat("CNV_CAMP_CCHSH4_HOSEA_EXIT"):
 				return 899;
-			case 1605211414:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M0"):
 				return 1743;
-			case 1608515746:
+			case joaat("RANSACK_SHOP_VOL_1M50_0M50_2M0_TIGHT_ENVELOPE"):
 				return 1935;
 			case joaat("WORLD_HUMAN_CHAMBERPOT_EMPTY_RAILING"):
 				return 506;
-			case 1609966682:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_1M05"):
 				return 1760;
-			case 1613328743:
+			case joaat("MP_HRLM_BRUSH_HORSEHAIR"):
 				return 2203;
-			case 1614819900:
+			case joaat("PROP_HUMAN_SEAT_BENCH_PORCH_DRINKING_MOONSHINE"):
 				return 408;
-			case 1615547829:
+			case joaat("RANSACK_REACH_IN_PICKUP_SHALLOW_45"):
 				return 1777;
 			case joaat("WORLD_ANIMAL_DONKEY_GRAZING"):
 				return 794;
-			case 1619000582:
+			case joaat("WB_DIG_BURIED_RANDOM_MUD"):
 				return 2316;
-			case 1619380475:
+			case joaat("CNV_CAMP_CFUN3_GEN_MALE_A_EXIT"):
 				return 955;
 			case joaat("WORLD_CAMP_JACK_ES_BUCKET_PICKUP_EMPTY"):
 				return 124;
-			case 1620035300:
+			case joaat("LEVDES_SPAWN_MATCHBOOK"):
 				return 1375;
 			case joaat("WORLD_CAMP_JACK_SIT_GROUND_NO_STEW"):
 				return 135;
@@ -84398,35 +84398,35 @@ int func_1289(int iParam0, int iParam1)
 				return 2025;
 			case joaat("WORLD_HUMAN_PUSH_BROOM_PICKUP_NO_BROOM"):
 				return 567;
-			case 1631234053:
+			case joaat("RANSACK_ATTACHED_P_DESK17X"):
 				return 2064;
-			case 1633229561:
+			case joaat("WB_DISCO_WHISPERING_TREES"):
 				return 1316;
-			case 1634153002:
+			case joaat("CNV_CAMP_CFJM2_GEN_MALE_A_EXIT"):
 				return 930;
-			case 1634273809:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED"):
 				return 1849;
-			case 1636204884:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_0M0"):
 				return 1705;
 			case joaat("WORLD_ANIMAL_MOOSE_RESTING"):
 				return 840;
-			case 1637554487:
+			case joaat("PROP_PLAYER_EAT_PICKLED_EGG"):
 				return 1451;
-			case 1638241533:
+			case joaat("MP_JEWELRY_DROP_EARRING"):
 				return 2222;
-			case 1640400125:
+			case joaat("MP_TCARD_SIX_SWORDS"):
 				return 2296;
-			case 1640554197:
+			case joaat("WB_DISCO_TRADING_POST"):
 				return 1301;
-			case 1640575631:
+			case joaat("RANSACK_SHOP_VOL_0M50_0M50_2M0_TIGHT_ENVELOPE"):
 				return 1922;
 			case joaat("WORLD_HUMAN_CLIPBOARD_PICKUP_PUTDOWN"):
 				return 36;
-			case 1644732609:
+			case joaat("CIG_CARD_GRL_03"):
 				return 1005;
-			case 1655664666:
+			case joaat("PULLOUT_PROP_LOCKBOX_SML_0M0_0M70"):
 				return 1591;
-			case 1656232256:
+			case joaat("CNV_CAMP_CFJM4_GEN_MALE_C_EXIT"):
 				return 943;
 			case joaat("WORLD_HUMAN_CLEAN_WINDOW"):
 				return 513;
@@ -84436,17 +84436,17 @@ int func_1289(int iParam0, int iParam1)
 				return 743;
 			case joaat("WORLD_HUMAN_PICKAXE_WALL"):
 				return 557;
-			case 1662169748:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_2_CLOSE"):
 				return 1673;
-			case 1663690706:
+			case joaat("CIG_CARD_PLT_02"):
 				return 1076;
-			case 1665886065:
+			case joaat("WB_DISCO_BROKEN_WAGONS"):
 				return 1196;
-			case 1665997921:
+			case joaat("WB_DISCO_CIV_WAR_FORT"):
 				return 1205;
-			case 1666816032:
+			case joaat("LEVDES_SPAWN_BULLET_CASING_UPRIGHT"):
 				return 1339;
-			case 1668650375:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_0M85"):
 				return 1865;
 			case joaat("WORLD_PLAYER_CARCASS_PEG_2M15"):
 				return 1492;
@@ -84456,45 +84456,45 @@ int func_1289(int iParam0, int iParam1)
 				return 740;
 			case joaat("WORLD_ANIMAL_QUAIL_GRAZING"):
 				return 667;
-			case 1674967668:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_CLOSE_A"):
 				return 1639;
-			case 1675065699:
+			case joaat("WB_DISCO_DESERT_WAGON"):
 				return 1221;
-			case 1675802255:
+			case joaat("CNV_CAMP_CFUN4_KEY_MALE_B_EXIT"):
 				return 965;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_CIGAR"):
 				return 285;
 			case joaat("PROP_PLAYER_LNS_FLOOR_STASH"):
 				return 2403;
-			case 1679946503:
+			case joaat("WORLD_PLAYER_RE_DARK_ALLEY_DRUNK_HELP"):
 				return 2451;
 			case joaat("WORLD_HUMAN_GLASS_PICKUP_CRATE"):
 				return 347;
-			case 1681044150:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_LEFT_OPEN"):
 				return 1657;
-			case 1681309457:
+			case joaat("WB_DISCO_ANCIENT_ARROW_HEADS"):
 				return 1177;
-			case 1686632448:
+			case joaat("WB_HERB_PRAIRIE_POPPY"):
 				return 2554;
-			case 1690225020:
+			case joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS"):
 				return 1480;
 			case joaat("RANSACK_ATTACHED_P_CABINET05X"):
 				return 2022;
-			case 1692127434:
+			case joaat("LEVDES_SPAWN_HERBIVORE_BAIT"):
 				return 1370;
-			case 1700848656:
+			case joaat("WORLD_HUMAN_LEAN_POST_LEFT_MOONSHINE"):
 				return 416;
 			case joaat("RANSACK_ATTACHED_P_CABINET09X_R"):
 				return 2026;
-			case 1704047055:
+			case joaat("WB_RE_SAVAGE_WARNING01"):
 				return 2626;
-			case 1704470489:
+			case joaat("RANSACK_FALLBACK_PUTDOWN_CROUCH"):
 				return 1628;
-			case 1707009873:
+			case joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_B"):
 				return 2502;
-			case 1708045233:
+			case joaat("RANSACK_PROP_CUPBOARD_WIDE_HIGH_CLOSE"):
 				return 1653;
-			case 1709018868:
+			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE02X"):
 				return 2120;
 			case joaat("WORLD_ANIMAL_CAT_CLAW_SHARPEN"):
 				return 744;
@@ -84502,7 +84502,7 @@ int func_1289(int iParam0, int iParam1)
 				return 1534;
 			case joaat("WORLD_HUMAN_PITCH_FORK_PICKUP"):
 				return 558;
-			case 1722608328:
+			case joaat("CIG_CARD_PAM_02"):
 				return 1064;
 			case joaat("WORLD_FLOURISH_WINDOW"):
 				return 1141;
@@ -84512,103 +84512,103 @@ int func_1289(int iParam0, int iParam1)
 				return 753;
 			case joaat("WORLD_ANIMAL_DOG_EATING_GROUND"):
 				return 781;
-			case 1730943702:
+			case joaat("WB_HUNTING_ZONE_ELK"):
 				return 2607;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FV_P_CS_LETTER03X_COLOR_COMBAT"):
 				return 1530;
-			case 1733018851:
+			case joaat("LEVDES_SPAWN_BRANDY_BOTTLE_OPENED"):
 				return 1335;
-			case 1737790136:
+			case joaat("WB_FLOWER_CREEK_PLUM"):
 				return 2340;
-			case 1739164046:
+			case joaat("LEVDES_SPAWN_STRONGBOX_SNOW"):
 				return 1415;
-			case 1742208934:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED_PULLOUT_0M0_0M70_MP_SYNC_GOTO"):
 				return 1998;
-			case 1745757232:
+			case joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_1M0_0M5_0M80"):
 				return 1917;
-			case 1746565836:
+			case joaat("CIG_CARD_AML_01"):
 				return 979;
-			case 1747531784:
+			case joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_MILITARY"):
 				return 2151;
 			case joaat("WORLD_ANIMAL_RAM_TREE_RUB"):
 				return 864;
-			case 1749939697:
+			case joaat("RANSACK_ATTACHED_P_CORNERCABINET01X"):
 				return 2043;
 			case joaat("WORLD_HUMAN_CLIPBOARD"):
 				return 514;
 			case joaat("WORLD_HUMAN_CAULDRON_PUT_DOWN_TABLE"):
 				return 152;
-			case 1751173281:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED"):
 				return 1860;
-			case 1753153202:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_OPEN_A"):
 				return 1641;
-			case 1755633483:
+			case joaat("WB_DISCO_PAGAN_RITUAL"):
 				return 1272;
 			case joaat("PROP_VEHICLE_WAGON_SACK_UNLOAD_1"):
 				return 473;
 			case joaat("WORLD_HUMAN_PLANE_WOOD_NO_PLANK"):
 				return 565;
-			case 1760817692:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M8_0M8_2M0"):
 				return 1955;
 			case joaat("PROP_CAMP_MEAT_BOWL_PUT_DOWN_TABLE"):
 				return 93;
 			case joaat("CIG_CARD_GRL_10"):
 				return 1012;
-			case 1762028978:
+			case joaat("WB_DISCO_SPERM_WHALE"):
 				return 1295;
-			case 1762395145:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M0"):
 				return 1681;
-			case 1763725008:
+			case joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING"):
 				return 1771;
-			case 1765033373:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED"):
 				return 1863;
-			case 1771423830:
+			case joaat("MP_TCARD_FOUR_SWORDS"):
 				return 2268;
-			case 1771867211:
+			case joaat("WB_RE_WILD_MAN_CAVE"):
 				return 2628;
-			case 1773363687:
+			case joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M25_0M8_2M0"):
 				return 1972;
-			case 1773628985:
+			case joaat("RANSACK_ATTACHED_P_CABINETCHINA01X"):
 				return 2030;
 			case joaat("WORLD_HUMAN_SLEEP_GROUND_ARM"):
 				return 400;
 			case joaat("WORLD_HUMAN_BARTENDER_CLEAN_GLASS"):
 				return 483;
-			case 1784114904:
+			case joaat("MP_BOTTLE_LONDRY_GIN"):
 				return 2180;
-			case 1786059572:
+			case joaat("PROP_PLAYER_CASH_REGISTER_OPEN_GUN"):
 				return 1446;
-			case 1792972092:
+			case joaat("MP_LOBBY_SCENARIO_02"):
 				return 2362;
-			case 1793506433:
+			case joaat("RANSACK_REACH_SHALLOW_SHOP_VOL_PUTDOWN"):
 				return 1797;
 			case joaat("WORLD_ANIMAL_DOG_BARKING_UP"):
 				return 776;
 			case joaat("PROP_VEHICLE_WAGON_COTTONBOX_UNLOAD_1_RAW"):
 				return 453;
-			case 1799741440:
+			case joaat("CIG_CARD_ART_05"):
 				return 995;
-			case 1799902997:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_1M0"):
 				return 1858;
-			case 1800266897:
+			case joaat("MP_BOTTLE_SCOTCH_WHISKEY"):
 				return 2183;
-			case 1801322057:
+			case joaat("LEVDES_SPAWN_DEATHASSIST_TONIC"):
 				return 1357;
-			case 1801467173:
+			case joaat("WB_DISCO_SWAMP_HAND"):
 				return 1300;
 			case joaat("WORLD_HUMAN_FARMER_RAKE"):
 				return 530;
-			case 1802944657:
+			case joaat("RANSACK_FALLBACK_PUTDOWN_LH"):
 				return 1629;
-			case 1804012049:
+			case joaat("PROP_HUMAN_SEAT_CHAIR_CRAB_TRAP_NO_PROP"):
 				return 161;
 			case joaat("WORLD_HUMAN_BUCKET_DRINK_LADLE_GROUND"):
 				return 331;
-			case 1804592774:
+			case joaat("CIG_CARD_INV_07"):
 				return 1045;
-			case 1806433140:
+			case joaat("MP_TCARD_THREE_SWORDS"):
 				return 2304;
-			case 1806491858:
+			case joaat("CIG_CARD_ART_03"):
 				return 993;
 			case joaat("WORLD_ANIMAL_CAT_SLEEPING"):
 				return 749;
@@ -84616,83 +84616,83 @@ int func_1289(int iParam0, int iParam1)
 				return 64;
 			case joaat("WORLD_HUMAN_PLANE_WOOD"):
 				return 564;
-			case 1809613436:
+			case joaat("CIG_CARD_AML_08"):
 				return 986;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W48_8_H32_2_FOLDVERTICALHORIZONTAL_S_TWOFOLDMAP01X"):
 				return 1535;
-			case 1810425652:
+			case joaat("CIG_CARD_INV_05"):
 				return 1043;
 			case joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M5_0M5_0M80"):
 				return 1915;
-			case 1818037155:
+			case joaat("LEVDES_SPAWN_THROWING_KNIFE_HANDLE_SIDE"):
 				return 1421;
-			case 1818512428:
+			case joaat("SC_PROP_HUMAN_TORCH_RALLY_B"):
 				return 2471;
-			case 1823800245:
+			case joaat("WB_DISCO_MAMMOTH"):
 				return 1253;
-			case 1824320289:
+			case joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_1M05"):
 				return 1731;
-			case 1824437686:
+			case joaat("CIG_CARD_LND_04"):
 				return 1054;
 			case joaat("WORLD_PLAYER_CHORES_PUTDOWN_CHICKEN_EGGS_CRATE"):
 				return 1512;
-			case 1825097523:
+			case joaat("RANSACK_PROP_OPEN_CRATE_PICKUP"):
 				return 1767;
-			case 1826441875:
+			case joaat("RANSACK_ATTACHED_P_DRESSER06X_R"):
 				return 2070;
-			case 1827064155:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_0M85"):
 				return 1843;
-			case 1828659542:
+			case joaat("WB_DISCO_SCARECROW_3"):
 				return 1290;
 			case joaat("WORLD_HUMAN_FIRE_GEN"):
 				return 41;
 			case joaat("WORLD_ANIMAL_SHEEP_RESTING"):
 				return 872;
-			case 1831047706:
+			case joaat("WB_BERRY_BLACK_BERRY"):
 				return 2535;
-			case 1832043197:
+			case joaat("MP_COOP_LOBBY_STANDING_C"):
 				return 2354;
 			case joaat("WORLD_HUMAN_FIRE_GEN_STAND"):
 				return 46;
-			case 1838169307:
+			case joaat("WB_MUSHROOM_RAMS_HEAD"):
 				return 2566;
 			case joaat("WORLD_HUMAN_KNOCK_DOOR"):
 				return 208;
-			case 1840147624:
+			case joaat("RANSACK_REACH_OVER_CENTERED_GROUND_PICKUP_0M5_0M5"):
 				return 1789;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_MELEE_HATCHET_HUNTER"):
 				return 1561;
-			case 1841334253:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO_HANDOFF"):
 				return 262;
 			case joaat("PROP_HUMAN_SEAT_BENCH_FIDDLE_UPBEAT"):
 				return 174;
 			case joaat("WORLD_HUMAN_CHICKEN_CRATE_PICKUP_2"):
 				return 511;
-			case 1844516830:
+			case joaat("RANSACK_ATTACHED_P_CABINET03X"):
 				return 2021;
-			case 1849250464:
+			case joaat("MP_HRLM_HAIRPIN_WOODEN"):
 				return 2214;
-			case 1851306717:
+			case joaat("CIG_CARD_GUN_09"):
 				return 1023;
-			case 1853323873:
+			case joaat("CIG_CARD_PAM_03"):
 				return 1065;
-			case 1854928616:
+			case joaat("LEVDES_SPAWN_FISH_BAIT_PICKUPS"):
 				return 1363;
-			case 1855656219:
+			case joaat("PROP_PLAYER_OPEN_CASHBOX"):
 				return 1455;
 			case joaat("GENERIC_STANDING_SCENARIO"):
 				return 269;
-			case 1856786003:
+			case joaat("CNV_CAMP_CFJM3_KEY_MALE_A_EXIT"):
 				return 939;
-			case 1856827999:
+			case joaat("LEVDES_SPAWN_CIGS_PREMIUM"):
 				return 1350;
-			case 1858171884:
+			case joaat("MP_TCARD_FOUR_CUPS"):
 				return 2266;
 			case joaat("PROP_CAMP_FIRE_SEAT_CHAIR"):
 				return 82;
 			case joaat("PROP_PLAYER_STR_GEN_TRAP_DOOR"):
 				return 2414;
-			case 1864143281:
+			case joaat("CNV_CAMP_CFUN2_KEY_MALE_A_EXIT"):
 				return 952;
 			case joaat("WORLD_HUMAN_FEEDBAG_PICKUP_NO_FEEDBAG"):
 				return 535;
@@ -84700,19 +84700,19 @@ int func_1289(int iParam0, int iParam1)
 				return 151;
 			case joaat("PROP_VEHICLE_WAGON_SUGAR_SACK_UNLOAD_3"):
 				return 478;
-			case 1867868436:
+			case joaat("RANSACK_ATTACHED_P_CABINETDOCTOR01X"):
 				return 2031;
 			case joaat("WORLD_HUMAN_LEAN_RAILING_ALL"):
 				return 53;
-			case 1870391004:
+			case joaat("CNV_CAMP_CFUN4_GEN_MALE_B_EXIT"):
 				return 963;
-			case 1870411809:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_LEFT"):
 				return 1815;
 			case joaat("WORLD_ANIMAL_BULL_INJURED_ON_GROUND"):
 				return 741;
-			case 1875898086:
+			case joaat("RANSACK_ATTACHED_CHEST_MEDIUM_OPEN_ONLY_MP_SYNC_GOTO"):
 				return 1980;
-			case 1876575587:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M60"):
 				return 1683;
 			case joaat("WORLD_ANIMAL_PIG_EAT_TROUGH"):
 				return 849;
@@ -84720,25 +84720,25 @@ int func_1289(int iParam0, int iParam1)
 				return 762;
 			case joaat("WORLD_ANIMAL_DOG_HOWLING"):
 				return 783;
-			case 1881560238:
+			case joaat("WB_HERB_DESERT_SAGE"):
 				return 2544;
-			case 1881800530:
+			case joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PICKUP_TIGHT"):
 				return 1780;
 			case joaat("CIG_CARD_VEH_12"):
 				return 1110;
-			case 1884809780:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M45"):
 				return 1700;
 			case joaat("WORLD_HUMAN_CHAMBERPOT_PICKUP_PUTDOWN"):
 				return 35;
-			case 1888920146:
+			case joaat("WB_DINO_BONES_EMPTY"):
 				return 2593;
-			case 1889051928:
+			case joaat("RANSACK_ATTACHED_P_SIDETABLE03X"):
 				return 2103;
-			case 1891303234:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_TALL"):
 				return 1818;
 			case joaat("WORLD_ANIMAL_BUFFALO_WALLOW"):
 				return 738;
-			case 1898992473:
+			case joaat("PROP_ANIMAL_DOG_DRINK_BOWL"):
 				return 694;
 			case joaat("PROP_PLAYER_OPEN_PISTOLCHEST_CASH_BED"):
 				return 1462;
@@ -84746,7 +84746,7 @@ int func_1289(int iParam0, int iParam1)
 				return 670;
 			case joaat("WORLD_ANIMAL_CROW_ON_PERCH"):
 				return 641;
-			case 1903678225:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_0M85"):
 				return 1868;
 			case joaat("WORLD_HUMAN_STERNGUY_IDLES"):
 				return 407;
@@ -84754,7 +84754,7 @@ int func_1289(int iParam0, int iParam1)
 				return 532;
 			case joaat("WORLD_HUMAN_BALE_PICKUP_1"):
 				return 479;
-			case 1909200363:
+			case joaat("MP_LOBBY_STANDING_B"):
 				return 2383;
 			case joaat("WORLD_PLAYER_INSPECT_LETTER_80CM_PAPER_W15_1_H24_FOLDVERTICAL_S_JACKDRAWING01X"):
 				return 1528;
@@ -84762,89 +84762,89 @@ int func_1289(int iParam0, int iParam1)
 				return 632;
 			case joaat("WORLD_PLAYER_INSPECT_PHOTO_150CM_WALL_PAPER_W17_78_H12_7_P_CS_PHOTOR_5X7"):
 				return 1542;
-			case 1913341418:
+			case joaat("LEVDES_SPAWN_CHEST_SNOW"):
 				return 1347;
-			case 1913928416:
+			case joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_1M20"):
 				return 1622;
 			case joaat("WORLD_ANIMAL_HERON_CATCH_FISH"):
 				return 650;
-			case 1917664300:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_0M70_MP_SYNC_GOTO"):
 				return 1994;
-			case 1917865597:
+			case joaat("WB_DISCO_SERPENT_MOUND"):
 				return 1292;
-			case 1919538189:
+			case joaat("PROP_PLAYER_PICKUP_PIRATE_SKELETON_CLOTHING"):
 				return 1157;
-			case 1920390250:
+			case joaat("WB_DISCO_PHONOGRAPH_HOUSE"):
 				return 1273;
-			case 1921610057:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M0"):
 				return 1752;
-			case 1922930297:
+			case joaat("RANSACK_ATTACHED_P_SIDETABLE11X"):
 				return 2106;
 			case joaat("WORLD_ANIMAL_SHEEP_EATING_GROUND"):
 				return 869;
-			case 1925399849:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_DISCO_MAP_HALVES_0M0"):
 				return 1595;
-			case 1925882132:
+			case joaat("RANSACK_ATTACHED_P_INLAIDSECRETARY01X"):
 				return 2089;
-			case 1929212607:
+			case joaat("LEVDES_SPAWN_MATCHSTICK"):
 				return 1376;
-			case 1933315607:
+			case joaat("WB_HUNTING_ZONE_COUGAR"):
 				return 2605;
 			case joaat("WORLD_ANIMAL_FOX_EATING_GROUND"):
 				return 807;
-			case 1935928768:
+			case joaat("CNV_CAMP_CCHSH8_KEY_MALE_EXIT"):
 				return 905;
 			case joaat("PROP_HUMAN_BUTCHER_DEER"):
 				return 2517;
 			case joaat("RANSACK_ATTACHED_P_DESK09BX"):
 				return 2060;
-			case 1941854706:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M60"):
 				return 1692;
-			case 1944090963:
+			case joaat("WB_ORCHID_LADY_SLIPPER"):
 				return 2573;
 			case joaat("WORLD_ANIMAL_BOAR_SITTING"):
 				return 730;
-			case 1945302853:
+			case joaat("RANSACK_ATTACHED_P_CHEST02X"):
 				return 2039;
-			case 1947556039:
+			case joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M60"):
 				return 1749;
 			case joaat("WORLD_ANIMAL_DOG_SITTING"):
 				return 790;
 			case joaat("WORLD_HUMAN_SELL_PAPER"):
 				return 595;
-			case 1952317745:
+			case joaat("LEAN_TO_POSITION"):
 				return 1124;
-			case 1953753789:
+			case joaat("WB_DISCO_STONEHENGE"):
 				return 1296;
-			case 1954325822:
+			case joaat("RANSACK_REACH_IN_TREE_HOLE_PIKUP_0M0"):
 				return 1804;
-			case 1954699087:
+			case joaat("RANSACK_PROP_DRAWER_SINGLE_1_OPEN"):
 				return 1672;
-			case 1956408893:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M80"):
 				return 1702;
-			case 1956439393:
+			case joaat("RANSACK_ATTACHED_DD_34"):
 				return 1828;
 			case joaat("WORLD_HUMAN_SIT_GUITAR_DOWNBEAT"):
 				return 227;
-			case 1957996977:
+			case joaat("PROP_PLAYER_MP_LOOT_ROCK_BONDS_STASH"):
 				return 1579;
 			case joaat("PROP_HUMAN_ABIGAIL_PIANO"):
 				return 164;
-			case 1961694545:
+			case joaat("RANSACK_ATTACHED_P_HUTCHWHITE01X_LEFT"):
 				return 2086;
-			case 1962698324:
+			case joaat("WB_DISCO_FIRE_LOOKOUT_TOWER"):
 				return 1230;
-			case 1962997581:
+			case joaat("RANSACK_VOLUME_NARROW_0M5_0M5_2M0"):
 				return 1948;
-			case 1968511141:
+			case joaat("CNV_CAMP_CCUNC1_UNCLE_EXIT"):
 				return 909;
-			case 1968678356:
+			case joaat("CNV_CAMP_CFJE3_GEN_FEMALE_EXIT"):
 				return 918;
-			case 1969949780:
+			case joaat("CIG_CARD_PLT_03"):
 				return 1077;
-			case 1970030353:
+			case joaat("CIG_CARD_LND_05"):
 				return 1055;
-			case 1973299720:
+			case joaat("RANSACK_ATTACHED_P_CABINET01X"):
 				return 2020;
 			case joaat("WORLD_ANIMAL_WOLF_EATING"):
 				return 882;
@@ -84852,11 +84852,11 @@ int func_1289(int iParam0, int iParam1)
 				return 543;
 			case joaat("WORLD_HUMAN_FARMER_WEEDING"):
 				return 531;
-			case 1984607038:
+			case joaat("MP_JEWELRY_ONYX_RING"):
 				return 2235;
-			case 1986382505:
+			case joaat("RANSACK_CHIMNEY_GENERIC_01_GENERIC_PROMPT"):
 				return 1875;
-			case 1992236106:
+			case joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M0"):
 				return 1690;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_FAN_WHORE"):
 				return 307;
@@ -84864,25 +84864,25 @@ int func_1289(int iParam0, int iParam1)
 				return 2521;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_BAR_CA"):
 				return 354;
-			case 1996972402:
+			case joaat("SC_PROP_HUMAN_TORCH_RALLY_C"):
 				return 2472;
 			case joaat("WORLD_PLAYER_CAMP_FIRE_SQUAT"):
 				return 1489;
-			case 1998863259:
+			case joaat("RANSACK_VOLUME_LONGREACH_0M7_0M8_1M5"):
 				return 1947;
-			case 1998936856:
+			case joaat("CNV_CAMP_CFJM3_GEN_FEMALE_EXIT"):
 				return 935;
-			case 2000130193:
+			case joaat("MP_TCARD_SIX_CUPS"):
 				return 2294;
-			case 2001754905:
+			case joaat("CNV_CAMP_CFUN1_GEN_MALE_B_EXIT"):
 				return 947;
-			case 2003624097:
+			case joaat("RANSACK_ATTACHED_P_CUPBOARDCORNER01X"):
 				return 2053;
-			case 2004039424:
+			case joaat("RANSACK_FALLBACK_PUTDOWN"):
 				return 1627;
-			case 2005214943:
+			case joaat("LEVDES_SPAWN_SHOTGUNAMMO"):
 				return 1408;
-			case 2006959770:
+			case joaat("WB_DISCO_FLATTENED_CABIN"):
 				return 1231;
 			case joaat("WORLD_HUMAN_PITCH_FORK_PUT_DOWN"):
 				return 560;
@@ -84890,111 +84890,111 @@ int func_1289(int iParam0, int iParam1)
 				return 1551;
 			case joaat("PROP_HUMAN_SEAT_CHAIR_SHARPEN_AXE"):
 				return 433;
-			case 2012697591:
+			case joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO_HANDOFF_PLAYER"):
 				return 263;
-			case 2013669839:
+			case joaat("RANSACK_ATTACHED_P_BUFFET03X"):
 				return 2018;
-			case 2015617886:
+			case joaat("WB_DISCO_OLD_WORLD_SCRIPT"):
 				return 1269;
-			case 2015878396:
+			case joaat("PLAYER_CAMP_MARKER_MP"):
 				return 1439;
 			case joaat("WORLD_HUMAN_COTTONBALE_PICKUP_1"):
 				return 519;
-			case 2017118308:
+			case joaat("WB_FLOWER_AGARITA_SINGLE"):
 				return 2331;
-			case 2017758854:
+			case joaat("WB_DISCO_CAT_MASK"):
 				return 1200;
 			case joaat("WORLD_HUMAN_CHICKEN_CRATE_PICKUP_1"):
 				return 510;
-			case 2019504701:
+			case joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_MID"):
 				return 1819;
 			case joaat("WORLD_HUMAN_SHOPKEEPER_MALE_C"):
 				return 600;
-			case 2023862263:
+			case joaat("RANSACK_PROP_CHEST_LARGE_PICKUP"):
 				return 1633;
-			case 2024101922:
+			case joaat("RANSACK_ATTACHED_P_SIDEBOARD01X"):
 				return 2100;
 			case joaat("PROP_HUMAN_PIANO_RIVERBOAT"):
 				return 166;
 			case joaat("WORLD_HUMAN_BROOM_PICKUP"):
 				return 493;
-			case 2024871051:
+			case joaat("SC_CAMP_VIG_FIRE_POKE"):
 				return 2496;
 			case joaat("WORLD_CAMP_VIG_EXIT_TG"):
 				return 23;
-			case 2036024742:
+			case joaat("CNV_CAMP_CCABI1_ABIGAIL_EXIT"):
 				return 896;
-			case 2038449429:
+			case joaat("MP_ARROWHEAD_QUARTZ"):
 				return 2171;
-			case 2039761412:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_TIGHT_MP_SYNC_GOTO"):
 				return 1990;
-			case 2042302597:
+			case joaat("MP_JEWELRY_YLWGLD_DMND_RING"):
 				return 2253;
-			case 2042327162:
+			case joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_1M0"):
 				return 1844;
 			case joaat("WORLD_HUMAN_VOMIT"):
 				return 235;
-			case 2043209211:
+			case joaat("EA_WORLD_HUMAN_PICKAXE_NEW"):
 				return 2456;
-			case 2043781114:
+			case joaat("LEVDES_SPAWN_MED_FOOTLOCKER"):
 				return 1377;
-			case 2048612078:
+			case joaat("RANSACK_ATTACHED_P_VANITY02X"):
 				return 2132;
-			case 2049641235:
+			case joaat("LEVDES_SPAWN_COINPURSE"):
 				return 1354;
 			case joaat("WORLD_CAMP_VIG_GRIEF_COOLDOWN_TG"):
 				return 24;
-			case 2050785088:
+			case joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_LEFT_OPEN"):
 				return 1646;
 			case joaat("WORLD_HUMAN_BUCKET_DRINK_GROUND_NO_BUCKET"):
 				return 330;
-			case 2054053294:
+			case joaat("MP_JEWELRY_GRNET_POST_EARRING"):
 				return 2232;
-			case 2054734837:
+			case joaat("SCRIPT_REHOB_HERBALIST"):
 				return 2444;
 			case joaat("PROP_VEHICLE_MINECART_COAL_DUMP_SHOVEL"):
 				return 435;
 			case joaat("PROP_CAMP_JACK_ES_READ_SEAT"):
 				return 87;
-			case 2057536374:
+			case joaat("WB_DISCO_DEAD_CIV_WAR"):
 				return 1213;
 			case joaat("WORLD_HUMAN_WASHBOARD_BASIN"):
 				return 616;
-			case 2059274664:
+			case joaat("WB_HERB_BURDOCK_ROOT_SINGLE"):
 				return 2543;
 			case joaat("EA_HUMAN_FIRE_GEN_STAND"):
 				return 2;
-			case 2067626574:
+			case joaat("CIG_CARD_SPT_05"):
 				return 1091;
-			case 2068544956:
+			case joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_C"):
 				return 2511;
-			case 2070070978:
+			case joaat("LEVDES_SPAWN_BULLET_CASING_SG_UPRIGHT"):
 				return 1337;
 			case joaat("WORLD_HUMAN_RAKE_PICKUP_PUTDOWN"):
 				return 58;
-			case 2072682660:
+			case joaat("RANSACK_PROP_CHEST_MEDIUM_PICKUP"):
 				return 1636;
 			case joaat("WORLD_ANIMAL_BEAR_EAT_CARCASS"):
 				return 702;
-			case 2076787282:
+			case joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_0M70"):
 				return 1606;
-			case 2077497487:
+			case joaat("LEVDES_SPAWN_CHEST_RUST"):
 				return 1346;
-			case 2080227480:
+			case joaat("LEVDES_SPAWN_CANNEDFOOD_COOK"):
 				return 1341;
 			case joaat("WORLD_ANIMAL_BOBCAT_INJURED_ON_GROUND"):
 				return 732;
 			case joaat("WORLD_HUMAN_LEAN_BACK_WHITTLE"):
 				return 356;
-			case 2085223846:
+			case joaat("WB_DISCO_LOVE_MESSAGE"):
 				return 1251;
 			case joaat("WORLD_HUMAN_STAND_WAITING"):
 				return 229;
 			case joaat("PROP_VEHICLE_WAGON_LUMBER_UNLOAD_5"):
 				return 466;
-			case 2088386848:
+			case joaat("RANSACK_ATTACHED_P_ARMOIR08X"):
 				return 2008;
-			case 2088527301:
+			case joaat("PROP_PLAYER_OPEN_RIFLECHEST_DB_SHOTGUN"):
 				return 1467;
 			case joaat("WORLD_CAMP_JACK_ES_READ_GROUND"):
 				return 130;
@@ -85004,57 +85004,57 @@ int func_1289(int iParam0, int iParam1)
 				return 104;
 			case joaat("WORLD_HUMAN_PITCH_FORK_PICKUP_PUTDOWN"):
 				return 56;
-			case 2095611714:
+			case joaat("ANIMAL_CARCASS_EGRET_PARTS"):
 				return 891;
-			case 2098471051:
+			case joaat("RANSACK_MAP_ROLLED_TEST"):
 				return 1437;
 			case joaat("WORLD_PLAYER_PICKUP_WEAPON_THROWN_TOMAHAWK_ANCIENT"):
 				return 1567;
 			case joaat("WORLD_ANIMAL_FOX_DRINK_GROUND"):
 				return 806;
-			case 2102968574:
+			case joaat("RANSACK_ATTACHED_P_TABLECONSOLE01X"):
 				return 2119;
-			case 2103690951:
+			case joaat("SCRIPT_REGR_MALE_A_POSE1"):
 				return 2442;
 			case joaat("WORLD_HUMAN_SACK_IN_CART_TARP"):
 				return 580;
-			case 2104706574:
+			case joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_0M8_0M5_0M40"):
 				return 1903;
-			case 2105720717:
+			case joaat("PROP_PLAYER_OPEN_PISTOLCHEST_PISTOL_VOL"):
 				return 1464;
 			case joaat("WORLD_HUMAN_RUM_CRATE_PICKUP_2"):
 				return 578;
-			case 2113302033:
+			case joaat("RANSACK_ATTACHED_DS_123"):
 				return 1838;
-			case 2119820521:
+			case joaat("RANSACK_ATTACHED_P_WRITINGDESK01X"):
 				return 2140;
-			case 2120173401:
+			case joaat("WORLD_HUMAN_WAITING_IMPATIENT_CARRYING"):
 				return 2157;
 			case joaat("WORLD_ANIMAL_WOLF_SNIFFING_GROUND"):
 				return 890;
-			case 2121421811:
+			case joaat("WORLD_RIDER_ATTRACTOR"):
 				return 1147;
-			case 2123613369:
+			case joaat("RANSACK_ATTACHED_P_TABLEWORK02X"):
 				return 2127;
 			case joaat("WORLD_HUMAN_SADDLE_PICKUP_GROUND"):
 				return 588;
-			case 2124474718:
+			case joaat("WB_DISCO_HIDDEN_TUNNEL"):
 				return 1243;
 			case joaat("CIG_CARD_LND_12"):
 				return 1062;
 			case joaat("WORLD_ANIMAL_SPARROW_EATING_GROUND"):
 				return 677;
-			case 2126615052:
+			case joaat("SC_WORLD_HUMAN_STAND_GENERIC"):
 				return 2485;
-			case 2126824673:
+			case joaat("WB_DISCO_SCARECROW_4"):
 				return 1291;
-			case 2127401246:
+			case joaat("CODE_HUMAN_SHOCKED_WATCH"):
 				return 1116;
 			case joaat("WORLD_PLAYER_SHOPPING"):
 				return 1573;
-			case 2135478933:
+			case joaat("WB_DISCO_CORPSE_PIT"):
 				return 1208;
-			case 2140180188:
+			case joaat("WB_FLOWER_CHOCOLATE_DAISY"):
 				return 2338;
 			case joaat("WORLD_ANIMAL_RAM_RESTING"):
 				return 863;
@@ -85062,9 +85062,9 @@ int func_1289(int iParam0, int iParam1)
 				return 713;
 			case joaat("WORLD_PLAYER_PICK_LOCK"):
 				return 1552;
-			case 2145448157:
+			case joaat("PROP_PLAYER_OPEN_PISTOLCHEST_REVOLVER_DA"):
 				return 1465;
-			case 2147443548:
+			case joaat("SC_WORLD_HUMAN_STRAW_BROOM_WORKING"):
 				return 2486;
 			default:
 				break;
@@ -86310,7 +86310,7 @@ void func_1360(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
@@ -86367,7 +86367,7 @@ int func_1364(int iParam0)
 			return 3;
 		case joaat("KNIFE"):
 			return 4;
-		case 705179744:
+		case joaat("LASSO"):
 			return 5;
 		case joaat("THROWER"):
 			return 6;
@@ -86385,7 +86385,7 @@ int func_1364(int iParam0)
 			return 12;
 		case joaat("MELEE"):
 			return 13;
-		case 658477378:
+		case joaat("HIP"):
 			return 14;
 		case joaat("BOOT"):
 			return 15;
@@ -86734,7 +86734,7 @@ int func_1380(int iParam0, int iParam1)
 	{
 		return joaat("NONE");
 	}
-	if (!func_1418(Var1, &(Var1.f_1), 25, -1395074057, 0, 0))
+	if (!func_1418(Var1, &(Var1.f_1), 25, joaat("HONOR"), 0, 0))
 	{
 		return joaat("NONE");
 	}

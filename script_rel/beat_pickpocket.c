@@ -1314,7 +1314,7 @@ int func_29()
 				if (ANIMSCENE::_0xD8254CB2C586412B(Local_28, 0) || ANIMSCENE::_0x3FBC3F51BF12DFBF(Local_28) >= 0.4417f)
 				{
 					func_128(&(iLocal_184[0]), uLocal_187[0], -89429847, 580546400, 0, 0);
-					iLocal_474 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(-1905235087, &(iLocal_184[0]), -1f, 8f, 4f, -1f, 8f, 1127481344, 0, 0, -1, -1);
+					iLocal_474 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_SURPRISING"), &(iLocal_184[0]), -1f, 8f, 4f, -1f, 8f, 1127481344, 0, 0, -1, -1);
 					func_34(&iLocal_449, 1);
 				}
 			}
@@ -4627,7 +4627,7 @@ void func_131()
 			if ((!ENTITY::IS_ENTITY_OCCLUDED(&(iLocal_184[0])) && !PED::IS_PED_RAGDOLL(&(iLocal_184[0]))) && !TASK::IS_PED_GETTING_UP(&(iLocal_184[0])))
 			{
 				func_41(bLocal_484);
-				PED::_0x24C82EF607105FAA(&(iLocal_184[0]), -2140661075);
+				PED::_0x24C82EF607105FAA(&(iLocal_184[0]), joaat("SCRIPTEDTIMIDROB"));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(iLocal_184[0]), false);
 				func_312(iLocal_184[0], &iLocal_111, &Local_132, 1, 1);
 				iLocal_476 = MISC::GET_HASH_KEY(func_129("GIVEIT"));
@@ -6944,14 +6944,14 @@ int func_178(var uParam0)
 			return 0;
 		}
 	}
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
 			uParam0->f_5 = PED::_REQUEST_METAPED_OUTFIT(uParam0->f_1, uParam0->f_3);
 			if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 			{
-				uParam0->f_3 = 41788943;
+				uParam0->f_3 = joaat("META_OUTFIT_DEFAULT");
 			}
 			return 0;
 		}
@@ -8626,7 +8626,7 @@ int func_223(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -13538,7 +13538,7 @@ int func_381(int iParam0, var uParam1, vector3 vParam2, bool bParam5, bool bPara
 			PED::SET_PED_CONFIG_FLAG(iVar0, 4, func_523(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 297, !func_524(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 317, !func_524(&(uParam1->f_22)));
-			if (uParam1->f_31 != 623901053)
+			if (uParam1->f_31 != joaat("REL_NO_RELATIONSHIP"))
 			{
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, uParam1->f_31);
 			}
@@ -14974,7 +14974,7 @@ void func_462(int iParam0)
 		iParam0 = func_295(1);
 	}
 	MONEY::_MONEY_DECREMENT_CASH_BALANCE(iParam0);
-	Var0 = { func_573(1644987397) };
+	Var0 = { func_573(joaat("CAREER_CASH")) };
 	STATS::_0xBD861AE8A5181ED7(&Var0, iParam0);
 }
 
@@ -15570,7 +15570,7 @@ int func_509(var uParam0, var uParam1)
 
 int func_510(var uParam0)
 {
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
@@ -17475,7 +17475,7 @@ void func_600(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_645(iParam1))
 		{
-			func_646(iParam0, 41788943);
+			func_646(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -18932,9 +18932,9 @@ bool func_637(int iParam0, int iParam1)
 
 void func_638(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 void func_639(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8)
@@ -19319,7 +19319,7 @@ void func_648(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

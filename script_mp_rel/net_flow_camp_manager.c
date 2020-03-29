@@ -4479,14 +4479,14 @@ int func_140(int iParam0)
 	}
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
 	iParam0 = NETWORK::GET_UNIQUE_INT_FOR_PLAYER(&(Global_1275573->f_154[iParam0]));
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
-	iVar0 = 623901053;
+	iVar0 = joaat("REL_NO_RELATIONSHIP");
 	switch (iParam0)
 	{
 		case 0:
@@ -4816,7 +4816,7 @@ int func_154(int iParam0, int iParam1)
 		case 4:
 			return joaat("REL_COP");
 		case 5:
-			return 623901053;
+			return joaat("REL_NO_RELATIONSHIP");
 		case 6:
 			return joaat("REL_PLAYER_ENEMY");
 		case 7:
@@ -4828,9 +4828,9 @@ int func_154(int iParam0, int iParam1)
 		case 10:
 			return joaat("REL_COMPANION_GROUP");
 		case 11:
-			return -767591988;
+			return joaat("REL_WILD_ANIMAL");
 		case 12:
-			return -989642646;
+			return joaat("REL_WILD_ANIMAL_PREDATOR");
 		case 13:
 			return joaat("REL_DOMESTICATED_ANIMAL");
 		case 14:
@@ -4866,11 +4866,11 @@ int func_154(int iParam0, int iParam1)
 		case 29:
 			return joaat("REL_GANG_MURFREE_BROOD");
 		case 30:
-			return 1986610512;
+			return joaat("REL_WILD_ANIMAL_BIRD");
 		case 31:
-			return 889541022;
+			return joaat("REL_ALLIGATOR");
 		case 32:
-			return -319516747;
+			return joaat("REL_BOAR");
 		case 33:
 			return joaat("REL_HEN_ANIMAL");
 		case 34:

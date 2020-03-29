@@ -985,12 +985,12 @@ void func_12(bool bParam0)
 		{
 			if (!func_2(Global_1394141->f_1326, 8))
 			{
-				if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != 623901053)
+				if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != joaat("REL_NO_RELATIONSHIP"))
 				{
-					VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 623901053);
+					VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_NO_RELATIONSHIP"));
 					if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bLocal_2, true, 2, false))
 					{
-						if ((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560)
+						if ((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != joaat("OBJECT_1")) && bLocal_2 != joaat("OBJECT_2"))
 						{
 							if (INVENTORY::_0x3D10D7179D7034AF(func_93(0), bLocal_2, false))
 							{
@@ -998,9 +998,9 @@ void func_12(bool bParam0)
 								func_94(bLocal_2);
 							}
 						}
-						if (VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != 623901053)
+						if (VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != joaat("REL_NO_RELATIONSHIP"))
 						{
-							VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 623901053);
+							VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_NO_RELATIONSHIP"));
 						}
 						func_7(&(Global_1394141->f_1326), 8);
 					}
@@ -1021,7 +1021,7 @@ void func_12(bool bParam0)
 			{
 				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 716706914, 1);
 				iVar7 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 713668775, 1);
-				if ((((((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560) && iVar6 != 1) && iVar6 != 0) && iVar7 != 1) && iVar7 != 0)
+				if ((((((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != joaat("OBJECT_1")) && bLocal_2 != joaat("OBJECT_2")) && iVar6 != 1) && iVar6 != 0) && iVar7 != 1) && iVar7 != 0)
 				{
 					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
 					TASK::TASK_SWAP_WEAPON(Global_35, 1, 0, 0, 0);
@@ -1085,11 +1085,11 @@ void func_12(bool bParam0)
 			}
 			if (!func_2(Global_1394141->f_1326, 8))
 			{
-				if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != 623901053)
+				if (VOLUME::_DOES_VOLUME_EXIST((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) && VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != joaat("REL_NO_RELATIONSHIP"))
 				{
 					if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bLocal_2, true, 2, false))
 					{
-						if ((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != 1549070292) && bLocal_2 != 1030402560)
+						if ((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != joaat("OBJECT_1")) && bLocal_2 != joaat("OBJECT_2"))
 						{
 							if (INVENTORY::_0x3D10D7179D7034AF(func_93(0), bLocal_2, false))
 							{
@@ -1097,9 +1097,9 @@ void func_12(bool bParam0)
 								func_94(bLocal_2);
 							}
 						}
-						if (VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != 623901053)
+						if (VOLUME::_0x666C2F53ABEFC952((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4) != joaat("REL_NO_RELATIONSHIP"))
 						{
-							VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, 623901053);
+							VOLUME::_0xFD010A2154B40676((Global_1394141->f_7[&Global_1394141 /*31*/])->f_4, joaat("REL_NO_RELATIONSHIP"));
 						}
 						func_7(&(Global_1394141->f_1326), 8);
 					}
@@ -4841,7 +4841,7 @@ int func_164(var uParam0, bool bParam1, vector3 vParam2, float fParam5)
 	bVar0 = true;
 	bVar1 = false;
 	iVar2 = func_268(bParam1);
-	if (iVar2 != 41788943)
+	if (iVar2 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		bVar0 = false;
 		bVar1 = true;
@@ -6498,7 +6498,7 @@ int func_198(int iParam0)
 	switch (iParam0)
 	{
 		case 3:
-			return 2124438728;
+			return joaat("MAGICLANTERN_PROJECTOR_VAL_01");
 		default:
 			break;
 	}
@@ -7139,7 +7139,7 @@ void func_213(var uParam0, var uParam1, int iParam2)
 					{
 						PED::SET_PED_CONFIG_FLAG(uParam1[iVar5 /*10*/], 301, false);
 						PED::SET_PED_CAN_BE_TARGETTED(uParam1[iVar5 /*10*/], true);
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam1[iVar5 /*10*/], 623901053);
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam1[iVar5 /*10*/], joaat("REL_NO_RELATIONSHIP"));
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam1[iVar5 /*10*/], false);
 						ENTITY::SET_PED_AS_NO_LONGER_NEEDED((*uParam1)[iVar5 /*10*/]);
 						((*uParam1)[iVar5 /*10*/])->f_1 = 14;
@@ -7162,7 +7162,7 @@ void func_213(var uParam0, var uParam1, int iParam2)
 					{
 						PED::SET_PED_CONFIG_FLAG(uParam1[iVar5 /*10*/], 301, false);
 						PED::SET_PED_CAN_BE_TARGETTED(uParam1[iVar5 /*10*/], true);
-						PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam1[iVar5 /*10*/], 623901053);
+						PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam1[iVar5 /*10*/], joaat("REL_NO_RELATIONSHIP"));
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam1[iVar5 /*10*/], false);
 						ENTITY::SET_PED_AS_NO_LONGER_NEEDED((*uParam1)[iVar5 /*10*/]);
 						((*uParam1)[iVar5 /*10*/])->f_1 = 14;
@@ -7171,7 +7171,7 @@ void func_213(var uParam0, var uParam1, int iParam2)
 				case 12:
 					PED::SET_PED_CONFIG_FLAG(uParam1[iVar5 /*10*/], 301, false);
 					PED::SET_PED_CAN_BE_TARGETTED(uParam1[iVar5 /*10*/], true);
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam1[iVar5 /*10*/], 623901053);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam1[iVar5 /*10*/], joaat("REL_NO_RELATIONSHIP"));
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam1[iVar5 /*10*/], false);
 					TASK::_TASK_SMART_FLEE_STYLE_PED(uParam1[iVar5 /*10*/], Global_35, 3, 0, -1082130432, -1, false);
 					ENTITY::SET_PED_AS_NO_LONGER_NEEDED((*uParam1)[iVar5 /*10*/]);
@@ -10423,7 +10423,7 @@ void func_247(var uParam0, int iParam1, int iParam2)
 		{
 			PED::SET_PED_CAN_BE_TARGETTED(uParam0[iVar0 /*10*/], true);
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(uParam0[iVar0 /*10*/], false);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar0 /*10*/], 623901053);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(uParam0[iVar0 /*10*/], joaat("REL_NO_RELATIONSHIP"));
 			ENTITY::SET_PED_AS_NO_LONGER_NEEDED((*uParam0)[iVar0 /*10*/]);
 		}
 		iVar0++;
@@ -10831,7 +10831,7 @@ int func_268(bool bParam0)
 	{
 		return -761111297;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 char* func_269(int iParam0)
@@ -10908,7 +10908,7 @@ void func_271(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	{
 		if (func_342(bParam1))
 		{
-			func_199(bParam0, 41788943);
+			func_199(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -14845,7 +14845,7 @@ void func_323(int iParam0)
 	{
 		PED::SET_PED_CAN_BE_TARGETTED(iParam0, true);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iParam0, false);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, 623901053);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iParam0, joaat("REL_NO_RELATIONSHIP"));
 		ENTITY::SET_PED_AS_NO_LONGER_NEEDED(&iParam0);
 	}
 }
@@ -15274,7 +15274,7 @@ void func_344(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

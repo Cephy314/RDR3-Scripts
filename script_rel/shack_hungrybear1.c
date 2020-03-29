@@ -332,7 +332,7 @@ void func_11(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (6 - 1))
 	{
-		if (!func_39(uParam0, iVar0) == 41788943)
+		if (!func_39(uParam0, iVar0) == joaat("META_OUTFIT_DEFAULT"))
 		{
 			if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_13[iVar0])))
 			{
@@ -1701,7 +1701,7 @@ int func_39(var uParam0, int iParam1)
 		default:
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 void func_40(bool bParam0, int iParam1)
@@ -2411,7 +2411,7 @@ int func_65(int iParam0)
 	{
 		if (!func_78(iParam0->f_102, joaat("SCRIPT_TASK_GRAPPLE")))
 		{
-			TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(iParam0->f_102, Global_35, -1700357242, 0f, 0.2f, 1, 0);
+			TASK::TASK_PUT_PED_DIRECTLY_INTO_MELEE(iParam0->f_102, Global_35, joaat("AR_BEAR_CHALLENGE_FRONT_SHORT"), 0f, 0.2f, 1, 0);
 			func_71(&(iParam0->f_261), 1);
 			return 1;
 		}
@@ -4086,7 +4086,7 @@ int func_141(var uParam0, var uParam1, int iParam2)
 	if (!ENTITY::IS_ENTITY_DEAD(*uParam0) && !func_41(*uParam1, iParam2))
 	{
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(*uParam0, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, -989642646);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(*uParam0, joaat("REL_WILD_ANIMAL_PREDATOR"));
 		PED::SET_PED_CONFIG_FLAG(*uParam0, 6, true);
 		PED::SET_PED_CONFIG_FLAG(*uParam0, 529, true);
 		TASK::TASK_STAND_STILL(*uParam0, -1);
@@ -5912,7 +5912,7 @@ void func_198(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	{
 		if (func_249(bParam1))
 		{
-			func_40(bParam0, 41788943);
+			func_40(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -7329,7 +7329,7 @@ void func_251(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

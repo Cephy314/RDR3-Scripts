@@ -964,7 +964,7 @@ int func_18()
 		case 16:
 		case 256:
 		case 16384:
-			func_107(Local_547[0 /*13*/], -998484125, "aggroFriendly", Global_35, -1082130432 /* Float: -1f */, 15f, -1082130432 /* Float: -1f */, 0, -1082130432 /* Float: -1f */);
+			func_107(Local_547[0 /*13*/], joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), "aggroFriendly", Global_35, -1082130432 /* Float: -1f */, 15f, -1082130432 /* Float: -1f */, 0, -1082130432 /* Float: -1f */);
 			sVar0 = "Default_Panic";
 			break;
 		case 32:
@@ -972,7 +972,7 @@ int func_18()
 		case 2048:
 		case 8192:
 		case 32768:
-			func_107(Local_547[0 /*13*/], -998484125, "aggroFriendly", Global_35, -1082130432 /* Float: -1f */, 15f, -1082130432 /* Float: -1f */, 0, -1082130432 /* Float: -1f */);
+			func_107(Local_547[0 /*13*/], joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), "aggroFriendly", Global_35, -1082130432 /* Float: -1f */, 15f, -1082130432 /* Float: -1f */, 0, -1082130432 /* Float: -1f */);
 			sVar0 = "Default_Shocked";
 			break;
 		default:
@@ -1910,7 +1910,7 @@ void func_64()
 void func_65()
 {
 	func_190(joaat("WORLD_HUMAN_BARCUSTOMER"), 1, (Local_394[0 /*32*/])->f_1, func_189(0));
-	func_190(-1567729351, 1, (Local_394[1 /*32*/])->f_1, func_189(1));
+	func_190(joaat("SC_WORLD_HUMAN_STAND_BAR"), 1, (Local_394[1 /*32*/])->f_1, func_189(1));
 	func_190(joaat("WORLD_HUMAN_BARCUSTOMER"), 1, (Local_495[0 /*32*/])->f_1, func_189(3));
 }
 
@@ -1974,7 +1974,7 @@ int func_69()
 	{
 		iVar0 = 0;
 	}
-	if (!func_194(-1567729351))
+	if (!func_194(joaat("SC_WORLD_HUMAN_STAND_BAR")))
 	{
 		iVar0 = 0;
 	}
@@ -2392,7 +2392,7 @@ int func_81(int iParam0, var uParam1, vector3 vParam2, bool bParam5, bool bParam
 			PED::SET_PED_CONFIG_FLAG(iVar0, 4, func_235(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 297, !func_236(&(uParam1->f_22)));
 			PED::SET_PED_CONFIG_FLAG(iVar0, 317, !func_236(&(uParam1->f_22)));
-			if (uParam1->f_31 != 623901053)
+			if (uParam1->f_31 != joaat("REL_NO_RELATIONSHIP"))
 			{
 				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, uParam1->f_31);
 			}
@@ -3429,7 +3429,7 @@ int func_116()
 			{
 				func_118();
 			}
-			func_107(Local_547[0 /*13*/], -998484125, "aggroResponse", Global_35, 7f, 18f, 12f, 0, 12f);
+			func_107(Local_547[0 /*13*/], joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), "aggroResponse", Global_35, 7f, 18f, 12f, 0, 12f);
 			Local_187.f_46 = 1;
 			func_319(&(Local_14.f_43), 1, 1);
 			return 1;
@@ -6665,14 +6665,14 @@ int func_191(var uParam0)
 			return 0;
 		}
 	}
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
 			uParam0->f_5 = PED::_REQUEST_METAPED_OUTFIT(uParam0->f_1, uParam0->f_3);
 			if (!PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 			{
-				uParam0->f_3 = 41788943;
+				uParam0->f_3 = joaat("META_OUTFIT_DEFAULT");
 			}
 			return 0;
 		}
@@ -7341,7 +7341,7 @@ int func_220(var uParam0, var uParam1)
 
 int func_221(var uParam0)
 {
-	if (uParam0->f_3 != 41788943)
+	if (uParam0->f_3 != joaat("META_OUTFIT_DEFAULT"))
 	{
 		if (PED::_IS_METAPED_OUTFIT_REQUEST_VALID(uParam0->f_5))
 		{
@@ -8299,7 +8299,7 @@ int func_265(int iParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -10871,7 +10871,7 @@ void func_346()
 
 	vLocal_713 = { 1341.153f, -1377.891f, 79.48371f };
 	fLocal_716 = func_564(vLocal_713, Global_36, 1);
-	func_107(Local_547[0 /*13*/], -23350179, "initialRevealConfront", &(uLocal_381[0]), 12f, 8f, -1082130432 /* Float: -1f */, 0, -1082130432 /* Float: -1f */);
+	func_107(Local_547[0 /*13*/], joaat("EVENT_SHOCKING_BEAT_INTERESTING"), "initialRevealConfront", &(uLocal_381[0]), 12f, 8f, -1082130432 /* Float: -1f */, 0, -1082130432 /* Float: -1f */);
 	func_565();
 	switch (iLocal_587)
 	{
@@ -11223,8 +11223,8 @@ void func_363()
 		iVar0 = func_569(Global_35, 0);
 		switch (iVar0)
 		{
-			case 1030402560: /* GXTEntry: "Melee Object 2" */
-			case 1549070292: /* GXTEntry: "Melee Object 1" */
+			case joaat("OBJECT_2"):
+			case joaat("OBJECT_1"):
 				WEAPON::_0xCEF4C65DE502D367(Global_35, 1, 0, 1, 0);
 				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
 				break;
@@ -11354,7 +11354,7 @@ void func_367()
 				func_559(249295937, &(uLocal_381[1]), 1);
 				func_44(1);
 				TASK::TASK_LOOK_AT_ENTITY(Global_35, &(uLocal_381[1]), 7500, 0, 51, 0);
-				func_107(Local_547[0 /*13*/], -1130398329, "initialRevealPatron", &(uLocal_381[0]), 20f, 12f, 12f, 0, -1082130432 /* Float: -1f */);
+				func_107(Local_547[0 /*13*/], joaat("EVENT_SHOCKING_BEAT_INTERESTING_NEW"), "initialRevealPatron", &(uLocal_381[0]), 20f, 12f, 12f, 0, -1082130432 /* Float: -1f */);
 				func_82(iLocal_711, "0397_U_M_M_RhdBartender_01", 0);
 				func_91(&uLocal_619, 0);
 				func_560(1);
@@ -11382,7 +11382,7 @@ void func_367()
 					PED::SET_PED_CONFIG_FLAG(iLocal_711, 113, true);
 				}
 				TASK::TASK_LOOK_AT_ENTITY(Global_35, &(uLocal_381[0]), 7500, 0, 51, 0);
-				func_107(Local_547[0 /*13*/], 792302887, "secondRevealPatron", &(uLocal_381[0]), 10f, 18f, 12f, 0, 12f);
+				func_107(Local_547[0 /*13*/], joaat("EVENT_SHOCKING_BEAT_SURPRISING_NEW"), "secondRevealPatron", &(uLocal_381[0]), 10f, 18f, 12f, 0, 12f);
 				func_560(4);
 			}
 		}
@@ -14049,7 +14049,7 @@ void func_443(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 	{
 		if (func_607(iParam1))
 		{
-			func_608(iParam0, 41788943);
+			func_608(iParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -16344,7 +16344,7 @@ int func_546()
 	uVar7 = func_680(&(uLocal_381[1]), 0, "thugB", 0);
 	func_85(&vVar4, 1, 10, 0);
 	iLocal_599[0] = func_86(joaat("WORLD_HUMAN_BARCUSTOMER"), vVar0, uVar3, 0, -1f, 1);
-	iLocal_599[1] = func_86(-1567729351, vVar4, uVar7, 0, -1f, 1);
+	iLocal_599[1] = func_86(joaat("SC_WORLD_HUMAN_STAND_BAR"), vVar4, uVar7, 0, -1f, 1);
 	func_681(0, "Victim", &(uLocal_528[0]), 1);
 	func_681(0, "thugA", &(uLocal_381[0]), 1);
 	func_681(0, "thugB", &(uLocal_381[1]), 1);
@@ -16864,7 +16864,7 @@ void func_577(int iParam0)
 			iVar1 = 0;
 			break;
 		case 1:
-			iVar0 = -1567729351;
+			iVar0 = joaat("SC_WORLD_HUMAN_STAND_BAR");
 			iVar1 = 1;
 			break;
 	}
@@ -17535,7 +17535,7 @@ void func_610(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

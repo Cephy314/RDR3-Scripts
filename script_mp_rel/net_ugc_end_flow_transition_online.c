@@ -5580,7 +5580,7 @@ void func_86(int iParam0)
 	Var26.f_550.f_582 = 75;
 	Var26.f_550.f_733 = 75;
 	Var26.f_550.f_884 = 32;
-	Var26.f_550.f_949.f_17 = 623901053;
+	Var26.f_550.f_949.f_17 = joaat("REL_NO_RELATIONSHIP");
 	Var26.f_550.f_949.f_18 = 6;
 	Var26.f_550.f_949.f_32 = 1048576000;
 	Var26.f_550.f_949.f_33 = 1092616192;
@@ -13896,13 +13896,13 @@ int func_393(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, b
 			}
 			break;
 		case 7:
-			if (func_84(uParam4->f_6, 4) && WEAPON::GET_WEAPONTYPE_GROUP(iVar16) == 1622482340)
+			if (func_84(uParam4->f_6, 4) && WEAPON::GET_WEAPONTYPE_GROUP(iVar16) == joaat("GROUP_FISHINGROD"))
 			{
 				iVar15 = iVar16;
 			}
 			else
 			{
-				iVar15 = WEAPON::_0x9F67929D98E7C6E8(iVar0, 1622482340, bVar22, 0);
+				iVar15 = WEAPON::_0x9F67929D98E7C6E8(iVar0, joaat("GROUP_FISHINGROD"), bVar22, 0);
 			}
 			break;
 		case 8:
@@ -13926,13 +13926,13 @@ int func_393(int* iParam0, int iParam1, int iParam2, var uParam3, var uParam4, b
 			}
 			break;
 		case 10:
-			if (func_84(uParam4->f_6, 4) && WEAPON::GET_WEAPONTYPE_GROUP(iVar16) == 308416707)
+			if (func_84(uParam4->f_6, 4) && WEAPON::GET_WEAPONTYPE_GROUP(iVar16) == joaat("GROUP_LASSO"))
 			{
 				iVar15 = iVar16;
 			}
 			else
 			{
-				iVar15 = WEAPON::_0x9F67929D98E7C6E8(iVar0, 308416707, bVar22, 0);
+				iVar15 = WEAPON::_0x9F67929D98E7C6E8(iVar0, joaat("GROUP_LASSO"), bVar22, 0);
 			}
 			break;
 		case 11:
@@ -14619,7 +14619,7 @@ int func_419(bool bParam0, bool bParam1)
 {
 	if (!func_461(Global_26286))
 	{
-		Global_26286 = func_500("CUTSCENE_SKIP", joaat("INPUT_SKIP_CUTSCENE"), 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, -2018976333, 0);
+		Global_26286 = func_500("CUTSCENE_SKIP", joaat("INPUT_SKIP_CUTSCENE"), 5, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1065353216 /* Float: 1f */, 0, 3, joaat("LONG_TIMED_EVENT"), 0);
 		((*Global_1949759)[Global_26286 /*23*/])->f_16 = &Global_20[3];
 		func_463(Global_26286, 0, 1);
 		func_501(Global_26286, 6, 1);
@@ -15526,7 +15526,7 @@ int func_469(float fParam0)
 	}
 	if (fParam0 == 3f)
 	{
-		return -1115154469;
+		return joaat("MOTIONSTATE_SPRINT");
 	}
 	return joaat("MOTIONSTATE_IDLE");
 }
@@ -16585,14 +16585,14 @@ int func_489(int iParam0, var uParam1)
 	}
 	if (PED::_0xA0BC8FAED8CFEB3C(iParam0))
 	{
-		if (PED::_0xFB4891BD7578CDC1(iParam0, 300733975))
+		if (PED::_0xFB4891BD7578CDC1(iParam0, joaat("WRIST_BINDINGS")))
 		{
-			PED::_0xD710A5007C2AC539(iParam0, 300733975, 1);
+			PED::_0xD710A5007C2AC539(iParam0, joaat("WRIST_BINDINGS"), 1);
 			bVar0 = true;
 		}
-		if (PED::_0xFB4891BD7578CDC1(iParam0, 2112357414))
+		if (PED::_0xFB4891BD7578CDC1(iParam0, joaat("ANKLE_BINDINGS")))
 		{
-			PED::_0xD710A5007C2AC539(iParam0, 2112357414, 1);
+			PED::_0xD710A5007C2AC539(iParam0, joaat("ANKLE_BINDINGS"), 1);
 			bVar0 = true;
 		}
 		if (func_84(uParam1->f_6, 2))
@@ -18391,7 +18391,7 @@ int func_565(int iParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(iParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(iParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -22994,7 +22994,7 @@ int func_733(var uParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4,
 	{
 		return 0;
 	}
-	if (DATAFILE::_0x44B3A36933AC009C(&iVar0, uParam0, -925732223))
+	if (DATAFILE::_0x44B3A36933AC009C(&iVar0, uParam0, joaat("ALBEDO")))
 	{
 		uParam1->f_3 = iVar0;
 	}

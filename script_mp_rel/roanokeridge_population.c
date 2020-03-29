@@ -96,7 +96,7 @@ void func_2()
 
 	vVar0 = { fLocal_17, fLocal_18, fLocal_19 };
 	vVar3 = { fLocal_20, fLocal_21, fLocal_22 };
-	FLOCK::_0xF2CCA7B68CFAB2B9(904876610, 2638.8f, 1972.1f, 185.1f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
+	FLOCK::_0xF2CCA7B68CFAB2B9(joaat("SPECIES_BIRD_CROW"), 2638.8f, 1972.1f, 185.1f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
 }
 
 void func_3()
@@ -135,8 +135,8 @@ void func_5()
 	{
 		return;
 	}
-	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(774780778);
-	iVar1 = PERSCHAR::_0x112DDF56300BC6E5(1302603725);
+	iVar0 = PERSCHAR::_0x112DDF56300BC6E5(joaat("ROA_MLH_RANCHHAND"));
+	iVar1 = PERSCHAR::_0x112DDF56300BC6E5(joaat("ROA_MLH_RANCHHAND_2"));
 	if (!PERSCHAR::_0x800DF3FC913355F3(iVar0) || !PERSCHAR::_0x800DF3FC913355F3(iVar1))
 	{
 		return;
@@ -225,7 +225,7 @@ int func_6(bool bParam0, bool bParam1)
 void func_7()
 {
 	func_14();
-	FLOCK::_0xFB16F08F47B83B4C(904876610);
+	FLOCK::_0xFB16F08F47B83B4C(joaat("SPECIES_BIRD_CROW"));
 }
 
 void func_8(int iParam0)

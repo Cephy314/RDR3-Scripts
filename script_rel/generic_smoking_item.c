@@ -845,8 +845,8 @@ void func_26(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 		case joaat("CONSUMABLE_HORSE_MEDICINE_USED"):
 			func_54(func_57(joaat("USED"), joaat("HORSE_PILLS")), 1);
 			break;
-		case 433340626: /* GXTEntry: "Opened Cover Scent" */
-		case 1895068170: /* GXTEntry: "Cover Scent Lotion" */
+		case joaat("CONSUMABLE_COVER_SCENT_USED"):
+		case joaat("CONSUMABLE_COVER_SCENT"):
 			func_54(func_57(joaat("USED"), joaat("COVER_SCENT")), 1);
 			break;
 		case joaat("CONSUMABLE_HERBIVORE_BAIT"):
@@ -860,14 +860,14 @@ void func_26(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (func_8() == -1)
 	{
-		if (iParam0 == -1976480343)
+		if (iParam0 == joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED"))
 		{
 			func_54(func_57(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam2)
 	{
-		func_54(func_53(704570463), 1);
+		func_54(func_53(joaat("DEADEYE_ITEMS_USED")), 1);
 	}
 }
 

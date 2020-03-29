@@ -6189,33 +6189,33 @@ int func_240(int iParam0)
 			return 0;
 		case joaat("BIGVALLEY"):
 			return 1;
-		case 1308232528:
+		case joaat("BLUEWATERMARSH"):
 			return 2;
-		case 1835499550:
+		case joaat("CUMBERLAND"):
 			return 3;
 		case joaat("GREATPLAINS"):
 			return 4;
-		case -120156735:
+		case joaat("GRIZZLIESEAST"):
 			return 6;
-		case 1645618177:
+		case joaat("GRIZZLIESWEST"):
 			return 7;
-		case -512529193:
+		case joaat("GUARMAD"):
 			return 8;
 		case joaat("HEARTLANDS"):
 			return 9;
-		case 178647645:
+		case joaat("ROANOKE"):
 			return 10;
 		case joaat("SCARLETTMEADOWS"):
 			return 11;
 		case joaat("TALLTREES"):
 			return 12;
-		case -2066240242:
+		case joaat("GAPTOOTHRIDGE"):
 			return 13;
 		case joaat("RIOBRAVO"):
 			return 14;
-		case -108848014:
+		case joaat("CHOLLASPRINGS"):
 			return 15;
-		case 892930832:
+		case joaat("HENNIGANSSTEAD"):
 			return 16;
 		default:
 			break;
@@ -6540,9 +6540,9 @@ int func_256()
 	int iVar0;
 	int iVar5;
 
-	if (STATS::_0xA2E2BEA4E83F6270(-92244418) > 0)
+	if (STATS::_0xA2E2BEA4E83F6270(joaat("FEATURE_PM_DAILY_SALESWOMAN_LOCATIONS")) > 0)
 	{
-		STATS::_0xB5E2EDA2135E0FA1(-92244418, 0, &iVar0);
+		STATS::_0xB5E2EDA2135E0FA1(joaat("FEATURE_PM_DAILY_SALESWOMAN_LOCATIONS"), 0, &iVar0);
 	}
 	else
 	{
@@ -11186,14 +11186,14 @@ int func_442(int iParam0)
 	}
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
 	iParam0 = NETWORK::GET_UNIQUE_INT_FOR_PLAYER(&(Global_1275573->f_154[iParam0]));
 	if (iParam0 < 0 || iParam0 >= 32)
 	{
-		return 623901053;
+		return joaat("REL_NO_RELATIONSHIP");
 	}
-	iVar0 = 623901053;
+	iVar0 = joaat("REL_NO_RELATIONSHIP");
 	switch (iParam0)
 	{
 		case 0:
@@ -11974,29 +11974,29 @@ int func_487(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1056359525:
+		case joaat("MPSW_LOCATION_00"):
 			return 0;
-		case 89248012:
+		case joaat("MPSW_LOCATION_01"):
 			return 1;
-		case -100681112:
+		case joaat("MPSW_LOCATION_02"):
 			return 2;
-		case -1087814448:
+		case joaat("MPSW_LOCATION_03"):
 			return 3;
-		case -1265422428:
+		case joaat("MPSW_LOCATION_04"):
 			return 4;
-		case 2053061437:
+		case joaat("MPSW_LOCATION_05"):
 			return 5;
-		case -804198753:
+		case joaat("MPSW_LOCATION_06"):
 			return 6;
-		case 97833510:
+		case joaat("MPSW_LOCATION_07"):
 			return 7;
-		case -74793582:
+		case joaat("MPSW_LOCATION_08"):
 			return 8;
-		case -1585936017:
+		case joaat("MPSW_LOCATION_09"):
 			return 9;
-		case 792472748:
+		case joaat("MPSW_LOCATION_10"):
 			return 10;
-		case 140861179:
+		case joaat("MPSW_LOCATION_11"):
 			return 11;
 		default:
 			break;
@@ -15217,9 +15217,9 @@ int func_661(int iParam0)
 
 void func_662(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 void func_663(int iParam0, int iParam1, int iParam2)
@@ -27025,7 +27025,7 @@ int func_1194(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -27037,7 +27037,7 @@ int func_1194(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;

@@ -3629,7 +3629,7 @@ void func_172(int iParam0)
 
 void func_173(int iParam0)
 {
-	PAD::_0x2804658EB7D8A50B(4, 535538493);
+	PAD::_0x2804658EB7D8A50B(4, joaat("MINIGAMEMILKING"));
 	iParam0->f_116 = iParam0->f_115;
 	iParam0->f_118 = iParam0->f_117;
 	iParam0->f_115 = PAD::GET_CONTROL_NORMAL(2, iParam0->f_131);
@@ -6341,7 +6341,7 @@ int func_266(int iParam0)
 		case -2061583405:
 			return joaat("HATS");
 		case -525676072:
-			return 1249071452;
+			return joaat("MASKS_LARGE");
 		default:
 			break;
 	}

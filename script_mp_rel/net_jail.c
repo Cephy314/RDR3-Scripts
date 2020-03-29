@@ -1894,7 +1894,7 @@ void func_57(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 	switch (iParam0)
 	{
 		case joaat("MOTIONSTATE_IDLE"):
-		case 1140525470:
+		case joaat("MOTIONSTATE_CROUCH_IDLE"):
 			fVar0 = 0f;
 			break;
 		case -1415276238:
@@ -1902,14 +1902,14 @@ void func_57(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 			fVar0 = 1.5f;
 			break;
 		case joaat("MOTIONSTATE_RUN"):
-		case 898879241:
+		case joaat("MOTIONSTATE_CROUCH_RUN"):
 			fVar0 = 2f;
 			break;
-		case -1115154469:
+		case joaat("MOTIONSTATE_SPRINT"):
 			fVar0 = 3f;
 			break;
 		case joaat("MOTIONSTATE_WALK"):
-		case 147004056:
+		case joaat("MOTIONSTATE_CROUCH_WALK"):
 			break;
 	}
 	PED::FORCE_PED_MOTION_STATE(Global_34, iParam0, bParam2, iParam3, false);
@@ -4689,7 +4689,7 @@ void func_195(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

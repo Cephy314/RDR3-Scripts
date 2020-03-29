@@ -1076,7 +1076,7 @@ int func_50(int iParam0)
 	func_58(0);
 	func_124(&uLocal_653);
 	func_125(&iLocal_641);
-	iLocal_641 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(-1227782948, bLocal_526, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 1, -1, -1);
+	iLocal_641 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW"), bLocal_526, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 1, -1, -1);
 	PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), "VampireBubble");
 	PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), "VampireCam");
 	if (MAP::DOES_BLIP_EXIST(iLocal_651))
@@ -1671,7 +1671,7 @@ int func_69(var uParam0)
 			ENTITY::_0x18FF3110CF47115D(bLocal_526, 9, false);
 			PED::_0xAE6004120C18DF97(bLocal_526, 0, false);
 			func_129(bLocal_526, 1, 1);
-			iLocal_641 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(-1227782948, bLocal_526, 0f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 1, -1, -1);
+			iLocal_641 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DISTURBING_NEW"), bLocal_526, 0f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 1, -1, -1);
 			if (func_158(Local_14.f_3, 0, 0, 1) != joaat("WEAPON_MELEE_KNIFE_VAMPIRE"))
 			{
 				WEAPON::REMOVE_ALL_PED_WEAPONS(Local_14.f_3, true, true);
@@ -10337,7 +10337,7 @@ void func_414(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 	{
 		if (func_494(bParam1))
 		{
-			func_155(bParam0, 41788943);
+			func_155(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -11103,7 +11103,7 @@ int func_457(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -12229,7 +12229,7 @@ void func_496(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

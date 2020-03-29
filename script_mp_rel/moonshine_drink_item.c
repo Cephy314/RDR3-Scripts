@@ -53,7 +53,7 @@ void __EntryFunction__()
 	func_5(&ScriptParam_0, &(Var0.f_1));
 	if (Var0.f_1 == 0)
 	{
-		if (Var0.f_204 != -1370915905)
+		if (Var0.f_204 != joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_BAR"))
 		{
 			Var0.f_1 = -545779394;
 		}
@@ -395,51 +395,51 @@ void func_8(var uParam0)
 			{
 				case 0:
 					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD");
-					uParam0->f_187[1] = -366893967;
-					uParam0->f_187[2] = -965063707;
+					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_SOBER_PUT_AWAY");
+					uParam0->f_187[2] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHUG_PUT_AWAY");
 					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_SOBER_SIP_TRANS_BASE");
-					uParam0->f_187[4] = -1632398441;
+					uParam0->f_187[4] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_PUT_AWAY");
 					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[6] = 466323971;
+					uParam0->f_187[6] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
-					uParam0->f_187[13] = 1642022542;
-					uParam0->f_187[12] = 841023474;
+					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_PUT_AWAY");
+					uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHUG_PUT_AWAY");
 					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_SIP_TRANS_BASE");
-					uParam0->f_187[11] = 846008983;
+					uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_PUT_AWAY");
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[10] = -1004140292;
+					uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					break;
 				case 1:
 					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD");
-					uParam0->f_187[1] = -1703290751;
-					uParam0->f_187[2] = -250923967;
+					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_DRUNK_PUT_AWAY");
+					uParam0->f_187[2] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHUG_PUT_AWAY");
 					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_DRUNK_SIP_TRANS_BASE");
-					uParam0->f_187[4] = -2084040005;
+					uParam0->f_187[4] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_PUT_AWAY");
 					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[6] = 1792747783;
+					uParam0->f_187[6] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
-					uParam0->f_187[13] = -1021227765;
-					uParam0->f_187[12] = -553515202;
+					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_PUT_AWAY");
+					uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHUG_PUT_AWAY");
 					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
-					uParam0->f_187[11] = -1159114752;
+					uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_PUT_AWAY");
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[10] = -1297229685;
+					uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					break;
 				case 2:
 					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD");
-					uParam0->f_187[1] = 223258152;
-					uParam0->f_187[2] = -1461841052;
+					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_WASTED_PUT_AWAY");
+					uParam0->f_187[2] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHUG_PUT_AWAY");
 					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_WASTED_SIP_TRANS_BASE");
-					uParam0->f_187[4] = -1491965375;
+					uParam0->f_187[4] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_PUT_AWAY");
 					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[6] = 1154356209;
+					uParam0->f_187[6] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
-					uParam0->f_187[13] = -1021227765;
-					uParam0->f_187[12] = -553515202;
+					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_PUT_AWAY");
+					uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHUG_PUT_AWAY");
 					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
-					uParam0->f_187[11] = -1159114752;
+					uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_PUT_AWAY");
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[10] = -1297229685;
+					uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					break;
 			}
 			break;
@@ -449,50 +449,50 @@ void func_8(var uParam0)
 				case 0:
 					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_SOBER_HOLD");
 					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_SOBER_DISCARD");
-					uParam0->f_187[2] = 1018151539;
+					uParam0->f_187[2] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHUG_DISCARD");
 					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_SOBER_SIP_TRANS_BASE");
-					uParam0->f_187[4] = 1775995628;
+					uParam0->f_187[4] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_DISCARD");
 					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[6] = -1083346834;
+					uParam0->f_187[6] = joaat("MP_MOONSHINE_DRINKING_SOBER_CHEERS_HI_TRANS_CHUG_DISCARD");
 					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_HOLD");
 					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_DISCARD");
-					uParam0->f_187[12] = -176911354;
+					uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHUG_DISCARD");
 					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_SIP_TRANS_BASE");
-					uParam0->f_187[11] = -603565807;
+					uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_DISCARD");
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[10] = -1078116948;
+					uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_HI_TRANS_CHUG_DISCARD");
 					break;
 				case 1:
 					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_DRUNK_HOLD");
 					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_DRUNK_DISCARD");
-					uParam0->f_187[2] = 867868037;
+					uParam0->f_187[2] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHUG_DISCARD");
 					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_DRUNK_SIP_TRANS_BASE");
-					uParam0->f_187[4] = 2043890671;
+					uParam0->f_187[4] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_DISCARD");
 					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[6] = -419950106;
+					uParam0->f_187[6] = joaat("MP_MOONSHINE_DRINKING_DRUNK_CHEERS_HI_TRANS_CHUG_DISCARD");
 					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
 					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_DISCARD");
-					uParam0->f_187[12] = -1080252797;
+					uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHUG_DISCARD");
 					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
-					uParam0->f_187[11] = 1272306923;
+					uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_DISCARD");
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[10] = -1757318252;
+					uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_HI_TRANS_CHUG_DISCARD");
 					break;
 				case 2:
 					uParam0->f_187[0] = joaat("MP_MOONSHINE_DRINKING_WASTED_HOLD");
 					uParam0->f_187[1] = joaat("MP_MOONSHINE_DRINKING_WASTED_DISCARD");
-					uParam0->f_187[2] = 1181480000;
+					uParam0->f_187[2] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHUG_DISCARD");
 					uParam0->f_187[3] = joaat("MP_MOONSHINE_DRINKING_WASTED_SIP_TRANS_BASE");
-					uParam0->f_187[4] = -2065428388;
+					uParam0->f_187[4] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_DISCARD");
 					uParam0->f_187[5] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[6] = -1504019657;
+					uParam0->f_187[6] = joaat("MP_MOONSHINE_DRINKING_WASTED_CHEERS_HI_TRANS_CHUG_DISCARD");
 					uParam0->f_187[7] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_HOLD");
 					uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_DISCARD");
-					uParam0->f_187[12] = -1080252797;
+					uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHUG_DISCARD");
 					uParam0->f_187[8] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_SIP_TRANS_BASE");
-					uParam0->f_187[11] = 1272306923;
+					uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_DISCARD");
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
-					uParam0->f_187[10] = -1757318252;
+					uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_HI_TRANS_CHUG_DISCARD");
 					break;
 			}
 			break;
@@ -507,7 +507,7 @@ float func_9(var uParam0, int iParam1)
 	switch (ENTITY::GET_ENTITY_MODEL(iParam1))
 	{
 		case joaat("MP006_S_TINMUG_MOONSHINE01X"):
-			if (uParam0->f_204 == -1370915905)
+			if (uParam0->f_204 == joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_BAR"))
 			{
 				if (((*Global_1277166)[iVar0 /*86*/])->f_19.f_19 == 0)
 				{
@@ -754,7 +754,7 @@ void func_14(var uParam0)
 	}
 	if (!func_19(uParam0->f_202, 4))
 	{
-		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (((TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE") || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC")) || TASK::_0x2D0571BB55879DA2(Global_34) == -2007463055) || TASK::_0x2D0571BB55879DA2(Global_34) == -2114469108))
+		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (((TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE") || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC")) || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER")) || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_PLAYER_MOONSHINE_SERVING")))
 		{
 			func_4(&(uParam0->f_202), 4);
 			func_44(uParam0);
@@ -1061,7 +1061,7 @@ void func_28(var uParam0, int iParam1)
 		switch (ENTITY::GET_ENTITY_MODEL(iParam1))
 		{
 			case joaat("MP006_S_TINMUG_MOONSHINE01X"):
-				if (uParam0->f_204 == -1370915905)
+				if (uParam0->f_204 == joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_BAR"))
 				{
 					func_67(iVar0);
 					if (((func_19(uParam0->f_202, 16) && STATS::CHAL_IS_GOAL_ACTIVE(joaat("MPAC_ROLE_MOONSHINER"), joaat("MPAC_ROLE_MOONSHINER_006"))) && func_3(PLAYER::PLAYER_ID(), 1)) && ((*Global_1277166)[iVar0 /*86*/])->f_19.f_17 != 0)
@@ -1359,17 +1359,17 @@ void func_44(var uParam0)
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHEERS_LO_TRANS_SIP_BASE");
 					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("MP006_S_TINMUG_MOONSHINE01X"))
 					{
-						uParam0->f_187[13] = 70200837;
-						uParam0->f_187[12] = -1904446110;
-						uParam0->f_187[11] = -1726785854;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_PUT_AWAY");
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHUG_PUT_AWAY");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHEERS_PUT_AWAY");
 						uParam0->f_187[10] = 1484522584;
 					}
 					else
 					{
-						uParam0->f_187[10] = -911864475;
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHEERS_HI_TRANS_CHUG_DISCARD");
 						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_DISCARD");
-						uParam0->f_187[12] = 928079862;
-						uParam0->f_187[11] = 1067500305;
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHUG_DISCARD");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_RH_CHEERS_DISCARD");
 					}
 					break;
 				case 1:
@@ -1379,17 +1379,17 @@ void func_44(var uParam0)
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHEERS_LO_TRANS_SIP_BASE");
 					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("MP006_S_TINMUG_MOONSHINE01X"))
 					{
-						uParam0->f_187[13] = -931616856;
-						uParam0->f_187[12] = -1171949494;
-						uParam0->f_187[11] = 1741364796;
-						uParam0->f_187[10] = -841143620;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_PUT_AWAY");
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHUG_PUT_AWAY");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHEERS_PUT_AWAY");
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					}
 					else
 					{
-						uParam0->f_187[10] = -2145686352;
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHEERS_HI_TRANS_CHUG_DISCARD");
 						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_DISCARD");
-						uParam0->f_187[12] = 1351299120;
-						uParam0->f_187[11] = -408165963;
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHUG_DISCARD");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_RH_CHEERS_DISCARD");
 					}
 					break;
 			}
@@ -1414,17 +1414,17 @@ void func_44(var uParam0)
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHEERS_LO_TRANS_SIP_BASE");
 					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("MP006_S_TINMUG_MOONSHINE01X"))
 					{
-						uParam0->f_187[13] = -1298041581;
-						uParam0->f_187[12] = 525085366;
-						uParam0->f_187[11] = -411204481;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_PUT_AWAY");
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHUG_PUT_AWAY");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHEERS_PUT_AWAY");
 						uParam0->f_187[10] = -30676417;
 					}
 					else
 					{
-						uParam0->f_187[10] = 1729142180;
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHEERS_HI_TRANS_CHUG_DISCARD");
 						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_DISCARD");
-						uParam0->f_187[12] = 1733007823;
-						uParam0->f_187[11] = 1122183656;
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHUG_DISCARD");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_LH_CHEERS_DISCARD");
 					}
 					break;
 				case 1:
@@ -1434,17 +1434,17 @@ void func_44(var uParam0)
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHEERS_LO_TRANS_SIP_BASE");
 					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("MP006_S_TINMUG_MOONSHINE01X"))
 					{
-						uParam0->f_187[13] = -168572957;
-						uParam0->f_187[12] = 55551996;
-						uParam0->f_187[11] = 1242912044;
-						uParam0->f_187[10] = 766843712;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_PUT_AWAY");
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHUG_PUT_AWAY");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHEERS_PUT_AWAY");
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					}
 					else
 					{
-						uParam0->f_187[10] = 1192127603;
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHEERS_HI_TRANS_CHUG_DISCARD");
 						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_DISCARD");
-						uParam0->f_187[12] = 749044204;
-						uParam0->f_187[11] = -504440314;
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHUG_DISCARD");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_LH_CHEERS_DISCARD");
 					}
 					break;
 			}
@@ -1458,17 +1458,17 @@ void func_44(var uParam0)
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("MP006_S_TINMUG_MOONSHINE01X"))
 					{
-						uParam0->f_187[13] = 1642022542;
-						uParam0->f_187[12] = 841023474;
-						uParam0->f_187[11] = 846008983;
-						uParam0->f_187[10] = -1004140292;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_PUT_AWAY");
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHUG_PUT_AWAY");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_PUT_AWAY");
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					}
 					else
 					{
-						uParam0->f_187[10] = -1078116948;
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_HI_TRANS_CHUG_DISCARD");
 						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_DISCARD");
-						uParam0->f_187[12] = -176911354;
-						uParam0->f_187[11] = -603565807;
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHUG_DISCARD");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_SOBER_TABLE_CHEERS_DISCARD");
 					}
 					break;
 				case 1:
@@ -1478,17 +1478,17 @@ void func_44(var uParam0)
 					uParam0->f_187[9] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_LO_TRANS_SIP_BASE");
 					if (ENTITY::GET_ENTITY_MODEL(uParam0->f_1.f_174) == joaat("MP006_S_TINMUG_MOONSHINE01X"))
 					{
-						uParam0->f_187[13] = -1021227765;
-						uParam0->f_187[12] = -553515202;
-						uParam0->f_187[11] = -1159114752;
-						uParam0->f_187[10] = -1297229685;
+						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_PUT_AWAY");
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHUG_PUT_AWAY");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_PUT_AWAY");
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_HI_TRANS_CHUG_PUTAWAY");
 					}
 					else
 					{
-						uParam0->f_187[10] = -1757318252;
+						uParam0->f_187[10] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_HI_TRANS_CHUG_DISCARD");
 						uParam0->f_187[13] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_DISCARD");
-						uParam0->f_187[12] = -1080252797;
-						uParam0->f_187[11] = 1272306923;
+						uParam0->f_187[12] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHUG_DISCARD");
+						uParam0->f_187[11] = joaat("MP_MOONSHINE_DRINKING_DRUNK_TABLE_CHEERS_DISCARD");
 					}
 					break;
 			}
@@ -1915,14 +1915,14 @@ void func_66(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	}
 	if (func_108() == -1)
 	{
-		if (iParam0 == -1976480343)
+		if (iParam0 == joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED"))
 		{
 			func_69(func_68(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam1)
 	{
-		func_69(func_105(704570463), 1);
+		func_69(func_105(joaat("DEADEYE_ITEMS_USED")), 1);
 	}
 	func_109(iParam0, iParam3);
 }
@@ -2928,31 +2928,31 @@ void func_109(int iParam0, int iParam1)
 		}
 		if (func_54(iParam0, -136654233))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -609313610, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_CANNEDGOODSEATEN_00"), 1);
 		}
 		if ((func_54(iParam0, 1765172170) || 1443104131 == iVar0) || -1919515848 == iVar0)
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 733633210, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_TOBACCOSMOKEDCHEWED_00"), 1);
 		}
 		if (func_54(iParam0, 1573112293))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -1274788474, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_HERBSTASTED_00"), 1);
 		}
 		if (func_54(iParam0, -2085281117) && !func_54(iParam0, -1237028043))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, -1456129530, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_FRESHPRODUCEEATEN_00"), 1);
 		}
 		if (func_54(iParam0, 200705431))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1380824593, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_DRYGOODSEATEN_00"), 1);
 		}
 		if (((func_54(iParam0, joaat("CI_TAG_ITEM_MEAT_ANIMAL")) || func_54(iParam0, -839724752)) || func_54(iParam0, 1264218912)) || iParam0 == joaat("CONSUMABLE_OFFAL"))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 381139323, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_MEATEATEN_00"), 1);
 		}
 		if (func_54(iParam0, -764700608))
 		{
-			STATS::CHAL_ADD_GOAL_PROGRESS_INT(-1823988672, 1844266867, 1);
+			STATS::CHAL_ADD_GOAL_PROGRESS_INT(joaat("FEATURE_PM_DAILY_CHALLENGES"), joaat("MPDC_CONSUMABLE_TONICOILUSED_00"), 1);
 		}
 	}
 }

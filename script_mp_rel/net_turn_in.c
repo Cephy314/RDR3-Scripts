@@ -2150,7 +2150,7 @@ int func_80(int iParam0)
 		case 6:
 			return -1763412335;
 		case 7:
-			return -733349513;
+			return joaat("VALENTINE_SHERIFF");
 		default:
 			break;
 	}
@@ -5914,7 +5914,7 @@ int func_383(int iParam0, int iParam1)
 			return 7;
 		case -560457212:
 			return 3;
-		case -540896632:
+		case joaat("FLOWERS"):
 			return 4;
 		case 331632914:
 			return 9;
@@ -5926,7 +5926,7 @@ int func_383(int iParam0, int iParam1)
 			return 2;
 		case joaat("GRASS"):
 			return 1;
-		case 1955535331:
+		case joaat("LONGGRASS"):
 			return 6;
 		case joaat("PUSH"):
 			return 11;
@@ -6017,7 +6017,7 @@ void func_388(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);

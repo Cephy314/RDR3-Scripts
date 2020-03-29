@@ -373,13 +373,13 @@ int func_16(int iParam0)
 		case joaat("WORLD_HUMAN_CAULDRON"):
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(260, 265 + 1);
 			return iVar0;
-		case 2024871051:
+		case joaat("SC_CAMP_VIG_FIRE_POKE"):
 			return 13;
-		case 1015352373:
+		case joaat("SC_CAMP_VIG_FIRE_BLOW"):
 			return 12;
-		case 196070706:
+		case joaat("SC_CAMP_VIG_SORE_JOINTS_MALE"):
 			return 18;
-		case 492051452:
+		case joaat("SC_CAMP_VIG_DUTCH_START_PHONOGRAPH"):
 			return 20;
 	}
 	return -1;
@@ -389,7 +389,7 @@ int func_17(int iParam0, bool bParam1)
 {
 	switch (iParam0)
 	{
-		case 1157205070:
+		case joaat("SC_AMB_VIG_VOMIT_WALL"):
 			if (PED::IS_PED_MALE(bParam1))
 			{
 				return 26;

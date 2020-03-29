@@ -278,7 +278,7 @@ void func_3(var uParam0)
 
 bool func_4()
 {
-	return !UNLOCK::_UNLOCK_IS_UNLOCKED(666902673);
+	return !UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_CHAL_LEGENDARY_PANTHER"));
 }
 
 int func_5(var uParam0)
@@ -1193,7 +1193,7 @@ int func_42(var uParam0)
 	StringCopy(&(uParam0->f_605), "PD_Med_aged_carcass_Hvy_Hot", 64);
 	uParam0->f_12.f_5 = 1;
 	uParam0->f_623 = 1;
-	uParam0->f_12.f_8 = -1541074772;
+	uParam0->f_12.f_8 = joaat("PANTHER_LEGENDARY");
 	return 1;
 }
 
@@ -6244,7 +6244,7 @@ void func_170(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	{
 		if (func_206(bParam1))
 		{
-			func_207(bParam0, 41788943);
+			func_207(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -7358,7 +7358,7 @@ void func_209(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -7529,7 +7529,7 @@ int func_222(bool bParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(bParam0, -1805387726))
+	if (PED::_0x34D6AC1157C8226C(bParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -7570,7 +7570,7 @@ int func_225(var uParam0)
 		case joaat("CONSUMABLE_CHEWING_TOBACCO_USED"):
 			*uParam0 = joaat("CONSUMABLE_CHEWING_TOBACCO");
 			return 1;
-		case -1424823393: /* GXTEntry: "Opened Cigarettes" */
+		case joaat("CONSUMABLE_CIGARETTE_BOX_USED"):
 			*uParam0 = joaat("CONSUMABLE_CIGARETTE_BOX");
 			return 1;
 		default:

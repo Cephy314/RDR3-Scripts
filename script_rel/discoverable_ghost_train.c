@@ -762,293 +762,293 @@ int func_10(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1208255499:
+		case joaat("WB_DISCO_CEREMONIAL_HATCHET"):
 			return -261997819;
-		case 1329911409:
+		case joaat("WB_DISCO_AXE_IN_TREE"):
 			return 870958936;
-		case -285871200:
+		case joaat("WB_DISCO_AZTEC_MASK"):
 			return 677950956;
-		case 457229797:
+		case joaat("WB_DISCO_BLACK_SHEEP"):
 			return -35775921;
-		case 1211791851:
+		case joaat("WB_DISCO_BOAT_IN_TREE"):
 			return -1084929085;
-		case 944017471:
+		case joaat("WB_DISCO_BOOTS_NOTE_RANGE"):
 			return 2135153015;
-		case 1665997921:
+		case joaat("WB_DISCO_CIV_WAR_FORT"):
 			return 1347913620;
-		case -2085458327:
+		case joaat("WB_DISCO_CIV_WAR_KNIFE"):
 			return -599506500;
-		case 2135478933:
+		case joaat("WB_DISCO_CORPSE_PIT"):
 			return -1568839185;
-		case 2057536374:
+		case joaat("WB_DISCO_DEAD_CIV_WAR"):
 			return 1937333853;
-		case 1366101372:
+		case joaat("WB_DISCO_DREAMCATCHERS"):
 			return -321841939;
-		case 284604988:
+		case joaat("WB_DISCO_EASEL"):
 			return 1034793488;
-		case 615465554:
+		case joaat("WB_DISCO_FACE_IN_CLIFF"):
 			return -2009137002;
-		case 550135642:
+		case joaat("WB_DISCO_FOSSILIZED_MAN"):
 			return -1646022773;
-		case 1241103201:
+		case joaat("WB_DISCO_GIANT_REMAINS"):
 			return -1787770845;
-		case 1115410643:
+		case joaat("WB_DISCO_GRAVE"):
 			return -1761578407;
-		case 1602500054:
+		case joaat("WB_DISCO_ARTHUR_GRAVE"):
 			return 404434344;
-		case 1247293257:
+		case joaat("WB_DISCO_KILL_ZONE"):
 			return 503180747;
-		case 2124474718:
+		case joaat("WB_DISCO_HIDDEN_TUNNEL"):
 			return 308500632;
-		case 2085223846:
+		case joaat("WB_DISCO_LOVE_MESSAGE"):
 			return 74587361;
-		case 918603353:
+		case joaat("WB_DISCO_METEORITE"):
 			return -709811179;
-		case 1443601258:
+		case joaat("WB_DISCO_MICAH_CAMP"):
 			return 118535038;
-		case 2015617886:
+		case joaat("WB_DISCO_OLD_WORLD_SCRIPT"):
 			return -1609238411;
-		case 1920390250:
+		case joaat("WB_DISCO_PHONOGRAPH_HOUSE"):
 			return -1614148516;
-		case 1292765231:
+		case joaat("WB_DISCO_PILE_SKULLS"):
 			return 173549940;
-		case -238317386:
+		case joaat("WB_DISCO_PIRATE_KNIFE"):
 			return 1424723727;
-		case 816253701:
+		case joaat("WB_DISCO_POWDER_KEG"):
 			return -1308658310;
-		case -1452428628:
+		case joaat("WB_DISCO_REGISTER_ROCK"):
 			return -1761189332;
-		case -796563359:
+		case joaat("WB_DISCO_SCARECROW_1"):
 			return -1420566543;
-		case 1580303291:
+		case joaat("WB_DISCO_SCARECROW_2"):
 			return -1208846034;
-		case 1828659542:
+		case joaat("WB_DISCO_SCARECROW_3"):
 			return 1048086072;
-		case 2126824673:
+		case joaat("WB_DISCO_SCARECROW_4"):
 			return 939555152;
-		case 1953753789:
+		case joaat("WB_DISCO_STONEHENGE"):
 			return -161804536;
-		case 673669550:
+		case joaat("WB_DISCO_SUN_DIAL"):
 			return -30872859;
-		case 1801467173:
+		case joaat("WB_DISCO_SWAMP_HAND"):
 			return 1519228573;
-		case 1193272637:
+		case joaat("WB_DISCO_TREE_STRUCK"):
 			return -1505275983;
-		case 376902028:
+		case joaat("WB_DISCO_VAMPIRE_CLUES"):
 			return -890175011;
-		case 1290045011:
+		case joaat("WB_DISCO_VIKING_GEAR"):
 			return 733338689;
-		case 402062501:
+		case joaat("WB_DISCO_WHALE_BONE"):
 			return -986176781;
-		case 1071768797:
+		case joaat("WB_DISCO_BUCK_CARCASS"):
 			return -1824429070;
-		case 858952896:
+		case joaat("WB_DISCO_BRUSH_FIRE"):
 			return 1734766691;
-		case 2006959770:
+		case joaat("WB_DISCO_FLATTENED_CABIN"):
 			return -920971071;
-		case 385483619:
+		case joaat("WB_DISCO_OBELISK"):
 			return -979575591;
-		case 656484143:
+		case joaat("WB_DISCO_WHISKEY_TREE"):
 			return 464413478;
-		case 313051664:
+		case joaat("WB_DISCO_CIRCUS_WAGON"):
 			return 657666087;
-		case 795896456:
+		case joaat("WB_DISCO_LIGHTNING_TREES"):
 			return -715636193;
-		case 1917865597:
+		case joaat("WB_DISCO_SERPENT_MOUND"):
 			return -607940493;
-		case 597525083:
+		case joaat("WB_DISCO_DEAD_MINER"):
 			return 425000526;
-		case 1391618133:
+		case joaat("WB_DISCO_OLD_FIREPIT"):
 			return -544327665;
-		case 984162035:
+		case joaat("WB_DISCO_FLYING_MACHINE"):
 			return -1053108445;
-		case 569502820:
+		case joaat("WB_DISCO_OLD_GRAVESTONES"):
 			return 230001763;
-		case 713309702:
+		case joaat("WB_DISCO_STRANGE_STATUES"):
 			return 2000209669;
-		case 1665886065:
+		case joaat("WB_DISCO_BROKEN_WAGONS"):
 			return -1859023693;
-		case 1326945204:
+		case joaat("WB_DISCO_BRA_SECRET"):
 			return 1861313914;
-		case -31708551:
+		case joaat("WB_DISCO_BRAITH_3"):
 			return -2108030724;
-		case 902935343:
+		case joaat("WB_DISCO_CRASHED_AIRSHIP"):
 			return 58958195;
-		case 1224129984:
+		case joaat("WB_DISCO_UTE_WICKUP"):
 			return -1891628345;
-		case 899090818:
+		case joaat("WB_DISCO_WITCHES_CAULDRON"):
 			return 1464664327;
-		case 1055001530:
+		case joaat("WB_DISCO_OLD_DIRTY_CABIN"):
 			return -654238687;
-		case 1762028978:
+		case joaat("WB_DISCO_SPERM_WHALE"):
 			return 1986618633;
-		case 1962698324:
+		case joaat("WB_DISCO_FIRE_LOOKOUT_TOWER"):
 			return 918206817;
-		case 655415262:
+		case joaat("WB_DISCO_BATS_IN_BARN"):
 			return -2008558277;
-		case 602269758:
+		case joaat("WB_DISCO_HORNET_NESTS"):
 			return -834293086;
-		case 190237998:
+		case joaat("WB_DISCO_BANK_STAGECOACH"):
 			return 1335921989;
-		case 1755633483:
+		case joaat("WB_DISCO_PAGAN_RITUAL"):
 			return -739986731;
-		case 1823800245:
+		case joaat("WB_DISCO_MAMMOTH"):
 			return -148407339;
-		case 501995673:
+		case joaat("WB_DISCO_UTOPIAN_COLONY"):
 			return -1960242214;
-		case 339892059:
+		case joaat("WB_DISCO_WAGON_CIRCLE"):
 			return 1187689415;
-		case 668685328:
+		case joaat("WB_DISCO_METEOR_HOUSE"):
 			return 1673499939;
-		case 393469536:
+		case joaat("WB_DISCO_WATER_DIVINER"):
 			return -1177787273;
-		case 899984418:
+		case joaat("WB_DISCO_DEAD_CHINESE_TRAVELLER"):
 			return 1342653896;
-		case 870395400:
+		case joaat("WB_DISCO_DEAD_SNAKE"):
 			return -1714262909;
-		case 1675065699:
+		case joaat("WB_DISCO_DESERT_WAGON"):
 			return -1283611369;
-		case 433005472:
+		case joaat("WB_DISCO_MEDITATING_MONK"):
 			return -415839138;
-		case 430219797:
+		case joaat("WB_DISCO_PIG_MASK"):
 			return -763376358;
-		case 2017758854:
+		case joaat("WB_DISCO_CAT_MASK"):
 			return 1801731633;
-		case 1550351677:
+		case joaat("WB_DISCO_RAM_MASK"):
 			return 1490223565;
-		case 1324260340:
+		case joaat("WB_DISCO_ANCIENT_SEALED_CLAY_URN"):
 			return -1427565340;
-		case 1640554197:
+		case joaat("WB_DISCO_TRADING_POST"):
 			return -232974724;
-		case -2145018399:
+		case joaat("WB_DISCO_TRAIL_TREES"):
 			return -1272862985;
-		case 158172139:
+		case joaat("WB_DISCO_MAIL_TRUCK"):
 			return -1061274876;
-		case 1633229561:
+		case joaat("WB_DISCO_WHISPERING_TREES"):
 			return 221420861;
-		case 201911354:
+		case joaat("WB_DISCO_CIV_WAR_BATTLEFIELD"):
 			return 1535254161;
-		case 16632229:
+		case joaat("WB_DISCO_ABANDONED_MISSION"):
 			return 683269210;
-		case 1681309457:
+		case joaat("WB_DISCO_ANCIENT_ARROW_HEADS"):
 			return 373034311;
-		case -108928342:
+		case joaat("WB_DISCO_ANCIENT_TOMAHAWK"):
 			return 2072029413;
-		case -1033847736:
+		case joaat("WB_DISCO_ANCIENT_URN"):
 			return -1427565340;
-		case -262561469:
+		case joaat("WB_DISCO_DEAD_CHAIN_GANG"):
 			return -499529359;
-		case -1497005692:
+		case joaat("WB_DISCO_DEFACED_GRAVE"):
 			return -780455182;
-		case -1563294374:
+		case joaat("WB_DISCO_DERAILED_TRAIN"):
 			return -2019711818;
-		case -990094658:
+		case joaat("WB_DISCO_DONKEY_LADY"):
 			return -1636964661;
-		case -147728984:
+		case joaat("WB_DISCO_FACTORY_IN_SWAMP"):
 			return 1154568952;
-		case -357210169:
+		case joaat("WB_DISCO_FROZEN_SETTLER"):
 			return 2134589549;
-		case 51085445:
+		case joaat("WB_DISCO_DEAD_TOWN"):
 			return -1109016944;
-		case -912234551:
+		case joaat("WB_DISCO_OBJECT_IN_TREE"):
 			return 1124200691;
-		case -1823178954:
+		case joaat("WB_DISCO_PIRATE_RUM"):
 			return -357364973;
-		case -1049130960:
+		case joaat("WB_DISCO_RUNAWAY_CORPSE"):
 			return -641229542;
-		case -25476944:
+		case joaat("WB_DISCO_SHEEP_GUY"):
 			return -777592153;
-		case -44323190:
+		case joaat("WB_DISCO_SHRINE"):
 			return -1859413640;
-		case -582384899:
+		case joaat("WB_DISCO_POTS_TREE"):
 			return -1686810506;
-		case -1771237190:
+		case joaat("WB_DISCO_DEAD_BEAR"):
 			return 2072069278;
-		case -289116185:
+		case joaat("WB_DISCO_OLD_FIREPLACE"):
 			return 1120968795;
-		case -424836434:
+		case joaat("WB_DISCO_GRAVESTONE_TREE"):
 			return -409986722;
-		case -1987709625:
+		case joaat("WB_DISCO_ABANDONED_FURNITURE"):
 			return -1882503209;
-		case -628899594:
+		case joaat("WB_DISCO_EARLY_SETTLERS"):
 			return 1431862613;
-		case -842594626:
+		case joaat("WB_DISCO_RAILROAD_GRAVESTONE"):
 			return -657632;
-		case -232587958:
+		case joaat("WB_DISCO_ABANDONED_CHURCH"):
 			return -1958832660;
-		case -768523571:
+		case joaat("WB_DISCO_ABANDONED_WELL"):
 			return -1481450947;
-		case -753681029:
+		case joaat("WB_DISCO_HERMIT_WOMAN"):
 			return 1982045664;
-		case -1893254403:
+		case joaat("WB_DISCO_INDIAN_BURIAL"):
 			return -849582265;
-		case -1437877958:
+		case joaat("WB_DISCO_BURNED_SETTLEMENT"):
 			return 149709049;
-		case -537565063:
+		case joaat("WB_DISCO_FRANKENSTEIN_BOOK"):
 			return 1284679164;
-		case -1736298289:
+		case joaat("WB_DISCO_ROPE_BRIDGE"):
 			return -1923503631;
-		case -821795036:
+		case joaat("WB_DISCO_PIRATE_SKELETON"):
 			return -1144800837;
-		case -1520281639:
+		case joaat("WB_DISCO_GRAYS_SECRET"):
 			return -1887999095;
-		case -826079709:
+		case joaat("WB_DISCO_TREE_TRUNK_BOAT"):
 			return -1457751321;
-		case -695748117:
+		case joaat("WB_DISCO_CONESTOGA_WAGON"):
 			return 1187917501;
-		case -2084592674:
+		case joaat("WB_DISCO_TREE_HOUSE"):
 			return 1091556515;
-		case -1605488611:
+		case joaat("WB_DISCO_GEYSER"):
 			return 1351526287;
-		case -1847100017:
+		case joaat("WB_DISCO_ABANDONED_OIL_WELL"):
 			return -1300082860;
-		case -1928592714:
+		case joaat("WB_DISCO_GHOST_TRAIN"):
 			return 397377585;
-		case -1554719581:
+		case joaat("WB_DISCO_METEOR_SHOWER"):
 			return -777150535;
-		case -1512709755:
+		case joaat("WB_DISCO_DESERTED_FARM"):
 			return -919236330;
-		case -246112144:
+		case joaat("WB_DISCO_CATTLE_CARCASSES"):
 			return -968854939;
-		case -1386344008:
+		case joaat("WB_DISCO_BROKEN_BRIDGE"):
 			return 1519472817;
-		case -854999443:
+		case joaat("WB_DISCO_ABANDONED_TRADING_POST"):
 			return 247563739;
-		case -1708277338:
+		case joaat("WB_DISCO_QUARRY"):
 			return -1848895400;
-		case -109126822:
+		case joaat("WB_DISCO_ROADSIDE_BROTHEL"):
 			return -2060865802;
-		case -1965501170:
+		case joaat("WB_DISCO_LIGHTNING_ALLEY"):
 			return -1841331114;
-		case -537909116:
+		case joaat("WB_DISCO_OVERTURNED_HEARSE"):
 			return 949011950;
-		case -1354885594:
+		case joaat("WB_DISCO_DESERT_SKELETONS"):
 			return 1505050944;
-		case -1053011105:
+		case joaat("WB_DISCO_FACE_TREES"):
 			return -1243267511;
-		case -479194009:
+		case joaat("WB_DISCO_ALCHEMIST"):
 			return 233600584;
-		case -1754824674:
+		case joaat("WB_DISCO_JESUIT_MISSIONARY"):
 			return 429544447;
-		case -2014047549:
+		case joaat("WB_DISCO_MOUNTAIN_CLIMB"):
 			return 1833243216;
-		case -2016277239:
+		case joaat("WB_DISCO_BLACK_FLOWER"):
 			return -1494823099;
-		case -981693493:
+		case joaat("WB_DISCO_ONE_ROOM_CHURCH"):
 			return 921081956;
-		case -88450435:
+		case joaat("WB_DISCO_TREASURE_MAP_HALVES"):
 			return 513110082;
-		case -446987974:
+		case joaat("WB_DISCO_STUFFED_GORILLA"):
 			return -490142739;
-		case -906256657:
+		case joaat("WB_DISCO_OLD_RAILROAD_CAMP"):
 			return 330993088;
-		case -1532808475:
+		case joaat("WB_DISCO_BIRD_NEST"):
 			return 435290930;
-		case -1093245144:
+		case joaat("WB_DISCO_BARREL_RIDER"):
 			return -1287911066;
-		case -1566714772:
+		case joaat("WB_DISCO_DEAD_MICAH"):
 			return -1240932004;
-		case -1298970333:
+		case joaat("WB_DISCO_WAGON_CHEST"):
 			return -1829339703;
 		default:
 			break;
@@ -2393,7 +2393,7 @@ void func_28(var uParam0)
 			}
 			else
 			{
-				uParam0->f_6.f_8 = func_83("DISCO_EXAMINE", joaat("INPUT_CONTEXT_Y"), Global_35, 2, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1753096650, 0, 0);
+				uParam0->f_6.f_8 = func_83("DISCO_EXAMINE", joaat("INPUT_CONTEXT_Y"), Global_35, 2, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("PLAYER_FOCUS_TIMING"), 0, 0);
 			}
 		}
 		else if (*uParam0 == -415839138)
@@ -2405,7 +2405,7 @@ void func_28(var uParam0)
 			}
 			else
 			{
-				uParam0->f_6.f_8 = func_83("DISCO_EXAMINE", joaat("INPUT_CONTEXT_Y"), Global_35, 2, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1753096650, 0, 0);
+				uParam0->f_6.f_8 = func_83("DISCO_EXAMINE", joaat("INPUT_CONTEXT_Y"), Global_35, 2, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("PLAYER_FOCUS_TIMING"), 0, 0);
 			}
 		}
 		else if (func_11(*uParam0, 2) || func_11(*uParam0, 16))
@@ -2415,7 +2415,7 @@ void func_28(var uParam0)
 		}
 		else
 		{
-			uParam0->f_6.f_8 = func_83("DISCO_EXAMINE", joaat("INPUT_CONTEXT_Y"), Global_35, 0, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, 1753096650, 0, 0);
+			uParam0->f_6.f_8 = func_83("DISCO_EXAMINE", joaat("INPUT_CONTEXT_Y"), Global_35, 0, 0, 0, 0, 5, 1070386381 /* Float: 1.6f */, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("PLAYER_FOCUS_TIMING"), 0, 0);
 		}
 		func_84(uParam0->f_6.f_8, 13, 1, 1);
 		func_85(uParam0->f_6.f_8);
@@ -7814,7 +7814,7 @@ int func_158(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (iVar0 == -816321659 && Global_1572887->f_12 != -1)
+	if (iVar0 == joaat("SP_ACHIEVEMENTS") && Global_1572887->f_12 != -1)
 	{
 		return 0;
 	}
@@ -7958,7 +7958,7 @@ int func_167(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -8212,7 +8212,7 @@ void func_185(int iParam0, bool bParam1)
 
 void func_186(int iParam0)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-156028329, iParam0);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("HONORMETERVALUE"), iParam0);
 }
 
 char* func_187(int iParam0)
@@ -8358,9 +8358,9 @@ int func_191()
 
 void func_192(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 int func_193(int iParam0)
@@ -8381,72 +8381,72 @@ int func_194(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = -816321659;
-			*iParam2 = -987026056;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP1");
 			break;
 		case 1:
-			*iParam1 = -816321659;
-			*iParam2 = -1822602787;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP2");
 			break;
 		case 2:
-			*iParam1 = -816321659;
-			*iParam2 = -1602329569;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP3");
 			break;
 		case 3:
-			*iParam1 = -816321659;
-			*iParam2 = 1881899898;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP4");
 			break;
 		case 4:
-			*iParam1 = -816321659;
-			*iParam2 = -1906196506;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP5");
 			break;
 		case 5:
-			*iParam1 = -816321659;
-			*iParam2 = -674995867;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_GOLDRUSH");
 			break;
 		case 6:
-			*iParam1 = -816321659;
-			*iParam2 = -734156617;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MINIGAMES");
 			break;
 		case 7:
-			*iParam1 = -816321659;
-			*iParam2 = 261758426;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_B_AND_E");
 			break;
 		case 8:
-			*iParam1 = -816321659;
-			*iParam2 = 1545586131;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RCKPT");
 			break;
 		case 9:
-			*iParam1 = -816321659;
-			*iParam2 = -489125522;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_TO_POOR");
 			break;
 		case 10:
-			*iParam1 = -816321659;
-			*iParam2 = 1190367681;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_HONOR");
 			break;
 		case 11:
-			*iParam1 = -816321659;
-			*iParam2 = -1179367301;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RC");
 			break;
 		case 12:
-			*iParam1 = -816321659;
-			*iParam2 = 1154513253;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BOUNTY");
 			break;
 		case 13:
-			*iParam1 = -816321659;
-			*iParam2 = -1825640214;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_UPGR_W");
 			break;
 		case 14:
-			*iParam1 = -816321659;
-			*iParam2 = 1209829059;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BEAR");
 			break;
 		case 15:
-			*iParam1 = -816321659;
-			*iParam2 = -1713230487;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_ART");
 			break;
 		case 16:
-			*iParam1 = -816321659;
-			*iParam2 = 2092309893;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_COLLECT");
 			break;
 		default:
 			return 0;
@@ -9487,83 +9487,83 @@ void func_210(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;
@@ -9655,7 +9655,7 @@ int func_214(var uParam0, var uParam1, int iParam2, bool bParam3)
 
 void func_215(bool bParam0)
 {
-	COMPAPP::_0xB6FD96420C0126A1(-1056478928, bParam0);
+	COMPAPP::_0xB6FD96420C0126A1(joaat("HONORMETERVISIBLE"), bParam0);
 }
 
 bool func_216(int iParam0)

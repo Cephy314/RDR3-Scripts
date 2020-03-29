@@ -1587,7 +1587,7 @@ int func_31(int iParam0)
 	int iVar3;
 
 	iVar0 = 1;
-	iVar1 = 41788943;
+	iVar1 = joaat("META_OUTFIT_DEFAULT");
 	iVar2 = 0;
 	switch (iParam0->f_100)
 	{
@@ -1623,7 +1623,7 @@ int func_31(int iParam0)
 		iVar2 = func_178(iParam0, iVar3);
 		if ((iParam0->f_3[iVar3 /*6*/])->f_4 == 0)
 		{
-			if (iVar1 == 41788943)
+			if (iVar1 == joaat("META_OUTFIT_DEFAULT"))
 			{
 			}
 			else
@@ -3621,12 +3621,12 @@ void func_99(var uParam0)
 		case 3:
 			break;
 		case 2:
-			func_346(-455561245);
+			func_346(joaat("ARS_ODRISCOLL_BOYS"));
 			break;
 		case 1:
 			break;
 	}
-	func_346(-1517085151);
+	func_346(joaat("ARS_GANG_CAMPFIRE"));
 }
 
 void func_100(int iParam0)
@@ -4086,37 +4086,37 @@ void func_116(int iParam0)
 			switch (iParam0->f_99)
 			{
 				case 2:
-					iVar1 = -1565587768;
+					iVar1 = joaat("CAPTIVE_LAWMAN");
 					break;
 				case 3:
-					iVar1 = -1565587768;
+					iVar1 = joaat("CAPTIVE_LAWMAN");
 					break;
 				case 1:
-					iVar1 = 1629161481;
+					iVar1 = joaat("WAR_STORY");
 					break;
 				case 13:
-					iVar1 = 1033039228;
+					iVar1 = joaat("FIND_HAT");
 					break;
 				case 12:
-					iVar1 = 1411661003;
+					iVar1 = joaat("FIND_SHOE");
 					break;
 				case 7:
-					iVar1 = -1605388647;
+					iVar1 = joaat("PLAN_ROBBERY_A");
 					break;
 				case 8:
-					iVar1 = -300232146;
+					iVar1 = joaat("PLAN_ROBBERY_B");
 					break;
 				case 5:
-					iVar1 = -539546610;
+					iVar1 = joaat("GANG_POLITICS_A");
 					break;
 				case 6:
-					iVar1 = -1371584293;
+					iVar1 = joaat("GANG_POLITICS_B");
 					break;
 				case 10:
-					iVar1 = -2125754170;
+					iVar1 = joaat("ARGUMENT_DEATH");
 					break;
 				case 11:
-					iVar1 = 1318327615;
+					iVar1 = joaat("ARGUMENT_SETTLE");
 					break;
 			}
 			func_382(iVar0, iVar1, 0);
@@ -4547,33 +4547,33 @@ int func_131(int iParam0)
 			return 0;
 		case joaat("BIGVALLEY"):
 			return 1;
-		case 1308232528:
+		case joaat("BLUEWATERMARSH"):
 			return 2;
-		case 1835499550:
+		case joaat("CUMBERLAND"):
 			return 3;
 		case joaat("GREATPLAINS"):
 			return 4;
-		case -120156735:
+		case joaat("GRIZZLIESEAST"):
 			return 6;
-		case 1645618177:
+		case joaat("GRIZZLIESWEST"):
 			return 7;
-		case -512529193:
+		case joaat("GUARMAD"):
 			return 8;
 		case joaat("HEARTLANDS"):
 			return 9;
-		case 178647645:
+		case joaat("ROANOKE"):
 			return 10;
 		case joaat("SCARLETTMEADOWS"):
 			return 11;
 		case joaat("TALLTREES"):
 			return 12;
-		case -2066240242:
+		case joaat("GAPTOOTHRIDGE"):
 			return 13;
 		case joaat("RIOBRAVO"):
 			return 14;
-		case -108848014:
+		case joaat("CHOLLASPRINGS"):
 			return 15;
-		case 892930832:
+		case joaat("HENNIGANSSTEAD"):
 			return 16;
 		default:
 			break;
@@ -6158,7 +6158,7 @@ int func_177(int iParam0, int iParam1)
 			}
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 int func_178(int iParam0, int iParam1)
@@ -6871,7 +6871,7 @@ void func_201(int iParam0, int iParam1)
 			break;
 	}
 	PED::SET_PED_FIRING_PATTERN(iParam1, joaat("FIRING_PATTERN_BURST_FIRE"));
-	PED::_0x20E54854DEF6A54A(iParam1, 40051185);
+	PED::_0x20E54854DEF6A54A(iParam1, joaat("FIRING_PATTERN_BURST_FIRE_IN_COVER"));
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 50, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 71, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(iParam1, 47, true);
@@ -7025,9 +7025,9 @@ void func_207(var uParam0)
 	{
 		return;
 	}
-	if (TASK::_DOES_SCENARIO_GROUP_EXIST_HASH(-1636435485))
+	if (TASK::_DOES_SCENARIO_GROUP_EXIST_HASH(joaat("EXC_WAR_STORY_SEATS")))
 	{
-		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1636435485, true);
+		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("EXC_WAR_STORY_SEATS"), true);
 	}
 	func_491(uParam0, 1, 1);
 	if (func_33(uParam0->f_136) == func_492())
@@ -7039,7 +7039,7 @@ void func_207(var uParam0)
 			{
 				if (iVar0 != 0 && iVar0 != 1)
 				{
-					TASK::TASK_USE_RANDOM_SCENARIO_IN_GROUP(&(uParam0->f_40[iVar0]), -1636435485, 1, 1, 0);
+					TASK::TASK_USE_RANDOM_SCENARIO_IN_GROUP(&(uParam0->f_40[iVar0]), joaat("EXC_WAR_STORY_SEATS"), 1, 1, 0);
 				}
 			}
 			iVar0++;
@@ -13715,9 +13715,9 @@ void func_354(int iParam0, bool bParam1)
 			TASK::SET_SCENARIO_GROUP_ENABLED(sVar0, bParam1);
 		}
 	}
-	else if (TASK::_DOES_SCENARIO_GROUP_EXIST_HASH(1624266302))
+	else if (TASK::_DOES_SCENARIO_GROUP_EXIST_HASH(joaat("AMB_CAMP_SCAVENGER")))
 	{
-		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(1624266302, bParam1);
+		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("AMB_CAMP_SCAVENGER"), bParam1);
 		if (VOLUME::_DOES_VOLUME_EXIST(iParam0->f_65))
 		{
 			POPULATION::_0xA1CFB35069D23C23(iParam0->f_65);
@@ -14164,9 +14164,9 @@ int func_363(int iParam0, bool bParam1)
 					func_843(iParam0->f_131, 25f, 5);
 					if (func_380(iParam0->f_136) && func_3(iParam0->f_136, 128))
 					{
-						if (TASK::_DOES_SCENARIO_GROUP_EXIST_HASH(-1636435485))
+						if (TASK::_DOES_SCENARIO_GROUP_EXIST_HASH(joaat("EXC_WAR_STORY_SEATS")))
 						{
-							TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-1636435485, false);
+							TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("EXC_WAR_STORY_SEATS"), false);
 						}
 					}
 					break;
@@ -18511,11 +18511,11 @@ int func_470(int iParam0, int iParam1)
 			case 159:
 				return joaat("WORLD_HUMAN_FIRE_TEND_KNEEL");
 			case 160:
-				return -1899521858;
+				return joaat("PROP_CAMP_SEAT_CHAIR_TABLE_STEW_BEECHERS");
 			case 161:
-				return 1804012049;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_CRAB_TRAP_NO_PROP");
 			case 162:
-				return -561237812;
+				return joaat("WORLD_CAMP_GUARD_COLD_FEMALE");
 			case 163:
 				return joaat("MP_LOBBY_WORLD_HUMAN_STARE_STOIC");
 			case 164:
@@ -18671,55 +18671,55 @@ int func_470(int iParam0, int iParam1)
 			case 239:
 				return joaat("WORLD_HUMAN_WASH_FACE_BUCKET_GROUND_NO_BUCKET");
 			case 240:
-				return 376983677;
+				return joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO");
 			case 241:
-				return 1336579020;
+				return joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO_HANDOFF");
 			case 242:
-				return 658733129;
+				return joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO_HANDOFF_PLAYER");
 			case 243:
-				return -1903889587;
+				return joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD");
 			case 244:
-				return 750229998;
+				return joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD_HANDOFF");
 			case 245:
-				return -20233099;
+				return joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD_HANDOFF_PLAYER");
 			case 246:
-				return -557333917;
+				return joaat("MP_MOONSHINE_BAND_RESTING_BANJO");
 			case 247:
-				return 91471551;
+				return joaat("MP_MOONSHINE_BAND_RESTING_DOUBLE_BASS");
 			case 248:
-				return 1515427200;
+				return joaat("MP_MOONSHINE_BAND_RESTING_FIDDLE");
 			case 249:
-				return -584876158;
+				return joaat("MP_MOONSHINE_BAND_RESTING_GUITAR");
 			case 250:
-				return 1444088734;
+				return joaat("MP_MOONSHINE_BAND_RESTING_PIANO");
 			case 251:
-				return 696436162;
+				return joaat("MP_MOONSHINE_BAND_RESTING_WASHBOARD");
 			case 252:
-				return 1504407535;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS");
 			case 253:
-				return -2027299560;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS_HANDOFF");
 			case 254:
-				return 1307314385;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS_HANDOFF_PLAYER");
 			case 255:
-				return -248120522;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE");
 			case 256:
-				return 492744485;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE_HANDOFF");
 			case 257:
-				return -1631851776;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE_HANDOFF_PLAYER");
 			case 258:
-				return -768776184;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR");
 			case 259:
-				return 697996287;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR_HANDOFF");
 			case 260:
-				return -1955581039;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR_HANDOFF_PLAYER");
 			case 261:
-				return 1545086067;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO");
 			case 262:
-				return 1841334253;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO_HANDOFF");
 			case 263:
-				return 2012697591;
+				return joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO_HANDOFF_PLAYER");
 			case 264:
-				return -1823109923;
+				return joaat("WORLD_HUMAN_DANCING");
 			case 265:
 				return joaat("GENERIC_SEAT_BENCH_SCENARIO");
 			case 266:
@@ -19007,31 +19007,31 @@ int func_470(int iParam0, int iParam1)
 			case 407:
 				return joaat("WORLD_HUMAN_STERNGUY_IDLES");
 			case 408:
-				return 1614819900;
+				return joaat("PROP_HUMAN_SEAT_BENCH_PORCH_DRINKING_MOONSHINE");
 			case 409:
-				return -612900221;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_DRINKING_MOONSHINE");
 			case 410:
-				return 458151109;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_BADASS_MOONSHINE");
 			case 411:
-				return 657155772;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_MOONSHINE");
 			case 412:
-				return -1259804911;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_DRINKING_WHISKEY_MOONSHINE");
 			case 413:
-				return -862067678;
+				return joaat("WORLD_HUMAN_DRINKING_DRUNK_MOONSHINE");
 			case 414:
-				return 1081757606;
+				return joaat("WORLD_HUMAN_DRINKING_MOONSHINE");
 			case 415:
-				return -784638420;
+				return joaat("WORLD_HUMAN_LEAN_BACK_WALL_DRINKING_MOONSHINE");
 			case 416:
-				return 1700848656;
+				return joaat("WORLD_HUMAN_LEAN_POST_LEFT_MOONSHINE");
 			case 417:
-				return 357468243;
+				return joaat("WORLD_HUMAN_LEAN_WALL_DRINKING_RIGHT_MOONSHINE");
 			case 418:
-				return 401197936;
+				return joaat("WORLD_HUMAN_LEAN_WALL_LEFT_DRINKING_MOONSHINE");
 			case 419:
-				return 195079210;
+				return joaat("WORLD_HUMAN_SIT_GROUND_DRINKING_DRUNK_PASSED_OUT_MOONSHINE");
 			case 420:
-				return -1811487294;
+				return joaat("WORLD_HUMAN_SMOKE_NAZAR");
 			case 421:
 				return joaat("WORLD_HUMAN_SEAT_LEDGE");
 			case 422:
@@ -19431,19 +19431,19 @@ int func_470(int iParam0, int iParam1)
 			case 619:
 				return joaat("WORLD_VEHICLE_MINECART_COAL_SHOVEL");
 			case 620:
-				return 1409752996;
+				return joaat("PROP_HUMAN_MOONSHINE_STIR_MASH");
 			case 621:
-				return -794798046;
+				return joaat("PROP_HUMAN_SOAK_SKINS");
 			case 622:
-				return 1371759506;
+				return joaat("PROP_HUMAN_TANNING_RACK_BRAINS");
 			case 623:
-				return -259947568;
+				return joaat("PROP_HUMAN_TANNING_RACK_FLESHING");
 			case 624:
 				return joaat("WORLD_HUMAN_GRAVEDIG");
 			case 625:
-				return 731917036;
+				return joaat("WORLD_HUMAN_SACK_OUT_BIN_TARP");
 			case 626:
-				return -1869969225;
+				return joaat("WORLD_HUMAN_SHOPKEEPER_MP_CATALOG");
 			case 627:
 				return joaat("WORLD_ANIMAL_BAT_HANGING");
 			case 628:
@@ -19569,29 +19569,29 @@ int func_470(int iParam0, int iParam1)
 			case 688:
 				return joaat("WORLD_ANIMAL_WOODPECKER_PECKING_TREE");
 			case 689:
-				return 250485488;
+				return joaat("WORLD_ANIMAL_FISH_BREAK_SURFACE");
 			case 690:
-				return -894693642;
+				return joaat("WORLD_ANIMAL_FISH_FLEE");
 			case 691:
-				return -329609996;
+				return joaat("WORLD_ANIMAL_FISH_IDLE");
 			case 692:
-				return 589651795;
+				return joaat("WORLD_ANIMAL_FISH_JUMPING");
 			case 693:
-				return -1163011310;
+				return joaat("WORLD_ANIMAL_SHARK_SWIM");
 			case 694:
-				return 1898992473;
+				return joaat("PROP_ANIMAL_DOG_DRINK_BOWL");
 			case 695:
-				return 836364870;
+				return joaat("PROP_ANIMAL_DOG_EATING");
 			case 696:
-				return 293411693;
+				return joaat("PROP_ANIMAL_DOG_EATING_BONE");
 			case 697:
-				return 980619506;
+				return joaat("PROP_ANIMAL_GOAT_DRINK_TROUGH");
 			case 698:
-				return 129334770;
+				return joaat("PROP_ANIMAL_GOAT_EAT_TROUGH");
 			case 699:
-				return 32789213;
+				return joaat("PROP_ANIMAL_HORSE_DRINK_TROUGH");
 			case 700:
-				return 1275144432;
+				return joaat("PROP_ANIMAL_SHEEP_DRINK_TROUGH");
 			case 701:
 				return joaat("WORLD_ANIMAL_BADGER_EAT_GROUND");
 			case 702:
@@ -19695,7 +19695,7 @@ int func_470(int iParam0, int iParam1)
 			case 751:
 				return joaat("WORLD_ANIMAL_COW_DRINK_TROUGH");
 			case 752:
-				return -1868740099;
+				return joaat("WORLD_ANIMAL_COW_EATING_GROUND");
 			case 753:
 				return joaat("WORLD_ANIMAL_COW_GRAZING");
 			case 754:
@@ -19849,7 +19849,7 @@ int func_470(int iParam0, int iParam1)
 			case 828:
 				return joaat("WORLD_ANIMAL_HORSE_INJURED_ON_GROUND_RIGHT");
 			case 829:
-				return -1587187585;
+				return joaat("WORLD_ANIMAL_HORSE_RESTING");
 			case 830:
 				return joaat("WORLD_ANIMAL_HORSE_RESTING_DOMESTIC");
 			case 831:
@@ -19973,175 +19973,175 @@ int func_470(int iParam0, int iParam1)
 			case 890:
 				return joaat("WORLD_ANIMAL_WOLF_SNIFFING_GROUND");
 			case 891:
-				return 2095611714;
+				return joaat("ANIMAL_CARCASS_EGRET_PARTS");
 			case 892:
-				return -1123279596;
+				return joaat("WORLD_ANIMAL_ALLIGATOR_ATTACK_BOAR_LINK");
 			case 893:
-				return 1162435810;
+				return joaat("WORLD_ANIMAL_SMALL_FLEE");
 			case 894:
-				return -1478123812;
+				return joaat("WORLD_ANIMAL_SMALL_FLEE_AND_HOLD");
 			case 895:
-				return 1234846913;
+				return joaat("WORLD_ANIMAL_ALLIGATOR_FLEE");
 			case 896:
-				return 2036024742;
+				return joaat("CNV_CAMP_CCABI1_ABIGAIL_EXIT");
 			case 897:
-				return 566938951;
+				return joaat("CNV_CAMP_CCBLL3_BILL_EXIT");
 			case 898:
-				return -1853298373;
+				return joaat("CNV_CAMP_CCDNJ1_DUTCH_EXIT");
 			case 899:
-				return 1602852348;
+				return joaat("CNV_CAMP_CCHSH4_HOSEA_EXIT");
 			case 900:
-				return 38091733;
+				return joaat("CNV_CAMP_CCHSH7_HOSEA_EXIT");
 			case 901:
-				return 135564269;
+				return joaat("CNV_CAMP_CCHSH8_HOSEA_INTRO");
 			case 902:
-				return 1078072565;
+				return joaat("CNV_CAMP_CCHSH8_JOHN_EXIT");
 			case 903:
-				return 1476594765;
+				return joaat("CNV_CAMP_CCHSH8_JOHN_INTRO");
 			case 904:
-				return -1079442574;
+				return joaat("CNV_CAMP_CCHSH8_KEY_FEMALE_EXIT");
 			case 905:
-				return 1935928768;
+				return joaat("CNV_CAMP_CCHSH8_KEY_MALE_EXIT");
 			case 906:
-				return 708861758;
+				return joaat("CNV_CAMP_CCHSH8_KEY_MALE_INTRO");
 			case 907:
-				return 591169603;
+				return joaat("CNV_CAMP_CCMCH1_MICAH_EXIT");
 			case 908:
-				return 1084611512;
+				return joaat("CNV_CAMP_CCMCH2_MICAH_EXIT");
 			case 909:
-				return 1968511141;
+				return joaat("CNV_CAMP_CCUNC1_UNCLE_EXIT");
 			case 910:
-				return -1001339526;
+				return joaat("CNV_CAMP_CFAM1_GEN_MALE_A_EXIT");
 			case 911:
-				return -711738013;
+				return joaat("CNV_CAMP_CFAM1_GEN_MALE_B_EXIT");
 			case 912:
-				return -2098912190;
+				return joaat("CNV_CAMP_CFAM1_GEN_MALE_C_EXIT");
 			case 913:
-				return 876966148;
+				return joaat("CNV_CAMP_CFAM1_KEY_MALE_A_EXIT");
 			case 914:
-				return -850484515;
+				return joaat("CNV_CAMP_CFAM1_KEY_MALE_B_EXIT");
 			case 915:
-				return -700392915;
+				return joaat("CNV_CAMP_CFBW1_GEN_MALE_B_EXIT");
 			case 916:
-				return 532549969;
+				return joaat("CNV_CAMP_CFBW4_KEY_MALE_EXIT");
 			case 917:
-				return 1386638752;
+				return joaat("CNV_CAMP_CFHM3_GEN_MALE_A_EXIT");
 			case 918:
-				return 1968678356;
+				return joaat("CNV_CAMP_CFJE3_GEN_FEMALE_EXIT");
 			case 919:
-				return -450903034;
+				return joaat("CNV_CAMP_CFJE3_GEN_MALE_EXIT");
 			case 920:
-				return 564695070;
+				return joaat("CNV_CAMP_CFJE3_JAVIER_EXIT");
 			case 921:
-				return 1180873168;
+				return joaat("CNV_CAMP_CFJE3_KEY_MALE_A_EXIT");
 			case 922:
-				return 1433900482;
+				return joaat("CNV_CAMP_CFJE3_KEY_MALE_B_EXIT");
 			case 923:
-				return 485363387;
+				return joaat("CNV_CAMP_CFJM1_GEN_MALE_A_EXIT");
 			case 924:
-				return -1932854998;
+				return joaat("CNV_CAMP_CFJM1_GEN_MALE_B_EXIT");
 			case 925:
-				return -1854314849;
+				return joaat("CNV_CAMP_CFJM1_GEN_MALE_C_EXIT");
 			case 926:
-				return -2932209;
+				return joaat("CNV_CAMP_CFJM1_GEN_MALE_D_EXIT");
 			case 927:
-				return -47896844;
+				return joaat("CNV_CAMP_CFJM1_JOHN_EXIT");
 			case 928:
-				return -1045705869;
+				return joaat("CNV_CAMP_CFJM1_KEY_MALE_A_EXIT");
 			case 929:
-				return 1148734673;
+				return joaat("CNV_CAMP_CFJM1_KEY_MALE_B_EXIT");
 			case 930:
-				return 1634153002;
+				return joaat("CNV_CAMP_CFJM2_GEN_MALE_A_EXIT");
 			case 931:
-				return 750607202;
+				return joaat("CNV_CAMP_CFJM2_GEN_MALE_B_EXIT");
 			case 932:
-				return 31857686;
+				return joaat("CNV_CAMP_CFJM2_JOHN_EXIT");
 			case 933:
-				return 1070751362;
+				return joaat("CNV_CAMP_CFJM2_KEY_MALE_A_EXIT");
 			case 934:
-				return -600529453;
+				return joaat("CNV_CAMP_CFJM2_KEY_MALE_B_EXIT");
 			case 935:
-				return 1998936856;
+				return joaat("CNV_CAMP_CFJM3_GEN_FEMALE_EXIT");
 			case 936:
-				return -866489661;
+				return joaat("CNV_CAMP_CFJM3_GEN_MALE_A_EXIT");
 			case 937:
-				return -254086338;
+				return joaat("CNV_CAMP_CFJM3_GEN_MALE_B_EXIT");
 			case 938:
-				return 10019272;
+				return joaat("CNV_CAMP_CFJM3_JOHN_EXIT");
 			case 939:
-				return 1856786003;
+				return joaat("CNV_CAMP_CFJM3_KEY_MALE_A_EXIT");
 			case 940:
-				return -408198703;
+				return joaat("CNV_CAMP_CFJM3_KEY_MALE_B_EXIT");
 			case 941:
-				return -1836702551;
+				return joaat("CNV_CAMP_CFJM4_GEN_MALE_A_EXIT");
 			case 942:
-				return -978328802;
+				return joaat("CNV_CAMP_CFJM4_GEN_MALE_B_EXIT");
 			case 943:
-				return 1656232256;
+				return joaat("CNV_CAMP_CFJM4_GEN_MALE_C_EXIT");
 			case 944:
-				return 459984501;
+				return joaat("CNV_CAMP_CFJM4_JOHN_EXIT");
 			case 945:
-				return -631907709;
+				return joaat("CNV_CAMP_CFJM4_KEY_MALE_EXIT");
 			case 946:
-				return 473793001;
+				return joaat("CNV_CAMP_CFUN1_GEN_FEMALE_EXIT");
 			case 947:
-				return 2001754905;
+				return joaat("CNV_CAMP_CFUN1_GEN_MALE_B_EXIT");
 			case 948:
-				return -823864913;
+				return joaat("CNV_CAMP_CFUN1_KEY_MALE_A_EXIT");
 			case 949:
-				return 1117767181;
+				return joaat("CNV_CAMP_CFUN1_KEY_MALE_B_EXIT");
 			case 950:
-				return 781550511;
+				return joaat("CNV_CAMP_CFUN2_GEN_MALE_A_EXIT");
 			case 951:
-				return -545032729;
+				return joaat("CNV_CAMP_CFUN2_GEN_MALE_B_EXIT");
 			case 952:
-				return 1864143281;
+				return joaat("CNV_CAMP_CFUN2_KEY_MALE_A_EXIT");
 			case 953:
-				return -215089835;
+				return joaat("CNV_CAMP_CFUN2_KEY_MALE_B_EXIT");
 			case 954:
-				return 515870905;
+				return joaat("CNV_CAMP_CFUN2_UNCLE_EXIT");
 			case 955:
-				return 1619380475;
+				return joaat("CNV_CAMP_CFUN3_GEN_MALE_A_EXIT");
 			case 956:
-				return 373449848;
+				return joaat("CNV_CAMP_CFUN3_GEN_MALE_B_EXIT");
 			case 957:
-				return -851419454;
+				return joaat("CNV_CAMP_CFUN3_GEN_MALE_C_EXIT");
 			case 958:
-				return -2039665345;
+				return joaat("CNV_CAMP_CFUN3_KEY_FEMALE_EXIT");
 			case 959:
-				return -1024987019;
+				return joaat("CNV_CAMP_CFUN3_KEY_MALE_EXIT");
 			case 960:
-				return -683445975;
+				return joaat("CNV_CAMP_CFUN3_UNCLE_EXIT");
 			case 961:
-				return -310461560;
+				return joaat("CNV_CAMP_CFUN4_GEN_FEMALE_EXIT");
 			case 962:
-				return -2145791181;
+				return joaat("CNV_CAMP_CFUN4_GEN_MALE_A_EXIT");
 			case 963:
-				return 1870391004;
+				return joaat("CNV_CAMP_CFUN4_GEN_MALE_B_EXIT");
 			case 964:
-				return 1337861328;
+				return joaat("CNV_CAMP_CFUN4_KEY_MALE_A_EXIT");
 			case 965:
-				return 1675802255;
+				return joaat("CNV_CAMP_CFUN4_KEY_MALE_B_EXIT");
 			case 966:
-				return -1046233664;
+				return joaat("CNV_CAMP_CFUN4_UNCLE_EXIT");
 			case 967:
-				return -1637581627;
+				return joaat("CIG_CARD_ACT_01");
 			case 968:
-				return -1932469858;
+				return joaat("CIG_CARD_ACT_02");
 			case 969:
-				return -1009498204;
+				return joaat("CIG_CARD_ACT_03");
 			case 970:
-				return -1335123757;
+				return joaat("CIG_CARD_ACT_04");
 			case 971:
-				return -339175540;
+				return joaat("CIG_CARD_ACT_05");
 			case 972:
-				return -652873177;
+				return joaat("CIG_CARD_ACT_06");
 			case 973:
-				return 256401035;
+				return joaat("CIG_CARD_ACT_07");
 			case 974:
-				return -91671283;
+				return joaat("CIG_CARD_ACT_08");
 			case 975:
-				return 819339686;
+				return joaat("CIG_CARD_ACT_09");
 			case 976:
 				return joaat("CIG_CARD_ACT_10");
 			case 977:
@@ -20149,23 +20149,23 @@ int func_470(int iParam0, int iParam1)
 			case 978:
 				return joaat("CIG_CARD_ACT_12");
 			case 979:
-				return 1746565836;
+				return joaat("CIG_CARD_AML_01");
 			case 980:
-				return 1516035921;
+				return joaat("CIG_CARD_AML_02");
 			case 981:
-				return -1367505007;
+				return joaat("CIG_CARD_AML_03");
 			case 982:
-				return -423036889;
+				return joaat("CIG_CARD_AML_04");
 			case 983:
-				return 287624414;
+				return joaat("CIG_CARD_AML_05");
 			case 984:
-				return -1151196838;
+				return joaat("CIG_CARD_AML_06");
 			case 985:
-				return -1440481526;
+				return joaat("CIG_CARD_AML_07");
 			case 986:
-				return 1809613436;
+				return joaat("CIG_CARD_AML_08");
 			case 987:
-				return 1161082157;
+				return joaat("CIG_CARD_AML_09");
 			case 988:
 				return joaat("CIG_CARD_AML_10");
 			case 989:
@@ -20173,23 +20173,23 @@ int func_470(int iParam0, int iParam1)
 			case 990:
 				return joaat("CIG_CARD_AML_12");
 			case 991:
-				return 270641597;
+				return joaat("CIG_CARD_ART_01");
 			case 992:
-				return 30805286;
+				return joaat("CIG_CARD_ART_02");
 			case 993:
-				return 1806491858;
+				return joaat("CIG_CARD_ART_03");
 			case 994:
-				return 1566196781;
+				return joaat("CIG_CARD_ART_04");
 			case 995:
-				return 1799741440;
+				return joaat("CIG_CARD_ART_05");
 			case 996:
-				return 1569670291;
+				return joaat("CIG_CARD_ART_06");
 			case 997:
-				return 1489517317;
+				return joaat("CIG_CARD_ART_07");
 			case 998:
-				return 1258987402;
+				return joaat("CIG_CARD_ART_08");
 			case 999:
-				return -1270124018;
+				return joaat("CIG_CARD_ART_09");
 			default:
 				break;
 		}
@@ -20209,23 +20209,23 @@ int func_470(int iParam0, int iParam1)
 			case 1002:
 				return joaat("CIG_CARD_ART_12");
 			case 1003:
-				return 1365245800;
+				return joaat("CIG_CARD_GRL_01");
 			case 1004:
-				return 1066884055;
+				return joaat("CIG_CARD_GRL_02");
 			case 1005:
-				return 1644732609;
+				return joaat("CIG_CARD_GRL_03");
 			case 1006:
-				return 1482001755;
+				return joaat("CIG_CARD_GRL_04");
 			case 1007:
-				return -697038446;
+				return joaat("CIG_CARD_GRL_05");
 			case 1008:
-				return -52668830;
+				return joaat("CIG_CARD_GRL_06");
 			case 1009:
-				return 722940631;
+				return joaat("CIG_CARD_GRL_07");
 			case 1010:
-				return 554573509;
+				return joaat("CIG_CARD_GRL_08");
 			case 1011:
-				return -1619485796;
+				return joaat("CIG_CARD_GRL_09");
 			case 1012:
 				return joaat("CIG_CARD_GRL_10");
 			case 1013:
@@ -20233,23 +20233,23 @@ int func_470(int iParam0, int iParam1)
 			case 1014:
 				return joaat("CIG_CARD_GRL_12");
 			case 1015:
-				return 513593;
+				return joaat("CIG_CARD_GUN_01");
 			case 1016:
-				return 238908068;
+				return joaat("CIG_CARD_GUN_02");
 			case 1017:
-				return -1985975956;
+				return joaat("CIG_CARD_GUN_03");
 			case 1018:
-				return 402621992;
+				return joaat("CIG_CARD_GUN_04");
 			case 1019:
-				return 621617219;
+				return joaat("CIG_CARD_GUN_05");
 			case 1020:
-				return 1398045905;
+				return joaat("CIG_CARD_GUN_06");
 			case 1021:
-				return -757597222;
+				return joaat("CIG_CARD_GUN_07");
 			case 1022:
-				return 1562972286;
+				return joaat("CIG_CARD_GUN_08");
 			case 1023:
-				return 1851306717;
+				return joaat("CIG_CARD_GUN_09");
 			case 1024:
 				return joaat("CIG_CARD_GUN_10");
 			case 1025:
@@ -20257,47 +20257,47 @@ int func_470(int iParam0, int iParam1)
 			case 1026:
 				return joaat("CIG_CARD_GUN_12");
 			case 1027:
-				return 1556435468;
+				return joaat("CIG_CARD_HRS_01");
 			case 1028:
-				return 389695223;
+				return joaat("CIG_CARD_HRS_02");
 			case 1029:
-				return 82879076;
+				return joaat("CIG_CARD_HRS_03");
 			case 1030:
-				return -1076160454;
+				return joaat("CIG_CARD_HRS_04");
 			case 1031:
-				return 646833566;
+				return joaat("CIG_CARD_HRS_05");
 			case 1032:
-				return -580988095;
+				return joaat("CIG_CARD_HRS_06");
 			case 1033:
-				return -773079973;
+				return joaat("CIG_CARD_HRS_07");
 			case 1034:
-				return -1985369104;
+				return joaat("CIG_CARD_HRS_08");
 			case 1035:
-				return -277973152;
+				return joaat("CIG_CARD_HRS_09");
 			case 1036:
-				return -1883392228;
+				return joaat("CIG_CARD_HRS_10");
 			case 1037:
-				return -1641262087;
+				return joaat("CIG_CARD_HRS_11");
 			case 1038:
-				return -466067436;
+				return joaat("CIG_CARD_HRS_12");
 			case 1039:
-				return -1294043870;
+				return joaat("CIG_CARD_INV_01");
 			case 1040:
-				return -1590898241;
+				return joaat("CIG_CARD_INV_02");
 			case 1041:
-				return -1772504039;
+				return joaat("CIG_CARD_INV_03");
 			case 1042:
-				return -2069948252;
+				return joaat("CIG_CARD_INV_04");
 			case 1043:
-				return 1810425652;
+				return joaat("CIG_CARD_INV_05");
 			case 1044:
-				return 1512260521;
+				return joaat("CIG_CARD_INV_06");
 			case 1045:
-				return 1804592774;
+				return joaat("CIG_CARD_INV_07");
 			case 1046:
-				return 1514816507;
+				return joaat("CIG_CARD_INV_08");
 			case 1047:
-				return 1332555329;
+				return joaat("CIG_CARD_INV_09");
 			case 1048:
 				return joaat("CIG_CARD_INV_10");
 			case 1049:
@@ -20305,23 +20305,23 @@ int func_470(int iParam0, int iParam1)
 			case 1050:
 				return joaat("CIG_CARD_INV_12");
 			case 1051:
-				return 1016517991;
+				return joaat("CIG_CARD_LND_01");
 			case 1052:
-				return 1311766681;
+				return joaat("CIG_CARD_LND_02");
 			case 1053:
-				return 1524240877;
+				return joaat("CIG_CARD_LND_03");
 			case 1054:
-				return 1824437686;
+				return joaat("CIG_CARD_LND_04");
 			case 1055:
-				return 1970030353;
+				return joaat("CIG_CARD_LND_05");
 			case 1056:
-				return -2026149201;
+				return joaat("CIG_CARD_LND_06");
 			case 1057:
-				return -891620875;
+				return joaat("CIG_CARD_LND_07");
 			case 1058:
-				return -1220359483;
+				return joaat("CIG_CARD_LND_08");
 			case 1059:
-				return -1373030254;
+				return joaat("CIG_CARD_LND_09");
 			case 1060:
 				return joaat("CIG_CARD_LND_10");
 			case 1061:
@@ -20329,23 +20329,23 @@ int func_470(int iParam0, int iParam1)
 			case 1062:
 				return joaat("CIG_CARD_LND_12");
 			case 1063:
-				return 1442007381;
+				return joaat("CIG_CARD_PAM_01");
 			case 1064:
-				return 1722608328;
+				return joaat("CIG_CARD_PAM_02");
 			case 1065:
-				return 1853323873;
+				return joaat("CIG_CARD_PAM_03");
 			case 1066:
-				return 869401879;
+				return joaat("CIG_CARD_PAM_04");
 			case 1067:
-				return 1114677844;
+				return joaat("CIG_CARD_PAM_05");
 			case 1068:
-				return 420892576;
+				return joaat("CIG_CARD_PAM_06");
 			case 1069:
-				return 652602175;
+				return joaat("CIG_CARD_PAM_07");
 			case 1070:
-				return 160739485;
+				return joaat("CIG_CARD_PAM_08");
 			case 1071:
-				return -547791841;
+				return joaat("CIG_CARD_PAM_09");
 			case 1072:
 				return joaat("CIG_CARD_PAM_10");
 			case 1073:
@@ -20353,23 +20353,23 @@ int func_470(int iParam0, int iParam1)
 			case 1074:
 				return joaat("CIG_CARD_PAM_12");
 			case 1075:
-				return -1538102870;
+				return joaat("CIG_CARD_PLT_01");
 			case 1076:
-				return 1663690706;
+				return joaat("CIG_CARD_PLT_02");
 			case 1077:
-				return 1969949780;
+				return joaat("CIG_CARD_PLT_03");
 			case 1078:
-				return -2041729511;
+				return joaat("CIG_CARD_PLT_04");
 			case 1079:
-				return -1803138422;
+				return joaat("CIG_CARD_PLT_05");
 			case 1080:
-				return 703755620;
+				return joaat("CIG_CARD_PLT_06");
 			case 1081:
-				return 939659651;
+				return joaat("CIG_CARD_PLT_07");
 			case 1082:
-				return 1298676815;
+				return joaat("CIG_CARD_PLT_08");
 			case 1083:
-				return 1542117716;
+				return joaat("CIG_CARD_PLT_09");
 			case 1084:
 				return joaat("CIG_CARD_PLT_10");
 			case 1085:
@@ -20377,23 +20377,23 @@ int func_470(int iParam0, int iParam1)
 			case 1086:
 				return joaat("CIG_CARD_PLT_12");
 			case 1087:
-				return 39815316;
+				return joaat("CIG_CARD_SPT_01");
 			case 1088:
-				return -103909518;
+				return joaat("CIG_CARD_SPT_02");
 			case 1089:
-				return -401484807;
+				return joaat("CIG_CARD_SPT_03");
 			case 1090:
-				return 1257937353;
+				return joaat("CIG_CARD_SPT_04");
 			case 1091:
-				return 2067626574;
+				return joaat("CIG_CARD_SPT_05");
 			case 1092:
-				return 777511044;
+				return joaat("CIG_CARD_SPT_06");
 			case 1093:
-				return 1560952296;
+				return joaat("CIG_CARD_SPT_07");
 			case 1094:
-				return -2110650313;
+				return joaat("CIG_CARD_SPT_08");
 			case 1095:
-				return -1336449919;
+				return joaat("CIG_CARD_SPT_09");
 			case 1096:
 				return joaat("CIG_CARD_SPT_10");
 			case 1097:
@@ -20401,23 +20401,23 @@ int func_470(int iParam0, int iParam1)
 			case 1098:
 				return joaat("CIG_CARD_SPT_12");
 			case 1099:
-				return 815223604;
+				return joaat("CIG_CARD_VEH_01");
 			case 1100:
-				return 1025600584;
+				return joaat("CIG_CARD_VEH_02");
 			case 1101:
-				return -518278086;
+				return joaat("CIG_CARD_VEH_03");
 			case 1102:
-				return -1293789240;
+				return joaat("CIG_CARD_VEH_04");
 			case 1103:
-				return -391101597;
+				return joaat("CIG_CARD_VEH_05");
 			case 1104:
-				return -700440957;
+				return joaat("CIG_CARD_VEH_06");
 			case 1105:
-				return -1210129979;
+				return joaat("CIG_CARD_VEH_07");
 			case 1106:
-				return -1515405983;
+				return joaat("CIG_CARD_VEH_08");
 			case 1107:
-				return -620648438;
+				return joaat("CIG_CARD_VEH_09");
 			case 1108:
 				return joaat("CIG_CARD_VEH_10");
 			case 1109:
@@ -20425,61 +20425,61 @@ int func_470(int iParam0, int iParam1)
 			case 1110:
 				return joaat("CIG_CARD_VEH_12");
 			case 1111:
-				return -1123284534;
+				return joaat("CODE_BEAR_WARN");
 			case 1112:
-				return -997313628;
+				return joaat("CODE_COUGAR_WARN");
 			case 1113:
 				return joaat("CODE_HUMAN_COWER");
 			case 1114:
-				return -1623268913;
+				return joaat("CODE_HUMAN_SHOCKED_MAJOR");
 			case 1115:
-				return -214401444;
+				return joaat("CODE_HUMAN_SHOCKED_MINOR");
 			case 1116:
-				return 2127401246;
+				return joaat("CODE_HUMAN_SHOCKED_WATCH");
 			case 1117:
 				return joaat("CODE_HUMAN_STAND_COWER");
 			case 1118:
-				return -874584587;
+				return joaat("CODE_WOLF_WARN");
 			case 1119:
 				return joaat("DRIVE");
 			case 1120:
 				return joaat("FALL_OVER_WALL");
 			case 1121:
-				return 1419257506;
+				return joaat("FARMANIMAL");
 			case 1122:
-				return -848301249;
+				return joaat("KNOCK_BACK");
 			case 1123:
 				return joaat("LEAN_IN_DIRECTION");
 			case 1124:
-				return 1952317745;
+				return joaat("LEAN_TO_POSITION");
 			case 1125:
-				return 1268568298;
+				return joaat("MISSING_SCENARIO_THIS_IS_ASSERTING");
 			case 1126:
 				return joaat("PARK_VEHICLE");
 			case 1127:
-				return 502001704;
+				return joaat("PROP_HITCHINGGROUND");
 			case 1128:
-				return -1805387726;
+				return joaat("PROP_HITCHINGPOST");
 			case 1129:
-				return -493351432;
+				return joaat("PROP_HITCHINGTREE");
 			case 1130:
-				return -1452925867;
+				return joaat("PROP_ROUNDEDHITCHINGPOST");
 			case 1131:
-				return 751811579;
+				return joaat("PROP_ROUNDEDHITCHINGPOSTTHATREQUIRESBEINGFACED");
 			case 1132:
 				return joaat("RIDE");
 			case 1133:
-				return -70257497;
+				return joaat("ROLL_DOWN_STAIRS");
 			case 1134:
 				return joaat("STAND");
 			case 1135:
-				return 1070946599;
+				return joaat("STAND_IMPRECISE");
 			case 1136:
 				return joaat("TEETER");
 			case 1137:
 				return joaat("WALK");
 			case 1138:
-				return 1374622682;
+				return joaat("WORLD_DEAD_BODY_SPAWN");
 			case 1139:
 				return joaat("WORLD_FLOURISH_TABLE_SMASH");
 			case 1140:
@@ -20489,365 +20489,365 @@ int func_470(int iParam0, int iParam1)
 			case 1142:
 				return joaat("WORLD_HAZARD_GATOR_PIT");
 			case 1143:
-				return 675968469;
+				return joaat("WORLD_HAZARD_GATOR_PIT_LAND");
 			case 1144:
 				return joaat("WORLD_HUMAN_FLEE");
 			case 1145:
-				return 61551761;
+				return joaat("WORLD_HUMAN_HORSE_RIDER");
 			case 1146:
-				return -1221061763;
+				return joaat("WORLD_PLAYER_LOOKAT_POINT");
 			case 1147:
-				return 2121421811;
+				return joaat("WORLD_RIDER_ATTRACTOR");
 			case 1148:
 				return joaat("WORLD_VEHICLE_ATTRACTOR");
 			case 1149:
 				return joaat("WORLD_VEHICLE_DRIVE_PASSENGERS");
 			case 1150:
-				return -92474507;
+				return joaat("WORLD_VEHICLE_DRIVE_PASSENGERS_NO_RAIN");
 			case 1151:
 				return joaat("WORLD_VEHICLE_DRIVE_SOLO");
 			case 1152:
-				return 5441196;
+				return joaat("WORLD_VEHICLE_DRIVE_SOLO_NO_RAIN");
 			case 1153:
 				return joaat("WORLD_VEHICLE_EMPTY");
 			case 1154:
 				return joaat("WORLD_VEHICLE_EMPTY_NO_ANIMALS");
 			case 1155:
-				return 822224705;
+				return joaat("MP_FME_TH_ROCK_PILE");
 			case 1156:
-				return -315883067;
+				return joaat("MP_FME_TH_ROCK_PILE_NO_PROPS");
 			case 1157:
-				return 1919538189;
+				return joaat("PROP_PLAYER_PICKUP_PIRATE_SKELETON_CLOTHING");
 			case 1158:
-				return 335724012;
+				return joaat("SHACK_MISSING_HUSBAND_RS");
 			case 1159:
-				return -1517174734;
+				return joaat("TS_STR_INSPECT_MAYOR_LETTER");
 			case 1160:
-				return -1588983332;
+				return joaat("TS_STR_INSPECT_RAZORBOX");
 			case 1161:
-				return 807042387;
+				return joaat("TS_VAL_HIDEMAP_PIECE_01");
 			case 1162:
-				return -221052219;
+				return joaat("TS_VAL_HIDEMAP_PIECE_02");
 			case 1163:
-				return 59483190;
+				return joaat("TS_VAL_HIDEMAP_PIECE_03");
 			case 1164:
-				return -700364382;
+				return joaat("TS_VAL_HIDEMAP_PIECE_04");
 			case 1165:
-				return -11084973;
+				return joaat("TS_VAL_INSPECT_PLACED_ARTIFACT");
 			case 1166:
-				return -1557003371;
+				return joaat("TS_VAL_INSPECT_SUBMERGED_ARTIFACT_1");
 			case 1167:
-				return -1262901592;
+				return joaat("TS_VAL_INSPECT_SUBMERGED_ARTIFACT_2");
 			case 1168:
-				return -1567948213;
+				return joaat("TS_VAL_INSPECT_SUBMERGED_ARTIFACT_3");
 			case 1169:
-				return -186176782;
+				return joaat("TS_VAL_MASS_GRAVE");
 			case 1170:
-				return -232587958;
+				return joaat("WB_DISCO_ABANDONED_CHURCH");
 			case 1171:
-				return -1987709625;
+				return joaat("WB_DISCO_ABANDONED_FURNITURE");
 			case 1172:
-				return 16632229;
+				return joaat("WB_DISCO_ABANDONED_MISSION");
 			case 1173:
-				return -1847100017;
+				return joaat("WB_DISCO_ABANDONED_OIL_WELL");
 			case 1174:
-				return -854999443;
+				return joaat("WB_DISCO_ABANDONED_TRADING_POST");
 			case 1175:
-				return -768523571;
+				return joaat("WB_DISCO_ABANDONED_WELL");
 			case 1176:
-				return -479194009;
+				return joaat("WB_DISCO_ALCHEMIST");
 			case 1177:
-				return 1681309457;
+				return joaat("WB_DISCO_ANCIENT_ARROW_HEADS");
 			case 1178:
-				return 1324260340;
+				return joaat("WB_DISCO_ANCIENT_SEALED_CLAY_URN");
 			case 1179:
-				return -108928342;
+				return joaat("WB_DISCO_ANCIENT_TOMAHAWK");
 			case 1180:
-				return -1033847736;
+				return joaat("WB_DISCO_ANCIENT_URN");
 			case 1181:
-				return 1602500054;
+				return joaat("WB_DISCO_ARTHUR_GRAVE");
 			case 1182:
-				return 1329911409;
+				return joaat("WB_DISCO_AXE_IN_TREE");
 			case 1183:
-				return -285871200;
+				return joaat("WB_DISCO_AZTEC_MASK");
 			case 1184:
-				return 190237998;
+				return joaat("WB_DISCO_BANK_STAGECOACH");
 			case 1185:
-				return -1093245144;
+				return joaat("WB_DISCO_BARREL_RIDER");
 			case 1186:
-				return 655415262;
+				return joaat("WB_DISCO_BATS_IN_BARN");
 			case 1187:
-				return -1532808475;
+				return joaat("WB_DISCO_BIRD_NEST");
 			case 1188:
-				return -2016277239;
+				return joaat("WB_DISCO_BLACK_FLOWER");
 			case 1189:
-				return 457229797;
+				return joaat("WB_DISCO_BLACK_SHEEP");
 			case 1190:
-				return 1211791851;
+				return joaat("WB_DISCO_BOAT_IN_TREE");
 			case 1191:
-				return -1033884716;
+				return joaat("WB_DISCO_BOOTS_NOTE_NOTE");
 			case 1192:
-				return 944017471;
+				return joaat("WB_DISCO_BOOTS_NOTE_RANGE");
 			case 1193:
-				return 1326945204;
+				return joaat("WB_DISCO_BRA_SECRET");
 			case 1194:
-				return -31708551;
+				return joaat("WB_DISCO_BRAITH_3");
 			case 1195:
-				return -1386344008;
+				return joaat("WB_DISCO_BROKEN_BRIDGE");
 			case 1196:
-				return 1665886065;
+				return joaat("WB_DISCO_BROKEN_WAGONS");
 			case 1197:
-				return 858952896;
+				return joaat("WB_DISCO_BRUSH_FIRE");
 			case 1198:
-				return 1071768797;
+				return joaat("WB_DISCO_BUCK_CARCASS");
 			case 1199:
-				return -1437877958;
+				return joaat("WB_DISCO_BURNED_SETTLEMENT");
 			case 1200:
-				return 2017758854;
+				return joaat("WB_DISCO_CAT_MASK");
 			case 1201:
-				return -246112144;
+				return joaat("WB_DISCO_CATTLE_CARCASSES");
 			case 1202:
-				return 1208255499;
+				return joaat("WB_DISCO_CEREMONIAL_HATCHET");
 			case 1203:
-				return 313051664;
+				return joaat("WB_DISCO_CIRCUS_WAGON");
 			case 1204:
-				return 201911354;
+				return joaat("WB_DISCO_CIV_WAR_BATTLEFIELD");
 			case 1205:
-				return 1665997921;
+				return joaat("WB_DISCO_CIV_WAR_FORT");
 			case 1206:
-				return -2085458327;
+				return joaat("WB_DISCO_CIV_WAR_KNIFE");
 			case 1207:
-				return -695748117;
+				return joaat("WB_DISCO_CONESTOGA_WAGON");
 			case 1208:
-				return 2135478933;
+				return joaat("WB_DISCO_CORPSE_PIT");
 			case 1209:
-				return 902935343;
+				return joaat("WB_DISCO_CRASHED_AIRSHIP");
 			case 1210:
-				return -1771237190;
+				return joaat("WB_DISCO_DEAD_BEAR");
 			case 1211:
-				return -262561469;
+				return joaat("WB_DISCO_DEAD_CHAIN_GANG");
 			case 1212:
-				return 899984418;
+				return joaat("WB_DISCO_DEAD_CHINESE_TRAVELLER");
 			case 1213:
-				return 2057536374;
+				return joaat("WB_DISCO_DEAD_CIV_WAR");
 			case 1214:
-				return -1566714772;
+				return joaat("WB_DISCO_DEAD_MICAH");
 			case 1215:
-				return 597525083;
+				return joaat("WB_DISCO_DEAD_MINER");
 			case 1216:
-				return 870395400;
+				return joaat("WB_DISCO_DEAD_SNAKE");
 			case 1217:
-				return 51085445;
+				return joaat("WB_DISCO_DEAD_TOWN");
 			case 1218:
-				return -1497005692;
+				return joaat("WB_DISCO_DEFACED_GRAVE");
 			case 1219:
-				return -1563294374;
+				return joaat("WB_DISCO_DERAILED_TRAIN");
 			case 1220:
-				return -1354885594;
+				return joaat("WB_DISCO_DESERT_SKELETONS");
 			case 1221:
-				return 1675065699;
+				return joaat("WB_DISCO_DESERT_WAGON");
 			case 1222:
-				return -1512709755;
+				return joaat("WB_DISCO_DESERTED_FARM");
 			case 1223:
-				return -990094658;
+				return joaat("WB_DISCO_DONKEY_LADY");
 			case 1224:
-				return 1366101372;
+				return joaat("WB_DISCO_DREAMCATCHERS");
 			case 1225:
-				return -628899594;
+				return joaat("WB_DISCO_EARLY_SETTLERS");
 			case 1226:
-				return 284604988;
+				return joaat("WB_DISCO_EASEL");
 			case 1227:
-				return 615465554;
+				return joaat("WB_DISCO_FACE_IN_CLIFF");
 			case 1228:
-				return -1053011105;
+				return joaat("WB_DISCO_FACE_TREES");
 			case 1229:
-				return -147728984;
+				return joaat("WB_DISCO_FACTORY_IN_SWAMP");
 			case 1230:
-				return 1962698324;
+				return joaat("WB_DISCO_FIRE_LOOKOUT_TOWER");
 			case 1231:
-				return 2006959770;
+				return joaat("WB_DISCO_FLATTENED_CABIN");
 			case 1232:
-				return 984162035;
+				return joaat("WB_DISCO_FLYING_MACHINE");
 			case 1233:
-				return 550135642;
+				return joaat("WB_DISCO_FOSSILIZED_MAN");
 			case 1234:
-				return -537565063;
+				return joaat("WB_DISCO_FRANKENSTEIN_BOOK");
 			case 1235:
-				return -357210169;
+				return joaat("WB_DISCO_FROZEN_SETTLER");
 			case 1236:
-				return -1605488611;
+				return joaat("WB_DISCO_GEYSER");
 			case 1237:
-				return -1928592714;
+				return joaat("WB_DISCO_GHOST_TRAIN");
 			case 1238:
-				return 1241103201;
+				return joaat("WB_DISCO_GIANT_REMAINS");
 			case 1239:
-				return 1115410643;
+				return joaat("WB_DISCO_GRAVE");
 			case 1240:
-				return -424836434;
+				return joaat("WB_DISCO_GRAVESTONE_TREE");
 			case 1241:
-				return -1520281639;
+				return joaat("WB_DISCO_GRAYS_SECRET");
 			case 1242:
-				return -753681029;
+				return joaat("WB_DISCO_HERMIT_WOMAN");
 			case 1243:
-				return 2124474718;
+				return joaat("WB_DISCO_HIDDEN_TUNNEL");
 			case 1244:
-				return 602269758;
+				return joaat("WB_DISCO_HORNET_NESTS");
 			case 1245:
-				return -1893254403;
+				return joaat("WB_DISCO_INDIAN_BURIAL");
 			case 1246:
-				return -1754824674;
+				return joaat("WB_DISCO_JESUIT_MISSIONARY");
 			case 1247:
-				return 1247293257;
+				return joaat("WB_DISCO_KILL_ZONE");
 			case 1248:
-				return 734765474;
+				return joaat("WB_DISCO_KILL_ZONE_02");
 			case 1249:
-				return -1965501170;
+				return joaat("WB_DISCO_LIGHTNING_ALLEY");
 			case 1250:
-				return 795896456;
+				return joaat("WB_DISCO_LIGHTNING_TREES");
 			case 1251:
-				return 2085223846;
+				return joaat("WB_DISCO_LOVE_MESSAGE");
 			case 1252:
-				return 158172139;
+				return joaat("WB_DISCO_MAIL_TRUCK");
 			case 1253:
-				return 1823800245;
+				return joaat("WB_DISCO_MAMMOTH");
 			case 1254:
-				return 433005472;
+				return joaat("WB_DISCO_MEDITATING_MONK");
 			case 1255:
-				return 964564385;
+				return joaat("WB_DISCO_MESSAGE_BOTTLE_1");
 			case 1256:
-				return 1404848669;
+				return joaat("WB_DISCO_MESSAGE_BOTTLE_2");
 			case 1257:
-				return 668685328;
+				return joaat("WB_DISCO_METEOR_HOUSE");
 			case 1258:
-				return -1554719581;
+				return joaat("WB_DISCO_METEOR_SHOWER");
 			case 1259:
-				return 918603353;
+				return joaat("WB_DISCO_METEORITE");
 			case 1260:
-				return 1443601258;
+				return joaat("WB_DISCO_MICAH_CAMP");
 			case 1261:
-				return -2014047549;
+				return joaat("WB_DISCO_MOUNTAIN_CLIMB");
 			case 1262:
-				return 385483619;
+				return joaat("WB_DISCO_OBELISK");
 			case 1263:
-				return -912234551;
+				return joaat("WB_DISCO_OBJECT_IN_TREE");
 			case 1264:
-				return 1055001530;
+				return joaat("WB_DISCO_OLD_DIRTY_CABIN");
 			case 1265:
-				return 1391618133;
+				return joaat("WB_DISCO_OLD_FIREPIT");
 			case 1266:
-				return -289116185;
+				return joaat("WB_DISCO_OLD_FIREPLACE");
 			case 1267:
-				return 569502820;
+				return joaat("WB_DISCO_OLD_GRAVESTONES");
 			case 1268:
-				return -906256657;
+				return joaat("WB_DISCO_OLD_RAILROAD_CAMP");
 			case 1269:
-				return 2015617886;
+				return joaat("WB_DISCO_OLD_WORLD_SCRIPT");
 			case 1270:
-				return -981693493;
+				return joaat("WB_DISCO_ONE_ROOM_CHURCH");
 			case 1271:
-				return -537909116;
+				return joaat("WB_DISCO_OVERTURNED_HEARSE");
 			case 1272:
-				return 1755633483;
+				return joaat("WB_DISCO_PAGAN_RITUAL");
 			case 1273:
-				return 1920390250;
+				return joaat("WB_DISCO_PHONOGRAPH_HOUSE");
 			case 1274:
-				return 430219797;
+				return joaat("WB_DISCO_PIG_MASK");
 			case 1275:
-				return 1292765231;
+				return joaat("WB_DISCO_PILE_SKULLS");
 			case 1276:
-				return -238317386;
+				return joaat("WB_DISCO_PIRATE_KNIFE");
 			case 1277:
-				return -1823178954;
+				return joaat("WB_DISCO_PIRATE_RUM");
 			case 1278:
-				return -821795036;
+				return joaat("WB_DISCO_PIRATE_SKELETON");
 			case 1279:
-				return -582384899;
+				return joaat("WB_DISCO_POTS_TREE");
 			case 1280:
-				return 816253701;
+				return joaat("WB_DISCO_POWDER_KEG");
 			case 1281:
-				return -1708277338;
+				return joaat("WB_DISCO_QUARRY");
 			case 1282:
-				return -842594626;
+				return joaat("WB_DISCO_RAILROAD_GRAVESTONE");
 			case 1283:
-				return 1550351677;
+				return joaat("WB_DISCO_RAM_MASK");
 			case 1284:
-				return -1452428628;
+				return joaat("WB_DISCO_REGISTER_ROCK");
 			case 1285:
-				return -109126822;
+				return joaat("WB_DISCO_ROADSIDE_BROTHEL");
 			case 1286:
-				return -1736298289;
+				return joaat("WB_DISCO_ROPE_BRIDGE");
 			case 1287:
-				return -1049130960;
+				return joaat("WB_DISCO_RUNAWAY_CORPSE");
 			case 1288:
-				return -796563359;
+				return joaat("WB_DISCO_SCARECROW_1");
 			case 1289:
-				return 1580303291;
+				return joaat("WB_DISCO_SCARECROW_2");
 			case 1290:
-				return 1828659542;
+				return joaat("WB_DISCO_SCARECROW_3");
 			case 1291:
-				return 2126824673;
+				return joaat("WB_DISCO_SCARECROW_4");
 			case 1292:
-				return 1917865597;
+				return joaat("WB_DISCO_SERPENT_MOUND");
 			case 1293:
-				return -25476944;
+				return joaat("WB_DISCO_SHEEP_GUY");
 			case 1294:
-				return -44323190;
+				return joaat("WB_DISCO_SHRINE");
 			case 1295:
-				return 1762028978;
+				return joaat("WB_DISCO_SPERM_WHALE");
 			case 1296:
-				return 1953753789;
+				return joaat("WB_DISCO_STONEHENGE");
 			case 1297:
-				return 713309702;
+				return joaat("WB_DISCO_STRANGE_STATUES");
 			case 1298:
-				return -446987974;
+				return joaat("WB_DISCO_STUFFED_GORILLA");
 			case 1299:
-				return 673669550;
+				return joaat("WB_DISCO_SUN_DIAL");
 			case 1300:
-				return 1801467173;
+				return joaat("WB_DISCO_SWAMP_HAND");
 			case 1301:
-				return 1640554197;
+				return joaat("WB_DISCO_TRADING_POST");
 			case 1302:
-				return -2145018399;
+				return joaat("WB_DISCO_TRAIL_TREES");
 			case 1303:
-				return -88450435;
+				return joaat("WB_DISCO_TREASURE_MAP_HALVES");
 			case 1304:
-				return -2084592674;
+				return joaat("WB_DISCO_TREE_HOUSE");
 			case 1305:
-				return 1193272637;
+				return joaat("WB_DISCO_TREE_STRUCK");
 			case 1306:
-				return -826079709;
+				return joaat("WB_DISCO_TREE_TRUNK_BOAT");
 			case 1307:
-				return 1224129984;
+				return joaat("WB_DISCO_UTE_WICKUP");
 			case 1308:
-				return 501995673;
+				return joaat("WB_DISCO_UTOPIAN_COLONY");
 			case 1309:
-				return 376902028;
+				return joaat("WB_DISCO_VAMPIRE_CLUES");
 			case 1310:
-				return 1290045011;
+				return joaat("WB_DISCO_VIKING_GEAR");
 			case 1311:
-				return -1298970333;
+				return joaat("WB_DISCO_WAGON_CHEST");
 			case 1312:
-				return 339892059;
+				return joaat("WB_DISCO_WAGON_CIRCLE");
 			case 1313:
-				return 393469536;
+				return joaat("WB_DISCO_WATER_DIVINER");
 			case 1314:
-				return 402062501;
+				return joaat("WB_DISCO_WHALE_BONE");
 			case 1315:
-				return 656484143;
+				return joaat("WB_DISCO_WHISKEY_TREE");
 			case 1316:
-				return 1633229561;
+				return joaat("WB_DISCO_WHISPERING_TREES");
 			case 1317:
-				return 899090818;
+				return joaat("WB_DISCO_WITCHES_CAULDRON");
 			case 1318:
-				return -97075078;
+				return joaat("LEVDES_BEDROLL");
 			case 1319:
-				return 1249560493;
+				return joaat("LEVDES_CANTEEN");
 			case 1320:
-				return 1380964205;
+				return joaat("LEVDES_COFFEE_CUP");
 			case 1321:
-				return 1037513717;
+				return joaat("LEVDES_COMPASS");
 			case 1322:
-				return -1893576881;
+				return joaat("LEVDES_FISHING_POLE");
 			case 1323:
 				return joaat("LEVDES_SPAWN_AGED_PIRATE_RUM");
 			case 1324:
@@ -20857,303 +20857,303 @@ int func_470(int iParam0, int iParam1)
 			case 1326:
 				return joaat("LEVDES_SPAWN_ANY_GUN_AMMO");
 			case 1327:
-				return -478288727;
+				return joaat("LEVDES_SPAWN_APPLE");
 			case 1328:
-				return -349377813;
+				return joaat("LEVDES_SPAWN_ARROWAMMO");
 			case 1329:
-				return 399720358;
+				return joaat("LEVDES_SPAWN_ASHTRAY");
 			case 1330:
-				return -1246577092;
+				return joaat("LEVDES_SPAWN_BILLSTACK");
 			case 1331:
-				return -229160091;
+				return joaat("LEVDES_SPAWN_BINOCULARS");
 			case 1332:
-				return -1257113243;
+				return joaat("LEVDES_SPAWN_BONES_AND_BODY_PARTS");
 			case 1333:
-				return 225115854;
+				return joaat("LEVDES_SPAWN_BOOKS");
 			case 1334:
-				return -92472245;
+				return joaat("LEVDES_SPAWN_BRANDY_BOTTLE");
 			case 1335:
-				return 1733018851;
+				return joaat("LEVDES_SPAWN_BRANDY_BOTTLE_OPENED");
 			case 1336:
-				return -399776159;
+				return joaat("LEVDES_SPAWN_BULLET_CASING_SG_SIDE");
 			case 1337:
-				return 2070070978;
+				return joaat("LEVDES_SPAWN_BULLET_CASING_SG_UPRIGHT");
 			case 1338:
-				return -90963810;
+				return joaat("LEVDES_SPAWN_BULLET_CASING_SIDE");
 			case 1339:
-				return 1666816032;
+				return joaat("LEVDES_SPAWN_BULLET_CASING_UPRIGHT");
 			case 1340:
 				return joaat("LEVDES_SPAWN_BURDOCK_PICKUP");
 			case 1341:
-				return 2080227480;
+				return joaat("LEVDES_SPAWN_CANNEDFOOD_COOK");
 			case 1342:
-				return -1724452361;
+				return joaat("LEVDES_SPAWN_CANNEDFOOD_FRUIT");
 			case 1343:
-				return -1752592742;
+				return joaat("LEVDES_SPAWN_CHEST");
 			case 1344:
-				return -1341257406;
+				return joaat("LEVDES_SPAWN_CHEST_BOX");
 			case 1345:
-				return -1046204957;
+				return joaat("LEVDES_SPAWN_CHEST_MUD");
 			case 1346:
-				return 2077497487;
+				return joaat("LEVDES_SPAWN_CHEST_RUST");
 			case 1347:
-				return 1913341418;
+				return joaat("LEVDES_SPAWN_CHEST_SNOW");
 			case 1348:
-				return -651280676;
+				return joaat("LEVDES_SPAWN_CHEST_WATER");
 			case 1349:
-				return 892032571;
+				return joaat("LEVDES_SPAWN_CIG");
 			case 1350:
-				return 1856827999;
+				return joaat("LEVDES_SPAWN_CIGS_PREMIUM");
 			case 1351:
-				return -149190046;
+				return joaat("LEVDES_SPAWN_COCAINE_CHEWINGGUM");
 			case 1352:
-				return 309944434;
+				return joaat("LEVDES_SPAWN_COFFEE");
 			case 1353:
-				return -2001504950;
+				return joaat("LEVDES_SPAWN_COIN");
 			case 1354:
-				return 2049641235;
+				return joaat("LEVDES_SPAWN_COINPURSE");
 			case 1355:
-				return 999640896;
+				return joaat("LEVDES_SPAWN_DEATHASSIST_POTENT_HORSE_STIMULANT");
 			case 1356:
-				return 157685372;
+				return joaat("LEVDES_SPAWN_DEATHASSIST_SNAKEOIL");
 			case 1357:
-				return 1801322057;
+				return joaat("LEVDES_SPAWN_DEATHASSIST_TONIC");
 			case 1358:
-				return -1357157684;
+				return joaat("LEVDES_SPAWN_DECO_CHEST");
 			case 1359:
-				return -815678773;
+				return joaat("LEVDES_SPAWN_DYNAMITE");
 			case 1360:
-				return -1257513801;
+				return joaat("LEVDES_SPAWN_EMPTY_FOOD");
 			case 1361:
-				return -1615452792;
+				return joaat("LEVDES_SPAWN_EMPTY_WHISKEY");
 			case 1362:
-				return -1636507744;
+				return joaat("LEVDES_SPAWN_FIREBOTTLE");
 			case 1363:
-				return 1854928616;
+				return joaat("LEVDES_SPAWN_FISH_BAIT_PICKUPS");
 			case 1364:
-				return -1251426772;
+				return joaat("LEVDES_SPAWN_GANG_DRISCOLL_LETTER");
 			case 1365:
-				return -1228902905;
+				return joaat("LEVDES_SPAWN_GIN_BOTTLE");
 			case 1366:
-				return -34945532;
+				return joaat("LEVDES_SPAWN_GIN_BOTTLE_OPENED");
 			case 1367:
 				return joaat("LEVDES_SPAWN_GINSENG_ELIXER");
 			case 1368:
 				return joaat("LEVDES_SPAWN_GOLDEN_CURRANT_PICKUP");
 			case 1369:
-				return 874796504;
+				return joaat("LEVDES_SPAWN_GUN_OIL");
 			case 1370:
-				return 1692127434;
+				return joaat("LEVDES_SPAWN_HERBIVORE_BAIT");
 			case 1371:
-				return -1739681058;
+				return joaat("LEVDES_SPAWN_HORSESTIMULANT");
 			case 1372:
 				return joaat("LEVDES_SPAWN_HUMMINGBIRD_SAGE_PICKUP");
 			case 1373:
 				return joaat("LEVDES_SPAWN_HUNTER_PICKUPS");
 			case 1374:
-				return -1249899728;
+				return joaat("LEVDES_SPAWN_LAW");
 			case 1375:
-				return 1620035300;
+				return joaat("LEVDES_SPAWN_MATCHBOOK");
 			case 1376:
-				return 1929212607;
+				return joaat("LEVDES_SPAWN_MATCHSTICK");
 			case 1377:
-				return 2043781114;
+				return joaat("LEVDES_SPAWN_MED_FOOTLOCKER");
 			case 1378:
-				return 1435546742;
+				return joaat("LEVDES_SPAWN_MEDICINE");
 			case 1379:
-				return -867409802;
+				return joaat("LEVDES_SPAWN_MEDICINE_FTY");
 			case 1380:
 				return joaat("LEVDES_SPAWN_MILKWEED_PICKUP");
 			case 1381:
-				return -1278411717;
+				return joaat("LEVDES_SPAWN_MONEYCLIP");
 			case 1382:
-				return 831075093;
+				return joaat("LEVDES_SPAWN_MONEYSTACK");
 			case 1383:
-				return -742723944;
+				return joaat("LEVDES_SPAWN_MOONSHINE_FLASK");
 			case 1384:
-				return 730474965;
+				return joaat("LEVDES_SPAWN_MOONSHINER_FLAVOR_1");
 			case 1385:
-				return 79752745;
+				return joaat("LEVDES_SPAWN_PICKLED_EGGS");
 			case 1386:
-				return -892220594;
+				return joaat("LEVDES_SPAWN_PISTOLAMMO");
 			case 1387:
-				return -1596797821;
+				return joaat("LEVDES_SPAWN_PLANT_BAYBOLETE");
 			case 1388:
-				return -274454759;
+				return joaat("LEVDES_SPAWN_PLANT_BLACKBERRY");
 			case 1389:
-				return -1450526648;
+				return joaat("LEVDES_SPAWN_PLANT_CHANTERELLES");
 			case 1390:
-				return -1969734852;
+				return joaat("LEVDES_SPAWN_PLANT_CREEPINGTHYME");
 			case 1391:
-				return 523504733;
+				return joaat("LEVDES_SPAWN_PLANT_CROWSGARLIC");
 			case 1392:
-				return 920579087;
+				return joaat("LEVDES_SPAWN_PLANT_EVERGREENHUCKLEBERRY");
 			case 1393:
-				return 504439316;
+				return joaat("LEVDES_SPAWN_PLANT_OREGANO");
 			case 1394:
-				return 849042336;
+				return joaat("LEVDES_SPAWN_PLANT_PARASOLMUSHROOM");
 			case 1395:
-				return 887682613;
+				return joaat("LEVDES_SPAWN_PLANT_RAMSHEAD");
 			case 1396:
-				return -1127764515;
+				return joaat("LEVDES_SPAWN_PLANT_REDRASPBERRY");
 			case 1397:
-				return -155019243;
+				return joaat("LEVDES_SPAWN_PLANT_WILDMINT");
 			case 1398:
-				return -1080500277;
+				return joaat("LEVDES_SPAWN_PLANT_WINTERGREENBERRY");
 			case 1399:
-				return 332855426;
+				return joaat("LEVDES_SPAWN_POCKETWATCH");
 			case 1400:
-				return -1689823970;
+				return joaat("LEVDES_SPAWN_POTENT_CHEWING_TOBACCO");
 			case 1401:
-				return 310637926;
+				return joaat("LEVDES_SPAWN_PREDATOR_BAIT");
 			case 1402:
-				return -1052240577;
+				return joaat("LEVDES_SPAWN_REPEATERAMMO");
 			case 1403:
-				return 1554901830;
+				return joaat("LEVDES_SPAWN_REVOLVERAMMO");
 			case 1404:
-				return -551561379;
+				return joaat("LEVDES_SPAWN_REVOLVERAMMO_OPENED");
 			case 1405:
-				return 1471613978;
+				return joaat("LEVDES_SPAWN_RIFLEAMMO");
 			case 1406:
-				return -998117314;
+				return joaat("LEVDES_SPAWN_RUM_BOTTLE");
 			case 1407:
-				return 397325435;
+				return joaat("LEVDES_SPAWN_RUM_BOTTLE_OPENED");
 			case 1408:
-				return 2005214943;
+				return joaat("LEVDES_SPAWN_SHOTGUNAMMO");
 			case 1409:
-				return 563956065;
+				return joaat("LEVDES_SPAWN_SHOTGUNAMMO_OPENED");
 			case 1410:
-				return 872022591;
+				return joaat("LEVDES_SPAWN_SNACKS");
 			case 1411:
-				return 147212665;
+				return joaat("LEVDES_SPAWN_SNAKEOIL");
 			case 1412:
-				return -599685999;
+				return joaat("LEVDES_SPAWN_SNAKEOIL_FTY");
 			case 1413:
-				return 348936756;
+				return joaat("LEVDES_SPAWN_STRONGBOX_MUD");
 			case 1414:
-				return 1353246173;
+				return joaat("LEVDES_SPAWN_STRONGBOX_RUST");
 			case 1415:
-				return 1739164046;
+				return joaat("LEVDES_SPAWN_STRONGBOX_SNOW");
 			case 1416:
-				return -1310927999;
+				return joaat("LEVDES_SPAWN_STRONGBOX_WATER");
 			case 1417:
-				return -660448084;
+				return joaat("LEVDES_SPAWN_SUPER_TONIC");
 			case 1418:
-				return 461493407;
+				return joaat("LEVDES_SPAWN_TEST_GENERIC_LETTER");
 			case 1419:
-				return -698656928;
+				return joaat("LEVDES_SPAWN_TEST_GENERIC_LETTER_COLOR");
 			case 1420:
-				return -1476485404;
+				return joaat("LEVDES_SPAWN_THROWING_KNIFE");
 			case 1421:
-				return 1818037155;
+				return joaat("LEVDES_SPAWN_THROWING_KNIFE_HANDLE_SIDE");
 			case 1422:
-				return 1553988071;
+				return joaat("LEVDES_SPAWN_THROWING_KNIFE_HANDLE_UP");
 			case 1423:
-				return -2035280042;
+				return joaat("LEVDES_SPAWN_THROWN_TOMAHAWK_HANDLE_DOWN");
 			case 1424:
-				return -1330873135;
+				return joaat("LEVDES_SPAWN_THROWN_TOMAHAWK_HANDLE_UP");
 			case 1425:
-				return -214666568;
+				return joaat("LEVDES_SPAWN_THROWN_TOMAHAWK_SIDE");
 			case 1426:
-				return 845630515;
+				return joaat("LEVDES_SPAWN_TOBACCO");
 			case 1427:
-				return -1330027742;
+				return joaat("LEVDES_SPAWN_TONIC");
 			case 1428:
 				return joaat("LEVDES_SPAWN_VALERIAN_ROOT");
 			case 1429:
-				return 662036617;
+				return joaat("LEVDES_SPAWN_WHISKEY_BOTTLE");
 			case 1430:
-				return 1026701561;
+				return joaat("LEVDES_SPAWN_WHISKEY_BOTTLE_OPENED");
 			case 1431:
 				return joaat("LEVDES_SPAWN_WILD_TOBACCO_PICKUP");
 			case 1432:
 				return joaat("LEVDES_SPAWN_YARROW_PICKUP");
 			case 1433:
-				return 920290480;
+				return joaat("PLAYER_CAMP_MARKER");
 			case 1434:
-				return 1247635643;
+				return joaat("PLAYER_CAMP_TOOL_NEW");
 			case 1435:
-				return -274828640;
+				return joaat("PLAYER_CAMP_TOOL_OLD");
 			case 1436:
-				return 959936720;
+				return joaat("RANSACK_ENVELOPE_TEST");
 			case 1437:
-				return 2098471051;
+				return joaat("RANSACK_MAP_ROLLED_TEST");
 			case 1438:
-				return -1472242152;
+				return joaat("LEVDES_SPAWN_PICKLED_EGGS_FIXED_PHYSICS");
 			case 1439:
-				return 2015878396;
+				return joaat("PLAYER_CAMP_MARKER_MP");
 			case 1440:
-				return -1157499939;
+				return joaat("PLAYER_CAMP_TOOL_MP");
 			case 1441:
 				return joaat("PROP_HUMAN_CAULDRON_SERVE_STEW_PLAYER");
 			case 1442:
-				return -289473187;
+				return joaat("PROP_PLAYER_BARBER_SEAT");
 			case 1443:
-				return 325463335;
+				return joaat("PROP_PLAYER_CASH_REGISTER_CLERK_OPENED");
 			case 1444:
 				return joaat("PROP_PLAYER_CASH_REGISTER_LOCKBREAK");
 			case 1445:
 				return joaat("PROP_PLAYER_CASH_REGISTER_OPEN");
 			case 1446:
-				return 1786059572;
+				return joaat("PROP_PLAYER_CASH_REGISTER_OPEN_GUN");
 			case 1447:
-				return -1881279240;
+				return joaat("PROP_PLAYER_CHORES_WAGON_SACK_LOAD_1");
 			case 1448:
-				return 696549558;
+				return joaat("PROP_PLAYER_CHORES_WAGON_SACK_UNLOAD_1");
 			case 1449:
 				return joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE");
 			case 1450:
 				return joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER");
 			case 1451:
-				return 1637554487;
+				return joaat("PROP_PLAYER_EAT_PICKLED_EGG");
 			case 1452:
 				return joaat("PROP_PLAYER_KNOCK_SECURITY_DOOR");
 			case 1453:
-				return -1441376597;
+				return joaat("PROP_PLAYER_LOOT_FLOORBOARD_P_CS_PHOTO_5X7");
 			case 1454:
-				return 1248800601;
+				return joaat("PROP_PLAYER_LOOT_FLOORBOARD_P_CS_RT_ENVELOPE01X");
 			case 1455:
-				return 1855656219;
+				return joaat("PROP_PLAYER_OPEN_CASHBOX");
 			case 1456:
-				return 529202757;
+				return joaat("PROP_PLAYER_OPEN_CASHBOX_MP");
 			case 1457:
 				return joaat("PROP_PLAYER_OPEN_FOOTLOCKER");
 			case 1458:
-				return 1385956600;
+				return joaat("PROP_PLAYER_OPEN_FOOTLOCKER_MP_LOCAL");
 			case 1459:
-				return 172138233;
+				return joaat("PROP_PLAYER_OPEN_FOOTLOCKER_MP_SYNCH");
 			case 1460:
-				return -924513320;
+				return joaat("PROP_PLAYER_OPEN_FOOTLOCKER_WAGON");
 			case 1461:
-				return 768242070;
+				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_BED_DA_REVOLVER");
 			case 1462:
 				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_CASH_BED");
 			case 1463:
-				return 1442238332;
+				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_PISTOL_SCHO_BED");
 			case 1464:
-				return 2105720717;
+				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_PISTOL_VOL");
 			case 1465:
-				return 2145448157;
+				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_REVOLVER_DA");
 			case 1466:
-				return -121453179;
+				return joaat("PROP_PLAYER_OPEN_PISTOLCHEST_TABLE_SCHOFIELD");
 			case 1467:
-				return 2088527301;
+				return joaat("PROP_PLAYER_OPEN_RIFLECHEST_DB_SHOTGUN");
 			case 1468:
 				return joaat("PROP_PLAYER_OPEN_RIFLECHEST_PUMP_ACTION_SHOTGUN");
 			case 1469:
-				return -195947434;
+				return joaat("PROP_PLAYER_OPEN_RIFLECHEST_SEMI_AUTO_SHOTGUN");
 			case 1470:
 				return joaat("PROP_PLAYER_OPEN_RIFLECHEST_WINCHESTER");
 			case 1471:
 				return joaat("PROP_PLAYER_PEEK_SECURITY_DOOR");
 			case 1472:
-				return 429473903;
+				return joaat("PROP_PLAYER_PRPTY_KNEEL_CHEST");
 			case 1473:
 				return joaat("PROP_PLAYER_PRPTY_SAVE_GAME");
 			case 1474:
-				return 1058019971;
+				return joaat("PROP_PLAYER_PRPTY_SETUP_SHAVE");
 			case 1475:
-				return -1773308460;
+				return joaat("PROP_PLAYER_PRPTY_SHAVE");
 			case 1476:
 				return joaat("PROP_PLAYER_ROB_CASH_REGISTER");
 			case 1477:
@@ -21163,9 +21163,9 @@ int func_470(int iParam0, int iParam1)
 			case 1479:
 				return joaat("PROP_PLAYER_SEAT_CHAIR_PLAYER_CAMP");
 			case 1480:
-				return 1690225020;
+				return joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS");
 			case 1481:
-				return -1054012177;
+				return joaat("PROP_PLAYER_SLEEP_BED");
 			case 1482:
 				return joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME");
 			case 1483:
@@ -21357,851 +21357,851 @@ int func_470(int iParam0, int iParam1)
 			case 1576:
 				return joaat("WORLD_PLAYER_TAKE_MONEY_PILE_TABLE");
 			case 1577:
-				return -507776464;
+				return joaat("PROP_PLAYER_CASH_REGISTER_CLERK_OPENED_BENCHMARK_TEST");
 			case 1578:
 				return joaat("PROP_PLAYER_EAT_ALMONDS_COUNTER_NO_DOF");
 			case 1579:
-				return 1957996977;
+				return joaat("PROP_PLAYER_MP_LOOT_ROCK_BONDS_STASH");
 			case 1580:
-				return -1940645236;
+				return joaat("WORLD_PLAYER_CAMP_FIRE_SIT_TENT");
 			case 1581:
-				return 1545192181;
+				return joaat("WORLD_PLAYER_INSPECT_MAP_144CM_W48_8_H32_2_FOLDVERTICALHORIZONTAL_S_TWOFOLDMAP01X");
 			case 1582:
-				return 1242478275;
+				return joaat("WORLD_PLAYER_PLACE_BAIT_NORMAL");
 			case 1583:
-				return -744863883;
+				return joaat("WORLD_PLAYER_PLACE_BAIT_POTENT");
 			case 1584:
-				return -521386873;
+				return joaat("PULLOUT_PROP_CHEST_MED_0M0");
 			case 1585:
-				return 109556135;
+				return joaat("PULLOUT_PROP_LOCKBOX_LRG_0M0_0M80");
 			case 1586:
-				return 1244936443;
+				return joaat("PULLOUT_PROP_LOCKBOX_LRG_0M0_0M85");
 			case 1587:
-				return -153614134;
+				return joaat("PULLOUT_PROP_LOCKBOX_LRG_0M0_1M0");
 			case 1588:
-				return -359720889;
+				return joaat("PULLOUT_PROP_LOCKBOX_MED_0M0_0M80");
 			case 1589:
-				return 844081111;
+				return joaat("PULLOUT_PROP_LOCKBOX_MED_0M0_0M85");
 			case 1590:
-				return 224281059;
+				return joaat("PULLOUT_PROP_LOCKBOX_MED_0M0_1M0");
 			case 1591:
-				return 1655664666;
+				return joaat("PULLOUT_PROP_LOCKBOX_SML_0M0_0M70");
 			case 1592:
-				return -708846055;
+				return joaat("PULLOUT_PROP_LOCKBOX_SML_0M0_0M85");
 			case 1593:
-				return 1176085006;
+				return joaat("PULLOUT_PROP_LOCKBOX_SML_0M0_1M0");
 			case 1594:
-				return -1764243246;
+				return joaat("PULLOUT_PROP_LOCKBOX_SML_DISCO_BURNED_SETTLEMENT_0M0_0M70");
 			case 1595:
-				return 1925399849;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_DISCO_MAP_HALVES_0M0");
 			case 1596:
-				return 1383774960;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_DISCO_BURNED_SETTLEMENT_0M0");
 			case 1597:
-				return 773397373;
+				return joaat("RANSACK_BRICK_WALL");
 			case 1598:
-				return -1628045135;
+				return joaat("RANSACK_CHIMNEY_SEARCH_NO_LOOT_0M70");
 			case 1599:
-				return -482419528;
+				return joaat("RANSACK_CHIMNEY_SEARCH_NO_LOOT_1M10");
 			case 1600:
-				return 238503723;
+				return joaat("RANSACK_CHIMNEY_SEARCH_NO_LOOT_GENERIC_PROMPT");
 			case 1601:
-				return -585021296;
+				return joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_0M35");
 			case 1602:
-				return 1479634602;
+				return joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_0M70");
 			case 1603:
-				return 1065967293;
+				return joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_1M0");
 			case 1604:
-				return 503860307;
+				return joaat("RANSACK_COACH_BOOT_CROUCH_OPEN_LOCKBREAKER_1M20");
 			case 1605:
-				return -1076083213;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_0M35");
 			case 1606:
-				return 2076787282;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_0M70");
 			case 1607:
-				return 1444251167;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_1M0");
 			case 1608:
-				return 1336339027;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_IDLE_OPEN_1M20");
 			case 1609:
-				return 482808744;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_0M35");
 			case 1610:
-				return 1177805349;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_0M70");
 			case 1611:
-				return 1448096276;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_1M0");
 			case 1612:
-				return 754044632;
+				return joaat("RANSACK_COACH_BOOT_LONGARM_OFFHAND_OPEN_1M20");
 			case 1613:
-				return 396636265;
+				return joaat("RANSACK_COACH_BOOT_OPEN");
 			case 1614:
-				return -1658619823;
+				return joaat("RANSACK_COACH_BOOT_OPEN_LOCKBREAKER");
 			case 1615:
-				return 1238063659;
+				return joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_0M35");
 			case 1616:
-				return -1311624685;
+				return joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_0M70");
 			case 1617:
-				return -1245800408;
+				return joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_1M0");
 			case 1618:
-				return -1829181716;
+				return joaat("RANSACK_COACH_BOOT_SHORTARM_OPEN_1M20");
 			case 1619:
-				return -704010221;
+				return joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_0M35");
 			case 1620:
-				return -501924978;
+				return joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_0M70");
 			case 1621:
-				return -186893030;
+				return joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_1M0");
 			case 1622:
-				return 1913928416;
+				return joaat("RANSACK_COACH_BOOT_STAND_OPEN_LOCKBREAKER_1M20");
 			case 1623:
-				return -1013470348;
+				return joaat("RANSACK_FALLBACK_PICKUP");
 			case 1624:
-				return -777481615;
+				return joaat("RANSACK_FALLBACK_PICKUP_CROUCH");
 			case 1625:
-				return 538979249;
+				return joaat("RANSACK_FALLBACK_PICKUP_CROUCH_LH");
 			case 1626:
-				return 1009293668;
+				return joaat("RANSACK_FALLBACK_PICKUP_LH");
 			case 1627:
-				return 2004039424;
+				return joaat("RANSACK_FALLBACK_PUTDOWN");
 			case 1628:
-				return 1704470489;
+				return joaat("RANSACK_FALLBACK_PUTDOWN_CROUCH");
 			case 1629:
-				return 1802944657;
+				return joaat("RANSACK_FALLBACK_PUTDOWN_LH");
 			case 1630:
-				return -1917646934;
+				return joaat("RANSACK_PICKUP_MEDCABINET_HIGH");
 			case 1631:
-				return -219941673;
+				return joaat("RANSACK_PROP_CHEST_LARGE_CLOSE");
 			case 1632:
-				return -1844699338;
+				return joaat("RANSACK_PROP_CHEST_LARGE_OPEN");
 			case 1633:
-				return 2023862263;
+				return joaat("RANSACK_PROP_CHEST_LARGE_PICKUP");
 			case 1634:
-				return -1220768327;
+				return joaat("RANSACK_PROP_CHEST_MEDIUM_CLOSE");
 			case 1635:
-				return -556299774;
+				return joaat("RANSACK_PROP_CHEST_MEDIUM_OPEN");
 			case 1636:
-				return 2072682660;
+				return joaat("RANSACK_PROP_CHEST_MEDIUM_PICKUP");
 			case 1637:
-				return -80552542;
+				return joaat("RANSACK_PROP_CHEST_PICKUP");
 			case 1638:
-				return 129409544;
+				return joaat("RANSACK_PROP_CHEST_PUTDOWN");
 			case 1639:
-				return 1674967668;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_CLOSE_A");
 			case 1640:
-				return 1385682936;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_CLOSE_B");
 			case 1641:
-				return 1753153202;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_OPEN_A");
 			case 1642:
-				return 934878503;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_HIGH_OPEN_B");
 			case 1643:
-				return 1244643118;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_CLOSE_A");
 			case 1644:
-				return 438198136;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_CLOSE_B");
 			case 1645:
-				return 729066301;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_LEFT_CLOSE");
 			case 1646:
-				return 2050785088;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_LEFT_OPEN");
 			case 1647:
-				return -507789686;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_OPEN_A");
 			case 1648:
-				return -1023377132;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_OPEN_B");
 			case 1649:
-				return 163298621;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_RIGHT_CLOSE");
 			case 1650:
-				return 113259694;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_LOW_RIGHT_OPEN");
 			case 1651:
-				return -580632686;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_MID_CLOSE");
 			case 1652:
-				return -1520256117;
+				return joaat("RANSACK_PROP_CUPBOARD_NARROW_MID_OPEN");
 			case 1653:
-				return 1708045233;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_HIGH_CLOSE");
 			case 1654:
-				return -580247852;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_HIGH_OPEN");
 			case 1655:
-				return 134714762;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_CLOSE");
 			case 1656:
-				return 226472050;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_LEFT_CLOSE");
 			case 1657:
-				return 1681044150;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_LEFT_OPEN");
 			case 1658:
-				return -529258369;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_OPEN");
 			case 1659:
-				return -1038944417;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_RIGHT_CLOSE");
 			case 1660:
-				return -419231450;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_LOW_RIGHT_OPEN");
 			case 1661:
-				return 281802273;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_MID_CLOSE");
 			case 1662:
-				return 675799862;
+				return joaat("RANSACK_PROP_CUPBOARD_WIDE_MID_OPEN");
 			case 1663:
-				return -1422320732;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_1_CLOSE");
 			case 1664:
-				return 1021152268;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_1_OPEN");
 			case 1665:
-				return -2087653744;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_2_CLOSE");
 			case 1666:
-				return -658509002;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_2_OPEN");
 			case 1667:
-				return joaat("RE_PBR_UNI_V1_RIDE_INTRO_02");
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_3_CLOSE");
 			case 1668:
-				return -519544825;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_3_OPEN");
 			case 1669:
-				return 750926406;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_4_CLOSE");
 			case 1670:
-				return -1893910834;
+				return joaat("RANSACK_PROP_DRAWER_DOUBLE_4_OPEN");
 			case 1671:
-				return -174276816;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_1_CLOSE");
 			case 1672:
-				return 1954699087;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_1_OPEN");
 			case 1673:
-				return 1662169748;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_2_CLOSE");
 			case 1674:
-				return -832608606;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_2_OPEN");
 			case 1675:
-				return -1132730647;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_3_CLOSE");
 			case 1676:
-				return -1198581396;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_3_OPEN");
 			case 1677:
-				return -192740726;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_4_CLOSE");
 			case 1678:
-				return -2092256791;
+				return joaat("RANSACK_PROP_DRAWER_SINGLE_4_OPEN");
 			case 1679:
-				return 96250457;
+				return joaat("RANSACK_PROP_DRAWERS_PICKUP");
 			case 1680:
-				return 329522555;
+				return joaat("RANSACK_PROP_DRAWERS_PUTDOWN");
 			case 1681:
-				return 1762395145;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M0");
 			case 1682:
-				return -135402872;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M45");
 			case 1683:
-				return 1876575587;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M60");
 			case 1684:
-				return 1273234535;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_0M80");
 			case 1685:
-				return -1621572797;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_1M05");
 			case 1686:
-				return 874772745;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M0");
 			case 1687:
-				return -289481955;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M45");
 			case 1688:
-				return -280724140;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M60");
 			case 1689:
-				return -1857536219;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_CLOSE_TIGHT_0M80");
 			case 1690:
-				return 1992236106;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M0");
 			case 1691:
-				return 1468081052;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M45");
 			case 1692:
-				return 1941854706;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M60");
 			case 1693:
-				return 949215578;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_0M80");
 			case 1694:
-				return 1472197696;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_1M05");
 			case 1695:
-				return 434713043;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M0");
 			case 1696:
-				return -308358537;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M45");
 			case 1697:
-				return -619465711;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M60");
 			case 1698:
-				return -69078291;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENLOCKED_TIGHT_0M80");
 			case 1699:
-				return 1182859337;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M0");
 			case 1700:
-				return 1884809780;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M45");
 			case 1701:
-				return -235670490;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M60");
 			case 1702:
-				return 1956408893;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_0M80");
 			case 1703:
-				return -380363474;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_OPENUNLOCKED_1M05");
 			case 1704:
-				return 1300611164;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_PICKUP");
 			case 1705:
-				return 1636204884;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_0M0");
 			case 1706:
-				return 526725148;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_0M45");
 			case 1707:
-				return -2058254181;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_0M80");
 			case 1708:
-				return 985136483;
+				return joaat("RANSACK_PROP_LOCKBOX_LRG_PUTDOWN_1M05");
 			case 1709:
-				return -927684526;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M0");
 			case 1710:
-				return -277546477;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M45");
 			case 1711:
-				return -1353352183;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M60");
 			case 1712:
-				return -1743010162;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_0M80");
 			case 1713:
-				return -501791585;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_1M05");
 			case 1714:
-				return -1183643148;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M0");
 			case 1715:
-				return 761676757;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M45");
 			case 1716:
-				return -1939887874;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M60");
 			case 1717:
-				return -921337927;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_CLOSE_TIGHT_0M80");
 			case 1718:
-				return 322611816;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M0");
 			case 1719:
-				return -371405990;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M45");
 			case 1720:
-				return -426093511;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M60");
 			case 1721:
-				return -1050797783;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_0M80");
 			case 1722:
-				return 1532541314;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_1M05");
 			case 1723:
-				return -2132089563;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M0");
 			case 1724:
-				return -602690338;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M45");
 			case 1725:
-				return 795742498;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M60");
 			case 1726:
-				return 990258706;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENLOCKED_TIGHT_0M80");
 			case 1727:
-				return 180206120;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M0");
 			case 1728:
-				return -428719204;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M45");
 			case 1729:
-				return -774297062;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M60");
 			case 1730:
-				return -280896888;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_0M80");
 			case 1731:
-				return 1824320289;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_OPENUNLOCKED_1M05");
 			case 1732:
-				return 2187921;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_PICKUP");
 			case 1733:
-				return 565976741;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M0");
 			case 1734:
-				return -726569397;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M45");
 			case 1735:
-				return -804470066;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M60");
 			case 1736:
-				return -966479426;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_0M80");
 			case 1737:
-				return -1910224740;
+				return joaat("RANSACK_PROP_LOCKBOX_MED_PUTDOWN_1M05");
 			case 1738:
-				return 1002769919;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M0");
 			case 1739:
-				return -1284571798;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M45");
 			case 1740:
-				return -1717188712;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M60");
 			case 1741:
-				return 853834207;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_0M80");
 			case 1742:
-				return -360221901;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_1M05");
 			case 1743:
-				return 1605211414;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M0");
 			case 1744:
-				return -799755351;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M45");
 			case 1745:
-				return -561035247;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M60");
 			case 1746:
-				return -584495003;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_CLOSE_TIGHT_0M80");
 			case 1747:
-				return 555612790;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M0");
 			case 1748:
-				return 1186922655;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M45");
 			case 1749:
-				return 1947556039;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M60");
 			case 1750:
-				return 419796913;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_0M80");
 			case 1751:
-				return -1146648371;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_1M05");
 			case 1752:
-				return 1921610057;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M0");
 			case 1753:
-				return 884959174;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M45");
 			case 1754:
-				return -99422178;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M60");
 			case 1755:
-				return 167092195;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENLOCKED_TIGHT_0M80");
 			case 1756:
-				return 837758692;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M0");
 			case 1757:
-				return -1980304607;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M45");
 			case 1758:
-				return -1003656747;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M60");
 			case 1759:
-				return -749434233;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_0M80");
 			case 1760:
-				return 1609966682;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_OPENUNLOCKED_1M05");
 			case 1761:
-				return 1080325001;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_PICKUP");
 			case 1762:
-				return 1444496914;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M0");
 			case 1763:
-				return -1183099274;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M45");
 			case 1764:
-				return -647854556;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M60");
 			case 1765:
-				return -1342226726;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_0M80");
 			case 1766:
-				return -1952247065;
+				return joaat("RANSACK_PROP_LOCKBOX_SML_PUTDOWN_1M05");
 			case 1767:
-				return 1825097523;
+				return joaat("RANSACK_PROP_OPEN_CRATE_PICKUP");
 			case 1768:
-				return -1604663583;
+				return joaat("RANSACK_PROP_P_WNT4_DRWDBL01X_CLOSE");
 			case 1769:
-				return -108828442;
+				return joaat("RANSACK_PROP_P_WNT4_DRWDBL01X_OPEN");
 			case 1770:
-				return 677005006;
+				return joaat("RANSACK_PUTDOWN_1M5_0M5_2M0");
 			case 1771:
-				return 1763725008;
+				return joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING");
 			case 1772:
-				return 1193661374;
+				return joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING_GENERIC_PROMPT");
 			case 1773:
-				return 412999088;
+				return joaat("RANSACK_REACH_IN_CRAYSISH_HOLE_PICKUP");
 			case 1774:
-				return 216319735;
+				return joaat("RANSACK_REACH_IN_GROUND_HOLE_PICKUP_GENERIC_PROMPT");
 			case 1775:
-				return -1247042764;
+				return joaat("RANSACK_REACH_IN_PICKUP_1M5_0M5_2M0");
 			case 1776:
-				return -1541598949;
+				return joaat("RANSACK_REACH_IN_PICKUP_BOOT");
 			case 1777:
-				return 1615547829;
+				return joaat("RANSACK_REACH_IN_PICKUP_SHALLOW_45");
 			case 1778:
-				return -471061804;
+				return joaat("RANSACK_REACH_IN_PUTDOWN_SHALLOW_45");
 			case 1779:
-				return -89155892;
+				return joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PICKUP");
 			case 1780:
-				return 1881800530;
+				return joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PICKUP_TIGHT");
 			case 1781:
-				return 590721838;
+				return joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PUTDOWN");
 			case 1782:
-				return -1025087526;
+				return joaat("RANSACK_REACH_IN_TO_COUNTER_OVER_PUTDOWN_TIGHT");
 			case 1783:
-				return -1924319795;
+				return joaat("RANSACK_REACH_IN_TO_TABLE_OVER_PICKUP");
 			case 1784:
-				return 1050255114;
+				return joaat("RANSACK_REACH_IN_TO_TABLE_OVER_PUTDOWN");
 			case 1785:
-				return -1287255281;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_0M3_NO_LOOT");
 			case 1786:
-				return -2012078678;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_0M3_W_LOOT");
 			case 1787:
-				return -410747054;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_1M75_NO_LOOT");
 			case 1788:
-				return -933427717;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_1M75_W_LOOT");
 			case 1789:
-				return 1840147624;
+				return joaat("RANSACK_REACH_OVER_CENTERED_GROUND_PICKUP_0M5_0M5");
 			case 1790:
-				return 839791972;
+				return joaat("RANSACK_REACH_OVER_PICKUP_1M5_0M5_2M0");
 			case 1791:
-				return -1724744355;
+				return joaat("RANSACK_REACH_OVER_PICKUP_1M5_1M20_2M0");
 			case 1792:
-				return -502985130;
+				return joaat("RANSACK_REACH_OVER_PICKUP_LH_1M5_0M5_2M0");
 			case 1793:
-				return 302849977;
+				return joaat("RANSACK_REACH_OVER_PUTDOWN_1M5_0M5_2M0");
 			case 1794:
-				return 415359671;
+				return joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PICKUP_0M5_0M5");
 			case 1795:
-				return -1844078932;
+				return joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PUTDOWN_0M5_0M5");
 			case 1796:
-				return 1585817968;
+				return joaat("RANSACK_REACH_SHALLOW_SHOP_VOL_PICKUP");
 			case 1797:
-				return 1793506433;
+				return joaat("RANSACK_REACH_SHALLOW_SHOP_VOL_PUTDOWN");
 			case 1798:
-				return -78773636;
+				return joaat("RANSACK_REACH_SWIMMING");
 			case 1799:
-				return 383624950;
+				return joaat("RANSACK_REACH_UP_PICKUP_SHALLOW_150");
 			case 1800:
-				return -1138798454;
+				return joaat("RANSACK_REACH_UP_PUTDOWN_SHALLOW_150");
 			case 1801:
-				return -470020262;
+				return joaat("RANSACK_STRANGE_STATUES_VOL_PICKUP");
 			case 1802:
-				return -597162951;
+				return joaat("WORLD_PLAYER_RANSACK_PICKUP_MONEYBAG_FRONT_TAKE_LEFT_SHOULDER");
 			case 1803:
-				return 221308504;
+				return joaat("WORLD_PLAYER_RANSACK_PICKUP_MONEYBAG_FRONT_TAKE_RIGHT_SHOULDER");
 			case 1804:
-				return 1954325822;
+				return joaat("RANSACK_REACH_IN_TREE_HOLE_PIKUP_0M0");
 			case 1805:
-				return 663276374;
+				return joaat("RANSACK_ATTACHED_BRICK_WALL");
 			case 1806:
 				return joaat("RANSACK_ATTACHED_CHEST_LARGE");
 			case 1807:
-				return 843794152;
+				return joaat("RANSACK_ATTACHED_CHEST_MED_PULLOUT_0M0");
 			case 1808:
 				return joaat("RANSACK_ATTACHED_CHEST_MEDIUM");
 			case 1809:
-				return -1893200246;
+				return joaat("RANSACK_ATTACHED_CHEST_MEDIUM_OPEN_ONLY");
 			case 1810:
-				return -1870678101;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_LOW_L");
 			case 1811:
-				return 689199900;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_LOW_L_ADLERS");
 			case 1812:
-				return -973462873;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_LOW_R");
 			case 1813:
-				return -1189218250;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_LOW_R_ADLERS");
 			case 1814:
-				return -1055524328;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_HIGH");
 			case 1815:
-				return 1870411809;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_LEFT");
 			case 1816:
-				return -1469999374;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_RIGHT");
 			case 1817:
-				return -288630889;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_SHORT");
 			case 1818:
-				return 1891303234;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_LOW_TALL");
 			case 1819:
-				return 2019504701;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_NARROW_MID");
 			case 1820:
-				return 1355508089;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_HIGH");
 			case 1821:
-				return 288901709;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_LOW");
 			case 1822:
-				return -449869761;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_LOW_LEFT");
 			case 1823:
-				return 722097259;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_LOW_RIGHT");
 			case 1824:
-				return -2087527692;
+				return joaat("RANSACK_ATTACHED_CUPBOARD_WIDE_MID");
 			case 1825:
-				return -1384407567;
+				return joaat("RANSACK_ATTACHED_DD_123");
 			case 1826:
-				return -733157857;
+				return joaat("RANSACK_ATTACHED_DD_1234");
 			case 1827:
 				return joaat("RANSACK_ATTACHED_DD_234");
 			case 1828:
-				return 1956439393;
+				return joaat("RANSACK_ATTACHED_DD_34");
 			case 1829:
-				return 51237607;
+				return joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_1");
 			case 1830:
-				return -1455022251;
+				return joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_2");
 			case 1831:
 				return joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_3");
 			case 1832:
-				return -1101772431;
+				return joaat("RANSACK_ATTACHED_DRAWER_DOUBLE_4");
 			case 1833:
 				return joaat("RANSACK_ATTACHED_DRAWER_SINGLE_1");
 			case 1834:
-				return -613801712;
+				return joaat("RANSACK_ATTACHED_DRAWER_SINGLE_2");
 			case 1835:
-				return -854031251;
+				return joaat("RANSACK_ATTACHED_DRAWER_SINGLE_3");
 			case 1836:
-				return -11015957;
+				return joaat("RANSACK_ATTACHED_DRAWER_SINGLE_4");
 			case 1837:
-				return -1350870117;
+				return joaat("RANSACK_ATTACHED_DS_12");
 			case 1838:
-				return 2113302033;
+				return joaat("RANSACK_ATTACHED_DS_123");
 			case 1839:
-				return 425046062;
+				return joaat("RANSACK_ATTACHED_DS_23");
 			case 1840:
-				return -643955342;
+				return joaat("RANSACK_ATTACHED_DS_234");
 			case 1841:
 				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED");
 			case 1842:
-				return 1589325060;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_0M80");
 			case 1843:
-				return 1827064155;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_0M85");
 			case 1844:
-				return 2042327162;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_1M0");
 			case 1845:
-				return 861345651;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_0M80");
 			case 1846:
-				return -1758273751;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_0M85");
 			case 1847:
-				return -1693728831;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_1M0");
 			case 1848:
-				return 1368822497;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_TIGHT");
 			case 1849:
-				return 1634273809;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED");
 			case 1850:
-				return 720741201;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED_PULLOUT_0M0_0M80");
 			case 1851:
-				return 86244240;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_DISCO_MAP_HALVES");
 			case 1852:
 				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED");
 			case 1853:
-				return -2081969392;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_0M80");
 			case 1854:
-				return 718436607;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_0M85");
 			case 1855:
-				return -1842399202;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_1M0");
 			case 1856:
-				return 202274149;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_0M80");
 			case 1857:
-				return -1728671945;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_0M85");
 			case 1858:
-				return 1799902997;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_1M0");
 			case 1859:
-				return -380929329;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_TIGHT");
 			case 1860:
-				return 1751173281;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED");
 			case 1861:
-				return -1542088648;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED_PULLOUT_0M0_0M80");
 			case 1862:
-				return 1077665754;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_DISCO_BURNED_SETTLEMENT_PULLOUT_0M0_0M70");
 			case 1863:
-				return 1765033373;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED");
 			case 1864:
-				return 1569198532;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_0M70");
 			case 1865:
-				return 1668650375;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_0M85");
 			case 1866:
-				return -1656133042;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_1M0");
 			case 1867:
-				return 773114028;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_0M70");
 			case 1868:
-				return 1903678225;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_0M85");
 			case 1869:
-				return -283234320;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_1M0");
 			case 1870:
-				return 1021602412;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_TIGHT");
 			case 1871:
-				return 1125994490;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED");
 			case 1872:
-				return 1332095703;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED_PULLOUT_0M0_0M70");
 			case 1873:
-				return -2048139083;
+				return joaat("RANSACK_BED");
 			case 1874:
-				return 1289974751;
+				return joaat("RANSACK_CHIMNEY_GENERIC_01");
 			case 1875:
-				return 1986382505;
+				return joaat("RANSACK_CHIMNEY_GENERIC_01_GENERIC_PROMPT");
 			case 1876:
-				return 1050466130;
+				return joaat("RANSACK_CHIMNEY_GENERIC_02");
 			case 1877:
-				return -1225791323;
+				return joaat("RANSACK_CHIMNEY_WITH_MANTLE__BEECHERS_BEDROOM");
 			case 1878:
-				return 395804650;
+				return joaat("RANSACK_CHIMNEY_WITH_MANTLE_GENERIC_01");
 			case 1879:
-				return 82696855;
+				return joaat("RANSACK_CHIMNEY_WITH_MANTLE_GENERIC_02");
 			case 1880:
-				return -1837026863;
+				return joaat("RANSACK_COACH_BOOT");
 			case 1881:
-				return -414211333;
+				return joaat("RANSACK_COACH_BOOT_WIP");
 			case 1882:
-				return -1843735114;
+				return joaat("RANSACK_REACH_IN_CRAYSISH_HOLE");
 			case 1883:
-				return 562592628;
+				return joaat("RANSACK_REACH_IN_GROUND_HOLE_GENERIC_PROMPT");
 			case 1884:
-				return -1398754432;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_0M3");
 			case 1885:
-				return 918020448;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_0M3_GENERIC_PROMPT");
 			case 1886:
-				return -33589720;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_1M75");
 			case 1887:
-				return -94120997;
+				return joaat("RANSACK_REACH_IN_WALL_HOLE_1M75_GENERIC_PROMPT");
 			case 1888:
-				return 526291251;
+				return joaat("RANSACK_REACH_OVER_CENTERED_GROUND_PICKUP");
 			case 1889:
-				return 409403441;
+				return joaat("RANSACK_REACH_OVER_CENTERED_GROUND_PICKUP_TIGHT_ENVELOPE");
 			case 1890:
-				return -1005995225;
+				return joaat("RANSACK_REACH_OVER_GENERIC_LETTER_PROMPT_0M5_0M5_2M0");
 			case 1891:
-				return -1052361389;
+				return joaat("RANSACK_REACH_OVER_VOLUME_0M8_0M5_2M0");
 			case 1892:
-				return -1820115868;
+				return joaat("RANSACK_REACH_OVER_VOLUME_0M8_0M8_2M0");
 			case 1893:
-				return 874854362;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M5_2M0");
 			case 1894:
-				return -1529588078;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M5_2M0_NO_REACH_UP");
 			case 1895:
 				return joaat("RANSACK_REACH_OVER_VOLUME_1M0_0M8_2M0");
 			case 1896:
-				return -228293404;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M10_0M8_2M0");
 			case 1897:
-				return 553276660;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M25_0M5_2M0");
 			case 1898:
-				return 1034443817;
+				return joaat("RANSACK_REACH_OVER_VOLUME_1M25_0M8_2M0");
 			case 1899:
 				return joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M5_2M0");
 			case 1900:
 				return joaat("RANSACK_REACH_OVER_VOLUME_1M5_0M8_2M0");
 			case 1901:
-				return -1126887526;
+				return joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_0M5_0M5_0M40");
 			case 1902:
-				return 10753225;
+				return joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_0M5_0M7_0M40");
 			case 1903:
-				return 2104706574;
+				return joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_0M8_0M5_0M40");
 			case 1904:
-				return 1050622421;
+				return joaat("RANSACK_REACH_OVER_VOLUME_CRATE_TOP_1M0_0M5_0M40");
 			case 1905:
-				return 1056917224;
+				return joaat("RANSACK_REACH_OVER_VOLUME_LONGREACH_0M7_0M8_1M5");
 			case 1906:
 				return joaat("RANSACK_REACH_OVER_VOLUME_NARROW_0M5_0M5_2M0");
 			case 1907:
-				return 1297830245;
+				return joaat("RANSACK_REACH_OVER_VOLUME_NARROW_0M5_0M8_2M0");
 			case 1908:
-				return 637151746;
+				return joaat("RANSACK_REACH_OVER_VOLUME_OPEN_CRATE_PICKUP_0M5_0M5_0M40");
 			case 1909:
-				return -1642576755;
+				return joaat("RANSACK_REACH_OVER_VOLUME_OPEN_CRATE_PICKUP_0M8_0M5_0M40");
 			case 1910:
-				return 817984844;
+				return joaat("RANSACK_REACH_OVER_VOLUME_SHELF_TOP_0M5_0M5_1M50");
 			case 1911:
-				return 113260486;
+				return joaat("RANSACK_REACH_OVER_VOLUME_SHELF_TOP_0M5_0M5_1M95");
 			case 1912:
-				return -667943088;
+				return joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PICKUP");
 			case 1913:
-				return -1445107872;
+				return joaat("RANSACK_REACH_OVER_VOLUME_SMALL_GROUND_PICKUP_TIGHT_ENVELOPE");
 			case 1914:
-				return -1610817898;
+				return joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M5_0M5_0M60");
 			case 1915:
 				return joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M5_0M5_0M80");
 			case 1916:
 				return joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_0M8_0M5_0M80");
 			case 1917:
-				return 1745757232;
+				return joaat("RANSACK_REACH_OVER_VOLUME_TABLE_TOP_1M0_0M5_0M80");
 			case 1918:
-				return 276224334;
+				return joaat("RANSACK_REACH_OVER_VOLUME_WIDE_GROUND_PICKUP");
 			case 1919:
-				return -218540408;
+				return joaat("RANSACK_REACHOVER_VOLUME_1M0_0M8_0M55");
 			case 1920:
-				return 45887683;
+				return joaat("RANSACK_SAFE");
 			case 1921:
-				return 318556127;
+				return joaat("RANSACK_SHOP_VOL_0M50_0M50_2M0");
 			case 1922:
-				return 1640575631;
+				return joaat("RANSACK_SHOP_VOL_0M50_0M50_2M0_TIGHT_ENVELOPE");
 			case 1923:
-				return 1519142390;
+				return joaat("RANSACK_SHOP_VOL_0M50_0M80_2M0");
 			case 1924:
-				return -552730006;
+				return joaat("RANSACK_SHOP_VOL_0M80_0M50_2M0");
 			case 1925:
-				return -1922154675;
+				return joaat("RANSACK_SHOP_VOL_0M80_0M50_2M0_GEN_STORE_MEAT_DISPLAY");
 			case 1926:
-				return -1200719659;
+				return joaat("RANSACK_SHOP_VOL_0M80_0M50_2M0_TIGHT_ENVELOPE");
 			case 1927:
-				return -627795312;
+				return joaat("RANSACK_SHOP_VOL_1M0_0M50_2M0");
 			case 1928:
-				return 1378560908;
+				return joaat("RANSACK_SHOP_VOL_1M0_0M50_2M0_TIGHT_ENVELOPE");
 			case 1929:
-				return 271472783;
+				return joaat("RANSACK_SHOP_VOL_1M0_0M80_2M0");
 			case 1930:
-				return -378977910;
+				return joaat("RANSACK_SHOP_VOL_1M10_0M50_2M0");
 			case 1931:
-				return -1746866391;
+				return joaat("RANSACK_SHOP_VOL_1M10_0M50_2M0_TIGHT_ENVELOPE");
 			case 1932:
-				return 676466743;
+				return joaat("RANSACK_SHOP_VOL_1M25_0M50_2M0");
 			case 1933:
-				return -1629159913;
+				return joaat("RANSACK_SHOP_VOL_1M25_0M50_2M0_TIGHT_ENVELOPE");
 			case 1934:
 				return joaat("RANSACK_SHOP_VOL_1M50_0M50_2M0");
 			case 1935:
-				return 1608515746;
+				return joaat("RANSACK_SHOP_VOL_1M50_0M50_2M0_TIGHT_ENVELOPE");
 			case 1936:
-				return -1840784802;
+				return joaat("RANSACK_SHOP_VOL_1M70_0M50_2M0");
 			case 1937:
-				return -1060784354;
+				return joaat("RANSACK_STRANGE_STATUES_STASH");
 			case 1938:
 				return joaat("RANSACK_VOLUME_0M8_0M5_2M0");
 			case 1939:
-				return -1616347668;
+				return joaat("RANSACK_VOLUME_0M8_0M8_2M0");
 			case 1940:
-				return 111647220;
+				return joaat("RANSACK_VOLUME_1M0_0M5_2M0");
 			case 1941:
-				return 1217254422;
+				return joaat("RANSACK_VOLUME_1M0_0M5_2M0_NO_REACH_UP");
 			case 1942:
-				return -1184202704;
+				return joaat("RANSACK_VOLUME_1M0_0M8_2M0");
 			case 1943:
-				return -1291249576;
+				return joaat("RANSACK_VOLUME_1M10_0M8_2M0");
 			case 1944:
-				return -1341692684;
+				return joaat("RANSACK_VOLUME_1M25_0M8_2M0");
 			case 1945:
 				return joaat("RANSACK_VOLUME_1M5_0M5_2M0");
 			case 1946:
-				return 1187533117;
+				return joaat("RANSACK_VOLUME_1M5_0M8_2M0");
 			case 1947:
-				return 1998863259;
+				return joaat("RANSACK_VOLUME_LONGREACH_0M7_0M8_1M5");
 			case 1948:
-				return 1962997581;
+				return joaat("RANSACK_VOLUME_NARROW_0M5_0M5_2M0");
 			case 1949:
-				return -134662402;
+				return joaat("RANSACK_VOLUME_NARROW_0M5_0M8_2M0");
 			case 1950:
-				return -417265460;
+				return joaat("RANSACK_VOLUME_REACH_IN_PICKUP_1M70_0M80_2M0");
 			case 1951:
-				return -1678984988;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M5_0M5_2M0");
 			case 1952:
-				return -665744599;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M5_0M8_2M0");
 			case 1953:
-				return -1696819707;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M8_0M5_2M0");
 			case 1954:
-				return 735272401;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M8_0M5_2M0_TIGHT");
 			case 1955:
-				return 1760817692;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_0M8_0M8_2M0");
 			case 1956:
-				return 812671620;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M0_0M5_2M0");
 			case 1957:
-				return 298609310;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M0_0M5_2M0_TIGHT_ENVELOPE");
 			case 1958:
-				return 499797110;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M0_0M8_2M0");
 			case 1959:
-				return -174562930;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M25_0M5_2M0");
 			case 1960:
-				return 713522856;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M25_0M8_2M0");
 			case 1961:
-				return -895307070;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M5_0M5_2M0");
 			case 1962:
-				return -1018887286;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M5_0M5_2M0_TIGHT_ENVELOPE");
 			case 1963:
-				return 1407256401;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_COUNTER_OVER_PICKUP_1M5_0M8_2M0");
 			case 1964:
-				return 951967118;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M5_0M5_2M0");
 			case 1965:
-				return -865716008;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M5_0M8_2M0");
 			case 1966:
-				return 185435576;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M8_0M5_2M0");
 			case 1967:
-				return -942853270;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M8_0M5_2M0_TIGHT");
 			case 1968:
-				return -1960501528;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_0M8_0M8_2M0");
 			case 1969:
-				return 304703384;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M0_0M5_2M0");
 			case 1970:
-				return 1429416313;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M0_0M8_2M0");
 			case 1971:
-				return -437418925;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M25_0M5_2M0");
 			case 1972:
-				return 1773363687;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M25_0M8_2M0");
 			case 1973:
-				return 1244878437;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M5_0M5_2M0");
 			case 1974:
-				return 82187915;
+				return joaat("RANSACK_VOLUME_REACH_IN_TO_TABLE_OVER_PICKUP_1M5_0M8_2M0");
 			case 1975:
-				return 1207677214;
+				return joaat("RANSACK_VOLUME_REACH_OVER_PICKUP_1M70_0M80_2M0");
 			case 1976:
-				return -1909595080;
+				return joaat("RANSACK_WALL_0M80_0M10_2M0");
 			case 1977:
-				return -639473151;
+				return joaat("RANSACK_ATTACHED_CHEST_LARGE_MP_SYNC_GOTO");
 			case 1978:
-				return 877658416;
+				return joaat("RANSACK_ATTACHED_CHEST_MED_PULLOUT_0M0_MP_SYNC_GOTO");
 			case 1979:
-				return 1128993359;
+				return joaat("RANSACK_ATTACHED_CHEST_MEDIUM_MP_SYNC_GOTO");
 			case 1980:
-				return 1875898086;
+				return joaat("RANSACK_ATTACHED_CHEST_MEDIUM_OPEN_ONLY_MP_SYNC_GOTO");
 			case 1981:
-				return 1212196898;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_MP_SYNC_GOTO");
 			case 1982:
-				return 452617901;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO");
 			case 1983:
-				return -391226571;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_PULLOUT_TIGHT_0M0_0M80_MP_SYNC_GOTO");
 			case 1984:
-				return 879716708;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_LOCKED_TIGHT_MP_SYNC_GOTO");
 			case 1985:
-				return -325772919;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED_MP_SYNC_GOTO");
 			case 1986:
-				return 551999935;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_LRG_UNLOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO");
 			case 1987:
-				return -1245423146;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_MP_SYNC_GOTO");
 			case 1988:
-				return -1405108472;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO");
 			case 1989:
-				return 1243887494;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_PULLOUT_TIGHT_0M0_0M80_MP_SYNC_GOTO");
 			case 1990:
-				return 2039761412;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_LOCKED_TIGHT_MP_SYNC_GOTO");
 			case 1991:
-				return -1182867720;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED_MP_SYNC_GOTO");
 			case 1992:
-				return 12613321;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_MED_UNLOCKED_PULLOUT_0M0_0M80_MP_SYNC_GOTO");
 			case 1993:
-				return 75374539;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_MP_SYNC_GOTO");
 			case 1994:
-				return 1917664300;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_0M0_0M70_MP_SYNC_GOTO");
 			case 1995:
-				return -1145853489;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_PULLOUT_TIGHT_0M0_0M70_MP_SYNC_GOTO");
 			case 1996:
-				return 1352820450;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_LOCKED_TIGHT_MP_SYNC_GOTO");
 			case 1997:
-				return 1419954406;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED_MP_SYNC_GOTO");
 			case 1998:
-				return 1742208934;
+				return joaat("RANSACK_ATTACHED_LOCKBOX_SML_UNLOCKED_PULLOUT_0M0_0M70_MP_SYNC_GOTO");
 			case 1999:
-				return 178138246;
+				return joaat("RANSACK_CHIMNEY_WITH_MANTLE_CIV_BRD_SHK");
 			default:
 				break;
 		}
@@ -22215,15 +22215,15 @@ int func_470(int iParam0, int iParam1)
 		switch (iParam0)
 		{
 			case 2000:
-				return -1717249439;
+				return joaat("RANSACK_VOLUME_REACH_IN_TREE_HOLE_GROUND_PICKUP");
 			case 2001:
-				return -1939078214;
+				return joaat("RANSACK_ATTACHED_P_ABE_CABINET01X");
 			case 2002:
-				return -1869802111;
+				return joaat("RANSACK_ATTACHED_P_ADL_CABINET01X");
 			case 2003:
 				return joaat("RANSACK_ATTACHED_P_ARMOIR02X");
 			case 2004:
-				return 1086866717;
+				return joaat("RANSACK_ATTACHED_P_ARMOIR04X");
 			case 2005:
 				return joaat("RANSACK_ATTACHED_P_ARMOIR05X");
 			case 2006:
@@ -22231,37 +22231,37 @@ int func_470(int iParam0, int iParam1)
 			case 2007:
 				return joaat("RANSACK_ATTACHED_P_ARMOIR07X");
 			case 2008:
-				return 2088386848;
+				return joaat("RANSACK_ATTACHED_P_ARMOIR08X");
 			case 2009:
-				return -651491934;
+				return joaat("RANSACK_ATTACHED_P_ARMOIREREGAL01");
 			case 2010:
-				return -1949040707;
+				return joaat("RANSACK_ATTACHED_P_ARMOIROFFICE66X");
 			case 2011:
-				return 62060715;
+				return joaat("RANSACK_ATTACHED_P_BAGGAGE01X_CABINET_DR01");
 			case 2012:
-				return -1736695237;
+				return joaat("RANSACK_ATTACHED_P_BAGGAGE01X_CABINET_DR02");
 			case 2013:
-				return -1329035790;
+				return joaat("RANSACK_ATTACHED_P_BAGGAGE01X_TRE_DR01");
 			case 2014:
-				return -1055971713;
+				return joaat("RANSACK_ATTACHED_P_BAGGAGE01X_TRE_DR02");
 			case 2015:
-				return 668969112;
+				return joaat("RANSACK_ATTACHED_P_BOOKCASE01X");
 			case 2016:
 				return joaat("RANSACK_ATTACHED_P_BOOKCASE04X");
 			case 2017:
-				return -438207932;
+				return joaat("RANSACK_ATTACHED_P_BUFFET01X");
 			case 2018:
-				return 2013669839;
+				return joaat("RANSACK_ATTACHED_P_BUFFET03X");
 			case 2019:
 				return joaat("RANSACK_ATTACHED_P_BW_DESK01X");
 			case 2020:
-				return 1973299720;
+				return joaat("RANSACK_ATTACHED_P_CABINET01X");
 			case 2021:
-				return 1844516830;
+				return joaat("RANSACK_ATTACHED_P_CABINET03X");
 			case 2022:
 				return joaat("RANSACK_ATTACHED_P_CABINET05X");
 			case 2023:
-				return 49167942;
+				return joaat("RANSACK_ATTACHED_P_CABINET06X");
 			case 2024:
 				return joaat("RANSACK_ATTACHED_P_CABINET08X");
 			case 2025:
@@ -22269,101 +22269,101 @@ int func_470(int iParam0, int iParam1)
 			case 2026:
 				return joaat("RANSACK_ATTACHED_P_CABINET09X_R");
 			case 2027:
-				return 830115903;
+				return joaat("RANSACK_ATTACHED_P_CABINET11X");
 			case 2028:
 				return joaat("RANSACK_ATTACHED_P_CABINET13X");
 			case 2029:
-				return 1146892774;
+				return joaat("RANSACK_ATTACHED_P_CABINET15X");
 			case 2030:
-				return 1773628985;
+				return joaat("RANSACK_ATTACHED_P_CABINETCHINA01X");
 			case 2031:
-				return 1867868436;
+				return joaat("RANSACK_ATTACHED_P_CABINETDOCTOR01X");
 			case 2032:
-				return 1528349639;
+				return joaat("RANSACK_ATTACHED_P_CABINETDOCTOR02X");
 			case 2033:
-				return 1308545316;
+				return joaat("RANSACK_ATTACHED_P_CABINETPOSTAL01X");
 			case 2034:
-				return -135116434;
+				return joaat("RANSACK_ATTACHED_P_CABOOSE01X_CUPBOARD");
 			case 2035:
-				return -1338300561;
+				return joaat("RANSACK_ATTACHED_P_CABOOSE01X_DRAWERS");
 			case 2036:
-				return 337782253;
+				return joaat("RANSACK_ATTACHED_P_CABOOSE03X_CUPBOARD");
 			case 2037:
-				return -2007688274;
+				return joaat("RANSACK_ATTACHED_P_CABOOSE03X_DRAWERS");
 			case 2038:
-				return -1377345125;
+				return joaat("RANSACK_ATTACHED_P_CARTCABINET01X");
 			case 2039:
-				return 1945302853;
+				return joaat("RANSACK_ATTACHED_P_CHEST02X");
 			case 2040:
-				return 669750263;
+				return joaat("RANSACK_ATTACHED_P_CHINACABINET01X");
 			case 2041:
 				return joaat("RANSACK_ATTACHED_P_COMMODE01X");
 			case 2042:
-				return 966493677;
+				return joaat("RANSACK_ATTACHED_P_COMMODINI01X");
 			case 2043:
-				return 1749939697;
+				return joaat("RANSACK_ATTACHED_P_CORNERCABINET01X");
 			case 2044:
-				return -28400804;
+				return joaat("RANSACK_ATTACHED_P_CORNERCABINET02X");
 			case 2045:
-				return -563929268;
+				return joaat("RANSACK_ATTACHED_P_COUNTERDOCTOR01X");
 			case 2046:
-				return -241925773;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARD01X");
 			case 2047:
-				return -417141972;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARD02X");
 			case 2048:
-				return -787927293;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARD02X_RCSC2");
 			case 2049:
-				return -1302545667;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARD03X");
 			case 2050:
 				return joaat("RANSACK_ATTACHED_P_CUPBOARD04X");
 			case 2051:
-				return -1855260942;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARD05X");
 			case 2052:
-				return -273009449;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARD06X");
 			case 2053:
-				return 2003624097;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARDCORNER01X");
 			case 2054:
-				return -2100908496;
+				return joaat("RANSACK_ATTACHED_P_CUPBOARDFAC01X");
 			case 2055:
-				return 217936838;
+				return joaat("RANSACK_ATTACHED_P_DESK01X");
 			case 2056:
 				return joaat("RANSACK_ATTACHED_P_DESK03X");
 			case 2057:
 				return joaat("RANSACK_ATTACHED_P_DESK07X");
 			case 2058:
-				return 975923321;
+				return joaat("RANSACK_ATTACHED_P_DESK08X_L");
 			case 2059:
 				return joaat("RANSACK_ATTACHED_P_DESK08X_R");
 			case 2060:
 				return joaat("RANSACK_ATTACHED_P_DESK09BX");
 			case 2061:
-				return 1190050632;
+				return joaat("RANSACK_ATTACHED_P_DESK09X");
 			case 2062:
-				return -1873974894;
+				return joaat("RANSACK_ATTACHED_P_DESK10X");
 			case 2063:
-				return 1493109034;
+				return joaat("RANSACK_ATTACHED_P_DESK14X");
 			case 2064:
-				return 1631234053;
+				return joaat("RANSACK_ATTACHED_P_DESK17X");
 			case 2065:
-				return -1515755255;
+				return joaat("RANSACK_ATTACHED_P_DRESSER01X");
 			case 2066:
 				return joaat("RANSACK_ATTACHED_P_DRESSER03X");
 			case 2067:
-				return -1102276961;
+				return joaat("RANSACK_ATTACHED_P_DRESSER04X");
 			case 2068:
-				return -486383894;
+				return joaat("RANSACK_ATTACHED_P_DRESSER05X");
 			case 2069:
-				return -381107352;
+				return joaat("RANSACK_ATTACHED_P_DRESSER06X_L");
 			case 2070:
-				return 1826441875;
+				return joaat("RANSACK_ATTACHED_P_DRESSER06X_R");
 			case 2071:
-				return 782660593;
+				return joaat("RANSACK_ATTACHED_P_DRESSER07X");
 			case 2072:
-				return 706078864;
+				return joaat("RANSACK_ATTACHED_P_DRESSER09X");
 			case 2073:
-				return 1255549420;
+				return joaat("RANSACK_ATTACHED_P_DRESSER10X");
 			case 2074:
-				return -155090208;
+				return joaat("RANSACK_ATTACHED_P_DRESSER11X");
 			case 2075:
 				return joaat("RANSACK_ATTACHED_P_DRESSERVAL01X");
 			case 2076:
@@ -22371,649 +22371,649 @@ int func_470(int iParam0, int iParam1)
 			case 2077:
 				return joaat("RANSACK_ATTACHED_P_DRYSINK01X");
 			case 2078:
-				return 1502807256;
+				return joaat("RANSACK_ATTACHED_P_DRYSINK03X");
 			case 2079:
 				return joaat("RANSACK_ATTACHED_P_ENDTABLE01X");
 			case 2080:
-				return 1488931084;
+				return joaat("RANSACK_ATTACHED_P_EXAMTBLEDOCTOR01X");
 			case 2081:
-				return 1244026355;
+				return joaat("RANSACK_ATTACHED_P_FILECABINETDOCTOR01X");
 			case 2082:
-				return -794209644;
+				return joaat("RANSACK_ATTACHED_P_GUNCABINET02X");
 			case 2083:
-				return 1139675266;
+				return joaat("RANSACK_ATTACHED_P_HUTCH01X");
 			case 2084:
-				return 1176345841;
+				return joaat("RANSACK_ATTACHED_P_HUTCH02X");
 			case 2085:
-				return -1337298951;
+				return joaat("RANSACK_ATTACHED_P_HUTCH03X");
 			case 2086:
-				return 1961694545;
+				return joaat("RANSACK_ATTACHED_P_HUTCHWHITE01X_LEFT");
 			case 2087:
-				return -1946218483;
+				return joaat("RANSACK_ATTACHED_P_HUTCHWHITE01X_RIGHT");
 			case 2088:
-				return 27562885;
+				return joaat("RANSACK_ATTACHED_P_ICEBOX02X");
 			case 2089:
-				return 1925882132;
+				return joaat("RANSACK_ATTACHED_P_INLAIDSECRETARY01X");
 			case 2090:
 				return joaat("RANSACK_ATTACHED_P_MEDBED01X");
 			case 2091:
 				return joaat("RANSACK_ATTACHED_P_MEDICINECHEST01X");
 			case 2092:
-				return 392143296;
+				return joaat("RANSACK_ATTACHED_P_NBMCHINACABINET01X");
 			case 2093:
-				return -1487588619;
+				return joaat("RANSACK_ATTACHED_P_NBMCHINACABINET02X");
 			case 2094:
-				return -1760513670;
+				return joaat("RANSACK_ATTACHED_P_NBMNIGHTSTAND03X");
 			case 2095:
-				return -1396710873;
+				return joaat("RANSACK_ATTACHED_P_NIGHTSTAND03X");
 			case 2096:
-				return 991715917;
+				return joaat("RANSACK_ATTACHED_P_NIGHTSTANDSIX01");
 			case 2097:
-				return -2044428668;
+				return joaat("RANSACK_ATTACHED_P_NIGHTSTANDWINTER03X");
 			case 2098:
-				return -474853821;
+				return joaat("RANSACK_ATTACHED_P_SEWINGMACHINE02X");
 			case 2099:
-				return -1381480510;
+				return joaat("RANSACK_ATTACHED_P_SHELF06X");
 			case 2100:
-				return 2024101922;
+				return joaat("RANSACK_ATTACHED_P_SIDEBOARD01X");
 			case 2101:
-				return 1210472036;
+				return joaat("RANSACK_ATTACHED_P_SIDETABLE01X");
 			case 2102:
-				return -242276345;
+				return joaat("RANSACK_ATTACHED_P_SIDETABLE02X");
 			case 2103:
-				return 1889051928;
+				return joaat("RANSACK_ATTACHED_P_SIDETABLE03X");
 			case 2104:
-				return 403072797;
+				return joaat("RANSACK_ATTACHED_P_SIDETABLE07X");
 			case 2105:
-				return 215660666;
+				return joaat("RANSACK_ATTACHED_P_SIDETABLE09X");
 			case 2106:
-				return 1922930297;
+				return joaat("RANSACK_ATTACHED_P_SIDETABLE11X");
 			case 2107:
 				return joaat("RANSACK_ATTACHED_P_SINK02X");
 			case 2108:
 				return joaat("RANSACK_ATTACHED_P_STERILECABINET01X");
 			case 2109:
-				return 1027184951;
+				return joaat("RANSACK_ATTACHED_P_TABLE45X");
 			case 2110:
-				return -1910094762;
+				return joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_B_LEFT");
 			case 2111:
-				return -516851305;
+				return joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_B_RIGHT");
 			case 2112:
-				return 417960353;
+				return joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_F_LEFT");
 			case 2113:
-				return 862260731;
+				return joaat("RANSACK_ATTACHED_P_TABLEANNSALOON01X_F_RIGHT");
 			case 2114:
-				return -791359907;
+				return joaat("RANSACK_ATTACHED_P_TABLEBEDSIDE02X");
 			case 2115:
-				return -449416767;
+				return joaat("RANSACK_ATTACHED_P_TABLEBRA01X_LEFT");
 			case 2116:
-				return -432820749;
+				return joaat("RANSACK_ATTACHED_P_TABLEBRA01X_RIGHT");
 			case 2117:
-				return 1500194388;
+				return joaat("RANSACK_ATTACHED_P_TABLECOFFEE05X_B");
 			case 2118:
-				return -1904963482;
+				return joaat("RANSACK_ATTACHED_P_TABLECOFFEE05X_F");
 			case 2119:
-				return 2102968574;
+				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE01X");
 			case 2120:
-				return 1709018868;
+				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE02X");
 			case 2121:
-				return -552438855;
+				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE03BX");
 			case 2122:
 				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE03X");
 			case 2123:
-				return -1771411749;
+				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE05BX_C");
 			case 2124:
-				return 362472762;
+				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE05BX_L");
 			case 2125:
-				return -535856712;
+				return joaat("RANSACK_ATTACHED_P_TABLECONSOLE05BX_R");
 			case 2126:
-				return 758820539;
+				return joaat("RANSACK_ATTACHED_P_TABLEPREP02X");
 			case 2127:
-				return 2123613369;
+				return joaat("RANSACK_ATTACHED_P_TABLEWORK02X");
 			case 2128:
-				return -1876924558;
+				return joaat("RANSACK_ATTACHED_P_TEACART01X");
 			case 2129:
-				return 979549082;
+				return joaat("RANSACK_ATTACHED_P_TROLLEYMAILDESK_01X");
 			case 2130:
-				return -992371678;
+				return joaat("RANSACK_ATTACHED_P_VANITY01X_LEFT");
 			case 2131:
-				return -155511563;
+				return joaat("RANSACK_ATTACHED_P_VANITY01X_RIGHT");
 			case 2132:
-				return 2048612078;
+				return joaat("RANSACK_ATTACHED_P_VANITY02X");
 			case 2133:
 				return joaat("RANSACK_ATTACHED_P_WALNUTHUTCH01X");
 			case 2134:
-				return 1210310972;
+				return joaat("RANSACK_ATTACHED_P_WASHBASINREGAL01X");
 			case 2135:
-				return 140079138;
+				return joaat("RANSACK_ATTACHED_P_WASHSTAND02X");
 			case 2136:
-				return 756039399;
+				return joaat("RANSACK_ATTACHED_P_WASHSTAND03X");
 			case 2137:
-				return -1052423783;
+				return joaat("RANSACK_ATTACHED_P_WNT4_DRWDBL01X");
 			case 2138:
-				return -1666348035;
+				return joaat("RANSACK_ATTACHED_P_WORKBENCHDESK01X_LEFT");
 			case 2139:
 				return joaat("RANSACK_ATTACHED_P_WORKBENCHDESK01X_RIGHT");
 			case 2140:
-				return 2119820521;
+				return joaat("RANSACK_ATTACHED_P_WRITINGDESK01X");
 			case 2141:
-				return 499456226;
+				return joaat("RANSACK_ATTACHED_P_SINK02X_MACLEANS");
 			case 2142:
-				return 1551127842;
+				return joaat("MP_WEAPON_LOCKER_LOCATION");
 			case 2143:
-				return -1235467171;
+				return joaat("PROP_PLAYER_WASH_FACE_BARREL");
 			case 2144:
-				return 1403978586;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_CULTURE");
 			case 2145:
-				return -1103385934;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_HOBO");
 			case 2146:
-				return 1466135075;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_MILITARY");
 			case 2147:
-				return -283089637;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_SAVAGE");
 			case 2148:
-				return 164482096;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER_SURVIVOR");
 			case 2149:
-				return -585131916;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_CULTURE");
 			case 2150:
-				return -703489066;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_HOBO");
 			case 2151:
-				return 1747531784;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_MILITARY");
 			case 2152:
-				return -1975560873;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_SAVAGE");
 			case 2153:
-				return 109319961;
+				return joaat("WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_JD_SURVIVOR");
 			case 2154:
-				return 963459231;
+				return joaat("WORLD_HUMAN_SMOKE_CARRYING");
 			case 2155:
-				return 857607577;
+				return joaat("WORLD_HUMAN_STAND_WAITING_CARRYING");
 			case 2156:
-				return 384125679;
+				return joaat("WORLD_HUMAN_STARE_STOIC_CARRYING");
 			case 2157:
-				return 2120173401;
+				return joaat("WORLD_HUMAN_WAITING_IMPATIENT_CARRYING");
 			case 2158:
-				return -2007463055;
+				return joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER");
 			case 2159:
-				return 1274239098;
+				return joaat("WORLD_PLAYER_MOONSHINE_GRAB_DRINK_FROM_BAR");
 			case 2160:
-				return -1370915905;
+				return joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_BAR");
 			case 2161:
-				return 276768972;
+				return joaat("WORLD_PLAYER_MOONSHINE_SELF_SERVE_CASK");
 			case 2162:
-				return -2114469108;
+				return joaat("WORLD_PLAYER_MOONSHINE_SERVING");
 			case 2163:
-				return 1049986774;
+				return joaat("WORLD_PLAYER_MP_STEW_POT_DONATION");
 			case 2164:
-				return 947363991;
+				return joaat("MP_ARROWHEAD_AGATE");
 			case 2165:
-				return 1222832172;
+				return joaat("MP_ARROWHEAD_BONE");
 			case 2166:
-				return -557148012;
+				return joaat("MP_ARROWHEAD_CHIPPED");
 			case 2167:
-				return 492107212;
+				return joaat("MP_ARROWHEAD_CRUDE");
 			case 2168:
-				return 299462770;
+				return joaat("MP_ARROWHEAD_FELDSPAR");
 			case 2169:
-				return 879366011;
+				return joaat("MP_ARROWHEAD_FLINT");
 			case 2170:
-				return -647907276;
+				return joaat("MP_ARROWHEAD_OBSIDIAN");
 			case 2171:
-				return 2038449429;
+				return joaat("MP_ARROWHEAD_QUARTZ");
 			case 2172:
-				return -805024148;
+				return joaat("MP_ARROWHEAD_RAW");
 			case 2173:
-				return -127362439;
+				return joaat("MP_ARROWHEAD_ROUGH");
 			case 2174:
-				return 562970505;
+				return joaat("MP_ARROWHEAD_SLATE");
 			case 2175:
-				return 580883590;
+				return joaat("MP_ARROWHEAD_SPLINTERED");
 			case 2176:
-				return -1837294946;
+				return joaat("MP_BOTTLE_CARIB_RUM");
 			case 2177:
-				return -1178068078;
+				return joaat("MP_BOTTLE_COGNAC");
 			case 2178:
-				return -380472724;
+				return joaat("MP_BOTTLE_CYPRUS_BRANDY");
 			case 2179:
-				return -859000955;
+				return joaat("MP_BOTTLE_IRISH_WHISKEY");
 			case 2180:
-				return 1784114904;
+				return joaat("MP_BOTTLE_LONDRY_GIN");
 			case 2181:
-				return -1659448997;
+				return joaat("MP_BOTTLE_OLDTOM_GIN");
 			case 2182:
-				return 216161874;
+				return joaat("MP_BOTTLE_PLYMOUTH_GIN");
 			case 2183:
-				return 1800266897;
+				return joaat("MP_BOTTLE_SCOTCH_WHISKEY");
 			case 2184:
-				return -967483978;
+				return joaat("MP_BOTTLE_TENN_WHISKEY");
 			case 2185:
-				return 1458340379;
+				return joaat("MP_COIN_1700_NY_TKN");
 			case 2186:
-				return -916202951;
+				return joaat("MP_COIN_1787_CENT_TKN");
 			case 2187:
-				return 714483650;
+				return joaat("MP_COIN_1789_PNY");
 			case 2188:
-				return 1516213694;
+				return joaat("MP_COIN_1792_LIB_QTR");
 			case 2189:
-				return -1497157230;
+				return joaat("MP_COIN_1792_NICKEL");
 			case 2190:
-				return -298569441;
+				return joaat("MP_COIN_1792_QTR");
 			case 2191:
-				return -1390169767;
+				return joaat("MP_COIN_1794_SLV_DLR");
 			case 2192:
-				return -1094880609;
+				return joaat("MP_COIN_1795_HLF_EAG");
 			case 2193:
-				return 1565054188;
+				return joaat("MP_COIN_1796_HLF_PNY");
 			case 2194:
-				return 958776644;
+				return joaat("MP_COIN_1797_GLD_EAG");
 			case 2195:
-				return 988268170;
+				return joaat("MP_COIN_1798_SLV_DLR");
 			case 2196:
-				return -1743380384;
+				return joaat("MP_COIN_1800_FIVE_DLR");
 			case 2197:
-				return -717379283;
+				return joaat("MP_COIN_1800_GLD_DLR");
 			case 2198:
-				return 1149776256;
+				return joaat("MP_COIN_1800_GLD_QTR");
 			case 2199:
-				return -474301784;
+				return joaat("MP_COIN_1800_HLF_DIME");
 			case 2200:
-				return 877778044;
+				return joaat("MP_HRLM_BRUSH_BOAR");
 			case 2201:
-				return 1479448174;
+				return joaat("MP_HRLM_BRUSH_EBONY");
 			case 2202:
-				return -735391720;
+				return joaat("MP_HRLM_BRUSH_GOATHAIR");
 			case 2203:
-				return 1613328743;
+				return joaat("MP_HRLM_BRUSH_HORSEHAIR");
 			case 2204:
-				return -1202418356;
+				return joaat("MP_HRLM_BRUSH_ROSEWOOD");
 			case 2205:
-				return -907007035;
+				return joaat("MP_HRLM_BRUSH_ROSEWOOD_NG");
 			case 2206:
-				return -456902200;
+				return joaat("MP_HRLM_COMB_BOXWOOD");
 			case 2207:
-				return 149149942;
+				return joaat("MP_HRLM_COMB_CHERRYWOOD");
 			case 2208:
-				return 273203036;
+				return joaat("MP_HRLM_COMB_IVORY");
 			case 2209:
-				return -330645385;
+				return joaat("MP_HRLM_COMB_TORTOISESHELL");
 			case 2210:
-				return -86234166;
+				return joaat("MP_HRLM_HAIRPIN_EBONY");
 			case 2211:
-				return -1083595936;
+				return joaat("MP_HRLM_HAIRPIN_IVORY");
 			case 2212:
-				return -487173195;
+				return joaat("MP_HRLM_HAIRPIN_JADE");
 			case 2213:
-				return 1357591727;
+				return joaat("MP_HRLM_HAIRPIN_METAL");
 			case 2214:
-				return 1849250464;
+				return joaat("MP_HRLM_HAIRPIN_WOODEN");
 			case 2215:
-				return 555565008;
+				return joaat("MP_JEWELRY_AMETHYST_NECKLACE");
 			case 2216:
-				return 1047639041;
+				return joaat("MP_JEWELRY_BLCK_PEARL_NECKLACE");
 			case 2217:
-				return 6459801;
+				return joaat("MP_JEWELRY_CARVED_BRACELET");
 			case 2218:
-				return -1193554482;
+				return joaat("MP_JEWELRY_CORAL_DNGL_EARRING");
 			case 2219:
-				return -375111022;
+				return joaat("MP_JEWELRY_CORAL_RING");
 			case 2220:
-				return -1685795279;
+				return joaat("MP_JEWELRY_DMND_BNGLE_BRACELET");
 			case 2221:
-				return 1557499261;
+				return joaat("MP_JEWELRY_DMND_PENDT_EARRING");
 			case 2222:
-				return 1638241533;
+				return joaat("MP_JEWELRY_DROP_EARRING");
 			case 2223:
-				return 1381892893;
+				return joaat("MP_JEWELRY_ELK_TOOTH_EARRING");
 			case 2224:
-				return -1891494196;
+				return joaat("MP_JEWELRY_EMERALD_EARRING");
 			case 2225:
-				return 614601031;
+				return joaat("MP_JEWELRY_EMERALD_RING");
 			case 2226:
-				return 228390173;
+				return joaat("MP_JEWELRY_FRENCH_DMND_RING");
 			case 2227:
-				return 1059533441;
+				return joaat("MP_JEWELRY_GLD_BNGLE_BRACELET");
 			case 2228:
-				return -1738556997;
+				return joaat("MP_JEWELRY_GLD_CROSS_NECKLACE");
 			case 2229:
-				return -1602263347;
+				return joaat("MP_JEWELRY_GLD_PEARL_NECKLACE");
 			case 2230:
-				return 1391900352;
+				return joaat("MP_JEWELRY_GLD_PENDT_NECKLACE");
 			case 2231:
-				return -1207380412;
+				return joaat("MP_JEWELRY_GRNET_BRACELET");
 			case 2232:
-				return 2054053294;
+				return joaat("MP_JEWELRY_GRNET_POST_EARRING");
 			case 2233:
-				return 537842604;
+				return joaat("MP_JEWELRY_MOON_RING");
 			case 2234:
-				return -1965826694;
+				return joaat("MP_JEWELRY_MTHR_PEARL_NECKLACE");
 			case 2235:
-				return 1984607038;
+				return joaat("MP_JEWELRY_ONYX_RING");
 			case 2236:
-				return 390341661;
+				return joaat("MP_JEWELRY_PEARL_BRACELET");
 			case 2237:
-				return -1471046819;
+				return joaat("MP_JEWELRY_PEARL_EARRING");
 			case 2238:
-				return 1294299419;
+				return joaat("MP_JEWELRY_PEARL_RING");
 			case 2239:
-				return -486123777;
+				return joaat("MP_JEWELRY_PERS_TURQ_RING");
 			case 2240:
-				return -1421965287;
+				return joaat("MP_JEWELRY_PORCELAIN_NECKLACE");
 			case 2241:
-				return -874559555;
+				return joaat("MP_JEWELRY_QN_DMND_EARRING");
 			case 2242:
-				return 585397373;
+				return joaat("MP_JEWELRY_RUDY_DNGL_EARRING");
 			case 2243:
-				return -1882486255;
+				return joaat("MP_JEWELRY_SLVR_PEARL_NECKLACE");
 			case 2244:
-				return 746416456;
+				return joaat("MP_JEWELRY_SPHR_BNGLE_BRACELET");
 			case 2245:
-				return 883965838;
+				return joaat("MP_JEWELRY_SPHR_BRACELET");
 			case 2246:
-				return -983691714;
+				return joaat("MP_JEWELRY_TOPAZ_NECKLACE");
 			case 2247:
-				return 1350522279;
+				return joaat("MP_JEWELRY_TOPAZ_RING");
 			case 2248:
-				return 1566230861;
+				return joaat("MP_JEWELRY_TURQ_STUD_EARRING");
 			case 2249:
-				return 1020485513;
+				return joaat("MP_JEWELRY_TURQUOISE_BRACELET");
 			case 2250:
-				return 1123926974;
+				return joaat("MP_JEWELRY_TURQUOISE_RING");
 			case 2251:
-				return -2094416950;
+				return joaat("MP_JEWELRY_WHT_DMND_EARRING");
 			case 2252:
-				return 751483325;
+				return joaat("MP_JEWELRY_WHTGLD_DMND_RING");
 			case 2253:
-				return 2042302597;
+				return joaat("MP_JEWELRY_YLWGLD_DMND_RING");
 			case 2254:
-				return 877039894;
+				return joaat("MP_TCARD_ACE_CUPS");
 			case 2255:
-				return -109253143;
+				return joaat("MP_TCARD_ACE_PENTACLES");
 			case 2256:
-				return 560456382;
+				return joaat("MP_TCARD_ACE_SWORDS");
 			case 2257:
-				return 1013172540;
+				return joaat("MP_TCARD_ACE_WANDS");
 			case 2258:
-				return 1510555152;
+				return joaat("MP_TCARD_EIGHT_CUPS");
 			case 2259:
-				return 865474133;
+				return joaat("MP_TCARD_EIGHT_PENTACLES");
 			case 2260:
-				return -806233255;
+				return joaat("MP_TCARD_EIGHT_SWORDS");
 			case 2261:
-				return -189456511;
+				return joaat("MP_TCARD_EIGHT_WANDS");
 			case 2262:
-				return 657843514;
+				return joaat("MP_TCARD_FIVE_CUPS");
 			case 2263:
-				return 335910776;
+				return joaat("MP_TCARD_FIVE_PENTACLES");
 			case 2264:
-				return 860937518;
+				return joaat("MP_TCARD_FIVE_SWORDS");
 			case 2265:
-				return 1240345684;
+				return joaat("MP_TCARD_FIVE_WANDS");
 			case 2266:
-				return 1858171884;
+				return joaat("MP_TCARD_FOUR_CUPS");
 			case 2267:
-				return -459889340;
+				return joaat("MP_TCARD_FOUR_PENTACLES");
 			case 2268:
-				return 1771423830;
+				return joaat("MP_TCARD_FOUR_SWORDS");
 			case 2269:
-				return -1197860878;
+				return joaat("MP_TCARD_FOUR_WANDS");
 			case 2270:
-				return 326492680;
+				return joaat("MP_TCARD_KING_CUPS");
 			case 2271:
-				return -521186997;
+				return joaat("MP_TCARD_KING_PENTACLES");
 			case 2272:
-				return 249211141;
+				return joaat("MP_TCARD_KING_SWORDS");
 			case 2273:
-				return 438889198;
+				return joaat("MP_TCARD_KING_WANDS");
 			case 2274:
-				return 177102263;
+				return joaat("MP_TCARD_KNIGHT_CUPS");
 			case 2275:
-				return 349975866;
+				return joaat("MP_TCARD_KNIGHT_PENTACLES");
 			case 2276:
-				return -728789150;
+				return joaat("MP_TCARD_KNIGHT_SWORDS");
 			case 2277:
-				return -756861846;
+				return joaat("MP_TCARD_KNIGHT_WANDS");
 			case 2278:
-				return 1179614263;
+				return joaat("MP_TCARD_NINE_CUPS");
 			case 2279:
-				return -801732229;
+				return joaat("MP_TCARD_NINE_PENTACLES");
 			case 2280:
-				return -673018991;
+				return joaat("MP_TCARD_NINE_SWORDS");
 			case 2281:
-				return -37548215;
+				return joaat("MP_TCARD_NINE_WANDS");
 			case 2282:
-				return 689854558;
+				return joaat("MP_TCARD_PAGE_CUPS");
 			case 2283:
-				return 570401976;
+				return joaat("MP_TCARD_PAGE_PENTACLES");
 			case 2284:
-				return -143273671;
+				return joaat("MP_TCARD_PAGE_SWORDS");
 			case 2285:
-				return 1381447131;
+				return joaat("MP_TCARD_PAGE_WANDS");
 			case 2286:
-				return 904665444;
+				return joaat("MP_TCARD_QUEEN_CUPS");
 			case 2287:
-				return -232939852;
+				return joaat("MP_TCARD_QUEEN_PENTACLE");
 			case 2288:
-				return -100116410;
+				return joaat("MP_TCARD_QUEEN_SWORDS");
 			case 2289:
-				return -1999646174;
+				return joaat("MP_TCARD_QUEEN_WANDS");
 			case 2290:
-				return -1738742270;
+				return joaat("MP_TCARD_SEVEN_CUPS");
 			case 2291:
-				return -1136458681;
+				return joaat("MP_TCARD_SEVEN_PENTACLES");
 			case 2292:
-				return 1591856082;
+				return joaat("MP_TCARD_SEVEN_SWORDS");
 			case 2293:
-				return 1522648243;
+				return joaat("MP_TCARD_SEVEN_WANDS");
 			case 2294:
-				return 2000130193;
+				return joaat("MP_TCARD_SIX_CUPS");
 			case 2295:
-				return -714624881;
+				return joaat("MP_TCARD_SIX_PENTACLES");
 			case 2296:
-				return 1640400125;
+				return joaat("MP_TCARD_SIX_SWORDS");
 			case 2297:
-				return 200362341;
+				return joaat("MP_TCARD_SIX_WANDS");
 			case 2298:
-				return -1982929650;
+				return joaat("MP_TCARD_TEN_CUPS");
 			case 2299:
-				return -1747063748;
+				return joaat("MP_TCARD_TEN_PENTACLES");
 			case 2300:
-				return -1459609903;
+				return joaat("MP_TCARD_TEN_SWORDS");
 			case 2301:
-				return 188745754;
+				return joaat("MP_TCARD_TEN_WANDS");
 			case 2302:
-				return -2135036532;
+				return joaat("MP_TCARD_THREE_CUPS");
 			case 2303:
-				return -978489601;
+				return joaat("MP_TCARD_THREE_PENTACLES");
 			case 2304:
-				return 1806433140;
+				return joaat("MP_TCARD_THREE_SWORDS");
 			case 2305:
-				return -2086114353;
+				return joaat("MP_TCARD_THREE_WANDS");
 			case 2306:
-				return -123759090;
+				return joaat("MP_TCARD_TWO_CUPS");
 			case 2307:
-				return -1314827402;
+				return joaat("MP_TCARD_TWO_PENTACLES");
 			case 2308:
-				return 371484799;
+				return joaat("MP_TCARD_TWO_SWORDS");
 			case 2309:
-				return -1707983236;
+				return joaat("MP_TCARD_TWO_WANDS");
 			case 2310:
-				return -1179456295;
+				return joaat("WB_COLLECTOR_CHEST_JEWELRY");
 			case 2311:
-				return 87256266;
+				return joaat("WB_DIG_BURIED_ARROWHEAD");
 			case 2312:
-				return -1702773118;
+				return joaat("WB_DIG_BURIED_COIN");
 			case 2313:
-				return -686858613;
+				return joaat("WB_DIG_BURIED_HEIRLOOM");
 			case 2314:
-				return -1907387938;
+				return joaat("WB_DIG_BURIED_JEWELRY");
 			case 2315:
-				return 1260056893;
+				return joaat("WB_DIG_BURIED_RANDOM");
 			case 2316:
-				return 1619000582;
+				return joaat("WB_DIG_BURIED_RANDOM_MUD");
 			case 2317:
-				return 869316798;
+				return joaat("WB_DIG_BURIED_RANDOM_SNOW");
 			case 2318:
-				return -2003628894;
+				return joaat("WB_DIG_BURIED_RANDOM_SNOW_DIRT");
 			case 2319:
-				return -1420736735;
+				return joaat("WB_DIG_BURIED_RANDOM_WATER_FRESH");
 			case 2320:
-				return -2065167667;
+				return joaat("WB_EGG_NEST_CONDOR");
 			case 2321:
-				return 610589819;
+				return joaat("WB_EGG_NEST_DUCK");
 			case 2322:
-				return 1416906705;
+				return joaat("WB_EGG_NEST_EAGLE");
 			case 2323:
-				return 227465803;
+				return joaat("WB_EGG_NEST_EGRET");
 			case 2324:
-				return 1218808474;
+				return joaat("WB_EGG_NEST_GOOSE");
 			case 2325:
-				return 631990874;
+				return joaat("WB_EGG_NEST_HAWK");
 			case 2326:
-				return -422823195;
+				return joaat("WB_EGG_NEST_HERON");
 			case 2327:
-				return 720427300;
+				return joaat("WB_EGG_NEST_LOON");
 			case 2328:
-				return -871818204;
+				return joaat("WB_EGG_NEST_SPOONBILL");
 			case 2329:
-				return 428946548;
+				return joaat("WB_EGG_NEST_VULTURE");
 			case 2330:
-				return -2103804031;
+				return joaat("WB_FLOWER_AGARITA");
 			case 2331:
-				return 2017118308;
+				return joaat("WB_FLOWER_AGARITA_SINGLE");
 			case 2332:
-				return 1318567553;
+				return joaat("WB_FLOWER_BITTERWEED");
 			case 2333:
-				return 18267955;
+				return joaat("WB_FLOWER_BITTERWEED_SINGLE");
 			case 2334:
-				return 1222150012;
+				return joaat("WB_FLOWER_BLOOD_FLOWER");
 			case 2335:
-				return -1884795646;
+				return joaat("WB_FLOWER_BLOOD_FLOWER_SINGLE");
 			case 2336:
-				return -360083955;
+				return joaat("WB_FLOWER_CARDINAL_FLOWER");
 			case 2337:
-				return -927747820;
+				return joaat("WB_FLOWER_CARDINAL_FLOWER_SINGLE");
 			case 2338:
-				return 2140180188;
+				return joaat("WB_FLOWER_CHOCOLATE_DAISY");
 			case 2339:
-				return 117748712;
+				return joaat("WB_FLOWER_CHOCOLATE_DAISY_SINGLE");
 			case 2340:
-				return 1737790136;
+				return joaat("WB_FLOWER_CREEK_PLUM");
 			case 2341:
-				return 1506833252;
+				return joaat("WB_FLOWER_CREEK_PLUM_SINGLE");
 			case 2342:
-				return 1578503684;
+				return joaat("WB_FLOWER_TEXAS_BLUE_BONNET");
 			case 2343:
-				return -2012396119;
+				return joaat("WB_FLOWER_TEXAS_BLUE_BONNET_SINGLE");
 			case 2344:
-				return -1696453945;
+				return joaat("WB_FLOWER_WILD_RHUBARB");
 			case 2345:
-				return -1522071438;
+				return joaat("WB_FLOWER_WILD_RHUBARB_SINGLE");
 			case 2346:
-				return 781570345;
+				return joaat("WB_FLOWER_WISTERIA");
 			case 2347:
-				return -344807332;
+				return joaat("WB_FLOWER_WISTERIA_SINGLE");
 			case 2348:
-				return -618551300;
+				return joaat("WB_PICKUP_COLLECTIBLE_BOTTLE");
 			case 2349:
-				return 152960040;
+				return joaat("WB_PICKUP_COLLECTIBLE_HEIRLOOM");
 			case 2350:
-				return 650111674;
+				return joaat("WB_PICKUP_COLLECTIBLE_JEWELRY");
 			case 2351:
-				return -333273965;
+				return joaat("WB_PICKUP_COLLECTIBLE_TAROT_CARD");
 			case 2352:
-				return 29256654;
+				return joaat("MP_COOP_LOBBY_STANDING_A");
 			case 2353:
-				return 1594566254;
+				return joaat("MP_COOP_LOBBY_STANDING_B");
 			case 2354:
-				return 1832043197;
+				return joaat("MP_COOP_LOBBY_STANDING_C");
 			case 2355:
-				return -1165468313;
+				return joaat("MP_COOP_LOBBY_STANDING_D");
 			case 2356:
-				return 8039593;
+				return joaat("MP_LOBBY_CROUCHING_A");
 			case 2357:
-				return 933272312;
+				return joaat("MP_LOBBY_CROUCHING_B");
 			case 2358:
-				return 324116001;
+				return joaat("MP_LOBBY_PHNS_STANDING_A");
 			case 2359:
-				return -1850795302;
+				return joaat("MP_LOBBY_PHNS_STANDING_B");
 			case 2360:
-				return 1317919899;
+				return joaat("MP_LOBBY_SCENARIO_00");
 			case 2361:
-				return 871999347;
+				return joaat("MP_LOBBY_SCENARIO_01");
 			case 2362:
-				return 1792972092;
+				return joaat("MP_LOBBY_SCENARIO_02");
 			case 2363:
-				return 1493561739;
+				return joaat("MP_LOBBY_SCENARIO_03");
 			case 2364:
-				return -80955958;
+				return joaat("MP_LOBBY_SCENARIO_04");
 			case 2365:
-				return -386395807;
+				return joaat("MP_LOBBY_SCENARIO_05");
 			case 2366:
-				return 660966987;
+				return joaat("MP_LOBBY_SCENARIO_06");
 			case 2367:
-				return 360049244;
+				return joaat("MP_LOBBY_SCENARIO_07");
 			case 2368:
-				return -1272633412;
+				return joaat("MP_LOBBY_SCENARIO_08");
 			case 2369:
-				return -1573485601;
+				return joaat("MP_LOBBY_SCENARIO_09");
 			case 2370:
-				return 99506713;
+				return joaat("MP_LOBBY_SCENARIO_10");
 			case 2371:
-				return 333215221;
+				return joaat("MP_LOBBY_SCENARIO_11");
 			case 2372:
-				return 562630994;
+				return joaat("MP_LOBBY_SCENARIO_12");
 			case 2373:
-				return 794701052;
+				return joaat("MP_LOBBY_SCENARIO_13");
 			case 2374:
-				return -1422285647;
+				return joaat("MP_LOBBY_SCENARIO_14");
 			case 2375:
-				return -1178385980;
+				return joaat("MP_LOBBY_SCENARIO_15");
 			case 2376:
-				return 406957995;
+				return joaat("MP_LOBBY_SEATED_A");
 			case 2377:
-				return -587941614;
+				return joaat("MP_LOBBY_SEATED_B");
 			case 2378:
-				return -349252218;
+				return joaat("MP_LOBBY_SEATED_C");
 			case 2379:
-				return 586138875;
+				return joaat("MP_LOBBY_SEATED_D");
 			case 2380:
-				return 351906063;
+				return joaat("MP_LOBBY_SEATED_E");
 			case 2381:
-				return 139595712;
+				return joaat("MP_LOBBY_SEATED_F");
 			case 2382:
-				return -1619201716;
+				return joaat("MP_LOBBY_STANDING_A");
 			case 2383:
-				return 1909200363;
+				return joaat("MP_LOBBY_STANDING_B");
 			case 2384:
-				return -990331833;
+				return joaat("MP_LOBBY_STANDING_C");
 			case 2385:
-				return -1889185507;
+				return joaat("MP_LOBBY_STANDING_D");
 			case 2386:
-				return -895989882;
+				return joaat("MP_LOBBY_STANDING_E");
 			case 2387:
-				return -1290790794;
+				return joaat("MP_LOBBY_STANDING_F");
 			case 2388:
-				return -931052716;
+				return joaat("MP_LOBBY_STANDING_G");
 			case 2389:
-				return -631314673;
+				return joaat("MP_LOBBY_STANDING_H");
 			case 2390:
-				return 1514562087;
+				return joaat("GFH_PROP_HUMAN_SEAT_CHAIR_KNIFE_BADASS");
 			case 2391:
-				return 495993521;
+				return joaat("GFH_PROP_HUMAN_SIT_DESK_WRITING");
 			case 2392:
-				return 1116478389;
+				return joaat("MAGGIE_SEAT_CHAIR_DESK_WRITING");
 			case 2393:
-				return 558222199;
+				return joaat("PROP_HUMAN_SEAT_BENCH_TIRED_SHAKY");
 			case 2394:
-				return -2092161602;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_LANGTON");
 			case 2395:
-				return -1180722116;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_READ_BOOK_TRELAWNY");
 			case 2396:
-				return -1061440619;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_READ_BOOK_WATSON");
 			case 2397:
-				return 1193417037;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_TABLE_CLEAN_RIFLE_SMOKE_JOE");
 			case 2398:
-				return 1455709223;
+				return joaat("WORLD_HUMAN_SHOPKEEPER_MP");
 			case 2399:
-				return -207709022;
+				return joaat("WORLD_HUMAN_STIR_SOUP");
 			case 2400:
 				return joaat("PROP_HUMAN_CATFISH_COWER_BED");
 			case 2401:
@@ -23063,11 +23063,11 @@ int func_470(int iParam0, int iParam1)
 			case 2423:
 				return joaat("WORLD_PLAYER_STR_GEN_BSMT_PEEK");
 			case 2424:
-				return 1288293061;
+				return joaat("PROP_PLAYER_TREASURE_HUNTER_PLAQUE_STATUE_LOOT");
 			case 2425:
-				return -491792868;
+				return joaat("PROP_PLAYER_TREASURE_HUNTER_ROCK_STASH_NEW_THCHAINS");
 			case 2426:
-				return -203096485;
+				return joaat("PROP_PLAYER_TREASURE_HUNTER_ROCK_STASH_NEW_THCHAINS_GRAVE");
 			case 2427:
 				return joaat("PROP_PLAYER_RE_DRUNK_CAMP_SIT");
 			case 2428:
@@ -23075,175 +23075,175 @@ int func_470(int iParam0, int iParam1)
 			case 2429:
 				return joaat("PROP_PLAYER_RE_MOONSHINE_ADD_PLANT");
 			case 2430:
-				return 579020276;
+				return joaat("PROP_PLAYER_RE_MURDER_CAMP_ROCK_NOTE");
 			case 2431:
-				return 136354949;
+				return joaat("PROP_PLAYER_RE_MURDER_CAMP_STAKE_NOTE");
 			case 2432:
-				return 1220378078;
+				return joaat("PROP_PLAYER_RE_MURDER_CAMP_TREE_NOTE");
 			case 2433:
-				return -751486804;
+				return joaat("PROP_PLAYER_REHR_SACK_STASH");
 			case 2434:
-				return 745599470;
+				return joaat("RE_MURDER_CAMPFIRE_RANGED_SCRIPT");
 			case 2435:
-				return 117002972;
+				return joaat("RE_MURDER_CAMPFIRE_RANGED_SCRIPT_SHORT");
 			case 2436:
-				return -387600931;
+				return joaat("SCRIP_REMC_RET_MALE_A_POSE2");
 			case 2437:
-				return 834846614;
+				return joaat("SCRIP_REMC_RET_MALE_A_POSE3");
 			case 2438:
-				return -1550170582;
+				return joaat("SCRIP_REMC_RET_MALE_B_POSE2");
 			case 2439:
-				return 601867955;
+				return joaat("SCRIP_REMC_RET_MALE_B_POSE3");
 			case 2440:
-				return 295645990;
+				return joaat("SCRIPT_RE_DUEL_BOASTER_BOASTER");
 			case 2441:
-				return -844362279;
+				return joaat("SCRIPT_RE_DUEL_BOASTER_FRIEND");
 			case 2442:
-				return 2103690951;
+				return joaat("SCRIPT_REGR_MALE_A_POSE1");
 			case 2443:
-				return -1892291989;
+				return joaat("SCRIPT_REGR_MALE_A_POSE2");
 			case 2444:
-				return 2054734837;
+				return joaat("SCRIPT_REHOB_HERBALIST");
 			case 2445:
 				return joaat("SCRIPT_RELS_LOOT_SAFE_MALE_B");
 			case 2446:
-				return -1678824488;
+				return joaat("SCRIPT_RETB_PREACHER");
 			case 2447:
 				return joaat("WORLD_HUMAN_2H_TOOL");
 			case 2448:
-				return -814861523;
+				return joaat("WORLD_HUMAN_RE_LOST_DRUNK_SLEEP");
 			case 2449:
-				return 685434522;
+				return joaat("WORLD_PLAYER_RE_ANIMAL_MAULING");
 			case 2450:
-				return -32173176;
+				return joaat("WORLD_PLAYER_RE_DARK_ALLEY_DESP_GIVE");
 			case 2451:
-				return 1679946503;
+				return joaat("WORLD_PLAYER_RE_DARK_ALLEY_DRUNK_HELP");
 			case 2452:
-				return -207743044;
+				return joaat("WORLD_PLAYER_RE_DARK_ALLEY_DRUNK_STEAL");
 			case 2453:
-				return 708947330;
+				return joaat("WORLD_PLAYER_RE_LOST_DOG_FEED");
 			case 2454:
-				return 65758950;
+				return joaat("WORLD_PLAYER_PEEK_WINDOW_NO_SCRIPT");
 			case 2455:
-				return -407546843;
+				return joaat("WORLD_PLAYER_RSC_GIVE_MEDICINE");
 			case 2456:
-				return 2043209211;
+				return joaat("EA_WORLD_HUMAN_PICKAXE_NEW");
 			case 2457:
-				return -455464142;
+				return joaat("EA_WORLD_HUMAN_SLEDGEHAMMER_NEW");
 			case 2458:
-				return -1939316457;
+				return joaat("EA_WORLD_HUMAN_TREE_CHOP_NEW");
 			case 2459:
-				return -1473436841;
+				return joaat("MINIGAME_BLACKJACK_PLAYER");
 			case 2460:
-				return -402120378;
+				return joaat("MINIGAME_DOMINOES_PLAYER");
 			case 2461:
-				return 1486312833;
+				return joaat("MINIGAME_FFF_PLAYER");
 			case 2462:
-				return -2043611403;
+				return joaat("MINIGAME_POKER_CAMP_PLAYER");
 			case 2463:
-				return -55367021;
+				return joaat("MINIGAME_POKER_PLAYER");
 			case 2464:
-				return 665864199;
+				return joaat("PROP_CAMP_CHARLES_SEAT_CHAIR_ARROW_FLETCH");
 			case 2465:
-				return 450183406;
+				return joaat("PROP_CAMP_HOSEA_SEAT_CHAIR_CARVE_FLOAT");
 			case 2466:
-				return 469031280;
+				return joaat("PROP_HUMAN_SEAT_CHAIR_CARVE_LURE");
 			case 2467:
-				return -318144249;
+				return joaat("SC_BOUNTY_HUNTER_SHERIFF");
 			case 2468:
-				return -787460071;
+				return joaat("SC_PROP_CAMP_DUTCH_SEAT_CHAIR_READING");
 			case 2469:
-				return -2021309280;
+				return joaat("SC_PROP_HUMAN_TORCH");
 			case 2470:
-				return -1700058951;
+				return joaat("SC_PROP_HUMAN_TORCH_RALLY_A");
 			case 2471:
-				return 1818512428;
+				return joaat("SC_PROP_HUMAN_TORCH_RALLY_B");
 			case 2472:
-				return 1996972402;
+				return joaat("SC_PROP_HUMAN_TORCH_RALLY_C");
 			case 2473:
-				return 991577872;
+				return joaat("SC_PROP_HUMAN_TORCH_TORCAP_A");
 			case 2474:
-				return -3780507;
+				return joaat("SC_PROP_HUMAN_TORCH_TORCAP_B");
 			case 2475:
-				return -1254646113;
+				return joaat("SC_PROP_MOONSHINE_CAMP_MALE_B");
 			case 2476:
-				return -1700065516;
+				return joaat("SC_PROP_STAND_REST_DRINK_MALES");
 			case 2477:
-				return -2048655016;
+				return joaat("SC_WORLD_HUMAN_KNEELING");
 			case 2478:
-				return 450422829;
+				return joaat("SC_WORLD_HUMAN_MOURNING");
 			case 2479:
-				return -1799583522;
+				return joaat("SC_WORLD_HUMAN_PREACHER");
 			case 2480:
-				return -1101156650;
+				return joaat("SC_WORLD_HUMAN_PUSH_BROOM_WORKING");
 			case 2481:
-				return -1278615205;
+				return joaat("SC_WORLD_HUMAN_SHOPKEEPER_MALE_C");
 			case 2482:
-				return -675056487;
+				return joaat("SC_WORLD_HUMAN_SIT_GROUND_PASSED_OUT");
 			case 2483:
-				return -890669940;
+				return joaat("SC_WORLD_HUMAN_STAND_ANTICIPATE");
 			case 2484:
-				return -1567729351;
+				return joaat("SC_WORLD_HUMAN_STAND_BAR");
 			case 2485:
-				return 2126615052;
+				return joaat("SC_WORLD_HUMAN_STAND_GENERIC");
 			case 2486:
-				return 2147443548;
+				return joaat("SC_WORLD_HUMAN_STRAW_BROOM_WORKING");
 			case 2487:
-				return 527370025;
+				return joaat("SC_WORLD_HUMAN_WILDERNESS_LOOTER");
 			case 2488:
-				return 383513667;
+				return joaat("SC_WORLD_STAND_MOURNING_MALE_A");
 			case 2489:
-				return 1386173291;
+				return joaat("SPECIAL_PED_GJ01_SEAT_CHAIR_TABLE_DRINKING");
 			case 2490:
-				return 447176986;
+				return joaat("SPECIAL_PED_GJ02_STAND_BAR_DRINKING");
 			case 2491:
-				return 824314133;
+				return joaat("WORLD_CAMP_PEARSON_LEAN_TABLE_SHUFFLE_CARDS");
 			case 2492:
-				return 282070889;
+				return joaat("WORLD_HUMAN_SLEDGEHAMMER");
 			case 2493:
-				return 1157205070;
+				return joaat("SC_AMB_VIG_VOMIT_WALL");
 			case 2494:
-				return 492051452;
+				return joaat("SC_CAMP_VIG_DUTCH_START_PHONOGRAPH");
 			case 2495:
-				return 1015352373;
+				return joaat("SC_CAMP_VIG_FIRE_BLOW");
 			case 2496:
-				return 2024871051;
+				return joaat("SC_CAMP_VIG_FIRE_POKE");
 			case 2497:
 				return joaat("SC_CAMP_VIG_PEARSON_CALLOVER");
 			case 2498:
-				return 196070706;
+				return joaat("SC_CAMP_VIG_SORE_JOINTS_MALE");
 			case 2499:
-				return 570336578;
+				return joaat("SCRIPT_CF_EXCON_WS_SPEAKER_SITTING");
 			case 2500:
-				return -1258484958;
+				return joaat("SCRIPT_CF_EXCON_WS_SPEAKER_STANDING");
 			case 2501:
-				return 1409565660;
+				return joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_A");
 			case 2502:
-				return 1707009873;
+				return joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_B");
 			case 2503:
-				return 911050887;
+				return joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_C");
 			case 2504:
-				return 1217342730;
+				return joaat("SCRIPT_CF_ODRIS_GANGPOL_01_MALE_D");
 			case 2505:
 				return joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_A");
 			case 2506:
-				return -1391735714;
+				return joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_B");
 			case 2507:
-				return 764300645;
+				return joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_C");
 			case 2508:
 				return joaat("SCRIPT_CF_ODRIS_GANGPOL_02_MALE_D");
 			case 2509:
 				return joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_A");
 			case 2510:
-				return 122885581;
+				return joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_B");
 			case 2511:
-				return 2068544956;
+				return joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_C");
 			case 2512:
 				return joaat("SCRIPT_CF_ODRIS_PLANROB_01_MALE_D");
 			case 2513:
 				return joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_A");
 			case 2514:
-				return -574515357;
+				return joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_B");
 			case 2515:
 				return joaat("SCRIPT_CF_ODRIS_PLANROB_02_MALE_C");
 			case 2516:
@@ -23251,11 +23251,11 @@ int func_470(int iParam0, int iParam1)
 			case 2517:
 				return joaat("PROP_HUMAN_BUTCHER_DEER");
 			case 2518:
-				return 583581589;
+				return joaat("PROP_HUMAN_BUTCHER_DEER_ALWAYS");
 			case 2519:
-				return -717884433;
+				return joaat("PROP_HUMAN_FOODPREP_STEW");
 			case 2520:
-				return -1197296696;
+				return joaat("PROP_HUMAN_FOODPREP_STEW_ALWAYS");
 			case 2521:
 				return joaat("PROP_HUMAN_SEAT_CHAIR_MORTAR_PESTLE");
 			case 2522:
@@ -23265,7 +23265,7 @@ int func_470(int iParam0, int iParam1)
 			case 2524:
 				return joaat("PROP_HUMAN_WOOD_CHOP");
 			case 2525:
-				return 597682689;
+				return joaat("WORLD_CAMP_FIRE_COOKING");
 			case 2526:
 				return joaat("WORLD_HUMAN_BARCUSTOMER");
 			case 2527:
@@ -23273,7 +23273,7 @@ int func_470(int iParam0, int iParam1)
 			case 2528:
 				return joaat("WORLD_HUMAN_BARCUSTOMER_WHISKEY");
 			case 2529:
-				return 1579488576;
+				return joaat("WORLD_HUMAN_BARTENDER");
 			case 2530:
 				return joaat("WORLD_HUMAN_BARTENDER_BEER");
 			case 2531:
@@ -23281,215 +23281,215 @@ int func_470(int iParam0, int iParam1)
 			case 2532:
 				return joaat("WORLD_HUMAN_BUTCHER_RABBIT");
 			case 2533:
-				return 587729686;
+				return joaat("WORLD_HUMAN_BUTCHER_RABBIT_ALWAYS");
 			case 2534:
-				return 893268186;
+				return joaat("WORLD_HUMAN_WASH_DISHES_TABLE_LEFT");
 			case 2535:
-				return 1831047706;
+				return joaat("WB_BERRY_BLACK_BERRY");
 			case 2536:
-				return -2035654710;
+				return joaat("WB_BERRY_EVERGREEN_HUCKLEBERRY");
 			case 2537:
-				return -476352109;
+				return joaat("WB_BERRY_RED_RASPBERRY");
 			case 2538:
-				return -969856216;
+				return joaat("WB_BERRY_WINTERGREEN_BERRY");
 			case 2539:
-				return 737977713;
+				return joaat("WB_HERB_ALASKAN_GINSENG");
 			case 2540:
-				return 1135998270;
+				return joaat("WB_HERB_AMERICAN_GINSENG");
 			case 2541:
-				return 1246310848;
+				return joaat("WB_HERB_BLACK_CURRANT");
 			case 2542:
-				return 1108217698;
+				return joaat("WB_HERB_BURDOCK_ROOT");
 			case 2543:
-				return 2059274664;
+				return joaat("WB_HERB_BURDOCK_ROOT_SINGLE");
 			case 2544:
-				return 1881560238;
+				return joaat("WB_HERB_DESERT_SAGE");
 			case 2545:
-				return -224542060;
+				return joaat("WB_HERB_ENGLISH_MACE");
 			case 2546:
-				return 1045958732;
+				return joaat("WB_HERB_ENGLISH_MACE_SINGLE");
 			case 2547:
-				return -1138127439;
+				return joaat("WB_HERB_GOLDEN_CURRANT");
 			case 2548:
-				return -1878803090;
+				return joaat("WB_HERB_HUMMINGBIRD_SAGE");
 			case 2549:
-				return -1109336222;
+				return joaat("WB_HERB_INDIAN_TOBACCO");
 			case 2550:
-				return -1835516139;
+				return joaat("WB_HERB_MILKWEED");
 			case 2551:
-				return -853171193;
+				return joaat("WB_HERB_MILKWEED_SINGLE");
 			case 2552:
-				return -792704004;
+				return joaat("WB_HERB_OLEANDER_SAGE");
 			case 2553:
-				return -266582150;
+				return joaat("WB_HERB_OLEANDER_SAGE_SINGLE");
 			case 2554:
-				return 1686632448;
+				return joaat("WB_HERB_PRAIRIE_POPPY");
 			case 2555:
-				return -1735213851;
+				return joaat("WB_HERB_RED_SAGE");
 			case 2556:
-				return -267118527;
+				return joaat("WB_HERB_VANILLA_FLOWER");
 			case 2557:
-				return -988677954;
+				return joaat("WB_HERB_VIOLET_SNOWDROP");
 			case 2558:
-				return 1571524038;
+				return joaat("WB_HERB_WILD_FEVERFEW");
 			case 2559:
-				return -1747066226;
+				return joaat("WB_HERB_YARROW");
 			case 2560:
-				return -1394250926;
+				return joaat("WB_HERB_YARROW_SINGLE");
 			case 2561:
-				return 25318363;
+				return joaat("WB_HORSE_HERB_COMMON_BULRUSH");
 			case 2562:
-				return 37520335;
+				return joaat("WB_HORSE_HERB_WILD_CARROTS");
 			case 2563:
-				return -1789866539;
+				return joaat("WB_MUSHROOM_BAY_BOLETE");
 			case 2564:
-				return -937226192;
+				return joaat("WB_MUSHROOM_CHANTERELLES");
 			case 2565:
-				return 771327210;
+				return joaat("WB_MUSHROOM_PARASOL_MUSHROOM");
 			case 2566:
-				return 1838169307;
+				return joaat("WB_MUSHROOM_RAMS_HEAD");
 			case 2567:
-				return 1224013164;
+				return joaat("WB_ORCHID_ACUNAS_STAR");
 			case 2568:
-				return 731982681;
+				return joaat("WB_ORCHID_CIGAR");
 			case 2569:
-				return -327573307;
+				return joaat("WB_ORCHID_CLAMSHELL");
 			case 2570:
-				return 1122160964;
+				return joaat("WB_ORCHID_DRAGONS_MOUTH");
 			case 2571:
-				return -1655947628;
+				return joaat("WB_ORCHID_GHOST");
 			case 2572:
-				return 1421921491;
+				return joaat("WB_ORCHID_LADY_OF_NIGHT");
 			case 2573:
-				return 1944090963;
+				return joaat("WB_ORCHID_LADY_SLIPPER");
 			case 2574:
-				return -1253780595;
+				return joaat("WB_ORCHID_MOCCASIN_FLOWER");
 			case 2575:
-				return -1943395999;
+				return joaat("WB_ORCHID_NIGHT_SCENTED");
 			case 2576:
-				return -537792622;
+				return joaat("WB_ORCHID_QUEENS");
 			case 2577:
-				return -1275884820;
+				return joaat("WB_ORCHID_RAT_TAIL");
 			case 2578:
-				return -1850722156;
+				return joaat("WB_ORCHID_SPARROWS_EGG");
 			case 2579:
-				return -389213546;
+				return joaat("WB_ORCHID_SPIDER");
 			case 2580:
-				return -1327059943;
+				return joaat("WB_SPICE_CREEPING_THYME");
 			case 2581:
-				return 1302078710;
+				return joaat("WB_SPICE_OREGANO");
 			case 2582:
-				return 620095944;
+				return joaat("WB_SPICE_WILD_MINT");
 			case 2583:
-				return -1382458821;
+				return joaat("WB_BANDITO_SHACK");
 			case 2584:
-				return 264140056;
+				return joaat("WB_BOUNTY_POSTER");
 			case 2585:
-				return -1806697370;
+				return joaat("WB_CAMPFIRE");
 			case 2586:
-				return -243331858;
+				return joaat("WB_CAMPFIRE_GANG");
 			case 2587:
-				return 752436745;
+				return joaat("WB_CAMPFIRE_GANG_ES");
 			case 2588:
-				return 580411614;
+				return joaat("WB_CAMPFIRE_LARGE");
 			case 2589:
-				return -449580942;
+				return joaat("WB_CAMPFIRE_SMALL");
 			case 2590:
-				return 896364936;
+				return joaat("WB_COLLECTIBLE_POSTER");
 			case 2591:
-				return 319662698;
+				return joaat("WB_CRAYFISH_HOLE");
 			case 2592:
-				return -1714649883;
+				return joaat("WB_DINO_BONES");
 			case 2593:
-				return 1888920146;
+				return joaat("WB_DINO_BONES_EMPTY");
 			case 2594:
-				return -1829889406;
+				return joaat("WB_EXOTICS_INTERACT");
 			case 2595:
-				return -1540029476;
+				return joaat("WB_GATOR_EGG");
 			case 2596:
-				return 1263162521;
+				return joaat("WB_GATOR_EGG_NEST");
 			case 2597:
-				return 859201438;
+				return joaat("WB_HUNTING_ZONE_BEAR_LEGENDARY");
 			case 2598:
-				return 286241319;
+				return joaat("WB_HUNTING_ZONE_BEAVER");
 			case 2599:
-				return -682877430;
+				return joaat("WB_HUNTING_ZONE_BIG_HORN_RAM");
 			case 2600:
-				return -289883276;
+				return joaat("WB_HUNTING_ZONE_BISON");
 			case 2601:
-				return -329962264;
+				return joaat("WB_HUNTING_ZONE_BOAR");
 			case 2602:
-				return 1058274893;
+				return joaat("WB_HUNTING_ZONE_BUCK");
 			case 2603:
-				return -84970090;
+				return joaat("WB_HUNTING_ZONE_BUFFALO_TATANKA");
 			case 2604:
-				return 1602497360;
+				return joaat("WB_HUNTING_ZONE_BULLGATOR");
 			case 2605:
-				return 1933315607;
+				return joaat("WB_HUNTING_ZONE_COUGAR");
 			case 2606:
-				return -1147060153;
+				return joaat("WB_HUNTING_ZONE_COYOTE");
 			case 2607:
-				return 1730943702;
+				return joaat("WB_HUNTING_ZONE_ELK");
 			case 2608:
-				return -1857427405;
+				return joaat("WB_HUNTING_ZONE_FOX");
 			case 2609:
-				return 1210137256;
+				return joaat("WB_HUNTING_ZONE_MOOSE");
 			case 2610:
-				return -2036016698;
+				return joaat("WB_HUNTING_ZONE_PANTHER_LEGENDARY");
 			case 2611:
-				return -588400115;
+				return joaat("WB_HUNTING_ZONE_PRONGHORN");
 			case 2612:
-				return -1305410229;
+				return joaat("WB_HUNTING_ZONE_WOLF");
 			case 2613:
-				return -1189729144;
+				return joaat("WB_INTERACTIVE_CAMPFIRE_CARAVAN");
 			case 2614:
-				return 1403995973;
+				return joaat("WB_INTERACTIVE_CAMPFIRE_DFLT");
 			case 2615:
-				return -2140664311;
+				return joaat("WB_INTERACTIVE_CAMPFIRE_FIREPLACE");
 			case 2616:
-				return -1973379805;
+				return joaat("WB_INTERACTIVE_CAMPFIRE_FIREPLACE_IN_TOWNS");
 			case 2617:
-				return -886679600;
+				return joaat("WB_INTERACTIVE_CAMPFIRE_TWOPOINT");
 			case 2618:
-				return 1228786282;
+				return joaat("WB_NON_INTERACTIVE_CAMPFIRE");
 			case 2619:
-				return -1241326640;
+				return joaat("WB_NON_INTERACTIVE_CAMPFIRE_IN_TOWNS");
 			case 2620:
-				return 1588618021;
+				return joaat("WB_NON_INTERACTIVE_CAMPFIRE_UNDERPOT");
 			case 2621:
-				return 1127868139;
+				return joaat("WB_NON_INTERACTIVE_CAMPFIRE_UNDERPOT_IN_TOWNS");
 			case 2622:
-				return 1399970529;
+				return joaat("WB_PROP_HANGING_CARCASS");
 			case 2623:
-				return 49909226;
+				return joaat("WB_RAIDER_CHURCH");
 			case 2624:
-				return -386607107;
+				return joaat("WB_RARE_FISHING_SPOT");
 			case 2625:
-				return -1466504916;
+				return joaat("WB_RCM_FUNDRAISER_INSPECT");
 			case 2626:
-				return 1704047055;
+				return joaat("WB_RE_SAVAGE_WARNING01");
 			case 2627:
-				return 259425682;
+				return joaat("WB_RE_SAVAGE_WARNING02");
 			case 2628:
-				return 1771867211;
+				return joaat("WB_RE_WILD_MAN_CAVE");
 			case 2629:
-				return 513970265;
+				return joaat("WB_ROCK_CARVINGS");
 			case 2630:
-				return -1982673468;
+				return joaat("WB_STRAWBERRY_UFO");
 			case 2631:
-				return -122166685;
+				return joaat("WB_TAXIDERMY_MARITAL");
 			case 2632:
-				return 955562538;
+				return joaat("WB_TAXIDERMY_NOTICE");
 			case 2633:
-				return 194071974;
+				return joaat("WB_TREASURE_HUNTER");
 			case 2634:
-				return 212940922;
+				return joaat("WB_WILDERNESS_CHEST");
 			case 2635:
-				return -185630055;
+				return joaat("WORLD_PLAYER_CIG_CARDS");
 			case 2636:
-				return -1307214023;
+				return joaat("WB_INTERACTIVE_CAMPFIRE_MP_TWOPOINT");
 			case 2637:
-				return -991489073;
+				return joaat("WB_TREASURE_HUNTER_LONG_DISTANCE");
 			case 2638:
 				return 0;
 			default:
@@ -23835,7 +23835,7 @@ void func_474(bool bParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		if (func_896(iParam1))
 		{
-			func_897(bParam0, 41788943);
+			func_897(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -26465,7 +26465,7 @@ void func_555(int iParam0, int iParam1, bool bParam2)
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	if (bParam2)
 	{
-		iVar1 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(513747494, Global_35, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
+		iVar1 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DANGEROUS"), Global_35, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
 	}
 	TASK::TASK_SMART_FLEE_PED(0, Global_35, 1000f, -1, 0, 3f, 0);
 	if (bParam2)
@@ -28415,15 +28415,15 @@ void func_614(int iParam0)
 	{
 		case 1:
 			func_1020(256);
-			func_382(2, 1629161481, 1);
+			func_382(2, joaat("WAR_STORY"), 1);
 			break;
 		case 2:
 			func_1020(512);
-			func_382(2, -1565587768, 1);
+			func_382(2, joaat("CAPTIVE_LAWMAN"), 1);
 			break;
 		case 3:
 			func_1020(1024);
-			func_382(2, 1092959135, 1);
+			func_382(2, joaat("CAPTIVE_OFFICIAL"), 1);
 			break;
 	}
 	func_357(0, 14);
@@ -29035,19 +29035,19 @@ void func_638(int iParam0)
 	{
 		case 5:
 			func_1028(4096);
-			func_382(0, -539546610, 1);
+			func_382(0, joaat("GANG_POLITICS_A"), 1);
 			break;
 		case 6:
 			func_1028(16384);
-			func_382(0, -1371584293, 1);
+			func_382(0, joaat("GANG_POLITICS_B"), 1);
 			break;
 		case 7:
 			func_1028(2048);
-			func_382(0, -1605388647, 1);
+			func_382(0, joaat("PLAN_ROBBERY_A"), 1);
 			break;
 		case 8:
 			func_1028(8192);
-			func_382(0, -300232146, 1);
+			func_382(0, joaat("PLAN_ROBBERY_B"), 1);
 			break;
 	}
 	func_357(0, 14);
@@ -29812,11 +29812,11 @@ void func_646(var uParam0)
 	{
 		case 10:
 			func_1036(32768);
-			func_382(3, -2125754170, 1);
+			func_382(3, joaat("ARGUMENT_DEATH"), 1);
 			break;
 		case 11:
 			func_1036(65536);
-			func_382(3, 1318327615, 1);
+			func_382(3, joaat("ARGUMENT_SETTLE"), 1);
 			break;
 	}
 	func_357(0, 14);
@@ -33607,7 +33607,7 @@ int func_760(int iParam0)
 
 void func_761()
 {
-	func_1138(func_1137(-1828636903), 1);
+	func_1138(func_1137(joaat("CAMPFIRE_GANG_KILLS")), 1);
 }
 
 char* func_762(int iParam0, int iParam1)
@@ -37866,7 +37866,7 @@ void func_899(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
@@ -47168,7 +47168,7 @@ int func_1270(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}
@@ -47880,11 +47880,11 @@ void func_1298(int iParam0)
 	{
 		case 13:
 			func_1435(16);
-			func_382(1, 1033039228, 1);
+			func_382(1, joaat("FIND_HAT"), 1);
 			break;
 		case 12:
 			func_1435(32);
-			func_382(1, 1411661003, 1);
+			func_382(1, joaat("FIND_SHOE"), 1);
 			break;
 	}
 	func_357(0, 14);
@@ -49346,7 +49346,7 @@ int func_1364(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (iVar0 == -816321659 && Global_1572887->f_12 != -1)
+	if (iVar0 == joaat("SP_ACHIEVEMENTS") && Global_1572887->f_12 != -1)
 	{
 		return 0;
 	}
@@ -50198,83 +50198,83 @@ void func_1385(int iParam0, var uParam1, var uParam2)
 	*uParam2 = 0;
 	switch (iParam0)
 	{
-		case 1234009870: /* GXTEntry: "Revolver Cartridges - Regular" */
+		case joaat("AMMO_REVOLVER_AMMOBOX"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case -1202134084: /* GXTEntry: "Opened Revolver Cartridges" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_USED"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REVOLVER");
 			break;
-		case 1297050066: /* GXTEntry: "Revolver Cartridges - Express" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REVOLVER_EXPRESS");
 			break;
-		case -1780177928: /* GXTEntry: "Revolver Cartridges - High Velocity" */
+		case joaat("AMMO_REVOLVER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REVOLVER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REVOLVER_HIGH_VELOCITY");
 			break;
-		case -1467836497: /* GXTEntry: "Pistol Cartridges - Regular" */
+		case joaat("AMMO_PISTOL_AMMOBOX"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case 1723805622: /* GXTEntry: "Opened Pistol Cartridges" */
+		case joaat("AMMO_PISTOL_AMMOBOX_USED"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_PISTOL");
 			break;
-		case -153287664: /* GXTEntry: "Pistol Cartridges - Express" */
+		case joaat("AMMO_PISTOL_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_PISTOL_EXPRESS");
 			break;
-		case 1845082736: /* GXTEntry: "Pistol Cartridges - High Velocity" */
+		case joaat("AMMO_PISTOL_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("PISTOL_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_PISTOL_HIGH_VELOCITY");
 			break;
-		case 406755377: /* GXTEntry: "Rifle Cartridges - Regular" */
+		case joaat("AMMO_RIFLE_AMMOBOX"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 1469029564: /* GXTEntry: "Opened Rifle Cartridges" */
+		case joaat("AMMO_RIFLE_AMMOBOX_USED"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_RIFLE");
 			break;
-		case 45760211: /* GXTEntry: "Rifle Cartridges - Express" */
+		case joaat("AMMO_RIFLE_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_RIFLE_EXPRESS");
 			break;
-		case -276295943: /* GXTEntry: "Rifle Cartridges - High Velocity" */
+		case joaat("AMMO_RIFLE_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("RIFLE_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_RIFLE_HIGH_VELOCITY");
 			break;
-		case -2029793397: /* GXTEntry: "Repeater Cartridges - Regular" */
+		case joaat("AMMO_REPEATER_AMMOBOX"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case 2120467495: /* GXTEntry: "Opened Repeater Cartridges" */
+		case joaat("AMMO_REPEATER_AMMOBOX_USED"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_REPEATER");
 			break;
-		case -2075613923: /* GXTEntry: "Repeater Cartridges - Express" */
+		case joaat("AMMO_REPEATER_AMMOBOX_EXPRESS"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_EXPRESS");
 			*uParam2 = joaat("AMMO_REPEATER_EXPRESS");
 			break;
-		case 122656217: /* GXTEntry: "Repeater Cartridges - High Velocity" */
+		case joaat("AMMO_REPEATER_AMMOBOX_HIGH_VELOCITY"):
 			*uParam1 = joaat("REPEATER_AMMO_BOX_HIGH_VELOCITY");
 			*uParam2 = joaat("AMMO_REPEATER_HIGH_VELOCITY");
 			break;
-		case 2107187484: /* GXTEntry: "Shotgun Shells - Regular" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case -791844268: /* GXTEntry: "Opened Shotgun Shells" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_USED"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_USED");
 			*uParam2 = joaat("AMMO_SHOTGUN");
 			break;
-		case 305770744: /* GXTEntry: "Shotgun - Slug" */
+		case joaat("AMMO_SHOTGUN_AMMOBOX_SLUG"):
 			*uParam1 = joaat("SHOTGUN_AMMO_BOX_SLUG");
 			*uParam2 = joaat("AMMO_SHOTGUN_SLUG");
 			break;
-		case 550900979: /* GXTEntry: "Rifle Cartridges - Varmint" */
+		case joaat("AMMO_22_AMMOBOX"):
 			*uParam1 = joaat("22_AMMO_BOX");
 			*uParam2 = joaat("AMMO_22");
 			break;
@@ -52555,15 +52555,15 @@ int func_1438(int iParam0)
 		case 10:
 			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return -1960060437;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return 1634371177;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
 			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return 683250525;
+			return joaat("PERSCHAR_COMP_SADIE");
 		case 12:
-			return -814958461;
+			return joaat("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -52638,15 +52638,15 @@ int func_1442(int iParam0, bool bParam1)
 		case 8:
 			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return -1880884094;
+			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
 			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
 			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return -1094022447;
+			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return -1484815615;
+			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;
@@ -52997,7 +52997,7 @@ void func_1456(int iParam0, bool bParam1)
 
 void func_1457(int iParam0)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-156028329, iParam0);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("HONORMETERVALUE"), iParam0);
 }
 
 char* func_1458(int iParam0)
@@ -53143,9 +53143,9 @@ int func_1462()
 
 void func_1463(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 int func_1464(int iParam0)
@@ -53166,72 +53166,72 @@ int func_1465(int iParam0, int iParam1, int iParam2)
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = -816321659;
-			*iParam2 = -987026056;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP1");
 			break;
 		case 1:
-			*iParam1 = -816321659;
-			*iParam2 = -1822602787;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP2");
 			break;
 		case 2:
-			*iParam1 = -816321659;
-			*iParam2 = -1602329569;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP3");
 			break;
 		case 3:
-			*iParam1 = -816321659;
-			*iParam2 = 1881899898;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP4");
 			break;
 		case 4:
-			*iParam1 = -816321659;
-			*iParam2 = -1906196506;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_CHP5");
 			break;
 		case 5:
-			*iParam1 = -816321659;
-			*iParam2 = -674995867;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_GOLDRUSH");
 			break;
 		case 6:
-			*iParam1 = -816321659;
-			*iParam2 = -734156617;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_MINIGAMES");
 			break;
 		case 7:
-			*iParam1 = -816321659;
-			*iParam2 = 261758426;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_B_AND_E");
 			break;
 		case 8:
-			*iParam1 = -816321659;
-			*iParam2 = 1545586131;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RCKPT");
 			break;
 		case 9:
-			*iParam1 = -816321659;
-			*iParam2 = -489125522;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_TO_POOR");
 			break;
 		case 10:
-			*iParam1 = -816321659;
-			*iParam2 = 1190367681;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_HONOR");
 			break;
 		case 11:
-			*iParam1 = -816321659;
-			*iParam2 = -1179367301;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_RC");
 			break;
 		case 12:
-			*iParam1 = -816321659;
-			*iParam2 = 1154513253;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BOUNTY");
 			break;
 		case 13:
-			*iParam1 = -816321659;
-			*iParam2 = -1825640214;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_UPGR_W");
 			break;
 		case 14:
-			*iParam1 = -816321659;
-			*iParam2 = 1209829059;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_BEAR");
 			break;
 		case 15:
-			*iParam1 = -816321659;
-			*iParam2 = -1713230487;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_ART");
 			break;
 		case 16:
-			*iParam1 = -816321659;
-			*iParam2 = 2092309893;
+			*iParam1 = joaat("SP_ACHIEVEMENTS");
+			*iParam2 = joaat("ACH_COLLECT");
 			break;
 		default:
 			return 0;
@@ -54229,7 +54229,7 @@ bool func_1517(int iParam0)
 
 void func_1518(bool bParam0)
 {
-	COMPAPP::_0xB6FD96420C0126A1(-1056478928, bParam0);
+	COMPAPP::_0xB6FD96420C0126A1(joaat("HONORMETERVISIBLE"), bParam0);
 }
 
 bool func_1519(int iParam0)

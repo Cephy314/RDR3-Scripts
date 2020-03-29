@@ -229,12 +229,12 @@ int func_11(var uParam0)
 	func_30(&uVar0, 0);
 	GRAPHICS::_0xEB48CE48EEC41FD4(func_31(iLocal_3, 16));
 	STREAMING::_0x5A8B01199C3E79C3();
-	bVar1 = (DLC::IS_DLC_PRESENT(-751383868) || DLC::IS_DLC_PRESENT(-1499823613));
-	if (DLC::IS_DLC_PRESENT(-2112896652))
+	bVar1 = (DLC::IS_DLC_PRESENT(joaat("DLC_PHYSPREORDERCONTENT")) || DLC::IS_DLC_PRESENT(joaat("DLC_PREORDERCONTENT")));
+	if (DLC::IS_DLC_PRESENT(joaat("DLC_ULTIMATEEDITION")))
 	{
 		if (!bVar1)
 		{
-			if (DLC::IS_DLC_PRESENT(33819255))
+			if (DLC::IS_DLC_PRESENT(joaat("DLC_SPECIALEDITION")))
 			{
 				func_32(626, 0);
 			}
@@ -244,7 +244,7 @@ int func_11(var uParam0)
 			func_32(628, 0);
 		}
 	}
-	else if (DLC::IS_DLC_PRESENT(33819255))
+	else if (DLC::IS_DLC_PRESENT(joaat("DLC_SPECIALEDITION")))
 	{
 		if (!bVar1)
 		{
@@ -3336,15 +3336,15 @@ int func_148(int iParam0)
 		case 10:
 			return joaat("PERSCHAR_COMP_KIERAN");
 		case 24:
-			return -1960060437;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_1");
 		case 25:
-			return 1634371177;
+			return joaat("PERSCHAR_CAMP_MICAH_GOON_2");
 		case 26:
 			return joaat("PERSCHAR_COMP_EAGLEFLIES");
 		case 11:
-			return 683250525;
+			return joaat("PERSCHAR_COMP_SADIE");
 		case 12:
-			return -814958461;
+			return joaat("PERSCHAR_COMP_DOG");
 	}
 	return 0;
 }
@@ -3419,15 +3419,15 @@ int func_152(int iParam0, bool bParam1)
 		case 8:
 			return joaat("PERSCHAR_COMP_HORSE_SEAN");
 		case 23:
-			return -1880884094;
+			return joaat("PERSCHAR_COMP_HORSE_TRELAWNEY");
 		case 20:
 			return joaat("PERSCHAR_COMP_HORSE_KAREN");
 		case 4:
 			return joaat("PERSCHAR_COMP_HORSE_UNCLE");
 		case 10:
-			return -1094022447;
+			return joaat("PERSCHAR_COMP_HORSE_ODRISCOLL");
 		case 26:
-			return -1484815615;
+			return joaat("PERSCHAR_COMP_HORSE_EAGLE_FLIES");
 		case 12:
 		case 14:
 			return 0;
@@ -3542,7 +3542,7 @@ int func_158(int iParam0)
 			return 7;
 		case 1784174017:
 			return 8;
-		case 1763160914:
+		case joaat("VIGNETTE"):
 			return 10;
 		case 2051438686:
 			return 11;
@@ -4864,7 +4864,7 @@ int func_216(bool bParam0)
 		case -2061583405:
 			return joaat("HATS");
 		case -525676072:
-			return 1249071452;
+			return joaat("MASKS_LARGE");
 		default:
 			break;
 	}

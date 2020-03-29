@@ -411,7 +411,7 @@ int func_18(var uParam0)
 			return 1;
 		}
 	}
-	if (uParam0->f_30.f_5 == 357427886)
+	if (uParam0->f_30.f_5 == joaat("WEAPON_POISON"))
 	{
 		if (Global_1939008->f_28.f_1 == 1)
 		{
@@ -476,7 +476,7 @@ int func_21(int iParam0, var uParam1)
 		uParam1->f_2 = 0;
 		uParam1->f_3 = 255;
 		uParam1->f_4 = -1;
-		uParam1->f_5 = 623901053;
+		uParam1->f_5 = joaat("REL_NO_RELATIONSHIP");
 		return 0;
 	}
 	if (ENTITY::IS_ENTITY_A_PED(iParam0))
@@ -546,14 +546,14 @@ int func_21(int iParam0, var uParam1)
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 255;
 			uParam1->f_4 = -1;
-			uParam1->f_5 = 623901053;
+			uParam1->f_5 = joaat("REL_NO_RELATIONSHIP");
 			break;
 		case 6:
 			uParam1->f_1 = iParam0;
 			uParam1->f_2 = 0;
 			uParam1->f_3 = 255;
 			uParam1->f_4 = -1;
-			uParam1->f_5 = 623901053;
+			uParam1->f_5 = joaat("REL_NO_RELATIONSHIP");
 			break;
 	}
 	return 1;
@@ -732,15 +732,15 @@ int func_24(var uParam0)
 			return 11;
 		case joaat("REL_PINKERTONS"):
 			return 11;
-		case -767591988:
+		case joaat("REL_WILD_ANIMAL"):
 			return 14;
-		case 1986610512:
+		case joaat("REL_WILD_ANIMAL_BIRD"):
 			return 14;
-		case -989642646:
+		case joaat("REL_WILD_ANIMAL_PREDATOR"):
 			return 15;
-		case 889541022:
+		case joaat("REL_ALLIGATOR"):
 			return 15;
-		case -319516747:
+		case joaat("REL_BOAR"):
 			return 15;
 		case joaat("REL_PLAYER_ENEMY"):
 			return 12;
@@ -939,15 +939,15 @@ int func_25(var uParam0)
 			return 21;
 		case joaat("REL_PINKERTONS"):
 			return 21;
-		case -767591988:
+		case joaat("REL_WILD_ANIMAL"):
 			return 24;
-		case 1986610512:
+		case joaat("REL_WILD_ANIMAL_BIRD"):
 			return 24;
-		case -989642646:
+		case joaat("REL_WILD_ANIMAL_PREDATOR"):
 			return 25;
-		case 889541022:
+		case joaat("REL_ALLIGATOR"):
 			return 25;
-		case -319516747:
+		case joaat("REL_BOAR"):
 			return 25;
 		case joaat("REL_PLAYER_ENEMY"):
 			return 22;
@@ -1089,7 +1089,7 @@ void func_26(var uParam0)
 
 	Var0.f_3 = 255;
 	Var0.f_4 = -1;
-	Var0.f_5 = 623901053;
+	Var0.f_5 = joaat("REL_NO_RELATIONSHIP");
 	*uParam0 = { Var0 };
 }
 

@@ -868,7 +868,7 @@ int func_7(var uParam0)
 		case 16:
 			break;
 		default:
-			PAD::_0x2804658EB7D8A50B(4, 652262273);
+			PAD::_0x2804658EB7D8A50B(4, joaat("PLAYERJOURNAL"));
 			if (PAD::_IS_INPUT_DISABLED(0))
 			{
 				if (!PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_INSPECT_ZOOM")))
@@ -1367,7 +1367,7 @@ int func_22(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		if (func_54(Var3.f_2))
 		{
 			*uParam6 = iVar0;
-			if (Var3.f_2 == 1918320105)
+			if (Var3.f_2 == joaat("JOURNAL_CATEGORY_GANG_TAKE"))
 			{
 				(*uParam7)[iVar20] = iVar2;
 				iVar20++;
@@ -2025,7 +2025,7 @@ int func_51()
 
 int func_52(int iParam0)
 {
-	if (iParam0 == -731660569)
+	if (iParam0 == joaat("JOURNAL_CATEGORY_AZTEC_CLUE"))
 	{
 		return 1;
 	}
@@ -2051,7 +2051,7 @@ int func_53(int iParam0)
 
 int func_54(int iParam0)
 {
-	if (iParam0 == 1918320105 || iParam0 == 230952115)
+	if (iParam0 == joaat("JOURNAL_CATEGORY_GANG_TAKE") || iParam0 == joaat("JOURNAL_CATEGORY_BEECHERS_DEBT"))
 	{
 		return 1;
 	}
@@ -2135,7 +2135,7 @@ void func_56(int iParam0, int iParam1, int iParam2)
 
 int func_57(int iParam0)
 {
-	if ((((iParam0 == 1302417915 || iParam0 == 982411871) || iParam0 == 1610827497) || func_52(iParam0)) || func_54(iParam0))
+	if ((((iParam0 == joaat("JOURNAL_CATEGORY_DISCOVER_ANIMAL") || iParam0 == joaat("JOURNAL_CATEGORY_DISCOVER_HERB")) || iParam0 == joaat("JOURNAL_CATEGORY_TOWN_SECRET")) || func_52(iParam0)) || func_54(iParam0))
 	{
 		return 1;
 	}
@@ -2328,7 +2328,7 @@ void func_63(var uParam0, int iParam1, int iParam2, var uParam3, int iParam4, va
 				if (iVar23 == 2 || iVar23 == 3)
 				{
 					iVar26++;
-					if (!func_57(Var4.f_2) && Var4.f_2 != 711933872)
+					if (!func_57(Var4.f_2) && Var4.f_2 != joaat("JOURNAL_CATEGORY_RC_SERIAL_KILLER_CLUE"))
 					{
 						iVar29 = 1;
 					}
@@ -2955,7 +2955,7 @@ int func_83(int iParam0)
 	{
 		iVar0 = HUD::_JOURNAL_GET_ENTRY_AT_INDEX(iParam0);
 		HUD::_JOURNAL_GET_ENTRY_INFO(iVar0, &vVar1);
-		if (vVar1.z == 230952115)
+		if (vVar1.z == joaat("JOURNAL_CATEGORY_BEECHERS_DEBT"))
 		{
 			return 1;
 		}

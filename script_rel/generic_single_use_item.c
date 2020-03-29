@@ -339,14 +339,14 @@ void func_7(int iParam0, bool bParam1)
 			}
 			func_35(30);
 			break;
-		case 433340626: /* GXTEntry: "Opened Cover Scent" */
-		case 1895068170: /* GXTEntry: "Cover Scent Lotion" */
-			if (iParam0 == 1895068170)
+		case joaat("CONSUMABLE_COVER_SCENT_USED"):
+		case joaat("CONSUMABLE_COVER_SCENT"):
+			if (iParam0 == joaat("CONSUMABLE_COVER_SCENT"))
 			{
 				func_36(0, 60000);
 				fVar0 = 0.25f;
 			}
-			else if (iParam0 == 433340626)
+			else if (iParam0 == joaat("CONSUMABLE_COVER_SCENT_USED"))
 			{
 				func_36(0, 30000);
 				fVar0 = 0.5f;
@@ -1051,8 +1051,8 @@ void func_31(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 		case joaat("CONSUMABLE_HORSE_MEDICINE_USED"):
 			func_83(func_86(joaat("USED"), joaat("HORSE_PILLS")), 1);
 			break;
-		case 433340626: /* GXTEntry: "Opened Cover Scent" */
-		case 1895068170: /* GXTEntry: "Cover Scent Lotion" */
+		case joaat("CONSUMABLE_COVER_SCENT_USED"):
+		case joaat("CONSUMABLE_COVER_SCENT"):
 			func_83(func_86(joaat("USED"), joaat("COVER_SCENT")), 1);
 			break;
 		case joaat("CONSUMABLE_HERBIVORE_BAIT"):
@@ -1066,14 +1066,14 @@ void func_31(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	}
 	if (func_60() == -1)
 	{
-		if (iParam0 == -1976480343)
+		if (iParam0 == joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED"))
 		{
 			func_83(func_86(joaat("USED"), joaat("SPECIAL_TONIC")), 1);
 		}
 	}
 	if (bParam2)
 	{
-		func_83(func_82(704570463), 1);
+		func_83(func_82(joaat("DEADEYE_ITEMS_USED")), 1);
 	}
 }
 
@@ -4561,9 +4561,9 @@ void func_184(int iParam0, int iParam1, int iParam2)
 
 void func_185(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 float func_186()
@@ -5426,11 +5426,11 @@ int func_236(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return INVENTORY::_0xE787F05DFC977BDE(func_257(0), -1845241476, 0);
+			return INVENTORY::_0xE787F05DFC977BDE(func_257(0), joaat("UPGRADE_HEALTH_TANK_1"), 0);
 		case 1:
-			return INVENTORY::_0xE787F05DFC977BDE(func_257(0), 1654063339, 0);
+			return INVENTORY::_0xE787F05DFC977BDE(func_257(0), joaat("UPGRADE_STAMINA_TANK_1"), 0);
 		case 2:
-			return INVENTORY::_0xE787F05DFC977BDE(func_257(0), 1623931083, 0);
+			return INVENTORY::_0xE787F05DFC977BDE(func_257(0), joaat("UPGRADE_DEADEYE_TANK_1"), 0);
 	}
 	return 0;
 }

@@ -603,7 +603,7 @@ int func_18(var uParam0)
 void func_19()
 {
 	func_51(&(Local_3.f_102), 1);
-	func_53(func_52(-1292532933), 1);
+	func_53(func_52(joaat("BANK_ROBBERIES_STARTED")), 1);
 	func_54(1);
 	func_55(&Local_3);
 	func_56(&Local_3, 30f, 30f);
@@ -1282,7 +1282,7 @@ void func_54(int iParam0)
 
 void func_55(var uParam0)
 {
-	uParam0->f_117[0] = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(-1215290486, Global_35, -1f, 15f, 25f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
+	uParam0->f_117[0] = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW"), Global_35, -1f, 15f, 25f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
 }
 
 void func_56(var uParam0, int iParam1, int iParam2)

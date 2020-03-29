@@ -64,7 +64,7 @@ void __EntryFunction__()
 	}
 	Global_1935689->f_10226 = 0;
 	Global_1935689->f_10227 = 0;
-	iVar2 = -1723036365;
+	iVar2 = joaat("INGAME");
 	if (func_4(0))
 	{
 		iVar2 = joaat("SHOP");

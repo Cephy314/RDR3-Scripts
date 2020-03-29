@@ -332,7 +332,7 @@ void func_11(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (6 - 1))
 	{
-		if (!func_39(uParam0, iVar0) == 41788943)
+		if (!func_39(uParam0, iVar0) == joaat("META_OUTFIT_DEFAULT"))
 		{
 			if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_13[iVar0])))
 			{
@@ -1547,7 +1547,7 @@ int func_39(var uParam0, int iParam1)
 		default:
 			break;
 	}
-	return 41788943;
+	return joaat("META_OUTFIT_DEFAULT");
 }
 
 void func_40(bool bParam0, int iParam1)
@@ -3981,7 +3981,7 @@ void func_114(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	{
 		if (func_132(bParam1))
 		{
-			func_40(bParam0, 41788943);
+			func_40(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -4442,7 +4442,7 @@ void func_134(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

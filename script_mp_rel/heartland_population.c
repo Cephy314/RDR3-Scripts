@@ -113,7 +113,7 @@ void func_2()
 
 	vVar0 = { fLocal_17, fLocal_18, fLocal_19 };
 	vVar3 = { fLocal_20, fLocal_21, fLocal_22 };
-	FLOCK::_0xF2CCA7B68CFAB2B9(904876610, 725.8305f, -468.8784f, 149f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
+	FLOCK::_0xF2CCA7B68CFAB2B9(joaat("SPECIES_BIRD_CROW"), 725.8305f, -468.8784f, 149f, vVar0, vVar3, 9.5f, 50f, 1f, 6f);
 }
 
 void func_3()
@@ -277,7 +277,7 @@ int func_5(bool bParam0, bool bParam1)
 
 void func_6()
 {
-	FLOCK::_0xFB16F08F47B83B4C(904876610);
+	FLOCK::_0xFB16F08F47B83B4C(joaat("SPECIES_BIRD_CROW"));
 }
 
 void func_7(int iParam0)

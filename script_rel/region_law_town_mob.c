@@ -635,7 +635,7 @@ void func_17()
 				PED::SET_PED_AS_GROUP_LEADER(&(iLocal_46[iVar0]), iLocal_45, false);
 				PED::SET_PED_CONFIG_FLAG(&(iLocal_46[iVar0]), 155, true);
 				COMPANION::_0xCBD9EC60495C728C(iLocal_45);
-				COMPANION::_0x0F1CD8CA9E65D5F6(iLocal_45, -1327202964);
+				COMPANION::_0x0F1CD8CA9E65D5F6(iLocal_45, joaat("CA_SEARCH"));
 			}
 			else
 			{
@@ -990,7 +990,7 @@ void func_39(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		if (func_44(bParam1))
 		{
-			func_45(bParam0, 41788943);
+			func_45(bParam0, joaat("META_OUTFIT_DEFAULT"));
 		}
 		else if (bParam5)
 		{
@@ -1305,7 +1305,7 @@ void func_47(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, 1268180497);
+	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
 		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);

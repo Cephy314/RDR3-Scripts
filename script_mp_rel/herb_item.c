@@ -616,17 +616,17 @@ int func_22(int iParam0)
 		case 20:
 			return joaat("CONSUMABLE_POTENT_SNAKE_OIL");
 		case 23:
-			return -1976480343 /* GXTEntry: "Special Miracle Tonic" */;
+			return joaat("CONSUMABLE_SPECIAL_TONIC_CRAFTED");
 		case 26:
 			return joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT");
 		case 29:
 			return joaat("CONSUMABLE_POTENT_RESTORATIVE");
 		case 34:
-			return 1566032147 /* GXTEntry: "Special Bitters" */;
+			return joaat("CONSUMABLE_SPECIAL_RESTORATIVE_CRAFTED");
 		case 38:
 			return joaat("CONSUMABLE_POTENT_HERBIVORE_BAIT");
 		case 49:
-			return 1566032147 /* GXTEntry: "Special Bitters" */;
+			return joaat("CONSUMABLE_SPECIAL_RESTORATIVE_CRAFTED");
 		case 52:
 			return joaat("CONSUMABLE_POTENT_MEDICINE");
 	}
@@ -978,9 +978,9 @@ int func_36(int iParam0)
 
 void func_37(char* sParam0, char* sParam1, int iParam2)
 {
-	COMPAPP::_0x74BCCEB233AD95B2(-466562563, MISC::GET_HASH_KEY(sParam0));
-	COMPAPP::_0x74BCCEB233AD95B2(1885309238, MISC::GET_HASH_KEY(sParam1));
-	COMPAPP::_0x74BCCEB233AD95B2(-826961056, iParam2);
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXT"), MISC::GET_HASH_KEY(sParam0));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTUREDICT"), MISC::GET_HASH_KEY(sParam1));
+	COMPAPP::_0x74BCCEB233AD95B2(joaat("FEEDTEXTURENAME"), iParam2);
 }
 
 bool func_38(int iParam0, int iParam1, bool bParam2)

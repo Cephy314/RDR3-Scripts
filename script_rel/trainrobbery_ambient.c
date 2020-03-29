@@ -121,7 +121,7 @@ void __EntryFunction__()
 	if (func_1(vScriptParam_0.x) || vScriptParam_0.x == 14)
 	{
 		Local_718 = vScriptParam_0.x;
-		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-686154976, true);
+		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("TRAIN_AMB_BOX01"), true);
 		func_2(&uLocal_1839, 1);
 		func_3(&uLocal_1839, 1);
 		func_4(&uLocal_1839, 1);
@@ -204,7 +204,7 @@ void __EntryFunction__()
 					func_33(&Local_718, &(Local_718.f_1102));
 					func_34(Global_40.f_8863[87], 4);
 					func_35();
-					TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(2045433246, true);
+					TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LEVDES_CMPTRAINROB_2"), true);
 					func_36(&Local_718);
 					func_37(&Local_718);
 					func_38(&Local_718);
@@ -622,8 +622,8 @@ void func_18()
 			VEHICLE::_0xA72B1BF3857B94D7(&(Local_718.f_1[0 /*22*/]), 0);
 		}
 	}
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(-686154976, true);
-	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(2045433246, false);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("TRAIN_AMB_BOX01"), true);
+	TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(joaat("LEVDES_CMPTRAINROB_2"), false);
 	iVar7 = 0;
 	while (iVar7 < 4)
 	{
@@ -1331,7 +1331,7 @@ int func_44()
 						if (!func_43(uLocal_716, 8))
 						{
 							EVENT::REMOVE_SHOCKING_EVENT(iLocal_610);
-							iLocal_610 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(-1905235087, Global_35, 0f, 30f, 40f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
+							iLocal_610 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_SURPRISING"), Global_35, 0f, 30f, 40f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
 							func_12(&uLocal_716, 8, 1);
 						}
 					}
@@ -1340,7 +1340,7 @@ int func_44()
 						EVENT::REMOVE_SHOCKING_EVENT(iLocal_610);
 						iLocal_610 = -1;
 						func_12(&uLocal_716, 8, 0);
-						EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(-1905235087, Global_35, 10f, 10f, 15f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
+						EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_SURPRISING"), Global_35, 10f, 10f, 15f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
 						bVar7 = true;
 					}
 					if (iVar3 != iLocal_603 || bVar7)
@@ -1624,11 +1624,11 @@ void func_52(int iParam0, int iParam1)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(((iParam0->f_941[iVar0 /*52*/])->f_3[0 /*12*/])->f_8))
 		{
-			(iParam0->f_941[iVar0 /*52*/])->f_1 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(((iParam0->f_941[iVar0 /*52*/])->f_3[0 /*12*/])->f_8, 45887683, func_138(0), 0f, 0, 0, 0);
+			(iParam0->f_941[iVar0 /*52*/])->f_1 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(((iParam0->f_941[iVar0 /*52*/])->f_3[0 /*12*/])->f_8, joaat("RANSACK_SAFE"), func_138(0), 0f, 0, 0, 0);
 		}
 		else
 		{
-			(iParam0->f_941[iVar0 /*52*/])->f_1 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(&(iParam0->f_1[&iParam0->f_941[iVar0 /*52*/] /*22*/]), 45887683, func_138(1), -90f, 0, 0, 0);
+			(iParam0->f_941[iVar0 /*52*/])->f_1 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(&(iParam0->f_1[&iParam0->f_941[iVar0 /*52*/] /*22*/]), joaat("RANSACK_SAFE"), func_138(1), -90f, 0, 0, 0);
 		}
 	}
 }
@@ -2122,7 +2122,7 @@ int func_64()
 	}
 	Global_1430221->f_2 = 1;
 	func_139(&Local_718, iLocal_603, &vLocal_627, &uLocal_1839, &iLocal_1867, &uLocal_716, &uLocal_717, &iLocal_606, Local_15[0 /*52*/], Local_432[0 /*21*/], 1, !func_165(&Local_718, iLocal_603));
-	EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(1498498500, Global_35, 5f, 20f, 10f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
+	EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_ALARMING"), Global_35, 5f, 20f, 10f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
 	func_81(&(Local_718.f_1106));
 	func_12(&uLocal_716, 65536, 1);
 	func_81(vLocal_627[14 /*3*/]);
@@ -2226,7 +2226,7 @@ void func_70()
 				}
 				else
 				{
-					LAW::_0x75CBF20BA47E4F89(Global_36, -867256593);
+					LAW::_0x75CBF20BA47E4F89(Global_36, joaat("LAW_CUSTOM_TRAIN_ROBBERY"));
 				}
 			}
 			LAW::_0x987BE590FB9D41E5(1);
@@ -2378,7 +2378,7 @@ void func_73()
 						}
 						else
 						{
-							LAW::_0x75CBF20BA47E4F89(Global_36, -867256593);
+							LAW::_0x75CBF20BA47E4F89(Global_36, joaat("LAW_CUSTOM_TRAIN_ROBBERY"));
 						}
 					}
 					LAW::_0x987BE590FB9D41E5(1);
@@ -6255,7 +6255,7 @@ void func_239(int iParam0)
 			}
 			else
 			{
-				LAW::_0x75CBF20BA47E4F89(Global_36, -867256593);
+				LAW::_0x75CBF20BA47E4F89(Global_36, joaat("LAW_CUSTOM_TRAIN_ROBBERY"));
 			}
 		}
 		LAW::_0x987BE590FB9D41E5(1);
@@ -7202,7 +7202,7 @@ int func_265(int iParam0)
 	{
 		return 0;
 	}
-	if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(1498498500, Global_36, 1f) && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(1498498500, ENTITY::GET_ENTITY_COORDS(&(Local_718.f_310[iParam0 /*14*/]), true, false), 10f))
+	if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_BEAT_ALARMING"), Global_36, 1f) && EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_BEAT_ALARMING"), ENTITY::GET_ENTITY_COORDS(&(Local_718.f_310[iParam0 /*14*/]), true, false), 10f))
 	{
 		return 1;
 	}
@@ -17492,7 +17492,7 @@ int func_621(bool bParam0)
 	{
 		return 0;
 	}
-	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == 1690225020) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
+	if ((((((((iVar0 == joaat("WORLD_PLAYER_SLEEP_GROUND") || iVar0 == joaat("PROP_PLAYER_SLEEP_A_FRAME_TENT_PLAYER_CAMPS")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_ARM")) || iVar0 == joaat("WORLD_HUMAN_SLEEP_GROUND_PILLOW")) || iVar0 == joaat("WORLD_ANIMAL_DOG_SLEEPING")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW")) || iVar0 == joaat("PROP_PLAYER_PRPTY_SAVE_GAME")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_LEFT")) || iVar0 == joaat("PROP_HUMAN_SLEEP_BED_PILLOW_RIGHT"))
 	{
 		return 1;
 	}

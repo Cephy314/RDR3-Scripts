@@ -3364,7 +3364,7 @@ void func_125()
 		{
 			(Local_110.f_18.f_4[iVar0 /*2*/])->f_1 = NETWORK::NET_TO_PED(&(Local_0.f_7.f_3[iVar0]));
 			iVar1 = func_188(iVar0);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, -767591988);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar1, joaat("REL_WILD_ANIMAL"));
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar1))
 			{
 				switch (iVar0)
@@ -4892,7 +4892,7 @@ void func_226(int iParam0)
 			Var4.f_11 = -1082130432;
 			Var4.f_12 = -1;
 			Var4.f_13 = -1;
-			Var4 = 1498498500;
+			Var4 = joaat("EVENT_SHOCKING_BEAT_ALARMING");
 			Var4.f_1 = (Local_110.f_18.f_4[0 /*2*/])->f_1;
 			Local_110.f_18.f_7 = EVENT::_0xCA1315C33B9A2847(&Var4);
 			if (func_239(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), (Local_110.f_18.f_4[0 /*2*/])->f_1, 1, 1) < 125f)
@@ -7390,7 +7390,7 @@ int func_341(int iParam0)
 			return 7;
 		case joaat("GUNSLINGER"):
 			return 8;
-		case 408825843:
+		case joaat("OUTLAW"):
 			return 9;
 		case joaat("HUNTER"):
 			return 10;
@@ -7402,7 +7402,7 @@ int func_341(int iParam0)
 			return 13;
 		case 751663875:
 			return 14;
-		case 1766283257:
+		case joaat("MOONSHINER"):
 			return 15;
 		case -269943670:
 			return 16;
