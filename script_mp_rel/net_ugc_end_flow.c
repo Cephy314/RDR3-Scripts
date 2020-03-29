@@ -5822,9 +5822,9 @@ void func_254(int iParam0, bool bParam1, var uParam2)
 			{
 				func_285(-1484676996, bParam1);
 			}
-			func_285(2075683947, bParam1);
+			func_285(joaat("MP001_MP_REVENGE1_MERCER"), bParam1);
 			func_285(1646485471, bParam1);
-			func_287(2075683947, bParam1);
+			func_287(joaat("MP001_MP_REVENGE1_MERCER"), bParam1);
 			func_286("MS_MP001_MP_REVENGE01", bParam1);
 			break;
 		case 16:
@@ -5838,15 +5838,15 @@ void func_254(int iParam0, bool bParam1, var uParam2)
 			break;
 		case 64:
 			func_285(-200270658, bParam1);
-			func_285(-127497991, bParam1);
+			func_285(joaat("MP001_GUNVOUTDECISION03_02"), bParam1);
 			func_286("MS_MP001_GUNVOUTDECISION03", bParam1);
-			func_287(-127497991, bParam1);
+			func_287(joaat("MP001_GUNVOUTDECISION03_02"), bParam1);
 			break;
 		case 256:
 			func_285(331698185, bParam1);
 			break;
 		case 128:
-			func_287(-393752274, bParam1);
+			func_287(joaat("MP001_MP_GUN1"), bParam1);
 			break;
 		case 512:
 			func_285(-770646513, bParam1);

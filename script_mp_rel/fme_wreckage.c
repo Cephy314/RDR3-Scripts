@@ -9830,13 +9830,13 @@ int func_413()
 			switch (iVar0)
 			{
 				case joaat("COMMON"):
-					iVar2 = -1812392162;
+					iVar2 = joaat("HEIRLOOM");
 					break;
 				case joaat("UNCOMMON"):
-					iVar2 = -1812392162;
+					iVar2 = joaat("HEIRLOOM");
 					break;
 				case joaat("RARE"):
-					iVar2 = -1812392162;
+					iVar2 = joaat("HEIRLOOM");
 					break;
 			}
 			break;
@@ -22188,11 +22188,11 @@ int func_1024(int iParam0, bool bParam1, int iParam2)
 			switch (iParam0)
 			{
 				case joaat("COMMON"):
-					return -1812392162;
+					return joaat("HEIRLOOM");
 				case joaat("UNCOMMON"):
-					return -1812392162;
+					return joaat("HEIRLOOM");
 				case joaat("RARE"):
-					return -1812392162;
+					return joaat("HEIRLOOM");
 				default:
 					break;
 			}
@@ -22329,7 +22329,7 @@ int func_1025(int iParam0)
 					break;
 			}
 			break;
-		case -1812392162:
+		case joaat("HEIRLOOM"):
 			iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 13);
 			switch (iVar0)
 			{
@@ -44176,19 +44176,19 @@ int func_1868(int iParam0)
 			iVar0 = joaat("GOLD");
 			break;
 		case 2:
-			iVar0 = -1599460565;
+			iVar0 = joaat("MISSION_STORY");
 			break;
 		case 3:
-			iVar0 = 1610555441;
+			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
 			iVar0 = 2080488347;
 			break;
 		case 5:
-			iVar0 = 1107336882;
+			iVar0 = joaat("MISSION_MINIGAME");
 			break;
 		case 6:
-			iVar0 = -1307562954;
+			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
 			iVar0 = 1198585370;

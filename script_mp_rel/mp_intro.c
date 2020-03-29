@@ -13012,13 +13012,13 @@ int func_125(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -716370751;
+			return joaat("MP001_MP_JESSICACAMP_RHODES");
 		case 1:
-			return -2053832767;
+			return joaat("MP001_MP_JESSICACAMP_VAL");
 		case 2:
-			return 372806894;
+			return joaat("MP001_MP_JESSICACAMP_BLACKWATER");
 		case 3:
-			return -1534577778;
+			return joaat("MP001_MP_JESSICACAMP_TUMBLEWEED");
 		default:
 			break;
 	}
@@ -13346,13 +13346,13 @@ int func_142(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -2024941402;
+			return joaat("MP001_MP_INTRO_GANG_RHODES4");
 		case 1:
-			return -50297425;
+			return joaat("MP001_MP_INTRO_GANG_VALENTINE2");
 		case 2:
-			return 536714458;
+			return joaat("MP001_MP_INTRO_GANG_BLACKWATER3");
 		case 3:
-			return 2068117822;
+			return joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1");
 		default:
 			break;
 	}
@@ -50403,19 +50403,19 @@ int func_1509(int iParam0)
 			iVar0 = joaat("GOLD");
 			break;
 		case 2:
-			iVar0 = -1599460565;
+			iVar0 = joaat("MISSION_STORY");
 			break;
 		case 3:
-			iVar0 = 1610555441;
+			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
 			iVar0 = 2080488347;
 			break;
 		case 5:
-			iVar0 = 1107336882;
+			iVar0 = joaat("MISSION_MINIGAME");
 			break;
 		case 6:
-			iVar0 = -1307562954;
+			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
 			iVar0 = 1198585370;
@@ -76913,7 +76913,7 @@ int func_2440(int iParam0, int iParam1, int iParam2, bool bParam3)
 		case joaat("CHARACTER_RANK_TRADER"):
 			*iParam1 = 11;
 			break;
-		case 1371028520:
+		case joaat("CHARACTER_RANK_MOONSHINER"):
 			*iParam1 = 15;
 			break;
 	}
@@ -80632,7 +80632,7 @@ int func_2549()
 	{
 		return 0;
 	}
-	if (COLLECTION::_0x6BAB7ACED1017204(-534000547, 0))
+	if (COLLECTION::_0x6BAB7ACED1017204(joaat("WEEKLY_COLLECTABLES"), 0))
 	{
 		return 0;
 	}
@@ -88259,10 +88259,10 @@ void func_2814(var uParam0, var uParam1)
 
 	func_3185(uParam0, uParam1);
 	func_1418(uParam0, -1, 1);
-	COLLECTION::_0x0B6D275D2F242E17(-534000547, 0, 1);
+	COLLECTION::_0x0B6D275D2F242E17(joaat("WEEKLY_COLLECTABLES"), 0, 1);
 	if (TELEMETRY::_0xF184B3ECE36219CF(uParam0->f_2047, &uVar0))
 	{
-		TELEMETRY::_0x4AC38DFD286DAD14(&uVar0, uParam1->f_7, -534000547, 0, func_2203(uParam0->f_4), 0, 1);
+		TELEMETRY::_0x4AC38DFD286DAD14(&uVar0, uParam1->f_7, joaat("WEEKLY_COLLECTABLES"), 0, func_2203(uParam0->f_4), 0, 1);
 	}
 	if (!func_1703(-858931429, &Var4, 0, 0, 0, 0))
 	{
@@ -90481,7 +90481,7 @@ int func_2898(int iParam0)
 		case 14:
 			return -471215553 /* GXTEntry: "Club Rewards" */;
 		case 15:
-			return 1371028520;
+			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
 			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:

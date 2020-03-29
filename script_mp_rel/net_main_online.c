@@ -10613,7 +10613,7 @@ int func_441(int iParam0)
 			}
 			break;
 		case 1238086793:
-			if (!func_697(-414301703, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_LAKAY"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10625,7 +10625,7 @@ int func_441(int iParam0)
 			}
 			break;
 		case 1302228510:
-			if (!func_697(-1809365172, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_BEAVERHOLLOW"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10641,19 +10641,19 @@ int func_441(int iParam0)
 			}
 			break;
 		case -108780030:
-			if (!func_697(-2051059045, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_FARMHOUSE"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 1698972798:
-			if (!func_697(-1408478050, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_MOSSYFLATS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case -1340339190:
-			if (!func_697(-612173099, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_ROCKY_SEVEN"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10677,7 +10677,7 @@ int func_441(int iParam0)
 			}
 			break;
 		case -693828600:
-			if (!func_697(1502951187, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_FORTRIGGS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10707,7 +10707,7 @@ int func_441(int iParam0)
 			}
 			break;
 		case 1159471771:
-			if (!func_697(830856441, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_HID_TALLTREES"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10743,19 +10743,19 @@ int func_441(int iParam0)
 			}
 			break;
 		case 929582877:
-			if (!func_697(-1934886317, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MIN_HID_MANTECAFALLS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case -911126844:
-			if (!func_697(993438435, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case -355531636:
-			if (!func_697(1495728629, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MIN_HID_REPENTANCE"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10791,67 +10791,67 @@ int func_441(int iParam0)
 			}
 			break;
 		case 619839857:
-			if (!func_697(-1521897637, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MIN_HID_GAPTOOTH"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 2113625508:
-			if (!func_697(-716370751, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_JESSICACAMP_RHODES"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 1549124796:
-			if (!func_697(-2053832767, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_JESSICACAMP_VAL"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case -502473159:
-			if (!func_697(372806894, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_JESSICACAMP_BLACKWATER"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 229371495:
-			if (!func_697(-1534577778, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case -781631220:
-			if (!func_697(-2024941402, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_INTRO_GANG_RHODES4"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 1708045337:
-			if (!func_697(-50297425, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_INTRO_GANG_VALENTINE2"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 1166612791:
-			if (!func_697(536714458, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 74872959:
-			if (!func_697(2068117822, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 1744443559:
-			if (!func_697(-576687258, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_HRT_HILLTOP"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case 509781469:
-			if (!func_697(226557169, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_HEARTLANDS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10863,7 +10863,7 @@ int func_441(int iParam0)
 			}
 			break;
 		case -524787708:
-			if (!func_697(1856368424, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_GRT_PLAINS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10875,19 +10875,19 @@ int func_441(int iParam0)
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS"):
-			if (!func_697(1104817207, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_BGV_TWO_ROCKS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE"):
-			if (!func_697(478888800, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_GAP_RIDGE"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH"):
-			if (!func_697(1955414013, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_GAP_BREACH"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10905,19 +10905,19 @@ int func_441(int iParam0)
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_LITTLE_CREEK"):
-			if (!func_697(-605808708, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_LITTLE_CREEK"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_RADLEYS_PASTURE"):
-			if (!func_697(-100150000, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_RADLEYS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD"):
-			if (!func_697(-320403109, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_HENNIGANS"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10929,13 +10929,13 @@ int func_441(int iParam0)
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_NEW_HANOVER"):
-			if (!func_697(-331965904, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_NEW_HANOVER"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH"):
-			if (!func_697(127191252, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP004_CAMPDEF_BLUEWATER"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -10953,7 +10953,7 @@ int func_441(int iParam0)
 			}
 			break;
 		case -2066272360:
-			if (!func_697(-1973910443, 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
+			if (!func_697(joaat("MP001_REG_BGV0_MP_THEHUNT_CLUE01"), 1120403456 /* Float: 100f */, 1133084672 /* Float: 275f */))
 			{
 				return 0;
 			}
@@ -26770,19 +26770,19 @@ int func_1188(int iParam0)
 			iVar0 = joaat("GOLD");
 			break;
 		case 2:
-			iVar0 = -1599460565;
+			iVar0 = joaat("MISSION_STORY");
 			break;
 		case 3:
-			iVar0 = 1610555441;
+			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
 			iVar0 = 2080488347;
 			break;
 		case 5:
-			iVar0 = 1107336882;
+			iVar0 = joaat("MISSION_MINIGAME");
 			break;
 		case 6:
-			iVar0 = -1307562954;
+			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
 			iVar0 = 1198585370;

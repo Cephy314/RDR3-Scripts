@@ -15937,9 +15937,9 @@ void func_510(int iParam0, bool bParam1, var uParam2)
 			{
 				func_925(-1484676996, bParam1);
 			}
-			func_925(2075683947, bParam1);
+			func_925(joaat("MP001_MP_REVENGE1_MERCER"), bParam1);
 			func_925(1646485471, bParam1);
-			func_927(2075683947, bParam1);
+			func_927(joaat("MP001_MP_REVENGE1_MERCER"), bParam1);
 			func_926("MS_MP001_MP_REVENGE01", bParam1);
 			break;
 		case 16:
@@ -15953,15 +15953,15 @@ void func_510(int iParam0, bool bParam1, var uParam2)
 			break;
 		case 64:
 			func_925(-200270658, bParam1);
-			func_925(-127497991, bParam1);
+			func_925(joaat("MP001_GUNVOUTDECISION03_02"), bParam1);
 			func_926("MS_MP001_GUNVOUTDECISION03", bParam1);
-			func_927(-127497991, bParam1);
+			func_927(joaat("MP001_GUNVOUTDECISION03_02"), bParam1);
 			break;
 		case 256:
 			func_925(331698185, bParam1);
 			break;
 		case 128:
-			func_927(-393752274, bParam1);
+			func_927(joaat("MP001_MP_GUN1"), bParam1);
 			break;
 		case 512:
 			func_925(-770646513, bParam1);
@@ -80120,19 +80120,19 @@ int func_2815(int iParam0)
 			iVar0 = joaat("GOLD");
 			break;
 		case 2:
-			iVar0 = -1599460565;
+			iVar0 = joaat("MISSION_STORY");
 			break;
 		case 3:
-			iVar0 = 1610555441;
+			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
 			iVar0 = 2080488347;
 			break;
 		case 5:
-			iVar0 = 1107336882;
+			iVar0 = joaat("MISSION_MINIGAME");
 			break;
 		case 6:
-			iVar0 = -1307562954;
+			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
 			iVar0 = 1198585370;

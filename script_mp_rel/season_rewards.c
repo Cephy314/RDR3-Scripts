@@ -4282,7 +4282,7 @@ int func_193(int iParam0)
 			return 13;
 		case -471215553: /* GXTEntry: "Club Rewards" */
 			return 14;
-		case 1371028520:
+		case joaat("CHARACTER_RANK_MOONSHINER"):
 			return 15;
 		case 1479488426: /* GXTEntry: "Club Rewards" */
 			return 16;
@@ -4320,7 +4320,7 @@ int func_195(int iParam0)
 		case 14:
 			return -471215553 /* GXTEntry: "Club Rewards" */;
 		case 15:
-			return 1371028520;
+			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
 			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
@@ -4646,7 +4646,7 @@ int func_215(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (!&iParam0->f_1[iVar0 /*2*/] == -664197965)
+		if (!&iParam0->f_1[iVar0 /*2*/] == joaat("UF_VISIBLE"))
 		{
 		}
 		else
@@ -4897,7 +4897,7 @@ int func_225(int iParam0)
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (!&iParam0->f_1[iVar0 /*2*/] == -664197965)
+		if (!&iParam0->f_1[iVar0 /*2*/] == joaat("UF_VISIBLE"))
 		{
 		}
 		else

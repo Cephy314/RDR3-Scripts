@@ -5782,7 +5782,7 @@ int func_207(int iParam0, int iParam1)
 			case 43:
 				return 1616712776;
 			case 44:
-				return -414301703;
+				return joaat("MP001_MP_HID_LAKAY");
 			case 45:
 				return 1423912753;
 			case 46:
@@ -5874,11 +5874,11 @@ int func_207(int iParam0, int iParam1)
 			case 89:
 				return 674386615;
 			case 90:
-				return 1502951187;
+				return joaat("MP001_MP_HID_FORTRIGGS");
 			case 91:
 				return 728379187;
 			case 92:
-				return -2053832767;
+				return joaat("MP001_MP_JESSICACAMP_VAL");
 			case 93:
 				return -1082668955;
 			case 94:
@@ -5886,7 +5886,7 @@ int func_207(int iParam0, int iParam1)
 			case 95:
 				return -772093381;
 			case 96:
-				return -1973910443;
+				return joaat("MP001_REG_BGV0_MP_THEHUNT_CLUE01");
 			case 97:
 				return 262039053;
 			case 98:
@@ -5904,17 +5904,17 @@ int func_207(int iParam0, int iParam1)
 			case 104:
 				return -856826868;
 			case 105:
-				return -1775985984;
+				return joaat("MP001_CLAY2_TUMBLEWEED01");
 			case 106:
-				return -1023478668;
+				return joaat("MP001_CLAY2_TUMBLEWEED02");
 			case 107:
 				return -200270658;
 			case 108:
-				return -127497991;
+				return joaat("MP001_GUNVOUTDECISION03_02");
 			case 109:
 				return -773956478;
 			case 110:
-				return 993438435;
+				return joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW");
 			case 111:
 				return 895825612;
 			case 112:
@@ -5952,7 +5952,7 @@ int func_207(int iParam0, int iParam1)
 			case 128:
 				return -1591103463;
 			case 129:
-				return -2051059045;
+				return joaat("MP001_MP_HID_FARMHOUSE");
 			case 130:
 				return -522767301;
 			case 131:
@@ -5974,7 +5974,7 @@ int func_207(int iParam0, int iParam1)
 			case 139:
 				return 1256749990;
 			case 140:
-				return -1521897637;
+				return joaat("MP001_MIN_HID_GAPTOOTH");
 			case 141:
 				return 967935536;
 			case 142:
@@ -6002,9 +6002,9 @@ int func_207(int iParam0, int iParam1)
 			case 153:
 				return -1974746920;
 			case 154:
-				return 536714458;
+				return joaat("MP001_MP_INTRO_GANG_BLACKWATER3");
 			case 155:
-				return 372806894;
+				return joaat("MP001_MP_JESSICACAMP_BLACKWATER");
 			case 156:
 				return -1122196204;
 			case 157:
@@ -6062,7 +6062,7 @@ int func_207(int iParam0, int iParam1)
 			case 183:
 				return -1255088882;
 			case 184:
-				return -1934886317;
+				return joaat("MP001_MIN_HID_MANTECAFALLS");
 			case 185:
 				return -1615749463;
 			case 186:
@@ -6084,11 +6084,11 @@ int func_207(int iParam0, int iParam1)
 			case 194:
 				return 1191283411;
 			case 195:
-				return 2054555425;
+				return joaat("MP001_REG_HEN_MP_CHOLLASP_HAMLINS");
 			case 196:
-				return 1627459254;
+				return joaat("MP001_REG_HEN_MP_CHOLLASP_HANGRK");
 			case 197:
-				return 1451629584;
+				return joaat("MP001_REG_HEN_MP_CHOLLASP_RATSNKE");
 			case 198:
 				return 989607914;
 			case 199:
@@ -6096,7 +6096,7 @@ int func_207(int iParam0, int iParam1)
 			case 200:
 				return -1935434583;
 			case 201:
-				return 636239983;
+				return joaat("MP001_REG_HEN_MP_GFH_BBANDIT");
 			case 202:
 				return 845427792;
 			case 203:
@@ -6158,15 +6158,15 @@ int func_207(int iParam0, int iParam1)
 			case 231:
 				return joaat("MP_INTRO_GANG_VALENTINE2");
 			case 232:
-				return 283731391;
+				return joaat("MP001_CLAY2_VALENTINE01");
 			case 233:
-				return -31342544;
+				return joaat("MP001_CLAY2_VALENTINE02");
 			case 234:
 				return 588746212;
 			case 235:
 				return -834411899;
 			case 236:
-				return -50297425;
+				return joaat("MP001_MP_INTRO_GANG_VALENTINE2");
 			case 237:
 				return 34626245;
 			case 238:
@@ -6180,15 +6180,15 @@ int func_207(int iParam0, int iParam1)
 			case 242:
 				return -1995447743;
 			case 243:
-				return 1495728629;
+				return joaat("MP001_MIN_HID_REPENTANCE");
 			case 244:
 				return -205102142;
 			case 245:
-				return 2068117822;
+				return joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1");
 			case 246:
 				return 1646485471;
 			case 247:
-				return 2075683947;
+				return joaat("MP001_MP_REVENGE1_MERCER");
 			case 248:
 				return joaat("AMB_CAMP_ROA_RC_CALLOWAY");
 			case 249:
@@ -6264,13 +6264,13 @@ int func_207(int iParam0, int iParam1)
 			case 284:
 				return joaat("MP_JESSICACAMP_RHODES");
 			case 285:
-				return -1809365172;
+				return joaat("MP001_MP_HID_BEAVERHOLLOW");
 			case 286:
-				return -1408478050;
+				return joaat("MP001_MP_HID_MOSSYFLATS");
 			case 287:
-				return -612173099;
+				return joaat("MP001_MP_HID_ROCKY_SEVEN");
 			case 288:
-				return -716370751;
+				return joaat("MP001_MP_JESSICACAMP_RHODES");
 			case 289:
 				return -567121002;
 			case 290:
@@ -6332,15 +6332,15 @@ int func_207(int iParam0, int iParam1)
 			case 318:
 				return joaat("RC_CREEPY");
 			case 319:
-				return -1440675331;
+				return joaat("MP001_CLAY2_RHODES01");
 			case 320:
 				return -848533860;
 			case 321:
 				return -1151968796;
 			case 322:
-				return -2024941402;
+				return joaat("MP001_MP_INTRO_GANG_RHODES4");
 			case 323:
-				return -1534577778;
+				return joaat("MP001_MP_JESSICACAMP_TUMBLEWEED");
 			case 324:
 				return -1211176762;
 			case 325:
@@ -6382,7 +6382,7 @@ int func_207(int iParam0, int iParam1)
 			case 343:
 				return -789679769;
 			case 344:
-				return 830856441;
+				return joaat("MP001_MP_HID_TALLTREES");
 			case 345:
 				return -497360377;
 			case 346:
@@ -6396,31 +6396,31 @@ int func_207(int iParam0, int iParam1)
 			case 350:
 				return 62512826;
 			case 351:
-				return 1104817207;
+				return joaat("MP004_CAMPDEF_BGV_TWO_ROCKS");
 			case 352:
-				return 127191252;
+				return joaat("MP004_CAMPDEF_BLUEWATER");
 			case 353:
 				return -1207218596;
 			case 354:
-				return 1955414013;
+				return joaat("MP004_CAMPDEF_GAP_BREACH");
 			case 355:
-				return 478888800;
+				return joaat("MP004_CAMPDEF_GAP_RIDGE");
 			case 356:
 				return 476687617;
 			case 357:
-				return 1856368424;
+				return joaat("MP004_CAMPDEF_GRT_PLAINS");
 			case 358:
-				return 226557169;
+				return joaat("MP004_CAMPDEF_HEARTLANDS");
 			case 359:
-				return -320403109;
+				return joaat("MP004_CAMPDEF_HENNIGANS");
 			case 360:
-				return -576687258;
+				return joaat("MP004_CAMPDEF_HRT_HILLTOP");
 			case 361:
-				return -605808708;
+				return joaat("MP004_CAMPDEF_LITTLE_CREEK");
 			case 362:
-				return -331965904;
+				return joaat("MP004_CAMPDEF_NEW_HANOVER");
 			case 363:
-				return -100150000;
+				return joaat("MP004_CAMPDEF_RADLEYS");
 			case 364:
 				return -116967529;
 			case 365:

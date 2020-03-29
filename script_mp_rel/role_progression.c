@@ -2667,7 +2667,7 @@ int func_148(int iParam0)
 		case 14:
 			return -471215553 /* GXTEntry: "Club Rewards" */;
 		case 15:
-			return 1371028520;
+			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
 			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
@@ -4452,7 +4452,7 @@ int func_241(var uParam0)
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		if (&uParam0->f_1[iVar0 /*2*/] == -664197965 && !(uParam0->f_1[iVar0 /*2*/])->f_1)
+		if (&uParam0->f_1[iVar0 /*2*/] == joaat("UF_VISIBLE") && !(uParam0->f_1[iVar0 /*2*/])->f_1)
 		{
 			return 0;
 		}
@@ -5461,19 +5461,19 @@ int func_287(int iParam0, var uParam1, var uParam2)
 	{
 		case 3:
 			*uParam1 = joaat("MP_ROLES_OVERVIEW_COLLECTOR");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		case 2:
 			*uParam1 = joaat("MP_ROLES_OVERVIEW_BOUNTY_HUNTER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		case 1:
 			*uParam1 = joaat("MP_ROLES_OVERVIEW_TRADER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		case 0:
 			*uParam1 = joaat("MP_ROLES_OVERVIEW_MOONSHINER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		default:
 			break;
@@ -5487,19 +5487,19 @@ int func_288(int iParam0, var uParam1, var uParam2)
 	{
 		case 3:
 			*uParam1 = joaat("MP_ROLES_COLLECTOR_TIER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		case 2:
 			*uParam1 = joaat("MP_ROLES_BOUNTY_HUNTER_TIER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		case 1:
 			*uParam1 = joaat("MP_ROLES_TRADER_TIER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		case 0:
 			*uParam1 = joaat("MP_ROLES_MOONSHINER_TIER");
-			*uParam2 = 1552534507;
+			*uParam2 = joaat("PM_ROLES_MP_INDEX");
 			return 1;
 		default:
 			break;

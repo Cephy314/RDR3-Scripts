@@ -19581,7 +19581,7 @@ int func_755(var uParam0, struct<39> Param1, var uParam40, var uParam41, var uPa
 	while (iVar23 < 7)
 	{
 		Var1.f_2 = joaat("HUD_TEXTURES");
-		Var1.f_3 = 1178498246;
+		Var1.f_3 = joaat("HUD_TIMER_CIRCLE");
 		Var1.f_1 = 0;
 		Var1 = 0;
 		if (iVar23 < iVar0)
@@ -51195,19 +51195,19 @@ int func_2117(int iParam0)
 			iVar0 = joaat("GOLD");
 			break;
 		case 2:
-			iVar0 = -1599460565;
+			iVar0 = joaat("MISSION_STORY");
 			break;
 		case 3:
-			iVar0 = 1610555441;
+			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
 			iVar0 = 2080488347;
 			break;
 		case 5:
-			iVar0 = 1107336882;
+			iVar0 = joaat("MISSION_MINIGAME");
 			break;
 		case 6:
-			iVar0 = -1307562954;
+			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
 			iVar0 = 1198585370;

@@ -29619,7 +29619,7 @@ int func_920(bool bParam0, int iParam1, bool bParam2, bool bParam3)
 		case joaat("CHARACTER_RANK_TRADER"):
 			*iParam1 = 11;
 			break;
-		case 1371028520:
+		case joaat("CHARACTER_RANK_MOONSHINER"):
 			*iParam1 = 15;
 			break;
 	}
@@ -45378,7 +45378,7 @@ int func_1404(int iParam0)
 		case 14:
 			return -471215553 /* GXTEntry: "Club Rewards" */;
 		case 15:
-			return 1371028520;
+			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
 			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
@@ -76014,7 +76014,7 @@ int func_2304()
 	{
 		return 0;
 	}
-	if (COLLECTION::_0x6BAB7ACED1017204(-534000547, 0))
+	if (COLLECTION::_0x6BAB7ACED1017204(joaat("WEEKLY_COLLECTABLES"), 0))
 	{
 		return 0;
 	}
@@ -82402,10 +82402,10 @@ void func_2530(var uParam0, var uParam1)
 
 	func_2893(uParam0, uParam1);
 	func_1182(uParam0, -1, 1);
-	COLLECTION::_0x0B6D275D2F242E17(-534000547, 0, 1);
+	COLLECTION::_0x0B6D275D2F242E17(joaat("WEEKLY_COLLECTABLES"), 0, 1);
 	if (TELEMETRY::_0xF184B3ECE36219CF(uParam0->f_2047, &uVar0))
 	{
-		TELEMETRY::_0x4AC38DFD286DAD14(&uVar0, uParam1->f_7, -534000547, 0, func_76(uParam0->f_4), 0, 1);
+		TELEMETRY::_0x4AC38DFD286DAD14(&uVar0, uParam1->f_7, joaat("WEEKLY_COLLECTABLES"), 0, func_76(uParam0->f_4), 0, 1);
 	}
 	if (!func_2715(-858931429, &Var4, 0, 0, 0, 0))
 	{

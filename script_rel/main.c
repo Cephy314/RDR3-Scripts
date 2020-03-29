@@ -49864,47 +49864,47 @@ int func_1312(int iParam0, int iParam1)
 			case 257:
 				return joaat("CHARACTER_CHALLENGE_RANK_POSSE_005");
 			case 258:
-				return -1804644353;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_BOUNTY_HUNTER_003");
 			case 259:
-				return -1338800241;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_BOUNTY_HUNTER_004");
 			case 260:
-				return 564226665;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_BOUNTY_HUNTER_005");
 			case 261:
-				return -90499713;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_002");
 			case 262:
-				return -467474289;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_003");
 			case 263:
-				return -132509591;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_004");
 			case 264:
-				return -428610275;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_005");
 			case 265:
-				return 481221010;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_006");
 			case 266:
-				return 185185864;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_007");
 			case 267:
-				return 1085514163;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_008");
 			case 268:
-				return 845153548;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_009");
 			case 269:
-				return -42034082;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_010");
 			case 270:
-				return -398691878;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_COLLECTOR_011");
 			case 271:
-				return 481179600;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_MOONSHINER_002");
 			case 272:
-				return 1109263023;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_MOONSHINER_003");
 			case 273:
-				return 993195225;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_MOONSHINER_004");
 			case 274:
-				return -469023093;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_MOONSHINER_008");
 			case 275:
-				return -1282121799;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_TRADER_002");
 			case 276:
-				return -1589265636;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_TRADER_003");
 			case 277:
-				return -908948395;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_TRADER_004");
 			case 278:
-				return 941156576;
+				return joaat("CHARACTER_CHALLENGE_RANK_ROLE_TRADER_005");
 			case 279:
 				return joaat("CHARACTER_CHALLENGE_RANK_SHARPSHOOTER_001A");
 			case 280:
@@ -50004,7 +50004,7 @@ int func_1312(int iParam0, int iParam1)
 			case 327:
 				return -55206167;
 			case 328:
-				return 1371028520;
+				return joaat("CHARACTER_RANK_MOONSHINER");
 			case 329:
 				return -9036837;
 			case 330:

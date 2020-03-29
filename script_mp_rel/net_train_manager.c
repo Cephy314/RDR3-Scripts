@@ -540,7 +540,7 @@ void func_33()
 	func_46(-1420724065, 1);
 	func_46(joaat("MACFARLANES_RANCH"), 1);
 	func_46(1603023256, 1);
-	func_46(-421036188, 1);
+	func_46(joaat("BACCHUS_STATION"), 1);
 	func_46(1431393516, 1);
 }
 
@@ -1105,7 +1105,7 @@ int func_60(int iParam0, int iParam1)
 			iVar0 = joaat("TRAINS_OLD_WEST03");
 			vVar1 = { -4916.622f, -3009.565f, -19.15694f };
 			break;
-		case -421036188:
+		case joaat("BACCHUS_STATION"):
 			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { 610.215f, 1662.165f, 186.3704f };
 			break;

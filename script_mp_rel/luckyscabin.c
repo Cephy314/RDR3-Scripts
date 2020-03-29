@@ -1111,7 +1111,7 @@ void func_60()
 				{
 					iLocal_20 = OBJECT::CREATE_OBJECT(joaat("P_STRONGBOX01X"), vLocal_21, false, false, false, true, true);
 				}
-				else if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-1513415814))
+				else if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("PROMO_GTAO_GATING_NAVY_REVOLVER")))
 				{
 					iLocal_20 = OBJECT::CREATE_OBJECT(joaat("P_STRONGBOX01X"), vLocal_21, false, false, false, true, true);
 				}
@@ -1128,7 +1128,7 @@ void func_60()
 					ENTITY::PLAY_ENTITY_ANIM(iLocal_20, "base_lockbox", "MECH_RANSACK@LOCKBOX@MED@0CM@OPENUNLOCKED@A", 1f, false, true, false, 0f, 0);
 					iLocal_28 = 2;
 				}
-				else if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-1513415814))
+				else if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("PROMO_GTAO_GATING_NAVY_REVOLVER")))
 				{
 					iLocal_28 = 2;
 				}

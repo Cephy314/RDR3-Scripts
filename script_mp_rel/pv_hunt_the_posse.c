@@ -9160,33 +9160,33 @@ void func_422(int iParam0)
 		case 1238086793:
 			if (func_692(1238086793))
 			{
-				func_696(-414301703);
+				func_696(joaat("MP001_MP_HID_LAKAY"));
 				func_696(1423912753);
 				func_697("nav_lakay_mp");
 				func_698("MS_HIDOUT_LAKAY");
-				func_699(-414301703);
+				func_699(joaat("MP001_MP_HID_LAKAY"));
 			}
 			else
 			{
-				func_700(-414301703);
+				func_700(joaat("MP001_MP_HID_LAKAY"));
 				func_696(1423912753);
 				func_697("MS_HIDOUT_LAKAY");
 				func_698("nav_lakay_mp");
-				func_701(-414301703);
+				func_701(joaat("MP001_MP_HID_LAKAY"));
 			}
 			break;
 		case 1302228510:
 			if (func_692(1302228510))
 			{
-				func_696(-1809365172);
+				func_696(joaat("MP001_MP_HID_BEAVERHOLLOW"));
 				func_698("MS_HIDOUT_BEAVERHOLLOW");
-				func_699(-1809365172);
+				func_699(joaat("MP001_MP_HID_BEAVERHOLLOW"));
 			}
 			else
 			{
-				func_700(-1809365172);
+				func_700(joaat("MP001_MP_HID_BEAVERHOLLOW"));
 				func_697("MS_HIDOUT_BEAVERHOLLOW");
-				func_701(-1809365172);
+				func_701(joaat("MP001_MP_HID_BEAVERHOLLOW"));
 			}
 			break;
 		case -460024530:
@@ -9204,23 +9204,23 @@ void func_422(int iParam0)
 		case -108780030:
 			if (func_692(-108780030))
 			{
-				func_696(-2051059045);
+				func_696(joaat("MP001_MP_HID_FARMHOUSE"));
 				func_698("MS_HIDOUT_FARMHOUSE");
-				func_699(-2051059045);
+				func_699(joaat("MP001_MP_HID_FARMHOUSE"));
 			}
 			else
 			{
-				func_700(-2051059045);
+				func_700(joaat("MP001_MP_HID_FARMHOUSE"));
 				func_697("MS_HIDOUT_FARMHOUSE");
-				func_701(-2051059045);
+				func_701(joaat("MP001_MP_HID_FARMHOUSE"));
 			}
 			break;
 		case -1340339190:
 			if (func_692(-1340339190))
 			{
-				func_696(-612173099);
+				func_696(joaat("MP001_MP_HID_ROCKY_SEVEN"));
 				func_698("MS_HIDOUT_ROCKYSEVEN");
-				func_699(-612173099);
+				func_699(joaat("MP001_MP_HID_ROCKY_SEVEN"));
 				if (!PATHFIND::DOES_NAVMESH_BLOCKING_OBJECT_EXIST(Global_1938579->f_21))
 				{
 					Global_1938579->f_21 = PATHFIND::ADD_NAVMESH_BLOCKING_OBJECT(2986.267f, 2204.891f, 165.9559f, 2.793124f, 2.804754f, 2.088651f, 120f, false, 7);
@@ -9228,9 +9228,9 @@ void func_422(int iParam0)
 			}
 			else
 			{
-				func_700(-612173099);
+				func_700(joaat("MP001_MP_HID_ROCKY_SEVEN"));
 				func_697("MS_HIDOUT_ROCKYSEVEN");
-				func_701(-612173099);
+				func_701(joaat("MP001_MP_HID_ROCKY_SEVEN"));
 				if (PATHFIND::DOES_NAVMESH_BLOCKING_OBJECT_EXIST(Global_1938579->f_21))
 				{
 					PATHFIND::REMOVE_NAVMESH_BLOCKING_OBJECT(&(Global_1938579->f_21));
@@ -9240,15 +9240,15 @@ void func_422(int iParam0)
 		case 1698972798:
 			if (func_692(1698972798))
 			{
-				func_696(-1408478050);
+				func_696(joaat("MP001_MP_HID_MOSSYFLATS"));
 				func_698("MS_HIDOUT_MOSSYFLATS");
-				func_699(-1408478050);
+				func_699(joaat("MP001_MP_HID_MOSSYFLATS"));
 			}
 			else
 			{
-				func_700(-1408478050);
+				func_700(joaat("MP001_MP_HID_MOSSYFLATS"));
 				func_697("MS_HIDOUT_MOSSYFLATS");
-				func_701(-1408478050);
+				func_701(joaat("MP001_MP_HID_MOSSYFLATS"));
 			}
 			break;
 		case -1296807958:
@@ -9256,13 +9256,13 @@ void func_422(int iParam0)
 			{
 				func_696(-1974746920);
 				func_698("MS_HIDOUT_QUAKERSCOVE");
-				func_699(1392405485);
+				func_699(joaat("MP001_MP_HID_QUAKERS_COVE"));
 			}
 			else
 			{
 				func_700(-1974746920);
 				func_697("MS_HIDOUT_QUAKERSCOVE");
-				func_701(1392405485);
+				func_701(joaat("MP001_MP_HID_QUAKERS_COVE"));
 			}
 			break;
 		case -1283202000:
@@ -9270,13 +9270,13 @@ void func_422(int iParam0)
 			{
 				func_696(1171226610);
 				func_698("MS_HIDOUT_THELOFT");
-				func_699(-1563742078);
+				func_699(joaat("MP001_MP_HID_THE_LOFT"));
 			}
 			else
 			{
 				func_700(1171226610);
 				func_697("MS_HIDOUT_THELOFT");
-				func_701(-1563742078);
+				func_701(joaat("MP001_MP_HID_THE_LOFT"));
 			}
 			break;
 		case -1610966108:
@@ -9284,13 +9284,13 @@ void func_422(int iParam0)
 			{
 				func_696(406701199);
 				func_698("MS_HIDOUT_CUMBERLANDFALLS");
-				func_699(1518168193);
+				func_699(joaat("MP001_MP_HID_CUMBERLANDFALLS"));
 			}
 			else
 			{
 				func_700(406701199);
 				func_697("MS_HIDOUT_CUMBERLANDFALLS");
-				func_701(1518168193);
+				func_701(joaat("MP001_MP_HID_CUMBERLANDFALLS"));
 			}
 			break;
 		case 1321892118:
@@ -9298,13 +9298,13 @@ void func_422(int iParam0)
 			{
 				func_696(-1151968796);
 				func_698("MS_HIDOUT_STILLWATERSTRANDS");
-				func_699(-604101326);
+				func_699(joaat("MP001_MP_HID_SILTWATERSTRAND"));
 			}
 			else
 			{
 				func_700(-1151968796);
 				func_697("MS_HIDOUT_STILLWATERSTRANDS");
-				func_701(-604101326);
+				func_701(joaat("MP001_MP_HID_SILTWATERSTRAND"));
 			}
 			break;
 		case -61411516:
@@ -9350,15 +9350,15 @@ void func_422(int iParam0)
 		case 1159471771:
 			if (func_692(1159471771))
 			{
-				func_696(830856441);
+				func_696(joaat("MP001_MP_HID_TALLTREES"));
 				func_698("MS_HIDOUT_TALLTREES");
-				func_699(830856441);
+				func_699(joaat("MP001_MP_HID_TALLTREES"));
 			}
 			else
 			{
-				func_700(830856441);
+				func_700(joaat("MP001_MP_HID_TALLTREES"));
 				func_697("MS_HIDOUT_TALLTREES");
-				func_701(830856441);
+				func_701(joaat("MP001_MP_HID_TALLTREES"));
 			}
 			break;
 		case 784360470:
@@ -9366,13 +9366,13 @@ void func_422(int iParam0)
 			{
 				func_696(-522767301);
 				func_698("MS_HIDOUT_SHIPROCK");
-				func_699(1057818333);
+				func_699(joaat("MP001_MP_HID_SHIP_ROCK"));
 			}
 			else
 			{
 				func_700(-522767301);
 				func_697("MS_HIDOUT_SHIPROCK");
-				func_701(1057818333);
+				func_701(joaat("MP001_MP_HID_SHIP_ROCK"));
 			}
 			break;
 		case 1881028477:
@@ -9392,13 +9392,13 @@ void func_422(int iParam0)
 			{
 				func_696(771896020);
 				func_698("MS_HIDOUT_SOLOMONSFOLLY");
-				func_699(2122765318);
+				func_699(joaat("MP001_MP_HID_SOLOMONS"));
 			}
 			else
 			{
 				func_700(771896020);
 				func_697("MS_HIDOUT_SOLOMONSFOLLY");
-				func_701(2122765318);
+				func_701(joaat("MP001_MP_HID_SOLOMONS"));
 			}
 			break;
 		case -1209597203:
@@ -9406,13 +9406,13 @@ void func_422(int iParam0)
 			{
 				func_696(895825612);
 				func_698("MS_HIDOUT_TWINROCKS");
-				func_699(453488895);
+				func_699(joaat("MP001_MP_HID_TWIN_ROCKS"));
 			}
 			else
 			{
 				func_700(895825612);
 				func_697("MS_HIDOUT_TWINROCKS");
-				func_701(453488895);
+				func_701(joaat("MP001_MP_HID_TWIN_ROCKS"));
 			}
 			break;
 		case -897750037:
@@ -9420,55 +9420,55 @@ void func_422(int iParam0)
 			{
 				func_696(1256749990);
 				func_698("MS_HIDOUT_CUERASECO");
-				func_699(621230359);
+				func_699(joaat("MP001_MP_HID_CUERASECO"));
 			}
 			else
 			{
 				func_700(1256749990);
 				func_697("MS_HIDOUT_CUERASECO");
-				func_701(621230359);
+				func_701(joaat("MP001_MP_HID_CUERASECO"));
 			}
 			break;
 		case 929582877:
 			if (func_692(929582877))
 			{
-				func_696(-1934886317);
+				func_696(joaat("MP001_MIN_HID_MANTECAFALLS"));
 				func_698("MS_HIDOUT_MANTECAFALLS");
-				func_699(-1934886317);
+				func_699(joaat("MP001_MIN_HID_MANTECAFALLS"));
 			}
 			else
 			{
-				func_700(-1934886317);
+				func_700(joaat("MP001_MIN_HID_MANTECAFALLS"));
 				func_697("MS_HIDOUT_MANTECAFALLS");
-				func_701(-1934886317);
+				func_701(joaat("MP001_MIN_HID_MANTECAFALLS"));
 			}
 			break;
 		case -911126844:
 			if (func_692(-911126844))
 			{
-				func_696(993438435);
+				func_696(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"));
 				func_698("MS_HIDOUT_RATTLESNAKEHOLLOW");
-				func_699(993438435);
+				func_699(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"));
 			}
 			else
 			{
-				func_700(993438435);
+				func_700(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"));
 				func_697("MS_HIDOUT_RATTLESNAKEHOLLOW");
-				func_701(993438435);
+				func_701(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"));
 			}
 			break;
 		case -355531636:
 			if (func_692(-355531636))
 			{
-				func_696(1495728629);
+				func_696(joaat("MP001_MIN_HID_REPENTANCE"));
 				func_698("MS_HIDOUT_REPENTANCE");
-				func_699(1495728629);
+				func_699(joaat("MP001_MIN_HID_REPENTANCE"));
 			}
 			else
 			{
-				func_700(1495728629);
+				func_700(joaat("MP001_MIN_HID_REPENTANCE"));
 				func_697("MS_HIDOUT_REPENTANCE");
-				func_701(1495728629);
+				func_701(joaat("MP001_MIN_HID_REPENTANCE"));
 			}
 			break;
 		case -1455998786:
@@ -9476,13 +9476,13 @@ void func_422(int iParam0)
 			{
 				func_696(967935536);
 				func_698("MS_HIDOUT_SEAOFCORONADO");
-				func_699(245110571);
+				func_699(joaat("MP001_MP_HID_CORONADO"));
 			}
 			else
 			{
 				func_700(967935536);
 				func_697("MS_HIDOUT_SEAOFCORONADO");
-				func_701(245110571);
+				func_701(joaat("MP001_MP_HID_CORONADO"));
 			}
 			break;
 		case -851626677:
@@ -9514,13 +9514,13 @@ void func_422(int iParam0)
 			{
 				func_696(-361709910);
 				func_698("MS_HIDOUT_CAMP_CHOLLA");
-				func_699(2123181135);
+				func_699(joaat("MP001_MP_HID_CHOLLASPRINGS"));
 			}
 			else
 			{
 				func_700(-361709910);
 				func_697("MS_HIDOUT_CAMP_CHOLLA");
-				func_701(2123181135);
+				func_701(joaat("MP001_MP_HID_CHOLLASPRINGS"));
 			}
 			break;
 		case 885777893:
@@ -9528,167 +9528,167 @@ void func_422(int iParam0)
 			{
 				func_696(-1323334072);
 				func_698("MS_HIDOUT_CAMP_PIKES");
-				func_699(968587226);
+				func_699(joaat("MP001_MP_HID_PIKESBASIN"));
 			}
 			else
 			{
 				func_700(-1323334072);
 				func_697("MS_HIDOUT_CAMP_PIKES");
-				func_701(968587226);
+				func_701(joaat("MP001_MP_HID_PIKESBASIN"));
 			}
 			break;
 		case 619839857:
 			if (func_692(619839857))
 			{
-				func_696(-1521897637);
+				func_696(joaat("MP001_MIN_HID_GAPTOOTH"));
 				func_698("MS_HIDOUT_GAPTOOTH");
-				func_699(-1521897637);
+				func_699(joaat("MP001_MIN_HID_GAPTOOTH"));
 			}
 			else
 			{
-				func_700(-1521897637);
+				func_700(joaat("MP001_MIN_HID_GAPTOOTH"));
 				func_697("MS_HIDOUT_GAPTOOTH");
-				func_701(-1521897637);
+				func_701(joaat("MP001_MIN_HID_GAPTOOTH"));
 			}
 			break;
 		case 2113625508:
 			if (func_692(2113625508))
 			{
-				func_696(-716370751);
+				func_696(joaat("MP001_MP_JESSICACAMP_RHODES"));
 				func_698("mp_intro_jessica_camp_rhodes");
-				func_699(-716370751);
+				func_699(joaat("MP001_MP_JESSICACAMP_RHODES"));
 			}
 			else
 			{
-				func_700(-716370751);
+				func_700(joaat("MP001_MP_JESSICACAMP_RHODES"));
 				func_697("mp_intro_jessica_camp_rhodes");
-				func_701(-716370751);
+				func_701(joaat("MP001_MP_JESSICACAMP_RHODES"));
 			}
 			break;
 		case 1549124796:
 			if (func_692(1549124796))
 			{
-				func_696(-2053832767);
+				func_696(joaat("MP001_MP_JESSICACAMP_VAL"));
 				func_698("mp_intro_jessica_camp_valentine");
-				func_699(-2053832767);
+				func_699(joaat("MP001_MP_JESSICACAMP_VAL"));
 			}
 			else
 			{
-				func_700(-2053832767);
+				func_700(joaat("MP001_MP_JESSICACAMP_VAL"));
 				func_697("mp_intro_jessica_camp_valentine");
-				func_701(-2053832767);
+				func_701(joaat("MP001_MP_JESSICACAMP_VAL"));
 			}
 			break;
 		case -502473159:
 			if (func_692(-502473159))
 			{
-				func_696(372806894);
+				func_696(joaat("MP001_MP_JESSICACAMP_BLACKWATER"));
 				func_698("mp_intro_jessica_camp_blackwater");
-				func_699(372806894);
+				func_699(joaat("MP001_MP_JESSICACAMP_BLACKWATER"));
 			}
 			else
 			{
-				func_700(372806894);
+				func_700(joaat("MP001_MP_JESSICACAMP_BLACKWATER"));
 				func_697("mp_intro_jessica_camp_blackwater");
-				func_701(372806894);
+				func_701(joaat("MP001_MP_JESSICACAMP_BLACKWATER"));
 			}
 			break;
 		case 229371495:
 			if (func_692(229371495))
 			{
-				func_696(-1534577778);
+				func_696(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"));
 				func_698("mp_intro_jessica_camp_tumbleweed");
-				func_699(-1534577778);
+				func_699(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"));
 			}
 			else
 			{
-				func_700(-1534577778);
+				func_700(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"));
 				func_697("mp_intro_jessica_camp_tumbleweed");
-				func_701(-1534577778);
+				func_701(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"));
 			}
 			break;
 		case -781631220:
 			if (func_692(-781631220))
 			{
-				func_696(-2024941402);
+				func_696(joaat("MP001_MP_INTRO_GANG_RHODES4"));
 				func_698("mp_intro_hideout_rhodes");
-				func_699(-2024941402);
+				func_699(joaat("MP001_MP_INTRO_GANG_RHODES4"));
 			}
 			else
 			{
-				func_700(-2024941402);
+				func_700(joaat("MP001_MP_INTRO_GANG_RHODES4"));
 				func_697("mp_intro_hideout_rhodes");
-				func_701(-2024941402);
+				func_701(joaat("MP001_MP_INTRO_GANG_RHODES4"));
 			}
 			break;
 		case 1708045337:
 			if (func_692(1708045337))
 			{
-				func_696(-50297425);
+				func_696(joaat("MP001_MP_INTRO_GANG_VALENTINE2"));
 				func_698("mp_intro_hideout_valentine");
-				func_699(-50297425);
+				func_699(joaat("MP001_MP_INTRO_GANG_VALENTINE2"));
 			}
 			else
 			{
-				func_700(-50297425);
+				func_700(joaat("MP001_MP_INTRO_GANG_VALENTINE2"));
 				func_697("mp_intro_hideout_valentine");
-				func_701(-50297425);
+				func_701(joaat("MP001_MP_INTRO_GANG_VALENTINE2"));
 			}
 			break;
 		case 1166612791:
 			if (func_692(1166612791))
 			{
-				func_696(536714458);
+				func_696(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"));
 				func_698("mp_intro_hideout_blackwater");
-				func_699(536714458);
+				func_699(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"));
 			}
 			else
 			{
-				func_700(536714458);
+				func_700(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"));
 				func_697("mp_intro_hideout_blackwater");
-				func_701(536714458);
+				func_701(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"));
 			}
 			break;
 		case 74872959:
 			if (func_692(74872959))
 			{
-				func_696(2068117822);
+				func_696(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"));
 				func_698("mp_intro_hideout_tumbleweed");
-				func_699(2068117822);
+				func_699(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"));
 			}
 			else
 			{
-				func_700(2068117822);
+				func_700(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"));
 				func_697("mp_intro_hideout_tumbleweed");
-				func_701(2068117822);
+				func_701(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"));
 			}
 			break;
 		case 1744443559:
 			if (func_692(1744443559))
 			{
-				func_696(-576687258);
+				func_696(joaat("MP004_CAMPDEF_HRT_HILLTOP"));
 				func_698("MP_CAMP_DEFEND_HEARTLANDS_HILLTOP");
-				func_699(-576687258);
+				func_699(joaat("MP004_CAMPDEF_HRT_HILLTOP"));
 			}
 			else
 			{
-				func_700(-576687258);
+				func_700(joaat("MP004_CAMPDEF_HRT_HILLTOP"));
 				func_697("MP_CAMP_DEFEND_HEARTLANDS_HILLTOP");
-				func_701(-576687258);
+				func_701(joaat("MP004_CAMPDEF_HRT_HILLTOP"));
 			}
 			break;
 		case 509781469:
 			if (func_692(509781469))
 			{
-				func_696(226557169);
+				func_696(joaat("MP004_CAMPDEF_HEARTLANDS"));
 				func_698("MP_CAMP_DEFEND_HEARTLANDS_CIRCLE");
-				func_699(226557169);
+				func_699(joaat("MP004_CAMPDEF_HEARTLANDS"));
 			}
 			else
 			{
-				func_700(226557169);
+				func_700(joaat("MP004_CAMPDEF_HEARTLANDS"));
 				func_697("MP_CAMP_DEFEND_HEARTLANDS_CIRCLE");
-				func_701(226557169);
+				func_701(joaat("MP004_CAMPDEF_HEARTLANDS"));
 			}
 			break;
 		case 885378256:
@@ -9708,15 +9708,15 @@ void func_422(int iParam0)
 		case -524787708:
 			if (func_692(-524787708))
 			{
-				func_696(1856368424);
+				func_696(joaat("MP004_CAMPDEF_GRT_PLAINS"));
 				func_698("MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE");
-				func_699(1856368424);
+				func_699(joaat("MP004_CAMPDEF_GRT_PLAINS"));
 			}
 			else
 			{
-				func_700(1856368424);
+				func_700(joaat("MP004_CAMPDEF_GRT_PLAINS"));
 				func_697("MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE");
-				func_701(1856368424);
+				func_701(joaat("MP004_CAMPDEF_GRT_PLAINS"));
 			}
 			break;
 		case -1861414976:
@@ -9736,43 +9736,43 @@ void func_422(int iParam0)
 		case joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS")))
 			{
-				func_696(1104817207);
+				func_696(joaat("MP004_CAMPDEF_BGV_TWO_ROCKS"));
 				func_698("WS_MP_CAMP_DEFEND_TWO_ROCKS");
-				func_699(1104817207);
+				func_699(joaat("MP004_CAMPDEF_BGV_TWO_ROCKS"));
 			}
 			else
 			{
-				func_700(1104817207);
+				func_700(joaat("MP004_CAMPDEF_BGV_TWO_ROCKS"));
 				func_697("WS_MP_CAMP_DEFEND_TWO_ROCKS");
-				func_701(1104817207);
+				func_701(joaat("MP004_CAMPDEF_BGV_TWO_ROCKS"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE")))
 			{
-				func_696(478888800);
+				func_696(joaat("MP004_CAMPDEF_GAP_RIDGE"));
 				func_698("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE");
-				func_699(478888800);
+				func_699(joaat("MP004_CAMPDEF_GAP_RIDGE"));
 			}
 			else
 			{
-				func_700(478888800);
+				func_700(joaat("MP004_CAMPDEF_GAP_RIDGE"));
 				func_697("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE");
-				func_701(478888800);
+				func_701(joaat("MP004_CAMPDEF_GAP_RIDGE"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH")))
 			{
-				func_696(1955414013);
+				func_696(joaat("MP004_CAMPDEF_GAP_BREACH"));
 				func_698("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH");
-				func_699(1955414013);
+				func_699(joaat("MP004_CAMPDEF_GAP_BREACH"));
 			}
 			else
 			{
-				func_700(1955414013);
+				func_700(joaat("MP004_CAMPDEF_GAP_BREACH"));
 				func_697("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH");
-				func_701(1955414013);
+				func_701(joaat("MP004_CAMPDEF_GAP_BREACH"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_CHOLLA_SPRINGS"):
@@ -9807,44 +9807,44 @@ void func_422(int iParam0)
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_LITTLE_CREEK")))
 			{
 				func_697("pro_empty_nav_tu003");
-				func_696(-605808708);
+				func_696(joaat("MP004_CAMPDEF_LITTLE_CREEK"));
 				func_698("WS_MP_CAMP_DEFEND_LITTLE_CREEK");
-				func_699(-605808708);
+				func_699(joaat("MP004_CAMPDEF_LITTLE_CREEK"));
 			}
 			else
 			{
-				func_700(-605808708);
+				func_700(joaat("MP004_CAMPDEF_LITTLE_CREEK"));
 				func_697("WS_MP_CAMP_DEFEND_LITTLE_CREEK");
 				func_698("pro_empty_nav_tu003");
-				func_701(-605808708);
+				func_701(joaat("MP004_CAMPDEF_LITTLE_CREEK"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_RADLEYS_PASTURE"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_RADLEYS_PASTURE")))
 			{
-				func_696(-100150000);
+				func_696(joaat("MP004_CAMPDEF_RADLEYS"));
 				func_698("WS_MP_CAMP_DEFEND_RADLEYS_PASTURE");
-				func_699(-100150000);
+				func_699(joaat("MP004_CAMPDEF_RADLEYS"));
 			}
 			else
 			{
-				func_700(-100150000);
+				func_700(joaat("MP004_CAMPDEF_RADLEYS"));
 				func_697("WS_MP_CAMP_DEFEND_RADLEYS_PASTURE");
-				func_701(-100150000);
+				func_701(joaat("MP004_CAMPDEF_RADLEYS"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD")))
 			{
-				func_696(-320403109);
+				func_696(joaat("MP004_CAMPDEF_HENNIGANS"));
 				func_698("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD");
-				func_699(-320403109);
+				func_699(joaat("MP004_CAMPDEF_HENNIGANS"));
 			}
 			else
 			{
-				func_700(-320403109);
+				func_700(joaat("MP004_CAMPDEF_HENNIGANS"));
 				func_697("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD");
-				func_701(-320403109);
+				func_701(joaat("MP004_CAMPDEF_HENNIGANS"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_TALL_TREES"):
@@ -9864,29 +9864,29 @@ void func_422(int iParam0)
 		case joaat("WS_MP_CAMP_DEFEND_NEW_HANOVER"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_NEW_HANOVER")))
 			{
-				func_696(-331965904);
+				func_696(joaat("MP004_CAMPDEF_NEW_HANOVER"));
 				func_698("WS_MP_CAMP_DEFEND_NEW_HANOVER");
-				func_699(-331965904);
+				func_699(joaat("MP004_CAMPDEF_NEW_HANOVER"));
 			}
 			else
 			{
-				func_700(-331965904);
+				func_700(joaat("MP004_CAMPDEF_NEW_HANOVER"));
 				func_697("WS_MP_CAMP_DEFEND_NEW_HANOVER");
-				func_701(-331965904);
+				func_701(joaat("MP004_CAMPDEF_NEW_HANOVER"));
 			}
 			break;
 		case joaat("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH"):
 			if (func_692(joaat("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH")))
 			{
-				func_696(127191252);
+				func_696(joaat("MP004_CAMPDEF_BLUEWATER"));
 				func_698("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH");
-				func_699(127191252);
+				func_699(joaat("MP004_CAMPDEF_BLUEWATER"));
 			}
 			else
 			{
-				func_700(127191252);
+				func_700(joaat("MP004_CAMPDEF_BLUEWATER"));
 				func_697("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH");
-				func_701(127191252);
+				func_701(joaat("MP004_CAMPDEF_BLUEWATER"));
 			}
 			break;
 		case 526003171:
@@ -9918,12 +9918,12 @@ void func_422(int iParam0)
 		case -2066272360:
 			if (func_692(-2066272360))
 			{
-				func_696(-1973910443);
+				func_696(joaat("MP001_REG_BGV0_MP_THEHUNT_CLUE01"));
 				func_698("MS_OTH_TALL_TREES");
 			}
 			else
 			{
-				func_700(-1973910443);
+				func_700(joaat("MP001_REG_BGV0_MP_THEHUNT_CLUE01"));
 				func_697("MS_OTH_TALL_TREES");
 			}
 			break;
@@ -9956,13 +9956,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM003"));
 				func_698("gcexc_nav_scm_003");
-				func_699(-1585767499);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM003"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM003"));
 				func_697("gcexc_nav_scm_003");
-				func_701(-1585767499);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM003"));
 			}
 			break;
 		case -554519756:
@@ -9970,13 +9970,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM005"));
 				func_698("gcexc_nav_scm_005");
-				func_699(-1089087766);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM005"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM005"));
 				func_697("gcexc_nav_scm_005");
-				func_701(-1089087766);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM005"));
 			}
 			break;
 		case 865557632:
@@ -9984,13 +9984,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM006"));
 				func_698("gcexc_nav_scm_006");
-				func_699(-1305559780);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM006"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM006"));
 				func_697("gcexc_nav_scm_006");
-				func_701(-1305559780);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM006"));
 			}
 			break;
 		case 1112996351:
@@ -9998,13 +9998,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM007"));
 				func_698("gcexc_nav_scm_007");
-				func_699(1751361927);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM007"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM007"));
 				func_697("gcexc_nav_scm_007");
-				func_701(1751361927);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM007"));
 			}
 			break;
 		case -1608141409:
@@ -10012,13 +10012,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM010"));
 				func_698("gcexc_nav_scm_010");
-				func_699(-198328307);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM010"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM010"));
 				func_697("gcexc_nav_scm_010");
-				func_701(-198328307);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM010"));
 			}
 			break;
 		case -311373772:
@@ -10026,13 +10026,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM013"));
 				func_698("gcexc_nav_scm_013");
-				func_699(1092704755);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM013"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM013"));
 				func_697("gcexc_nav_scm_013");
-				func_701(1092704755);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM013"));
 			}
 			break;
 		case 61537448:
@@ -10040,13 +10040,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM015"));
 				func_698("gcexc_nav_scm_015");
-				func_699(473665576);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM015"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM015"));
 				func_697("gcexc_nav_scm_015");
-				func_701(473665576);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM015"));
 			}
 			break;
 		case -925071604:
@@ -10054,13 +10054,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM017"));
 				func_698("gcexc_nav_scm_017");
-				func_699(2037697181);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM017"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM017"));
 				func_697("gcexc_nav_scm_017");
-				func_701(2037697181);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM017"));
 			}
 			break;
 		case 1195508693:
@@ -10068,13 +10068,13 @@ void func_422(int iParam0)
 			{
 				func_696(joaat("GANG_LEMOYNE_SCM019"));
 				func_698("gcexc_nav_scm_019");
-				func_699(1415118950);
+				func_699(joaat("MP_GANG_LEMOYNE_SCM019"));
 			}
 			else
 			{
 				func_700(joaat("GANG_LEMOYNE_SCM019"));
 				func_697("gcexc_nav_scm_019");
-				func_701(1415118950);
+				func_701(joaat("MP_GANG_LEMOYNE_SCM019"));
 			}
 			break;
 	}
@@ -37314,19 +37314,19 @@ int func_1621(int iParam0)
 			iVar0 = joaat("GOLD");
 			break;
 		case 2:
-			iVar0 = -1599460565;
+			iVar0 = joaat("MISSION_STORY");
 			break;
 		case 3:
-			iVar0 = 1610555441;
+			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
 			iVar0 = 2080488347;
 			break;
 		case 5:
-			iVar0 = 1107336882;
+			iVar0 = joaat("MISSION_MINIGAME");
 			break;
 		case 6:
-			iVar0 = -1307562954;
+			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
 			iVar0 = 1198585370;

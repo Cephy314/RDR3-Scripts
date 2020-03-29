@@ -9960,7 +9960,7 @@ void func_300(int iParam0, int iParam1, int iParam2, int iParam3)
 			if (iParam1 == joaat("SELL"))
 			{
 				bVar8 = iParam0->f_8;
-				if (COLLECTION::_0x6BAB7ACED1017204(-534000547, 0) && func_477(iParam0->f_8, 0))
+				if (COLLECTION::_0x6BAB7ACED1017204(joaat("WEEKLY_COLLECTABLES"), 0) && func_477(iParam0->f_8, 0))
 				{
 					bVar7 = true;
 				}
@@ -10441,7 +10441,7 @@ void func_301(int iParam0, int iParam1, int iParam2)
 			}
 			break;
 		case joaat("PROVISION_POCKET_WATCH_PLATINUM"):
-			if ((COLLECTION::_0x6BAB7ACED1017204(-534000547, 0) && !COLLECTION::_0x61BEFBA3CE7A3BC8(-534000547, 0)) && func_477(bVar41, 0))
+			if ((COLLECTION::_0x6BAB7ACED1017204(joaat("WEEKLY_COLLECTABLES"), 0) && !COLLECTION::_0x61BEFBA3CE7A3BC8(joaat("WEEKLY_COLLECTABLES"), 0)) && func_477(bVar41, 0))
 			{
 				iVar57 = func_520(0);
 				iVar58 = func_521(0);
@@ -11185,7 +11185,7 @@ void func_314(var uParam0)
 		Global_1272170->f_20.f_402 = -1;
 		Global_1272170->f_20.f_402.f_1 = 0;
 	}
-	if (iVar1 != -534000547)
+	if (iVar1 != joaat("WEEKLY_COLLECTABLES"))
 	{
 		uVar3 = COLLECTION::_0x755901C7598B97BC(iVar1, 0) + 1;
 		func_584(iVar1);
@@ -11200,9 +11200,9 @@ void func_314(var uParam0)
 		{
 			if (bVar0 == STATS::WEEKLY_COLLECTIBLE_GET_ITEM_SET_BUY_AWARD(joaat("FEATURE_PM_WEEKLY_COLLECTIBLES"), iVar4))
 			{
-				uVar3 = COLLECTION::_0x755901C7598B97BC(-534000547, 0) + 1;
+				uVar3 = COLLECTION::_0x755901C7598B97BC(joaat("WEEKLY_COLLECTABLES"), 0) + 1;
 				func_586(0, 0);
-				COLLECTION::_0xB9020EC89C07DF04(-534000547, 0, uVar3);
+				COLLECTION::_0xB9020EC89C07DF04(joaat("WEEKLY_COLLECTABLES"), 0, uVar3);
 				func_585(iVar2, *uParam0, bVar0, iVar1, uVar3, uParam0->f_6, 1);
 			}
 			iVar4++;
@@ -24834,7 +24834,7 @@ void func_491(bool bParam0, bool bParam1, bool bParam2)
 	{
 		return;
 	}
-	if (COLLECTION::_0x6BAB7ACED1017204(-534000547, 0) && func_477(bParam0, 0))
+	if (COLLECTION::_0x6BAB7ACED1017204(joaat("WEEKLY_COLLECTABLES"), 0) && func_477(bParam0, 0))
 	{
 		*bParam2 = 1;
 		func_522(bParam0, func_520(0), func_521(0));
@@ -25539,11 +25539,11 @@ void func_522(bool bParam0, int iParam1, int iParam2)
 	func_810(bParam0);
 	if (iParam2 < iParam1)
 	{
-		func_811(sVar0, MISC::_CREATE_VAR_STRING(2, sVar2, iParam2, iParam1), iVar5, iVar4, -534000547, MISC::_CREATE_VAR_STRING(2, "RECIPE_COLLECT_VIEW"));
+		func_811(sVar0, MISC::_CREATE_VAR_STRING(2, sVar2, iParam2, iParam1), iVar5, iVar4, joaat("WEEKLY_COLLECTABLES"), MISC::_CREATE_VAR_STRING(2, "RECIPE_COLLECT_VIEW"));
 	}
 	else if (iParam2 >= iParam1)
 	{
-		func_811(sVar0, MISC::_CREATE_VAR_STRING(2, sVar3, iParam1, iParam1), iVar5, iVar4, -534000547, MISC::_CREATE_VAR_STRING(2, "RECIPE_COLLECT_VIEW"));
+		func_811(sVar0, MISC::_CREATE_VAR_STRING(2, sVar3, iParam1, iParam1), iVar5, iVar4, joaat("WEEKLY_COLLECTABLES"), MISC::_CREATE_VAR_STRING(2, "RECIPE_COLLECT_VIEW"));
 	}
 }
 
@@ -26420,7 +26420,7 @@ void func_548(var uParam0)
 		case joaat("CHARACTER_RANK_TRADER"):
 		case joaat("CHARACTER_RANK_BOUNTY_HUNTER"):
 		case joaat("CHARACTER_RANK_COLLECTOR"):
-		case 1371028520:
+		case joaat("CHARACTER_RANK_MOONSHINER"):
 			if (uParam0->f_10 > 0)
 			{
 				func_834(uParam0->f_8);
@@ -26451,7 +26451,7 @@ int func_549(bool bParam0)
 			return 13;
 		case -471215553: /* GXTEntry: "Club Rewards" */
 			return 14;
-		case 1371028520:
+		case joaat("CHARACTER_RANK_MOONSHINER"):
 			return 15;
 		case 1479488426: /* GXTEntry: "Club Rewards" */
 			return 16;
@@ -26761,7 +26761,7 @@ void func_562(var uParam0, int iParam1, var uParam2, var uParam3, int iParam4)
 		case joaat("CHARACTER_RANK_TRADER"):
 		case joaat("CHARACTER_RANK_BOUNTY_HUNTER"):
 		case joaat("CHARACTER_RANK_COLLECTOR"):
-		case 1371028520:
+		case joaat("CHARACTER_RANK_MOONSHINER"):
 			if (uParam2->f_10 > 0)
 			{
 				func_834(uParam2->f_8);
@@ -39492,7 +39492,7 @@ int func_1105(int iParam0)
 		case 14:
 			return -471215553 /* GXTEntry: "Club Rewards" */;
 		case 15:
-			return 1371028520;
+			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
 			return 1479488426 /* GXTEntry: "Club Rewards" */;
 		case 17:
