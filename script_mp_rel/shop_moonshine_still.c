@@ -64090,7 +64090,7 @@ int func_2004(bool bParam0)
 
 var func_2005(int iParam0, int iParam1)
 {
-	return func_2569(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_2569(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_2006(struct<19> Param0, var uParam19, bool bParam20, bool bParam21)
@@ -91827,7 +91827,7 @@ int func_2557(int iParam0)
 		case 3:
 			return joaat("HEADER");
 		case 4:
-			return 1461677252;
+			return joaat("SHARD");
 		default:
 			break;
 	}
@@ -92157,13 +92157,13 @@ var func_2569(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, in
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2908());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2908());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2908());
 				break;
 		}

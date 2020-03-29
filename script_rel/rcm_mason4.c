@@ -3299,7 +3299,7 @@ int func_96(var uParam0, int iParam1)
 			}
 			bLocal_34 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2375.695f, -575.037f, 40.65823f, 0f, 0f, -20.15151f, 4.22899f, 6.990384f, 3.710475f, "Boat no-climb area");
 			PED::_0x7C00CFC48A782DC0(bLocal_34, bLocal_14, 0f, 0.85f, 0f, 0f, 0f, -93f, 2, 1);
-			bLocal_35 = VOLUME::_0x0EB78C2B156635B1(665633627, 2363.239f, -566.3253f, 41.09136f, 0f, 0f, -36.33905f, 1f, 1f, 1.518154f);
+			bLocal_35 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2363.239f, -566.3253f, 41.09136f, 0f, 0f, -36.33905f, 1f, 1f, 1.518154f);
 			PED::_0x7C00CFC48A782DC0(bLocal_35, bLocal_14, 0f, 0.75f, 0f, 0f, 0f, 0f, 2, 1);
 			func_304(4);
 			func_304(5);
@@ -3355,7 +3355,7 @@ int func_96(var uParam0, int iParam1)
 			ENTITY::_0x0918E3565C20F03C(bLocal_26, vVar2, 250f, 0, 1);
 			bLocal_34 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2375.695f, -575.037f, 40.65823f, 0f, 0f, -20.15151f, 4.22899f, 6.990384f, 3.710475f, "Boat no-climb area");
 			PED::_0x7C00CFC48A782DC0(bLocal_34, bLocal_14, 0f, 0.85f, 0f, 0f, 0f, -93f, 2, 1);
-			bLocal_35 = VOLUME::_0x0EB78C2B156635B1(665633627, 2363.239f, -566.3253f, 41.09136f, 0f, 0f, -36.33905f, 1f, 1f, 1.518154f);
+			bLocal_35 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2363.239f, -566.3253f, 41.09136f, 0f, 0f, -36.33905f, 1f, 1f, 1.518154f);
 			PED::_0x7C00CFC48A782DC0(bLocal_35, bLocal_14, 0f, 0.75f, 0f, 0f, 0f, 0f, 2, 1);
 			func_310(uParam0, 3);
 			func_306(uParam0, 12);
@@ -3690,7 +3690,7 @@ int func_107(var uParam0)
 	{
 		if (ANIMSCENE::_0x3AB6C7B0BB0DF4B1(bLocal_14, -1))
 		{
-			bLocal_35 = VOLUME::_0x0EB78C2B156635B1(665633627, 2363.239f, -566.3253f, 41.09136f, 0f, 0f, -36.33905f, 1f, 1f, 1.518154f);
+			bLocal_35 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2363.239f, -566.3253f, 41.09136f, 0f, 0f, -36.33905f, 1f, 1f, 1.518154f);
 			PED::_0x7C00CFC48A782DC0(bLocal_35, bLocal_14, 0f, 0.75f, 0f, 0f, 0f, 0f, 2, 1);
 		}
 	}
@@ -10754,7 +10754,7 @@ void func_343(var uParam0)
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_33))
 		{
-			iLocal_33 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2371.435f, -517.3098f, 42.15841f, 0f, 0f, 29.73112f, 7.333822f, 10.45136f, 4.222909f);
+			iLocal_33 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2371.435f, -517.3098f, 42.15841f, 0f, 0f, 29.73112f, 7.333822f, 10.45136f, 4.222909f);
 		}
 		if (((Local_48[1 /*45*/])->f_7 == 4 || (Local_48[1 /*45*/])->f_7 == 6) || (Local_48[1 /*45*/])->f_7 == 5)
 		{

@@ -8673,175 +8673,175 @@ struct<11> func_262(int iParam0)
 	switch (iParam0)
 	{
 		case 15:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 502.0502f, 1284.979f, 181.4051f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "BlindCassidyRandomEventBlock";
 			break;
 		case 16:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 495.042f, 1284.463f, 182.217f };
 			Var0.f_4 = { 0f, 0f, -175.784f };
 			Var0.f_7 = { 7.32f, 15.009f, 10f };
 			Var0.f_10 = "BlindCassidyTrigger";
 			break;
 		case 17:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 502.0502f, 1284.979f, 181.4051f };
 			Var0.f_4 = { 0f, 0f, -3.079914f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyStayAway";
 			break;
 		case 18:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 502.0502f, 1284.979f, 181.4051f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.85f, 1.85f, 10f };
 			Var0.f_10 = "BlindCassidyAntiHorse";
 			break;
 		case 19:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 502.0502f, 1284.979f, 181.4051f };
 			Var0.f_4 = { 0f, 0f, 40.09184f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyFocus";
 			break;
 		case 20:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 414.5646f, 412.7333f, 107.6299f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "BlindCassidyRandomEventBlock";
 			break;
 		case 21:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 418.393f, 419.451f, 107.6299f };
 			Var0.f_4 = { 0f, 0f, 60.32438f };
 			Var0.f_7 = { 7.722f, 13.559f, 10f };
 			Var0.f_10 = "BlindCassidyTrigger";
 			break;
 		case 22:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 414.5646f, 412.7333f, 107.6299f };
 			Var0.f_4 = { 0f, 0f, 62.24287f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyStayAway";
 			break;
 		case 23:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 414.5646f, 412.7333f, 107.6299f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.85f, 1.85f, 10f };
 			Var0.f_10 = "BlindCassidyAntiHorse";
 			break;
 		case 24:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 414.5646f, 412.7333f, 107.6299f };
 			Var0.f_4 = { 0f, 0f, 115.1113f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyFocus";
 			break;
 		case 25:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 2794.157f, 1406.62f, 82.3539f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "BlindCassidyRandomEventBlock";
 			break;
 		case 26:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2787.403f, 1410f, 82.354f };
 			Var0.f_4 = { 0f, 0f, 154.2904f };
 			Var0.f_7 = { 7.539f, 13.615f, 10f };
 			Var0.f_10 = "BlindCassidyTrigger";
 			break;
 		case 27:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 2794.157f, 1406.62f, 82.3539f };
 			Var0.f_4 = { 0f, 0f, 155.2096f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyStayAway";
 			break;
 		case 28:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2794.157f, 1406.62f, 82.3539f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.85f, 1.85f, 10f };
 			Var0.f_10 = "BlindCassidyAntiHorse";
 			break;
 		case 29:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2794.157f, 1406.62f, 82.3539f };
 			Var0.f_4 = { 0f, 0f, 83.2552f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyFocus";
 			break;
 		case 30:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -5342.735f, -2948.708f, 0.8175f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "BlindCassidyRandomEventBlock";
 			break;
 		case 31:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -5343.361f, -2941.974f, 0.8519f };
 			Var0.f_4 = { 0f, 0f, -84.35735f };
 			Var0.f_7 = { 6.745f, 15.282f, 10f };
 			Var0.f_10 = "BlindCassidyTrigger";
 			break;
 		case 32:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -5342.604f, -2949.041f, 0.8519f };
 			Var0.f_4 = { 0f, 0f, 1.309033f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyStayAway";
 			break;
 		case 33:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -5342.604f, -2949.041f, 0.8519f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.85f, 1.85f, 10f };
 			Var0.f_10 = "BlindCassidyAntiHorse";
 			break;
 		case 34:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -5342.735f, -2948.708f, 0.8175f };
 			Var0.f_4 = { 0f, 0f, 32.01331f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyFocus";
 			break;
 		case 35:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -1208.554f, -1229.683f, 74.7918f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "BlindCassidyRandomEventBlock";
 			break;
 		case 36:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1211.495f, -1221.953f, 75.375f };
 			Var0.f_4 = { 0f, 0f, -69.42678f };
 			Var0.f_7 = { 8.114f, 12.717f, 10f };
 			Var0.f_10 = "BlindCassidyTrigger";
 			break;
 		case 37:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -1209.312f, -1227.312f, 75.3753f };
 			Var0.f_4 = { 0f, 0f, 27.64894f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "BlindCassidyStayAway";
 			break;
 		case 38:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1209.312f, -1227.312f, 75.3753f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.85f, 1.85f, 10f };
 			Var0.f_10 = "BlindCassidyAntiHorse";
 			break;
 		case 39:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1208.554f, -1229.683f, 74.7918f };
 			Var0.f_4 = { 0f, 0f, 27.64894f };
 			Var0.f_7 = { 3f, 3f, 10f };

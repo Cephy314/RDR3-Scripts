@@ -35642,7 +35642,7 @@ bool func_763(char[4] cParam0)
 	{
 		PROPSET::_SET_PROPSET_AS_NO_LONGER_NEEDED(iLocal_874);
 	}
-	iLocal_983[15] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1243.121f, -431.4418f, 90.84356f, 0f, 0f, -19.07419f, 3.055812f, 7.347057f, 4.597671f);
+	iLocal_983[15] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1243.121f, -431.4418f, 90.84356f, 0f, 0f, -19.07419f, 3.055812f, 7.347057f, 4.597671f);
 	fLocal_332 = 0f;
 	func_1272(cParam0, 524288);
 	if (CAM::DOES_CAM_EXIST(iLocal_237) && CAM::IS_CAM_ACTIVE(iLocal_237))
@@ -52858,7 +52858,7 @@ void func_1264(char[4] cParam0)
 						PED::SET_PED_CONFIG_FLAG(&(Local_743[iVar0 /*8*/]), 256, true);
 						PED::SET_PED_CONFIG_FLAG(&(Local_743[iVar0 /*8*/]), 296, false);
 						ENTITY::FREEZE_ENTITY_POSITION(&(iLocal_977[0]), true);
-						iLocal_983[21] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(iLocal_977[0]), 0f, 3f, 0f), 0f, 0f, ENTITY::GET_ENTITY_HEADING(&(iLocal_977[0])), 3.861f, 4.016f, 3f);
+						iLocal_983[21] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(iLocal_977[0]), 0f, 3f, 0f), 0f, 0f, ENTITY::GET_ENTITY_HEADING(&(iLocal_977[0])), 3.861f, 4.016f, 3f);
 						TASK::TASK_LOOK_AT_ENTITY(&(Local_743[iVar0 /*8*/]), Global_35, -1, 0, 51, 0);
 						func_223(&((Local_743[iVar0 /*8*/])->f_4));
 						func_1745(Local_743[iVar0 /*8*/], 26);
@@ -56132,7 +56132,7 @@ void func_1328()
 		ENTITY::SET_ENTITY_INVINCIBLE(&(Local_254[2 /*11*/]), true);
 		ENTITY::SET_ENTITY_INVINCIBLE(&(Local_254[1 /*11*/]), true);
 		ENTITY::SET_ENTITY_INVINCIBLE(&(Local_254[0 /*11*/]), true);
-		iLocal_983[10] = VOLUME::_0x0EB78C2B156635B1(665633627, 1236.272f, -444.294f, 90.73862f, 0f, 0f, 0f, 2.5f, 2.5f, 3f);
+		iLocal_983[10] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1236.272f, -444.294f, 90.73862f, 0f, 0f, 0f, 2.5f, 2.5f, 3f);
 		PED::_0x7C00CFC48A782DC0(&(iLocal_983[10]), &(Local_254[2 /*11*/]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 		func_850(&uLocal_363, 2048);
 	}
@@ -56297,7 +56297,7 @@ void func_1331(char[4] cParam0)
 							if (func_1807(Global_35, &(iLocal_983[25]), 0, 1))
 							{
 								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, 1237.804f, -444.3607f, 89.473f, 1.75f, 20000, 0.25f, false, 0f);
-								iLocal_983[11] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1235.674f, -443.8727f, 91.03457f, 0f, 0f, 54.80621f, 2.667114f, 2.180691f, 3.221583f);
+								iLocal_983[11] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1235.674f, -443.8727f, 91.03457f, 0f, 0f, 54.80621f, 2.667114f, 2.180691f, 3.221583f);
 							}
 							TASK::TASK_GO_STRAIGHT_TO_COORD(&(Local_254[iVar0 /*11*/]), vVar1, 2f, 20000, vVar1.f_3.f_2, 1056964608, 0);
 							PED::SET_PED_CONFIG_FLAG(&(Local_254[iVar0 /*11*/]), 87, true);
@@ -56357,7 +56357,7 @@ void func_1331(char[4] cParam0)
 						if (func_1807(Global_35, &(iLocal_983[9]), 0, 1) && !VOLUME::_DOES_VOLUME_EXIST(&(iLocal_983[11])))
 						{
 							TASK::TASK_GO_STRAIGHT_TO_COORD(Global_35, 1237.804f, -444.3607f, 89.473f, 1.5f, 20000, 0f, 0.5f, 1);
-							iLocal_983[11] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1235.674f, -443.8727f, 91.03457f, 0f, 0f, 54.80621f, 2.667114f, 2.180691f, 3.221583f);
+							iLocal_983[11] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1235.674f, -443.8727f, 91.03457f, 0f, 0f, 54.80621f, 2.667114f, 2.180691f, 3.221583f);
 						}
 						if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_983[10])))
 						{
@@ -63729,7 +63729,7 @@ void func_1531(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2095(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

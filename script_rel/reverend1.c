@@ -58355,133 +58355,133 @@ int func_1483(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -339.929f, -356.376f, 88.408f };
 			vVar4 = { 0f, 0f, 28f };
 			vVar7 = { 33.5f, 8f, 5f };
 			break;
 		case 1:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -374.558f, -346.268f, 87.062f };
 			vVar4 = { 0f, 0f, 0f };
 			vVar7 = { 2f, 3f, 3f };
 			break;
 		case 2:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -381.14f, -352.612f, 87.311f };
 			vVar4 = { 0f, 0f, 27f };
 			vVar7 = { 15f, 20f, 3f };
 			break;
 		case 3:
-			iVar0 = 665633627;
+			iVar0 = joaat("VOLCYLINDER");
 			vVar1 = { -381.229f, -352.123f, 88.126f };
 			vVar4 = { 0f, 0f, 56f };
 			vVar7 = { 6.5f, 9.5f, 3f };
 			break;
 		case 4:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -322.31f, -357.775f, 88.408f };
 			vVar4 = { 0f, 0f, 28f };
 			vVar7 = { 4f, 11f, 5f };
 			break;
 		case 5:
-			iVar0 = 665633627;
+			iVar0 = joaat("VOLCYLINDER");
 			vVar1 = { -128.45f, -33.194f, 96.039f };
 			vVar4 = { 0f, 0f, 57f };
 			vVar7 = { 19f, 18f, 6f };
 			break;
 		case 6:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -451.7511f, -512.6439f, 57.25617f };
 			vVar4 = { 0f, 0f, 11.38473f };
 			vVar7 = { 187.0151f, 102.7882f, 91.90021f };
 			break;
 		case 7:
-			iVar0 = 665633627;
+			iVar0 = joaat("VOLCYLINDER");
 			vVar1 = { -119.5931f, -33.12778f, 96.039f };
 			vVar4 = { 0f, 0f, 57f };
 			vVar7 = { 46.76117f, 39.08008f, 6f };
 			break;
 		case 8:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -471.2429f, -408.499f, 88.60917f };
 			vVar4 = { 0f, 0f, -74.9402f };
 			vVar7 = { 77.59241f, 283.8267f, 21.12837f };
 			break;
 		case 9:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -529.6843f, -513.7991f, 55.06014f };
 			vVar4 = { 0f, 0f, -44.59846f };
 			vVar7 = { 127.0093f, 5.852345f, 42.39389f };
 			break;
 		case 10:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -505.3135f, -433.9754f, 81.1946f };
 			vVar4 = { 0f, 0f, 26.02015f };
 			vVar7 = { 193.8262f, 21.08619f, 19.7503f };
 			break;
 		case 11:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -545.3329f, -431.8244f, 56.69365f };
 			vVar4 = { 0f, -0.984935f, 20.06892f };
 			vVar7 = { 367.4153f, 394.7009f, 41.40752f };
 			break;
 		case 12:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -126.1637f, -46.11609f, 95.12919f };
 			vVar4 = { 0f, 0f, -1.397287f };
 			vVar7 = { 18.68625f, 15.57124f, 8.61804f };
 			break;
 		case 13:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -122.767f, -31.3733f, 95.14592f };
 			vVar4 = { 0f, 0f, 21.45737f };
 			vVar7 = { 19.42026f, 16.60847f, 8.358175f };
 			break;
 		case 14:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -133.0416f, -15.99957f, 94.22317f };
 			vVar4 = { 0f, 0f, 20.2899f };
 			vVar7 = { 22.5654f, 19.01775f, 10.25011f };
 			break;
 		case 15:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -320.2263f, -361.245f, 87.75749f };
 			vVar4 = { 0f, 0f, 25.48097f };
 			vVar7 = { 4.737138f, 6.052721f, 6.269291f };
 			break;
 		case 16:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -520.348f, -440.2256f, 82.52526f };
 			vVar4 = { 0f, 0f, 26.9f };
 			vVar7 = { 694.9839f, 8.908519f, 43.43642f };
 			break;
 		case 17:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -857.2325f, -613.6528f, 73.72871f };
 			vVar4 = { 0f, 0f, -61.94396f };
 			vVar7 = { 6.096117f, 7.966026f, 6.99848f };
 			break;
 		case 18:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -384.0941f, -437.038f, 76.31982f };
 			vVar4 = { 0f, 0f, 42.99909f };
 			vVar7 = { 75.46456f, 41.132f, 37.08671f };
 			break;
 		case 19:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -548.4916f, -420.783f, 89.04397f };
 			vVar4 = { 0f, 0f, -62.04596f };
 			vVar7 = { 84.9986f, 50.81785f, 20.03131f };
 			break;
 		case 20:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -326.6736f, -358.391f, 88.25056f };
 			vVar4 = { 0f, 0f, -63.46869f };
 			vVar7 = { 7.073741f, 3.987257f, 2.447897f };
 			break;
 		case 21:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -145.2227f, -39.98537f, 94.98504f };
 			vVar4 = { 0f, 0f, 0f };
 			vVar7 = { 1.918316f, 3.596623f, 3.6415f };
@@ -58490,19 +58490,19 @@ int func_1483(int iParam0)
 		case 22:
 			break;
 		case 23:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -513.4158f, -507.3265f, 60.10608f };
 			vVar4 = { 0f, 0f, 0f };
 			vVar7 = { 103.1835f, 45.52695f, 25.59353f };
 			break;
 		case 24:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -336.7205f, -361.2609f, 87.43404f };
 			vVar4 = { 0f, 0f, 26.73771f };
 			vVar7 = { 5.486631f, 5.864298f, 5.042649f };
 			break;
 		case 25:
-			iVar0 = -432403087;
+			iVar0 = joaat("VOLSPHERE");
 			vVar1 = { -374.4691f, -446.4846f, 77.16228f };
 			vVar4 = { 0f, 0f, 0f };
 			vVar7 = { 10f, 10f, 10f };
@@ -58510,31 +58510,31 @@ int func_1483(int iParam0)
 		case 26:
 			break;
 		case 27:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -1327.4f, -959.9003f, 47.18964f };
 			vVar4 = { 0f, 0f, -55.47974f };
 			vVar7 = { 4461.069f, 1508.333f, 485.1907f };
 			break;
 		case 28:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -612.4736f, -431.4183f, 72.29343f };
 			vVar4 = { 0f, 0f, -32.87226f };
 			vVar7 = { 9.763235f, 23.24989f, 25.46852f };
 			break;
 		case 29:
-			iVar0 = -432403087;
+			iVar0 = joaat("VOLSPHERE");
 			vVar1 = { 1f, 1f, 1f };
 			vVar4 = { 0f, 0f, 0f };
 			vVar7 = { 50f, 50f, 50f };
 			break;
 		case 30:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -335.8091f, -358.3235f, 92.31297f };
 			vVar4 = { 0f, 0f, -62.51317f };
 			vVar7 = { 56.58811f, 76.15298f, 27.29232f };
 			break;
 		case 31:
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -143.7468f, -39.37308f, 96.13992f };
 			vVar4 = { 0f, 0f, 0f };
 			vVar7 = { 4.979751f, 7.400268f, 3.488019f };
@@ -59851,7 +59851,7 @@ void func_1538(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2128(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

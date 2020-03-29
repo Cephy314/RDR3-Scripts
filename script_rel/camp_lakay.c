@@ -1497,22 +1497,22 @@ void func_45(int iParam0)
 	iParam0->f_1713 = 2;
 	iVar0 = 0;
 	Global_1357549->f_3[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Lakay volCampAreas[CVA_INNER]");
-	func_281(Global_1357549->f_3[0], &iVar0, 0, 2254f, -789.5063f, 44.76498f, 0f, 0f, 0f, 17.5f, 22.5f, 30f, -1612834106, 0);
-	func_281(Global_1357549->f_3[0], &iVar0, 0, 2228.5f, -770.5f, 45f, 0f, 0f, -3f, 21f, 16.25f, 30f, -1612834106, 0);
-	func_281(Global_1357549->f_3[0], &iVar0, 0, 2246.25f, -759.5f, 43f, 0f, 0f, -22f, 3f, 5.5f, 30f, 665633627, 0);
-	func_281(Global_1357549->f_3[0], &iVar0, 0, 2249.658f, -770.3062f, 43f, 0f, 0f, 0f, 28f, 18f, 30f, -1612834106, 0);
+	func_281(Global_1357549->f_3[0], &iVar0, 0, 2254f, -789.5063f, 44.76498f, 0f, 0f, 0f, 17.5f, 22.5f, 30f, joaat("VOLBOX"), 0);
+	func_281(Global_1357549->f_3[0], &iVar0, 0, 2228.5f, -770.5f, 45f, 0f, 0f, -3f, 21f, 16.25f, 30f, joaat("VOLBOX"), 0);
+	func_281(Global_1357549->f_3[0], &iVar0, 0, 2246.25f, -759.5f, 43f, 0f, 0f, -22f, 3f, 5.5f, 30f, joaat("VOLCYLINDER"), 0);
+	func_281(Global_1357549->f_3[0], &iVar0, 0, 2249.658f, -770.3062f, 43f, 0f, 0f, 0f, 28f, 18f, 30f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[1] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Lakay volCampAreas[CVA_WALK]");
-	func_281(Global_1357549->f_3[1], &iVar0, 1, 2250.632f, -768.3993f, 53.83809f, 0f, 0f, -52.18186f, 37.30481f, 35.353f, 25.28685f, 665633627, 0);
+	func_281(Global_1357549->f_3[1], &iVar0, 1, 2250.632f, -768.3993f, 53.83809f, 0f, 0f, -52.18186f, 37.30481f, 35.353f, 25.28685f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[2] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Lakay volCampAreas[CVA_OUTER]");
 	Global_1357549->f_3[3] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Lakay volCampAreas[CVA_OUTER_THRESHOLD]");
-	func_281(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 2253.741f, -742.7828f, 61.2578f, 0f, 0f, 66f, 28f, 43f, 30f, 665633627, 0);
-	func_281(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 2240.492f, -772.2779f, 52.7971f, 0f, 0f, -1f, 51f, 60f, 60f, -1612834106, 0);
-	func_281(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 2280.981f, -762.709f, 60.5683f, 0f, 0f, -12f, 22f, 46f, 30f, 665633627, 0);
+	func_281(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 2253.741f, -742.7828f, 61.2578f, 0f, 0f, 66f, 28f, 43f, 30f, joaat("VOLCYLINDER"), 0);
+	func_281(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 2240.492f, -772.2779f, 52.7971f, 0f, 0f, -1f, 51f, 60f, 60f, joaat("VOLBOX"), 0);
+	func_281(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 2280.981f, -762.709f, 60.5683f, 0f, 0f, -12f, 22f, 46f, 30f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[4] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Lakay volCampAreas[CVA_SURROUNDING]");
 	Global_1357549->f_3[5] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Lakay volCampAreas[CVA_SURROUNDING_THRESHOLD]");
-	func_281(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, 2258.598f, -760.9487f, 57.5579f, 0f, 0f, 0f, 76f, 76f, 30f, 665633627, 0);
+	func_281(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, 2258.598f, -760.9487f, 57.5579f, 0f, 0f, 0f, 76f, 76f, 30f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[6] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2223.536f, -771.6528f, 43.4563f, 0f, 0f, -90.73467f, 5.06848f, 5.355191f, 2.283684f, "Lakay volCampAreas[CVA_PROPERTY]");
-	iLocal_3513 = VOLUME::_CREATE_VOLUME_BY_HASH(-1612834106, 2229.49f, -771.7467f, 40.1123f, 0f, 0f, 1f, 20f, 10.5f, 4f);
+	iLocal_3513 = VOLUME::_CREATE_VOLUME_BY_HASH(joaat("VOLBOX"), 2229.49f, -771.7467f, 40.1123f, 0f, 0f, 1f, 20f, 10.5f, 4f);
 }
 
 void func_46()

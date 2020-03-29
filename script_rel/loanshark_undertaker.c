@@ -1859,7 +1859,7 @@ int func_57(var uParam0)
 		func_136(&(((*Global_1392626)[*uParam0 /*32*/])->f_8), 32);
 		func_177(uParam0->f_2210[0], uParam0->f_2213[0], Local_15.f_1, 0f, 0f, 0f, 5f, 5f, 5f, 0, 0, 1, 0, 0);
 		func_178(iLocal_2064[1], Local_15.f_1, 0f, 0f, 0f, 10f, 10f, 10f, "MV_FOCUS_VOLUME");
-		iLocal_2064[0] = VOLUME::_0x0EB78C2B156635B1(-432403087, 1302.527f, -1318.345f, 75.5941f, 0f, 0f, 67.25002f, 2f, 3.6f, 3f);
+		iLocal_2064[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 1302.527f, -1318.345f, 75.5941f, 0f, 0f, 67.25002f, 2f, 3.6f, 3f);
 		func_179(&(uParam0->f_2106), Global_35, "ARTHUR", 0);
 		func_179(&(uParam0->f_2106), Local_15, "RHD_Assistant", 0);
 		ANIMSCENE::START_ANIM_SCENE(&(Local_112[0 /*130*/]));
@@ -44278,7 +44278,7 @@ void func_1462(bool bParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

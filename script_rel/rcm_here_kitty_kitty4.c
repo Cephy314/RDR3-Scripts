@@ -10006,7 +10006,7 @@ int func_321(var uParam0, bool bParam1)
 							PLAYER::_0xA3DB37EDF9A74635(PLAYER::GET_PLAYER_INDEX(), &(Local_393[0 /*5*/]), 8, 0, true);
 							if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_636))
 							{
-								bLocal_636 = VOLUME::_0x0EB78C2B156635B1(665633627, 1407.931f, 280.1713f, 88.98701f, 0f, 0f, 15.24999f, 4.75f, 2.5f, 3f);
+								bLocal_636 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1407.931f, 280.1713f, 88.98701f, 0f, 0f, 15.24999f, 4.75f, 2.5f, 3f);
 							}
 							bLocal_784 = true;
 						}

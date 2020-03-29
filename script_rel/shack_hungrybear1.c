@@ -6058,70 +6058,70 @@ struct<12> func_207(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { -2371.143f, 477.8526f, 118.7753f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 75f, 75f, 75f };
 			Var0.f_11 = "HungryBearRandomEvent";
 			break;
 		case 1:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -2370.062f, 481.551f, 124.813f };
 			Var0.f_5 = { -20f, 0f, 0f };
 			Var0.f_8 = { 20f, 22f, 13f };
 			Var0.f_11 = "HungryBearFrontApproach";
 			break;
 		case 2:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -2371.35f, 475.243f, 132.299f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 2.443f, 3.995f, 2.647f };
 			Var0.f_11 = "HungryBearFrontBuffer";
 			break;
 		case 3:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -2371.35f, 475.243f, 132.299f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 1.443f, 1.395f, 2.647f };
 			Var0.f_11 = "HungryBearFrontDoor";
 			break;
 		case 4:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -2369.906f, 461.0042f, 132.2916f };
 			Var0.f_5 = { -20f, 0f, 0f };
 			Var0.f_8 = { 15f, 20f, 10f };
 			Var0.f_11 = "HungryBearBack";
 			break;
 		case 5:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { -2370.159f, 473.2869f, 135.0301f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 15f, 15f, 9f };
 			Var0.f_11 = "HungryBearAudio";
 			break;
 		case 6:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { -2370.159f, 473.2869f, 165.9346f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 100f, 100f, 50f };
 			Var0.f_11 = "HungryBearEscape";
 			break;
 		case 7:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -2371.53f, 477.6144f, 131.8061f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 7f, 4f, 5f };
 			Var0.f_11 = "HungryBearPorch";
 			break;
 		case 8:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -2370.197f, 472.3461f, 132.259f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 5f, 5f, 4f };
 			Var0.f_11 = "HungryBearCabin";
 			break;
 		case 9:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { VOLUME::_0xF70F00013A62F866(func_16(func_15())) };
 			Var0.f_5 = { VOLUME::_0x18675BC914891122(func_16(func_15())) };
 			Var0.f_8 = { VOLUME::_0x3E2A25B2416DD67E(func_16(func_15())) };

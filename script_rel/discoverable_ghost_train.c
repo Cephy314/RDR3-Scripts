@@ -3227,7 +3227,7 @@ struct<11> func_52(int iParam0)
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 75f, 75f, 25f };
 			Var0.f_9 = "GHOST_TRAIN_SPAWN";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 	}
 	return Var0;

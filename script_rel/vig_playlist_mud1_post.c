@@ -471,9 +471,9 @@ int func_9(var uParam0)
 	bLocal_73 = func_21(0);
 	func_22(9);
 	func_22(6);
-	iLocal_86 = func_23(uParam0, -141.9052f, -42.15654f, 94.96957f, 113.79f, 1.2f, 1.2f, 3f, 0, 1, -1, -1612834106);
-	iLocal_88 = func_23(uParam0, -117.1013f, -27.94054f, 95.25954f, -104.12f, 1.2f, 1.2f, 3f, 0, 1, -1, -1612834106);
-	iLocal_87 = func_23(uParam0, -119.0889f, -27.46895f, 95.2713f, 75.31f, 1.2f, 1.2f, 3f, 0, 1, -1, -1612834106);
+	iLocal_86 = func_23(uParam0, -141.9052f, -42.15654f, 94.96957f, 113.79f, 1.2f, 1.2f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_88 = func_23(uParam0, -117.1013f, -27.94054f, 95.25954f, -104.12f, 1.2f, 1.2f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_87 = func_23(uParam0, -119.0889f, -27.46895f, 95.2713f, 75.31f, 1.2f, 1.2f, 3f, 0, 1, -1, joaat("VOLBOX"));
 	func_24(uParam0, iLocal_86);
 	func_24(uParam0, iLocal_88);
 	func_24(uParam0, iLocal_87);

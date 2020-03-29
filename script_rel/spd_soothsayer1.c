@@ -7070,35 +7070,35 @@ struct<11> func_257(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 0:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { Var11 };
 			Var0.f_4 = { 0f, 0f, Var11.f_3 };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "RandomEventBlock";
 			break;
 		case 1:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var11, Var11.f_3, 0f, 2.2f, 0f) };
 			Var0.f_4 = { 0f, 0f, Var11.f_3 };
 			Var0.f_7 = { 1.5f, 3f, 10f };
 			Var0.f_10 = "Trigger";
 			break;
 		case 2:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { Var11 };
 			Var0.f_4 = { 0f, 0f, Var11.f_3 };
 			Var0.f_7 = { 9.33105f, 4.768036f, 10f };
 			Var0.f_10 = "StayAway";
 			break;
 		case 3:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Var11, Var11.f_3, 0f, 5f, 0f) };
 			Var0.f_4 = { 0f, 0f, Var11.f_3 };
 			Var0.f_7 = { 8f, 6f, 6f };
 			Var0.f_10 = "LookIKVolume";
 			break;
 		case 4:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { Var11 };
 			Var0.f_4 = { 0f, 0f, Var11.f_3 };
 			Var0.f_7 = { 1.85f, 1.85f, 3f };

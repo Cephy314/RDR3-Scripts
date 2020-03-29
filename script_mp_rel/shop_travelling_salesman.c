@@ -2400,7 +2400,7 @@ void func_18(var uParam0)
 				Local_21.f_7 = { ENTITY::GET_ENTITY_COORDS(iVar3, true, false) };
 				Local_21.f_10 = ENTITY::GET_ENTITY_HEADING(iVar3);
 				Local_21.f_11 = 1;
-				Local_21.f_34 = VOLUME::_0x0EB78C2B156635B1(-1612834106, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_21.f_7, Local_21.f_10, -0.75f, 0.25f, 1f), 0f, 0f, Local_21.f_10, 1f, 1f, 1f);
+				Local_21.f_34 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_21.f_7, Local_21.f_10, -0.75f, 0.25f, 1f), 0f, 0f, Local_21.f_10, 1f, 1f, 1f);
 				VOLUME::_0xBE551C2CC421185D(Local_21.f_34, 1);
 				VOLUME::_0x5B23DFF8E0948BB2(Local_21.f_34, 1);
 				Jump @195; //curOff = 183
@@ -98065,7 +98065,7 @@ int func_3046(int iParam0)
 		case 3:
 			return joaat("HEADER");
 		case 4:
-			return 1461677252;
+			return joaat("SHARD");
 		default:
 			break;
 	}

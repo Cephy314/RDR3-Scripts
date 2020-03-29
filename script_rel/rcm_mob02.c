@@ -6563,8 +6563,8 @@ int func_259(var uParam0)
 	PED::SET_PED_KEEP_TASK(bLocal_16, true);
 	PED::SET_PED_KEEP_TASK(bLocal_17, true);
 	uLocal_15 = func_518(bLocal_14, 0, 0, 0);
-	iLocal_222 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_34, 0f, 0f, 0f, 1.2f, 1.2f, 3f);
-	iLocal_223 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_37, 0f, 0f, 0f, 1.2f, 1.2f, 3f);
+	iLocal_222 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_34, 0f, 0f, 0f, 1.2f, 1.2f, 3f);
+	iLocal_223 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_37, 0f, 0f, 0f, 1.2f, 1.2f, 3f);
 	func_404(&uLocal_193);
 	return 1;
 }

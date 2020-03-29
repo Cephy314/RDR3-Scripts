@@ -586,9 +586,9 @@ int func_11()
 	}
 	if (bLocal_41)
 	{
-		func_47(&iLocal_16, 442.5149f, 2226.488f, 246.2888f, 0f, 0f, 14.49999f, 37f, 44f, 30f, 3, 665633627, 0, 0);
-		func_47(&iLocal_17, 459.0011f, 2219.182f, 242.6092f, 0f, 0f, 14.49999f, 51f, 60f, 30f, 4, 665633627, 0, 0);
-		func_47(&iLocal_18, 469.3768f, 2216.321f, 246.2888f, 0f, 0f, 14.49999f, 64f, 72f, 30f, 5, 665633627, 0, 0);
+		func_47(&iLocal_16, 442.5149f, 2226.488f, 246.2888f, 0f, 0f, 14.49999f, 37f, 44f, 30f, 3, joaat("VOLCYLINDER"), 0, 0);
+		func_47(&iLocal_17, 459.0011f, 2219.182f, 242.6092f, 0f, 0f, 14.49999f, 51f, 60f, 30f, 4, joaat("VOLCYLINDER"), 0, 0);
+		func_47(&iLocal_18, 469.3768f, 2216.321f, 246.2888f, 0f, 0f, 14.49999f, 64f, 72f, 30f, 5, joaat("VOLCYLINDER"), 0, 0);
 		bLocal_15 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(446.3674f, 2219.606f, 246.2888f, 0f, 0f, 14.5f, 40f, 53f, 30f, "Wapiti - m_volNoHorseWhistle");
 		POPULATION::_0x74C2B3DC0B294102(bLocal_14);
 		POPULATION::_0xA1CFB35069D23C23(bLocal_14);

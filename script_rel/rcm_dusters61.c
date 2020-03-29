@@ -6531,7 +6531,7 @@ int func_258(var uParam0)
 				ANIMSCENE::SET_ANIM_SCENE_BOOL(iLocal_54, "b_breakout", true, false);
 				func_526(uParam0, Global_35, "ARTHUR", 1);
 				func_526(uParam0, bLocal_19, "SADIE_ADLER", 1);
-				bLocal_38 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2362.569f, 1310.182f, 110.6892f, 0f, 0f, 0f, 2f, 5f, 2f);
+				bLocal_38 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2362.569f, 1310.182f, 110.6892f, 0f, 0f, 0f, 2f, 5f, 2f);
 				VOLUME::_0xBE551C2CC421185D(bLocal_38, 1);
 				VOLUME::_0x5B23DFF8E0948BB2(bLocal_38, 1);
 				bLocal_39 = VOLUME::_CREATE_VOLUME_BOX(2374.049f, 1291.161f, 110.2777f, 0f, 0f, 14f, 8f, 22f, 4f);
@@ -45366,7 +45366,7 @@ void func_1455(bool bParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

@@ -1551,21 +1551,21 @@ void func_45(int iParam0)
 	iParam0->f_1713 = 11;
 	iVar0 = 0;
 	Global_1357549->f_3[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Colter volCampAreas[CVA_INNER]");
-	func_286(Global_1357549->f_3[0], &iVar0, 0, -1347.246f, 2403.319f, 317.4772f, 0f, 0f, -25f, 5.5f, 9.5f, 50f, -1612834106, 0);
-	func_286(Global_1357549->f_3[0], &iVar0, 0, -1357.996f, 2425.153f, 324.614f, 0f, 0f, -19f, 8.604f, 6.25f, 50f, -1612834106, 0);
-	func_286(Global_1357549->f_3[0], &iVar0, 0, -1321.26f, 2438.339f, 326.5326f, 0f, 0f, -27f, 13f, 6.5f, 50f, -1612834106, 0);
-	func_286(Global_1357549->f_3[0], &iVar0, 0, -1353.447f, 2439.784f, 325.5793f, 0f, 0f, -20f, 14f, 8.75f, 50f, -1612834106, 0);
-	func_286(Global_1357549->f_3[0], &iVar0, 0, -1349.552f, 2445.316f, 328.9378f, 0f, 0f, -19.5f, 4f, 5f, 50f, -1612834106, 0);
+	func_286(Global_1357549->f_3[0], &iVar0, 0, -1347.246f, 2403.319f, 317.4772f, 0f, 0f, -25f, 5.5f, 9.5f, 50f, joaat("VOLBOX"), 0);
+	func_286(Global_1357549->f_3[0], &iVar0, 0, -1357.996f, 2425.153f, 324.614f, 0f, 0f, -19f, 8.604f, 6.25f, 50f, joaat("VOLBOX"), 0);
+	func_286(Global_1357549->f_3[0], &iVar0, 0, -1321.26f, 2438.339f, 326.5326f, 0f, 0f, -27f, 13f, 6.5f, 50f, joaat("VOLBOX"), 0);
+	func_286(Global_1357549->f_3[0], &iVar0, 0, -1353.447f, 2439.784f, 325.5793f, 0f, 0f, -20f, 14f, 8.75f, 50f, joaat("VOLBOX"), 0);
+	func_286(Global_1357549->f_3[0], &iVar0, 0, -1349.552f, 2445.316f, 328.9378f, 0f, 0f, -19.5f, 4f, 5f, 50f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[1] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Colter volCampAreas[CVA_WALK]");
-	func_286(Global_1357549->f_3[1], &iVar0, 1, -1341.959f, 2421.997f, 322.0112f, 0f, 0f, -24.44765f, 34.02826f, 35.58308f, 35.03152f, 665633627, 0);
+	func_286(Global_1357549->f_3[1], &iVar0, 1, -1341.959f, 2421.997f, 322.0112f, 0f, 0f, -24.44765f, 34.02826f, 35.58308f, 35.03152f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[2] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Colter volCampAreas[CVA_OUTER]");
 	Global_1357549->f_3[3] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Colter volCampAreas[CVA_OUTER_THRESHOLD]");
-	func_286(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -1338.848f, 2440.223f, 325.2181f, 0f, 0f, -11.98408f, 39.34594f, 63.21424f, 35f, 665633627, 0);
+	func_286(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -1338.848f, 2440.223f, 325.2181f, 0f, 0f, -11.98408f, 39.34594f, 63.21424f, 35f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[4] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Colter volCampAreas[CVA_SURROUNDING]");
 	Global_1357549->f_3[5] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Colter volCampAreas[CVA_SURROUNDING_THRESHOLD]");
-	func_286(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1367.268f, 2369.489f, 335.6791f, 0f, 0f, -57.00001f, 24f, 52f, 40f, 665633627, 0);
-	func_286(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1338.716f, 2437.717f, 338.0552f, 0f, 0f, -9.000002f, 55f, 88f, 40f, 665633627, 0);
-	func_286(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1302.44f, 2414.538f, 326.3339f, 0f, 0f, -36f, 82f, 142f, 61f, -1612834106, 0);
+	func_286(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1367.268f, 2369.489f, 335.6791f, 0f, 0f, -57.00001f, 24f, 52f, 40f, joaat("VOLCYLINDER"), 0);
+	func_286(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1338.716f, 2437.717f, 338.0552f, 0f, 0f, -9.000002f, 55f, 88f, 40f, joaat("VOLCYLINDER"), 0);
+	func_286(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1302.44f, 2414.538f, 326.3339f, 0f, 0f, -36f, 82f, 142f, 61f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[6] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-1356.208f, 2443.04f, 308.2236f, 0f, 0f, -20.05581f, 5.638631f, 3.954793f, 2.642971f, "Colter volCampAreas[CVA_PROPERTY]");
 	bLocal_3513 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-1340.843f, 2427.755f, 309.0234f, 0f, 0f, -9.80633f, 10.52594f, 42.87149f, 7.160387f, "Colter - volMuster");
 	iVar1 = 0;
@@ -1574,7 +1574,7 @@ void func_45(int iParam0)
 	func_287(&iVar1, 0);
 	func_287(&iVar1, 15);
 	COMPANION::_0x3CAAD93FA5B9579A(bLocal_3513, 2, iVar1);
-	iLocal_3514 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1316.67f, 2436.004f, 310.4444f, 0f, 0f, -28.99999f, 1f, 2f, 4f);
+	iLocal_3514 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1316.67f, 2436.004f, 310.4444f, 0f, 0f, -28.99999f, 1f, 2f, 4f);
 }
 
 void func_46()

@@ -1386,7 +1386,7 @@ void func_58()
 	{
 		iLocal_60 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-281.758f, 778.0059f, 119.7747f, 0f, 0f, 0f, 4.831735f, 2.69515f, 2.516554f, "Valentine - m_volGunsmithCounterOff");
 	}
-	iLocal_61 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -277.246f, 783.568f, 120.234f, 0f, 0f, 0f, 1.666f, 3.209f, 2.517f);
+	iLocal_61 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -277.246f, 783.568f, 120.234f, 0f, 0f, 0f, 1.666f, 3.209f, 2.517f);
 	VOLUME::_0xBE551C2CC421185D(iLocal_61, 1);
 	VOLUME::_0x5B23DFF8E0948BB2(iLocal_61, 1);
 	VOLUME::_0xB469CFD9E065EB99(iLocal_76, 10066);
@@ -5461,7 +5461,7 @@ void func_144(bool bParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_241(&(Global_1099294->f_555));
 		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_555 = Global_1099294->f_516;

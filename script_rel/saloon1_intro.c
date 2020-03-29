@@ -1185,7 +1185,7 @@ int func_29(int iParam0)
 	func_141(iParam0, bLocal_21, 0);
 	func_141(iParam0, bLocal_22, 0);
 	func_141(iParam0, bLocal_23, 0);
-	bLocal_29 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -131.7849f, -31.63494f, 95.50788f, 0f, 0f, -3.000001f, 5.405106f, 4.4f, 4f);
+	bLocal_29 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -131.7849f, -31.63494f, 95.50788f, 0f, 0f, -3.000001f, 5.405106f, 4.4f, 4f);
 	func_142(Local_33[0 /*17*/], "INTERACT_GREET", 0, joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
 	func_144(&iLocal_51, &Local_33, 0, func_143(9), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 	func_146(&(iParam0->f_428), 17804);
@@ -12863,7 +12863,7 @@ void func_546(var uParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

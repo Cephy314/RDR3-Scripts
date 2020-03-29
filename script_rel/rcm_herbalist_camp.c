@@ -25863,7 +25863,7 @@ int func_901(var uParam0, int iParam1)
 		}
 		if (Local_14.f_533 == 0)
 		{
-			Local_14.f_533 = VOLUME::_0x0EB78C2B156635B1(665633627, 558.1541f, 170.2181f, 133.3503f, 0f, 0f, 0f, 1.033522f, 1.130385f, 1.487637f);
+			Local_14.f_533 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 558.1541f, 170.2181f, 133.3503f, 0f, 0f, 0f, 1.033522f, 1.130385f, 1.487637f);
 		}
 		return 1;
 	}
@@ -43077,16 +43077,16 @@ void func_1424(int iParam0, var uParam1)
 		switch (iVar0)
 		{
 			case 0:
-				func_1950(iParam0, uParam1, iVar0, -1612834106, 1.55f, -3.1f, 0.96f, 0f, 0f, 28.075f, 6.256512f, 3.460136f, 3f);
+				func_1950(iParam0, uParam1, iVar0, joaat("VOLBOX"), 1.55f, -3.1f, 0.96f, 0f, 0f, 28.075f, 6.256512f, 3.460136f, 3f);
 				break;
 			case 1:
-				func_1950(iParam0, uParam1, iVar0, -1612834106, -4.76f, -1.15f, 0.96f, 0f, 0f, 25.075f, 3.083873f, 3.275494f, 3f);
+				func_1950(iParam0, uParam1, iVar0, joaat("VOLBOX"), -4.76f, -1.15f, 0.96f, 0f, 0f, 25.075f, 3.083873f, 3.275494f, 3f);
 				break;
 			case 2:
-				func_1950(iParam0, uParam1, iVar0, -1612834106, 1.56f, -2.29f, -0.11f, 0f, 0f, 25.075f, 2.312612f, 2.058657f, 2.086685f);
+				func_1950(iParam0, uParam1, iVar0, joaat("VOLBOX"), 1.56f, -2.29f, -0.11f, 0f, 0f, 25.075f, 2.312612f, 2.058657f, 2.086685f);
 				break;
 			case 3:
-				func_1950(iParam0, uParam1, iVar0, -1612834106, -2.88f, -0.27f, 0.96f, 0f, 0f, 25.075f, 1.708217f, 3.275494f, 3f);
+				func_1950(iParam0, uParam1, iVar0, joaat("VOLBOX"), -2.88f, -0.27f, 0.96f, 0f, 0f, 25.075f, 1.708217f, 3.275494f, 3f);
 				break;
 		}
 		iVar0++;
@@ -43136,7 +43136,7 @@ void func_1424(int iParam0, var uParam1)
 
 void func_1425(int iParam0, var uParam1)
 {
-	func_1953(&(iParam0->f_239), 665633627, func_186(uParam1), 0f, 0f, 0f, 5f, 5f, 5f);
+	func_1953(&(iParam0->f_239), joaat("VOLCYLINDER"), func_186(uParam1), 0f, 0f, 0f, 5f, 5f, 5f);
 }
 
 void func_1426()

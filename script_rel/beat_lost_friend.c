@@ -18751,7 +18751,7 @@ int func_590(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -18786,7 +18786,7 @@ int func_591(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}
@@ -20782,8 +20782,8 @@ void func_674(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 0:
-			(*uParam1)[5] = VOLUME::_0x0EB78C2B156635B1(665633627, -1109.535f, 2104.887f, 361.1f, 0f, 0f, 0f, 0.6f, 0.5f, 1f);
-			(*uParam1)[8] = VOLUME::_0x0EB78C2B156635B1(665633627, -1110.01f, 2103.445f, 361.7f, 0f, 0f, -49f, 0.5f, 1.2f, 1f);
+			(*uParam1)[5] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1109.535f, 2104.887f, 361.1f, 0f, 0f, 0f, 0.6f, 0.5f, 1f);
+			(*uParam1)[8] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1110.01f, 2103.445f, 361.7f, 0f, 0f, -49f, 0.5f, 1.2f, 1f);
 			break;
 	}
 }

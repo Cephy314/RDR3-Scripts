@@ -1092,10 +1092,10 @@ int func_32()
 		{
 			return 0;
 		}
-		bLocal_476 = VOLUME::_0x0EB78C2B156635B1(665633627, 0f, 0f, 0f, 0f, 0f, 0f, 0.4f, 0.4f, 2f);
+		bLocal_476 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 0f, 0f, 0f, 0f, 0f, 0f, 0.4f, 0.4f, 2f);
 		PED::_0x7C00CFC48A782DC0(bLocal_476, iLocal_480, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
-		bLocal_477 = VOLUME::_0x0EB78C2B156635B1(665633627, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_15.f_51, Local_15.f_51.f_3, 0.6644f, -2.5785f, -0.9983f), 0f, 0f, 0f, 0.4f, 0.4f, 2f);
-		bLocal_478 = VOLUME::_0x0EB78C2B156635B1(665633627, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_15.f_51, Local_15.f_51.f_3, 0.3109f, -2.5056f, -0.99f), 0f, 0f, 0f, 0.4f, 0.4f, 2f);
+		bLocal_477 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_15.f_51, Local_15.f_51.f_3, 0.6644f, -2.5785f, -0.9983f), 0f, 0f, 0f, 0.4f, 0.4f, 2f);
+		bLocal_478 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_15.f_51, Local_15.f_51.f_3, 0.3109f, -2.5056f, -0.99f), 0f, 0f, 0f, 0.4f, 0.4f, 2f);
 	}
 	return 1;
 }
@@ -14673,7 +14673,7 @@ int func_489(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -14708,7 +14708,7 @@ int func_490(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

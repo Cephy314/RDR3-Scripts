@@ -13467,7 +13467,7 @@ int func_526(var uParam0, var uParam1)
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(uParam1->f_16[9])))
 	{
-		VOLUME::_0x0EB78C2B156635B1(665633627, -810.3628f, -1277.259f, 42.77636f, 0f, 0f, 0f, 0.885797f, 0.705404f, 1f);
+		VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -810.3628f, -1277.259f, 42.77636f, 0f, 0f, 0f, 0.885797f, 0.705404f, 1f);
 	}
 	func_903();
 	func_551(16, 1, uParam1);

@@ -96165,7 +96165,7 @@ int func_2972(int iParam0)
 		case 3:
 			return joaat("HEADER");
 		case 4:
-			return 1461677252;
+			return joaat("SHARD");
 		default:
 			break;
 	}

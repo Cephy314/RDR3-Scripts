@@ -5906,7 +5906,7 @@ void func_225(int iParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { (Global_1070356->f_22101.f_366[iVar0 /*272*/])->f_2 };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_284(&(Global_1099294->f_555));
 		iVar2 = func_285(iParam0);
 		iVar3 = MISC::GET_RANDOM_INT_IN_RANGE(0, iVar2);
@@ -6033,7 +6033,7 @@ void func_232(bool bParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_284(&(Global_1099294->f_555));
 		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_555 = Global_1099294->f_516;
@@ -6183,14 +6183,14 @@ void func_237(vector3 vParam0, float fParam3, vector3 vParam4, float fParam7, fl
 	Global_1099294->f_516.f_17.f_6 = { vParam0 };
 	Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 	Global_1099294->f_516.f_17 = { fParam9, fParam9, fParam9 };
-	Global_1099294->f_516.f_17.f_9 = -432403087;
+	Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 	if (fParam8 > 1f)
 	{
 		Global_1099294->f_516.f_16 = 1;
 		Global_1099294->f_516.f_6.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_516.f_6.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_6 = { fParam8, fParam8, fParam8 };
-		Global_1099294->f_516.f_6.f_9 = -432403087;
+		Global_1099294->f_516.f_6.f_9 = joaat("VOLSPHERE");
 	}
 	func_284(&(Global_1099294->f_555));
 	Global_1099294->f_555.f_6 = { vParam4 };

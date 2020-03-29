@@ -4247,10 +4247,10 @@ void func_153(var uParam0, var uParam1, char* sParam2)
 			{
 				switch (iVar24)
 				{
-					case 665633627:
+					case joaat("VOLCYLINDER"):
 						(*uParam0)[iVar1] = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vVar7, vVar10, vVar13, &cVar27);
 						break;
-					case -1612834106:
+					case joaat("VOLBOX"):
 						(*uParam0)[iVar1] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vVar7, vVar10, vVar13, &cVar27);
 						break;
 				}
@@ -4263,10 +4263,10 @@ void func_153(var uParam0, var uParam1, char* sParam2)
 				}
 				switch (iVar24)
 				{
-					case 665633627:
+					case joaat("VOLCYLINDER"):
 						VOLUME::_0xBCE668AAF83608BE(uParam0[iVar1], vVar7, vVar10, vVar13);
 						break;
-					case -1612834106:
+					case joaat("VOLBOX"):
 						VOLUME::_0x39816F6F94F385AD(uParam0[iVar1], vVar7, vVar10, vVar13);
 						break;
 				}

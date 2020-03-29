@@ -7614,15 +7614,15 @@ void func_286(var uParam0)
 {
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_68))
 	{
-		bLocal_68 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_108, vLocal_111, vLocal_114);
+		bLocal_68 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_108, vLocal_111, vLocal_114);
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_69))
 	{
-		bLocal_69 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_117, vLocal_120, vLocal_123);
+		bLocal_69 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_117, vLocal_120, vLocal_123);
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_70))
 	{
-		bLocal_70 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_126, vLocal_129, vLocal_132);
+		bLocal_70 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_126, vLocal_129, vLocal_132);
 	}
 	if (func_597(uParam0, Global_35, "ARTHUR", 0, 1, 1) || func_597(uParam0, Global_35, "JOHN", 0, 1, 1))
 	{
@@ -7837,15 +7837,15 @@ int func_297(var uParam0)
 							}
 							if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_68))
 							{
-								bLocal_68 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_108, vLocal_111, vLocal_114);
+								bLocal_68 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_108, vLocal_111, vLocal_114);
 							}
 							if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_69))
 							{
-								bLocal_69 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_117, vLocal_120, vLocal_123);
+								bLocal_69 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_117, vLocal_120, vLocal_123);
 							}
 							if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_70))
 							{
-								bLocal_70 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_126, vLocal_129, vLocal_132);
+								bLocal_70 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_126, vLocal_129, vLocal_132);
 							}
 							func_319(bLocal_63);
 							PED::SET_RELATIONSHIP_BETWEEN_GROUPS(4, joaat("PLAYER"), iLocal_73);

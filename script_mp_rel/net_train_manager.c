@@ -608,7 +608,7 @@ int func_39()
 
 var func_40(int iParam0, int iParam1)
 {
-	return func_54(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_54(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 int func_41(int* iParam0, var uParam1)
@@ -791,13 +791,13 @@ var func_54(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int 
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_70());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_70());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_70());
 				break;
 		}
@@ -1074,7 +1074,7 @@ int func_60(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case -530846566:
-			iVar0 = -705539859;
+			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { -281.0263f, -319.5532f, 88.02095f };
 			break;
 		case -245962931:
@@ -1082,7 +1082,7 @@ int func_60(int iParam0, int iParam1)
 			vVar1 = { 1481.509f, 648.3527f, 91.52025f };
 			break;
 		case -500348165:
-			iVar0 = -760570040;
+			iVar0 = joaat("BRAITHWAITES2_TRACK_CONFIG");
 			vVar1 = { 1529.881f, 467.6379f, 89.20429f };
 			break;
 		case 476945523:
@@ -1106,11 +1106,11 @@ int func_60(int iParam0, int iParam1)
 			vVar1 = { -4916.622f, -3009.565f, -19.15694f };
 			break;
 		case -421036188:
-			iVar0 = -705539859;
+			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { 610.215f, 1662.165f, 186.3704f };
 			break;
 		case 1431393516:
-			iVar0 = -705539859;
+			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { -1375.646f, -137.362f, 99.87008f };
 			break;
 	}

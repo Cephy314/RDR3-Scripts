@@ -3123,8 +3123,8 @@ int func_128(int iParam0)
 	func_287(&bLocal_57, vLocal_23, 0f, 0f, 0f, 17.5f, 17.5f, 17.5f, "MUD3B_INT - CUTSCENE");
 	func_288(&(iParam0->f_428), bLocal_57, 0, 1);
 	func_241(&(iParam0->f_428), vLocal_29, fLocal_32, 1);
-	bLocal_55 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_26, 0f, 0f, 0f, 1f, 1f, 2f);
-	bLocal_56 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 67.423f, 1070.24f, 195.479f, 0f, 0f, 23.603f, 8.827f, 0.45f, 4.899f);
+	bLocal_55 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_26, 0f, 0f, 0f, 1f, 1f, 2f);
+	bLocal_56 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 67.423f, 1070.24f, 195.479f, 0f, 0f, 23.603f, 8.827f, 0.45f, 4.899f);
 	VOLUME::_0x5B23DFF8E0948BB2(bLocal_56, 0);
 	VOLUME::_0x5B23DFF8E0948BB2(bLocal_55, 1);
 	PATHFIND::_0x19C7567D2F2287D6(bLocal_54, 7);

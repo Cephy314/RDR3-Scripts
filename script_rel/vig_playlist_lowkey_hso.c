@@ -466,8 +466,8 @@ int func_9(var uParam0)
 			iLocal_7 = func_22(uParam0, joaat("WORLD_CAMP_FIRE_SEATED_GROUND"), -141.17f, -40.56f, 94.51f, -163.644f, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1082130432 /* Float: -1f */);
 			iLocal_8 = func_22(uParam0, joaat("PROP_CAMP_FIRE_SEATED"), -137.62f, -40.93f, 94.98f, 125.1381f, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", -1082130432 /* Float: -1f */);
 			iLocal_9 = func_22(uParam0, joaat("STAND"), -134.823f, -40.2142f, 95.5573f, 131.4639f, 0, -1082130432 /* Float: -1f */);
-			iLocal_10 = func_23(uParam0, -139.35f, -28.86f, 95.59f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_BILL"), -1612834106);
-			iLocal_11 = func_23(uParam0, -133.43f, -32.32f, 96.2704f, 89.89f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_DUTCH"), -1612834106);
+			iLocal_10 = func_23(uParam0, -139.35f, -28.86f, 95.59f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_BILL"), joaat("VOLBOX"));
+			iLocal_11 = func_23(uParam0, -133.43f, -32.32f, 96.2704f, 89.89f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_DUTCH"), joaat("VOLBOX"));
 			func_24(uParam0, iLocal_10);
 			func_24(uParam0, iLocal_11);
 			break;
@@ -475,7 +475,7 @@ int func_9(var uParam0)
 			iLocal_5 = func_22(uParam0, joaat("GENERIC_SEAT_CHAIR_TABLE_SCENARIO"), 666.6291f, -1244.918f, 43.5988f, 49.05f, 0, -1082130432 /* Float: -1f */);
 			iLocal_7 = func_22(uParam0, joaat("WORLD_CAMP_FIRE_SEATED_GROUND"), 684.534f, -1245.42f, 42.99273f, 48.47628f, "WORLD_CAMP_FIRE_SIT_GROUND_MALE_E", -1082130432 /* Float: -1f */);
 			iLocal_8 = func_22(uParam0, joaat("PROP_CAMP_FIRE_SEATED"), 681.367f, -1246.951f, 43.495f, -22.742f, "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", -1082130432 /* Float: -1f */);
-			iLocal_10 = func_23(uParam0, 666.629f, -1244.92f, 43.5988f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_BILL"), -1612834106);
+			iLocal_10 = func_23(uParam0, 666.629f, -1244.92f, 43.5988f, -22.51f, 1.2f, 1.2f, 3f, 1, 1, joaat("APMS_COMP_BILL"), joaat("VOLBOX"));
 			func_24(uParam0, iLocal_10);
 			break;
 	}

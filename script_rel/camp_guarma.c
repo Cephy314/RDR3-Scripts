@@ -1505,15 +1505,15 @@ void func_45(int iParam0)
 	iParam0->f_1713 = 30;
 	iVar0 = 0;
 	Global_1357549->f_3[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("GuarmaCamp volCampAreas[CVA_INNER]");
-	func_280(Global_1357549->f_3[0], &iVar0, 0, 1429.294f, -7330.202f, 81.1644f, 0f, 0f, 4f, 30f, 14f, 30f, -1612834106, 0);
+	func_280(Global_1357549->f_3[0], &iVar0, 0, 1429.294f, -7330.202f, 81.1644f, 0f, 0f, 4f, 30f, 14f, 30f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[1] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("GuarmaCamp volCampAreas[CVA_WALK]");
-	func_280(Global_1357549->f_3[1], &iVar0, 1, 1424.286f, -7330.554f, 81.1644f, 0f, 0f, 3.999998f, 20f, 14f, 30f, -1612834106, 0);
+	func_280(Global_1357549->f_3[1], &iVar0, 1, 1424.286f, -7330.554f, 81.1644f, 0f, 0f, 3.999998f, 20f, 14f, 30f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[2] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("GuarmaCamp volCampAreas[CVA_OUTER]");
 	Global_1357549->f_3[3] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("GuarmaCamp volCampAreas[CVA_OUTER_THRESHOLD]");
-	func_280(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 1426.303f, -7331.687f, 81.2681f, 0f, 0f, 0f, 40f, 40f, 30f, 665633627, 0);
+	func_280(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 1426.303f, -7331.687f, 81.2681f, 0f, 0f, 0f, 40f, 40f, 30f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[4] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("GuarmaCamp volCampAreas[CVA_SURROUNDING]");
 	Global_1357549->f_3[5] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("GuarmaCamp volCampAreas[CVA_SURROUNDING_THRESHOLD]");
-	func_280(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, 1426.133f, -7332.54f, 85.9713f, 0f, 0f, 6f, 91f, 55f, 31f, 665633627, 0);
+	func_280(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, 1426.133f, -7332.54f, 85.9713f, 0f, 0f, 6f, 91f, 55f, 31f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[6] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1422.485f, -7331.637f, 82.05434f, 0f, 0f, -175.6361f, 3.167241f, 4.300028f, 3.235584f, "GuarmaCamp volCampAreas[CVA_PROPERTY]");
 }
 

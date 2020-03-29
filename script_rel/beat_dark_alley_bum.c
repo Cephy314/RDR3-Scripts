@@ -980,17 +980,17 @@ void func_23()
 	func_90(&bLocal_789, vVar0, vLocal_236, 8f, 5f, 5f, "INTERACT_AREA");
 	if (iLocal_583 == 0)
 	{
-		bLocal_703 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_705);
+		bLocal_703 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_705);
 	}
 	else if (iLocal_583 == 1)
 	{
-		bLocal_703 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_708);
+		bLocal_703 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_708);
 	}
 	if (VOLUME::_DOES_VOLUME_EXIST(bLocal_703))
 	{
 		PED::_0x7C00CFC48A782DC0(bLocal_703, &(uLocal_689[0]), 0f, 0f, -0.1f, 0f, 0f, 0f, 2, 1);
 	}
-	bLocal_704 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, 0f, 2.5f, 2.5f, 5f);
+	bLocal_704 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, 0f, 2.5f, 2.5f, 5f);
 	PED::_0x7C00CFC48A782DC0(bLocal_704, &(uLocal_689[0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	VOLUME::_0x5B23DFF8E0948BB2(bLocal_704, 0);
 	VOLUME::_0xBE551C2CC421185D(bLocal_704, 1);
@@ -5124,11 +5124,11 @@ void func_140()
 							{
 								if (iLocal_583 == 0)
 								{
-									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_705);
+									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_705);
 								}
 								else if (iLocal_583 == 1)
 								{
-									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_708);
+									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_708);
 								}
 								if (VOLUME::_DOES_VOLUME_EXIST(bLocal_703))
 								{
@@ -5163,11 +5163,11 @@ void func_140()
 							{
 								if (iLocal_583 == 0)
 								{
-									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_705);
+									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_705);
 								}
 								else if (iLocal_583 == 1)
 								{
-									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_708);
+									bLocal_703 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_389.f_51, 0f, 0f, (Local_356[0 /*32*/])->f_9, vLocal_708);
 								}
 								if (VOLUME::_DOES_VOLUME_EXIST(bLocal_703))
 								{
@@ -14967,7 +14967,7 @@ int func_425(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -15002,7 +15002,7 @@ int func_426(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

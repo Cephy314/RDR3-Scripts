@@ -1805,7 +1805,7 @@ int func_96()
 
 var func_97(int iParam0, int iParam1)
 {
-	return func_106(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_106(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_98(int* iParam0, var uParam1)
@@ -1996,13 +1996,13 @@ var func_106(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_121());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_121());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_121());
 				break;
 		}
@@ -4338,7 +4338,7 @@ int func_198(int iParam0, vector3 vParam1)
 					{
 						fVar17 = (fVar17 + ((fVar16 - fVar15) * 0.01f));
 					}
-					uVar19 = func_106(vVar12, 0f, 0f, 0f, fVar15, fVar15, fVar15, -432403087, 1, 8);
+					uVar19 = func_106(vVar12, 0f, 0f, 0f, fVar15, fVar15, fVar15, joaat("VOLSPHERE"), 1, 8);
 					iVar21 = 0;
 					while (iVar21 <= 31)
 					{

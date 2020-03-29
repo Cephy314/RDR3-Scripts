@@ -972,7 +972,7 @@ void func_24(float fParam0)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(&(iLocal_263[iVar0])))
 		{
-			iLocal_557[iVar0] = VOLUME::_0x0EB78C2B156635B1(-432403087, func_15(&Local_3), 0f, 0f, 0f, fParam0, fParam0, fParam0);
+			iLocal_557[iVar0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), func_15(&Local_3), 0f, 0f, 0f, fParam0, fParam0, fParam0);
 			PED::_0x7C00CFC48A782DC0(&(iLocal_557[iVar0]), &(iLocal_263[iVar0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 		}
 		iVar0++;
@@ -16298,7 +16298,7 @@ int func_565(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -16333,7 +16333,7 @@ int func_566(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

@@ -9173,7 +9173,7 @@ int func_305()
 		}
 		else
 		{
-			bLocal_95 = func_664(&Local_142, vLocal_66, 5, 1377.993f, 573.3588f, 87.8689f, 0f, 0f, -8.170991f, 64.80904f, 26.68939f, 8.980153f, bLocal_943, 665633627, bLocal_23, 0, 0, 0, 0, 0);
+			bLocal_95 = func_664(&Local_142, vLocal_66, 5, 1377.993f, 573.3588f, 87.8689f, 0f, 0f, -8.170991f, 64.80904f, 26.68939f, 8.980153f, bLocal_943, joaat("VOLCYLINDER"), bLocal_23, 0, 0, 0, 0, 0);
 		}
 	}
 	if (bLocal_95 && !bLocal_96)

@@ -36315,7 +36315,7 @@ void func_1068(var uParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7, c
 		{
 			if (iParam12 == 1)
 			{
-				*uParam0 = VOLUME::_0x0EB78C2B156635B1(665633627, vParam1, vParam4, vParam7);
+				*uParam0 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vParam1, vParam4, vParam7);
 				VOLUME::_0x5B23DFF8E0948BB2(*uParam0, 1);
 			}
 			else
@@ -36325,7 +36325,7 @@ void func_1068(var uParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7, c
 		}
 		else if (iParam12 == 1)
 		{
-			*uParam0 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vParam1, vParam4, vParam7);
+			*uParam0 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vParam1, vParam4, vParam7);
 			VOLUME::_0x5B23DFF8E0948BB2(*uParam0, 1);
 		}
 		else

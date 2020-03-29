@@ -7244,7 +7244,7 @@ int func_223(char[4] cParam0)
 		case 3:
 			if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_991))
 			{
-				bLocal_991 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1422.077f, 387.7596f, 90.25286f, 0f, 0f, -14.70995f, 5.068347f, 13.97886f, 4.026019f);
+				bLocal_991 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1422.077f, 387.7596f, 90.25286f, 0f, 0f, -14.70995f, 5.068347f, 13.97886f, 4.026019f);
 			}
 			func_610(uLocal_979[0], Local_1365[0 /*61*/], &Local_1427, 15f, -1082130432 /* Float: -1f */, 0);
 			if (func_642())
@@ -7262,7 +7262,7 @@ int func_223(char[4] cParam0)
 		case 4:
 			if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_991))
 			{
-				bLocal_991 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1422.077f, 387.7596f, 90.25286f, 0f, 0f, -14.70995f, 5.068347f, 13.97886f, 4.026019f);
+				bLocal_991 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1422.077f, 387.7596f, 90.25286f, 0f, 0f, -14.70995f, 5.068347f, 13.97886f, 4.026019f);
 			}
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_JUMP"), false);
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_DUCK"), false);
@@ -45447,7 +45447,7 @@ void func_1589(var uParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

@@ -7215,12 +7215,12 @@ int func_291()
 {
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_83[0])))
 	{
-		iLocal_83[0] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 653.7f, -1253.39f, 43.37f, 0f, 0f, 34f, 6f, 5f, 3f);
+		iLocal_83[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 653.7f, -1253.39f, 43.37f, 0f, 0f, 34f, 6f, 5f, 3f);
 		return 0;
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_83[1])))
 	{
-		iLocal_83[1] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 660.91f, -1256.27f, 43.37f, 0f, 0f, -16.75f, 3f, 5f, 3f);
+		iLocal_83[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 660.91f, -1256.27f, 43.37f, 0f, 0f, -16.75f, 3f, 5f, 3f);
 		return 0;
 	}
 	return 1;

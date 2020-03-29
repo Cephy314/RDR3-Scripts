@@ -1117,7 +1117,7 @@ int func_29(int iParam0)
 	func_144(&(iParam0->f_428), 18082);
 	func_145(&(uLocal_14[2]));
 	MISC::_SET_WEATHER_TYPE(joaat("OVERCASTDARK"), false, true, true, 45f, false);
-	iLocal_66 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1638.949f, -1362.971f, 84.2907f, 0f, 0f, 58.10868f, 4.789085f, 3.170142f, 2.023957f);
+	iLocal_66 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1638.949f, -1362.971f, 84.2907f, 0f, 0f, 58.10868f, 4.789085f, 3.170142f, 2.023957f);
 	return 1;
 }
 

@@ -1614,52 +1614,52 @@ void func_45(int iParam0)
 	Global_1357549->f_3[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("BeechersHope volCampAreas[CVA_INNER]");
 	if ((func_291(588987611) || func_291(227918160)) || func_291(2008888900))
 	{
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1638.882f, -1356.022f, 112.498f, 0f, 0f, 74.99999f, 3f, 2f, 40f, 665633627, 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1638.882f, -1356.022f, 112.498f, 0f, 0f, 74.99999f, 3f, 2f, 40f, joaat("VOLCYLINDER"), 0);
 	}
 	if (((func_291(1649996811) || func_291(227918160)) || func_291(168171957)) || func_291(2008888900))
 	{
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1670.094f, -1342.445f, 101.6522f, 0f, 0f, -34f, 14f, 9f, 50f, -1612834106, 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1670.094f, -1342.445f, 101.6522f, 0f, 0f, -34f, 14f, 9f, 50f, joaat("VOLBOX"), 0);
 	}
 	if (func_291(168171957) || func_291(227918160))
 	{
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1626.051f, -1401.164f, 93.2211f, 0f, 0f, 7.999992f, 4.75f, 4.75f, 40f, -1612834106, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1629.937f, -1392.412f, 96.2211f, 0f, 0f, -41f, 4.25f, 4.25f, 40f, -1612834106, 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1626.051f, -1401.164f, 93.2211f, 0f, 0f, 7.999992f, 4.75f, 4.75f, 40f, joaat("VOLBOX"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1629.937f, -1392.412f, 96.2211f, 0f, 0f, -41f, 4.25f, 4.25f, 40f, joaat("VOLBOX"), 0);
 	}
 	if (((func_291(168171957) || func_291(1193080109)) || func_291(-491981251)) || func_291(-618620429))
 	{
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1641.548f, -1360.057f, 98.3145f, 0f, 0f, -30f, 14.55f, 17.25f, 40f, -1612834106, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1642.431f, -1361.456f, 98.45139f, 0f, 0f, -30f, 21.5f, 12.5f, 40f, -1612834106, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1648.027f, -1347.69f, 98f, 0f, 0f, -30f, 9.25f, 5.75f, 40f, -1612834106, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1643.429f, -1370.81f, 98.289f, 0f, 0f, -30f, 13.75f, 7f, 40f, -1612834106, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1648.45f, -1372.039f, 98.061f, 0f, 0f, -30f, 6.25f, 2f, 40f, -1612834106, 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1641.548f, -1360.057f, 98.3145f, 0f, 0f, -30f, 14.55f, 17.25f, 40f, joaat("VOLBOX"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1642.431f, -1361.456f, 98.45139f, 0f, 0f, -30f, 21.5f, 12.5f, 40f, joaat("VOLBOX"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1648.027f, -1347.69f, 98f, 0f, 0f, -30f, 9.25f, 5.75f, 40f, joaat("VOLBOX"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1643.429f, -1370.81f, 98.289f, 0f, 0f, -30f, 13.75f, 7f, 40f, joaat("VOLBOX"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1648.45f, -1372.039f, 98.061f, 0f, 0f, -30f, 6.25f, 2f, 40f, joaat("VOLBOX"), 0);
 	}
 	if (func_291(-491981251) || func_291(-618620429))
 	{
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1674.602f, -1344.577f, 115.2522f, 0f, 0f, 0f, 2.75f, 2.75f, 40f, 665633627, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1661.908f, -1336.698f, 109.565f, 0f, 0f, 0f, 2.75f, 2.5f, 40f, 665633627, 0);
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1627.55f, -1331.23f, 108.5894f, 0f, 0f, -21f, 2.25f, 1.5f, 40f, 665633627, 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1674.602f, -1344.577f, 115.2522f, 0f, 0f, 0f, 2.75f, 2.75f, 40f, joaat("VOLCYLINDER"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1661.908f, -1336.698f, 109.565f, 0f, 0f, 0f, 2.75f, 2.5f, 40f, joaat("VOLCYLINDER"), 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1627.55f, -1331.23f, 108.5894f, 0f, 0f, -21f, 2.25f, 1.5f, 40f, joaat("VOLCYLINDER"), 0);
 	}
 	if ((func_291(1193080109) || func_291(-491981251)) || func_291(-618620429))
 	{
-		func_292(Global_1357549->f_3[0], &iVar2, 0, -1582.914f, -1393.803f, 98.08f, 0f, 0f, -25f, 5.5f, 6f, 40f, -1612834106, 0);
+		func_292(Global_1357549->f_3[0], &iVar2, 0, -1582.914f, -1393.803f, 98.08f, 0f, 0f, -25f, 5.5f, 6f, 40f, joaat("VOLBOX"), 0);
 	}
 	Global_1357549->f_3[2] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("BeechersHope volCampAreas[CVA_OUTER]");
 	Global_1357549->f_3[3] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("BeechersHope volCampAreas[CVA_OUTER_THRESHOLD]");
-	func_292(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -1618.26f, -1387.421f, 121.6319f, 0f, 0f, 51.00005f, 50f, 75f, 50f, 665633627, 0);
+	func_292(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -1618.26f, -1387.421f, 121.6319f, 0f, 0f, 51.00005f, 50f, 75f, 50f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[4] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("BeechersHope volCampAreas[CVA_SURROUNDING]");
 	Global_1357549->f_3[5] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("BeechersHope volCampAreas[CVA_SURROUNDING_THRESHOLD]");
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1626.729f, -1375.789f, 114.5493f, 0f, 0f, 6f, 101f, 126f, 50f, 665633627, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1704.27f, -1433.937f, 112.6512f, 0f, 0f, 9.999996f, 28f, 84f, 60f, -1612834106, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1661.808f, -1479.296f, 124.6512f, 0f, 0f, -13.99999f, 54f, 19f, 50f, 665633627, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1580.68f, -1489.235f, 120.2263f, 0f, 0f, 13f, 31f, 5f, 40f, 665633627, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1547.357f, -1454.696f, 123.6074f, 0f, 0f, -27f, 11f, 40f, 40f, 665633627, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1530.24f, -1400.403f, 107.1596f, 0f, 0f, 0f, 7f, 55f, 60f, -1612834106, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1556.43f, -1315.928f, 96.0094f, 0f, 0f, 2.5f, 55f, 106f, 60f, -1612834106, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1562.405f, -1255.967f, 117.9601f, 0f, 0f, -27f, 37f, 19f, 50f, 665633627, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1607.675f, -1256.359f, 100.8084f, 0f, 0f, 19f, 61f, 34f, 60f, -1612834106, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1700.762f, -1293.963f, 121.3372f, 0f, 0f, -130f, 28f, 10f, 40f, 665633627, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1721.101f, -1328.251f, 117.2535f, 0f, 0f, -13f, 7f, 43f, 60f, -1612834106, 0);
-	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1722.965f, -1358.271f, 121.4061f, 0f, 0f, 3.000003f, 7f, 22f, 40f, 665633627, 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1626.729f, -1375.789f, 114.5493f, 0f, 0f, 6f, 101f, 126f, 50f, joaat("VOLCYLINDER"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1704.27f, -1433.937f, 112.6512f, 0f, 0f, 9.999996f, 28f, 84f, 60f, joaat("VOLBOX"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1661.808f, -1479.296f, 124.6512f, 0f, 0f, -13.99999f, 54f, 19f, 50f, joaat("VOLCYLINDER"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1580.68f, -1489.235f, 120.2263f, 0f, 0f, 13f, 31f, 5f, 40f, joaat("VOLCYLINDER"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1547.357f, -1454.696f, 123.6074f, 0f, 0f, -27f, 11f, 40f, 40f, joaat("VOLCYLINDER"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1530.24f, -1400.403f, 107.1596f, 0f, 0f, 0f, 7f, 55f, 60f, joaat("VOLBOX"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1556.43f, -1315.928f, 96.0094f, 0f, 0f, 2.5f, 55f, 106f, 60f, joaat("VOLBOX"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1562.405f, -1255.967f, 117.9601f, 0f, 0f, -27f, 37f, 19f, 50f, joaat("VOLCYLINDER"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1607.675f, -1256.359f, 100.8084f, 0f, 0f, 19f, 61f, 34f, 60f, joaat("VOLBOX"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1700.762f, -1293.963f, 121.3372f, 0f, 0f, -130f, 28f, 10f, 40f, joaat("VOLCYLINDER"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1721.101f, -1328.251f, 117.2535f, 0f, 0f, -13f, 7f, 43f, 60f, joaat("VOLBOX"), 0);
+	func_292(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -1722.965f, -1358.271f, 121.4061f, 0f, 0f, 3.000003f, 7f, 22f, 40f, joaat("VOLCYLINDER"), 0);
 	if (bVar1)
 	{
 		Global_1357549->f_3[6] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-1641.649f, -1360.09f, 85.30408f, 0f, 0f, -29.80834f, 14f, 16f, 4f, "BeechersHope volCampAreas[CVA_PROPERTY]");
@@ -60629,7 +60629,7 @@ void func_1883(int iParam0)
 
 var func_1884(int iParam0, int iParam1)
 {
-	return func_2147(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_2147(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_1885(struct<16> Param0, var uParam16, bool bParam17, bool bParam18)
@@ -67742,13 +67742,13 @@ var func_2147(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, in
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				bVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2275());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				bVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2275());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				bVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2275());
 				break;
 		}

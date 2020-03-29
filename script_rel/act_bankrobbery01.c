@@ -36310,13 +36310,13 @@ int func_1064(int iParam0)
 		case 13:
 		case 14:
 		case 16:
-			return -1612834106;
+			return joaat("VOLBOX");
 		case 1:
 		case 3:
 		case 17:
 		case 18:
 		case 19:
-			return 665633627;
+			return joaat("VOLCYLINDER");
 		default:
 			break;
 	}

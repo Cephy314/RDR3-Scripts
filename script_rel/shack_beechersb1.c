@@ -2761,14 +2761,14 @@ struct<12> func_94(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 1406.903f, -1638.999f, 68.017f };
 			Var0.f_5 = { 0f, 0f, -31f };
 			Var0.f_8 = { 4f, 4f, 4f };
 			Var0.f_11 = "BeechersBSign";
 			break;
 		case 1:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 1407.883f, -1637.116f, 66.89104f };
 			Var0.f_5 = { VOLUME::_0x18675BC914891122(func_16(func_15())) };
 			Var0.f_8 = { 30f, 30f, 30f };

@@ -2956,7 +2956,7 @@ int func_128(var uParam0)
 	func_277();
 	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_19))
 	{
-		iLocal_19 = VOLUME::_0x0EB78C2B156635B1(665633627, -2560.409f, 399.518f, 147.123f, 0f, 0f, 0f, 1.5f, 1.5f, 2.110557f);
+		iLocal_19 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -2560.409f, 399.518f, 147.123f, 0f, 0f, 0f, 1.5f, 1.5f, 2.110557f);
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_20))
 	{

@@ -50644,7 +50644,7 @@ int func_1265(var uParam0)
 					func_1679(&(uLocal_19.f_116));
 					if (!VOLUME::_DOES_VOLUME_EXIST(uLocal_19.f_72))
 					{
-						uLocal_19.f_72 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2514.15f, 430.94f, 146.93f, 0f, 0f, 0f, 3f, 4.5f, 5f);
+						uLocal_19.f_72 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2514.15f, 430.94f, 146.93f, 0f, 0f, 0f, 3f, 4.5f, 5f);
 					}
 					func_1691();
 					func_1689(7);
@@ -54989,91 +54989,91 @@ struct<11> func_1406(int iParam0)
 			Var0 = { -2587.113f, 454.68f, 145.3922f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 30f, 30f, 15f };
-			Var0.f_9 = 665633627;
+			Var0.f_9 = joaat("VOLCYLINDER");
 			break;
 		case 1:
 			Var0 = { -2518.893f, 430.7648f, 147.0185f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 10.39f, 10.58f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 2:
 			Var0 = { -2518.289f, 415.0448f, 147.9187f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 6f, 20f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 3:
 			Var0 = { -2537.971f, 399.7535f, 148.7537f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 3f, 4.75f, 3f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 4:
 			Var0 = { -2518.893f, 427.2391f, 147.0185f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 11.52518f, 21.36143f, 7.907348f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 5:
 			Var0 = { -2594.357f, 457.3597f, 146.6855f };
 			Var0.f_3 = { 0f, 0f, -10.9215f };
 			Var0.f_6 = { 6.590342f, 9.521901f, 3.905404f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 6:
 			Var0 = { -2548f, 399.5f, 148.1685f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 23f, 12f, 4f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 7:
 			Var0 = { -2549.423f, 399.5f, 148.1685f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 21f, 12f, 4f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 8:
 			Var0 = { -2538.438f, 397.862f, 148.1685f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 4f, 9f, 4f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 9:
 			Var0 = { -2561.042f, 399.2009f, 148.9248f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 5f, 7f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 10:
 			Var0 = { -2534.931f, 399.2009f, 148.9248f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 5f, 7f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 11:
 			Var0 = { -2523.86f, 437.4573f, 147.0288f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 2f, 4f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 12:
 			Var0 = { -2529.371f, 432.2425f, 147.7982f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 2f, 4f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		case 13:
 			Var0 = { -2507.241f, 412.5594f, 148.9185f };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 10f, 17f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 		default:
 			Var0 = { vLocal_16 };
 			Var0.f_3 = { vLocal_16 };
 			Var0.f_6 = { 10f, 10f, 10f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;
@@ -56262,7 +56262,7 @@ void func_1447(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1937(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

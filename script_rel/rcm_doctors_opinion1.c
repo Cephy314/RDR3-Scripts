@@ -9207,7 +9207,7 @@ void func_326(bool bParam0)
 {
 	if (!VOLUME::_DOES_VOLUME_EXIST(bParam0->f_321))
 	{
-		bParam0->f_321 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2700.185f, -1231.433f, 50.539f, 0f, 0f, -4f, 2f, 3.5f, 3f);
+		bParam0->f_321 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2700.185f, -1231.433f, 50.539f, 0f, 0f, -4f, 2f, 3.5f, 3f);
 	}
 }
 

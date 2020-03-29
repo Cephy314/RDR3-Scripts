@@ -805,7 +805,7 @@ struct<11> func_42(int iParam0)
 			Var0.f_3 = { 0f, 0f, 8.599687f };
 			Var0.f_6 = { 4.275794f, 2.017206f, 2.939194f };
 			Var0.f_9 = "TS_VAL_WALK_WALK_TRIGGER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;

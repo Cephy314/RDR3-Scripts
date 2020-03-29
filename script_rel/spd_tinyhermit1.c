@@ -6103,91 +6103,91 @@ struct<11> func_219(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 3025.557f, 1779.699f, 83.2056f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "RandomEventBlock";
 			break;
 		case 1:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 3025.943f, 1772.33f, 83.2056f };
 			Var0.f_4 = { 0f, 0f, -23f };
 			Var0.f_7 = { 25f, 25f, 30f };
 			Var0.f_10 = "Seen";
 			break;
 		case 2:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3044.034f, 1771.698f, 85.75678f };
 			Var0.f_4 = { 0f, 0f, -20f };
 			Var0.f_7 = { 25f, 10f, 10f };
 			Var0.f_10 = "SeenBlock";
 			break;
 		case 3:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 3026.856f, 1775.335f, 83.2056f };
 			Var0.f_4 = { 0f, 0f, 160f };
 			Var0.f_7 = { 10f, 6f, 10f };
 			Var0.f_10 = "Trigger";
 			break;
 		case 4:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3024.427f, 1769.17f, 85.09901f };
 			Var0.f_4 = { 0f, 0f, 160f };
 			Var0.f_7 = { 18f, 25f, 20f };
 			Var0.f_10 = "StayAway";
 			break;
 		case 5:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 3023.705f, 1768.557f, 83.9391f };
 			Var0.f_4 = { 0f, 0f, 160f };
 			Var0.f_7 = { 10f, 16f, 8f };
 			Var0.f_10 = "LookIKVolume";
 			break;
 		case 6:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3027.851f, 1779.131f, 83.547f };
 			Var0.f_4 = { 0f, 0f, -19.151f };
 			Var0.f_7 = { 8.632f, 6.255f, 7.358f };
 			Var0.f_10 = "ShackInterior";
 			break;
 		case 7:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 3023.276f, 1768.44f, 82.777f };
 			Var0.f_7 = { 9.314f, 12.025f, 6.857f };
 			Var0.f_4 = { 0f, 0f, -19.986f };
 			Var0.f_10 = "ShackExit";
 			break;
 		case 8:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3023.799f, 1768.604f, 82.897f };
 			Var0.f_4 = { 0f, 0f, -21.129f };
 			Var0.f_7 = { 24.44f, 15.408f, 11.345f };
 			Var0.f_10 = "ShackAimFront";
 			break;
 		case 9:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3016.639f, 1783.032f, 82.197f };
 			Var0.f_4 = { 0f, 0f, -21.276f };
 			Var0.f_7 = { 14.542f, 18.82f, 13.379f };
 			Var0.f_10 = "ShackAimSideWindow";
 			break;
 		case 10:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3030.316f, 1790.982f, 82.668f };
 			Var0.f_4 = { 0f, 0f, -21.489f };
 			Var0.f_7 = { 25.242f, 16.928f, 12.362f };
 			Var0.f_10 = "ShackAimBack";
 			break;
 		case 11:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 3024.178f, 1775.486f, 82.984f };
 			Var0.f_4 = { 0f, 0f, -20.785f };
 			Var0.f_7 = { 2.388f, 2.673f, 6.328f };
 			Var0.f_10 = "ShackAtDoor";
 			break;
 		case 12:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 3022.437f, 1764.7f, 82.499f };
 			Var0.f_4 = { 0f, 0f, -19.998f };
 			Var0.f_7 = { 47.598f, 38.92f, 12.015f };

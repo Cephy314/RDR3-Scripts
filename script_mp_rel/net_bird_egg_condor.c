@@ -1111,7 +1111,7 @@ void func_43(var uParam0, var uParam1, int iParam2)
 	Var8 = 0;
 	Var8.f_1 = PLAYER::GET_PLAYER_INDEX();
 	Var8.f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	func_76(Var8, func_75(Global_35, 0f, 0f, 0f, 150f, 150f, 150f, -432403087, 0, 8), 0, 0);
+	func_76(Var8, func_75(Global_35, 0f, 0f, 0f, 150f, 150f, 150f, joaat("VOLSPHERE"), 0, 8), 0, 0);
 	func_77(&Var1, &uVar0);
 }
 
@@ -1134,7 +1134,7 @@ void func_44(var uParam0, var uParam1, int iParam2)
 	Var8 = 0;
 	Var8.f_1 = PLAYER::GET_PLAYER_INDEX();
 	Var8.f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	func_76(Var8, func_75(Global_35, 0f, 0f, 0f, 150f, 150f, 150f, -432403087, 0, 8), 0, 0);
+	func_76(Var8, func_75(Global_35, 0f, 0f, 0f, 150f, 150f, 150f, joaat("VOLSPHERE"), 0, 8), 0, 0);
 	func_77(&Var1, &uVar0);
 }
 
@@ -1786,7 +1786,7 @@ int func_73(int iParam0)
 
 var func_74(int iParam0, int iParam1)
 {
-	return func_75(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_75(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 var func_75(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int iParam10, int iParam11)
@@ -1833,13 +1833,13 @@ var func_75(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int 
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_118());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_118());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_118());
 				break;
 		}
@@ -2215,7 +2215,7 @@ void func_81(var uParam0, var uParam1, int iParam2)
 	Var8 = 0;
 	Var8.f_1 = PLAYER::GET_PLAYER_INDEX();
 	Var8.f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	func_76(Var8, func_75(Global_35, 0f, 0f, 0f, 300f, 300f, 300f, -432403087, 0, 8), 0, 0);
+	func_76(Var8, func_75(Global_35, 0f, 0f, 0f, 300f, 300f, 300f, joaat("VOLSPHERE"), 0, 8), 0, 0);
 	func_77(&Var1, &uVar0);
 }
 

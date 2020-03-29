@@ -35179,7 +35179,7 @@ bool func_765(var uParam0)
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_2482[34])))
 	{
-		iLocal_2482[34] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1791.87f, -352.7889f, 164.6875f, 0f, 0f, 23.0903f, 2.804129f, 2.130628f, 4.970548f);
+		iLocal_2482[34] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1791.87f, -352.7889f, 164.6875f, 0f, 0f, 23.0903f, 2.804129f, 2.130628f, 4.970548f);
 	}
 	if (!func_28(&uLocal_2548))
 	{
@@ -51376,7 +51376,7 @@ void func_1211(var uParam0)
 				{
 					if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_2482[33])))
 					{
-						iLocal_2482[33] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1786.832f, -381.6211f, 158.174f, 0f, 0f, 33.94556f, 2.785057f, 2.503671f, 3.608314f);
+						iLocal_2482[33] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1786.832f, -381.6211f, 158.174f, 0f, 0f, 33.94556f, 2.785057f, 2.503671f, 3.608314f);
 					}
 					ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(&(Local_36[12 /*17*/]), func_414(20), true);
 					func_49(0, 0);
@@ -51397,7 +51397,7 @@ void func_1211(var uParam0)
 				{
 					if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_2482[33])))
 					{
-						iLocal_2482[33] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1786.832f, -381.6211f, 158.174f, 0f, 0f, 33.94556f, 2.785057f, 2.503671f, 3.608314f);
+						iLocal_2482[33] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1786.832f, -381.6211f, 158.174f, 0f, 0f, 33.94556f, 2.785057f, 2.503671f, 3.608314f);
 					}
 					ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(&(Local_36[12 /*17*/]), func_414(19), true);
 					func_49(0, 0);
@@ -61006,7 +61006,7 @@ void func_1472(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1919(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

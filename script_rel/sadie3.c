@@ -35753,7 +35753,7 @@ int func_771(char[4] cParam0)
 						}
 						if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_1817))
 						{
-							iLocal_1817 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -629.33f, -53.27987f, 83.25195f, 0f, 0f, 4.34866f, 3.548011f, 3.042526f, 3.215499f);
+							iLocal_1817 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -629.33f, -53.27987f, 83.25195f, 0f, 0f, 4.34866f, 3.548011f, 3.042526f, 3.215499f);
 						}
 						PED::FORCE_PED_MOTION_STATE(Local_1386, 1619979220, false, 0, false);
 						TASK::TASK_GRAPPLE(Local_1386, Global_35, 0, 1, 3f, 1, 1048576);
@@ -36133,7 +36133,7 @@ int func_776(char[4] cParam0)
 				func_426(cParam0, &(iLocal_1406[22]), "p_whiskeyglass01x^2", 0, 0, 0, 0);
 				if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_1816))
 				{
-					iLocal_1816 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1358.725f, -1307.297f, 77.60439f, 0f, 0f, -19.96882f, 5.799519f, 3.903756f, 3.823034f);
+					iLocal_1816 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1358.725f, -1307.297f, 77.60439f, 0f, 0f, -19.96882f, 5.799519f, 3.903756f, 3.823034f);
 				}
 				func_134(cParam0, 2);
 			}
@@ -65426,7 +65426,7 @@ void func_1575(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2064(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

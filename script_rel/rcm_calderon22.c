@@ -14551,7 +14551,7 @@ void func_533(bool bParam0, var uParam1)
 	func_924(uParam1, *bParam0, "RCLD_CALDERON", 1);
 	if (!VOLUME::_DOES_VOLUME_EXIST(bParam0->f_1))
 	{
-		bParam0->f_1 = VOLUME::_0x0EB78C2B156635B1(665633627, func_370(), 0f, 0f, 0f, 0.75f, 0.75f, 1.5f);
+		bParam0->f_1 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), func_370(), 0f, 0f, 0f, 0.75f, 0.75f, 1.5f);
 	}
 }
 

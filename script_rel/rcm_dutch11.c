@@ -9358,7 +9358,7 @@ int func_298(var uParam0)
 			iLocal_867 = ANIMSCENE::_CREATE_ANIM_SCENE("script@rcm@dtc1@leadin@rsc_1@prop_placement", 0, "pl_props", false, true);
 			ANIMSCENE::LOAD_ANIM_SCENE(iLocal_866);
 			ANIMSCENE::LOAD_ANIM_SCENE(iLocal_867);
-			bLocal_756 = VOLUME::_0x0EB78C2B156635B1(-1612834106, VOLUME::_0xF70F00013A62F866(Local_14.f_53), VOLUME::_0x18675BC914891122(Local_14.f_53), VOLUME::_0x3E2A25B2416DD67E(Local_14.f_53));
+			bLocal_756 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), VOLUME::_0xF70F00013A62F866(Local_14.f_53), VOLUME::_0x18675BC914891122(Local_14.f_53), VOLUME::_0x3E2A25B2416DD67E(Local_14.f_53));
 			VOLUME::_0x5B23DFF8E0948BB2(bLocal_756, 1);
 			PED::SET_PED_CAN_BE_TARGETTED(bLocal_589, false);
 			PED::SET_PED_CONFIG_FLAG(bLocal_589, 301, true);
@@ -11240,7 +11240,7 @@ void func_335(var uParam0, int iParam1)
 						AUDIO::DISABLE_PED_PAIN_AUDIO(bLocal_312, true);
 						func_327(bLocal_299, joaat("WEAPON_SHOTGUN_DOUBLEBARREL"), -1, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
 						func_760(Local_14.f_56, 16);
-						bLocal_586 = VOLUME::_0x0EB78C2B156635B1(-1612834106, VOLUME::_0xF70F00013A62F866(Local_14.f_57), VOLUME::_0x18675BC914891122(Local_14.f_57), VOLUME::_0x3E2A25B2416DD67E(Local_14.f_57));
+						bLocal_586 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), VOLUME::_0xF70F00013A62F866(Local_14.f_57), VOLUME::_0x18675BC914891122(Local_14.f_57), VOLUME::_0x3E2A25B2416DD67E(Local_14.f_57));
 						VOLUME::_0x5B23DFF8E0948BB2(bLocal_586, 1);
 						iLocal_234 = GRAPHICS::_0xFA50F79257745E74(858.2007f, -395.1119f, 82.1422f, 3f, 2, -1, 0);
 						iLocal_235 = GRAPHICS::_0xFA50F79257745E74(870.5548f, -385.6518f, 83.0092f, 3f, 2, -1, 0);
@@ -26707,7 +26707,7 @@ void func_763(vector3 vParam0, float fParam3, bool bParam4, bool bParam5)
 		}
 		ENTITY::_0x18FF3110CF47115D(bLocal_297, 2, false);
 		PED::SET_PED_CONFIG_FLAG(bLocal_297, 66, true);
-		iLocal_587 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_338, 0f, 0f, 149f, 1f, 2.3f, 1.2f);
+		iLocal_587 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_338, 0f, 0f, 149f, 1f, 2.3f, 1.2f);
 		PED::SET_RAGDOLL_BLOCKING_FLAGS(bLocal_297, 48);
 	}
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(bLocal_297, true);
@@ -60869,7 +60869,7 @@ void func_1865(bool bParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

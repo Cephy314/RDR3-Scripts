@@ -37061,9 +37061,9 @@ int func_816(char[4] cParam0)
 	Local_1683[2 /*2*/] = func_1021(&((Local_1683[2 /*2*/])->f_1), 2658.503f, -1192.394f, 50.6251f, 2668.075f, -1170.966f, 55.4079f, 2668.075f, -1170.966f, 55.4079f, 12f, 0, 0, 0);
 	Local_1683[7 /*2*/] = func_1021(&((Local_1683[7 /*2*/])->f_1), 2636.357f, -1186.12f, 51.8853f, 2650.126f, -1171.367f, 56.0623f, 2643.066f, -1177.919f, 52.30386f, 8f, 0, 0, 0);
 	func_195(7, 1, 0);
-	iLocal_1798[0] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2571.016f, -1181.451f, 53.33699f, 0f, 0f, 0f, 5.397557f, 1f, 2.298882f);
-	iLocal_1798[1] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2638.334f, -1185.729f, 53.02575f, 0f, 0f, 0f, 1.880846f, 1f, 1.952961f);
-	iLocal_1798[2] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2646.156f, -1185.729f, 53.02575f, 0f, 0f, 0f, 1.880846f, 1f, 1.952961f);
+	iLocal_1798[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2571.016f, -1181.451f, 53.33699f, 0f, 0f, 0f, 5.397557f, 1f, 2.298882f);
+	iLocal_1798[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2638.334f, -1185.729f, 53.02575f, 0f, 0f, 0f, 1.880846f, 1f, 1.952961f);
+	iLocal_1798[2] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2646.156f, -1185.729f, 53.02575f, 0f, 0f, 0f, 1.880846f, 1f, 1.952961f);
 	return 1;
 }
 
@@ -37327,7 +37327,7 @@ int func_826(var uParam0)
 	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
 	PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 10, 0, 1);
 	PLAYER::_0x0751D461F06E41CE(PLAYER::PLAYER_ID(), 5, 0, 1);
-	bLocal_1793 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2664.577f, -1182.968f, 53.1034f, 0f, 0f, 0f, 1.809818f, 1.662117f, 1.963951f);
+	bLocal_1793 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2664.577f, -1182.968f, 53.1034f, 0f, 0f, 0f, 1.809818f, 1.662117f, 1.963951f);
 	func_1420();
 	return 1;
 }
@@ -37674,7 +37674,7 @@ int func_832(char[4] cParam0)
 					func_199(Global_35, 1);
 					func_1403(&uLocal_1769);
 					TASK::TASK_FOLLOW_WAYPOINT_RECORDING(&(Local_1559[0 /*10*/]), sLocal_68, 0, 8, -1, 0, 0, -1);
-					iLocal_1788[0] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2846.451f, -1366.294f, 44.29462f, 0f, 0f, 50.47982f, 3.901808f, 1.525754f, 1.665599f);
+					iLocal_1788[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2846.451f, -1366.294f, 44.29462f, 0f, 0f, 50.47982f, 3.901808f, 1.525754f, 1.665599f);
 					func_133(cParam0, 2);
 				}
 			}
@@ -38680,14 +38680,14 @@ int func_856(char[4] cParam0)
 	ANIMSCENE::START_ANIM_SCENE(&(iLocal_1708[9]));
 	func_539(-7373783, 1, 1f, 1, 1, 0, 1, 0);
 	func_539(-331983497, 1, -1f, 1, 1, 0, 1, 0);
-	bLocal_1792 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 3283.359f, -1309.822f, 42.6229f, 0f, 0f, 0f, 1.746368f, 2.447201f, 2.385454f);
+	bLocal_1792 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 3283.359f, -1309.822f, 42.6229f, 0f, 0f, 0f, 1.746368f, 2.447201f, 2.385454f);
 	if ((ANIMSCENE::_0x25557E324489393C(&(iLocal_1708[12])) && !ANIMSCENE::_0x59606519FF9D3EC2(&(iLocal_1708[12]), 1)) && !ANIMSCENE::_0x477122B8D05E7968(&(iLocal_1708[12]), 1, 0))
 	{
 		func_1482(cParam0, &(iLocal_1708[12]));
 	}
 	func_539(119948423, 1, -1f, 0, 0, 0f, 1, 0);
 	func_539(351789098, 1, 1f, 0, 0, 0f, 1, 0);
-	bLocal_1805 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 3288.76f, -1307.749f, 51.62063f, 0f, 0f, 0f, 2.151137f, 1f, 2.016306f);
+	bLocal_1805 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 3288.76f, -1307.749f, 51.62063f, 0f, 0f, 0f, 2.151137f, 1f, 2.016306f);
 	return 1;
 }
 
@@ -38749,7 +38749,7 @@ int func_857(char[4] cParam0)
 					if (!ENTITY::IS_ENTITY_DEAD(&(Local_370[11 /*10*/])))
 					{
 						func_1437(&(Local_370[11 /*10*/]), Global_35, &Var0, 0f, 0f, 0f, cLocal_60, 0, 1, 4.5f, 3f, 1073069561, 1.05f, 1092616192 /* Float: 10f */, -1, 1, 1, 0, 0, 1);
-						bLocal_1786 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_370[11 /*10*/]), true, false), 0f, 0f, 0f, 0.1f, 0.1f, 1f);
+						bLocal_1786 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_370[11 /*10*/]), true, false), 0f, 0f, 0f, 0.1f, 0.1f, 1f);
 					}
 				}
 			}
@@ -38921,7 +38921,7 @@ int func_859(char[4] cParam0)
 	PED::_0x2208438012482A1A(Global_35, false, false);
 	func_1446();
 	func_1482(cParam0, &(iLocal_1708[12]));
-	bLocal_1805 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 3288.76f, -1307.749f, 51.62063f, 0f, 0f, 0f, 2.151137f, 1f, 2.016306f);
+	bLocal_1805 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 3288.76f, -1307.749f, 51.62063f, 0f, 0f, 0f, 2.151137f, 1f, 2.016306f);
 	return 1;
 }
 
@@ -38939,7 +38939,7 @@ int func_861(char[4] cParam0)
 		ANIMSCENE::START_ANIM_SCENE(&(iLocal_1708[11]));
 		func_1485();
 	}
-	bLocal_1797 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_370[11 /*10*/]), true, false), 0f, 0f, 0f, 0.9f, 0.9f, 1f);
+	bLocal_1797 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_370[11 /*10*/]), true, false), 0f, 0f, 0f, 0.9f, 0.9f, 1f);
 	PED::_0x7C00CFC48A782DC0(bLocal_1797, &(Local_370[11 /*10*/]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	func_1487();
 	PED::SET_PED_CONFIG_FLAG(&(Local_370[11 /*10*/]), 96, true);
@@ -39418,7 +39418,7 @@ int func_866(char[4] cParam0)
 	if (!ENTITY::IS_ENTITY_DEAD(&(Local_1559[1 /*10*/])))
 	{
 		func_1437(&(Local_1559[1 /*10*/]), Global_35, &Var0, 0f, 0f, 0f, sLocal_62, 0, 1, 4f, 2.5f, 1073069561, 1.1f, 1092616192 /* Float: 10f */, -1, 1, 0, 0, 0, 1);
-		bLocal_1786 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_1559[1 /*10*/]), true, false), 0f, 0f, 0f, 0.15f, 0.15f, 1f);
+		bLocal_1786 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_1559[1 /*10*/]), true, false), 0f, 0f, 0f, 0.15f, 0.15f, 1f);
 	}
 	Local_4411.f_3 = 1;
 	Local_4411 = 1;
@@ -39450,7 +39450,7 @@ int func_866(char[4] cParam0)
 	ANIMSCENE::SET_ANIM_SCENE_ENTITY(&(iLocal_1708[36]), "S_TUMBLER01X_BROWN", &(iLocal_1549[1]), 0);
 	ANIMSCENE::START_ANIM_SCENE(&(iLocal_1708[36]));
 	func_504(Local_370[9 /*10*/], 0);
-	bLocal_1787 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 3281.938f, -1308.288f, 51.96515f, 0f, 0f, 0f, 1.825222f, 1.429643f, 2.276447f);
+	bLocal_1787 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 3281.938f, -1308.288f, 51.96515f, 0f, 0f, 0f, 1.825222f, 1.429643f, 2.276447f);
 	func_1433(&(Local_79[6 /*10*/]), joaat("WORLD_HUMAN_GUARD_SCOUT"), -1, 0, 0, -1082130432 /* Float: -1f */);
 	ANIMSCENE::LOAD_ANIM_SCENE(&(iLocal_1708[37]));
 	func_1507(cParam0, 256);
@@ -67596,7 +67596,7 @@ void func_1715(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2247(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

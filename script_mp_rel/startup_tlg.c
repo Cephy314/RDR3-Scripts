@@ -6409,12 +6409,12 @@ void func_172(int iParam0)
 
 void func_173()
 {
-	Global_1901929->f_38 = func_383(1497760498, joaat("BGS_EXPECTEDVERSION"), 0, "BGS_ExpectedVersion");
-	Global_1901929->f_38.f_1 = func_383(1497760498, joaat("BGS_POSIX_TIMEFORNEXTKICK"), 0, "BGS_POSIX_TimeForNextKick");
-	Global_1901929->f_38.f_2 = func_383(1497760498, joaat("BGS_SPECIALEVENT"), 0, "BGS_SpecialEvent");
-	Global_1901929->f_38.f_3 = func_383(1497760498, joaat("BGS_POSIX_SPECIALEVENTSTART"), 0, "BGS_POSIX_SpecialEventStart");
-	Global_1901929->f_38.f_4 = func_383(1497760498, joaat("BGS_POSIX_SPECIALEVENTEND"), 0, "BGS_POSIX_SpecialEventEnd");
-	Global_1901929->f_38.f_5 = func_383(1497760498, joaat("BGS_SPECIALEVENTBITSET"), 0, "BGS_SpecialEventBitset");
+	Global_1901929->f_38 = func_383(joaat("BACKGROUND_SCRIPT"), joaat("BGS_EXPECTEDVERSION"), 0, "BGS_ExpectedVersion");
+	Global_1901929->f_38.f_1 = func_383(joaat("BACKGROUND_SCRIPT"), joaat("BGS_POSIX_TIMEFORNEXTKICK"), 0, "BGS_POSIX_TimeForNextKick");
+	Global_1901929->f_38.f_2 = func_383(joaat("BACKGROUND_SCRIPT"), joaat("BGS_SPECIALEVENT"), 0, "BGS_SpecialEvent");
+	Global_1901929->f_38.f_3 = func_383(joaat("BACKGROUND_SCRIPT"), joaat("BGS_POSIX_SPECIALEVENTSTART"), 0, "BGS_POSIX_SpecialEventStart");
+	Global_1901929->f_38.f_4 = func_383(joaat("BACKGROUND_SCRIPT"), joaat("BGS_POSIX_SPECIALEVENTEND"), 0, "BGS_POSIX_SpecialEventEnd");
+	Global_1901929->f_38.f_5 = func_383(joaat("BACKGROUND_SCRIPT"), joaat("BGS_SPECIALEVENTBITSET"), 0, "BGS_SpecialEventBitset");
 }
 
 void func_174(int iParam0)
@@ -47964,7 +47964,7 @@ int func_1357(struct<2> Param0, var uParam2, var uParam3, var uParam4, var uPara
 				case joaat("PREREQUISITE"):
 					uVar2 = func_1487(iVar4);
 					break;
-				case 356437857:
+				case joaat("MATCHMAKING"):
 					uVar2 = func_1488(iVar4);
 					break;
 				case joaat("CHALLENGE"):

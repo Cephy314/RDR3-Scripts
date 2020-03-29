@@ -12028,7 +12028,7 @@ int func_405(var uParam0, bool bParam1)
 				return 0;
 			}
 			iLocal_22[17] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(func_191(17), func_192(17), func_193(17), "RHMRB_VOL_MCS2_TRIGGER_GREET");
-			iLocal_22[21] = VOLUME::_0x0EB78C2B156635B1(-1612834106, func_191(21), func_192(21), func_193(21));
+			iLocal_22[21] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), func_191(21), func_192(21), func_193(21));
 			if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_22[21])))
 			{
 				VOLUME::_0x5B23DFF8E0948BB2(&(iLocal_22[21]), 0);
@@ -20634,7 +20634,7 @@ int func_719()
 			{
 				func_959(bLocal_262, Var0, Var0.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 			}
-			iLocal_22[16] = VOLUME::_0x0EB78C2B156635B1(-432403087, func_191(16), func_192(16), func_193(16));
+			iLocal_22[16] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), func_191(16), func_192(16), func_193(16));
 			ANIMSCENE::START_ANIM_SCENE(iLocal_509);
 			ANIMSCENE::_0xDF7B5144E25CD3FE(iLocal_509, "pl_leadin_only");
 			ANIMSCENE::_0xDF7B5144E25CD3FE(iLocal_509, "pl_idle");
@@ -24806,7 +24806,7 @@ int func_883(var uParam0)
 					func_351(&(uParam0->f_206), func_350(0), 0);
 				}
 				func_485(bLocal_262, 0);
-				iLocal_22[10] = VOLUME::_0x0EB78C2B156635B1(-432403087, func_191(10), func_192(10), func_193(10));
+				iLocal_22[10] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), func_191(10), func_192(10), func_193(10));
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(bLocal_262, true);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				vVar2 = { ENTITY::GET_ENTITY_COORDS(bLocal_262, true, false) };
@@ -25255,7 +25255,7 @@ int func_902(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -25290,7 +25290,7 @@ int func_903(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

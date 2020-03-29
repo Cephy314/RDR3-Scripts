@@ -23103,7 +23103,7 @@ int func_655(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -23138,7 +23138,7 @@ int func_656(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}
@@ -58889,45 +58889,45 @@ int func_1838(int iParam0)
 			return 1024;
 		case joaat("MULTIPLAYER_MISSION"):
 			return 5500;
-		case -299117668:
+		case joaat("PAUSE_MENU_EVENT_SCRIPT"):
 			return 4700;
 		case joaat("PAUSE_MENU_SCRIPT"):
 			return 2000;
-		case 849942934:
+		case joaat("ABILITY_CARD_EVENTS"):
 			return 801;
-		case 1371455820:
+		case joaat("SAVE_MENU_EVENTS"):
 			return 2024;
-		case -1067470127:
+		case joaat("RANDOM_EVENT"):
 			return 2048;
 		case joaat("CAMP_ITEM"):
 			return 6096;
-		case 1858910952:
+		case joaat("MP_RANDOM_EVENT"):
 			return 3080;
 		case joaat("SHOP"):
 			return 6005;
-		case 28140092:
+		case joaat("SHOP_EVENTS"):
 			return 2027;
-		case 1230979482:
+		case joaat("SATCHEL_EVENTS"):
 			return 2025;
-		case -1298200006:
+		case joaat("MAP_EVENTS"):
 			return 2026;
-		case -475974289:
+		case joaat("HOME_ROBBERY"):
 			return 10000;
-		case -1705337394:
+		case joaat("SHOP_ROBBERY"):
 			return 7302;
 		case joaat("SCRIPT_XML"):
 			return 4592;
 		case joaat("MISSION_CREATOR"):
 			return 40500;
-		case 56269207:
+		case joaat("INSTANCED_CONTENT"):
 			return 63250;
 		case joaat("MISSION"):
 			return 45000;
-		case -1125321488:
+		case joaat("CHARACTER_REROLL"):
 			return 10003;
-		case -1475898915:
+		case joaat("MISSION_INTRO"):
 			return 6000;
-		case -1644014996:
+		case joaat("MINIGAME_INTRO"):
 			return 6001;
 		case joaat("MINIGAME"):
 			return 6500;
@@ -58935,19 +58935,19 @@ int func_1838(int iParam0)
 			return 25500;
 		case joaat("RCM"):
 			return 7300;
-		case -70654197:
+		case joaat("EVENT_AREA"):
 			return 5502;
 		case joaat("HIDEOUT"):
 			return 2049;
 		case joaat("AMBUSH"):
 			return 1025;
-		case -55755509:
+		case joaat("GANG_CAMPFIRE"):
 			return 1200;
-		case 885553654:
+		case joaat("TRAIN_ROB"):
 			return 2300;
-		case -1582256496:
+		case joaat("MP_MISSION_DOWNLOADER"):
 			return 3088;
-		case -45677744:
+		case joaat("NET_MAIN"):
 			return 6002;
 		case joaat("CAMP"):
 			return 5000;
@@ -58959,21 +58959,21 @@ int func_1838(int iParam0)
 			return 2051;
 		case joaat("UPDATE"):
 			return 1300;
-		case 52748468:
+		case joaat("LOANSHARK"):
 			return 7000;
-		case 309189576:
+		case joaat("COMPANION_ACTIVITY"):
 			return 7301;
-		case 396129508:
+		case joaat("COMPANION_ACTIVITY_INVITE"):
 			return 6003;
-		case 1069450292:
+		case joaat("REPLAY_LAUNCHER"):
 			return 6006;
-		case 1444727078:
+		case joaat("PLAYER_MENU_SCRIPT"):
 			return 1400;
 		case joaat("POSSE_VERSUS_RACE"):
 			return 1600;
 		case joaat("POSSE_FEUD"):
 			return 1800;
-		case 1524910643:
+		case joaat("MP_MISSION_LOBBY"):
 			return 10001;
 		case joaat("NET_FETCH"):
 			return 7600;
@@ -58981,7 +58981,7 @@ int func_1838(int iParam0)
 			return 6010;
 		case joaat("NET_GUN_FOR_HIRE_ONLINE"):
 			return 3090;
-		case 2013232686:
+		case joaat("MP_UGC_TRANSITION"):
 			return 14335;
 		case joaat("SOAK_TEST"):
 			return 4088;
@@ -58991,9 +58991,9 @@ int func_1838(int iParam0)
 			return 4080;
 		case joaat("DEBUG_MENU"):
 			return 50000;
-		case 708358771:
+		case joaat("TOOL_MEGA"):
 			return 70000;
-		case -1796732343:
+		case joaat("DEBUG_STEAL_VEHICLE"):
 			return 32768;
 		case joaat("VIRTUALIZATION_UNIT_TEST_SUPPORT"):
 			return 129;

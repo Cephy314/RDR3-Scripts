@@ -3214,42 +3214,42 @@ struct<11> func_54(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 2.5f, 2.5f, 4f };
 					Var0.f_9 = "DISCO_GEYSER_KNOCK_BACK";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 1:
 					Var0 = { 224.4328f, 1906.671f, 203.5702f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 1.25f, 1.25f, 3f };
 					Var0.f_9 = "DISCO_GEYSER_KILL_PLAYER";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 2:
 					Var0 = { 224.5328f, 1922.529f, 203.5702f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 40f, 40f, 25f };
 					Var0.f_9 = "DISCO_GEYSER_LOCATION1";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 3:
 					Var0 = { 251.9829f, 1909.192f, 204.0304f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 7f, 7f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_SMALL_SPRING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 4:
 					Var0 = { 234.7751f, 1939.719f, 203.8331f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 18f, 18f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_LARGE_SPRING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 5:
 					Var0 = { 197.2354f, 1911.487f, 203.8331f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 8f, 8f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_ODD_SHAPED_SPING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 			}
 			break;
@@ -3261,42 +3261,42 @@ struct<11> func_54(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 2.5f, 2.5f, 4f };
 					Var0.f_9 = "DISCO_GEYSER_KNOCK_BACK";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 1:
 					Var0 = { 191.766f, 1831.39f, 198.4614f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 1.25f, 1.25f, 3f };
 					Var0.f_9 = "DISCO_GEYSER_KILL_PLAYER";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 2:
 					Var0 = { 188.2542f, 1819.456f, 198.4614f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 28f, 28f, 25f };
 					Var0.f_9 = "DISCO_GEYSER_LOCATION2";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 3:
 					Var0 = { 173.5744f, 1836.124f, 200.0205f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 4f, 4f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_SMALL_SPRING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 4:
 					Var0 = { 176.4688f, 1813.247f, 200.0197f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 12f, 12f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_LARGE_SPRING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 5:
 					Var0 = { 208.2183f, 1821.611f, 200.0197f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 5.5f, 5.5f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_ODD_SHAPED_SPING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 			}
 			break;
@@ -3308,42 +3308,42 @@ struct<11> func_54(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 2.5f, 2.5f, 4f };
 					Var0.f_9 = "DISCO_GEYSER_KNOCK_BACK";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 1:
 					Var0 = { 129.107f, 1878.372f, 198.1505f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 1.25f, 1.25f, 3f };
 					Var0.f_9 = "DISCO_GEYSER_KILL_PLAYER";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 2:
 					Var0 = { 139.0299f, 1875.571f, 198.1505f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 25f, 25f, 25f };
 					Var0.f_9 = "DISCO_GEYSER_LOCATION3";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 3:
 					Var0 = { 125.8097f, 1865.035f, 200.3174f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 2.5f, 2.5f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_SMALL_SPRING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 4:
 					Var0 = { 143.7371f, 1866.656f, 200.2199f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 9f, 9f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_LARGE_SPRING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 				case 5:
 					Var0 = { 136.359f, 1890.56f, 200.2199f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 4f, 4f, 10f };
 					Var0.f_9 = "DISCO_GEYSER_ODD_SHAPED_SPING";
-					Var0.f_10 = 665633627;
+					Var0.f_10 = joaat("VOLCYLINDER");
 					break;
 			}
 			break;

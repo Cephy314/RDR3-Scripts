@@ -2762,7 +2762,7 @@ struct<12> func_94(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { -1622.022f, 234.903f, 106.062f };
 			Var0.f_5 = { 0f, 0f, 4f };
 			Var0.f_8 = { 3f, 3f, 3.5f };

@@ -99,7 +99,7 @@ void __EntryFunction__()
 			case 2:
 				Var0.f_152 = OBJECT::CREATE_OBJECT(Var0.f_210, Var0.f_249, false, false, false, false, true);
 				ENTITY::SET_ENTITY_HEADING(Var0.f_152, Var0.f_252);
-				Var0.f_248 = VOLUME::_0x0EB78C2B156635B1(665633627, Var0.f_249, 0f, 0f, 0f, 0.3f, 0.3f, 2f);
+				Var0.f_248 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Var0.f_249, 0f, 0f, 0f, 0.3f, 0.3f, 2f);
 				func_8(&(Var0.f_211), 3);
 				break;
 			case 3:
@@ -14726,7 +14726,7 @@ void func_431(int iParam0)
 
 var func_432(int iParam0, int iParam1)
 {
-	return func_748(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_748(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_433(struct<16> Param0, var uParam16, bool bParam17, bool bParam18)
@@ -23791,13 +23791,13 @@ var func_748(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				bVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1026());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				bVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1026());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				bVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1026());
 				break;
 		}

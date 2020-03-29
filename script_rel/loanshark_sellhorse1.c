@@ -3539,7 +3539,7 @@ int func_81(char[4] cParam0)
 								PED::SET_PED_CAN_BE_TARGETTED(&(Local_90[0 /*34*/]), false);
 								func_334(&(cParam0->f_2106), "LSHSS_IG1_POST", 0);
 								func_65(*cParam0, func_41(1), func_41(2), 1, 2);
-								bLocal_358 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_90[0 /*34*/]), true, false), 0f, 0f, 0f, 0.75f, 0.75f, 0.75f);
+								bLocal_358 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_90[0 /*34*/]), true, false), 0f, 0f, 0f, 0.75f, 0.75f, 0.75f);
 								PED::_0xCB9401F918CB0F75(&(Local_90[0 /*34*/]), "injury", 1, -1);
 								func_64(5);
 							}
@@ -45676,7 +45676,7 @@ void func_1471(var uParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

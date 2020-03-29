@@ -7488,15 +7488,15 @@ int func_270(var uParam0)
 		}
 		if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_36))
 		{
-			bLocal_36 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2659.862f, -1544.152f, 45.54f, 0f, 0f, 0f, 4f, 4f, 5f);
+			bLocal_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2659.862f, -1544.152f, 45.54f, 0f, 0f, 0f, 4f, 4f, 5f);
 		}
 		if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_37))
 		{
-			bLocal_37 = VOLUME::_0x0EB78C2B156635B1(665633627, 2746.535f, -1430.236f, 46.343f, 0f, 0f, 0f, 0.65f, 0.65f, 2f);
+			bLocal_37 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2746.535f, -1430.236f, 46.343f, 0f, 0f, 0f, 0.65f, 0.65f, 2f);
 		}
 		if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_38))
 		{
-			bLocal_38 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2745.856f, -1429.234f, 46.527f, 0f, 0f, 45.99f, 1f, 1f, 3f);
+			bLocal_38 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2745.856f, -1429.234f, 46.527f, 0f, 0f, 45.99f, 1f, 1f, 3f);
 		}
 		if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_39))
 		{
@@ -8349,7 +8349,7 @@ int func_296()
 		}
 		if (!bLocal_108)
 		{
-			VEHICLE::_0xE6C5E2125EB210C1(-1739625337, 0, 1);
+			VEHICLE::_0xE6C5E2125EB210C1(joaat("NB_TROLLEY_TRACK_CONFIG"), 0, 1);
 			if (!ENTITY::IS_ENTITY_DEAD(bLocal_16))
 			{
 				VEHICLE::SET_TRAIN_SPEED(bLocal_16, 0f);

@@ -8987,7 +8987,7 @@ int func_287(int iParam0, var uParam1, var uParam2)
 			break;
 		case 3:
 			func_247(Local_268[0], "ABE_WORKROOM", 1);
-			Local_268.f_9[22] = VOLUME::_0x0EB78C2B156635B1(-432403087, 1790.228f, -89.82701f, 56.72611f, 0f, 0f, 66.31097f, 1f, 1f, 1f);
+			Local_268.f_9[22] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 1790.228f, -89.82701f, 56.72611f, 0f, 0f, 66.31097f, 1f, 1f, 1f);
 			func_686(Local_268.f_9[24], 1786.114f, -84.73042f, 58.15007f, 0f, 0f, -2.439054f, 99.61454f, 86.14198f, 16.7754f, "VOL_ABDN_DEF_IN_AROUND_HOME");
 			if (func_76(iParam0, 1048576))
 			{
@@ -10612,7 +10612,7 @@ void func_314()
 			func_686(Local_268.f_9[3], 769.578f, 876.333f, 121.732f, 0f, 0f, 65f, 6.25f, 10f, 4f, "VOL_CRD_BARN");
 			func_686(Local_268.f_9[8], 780.953f, 849.722f, 118.872f, 0f, 0f, 107f, 11f, 4f, 3f, "VOL_CRD_DEFENSIVE_PORCH");
 			func_686(Local_268.f_9[9], 774.131f, 849.454f, 119.789f, 0f, 0f, 108f, 4f, 1.5f, 5f, "VOL_CRD_STAIRS");
-			Local_268.f_9[24] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 769.578f, 876.333f, 121.732f, 0f, 0f, 65f, 6.75f, 10.5f, 4f);
+			Local_268.f_9[24] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 769.578f, 876.333f, 121.732f, 0f, 0f, 65f, 6.75f, 10.5f, 4f);
 			if (VOLUME::_DOES_VOLUME_EXIST(&(Local_268.f_9[24])))
 			{
 				VOLUME::_0x5B23DFF8E0948BB2(&(Local_268.f_9[24]), 0);
@@ -10669,7 +10669,7 @@ void func_314()
 			func_686(Local_268.f_9[16], 1318.804f, -2283.803f, 50.83032f, 0f, 0f, 34.79692f, 3.890625f, 1.131191f, 2.623684f, "VOL_CFJK_COUCH_ALLOW_NO_LOS_ILO");
 			if (iLocal_18 == 5)
 			{
-				Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1319.048f, -2280.193f, 50.97792f, 0f, 0f, 35.261f, 0.6f, 1.669177f, 3.001808f);
+				Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1319.048f, -2280.193f, 50.97792f, 0f, 0f, 35.261f, 0.6f, 1.669177f, 3.001808f);
 			}
 			func_686(Local_268.f_9[18], 1315.359f, -2281.583f, 50.44384f, 0f, 0f, 35.261f, 1.3f, 3f, 4f, "VOL_CFJK_BED");
 			VOLUME::_0x3EFABB21E14A6BD1(&(Local_268.f_9[18]), 6, 1);
@@ -10782,7 +10782,7 @@ void func_314()
 			switch (iLocal_18)
 			{
 				case 25:
-					Local_268.f_9[7] = VOLUME::_0x0EB78C2B156635B1(665633627, -1816.748f, 658.4975f, 131.5056f, 0f, 0f, 0f, 0.5f, 0.5f, 0.7f);
+					Local_268.f_9[7] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1816.748f, 658.4975f, 131.5056f, 0f, 0f, 0f, 0.5f, 0.5f, 0.7f);
 					func_890(Local_268.f_9[9], -1816.786f, 658.506f, 131.787f, 0f, 0f, 0f, 2.2f, 2.2f, 1f, "VOL_WTCN_MOM_FOCUS");
 					func_686(Local_268.f_9[12], -1816.123f, 655.5222f, 131.822f, 0f, 0f, 29f, 1.75f, 1.75f, 2f, "VOL_WTCN_DOOR_BLOCKED");
 					break;
@@ -26480,7 +26480,7 @@ void func_547(bool bParam0, int iParam1, int iParam2, var uParam3)
 			func_1833();
 			func_1845();
 			func_1812(func_1846());
-			Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(-1612834106, func_1847(), func_1848(), func_1849());
+			Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), func_1847(), func_1848(), func_1849());
 			TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[17]), 0, 0, 0, 1);
 			func_1771(53);
 			break;
@@ -27288,7 +27288,7 @@ void func_548(bool bParam0, int iParam1, int iParam2, vector3 vParam3)
 				return;
 			}
 			func_312(Local_268.f_5235[6 /*3*/]);
-			Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(-1612834106, func_1847(), func_1848(), func_1849());
+			Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), func_1847(), func_1848(), func_1849());
 			TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[17]), 0, 0, 0, 1);
 			PED::SET_RAGDOLL_BLOCKING_FLAGS(*bParam0, 16);
 			func_520(bParam0, "P_R7_W_SHOTHITc", "P_R7_W_JSHOTHIT", 1);
@@ -32583,7 +32583,7 @@ void func_692()
 	func_1055(Local_268.f_2295[2], joaat("P_POCKETMIRROR01X"), func_2164(), 0f, 1, 1, 1);
 	func_686(Local_268.f_9[14], 1790.718f, -84.63831f, 56.79337f, 0f, 0f, -3.298362f, 2.233997f, 4.534791f, 2.06831f, "VOL_ABDN_WAIT_DINNER_BRO_BR");
 	func_686(Local_268.f_9[15], 1790.52f, -88.08098f, 56.79337f, 0f, 0f, -3.298362f, 2.233997f, 2.388938f, 2.06831f, "VOL_ABDN_WAIT_DINNER_BRO_BL");
-	Local_268.f_9[25] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1793.627f, -83.573f, 56.41273f, 0f, 0f, -2.107131f, 3.288437f, 12.62258f, 3.84006f);
+	Local_268.f_9[25] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1793.627f, -83.573f, 56.41273f, 0f, 0f, -2.107131f, 3.288437f, 12.62258f, 3.84006f);
 	TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[25]), 0, 0, 0, 1);
 }
 
@@ -32651,7 +32651,7 @@ void func_697()
 	func_708(iVar0, sVar1, 1);
 	func_686(Local_268.f_9[20], 1784.795f, -86.38148f, 56.93809f, 0f, 0f, 85.52333f, 4.12759f, 3.398192f, 2.283052f, "VOL_ABDN_SIS_COOK_LOOK");
 	func_686(Local_268.f_9[21], 1784.669f, -86.37168f, 56.93809f, 0f, 0f, 85.52333f, 4.12759f, 5.346633f, 2.283052f, "VOL_ABDN_SIS_COOK_LOITER");
-	Local_268.f_9[26] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1784.321f, -86.65079f, 56.90755f, 0f, 0f, -2.362355f, 0.445772f, 0.902037f, 2.373492f);
+	Local_268.f_9[26] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1784.321f, -86.65079f, 56.90755f, 0f, 0f, -2.362355f, 0.445772f, 0.902037f, 2.373492f);
 	func_710(iVar0, "pbCallL", sVar1, 0);
 	func_710(iVar0, "pbCallN", sVar1, 0);
 	func_710(iVar0, "pbCallR", sVar1, 0);
@@ -34512,7 +34512,7 @@ int func_768()
 			func_686(Local_268.f_9[17], -392.64f, 1656.942f, 233.47f, 0f, 0f, 11.87962f, 204.1742f, 144.863f, 83.71918f, "VOL_CHEZ_ARRIVAL_FRONT");
 			func_686(Local_268.f_9[18], -419.1311f, 1768.604f, 243.5336f, 0f, 0f, 11.63024f, 221.5505f, 91.24777f, 70.34618f, "VOL_CHEZ_ARRIVAL_REAR");
 			func_686(Local_268.f_9[21], -412.9272f, 1711.24f, 216.5131f, 0f, 0f, -177.8005f, 5.124998f, 3.64846f, 3.690414f, "VOL_CHEZ_STORAGE_SHED_LIMIT_MOVE");
-			Local_268.f_9[22] = VOLUME::_0x0EB78C2B156635B1(665633627, -412.6736f, 1713.018f, 216.0913f, 0f, 0f, 0f, 0.823682f, 0.914633f, 1.043135f);
+			Local_268.f_9[22] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -412.6736f, 1713.018f, 216.0913f, 0f, 0f, 0f, 0.823682f, 0.914633f, 1.043135f);
 			func_2156(4);
 			return 0;
 		case 4:
@@ -36140,7 +36140,7 @@ int func_837()
 	switch (iLocal_126)
 	{
 		case 0:
-			Local_268.f_9[4] = VOLUME::_0x0EB78C2B156635B1(665633627, 2962.795f, 2231.863f, 159.2352f, 0f, 0f, -40.66005f, 3.797299f, 3.171858f, 3.2959f);
+			Local_268.f_9[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2962.795f, 2231.863f, 159.2352f, 0f, 0f, -40.66005f, 3.797299f, 3.171858f, 3.2959f);
 			func_686(Local_268.f_9[5], func_1794(), vVar0, vVar3, "VOL_ROCKY_PREY_1_WANDER_AREA_CENTER");
 			func_2156(1);
 			return 0;
@@ -36567,7 +36567,7 @@ int func_845()
 			func_686(Local_268.f_9[24], 2977.888f, 2203.041f, 166.4628f, 0f, 0f, -15.94602f, 2.580339f, 5.718994f, 2.785189f, "VOL_ROCKY_IGNORE_BEHIND_SHOOTING");
 			return 0;
 		case 25:
-			Local_268.f_9[25] = VOLUME::_0x0EB78C2B156635B1(665633627, 2987.199f, 2203.198f, 166.4636f, 0f, 0f, 13.61772f, 4.385008f, 3.154008f, 1.870679f);
+			Local_268.f_9[25] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2987.199f, 2203.198f, 166.4636f, 0f, 0f, 13.61772f, 4.385008f, 3.154008f, 1.870679f);
 			func_686(Local_268.f_9[26], 2985.545f, 2203.251f, 166.1489f, 0f, 0f, -18.43628f, 6.234919f, 7.166011f, 2.386853f, "VOL_ROCKY_PLABLK_TARGET_BOTTLES_BOX");
 			TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[26]), 0, 0, 0, 1);
 			func_686(Local_268.f_9[27], 2992.65f, 2191.552f, 166.8228f, 0f, 0f, -18.43628f, 1.623634f, 2.125604f, 2.386853f, "VOL_ROCKY_KITCHEN_SINK_AREA");
@@ -49952,7 +49952,7 @@ void func_1256(bool bParam0)
 			func_458(2048);
 			if (!VOLUME::_DOES_VOLUME_EXIST(&(Local_268.f_9[7])))
 			{
-				Local_268.f_9[7] = VOLUME::_0x0EB78C2B156635B1(665633627, func_364(2), 0f, 0f, 0f, 1f, 1f, 1.25f);
+				Local_268.f_9[7] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), func_364(2), 0f, 0f, 0f, 1f, 1f, 1.25f);
 			}
 		}
 	}
@@ -63582,8 +63582,8 @@ void func_1832()
 	{
 		return;
 	}
-	Local_268.f_9[18] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2987.192f, 2192.603f, 166.902f, 0f, 0f, 70.03846f, 8.036377f, 2.774157f, 2.398801f);
-	Local_268.f_9[19] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2985.687f, 2194.484f, 166.4049f, 0f, 0f, -109.2061f, 2.987194f, 1.80963f, 2.688624f);
+	Local_268.f_9[18] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2987.192f, 2192.603f, 166.902f, 0f, 0f, 70.03846f, 8.036377f, 2.774157f, 2.398801f);
+	Local_268.f_9[19] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2985.687f, 2194.484f, 166.4049f, 0f, 0f, -109.2061f, 2.987194f, 1.80963f, 2.688624f);
 	TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[18]), 0, 0, 0, 1);
 	TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[19]), 0, 0, 0, 1);
 	func_205(16384);
@@ -65353,9 +65353,9 @@ void func_1897(bool bParam0, int iParam1)
 	func_1068(bParam0, iParam1, 0, 0);
 	if (func_474())
 	{
-		Local_268.f_9[29] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2992.373f, 2193.854f, 166.8248f, 0f, 0f, 160.9308f, 3.476807f, 2.317871f, 2.131958f);
+		Local_268.f_9[29] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2992.373f, 2193.854f, 166.8248f, 0f, 0f, 160.9308f, 3.476807f, 2.317871f, 2.131958f);
 		TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[29]), 0, 0, 0, 1);
-		Local_268.f_9[21] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2993.52f, 2193.513f, 166.8228f, 0f, 0f, -18.43627f, 1.623634f, 2.125604f, 2.386853f);
+		Local_268.f_9[21] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2993.52f, 2193.513f, 166.8228f, 0f, 0f, -18.43627f, 1.623634f, 2.125604f, 2.386853f);
 		TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[21]), 0, 0, 0, 1);
 		func_1484("HM_RS_O_FOLLOW_HOME");
 	}
@@ -92830,7 +92830,7 @@ void func_3053(bool bParam0, bool bParam1)
 	sVar1 = "SCENE_ROCKY_BADASS_LEADOUT_ARTHUR";
 	if (!func_438() && bParam0->f_7 > 8f)
 	{
-		Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(-1612834106, func_1847(), func_1848(), func_1849());
+		Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), func_1847(), func_1848(), func_1849());
 		TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[17]), 0, 0, 0, 1);
 		func_867(iVar0, "pl_react_goinside", sVar1, 1);
 		return;
@@ -92919,7 +92919,7 @@ void func_3056(bool bParam0, bool bParam1)
 	sVar1 = "SCENE_ROCKY_BADASS_LEADOUT_JOHN";
 	if (!func_438() && bParam0->f_7 > 8f)
 	{
-		Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(-1612834106, func_1847(), func_1848(), func_1849());
+		Local_268.f_9[17] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), func_1847(), func_1848(), func_1849());
 		TASK::_0xEB2ED1DC3AEC0654(&(Local_268.f_9[17]), 0, 0, 0, 1);
 		func_867(iVar0, "pl_react_goinside", sVar1, 1);
 		return;
@@ -93616,7 +93616,7 @@ int func_3099(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -93651,7 +93651,7 @@ int func_3100(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}
@@ -96559,7 +96559,7 @@ void func_3227(bool bParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_33 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_33 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_33, 1);
 }
 

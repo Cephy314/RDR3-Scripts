@@ -15243,7 +15243,7 @@ void func_584()
 
 void func_585()
 {
-	bLocal_223 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_24 + Vector(1f, 0f, 0f), vLocal_21, 0.75f, 1f, 1f);
+	bLocal_223 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_24 + Vector(1f, 0f, 0f), vLocal_21, 0.75f, 1f, 1f);
 }
 
 void func_586()
@@ -59564,7 +59564,7 @@ void func_1975(bool bParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

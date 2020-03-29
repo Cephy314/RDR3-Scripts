@@ -3331,7 +3331,7 @@ void func_122(var uParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(bLocal_104))
 		{
-			bLocal_154 = VOLUME::_0x0EB78C2B156635B1(-432403087, ENTITY::GET_ENTITY_COORDS(bLocal_104, true, false), 0f, 0f, 0f, 1f, 1f, 1.5f);
+			bLocal_154 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), ENTITY::GET_ENTITY_COORDS(bLocal_104, true, false), 0f, 0f, 0f, 1f, 1f, 1.5f);
 		}
 	}
 }

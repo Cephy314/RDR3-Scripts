@@ -3092,7 +3092,7 @@ int func_107(var uParam0)
 		case 0:
 			func_326(0);
 			bLocal_200 = false;
-			iLocal_48 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2375.077f, -1589.036f, 153.944f, 0f, 0f, -43f, 0.6f, 0.75f, 1.5f);
+			iLocal_48 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2375.077f, -1589.036f, 153.944f, 0f, 0f, -43f, 0.6f, 0.75f, 1.5f);
 			func_303();
 			ENTITY::FREEZE_ENTITY_POSITION(bLocal_18, true);
 			ENTITY::_SET_ENTITY_HEALTH(bLocal_18, 0, 0);
@@ -5627,7 +5627,7 @@ void func_222(var uParam0)
 		{
 			func_304();
 		}
-		iLocal_204 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2376.886f, -1591f, 154f, 0f, 0f, -38f, 11.5f, 11f, 7f);
+		iLocal_204 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2376.886f, -1591f, 154f, 0f, 0f, -38f, 11.5f, 11f, 7f);
 	}
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(bLocal_20);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_73);
@@ -21817,7 +21817,7 @@ int func_769(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -21852,7 +21852,7 @@ int func_770(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

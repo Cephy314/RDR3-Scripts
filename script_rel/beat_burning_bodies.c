@@ -366,12 +366,12 @@ void func_15()
 				func_66(&(Local_14.f_27[0]), &((Local_14.f_262[0 /*32*/])->f_23), 0);
 			}
 			Local_14.f_45[0] = &Local_14.f_27[0];
-			Local_14.f_209 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_899.f_51, 0f, 0f, 0f, 1f, 1f, 1f);
+			Local_14.f_209 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_899.f_51, 0f, 0f, 0f, 1f, 1f, 1f);
 			PED::_0x7C00CFC48A782DC0(Local_14.f_209, &(Local_14.f_27[0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 			VOLUME::_0x5B23DFF8E0948BB2(Local_14.f_209, 1);
 			if (func_19())
 			{
-				Local_14.f_210 = VOLUME::_0x0EB78C2B156635B1(665633627, Local_899.f_51, 0f, 0f, 0f, 1f, 1f, 1f);
+				Local_14.f_210 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_899.f_51, 0f, 0f, 0f, 1f, 1f, 1f);
 				PED::_0x7C00CFC48A782DC0(Local_14.f_210, &(Local_14.f_27[8]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 			}
 			PED::SET_PED_CONFIG_FLAG(&(Local_14.f_27[0]), 448, true);
@@ -1311,7 +1311,7 @@ void func_34()
 		*(Local_14.f_162[14 /*3*/]) = { -3309.8f, -2856.95f, -6.1f };
 		*(Local_14.f_162[10 /*3*/]) = { -3310.091f, -2863.191f, -7.04366f };
 		Local_14.f_208 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-3307.153f, -2865.031f, -7.197f, 0f, 0f, 13f, 2.2f, 2.7f, 1f, "volActivePit");
-		Local_14.f_211 = VOLUME::_0x0EB78C2B156635B1(665633627, -3308.801f, -2862.139f, -6.47f, 0f, 0f, -60f, 1f, 1f, 1f);
+		Local_14.f_211 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -3308.801f, -2862.139f, -6.47f, 0f, 0f, -60f, 1f, 1f, 1f);
 	}
 	else
 	{
@@ -17947,7 +17947,7 @@ int func_581(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -17982,7 +17982,7 @@ int func_582(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

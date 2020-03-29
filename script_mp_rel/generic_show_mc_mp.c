@@ -1316,7 +1316,7 @@ void func_28(var uParam0)
 
 var func_29(int iParam0, int iParam1)
 {
-	return func_70(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_70(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_30(bool bParam0, bool bParam1)
@@ -1347,7 +1347,7 @@ void func_30(bool bParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_77(&(Global_1099294->f_555));
 		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_555 = Global_1099294->f_516;
@@ -1709,35 +1709,35 @@ struct<11> func_50(int iParam0)
 			Var0.f_3 = { 0f, 0f, -0.428209f };
 			Var0.f_6 = { 17.93956f, 6.905415f, 3.337901f };
 			Var0.f_9 = "SHOW_MC_ON_STAGE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 1:
 			Var0 = { 2546.448f, -1301.489f, 51.592f };
 			Var0.f_3 = { 0f, 0f, 0.496f };
 			Var0.f_6 = { 18.193f, 22.845f, 8.938f };
 			Var0.f_9 = "SHOW_MC_VOLUME_FOCUS_CAM";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 2:
 			Var0 = { 2549.975f, -1299.587f, 48.85019f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 5.433204f, 11.15138f, 4.404195f };
 			Var0.f_9 = "SHOW_MC_LEFT_SEATS";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 3:
 			Var0 = { 2542.911f, -1299.587f, 48.85019f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 5.433204f, 11.15138f, 4.404195f };
 			Var0.f_9 = "SHOW_MC_RIGHT_SEATS";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 4:
 			Var0 = { 2546.598f, -1288.292f, 51.77531f };
 			Var0.f_3 = { 0f, 0f, 1.8f };
 			Var0.f_6 = { 9.553825f, 4.673606f, 7.770726f };
 			Var0.f_9 = "SHOW_MC_FRONT_BUFFER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;
@@ -2976,13 +2976,13 @@ var func_70(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int 
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_172());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_172());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_172());
 				break;
 		}

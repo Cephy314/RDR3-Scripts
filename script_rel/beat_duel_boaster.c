@@ -1874,7 +1874,7 @@ int func_38()
 				func_151(1);
 				iLocal_499 = joaat("MOODSCARED");
 				iLocal_500 = joaat("MOODDEFUSE");
-				PED::_0xD2F0FE8805D91647(&(uLocal_727[0]), 1598480633);
+				PED::_0xD2F0FE8805D91647(&(uLocal_727[0]), joaat("ONESHOTPAIN"));
 				EVENT::_0xB6F4825153920582();
 				if (func_75(&(uLocal_727[0]), 0, 1))
 				{
@@ -16555,7 +16555,7 @@ int func_516(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -16590,7 +16590,7 @@ int func_517(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

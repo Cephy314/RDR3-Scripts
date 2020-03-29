@@ -42482,7 +42482,7 @@ void func_920()
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_499))
 	{
-		bLocal_499 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1772.25f, -431.59f, 154.54f, 0f, 0f, -30f, 4.765533f, 5.480613f, 4.63f);
+		bLocal_499 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1772.25f, -431.59f, 154.54f, 0f, 0f, -30f, 4.765533f, 5.480613f, 4.63f);
 	}
 	if (VOLUME::_DOES_VOLUME_EXIST(bLocal_499))
 	{
@@ -55348,8 +55348,8 @@ void func_1321(char[4] cParam0)
 				func_1880("Steam_Donkey_Hook_Carry_Loop", Global_35, "UTP1_Sounds", 0, 0);
 				PED::_0xCE7A6C1D5CDE1F9D(Global_35, bLocal_425, "p_cs_hookPulley01x_PH_L_HAND", "LOCO_ATTACH_PULLEY_HOOK");
 				ENTITY::ATTACH_ENTITY_TO_ENTITY(bLocal_425, Global_35, PED::GET_PED_BONE_INDEX(Global_35, 37709), 0f, 0f, 0f, 0f, 0f, 0f, false, false, false, false, 2, true, false, false);
-				iLocal_502 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1818.183f, -359.8765f, 162.1378f, 0f, 0f, -19.03618f, 2f, 12.60547f, 2f);
-				iLocal_503 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1811.71f, -361.1678f, 162.1378f, 0f, 0f, -18.59f, 2.755589f, 13.76017f, 2f);
+				iLocal_502 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1818.183f, -359.8765f, 162.1378f, 0f, 0f, -19.03618f, 2f, 12.60547f, 2f);
+				iLocal_503 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1811.71f, -361.1678f, 162.1378f, 0f, 0f, -18.59f, 2.755589f, 13.76017f, 2f);
 				PED::SET_RAGDOLL_BLOCKING_FLAGS(Global_35, 64);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 				iLocal_833 = 4;
@@ -65587,7 +65587,7 @@ void func_1599(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2183(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

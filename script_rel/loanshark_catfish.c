@@ -3725,7 +3725,7 @@ int func_96(var uParam0)
 				{
 					if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_447[9])))
 					{
-						iLocal_447[9] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1326.293f, -2281.709f, 50.51648f, 0f, 0f, 34.75f, 1f, 1f, 3f);
+						iLocal_447[9] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1326.293f, -2281.709f, 50.51648f, 0f, 0f, 34.75f, 1f, 1f, 3f);
 					}
 				}
 				func_358();
@@ -13863,7 +13863,7 @@ void func_430()
 	iLocal_447[8] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1325.99f, -2281.919f, 50.06382f, 0f, 0f, 34.75f, 2f, 1f, 1f, "MVOL_CUPBOARD");
 	iLocal_447[10] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1318.792f, -2279.006f, 50.10701f, 0f, 0f, 34.64298f, 10.52466f, 8.672f, 3.086315f, "MVOL_HOUSE_REDUCED_1");
 	iLocal_447[11] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1320.486f, -2286.407f, 50.10701f, 0f, 0f, 34.64298f, 4.775f, 5.672f, 3.086315f, "MVOL_HOUSE_REDUCED_2");
-	iLocal_447[6] = VOLUME::_0x0EB78C2B156635B1(-432403087, 1308.205f, -2343.057f, 41.063f, 0f, 0f, 0f, 1.7f, 1.7f, 1.7f);
+	iLocal_447[6] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 1308.205f, -2343.057f, 41.063f, 0f, 0f, 0f, 1.7f, 1.7f, 1.7f);
 	if (!PED::_0x91A5F9CBEBB9D936(iLocal_400))
 	{
 		iLocal_400 = PED::_0x4C39C95AE5DB1329(&(iLocal_447[5]), false, 17);
@@ -45052,7 +45052,7 @@ void func_1523(var uParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

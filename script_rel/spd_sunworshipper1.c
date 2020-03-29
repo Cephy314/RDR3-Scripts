@@ -783,7 +783,7 @@ void func_26()
 			iLocal_570[4] = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-4594.695f, -3045.041f, 6.5776f, 0f, 0f, 0f, 3f, 3f, 7f, "SUN_VOL_PED_AVOIDANCE");
 			break;
 	}
-	iLocal_570[5] = VOLUME::_0x0EB78C2B156635B1(665633627, 0f, 0f, 0f, 0f, 0f, 0f, 1.85f, 1.85f, 2f);
+	iLocal_570[5] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 0f, 0f, 0f, 0f, 0f, 0f, 1.85f, 1.85f, 2f);
 }
 
 void func_27()

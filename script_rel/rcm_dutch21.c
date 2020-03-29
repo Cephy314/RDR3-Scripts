@@ -23970,7 +23970,7 @@ int func_774(int iParam0, var uParam1)
 					}
 					else
 					{
-						bLocal_1019 = VOLUME::_0x0EB78C2B156635B1(665633627, 1896.977f, -1860.122f, 46.9664f, 0f, 0f, 0f, 1.6f, 1.6f, 1.2f);
+						bLocal_1019 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1896.977f, -1860.122f, 46.9664f, 0f, 0f, 0f, 1.6f, 1.6f, 1.2f);
 						VOLUME::_0x5B23DFF8E0948BB2(bLocal_1019, 1);
 						ANIMSCENE::START_ANIM_SCENE(iLocal_479);
 						ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(iLocal_479, "pblAction", true);

@@ -3017,7 +3017,7 @@ struct<11> func_53(int iParam0)
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 5f, 5f, 5f };
 			Var0.f_9 = "METEOR_SHOWER_CLIFF_SPAWN";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 	}
 	return Var0;

@@ -15525,7 +15525,7 @@ int func_425()
 					{
 						if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[1])))
 						{
-							iLocal_75[1] = VOLUME::_0x0EB78C2B156635B1(665633627, -1394.656f, -243.9225f, 98.72907f, 0f, 0f, 0f, 1.025417f, 1.034337f, 1.10476f);
+							iLocal_75[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1394.656f, -243.9225f, 98.72907f, 0f, 0f, 0f, 1.025417f, 1.034337f, 1.10476f);
 						}
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(func_63(func_337(3, 0, 0)), false, true);
 						TASK::CLEAR_PED_TASKS_IMMEDIATELY(func_63(func_337(3, 1, 0)), false, true);
@@ -15677,7 +15677,7 @@ int func_426(bool bParam0)
 					{
 						if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[4])))
 						{
-							iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(665633627, -1398.927f, -213.5499f, 102.4407f, 0f, 0f, 0f, 3.522115f, 3.82233f, 1.396173f);
+							iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1398.927f, -213.5499f, 102.4407f, 0f, 0f, 0f, 3.522115f, 3.82233f, 1.396173f);
 						}
 						func_792();
 						iVar4 = 0;
@@ -16927,7 +16927,7 @@ int func_445(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -16962,7 +16962,7 @@ int func_446(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}
@@ -24856,7 +24856,7 @@ int func_795()
 				func_793(func_63(func_337(0, 0, 0)), 0);
 				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[4])))
 				{
-					iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(665633627, -1398.9f, -211.1529f, 102.8692f, 0f, 0f, 23.92187f, 3.586092f, 3.967105f, 1.636492f);
+					iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1398.9f, -211.1529f, 102.8692f, 0f, 0f, 23.92187f, 3.586092f, 3.967105f, 1.636492f);
 				}
 			}
 		}
@@ -24890,7 +24890,7 @@ int func_795()
 				func_793(func_63(func_337(0, 1, 0)), 0);
 				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[4])))
 				{
-					iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(665633627, -1398.9f, -211.1529f, 102.8692f, 0f, 0f, 23.92187f, 3.586092f, 3.967105f, 1.636492f);
+					iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1398.9f, -211.1529f, 102.8692f, 0f, 0f, 23.92187f, 3.586092f, 3.967105f, 1.636492f);
 				}
 			}
 		}
@@ -24924,7 +24924,7 @@ int func_795()
 				func_793(func_63(func_337(0, 2, 0)), 0);
 				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_75[4])))
 				{
-					iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(665633627, -1398.9f, -211.1529f, 102.8692f, 0f, 0f, 23.92187f, 3.586092f, 3.967105f, 1.636492f);
+					iLocal_75[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1398.9f, -211.1529f, 102.8692f, 0f, 0f, 23.92187f, 3.586092f, 3.967105f, 1.636492f);
 				}
 			}
 		}

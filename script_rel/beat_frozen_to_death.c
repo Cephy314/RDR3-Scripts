@@ -605,7 +605,7 @@ int func_19()
 				ANIMSCENE::SET_ANIM_SCENE_BOOL(Local_379, "Bool", false, false);
 				ANIMSCENE::START_ANIM_SCENE(Local_379);
 				ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(Local_379, &cLocal_424, true);
-				bLocal_448 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_369, 0f, 0f, 0f, 2.5f, 2.5f, 2.5f);
+				bLocal_448 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_369, 0f, 0f, 0f, 2.5f, 2.5f, 2.5f);
 				VOLUME::_0xBE551C2CC421185D(bLocal_448, 1);
 				VOLUME::_0x5B23DFF8E0948BB2(bLocal_448, 0);
 				switch (Local_14.f_51.f_4)
@@ -13463,7 +13463,7 @@ int func_390(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -13498,7 +13498,7 @@ int func_391(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

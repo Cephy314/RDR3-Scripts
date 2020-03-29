@@ -873,17 +873,17 @@ int func_9(var uParam0)
 	iLocal_108 = func_58(uParam0, "CASHB_KA_PARTY2", 0, 1, 20, -1, -1, -1);
 	HUD::_TEXT_DATABASE_REQUEST(sLocal_120);
 	HUD::_TEXT_DATABASE_REQUEST(sLocal_121);
-	iLocal_109 = func_59(uParam0, 1872.1f, -1861.864f, 41.806f, -9.231f, 1.5f, 1.5f, 3f, 0, 1, -1, -1612834106);
-	iLocal_110 = func_59(uParam0, 1873.068f, -1863.554f, 41.802f, -99.939f, 1.5f, 1.5f, 3f, 0, 1, -1, -1612834106);
-	iLocal_111 = func_59(uParam0, 1871.528f, -1864.521f, 41.807f, 169.525f, 1.5f, 1.5f, 3f, 0, 1, -1, -1612834106);
-	iLocal_112 = func_59(uParam0, 1870.397f, -1862.876f, 41.837f, 79.544f, 1.5f, 1.5f, 3f, 0, 1, -1, -1612834106);
-	iLocal_113 = func_59(uParam0, 1863.898f, -1858.133f, 42.018f, 90.655f, 1.5f, 1.5f, 3f, 0, 1, -1, -1612834106);
-	iLocal_114 = func_59(uParam0, 1866.364f, -1856.044f, 42.026f, -16.45f, 1.2f, 1.2f, 3f, 0, 1, -1, -1612834106);
-	iLocal_115 = func_59(uParam0, 1868.127f, -1856.879f, 42.554f, 92.929f, 1f, 1f, 3f, 0, 1, -1, -1612834106);
-	iLocal_116 = func_59(uParam0, 1868.216f, -1857.864f, 42.544f, 4.35f, 1f, 1f, 3f, 0, 1, -1, -1612834106);
-	iLocal_117 = func_59(uParam0, 1868.369f, -1858.726f, 42.567f, 94.561f, 1f, 1f, 3f, 0, 1, -1, -1612834106);
-	iLocal_118 = func_59(uParam0, 1872.728f, -1871.582f, 41.803f, -176.32f, 1.5f, 1.5f, 3f, 0, 1, -1, -1612834106);
-	iLocal_119 = func_59(uParam0, 1865.98f, -1859.472f, 42.544f, 24.195f, 2.5f, 1.8f, 3f, 0, 1, -1, -1612834106);
+	iLocal_109 = func_59(uParam0, 1872.1f, -1861.864f, 41.806f, -9.231f, 1.5f, 1.5f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_110 = func_59(uParam0, 1873.068f, -1863.554f, 41.802f, -99.939f, 1.5f, 1.5f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_111 = func_59(uParam0, 1871.528f, -1864.521f, 41.807f, 169.525f, 1.5f, 1.5f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_112 = func_59(uParam0, 1870.397f, -1862.876f, 41.837f, 79.544f, 1.5f, 1.5f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_113 = func_59(uParam0, 1863.898f, -1858.133f, 42.018f, 90.655f, 1.5f, 1.5f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_114 = func_59(uParam0, 1866.364f, -1856.044f, 42.026f, -16.45f, 1.2f, 1.2f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_115 = func_59(uParam0, 1868.127f, -1856.879f, 42.554f, 92.929f, 1f, 1f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_116 = func_59(uParam0, 1868.216f, -1857.864f, 42.544f, 4.35f, 1f, 1f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_117 = func_59(uParam0, 1868.369f, -1858.726f, 42.567f, 94.561f, 1f, 1f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_118 = func_59(uParam0, 1872.728f, -1871.582f, 41.803f, -176.32f, 1.5f, 1.5f, 3f, 0, 1, -1, joaat("VOLBOX"));
+	iLocal_119 = func_59(uParam0, 1865.98f, -1859.472f, 42.544f, 24.195f, 2.5f, 1.8f, 3f, 0, 1, -1, joaat("VOLBOX"));
 	return 1;
 }
 

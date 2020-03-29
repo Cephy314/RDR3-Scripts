@@ -5829,28 +5829,28 @@ struct<11> func_194(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -2725.277f, 709.9713f, 173.0266f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 40f, 40f, 40f };
 			Var0.f_10 = "RandomEventBlock";
 			break;
 		case 1:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -2723.835f, 716.816f, 170.667f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 6f, 10f, 3f };
 			Var0.f_10 = "Trigger";
 			break;
 		case 2:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2725.277f, 709.9713f, 173.0266f };
 			Var0.f_4 = { 0f, 0f, 65f };
 			Var0.f_7 = { 2f, 2f, 10f };
 			Var0.f_10 = "StayAway";
 			break;
 		case 3:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -2725.277f, 709.9713f, 173.0266f };
 			Var0.f_4 = { 0f, 0f, 155f };
 			Var0.f_7 = { 6f, 8f, 6f };

@@ -48891,7 +48891,7 @@ void func_1174(var uParam0)
 					TASK::TASK_LOOK_AT_ENTITY(&(Local_115[0 /*11*/]), &(Local_193[1 /*11*/]), -1, 0, 51, 0);
 					if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_114) && ENTITY::DOES_ENTITY_EXIST(&(Local_115[0 /*11*/])))
 					{
-						bLocal_114 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_115[0 /*11*/]), true, false), 0f, 0f, 0f, 0.5f, 0.5f, 2f);
+						bLocal_114 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_115[0 /*11*/]), true, false), 0f, 0f, 0f, 0.5f, 0.5f, 2f);
 					}
 					if (VOLUME::_DOES_VOLUME_EXIST(bLocal_114))
 					{
@@ -56990,7 +56990,7 @@ void func_1406(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1891(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

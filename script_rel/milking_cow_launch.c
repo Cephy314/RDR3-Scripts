@@ -145,7 +145,7 @@ int func_3(var uParam0)
 				func_9(uParam0->f_16);
 				if (!VOLUME::_DOES_VOLUME_EXIST(uParam0->f_16))
 				{
-					uParam0->f_16 = VOLUME::_0x0EB78C2B156635B1(-1612834106, uParam0->f_1.f_3, 0f, 0f, 0f, 1.2f, 2.4f, 2f);
+					uParam0->f_16 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), uParam0->f_1.f_3, 0f, 0f, 0f, 1.2f, 2.4f, 2f);
 					PED::_0x7C00CFC48A782DC0(uParam0->f_16, uParam0->f_15, 0f, 0.2f, 0f, 0f, 0f, 0f, 2, 1);
 				}
 			}
@@ -154,11 +154,11 @@ int func_3(var uParam0)
 			{
 				if (uParam0->f_1.f_2 == 21)
 				{
-					uParam0->f_17 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vVar2 + Vector(1f, 0f, 0f), 0f, 0f, uParam0->f_24.f_2, 7.5f, 3.5f, 4f);
+					uParam0->f_17 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vVar2 + Vector(1f, 0f, 0f), 0f, 0f, uParam0->f_24.f_2, 7.5f, 3.5f, 4f);
 				}
 				else
 				{
-					uParam0->f_17 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vVar2 + Vector(1f, 0f, 0f), 0f, 0f, uParam0->f_24.f_2, 3.5f, 3.5f, 4f);
+					uParam0->f_17 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vVar2 + Vector(1f, 0f, 0f), 0f, 0f, uParam0->f_24.f_2, 3.5f, 3.5f, 4f);
 				}
 				VOLUME::_0x5B23DFF8E0948BB2(uParam0->f_17, 0);
 				VOLUME::_0xBE551C2CC421185D(uParam0->f_17, 1);

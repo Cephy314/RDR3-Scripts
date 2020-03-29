@@ -439,7 +439,7 @@ struct<11> func_33(int iParam0)
 			Var0.f_3 = { 0f, 0f, -0.207f };
 			Var0.f_6 = { 20.418f, 27f, 4.659f };
 			Var0.f_9 = "TS_ERD_SPAWN_TRIGGER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;

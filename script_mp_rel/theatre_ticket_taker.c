@@ -8752,28 +8752,28 @@ struct<11> func_284(int iParam0)
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 4f, 4f, 5f };
 			Var0.f_9 = "TICKET_TAKER_VAN_FRONT_ENTRANCE";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 1:
 			Var0 = { 2540.43f, -1280.87f, 48.01795f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 2f, 2f, 4f };
 			Var0.f_9 = "TICKET_TAKER_VAN_TICKET_FENCE";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 2:
 			Var0 = { 2540.47f, -1280.896f, 49.50146f };
 			Var0.f_3 = { 0f, 0f, -135.6275f };
 			Var0.f_6 = { 2.411322f, 2.714174f, 3.024515f };
 			Var0.f_9 = "THEATER_TT_INTERACT_SMALL_ZONE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 3:
 			Var0 = { 2538.789f, -1279.76f, 49.71677f };
 			Var0.f_3 = { 0f, 0f, 11.90726f };
 			Var0.f_6 = { 3.5f, 3.5f, 1.642595f };
 			Var0.f_9 = "TICKET_TT_INTERACT_LARGE_ZONE";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 	}
 	return Var0;

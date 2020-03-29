@@ -4001,8 +4001,8 @@ void func_140()
 	func_262(60f);
 	func_263(35f, 75f, 1, 1077936128 /* Float: 3f */, 0);
 	func_264(1065353216 /* Float: 1f */, 5f);
-	func_266(-432403087, func_265(), 0f, 0f, 0f, 10f, 10f, 10f);
-	func_266(-1612834106, func_265() + Vector(0f, 10f, 10f), 0f, 0f, 0f, 10f, 10f, 10f);
+	func_266(joaat("VOLSPHERE"), func_265(), 0f, 0f, 0f, 10f, 10f, 10f);
+	func_266(joaat("VOLBOX"), func_265() + Vector(0f, 10f, 10f), 0f, 0f, 0f, 10f, 10f, 10f);
 	func_267(func_255(0));
 	func_267(func_255(2));
 	func_267(func_255(3));
@@ -6169,13 +6169,13 @@ int func_266(int iParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
 	{
 		switch (iParam0)
 		{
-			case -1612834106:
+			case joaat("VOLBOX"):
 				VOLUME::_0x39816F6F94F385AD(Local_1509.f_439.f_11, vParam1, vParam4, vParam7);
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				VOLUME::_0x5B7D7BF36D2DE18B(Local_1509.f_439.f_11, vParam1, vParam4, vParam7);
 				break;
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				VOLUME::_0xBCE668AAF83608BE(Local_1509.f_439.f_11, vParam1, vParam4, vParam7);
 				break;
 		}
@@ -14725,7 +14725,7 @@ int func_611(struct<2> Param0, var uParam2)
 
 var func_612(int iParam0, int iParam1)
 {
-	return func_679(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_679(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_613(int* iParam0, var uParam1)
@@ -16338,13 +16338,13 @@ var func_679(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_709());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_709());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_709());
 				break;
 		}

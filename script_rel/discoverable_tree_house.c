@@ -3220,7 +3220,7 @@ struct<11> func_56(int iParam0)
 			Var0.f_3 = { func_53(5) };
 			Var0.f_6 = { func_53(6) };
 			Var0.f_9 = func_51(6);
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 	}
 	return Var0;

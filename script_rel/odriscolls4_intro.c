@@ -1203,7 +1203,7 @@ int func_29(int iParam0)
 	ANIMSCENE::SET_ANIM_SCENE_BOOL(iLocal_16, "Loop_StaticProps", true, false);
 	func_145(560870147, 0, 0f, 0, 1, 0, 0, 0);
 	func_145(867489680, 0, 0f, 0, 1, 0, 0, 0);
-	iLocal_122 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_119, 0f, 0f, 0f, 0.75f, 0.75f, 1.5f);
+	iLocal_122 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_119, 0f, 0f, 0f, 0.75f, 0.75f, 1.5f);
 	func_147(Local_100[0 /*17*/], func_146(7), 0, joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
 	func_149(&iLocal_39, &Local_100, 0, func_148(32), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 	func_151(iParam0, 18206);
@@ -13685,7 +13685,7 @@ void func_592(var uParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

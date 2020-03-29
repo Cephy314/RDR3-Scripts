@@ -15358,7 +15358,7 @@ void func_562(var uParam0)
 		{
 			VOLUME::_DELETE_VOLUME(bLocal_140);
 		}
-		bLocal_140 = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(665633627, -1638.999f, -1355.05f, 84.28288f, 0f, 0f, 0f, 12f, 12f, 5f, "BCH21_RCS1_Restriction");
+		bLocal_140 = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(joaat("VOLCYLINDER"), -1638.999f, -1355.05f, 84.28288f, 0f, 0f, 0f, 12f, 12f, 5f, "BCH21_RCS1_Restriction");
 		func_933(uParam0, &bLocal_140, 0, 0, 0, 0);
 		POPULATION::_0xB56D41A694E42E86(bLocal_140, 10240, 0, 0, -1, -1, 0);
 		func_934(&(uParam0->f_206), -1630.32f, -1335.82f, 82.01f, 0, 0);

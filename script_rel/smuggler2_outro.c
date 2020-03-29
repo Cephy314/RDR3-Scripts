@@ -716,9 +716,9 @@ int func_29(var uParam0)
 			MISC::_SET_WEATHER_TYPE(joaat("FOG"), true, true, true, 60f, false);
 			CLOCK::PAUSE_CLOCK(true, 0);
 			iLocal_27 = VOLUME::_CREATE_VOLUME_BOX(984.2063f, -6781.292f, 49.91065f, 0f, 0f, -20f, 5f, 30f, 4f);
-			iLocal_28 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 987.4385f, -6772.322f, 49.94096f, 0f, 0f, -20f, 8f, 5f, 2f);
-			iLocal_29 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 985.287f, -6785.009f, 49.76819f, 0f, 0f, -19.99999f, 1f, 30f, 4f);
-			iLocal_30 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 981.1976f, -6783.522f, 49.76819f, 0f, 0f, -19.99999f, 1f, 30f, 4f);
+			iLocal_28 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 987.4385f, -6772.322f, 49.94096f, 0f, 0f, -20f, 8f, 5f, 2f);
+			iLocal_29 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 985.287f, -6785.009f, 49.76819f, 0f, 0f, -19.99999f, 1f, 30f, 4f);
+			iLocal_30 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 981.1976f, -6783.522f, 49.76819f, 0f, 0f, -19.99999f, 1f, 30f, 4f);
 			CAM::DO_SCREEN_FADE_IN(1000);
 			if (!ANIMSCENE::_0xCBFC7725DE6CE2E0(&(iLocal_23[0]), 0))
 			{

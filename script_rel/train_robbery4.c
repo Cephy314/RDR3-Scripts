@@ -53314,7 +53314,7 @@ int func_1225(char[4] cParam0)
 				Local_8857 = OBJECT::CREATE_OBJECT_NO_OFFSET(Local_8857.f_2, Local_8857.f_3, true, true, false, true);
 				ENTITY::ATTACH_ENTITY_TO_ENTITY(Local_8857, Local_9017, 0, 0.18673f, 0.331095f, -2.55584f, 0f, 0f, 0f, false, false, false, false, 2, true, false, false);
 				PED::_0x7C00CFC48A782DC0(&(iLocal_9320[0]), Local_9017, 0f, -0.75f, 1.1f, 0f, 0f, 0f, 2, 1);
-				iLocal_9481 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2590.26f, 151.941f, 58.7f, 0f, 0f, 22f, 1.5f, 1.5f, 2f);
+				iLocal_9481 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2590.26f, 151.941f, 58.7f, 0f, 0f, 22f, 1.5f, 1.5f, 2f);
 				iLocal_42 = 3;
 			}
 			break;
@@ -71172,7 +71172,7 @@ void func_1556(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2101(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

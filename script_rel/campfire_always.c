@@ -7374,7 +7374,7 @@ void func_183(int iParam0, var uParam1)
 						}
 						else
 						{
-							iVar10 = 665633627;
+							iVar10 = joaat("VOLCYLINDER");
 						}
 						Var0.f_2 = 12;
 						vVar12 = { 0f, 0f, 0f };

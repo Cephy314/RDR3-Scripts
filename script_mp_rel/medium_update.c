@@ -3940,7 +3940,7 @@ int func_177()
 			return 0;
 		case 1633500362:
 			return 0;
-		case -1269216817:
+		case joaat("MIL_MINE_CAVE_INT"):
 			return 0;
 		case joaat("L_14_CAVE_INT"):
 			return 0;
@@ -3950,7 +3950,7 @@ int func_177()
 			return 0;
 		case 653987431:
 			return 0;
-		case 1911907177:
+		case joaat("J_16_TUNNEL_INT"):
 			return 0;
 		default:
 			break;
@@ -11630,7 +11630,7 @@ void func_525(bool bParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_609(&(Global_1099294->f_555));
 		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_555 = Global_1099294->f_516;
@@ -11731,14 +11731,14 @@ void func_527(vector3 vParam0, float fParam3, vector3 vParam4, float fParam7, fl
 	Global_1099294->f_516.f_17.f_6 = { vParam0 };
 	Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 	Global_1099294->f_516.f_17 = { fParam9, fParam9, fParam9 };
-	Global_1099294->f_516.f_17.f_9 = -432403087;
+	Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 	if (fParam8 > 1f)
 	{
 		Global_1099294->f_516.f_16 = 1;
 		Global_1099294->f_516.f_6.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_516.f_6.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_6 = { fParam8, fParam8, fParam8 };
-		Global_1099294->f_516.f_6.f_9 = -432403087;
+		Global_1099294->f_516.f_6.f_9 = joaat("VOLSPHERE");
 	}
 	func_609(&(Global_1099294->f_555));
 	Global_1099294->f_555.f_6 = { vParam4 };
@@ -13318,7 +13318,7 @@ void func_593(struct<5> Param0, var uParam5)
 		iVar2 = func_647(Param0, &iVar3);
 		switch (iVar3)
 		{
-			case 356437857:
+			case joaat("MATCHMAKING"):
 				*uParam5 = iVar2;
 				break;
 			default:
@@ -15682,7 +15682,7 @@ int func_647(struct<2> Param0, var uParam2, var uParam3, var uParam4, var uParam
 				case joaat("PREREQUISITE"):
 					uVar2 = func_699(iVar4);
 					break;
-				case 356437857:
+				case joaat("MATCHMAKING"):
 					uVar2 = func_700(iVar4);
 					break;
 				case joaat("CHALLENGE"):

@@ -3125,7 +3125,7 @@ struct<11> func_51(int iParam0)
 			Var0 = { 1707.179f, -1005.649f, 43.94208f };
 			Var0.f_3 = { 0f, 0f, -39.03056f };
 			Var0.f_6 = { 5.358464f, 4.768046f, 3.158976f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			Var0.f_9 = "EASEL_INTERIOR";
 			break;
 	}

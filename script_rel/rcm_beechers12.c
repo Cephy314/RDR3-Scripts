@@ -7391,7 +7391,7 @@ int func_267(var uParam0)
 	WEAPON::_GIVE_WEAPON_TO_PED_2(&(Local_14[3]), joaat("WEAPON_REPEATER_CARBINE"), 30, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(Local_14.f_24[13])))
 	{
-		Local_14.f_24[13] = VOLUME::_0x0EB78C2B156635B1(665633627, -1638.204f, -1358.252f, 83.81279f, 0f, 0f, 0f, 2.142712f, 2.019187f, 1f);
+		Local_14.f_24[13] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1638.204f, -1358.252f, 83.81279f, 0f, 0f, 0f, 2.142712f, 2.019187f, 1f);
 	}
 	func_298(0, "pl_quick_exit", &Local_14);
 	func_592(&(Local_14[1]), "1058_G_M_M_UniCriminals_01_WHITE_05", 0);
@@ -31874,26 +31874,26 @@ char* func_1062(int iParam0)
 
 bool func_1063(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, int iParam5)
 {
-	*iParam1 = -1612834106;
+	*iParam1 = joaat("VOLBOX");
 	*uParam2 = { 0f, 0f, 0f };
 	*uParam3 = { 0f, 0f, 0f };
 	*uParam4 = { 0f, 0f, 0f };
 	switch (iParam0)
 	{
 		case 0:
-			*iParam1 = 665633627;
+			*iParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -1635.695f, -1355.41f, 82.9339f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 40f, 40f, 40f };
 			break;
 		case 1:
-			*iParam1 = 665633627;
+			*iParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -1643.493f, -1358.32f, 82.9339f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 20.5f, 20.5f, 20.5f };
 			break;
 		case 2:
-			*iParam1 = 665633627;
+			*iParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -1643.493f, -1358.32f, 82.9339f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 20.5f, 20.5f, 0.726f };
@@ -31901,87 +31901,87 @@ bool func_1063(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, 
 		case 3:
 			if (iParam5 == 0)
 			{
-				*iParam1 = -1612834106;
+				*iParam1 = joaat("VOLBOX");
 				*uParam2 = { -813.0508f, -1276.418f, 44.05357f };
 				*uParam3 = { 0f, 0f, 0f };
 				*uParam4 = { 15.01191f, 6f, 3f };
 			}
 			else if (iParam5 == 1)
 			{
-				*iParam1 = -1612834106;
+				*iParam1 = joaat("VOLBOX");
 				*uParam2 = { -803.7576f, -1278.885f, 42.45952f };
 				*uParam3 = { 0f, 0f, 0f };
 				*uParam4 = { 0.8637f, 0.892766f, 1f };
 			}
 			break;
 		case 4:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1639.63f, -1360.677f, 85.67776f };
 			*uParam3 = { 0f, 0f, 148.1283f };
 			*uParam4 = { 12.51636f, 13.00651f, 6.963271f };
 			break;
 		case 5:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1639.63f, -1360.677f, 85.67776f };
 			*uParam3 = { 0f, 0f, 148.1283f };
 			*uParam4 = { 12.51636f, 13.00651f, 6.963271f };
 			break;
 		case 6:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -808.6924f, -1278.622f, 44.15829f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 2.257963f, 2.018216f, 3f };
 			break;
 		case 7:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -808.6924f, -1278.622f, 44.15829f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 2.257963f, 2.018216f, 3f };
 			break;
 		case 8:
-			*iParam1 = 665633627;
+			*iParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -1635.695f, -1355.41f, 82.9339f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 40f, 40f, 40f };
 			break;
 		case 10:
-			*iParam1 = -432403087;
+			*iParam1 = joaat("VOLSPHERE");
 			*uParam2 = { -817.4098f, -1277.002f, 43.60069f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 1.285638f, 1.285638f, 1.285638f };
 			break;
 		case 9:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -801.3367f, -1272.46f, 43.60972f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 26.09621f, 32.91129f, 6.24773f };
 			break;
 		case 11:
-			*iParam1 = 665633627;
+			*iParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -1634.916f, -1350.871f, 83.98385f };
 			*uParam3 = { 0f, 0f, -28.99171f };
 			*uParam4 = { 13.14525f, 9.567011f, 1.991882f };
 			break;
 		case 12:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1639.928f, -1360.857f, 84.22492f };
 			*uParam3 = { 0f, 0f, -28.50421f };
 			*uParam4 = { 5.113399f, 3.831015f, 1.528022f };
 			break;
 		case 14:
-			*iParam1 = -432403087;
+			*iParam1 = joaat("VOLSPHERE");
 			*uParam2 = { -1639.329f, -1354.822f, 82.95387f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 1f, 1f, 1f };
 			break;
 		case 15:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1627.299f, -1227.826f, 78.05965f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 5.19067f, 4.428993f, 4.917109f };
 			break;
 		case 16:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1428.305f, -1289.064f, 79.41023f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 5.19067f, 4.428993f, 4.917109f };
@@ -62823,7 +62823,7 @@ void func_2048(var uParam0, var uParam1)
 	{
 		return;
 	}
-	uParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	uParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(uParam1->f_36, 1);
 }
 

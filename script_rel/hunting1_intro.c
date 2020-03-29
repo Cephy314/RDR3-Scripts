@@ -1206,7 +1206,7 @@ int func_29(int iParam0)
 	}
 	func_141();
 	bLocal_122 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-107.791f, -26.377f, 95.2773f, 0f, 0f, 0f, 4f, 4f, 2f, "HUNT01_INVITE_CONTEXT_HSO");
-	bLocal_124 = VOLUME::_0x0EB78C2B156635B1(665633627, -107.1701f, -26.17416f, 95.82446f, 0f, 0f, 0f, 2f, 2f, 1f);
+	bLocal_124 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -107.1701f, -26.17416f, 95.82446f, 0f, 0f, 0f, 2f, 2f, 1f);
 	bLocal_125 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(-107.1701f, -26.17416f, 95.82446f, 0f, 0f, 0f, 2f, 2f, 1f, "HUNT01_HOSEA_RANSACK");
 	iLocal_127 = PED::_0x4C39C95AE5DB1329(bLocal_125, false, 16);
 	VOLUME::_0x5B23DFF8E0948BB2(bLocal_124, 1);
@@ -13257,7 +13257,7 @@ void func_554(bool bParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

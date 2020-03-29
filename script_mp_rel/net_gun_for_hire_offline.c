@@ -17851,7 +17851,7 @@ int func_548(int iParam0)
 		case 3:
 			return joaat("HEADER");
 		case 4:
-			return 1461677252;
+			return joaat("SHARD");
 		default:
 			break;
 	}
@@ -25454,7 +25454,7 @@ bool func_904(var uParam0, int iParam1, var uParam2, int iParam3, int iParam4, i
 
 var func_905(int iParam0, int iParam1)
 {
-	return func_1131(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_1131(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_906(var uParam0, int iParam1, vector3 vParam2, float fParam5)
@@ -30227,13 +30227,13 @@ var func_1131(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, in
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1255());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1255());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1255());
 				break;
 		}
@@ -32933,7 +32933,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9446;
 			case -1910505346:
 				return 3139;
-			case -1910363866:
+			case joaat("P_VALGEN_CURTAIN01A_SIM"):
 				return 2331;
 			case -1910080231:
 				return 2335;
@@ -33335,7 +33335,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15253;
 			case joaat("P_CHAIRHOB02X"):
 				return 1387;
-			case -1863093222:
+			case joaat("P_MACHOUSE01_CURT05_SIM"):
 				return 2013;
 			case joaat("P_NEWTHEATRE_DOOR_RX"):
 				return 2878;
@@ -34489,7 +34489,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8079;
 			case joaat("P_BOTTLEMEDICINE04X"):
 				return 3017;
-			case -1712583457:
+			case joaat("P_DAIFARM_INT_CURT01B_SIM"):
 				return 1907;
 			case joaat("P_TRAVELTRUNK01X"):
 				return 3817;
@@ -35247,7 +35247,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14781;
 			case joaat("P_GROUP_N_GROCERY_CPOT01X"):
 				return 7015;
-			case -1613469008:
+			case joaat("P_VAL_TRNSTN_CURTAIN01B_SIM"):
 				return 2325;
 			case joaat("ROWBOAT"):
 				return 14187;
@@ -36271,7 +36271,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4197;
 			case joaat("P_PENSET01X"):
 				return 7780;
-			case -1473923004:
+			case joaat("P_MACHOUSE01_CURT03A_SIM"):
 				return 2007;
 			case -1473829490:
 				return 195;
@@ -37791,7 +37791,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4711;
 			case -1274780462:
 				return 10167;
-			case -1274188885:
+			case joaat("P_NEW_MAN_GALA_CUR06B_SIM"):
 				return 2037;
 			case joaat("P_DRESSINGLCMUTILITY01X"):
 				return 7724;
@@ -38831,7 +38831,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6642;
 			case joaat("S_INV_POCKETWATCH05X"):
 				return 11442;
-			case -1137081966:
+			case joaat("P_RHO_SALOON_CURTAIN05A_SIM"):
 				return 2148;
 			case joaat("P_MP_COVERCOMB_HM_CR"):
 				return 5125;
@@ -40067,7 +40067,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10236;
 			case joaat("P_CS_LIQUIDPOUR01X"):
 				return 10227;
-			case -971042971:
+			case joaat("P_DAIFARM_INT_CURT07A_SIM"):
 				return 1921;
 			case joaat("S_TENTMARSTONCLOTHFLY01X"):
 				return 9452;
@@ -40263,7 +40263,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8763;
 			case joaat("P_CS_BOOKEVELYNMILLER"):
 				return 12134;
-			case -946719701:
+			case joaat("P_RHOSLU_CURTAIN03B_SIM"):
 				return 2254;
 			case joaat("P_WIN_JTL_NC_DIRTY01X"):
 				return 6790;
@@ -42455,7 +42455,7 @@ int func_1165(int iParam0, int iParam1)
 				return 13377;
 			case joaat("A_C_HORSE_KLADRUBER_DAPPLEROSEGREY"):
 				return 14384;
-			case -646660435:
+			case joaat("P_VAL_TRNSTN_CURTAIN01A_SIM"):
 				return 2323;
 			case joaat("A_C_HORSE_GANG_HOSEA"):
 				return 14359;
@@ -43789,7 +43789,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9077;
 			case joaat("S_SHIP_BEAMS02X"):
 				return 13544;
-			case -456373519:
+			case joaat("VAL_JAILBLIND_02_SIM"):
 				return 2403;
 			case joaat("MP005_S_POSSE_TENT_COLLECTOR04X"):
 				return 9017;
@@ -44299,7 +44299,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11155;
 			case joaat("P_VANSTOREPROPS01X"):
 				return 7387;
-			case -387647150:
+			case joaat("P_VALJAILBLIND_SIM"):
 				return 2348;
 			case joaat("P_HAYBALESTACK01X"):
 				return 3135;
@@ -44615,7 +44615,7 @@ int func_1165(int iParam0, int iParam1)
 				return 9268;
 			case joaat("P_LIGHTHOUSE01X_SHIELD"):
 				return 4633;
-			case -348024448:
+			case joaat("P_MACHOUSE01_CURT04B_SIM"):
 				return 2011;
 			case joaat("P_DEPOTGROUP06X"):
 				return 6886;
@@ -46303,7 +46303,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14136;
 			case joaat("P_GROUP_N_GROCERY_CHEESE02X"):
 				return 7010;
-			case -136344794:
+			case joaat("P_VALGEN_CURTAIN01B_SIM"):
 				return 2333;
 			case -136297010:
 				return 11546;
@@ -46525,7 +46525,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8645;
 			case -107774899:
 				return 9067;
-			case -107638812:
+			case joaat("P_RHOSLU_CURTAIN03A_SIM"):
 				return 2252;
 			case joaat("P_WEDGESTICK01X"):
 				return 4965;
@@ -49581,7 +49581,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14058;
 			case joaat("P_STANDAPPLE02BX"):
 				return 3699;
-			case 312522577:
+			case joaat("P_BRA_MANSION_CURTAIN02A_SIM"):
 				return 1853;
 			case joaat("P_AMBCORDDRIED01X"):
 				return 1275;
@@ -49863,7 +49863,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14798;
 			case joaat("MP005_P_MP_COVER_SM_LAK"):
 				return 8445;
-			case 351891542:
+			case joaat("P_VALSAL_CURTAIN03A_SIM"):
 				return 2364;
 			case joaat("A_M_Y_ASBMINER_03"):
 				return 14680;
@@ -50659,7 +50659,7 @@ int func_1165(int iParam0, int iParam1)
 				return 4707;
 			case 459597256:
 				return 4744;
-			case 459690260:
+			case joaat("P_NEW_MAN_GALA_CUR06A_SIM"):
 				return 2035;
 			case joaat("P_BASKETONION01X"):
 				return 4424;
@@ -52387,7 +52387,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12158;
 			case joaat("S_INV_CIGCARD_GUN_12X"):
 				return 11222;
-			case 698238985:
+			case joaat("P_BRA_MANSION_CURTAIN02B_SIM"):
 				return 1855;
 			case joaat("TENTARTHURRF01"):
 				return 9490;
@@ -52999,7 +52999,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14747;
 			case joaat("P_VEH_CORSUPPLIES02X"):
 				return 13946;
-			case 780233469:
+			case joaat("P_MACHOUSE01_CURT02A_SIM"):
 				return 2003;
 			case joaat("S_MISSION_TRAINWRECKED01X"):
 				return 11912;
@@ -53739,7 +53739,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10235;
 			case joaat("P_RHOSLU_CURTAIN03B"):
 				return 2253;
-			case 876633013:
+			case joaat("P_RHO_SALOON_CURTAIN05B_SIM"):
 				return 2150;
 			case joaat("P_BENCH17X"):
 				return 5555;
@@ -54715,7 +54715,7 @@ int func_1165(int iParam0, int iParam1)
 				return 6131;
 			case joaat("P_MP_COVER_SU_SD"):
 				return 5117;
-			case 996090676:
+			case joaat("P_MACHOUSE01_CURT01B_SIM"):
 				return 2001;
 			case joaat("P_CARTSTREETVENDOR01X_SNOW"):
 				return 6564;
@@ -54765,7 +54765,7 @@ int func_1165(int iParam0, int iParam1)
 				return 3571;
 			case joaat("P_WIN_BLABARBERSHOP_01X"):
 				return 6760;
-			case 1004621497:
+			case joaat("P_RHOGEN_CURTAIN02_SIM"):
 				return 2236;
 			case joaat("P_DOC_BOTSET10X"):
 				return 6926;
@@ -55871,7 +55871,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15240;
 			case joaat("P_NEWSPAPERSTACK01X"):
 				return 6198;
-			case 1152298298:
+			case joaat("P_MACHOUSE01_CURT02B_SIM"):
 				return 2005;
 			case 1152389454:
 				return 7223;
@@ -55951,7 +55951,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8688;
 			case 1164739838:
 				return 8415;
-			case 1165097924:
+			case joaat("P_RHO_SALOON_CURTAIN02C_SIM"):
 				return 2146;
 			case joaat("P_RBO_SIGN_02"):
 				return 5801;
@@ -57187,7 +57187,7 @@ int func_1165(int iParam0, int iParam1)
 				return 15115;
 			case joaat("P_WINDSORCHAIR02X"):
 				return 5703;
-			case 1328974214:
+			case joaat("P_DAIFARM_INT_CURT07B_SIM"):
 				return 1923;
 			case joaat("P_CS_MOORINGROPE01X"):
 				return 10260;
@@ -59223,7 +59223,7 @@ int func_1165(int iParam0, int iParam1)
 				return 12868;
 			case joaat("PROP_FLAG_US_SL"):
 				return 5525;
-			case 1586634183:
+			case joaat("P_DAIFARM_INT_CURT01A_SIM"):
 				return 1905;
 			case 1587266429:
 				return 9092;
@@ -59315,7 +59315,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10265;
 			case joaat("S_INV_CIGCARD_HRS_08X"):
 				return 11230;
-			case 1595479939:
+			case joaat("P_MACHOUSE01_CURT01A_SIM"):
 				return 1999;
 			case joaat("CS_CATTLERUSTLER"):
 				return 14749;
@@ -59689,7 +59689,7 @@ int func_1165(int iParam0, int iParam1)
 				return 1459;
 			case joaat("P_INT_PRODUCE03"):
 				return 7185;
-			case 1647095129:
+			case joaat("P_RHOGEN_CURTAIN01B_SIM"):
 				return 2234;
 			case joaat("P_SPITTOON03X"):
 				return 4090;
@@ -60933,7 +60933,7 @@ int func_1165(int iParam0, int iParam1)
 				return 7670;
 			case joaat("A_C_HORSE_GANG_CHARLES_ENDLESSSUMMER"):
 				return 14357;
-			case 1800819087:
+			case joaat("P_RHOGEN_CURTAIN01A_SIM"):
 				return 2232;
 			case joaat("P_BEDMOSQUITONET01X"):
 				return 1038;
@@ -62027,7 +62027,7 @@ int func_1165(int iParam0, int iParam1)
 				return 8571;
 			case joaat("MP001_P_MP_JUMP_FENCELONG01"):
 				return 790;
-			case 1943093401:
+			case joaat("P_RHO_SALOON_CURTAIN02B_SIM"):
 				return 2144;
 			case joaat("P_BEE_BUILDING_06"):
 				return 13619;
@@ -63009,7 +63009,7 @@ int func_1165(int iParam0, int iParam1)
 				return 11364;
 			case joaat("P_MAP01X"):
 				return 1180;
-			case 2068074744:
+			case joaat("P_MACHOUSE01_CURT04A_SIM"):
 				return 2009;
 			case joaat("P_SAWHORSE02X"):
 				return 6467;
@@ -63337,7 +63337,7 @@ int func_1165(int iParam0, int iParam1)
 				return 14195;
 			case joaat("P_FLATCAR0104X"):
 				return 13399;
-			case 2110987413:
+			case joaat("VAL_JAILCURTAIN02_SIM"):
 				return 2405;
 			case joaat("TUGBOAT2"):
 				return 14205;

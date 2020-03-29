@@ -21681,7 +21681,7 @@ void func_747(var uParam0)
 			{
 				if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_694))
 				{
-					bLocal_694 = VOLUME::_CREATE_VOLUME_BY_HASH(-1612834106, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(Local_375.f_4[8]), 0f, 1.3f, 2.13f), 0f, 0f, -45f, 5f, 3f, 5.420468f);
+					bLocal_694 = VOLUME::_CREATE_VOLUME_BY_HASH(joaat("VOLBOX"), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(Local_375.f_4[8]), 0f, 1.3f, 2.13f), 0f, 0f, -45f, 5f, 3f, 5.420468f);
 				}
 				else
 				{
@@ -36866,7 +36866,7 @@ int func_1272(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -36901,7 +36901,7 @@ int func_1273(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

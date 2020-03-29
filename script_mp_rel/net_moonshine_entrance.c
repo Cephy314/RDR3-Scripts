@@ -3985,7 +3985,7 @@ void func_152(bool bParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_214(&(Global_1099294->f_555));
 		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_555 = Global_1099294->f_516;
@@ -5340,14 +5340,14 @@ void func_222(vector3 vParam0, var uParam3, vector3 vParam4, int iParam7, float 
 	Global_1099294->f_516.f_17.f_6 = { vParam0 };
 	Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 	Global_1099294->f_516.f_17 = { fParam9, fParam9, fParam9 };
-	Global_1099294->f_516.f_17.f_9 = -432403087;
+	Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 	if (fParam8 > 1f)
 	{
 		Global_1099294->f_516.f_16 = 1;
 		Global_1099294->f_516.f_6.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_516.f_6.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_6 = { fParam8, fParam8, fParam8 };
-		Global_1099294->f_516.f_6.f_9 = -432403087;
+		Global_1099294->f_516.f_6.f_9 = joaat("VOLSPHERE");
 	}
 	func_214(&(Global_1099294->f_555));
 	Global_1099294->f_555.f_6 = { vParam4 };
@@ -5624,7 +5624,7 @@ int func_239(struct<2> Param0, int iParam2)
 
 var func_240(int iParam0, int iParam1)
 {
-	return func_260(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_260(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_241(int iParam0)
@@ -5997,13 +5997,13 @@ var func_260(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_266());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_266());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_266());
 				break;
 		}

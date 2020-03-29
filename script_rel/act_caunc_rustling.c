@@ -11593,7 +11593,7 @@ int func_250(bool bParam0)
 			func_618(&Local_96);
 		}
 	}
-	else if (func_619(&Local_96, vLocal_968, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), -1612834106, bLocal_897, 0, 0, 0, 1, 0))
+	else if (func_619(&Local_96, vLocal_968, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), joaat("VOLBOX"), bLocal_897, 0, 0, 0, 1, 0))
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(Local_96.f_694))
 		{
@@ -14535,11 +14535,11 @@ int func_302()
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_915))
 	{
-		bLocal_915 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 720.5015f, -834.5086f, 49.50018f, 0f, 0f, -30.7633f, 6.222975f, 3.511267f, 2.534181f);
+		bLocal_915 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 720.5015f, -834.5086f, 49.50018f, 0f, 0f, -30.7633f, 6.222975f, 3.511267f, 2.534181f);
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_916))
 	{
-		bLocal_916 = VOLUME::_0x0EB78C2B156635B1(665633627, 710.6204f, -851.5604f, 51.15835f, 0f, 0f, -41.00056f, 31.65196f, 20.41077f, 5.893109f);
+		bLocal_916 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 710.6204f, -851.5604f, 51.15835f, 0f, 0f, -41.00056f, 31.65196f, 20.41077f, 5.893109f);
 	}
 	if (func_624(642, 1) && !func_69(642, 1))
 	{
@@ -49916,7 +49916,7 @@ void func_1347()
 
 int func_1348()
 {
-	if (func_619(&Local_96, vLocal_1008, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), -1612834106, bLocal_897, 0, 0, 0, 1, 0))
+	if (func_619(&Local_96, vLocal_1008, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), joaat("VOLBOX"), bLocal_897, 0, 0, 0, 1, 0))
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(Local_96.f_694))
 		{
@@ -49931,7 +49931,7 @@ int func_1348()
 
 int func_1349()
 {
-	if (func_619(&Local_96, vLocal_1011, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), -1612834106, 0, 0, 0, 0, 1, 0))
+	if (func_619(&Local_96, vLocal_1011, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), joaat("VOLBOX"), 0, 0, 0, 0, 1, 0))
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(Local_96.f_694))
 		{
@@ -49946,7 +49946,7 @@ int func_1349()
 
 int func_1350()
 {
-	if (func_619(&Local_96, vLocal_971, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), -1612834106, 0, 0, 0, 0, 1, 0))
+	if (func_619(&Local_96, vLocal_971, 20, vLocal_971, vLocal_974, vLocal_977, joaat("A_C_COW"), joaat("VOLBOX"), 0, 0, 0, 0, 1, 0))
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(Local_96.f_694))
 		{

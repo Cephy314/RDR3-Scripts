@@ -37489,8 +37489,8 @@ int func_807(var uParam0)
 		func_1285(uParam0, iVar0, 1, 2);
 		iVar0++;
 	}
-	func_1307(&(Local_141.f_58), -1612834106);
-	func_1307(&(Local_141.f_68), -1612834106);
+	func_1307(&(Local_141.f_58), joaat("VOLBOX"));
+	func_1307(&(Local_141.f_68), joaat("VOLBOX"));
 	func_528(9, 0);
 	func_528(10, 0);
 	func_1308(1);
@@ -37601,7 +37601,7 @@ int func_808(var uParam0)
 				{
 					MISC::CLEAR_AREA(1293.9f, -1296.1f, 77.2f, 1f, 1064960);
 				}
-				func_1307(&(Local_141.f_53), 665633627);
+				func_1307(&(Local_141.f_53), joaat("VOLCYLINDER"));
 				func_1321(12, 1);
 				ENTITY::SET_ENTITY_INVINCIBLE(&(Local_1692[12 /*2*/]), true);
 				ENTITY::FREEZE_ENTITY_POSITION(&(Local_1692[12 /*2*/]), true);
@@ -39481,7 +39481,7 @@ int func_818(var uParam0)
 				{
 					if (!ENTITY::IS_ENTITY_DEAD(&(Local_218[52 /*8*/])))
 					{
-						func_1307(&(Local_141.f_50), 665633627);
+						func_1307(&(Local_141.f_50), joaat("VOLCYLINDER"));
 						func_27(vLocal_1840[25 /*3*/], 1);
 						func_1338(10);
 						func_1349(11, &(Local_218[6 /*8*/]));
@@ -63373,7 +63373,7 @@ void func_1412(var uParam0)
 			Local_1340[23 /*2*/] = TASK::CREATE_SCENARIO_POINT(joaat("ROLL_DOWN_STAIRS"), func_988(10, 7), func_989(10, 7), 1.5f, 0, 0);
 			break;
 		case 22:
-			func_1307(&(Local_141.f_52), -1612834106);
+			func_1307(&(Local_141.f_52), joaat("VOLBOX"));
 			break;
 		case 23:
 			iLocal_2180 = OBJECT::CREATE_PICKUP(joaat("PICKUP_WEAPON_REVOLVER_CATTLEMAN"), 1342.1f, -1371.3f, 83.7f, 8 | 16, -1, true, 0, 0, 0f, 0);
@@ -70409,7 +70409,7 @@ void func_1607(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2130(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

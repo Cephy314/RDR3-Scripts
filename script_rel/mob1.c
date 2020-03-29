@@ -35473,8 +35473,8 @@ int func_782(char[4] cParam0)
 	func_151(cParam0, Global_35, 0, 0, 0, 0, 0);
 	func_439(cParam0, &(iLocal_204[4]), "s_balledragcloth01x", 0, 0, 0, 0);
 	TASK::SET_SCENARIO_TYPE_ENABLED("PROP_PLAYER_EAT_ALMONDS_COUNTER", false);
-	bLocal_375 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2637.55f, -1222.97f, 53.363f, 0f, 0f, -21.54f, 2.628187f, 1.311f, 2f);
-	bLocal_457 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2640.023f, -1225.916f, 53.9125f, 0f, 0f, 0f, 2.085862f, 7.36629f, 3.233488f);
+	bLocal_375 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2637.55f, -1222.97f, 53.363f, 0f, 0f, -21.54f, 2.628187f, 1.311f, 2f);
+	bLocal_457 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2640.023f, -1225.916f, 53.9125f, 0f, 0f, 0f, 2.085862f, 7.36629f, 3.233488f);
 	bLocal_613 = false;
 	func_1268(&(iLocal_292[0]));
 	func_1269();
@@ -35536,7 +35536,7 @@ int func_783(char[4] cParam0)
 	}
 	else if (!ENTITY::IS_ENTITY_IN_VOLUME(Global_35, iLocal_381, true, 0))
 	{
-		bLocal_457 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2640.023f, -1225.916f, 53.9125f, 0f, 0f, 0f, 2.085862f, 7.36629f, 3.233488f);
+		bLocal_457 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2640.023f, -1225.916f, 53.9125f, 0f, 0f, 0f, 2.085862f, 7.36629f, 3.233488f);
 		bLocal_613 = false;
 	}
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_WHEEL_MENU"), false);
@@ -35934,7 +35934,7 @@ int func_789(char[4] cParam0)
 				func_1321(&(iLocal_173[6]), 0);
 				func_1322(&cLocal_950);
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(&(iLocal_173[6]), Global_35, -1, -1082130432, -1082130432, -1082130432);
-				bLocal_421 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(iLocal_173[6]), true, false), 0f, 0f, 0f, 0.75f, 0.75f, 1f);
+				bLocal_421 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(iLocal_173[6]), true, false), 0f, 0f, 0f, 0.75f, 0.75f, 1f);
 				PED::_0x7C00CFC48A782DC0(bLocal_421, &(iLocal_173[6]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 				func_236(&uLocal_744);
 				func_135(cParam0, 1);
@@ -36414,7 +36414,7 @@ int func_797(char[4] cParam0)
 	func_1351(cParam0, &(uLocal_295[0]));
 	VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(bLocal_342, false);
 	func_1357(cParam0);
-	bLocal_401 = VOLUME::_0x0EB78C2B156635B1(-1612834106, func_1326(3, 14), 0f, 0f, 0f, 3.5f, 10.5f, 3f);
+	bLocal_401 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), func_1326(3, 14), 0f, 0f, 0f, 3.5f, 10.5f, 3f);
 	PED::_0x7C00CFC48A782DC0(bLocal_401, bLocal_342, 0f, 0f, 2.1f, 0f, 0f, 0f, 2, 1);
 	func_1358();
 	PLAYER::_0xBBADFB5E5E5766FB(PLAYER::PLAYER_ID(), 0.75f);
@@ -55451,7 +55451,7 @@ void func_1310(char[4] cParam0)
 			{
 				func_145(cParam0, &(Local_14.f_101[0]), "MOB1_WOMAN2", 0);
 				func_145(cParam0, &(Local_14.f_101[1]), "MOB1_WOMAN3", 0);
-				bLocal_419 = VOLUME::_0x0EB78C2B156635B1(665633627, 2660.459f, -1234.623f, 51.55811f, 0f, 0f, -24f, 0.7f, 0.95f, 4f);
+				bLocal_419 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2660.459f, -1234.623f, 51.55811f, 0f, 0f, -24f, 0.7f, 0.95f, 4f);
 				func_935(8388608);
 			}
 		}
@@ -55473,7 +55473,7 @@ void func_1310(char[4] cParam0)
 			{
 				func_145(cParam0, &(Local_14.f_101[2]), "MOB1_MAN3", 0);
 				func_145(cParam0, &(Local_14.f_101[3]), "MOB1_WOMAN1", 0);
-				bLocal_419 = VOLUME::_0x0EB78C2B156635B1(665633627, 2645.524f, -1237.656f, 52.22538f, 0f, 0f, 0f, 1f, 1f, 4f);
+				bLocal_419 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2645.524f, -1237.656f, 52.22538f, 0f, 0f, 0f, 1f, 1f, 4f);
 				func_935(8388608);
 			}
 		}
@@ -57967,10 +57967,10 @@ void func_1371(char[4] cParam0)
 			func_1395(bLocal_342);
 			CAM::SET_GAMEPLAY_HINT_FOV(CAM::GET_GAMEPLAY_CAM_FOV());
 			CAM::SET_GAMEPLAY_ENTITY_HINT(&(uLocal_295[1]), 0f, 0f, 0f, true, 1000, 1500, 1000, 0);
-			VEHICLE::_0xE6C5E2125EB210C1(-1739625337, 5, 0);
-			VEHICLE::_0xE6C5E2125EB210C1(-1739625337, 9, 0);
+			VEHICLE::_0xE6C5E2125EB210C1(joaat("NB_TROLLEY_TRACK_CONFIG"), 5, 0);
+			VEHICLE::_0xE6C5E2125EB210C1(joaat("NB_TROLLEY_TRACK_CONFIG"), 9, 0);
 			VEHICLE::_0xE6C5E2125EB210C1(joaat("TROLLEY_INTERSECTION5"), 0, 1);
-			VEHICLE::_0xE6C5E2125EB210C1(-1739625337, 13, 0);
+			VEHICLE::_0xE6C5E2125EB210C1(joaat("NB_TROLLEY_TRACK_CONFIG"), 13, 0);
 			VEHICLE::_0xE6C5E2125EB210C1(joaat("TROLLEY4"), 2, 1);
 			func_1376(&bLocal_342, func_1936(1));
 			func_1876(uLocal_887[iVar0], 9);
@@ -58732,7 +58732,7 @@ void func_1380(char[4] cParam0)
 			vVar1 = { 10f, 9f, 8f };
 			if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_382))
 			{
-				iLocal_382 = VOLUME::_0x0EB78C2B156635B1(665633627, 2740.816f, -1179.613f, 49.09001f, 0f, 0f, 0f, 0.6f, 0.6f, 1.5f);
+				iLocal_382 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2740.816f, -1179.613f, 49.09001f, 0f, 0f, 0f, 0.6f, 0.6f, 1.5f);
 			}
 		}
 		else
@@ -66237,7 +66237,7 @@ void func_1590(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2210(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

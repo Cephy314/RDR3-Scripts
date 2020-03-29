@@ -11099,7 +11099,7 @@ void func_343()
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_75))
 		{
-			iLocal_75 = VOLUME::_0x0EB78C2B156635B1(665633627, vVar0, 0f, 0f, 0f, 2f, 2f, 3f);
+			iLocal_75 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vVar0, 0f, 0f, 0f, 2f, 2f, 3f);
 		}
 	}
 	else

@@ -4111,7 +4111,7 @@ struct<11> func_125()
 {
 	struct<11> Var0;
 
-	Var0 = -432403087;
+	Var0 = joaat("VOLSPHERE");
 	Var0.f_1 = { 2021.476f, -293.6755f, 40.64257f };
 	Var0.f_4 = { 0f, 0f, -35f };
 	Var0.f_7 = { 150f, 150f, 20f };
@@ -4123,7 +4123,7 @@ struct<11> func_126()
 {
 	struct<11> Var0;
 
-	Var0 = -1612834106;
+	Var0 = joaat("VOLBOX");
 	Var0.f_1 = { func_199(PLAYER::GET_PLAYER_INDEX()) };
 	Var0.f_4 = { 0f, 0f, 0f };
 	Var0.f_7 = { 10f, 10f, 10f };
@@ -4138,7 +4138,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 2041.771f, -301.8179f, 40.64257f };
 			Var0.f_5 = { 0f, 0f, -35f };
 			Var0.f_8 = { 125f, 200f, 20f };
@@ -4149,7 +4149,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			{
 				case 0:
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2434.052f, -1224.941f, 45.8519f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4165,28 +4165,28 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 					switch (iParam3)
 					{
 						case 0:
-							Var0.f_1 = 665633627;
+							Var0.f_1 = joaat("VOLCYLINDER");
 							Var0.f_2 = { -3671.981f, -2610.041f, -15.387f };
 							Var0.f_5 = { 0f, 0f, 0f };
 							Var0.f_8 = { 160f, 160f, 24f };
 							Var0.f_11 = "ArmadilloTownCrierInit";
 							break;
 						case 1:
-							Var0.f_1 = 665633627;
+							Var0.f_1 = joaat("VOLCYLINDER");
 							Var0.f_2 = { -3671.981f, -2610.041f, -15.387f };
 							Var0.f_5 = { 0f, 0f, 0f };
 							Var0.f_8 = { 160f, 160f, 24f };
 							Var0.f_11 = "ArmadilloTownCrierInit";
 							break;
 						case 2:
-							Var0.f_1 = 665633627;
+							Var0.f_1 = joaat("VOLCYLINDER");
 							Var0.f_2 = { -3671.981f, -2610.041f, -15.387f };
 							Var0.f_5 = { 0f, 0f, 0f };
 							Var0.f_8 = { 160f, 160f, 24f };
 							Var0.f_11 = "ArmadilloTownCrierInit";
 							break;
 						case 3:
-							Var0.f_1 = 665633627;
+							Var0.f_1 = joaat("VOLCYLINDER");
 							Var0.f_2 = { -3671.981f, -2610.041f, -15.387f };
 							Var0.f_5 = { 0f, 0f, 0f };
 							Var0.f_8 = { 160f, 160f, 24f };
@@ -4203,7 +4203,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 1:
 				case 2:
 				case 3:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1791.806f, -422.4149f, 154.8645f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4215,42 +4215,42 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam2)
 			{
 				case 3:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 502.0502f, 1284.979f, 181.4051f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 190f, 190f, 60f };
 					Var0.f_11 = "BlindManCassidy4Init";
 					break;
 				case 9:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 414.5646f, 412.7333f, 107.6299f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 190f, 190f, 60f };
 					Var0.f_11 = "BlindManCassidy5Init";
 					break;
 				case 10:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2794.157f, 1406.62f, 82.3539f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 190f, 190f, 60f };
 					Var0.f_11 = "BlindManCassidy6Init";
 					break;
 				case 13:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -5342.735f, -2948.708f, 0.8175f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 190f, 190f, 60f };
 					Var0.f_11 = "BlindManCassidy7Init";
 					break;
 				case 4:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1208.554f, -1229.683f, 74.7918f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 190f, 190f, 60f };
 					Var0.f_11 = "BlindManCassidy8Init";
 					break;
 				default:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1208.554f, -1229.683f, 74.7918f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 190f, 190f, 60f };
@@ -4262,14 +4262,14 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam1)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 888.6843f, 1276.612f, 234.0975f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 120f };
 					Var0.f_11 = "ChelonianMasterInit";
 					break;
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 865.601f, 1248.82f, 179.7602f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 180f, 180f, 120f };
@@ -4278,14 +4278,14 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			}
 			break;
 		case 7:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 2013.938f, 621.8572f, 160.1942f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 140f, 140f, 120f };
 			Var0.f_11 = "CivilWarCommandoInit";
 			break;
 		case 5:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { -1504.076f, 2458.008f, 417.758f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 201.2847f, 200f, 120f };
@@ -4296,7 +4296,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			{
 				case 0:
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2537.911f, -1205.53f, 56.90488f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4309,7 +4309,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			{
 				case 0:
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -323.7828f, 767.8452f, 121.6327f };
 					Var0.f_5 = { 0f, 0f, 9.428618f };
 					Var0.f_8 = { 29f, 32.5f, 10f };
@@ -4324,7 +4324,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 1:
 				case 2:
 				case 3:
-					Var0.f_1 = -1612834106;
+					Var0.f_1 = joaat("VOLBOX");
 					Var0.f_2 = { 2691.439f, -1379.215f, 45.53815f };
 					Var0.f_5 = { 0f, 0f, 40.27665f };
 					Var0.f_8 = { 160f, 220f, 70f };
@@ -4336,28 +4336,28 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (func_200())
 			{
 				case 105:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 1407.764f, -1377.079f, 79.702f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinRhodesInit";
 					return Var0;
 				case 38:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -773.2449f, -1329.082f, 42.6291f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinBlackwaterInit";
 					return Var0;
 				case 126:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -2378.475f, -2378.621f, 61.1724f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinMacfarlaneInit";
 					return Var0;
 				case 5:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2563.835f, -1378.423f, 45.1925f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4367,35 +4367,35 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam2)
 			{
 				case 12:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -2338.21f, -1271.362f, 147.062f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinTallTreesInit";
 					break;
 				case 10:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2428.864f, 1015.729f, 85.6131f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinRoanokeInit";
 					break;
 				case 15:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -3157.477f, -2981.991f, 4.6224f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinChollaInit";
 					break;
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2563.835f, -1378.423f, 45.1925f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "GavinBayouInit";
 					return Var0;
 				default:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -2338.21f, -1271.362f, 147.062f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4410,7 +4410,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 1:
 				case 2:
 				case 3:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 1710f, 2148f, 319f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 70f };
@@ -4422,7 +4422,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam1)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -312.9856f, 808.8508f, 117.9822f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 60f, 60f, 20f };
@@ -4437,7 +4437,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 1:
 				case 2:
 				case 3:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 1320.745f, -1291.739f, 75.14026f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4450,35 +4450,35 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			{
 				case 7:
 				case 9:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -727.395f, 686.1953f, 58.2244f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 57.863f };
 					Var0.f_11 = "JohnMadmanHeartlandsInit";
 					break;
 				case 13:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -6122.201f, -3803.751f, -35.2455f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 66.553f };
 					Var0.f_11 = "JohnMadmanGaptoothInit";
 					break;
 				case 10:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2183.348f, 1502.819f, 83.6009f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 108.806f };
 					Var0.f_11 = "JohnMadmanRoanokeInit";
 					break;
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1891.265f, -289.866f, 176.457f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 100f, 140f, 52.073f };
 					Var0.f_11 = "JohnMadmanStrawberryInit";
 					break;
 				default:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1891.265f, -289.866f, 176.457f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 52.073f };
@@ -4493,7 +4493,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 1:
 				case 2:
 				case 3:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2627.977f, -1225.307f, 69.61133f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4502,7 +4502,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			}
 			break;
 		case 17:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 2943.588f, 1336.999f, 43.22713f };
 			Var0.f_5 = { 0f, 0f, 36.13133f };
 			Var0.f_8 = { 160f, 160f, 40f };
@@ -4512,21 +4512,21 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam1)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1812.186f, -367.3066f, 161.8834f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "MayorStrawberryInit";
 					break;
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1807.89f, -371.5062f, 161.8662f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "MayorStrawberryInit";
 					break;
 				case 2:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -1800.857f, -357.3966f, 162.9631f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 100f, 100f, 20f };
@@ -4538,21 +4538,21 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam3)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -257.3543f, 753.7379f, 116.1329f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 150f, 150f, 40f };
 					Var0.f_11 = "BumMickyInit";
 					break;
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -192.9274f, 625.6254f, 113.5786f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 150f, 150f, 40f };
 					Var0.f_11 = "BumMickyInit";
 					break;
 				default:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -257.3543f, 753.7379f, 116.1329f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 150f, 150f, 40f };
@@ -4568,7 +4568,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 2:
 				case 3:
 				case 4:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -2725.277f, 709.9713f, 173.0266f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4582,7 +4582,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 				case 0:
 				case 1:
 				case 2:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2706.158f, 2370.946f, 165.3596f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4591,7 +4591,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			}
 			break;
 		case 22:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { -5511.87f, -2945.988f, -1.198f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 140f, 140f, 30f };
@@ -4601,21 +4601,21 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam2)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 1784.089f, -946.648f, 40.7225f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SoothsayerInit";
 					break;
 				case 2:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2440.456f, -462.537f, 40.9104f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SoothsayerInit";
 					break;
 				default:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2922.895f, 636.0865f, 52.2682f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4627,84 +4627,84 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam1)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -2233.602f, -2850.517f, 62.7628f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper1Init";
 					break;
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -3198.999f, -2538.554f, 66.5911f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper2Init";
 					break;
 				case 2:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -2913.073f, -2849.159f, 38.86703f };
 					Var0.f_5 = { 0f, 0f, 135f };
 					Var0.f_8 = { 200f, 120f, 40f };
 					Var0.f_11 = "SunWorshipper3Init";
 					break;
 				case 3:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -3267.86f, -3416.677f, 39.5041f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper4Init";
 					break;
 				case 4:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -3572.794f, -3565.222f, 33.505f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper5Init";
 					break;
 				case 5:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -4399.393f, -3587.901f, 19.91016f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper6Init";
 					break;
 				case 6:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -4988.676f, -4060.992f, 1.0884f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper7Init";
 					break;
 				case 7:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -5333.317f, -3534.569f, -22.77217f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper8Init";
 					break;
 				case 8:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -5374.994f, -4053.294f, -6.2292f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper9Init";
 					break;
 				case 9:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -5413.131f, -2606.156f, 2.5597f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper10Init";
 					break;
 				case 10:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -4956.249f, -3198.202f, -4.254218f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
 					Var0.f_11 = "SunWorshipper11Init";
 					break;
 				case 11:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -4594.695f, -3125.494f, -1.754162f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 20f };
@@ -4717,7 +4717,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			{
 				case 0:
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2371.776f, -861.4393f, 49.7588f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 160f, 160f, 20f };
@@ -4729,7 +4729,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam1)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { -345.2797f, 794.6578f, 115.1777f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 40f };
@@ -4742,7 +4742,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			{
 				case 0:
 				case 1:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 2647.447f, -1208.416f, 55.34686f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 100f, 100f, 30f };
@@ -4754,7 +4754,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			switch (iParam1)
 			{
 				case 0:
-					Var0.f_1 = 665633627;
+					Var0.f_1 = joaat("VOLCYLINDER");
 					Var0.f_2 = { 3025.557f, 1779.699f, 83.2056f };
 					Var0.f_5 = { 0f, 0f, 0f };
 					Var0.f_8 = { 140f, 140f, 30f };
@@ -4763,7 +4763,7 @@ struct<12> func_127(int iParam0, int iParam1, int iParam2, int iParam3)
 			}
 			break;
 		case 29:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 2778.292f, -1313.274f, 45.89664f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 100f, 100f, 20f };

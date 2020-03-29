@@ -41712,7 +41712,7 @@ int func_880(char[4] cParam0)
 	func_1046(cParam0);
 	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_328))
 	{
-		iLocal_328 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -228.2138f, 644.4697f, 112.8622f, 0f, 0f, -39.49014f, 6.168539f, 9.69884f, 8.052787f);
+		iLocal_328 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -228.2138f, 644.4697f, 112.8622f, 0f, 0f, -39.49014f, 6.168539f, 9.69884f, 8.052787f);
 	}
 	if (func_215(&(iLocal_912[2])))
 	{
@@ -77504,7 +77504,7 @@ int func_1732(char[4] cParam0, bool bParam1)
 			Local_1105.f_188 = joaat("A_C_SHEEP_01");
 			Local_1105.f_652 = "mudtown4_SheepRoute";
 			func_2362(&Local_1105);
-			if (func_2363(&Local_1105, vVar0, 15, -236.5679f, 651.7188f, 115.7346f, 0f, 0f, -39.3599f, 6.58339f, 6.027266f, 6.885726f, joaat("A_C_SHEEP_01"), -1612834106, 0, 0, 1, 0, 1, 1))
+			if (func_2363(&Local_1105, vVar0, 15, -236.5679f, 651.7188f, 115.7346f, 0f, 0f, -39.3599f, 6.58339f, 6.027266f, 6.885726f, joaat("A_C_SHEEP_01"), joaat("VOLBOX"), 0, 0, 1, 0, 1, 1))
 			{
 				if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_228[54])))
 				{
@@ -77536,7 +77536,7 @@ int func_1732(char[4] cParam0, bool bParam1)
 				func_1533(uLocal_888[3], 1);
 				break;
 			case 1:
-				if (func_2363(&Local_1105, vVar0, 15, -236.5679f, 651.7188f, 115.7346f, 0f, 0f, -39.3599f, 6.58339f, 6.027266f, 6.885726f, joaat("A_C_SHEEP_01"), -1612834106, 0, 0, 0, 0, 1, 1))
+				if (func_2363(&Local_1105, vVar0, 15, -236.5679f, 651.7188f, 115.7346f, 0f, 0f, -39.3599f, 6.58339f, 6.027266f, 6.885726f, joaat("A_C_SHEEP_01"), joaat("VOLBOX"), 0, 0, 0, 0, 1, 1))
 				{
 					if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_228[54])))
 					{
@@ -79621,7 +79621,7 @@ void func_1803(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2441(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;
@@ -122017,7 +122017,7 @@ int func_3173(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -122052,7 +122052,7 @@ int func_3174(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

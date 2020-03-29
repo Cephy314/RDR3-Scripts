@@ -1705,32 +1705,32 @@ void func_45(int iParam0)
 	iParam0->f_1713 = 5;
 	iVar0 = 0;
 	Global_1357549->f_3[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("PronghornRanch volCampAreas[CVA_INNER]");
-	func_293(Global_1357549->f_3[0], &iVar0, 0, -2570.858f, 344.2454f, 157.9509f, 0f, 0f, 0f, 24.55f, 21.5f, 45f, -1612834106, 0);
-	func_293(Global_1357549->f_3[0], &iVar0, 0, -2558.72f, 353.7069f, 158.0643f, 0f, 0f, 0f, 6.25f, 14.25f, 45f, -1612834106, 0);
-	func_293(Global_1357549->f_3[0], &iVar0, 0, -2590.621f, 411.7829f, 157.033f, 0f, 0f, -30f, 11f, 18f, 45f, -1612834106, 0);
-	func_293(Global_1357549->f_3[0], &iVar0, 0, -2594.4f, 457.3f, 154.6921f, 0f, 0f, -9.999998f, 7.1f, 10.25f, 45f, -1612834106, 0);
-	func_293(Global_1357549->f_3[0], &iVar0, 0, -2591.77f, 440.0676f, 155.5328f, 0f, 0f, 0f, 14.75f, 7f, 45f, -1612834106, 0);
-	func_293(Global_1357549->f_3[0], &iVar0, 0, -2596.899f, 434.25f, 156.581f, 0f, 0f, 0f, 4.5f, 9f, 45f, -1612834106, 0);
+	func_293(Global_1357549->f_3[0], &iVar0, 0, -2570.858f, 344.2454f, 157.9509f, 0f, 0f, 0f, 24.55f, 21.5f, 45f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[0], &iVar0, 0, -2558.72f, 353.7069f, 158.0643f, 0f, 0f, 0f, 6.25f, 14.25f, 45f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[0], &iVar0, 0, -2590.621f, 411.7829f, 157.033f, 0f, 0f, -30f, 11f, 18f, 45f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[0], &iVar0, 0, -2594.4f, 457.3f, 154.6921f, 0f, 0f, -9.999998f, 7.1f, 10.25f, 45f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[0], &iVar0, 0, -2591.77f, 440.0676f, 155.5328f, 0f, 0f, 0f, 14.75f, 7f, 45f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[0], &iVar0, 0, -2596.899f, 434.25f, 156.581f, 0f, 0f, 0f, 4.5f, 9f, 45f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[2] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("PronghornRanch volCampAreas[CVA_OUTER]");
 	Global_1357549->f_3[3] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("PronghornRanch volCampAreas[CVA_OUTER_THRESHOLD]");
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2548.949f, 325.763f, 160f, 0f, 0f, 9.000001f, 55f, 13f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2579.138f, 330.9276f, 160f, 0f, 0f, -30f, 19f, 16f, 60f, 665633627, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2518.681f, 397.0634f, 160f, 0f, 0f, -4.5f, 25f, 127f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2534.318f, 495.423f, 160f, 0f, 0f, -9.000002f, 13f, 10f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2600.49f, 392.029f, 160f, 0f, 0f, -3f, 10f, 34f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2518.894f, 334.922f, 160f, 0f, 0f, -12f, 7f, 11f, 60f, 665633627, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2505.076f, 442.9265f, 160f, 0f, 0f, -6f, 4f, 22f, 60f, 665633627, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2552.524f, 396.2589f, 160f, 0f, 0f, 0f, 64f, 145f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2505.803f, 461.1734f, 160f, 0f, 0f, 2.000002f, 10f, 13f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2522.517f, 477.1015f, 160f, 0f, 0f, 42f, 19f, 25f, 60f, 665633627, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2610.8f, 450.1638f, 160f, 0f, 0f, 13f, 4f, 16f, 60f, 665633627, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2589.791f, 359.6104f, 160f, 0f, 0f, 6f, 16f, 43f, 60f, 665633627, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2568.966f, 463.1732f, 160f, 0f, 0f, 25f, 86f, 43f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2593.714f, 423.6152f, 160f, 0f, 0f, 9.000002f, 28f, 76f, 60f, -1612834106, 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2548.949f, 325.763f, 160f, 0f, 0f, 9.000001f, 55f, 13f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2579.138f, 330.9276f, 160f, 0f, 0f, -30f, 19f, 16f, 60f, joaat("VOLCYLINDER"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2518.681f, 397.0634f, 160f, 0f, 0f, -4.5f, 25f, 127f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2534.318f, 495.423f, 160f, 0f, 0f, -9.000002f, 13f, 10f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2600.49f, 392.029f, 160f, 0f, 0f, -3f, 10f, 34f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2518.894f, 334.922f, 160f, 0f, 0f, -12f, 7f, 11f, 60f, joaat("VOLCYLINDER"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2505.076f, 442.9265f, 160f, 0f, 0f, -6f, 4f, 22f, 60f, joaat("VOLCYLINDER"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2552.524f, 396.2589f, 160f, 0f, 0f, 0f, 64f, 145f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2505.803f, 461.1734f, 160f, 0f, 0f, 2.000002f, 10f, 13f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2522.517f, 477.1015f, 160f, 0f, 0f, 42f, 19f, 25f, 60f, joaat("VOLCYLINDER"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2610.8f, 450.1638f, 160f, 0f, 0f, 13f, 4f, 16f, 60f, joaat("VOLCYLINDER"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2589.791f, 359.6104f, 160f, 0f, 0f, 6f, 16f, 43f, 60f, joaat("VOLCYLINDER"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2568.966f, 463.1732f, 160f, 0f, 0f, 25f, 86f, 43f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, -2593.714f, 423.6152f, 160f, 0f, 0f, 9.000002f, 28f, 76f, 60f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[4] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("PronghornRanch volCampAreas[CVA_SURROUNDING]");
 	Global_1357549->f_3[5] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("PronghornRanch volCampAreas[CVA_SURROUNDING_THRESHOLD]");
-	func_293(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -2547.255f, 405.9721f, 160.379f, 0f, 0f, -6f, 130f, 214f, 60f, -1612834106, 0);
-	func_293(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -2600.745f, 471.1957f, 160.0371f, 0f, 0f, -6f, 19f, 52f, 60f, 665633627, 0);
+	func_293(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -2547.255f, 405.9721f, 160.379f, 0f, 0f, -6f, 130f, 214f, 60f, joaat("VOLBOX"), 0);
+	func_293(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, -2600.745f, 471.1957f, 160.0371f, 0f, 0f, -6f, 19f, 52f, 60f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[6] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-2594.385f, 457.3062f, 147.4835f, 0f, 0f, -10.00216f, 6.558199f, 9.498734f, 2.963989f, "PronghornRanch volCampAreas[CVA_PROPERTY]");
 	func_294(-1220186332, 0, 0);
 	func_294(240622919, 0, 0);
@@ -19790,7 +19790,7 @@ void func_664()
 			}
 			else if (bVar2)
 			{
-				iLocal_3735[iVar1] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(iLocal_3729[iVar1]), true, false), 0f, 0f, 0f, 0.2f, 0.2f, 2f);
+				iLocal_3735[iVar1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(iLocal_3729[iVar1]), true, false), 0f, 0f, 0f, 0.2f, 0.2f, 2f);
 				if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_3735[iVar1])))
 				{
 					PED::_0x7C00CFC48A782DC0(&(iLocal_3735[iVar1]), &(iLocal_3729[iVar1]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);

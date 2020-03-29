@@ -1451,7 +1451,7 @@ int func_54(var uParam0)
 				func_158(&iLocal_151, 2679.349f, 896.9056f, 94.24586f, 0f, 0f, 20.75f, 11f, 11f, 20f, "volGreetILOEnable");
 				if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_152))
 				{
-					iLocal_152 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2683.429f, 898.4922f, 90.0638f, 0f, 0f, 19f, 3.25f, 2.8f, 4.5f);
+					iLocal_152 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2683.429f, 898.4922f, 90.0638f, 0f, 0f, 19f, 3.25f, 2.8f, 4.5f);
 				}
 				func_160(uParam0->f_2060[0], uParam0->f_2063[0], vLocal_139, 0f, 0f, 0f, 60f, 60f, 60f, 0, 12288, 1, 0, 0);
 				AUDIO::SET_AMBIENT_ZONE_STATE_PERSISTENT("AZ_Loansharking_Annesburg_Miner_2_Shack", true, true);
@@ -33525,7 +33525,7 @@ void func_1153(bool bParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

@@ -446,7 +446,7 @@ int func_13()
 				PED::_0xCC8CA3E88256E58F(&(iLocal_24[iVar0]), false, true, true, true, false);
 				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_78[iVar0])))
 				{
-					iLocal_78[iVar0] = VOLUME::_0x0EB78C2B156635B1(665633627, *(vLocal_28[iVar0 /*3*/]), 0f, 0f, 0f, 1.5f, 1.5f, 1f);
+					iLocal_78[iVar0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), *(vLocal_28[iVar0 /*3*/]), 0f, 0f, 0f, 1.5f, 1.5f, 1f);
 					PED::_0x7C00CFC48A782DC0(&(iLocal_78[iVar0]), &(iLocal_24[iVar0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 				}
 			}

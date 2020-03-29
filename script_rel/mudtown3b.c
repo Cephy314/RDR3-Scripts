@@ -51160,7 +51160,7 @@ void func_1284(struct<39> Param0, float fParam39)
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_2345))
 		{
-			bLocal_2345 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_2319, vLocal_2319, 1.6f, 1.6f, 1.6f);
+			bLocal_2345 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_2319, vLocal_2319, 1.6f, 1.6f, 1.6f);
 			VOLUME::_0x5B23DFF8E0948BB2(bLocal_2345, 1);
 		}
 		if (func_1845(Param0))
@@ -51182,7 +51182,7 @@ void func_1285()
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_2344))
 		{
-			bLocal_2344 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(Local_160, true, false), vLocal_2319, 1f, 1f, 1.2f);
+			bLocal_2344 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(Local_160, true, false), vLocal_2319, 1f, 1f, 1.2f);
 			VOLUME::_0x5B23DFF8E0948BB2(bLocal_2344, 1);
 			PED::_0x7C00CFC48A782DC0(bLocal_2344, Local_160, 0f, 0f, 0.2f, vLocal_2319, 2, 1);
 		}
@@ -57427,8 +57427,8 @@ void func_1498()
 		{
 			if (!VOLUME::_DOES_VOLUME_EXIST((Local_1966[iVar0 /*39*/])->f_5) && !VOLUME::_DOES_VOLUME_EXIST((Local_1966[iVar0 /*39*/])->f_6))
 			{
-				(Local_1966[iVar0 /*39*/])->f_5 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_2319, vLocal_2319, 1.1f, 15f, 2f);
-				(Local_1966[iVar0 /*39*/])->f_6 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_2319, vLocal_2319, 1.1f, 15f, 2f);
+				(Local_1966[iVar0 /*39*/])->f_5 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_2319, vLocal_2319, 1.1f, 15f, 2f);
+				(Local_1966[iVar0 /*39*/])->f_6 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_2319, vLocal_2319, 1.1f, 15f, 2f);
 				PED::_0x7C00CFC48A782DC0((Local_1966[iVar0 /*39*/])->f_5, &(Local_1966[iVar0 /*39*/]), 1.4f, 0f, 2.1f, vLocal_2319, 2, 1);
 				PED::_0x7C00CFC48A782DC0((Local_1966[iVar0 /*39*/])->f_6, &(Local_1966[iVar0 /*39*/]), -1.4f, 0f, 2.1f, vLocal_2319, 2, 1);
 				VOLUME::_0x5B23DFF8E0948BB2((Local_1966[iVar0 /*39*/])->f_5, 1);
@@ -59335,7 +59335,7 @@ void func_1571(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2175(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

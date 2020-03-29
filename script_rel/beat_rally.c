@@ -777,7 +777,7 @@ void func_23()
 	vector3 vVar0;
 
 	vVar0 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Local_43.f_51, Local_43.f_51.f_3, 0.78f, 0.63f, -0.05f) };
-	iLocal_976 = VOLUME::_0x0EB78C2B156635B1(665633627, vVar0, 0f, 0f, 0f, 1.857838f, 1.826754f, 3.213f);
+	iLocal_976 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vVar0, 0f, 0f, 0f, 1.857838f, 1.826754f, 3.213f);
 }
 
 int func_24()
@@ -14503,7 +14503,7 @@ int func_445(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -14538,7 +14538,7 @@ int func_446(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

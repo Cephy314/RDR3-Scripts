@@ -13397,7 +13397,7 @@ int func_517(vector3 vParam0, float fParam3)
 	var uVar0;
 	int iVar1;
 
-	uVar0 = func_744(vParam0, 0f, 0f, 0f, fParam3, fParam3, fParam3, -432403087, 0, 8);
+	uVar0 = func_744(vParam0, 0f, 0f, 0f, fParam3, fParam3, fParam3, joaat("VOLSPHERE"), 0, 8);
 	iVar1 = SCRIPTS::COUNT_PLAYER_BITS(&uVar0);
 	return iVar1;
 }
@@ -17553,7 +17553,7 @@ void func_662()
 		case 9:
 		case 10:
 		case 11:
-			uVar15 = func_744(ENTITY::GET_ENTITY_COORDS(iVar0, false, false), 0f, 0f, 0f, 3f, 3f, 3f, -432403087, 0, 8);
+			uVar15 = func_744(ENTITY::GET_ENTITY_COORDS(iVar0, false, false), 0f, 0f, 0f, 3f, 3f, 3f, joaat("VOLSPHERE"), 0, 8);
 			iVar16 = SCRIPTS::COUNT_PLAYER_BITS(&uVar15);
 			if (iVar16 == 0)
 			{
@@ -17733,9 +17733,9 @@ void func_663()
 			return;
 		}
 	}
-	Local_13.f_7.f_6 = func_744(ENTITY::GET_ENTITY_COORDS(iVar1, false, false), 0f, 0f, 0f, 3f, 3f, 3f, -432403087, 0, 8);
+	Local_13.f_7.f_6 = func_744(ENTITY::GET_ENTITY_COORDS(iVar1, false, false), 0f, 0f, 0f, 3f, 3f, 3f, joaat("VOLSPHERE"), 0, 8);
 	iVar3 = SCRIPTS::COUNT_PLAYER_BITS(&(Local_13.f_7.f_6));
-	Local_13.f_7.f_7 = func_744(ENTITY::GET_ENTITY_COORDS(iVar1, false, false), 0f, 0f, 0f, 30f, 30f, 30f, -432403087, 0, 8);
+	Local_13.f_7.f_7 = func_744(ENTITY::GET_ENTITY_COORDS(iVar1, false, false), 0f, 0f, 0f, 30f, 30f, 30f, joaat("VOLSPHERE"), 0, 8);
 	iVar4 = SCRIPTS::COUNT_PLAYER_BITS(&(Local_13.f_7.f_7));
 	if (func_641())
 	{
@@ -19525,13 +19525,13 @@ var func_744(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_866());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_866());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_866());
 				break;
 		}
@@ -22494,7 +22494,7 @@ int func_862(int iParam0, int iParam1, float fParam2, bool bParam3)
 
 var func_863(int iParam0, int iParam1)
 {
-	return func_744(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_744(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_864(int* iParam0, var uParam1)

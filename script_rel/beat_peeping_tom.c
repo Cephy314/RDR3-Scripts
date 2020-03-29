@@ -896,7 +896,7 @@ void func_16(var uParam0, var uParam1)
 			PATHFIND::_0x19C7567D2F2287D6(uParam0[5], 7);
 			func_54((*uParam0)[3], -1784.283f, -404.243f, 156.67f, 0f, 0f, 0f, 0.75f, 2.5f, 2.5f, "REPT_VOL_PLAYER_SEEN_1");
 			func_54((*uParam0)[6], -1783.83f, -402.687f, 160.727f, 0f, 0f, 0f, 10f, 7f, 6f, "REPT_VOL_IGNORE_BREAKOUT");
-			(*uParam0)[7] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1784.348f, -404.57f, 156.708f, 0f, 0f, 0f, 1f, 2f, 3f);
+			(*uParam0)[7] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1784.348f, -404.57f, 156.708f, 0f, 0f, 0f, 1f, 2f, 3f);
 			break;
 	}
 	iVar0 = 0;
@@ -14221,7 +14221,7 @@ int func_414(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -14256,7 +14256,7 @@ int func_415(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

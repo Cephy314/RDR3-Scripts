@@ -5784,42 +5784,42 @@ struct<11> func_218(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 2706.214f, 2370.569f, 166.0049f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "RandomEventBlock";
 			break;
 		case 1:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2706.214f, 2370.569f, 166.0049f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 15f, 15f, 10f };
 			Var0.f_10 = "Trigger";
 			break;
 		case 2:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 2706.214f, 2370.569f, 166.0049f };
 			Var0.f_4 = { 0f, 0f, 81.29333f };
 			Var0.f_7 = { 9.33105f, 4.768036f, 10f };
 			Var0.f_10 = "StayAway";
 			break;
 		case 3:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2706.214f, 2366.14f, 166.0049f };
 			Var0.f_4 = { 0f, 0f, 90f };
 			Var0.f_7 = { 11f, 12f, 6f };
 			Var0.f_10 = "LookIKVolume";
 			break;
 		case 4:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2706.054f, 2369.111f, 169.591f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "No Climb";
 			break;
 		case 5:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2706.116f, 2370.54f, 166.8774f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 46.571f, 48.75949f, 24.01915f };

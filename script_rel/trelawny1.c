@@ -35525,7 +35525,7 @@ int func_729(char[4] cParam0)
 {
 	if ((!func_130(cParam0, 2) && !func_122(cParam0, 4)) && !func_130(cParam0, 1))
 	{
-		iLocal_2448[0] = VOLUME::_0x0EB78C2B156635B1(665633627, 655.9897f, -1252.158f, 43.67601f, 0f, 0f, 0f, 1.2f, 1.2f, 1.2f);
+		iLocal_2448[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 655.9897f, -1252.158f, 43.67601f, 0f, 0f, 0f, 1.2f, 1.2f, 1.2f);
 	}
 	if (func_1215(bLocal_2386, func_1(0, 2), 3f, 0))
 	{
@@ -35691,7 +35691,7 @@ int func_735(var uParam0)
 
 int func_736(char[4] cParam0)
 {
-	iLocal_2448[3] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1298.527f, -1131.712f, 80.7243f, 0f, 0f, 3.27955f, 1.744087f, 3.218202f, 5.682215f);
+	iLocal_2448[3] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1298.527f, -1131.712f, 80.7243f, 0f, 0f, 3.27955f, 1.744087f, 3.218202f, 5.682215f);
 	func_1248();
 	func_1249(cParam0, "TRE1_OBJ_ENTER", -1082130432 /* Float: -1f */, 0, 0, -1, -1, 0);
 	return 1;
@@ -35816,8 +35816,8 @@ int func_741(var uParam0)
 {
 	func_1265(func_1(2, 2), 50f, 0, 0, 0, 0, 0);
 	func_1266(sLocal_115, 0);
-	iLocal_2448[1] = VOLUME::_0x0EB78C2B156635B1(665633627, 997.1607f, -1217.676f, 62.01162f, 0f, 0f, 20.15553f, 1.186349f, 0.917881f, 1.464387f);
-	iLocal_2448[2] = VOLUME::_0x0EB78C2B156635B1(665633627, 998.2706f, -1218.94f, 62.053f, 0f, 0f, 0f, 1.43735f, 0.798421f, 2f);
+	iLocal_2448[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 997.1607f, -1217.676f, 62.01162f, 0f, 0f, 20.15553f, 1.186349f, 0.917881f, 1.464387f);
+	iLocal_2448[2] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 998.2706f, -1218.94f, 62.053f, 0f, 0f, 0f, 1.43735f, 0.798421f, 2f);
 	func_1238(1);
 	AUDIO::_0x0D7FD6A55FD63AEF(10, 3, false);
 	iLocal_186 = 0;
@@ -63679,7 +63679,7 @@ void func_1550(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2164(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

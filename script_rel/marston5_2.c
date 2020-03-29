@@ -33306,7 +33306,7 @@ int func_737(var uParam0)
 
 int func_738(var uParam0)
 {
-	Local_14.f_38 = VOLUME::_0x0EB78C2B156635B1(-1612834106, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_19[0]), true, false), 0f, 0f, 0f, 1f, 1f, 3f);
+	Local_14.f_38 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_19[0]), true, false), 0f, 0f, 0f, 1f, 1f, 3f);
 	return 1;
 }
 
@@ -53582,74 +53582,74 @@ bool func_1359(int iParam0)
 
 bool func_1360(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 {
-	*uParam1 = -1612834106;
+	*uParam1 = joaat("VOLBOX");
 	*uParam2 = { 0f, 0f, 0f };
 	*uParam3 = { 0f, 0f, 0f };
 	*uParam4 = { 0f, 0f, 0f };
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2608.708f, 424.366f, 145.13f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 97f, 150f, 20f };
 			break;
 		case 1:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2616.546f, 468.5962f, 145.8138f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 6f, 13.75f, 5f };
 			break;
 		case 2:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2510.801f, 491.3788f, 143.1139f };
 			*uParam3 = { 0f, 0f, 43.75f };
 			*uParam4 = { 5.75f, 12.75f, 5f };
 			break;
 		case 3:
-			*uParam1 = 665633627;
+			*uParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -2548.276f, 469.9728f, 143.1763f };
 			*uParam3 = { 0f, 0f, 43.75f };
 			*uParam4 = { 10f, 10f, 5f };
 			break;
 		case 4:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2546.569f, 452.2986f, 146.4984f };
 			*uParam3 = { 0f, 0f, 6f };
 			*uParam4 = { 10f, 47.75f, 10f };
 			break;
 		case 5:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2546.73f, 419.8269f, 147.6954f };
 			*uParam3 = { 0f, 0f, -13.25f };
 			*uParam4 = { 7f, 26f, 10f };
 			break;
 		case 6:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2548.122f, 399.9443f, 147.7748f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 24.75f, 20f, 10f };
 			break;
 		case 7:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2548.122f, 399.9443f, 147.7748f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 2.5f, 4f, 3f };
 			break;
 		case 9:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2559.609f, 399.3285f, 148.8376f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 5f, 4f, 5f };
 			break;
 		case 8:
-			*uParam1 = 665633627;
+			*uParam1 = joaat("VOLCYLINDER");
 			*uParam2 = { -2548.122f, 399.9443f, 147.7748f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 2f, 1.5f, 3f };
 			break;
 		case 10:
-			*uParam1 = -1612834106;
+			*uParam1 = joaat("VOLBOX");
 			*uParam2 = { -2528.643f, 400.673f, 147.957f };
 			*uParam3 = { 0f, 0f, 0f };
 			*uParam4 = { 15f, 20f, 10f };
@@ -55025,7 +55025,7 @@ void func_1412(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1892(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

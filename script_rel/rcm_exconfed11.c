@@ -41751,70 +41751,70 @@ struct<11> func_1255(int iParam0)
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 15f, 15f, 15f };
 			Var0.f_9 = "EXCONFED_RIDE_START";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 1:
 			Var0 = { 672.7058f, -1270.376f, 43.17721f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 5.158765f, 2.411154f, 5.044271f };
 			Var0.f_9 = "EXCONFED_LOG_AVOID";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 2:
 			Var0 = { 669.311f, -1241.325f, 44.47131f };
 			Var0.f_3 = { 0f, 0f, 33.37854f };
 			Var0.f_6 = { 11.72768f, 4.462079f, 3f };
 			Var0.f_9 = "EXCONFED_TABLE_AVOID";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 3:
 			Var0 = { 657.2059f, -1232.39f, 44.45082f };
 			Var0.f_3 = { 0f, 0f, 35.85524f };
 			Var0.f_6 = { 4.630526f, 4.462079f, 4.636759f };
 			Var0.f_9 = "EXCONFED_TENT_AVOIDANCE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 4:
 			Var0 = { 677.1061f, -1288.07f, 42.4409f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 8f, 8f, 3f };
 			Var0.f_9 = "EXCONFED_VOLUME_CALLOVER_TRIGGER";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 5:
 			Var0 = { 674.5601f, -1287.683f, 43.42538f };
 			Var0.f_3 = { 0f, 0f, 77.46456f };
 			Var0.f_6 = { 8.666284f, 13.32519f, 4.360902f };
 			Var0.f_9 = "EXCONFED_SCENARIO_PROMPT_PREVENT";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 6:
 			Var0 = { 1757.867f, -1823.092f, 56.3f };
 			Var0.f_3 = { 0f, 0f, 77.46456f };
 			Var0.f_6 = { 320f, 175f, 30f };
 			Var0.f_9 = "EXCONFED_ROAD_BLOCKER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 7:
 			Var0 = { 1584.348f, -1841.152f, 52.19306f };
 			Var0.f_3 = { 0f, 0f, -34f };
 			Var0.f_6 = { 40f, 40f, 30f };
 			Var0.f_9 = "EXCONFED_VOLUME_CHURCH";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 8:
 			Var0 = { 1578.426f, -1840.625f, 52f };
 			Var0.f_3 = { 0f, 0f, -22.75f };
 			Var0.f_6 = { 22f, 17f, 30f };
 			Var0.f_9 = "EXCONFED_VOLUME_WONT_SEE_WAGON";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 9:
 			Var0 = { 1815.377f, -1807.062f, 50.703f };
 			Var0.f_3 = { 0f, 0f, 57.5f };
 			Var0.f_6 = { 100f, 20f, 20f };
 			Var0.f_9 = "EXCONFED_VOLUME_CAN_SEE_SHADY_BELLE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;
@@ -41831,14 +41831,14 @@ struct<11> func_1256(int iParam0)
 			Var0.f_3 = { 0f, 0f, -10.7757f };
 			Var0.f_6 = { 3f, 3f, 3f };
 			Var0.f_9 = "EXCONFED_ANTI_GRIEF_VOLUME_LEADIN";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 1:
 			Var0 = { 1820.44f, -1804.32f, 47.84f };
 			Var0.f_3 = { 0f, 0f, -30.75f };
 			Var0.f_6 = { 2f, 2f, 4f };
 			Var0.f_9 = "EXCONFED_ANTI_GRIEF_VOLUME_LENNY_COVER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;
@@ -43541,161 +43541,161 @@ struct<11> func_1315(int iParam0)
 			Var0.f_3 = { 0f, 0f, 55.2196f };
 			Var0.f_6 = { 35f, 62.75f, 10f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_COMBAT_AREA";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 1:
 			Var0 = { 1822.136f, -1811.356f, 48.29761f };
 			Var0.f_3 = { 0f, 0f, -30.25f };
 			Var0.f_6 = { 6.5f, 9.5f, 5f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_ENTRANCE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 2:
 			Var0 = { 1866.546f, -1846.872f, 41.3642f };
 			Var0.f_3 = { 0f, 0f, 47.88265f };
 			Var0.f_6 = { 1.5f, 1.5f, 5f };
 			Var0.f_9 = "EXCONFED_SB_PLAYER_IN_BOX_COVER";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 3:
 			Var0 = { 1787.807f, -1789.22f, 50f };
 			Var0.f_3 = { 0f, 0f, 55.75f };
 			Var0.f_6 = { 100f, 71.75f, 8f };
 			Var0.f_9 = "EXCONFED_SB_FRONT_GATE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 4:
 			Var0 = { 1814.237f, -1813.957f, 47.257f };
 			Var0.f_3 = { 0f, 0f, 60.014f };
 			Var0.f_6 = { 7f, 4f, 8f };
 			Var0.f_9 = "EXCONFED_SB_WALL_OBJECTIVE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 5:
 			Var0 = { 1897.591f, -1863.396f, 43.67659f };
 			Var0.f_3 = { -0.006626f, 0f, 50.04955f };
 			Var0.f_6 = { 19.21704f, 17.62886f, 3.742927f };
 			Var0.f_9 = "EXCONFED_BOTTOM_HOUSE";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 6:
 			Var0 = { 1835.249f, -1796.182f, 45.8298f };
 			Var0.f_3 = { 0f, 0f, -24.30662f };
 			Var0.f_6 = { 10.26525f, 14.18264f, 10f };
 			Var0.f_9 = "EXCONFED_SB_NAVBLOCK_LEFT";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 7:
 			Var0 = { 1814.936f, -1831.455f, 44.6987f };
 			Var0.f_3 = { 0f, 0f, -15.91263f };
 			Var0.f_6 = { 30.52986f, 17.96093f, 10f };
 			Var0.f_9 = "EXCONFED_SB_NAVBLOCK_RIGHT";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 14:
 			Var0 = { 1860.524f, -1875.915f, 41.7759f };
 			Var0.f_3 = { 0f, 0f, 0.154895f };
 			Var0.f_6 = { 7.807623f, 18.69743f, 10f };
 			Var0.f_9 = "EXCONFED_SB_TENT_BLOCKING";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 15:
 			Var0 = { 1860.524f, -1875.915f, 41.7759f };
 			Var0.f_3 = { 0f, 0f, 0.154895f };
 			Var0.f_6 = { 13f, 13f, 13f };
 			Var0.f_9 = "EXCONFED_SB_CHASE_DEFENSIVE_VOLUME";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 16:
 			Var0 = { 1860.524f, -1875.915f, 41.7759f };
 			Var0.f_3 = { 0f, 0f, 0.154895f };
 			Var0.f_6 = { 13f, 13f, 13f };
 			Var0.f_9 = "EXCONFED_SB_CHASE_DEFENSIVE_VOLUME_LEFT";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 17:
 			Var0 = { 1860.524f, -1875.915f, 41.7759f };
 			Var0.f_3 = { 0f, 0f, 0.154895f };
 			Var0.f_6 = { 13f, 13f, 13f };
 			Var0.f_9 = "EXCONFED_SB_CHASE_DEFENSIVE_VOLUME_RIGHT";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 18:
 			Var0 = { 1877.569f, -1885.907f, 43.341f };
 			Var0.f_3 = { 0f, 0f, -61.25f };
 			Var0.f_6 = { 0.6f, 0.8f, 1f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_UC_SEARCH_WAGON";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 19:
 			Var0 = { 1877.569f, -1885.907f, 43.341f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 10f, 10f, 10f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_AROUND_WAGON";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 20:
 			Var0 = { 1878.02f, -1886.304f, 43.594f };
 			Var0.f_3 = { 0f, 0f, 29.5f };
 			Var0.f_6 = { 1f, 1.8f, 2f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_BACK_OF_WAGON";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 8:
 			Var0 = { 1874.22f, -1847.748f, 45.45001f };
 			Var0.f_3 = { 0f, 0f, 52.75002f };
 			Var0.f_6 = { 85f, 96f, 20f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_COVER_LEVEL_0_BLOCK";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 9:
 			Var0 = { 1882.28f, -1853.876f, 45.45001f };
 			Var0.f_3 = { 0f, 0f, 52.75002f };
 			Var0.f_6 = { 85f, 96f, 20f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_COVER_LEVEL_1_BLOCK";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 10:
 			Var0 = { 1893.533f, -1862.434f, 45.45001f };
 			Var0.f_3 = { 0f, 0f, 52.75002f };
 			Var0.f_6 = { 85f, 96f, 20f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_COVER_LEVEL_2_BLOCK";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 11:
 			Var0 = { 1905.33f, -1871.404f, 45.45001f };
 			Var0.f_3 = { 0f, 0f, 52.75002f };
 			Var0.f_6 = { 85f, 96f, 20f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_COVER_LEVEL_3_BLOCK";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 12:
 			Var0 = { 1910.602f, -1875.413f, 45.45001f };
 			Var0.f_3 = { 0f, 0f, 52.75002f };
 			Var0.f_6 = { 85f, 96f, 20f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_COVER_LEVEL_4_BLOCK";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 13:
 			Var0 = { 1879.522f, -1865.546f, 45.66924f };
 			Var0.f_3 = { 0f, 0f, 49.75001f };
 			Var0.f_6 = { 42.75f, 56.5f, 10.5f };
 			Var0.f_9 = "EXCONFED_VOLUME_DRIVE_SLOW";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 21:
 			Var0 = { 1819.83f, -1803.76f, 48.24702f };
 			Var0.f_3 = { 0f, 0f, -28.5f };
 			Var0.f_6 = { 3f, 9f, 5f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_WALL_LEFT";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 22:
 			Var0 = { 1815.293f, -1812.115f, 48.247f };
 			Var0.f_3 = { 0f, 0f, -28.5f };
 			Var0.f_6 = { 3f, 9f, 5f };
 			Var0.f_9 = "EXCONFED_VOLUME_SB_WALL_RIGHT";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;
@@ -61997,7 +61997,7 @@ void func_1909(var uParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

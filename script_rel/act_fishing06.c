@@ -33482,35 +33482,35 @@ struct<11> func_928(int iParam0)
 			Var0 = { 2082.33f, -1912.337f, 40.3256f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 24f, 24f, 10f };
-			Var0.f_9 = 665633627;
+			Var0.f_9 = joaat("VOLCYLINDER");
 			Var0.f_10 = "GatorWanderSmall";
 			break;
 		case 1:
 			Var0 = { 2075.528f, -1912.735f, 40.4256f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 30f, 30f, 10f };
-			Var0.f_9 = 665633627;
+			Var0.f_9 = joaat("VOLCYLINDER");
 			Var0.f_10 = "GatorWanderLarge";
 			break;
 		case 2:
 			Var0 = { 2070.503f, -1893.048f, 40.426f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 55f, 55f, 10f };
-			Var0.f_9 = 665633627;
+			Var0.f_9 = joaat("VOLCYLINDER");
 			Var0.f_10 = "Fish06ActivityArea";
 			break;
 		case 3:
 			Var0 = { func_509(28) };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 3f, 3f, 5f };
-			Var0.f_9 = 665633627;
+			Var0.f_9 = joaat("VOLCYLINDER");
 			Var0.f_10 = "FISH06_LOCATION_02";
 			break;
 		case 4:
 			Var0 = { 2082.187f, -1887.598f, 41.426f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 4.203f, 7.588f, 5f };
-			Var0.f_9 = -1612834106;
+			Var0.f_9 = joaat("VOLBOX");
 			Var0.f_10 = "FISH06_ROW_BOAT";
 			break;
 	}

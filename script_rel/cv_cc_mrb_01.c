@@ -3103,8 +3103,8 @@ int func_72(var uParam0)
 	}
 	iLocal_14 = func_150(uParam0, 15, 0);
 	iLocal_15 = func_150(uParam0, 1, 0);
-	func_151(uParam0, 0.95049f, 0.327781f, 1.00836f, 3f, 0.9f, 0.9f, 2.5f, -1612834106, joaat("APMS_COMP_MARYBETH"), 1, 1, 1);
-	func_151(uParam0, 0.048638f, 0.0721679f, 0.778168f, 3f, 0.8f, 2f, 2f, -1612834106, joaat("APMS_COMP_JOHN"), 1, 1, 1);
+	func_151(uParam0, 0.95049f, 0.327781f, 1.00836f, 3f, 0.9f, 0.9f, 2.5f, joaat("VOLBOX"), joaat("APMS_COMP_MARYBETH"), 1, 1, 1);
+	func_151(uParam0, 0.048638f, 0.0721679f, 0.778168f, 3f, 0.8f, 2f, 2f, joaat("VOLBOX"), joaat("APMS_COMP_JOHN"), 1, 1, 1);
 	func_152(uParam0, joaat("P_CS_RAG02X"), 0f, 0f, 0f, "RAG", 0, 1, 1);
 	if (!func_153(1) && !func_153(2))
 	{
@@ -3122,8 +3122,8 @@ int func_72(var uParam0)
 	func_157(uParam0, iLocal_15, 4, joaat("WORLD_CAMP_JOHN_RECOVER"), "WORLD_CAMP_JOHN_RECOVER_MALE_A", -1, 0, -1f, 1065353216 /* Float: 1f */, 1);
 	Local_30 = { func_158(uParam0, 0.952f, 0.3487f, 0.6824f, -109.5f, 10f, 0.189f, 0.625f) };
 	Local_20 = { func_158(uParam0, 0.952f, 0.3487f, 0.6824f, -49.75f, 10f, 0.8f, 0.475f) };
-	iLocal_40 = func_159(uParam0, 5.9125f, 1.0375f, 0f, 0f, 0f, 0f, 13.625f, 7.3375f, 3f, "InitialTrigger", -1612834106);
-	iLocal_41 = func_159(uParam0, 5.5249f, -0.05f, 0f, 0f, 0f, 3.75f, 10.345f, 5.505f, 3f, "ActionTrigger", -1612834106);
+	iLocal_40 = func_159(uParam0, 5.9125f, 1.0375f, 0f, 0f, 0f, 0f, 13.625f, 7.3375f, 3f, "InitialTrigger", joaat("VOLBOX"));
+	iLocal_41 = func_159(uParam0, 5.5249f, -0.05f, 0f, 0f, 0f, 3.75f, 10.345f, 5.505f, 3f, "ActionTrigger", joaat("VOLBOX"));
 	func_160(uParam0, 1);
 	if (func_153(1) || func_153(2))
 	{
@@ -4825,7 +4825,7 @@ void func_166(var uParam0)
 						{
 							if (iVar1 == 0 && !uParam0->f_4)
 							{
-								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(665633627, uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
+								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(joaat("VOLCYLINDER"), uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
 								(uParam0->f_36[iVar1 /*5*/])->f_2 = 1;
 							}
 						else
@@ -5558,7 +5558,7 @@ int func_185(var uParam0, float fParam1)
 			}
 			else
 			{
-				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
+				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
 				if (!VOLUME::_DOES_VOLUME_EXIST((uParam0->f_107[iVar0 /*113*/])->f_101))
 				{
 				}
@@ -9990,7 +9990,7 @@ int func_342(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -10025,7 +10025,7 @@ int func_343(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

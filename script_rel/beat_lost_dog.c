@@ -4634,7 +4634,7 @@ int func_123()
 void func_124()
 {
 	func_358(&bLocal_519, vLocal_469, 0f, 0f, 0f, 8f, 8f, 8f, "m_volSafeFeed");
-	bLocal_520 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_469, 0f, 0f, 0f, 2f, 2f, 2f);
+	bLocal_520 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_469, 0f, 0f, 0f, 2f, 2f, 2f);
 }
 
 void func_125()
@@ -16237,7 +16237,7 @@ int func_466(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -16272,7 +16272,7 @@ int func_467(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

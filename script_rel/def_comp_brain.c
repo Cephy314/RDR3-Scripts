@@ -2576,7 +2576,7 @@ void func_55(var uParam0)
 	}
 	else if (bVar1)
 	{
-		uParam0->f_123 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(uParam0->f_5, true, false), 0f, 0f, 0f, 0.2f, 0.2f, 2f);
+		uParam0->f_123 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(uParam0->f_5, true, false), 0f, 0f, 0f, 0.2f, 0.2f, 2f);
 		if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_123))
 		{
 			PED::_0x7C00CFC48A782DC0(uParam0->f_123, uParam0->f_5, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);

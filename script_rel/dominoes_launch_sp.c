@@ -1363,7 +1363,7 @@ void func_2(var uParam0, var uParam1)
 	POPULATION::_0xB56D41A694E42E86(uParam0->f_19, 266208, 0, 0, -1, -1, 12);
 	if (func_10(uParam0->f_2))
 	{
-		uParam0->f_21 = VOLUME::_0x0EB78C2B156635B1(-432403087, uParam1->f_3, 0f, 0f, 0f, 4f, 4f, 4f);
+		uParam0->f_21 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), uParam1->f_3, 0f, 0f, 0f, 4f, 4f, 4f);
 		VOLUME::_0xBE551C2CC421185D(uParam0->f_21, 1);
 		VOLUME::_0x5B23DFF8E0948BB2(uParam0->f_21, 0);
 	}

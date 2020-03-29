@@ -4006,7 +4006,7 @@ void func_106(var uParam0)
 
 	if (!VOLUME::_DOES_VOLUME_EXIST(uParam0->f_152))
 	{
-		uParam0->f_152 = VOLUME::_0x0EB78C2B156635B1(665633627, 0f, 0f, 0f, 0f, 0f, 0f, 1.85f, 1.85f, 2f);
+		uParam0->f_152 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 0f, 0f, 0f, 0f, 0f, 0f, 1.85f, 1.85f, 2f);
 	}
 	switch (uParam0->f_127)
 	{
@@ -7446,294 +7446,294 @@ struct<11> func_241(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 1407.135f, -1373.595f, 80.78f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 1:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 1358.015f, -1369.316f, 78.3282f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 2:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 1358.015f, -1369.316f, 78.3282f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 3:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -1826.825f, -424.025f, 159.689f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 4:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1826.825f, -424.025f, 159.689f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 5:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -1826.825f, -424.025f, 159.689f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 6:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -272.9171f, 633.0108f, 112.46f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 7:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -272.9171f, 633.0108f, 112.46f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 8:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -272.9171f, 633.0108f, 112.46f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 15:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 2590.084f, -1348.206f, 45.193f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 90f, 90f, 90f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 16:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2563.835f, -1378.423f, 45.1925f };
 			Var0.f_4 = { 0f, 0f, 346.5068f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 17:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 2563.835f, -1378.423f, 45.1925f };
 			Var0.f_4 = { 0f, 0f, 346.5068f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 9:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -1988.987f, -1637.129f, 116.1275f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 10:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1988.987f, -1637.129f, 116.1275f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 11:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -1988.987f, -1637.129f, 116.1275f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 12:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -799.974f, -1330.227f, 42.6291f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 80f, 80f, 80f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 13:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -773.2449f, -1329.082f, 42.6291f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 14:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -773.2449f, -1329.082f, 42.6291f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 18:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -1408.907f, -2314.77f, 42.1056f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 19:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1408.907f, -2314.77f, 42.1056f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 20:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -1408.907f, -2314.77f, 42.1056f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 21:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -2350.174f, -2392.17f, 61.172f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 70f, 70f, 70f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 22:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -2378.475f, -2378.621f, 61.1724f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 23:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2378.475f, -2378.621f, 61.1724f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 24:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -3674.969f, -2619.971f, -14.8162f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 25:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -3674.969f, -2619.971f, -14.8162f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 26:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -3674.969f, -2619.971f, -14.8162f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 27:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -2336.584f, -1264.266f, 147.062f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 28:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -2338.21f, -1271.362f, 147.062f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 29:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2338.21f, -1271.362f, 147.062f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 30:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 1295.802f, -200.3015f, 99.0642f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 31:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 1295.802f, -200.3015f, 99.0642f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 32:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 1295.802f, -200.3015f, 99.0642f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 33:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { 2420.433f, 1020.558f, 87.236f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 110f, 110f, 110f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 34:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { 2428.864f, 1015.729f, 85.6131f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 35:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { 2428.864f, 1015.729f, 85.6131f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 36:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -1565.447f, -2695.09f, 64.7772f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 60f, 60f, 60f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 37:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -1565.447f, -2695.09f, 64.7772f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 38:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -1565.447f, -2695.09f, 64.7772f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };
 			Var0.f_10 = "GAVINStayAway";
 			break;
 		case 39:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -3158.572f, -3010.584f, 3.689f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 100f, 100f, 100f };
 			Var0.f_10 = "GAVINRandomEventBlock";
 			break;
 		case 40:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -3157.477f, -2981.991f, 4.6224f };
 			Var0.f_4 = { 0f, 0f, 48.00007f };
 			Var0.f_7 = { fVar11, fVar11, 10f };
 			Var0.f_10 = "GAVINTrigger";
 			break;
 		case 41:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -3157.477f, -2981.991f, 4.6224f };
 			Var0.f_4 = { 0f, 0f, 45.48975f };
 			Var0.f_7 = { 3f, 3f, 10f };

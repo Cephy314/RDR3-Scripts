@@ -1701,9 +1701,9 @@ void func_37()
 			ANIMSCENE::SET_ANIM_SCENE_BOOL(iLocal_50, "FLAG_LOOP", false, false);
 			ANIMSCENE::_0xDF7B5144E25CD3FE(iLocal_50, func_111(iLocal_214));
 			ANIMSCENE::_0xDF7B5144E25CD3FE(iLocal_50, func_150(iLocal_214));
-			bLocal_205 = VOLUME::_0x0EB78C2B156635B1(665633627, 0f, 0f, 0f, 0f, 0f, 0f, 2f, 2f, 2f);
+			bLocal_205 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 0f, 0f, 0f, 0f, 0f, 0f, 2f, 2f, 2f);
 			PED::_0x7C00CFC48A782DC0(bLocal_205, &(uLocal_178[0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
-			bLocal_206 = VOLUME::_0x0EB78C2B156635B1(665633627, 0f, 0f, 0f, 0f, 0f, 0f, 2f, 2f, 2f);
+			bLocal_206 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 0f, 0f, 0f, 0f, 0f, 0f, 2f, 2f, 2f);
 			PED::_0x7C00CFC48A782DC0(bLocal_206, &(uLocal_178[1]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 			break;
 	}
@@ -16323,7 +16323,7 @@ void func_483(var uParam0, int iParam1, int iParam2)
 	vVar0 = { ENTITY::GET_ENTITY_COORDS(iParam1, true, false) };
 	vVar3 = { ENTITY::GET_ENTITY_COORDS(iParam2, true, false) };
 	vVar6 = { func_733(vVar0, vVar3) };
-	uParam0->f_25 = VOLUME::_0x0EB78C2B156635B1(665633627, vVar6, 0f, 0f, 0f, 0.5f, 0.5f, 1f);
+	uParam0->f_25 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vVar6, 0f, 0f, 0f, 0.5f, 0.5f, 1f);
 }
 
 int func_484(float fParam0, float fParam1, float fParam2)
@@ -16863,7 +16863,7 @@ int func_514(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -16898,7 +16898,7 @@ int func_515(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

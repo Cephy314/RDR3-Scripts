@@ -33885,7 +33885,7 @@ int func_735(var uParam0)
 	bLocal_303 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2366.906f, 1337.206f, 106.3234f, 0f, 0f, -60.86781f, 10.70526f, 10.88732f, 3.585149f, "m_volAvoidPeds");
 	bLocal_304 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2355.68f, 1362.047f, 106.2445f, 0f, 0f, 37.00001f, 19f, 19f, 5f, "m_volPlayerOnHorseInCamp");
 	bLocal_328 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(2891.173f, 345.6825f, 44.13707f, 0f, 0f, 5f, 9f, 14f, 15f, "m_volDeletePedsMCS1");
-	iLocal_324[0] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2888.694f, 347.052f, 40.6381f, 0f, 0f, 18f, 6f, 7f, 6f);
+	iLocal_324[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2888.694f, 347.052f, 40.6381f, 0f, 0f, 18f, 6f, 7f, 6f);
 	POPULATION::_0xB56D41A694E42E86(bLocal_303, 0, 0, 0, -1, -1, 0);
 	iVar0 = 0;
 	while (iVar0 <= 3)
@@ -55917,9 +55917,9 @@ int func_1320(var uParam0)
 			if (ANIMSCENE::_0xCBFC7725DE6CE2E0(&(uLocal_256[13]), 0))
 			{
 				ANIMSCENE::SET_ANIM_SCENE_BOOL(&(uLocal_256[10]), "b_pre_leadin", true, false);
-				iLocal_324[0] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(iLocal_163[1]), true, false), 0f, 0f, 0f, 0.85f, 0.85f, 1.2f);
+				iLocal_324[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(iLocal_163[1]), true, false), 0f, 0f, 0f, 0.85f, 0.85f, 1.2f);
 				PED::_0x7C00CFC48A782DC0(&(iLocal_324[0]), &(iLocal_163[1]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
-				iLocal_324[1] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(iLocal_163[0]), true, false), 0f, 0f, 0f, 0.85f, 0.85f, 1.2f);
+				iLocal_324[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(iLocal_163[0]), true, false), 0f, 0f, 0f, 0.85f, 0.85f, 1.2f);
 				PED::_0x7C00CFC48A782DC0(&(iLocal_324[1]), &(iLocal_163[0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 				iLocal_339++;
 			}
@@ -60802,7 +60802,7 @@ void func_1493(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1970(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

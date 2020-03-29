@@ -36026,7 +36026,7 @@ int func_781(var uParam0)
 				PLAYER::_0xC67A4910425F11F1(PLAYER::PLAYER_ID(), 0);
 				func_177(&iLocal_71, 2048);
 				PED::SET_PED_CONFIG_FLAG(&(Local_171[1 /*14*/]), 222, true);
-				iLocal_1229[5] = VOLUME::_0x0EB78C2B156635B1(665633627, -1795.976f, -374.7044f, 160.499f, 0f, 0f, 0f, 2.717364f, 2.586352f, 2.121381f);
+				iLocal_1229[5] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1795.976f, -374.7044f, 160.499f, 0f, 0f, 0f, 2.717364f, 2.586352f, 2.121381f);
 				TASK::TASK_GRAPPLE(Global_35, &(Local_171[1 /*14*/]), joaat("AR_GRAPPLE_DRAG_FRONT_ON_ASS"), 0, 1f, 0, 0);
 				PED::SET_PED_CONFIG_FLAG(&(Local_171[1 /*14*/]), 301, true);
 				func_1308(uParam0, 10);
@@ -36144,7 +36144,7 @@ int func_781(var uParam0)
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SPRINT"), false);
 			if (ANIMSCENE::_0x005E6F28DD7ED58D(&(iLocal_72[8]), "JOHN") && !VOLUME::_DOES_VOLUME_EXIST(&(iLocal_1229[3])))
 			{
-				iLocal_1229[3] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_171[1 /*14*/]), true, false), 0f, 0f, 0f, 0.9f, 0.9f, 1f);
+				iLocal_1229[3] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_171[1 /*14*/]), true, false), 0f, 0f, 0f, 0.9f, 0.9f, 1f);
 				PED::_0x7C00CFC48A782DC0(&(iLocal_1229[3]), &(Local_171[1 /*14*/]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 			}
 			if (ANIMSCENE::_0x8D81E7824B7753F7(&(iLocal_72[8]), "s_Pos1_Frantic_Loop", 1))
@@ -36235,7 +36235,7 @@ bool func_784(var uParam0)
 
 bool func_785(var uParam0)
 {
-	iLocal_1229[4] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -1807.673f, -330.6966f, 167.1467f, 0f, 0f, -11.11353f, 1.909117f, 3.229272f, 4.652232f);
+	iLocal_1229[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -1807.673f, -330.6966f, 167.1467f, 0f, 0f, -11.11353f, 1.909117f, 3.229272f, 4.652232f);
 	if (ENTITY::DOES_ENTITY_EXIST(&(Local_171[1 /*14*/])) && !ENTITY::IS_ENTITY_DEAD(&(Local_171[1 /*14*/])))
 	{
 		PED::SET_PED_CONFIG_FLAG(&(Local_171[1 /*14*/]), 178, true);
@@ -36909,7 +36909,7 @@ int func_801(var uParam0)
 				func_451(uParam0, &(Local_111[0 /*14*/]), 128);
 				(Local_111[1 /*14*/])->f_2 = 6;
 				func_133(uParam0, 1);
-				iLocal_1229[6] = VOLUME::_0x0EB78C2B156635B1(665633627, -1549.208f, 1056.463f, 224.5929f, 0f, 0f, 0f, 1.029042f, 1.072622f, 1f);
+				iLocal_1229[6] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1549.208f, 1056.463f, 224.5929f, 0f, 0f, 0f, 1.029042f, 1.072622f, 1f);
 				if (AUDIO::_0x1ECC76792F661CF5("FIN2_JOHN_SNPR"))
 				{
 					AUDIO::STOP_SCRIPTED_CONVERSATION("FIN2_JOHN_SNPR", !CAM::_0x1204EB53A5FBC63D(), false);
@@ -54110,7 +54110,7 @@ void func_1316(var uParam0)
 								ANIMSCENE::SET_ANIM_SCENE_ENTITY(&(iLocal_72[2]), "Cleet", bVar1, 0);
 								ANIMSCENE::SET_ANIM_SCENE_ENTITY(&(iLocal_72[2]), "SADIE", &(Local_111[1 /*14*/]), 0);
 								ANIMSCENE::SET_ANIM_SCENE_ENTITY(&(iLocal_72[2]), "JOHN", Global_35, 0);
-								iLocal_1229[7] = VOLUME::_0x0EB78C2B156635B1(665633627, -1795.104f, -358.5609f, 162.7938f, 0f, 0f, 0f, 0.970122f, 1.005036f, 1f);
+								iLocal_1229[7] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1795.104f, -358.5609f, 162.7938f, 0f, 0f, 0f, 0.970122f, 1.005036f, 1f);
 								ANIMSCENE::START_ANIM_SCENE(&(iLocal_72[2]));
 								PED::_0xF7EA250B9A919E03(joaat("INTIMIDATED_ON_ASS"), bVar1);
 								(Local_171[iVar0 /*14*/])->f_2++;
@@ -55105,7 +55105,7 @@ void func_1333(var uParam0)
 						case 0:
 							if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_1229[3])))
 							{
-								iLocal_1229[3] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(bVar1, true, false), 0f, 0f, 0f, 0.9f, 0.9f, 1f);
+								iLocal_1229[3] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(bVar1, true, false), 0f, 0f, 0f, 0.9f, 0.9f, 1f);
 								PED::_0x7C00CFC48A782DC0(&(iLocal_1229[3]), bVar1, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 							}
 							func_219(&((Local_171[iVar0 /*14*/])->f_4));
@@ -64999,7 +64999,7 @@ void func_1579(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2093(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

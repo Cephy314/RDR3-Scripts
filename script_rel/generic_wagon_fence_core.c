@@ -760,7 +760,7 @@ void func_28(int iParam0)
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(iParam0->f_168))
 	{
-		iParam0->f_168 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1407.474f, 273.397f, 90f, 0f, 0f, 16f, 14f, 14f, 5f);
+		iParam0->f_168 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1407.474f, 273.397f, 90f, 0f, 0f, 16f, 14f, 14f, 5f);
 		VOLUME::_0x5B23DFF8E0948BB2(iParam0->f_168, 0);
 		VOLUME::_0xBE551C2CC421185D(iParam0->f_168, 1);
 	}

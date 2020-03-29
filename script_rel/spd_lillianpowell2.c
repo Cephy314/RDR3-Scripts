@@ -620,7 +620,7 @@ void __EntryFunction__()
 								func_69(&bLocal_253, &uLocal_273, joaat("EVENT_SHOCKING_BEAT_INSIGNIFICANT_NEW"), 20f, -1082130432 /* Float: -1f */);
 								func_36(&uLocal_17, bLocal_253, "LILLIAN_POWELL", 0);
 								ENTITY::_SET_ENTITY_COORDS_AND_HEADING(bLocal_253, 2636.429f, -1229.537f, 52.3795f, 358.7895f, true, false, true);
-								bLocal_265 = VOLUME::_0x0EB78C2B156635B1(665633627, 2636.429f, -1229.537f, 52.3795f, 0f, 0f, 0f, 1f, 1f, 1.3f);
+								bLocal_265 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2636.429f, -1229.537f, 52.3795f, 0f, 0f, 0f, 1f, 1f, 1.3f);
 								PED::_0x7C00CFC48A782DC0(bLocal_265, bLocal_253, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 								func_70();
 								PLAYER::_0x3946FC742AC305CD(PLAYER::PLAYER_ID(), bLocal_253, "SPECIAL_PED_10_180_SMALL_NO_LOCK", 0f, 0f, 0f, false, "LillianBubble");
@@ -5396,7 +5396,7 @@ int func_202(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -5431,7 +5431,7 @@ int func_203(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

@@ -3449,7 +3449,7 @@ int func_47()
 					ANIMSCENE::SET_ANIM_SCENE_ENTITY(Local_635.f_2, "Drunk", &(iLocal_742[2]), 0);
 					ANIMSCENE::SET_ANIM_SCENE_ENTITY(Local_635.f_2, "Bills", (Local_643[2 /*12*/])->f_8, 0);
 					ANIMSCENE::START_ANIM_SCENE(Local_635.f_2);
-					bLocal_1478 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -322.772f, 759.238f, 117.436f, 0f, 0f, 10f, 2.33f, 0.868f, 5f);
+					bLocal_1478 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -322.772f, 759.238f, 117.436f, 0f, 0f, 10f, 2.33f, 0.868f, 5f);
 					TASK::SET_SCENARIO_TYPE_ENABLED("RANSACK_ATTACHED_P_DRESSER03X", true);
 					TASK::SET_SCENARIO_TYPE_ENABLED("RANSACK_ATTACHED_DD_234", true);
 					TASK::SET_SCENARIO_TYPE_ENABLED("RANSACK_ATTACHED_P_DRESSERVAL01X", true);
@@ -3519,7 +3519,7 @@ int func_47()
 				{
 					vLocal_1320 = { ENTITY::GET_ENTITY_COORDS(&(iLocal_742[0]), true, false) };
 					fLocal_1323 = MISC::GET_DISTANCE_BETWEEN_COORDS(Global_36, vLocal_1320, true);
-					bLocal_1474 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vLocal_901, vLocal_904, vLocal_907);
+					bLocal_1474 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vLocal_901, vLocal_904, vLocal_907);
 					bLocal_1476 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vLocal_901, vLocal_904, vLocal_907, "NavMeshBlocker");
 					PATHFIND::_0x19C7567D2F2287D6(bLocal_1476, 7);
 					if (MAP::DOES_BLIP_EXIST(&(uLocal_747[0])))
@@ -21044,7 +21044,7 @@ int func_623(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -21079,7 +21079,7 @@ int func_624(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

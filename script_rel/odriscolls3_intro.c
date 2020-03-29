@@ -1358,7 +1358,7 @@ int func_41(int iParam0)
 			}
 			break;
 		case 8:
-			bLocal_113 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(iLocal_93[0]), true, false), 0f, 0f, 0f, 0.5f, 0.5f, 2f);
+			bLocal_113 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(iLocal_93[0]), true, false), 0f, 0f, 0f, 0.5f, 0.5f, 2f);
 			func_149(9);
 			break;
 		case 9:
@@ -12823,7 +12823,7 @@ void func_539(var uParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

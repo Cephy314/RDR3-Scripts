@@ -1158,7 +1158,7 @@ int func_29(int iParam0)
 	func_146(16);
 	bLocal_35 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(655.409f, -1252.448f, 43.7746f, 0f, 0f, -54.35969f, 4f, 4f, 4f, "m_volBlocking");
 	func_147(iParam0, bLocal_35);
-	bLocal_36 = VOLUME::_0x0EB78C2B156635B1(665633627, 655.9897f, -1252.158f, 43.67601f, 0f, 0f, 0f, 1.2f, 1.2f, 1.2f);
+	bLocal_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 655.9897f, -1252.158f, 43.67601f, 0f, 0f, 0f, 1.2f, 1.2f, 1.2f);
 	if (ANIMSCENE::_0x25557E324489393C(iLocal_29))
 	{
 		ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_29, "ARTHUR", Global_35, 0);

@@ -3258,7 +3258,7 @@ struct<12> func_107(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 1462.616f, 811.213f, 99.923f };
 			Var0.f_5 = { 0f, 0f, 45f };
 			Var0.f_8 = { 6.7f, 12.2f, 8f };

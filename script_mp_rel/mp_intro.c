@@ -15709,7 +15709,7 @@ int func_239(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, 
 	Var38.f_2 = -1;
 	Var38.f_3 = -1;
 	Var38.f_4 = -1;
-	Var50 = -1612834106;
+	Var50 = joaat("VOLBOX");
 	Var50.f_1 = -1;
 	Var50.f_12 = 1;
 	Var50.f_13 = 1;
@@ -16665,8 +16665,8 @@ void func_268(var uParam0, var uParam1)
 				{
 					if (uParam1->f_1348.f_3 == 1)
 					{
-						uParam1->f_4572.f_35.f_44 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -5240.378f, -3851.364f, -3.292692f, 0f, 0f, 0f, 1f, 1f, 1.731476f);
-						uParam1->f_4572.f_35.f_45 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -5241.665f, -3850.436f, -3.292692f, 0f, 0f, 15.44693f, 1f, 1f, 1.731476f);
+						uParam1->f_4572.f_35.f_44 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -5240.378f, -3851.364f, -3.292692f, 0f, 0f, 0f, 1f, 1f, 1.731476f);
+						uParam1->f_4572.f_35.f_45 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -5241.665f, -3850.436f, -3.292692f, 0f, 0f, 15.44693f, 1f, 1f, 1.731476f);
 					}
 					func_112(uParam1, 44);
 					func_420(uParam1, 3);
@@ -17343,7 +17343,7 @@ void func_269(var uParam0, var uParam1, var uParam2)
 	{
 		return;
 	}
-	Var0 = -1612834106;
+	Var0 = joaat("VOLBOX");
 	Var0.f_1 = -1;
 	Var0.f_12 = 1;
 	Var0.f_13 = 1;
@@ -17473,7 +17473,7 @@ void func_270(var uParam0, var uParam1)
 			break;
 		case 23117795:
 			func_761(uParam0, uParam1, uParam1->f_1348.f_34, &Var12);
-			Var12.f_6.f_9 = -432403087;
+			Var12.f_6.f_9 = joaat("VOLSPHERE");
 			Var12.f_6.f_6 = { func_207(uParam1, 1894780099, uParam1->f_1348.f_34, 0) };
 			fVar1 = func_208(uParam1, 914581656, uParam1->f_1348.f_34, 0);
 			if (fVar1 >= 1f)
@@ -17481,7 +17481,7 @@ void func_270(var uParam0, var uParam1)
 				Var12.f_16 = 1;
 				Var12.f_6 = { fVar1, fVar1, fVar1 };
 			}
-			Var12.f_17.f_9 = -432403087;
+			Var12.f_17.f_9 = joaat("VOLSPHERE");
 			Var12.f_17.f_6 = { Var12.f_6.f_6 };
 			fVar1 = func_208(uParam1, 256145798, uParam1->f_1348.f_34, 0);
 			Var12.f_17 = { fVar1, fVar1, fVar1 };
@@ -22582,7 +22582,7 @@ void func_460(var uParam0, var uParam1, int iParam2)
 
 var func_461(int iParam0, int iParam1)
 {
-	return func_986(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_986(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_462(var uParam0, int iParam1)
@@ -27637,7 +27637,7 @@ void func_655(bool bParam0, bool bParam1)
 		Global_1099294->f_516.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1099294->f_516.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1099294->f_516.f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-		Global_1099294->f_516.f_17.f_9 = -432403087;
+		Global_1099294->f_516.f_17.f_9 = joaat("VOLSPHERE");
 		func_1145(&(Global_1099294->f_555));
 		Global_1099294->f_555.f_6 = { Global_1099294->f_516.f_17.f_6 };
 		Global_1099294->f_555 = Global_1099294->f_516;
@@ -36593,13 +36593,13 @@ var func_986(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, int
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				iVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1467());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				iVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1467());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				iVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_1467());
 				break;
 		}
@@ -37358,15 +37358,15 @@ int func_1015(struct<30> Param0, struct<9> Param30, int iParam39, int iParam40, 
 {
 	if (func_222(255))
 	{
-		if ((Param0.f_17.f_9 != -1612834106 && Param0.f_17.f_9 != -432403087) && Param0.f_17.f_9 != 665633627)
+		if ((Param0.f_17.f_9 != joaat("VOLBOX") && Param0.f_17.f_9 != joaat("VOLSPHERE")) && Param0.f_17.f_9 != joaat("VOLCYLINDER"))
 		{
-			Param0.f_17.f_9 = -432403087;
+			Param0.f_17.f_9 = joaat("VOLSPHERE");
 		}
 		if (Param0.f_16)
 		{
-			if ((Param0.f_6.f_9 != -1612834106 && Param0.f_6.f_9 != -432403087) && Param0.f_6.f_9 != 665633627)
+			if ((Param0.f_6.f_9 != joaat("VOLBOX") && Param0.f_6.f_9 != joaat("VOLSPHERE")) && Param0.f_6.f_9 != joaat("VOLCYLINDER"))
 			{
-				Param0.f_6.f_9 = -432403087;
+				Param0.f_6.f_9 = joaat("VOLSPHERE");
 			}
 		}
 		func_1144(&(Global_1099294->f_516));
@@ -37389,12 +37389,12 @@ void func_1016(vector3 vParam0, var uParam3)
 	uParam3->f_17.f_6 = { vParam0 };
 	uParam3->f_17.f_3 = { 0f, 0f, 0f };
 	uParam3->f_17 = { Global_1901929->f_44.f_1, Global_1901929->f_44.f_1, Global_1901929->f_44.f_1 };
-	uParam3->f_17.f_9 = -432403087;
+	uParam3->f_17.f_9 = joaat("VOLSPHERE");
 	uParam3->f_16 = 1;
 	uParam3->f_6.f_6 = { vParam0 };
 	uParam3->f_6.f_3 = { 0f, 0f, 0f };
 	uParam3->f_6 = { Global_1901929->f_44, Global_1901929->f_44, Global_1901929->f_44 };
-	uParam3->f_6.f_9 = -432403087;
+	uParam3->f_6.f_9 = joaat("VOLSPHERE");
 	if (Global_1572887->f_6)
 	{
 		func_1490(uParam3);
@@ -101075,7 +101075,7 @@ int func_3235(int iParam0)
 		case 3:
 			return joaat("HEADER");
 		case 4:
-			return 1461677252;
+			return joaat("SHARD");
 		default:
 			break;
 	}

@@ -3146,7 +3146,7 @@ int func_73(var uParam0)
 	iLocal_27 = func_151(uParam0, joaat("P_BENCH_LOG07X"), -1.372f, 1.604f, -0.0733f, 0, 1, 0, 1);
 	iLocal_25 = func_151(uParam0, joaat("S_CRATESEAT03X"), -1.167f, -1.167f, -0.023f, 0, 1, 0, 1);
 	iLocal_26 = func_151(uParam0, joaat("P_CHAIR_CRATE02X"), -1.859f, -0.832f, -0.021f, 0, 1, 0, 1);
-	func_152(uParam0, 0f, 0f, 0f, 0f, 3f, 3f, 3f, 665633627, -1, 1, 1, 0);
+	func_152(uParam0, 0f, 0f, 0f, 0f, 3f, 3f, 3f, joaat("VOLCYLINDER"), -1, 1, 1, 0);
 	iVar0 = func_20(uParam0);
 	if (iVar0 >= 343 && iVar0 <= 384)
 	{
@@ -3157,7 +3157,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@abigail_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@abigail_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFAR1AU");
@@ -3189,7 +3189,7 @@ int func_73(var uParam0)
 				}
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				func_151(uParam0, joaat("P_CIGARETTE_CS02X"), 0f, 0f, 0f, "CIG", 0, 1, 1);
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@abigail_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@abigail_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFA2AUD");
@@ -3226,8 +3226,8 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
-				func_152(uParam0, 1.19761f, -1.86883f, -0.0285263f, -145.236f, 1f, 1f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
+				func_152(uParam0, 1.19761f, -1.86883f, -0.0285263f, -145.236f, 1f, 1f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FBW1AUD");
@@ -3252,7 +3252,7 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				iLocal_31 = func_151(uParam0, joaat("P_STICKFIREPOKER01X"), 0f, 0f, 0f, "STICK", 0, 0, 1);
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFBW2AU");
@@ -3285,7 +3285,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_3@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@bill_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFBW3AU");
@@ -3436,7 +3436,7 @@ int func_73(var uParam0)
 				iLocal_16 = func_153(uParam0, 8, 0);
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_micah_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_micah_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFBNMAU");
@@ -3469,7 +3469,7 @@ int func_73(var uParam0)
 					iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				}
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@charles_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@charles_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFCH1AU");
@@ -3511,7 +3511,7 @@ int func_73(var uParam0)
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 					iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				}
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				if (!func_161(4))
 				{
 					func_155(uParam0, "script@vignette@camp_fire@dutch_1@base", 1, 1, 0, 0);
@@ -3619,7 +3619,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.847385f, 2.16423f, 0.479637f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@dutch_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@dutch_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFDV3AU");
@@ -3650,7 +3650,7 @@ int func_73(var uParam0)
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				}
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "p_bottlebeer01x", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_dutch_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@bill_and_dutch_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFBD1AU");
@@ -3680,7 +3680,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_153(uParam0, 14, 0);
 				iLocal_18 = func_153(uParam0, 13, 0);
 				func_151(uParam0, joaat("P_STICKFIREPOKER01X"), 0f, 0f, 0f, "STICK", 0, 0, 1);
-				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@cfdtcjmbll_1@main_base", 65, 0, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@cfdtcjmbll_1@main_action", 64, 0, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@cfdtcjmbll_1@jack_base", 65, 0, 0, 0);
@@ -3700,7 +3700,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FHM1AUD");
@@ -3785,7 +3785,7 @@ int func_73(var uParam0)
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 					iLocal_21 = func_154(uParam0, 0, "GEN_MALE_B");
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_3@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_3@action", 0, 0, 1, 0);
 				func_158(uParam0, iLocal_14, 3, joaat("PROP_CAMP_FIRE_SEATED"), "PROP_HUMAN_CAMP_FIRE_SEAT_BOX_MALE_C", iLocal_26, 0);
@@ -3814,7 +3814,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_151(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_4@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_4@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHM4AU");
@@ -3881,7 +3881,7 @@ int func_73(var uParam0)
 				{
 					iLocal_28 = func_151(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				if (!func_161(4))
 				{
 					func_155(uParam0, "script@vignette@camp_fire@hosea_6@base", 1, 1, 0, 0);
@@ -3927,8 +3927,8 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, 1.16f, -1.82f, 0.9649f, -147.0107f, 1.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, 1.16f, -1.82f, 0.9649f, -147.0107f, 1.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_7@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_7@action", 0, 0, 1, 0);
 				func_156(uParam0, "FHM7AUD");
@@ -3958,7 +3958,7 @@ int func_73(var uParam0)
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 					iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_8@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@hosea_8@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHM8AU");
@@ -3980,7 +3980,7 @@ int func_73(var uParam0)
 				iLocal_14 = func_153(uParam0, 5, 0);
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_9@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_9@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHM9AU");
@@ -4002,7 +4002,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@strauss_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@strauss_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFSH1AU");
@@ -4032,7 +4032,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_and_uncle_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_and_uncle_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFHUSAU");
@@ -4060,7 +4060,7 @@ int func_73(var uParam0)
 				{
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				if (!func_161(15))
 				{
 					func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_2@base", 1, 1, 0, 0);
@@ -4101,7 +4101,7 @@ int func_73(var uParam0)
 				{
 					iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_3@action", 0, 0, 1, 0);
 				iLocal_38 = func_155(uParam0, "script@vignette@camp_fire@hosea_and_Uncle_3@player_action", 0, 0, 0, 0);
@@ -4116,7 +4116,7 @@ int func_73(var uParam0)
 				func_160(uParam0, iLocal_15, "START_SEATED_MALE_A_TO_SEAT_BENCH_MALE_B");
 				func_158(uParam0, iLocal_17, 3, joaat("PROP_CAMP_FIRE_SEATED"), "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0);
 				func_159(uParam0, iLocal_17, 2, joaat("PROP_CAMP_FIRE_SEATED"), "PROP_CAMP_FIRE_SEAT_BENCH_MALE_B", iLocal_27, 0, -1073741824 /* Float: -2f */, 1065353216 /* Float: 1f */, 1);
-				iLocal_40 = func_178(uParam0, 0.025f, 0.225f, 0.475f, 0f, 0f, -44f, 7f, 8.5475f, 3f, "Alt Trigger", -1612834106);
+				iLocal_40 = func_178(uParam0, 0.025f, 0.225f, 0.475f, 0f, 0f, -44f, 7f, 8.5475f, 3f, "Alt Trigger", joaat("VOLBOX"));
 				if (func_161(15))
 				{
 					func_163(uParam0, iLocal_14, -1f);
@@ -4129,7 +4129,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE1AUD");
@@ -4154,7 +4154,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE");
 				iLocal_18 = func_154(uParam0, 0, "");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_2@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE2AUD");
@@ -4180,7 +4180,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_3@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@javier_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJE3AUD");
@@ -4210,7 +4210,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				vVar1 = { func_179(uParam0, 0.9875f, -0.525f, 0.8875f) };
 				iLocal_41 = VOLUME::_CREATE_VOLUME_CYLINDER(vVar1, uParam0->f_26 + Vector(0f, 0f, 0f), 3f, 3f, 3f);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BEER", 0, 0, 1);
 				iLocal_30 = func_151(uParam0, joaat("P_CIGARETTE_CS01X"), 0f, 0f, 0f, "p_cigarette_cs01x", 0, 1, 1);
 				func_155(uParam0, "script@vignette@camp_fire@javier_4@base", 1, 1, 0, 0);
@@ -4244,7 +4244,7 @@ int func_73(var uParam0)
 					iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				}
 				iLocal_31 = func_151(uParam0, joaat("P_STICKFIREPOKER01X"), 0f, 0f, 0f, "p_stickFirePoker01x", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				if (!func_161(4))
 				{
 					func_155(uParam0, "script@vignette@camp_fire@javier_5@base", 1, 1, 0, 0);
@@ -4289,7 +4289,7 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				iLocal_23 = func_154(uParam0, 1, "GEN_MALE_D");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@john_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJM1AUD");
@@ -4326,7 +4326,7 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "KEY_BOTTLE", 0, 0, 1);
 				iLocal_31 = func_151(uParam0, joaat("P_STICKFIREPOKER01X"), 0f, 0f, 0f, "KEY_STICK", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@john_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJM2AUD");
@@ -4352,7 +4352,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@john_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJM3AUD");
@@ -4382,7 +4382,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "KEY_BOTTLE", 0, 1, 1);
 				func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "GEN_BOTTLE", 0, 1, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@john_4@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_4@action", 0, 0, 1, 0);
 				func_156(uParam0, "FJM4AUD");
@@ -4413,7 +4413,7 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				iLocal_23 = func_154(uParam0, 1, "GEN_MALE_D");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "FJM5AUD");
 				func_155(uParam0, "script@vignette@camp_fire@john_5@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@john_5@action", 0, 0, 1, 0);
@@ -4449,7 +4449,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "FMJ6AU");
 				func_155(uParam0, "script@vignette@camp_fire@john_6@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@john_6@action", 0, 0, 1, 0);
@@ -4565,7 +4565,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, 1.19761f, -1.86883f, -0.0285263f, -145.236f, 1f, 1f, 3f, -1612834106, joaat("APMS_COMP_MICAH"), 1, 1, 1);
+				func_152(uParam0, 1.19761f, -1.86883f, -0.0285263f, -145.236f, 1f, 1f, 3f, joaat("VOLBOX"), joaat("APMS_COMP_MICAH"), 1, 1, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMB1AU");
@@ -4588,7 +4588,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@micah_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMB2AU");
@@ -4607,7 +4607,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFMB3AU");
 				func_155(uParam0, "script@vignette@camp_fire@micah_3@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_3@action", 0, 0, 1, 0);
@@ -4639,7 +4639,7 @@ int func_73(var uParam0)
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 					func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFMB4AU");
 				if (!func_161(15))
 				{
@@ -4682,7 +4682,7 @@ int func_73(var uParam0)
 				iLocal_19 = func_154(uParam0, 0, "KEY_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_151(uParam0, joaat("P_CIGARETTE01X"), 0f, 0f, 0f, "CIGARETTE", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_5@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@micah_5@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMB5AU");
@@ -4704,7 +4704,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				func_151(uParam0, joaat("P_CIGARETTE01X"), 0f, 0f, 0f, "CIGARETTE", 0, 1, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@micah_6@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@micah_6@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMB6AU");
@@ -4783,7 +4783,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@pearson_2@base_intro", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@pearson_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFMP2AU");
@@ -4852,7 +4852,7 @@ int func_73(var uParam0)
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_31 = func_151(uParam0, joaat("P_STICKFIREPOKER01X"), 0f, 0f, 0f, "FIREPOKER", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@swanson_2@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@swanson_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFRS2AU");
@@ -4888,7 +4888,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@swanson_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@swanson_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFRS3AU");
@@ -4958,7 +4958,7 @@ int func_73(var uParam0)
 				iLocal_19 = func_154(uParam0, 0, "KEY_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
 				func_151(uParam0, joaat("P_CIGARTHIN01X"), 0f, 0f, 0f, "CIGAR", 0, 1, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@susan_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@susan_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFSG1AU");
@@ -4979,7 +4979,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@susan_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@susan_2@action", 0, 0, 1, 0);
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "p_bottleJD01x", 0, 0, 1);
@@ -5002,7 +5002,7 @@ int func_73(var uParam0)
 				iLocal_14 = func_153(uParam0, 8, 0);
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@sean_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@sean_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFSN1AU");
@@ -5027,7 +5027,7 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				iLocal_31 = func_151(uParam0, joaat("P_STICKFIREPOKER01X"), 0f, 0f, 0f, "STICK", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@sean_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@sean_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFSN2AU");
@@ -5053,7 +5053,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@sean_3@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@sean_3@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFSN3AU");
@@ -5125,7 +5125,7 @@ int func_73(var uParam0)
 				iLocal_15 = func_153(uParam0, 4, 0);
 				iLocal_17 = func_154(uParam0, 0, "KEYMALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEYMALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFSUNAU");
 				func_155(uParam0, "script@vignette@camp_fire@susan_and_charles_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@susan_and_charles_1@action", 0, 0, 1, 0);
@@ -5166,7 +5166,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_19 = func_154(uParam0, 0, "KEY_MALE_C");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE");
-				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -1.44671f, 1.70399f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@tilly_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@tilly_2@action", 0, 0, 1, 0);
 				func_156(uParam0, "SFTL2AU");
@@ -5197,7 +5197,7 @@ int func_73(var uParam0)
 				iLocal_15 = func_153(uParam0, 4, 0);
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@Trelawny_and_Uncle_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@Trelawny_and_Uncle_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CTNU1AU");
@@ -5214,7 +5214,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_A");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "FUN1AUD");
@@ -5230,7 +5230,7 @@ int func_73(var uParam0)
 				func_157(uParam0, iLocal_20, 2, 1, 0, 0, 0);
 				Jump @38714; //curOff = 32756
 				iLocal_14 = func_153(uParam0, 4, 0);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_18 = func_154(uParam0, 0, "GEN_MALE_B");
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEBEER01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
@@ -5281,7 +5281,7 @@ int func_73(var uParam0)
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALE_B");
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_4@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_4@action", 0, 0, 1, 0);
 				func_156(uParam0, "FUN4AUD");
@@ -5304,7 +5304,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_5@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_5@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFUN5AU");
@@ -5337,7 +5337,7 @@ int func_73(var uParam0)
 					iLocal_20 = func_154(uParam0, 1, "GEN_MALE_A");
 					iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				}
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFUN6AU");
 				if (!func_161(14))
 				{
@@ -5385,7 +5385,7 @@ int func_73(var uParam0)
 				iLocal_20 = func_154(uParam0, 1, "GEN_MALEA");
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALEB");
 				iLocal_28 = func_151(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 0, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFUB1AU");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_1@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_1@action", 0, 0, 1, 0);
@@ -5408,7 +5408,7 @@ int func_73(var uParam0)
 				iLocal_17 = func_154(uParam0, 0, "KeyMale");
 				iLocal_20 = func_154(uParam0, 1, "GenMale_A");
 				iLocal_21 = func_154(uParam0, 1, "GenMale_B");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFUB2AU");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_2@base", 1, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_bill_2@action", 0, 0, 1, 0);
@@ -5442,7 +5442,7 @@ int func_73(var uParam0)
 				iLocal_15 = func_153(uParam0, 7, 0);
 				iLocal_32 = func_151(uParam0, joaat("P_AXE01X"), 0f, 0f, 0f, "AXE", 0, 1, 1);
 				iLocal_33 = func_151(uParam0, joaat("P_SHARPENINGSTONE01X"), 0f, 0f, 0f, "SHARPENINGSTONE", 0, 1, 1);
-				func_152(uParam0, -1.91761f, 1.18077f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -1.91761f, 1.18077f, 0.479637f, -142.01f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_charles_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_charles_1@action", 0, 0, 1, 0);
 				func_156(uParam0, "CFCNUAU");
@@ -5462,7 +5462,7 @@ int func_73(var uParam0)
 				iLocal_15 = func_153(uParam0, 0, 0);
 				iLocal_17 = func_154(uParam0, 0, "KEY_MALEA");
 				iLocal_18 = func_154(uParam0, 0, "KEY_MALEB");
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_dutch_1@base", 65, 1, 0, 0);
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_dutch_1@action", 64, 0, 1, 0);
 				func_156(uParam0, "CFUD1AU");
@@ -5485,7 +5485,7 @@ int func_73(var uParam0)
 				iLocal_21 = func_154(uParam0, 1, "GEN_MALE_B");
 				iLocal_22 = func_154(uParam0, 1, "GEN_MALE_C");
 				func_151(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
-				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, -1612834106, -1, 1, 0, 1);
+				func_152(uParam0, -0.943556f, 1.90609f, 0.964859f, -147.0107f, 2.2f, 1.2f, 3f, joaat("VOLBOX"), -1, 1, 0, 1);
 				func_156(uParam0, "CFUNMAU");
 				func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_1@base", 1, 1, 0, 0);
 				iLocal_39 = func_155(uParam0, "script@vignette@camp_fire@uncle_and_micah_1@action", 0, 0, 1, 0);
@@ -7704,7 +7704,7 @@ void func_184(var uParam0)
 						{
 							if (iVar1 == 0 && !uParam0->f_4)
 							{
-								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(665633627, uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
+								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(joaat("VOLCYLINDER"), uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
 								(uParam0->f_36[iVar1 /*5*/])->f_2 = 1;
 							}
 						else
@@ -8472,7 +8472,7 @@ int func_206(var uParam0, float fParam1)
 			}
 			else
 			{
-				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
+				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
 				if (!VOLUME::_DOES_VOLUME_EXIST((uParam0->f_107[iVar0 /*113*/])->f_101))
 				{
 				}
@@ -14261,7 +14261,7 @@ int func_382(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -14296,7 +14296,7 @@ int func_383(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

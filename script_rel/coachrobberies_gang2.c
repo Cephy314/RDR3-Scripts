@@ -3174,7 +3174,7 @@ void func_45(var uParam0)
 						TASK::ADD_COVER_BLOCKING_AREA(vLocal_247 - Vector(3f, 1f, 1f), vLocal_247 + Vector(3f, 1f, 1f), true, true, true, true);
 						if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_164))
 						{
-							iLocal_164 = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_247, 0f, 0f, 0f, 0.8f, 0.8f, 2f);
+							iLocal_164 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_247, 0f, 0f, 0f, 0.8f, 0.8f, 2f);
 						}
 					}
 					TASK::ADD_COVER_BLOCKING_AREA(vLocal_198 - Vector(3f, 5f, 5f), vLocal_198 + Vector(3f, 5f, 5f), true, true, true, true);

@@ -3103,7 +3103,7 @@ int func_72(var uParam0)
 	iLocal_18 = func_150(uParam0, 7, 0);
 	iLocal_19 = func_150(uParam0, 14, 0);
 	iLocal_20 = func_151(uParam0, joaat("P_WOLFPOOP03X"), 9.191689f, 38.85237f, 1.644012f, "Poop", 0, 0, 1);
-	func_152(uParam0, 8.9325f, 38.97f, 0.2375f, 0f, 2f, 2f, 5f, -1612834106, -1, 1, 1, 1);
+	func_152(uParam0, 8.9325f, 38.97f, 0.2375f, 0f, 2f, 2f, 5f, joaat("VOLBOX"), -1, 1, 1, 1);
 	func_153(uParam0, "script@vignette@beecher@charles_and_jack_1@base", 1, 1, 0, 0);
 	iLocal_14 = func_153(uParam0, "script@vignette@beecher@charles_and_jack_1@action_a", 2, 0, 1, 0);
 	iLocal_15 = func_153(uParam0, "script@vignette@beecher@charles_and_jack_1@action_b", 0, 0, 0, 0);
@@ -4761,7 +4761,7 @@ void func_158(var uParam0)
 						{
 							if (iVar1 == 0 && !uParam0->f_4)
 							{
-								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(665633627, uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
+								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(joaat("VOLCYLINDER"), uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
 								(uParam0->f_36[iVar1 /*5*/])->f_2 = 1;
 							}
 						else
@@ -5494,7 +5494,7 @@ int func_177(var uParam0, float fParam1)
 			}
 			else
 			{
-				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
+				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
 				if (!VOLUME::_DOES_VOLUME_EXIST((uParam0->f_107[iVar0 /*113*/])->f_101))
 				{
 				}
@@ -9064,7 +9064,7 @@ int func_333(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -9099,7 +9099,7 @@ int func_334(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

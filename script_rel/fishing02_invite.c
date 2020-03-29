@@ -4163,21 +4163,21 @@ struct<11> func_129(int iParam0)
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 5f, 5f, 5f };
 			Var0.f_9 = "COMP_ACT_LAUNCH_STAYOUT";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 1:
 			Var0 = { 667.1318f, -1235.329f, 43.638f };
 			Var0.f_3 = { 0f, 0f, 105.13f };
 			Var0.f_6 = { 5f, 5f, 5f };
 			Var0.f_9 = "COMP_ACT_LAUNCH_SCENE_AREA";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 2:
 			Var0 = { 666.8248f, -1235.329f, 43.638f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 1f, 1f, 3f };
 			Var0.f_9 = "COMP_ACT_LAUNCH_ANTI_GRIEF";
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 	}
 	return Var0;
@@ -10829,7 +10829,7 @@ void func_394(var uParam0, var uParam1)
 	{
 		return;
 	}
-	uParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	uParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(uParam1->f_36, 1);
 }
 

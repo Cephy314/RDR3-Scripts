@@ -2406,35 +2406,35 @@ struct<11> func_92(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -321.8417f, 767.3763f, 122.018f };
 			Var0.f_4 = { 0f, 0f, 10.11893f };
 			Var0.f_7 = { 2.12117f, 2.137823f, 2.815422f };
 			Var0.f_10 = "DoorTrigger";
 			break;
 		case 1:
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_1 = { -324.0611f, 767.058f, 118.8502f };
 			Var0.f_4 = { 0f, 0f, 10.18224f };
 			Var0.f_7 = { 15f, 15f, 15f };
 			Var0.f_10 = "RandomEventBlock";
 			break;
 		case 2:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -325.7024f, 765.6274f, 122.3524f };
 			Var0.f_4 = { 0f, 0f, 10.11893f };
 			Var0.f_7 = { 6f, 3.75f, 3.5f };
 			Var0.f_10 = "StayAway";
 			break;
 		case 3:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -325.7f, 765.9f, 122.4884f };
 			Var0.f_4 = { 0f, 0f, 9.999996f };
 			Var0.f_7 = { 6f, 4f, 4f };
 			Var0.f_10 = "StayAway";
 			break;
 		case 4:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -325.0377f, 767.6212f, 115.4908f };
 			Var0.f_4 = { 0f, 0f, 9.999996f };
 			Var0.f_7 = { 8.75f, 18.5f, 17f };

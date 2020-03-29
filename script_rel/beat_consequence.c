@@ -2202,7 +2202,7 @@ int func_48()
 				ANIMSCENE::START_ANIM_SCENE(Local_490);
 				if (iLocal_294 == 1 || iLocal_294 == 2)
 				{
-					iLocal_821 = VOLUME::_0x0EB78C2B156635B1(-1612834106, Local_295.f_51, 0f, 0f, Local_295.f_51.f_3, 2.4f, 1.4f, 6f);
+					iLocal_821 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), Local_295.f_51, 0f, 0f, Local_295.f_51.f_3, 2.4f, 1.4f, 6f);
 					iLocal_587 = 2;
 				}
 			}
@@ -12903,7 +12903,7 @@ int func_367(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -12938,7 +12938,7 @@ int func_368(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

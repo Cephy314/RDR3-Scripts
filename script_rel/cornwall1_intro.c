@@ -1210,7 +1210,7 @@ int func_29(int iParam0)
 	StringCopy(&cVar0, "MultiStart", 64);
 	func_148(iParam0, cVar0);
 	HUD::_TEXT_DATABASE_REQUEST("CRN1AUD");
-	bLocal_123 = VOLUME::_0x0EB78C2B156635B1(665633627, 707.0356f, -1243.136f, 44.9229f, 0f, 0f, 0f, 1.5f, 1.5f, 2f);
+	bLocal_123 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 707.0356f, -1243.136f, 44.9229f, 0f, 0f, 0f, 1.5f, 1.5f, 2f);
 	func_149(Local_29[0 /*17*/], "INTERACT_GREET", 0, joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
 	func_151(&iLocal_47, &Local_29, 0, func_150(53), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 	TASK::TASK_LOOK_AT_ENTITY(&(uLocal_19[0]), Global_35, -1, 0, 51, 0);
@@ -12506,7 +12506,7 @@ void func_544(var uParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

@@ -39954,7 +39954,7 @@ bool func_861(var uParam0)
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_1646[34])))
 	{
-		iLocal_1646[34] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2097.74f, 1723.31f, 140.0218f, 0f, 0f, 0f, 7.598913f, 3.722491f, 3.99534f);
+		iLocal_1646[34] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2097.74f, 1723.31f, 140.0218f, 0f, 0f, 0f, 7.598913f, 3.722491f, 3.99534f);
 	}
 	return uParam0->f_607 == uParam0->f_607;
 }
@@ -41415,7 +41415,7 @@ int func_907(var uParam0)
 			{
 				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_1646[36])))
 				{
-					iLocal_1646[36] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2361.106f, 1384.23f, 105.6983f, 0f, 0f, -7.535239f, 3.491383f, 11.02172f, 4.981583f);
+					iLocal_1646[36] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2361.106f, 1384.23f, 105.6983f, 0f, 0f, -7.535239f, 3.491383f, 11.02172f, 4.981583f);
 				}
 				PED::SET_PED_CAN_RAGDOLL(Global_35, false);
 				PED::SET_RAGDOLL_BLOCKING_FLAGS(Global_35, 58064);
@@ -74106,7 +74106,7 @@ void func_1802(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2388(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

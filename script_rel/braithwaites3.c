@@ -36449,8 +36449,8 @@ bool func_803(var uParam0)
 	WEAPON::SET_CURRENT_PED_WEAPON(&(Local_101[1 /*10*/]), joaat("WEAPON_UNARMED"), true, 0, false, false);
 	WEAPON::SET_CURRENT_PED_WEAPON(&(Local_101[2 /*10*/]), WEAPON::GET_BEST_PED_WEAPON(&(Local_101[2 /*10*/]), false, false), true, 0, false, false);
 	func_1314(uParam0);
-	iLocal_674[3] = VOLUME::_0x0EB78C2B156635B1(665633627, 1009.64f, -1772.865f, 47.49539f, 0f, 0f, 0f, 1.624605f, 0.989448f, 1f);
-	iLocal_674[9] = VOLUME::_0x0EB78C2B156635B1(665633627, 1011.776f, -1743.543f, 46.80862f, 0f, 0f, 0f, 1.739929f, 1.534366f, 1.617773f);
+	iLocal_674[3] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1009.64f, -1772.865f, 47.49539f, 0f, 0f, 0f, 1.624605f, 0.989448f, 1f);
+	iLocal_674[9] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 1011.776f, -1743.543f, 46.80862f, 0f, 0f, 0f, 1.739929f, 1.534366f, 1.617773f);
 	func_1253(uParam0, &(Local_101[0 /*10*/]), joaat("COLOR_WHITE"), 422991367, 1, 1);
 	func_166(uParam0, &(Local_101[2 /*10*/]), 1);
 	TASK::USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE(sLocal_39, true, 0.4f, 0.5f, 0);
@@ -53814,7 +53814,7 @@ int func_1305(int iParam0)
 
 void func_1306()
 {
-	iLocal_674[6] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 1022.554f, -1768.518f, 52.39133f, 0f, 0f, -0.336389f, 1f, 1.45409f, 2.791545f);
+	iLocal_674[6] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 1022.554f, -1768.518f, 52.39133f, 0f, 0f, -0.336389f, 1f, 1.45409f, 2.791545f);
 	VOLUME::_0xFD010A2154B40676(&(iLocal_674[6]), joaat("REL_PLAYER_ALLY"));
 }
 
@@ -60017,7 +60017,7 @@ void func_1493(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1931(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

@@ -40126,7 +40126,7 @@ void func_928()
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_487[19])))
 	{
-		iLocal_487[19] = VOLUME::_0x0EB78C2B156635B1(665633627, 2132.135f, -959.6953f, 41.41563f, 0f, 0f, 0f, 4f, 4f, 3.235462f);
+		iLocal_487[19] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2132.135f, -959.6953f, 41.41563f, 0f, 0f, 0f, 4f, 4f, 3.235462f);
 	}
 	if (!PED::_0x91A5F9CBEBB9D936(iLocal_423))
 	{
@@ -61838,7 +61838,7 @@ void func_1586(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2161(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;
@@ -93888,7 +93888,7 @@ void func_2719(int iParam0)
 
 var func_2720(int iParam0, int iParam1)
 {
-	return func_2933(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 665633627, iParam0, iParam1);
+	return func_2933(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
 void func_2721(struct<16> Param0, var uParam16, bool bParam17, bool bParam18)
@@ -98951,13 +98951,13 @@ var func_2933(vector3 vParam0, vector3 vParam3, vector3 vParam6, int iParam9, in
 	{
 		switch (iParam9)
 		{
-			case 665633627:
+			case joaat("VOLCYLINDER"):
 				bVar8 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2824());
 				break;
-			case -432403087:
+			case joaat("VOLSPHERE"):
 				bVar8 = VOLUME::_CREATE_VOLUME_SPHERE_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2824());
 				break;
-			case -1612834106:
+			case joaat("VOLBOX"):
 				bVar8 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(vParam0, vParam3, vParam6, func_2824());
 				break;
 		}

@@ -1554,7 +1554,7 @@ int func_30()
 					TASK::TASK_PERFORM_SEQUENCE(&(uLocal_648[0]), iLocal_652);
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_652);
 					vVar13 = { ENTITY::GET_ENTITY_COORDS(&(uLocal_648[0]), true, false) };
-					bLocal_659 = VOLUME::_0x0EB78C2B156635B1(665633627, vVar13, 0f, 0f, 0f, 2f, 2f, 5f);
+					bLocal_659 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vVar13, 0f, 0f, 0f, 2f, 2f, 5f);
 					VOLUME::_0xBE551C2CC421185D(bLocal_659, 1);
 					VOLUME::_0x5B23DFF8E0948BB2(bLocal_659, 1);
 				}
@@ -13574,7 +13574,7 @@ int func_427(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -13609,7 +13609,7 @@ int func_428(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

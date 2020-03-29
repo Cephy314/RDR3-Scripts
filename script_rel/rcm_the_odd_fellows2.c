@@ -7409,7 +7409,7 @@ int func_274(var uParam0)
 				func_598(&uLocal_919, 2310.127f, 29.823f, 49.556f, 4f, 1, -1, 0);
 				if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_275[0])))
 				{
-					iLocal_275[0] = VOLUME::_0x0EB78C2B156635B1(665633627, 2310.927f, 30.25236f, 49.55639f, 0f, 0f, 0f, 2f, 2f, 3f);
+					iLocal_275[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2310.927f, 30.25236f, 49.55639f, 0f, 0f, 0f, 2f, 2f, 3f);
 				}
 				func_599();
 				PED::SET_PED_CONFIG_FLAG(&(Local_25[0 /*7*/]), 26, true);

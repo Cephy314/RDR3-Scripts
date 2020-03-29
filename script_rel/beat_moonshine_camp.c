@@ -2025,7 +2025,7 @@ int func_50()
 				func_158();
 				if (!func_117(vLocal_677))
 				{
-					iLocal_624[1] = VOLUME::_0x0EB78C2B156635B1(665633627, vLocal_677, 0f, 0f, 0f, 0.8f, 0.8f, 1.5f);
+					iLocal_624[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vLocal_677, 0f, 0f, 0f, 0.8f, 0.8f, 1.5f);
 				}
 				func_159(&uLocal_1165);
 				func_160(&uLocal_1165);
@@ -3923,7 +3923,7 @@ void func_114()
 	AUDIO::SET_AMBIENT_VOICE_NAME(&(iLocal_84[1]), &((Local_297[1 /*32*/])->f_23));
 	if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_624[0])))
 	{
-		iLocal_624[0] = VOLUME::_0x0EB78C2B156635B1(665633627, Local_95.f_51, 0f, 0f, 0f, 0.9f, 0.9f, 0.9f);
+		iLocal_624[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), Local_95.f_51, 0f, 0f, 0f, 0.9f, 0.9f, 0.9f);
 		PED::_0x7C00CFC48A782DC0(&(iLocal_624[0]), &(iLocal_84[0]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	}
 	func_286(&(iLocal_84[0]), &Local_95, 0);
@@ -20194,7 +20194,7 @@ int func_543(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -20229,7 +20229,7 @@ int func_544(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

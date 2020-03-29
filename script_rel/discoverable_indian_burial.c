@@ -5429,28 +5429,28 @@ struct<11> func_101(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			Var0 = { -2588.029f, -93.50523f, 167.5759f };
 			Var0.f_3 = { 0f, 0f, 51.23023f };
 			Var0.f_6 = { 4f, 4f, 6f };
 			Var0.f_9 = "INDIAN_BURIAL_CIRCLE";
 			break;
 		case 1:
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			Var0 = { -2593.031f, -89.56793f, 167.5759f };
 			Var0.f_3 = { 0f, 0f, 51.23024f };
 			Var0.f_6 = { 22f, 22f, 8f };
 			Var0.f_9 = "INDIAN_BURIAL_FIRE_CHECK";
 			break;
 		case 2:
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			Var0 = { -2581.459f, -93.58262f, 168.9604f };
 			Var0.f_3 = { 0f, 0f, 81.07992f };
 			Var0.f_6 = { 11.94133f, 9.182878f, 8f };
 			Var0.f_9 = "INDIAN_BURIAL_NO_CLIMB";
 			break;
 		case 3:
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			Var0 = { -2581.459f, -93.58262f, 172.9222f };
 			Var0.f_3 = { 0f, 0f, 81.07991f };
 			Var0.f_6 = { 8.588582f, 5.425781f, 8f };

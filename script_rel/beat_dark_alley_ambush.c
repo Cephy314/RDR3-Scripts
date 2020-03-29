@@ -1430,7 +1430,7 @@ int func_31()
 			{
 				if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_764))
 				{
-					bLocal_764 = VOLUME::_0x0EB78C2B156635B1(-1612834106, Local_608.f_44, Local_608.f_47, Local_608.f_50);
+					bLocal_764 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), Local_608.f_44, Local_608.f_47, Local_608.f_50);
 				}
 			}
 			else if (VOLUME::_DOES_VOLUME_EXIST(bLocal_764))
@@ -4646,7 +4646,7 @@ void func_114()
 			func_282(&Local_878, 1, 1, 1, 0);
 			func_283(Local_856[0 /*21*/], &Local_878);
 			iLocal_774 = 7;
-			bLocal_762 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2838.291f, -1154.944f, 46.821f, 0f, 0f, 15.83f, 0.756f, 4.373f, 3.046f);
+			bLocal_762 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2838.291f, -1154.944f, 46.821f, 0f, 0f, 15.83f, 0.756f, 4.373f, 3.046f);
 			func_301(Local_600.f_3);
 			func_128(&iLocal_824, -2147483648);
 			iVar1 = func_302(-535642601, 0);
@@ -5235,7 +5235,7 @@ int func_132()
 						iLocal_777 = 4;
 						if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_767))
 						{
-							bLocal_767 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2838.624f, -1154.763f, 45.48947f, 0f, 0f, 14.858f, 1.5f, 1.5f, 5f);
+							bLocal_767 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2838.624f, -1154.763f, 45.48947f, 0f, 0f, 14.858f, 1.5f, 1.5f, 5f);
 						}
 					}
 					return 0;
@@ -5307,7 +5307,7 @@ int func_132()
 						iLocal_777 = 4;
 						if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_767))
 						{
-							bLocal_767 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2838.624f, -1154.763f, 45.48947f, 0f, 0f, 14.858f, 1.5f, 1.5f, 5f);
+							bLocal_767 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2838.624f, -1154.763f, 45.48947f, 0f, 0f, 14.858f, 1.5f, 1.5f, 5f);
 						}
 					}
 					iLocal_718 = 1;
@@ -15500,7 +15500,7 @@ int func_431(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -15535,7 +15535,7 @@ int func_432(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

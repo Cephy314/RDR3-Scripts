@@ -211,7 +211,7 @@ void __EntryFunction__()
 						func_19(&vLocal_355, vVar1, uVar7);
 						func_20(uLocal_449[0], vVar1, 0.5f);
 						func_21(uLocal_449[1], vVar1, 1f, 0, 0);
-						iLocal_452 = VOLUME::_0x0EB78C2B156635B1(665633627, vVar1 + Vector(0.8f, 0f, 0f), 0f, 0f, 0f, 1f, 1f, 0.8f);
+						iLocal_452 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vVar1 + Vector(0.8f, 0f, 0f), 0f, 0f, 0f, 1f, 1f, 0.8f);
 						func_22(&iLocal_453, iLocal_246, iLocal_348);
 						func_23(iLocal_246, iLocal_348, &iLocal_454);
 						func_24(&iLocal_454, 1);
@@ -14977,7 +14977,7 @@ int func_449(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -15012,7 +15012,7 @@ int func_450(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

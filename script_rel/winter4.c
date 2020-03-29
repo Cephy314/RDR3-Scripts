@@ -35964,8 +35964,8 @@ bool func_778(var uParam0)
 	func_579(&uLocal_730);
 	TASK::USE_WAYPOINT_RECORDING_AS_ASSISTED_MOVEMENT_ROUTE("winter4_overlookExit", true, 1065353216, 0.25f, 0);
 	func_1339(&bLocal_619, -1042.881f, 609.1644f, 91.07177f, 0f, 0f, 1.833899f, 3.72964f, 24.59288f, 4.374949f, "wire blocker");
-	bLocal_633 = VOLUME::_0x0EB78C2B156635B1(665633627, -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 4f, 4f, 4f);
-	bLocal_634 = VOLUME::_0x0EB78C2B156635B1(665633627, -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
+	bLocal_633 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 4f, 4f, 4f);
+	bLocal_634 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
 	PED::_0x7C00CFC48A782DC0(bLocal_634, &(iLocal_206[2]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	PED::_0xF7EA250B9A919E03(joaat("SPOOL"), Global_35);
 	PLAYER::_0x3946FC742AC305CD(PLAYER::PLAYER_ID(), &(iLocal_199[2]), "WNT4_MeetBill", 0f, 0f, 0f, false, 0);
@@ -36434,7 +36434,7 @@ bool func_781(var uParam0)
 		PHYSICS::_0x1D97DA8ACB5D2582(iLocal_881, 29);
 		PED::SET_PED_CONFIG_FLAG(&(iLocal_199[2]), 91, true);
 	}
-	bLocal_634 = VOLUME::_0x0EB78C2B156635B1(665633627, -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
+	bLocal_634 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
 	PED::_0x7C00CFC48A782DC0(bLocal_634, &(iLocal_206[2]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	return uParam0->f_607 == uParam0->f_607;
 }
@@ -36737,7 +36737,7 @@ bool func_786(var uParam0)
 	func_466(Global_35, func_235(15, 0), 2, 1073741824 /* Float: 2f */);
 	func_466(func_173(uParam0), func_235(8, 0), 2, 1073741824 /* Float: 2f */);
 	func_1339(&bLocal_614, -1027.618f, 614.7074f, 89.21125f, 0f, 0f, 0f, 20f, 20f, 10f, "Horse Wander");
-	bLocal_634 = VOLUME::_0x0EB78C2B156635B1(665633627, -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
+	bLocal_634 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
 	PED::_0x7C00CFC48A782DC0(bLocal_633, &(iLocal_206[2]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	if (!func_8(uParam0, 8))
 	{
@@ -36848,7 +36848,7 @@ bool func_788(var uParam0)
 	iLocal_1761 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(-963.9405f, 669.7743f, 104.9943f, 0f, 0f, 0f, 15f, 25f, 10f, "Dutch speech Trigger");
 	func_149(uParam0, 50f);
 	func_150(uParam0, 70f);
-	bLocal_633 = VOLUME::_0x0EB78C2B156635B1(665633627, -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
+	bLocal_633 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1044.12f, 618.97f, 89.72f, 0f, 0f, 0f, 2f, 2f, 2f);
 	PED::_0x7C00CFC48A782DC0(bLocal_633, &(iLocal_199[2]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	PHYSICS::_0xBDDA142759307528(&(iLocal_206[0]));
 	PHYSICS::_0xF8CA39D5C0D1D9A1(&(iLocal_206[0]), 1);
@@ -37452,7 +37452,7 @@ bool func_798(var uParam0)
 	func_979(uParam0);
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_635))
 	{
-		bLocal_635 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -953.94f, 707.59f, 100.9f, 0f, 0f, 0f, 3f, 7f, 3f);
+		bLocal_635 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -953.94f, 707.59f, 100.9f, 0f, 0f, 0f, 3f, 7f, 3f);
 		PED::_0x7C00CFC48A782DC0(bLocal_635, VEHICLE::GET_TRAIN_CARRIAGE(bLocal_218, 8), -3.25f, 0f, 5.1f, 0f, 0f, 0f, 2, 1);
 	}
 	return uParam0->f_607 == uParam0->f_607;
@@ -39568,7 +39568,7 @@ int func_819(var uParam0)
 	}
 	if ((Local_1129.f_3 == 16 && VOLUME::_DOES_VOLUME_EXIST(bLocal_638)) && !ENTITY::IS_ENTITY_IN_VOLUME(Global_35, bLocal_638, true, 0))
 	{
-		iLocal_639 = VOLUME::_0x0EB78C2B156635B1(-1612834106, VOLUME::_0xF70F00013A62F866(bLocal_638), VOLUME::_0x18675BC914891122(bLocal_638), VOLUME::_0x3E2A25B2416DD67E(bLocal_638));
+		iLocal_639 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), VOLUME::_0xF70F00013A62F866(bLocal_638), VOLUME::_0x18675BC914891122(bLocal_638), VOLUME::_0x3E2A25B2416DD67E(bLocal_638));
 		iLocal_230 = OBJECT::CREATE_OBJECT(joaat("P_BARREL03X"), -391.2104f, 1310.593f, 148.7785f, true, true, false, false, true);
 		iLocal_231 = OBJECT::CREATE_OBJECT(joaat("P_BARREL03X"), -390.3172f, 1310.649f, 148.8015f, true, true, false, false, true);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_230, true);
@@ -39584,7 +39584,7 @@ int func_819(var uParam0)
 			VOLUME::_DELETE_VOLUME(iLocal_639);
 			func_1383(&iLocal_230, 0, 1, 1);
 			func_1383(&iLocal_231, 0, 1, 1);
-			bLocal_640 = VOLUME::_0x0EB78C2B156635B1(665633627, -387.4908f, 1310.4f, 148.8682f, 0f, 0f, -39f, 3f, 2f, 4f);
+			bLocal_640 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -387.4908f, 1310.4f, 148.8682f, 0f, 0f, -39f, 3f, 2f, 4f);
 		}
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(iLocal_230) || ENTITY::DOES_ENTITY_EXIST(iLocal_231))
@@ -40019,7 +40019,7 @@ bool func_823(var uParam0)
 	{
 		STREAMING::_0x5A8B01199C3E79C3();
 	}
-	bLocal_643 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(iLocal_199[3]), true, false), 0f, 0f, 0f, 0.8f, 0.8f, 4f);
+	bLocal_643 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(iLocal_199[3]), true, false), 0f, 0f, 0f, 0.8f, 0.8f, 4f);
 	PED::_0x7C00CFC48A782DC0(bLocal_643, &(iLocal_199[3]), 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
 	return uParam0->f_607 == uParam0->f_607;
 }
@@ -66422,7 +66422,7 @@ void func_1538()
 {
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_632) && !func_1328(Global_35, -394.5462f, 1311.367f, 148.8682f, 4f, 1, 1))
 	{
-		bLocal_632 = VOLUME::_0x0EB78C2B156635B1(665633627, -394.5462f, 1311.367f, 148.8682f, 0f, 0f, 0f, 4f, 4f, 4f);
+		bLocal_632 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -394.5462f, 1311.367f, 148.8682f, 0f, 0f, 0f, 4f, 4f, 4f);
 	}
 }
 
@@ -73171,7 +73171,7 @@ void func_1750(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2358(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;
@@ -90178,7 +90178,7 @@ int func_2302(var uParam0)
 		{
 			iLocal_243 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(Local_133.f_3[0]));
 		}
-		bLocal_616 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -953f, 707f, 100f, 0f, 0f, 0f, 2f, 5f, 5f);
+		bLocal_616 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -953f, 707f, 100f, 0f, 0f, 0f, 2f, 5f, 5f);
 		PED::_0x7C00CFC48A782DC0(bLocal_616, bVar0, 1f, 1f, 2.1f, 0f, 0f, 0f, 2, 1);
 		func_2521(1);
 	}

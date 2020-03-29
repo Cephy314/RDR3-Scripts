@@ -1614,21 +1614,21 @@ void func_45(int iParam0)
 	iParam0->f_1713 = 24;
 	iVar0 = 0;
 	Global_1357549->f_3[0] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Clemens volCampAreas[CVA_INNER]");
-	func_299(Global_1357549->f_3[0], &iVar0, 0, 681.4077f, -1256.627f, 45f, 0f, 0f, -24f, 13f, 19f, 35f, 665633627, 0);
-	func_299(Global_1357549->f_3[0], &iVar0, 0, 659.684f, -1253.208f, 45f, 0f, 0f, 30f, 11f, 18f, 35f, 665633627, 0);
-	func_299(Global_1357549->f_3[0], &iVar0, 0, 669.8141f, -1242.698f, 53.68411f, 0f, 0f, -17f, 34f, 17f, 35f, -1612834106, 0);
+	func_299(Global_1357549->f_3[0], &iVar0, 0, 681.4077f, -1256.627f, 45f, 0f, 0f, -24f, 13f, 19f, 35f, joaat("VOLCYLINDER"), 0);
+	func_299(Global_1357549->f_3[0], &iVar0, 0, 659.684f, -1253.208f, 45f, 0f, 0f, 30f, 11f, 18f, 35f, joaat("VOLCYLINDER"), 0);
+	func_299(Global_1357549->f_3[0], &iVar0, 0, 669.8141f, -1242.698f, 53.68411f, 0f, 0f, -17f, 34f, 17f, 35f, joaat("VOLBOX"), 0);
 	Global_1357549->f_3[1] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Clemens volCampAreas[CVA_WALK]");
-	func_299(Global_1357549->f_3[1], &iVar0, 1, 671.1957f, -1249.653f, 61.65944f, 0f, 0f, -54.88453f, 30.06073f, 23.79622f, 21.33633f, 665633627, 0);
+	func_299(Global_1357549->f_3[1], &iVar0, 1, 671.1957f, -1249.653f, 61.65944f, 0f, 0f, -54.88453f, 30.06073f, 23.79622f, 21.33633f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[2] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Clemens volCampAreas[CVA_OUTER]");
 	Global_1357549->f_3[3] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Clemens volCampAreas[CVA_OUTER_THRESHOLD]");
-	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 676.1342f, -1244.41f, 60f, 0f, 0f, 0f, 34f, 40f, 35f, 665633627, 0);
-	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 714.5854f, -1246.16f, 60f, 0f, 0f, 0f, 25f, 25f, 35f, 665633627, 0);
-	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 668.8077f, -1250.38f, 67.0239f, 0f, 0f, -45f, 74f, 49f, 37f, 665633627, 0);
-	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 626.6451f, -1193.235f, 69.3287f, 0f, 0f, 24f, 13f, 19f, 40f, 665633627, 0);
-	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 651.0234f, -1192.038f, 70.30768f, 0f, 0f, -33f, 30f, 10f, 40f, 665633627, 0);
+	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 676.1342f, -1244.41f, 60f, 0f, 0f, 0f, 34f, 40f, 35f, joaat("VOLCYLINDER"), 0);
+	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 714.5854f, -1246.16f, 60f, 0f, 0f, 0f, 25f, 25f, 35f, joaat("VOLCYLINDER"), 0);
+	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 668.8077f, -1250.38f, 67.0239f, 0f, 0f, -45f, 74f, 49f, 37f, joaat("VOLCYLINDER"), 0);
+	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 626.6451f, -1193.235f, 69.3287f, 0f, 0f, 24f, 13f, 19f, 40f, joaat("VOLCYLINDER"), 0);
+	func_299(Global_1357549->f_3[2], Global_1357549->f_3[3], 2, 651.0234f, -1192.038f, 70.30768f, 0f, 0f, -33f, 30f, 10f, 40f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[4] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Clemens volCampAreas[CVA_SURROUNDING]");
 	Global_1357549->f_3[5] = VOLUME::_CREATE_VOLUME_AGGREGATE_WITH_CUSTOM_NAME("Clemens volCampAreas[CVA_SURROUNDING_THRESHOLD]");
-	func_299(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, 687.9815f, -1224.231f, 68.0941f, 0f, 0f, -24f, 94f, 103f, 34f, 665633627, 0);
+	func_299(Global_1357549->f_3[4], Global_1357549->f_3[5], 4, 687.9815f, -1224.231f, 68.0941f, 0f, 0f, -24f, 94f, 103f, 34f, joaat("VOLCYLINDER"), 0);
 	Global_1357549->f_3[6] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(652.9659f, -1245.305f, 43.90106f, 0f, 0f, 51.79757f, 8.125f, 4.6f, 2.65802f, "Clemens volCampAreas[CVA_PROPERTY]");
 	bLocal_3516 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(687.8383f, -1237.403f, 44.0555f, 0f, 0f, 150.7247f, 9.113432f, 4.664736f, 3.323739f, "Clemens - m_volMusterFront");
 	bLocal_3517 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(696.5735f, -1258.482f, 44.76106f, 0f, 0f, -125.4608f, 15.30894f, 7.055721f, 3.96173f, "Clemens - m_volMusterFrontSide");
@@ -8541,7 +8541,7 @@ void func_278(var uParam0, var uParam1)
 			{
 				if (func_708(&vVar0, &vVar3, &vVar6))
 				{
-					*uParam0 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vVar0, vVar3, vVar6);
+					*uParam0 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vVar0, vVar3, vVar6);
 					VOLUME::_0x5B23DFF8E0948BB2(*uParam0, 1);
 				}
 			}
@@ -8577,7 +8577,7 @@ void func_278(var uParam0, var uParam1)
 			{
 				if (func_710(&vVar0, &vVar3, &vVar6))
 				{
-					*uParam1 = VOLUME::_0x0EB78C2B156635B1(-1612834106, vVar0, vVar3, vVar6);
+					*uParam1 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), vVar0, vVar3, vVar6);
 					VOLUME::_0x5B23DFF8E0948BB2(*uParam1, 1);
 				}
 			}

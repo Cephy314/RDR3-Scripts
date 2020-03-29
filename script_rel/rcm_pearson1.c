@@ -4358,7 +4358,7 @@ int func_107(var uParam0)
 
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_109))
 	{
-		bLocal_109 = VOLUME::_0x0EB78C2B156635B1(665633627, -1356.104f, 2424.465f, 308.1755f, 0f, 0f, 73.5f, 5.5f, 3.5f, 3f);
+		bLocal_109 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1356.104f, 2424.465f, 308.1755f, 0f, 0f, 73.5f, 5.5f, 3.5f, 3f);
 	}
 	if (!func_211(bLocal_132, 1))
 	{
@@ -14794,7 +14794,7 @@ void func_393()
 								Jump @3729; //curOff = 771
 								if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_110))
 								{
-									bLocal_110 = VOLUME::_0x0EB78C2B156635B1(665633627, -1404.064f, 1387.788f, 219.2211f, 0f, 0f, 0f, 1.1f, 1.1f, 3f);
+									bLocal_110 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1404.064f, 1387.788f, 219.2211f, 0f, 0f, 0f, 1.1f, 1.1f, 3f);
 								}
 								func_975(bLocal_67, func_420(3, "CHARLES", "PL_IG2_Inspect_Tracks_Dismount"), 0, 30f, 15f, 5f, 0f, 1, 1, 1, 0);
 								if (!func_976(3, "PL_IG2_Inspect_Tracks_Dismount"))
@@ -24190,7 +24190,7 @@ void func_686()
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_108))
 	{
-		bLocal_108 = VOLUME::_0x0EB78C2B156635B1(665633627, -1346.581f, 2401.581f, 306.9516f, 0f, 0f, -23.49999f, 1.51373f, 1.663044f, 1f);
+		bLocal_108 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1346.581f, 2401.581f, 306.9516f, 0f, 0f, -23.49999f, 1.51373f, 1.663044f, 1f);
 	}
 }
 
@@ -76984,7 +76984,7 @@ void func_2352(bool bParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

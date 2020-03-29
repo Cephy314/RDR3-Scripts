@@ -3401,8 +3401,8 @@ int func_76(var uParam0)
 			break;
 		case 432:
 			iLocal_17 = func_154(uParam0, 2, 0);
-			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
-			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 0, 1);
 			func_156(uParam0, "JSNG1AU");
 			func_157(uParam0, "script@vignette@music@javier_1@base", 1, 1, 0, 0);
@@ -3412,8 +3412,8 @@ int func_76(var uParam0)
 			break;
 		case 433:
 			iLocal_17 = func_154(uParam0, 2, 0);
-			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
-			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			func_156(uParam0, "JSNG2AU");
 			func_157(uParam0, "script@vignette@music@javier_2@base", 1, 1, 0, 0);
@@ -3430,8 +3430,8 @@ int func_76(var uParam0)
 			}
 			else
 			{
-				func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
-				func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, joaat("APMS_COMP_JAVIER"), 1, 1, 1);
+				func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), 1);
+				func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), joaat("APMS_COMP_JAVIER"), 1, 1, 1);
 			}
 			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			if (!func_164(14) && !func_164(15))
@@ -3466,8 +3466,8 @@ int func_76(var uParam0)
 			break;
 		case 435:
 			iLocal_17 = func_154(uParam0, 2, 0);
-			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
-			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			func_157(uParam0, "script@vignette@music@javier_5@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@javier_5@action", 0, 0, 1, 0);
@@ -3482,8 +3482,8 @@ int func_76(var uParam0)
 			break;
 		case 436:
 			iLocal_17 = func_154(uParam0, 2, 0);
-			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
-			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_GUITAR01X"), 0f, 0f, 0f, "GUITAR", 0, 1, 1);
 			func_156(uParam0, "JSNG6AU");
 			func_157(uParam0, "script@vignette@music@javier_6@base", 1, 1, 0, 0);
@@ -3494,8 +3494,8 @@ int func_76(var uParam0)
 		case 437:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
-			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, 665633627, 1);
-			func_163(uParam0, 0f, 0f, 0f, 0f, 4f, 4f, 2.5f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 2f, -1f, 0f, 0f, 1f, 1f, 2.5f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 0f, 0f, 0f, 0f, 4f, 4f, 2.5f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
 			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
 			func_156(uParam0, "CJKS1AU");
@@ -3508,8 +3508,8 @@ int func_76(var uParam0)
 		case 438:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
-			func_163(uParam0, -0.5789f, -1.348f, 0.5829f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			func_163(uParam0, 1.4366f, -0.3767f, 0.5659f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
+			func_163(uParam0, -0.5789f, -1.348f, 0.5829f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
+			func_163(uParam0, 1.4366f, -0.3767f, 0.5659f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_lily_of_the_valley@base", 1, 1, 0, 0);
 			iLocal_41 = func_157(uParam0, "script@vignette@music@jack_1_lily_of_the_valley@action", 2, 0, 1, 0);
@@ -3520,8 +3520,8 @@ int func_76(var uParam0)
 		case 439:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
-			func_163(uParam0, -1.769f, -0.8052f, 0.7632f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			func_163(uParam0, -0.709111f, 2.14099f, 0.980247f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
+			func_163(uParam0, -1.769f, -0.8052f, 0.7632f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
+			func_163(uParam0, -0.709111f, 2.14099f, 0.980247f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
 			func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
 			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_oh_shenendoh@base", 1, 1, 0, 0);
@@ -3533,8 +3533,8 @@ int func_76(var uParam0)
 		case 440:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
-			func_163(uParam0, -0.5789f, -1.348f, 0.5829f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			func_163(uParam0, 1.4366f, -0.3767f, 0.5659f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
+			func_163(uParam0, -0.5789f, -1.348f, 0.5829f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
+			func_163(uParam0, 1.4366f, -0.3767f, 0.5659f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
 			func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 1, 1);
 			iLocal_29 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), 1.42003f, -0.46233f, 0.000724792f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_oh_susanna@base", 1, 1, 0, 0);
@@ -3547,8 +3547,8 @@ int func_76(var uParam0)
 		case 441:
 			iLocal_16 = func_154(uParam0, 14, 0);
 			iLocal_14 = func_154(uParam0, 13, 0);
-			func_163(uParam0, -1.769f, -0.8052f, 0.7632f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
-			func_163(uParam0, -0.709111f, 2.14099f, 0.980247f, 0f, 1.1f, 1.1f, 2.5f, -1612834106, -1, 1, 1, 1);
+			func_163(uParam0, -1.769f, -0.8052f, 0.7632f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
+			func_163(uParam0, -0.709111f, 2.14099f, 0.980247f, 0f, 1.1f, 1.1f, 2.5f, joaat("VOLBOX"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_HARMONICA01X"), 0f, 0f, 0f, "HARMONICA", 0, 0, 1);
 			iLocal_24 = func_155(uParam0, joaat("P_CHAIR_CRATE02X"), -1.86246f, -0.82945f, -0.0207748f, 0, 1, 0, 1);
 			func_157(uParam0, "script@vignette@music@jack_1_yellwo_rose_of_texas@base", 1, 1, 0, 0);
@@ -3729,8 +3729,8 @@ int func_76(var uParam0)
 			break;
 		case 449:
 			iLocal_19 = func_154(uParam0, 17, 0);
-			func_162(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, 1);
-			func_163(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			iLocal_34 = func_155(uParam0, joaat("P_CS_CONCERTINA01X"), 0f, 0f, 0f, "CONCERTINA", 0, 1, 1);
 			iLocal_23 = func_155(uParam0, joaat("P_CHAIRFOLDING02X"), 1.2f, -1.868f, -0.0285f, 0, 1, 0, 1);
 			func_156(uParam0, "CPSG8AU");
@@ -3741,8 +3741,8 @@ int func_76(var uParam0)
 			break;
 		case 450:
 			iLocal_19 = func_154(uParam0, 17, 0);
-			func_162(uParam0, -0.55f, 2f, 0f, 100.97f, 1f, 1f, 3f, 665633627, 1);
-			func_163(uParam0, -0.55f, 2f, 0f, 100.97f, 1f, 1f, 3f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, -0.55f, 2f, 0f, 100.97f, 1f, 1f, 3f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, -0.55f, 2f, 0f, 100.97f, 1f, 1f, 3f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			func_156(uParam0, "PSNG1AU");
 			if (!func_164(15))
 			{
@@ -3770,8 +3770,8 @@ int func_76(var uParam0)
 			break;
 		case 451:
 			iLocal_20 = func_154(uParam0, 8, 0);
-			func_162(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, 1);
-			func_163(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, 665633627, -1, 1, 1, 1);
+			func_162(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, joaat("VOLCYLINDER"), 1);
+			func_163(uParam0, 0f, -0.15f, 0f, -113.79f, 1f, 1f, 3f, joaat("VOLCYLINDER"), -1, 1, 1, 1);
 			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "BOTTLE", 0, 1, 1);
 			func_156(uParam0, "SSNG1");
 			if (!func_164(14))
@@ -3828,8 +3828,8 @@ int func_76(var uParam0)
 		case 453:
 			iLocal_21 = func_154(uParam0, 19, 0);
 			iLocal_18 = func_154(uParam0, 20, 0);
-			func_163(uParam0, 1.7625f, 2.95f, 0.85f, 0f, 1.3f, 1.3f, 3.2075f, -1612834106, joaat("APMS_COMP_KAREN"), 1, 1, 1);
-			func_163(uParam0, 1.425f, -0.6125f, 0.85f, 0f, 1.3f, 1.3f, 3.2075f, -1612834106, joaat("APMS_COMP_GRIMSHAW"), 1, 1, 1);
+			func_163(uParam0, 1.7625f, 2.95f, 0.85f, 0f, 1.3f, 1.3f, 3.2075f, joaat("VOLBOX"), joaat("APMS_COMP_KAREN"), 1, 1, 1);
+			func_163(uParam0, 1.425f, -0.6125f, 0.85f, 0f, 1.3f, 1.3f, 3.2075f, joaat("VOLBOX"), joaat("APMS_COMP_GRIMSHAW"), 1, 1, 1);
 			iLocal_157 = func_155(uParam0, joaat("P_WASHBOARD01X"), 3.73538f, 2.82993f, -0.2192f, "WASHBOARD", 0, 1, 1);
 			func_155(uParam0, joaat("P_CS_RAG02X"), 0f, 0f, 0f, "RAG", 0, 1, 1);
 			iLocal_39 = func_155(uParam0, joaat("P_CIGARETTE_CS01X"), 0f, 0f, 0f, "CIGARETTE", 0, 0, 1);
@@ -3866,7 +3866,7 @@ int func_76(var uParam0)
 			func_160(uParam0, iLocal_17, iLocal_34, "p_guitar01x_PH_R_HAND", 0, 0);
 			if (func_164(14))
 			{
-				func_163(uParam0, 0f, 0f, 0f, 0f, 0.1f, 0.1f, 0.1f, -1612834106, -1, 1, 1, 1);
+				func_163(uParam0, 0f, 0f, 0f, 0f, 0.1f, 0.1f, 0.1f, joaat("VOLBOX"), -1, 1, 1, 1);
 				func_176(uParam0, 1);
 				uParam0->f_14 = 1;
 			}
@@ -3898,7 +3898,7 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "P_BOTTLEJD01X", 0, 1, 1);
 			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
-			func_163(uParam0, 0.6375f, 1f, 0f, -24.75f, 1f, 1f, 3f, -1612834106, joaat("APMS_COMP_UNCLE"), 1, 1, 1);
+			func_163(uParam0, 0.6375f, 1f, 0f, -24.75f, 1f, 1f, 3f, joaat("VOLBOX"), joaat("APMS_COMP_UNCLE"), 1, 1, 1);
 			func_157(uParam0, "script@vignette@music@uncle_1_drunk@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_1_drunk@action", 0, 0, 1, 0);
 			func_156(uParam0, "UNCS1AU");
@@ -3909,7 +3909,7 @@ int func_76(var uParam0)
 			iLocal_22 = func_154(uParam0, 4, 0);
 			func_155(uParam0, joaat("P_BOTTLEJD01X"), 0f, 0f, 0f, "P_BOTTLEJD01X", 0, 1, 1);
 			iLocal_30 = func_155(uParam0, joaat("P_CHAIR_CRATE15X"), 0.636307f, 1.3249f, -0.00391388f, 0, 1, 0, 1);
-			func_163(uParam0, 0.4875f, 1f, 0f, -24.75f, 1f, 1f, 3f, -1612834106, joaat("APMS_COMP_UNCLE"), 1, 1, 1);
+			func_163(uParam0, 0.4875f, 1f, 0f, -24.75f, 1f, 1f, 3f, joaat("VOLBOX"), joaat("APMS_COMP_UNCLE"), 1, 1, 1);
 			func_157(uParam0, "script@vignette@music@uncle_1_sober@base", 1, 1, 0, 0);
 			func_157(uParam0, "script@vignette@music@uncle_1_sober@action", 0, 0, 1, 0);
 			func_156(uParam0, "UNCS1AU");
@@ -6262,7 +6262,7 @@ void func_186(var uParam0)
 						{
 							if (iVar1 == 0 && !uParam0->f_4)
 							{
-								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(665633627, uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
+								uParam0->f_36[iVar1 /*5*/] = VOLUME::_CREATE_VOLUME_BY_HASH_WITH_CUSTOM_NAME(joaat("VOLCYLINDER"), uParam0->f_29, 0f, 0f, 0f, 3f, 3f, 2f, "Block Peds");
 								(uParam0->f_36[iVar1 /*5*/])->f_2 = 1;
 							}
 						else
@@ -6995,7 +6995,7 @@ int func_205(var uParam0, float fParam1)
 			}
 			else
 			{
-				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
+				(uParam0->f_107[iVar0 /*113*/])->f_101 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS((uParam0->f_107[iVar0 /*113*/])->f_5, true, false), 0f, 0f, 0f, fVar1, fVar1, fParam1);
 				if (!VOLUME::_DOES_VOLUME_EXIST((uParam0->f_107[iVar0 /*113*/])->f_101))
 				{
 				}
@@ -10977,7 +10977,7 @@ int func_379(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -11012,7 +11012,7 @@ int func_380(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

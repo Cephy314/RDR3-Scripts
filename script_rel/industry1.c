@@ -18119,8 +18119,8 @@ void func_166(bool bParam0)
 		PATHFIND::_0x19C7567D2F2287D6(&(iLocal_592[34]), 7);
 		iLocal_592[35] = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(2570.89f, -1182.473f, 52.902f, 0f, 0f, 178.244f, 10.37311f, 3.293618f, 8.292819f, "VOL_PARK_NAVBLOCKER");
 		PATHFIND::_0x19C7567D2F2287D6(&(iLocal_592[35]), 7);
-		iLocal_646[0] = VOLUME::_0x0EB78C2B156635B1(665633627, 2401.324f, -1058.196f, 41.8243f, 0f, 0f, 0f, 2.4f, 2.4f, 5f);
-		iLocal_646[27] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2407.753f, -1051.994f, 43.8773f, 0f, 0f, -15.97001f, 2.829032f, 1.578236f, 2.564911f);
+		iLocal_646[0] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2401.324f, -1058.196f, 41.8243f, 0f, 0f, 0f, 2.4f, 2.4f, 5f);
+		iLocal_646[27] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2407.753f, -1051.994f, 43.8773f, 0f, 0f, -15.97001f, 2.829032f, 1.578236f, 2.564911f);
 		iLocal_249 = 0;
 		while (iLocal_249 < 14)
 		{
@@ -36720,8 +36720,8 @@ int func_771(char[4] cParam0)
 	func_1326(1);
 	func_1327();
 	func_211(&uLocal_1708);
-	iLocal_646[1] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2393.013f, -1078.767f, 52.69373f, 0f, 0f, 123.1576f, 4.733046f, 2.117201f, 3.165035f);
-	iLocal_646[26] = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2401.416f, -1072.041f, 47.60419f, 0f, 0f, 0f, 1.986274f, 1.877122f, 2.5f);
+	iLocal_646[1] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2393.013f, -1078.767f, 52.69373f, 0f, 0f, 123.1576f, 4.733046f, 2.117201f, 3.165035f);
+	iLocal_646[26] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2401.416f, -1072.041f, 47.60419f, 0f, 0f, 0f, 1.986274f, 1.877122f, 2.5f);
 	func_1328();
 	return 1;
 }
@@ -36827,9 +36827,9 @@ int func_775(char[4] cParam0)
 int func_776(char[4] cParam0)
 {
 	func_99(cParam0, 4194304);
-	iLocal_646[25] = VOLUME::_0x0EB78C2B156635B1(665633627, 2402.29f, -1041.354f, 42.9823f, 0f, 0f, 7.10567f, 1.334877f, 2.053332f, 1.8f);
-	iLocal_646[28] = VOLUME::_0x0EB78C2B156635B1(665633627, 2401.608f, -1050.977f, 42.9824f, 0f, 0f, 0f, 0.6f, 0.6f, 2f);
-	iLocal_646[29] = VOLUME::_0x0EB78C2B156635B1(665633627, 2398.422f, -1053.535f, 42.9824f, 0f, 0f, 0f, 0.6f, 0.6f, 2f);
+	iLocal_646[25] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2402.29f, -1041.354f, 42.9823f, 0f, 0f, 7.10567f, 1.334877f, 2.053332f, 1.8f);
+	iLocal_646[28] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2401.608f, -1050.977f, 42.9824f, 0f, 0f, 0f, 0.6f, 0.6f, 2f);
+	iLocal_646[29] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2398.422f, -1053.535f, 42.9824f, 0f, 0f, 0f, 0.6f, 0.6f, 2f);
 	func_1301(-846474501, 1, 0, 0, 1, 0, 0, 0);
 	func_1301(-549554592, 1, 0, 0, 1, 0, 0, 0);
 	func_1341(Local_873[0 /*17*/], "IND1_GREET", 0, joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
@@ -54438,7 +54438,7 @@ void func_1326(bool bParam0)
 	{
 		if (!VOLUME::_DOES_VOLUME_EXIST(&(iLocal_646[2])))
 		{
-			iLocal_646[2] = VOLUME::_0x0EB78C2B156635B1(665633627, 2401.624f, -1063.944f, 47.42683f, 0f, 0f, 177.6478f, 1.360398f, 0.951301f, 1.090547f);
+			iLocal_646[2] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), 2401.624f, -1063.944f, 47.42683f, 0f, 0f, 177.6478f, 1.360398f, 0.951301f, 1.090547f);
 		}
 	}
 	else if (VOLUME::_DOES_VOLUME_EXIST(&(iLocal_646[2])))
@@ -54909,8 +54909,8 @@ void func_1333(char[4] cParam0)
 			func_1870(uLocal_256[5], sVar31, &iLocal_375);
 			ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(&(uLocal_256[5]), "pl_IDLE", true);
 			ANIMSCENE::START_ANIM_SCENE(&(uLocal_256[5]));
-			iLocal_646[3] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[0]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[0]), 2), vVar0);
-			iLocal_646[4] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[1]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[1]), 2), vVar0);
+			iLocal_646[3] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[0]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[0]), 2), vVar0);
+			iLocal_646[4] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[1]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[1]), 2), vVar0);
 			func_1922(uLocal_797[1], 6);
 			break;
 		case 6:
@@ -55066,8 +55066,8 @@ void func_1333(char[4] cParam0)
 		case 0:
 			func_1276(&(Local_14.f_54[2]), func_974(5, 2), 2, 1073741824 /* Float: 2f */);
 			func_1276(&(Local_14.f_54[3]), func_974(5, 3), 2, 1073741824 /* Float: 2f */);
-			iLocal_646[5] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[2]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[2]), 2), vVar0);
-			iLocal_646[6] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[3]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[3]), 2), vVar0);
+			iLocal_646[5] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[2]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[2]), 2), vVar0);
+			iLocal_646[6] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[3]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[3]), 2), vVar0);
 			bLocal_376 = OBJECT::CREATE_OBJECT(bLocal_1624, func_431(6, 13), true, true, false, false, true);
 			func_1391(uLocal_256[9], sVar34, Local_14.f_54[2]);
 			func_1391(uLocal_256[9], sVar35, Local_14.f_54[3]);
@@ -55233,8 +55233,8 @@ void func_1333(char[4] cParam0)
 				case 0:
 					func_1276(&(Local_14.f_54[4]), func_974(5, 4), 2, 1073741824 /* Float: 2f */);
 					func_1276(&(Local_14.f_54[5]), func_974(5, 5), 2, 1073741824 /* Float: 2f */);
-					iLocal_646[7] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[4]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[4]), 2), vVar0);
-					iLocal_646[8] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[5]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[5]), 2), vVar0);
+					iLocal_646[7] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[4]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[4]), 2), vVar0);
+					iLocal_646[8] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[5]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[5]), 2), vVar0);
 					bLocal_377 = OBJECT::CREATE_OBJECT(bLocal_1624, func_431(6, 13), true, true, false, false, true);
 					bLocal_378 = OBJECT::CREATE_OBJECT(bLocal_1624, func_431(6, 13), true, true, false, false, true);
 					func_1391(uLocal_256[13], sVar38, Local_14.f_54[4]);
@@ -55407,8 +55407,8 @@ void func_1333(char[4] cParam0)
 						func_891(&(Local_14.f_12[4]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 						TASK::CLEAR_PED_TASKS(&(Local_14.f_12[4]), 1, 0);
 					}
-					iLocal_646[9] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[5]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[5]), 2), vVar0);
-					iLocal_646[10] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[4]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[4]), 2), vVar0);
+					iLocal_646[9] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[5]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[5]), 2), vVar0);
+					iLocal_646[10] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[4]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[4]), 2), vVar0);
 					iLocal_380 = OBJECT::CREATE_OBJECT(bLocal_1629, func_431(6, 13), true, true, false, false, true);
 					bLocal_379 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					func_1937(uLocal_256[17]);
@@ -55517,8 +55517,8 @@ void func_1333(char[4] cParam0)
 						func_891(&(Local_14.f_12[1]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 						TASK::CLEAR_PED_TASKS(&(Local_14.f_12[1]), 1, 0);
 					}
-					iLocal_646[11] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[2]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[2]), 2), vVar0);
-					iLocal_646[12] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[1]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[1]), 2), vVar0);
+					iLocal_646[11] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[2]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[2]), 2), vVar0);
+					iLocal_646[12] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[1]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[1]), 2), vVar0);
 					iLocal_381 = OBJECT::CREATE_OBJECT(bLocal_1629, func_431(6, 13), true, true, false, false, true);
 					bLocal_382 = OBJECT::CREATE_OBJECT(bLocal_1616, func_431(6, 13), true, true, false, false, true);
 					iLocal_383 = OBJECT::CREATE_OBJECT(bLocal_1622, 2416.815f, -1051.451f, 43.744f, true, true, false, false, true);
@@ -55636,7 +55636,7 @@ void func_1333(char[4] cParam0)
 						ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(uLocal_256[27]), sVar49, &Var11, true, sLocal_165, 2);
 						func_891(&(Local_14.f_12[7]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 					}
-					iLocal_646[13] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[7]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[7]), 2), vVar0);
+					iLocal_646[13] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_12[7]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_12[7]), 2), vVar0);
 					iLocal_384 = OBJECT::CREATE_OBJECT(bLocal_1617, func_431(6, 13), true, true, false, false, true);
 					func_1946(uLocal_256[27]);
 					ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(&(uLocal_256[27]), sLocal_165, true);
@@ -56071,8 +56071,8 @@ void func_1333(char[4] cParam0)
 						func_891(&(Local_14.f_42[3]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 						TASK::CLEAR_PED_TASKS(&(Local_14.f_42[3]), 1, 0);
 					}
-					iLocal_646[14] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[2]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[2]), 2), vVar0);
-					iLocal_646[15] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[3]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[3]), 2), vVar0);
+					iLocal_646[14] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[2]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[2]), 2), vVar0);
+					iLocal_646[15] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[3]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[3]), 2), vVar0);
 					bLocal_385 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					bLocal_386 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					iLocal_387 = OBJECT::CREATE_OBJECT(bLocal_1619, func_431(6, 13), true, true, false, false, true);
@@ -56204,9 +56204,9 @@ void func_1333(char[4] cParam0)
 						ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(uLocal_256[42]), sVar59, &Var11, true, sLocal_182, 2);
 						func_891(&(Local_14.f_42[6]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 					}
-					iLocal_646[16] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[4]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[4]), 2), vVar0);
-					iLocal_646[17] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[5]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[5]), 2), vVar0);
-					iLocal_646[18] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[6]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[6]), 2), vVar0);
+					iLocal_646[16] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[4]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[4]), 2), vVar0);
+					iLocal_646[17] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[5]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[5]), 2), vVar0);
+					iLocal_646[18] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[6]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[6]), 2), vVar0);
 					bLocal_393 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					bLocal_394 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					bLocal_395 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
@@ -56386,9 +56386,9 @@ void func_1333(char[4] cParam0)
 						ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(uLocal_256[65]), sVar63, &Var11, true, sLocal_208, 2);
 						func_891(&(Local_14.f_54[9]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 					}
-					iLocal_646[19] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[7]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[7]), 2), vVar0);
-					iLocal_646[20] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[8]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[8]), 2), vVar0);
-					iLocal_646[21] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[9]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[9]), 2), vVar0);
+					iLocal_646[19] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[7]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[7]), 2), vVar0);
+					iLocal_646[20] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[8]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[8]), 2), vVar0);
+					iLocal_646[21] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[9]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[9]), 2), vVar0);
 					bLocal_426 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					bLocal_427 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					iLocal_429 = OBJECT::CREATE_OBJECT(bLocal_1620, func_431(6, 13), true, true, false, false, true);
@@ -56549,7 +56549,7 @@ void func_1333(char[4] cParam0)
 						func_891(&(Local_14.f_54[6]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 						PED::SET_PED_CONFIG_FLAG(&(Local_14.f_54[6]), 130, true);
 					}
-					iLocal_646[22] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[10]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[10]), 2), vVar0);
+					iLocal_646[22] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_54[10]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_54[10]), 2), vVar0);
 					bLocal_431 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					func_1976(uLocal_256[70]);
 					ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(&(uLocal_256[70]), sLocal_210, true);
@@ -56681,8 +56681,8 @@ void func_1333(char[4] cParam0)
 						ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(uLocal_256[74]), sVar70, &Var11, true, sLocal_212, 2);
 						func_891(&(Local_14.f_42[8]), Var11, Var11.f_3.f_2, 2, 1073741824 /* Float: 2f */);
 					}
-					iLocal_646[23] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[7]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[7]), 2), vVar0);
-					iLocal_646[24] = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[8]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[8]), 2), vVar0);
+					iLocal_646[23] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[7]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[7]), 2), vVar0);
+					iLocal_646[24] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(&(Local_14.f_42[8]), true, false), ENTITY::GET_ENTITY_ROTATION(&(Local_14.f_42[8]), 2), vVar0);
 					bLocal_432 = OBJECT::CREATE_OBJECT(bLocal_1623, func_431(6, 13), true, true, false, false, true);
 					iLocal_433 = OBJECT::CREATE_OBJECT(bLocal_1619, func_431(6, 13), true, true, false, false, true);
 					func_1979(uLocal_256[74]);
@@ -68599,7 +68599,7 @@ void func_1600(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2306(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

@@ -9770,17 +9770,17 @@ int func_453(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = 665633627;
+			iVar0 = joaat("VOLCYLINDER");
 			vVar1 = { -2590.196f, 457.1693f, 146.3217f };
 			vVar4 = { 0f, 0f, -10.39278f };
 			vVar7 = { 2.669899f, 1.517158f, 2.343959f };
 			Jump @229; //curOff = 108
-			iVar0 = 665633627;
+			iVar0 = joaat("VOLCYLINDER");
 			vVar1 = { -2598.192f, 458.4411f, 146.3217f };
 			vVar4 = { 0f, 0f, -10.39278f };
 			vVar7 = { 2.063489f, 1.517158f, 2.343959f };
 			Jump @229; //curOff = 167
-			iVar0 = -1612834106;
+			iVar0 = joaat("VOLBOX");
 			vVar1 = { -2594.264f, 457.3065f, 148.0719f };
 			vVar4 = { 0f, 0f, -8.99988f };
 			vVar7 = { 10.63426f, 14.89231f, 6.516353f };

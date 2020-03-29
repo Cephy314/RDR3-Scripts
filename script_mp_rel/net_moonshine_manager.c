@@ -5414,23 +5414,23 @@ int func_228(int iParam0)
 			return 128;
 		case joaat("NET_FETCH_HIDEOUT_LEADER"):
 			return 200;
-		case 746035441:
+		case joaat("STABLE_MOUNT"):
 			return 400;
 		case joaat("MINI"):
 			return 512;
-		case 1567969312:
+		case joaat("CAMP_DOG"):
 			return 600;
-		case 849942934:
+		case joaat("ABILITY_CARD_EVENTS"):
 			return 800;
 		case joaat("DEFAULT"):
 			return 1024;
-		case 662654967:
+		case joaat("HUB_EVENTS"):
 			return 1026;
 		case joaat("UPDATE"):
 			return 1300;
-		case 356437857:
+		case joaat("MATCHMAKING"):
 			return 1301;
-		case 1444727078:
+		case joaat("PLAYER_MENU_SCRIPT"):
 			return 1400;
 		case joaat("POSSE_VERSUS_RACE"):
 			return 1600;
@@ -5438,37 +5438,37 @@ int func_228(int iParam0)
 			return 1800;
 		case joaat("PAUSE_MENU_SCRIPT"):
 			return 2000;
-		case 1371455820:
+		case joaat("SAVE_MENU_EVENTS"):
 			return 2024;
-		case 1230979482:
+		case joaat("SATCHEL_EVENTS"):
 			return 2025;
-		case -1298200006:
+		case joaat("MAP_EVENTS"):
 			return 2026;
-		case 28140092:
+		case joaat("SHOP_EVENTS"):
 			return 2027;
-		case 1497760498:
+		case joaat("BACKGROUND_SCRIPT"):
 			return 2047;
-		case -346238945:
+		case joaat("ROLE_PROGRESSION_EVENTS"):
 			return 2048;
-		case 627973797:
+		case joaat("REWARDS_EVENTS"):
 			return 2549;
-		case 1875090462:
+		case joaat("NET_SYSTEM_EXTENDED"):
 			return 2050;
 		case joaat("NET_CUTSCENE"):
 			return 2051;
-		case 141976779:
+		case joaat("NET_BEAT"):
 			return 2452;
-		case -390588104:
+		case joaat("COUPONS_EVENTS"):
 			return 2053;
-		case -1156795024:
+		case joaat("FME_PV_SMALL"):
 			return 3000;
-		case 1955050002:
+		case joaat("FME_THM_SMALL"):
 			return 3001;
-		case 1415704879:
+		case joaat("FME_STD_SMALL"):
 			return 3002;
-		case 1168642835:
+		case joaat("CAMPWORKS"):
 			return 3081;
-		case -1582256496:
+		case joaat("MP_MISSION_DOWNLOADER"):
 			return 3088;
 		case joaat("NET_GUN_FOR_HIRE_ONLINE"):
 			return 3090;
@@ -5476,19 +5476,19 @@ int func_228(int iParam0)
 			return 3500;
 		case joaat("SCRIPT_XML"):
 			return 4592;
-		case -299117668:
+		case joaat("PAUSE_MENU_EVENT_SCRIPT"):
 			return 4700;
 		case joaat("CAMP"):
 			return 5000;
-		case 1442743587:
+		case joaat("STRANGER_MISSION_NON_FETCH"):
 			return 5001;
-		case -354964017:
+		case joaat("DB_MEGA"):
 			return 5400;
-		case 487844664:
+		case joaat("FME_PV_MEDIUM"):
 			return 5500;
-		case -1050991852:
+		case joaat("FME_THM_MEDIUM"):
 			return 5501;
-		case -544337485:
+		case joaat("FME_STD_MEDIUM"):
 			return 5502;
 		case joaat("REGION"):
 			return 5503;
@@ -5496,13 +5496,13 @@ int func_228(int iParam0)
 			return 5504;
 		case joaat("FISHING"):
 			return 5505;
-		case 2122926971:
+		case joaat("ENDFLOW"):
 			return 5506;
-		case -1475898915:
+		case joaat("MISSION_INTRO"):
 			return 6000;
-		case -1644014996:
+		case joaat("MINIGAME_INTRO"):
 			return 6001;
-		case -45677744:
+		case joaat("NET_MAIN"):
 			return 6002;
 		case joaat("SHOP"):
 			return 6005;
@@ -5512,23 +5512,23 @@ int func_228(int iParam0)
 			return 6400;
 		case joaat("MINIGAME"):
 			return 6500;
-		case 364255091:
+		case joaat("FME_PV_LARGE"):
 			return 7000;
-		case -1330320955:
+		case joaat("FME_THM_LARGE"):
 			return 7001;
-		case -901433337:
+		case joaat("FME_STD_LARGE"):
 			return 7002;
-		case 1865091110:
+		case joaat("MISSION_TUTORIAL"):
 			return 7300;
-		case 36156066:
+		case joaat("AUTOSTART"):
 			return 7301;
-		case -1226137495:
+		case joaat("STRANGER_MISSION_FETCH"):
 			return 8700;
-		case 1524910643:
+		case joaat("MP_MISSION_LOBBY"):
 			return 10001;
-		case -1125321488:
+		case joaat("CHARACTER_REROLL"):
 			return 10003;
-		case 2013232686:
+		case joaat("MP_UGC_TRANSITION"):
 			return 14335;
 		case joaat("TRANSITION"):
 			return 25500;
@@ -5536,7 +5536,7 @@ int func_228(int iParam0)
 			return 40500;
 		case joaat("MISSION"):
 			return 45000;
-		case 56269207:
+		case joaat("INSTANCED_CONTENT"):
 			return 68000;
 		case joaat("NET_BACKGROUND"):
 			return 1631;
@@ -5550,9 +5550,9 @@ int func_228(int iParam0)
 			return 4080;
 		case joaat("DEBUG_MENU"):
 			return 50000;
-		case 708358771:
+		case joaat("TOOL_MEGA"):
 			return 65536;
-		case -800826243:
+		case joaat("DEBUG_MP_STEAL_VEHICLE"):
 			return 32768;
 		case joaat("VIRTUALIZATION_UNIT_TEST_SUPPORT"):
 			return 129;

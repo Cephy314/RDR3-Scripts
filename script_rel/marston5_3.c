@@ -34439,7 +34439,7 @@ int func_761(char[4] cParam0)
 	}
 	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_24))
 	{
-		iLocal_24 = VOLUME::_0x0EB78C2B156635B1(-432403087, -2518.442f, 442.701f, 147.1652f, 0f, 0f, 0f, 1.7f, 1.7f, 2f);
+		iLocal_24 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), -2518.442f, 442.701f, 147.1652f, 0f, 0f, 0f, 1.7f, 1.7f, 2f);
 	}
 	MISC::_SET_WEATHER_TYPE(joaat("CLOUDS"), false, true, true, 45f, false);
 	return 1;
@@ -56126,175 +56126,175 @@ struct<11> func_1413(int iParam0)
 			Var0 = { func_1261(5, 4) };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 3f, 3f, 5f };
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 1:
 			Var0 = { -1902.746f, 549.9982f, 113.9542f };
 			Var0.f_3 = { 0f, 0f, -177.9793f };
 			Var0.f_6 = { 12.73508f, 10.86732f, 6.40072f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 2:
 			Var0 = { -2226.456f, 584.6543f, 121.4832f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 204.4827f, 204.4827f, 12f };
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 3:
 			Var0 = { -1765.246f, 453.943f, 121.4832f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 212.097f, 212.097f, 20.86414f };
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 4:
 			Var0 = { -2590.546f, 466.1595f, 146.437f };
 			Var0.f_3 = { 0f, 0f, -12.97886f };
 			Var0.f_6 = { 4.283757f, 5.309471f, 5.787652f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 5:
 			Var0 = { -2573.056f, 508.0254f, 142.4734f };
 			Var0.f_3 = { 0f, -0.791004f, 57.82689f };
 			Var0.f_6 = { 1f, 15f, 2f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 6:
 			Var0 = { -2518.893f, 427.2391f, 147.0185f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 11.52518f, 21.36143f, 7.907348f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 7:
 			Var0 = { -2594.357f, 457.3597f, 146.6855f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 6.590342f, 9.521901f, 3.905404f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 8:
 			Var0 = { -2548.679f, 471.5409f, 142.4477f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 26.35782f, 18.75003f, 9.880117f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 9:
 			Var0 = { -2543.419f, 439.5654f, 145.9892f };
 			Var0.f_3 = { 0f, 0f, 0.475352f };
 			Var0.f_6 = { 17.70995f, 15.24694f, 9.880117f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 14:
 			Var0 = { -2541.621f, 427.8631f, 146.7765f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 2f, 2f, 5f };
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 15:
 			Var0 = { -2537.757f, 447.8745f, 145.2041f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 14f, 14f, 5f };
-			Var0.f_10 = 665633627;
+			Var0.f_10 = joaat("VOLCYLINDER");
 			break;
 		case 16:
 			Var0 = { -2545.655f, 408.933f, 148.3991f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 17.58618f, 6.665396f, 3f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 17:
 			Var0 = { -2545.655f, 399.7015f, 148.3991f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 17.58618f, 5f, 3f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 18:
 			Var0 = { -2541.25f, 403.5544f, 148.429f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 3f, 3f, 3.5f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 19:
 			Var0 = { -2526.394f, 452.208f, 146f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 2f, 2f, 3f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 20:
 			Var0 = { -2548.527f, 399.634f, 150.1078f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 29.75f, 12.25f, 6f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 21:
 			Var0 = { -2517.307f, 442.6388f, 147.5012f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 4.75f, 9f, 5f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 22:
 			Var0 = { 0f, 0f, 0f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 8f, 8f, 8f };
-			Var0.f_10 = -432403087;
+			Var0.f_10 = joaat("VOLSPHERE");
 			break;
 		case 23:
 			Var0 = { 0f, 0f, 0f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 3f, 3f, 3f };
-			Var0.f_10 = -432403087;
+			Var0.f_10 = joaat("VOLSPHERE");
 			break;
 		case 24:
 			Var0 = { 0f, 0f, 0f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 15f, 15f, 15f };
-			Var0.f_10 = -432403087;
+			Var0.f_10 = joaat("VOLSPHERE");
 			break;
 		case 26:
 			Var0 = { 0f, 0f, 0f };
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 1.5f, 1.7f, 1.7f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 25:
 			Var0 = { -2543.419f, 431.5654f, 145.9892f };
 			Var0.f_3 = { 0f, 0f, 0.475352f };
 			Var0.f_6 = { 17.70995f, 6.24694f, 9.880117f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 28:
 			Var0 = { -2518.005f, 431.1358f, 147.0552f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 1.4f, 1.4f, 1.4f };
-			Var0.f_10 = -432403087;
+			Var0.f_10 = joaat("VOLSPHERE");
 			break;
 		case 29:
 			Var0 = { -2515.908f, 420.4486f, 146.7701f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 1f, 1f, 1f };
-			Var0.f_10 = -432403087;
+			Var0.f_10 = joaat("VOLSPHERE");
 			break;
 		case 30:
 			Var0 = { -1945.516f, 536.8512f, 119.5931f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 35f, 69f, 16f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 32:
 			Var0 = { -2547.54f, 400.3102f, 149.5863f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 22f, 13f, 6f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 31:
 			Var0 = { -2542.25f, 400.554f, 148.429f };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 13f, 13f, 4.5f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		default:
 			Var0 = { vLocal_19 };
 			Var0.f_3 = { vLocal_19 };
 			Var0.f_6 = { 10f, 10f, 10f };
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;
@@ -57834,7 +57834,7 @@ void func_1467(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_1971(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;
@@ -65743,10 +65743,10 @@ int func_1703(char[4] cParam0)
 		TASK::TASK_LOOK_AT_ENTITY(&(Local_59[4]), Global_35, -1, 0, 51, 0);
 		TASK::TASK_LOOK_AT_ENTITY(Global_35, &(Local_59[4]), -1, 0, 51, 0);
 		func_1676(cParam0, "MAR5_HRETURN", 0);
-		Local_59.f_111[10] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2532.71f, 439.5654f, 145.9892f, 0f, 0f, 0.475352f, 3.71f, 15.24694f, 9.880117f);
-		Local_59.f_111[11] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2554.13f, 439.5654f, 145.9892f, 0f, 0f, 0.475352f, 3.71f, 15.24694f, 9.880117f);
-		Local_59.f_111[12] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2542.71f, 430.015f, 145.9892f, 0f, 0f, 90f, 3.71f, 19.247f, 9.880117f);
-		Local_59.f_111[13] = VOLUME::_0x0EB78C2B156635B1(-1612834106, -2542.71f, 448.97f, 145.9892f, 0f, 0f, 90f, 3.71f, 19.247f, 9.880117f);
+		Local_59.f_111[10] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2532.71f, 439.5654f, 145.9892f, 0f, 0f, 0.475352f, 3.71f, 15.24694f, 9.880117f);
+		Local_59.f_111[11] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2554.13f, 439.5654f, 145.9892f, 0f, 0f, 0.475352f, 3.71f, 15.24694f, 9.880117f);
+		Local_59.f_111[12] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2542.71f, 430.015f, 145.9892f, 0f, 0f, 90f, 3.71f, 19.247f, 9.880117f);
+		Local_59.f_111[13] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -2542.71f, 448.97f, 145.9892f, 0f, 0f, 90f, 3.71f, 19.247f, 9.880117f);
 		func_418(&(Local_59.f_176), 524288);
 	}
 	if (ENTITY::IS_ENTITY_IN_VOLUME(&(Local_59[5]), &(Local_59.f_111[9]), true, 0) && ENTITY::IS_ENTITY_IN_VOLUME(&(Local_59[5]), &(Local_59.f_111[9]), true, 0))

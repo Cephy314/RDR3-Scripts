@@ -4884,35 +4884,35 @@ struct<11> func_169(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 42.536f };
 					Var0.f_6 = { 12.531f, 9.1f, 9f };
 					Var0.f_9 = "SHOW_FOCUS_CAM";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 1:
 					Var0 = { 2694.922f, -1351.853f, 47.97008f };
 					Var0.f_3 = { 0f, 0f, 41.00079f };
 					Var0.f_6 = { 7.095272f, 3.680561f, 4.124079f };
 					Var0.f_9 = "SHOW_SEATS_LEFT";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 2:
 					Var0 = { 2698.459f, -1355.921f, 47.97008f };
 					Var0.f_3 = { 0f, 0f, 41.00079f };
 					Var0.f_6 = { 7.095272f, 3.680561f, 4.124079f };
 					Var0.f_9 = "SHOW_SEATS_RIGHT";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 3:
 					Var0 = { 2686.465f, -1362.323f, 47.97008f };
 					Var0.f_3 = { 0f, 0f, 41.00078f };
 					Var0.f_6 = { 4.481431f, 8.317011f, 4.124079f };
 					Var0.f_9 = "SHOW_FRONT_BUFFER";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 4:
 					Var0 = { 2695.047f, -1355.205f, 49.07318f };
 					Var0.f_3 = { 0f, 0f, 39.99998f };
 					Var0.f_6 = { 19.67865f, 9.058702f, 4.067907f };
 					Var0.f_9 = "SHOW_CROWD_DELETE";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 			}
 			break;
@@ -4924,35 +4924,35 @@ struct<11> func_169(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 0.496f };
 					Var0.f_6 = { 11.467f, 8.9f, 8f };
 					Var0.f_9 = "SHOW_FOCUS_CAM";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 1:
 					Var0 = { -779.944f, -1359.784f, 44.57523f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 11.65175f, 4.094016f, 3.77397f };
 					Var0.f_9 = "SHOW_SEATS_LEFT";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 2:
 					Var0 = { -779.944f, -1365.717f, 44.57523f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 11.65175f, 4.094016f, 3.77397f };
 					Var0.f_9 = "SHOW_SEATS_RIGHT";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 3:
 					Var0 = { -788.271f, -1362.526f, 44.57523f };
 					Var0.f_3 = { 0f, 0f, 0f };
 					Var0.f_6 = { 6.064409f, 8.635888f, 3.77397f };
 					Var0.f_9 = "SHOW_FRONT_BUFFER";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 4:
 					Var0 = { -778.6844f, -1362.457f, 45.677f };
 					Var0.f_3 = { 0f, 0f, 0.496382f };
 					Var0.f_6 = { 16f, 8.9f, 8f };
 					Var0.f_9 = "SHOW_CROWD_DELETE";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 			}
 			break;
@@ -4964,35 +4964,35 @@ struct<11> func_169(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 39.038f };
 					Var0.f_6 = { 12.531f, 9.1f, 9f };
 					Var0.f_9 = "SHOW_FOCUS_CAM";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 1:
 					Var0 = { -345.8821f, 697.2924f, 117.5554f };
 					Var0.f_3 = { 0f, 0f, 14.26797f };
 					Var0.f_6 = { 3.162789f, 6.641141f, 2.407862f };
 					Var0.f_9 = "SHOW_SEATS_LEFT";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 2:
 					Var0 = { -349.6249f, 696.3406f, 117.5554f };
 					Var0.f_3 = { 0f, 0f, 14.26797f };
 					Var0.f_6 = { 2.509765f, 6.641141f, 2.407862f };
 					Var0.f_9 = "SHOW_SEATS_RIGHT";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 3:
 					Var0 = { -350.7378f, 705.5359f, 117.5554f };
 					Var0.f_3 = { 0f, 0f, 14.26797f };
 					Var0.f_6 = { 8.752253f, 6.118175f, 4.255467f };
 					Var0.f_9 = "SHOW_FRONT_BUFFER";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 				case 4:
 					Var0 = { -347.6639f, 696.6296f, 118.3223f };
 					Var0.f_3 = { 0f, 0f, 15.66641f };
 					Var0.f_6 = { 7.262365f, 9.866415f, 4.317828f };
 					Var0.f_9 = "SHOW_CROWD_DELETE";
-					Var0.f_10 = -1612834106;
+					Var0.f_10 = joaat("VOLBOX");
 					break;
 			}
 			break;
@@ -10917,56 +10917,56 @@ struct<11> func_272(int iParam0, int iParam1)
 					Var0.f_3 = { 0f, 0f, 9.568836f };
 					Var0.f_6 = { 4.336886f, 2f, 2.155625f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW1_LEFT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 1:
 					Var0 = { 2549.294f, -1303.83f, 47.04182f };
 					Var0.f_3 = { 0f, 0f, -9.89514f };
 					Var0.f_6 = { 4.260345f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW1_RIGHT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 2:
 					Var0 = { 2543.097f, -1302.039f, 47.34119f };
 					Var0.f_3 = { 0f, 0f, 8.842982f };
 					Var0.f_6 = { 5.463117f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW2_LEFT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 3:
 					Var0 = { 2550.183f, -1302.069f, 47.34119f };
 					Var0.f_3 = { 0f, 0f, -10.03278f };
 					Var0.f_6 = { 4.277905f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW2_RIGHT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 4:
 					Var0 = { 2542.933f, -1300.3f, 47.63106f };
 					Var0.f_3 = { 0f, 0f, 9.537826f };
 					Var0.f_6 = { 5.29451f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW3_LEFT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 5:
 					Var0 = { 2550.596f, -1300.471f, 47.63106f };
 					Var0.f_3 = { 0f, 0f, -9.448911f };
 					Var0.f_6 = { 3.957135f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW3_RIGHT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 6:
 					Var0 = { 2542.582f, -1298.776f, 47.90404f };
 					Var0.f_3 = { 0f, 0f, 9.277945f };
 					Var0.f_6 = { 4.706136f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW4_LEFT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 				case 7:
 					Var0 = { 2549.868f, -1298.625f, 47.904f };
 					Var0.f_3 = { 0f, 0f, -9.896723f };
 					Var0.f_6 = { 5.116724f, 2f, 2f };
 					Var0.f_10 = "SHOW_BLOCKING_ROW4_RIGHT";
-					Var0.f_9 = -1612834106;
+					Var0.f_9 = joaat("VOLBOX");
 					break;
 			}
 			break;

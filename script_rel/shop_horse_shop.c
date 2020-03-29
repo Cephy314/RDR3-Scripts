@@ -80143,14 +80143,14 @@ void func_2492(vector3 vParam0, float fParam3, vector3 vParam4, float fParam7, f
 	Global_1109400->f_388.f_17.f_6 = { vParam0 };
 	Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 	Global_1109400->f_388.f_17 = { fParam9, fParam9, fParam9 };
-	Global_1109400->f_388.f_17.f_9 = -432403087;
+	Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 	if (fParam8 > 1f)
 	{
 		Global_1109400->f_388.f_16 = 1;
 		Global_1109400->f_388.f_6.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_388.f_6.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_6 = { fParam8, fParam8, fParam8 };
-		Global_1109400->f_388.f_6.f_9 = -432403087;
+		Global_1109400->f_388.f_6.f_9 = joaat("VOLSPHERE");
 	}
 	func_2854(&(Global_1109400->f_427));
 	Global_1109400->f_427.f_6 = { vParam4 };

@@ -23115,7 +23115,7 @@ struct<11> func_638(int iParam0)
 				Var0.f_1 = { 199.4699f, 237.2025f, 107.8168f };
 				Var0.f_4 = { 0f, 0f, 0f };
 				Var0.f_7 = { 25f, 25f, 50f };
-				Var0 = 665633627;
+				Var0 = joaat("VOLCYLINDER");
 				Var0.f_10 = "H2_BUFFALO_HERD_SCENARIO";
 			}
 			else
@@ -23123,7 +23123,7 @@ struct<11> func_638(int iParam0)
 				Var0.f_1 = { 220.7429f, -43.6f, 103.0256f };
 				Var0.f_4 = { 0f, 0f, 0f };
 				Var0.f_7 = { 25f, 25f, 50f };
-				Var0 = 665633627;
+				Var0 = joaat("VOLCYLINDER");
 				Var0.f_10 = "H2_BUFFALO_HERD_SCENARIO";
 			}
 			break;
@@ -23131,63 +23131,63 @@ struct<11> func_638(int iParam0)
 			Var0.f_1 = { 211.1375f, 235.2025f, 108.6283f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 80f, 80f, 80f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_BUFFALO_HERD_OBJECTIVE";
 			break;
 		case 6:
 			Var0.f_1 = { 834.0534f, 425.7491f, 98.3052f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 40f, 40f, 40f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_INVESTIGATE_HUNTERS_CAMP_OBJECTIVE";
 			break;
 		case 7:
 			Var0.f_1 = { 481.967f, 290.271f, 111.3091f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 6f, 6f, 5f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_ABANDONED_CAMPSITE";
 			break;
 		case 8:
 			Var0.f_1 = { 482.2845f, 288.3228f, 110.3084f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 2f, 2f, 2f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_ABANDONED_CAMPSITE_FIRE";
 			break;
 		case 9:
 			Var0.f_1 = { 874.907f, 419.01f, 112.5354f };
 			Var0.f_4 = { 0f, 0f, -15.99999f };
 			Var0.f_7 = { 2f, 1.5f, 2f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_INTERROGATION_INTIMIDATE";
 			break;
 		case 10:
 			Var0.f_1 = { 876.0905f, 419.555f, 111.54f };
 			Var0.f_4 = { 0f, 0f, -18f };
 			Var0.f_7 = { 10f, 8f, 3f };
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_10 = "H2_INTERROGATION_FIGHT_AREA";
 			break;
 		case 11:
 			Var0.f_1 = { 875.6318f, 419.5912f, 111.8789f };
 			Var0.f_4 = { 0f, 0f, -18f };
 			Var0.f_7 = { 13.5f, 10f, 5f };
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_10 = "H2_INTERROGATION_CAMPSITE";
 			break;
 		case 12:
 			Var0.f_1 = { 874.7702f, 416.9062f, 111.2359f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.5f, 1.5f, 1.5f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_ABANDONED_CAMPSITE_FIRE";
 			break;
 		case 13:
 			Var0.f_1 = { 879.6409f, 415.9319f, 110.8872f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 1.5f, 1.5f, 1.5f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_ABANDONED_CAMPSITE_FIRE";
 			break;
 		case 14:
@@ -23196,7 +23196,7 @@ struct<11> func_638(int iParam0)
 				Var0.f_1 = { 152.0808f, 250.6083f, 107.8168f };
 				Var0.f_4 = { 0f, 0f, 0f };
 				Var0.f_7 = { 75f, 75f, 75f };
-				Var0 = 665633627;
+				Var0 = joaat("VOLCYLINDER");
 				Var0.f_10 = "H2_BUFFALO_FLEE_BOUNDS";
 			}
 			else
@@ -23204,7 +23204,7 @@ struct<11> func_638(int iParam0)
 				Var0.f_1 = { 222.6963f, -45.03358f, 107.8168f };
 				Var0.f_4 = { 0f, 0f, 0f };
 				Var0.f_7 = { 75f, 90f, 75f };
-				Var0 = 665633627;
+				Var0 = joaat("VOLCYLINDER");
 				Var0.f_10 = "H2_BUFFALO_FLEE_BOUNDS";
 			}
 			break;
@@ -23214,7 +23214,7 @@ struct<11> func_638(int iParam0)
 				Var0.f_1 = { 152.0808f, 250.6083f, 107.8168f };
 				Var0.f_4 = { 0f, 0f, 0f };
 				Var0.f_7 = { 35f, 35f, 75f };
-				Var0 = 665633627;
+				Var0 = joaat("VOLCYLINDER");
 				Var0.f_10 = "H2_BUFFALO_FLEE_INNER_BOUNDS";
 			}
 			else
@@ -23222,7 +23222,7 @@ struct<11> func_638(int iParam0)
 				Var0.f_1 = { 222.6963f, -45.03358f, 107.8168f };
 				Var0.f_4 = { 0f, 0f, 0f };
 				Var0.f_7 = { 44f, 55f, 75f };
-				Var0 = 665633627;
+				Var0 = joaat("VOLCYLINDER");
 				Var0.f_10 = "H2_BUFFALO_FLEE_INNER_BOUNDS";
 			}
 			break;
@@ -23230,35 +23230,35 @@ struct<11> func_638(int iParam0)
 			Var0.f_1 = { 87.72281f, -305.6749f, 105.9662f };
 			Var0.f_4 = { 0f, 0f, 26.03327f };
 			Var0.f_7 = { 42.17675f, 16.06581f, 18.90086f };
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_10 = "H2_BUFFALO_SCENARIO_BLOCKING";
 			break;
 		case 17:
 			Var0.f_1 = { 882.888f, 414.049f, 111.559f };
 			Var0.f_4 = { 0f, 0f, 61.87479f };
 			Var0.f_7 = { 7.326179f, 16.99286f, 2.598f };
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_10 = "H2_HUNTERS_CAMP";
 			break;
 		case 18:
 			Var0.f_1 = { 875.8608f, 416.024f, 110.5497f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 4.687f, 5.732334f, 5.220385f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_ANTI_GRIEF";
 			break;
 		case 19:
 			Var0.f_1 = { 731.61f, 403.968f, 108.999f };
 			Var0.f_4 = { 0f, 0f, -33.529f };
 			Var0.f_7 = { 43.621f, 14.508f, 23.829f };
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_10 = "H2_BLOCK_TRAFFIC";
 			break;
 		case 20:
 			Var0.f_1 = { 877.3221f, 416.4137f, 110.6165f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 10f, 10f, 10f };
-			Var0 = -432403087;
+			Var0 = joaat("VOLSPHERE");
 			Var0.f_10 = "H2_WALK_ZONE";
 			break;
 	}

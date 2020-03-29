@@ -6323,49 +6323,49 @@ struct<11> func_135(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2531.427f, 1172.162f, 226.2103f };
 			Var0.f_4 = { 0f, 0f, 41.10626f };
 			Var0.f_7 = { 22.25293f, 16.91905f, 10.9782f };
 			Var0.f_10 = "HERMIT_WOMAN_YARD";
 			break;
 		case 1:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -2536.681f, 1169.299f, 225.123f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 20f, 20f, 5f };
 			Var0.f_10 = "HERMIT_WOMAN_WARNING_ZONE";
 			break;
 		case 2:
-			Var0 = 665633627;
+			Var0 = joaat("VOLCYLINDER");
 			Var0.f_1 = { -2539.542f, 1166.787f, 223.7133f };
 			Var0.f_4 = { 0f, 0f, 0f };
 			Var0.f_7 = { 25f, 25f, 20f };
 			Var0.f_10 = "HERMIT_WOMAN_CANNOT_LEAVE_ZONE";
 			break;
 		case 3:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2532.033f, 1174.148f, 226.0514f };
 			Var0.f_4 = { 0f, 0f, 47.93365f };
 			Var0.f_7 = { 3.61986f, 3.538449f, 3f };
 			Var0.f_10 = "HERMIT_WOMAN_INSIDE_HOUSE";
 			break;
 		case 4:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2552.133f, 1153.251f, 224.1595f };
 			Var0.f_4 = { 0f, 0f, 47.71975f };
 			Var0.f_7 = { 37.83019f, 53.0695f, 30.03766f };
 			Var0.f_10 = "HERMIT_WOMAN_APPROACH_FRONT";
 			break;
 		case 5:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2535.299f, 1187.176f, 232.1368f };
 			Var0.f_4 = { 0f, 0f, 46.88907f };
 			Var0.f_7 = { 40f, 28.24742f, 20f };
 			Var0.f_10 = "HERMIT_WOMAN_APPROACH_LEFT";
 			break;
 		case 6:
-			Var0 = -1612834106;
+			Var0 = joaat("VOLBOX");
 			Var0.f_1 = { -2514.26f, 1167.606f, 232.3327f };
 			Var0.f_4 = { 0f, 0f, 46.88901f };
 			Var0.f_7 = { 40f, 29.18088f, 27.39021f };

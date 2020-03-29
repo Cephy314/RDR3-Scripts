@@ -52088,7 +52088,7 @@ void func_1252(var uParam0)
 												}
 												func_1746(uParam0, 0);
 												PED::_0xAD3330E3C3E98007(&(Local_2535[0 /*13*/]), 1);
-												iLocal_3972 = VOLUME::_0x0EB78C2B156635B1(-432403087, ENTITY::GET_ENTITY_COORDS(&(Local_153[0 /*58*/]), true, false), 0f, 0f, 0f, 1.5f, 1.5f, 1.5f);
+												iLocal_3972 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), ENTITY::GET_ENTITY_COORDS(&(Local_153[0 /*58*/]), true, false), 0f, 0f, 0f, 1.5f, 1.5f, 1.5f);
 												ANIMSCENE::_SET_ANIM_SCENE_PLAYBACK_LIST_BOOL(iLocal_3811, "pbl_action_dutch_explains", true);
 												ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_3811, "dutch", &(Local_153[0 /*58*/]), 0);
 												ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_3811, "A_C_Horse_Gang_Dutch", &(Local_2535[0 /*13*/]), 0);
@@ -68492,7 +68492,7 @@ void func_1514(bool bParam0, bool bParam1)
 		Global_1109400->f_388.f_17.f_6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), false, false) };
 		Global_1109400->f_388.f_17.f_3 = { 0f, 0f, 0f };
 		Global_1109400->f_388.f_17 = { Global_1899378->f_23.f_1, Global_1899378->f_23.f_1, Global_1899378->f_23.f_1 };
-		Global_1109400->f_388.f_17.f_9 = -432403087;
+		Global_1109400->f_388.f_17.f_9 = joaat("VOLSPHERE");
 		func_2110(&(Global_1109400->f_427));
 		Global_1109400->f_427.f_6 = { Global_1109400->f_388.f_17.f_6 };
 		Global_1109400->f_427 = Global_1109400->f_388;

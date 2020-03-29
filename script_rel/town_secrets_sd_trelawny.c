@@ -692,14 +692,14 @@ struct<11> func_39(int iParam0)
 			Var0.f_3 = { 0f, 0f, 0f };
 			Var0.f_6 = { 1.319822f, 1.53588f, 2.388693f };
 			Var0.f_9 = "TS_SD_DOOR_TRIGGER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 		case 0:
 			Var0 = { 2731.981f, -1182.07f, 53.10075f };
 			Var0.f_3 = { 0f, 0f, -3.041f };
 			Var0.f_6 = { 4.275794f, 1.53588f, 2.388693f };
 			Var0.f_9 = "TS_SD_WALK_WALK_TRIGGER";
-			Var0.f_10 = -1612834106;
+			Var0.f_10 = joaat("VOLBOX");
 			break;
 	}
 	return Var0;

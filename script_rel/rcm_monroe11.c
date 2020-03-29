@@ -17928,7 +17928,7 @@ void func_624(int iParam0, vector3 vParam1, vector3 vParam4, bool bParam7, float
 	{
 		func_433(iParam0->f_343);
 	}
-	iParam0->f_343 = VOLUME::_0x0EB78C2B156635B1(665633627, vParam1, 0f, 0f, 0f, vParam4);
+	iParam0->f_343 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), vParam1, 0f, 0f, 0f, vParam4);
 	if (ENTITY::DOES_ENTITY_EXIST(bParam7))
 	{
 		PED::_0x7C00CFC48A782DC0(iParam0->f_343, bParam7, fParam8, fParam9, fParam10, fParam11, fParam12, fParam13, 2, iParam14);
@@ -46816,105 +46816,105 @@ struct<12> func_1547(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 456.24f, 2237.452f, 254.027f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 55f, 55f, 20f };
 			Var0.f_11 = "MNR1_WAPITI_CAMP";
 			break;
 		case 1:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 615.0644f, 2147.62f, 224.7754f };
 			Var0.f_5 = { 0f, 0f, 42.59441f };
 			Var0.f_8 = { 6.286007f, 28.41161f, 6.227861f };
 			Var0.f_11 = "MNR1_SEARCH_SUPPLY_WAGON";
 			break;
 		case 2:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 579.7685f, 1274.907f, 205.1775f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 8f, 8f, 10f };
 			Var0.f_11 = "MNR1_CREATE_CONVOY";
 			break;
 		case 3:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 491.4612f, 2222.624f, 246.1221f };
 			Var0.f_5 = { 0f, 0f, -25.83043f };
 			Var0.f_8 = { 10f, 15.04386f, 10f };
 			Var0.f_11 = "MNR1_HITCHING_POST_BLOCKING";
 			break;
 		case 4:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 75.72507f, 1099.296f, 204.9469f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 1.3f, 0.8f, 5f };
 			Var0.f_11 = "MNR1_SEARCH_SUPPLY_WAGON";
 			break;
 		case 5:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 75.62507f, 1099.696f, 204.6469f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 4f, 4f, 15f };
 			Var0.f_11 = "MNR1_DEFENSE_SUPPLY_WAGON";
 			break;
 		case 6:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 75.62507f, 1099.696f, 204.6469f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 1.75f, 2.5f, 5f };
 			Var0.f_11 = "MNR1_BACK_OF_SUPPLY_WAGON";
 			break;
 		case 7:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 75.63507f, 1099.696f, 204.6469f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 6f, 8.86f, 6f };
 			Var0.f_11 = "MNR1_JUMP_TO_WAGON";
 			break;
 		case 8:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 75.63507f, 1094.696f, 204.6469f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 9f, 15f, 6f };
 			Var0.f_11 = "MNR1_WAGON_FRONT_HOLDUP";
 			break;
 		case 9:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 661.4412f, 1409.385f, 180.8455f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 5f, 5f, 5f };
 			Var0.f_11 = "MNR1_ROAD_BLOCK_01";
 			break;
 		case 10:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 443.1732f, 1198.818f, 177.4387f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 5f, 5f, 5f };
 			Var0.f_11 = "MNR1_ROAD_BLOCK_02";
 			break;
 		case 11:
-			Var0.f_1 = 665633627;
+			Var0.f_1 = joaat("VOLCYLINDER");
 			Var0.f_2 = { 0f, 0f, 0f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 15f, 15f, 10f };
 			Var0.f_11 = "MNR1_15_AROUND_WAGON";
 			break;
 		case 12:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 75.63507f, 1095.696f, 204.6469f };
 			Var0.f_5 = { 0f, 0f, 0f };
 			Var0.f_8 = { 9f, 4.017384f, 6f };
 			Var0.f_11 = "MNR1_VOLUME_WAGON_PLAYER_AUDIBLE";
 			break;
 		case 13:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 512.9517f, 694.9431f, 115.9405f };
 			Var0.f_5 = { 0f, 0f, -8.641496f };
 			Var0.f_8 = { 24.96774f, 6.904785f, 3.14512f };
 			Var0.f_11 = "MNR1_VOLUME_CORWNALL_CONVOY_ARRIVAL";
 			break;
 		case 14:
-			Var0.f_1 = -1612834106;
+			Var0.f_1 = joaat("VOLBOX");
 			Var0.f_2 = { 477.2625f, 2229.201f, 248.0322f };
 			Var0.f_5 = { 0f, 0f, -8.000254f };
 			Var0.f_8 = { 25.28731f, 7.985964f, 4.04024f };
@@ -62977,7 +62977,7 @@ void func_2024(var uParam0, var uParam1)
 	{
 		return;
 	}
-	uParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	uParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(uParam1->f_36, 1);
 }
 

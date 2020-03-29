@@ -745,7 +745,7 @@ void func_16(int iParam0, var uParam1)
 	switch (iParam0->f_51.f_4)
 	{
 		case 0:
-			(*uParam1)[3 /*11*/] = VOLUME::_0x0EB78C2B156635B1(-432403087, 2671.58f, -1181.517f, 52.1704f, 0f, 0f, 0f, 2f, 2f, 2f);
+			(*uParam1)[3 /*11*/] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 2671.58f, -1181.517f, 52.1704f, 0f, 0f, 0f, 2f, 2f, 2f);
 			func_60((*uParam1)[7 /*11*/], 2697.74f, -1188.479f, 52.528f, 0f, 0f, 0f, 5f, 2f, 3f, "REKT_VOL_BACK_01");
 			func_60((*uParam1)[8 /*11*/], 2675.875f, -1194.393f, 53.462f, 0f, 0f, 0f, 5f, 2f, 3f, "REKT_VOL_BACK_02");
 			func_60((*uParam1)[10 /*11*/], 2685.052f, -1168.167f, 53.745f, 0f, 0f, 0f, 3f, 9f, 4f, "REKT_VOL_BEHIND");
@@ -767,7 +767,7 @@ void func_16(int iParam0, var uParam1)
 			func_60((*uParam1)[14 /*11*/], 2686.452f, -1188.194f, 54.882f, 0f, 0f, 0f, 15f, 14f, 6f, "REKT_VOL_EARLY_APPROACH");
 			break;
 		case 1:
-			(*uParam1)[3 /*11*/] = VOLUME::_0x0EB78C2B156635B1(-432403087, 2692.519f, -1264.874f, 50.36831f, 0f, 0f, 22f, 3f, 3f, 3f);
+			(*uParam1)[3 /*11*/] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 2692.519f, -1264.874f, 50.36831f, 0f, 0f, 22f, 3f, 3f, 3f);
 			func_60((*uParam1)[7 /*11*/], 2689.787f, -1304.487f, 51.925f, 0f, 0f, 25f, 10f, 15f, 8f, "REKT_VOL_BACK_01");
 			func_60((*uParam1)[8 /*11*/], 2677.282f, -1297.975f, 50.727f, 0f, 0f, 25f, 4f, 6f, 4f, "REKT_VOL_BACK_02");
 			func_60((*uParam1)[9 /*11*/], 2694.295f, -1281.876f, 51.218f, 0f, 0f, 25f, 6f, 3f, 2.5f, "REKT_VOL_BACK_03");
@@ -785,11 +785,11 @@ void func_16(int iParam0, var uParam1)
 			func_61((*uParam1)[1 /*11*/], 2696.333f, -1273.065f, 50.8f, 0f, 0f, 25f, 4.5f, 26f, 3f);
 			func_61((*uParam1)[2 /*11*/], 2696.935f, -1283.473f, 50.913f, 0f, 0f, 25f, 4f, 7f, 2.5f);
 			func_61((*uParam1)[0 /*11*/], 2692.643f, -1285.472f, 50.913f, 0f, 0f, 25f, 7f, 7f, 2.5f);
-			(*uParam1)[13 /*11*/] = VOLUME::_0x0EB78C2B156635B1(-432403087, 2695.819f, -1282.33f, 50.50859f, 0f, 0f, 25f, 2.5f, 2.5f, 2.5f);
+			(*uParam1)[13 /*11*/] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 2695.819f, -1282.33f, 50.50859f, 0f, 0f, 25f, 2.5f, 2.5f, 2.5f);
 			func_60((*uParam1)[14 /*11*/], 2690.084f, -1288.289f, 50.89f, 0f, 0f, 25f, 20f, 15f, 4f, "REKT_VOL_EARLY_APPROACH");
 			break;
 		case 2:
-			(*uParam1)[3 /*11*/] = VOLUME::_0x0EB78C2B156635B1(-432403087, 2750.235f, -1164.767f, 47.9651f, 0f, 0f, -33.5f, 2f, 2f, 2f);
+			(*uParam1)[3 /*11*/] = VOLUME::_0x0EB78C2B156635B1(joaat("VOLSPHERE"), 2750.235f, -1164.767f, 47.9651f, 0f, 0f, -33.5f, 2f, 2f, 2f);
 			func_60((*uParam1)[7 /*11*/], 2732.955f, -1205.044f, 50.777f, 0f, 0f, 149.25f, 12f, 8f, 5f, "REKT_VOL_BACK_01");
 			func_60((*uParam1)[8 /*11*/], 2746.83f, -1196.851f, 52.005f, 0f, 0f, 60f, 8f, 11f, 7f, "REKT_VOL_BACK_02");
 			func_60((*uParam1)[9 /*11*/], 2739.977f, -1177.354f, 50.897f, 0f, 0f, 60f, 2.5f, 2.5f, 5f, "REKT_VOL_BACK_03");
@@ -14173,7 +14173,7 @@ int func_454(int iParam0)
 		{
 			case joaat("L_14_CAVE_INT"):
 			case joaat("GAP_MINE_INT"):
-			case -1269216817:
+			case joaat("MIL_MINE_CAVE_INT"):
 			case joaat("M05_BEARCAVE_MAIN"):
 			case joaat("ELH_SEACAVES_INT"):
 			case joaat("BEA_01_INT"):
@@ -14208,7 +14208,7 @@ int func_455(int iParam0)
 			case joaat("HEA_TUNNEL_01"):
 			case joaat("HEA_TUNNEL_02"):
 			case joaat("Q0304_TUNNEL_EXIT"):
-			case 1911907177:
+			case joaat("J_16_TUNNEL_INT"):
 				return 1;
 		}
 	}

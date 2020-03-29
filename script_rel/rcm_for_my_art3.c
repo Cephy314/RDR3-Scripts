@@ -9075,7 +9075,7 @@ void func_314(var uParam0, int iParam1, bool bParam2, bool bParam3)
 			func_382(iLocal_594, 1, 0f, 0, 0, 0, 0, 0);
 			if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_44))
 			{
-				bLocal_44 = VOLUME::_0x0EB78C2B156635B1(-1612834106, 2747.735f, -1171.029f, 48.2359f, 0f, 0f, -28.936f, 2f, 2f, 5f);
+				bLocal_44 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), 2747.735f, -1171.029f, 48.2359f, 0f, 0f, -28.936f, 2f, 2f, 5f);
 			}
 			if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_46))
 			{

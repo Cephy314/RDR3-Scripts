@@ -22657,8 +22657,8 @@ int func_744(var uParam0)
 					func_1274(&(uParam0->f_604[1]), joaat("WORLD_ANIMAL_HORSE_GRAZING_DOMESTIC"), -1, 0, 0, -1082130432 /* Float: -1f */);
 					func_1275(uParam0);
 					uParam0->f_919 = 0;
-					uParam0->f_616 = VOLUME::_0x0EB78C2B156635B1(665633627, -588.817f, -339.592f, 83.215f, 0f, 0f, 22.349f, 2f, 6.852f, 5f);
-					uParam0->f_617 = VOLUME::_0x0EB78C2B156635B1(665633627, -590.199f, -340.998f, 83.215f, 0f, 0f, 45.493f, 2f, 6.852f, 5f);
+					uParam0->f_616 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -588.817f, -339.592f, 83.215f, 0f, 0f, 22.349f, 2f, 6.852f, 5f);
+					uParam0->f_617 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -590.199f, -340.998f, 83.215f, 0f, 0f, 45.493f, 2f, 6.852f, 5f);
 					PED::_0x931B241409216C1F(&(uParam0->f_604[0]), &(uParam0->f_604[1]), 0);
 					if (uParam0->f_595 == 0)
 					{
@@ -52793,14 +52793,14 @@ void func_1716(var uParam0)
 		func_1288(&(uParam0->f_604[0]), 0);
 		func_1288(Global_35, 0);
 		func_1969(0);
-		uParam0->f_618 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -573.783f, -334.888f, 83.215f, 0f, 0f, -20.848f, 8f, 1.894f, 10f);
-		uParam0->f_619 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -579.122f, -335.122f, 83.215f, 0f, 0f, 29.798f, 7.298f, 2.358f, 10f);
-		uParam0->f_620 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -582.88f, -337.484f, 83.215f, 0f, 0f, 19.786f, 3.14f, 1.511f, 10f);
-		uParam0->f_621 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -586.644f, -337.382f, 83.215f, 0f, 0f, -9.876f, 5.315f, 1.894f, 10f);
-		uParam0->f_622 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -589.918f, -337.926f, 83.215f, 0f, 0f, 25.144f, 7.298f, 2.358f, 10f);
-		uParam0->f_623 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -592.387f, -340.464f, 83.215f, 0f, 0f, 56.935f, 2.458f, 1.54f, 10f);
-		uParam0->f_624 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -595.22f, -343.044f, 83.215f, 0f, 0f, 42.51f, 5.771f, 2.121f, 10f);
-		uParam0->f_625 = VOLUME::_0x0EB78C2B156635B1(-1612834106, -601.329f, -344.666f, 83.215f, 0f, 0f, -3.953f, 9.908f, 1.54f, 10f);
+		uParam0->f_618 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -573.783f, -334.888f, 83.215f, 0f, 0f, -20.848f, 8f, 1.894f, 10f);
+		uParam0->f_619 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -579.122f, -335.122f, 83.215f, 0f, 0f, 29.798f, 7.298f, 2.358f, 10f);
+		uParam0->f_620 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -582.88f, -337.484f, 83.215f, 0f, 0f, 19.786f, 3.14f, 1.511f, 10f);
+		uParam0->f_621 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -586.644f, -337.382f, 83.215f, 0f, 0f, -9.876f, 5.315f, 1.894f, 10f);
+		uParam0->f_622 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -589.918f, -337.926f, 83.215f, 0f, 0f, 25.144f, 7.298f, 2.358f, 10f);
+		uParam0->f_623 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -592.387f, -340.464f, 83.215f, 0f, 0f, 56.935f, 2.458f, 1.54f, 10f);
+		uParam0->f_624 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -595.22f, -343.044f, 83.215f, 0f, 0f, 42.51f, 5.771f, 2.121f, 10f);
+		uParam0->f_625 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLBOX"), -601.329f, -344.666f, 83.215f, 0f, 0f, -3.953f, 9.908f, 1.54f, 10f);
 		func_590(uParam0->f_843[0 /*17*/], 0, 0);
 		func_590(uParam0->f_843[1 /*17*/], 0, 0);
 	}
@@ -67322,7 +67322,7 @@ void func_2270(var uParam0, int* iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 

@@ -16754,8 +16754,8 @@ char* func_593(int iParam0)
 
 void func_594()
 {
-	bLocal_76 = VOLUME::_0x0EB78C2B156635B1(665633627, -1625.881f, -1338.429f, 83.16171f, 0f, 0f, 0f, 1.2f, 1.2f, 1.2f);
-	bLocal_77 = VOLUME::_0x0EB78C2B156635B1(665633627, -1627.372f, -1337.161f, 82.81033f, 0f, 0f, 0f, 0.8f, 0.8f, 1.8f);
+	bLocal_76 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1625.881f, -1338.429f, 83.16171f, 0f, 0f, 0f, 1.2f, 1.2f, 1.2f);
+	bLocal_77 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -1627.372f, -1337.161f, 82.81033f, 0f, 0f, 0f, 0.8f, 0.8f, 1.8f);
 	VOLUME::_0x5B23DFF8E0948BB2(bLocal_76, 1);
 	VOLUME::_0x5B23DFF8E0948BB2(bLocal_77, 1);
 }
@@ -18241,81 +18241,81 @@ bool func_648(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, i
 		case 0:
 			if (iParam5 == 0)
 			{
-				*iParam1 = -1612834106;
+				*iParam1 = joaat("VOLBOX");
 				*uParam2 = { -1614.937f, -1236.707f, 83.86172f };
 				*uParam3 = { 0f, 0f, -10.91861f };
 				*uParam4 = { 85.33291f, 300.797f, 56.77631f };
 			}
 			else if (iParam5 == 1)
 			{
-				*iParam1 = -1612834106;
+				*iParam1 = joaat("VOLBOX");
 				*uParam2 = { -1650.963f, -1206.163f, 86.60019f };
 				*uParam3 = { 0f, 0f, 19.33957f };
 				*uParam4 = { 110.5368f, 205.9766f, 47.63528f };
 			}
 			break;
 		case 1:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1629.71f, -1338.377f, 82.0174f };
 			*uParam3 = { 0f, 0f, 124.8729f };
 			*uParam4 = { 8.516357f, 5.128632f, 2.655434f };
 			break;
 		case 2:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1629.71f, -1338.377f, 82.0174f };
 			*uParam3 = { 0f, 0f, 124.8729f };
 			*uParam4 = { 8.516357f, 5.128632f, 2.655434f };
 			break;
 		case 3:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1663.67f, -1151.53f, 76.79f };
 			*uParam3 = { 0f, 0f, 124.8729f };
 			*uParam4 = { 8.516357f, 5.128632f, 2.655434f };
 			break;
 		case 4:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1663.67f, -1151.53f, 76.79f };
 			*uParam3 = { 0f, 0f, 124.8729f };
 			*uParam4 = { 8.516357f, 5.128632f, 2.655434f };
 			break;
 		case 5:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1641.685f, -1360.294f, 84.82198f };
 			*uParam3 = { 0f, 0f, 150.1272f };
 			*uParam4 = { 23.06105f, 29.41247f, 4.844604f };
 			break;
 		case 6:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1641.685f, -1360.294f, 84.82198f };
 			*uParam3 = { 0f, 0f, 150.1271f };
 			*uParam4 = { 23.06105f, 29.41247f, 4.844604f };
 			break;
 		case 7:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1605.869f, -1101.909f, 66.32779f };
 			*uParam3 = { 0f, 0f, -13.85716f };
 			*uParam4 = { 3.752683f, 5.992797f, 3.083048f };
 			break;
 		case 8:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1662.824f, -1272.518f, 86.21485f };
 			*uParam3 = { 0f, 0f, 9.61804f };
 			*uParam4 = { 46.4284f, 31.30677f, 22.78977f };
 			break;
 		case 9:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1615.074f, -1274.28f, 80.35987f };
 			*uParam3 = { 0f, 0f, 9.61804f };
 			*uParam4 = { 46.92082f, 41.81302f, 13.42371f };
 			break;
 		case 10:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1570.93f, -1253.826f, 78.77445f };
 			*uParam3 = { 0f, 0f, 9.61804f };
 			*uParam4 = { 46.92082f, 31.61283f, 13.42371f };
 			break;
 		case 11:
-			*iParam1 = -1612834106;
+			*iParam1 = joaat("VOLBOX");
 			*uParam2 = { -1623.348f, -1238.254f, 86.21485f };
 			*uParam3 = { 0f, 0f, 21.23438f };
 			*uParam4 = { 37.08615f, 41.75758f, 22.78977f };

@@ -1191,7 +1191,7 @@ int func_29(int iParam0)
 	iLocal_27 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1889.879f, -1842.167f, 41.93663f, 0.080091f, 0.00918f, -19.04509f, 12.07183f, 6.861003f, 2.678024f, "m_volTriggerLeft");
 	iLocal_28 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1892.086f, -1835.776f, 41.94608f, 0.080091f, 0.00918f, -19.04509f, 12.07183f, 6.861003f, 2.678024f, "m_volTriggerRight");
 	iLocal_29 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(1888.238f, -1837.511f, 42.25996f, 0f, 0f, -115.9028f, 7.973451f, 7.65354f, 2.893382f, "m_volTrigger");
-	iLocal_30 = VOLUME::_0x0EB78C2B156635B1(665633627, func_145(1, 1), 0f, 0f, 0f, 1f, 1f, 3f);
+	iLocal_30 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), func_145(1, 1), 0f, 0f, 0f, 1f, 1f, 3f);
 	if (ANIMSCENE::_0x25557E324489393C(iLocal_21))
 	{
 		ANIMSCENE::SET_ANIM_SCENE_ENTITY(iLocal_21, "ARTHUR", Global_35, 0);
@@ -13006,7 +13006,7 @@ void func_577(bool bParam0, int iParam1)
 	{
 		return;
 	}
-	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(665633627, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
+	iParam1->f_36 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, 0f, 0.55f, 0.55f, 3f);
 	VOLUME::_0x5B23DFF8E0948BB2(iParam1->f_36, 1);
 }
 
