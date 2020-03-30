@@ -3857,7 +3857,7 @@ int func_126()
 		case joaat("CLOTHING_ITEM_HAT_PZERO_000"):
 		case joaat("CLOTHING_SP_CIVIL_WAR_HAT_000_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_086"):
-		case -1477995181: /* GXTEntry: "Stalker Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_000_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_008_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_048_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_048"):

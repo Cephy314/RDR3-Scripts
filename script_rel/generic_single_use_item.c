@@ -406,7 +406,7 @@ int func_10(int iParam0)
 	{
 		case 1156231582: /* GXTEntry: "Buzzed" */
 			return -986108061;
-		case -1472456118: /* GXTEntry: "Swept Back" */
+		case joaat("CLOTHING_ITEM_HAIR_SWEPT_BACK"):
 			return -1051664629;
 		case -2120294484: /* GXTEntry: "Swept Back Fade" */
 			return 1471627791;
@@ -1481,7 +1481,7 @@ int func_50(int iParam0)
 		case -986108061:
 			return 1156231582 /* GXTEntry: "Buzzed" */;
 		case -1051664629:
-			return -1472456118 /* GXTEntry: "Swept Back" */;
+			return joaat("CLOTHING_ITEM_HAIR_SWEPT_BACK");
 		case 1471627791:
 			return -2120294484 /* GXTEntry: "Swept Back Fade" */;
 		case 1012091683:

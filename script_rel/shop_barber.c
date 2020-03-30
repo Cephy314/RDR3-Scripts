@@ -11408,7 +11408,7 @@ int func_345(var uParam0)
 				uParam0->f_44 = func_766(10);
 				return 1;
 			case -2120294484: /* GXTEntry: "Swept Back Fade" */
-			case -1472456118: /* GXTEntry: "Swept Back" */
+			case joaat("CLOTHING_ITEM_HAIR_SWEPT_BACK"):
 			case -1051664629:
 			case 1471627791:
 				uParam0->f_44 = func_766(11);
@@ -72261,7 +72261,7 @@ int func_2218(bool bParam0)
 	{
 		case 1156231582: /* GXTEntry: "Buzzed" */
 			return -986108061;
-		case -1472456118: /* GXTEntry: "Swept Back" */
+		case joaat("CLOTHING_ITEM_HAIR_SWEPT_BACK"):
 			return -1051664629;
 		case -2120294484: /* GXTEntry: "Swept Back Fade" */
 			return 1471627791;
@@ -72743,7 +72743,7 @@ bool func_2233(var uParam0, bool bParam1)
 	else if (func_367(bParam1, 518788085))
 	{
 		func_1243(2, &iVar10);
-		if (bParam1 == 1792152856 && (iVar10 == 1629162959 || iVar10 == -355063150))
+		if (bParam1 == 1792152856 && (iVar10 == joaat("CLOTHING_ITEM_STACHE_HANDLEBAR") || iVar10 == -355063150))
 		{
 			bVar9 = 4;
 		}
@@ -76090,11 +76090,11 @@ int func_2350(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 2026761603 /* GXTEntry: "Beard Single" */;
+			return joaat("CLOTHING_ITEM_BEARD_SINGLE");
 		case 1:
-			return -170715015;
+			return joaat("CLOTHING_ITEM_CHOPS_NORMAL");
 		case 2:
-			return -2022941088;
+			return joaat("CLOTHING_ITEM_STACHE_NORMAL");
 		default:
 			break;
 	}
@@ -81867,7 +81867,7 @@ int func_2548(int iParam0)
 		case -986108061:
 			return 1156231582 /* GXTEntry: "Buzzed" */;
 		case -1051664629:
-			return -1472456118 /* GXTEntry: "Swept Back" */;
+			return joaat("CLOTHING_ITEM_HAIR_SWEPT_BACK");
 		case 1471627791:
 			return -2120294484 /* GXTEntry: "Swept Back Fade" */;
 		case 1012091683:

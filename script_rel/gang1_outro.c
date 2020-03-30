@@ -5696,11 +5696,11 @@ int func_235(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 2026761603 /* GXTEntry: "Beard Single" */;
+			return joaat("CLOTHING_ITEM_BEARD_SINGLE");
 		case 1:
-			return -170715015;
+			return joaat("CLOTHING_ITEM_CHOPS_NORMAL");
 		case 2:
-			return -2022941088;
+			return joaat("CLOTHING_ITEM_STACHE_NORMAL");
 		default:
 			break;
 	}

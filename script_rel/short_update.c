@@ -24294,7 +24294,7 @@ int func_728(int iParam0)
 		case -986108061:
 			return 1156231582 /* GXTEntry: "Buzzed" */;
 		case -1051664629:
-			return -1472456118 /* GXTEntry: "Swept Back" */;
+			return joaat("CLOTHING_ITEM_HAIR_SWEPT_BACK");
 		case 1471627791:
 			return -2120294484 /* GXTEntry: "Swept Back Fade" */;
 		case 1012091683:
@@ -44388,7 +44388,7 @@ int func_1361(int iParam0)
 			}
 			break;
 		case 21:
-			func_740(-329550451 /* GXTEntry: "Tornado Boots" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
+			func_740(joaat("CLOTHING_HL_PLAYER_BOOT_005_10"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			func_740(-961594764 /* GXTEntry: "Classic Frock Coat" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			func_740(joaat("CLOTHING_HL_PLAYER_HAT_048_2"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			func_740(-588157961 /* GXTEntry: "Frontier Vest" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
@@ -89326,11 +89326,11 @@ int func_2930(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 2026761603 /* GXTEntry: "Beard Single" */;
+			return joaat("CLOTHING_ITEM_BEARD_SINGLE");
 		case 1:
-			return -170715015;
+			return joaat("CLOTHING_ITEM_CHOPS_NORMAL");
 		case 2:
-			return -2022941088;
+			return joaat("CLOTHING_ITEM_STACHE_NORMAL");
 		default:
 			break;
 	}

@@ -11016,9 +11016,9 @@ void func_388(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 						func_525(joaat("WEAPON_KIT_CAMERA"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_525(joaat("KIT_CAMP"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_525(-1448210800 /* GXTEntry: "Crafting Tools" */, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
-						func_525(-248960099 /* GXTEntry: "Bandolier" */, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
+						func_525(joaat("CLOTHING_ITEM_PZ_LOADOUT_BANDOLIER_01"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_527();
-						func_528(967523420);
+						func_528(joaat("CLOTHING_SP_COAT_WINTER01_VARIATION_01"));
 						func_529();
 						func_530();
 						break;
@@ -11077,7 +11077,7 @@ void func_388(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 						func_535();
 						break;
 					case 17:
-						func_536(Global_35, 176992230, 0, -358215195, 1, 1);
+						func_536(Global_35, joaat("CLOTHING_ITEM_BADGE_PZERO_000"), 0, -358215195, 1, 1);
 						if (func_33())
 						{
 							func_537(joaat("WEAPON_REPEATER_EVANS"));
@@ -19287,7 +19287,7 @@ void func_529()
 		{
 			if (func_829() == -2125499975 || func_829() == -449205311)
 			{
-				vVar2.x = -2018863109;
+				vVar2.x = joaat("CLOTHING_SP_SHIRT_BOUNTY01_VARIATION_01");
 				vVar2.f_1 = 1530758430;
 				func_833(&vVar2, iVar5, iVar0);
 			}
@@ -19300,7 +19300,7 @@ void func_529()
 		}
 		iVar0++;
 	}
-	vVar2.x = -2018863109;
+	vVar2.x = joaat("CLOTHING_SP_SHIRT_BOUNTY01_VARIATION_01");
 	vVar2.f_1 = 1530758430;
 	if (&Global_1946804->f_57[iVar5 /*11*/] == &Global_26795.f_627.f_1.f_1.f_1[iVar5 /*3*/] || 0 == &Global_26795.f_627.f_1.f_1.f_1[iVar5 /*3*/])
 	{

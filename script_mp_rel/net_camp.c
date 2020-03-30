@@ -72202,8 +72202,8 @@ int func_2193(int iParam0, int iParam1, int iParam2)
 		switch (iVar3)
 		{
 			case -1574602287:
-			case -1494222502:
-			case -46508956:
+			case joaat("CLOTHING_ITEM_F_SEASONAL_001_PANTS_000"):
+			case joaat("CLOTHING_ITEM_F_SEASONAL_000_PANTS_000"):
 			case 446164354:
 				if (func_877(func_1189(iVar6, 1), 49152))
 				{

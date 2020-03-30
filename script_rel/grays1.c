@@ -15901,9 +15901,9 @@ void func_83(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 						func_323(joaat("WEAPON_KIT_CAMERA"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_323(joaat("KIT_CAMP"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_323(-1448210800 /* GXTEntry: "Crafting Tools" */, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
-						func_323(-248960099 /* GXTEntry: "Bandolier" */, 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
+						func_323(joaat("CLOTHING_ITEM_PZ_LOADOUT_BANDOLIER_01"), 1, 1, 0, 0, 752097756, 0, 0, 0, 0);
 						func_325();
-						func_326(967523420);
+						func_326(joaat("CLOTHING_SP_COAT_WINTER01_VARIATION_01"));
 						func_327();
 						func_328();
 						break;
@@ -15962,7 +15962,7 @@ void func_83(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 						func_334();
 						break;
 					case 17:
-						func_335(Global_35, 176992230, 0, -358215195, 1, 1);
+						func_335(Global_35, joaat("CLOTHING_ITEM_BADGE_PZERO_000"), 0, -358215195, 1, 1);
 						if (func_336())
 						{
 							func_337(joaat("WEAPON_REPEATER_EVANS"));
@@ -23503,7 +23503,7 @@ void func_327()
 		{
 			if (func_686() == -2125499975 || func_686() == -449205311)
 			{
-				vVar2.x = -2018863109;
+				vVar2.x = joaat("CLOTHING_SP_SHIRT_BOUNTY01_VARIATION_01");
 				vVar2.f_1 = 1530758430;
 				func_690(&vVar2, iVar5, iVar0);
 			}
@@ -23516,7 +23516,7 @@ void func_327()
 		}
 		iVar0++;
 	}
-	vVar2.x = -2018863109;
+	vVar2.x = joaat("CLOTHING_SP_SHIRT_BOUNTY01_VARIATION_01");
 	vVar2.f_1 = 1530758430;
 	if (&Global_1946804->f_57[iVar5 /*11*/] == &Global_26795.f_627.f_1.f_1.f_1[iVar5 /*3*/] || 0 == &Global_26795.f_627.f_1.f_1.f_1[iVar5 /*3*/])
 	{
@@ -35022,7 +35022,7 @@ bool func_760(char[4] cParam0)
 	}
 	if (!bLocal_835)
 	{
-		func_188(Global_35, 176992230, 0, -358215195, 1, 1, 1, 0, 1, 0);
+		func_188(Global_35, joaat("CLOTHING_ITEM_BADGE_PZERO_000"), 0, -358215195, 1, 1, 1, 0, 1, 0);
 		bLocal_835 = true;
 	}
 	func_1255(3, 4194304, 1);
@@ -41164,7 +41164,7 @@ int func_909(char[4] cParam0)
 	}
 	if (!bLocal_835)
 	{
-		func_188(Global_35, 176992230, 0, -358215195, 1, 1, 1, 0, 1, 0);
+		func_188(Global_35, joaat("CLOTHING_ITEM_BADGE_PZERO_000"), 0, -358215195, 1, 1, 1, 0, 1, 0);
 		bLocal_835 = true;
 		return 0;
 	}
@@ -41602,7 +41602,7 @@ int func_917(char[4] cParam0)
 			}
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 1713036237) && !bLocal_835)
 			{
-				func_188(Global_35, 176992230, 0, -358215195, 1, 1, 1, 0, 1, 0);
+				func_188(Global_35, joaat("CLOTHING_ITEM_BADGE_PZERO_000"), 0, -358215195, 1, 1, 1, 0, 1, 0);
 				bLocal_835 = true;
 			}
 			if (func_1543(cParam0, &(Local_144[0 /*17*/]), "Dutch", 0, 1, 1))

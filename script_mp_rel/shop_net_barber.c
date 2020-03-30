@@ -17906,8 +17906,8 @@ int func_543(int iParam0, bool bParam1, bool bParam2)
 		switch (bVar3)
 		{
 			case -1574602287:
-			case -1494222502:
-			case -46508956:
+			case joaat("CLOTHING_ITEM_F_SEASONAL_001_PANTS_000"):
+			case joaat("CLOTHING_ITEM_F_SEASONAL_000_PANTS_000"):
 			case 446164354:
 				if (func_927(func_926(iVar6, 1), 49152))
 				{
