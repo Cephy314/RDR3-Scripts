@@ -887,15 +887,15 @@ float func_39(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case 155299255:
+		case joaat("NET_FETCH_TRAIN_VIP_RESCUE_00"):
 			return 0f;
-		case 1981604013:
+		case joaat("NET_FETCH_TRAIN_CAMP_RESUPPLY_00"):
 			return 0f;
-		case -768364147:
+		case joaat("NET_FETCH_TRAIN_MOVING_BOUNTY_1"):
 			return 0f;
 		case -735194130:
 			return 0f;
-		case -1547760661:
+		case joaat("NET_FETCH_TRAIN_KIDNAPPED_BUYER_00"):
 			return 0f;
 		default:
 			break;

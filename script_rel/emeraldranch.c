@@ -818,7 +818,7 @@ void func_26()
 void func_27(int iParam0)
 {
 	func_57(2, 590, bLocal_211, iParam0, bLocal_212, bLocal_213, 491520, (12.5f * 2f), 0, 0);
-	func_58(2, 2057841001, 0, 0);
+	func_58(2, joaat("DOOR_EME_TRAINSTATION_1"), 0, 0);
 	if (func_59())
 	{
 		PERSCHAR::_0x187D65F3AEC5D679(joaat("EMR_SON1"), "EmeraldRanch/Emr_Son1");

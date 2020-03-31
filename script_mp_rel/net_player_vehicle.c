@@ -4863,17 +4863,17 @@ int func_183(int iParam0)
 		case -1:
 			return -1844561321;
 		case 0:
-			return 1653124001;
+			return joaat("NSMT_HORSE");
 		case 1:
-			return -430733995;
+			return joaat("NSMT_DONKEY");
 		case 2:
-			return 1501387297;
+			return joaat("NSMT_VEHICLE");
 		case 3:
-			return -1143491563;
+			return joaat("NSMT_CANOE");
 		case 4:
-			return -1460176899;
+			return joaat("NSMT_TRAIN");
 		case 5:
-			return 1003181529;
+			return joaat("NSMT_CANNON");
 		default:
 			break;
 	}

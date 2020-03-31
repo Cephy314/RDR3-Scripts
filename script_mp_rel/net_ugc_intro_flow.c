@@ -742,7 +742,7 @@ int func_26()
 				return -1567074128;
 			case -698288936:
 				return -1277009905;
-			case 909765192:
+			case joaat("UGC_SUBTYPE_MISSION_PREDATOR_HUNT"):
 				return 1730145250;
 			case 534981680:
 				return -773971986;
@@ -821,7 +821,7 @@ int func_27()
 				return -1263403805;
 			case -698288936:
 				return 1269272475;
-			case 909765192:
+			case joaat("UGC_SUBTYPE_MISSION_PREDATOR_HUNT"):
 				return 932383945;
 			case 534981680:
 				return -31655829;
@@ -2625,7 +2625,7 @@ char* func_89(int iParam0)
 			return "UGC_MST_UIS";
 		case -698288936:
 			return "UGC_MST_PROT";
-		case 909765192:
+		case joaat("UGC_SUBTYPE_MISSION_PREDATOR_HUNT"):
 			return "UGC_MST_PDH";
 		case 1078150940:
 			return "UGC_MST_AWIP";

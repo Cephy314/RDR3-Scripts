@@ -7926,7 +7926,7 @@ void func_245(int iParam0, bool bParam1)
 			func_337(1335986638, bParam1);
 			break;
 		case 14:
-			func_337(1407130373, bParam1);
+			func_337(joaat("DOOR_STR_WHORE_INT_2"), bParam1);
 			break;
 		case 16:
 			func_337(-1335647241, bParam1);

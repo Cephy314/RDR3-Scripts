@@ -822,7 +822,7 @@ void func_30(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 	{
 		return;
 	}
-	else if (iParam0 == 1807503187)
+	else if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -2245,7 +2245,7 @@ int func_94(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;

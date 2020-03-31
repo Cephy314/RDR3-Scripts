@@ -2670,7 +2670,7 @@ void func_109(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 	{
 		return;
 	}
-	else if (iParam0 == 1807503187)
+	else if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -4352,7 +4352,7 @@ int func_202(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -4867,7 +4867,7 @@ int func_229(int iParam0, float fParam1, bool bParam2, int iParam3)
 					GRAPHICS::ANIMPOSTFX_PLAY(sVar0);
 				}
 			}
-			func_265(1775828486);
+			func_265(joaat("STATUS_EFFECT__TRACKING"));
 			func_163(-1);
 			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
 			Global_17172.f_54.f_2438.f_34[1 /*2*/] = fParam1;
@@ -4886,7 +4886,7 @@ int func_229(int iParam0, float fParam1, bool bParam2, int iParam3)
 			Global_17172.f_54.f_2438.f_34[2 /*2*/] = fParam1;
 			break;
 		case 19:
-			func_265(350943398);
+			func_265(joaat("STATUS_EFFECT__POISON"));
 			func_266(0, 1, 1);
 			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
 			(Global_17172.f_54.f_2438.f_34[0 /*2*/])->f_1 = fParam1;
@@ -6618,289 +6618,289 @@ int func_297(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2137819446:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_3"):
 			return 100;
-		case -2131931188:
+		case joaat("CONTENT__PREDATOR__LEVEL_0"):
 			return 127;
-		case -2130179962:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_3"):
 			return 63;
-		case -2059502051:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_2"):
 			return 65;
-		case -2056449621:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_2"):
 			return 93;
-		case -1973221270:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_1"):
 			return 64;
-		case -1969715419:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_2"):
 			return 35;
-		case -1968787770:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_3"):
 			return 6;
-		case -1957895818:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_2"):
 			return 56;
-		case -1952291530:
+		case joaat("CONTENT__PREDATOR__LEVEL_3"):
 			return 130;
-		case -1950424573:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_3"):
 			return 54;
-		case -1910888845:
+		case joaat("UNLOCK__ROLE__POTENTIAL_BONUS"):
 			return 110;
-		case -1883405573:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_2"):
 			return 78;
-		case -1844803100:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_1"):
 			return 80;
-		case -1831687141:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_2"):
 			return 62;
-		case -1810408560:
+		case joaat("ABILITY_CARD__OVERRIDE_REVENGE_SLOW_TIME"):
 			return 73;
-		case -1805785047:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_2"):
 			return 41;
-		case -1759910473:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_1"):
 			return 25;
-		case -1756646040:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_1"):
 			return 92;
-		case -1741565123:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_2"):
 			return 47;
-		case -1609480552:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_1"):
 			return 61;
-		case -1596526341:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_3"):
 			return 3;
-		case -1573606823:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_1"):
 			return 49;
-		case -1510695159:
+		case joaat("CONTENT__ACTIVE_DEED__FIRE_VULNERABILITY"):
 			return 138;
-		case -1504620904:
+		case joaat("UNLOCK__ROLE__AWARENESS_BONUS"):
 			return 107;
-		case -1462866101:
+		case joaat("UNLOCK__ROLE__INTUITION_BONUS"):
 			return 111;
-		case -1405836475:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_1"):
 			return 55;
-		case -1360021450:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_3"):
 			return 9;
-		case -1356583879:
+		case joaat("CONTENT__PREDATOR__LEVEL_1"):
 			return 128;
-		case -1242362177:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_1"):
 			return 46;
-		case -1235458416:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_1"):
 			return 74;
-		case -1234968784:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_3"):
 			return 69;
-		case -1234548949:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_1"):
 			return 7;
-		case -1143906885:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_4"):
 			return 122;
-		case -1140308479:
+		case joaat("CONTENT__PREDATOR__LEVEL_7"):
 			return 134;
 		case -1105699593:
 			return 141;
-		case -1008191715:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_1"):
 			return 1;
-		case -985141745:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_3"):
 			return 79;
-		case -974857798:
+		case joaat("CONTENT__PREDATOR__LEVEL_4"):
 			return 131;
-		case -914097888:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_5"):
 			return 123;
-		case -900341092:
+		case joaat("CONTENT__PREDATOR__LEVEL_6"):
 			return 133;
-		case -859661758:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_3"):
 			return 60;
-		case -810885450:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_1"):
 			return 40;
-		case -750368411:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_3"):
 			return 48;
-		case -691826426:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_1"):
 			return 77;
-		case -608746625:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_2"):
 			return 17;
-		case -567710817:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_2"):
 			return 2;
-		case -565327488:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_3"):
 			return 72;
-		case -559775780:
+		case joaat("EQUIPMENT__NED_KELLY_FREEROAM"):
 			return 117;
-		case -549372097:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_2"):
 			return 59;
-		case -455491084:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_3"):
 			return 85;
-		case -447950391:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_3"):
 			return 94;
-		case -418060375:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_1"):
 			return 4;
-		case -391691334:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_2"):
 			return 68;
-		case -375368707:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_1"):
 			return 58;
-		case -357713093:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_1"):
 			return 119;
-		case -336340230:
+		case joaat("EQUIPMENT__NED_KELLY_ADVERSARY"):
 			return 115;
-		case -309456186:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_1"):
 			return 10;
-		case -300915357:
+		case joaat("CONTENT__HUNTED__MASKED"):
 			return 136;
-		case -252777454:
+		case joaat("CONTENT__PASSIVE_MODE"):
 			return 126;
-		case -190717545:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_3"):
 			return 30;
-		case -179898515:
+		case joaat("EQUIPMENT__NED_KELLY_GOLDEN"):
 			return 118;
-		case -179343615:
+		case joaat("CONSUMABLE__DAILY_STEW"):
 			return 140;
-		case -132268497:
+		case joaat("CONTENT__PREDATOR__LEVEL_5"):
 			return 132;
-		case -120658935:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_1"):
 			return 67;
-		case -97080319:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_1"):
 			return 43;
-		case -93340399:
+		case joaat("UNLOCK__ROLE__EFFICIENCY_BONUS"):
 			return 106;
-		case -2338369:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_3"):
 			return 39;
 		case -1:
 			return 0;
-		case 18275459:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_2"):
 			return 8;
-		case 47725914:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_2"):
 			return 11;
-		case 151887407:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_3"):
 			return 18;
-		case 153569762:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_2"):
 			return 44;
-		case 163503896:
+		case joaat("STATUS_EFFECT__TOXIC_MOONSHINE"):
 			return 101;
-		case 183566846:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_3"):
 			return 15;
-		case 193887912:
+		case joaat("UNLOCK__ROLE__EAGLE_EYE_PLUS"):
 			return 113;
-		case 225804550:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_6"):
 			return 124;
-		case 267361268:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_1"):
 			return 86;
-		case 272084311:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_2"):
 			return 71;
-		case 312483235:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_2"):
 			return 29;
-		case 349431355:
+		case joaat("UNLOCK__ROLE__PERCEPTION_BONUS"):
 			return 105;
-		case 350943398:
+		case joaat("STATUS_EFFECT__POISON"):
 			return 102;
-		case 383280474:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_3"):
 			return 12;
-		case 467901857:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_3"):
 			return 51;
-		case 508502713:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_7"):
 			return 125;
-		case 548902645:
+		case joaat("UNLOCK__ROLE__PROTECTION_MOONSHINE_BONUS"):
 			return 109;
-		case 591249118:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_1"):
 			return 28;
-		case 611341556:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_1"):
 			return 16;
-		case 618168626:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_2"):
 			return 26;
-		case 620773281:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_1"):
 			return 98;
-		case 668358831:
+		case joaat("CONTENT__ACTIVE_DEED__BOUNTER_HUNTER_ACCURACY_DEBUFF"):
 			return 139;
-		case 677513315:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_3"):
 			return 45;
-		case 713112284:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_2"):
 			return 50;
-		case 722162219:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_3"):
 			return 88;
-		case 730253571:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_3"):
 			return 36;
-		case 731266401:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_2"):
 			return 90;
-		case 785001351:
+		case joaat("CONTENT__PREDATOR__LEVEL_8"):
 			return 135;
-		case 793035862:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_2"):
 			return 81;
-		case 802887669:
+		case joaat("UNLOCK__ROLE__MASTER_DISTILLER_BONUS"):
 			return 114;
-		case 828060856:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_2"):
 			return 38;
-		case 837742789:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_1"):
 			return 70;
-		case 900184247:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_3"):
 			return 21;
-		case 924932702:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_2"):
 			return 14;
-		case 969398724:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_1"):
 			return 89;
-		case 1014273190:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_2"):
 			return 96;
-		case 1033330939:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_3"):
 			return 82;
-		case 1034286944:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_2"):
 			return 87;
-		case 1123546272:
+		case joaat("UNLOCK__ROLE__FOCUS_BONUS"):
 			return 104;
-		case 1138545953:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_2"):
 			return 20;
-		case 1157170123:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_2"):
 			return 75;
-		case 1159895828:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_1"):
 			return 31;
-		case 1296512587:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_3"):
 			return 97;
-		case 1377989036:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_1"):
 			return 19;
-		case 1423325819:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_2"):
 			return 32;
-		case 1476796894:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_3"):
 			return 24;
-		case 1486559056:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_2"):
 			return 120;
-		case 1493749872:
+		case joaat("UNLOCK__ROLE__DIVINATION_BONUS"):
 			return 112;
-		case 1500545235:
+		case joaat("CONTENT__PREDATOR__LEVEL_2"):
 			return 129;
-		case 1507470319:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_1"):
 			return 83;
-		case 1543468593:
+		case joaat("CONTENT__ACTIVE_DEED__EAGLE_EYE_GENERIC_BUFF"):
 			return 137;
-		case 1568867811:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_3"):
 			return 57;
-		case 1625043854:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_1"):
 			return 22;
-		case 1667258255:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_3"):
 			return 33;
-		case 1695199279:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_3"):
 			return 121;
-		case 1699722938:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_1"):
 			return 13;
-		case 1746978940:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_2"):
 			return 84;
-		case 1764814366:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_1"):
 			return 95;
-		case 1767031434:
+		case joaat("EQUIPMENT__NED_KELLY_COOP"):
 			return 116;
-		case 1775828486:
+		case joaat("STATUS_EFFECT__TRACKING"):
 			return 103;
-		case 1830439946:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_2"):
 			return 23;
-		case 1851839077:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_2"):
 			return 99;
-		case 1860260195:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_3"):
 			return 66;
-		case 1885285188:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_1"):
 			return 52;
-		case 1905466026:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_3"):
 			return 27;
-		case 1925734249:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_3"):
 			return 76;
-		case 1938325642:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_2"):
 			return 5;
-		case 2079700825:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_3"):
 			return 42;
-		case 2081475118:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_1"):
 			return 37;
-		case 2093509505:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_1"):
 			return 34;
-		case 2100718034:
+		case joaat("UNLOCK__ROLE__PROTECTION_TRADER_BONUS"):
 			return 108;
-		case 2117355246:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_2"):
 			return 53;
-		case 2146493981:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_3"):
 			return 91;
 		default:
 			break;
@@ -6926,7 +6926,7 @@ int func_298(int iParam0, int iParam1)
 	iVar2 = func_301(iParam1, 1);
 	switch ((Global_1140484->f_30603.f_2900[iVar2 /*31*/])->f_1)
 	{
-		case -1912291748:
+		case joaat("ON_DISABLE"):
 			if (iVar1 == iVar0)
 			{
 				return 0;
@@ -6937,8 +6937,8 @@ int func_298(int iParam0, int iParam1)
 			}
 			break;
 		case joaat("DURATION"):
-		case -594821844:
-		case 348502922:
+		case joaat("DURATION_OR_MISS"):
+		case joaat("ALLY_LEAVE_DEADEYE"):
 		case 1002704651:
 		case 1270499458:
 			return 1;
@@ -7000,379 +7000,379 @@ int func_301(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2139291255:
+		case joaat("UNLOCK__ROLE__POTENTIAL_BONUS_EFFECT"):
 			return 145;
-		case -2133203822:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_2_EFFECT"):
 			return 108;
-		case -2119961771:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_1_EFFECT"):
 			return 90;
-		case -2117138640:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_2_LOCAL_EFFECT"):
 			return 79;
-		case -2115524796:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_3_EFFECT"):
 			return 60;
-		case -2108980762:
+		case joaat("STATUS_EFFECT__POISON_EFFECT"):
 			return 137;
-		case -2088744988:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_2_EFFECT"):
 			return 91;
-		case -2056483403:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_2_EFFECT"):
 			return 75;
-		case -2008161946:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_3_EFFECT"):
 			return 26;
-		case -2006179687:
+		case joaat("CONTENT__PREDATOR__LEVEL_2_EFFECTS"):
 			return 170;
-		case -1961023994:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_3_EFFECT"):
 			return 92;
-		case -1958950493:
+		case joaat("CONTENT__ACTIVE_DEED__FIRE_VULNERABILITY_EFFECT"):
 			return 183;
-		case -1954641284:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_2_EFFECT"):
 			return 28;
-		case -1946267644:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_2_DAMAGE_TAKEN_EFFECT"):
 			return 130;
-		case -1925826694:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_3_EFFECT"):
 			return 49;
-		case -1920322236:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_3_EFFECT"):
 			return 22;
-		case -1886192107:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_1_EFFECT"):
 			return 55;
-		case -1854279248:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_DEALT_ON_HORSEBACK_INDICATOR"):
 			return 6;
-		case -1853627206:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_2_EFFECT"):
 			return 134;
-		case -1851126253:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_3_EFFECT"):
 			return 29;
-		case -1847886830:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_3_EFFECT"):
 			return 16;
-		case -1841577353:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_3_EFFECT"):
 			return 112;
-		case -1840959475:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_3_EFFECT"):
 			return 106;
-		case -1808210911:
+		case joaat("ABILITY_CARD__HANGMAN_INDICATOR"):
 			return 30;
-		case -1803458707:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGED_INDICATOR"):
 			return 8;
-		case -1761885354:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_2_EFFECT"):
 			return 111;
-		case -1749044999:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_2_EFFECT"):
 			return 96;
-		case -1698597704:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_3_EFFECT"):
 			return 45;
-		case -1631537135:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_1_EFFECT"):
 			return 63;
-		case -1599892133:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_2_EFFECT"):
 			return 38;
-		case -1514337705:
+		case joaat("CONTENT__PREDATOR__BASE_EFFECTS"):
 			return 177;
-		case -1498884346:
+		case joaat("EQUIPMENT__NED_KELLY_BASE_IMMUNITIES"):
 			return 151;
-		case -1448841146:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_INDICATOR"):
 			return 50;
-		case -1445919747:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_1_EFFECT"):
 			return 117;
-		case -1441068914:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_3_EFFECT"):
 			return 39;
-		case -1426414385:
+		case joaat("CONTENT__PREDATOR__LEVEL_4_EFFECTS"):
 			return 172;
-		case -1421504146:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_3_EFFECT"):
 			return 109;
-		case -1419242781:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_3_EFFECT"):
 			return 33;
 		case -1394912816:
 			return 186;
-		case -1378028573:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_1_EFFECT"):
 			return 27;
-		case -1370534631:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_1_EFFECT"):
 			return 110;
-		case -1327315394:
+		case joaat("ABILITY_CARD__DEFAULT_DEADEYE_DURATION_TIER_1_COST"):
 			return 1;
-		case -1311380047:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_PENALTY"):
 			return 46;
-		case -1299791944:
+		case joaat("ABILITY_CARD__DEFAULT_DEADEYE_DURATION_TIER_2_COST"):
 			return 2;
-		case -1280685390:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_3_DAMAGE_TAKEN_EFFECT"):
 			return 132;
-		case -1268916163:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_3_EFFECT"):
 			return 119;
-		case -1256990268:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_3_EFFECT"):
 			return 76;
-		case -1139172958:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_AURA"):
 			return 61;
-		case -1112015628:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_7_EFFECT"):
 			return 163;
-		case -1094465110:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_1_EFFECT"):
 			return 47;
-		case -1038422902:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_1_EFFECT"):
 			return 74;
-		case -1011126213:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_1_EFFECT"):
 			return 31;
-		case -964953325:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_1_EFFECT"):
 			return 123;
-		case -955252868:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_2_EFFECT"):
 			return 124;
-		case -932897324:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_2_EFFECT"):
 			return 11;
-		case -931584677:
+		case joaat("ABILITY_CARD__OVERRIDE_REVENGE_SLOW_TIME_INDICATOR"):
 			return 103;
-		case -925634234:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_2_EFFECT"):
 			return 21;
-		case -750441842:
+		case joaat("CONTENT__PREDATOR__LEVEL_6_EFFECTS"):
 			return 174;
-		case -649515024:
+		case joaat("UNLOCK__ROLE__AWARENESS_BONUS_EFFECT"):
 			return 142;
-		case -624920400:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_3_LOCAL_EFFECT"):
 			return 81;
-		case -612675573:
+		case joaat("UNLOCK__ROLE__EAGLE_EYE_PLUS_EFFECT"):
 			return 148;
-		case -572117096:
+		case joaat("CONTENT__ACTIVE_DEED__EAGLE_EYE_GENERIC_BUFF_EFFECT"):
 			return 182;
-		case -562496675:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_3_EFFECT"):
 			return 57;
-		case -562150430:
+		case joaat("CONTENT__PREDATOR__LEVEL_3_EFFECTS"):
 			return 171;
-		case -560965516:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_2_EFFECT"):
 			return 48;
-		case -554207528:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_2_EFFECT"):
 			return 59;
-		case -539762089:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_3_EFFECT"):
 			return 97;
-		case -529396121:
+		case joaat("CONTENT__PREDATOR__LEVEL_7_EFFECTS"):
 			return 175;
-		case -454200664:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_1_EFFECT"):
 			return 104;
-		case -440727241:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_3_EFFECT"):
 			return 19;
-		case -423133485:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_1_EFFECT"):
 			return 133;
-		case -403292810:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_1_EFFECT"):
 			return 113;
-		case -398496662:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_INDICATOR"):
 			return 23;
-		case -343145237:
+		case joaat("EQUIPMENT__NED_KELLY_FREEROAM_EFFECT"):
 			return 155;
-		case -342633876:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_TAKEN_INDICATOR"):
 			return 5;
-		case -334674962:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_AURA"):
 			return 13;
-		case -332283977:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_3_COST"):
 			return 66;
-		case -306011710:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_DEALT_INDICATOR"):
 			return 4;
-		case -280832639:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_1_COST"):
 			return 51;
-		case -276166656:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_6_EFFECT"):
 			return 162;
-		case -269291543:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_PENALTY"):
 			return 68;
-		case -206787059:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_2_EFFECT"):
 			return 35;
-		case -164741307:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_2_EFFECT"):
 			return 105;
-		case -158245263:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_2_EFFECT"):
 			return 41;
-		case -147416760:
+		case joaat("EQUIPMENT__NED_KELLY_BASE_EFFECTS"):
 			return 150;
 		case -97000889:
 			return 86;
-		case -91604267:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_3_EFFECT"):
 			return 159;
 		case -1:
 			return 0;
-		case 25589062:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_2_EFFECT"):
 			return 56;
-		case 39330853:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_3_EFFECT"):
 			return 125;
-		case 78014060:
+		case joaat("ABILITY_CARD__DEFAULT_WINDED_INDICATOR"):
 			return 9;
-		case 81243326:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_1_EFFECT"):
 			return 69;
-		case 141777963:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_2_EFFECT"):
 			return 15;
-		case 183131704:
+		case joaat("CONTENT__PASSIVE_MODE__IMMUNITIES_EFFECT"):
 			return 167;
-		case 200623432:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_2_COST"):
 			return 64;
-		case 221495846:
+		case joaat("CONTENT__PASSIVE_MODE__MOUNT_EFFECTS"):
 			return 165;
-		case 224471061:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_1_EFFECT"):
 			return 98;
-		case 233412256:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_1_LOCAL_EFFECT"):
 			return 77;
-		case 279713143:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_5_EFFECT"):
 			return 161;
-		case 285724035:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_INDICATOR"):
 			return 54;
-		case 302482713:
+		case joaat("STATUS_EFFECT__TOXIC_MOONSHINE_EFFECT"):
 			return 136;
-		case 347710188:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_3_EFFECT"):
 			return 89;
-		case 350341162:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_1_DAMAGE_DEALT_EFFECT"):
 			return 127;
-		case 447464746:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_2_DAMAGE_DEALT_EFFECT"):
 			return 129;
-		case 570385280:
+		case joaat("CONSUMABLE__DAILY_STEW_EFFECT"):
 			return 185;
-		case 593083875:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_2_REMOTE_EFFECT"):
 			return 80;
-		case 639606025:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_2_EFFECT"):
 			return 70;
-		case 654960265:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_1_EFFECT"):
 			return 95;
-		case 668064801:
+		case joaat("CONTENT__ACTIVE_DEED__BOUNTER_HUNTER_ACCURACY_DEBUFF_EFFECT"):
 			return 184;
-		case 671416267:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_1_EFFECT"):
 			return 107;
-		case 673708797:
+		case joaat("UNLOCK__ROLE__FOCUS_BONUS_EFFECT"):
 			return 139;
-		case 694721787:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_1_EFFECT"):
 			return 20;
-		case 702532569:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_3_REMOTE_EFFECT"):
 			return 82;
-		case 720207812:
+		case joaat("CONTENT__PREDATOR__LEVEL_0_EFFECTS"):
 			return 168;
-		case 724367341:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_2_EFFECT"):
 			return 65;
-		case 726043209:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_1_EFFECT"):
 			return 58;
-		case 728769635:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_1_EFFECT"):
 			return 83;
-		case 756791452:
+		case joaat("UNLOCK__ROLE__MASTER_DISTILLER_BONUS_EFFECT"):
 			return 149;
-		case 763061271:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_2_EFFECT"):
 			return 18;
-		case 775646007:
+		case joaat("ABILITY_CARD__OVERRIDE_REVENGE_SLOW_TIME_COST"):
 			return 102;
-		case 783509408:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_4_EFFECT"):
 			return 160;
-		case 794883372:
+		case joaat("CONTENT__PREDATOR__LEVEL_8_EFFECTS"):
 			return 176;
-		case 805902559:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_2_EFFECT"):
 			return 84;
-		case 817456409:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_3_EFFECT"):
 			return 100;
-		case 835146902:
+		case joaat("CONTENT__HUNTED__MASKED_EFFECTS"):
 			return 181;
-		case 841152146:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_DEADEYE_INDICATOR"):
 			return 93;
-		case 886162534:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_3_DAMAGE_DEALT_EFFECT"):
 			return 131;
-		case 937140932:
+		case joaat("CONTENT__PREDATOR__LEVEL_5_EFFECTS"):
 			return 173;
-		case 997052462:
+		case joaat("EQUIPMENT__NED_KELLY_BASE_RESTRICTIONS"):
 			return 152;
-		case 1034295275:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_1_EFFECT"):
 			return 17;
-		case 1040501041:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_3_EFFECT"):
 			return 122;
-		case 1093424641:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_3_EFFECT"):
 			return 115;
-		case 1139016431:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_1_EFFECT"):
 			return 34;
-		case 1144080006:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_2_EFFECT"):
 			return 32;
-		case 1171151366:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_1_EFFECT"):
 			return 43;
-		case 1175961229:
+		case joaat("STATUS_EFFECT__TRACKING_EFFECT"):
 			return 138;
-		case 1193587137:
+		case joaat("CONTENT__PASSIVE_MODE__VEHICLE_EFFECTS"):
 			return 166;
-		case 1201719505:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_3_EFFECT"):
 			return 42;
-		case 1203687692:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_1_EFFECT"):
 			return 10;
-		case 1208331227:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_3_EFFECT"):
 			return 12;
-		case 1211076549:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_AURA"):
 			return 73;
-		case 1265311313:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_3_EFFECT"):
 			return 36;
-		case 1268462011:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_1_EFFECT"):
 			return 37;
-		case 1294394742:
+		case joaat("CONTENT__PREDATOR__BASE_IMMUNITIES"):
 			return 179;
-		case 1295163466:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_2_EFFECT"):
 			return 114;
-		case 1300622865:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_2_EFFECT"):
 			return 99;
-		case 1312155508:
+		case joaat("UNLOCK__ROLE__PROTECTION_MOONSHINE_BONUS_EFFECT"):
 			return 144;
-		case 1324420970:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_2_EFFECT"):
 			return 25;
-		case 1328995848:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_2_EFFECT"):
 			return 88;
-		case 1336349861:
+		case joaat("UNLOCK__ROLE__PROTECTION_TRADER_BONUS_EFFECT"):
 			return 143;
-		case 1336429519:
+		case joaat("UNLOCK__ROLE__PERCEPTION_BONUS_EFFECT"):
 			return 140;
-		case 1390582854:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_EAGLE_EYE_INDICATOR"):
 			return 94;
-		case 1413720692:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_2_EFFECT"):
 			return 158;
-		case 1433853218:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_3_EFFECT"):
 			return 85;
-		case 1452940977:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_1_EFFECT"):
 			return 87;
-		case 1480202237:
+		case joaat("CONTENT__PREDATOR__BASE_EFFECTS_VULNERABLE"):
 			return 178;
-		case 1482822775:
+		case joaat("UNLOCK__ROLE__INTUITION_BONUS_EFFECT"):
 			return 146;
-		case 1514854451:
+		case joaat("CONTENT__PREDATOR__RESPAWN_EFFECTS"):
 			return 180;
-		case 1522457772:
+		case joaat("UNLOCK__ROLE__DIVINATION_BONUS_EFFECT"):
 			return 147;
-		case 1523275824:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_1_COST"):
 			return 62;
-		case 1524301922:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_1_REMOTE_EFFECT"):
 			return 78;
-		case 1557116130:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_INDICATOR"):
 			return 126;
-		case 1557362410:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_INDICATOR"):
 			return 116;
-		case 1578015076:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_PENALTIES"):
 			return 72;
-		case 1578708778:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_3_EFFECT"):
 			return 67;
-		case 1596748830:
+		case joaat("ABILITY_CARD__WINNING_STREAK_INDICATOR"):
 			return 101;
-		case 1608803012:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_1_DAMAGE_TAKEN_EFFECT"):
 			return 128;
-		case 1644017723:
+		case joaat("EQUIPMENT__NED_KELLY_ADVERSARY_EFFECT"):
 			return 153;
-		case 1687654048:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_3_EFFECT"):
 			return 71;
-		case 1704907062:
+		case joaat("CONTENT__PREDATOR__LEVEL_1_EFFECTS"):
 			return 169;
-		case 1726722300:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_3_EFFECT"):
 			return 135;
-		case 1744707601:
+		case joaat("ABILITY_CARD__DEFAULT_DEADEYE_DURATION_TIER_3_COST"):
 			return 3;
-		case 1746613639:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_2_EFFECT"):
 			return 121;
-		case 1767173923:
+		case joaat("UNLOCK__ROLE__EFFICIENCY_BONUS_EFFECT"):
 			return 141;
-		case 1798083308:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_1_EFFECT"):
 			return 24;
-		case 1813411238:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_1_EFFECT"):
 			return 157;
-		case 1835150954:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_1_EFFECT"):
 			return 40;
-		case 1903955831:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_TAKEN_ON_HORSEBACK_INDICATOR"):
 			return 7;
-		case 1913593527:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_3_COST"):
 			return 53;
-		case 1930815945:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_2_EFFECT"):
 			return 118;
-		case 1938151130:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_2_EFFECT"):
 			return 44;
-		case 1976949991:
+		case joaat("EQUIPMENT__NED_KELLY_GOLDEN_EFFECT"):
 			return 156;
-		case 2028487040:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_2_COST"):
 			return 52;
-		case 2051020894:
+		case joaat("CONTENT__PASSIVE_MODE__DAMAGE_EFFECTS"):
 			return 164;
-		case 2081856931:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_1_EFFECT"):
 			return 120;
-		case 2113464199:
+		case joaat("EQUIPMENT__NED_KELLY_COOP_EFFECT"):
 			return 154;
-		case 2126590447:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_1_EFFECT"):
 			return 14;
 		default:
 			break;
@@ -7737,181 +7737,181 @@ int func_321(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1988557796:
+		case joaat("MDEFENSE__BULLET"):
 			return 49;
 		case -1936069272:
 			return 47;
-		case -1926692092:
+		case joaat("MHEALTH__REGEN_RATE"):
 			return 42;
-		case -1846416021:
+		case joaat("MHORSE__TRAMPLE_DAMAGE"):
 			return 58;
-		case -1721745367:
+		case joaat("ADEADEYE_COST_PER_SHOT"):
 			return 2;
-		case -1701192079:
+		case joaat("MWEAPON__BOW_STAMINA_DRAIN"):
 			return 41;
-		case -1659620438:
+		case joaat("MDEFENSE__BULLET_USING_MELEE_WEAPON"):
 			return 50;
-		case -1607530002:
+		case joaat("MACCURACY__LOCAL_PLAYER_ACCURACY_FLOOR_MODIFIER"):
 			return 61;
-		case -1589052195:
+		case joaat("MDAMAGE__DISTANCE_CLOSE"):
 			return 37;
 		case -1575020444:
 			return 86;
 		case -1572802418:
 			return 67;
-		case -1514969696:
+		case joaat("ALASSO__DAMAGE_DEALT_PER_SECOND"):
 			return 74;
-		case -1397050499:
+		case joaat("MDEFENSE__EXPLOSIVE"):
 			return 53;
 		case -1349331938:
 			return 43;
-		case -1345921497:
+		case joaat("MDAMAGE__MISSING_HEALTH_CONVERSION"):
 			return 29;
-		case -1309904053:
+		case joaat("ASTAMINA__ALTER_TANK_PER_SECOND_PERCENT"):
 			return 22;
-		case -1290490489:
+		case joaat("ADEADEYE__ALTER_CORE_PER_SECOND_PERCENT"):
 			return 7;
-		case -1202225775:
+		case joaat("MHORSE__DEFENSE"):
 			return 56;
-		case -1080116020:
+		case joaat("ASTAMINA__HORSE_GAIN_ON_HORSEBACK_KILL_PERCENT"):
 			return 23;
-		case -1079033682:
+		case joaat("MDEFENSE__RANGED"):
 			return 46;
-		case -1059185085:
+		case joaat("MDAMAGE__ALL_WEAPONS_DIFFERENT_WEAPON"):
 			return 25;
-		case -1003690472:
+		case joaat("MDEFENSE__BULLET_PER_CONSECUTIVE_SHOT"):
 			return 51;
-		case -851757466:
+		case joaat("MEAGLE_EYE__DEPLETION_RATE"):
 			return 64;
-		case -744806636:
+		case joaat("MDEFENSE__FIRE"):
 			return 52;
-		case -516489227:
+		case joaat("AHEALTH__GAIN_ON_KILL_PERCENT"):
 			return 11;
-		case -514416345:
+		case joaat("MRPG_ATTIRBUTE_CORE_DRAIN_RATE"):
 			return 63;
-		case -484540420:
+		case joaat("MDAMAGE__EXPLOSIVE_WEAPONS"):
 			return 36;
-		case -483049716:
+		case joaat("MSTAMINA__REGEN_RATE"):
 			return 71;
-		case -400566333:
+		case joaat("AHEALTH__ALTER_TANK_PER_SECOND_PERCENT"):
 			return 14;
-		case -391623459:
+		case joaat("MDEADEYE__GAIN_MULTIPLIER_WITH_REPEATER"):
 			return 69;
-		case -374018223:
+		case joaat("MACCURACY__AI_MODIFIER"):
 			return 59;
-		case -349428415:
+		case joaat("MDAMAGE__FALLOFF"):
 			return 39;
-		case -231535884:
+		case joaat("AHEALTH__ALTER_TOTAL_PER_MINUTE_PERCENT"):
 			return 15;
-		case -201802680:
+		case joaat("ADEADEYE_COST_DURATION"):
 			return 1;
-		case -85606741:
+		case joaat("MACCURACY__REMOTE_PLAYER_ACCURACY_FLOOR_MODIFIER"):
 			return 62;
-		case -77989269:
+		case joaat("MSKILL__PERCEPTION"):
 			return 76;
 		case -1:
 			return 0;
 		case 66478954:
 			return 85;
-		case 146438590:
+		case joaat("MSKILL__DISTILLER"):
 			return 83;
-		case 198507096:
+		case joaat("MDEADEYE__GAIN_MULTIPLIER"):
 			return 68;
-		case 222365748:
+		case joaat("MSKILL__PROTECTION_TRADER"):
 			return 78;
-		case 295732030:
+		case joaat("MWEAPON__BOW_DRAW_TIME"):
 			return 40;
-		case 340029732:
+		case joaat("MDEADEYE__DEPLETION_RATE"):
 			return 66;
-		case 374652900:
+		case joaat("MSKILL__DIVINATION"):
 			return 82;
 		case 410940916:
 			return 84;
-		case 515706097:
+		case joaat("ADEADEYE__GAIN_ON_HEADSHOT_PERCENT"):
 			return 5;
-		case 527883710:
+		case joaat("MHEALTH__RECHARGE_RATE"):
 			return 44;
-		case 549685826:
+		case joaat("MACCURACY__LOCAL_PLAYER_MODIFIER"):
 			return 60;
-		case 641300611:
+		case joaat("MSKILL__INTUITION"):
 			return 81;
-		case 696211072:
+		case joaat("MDAMAGE__MELEE"):
 			return 30;
-		case 778435476:
+		case joaat("AHORSE__HEALTH_GAIN_ON_DAMAGE_TAKEN_PERCENT"):
 			return 19;
-		case 808428606:
+		case joaat("ADEADEYE__GAIN_ON_REVIVE_PERCENT"):
 			return 4;
-		case 854463919:
+		case joaat("MSKILL__PROTECTION_MOONSHINE"):
 			return 79;
-		case 857703729:
+		case joaat("MDEFENSE__PLAYERS"):
 			return 48;
 		case 874892169:
 			return 87;
-		case 886907851:
+		case joaat("AHEALTH__ALTER_CORE_PER_SECOND_PERCENT"):
 			return 16;
-		case 995847993:
+		case joaat("MINCAPACITATION__BLEEDOUT_TIME"):
 			return 65;
-		case 1061744811:
+		case joaat("ADEADEYE__ALTER_TANK_PER_SECOND_PERCENT"):
 			return 6;
-		case 1149992366:
+		case joaat("MDAMAGE__ALL_WEAPONS_AIMING_WITHOUT_FIRING"):
 			return 27;
-		case 1221256507:
+		case joaat("ADEADEYE__ALTER_TANK_DAMAGE_TAKEN_PERCENT"):
 			return 8;
-		case 1247001946:
+		case joaat("MSTAMINA__REGEN_RATE_HEALTH_CONVERSION"):
 			return 72;
-		case 1275912274:
+		case joaat("MDEFENSE__MELEE"):
 			return 45;
-		case 1333289277:
+		case joaat("AHORSE__STAMINA_GAIN_ON_DAMAGE_TAKEN_PERCENT"):
 			return 20;
-		case 1341193408:
+		case joaat("AHEALTH__GAIN_ON_DAMAGE_DEALT_PERCENT"):
 			return 10;
-		case 1447875596:
+		case joaat("MSKILL__FOCUS"):
 			return 75;
-		case 1495919075:
+		case joaat("MDEADEYE__GAIN_MULTIPLIER_STR_WEAPON"):
 			return 70;
-		case 1509485650:
+		case joaat("AHORSE__HEALTH_GAIN_ON_DAMAGE_DEALT_PERCENT"):
 			return 17;
 		case 1546732394:
 			return 34;
-		case 1572090083:
+		case joaat("MDEFENSE__STAMINA_CONVERSION"):
 			return 55;
-		case 1608132015:
+		case joaat("MDAMAGE__DISTANCE_FAR"):
 			return 38;
-		case 1664203120:
+		case joaat("MDAMAGE__BULLETS"):
 			return 32;
-		case 1679987408:
+		case joaat("MDEFENSE__STRENGTH_IN_NUMBERS"):
 			return 54;
-		case 1728485678:
+		case joaat("MDAMAGE__STAMINA_CONVERSION"):
 			return 28;
-		case 1742416595:
+		case joaat("ADEADEYE_COST_ACTIVATION"):
 			return 3;
-		case 1766148221:
+		case joaat("MSTAMINA__SPRINT_DEPLETION_RATE"):
 			return 73;
-		case 1768495249:
+		case joaat("ASTAMINA__ALTER_CORE_PER_SECOND_PERCENT"):
 			return 21;
-		case 1900095956:
+		case joaat("AHORSE__STAMINA_GAIN_ON_DAMAGE_DEALT_PERCENT"):
 			return 18;
-		case 1946296046:
+		case joaat("AHEALTH__GAIN_KILL_PERCENT_STR_WEAPON"):
 			return 12;
-		case 1968069853:
+		case joaat("MDAMAGE__ALL_WEAPONS"):
 			return 24;
-		case 1997267529:
+		case joaat("MDAMAGE__THROWN"):
 			return 31;
-		case 2000631014:
+		case joaat("MSKILL__AWARENESS"):
 			return 77;
-		case 2019620375:
+		case joaat("MHORSE__DEFENSE_PLAYERS"):
 			return 57;
-		case 2037894795:
+		case joaat("ADEADEYE__ALTER_TANK_BULLET_DAMAGE_TAKEN_PERCENT"):
 			return 9;
-		case 2048982041:
+		case joaat("MDAMAGE__SHOTGUN"):
 			return 33;
-		case 2063781084:
+		case joaat("AHEALTH__GAIN_KILL_PERCENT_NON_STR_WEAPON"):
 			return 13;
-		case 2082272090:
+		case joaat("MDAMAGE__BULLET_PER_CONSECUTIVE_SHOT"):
 			return 35;
-		case 2089824257:
+		case joaat("MDAMAGE__ALL_WEAPONS_SINCE_LAST_SHOT"):
 			return 26;
-		case 2128780735:
+		case joaat("MSKILL__POTENTIAL"):
 			return 80;
 		default:
 			break;
@@ -8018,129 +8018,129 @@ int func_326(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2116044775:
+		case joaat("EAGLE_EYE_HIGHLIGHT_BOUNTIES"):
 			return 49;
-		case -2103256604:
+		case joaat("HEADSHOT_IMMUNITY"):
 			return 12;
-		case -2073453362:
+		case joaat("HAT_BLOCKS_HEADSHOT"):
 			return 11;
-		case -2041025962:
+		case joaat("ANIMAL_TURN_IN_EFFICIENCY"):
 			return 60;
-		case -1930487908:
+		case joaat("DISABLE_HEALTH_REGENERATION"):
 			return 2;
-		case -1913155192:
+		case joaat("FIRE_CAP_INFINTE"):
 			return 41;
-		case -1771755729:
+		case joaat("SLOW_AND_STEADY_AURA"):
 			return 28;
-		case -1751121159:
+		case joaat("EAGLE_EYE_HIGHLIGHT_EARTH"):
 			return 50;
 		case -1730553768:
 			return 3;
-		case -1655894020:
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
 			return 25;
-		case -1604680733:
+		case joaat("NO_CRITICAL_DAMAGE_AGAINST_PLAYERS"):
 			return 10;
-		case -1511575465:
+		case joaat("REVIVE_ON_BLEEDOUT"):
 			return 34;
-		case -1328991329:
+		case joaat("LASSO_IMMUNITY"):
 			return 5;
-		case -1136429013:
+		case joaat("DISABLE_JUMPING"):
 			return 45;
-		case -1115905480:
+		case joaat("GRAPPLE_IMMUNITY_FROM_AI"):
 			return 31;
 		case -1026481003:
 			return 6;
-		case -966751997:
+		case joaat("TAGGING_IMMUNITY"):
 			return 13;
-		case -824728332:
+		case joaat("INCAPACITATION_INSTEAD_OF_DEATH"):
 			return 33;
-		case -718742742:
+		case joaat("ON_HORSE_SPEED_RESTRICTION_JOG"):
 			return 55;
-		case -698163919:
+		case joaat("FATAL_MELEE_IMMUNITY"):
 			return 32;
-		case -662966589:
+		case joaat("FORCE_HEALTH_REGEN"):
 			return 1;
-		case -549693655:
+		case joaat("CONFUSION_EFFECT"):
 			return 14;
-		case -488644714:
+		case joaat("FULL_LOCKON_IMMUNITY"):
 			return 4;
-		case -430422799:
+		case joaat("OVERPOWER_INFINITE_HEALTH"):
 			return 36;
 		case -350459285:
 			return 61;
-		case -268774736:
+		case joaat("DAMAGE_CAP_INFINTE"):
 			return 40;
-		case -220644763:
+		case joaat("MOMENT_TO_RECUPERATE_AURA"):
 			return 26;
 		case -199042163:
 			return 56;
-		case -191252842:
+		case joaat("NED_KELLY_ADVERSARY"):
 			return 22;
-		case -166765081:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_JOG"):
 			return 51;
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			return 19;
 		case -1:
 			return 0;
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			return 17;
-		case 125946764:
+		case joaat("POISON_EFFECT"):
 			return 20;
-		case 367160929:
+		case joaat("ON_HORSE_SPEED_RESTRICTION_WALK"):
 			return 57;
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			return 24;
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			return 18;
-		case 539654946:
+		case joaat("FOCUS_FIRE_VFX"):
 			return 23;
-		case 656937467:
+		case joaat("PREDATOR_ICON_DISPLAY"):
 			return 39;
-		case 692490127:
+		case joaat("WOUND_EFFECT"):
 			return 15;
 		case 718630298:
 			return 52;
-		case 785261183:
+		case joaat("EAGLE_EYE_PLUS_FLAG"):
 			return 48;
-		case 793826854:
+		case joaat("NED_KELLY_BASE"):
 			return 21;
-		case 892655276:
+		case joaat("DISABLE_COMBAT_DIVE"):
 			return 46;
-		case 907911269:
+		case joaat("SLOW_AND_STEADY_VFX"):
 			return 27;
-		case 955977457:
+		case joaat("DISABLE_FACIAL_ACTIONS"):
 			return 43;
-		case 966561884:
+		case joaat("CANNOT_LOCK_ON_PLAYERS"):
 			return 7;
-		case 988751276:
+		case joaat("GRAPPLE_IMMUNITY_FROM_PLAYERS"):
 			return 30;
 		case 1159158432:
 			return 58;
-		case 1204983685:
+		case joaat("OVERPOWER_PREDATOR"):
 			return 37;
 		case 1242495215:
 			return 9;
-		case 1254069395:
+		case joaat("ON_HORSE_SPEED_RESTRICTION_IGNORE_MOUNT_CLASS"):
 			return 59;
 		case 1341326366:
 			return 54;
-		case 1348456703:
+		case joaat("OVERRIDE_INFINITE_DEADEYE"):
 			return 35;
-		case 1442295985:
+		case joaat("PULSE_REPOST_STATE"):
 			return 38;
-		case 1527078018:
+		case joaat("DISABLE_CONSUMABLES"):
 			return 42;
-		case 1565429580:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_WALK"):
 			return 53;
-		case 1696309427:
+		case joaat("DISABLE_INCAPACITATION"):
 			return 44;
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			return 16;
 		case 2067881273:
 			return 8;
-		case 2093700568:
+		case joaat("DISABLE_DROWNING"):
 			return 47;
-		case 2113555978:
+		case joaat("QUITE_AN_INSPIRATION_AURA"):
 			return 29;
 		default:
 			break;
@@ -8165,83 +8165,83 @@ void func_327(int iParam0)
 	switch (iParam0)
 	{
 		case -1730553768:
-		case -488644714:
+		case joaat("FULL_LOCKON_IMMUNITY"):
 			func_346();
 			break;
-		case -2103256604:
+		case joaat("HEADSHOT_IMMUNITY"):
 			func_347();
 			break;
-		case 692490127:
+		case joaat("WOUND_EFFECT"):
 			PED::_0x66B1CB778D911F49(iVar0, 0f);
 			break;
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 0, 0);
 			GRAPHICS::_0xC5CB91D65852ED7E(func_348(iParam0));
 			break;
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			GRAPHICS::_0xC5CB91D65852ED7E(func_348(iParam0));
 			break;
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			GRAPHICS::_0xC5CB91D65852ED7E(func_348(iParam0));
 			break;
-		case 125946764:
+		case joaat("POISON_EFFECT"):
 			ATTRIBUTE::_0x3FC4C027FD0936F4(5);
 			func_33(105, 1);
 			break;
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			GRAPHICS::_0xC5CB91D65852ED7E(func_348(iParam0));
 			break;
-		case 1204983685:
+		case joaat("OVERPOWER_PREDATOR"):
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 0);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 19);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 1);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 18);
 			break;
-		case 1442295985:
+		case joaat("PULSE_REPOST_STATE"):
 			NETWORK::_0x442B4347B6EC36E8(iVar0, 0, true);
 			break;
-		case 656937467:
+		case joaat("PREDATOR_ICON_DISPLAY"):
 			ATTRIBUTE::_0x3FC4C027FD0936F4(15);
 			break;
-		case -430422799:
+		case joaat("OVERPOWER_INFINITE_HEALTH"):
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 0);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 19);
 			break;
-		case 539654946:
+		case joaat("FOCUS_FIRE_VFX"):
 			PLAYER::_0x5F8E0303C229C84B(iVar1, "");
 			break;
-		case -1655894020:
-		case 482459685:
-		case 907911269:
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
+		case joaat("SLIPPERY_BASTARD_VFX"):
+		case joaat("SLOW_AND_STEADY_VFX"):
 			func_350(func_349(iParam0));
 			break;
-		case -1771755729:
-		case -220644763:
+		case joaat("SLOW_AND_STEADY_AURA"):
+		case joaat("MOMENT_TO_RECUPERATE_AURA"):
 			PLAYER::_0x768E81AE285A4B67(iVar1, 0);
 			PLAYER::_0xE910932F4B30BE23(iVar1);
 			PLAYER::_0x0E9057A9DA78D0F8(iVar1, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 0);
 			break;
-		case 2113555978:
+		case joaat("QUITE_AN_INSPIRATION_AURA"):
 			GRAPHICS::_0xAF4D239B8903FCBE();
 			PLAYER::_0x768E81AE285A4B67(iVar1, 0);
 			PLAYER::_0xE910932F4B30BE23(iVar1);
 			PLAYER::_0x0E9057A9DA78D0F8(iVar1, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 0);
 			break;
-		case 785261183:
+		case joaat("EAGLE_EYE_PLUS_FLAG"):
 			PLAYER::_0xCE285A4413B00B7F(iVar1, 1);
 			break;
-		case 793826854:
+		case joaat("NED_KELLY_BASE"):
 			func_351();
 			break;
-		case -166765081:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_JOG"):
 		case 718630298:
 		case 1341326366:
-		case 1565429580:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_WALK"):
 			func_343(17);
 			break;
-		case -824728332:
+		case joaat("INCAPACITATION_INSTEAD_OF_DEATH"):
 			func_343(16);
 			break;
 	}
@@ -8263,13 +8263,13 @@ int func_329(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1290685708:
+		case joaat("FOCUS_FIRE"):
 			return 1;
 		case -1038992817:
 			return 5;
 		case -950874556:
 			return 4;
-		case -290151400:
+		case joaat("QUITE_AN_INSPIRATION"):
 			return 3;
 		case 0:
 			return 0;
@@ -8409,41 +8409,41 @@ void func_334(int iParam0)
 	switch (iParam0)
 	{
 		case -1730553768:
-		case -488644714:
+		case joaat("FULL_LOCKON_IMMUNITY"):
 			func_346();
 			break;
-		case -2103256604:
+		case joaat("HEADSHOT_IMMUNITY"):
 			func_347();
 			break;
-		case 692490127:
+		case joaat("WOUND_EFFECT"):
 			PED::_0xFFD54D9FE71B966A(iVar0, 2, 14411, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
 			break;
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 1, 0);
 			GRAPHICS::ANIMPOSTFX_PLAY(func_348(iParam0));
 			break;
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			GRAPHICS::ANIMPOSTFX_PLAY(func_348(iParam0));
 			break;
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			GRAPHICS::ANIMPOSTFX_PLAY(func_348(iParam0));
 			break;
-		case 125946764:
+		case joaat("POISON_EFFECT"):
 			ATTRIBUTE::_0xFB6E111908502871(5);
 			func_33(104, 1);
 			break;
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			GRAPHICS::ANIMPOSTFX_PLAY(func_348(iParam0));
 			break;
-		case 1204983685:
+		case joaat("OVERPOWER_PREDATOR"):
 			break;
-		case 656937467:
+		case joaat("PREDATOR_ICON_DISPLAY"):
 			ATTRIBUTE::_0xFB6E111908502871(15);
 			break;
-		case 539654946:
+		case joaat("FOCUS_FIRE_VFX"):
 			PLAYER::_0x5F8E0303C229C84B(iVar1, "focusfire");
 			break;
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			iVar2 = func_349(iParam0);
 			iVar3 = ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(iVar0, func_356(iParam0, 0));
 			func_357(iVar2, 0, 1, iVar3, 0);
@@ -8454,45 +8454,45 @@ void func_334(int iParam0)
 			iVar3 = ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(iVar0, func_356(iParam0, 3));
 			func_357(iVar2, 2, 1, iVar3, 0);
 			break;
-		case -1655894020:
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
 			iVar2 = func_349(iParam0);
 			func_357(iVar2, 3, 1, -1, 1);
 			break;
-		case 907911269:
+		case joaat("SLOW_AND_STEADY_VFX"):
 			iVar2 = func_349(iParam0);
 			func_357(iVar2, 4, 1, -1, 0);
 			break;
-		case -220644763:
+		case joaat("MOMENT_TO_RECUPERATE_AURA"):
 			PLAYER::_0x768E81AE285A4B67(iVar1, 1014693585);
 			PLAYER::_0x2B12B6FC8B8772AB(iVar1, 8);
 			PLAYER::_0x131E294EF60160DF(iVar1, 0f, 0f, 0f, 1f, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 1);
 			break;
-		case -1771755729:
+		case joaat("SLOW_AND_STEADY_AURA"):
 			PLAYER::_0x768E81AE285A4B67(iVar1, 1936842089);
 			PLAYER::_0x2B12B6FC8B8772AB(iVar1, 8);
 			PLAYER::_0x131E294EF60160DF(iVar1, 0f, 0f, 0f, 1f, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 1);
 			break;
-		case 2113555978:
+		case joaat("QUITE_AN_INSPIRATION_AURA"):
 			GRAPHICS::_0x249CD6B7285536F2(0f, 2f, 2f);
 			PLAYER::_0x768E81AE285A4B67(iVar1, 1979474018);
 			PLAYER::_0x2B12B6FC8B8772AB(iVar1, 25);
 			PLAYER::_0x263D69767F76059C(iVar1, 2);
 			break;
-		case 785261183:
+		case joaat("EAGLE_EYE_PLUS_FLAG"):
 			PLAYER::_0xCE285A4413B00B7F(iVar1, 0);
 			break;
-		case 793826854:
+		case joaat("NED_KELLY_BASE"):
 			func_358();
 			break;
-		case -166765081:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_JOG"):
 		case 718630298:
 		case 1341326366:
-		case 1565429580:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_WALK"):
 			func_343(17);
 			break;
-		case -824728332:
+		case joaat("INCAPACITATION_INSTEAD_OF_DEATH"):
 			func_343(16);
 			break;
 	}
@@ -8658,15 +8658,15 @@ int func_345(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1745889187:
+		case joaat("CONSECUTIVE_DAMAGE_DEALT"):
 			return 3;
 		case -1016837116:
 			return 5;
 		case 0:
 			return 0;
-		case 370243254:
+		case joaat("CONSECUTIVE_DAMAGE_TAKEN"):
 			return 4;
-		case 1213888609:
+		case joaat("NEARBY_ALLIES"):
 			return 2;
 		case 1416591065:
 			return 1;
@@ -8716,13 +8716,13 @@ char* func_348(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			return "MP_ArrowDrain";
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			return "MP_ArrowDisorient";
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			return "MP_ArrowTracking";
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			return "MP_MoonshineToxic";
 		default:
 			break;
@@ -8734,12 +8734,12 @@ int func_349(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			return -843895567;
-		case -1655894020:
-			return -1655894020;
-		case 907911269:
-			return 907911269;
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
+			return joaat("MOMENT_TO_RECUPERATE_VFX");
+		case joaat("SLOW_AND_STEADY_VFX"):
+			return joaat("SLOW_AND_STEADY_VFX");
 		default:
 			break;
 	}
@@ -8806,41 +8806,41 @@ int func_353(int iParam0, int iParam1)
 	switch (&Global_1140484->f_30603.f_2900[iVar0 /*31*/])
 	{
 		case -1606735498:
-		case -1455211650:
-		case -1324410551:
-		case -1276912520:
-		case -1028878953:
-		case -992973338:
+		case joaat("ON_HEADSHOT"):
+		case joaat("ENTER_WEARING_HAT"):
+		case joaat("ENTER_SPRINTING"):
+		case joaat("ENTER_MOUNTED"):
+		case joaat("ENTER_DUAL_WIELD"):
 		case -971275364:
-		case -932644421:
-		case -590004554:
-		case -528257357:
+		case joaat("ON_KILL"):
+		case joaat("ENTER_SCENARIO"):
+		case joaat("ENTER_REVIVER"):
 		case -193993646:
-		case -166662497:
+		case joaat("ENTER_ALLY_NEARBY"):
 		case -23641105:
-		case 37083370:
-		case 52193493:
-		case 180258367:
+		case joaat("ON_DAMAGE_TAKEN"):
+		case joaat("ENTER_MELEE"):
+		case joaat("ON_DAMAGE_DEALT_FROM_HORSEBACK"):
 		case 429965152:
-		case 461381338:
-		case 522523138:
-		case 589907865:
-		case 979390476:
-		case 1028557598:
-		case 1154303630:
-		case 1254162401:
-		case 1269394302:
+		case joaat("ON_DAMAGE_TAKEN_FROM_HORSEBACK"):
+		case joaat("ENTER_WINDED"):
+		case joaat("ENTER_NO_HAT"):
+		case joaat("ON_ENABLE"):
+		case joaat("ENTER_EAGLE_EYE"):
+		case joaat("ENTER_DEADEYE"):
+		case joaat("ENTER_SCOPED"):
+		case joaat("ENTER_COVER"):
 		case 1305415806:
 		case 1461424861:
 		case 1691008805:
-		case 1759133423:
-		case 1810352391:
-		case 1915097582:
-		case 1921800945:
-		case 2046842849:
+		case joaat("ENTER_DAMAGED"):
+		case joaat("ON_DAMAGE_DEALT"):
+		case joaat("ENTER_REVIVED"):
+		case joaat("ENTER_LASSOING"):
+		case joaat("ENTER_IN_VEHICLE"):
 		case 2116793692:
 			return 1;
-		case 1245579893:
+		case joaat("ENTER_FREEROAM_OR_COOP"):
 			if (!func_362() && !func_363())
 			{
 				return 0;
@@ -8852,7 +8852,7 @@ int func_353(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case -2139108927:
+		case joaat("ENTER_REVIVED_REMOTE"):
 			iVar1 = func_307(iParam1);
 			if (iVar1 == &Global_1275573)
 			{
@@ -8874,7 +8874,7 @@ int func_353(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case 190804938:
+		case joaat("ALLY_ENTER_DEADEYE"):
 			iVar1 = func_307(iParam1);
 			if (!NETWORK::_0x255A5EF65EDA9167(&(Global_1275573->f_154[iVar1])))
 			{
@@ -8938,7 +8938,7 @@ char* func_356(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			switch (iParam1)
 			{
 				case 0:

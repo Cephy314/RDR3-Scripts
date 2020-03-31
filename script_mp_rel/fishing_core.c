@@ -11848,7 +11848,7 @@ int func_462(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -14490,7 +14490,7 @@ void func_576(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		return;
 	}
-	else if (iParam0 == 1807503187)
+	else if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -14742,7 +14742,7 @@ void func_580(int iParam0, bool bParam1, int iParam2)
 void func_581(var uParam0)
 {
 	func_557(uParam0, joaat("MULTIPLAYER_GAME"));
-	if (func_607() == 2026485318)
+	if (func_607() == joaat("MPC_PLAYER_TYPE_MP_MALE"))
 	{
 		func_557(uParam0, joaat("LOOTER_PED_IS_MALE"));
 	}
@@ -16974,8 +16974,8 @@ void func_663(int iParam0)
 			func_624(678, 0);
 			break;
 		case 23:
-			UNLOCK::_UNLOCK_SET_UNLOCKED(-200143754, true);
-			UNLOCK::_UNLOCK_SET_VISIBLE(-200143754, true);
+			UNLOCK::_UNLOCK_SET_UNLOCKED(joaat("SP_WEAPON_DUALWIELD"), true);
+			UNLOCK::_UNLOCK_SET_VISIBLE(joaat("SP_WEAPON_DUALWIELD"), true);
 			WEAPON::_0x83B8D50EB9446BBA(PLAYER::PLAYER_PED_ID(), 1);
 			break;
 		case 47:
@@ -18071,7 +18071,7 @@ void func_711(int iParam0, int iParam1)
 
 bool func_712()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 bool func_713()

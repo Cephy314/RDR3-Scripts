@@ -3547,7 +3547,7 @@ void func_128(bool bParam0)
 	func_157(-1482639045, bParam0);
 	func_157(254520182, bParam0);
 	func_157(1335986638, bParam0);
-	func_157(1407130373, bParam0);
+	func_157(joaat("DOOR_STR_WHORE_INT_2"), bParam0);
 	func_157(-1335647241, bParam0);
 	func_157(1997650502, bParam0);
 	func_157(1275780106, bParam0);

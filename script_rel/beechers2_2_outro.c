@@ -2622,27 +2622,27 @@ struct<6> func_113()
 	var uVar10;
 	var uVar11;
 
-	if (func_166(-997150586, &uVar6))
+	if (func_166(joaat("SLOTID_HORSE_BEDROLL"), &uVar6))
 	{
 		Var0.f_4 = uVar6;
 	}
-	if (func_166(-1189569496, &uVar7))
+	if (func_166(joaat("SLOTID_HORSE_BLANKET"), &uVar7))
 	{
 		Var0 = uVar7;
 	}
-	if (func_166(325139909, &uVar8))
+	if (func_166(joaat("SLOTID_HORSE_HORN"), &uVar8))
 	{
 		Var0.f_2 = uVar8;
 	}
-	if (func_166(1310070322, &uVar9))
+	if (func_166(joaat("SLOTID_HORSE_SADDLEBAG"), &uVar9))
 	{
 		Var0.f_5 = uVar9;
 	}
-	if (func_166(986998820, &uVar10))
+	if (func_166(joaat("SLOTID_HORSE_STIRRUP"), &uVar10))
 	{
 		Var0.f_3 = uVar10;
 	}
-	if (func_166(-415648720, &uVar11))
+	if (func_166(joaat("SLOTID_HORSE_SADDLE"), &uVar11))
 	{
 		Var0.f_1 = uVar11;
 	}
@@ -3776,7 +3776,7 @@ int func_164(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	*uParam1 = func_215(Var0, 1415981582, 0);
+	*uParam1 = func_215(Var0, joaat("SLOTID_HORSE_MANE"), 0);
 	if (!func_216(*uParam1, 0))
 	{
 		return 0;
@@ -3793,7 +3793,7 @@ int func_165(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	*uParam1 = func_215(Var0, -2119169513, 0);
+	*uParam1 = func_215(Var0, joaat("SLOTID_HORSE_TAIL"), 0);
 	if (!func_216(*uParam1, 0))
 	{
 		return 0;
@@ -4064,7 +4064,7 @@ int func_181(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var29 = { func_221(iParam1, Var0, 1415981582, 0) };
+	Var29 = { func_221(iParam1, Var0, joaat("SLOTID_HORSE_MANE"), 0) };
 	return func_222(Var29, 1);
 }
 
@@ -4078,7 +4078,7 @@ int func_182(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var29 = { func_221(iParam1, Var0, -2119169513, 0) };
+	Var29 = { func_221(iParam1, Var0, joaat("SLOTID_HORSE_TAIL"), 0) };
 	return func_222(Var29, 1);
 }
 
@@ -4424,7 +4424,7 @@ void func_192(int iParam0)
 	bVar6 = false;
 	if (iParam0 == 0)
 	{
-		iVar5 = -1925605092;
+		iVar5 = joaat("BLIP_STYLE_PLAYER_HORSE");
 	}
 	else if (iParam0 == 1)
 	{
@@ -4623,7 +4623,7 @@ void func_192(int iParam0)
 	}
 	if (func_242(iVar0) && !bVar9)
 	{
-		if (iVar5 == -1925605092)
+		if (iVar5 == joaat("BLIP_STYLE_PLAYER_HORSE"))
 		{
 			iVar20 = 561559387;
 		}

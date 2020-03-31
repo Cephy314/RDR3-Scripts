@@ -2906,9 +2906,9 @@ int func_104(int iParam0)
 		case 33:
 			return joaat("ST_BARTENDER");
 		case 12:
-			return -1775364220;
+			return joaat("ST_MARKET");
 		case 13:
-			return -1504845897;
+			return joaat("ST_FRENCH_MARKET");
 		case 14:
 			return -1227686818;
 		case 18:
@@ -2954,7 +2954,7 @@ int func_105(int iParam0)
 		case 14:
 			return joaat("SHOP_BLK_POST_OFFICE");
 		case 15:
-			return -441298053;
+			return joaat("SHOP_BLK_TRAIN_STATION");
 		case 108:
 			return joaat("SHOP_BLK_HORSE_FENCE_MP");
 		case 12:
@@ -3016,7 +3016,7 @@ int func_105(int iParam0)
 		case 48:
 			return joaat("SHOP_SDN_MARKET");
 		case 49:
-			return 1055138492;
+			return joaat("SHOP_SDN_FRENCH_MARKET01");
 		case 50:
 			return -1673339528;
 		case 53:
@@ -3094,7 +3094,7 @@ int func_105(int iParam0)
 		case 104:
 			return joaat("SHOP_VAL_HORSE_FENCE_MP");
 		case 71:
-			return 1124822890;
+			return joaat("SHOP_VAL_BARTENDER_KEANE");
 		case 81:
 			return joaat("SHOP_VAL_BARTENDER_SLUM");
 		case 80:
@@ -3116,7 +3116,7 @@ int func_105(int iParam0)
 		case 85:
 			return joaat("SHOP_VAN_TRAIN_STATION");
 		case 82:
-			return 1437804895;
+			return joaat("SHOP_VAN_FENCE");
 		case 117:
 			return joaat("SHOP_VAN_HORSE_FENCE_MP");
 		case 84:
@@ -3190,13 +3190,13 @@ int func_105(int iParam0)
 		case 56:
 			return 878376253;
 		case 141:
-			return -508879537;
+			return joaat("SHOP_LAK_DOCTOR");
 		case 142:
-			return -654369397;
+			return joaat("SHOP_LAK_GENERAL_STORE");
 		case 143:
-			return 1573058547;
+			return joaat("SHOP_LAK_GUNSMITH");
 		case 144:
-			return 1753151614;
+			return joaat("SHOP_LAK_HORSE_TRAINER");
 		case 145:
 			return joaat("SHOP_SHB_DOCTOR");
 		case 146:

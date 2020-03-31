@@ -2535,7 +2535,7 @@ void func_61(int iParam0)
 	bVar6 = false;
 	if (iParam0 == 0)
 	{
-		iVar5 = -1925605092;
+		iVar5 = joaat("BLIP_STYLE_PLAYER_HORSE");
 	}
 	else if (iParam0 == 1)
 	{
@@ -2734,7 +2734,7 @@ void func_61(int iParam0)
 	}
 	if (func_256(iVar0) && !bVar9)
 	{
-		if (iVar5 == -1925605092)
+		if (iVar5 == joaat("BLIP_STYLE_PLAYER_HORSE"))
 		{
 			iVar20 = 561559387;
 		}
@@ -3078,7 +3078,7 @@ bool func_72()
 
 bool func_73()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 int func_74(int iParam0)
@@ -6893,7 +6893,7 @@ void func_207(struct<5> Param0, var uParam5, var uParam6)
 	{
 		return;
 	}
-	iVar4 = MAP::_BLIP_ADD_FOR_COORD(168093330, vVar1);
+	iVar4 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_SHOP"), vVar1);
 	MAP::SET_BLIP_SPRITE(iVar4, joaat("BLIP_SHOP_HORSE"), true);
 	MAP::_0x662D364ABF16DE2F(iVar4, 580546400);
 	MAP::_0x662D364ABF16DE2F(iVar4, 847579139);
@@ -7436,15 +7436,15 @@ int func_227(int iParam0)
 	switch (iVar1)
 	{
 		case 2:
-			return -776155824 /* GXTEntry: "Animal Carcass Perfect" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_PERFECT");
 		case 1:
-			return 1715058708 /* GXTEntry: "Animal Carcass Good Quality" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_HIGH_QUALITY");
 		case 0:
-			return -45650221 /* GXTEntry: "Animal Carcass Poor" */;
+			return joaat("PROVISION_ANIMAL_CARCASS_POOR");
 		default:
 			break;
 	}
-	return -45650221 /* GXTEntry: "Animal Carcass Poor" */;
+	return joaat("PROVISION_ANIMAL_CARCASS_POOR");
 }
 
 bool func_228(int iParam0, int iParam1)
@@ -8743,27 +8743,27 @@ struct<8> func_285()
 	{
 		Var0.f_7 = uVar9;
 	}
-	if (func_536(-997150586, &uVar10))
+	if (func_536(joaat("SLOTID_HORSE_BEDROLL"), &uVar10))
 	{
 		Var0.f_4 = uVar10;
 	}
-	if (func_536(-1189569496, &uVar11))
+	if (func_536(joaat("SLOTID_HORSE_BLANKET"), &uVar11))
 	{
 		Var0 = uVar11;
 	}
-	if (func_536(325139909, &uVar12))
+	if (func_536(joaat("SLOTID_HORSE_HORN"), &uVar12))
 	{
 		Var0.f_2 = uVar12;
 	}
-	if (func_536(1310070322, &uVar13))
+	if (func_536(joaat("SLOTID_HORSE_SADDLEBAG"), &uVar13))
 	{
 		Var0.f_5 = uVar13;
 	}
-	if (func_536(986998820, &uVar14))
+	if (func_536(joaat("SLOTID_HORSE_STIRRUP"), &uVar14))
 	{
 		Var0.f_3 = uVar14;
 	}
-	if (func_536(-415648720, &uVar15))
+	if (func_536(joaat("SLOTID_HORSE_SADDLE"), &uVar15))
 	{
 		Var0.f_1 = uVar15;
 	}
@@ -9426,7 +9426,7 @@ void func_315(int iParam0)
 						iVar56 = 0;
 						if (iParam0 == 0)
 						{
-							iVar56 = -1925605092;
+							iVar56 = joaat("BLIP_STYLE_PLAYER_HORSE");
 						}
 						else if (iParam0 == 1)
 						{
@@ -11440,8 +11440,8 @@ void func_394(int iParam0)
 			func_229(678, 0);
 			break;
 		case 23:
-			UNLOCK::_UNLOCK_SET_UNLOCKED(-200143754, true);
-			UNLOCK::_UNLOCK_SET_VISIBLE(-200143754, true);
+			UNLOCK::_UNLOCK_SET_UNLOCKED(joaat("SP_WEAPON_DUALWIELD"), true);
+			UNLOCK::_UNLOCK_SET_VISIBLE(joaat("SP_WEAPON_DUALWIELD"), true);
 			WEAPON::_0x83B8D50EB9446BBA(PLAYER::PLAYER_PED_ID(), 1);
 			break;
 		case 47:
@@ -11590,186 +11590,186 @@ int func_398(int iParam0)
 {
 	if (iParam0 == joaat("A_C_HORSE_MP_MANGY_BACKUP"))
 	{
-		return 559905966;
+		return joaat("HORSE_BREED_MANGY_BACKUP");
 	}
 	switch (iParam0)
 	{
 		case joaat("A_C_HORSE_AMERICANPAINT_OVERO"):
-			return 1538827865 /* GXTEntry: "American Paint~n~Overo Coat" */;
+			return joaat("HORSE_BREED_AMERICANPAINT_OVERO");
 		case joaat("A_C_HORSE_AMERICANPAINT_TOBIANO"):
-			return -1792561227 /* GXTEntry: "American Paint~n~Tobiano Coat" */;
+			return joaat("HORSE_BREED_AMERICANPAINT_TOBIANO");
 		case joaat("A_C_HORSE_AMERICANPAINT_SPLASHEDWHITE"):
-			return 1033678910 /* GXTEntry: "American Paint~n~Splashed White Coat" */;
+			return joaat("HORSE_BREED_AMERICANPAINT_SPLASHEDWHITE");
 		case joaat("A_C_HORSE_AMERICANPAINT_GREYOVERO"):
-			return -1942141178 /* GXTEntry: "American Paint~n~Grey Overo Coat" */;
+			return joaat("HORSE_BREED_AMERICANPAINT_GREYOVERO");
 		case joaat("A_C_HORSE_AMERICANSTANDARDBRED_BLACK"):
-			return 671599957 /* GXTEntry: "American Standardbred~n~Black Coat" */;
+			return joaat("HORSE_BREED_AMERICANSTANDARDBRED_BLACK");
 		case joaat("A_C_HORSE_AMERICANSTANDARDBRED_BUCKSKIN"):
-			return -1554935503 /* GXTEntry: "American Standardbred~n~Buckskin Coat" */;
+			return joaat("HORSE_BREED_AMERICANSTANDARDBRED_BUCKSKIN");
 		case joaat("A_C_HORSE_AMERICANSTANDARDBRED_PALOMINODAPPLE"):
-			return 694610769 /* GXTEntry: "American Standardbred~n~Palomino Dapple Coat" */;
+			return joaat("HORSE_BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE");
 		case joaat("A_C_HORSE_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN"):
-			return 1941463607 /* GXTEntry: "American Standardbred~n~Silver Tail Buckskin Coat" */;
+			return joaat("HORSE_BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN");
 		case joaat("A_C_HORSE_ANDALUSIAN_DARKBAY"):
-			return -887316537 /* GXTEntry: "Andalusian~n~Dark Bay Coat" */;
+			return joaat("HORSE_BREED_ANDALUSIAN_DARKBAY");
 		case joaat("A_C_HORSE_ANDALUSIAN_ROSEGRAY"):
-			return 1762474047 /* GXTEntry: "Andalusian~n~Rose Grey Coat" */;
+			return joaat("HORSE_BREED_ANDALUSIAN_ROSEGRAY");
 		case joaat("A_C_HORSE_ANDALUSIAN_PERLINO"):
-			return -828859553 /* GXTEntry: "Andalusian~n~Perlino Coat" */;
+			return joaat("HORSE_BREED_ANDALUSIAN_PERLINO");
 		case joaat("A_C_HORSE_APPALOOSA_BLANKET"):
-			return 1410237043 /* GXTEntry: "Appaloosa~n~Blanket Coat" */;
+			return joaat("HORSE_BREED_APPALOOSA_BLANKET");
 		case joaat("A_C_HORSE_APPALOOSA_LEOPARDBLANKET"):
-			return -2026073756 /* GXTEntry: "Appaloosa~n~Leopard Blanket Coat" */;
+			return joaat("HORSE_BREED_APPALOOSA_LEOPARDBLANKET");
 		case joaat("A_C_HORSE_APPALOOSA_BROWNLEOPARD"):
-			return 2002245664 /* GXTEntry: "Appaloosa~n~Brown Leopard Coat" */;
+			return joaat("HORSE_BREED_APPALOOSA_BROWNLEOPARD");
 		case joaat("A_C_HORSE_APPALOOSA_LEOPARD"):
-			return -1120227140 /* GXTEntry: "Appaloosa~n~Leopard Coat" */;
+			return joaat("HORSE_BREED_APPALOOSA_LEOPARD");
 		case joaat("A_C_HORSE_ARABIAN_BLACK"):
-			return 1142681594 /* GXTEntry: "Arabian~n~Black Coat" */;
+			return joaat("HORSE_BREED_ARABIAN_BLACK");
 		case joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY"):
-			return -864588185 /* GXTEntry: "Arabian~n~Rose Grey Bay Coat" */;
+			return joaat("HORSE_BREED_ARABIAN_ROSEGREYBAY");
 		case joaat("A_C_HORSE_ARABIAN_WHITE"):
-			return -1040918754 /* GXTEntry: "Arabian~n~White Coat" */;
+			return joaat("HORSE_BREED_ARABIAN_WHITE");
 		case joaat("A_C_HORSE_ARDENNES_BAYROAN"):
-			return 535545841 /* GXTEntry: "Ardennes~n~Bay Roan Coat" */;
+			return joaat("HORSE_BREED_ARDENNES_BAYROAN");
 		case joaat("A_C_HORSE_ARDENNES_STRAWBERRYROAN"):
-			return 1686036388 /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */;
+			return joaat("HORSE_BREED_ARDENNES_STRAWBERRYROAN");
 		case joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT"):
-			return 2125477381 /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */;
+			return joaat("HORSE_BREED_BELGIAN_BLONDCHESTNUT");
 		case joaat("A_C_HORSE_BELGIAN_MEALYCHESTNUT"):
-			return 1808724704 /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */;
+			return joaat("HORSE_BREED_BELGIAN_MEALYCHESTNUT");
 		case joaat("A_C_HORSE_DUTCHWARMBLOOD_SOOTYBUCKSKIN"):
-			return -1745871311 /* GXTEntry: "Dutch Warmblood~n~Sooty Buckskin Coat" */;
+			return joaat("HORSE_BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN");
 		case joaat("A_C_HORSE_DUTCHWARMBLOOD_SEALBROWN"):
-			return -1366099125 /* GXTEntry: "Dutch Warmblood~n~Seal Brown Coat" */;
+			return joaat("HORSE_BREED_DUTCHWARMBLOOD_SEALBROWN");
 		case joaat("A_C_HORSE_DUTCHWARMBLOOD_CHOCOLATEROAN"):
-			return -1900776854 /* GXTEntry: "Dutch Warmblood~n~Chocolate Roan Coat" */;
+			return joaat("HORSE_BREED_DUTCHWARMBLOOD_CHOCOLATEROAN");
 		case joaat("A_C_HORSE_HUNGARIANHALFBRED_FLAXENCHESTNUT"):
-			return 1381855825 /* GXTEntry: "Hungarian Halfbred~n~Flaxen Chestnut Coat" */;
+			return joaat("HORSE_BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT");
 		case joaat("A_C_HORSE_HUNGARIANHALFBRED_PIEBALDTOBIANO"):
-			return -470894301 /* GXTEntry: "Hungarian Halfbred~n~Flaxen Piebald Tobiano Coat" */;
+			return joaat("HORSE_BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO");
 		case joaat("A_C_HORSE_HUNGARIANHALFBRED_DARKDAPPLEGREY"):
-			return -58297715 /* GXTEntry: "Hungarian Halfbred~n~Dark Dapple Grey" */;
+			return joaat("HORSE_BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BLACK"):
 			return joaat("HORSE_BREED_KENTUCKYSADDLE_BLACK");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_CHESTNUTPINTO"):
-			return 1112812928 /* GXTEntry: "Kentucky Saddler~n~Chestnut Pinto Coat" */;
+			return joaat("HORSE_BREED_KENTUCKYSADDLE_CHESTNUTPINTO");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_GREY"):
 			return joaat("HORSE_BREED_KENTUCKYSADDLE_GREY");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_SILVERBAY"):
-			return 2100045093 /* GXTEntry: "Kentucky Saddler~n~Silver Bay Coat" */;
+			return joaat("HORSE_BREED_KENTUCKYSADDLE_SILVERBAY");
 		case joaat("A_C_HORSE_MISSOURIFOXTROTTER_AMBERCHAMPAGNE"):
-			return 1097965086 /* GXTEntry: "Missouri Fox Trotter~n~Amber Champagne" */;
+			return joaat("HORSE_BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE");
 		case joaat("A_C_HORSE_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO"):
-			return -2136667309 /* GXTEntry: "Missouri Fox Trotter~n~Silver Dapple Pinto Coat" */;
+			return joaat("HORSE_BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO");
 		case joaat("A_C_HORSE_MORGAN_BAY"):
-			return -376463594 /* GXTEntry: "Morgan~n~Bay Coat" */;
+			return joaat("HORSE_BREED_MORGAN_BAY");
 		case joaat("A_C_HORSE_MORGAN_BAYROAN"):
-			return -1917318030 /* GXTEntry: "Morgan~n~Bay Roan Coat" */;
+			return joaat("HORSE_BREED_MORGAN_BAYROAN");
 		case joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
-			return 1631640006 /* GXTEntry: "Morgan~n~Flaxen Chestnut Coat" */;
+			return joaat("HORSE_BREED_MORGAN_FLAXENCHESTNUT");
 		case joaat("A_C_HORSE_MORGAN_PALOMINO"):
 			return joaat("HORSE_BREED_MORGAN_PALOMINO");
 		case joaat("A_C_HORSE_MUSTANG_GRULLODUN"):
-			return 210760725 /* GXTEntry: "Mustang~n~Tiger Grullo Dun Coat" */;
+			return joaat("HORSE_BREED_MUSTANG_GRULLODUN");
 		case joaat("A_C_HORSE_MUSTANG_WILDBAY"):
-			return 2051021144 /* GXTEntry: "Mustang~n~Wild Bay Coat" */;
+			return joaat("HORSE_BREED_MUSTANG_WILDBAY");
 		case joaat("A_C_HORSE_MUSTANG_TIGERSTRIPEDBAY"):
-			return 1924406350 /* GXTEntry: "Mustang~n~Tiger Striped Bay Coat" */;
+			return joaat("HORSE_BREED_MUSTANG_TIGERSTRIPEDBAY");
 		case joaat("A_C_HORSE_NOKOTA_BLUEROAN"):
-			return -1990143531 /* GXTEntry: "Nokota~n~Blue Roan Coat" */;
+			return joaat("HORSE_BREED_NOKOTA_BLUEROAN");
 		case joaat("A_C_HORSE_NOKOTA_WHITEROAN"):
-			return 1741899492 /* GXTEntry: "Nokota~n~White Roan Coat" */;
+			return joaat("HORSE_BREED_NOKOTA_WHITEROAN");
 		case joaat("A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN"):
-			return -1629575335 /* GXTEntry: "Nokota~n~Reverse Dapple Roan Coat" */;
+			return joaat("HORSE_BREED_NOKOTA_REVERSEDAPPLEROAN");
 		case joaat("A_C_HORSE_SHIRE_DARKBAY"):
-			return 1096294193 /* GXTEntry: "Shire~n~Dark Bay Coat" */;
+			return joaat("HORSE_BREED_SHIRE_DARKBAY");
 		case joaat("A_C_HORSE_SHIRE_LIGHTGREY"):
-			return -1162498792 /* GXTEntry: "Shire~n~Light Grey Coat" */;
+			return joaat("HORSE_BREED_SHIRE_LIGHTGREY");
 		case joaat("A_C_HORSE_SUFFOLKPUNCH_SORREL"):
-			return -212500005 /* GXTEntry: "Suffolk Punch~n~Sorrel Coat" */;
+			return joaat("HORSE_BREED_SUFFOLKPUNCH_SORREL");
 		case joaat("A_C_HORSE_SUFFOLKPUNCH_REDCHESTNUT"):
-			return -538557079 /* GXTEntry: "Suffolk Punch~n~Red Chestnut Coat" */;
+			return joaat("HORSE_BREED_SUFFOLKPUNCH_REDCHESTNUT");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_BLACKRABICANO"):
-			return 171150858 /* GXTEntry: "Tennessee Walker~n~Black Rabicano Coat" */;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_BLACKRABICANO");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_CHESTNUT"):
 			return joaat("HORSE_BREED_TENNESSEEWALKER_CHESTNUT");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY"):
-			return -126472599 /* GXTEntry: "Tennessee Walker~n~Dapple Bay Coat" */;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_DAPPLEBAY");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_REDROAN"):
-			return -332060056 /* GXTEntry: "Tennessee Walker~n~Red Roan Coat" */;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_REDROAN");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_FLAXENROAN"):
-			return 1917500091 /* GXTEntry: "Tennessee Walker~n~Flaxen Roan Coat" */;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_FLAXENROAN");
 		case joaat("A_C_HORSE_THOROUGHBRED_BLOODBAY"):
-			return -1043453945 /* GXTEntry: "Thoroughbred~n~Blood Bay Coat" */;
+			return joaat("HORSE_BREED_THOROUGHBRED_BLOODBAY");
 		case joaat("A_C_HORSE_THOROUGHBRED_DAPPLEGREY"):
-			return 1723487083 /* GXTEntry: "Thoroughbred~n~Dapple Grey Coat" */;
+			return joaat("HORSE_BREED_THOROUGHBRED_DAPPLEGREY");
 		case joaat("A_C_HORSE_THOROUGHBRED_BRINDLE"):
-			return 2044230644 /* GXTEntry: "Thoroughbred~n~Brindle Coat" */;
+			return joaat("HORSE_BREED_THOROUGHBRED_BRINDLE");
 		case joaat("A_C_HORSE_THOROUGHBRED_BLACKCHESTNUT"):
-			return 1999358190 /* GXTEntry: "Thoroughbred~n~Black Chestnut Coat" */;
+			return joaat("HORSE_BREED_THOROUGHBRED_BLACKCHESTNUT");
 		case joaat("A_C_HORSE_TURKOMAN_DARKBAY"):
-			return 344528703 /* GXTEntry: "Turkoman~n~Dark Bay Coat" */;
+			return joaat("HORSE_BREED_TURKOMAN_DARKBAY");
 		case joaat("A_C_HORSE_TURKOMAN_GOLD"):
-			return -1674873797 /* GXTEntry: "Turkoman~n~Gold Coat" */;
+			return joaat("HORSE_BREED_TURKOMAN_GOLD");
 		case joaat("A_C_HORSE_TURKOMAN_SILVER"):
-			return 281852151 /* GXTEntry: "Turkoman~n~Silver Coat" */;
+			return joaat("HORSE_BREED_TURKOMAN_SILVER");
 		case joaat("A_C_HORSE_BRETON_REDROAN"):
-			return 908445453 /* GXTEntry: "Breton~n~Red Roan Coat" */;
+			return joaat("HORSE_BREED_BRETON_REDROAN");
 		case joaat("A_C_HORSE_BRETON_SORREL"):
-			return 1221398025 /* GXTEntry: "Breton~n~Sorrel Coat" */;
+			return joaat("HORSE_BREED_BRETON_SORREL");
 		case joaat("A_C_HORSE_BRETON_GRULLODUN"):
-			return -75300826 /* GXTEntry: "Breton~n~Grullo Dun Coat" */;
+			return joaat("HORSE_BREED_BRETON_GRULLODUN");
 		case joaat("A_C_HORSE_BRETON_SEALBROWN"):
-			return -1714239153 /* GXTEntry: "Breton~n~Seal Brown Coat" */;
+			return joaat("HORSE_BREED_BRETON_SEALBROWN");
 		case joaat("A_C_HORSE_BRETON_MEALYDAPPLEBAY"):
-			return 1404133288 /* GXTEntry: "Breton~n~Mealy Dapple Bay Coat" */;
+			return joaat("HORSE_BREED_BRETON_MEALYDAPPLEBAY");
 		case joaat("A_C_HORSE_BRETON_STEELGREY"):
-			return -1778967281 /* GXTEntry: "Breton~n~Steel Grey Coat" */;
+			return joaat("HORSE_BREED_BRETON_STEELGREY");
 		case joaat("A_C_HORSE_CRIOLLO_BLUEROANOVERO"):
-			return -455481432 /* GXTEntry: "Criollo~n~Blue Roan Overo Coat" */;
+			return joaat("HORSE_BREED_CRIOLLO_BLUEROANOVERO");
 		case joaat("A_C_HORSE_CRIOLLO_DUN"):
-			return -835454915 /* GXTEntry: "Criollo~n~Dun Coat" */;
+			return joaat("HORSE_BREED_CRIOLLO_DUN");
 		case joaat("A_C_HORSE_CRIOLLO_BAYBRINDLE"):
-			return -2058115427 /* GXTEntry: "Criollo~n~Bay Brindle Coat" */;
+			return joaat("HORSE_BREED_CRIOLLO_BAYBRINDLE");
 		case joaat("A_C_HORSE_CRIOLLO_SORRELOVERO"):
-			return -482507775 /* GXTEntry: "Criollo~n~Sorrel Overo Coat" */;
+			return joaat("HORSE_BREED_CRIOLLO_SORRELOVERO");
 		case joaat("A_C_HORSE_CRIOLLO_BAYFRAMEOVERO"):
-			return -563118293 /* GXTEntry: "Criollo~n~Bay Frame Overo Coat" */;
+			return joaat("HORSE_BREED_CRIOLLO_BAYFRAMEOVERO");
 		case joaat("A_C_HORSE_CRIOLLO_MARBLESABINO"):
-			return -1091105818 /* GXTEntry: "Criollo~n~Marble Sabino Coat" */;
+			return joaat("HORSE_BREED_CRIOLLO_MARBLESABINO");
 		case joaat("A_C_HORSE_KLADRUBER_BLACK"):
-			return 2004269960 /* GXTEntry: "Kladruber~n~Black Coat" */;
+			return joaat("HORSE_BREED_KLADRUBER_BLACK");
 		case joaat("A_C_HORSE_KLADRUBER_WHITE"):
-			return 772515535 /* GXTEntry: "Kladruber~n~White Coat" */;
+			return joaat("HORSE_BREED_KLADRUBER_WHITE");
 		case joaat("A_C_HORSE_KLADRUBER_CREMELLO"):
-			return 1851524477 /* GXTEntry: "Kladruber~n~Cremello Coat" */;
+			return joaat("HORSE_BREED_KLADRUBER_CREMELLO");
 		case joaat("A_C_HORSE_KLADRUBER_GREY"):
-			return -1444352669 /* GXTEntry: "Kladruber~n~Grey Coat" */;
+			return joaat("HORSE_BREED_KLADRUBER_GREY");
 		case joaat("A_C_HORSE_KLADRUBER_DAPPLEROSEGREY"):
-			return 1950373354 /* GXTEntry: "Kladruber~n~Dapple Rose Grey Coat" */;
+			return joaat("HORSE_BREED_KLADRUBER_DAPPLEROSEGREY");
 		case joaat("A_C_HORSE_KLADRUBER_SILVER"):
-			return -878000957 /* GXTEntry: "Kladruber~n~Silver Coat" */;
+			return joaat("HORSE_BREED_KLADRUBER_SILVER");
 		case joaat("A_C_HORSE_NORFOLKROADSTER_BLACK"):
-			return -2145947333 /* GXTEntry: "Norfolk Roadster~n~Black Coat" */;
+			return joaat("HORSE_BREED_NORFOLKROADSTER_BLACK");
 		case joaat("A_C_HORSE_NORFOLKROADSTER_SPECKLEDGREY"):
-			return 156528857 /* GXTEntry: "Norfolk Roadster~n~Speckled Grey Coat" */;
+			return joaat("HORSE_BREED_NORFOLKROADSTER_SPECKLEDGREY");
 		case joaat("A_C_HORSE_NORFOLKROADSTER_PIEBALDROAN"):
-			return -1240970285 /* GXTEntry: "Norfolk Roadster~n~Piebald Roan Coat" */;
+			return joaat("HORSE_BREED_NORFOLKROADSTER_PIEBALDROAN");
 		case joaat("A_C_HORSE_NORFOLKROADSTER_ROSEGREY"):
-			return -1933497088 /* GXTEntry: "Norfolk Roadster~n~Rose Grey Coat" */;
+			return joaat("HORSE_BREED_NORFOLKROADSTER_ROSEGREY");
 		case joaat("A_C_HORSE_NORFOLKROADSTER_DAPPLEDBUCKSKIN"):
-			return -1116314766 /* GXTEntry: "Norfolk Roadster~n~Dappled Buckskin Coat" */;
+			return joaat("HORSE_BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN");
 		case joaat("A_C_HORSE_NORFOLKROADSTER_SPOTTEDTRICOLOR"):
-			return -877141885 /* GXTEntry: "Norfolk Roadster~n~Spotted Tricolor Coat" */;
+			return joaat("HORSE_BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR");
 		case joaat("A_C_DONKEY_01"):
-			return -285185056;
+			return joaat("HORSE_DONKEY");
 		case joaat("A_C_HORSE_APPALOOSA_BLACKSNOWFLAKE"):
 			return -1692268955 /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */;
 		case joaat("A_C_HORSE_ARABIAN_GREY"):
 			return 2130706226 /* GXTEntry: "Arabian~n~Grey Coat" */;
 		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT"):
-			return 1214981718 /* GXTEntry: "Arabian~n~Red Chestnut Coat" */;
+			return joaat("HORSE_BREED_ARABIAN_REDCHESTNUT");
 		case joaat("A_C_HORSE_HUNGARIANHALFBRED_LIVERCHESTNUT"):
 			return -1754375530 /* GXTEntry: "Hungarian Halfbred~n~Liver Chestnut Coat" */;
 		case joaat("A_C_HORSE_MISSOURIFOXTROTTER_SABLECHAMPAGNE"):
@@ -12942,329 +12942,329 @@ int func_477(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_HIGH_QUALITY"):
-			return 1908704263 /* GXTEntry: "Good Skinned Alligator Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ALLIGATOR_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_PERFECT"):
-			return -2112217546 /* GXTEntry: "Perfect Skinned Alligator Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ALLIGATOR_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_ALLIGATOR_POOR"):
-			return -1745255175 /* GXTEntry: "Poor Skinned Alligator Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ALLIGATOR_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_HIGH_QUALITY"):
-			return -237368063 /* GXTEntry: "Good Skinned Armadillo Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ARMADILLO_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_PERFECT"):
-			return 1598967299 /* GXTEntry: "Perfect Skinned Armadillo Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ARMADILLO_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_ARMADILLO_POOR"):
-			return -1809464109 /* GXTEntry: "Poor Skinned Armadillo Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ARMADILLO_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_HIGH_QUALITY"):
-			return -165201917 /* GXTEntry: "Good Skinned Badger Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BADGER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_PERFECT"):
-			return 815147738 /* GXTEntry: "Perfect Skinned Badger Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BADGER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_BADGER_POOR"):
-			return 1287583539 /* GXTEntry: "Poor Skinned Badger Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BADGER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_HIGH_QUALITY"):
-			return -2126985311 /* GXTEntry: "Good Skinned Beaver Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BEAVER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_PERFECT"):
-			return -1268352491 /* GXTEntry: "Perfect Skinned Beaver Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BEAVER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_BEAVER_POOR"):
-			return -1940225526 /* GXTEntry: "Poor Skinned Beaver Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BEAVER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_HIGH_QUALITY"):
-			return -212307068 /* GXTEntry: "Good Skinned Bighorn Sheep Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BIGHORN_SHEEP_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_PERFECT"):
-			return 355421032 /* GXTEntry: "Perfect Skinned Bighorn Sheep Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BIGHORN_SHEEP_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_BIGHORN_SHEEP_POOR"):
-			return 1657729714 /* GXTEntry: "Poor Skinned Bighorn Sheep Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BIGHORN_SHEEP_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_HIGH_QUALITY"):
-			return 1350692346 /* GXTEntry: "Good Skinned Buck Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BUCK_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_PERFECT"):
-			return -257850294 /* GXTEntry: "Perfect Skinned Buck Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BUCK_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_BUCK_POOR"):
-			return -918541014 /* GXTEntry: "Poor Skinned Buck Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_BUCK_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_HIGH_QUALITY"):
-			return -947573795 /* GXTEntry: "Good Plucked California Condor Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CALICONDOR_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_PERFECT"):
-			return -2068302756 /* GXTEntry: "Perfect Plucked California Condor Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CALICONDOR_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_CALICONDOR_POOR"):
-			return 1650829985 /* GXTEntry: "Poor Plucked California Condor Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CALICONDOR_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_HIGH_QUALITY"):
-			return -1808044035 /* GXTEntry: "Good Skinned Chicken Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CHICKEN_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_PERFECT"):
-			return -1952647655 /* GXTEntry: "Perfect Skinned Chicken Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CHICKEN_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_CHICKEN_POOR"):
-			return 1293221440 /* GXTEntry: "Poor Skinned Chicken Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CHICKEN_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_HIGH_QUALITY"):
-			return -642946194 /* GXTEntry: "Good Plucked Cormorant Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CORMORANT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_PERFECT"):
-			return 819214075 /* GXTEntry: "Perfect Plucked Cormorant Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CORMORANT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_CORMORANT_POOR"):
-			return -858652427 /* GXTEntry: "Poor Plucked Cormorant Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CORMORANT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_HIGH_QUALITY"):
-			return 395625948 /* GXTEntry: "Good Skinned Cougar Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_COUGAR_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_PERFECT"):
-			return -2063800922 /* GXTEntry: "Perfect Skinned Cougar Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_COUGAR_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_COUGAR_POOR"):
-			return -2117103642 /* GXTEntry: "Poor Skinned Cougar Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_COUGAR_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_HIGH_QUALITY"):
-			return -1583694057 /* GXTEntry: "Good Skinned Coyote Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_COYOTE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_PERFECT"):
-			return -1550918713 /* GXTEntry: "Perfect Skinned Coyote Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_COYOTE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_COYOTE_POOR"):
-			return 836539658 /* GXTEntry: "Poor Skinned Coyote Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_COYOTE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_HIGH_QUALITY"):
-			return 773062352 /* GXTEntry: "Good Plucked Crane Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CRANE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_PERFECT"):
-			return 1306100270 /* GXTEntry: "Perfect Plucked Crane Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CRANE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_CRANE_POOR"):
-			return -1063194668 /* GXTEntry: "Poor Plucked Crane Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_CRANE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_DEER_HIGH_QUALITY"):
-			return 337839068 /* GXTEntry: "Good Skinned Deer Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_DEER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_DEER_PERFECT"):
-			return -1426520714 /* GXTEntry: "Perfect Skinned Deer Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_DEER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_DEER_POOR"):
-			return -1456429189 /* GXTEntry: "Poor Skinned Deer Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_DEER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_HIGH_QUALITY"):
-			return -2032809253 /* GXTEntry: "Good Skinned Duck Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_DUCK_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_PERFECT"):
-			return 781728005 /* GXTEntry: "Perfect Skinned Duck Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_DUCK_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_DUCK_POOR"):
-			return 1202409779 /* GXTEntry: "Poor Skinned Duck Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_DUCK_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_HIGH_QUALITY"):
-			return 1520877300 /* GXTEntry: "Good Plucked Eagle Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_EAGLE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_PERFECT"):
-			return -1736624361 /* GXTEntry: "Perfect Plucked Eagle Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_EAGLE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_EAGLE_POOR"):
-			return 719465997 /* GXTEntry: "Poor Plucked Eagle Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_EAGLE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_HIGH_QUALITY"):
-			return -361486526 /* GXTEntry: "Good Skinned Egret Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_EGRET_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_PERFECT"):
-			return -765274711 /* GXTEntry: "Perfect Skinned Egret Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_EGRET_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_EGRET_POOR"):
-			return -887205673 /* GXTEntry: "Poor Skinned Egret Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_EGRET_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_FOX_HIGH_QUALITY"):
-			return -784020903 /* GXTEntry: "Good Skinned Fox Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_FOX_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_FOX_PERFECT"):
-			return -886117938 /* GXTEntry: "Perfect Skinned Fox Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_FOX_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_FOX_POOR"):
-			return -1416771220 /* GXTEntry: "Poor Skinned Fox Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_FOX_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_GILA_HIGH_QUALITY"):
-			return 1648676911 /* GXTEntry: "Good Skinned Gila Monster Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GILA_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_GILA_PERFECT"):
-			return 2103833563 /* GXTEntry: "Perfect Skinned Gila Monster Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GILA_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_GILA_POOR"):
-			return -831636369 /* GXTEntry: "Poor Skinned Gila Monster Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GILA_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_HIGH_QUALITY"):
-			return -852290935 /* GXTEntry: "Good Skinned Goat Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GOAT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_PERFECT"):
-			return -1870415962 /* GXTEntry: "Perfect Skinned Goat Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GOAT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_GOAT_POOR"):
-			return -788684109 /* GXTEntry: "Poor Skinned Goat Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GOAT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_HIGH_QUALITY"):
-			return 1416435145 /* GXTEntry: "Good Skinned Goose Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GOOSE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_PERFECT"):
-			return -1483088274 /* GXTEntry: "Perfect Skinned Goose Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GOOSE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_GOOSE_POOR"):
-			return -791867098 /* GXTEntry: "Poor Skinned Goose Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_GOOSE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_HIGH_QUALITY"):
-			return -1689552552 /* GXTEntry: "Good Plucked Hawk Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_HAWK_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_PERFECT"):
-			return -1850779170 /* GXTEntry: "Perfect Plucked Hawk Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_HAWK_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_HAWK_POOR"):
-			return -121487803 /* GXTEntry: "Poor Plucked Hawk Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_HAWK_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_HERON_HIGH_QUALITY"):
-			return -1280499288 /* GXTEntry: "Good Skinned Heron Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_HERON_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_HERON_PERFECT"):
-			return 820245961 /* GXTEntry: "Perfect Skinned Heron Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_HERON_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_HERON_POOR"):
-			return -889526774 /* GXTEntry: "Poor Skinned Heron Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_HERON_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_HIGH_QUALITY"):
-			return -521025998 /* GXTEntry: "Good Skinned Iguana Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_IGUANA_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_PERFECT"):
-			return 1583031244 /* GXTEntry: "Perfect Skinned Iguana Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_IGUANA_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_IGUANA_POOR"):
-			return -2115599211 /* GXTEntry: "Poor Skinned Iguana Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_IGUANA_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_LOON_HIGH_QUALITY"):
-			return -767176802 /* GXTEntry: "Good Skinned Loon Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_LOON_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_LOON_PERFECT"):
-			return -750945821 /* GXTEntry: "Perfect Skinned Loon Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_LOON_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_LOON_POOR"):
-			return -2135749211 /* GXTEntry: "Poor Skinned Loon Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_LOON_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_HIGH_QUALITY"):
-			return 2063108046 /* GXTEntry: "Good Skinned Muskrat Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_MUSKRAT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_PERFECT"):
-			return 1299111759 /* GXTEntry: "Perfect Skinned Muskrat Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_MUSKRAT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_MUSKRAT_POOR"):
-			return 1595322723 /* GXTEntry: "Poor Skinned Muskrat Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_MUSKRAT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_HIGH_QUALITY"):
-			return 784918835 /* GXTEntry: "Good Skinned Opossum Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_OPOSSUM_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_PERFECT"):
-			return -676310905 /* GXTEntry: "Perfect Skinned Opossum Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_OPOSSUM_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_OPOSSUM_POOR"):
-			return -1719545959 /* GXTEntry: "Poor Skinned Opossum Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_OPOSSUM_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_OWL_HIGH_QUALITY"):
-			return -2142423934 /* GXTEntry: "Good Plucked Owl Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_OWL_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_OWL_PERFECT"):
-			return 747751566 /* GXTEntry: "Perfect Plucked Owl Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_OWL_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_OWL_POOR"):
-			return -1942682403 /* GXTEntry: "Poor Plucked Owl Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_OWL_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_HIGH_QUALITY"):
-			return 1018433784 /* GXTEntry: "Good Skinned Panther Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PANTHER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_PERFECT"):
-			return -796185392 /* GXTEntry: "Perfect Skinned Panther Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PANTHER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PANTHER_POOR"):
-			return -49549406 /* GXTEntry: "Poor Skinned Panther Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PANTHER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_HIGH_QUALITY"):
-			return 857788498 /* GXTEntry: "Good Plucked Parrot Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PARROT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_PERFECT"):
-			return 1223148871 /* GXTEntry: "Perfect Plucked Parrot Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PARROT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PARROT_POOR"):
-			return 939407236 /* GXTEntry: "Poor Plucked Parrot Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PARROT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_HIGH_QUALITY"):
-			return 1608778431 /* GXTEntry: "Good Plucked Pelican Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PELICAN_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_PERFECT"):
-			return -2033821082 /* GXTEntry: "Perfect Plucked Pelican Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PELICAN_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PELICAN_POOR"):
-			return -993340234 /* GXTEntry: "Poor Plucked Pelican Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PELICAN_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_HIGH_QUALITY"):
-			return -1861062075 /* GXTEntry: "Good Skinned Pheasant Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PHEASANT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_PERFECT"):
-			return 1645001514 /* GXTEntry: "Perfect Skinned Pheasant Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PHEASANT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PHEASANT_POOR"):
-			return 782371031 /* GXTEntry: "Poor Skinned Pheasant Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PHEASANT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PIG_HIGH_QUALITY"):
-			return 1255529169 /* GXTEntry: "Good Skinned Pig Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PIG_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PIG_PERFECT"):
-			return 70898308 /* GXTEntry: "Perfect Skinned Pig Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PIG_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PIG_POOR"):
-			return -1050350982 /* GXTEntry: "Poor Skinned Pig Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PIG_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_HIGH_QUALITY"):
-			return 581781784 /* GXTEntry: "Good Skinned Prairie Chicken Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PRARECHICK_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_PERFECT"):
-			return -1363330863 /* GXTEntry: "Perfect Skinned Prairie Chicken Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PRARECHICK_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PRARECHICK_POOR"):
-			return -1780911288 /* GXTEntry: "Poor Skinned Prairie Chicken Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PRARECHICK_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_HIGH_QUALITY"):
-			return 1018306802 /* GXTEntry: "Good Skinned Pronghorn Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PRONGHORN_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_PERFECT"):
-			return 1615521415 /* GXTEntry: "Perfect Skinned Pronghorn Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PRONGHORN_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_PRONGHORN_POOR"):
-			return -1499066338 /* GXTEntry: "Poor Skinned Pronghorn Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_PRONGHORN_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_HIGH_QUALITY"):
-			return 1711081908 /* GXTEntry: "Good Skinned Rabbit Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RABBIT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_PERFECT"):
-			return -164705 /* GXTEntry: "Perfect Skinned Rabbit Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RABBIT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_RABBIT_POOR"):
-			return -2044044647 /* GXTEntry: "Poor Skinned Rabbit Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RABBIT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_HIGH_QUALITY"):
-			return -859583379 /* GXTEntry: "Good Skinned Raccoon Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RACOON_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_PERFECT"):
-			return -759504052 /* GXTEntry: "Perfect Skinned Raccoon Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RACOON_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_RACOON_POOR"):
-			return 700225820 /* GXTEntry: "Poor Skinned Raccoon Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RACOON_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_RAM_HIGH_QUALITY"):
-			return 136458586 /* GXTEntry: "Good Skinned Ram Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RAM_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_RAM_PERFECT"):
-			return 799105420 /* GXTEntry: "Perfect Skinned Ram Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RAM_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_RAM_POOR"):
-			return -481655757 /* GXTEntry: "Poor Skinned Ram Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RAM_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_HIGH_QUALITY"):
-			return 484160931 /* GXTEntry: "Good Plucked Raven Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RAVEN_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_PERFECT"):
-			return 1010699907 /* GXTEntry: "Perfect Plucked Raven Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RAVEN_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_RAVEN_POOR"):
-			return 1550264248 /* GXTEntry: "Poor Plucked Raven Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_RAVEN_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_HIGH_QUALITY"):
-			return -371992731 /* GXTEntry: "Good Plucked Red-footed Booby Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_REDFTBOOBY_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_PERFECT"):
-			return 1090294483 /* GXTEntry: "Perfect Plucked Red-footed Booby Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_REDFTBOOBY_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_REDFTBOOBY_POOR"):
-			return -274175035 /* GXTEntry: "Poor Plucked Red-footed Booby Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_REDFTBOOBY_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_HIGH_QUALITY"):
-			return -1064414912 /* GXTEntry: "Good Skinned Rooster Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ROOSTER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_PERFECT"):
-			return -2091620305 /* GXTEntry: "Perfect Skinned Rooster Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ROOSTER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_ROOSTER_POOR"):
-			return -468684824 /* GXTEntry: "Poor Skinned Rooster Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ROOSTER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_HIGH_QUALITY"):
-			return 1668870118 /* GXTEntry: "Good Skinned Roseate Spoonbill Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ROSESPOONBIL_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_PERFECT"):
-			return -534004020 /* GXTEntry: "Perfect Skinned Roseate Spoonbill Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ROSESPOONBIL_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_ROSESPOONBIL_POOR"):
-			return -2126925270 /* GXTEntry: "Poor Skinned Roseate Spoonbill Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_ROSESPOONBIL_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_HIGH_QUALITY"):
-			return 2008380517 /* GXTEntry: "Good Plucked Seagull Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SEAGULL_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_PERFECT"):
-			return -510697884 /* GXTEntry: "Perfect Plucked Seagull Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SEAGULL_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SEAGULL_POOR"):
-			return -955209948 /* GXTEntry: "Poor Plucked Seagull Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SEAGULL_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_HIGH_QUALITY"):
-			return 1459836898 /* GXTEntry: "Good Skinned Sheep Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SHEEP_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_PERFECT"):
-			return 303969766 /* GXTEntry: "Perfect Skinned Sheep Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SHEEP_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SHEEP_POOR"):
-			return -1707588662 /* GXTEntry: "Poor Skinned Sheep Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SHEEP_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_HIGH_QUALITY"):
-			return -1224075784 /* GXTEntry: "Good Skinned Skunk Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SKUNK_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_PERFECT"):
-			return -1806671048 /* GXTEntry: "Perfect Skinned Skunk Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SKUNK_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SKUNK_POOR"):
-			return 749765420 /* GXTEntry: "Poor Skinned Skunk Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SKUNK_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_HIGH_QUALITY"):
-			return 462936163 /* GXTEntry: "Good Skinned Black-Tailed Rattlesnake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_BLRAT_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_PERFECT"):
-			return -8888941 /* GXTEntry: "Perfect Skinned Black-Tailed Rattlesnake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_BLRAT_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BLRAT_POOR"):
-			return 1640227110 /* GXTEntry: "Poor Skinned Black-Tailed Rattlesnake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_BLRAT_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_HIGH_QUALITY"):
-			return -1241188722 /* GXTEntry: "Good Skinned Red Boa Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_BOA_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_PERFECT"):
-			return -1030962659 /* GXTEntry: "Perfect Skinned Red Boa Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_BOA_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_BOA_POOR"):
-			return 112552982 /* GXTEntry: "Poor Skinned Red Boa Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_BOA_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_HIGH_QUALITY"):
-			return -1599578931 /* GXTEntry: "Good Skinned Copperhead Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_COPPER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_PERFECT"):
-			return 1296331626 /* GXTEntry: "Perfect Skinned Copperhead Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_COPPER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_COPPER_POOR"):
-			return -1256398198 /* GXTEntry: "Poor Skinned Copperhead Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_COPPER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_HIGH_QUALITY"):
-			return 1297800973 /* GXTEntry: "Good Skinned Fer-de-lance Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_FERDLNCE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_PERFECT"):
-			return 1772582754 /* GXTEntry: "Perfect Skinned Fer-de-lance Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_FERDLNCE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_FERDLNCE_POOR"):
-			return -1459876379 /* GXTEntry: "Poor Skinned Fer-de-lance Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_FERDLNCE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_HIGH_QUALITY"):
-			return 1127406863 /* GXTEntry: "Good Skinned Snake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_PERFECT"):
-			return 1779996957 /* GXTEntry: "Perfect Skinned Snake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_POOR"):
-			return 1885306923 /* GXTEntry: "Poor Skinned Snake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_HIGH_QUALITY"):
-			return 1244107697 /* GXTEntry: "Good Skinned Water Snake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_WATER_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_PERFECT"):
-			return -1201555940 /* GXTEntry: "Perfect Skinned Water Snake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_WATER_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_SNAKE_WATER_POOR"):
-			return -668487833 /* GXTEntry: "Poor Skinned Water Snake Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_SNAKE_WATER_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_HIGH_QUALITY"):
-			return -1178150148 /* GXTEntry: "Good Skinned Turkey Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_TURKEY_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_PERFECT"):
-			return 1171158615 /* GXTEntry: "Perfect Skinned Turkey Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_TURKEY_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_TURKEY_POOR"):
-			return -2123554124 /* GXTEntry: "Poor Skinned Turkey Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_TURKEY_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_HIGH_QUALITY"):
-			return 1806705761 /* GXTEntry: "Good Skinned Snapping Turtle Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_TURTLE_SNAP_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_PERFECT"):
-			return 404581836 /* GXTEntry: "Perfect Skinned Snapping Turtle Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_TURTLE_SNAP_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_TURTLE_SNAP_POOR"):
-			return 987197489 /* GXTEntry: "Poor Skinned Snapping Turtle Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_TURTLE_SNAP_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_HIGH_QUALITY"):
-			return -1259715647 /* GXTEntry: "Good Plucked Vulture Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_VULTURE_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_PERFECT"):
-			return -1716717840 /* GXTEntry: "Perfect Plucked Vulture Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_VULTURE_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_VULTURE_POOR"):
-			return -196277007 /* GXTEntry: "Poor Plucked Vulture Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_VULTURE_POOR");
 		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_HIGH_QUALITY"):
-			return -2064457926 /* GXTEntry: "Good Skinned Wolf Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_WOLF_HIGH_QUALITY");
 		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_PERFECT"):
-			return 561267454 /* GXTEntry: "Perfect Skinned Wolf Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_WOLF_PERFECT");
 		case joaat("PROVISION_ANIMAL_CARCASS_WOLF_POOR"):
-			return 686253083 /* GXTEntry: "Poor Skinned Wolf Carcass" */;
+			return joaat("PROVISION_SKINNED_CARCASS_WOLF_POOR");
 		default:
 			break;
 	}
@@ -14774,7 +14774,7 @@ int func_534(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	*uParam1 = func_733(Var0, 1415981582, 0, -1);
+	*uParam1 = func_733(Var0, joaat("SLOTID_HORSE_MANE"), 0, -1);
 	if (!func_264(*uParam1, 0))
 	{
 		return 0;
@@ -14791,7 +14791,7 @@ int func_535(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	*uParam1 = func_733(Var0, -2119169513, 0, -1);
+	*uParam1 = func_733(Var0, joaat("SLOTID_HORSE_TAIL"), 0, -1);
 	if (!func_264(*uParam1, 0))
 	{
 		return 0;
@@ -15474,7 +15474,7 @@ int func_573(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var29 = { func_263(iParam1, Var0, 1415981582, 0) };
+	Var29 = { func_263(iParam1, Var0, joaat("SLOTID_HORSE_MANE"), 0) };
 	return func_268(Var29, 1);
 }
 
@@ -15488,7 +15488,7 @@ int func_574(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var29 = { func_263(iParam1, Var0, -2119169513, 0) };
+	Var29 = { func_263(iParam1, Var0, joaat("SLOTID_HORSE_TAIL"), 0) };
 	return func_268(Var29, 1);
 }
 
@@ -15832,7 +15832,7 @@ void func_593(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		return;
 	}
-	else if (iParam0 == 1807503187)
+	else if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -16374,15 +16374,15 @@ void func_602(int iParam0, int iParam1)
 	if (iParam0 == PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID()))
 	{
 		func_795(iParam0, Global_1903929, iVar6, 0);
-		func_796(-469672732, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 		if (ATTRIBUTE::GET_ATTRIBUTE_RANK(iParam0, 8) < 25 && iVar5 >= 25)
 		{
-			func_796(941437279, 0, 0);
+			func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_FULL"), 0, 0);
 		}
 	}
 	else
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 	}
 }
 
@@ -16505,11 +16505,11 @@ void func_604(int iParam0, int iParam1)
 	}
 	if (iParam0 == PLAYER::_0xF49F14462F0AE27C(Global_1275573->f_10))
 	{
-		func_796(-469672732, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 	}
 	else
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 	}
 	func_703(func_702(joaat("HORSE_MEDICINE_GIVEN")), 1);
 	func_791(iParam0, iParam1);
@@ -16563,11 +16563,11 @@ void func_606(int iParam0, int iParam1)
 	}
 	if (iParam0 == PLAYER::_0xF49F14462F0AE27C(Global_1275573->f_10))
 	{
-		func_796(-469672732, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 	}
 	else
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 	}
 }
 
@@ -16615,11 +16615,11 @@ void func_608(int iParam0, int iParam1)
 	}
 	if (iParam0 == PLAYER::_0xF49F14462F0AE27C(Global_1275573->f_10))
 	{
-		func_796(-469672732, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 	}
 	else
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 	}
 }
 
@@ -16693,11 +16693,11 @@ void func_610(int iParam0, int iParam1)
 		fVar6 = (BUILTIN::TO_FLOAT(func_801(iVar5)) + (60f * 60f));
 		func_795(iParam0, Global_1903929, 19, 0);
 		func_794(Var1, 0, fVar6);
-		func_796(-469672732, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 	}
 	else
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 	}
 }
 
@@ -16777,10 +16777,10 @@ void func_612(int iParam0, int iParam1)
 	func_791(iParam0, iParam1);
 	if (PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID()) != iParam0)
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 		return;
 	}
-	func_796(-469672732, 0, 0);
+	func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 	Var1 = { func_379(0, 1, 0, -1) };
 	iVar5 = ATTRIBUTE::GET_ATTRIBUTE_RANK(iParam0, 0);
 	fVar6 = (BUILTIN::TO_FLOAT(func_801(iVar5)) + (60f * 60f));
@@ -16861,7 +16861,7 @@ void func_615(int iParam0, int iParam1, int iParam2)
 	iVar0 = PLAYER::_0xF49F14462F0AE27C(PLAYER::GET_PLAYER_INDEX());
 	if (iVar0 != iParam0)
 	{
-		func_796(-162385832, 0, 0);
+		func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"), 0, 0);
 		return;
 	}
 	bVar1 = PED::_0x33FA048675821DA7(iParam0, 3);
@@ -16915,10 +16915,10 @@ void func_615(int iParam0, int iParam1, int iParam2)
 	{
 		case 16:
 		case 17:
-			func_796(-469672732, 0, 0);
+			func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE"), 0, 0);
 			break;
 		case 18:
-			func_796(1717813521, 0, 0);
+			func_796(joaat("PERSONA_HONOR_ACTION__HORSE_CARE_CLEAN"), 0, 0);
 			break;
 		case 23:
 			return;
@@ -16992,7 +16992,7 @@ int func_617(var uParam0, bool bParam1)
 	int iVar59;
 
 	Var0.f_9 = -1591664384;
-	Var29 = { func_780(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
+	Var29 = { func_780(0, -1591664384, -1591664384, -1591664384, joaat("CI_CATEGORY_HORSE"), 0, 0) };
 	if (func_782(&Var29, &iVar43, &iVar44, bParam1))
 	{
 		Var45.f_9 = -1591664384;
@@ -17103,7 +17103,7 @@ int func_624(var uParam0, bool bParam1)
 	int iVar59;
 
 	Var0.f_9 = -1591664384;
-	Var29 = { func_780(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
+	Var29 = { func_780(0, -1591664384, -1591664384, -1591664384, joaat("CI_CATEGORY_HORSE"), 0, 0) };
 	if (func_782(&Var29, &iVar43, &iVar44, bParam1))
 	{
 		Var45.f_9 = -1591664384;
@@ -18520,7 +18520,7 @@ int func_673(int iParam0)
 		{
 			if (iParam0 == 3)
 			{
-				return -1033589769;
+				return joaat("ST_GENERAL_INTRO");
 			}
 		}
 	}
@@ -23423,7 +23423,7 @@ int func_873(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -23884,7 +23884,7 @@ int func_893()
 	{
 		return 1;
 	}
-	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-1461907237))
+	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_HONOR")))
 	{
 		return 1;
 	}
@@ -23907,203 +23907,203 @@ int func_894(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2076515520:
+		case joaat("PERSONA_HONOR_ACTION__NB_ARROWHEAD_INJURY_MERCY_KILL"):
 			return 93;
-		case -2062348046:
+		case joaat("PERSONA_HONOR_ACTION__NB_RUNAWAY_WAGON_RETURN"):
 			return 96;
-		case -1983943039:
+		case joaat("PERSONA_HONOR_ACTION__NB_BEGGAR_ASSAULT"):
 			return 61;
-		case -1967078622:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_PLAYER"):
 			return 4;
-		case -1935655667:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_THIRTYFIVE"):
 			return 39;
-		case -1930919582:
+		case joaat("PERSONA_HONOR_ACTION__NB_PHOTOGRAPHY_MURDER"):
 			return 56;
-		case -1930399868:
+		case joaat("PERSONA_HONOR_ACTION__REVIVE_PLAYER"):
 			return 63;
-		case -1924130593:
+		case joaat("PERSONA_HONOR_ACTION__NB_BEGGAR_DONATE"):
 			return 97;
-		case -1898294040:
+		case joaat("PERSONA_HONOR_ACTION__NB_WILDMAN_KILL"):
 			return 50;
-		case -1854780893:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_RAMPAGE"):
 			return 5;
-		case -1783181138:
+		case joaat("PERSONA_HONOR_ACTION__SLAUGHTER_PETS"):
 			return 13;
-		case -1777144780:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FIFTY"):
 			return 87;
-		case -1679013564:
+		case joaat("PERSONA_HONOR_ACTION__WAGON_THIEF_PLAYER"):
 			return 16;
-		case -1648877470:
+		case joaat("PERSONA_HONOR_ACTION__LOOTING"):
 			return 43;
-		case -1634863390:
+		case joaat("PERSONA_HONOR_ACTION__EXECUTION_PLAYER"):
 			return 10;
-		case -1598949067:
+		case joaat("PERSONA_HONOR_ACTION__ANIMAL_CRUELTY"):
 			return 45;
-		case -1575244427:
+		case joaat("PERSONA_HONOR_ACTION__REVIVE_POSSE"):
 			return 62;
-		case -1494363065:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_BUTCHER"):
 			return 1;
-		case -1408563730:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_GVO_INTRO_NEG"):
 			return 30;
-		case -1399051227:
+		case joaat("PERSONA_HONOR_ACTION__NB_RIVAL_COLLECTOR_KILL"):
 			return 53;
-		case -1393798041:
+		case joaat("PERSONA_HONOR_ACTION__NB_ANIMAL_ATTACK_MURDER"):
 			return 58;
-		case -1376314322:
+		case joaat("PERSONA_HONOR_ACTION__NB_GRAVEROBBER_KILL"):
 			return 49;
-		case -1330378740:
+		case joaat("PERSONA_HONOR_ACTION__NB_WILDMAN_FEED"):
 			return 90;
-		case -1315007749:
+		case joaat("PERSONA_HONOR_ACTION__UNPROVOKED_ANTAGONIZATION"):
 			return 21;
-		case -1296513906:
+		case joaat("PERSONA_HONOR_ACTION__WATCH_BLEED_OUT"):
 			return 11;
-		case -1258163578:
+		case joaat("PERSONA_HONOR_ACTION__NB_GRAVEROBBER_ACCEPT"):
 			return 48;
-		case -1215742816:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_TWENTYFIVE"):
 			return 37;
-		case -1152882498:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_HORSE_PLAYER"):
 			return 18;
-		case -1098645728:
+		case joaat("PERSONA_HONOR_ACTION__NB_ANIMAL_ATTACK_SAVE"):
 			return 88;
-		case -1034424695:
+		case joaat("PERSONA_HONOR_ACTION__INTRO_MISSION_NEG"):
 			return 32;
-		case -1030655937:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_HORSE"):
 			return 12;
-		case -985005225:
+		case joaat("PERSONA_HONOR_ACTION__NB_HOBO_DOG_KILL"):
 			return 57;
-		case -892848695:
+		case joaat("PERSONA_HONOR_ACTION__RESOURCEFUL"):
 			return 69;
-		case -789758703:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_TEN"):
 			return 34;
-		case -757633599:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_OUTLAW"):
 			return 31;
-		case -706075066:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_THIEF_PLAYER"):
 			return 17;
-		case -682435976:
+		case joaat("PERSONA_HONOR_ACTION__INTRO_MISSION_POS"):
 			return 77;
-		case -634665876:
+		case joaat("PERSONA_HONOR_ACTION__WAGON_THIEF_AI"):
 			return 15;
-		case -545299531:
+		case joaat("PERSONA_HONOR_ACTION__THEFT"):
 			return 44;
-		case -514316475:
+		case joaat("PERSONA_HONOR_ACTION__MURDER"):
 			return 2;
-		case -479797100:
+		case joaat("PERSONA_HONOR_ACTION__FME_BOUNTY_RETURNED_ALIVE"):
 			return 98;
-		case -469672732:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE"):
 			return 65;
-		case -379874384:
+		case joaat("PERSONA_HONOR_ACTION__GFH_LAWFUL_PVP"):
 			return 74;
-		case -355092128:
+		case joaat("PERSONA_HONOR_ACTION__CLEAR_HIDEOUT"):
 			return 70;
-		case -326224139:
+		case joaat("PERSONA_HONOR_ACTION__NB_RUNAWAY_WAGON_ASSIST"):
 			return 95;
-		case -210274020:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FIFTEEN"):
 			return 35;
-		case -162385832:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"):
 			return 68;
-		case -114666387:
+		case joaat("PERSONA_HONOR_ACTION__NB_KIDNAPPED_KILL"):
 			return 51;
-		case -86995487:
+		case joaat("PERSONA_HONOR_ACTION__LOOTING_BODIES"):
 			return 20;
-		case -79139194:
+		case joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_SAVE"):
 			return 72;
-		case -71551190:
+		case joaat("PERSONA_HONOR_ACTION__NB_KIDNAPPED_RESCUE"):
 			return 91;
-		case -32613857:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_TWENTY"):
 			return 81;
 		case -1:
 			return 0;
-		case 5611246:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_TWENTYFIVE"):
 			return 82;
-		case 81846499:
+		case joaat("PERSONA_HONOR_ACTION__IGNORE_MISSION"):
 			return 23;
-		case 120448958:
+		case joaat("PERSONA_HONOR_ACTION__GFH_CRIMINAL_PVP"):
 			return 27;
-		case 151445061:
+		case joaat("PERSONA_HONOR_ACTION__NB_RANDOM_EVENT_MURDER"):
 			return 60;
-		case 242857368:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FIFTY"):
 			return 42;
-		case 300196727:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FORTYFIVE"):
 			return 41;
-		case 334700325:
+		case joaat("PERSONA_HONOR_ACTION__NB_TREASURE_HUNTER_KILL"):
 			return 52;
-		case 353568324:
+		case joaat("PERSONA_HONOR_ACTION__REVIVE_MULTI"):
 			return 64;
-		case 385589027:
+		case joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_KILL"):
 			return 24;
-		case 396837320:
+		case joaat("PERSONA_HONOR_ACTION__HERDING_STEAL"):
 			return 29;
-		case 440583097:
+		case joaat("PERSONA_HONOR_ACTION__VANDALISM_LOW"):
 			return 47;
-		case 449057693:
+		case joaat("PERSONA_HONOR_ACTION__GRIEFING"):
 			return 22;
-		case 457103096:
+		case joaat("PERSONA_HONOR_ACTION__NB_ARROWHEAD_INJURY_BLEED_OUT"):
 			return 55;
-		case 477974086:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_MISSION_PEDS"):
 			return 6;
-		case 478308321:
+		case joaat("PERSONA_HONOR_ACTION__ARSON"):
 			return 46;
-		case 499656970:
+		case joaat("PERSONA_HONOR_ACTION__MELEE_ATTACK_PLAYER_UNARMED"):
 			return 8;
-		case 618068466:
+		case joaat("PERSONA_HONOR_ACTION__MELEE_ATTACK_PLAYER"):
 			return 7;
-		case 630308764:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_THIRTYFIVE"):
 			return 84;
-		case 633501950:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_TWENTY"):
 			return 36;
-		case 640330073:
+		case joaat("PERSONA_HONOR_ACTION__MERCY_KILL"):
 			return 89;
-		case 905156700:
+		case joaat("PERSONA_HONOR_ACTION__FME_BOUNTY_RETURNED_DEAD"):
 			return 59;
-		case 941437279:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE_FULL"):
 			return 67;
-		case 946732137:
+		case joaat("PERSONA_HONOR_ACTION__CLEAR_AMBUSH"):
 			return 71;
-		case 1232224440:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FIVE"):
 			return 78;
-		case 1248971179:
+		case joaat("PERSONA_HONOR_ACTION__NB_TIED_UP_RESCUE"):
 			return 92;
-		case 1250422342:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_THIEF_AI"):
 			return 14;
-		case 1257949393:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_CAMP_FOLLOWER"):
 			return 3;
-		case 1316486837:
+		case joaat("PERSONA_HONOR_ACTION__GFH_CRIMINAL"):
 			return 26;
-		case 1345888212:
+		case joaat("PERSONA_HONOR_ACTION__RUSTLING"):
 			return 28;
-		case 1382158532:
+		case joaat("PERSONA_HONOR_ACTION__GFH_LAWFUL"):
 			return 73;
-		case 1398164246:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FORTY"):
 			return 85;
-		case 1427070667:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_GUNSLINGER"):
 			return 76;
-		case 1571096148:
+		case joaat("PERSONA_HONOR_ACTION__NB_RIVAL_COLLECTOR_LOOT"):
 			return 54;
-		case 1717813521:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE_CLEAN"):
 			return 66;
-		case 1791948823:
+		case joaat("PERSONA_HONOR_ACTION__HOGTIE_PLAYER"):
 			return 9;
-		case 1841970554:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FIVE"):
 			return 33;
-		case 1872332830:
+		case joaat("PERSONA_HONOR_ACTION__NB_PHOTOGRAPHY_ASSIST"):
 			return 94;
-		case 1889309476:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_TEN"):
 			return 79;
-		case 1898201469:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FORTY"):
 			return 40;
-		case 1918774327:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FIFTEEN"):
 			return 80;
-		case 1951290581:
+		case joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_SAVE_THEN_KILL"):
 			return 25;
-		case 1971904853:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_THIRTY"):
 			return 38;
-		case 2002140369:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FORTYFIVE"):
 			return 86;
-		case 2018657739:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_GVO_INTRO_POS"):
 			return 75;
-		case 2078792148:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_THIRTY"):
 			return 83;
-		case 2108116481:
+		case joaat("PERSONA_HONOR_ACTION__TRAMPLE"):
 			return 19;
 		default:
 			break;
@@ -24334,17 +24334,17 @@ int func_912(int iParam0)
 		case -1:
 			return -1844561321;
 		case 0:
-			return 1653124001;
+			return joaat("NSMT_HORSE");
 		case 1:
-			return -430733995;
+			return joaat("NSMT_DONKEY");
 		case 2:
-			return 1501387297;
+			return joaat("NSMT_VEHICLE");
 		case 3:
-			return -1143491563;
+			return joaat("NSMT_CANOE");
 		case 4:
-			return -1460176899;
+			return joaat("NSMT_TRAIN");
 		case 5:
-			return 1003181529;
+			return joaat("NSMT_CANNON");
 		default:
 			break;
 	}
@@ -25125,7 +25125,7 @@ int func_948(int iParam0, float fParam1, bool bParam2, int iParam3)
 					GRAPHICS::ANIMPOSTFX_PLAY(sVar0);
 				}
 			}
-			func_956(1775828486);
+			func_956(joaat("STATUS_EFFECT__TRACKING"));
 			func_957(-1);
 			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
 			Global_17172.f_54.f_2438.f_34[1 /*2*/] = fParam1;
@@ -25144,7 +25144,7 @@ int func_948(int iParam0, float fParam1, bool bParam2, int iParam3)
 			Global_17172.f_54.f_2438.f_34[2 /*2*/] = fParam1;
 			break;
 		case 19:
-			func_956(350943398);
+			func_956(joaat("STATUS_EFFECT__POISON"));
 			func_959(0, 1, 1);
 			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
 			(Global_17172.f_54.f_2438.f_34[0 /*2*/])->f_1 = fParam1;
@@ -26097,289 +26097,289 @@ int func_977(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2137819446:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_3"):
 			return 100;
-		case -2131931188:
+		case joaat("CONTENT__PREDATOR__LEVEL_0"):
 			return 127;
-		case -2130179962:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_3"):
 			return 63;
-		case -2059502051:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_2"):
 			return 65;
-		case -2056449621:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_2"):
 			return 93;
-		case -1973221270:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_1"):
 			return 64;
-		case -1969715419:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_2"):
 			return 35;
-		case -1968787770:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_3"):
 			return 6;
-		case -1957895818:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_2"):
 			return 56;
-		case -1952291530:
+		case joaat("CONTENT__PREDATOR__LEVEL_3"):
 			return 130;
-		case -1950424573:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_3"):
 			return 54;
-		case -1910888845:
+		case joaat("UNLOCK__ROLE__POTENTIAL_BONUS"):
 			return 110;
-		case -1883405573:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_2"):
 			return 78;
-		case -1844803100:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_1"):
 			return 80;
-		case -1831687141:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_2"):
 			return 62;
-		case -1810408560:
+		case joaat("ABILITY_CARD__OVERRIDE_REVENGE_SLOW_TIME"):
 			return 73;
-		case -1805785047:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_2"):
 			return 41;
-		case -1759910473:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_1"):
 			return 25;
-		case -1756646040:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_1"):
 			return 92;
-		case -1741565123:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_2"):
 			return 47;
-		case -1609480552:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_1"):
 			return 61;
-		case -1596526341:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_3"):
 			return 3;
-		case -1573606823:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_1"):
 			return 49;
-		case -1510695159:
+		case joaat("CONTENT__ACTIVE_DEED__FIRE_VULNERABILITY"):
 			return 138;
-		case -1504620904:
+		case joaat("UNLOCK__ROLE__AWARENESS_BONUS"):
 			return 107;
-		case -1462866101:
+		case joaat("UNLOCK__ROLE__INTUITION_BONUS"):
 			return 111;
-		case -1405836475:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_1"):
 			return 55;
-		case -1360021450:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_3"):
 			return 9;
-		case -1356583879:
+		case joaat("CONTENT__PREDATOR__LEVEL_1"):
 			return 128;
-		case -1242362177:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_1"):
 			return 46;
-		case -1235458416:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_1"):
 			return 74;
-		case -1234968784:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_3"):
 			return 69;
-		case -1234548949:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_1"):
 			return 7;
-		case -1143906885:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_4"):
 			return 122;
-		case -1140308479:
+		case joaat("CONTENT__PREDATOR__LEVEL_7"):
 			return 134;
 		case -1105699593:
 			return 141;
-		case -1008191715:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_1"):
 			return 1;
-		case -985141745:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_3"):
 			return 79;
-		case -974857798:
+		case joaat("CONTENT__PREDATOR__LEVEL_4"):
 			return 131;
-		case -914097888:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_5"):
 			return 123;
-		case -900341092:
+		case joaat("CONTENT__PREDATOR__LEVEL_6"):
 			return 133;
-		case -859661758:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_3"):
 			return 60;
-		case -810885450:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_1"):
 			return 40;
-		case -750368411:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_3"):
 			return 48;
-		case -691826426:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_1"):
 			return 77;
-		case -608746625:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_2"):
 			return 17;
-		case -567710817:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_2"):
 			return 2;
-		case -565327488:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_3"):
 			return 72;
-		case -559775780:
+		case joaat("EQUIPMENT__NED_KELLY_FREEROAM"):
 			return 117;
-		case -549372097:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_2"):
 			return 59;
-		case -455491084:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_3"):
 			return 85;
-		case -447950391:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_3"):
 			return 94;
-		case -418060375:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_1"):
 			return 4;
-		case -391691334:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_2"):
 			return 68;
-		case -375368707:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_1"):
 			return 58;
-		case -357713093:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_1"):
 			return 119;
-		case -336340230:
+		case joaat("EQUIPMENT__NED_KELLY_ADVERSARY"):
 			return 115;
-		case -309456186:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_1"):
 			return 10;
-		case -300915357:
+		case joaat("CONTENT__HUNTED__MASKED"):
 			return 136;
-		case -252777454:
+		case joaat("CONTENT__PASSIVE_MODE"):
 			return 126;
-		case -190717545:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_3"):
 			return 30;
-		case -179898515:
+		case joaat("EQUIPMENT__NED_KELLY_GOLDEN"):
 			return 118;
-		case -179343615:
+		case joaat("CONSUMABLE__DAILY_STEW"):
 			return 140;
-		case -132268497:
+		case joaat("CONTENT__PREDATOR__LEVEL_5"):
 			return 132;
-		case -120658935:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_1"):
 			return 67;
-		case -97080319:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_1"):
 			return 43;
-		case -93340399:
+		case joaat("UNLOCK__ROLE__EFFICIENCY_BONUS"):
 			return 106;
-		case -2338369:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_3"):
 			return 39;
 		case -1:
 			return 0;
-		case 18275459:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_2"):
 			return 8;
-		case 47725914:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_2"):
 			return 11;
-		case 151887407:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_3"):
 			return 18;
-		case 153569762:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_2"):
 			return 44;
-		case 163503896:
+		case joaat("STATUS_EFFECT__TOXIC_MOONSHINE"):
 			return 101;
-		case 183566846:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_3"):
 			return 15;
-		case 193887912:
+		case joaat("UNLOCK__ROLE__EAGLE_EYE_PLUS"):
 			return 113;
-		case 225804550:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_6"):
 			return 124;
-		case 267361268:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_1"):
 			return 86;
-		case 272084311:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_2"):
 			return 71;
-		case 312483235:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_2"):
 			return 29;
-		case 349431355:
+		case joaat("UNLOCK__ROLE__PERCEPTION_BONUS"):
 			return 105;
-		case 350943398:
+		case joaat("STATUS_EFFECT__POISON"):
 			return 102;
-		case 383280474:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_3"):
 			return 12;
-		case 467901857:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_3"):
 			return 51;
-		case 508502713:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_7"):
 			return 125;
-		case 548902645:
+		case joaat("UNLOCK__ROLE__PROTECTION_MOONSHINE_BONUS"):
 			return 109;
-		case 591249118:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_1"):
 			return 28;
-		case 611341556:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_1"):
 			return 16;
-		case 618168626:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_2"):
 			return 26;
-		case 620773281:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_1"):
 			return 98;
-		case 668358831:
+		case joaat("CONTENT__ACTIVE_DEED__BOUNTER_HUNTER_ACCURACY_DEBUFF"):
 			return 139;
-		case 677513315:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_3"):
 			return 45;
-		case 713112284:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_2"):
 			return 50;
-		case 722162219:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_3"):
 			return 88;
-		case 730253571:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_3"):
 			return 36;
-		case 731266401:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_2"):
 			return 90;
-		case 785001351:
+		case joaat("CONTENT__PREDATOR__LEVEL_8"):
 			return 135;
-		case 793035862:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_2"):
 			return 81;
-		case 802887669:
+		case joaat("UNLOCK__ROLE__MASTER_DISTILLER_BONUS"):
 			return 114;
-		case 828060856:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_2"):
 			return 38;
-		case 837742789:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_1"):
 			return 70;
-		case 900184247:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_3"):
 			return 21;
-		case 924932702:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_2"):
 			return 14;
-		case 969398724:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_1"):
 			return 89;
-		case 1014273190:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_2"):
 			return 96;
-		case 1033330939:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_3"):
 			return 82;
-		case 1034286944:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_2"):
 			return 87;
-		case 1123546272:
+		case joaat("UNLOCK__ROLE__FOCUS_BONUS"):
 			return 104;
-		case 1138545953:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_2"):
 			return 20;
-		case 1157170123:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_2"):
 			return 75;
-		case 1159895828:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_1"):
 			return 31;
-		case 1296512587:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_3"):
 			return 97;
-		case 1377989036:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_1"):
 			return 19;
-		case 1423325819:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_2"):
 			return 32;
-		case 1476796894:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_3"):
 			return 24;
-		case 1486559056:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_2"):
 			return 120;
-		case 1493749872:
+		case joaat("UNLOCK__ROLE__DIVINATION_BONUS"):
 			return 112;
-		case 1500545235:
+		case joaat("CONTENT__PREDATOR__LEVEL_2"):
 			return 129;
-		case 1507470319:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_1"):
 			return 83;
-		case 1543468593:
+		case joaat("CONTENT__ACTIVE_DEED__EAGLE_EYE_GENERIC_BUFF"):
 			return 137;
-		case 1568867811:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_3"):
 			return 57;
-		case 1625043854:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_1"):
 			return 22;
-		case 1667258255:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_3"):
 			return 33;
-		case 1695199279:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_3"):
 			return 121;
-		case 1699722938:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_1"):
 			return 13;
-		case 1746978940:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_2"):
 			return 84;
-		case 1764814366:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_1"):
 			return 95;
-		case 1767031434:
+		case joaat("EQUIPMENT__NED_KELLY_COOP"):
 			return 116;
-		case 1775828486:
+		case joaat("STATUS_EFFECT__TRACKING"):
 			return 103;
-		case 1830439946:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_2"):
 			return 23;
-		case 1851839077:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_2"):
 			return 99;
-		case 1860260195:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_3"):
 			return 66;
-		case 1885285188:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_1"):
 			return 52;
-		case 1905466026:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_3"):
 			return 27;
-		case 1925734249:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_3"):
 			return 76;
-		case 1938325642:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_2"):
 			return 5;
-		case 2079700825:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_3"):
 			return 42;
-		case 2081475118:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_1"):
 			return 37;
-		case 2093509505:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_1"):
 			return 34;
-		case 2100718034:
+		case joaat("UNLOCK__ROLE__PROTECTION_TRADER_BONUS"):
 			return 108;
-		case 2117355246:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_2"):
 			return 53;
-		case 2146493981:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_3"):
 			return 91;
 		default:
 			break;
@@ -26405,7 +26405,7 @@ int func_978(int iParam0, int iParam1)
 	iVar2 = func_981(iParam1, 1);
 	switch ((Global_1140484->f_30603.f_2900[iVar2 /*31*/])->f_1)
 	{
-		case -1912291748:
+		case joaat("ON_DISABLE"):
 			if (iVar1 == iVar0)
 			{
 				return 0;
@@ -26416,8 +26416,8 @@ int func_978(int iParam0, int iParam1)
 			}
 			break;
 		case joaat("DURATION"):
-		case -594821844:
-		case 348502922:
+		case joaat("DURATION_OR_MISS"):
+		case joaat("ALLY_LEAVE_DEADEYE"):
 		case 1002704651:
 		case 1270499458:
 			return 1;
@@ -26479,379 +26479,379 @@ int func_981(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2139291255:
+		case joaat("UNLOCK__ROLE__POTENTIAL_BONUS_EFFECT"):
 			return 145;
-		case -2133203822:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_2_EFFECT"):
 			return 108;
-		case -2119961771:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_1_EFFECT"):
 			return 90;
-		case -2117138640:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_2_LOCAL_EFFECT"):
 			return 79;
-		case -2115524796:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_3_EFFECT"):
 			return 60;
-		case -2108980762:
+		case joaat("STATUS_EFFECT__POISON_EFFECT"):
 			return 137;
-		case -2088744988:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_2_EFFECT"):
 			return 91;
-		case -2056483403:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_2_EFFECT"):
 			return 75;
-		case -2008161946:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_3_EFFECT"):
 			return 26;
-		case -2006179687:
+		case joaat("CONTENT__PREDATOR__LEVEL_2_EFFECTS"):
 			return 170;
-		case -1961023994:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_TIER_3_EFFECT"):
 			return 92;
-		case -1958950493:
+		case joaat("CONTENT__ACTIVE_DEED__FIRE_VULNERABILITY_EFFECT"):
 			return 183;
-		case -1954641284:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_2_EFFECT"):
 			return 28;
-		case -1946267644:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_2_DAMAGE_TAKEN_EFFECT"):
 			return 130;
-		case -1925826694:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_3_EFFECT"):
 			return 49;
-		case -1920322236:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_3_EFFECT"):
 			return 22;
-		case -1886192107:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_1_EFFECT"):
 			return 55;
-		case -1854279248:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_DEALT_ON_HORSEBACK_INDICATOR"):
 			return 6;
-		case -1853627206:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_2_EFFECT"):
 			return 134;
-		case -1851126253:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_3_EFFECT"):
 			return 29;
-		case -1847886830:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_3_EFFECT"):
 			return 16;
-		case -1841577353:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_3_EFFECT"):
 			return 112;
-		case -1840959475:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_3_EFFECT"):
 			return 106;
-		case -1808210911:
+		case joaat("ABILITY_CARD__HANGMAN_INDICATOR"):
 			return 30;
-		case -1803458707:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGED_INDICATOR"):
 			return 8;
-		case -1761885354:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_2_EFFECT"):
 			return 111;
-		case -1749044999:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_2_EFFECT"):
 			return 96;
-		case -1698597704:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_3_EFFECT"):
 			return 45;
-		case -1631537135:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_1_EFFECT"):
 			return 63;
-		case -1599892133:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_2_EFFECT"):
 			return 38;
-		case -1514337705:
+		case joaat("CONTENT__PREDATOR__BASE_EFFECTS"):
 			return 177;
-		case -1498884346:
+		case joaat("EQUIPMENT__NED_KELLY_BASE_IMMUNITIES"):
 			return 151;
-		case -1448841146:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_INDICATOR"):
 			return 50;
-		case -1445919747:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_1_EFFECT"):
 			return 117;
-		case -1441068914:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_3_EFFECT"):
 			return 39;
-		case -1426414385:
+		case joaat("CONTENT__PREDATOR__LEVEL_4_EFFECTS"):
 			return 172;
-		case -1421504146:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_3_EFFECT"):
 			return 109;
-		case -1419242781:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_3_EFFECT"):
 			return 33;
 		case -1394912816:
 			return 186;
-		case -1378028573:
+		case joaat("ABILITY_CARD__HANGMAN_TIER_1_EFFECT"):
 			return 27;
-		case -1370534631:
+		case joaat("ABILITY_CARD__SHARPSHOOTER_TIER_1_EFFECT"):
 			return 110;
-		case -1327315394:
+		case joaat("ABILITY_CARD__DEFAULT_DEADEYE_DURATION_TIER_1_COST"):
 			return 1;
-		case -1311380047:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_PENALTY"):
 			return 46;
-		case -1299791944:
+		case joaat("ABILITY_CARD__DEFAULT_DEADEYE_DURATION_TIER_2_COST"):
 			return 2;
-		case -1280685390:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_3_DAMAGE_TAKEN_EFFECT"):
 			return 132;
-		case -1268916163:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_3_EFFECT"):
 			return 119;
-		case -1256990268:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_3_EFFECT"):
 			return 76;
-		case -1139172958:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_AURA"):
 			return 61;
-		case -1112015628:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_7_EFFECT"):
 			return 163;
-		case -1094465110:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_1_EFFECT"):
 			return 47;
-		case -1038422902:
+		case joaat("ABILITY_CARD__STRANGE_MEDICINE_TIER_1_EFFECT"):
 			return 74;
-		case -1011126213:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_1_EFFECT"):
 			return 31;
-		case -964953325:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_1_EFFECT"):
 			return 123;
-		case -955252868:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_2_EFFECT"):
 			return 124;
-		case -932897324:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_2_EFFECT"):
 			return 11;
-		case -931584677:
+		case joaat("ABILITY_CARD__OVERRIDE_REVENGE_SLOW_TIME_INDICATOR"):
 			return 103;
-		case -925634234:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_2_EFFECT"):
 			return 21;
-		case -750441842:
+		case joaat("CONTENT__PREDATOR__LEVEL_6_EFFECTS"):
 			return 174;
-		case -649515024:
+		case joaat("UNLOCK__ROLE__AWARENESS_BONUS_EFFECT"):
 			return 142;
-		case -624920400:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_3_LOCAL_EFFECT"):
 			return 81;
-		case -612675573:
+		case joaat("UNLOCK__ROLE__EAGLE_EYE_PLUS_EFFECT"):
 			return 148;
-		case -572117096:
+		case joaat("CONTENT__ACTIVE_DEED__EAGLE_EYE_GENERIC_BUFF_EFFECT"):
 			return 182;
-		case -562496675:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_3_EFFECT"):
 			return 57;
-		case -562150430:
+		case joaat("CONTENT__PREDATOR__LEVEL_3_EFFECTS"):
 			return 171;
-		case -560965516:
+		case joaat("ABILITY_CARD__OF_SINGLE_PURPOSE_TIER_2_EFFECT"):
 			return 48;
-		case -554207528:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_2_EFFECT"):
 			return 59;
-		case -539762089:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_3_EFFECT"):
 			return 97;
-		case -529396121:
+		case joaat("CONTENT__PREDATOR__LEVEL_7_EFFECTS"):
 			return 175;
-		case -454200664:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_1_EFFECT"):
 			return 104;
-		case -440727241:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_3_EFFECT"):
 			return 19;
-		case -423133485:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_1_EFFECT"):
 			return 133;
-		case -403292810:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_1_EFFECT"):
 			return 113;
-		case -398496662:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_INDICATOR"):
 			return 23;
-		case -343145237:
+		case joaat("EQUIPMENT__NED_KELLY_FREEROAM_EFFECT"):
 			return 155;
-		case -342633876:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_TAKEN_INDICATOR"):
 			return 5;
-		case -334674962:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_AURA"):
 			return 13;
-		case -332283977:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_3_COST"):
 			return 66;
-		case -306011710:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_DEALT_INDICATOR"):
 			return 4;
-		case -280832639:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_1_COST"):
 			return 51;
-		case -276166656:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_6_EFFECT"):
 			return 162;
-		case -269291543:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_PENALTY"):
 			return 68;
-		case -206787059:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_2_EFFECT"):
 			return 35;
-		case -164741307:
+		case joaat("ABILITY_CARD__KICK_IN_THE_BUTT_TIER_2_EFFECT"):
 			return 105;
-		case -158245263:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_2_EFFECT"):
 			return 41;
-		case -147416760:
+		case joaat("EQUIPMENT__NED_KELLY_BASE_EFFECTS"):
 			return 150;
 		case -97000889:
 			return 86;
-		case -91604267:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_3_EFFECT"):
 			return 159;
 		case -1:
 			return 0;
-		case 25589062:
+		case joaat("ABILITY_CARD__PEAK_CONDITION_TIER_2_EFFECT"):
 			return 56;
-		case 39330853:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_TIER_3_EFFECT"):
 			return 125;
-		case 78014060:
+		case joaat("ABILITY_CARD__DEFAULT_WINDED_INDICATOR"):
 			return 9;
-		case 81243326:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_1_EFFECT"):
 			return 69;
-		case 141777963:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_2_EFFECT"):
 			return 15;
-		case 183131704:
+		case joaat("CONTENT__PASSIVE_MODE__IMMUNITIES_EFFECT"):
 			return 167;
-		case 200623432:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_2_COST"):
 			return 64;
-		case 221495846:
+		case joaat("CONTENT__PASSIVE_MODE__MOUNT_EFFECTS"):
 			return 165;
-		case 224471061:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_1_EFFECT"):
 			return 98;
-		case 233412256:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_1_LOCAL_EFFECT"):
 			return 77;
-		case 279713143:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_5_EFFECT"):
 			return 161;
-		case 285724035:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_INDICATOR"):
 			return 54;
-		case 302482713:
+		case joaat("STATUS_EFFECT__TOXIC_MOONSHINE_EFFECT"):
 			return 136;
-		case 347710188:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_3_EFFECT"):
 			return 89;
-		case 350341162:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_1_DAMAGE_DEALT_EFFECT"):
 			return 127;
-		case 447464746:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_2_DAMAGE_DEALT_EFFECT"):
 			return 129;
-		case 570385280:
+		case joaat("CONSUMABLE__DAILY_STEW_EFFECT"):
 			return 185;
-		case 593083875:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_2_REMOTE_EFFECT"):
 			return 80;
-		case 639606025:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_2_EFFECT"):
 			return 70;
-		case 654960265:
+		case joaat("ABILITY_CARD__TO_FIGHT_ANOTHER_DAY_TIER_1_EFFECT"):
 			return 95;
-		case 668064801:
+		case joaat("CONTENT__ACTIVE_DEED__BOUNTER_HUNTER_ACCURACY_DEBUFF_EFFECT"):
 			return 184;
-		case 671416267:
+		case joaat("ABILITY_CARD__LIVE_FOR_THE_FIGHT_TIER_1_EFFECT"):
 			return 107;
-		case 673708797:
+		case joaat("UNLOCK__ROLE__FOCUS_BONUS_EFFECT"):
 			return 139;
-		case 694721787:
+		case joaat("ABILITY_CARD__EYE_FOR_AN_EYE_TIER_1_EFFECT"):
 			return 20;
-		case 702532569:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_3_REMOTE_EFFECT"):
 			return 82;
-		case 720207812:
+		case joaat("CONTENT__PREDATOR__LEVEL_0_EFFECTS"):
 			return 168;
-		case 724367341:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_2_EFFECT"):
 			return 65;
-		case 726043209:
+		case joaat("ABILITY_CARD__QUITE_AN_INSPIRATION_TIER_1_EFFECT"):
 			return 58;
-		case 728769635:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_1_EFFECT"):
 			return 83;
-		case 756791452:
+		case joaat("UNLOCK__ROLE__MASTER_DISTILLER_BONUS_EFFECT"):
 			return 149;
-		case 763061271:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_2_EFFECT"):
 			return 18;
-		case 775646007:
+		case joaat("ABILITY_CARD__OVERRIDE_REVENGE_SLOW_TIME_COST"):
 			return 102;
-		case 783509408:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_4_EFFECT"):
 			return 160;
-		case 794883372:
+		case joaat("CONTENT__PREDATOR__LEVEL_8_EFFECTS"):
 			return 176;
-		case 805902559:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_2_EFFECT"):
 			return 84;
-		case 817456409:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_3_EFFECT"):
 			return 100;
-		case 835146902:
+		case joaat("CONTENT__HUNTED__MASKED_EFFECTS"):
 			return 181;
-		case 841152146:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_DEADEYE_INDICATOR"):
 			return 93;
-		case 886162534:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_3_DAMAGE_DEALT_EFFECT"):
 			return 131;
-		case 937140932:
+		case joaat("CONTENT__PREDATOR__LEVEL_5_EFFECTS"):
 			return 173;
-		case 997052462:
+		case joaat("EQUIPMENT__NED_KELLY_BASE_RESTRICTIONS"):
 			return 152;
-		case 1034295275:
+		case joaat("ABILITY_CARD__COME_BACK_STRONGER_TIER_1_EFFECT"):
 			return 17;
-		case 1040501041:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_3_EFFECT"):
 			return 122;
-		case 1093424641:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_3_EFFECT"):
 			return 115;
-		case 1139016431:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_1_EFFECT"):
 			return 34;
-		case 1144080006:
+		case joaat("ABILITY_CARD__HORSEMAN_TIER_2_EFFECT"):
 			return 32;
-		case 1171151366:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_1_EFFECT"):
 			return 43;
-		case 1175961229:
+		case joaat("STATUS_EFFECT__TRACKING_EFFECT"):
 			return 138;
-		case 1193587137:
+		case joaat("CONTENT__PASSIVE_MODE__VEHICLE_EFFECTS"):
 			return 166;
-		case 1201719505:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_3_EFFECT"):
 			return 42;
-		case 1203687692:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_1_EFFECT"):
 			return 10;
-		case 1208331227:
+		case joaat("ABILITY_CARD__A_MOMENT_TO_RECUPERATE_TIER_3_EFFECT"):
 			return 12;
-		case 1211076549:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_AURA"):
 			return 73;
-		case 1265311313:
+		case joaat("ABILITY_CARD__HUNKER_DOWN_TIER_3_EFFECT"):
 			return 36;
-		case 1268462011:
+		case joaat("ABILITY_CARD__LANDONS_PATIENCE_TIER_1_EFFECT"):
 			return 37;
-		case 1294394742:
+		case joaat("CONTENT__PREDATOR__BASE_IMMUNITIES"):
 			return 179;
-		case 1295163466:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_TIER_2_EFFECT"):
 			return 114;
-		case 1300622865:
+		case joaat("ABILITY_CARD__WINNING_STREAK_TIER_2_EFFECT"):
 			return 99;
-		case 1312155508:
+		case joaat("UNLOCK__ROLE__PROTECTION_MOONSHINE_BONUS_EFFECT"):
 			return 144;
-		case 1324420970:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_2_EFFECT"):
 			return 25;
-		case 1328995848:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_2_EFFECT"):
 			return 88;
-		case 1336349861:
+		case joaat("UNLOCK__ROLE__PROTECTION_TRADER_BONUS_EFFECT"):
 			return 143;
-		case 1336429519:
+		case joaat("UNLOCK__ROLE__PERCEPTION_BONUS_EFFECT"):
 			return 140;
-		case 1390582854:
+		case joaat("ABILITY_CARD__THE_UNBLINKING_EYE_EAGLE_EYE_INDICATOR"):
 			return 94;
-		case 1413720692:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_2_EFFECT"):
 			return 158;
-		case 1433853218:
+		case joaat("ABILITY_CARD__THE_GIFT_OF_FOCUS_TIER_3_EFFECT"):
 			return 85;
-		case 1452940977:
+		case joaat("ABILITY_CARD__THE_SHORT_GAME_TIER_1_EFFECT"):
 			return 87;
-		case 1480202237:
+		case joaat("CONTENT__PREDATOR__BASE_EFFECTS_VULNERABLE"):
 			return 178;
-		case 1482822775:
+		case joaat("UNLOCK__ROLE__INTUITION_BONUS_EFFECT"):
 			return 146;
-		case 1514854451:
+		case joaat("CONTENT__PREDATOR__RESPAWN_EFFECTS"):
 			return 180;
-		case 1522457772:
+		case joaat("UNLOCK__ROLE__DIVINATION_BONUS_EFFECT"):
 			return 147;
-		case 1523275824:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_1_COST"):
 			return 62;
-		case 1524301922:
+		case joaat("ABILITY_CARD__TAKE_THE_PAIN_AWAY_TIER_1_REMOTE_EFFECT"):
 			return 78;
-		case 1557116130:
+		case joaat("ABILITY_CARD__FOOL_ME_ONCE_INDICATOR"):
 			return 126;
-		case 1557362410:
+		case joaat("ABILITY_CARD__STRENGTH_IN_NUMBERS_INDICATOR"):
 			return 116;
-		case 1578015076:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_PENALTIES"):
 			return 72;
-		case 1578708778:
+		case joaat("ABILITY_CARD__SLIPPERY_BASTARD_TIER_3_EFFECT"):
 			return 67;
-		case 1596748830:
+		case joaat("ABILITY_CARD__WINNING_STREAK_INDICATOR"):
 			return 101;
-		case 1608803012:
+		case joaat("ABILITY_CARD__RIDE_LIKE_THE_WIND_TIER_1_DAMAGE_TAKEN_EFFECT"):
 			return 128;
-		case 1644017723:
+		case joaat("EQUIPMENT__NED_KELLY_ADVERSARY_EFFECT"):
 			return 153;
-		case 1687654048:
+		case joaat("ABILITY_CARD__SLOW_AND_STEADY_TIER_3_EFFECT"):
 			return 71;
-		case 1704907062:
+		case joaat("CONTENT__PREDATOR__LEVEL_1_EFFECTS"):
 			return 169;
-		case 1726722300:
+		case joaat("ABILITY_CARD_GUNSLINGERS_CHOICE_TIER_3_EFFECT"):
 			return 135;
-		case 1744707601:
+		case joaat("ABILITY_CARD__DEFAULT_DEADEYE_DURATION_TIER_3_COST"):
 			return 3;
-		case 1746613639:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_2_EFFECT"):
 			return 121;
-		case 1767173923:
+		case joaat("UNLOCK__ROLE__EFFICIENCY_BONUS_EFFECT"):
 			return 141;
-		case 1798083308:
+		case joaat("ABILITY_CARD__FOCUS_FIRE_TIER_1_EFFECT"):
 			return 24;
-		case 1813411238:
+		case joaat("CONTENT__NET_CAMP__HEALTH_REGENERATION_TENT_LEVEL_1_EFFECT"):
 			return 157;
-		case 1835150954:
+		case joaat("ABILITY_CARD__NECESSITY_BREEDS_TIER_1_EFFECT"):
 			return 40;
-		case 1903955831:
+		case joaat("ABILITY_CARD__DEFAULT_DAMAGE_TAKEN_ON_HORSEBACK_INDICATOR"):
 			return 7;
-		case 1913593527:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_3_COST"):
 			return 53;
-		case 1930815945:
+		case joaat("ABILITY_CARD__IRON_LUNG_TIER_2_EFFECT"):
 			return 118;
-		case 1938151130:
+		case joaat("ABILITY_CARD__NEVER_WITHOUT_ONE_TIER_2_EFFECT"):
 			return 44;
-		case 1976949991:
+		case joaat("EQUIPMENT__NED_KELLY_GOLDEN_EFFECT"):
 			return 156;
-		case 2028487040:
+		case joaat("ABILITY_CARD__PAINT_IT_BLACK_TIER_2_COST"):
 			return 52;
-		case 2051020894:
+		case joaat("CONTENT__PASSIVE_MODE__DAMAGE_EFFECTS"):
 			return 164;
-		case 2081856931:
+		case joaat("ABILITY_CARD__FRIENDS_FOR_LIFE_TIER_1_EFFECT"):
 			return 120;
-		case 2113464199:
+		case joaat("EQUIPMENT__NED_KELLY_COOP_EFFECT"):
 			return 154;
-		case 2126590447:
+		case joaat("ABILITY_CARD__COLD_BLOODED_TIER_1_EFFECT"):
 			return 14;
 		default:
 			break;
@@ -27332,181 +27332,181 @@ int func_1008(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1988557796:
+		case joaat("MDEFENSE__BULLET"):
 			return 49;
 		case -1936069272:
 			return 47;
-		case -1926692092:
+		case joaat("MHEALTH__REGEN_RATE"):
 			return 42;
-		case -1846416021:
+		case joaat("MHORSE__TRAMPLE_DAMAGE"):
 			return 58;
-		case -1721745367:
+		case joaat("ADEADEYE_COST_PER_SHOT"):
 			return 2;
-		case -1701192079:
+		case joaat("MWEAPON__BOW_STAMINA_DRAIN"):
 			return 41;
-		case -1659620438:
+		case joaat("MDEFENSE__BULLET_USING_MELEE_WEAPON"):
 			return 50;
-		case -1607530002:
+		case joaat("MACCURACY__LOCAL_PLAYER_ACCURACY_FLOOR_MODIFIER"):
 			return 61;
-		case -1589052195:
+		case joaat("MDAMAGE__DISTANCE_CLOSE"):
 			return 37;
 		case -1575020444:
 			return 86;
 		case -1572802418:
 			return 67;
-		case -1514969696:
+		case joaat("ALASSO__DAMAGE_DEALT_PER_SECOND"):
 			return 74;
-		case -1397050499:
+		case joaat("MDEFENSE__EXPLOSIVE"):
 			return 53;
 		case -1349331938:
 			return 43;
-		case -1345921497:
+		case joaat("MDAMAGE__MISSING_HEALTH_CONVERSION"):
 			return 29;
-		case -1309904053:
+		case joaat("ASTAMINA__ALTER_TANK_PER_SECOND_PERCENT"):
 			return 22;
-		case -1290490489:
+		case joaat("ADEADEYE__ALTER_CORE_PER_SECOND_PERCENT"):
 			return 7;
-		case -1202225775:
+		case joaat("MHORSE__DEFENSE"):
 			return 56;
-		case -1080116020:
+		case joaat("ASTAMINA__HORSE_GAIN_ON_HORSEBACK_KILL_PERCENT"):
 			return 23;
-		case -1079033682:
+		case joaat("MDEFENSE__RANGED"):
 			return 46;
-		case -1059185085:
+		case joaat("MDAMAGE__ALL_WEAPONS_DIFFERENT_WEAPON"):
 			return 25;
-		case -1003690472:
+		case joaat("MDEFENSE__BULLET_PER_CONSECUTIVE_SHOT"):
 			return 51;
-		case -851757466:
+		case joaat("MEAGLE_EYE__DEPLETION_RATE"):
 			return 64;
-		case -744806636:
+		case joaat("MDEFENSE__FIRE"):
 			return 52;
-		case -516489227:
+		case joaat("AHEALTH__GAIN_ON_KILL_PERCENT"):
 			return 11;
-		case -514416345:
+		case joaat("MRPG_ATTIRBUTE_CORE_DRAIN_RATE"):
 			return 63;
-		case -484540420:
+		case joaat("MDAMAGE__EXPLOSIVE_WEAPONS"):
 			return 36;
-		case -483049716:
+		case joaat("MSTAMINA__REGEN_RATE"):
 			return 71;
-		case -400566333:
+		case joaat("AHEALTH__ALTER_TANK_PER_SECOND_PERCENT"):
 			return 14;
-		case -391623459:
+		case joaat("MDEADEYE__GAIN_MULTIPLIER_WITH_REPEATER"):
 			return 69;
-		case -374018223:
+		case joaat("MACCURACY__AI_MODIFIER"):
 			return 59;
-		case -349428415:
+		case joaat("MDAMAGE__FALLOFF"):
 			return 39;
-		case -231535884:
+		case joaat("AHEALTH__ALTER_TOTAL_PER_MINUTE_PERCENT"):
 			return 15;
-		case -201802680:
+		case joaat("ADEADEYE_COST_DURATION"):
 			return 1;
-		case -85606741:
+		case joaat("MACCURACY__REMOTE_PLAYER_ACCURACY_FLOOR_MODIFIER"):
 			return 62;
-		case -77989269:
+		case joaat("MSKILL__PERCEPTION"):
 			return 76;
 		case -1:
 			return 0;
 		case 66478954:
 			return 85;
-		case 146438590:
+		case joaat("MSKILL__DISTILLER"):
 			return 83;
-		case 198507096:
+		case joaat("MDEADEYE__GAIN_MULTIPLIER"):
 			return 68;
-		case 222365748:
+		case joaat("MSKILL__PROTECTION_TRADER"):
 			return 78;
-		case 295732030:
+		case joaat("MWEAPON__BOW_DRAW_TIME"):
 			return 40;
-		case 340029732:
+		case joaat("MDEADEYE__DEPLETION_RATE"):
 			return 66;
-		case 374652900:
+		case joaat("MSKILL__DIVINATION"):
 			return 82;
 		case 410940916:
 			return 84;
-		case 515706097:
+		case joaat("ADEADEYE__GAIN_ON_HEADSHOT_PERCENT"):
 			return 5;
-		case 527883710:
+		case joaat("MHEALTH__RECHARGE_RATE"):
 			return 44;
-		case 549685826:
+		case joaat("MACCURACY__LOCAL_PLAYER_MODIFIER"):
 			return 60;
-		case 641300611:
+		case joaat("MSKILL__INTUITION"):
 			return 81;
-		case 696211072:
+		case joaat("MDAMAGE__MELEE"):
 			return 30;
-		case 778435476:
+		case joaat("AHORSE__HEALTH_GAIN_ON_DAMAGE_TAKEN_PERCENT"):
 			return 19;
-		case 808428606:
+		case joaat("ADEADEYE__GAIN_ON_REVIVE_PERCENT"):
 			return 4;
-		case 854463919:
+		case joaat("MSKILL__PROTECTION_MOONSHINE"):
 			return 79;
-		case 857703729:
+		case joaat("MDEFENSE__PLAYERS"):
 			return 48;
 		case 874892169:
 			return 87;
-		case 886907851:
+		case joaat("AHEALTH__ALTER_CORE_PER_SECOND_PERCENT"):
 			return 16;
-		case 995847993:
+		case joaat("MINCAPACITATION__BLEEDOUT_TIME"):
 			return 65;
-		case 1061744811:
+		case joaat("ADEADEYE__ALTER_TANK_PER_SECOND_PERCENT"):
 			return 6;
-		case 1149992366:
+		case joaat("MDAMAGE__ALL_WEAPONS_AIMING_WITHOUT_FIRING"):
 			return 27;
-		case 1221256507:
+		case joaat("ADEADEYE__ALTER_TANK_DAMAGE_TAKEN_PERCENT"):
 			return 8;
-		case 1247001946:
+		case joaat("MSTAMINA__REGEN_RATE_HEALTH_CONVERSION"):
 			return 72;
-		case 1275912274:
+		case joaat("MDEFENSE__MELEE"):
 			return 45;
-		case 1333289277:
+		case joaat("AHORSE__STAMINA_GAIN_ON_DAMAGE_TAKEN_PERCENT"):
 			return 20;
-		case 1341193408:
+		case joaat("AHEALTH__GAIN_ON_DAMAGE_DEALT_PERCENT"):
 			return 10;
-		case 1447875596:
+		case joaat("MSKILL__FOCUS"):
 			return 75;
-		case 1495919075:
+		case joaat("MDEADEYE__GAIN_MULTIPLIER_STR_WEAPON"):
 			return 70;
-		case 1509485650:
+		case joaat("AHORSE__HEALTH_GAIN_ON_DAMAGE_DEALT_PERCENT"):
 			return 17;
 		case 1546732394:
 			return 34;
-		case 1572090083:
+		case joaat("MDEFENSE__STAMINA_CONVERSION"):
 			return 55;
-		case 1608132015:
+		case joaat("MDAMAGE__DISTANCE_FAR"):
 			return 38;
-		case 1664203120:
+		case joaat("MDAMAGE__BULLETS"):
 			return 32;
-		case 1679987408:
+		case joaat("MDEFENSE__STRENGTH_IN_NUMBERS"):
 			return 54;
-		case 1728485678:
+		case joaat("MDAMAGE__STAMINA_CONVERSION"):
 			return 28;
-		case 1742416595:
+		case joaat("ADEADEYE_COST_ACTIVATION"):
 			return 3;
-		case 1766148221:
+		case joaat("MSTAMINA__SPRINT_DEPLETION_RATE"):
 			return 73;
-		case 1768495249:
+		case joaat("ASTAMINA__ALTER_CORE_PER_SECOND_PERCENT"):
 			return 21;
-		case 1900095956:
+		case joaat("AHORSE__STAMINA_GAIN_ON_DAMAGE_DEALT_PERCENT"):
 			return 18;
-		case 1946296046:
+		case joaat("AHEALTH__GAIN_KILL_PERCENT_STR_WEAPON"):
 			return 12;
-		case 1968069853:
+		case joaat("MDAMAGE__ALL_WEAPONS"):
 			return 24;
-		case 1997267529:
+		case joaat("MDAMAGE__THROWN"):
 			return 31;
-		case 2000631014:
+		case joaat("MSKILL__AWARENESS"):
 			return 77;
-		case 2019620375:
+		case joaat("MHORSE__DEFENSE_PLAYERS"):
 			return 57;
-		case 2037894795:
+		case joaat("ADEADEYE__ALTER_TANK_BULLET_DAMAGE_TAKEN_PERCENT"):
 			return 9;
-		case 2048982041:
+		case joaat("MDAMAGE__SHOTGUN"):
 			return 33;
-		case 2063781084:
+		case joaat("AHEALTH__GAIN_KILL_PERCENT_NON_STR_WEAPON"):
 			return 13;
-		case 2082272090:
+		case joaat("MDAMAGE__BULLET_PER_CONSECUTIVE_SHOT"):
 			return 35;
-		case 2089824257:
+		case joaat("MDAMAGE__ALL_WEAPONS_SINCE_LAST_SHOT"):
 			return 26;
-		case 2128780735:
+		case joaat("MSKILL__POTENTIAL"):
 			return 80;
 		default:
 			break;
@@ -27613,129 +27613,129 @@ int func_1013(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2116044775:
+		case joaat("EAGLE_EYE_HIGHLIGHT_BOUNTIES"):
 			return 49;
-		case -2103256604:
+		case joaat("HEADSHOT_IMMUNITY"):
 			return 12;
-		case -2073453362:
+		case joaat("HAT_BLOCKS_HEADSHOT"):
 			return 11;
-		case -2041025962:
+		case joaat("ANIMAL_TURN_IN_EFFICIENCY"):
 			return 60;
-		case -1930487908:
+		case joaat("DISABLE_HEALTH_REGENERATION"):
 			return 2;
-		case -1913155192:
+		case joaat("FIRE_CAP_INFINTE"):
 			return 41;
-		case -1771755729:
+		case joaat("SLOW_AND_STEADY_AURA"):
 			return 28;
-		case -1751121159:
+		case joaat("EAGLE_EYE_HIGHLIGHT_EARTH"):
 			return 50;
 		case -1730553768:
 			return 3;
-		case -1655894020:
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
 			return 25;
-		case -1604680733:
+		case joaat("NO_CRITICAL_DAMAGE_AGAINST_PLAYERS"):
 			return 10;
-		case -1511575465:
+		case joaat("REVIVE_ON_BLEEDOUT"):
 			return 34;
-		case -1328991329:
+		case joaat("LASSO_IMMUNITY"):
 			return 5;
-		case -1136429013:
+		case joaat("DISABLE_JUMPING"):
 			return 45;
-		case -1115905480:
+		case joaat("GRAPPLE_IMMUNITY_FROM_AI"):
 			return 31;
 		case -1026481003:
 			return 6;
-		case -966751997:
+		case joaat("TAGGING_IMMUNITY"):
 			return 13;
-		case -824728332:
+		case joaat("INCAPACITATION_INSTEAD_OF_DEATH"):
 			return 33;
-		case -718742742:
+		case joaat("ON_HORSE_SPEED_RESTRICTION_JOG"):
 			return 55;
-		case -698163919:
+		case joaat("FATAL_MELEE_IMMUNITY"):
 			return 32;
-		case -662966589:
+		case joaat("FORCE_HEALTH_REGEN"):
 			return 1;
-		case -549693655:
+		case joaat("CONFUSION_EFFECT"):
 			return 14;
-		case -488644714:
+		case joaat("FULL_LOCKON_IMMUNITY"):
 			return 4;
-		case -430422799:
+		case joaat("OVERPOWER_INFINITE_HEALTH"):
 			return 36;
 		case -350459285:
 			return 61;
-		case -268774736:
+		case joaat("DAMAGE_CAP_INFINTE"):
 			return 40;
-		case -220644763:
+		case joaat("MOMENT_TO_RECUPERATE_AURA"):
 			return 26;
 		case -199042163:
 			return 56;
-		case -191252842:
+		case joaat("NED_KELLY_ADVERSARY"):
 			return 22;
-		case -166765081:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_JOG"):
 			return 51;
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			return 19;
 		case -1:
 			return 0;
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			return 17;
-		case 125946764:
+		case joaat("POISON_EFFECT"):
 			return 20;
-		case 367160929:
+		case joaat("ON_HORSE_SPEED_RESTRICTION_WALK"):
 			return 57;
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			return 24;
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			return 18;
-		case 539654946:
+		case joaat("FOCUS_FIRE_VFX"):
 			return 23;
-		case 656937467:
+		case joaat("PREDATOR_ICON_DISPLAY"):
 			return 39;
-		case 692490127:
+		case joaat("WOUND_EFFECT"):
 			return 15;
 		case 718630298:
 			return 52;
-		case 785261183:
+		case joaat("EAGLE_EYE_PLUS_FLAG"):
 			return 48;
-		case 793826854:
+		case joaat("NED_KELLY_BASE"):
 			return 21;
-		case 892655276:
+		case joaat("DISABLE_COMBAT_DIVE"):
 			return 46;
-		case 907911269:
+		case joaat("SLOW_AND_STEADY_VFX"):
 			return 27;
-		case 955977457:
+		case joaat("DISABLE_FACIAL_ACTIONS"):
 			return 43;
-		case 966561884:
+		case joaat("CANNOT_LOCK_ON_PLAYERS"):
 			return 7;
-		case 988751276:
+		case joaat("GRAPPLE_IMMUNITY_FROM_PLAYERS"):
 			return 30;
 		case 1159158432:
 			return 58;
-		case 1204983685:
+		case joaat("OVERPOWER_PREDATOR"):
 			return 37;
 		case 1242495215:
 			return 9;
-		case 1254069395:
+		case joaat("ON_HORSE_SPEED_RESTRICTION_IGNORE_MOUNT_CLASS"):
 			return 59;
 		case 1341326366:
 			return 54;
-		case 1348456703:
+		case joaat("OVERRIDE_INFINITE_DEADEYE"):
 			return 35;
-		case 1442295985:
+		case joaat("PULSE_REPOST_STATE"):
 			return 38;
-		case 1527078018:
+		case joaat("DISABLE_CONSUMABLES"):
 			return 42;
-		case 1565429580:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_WALK"):
 			return 53;
-		case 1696309427:
+		case joaat("DISABLE_INCAPACITATION"):
 			return 44;
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			return 16;
 		case 2067881273:
 			return 8;
-		case 2093700568:
+		case joaat("DISABLE_DROWNING"):
 			return 47;
-		case 2113555978:
+		case joaat("QUITE_AN_INSPIRATION_AURA"):
 			return 29;
 		default:
 			break;
@@ -27760,83 +27760,83 @@ void func_1014(int iParam0)
 	switch (iParam0)
 	{
 		case -1730553768:
-		case -488644714:
+		case joaat("FULL_LOCKON_IMMUNITY"):
 			func_1033();
 			break;
-		case -2103256604:
+		case joaat("HEADSHOT_IMMUNITY"):
 			func_1034();
 			break;
-		case 692490127:
+		case joaat("WOUND_EFFECT"):
 			PED::_0x66B1CB778D911F49(iVar0, 0f);
 			break;
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 0, 0);
 			GRAPHICS::_0xC5CB91D65852ED7E(func_1035(iParam0));
 			break;
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			GRAPHICS::_0xC5CB91D65852ED7E(func_1035(iParam0));
 			break;
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			GRAPHICS::_0xC5CB91D65852ED7E(func_1035(iParam0));
 			break;
-		case 125946764:
+		case joaat("POISON_EFFECT"):
 			ATTRIBUTE::_0x3FC4C027FD0936F4(5);
 			func_229(105, 1);
 			break;
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			GRAPHICS::_0xC5CB91D65852ED7E(func_1035(iParam0));
 			break;
-		case 1204983685:
+		case joaat("OVERPOWER_PREDATOR"):
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 0);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 19);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 1);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 18);
 			break;
-		case 1442295985:
+		case joaat("PULSE_REPOST_STATE"):
 			NETWORK::_0x442B4347B6EC36E8(iVar0, 0, true);
 			break;
-		case 656937467:
+		case joaat("PREDATOR_ICON_DISPLAY"):
 			ATTRIBUTE::_0x3FC4C027FD0936F4(15);
 			break;
-		case -430422799:
+		case joaat("OVERPOWER_INFINITE_HEALTH"):
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 0);
 			ATTRIBUTE::DISABLE_ATTRIBUTE_OVERPOWER(iVar0, 19);
 			break;
-		case 539654946:
+		case joaat("FOCUS_FIRE_VFX"):
 			PLAYER::_0x5F8E0303C229C84B(iVar1, "");
 			break;
-		case -1655894020:
-		case 482459685:
-		case 907911269:
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
+		case joaat("SLIPPERY_BASTARD_VFX"):
+		case joaat("SLOW_AND_STEADY_VFX"):
 			func_1037(func_1036(iParam0));
 			break;
-		case -1771755729:
-		case -220644763:
+		case joaat("SLOW_AND_STEADY_AURA"):
+		case joaat("MOMENT_TO_RECUPERATE_AURA"):
 			PLAYER::_0x768E81AE285A4B67(iVar1, 0);
 			PLAYER::_0xE910932F4B30BE23(iVar1);
 			PLAYER::_0x0E9057A9DA78D0F8(iVar1, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 0);
 			break;
-		case 2113555978:
+		case joaat("QUITE_AN_INSPIRATION_AURA"):
 			GRAPHICS::_0xAF4D239B8903FCBE();
 			PLAYER::_0x768E81AE285A4B67(iVar1, 0);
 			PLAYER::_0xE910932F4B30BE23(iVar1);
 			PLAYER::_0x0E9057A9DA78D0F8(iVar1, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 0);
 			break;
-		case 785261183:
+		case joaat("EAGLE_EYE_PLUS_FLAG"):
 			PLAYER::_0xCE285A4413B00B7F(iVar1, 1);
 			break;
-		case 793826854:
+		case joaat("NED_KELLY_BASE"):
 			func_1038();
 			break;
-		case -166765081:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_JOG"):
 		case 718630298:
 		case 1341326366:
-		case 1565429580:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_WALK"):
 			func_1030(17);
 			break;
-		case -824728332:
+		case joaat("INCAPACITATION_INSTEAD_OF_DEATH"):
 			func_1030(16);
 			break;
 	}
@@ -27858,13 +27858,13 @@ int func_1016(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1290685708:
+		case joaat("FOCUS_FIRE"):
 			return 1;
 		case -1038992817:
 			return 5;
 		case -950874556:
 			return 4;
-		case -290151400:
+		case joaat("QUITE_AN_INSPIRATION"):
 			return 3;
 		case 0:
 			return 0;
@@ -28004,41 +28004,41 @@ void func_1021(int iParam0)
 	switch (iParam0)
 	{
 		case -1730553768:
-		case -488644714:
+		case joaat("FULL_LOCKON_IMMUNITY"):
 			func_1033();
 			break;
-		case -2103256604:
+		case joaat("HEADSHOT_IMMUNITY"):
 			func_1034();
 			break;
-		case 692490127:
+		case joaat("WOUND_EFFECT"):
 			PED::_0xFFD54D9FE71B966A(iVar0, 2, 14411, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
 			break;
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 1, 0);
 			GRAPHICS::ANIMPOSTFX_PLAY(func_1035(iParam0));
 			break;
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			GRAPHICS::ANIMPOSTFX_PLAY(func_1035(iParam0));
 			break;
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			GRAPHICS::ANIMPOSTFX_PLAY(func_1035(iParam0));
 			break;
-		case 125946764:
+		case joaat("POISON_EFFECT"):
 			ATTRIBUTE::_0xFB6E111908502871(5);
 			func_229(104, 1);
 			break;
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			GRAPHICS::ANIMPOSTFX_PLAY(func_1035(iParam0));
 			break;
-		case 1204983685:
+		case joaat("OVERPOWER_PREDATOR"):
 			break;
-		case 656937467:
+		case joaat("PREDATOR_ICON_DISPLAY"):
 			ATTRIBUTE::_0xFB6E111908502871(15);
 			break;
-		case 539654946:
+		case joaat("FOCUS_FIRE_VFX"):
 			PLAYER::_0x5F8E0303C229C84B(iVar1, "focusfire");
 			break;
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			iVar2 = func_1036(iParam0);
 			iVar3 = ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(iVar0, func_1043(iParam0, 0));
 			func_1044(iVar2, 0, 1, iVar3, 0);
@@ -28049,45 +28049,45 @@ void func_1021(int iParam0)
 			iVar3 = ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(iVar0, func_1043(iParam0, 3));
 			func_1044(iVar2, 2, 1, iVar3, 0);
 			break;
-		case -1655894020:
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
 			iVar2 = func_1036(iParam0);
 			func_1044(iVar2, 3, 1, -1, 1);
 			break;
-		case 907911269:
+		case joaat("SLOW_AND_STEADY_VFX"):
 			iVar2 = func_1036(iParam0);
 			func_1044(iVar2, 4, 1, -1, 0);
 			break;
-		case -220644763:
+		case joaat("MOMENT_TO_RECUPERATE_AURA"):
 			PLAYER::_0x768E81AE285A4B67(iVar1, 1014693585);
 			PLAYER::_0x2B12B6FC8B8772AB(iVar1, 8);
 			PLAYER::_0x131E294EF60160DF(iVar1, 0f, 0f, 0f, 1f, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 1);
 			break;
-		case -1771755729:
+		case joaat("SLOW_AND_STEADY_AURA"):
 			PLAYER::_0x768E81AE285A4B67(iVar1, 1936842089);
 			PLAYER::_0x2B12B6FC8B8772AB(iVar1, 8);
 			PLAYER::_0x131E294EF60160DF(iVar1, 0f, 0f, 0f, 1f, 8);
 			PLAYER::_0x263D69767F76059C(iVar1, 1);
 			break;
-		case 2113555978:
+		case joaat("QUITE_AN_INSPIRATION_AURA"):
 			GRAPHICS::_0x249CD6B7285536F2(0f, 2f, 2f);
 			PLAYER::_0x768E81AE285A4B67(iVar1, 1979474018);
 			PLAYER::_0x2B12B6FC8B8772AB(iVar1, 25);
 			PLAYER::_0x263D69767F76059C(iVar1, 2);
 			break;
-		case 785261183:
+		case joaat("EAGLE_EYE_PLUS_FLAG"):
 			PLAYER::_0xCE285A4413B00B7F(iVar1, 0);
 			break;
-		case 793826854:
+		case joaat("NED_KELLY_BASE"):
 			func_1045();
 			break;
-		case -166765081:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_JOG"):
 		case 718630298:
 		case 1341326366:
-		case 1565429580:
+		case joaat("ON_FOOT_SPEED_RESTRICTION_WALK"):
 			func_1030(17);
 			break;
-		case -824728332:
+		case joaat("INCAPACITATION_INSTEAD_OF_DEATH"):
 			func_1030(16);
 			break;
 	}
@@ -28246,15 +28246,15 @@ int func_1032(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1745889187:
+		case joaat("CONSECUTIVE_DAMAGE_DEALT"):
 			return 3;
 		case -1016837116:
 			return 5;
 		case 0:
 			return 0;
-		case 370243254:
+		case joaat("CONSECUTIVE_DAMAGE_TAKEN"):
 			return 4;
-		case 1213888609:
+		case joaat("NEARBY_ALLIES"):
 			return 2;
 		case 1416591065:
 			return 1;
@@ -28304,13 +28304,13 @@ char* func_1035(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1870637439:
+		case joaat("DRAIN_EFFECT"):
 			return "MP_ArrowDrain";
-		case 492808644:
+		case joaat("DISORIENT_EFFECT"):
 			return "MP_ArrowDisorient";
-		case 50982971:
+		case joaat("TRAIL_EFFECT"):
 			return "MP_ArrowTracking";
-		case -106166013:
+		case joaat("TOXIC_MOONSHINE_EFFECT"):
 			return "MP_MoonshineToxic";
 		default:
 			break;
@@ -28322,12 +28322,12 @@ int func_1036(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			return -843895567;
-		case -1655894020:
-			return -1655894020;
-		case 907911269:
-			return 907911269;
+		case joaat("MOMENT_TO_RECUPERATE_VFX"):
+			return joaat("MOMENT_TO_RECUPERATE_VFX");
+		case joaat("SLOW_AND_STEADY_VFX"):
+			return joaat("SLOW_AND_STEADY_VFX");
 		default:
 			break;
 	}
@@ -28394,41 +28394,41 @@ int func_1040(int iParam0, int iParam1)
 	switch (&Global_1140484->f_30603.f_2900[iVar0 /*31*/])
 	{
 		case -1606735498:
-		case -1455211650:
-		case -1324410551:
-		case -1276912520:
-		case -1028878953:
-		case -992973338:
+		case joaat("ON_HEADSHOT"):
+		case joaat("ENTER_WEARING_HAT"):
+		case joaat("ENTER_SPRINTING"):
+		case joaat("ENTER_MOUNTED"):
+		case joaat("ENTER_DUAL_WIELD"):
 		case -971275364:
-		case -932644421:
-		case -590004554:
-		case -528257357:
+		case joaat("ON_KILL"):
+		case joaat("ENTER_SCENARIO"):
+		case joaat("ENTER_REVIVER"):
 		case -193993646:
-		case -166662497:
+		case joaat("ENTER_ALLY_NEARBY"):
 		case -23641105:
-		case 37083370:
-		case 52193493:
-		case 180258367:
+		case joaat("ON_DAMAGE_TAKEN"):
+		case joaat("ENTER_MELEE"):
+		case joaat("ON_DAMAGE_DEALT_FROM_HORSEBACK"):
 		case 429965152:
-		case 461381338:
-		case 522523138:
-		case 589907865:
-		case 979390476:
-		case 1028557598:
-		case 1154303630:
-		case 1254162401:
-		case 1269394302:
+		case joaat("ON_DAMAGE_TAKEN_FROM_HORSEBACK"):
+		case joaat("ENTER_WINDED"):
+		case joaat("ENTER_NO_HAT"):
+		case joaat("ON_ENABLE"):
+		case joaat("ENTER_EAGLE_EYE"):
+		case joaat("ENTER_DEADEYE"):
+		case joaat("ENTER_SCOPED"):
+		case joaat("ENTER_COVER"):
 		case 1305415806:
 		case 1461424861:
 		case 1691008805:
-		case 1759133423:
-		case 1810352391:
-		case 1915097582:
-		case 1921800945:
-		case 2046842849:
+		case joaat("ENTER_DAMAGED"):
+		case joaat("ON_DAMAGE_DEALT"):
+		case joaat("ENTER_REVIVED"):
+		case joaat("ENTER_LASSOING"):
+		case joaat("ENTER_IN_VEHICLE"):
 		case 2116793692:
 			return 1;
-		case 1245579893:
+		case joaat("ENTER_FREEROAM_OR_COOP"):
 			if (!func_1049() && !func_1050())
 			{
 				return 0;
@@ -28440,7 +28440,7 @@ int func_1040(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case -2139108927:
+		case joaat("ENTER_REVIVED_REMOTE"):
 			iVar1 = func_991(iParam1);
 			if (iVar1 == &Global_1275573)
 			{
@@ -28462,7 +28462,7 @@ int func_1040(int iParam0, int iParam1)
 				return 0;
 			}
 			return 1;
-		case 190804938:
+		case joaat("ALLY_ENTER_DEADEYE"):
 			iVar1 = func_991(iParam1);
 			if (!NETWORK::_0x255A5EF65EDA9167(&(Global_1275573->f_154[iVar1])))
 			{
@@ -28526,7 +28526,7 @@ char* func_1043(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case 482459685:
+		case joaat("SLIPPERY_BASTARD_VFX"):
 			switch (iParam1)
 			{
 				case 0:

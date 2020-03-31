@@ -1078,7 +1078,7 @@ int func_33(vector3 vParam0, var uParam3, bool bParam4, int iParam5, bool bParam
 		iVar16[10] = joaat("MP005_P_DIRTPILE_BIG03_UNBURIED");
 		iVar16[11] = joaat("MP005_P_DIRTPILE_CUM_BURIED");
 		iVar16[12] = joaat("MP005_P_DIRTPILE_CUM_UNBURIED");
-		iVar16[13] = 369612903;
+		iVar16[13] = joaat("MP005_P_DIRTPILE_GRI_MINES_BURIED");
 		iVar16[14] = joaat("MP005_P_DIRTPILE_GRI_MINES_UNBURIED");
 		iVar16[15] = joaat("MP005_P_DIRTPILE_HEA_BURIED");
 		iVar16[16] = joaat("MP005_P_DIRTPILE_HEA_UNBURIED");
@@ -3208,7 +3208,7 @@ int func_133(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -3346,7 +3346,7 @@ bool func_142(var uParam0, int iParam1)
 void func_143(var uParam0)
 {
 	func_124(uParam0, joaat("MULTIPLAYER_GAME"));
-	if (func_155() == 2026485318)
+	if (func_155() == joaat("MPC_PLAYER_TYPE_MP_MALE"))
 	{
 		func_124(uParam0, joaat("LOOTER_PED_IS_MALE"));
 	}

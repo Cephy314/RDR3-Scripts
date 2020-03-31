@@ -782,8 +782,8 @@ void func_26()
 void func_27(int iParam0)
 {
 	func_51(2, 507, bLocal_164, iParam0, bLocal_165, iLocal_166, 491520, (12.5f * 2f), 0, 0);
-	func_52(2, 411637818, 0, 0);
-	func_52(2, 1848132471, 0, 0);
+	func_52(2, joaat("DOOR_BEN_TRAIN_INT_2"), 0, 0);
+	func_52(2, joaat("DOOR_BEN_TRAIN_INT_4"), 0, 0);
 	func_53(2, -5224.11f, -3465.51f, -21.52f, -146.961f);
 }
 

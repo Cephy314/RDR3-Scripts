@@ -107,7 +107,7 @@ void func_6()
 		fVar1 = 1f;
 		bVar2 = false;
 		bLocal_5 = true;
-		func_13(BUILTIN::FLOOR((fVar0 * BUILTIN::TO_FLOAT(func_12(1871635045)))), bVar2, fVar1, 1, 0, 0, 1, 752097756);
+		func_13(BUILTIN::FLOOR((fVar0 * BUILTIN::TO_FLOAT(func_12(joaat("SCENARIOS_MONEY_PILE"))))), bVar2, fVar1, 1, 0, 0, 1, 752097756);
 	}
 	if (!PED::IS_PED_USING_ANY_SCENARIO(Global_35))
 	{
@@ -367,7 +367,7 @@ void func_28(char* sParam0, char* sParam1, int iParam2)
 
 bool func_29()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 void func_30(int iParam0)

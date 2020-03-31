@@ -705,7 +705,7 @@ void func_11()
 			else if (func_79(func_78()))
 			{
 			}
-			else if (!func_80(532942402))
+			else if (!func_80(joaat("GHOSTING_VOLUME")))
 			{
 			}
 			else
@@ -717,7 +717,7 @@ void func_11()
 				{
 					func_76(0);
 				}
-				else if (!func_80(1661805647))
+				else if (!func_80(joaat("UNGHOSTING_VOLUME")))
 				{
 					func_72(1, 8, 0);
 					func_76(0);
@@ -918,7 +918,7 @@ int func_20()
 	{
 		return 1;
 	}
-	iVar0 = func_101(1427578635, PLAYER::PLAYER_ID(), 0, 1);
+	iVar0 = func_101(joaat("BOUNTY_PLAYER"), PLAYER::PLAYER_ID(), 0, 1);
 	if (func_102(iVar0))
 	{
 		return 1;
@@ -1834,7 +1834,7 @@ int func_40()
 	iVar2 = 0;
 	while (iVar2 <= 12)
 	{
-		if ((((*Global_1214482)[iVar2 /*27*/])->f_13 == Global_1275573->f_15 && ((*Global_1225057)[iVar2 /*686*/])->f_565 == -1784925006) && func_137(iVar2, 32, 255))
+		if ((((*Global_1214482)[iVar2 /*27*/])->f_13 == Global_1275573->f_15 && ((*Global_1225057)[iVar2 /*686*/])->f_565 == joaat("MOONSHINE_RAID")) && func_137(iVar2, 32, 255))
 		{
 			Local_21.f_3 = 5;
 			return 1;
@@ -4238,9 +4238,9 @@ int func_166(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 532942402:
+		case joaat("GHOSTING_VOLUME"):
 			return 0;
-		case 1661805647:
+		case joaat("UNGHOSTING_VOLUME"):
 			return 1;
 		default:
 			break;
@@ -4289,15 +4289,15 @@ int func_170(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 680390016;
+			return joaat("PROPERTY_BAYOU");
 		case 1:
-			return -2070886255;
+			return joaat("PROPERTY_GRIZZLIES");
 		case 2:
-			return 1821948827;
+			return joaat("PROPERTY_HENNIGANS");
 		case 3:
-			return -1823593561;
+			return joaat("PROPERTY_HEARTLANDS");
 		case 4:
-			return -1930045261;
+			return joaat("PROPERTY_TALL_TREES");
 		default:
 			break;
 	}
@@ -4309,9 +4309,9 @@ int func_171(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 532942402;
+			return joaat("GHOSTING_VOLUME");
 		case 1:
-			return 1661805647;
+			return joaat("UNGHOSTING_VOLUME");
 		default:
 			break;
 	}
@@ -5230,15 +5230,15 @@ int func_219(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1799339271;
+			return joaat("EXTERIOR_FRONT");
 		case 1:
-			return -1712995813;
+			return joaat("EXTERIOR_SIDE");
 		case 2:
-			return -43333367;
+			return joaat("INTERIOR_GROUND_FRONT");
 		case 3:
-			return 1618302617;
+			return joaat("INTERIOR_GROUND_SIDE");
 		case 4:
-			return -2113498014;
+			return joaat("INTERIOR_BAR");
 		default:
 			break;
 	}

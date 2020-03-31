@@ -550,15 +550,15 @@ int func_16()
 			Var5.f_2 = -1407851228;
 			if (Global_1051388->f_4537)
 			{
-				Var5.f_3 = 715395819;
+				Var5.f_3 = joaat("SMODELPOSSE");
 			}
 			else
 			{
-				Var5.f_3 = -302053561;
+				Var5.f_3 = joaat("SMODEL");
 			}
 			DATAFILE::_DATAFILE_GET_HASH(&uVar11, &Var5);
 			Local_59.f_151[iVar10] = uVar11;
-			Var5.f_3 = -120316632;
+			Var5.f_3 = joaat("SLIGHTING");
 			DATAFILE::_DATAFILE_GET_HASH(&uVar11, &Var5);
 			Local_59.f_172[iVar10] = uVar11;
 		}
@@ -3475,7 +3475,7 @@ int func_72()
 	if (DATAFILE::_DATAFILE_GET_DATA_NODE_INDEX(&(Var0.f_1), &Var0))
 	{
 		Var0.f_2 = -1793904784;
-		Var0.f_3 = -1495475299;
+		Var0.f_3 = joaat("SSCENE");
 		DATAFILE::_DATAFILE_GET_STRING(&(Local_59.f_210), &Var0);
 		Var6 = &Global_1915180->f_19847[18];
 		iVar11 = 0;
@@ -3501,16 +3501,16 @@ int func_72()
 				{
 					iVar13 = 0;
 					Var6.f_2 = 110382701;
-					Var6.f_3 = -1858290781;
+					Var6.f_3 = joaat("IPOSITION");
 					if (DATAFILE::_DATAFILE_GET_INT(&iVar13, &Var6) && iVar13 > 0)
 					{
 						Var6.f_2 = -1793904784;
-						Var6.f_3 = -859932058;
+						Var6.f_3 = joaat("SNAMEMALE");
 						DATAFILE::_DATAFILE_GET_STRING(Local_59.f_218[(iVar13 - 1) /*17*/], &Var6);
-						Var6.f_3 = 325797227;
+						Var6.f_3 = joaat("SNAMEFEMALE");
 						DATAFILE::_DATAFILE_GET_STRING(&((Local_59.f_218[(iVar13 - 1) /*17*/])->f_8), &Var6);
 						Var6.f_2 = -1407851228;
-						Var6.f_3 = -302053561;
+						Var6.f_3 = joaat("SMODEL");
 						DATAFILE::_DATAFILE_GET_HASH(&uVar5, &Var6);
 						(Local_59.f_218[(iVar13 - 1) /*17*/])->f_16 = uVar5;
 					}
@@ -4260,15 +4260,15 @@ char* func_107(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 84486308:
+		case joaat("PHST_LIGHTING_STANDARD"):
 			return "standard_PL";
-		case 458599716:
+		case joaat("PHST_LIGHTING_SUNNY"):
 			return "sunny_PL";
-		case -358564271:
+		case joaat("PHST_LIGHTING_SUNSET"):
 			return "sunset_PL";
-		case -450294390:
+		case joaat("PHST_LIGHTING_INTERIOR"):
 			return "interior_PL";
-		case 2101619512:
+		case joaat("PHST_LIGHTING_NIGHT"):
 			return "night_PL";
 		default:
 			break;
@@ -4280,15 +4280,15 @@ char* func_108(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 84486308:
+		case joaat("PHST_LIGHTING_STANDARD"):
 			return "b_standard";
-		case 458599716:
+		case joaat("PHST_LIGHTING_SUNNY"):
 			return "b_sunny";
-		case -358564271:
+		case joaat("PHST_LIGHTING_SUNSET"):
 			return "b_sunset";
-		case -450294390:
+		case joaat("PHST_LIGHTING_INTERIOR"):
 			return "b_interior";
-		case 2101619512:
+		case joaat("PHST_LIGHTING_NIGHT"):
 			return "b_night";
 		default:
 			break;
@@ -5344,7 +5344,7 @@ int func_153(int iParam0)
 	switch (iParam0)
 	{
 		case 132:
-			return -809040070;
+			return joaat("SHOP_BUT_MUSICIAN_BANJO");
 		case 6:
 			return joaat("SHOP_BLK_GENERAL_STORE");
 		case 7:
@@ -5358,7 +5358,7 @@ int func_153(int iParam0)
 		case 14:
 			return joaat("SHOP_BLK_POST_OFFICE");
 		case 15:
-			return -441298053;
+			return joaat("SHOP_BLK_TRAIN_STATION");
 		case 12:
 			return joaat("SHOP_BLK_PHOTO_STUDIO");
 		case 122:
@@ -5372,13 +5372,13 @@ int func_153(int iParam0)
 		case 10:
 			return joaat("SHOP_BLK_BARTENDER");
 		case 11:
-			return -906556724;
+			return joaat("SHOP_BLK_PIANIST");
 		case 16:
-			return 882729775;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_FIRST");
 		case 17:
-			return 1957450109;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_SECOND");
 		case 18:
-			return 1826386989;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_THIRD");
 		case 23:
 			return joaat("SHOP_EMR_GENERAL_STORE");
 		case 24:
@@ -5416,7 +5416,7 @@ int func_153(int iParam0)
 		case 56:
 			return joaat("SHOP_SDN_BARTENDER_SLUM");
 		case 57:
-			return -404449802;
+			return joaat("SHOP_SDN_PIANIST_SLUM");
 		case 60:
 			return joaat("SHOP_SDN_PHOTO_STUDIO");
 		case 124:
@@ -5426,15 +5426,15 @@ int func_153(int iParam0)
 		case 54:
 			return joaat("SHOP_SDN_BARTENDER");
 		case 55:
-			return 509242725;
+			return joaat("SHOP_SDN_PIANIST");
 		case 59:
-			return -1243693278;
+			return joaat("SHOP_SDN_MUSICIAN_BANJO");
 		case 58:
-			return 106026254;
+			return joaat("SHOP_SDN_MUSICIAN_GUITARIST");
 		case 61:
-			return -1340467914;
+			return joaat("SHOP_SDN_THEATER_MP");
 		case 62:
-			return -2128099513;
+			return joaat("SHOP_SDN_THEATER_MAGIC_MP");
 		case 27:
 			return joaat("SHOP_RGG_POST_OFFICE");
 		case 28:
@@ -5458,9 +5458,9 @@ int func_153(int iParam0)
 		case 36:
 			return joaat("SHOP_RHO_BARTENDER");
 		case 37:
-			return -697751457;
+			return joaat("SHOP_RHO_PIANIST");
 		case 38:
-			return -994915577;
+			return joaat("SHOP_RHO_MUSICIAN_BANJO");
 		case 68:
 			return joaat("SHOP_STR_BUTCHER");
 		case 69:
@@ -5476,9 +5476,9 @@ int func_153(int iParam0)
 		case 75:
 			return joaat("SHOP_STR_BARTENDER");
 		case 72:
-			return -553046416;
+			return joaat("SHOP_STR_MUSICIAN_BANJO");
 		case 73:
-			return 1410537143;
+			return joaat("SHOP_STR_MUSICIAN_GUITARIST");
 		case 83:
 			return joaat("SHOP_VAL_DOCTOR");
 		case 84:
@@ -5496,7 +5496,7 @@ int func_153(int iParam0)
 		case 88:
 			return joaat("SHOP_VAL_TRAIN_STATION");
 		case 81:
-			return 1124822890;
+			return joaat("SHOP_VAL_BARTENDER_KEANE");
 		case 91:
 			return joaat("SHOP_VAL_BARTENDER_SLUM");
 		case 90:
@@ -5510,9 +5510,9 @@ int func_153(int iParam0)
 		case 79:
 			return joaat("SHOP_VAL_BARTENDER");
 		case 80:
-			return -1850308061;
+			return joaat("SHOP_VAL_PIANIST");
 		case 89:
-			return 787686374;
+			return joaat("SHOP_VAL_THEATER_MAGIC_MP");
 		case 41:
 			return joaat("SHOP_SCM_HORSE_SHOP");
 		case 98:
@@ -5520,13 +5520,13 @@ int func_153(int iParam0)
 		case 97:
 			return joaat("SHOP_VAN_TRAIN_STATION");
 		case 93:
-			return 1437804895;
+			return joaat("SHOP_VAN_FENCE");
 		case 96:
 			return joaat("SHOP_VAN_HORSE_SHOP");
 		case 94:
 			return joaat("SHOP_VAN_BARTENDER");
 		case 95:
-			return 470861506;
+			return joaat("SHOP_VAN_PIANIST");
 		case 128:
 			return joaat("SHOP_VAN_COACH");
 		case 129:
@@ -5560,31 +5560,31 @@ int func_153(int iParam0)
 		case 150:
 			return joaat("SHOP_CAMP_BUTCHERTABLE");
 		case 147:
-			return 191185611;
+			return joaat("SHOP_CAMP_TRAVELLING_SALESMAN");
 		case 135:
-			return 1689047337;
+			return joaat("SHOP_RIO_TRAVELLING_SALESMAN");
 		case 136:
-			return 631237697;
+			return joaat("SHOP_CHO_TRAVELLING_SALESMAN");
 		case 137:
-			return 1309294228;
+			return joaat("SHOP_HEN_TRAVELLING_SALESMAN");
 		case 138:
-			return -1862366064;
+			return joaat("SHOP_TAL_TRAVELLING_SALESMAN");
 		case 139:
-			return -708893514;
+			return joaat("SHOP_BGV_TRAVELLING_SALESMAN");
 		case 140:
-			return -61253253;
+			return joaat("SHOP_HRT_E_TRAVELLING_SALESMAN");
 		case 141:
-			return -1674694281;
+			return joaat("SHOP_HRT_W_TRAVELLING_SALESMAN");
 		case 142:
-			return 14391281;
+			return joaat("SHOP_GRZ_TRAVELLING_SALESMAN");
 		case 143:
-			return -869603674;
+			return joaat("SHOP_SCM_TRAVELLING_SALESMAN");
 		case 144:
-			return 2081857521;
+			return joaat("SHOP_BLU_TRAVELLING_SALESMAN");
 		case 145:
-			return 526646992;
+			return joaat("SHOP_DER_TRAVELLING_SALESMAN");
 		case 146:
-			return 1672297313;
+			return joaat("SHOP_BBR_TRAVELLING_SALESMAN");
 		case 47:
 			return joaat("SHOP_MOONSHINE_STILL");
 		case 32:
@@ -5634,13 +5634,13 @@ int func_153(int iParam0)
 		case 64:
 			return 878376253;
 		case 164:
-			return -508879537;
+			return joaat("SHOP_LAK_DOCTOR");
 		case 165:
-			return -654369397;
+			return joaat("SHOP_LAK_GENERAL_STORE");
 		case 166:
-			return 1573058547;
+			return joaat("SHOP_LAK_GUNSMITH");
 		case 167:
-			return 1753151614;
+			return joaat("SHOP_LAK_HORSE_TRAINER");
 		case 168:
 			return joaat("SHOP_SHB_DOCTOR");
 		case 169:
@@ -5672,7 +5672,7 @@ int func_153(int iParam0)
 		case 105:
 			return joaat("SHOP_TBL_BARTENDER");
 		case 106:
-			return -375350;
+			return joaat("SHOP_TBL_PIANIST");
 		case 103:
 			return joaat("SHOP_TBL_GUNSMITH");
 		case 104:

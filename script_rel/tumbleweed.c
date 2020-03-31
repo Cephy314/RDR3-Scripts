@@ -690,8 +690,8 @@ void func_14(int iParam0)
 	iParam0 = iParam0;
 	if (func_20() == -1)
 	{
-		iVar0[0] = 831345624;
-		iVar0[1] = 831345624;
+		iVar0[0] = joaat("DOOR_TUM_02_JAIL_CELL");
+		iVar0[1] = joaat("DOOR_TUM_02_JAIL_CELL");
 		iVar0[2] = -1616977847;
 		iVar0[3] = -1616977847;
 		iVar0[4] = -1310161700;
@@ -877,8 +877,8 @@ void func_27(int iParam0)
 	func_63(9, 1);
 	func_63(9, 16384);
 	func_64(9, 1);
-	func_59(9, -829158153, 1f, 1);
-	func_59(9, 721864151, -1f, 1);
+	func_59(9, joaat("TUM_BARN_INT_DOOR_01"), 1f, 1);
+	func_59(9, joaat("TUM_BARN_INT_DOOR_02"), -1f, 1);
 	func_59(9, 1024322021, 0, 0);
 	func_59(9, 111672606, 0, 0);
 }
@@ -6947,7 +6947,7 @@ void func_213(int iParam0, bool bParam1)
 			func_298(1335986638, bParam1);
 			break;
 		case 14:
-			func_298(1407130373, bParam1);
+			func_298(joaat("DOOR_STR_WHORE_INT_2"), bParam1);
 			break;
 		case 16:
 			func_298(-1335647241, bParam1);

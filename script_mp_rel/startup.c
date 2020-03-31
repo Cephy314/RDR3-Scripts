@@ -3876,7 +3876,7 @@ int func_148(int iParam0, int iParam1)
 			case 198:
 				return 989607914;
 			case 199:
-				return 764325310;
+				return joaat("MP001_REG_HEN_MP_GAPT_GAPSHORE");
 			case 200:
 				return -1935434583;
 			case 201:
@@ -3884,7 +3884,7 @@ int func_148(int iParam0, int iParam1)
 			case 202:
 				return 845427792;
 			case 203:
-				return -1309532876;
+				return joaat("MP001_REG_HEN_MP_GFH_HENBAND");
 			case 204:
 				return -1961938422;
 			case 205:
@@ -4168,17 +4168,17 @@ int func_148(int iParam0, int iParam1)
 			case 344:
 				return joaat("MP001_MP_HID_TALLTREES");
 			case 345:
-				return -497360377;
+				return joaat("MP003_FEATURE_EAST_ARM");
 			case 346:
-				return 246150045;
+				return joaat("MP003_FEATURE_EAST_RHO");
 			case 347:
-				return 1514318372;
+				return joaat("MP003_FEATURE_STH_TUM");
 			case 348:
-				return 680545654;
+				return joaat("MP003_FEATURE_STH_VAL");
 			case 349:
-				return -262021866;
+				return joaat("MP003_FEATURE_STH_VAN");
 			case 350:
-				return 62512826;
+				return joaat("MP003_FEATURE_WEST_BLA");
 			case 351:
 				return joaat("MP004_CAMPDEF_BGV_TWO_ROCKS");
 			case 352:
@@ -4928,23 +4928,23 @@ int func_148(int iParam0, int iParam1)
 			case 724:
 				return -752947810;
 			case 725:
-				return 1288855827;
+				return joaat("MP001_TREA1_BIG_VAL_RD_SGN_PLAYLISTMARKER_04");
 			case 726:
-				return -377841051;
+				return joaat("MP001_TREA1_BIG_VAL_RD_SGN_PLAYLISTMARKER_05");
 			case 727:
-				return -70959366;
+				return joaat("MP001_TREA1_BIG_VAL_RD_SGN_PLAYLISTMARKER_06");
 			case 728:
-				return 2087316443;
+				return joaat("MP001_TREA1_GRE_PLA_RD_SGN_PLAYLISTMARKER_05");
 			case 729:
-				return 905895682;
+				return joaat("MP001_TREA1_GRE_PLA_RD_SGN_PLAYLISTMARKER_06");
 			case 730:
 				return -1406112982;
 			case 731:
 				return 1920416437;
 			case 732:
-				return -186728578;
+				return joaat("MP001_TREA1_HEA_RD_SGN_PLAYLISTMARKER_08");
 			case 733:
-				return 1960643951;
+				return joaat("MP001_TREA1_ROA_RD_SGN_PLAYLISTMARKER");
 			case 734:
 				return 666617953;
 			case 735:
@@ -5324,19 +5324,19 @@ int func_148(int iParam0, int iParam1)
 			case 922:
 				return -378666035;
 			case 923:
-				return -1802111373;
+				return joaat("MP001_MP_TREA_03_GFH_AWNING");
 			case 924:
-				return 133584803;
+				return joaat("MP001_TREA3_SCA_MEA_RD_SGN_PLAYLISTMARKER_03");
 			case 925:
 				return 1297834604;
 			case 926:
 				return -476999974;
 			case 927:
-				return 719166833;
+				return joaat("MP001_TREA3_SCA_MEA_RD_SGN_PLAYLISTMARKER_06");
 			case 928:
-				return 1019232566;
+				return joaat("MP001_TREA3_SCA_MEA_RD_SGN_PLAYLISTMARKER_07");
 			case 929:
-				return -1311188166;
+				return joaat("MP001_TREA3_SWA_RD_SGN_PLAYLISTMARKER");
 			case 930:
 				return 1192526031;
 			case 931:
@@ -6692,43 +6692,43 @@ int func_148(int iParam0, int iParam1)
 			case 1600:
 				return -383442850;
 			case 1601:
-				return -963708270;
+				return joaat("LAG_BS_S_CRACKERS01X_DRESSING");
 			case 1602:
-				return 1789847914;
+				return joaat("LAG_BS_P_INT_FISHING01_DRESSING");
 			case 1603:
-				return 1724935027;
+				return joaat("LAG_BS_P_S_INV_POTHORSESTIM_DRESSING");
 			case 1604:
-				return 170282000;
+				return joaat("LAG_BS_P_S_INV_POTHORSESTIM_GROUP");
 			case 1605:
-				return -1323936218;
+				return joaat("LAG_BS_P_TIN_SOAP01X_DRESSING");
 			case 1606:
 				return -1378006849;
 			case 1607:
-				return 1527202601;
+				return joaat("LAG_BS_S_CRACKERS01X_GROUP");
 			case 1608:
-				return 562620119;
+				return joaat("LAG_BS_S_CRICKETTIN01X_DRESSING");
 			case 1609:
-				return -1622723192;
+				return joaat("LAG_BS_S_CRICKETTIN01X_GROUP");
 			case 1610:
-				return -872587325;
+				return joaat("LAG_BS_S_INV_BAITHERB01X_DRESSING");
 			case 1611:
-				return 2076873943;
+				return joaat("LAG_BS_S_INV_BAITHERB01X_GROUP");
 			case 1612:
-				return -1176057358;
+				return joaat("LAG_BS_S_INV_BAITMEAT01X_DRESSING");
 			case 1613:
-				return 1253360932;
+				return joaat("LAG_BS_S_INV_BAITMEAT01X_GROUP");
 			case 1614:
-				return -1656346086;
+				return joaat("LAG_BS_S_INV_COCAINEGUM01X_DRESSING");
 			case 1615:
-				return -597695075;
+				return joaat("LAG_BS_S_INV_COCAINEGUM01X_GROUP");
 			case 1616:
-				return -1159690567;
+				return joaat("LAG_BS_S_OATCAKES01X_DRESSING");
 			case 1617:
-				return 719400048;
+				return joaat("LAG_BS_S_OATCAKES01X_GROUP");
 			case 1618:
-				return 1737389826;
+				return joaat("LAG_BS_S_WORMCAN01X_DRESSING");
 			case 1619:
-				return -1033632314;
+				return joaat("LAG_BS_S_WORMCAN01X_GROUP");
 			case 1620:
 				return 59954835;
 			case 1621:
@@ -7166,15 +7166,15 @@ int func_148(int iParam0, int iParam1)
 			case 1837:
 				return -1818498296;
 			case 1838:
-				return -983957271;
+				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_05");
 			case 1839:
-				return -697261290;
+				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_06");
 			case 1840:
-				return 272864959;
+				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_09");
 			case 1841:
-				return -1399009137;
+				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_10");
 			case 1842:
-				return -901084182;
+				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_12");
 			case 1843:
 				return -655349451;
 			case 1844:
@@ -7386,25 +7386,25 @@ int func_148(int iParam0, int iParam1)
 			case 1947:
 				return 96746001;
 			case 1948:
-				return 1871261290;
+				return joaat("SDN_SLM_MRK_MARKET_ITEMS");
 			case 1949:
-				return 1767170589;
+				return joaat("SDN_SLM_MRK_P_APPLE01X_DRESSING");
 			case 1950:
-				return 396094389;
+				return joaat("SDN_SLM_MRK_P_CARROTS_01X_DRESSING");
 			case 1951:
-				return 68538405;
+				return joaat("SDN_SLM_MRK_P_CORN02X_GROUP_DRESSING");
 			case 1952:
-				return -540286923;
+				return joaat("SDN_SLM_MRK_P_PEAR_02X_DRESSING");
 			case 1953:
 				return 695709062;
 			case 1954:
-				return 1395510290;
+				return joaat("SDN_SLM_MRK_P_APPLE01X_GROUP");
 			case 1955:
-				return -1366130296;
+				return joaat("SDN_SLM_MRK_P_CARROTS_01X_GROUP");
 			case 1956:
-				return 1205820933;
+				return joaat("SDN_SLM_MRK_P_CORN02X_GROUP");
 			case 1957:
-				return 195206081;
+				return joaat("SDN_SLM_MRK_P_PEAR_02X_GROUP");
 			case 1958:
 				return 1355914142;
 			case 1959:
@@ -7412,13 +7412,13 @@ int func_148(int iParam0, int iParam1)
 			case 1960:
 				return -1036688493;
 			case 1961:
-				return -30157790;
+				return joaat("SDN_MARKET_DRESSING");
 			case 1962:
-				return 1509141447;
+				return joaat("SDN_MARKET_S_SALTEDBEEF01X_GROUP");
 			case 1963:
-				return -469909433;
+				return joaat("SDN_MARKET_S_SALTEDBEEF02X_GROUP");
 			case 1964:
-				return -1461530058;
+				return joaat("SDN_MARKET_SALTEDMEATS_DRESSING");
 			case 1965:
 				return 1826022799;
 			case 1966:
@@ -7842,17 +7842,17 @@ int func_148(int iParam0, int iParam1)
 			case 2169:
 				return 1748373207;
 			case 2170:
-				return -1040386459;
+				return joaat("MP001_TREA4_GAP_MP_FASTTRAVEL_01");
 			case 2171:
-				return -113711908;
+				return joaat("MP001_TREA4_GAP_MP_FASTTRAVEL_02");
 			case 2172:
-				return -510950795;
+				return joaat("MP001_TREA4_GAP_RD_SGN_PLAYLISTMARKER_03");
 			case 2173:
-				return 1920766934;
+				return joaat("MP001_TREA4_HEN_MP_FASTTRAVEL");
 			case 2174:
 				return -749007702;
 			case 2175:
-				return 41732045;
+				return joaat("MP001_TREA4_RIO_MP_FASTTRAVEL");
 			case 2176:
 				return -1461922204;
 			case 2177:
@@ -7910,61 +7910,61 @@ int func_148(int iParam0, int iParam1)
 			case 2203:
 				return -1578471167;
 			case 2204:
-				return 1113860407;
+				return joaat("MP003_AREA1_PLAYLISTMARKER_01");
 			case 2205:
-				return -1351899990;
+				return joaat("MP003_AREA2_PLAYLISTMARKER_02");
 			case 2206:
-				return 824748066;
+				return joaat("MP003_AREA2_PLAYLISTMARKER_03");
 			case 2207:
-				return 240772357;
+				return joaat("MP003_AREA3_PLAYLISTMARKER_04");
 			case 2208:
-				return -389681572;
+				return joaat("MP003_AREA4_PLAYLISTMARKER_05");
 			case 2209:
-				return -1226896753;
+				return joaat("MP003_AREA4_PLAYLISTMARKER_06");
 			case 2210:
-				return -1221107646;
+				return joaat("MP004_AREA1_PLAYLISTMARKER_01");
 			case 2211:
-				return -1391542137;
+				return joaat("MP004_SUPP_GFH_FLACO_CRATES");
 			case 2212:
 				return -562632536;
 			case 2213:
-				return -1013459033;
+				return joaat("MP004_AREA2_PLAYLISTMARKER_01");
 			case 2214:
-				return -1406359343;
+				return joaat("MP004_AREA2_PLAYLISTMARKER_02");
 			case 2215:
-				return -407068688;
+				return joaat("MP004_AREA2_PLAYLISTMARKER_03");
 			case 2216:
-				return 1946521576;
+				return joaat("MP004_SUPP_GFH_ANGUS_BARRELS");
 			case 2217:
-				return 1743765516;
+				return joaat("MP004_SUPP_GFH_THEBOY_BARRELS");
 			case 2218:
-				return 1936501508;
+				return joaat("MP004_SUPP_GFH_THEBOY_VAL_OBJECTS");
 			case 2219:
-				return 27526098;
+				return joaat("MP004_AREA3_PLAYLISTMARKER_01");
 			case 2220:
-				return -1295818914;
+				return joaat("MP004_SUPP_GFH_ANTHONY_OBJECTS_SAINTDENIS");
 			case 2221:
-				return -1056172583;
+				return joaat("MP004_AREA4_PLAYLISTMARKER_01");
 			case 2222:
-				return 189901415;
+				return joaat("MP004_AREA4_PLAYLISTMARKER_02");
 			case 2223:
-				return -575680736;
+				return joaat("MP004_AREA4_PLAYLISTMARKER_03");
 			case 2224:
-				return 1715626179;
+				return joaat("MP004_AREA4_PLAYLISTMARKER_04");
 			case 2225:
-				return 343391535;
+				return joaat("MP004_AREA4_PLAYLISTMARKER_05");
 			case 2226:
-				return -1503000236;
+				return joaat("MP004_SUPP_GFH_LANGTON_CRATES");
 			case 2227:
-				return 1028580175;
+				return joaat("MP004_SUPP_GFH_SHAKY_OBJECTS");
 			case 2228:
 				return joaat("MP005_A1_ARBRACELET02_IPL");
 			case 2229:
 				return joaat("MP005_A1_BPRING02_IPL");
 			case 2230:
-				return 861187315;
+				return joaat("MP005_A1_CAPSERIESMARKER_01");
 			case 2231:
-				return 554305630;
+				return joaat("MP005_A1_CAPSERIESMARKER_02");
 			case 2232:
 				return joaat("MP005_A1_DPBBRACELET02_IPL");
 			case 2233:
@@ -7978,7 +7978,7 @@ int func_148(int iParam0, int iParam1)
 			case 2237:
 				return joaat("MP005_A1_MTRING02_IPL");
 			case 2238:
-				return -1887958444;
+				return joaat("MP005_A1_NEWSERIESMARKER_01");
 			case 2239:
 				return joaat("MP005_A1_SDRING01_IPL");
 			case 2240:
@@ -8028,7 +8028,7 @@ int func_148(int iParam0, int iParam1)
 			case 2262:
 				return 206749196;
 			case 2263:
-				return -1293161516;
+				return joaat("MP005_BLACKWATER_BOUNTYBOARD");
 			case 2264:
 				return 1183263476;
 			case 2265:
@@ -8066,9 +8066,9 @@ int func_148(int iParam0, int iParam1)
 			case 2281:
 				return -924548651;
 			case 2282:
-				return 1418611013;
+				return joaat("MP005_RIGGS_BOUNTYBOARD");
 			case 2283:
-				return -1019371157;
+				return joaat("MP005_STRAWBERRY_BOUNTYBOARD");
 			case 2284:
 				return 2068484211;
 			case 2285:
@@ -8084,7 +8084,7 @@ int func_148(int iParam0, int iParam1)
 			case 2290:
 				return -2144326250;
 			case 2291:
-				return -605257184;
+				return joaat("MP005_WALLACE_BOUNTYBOARD");
 			case 2292:
 				return joaat("MP005_A2_BANECKLACE01_IPL");
 			case 2293:
@@ -8094,7 +8094,7 @@ int func_148(int iParam0, int iParam1)
 			case 2295:
 				return joaat("MP005_A2_BMECKLACE03_IPL");
 			case 2296:
-				return 483532006;
+				return joaat("MP005_A2_CAPSERIESMARKER_03");
 			case 2297:
 				return joaat("MP005_A2_DEEARRING02_IPL");
 			case 2298:
@@ -8108,23 +8108,23 @@ int func_148(int iParam0, int iParam1)
 			case 2302:
 				return joaat("MP005_A2_HSBRACELET01_IPL");
 			case 2303:
-				return 90710077;
+				return joaat("MP005_A2_NEWSERIESMARKER_02");
 			case 2304:
-				return -136805090;
+				return joaat("MP005_A2_NEWSERIESMARKER_03");
 			case 2305:
-				return 1570947227;
+				return joaat("MP005_ANNESBURG_BOUNTYBOARD");
 			case 2306:
-				return -214604861;
+				return joaat("MP005_EMERALDSTATION_BOUNTYBOARD");
 			case 2307:
-				return 886997475;
+				return joaat("MP005_VALENTINE_BOUNTYBOARD");
 			case 2308:
-				return -428652579;
+				return joaat("MP005_VANHORN_BOUNTYBOARD");
 			case 2309:
 				return joaat("MP005_WATERTOWER_ADDON");
 			case 2310:
-				return 1187864964;
+				return joaat("MP005_A3_CAPSERIESMARKER_04");
 			case 2311:
-				return 1199685211;
+				return joaat("MP005_A3_NEWSERIESMARKER_04");
 			case 2312:
 				return joaat("MP005_A3_ODEARRING1_IPL");
 			case 2313:
@@ -8132,13 +8132,13 @@ int func_148(int iParam0, int iParam1)
 			case 2314:
 				return 925683259;
 			case 2315:
-				return 1817836578;
+				return joaat("MP005_RHODES_BOUNTYBOARD");
 			case 2316:
-				return -226455701;
+				return joaat("MP005_SAINTDENIS_BOUNTYBOARD");
 			case 2317:
 				return 495423143;
 			case 2318:
-				return 1225215575;
+				return joaat("MP005_A4_CAPSERIESMARKER_05");
 			case 2319:
 				return joaat("MP005_A4_HSBRACELET03_IPL");
 			case 2320:
@@ -8150,7 +8150,7 @@ int func_148(int iParam0, int iParam1)
 			case 2323:
 				return -1583237641;
 			case 2324:
-				return 665690112;
+				return joaat("MP005_A4_NEWSERIESMARKER_05");
 			case 2325:
 				return joaat("MP005_A4_ORGBBRACELET03_IPL");
 			case 2326:
@@ -8158,11 +8158,11 @@ int func_148(int iParam0, int iParam1)
 			case 2327:
 				return 1480174383;
 			case 2328:
-				return 59120723;
+				return joaat("MP005_ARMADILLO_BOUNTYBOARD");
 			case 2329:
-				return -1975145165;
+				return joaat("MP005_BENEDICT_BOUNTYBOARD");
 			case 2330:
-				return 1296658155;
+				return joaat("MP005_TUMBLEWEED_BOUNTYBOARD");
 			case 2331:
 				return 1809507039;
 			case 2332:
@@ -15638,7 +15638,7 @@ char* func_390(int iParam0)
 			return "UGC_MST_UIS";
 		case -698288936:
 			return "UGC_MST_PROT";
-		case 909765192:
+		case joaat("UGC_SUBTYPE_MISSION_PREDATOR_HUNT"):
 			return "UGC_MST_PDH";
 		case 1078150940:
 			return "UGC_MST_AWIP";
@@ -19612,43 +19612,43 @@ void func_629(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case 1357161730:
+		case joaat("BAYOU_NAWAS_CAMP"):
 			iVar0 = joaat("BAYOU_NWA");
 			break;
-		case 1581179681:
+		case joaat("BIG_VALLEY_CAMP"):
 			iVar0 = joaat("BIG_VALLEY");
 			break;
-		case -215258135:
+		case joaat("CHOLLA_SPRINGS_CAMP"):
 			iVar0 = joaat("CHOLLA_SPRINGS");
 			break;
-		case -987049424:
+		case joaat("CUMBERLAND_FOREST_CAMP"):
 			iVar0 = joaat("CUMBERLAND_FOREST");
 			break;
-		case 892234183:
+		case joaat("GAPTOOTH_RIDGE_CAMP"):
 			iVar0 = joaat("GAPTOOTH_RIDGE");
 			break;
-		case -1554232707:
+		case joaat("GREAT_PLAINS_CAMP"):
 			iVar0 = joaat("GREAT_PLAINS");
 			break;
-		case -682748:
+		case joaat("GRIZZLIES_CAMP"):
 			iVar0 = joaat("GRIZZLIES");
 			break;
-		case 1538293636:
+		case joaat("HEARTLAND_CAMP"):
 			iVar0 = joaat("HEARTLANDS");
 			break;
-		case -1992167326:
+		case joaat("HENNIGANS_STEAD_CAMP"):
 			iVar0 = joaat("HENNIGANS_STEAD");
 			break;
-		case -1884014371:
+		case joaat("RIO_BRAVO_CAMP"):
 			iVar0 = joaat("RIO_BRAVO");
 			break;
-		case -1871413878:
+		case joaat("ROANOKE_RIDGE_CAMP"):
 			iVar0 = joaat("ROANOAKE_RIDGE");
 			break;
-		case 1483778247:
+		case joaat("SCARLETT_MEADOWS_CAMP"):
 			iVar0 = joaat("SCARLETT_MEADOWS");
 			break;
-		case -724534761:
+		case joaat("TALL_TREES_CAMP"):
 			iVar0 = joaat("TALL_TREES");
 			break;
 		default:
@@ -20259,7 +20259,7 @@ int func_641(int iParam0, int iParam1)
 	}
 	if (func_12())
 	{
-		if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-75008140))
+		if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_POSSE_CAMP")))
 		{
 			return 0;
 		}
@@ -20298,9 +20298,9 @@ int func_643(int iParam0)
 	switch (iParam0)
 	{
 		case 4:
-			return -1975753417;
+			return joaat("FEE_CAMP_PLACEMENT_SMALL");
 		case 7:
-			return -142724881;
+			return joaat("FEE_CAMP_PLACEMENT_LARGE");
 		default:
 			break;
 	}

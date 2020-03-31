@@ -433,11 +433,11 @@ void func_16()
 	{
 		if (Local_0.f_1)
 		{
-			func_28(1951290581, 1, 1);
+			func_28(joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_SAVE_THEN_KILL"), 1, 1);
 		}
 		else
 		{
-			func_28(385589027, 1, 1);
+			func_28(joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_KILL"), 1, 1);
 		}
 	}
 	func_11(2);
@@ -784,7 +784,7 @@ int func_38()
 	{
 		return 1;
 	}
-	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-1461907237))
+	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_HONOR")))
 	{
 		return 1;
 	}
@@ -807,203 +807,203 @@ int func_39(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2076515520:
+		case joaat("PERSONA_HONOR_ACTION__NB_ARROWHEAD_INJURY_MERCY_KILL"):
 			return 93;
-		case -2062348046:
+		case joaat("PERSONA_HONOR_ACTION__NB_RUNAWAY_WAGON_RETURN"):
 			return 96;
-		case -1983943039:
+		case joaat("PERSONA_HONOR_ACTION__NB_BEGGAR_ASSAULT"):
 			return 61;
-		case -1967078622:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_PLAYER"):
 			return 4;
-		case -1935655667:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_THIRTYFIVE"):
 			return 39;
-		case -1930919582:
+		case joaat("PERSONA_HONOR_ACTION__NB_PHOTOGRAPHY_MURDER"):
 			return 56;
-		case -1930399868:
+		case joaat("PERSONA_HONOR_ACTION__REVIVE_PLAYER"):
 			return 63;
-		case -1924130593:
+		case joaat("PERSONA_HONOR_ACTION__NB_BEGGAR_DONATE"):
 			return 97;
-		case -1898294040:
+		case joaat("PERSONA_HONOR_ACTION__NB_WILDMAN_KILL"):
 			return 50;
-		case -1854780893:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_RAMPAGE"):
 			return 5;
-		case -1783181138:
+		case joaat("PERSONA_HONOR_ACTION__SLAUGHTER_PETS"):
 			return 13;
-		case -1777144780:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FIFTY"):
 			return 87;
-		case -1679013564:
+		case joaat("PERSONA_HONOR_ACTION__WAGON_THIEF_PLAYER"):
 			return 16;
-		case -1648877470:
+		case joaat("PERSONA_HONOR_ACTION__LOOTING"):
 			return 43;
-		case -1634863390:
+		case joaat("PERSONA_HONOR_ACTION__EXECUTION_PLAYER"):
 			return 10;
-		case -1598949067:
+		case joaat("PERSONA_HONOR_ACTION__ANIMAL_CRUELTY"):
 			return 45;
-		case -1575244427:
+		case joaat("PERSONA_HONOR_ACTION__REVIVE_POSSE"):
 			return 62;
-		case -1494363065:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_BUTCHER"):
 			return 1;
-		case -1408563730:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_GVO_INTRO_NEG"):
 			return 30;
-		case -1399051227:
+		case joaat("PERSONA_HONOR_ACTION__NB_RIVAL_COLLECTOR_KILL"):
 			return 53;
-		case -1393798041:
+		case joaat("PERSONA_HONOR_ACTION__NB_ANIMAL_ATTACK_MURDER"):
 			return 58;
-		case -1376314322:
+		case joaat("PERSONA_HONOR_ACTION__NB_GRAVEROBBER_KILL"):
 			return 49;
-		case -1330378740:
+		case joaat("PERSONA_HONOR_ACTION__NB_WILDMAN_FEED"):
 			return 90;
-		case -1315007749:
+		case joaat("PERSONA_HONOR_ACTION__UNPROVOKED_ANTAGONIZATION"):
 			return 21;
-		case -1296513906:
+		case joaat("PERSONA_HONOR_ACTION__WATCH_BLEED_OUT"):
 			return 11;
-		case -1258163578:
+		case joaat("PERSONA_HONOR_ACTION__NB_GRAVEROBBER_ACCEPT"):
 			return 48;
-		case -1215742816:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_TWENTYFIVE"):
 			return 37;
-		case -1152882498:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_HORSE_PLAYER"):
 			return 18;
-		case -1098645728:
+		case joaat("PERSONA_HONOR_ACTION__NB_ANIMAL_ATTACK_SAVE"):
 			return 88;
-		case -1034424695:
+		case joaat("PERSONA_HONOR_ACTION__INTRO_MISSION_NEG"):
 			return 32;
-		case -1030655937:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_HORSE"):
 			return 12;
-		case -985005225:
+		case joaat("PERSONA_HONOR_ACTION__NB_HOBO_DOG_KILL"):
 			return 57;
-		case -892848695:
+		case joaat("PERSONA_HONOR_ACTION__RESOURCEFUL"):
 			return 69;
-		case -789758703:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_TEN"):
 			return 34;
-		case -757633599:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_OUTLAW"):
 			return 31;
-		case -706075066:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_THIEF_PLAYER"):
 			return 17;
-		case -682435976:
+		case joaat("PERSONA_HONOR_ACTION__INTRO_MISSION_POS"):
 			return 77;
-		case -634665876:
+		case joaat("PERSONA_HONOR_ACTION__WAGON_THIEF_AI"):
 			return 15;
-		case -545299531:
+		case joaat("PERSONA_HONOR_ACTION__THEFT"):
 			return 44;
-		case -514316475:
+		case joaat("PERSONA_HONOR_ACTION__MURDER"):
 			return 2;
-		case -479797100:
+		case joaat("PERSONA_HONOR_ACTION__FME_BOUNTY_RETURNED_ALIVE"):
 			return 98;
-		case -469672732:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE"):
 			return 65;
-		case -379874384:
+		case joaat("PERSONA_HONOR_ACTION__GFH_LAWFUL_PVP"):
 			return 74;
-		case -355092128:
+		case joaat("PERSONA_HONOR_ACTION__CLEAR_HIDEOUT"):
 			return 70;
-		case -326224139:
+		case joaat("PERSONA_HONOR_ACTION__NB_RUNAWAY_WAGON_ASSIST"):
 			return 95;
-		case -210274020:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FIFTEEN"):
 			return 35;
-		case -162385832:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE_PLAYER"):
 			return 68;
-		case -114666387:
+		case joaat("PERSONA_HONOR_ACTION__NB_KIDNAPPED_KILL"):
 			return 51;
-		case -86995487:
+		case joaat("PERSONA_HONOR_ACTION__LOOTING_BODIES"):
 			return 20;
-		case -79139194:
+		case joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_SAVE"):
 			return 72;
-		case -71551190:
+		case joaat("PERSONA_HONOR_ACTION__NB_KIDNAPPED_RESCUE"):
 			return 91;
-		case -32613857:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_TWENTY"):
 			return 81;
 		case -1:
 			return 0;
-		case 5611246:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_TWENTYFIVE"):
 			return 82;
-		case 81846499:
+		case joaat("PERSONA_HONOR_ACTION__IGNORE_MISSION"):
 			return 23;
-		case 120448958:
+		case joaat("PERSONA_HONOR_ACTION__GFH_CRIMINAL_PVP"):
 			return 27;
-		case 151445061:
+		case joaat("PERSONA_HONOR_ACTION__NB_RANDOM_EVENT_MURDER"):
 			return 60;
-		case 242857368:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FIFTY"):
 			return 42;
-		case 300196727:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FORTYFIVE"):
 			return 41;
-		case 334700325:
+		case joaat("PERSONA_HONOR_ACTION__NB_TREASURE_HUNTER_KILL"):
 			return 52;
-		case 353568324:
+		case joaat("PERSONA_HONOR_ACTION__REVIVE_MULTI"):
 			return 64;
-		case 385589027:
+		case joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_KILL"):
 			return 24;
-		case 396837320:
+		case joaat("PERSONA_HONOR_ACTION__HERDING_STEAL"):
 			return 29;
-		case 440583097:
+		case joaat("PERSONA_HONOR_ACTION__VANDALISM_LOW"):
 			return 47;
-		case 449057693:
+		case joaat("PERSONA_HONOR_ACTION__GRIEFING"):
 			return 22;
-		case 457103096:
+		case joaat("PERSONA_HONOR_ACTION__NB_ARROWHEAD_INJURY_BLEED_OUT"):
 			return 55;
-		case 477974086:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_MISSION_PEDS"):
 			return 6;
-		case 478308321:
+		case joaat("PERSONA_HONOR_ACTION__ARSON"):
 			return 46;
-		case 499656970:
+		case joaat("PERSONA_HONOR_ACTION__MELEE_ATTACK_PLAYER_UNARMED"):
 			return 8;
-		case 618068466:
+		case joaat("PERSONA_HONOR_ACTION__MELEE_ATTACK_PLAYER"):
 			return 7;
-		case 630308764:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_THIRTYFIVE"):
 			return 84;
-		case 633501950:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_TWENTY"):
 			return 36;
-		case 640330073:
+		case joaat("PERSONA_HONOR_ACTION__MERCY_KILL"):
 			return 89;
-		case 905156700:
+		case joaat("PERSONA_HONOR_ACTION__FME_BOUNTY_RETURNED_DEAD"):
 			return 59;
-		case 941437279:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE_FULL"):
 			return 67;
-		case 946732137:
+		case joaat("PERSONA_HONOR_ACTION__CLEAR_AMBUSH"):
 			return 71;
-		case 1232224440:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FIVE"):
 			return 78;
-		case 1248971179:
+		case joaat("PERSONA_HONOR_ACTION__NB_TIED_UP_RESCUE"):
 			return 92;
-		case 1250422342:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_THIEF_AI"):
 			return 14;
-		case 1257949393:
+		case joaat("PERSONA_HONOR_ACTION__MURDER_CAMP_FOLLOWER"):
 			return 3;
-		case 1316486837:
+		case joaat("PERSONA_HONOR_ACTION__GFH_CRIMINAL"):
 			return 26;
-		case 1345888212:
+		case joaat("PERSONA_HONOR_ACTION__RUSTLING"):
 			return 28;
-		case 1382158532:
+		case joaat("PERSONA_HONOR_ACTION__GFH_LAWFUL"):
 			return 73;
-		case 1398164246:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FORTY"):
 			return 85;
-		case 1427070667:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_GUNSLINGER"):
 			return 76;
-		case 1571096148:
+		case joaat("PERSONA_HONOR_ACTION__NB_RIVAL_COLLECTOR_LOOT"):
 			return 54;
-		case 1717813521:
+		case joaat("PERSONA_HONOR_ACTION__HORSE_CARE_CLEAN"):
 			return 66;
-		case 1791948823:
+		case joaat("PERSONA_HONOR_ACTION__HOGTIE_PLAYER"):
 			return 9;
-		case 1841970554:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FIVE"):
 			return 33;
-		case 1872332830:
+		case joaat("PERSONA_HONOR_ACTION__NB_PHOTOGRAPHY_ASSIST"):
 			return 94;
-		case 1889309476:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_TEN"):
 			return 79;
-		case 1898201469:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_FORTY"):
 			return 40;
-		case 1918774327:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FIFTEEN"):
 			return 80;
-		case 1951290581:
+		case joaat("PERSONA_HONOR_ACTION__FREEROAM_HIDEOUT_SAVE_THEN_KILL"):
 			return 25;
-		case 1971904853:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_NEG_THIRTY"):
 			return 38;
-		case 2002140369:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_FORTYFIVE"):
 			return 86;
-		case 2018657739:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_GVO_INTRO_POS"):
 			return 75;
-		case 2078792148:
+		case joaat("PERSONA_HONOR_ACTION__MISSION_POS_THIRTY"):
 			return 83;
-		case 2108116481:
+		case joaat("PERSONA_HONOR_ACTION__TRAMPLE"):
 			return 19;
 		default:
 			break;

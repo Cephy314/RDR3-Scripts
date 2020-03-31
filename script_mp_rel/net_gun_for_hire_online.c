@@ -990,7 +990,7 @@ bool func_28(int iParam0)
 
 	func_58(&uVar0);
 	func_59(&uVar0);
-	func_60(&uVar0, 45871012);
+	func_60(&uVar0, joaat("POSTER_TARGETS"));
 	return func_61(&uVar0, iParam0, 0);
 }
 
@@ -3221,37 +3221,37 @@ int func_114(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1100375982:
+		case joaat("WAR_VET"):
 			return joaat("GFH_WAR_VET");
-		case 734354744:
+		case joaat("FLACO_HERNANDEZ"):
 			return joaat("GFH_FLACO_HERNANDEZ");
-		case -8716208:
+		case joaat("JOSIAH_TRELAWNY"):
 			return joaat("GFH_JOSIAH_TRELAWNY");
 		case joaat("JOE"):
 			return joaat("GFH_JOE");
-		case -705903163:
+		case joaat("SEAN_MACQUIRE"):
 			return joaat("GFH_SEAN_MACQUIRE");
 		case joaat("BLACK_BELLE"):
 			return joaat("GFH_BLACK_BELLE");
 		case joaat("SADIE_ADLER"):
 			return joaat("GFH_SADIE_ADLER");
-		case 842749101:
+		case joaat("MAMMA_WATSON"):
 			return joaat("GFH_MAMMA_WATSON");
-		case -384872762:
+		case joaat("THOMAS_SKIFF_CAPTAIN"):
 			return joaat("GFH_THOMAS_SKIFF_CAPTAIN");
-		case 220113328:
+		case joaat("OBEDIAH_HINTON"):
 			return joaat("GFH_OBEDIAH_HINTON");
 		case joaat("ANTHONY_FOREMAN"):
 			return joaat("GFH_ANTHONY_FOREMAN");
-		case 539824333:
+		case joaat("LANGTON"):
 			return joaat("GFH_LANGTON");
 		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
-		case -701311458:
+		case joaat("SHERIFF_FREEMAN"):
 			return joaat("GFH_SHERIFF_FREEMAN");
 		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
-		case -1601260627:
+		case joaat("WALLACE_TRAIN_CLERK"):
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
 		case joaat("ALDEN"):
 			return joaat("GFH_ALDEN");
@@ -3259,33 +3259,33 @@ int func_114(int iParam0)
 			return joaat("GFH_HECTOR");
 		case joaat("THE_BOY"):
 			return joaat("GFH_THE_BOY");
-		case -743855838:
+		case joaat("ABERDEEN_PIG_FARMERS"):
 			return joaat("GFH_ABERDEEN_PIG_FARMERS");
-		case 1782409743:
+		case joaat("SAINT_DENIS_BOUNTY_BOARD"):
 			return joaat("SAINT_DENIS_SHERIFF_BOUNTY_BOARD");
-		case -1801643148:
+		case joaat("VALENTINE_BOUNTY_BOARD"):
 			return joaat("VALENTINE_SHERIFF_BOUNTY_BOARD");
-		case -936554981:
+		case joaat("RHODES_BOUNTY_BOARD"):
 			return joaat("RHODES_SHERIFF_BOUNTY_BOARD");
-		case 1693634754:
+		case joaat("STRAWBERRY_BOUNTY_BOARD"):
 			return joaat("STRAWBERRY_SHERIFF_BOUNTY_BOARD");
-		case 1445116843:
+		case joaat("TUMBLEWEED_BOUNTY_BOARD"):
 			return joaat("TUMBLEWEED_SHERIFF_BOUNTY_BOARD");
-		case -1616419296:
+		case joaat("ANNESBURG_BOUNTY_BOARD"):
 			return joaat("ANNESBURG_SHERIFF_BOUNTY_BOARD");
-		case -587679385:
+		case joaat("ARMADILLO_BOUNTY_BOARD"):
 			return joaat("ARMADILLO_SHERIFF_BOUNTY_BOARD");
-		case 279467723:
+		case joaat("BENEDICT_POINT_BOUNTY_BOARD"):
 			return joaat("BENEDICT_POINT_STATION_BOUNTY_BOARD");
-		case 1301079447:
+		case joaat("BLACKWATER_BOUNTY_BOARD"):
 			return joaat("BLACKWATER_SHERIFF_BOUNTY_BOARD");
-		case 314334361:
+		case joaat("EMERALD_RANCH_BOUNTY_BOARD"):
 			return joaat("EMERALD_RANCH_STATION_BOUNTY_BOARD");
-		case 92524177:
+		case joaat("VAN_HORN_BOUNTY_BOARD"):
 			return joaat("VAN_HORN_POST_OFFICE_BOUNTY_BOARD");
-		case 1346815252:
+		case joaat("RIGGS_BOUNTY_BOARD"):
 			return joaat("RIGGS_STATION_BOUNTY_BOARD");
-		case -667711246:
+		case joaat("WALLACE_BOUNTY_BOARD"):
 			return joaat("WALLACE_STATION_BOUNTY_BOARD");
 		case joaat("CRIPPS"):
 			return joaat("GFH_CRIPPS");
@@ -5277,9 +5277,9 @@ void func_230(var uParam0, var uParam1)
 
 int func_231()
 {
-	if (UNLOCK::_UNLOCK_IS_UNLOCKED(2144034109))
+	if (UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_GUN_FOR_HIRE")))
 	{
-		if (UNLOCK::_UNLOCK_IS_VISIBLE(2144034109))
+		if (UNLOCK::_UNLOCK_IS_VISIBLE(joaat("FEATURE_GUN_FOR_HIRE")))
 		{
 			return 1;
 		}
@@ -6022,7 +6022,7 @@ int func_248(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4)
 	func_229(uParam2, uParam3, 18);
 	func_359(uParam2, uParam3);
 	func_360(uParam0, uParam2, uParam3);
-	if (uParam2->f_7.f_2.f_14 == 1 && !func_361(*uParam3, iVar0, -890716772))
+	if (uParam2->f_7.f_2.f_14 == 1 && !func_361(*uParam3, iVar0, joaat("NO_PVP")))
 	{
 		func_362(uParam2, uParam3);
 	}
@@ -6152,7 +6152,7 @@ int func_249(var uParam0, var uParam1, var uParam2, int iParam3)
 				func_343(uParam1);
 				func_366(uParam1);
 				func_370(uParam1, uParam2, &Var1);
-				func_372(uParam2->f_1, uParam2->f_2, -1323853848, func_371(uParam2), Var1, 1);
+				func_372(uParam2->f_1, uParam2->f_2, joaat("MISSION_LOCKED"), func_371(uParam2), Var1, 1);
 				return 0;
 			case 25:
 				func_373(uParam1, uParam2);
@@ -6168,7 +6168,7 @@ int func_249(var uParam0, var uParam1, var uParam2, int iParam3)
 				break;
 		}
 	}
-	if (uParam1->f_7.f_2.f_14 == 1 && !func_361(*uParam2, iVar0, -890716772))
+	if (uParam1->f_7.f_2.f_14 == 1 && !func_361(*uParam2, iVar0, joaat("NO_PVP")))
 	{
 		func_362(uParam1, uParam2);
 	}
@@ -6429,11 +6429,11 @@ int func_252(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4)
 	{
 		iVar34 = 2;
 	}
-	if (func_361(*uParam3, iVar31, 1859868723))
+	if (func_361(*uParam3, iVar31, joaat("HAS_INTRO_CUTSCENE")))
 	{
 		func_395(&uVar35, 2);
 	}
-	if (func_361(*uParam3, iVar31, 518798111))
+	if (func_361(*uParam3, iVar31, joaat("INSTANCED")))
 	{
 		bVar33 = true;
 		func_396(uParam3->f_1, uParam3->f_2, uVar35, Var0.f_2, Var0, Var36, 0);
@@ -6451,7 +6451,7 @@ int func_252(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4)
 	func_398(*uParam3, uParam3->f_1, uParam3->f_2, &(uParam0->f_4[iVar32 /*6*/]), iVar34, Var0, uVar35);
 	if (iVar34 != 2)
 	{
-		func_372(uParam3->f_1, uParam3->f_2, -79578972, func_371(uParam3), Var0, 1);
+		func_372(uParam3->f_1, uParam3->f_2, joaat("ACCEPT_MISSION"), func_371(uParam3), Var0, 1);
 	}
 	HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
 	HUD::_0xC9CAEAEEC1256E54(-1249243147);
@@ -6475,7 +6475,7 @@ int func_253(var uParam0, var uParam1, var uParam2, int iParam3)
 	}
 	iVar0 = func_365(*uParam2);
 	Var2.f_1 = -1;
-	if (func_361(*uParam2, iVar0, 1859868723))
+	if (func_361(*uParam2, iVar0, joaat("HAS_INTRO_CUTSCENE")))
 	{
 		func_395(&uVar1, 2);
 	}
@@ -7081,7 +7081,7 @@ int func_278(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, in
 			*iParam7 = 10;
 			return 1;
 		}
-		if (func_361(*uParam3, &(uParam0->f_4[iParam4 /*6*/]), 518798111))
+		if (func_361(*uParam3, &(uParam0->f_4[iParam4 /*6*/]), joaat("INSTANCED")))
 		{
 			(uParam0->f_4[iParam4 /*6*/])->f_5 = func_447(uParam1, iParam5, 1);
 			*iParam7 = 8;
@@ -7485,7 +7485,7 @@ int func_289(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, in
 	{
 		func_436(&((uParam0->f_4[iParam4 /*6*/])->f_4), 4, *uParam3);
 		(uParam0->f_4[iParam4 /*6*/])->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-		if (&uParam0->f_4[iParam4 /*6*/] != -1 && func_361(*uParam3, &(uParam0->f_4[iParam4 /*6*/]), 518798111))
+		if (&uParam0->f_4[iParam4 /*6*/] != -1 && func_361(*uParam3, &(uParam0->f_4[iParam4 /*6*/]), joaat("INSTANCED")))
 		{
 			(uParam0->f_4[iParam4 /*6*/])->f_5 = func_447(uParam1, iParam5, 1);
 			*iParam7 = 8;
@@ -8851,19 +8851,19 @@ int func_356(var uParam0, var uParam1, var uParam2, var uParam3)
 			case 39:
 			case 40:
 				func_370(uParam2, uParam3, &Var0);
-				func_372(uParam3->f_1, uParam3->f_2, -1323853848, func_371(uParam3), Var0, 1);
+				func_372(uParam3->f_1, uParam3->f_2, joaat("MISSION_LOCKED"), func_371(uParam3), Var0, 1);
 				break;
 			case 8:
 				func_492(uParam2, uParam3);
-				func_372(uParam3->f_1, uParam3->f_2, -1585401455, func_371(uParam3), Var0, 1);
+				func_372(uParam3->f_1, uParam3->f_2, joaat("HONOR_TOO_HIGH"), func_371(uParam3), Var0, 1);
 				break;
 			case 7:
 				func_493(uParam2, uParam3);
-				func_372(uParam3->f_1, uParam3->f_2, -56208354, func_371(uParam3), Var0, 1);
+				func_372(uParam3->f_1, uParam3->f_2, joaat("HONOR_TOO_LOW"), func_371(uParam3), Var0, 1);
 				break;
 			case 27:
 				func_494(uParam2, uParam3);
-				func_372(uParam3->f_1, uParam3->f_2, 2091137887, func_371(uParam3), Var0, 1);
+				func_372(uParam3->f_1, uParam3->f_2, joaat("POSSE_SMALL"), func_371(uParam3), Var0, 1);
 				break;
 			case 44:
 				func_374(uParam2, uParam3);
@@ -9039,7 +9039,7 @@ void func_360(var uParam0, var uParam1, var uParam2)
 		return;
 	}
 	func_502(0, joaat("BLIP_MP_GUN_FOR_HIRE"));
-	func_503(0, 1699087565);
+	func_503(0, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
 	func_504(0, -244815569);
 	sVar7 = func_505(0);
 	iVar8 = func_308(MISC::_CREATE_VAR_STRING(0, iVar6, sVar7), 10000, 0, 0, 0, 1);
@@ -9110,7 +9110,7 @@ void func_363(var uParam0, var uParam1, int iParam2)
 	iVar2 = PLAYER::PLAYER_ID();
 	iVar3 = _NAMESPACE26::_0x901E0DC25080C8B9(iVar2);
 	iVar4 = (_NAMESPACE26::_0x149A2751AB66AC02(iVar3) - 1);
-	if (func_361(*uParam1, iParam2, 1992773981))
+	if (func_361(*uParam1, iParam2, joaat("MULTIPLE_OBJECTIVES_1")))
 	{
 		if (iVar4 > 1)
 		{
@@ -9120,7 +9120,7 @@ void func_363(var uParam0, var uParam1, int iParam2)
 			bVar1 = true;
 		}
 	}
-	if (!bVar1 && func_361(*uParam1, iParam2, -2010581984))
+	if (!bVar1 && func_361(*uParam1, iParam2, joaat("MULTIPLE_OBJECTIVES_2")))
 	{
 		if (iVar4 > 2)
 		{
@@ -9130,7 +9130,7 @@ void func_363(var uParam0, var uParam1, int iParam2)
 			bVar1 = true;
 		}
 	}
-	if (!bVar1 && func_361(*uParam1, iParam2, -1824322988))
+	if (!bVar1 && func_361(*uParam1, iParam2, joaat("MULTIPLE_OBJECTIVES_3")))
 	{
 		if (iVar4 > 3)
 		{
@@ -9140,7 +9140,7 @@ void func_363(var uParam0, var uParam1, int iParam2)
 			bVar1 = true;
 		}
 	}
-	if (!bVar1 && func_361(*uParam1, iParam2, -1518489911))
+	if (!bVar1 && func_361(*uParam1, iParam2, joaat("MULTIPLE_OBJECTIVES_4")))
 	{
 		if (iVar4 > 4)
 		{
@@ -9195,7 +9195,7 @@ void func_363(var uParam0, var uParam1, int iParam2)
 		return;
 	}
 	func_502(0, joaat("BLIP_MP_GUN_FOR_HIRE"));
-	func_503(0, 1699087565);
+	func_503(0, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
 	func_504(0, -244815569);
 	sVar6 = func_505(0);
 	iVar7 = func_308(MISC::_CREATE_VAR_STRING(0, iVar5, sVar6), 10000, 0, 0, 0, 1);
@@ -9382,9 +9382,9 @@ int func_371(var uParam0)
 	switch (func_128(*uParam0))
 	{
 		case joaat("PRIMARY"):
-			return -839267265;
+			return joaat("PRIMARY_SPEAKER");
 		case joaat("SECONDARY"):
-			return -258540245;
+			return joaat("SECONDARY_SPEAKER");
 		default:
 			break;
 	}
@@ -10477,9 +10477,9 @@ void func_408(var uParam0, var uParam1, var uParam2)
 		return;
 	}
 	func_561(*uParam2, func_404(*uParam2), &Var31);
-	if (func_609(&(Var0.f_23), 518798111))
+	if (func_609(&(Var0.f_23), joaat("INSTANCED")))
 	{
-		if (func_609(&(Var0.f_23), 1859868723))
+		if (func_609(&(Var0.f_23), joaat("HAS_INTRO_CUTSCENE")))
 		{
 			func_395(&uVar36, 2);
 		}
@@ -10695,7 +10695,7 @@ int func_417(int iParam0)
 	switch (iParam0)
 	{
 		case 132:
-			return -809040070;
+			return joaat("SHOP_BUT_MUSICIAN_BANJO");
 		case 6:
 			return joaat("SHOP_BLK_GENERAL_STORE");
 		case 7:
@@ -10709,7 +10709,7 @@ int func_417(int iParam0)
 		case 14:
 			return joaat("SHOP_BLK_POST_OFFICE");
 		case 15:
-			return -441298053;
+			return joaat("SHOP_BLK_TRAIN_STATION");
 		case 12:
 			return joaat("SHOP_BLK_PHOTO_STUDIO");
 		case 122:
@@ -10723,13 +10723,13 @@ int func_417(int iParam0)
 		case 10:
 			return joaat("SHOP_BLK_BARTENDER");
 		case 11:
-			return -906556724;
+			return joaat("SHOP_BLK_PIANIST");
 		case 16:
-			return 882729775;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_FIRST");
 		case 17:
-			return 1957450109;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_SECOND");
 		case 18:
-			return 1826386989;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_THIRD");
 		case 23:
 			return joaat("SHOP_EMR_GENERAL_STORE");
 		case 24:
@@ -10767,7 +10767,7 @@ int func_417(int iParam0)
 		case 56:
 			return joaat("SHOP_SDN_BARTENDER_SLUM");
 		case 57:
-			return -404449802;
+			return joaat("SHOP_SDN_PIANIST_SLUM");
 		case 60:
 			return joaat("SHOP_SDN_PHOTO_STUDIO");
 		case 124:
@@ -10777,15 +10777,15 @@ int func_417(int iParam0)
 		case 54:
 			return joaat("SHOP_SDN_BARTENDER");
 		case 55:
-			return 509242725;
+			return joaat("SHOP_SDN_PIANIST");
 		case 59:
-			return -1243693278;
+			return joaat("SHOP_SDN_MUSICIAN_BANJO");
 		case 58:
-			return 106026254;
+			return joaat("SHOP_SDN_MUSICIAN_GUITARIST");
 		case 61:
-			return -1340467914;
+			return joaat("SHOP_SDN_THEATER_MP");
 		case 62:
-			return -2128099513;
+			return joaat("SHOP_SDN_THEATER_MAGIC_MP");
 		case 27:
 			return joaat("SHOP_RGG_POST_OFFICE");
 		case 28:
@@ -10809,9 +10809,9 @@ int func_417(int iParam0)
 		case 36:
 			return joaat("SHOP_RHO_BARTENDER");
 		case 37:
-			return -697751457;
+			return joaat("SHOP_RHO_PIANIST");
 		case 38:
-			return -994915577;
+			return joaat("SHOP_RHO_MUSICIAN_BANJO");
 		case 68:
 			return joaat("SHOP_STR_BUTCHER");
 		case 69:
@@ -10827,9 +10827,9 @@ int func_417(int iParam0)
 		case 75:
 			return joaat("SHOP_STR_BARTENDER");
 		case 72:
-			return -553046416;
+			return joaat("SHOP_STR_MUSICIAN_BANJO");
 		case 73:
-			return 1410537143;
+			return joaat("SHOP_STR_MUSICIAN_GUITARIST");
 		case 83:
 			return joaat("SHOP_VAL_DOCTOR");
 		case 84:
@@ -10847,7 +10847,7 @@ int func_417(int iParam0)
 		case 88:
 			return joaat("SHOP_VAL_TRAIN_STATION");
 		case 81:
-			return 1124822890;
+			return joaat("SHOP_VAL_BARTENDER_KEANE");
 		case 91:
 			return joaat("SHOP_VAL_BARTENDER_SLUM");
 		case 90:
@@ -10861,9 +10861,9 @@ int func_417(int iParam0)
 		case 79:
 			return joaat("SHOP_VAL_BARTENDER");
 		case 80:
-			return -1850308061;
+			return joaat("SHOP_VAL_PIANIST");
 		case 89:
-			return 787686374;
+			return joaat("SHOP_VAL_THEATER_MAGIC_MP");
 		case 41:
 			return joaat("SHOP_SCM_HORSE_SHOP");
 		case 98:
@@ -10871,13 +10871,13 @@ int func_417(int iParam0)
 		case 97:
 			return joaat("SHOP_VAN_TRAIN_STATION");
 		case 93:
-			return 1437804895;
+			return joaat("SHOP_VAN_FENCE");
 		case 96:
 			return joaat("SHOP_VAN_HORSE_SHOP");
 		case 94:
 			return joaat("SHOP_VAN_BARTENDER");
 		case 95:
-			return 470861506;
+			return joaat("SHOP_VAN_PIANIST");
 		case 128:
 			return joaat("SHOP_VAN_COACH");
 		case 129:
@@ -10911,31 +10911,31 @@ int func_417(int iParam0)
 		case 150:
 			return joaat("SHOP_CAMP_BUTCHERTABLE");
 		case 147:
-			return 191185611;
+			return joaat("SHOP_CAMP_TRAVELLING_SALESMAN");
 		case 135:
-			return 1689047337;
+			return joaat("SHOP_RIO_TRAVELLING_SALESMAN");
 		case 136:
-			return 631237697;
+			return joaat("SHOP_CHO_TRAVELLING_SALESMAN");
 		case 137:
-			return 1309294228;
+			return joaat("SHOP_HEN_TRAVELLING_SALESMAN");
 		case 138:
-			return -1862366064;
+			return joaat("SHOP_TAL_TRAVELLING_SALESMAN");
 		case 139:
-			return -708893514;
+			return joaat("SHOP_BGV_TRAVELLING_SALESMAN");
 		case 140:
-			return -61253253;
+			return joaat("SHOP_HRT_E_TRAVELLING_SALESMAN");
 		case 141:
-			return -1674694281;
+			return joaat("SHOP_HRT_W_TRAVELLING_SALESMAN");
 		case 142:
-			return 14391281;
+			return joaat("SHOP_GRZ_TRAVELLING_SALESMAN");
 		case 143:
-			return -869603674;
+			return joaat("SHOP_SCM_TRAVELLING_SALESMAN");
 		case 144:
-			return 2081857521;
+			return joaat("SHOP_BLU_TRAVELLING_SALESMAN");
 		case 145:
-			return 526646992;
+			return joaat("SHOP_DER_TRAVELLING_SALESMAN");
 		case 146:
-			return 1672297313;
+			return joaat("SHOP_BBR_TRAVELLING_SALESMAN");
 		case 47:
 			return joaat("SHOP_MOONSHINE_STILL");
 		case 32:
@@ -10985,13 +10985,13 @@ int func_417(int iParam0)
 		case 64:
 			return 878376253;
 		case 164:
-			return -508879537;
+			return joaat("SHOP_LAK_DOCTOR");
 		case 165:
-			return -654369397;
+			return joaat("SHOP_LAK_GENERAL_STORE");
 		case 166:
-			return 1573058547;
+			return joaat("SHOP_LAK_GUNSMITH");
 		case 167:
-			return 1753151614;
+			return joaat("SHOP_LAK_HORSE_TRAINER");
 		case 168:
 			return joaat("SHOP_SHB_DOCTOR");
 		case 169:
@@ -11023,7 +11023,7 @@ int func_417(int iParam0)
 		case 105:
 			return joaat("SHOP_TBL_BARTENDER");
 		case 106:
-			return -375350;
+			return joaat("SHOP_TBL_PIANIST");
 		case 103:
 			return joaat("SHOP_TBL_GUNSMITH");
 		case 104:
@@ -11415,10 +11415,10 @@ void func_422(var uParam0, var uParam1)
 	}
 	if (!func_500(1))
 	{
-		func_501(1, 1699087565);
+		func_501(1, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
 	}
 	func_502(1, joaat("BLIP_PROC_BOUNTY_POSTER"));
-	func_503(1, 1699087565);
+	func_503(1, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
 	func_504(1, -244815569);
 	iVar2 = func_308(MISC::_CREATE_VAR_STRING(0, iVar1, func_505(1)), 10000, 0, 0, 0, 1);
 	func_309(uParam0, uParam1, iVar0, iVar2);
@@ -12552,7 +12552,7 @@ void func_476(var uParam0, var uParam1, int iParam2)
 	switch (uParam0->f_7.f_2.f_14)
 	{
 		case 1:
-			if (func_361(*uParam1, iParam2, -890716772))
+			if (func_361(*uParam1, iParam2, joaat("NO_PVP")))
 			{
 				if (iVar0 == joaat("NONE"))
 				{
@@ -12627,7 +12627,7 @@ void func_478(var uParam0, var uParam1, int iParam2)
 	switch (uParam0->f_7.f_2.f_14)
 	{
 		case 1:
-			if (func_361(*uParam1, iParam2, -890716772))
+			if (func_361(*uParam1, iParam2, joaat("NO_PVP")))
 			{
 				if (iVar0 == joaat("NONE"))
 				{
@@ -13586,7 +13586,7 @@ int func_528(var uParam0, bool bParam1, int iParam2, int iParam3, int iParam4)
 	}
 	vVar0 = { func_295(iParam4) };
 	bVar4 = func_66(bParam1, 536870912);
-	if (func_609(&(uParam0->f_23), 2015728894) || func_609(&(uParam0->f_23), -1211373264))
+	if (func_609(&(uParam0->f_23), joaat("REQUIRES_PLAYER_TARGET")) || func_609(&(uParam0->f_23), joaat("REQUIRES_POSSE_TARGET")))
 	{
 		if (!func_670(iParam2, vVar0, uVar3))
 		{
@@ -14983,8 +14983,8 @@ int func_608(var uParam0, int iParam1, int iParam2)
 			}
 			else
 			{
-				iVar5 = func_725(iVar105, -1883278863, -1456364914);
-				iVar4 = func_725(iVar105, -1883278863, 1237176269);
+				iVar5 = func_725(iVar105, joaat("TARGET_COUNT"), joaat("MIN_TARGETS"));
+				iVar4 = func_725(iVar105, joaat("TARGET_COUNT"), joaat("MAX_TARGETS"));
 				if (iVar4 < iVar5)
 				{
 				}
@@ -15034,14 +15034,14 @@ int func_608(var uParam0, int iParam1, int iParam2)
 										if (Var323.f_2 == -1)
 										{
 											MISC::_COPY_MEMORY(&Var323, &Var106, 31);
-											func_727(&(Var230.f_23), 518798111);
+											func_727(&(Var230.f_23), joaat("INSTANCED"));
 										}
 									}
 								}
 								else
 								{
 									MISC::_COPY_MEMORY(&Var230, &Var106, 31);
-									func_727(&(Var230.f_23), 518798111);
+									func_727(&(Var230.f_23), joaat("INSTANCED"));
 								}
 							}
 							if (Var261.f_2 == -1)
@@ -15058,14 +15058,14 @@ int func_608(var uParam0, int iParam1, int iParam2)
 										if (Var323.f_2 == -1)
 										{
 											MISC::_COPY_MEMORY(&Var323, &Var106, 31);
-											func_727(&(Var230.f_23), 518798111);
+											func_727(&(Var230.f_23), joaat("INSTANCED"));
 										}
 									}
 								}
 								else
 								{
 									MISC::_COPY_MEMORY(&Var261, &Var106, 31);
-									func_727(&(Var261.f_23), 518798111);
+									func_727(&(Var261.f_23), joaat("INSTANCED"));
 								}
 							}
 						}
@@ -16200,61 +16200,61 @@ int func_652(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2143720214:
+		case joaat("ALT_STRANGER_HELP_LEADER"):
 			return 11;
-		case -2065343483:
+		case joaat("ALT_STRANGER_HELP_WANTED"):
 			return 10;
-		case -1940456649:
+		case joaat("STRANGER_HELP_BOUNTY"):
 			return 2;
-		case -1893546488:
+		case joaat("STRANGER_HELP_LEADER"):
 			return 4;
-		case -1817962691:
+		case joaat("ALT_STRANGER_HELP_NO_MISSION"):
 			return 13;
-		case -1094727125:
+		case joaat("ALT_GIVER_HELP_AGGRO"):
 			return 22;
-		case -866980461:
+		case joaat("ALT_STRANGER_HELP_COOLDOWN"):
 			return 7;
-		case -846566575:
+		case joaat("ALT_GIVER_HELP_LEADER"):
 			return 25;
-		case -653541286:
+		case joaat("GIVER_HELP_AGGRO"):
 			return 15;
-		case -564732200:
+		case joaat("ALT_GIVER_HELP_HIDDEN"):
 			return 26;
-		case -511489986:
+		case joaat("ALT_STRANGER_HELP_AGGRO"):
 			return 8;
-		case -469515992:
+		case joaat("ALT_GIVER_HELP_WANTED"):
 			return 24;
-		case -398980169:
+		case joaat("GIVER_HELP_NO_MISSION"):
 			return 20;
-		case -25043757:
+		case joaat("ALT_STRANGER_HELP_HIDDEN"):
 			return 12;
-		case 634826173:
+		case joaat("ALT_STRANGER_HELP_BOUNTY"):
 			return 9;
-		case 980822637:
+		case joaat("ALT_GIVER_HELP_BOUNTY"):
 			return 23;
-		case 994072493:
+		case joaat("GIVER_HELP_COOLDOWN"):
 			return 14;
-		case 1100294018:
+		case joaat("STRANGER_HELP_AGGRO"):
 			return 1;
-		case 1219698641:
+		case joaat("STRANGER_HELP_NO_MISSION"):
 			return 6;
-		case 1333776312:
+		case joaat("GIVER_HELP_HIDDEN"):
 			return 19;
-		case 1342967169:
+		case joaat("STRANGER_HELP_WANTED"):
 			return 3;
-		case 1373162615:
+		case joaat("STRANGER_HELP_COOLDOWN"):
 			return 0;
-		case 1373746698:
+		case joaat("STRANGER_HELP_HIDDEN"):
 			return 5;
-		case 1553803896:
+		case joaat("ALT_GIVER_HELP_COOLDOWN"):
 			return 21;
-		case 1666130866:
+		case joaat("GIVER_HELP_BOUNTY"):
 			return 16;
-		case 1759563362:
+		case joaat("ALT_GIVER_HELP_NO_MISSION"):
 			return 27;
-		case 1823897584:
+		case joaat("GIVER_HELP_LEADER"):
 			return 18;
-		case 1831477950:
+		case joaat("GIVER_HELP_WANTED"):
 			return 17;
 		default:
 			break;
@@ -16441,41 +16441,41 @@ int func_662(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2010581984:
+		case joaat("MULTIPLE_OBJECTIVES_2"):
 			return 8;
 		case -2001405328:
 			return 4;
-		case -1824322988:
+		case joaat("MULTIPLE_OBJECTIVES_3"):
 			return 9;
-		case -1518489911:
+		case joaat("MULTIPLE_OBJECTIVES_4"):
 			return 10;
 		case -1348549877:
 			return 11;
-		case -1211373264:
+		case joaat("REQUIRES_POSSE_TARGET"):
 			return 15;
-		case -1067974651:
+		case joaat("SETUP_MISSION_1"):
 			return 17;
 		case -1040947274:
 			return 12;
-		case -890716772:
+		case joaat("NO_PVP"):
 			return 6;
-		case -761617270:
+		case joaat("SETUP_MISSION_0"):
 			return 16;
-		case 518798111:
+		case joaat("INSTANCED"):
 			return 1;
-		case 522505504:
+		case joaat("HAS_FLOW_FADE"):
 			return 3;
 		case 1042373141:
 			return 5;
 		case 1803795142:
 			return 13;
-		case 1806630731:
+		case joaat("MULTI_GANG"):
 			return 0;
-		case 1859868723:
+		case joaat("HAS_INTRO_CUTSCENE"):
 			return 2;
-		case 1992773981:
+		case joaat("MULTIPLE_OBJECTIVES_1"):
 			return 7;
-		case 2015728894:
+		case joaat("REQUIRES_PLAYER_TARGET"):
 			return 14;
 		default:
 			break;
@@ -16742,7 +16742,7 @@ int func_676(int iParam0, var uParam1, int iParam2, vector3 vParam3, bool bParam
 	}
 	if (bParam6)
 	{
-		if (iParam2 != 1717788883 && func_812(func_107(), func_107(), 0, bParam7))
+		if (iParam2 != joaat("INTRO_MISSION") && func_812(func_107(), func_107(), 0, bParam7))
 		{
 			return 3;
 		}
@@ -17046,9 +17046,9 @@ int func_682(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -1519264107;
+			return joaat("CUTSCENE_MPCGOI1");
 		case 2:
-			return -1349160228;
+			return joaat("CUTSCENE_MPCGOI2");
 		case 3:
 			return -732709691;
 		case 4:
@@ -17056,7 +17056,7 @@ int func_682(int iParam0)
 		case 5:
 			return -969278268;
 		case 6:
-			return 650135692;
+			return joaat("CUTSCENE_MPRM1");
 		default:
 			break;
 	}
@@ -17550,39 +17550,39 @@ int func_695(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1058720752:
+		case joaat("INTRO_BLACKWATER_FEMALE"):
 			return 4;
-		case -596140911:
+		case joaat("INTRO_BLACKWATER_MALE"):
 			return 3;
-		case 1667234773:
+		case joaat("INTRO_RHODES_FEMALE"):
 			return 8;
-		case 302420629:
+		case joaat("INTRO_RHODES_MALE"):
 			return 7;
-		case 58670941:
+		case joaat("INTRO_TUMBLEWEED_FEMALE"):
 			return 6;
-		case 323628355:
+		case joaat("INTRO_TUMBLEWEED_MALE"):
 			return 5;
-		case 18011253:
+		case joaat("INTRO_VALENTINE_FEMALE"):
 			return 2;
-		case -358638071:
+		case joaat("INTRO_VALENTINE_MALE"):
 			return 1;
 		case joaat("MULTISTART"):
 			return 0;
-		case 2055847821:
+		case joaat("JOB_BRIEF_1"):
 			return 9;
-		case -1010216437:
+		case joaat("JOB_BRIEF_2"):
 			return 10;
-		case -703138138:
+		case joaat("JOB_BRIEF_3"):
 			return 11;
-		case -1407868742:
+		case joaat("JOB_BRIEF_4_OFFER"):
 			return 12;
-		case -1993182726:
+		case joaat("JOB_BRIEF_4_REOFFER"):
 			return 13;
-		case 1320490705:
+		case joaat("JOB_BRIEF_4_DECLINE"):
 			return 14;
-		case 1465672549:
+		case joaat("JOB_BRIEF_4_WAIT"):
 			return 15;
-		case 821981236:
+		case joaat("JOB_BRIEF_4_TAKE"):
 			return 16;
 		default:
 			break;
@@ -17814,11 +17814,11 @@ int func_708(int iParam0)
 	switch (iParam0)
 	{
 		case -504335712:
-			return 1005649839 /* GXTEntry: "VS Mission" */;
+			return joaat("MP_VS_MISSION");
 		case 395262693:
-			return -47596571 /* GXTEntry: "Deathmatch" */;
+			return joaat("MP_DEATHMATCH");
 		case -933924539:
-			return 921725912 /* GXTEntry: "Race" */;
+			return joaat("MP_RACE");
 		default:
 			break;
 	}
@@ -20047,10 +20047,10 @@ int func_808(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -260420884:
-		case 850213441:
-		case 1884341302:
-		case 1918154385:
+		case joaat("CAMP_RESUPPLY"):
+		case joaat("CAMP_SETUP"):
+		case joaat("CAMP_RAID"):
+		case joaat("CAMP_SELL"):
 			return 1;
 		default:
 			break;
@@ -21892,7 +21892,7 @@ int func_855(int iParam0)
 		case 1:
 			return joaat("MOONSHINE");
 		case 2:
-			return 1428568385;
+			return joaat("MOONSHINE_RECIPE");
 		default:
 			break;
 	}
@@ -23795,7 +23795,7 @@ int func_962(int iParam0)
 	{
 		return 0;
 	}
-	if (iParam0 == 1717788883)
+	if (iParam0 == joaat("INTRO_MISSION"))
 	{
 		return func_1066();
 	}
@@ -23900,7 +23900,7 @@ int func_970(int iParam0)
 		case 0:
 			return joaat("ENGLISH");
 		case 1:
-			return -2027639951;
+			return joaat("LOCALIZED");
 		default:
 			break;
 	}
@@ -23914,9 +23914,9 @@ int func_971(int iParam0)
 		case 2:
 			return joaat("CRIME");
 		case 0:
-			return 2063993476;
+			return joaat("GANG_NAME");
 		case 1:
-			return 1007867116;
+			return joaat("ILO_NAME");
 		case 3:
 			return joaat("HEADER");
 		case 4:
@@ -24575,10 +24575,10 @@ void func_996(int iParam0, var uParam1, int iParam2)
 	iVar0 = func_675(iParam0);
 	switch (iVar0)
 	{
-		case 1918154385:
+		case joaat("CAMP_SELL"):
 			func_1079(uParam1);
 			break;
-		case 974227447:
+		case joaat("MOONSHINE_SELL"):
 			func_1080(uParam1, iParam2);
 			break;
 	}
@@ -24653,9 +24653,9 @@ int func_1002(int iParam0)
 	{
 		case joaat("INTRO"):
 			return 0;
-		case -360659748:
+		case joaat("JOB_BRIEF"):
 			return 1;
-		case 1604231229:
+		case joaat("JOB_BRIEF_ALT"):
 			return 2;
 		default:
 			break;
@@ -24718,7 +24718,7 @@ int func_1006(int iParam0)
 			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
-			iVar0 = 2080488347;
+			iVar0 = joaat("MISSION_FETCH");
 			break;
 		case 5:
 			iVar0 = joaat("MISSION_MINIGAME");
@@ -24727,10 +24727,10 @@ int func_1006(int iParam0)
 			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
-			iVar0 = 1198585370;
+			iVar0 = joaat("MISSION_UGC");
 			break;
 		case 8:
-			iVar0 = 1753821005;
+			iVar0 = joaat("MISSION_BEAT");
 			break;
 		case 9:
 			iVar0 = joaat("PROPERTY");
@@ -24745,10 +24745,10 @@ int func_1006(int iParam0)
 			iVar0 = joaat("SHOP");
 			break;
 		case 13:
-			iVar0 = 1252941330;
+			iVar0 = joaat("GFH_GIVERS");
 			break;
 		case 14:
-			iVar0 = -1930354636;
+			iVar0 = joaat("GFH_LOCATIONS");
 			break;
 		case 15:
 			iVar0 = 1332629624;
@@ -24757,7 +24757,7 @@ int func_1006(int iParam0)
 			iVar0 = 1746212499;
 			break;
 		case 17:
-			iVar0 = 1859328971;
+			iVar0 = joaat("GVO_UNLOCKS");
 			break;
 		case 18:
 			iVar0 = 1151893103;
@@ -24788,7 +24788,7 @@ int func_1008(int iParam0)
 			return 0;
 		case 2124631622:
 			return 1;
-		case -66250361:
+		case joaat("ROBBERY_TRAIN"):
 			return 2;
 		case 1443764480:
 			return 3;
@@ -24808,39 +24808,39 @@ int func_1008(int iParam0)
 			return 10;
 		case -621956193:
 			return 11;
-		case 1081776803:
+		case joaat("GANG_EVENT_SHOWDOWN"):
 			return 12;
-		case -218697175:
+		case joaat("GANG_EVENT_IMPROMPTU_RACE"):
 			return 13;
 		case -867762478:
 			return 14;
 		case 602097925:
 			return 15;
-		case 1724417419:
+		case joaat("TRAIN_ESCORT"):
 			return 16;
-		case -728200180:
+		case joaat("IWD_1V1"):
 			return 17;
-		case 1404415665:
+		case joaat("IWD_PVP"):
 			return 18;
-		case 339077182:
+		case joaat("IWD_PF"):
 			return 20;
-		case 650120418:
+		case joaat("IWD_PLF"):
 			return 21;
-		case 1695693301:
+		case joaat("IWD_F"):
 			return 28;
-		case -1809176396:
+		case joaat("IWD_INF"):
 			return 19;
-		case 349772825:
+		case joaat("ASSASSINATION"):
 			return 22;
-		case 1657045547:
+		case joaat("ASSASSINATION_TRACKING"):
 			return 23;
-		case -590482787:
+		case joaat("ASSASSINATION_PVP_PLAYER"):
 			return 24;
-		case -1711308722:
+		case joaat("ASSASSINATION_PVP_POSSE"):
 			return 25;
-		case -409129282:
+		case joaat("COACH_HOLDUP_ROBBERY"):
 			return 26;
-		case -1790985606:
+		case joaat("COACH_HOLDUP_KIDNAPPING"):
 			return 27;
 		default:
 			break;
@@ -24876,37 +24876,37 @@ int func_1010(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1697883736:
+		case joaat("ARCHERY"):
 			return 0;
 		case joaat("CHALLENGES"):
 			return 1;
-		case -1363591469:
+		case joaat("DEAD_DROP"):
 			return 2;
-		case 1635448909:
+		case joaat("GOLDEN_HAT"):
 			return 3;
-		case -604494871:
+		case joaat("HOT_PROPERTY"):
 			return 4;
-		case -993281498:
+		case joaat("KING_OF_THE_CASTLE"):
 			return 5;
-		case -1871525158:
+		case joaat("KING_OF_THE_RAILS"):
 			return 6;
-		case -596286663:
+		case joaat("PV_CHALLENGE_HERBALIST"):
 			return 12;
-		case 923956646:
+		case joaat("PV_CHALLENGE_BIGGEST_FISH"):
 			return 13;
-		case 1459450644:
+		case joaat("PV_CHALLENGE_FLYING_BIRD"):
 			return 14;
-		case -2071675432:
+		case joaat("HUNT_THE_POSSE_LEADER"):
 			return 15;
-		case -552339597:
+		case joaat("ESCAPED_CONVICTS"):
 			return 7;
-		case 2144670272:
+		case joaat("SUPPLY_TRAIN"):
 			return 9;
-		case 996459079:
+		case joaat("ROUND_UP"):
 			return 8;
-		case 1996177174:
+		case joaat("WRECKAGE"):
 			return 10;
-		case -1702168032:
+		case joaat("CONDOR_EGG"):
 			return 11;
 		default:
 			break;
@@ -24918,11 +24918,11 @@ int func_1011(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2049341823:
+		case joaat("UGC_MAJOR_ID_DBG_VERSUS"):
 			return 0;
-		case 1655635003:
+		case joaat("UGC_MAJOR_ID_DBG_DEATHMATCH"):
 			return 1;
-		case -435635781:
+		case joaat("UGC_MAJOR_ID_DBG_RACE"):
 			return 2;
 		case 2006131499:
 			return 3;
@@ -24934,9 +24934,9 @@ int func_1011(int iParam0)
 			return 6;
 		case 787592898:
 			return 7;
-		case -568832219:
+		case joaat("UGC_MAJOR_ID_LBM"):
 			return 8;
-		case -1103026985:
+		case joaat("UGC_MAJOR_ID_MOONSHINE_COOP"):
 			return 9;
 		default:
 			break;
@@ -24952,15 +24952,15 @@ int func_1012(int iParam0)
 			return -1;
 		case joaat("NORMAL"):
 			return 0;
-		case -640677282:
+		case joaat("INTRO_CHAR"):
 			return 1;
-		case -1950303839:
+		case joaat("INTRO_GENERIC"):
 			return 2;
 		case 1322114923:
 			return 3;
-		case -525004462:
+		case joaat("INTRO_FREEMODE"):
 			return 4;
-		case 1419735597:
+		case joaat("INTRO_CLAY2"):
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
@@ -24976,15 +24976,15 @@ int func_1012(int iParam0)
 			return 11;
 		case joaat("COLLECTOR"):
 			return 12;
-		case -218234180:
+		case joaat("SEASON005"):
 			return 13;
-		case 751663875:
+		case joaat("VIPSEASON005"):
 			return 14;
 		case joaat("MOONSHINER"):
 			return 15;
-		case -269943670:
+		case joaat("SEASON006"):
 			return 16;
-		case 522313648:
+		case joaat("VIPSEASON006"):
 			return 17;
 		default:
 			break;
@@ -26048,19 +26048,19 @@ int func_1065(int iParam0)
 	{
 		case joaat("BOUNTY_BOARD"):
 		case joaat("GUN_FOR_HIRE"):
-		case -260420884:
-		case -232478158:
-		case 78055447:
-		case 850213441:
-		case 974227447:
-		case 1427578635:
-		case 1532822440:
+		case joaat("CAMP_RESUPPLY"):
+		case joaat("MOONSHINE_SETUP_GET_SUPPLIES"):
+		case joaat("MOONSHINE_MARKETING"):
+		case joaat("CAMP_SETUP"):
+		case joaat("MOONSHINE_SELL"):
+		case joaat("BOUNTY_PLAYER"):
+		case joaat("MOONSHINE_SETUP_RESCUE_COOK"):
 		case joaat("DYNAMIC"):
-		case 1884341302:
-		case 1918154385:
+		case joaat("CAMP_RAID"):
+		case joaat("CAMP_SELL"):
 			return 1;
 		case joaat("AMBUSH"):
-		case -669677371:
+		case joaat("MOONSHINE_DYNAMIC"):
 		case joaat("HIDEOUT"):
 			return 8;
 		default:
@@ -26397,7 +26397,7 @@ int func_1078(int iParam0)
 			return 0;
 		case joaat("MOONSHINE"):
 			return 1;
-		case 1428568385:
+		case joaat("MOONSHINE_RECIPE"):
 			return 2;
 		default:
 			break;
@@ -26491,7 +26491,7 @@ void func_1080(var uParam0, int iParam1)
 			}
 			break;
 	}
-	if (UNLOCK::_UNLOCK_IS_UNLOCKED(703286980) && !UNLOCK::_UNLOCK_IS_VISIBLE(703286980))
+	if (UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("ROLE_MOONSHINE_PROGRESSION_COOP_MISSION_05")) && !UNLOCK::_UNLOCK_IS_VISIBLE(joaat("ROLE_MOONSHINE_PROGRESSION_COOP_MISSION_05")))
 	{
 		func_1108(uParam0, 4096);
 	}
@@ -27023,37 +27023,37 @@ int func_1116(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1697883736;
+			return joaat("ARCHERY");
 		case 1:
 			return joaat("CHALLENGES");
 		case 2:
-			return -1363591469;
+			return joaat("DEAD_DROP");
 		case 3:
-			return 1635448909;
+			return joaat("GOLDEN_HAT");
 		case 4:
-			return -604494871;
+			return joaat("HOT_PROPERTY");
 		case 5:
-			return -993281498;
+			return joaat("KING_OF_THE_CASTLE");
 		case 6:
-			return -1871525158;
+			return joaat("KING_OF_THE_RAILS");
 		case 12:
-			return -596286663;
+			return joaat("PV_CHALLENGE_HERBALIST");
 		case 13:
-			return 923956646;
+			return joaat("PV_CHALLENGE_BIGGEST_FISH");
 		case 14:
-			return 1459450644;
+			return joaat("PV_CHALLENGE_FLYING_BIRD");
 		case 15:
-			return -2071675432;
+			return joaat("HUNT_THE_POSSE_LEADER");
 		case 7:
-			return -552339597;
+			return joaat("ESCAPED_CONVICTS");
 		case 9:
-			return 2144670272;
+			return joaat("SUPPLY_TRAIN");
 		case 8:
-			return 996459079;
+			return joaat("ROUND_UP");
 		case 10:
-			return 1996177174;
+			return joaat("WRECKAGE");
 		case 11:
-			return -1702168032;
+			return joaat("CONDOR_EGG");
 		default:
 			break;
 	}
@@ -27415,7 +27415,7 @@ int func_1133(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;

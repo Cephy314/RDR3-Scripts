@@ -1509,14 +1509,14 @@ void func_57()
 	{
 		StringCopy(&cVar28, MISC::_CREATE_VAR_STRING(2, "PMPLAYER_HORSE_CONDITION_MOOD_CALM"), 64);
 	}
-	if (func_124(-415648720, &iVar36))
+	if (func_124(joaat("SLOTID_HORSE_SADDLE"), &iVar36))
 	{
 		if (func_125(iVar36, &iVar45, 14460646, 0))
 		{
 			StringCopy(&cVar37, HUD::_GET_LABEL_TEXT_BY_HASH(iVar45), 64);
 		}
 	}
-	if (func_124(986998820, &iVar47))
+	if (func_124(joaat("SLOTID_HORSE_STIRRUP"), &iVar47))
 	{
 		StringCopy(&cVar48, func_126(iVar47), 64);
 	}
@@ -1647,7 +1647,7 @@ int func_70(var uParam0, bool bParam1)
 	int iVar59;
 
 	Var0.f_9 = -1591664384;
-	Var29 = { func_134(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
+	Var29 = { func_134(0, -1591664384, -1591664384, -1591664384, joaat("CI_CATEGORY_HORSE"), 0, 0) };
 	if (func_135(&Var29, &iVar43, &iVar44, bParam1))
 	{
 		Var45.f_9 = -1591664384;
@@ -1765,7 +1765,7 @@ int func_78(var uParam0, bool bParam1)
 	int iVar59;
 
 	Var0.f_9 = -1591664384;
-	Var29 = { func_134(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
+	Var29 = { func_134(0, -1591664384, -1591664384, -1591664384, joaat("CI_CATEGORY_HORSE"), 0, 0) };
 	if (func_135(&Var29, &iVar43, &iVar44, bParam1))
 	{
 		Var45.f_9 = -1591664384;
@@ -2598,7 +2598,7 @@ void func_97(int iParam0)
 				}
 			}
 			iVar31 = 1;
-			if (func_184(Var0, -653439684, 0, -1) == 515427499)
+			if (func_184(Var0, joaat("SLOTID_HORSE_SEX"), 0, -1) == joaat("HORSE_EQUIPMENT_FEMALE_GENITALS"))
 			{
 				iVar31 = 2;
 			}
@@ -4601,7 +4601,7 @@ void func_176(var uParam0, int iParam1, int iParam2)
 	int iVar74;
 
 	Var0.f_9 = -1591664384;
-	if (func_232(*uParam0, -415648720, &Var0, 1, -1))
+	if (func_232(*uParam0, joaat("SLOTID_HORSE_SADDLE"), &Var0, 1, -1))
 	{
 		if (func_203(Var0.f_4, 0))
 		{
@@ -4626,7 +4626,7 @@ void func_176(var uParam0, int iParam1, int iParam2)
 				}
 			}
 		}
-		iVar44 = func_184(Var0, 986998820, 0, -1);
+		iVar44 = func_184(Var0, joaat("SLOTID_HORSE_STIRRUP"), 0, -1);
 		if (func_203(iVar44, 0))
 		{
 			Var45.f_1 = 20;
@@ -5321,7 +5321,7 @@ void func_191()
 	int iVar39;
 
 	Var1 = { func_19(0, 1, 0, -1) };
-	iVar0 = func_241(Var1, -415648720, 0, 0);
+	iVar0 = func_241(Var1, joaat("SLOTID_HORSE_SADDLE"), 0, 0);
 	if (!func_203(iVar0, 0))
 	{
 		return;
@@ -5404,13 +5404,13 @@ void func_192()
 	int iVar42;
 
 	Var2 = { func_19(0, 1, 0, -1) };
-	iVar1 = func_241(Var2, -415648720, 0, 0);
+	iVar1 = func_241(Var2, joaat("SLOTID_HORSE_SADDLE"), 0, 0);
 	if (!func_203(iVar1, 0))
 	{
 		return;
 	}
-	Var6 = { func_242(iVar1, Var2, -415648720, 0) };
-	iVar0 = func_184(Var6, 986998820, 0, -1);
+	Var6 = { func_242(iVar1, Var2, joaat("SLOTID_HORSE_SADDLE"), 0) };
+	iVar0 = func_184(Var6, joaat("SLOTID_HORSE_STIRRUP"), 0, -1);
 	if (!func_203(iVar0, 0))
 	{
 		return;
@@ -6824,17 +6824,17 @@ int func_276(int iParam0)
 		case -1:
 			return -1844561321;
 		case 0:
-			return 1653124001;
+			return joaat("NSMT_HORSE");
 		case 1:
-			return -430733995;
+			return joaat("NSMT_DONKEY");
 		case 2:
-			return 1501387297;
+			return joaat("NSMT_VEHICLE");
 		case 3:
-			return -1143491563;
+			return joaat("NSMT_CANOE");
 		case 4:
-			return -1460176899;
+			return joaat("NSMT_TRAIN");
 		case 5:
-			return 1003181529;
+			return joaat("NSMT_CANNON");
 		default:
 			break;
 	}
@@ -7103,15 +7103,15 @@ int func_280(int iParam0)
 		case 11:
 			return joaat("CHARACTER_RANK_TRADER");
 		case 13:
-			return 705255263 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_005");
 		case 14:
-			return -471215553 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_005");
 		case 15:
 			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
-			return 1479488426 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_006");
 		case 17:
-			return -170363364 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_006");
 		default:
 			break;
 	}

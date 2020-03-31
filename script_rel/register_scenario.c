@@ -2891,7 +2891,7 @@ int func_106(bool bParam0, bool bParam1, bool bParam2)
 
 bool func_107()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 void func_108(int iParam0)

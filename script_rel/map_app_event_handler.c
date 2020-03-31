@@ -462,21 +462,21 @@ int func_16(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("AMBARINO"):
-			return -594748684;
+			return joaat("REGION_AMBARINO");
 		case joaat("LEMOYNE"):
-			return 1072597802;
+			return joaat("REGION_LEMOYNE");
 		case joaat("NEWAUSTIN"):
-			return 1259085938;
+			return joaat("REGION_NEW_AUSTIN");
 		case joaat("NEWHANOVER"):
-			return 1762760291;
+			return joaat("REGION_NEW_HANOVER");
 		case joaat("WESTELIZABETH"):
-			return 1715468631;
+			return joaat("REGION_WEST_ELIZABETH");
 		case joaat("LOWERWESTELIZABETH"):
-			return -960313506;
+			return joaat("REGION_LOWER_WEST_ELIZABETH");
 		case joaat("UPPERWESTELIZABETH"):
-			return -1581676015;
+			return joaat("REGION_UPPER_WEST_ELIZABETH");
 		case joaat("GUARMA"):
-			return -1431514117;
+			return joaat("REGION_GUARMA");
 		default:
 			break;
 	}
@@ -913,27 +913,27 @@ int func_23(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("LAGRAS"):
-			return 412187666;
+			return joaat("ZONE_LAGRAS");
 		case joaat("STDENIS"):
-			return -48955357;
+			return joaat("ZONE_SAINT_DENIS");
 		case joaat("STRAWBERRY"):
-			return -1366448499;
+			return joaat("ZONE_STRAWBERRY");
 		case joaat("BLACKWATER"):
-			return -2142170718;
+			return joaat("ZONE_BLACKWATER");
 		case joaat("EMERALD"):
-			return -652262915;
+			return joaat("ZONE_EMERALD_RANCH");
 		case joaat("VALENTINE"):
-			return 1109427018;
+			return joaat("ZONE_VALENTINE");
 		case joaat("ANNESBURG"):
-			return -1353234788;
+			return joaat("ZONE_ANNESBURG");
 		case joaat("VANHORN"):
-			return -1965958161;
+			return joaat("ZONE_VAN_HORN_TRADING_POST");
 		case joaat("RHODES"):
-			return -1059106609;
+			return joaat("ZONE_RHODES");
 		case joaat("ARMADILLO"):
-			return -1119990720;
+			return joaat("ZONE_ARMADILLO");
 		case joaat("TUMBLEWEED"):
-			return 539298361;
+			return joaat("ZONE_TUMBLEWEED");
 		default:
 			break;
 	}
@@ -942,7 +942,7 @@ int func_23(int iParam0)
 
 int func_24()
 {
-	return 1109427018;
+	return joaat("ZONE_VALENTINE");
 }
 
 int func_25(int iParam0, int iParam1)
@@ -2292,11 +2292,11 @@ var func_72(int iParam0)
 
 	if (func_105(func_104(iParam0)))
 	{
-		iVar0 = -1100859510;
+		iVar0 = joaat("GIVER_NAME");
 	}
 	else
 	{
-		iVar0 = -107328778;
+		iVar0 = joaat("GIVER_STRANGER_NAME");
 	}
 	return &(((*Global_1116294)[iParam0 /*44*/])->f_11.f_7[func_106(iVar0, 1)]);
 }
@@ -3542,9 +3542,9 @@ int func_106(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1100859510:
+		case joaat("GIVER_NAME"):
 			return 0;
-		case -107328778:
+		case joaat("GIVER_STRANGER_NAME"):
 			return 1;
 		default:
 			break;
@@ -3710,33 +3710,33 @@ int func_117(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1100375982:
+		case joaat("WAR_VET"):
 			return joaat("GFH_WAR_VET");
-		case 734354744:
+		case joaat("FLACO_HERNANDEZ"):
 			return joaat("GFH_FLACO_HERNANDEZ");
-		case -8716208:
+		case joaat("JOSIAH_TRELAWNY"):
 			return joaat("GFH_JOSIAH_TRELAWNY");
 		case joaat("JOE"):
 			return joaat("GFH_JOE");
-		case -705903163:
+		case joaat("SEAN_MACQUIRE"):
 			return joaat("GFH_SEAN_MACQUIRE");
 		case joaat("BLACK_BELLE"):
 			return joaat("GFH_BLACK_BELLE");
 		case joaat("SADIE_ADLER"):
 			return joaat("GFH_SADIE_ADLER");
-		case 842749101:
+		case joaat("MAMMA_WATSON"):
 			return joaat("GFH_MAMMA_WATSON");
-		case -384872762:
+		case joaat("THOMAS_SKIFF_CAPTAIN"):
 			return joaat("GFH_THOMAS_SKIFF_CAPTAIN");
-		case 220113328:
+		case joaat("OBEDIAH_HINTON"):
 			return joaat("GFH_OBEDIAH_HINTON");
-		case 539824333:
+		case joaat("LANGTON"):
 			return joaat("GFH_LANGTON");
 		case joaat("BONNIE"):
 			return joaat("GFH_BONNIE");
 		case joaat("SHAKY"):
 			return joaat("GFH_SHAKY");
-		case -1601260627:
+		case joaat("WALLACE_TRAIN_CLERK"):
 			return joaat("GFH_TRAIN_CLERK_WALLACE");
 		default:
 			break;

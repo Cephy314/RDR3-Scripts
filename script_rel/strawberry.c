@@ -716,7 +716,7 @@ void func_14(int iParam0)
 	int iVar0[2];
 
 	iParam0 = iParam0;
-	iVar0[0] = 1207903970;
+	iVar0[0] = joaat("DOOR_STR_JAILPOST_INT_1");
 	iVar0[1] = 902070893;
 	func_50(26, &iVar0, 2);
 	if (func_20() == -1)
@@ -930,7 +930,7 @@ void func_27(int iParam0)
 	func_64(2, 476, bLocal_402, iParam0, bLocal_400, bLocal_401, 229376, -1082130432 /* Float: -1f */, 0, 0);
 	func_67(2, -1758.315f, -384.4998f, 156.6945f, 153.6275f);
 	func_65(2, -1400732786, 0, 0);
-	func_65(2, -579246725, 0, 0);
+	func_65(2, joaat("DOOR_STR_FRT_INT_02"), 0, 0);
 	func_64(9, 479, bLocal_406, iParam0, 0, 0, 2, -1082130432 /* Float: -1f */, 0, 0);
 	func_65(9, 1024651048, 0, 0);
 	func_65(9, -2089878557, 0, 0);
@@ -9492,7 +9492,7 @@ void func_301(int iParam0, bool bParam1)
 			func_422(1335986638, bParam1);
 			break;
 		case 14:
-			func_422(1407130373, bParam1);
+			func_422(joaat("DOOR_STR_WHORE_INT_2"), bParam1);
 			break;
 		case 16:
 			func_422(-1335647241, bParam1);
@@ -11551,7 +11551,7 @@ int func_378(int iParam0, int iParam1)
 		case 713940276:
 			return -1949892659;
 		case 1744281750:
-			return -663077666;
+			return joaat("META_OUTFIT_WARM_WEATHER_CASUAL");
 		case 283037683:
 			return 1996046145;
 		case -2051275045:
@@ -11565,7 +11565,7 @@ int func_378(int iParam0, int iParam1)
 		case -433615745:
 			return 643643053;
 		case 777603945:
-			return -328334844;
+			return joaat("META_OUTFIT_KIDNAPPED");
 		case -1668922931:
 			return -1915831038;
 		case -1341683964:
@@ -11611,7 +11611,7 @@ int func_378(int iParam0, int iParam1)
 				default:
 					break;
 			}
-			return -99272505;
+			return joaat("META_OUTFIT_WARM_WEATHER");
 		case 1205492208:
 			return 1598276604;
 		case 1199580439:
@@ -13633,7 +13633,7 @@ int func_473(int iParam0)
 		case -1862464078:
 			return 1895628185;
 		case -922193456:
-			return -99272505;
+			return joaat("META_OUTFIT_WARM_WEATHER");
 		case -2040275819:
 			return 464906090;
 		case -1114682645:
@@ -15426,27 +15426,27 @@ int func_525(int iParam0, int iParam1)
 		case 232:
 			return -2052774042;
 		case 233:
-			return -997150586;
+			return joaat("SLOTID_HORSE_BEDROLL");
 		case 234:
-			return -1189569496;
+			return joaat("SLOTID_HORSE_BLANKET");
 		case 235:
-			return 46488141;
+			return joaat("SLOTID_HORSE_CANTLE");
 		case 236:
-			return 1046566686;
+			return joaat("SLOTID_HORSE_FENDER");
 		case 237:
-			return 325139909;
+			return joaat("SLOTID_HORSE_HORN");
 		case 238:
-			return -1585141069;
+			return joaat("SLOTID_HORSE_INSURANCE");
 		case 239:
 			return 802754820;
 		case 240:
-			return 1415981582;
+			return joaat("SLOTID_HORSE_MANE");
 		case 241:
 			return -1886147520;
 		case 242:
-			return 654877947;
+			return joaat("SLOTID_HORSE_REINS");
 		case 243:
-			return -415648720;
+			return joaat("SLOTID_HORSE_SADDLE");
 		case 244:
 			return 1221327846;
 		case 245:
@@ -15468,15 +15468,15 @@ int func_525(int iParam0, int iParam1)
 		case 253:
 			return -279722001;
 		case 254:
-			return 1310070322;
+			return joaat("SLOTID_HORSE_SADDLEBAG");
 		case 255:
 			return 724026534;
 		case 256:
-			return 137387616;
+			return joaat("SLOTID_HORSE_SEAT");
 		case 257:
-			return -653439684;
+			return joaat("SLOTID_HORSE_SEX");
 		case 258:
-			return 1376835592;
+			return joaat("SLOTID_HORSE_SKIRT");
 		case 259:
 			return -1824203570;
 		case 260:
@@ -15488,9 +15488,9 @@ int func_525(int iParam0, int iParam1)
 		case 263:
 			return 1167442289;
 		case 264:
-			return 986998820;
+			return joaat("SLOTID_HORSE_STIRRUP");
 		case 265:
-			return -2119169513;
+			return joaat("SLOTID_HORSE_TAIL");
 		case 266:
 			return -2015960939;
 		case 267:

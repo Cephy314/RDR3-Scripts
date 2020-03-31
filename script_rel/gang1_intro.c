@@ -1177,8 +1177,8 @@ int func_29(int iParam0)
 	func_141(iParam0, 1, func_138(0, 2), "ABIGAILROBERTS");
 	func_141(iParam0, 2, func_138(0, 6), "MRPEARSON");
 	func_142(&(iParam0->f_958.f_1771), &(uLocal_14[0]), "SADIE_ADLER", 0);
-	func_143(675165849, 1, 0f, 0, 1, 0, 0, 0);
-	func_143(57906928, 0, -1f, 1, 1, 0, 0, 0);
+	func_143(joaat("DOOR_LAK_DOCKHOUSE_PROPS_19"), 1, 0f, 0, 1, 0, 0, 0);
+	func_143(joaat("DOOR_LAK_DOCKHOUSE_PROPS_20"), 0, -1f, 1, 1, 0, 0, 0);
 	func_143(-239733899, 1, 0f, 0, 1, 0, 0, 0);
 	func_144(80);
 	func_145(2);
@@ -1286,7 +1286,7 @@ void func_35(int iParam0)
 
 void func_36(int iParam0)
 {
-	func_143(675165849, 0, 0, 0, 1, 0, 0, 0);
+	func_143(joaat("DOOR_LAK_DOCKHOUSE_PROPS_19"), 0, 0, 0, 1, 0, 0, 0);
 	func_143(-239733899, 0, 0, 0, 1, 0, 0, 0);
 	if (func_45(&Global_1935630, 1048576))
 	{
@@ -9902,7 +9902,7 @@ void func_442(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 	int iVar2;
 
 	iVar2 = func_447(iParam1, 1);
-	if (!bParam2 && iVar2 == 1367443060)
+	if (!bParam2 && iVar2 == joaat("MP_COMPONENT_TYPE_BEARD"))
 	{
 		bParam3 = false;
 	}
@@ -9993,25 +9993,25 @@ int func_447(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return -1889597427;
+			return joaat("MP_COMPONENT_TYPE_HEAD");
 		case 1:
-			return -1130352927;
+			return joaat("MP_COMPONENT_TYPE_HAIR");
 		case 2:
-			return 389988485;
+			return joaat("MP_COMPONENT_TYPE_EYES");
 		case 3:
-			return 1780904876;
+			return joaat("MP_COMPONENT_TYPE_TEETH");
 		case 4:
-			return 1367443060;
+			return joaat("MP_COMPONENT_TYPE_BEARD");
 		case 5:
-			return -1506259487;
+			return joaat("MP_COMPONENT_TYPE_BEARDS_CHIN");
 		case 6:
-			return -676503695;
+			return joaat("MP_COMPONENT_TYPE_BEARDS_CHOPS");
 		case 7:
-			return 383349088;
+			return joaat("MP_COMPONENT_TYPE_BEARDS_MUSTACHE");
 		case 8:
-			return -1292426046;
+			return joaat("MP_COMPONENT_TYPE_UPPER_BODY");
 		case 9:
-			return 1422688607;
+			return joaat("MP_COMPONENT_TYPE_LOWER_BODY");
 		case 10:
 			return 1108822547;
 		case 11:
@@ -10041,15 +10041,15 @@ int func_447(int iParam0, int iParam1)
 		case 23:
 			return 1145151482;
 		case 24:
-			return -1176744536;
+			return joaat("MP_COMPONENT_TYPE_SATCHEL");
 		case 25:
-			return 673166414;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_1");
 		case 26:
-			return -207860920;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_2");
 		case 27:
-			return 99217379;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_3");
 		case 28:
-			return -735900586;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_4");
 		case 29:
 			return -426430150;
 		case 30:
@@ -10265,13 +10265,13 @@ int func_456(int iParam0, int iParam1)
 	{
 		case -1944638739:
 			return 36;
-		case -1889597427:
+		case joaat("MP_COMPONENT_TYPE_HEAD"):
 			return 0;
 		case -1884748965:
 			return 32;
 		case -1586649372:
 			return 33;
-		case -1506259487:
+		case joaat("MP_COMPONENT_TYPE_BEARDS_CHIN"):
 			return 5;
 		case -1505978566:
 			return 22;
@@ -10279,21 +10279,21 @@ int func_456(int iParam0, int iParam1)
 			return 38;
 		case -1364808185:
 			return 19;
-		case -1292426046:
+		case joaat("MP_COMPONENT_TYPE_UPPER_BODY"):
 			return 8;
 		case -1197751823:
 			return 20;
-		case -1176744536:
+		case joaat("MP_COMPONENT_TYPE_SATCHEL"):
 			return 24;
 		case -1130865351:
 			return 31;
-		case -1130352927:
+		case joaat("MP_COMPONENT_TYPE_HAIR"):
 			return 1;
 		case -893163968:
 			return 17;
-		case -735900586:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_4"):
 			return 28;
-		case -676503695:
+		case joaat("MP_COMPONENT_TYPE_BEARDS_CHOPS"):
 			return 6;
 		case -450913544:
 			return 18;
@@ -10303,17 +10303,17 @@ int func_456(int iParam0, int iParam1)
 			return 39;
 		case -338487716:
 			return 11;
-		case -207860920:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_2"):
 			return 26;
-		case 99217379:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_3"):
 			return 27;
 		case 304805134:
 			return 21;
-		case 383349088:
+		case joaat("MP_COMPONENT_TYPE_BEARDS_MUSTACHE"):
 			return 7;
-		case 389988485:
+		case joaat("MP_COMPONENT_TYPE_EYES"):
 			return 2;
-		case 673166414:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_1"):
 			return 25;
 		case 788010710:
 			return 34;
@@ -10323,9 +10323,9 @@ int func_456(int iParam0, int iParam1)
 			return 23;
 		case 1250092473:
 			return 16;
-		case 1367443060:
+		case joaat("MP_COMPONENT_TYPE_BEARD"):
 			return 4;
-		case 1422688607:
+		case joaat("MP_COMPONENT_TYPE_LOWER_BODY"):
 			return 9;
 		case 1600962399:
 			return 13;
@@ -10333,7 +10333,7 @@ int func_456(int iParam0, int iParam1)
 			return 15;
 		case 1742327865:
 			return 12;
-		case 1780904876:
+		case joaat("MP_COMPONENT_TYPE_TEETH"):
 			return 3;
 		case 1788623170:
 			return 30;
@@ -18513,7 +18513,7 @@ int func_756(int iParam0)
 		iParam0 = func_840();
 	}
 	iVar0 = 0;
-	if (iParam0 == 24043185)
+	if (iParam0 == joaat("MPC_PLAYER_TYPE_MP_FEMALE"))
 	{
 		iVar0 = 1;
 	}
@@ -18559,10 +18559,10 @@ int func_759(int iParam0, int iParam1, int iParam2, bool bParam3)
 	{
 		switch (iParam1)
 		{
-			case 673166414:
+			case joaat("MP_COMPONENT_TYPE_LOADOUT_1"):
 				iVar0++;
 				break;
-			case -207860920:
+			case joaat("MP_COMPONENT_TYPE_LOADOUT_2"):
 				iVar0++;
 				break;
 		}
@@ -19790,7 +19790,7 @@ int func_777(int iParam0, int iParam1)
 		case 713940276:
 			return -1949892659;
 		case 1744281750:
-			return -663077666;
+			return joaat("META_OUTFIT_WARM_WEATHER_CASUAL");
 		case 283037683:
 			return 1996046145;
 		case -2051275045:
@@ -19804,7 +19804,7 @@ int func_777(int iParam0, int iParam1)
 		case -433615745:
 			return 643643053;
 		case 777603945:
-			return -328334844;
+			return joaat("META_OUTFIT_KIDNAPPED");
 		case -1668922931:
 			return -1915831038;
 		case -1341683964:
@@ -19850,7 +19850,7 @@ int func_777(int iParam0, int iParam1)
 				default:
 					break;
 			}
-			return -99272505;
+			return joaat("META_OUTFIT_WARM_WEATHER");
 		case 1205492208:
 			return 1598276604;
 		case 1199580439:
@@ -22314,27 +22314,27 @@ int func_826(int iParam0, int iParam1)
 		case 232:
 			return -2052774042;
 		case 233:
-			return -997150586;
+			return joaat("SLOTID_HORSE_BEDROLL");
 		case 234:
-			return -1189569496;
+			return joaat("SLOTID_HORSE_BLANKET");
 		case 235:
-			return 46488141;
+			return joaat("SLOTID_HORSE_CANTLE");
 		case 236:
-			return 1046566686;
+			return joaat("SLOTID_HORSE_FENDER");
 		case 237:
-			return 325139909;
+			return joaat("SLOTID_HORSE_HORN");
 		case 238:
-			return -1585141069;
+			return joaat("SLOTID_HORSE_INSURANCE");
 		case 239:
 			return 802754820;
 		case 240:
-			return 1415981582;
+			return joaat("SLOTID_HORSE_MANE");
 		case 241:
 			return -1886147520;
 		case 242:
-			return 654877947;
+			return joaat("SLOTID_HORSE_REINS");
 		case 243:
-			return -415648720;
+			return joaat("SLOTID_HORSE_SADDLE");
 		case 244:
 			return 1221327846;
 		case 245:
@@ -22356,15 +22356,15 @@ int func_826(int iParam0, int iParam1)
 		case 253:
 			return -279722001;
 		case 254:
-			return 1310070322;
+			return joaat("SLOTID_HORSE_SADDLEBAG");
 		case 255:
 			return 724026534;
 		case 256:
-			return 137387616;
+			return joaat("SLOTID_HORSE_SEAT");
 		case 257:
-			return -653439684;
+			return joaat("SLOTID_HORSE_SEX");
 		case 258:
-			return 1376835592;
+			return joaat("SLOTID_HORSE_SKIRT");
 		case 259:
 			return -1824203570;
 		case 260:
@@ -22376,9 +22376,9 @@ int func_826(int iParam0, int iParam1)
 		case 263:
 			return 1167442289;
 		case 264:
-			return 986998820;
+			return joaat("SLOTID_HORSE_STIRRUP");
 		case 265:
-			return -2119169513;
+			return joaat("SLOTID_HORSE_TAIL");
 		case 266:
 			return -2015960939;
 		case 267:
@@ -23514,7 +23514,7 @@ int func_862(int iParam0)
 		case -1862464078:
 			return 1895628185;
 		case -922193456:
-			return -99272505;
+			return joaat("META_OUTFIT_WARM_WEATHER");
 		case -2040275819:
 			return 464906090;
 		case -1114682645:
@@ -23915,7 +23915,7 @@ int func_884(float fParam0)
 
 bool func_885()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 bool func_886(int iParam0)

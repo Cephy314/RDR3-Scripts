@@ -6170,7 +6170,7 @@ int func_230(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, in
 			}
 			else if (fParam7 >= 30f && fParam7 < 50f)
 			{
-				iParam5 = 2001176446;
+				iParam5 = joaat("SONAR_OVERHEARD_BEAT_BIG");
 			}
 			else
 			{

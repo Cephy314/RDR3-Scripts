@@ -838,7 +838,7 @@ void func_52(var uParam0, var uParam1)
 	bool bVar2;
 	bool bVar3;
 
-	iVar0 = func_71(1884341302, PLAYER::PLAYER_ID(), 0, 1);
+	iVar0 = func_71(joaat("CAMP_RAID"), PLAYER::PLAYER_ID(), 0, 1);
 	if (!func_72(iVar0))
 	{
 		func_49(uParam0, 2);

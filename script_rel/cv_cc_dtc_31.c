@@ -15577,7 +15577,7 @@ int func_450(int iParam0, int iParam1)
 		case 713940276:
 			return -1949892659;
 		case 1744281750:
-			return -663077666;
+			return joaat("META_OUTFIT_WARM_WEATHER_CASUAL");
 		case 283037683:
 			return 1996046145;
 		case -2051275045:
@@ -15591,7 +15591,7 @@ int func_450(int iParam0, int iParam1)
 		case -433615745:
 			return 643643053;
 		case 777603945:
-			return -328334844;
+			return joaat("META_OUTFIT_KIDNAPPED");
 		case -1668922931:
 			return -1915831038;
 		case -1341683964:
@@ -15637,7 +15637,7 @@ int func_450(int iParam0, int iParam1)
 				default:
 					break;
 			}
-			return -99272505;
+			return joaat("META_OUTFIT_WARM_WEATHER");
 		case 1205492208:
 			return 1598276604;
 		case 1199580439:
@@ -16364,7 +16364,7 @@ int func_468(int iParam0)
 		case -1862464078:
 			return 1895628185;
 		case -922193456:
-			return -99272505;
+			return joaat("META_OUTFIT_WARM_WEATHER");
 		case -2040275819:
 			return 464906090;
 		case -1114682645:
@@ -17233,17 +17233,17 @@ int func_480(int iParam0, int iParam1)
 			return 24047176;
 			return -1561999014;
 			return -2052774042;
-			return -997150586;
-			return -1189569496;
-			return 46488141;
-			return 1046566686;
-			return 325139909;
-			return -1585141069;
+			return joaat("SLOTID_HORSE_BEDROLL");
+			return joaat("SLOTID_HORSE_BLANKET");
+			return joaat("SLOTID_HORSE_CANTLE");
+			return joaat("SLOTID_HORSE_FENDER");
+			return joaat("SLOTID_HORSE_HORN");
+			return joaat("SLOTID_HORSE_INSURANCE");
 			return 802754820;
-			return 1415981582;
+			return joaat("SLOTID_HORSE_MANE");
 			return -1886147520;
-			return 654877947;
-			return -415648720;
+			return joaat("SLOTID_HORSE_REINS");
+			return joaat("SLOTID_HORSE_SADDLE");
 			return 1221327846;
 			return 923162715;
 			return 625423581;
@@ -17254,18 +17254,18 @@ int func_480(int iParam0, int iParam1)
 			return 1886178087;
 			return 1587783573;
 			return -279722001;
-			return 1310070322;
+			return joaat("SLOTID_HORSE_SADDLEBAG");
 			return 724026534;
-			return 137387616;
-			return -653439684;
-			return 1376835592;
+			return joaat("SLOTID_HORSE_SEAT");
+			return joaat("SLOTID_HORSE_SEX");
+			return joaat("SLOTID_HORSE_SKIRT");
 			return -1824203570;
 			return -1654197998;
 			return 798987653;
 			return 976923323;
 			return 1167442289;
-			return 986998820;
-			return -2119169513;
+			return joaat("SLOTID_HORSE_STIRRUP");
+			return joaat("SLOTID_HORSE_TAIL");
 			return -2015960939;
 			return -1287636759;
 			return -706917073;

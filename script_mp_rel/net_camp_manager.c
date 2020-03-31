@@ -4664,136 +4664,136 @@ int func_204(int iParam0, bool bParam1, bool bParam2)
 {
 	switch (iParam0)
 	{
-		case -682748:
+		case joaat("GRIZZLIES_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 807049026;
+					return joaat("POSSE_LEADER_CAMP_GRIZZLIES");
 				}
-				return 1877266410;
+				return joaat("POSSE_MEMBER_CAMP_GRIZZLIES");
 			}
-			return -1609475916;
-		case 1357161730:
+			return joaat("POSSE_RIVAL_CAMP_GRIZZLIES");
+		case joaat("BAYOU_NAWAS_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 1322315207;
+					return joaat("POSSE_LEADER_CAMP_BAYOU");
 				}
-				return -690230539;
+				return joaat("POSSE_MEMBER_CAMP_BAYOU");
 			}
-			return -1621660129;
-		case 1581179681:
+			return joaat("POSSE_RIVAL_CAMP_BAYOU");
+		case joaat("BIG_VALLEY_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 890534941;
+					return joaat("POSSE_LEADER_CAMP_BIGVALLEY");
 				}
-				return 353565276;
+				return joaat("POSSE_MEMBER_CAMP_BIGVALLEY");
 			}
-			return -713543329;
-		case -215258135:
+			return joaat("POSSE_RIVAL_CAMP_BIGVALLEY");
+		case joaat("CHOLLA_SPRINGS_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return -327090397;
+					return joaat("POSSE_LEADER_CAMP_CHOLLASPRINGS");
 				}
-				return -1640183015;
+				return joaat("POSSE_MEMBER_CAMP_CHOLLASPRINGS");
 			}
-			return 321465645;
-		case -987049424:
+			return joaat("POSSE_RIVAL_CAMP_CHOLLASPRINGS");
+		case joaat("CUMBERLAND_FOREST_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return -901488938;
+					return joaat("POSSE_LEADER_CAMP_CUMBERLAND");
 				}
-				return 1203157087;
+				return joaat("POSSE_MEMBER_CAMP_CUMBERLAND");
 			}
-			return 1280275183;
-		case 892234183:
+			return joaat("POSSE_RIVAL_CAMP_CUMBERLAND");
+		case joaat("GAPTOOTH_RIDGE_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 157782508;
+					return joaat("POSSE_LEADER_CAMP_GAPTOOTH");
 				}
-				return -1431438421;
+				return joaat("POSSE_MEMBER_CAMP_GAPTOOTH");
 			}
-			return 839992260;
-		case -1554232707:
+			return joaat("POSSE_RIVAL_CAMP_GAPTOOTH");
+		case joaat("GREAT_PLAINS_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return -1339543530;
+					return joaat("POSSE_LEADER_CAMP_GREATPLAINS");
 				}
-				return -2100701457;
+				return joaat("POSSE_MEMBER_CAMP_GREATPLAINS");
 			}
-			return 1585227357;
-		case 1538293636:
+			return joaat("POSSE_RIVAL_CAMP_GREATPLAINS");
+		case joaat("HEARTLAND_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return -897447261;
+					return joaat("POSSE_LEADER_CAMP_HEARTLANDS");
 				}
-				return -306961178;
+				return joaat("POSSE_MEMBER_CAMP_HEARTLANDS");
 			}
-			return -706039225;
-		case -1992167326:
+			return joaat("POSSE_RIVAL_CAMP_HEARTLANDS");
+		case joaat("HENNIGANS_STEAD_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return -354997135;
+					return joaat("POSSE_LEADER_CAMP_HENNIGANS");
 				}
-				return -2097555655;
+				return joaat("POSSE_MEMBER_CAMP_HENNIGANS");
 			}
-			return -1123163224;
-		case -1884014371:
+			return joaat("POSSE_RIVAL_CAMP_HENNIGANS");
+		case joaat("RIO_BRAVO_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 1543402390;
+					return joaat("POSSE_LEADER_CAMP_RIOBRAVO");
 				}
-				return 753475365;
+				return joaat("POSSE_MEMBER_CAMP_RIOBRAVO");
 			}
-			return -864497764;
-		case -1871413878:
+			return joaat("POSSE_RIVAL_CAMP_RIOBRAVO");
+		case joaat("ROANOKE_RIDGE_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 646196791;
+					return joaat("POSSE_LEADER_CAMP_ROANOKE");
 				}
-				return 1650238062;
+				return joaat("POSSE_MEMBER_CAMP_ROANOKE");
 			}
-			return -743114058;
-		case 1483778247:
+			return joaat("POSSE_RIVAL_CAMP_ROANOKE");
+		case joaat("SCARLETT_MEADOWS_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 706692807;
+					return joaat("POSSE_LEADER_CAMP_SCARLETT");
 				}
-				return -61157504;
+				return joaat("POSSE_MEMBER_CAMP_SCARLETT");
 			}
-			return 381776905;
-		case -724534761:
+			return joaat("POSSE_RIVAL_CAMP_SCARLETT");
+		case joaat("TALL_TREES_CAMP"):
 			if (bParam1)
 			{
 				if (bParam2)
 				{
-					return 84763048;
+					return joaat("POSSE_LEADER_CAMP_TALLTREES");
 				}
-				return -61157504;
+				return joaat("POSSE_MEMBER_CAMP_SCARLETT");
 			}
-			return 381776905;
+			return joaat("POSSE_RIVAL_CAMP_SCARLETT");
 		default:
 			break;
 	}
@@ -5191,7 +5191,7 @@ int func_233(int iParam0, int iParam1)
 	}
 	if (func_56())
 	{
-		if (!UNLOCK::_UNLOCK_IS_UNLOCKED(-75008140))
+		if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_POSSE_CAMP")))
 		{
 			return 0;
 		}
@@ -7669,19 +7669,19 @@ int func_303(int iParam0)
 
 	switch (iParam0)
 	{
-		case -1992167326:
-		case -1884014371:
-		case -1871413878:
-		case -1554232707:
-		case -987049424:
-		case -724534761:
-		case -215258135:
-		case -682748:
-		case 892234183:
-		case 1357161730:
-		case 1483778247:
-		case 1538293636:
-		case 1581179681:
+		case joaat("HENNIGANS_STEAD_CAMP"):
+		case joaat("RIO_BRAVO_CAMP"):
+		case joaat("ROANOKE_RIDGE_CAMP"):
+		case joaat("GREAT_PLAINS_CAMP"):
+		case joaat("CUMBERLAND_FOREST_CAMP"):
+		case joaat("TALL_TREES_CAMP"):
+		case joaat("CHOLLA_SPRINGS_CAMP"):
+		case joaat("GRIZZLIES_CAMP"):
+		case joaat("GAPTOOTH_RIDGE_CAMP"):
+		case joaat("BAYOU_NAWAS_CAMP"):
+		case joaat("SCARLETT_MEADOWS_CAMP"):
+		case joaat("HEARTLAND_CAMP"):
+		case joaat("BIG_VALLEY_CAMP"):
 			iVar0 = func_433(iParam0, 1);
 			return &(Global_1131092->f_361[iVar0]);
 		default:
@@ -7836,31 +7836,31 @@ int func_308(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return -682748;
+			return joaat("GRIZZLIES_CAMP");
 		case 1:
-			return 1357161730;
+			return joaat("BAYOU_NAWAS_CAMP");
 		case 2:
-			return 1581179681;
+			return joaat("BIG_VALLEY_CAMP");
 		case 3:
-			return -215258135;
+			return joaat("CHOLLA_SPRINGS_CAMP");
 		case 4:
-			return -987049424;
+			return joaat("CUMBERLAND_FOREST_CAMP");
 		case 5:
-			return 892234183;
+			return joaat("GAPTOOTH_RIDGE_CAMP");
 		case 6:
-			return -1554232707;
+			return joaat("GREAT_PLAINS_CAMP");
 		case 7:
-			return 1538293636;
+			return joaat("HEARTLAND_CAMP");
 		case 8:
-			return -1992167326;
+			return joaat("HENNIGANS_STEAD_CAMP");
 		case 9:
-			return -1884014371;
+			return joaat("RIO_BRAVO_CAMP");
 		case 10:
-			return -1871413878;
+			return joaat("ROANOKE_RIDGE_CAMP");
 		case 11:
-			return 1483778247;
+			return joaat("SCARLETT_MEADOWS_CAMP");
 		case 12:
-			return -724534761;
+			return joaat("TALL_TREES_CAMP");
 		default:
 			break;
 	}
@@ -8690,31 +8690,31 @@ char* func_336(int iParam0, bool bParam1)
 	{
 		switch (iParam0)
 		{
-			case -682748:
+			case joaat("GRIZZLIES_CAMP"):
 				return "GC_GRIZZLIES_DIST";
-			case 1357161730:
+			case joaat("BAYOU_NAWAS_CAMP"):
 				return "GC_BAYOU_DIST";
-			case 1581179681:
+			case joaat("BIG_VALLEY_CAMP"):
 				return "GC_BIG_VALLEY_DIST";
-			case -987049424:
+			case joaat("CUMBERLAND_FOREST_CAMP"):
 				return "GC_CUMBERLAND_FOREST_DIST";
-			case -1554232707:
+			case joaat("GREAT_PLAINS_CAMP"):
 				return "GC_GREAT_PLAINS_DIST";
-			case 1538293636:
+			case joaat("HEARTLAND_CAMP"):
 				return "GC_HEARTLANDS_DIST";
-			case -1871413878:
+			case joaat("ROANOKE_RIDGE_CAMP"):
 				return "GC_ROANOKE_RIDGE_DIST";
-			case 1483778247:
+			case joaat("SCARLETT_MEADOWS_CAMP"):
 				return "GC_SCARLETT_MEADOWS_DIST";
-			case -724534761:
+			case joaat("TALL_TREES_CAMP"):
 				return "GC_TALL_TREES_DIST";
-			case 892234183:
+			case joaat("GAPTOOTH_RIDGE_CAMP"):
 				return "GC_GAPTOOTH_RIDGE_DIST";
-			case -1884014371:
+			case joaat("RIO_BRAVO_CAMP"):
 				return "GC_RIO_BRAVO_DIST";
-			case -215258135:
+			case joaat("CHOLLA_SPRINGS_CAMP"):
 				return "GC_CHOLLA_SPRINGS_DIST";
-			case -1992167326:
+			case joaat("HENNIGANS_STEAD_CAMP"):
 				return "GC_HENNIGANS_STEAD_DIST";
 			default:
 				break;
@@ -8724,31 +8724,31 @@ char* func_336(int iParam0, bool bParam1)
 	{
 		switch (iParam0)
 		{
-			case -682748:
+			case joaat("GRIZZLIES_CAMP"):
 				return "GRIZZLIES_DIST";
-			case 1357161730:
+			case joaat("BAYOU_NAWAS_CAMP"):
 				return "BAY";
-			case 1581179681:
+			case joaat("BIG_VALLEY_CAMP"):
 				return "BGV";
-			case -987049424:
+			case joaat("CUMBERLAND_FOREST_CAMP"):
 				return "CML";
-			case -1554232707:
+			case joaat("GREAT_PLAINS_CAMP"):
 				return "GRT";
-			case 1538293636:
+			case joaat("HEARTLAND_CAMP"):
 				return "HRT";
-			case -1871413878:
+			case joaat("ROANOKE_RIDGE_CAMP"):
 				return "ROA";
-			case 1483778247:
+			case joaat("SCARLETT_MEADOWS_CAMP"):
 				return "SCM";
-			case -724534761:
+			case joaat("TALL_TREES_CAMP"):
 				return "TAL";
-			case 892234183:
+			case joaat("GAPTOOTH_RIDGE_CAMP"):
 				return "GAP";
-			case -1884014371:
+			case joaat("RIO_BRAVO_CAMP"):
 				return "RIO";
-			case -215258135:
+			case joaat("CHOLLA_SPRINGS_CAMP"):
 				return "CHO";
-			case -1992167326:
+			case joaat("HENNIGANS_STEAD_CAMP"):
 				return "HEN";
 			default:
 				break;
@@ -8847,9 +8847,9 @@ int func_346(int iParam0)
 	switch (iParam0)
 	{
 		case 4:
-			return -1975753417;
+			return joaat("FEE_CAMP_PLACEMENT_SMALL");
 		case 7:
-			return -142724881;
+			return joaat("FEE_CAMP_PLACEMENT_LARGE");
 		default:
 			break;
 	}
@@ -9037,9 +9037,9 @@ int func_355(int iParam0)
 	switch (iParam0)
 	{
 		case 4:
-			return 1082007132;
+			return joaat("FEE_CAMP_DAILY_SMALL");
 		case 7:
-			return -1321348724;
+			return joaat("FEE_CAMP_DAILY_LARGE");
 		default:
 			break;
 	}
@@ -11231,31 +11231,31 @@ int func_433(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1992167326:
+		case joaat("HENNIGANS_STEAD_CAMP"):
 			return 8;
-		case -1884014371:
+		case joaat("RIO_BRAVO_CAMP"):
 			return 9;
-		case -1871413878:
+		case joaat("ROANOKE_RIDGE_CAMP"):
 			return 10;
-		case -1554232707:
+		case joaat("GREAT_PLAINS_CAMP"):
 			return 6;
-		case -987049424:
+		case joaat("CUMBERLAND_FOREST_CAMP"):
 			return 4;
-		case -724534761:
+		case joaat("TALL_TREES_CAMP"):
 			return 12;
-		case -215258135:
+		case joaat("CHOLLA_SPRINGS_CAMP"):
 			return 3;
-		case -682748:
+		case joaat("GRIZZLIES_CAMP"):
 			return 0;
-		case 892234183:
+		case joaat("GAPTOOTH_RIDGE_CAMP"):
 			return 5;
-		case 1357161730:
+		case joaat("BAYOU_NAWAS_CAMP"):
 			return 1;
-		case 1483778247:
+		case joaat("SCARLETT_MEADOWS_CAMP"):
 			return 11;
-		case 1538293636:
+		case joaat("HEARTLAND_CAMP"):
 			return 7;
-		case 1581179681:
+		case joaat("BIG_VALLEY_CAMP"):
 			return 2;
 		default:
 			break;
@@ -11379,7 +11379,7 @@ int func_440(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -11531,67 +11531,67 @@ int func_446(int iParam0)
 		case 19:
 			return -936216634;
 		case 20:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 21:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 22:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 23:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 24:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 25:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 26:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 28:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 29:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 33:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 34:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 30:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 32:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 31:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 35:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 36:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 37:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 38:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 39:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 27:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 51:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 52:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 40:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 41:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 42:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 47:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 48:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 43:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 44:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 49:
 			return -691985497;
 		case 50:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 45:
 			return -1923570663;
 		case 53:
@@ -11635,7 +11635,7 @@ int func_446(int iParam0)
 		case 96:
 			return 776060936;
 		case 97:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		default:
 			break;
 	}

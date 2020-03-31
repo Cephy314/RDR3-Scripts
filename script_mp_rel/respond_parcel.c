@@ -2092,7 +2092,7 @@ void func_79(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4,
 	{
 		return;
 	}
-	else if (iParam0 == 1807503187)
+	else if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -2754,8 +2754,8 @@ void func_98(int iParam0)
 			func_59(678, 0);
 			break;
 		case 23:
-			UNLOCK::_UNLOCK_SET_UNLOCKED(-200143754, true);
-			UNLOCK::_UNLOCK_SET_VISIBLE(-200143754, true);
+			UNLOCK::_UNLOCK_SET_UNLOCKED(joaat("SP_WEAPON_DUALWIELD"), true);
+			UNLOCK::_UNLOCK_SET_VISIBLE(joaat("SP_WEAPON_DUALWIELD"), true);
 			WEAPON::_0x83B8D50EB9446BBA(PLAYER::PLAYER_PED_ID(), 1);
 			break;
 		case 47:
@@ -4762,7 +4762,7 @@ void func_187(int iParam0, int iParam1)
 
 bool func_188()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 bool func_189()
@@ -4859,7 +4859,7 @@ int func_194(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -4956,7 +4956,7 @@ struct<4> func_198(int iParam0, bool bParam1)
 void func_199(var uParam0)
 {
 	func_130(uParam0, joaat("MULTIPLAYER_GAME"));
-	if (func_232() == 2026485318)
+	if (func_232() == joaat("MPC_PLAYER_TYPE_MP_MALE"))
 	{
 		func_130(uParam0, joaat("LOOTER_PED_IS_MALE"));
 	}

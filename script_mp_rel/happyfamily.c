@@ -724,7 +724,7 @@ int func_40(int iParam0)
 	{
 		if (bLocal_18)
 		{
-			func_61(1510914117, 1);
+			func_61(joaat("DOOR_SHACK_HF_SIDE"), 1);
 		}
 	}
 	return 0;

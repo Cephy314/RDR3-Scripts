@@ -2199,13 +2199,13 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_127[0 /*33*/])->f_1 = joaat("MP_GUNVOUTD3_MALES_01");
 					(uParam0->f_127[0 /*33*/])->f_9 = { -2693.12f, -2180.7f, 80.02f };
 					(uParam0->f_127[0 /*33*/])->f_12 = { 0f, 0f, 277f };
-					(uParam0->f_127[0 /*33*/])->f_2 = 795148174;
+					(uParam0->f_127[0 /*33*/])->f_2 = joaat("MP_GUNVOUTD3_DEPUTY");
 					StringCopy(&((uParam0->f_127[0 /*33*/])->f_19.f_1), "DEPUTY", 24);
 					(uParam0->f_127[0 /*33*/])->f_19 = 0;
 					(uParam0->f_127[1 /*33*/])->f_1 = joaat("MP_U_M_O_BLWPOLICECHIEF_01");
 					(uParam0->f_127[1 /*33*/])->f_9 = { -2692.15f, -2181.35f, 80f };
 					(uParam0->f_127[1 /*33*/])->f_12 = { 0f, 0f, 282f };
-					(uParam0->f_127[1 /*33*/])->f_2 = -405456199;
+					(uParam0->f_127[1 /*33*/])->f_2 = joaat("MP_GUNVOUTD3_01");
 					StringCopy(&((uParam0->f_127[1 /*33*/])->f_19.f_1), "Blackwater_Chief", 24);
 					(uParam0->f_127[1 /*33*/])->f_19 = 0;
 					(uParam0->f_127[2 /*33*/])->f_1 = joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY");

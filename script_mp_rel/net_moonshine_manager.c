@@ -1304,7 +1304,7 @@ int func_52(int iParam0, int iParam1, bool bParam2)
 
 int func_53()
 {
-	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(1212196772) || !UNLOCK::_UNLOCK_IS_UNLOCKED(-400403560))
+	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("ROLE_PROGRESSION_MOONSHINE_COOK_SETUP")) || !UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("ROLE_PROGRESSION_MOONSHINE_SUPPLIES_SETUP")))
 	{
 		return 0;
 	}
@@ -2644,9 +2644,9 @@ int func_113(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -1519264107;
+			return joaat("CUTSCENE_MPCGOI1");
 		case 2:
-			return -1349160228;
+			return joaat("CUTSCENE_MPCGOI2");
 		case 3:
 			return -732709691;
 		case 4:
@@ -2654,7 +2654,7 @@ int func_113(int iParam0)
 		case 5:
 			return -969278268;
 		case 6:
-			return 650135692;
+			return joaat("CUTSCENE_MPRM1");
 		default:
 			break;
 	}
@@ -2919,7 +2919,7 @@ int func_126()
 	{
 		return 1;
 	}
-	iVar0 = func_196(1427578635, PLAYER::PLAYER_ID(), 0, 1);
+	iVar0 = func_196(joaat("BOUNTY_PLAYER"), PLAYER::PLAYER_ID(), 0, 1);
 	if (func_197(iVar0))
 	{
 		return 1;
@@ -7099,15 +7099,15 @@ int func_307(int iParam0)
 		case 11:
 			return joaat("CHARACTER_RANK_TRADER");
 		case 13:
-			return 705255263 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_005");
 		case 14:
-			return -471215553 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_005");
 		case 15:
 			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
-			return 1479488426 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_006");
 		case 17:
-			return -170363364 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_006");
 		default:
 			break;
 	}

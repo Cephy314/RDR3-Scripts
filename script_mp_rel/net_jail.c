@@ -878,7 +878,7 @@ void func_24()
 			Local_182.f_13 = 269.3015f;
 			Local_182.f_14 = { -763.5278f, -1262.461f, 43.0233f };
 			Local_182.f_20 = -90f;
-			Local_182.f_5 = -2127191462;
+			Local_182.f_5 = joaat("DOOR_BLA_JAIL_INT_1");
 			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -761.6234f, -1263.575f, 43.7253f };
 			(Local_215[0 /*9*/])->f_1 = { -761.3599f, -1262.154f, 44.124f };
@@ -947,7 +947,7 @@ void func_24()
 			Local_182.f_13 = 225.7455f;
 			Local_182.f_14 = { -1812.01f, -351.921f, 160.4684f };
 			Local_182.f_20 = -25f;
-			Local_182.f_5 = 1207903970;
+			Local_182.f_5 = joaat("DOOR_STR_JAILPOST_INT_1");
 			Local_182.f_21 = joaat("P_PILLOW01X");
 			Local_182.f_17 = { -1810.196f, -350.6658f, 161.1676f };
 			(Local_215[0 /*9*/])->f_1 = { -1809.129f, -350.83f, 161.5122f };
@@ -970,7 +970,7 @@ void func_24()
 			Local_182.f_13 = 186.6304f;
 			Local_182.f_14 = { -5529.914f, -2925.074f, -2.3601f };
 			Local_182.f_20 = -65f;
-			Local_182.f_5 = 831345624;
+			Local_182.f_5 = joaat("DOOR_TUM_02_JAIL_CELL");
 			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -5529.914f, -2925.074f, -2.3601f };
 			(Local_215[0 /*9*/])->f_1 = { -5528.064f, -2923.999f, -1.1571f };
@@ -993,7 +993,7 @@ void func_24()
 			Local_182.f_13 = 186.4208f;
 			Local_182.f_14 = { -272.0521f, 808.2583f, 118.3685f };
 			Local_182.f_20 = -170f;
-			Local_182.f_5 = 193903155;
+			Local_182.f_5 = joaat("DOOR_VAL_JAIL_CELL_03");
 			Local_182.f_21 = joaat("P_ABE_CABINET01");
 			Local_182.f_17 = { -272.0521f, 808.2583f, 118.3685f };
 			(Local_215[0 /*9*/])->f_1 = { -275.3474f, 807.1092f, 119.2897f };
@@ -4923,25 +4923,25 @@ int func_211(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 708211766:
+		case joaat("MPC_SYSTEM_TAG_INFO_HEAD_APPAREL"):
 			return 1;
-		case -1815871154:
+		case joaat("MPC_SYSTEM_TAG_INFO_CHEST_APPAREL"):
 			return 2;
-		case 1053922635:
+		case joaat("MPC_SYSTEM_TAG_INFO_LEG_APPAREL"):
 			return 4;
-		case -1248203249:
+		case joaat("MPC_SYSTEM_TAG_INFO_APPAREL"):
 			return 8;
-		case -1275860049:
+		case joaat("MPC_SYSTEM_TAG_INFO_BODY"):
 			return 16;
-		case -473313046:
+		case joaat("MPC_SYSTEM_TAG_INFO_HEAD_FEATURES"):
 			return 32;
-		case 1009605579:
+		case joaat("MPC_SYSTEM_TAG_INFO_HAIR"):
 			return 64;
-		case -92538845:
+		case joaat("MPC_SYSTEM_TAG_INFO_UPPER_BODY"):
 			return 256;
-		case 350097565:
+		case joaat("MPC_SYSTEM_TAG_INFO_LOWER_BODY"):
 			return 512;
-		case 346761890:
+		case joaat("MPC_SYSTEM_TAG_INFO_HEAD_OVERLAY"):
 			return 1024;
 		case -915377750:
 			return 2048;
@@ -5252,7 +5252,7 @@ int func_222(int iParam0, int iParam1)
 	{
 		case -1944638739:
 			return 36;
-		case -1889597427:
+		case joaat("MP_COMPONENT_TYPE_HEAD"):
 			return 0;
 		case -1884748965:
 			return 32;
@@ -5264,21 +5264,21 @@ int func_222(int iParam0, int iParam1)
 			return 38;
 		case -1364808185:
 			return 19;
-		case -1292426046:
+		case joaat("MP_COMPONENT_TYPE_UPPER_BODY"):
 			return 8;
 		case -1197751823:
 			return 20;
-		case -1176744536:
+		case joaat("MP_COMPONENT_TYPE_SATCHEL"):
 			return 24;
 		case -1130865351:
 			return 31;
-		case -1130352927:
+		case joaat("MP_COMPONENT_TYPE_HAIR"):
 			return 1;
 		case -893163968:
 			return 17;
-		case -735900586:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_4"):
 			return 28;
-		case -676503695:
+		case joaat("MP_COMPONENT_TYPE_BEARDS_CHOPS"):
 			return 6;
 		case -450913544:
 			return 18;
@@ -5288,17 +5288,17 @@ int func_222(int iParam0, int iParam1)
 			return 39;
 		case -338487716:
 			return 11;
-		case -207860920:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_2"):
 			return 26;
-		case 99217379:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_3"):
 			return 27;
 		case 304805134:
 			return 21;
-		case 383349088:
+		case joaat("MP_COMPONENT_TYPE_BEARDS_MUSTACHE"):
 			return 7;
-		case 389988485:
+		case joaat("MP_COMPONENT_TYPE_EYES"):
 			return 2;
-		case 673166414:
+		case joaat("MP_COMPONENT_TYPE_LOADOUT_1"):
 			return 25;
 		case 735520874:
 			return 5;
@@ -5310,9 +5310,9 @@ int func_222(int iParam0, int iParam1)
 			return 23;
 		case 1250092473:
 			return 16;
-		case 1367443060:
+		case joaat("MP_COMPONENT_TYPE_BEARD"):
 			return 4;
-		case 1422688607:
+		case joaat("MP_COMPONENT_TYPE_LOWER_BODY"):
 			return 9;
 		case 1600962399:
 			return 13;
@@ -5320,7 +5320,7 @@ int func_222(int iParam0, int iParam1)
 			return 15;
 		case 1742327865:
 			return 12;
-		case 1780904876:
+		case joaat("MP_COMPONENT_TYPE_TEETH"):
 			return 3;
 		case 1788623170:
 			return 30;
@@ -5460,25 +5460,25 @@ int func_225(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return -1889597427;
+			return joaat("MP_COMPONENT_TYPE_HEAD");
 		case 1:
-			return -1130352927;
+			return joaat("MP_COMPONENT_TYPE_HAIR");
 		case 2:
-			return 389988485;
+			return joaat("MP_COMPONENT_TYPE_EYES");
 		case 3:
-			return 1780904876;
+			return joaat("MP_COMPONENT_TYPE_TEETH");
 		case 4:
-			return 1367443060;
+			return joaat("MP_COMPONENT_TYPE_BEARD");
 		case 5:
 			return 735520874;
 		case 6:
-			return -676503695;
+			return joaat("MP_COMPONENT_TYPE_BEARDS_CHOPS");
 		case 7:
-			return 383349088;
+			return joaat("MP_COMPONENT_TYPE_BEARDS_MUSTACHE");
 		case 8:
-			return -1292426046;
+			return joaat("MP_COMPONENT_TYPE_UPPER_BODY");
 		case 9:
-			return 1422688607;
+			return joaat("MP_COMPONENT_TYPE_LOWER_BODY");
 		case 10:
 			return 1108822547;
 		case 11:
@@ -5508,15 +5508,15 @@ int func_225(int iParam0, int iParam1)
 		case 23:
 			return 1145151482;
 		case 24:
-			return -1176744536;
+			return joaat("MP_COMPONENT_TYPE_SATCHEL");
 		case 25:
-			return 673166414;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_1");
 		case 26:
-			return -207860920;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_2");
 		case 27:
-			return 99217379;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_3");
 		case 28:
-			return -735900586;
+			return joaat("MP_COMPONENT_TYPE_LOADOUT_4");
 		case 29:
 			return -426430150;
 		case 30:

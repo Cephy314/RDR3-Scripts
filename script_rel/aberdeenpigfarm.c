@@ -1273,7 +1273,7 @@ void func_63()
 			{
 				return;
 			}
-			func_124((func_123(1731462646) + (Global_40.f_9422[0 /*7*/])->f_3), 0, 1065353216 /* Float: 1f */, 1, 0, 0, 1, 752097756);
+			func_124((func_123(joaat("ABERDEEN_HOME_ROBBERY_REWARD")) + (Global_40.f_9422[0 /*7*/])->f_3), 0, 1065353216 /* Float: 1f */, 1, 0, 0, 1, 752097756);
 			func_125(0);
 			MISC::_0xCC3EDC5614B03F61(38);
 			func_55(0, 2);
@@ -5528,7 +5528,7 @@ void func_257(char* sParam0, char* sParam1, int iParam2)
 
 bool func_258()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 void func_259(int iParam0)

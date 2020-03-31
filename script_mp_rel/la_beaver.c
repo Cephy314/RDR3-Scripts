@@ -758,43 +758,43 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			switch (iParam2)
 			{
 				case 0:
-					iParam0->f_5 = -1808627090;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_ROANOKE_RIDGE_1");
 					iParam0->f_11 = { 2150.374f, 1728.215f, 125.2313f };
 					break;
 				case 1:
-					iParam0->f_5 = -1563711584;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_ROANOKE_RIDGE_2");
 					iParam0->f_11 = { 2179.106f, -25.3714f, 51.3658f };
 					break;
 				case 2:
-					iParam0->f_5 = -717510681;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_BIG_VALLEY_1");
 					iParam0->f_11 = { -1055.963f, -794.308f, 59.2567f };
 					break;
 				case 3:
-					iParam0->f_5 = -2044065371;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_BIG_VALLEY_2");
 					iParam0->f_11 = { -1158.078f, -155.114f, 88.889f };
 					break;
 				case 4:
-					iParam0->f_5 = -1209537248;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_BIG_VALLEY_3");
 					iParam0->f_11 = { -1370.712f, -515.7384f, 125.267f };
 					break;
 				case 5:
-					iParam0->f_5 = 1714342319;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_BIG_VALLEY_4");
 					iParam0->f_11 = { -1029.465f, -492.4087f, 101.0615f };
 					break;
 				case 6:
-					iParam0->f_5 = 1269971654;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_HEARTLANDS_1");
 					iParam0->f_11 = { -319.5499f, 203.8464f, 62.1121f };
 					break;
 				case 7:
-					iParam0->f_5 = 720927063;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_HEARTLANDS_2");
 					iParam0->f_11 = { -513.8f, 345.2f, 49.8945f };
 					break;
 				case 8:
-					iParam0->f_5 = 1499128142;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_GREAT_PLAINS_1");
 					iParam0->f_11 = { -1234.665f, -1371.778f, 80.796f };
 					break;
 				case 9:
-					iParam0->f_5 = -1539691586;
+					iParam0->f_5 = joaat("BEAT_ANIMAL_ATTACK_GRIZZLIES_WEST_1");
 					iParam0->f_11 = { -1525.164f, 1722.86f, 239.152f };
 					break;
 			}
@@ -809,102 +809,102 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = 277430601;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_MACFARLANES");
 					iParam0->f_11 = { -1925.343f, -2119.336f, 52.16934f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = 1659133778;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_HEARTLANDS_1");
 					iParam0->f_11 = { 136.298f, 35.34337f, 101.2795f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = 1296650927;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_GRIZZLIES_1");
 					iParam0->f_11 = { -910.7408f, 860.8453f, 134.6651f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = 2115437634;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_ROANOKE_1");
 					iParam0->f_11 = { 2788.779f, 1077.284f, 57.99089f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = 1098622970;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_BAYOU_1");
 					iParam0->f_11 = { 1751.914f, -1117.739f, 40.70011f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = 393263596;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_SCARLETT_1");
 					iParam0->f_11 = { 1290.432f, -836.7289f, 77.47561f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = 189453630;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_CUMBERLAND_1");
 					iParam0->f_11 = { 308.1141f, 1187.807f, 180.1746f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = -98921343;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_STRAWBERRY_1");
 					iParam0->f_11 = { -1779.538f, -235.3894f, 181.2029f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = 6025033;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_PLAINS_1");
 					iParam0->f_11 = { -1290.399f, -1179.199f, 72.33453f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = -1060299979;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_TALL_TREES_1");
 					iParam0->f_11 = { -2306.89f, -1546.208f, 152.0187f };
 					break;
 				case 10:
 					func_67(iParam0);
-					iParam0->f_5 = 682088681;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_HENNIGANS_1");
 					iParam0->f_11 = { -2724.458f, -2521.524f, 64.76124f };
 					break;
 				case 11:
 					func_67(iParam0);
-					iParam0->f_5 = 1705841922;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_RIO_1");
 					iParam0->f_11 = { -4461.883f, -3271.474f, 14.54459f };
 					break;
 				case 12:
 					func_67(iParam0);
-					iParam0->f_5 = -301205165;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_CHOLLA_1");
 					iParam0->f_11 = { -4631.054f, -2738.483f, -12.13559f };
 					break;
 				case 13:
 					func_67(iParam0);
-					iParam0->f_5 = 1906160715;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_GAPTOOTH_1");
 					iParam0->f_11 = { -5678.259f, -3182.939f, -22.66476f };
 					break;
 				case 14:
 					func_67(iParam0);
-					iParam0->f_5 = -1129906020;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_THIEVES_1");
 					iParam0->f_11 = { -1688.868f, -2272.091f, 44.12061f };
 					break;
 				case 15:
 					func_67(iParam0);
-					iParam0->f_5 = 1592980994;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_GRIZZLIES_2");
 					iParam0->f_11 = { -1621.917f, 1628.208f, 235.9645f };
 					break;
 				case 16:
 					func_67(iParam0);
-					iParam0->f_5 = 686459378;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_GRIZZLIES_3");
 					iParam0->f_11 = { 420.3633f, 2020.91f, 230.4423f };
 					break;
 				case 17:
 					func_67(iParam0);
-					iParam0->f_5 = -259262381;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_VALENTINE_1");
 					iParam0->f_11 = { -517.4607f, 510.5349f, 102.2307f };
 					break;
 				case 18:
 					func_67(iParam0);
-					iParam0->f_5 = 1289806844;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_EMERALD_1");
 					iParam0->f_11 = { 1775.601f, 546.3866f, 106.6334f };
 					break;
 				case 19:
 					func_67(iParam0);
-					iParam0->f_5 = 347656238;
+					iParam0->f_5 = joaat("BEAT_ARROWHEAD_INJURY_BOLGER_1");
 					iParam0->f_11 = { 1612.415f, -1715.397f, 52.91364f };
 					break;
 			}
@@ -921,14 +921,14 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 2);
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
-					iParam0->f_5 = 1454566440;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_ROANOKE_RIDGE_1");
 					iParam0->f_11 = { 2252.035f, 1342.706f, 84.5573f };
 					break;
 				case 1:
 					func_68(iParam0, 2);
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
-					iParam0->f_5 = 1141360338;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_ROANOKE_RIDGE_2");
 					iParam0->f_11 = { 2280.7f, 1608.79f, 84.32f };
 					break;
 				case 2:
@@ -937,7 +937,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 2);
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
-					iParam0->f_5 = 844768119;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_ROANOKE_RIDGE_3");
 					iParam0->f_11 = { 2438.612f, 960.3168f, 73.0963f };
 					break;
 				case 3:
@@ -947,7 +947,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 4);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = -1601993562;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_HEARTLANDS_1");
 					iParam0->f_11 = { 1130.541f, 575.7938f, 86.66257f };
 					break;
 				case 4:
@@ -956,7 +956,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = -901588956;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_HEARTLANDS_2");
 					iParam0->f_11 = { -754.3893f, -399.1133f, 40.84306f };
 					break;
 				case 5:
@@ -965,7 +965,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = 2129019244;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_HEARTLANDS_3");
 					iParam0->f_11 = { -410.6756f, -63.938f, 40.7762f };
 					break;
 				case 6:
@@ -974,7 +974,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 4);
 					func_68(iParam0, 5);
 					func_68(iParam0, 6);
-					iParam0->f_5 = 1227099802;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_BIG_VALLEY_1");
 					iParam0->f_11 = { -2085.777f, -161.9067f, 208.0633f };
 					break;
 				case 7:
@@ -983,7 +983,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 4);
 					func_68(iParam0, 5);
 					func_68(iParam0, 6);
-					iParam0->f_5 = -940471213;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_BIG_VALLEY_2");
 					iParam0->f_11 = { -1678.304f, -517.8369f, 140.867f };
 					break;
 				case 8:
@@ -992,13 +992,13 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 4);
 					func_68(iParam0, 5);
 					func_68(iParam0, 6);
-					iParam0->f_5 = -700569364;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_BIG_VALLEY_3");
 					iParam0->f_11 = { -2624.881f, -339.7662f, 141.8102f };
 					break;
 				case 9:
 					func_68(iParam0, 0);
 					func_68(iParam0, 1);
-					iParam0->f_5 = 412376369;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_GREAT_PLAINS_1");
 					iParam0->f_11 = { -926.5729f, -924.4639f, 41.1771f };
 					break;
 				case 10:
@@ -1006,13 +1006,13 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 2);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = -364052317;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_GREAT_PLAINS_2");
 					iParam0->f_11 = { -722.9517f, -1718.81f, 41.41f };
 					break;
 				case 11:
 					func_68(iParam0, 0);
 					func_68(iParam0, 1);
-					iParam0->f_5 = -989186530;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_GREAT_PLAINS_3");
 					iParam0->f_11 = { -1069.18f, -1919.616f, 42.3447f };
 					break;
 				case 12:
@@ -1022,13 +1022,13 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 4);
 					func_68(iParam0, 5);
 					func_68(iParam0, 6);
-					iParam0->f_5 = 333858683;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_GRIZZLIES_1");
 					iParam0->f_11 = { 1673.672f, 1440.046f, 146.0849f };
 					break;
 				case 13:
 					func_68(iParam0, 0);
 					func_68(iParam0, 1);
-					iParam0->f_5 = -39511303;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_GRIZZLIES_2");
 					iParam0->f_11 = { 1562.434f, 1445.237f, 145.2842f };
 					break;
 				case 14:
@@ -1036,7 +1036,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 4);
 					func_68(iParam0, 5);
 					func_68(iParam0, 6);
-					iParam0->f_5 = 813662381;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_GRIZZLIES_3");
 					iParam0->f_11 = { 1244.927f, 1177.251f, 148.8856f };
 					break;
 				case 15:
@@ -1044,7 +1044,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = -1114006686;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_BLUEWATER_MARSH_1");
 					iParam0->f_11 = { 1926.703f, -362.3477f, 42.4864f };
 					break;
 				case 16:
@@ -1053,7 +1053,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = 1049238845;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_BLUEWATER_MARSH_2");
 					iParam0->f_11 = { 2192.489f, -318.3198f, 40.7232f };
 					break;
 				case 17:
@@ -1062,7 +1062,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
 					func_68(iParam0, 7);
-					iParam0->f_5 = 1363886783;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_BLUEWATER_MARSH_3");
 					iParam0->f_11 = { 2408.447f, -490.4562f, 40.9243f };
 					break;
 				case 18:
@@ -1071,13 +1071,13 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 2);
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
-					iParam0->f_5 = -1215674354;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_NEW_AUSTIN_1");
 					iParam0->f_11 = { -3243.502f, -3187.141f, -9.3137f };
 					break;
 				case 19:
 					func_68(iParam0, 0);
 					func_68(iParam0, 1);
-					iParam0->f_5 = 1902132155;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_NEW_AUSTIN_2");
 					iParam0->f_11 = { -1745.01f, -2929.141f, -12.3355f };
 					break;
 				case 20:
@@ -1086,7 +1086,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 2);
 					func_68(iParam0, 3);
 					func_68(iParam0, 5);
-					iParam0->f_5 = 1661312774;
+					iParam0->f_5 = joaat("BEAT_EGG_PROTECTOR_NEW_AUSTIN_3");
 					iParam0->f_11 = { -1735.07f, -2378.355f, 41.289f };
 					break;
 			}
@@ -1097,62 +1097,62 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			iParam0->f_1 = 1;
 			iParam0->f_2 = 2;
 			func_66(iParam0);
-			iParam0->f_15 = -2090512547;
+			iParam0->f_15 = joaat("22_TO_4");
 			switch (iParam2)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = 1382777618;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_VALENTINE_1");
 					iParam0->f_11 = { -228.7198f, 824.1839f, 123.3019f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = -2000681184;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_RHODES_1");
 					iParam0->f_11 = { 1274.578f, -1218.286f, 80.6496f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = 886884092;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_BLACKWATER_1");
 					iParam0->f_11 = { -954.4733f, -1203.246f, 54.5241f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = -1277120723;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_TUMBLEWEED_1");
 					iParam0->f_11 = { -5442.537f, -2904.509f, -0.0668f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = 1577436816;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_ODDFELLOWS_REST_1");
 					iParam0->f_11 = { -4438.908f, -2693.073f, -12.033f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = -234749781;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_COOTS_CHAPEL_1");
 					iParam0->f_11 = { -3339.601f, -2869.283f, -6.9507f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = -1607623039;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_RINGNECK_CREEK_1");
 					iParam0->f_11 = { 1396.14f, -643.1758f, 70.4818f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = -1943295936;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_PLEASANCE_1");
 					iParam0->f_11 = { 1735.865f, -422.7769f, 47.1349f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = -397730168;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_SHADY_BELLE_1");
 					iParam0->f_11 = { 1978.501f, -1902.647f, 41.0487f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = -392659534;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_SAINT_DENIS_1");
 					iParam0->f_11 = { 2757.999f, -1078.666f, 45.8905f };
 					break;
 				case 10:
 					func_67(iParam0);
-					iParam0->f_5 = 146267878;
+					iParam0->f_5 = joaat("BEAT_GRAVEROBBER_OLD_TOMS_BLIND_1");
 					iParam0->f_11 = { -1762.115f, -237.9833f, 181.9701f };
 					break;
 			}
@@ -1167,77 +1167,77 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = 1247886914;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_VAN_HORN_1");
 					iParam0->f_11 = { 2777.227f, 463.4025f, 65.2501f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = 1926100410;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_BOLGER_1");
 					iParam0->f_11 = { 1428.817f, -1812.995f, 57.37384f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = 603340011;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_BAYOU_1");
 					iParam0->f_11 = { 2578.893f, -852.3694f, 41.3078f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = -1253915394;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_ANNESBURG_1");
 					iParam0->f_11 = { 2798.119f, 1432.187f, 77.71185f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = 1281783573;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_EMERALD_1");
 					iParam0->f_11 = { 1243.455f, 526.5765f, 87.43867f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = -1384936716;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_CUMBERLAND_1");
 					iParam0->f_11 = { -28.69774f, 1111.23f, 167.9945f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = 636669604;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_FLATNECK_1");
 					iParam0->f_11 = { -546.6091f, -298.2057f, 52.56811f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = 1410575087;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_WALLACE_1");
 					iParam0->f_11 = { -1403.688f, 383.7506f, 102.2472f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = -736919321;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_STRAWBERRY_1");
 					iParam0->f_11 = { -1510.116f, -883.8221f, 88.72778f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = 1755496218;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_QUAKER_1");
 					iParam0->f_11 = { -1459.752f, -1915.602f, 50.93545f };
 					break;
 				case 10:
 					func_67(iParam0);
-					iParam0->f_5 = -1810033095;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_MACFARLENE_1");
 					iParam0->f_11 = { -2470.018f, -2426.993f, 59.1458f };
 					break;
 				case 11:
 					func_67(iParam0);
-					iParam0->f_5 = 99707271;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_DON_JULIO_1");
 					iParam0->f_11 = { -3092.935f, -3166.527f, -1.36638f };
 					break;
 				case 12:
 					func_67(iParam0);
-					iParam0->f_5 = 2145033839;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_ARMADILLO_1");
 					iParam0->f_11 = { -3685.624f, -2769.247f, -15.14988f };
 					break;
 				case 13:
 					func_67(iParam0);
-					iParam0->f_5 = -994111457;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_PLAINVIEW_1");
 					iParam0->f_11 = { -4668.993f, -3706.819f, 12.54352f };
 					break;
 				case 14:
 					func_67(iParam0);
-					iParam0->f_5 = 702836385;
+					iParam0->f_5 = joaat("BEAT_HOBO_DOG_TUMBLEWEED_1");
 					iParam0->f_11 = { -5194.483f, -2883.913f, 2.32447f };
 					break;
 			}
@@ -1267,82 +1267,82 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_68(iParam0, 0);
-					iParam0->f_5 = -88606612;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_CUMBERLAND_FOREST_1");
 					iParam0->f_11 = { 498.9236f, 1191.276f, 179.5016f };
 					break;
 				case 1:
 					func_68(iParam0, 1);
-					iParam0->f_5 = -1507537085;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_CUMBERLAND_FOREST_2");
 					iParam0->f_11 = { 114.87f, 1097.69f, 177.97f };
 					break;
 				case 2:
 					func_68(iParam0, 0);
-					iParam0->f_5 = 150331424;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_BLUEWATER_MARSH_1");
 					iParam0->f_11 = { 2271.753f, -440.5277f, 40.82026f };
 					break;
 				case 3:
 					func_68(iParam0, 1);
-					iParam0->f_5 = -74168995;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_BLUEWATER_MARSH_2");
 					iParam0->f_11 = { 2000.58f, -499.0656f, 41.0245f };
 					break;
 				case 4:
 					func_68(iParam0, 0);
-					iParam0->f_5 = -1303456769;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_BAYOU_NWA_1");
 					iParam0->f_11 = { 2299.81f, -898.4015f, 41.04434f };
 					break;
 				case 5:
 					func_68(iParam0, 1);
-					iParam0->f_5 = 2080696176;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_BAYOU_NWA_2");
 					iParam0->f_11 = { 2369.292f, -673.8396f, 41.36789f };
 					break;
 				case 6:
 					func_68(iParam0, 0);
-					iParam0->f_5 = -801880493;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_GRIZZLIES_EAST_1");
 					iParam0->f_11 = { 1531.33f, 1578.837f, 147.4066f };
 					break;
 				case 7:
 					func_68(iParam0, 1);
-					iParam0->f_5 = -2098877513;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_GRIZZLIES_EAST_2");
 					iParam0->f_11 = { 945.3031f, 1142.541f, 147.4809f };
 					break;
 				case 8:
 					func_68(iParam0, 0);
-					iParam0->f_5 = -985131289;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_GRIZZLIES_WEST_1");
 					iParam0->f_11 = { -1126.469f, 815.3829f, 117.6536f };
 					break;
 				case 9:
 					func_68(iParam0, 1);
-					iParam0->f_5 = 171385032;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_GRIZZLIES_WEST_2");
 					iParam0->f_11 = { -2063.813f, 935.3212f, 147.0808f };
 					break;
 				case 10:
 					func_68(iParam0, 0);
-					iParam0->f_5 = -690365399;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_GREAT_PLAINS_1");
 					iParam0->f_11 = { -1589.688f, -1425.319f, 80.34965f };
 					break;
 				case 11:
 					func_68(iParam0, 1);
-					iParam0->f_5 = -393773180;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_GREAT_PLAINS_2");
 					iParam0->f_11 = { -910.3301f, -1815.748f, 61.71241f };
 					break;
 				case 12:
 					func_68(iParam0, 0);
-					iParam0->f_5 = 1783045643;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_HENNIGANS_STEAD_1");
 					iParam0->f_11 = { -2690.104f, -2892.627f, 64.73759f };
 					break;
 				case 13:
 					func_68(iParam0, 1);
-					iParam0->f_5 = -1841828372;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_HENNIGANS_STEAD_2");
 					iParam0->f_11 = { -2914.53f, -2558.967f, 61.66708f };
 					break;
 				case 14:
 					func_68(iParam0, 0);
-					iParam0->f_5 = -1926357119;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_RIO_BRAVO_1");
 					iParam0->f_11 = { -4545.762f, -3673.932f, 17.87756f };
 					break;
 				case 15:
 					func_68(iParam0, 1);
-					iParam0->f_5 = -1904926193;
+					iParam0->f_5 = joaat("BEAT_KIDNAPPED_RIO_BRAVO_2");
 					iParam0->f_11 = { -4720.841f, -3357f, 8.61745f };
 					break;
 			}
@@ -1362,7 +1362,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = 666420762;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_HEARTLANDS_CLIFF_1");
 					iParam0->f_11 = { 468.6932f, 60.0849f, 134.4816f };
 					break;
 				case 1:
@@ -1373,7 +1373,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = 1145423923;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_HEARTLANDS_RIVER_1");
 					iParam0->f_11 = { -408.7124f, 154.0742f, 40.84526f };
 					break;
 				case 2:
@@ -1387,7 +1387,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -1176575305;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_TALL_TREES_1");
 					iParam0->f_11 = { -1929.655f, -1348.338f, 105.84f };
 					break;
 				case 3:
@@ -1398,7 +1398,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -888961792;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_TALL_TREES_2");
 					iParam0->f_11 = { -2003.943f, -2158.135f, 54.2301f };
 					break;
 				case 4:
@@ -1409,7 +1409,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -1145898130;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_BIG_VALLEY_1");
 					iParam0->f_11 = { -1272.226f, 97.47642f, 70.53004f };
 					break;
 				case 5:
@@ -1423,7 +1423,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -264936334;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_BIG_VALLEY_2");
 					iParam0->f_11 = { -2350.861f, -359.485f, 143.7474f };
 					break;
 				case 6:
@@ -1436,7 +1436,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -562839313;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_BIG_VALLEY_3");
 					iParam0->f_11 = { -1736.757f, 306.2781f, 108.1355f };
 					break;
 				case 7:
@@ -1449,7 +1449,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -819926700;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_RIO_BRAVO_1");
 					iParam0->f_11 = { -4964.499f, -3399.889f, 7.97322f };
 					break;
 				case 8:
@@ -1460,7 +1460,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = -100890882;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_HENNIGANS_STEAD_1");
 					iParam0->f_11 = { -2192.805f, -2778.977f, 69.01174f };
 					break;
 				case 9:
@@ -1471,7 +1471,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					func_68(iParam0, 10);
 					func_68(iParam0, 11);
 					func_71(iParam0, iParam3);
-					iParam0->f_5 = 373607510;
+					iParam0->f_5 = joaat("BEAT_PHOTOGRAPHY_CHOLLA_SPRINGS_1");
 					iParam0->f_11 = { -4603.166f, -2701.434f, -10.12116f };
 					break;
 			}
@@ -1486,107 +1486,107 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = -1562903685;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_BOLGER_GLADE_1");
 					iParam0->f_11 = { 1452.25f, -1695.116f, 64.9668f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = 442262250;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_ERIS_FIELD_1");
 					iParam0->f_11 = { 1163.55f, -324.0086f, 97.10712f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = 2113001754;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_ROANOKE_RIDGE_1");
 					iParam0->f_11 = { 2682.104f, 858.447f, 85.90118f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = 222101843;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_MOONSTONE_POND_1");
 					iParam0->f_11 = { 1311.333f, 1183.934f, 151.5859f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = 862535295;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_COTORRA_SPRINGS_1");
 					iParam0->f_11 = { 40.99253f, 1813.064f, 189.5056f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = 267494763;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_CUMBERLAND_1");
 					iParam0->f_11 = { 109.9411f, 1282.256f, 176.292f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = 492498900;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_BEARTOOTH_1");
 					iParam0->f_11 = { -1450.859f, 1686.266f, 255.2526f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = -735417347;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_FLATNECK_1");
 					iParam0->f_11 = { 66.91456f, -445.5748f, 72.15018f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = 2000289900;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_LITTLE_CREEK_1");
 					iParam0->f_11 = { -1698.036f, 380.6171f, 106.0826f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = 1820563970;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_UPPER_MONTANA_1");
 					iParam0->f_11 = { -2016.359f, -909.5917f, 84.91344f };
 					break;
 				case 10:
 					func_67(iParam0);
-					iParam0->f_5 = 1501808210;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_BLACKWATER_1");
 					iParam0->f_11 = { -1362.091f, -1267.624f, 82.41972f };
 					break;
 				case 11:
 					func_67(iParam0);
-					iParam0->f_5 = -1103422576;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_AURORA_BASIN_1");
 					iParam0->f_11 = { -2449.051f, -1457.942f, 148.705f };
 					break;
 				case 12:
 					func_67(iParam0);
-					iParam0->f_5 = -375108461;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_GREAT_PLAINS_1");
 					iParam0->f_11 = { -1559.339f, -1930.728f, 50.99157f };
 					break;
 				case 13:
 					func_67(iParam0);
-					iParam0->f_5 = 1074344160;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_MANTECA_FALLS_1");
 					iParam0->f_11 = { -1764.444f, -2717.768f, 62.81413f };
 					break;
 				case 14:
 					func_67(iParam0);
-					iParam0->f_5 = 1375567406;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_MACFARLANES_RANCH_1");
 					iParam0->f_11 = { -2190.544f, -2200.288f, 64.42333f };
 					break;
 				case 15:
 					func_67(iParam0);
-					iParam0->f_5 = 1695022182;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_SAN_LUIS_1");
 					iParam0->f_11 = { -2803.26f, -3142.291f, 5.88098f };
 					break;
 				case 16:
 					func_67(iParam0);
-					iParam0->f_5 = 1773241795;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_HENNIGANS_STEAD_1");
 					iParam0->f_11 = { -3175.168f, -2402.267f, 22.72451f };
 					break;
 				case 17:
 					func_67(iParam0);
-					iParam0->f_5 = 1650499101;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_JORGES_GAP_1");
 					iParam0->f_11 = { -4220.611f, -2690.138f, 0.65931f };
 					break;
 				case 18:
 					func_67(iParam0);
-					iParam0->f_5 = 149116609;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_FORT_MERCER_1");
 					iParam0->f_11 = { -4372.619f, -3274.055f, 20.26154f };
 					break;
 				case 19:
 					func_67(iParam0);
-					iParam0->f_5 = 1486166046;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_BENEDICT_POINT_1");
 					iParam0->f_11 = { -5456.922f, -3562.744f, -21.1142f };
 					break;
 				case 20:
 					func_67(iParam0);
-					iParam0->f_5 = 58739626;
+					iParam0->f_5 = joaat("BEAT_RIVAL_COLLECTOR_GAPTOOTH_RIDGE_1");
 					iParam0->f_11 = { -5796.222f, -2650.145f, -16.68393f };
 					break;
 			}
@@ -1602,52 +1602,52 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = -1657923088;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_EMERALD_RANCH_1");
 					iParam0->f_11 = { 959.0613f, 383.9384f, 111.0409f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = -1268232386;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_LEMOYNE_1");
 					iParam0->f_11 = { 1465.514f, -821.0334f, 50.2372f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = 1926851120;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_RIGGS_STATION_1");
 					iParam0->f_11 = { -1082.332f, -696.7548f, 70.5432f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = -66052340;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_BLACKWATER_1");
 					iParam0->f_11 = { -1462.952f, -1929.859f, 48.4187f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = 1738334804;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_RIO_BRAVO_1");
 					iParam0->f_11 = { -4988.295f, -3902.346f, -0.03286f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = 1009780912;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_HENNIGANS_1");
 					iParam0->f_11 = { -2770.473f, -2936.506f, 64.84297f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = -1560771476;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_GREAT_PLAINS_1");
 					iParam0->f_11 = { -1209.61f, -1812.165f, 61.23543f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = 453813335;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_STRAWBERRY_1");
 					iParam0->f_11 = { -1706.993f, -580.9286f, 149.93f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = 786924542;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_SCARLETT_1");
 					iParam0->f_11 = { 803.0057f, -584.7925f, 79.32288f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = 1656593925;
+					iParam0->f_5 = joaat("BEAT_RUNAWAY_WAGON_BOLGER_1");
 					iParam0->f_11 = { 1778.236f, -1731.359f, 48.27552f };
 					break;
 			}
@@ -1661,62 +1661,62 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 1323108111;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_0");
 					iParam0->f_11 = { -1159.115f, 397.0877f, 60.4953f };
 					break;
 				case 1:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = -1505479200;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_1");
 					iParam0->f_11 = { -1278.359f, 291.4224f, 76.6652f };
 					break;
 				case 2:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = -1283075997;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_2");
 					iParam0->f_11 = { -1371.28f, 283.4114f, 86.0114f };
 					break;
 				case 3:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = -2100531475;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_3");
 					iParam0->f_11 = { -1117.687f, 406.6783f, 55.3681f };
 					break;
 				case 4:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 269617530;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_4");
 					iParam0->f_11 = { -1288.323f, 148.5012f, 71.7864f };
 					break;
 				case 5:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 1592829750;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_5");
 					iParam0->f_11 = { -1648.447f, -114.858f, 170.0504f };
 					break;
 				case 6:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 1817985549;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_BIG_VALLEY_6");
 					iParam0->f_11 = { -1081.189f, -405.0457f, 97.0153f };
 					break;
 				case 7:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 1945424739;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_HEARTLANDS_0");
 					iParam0->f_11 = { 206.8413f, -170.3653f, 130.5284f };
 					break;
 				case 8:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 1787314318;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_HEARTLANDS_1");
 					iParam0->f_11 = { -621.2297f, 186.8452f, 41.2741f };
 					break;
 				case 9:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 542354442;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_HEARTLANDS_2");
 					iParam0->f_11 = { 44.3784f, 388.2357f, 129.8287f };
 					break;
 				case 10:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = 1510776727;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_HEARTLANDS_3");
 					iParam0->f_11 = { 752.9834f, -58.1133f, 157.6479f };
 					break;
 				case 11:
 					func_72(iParam0, iParam3);
-					iParam0->f_5 = -2017297662;
+					iParam0->f_5 = joaat("BEAT_TREASURE_HUNTER_HEARTLANDS_4");
 					iParam0->f_11 = { 817.7247f, 566.3447f, 114.3761f };
 					break;
 			}
@@ -1731,102 +1731,102 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = -377638420;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_MACFARLANES_1");
 					iParam0->f_11 = { -2058.13f, -2493.143f, 63.51377f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = 1308799438;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_THEIVES_LANDING_1");
 					iParam0->f_11 = { -1541.353f, -2334.611f, 43.10187f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = -1030922940;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_HANGING_ROCK_1");
 					iParam0->f_11 = { -3456.39f, -2262.339f, 0.01624f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = 1750043358;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_DEL_LOBO_1");
 					iParam0->f_11 = { -3703.712f, -3594.224f, 45.18983f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = -1330609910;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_BEECHERS_1");
 					iParam0->f_11 = { -1581.551f, -1656.278f, 78.51012f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = 223942444;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_BLACKWATER_1");
 					iParam0->f_11 = { -1236.292f, -1118.55f, 68.58572f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = 1067547121;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_MONTANA_RIVER_1");
 					iParam0->f_11 = { -1264.125f, -773.2117f, 91.83559f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = -450732096;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_MONTOS_REST_1");
 					iParam0->f_11 = { -1414.607f, -234.2123f, 99.22668f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = -1701940764;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_WATSONS_1");
 					iParam0->f_11 = { -1721.402f, 553.6f, 112.524f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = 1584258975;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_DAKOTA_RIVER_1");
 					iParam0->f_11 = { -484.7991f, -70.36918f, 42.94242f };
 					break;
 				case 10:
 					func_67(iParam0);
-					iParam0->f_5 = -98183174;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_FLATNECK_1");
 					iParam0->f_11 = { -458.5839f, -346.5686f, 80.66556f };
 					break;
 				case 11:
 					func_67(iParam0);
-					iParam0->f_5 = -90261849;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_EMERALD_RANCH_1");
 					iParam0->f_11 = { 1089.583f, 23.75282f, 88.22131f };
 					break;
 				case 12:
 					func_67(iParam0);
-					iParam0->f_5 = 754522971;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_EMERALD_RANCH_2");
 					iParam0->f_11 = { 1000.131f, 417.5909f, 107.9082f };
 					break;
 				case 13:
 					func_67(iParam0);
-					iParam0->f_5 = 974542513;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_DREAMCATCHER_TREE_1");
 					iParam0->f_11 = { 713.7332f, 23.52884f, 152.0797f };
 					break;
 				case 14:
 					func_67(iParam0);
-					iParam0->f_5 = -790885273;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_CUMBERLAND_1");
 					iParam0->f_11 = { 63.77304f, 1023.487f, 201.9749f };
 					break;
 				case 15:
 					func_67(iParam0);
-					iParam0->f_5 = -1447045452;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_FORT_WALLACE_1");
 					iParam0->f_11 = { 366.667f, 1408.665f, 175.0605f };
 					break;
 				case 16:
 					func_67(iParam0);
-					iParam0->f_5 = -586115209;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_OCREAGHS_RUN_1");
 					iParam0->f_11 = { 1785.934f, 1522.009f, 155.1442f };
 					break;
 				case 17:
 					func_67(iParam0);
-					iParam0->f_5 = 224941020;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_MOONSTONE_POND_1");
 					iParam0->f_11 = { 1279.07f, 1164.678f, 149.2508f };
 					break;
 				case 18:
 					func_67(iParam0);
-					iParam0->f_5 = -1179654578;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_KAMASA_RIVER_1");
 					iParam0->f_11 = { 2106.456f, 207.6169f, 72.68985f };
 					break;
 				case 19:
 					func_67(iParam0);
-					iParam0->f_5 = 1247197458;
+					iParam0->f_5 = joaat("BEAT_TREE_MAP_VAN_HORN_1");
 					iParam0->f_11 = { 2675.549f, 179.9657f, 54.14579f };
 					break;
 			}
@@ -1842,47 +1842,47 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = 974582605;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_1");
 					iParam0->f_11 = { 1562.246f, -2047.412f, 47.3446f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = -964359125;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_2");
 					iParam0->f_11 = { 1379.948f, -1696.249f, 66.86113f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = -700339292;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_3");
 					iParam0->f_11 = { 1621.706f, -1650.367f, 56.03105f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = -470300912;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_4");
 					iParam0->f_11 = { 1504.868f, -1470.025f, 71.38271f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = -241343909;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_5");
 					iParam0->f_11 = { 1082.685f, -1265.978f, 67.5664f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = 1944053474;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_6");
 					iParam0->f_11 = { 682.6295f, -992.2614f, 52.4207f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = -2120646059;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_7");
 					iParam0->f_11 = { 707.7728f, -885.6594f, 48.26217f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = -1656440405;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_8");
 					iParam0->f_11 = { 879.6264f, -537.9133f, 88.03556f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = -1422404207;
+					iParam0->f_5 = joaat("BEAT_TIED_UP_PED_SCARLETT_MEADOWS_9");
 					iParam0->f_11 = { 1012.322f, -394.373f, 90.43443f };
 					break;
 			}
@@ -1901,7 +1901,7 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = -1623035253;
+					iParam0->f_5 = joaat("BEAT_WILD_MAN_PLAYER_CAMP_1");
 					iParam0->f_11 = { func_74(func_73(iParam4)) };
 					break;
 			}
@@ -1915,52 +1915,52 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -1957221189;
+					iParam0->f_5 = joaat("BEAT_DUEL_VALENTINE_1");
 					iParam0->f_11 = { -347.4531f, 740.8643f, 116.4549f };
 					break;
 				case 1:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = 871956008;
+					iParam0->f_5 = joaat("BEAT_DUEL_VALENTINE_2");
 					iParam0->f_11 = { -360.6497f, 824.0327f, 115.4768f };
 					break;
 				case 2:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -718829908;
+					iParam0->f_5 = joaat("BEAT_DUEL_VAN_HORN_1");
 					iParam0->f_11 = { 2957.225f, 524.4706f, 43.66619f };
 					break;
 				case 3:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -478076065;
+					iParam0->f_5 = joaat("BEAT_DUEL_VAN_HORN_2");
 					iParam0->f_11 = { 2975.885f, 537.2245f, 42.42131f };
 					break;
 				case 4:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = 158131441;
+					iParam0->f_5 = joaat("BEAT_DUEL_RHODES_1");
 					iParam0->f_11 = { 1444.633f, -1417.982f, 78.22246f };
 					break;
 				case 5:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = 575051428;
+					iParam0->f_5 = joaat("BEAT_DUEL_RHODES_2");
 					iParam0->f_11 = { 1394.169f, -1422.854f, 78.97552f };
 					break;
 				case 6:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -861587350;
+					iParam0->f_5 = joaat("BEAT_DUEL_ANNESBURG_1");
 					iParam0->f_11 = { 2996.145f, 1351.808f, 42.95977f };
 					break;
 				case 7:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -616671844;
+					iParam0->f_5 = joaat("BEAT_DUEL_ANNESBURG_2");
 					iParam0->f_11 = { 2915.743f, 1231.952f, 43.5792f };
 					break;
 				case 8:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -828875274;
+					iParam0->f_5 = joaat("BEAT_DUEL_BLACKWATER_1");
 					iParam0->f_11 = { -833.5609f, -1543.917f, 59.6274f };
 					break;
 				case 9:
 					func_75(iParam0, iParam3);
-					iParam0->f_5 = -598017669;
+					iParam0->f_5 = joaat("BEAT_DUEL_BLACKWATER_2");
 					iParam0->f_11 = { -1019.64f, -1138.944f, 56.39161f };
 					break;
 			}
@@ -1976,62 +1976,62 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 			{
 				case 0:
 					func_67(iParam0);
-					iParam0->f_5 = 2136361638;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_BAYOU_1");
 					iParam0->f_11 = { 2208.668f, -350.9536f, 41.488f };
 					break;
 				case 1:
 					func_67(iParam0);
-					iParam0->f_5 = 1948005426;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_BAYOU_2");
 					iParam0->f_11 = { 1733.923f, -727.6727f, 40.8996f };
 					break;
 				case 2:
 					func_67(iParam0);
-					iParam0->f_5 = 462368629;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_BIG_VALLEY_1");
 					iParam0->f_11 = { -2028.171f, 421.7315f, 123.1801f };
 					break;
 				case 3:
 					func_67(iParam0);
-					iParam0->f_5 = -172629291;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_CUMBERLAND_1");
 					iParam0->f_11 = { 238.8146f, 1242.903f, 185.8171f };
 					break;
 				case 4:
 					func_67(iParam0);
-					iParam0->f_5 = 1063777848;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_CUMBERLAND_2");
 					iParam0->f_11 = { 646.006f, 1304.928f, 193.4366f };
 					break;
 				case 5:
 					func_67(iParam0);
-					iParam0->f_5 = -267241827;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_HEARTLANDS_1");
 					iParam0->f_11 = { 438.9673f, 831.1111f, 145.7085f };
 					break;
 				case 6:
 					func_67(iParam0);
-					iParam0->f_5 = -1183266453;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_HEARTLANDS_2");
 					iParam0->f_11 = { -545.762f, 393.6189f, 87.0076f };
 					break;
 				case 7:
 					func_67(iParam0);
-					iParam0->f_5 = -877826604;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_HEARTLANDS_3");
 					iParam0->f_11 = { 1017.37f, 1062.322f, 158.965f };
 					break;
 				case 8:
 					func_67(iParam0);
-					iParam0->f_5 = 1527533302;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_ROANOKE_1");
 					iParam0->f_11 = { 2226.213f, -248.6621f, 42.5431f };
 					break;
 				case 9:
 					func_67(iParam0);
-					iParam0->f_5 = -865586768;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_ROANOKE_2");
 					iParam0->f_11 = { 2566.893f, -71.0977f, 49.3333f };
 					break;
 				case 10:
 					func_67(iParam0);
-					iParam0->f_5 = 294379466;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_SCARLETT_MEADOWS_1");
 					iParam0->f_11 = { 1389.072f, -2196.696f, 48.3307f };
 					break;
 				case 11:
 					func_67(iParam0);
-					iParam0->f_5 = 452588198;
+					iParam0->f_5 = joaat("BEAT_MOONSHINE_CAMP_SCARLETT_MEADOWS_2");
 					iParam0->f_11 = { 906.9065f, -987.0414f, 56.96f };
 					break;
 			}
@@ -2050,25 +2050,25 @@ void func_31(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 					iParam0->f_8 = joaat("HIDEOUT");
 					break;
 				case 17:
-					iParam0->f_8 = 1112069699;
+					iParam0->f_8 = joaat("DYNAMIC_AMBUSH");
 					break;
 				case 18:
-					iParam0->f_8 = 661147828;
+					iParam0->f_8 = joaat("DYNAMIC_RESCUE_PED_MULTIPLE");
 					break;
 				case 19:
-					iParam0->f_8 = 899082205;
+					iParam0->f_8 = joaat("DYNAMIC_ESCORT");
 					break;
 				case 20:
-					iParam0->f_8 = 987333815;
+					iParam0->f_8 = joaat("DYNAMIC_CAMPSITE_DEFEND");
 					break;
 				case 21:
-					iParam0->f_8 = -315961129;
+					iParam0->f_8 = joaat("MOONSHINE_DYNAMIC_SABOTAGE");
 					break;
 				case 22:
-					iParam0->f_8 = -139081918;
+					iParam0->f_8 = joaat("MOONSHINE_DYNAMIC_DESTROY");
 					break;
 				case 23:
-					iParam0->f_8 = 1604238189;
+					iParam0->f_8 = joaat("MOONSHINE_DYNAMIC_ROADBLOCK");
 					break;
 			}
 			iVar17 = func_76(iParam1);
@@ -3845,19 +3845,19 @@ int func_177(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -1690863991;
+			return joaat("UNLOCK_GROUP__MISSION_STORY");
 		case 3:
-			return 1286170048;
+			return joaat("UNLOCK_GROUP__MISSION_PROCEDURAL");
 		case 4:
-			return -342492333;
+			return joaat("UNLOCK_GROUP__MISSION_FETCH");
 		case 5:
-			return 1140089012;
+			return joaat("UNLOCK_GROUP__MISSION_MINIGAME");
 		case 8:
 			return 634321112;
 		case 7:
-			return -2079273178;
+			return joaat("UNLOCK_GROUP__MISSION_UGC");
 		case 6:
-			return -147846054;
+			return joaat("UNLOCK_GROUP__MISSION_FREE_MODE_EVENT");
 		default:
 			break;
 	}
@@ -4153,13 +4153,13 @@ int func_195(int iParam0, int iParam1)
 	{
 		case joaat("BOUNTY_BOARD"):
 		case joaat("GUN_FOR_HIRE"):
-		case -260420884:
-		case -232478158:
-		case 78055447:
-		case 850213441:
-		case 974227447:
-		case 1532822440:
-		case 1918154385:
+		case joaat("CAMP_RESUPPLY"):
+		case joaat("MOONSHINE_SETUP_GET_SUPPLIES"):
+		case joaat("MOONSHINE_MARKETING"):
+		case joaat("CAMP_SETUP"):
+		case joaat("MOONSHINE_SELL"):
+		case joaat("MOONSHINE_SETUP_RESCUE_COOK"):
+		case joaat("CAMP_SELL"):
 			return 1;
 		case joaat("DYNAMIC"):
 			return iParam1;

@@ -4535,7 +4535,7 @@ int func_134(bool bParam0)
 			func_312(905216692);
 			func_301(-1299414622);
 			func_321("nav_sean1_camp");
-			if (func_308(-693828600))
+			if (func_308(joaat("WS_MP_HIDEOUT_FORT_RIGGS")))
 			{
 				func_321("reservation_abandoned");
 				func_301(joaat("MP001_MP_HID_FORTRIGGS"));
@@ -4598,54 +4598,54 @@ int func_134(bool bParam0)
 		{
 			func_312(1636184722);
 		}
-		func_336(-1585840296);
-		func_336(-2043909922);
-		func_336(589380360);
-		func_336(-632127260);
-		func_336(-209894800);
-		func_336(1238086793);
+		func_336(joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK"));
+		func_336(joaat("WS_MP_JAIL_DOORS_BLACKWATER_UNLOCK"));
+		func_336(joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_UNLOCK"));
+		func_336(joaat("WS_MP_JAIL_DOORS_STRAWBERRY_UNLOCK"));
+		func_336(joaat("WS_MP_JAIL_DOORS_VALENTINE_UNLOCK"));
+		func_336(joaat("WS_MP_HIDEOUT_LAKAY"));
 		func_336(-1344601768);
-		func_336(1302228510);
+		func_336(joaat("WS_MP_HIDEOUT_BEAVER_HOLLOW"));
 		func_336(-460024530);
-		func_336(-108780030);
+		func_336(joaat("WS_MP_HIDEOUT_FARMHOUSE"));
 		func_336(1698972798);
-		func_336(-1296807958);
-		func_336(-1283202000);
-		func_336(-1610966108);
-		func_336(-693828600);
-		func_336(1321892118);
-		func_336(-61411516);
-		func_336(582380806);
-		func_336(1932172605);
-		func_336(1159471771);
-		func_336(784360470);
-		func_336(-1340339190);
+		func_336(joaat("WS_MP_HIDEOUT_QUAKERS_COVE"));
+		func_336(joaat("WS_MP_HIDEOUT_THE_LOFT"));
+		func_336(joaat("WS_MP_HIDEOUT_CUMBERLAND_FALLS"));
+		func_336(joaat("WS_MP_HIDEOUT_FORT_RIGGS"));
+		func_336(joaat("WS_MP_HIDEOUT_STILLWATER_STRANDS"));
+		func_336(joaat("WS_MP_HIDEOUT_COLTER"));
+		func_336(joaat("WS_MP_HIDEOUT_ABANDONED_MINING_STATION"));
+		func_336(joaat("WS_MP_HIDEOUT_CLEMENS_COVE"));
+		func_336(joaat("WS_MP_HIDEOUT_TALL_TREES"));
+		func_336(joaat("WS_MP_HIDEOUT_SHIP_ROCK"));
+		func_336(joaat("WS_MP_HIDEOUT_ROCKY_SEVEN"));
 		func_336(1881028477);
-		func_336(1703398561);
+		func_336(joaat("WS_MP_HIDEOUT_SOLOMONS_FOLLY"));
 		func_336(-1209597203);
-		func_336(-897750037);
+		func_336(joaat("WS_MP_HIDEOUT_CUERA_SECO"));
 		func_336(929582877);
-		func_336(-911126844);
-		func_336(-355531636);
-		func_336(-1455998786);
-		func_336(-851626677);
-		func_336(-734416508);
+		func_336(joaat("WS_MP_HIDEOUT_RATTLESNAKE_HOLLOW"));
+		func_336(joaat("WS_MP_HIDEOUT_REPENTANCE"));
+		func_336(joaat("WS_MP_HIDEOUT_SEA_OF_CORONADO"));
+		func_336(joaat("WS_MP_HIDEOUT_CHOLLA_SPRINGS"));
+		func_336(joaat("WS_MP_HIDEOUT_OLD_BACCHUS_PLACE"));
 		func_336(-396624371);
-		func_336(885777893);
-		func_336(619839857);
-		func_336(2113625508);
-		func_336(1549124796);
-		func_336(-502473159);
-		func_336(229371495);
-		func_336(-781631220);
-		func_336(1708045337);
-		func_336(1166612791);
-		func_336(74872959);
-		func_336(1744443559);
-		func_336(509781469);
-		func_336(885378256);
-		func_336(-524787708);
-		func_336(-1861414976);
+		func_336(joaat("WS_MP_HIDEOUT_CAMP_PIKES"));
+		func_336(joaat("WS_MP_HIDEOUT_GAPTOOTH"));
+		func_336(joaat("WS_MP_INTRO_JESSICA_CAMP_RHODES"));
+		func_336(joaat("WS_MP_INTRO_JESSICA_CAMP_VALENTINE"));
+		func_336(joaat("WS_MP_INTRO_JESSICA_CAMP_BLACKWATER"));
+		func_336(joaat("WS_MP_INTRO_JESSICA_CAMP_TUMBLEWEED"));
+		func_336(joaat("WS_MP_INTRO_HIDEOUT_RHODES"));
+		func_336(joaat("WS_MP_INTRO_HIDEOUT_VALENTINE"));
+		func_336(joaat("WS_MP_INTRO_HIDEOUT_BLACKWATER"));
+		func_336(joaat("WS_MP_INTRO_HIDEOUT_TUMBLEWEED"));
+		func_336(joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_HILLTOP"));
+		func_336(joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_CIRCLE"));
+		func_336(joaat("WS_MP_CAMP_DEFEND_GRIZZLIES_CIRCLE"));
+		func_336(joaat("WS_MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE"));
+		func_336(joaat("WS_MP_CAMP_DEFEND_ROANOKE_CIRCLE"));
 		func_336(joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS"));
 		func_336(joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_RIDGE"));
 		func_336(joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH"));
@@ -4658,146 +4658,146 @@ int func_134(bool bParam0)
 		func_336(joaat("WS_MP_CAMP_DEFEND_NEW_HANOVER"));
 		func_336(joaat("WS_MP_CAMP_DEFEND_BLUEWATER_MARSH"));
 		func_336(526003171);
-		func_336(-895073533);
-		func_336(-2066272360);
-		func_336(93964309);
-		func_336(2103908624);
-		func_337(1812677765);
+		func_336(joaat("WS_MP_FETCH_OTH_SHEPHERDS_RISE"));
+		func_336(joaat("WS_MP_FETCH_OTH_TALL_TREES"));
+		func_336(joaat("WS_MP_FETCH_OTH_CASTORS"));
+		func_336(joaat("WS_MP_ASSASSINATION_TRK_GRZ_CAMP"));
+		func_337(joaat("WS_MP_TREASURE_MAP_INTRO_TUMBLEWEED_01"));
 		func_337(-1753769127);
 		func_337(-947815572);
 		func_337(-1181950077);
 		func_337(-489737721);
 		func_337(-102827640);
-		func_337(-1906892166);
+		func_337(joaat("WS_MP_TREASURE_MAP_INTRO_VALENTINE_02"));
 		func_337(-2141419899);
 		func_337(16844748);
 		func_337(831940854);
 		func_337(-1387772214);
 		func_337(-1095341658);
-		func_337(-1848799275);
+		func_337(joaat("WS_MP_TREASURE_MAP_INTRO_RHODES_03"));
 		func_337(-1556041029);
 		func_337(-1808329564);
-		func_337(1866434585);
+		func_337(joaat("WS_MP_TREASURE_MAP_INTRO_BLACKWATER_01"));
 		func_337(1421300489);
 		func_337(1248935549);
 		func_337(943561238);
 		func_337(-1939389836);
-		func_337(-243260793);
-		func_337(-492731190);
-		func_337(-839820438);
-		func_337(1325325699);
-		func_337(-1705799799);
-		func_337(-89829333);
-		func_337(-1262828457);
-		func_337(-931337253);
-		func_337(1494062795);
-		func_337(-1287894233);
-		func_337(2068208444);
-		func_337(-1932919229);
-		func_337(-364475655);
-		func_337(-110352060);
-		func_337(-1023919011);
-		func_337(-852602679);
-		func_337(-297483764);
-		func_337(-1578292898);
-		func_337(1517951665);
-		func_337(1891256113);
-		func_337(-1319875891);
-		func_337(-1624627591);
-		func_337(-1914141706);
-		func_337(-74031276);
-		func_337(1280406542);
-		func_337(982765715);
-		func_337(-1120447016);
-		func_337(1788424349);
-		func_337(1028084603);
-		func_337(-1827602683);
-		func_337(565812320);
-		func_337(1279586666);
-		func_337(1480425906);
-		func_337(846837291);
-		func_337(1153686207);
-		func_337(-70727482);
-		func_337(84709454);
-		func_337(799106423);
-		func_337(560154875);
-		func_337(2079292950);
-		func_337(1521272922);
-		func_337(-677920206);
-		func_337(-414883443);
-		func_337(-1004266677);
-		func_337(-1290997627);
-		func_337(-1462313959);
-		func_337(-1882707460);
-		func_337(-2056579774);
-		func_337(-1442844448);
-		func_337(-1684974589);
-		func_337(-38135693);
-		func_337(803929300);
-		func_337(640520536);
-		func_337(-2100409704);
-		func_337(-604603161);
-		func_337(-1422877860);
-		func_337(826868753);
-		func_337(730069127);
-		func_337(-1378911044);
-		func_337(-1341750998);
-		func_337(2068253437);
-		func_337(-1395855864);
-		func_337(-1749433374);
-		func_337(1232840551);
-		func_337(642824856);
-		func_337(-207792846);
-		func_337(715735881);
-		func_337(404823609);
-		func_337(1126565489);
-		func_337(-1664435783);
-		func_337(-1369678628);
-		func_337(2013720626);
-		func_337(215903338);
-		func_337(-90486812);
-		func_337(-329176208);
-		func_337(-574190021);
-		func_337(-800891377);
-		func_337(-630295963);
-		func_337(2127412005);
-		func_337(1362354162);
-		func_337(2048790450);
-		func_337(-101740709);
-		func_337(673606600);
-		func_337(-895307590);
-		func_337(1032791043);
-		func_337(804063423);
-		func_337(-1573753524);
-		func_337(-1842033327);
-		func_337(-888632790);
-		func_337(-583127403);
-		func_337(-381925743);
-		func_337(-75928821);
-		func_337(321629486);
-		func_337(896725436);
-		func_337(-941648233);
-		func_337(-635323621);
-		func_337(1157309080);
-		func_337(-797689456);
-		func_337(-500245243);
-		func_337(-211583122);
-		func_337(237155783);
-		func_337(-1547280108);
-		func_337(-1719055206);
-		func_337(1601722481);
-		func_337(-2142074819);
-		func_337(-226366310);
-		func_337(-1502194556);
-		func_337(-1749043433);
-		func_337(1341699707);
-		func_337(1666964801);
-		func_337(-1673998598);
-		func_337(-1445041595);
-		func_337(148595040);
-		func_337(-729679654);
-		func_337(-448554447);
-		func_337(-1339871203);
+		func_337(joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BRANDYWINE_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BRANDYWINE_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BRANDYWINE_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BRANDYWINE_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_04"));
+		func_337(joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_01"));
+		func_337(joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_02"));
+		func_337(joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_03"));
+		func_337(joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_04"));
 		func_336(-812641169);
 		func_336(-554519756);
 		func_336(865557632);
@@ -5287,7 +5287,7 @@ void func_150()
 						if (!&Global_1938008->f_55[iVar10])
 						{
 							Global_1938008->f_23[iVar10] = func_68(func_25(), 27, vVar7, -1);
-							func_355(&(Global_1938008->f_23[iVar10]), 168093330);
+							func_355(&(Global_1938008->f_23[iVar10]), joaat("BLIP_STYLE_SHOP"));
 							func_356(&(Global_1938008->f_23[iVar10]), joaat("BLIP_SALOON"));
 							MAP::SET_BLIP_FLASH_TIMER(&(Global_16843[&Global_1938008->f_23[iVar10]]), func_358(func_357(iVar11)), func_359(iVar11));
 							func_360(&(Global_1938008->f_23[iVar10]), iVar1);
@@ -8943,7 +8943,7 @@ void func_304()
 	func_516(111);
 	func_516(101);
 	func_301(481636996);
-	func_325(202296518, 0, 0, 0, 1, 0, 0, 0);
+	func_325(joaat("DOOR_SIX_CABIN_FRONT"), 0, 0, 0, 1, 0, 0, 0);
 	func_329(1434140379, 1);
 	func_329(2061942857, 1);
 	func_329(-1642093909, 1);
@@ -10200,114 +10200,114 @@ void func_336(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2043909922:
-		case -1145153057:
+		case joaat("WS_MP_JAIL_DOORS_BLACKWATER_UNLOCK"):
+		case joaat("WS_MP_JAIL_DOORS_BLACKWATER_LOCK"):
 			if (!func_66())
 			{
-				if (func_308(-2043909922))
+				if (func_308(joaat("WS_MP_JAIL_DOORS_BLACKWATER_UNLOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(-2127191462, 0, 0);
-					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(-2127191462, 2f);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(-2127191462, 1f, false);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_BLA_JAIL_INT_1"), 0, 0);
+					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(joaat("DOOR_BLA_JAIL_INT_1"), 2f);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_BLA_JAIL_INT_1"), 1f, false);
 				}
-				else if (func_308(-1145153057))
+				else if (func_308(joaat("WS_MP_JAIL_DOORS_BLACKWATER_LOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(-2127191462, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(-2127191462, 0f, true);
-					OBJECT::_0x7F458B543006C8FE(-2127191462, 16);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_BLA_JAIL_INT_1"), 0f, true);
+					OBJECT::_0x7F458B543006C8FE(joaat("DOOR_BLA_JAIL_INT_1"), 16);
 				}
 				else
 				{
-					func_538(-2127191462);
+					func_538(joaat("DOOR_BLA_JAIL_INT_1"));
 				}
 			}
 			break;
-		case 468797819:
-		case 589380360:
+		case joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_LOCK"):
+		case joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_UNLOCK"):
 			if (!func_66())
 			{
-				if (func_308(589380360))
+				if (func_308(joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_UNLOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(-929446589, 0, 0);
-					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(-929446589, 2f);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(-929446589, 1f, false);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_NEW_POLICE_CELL01"), 0, 0);
+					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(joaat("DOOR_NEW_POLICE_CELL01"), 2f);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_NEW_POLICE_CELL01"), 1f, false);
 				}
-				else if (func_308(468797819))
+				else if (func_308(joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_LOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(-929446589, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(-929446589, 0f, true);
-					OBJECT::_0x7F458B543006C8FE(-929446589, 16);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_NEW_POLICE_CELL01"), 1, 0);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_NEW_POLICE_CELL01"), 0f, true);
+					OBJECT::_0x7F458B543006C8FE(joaat("DOOR_NEW_POLICE_CELL01"), 16);
 				}
 				else
 				{
-					func_538(-929446589);
+					func_538(joaat("DOOR_NEW_POLICE_CELL01"));
 				}
 			}
 			break;
-		case -632127260:
-		case 965467037:
+		case joaat("WS_MP_JAIL_DOORS_STRAWBERRY_UNLOCK"):
+		case joaat("WS_MP_JAIL_DOORS_STRAWBERRY_LOCK"):
 			if (!func_66())
 			{
-				if (func_308(-632127260))
+				if (func_308(joaat("WS_MP_JAIL_DOORS_STRAWBERRY_UNLOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(1207903970, 0, 0);
-					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(1207903970, 2f);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(1207903970, 1f, false);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_STR_JAILPOST_INT_1"), 0, 0);
+					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(joaat("DOOR_STR_JAILPOST_INT_1"), 2f);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_STR_JAILPOST_INT_1"), 1f, false);
 				}
-				else if (func_308(965467037))
+				else if (func_308(joaat("WS_MP_JAIL_DOORS_STRAWBERRY_LOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(1207903970, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(1207903970, 0f, true);
-					OBJECT::_0x7F458B543006C8FE(1207903970, 16);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_STR_JAILPOST_INT_1"), 1, 0);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_STR_JAILPOST_INT_1"), 0f, true);
+					OBJECT::_0x7F458B543006C8FE(joaat("DOOR_STR_JAILPOST_INT_1"), 16);
 				}
 				else
 				{
-					func_538(1207903970);
+					func_538(joaat("DOOR_STR_JAILPOST_INT_1"));
 				}
 			}
 			break;
-		case -279765076:
-		case -209894800:
+		case joaat("WS_MP_JAIL_DOORS_VALENTINE_LOCK"):
+		case joaat("WS_MP_JAIL_DOORS_VALENTINE_UNLOCK"):
 			if (!func_66())
 			{
-				if (func_308(-209894800))
+				if (func_308(joaat("WS_MP_JAIL_DOORS_VALENTINE_UNLOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(193903155, 0, 0);
-					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(193903155, 2f);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(193903155, 1f, false);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_VAL_JAIL_CELL_03"), 0, 0);
+					OBJECT::DOOR_SYSTEM_SET_AUTOMATIC_RATE(joaat("DOOR_VAL_JAIL_CELL_03"), 2f);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_VAL_JAIL_CELL_03"), 1f, false);
 				}
-				else if (func_308(-279765076))
+				else if (func_308(joaat("WS_MP_JAIL_DOORS_VALENTINE_LOCK")))
 				{
-					func_530(-2127191462, 1, 0);
-					func_537(193903155, 1, 0);
-					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(193903155, 0f, true);
-					OBJECT::_0x7F458B543006C8FE(193903155, 16);
+					func_530(joaat("DOOR_BLA_JAIL_INT_1"), 1, 0);
+					func_537(joaat("DOOR_VAL_JAIL_CELL_03"), 1, 0);
+					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(joaat("DOOR_VAL_JAIL_CELL_03"), 0f, true);
+					OBJECT::_0x7F458B543006C8FE(joaat("DOOR_VAL_JAIL_CELL_03"), 16);
 				}
 				else
 				{
-					func_538(193903155);
+					func_538(joaat("DOOR_VAL_JAIL_CELL_03"));
 				}
 			}
 			break;
-		case -1585840296:
-		case -510945576:
+		case joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK"):
+		case joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK_HOLD_OPEN"):
 			if (!func_66())
 			{
-				if (func_308(-510945576))
+				if (func_308(joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK_HOLD_OPEN")))
 				{
 					func_537(385812466, 0, 0);
 					func_537(-1201452352, 0, 0);
 					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(385812466, 1f, true);
 					OBJECT::DOOR_SYSTEM_SET_OPEN_RATIO(-1201452352, -1f, true);
 				}
-				else if (func_308(-1585840296))
+				else if (func_308(joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK")))
 				{
 					func_537(385812466, 0, 0);
 					func_537(-1201452352, 0, 0);
@@ -10319,8 +10319,8 @@ void func_336(int iParam0)
 				}
 			}
 			break;
-		case 1238086793:
-			if (func_308(1238086793))
+		case joaat("WS_MP_HIDEOUT_LAKAY"):
+			if (func_308(joaat("WS_MP_HIDEOUT_LAKAY")))
 			{
 				func_301(joaat("MP001_MP_HID_LAKAY"));
 				func_301(1423912753);
@@ -10337,8 +10337,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_LAKAY"));
 			}
 			break;
-		case 1302228510:
-			if (func_308(1302228510))
+		case joaat("WS_MP_HIDEOUT_BEAVER_HOLLOW"):
+			if (func_308(joaat("WS_MP_HIDEOUT_BEAVER_HOLLOW")))
 			{
 				func_301(joaat("MP001_MP_HID_BEAVERHOLLOW"));
 				func_322("MS_HIDOUT_BEAVERHOLLOW");
@@ -10363,8 +10363,8 @@ void func_336(int iParam0)
 				func_321("MS_HIDOUT_MILLESANICLAIM");
 			}
 			break;
-		case -108780030:
-			if (func_308(-108780030))
+		case joaat("WS_MP_HIDEOUT_FARMHOUSE"):
+			if (func_308(joaat("WS_MP_HIDEOUT_FARMHOUSE")))
 			{
 				func_301(joaat("MP001_MP_HID_FARMHOUSE"));
 				func_322("MS_HIDOUT_FARMHOUSE");
@@ -10377,8 +10377,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_FARMHOUSE"));
 			}
 			break;
-		case -1340339190:
-			if (func_308(-1340339190))
+		case joaat("WS_MP_HIDEOUT_ROCKY_SEVEN"):
+			if (func_308(joaat("WS_MP_HIDEOUT_ROCKY_SEVEN")))
 			{
 				func_301(joaat("MP001_MP_HID_ROCKY_SEVEN"));
 				func_322("MS_HIDOUT_ROCKYSEVEN");
@@ -10413,8 +10413,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_MOSSYFLATS"));
 			}
 			break;
-		case -1296807958:
-			if (func_308(-1296807958))
+		case joaat("WS_MP_HIDEOUT_QUAKERS_COVE"):
+			if (func_308(joaat("WS_MP_HIDEOUT_QUAKERS_COVE")))
 			{
 				func_301(-1974746920);
 				func_322("MS_HIDOUT_QUAKERSCOVE");
@@ -10427,8 +10427,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_QUAKERS_COVE"));
 			}
 			break;
-		case -1283202000:
-			if (func_308(-1283202000))
+		case joaat("WS_MP_HIDEOUT_THE_LOFT"):
+			if (func_308(joaat("WS_MP_HIDEOUT_THE_LOFT")))
 			{
 				func_301(1171226610);
 				func_322("MS_HIDOUT_THELOFT");
@@ -10441,8 +10441,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_THE_LOFT"));
 			}
 			break;
-		case -1610966108:
-			if (func_308(-1610966108))
+		case joaat("WS_MP_HIDEOUT_CUMBERLAND_FALLS"):
+			if (func_308(joaat("WS_MP_HIDEOUT_CUMBERLAND_FALLS")))
 			{
 				func_301(406701199);
 				func_322("MS_HIDOUT_CUMBERLANDFALLS");
@@ -10455,8 +10455,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_CUMBERLANDFALLS"));
 			}
 			break;
-		case 1321892118:
-			if (func_308(1321892118))
+		case joaat("WS_MP_HIDEOUT_STILLWATER_STRANDS"):
+			if (func_308(joaat("WS_MP_HIDEOUT_STILLWATER_STRANDS")))
 			{
 				func_301(-1151968796);
 				func_322("MS_HIDOUT_STILLWATERSTRANDS");
@@ -10469,8 +10469,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_SILTWATERSTRAND"));
 			}
 			break;
-		case -61411516:
-			if (func_308(-61411516))
+		case joaat("WS_MP_HIDEOUT_COLTER"):
+			if (func_308(joaat("WS_MP_HIDEOUT_COLTER")))
 			{
 				func_301(1975720265);
 				func_322("MS_HIDOUT_COLTER");
@@ -10481,8 +10481,8 @@ void func_336(int iParam0)
 				func_321("MS_HIDOUT_COLTER");
 			}
 			break;
-		case 582380806:
-			if (func_308(582380806))
+		case joaat("WS_MP_HIDEOUT_ABANDONED_MINING_STATION"):
+			if (func_308(joaat("WS_MP_HIDEOUT_ABANDONED_MINING_STATION")))
 			{
 				func_301(508578717);
 				func_322("MS_HIDOUT_ABANDONED_MINING_STATION");
@@ -10493,8 +10493,8 @@ void func_336(int iParam0)
 				func_321("MS_HIDOUT_ABANDONED_MINING_STATION");
 			}
 			break;
-		case 1932172605:
-			if (func_308(1932172605))
+		case joaat("WS_MP_HIDEOUT_CLEMENS_COVE"):
+			if (func_308(joaat("WS_MP_HIDEOUT_CLEMENS_COVE")))
 			{
 				func_301(-848533860);
 				func_322("MS_HIDOUT_CLEMENSCOVE");
@@ -10509,8 +10509,8 @@ void func_336(int iParam0)
 				func_321("MS_HIDOUT_CLEMENSCOVE");
 			}
 			break;
-		case 1159471771:
-			if (func_308(1159471771))
+		case joaat("WS_MP_HIDEOUT_TALL_TREES"):
+			if (func_308(joaat("WS_MP_HIDEOUT_TALL_TREES")))
 			{
 				func_301(joaat("MP001_MP_HID_TALLTREES"));
 				func_322("MS_HIDOUT_TALLTREES");
@@ -10523,8 +10523,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_TALLTREES"));
 			}
 			break;
-		case 784360470:
-			if (func_308(784360470))
+		case joaat("WS_MP_HIDEOUT_SHIP_ROCK"):
+			if (func_308(joaat("WS_MP_HIDEOUT_SHIP_ROCK")))
 			{
 				func_301(-522767301);
 				func_322("MS_HIDOUT_SHIPROCK");
@@ -10549,8 +10549,8 @@ void func_336(int iParam0)
 				func_321("MS_HIDOUT_CAMP_BACCHUS");
 			}
 			break;
-		case 1703398561:
-			if (func_308(1703398561))
+		case joaat("WS_MP_HIDEOUT_SOLOMONS_FOLLY"):
+			if (func_308(joaat("WS_MP_HIDEOUT_SOLOMONS_FOLLY")))
 			{
 				func_301(771896020);
 				func_322("MS_HIDOUT_SOLOMONSFOLLY");
@@ -10577,8 +10577,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_TWIN_ROCKS"));
 			}
 			break;
-		case -897750037:
-			if (func_308(-897750037))
+		case joaat("WS_MP_HIDEOUT_CUERA_SECO"):
+			if (func_308(joaat("WS_MP_HIDEOUT_CUERA_SECO")))
 			{
 				func_301(1256749990);
 				func_322("MS_HIDOUT_CUERASECO");
@@ -10605,8 +10605,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MIN_HID_MANTECAFALLS"));
 			}
 			break;
-		case -911126844:
-			if (func_308(-911126844))
+		case joaat("WS_MP_HIDEOUT_RATTLESNAKE_HOLLOW"):
+			if (func_308(joaat("WS_MP_HIDEOUT_RATTLESNAKE_HOLLOW")))
 			{
 				func_301(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"));
 				func_322("MS_HIDOUT_RATTLESNAKEHOLLOW");
@@ -10619,8 +10619,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MIN_HID_RATTLESNAKEHOLLOW"));
 			}
 			break;
-		case -355531636:
-			if (func_308(-355531636))
+		case joaat("WS_MP_HIDEOUT_REPENTANCE"):
+			if (func_308(joaat("WS_MP_HIDEOUT_REPENTANCE")))
 			{
 				func_301(joaat("MP001_MIN_HID_REPENTANCE"));
 				func_322("MS_HIDOUT_REPENTANCE");
@@ -10633,8 +10633,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MIN_HID_REPENTANCE"));
 			}
 			break;
-		case -1455998786:
-			if (func_308(-1455998786))
+		case joaat("WS_MP_HIDEOUT_SEA_OF_CORONADO"):
+			if (func_308(joaat("WS_MP_HIDEOUT_SEA_OF_CORONADO")))
 			{
 				func_301(967935536);
 				func_322("MS_HIDOUT_SEAOFCORONADO");
@@ -10647,8 +10647,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_CORONADO"));
 			}
 			break;
-		case -851626677:
-			if (func_308(-851626677))
+		case joaat("WS_MP_HIDEOUT_CHOLLA_SPRINGS"):
+			if (func_308(joaat("WS_MP_HIDEOUT_CHOLLA_SPRINGS")))
 			{
 				func_301(-773956478);
 				func_322("MS_HIDOUT_CHOLLASPRINGS");
@@ -10659,8 +10659,8 @@ void func_336(int iParam0)
 				func_321("MS_HIDOUT_CHOLLASPRINGS");
 			}
 			break;
-		case -734416508:
-			if (func_308(-734416508))
+		case joaat("WS_MP_HIDEOUT_OLD_BACCHUS_PLACE"):
+			if (func_308(joaat("WS_MP_HIDEOUT_OLD_BACCHUS_PLACE")))
 			{
 				func_301(-1615749463);
 				func_322("MS_HIDOUT_OLDBACCHUSPLACE");
@@ -10685,8 +10685,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_CHOLLASPRINGS"));
 			}
 			break;
-		case 885777893:
-			if (func_308(885777893))
+		case joaat("WS_MP_HIDEOUT_CAMP_PIKES"):
+			if (func_308(joaat("WS_MP_HIDEOUT_CAMP_PIKES")))
 			{
 				func_301(-1323334072);
 				func_322("MS_HIDOUT_CAMP_PIKES");
@@ -10699,8 +10699,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_HID_PIKESBASIN"));
 			}
 			break;
-		case 619839857:
-			if (func_308(619839857))
+		case joaat("WS_MP_HIDEOUT_GAPTOOTH"):
+			if (func_308(joaat("WS_MP_HIDEOUT_GAPTOOTH")))
 			{
 				func_301(joaat("MP001_MIN_HID_GAPTOOTH"));
 				func_322("MS_HIDOUT_GAPTOOTH");
@@ -10713,8 +10713,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MIN_HID_GAPTOOTH"));
 			}
 			break;
-		case 2113625508:
-			if (func_308(2113625508))
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_RHODES"):
+			if (func_308(joaat("WS_MP_INTRO_JESSICA_CAMP_RHODES")))
 			{
 				func_301(joaat("MP001_MP_JESSICACAMP_RHODES"));
 				func_322("mp_intro_jessica_camp_rhodes");
@@ -10727,8 +10727,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_JESSICACAMP_RHODES"));
 			}
 			break;
-		case 1549124796:
-			if (func_308(1549124796))
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_VALENTINE"):
+			if (func_308(joaat("WS_MP_INTRO_JESSICA_CAMP_VALENTINE")))
 			{
 				func_301(joaat("MP001_MP_JESSICACAMP_VAL"));
 				func_322("mp_intro_jessica_camp_valentine");
@@ -10741,8 +10741,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_JESSICACAMP_VAL"));
 			}
 			break;
-		case -502473159:
-			if (func_308(-502473159))
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_BLACKWATER"):
+			if (func_308(joaat("WS_MP_INTRO_JESSICA_CAMP_BLACKWATER")))
 			{
 				func_301(joaat("MP001_MP_JESSICACAMP_BLACKWATER"));
 				func_322("mp_intro_jessica_camp_blackwater");
@@ -10755,8 +10755,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_JESSICACAMP_BLACKWATER"));
 			}
 			break;
-		case 229371495:
-			if (func_308(229371495))
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_TUMBLEWEED"):
+			if (func_308(joaat("WS_MP_INTRO_JESSICA_CAMP_TUMBLEWEED")))
 			{
 				func_301(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"));
 				func_322("mp_intro_jessica_camp_tumbleweed");
@@ -10769,8 +10769,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_JESSICACAMP_TUMBLEWEED"));
 			}
 			break;
-		case -781631220:
-			if (func_308(-781631220))
+		case joaat("WS_MP_INTRO_HIDEOUT_RHODES"):
+			if (func_308(joaat("WS_MP_INTRO_HIDEOUT_RHODES")))
 			{
 				func_301(joaat("MP001_MP_INTRO_GANG_RHODES4"));
 				func_322("mp_intro_hideout_rhodes");
@@ -10783,8 +10783,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_INTRO_GANG_RHODES4"));
 			}
 			break;
-		case 1708045337:
-			if (func_308(1708045337))
+		case joaat("WS_MP_INTRO_HIDEOUT_VALENTINE"):
+			if (func_308(joaat("WS_MP_INTRO_HIDEOUT_VALENTINE")))
 			{
 				func_301(joaat("MP001_MP_INTRO_GANG_VALENTINE2"));
 				func_322("mp_intro_hideout_valentine");
@@ -10797,8 +10797,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_INTRO_GANG_VALENTINE2"));
 			}
 			break;
-		case 1166612791:
-			if (func_308(1166612791))
+		case joaat("WS_MP_INTRO_HIDEOUT_BLACKWATER"):
+			if (func_308(joaat("WS_MP_INTRO_HIDEOUT_BLACKWATER")))
 			{
 				func_301(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"));
 				func_322("mp_intro_hideout_blackwater");
@@ -10811,8 +10811,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_INTRO_GANG_BLACKWATER3"));
 			}
 			break;
-		case 74872959:
-			if (func_308(74872959))
+		case joaat("WS_MP_INTRO_HIDEOUT_TUMBLEWEED"):
+			if (func_308(joaat("WS_MP_INTRO_HIDEOUT_TUMBLEWEED")))
 			{
 				func_301(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"));
 				func_322("mp_intro_hideout_tumbleweed");
@@ -10825,8 +10825,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP001_MP_INTRO_GANG_TUMBLEWEED1"));
 			}
 			break;
-		case 1744443559:
-			if (func_308(1744443559))
+		case joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_HILLTOP"):
+			if (func_308(joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_HILLTOP")))
 			{
 				func_301(joaat("MP004_CAMPDEF_HRT_HILLTOP"));
 				func_322("MP_CAMP_DEFEND_HEARTLANDS_HILLTOP");
@@ -10839,8 +10839,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP004_CAMPDEF_HRT_HILLTOP"));
 			}
 			break;
-		case 509781469:
-			if (func_308(509781469))
+		case joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_CIRCLE"):
+			if (func_308(joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_CIRCLE")))
 			{
 				func_301(joaat("MP004_CAMPDEF_HEARTLANDS"));
 				func_322("MP_CAMP_DEFEND_HEARTLANDS_CIRCLE");
@@ -10853,8 +10853,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP004_CAMPDEF_HEARTLANDS"));
 			}
 			break;
-		case 885378256:
-			if (func_308(885378256))
+		case joaat("WS_MP_CAMP_DEFEND_GRIZZLIES_CIRCLE"):
+			if (func_308(joaat("WS_MP_CAMP_DEFEND_GRIZZLIES_CIRCLE")))
 			{
 				func_301(476687617);
 				func_322("MP_CAMP_DEFEND_GRIZZLIES_CIRCLE");
@@ -10867,8 +10867,8 @@ void func_336(int iParam0)
 				func_335(476687617);
 			}
 			break;
-		case -524787708:
-			if (func_308(-524787708))
+		case joaat("WS_MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE"):
+			if (func_308(joaat("WS_MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE")))
 			{
 				func_301(joaat("MP004_CAMPDEF_GRT_PLAINS"));
 				func_322("MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE");
@@ -10881,8 +10881,8 @@ void func_336(int iParam0)
 				func_335(joaat("MP004_CAMPDEF_GRT_PLAINS"));
 			}
 			break;
-		case -1861414976:
-			if (func_308(-1861414976))
+		case joaat("WS_MP_CAMP_DEFEND_ROANOKE_CIRCLE"):
+			if (func_308(joaat("WS_MP_CAMP_DEFEND_ROANOKE_CIRCLE")))
 			{
 				func_301(568096966);
 				func_322("MP_CAMP_DEFEND_ROANOKE_CIRCLE");
@@ -11063,8 +11063,8 @@ void func_336(int iParam0)
 				func_321("MS_OTH_MAC");
 			}
 			break;
-		case -895073533:
-			if (func_308(-895073533))
+		case joaat("WS_MP_FETCH_OTH_SHEPHERDS_RISE"):
+			if (func_308(joaat("WS_MP_FETCH_OTH_SHEPHERDS_RISE")))
 			{
 				func_301(-1226747327);
 				func_301(-141795616);
@@ -11077,8 +11077,8 @@ void func_336(int iParam0)
 				func_321("MS_OTH_SHEPHERDS_RISE");
 			}
 			break;
-		case -2066272360:
-			if (func_308(-2066272360))
+		case joaat("WS_MP_FETCH_OTH_TALL_TREES"):
+			if (func_308(joaat("WS_MP_FETCH_OTH_TALL_TREES")))
 			{
 				func_301(joaat("MP001_REG_BGV0_MP_THEHUNT_CLUE01"));
 				func_322("MS_OTH_TALL_TREES");
@@ -11089,8 +11089,8 @@ void func_336(int iParam0)
 				func_321("MS_OTH_TALL_TREES");
 			}
 			break;
-		case 93964309:
-			if (func_308(93964309))
+		case joaat("WS_MP_FETCH_OTH_CASTORS"):
+			if (func_308(joaat("WS_MP_FETCH_OTH_CASTORS")))
 			{
 				func_301(joaat("DIS_HRT_ANIMALDIG"));
 				func_322("MS_OTH_CASTORS");
@@ -11101,8 +11101,8 @@ void func_336(int iParam0)
 				func_321("MS_OTH_CASTORS");
 			}
 			break;
-		case 2103908624:
-			if (func_308(2103908624))
+		case joaat("WS_MP_ASSASSINATION_TRK_GRZ_CAMP"):
+			if (func_308(joaat("WS_MP_ASSASSINATION_TRK_GRZ_CAMP")))
 			{
 				func_301(1883767827);
 				func_322("MS_AS_TRK_LAKE_ISABELLA");
@@ -14400,67 +14400,67 @@ int func_466(int iParam0)
 		case 19:
 			return -936216634;
 		case 20:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 21:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 22:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 23:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 24:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 25:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 26:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 28:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 29:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 33:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 34:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 30:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 32:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 31:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 35:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 36:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 37:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 38:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 39:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 27:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 51:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 52:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 40:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 41:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 42:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 47:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 48:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 43:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 44:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 49:
 			return -691985497;
 		case 50:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		case 45:
 			return -1923570663;
 		case 53:
@@ -14504,7 +14504,7 @@ int func_466(int iParam0)
 		case 96:
 			return 776060936;
 		case 97:
-			return 168093330;
+			return joaat("BLIP_STYLE_SHOP");
 		default:
 			break;
 	}
@@ -14787,13 +14787,13 @@ int func_475(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return UNLOCK::_UNLOCK_IS_UNLOCKED(-1815917332);
+			return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_CARD_SLOT_DEADEYE"));
 		case 1:
-			return UNLOCK::_UNLOCK_IS_UNLOCKED(446771306);
+			return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_CARD_SLOT_PASSIVE_0"));
 		case 2:
-			return UNLOCK::_UNLOCK_IS_UNLOCKED(214930631);
+			return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_CARD_SLOT_PASSIVE_1"));
 		case 3:
-			return UNLOCK::_UNLOCK_IS_UNLOCKED(1057421621);
+			return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_CARD_SLOT_PASSIVE_2"));
 		default:
 			break;
 	}
@@ -15047,8 +15047,8 @@ void func_483(int iParam0)
 			func_218(678, 0);
 			break;
 		case 23:
-			UNLOCK::_UNLOCK_SET_UNLOCKED(-200143754, true);
-			UNLOCK::_UNLOCK_SET_VISIBLE(-200143754, true);
+			UNLOCK::_UNLOCK_SET_UNLOCKED(joaat("SP_WEAPON_DUALWIELD"), true);
+			UNLOCK::_UNLOCK_SET_VISIBLE(joaat("SP_WEAPON_DUALWIELD"), true);
 			WEAPON::_0x83B8D50EB9446BBA(PLAYER::PLAYER_PED_ID(), 1);
 			break;
 		case 47:
@@ -16236,7 +16236,7 @@ int func_519(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2142074819:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_01"):
 			return 522;
 		case -2141419899:
 			return 405;
@@ -16246,19 +16246,19 @@ int func_519(int iParam0, int iParam1)
 			return 102;
 		case -2101264851:
 			return 192;
-		case -2100409704:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_02"):
 			return 471;
 		case -2073072369:
 			return 57;
 		case -2069570138:
 			return 25;
-		case -2066272360:
+		case joaat("WS_MP_FETCH_OTH_TALL_TREES"):
 			return 395;
 		case -2058120606:
 			return 194;
-		case -2056579774:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_04"):
 			return 465;
-		case -2043909922:
+		case joaat("WS_MP_JAIL_DOORS_BLACKWATER_UNLOCK"):
 			return 339;
 		case -2038424081:
 			return 49;
@@ -16282,25 +16282,25 @@ int func_519(int iParam0, int iParam1)
 			return 336;
 		case -1939389836:
 			return 417;
-		case -1932919229:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_04"):
 			return 429;
 		case -1925798111:
 			return 41;
-		case -1914141706:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_03"):
 			return 440;
-		case -1906892166:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_VALENTINE_02"):
 			return 404;
-		case -1882707460:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_03"):
 			return 464;
-		case -1861414976:
+		case joaat("WS_MP_CAMP_DEFEND_ROANOKE_CIRCLE"):
 			return 381;
 		case -1852605133:
 			return 10;
-		case -1848799275:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_RHODES_03"):
 			return 410;
 		case -1847672446:
 			return 312;
-		case -1842033327:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_04"):
 			return 505;
 		case -1840704908:
 			return 274;
@@ -16312,7 +16312,7 @@ int func_519(int iParam0, int iParam1)
 			return 54;
 		case -1831552326:
 			return 121;
-		case -1827602683:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_02"):
 			return 447;
 		case -1825294305:
 			return 252;
@@ -16330,15 +16330,15 @@ int func_519(int iParam0, int iParam1)
 			return 139;
 		case -1753769127:
 			return 399;
-		case -1749433374:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_03"):
 			return 480;
-		case -1749043433:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_04"):
 			return 525;
 		case -1741667789:
 			return 62;
 		case -1738165526:
 			return 3;
-		case -1719055206:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_03"):
 			return 520;
 		case -1718674470:
 			return 23;
@@ -16348,43 +16348,43 @@ int func_519(int iParam0, int iParam1)
 			return 13;
 		case -1706438978:
 			return 220;
-		case -1705799799:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_01"):
 			return 422;
 		case -1700452710:
 			return 317;
-		case -1684974589:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_02"):
 			return 467;
 		case -1674179981:
 			return 53;
-		case -1673998598:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_03"):
 			return 528;
 		case -1666278201:
 			return 33;
-		case -1664435783:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_02"):
 			return 487;
-		case -1624627591:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_02"):
 			return 439;
 		case -1612662716:
 			return 198;
-		case -1610966108:
+		case joaat("WS_MP_HIDEOUT_CUMBERLAND_FALLS"):
 			return 355;
 		case -1608141409:
 			return 539;
-		case -1585840296:
+		case joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK"):
 			return 337;
 		case -1582926490:
 			return 144;
 		case -1579419919:
 			return 145;
-		case -1578292898:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_02"):
 			return 435;
-		case -1573753524:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_03"):
 			return 504;
 		case -1558439474:
 			return 286;
 		case -1556041029:
 			return 411;
-		case -1547280108:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_02"):
 			return 519;
 		case -1532284567:
 			return 114;
@@ -16394,17 +16394,17 @@ int func_519(int iParam0, int iParam1)
 			return 206;
 		case -1523910291:
 			return 153;
-		case -1502194556:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_03"):
 			return 524;
-		case -1462313959:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_02"):
 			return 463;
-		case -1455998786:
+		case joaat("WS_MP_HIDEOUT_SEA_OF_CORONADO"):
 			return 371;
 		case -1447311849:
 			return 321;
-		case -1445041595:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_04"):
 			return 529;
-		case -1442844448:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_01"):
 			return 466;
 		case -1436021162:
 			return 170;
@@ -16412,7 +16412,7 @@ int func_519(int iParam0, int iParam1)
 			return 12;
 		case -1425209566:
 			return 32;
-		case -1422877860:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_04"):
 			return 473;
 		case -1419919497:
 			return 22;
@@ -16420,35 +16420,35 @@ int func_519(int iParam0, int iParam1)
 			return 71;
 		case -1405998267:
 			return 103;
-		case -1395855864:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_02"):
 			return 479;
 		case -1387772214:
 			return 408;
-		case -1378911044:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_03"):
 			return 476;
-		case -1369678628:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_03"):
 			return 488;
 		case -1344601768:
 			return 348;
-		case -1341750998:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_04"):
 			return 477;
-		case -1340339190:
+		case joaat("WS_MP_HIDEOUT_ROCKY_SEVEN"):
 			return 363;
-		case -1339871203:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_04"):
 			return 533;
 		case -1329135070:
 			return 138;
-		case -1319875891:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_01"):
 			return 438;
 		case -1311865656:
 			return 37;
-		case -1296807958:
+		case joaat("WS_MP_HIDEOUT_QUAKERS_COVE"):
 			return 353;
-		case -1290997627:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_01"):
 			return 462;
-		case -1287894233:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_02"):
 			return 427;
-		case -1283202000:
+		case joaat("WS_MP_HIDEOUT_THE_LOFT"):
 			return 354;
 		case -1282804314:
 			return 255;
@@ -16456,7 +16456,7 @@ int func_519(int iParam0, int iParam1)
 			return 169;
 		case -1271608261:
 			return 96;
-		case -1262828457:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_03"):
 			return 424;
 		case -1257057567:
 			return 21;
@@ -16492,13 +16492,13 @@ int func_519(int iParam0, int iParam1)
 			return 122;
 		case -1145519186:
 			return 98;
-		case -1145153057:
+		case joaat("WS_MP_JAIL_DOORS_BLACKWATER_LOCK"):
 			return 340;
 		case -1124061431:
 			return 229;
 		case -1123615607:
 			return 29;
-		case -1120447016:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_03"):
 			return 444;
 		case -1095341658:
 			return 409;
@@ -16520,11 +16520,11 @@ int func_519(int iParam0, int iParam1)
 			return 383;
 		case -1029225159:
 			return 104;
-		case -1023919011:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_03"):
 			return 432;
 		case -1014145132:
 			return 273;
-		case -1004266677:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_04"):
 			return 461;
 		case -978957786:
 			return 237;
@@ -16534,27 +16534,27 @@ int func_519(int iParam0, int iParam1)
 			return 150;
 		case -947815572:
 			return 400;
-		case -941648233:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_03"):
 			return 512;
 		case -939420910:
 			return 44;
-		case -931337253:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_04"):
 			return 425;
 		case -925071604:
 			return 542;
 		case -919512195:
 			return 40;
-		case -911126844:
+		case joaat("WS_MP_HIDEOUT_RATTLESNAKE_HOLLOW"):
 			return 369;
-		case -897750037:
+		case joaat("WS_MP_HIDEOUT_CUERA_SECO"):
 			return 367;
-		case -895307590:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_04"):
 			return 501;
-		case -895073533:
+		case joaat("WS_MP_FETCH_OTH_SHEPHERDS_RISE"):
 			return 394;
 		case joaat("WS_MP_CAMP_DEFEND_TALL_TREES"):
 			return 390;
-		case -888632790:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_01"):
 			return 506;
 		case -879507474:
 			return 223;
@@ -16564,11 +16564,11 @@ int func_519(int iParam0, int iParam1)
 			return 81;
 		case -853383233:
 			return 63;
-		case -852602679:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_04"):
 			return 433;
-		case -851626677:
+		case joaat("WS_MP_HIDEOUT_CHOLLA_SPRINGS"):
 			return 372;
-		case -839820438:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_03"):
 			return 420;
 		case -828139293:
 			return 246;
@@ -16576,9 +16576,9 @@ int func_519(int iParam0, int iParam1)
 			return 535;
 		case -811637947:
 			return 232;
-		case -800891377:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_01"):
 			return 494;
-		case -797689456:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_02"):
 			return 515;
 		case -796902762:
 			return 86;
@@ -16588,7 +16588,7 @@ int func_519(int iParam0, int iParam1)
 			return 248;
 		case -785605431:
 			return 236;
-		case -781631220:
+		case joaat("WS_MP_INTRO_HIDEOUT_RHODES"):
 			return 328;
 		case -764163380:
 			return 215;
@@ -16598,17 +16598,17 @@ int func_519(int iParam0, int iParam1)
 			return 58;
 		case -736853952:
 			return 302;
-		case -734416508:
+		case joaat("WS_MP_HIDEOUT_OLD_BACCHUS_PLACE"):
 			return 373;
-		case -729679654:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_02"):
 			return 531;
 		case -699277634:
 			return 4;
-		case -693828600:
+		case joaat("WS_MP_HIDEOUT_FORT_RIGGS"):
 			return 356;
 		case -683458244:
 			return 78;
-		case -677920206:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_02"):
 			return 459;
 		case -666014935:
 			return 155;
@@ -16622,11 +16622,11 @@ int func_519(int iParam0, int iParam1)
 			return 320;
 		case -639037538:
 			return 183;
-		case -635323621:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_04"):
 			return 513;
-		case -632127260:
+		case joaat("WS_MP_JAIL_DOORS_STRAWBERRY_UNLOCK"):
 			return 343;
-		case -630295963:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_02"):
 			return 495;
 		case -628542779:
 			return 69;
@@ -16634,13 +16634,13 @@ int func_519(int iParam0, int iParam1)
 			return 306;
 		case -618620429:
 			return 185;
-		case -604603161:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_03"):
 			return 472;
 		case joaat("WS_MP_CAMP_DEFEND_GAPTOOTH_BREACH"):
 			return 384;
-		case -583127403:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_02"):
 			return 507;
-		case -574190021:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_04"):
 			return 493;
 		case -554519756:
 			return 536;
@@ -16652,7 +16652,7 @@ int func_519(int iParam0, int iParam1)
 			return 172;
 		case -534215902:
 			return 128;
-		case -524787708:
+		case joaat("WS_MP_CAMP_DEFEND_GREAT_PLAINS_CIRCLE"):
 			return 380;
 		case -524145696:
 			return 115;
@@ -16660,17 +16660,17 @@ int func_519(int iParam0, int iParam1)
 			return 300;
 		case -515561750:
 			return 225;
-		case -510945576:
+		case joaat("WS_MP_FORT_WALLACE_DOORS_UNLOCK_HOLD_OPEN"):
 			return 338;
 		case -503955743:
 			return 235;
-		case -502473159:
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_BLACKWATER"):
 			return 326;
 		case -502324015:
 			return 8;
-		case -500245243:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_03"):
 			return 516;
-		case -492731190:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_02"):
 			return 419;
 		case -491981251:
 			return 184;
@@ -16682,13 +16682,13 @@ int func_519(int iParam0, int iParam1)
 			return 254;
 		case -460024530:
 			return 350;
-		case -448554447:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_03"):
 			return 532;
 		case -441204543:
 			return 534;
 		case -434590080:
 			return 212;
-		case -414883443:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_03"):
 			return 460;
 		case -404698347:
 			return 202;
@@ -16698,17 +16698,17 @@ int func_519(int iParam0, int iParam1)
 			return 374;
 		case -389056691:
 			return 257;
-		case -381925743:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_03"):
 			return 508;
 		case joaat("WS_MP_CAMP_DEFEND_HENNIGANS_STEAD"):
 			return 389;
-		case -364475655:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_01"):
 			return 430;
 		case -360036154:
 			return 304;
 		case -356975260:
 			return 101;
-		case -355531636:
+		case joaat("WS_MP_HIDEOUT_REPENTANCE"):
 			return 370;
 		case -350863510:
 			return 160;
@@ -16720,7 +16720,7 @@ int func_519(int iParam0, int iParam1)
 			return 334;
 		case -330120947:
 			return 333;
-		case -329176208:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_03"):
 			return 492;
 		case -311373772:
 			return 540;
@@ -16728,9 +16728,9 @@ int func_519(int iParam0, int iParam1)
 			return 311;
 		case -299522880:
 			return 319;
-		case -297483764:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_01"):
 			return 434;
-		case -279765076:
+		case joaat("WS_MP_JAIL_DOORS_VALENTINE_LOCK"):
 			return 346;
 		case -270094635:
 			return 253;
@@ -16740,23 +16740,23 @@ int func_519(int iParam0, int iParam1)
 			return 231;
 		case -254562075:
 			return 130;
-		case -243260793:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_01"):
 			return 418;
 		case -238080464:
 			return 119;
 		case -233743613:
 			return 258;
-		case -226366310:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_02"):
 			return 523;
 		case -223469678:
 			return 201;
 		case -220282381:
 			return 137;
-		case -211583122:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_04"):
 			return 517;
-		case -209894800:
+		case joaat("WS_MP_JAIL_DOORS_VALENTINE_UNLOCK"):
 			return 345;
-		case -207792846:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_02"):
 			return 483;
 		case -191424539:
 			return 147;
@@ -16768,21 +16768,21 @@ int func_519(int iParam0, int iParam1)
 			return 95;
 		case -129643890:
 			return 11;
-		case -110352060:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_02"):
 			return 431;
-		case -108780030:
+		case joaat("WS_MP_HIDEOUT_FARMHOUSE"):
 			return 351;
 		case -108307814:
 			return 28;
 		case -102827640:
 			return 403;
-		case -101740709:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_02"):
 			return 499;
 		case -99303535:
 			return 165;
-		case -90486812:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_02"):
 			return 491;
-		case -89829333:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_02"):
 			return 423;
 		case -86199844:
 			return 143;
@@ -16790,19 +16790,19 @@ int func_519(int iParam0, int iParam1)
 			return 152;
 		case -76237062:
 			return 309;
-		case -75928821:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_04"):
 			return 509;
 		case -75024673:
 			return 244;
-		case -74031276:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_04"):
 			return 441;
-		case -70727482:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_04"):
 			return 453;
 		case -63926460:
 			return 87;
-		case -61411516:
+		case joaat("WS_MP_HIDEOUT_COLTER"):
 			return 358;
-		case -38135693:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_03"):
 			return 468;
 		case -35658630:
 			return 24;
@@ -16834,11 +16834,11 @@ int func_519(int iParam0, int iParam1)
 			return 541;
 		case joaat("WS_MP_CAMP_DEFEND_NEW_HANOVER"):
 			return 391;
-		case 74872959:
+		case joaat("WS_MP_INTRO_HIDEOUT_TUMBLEWEED"):
 			return 331;
-		case 84709454:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_01"):
 			return 454;
-		case 93964309:
+		case joaat("WS_MP_FETCH_OTH_CASTORS"):
 			return 396;
 		case 94263042:
 			return 276;
@@ -16846,7 +16846,7 @@ int func_519(int iParam0, int iParam1)
 			return 99;
 		case 141950038:
 			return 112;
-		case 148595040:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_01"):
 			return 530;
 		case 153152452:
 			return 84;
@@ -16862,17 +16862,17 @@ int func_519(int iParam0, int iParam1)
 			return 228;
 		case 210001842:
 			return 60;
-		case 215903338:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_01"):
 			return 490;
 		case 224551212:
 			return 140;
 		case 227918160:
 			return 180;
-		case 229371495:
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_TUMBLEWEED"):
 			return 327;
 		case 235928616:
 			return 271;
-		case 237155783:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_01"):
 			return 518;
 		case 249726958:
 			return 162;
@@ -16894,7 +16894,7 @@ int func_519(int iParam0, int iParam1)
 			return 195;
 		case 320943355:
 			return 131;
-		case 321629486:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_01"):
 			return 510;
 		case 330026330:
 			return 64;
@@ -16908,7 +16908,7 @@ int func_519(int iParam0, int iParam1)
 			return 186;
 		case 374115931:
 			return 88;
-		case 404823609:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_04"):
 			return 485;
 		case 405586984:
 			return 34;
@@ -16938,7 +16938,7 @@ int func_519(int iParam0, int iParam1)
 			return 214;
 		case 459290420:
 			return 316;
-		case 468797819:
+		case joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_LOCK"):
 			return 342;
 		case 469053995:
 			return 218;
@@ -16950,7 +16950,7 @@ int func_519(int iParam0, int iParam1)
 			return 146;
 		case 479419429:
 			return 290;
-		case 509781469:
+		case joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_CIRCLE"):
 			return 378;
 		case 514932331:
 			return 233;
@@ -16964,25 +16964,25 @@ int func_519(int iParam0, int iParam1)
 			return 113;
 		case 559573222:
 			return 238;
-		case 560154875:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_03"):
 			return 456;
-		case 565812320:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_03"):
 			return 448;
-		case 582380806:
+		case joaat("WS_MP_HIDEOUT_ABANDONED_MINING_STATION"):
 			return 359;
 		case 588987611:
 			return 177;
-		case 589380360:
+		case joaat("WS_MP_JAIL_DOORS_SAINT_DENIS_UNLOCK"):
 			return 341;
 		case 618699440:
 			return 75;
-		case 619839857:
+		case joaat("WS_MP_HIDEOUT_GAPTOOTH"):
 			return 376;
 		case 630808005:
 			return 126;
-		case 640520536:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_01"):
 			return 470;
-		case 642824856:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_01"):
 			return 482;
 		case 651395116:
 			return 279;
@@ -16990,7 +16990,7 @@ int func_519(int iParam0, int iParam1)
 			return 297;
 		case 665676602:
 			return 281;
-		case 673606600:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_03"):
 			return 500;
 		case 689024866:
 			return 132;
@@ -16998,11 +16998,11 @@ int func_519(int iParam0, int iParam1)
 			return 204;
 		case 704802028:
 			return 176;
-		case 715735881:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_03"):
 			return 484;
 		case 723021499:
 			return 250;
-		case 730069127:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_02"):
 			return 475;
 		case joaat("WS_MP_CAMP_DEFEND_TWO_ROCKS"):
 			return 382;
@@ -17010,23 +17010,23 @@ int func_519(int iParam0, int iParam1)
 			return 48;
 		case 757752139:
 			return 107;
-		case 784360470:
+		case joaat("WS_MP_HIDEOUT_SHIP_ROCK"):
 			return 362;
 		case 791041526:
 			return 18;
-		case 799106423:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_02"):
 			return 455;
-		case 803929300:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_04"):
 			return 469;
-		case 804063423:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_02"):
 			return 503;
 		case 817925178:
 			return 227;
-		case 826868753:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_01"):
 			return 474;
 		case 831940854:
 			return 407;
-		case 846837291:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_02"):
 			return 451;
 		case 865557632:
 			return 537;
@@ -17036,11 +17036,11 @@ int func_519(int iParam0, int iParam1)
 			return 385;
 		case 885203519:
 			return 315;
-		case 885378256:
+		case joaat("WS_MP_CAMP_DEFEND_GRIZZLIES_CIRCLE"):
 			return 379;
-		case 885777893:
+		case joaat("WS_MP_HIDEOUT_CAMP_PIKES"):
 			return 375;
-		case 896725436:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_02"):
 			return 511;
 		case 929582877:
 			return 368;
@@ -17052,21 +17052,21 @@ int func_519(int iParam0, int iParam1)
 			return 416;
 		case 945612176:
 			return 234;
-		case 965467037:
+		case joaat("WS_MP_JAIL_DOORS_STRAWBERRY_LOCK"):
 			return 344;
 		case 965986934:
 			return 19;
 		case 976539083:
 			return 295;
-		case 982765715:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_02"):
 			return 443;
 		case 1010885152:
 			return 7;
 		case 1015669983:
 			return 120;
-		case 1028084603:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_01"):
 			return 446;
-		case 1032791043:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_01"):
 			return 502;
 		case 1050128548:
 			return 269;
@@ -17076,23 +17076,23 @@ int func_519(int iParam0, int iParam1)
 			return 142;
 		case 1112996351:
 			return 538;
-		case 1126565489:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_01"):
 			return 486;
 		case 1140218954:
 			return 27;
 		case 1151197909:
 			return 242;
-		case 1153686207:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_03"):
 			return 452;
-		case 1157309080:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_01"):
 			return 514;
-		case 1159471771:
+		case joaat("WS_MP_HIDEOUT_TALL_TREES"):
 			return 361;
 		case 1160698568:
 			return 133;
 		case 1164928979:
 			return 156;
-		case 1166612791:
+		case joaat("WS_MP_INTRO_HIDEOUT_BLACKWATER"):
 			return 330;
 		case 1167397384:
 			return 292;
@@ -17114,29 +17114,29 @@ int func_519(int iParam0, int iParam1)
 			return 158;
 		case 1221801385:
 			return 310;
-		case 1232840551:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_04"):
 			return 481;
-		case 1238086793:
+		case joaat("WS_MP_HIDEOUT_LAKAY"):
 			return 347;
 		case 1248935549:
 			return 415;
 		case 1250636944:
 			return 245;
-		case 1279586666:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_04"):
 			return 449;
-		case 1280406542:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_01"):
 			return 442;
 		case joaat("WS_MP_CAMP_DEFEND_LITTLE_CREEK"):
 			return 387;
-		case 1302228510:
+		case joaat("WS_MP_HIDEOUT_BEAVER_HOLLOW"):
 			return 349;
 		case 1306158345:
 			return 199;
-		case 1321892118:
+		case joaat("WS_MP_HIDEOUT_STILLWATER_STRANDS"):
 			return 357;
-		case 1325325699:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_04"):
 			return 421;
-		case 1341699707:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_01"):
 			return 526;
 		case 1350371763:
 			return 20;
@@ -17148,7 +17148,7 @@ int func_519(int iParam0, int iParam1)
 			return 249;
 		case 1360745816:
 			return 80;
-		case 1362354162:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_04"):
 			return 497;
 		case 1376646519:
 			return 210;
@@ -17168,7 +17168,7 @@ int func_519(int iParam0, int iParam1)
 			return 118;
 		case 1478132521:
 			return 303;
-		case 1480425906:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_01"):
 			return 450;
 		case 1485195808:
 			return 50;
@@ -17178,7 +17178,7 @@ int func_519(int iParam0, int iParam1)
 			return 280;
 		case 1488453464:
 			return 318;
-		case 1494062795:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_01"):
 			return 426;
 		case 1497516462:
 			return 5;
@@ -17190,13 +17190,13 @@ int func_519(int iParam0, int iParam1)
 			return 166;
 		case 1517904467:
 			return 203;
-		case 1517951665:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_03"):
 			return 436;
-		case 1521272922:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_01"):
 			return 458;
 		case 1522511407:
 			return 265;
-		case 1549124796:
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_VALENTINE"):
 			return 325;
 		case 1557082963:
 			return 161;
@@ -17208,7 +17208,7 @@ int func_519(int iParam0, int iParam1)
 			return 289;
 		case 1591451572:
 			return 301;
-		case 1601722481:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_04"):
 			return 521;
 		case 1607768502:
 			return 9;
@@ -17224,23 +17224,23 @@ int func_519(int iParam0, int iParam1)
 			return 148;
 		case 1665756137:
 			return 91;
-		case 1666964801:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_02"):
 			return 527;
 		case 1691618738:
 			return 66;
 		case 1698972798:
 			return 352;
-		case 1703398561:
+		case joaat("WS_MP_HIDEOUT_SOLOMONS_FOLLY"):
 			return 365;
 		case 1703426636:
 			return 43;
-		case 1708045337:
+		case joaat("WS_MP_INTRO_HIDEOUT_VALENTINE"):
 			return 329;
 		case 1713221411:
 			return 135;
 		case 1743048395:
 			return 213;
-		case 1744443559:
+		case joaat("WS_MP_CAMP_DEFEND_HEARTLANDS_HILLTOP"):
 			return 377;
 		case 1766284049:
 			return 92;
@@ -17248,9 +17248,9 @@ int func_519(int iParam0, int iParam1)
 			return 544;
 		case 1776302352:
 			return 299;
-		case 1788424349:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_04"):
 			return 445;
-		case 1812677765:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_TUMBLEWEED_01"):
 			return 398;
 		case 1822001510:
 			return 197;
@@ -17258,7 +17258,7 @@ int func_519(int iParam0, int iParam1)
 			return 97;
 		case 1850082804:
 			return 193;
-		case 1866434585:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_BLACKWATER_01"):
 			return 413;
 		case 1867912207:
 			return 68;
@@ -17266,13 +17266,13 @@ int func_519(int iParam0, int iParam1)
 			return 364;
 		case 1884271742:
 			return 51;
-		case 1891256113:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_04"):
 			return 437;
 		case 1908151693:
 			return 335;
 		case 1926308480:
 			return 94;
-		case 1932172605:
+		case joaat("WS_MP_HIDEOUT_CLEMENS_COVE"):
 			return 360;
 		case 1944170089:
 			return 159;
@@ -17286,7 +17286,7 @@ int func_519(int iParam0, int iParam1)
 			return 89;
 		case 2008888900:
 			return 178;
-		case 2013720626:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_04"):
 			return 489;
 		case 2016141805:
 			return 6;
@@ -17300,29 +17300,29 @@ int func_519(int iParam0, int iParam1)
 			return 293;
 		case 2037589949:
 			return 61;
-		case 2048790450:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_01"):
 			return 498;
 		case 2051822093:
 			return 284;
-		case 2068208444:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_03"):
 			return 428;
-		case 2068253437:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_01"):
 			return 478;
 		case 2077022393:
 			return 291;
-		case 2079292950:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_04"):
 			return 457;
 		case 2080210939:
 			return 267;
 		case 2091701359:
 			return 39;
-		case 2103908624:
+		case joaat("WS_MP_ASSASSINATION_TRK_GRZ_CAMP"):
 			return 397;
 		case 2109952320:
 			return 189;
-		case 2113625508:
+		case joaat("WS_MP_INTRO_JESSICA_CAMP_RHODES"):
 			return 324;
-		case 2127412005:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_03"):
 			return 496;
 		case 2127577956:
 			return 241;
@@ -17343,7 +17343,7 @@ int func_519(int iParam0, int iParam1)
 
 int func_520(int iParam0)
 {
-	if (iParam0 == 1932172605)
+	if (iParam0 == joaat("WS_MP_HIDEOUT_CLEMENS_COVE"))
 	{
 		return 1;
 	}
@@ -17604,7 +17604,7 @@ int func_540(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1812677765:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_TUMBLEWEED_01"):
 			return 1093030199;
 		case -1753769127:
 			return -1423344014;
@@ -17616,7 +17616,7 @@ int func_540(int iParam0)
 			return 1748373207;
 		case -102827640:
 			return -736226816;
-		case -1906892166:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_VALENTINE_02"):
 			return 1497923922;
 		case -2141419899:
 			return 87946549;
@@ -17628,13 +17628,13 @@ int func_540(int iParam0)
 			return 42616763;
 		case -1095341658:
 			return -948864541;
-		case -1848799275:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_RHODES_03"):
 			return 879263546;
 		case -1556041029:
 			return -751879320;
 		case -1808329564:
 			return -864071044;
-		case 1866434585:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_BLACKWATER_01"):
 			return 1779169712;
 		case 1421300489:
 			return 1083754485;
@@ -17644,233 +17644,233 @@ int func_540(int iParam0)
 			return 1532789536;
 		case -1939389836:
 			return 1916363327;
-		case -243260793:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_01"):
 			return -536919806;
-		case -492731190:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_02"):
 			return -1774606389;
-		case -839820438:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_03"):
 			return 999671710;
-		case 1325325699:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_04"):
 			return -1051551519;
-		case -1705799799:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_01"):
 			return 1303507358;
-		case -89829333:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_02"):
 			return -519371139;
-		case -1262828457:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_03"):
 			return 120604643;
-		case -931337253:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_04"):
 			return -1819679999;
-		case 1494062795:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_01"):
 			return -2145807603;
-		case -1287894233:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_02"):
 			return -583431154;
-		case 2068208444:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_03"):
 			return 1096335200;
-		case -1932919229:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_04"):
 			return -270131786;
-		case -364475655:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_01"):
 			return 242017654;
-		case -110352060:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_02"):
 			return 120283199;
-		case -1023919011:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_03"):
 			return 2127497940;
-		case -852602679:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_04"):
 			return -1643311717;
-		case -297483764:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_01"):
 			return -1765524972;
-		case -1578292898:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_02"):
 			return 1364667248;
-		case 1517951665:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_03"):
 			return -680105331;
-		case 1891256113:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_04"):
 			return -252982535;
-		case -1624627591:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_02"):
 			return 908136834;
-		case -1914141706:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_03"):
 			return 1657354548;
-		case -74031276:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_04"):
 			return -2001856298;
-		case 1280406542:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_01"):
 			return 1108419054;
-		case 982765715:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_02"):
 			return 1665904081;
-		case -1120447016:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_03"):
 			return -1279448947;
-		case 1788424349:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_04"):
 			return -2143372379;
-		case 1028084603:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_01"):
 			return -1279389329;
-		case -1827602683:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_02"):
 			return -1954638951;
-		case 565812320:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_03"):
 			return 574916087;
-		case 1279586666:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_04"):
 			return 1793712122;
-		case 1480425906:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_01"):
 			return -847027479;
-		case 846837291:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_02"):
 			return -946682429;
-		case 1153686207:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_03"):
 			return 67603480;
-		case -70727482:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_04"):
 			return 1991561012;
-		case 84709454:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_01"):
 			return 1292550073;
-		case 799106423:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_02"):
 			return -233702408;
-		case 560154875:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_03"):
 			return -284530484;
-		case 2079292950:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_04"):
 			return 1510796294;
-		case 1521272922:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_01"):
 			return 616635225;
-		case -677920206:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_02"):
 			return -25254585;
-		case -414883443:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_03"):
 			return -1058872649;
-		case -1004266677:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_04"):
 			return -1818498296;
-		case -1290997627:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_01"):
 			return -657334314;
-		case -1462313959:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_02"):
 			return -2144326250;
-		case -1882707460:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_03"):
 			return -199228359;
-		case -2056579774:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_04"):
 			return 806606916;
-		case -1442844448:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_01"):
 			return 2137579614;
-		case -1684974589:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_02"):
 			return -476328287;
-		case -38135693:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_03"):
 			return -2025289364;
-		case 803929300:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_04"):
 			return 536560689;
-		case -2100409704:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_02"):
 			return 1106131202;
-		case -604603161:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_03"):
 			return -1428524966;
-		case -1422877860:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_04"):
 			return 1307857318;
-		case 826868753:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_01"):
 			return 1117275649;
-		case 730069127:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_02"):
 			return 1628921491;
-		case -1378911044:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_03"):
 			return -1815797865;
-		case -1341750998:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_04"):
 			return 1673216541;
-		case 2068253437:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_01"):
 			return 1803637785;
-		case -1395855864:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_02"):
 			return 1812712970;
-		case -1749433374:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_03"):
 			return 474786474;
-		case 1232840551:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_04"):
 			return 492662035;
-		case 642824856:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_01"):
 			return 1951742298;
-		case -207792846:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_02"):
 			return -313167137;
-		case 715735881:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_03"):
 			return 1673463331;
-		case 404823609:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_04"):
 			return 568859874;
-		case 1126565489:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_01"):
 			return -1623539657;
-		case -1664435783:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_02"):
 			return -1939338394;
-		case -1369678628:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_03"):
 			return -860360254;
-		case 2013720626:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_04"):
 			return -409479737;
-		case 215903338:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_01"):
 			return -1353663029;
-		case -90486812:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_02"):
 			return 11141848;
-		case -329176208:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_03"):
 			return 405359977;
-		case -574190021:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_04"):
 			return -1754697240;
-		case -800891377:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_01"):
 			return 1199250380;
-		case -630295963:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_02"):
 			return 1303859698;
-		case 2127412005:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_03"):
 			return 131702782;
-		case 1362354162:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_04"):
 			return -1358954864;
-		case 2048790450:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_01"):
 			return 1425800019;
-		case -101740709:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_02"):
 			return 1216579993;
-		case 673606600:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_03"):
 			return -1508001532;
-		case -895307590:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_04"):
 			return 1551178888;
-		case 1032791043:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_01"):
 			return 743168245;
-		case 804063423:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_02"):
 			return 1098358070;
-		case -1573753524:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_03"):
 			return -1871896679;
-		case -1842033327:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_04"):
 			return -590242693;
-		case -888632790:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_01"):
 			return 30280292;
-		case -583127403:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_02"):
 			return -1211924901;
-		case -381925743:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_03"):
 			return 2088585697;
-		case -75928821:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_04"):
 			return -14824697;
-		case 321629486:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_01"):
 			return -46828581;
-		case 896725436:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_02"):
 			return -1858229297;
-		case -941648233:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_03"):
 			return -216811017;
-		case -635323621:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_04"):
 			return -1431123016;
-		case 1157309080:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_01"):
 			return -1448418975;
-		case -797689456:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_02"):
 			return -1645569664;
-		case -500245243:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_03"):
 			return -2122265662;
-		case -211583122:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_04"):
 			return -510114122;
-		case 237155783:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_01"):
 			return 1857676106;
-		case -1547280108:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_02"):
 			return -387074757;
-		case -1719055206:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_03"):
 			return 2001473838;
-		case 1601722481:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_04"):
 			return 1283630779;
-		case -2142074819:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_01"):
 			return 696753474;
-		case -226366310:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_02"):
 			return 584821987;
-		case -1502194556:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_03"):
 			return 54505570;
-		case -1749043433:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_04"):
 			return -894288155;
-		case 1341699707:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_01"):
 			return 353008762;
-		case 1666964801:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_02"):
 			return -973153750;
-		case -1673998598:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_03"):
 			return -394475958;
-		case -1445041595:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_04"):
 			return 1277031798;
-		case 148595040:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_01"):
 			return -1244697162;
-		case -729679654:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_02"):
 			return 834697453;
-		case -448554447:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_03"):
 			return 1419259602;
-		case -1339871203:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_04"):
 			return -378666035;
 		default:
 			break;
@@ -17882,9 +17882,9 @@ int func_541(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1319875891:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_01"):
 			return 236;
-		case 640520536:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_01"):
 			return 237;
 		default:
 			break;
@@ -17896,241 +17896,241 @@ char* func_542(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1812677765:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_TUMBLEWEED_01"):
 			return "MS_TRE04_TUMBLEWEED01";
-		case -1906892166:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_VALENTINE_02"):
 			return "MS_TRE02_VALENTINE02";
-		case -1848799275:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_RHODES_03"):
 			return "MS_TRE03_RHODES03";
-		case 1866434585:
+		case joaat("WS_MP_TREASURE_MAP_INTRO_BLACKWATER_01"):
 			return "MS_TRE01_BLACKWATER01";
-		case -243260793:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_01"):
 			return "MS_TRE02_BARDSCROSSING01";
-		case -492731190:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_02"):
 			return "MS_TRE02_BARDSCROSSING02";
-		case -839820438:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_03"):
 			return "MS_TRE02_BARDSCROSSING03";
-		case 1325325699:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_04"):
 			return "MS_TRE02_BARDSCROSSING04";
-		case -1705799799:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_01"):
 			return "MS_TRE04_BENEDICTPOINT01";
-		case -89829333:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_02"):
 			return "MS_TRE04_BENEDICTPOINT02";
-		case -1262828457:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_03"):
 			return "MS_TRE04_BENEDICTPOINT03";
-		case -931337253:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_04"):
 			return "MS_TRE04_BENEDICTPOINT04";
-		case 1494062795:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_01"):
 			return "MS_TRE01_BLACKBONEFOREST01";
-		case -1287894233:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_02"):
 			return "MS_TRE01_BLACKBONEFOREST02";
-		case 2068208444:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_03"):
 			return "MS_TRE01_BLACKBONEFOREST03";
-		case -1932919229:
+		case joaat("WS_MP_TREASURE_MAP_BLACKBONE_FOREST_04"):
 			return "MS_TRE01_BLACKBONEFOREST04";
-		case -364475655:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_01"):
 			return "MS_TRE03_BLUEWATERMARSH01";
-		case -110352060:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_02"):
 			return "MS_TRE03_BLUEWATERMARSH02";
-		case -1023919011:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_03"):
 			return "MS_TRE03_BLUEWATERMARSH03";
-		case -852602679:
+		case joaat("WS_MP_TREASURE_MAP_BLUEWATER_MARSH_04"):
 			return "MS_TRE03_BLUEWATERMARSH04";
-		case -297483764:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_01"):
 			return "MS_TRE02_BRANDYWINEDROP01";
-		case -1578292898:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_02"):
 			return "MS_TRE02_BRANDYWINEDROP02";
-		case 1517951665:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_03"):
 			return "MS_TRE02_BRANDYWINEDROP03";
-		case 1891256113:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_04"):
 			return "MS_TRE02_BRANDYWINEDROP04";
-		case -1624627591:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_02"):
 			return "MS_TRE02_BURNTTOWN02";
-		case -1914141706:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_03"):
 			return "MS_TRE02_BURNTTOWN03";
-		case -74031276:
+		case joaat("WS_MP_TREASURE_MAP_BURNT_TOWN_04"):
 			return "MS_TRE02_BURNTTOWN04";
-		case 1280406542:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_01"):
 			return "MS_TRE02_CALUMETRAVINE01";
-		case 982765715:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_02"):
 			return "MS_TRE02_CALUMETRAVINE02";
-		case -1120447016:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_03"):
 			return "MS_TRE02_CALUMETRAVINE03";
-		case 1788424349:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_04"):
 			return "MS_TRE02_CALUMETRAVINE04";
-		case 1028084603:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_01"):
 			return "MS_TRE01_CATTAILPOND01";
-		case -1827602683:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_02"):
 			return "MS_TRE01_CATTAILPOND02";
-		case 565812320:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_03"):
 			return "MS_TRE01_CATTAILPOND03";
-		case 1279586666:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_04"):
 			return "MS_TRE01_CATTAILPOND04";
-		case 1480425906:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_01"):
 			return "MS_TRE02_CITADELROCK01";
-		case 846837291:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_02"):
 			return "MS_TRE02_CITADELROCK02";
-		case 1153686207:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_03"):
 			return "MS_TRE02_CITADELROCK03";
-		case -70727482:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_04"):
 			return "MS_TRE02_CITADELROCK04";
-		case 84709454:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_01"):
 			return "MS_TRE03_CIVILWARBATTLEFIELD01";
-		case 799106423:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_02"):
 			return "MS_TRE03_CIVILWARBATTLEFIELD02";
-		case 560154875:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_03"):
 			return "MS_TRE03_CIVILWARBATTLEFIELD03";
-		case 2079292950:
+		case joaat("WS_MP_TREASURE_MAP_CIVIL_WAR_FIELD_04"):
 			return "MS_TRE03_CIVILWARBATTLEFIELD04";
-		case 1521272922:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_01"):
 			return "MS_TRE02_WESTCUMBERLANDFOREST01";
-		case -677920206:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_02"):
 			return "MS_TRE02_WESTCUMBERLANDFOREST02";
-		case -414883443:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_03"):
 			return "MS_TRE02_WESTCUMBERLANDFOREST03";
-		case -1004266677:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_04"):
 			return "MS_TRE02_WESTCUMBERLANDFOREST04";
-		case -1290997627:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_01"):
 			return "MS_TRE01_DAKOTARIVERBEND01";
-		case -1462313959:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_02"):
 			return "MS_TRE01_DAKOTARIVERBEND02";
-		case -1882707460:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_03"):
 			return "MS_TRE01_DAKOTARIVERBEND03";
-		case -2056579774:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_04"):
 			return "MS_TRE01_DAKOTARIVERBEND04";
-		case -1442844448:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_01"):
 			return "MS_TRE01_DIABLORIDGE01";
-		case -1684974589:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_02"):
 			return "MS_TRE01_DIABLORIDGE02";
-		case -38135693:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_03"):
 			return "MS_TRE01_DIABLORIDGE03";
-		case 803929300:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_04"):
 			return "MS_TRE01_DIABLORIDGE04";
-		case -2100409704:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_02"):
 			return "MS_TRE01_EASTWATSONS02";
-		case -604603161:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_03"):
 			return "MS_TRE01_EASTWATSONS03";
-		case -1422877860:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_04"):
 			return "MS_TRE01_EASTWATSONS04";
-		case 826868753:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_01"):
 			return "MS_TRE04_GAPTOOTHBREACH01";
-		case 730069127:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_02"):
 			return "MS_TRE04_GAPTOOTHBREACH02";
-		case -1378911044:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_03"):
 			return "MS_TRE04_GAPTOOTHBREACH03";
-		case -1341750998:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_04"):
 			return "MS_TRE04_GAPTOOTHBREACH04";
-		case 2068253437:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_01"):
 			return "MS_TRE04_HANGINGROCK01";
-		case -1395855864:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_02"):
 			return "MS_TRE04_HANGINGROCK02";
-		case -1749433374:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_03"):
 			return "MS_TRE04_HANGINGROCK03";
-		case 1232840551:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_04"):
 			return "MS_TRE04_HANGINGROCK04";
-		case 642824856:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_01"):
 			return "MS_TRE01_HAWKSEYECREEK01";
-		case -207792846:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_02"):
 			return "MS_TRE01_HAWKSEYECREEK02";
-		case 715735881:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_03"):
 			return "MS_TRE01_HAWKSEYECREEK03";
-		case 404823609:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_04"):
 			return "MS_TRE01_HAWKSEYECREEK04";
-		case 1126565489:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_01"):
 			return "MS_TRE04_HENNIGANSTEAD01";
-		case -1664435783:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_02"):
 			return "MS_TRE04_HENNIGANSTEAD02";
-		case -1369678628:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_03"):
 			return "MS_TRE04_HENNIGANSTEAD03";
-		case 2013720626:
+		case joaat("WS_MP_TREASURE_MAP_HENNIGANS_STEAD_04"):
 			return "MS_TRE04_HENNIGANSTEAD04";
-		case 215903338:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_01"):
 			return "MS_TRE02_KAMASSARIVER01";
-		case -90486812:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_02"):
 			return "MS_TRE02_KAMASSARIVER02";
-		case -329176208:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_03"):
 			return "MS_TRE02_KAMASSARIVER03";
-		case -574190021:
+		case joaat("WS_MP_TREASURE_MAP_KAMASSA_RIVER_04"):
 			return "MS_TRE02_KAMASSARIVER04";
-		case -800891377:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_01"):
 			return "MS_TRE01_LAKEISABELLA01";
-		case -630295963:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_02"):
 			return "MS_TRE01_LAKEISABELLA02";
-		case 2127412005:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_03"):
 			return "MS_TRE01_LAKEISABELLA03";
-		case 1362354162:
+		case joaat("WS_MP_TREASURE_MAP_LAKE_ISABELLA_04"):
 			return "MS_TRE01_LAKEISABELLA04";
-		case 2048790450:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_01"):
 			return "MS_TRE01_LITTLECREEK01";
-		case -101740709:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_02"):
 			return "MS_TRE01_LITTLECREEK02";
-		case 673606600:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_03"):
 			return "MS_TRE01_LITTLECREEK03";
-		case -895307590:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_04"):
 			return "MS_TRE01_LITTLECREEK04";
-		case 1032791043:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_01"):
 			return "MS_TRE02_NORTHCLINGMAN01";
-		case 804063423:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_02"):
 			return "MS_TRE02_NORTHCLINGMAN02";
-		case -1573753524:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_03"):
 			return "MS_TRE02_NORTHCLINGMAN03";
-		case -1842033327:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_04"):
 			return "MS_TRE02_NORTHCLINGMAN04";
-		case -888632790:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_01"):
 			return "MS_TRE04_NORTHMACFARLANE01";
-		case -583127403:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_02"):
 			return "MS_TRE04_NORTHMACFARLANE02";
-		case -381925743:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_03"):
 			return "MS_TRE04_NORTHMACFARLANE03";
-		case -75928821:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_04"):
 			return "MS_TRE04_NORTHMACFARLANE04";
-		case 321629486:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_01"):
 			return "MS_TRE04_NORTHRIDGEWOOD01";
-		case 896725436:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_02"):
 			return "MS_TRE04_NORTHRIDGEWOOD02";
-		case -941648233:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_03"):
 			return "MS_TRE04_NORTHRIDGEWOOD03";
-		case -635323621:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_RIDGEWOOD_04"):
 			return "MS_TRE04_NORTHRIDGEWOOD04";
-		case 1157309080:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_01"):
 			return "MS_TRE04_NORTHTUMBLEWEED01";
-		case -797689456:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_02"):
 			return "MS_TRE04_NORTHTUMBLEWEED02";
-		case -500245243:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_03"):
 			return "MS_TRE04_NORTHTUMBLEWEED03";
-		case -211583122:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_TUMBLEWEED_04"):
 			return "MS_TRE04_NORTHTUMBLEWEED04";
-		case 237155783:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_01"):
 			return "MS_TRE01_OCREAGHSRUN01";
-		case -1547280108:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_02"):
 			return "MS_TRE01_OCREAGHSRUN02";
-		case -1719055206:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_03"):
 			return "MS_TRE01_OCREAGHSRUN03";
-		case 1601722481:
+		case joaat("WS_MP_TREASURE_MAP_OCREAGHS_RUN_04"):
 			return "MS_TRE01_OCREAGHSRUN04";
-		case -2142074819:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_01"):
 			return "MS_TRE04_SANLUISSHORE01";
-		case -226366310:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_02"):
 			return "MS_TRE04_SANLUISSHORE02";
-		case -1502194556:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_03"):
 			return "MS_TRE04_SANLUISSHORE03";
-		case -1749043433:
+		case joaat("WS_MP_TREASURE_MAP_SAN_LUIS_SHORE_04"):
 			return "MS_TRE04_SANLUISSHORE04";
-		case 1341699707:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_01"):
 			return "MS_TRE02_SOUTHROANOKE01";
-		case 1666964801:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_02"):
 			return "MS_TRE02_SOUTHROANOKE02";
-		case -1673998598:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_03"):
 			return "MS_TRE02_SOUTHROANOKE03";
-		case -1445041595:
+		case joaat("WS_MP_TREASURE_MAP_SOUTH_ROANOKE_04"):
 			return "MS_TRE02_SOUTHROANOKE04";
-		case 148595040:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_01"):
 			return "MS_TRE03_WESTHILLHAVEN01";
-		case -729679654:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_02"):
 			return "MS_TRE03_WESTHILLHAVEN02";
-		case -448554447:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_03"):
 			return "MS_TRE03_WESTHILLHAVEN03";
-		case -1339871203:
+		case joaat("WS_MP_TREASURE_MAP_WEST_HILL_HAVEN_04"):
 			return "MS_TRE03_WESTHILLHAVEN04";
 		default:
 			break;
@@ -18144,65 +18144,65 @@ int func_543(int iParam0)
 	{
 		case 943561238:
 			return -1364906332;
-		case 1279586666:
+		case joaat("WS_MP_TREASURE_MAP_CATTAIL_POND_04"):
 			return 1251554503;
-		case -1290997627:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_01"):
 			return -2004293616;
-		case -1882707460:
+		case joaat("WS_MP_TREASURE_MAP_DAKOTA_RIVER_BEND_03"):
 			return -872975316;
-		case -1442844448:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_01"):
 			return -724513114;
-		case -1684974589:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_02"):
 			return -936524034;
-		case 803929300:
+		case joaat("WS_MP_TREASURE_MAP_DIABLO_RIDGE_04"):
 			return -1834690693;
-		case -2100409704:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_02"):
 			return 516107115;
-		case -604603161:
+		case joaat("WS_MP_TREASURE_MAP_EAST_WATSONS_03"):
 			return 722896594;
-		case -207792846:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_02"):
 			return 848190976;
-		case 715735881:
+		case joaat("WS_MP_TREASURE_MAP_HAWKSEYE_CREEK_03"):
 			return 352739809;
-		case 673606600:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_03"):
 			return -1389022397;
-		case -895307590:
+		case joaat("WS_MP_TREASURE_MAP_LITTLE_CREEK_04"):
 			return -588218319;
-		case -243260793:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_01"):
 			return 295117400;
-		case -492731190:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_02"):
 			return 1211453192;
-		case 1325325699:
+		case joaat("WS_MP_TREASURE_MAP_BARDS_CROSSING_04"):
 			return -781631997;
-		case -297483764:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_01"):
 			return -274311999;
-		case 1517951665:
+		case joaat("WS_MP_TREASURE_MAP_BRANDYWINE_03"):
 			return -507080758;
-		case 982765715:
+		case joaat("WS_MP_TREASURE_MAP_CALUMET_RAVINE_02"):
 			return 1508981319;
-		case 846837291:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_02"):
 			return -333204108;
-		case 1153686207:
+		case joaat("WS_MP_TREASURE_MAP_CITADEL_ROCK_03"):
 			return 1424952082;
-		case -1842033327:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_CLINGMAN_04"):
 			return 953570968;
-		case 1521272922:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_01"):
 			return 503099916;
-		case -414883443:
+		case joaat("WS_MP_TREASURE_MAP_CUMBERLAND_FOREST_WEST_03"):
 			return -1916642580;
-		case -1705799799:
+		case joaat("WS_MP_TREASURE_MAP_BENEDICT_POINT_01"):
 			return 1596889034;
-		case 826868753:
+		case joaat("WS_MP_TREASURE_MAP_GAPTOOTH_BREACH_01"):
 			return -2134390671;
-		case -1395855864:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_02"):
 			return 787163418;
-		case -1749433374:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_03"):
 			return -1604164737;
-		case 1232840551:
+		case joaat("WS_MP_TREASURE_MAP_HANGING_ROCK_04"):
 			return -1991086481;
-		case -583127403:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_02"):
 			return 673909600;
-		case -75928821:
+		case joaat("WS_MP_TREASURE_MAP_NORTH_MACFARLANES_04"):
 			return 1908207721;
 		default:
 			break;
@@ -20122,19 +20122,19 @@ int func_644(int iParam0)
 	switch (iParam0)
 	{
 		case 2:
-			return -1690863991;
+			return joaat("UNLOCK_GROUP__MISSION_STORY");
 		case 3:
-			return 1286170048;
+			return joaat("UNLOCK_GROUP__MISSION_PROCEDURAL");
 		case 4:
-			return -342492333;
+			return joaat("UNLOCK_GROUP__MISSION_FETCH");
 		case 5:
-			return 1140089012;
+			return joaat("UNLOCK_GROUP__MISSION_MINIGAME");
 		case 8:
 			return 634321112;
 		case 7:
-			return -2079273178;
+			return joaat("UNLOCK_GROUP__MISSION_UGC");
 		case 6:
-			return -147846054;
+			return joaat("UNLOCK_GROUP__MISSION_FREE_MODE_EVENT");
 		default:
 			break;
 	}
@@ -20884,15 +20884,15 @@ int func_680(int iParam0)
 		case 11:
 			return joaat("CHARACTER_RANK_TRADER");
 		case 13:
-			return 705255263 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_005");
 		case 14:
-			return -471215553 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_005");
 		case 15:
 			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
-			return 1479488426 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_006");
 		case 17:
-			return -170363364 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_006");
 		default:
 			break;
 	}
@@ -21615,7 +21615,7 @@ int func_712(int iParam0)
 	switch (iParam0)
 	{
 		case 132:
-			return -809040070;
+			return joaat("SHOP_BUT_MUSICIAN_BANJO");
 		case 6:
 			return joaat("SHOP_BLK_GENERAL_STORE");
 		case 7:
@@ -21629,7 +21629,7 @@ int func_712(int iParam0)
 		case 14:
 			return joaat("SHOP_BLK_POST_OFFICE");
 		case 15:
-			return -441298053;
+			return joaat("SHOP_BLK_TRAIN_STATION");
 		case 12:
 			return joaat("SHOP_BLK_PHOTO_STUDIO");
 		case 122:
@@ -21643,13 +21643,13 @@ int func_712(int iParam0)
 		case 10:
 			return joaat("SHOP_BLK_BARTENDER");
 		case 11:
-			return -906556724;
+			return joaat("SHOP_BLK_PIANIST");
 		case 16:
-			return 882729775;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_FIRST");
 		case 17:
-			return 1957450109;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_SECOND");
 		case 18:
-			return 1826386989;
+			return joaat("SHOP_BLK_MUSICIAN_GUITARIST_THIRD");
 		case 23:
 			return joaat("SHOP_EMR_GENERAL_STORE");
 		case 24:
@@ -21687,7 +21687,7 @@ int func_712(int iParam0)
 		case 56:
 			return joaat("SHOP_SDN_BARTENDER_SLUM");
 		case 57:
-			return -404449802;
+			return joaat("SHOP_SDN_PIANIST_SLUM");
 		case 60:
 			return joaat("SHOP_SDN_PHOTO_STUDIO");
 		case 124:
@@ -21697,15 +21697,15 @@ int func_712(int iParam0)
 		case 54:
 			return joaat("SHOP_SDN_BARTENDER");
 		case 55:
-			return 509242725;
+			return joaat("SHOP_SDN_PIANIST");
 		case 59:
-			return -1243693278;
+			return joaat("SHOP_SDN_MUSICIAN_BANJO");
 		case 58:
-			return 106026254;
+			return joaat("SHOP_SDN_MUSICIAN_GUITARIST");
 		case 61:
-			return -1340467914;
+			return joaat("SHOP_SDN_THEATER_MP");
 		case 62:
-			return -2128099513;
+			return joaat("SHOP_SDN_THEATER_MAGIC_MP");
 		case 27:
 			return joaat("SHOP_RGG_POST_OFFICE");
 		case 28:
@@ -21729,9 +21729,9 @@ int func_712(int iParam0)
 		case 36:
 			return joaat("SHOP_RHO_BARTENDER");
 		case 37:
-			return -697751457;
+			return joaat("SHOP_RHO_PIANIST");
 		case 38:
-			return -994915577;
+			return joaat("SHOP_RHO_MUSICIAN_BANJO");
 		case 68:
 			return joaat("SHOP_STR_BUTCHER");
 		case 69:
@@ -21747,9 +21747,9 @@ int func_712(int iParam0)
 		case 75:
 			return joaat("SHOP_STR_BARTENDER");
 		case 72:
-			return -553046416;
+			return joaat("SHOP_STR_MUSICIAN_BANJO");
 		case 73:
-			return 1410537143;
+			return joaat("SHOP_STR_MUSICIAN_GUITARIST");
 		case 83:
 			return joaat("SHOP_VAL_DOCTOR");
 		case 84:
@@ -21767,7 +21767,7 @@ int func_712(int iParam0)
 		case 88:
 			return joaat("SHOP_VAL_TRAIN_STATION");
 		case 81:
-			return 1124822890;
+			return joaat("SHOP_VAL_BARTENDER_KEANE");
 		case 91:
 			return joaat("SHOP_VAL_BARTENDER_SLUM");
 		case 90:
@@ -21781,9 +21781,9 @@ int func_712(int iParam0)
 		case 79:
 			return joaat("SHOP_VAL_BARTENDER");
 		case 80:
-			return -1850308061;
+			return joaat("SHOP_VAL_PIANIST");
 		case 89:
-			return 787686374;
+			return joaat("SHOP_VAL_THEATER_MAGIC_MP");
 		case 41:
 			return joaat("SHOP_SCM_HORSE_SHOP");
 		case 98:
@@ -21791,13 +21791,13 @@ int func_712(int iParam0)
 		case 97:
 			return joaat("SHOP_VAN_TRAIN_STATION");
 		case 93:
-			return 1437804895;
+			return joaat("SHOP_VAN_FENCE");
 		case 96:
 			return joaat("SHOP_VAN_HORSE_SHOP");
 		case 94:
 			return joaat("SHOP_VAN_BARTENDER");
 		case 95:
-			return 470861506;
+			return joaat("SHOP_VAN_PIANIST");
 		case 128:
 			return joaat("SHOP_VAN_COACH");
 		case 129:
@@ -21831,31 +21831,31 @@ int func_712(int iParam0)
 		case 150:
 			return joaat("SHOP_CAMP_BUTCHERTABLE");
 		case 147:
-			return 191185611;
+			return joaat("SHOP_CAMP_TRAVELLING_SALESMAN");
 		case 135:
-			return 1689047337;
+			return joaat("SHOP_RIO_TRAVELLING_SALESMAN");
 		case 136:
-			return 631237697;
+			return joaat("SHOP_CHO_TRAVELLING_SALESMAN");
 		case 137:
-			return 1309294228;
+			return joaat("SHOP_HEN_TRAVELLING_SALESMAN");
 		case 138:
-			return -1862366064;
+			return joaat("SHOP_TAL_TRAVELLING_SALESMAN");
 		case 139:
-			return -708893514;
+			return joaat("SHOP_BGV_TRAVELLING_SALESMAN");
 		case 140:
-			return -61253253;
+			return joaat("SHOP_HRT_E_TRAVELLING_SALESMAN");
 		case 141:
-			return -1674694281;
+			return joaat("SHOP_HRT_W_TRAVELLING_SALESMAN");
 		case 142:
-			return 14391281;
+			return joaat("SHOP_GRZ_TRAVELLING_SALESMAN");
 		case 143:
-			return -869603674;
+			return joaat("SHOP_SCM_TRAVELLING_SALESMAN");
 		case 144:
-			return 2081857521;
+			return joaat("SHOP_BLU_TRAVELLING_SALESMAN");
 		case 145:
-			return 526646992;
+			return joaat("SHOP_DER_TRAVELLING_SALESMAN");
 		case 146:
-			return 1672297313;
+			return joaat("SHOP_BBR_TRAVELLING_SALESMAN");
 		case 47:
 			return joaat("SHOP_MOONSHINE_STILL");
 		case 32:
@@ -21905,13 +21905,13 @@ int func_712(int iParam0)
 		case 64:
 			return 878376253;
 		case 164:
-			return -508879537;
+			return joaat("SHOP_LAK_DOCTOR");
 		case 165:
-			return -654369397;
+			return joaat("SHOP_LAK_GENERAL_STORE");
 		case 166:
-			return 1573058547;
+			return joaat("SHOP_LAK_GUNSMITH");
 		case 167:
-			return 1753151614;
+			return joaat("SHOP_LAK_HORSE_TRAINER");
 		case 168:
 			return joaat("SHOP_SHB_DOCTOR");
 		case 169:
@@ -21943,7 +21943,7 @@ int func_712(int iParam0)
 		case 105:
 			return joaat("SHOP_TBL_BARTENDER");
 		case 106:
-			return -375350;
+			return joaat("SHOP_TBL_PIANIST");
 		case 103:
 			return joaat("SHOP_TBL_GUNSMITH");
 		case 104:
@@ -21992,9 +21992,9 @@ int func_714(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -1519264107;
+			return joaat("CUTSCENE_MPCGOI1");
 		case 2:
-			return -1349160228;
+			return joaat("CUTSCENE_MPCGOI2");
 		case 3:
 			return -732709691;
 		case 4:
@@ -22002,7 +22002,7 @@ int func_714(int iParam0)
 		case 5:
 			return -969278268;
 		case 6:
-			return 650135692;
+			return joaat("CUTSCENE_MPRM1");
 		default:
 			break;
 	}
@@ -22802,13 +22802,13 @@ int func_754(int iParam0, int iParam1)
 	{
 		case joaat("BOUNTY_BOARD"):
 		case joaat("GUN_FOR_HIRE"):
-		case -260420884:
-		case -232478158:
-		case 78055447:
-		case 850213441:
-		case 974227447:
-		case 1532822440:
-		case 1918154385:
+		case joaat("CAMP_RESUPPLY"):
+		case joaat("MOONSHINE_SETUP_GET_SUPPLIES"):
+		case joaat("MOONSHINE_MARKETING"):
+		case joaat("CAMP_SETUP"):
+		case joaat("MOONSHINE_SELL"):
+		case joaat("MOONSHINE_SETUP_RESCUE_COOK"):
+		case joaat("CAMP_SELL"):
 			return 1;
 		case joaat("DYNAMIC"):
 			return iParam1;
@@ -24301,7 +24301,7 @@ int func_792(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;
@@ -24832,7 +24832,7 @@ int func_825(int iParam0)
 			iVar0 = joaat("MISSION_PROCEDURAL");
 			break;
 		case 4:
-			iVar0 = 2080488347;
+			iVar0 = joaat("MISSION_FETCH");
 			break;
 		case 5:
 			iVar0 = joaat("MISSION_MINIGAME");
@@ -24841,10 +24841,10 @@ int func_825(int iParam0)
 			iVar0 = joaat("MISSION_FREE_MODE_EVENT");
 			break;
 		case 7:
-			iVar0 = 1198585370;
+			iVar0 = joaat("MISSION_UGC");
 			break;
 		case 8:
-			iVar0 = 1753821005;
+			iVar0 = joaat("MISSION_BEAT");
 			break;
 		case 9:
 			iVar0 = joaat("PROPERTY");
@@ -24859,10 +24859,10 @@ int func_825(int iParam0)
 			iVar0 = joaat("SHOP");
 			break;
 		case 13:
-			iVar0 = 1252941330;
+			iVar0 = joaat("GFH_GIVERS");
 			break;
 		case 14:
-			iVar0 = -1930354636;
+			iVar0 = joaat("GFH_LOCATIONS");
 			break;
 		case 15:
 			iVar0 = 1332629624;
@@ -24871,7 +24871,7 @@ int func_825(int iParam0)
 			iVar0 = 1746212499;
 			break;
 		case 17:
-			iVar0 = 1859328971;
+			iVar0 = joaat("GVO_UNLOCKS");
 			break;
 		case 18:
 			iVar0 = 1151893103;
@@ -25235,7 +25235,7 @@ int func_841(int iParam0)
 			return 0;
 		case 2124631622:
 			return 1;
-		case -66250361:
+		case joaat("ROBBERY_TRAIN"):
 			return 2;
 		case 1443764480:
 			return 3;
@@ -25255,39 +25255,39 @@ int func_841(int iParam0)
 			return 10;
 		case -621956193:
 			return 11;
-		case 1081776803:
+		case joaat("GANG_EVENT_SHOWDOWN"):
 			return 12;
-		case -218697175:
+		case joaat("GANG_EVENT_IMPROMPTU_RACE"):
 			return 13;
 		case -867762478:
 			return 14;
 		case 602097925:
 			return 15;
-		case 1724417419:
+		case joaat("TRAIN_ESCORT"):
 			return 16;
-		case -728200180:
+		case joaat("IWD_1V1"):
 			return 17;
-		case 1404415665:
+		case joaat("IWD_PVP"):
 			return 18;
-		case 339077182:
+		case joaat("IWD_PF"):
 			return 20;
-		case 650120418:
+		case joaat("IWD_PLF"):
 			return 21;
-		case 1695693301:
+		case joaat("IWD_F"):
 			return 28;
-		case -1809176396:
+		case joaat("IWD_INF"):
 			return 19;
-		case 349772825:
+		case joaat("ASSASSINATION"):
 			return 22;
-		case 1657045547:
+		case joaat("ASSASSINATION_TRACKING"):
 			return 23;
-		case -590482787:
+		case joaat("ASSASSINATION_PVP_PLAYER"):
 			return 24;
-		case -1711308722:
+		case joaat("ASSASSINATION_PVP_POSSE"):
 			return 25;
-		case -409129282:
+		case joaat("COACH_HOLDUP_ROBBERY"):
 			return 26;
-		case -1790985606:
+		case joaat("COACH_HOLDUP_KIDNAPPING"):
 			return 27;
 		default:
 			break;
@@ -25323,37 +25323,37 @@ int func_843(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1697883736:
+		case joaat("ARCHERY"):
 			return 0;
 		case joaat("CHALLENGES"):
 			return 1;
-		case -1363591469:
+		case joaat("DEAD_DROP"):
 			return 2;
-		case 1635448909:
+		case joaat("GOLDEN_HAT"):
 			return 3;
-		case -604494871:
+		case joaat("HOT_PROPERTY"):
 			return 4;
-		case -993281498:
+		case joaat("KING_OF_THE_CASTLE"):
 			return 5;
-		case -1871525158:
+		case joaat("KING_OF_THE_RAILS"):
 			return 6;
-		case -596286663:
+		case joaat("PV_CHALLENGE_HERBALIST"):
 			return 12;
-		case 923956646:
+		case joaat("PV_CHALLENGE_BIGGEST_FISH"):
 			return 13;
-		case 1459450644:
+		case joaat("PV_CHALLENGE_FLYING_BIRD"):
 			return 14;
-		case -2071675432:
+		case joaat("HUNT_THE_POSSE_LEADER"):
 			return 15;
-		case -552339597:
+		case joaat("ESCAPED_CONVICTS"):
 			return 7;
-		case 2144670272:
+		case joaat("SUPPLY_TRAIN"):
 			return 9;
-		case 996459079:
+		case joaat("ROUND_UP"):
 			return 8;
-		case 1996177174:
+		case joaat("WRECKAGE"):
 			return 10;
-		case -1702168032:
+		case joaat("CONDOR_EGG"):
 			return 11;
 		default:
 			break;
@@ -25365,11 +25365,11 @@ int func_844(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 2049341823:
+		case joaat("UGC_MAJOR_ID_DBG_VERSUS"):
 			return 0;
-		case 1655635003:
+		case joaat("UGC_MAJOR_ID_DBG_DEATHMATCH"):
 			return 1;
-		case -435635781:
+		case joaat("UGC_MAJOR_ID_DBG_RACE"):
 			return 2;
 		case 2006131499:
 			return 3;
@@ -25381,9 +25381,9 @@ int func_844(int iParam0)
 			return 6;
 		case 787592898:
 			return 7;
-		case -568832219:
+		case joaat("UGC_MAJOR_ID_LBM"):
 			return 8;
-		case -1103026985:
+		case joaat("UGC_MAJOR_ID_MOONSHINE_COOP"):
 			return 9;
 		default:
 			break;
@@ -25399,15 +25399,15 @@ int func_845(int iParam0)
 			return -1;
 		case joaat("NORMAL"):
 			return 0;
-		case -640677282:
+		case joaat("INTRO_CHAR"):
 			return 1;
-		case -1950303839:
+		case joaat("INTRO_GENERIC"):
 			return 2;
 		case 1322114923:
 			return 3;
-		case -525004462:
+		case joaat("INTRO_FREEMODE"):
 			return 4;
-		case 1419735597:
+		case joaat("INTRO_CLAY2"):
 			return 5;
 		case joaat("TEAMSTER"):
 			return 6;
@@ -25423,15 +25423,15 @@ int func_845(int iParam0)
 			return 11;
 		case joaat("COLLECTOR"):
 			return 12;
-		case -218234180:
+		case joaat("SEASON005"):
 			return 13;
-		case 751663875:
+		case joaat("VIPSEASON005"):
 			return 14;
 		case joaat("MOONSHINER"):
 			return 15;
-		case -269943670:
+		case joaat("SEASON006"):
 			return 16;
-		case 522313648:
+		case joaat("VIPSEASON006"):
 			return 17;
 		default:
 			break;

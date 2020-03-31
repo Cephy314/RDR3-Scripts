@@ -1573,7 +1573,7 @@ void func_42(var uParam0, var uParam1)
 				break;
 			case joaat("EVENT_SHOT_FIRED_WHIZZED_BY"):
 				bVar10 = true;
-				iVar12 = 1526847194;
+				iVar12 = joaat("SHOOT_AT");
 				iVar13 = 3;
 				iVar14 = 1;
 				break;
@@ -1585,7 +1585,7 @@ void func_42(var uParam0, var uParam1)
 			case joaat("EVENT_SHOCKING_SEEN_PED_KILLED"):
 			case joaat("EVENT_EXPLOSION"):
 				bVar10 = true;
-				iVar12 = 1730381531;
+				iVar12 = joaat("SHOOT_NEAR");
 				iVar13 = 2;
 				iVar14 = 1;
 				break;
@@ -1947,7 +1947,7 @@ int func_63(var uParam0, int iParam1)
 
 void func_64(int iParam0, int iParam1)
 {
-	if (func_190(iParam1, 2047251250))
+	if (func_190(iParam1, joaat("FREEZE_POSITION")))
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(iParam0, false);
 	}
@@ -1960,7 +1960,7 @@ void func_64(int iParam0, int iParam1)
 	{
 		ENTITY::SET_ENTITY_COLLISION(iParam0, true, false);
 	}
-	if (func_190(iParam1, -479622762))
+	if (func_190(iParam1, joaat("DISABLE_DECALS")))
 	{
 		ENTITY::_0xC64E597783BE9A1D(iParam0, false);
 	}
@@ -2136,19 +2136,19 @@ int func_80(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1169336073;
+			return joaat("ANNESBURG_SHERIFF");
 		case 1:
-			return 104312746;
+			return joaat("ARMADILLO_SHERIFF");
 		case 2:
-			return -1968585225;
+			return joaat("BLACKWATER_SHERIFF");
 		case 3:
-			return -392789340;
+			return joaat("RHODES_SHERIFF");
 		case 4:
-			return 696054289;
+			return joaat("SAINT_DENIS_SHERIFF");
 		case 5:
-			return 1852015156;
+			return joaat("STRAWBERRY_SHERIFF");
 		case 6:
-			return -1763412335;
+			return joaat("TUMBLEWEED_SHERIFF");
 		case 7:
 			return joaat("VALENTINE_SHERIFF");
 		default:
@@ -2666,7 +2666,7 @@ int func_130(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	func_214(uParam0, uParam1, iParam2, func_189(Var0, 1275965103));
+	func_214(uParam0, uParam1, iParam2, func_189(Var0, joaat("VISIBILITY_CONDITION")));
 	func_215(uParam0, uParam1, iParam2, func_189(Var0, -1256669479));
 	return 1;
 }
@@ -2838,7 +2838,7 @@ int func_139(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	func_225(uParam0, uParam1, iParam2, func_189(Var0, 1275965103));
+	func_225(uParam0, uParam1, iParam2, func_189(Var0, joaat("VISIBILITY_CONDITION")));
 	func_226(uParam0, uParam1, iParam2, func_189(Var0, -1256669479));
 	Var0.f_1 = uVar5;
 	if (func_79(Var0, &(Var0.f_1), 22, 0, 0, 0))
@@ -2903,7 +2903,7 @@ int func_141(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	iVar6 = func_236(func_53(uParam0, iParam2), Var0.f_1, Var0.f_4, 0, 0, 0, 1, func_234(Var0.f_5, 1833117953), !func_235(Var0), func_234(Var0.f_5, -1395267550), func_235(Var0));
+	iVar6 = func_236(func_53(uParam0, iParam2), Var0.f_1, Var0.f_4, 0, 0, 0, 1, func_234(Var0.f_5, 1833117953), !func_235(Var0), func_234(Var0.f_5, joaat("USE_DEFAULT_LOADOUT")), func_235(Var0));
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar6))
 	{
 		return 0;
@@ -2924,12 +2924,12 @@ int func_141(var uParam0, var uParam1, int iParam2)
 	PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar6, true);
 	PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar6, joaat("REL_PLAYER_LIKE"));
 	EVENT::_0xBB1E41DD3D3C6250(iVar6, "MpMissionGiver", 0);
-	if (func_234(Var0.f_5, -1395267550))
+	if (func_234(Var0.f_5, joaat("USE_DEFAULT_LOADOUT")))
 	{
 		PED::_0x1902C4CFCC5BE57C(iVar6, Var0);
 		PED::_0xCC8CA3E88256E58F(iVar6, false, true, true, true, false);
 	}
-	if (!func_234(Var0.f_5, -1395267550))
+	if (!func_234(Var0.f_5, joaat("USE_DEFAULT_LOADOUT")))
 	{
 		WEAPON::REMOVE_ALL_PED_WEAPONS(iVar6, true, true);
 		iVar7 = 0;
@@ -2984,7 +2984,7 @@ int func_142(var uParam0, var uParam1, int iParam2)
 	}
 	switch (Var0)
 	{
-		case 1927688563:
+		case joaat("SCRIPT_CREATED"):
 			if (Var0.f_7)
 			{
 				iVar31 = func_222(Var0.f_7.f_1, Var0.f_7.f_2, Var0.f_7.f_5);
@@ -3004,7 +3004,7 @@ int func_142(var uParam0, var uParam1, int iParam2)
 			}
 			bVar32 = true;
 			break;
-		case 438717698:
+		case joaat("WORLD_CREATED"):
 			iVar30 = func_243(Var0.f_1, Var0.f_1.f_1, Var0.f_1.f_4);
 			break;
 		default:
@@ -3016,11 +3016,11 @@ int func_142(var uParam0, var uParam1, int iParam2)
 	}
 	if (bVar32)
 	{
-		if (func_244(Var0.f_1.f_5, -1141253079))
+		if (func_244(Var0.f_1.f_5, joaat("NO_SPAWN")))
 		{
 			TASK::_0x5AF19B6CC2115D34(iVar30, 25, 1);
 		}
-		if (func_244(Var0.f_1.f_5, 841757915))
+		if (func_244(Var0.f_1.f_5, joaat("NO_ATTRACTION")))
 		{
 			TASK::_0x5AF19B6CC2115D34(iVar30, 23, 1);
 		}
@@ -4002,7 +4002,7 @@ void func_219(var uParam0, var uParam1, int iParam2, int iParam3)
 	int iVar0;
 
 	iVar0 = func_58(uParam0, iParam2);
-	if (func_190(iParam3, 2047251250))
+	if (func_190(iParam3, joaat("FREEZE_POSITION")))
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(iVar0, true);
 	}
@@ -4015,7 +4015,7 @@ void func_219(var uParam0, var uParam1, int iParam2, int iParam3)
 	{
 		ENTITY::SET_ENTITY_COLLISION(iVar0, false, false);
 	}
-	if (func_190(iParam3, -479622762))
+	if (func_190(iParam3, joaat("DISABLE_DECALS")))
 	{
 		ENTITY::_0xC64E597783BE9A1D(iVar0, true);
 	}
@@ -4254,7 +4254,7 @@ int func_233(var uParam0, var uParam1, int iParam2)
 	*uParam1 = func_342(Var0);
 	uParam1->f_1 = { func_101(Var0, 1) };
 	uParam1->f_4 = func_343(Var0);
-	uParam1->f_5 = func_189(Var0, -344945370);
+	uParam1->f_5 = func_189(Var0, joaat("PED_CREATION"));
 	return 1;
 }
 
@@ -4341,10 +4341,10 @@ int func_242(var uParam0, var uParam1, int iParam2)
 	uParam1->f_1.f_1 = { func_101(Var0, 1) };
 	switch (*uParam1)
 	{
-		case 1927688563:
+		case joaat("SCRIPT_CREATED"):
 			uParam1->f_1.f_4 = func_343(Var0);
 			break;
-		case 438717698:
+		case joaat("WORLD_CREATED"):
 			uParam1->f_1.f_4 = func_205(Var0, 1);
 			break;
 		default:
@@ -4356,7 +4356,7 @@ int func_242(var uParam0, var uParam1, int iParam2)
 		uParam1->f_21 = func_348(Var0);
 		uParam1->f_21.f_1 = { func_349(Var0) };
 	}
-	if (*uParam1 != 1927688563)
+	if (*uParam1 != joaat("SCRIPT_CREATED"))
 	{
 		return 1;
 	}
@@ -4673,9 +4673,9 @@ int func_290(int iParam0)
 			return 3;
 		case joaat("PUSH"):
 			return 3;
-		case 1526847194:
+		case joaat("SHOOT_AT"):
 			return 3;
-		case 1730381531:
+		case joaat("SHOOT_NEAR"):
 			return 3;
 		default:
 			break;
@@ -4688,13 +4688,13 @@ int func_291(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("AIM"):
-			return -1196486071;
+			return joaat("AIM_ESCALATED");
 		case joaat("PUSH"):
-			return -1931716778;
-		case 1526847194:
-			return 664793774;
-		case 1730381531:
-			return 1532606305;
+			return joaat("PUSH_ESCALATED");
+		case joaat("SHOOT_AT"):
+			return joaat("SHOOT_AT_ESCALATED");
+		case joaat("SHOOT_NEAR"):
+			return joaat("SHOOT_NEAR_ESCALATED");
 		default:
 			break;
 	}
@@ -4838,11 +4838,11 @@ bool func_302(int iParam0)
 
 void func_303(var uParam0, var uParam1)
 {
-	if (func_366(uParam1->f_2, -1626240863))
+	if (func_366(uParam1->f_2, joaat("HIDE_FOR_SCENE")))
 	{
 		if (func_367(uParam0->f_1, 1))
 		{
-			uParam1->f_1 = (uParam1->f_1 || func_368(-1626240863));
+			uParam1->f_1 = (uParam1->f_1 || func_368(joaat("HIDE_FOR_SCENE")));
 		}
 	}
 }
@@ -4877,9 +4877,9 @@ int func_306(var uParam0)
 	}
 	switch (func_369(uParam0))
 	{
-		case 963581738:
+		case joaat("ASC"):
 			return AUDIO::IS_ANY_SPEECH_PLAYING(func_57(uParam0, func_281(uParam0)));
-		case 479504197:
+		case joaat("DIALOGUE_STAR"):
 			return func_372(func_371(func_370(uParam0)));
 		default:
 			break;
@@ -4893,21 +4893,21 @@ int func_307(int iParam0)
 	{
 		case joaat("AIM"):
 			return 0;
-		case -1196486071:
+		case joaat("AIM_ESCALATED"):
 			return 0;
 		case joaat("IDLE"):
 			return 4;
 		case joaat("PUSH"):
 			return 3;
-		case -1931716778:
+		case joaat("PUSH_ESCALATED"):
 			return 3;
-		case 1526847194:
+		case joaat("SHOOT_AT"):
 			return 2;
-		case 664793774:
+		case joaat("SHOOT_AT_ESCALATED"):
 			return 2;
-		case 1730381531:
+		case joaat("SHOOT_NEAR"):
 			return 1;
-		case 1532606305:
+		case joaat("SHOOT_NEAR_ESCALATED"):
 			return 1;
 		default:
 			break;
@@ -5033,19 +5033,19 @@ int func_322(int iParam0, int iParam1)
 	switch (iParam0)
 	{
 		case 0:
-			return 664793774;
+			return joaat("SHOOT_AT_ESCALATED");
 		case 1:
-			return 1526847194;
+			return joaat("SHOOT_AT");
 		case 2:
-			return -1196486071;
+			return joaat("AIM_ESCALATED");
 		case 3:
 			return joaat("AIM");
 		case 4:
-			return 1532606305;
+			return joaat("SHOOT_NEAR_ESCALATED");
 		case 5:
-			return 1730381531;
+			return joaat("SHOOT_NEAR");
 		case 6:
-			return -1931716778;
+			return joaat("PUSH_ESCALATED");
 		case 7:
 			return joaat("PUSH");
 		case 8:
@@ -5077,10 +5077,10 @@ int func_323(var uParam0, var uParam1, int iParam2, int iParam3)
 	}
 	switch (Var0.f_6)
 	{
-		case 963581738:
+		case joaat("ASC"):
 			bVar7 = func_375(func_57(uParam0, iParam2), &(Var0.f_1), joaat("SPEECH_PARAMS_ALLOW_REPEAT"), 0, 0, 0, 0, 0);
 			break;
-		case 479504197:
+		case joaat("DIALOGUE_STAR"):
 			func_376(uParam0);
 			bVar7 = func_377(&(uParam0->f_136.f_15), Var0.f_1, 0, -1, 0, 0);
 			break;
@@ -5133,7 +5133,7 @@ var func_324(struct<5> Param0, int iParam5)
 					case joaat("ATTRIBUTES"):
 						iVar2 = func_325(iVar1, 1);
 						break;
-					case -344945370:
+					case joaat("PED_CREATION"):
 						iVar2 = func_344(iVar1, 1);
 						break;
 					case joaat("SCENARIO"):
@@ -5142,7 +5142,7 @@ var func_324(struct<5> Param0, int iParam5)
 					case joaat("VEG_MOD"):
 						iVar2 = func_383(iVar1, 1);
 						break;
-					case 1275965103:
+					case joaat("VISIBILITY_CONDITION"):
 						iVar2 = func_384(iVar1, 1);
 						break;
 					case -1256669479:
@@ -5179,9 +5179,9 @@ int func_325(int iParam0, int iParam1)
 			return 2;
 		case joaat("INVINCIBLE"):
 			return 1;
-		case -479622762:
+		case joaat("DISABLE_DECALS"):
 			return 3;
-		case 2047251250:
+		case joaat("FREEZE_POSITION"):
 			return 0;
 		default:
 			break;
@@ -5355,19 +5355,19 @@ int func_340(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1931716778:
+		case joaat("PUSH_ESCALATED"):
 			return 6;
 		case joaat("AIM"):
 			return 3;
-		case -1196486071:
+		case joaat("AIM_ESCALATED"):
 			return 2;
-		case 664793774:
+		case joaat("SHOOT_AT_ESCALATED"):
 			return 0;
-		case 1526847194:
+		case joaat("SHOOT_AT"):
 			return 1;
-		case 1532606305:
+		case joaat("SHOOT_NEAR_ESCALATED"):
 			return 4;
-		case 1730381531:
+		case joaat("SHOOT_NEAR"):
 			return 5;
 		case joaat("IDLE"):
 			return 8;
@@ -5427,7 +5427,7 @@ int func_344(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1395267550:
+		case joaat("USE_DEFAULT_LOADOUT"):
 			return 1;
 		case 1833117953:
 			return 0;
@@ -5558,9 +5558,9 @@ int func_351(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1141253079:
+		case joaat("NO_SPAWN"):
 			return 0;
-		case 841757915:
+		case joaat("NO_ATTRACTION"):
 			return 1;
 		default:
 			break;
@@ -5908,19 +5908,19 @@ int func_383(int iParam0, int iParam1)
 	{
 		case joaat("FLATTEN"):
 			return 8;
-		case -1155906572:
+		case joaat("SAPLINGS"):
 			return 5;
 		case joaat("CULL"):
 			return 7;
-		case -560457212:
+		case joaat("WEEDS"):
 			return 3;
 		case joaat("FLOWERS"):
 			return 4;
-		case 331632914:
+		case joaat("FLATTEN_DEEP_SURFACE"):
 			return 9;
 		case joaat("DEBRIS"):
 			return 0;
-		case 1152024837:
+		case joaat("EXPLODE"):
 			return 10;
 		case joaat("BUSHES"):
 			return 2;
@@ -5947,7 +5947,7 @@ int func_384(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1626240863:
+		case joaat("HIDE_FOR_SCENE"):
 			return 0;
 		default:
 			break;

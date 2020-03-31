@@ -658,12 +658,12 @@ void func_25()
 	{
 		func_53(799);
 		func_54(1);
-		func_55(344028824, 1, 0f, 0, 0, 0, 0, 0);
+		func_55(joaat("DOOR_ROC_HOUSE_INT_2"), 1, 0f, 0, 0, 0, 0, 0);
 		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(750713851, false);
 	}
 	else
 	{
-		func_56(6, 1, 344028824);
+		func_56(6, 1, joaat("DOOR_ROC_HOUSE_INT_2"));
 		TASK::_SET_SCENARIO_GROUP_ENABLED_HASH(750713851, true);
 		if (func_57(59))
 		{
@@ -1084,10 +1084,10 @@ int func_53(int iParam0)
 
 void func_54(bool bParam0)
 {
-	func_55(-563279248, bParam0, 0, 0, 0, 0, 0, 0);
+	func_55(joaat("DOOR_ROC_HOUSE_INT_1"), bParam0, 0, 0, 0, 0, 0, 0);
 	if (bParam0)
 	{
-		OBJECT::_0xC07B91B996C1DE89(-563279248, 0);
+		OBJECT::_0xC07B91B996C1DE89(joaat("DOOR_ROC_HOUSE_INT_1"), 0);
 	}
 }
 

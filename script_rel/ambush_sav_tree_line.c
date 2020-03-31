@@ -12634,17 +12634,17 @@ int func_463(int iParam0, int iParam1)
 			return 24047176;
 			return -1561999014;
 			return -2052774042;
-			return -997150586;
-			return -1189569496;
-			return 46488141;
-			return 1046566686;
-			return 325139909;
-			return -1585141069;
+			return joaat("SLOTID_HORSE_BEDROLL");
+			return joaat("SLOTID_HORSE_BLANKET");
+			return joaat("SLOTID_HORSE_CANTLE");
+			return joaat("SLOTID_HORSE_FENDER");
+			return joaat("SLOTID_HORSE_HORN");
+			return joaat("SLOTID_HORSE_INSURANCE");
 			return 802754820;
-			return 1415981582;
+			return joaat("SLOTID_HORSE_MANE");
 			return -1886147520;
-			return 654877947;
-			return -415648720;
+			return joaat("SLOTID_HORSE_REINS");
+			return joaat("SLOTID_HORSE_SADDLE");
 			return 1221327846;
 			return 923162715;
 			return 625423581;
@@ -12655,18 +12655,18 @@ int func_463(int iParam0, int iParam1)
 			return 1886178087;
 			return 1587783573;
 			return -279722001;
-			return 1310070322;
+			return joaat("SLOTID_HORSE_SADDLEBAG");
 			return 724026534;
-			return 137387616;
-			return -653439684;
-			return 1376835592;
+			return joaat("SLOTID_HORSE_SEAT");
+			return joaat("SLOTID_HORSE_SEX");
+			return joaat("SLOTID_HORSE_SKIRT");
 			return -1824203570;
 			return -1654197998;
 			return 798987653;
 			return 976923323;
 			return 1167442289;
-			return 986998820;
-			return -2119169513;
+			return joaat("SLOTID_HORSE_STIRRUP");
+			return joaat("SLOTID_HORSE_TAIL");
 			return -2015960939;
 			return -1287636759;
 			return -706917073;
@@ -14675,27 +14675,27 @@ struct<6> func_525()
 	var uVar10;
 	var uVar11;
 
-	if (func_627(-997150586, &uVar6))
+	if (func_627(joaat("SLOTID_HORSE_BEDROLL"), &uVar6))
 	{
 		Var0.f_4 = uVar6;
 	}
-	if (func_627(-1189569496, &uVar7))
+	if (func_627(joaat("SLOTID_HORSE_BLANKET"), &uVar7))
 	{
 		Var0 = uVar7;
 	}
-	if (func_627(325139909, &uVar8))
+	if (func_627(joaat("SLOTID_HORSE_HORN"), &uVar8))
 	{
 		Var0.f_2 = uVar8;
 	}
-	if (func_627(1310070322, &uVar9))
+	if (func_627(joaat("SLOTID_HORSE_SADDLEBAG"), &uVar9))
 	{
 		Var0.f_5 = uVar9;
 	}
-	if (func_627(986998820, &uVar10))
+	if (func_627(joaat("SLOTID_HORSE_STIRRUP"), &uVar10))
 	{
 		Var0.f_3 = uVar10;
 	}
-	if (func_627(-415648720, &uVar11))
+	if (func_627(joaat("SLOTID_HORSE_SADDLE"), &uVar11))
 	{
 		Var0.f_1 = uVar11;
 	}
@@ -15130,7 +15130,7 @@ void func_538(int iParam0)
 	bVar6 = false;
 	if (iParam0 == 0)
 	{
-		iVar5 = -1925605092;
+		iVar5 = joaat("BLIP_STYLE_PLAYER_HORSE");
 	}
 	else if (iParam0 == 1)
 	{
@@ -15329,7 +15329,7 @@ void func_538(int iParam0)
 	}
 	if (func_655(iVar0) && !bVar9)
 	{
-		if (iVar5 == -1925605092)
+		if (iVar5 == joaat("BLIP_STYLE_PLAYER_HORSE"))
 		{
 			iVar20 = 561559387;
 		}
@@ -17229,7 +17229,7 @@ int func_625(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	*uParam1 = func_703(Var0, 1415981582, 0);
+	*uParam1 = func_703(Var0, joaat("SLOTID_HORSE_MANE"), 0);
 	if (!func_555(*uParam1, 0))
 	{
 		return 0;
@@ -17246,7 +17246,7 @@ int func_626(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	*uParam1 = func_703(Var0, -2119169513, 0);
+	*uParam1 = func_703(Var0, joaat("SLOTID_HORSE_TAIL"), 0);
 	if (!func_555(*uParam1, 0))
 	{
 		return 0;
@@ -18313,7 +18313,7 @@ int func_674(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var29 = { func_466(iParam1, Var0, 1415981582, 0) };
+	Var29 = { func_466(iParam1, Var0, joaat("SLOTID_HORSE_MANE"), 0) };
 	return func_723(Var29, 1);
 }
 
@@ -18327,7 +18327,7 @@ int func_675(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	Var29 = { func_466(iParam1, Var0, -2119169513, 0) };
+	Var29 = { func_466(iParam1, Var0, joaat("SLOTID_HORSE_TAIL"), 0) };
 	return func_723(Var29, 1);
 }
 

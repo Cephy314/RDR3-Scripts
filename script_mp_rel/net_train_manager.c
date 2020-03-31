@@ -527,21 +527,21 @@ void func_33()
 	}
 	if (func_45(2))
 	{
-		func_46(-530846566, 1);
+		func_46(joaat("FLATNECK_TO_VALENTINE"), 1);
 	}
 	else
 	{
-		func_46(-530846566, 0);
+		func_46(joaat("FLATNECK_TO_VALENTINE"), 0);
 	}
 	func_46(1548096282, 1);
 	func_46(-245962931, 1);
 	func_46(-500348165, 1);
-	func_46(476945523, 1);
+	func_46(joaat("EMERALD_RANCH_DEAD_END_TO_RHODES"), 1);
 	func_46(-1420724065, 1);
 	func_46(joaat("MACFARLANES_RANCH"), 1);
 	func_46(1603023256, 1);
 	func_46(joaat("BACCHUS_STATION"), 1);
-	func_46(1431393516, 1);
+	func_46(joaat("APPLESEED_TIMBER_FORK"), 1);
 }
 
 void func_34(int iParam0)
@@ -1073,7 +1073,7 @@ int func_60(int iParam0, int iParam1)
 	}
 	switch (iParam0)
 	{
-		case -530846566:
+		case joaat("FLATNECK_TO_VALENTINE"):
 			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { -281.0263f, -319.5532f, 88.02095f };
 			break;
@@ -1085,7 +1085,7 @@ int func_60(int iParam0, int iParam1)
 			iVar0 = joaat("BRAITHWAITES2_TRACK_CONFIG");
 			vVar1 = { 1529.881f, 467.6379f, 89.20429f };
 			break;
-		case 476945523:
+		case joaat("EMERALD_RANCH_DEAD_END_TO_RHODES"):
 			iVar0 = joaat("TRAINS3");
 			vVar1 = { 1692.865f, 544.3328f, 97.59906f };
 			break;
@@ -1109,7 +1109,7 @@ int func_60(int iParam0, int iParam1)
 			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { 610.215f, 1662.165f, 186.3704f };
 			break;
-		case 1431393516:
+		case joaat("APPLESEED_TIMBER_FORK"):
 			iVar0 = joaat("FREIGHT_GROUP");
 			vVar1 = { -1375.646f, -137.362f, 99.87008f };
 			break;

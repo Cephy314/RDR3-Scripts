@@ -2663,15 +2663,15 @@ int func_148(int iParam0)
 		case 11:
 			return joaat("CHARACTER_RANK_TRADER");
 		case 13:
-			return 705255263 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_005");
 		case 14:
-			return -471215553 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_005");
 		case 15:
 			return joaat("CHARACTER_RANK_MOONSHINER");
 		case 16:
-			return 1479488426 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_SEASON_006");
 		case 17:
-			return -170363364 /* GXTEntry: "Club Rewards" */;
+			return joaat("CHARACTER_RANK_VIP_SEASON_006");
 		default:
 			break;
 	}
@@ -4494,14 +4494,14 @@ int func_243(int iParam0)
 		return 0;
 	}
 	iVar0 = func_305();
-	if (iVar0 == 2026485318)
+	if (iVar0 == joaat("MPC_PLAYER_TYPE_MP_MALE"))
 	{
 		if (func_202(iParam0, -133342564))
 		{
 			return 2;
 		}
 	}
-	else if (iVar0 == 24043185)
+	else if (iVar0 == joaat("MPC_PLAYER_TYPE_MP_FEMALE"))
 	{
 		if (func_202(iParam0, -287432114))
 		{
@@ -5648,15 +5648,15 @@ int func_294(int iParam0)
 		case 0:
 			return joaat("NORMAL");
 		case 1:
-			return -640677282;
+			return joaat("INTRO_CHAR");
 		case 2:
-			return -1950303839;
+			return joaat("INTRO_GENERIC");
 		case 3:
 			return 1322114923;
 		case 4:
-			return -525004462;
+			return joaat("INTRO_FREEMODE");
 		case 5:
-			return 1419735597;
+			return joaat("INTRO_CLAY2");
 		case 6:
 			return joaat("TEAMSTER");
 		case 7:
@@ -5672,15 +5672,15 @@ int func_294(int iParam0)
 		case 12:
 			return joaat("COLLECTOR");
 		case 13:
-			return -218234180;
+			return joaat("SEASON005");
 		case 14:
-			return 751663875;
+			return joaat("VIPSEASON005");
 		case 15:
 			return joaat("MOONSHINER");
 		case 16:
-			return -269943670;
+			return joaat("SEASON006");
 		case 17:
-			return 522313648;
+			return joaat("VIPSEASON006");
 		default:
 			break;
 	}
@@ -6517,23 +6517,23 @@ int func_324(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1152215114 /* GXTEntry: "XP" */;
+			return joaat("CHARACTER_XP");
 		case 7:
-			return -390042476;
+			return joaat("CHARACTER_XP_BOUNTY_HUNTER");
 		case 12:
-			return -1108993414;
+			return joaat("CHARACTER_XP_COLLECTOR");
 		case 11:
-			return -657484822;
+			return joaat("CHARACTER_XP_TRADER");
 		case 13:
-			return -138573168;
+			return joaat("CHARACTER_XP_SEASON_005");
 		case 14:
-			return -1834731109;
+			return joaat("CHARACTER_XP_VIP_SEASON_005");
 		case 15:
-			return -2024553896;
+			return joaat("CHARACTER_XP_MOONSHINER");
 		case 16:
-			return 712011765;
+			return joaat("CHARACTER_XP_SEASON_006");
 		case 17:
-			return -494315136;
+			return joaat("CHARACTER_XP_VIP_SEASON_006");
 		default:
 			break;
 	}
@@ -6545,9 +6545,9 @@ int func_325(int iParam0)
 	switch (iParam0)
 	{
 		case 1:
-			return -1519264107;
+			return joaat("CUTSCENE_MPCGOI1");
 		case 2:
-			return -1349160228;
+			return joaat("CUTSCENE_MPCGOI2");
 		case 3:
 			return -732709691;
 		case 4:
@@ -6555,7 +6555,7 @@ int func_325(int iParam0)
 		case 5:
 			return -969278268;
 		case 6:
-			return 650135692;
+			return joaat("CUTSCENE_MPRM1");
 		default:
 			break;
 	}
@@ -7376,181 +7376,181 @@ int func_347(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1538827865: /* GXTEntry: "American Paint~n~Overo Coat" */
+		case joaat("HORSE_BREED_AMERICANPAINT_OVERO"):
 			return joaat("A_C_HORSE_AMERICANPAINT_OVERO");
-		case -1792561227: /* GXTEntry: "American Paint~n~Tobiano Coat" */
+		case joaat("HORSE_BREED_AMERICANPAINT_TOBIANO"):
 			return joaat("A_C_HORSE_AMERICANPAINT_TOBIANO");
-		case 1033678910: /* GXTEntry: "American Paint~n~Splashed White Coat" */
+		case joaat("HORSE_BREED_AMERICANPAINT_SPLASHEDWHITE"):
 			return joaat("A_C_HORSE_AMERICANPAINT_SPLASHEDWHITE");
-		case -1942141178: /* GXTEntry: "American Paint~n~Grey Overo Coat" */
+		case joaat("HORSE_BREED_AMERICANPAINT_GREYOVERO"):
 			return joaat("A_C_HORSE_AMERICANPAINT_GREYOVERO");
-		case 671599957: /* GXTEntry: "American Standardbred~n~Black Coat" */
+		case joaat("HORSE_BREED_AMERICANSTANDARDBRED_BLACK"):
 			return joaat("A_C_HORSE_AMERICANSTANDARDBRED_BLACK");
-		case -1554935503: /* GXTEntry: "American Standardbred~n~Buckskin Coat" */
+		case joaat("HORSE_BREED_AMERICANSTANDARDBRED_BUCKSKIN"):
 			return joaat("A_C_HORSE_AMERICANSTANDARDBRED_BUCKSKIN");
-		case 694610769: /* GXTEntry: "American Standardbred~n~Palomino Dapple Coat" */
+		case joaat("HORSE_BREED_AMERICANSTANDARDBRED_PALOMINODAPPLE"):
 			return joaat("A_C_HORSE_AMERICANSTANDARDBRED_PALOMINODAPPLE");
-		case 1941463607: /* GXTEntry: "American Standardbred~n~Silver Tail Buckskin Coat" */
+		case joaat("HORSE_BREED_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN"):
 			return joaat("A_C_HORSE_AMERICANSTANDARDBRED_SILVERTAILBUCKSKIN");
-		case -887316537: /* GXTEntry: "Andalusian~n~Dark Bay Coat" */
+		case joaat("HORSE_BREED_ANDALUSIAN_DARKBAY"):
 			return joaat("A_C_HORSE_ANDALUSIAN_DARKBAY");
-		case 1762474047: /* GXTEntry: "Andalusian~n~Rose Grey Coat" */
+		case joaat("HORSE_BREED_ANDALUSIAN_ROSEGRAY"):
 			return joaat("A_C_HORSE_ANDALUSIAN_ROSEGRAY");
-		case -828859553: /* GXTEntry: "Andalusian~n~Perlino Coat" */
+		case joaat("HORSE_BREED_ANDALUSIAN_PERLINO"):
 			return joaat("A_C_HORSE_ANDALUSIAN_PERLINO");
-		case 1410237043: /* GXTEntry: "Appaloosa~n~Blanket Coat" */
+		case joaat("HORSE_BREED_APPALOOSA_BLANKET"):
 			return joaat("A_C_HORSE_APPALOOSA_BLANKET");
-		case -2026073756: /* GXTEntry: "Appaloosa~n~Leopard Blanket Coat" */
+		case joaat("HORSE_BREED_APPALOOSA_LEOPARDBLANKET"):
 			return joaat("A_C_HORSE_APPALOOSA_LEOPARDBLANKET");
-		case 2002245664: /* GXTEntry: "Appaloosa~n~Brown Leopard Coat" */
+		case joaat("HORSE_BREED_APPALOOSA_BROWNLEOPARD"):
 			return joaat("A_C_HORSE_APPALOOSA_BROWNLEOPARD");
-		case -1120227140: /* GXTEntry: "Appaloosa~n~Leopard Coat" */
+		case joaat("HORSE_BREED_APPALOOSA_LEOPARD"):
 			return joaat("A_C_HORSE_APPALOOSA_LEOPARD");
-		case 1142681594: /* GXTEntry: "Arabian~n~Black Coat" */
+		case joaat("HORSE_BREED_ARABIAN_BLACK"):
 			return joaat("A_C_HORSE_ARABIAN_BLACK");
-		case -864588185: /* GXTEntry: "Arabian~n~Rose Grey Bay Coat" */
+		case joaat("HORSE_BREED_ARABIAN_ROSEGREYBAY"):
 			return joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY");
-		case -1040918754: /* GXTEntry: "Arabian~n~White Coat" */
+		case joaat("HORSE_BREED_ARABIAN_WHITE"):
 			return joaat("A_C_HORSE_ARABIAN_WHITE");
-		case 535545841: /* GXTEntry: "Ardennes~n~Bay Roan Coat" */
+		case joaat("HORSE_BREED_ARDENNES_BAYROAN"):
 			return joaat("A_C_HORSE_ARDENNES_BAYROAN");
-		case 1686036388: /* GXTEntry: "Ardennes~n~Strawberry Roan Coat" */
+		case joaat("HORSE_BREED_ARDENNES_STRAWBERRYROAN"):
 			return joaat("A_C_HORSE_ARDENNES_STRAWBERRYROAN");
-		case 2125477381: /* GXTEntry: "Belgian~n~Blond Chestnut Coat" */
+		case joaat("HORSE_BREED_BELGIAN_BLONDCHESTNUT"):
 			return joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT");
-		case 1808724704: /* GXTEntry: "Belgian~n~Mealy Chestnut Coat" */
+		case joaat("HORSE_BREED_BELGIAN_MEALYCHESTNUT"):
 			return joaat("A_C_HORSE_BELGIAN_MEALYCHESTNUT");
-		case -1745871311: /* GXTEntry: "Dutch Warmblood~n~Sooty Buckskin Coat" */
+		case joaat("HORSE_BREED_DUTCHWARMBLOOD_SOOTYBUCKSKIN"):
 			return joaat("A_C_HORSE_DUTCHWARMBLOOD_SOOTYBUCKSKIN");
-		case -1366099125: /* GXTEntry: "Dutch Warmblood~n~Seal Brown Coat" */
+		case joaat("HORSE_BREED_DUTCHWARMBLOOD_SEALBROWN"):
 			return joaat("A_C_HORSE_DUTCHWARMBLOOD_SEALBROWN");
-		case -1900776854: /* GXTEntry: "Dutch Warmblood~n~Chocolate Roan Coat" */
+		case joaat("HORSE_BREED_DUTCHWARMBLOOD_CHOCOLATEROAN"):
 			return joaat("A_C_HORSE_DUTCHWARMBLOOD_CHOCOLATEROAN");
-		case 1381855825: /* GXTEntry: "Hungarian Halfbred~n~Flaxen Chestnut Coat" */
+		case joaat("HORSE_BREED_HUNGARIANHALFBRED_FLAXENCHESTNUT"):
 			return joaat("A_C_HORSE_HUNGARIANHALFBRED_FLAXENCHESTNUT");
-		case -470894301: /* GXTEntry: "Hungarian Halfbred~n~Flaxen Piebald Tobiano Coat" */
+		case joaat("HORSE_BREED_HUNGARIANHALFBRED_PIEBALDTOBIANO"):
 			return joaat("A_C_HORSE_HUNGARIANHALFBRED_PIEBALDTOBIANO");
-		case -58297715: /* GXTEntry: "Hungarian Halfbred~n~Dark Dapple Grey" */
+		case joaat("HORSE_BREED_HUNGARIANHALFBRED_DARKDAPPLEGREY"):
 			return joaat("A_C_HORSE_HUNGARIANHALFBRED_DARKDAPPLEGREY");
 		case joaat("HORSE_BREED_KENTUCKYSADDLE_BLACK"):
 			return joaat("A_C_HORSE_KENTUCKYSADDLE_BLACK");
-		case 1112812928: /* GXTEntry: "Kentucky Saddler~n~Chestnut Pinto Coat" */
+		case joaat("HORSE_BREED_KENTUCKYSADDLE_CHESTNUTPINTO"):
 			return joaat("A_C_HORSE_KENTUCKYSADDLE_CHESTNUTPINTO");
 		case joaat("HORSE_BREED_KENTUCKYSADDLE_GREY"):
 			return joaat("A_C_HORSE_KENTUCKYSADDLE_GREY");
-		case 2100045093: /* GXTEntry: "Kentucky Saddler~n~Silver Bay Coat" */
+		case joaat("HORSE_BREED_KENTUCKYSADDLE_SILVERBAY"):
 			return joaat("A_C_HORSE_KENTUCKYSADDLE_SILVERBAY");
-		case 1097965086: /* GXTEntry: "Missouri Fox Trotter~n~Amber Champagne" */
+		case joaat("HORSE_BREED_MISSOURIFOXTROTTER_AMBERCHAMPAGNE"):
 			return joaat("A_C_HORSE_MISSOURIFOXTROTTER_AMBERCHAMPAGNE");
-		case -2136667309: /* GXTEntry: "Missouri Fox Trotter~n~Silver Dapple Pinto Coat" */
+		case joaat("HORSE_BREED_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO"):
 			return joaat("A_C_HORSE_MISSOURIFOXTROTTER_SILVERDAPPLEPINTO");
-		case -376463594: /* GXTEntry: "Morgan~n~Bay Coat" */
+		case joaat("HORSE_BREED_MORGAN_BAY"):
 			return joaat("A_C_HORSE_MORGAN_BAY");
-		case -1917318030: /* GXTEntry: "Morgan~n~Bay Roan Coat" */
+		case joaat("HORSE_BREED_MORGAN_BAYROAN"):
 			return joaat("A_C_HORSE_MORGAN_BAYROAN");
-		case 1631640006: /* GXTEntry: "Morgan~n~Flaxen Chestnut Coat" */
+		case joaat("HORSE_BREED_MORGAN_FLAXENCHESTNUT"):
 			return joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT");
 		case joaat("HORSE_BREED_MORGAN_PALOMINO"):
 			return joaat("A_C_HORSE_MORGAN_PALOMINO");
-		case 210760725: /* GXTEntry: "Mustang~n~Tiger Grullo Dun Coat" */
+		case joaat("HORSE_BREED_MUSTANG_GRULLODUN"):
 			return joaat("A_C_HORSE_MUSTANG_GRULLODUN");
-		case 2051021144: /* GXTEntry: "Mustang~n~Wild Bay Coat" */
+		case joaat("HORSE_BREED_MUSTANG_WILDBAY"):
 			return joaat("A_C_HORSE_MUSTANG_WILDBAY");
-		case 1924406350: /* GXTEntry: "Mustang~n~Tiger Striped Bay Coat" */
+		case joaat("HORSE_BREED_MUSTANG_TIGERSTRIPEDBAY"):
 			return joaat("A_C_HORSE_MUSTANG_TIGERSTRIPEDBAY");
-		case -1990143531: /* GXTEntry: "Nokota~n~Blue Roan Coat" */
+		case joaat("HORSE_BREED_NOKOTA_BLUEROAN"):
 			return joaat("A_C_HORSE_NOKOTA_BLUEROAN");
-		case 1741899492: /* GXTEntry: "Nokota~n~White Roan Coat" */
+		case joaat("HORSE_BREED_NOKOTA_WHITEROAN"):
 			return joaat("A_C_HORSE_NOKOTA_WHITEROAN");
-		case -1629575335: /* GXTEntry: "Nokota~n~Reverse Dapple Roan Coat" */
+		case joaat("HORSE_BREED_NOKOTA_REVERSEDAPPLEROAN"):
 			return joaat("A_C_HORSE_NOKOTA_REVERSEDAPPLEROAN");
-		case 1096294193: /* GXTEntry: "Shire~n~Dark Bay Coat" */
+		case joaat("HORSE_BREED_SHIRE_DARKBAY"):
 			return joaat("A_C_HORSE_SHIRE_DARKBAY");
-		case -1162498792: /* GXTEntry: "Shire~n~Light Grey Coat" */
+		case joaat("HORSE_BREED_SHIRE_LIGHTGREY"):
 			return joaat("A_C_HORSE_SHIRE_LIGHTGREY");
-		case -212500005: /* GXTEntry: "Suffolk Punch~n~Sorrel Coat" */
+		case joaat("HORSE_BREED_SUFFOLKPUNCH_SORREL"):
 			return joaat("A_C_HORSE_SUFFOLKPUNCH_SORREL");
-		case -538557079: /* GXTEntry: "Suffolk Punch~n~Red Chestnut Coat" */
+		case joaat("HORSE_BREED_SUFFOLKPUNCH_REDCHESTNUT"):
 			return joaat("A_C_HORSE_SUFFOLKPUNCH_REDCHESTNUT");
-		case 171150858: /* GXTEntry: "Tennessee Walker~n~Black Rabicano Coat" */
+		case joaat("HORSE_BREED_TENNESSEEWALKER_BLACKRABICANO"):
 			return joaat("A_C_HORSE_TENNESSEEWALKER_BLACKRABICANO");
 		case joaat("HORSE_BREED_TENNESSEEWALKER_CHESTNUT"):
 			return joaat("A_C_HORSE_TENNESSEEWALKER_CHESTNUT");
-		case -126472599: /* GXTEntry: "Tennessee Walker~n~Dapple Bay Coat" */
+		case joaat("HORSE_BREED_TENNESSEEWALKER_DAPPLEBAY"):
 			return joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY");
-		case -332060056: /* GXTEntry: "Tennessee Walker~n~Red Roan Coat" */
+		case joaat("HORSE_BREED_TENNESSEEWALKER_REDROAN"):
 			return joaat("A_C_HORSE_TENNESSEEWALKER_REDROAN");
-		case 1917500091: /* GXTEntry: "Tennessee Walker~n~Flaxen Roan Coat" */
+		case joaat("HORSE_BREED_TENNESSEEWALKER_FLAXENROAN"):
 			return joaat("A_C_HORSE_TENNESSEEWALKER_FLAXENROAN");
-		case -1043453945: /* GXTEntry: "Thoroughbred~n~Blood Bay Coat" */
+		case joaat("HORSE_BREED_THOROUGHBRED_BLOODBAY"):
 			return joaat("A_C_HORSE_THOROUGHBRED_BLOODBAY");
-		case 1723487083: /* GXTEntry: "Thoroughbred~n~Dapple Grey Coat" */
+		case joaat("HORSE_BREED_THOROUGHBRED_DAPPLEGREY"):
 			return joaat("A_C_HORSE_THOROUGHBRED_DAPPLEGREY");
-		case 2044230644: /* GXTEntry: "Thoroughbred~n~Brindle Coat" */
+		case joaat("HORSE_BREED_THOROUGHBRED_BRINDLE"):
 			return joaat("A_C_HORSE_THOROUGHBRED_BRINDLE");
-		case 1999358190: /* GXTEntry: "Thoroughbred~n~Black Chestnut Coat" */
+		case joaat("HORSE_BREED_THOROUGHBRED_BLACKCHESTNUT"):
 			return joaat("A_C_HORSE_THOROUGHBRED_BLACKCHESTNUT");
-		case 344528703: /* GXTEntry: "Turkoman~n~Dark Bay Coat" */
+		case joaat("HORSE_BREED_TURKOMAN_DARKBAY"):
 			return joaat("A_C_HORSE_TURKOMAN_DARKBAY");
-		case -1674873797: /* GXTEntry: "Turkoman~n~Gold Coat" */
+		case joaat("HORSE_BREED_TURKOMAN_GOLD"):
 			return joaat("A_C_HORSE_TURKOMAN_GOLD");
-		case 281852151: /* GXTEntry: "Turkoman~n~Silver Coat" */
+		case joaat("HORSE_BREED_TURKOMAN_SILVER"):
 			return joaat("A_C_HORSE_TURKOMAN_SILVER");
-		case 908445453: /* GXTEntry: "Breton~n~Red Roan Coat" */
+		case joaat("HORSE_BREED_BRETON_REDROAN"):
 			return joaat("A_C_HORSE_BRETON_REDROAN");
-		case 1221398025: /* GXTEntry: "Breton~n~Sorrel Coat" */
+		case joaat("HORSE_BREED_BRETON_SORREL"):
 			return joaat("A_C_HORSE_BRETON_SORREL");
-		case -75300826: /* GXTEntry: "Breton~n~Grullo Dun Coat" */
+		case joaat("HORSE_BREED_BRETON_GRULLODUN"):
 			return joaat("A_C_HORSE_BRETON_GRULLODUN");
-		case -1714239153: /* GXTEntry: "Breton~n~Seal Brown Coat" */
+		case joaat("HORSE_BREED_BRETON_SEALBROWN"):
 			return joaat("A_C_HORSE_BRETON_SEALBROWN");
-		case 1404133288: /* GXTEntry: "Breton~n~Mealy Dapple Bay Coat" */
+		case joaat("HORSE_BREED_BRETON_MEALYDAPPLEBAY"):
 			return joaat("A_C_HORSE_BRETON_MEALYDAPPLEBAY");
-		case -1778967281: /* GXTEntry: "Breton~n~Steel Grey Coat" */
+		case joaat("HORSE_BREED_BRETON_STEELGREY"):
 			return joaat("A_C_HORSE_BRETON_STEELGREY");
-		case -455481432: /* GXTEntry: "Criollo~n~Blue Roan Overo Coat" */
+		case joaat("HORSE_BREED_CRIOLLO_BLUEROANOVERO"):
 			return joaat("A_C_HORSE_CRIOLLO_BLUEROANOVERO");
-		case -835454915: /* GXTEntry: "Criollo~n~Dun Coat" */
+		case joaat("HORSE_BREED_CRIOLLO_DUN"):
 			return joaat("A_C_HORSE_CRIOLLO_DUN");
-		case -2058115427: /* GXTEntry: "Criollo~n~Bay Brindle Coat" */
+		case joaat("HORSE_BREED_CRIOLLO_BAYBRINDLE"):
 			return joaat("A_C_HORSE_CRIOLLO_BAYBRINDLE");
-		case -482507775: /* GXTEntry: "Criollo~n~Sorrel Overo Coat" */
+		case joaat("HORSE_BREED_CRIOLLO_SORRELOVERO"):
 			return joaat("A_C_HORSE_CRIOLLO_SORRELOVERO");
-		case -563118293: /* GXTEntry: "Criollo~n~Bay Frame Overo Coat" */
+		case joaat("HORSE_BREED_CRIOLLO_BAYFRAMEOVERO"):
 			return joaat("A_C_HORSE_CRIOLLO_BAYFRAMEOVERO");
-		case -1091105818: /* GXTEntry: "Criollo~n~Marble Sabino Coat" */
+		case joaat("HORSE_BREED_CRIOLLO_MARBLESABINO"):
 			return joaat("A_C_HORSE_CRIOLLO_MARBLESABINO");
-		case 2004269960: /* GXTEntry: "Kladruber~n~Black Coat" */
+		case joaat("HORSE_BREED_KLADRUBER_BLACK"):
 			return joaat("A_C_HORSE_KLADRUBER_BLACK");
-		case 772515535: /* GXTEntry: "Kladruber~n~White Coat" */
+		case joaat("HORSE_BREED_KLADRUBER_WHITE"):
 			return joaat("A_C_HORSE_KLADRUBER_WHITE");
-		case 1851524477: /* GXTEntry: "Kladruber~n~Cremello Coat" */
+		case joaat("HORSE_BREED_KLADRUBER_CREMELLO"):
 			return joaat("A_C_HORSE_KLADRUBER_CREMELLO");
-		case -1444352669: /* GXTEntry: "Kladruber~n~Grey Coat" */
+		case joaat("HORSE_BREED_KLADRUBER_GREY"):
 			return joaat("A_C_HORSE_KLADRUBER_GREY");
-		case 1950373354: /* GXTEntry: "Kladruber~n~Dapple Rose Grey Coat" */
+		case joaat("HORSE_BREED_KLADRUBER_DAPPLEROSEGREY"):
 			return joaat("A_C_HORSE_KLADRUBER_DAPPLEROSEGREY");
-		case -878000957: /* GXTEntry: "Kladruber~n~Silver Coat" */
+		case joaat("HORSE_BREED_KLADRUBER_SILVER"):
 			return joaat("A_C_HORSE_KLADRUBER_SILVER");
-		case -2145947333: /* GXTEntry: "Norfolk Roadster~n~Black Coat" */
+		case joaat("HORSE_BREED_NORFOLKROADSTER_BLACK"):
 			return joaat("A_C_HORSE_NORFOLKROADSTER_BLACK");
-		case 156528857: /* GXTEntry: "Norfolk Roadster~n~Speckled Grey Coat" */
+		case joaat("HORSE_BREED_NORFOLKROADSTER_SPECKLEDGREY"):
 			return joaat("A_C_HORSE_NORFOLKROADSTER_SPECKLEDGREY");
-		case -1240970285: /* GXTEntry: "Norfolk Roadster~n~Piebald Roan Coat" */
+		case joaat("HORSE_BREED_NORFOLKROADSTER_PIEBALDROAN"):
 			return joaat("A_C_HORSE_NORFOLKROADSTER_PIEBALDROAN");
-		case -1933497088: /* GXTEntry: "Norfolk Roadster~n~Rose Grey Coat" */
+		case joaat("HORSE_BREED_NORFOLKROADSTER_ROSEGREY"):
 			return joaat("A_C_HORSE_NORFOLKROADSTER_ROSEGREY");
-		case -1116314766: /* GXTEntry: "Norfolk Roadster~n~Dappled Buckskin Coat" */
+		case joaat("HORSE_BREED_NORFOLKROADSTER_DAPPLEDBUCKSKIN"):
 			return joaat("A_C_HORSE_NORFOLKROADSTER_DAPPLEDBUCKSKIN");
-		case -877141885: /* GXTEntry: "Norfolk Roadster~n~Spotted Tricolor Coat" */
+		case joaat("HORSE_BREED_NORFOLKROADSTER_SPOTTEDTRICOLOR"):
 			return joaat("A_C_HORSE_NORFOLKROADSTER_SPOTTEDTRICOLOR");
-		case -285185056:
+		case joaat("HORSE_DONKEY"):
 			return joaat("A_C_DONKEY_01");
 		case -1692268955: /* GXTEntry: "Appaloosa~n~Black Snowflake Coat" */
 			return joaat("A_C_HORSE_APPALOOSA_BLACKSNOWFLAKE");
 		case 2130706226: /* GXTEntry: "Arabian~n~Grey Coat" */
 			return joaat("A_C_HORSE_ARABIAN_GREY");
-		case 1214981718: /* GXTEntry: "Arabian~n~Red Chestnut Coat" */
+		case joaat("HORSE_BREED_ARABIAN_REDCHESTNUT"):
 			return joaat("A_C_HORSE_ARABIAN_REDCHESTNUT");
 		case -1754375530: /* GXTEntry: "Hungarian Halfbred~n~Liver Chestnut Coat" */
 			return joaat("A_C_HORSE_HUNGARIANHALFBRED_LIVERCHESTNUT");
@@ -7566,7 +7566,7 @@ int func_347(int iParam0)
 			return joaat("A_C_HORSE_MURFREEBROOD_MANGE_02");
 		case -535752499:
 			return joaat("A_C_HORSE_MURFREEBROOD_MANGE_03");
-		case 559905966:
+		case joaat("HORSE_BREED_MANGY_BACKUP"):
 			return joaat("A_C_HORSE_MP_MANGY_BACKUP");
 		default:
 			break;

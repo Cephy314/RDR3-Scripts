@@ -1931,35 +1931,35 @@ char* func_62(var uParam0)
 	iVar0 = uParam0;
 	switch (iVar0)
 	{
-		case -2040555425: /* GXTEntry: "Blackwater" */
+		case joaat("STATION_BLACKWATER"):
 			return "NFT_BLACKWATER_DESC";
-		case 1048602539: /* GXTEntry: "Manzanita Post" */
+		case joaat("STATION_MANZANITA"):
 			return "NFT_MANZANITA_DESC";
-		case 1736907121: /* GXTEntry: "Strawberry" */
+		case joaat("STATION_STRAWBERRY"):
 			return "NFT_STRAWBERRY_DESC";
-		case -1067122960: /* GXTEntry: "Colter" */
+		case joaat("STATION_COLTER"):
 			return "NFT_COLTER_DESC";
-		case -1734290691: /* GXTEntry: "Wapiti" */
+		case joaat("STATION_WAPITI"):
 			return "NFT_WAPITI_DESC";
-		case 792805517: /* GXTEntry: "Valentine" */
+		case joaat("STATION_VALENTINE"):
 			return "NFT_VALENTINE_DESC";
-		case -1805494951: /* GXTEntry: "Van Horn" */
+		case joaat("STATION_VAN_HORN"):
 			return "NFT_VAN_HORN_DESC";
-		case -1934798422: /* GXTEntry: "Annesburg" */
+		case joaat("STATION_ANNESBERG"):
 			return "NFT_ANNESBERG_DESC";
-		case -200062769: /* GXTEntry: "Emerald Station" */
+		case joaat("STATION_EMERALD"):
 			return "NFT_EMERALD_DESC";
-		case 1426955875: /* GXTEntry: "Rhodes" */
+		case joaat("STATION_RHODES"):
 			return "NFT_RHODES_DESC";
-		case -423969023: /* GXTEntry: "Lagras" */
+		case joaat("STATION_LAGRAS"):
 			return "NFT_LAGRAS_DESC";
-		case 802776412: /* GXTEntry: "Tumbleweed" */
+		case joaat("STATION_TUMBLEWEED"):
 			return "NFT_TUMBLEWEED_DESC";
-		case 1158633383: /* GXTEntry: "MacFarlane\'s Ranch" */
+		case joaat("STATION_MACFARLANES"):
 			return "NFT_MACFARLANES_DESC";
-		case -1792739478: /* GXTEntry: "Armadillo" */
+		case joaat("STATION_ARMADILLO"):
 			return "NFT_ARMADILLO_DESC";
-		case 1525531195: /* GXTEntry: "Saint Denis" */
+		case joaat("STATION_SAINT_DENIS"):
 			return "NFT_SAINT_DENIS_DESC";
 	}
 	return "";
@@ -3022,7 +3022,7 @@ int func_102(int iParam0)
 
 int func_103()
 {
-	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(1636781897))
+	if (!UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("FEATURE_FAST_TRAVEL")))
 	{
 		return 1;
 	}
@@ -3348,15 +3348,15 @@ char* func_119(int iParam0)
 	{
 		case -931758312:
 			return "CAMP_LOCATION_CATEGORY_ALL";
-		case -2021996203:
+		case joaat("NFT_CATEGORY_AMBARINO"):
 			return "TITHE_AMBARINO";
-		case -1898198457:
+		case joaat("NFT_CATEGORY_LEMOYNE"):
 			return "TITHE_LEMOYNE";
-		case 1316689641:
+		case joaat("NFT_CATEGORY_WEST_ELIZABETH"):
 			return "TITHE_WEST_ELIZABETH";
-		case 147265738:
+		case joaat("NFT_CATEGORY_NEW_HANOVER"):
 			return "TITHE_NEW_HANOVER";
-		case -793104390:
+		case joaat("NFT_CATEGORY_NEW_AUSTIN"):
 			return "TITHE_NEW_AUSTIN";
 	}
 	return "ALL";
@@ -4992,19 +4992,19 @@ int func_190(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -2021996203:
+		case joaat("NFT_CATEGORY_AMBARINO"):
 			return 2;
-		case -1898198457:
+		case joaat("NFT_CATEGORY_LEMOYNE"):
 			return 3;
 		case -931758312:
 			return 1;
-		case -793104390:
+		case joaat("NFT_CATEGORY_NEW_AUSTIN"):
 			return 6;
 		case 0:
 			return 0;
-		case 147265738:
+		case joaat("NFT_CATEGORY_NEW_HANOVER"):
 			return 5;
-		case 1316689641:
+		case joaat("NFT_CATEGORY_WEST_ELIZABETH"):
 			return 4;
 		default:
 			break;
@@ -5028,15 +5028,15 @@ int func_191(int iParam0, int iParam1)
 		case 1:
 			return -931758312;
 		case 2:
-			return -2021996203;
+			return joaat("NFT_CATEGORY_AMBARINO");
 		case 3:
-			return -1898198457;
+			return joaat("NFT_CATEGORY_LEMOYNE");
 		case 4:
-			return 1316689641;
+			return joaat("NFT_CATEGORY_WEST_ELIZABETH");
 		case 5:
-			return 147265738;
+			return joaat("NFT_CATEGORY_NEW_HANOVER");
 		case 6:
-			return -793104390;
+			return joaat("NFT_CATEGORY_NEW_AUSTIN");
 		default:
 			break;
 	}
@@ -5749,7 +5749,7 @@ int func_217(var uParam0, bool bParam1)
 	int iVar59;
 
 	Var0.f_9 = -1591664384;
-	Var29 = { func_257(0, -1591664384, -1591664384, -1591664384, -1675500494, 0, 0) };
+	Var29 = { func_257(0, -1591664384, -1591664384, -1591664384, joaat("CI_CATEGORY_HORSE"), 0, 0) };
 	if (func_260(&Var29, &iVar43, &iVar44, bParam1))
 	{
 		Var45.f_9 = -1591664384;
@@ -6053,15 +6053,15 @@ int func_233(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 680390016;
+			return joaat("PROPERTY_BAYOU");
 		case 1:
-			return -2070886255;
+			return joaat("PROPERTY_GRIZZLIES");
 		case 2:
-			return 1821948827;
+			return joaat("PROPERTY_HENNIGANS");
 		case 3:
-			return -1823593561;
+			return joaat("PROPERTY_HEARTLANDS");
 		case 4:
-			return -1930045261;
+			return joaat("PROPERTY_TALL_TREES");
 		default:
 			break;
 	}
@@ -6073,15 +6073,15 @@ int func_234(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1799339271;
+			return joaat("EXTERIOR_FRONT");
 		case 1:
-			return -1712995813;
+			return joaat("EXTERIOR_SIDE");
 		case 2:
-			return -43333367;
+			return joaat("INTERIOR_GROUND_FRONT");
 		case 3:
-			return 1618302617;
+			return joaat("INTERIOR_GROUND_SIDE");
 		case 4:
-			return -2113498014;
+			return joaat("INTERIOR_BAR");
 		default:
 			break;
 	}

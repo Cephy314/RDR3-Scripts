@@ -4742,7 +4742,7 @@ void func_222(int iParam0, int iParam1, int iParam2)
 
 bool func_223()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 struct<4> func_224()

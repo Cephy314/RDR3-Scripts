@@ -498,7 +498,7 @@ var func_27(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 
 bool func_28()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 bool func_29()
@@ -526,7 +526,7 @@ void func_31(var uParam0, int iParam1, int iParam2)
 void func_32(var uParam0)
 {
 	func_21(uParam0, joaat("MULTIPLAYER_GAME"));
-	if (func_42() == 2026485318)
+	if (func_42() == joaat("MPC_PLAYER_TYPE_MP_MALE"))
 	{
 		func_21(uParam0, joaat("LOOTER_PED_IS_MALE"));
 	}
@@ -860,7 +860,7 @@ int func_50(int iParam0)
 			return -768760704;
 		case -28107610:
 			return -2118203104;
-		case -896045342:
+		case joaat("CLOTHING_BLEND_GRIME_NONE"):
 			return 1285634184;
 		case -643819742:
 			return -559080197;

@@ -2337,7 +2337,7 @@ void func_79(char* sParam0, char* sParam1, int iParam2)
 
 bool func_80()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 
 void func_81(int iParam0)

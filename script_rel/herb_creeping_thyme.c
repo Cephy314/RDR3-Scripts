@@ -2154,7 +2154,7 @@ void func_94(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	{
 		return;
 	}
-	if (iParam0 == 1807503187)
+	if (iParam0 == joaat("KIT_HANDHELD_CATALOG"))
 	{
 		return;
 	}
@@ -6414,6 +6414,6 @@ void func_287(var uParam0, int iParam1)
 
 bool func_288()
 {
-	return UNLOCK::_UNLOCK_IS_UNLOCKED(-121456797);
+	return UNLOCK::_UNLOCK_IS_UNLOCKED(joaat("SP_GAME_CONTENT_EDITION_SPECIAL"));
 }
 

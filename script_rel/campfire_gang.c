@@ -41606,7 +41606,7 @@ void func_1038(int iParam0)
 			}
 			else if (func_751(&(iParam0->f_259), 1f))
 			{
-				func_1297(2001176446, iParam0->f_131, 1);
+				func_1297(joaat("SONAR_OVERHEARD_BEAT_BIG"), iParam0->f_131, 1);
 				func_1296(iParam0, 2);
 			}
 			break;
@@ -41617,7 +41617,7 @@ void func_1038(int iParam0)
 			}
 			else if (func_751(&(iParam0->f_259), 5.5f))
 			{
-				func_1297(2001176446, iParam0->f_131, 1);
+				func_1297(joaat("SONAR_OVERHEARD_BEAT_BIG"), iParam0->f_131, 1);
 				func_1296(iParam0, 3);
 			}
 			break;
@@ -41655,7 +41655,7 @@ void func_1039(int iParam0)
 			}
 			else if (func_751(&(iParam0->f_259), 4.75f))
 			{
-				func_1297(2001176446, iParam0->f_131, 1);
+				func_1297(joaat("SONAR_OVERHEARD_BEAT_BIG"), iParam0->f_131, 1);
 				func_1296(iParam0, 2);
 			}
 			break;
@@ -41666,7 +41666,7 @@ void func_1039(int iParam0)
 			}
 			else if (func_751(&(iParam0->f_259), 3.5f))
 			{
-				func_1297(2001176446, iParam0->f_131, 1);
+				func_1297(joaat("SONAR_OVERHEARD_BEAT_BIG"), iParam0->f_131, 1);
 				func_1296(iParam0, 19);
 			}
 			break;
@@ -43936,7 +43936,7 @@ int func_1136(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 		if (MAP::DOES_BLIP_EXIST(MAP::GET_BLIP_FROM_ENTITY(iVar0)))
 		{
 		}
-		iVar1 = MAP::_BLIP_ADD_FOR_ENTITY(422991367, iVar0);
+		iVar1 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_COMPANION"), iVar0);
 		((*Global_1360165)[iParam0 /*1157*/])->f_2 = iVar1;
 		func_1337(iParam0, &iVar1);
 	}
@@ -48669,7 +48669,7 @@ void func_1337(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(*iParam1))
 	{
-		*iParam1 = MAP::_BLIP_ADD_FOR_ENTITY(422991367, func_756(iParam0));
+		*iParam1 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_COMPANION"), func_756(iParam0));
 	}
 	if (MAP::DOES_BLIP_EXIST(*iParam1))
 	{
@@ -51020,27 +51020,27 @@ int func_1394(int iParam0, int iParam1)
 		case 232:
 			return -2052774042;
 		case 233:
-			return -997150586;
+			return joaat("SLOTID_HORSE_BEDROLL");
 		case 234:
-			return -1189569496;
+			return joaat("SLOTID_HORSE_BLANKET");
 		case 235:
-			return 46488141;
+			return joaat("SLOTID_HORSE_CANTLE");
 		case 236:
-			return 1046566686;
+			return joaat("SLOTID_HORSE_FENDER");
 		case 237:
-			return 325139909;
+			return joaat("SLOTID_HORSE_HORN");
 		case 238:
-			return -1585141069;
+			return joaat("SLOTID_HORSE_INSURANCE");
 		case 239:
 			return 802754820;
 		case 240:
-			return 1415981582;
+			return joaat("SLOTID_HORSE_MANE");
 		case 241:
 			return -1886147520;
 		case 242:
-			return 654877947;
+			return joaat("SLOTID_HORSE_REINS");
 		case 243:
-			return -415648720;
+			return joaat("SLOTID_HORSE_SADDLE");
 		case 244:
 			return 1221327846;
 		case 245:
@@ -51062,15 +51062,15 @@ int func_1394(int iParam0, int iParam1)
 		case 253:
 			return -279722001;
 		case 254:
-			return 1310070322;
+			return joaat("SLOTID_HORSE_SADDLEBAG");
 		case 255:
 			return 724026534;
 		case 256:
-			return 137387616;
+			return joaat("SLOTID_HORSE_SEAT");
 		case 257:
-			return -653439684;
+			return joaat("SLOTID_HORSE_SEX");
 		case 258:
-			return 1376835592;
+			return joaat("SLOTID_HORSE_SKIRT");
 		case 259:
 			return -1824203570;
 		case 260:
@@ -51082,9 +51082,9 @@ int func_1394(int iParam0, int iParam1)
 		case 263:
 			return 1167442289;
 		case 264:
-			return 986998820;
+			return joaat("SLOTID_HORSE_STIRRUP");
 		case 265:
-			return -2119169513;
+			return joaat("SLOTID_HORSE_TAIL");
 		case 266:
 			return -2015960939;
 		case 267:
