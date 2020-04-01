@@ -23063,7 +23063,7 @@ void func_717(int iParam0)
 		Var0.f_4.f_9 = func_931(Var17, joaat("SLOTID_HORSE_MANE"), 0, -1);
 		Var0.f_4.f_9.f_1 = func_931(Var17, joaat("SLOTID_HORSE_TAIL"), 0, -1);
 		iVar35 = func_931(Var17, joaat("SLOTID_HORSE_SEX"), 0, -1);
-		if (iVar35 == -388128145)
+		if (iVar35 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 		{
 			Var0.f_4.f_11 = 1;
 		}
@@ -24630,7 +24630,7 @@ int func_777(struct<4> Param0, var uParam4, var uParam5, var uParam6)
 		uParam4->f_7 = func_931(Var0, -1886147520, 0, -1);
 	}
 	iVar14 = func_931(Param0, joaat("SLOTID_HORSE_SEX"), 0, -1);
-	if (iVar14 == -388128145)
+	if (iVar14 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 	{
 		*uParam6 = 1;
 	}
@@ -25751,7 +25751,7 @@ int func_828(var uParam0, int iParam1, struct<4> Param2)
 		uParam0->f_9.f_1.f_7 = func_931(Var0, -1886147520, 0, -1);
 	}
 	iVar14 = func_931(Param2, joaat("SLOTID_HORSE_SEX"), 0, -1);
-	if (iVar14 == -388128145)
+	if (iVar14 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 	{
 		uParam0->f_9.f_11 = 1;
 	}
@@ -52033,8 +52033,8 @@ void func_1849(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -1442703445, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -1505972720, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_MANES"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_TAILS"), 0, 0);
 }
 
 void func_1850(int iParam0, var uParam1)
@@ -52076,7 +52076,7 @@ void func_1851(int iParam0)
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_HORNS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_STIRRUPS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_BEDROLLS"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLEBAGS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);
 }

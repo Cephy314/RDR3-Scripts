@@ -1542,7 +1542,7 @@ int func_46(bool bParam0)
 		{
 			return 0;
 		}
-		if (func_143() == 673012160)
+		if (func_143() == joaat("HAI_RUSTLING_02"))
 		{
 			return 0;
 		}
@@ -16284,7 +16284,7 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_APPALOOSA_LEOPARDBLANKET"):
 			return joaat("HORSE_BREED_APPALOOSA_LEOPARDBLANKET");
 		case joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"):
-			return 729407854;
+			return joaat("HORSE_BREED_APPALOOSA_FEWSPOTTED");
 		case joaat("A_C_HORSE_APPALOOSA_BROWNLEOPARD"):
 			return joaat("HORSE_BREED_APPALOOSA_BROWNLEOPARD");
 		case joaat("A_C_HORSE_APPALOOSA_LEOPARD"):
@@ -16294,11 +16294,11 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT"):
 			return joaat("HORSE_BREED_ARABIAN_REDCHESTNUT");
 		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT_PC"):
-			return -845373950;
+			return joaat("HORSE_BREED_ARABIAN_REDCHESTNUT_PC");
 		case joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY"):
 			return joaat("HORSE_BREED_ARABIAN_ROSEGREYBAY");
 		case joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC"):
-			return 1482814085;
+			return joaat("HORSE_BREED_ARABIAN_WARPEDBRINDLE");
 		case joaat("A_C_HORSE_ARABIAN_WHITE"):
 			return joaat("HORSE_BREED_ARABIAN_WHITE");
 		case joaat("A_C_HORSE_ARDENNES_BAYROAN"):
@@ -16306,7 +16306,7 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_ARDENNES_STRAWBERRYROAN"):
 			return joaat("HORSE_BREED_ARDENNES_STRAWBERRYROAN");
 		case joaat("A_C_HORSE_ARDENNES_IRONGREYROAN"):
-			return -621245377 /* GXTEntry: "Ardennes~n~Iron Grey Roan Coat" */;
+			return joaat("HORSE_BREED_ARDENNES_IRONGREYROAN");
 		case joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT"):
 			return joaat("HORSE_BREED_BELGIAN_BLONDCHESTNUT");
 		case joaat("A_C_HORSE_BELGIAN_MEALYCHESTNUT"):
@@ -16326,7 +16326,7 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BLACK"):
 			return joaat("HORSE_BREED_KENTUCKYSADDLE_BLACK");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
-			return -1158763155;
+			return joaat("HORSE_BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_CHESTNUTPINTO"):
 			return joaat("HORSE_BREED_KENTUCKYSADDLE_CHESTNUTPINTO");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_GREY"):
@@ -16344,7 +16344,7 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
 			return joaat("HORSE_BREED_MORGAN_FLAXENCHESTNUT");
 		case joaat("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC"):
-			return -1565311117;
+			return joaat("HORSE_BREED_MORGAN_LIVERCHESTNUT");
 		case joaat("A_C_HORSE_MORGAN_PALOMINO"):
 			return joaat("HORSE_BREED_MORGAN_PALOMINO");
 		case joaat("A_C_HORSE_MUSTANG_GRULLODUN"):
@@ -16374,7 +16374,7 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY"):
 			return joaat("HORSE_BREED_TENNESSEEWALKER_DAPPLEBAY");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC"):
-			return -1219957736;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_GOLDPALOMINO");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_REDROAN"):
 			return joaat("HORSE_BREED_TENNESSEEWALKER_REDROAN");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_FLAXENROAN"):
@@ -16386,7 +16386,7 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_THOROUGHBRED_BRINDLE"):
 			return joaat("HORSE_BREED_THOROUGHBRED_BRINDLE");
 		case joaat("A_C_HORSE_THOROUGHBRED_REVERSEDAPPLEBLACK"):
-			return 1680713143 /* GXTEntry: "Thoroughbred~n~Reverse Dapple Black Coat" */;
+			return joaat("HORSE_BREED_THOROUGHBRED_REVERSEDAPPLEBLACK");
 		case joaat("A_C_HORSE_TURKOMAN_DARKBAY"):
 			return joaat("HORSE_BREED_TURKOMAN_DARKBAY");
 		case joaat("A_C_HORSE_TURKOMAN_GOLD"):
@@ -16406,9 +16406,9 @@ int func_592(int iParam0)
 		case joaat("A_C_HORSE_MUSTANG_GOLDENDUN"):
 			return -1390353518 /* GXTEntry: "Mustang~n~Golden Dun Coat" */;
 		case joaat("A_C_HORSE_TENNESSEEWALKER_MAHOGANYBAY"):
-			return 330935532 /* GXTEntry: "Tennessee Walker~n~Mahogany Bay Coat" */;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_MAHOGANYBAY");
 		case joaat("A_C_HORSE_SHIRE_RAVENBLACK"):
-			return -935042458 /* GXTEntry: "Shire~n~Raven Black Coat" */;
+			return joaat("HORSE_BREED_SHIRE_RAVENBLACK");
 		case joaat("A_C_HORSE_BUELL_WARVETS"):
 			return -41062704;
 		case joaat("A_C_HORSE_JOHN_ENDLESSSUMMER"):
@@ -22619,69 +22619,69 @@ int func_777(int iParam0)
 		case 65:
 			return -409616653 /* GXTEntry: "The Homesteader" */;
 		case 29:
-			return 509954990 /* GXTEntry: "The Chevalier" */;
+			return joaat("CLOTHING_OUTFIT_NEW_RHDSHOP_001_H");
 		case 30:
-			return -445916744 /* GXTEntry: "The Heartlands" */;
+			return joaat("CLOTHING_OUTFIT_NEW_RHDSHOP_001_L");
 		case 31:
-			return -866249154 /* GXTEntry: "The Gambler" */;
+			return joaat("CLOTHING_OUTFIT_NEW_RHDSHOP_002_H");
 		case 32:
-			return -2077063704 /* GXTEntry: "The Earl" */;
+			return joaat("CLOTHING_OUTFIT_NEW_RHDSHOP_002_L");
 		case 33:
-			return 205207539 /* GXTEntry: "The McLaughlin" */;
+			return joaat("CLOTHING_OUTFIT_NEW_BLCKSHOP_001_H");
 		case 34:
-			return -1033657275 /* GXTEntry: "The Josiah" */;
+			return joaat("CLOTHING_OUTFIT_NEW_BLCKSHOP_001_L");
 		case 35:
-			return 1806002837 /* GXTEntry: "The Farrier" */;
+			return joaat("CLOTHING_OUTFIT_NEW_BLCKSHOP_002_H");
 		case 36:
-			return 705324896 /* GXTEntry: "The Donegal" */;
+			return joaat("CLOTHING_OUTFIT_NEW_BLCKSHOP_002_L");
 		case 37:
-			return -1541763703 /* GXTEntry: "The Bulldogger" */;
+			return joaat("CLOTHING_OUTFIT_AMDSHOP_001_H");
 		case 38:
-			return 387052410 /* GXTEntry: "The Ranch Hand" */;
+			return joaat("CLOTHING_OUTFIT_AMDSHOP_001_L");
 		case 39:
-			return -361288914 /* GXTEntry: "The Scrapper" */;
+			return joaat("CLOTHING_OUTFIT_AMDSHOP_002_H");
 		case 40:
-			return -911054515 /* GXTEntry: "The Armadillo" */;
+			return joaat("CLOTHING_OUTFIT_AMDSHOP_002_L");
 		case 41:
-			return 1084200963 /* GXTEntry: "The Valentine" */;
+			return joaat("CLOTHING_OUTFIT_NEW_VALSHOP_001_H");
 		case 42:
-			return 1847948074 /* GXTEntry: "The Vaquero" */;
+			return joaat("CLOTHING_OUTFIT_NEW_VALSHOP_001_L");
 		case 43:
-			return -1212526764 /* GXTEntry: "The Dewberry Creek" */;
+			return joaat("CLOTHING_OUTFIT_NEW_VALSHOP_002_H");
 		case 44:
-			return 1851440270 /* GXTEntry: "The Clairmont" */;
+			return joaat("CLOTHING_OUTFIT_NEW_VALSHOP_002_L");
 		case 45:
-			return -2028985700 /* GXTEntry: "The Roscoe" */;
+			return joaat("CLOTHING_OUTFIT_NEW_WALSHOP_001_H");
 		case 46:
-			return 1074435214 /* GXTEntry: "The Estate Boss" */;
+			return joaat("CLOTHING_OUTFIT_NEW_WALSHOP_001_L");
 		case 47:
-			return -883015675 /* GXTEntry: "The Drover" */;
+			return joaat("CLOTHING_OUTFIT_NEW_WALSHOP_002_H");
 		case 48:
-			return -1047155604 /* GXTEntry: "The Calumet" */;
+			return joaat("CLOTHING_OUTFIT_NEW_WALSHOP_002_L");
 		case 49:
-			return 1123231221 /* GXTEntry: "The Cowpuncher" */;
+			return joaat("CLOTHING_OUTFIT_NEW_TBLSHOP_001_H");
 		case 50:
-			return 1866989210 /* GXTEntry: "The Tumbleweed" */;
+			return joaat("CLOTHING_OUTFIT_NEW_TBLSHOP_001_L");
 		case 51:
-			return 478183719 /* GXTEntry: "The Drifter" */;
+			return joaat("CLOTHING_OUTFIT_NEW_TBLSHOP_002_H");
 		case 52:
-			return -1698955868 /* GXTEntry: "The Leatherman" */;
+			return joaat("CLOTHING_OUTFIT_NEW_TBLSHOP_002_L");
 		case 53:
-			return -2029378634 /* GXTEntry: "The Cumberland" */;
+			return joaat("CLOTHING_OUTFIT_NEW_STRSHOP_001_H");
 		case 54:
-			return 1339864416 /* GXTEntry: "The Millesani" */;
+			return joaat("CLOTHING_OUTFIT_NEW_STRSHOP_001_L");
 		case 55:
-			return 890998115 /* GXTEntry: "The Faulkton" */;
+			return joaat("CLOTHING_OUTFIT_NEW_STRSHOP_002_H");
 		case 56:
-			return -1376288999 /* GXTEntry: "The Dolton" */;
+			return joaat("CLOTHING_OUTFIT_NEW_STRSHOP_002_L");
 		case 57:
-			return -1041123771 /* GXTEntry: "The Corson" */;
+			return joaat("CLOTHING_OUTFIT_NEW_SDSHOP_001_H");
 		case 58:
 			return 1389254668 /* GXTEntry: "The Saint Denis" */;
 		case 59:
-			return -346112633 /* GXTEntry: "The Deauville" */;
+			return joaat("CLOTHING_OUTFIT_NEW_SDSHOP_002_H");
 		case 60:
-			return 773309172 /* GXTEntry: "The Bretagne" */;
+			return joaat("CLOTHING_OUTFIT_NEW_SDSHOP_002_L");
 		default:
 			break;
 	}

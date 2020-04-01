@@ -32952,7 +32952,7 @@ void func_1081(bool bParam0)
 								{
 									bVar3 = func_1073() <= -160;
 								}
-								else if (iVar0 == -1712679084)
+								else if (iVar0 == joaat("SHOP_HONOR_GOOD_4"))
 								{
 									bVar3 = func_1073() >= 160;
 								}
@@ -36044,15 +36044,15 @@ int func_1191()
 		case 120:
 		case 160:
 		case 200:
-			return -608161198;
+			return joaat("SHOP_HONOR_LOW");
 		case 240:
 		case 280:
 		case 320:
-			return -2132502231;
+			return joaat("SHOP_HONOR_HIGH");
 		default:
 			break;
 	}
-	return -1130204298;
+	return joaat("SHOP_HONOR_AMORAL");
 }
 
 void func_1192(char* sParam0, char* sParam1, int iParam2)
@@ -38845,8 +38845,8 @@ void func_1329(bool bParam0)
 	if (TASK::IS_PED_IN_WRITHE(bParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -1442703445, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -1505972720, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_MANES"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_TAILS"), 0, false);
 }
 
 void func_1330(bool bParam0, var uParam1)
@@ -38888,7 +38888,7 @@ void func_1331(bool bParam0)
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("SADDLE_HORNS"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("SADDLE_STIRRUPS"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_BEDROLLS"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -2142954459, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLEBAGS"), 0, false);
 }
 
 void func_1332(bool bParam0, var uParam1)
@@ -39256,7 +39256,7 @@ int func_1342(int iParam0)
 		case 19:
 			return joaat("ST_PEARSON");
 		case 22:
-			return 285759500;
+			return joaat("ST_NEWSPAPER_BOY");
 		case 20:
 			return joaat("ST_HOTEL");
 		case 32:

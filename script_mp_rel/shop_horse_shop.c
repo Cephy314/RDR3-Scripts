@@ -24721,7 +24721,7 @@ int func_719(var uParam0)
 					switch (uParam0->f_2094.f_117)
 					{
 						case 0:
-							Var41 = { func_1127(-388128145 /* GXTEntry: "Male" */, Var26, joaat("SLOTID_HORSE_SEX"), 0) };
+							Var41 = { func_1127(joaat("HORSE_EQUIPMENT_MALE_GENITALS"), Var26, joaat("SLOTID_HORSE_SEX"), 0) };
 							break;
 						case 1:
 							Var41 = { func_1127(joaat("HORSE_EQUIPMENT_FEMALE_GENITALS"), Var26, joaat("SLOTID_HORSE_SEX"), 0) };
@@ -30613,7 +30613,7 @@ int func_933(var uParam0, bool bParam1)
 			func_1502(iVar0, &uVar13);
 			func_1503(iVar0);
 			func_1504(iVar0, &uVar5);
-			if (bVar15 == -388128145)
+			if (bVar15 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 			{
 				func_1505(iVar0, 1);
 			}
@@ -30631,7 +30631,7 @@ int func_933(var uParam0, bool bParam1)
 			func_1502(iVar0, &uVar13);
 			func_1503(iVar0);
 			func_1504(iVar0, &uVar5);
-			if (bVar15 == -388128145)
+			if (bVar15 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 			{
 				func_1505(iVar0, 1);
 			}
@@ -30661,7 +30661,7 @@ int func_933(var uParam0, bool bParam1)
 				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("SADDLE_HORNS"), 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("SADDLE_STIRRUPS"), 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("HORSE_BEDROLLS"), 0, 0);
-				PED::_0xDF631E4BCE1B1FC4(iVar0, -2142954459, 0, 0);
+				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("HORSE_SADDLEBAGS"), 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, 355515932, 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, -749728163, 0, 0);
 				uVar36 = 1;
@@ -42636,7 +42636,7 @@ int func_1262(var uParam0)
 				PED::_0xA5BAE410B03E7371(iVar0, 0, 0, 1);
 				func_1929(iVar0, &Var73, &uVar65, 0, 1);
 				bVar75 = func_1499(Var19, joaat("SLOTID_HORSE_SEX"), 0, -1);
-				if (bVar75 == -388128145)
+				if (bVar75 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 				{
 					func_1505(iVar0, 1);
 				}
@@ -46525,7 +46525,7 @@ int func_1388(var uParam0, int iParam1)
 		Var47 = { func_789(uParam0) };
 		bVar51 = func_1499(Var47, joaat("SLOTID_HORSE_SEX"), 0, -1);
 		Var52.f_9 = -1591664384;
-		if (bVar51 == -388128145)
+		if (bVar51 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 		{
 			func_1505(Local_31.f_3, 1);
 		}
@@ -47088,7 +47088,7 @@ int func_1411(int iParam0, var uParam1, int iParam2, int iParam3)
 			return 0;
 		case 318533979:
 			return 0;
-		case 1458081975:
+		case joaat("INV_REQ_TYPE_IN_REGION"):
 			if (func_6(func_370(iParam0), iParam0))
 			{
 				return 1;
@@ -48945,8 +48945,8 @@ void func_1500(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -1442703445, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -1505972720, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_MANES"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_TAILS"), 0, 0);
 }
 
 void func_1501(var uParam0, int iParam1)
@@ -48993,7 +48993,7 @@ void func_1503(int iParam0)
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_HORNS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_STIRRUPS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_BEDROLLS"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLEBAGS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);
 }
@@ -49126,9 +49126,9 @@ int func_1512(bool bParam0)
 	switch (bParam0)
 	{
 		case joaat("SLOTID_HORSE_MANE"):
-			return -1442703445;
+			return joaat("HORSE_MANES");
 		case joaat("SLOTID_HORSE_TAIL"):
-			return -1505972720;
+			return joaat("HORSE_TAILS");
 		case joaat("SLOTID_HORSE_SADDLE"):
 			return joaat("HORSE_SADDLES");
 		case joaat("SLOTID_HORSE_BLANKET"):
@@ -49140,7 +49140,7 @@ int func_1512(bool bParam0)
 		case joaat("SLOTID_HORSE_BEDROLL"):
 			return joaat("HORSE_BEDROLLS");
 		case joaat("SLOTID_HORSE_SADDLEBAG"):
-			return -2142954459;
+			return joaat("HORSE_SADDLEBAGS");
 		case 802754820:
 			return 355515932;
 		case -1886147520:

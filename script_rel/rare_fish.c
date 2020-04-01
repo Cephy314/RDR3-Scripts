@@ -44,7 +44,7 @@ void __EntryFunction__()
 	{
 		if (!func_4(21))
 		{
-			if (!func_5(687859577))
+			if (!func_5(joaat("HAI_FISHING_02")))
 			{
 				func_2(&uLocal_14);
 			}
@@ -251,7 +251,7 @@ int func_13(var uParam0)
 			{
 				if (iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_14") || iLocal_21 == joaat("LEGENDARY_FISHING_SPOT_13"))
 				{
-					if (!func_4(21) && !func_5(687859577))
+					if (!func_4(21) && !func_5(joaat("HAI_FISHING_02")))
 					{
 					}
 					else
@@ -394,7 +394,7 @@ var func_16()
 
 int func_17(var uParam0, int iParam1)
 {
-	if (iParam1 == -1891229662)
+	if (iParam1 == joaat("HAI_BANK_ROBBERY_01"))
 	{
 		return func_38(0, func_37(iParam1, 1), 11, joaat("CABR01"));
 	}
@@ -617,39 +617,39 @@ int func_37(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1894360593:
+		case joaat("HAI_HUNTING_02"):
 			return 1;
-		case -1891229662:
+		case joaat("HAI_BANK_ROBBERY_01"):
 			return 10;
 		case -1348173149:
 			return 17;
-		case -1220302226:
+		case joaat("HAI_HOME_ROBBERY_01"):
 			return 14;
-		case -839878969:
+		case joaat("HAI_COACH_ROBBERY_01"):
 			return 7;
 		case -709866131:
 			return 16;
-		case -668333238:
+		case joaat("HAI_COACH_ROBBERY_03"):
 			return 11;
 		case -589165916:
 			return 0;
-		case -360730635:
+		case joaat("HAI_COACH_ROBBERY_02"):
 			return 8;
-		case -103573613:
+		case joaat("HAI_FIVE_FINGER_FILLET_01"):
 			return 4;
-		case 99378894:
+		case joaat("HAI_COACH_ROBBERY_04"):
 			return 12;
-		case 194099983:
+		case joaat("HAI_FIVE_FINGER_FILLET_02"):
 			return 9;
-		case 581819093:
+		case joaat("HAI_FISHING_01"):
 			return 2;
-		case 673012160:
+		case joaat("HAI_RUSTLING_02"):
 			return 13;
-		case 687859577:
+		case joaat("HAI_FISHING_02"):
 			return 3;
-		case 1202375449:
+		case joaat("HAI_HUNTING_06"):
 			return 5;
-		case 2038046186:
+		case joaat("HAI_DOMINOES_01"):
 			return 6;
 		case 2061320468:
 			return 15;

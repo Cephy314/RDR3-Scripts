@@ -7035,7 +7035,7 @@ int func_13(var uParam0, var uParam1, var uParam2)
 
 	bVar1 = true;
 	func_95(uParam2->f_384.f_317, 1);
-	func_96(-1015925347, 0, 0, 1103626240 /* Float: 25f */);
+	func_96(joaat("WEATHER_GROUP_GOOD_VISIBILITY"), 0, 0, 1103626240 /* Float: 25f */);
 	switch (uParam1[uParam2->f_1 /*10*/])
 	{
 		case 0:
@@ -35673,7 +35673,7 @@ int func_940(var uParam0)
 					switch (uParam0->f_2094.f_117)
 					{
 						case 0:
-							Var41 = { func_666(-388128145 /* GXTEntry: "Male" */, Var26, joaat("SLOTID_HORSE_SEX"), 0) };
+							Var41 = { func_666(joaat("HORSE_EQUIPMENT_MALE_GENITALS"), Var26, joaat("SLOTID_HORSE_SEX"), 0) };
 							break;
 						case 1:
 							Var41 = { func_666(joaat("HORSE_EQUIPMENT_FEMALE_GENITALS"), Var26, joaat("SLOTID_HORSE_SEX"), 0) };
@@ -48501,7 +48501,7 @@ int func_1430(var uParam0)
 				PED::_0xA5BAE410B03E7371(iVar0, 0, 0, 1);
 				func_2042(iVar0, &Var73, &uVar65, 0, 1);
 				iVar75 = func_1162(Var19, joaat("SLOTID_HORSE_SEX"), 0, -1);
-				if (iVar75 == -388128145)
+				if (iVar75 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 				{
 					func_1922(iVar0, 1);
 				}
@@ -66678,35 +66678,35 @@ int func_2111(int iParam0, int iParam1)
 {
 	switch (iParam0)
 	{
-		case -1368127279:
+		case joaat("WEATHER_GROUP_CH2_END"):
 			return 3;
-		case -1324765740:
+		case joaat("WEATHER_GROUP_CH2_MID"):
 			return 4;
-		case -1119640448:
+		case joaat("WEATHER_GROUP_CH3_DROUGHT"):
 			return 6;
-		case -1015925347:
+		case joaat("WEATHER_GROUP_GOOD_VISIBILITY"):
 			return 8;
-		case -857562377:
+		case joaat("WEATHER_GROUP_GOOD"):
 			return 7;
-		case -579939614:
+		case joaat("WEATHER_GROUP_LIGHT_PRECIPITATION"):
 			return 10;
-		case -193557170:
+		case joaat("WEATHER_GROUP_IN_CAMP"):
 			return 9;
 		case 0:
 			return 13;
 		case 15:
 			return 14;
-		case 54488187:
+		case joaat("WEATHER_GROUP_BAD_VISIBILITY"):
 			return 2;
-		case 100010212:
+		case joaat("WEATHER_GROUP_NO_PRECIPITATION"):
 			return 11;
-		case 679418883:
+		case joaat("WEATHER_GROUP_ATMOSPHERIC"):
 			return 0;
-		case 880414984:
+		case joaat("WEATHER_GROUP_THUNDERSTORM"):
 			return 12;
-		case 1077154516:
+		case joaat("WEATHER_GROUP_BAD"):
 			return 1;
-		case 1620037762:
+		case joaat("WEATHER_GROUP_CH2_START"):
 			return 5;
 		default:
 			break;
@@ -66857,43 +66857,43 @@ void func_2113(int iParam0, bool bParam1, float fParam2)
 	}
 	switch (iParam0)
 	{
-		case 679418883:
+		case joaat("WEATHER_GROUP_ATMOSPHERIC"):
 			iVar10 = joaat("MISTY");
 			break;
-		case 1077154516:
+		case joaat("WEATHER_GROUP_BAD"):
 			iVar10 = joaat("RAIN");
 			break;
-		case 54488187:
+		case joaat("WEATHER_GROUP_BAD_VISIBILITY"):
 			iVar10 = joaat("FOG");
 			break;
-		case -1368127279:
+		case joaat("WEATHER_GROUP_CH2_END"):
 			iVar10 = joaat("HIGHPRESSURE");
 			break;
-		case -1324765740:
+		case joaat("WEATHER_GROUP_CH2_MID"):
 			iVar10 = joaat("SUNNY");
 			break;
-		case 1620037762:
+		case joaat("WEATHER_GROUP_CH2_START"):
 			iVar10 = joaat("CLOUDS");
 			break;
-		case -1119640448:
+		case joaat("WEATHER_GROUP_CH3_DROUGHT"):
 			iVar10 = joaat("SUNNY");
 			break;
-		case -857562377:
+		case joaat("WEATHER_GROUP_GOOD"):
 			iVar10 = joaat("SUNNY");
 			break;
-		case -1015925347:
+		case joaat("WEATHER_GROUP_GOOD_VISIBILITY"):
 			iVar10 = joaat("HIGHPRESSURE");
 			break;
-		case -193557170:
+		case joaat("WEATHER_GROUP_IN_CAMP"):
 			iVar10 = joaat("CLOUDS");
 			break;
-		case -579939614:
+		case joaat("WEATHER_GROUP_LIGHT_PRECIPITATION"):
 			iVar10 = joaat("OVERCAST");
 			break;
-		case 100010212:
+		case joaat("WEATHER_GROUP_NO_PRECIPITATION"):
 			iVar10 = joaat("CLOUDS");
 			break;
-		case 880414984:
+		case joaat("WEATHER_GROUP_THUNDERSTORM"):
 			iVar10 = joaat("THUNDERSTORM");
 			break;
 		default:
@@ -83131,7 +83131,7 @@ int func_2633(int iParam0, var uParam1, int iParam2, int iParam3)
 			return 0;
 		case 318533979:
 			return 0;
-		case 1458081975:
+		case joaat("INV_REQ_TYPE_IN_REGION"):
 			if (func_2967(func_2631(iParam0), iParam0))
 			{
 				return 1;
@@ -83355,9 +83355,9 @@ int func_2635(bool bParam0)
 	switch (bParam0)
 	{
 		case joaat("SLOTID_HORSE_MANE"):
-			return -1442703445;
+			return joaat("HORSE_MANES");
 		case joaat("SLOTID_HORSE_TAIL"):
-			return -1505972720;
+			return joaat("HORSE_TAILS");
 		case joaat("SLOTID_HORSE_SADDLE"):
 			return joaat("HORSE_SADDLES");
 		case joaat("SLOTID_HORSE_BLANKET"):
@@ -83369,7 +83369,7 @@ int func_2635(bool bParam0)
 		case joaat("SLOTID_HORSE_BEDROLL"):
 			return joaat("HORSE_BEDROLLS");
 		case joaat("SLOTID_HORSE_SADDLEBAG"):
-			return -2142954459;
+			return joaat("HORSE_SADDLEBAGS");
 		case 802754820:
 			return 355515932;
 		case -1886147520:
@@ -83430,8 +83430,8 @@ void func_2638(int iParam0)
 	if (TASK::IS_PED_IN_WRITHE(iParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -1442703445, 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -1505972720, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_MANES"), 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_TAILS"), 0, 0);
 }
 
 void func_2639(int iParam0, var uParam1)
@@ -83473,7 +83473,7 @@ void func_2640(int iParam0)
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_HORNS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("SADDLE_STIRRUPS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_BEDROLLS"), 0, 0);
-	PED::_0xDF631E4BCE1B1FC4(iParam0, -2142954459, 0, 0);
+	PED::_0xDF631E4BCE1B1FC4(iParam0, joaat("HORSE_SADDLEBAGS"), 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, 355515932, 0, 0);
 	PED::_0xDF631E4BCE1B1FC4(iParam0, -749728163, 0, 0);
 }
@@ -85019,7 +85019,7 @@ int func_2715(var uParam0, int iParam1)
 			func_2639(iVar0, &uVar13);
 			func_2640(iVar0);
 			func_2641(iVar0, &uVar5);
-			if (iVar15 == -388128145)
+			if (iVar15 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 			{
 				func_1922(iVar0, 1);
 			}
@@ -85037,7 +85037,7 @@ int func_2715(var uParam0, int iParam1)
 			func_2639(iVar0, &uVar13);
 			func_2640(iVar0);
 			func_2641(iVar0, &uVar5);
-			if (iVar15 == -388128145)
+			if (iVar15 == joaat("HORSE_EQUIPMENT_MALE_GENITALS"))
 			{
 				func_1922(iVar0, 1);
 			}
@@ -85067,7 +85067,7 @@ int func_2715(var uParam0, int iParam1)
 				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("SADDLE_HORNS"), 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("SADDLE_STIRRUPS"), 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("HORSE_BEDROLLS"), 0, 0);
-				PED::_0xDF631E4BCE1B1FC4(iVar0, -2142954459, 0, 0);
+				PED::_0xDF631E4BCE1B1FC4(iVar0, joaat("HORSE_SADDLEBAGS"), 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, 355515932, 0, 0);
 				PED::_0xDF631E4BCE1B1FC4(iVar0, -749728163, 0, 0);
 				uVar36 = 1;

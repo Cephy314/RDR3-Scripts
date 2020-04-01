@@ -659,501 +659,501 @@ int func_11(int iParam0)
 		case -1:
 			return -1385367302;
 		case 0:
-			return -828007390;
+			return joaat("HASH_AMB_VIG_BARBER_SHAVING");
 		case 1:
-			return -970823121;
+			return joaat("HASH_AMB_VIG_BODY_TOSS");
 		case 2:
-			return 597248137;
+			return joaat("HASH_AMB_VIG_BUTCHER_BLEED_DEER");
 		case 3:
-			return 1415193646;
+			return joaat("HASH_AMB_VIG_BUTCHER_HANG_CARCASS");
 		case 4:
-			return 709565262;
+			return joaat("HASH_AMB_VIG_CHAMBERPOT_TOSS");
 		case 5:
-			return 247484182;
+			return joaat("HASH_AMB_VIG_COW_GRAZING");
 		case 6:
-			return 837407294;
+			return joaat("HASH_AMB_VIG_DROP_RABBIT_TABLE");
 		case 7:
-			return 1145349782;
+			return joaat("HASH_AMB_VIG_GET_DIRECTIONS");
 		case 8:
-			return -1064945610;
+			return joaat("HASH_AMB_VIG_GOAT_GRAZING");
 		case 9:
-			return 1556793940;
+			return joaat("HASH_AMB_VIG_LIGHT_SMOKE");
 		case 10:
-			return -1985894378;
+			return joaat("HASH_AMB_VIG_LUMBER_PASS_DOWN_BALCONY");
 		case 11:
-			return -1193574667;
+			return joaat("HASH_AMB_VIG_LUMBER_PASS_UP_BALCONY");
 		case 12:
-			return -1042052975;
+			return joaat("HASH_AMB_VIG_MAN_JUMP_FENCE");
 		case 13:
-			return 950734716;
+			return joaat("HASH_AMB_VIG_MAN_STAND_AT_WAGON");
 		case 14:
-			return 401325959;
+			return joaat("HASH_AMB_VIG_PUMP_CART");
 		case 16:
-			return -180269049;
+			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_1_HIGH");
 		case 17:
-			return 2096518103;
+			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_1_MED");
 		case 18:
-			return -336193868;
+			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_2_HIGH");
 		case 19:
-			return 1893731299;
+			return joaat("HASH_AMB_VIG_SHOPKEEPER_RESTOCK_2_MED");
 		case 20:
-			return 985699515;
+			return joaat("HASH_AMB_VIG_STAGE_COACH");
 		case 21:
-			return -552485553;
+			return joaat("HASH_AMB_VIG_STARTING_TO_RAIN_FEMALE");
 		case 22:
-			return -1463587390;
+			return joaat("HASH_AMB_VIG_STARTING_TO_RAIN_MALE");
 		case 23:
-			return -385927845;
+			return joaat("HASH_AMB_VIG_VOMIT_SIT_FEMALE");
 		case 24:
-			return 1693302103;
+			return joaat("HASH_AMB_VIG_VOMIT_SIT_MALE");
 		case 25:
-			return 625451458;
+			return joaat("HASH_AMB_VIG_VOMIT_WALL_FEMALE");
 		case 26:
-			return 799356718;
+			return joaat("HASH_AMB_VIG_VOMIT_WALL_MALE");
 		case 27:
-			return 1848482269;
+			return joaat("HASH_AMB_VIG_WAGON_LOAD_BARREL");
 		case 28:
-			return -69205936;
+			return joaat("HASH_AMB_VIG_WAGON_SWEEPER");
 		case 29:
-			return -131964147;
+			return joaat("HASH_AMB_VIG_WAGON_UNLOAD_BARREL");
 		case 30:
-			return 849013601;
+			return joaat("HASH_AMB_VIG_WALK_WITH_HORSE_A");
 		case 31:
-			return 549848116;
+			return joaat("HASH_AMB_VIG_WHISPER_SIT");
 		case 32:
-			return 1822063960;
+			return joaat("HASH_AMB_VIG_WHISPER_STAND");
 		case 33:
-			return 1796863752;
+			return joaat("HASH_AMB_VIG_WHORE_GIVE_MONEY_MADAM");
 		case 34:
-			return -264601865;
+			return joaat("HASH_AMB_VIG_AMB_CAMP_ROBBERY");
 		case 35:
-			return 2079385873;
+			return joaat("HASH_AMB_VIG_BOAT_PLACEMENT");
 		case 36:
-			return 249847245;
+			return joaat("HASH_AMB_VIG_COUGAR_GRAPPLE_PED");
 		case 37:
-			return -1590560480;
+			return joaat("HASH_AMB_VIG_CROSS_TERRAIN_WALKER");
 		case 38:
-			return 678294300;
+			return joaat("HASH_AMB_VIG_DEER_CARRY_DROPOFF");
 		case 39:
-			return -2043953070;
+			return joaat("HASH_AMB_VIG_DEER_CARRY_RIDE");
 		case 40:
-			return 155444243;
+			return joaat("HASH_AMB_VIG_DOG_IN_WAGON");
 		case 41:
-			return 1529699578;
+			return joaat("HASH_AMB_VIG_DUCK_CARRY");
 		case 42:
-			return 90671432;
+			return joaat("HASH_AMB_VIG_FEMALE_RIDER_MALE_WALKER");
 		case 43:
-			return 1345375200;
+			return joaat("HASH_AMB_VIG_FISHING_RIVER");
 		case 44:
-			return -2119593406;
+			return joaat("HASH_AMB_VIG_FISHING_RIVER_DOG");
 		case 45:
-			return -2081109486;
+			return joaat("HASH_AMB_VIG_GATOR_GRAPPLE_PED");
 		case 46:
-			return 481390380;
+			return joaat("HASH_AMB_VIG_GOAT_CARRY_RIDE");
 		case 47:
-			return 539186112;
+			return joaat("HASH_AMB_VIG_HOBO_TRAIN_HOP_NO_SACK");
 		case 48:
-			return -1124490183;
+			return joaat("HASH_AMB_VIG_MACFARLANE_FARMER");
 		case 49:
-			return 1624274584;
+			return joaat("HASH_AMB_VIG_MAN_RIDING_DONKEY");
 		case 50:
-			return -1815948448;
+			return joaat("HASH_AMB_VIG_MAN_SIT_READ");
 		case 51:
-			return 850772638;
+			return joaat("HASH_AMB_VIG_MAN_RIDE_WITH_LANTERN");
 		case 52:
-			return -353307594;
+			return joaat("HASH_AMB_VIG_OUTDOORSMAN");
 		case 61:
-			return 189832933;
+			return joaat("HASH_AMB_VIG_TRAFFIC_CART");
 		case 62:
-			return 2035818986;
+			return joaat("HASH_AMB_VIG_TRAFFIC_CONVO_TWO_RIDERS");
 		case 63:
-			return 1262038833;
+			return joaat("HASH_AMB_VIG_TRAFFIC_CONVO_TWO_WALKERS");
 		case 64:
-			return -986589752;
+			return joaat("HASH_AMB_VIG_TRAVELLER_GALLOP_PAST");
 		case 53:
-			return -2074259792;
+			return joaat("HASH_AMB_VIG_RAM_CARRY_RIDE");
 		case 54:
-			return 1082179290;
+			return joaat("HASH_AMB_VIG_RESTING_HAT");
 		case 55:
-			return 1438522410;
+			return joaat("HASH_AMB_VIG_RIDER_GALLOP");
 		case 56:
-			return -1007174999;
+			return joaat("HASH_AMB_VIG_RIDER_WITH_DOG");
 		case 57:
-			return -628816316;
+			return joaat("HASH_AMB_VIG_RIDGELINE_NATIVE");
 		case 58:
-			return 1870753716;
+			return joaat("HASH_AMB_VIG_RIDGELINE_RIDER");
 		case 60:
-			return -562905552;
+			return joaat("HASH_AMB_VIG_SLOW_RIDER");
 		case 66:
-			return -1668534985;
+			return joaat("HASH_AMB_VIG_WAGON_BACK_PASSENGER");
 		case 65:
-			return 235624137;
+			return joaat("HASH_AMB_VIG_WAGON_HARMONICA");
 		case 72:
-			return 1788438594;
+			return joaat("HASH_AMB_VIG_WALK_WITH_DOG");
 		case 67:
-			return -512909219;
+			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_DEER");
 		case 68:
-			return 1215838932;
+			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_GOAT");
 		case 69:
-			return 46492674;
+			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_PRONGHORN");
 		case 70:
-			return -1978005695;
+			return joaat("HASH_AMB_VIG_WALK_HORSE_CARRY_RAM");
 		case 71:
-			return -1360019838;
+			return joaat("HASH_AMB_VIG_WALK_PACK_HORSE");
 		case 73:
-			return 1675575227;
+			return joaat("HASH_AMB_VIG_WALK_WITH_OX");
 		case 74:
-			return 1145789545;
+			return joaat("HASH_AMB_VIG_WATER_HORSE");
 		case 75:
-			return 972749576;
+			return joaat("HASH_AMB_VIG_ALLIGATOR_BOAR_LEG");
 		case 76:
-			return 291678645;
+			return joaat("HASH_AMB_VIG_ALLIGATOR_BOAR_NECK");
 		case 77:
-			return -1025134125;
+			return joaat("HASH_AMB_VIG_ALLIGATOR_EAT_DEAD_BIRD");
 		case 78:
-			return -536114256;
+			return joaat("HASH_AMB_VIG_ARMADILLO_RUN");
 		case 79:
-			return -1123988579;
+			return joaat("HASH_AMB_VIG_BAT_FLEE_SWARM_LRG");
 		case 80:
-			return 339078007;
+			return joaat("HASH_AMB_VIG_BAT_HANG_SWARM");
 		case 81:
-			return 1408123951;
+			return joaat("HASH_AMB_VIG_BEARBLACK_BACKDOWN");
 		case 82:
-			return -1623194913;
+			return joaat("HASH_AMB_VIG_BEAR_INTIMIDATE_WOLF");
 		case 83:
-			return 970298220;
+			return joaat("HASH_AMB_VIG_BEAR_RUN_CATCH_FISH");
 		case 84:
-			return 1584598203;
+			return joaat("HASH_AMB_VIG_BEAR_SCRATCH_BACK");
 		case 85:
-			return -66812984;
+			return joaat("HASH_AMB_VIG_BEAR_VS_WOLVES");
 		case 86:
-			return -1092170817;
+			return joaat("HASH_AMB_VIG_BEAVER_SWIM_WITH_BRANCH");
 		case 87:
-			return 37773260;
+			return joaat("HASH_AMB_VIG_BIG_CAT_AMBUSH_DEER");
 		case 88:
-			return 340779771;
+			return joaat("HASH_AMB_VIG_BIG_CAT_KILL_RACCOON");
 		case 89:
-			return 398643878;
+			return joaat("HASH_AMB_VIG_BIRD_FENCE_SWARM_CROW");
 		case 90:
-			return -1105971391;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_CROW");
 		case 91:
-			return 1582107407;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK");
 		case 92:
-			return -1624116010;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK_LRG");
 		case 93:
-			return 1581498062;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_DUCK_LRG_W");
 		case 94:
-			return -237565124;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_GOOSE");
 		case 95:
-			return -274318724;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_PIGEON");
 		case 96:
-			return -2013011112;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN");
 		case 97:
-			return 831283765;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN_DARK");
 		case 98:
-			return 1114396312;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_RAVEN_LRG");
 		case 99:
-			return 823905860;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_SEAGULL");
 		case 100:
-			return -1027241059;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_SONGBIRD");
 		case 101:
-			return -1736758938;
+			return joaat("HASH_AMB_VIG_BIRD_FLEE_SWARM_SPARROW");
 		case 102:
-			return 83035637;
+			return joaat("HASH_AMB_VIG_BIRDS_IN_TREE");
 		case 103:
-			return 913831537;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_BLUEJAY");
 		case 104:
-			return 1718944584;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_CARDINAL");
 		case 105:
-			return 65677590;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_DUCK");
 		case 106:
-			return -1929865998;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_EAGLE");
 		case 107:
-			return 979652380;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_HAWK");
 		case 108:
-			return -106447353;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_HERON");
 		case 109:
-			return 1133803223;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_LOON");
 		case 110:
-			return 266396358;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_OWL");
 		case 111:
-			return 1462656410;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_SEAGULL");
 		case 112:
-			return -824213160;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_SONGBIRD");
 		case 113:
-			return -85871240;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_SPARROW");
 		case 114:
-			return -1322016058;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_SWARM_CROW");
 		case 115:
-			return 1886063246;
+			return joaat("HASH_AMB_VIG_BIRD_LAND_SWARM_PIGEON");
 		case 116:
-			return 987001887;
+			return joaat("HASH_AMB_VIG_BIRD_ON_ALLIGATOR");
 		case 117:
-			return -1039196998;
+			return joaat("HASH_AMB_VIG_BIRD_ON_BUCK");
 		case 118:
-			return 1792791797;
+			return joaat("HASH_AMB_VIG_BIRD_ON_BUFFALO");
 		case 119:
-			return 266553824;
+			return joaat("HASH_AMB_VIG_BIRD_ON_COW");
 		case 120:
-			return 1892706963;
+			return joaat("HASH_AMB_VIG_BIRD_ON_ELK");
 		case 121:
-			return 850513722;
+			return joaat("HASH_AMB_VIG_BIRD_ON_MOOSE");
 		case 122:
-			return 1785832042;
+			return joaat("HASH_AMB_VIG_BIRD_SWARM");
 		case 123:
-			return -1010624167;
+			return joaat("HASH_AMB_VIG_BIRD_WIRE_SWARM_SPARROW");
 		case 124:
-			return -2026063515;
+			return joaat("HASH_AMB_VIG_BLUEJAY_ON_PERCH");
 		case 125:
-			return 997774264;
+			return joaat("HASH_AMB_VIG_BOAR_RUN");
 		case 126:
-			return 1200262657;
+			return joaat("HASH_AMB_VIG_BUCK_AND_DOE");
 		case 127:
-			return -1764285282;
+			return joaat("HASH_AMB_VIG_BUCKS_FIGHTING");
 		case 128:
-			return 1132128986;
+			return joaat("HASH_AMB_VIG_BUFFALO_VS_BUFFALO");
 		case 129:
-			return -798905262;
+			return joaat("HASH_AMB_VIG_BUFFALO_WALLOW_SHAKE");
 		case 130:
-			return -495050610;
+			return joaat("HASH_AMB_VIG_CALIFORNIACONDOR_ON_PERCH");
 		case 131:
-			return 1959907444;
+			return joaat("HASH_AMB_VIG_CAMP_BIRD_ON_PERCH");
 		case 132:
-			return 426277129;
+			return joaat("HASH_AMB_VIG_CARDINAL_ON_PERCH");
 		case 133:
-			return -1139516637;
+			return joaat("HASH_AMB_VIG_CAT_CARRY_RAT");
 		case 134:
-			return 800258123;
+			return joaat("HASH_AMB_VIG_CAT_CATCH_BIRD");
 		case 135:
-			return 438866314;
+			return joaat("HASH_AMB_VIG_CAT_RUN");
 		case 136:
-			return 1936715379;
+			return joaat("HASH_AMB_VIG_COYOTE_CATCH_SQUIRREL");
 		case 137:
-			return -963584107;
+			return joaat("HASH_AMB_VIG_COYOTE_EAT_SHEEP");
 		case 138:
-			return 602019121;
+			return joaat("HASH_AMB_VIG_COYOTE_TAKEDOWN_MISS_DEER");
 		case 139:
-			return 66935711;
+			return joaat("HASH_AMB_VIG_CROWS_AND_EAGLES_EAT_DEER");
 		case 140:
-			return 1740333968;
+			return joaat("HASH_AMB_VIG_CROWS_AND_VULTURES_EAT_DEER");
 		case 141:
-			return -69020391;
+			return joaat("HASH_AMB_VIG_CROWS_AND_VULTURES_EAT_HUMAN");
 		case 142:
-			return -1252512052;
+			return joaat("HASH_AMB_VIG_CROWS_EATING_DEER");
 		case 143:
-			return 270955763;
+			return joaat("HASH_AMB_VIG_CROWS_EATING_HUMAN");
 		case 144:
-			return 1853745548;
+			return joaat("HASH_AMB_VIG_CROW_ON_PERCH");
 		case 145:
-			return -774488697;
+			return joaat("HASH_AMB_VIG_DEAD_BOAR");
 		case 146:
-			return -1462410093;
+			return joaat("HASH_AMB_VIG_DEAD_BUCK");
 		case 147:
-			return -199773092;
+			return joaat("HASH_AMB_VIG_DEAD_BUFFALO");
 		case 148:
-			return -2016748117;
+			return joaat("HASH_AMB_VIG_DEAD_COYOTE");
 		case 149:
-			return -261681247;
+			return joaat("HASH_AMB_VIG_DEAD_HORSE_A");
 		case 150:
-			return 931995128;
+			return joaat("HASH_AMB_VIG_DEAD_HORSE_B");
 		case 151:
-			return 842144233;
+			return joaat("HASH_AMB_VIG_DEAD_PIG");
 		case 152:
-			return 357204595;
+			return joaat("HASH_AMB_VIG_DEAD_POSSUM");
 		case 153:
-			return 1856244394;
+			return joaat("HASH_AMB_VIG_DEAD_PRONGHORN");
 		case 154:
-			return 803707180;
+			return joaat("HASH_AMB_VIG_DEAD_RACCOON");
 		case 155:
-			return -456213340;
+			return joaat("HASH_AMB_VIG_DEAD_SHEEP");
 		case 156:
-			return 1776410788;
+			return joaat("HASH_AMB_VIG_DEER_ANTLERS_STUCK");
 		case 157:
-			return 780406280;
+			return joaat("HASH_AMB_VIG_DEER_RUN");
 		case 158:
-			return -3040153;
+			return joaat("HASH_AMB_VIG_DEER_TREE_RUB");
 		case 159:
-			return 1487948394;
+			return joaat("HASH_AMB_VIG_DISCOVERABLE_PARAKEET");
 		case 160:
-			return 1433511562;
+			return joaat("HASH_AMB_VIG_DOG_CHASE_CAT");
 		case 161:
-			return -1876268251;
+			return joaat("HASH_AMB_VIG_DOG_CHASE_TAIL");
 		case 162:
-			return 1764484525;
+			return joaat("HASH_AMB_VIG_DOGS_PLAYING");
 		case 163:
-			return 808636123;
+			return joaat("HASH_AMB_VIG_DUCK_WATER_SWARM");
 		case 164:
-			return -189131423;
+			return joaat("HASH_AMB_VIG_EAGLE_CATCH_FISH");
 		case 165:
-			return -1919148115;
+			return joaat("HASH_AMB_VIG_EAGLE_CATCH_RABBIT");
 		case 166:
-			return 1732552814;
+			return joaat("HASH_AMB_VIG_EAGLE_CATCH_SEASNAKE");
 		case 167:
-			return 112401865;
+			return joaat("HASH_AMB_VIG_EAGLE_DIVE_CATCH_FISH");
 		case 168:
-			return -590260130;
+			return joaat("HASH_AMB_VIG_EAGLE_ON_PERCH");
 		case 169:
-			return 1438380500;
+			return joaat("HASH_AMB_VIG_FOX_CATCH_RODENT");
 		case 170:
-			return 595991051;
+			return joaat("HASH_AMB_VIG_FOX_HUNT_IN_SNOW");
 		case 171:
-			return -1918519423;
+			return joaat("HASH_AMB_VIG_FOX_RUN");
 		case 172:
-			return 573684987;
+			return joaat("HASH_AMB_VIG_FOX_SIT");
 		case 173:
-			return -185598821;
+			return joaat("HASH_AMB_VIG_GOAT_RUN");
 		case 174:
-			return -48815584;
+			return joaat("HASH_AMB_VIG_HAWK_CATCH_SNAKE");
 		case 175:
-			return -869682128;
+			return joaat("HASH_AMB_VIG_HAWK_CATCH_SQUIRREL");
 		case 176:
-			return -1276907775;
+			return joaat("HASH_AMB_VIG_HAWK_ON_PERCH");
 		case 177:
-			return 793321134;
+			return joaat("HASH_AMB_VIG_HAWK_VS_SNAKE");
 		case 178:
-			return -352205515;
+			return joaat("HASH_AMB_VIG_HORSE_WALLOW");
 		case 179:
-			return 2122911658;
+			return joaat("HASH_AMB_VIG_IGUANA_RUN");
 		case 180:
-			return -806522974;
+			return joaat("HASH_AMB_VIG_IGUANA_DESERT_RUN");
 		case 181:
-			return 8407556;
+			return joaat("HASH_AMB_VIG_JAVELINA_RUN");
 		case 186:
-			return -1914158344;
+			return joaat("HASH_AMB_VIG_OWL_CATCH_RAT");
 		case 187:
-			return 1105826748;
+			return joaat("HASH_AMB_VIG_OWL_ON_PERCH");
 		case 188:
-			return -1053918039;
+			return joaat("HASH_AMB_VIG_PELICAN_DIVE");
 		case 189:
-			return 1110539261;
+			return joaat("HASH_AMB_VIG_PELICAN_ON_PERCH");
 		case 190:
-			return 973506407;
+			return joaat("HASH_AMB_VIG_PIG_ROLL_MUD");
 		case 191:
-			return 1557450082;
+			return joaat("HASH_AMB_VIG_PIG_RUN");
 		case 192:
-			return 1622566055;
+			return joaat("HASH_AMB_VIG_RABBIT_CHASE_RABBIT");
 		case 193:
-			return -195975314;
+			return joaat("HASH_AMB_VIG_RABBIT_RUN");
 		case 182:
-			return 2021494258;
+			return joaat("HASH_AMB_VIG_MANGY_DOG_AND_VULTURES");
 		case 183:
-			return 322398096;
+			return joaat("HASH_AMB_VIG_MOOSE_GRAZING");
 		case 184:
-			return -1373580585;
+			return joaat("HASH_AMB_VIG_MOOSE_SLIPPING");
 		case 185:
-			return 85334564;
+			return joaat("HASH_AMB_VIG_MUSKRAT_RUN");
 		case 194:
-			return 1416662;
+			return joaat("HASH_AMB_VIG_RACCOON_EATING");
 		case 195:
-			return 234515786;
+			return joaat("HASH_AMB_VIG_RACCOON_RUN");
 		case 196:
-			return -1325653615;
+			return joaat("HASH_AMB_VIG_RAMS_HEADBUTT");
 		case 197:
-			return -1472580978;
+			return joaat("HASH_AMB_VIG_RAM_RUN");
 		case 198:
-			return 1970016748;
+			return joaat("HASH_AMB_VIG_RATS_EAT_HUMAN");
 		case 199:
-			return 1633007984;
+			return joaat("HASH_AMB_VIG_RATS_EATING_GROUP");
 		case 200:
-			return -220447040;
+			return joaat("HASH_AMB_VIG_RAVEN_ON_PERCH");
 		case 201:
-			return -1060254368;
+			return joaat("HASH_AMB_VIG_REDFOOTED_BOOBY_ON_PERCH");
 		case 202:
-			return -1426594948;
+			return joaat("HASH_AMB_VIG_RIDGELINE_BUCK");
 		case 203:
-			return 411686369;
+			return joaat("HASH_AMB_VIG_RIDGELINE_ELK");
 		case 204:
-			return 1695451389;
+			return joaat("HASH_AMB_VIG_RIDGELINE_MOOSE");
 		case 205:
-			return -551666970;
+			return joaat("HASH_AMB_VIG_RIDGELINE_PRONGHORN");
 		case 206:
-			return 382080022;
+			return joaat("HASH_AMB_VIG_RIDGELINE_RAM");
 		case 207:
-			return -332822913;
+			return joaat("HASH_AMB_VIG_RIDGELINE_WOLF");
 		case 59:
-			return 1151495825;
+			return joaat("HASH_AMB_VIG_ROVING_SHEEP_P1");
 		case 15:
-			return -1599195726;
+			return joaat("HASH_AMB_VIG_SHEEP_GRAZING");
 		case 210:
-			return -396841420;
+			return joaat("HASH_AMB_VIG_SHEEP_RUN");
 		case 211:
-			return 131682841;
+			return joaat("HASH_AMB_VIG_SKUNK_RUN");
 		case 208:
-			return -1102520788;
+			return joaat("HASH_AMB_VIG_SCAVENGER_ON_DEER");
 		case 209:
-			return -843611810;
+			return joaat("HASH_AMB_VIG_SEAGULL_CATCH_FISH");
 		case 212:
-			return -106225703;
+			return joaat("HASH_AMB_VIG_SNAKE_RUN");
 		case 213:
-			return 271449611;
+			return joaat("HASH_AMB_VIG_SQUIRREL_CHASE_SQUIRREL");
 		case 214:
-			return -1890231272;
+			return joaat("HASH_AMB_VIG_SQUIRREL_RUN");
 		case 215:
-			return -332855493;
+			return joaat("HASH_AMB_VIG_SWIMMING_BEARBLACK");
 		case 216:
-			return 937868804;
+			return joaat("HASH_AMB_VIG_SWIMMING_BEAVER");
 		case 217:
-			return -1265651264;
+			return joaat("HASH_AMB_VIG_SWIMMING_BOAR");
 		case 218:
-			return -1569156218;
+			return joaat("HASH_AMB_VIG_SWIMMING_DEER");
 		case 219:
-			return -1618891185;
+			return joaat("HASH_AMB_VIG_SWIMMING_DOG");
 		case 220:
-			return 42241028;
+			return joaat("HASH_AMB_VIG_SWIMMING_ELK");
 		case 221:
-			return -1040582146;
+			return joaat("HASH_AMB_VIG_SWIMMING_FOX");
 		case 222:
-			return 25352624;
+			return joaat("HASH_AMB_VIG_SWIMMING_MOOSE");
 		case 223:
-			return 574371354;
+			return joaat("HASH_AMB_VIG_SWIMMING_MUSKRAT");
 		case 224:
-			return 1262317461;
+			return joaat("HASH_AMB_VIG_SWIMMING_POSSUM");
 		case 225:
-			return 408872552;
+			return joaat("HASH_AMB_VIG_SWIMMING_RACCOON");
 		case 226:
-			return -1476061755;
+			return joaat("HASH_AMB_VIG_SWIMMING_RAT");
 		case 227:
-			return 458369857;
+			return joaat("HASH_AMB_VIG_SWIMMING_WOLF");
 		case 228:
-			return 1547122286;
+			return joaat("HASH_AMB_VIG_SWIM_WOLF_CHASE_MOOSE");
 		case 229:
-			return -57353532;
+			return joaat("HASH_AMB_VIG_TURKEY_RUN");
 		case 230:
-			return 1405598313;
+			return joaat("HASH_AMB_VIG_VULTURES_EATING_CARCASS_A");
 		case 231:
-			return -1266066057;
+			return joaat("HASH_AMB_VIG_VULTURES_EATING_HUMAN");
 		case 232:
-			return 1718839178;
+			return joaat("HASH_AMB_VIG_VULTURE_ON_PERCH");
 		case 233:
-			return 806690725;
+			return joaat("HASH_AMB_VIG_WILD_BULL");
 		case 234:
-			return 270513799;
+			return joaat("HASH_AMB_VIG_WILD_GOAT");
 		case 235:
-			return -2143907382;
+			return joaat("HASH_AMB_VIG_WILD_OX");
 		case 236:
-			return -1352285616;
+			return joaat("HASH_AMB_VIG_WILD_SHARK");
 		case 237:
-			return 778346443;
+			return joaat("HASH_AMB_VIG_WOLF_AMBUSH_DEER");
 		case 238:
-			return -1663563345;
+			return joaat("HASH_AMB_VIG_WOLF_FLEE_WOLVES");
 		case 239:
-			return -964250886;
+			return joaat("HASH_AMB_VIG_WOLF_HOWL_CORPSE");
 		case 240:
-			return 1951117833;
+			return joaat("HASH_AMB_VIG_WOLF_HOWLING");
 		case 241:
-			return -428706441;
+			return joaat("HASH_AMB_VIG_WOLVES_HOWLING");
 		case 242:
-			return -1339750026;
+			return joaat("HASH_AMB_VIG_WOLVES_EAT_DEER");
 		case 243:
-			return -1635548906;
+			return joaat("HASH_AMB_VIG_WOLVES_PLAYING");
 		case 244:
-			return -838892991;
+			return joaat("HASH_AMB_VIG_WOLVES_PLAYING_B");
 		case 245:
-			return -550689636;
+			return joaat("HASH_AMB_VIG_WOLVES_PLAYING_C");
 		case 246:
-			return 1145182998;
+			return joaat("HASH_AMB_VIG_WOLVES_RESTING");
 		case 247:
-			return 778906209;
+			return joaat("HASH_AMB_VIG_WOLF_TAKEDOWN_MISS_DEER");
 		default:
 			break;
 	}

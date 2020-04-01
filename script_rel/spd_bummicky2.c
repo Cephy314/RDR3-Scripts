@@ -9848,7 +9848,7 @@ void func_370(bool bParam0)
 								{
 									bVar3 = func_362() <= -160;
 								}
-								else if (iVar0 == -1712679084)
+								else if (iVar0 == joaat("SHOP_HONOR_GOOD_4"))
 								{
 									bVar3 = func_362() >= 160;
 								}
@@ -11585,15 +11585,15 @@ int func_451()
 		case 120:
 		case 160:
 		case 200:
-			return -608161198;
+			return joaat("SHOP_HONOR_LOW");
 		case 240:
 		case 280:
 		case 320:
-			return -2132502231;
+			return joaat("SHOP_HONOR_HIGH");
 		default:
 			break;
 	}
-	return -1130204298;
+	return joaat("SHOP_HONOR_AMORAL");
 }
 
 void func_452(char* sParam0, char* sParam1, int iParam2)

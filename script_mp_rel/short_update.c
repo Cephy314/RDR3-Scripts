@@ -67378,7 +67378,7 @@ int func_2318(int iParam0, var uParam1, int iParam2, var uParam3)
 			return 0;
 		case 318533979:
 			return 0;
-		case 1458081975:
+		case joaat("INV_REQ_TYPE_IN_REGION"):
 			if (func_2477(func_190(iParam0), iParam0))
 			{
 				return 1;

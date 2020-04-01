@@ -7189,7 +7189,7 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_APPALOOSA_LEOPARDBLANKET"):
 			return joaat("HORSE_BREED_APPALOOSA_LEOPARDBLANKET");
 		case joaat("A_C_HORSE_APPALOOSA_FEWSPOTTED_PC"):
-			return 729407854;
+			return joaat("HORSE_BREED_APPALOOSA_FEWSPOTTED");
 		case joaat("A_C_HORSE_APPALOOSA_BROWNLEOPARD"):
 			return joaat("HORSE_BREED_APPALOOSA_BROWNLEOPARD");
 		case joaat("A_C_HORSE_APPALOOSA_LEOPARD"):
@@ -7199,11 +7199,11 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT"):
 			return joaat("HORSE_BREED_ARABIAN_REDCHESTNUT");
 		case joaat("A_C_HORSE_ARABIAN_REDCHESTNUT_PC"):
-			return -845373950;
+			return joaat("HORSE_BREED_ARABIAN_REDCHESTNUT_PC");
 		case joaat("A_C_HORSE_ARABIAN_ROSEGREYBAY"):
 			return joaat("HORSE_BREED_ARABIAN_ROSEGREYBAY");
 		case joaat("A_C_HORSE_ARABIAN_WARPEDBRINDLE_PC"):
-			return 1482814085;
+			return joaat("HORSE_BREED_ARABIAN_WARPEDBRINDLE");
 		case joaat("A_C_HORSE_ARABIAN_WHITE"):
 			return joaat("HORSE_BREED_ARABIAN_WHITE");
 		case joaat("A_C_HORSE_ARDENNES_BAYROAN"):
@@ -7211,7 +7211,7 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_ARDENNES_STRAWBERRYROAN"):
 			return joaat("HORSE_BREED_ARDENNES_STRAWBERRYROAN");
 		case joaat("A_C_HORSE_ARDENNES_IRONGREYROAN"):
-			return -621245377 /* GXTEntry: "Ardennes~n~Iron Grey Roan Coat" */;
+			return joaat("HORSE_BREED_ARDENNES_IRONGREYROAN");
 		case joaat("A_C_HORSE_BELGIAN_BLONDCHESTNUT"):
 			return joaat("HORSE_BREED_BELGIAN_BLONDCHESTNUT");
 		case joaat("A_C_HORSE_BELGIAN_MEALYCHESTNUT"):
@@ -7231,7 +7231,7 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BLACK"):
 			return joaat("HORSE_BREED_KENTUCKYSADDLE_BLACK");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN_PC"):
-			return -1158763155;
+			return joaat("HORSE_BREED_KENTUCKYSADDLE_BUTTERMILKBUCKSKIN");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_CHESTNUTPINTO"):
 			return joaat("HORSE_BREED_KENTUCKYSADDLE_CHESTNUTPINTO");
 		case joaat("A_C_HORSE_KENTUCKYSADDLE_GREY"):
@@ -7249,7 +7249,7 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_MORGAN_FLAXENCHESTNUT"):
 			return joaat("HORSE_BREED_MORGAN_FLAXENCHESTNUT");
 		case joaat("A_C_HORSE_MORGAN_LIVERCHESTNUT_PC"):
-			return -1565311117;
+			return joaat("HORSE_BREED_MORGAN_LIVERCHESTNUT");
 		case joaat("A_C_HORSE_MORGAN_PALOMINO"):
 			return joaat("HORSE_BREED_MORGAN_PALOMINO");
 		case joaat("A_C_HORSE_MUSTANG_GRULLODUN"):
@@ -7279,7 +7279,7 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_TENNESSEEWALKER_DAPPLEBAY"):
 			return joaat("HORSE_BREED_TENNESSEEWALKER_DAPPLEBAY");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_GOLDPALOMINO_PC"):
-			return -1219957736;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_GOLDPALOMINO");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_REDROAN"):
 			return joaat("HORSE_BREED_TENNESSEEWALKER_REDROAN");
 		case joaat("A_C_HORSE_TENNESSEEWALKER_FLAXENROAN"):
@@ -7291,7 +7291,7 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_THOROUGHBRED_BRINDLE"):
 			return joaat("HORSE_BREED_THOROUGHBRED_BRINDLE");
 		case joaat("A_C_HORSE_THOROUGHBRED_REVERSEDAPPLEBLACK"):
-			return 1680713143 /* GXTEntry: "Thoroughbred~n~Reverse Dapple Black Coat" */;
+			return joaat("HORSE_BREED_THOROUGHBRED_REVERSEDAPPLEBLACK");
 		case joaat("A_C_HORSE_TURKOMAN_DARKBAY"):
 			return joaat("HORSE_BREED_TURKOMAN_DARKBAY");
 		case joaat("A_C_HORSE_TURKOMAN_GOLD"):
@@ -7311,9 +7311,9 @@ int func_255(int iParam0)
 		case joaat("A_C_HORSE_MUSTANG_GOLDENDUN"):
 			return -1390353518 /* GXTEntry: "Mustang~n~Golden Dun Coat" */;
 		case joaat("A_C_HORSE_TENNESSEEWALKER_MAHOGANYBAY"):
-			return 330935532 /* GXTEntry: "Tennessee Walker~n~Mahogany Bay Coat" */;
+			return joaat("HORSE_BREED_TENNESSEEWALKER_MAHOGANYBAY");
 		case joaat("A_C_HORSE_SHIRE_RAVENBLACK"):
-			return -935042458 /* GXTEntry: "Shire~n~Raven Black Coat" */;
+			return joaat("HORSE_BREED_SHIRE_RAVENBLACK");
 		case joaat("A_C_HORSE_BUELL_WARVETS"):
 			return -41062704;
 		case joaat("A_C_HORSE_JOHN_ENDLESSSUMMER"):
@@ -8180,7 +8180,7 @@ void func_273(bool bParam0)
 								{
 									bVar3 = func_264() <= -160;
 								}
-								else if (iVar0 == -1712679084)
+								else if (iVar0 == joaat("SHOP_HONOR_GOOD_4"))
 								{
 									bVar3 = func_264() >= 160;
 								}
@@ -10554,15 +10554,15 @@ int func_401()
 		case 120:
 		case 160:
 		case 200:
-			return -608161198;
+			return joaat("SHOP_HONOR_LOW");
 		case 240:
 		case 280:
 		case 320:
-			return -2132502231;
+			return joaat("SHOP_HONOR_HIGH");
 		default:
 			break;
 	}
-	return -1130204298;
+	return joaat("SHOP_HONOR_AMORAL");
 }
 
 void func_402(char* sParam0, char* sParam1, int iParam2)

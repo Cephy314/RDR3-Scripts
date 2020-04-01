@@ -2916,7 +2916,7 @@ int func_104(int iParam0)
 		case 19:
 			return joaat("ST_PEARSON");
 		case 22:
-			return 285759500;
+			return joaat("ST_NEWSPAPER_BOY");
 		case 20:
 			return joaat("ST_HOTEL");
 		case 32:

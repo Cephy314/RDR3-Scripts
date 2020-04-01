@@ -1927,33 +1927,33 @@ char* func_58(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1894360593:
+		case joaat("HAI_HUNTING_02"):
 			return "MAP_CARD_CAMP_HORSESHOE_HUNTING_CHARLES";
-		case 581819093:
+		case joaat("HAI_FISHING_01"):
 			return "MAP_CARD_CAMP_CLEMENSPOINT_FISHING_JAVIER";
-		case 687859577:
+		case joaat("HAI_FISHING_02"):
 			return "MAP_CARD_CAMP_CLEMENSPOINT_FISHING_KIERAN";
-		case -103573613:
+		case joaat("HAI_FIVE_FINGER_FILLET_01"):
 			return "MAP_CARD_CAMP_HORSESHOE_FIVE_FINGER_FILLET_LENNY";
-		case 1202375449:
+		case joaat("HAI_HUNTING_06"):
 			return "MAP_CARD_CAMP_SHADYBELLE_HUNTING_PEARSON";
-		case 2038046186:
+		case joaat("HAI_DOMINOES_01"):
 			return "MAP_CARD_CAMP_CLEMENSPOINT_DOMINOES_TILLY";
-		case -839878969:
+		case joaat("HAI_COACH_ROBBERY_01"):
 			return "MAP_CARD_CAMP_CLEMENSPOINT_COACH_ROBBERY_SEAN";
-		case -360730635:
+		case joaat("HAI_COACH_ROBBERY_02"):
 			return "MAP_CARD_CAMP_CLEMENSPOINT_COACH_ROBBERY_BILL";
-		case 194099983:
+		case joaat("HAI_FIVE_FINGER_FILLET_02"):
 			return "MAP_CARD_CAMP_CLEMENSPOINT_FIVE_FINGER_FILLET_MICAH";
-		case -1891229662:
+		case joaat("HAI_BANK_ROBBERY_01"):
 			return "MAP_CARD_CAMP_SHADYBELLE_BANK_ROBBERY_CHARLES";
-		case -668333238:
+		case joaat("HAI_COACH_ROBBERY_03"):
 			return "MAP_CARD_CAMP_SHADYBELLE_COACH_ROBBERY_MICAH";
-		case 99378894:
+		case joaat("HAI_COACH_ROBBERY_04"):
 			return "MAP_CARD_CAMP_SHADYBELLE_COACH_ROBBERY_LENNY";
-		case 673012160:
+		case joaat("HAI_RUSTLING_02"):
 			return "MAP_CARD_CAMP_SHADYBELLE_RUSTLING_UNCLE";
-		case -1220302226:
+		case joaat("HAI_HOME_ROBBERY_01"):
 			return "MAP_CARD_CAMP_HORSESHOE_HOME_ROBBERY_JAVIER";
 		default:
 			break;
@@ -2564,33 +2564,33 @@ int func_76(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1894360593:
+		case joaat("HAI_HUNTING_02"):
 			return 1784895540;
-		case 581819093:
+		case joaat("HAI_FISHING_01"):
 			return 654481153;
-		case 687859577:
+		case joaat("HAI_FISHING_02"):
 			return 654481153;
-		case -103573613:
+		case joaat("HAI_FIVE_FINGER_FILLET_01"):
 			return -1511391406;
-		case 1202375449:
+		case joaat("HAI_HUNTING_06"):
 			return 1784895540;
-		case 2038046186:
+		case joaat("HAI_DOMINOES_01"):
 			return -1567081107;
-		case -839878969:
+		case joaat("HAI_COACH_ROBBERY_01"):
 			return -919476462;
-		case -360730635:
+		case joaat("HAI_COACH_ROBBERY_02"):
 			return -919476462;
-		case 194099983:
+		case joaat("HAI_FIVE_FINGER_FILLET_02"):
 			return -1511391406;
-		case -1891229662:
+		case joaat("HAI_BANK_ROBBERY_01"):
 			return -1670940721;
-		case -668333238:
+		case joaat("HAI_COACH_ROBBERY_03"):
 			return -919476462;
-		case 99378894:
+		case joaat("HAI_COACH_ROBBERY_04"):
 			return -919476462;
-		case 673012160:
+		case joaat("HAI_RUSTLING_02"):
 			return 754620122;
-		case -1220302226:
+		case joaat("HAI_HOME_ROBBERY_01"):
 			return 565221344;
 		default:
 			break;
@@ -2654,33 +2654,33 @@ char* func_78(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1894360593:
+		case joaat("HAI_HUNTING_02"):
 			return "CAHT02_DESC";
-		case 581819093:
+		case joaat("HAI_FISHING_01"):
 			return "CAFS01_DESC";
-		case 687859577:
+		case joaat("HAI_FISHING_02"):
 			return "CAFS02_DESC";
-		case -103573613:
+		case joaat("HAI_FIVE_FINGER_FILLET_01"):
 			return "CAFFF05_DESC";
-		case 1202375449:
+		case joaat("HAI_HUNTING_06"):
 			return "CAHT06_DESC";
-		case 2038046186:
+		case joaat("HAI_DOMINOES_01"):
 			return "CADM05_DESC";
-		case -839878969:
+		case joaat("HAI_COACH_ROBBERY_01"):
 			return "CACR02_DESC";
-		case -360730635:
+		case joaat("HAI_COACH_ROBBERY_02"):
 			return "CACR03_DESC";
-		case 194099983:
+		case joaat("HAI_FIVE_FINGER_FILLET_02"):
 			return "MGFFF_DESC";
-		case -1891229662:
+		case joaat("HAI_BANK_ROBBERY_01"):
 			return "CABR01_DESC";
-		case -668333238:
+		case joaat("HAI_COACH_ROBBERY_03"):
 			return "CACR01_DESC";
-		case 99378894:
+		case joaat("HAI_COACH_ROBBERY_04"):
 			return "CACR04_DESC";
-		case 673012160:
+		case joaat("HAI_RUSTLING_02"):
 			return "CARS02_DESC";
-		case -1220302226:
+		case joaat("HAI_HOME_ROBBERY_01"):
 			return "PHHOM_DESC";
 		default:
 			break;

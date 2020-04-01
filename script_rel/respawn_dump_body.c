@@ -3360,7 +3360,7 @@ void func_111(var uParam0, int iParam1, int iParam2)
 		DATAFILE::_DATAFILE_GET_BOOL(&(uParam0->f_38), &Var0);
 		Var0.f_2 = -2069884107;
 		DATAFILE::_DATAFILE_GET_HASH(&iVar5, &Var0);
-		if (iVar5 == 2120712167 || iVar5 == 0)
+		if (iVar5 == joaat("WEATHER_INVALID") || iVar5 == 0)
 		{
 			uParam0->f_73 = 0;
 		}
@@ -4275,23 +4275,23 @@ int func_141(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -2045110373:
+		case joaat("CC_LAKAY"):
 			return 5;
-		case 2092390181:
+		case joaat("CC_BEAVER_HOLLOW"):
 			return 6;
-		case 695356898:
+		case joaat("CC_COLTER"):
 			return 0;
-		case 2093317438:
+		case joaat("CC_CLEMENS_POINT"):
 			return 2;
-		case -145951480:
+		case joaat("CC_GUARMA"):
 			return 4;
-		case -432333475:
+		case joaat("CC_HORSESHOE_OVERLOOK"):
 			return 1;
-		case -1327067584:
+		case joaat("CC_SHADY_BELLE"):
 			return 3;
-		case -1192044061:
+		case joaat("CC_PRONGHORN_RANCH"):
 			return 7;
-		case 1206762561:
+		case joaat("CC_BEECHERS_HOPE"):
 			return 8;
 		default:
 			break;
@@ -13508,8 +13508,8 @@ void func_521(bool bParam0)
 	if (TASK::IS_PED_IN_WRITHE(bParam0))
 	{
 	}
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -1442703445, 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -1505972720, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_MANES"), 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_TAILS"), 0, false);
 }
 
 void func_522(bool bParam0, var uParam1)
@@ -13551,7 +13551,7 @@ void func_523(bool bParam0)
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("SADDLE_HORNS"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("SADDLE_STIRRUPS"), 0, false);
 	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_BEDROLLS"), 0, false);
-	PED::_0xDF631E4BCE1B1FC4(bParam0, -2142954459, 0, false);
+	PED::_0xDF631E4BCE1B1FC4(bParam0, joaat("HORSE_SADDLEBAGS"), 0, false);
 }
 
 void func_524(bool bParam0, var uParam1)

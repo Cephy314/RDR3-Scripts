@@ -5772,7 +5772,7 @@ int func_207(int iParam0, int iParam1)
 			case 38:
 				return joaat("C_13_NOTRAP_01");
 			case 39:
-				return 1503442953;
+				return joaat("AMB_CAMP_BAY_SQUAT_MACOMB");
 			case 40:
 				return joaat("AMB_CAMP_BAY_STORY_COPPERHEAD");
 			case 41:
@@ -5792,7 +5792,7 @@ int func_207(int iParam0, int iParam1)
 			case 48:
 				return joaat("AMB_CAMP_BGV_CANOE01");
 			case 49:
-				return -2112989134;
+				return joaat("AMB_CAMP_BGV_CAVE");
 			case 50:
 				return joaat("AMB_CAMP_BGV_DEAD01");
 			case 51:
@@ -5806,7 +5806,7 @@ int func_207(int iParam0, int iParam1)
 			case 55:
 				return joaat("AMB_CAMP_BGV_HUNT01");
 			case 56:
-				return 276427301;
+				return joaat("AMB_CAMP_BGV_MOUNT_VIEW_1");
 			case 57:
 				return joaat("AMB_CAMP_BGV_MOUNT_VIEW_2");
 			case 58:
@@ -5822,9 +5822,9 @@ int func_207(int iParam0, int iParam1)
 			case 63:
 				return -563006151;
 			case 64:
-				return -792399058;
+				return joaat("AMB_CAMP_BGV_WAGON01");
 			case 65:
-				return 2123794495;
+				return joaat("AMB_CAMP_BGV_WILDCHEST");
 			case 66:
 				return joaat("AMB_CAMP_ROA_CREEP01");
 			case 67:
@@ -5888,13 +5888,13 @@ int func_207(int iParam0, int iParam1)
 			case 96:
 				return joaat("MP001_REG_BGV0_MP_THEHUNT_CLUE01");
 			case 97:
-				return 262039053;
+				return joaat("BLU_2_ROPE_END");
 			case 98:
 				return 507232138;
 			case 99:
 				return -456215895;
 			case 100:
-				return -792369764;
+				return joaat("CHO_04_ROPE_ENDS");
 			case 101:
 				return -170108806;
 			case 102:
@@ -5922,7 +5922,7 @@ int func_207(int iParam0, int iParam1)
 			case 113:
 				return 190848106;
 			case 114:
-				return -1928361302;
+				return joaat("AMB_CAMP_CML_STORY_STDENIS");
 			case 115:
 				return joaat("AMB_CAMP_CML_STORY_VALENTINE");
 			case 116:
@@ -6008,7 +6008,7 @@ int func_207(int iParam0, int iParam1)
 			case 156:
 				return -1122196204;
 			case 157:
-				return 1283988553;
+				return joaat("AMB_CAMP_GRE_STORY_HUNTER");
 			case 158:
 				return joaat("AMB_CAMP_GRE_STORY_TREASURE");
 			case 159:
@@ -6048,9 +6048,9 @@ int func_207(int iParam0, int iParam1)
 			case 176:
 				return -141795616;
 			case 177:
-				return 292362182;
+				return joaat("AMB_CAMP_HEN_STORY_HARLOW");
 			case 178:
-				return 807262958;
+				return joaat("HEN_4_ROPE_ENDS");
 			case 179:
 				return joaat("MIN_HID_MANTECAFALLS");
 			case 180:
@@ -6148,7 +6148,7 @@ int func_207(int iParam0, int iParam1)
 			case 226:
 				return 1280284302;
 			case 227:
-				return 99679839;
+				return joaat("HRT_31_ROPE_ENDS");
 			case 228:
 				return joaat("HRT_CAMP_HUNTING2");
 			case 229:
@@ -6176,7 +6176,7 @@ int func_207(int iParam0, int iParam1)
 			case 240:
 				return joaat("MP_INTRO_GANG_TUMBLEWEED1");
 			case 241:
-				return -1218790373;
+				return joaat("RIO_10_ROPE_ENDS");
 			case 242:
 				return -1995447743;
 			case 243:
@@ -6534,7 +6534,7 @@ int func_207(int iParam0, int iParam1)
 			case 419:
 				return -1816233372;
 			case 420:
-				return -718318645;
+				return joaat("DIS_HRT_P_ROCK_STASH01_IPL");
 			case 421:
 				return 1717399635;
 			case 422:
@@ -6594,7 +6594,7 @@ int func_207(int iParam0, int iParam1)
 			case 449:
 				return -323126593;
 			case 450:
-				return 2028590076;
+				return joaat("ADL_WINTER01_HOUSEBURNT_CHEST");
 			case 451:
 				return -1636879249;
 			case 452:
@@ -7546,7 +7546,7 @@ int func_207(int iParam0, int iParam1)
 			case 925:
 				return 1297834604;
 			case 926:
-				return -476999974;
+				return joaat("MP001_TREA3_SCA_MEA_RD_SGN_PLAYLISTMARKER_05");
 			case 927:
 				return joaat("MP001_TREA3_SCA_MEA_RD_SGN_PLAYLISTMARKER_06");
 			case 928:
@@ -8220,11 +8220,11 @@ int func_207(int iParam0, int iParam1)
 			case 1256:
 				return -1954657946;
 			case 1257:
-				return 207396248;
+				return joaat("HSO_COMPANION_HOMEROB01");
 			case 1258:
 				return -110381721;
 			case 1259:
-				return 1366418802;
+				return joaat("HSO_COMPANION_HUNT02");
 			case 1260:
 				return -2125611324;
 			case 1261:
@@ -8576,17 +8576,17 @@ int func_207(int iParam0, int iParam1)
 			case 1434:
 				return -948006506;
 			case 1435:
-				return 1700045179;
+				return joaat("CP_COMPANION_COACHROB01");
 			case 1436:
-				return 1997423854;
+				return joaat("CP_COMPANION_COACHROB02");
 			case 1437:
-				return -814821283;
+				return joaat("CP_COMPANION_FISH01");
 			case 1438:
-				return -1045678888;
+				return joaat("CP_COMPANION_FISH02");
 			case 1439:
 				return -1663177928;
 			case 1440:
-				return -809371454;
+				return joaat("CP_COMPANION_HOMEROB01");
 			case 1441:
 				return 1609975546;
 			case 1442:
@@ -8918,7 +8918,7 @@ int func_207(int iParam0, int iParam1)
 			case 1605:
 				return joaat("LAG_BS_P_TIN_SOAP01X_DRESSING");
 			case 1606:
-				return -1378006849;
+				return joaat("LAG_BS_P_TIN_SOAP01X_GROUP");
 			case 1607:
 				return joaat("LAG_BS_S_CRACKERS01X_GROUP");
 			case 1608:
@@ -9098,7 +9098,7 @@ int func_207(int iParam0, int iParam1)
 			case 1695:
 				return -558920293;
 			case 1696:
-				return -872749010;
+				return joaat("SB_COMPANION_BANKROB02");
 			case 1697:
 				return -1924933663;
 			case 1698:
@@ -9106,9 +9106,9 @@ int func_207(int iParam0, int iParam1)
 			case 1699:
 				return 2116967107;
 			case 1700:
-				return 1721842998;
+				return joaat("SB_COMPANION_HUNT06A");
 			case 1701:
-				return 92080743;
+				return joaat("SB_COMPANION_RUSTLE01");
 			case 1702:
 				return joaat("SHA_COVER_ODRISCOLLS4");
 			case 1703:
@@ -9392,7 +9392,7 @@ int func_207(int iParam0, int iParam1)
 			case 1842:
 				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_12");
 			case 1843:
-				return -655349451;
+				return joaat("MP001_TREA2_HEA_RD_SGN_PLAYLISTMARKER_13");
 			case 1844:
 				return joaat("BONE_00");
 			case 1845:
@@ -10066,7 +10066,7 @@ int func_207(int iParam0, int iParam1)
 			case 2173:
 				return joaat("MP001_TREA4_HEN_MP_FASTTRAVEL");
 			case 2174:
-				return -749007702;
+				return joaat("MP001_TREA4_HEN_RD_SGN_PLAYLISTMARKER");
 			case 2175:
 				return joaat("MP001_TREA4_RIO_MP_FASTTRAVEL");
 			case 2176:
@@ -10104,7 +10104,7 @@ int func_207(int iParam0, int iParam1)
 			case 2192:
 				return -400238535;
 			case 2193:
-				return 832608336;
+				return joaat("SPPACK_A1SUP_FRZNWATERFALL");
 			case 2194:
 				return 551513105;
 			case 2195:
@@ -10114,9 +10114,9 @@ int func_207(int iParam0, int iParam1)
 			case 2197:
 				return -866774384;
 			case 2198:
-				return -687283562;
+				return joaat("SPPACK_A3SUP_CATEYETRINKET");
 			case 2199:
-				return 67497998;
+				return joaat("SPPACK_A3SUP_SHARKTOOTHTRINKET");
 			case 2200:
 				return joaat("SPPACK_A4SUP_AQUADUCT");
 			case 2201:
@@ -10124,7 +10124,7 @@ int func_207(int iParam0, int iParam1)
 			case 2202:
 				return -693659956;
 			case 2203:
-				return -1578471167;
+				return joaat("SPPACK_A4SUP_TURTLE");
 			case 2204:
 				return joaat("MP003_AREA1_PLAYLISTMARKER_01");
 			case 2205:

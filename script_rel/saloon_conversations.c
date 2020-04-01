@@ -762,7 +762,7 @@ int func_20(int iParam0)
 			{
 				return 0;
 			}
-			if (func_60(func_59(76), 557524588, 1))
+			if (func_60(func_59(76), joaat("TSTAG_LOCKDOWN_SALOON"), 1))
 			{
 				return 0;
 			}
@@ -1640,7 +1640,7 @@ int func_20(int iParam0)
 				{
 					return 0;
 				}
-				if (func_60(func_59(76), 557524588, 1))
+				if (func_60(func_59(76), joaat("TSTAG_LOCKDOWN_SALOON"), 1))
 				{
 					return 0;
 				}
@@ -2147,7 +2147,7 @@ int func_20(int iParam0)
 			{
 				return 0;
 			}
-			if (func_62(1134518629 /* GXTEntry: "High Stakes Treasure Map 1" */, 1, 0))
+			if (func_62(joaat("DOCUMENT_TREASURE_MAP_04"), 1, 0))
 			{
 				return 0;
 			}
@@ -2903,7 +2903,7 @@ int func_58(int iParam0, bool bParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (func_60(iVar0, -423064657, 1))
+	if (func_60(iVar0, joaat("TSTAG_LOCKDOWN"), 1))
 	{
 		return 1;
 	}
@@ -2913,13 +2913,13 @@ int func_58(int iParam0, bool bParam1, int iParam2)
 		{
 			case 0:
 			case 2:
-				if (func_60(iVar0, 557524588, 1) || func_60(iVar0, 1590600971, 1))
+				if (func_60(iVar0, joaat("TSTAG_LOCKDOWN_SALOON"), 1) || func_60(iVar0, joaat("TSTAG_LOCKDOWN_PARTIAL"), 1))
 				{
 					return 1;
 				}
 				break;
 			case 1:
-				if (func_60(iVar0, 1792646445, 1) || func_60(iVar0, 1590600971, 1))
+				if (func_60(iVar0, joaat("TSTAG_LOCKDOWN_SALOON_SLUMS"), 1) || func_60(iVar0, joaat("TSTAG_LOCKDOWN_PARTIAL"), 1))
 				{
 					return 1;
 				}
@@ -10257,15 +10257,15 @@ int func_307(int iParam0, int iParam1)
 			return 14;
 		case -1910231185:
 			return 27;
-		case -1779466334:
+		case joaat("TSTAG_VAL_MUD3_ACTIVE_CHASE"):
 			return 30;
 		case -1751068532:
 			return 19;
-		case -1600776215:
+		case joaat("TSTAG_NO_TAGS"):
 			return 0;
 		case -1403291038:
 			return 13;
-		case -1350098362:
+		case joaat("TSTAG_VAL_MUD3_ACTIVE_RIDE_TO_VAL"):
 			return 28;
 		case -1132827806:
 			return 18;
@@ -10275,57 +10275,57 @@ int func_307(int iParam0, int iParam1)
 			return 23;
 		case -529686691:
 			return 20;
-		case -505280232:
+		case joaat("TSTAG_VAL_MUD3_ACTIVE_GO_TO_STORE"):
 			return 29;
-		case -423064657:
+		case joaat("TSTAG_LOCKDOWN"):
 			return 9;
 		case -415041951:
 			return 3;
-		case -316764041:
+		case joaat("TSTAG_FLOW_PRE_BOUNTY_1"):
 			return 15;
-		case -156236308:
+		case joaat("TSTAG_FIRST_VISIT"):
 			return 1;
 		case -115118166:
 			return 8;
-		case -27924880:
+		case joaat("TSTAG_ENDLESS_SUMMER"):
 			return 4;
 		case 0:
 			return 38;
 		case 508286680:
 			return 5;
-		case 557524588:
+		case joaat("TSTAG_LOCKDOWN_SALOON"):
 			return 11;
 		case 623901469:
 			return 16;
-		case 651189962:
+		case joaat("TSTAG_VAL_MUD4_ACTIVE_WALK_WITH_JOHN"):
 			return 31;
-		case 830459706:
+		case joaat("TSTAG_RHD_FEUD1_ACTIVE"):
 			return 25;
 		case 1274330613:
 			return 22;
-		case 1302444626:
+		case joaat("TSTAG_VAL_MUD5_ACTIVE_STEALTH_EXIT"):
 			return 34;
 		case 1398684735:
 			return 26;
 		case 1556254948:
 			return 2;
-		case 1570236479:
+		case joaat("TSTAG_RAIN"):
 			return 6;
-		case 1590600971:
+		case joaat("TSTAG_LOCKDOWN_PARTIAL"):
 			return 10;
 		case 1598344177:
 			return 21;
-		case 1601295776:
+		case joaat("TSTAG_VAL_MUD5_ACTIVE"):
 			return 33;
-		case 1618820662:
+		case joaat("TSTAG_VAL_MUD4_ACTIVE_GO_TO_SALOON"):
 			return 32;
-		case 1754500170:
+		case joaat("TSTAG_VHT_ODD_FELLOWS_1_ACTIVE"):
 			return 35;
 		case 1763394652:
 			return 17;
-		case 1792646445:
+		case joaat("TSTAG_LOCKDOWN_SALOON_SLUMS"):
 			return 12;
-		case 1831828781:
+		case joaat("TSTAG_RHD_SADIE1_ACTIVE"):
 			return 24;
 		case 1843135693:
 			return 7;

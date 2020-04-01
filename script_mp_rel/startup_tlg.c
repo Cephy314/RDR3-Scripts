@@ -24320,10 +24320,10 @@ void func_480(int iParam0)
 	iVar0 = -1;
 	switch (iParam0)
 	{
-		case -1375947476: /* GXTEntry: "Special Horse Medicine Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_SPECIAL_HORSE_MEDICINE"):
 			iVar0 = 337;
 			break;
-		case -1704241585: /* GXTEntry: "Special Horse Reviver Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_SPECIAL_HORSE_REVIVER"):
 			iVar0 = 338;
 			break;
 		case -1267972061: /* GXTEntry: "Horse Ointment Pamphlet" */
@@ -24338,10 +24338,10 @@ void func_480(int iParam0)
 		case joaat("DOCUMENT_PAMPHLET_SPECIAL_MEDICINE"):
 			iVar0 = 342;
 			break;
-		case 1882019322: /* GXTEntry: "Special Bitters Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_SPECIAL_RESTORATIVE"):
 			iVar0 = 343;
 			break;
-		case 807302083: /* GXTEntry: "Special Snake Oil Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_SPECIAL_SNAKE_OIL"):
 			iVar0 = 344;
 			break;
 		case joaat("DOCUMENT_PAMPHLET_SPECIAL_TONIC"):
@@ -24359,7 +24359,7 @@ void func_480(int iParam0)
 		case 1619534881: /* GXTEntry: "Fire Arrow Pamphlet" */
 			iVar0 = 350;
 			break;
-		case 2141714005: /* GXTEntry: "Poison Arrow Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_POISON_ARROW"):
 			iVar0 = 352;
 			break;
 		case 1015404643: /* GXTEntry: "Small Game Arrow Pamphlet" */
@@ -24374,7 +24374,7 @@ void func_480(int iParam0)
 		case joaat("DOCUMENT_PAMPHLET_VOLATILE_MOLOTOV"):
 			iVar0 = 356;
 			break;
-		case -1740272183: /* GXTEntry: "Homing Tomahawk Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_HOMING_TOMAHAWK"):
 			iVar0 = 357;
 			break;
 		case joaat("DOCUMENT_PAMPHLET_IMPROVED_THROW_KNIFE"):
@@ -24392,10 +24392,10 @@ void func_480(int iParam0)
 		case 147796381: /* GXTEntry: "Express Explosive Pamphlet" */
 			iVar0 = 362;
 			break;
-		case -120865369: /* GXTEntry: "Incendiary Buckshot Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_INCENDIARY_BUCKSHOT"):
 			iVar0 = 363;
 			break;
-		case 1158808845: /* GXTEntry: "Explosive Slug Pamphlet" */
+		case joaat("DOCUMENT_PAMPHLET_SLUG_EXPLOSIVE"):
 			iVar0 = 364;
 			break;
 		case joaat("DOCUMENT_PAMPHLET_TRACKING_ARROW"):

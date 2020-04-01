@@ -953,7 +953,7 @@ void __EntryFunction__()
 					{
 						func_14();
 					}
-					if (func_20(func_19(76), 557524588, 1))
+					if (func_20(func_19(76), joaat("TSTAG_LOCKDOWN_SALOON"), 1))
 					{
 						func_14();
 					}
@@ -1809,7 +1809,7 @@ int func_18(int iParam0, bool bParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (func_20(iVar0, -423064657, 1))
+	if (func_20(iVar0, joaat("TSTAG_LOCKDOWN"), 1))
 	{
 		return 1;
 	}
@@ -1819,13 +1819,13 @@ int func_18(int iParam0, bool bParam1, int iParam2)
 		{
 			case 0:
 			case 2:
-				if (func_20(iVar0, 557524588, 1) || func_20(iVar0, 1590600971, 1))
+				if (func_20(iVar0, joaat("TSTAG_LOCKDOWN_SALOON"), 1) || func_20(iVar0, joaat("TSTAG_LOCKDOWN_PARTIAL"), 1))
 				{
 					return 1;
 				}
 				break;
 			case 1:
-				if (func_20(iVar0, 1792646445, 1) || func_20(iVar0, 1590600971, 1))
+				if (func_20(iVar0, joaat("TSTAG_LOCKDOWN_SALOON_SLUMS"), 1) || func_20(iVar0, joaat("TSTAG_LOCKDOWN_PARTIAL"), 1))
 				{
 					return 1;
 				}
@@ -21238,15 +21238,15 @@ int func_543(int iParam0, int iParam1)
 			return 14;
 		case -1910231185:
 			return 27;
-		case -1779466334:
+		case joaat("TSTAG_VAL_MUD3_ACTIVE_CHASE"):
 			return 30;
 		case -1751068532:
 			return 19;
-		case -1600776215:
+		case joaat("TSTAG_NO_TAGS"):
 			return 0;
 		case -1403291038:
 			return 13;
-		case -1350098362:
+		case joaat("TSTAG_VAL_MUD3_ACTIVE_RIDE_TO_VAL"):
 			return 28;
 		case -1132827806:
 			return 18;
@@ -21256,57 +21256,57 @@ int func_543(int iParam0, int iParam1)
 			return 23;
 		case -529686691:
 			return 20;
-		case -505280232:
+		case joaat("TSTAG_VAL_MUD3_ACTIVE_GO_TO_STORE"):
 			return 29;
-		case -423064657:
+		case joaat("TSTAG_LOCKDOWN"):
 			return 9;
 		case -415041951:
 			return 3;
-		case -316764041:
+		case joaat("TSTAG_FLOW_PRE_BOUNTY_1"):
 			return 15;
-		case -156236308:
+		case joaat("TSTAG_FIRST_VISIT"):
 			return 1;
 		case -115118166:
 			return 8;
-		case -27924880:
+		case joaat("TSTAG_ENDLESS_SUMMER"):
 			return 4;
 		case 0:
 			return 38;
 		case 508286680:
 			return 5;
-		case 557524588:
+		case joaat("TSTAG_LOCKDOWN_SALOON"):
 			return 11;
 		case 623901469:
 			return 16;
-		case 651189962:
+		case joaat("TSTAG_VAL_MUD4_ACTIVE_WALK_WITH_JOHN"):
 			return 31;
-		case 830459706:
+		case joaat("TSTAG_RHD_FEUD1_ACTIVE"):
 			return 25;
 		case 1274330613:
 			return 22;
-		case 1302444626:
+		case joaat("TSTAG_VAL_MUD5_ACTIVE_STEALTH_EXIT"):
 			return 34;
 		case 1398684735:
 			return 26;
 		case 1556254948:
 			return 2;
-		case 1570236479:
+		case joaat("TSTAG_RAIN"):
 			return 6;
-		case 1590600971:
+		case joaat("TSTAG_LOCKDOWN_PARTIAL"):
 			return 10;
 		case 1598344177:
 			return 21;
-		case 1601295776:
+		case joaat("TSTAG_VAL_MUD5_ACTIVE"):
 			return 33;
-		case 1618820662:
+		case joaat("TSTAG_VAL_MUD4_ACTIVE_GO_TO_SALOON"):
 			return 32;
-		case 1754500170:
+		case joaat("TSTAG_VHT_ODD_FELLOWS_1_ACTIVE"):
 			return 35;
 		case 1763394652:
 			return 17;
-		case 1792646445:
+		case joaat("TSTAG_LOCKDOWN_SALOON_SLUMS"):
 			return 12;
-		case 1831828781:
+		case joaat("TSTAG_RHD_SADIE1_ACTIVE"):
 			return 24;
 		case 1843135693:
 			return 7;
@@ -25826,8 +25826,8 @@ void func_664()
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_1282))
 	{
-		iLocal_1282 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(func_235(535323366, 0));
-		func_241(535323366, 1, 0f, 0, 0, 0, 1, 0);
+		iLocal_1282 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(func_235(joaat("DOOR_VAL_JAIL_CELL_01"), 0));
+		func_241(joaat("DOOR_VAL_JAIL_CELL_01"), 1, 0f, 0, 0, 0, 1, 0);
 		vLocal_1192 = { -275.023f, 809.274f, 118.369f };
 		vLocal_1195 = { 0f, 0f, -80f };
 	}
@@ -26132,7 +26132,7 @@ int func_669(int iParam0)
 				ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(iLocal_1022, "DOOR_2", iLocal_1283);
 				ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(iLocal_1022, "LOCK_1", iLocal_1284);
 				ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(iLocal_1022, "LOCK_2", iLocal_1285);
-				func_241(535323366, 0, 1f, 1, 1, 0, 0, 0);
+				func_241(joaat("DOOR_VAL_JAIL_CELL_01"), 0, 1f, 1, 1, 0, 0, 0);
 				func_241(joaat("DOOR_VAL_JAIL_CELL_03"), 0, 1f, 1, 1, 0, 0, 0);
 				return 1;
 			}
@@ -29806,7 +29806,7 @@ float func_797(int iParam0, int iParam1, char* sParam2, char* sParam3, bool bPar
 
 void func_798()
 {
-	func_241(535323366, 0, 0f, 0, 0, 0, 0, 0);
+	func_241(joaat("DOOR_VAL_JAIL_CELL_01"), 0, 0f, 0, 0, 0, 0, 0);
 	func_241(joaat("DOOR_VAL_JAIL_CELL_03"), 0, 0f, 0, 0, 0, 0, 0);
 }
 
@@ -30290,7 +30290,7 @@ void func_821(bool bParam0)
 								{
 									bVar3 = func_516() <= -160;
 								}
-								else if (iVar0 == -1712679084)
+								else if (iVar0 == joaat("SHOP_HONOR_GOOD_4"))
 								{
 									bVar3 = func_516() >= 160;
 								}
@@ -32305,15 +32305,15 @@ int func_894()
 		case 120:
 		case 160:
 		case 200:
-			return -608161198;
+			return joaat("SHOP_HONOR_LOW");
 		case 240:
 		case 280:
 		case 320:
-			return -2132502231;
+			return joaat("SHOP_HONOR_HIGH");
 		default:
 			break;
 	}
-	return -1130204298;
+	return joaat("SHOP_HONOR_AMORAL");
 }
 
 int func_895(int iParam0)

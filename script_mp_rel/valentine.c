@@ -1012,7 +1012,7 @@ int func_40(int iParam0)
 	{
 		if (bLocal_141)
 		{
-			func_91(1508776842, 1, 0, 0, 0, 0, 0, 0);
+			func_91(joaat("DOOR_VAL_JAIL_SIDE"), 1, 0, 0, 0, 0, 0, 0);
 			func_91(joaat("DOOR_VAL_DOC_BACK_RM"), 1, 0f, 0, 0, 1f, 0, 0);
 			func_91(joaat("DOOR_VAL_DOC_BACK"), 1, 0, 0, 0, 0, 0, 0);
 			func_92(joaat("DOOR_VAL_TRAIN_BOOTHS"), 1);
