@@ -223,7 +223,7 @@ struct<8> func_9(int iParam0, var uParam1)
 	return Var0;
 }
 
-void func_10(var uParam0)
+void func_10(int iParam0)
 {
 }
 

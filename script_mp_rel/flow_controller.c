@@ -6782,7 +6782,7 @@ var func_293(int iParam0)
 	return ((*Global_1111121)[iParam0 /*42*/])->f_7;
 }
 
-void func_294(var uParam0, int iParam1, vector3 vParam2, var uParam5)
+void func_294(var uParam0, var uParam1, vector3 vParam2, var uParam5)
 {
 	int iVar0;
 	int iVar1;
@@ -6801,7 +6801,7 @@ void func_294(var uParam0, int iParam1, vector3 vParam2, var uParam5)
 		else if (!NETWORK::NETWORK_IS_PLAYER_ACTIVE(iVar12))
 		{
 		}
-		else if (!_NAMESPACE26::_0x9BE7DCB22D32CCBE(iParam1, iVar12))
+		else if (!_NAMESPACE26::_0x9BE7DCB22D32CCBE(uParam1, iVar12))
 		{
 		}
 		else if (_NAMESPACE26::_0x424B17A7DC5C90BC(iVar12))
