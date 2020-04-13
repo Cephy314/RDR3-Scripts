@@ -605,7 +605,7 @@ void __EntryFunction__()
 					{
 						if (PED::_0xA911EE21EDF69DAF(Global_35))
 						{
-							bVar2429 = PED::_0xD806CD2A4F2C2996(Global_35);
+							bVar2429 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 							bVar2430 = ENTITY::_0x31FEF6A20F00B963(bVar2429);
 							if (func_77(bVar2430, 0))
 							{
@@ -8948,7 +8948,7 @@ int func_262(var uParam0)
 						}
 						if (PED::_0xA911EE21EDF69DAF(Global_35))
 						{
-							iVar12 = PED::_0xD806CD2A4F2C2996(Global_35);
+							iVar12 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 							if (ENTITY::IS_ENTITY_A_PED(iVar12))
 							{
 								if (PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar12)))
@@ -57208,7 +57208,7 @@ bool func_1693(int iParam0)
 	{
 		if (func_2() == -1)
 		{
-			bVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			bVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (!ENTITY::DOES_ENTITY_EXIST(bVar0))
 			{
 				bVar0 = func_2189(func_1982(0));
@@ -57216,7 +57216,7 @@ bool func_1693(int iParam0)
 		}
 		else
 		{
-			bVar0 = PED::_0x4C8B59171957BCF7(func_1222());
+			bVar0 = PED::_GET_LAST_MOUNT(func_1222());
 		}
 	}
 	else if (func_2() == -1)
@@ -75572,7 +75572,7 @@ int func_2298(int iParam0)
 	{
 		if ((Global_1914319->f_17370 || iParam0) || Global_1914319->f_16855 == 2)
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (iVar0 != func_2189(7))
 			{
 				return 1;
@@ -75589,7 +75589,7 @@ int func_2298(int iParam0)
 	}
 	else
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(func_1222());
+		iVar0 = PED::_GET_LAST_MOUNT(func_1222());
 		if (iVar0 != PLAYER::_0xF49F14462F0AE27C(PLAYER::GET_PLAYER_INDEX()))
 		{
 			return 1;
@@ -91578,7 +91578,7 @@ int func_2892(bool bParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_35))
 	{
-		bVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+		bVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 		if (ENTITY::DOES_ENTITY_EXIST(bVar1) && !ENTITY::IS_ENTITY_A_PED(bVar1))
 		{
 			if (bParam0 == ENTITY::_0x31FEF6A20F00B963(bVar1))
@@ -98030,7 +98030,7 @@ void func_3134(bool bParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_35))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			bVar1 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0);

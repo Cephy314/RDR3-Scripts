@@ -9018,7 +9018,7 @@ int func_315(int iParam0)
 		return 0;
 	}
 	iVar0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0);
-	if (PED::_0x4C8B59171957BCF7(PLAYER::PLAYER_PED_ID()) != iVar0)
+	if (PED::_GET_LAST_MOUNT(PLAYER::PLAYER_PED_ID()) != iVar0)
 	{
 		return 0;
 	}

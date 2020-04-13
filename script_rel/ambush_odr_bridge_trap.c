@@ -4673,7 +4673,7 @@ void func_154()
 				func_28(&iLocal_16, 0);
 				CAM::SET_CINEMATIC_MODE_ACTIVE(false);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
-				iVar3 = PED::_0x4C8B59171957BCF7(Global_35);
+				iVar3 = PED::_GET_LAST_MOUNT(Global_35);
 				if (!ENTITY::IS_ENTITY_DEAD(iVar3))
 				{
 					PED::_0xF60165E1D2C5370B(iVar3, &uVar1, &fVar2);
@@ -4708,7 +4708,7 @@ void func_154()
 			if ((func_145(&uLocal_279, 2048) && func_61(iVar0, 0, 1)) && ENTITY::GET_ENTITY_SPEED(iVar0) < 0.1f)
 			{
 				MAP::DISPLAY_RADAR(true);
-				iVar5 = PED::_0x4C8B59171957BCF7(Global_35);
+				iVar5 = PED::_GET_LAST_MOUNT(Global_35);
 				if (func_61(iVar5, 0, 1))
 				{
 					PED::FORCE_PED_MOTION_STATE(iVar5, joaat("MOTIONSTATE_IDLE"), true, 0, false);

@@ -1335,7 +1335,7 @@ int func_36(int iParam0)
 		ANIMSCENE::RESET_ANIM_SCENE(iLocal_152, 0);
 		ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_152);
 	}
-	func_154(PED::_0x4C8B59171957BCF7(Global_35), 721.2f, -1228.6f, 44.3f, -100.3f, 2, 1073741824 /* Float: 2f */);
+	func_154(PED::_GET_LAST_MOUNT(Global_35), 721.2f, -1228.6f, 44.3f, -100.3f, 2, 1073741824 /* Float: 2f */);
 	func_155(iParam0, 3, &(uLocal_109[2]), 0, 0, 1, 0);
 	func_155(iParam0, 20, &(uLocal_109[0]), 0, 0, 1, 0);
 	func_155(iParam0, 9, &(uLocal_109[1]), 0, 0, 1, 0);
@@ -5366,7 +5366,7 @@ void func_233(var uParam0)
 	if (func_83(uParam0, 2048) && !func_90(func_428(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_83(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -5850,9 +5850,9 @@ int func_250(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4, f
 			}
 			return 0;
 		}
-		else if ((func_462(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_462(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_463(uParam1, 128);
 			return 0;
 		}
@@ -13477,7 +13477,7 @@ int func_570(int* iParam0, bool bParam1)
 		}
 		else
 		{
-			iParam0->f_60 = PED::_0xD806CD2A4F2C2996(Global_35);
+			iParam0->f_60 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_60))
 		{

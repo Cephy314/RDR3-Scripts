@@ -10182,7 +10182,7 @@ int func_30(var uParam0, var uParam1, var uParam2)
 			}
 			else if (func_431())
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(uParam2->f_4)))
+				if (ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(uParam2->f_4)))
 				{
 					func_338(uParam2, 1896376843 /* GXTEntry: "You can not inspect documents while carrying something." */, -1, 0, 0);
 				}
@@ -30689,7 +30689,7 @@ int func_749(var uParam0)
 		}
 		else
 		{
-			uParam0->f_23 = PED::_0xD806CD2A4F2C2996(iVar0);
+			uParam0->f_23 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_23))
 		{
@@ -89616,7 +89616,7 @@ int func_2866(int iParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar1 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_A_PED(iVar1))
 		{
 			if (iParam0 == ENTITY::_0x31FEF6A20F00B963(iVar1))
@@ -107134,7 +107134,7 @@ void func_3471(int iParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			iVar1 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0);

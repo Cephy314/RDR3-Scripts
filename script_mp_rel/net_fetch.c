@@ -51938,7 +51938,7 @@ int func_1881(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (iParam0 == PED::_0xD806CD2A4F2C2996(Global_34))
+	if (iParam0 == PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34))
 	{
 		iVar0 = ENTITY::_0x61914209C36EFDDB(iParam0);
 		if ((iVar0 == 5 || iVar0 == 4) || iVar0 == 9)
@@ -51946,7 +51946,7 @@ int func_1881(int iParam0, bool bParam1)
 			return 1;
 		}
 	}
-	if (bParam1 && iParam0 == PED::_0xD806CD2A4F2C2996(Global_1939178->f_34))
+	if (bParam1 && iParam0 == PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_1939178->f_34))
 	{
 		return 1;
 	}
@@ -77201,7 +77201,7 @@ int func_2813(bool bParam0)
 			}
 			if (PED::_0xA911EE21EDF69DAF(iVar0))
 			{
-				iVar4 = PED::_0xD806CD2A4F2C2996(iVar0);
+				iVar4 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 				if ((((ENTITY::DOES_ENTITY_EXIST(iVar4) && ENTITY::IS_ENTITY_AN_OBJECT(iVar4)) && ENTITY::IS_ENTITY_A_MISSION_ENTITY(iVar4)) && NETWORK::_0xB07D3185E11657A5(iVar4)) && !ENTITY::_0x808077647856DE62(iVar4, 27))
 				{
 					iVar5 = func_564(iVar4);
@@ -81242,9 +81242,9 @@ int func_2975(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, f
 			}
 			return 0;
 		}
-		else if ((func_211(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(iParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(iParam0))))
+		else if ((func_211(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(iParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(iParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(iParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(iParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(iParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(iParam0)));
 			func_95(iParam1, 128);
 			return 0;
 		}
@@ -92033,7 +92033,7 @@ void func_3434(int iParam0)
 							iVar3 = 255;
 							iVar7 = -1;
 							iVar0 = PLAYER::GET_PLAYER_PED(iVar2);
-							iVar1 = PED::_0xD806CD2A4F2C2996(iVar0);
+							iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 							if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 							{
 							}
@@ -101457,7 +101457,7 @@ void func_3823(int iParam0)
 	iVar3 = func_566(iParam0);
 	if (((!func_458(43) && Local_0.f_320 > 1) && (Local_867[NETWORK::PARTICIPANT_ID_TO_INT() /*97*/])->f_91 != -1) && BUILTIN::VDIST(Global_35, ENTITY::GET_ENTITY_COORDS(iVar0, false, false)) <= 1f)
 	{
-		iVar4 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar4 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (((ENTITY::DOES_ENTITY_EXIST(iVar4) && ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar4) != iVar0) && !PED::IS_PED_ON_MOUNT(Global_34)) && !ENTITY::DOES_ENTITY_EXIST(PED::_0x79443D56C8DF45EE(iVar0)))
 		{
 			func_629(43, 0, 0, 0);
@@ -102940,12 +102940,12 @@ void func_3875(int iParam0)
 	}
 	else if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		bVar2 = true;
 	}
 	else if (bVar1)
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(PED::GET_MOUNT(Global_34));
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::GET_MOUNT(Global_34));
 		bVar2 = true;
 	}
 	else if (func_4535())
@@ -129076,12 +129076,12 @@ void func_4447(int iParam0)
 	}
 	if (!PED::GET_PED_CONFIG_FLAG(iVar1, 312, true))
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(iVar1)))
+		if (ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar1)))
 		{
 			func_4984(&iVar1, 1);
 		}
 	}
-	else if (!ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(iVar1)))
+	else if (!ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar1)))
 	{
 		func_4984(&iVar1, 0);
 	}
@@ -139079,7 +139079,7 @@ int func_4793(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(iParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))
@@ -145219,7 +145219,7 @@ void func_5014(int iParam0, int iParam1, bool bParam2, int iParam3)
 			func_2625(131072, bParam2);
 			return;
 		}
-		if (PED::_0xD806CD2A4F2C2996(Global_34) != iParam3)
+		if (PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34) != iParam3)
 		{
 			return;
 		}
@@ -148036,13 +148036,13 @@ int func_5131(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 		case 1011124292:
 			if (PED::_0xA911EE21EDF69DAF(iParam0))
 			{
-				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(iParam0, PED::_0xD806CD2A4F2C2996(iParam0), ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 2f, 1);
+				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(iParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0), ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 2f, 1);
 			}
 			break;
 		case joaat("DROP_CARRIABLE_OR_REMOVE_FROM_MOUNT"):
 			if (PED::IS_PED_ON_MOUNT(iParam0))
 			{
-				iVar8 = PED::_0xD806CD2A4F2C2996(PED::GET_MOUNT(iParam0));
+				iVar8 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::GET_MOUNT(iParam0));
 				if (ENTITY::DOES_ENTITY_EXIST(iVar8))
 				{
 					func_206(41, 1, 0);
@@ -148051,11 +148051,11 @@ int func_5131(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4, 
 			}
 			else if (PED::_0xA911EE21EDF69DAF(iParam0))
 			{
-				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(iParam0, PED::_0xD806CD2A4F2C2996(iParam0), ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 2f, 1);
+				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(iParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0), ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 2f, 1);
 			}
 			break;
 		case joaat("PAT_LAST_MOUNTED_HORSE"):
-			iVar17 = PED::_0x4C8B59171957BCF7(iParam0);
+			iVar17 = PED::_GET_LAST_MOUNT(iParam0);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar17))
 			{
 				return 1;
@@ -148459,7 +148459,7 @@ void func_5141(int iParam0, int iParam1, char* sParam2)
 		{
 			if (!func_5403(Global_34))
 			{
-				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_34, PED::_0xD806CD2A4F2C2996(Global_34), Global_35, 2f, 1);
+				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_34, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34), Global_35, 2f, 1);
 			}
 		}
 		else

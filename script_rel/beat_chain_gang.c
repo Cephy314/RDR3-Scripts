@@ -1598,7 +1598,7 @@ int func_33(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -1824,7 +1824,7 @@ int func_39()
 	iLocal_1447 = 0;
 	if ((((((func_127(&(uLocal_1408[2]), 0, &Local_1312, &iLocal_1447, 0, 0) || func_127(&(uLocal_1408[3]), 0, &Local_1312, &iLocal_1447, 0, 0)) || func_127(&(uLocal_1408[4]), 0, &Local_1312, &iLocal_1447, 0, 0)) || iLocal_1465 == 1) || func_133()) || (func_128() && !func_38(iLocal_651, 262144))) || iLocal_1299 >= 3)
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+		iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 		iVar1 = 1;
 		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(uLocal_1408[2]), iVar0, 1, 1))
 		{
@@ -6187,7 +6187,7 @@ int func_155()
 
 	if (!func_38(iLocal_651, 8))
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+		iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(uLocal_1408[2]), iVar0, 1, 1) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(uLocal_1408[3]), iVar0, 1, 1)) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(uLocal_1408[4]), iVar0, 1, 1))
 		{
 			func_353(&(uLocal_1408[2]));

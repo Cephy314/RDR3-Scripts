@@ -3207,7 +3207,7 @@ int func_138(int iParam0)
 	{
 		if (func_82() == -1)
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
 				iVar0 = func_200(func_199(0));
@@ -3215,7 +3215,7 @@ int func_138(int iParam0)
 		}
 		else
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(func_201());
+			iVar0 = PED::_GET_LAST_MOUNT(func_201());
 		}
 	}
 	else if (func_82() == -1)
@@ -4643,7 +4643,7 @@ int func_198(int iParam0)
 	{
 		if ((Global_1914319->f_17370 || iParam0) || Global_1914319->f_16855 == 2)
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (iVar0 != func_200(7))
 			{
 				return 1;
@@ -4660,7 +4660,7 @@ int func_198(int iParam0)
 	}
 	else
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(func_201());
+		iVar0 = PED::_GET_LAST_MOUNT(func_201());
 		if (iVar0 != PLAYER::_0xF49F14462F0AE27C(PLAYER::GET_PLAYER_INDEX()))
 		{
 			return 1;

@@ -5574,35 +5574,35 @@ void func_223(int iParam0, int iParam1, int iParam2)
 {
 	switch (iParam0)
 	{
-		case -2094060557:
+		case joaat("6_TO_10"):
 			*iParam1 = 6;
 			*iParam2 = 10;
 			break;
-		case 328288820:
+		case joaat("10_TO_14"):
 			*iParam1 = 10;
 			*iParam2 = 14;
 			break;
-		case -1575618003:
+		case joaat("14_TO_18"):
 			*iParam1 = 14;
 			*iParam2 = 18;
 			break;
-		case -1205003059:
+		case joaat("18_TO_22"):
 			*iParam1 = 18;
 			*iParam2 = 22;
 			break;
-		case -281953142:
+		case joaat("0_TO_6"):
 			*iParam1 = 0;
 			*iParam2 = 6;
 			break;
-		case 390845486:
+		case joaat("6_TO_12"):
 			*iParam1 = 6;
 			*iParam2 = 12;
 			break;
-		case 495559496:
+		case joaat("12_TO_18"):
 			*iParam1 = 12;
 			*iParam2 = 18;
 			break;
-		case 48904803:
+		case joaat("18_TO_0"):
 			*iParam1 = 18;
 			*iParam2 = 0;
 			break;
@@ -5610,11 +5610,11 @@ void func_223(int iParam0, int iParam1, int iParam2)
 			*iParam1 = 22;
 			*iParam2 = 4;
 			break;
-		case -1142645407:
+		case joaat("6_TO_14"):
 			*iParam1 = 6;
 			*iParam2 = 14;
 			break;
-		case 2059113913:
+		case joaat("14_TO_22"):
 			*iParam1 = 14;
 			*iParam2 = 22;
 			break;

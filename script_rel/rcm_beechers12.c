@@ -3669,7 +3669,7 @@ int func_107(var uParam0)
 							{
 								Local_14.f_69 = CAM::CREATE_CAMERA_WITH_PARAMS(joaat("DEFAULT_SCRIPTED_CAMERA"), -1611.603f, -1341.85f, 87.5319f, -0.9363f, 0.0203f, 121.4104f, 40f, true, 2);
 								CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
-								func_370(PED::_0x4C8B59171957BCF7(Global_35), -1633.696f, -1355.619f, 82.7786f, 123.8897f, 2, 1073741824 /* Float: 2f */);
+								func_370(PED::_GET_LAST_MOUNT(Global_35), -1633.696f, -1355.619f, 82.7786f, 123.8897f, 2, 1073741824 /* Float: 2f */);
 								func_292(536870912, 1, &Local_14);
 								func_371("script@cme@beechers12_cme_shot1");
 							}
@@ -7997,7 +7997,7 @@ void func_286(int iParam0, var uParam1)
 {
 	int iVar0;
 
-	iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+	iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0) || ENTITY::IS_ENTITY_DEAD(iVar0))
 	{
 		func_616(Global_35, -1636.21f, -1356.952f, 82.9718f, 0, 50f, 10f, 6f, 5f, 1, 1, 1, 0);
@@ -10480,7 +10480,7 @@ void func_341(var uParam0)
 {
 	bool bVar0;
 
-	bVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+	bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 	if (ENTITY::DOES_ENTITY_EXIST(bVar0) && ENTITY::_0x61914209C36EFDDB(bVar0) == 5)
 	{
 		TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_35, bVar0, ENTITY::GET_ENTITY_COORDS(Global_35, false, false), 1f, 8);
@@ -17675,7 +17675,7 @@ int func_618(var uParam0)
 					PLAYER::_0x3946FC742AC305CD(PLAYER::PLAYER_ID(), uParam0[1], "Beechers_intro", 0f, 0f, 0f, uParam0[1], 0);
 					MISC::_SET_WEATHER_TYPE(joaat("OVERCASTDARK"), true, true, true, 35f, false);
 					uParam0->f_169++;
-					bVar2 = PED::_0x4C8B59171957BCF7(Global_35);
+					bVar2 = PED::_GET_LAST_MOUNT(Global_35);
 					if (ENTITY::DOES_ENTITY_EXIST(bVar2) && func_788(bVar2, 0, 1))
 					{
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bVar2, -1621.394f, -1358.557f, 82.1126f, 1f, -1, 0.25f, false, 40000f);
@@ -17820,9 +17820,9 @@ int func_620(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, f
 			}
 			return 0;
 		}
-		else if ((func_632(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_632(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_1098(iParam1, 128);
 			return 0;
 		}
@@ -35640,7 +35640,7 @@ void func_1174(var uParam0)
 	if (func_561(uParam0, 2048) && !func_248(func_1718(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_561(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -36249,7 +36249,7 @@ void func_1198(var uParam0, bool bParam1)
 		{
 			if (!bVar1)
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				bVar1 = true;
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_1794) && !(uParam0->f_1529[iVar2 /*15*/])->f_13)
@@ -48454,7 +48454,7 @@ int func_1607(int* iParam0, var uParam1)
 		}
 		else
 		{
-			iParam0->f_60 = PED::_0xD806CD2A4F2C2996(Global_35);
+			iParam0->f_60 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 		}
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0->f_60))
 		{
@@ -53113,7 +53113,7 @@ int func_1766(var uParam0, int iParam1)
 
 bool func_1767()
 {
-	return ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(Global_35));
+	return ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35));
 }
 
 void func_1768(var uParam0)

@@ -19758,7 +19758,7 @@ void func_500()
 				}
 				else
 				{
-					Global_0.f_12 = PED::_0x4C8B59171957BCF7(Global_35);
+					Global_0.f_12 = PED::_GET_LAST_MOUNT(Global_35);
 					if (ENTITY::DOES_ENTITY_EXIST(Global_0.f_12))
 					{
 						if (BUILTIN::VDIST(Global_36, ENTITY::GET_ENTITY_COORDS(Global_0.f_12, true, false)) > 50f)
@@ -19772,7 +19772,7 @@ void func_500()
 						}
 					}
 				}
-				Global_0.f_13 = PED::_0xD806CD2A4F2C2996(Global_35);
+				Global_0.f_13 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(Global_0.f_13))
 				{
 					PED::_0xED00D72F81CF7278(Global_0.f_13, 0, 0);

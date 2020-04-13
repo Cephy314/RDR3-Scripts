@@ -12049,7 +12049,7 @@ int func_473(bool bParam0, int iParam1, char* sParam2, char* sParam3, var uParam
 					}
 					if (PED::_0xA911EE21EDF69DAF(bParam0))
 					{
-						iVar6 = PED::_0xD806CD2A4F2C2996(bParam0);
+						iVar6 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bParam0);
 						TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, iVar6, ENTITY::GET_ENTITY_COORDS(bParam0, true, false), 2f, 8);
 					}
 					TASK::TASK_ENTER_ANIM_SCENE(false, iParam1, sParam2, sParam3, iParam5, bParam7, 0, 20000, -1082130432);
@@ -12060,7 +12060,7 @@ int func_473(bool bParam0, int iParam1, char* sParam2, char* sParam3, var uParam
 			case 1:
 				if (!PED::IS_PED_ON_MOUNT(bParam0))
 				{
-					bVar3 = PED::_0x4C8B59171957BCF7(bParam0);
+					bVar3 = PED::_GET_LAST_MOUNT(bParam0);
 					if (!ENTITY::IS_ENTITY_DEAD(bVar3))
 					{
 						TASK::_TASK_SMART_FLEE_STYLE_PED(bVar3, bParam0, 6, 0, 4f, -1, false);

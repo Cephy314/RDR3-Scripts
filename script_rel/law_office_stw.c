@@ -126,7 +126,7 @@ void func_1(bool bParam0)
 void func_2(int iParam0)
 {
 	bool bVar0;
-	bool bVar1;
+	int iVar1;
 
 	if (Global_1935630->f_12)
 	{
@@ -140,10 +140,10 @@ void func_2(int iParam0)
 		iParam0->f_387 = func_20(Global_35);
 		if (!ENTITY::DOES_ENTITY_EXIST(iParam0->f_387))
 		{
-			bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
-			if (!ENTITY::IS_ENTITY_DEAD(bVar1))
+			iVar1 = PED::_GET_LAST_MOUNT(Global_35);
+			if (!ENTITY::IS_ENTITY_DEAD(iVar1))
 			{
-				iParam0->f_387 = func_20(bVar1);
+				iParam0->f_387 = func_20(iVar1);
 			}
 		}
 		PED::_0xED9582B3DA8F02B4(1);
@@ -642,20 +642,20 @@ void func_19(int iParam0, bool bParam1)
 	}
 }
 
-int func_20(bool bParam0)
+int func_20(int iParam0)
 {
 	int iVar0;
 	int iVar1;
 
-	if (!ENTITY::DOES_ENTITY_EXIST(bParam0))
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
 	}
-	if (ENTITY::IS_ENTITY_DEAD(bParam0))
+	if (ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(bParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))
@@ -2606,7 +2606,7 @@ int func_72(var uParam0, float fParam1, float fParam2)
 int func_73(int iParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0->f_387))
 	{
@@ -2617,10 +2617,10 @@ int func_73(int iParam0)
 	{
 		return 0;
 	}
-	bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
-	if (!ENTITY::IS_ENTITY_DEAD(bVar1))
+	iVar1 = PED::_GET_LAST_MOUNT(Global_35);
+	if (!ENTITY::IS_ENTITY_DEAD(iVar1))
 	{
-		iVar0 = func_20(bVar1);
+		iVar0 = func_20(iVar1);
 		if (iVar0 == iParam0->f_387)
 		{
 			return 0;
@@ -2939,15 +2939,15 @@ int func_91(bool bParam0)
 {
 	int iVar0;
 	int iVar1;
-	bool bVar2;
-	bool bVar3;
-	bool bVar4;
+	int iVar2;
+	int iVar3;
+	int iVar4;
 
 	if (ENTITY::IS_ENTITY_DEAD(Global_35))
 	{
 		return 0;
 	}
-	iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+	iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		if (func_194(Global_35))
@@ -2967,10 +2967,10 @@ int func_91(bool bParam0)
 	{
 		if (func_200(0))
 		{
-			bVar2 = func_201(0);
-			if (ENTITY::DOES_ENTITY_EXIST(bVar2))
+			iVar2 = func_201(0);
+			if (ENTITY::DOES_ENTITY_EXIST(iVar2))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(bVar2);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar2);
 			}
 		}
 	}
@@ -2978,19 +2978,19 @@ int func_91(bool bParam0)
 	{
 		if (func_200(1))
 		{
-			bVar3 = func_201(1);
-			if (ENTITY::DOES_ENTITY_EXIST(bVar3))
+			iVar3 = func_201(1);
+			if (ENTITY::DOES_ENTITY_EXIST(iVar3))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(bVar3);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar3);
 			}
 		}
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
-		bVar4 = PED::_0x4C8B59171957BCF7(Global_35);
-		if (ENTITY::DOES_ENTITY_EXIST(bVar4))
+		iVar4 = PED::_GET_LAST_MOUNT(Global_35);
+		if (ENTITY::DOES_ENTITY_EXIST(iVar4))
 		{
-			iVar1 = PED::_0xD806CD2A4F2C2996(bVar4);
+			iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar4);
 		}
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
@@ -7241,15 +7241,15 @@ void func_254(var uParam0, int iParam1)
 void func_255(var uParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 
 	if (func_39(uParam0->f_329, 262144))
 	{
 		return;
 	}
 	iVar0 = PED::_0xA033D7E4BBF9844D(uParam0->f_67);
-	bVar1 = func_201(7);
-	if (bVar1 == iVar0)
+	iVar1 = func_201(7);
+	if (iVar1 == iVar0)
 	{
 		func_380(7);
 		func_331();
@@ -19323,7 +19323,7 @@ void func_700(int iParam0, int iParam1)
 
 int func_701(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 
 	iParam0 = func_327(iParam0);
 	if (iParam0 == -1)
@@ -19338,8 +19338,8 @@ int func_701(int iParam0)
 	{
 		return 0;
 	}
-	bVar0 = func_201(iParam0);
-	if (ENTITY::IS_ENTITY_DEAD(bVar0) || PED::IS_PED_INJURED(bVar0))
+	iVar0 = func_201(iParam0);
+	if (ENTITY::IS_ENTITY_DEAD(iVar0) || PED::IS_PED_INJURED(iVar0))
 	{
 		return 1;
 	}

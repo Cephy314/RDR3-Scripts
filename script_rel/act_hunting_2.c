@@ -10099,7 +10099,7 @@ int func_238(var uParam0)
 				func_578();
 				if (!ENTITY::DOES_ENTITY_EXIST(Local_15.f_375) && PED::_0xA911EE21EDF69DAF(Global_35))
 				{
-					Local_15.f_375 = PED::_0xD806CD2A4F2C2996(Global_35);
+					Local_15.f_375 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 					TASK::TASK_FOLLOW_TO_OFFSET_OF_ENTITY(&(Local_15.f_307[0]), Global_35, 0f, -6f, 0f, 1f, -1, 15f, 1, 1, 0, 1, 1);
 					Local_15.f_273[0] = 1;
 				}
@@ -20865,9 +20865,9 @@ int func_566(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, fl
 			}
 			return 0;
 		}
-		else if ((func_593(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(iParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(iParam0))))
+		else if ((func_593(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(iParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(iParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(iParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(iParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(iParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(iParam0)));
 			func_528(iParam1, 128);
 			return 0;
 		}

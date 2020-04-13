@@ -3512,7 +3512,7 @@ void func_41(var uParam0)
 
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::IS_ENTITY_A_PED(iVar0) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0)))
 		{
 			return;
@@ -6254,7 +6254,7 @@ void func_122(var uParam0)
 		func_463(&(Local_25.f_7), Local_25.f_6, 0);
 		if (PED::_0xA911EE21EDF69DAF(Global_34))
 		{
-			iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+			iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 			ENTITY::SET_ENTITY_VISIBLE(iVar0, true);
 		}
 		func_464(uParam0);
@@ -8839,7 +8839,7 @@ void func_233(var uParam0)
 	{
 		if (PED::_0xA911EE21EDF69DAF(Global_34))
 		{
-			iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+			iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
 				if (Local_25.f_3 && Local_25 == iVar0)
@@ -9421,7 +9421,7 @@ int func_267(var uParam0, bool bParam1)
 		iVar1 = func_647(uParam0);
 		iVar0 = func_648(uParam0, iVar0, iVar1);
 	}
-	iVar2 = PED::_0xD806CD2A4F2C2996(Global_34);
+	iVar2 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iVar2) && ENTITY::IS_ENTITY_A_PED(iVar2))
@@ -12189,7 +12189,7 @@ void func_361()
 {
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		Local_25 = PED::_0xD806CD2A4F2C2996(Global_34);
+		Local_25 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(Local_25))
 		{
 			if (ENTITY::IS_ENTITY_A_PED(Local_25) && MISC::_0x5170DDA6D63ACAAA(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(Local_25)))
@@ -64153,7 +64153,7 @@ int func_1976(bool bParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar1 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_A_PED(iVar1))
 		{
 			if (bParam0 == ENTITY::_0x31FEF6A20F00B963(iVar1))
@@ -103431,7 +103431,7 @@ void func_3261(bool bParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			iVar1 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0);

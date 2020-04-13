@@ -7242,7 +7242,7 @@ void func_254()
 	iVar3 = func_144(0);
 	if (func_420(iVar0) || PED::_0xA911EE21EDF69DAF(iVar0))
 	{
-		iVar2 = PED::_0xD806CD2A4F2C2996(iVar0);
+		iVar2 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar2))
 		{
 			bVar1 = true;

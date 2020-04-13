@@ -961,7 +961,7 @@ int func_44()
 					func_72("AB21_BEECHERS_RIDE_SONG_EARLY_STOP", 0);
 					bLocal_14 = false;
 				}
-				if (!func_73(Global_35, PED::_0x4C8B59171957BCF7(Global_35), 8f, 1))
+				if (!func_73(Global_35, PED::_GET_LAST_MOUNT(Global_35), 8f, 1))
 				{
 					func_72("AB21_BEECHERS_RIDE_SONG_EARLY_STOP", 0);
 					bLocal_14 = false;

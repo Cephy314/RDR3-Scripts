@@ -2151,7 +2151,7 @@ int func_46(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -10523,7 +10523,7 @@ int func_298()
 	{
 		if (func_278())
 		{
-			iLocal_246 = PED::_0x4C8B59171957BCF7(Global_35);
+			iLocal_246 = PED::_GET_LAST_MOUNT(Global_35);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_246))
 			{
 				TASK::_0x2E1D6D87346BB7D2(iLocal_246, &(iLocal_431[0]), 0, 0);
@@ -10542,7 +10542,7 @@ int func_298()
 				PED::SET_PED_RAGDOLL_FORCE_FALL(Global_35);
 				if (!ENTITY::DOES_ENTITY_EXIST(iLocal_246))
 				{
-					iLocal_246 = PED::_0x4C8B59171957BCF7(Global_35);
+					iLocal_246 = PED::_GET_LAST_MOUNT(Global_35);
 				}
 				if (!ENTITY::IS_ENTITY_DEAD(iLocal_246))
 				{

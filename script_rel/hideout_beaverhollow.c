@@ -12009,9 +12009,9 @@ void func_383()
 		{
 			TASK::TASK_PLAY_ANIM(0, &(uLocal_605[1]), "exit_front", 8f, -8f, -1, 0, 0f, false, 0, false, 0, false);
 		}
-		else if (PED::_0xD806CD2A4F2C2996((Local_275[0 /*9*/])->f_5) != 0)
+		else if (PED::_GET_FIRST_ENTITY_PED_IS_CARRYING((Local_275[0 /*9*/])->f_5) != 0)
 		{
-			TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, PED::_0xD806CD2A4F2C2996((Local_275[0 /*9*/])->f_5), ENTITY::GET_ENTITY_COORDS((Local_275[0 /*9*/])->f_5, true, false), 2f, 2);
+			TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING((Local_275[0 /*9*/])->f_5), ENTITY::GET_ENTITY_COORDS((Local_275[0 /*9*/])->f_5, true, false), 2f, 2);
 		}
 		func_371(0, Global_35, 500);
 		TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);

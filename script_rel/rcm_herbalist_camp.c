@@ -15076,9 +15076,9 @@ int func_557(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, f
 			}
 			return 0;
 		}
-		else if ((func_797(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_797(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_409(iParam1, 128);
 			return 0;
 		}
@@ -29125,7 +29125,7 @@ void func_1007(var uParam0)
 	if (func_500(uParam0, 2048) && !func_242(func_1589(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_500(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -29734,7 +29734,7 @@ void func_1031(var uParam0, bool bParam1)
 		{
 			if (!bVar1)
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				bVar1 = true;
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_1794) && !(uParam0->f_1529[iVar2 /*15*/])->f_13)
@@ -45362,7 +45362,7 @@ int func_1510(bool bParam0, var uParam1, vector3 vParam2, bool bParam5, float fP
 		}
 		else
 		{
-			bVar0 = PED::_0x4C8B59171957BCF7(bParam0);
+			bVar0 = PED::_GET_LAST_MOUNT(bParam0);
 		}
 		if (!func_756(bVar0, 1) || (!(VOLUME::_DOES_VOLUME_EXIST(bParam5) && func_2036(bVar0, bParam5, 1, 0)) && func_553(bParam0, bVar0, 1, 1) > fParam6))
 		{
@@ -48130,7 +48130,7 @@ int func_1637(var uParam0, int iParam1)
 
 bool func_1638()
 {
-	return ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(Global_35));
+	return ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35));
 }
 
 void func_1639(var uParam0)
@@ -71876,7 +71876,7 @@ int func_2350(bool bParam0, int iParam1, char* sParam2, char* sParam3, var uPara
 					}
 					if (PED::_0xA911EE21EDF69DAF(bParam0))
 					{
-						iVar6 = PED::_0xD806CD2A4F2C2996(bParam0);
+						iVar6 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bParam0);
 						TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, iVar6, ENTITY::GET_ENTITY_COORDS(bParam0, true, false), 2f, 8);
 					}
 					TASK::TASK_ENTER_ANIM_SCENE(false, iParam1, sParam2, sParam3, iParam5, bParam7, 0, 20000, -1082130432);
@@ -71887,7 +71887,7 @@ int func_2350(bool bParam0, int iParam1, char* sParam2, char* sParam3, var uPara
 			case 1:
 				if (!PED::IS_PED_ON_MOUNT(bParam0))
 				{
-					bVar3 = PED::_0x4C8B59171957BCF7(bParam0);
+					bVar3 = PED::_GET_LAST_MOUNT(bParam0);
 					if (!ENTITY::IS_ENTITY_DEAD(bVar3))
 					{
 						TASK::_TASK_SMART_FLEE_STYLE_PED(bVar3, bParam0, 6, 0, 4f, -1, false);

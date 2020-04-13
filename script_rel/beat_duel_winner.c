@@ -1142,7 +1142,7 @@ int func_26(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -3914,7 +3914,7 @@ void func_100()
 	{
 		if (PED::IS_PED_ON_MOUNT(Global_35))
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (func_257(Global_35, bLocal_1152, 1, 0))
 			{
 				PED::SET_PED_MAX_MOVE_BLEND_RATIO(iVar0, 1.25f);
@@ -12386,7 +12386,7 @@ int func_365(var uParam0, var uParam1)
 		TASK::OPEN_SEQUENCE_TASK(&iVar3);
 		if (PED::_0xA911EE21EDF69DAF(*uParam0))
 		{
-			iVar4 = PED::_0xD806CD2A4F2C2996(*uParam0);
+			iVar4 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(*uParam0);
 			TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, iVar4, ENTITY::GET_ENTITY_COORDS(*uParam0, true, false), 1f, 0);
 		}
 		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_42, 1f, -1, 0f, 512, fVar0);
@@ -19755,7 +19755,7 @@ int func_592(int iParam0, var uParam1, vector3 vParam2, bool bParam5, float fPar
 		}
 		else
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(iParam0);
+			iVar0 = PED::_GET_LAST_MOUNT(iParam0);
 		}
 		if (!func_196(iVar0, 1) || (!(VOLUME::_DOES_VOLUME_EXIST(bParam5) && func_257(iVar0, bParam5, 1, 0)) && func_322(iParam0, iVar0, 1, 1) > fParam6))
 		{

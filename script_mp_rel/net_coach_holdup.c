@@ -8138,7 +8138,7 @@ int func_335(var uParam0)
 			{
 				return 0;
 			}
-			*uParam0 = PED::_0xD806CD2A4F2C2996(PLAYER::PLAYER_PED_ID());
+			*uParam0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PLAYER::PLAYER_PED_ID());
 			if (!ENTITY::DOES_ENTITY_EXIST(*uParam0))
 			{
 				return 0;
@@ -8181,7 +8181,7 @@ int func_335(var uParam0)
 			{
 				return 0;
 			}
-			*uParam0 = PED::_0xD806CD2A4F2C2996(PLAYER::PLAYER_PED_ID());
+			*uParam0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PLAYER::PLAYER_PED_ID());
 			if (!ENTITY::DOES_ENTITY_EXIST(*uParam0))
 			{
 				return 0;
@@ -14832,7 +14832,7 @@ int func_552()
 	iVar1 = PLAYER::PLAYER_PED_ID();
 	if (PED::_0xA911EE21EDF69DAF(iVar1))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(iVar1);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar1);
 		if ((ENTITY::DOES_ENTITY_EXIST(iVar0) && NETWORK::_0xB07D3185E11657A5(iVar0)) && ENTITY::GET_ENTITY_MODEL(iVar0) == func_184())
 		{
 			return 1;
@@ -24063,7 +24063,7 @@ int func_841(int iParam0, var uParam1, var uParam2)
 
 	if (PED::_0xA911EE21EDF69DAF(iParam0))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(iParam0);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	}
 	else if (func_554(iParam0))
 	{
@@ -25801,7 +25801,7 @@ int func_914(int iParam0)
 
 	if (PED::_0xA911EE21EDF69DAF(iParam0))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(iParam0);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 		if ((ENTITY::DOES_ENTITY_EXIST(iVar0) && NETWORK::_0xB07D3185E11657A5(iVar0)) && ENTITY::GET_ENTITY_MODEL(iVar0) == func_184())
 		{
 			return 1;
@@ -25826,7 +25826,7 @@ int func_915(int iParam0)
 		{
 			return 0;
 		}
-		iVar1 = PED::_0xD806CD2A4F2C2996(iVar0);
+		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 		if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 		{
 			return 0;
@@ -33212,7 +33212,7 @@ void func_1196(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 	NETWORK::SET_ENTITY_VISIBLE_IN_CUTSCENE(iParam0, 1, 0, 256);
 	if (iParam1 == joaat("PLAYER"))
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0));
+		iVar0 = PED::_GET_LAST_MOUNT(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0));
 		iVar1 = PLAYER::_0xF49F14462F0AE27C(NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam0)));
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{

@@ -35003,9 +35003,9 @@ int func_744(var uParam0)
 	{
 		TASK::TASK_STAND_STILL(bLocal_4441, -1);
 	}
-	if (PED::_0x4C8B59171957BCF7(Global_35) != bLocal_4441)
+	if (PED::_GET_LAST_MOUNT(Global_35) != bLocal_4441)
 	{
-		func_1222(PED::_0x4C8B59171957BCF7(Global_35), func_224(0, 2), 2, 1073741824 /* Float: 2f */);
+		func_1222(PED::_GET_LAST_MOUNT(Global_35), func_224(0, 2), 2, 1073741824 /* Float: 2f */);
 	}
 	func_866(Global_35, 0);
 	func_866(&(Local_37[0 /*167*/]), 0);
@@ -36418,7 +36418,7 @@ void func_770(var uParam0)
 	if (func_764(uParam0, 2048) && !func_394(func_1329(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_764(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -81189,7 +81189,7 @@ void func_2207(var uParam0, bool bParam1)
 		{
 			if (!bVar1)
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				bVar1 = true;
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2288) && !(uParam0->f_2023[iVar2 /*15*/])->f_13)
@@ -81456,9 +81456,9 @@ int func_2211(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			return 0;
 		}
-		else if ((func_10(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_10(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_416(iParam1, 128);
 			return 0;
 		}
@@ -88230,7 +88230,7 @@ int func_2474(var uParam0, int iParam1)
 
 bool func_2475()
 {
-	return ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(Global_35));
+	return ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35));
 }
 
 void func_2476(var uParam0)

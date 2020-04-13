@@ -947,7 +947,7 @@ int func_24(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -3897,7 +3897,7 @@ void func_140()
 	{
 		iLocal_536 = PED::GET_VEHICLE_PED_IS_IN(Global_35, false);
 	}
-	iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+	iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 	if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_479))
 	{
 		bLocal_479 = VOLUME::_CREATE_VOLUME_CYLINDER_WITH_CUSTOM_NAME(Local_20.f_51, 0f, 0f, 0f, 7f, 7f, 7f, "volHorseAvoidance");

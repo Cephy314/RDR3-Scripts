@@ -1026,7 +1026,7 @@ int func_19(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -1679,7 +1679,7 @@ int func_23()
 								{
 									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_168(func_83(&Local_14), &(uLocal_225[0]), 5f), 1.5f, -1, 0.25f, true, 40000f);
 								}
-								TASK::TASK_PLACE_CARRIED_ENTITY_ON_MOUNT(0, PED::_0xD806CD2A4F2C2996(&(uLocal_225[0])), (Local_231[0 /*32*/])->f_11, 1.5f);
+								TASK::TASK_PLACE_CARRIED_ENTITY_ON_MOUNT(0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(&(uLocal_225[0])), (Local_231[0 /*32*/])->f_11, 1.5f);
 								TASK::TASK_MOUNT_ANIMAL(0, (Local_231[0 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
 								TASK::_TASK_MOVE_IN_TRAFFIC(0, -1082130432, 0, 0);
 							}

@@ -1295,7 +1295,7 @@ int func_23(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -2259,10 +2259,10 @@ int func_29()
 				{
 					iLocal_1224 = 0;
 					func_170(&uLocal_1197);
-					TASK::_TASK_SMART_FLEE_STYLE_PED(PED::_0x4C8B59171957BCF7(Global_35), &(uLocal_1163[0]), 3, 0, 30f, -1, 0);
+					TASK::_TASK_SMART_FLEE_STYLE_PED(PED::_GET_LAST_MOUNT(Global_35), &(uLocal_1163[0]), 3, 0, 30f, -1, 0);
 					if (func_27(&(uLocal_1163[2]), 0, 1))
 					{
-						TASK::_0x3923EC958249657D(PED::_0x4C8B59171957BCF7(Global_35), &(uLocal_1163[2]), 5000f);
+						TASK::_0x3923EC958249657D(PED::_GET_LAST_MOUNT(Global_35), &(uLocal_1163[2]), 5000f);
 					}
 				}
 			}

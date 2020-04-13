@@ -1424,7 +1424,7 @@ int func_34(var uParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -6264,9 +6264,9 @@ void func_194(int iParam0)
 									uVar0 = func_438(vLocal_1030, ENTITY::GET_ENTITY_COORDS(&(iLocal_1041[5]), true, false));
 								}
 								WEAPON::SET_CURRENT_PED_WEAPON(iParam0, joaat("WEAPON_UNARMED"), false, 0, false, false);
-								if (PED::_0xD806CD2A4F2C2996(Global_35) != 0)
+								if (PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35) != 0)
 								{
-									PED::_0xED00D72F81CF7278(PED::_0xD806CD2A4F2C2996(Global_35), 0, 0);
+									PED::_0xED00D72F81CF7278(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35), 0, 0);
 								}
 								func_439(iParam0, vLocal_1030, uVar0);
 								ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(Local_574.f_1, "pedBountyB", &(iLocal_1041[1]));
@@ -13004,7 +13004,7 @@ int func_374(int iParam0, int iParam1)
 				}
 				if (!func_2(iParam0->f_23, 2))
 				{
-					iParam0->f_2 = PED::_0x4C8B59171957BCF7(iParam0->f_1);
+					iParam0->f_2 = PED::_GET_LAST_MOUNT(iParam0->f_1);
 					if (!ENTITY::IS_ENTITY_DEAD(iParam0->f_2) && func_630(iParam0->f_1))
 					{
 						func_631(iParam0->f_1);
@@ -13087,7 +13087,7 @@ int func_374(int iParam0, int iParam1)
 				if (func_2(iParam0->f_23, 4096) && !PED::_0xA911EE21EDF69DAF(iParam0->f_1))
 				{
 					func_56(&(iParam0->f_23), 256);
-					iVar6 = PED::_0x4C8B59171957BCF7(iParam0->f_1);
+					iVar6 = PED::_GET_LAST_MOUNT(iParam0->f_1);
 					if (func_164(iVar6, iParam0->f_1, 1, 1) < 5f)
 					{
 						iVar5 = func_638(iVar6);
@@ -13096,7 +13096,7 @@ int func_374(int iParam0, int iParam1)
 				}
 				else if (!func_2(iParam0->f_23, 256))
 				{
-					iVar5 = PED::_0xD806CD2A4F2C2996(iParam0->f_1);
+					iVar5 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0->f_1);
 					TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(iParam0->f_1, iVar5, iParam0->f_14, iParam0->f_21, iParam0->f_4);
 				}
 				func_633(iParam0, 4, iParam1);
@@ -28668,7 +28668,7 @@ int func_849(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(iParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))

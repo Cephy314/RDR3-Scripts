@@ -3622,7 +3622,7 @@ void func_91(var uParam0, int iParam1, float fParam2, float fParam3)
 	{
 		PED::SET_PED_MAX_MOVE_BLEND_RATIO(Global_35, fParam2);
 	}
-	bVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+	bVar0 = PED::_GET_LAST_MOUNT(Global_35);
 	if (func_213(bVar0, iParam1, 1, 0))
 	{
 		PED::SET_PED_MAX_MOVE_BLEND_RATIO(bVar0, fParam3);
@@ -5601,7 +5601,7 @@ void func_136()
 							PAD::SET_PAD_SHAKE(0, 400, func_423(iVar0));
 							func_424(iVar0);
 							AUDIO::_0x017492B2201E3428("SHOCKWAVE_TREE_FALL", func_425(iVar0));
-							bVar2 = PED::_0x4C8B59171957BCF7(Global_35);
+							bVar2 = PED::_GET_LAST_MOUNT(Global_35);
 							if (!ENTITY::IS_ENTITY_DEAD(bVar2) && func_427(bVar2, func_426(iVar0), 1) < 10f)
 							{
 								PED::_0xBAE08F00021BFFB2(bVar2, func_355());
@@ -9537,7 +9537,7 @@ int func_276()
 	int iVar0;
 	int iVar1;
 
-	iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+	iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		if (func_541(Global_35))
@@ -12731,7 +12731,7 @@ int func_382(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(bParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))
@@ -20599,7 +20599,7 @@ void func_666()
 	int iVar2;
 
 	iVar0 = func_724(vLocal_490[3 /*3*/]);
-	iVar2 = PED::_0x4C8B59171957BCF7(Global_35);
+	iVar2 = PED::_GET_LAST_MOUNT(Global_35);
 	bVar1 = !ENTITY::IS_ENTITY_DEAD(iVar2);
 	if (iVar0 > 8000)
 	{
@@ -21873,7 +21873,7 @@ int func_714(var uParam0, int iParam1)
 				}
 				if (!func_367(uParam0->f_23, 2))
 				{
-					uParam0->f_2 = PED::_0x4C8B59171957BCF7(uParam0->f_1);
+					uParam0->f_2 = PED::_GET_LAST_MOUNT(uParam0->f_1);
 					if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2) && func_373(uParam0->f_1))
 					{
 						func_950(uParam0->f_1);
@@ -21956,7 +21956,7 @@ int func_714(var uParam0, int iParam1)
 				if (func_367(uParam0->f_23, 4096) && !PED::_0xA911EE21EDF69DAF(uParam0->f_1))
 				{
 					func_143(&(uParam0->f_23), 256);
-					bVar6 = PED::_0x4C8B59171957BCF7(uParam0->f_1);
+					bVar6 = PED::_GET_LAST_MOUNT(uParam0->f_1);
 					if (func_357(bVar6, uParam0->f_1, 1, 1) < 5f)
 					{
 						iVar5 = func_956(bVar6);
@@ -21965,7 +21965,7 @@ int func_714(var uParam0, int iParam1)
 				}
 				else if (!func_367(uParam0->f_23, 256))
 				{
-					iVar5 = PED::_0xD806CD2A4F2C2996(uParam0->f_1);
+					iVar5 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(uParam0->f_1);
 					TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(uParam0->f_1, iVar5, uParam0->f_14, uParam0->f_21, uParam0->f_4);
 				}
 				func_951(uParam0, 4, iParam1);

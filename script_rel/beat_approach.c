@@ -815,7 +815,7 @@ int func_22(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -1422,7 +1422,7 @@ int func_26()
 				else if (func_115(&(uLocal_450[0]), 0, 1))
 				{
 					func_60(&(uLocal_450[0]), BUILTIN::CEIL(fLocal_411) + 100);
-					iLocal_443 = PED::_0x4C8B59171957BCF7(Global_35);
+					iLocal_443 = PED::_GET_LAST_MOUNT(Global_35);
 					if (func_115(iLocal_443, 0, 1) && func_116(&(uLocal_450[0]), iLocal_443, 0, 1) < 50f)
 					{
 						AITRANSPORT::_0x67F7CEAC2391E114(iLocal_443, 1);
@@ -4017,7 +4017,7 @@ void func_108()
 	{
 		return;
 	}
-	iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+	iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 	if (!ENTITY::IS_ENTITY_DEAD(iVar0))
 	{
 		if (func_300(&(uLocal_450[0]), iVar0, 0))
@@ -4948,7 +4948,7 @@ void func_131()
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35))
 		{
-			iLocal_443 = PED::_0x4C8B59171957BCF7(Global_35);
+			iLocal_443 = PED::_GET_LAST_MOUNT(Global_35);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_443))
 			{
 				if (!bLocal_435)

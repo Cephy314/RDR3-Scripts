@@ -3241,7 +3241,7 @@ int func_85(var uParam0)
 {
 	if (func_156(16))
 	{
-		iLocal_18 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(PED::_0xD806CD2A4F2C2996(func_49(uParam0, iLocal_14)));
+		iLocal_18 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(func_49(uParam0, iLocal_14)));
 		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_18))
 		{
 			return 0;

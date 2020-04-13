@@ -1555,7 +1555,7 @@ int func_20(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -2379,7 +2379,7 @@ int func_42()
 			{
 				iVar3 = 1;
 				iLocal_900[0] = &uLocal_860[1];
-				iVar4 = PED::_0x4C8B59171957BCF7(Global_35);
+				iVar4 = PED::_GET_LAST_MOUNT(Global_35);
 				if (func_22(iVar4, 0, 1))
 				{
 					iLocal_900[1] = iVar4;
@@ -8151,7 +8151,7 @@ void func_182()
 	{
 		if (!PED::IS_PED_ON_MOUNT(Global_35))
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (func_22(iVar0, 0, 1))
 			{
 				if (func_26(iVar0, &(uLocal_860[0]), 1, 1) < 10f)
@@ -9049,7 +9049,7 @@ int func_209(var uParam0, float fParam1)
 
 int func_210()
 {
-	if ((ENTITY::_0x61914209C36EFDDB(&(uLocal_860[0])) == 7 && func_58(Global_35, PED::_0x4C8B59171957BCF7(Global_35), 0)) && func_423(PED::_0x4C8B59171957BCF7(Global_35)) == &uLocal_860[0])
+	if ((ENTITY::_0x61914209C36EFDDB(&(uLocal_860[0])) == 7 && func_58(Global_35, PED::_GET_LAST_MOUNT(Global_35), 0)) && func_423(PED::_GET_LAST_MOUNT(Global_35)) == &uLocal_860[0])
 	{
 		return 1;
 	}
@@ -9592,7 +9592,7 @@ int func_235(var uParam0, int iParam1)
 				}
 				if (!func_2(uParam0->f_23, 2))
 				{
-					uParam0->f_2 = PED::_0x4C8B59171957BCF7(uParam0->f_1);
+					uParam0->f_2 = PED::_GET_LAST_MOUNT(uParam0->f_1);
 					if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2) && func_480(uParam0->f_1))
 					{
 						func_481(uParam0->f_1);
@@ -9675,7 +9675,7 @@ int func_235(var uParam0, int iParam1)
 				if (func_2(uParam0->f_23, 4096) && !PED::_0xA911EE21EDF69DAF(uParam0->f_1))
 				{
 					func_49(&(uParam0->f_23), 256);
-					iVar6 = PED::_0x4C8B59171957BCF7(uParam0->f_1);
+					iVar6 = PED::_GET_LAST_MOUNT(uParam0->f_1);
 					if (func_26(iVar6, uParam0->f_1, 1, 1) < 5f)
 					{
 						iVar5 = func_488(iVar6);
@@ -9684,7 +9684,7 @@ int func_235(var uParam0, int iParam1)
 				}
 				else if (!func_2(uParam0->f_23, 256))
 				{
-					iVar5 = PED::_0xD806CD2A4F2C2996(uParam0->f_1);
+					iVar5 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(uParam0->f_1);
 					TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(uParam0->f_1, iVar5, uParam0->f_14, uParam0->f_21, uParam0->f_4);
 				}
 				func_483(uParam0, 4, iParam1);
@@ -16233,7 +16233,7 @@ int func_423(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(iParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))

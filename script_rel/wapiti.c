@@ -1597,7 +1597,7 @@ void func_64()
 		}
 		if (!func_129(iLocal_116, 1) && PED::_0xA911EE21EDF69DAF(Global_35))
 		{
-			bVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+			bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 			if (ENTITY::IS_ENTITY_A_PED(bVar0) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(bVar0)))
 			{
 				TASK::CLEAR_PED_TASKS(Global_35, 1, 0);
@@ -1623,7 +1623,7 @@ void func_64()
 				bVar1 = PED::GET_MOUNT(Global_35);
 				if (func_128(bVar1, bLocal_14, 1, 0))
 				{
-					bVar0 = PED::_0xD806CD2A4F2C2996(bVar1);
+					bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bVar1);
 					if ((ENTITY::DOES_ENTITY_EXIST(bVar0) && ENTITY::IS_ENTITY_A_PED(bVar0)) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(bVar0)))
 					{
 						PED::_0xED00D72F81CF7278(bVar0, 0, 0);
@@ -1646,7 +1646,7 @@ void func_64()
 				bVar1 = TASK::_0xED1F514AF4732258(Global_35);
 				if (func_128(bVar1, bLocal_14, 1, 0))
 				{
-					bVar0 = PED::_0xD806CD2A4F2C2996(bVar1);
+					bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bVar1);
 					if ((ENTITY::DOES_ENTITY_EXIST(bVar0) && ENTITY::IS_ENTITY_A_PED(bVar0)) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(bVar0)))
 					{
 						PED::_0xED00D72F81CF7278(bVar0, 0, 0);
@@ -1671,7 +1671,7 @@ void func_64()
 			}
 			if (func_128(bVar1, bLocal_14, 1, 0))
 			{
-				bVar0 = PED::_0xD806CD2A4F2C2996(bVar1);
+				bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bVar1);
 				if ((ENTITY::DOES_ENTITY_EXIST(bVar0) && ENTITY::IS_ENTITY_A_PED(bVar0)) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(bVar0)))
 				{
 					PED::_0xED00D72F81CF7278(bVar0, 0, 0);
@@ -1695,7 +1695,7 @@ void func_64()
 			}
 			if (func_128(bVar1, bLocal_14, 1, 0))
 			{
-				bVar0 = PED::_0xD806CD2A4F2C2996(bVar1);
+				bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bVar1);
 				if ((ENTITY::DOES_ENTITY_EXIST(bVar0) && ENTITY::IS_ENTITY_A_PED(bVar0)) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(bVar0)))
 				{
 					PED::_0xED00D72F81CF7278(bVar0, 0, 0);

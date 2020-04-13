@@ -609,7 +609,7 @@ void func_9()
 			else if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
 				bLocal_17 = true;
-				iLocal_19 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iLocal_19 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_35, iLocal_19, func_82(PLAYER::GET_PLAYER_INDEX()), 1f, 8);
 				bVar0 = true;
 			}
@@ -3358,7 +3358,7 @@ int func_97()
 {
 	int iVar0;
 
-	iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0) && ENTITY::GET_ENTITY_TYPE(iVar0) == 1)
 	{
 		return 1;

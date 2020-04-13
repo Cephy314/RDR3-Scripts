@@ -1099,7 +1099,7 @@ void func_30()
 	}
 	else
 	{
-		bVar0 = PED::_0x4C8B59171957BCF7(PLAYER::PLAYER_PED_ID());
+		bVar0 = PED::_GET_LAST_MOUNT(PLAYER::PLAYER_PED_ID());
 	}
 	if (func_220(bVar0))
 	{
@@ -4241,7 +4241,7 @@ int func_116()
 	{
 		return -1;
 	}
-	Local_18.f_1934.f_66 = PED::_0xD806CD2A4F2C2996(Global_35);
+	Local_18.f_1934.f_66 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 	if ((ENTITY::DOES_ENTITY_EXIST(Local_18.f_1934.f_66) && ENTITY::IS_ENTITY_A_PED(Local_18.f_1934.f_66)) && PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(Local_18.f_1934.f_66)))
 	{
 		return -1;
@@ -4274,7 +4274,7 @@ int func_118()
 	{
 		return 0;
 	}
-	if (PED::_0xD806CD2A4F2C2996(Global_35) != Local_18.f_1934.f_66)
+	if (PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35) != Local_18.f_1934.f_66)
 	{
 		return 0;
 	}
@@ -13438,7 +13438,7 @@ int func_439(int iParam0, var uParam1, bool bParam2)
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(iParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		return 0;
@@ -13682,9 +13682,9 @@ int func_445(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, f
 			}
 			return 0;
 		}
-		else if ((func_932(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_932(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_933(iParam1, 128);
 			return 0;
 		}

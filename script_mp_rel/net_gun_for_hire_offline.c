@@ -8576,7 +8576,7 @@ void func_138(var uParam0, var uParam1, vector3 vParam2)
 		{
 			if (!func_23(func_259()))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(iVar0);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 				iVar2 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, -208384378, 1);
 				if (iVar2 != 0 && iVar2 != 1)
 				{
@@ -19308,7 +19308,7 @@ void func_628(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4,
 			}
 			if (PED::_0xA911EE21EDF69DAF(iVar1))
 			{
-				iVar3 = PED::_0xD806CD2A4F2C2996(iVar1);
+				iVar3 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar1);
 				switch (func_340())
 				{
 					case 1:
@@ -30519,7 +30519,7 @@ int func_1137(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4)
 	}
 	if (PED::_0xA911EE21EDF69DAF(iParam3))
 	{
-		iVar1 = PED::_0xD806CD2A4F2C2996(iParam3);
+		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam3);
 		TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(iParam3, iVar1, ENTITY::GET_ENTITY_COORDS(iParam3, true, false), 1f, 0);
 		return 0;
 	}

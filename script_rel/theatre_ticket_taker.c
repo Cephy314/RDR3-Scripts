@@ -6580,7 +6580,7 @@ char* func_215(int iParam0, int iParam1)
 		case 7:
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				iVar1 = ENTITY::GET_ENTITY_TYPE(iVar0);
 				if (iVar1 == 1)
 				{
@@ -6606,7 +6606,7 @@ char* func_215(int iParam0, int iParam1)
 		case 8:
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				iVar1 = ENTITY::GET_ENTITY_TYPE(iVar0);
 				if (iVar1 == 1)
 				{

@@ -25894,7 +25894,7 @@ void func_381(vector3 vParam0, vector3 vParam3, vector3 vParam6, float fParam9, 
 {
 	int iVar0;
 
-	iVar0 = PED::_0x4C8B59171957BCF7(PLAYER::PLAYER_PED_ID());
+	iVar0 = PED::_GET_LAST_MOUNT(PLAYER::PLAYER_PED_ID());
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (!PED::IS_PED_INJURED(iVar0))
@@ -36672,7 +36672,7 @@ void func_745(var uParam0)
 	if (func_739(uParam0, 2048) && !func_389(func_1219(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_739(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -50831,7 +50831,7 @@ void func_1156()
 		}
 		if (!PED::_IS_PED_GETTING_INTO_A_MOUNT_SEAT(PLAYER::PLAYER_PED_ID(), true))
 		{
-			iLocal_3431 = PED::_0x4C8B59171957BCF7(PLAYER::PLAYER_PED_ID());
+			iLocal_3431 = PED::_GET_LAST_MOUNT(PLAYER::PLAYER_PED_ID());
 			if (ENTITY::DOES_ENTITY_EXIST(iLocal_3431))
 			{
 				if (!PED::IS_PED_INJURED(iLocal_3431))
@@ -69098,7 +69098,7 @@ void func_1569(var uParam0)
 				}
 			}
 		}
-		iLocal_3431 = PED::_0x4C8B59171957BCF7(PLAYER::PLAYER_PED_ID());
+		iLocal_3431 = PED::_GET_LAST_MOUNT(PLAYER::PLAYER_PED_ID());
 		if (ENTITY::DOES_ENTITY_EXIST(iLocal_3431))
 		{
 			if (!PED::IS_PED_INJURED(iLocal_3431))
@@ -70950,7 +70950,7 @@ int func_1619(int iParam0)
 {
 	if (PED::_IS_PED_GETTING_INTO_A_MOUNT_SEAT(PLAYER::PLAYER_PED_ID(), true))
 	{
-		*iParam0 = PED::_0x4C8B59171957BCF7(PLAYER::PLAYER_PED_ID());
+		*iParam0 = PED::_GET_LAST_MOUNT(PLAYER::PLAYER_PED_ID());
 		if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 		{
 			if (!PED::IS_PED_INJURED(*iParam0))
@@ -72741,7 +72741,7 @@ void func_1675()
 		{
 			if (!func_1836(PLAYER::PLAYER_PED_ID(), -208384378))
 			{
-				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), PED::_0xD806CD2A4F2C2996(PLAYER::PLAYER_PED_ID()), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true, false), 1f, 1);
+				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PLAYER::PLAYER_PED_ID()), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true, false), 1f, 1);
 			}
 		}
 		else
@@ -83803,7 +83803,7 @@ void func_2127(var uParam0, bool bParam1)
 		{
 			if (!bVar1)
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				bVar1 = true;
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2288) && !(uParam0->f_2023[iVar2 /*15*/])->f_13)
@@ -84070,9 +84070,9 @@ int func_2131(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			return 0;
 		}
-		else if ((func_2392(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_2392(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_409(iParam1, 128);
 			return 0;
 		}
@@ -90725,7 +90725,7 @@ int func_2407(var uParam0, int iParam1)
 
 bool func_2408()
 {
-	return ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(Global_35));
+	return ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35));
 }
 
 void func_2409(var uParam0)

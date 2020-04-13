@@ -13630,7 +13630,7 @@ int func_389(var uParam0, int* iParam1, var uParam2, int iParam3, int iParam4, v
 		case 4:
 			break;
 		case 6:
-			iVar1 = PED::_0x4C8B59171957BCF7(iVar0);
+			iVar1 = PED::_GET_LAST_MOUNT(iVar0);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 			{
 				uParam2->f_13 = 1;
@@ -15010,7 +15010,7 @@ void func_437(var uParam0)
 	if (func_278(uParam0, 2048) && !func_140(func_525(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		iVar1 = PED::_0x4C8B59171957BCF7(Global_34);
+		iVar1 = PED::_GET_LAST_MOUNT(Global_34);
 		if ((!ENTITY::IS_ENTITY_DEAD(iVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(iVar1, uParam0->f_4, true, 0)) || func_278(uParam0, -2147483648))) && PED::GET_MOUNT(Global_34) != iVar1)
 		{
 			func_494(iVar1, func_525(uParam0), func_526(uParam0), 2, 1073741824 /* Float: 2f */);

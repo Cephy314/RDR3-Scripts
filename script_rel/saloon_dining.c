@@ -11601,7 +11601,7 @@ int func_323(int iParam0)
 						}
 						if (PED::_0xA911EE21EDF69DAF(Global_35))
 						{
-							iVar12 = PED::_0xD806CD2A4F2C2996(Global_35);
+							iVar12 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 							if (ENTITY::IS_ENTITY_A_PED(iVar12))
 							{
 								if (PED::IS_PED_HUMAN(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar12)))

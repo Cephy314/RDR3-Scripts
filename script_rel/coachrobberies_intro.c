@@ -1022,11 +1022,11 @@ void func_14()
 							{
 								bLocal_29 = false;
 							}
-							if (PED::_0xD806CD2A4F2C2996(Global_35) != 0)
+							if (PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35) != 0)
 							{
 								if (!func_112(Global_35, -208384378))
 								{
-									TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_35, PED::_0xD806CD2A4F2C2996(Global_35), Global_36, 1f, 0);
+									TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_35, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35), Global_36, 1f, 0);
 									bLocal_29 = true;
 								}
 								else

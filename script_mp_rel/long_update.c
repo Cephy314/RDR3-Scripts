@@ -3255,7 +3255,7 @@ void func_133()
 		case 3:
 			if (CAM::IS_SCREEN_FADED_OUT())
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_34);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_34, iVar1, Global_35 + vVar2, 2f, 0);
 				func_295(5);
 			}

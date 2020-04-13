@@ -2573,7 +2573,7 @@ void func_49()
 
 void func_50()
 {
-	Local_59.f_51 = PED::_0xD806CD2A4F2C2996(Global_34);
+	Local_59.f_51 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 	if (Local_59.f_51 != 0)
 	{
 		PED::_0xED00D72F81CF7278(Local_59.f_51, 0, 0);

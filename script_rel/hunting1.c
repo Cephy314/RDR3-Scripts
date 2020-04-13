@@ -38155,7 +38155,7 @@ void func_827(var uParam0)
 	if (func_821(uParam0, 2048) && !func_393(func_1474(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_821(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -73155,7 +73155,7 @@ int func_1842(var uParam0, int iParam1)
 	return 0;
 }
 
-void func_1843(bool bParam0, bool bParam1, bool bParam2)
+void func_1843(int iParam0, bool bParam1, bool bParam2)
 {
 	int iVar0;
 	int iVar1;
@@ -73170,11 +73170,11 @@ void func_1843(bool bParam0, bool bParam1, bool bParam2)
 	var uVar42;
 	int iVar43;
 
-	if (ENTITY::IS_ENTITY_DEAD(bParam0))
+	if (ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
 	}
-	iVar0 = func_2413(bParam0);
+	iVar0 = func_2413(iParam0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		return;
@@ -74092,9 +74092,9 @@ int func_1881(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			return 0;
 		}
-		else if ((func_2028(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_2028(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_414(iParam1, 128);
 			return 0;
 		}
@@ -75215,7 +75215,7 @@ int func_1923()
 	{
 		if (PED::_0xA911EE21EDF69DAF(Global_35))
 		{
-			iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+			iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
 				if (func_1968(iVar0))
@@ -86356,11 +86356,11 @@ void func_2412(bool bParam0, int iParam1)
 	}
 }
 
-int func_2413(bool bParam0)
+int func_2413(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = func_2773(bParam0);
+	iVar0 = func_2773(iParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0) && PED::IS_PED_INJURED(iVar0))
 	{
 		return iVar0;
@@ -90409,7 +90409,7 @@ void func_2568(var uParam0, bool bParam1)
 		{
 			if (!bVar1)
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				bVar1 = true;
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2288) && !(uParam0->f_2023[iVar2 /*15*/])->f_13)
@@ -95650,20 +95650,20 @@ void func_2772(var uParam0)
 	func_2959(&(uParam0->f_3));
 }
 
-int func_2773(bool bParam0)
+int func_2773(int iParam0)
 {
 	int iVar0;
 	int iVar1;
 
-	if (!ENTITY::DOES_ENTITY_EXIST(bParam0))
+	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
 		return 0;
 	}
-	if (ENTITY::IS_ENTITY_DEAD(bParam0))
+	if (ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(bParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))
@@ -95796,7 +95796,7 @@ bool func_2779(int iParam0)
 	{
 		if (func_20() == -1)
 		{
-			bVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			bVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (!ENTITY::DOES_ENTITY_EXIST(bVar0))
 			{
 				bVar0 = func_213(func_261(0));
@@ -95804,7 +95804,7 @@ bool func_2779(int iParam0)
 		}
 		else
 		{
-			bVar0 = PED::_0x4C8B59171957BCF7(func_2961());
+			bVar0 = PED::_GET_LAST_MOUNT(func_2961());
 		}
 	}
 	else if (func_20() == -1)
@@ -96831,7 +96831,7 @@ int func_2805()
 	int iVar3;
 
 	iVar0 = -1;
-	iVar2 = PED::_0xD806CD2A4F2C2996(Global_35);
+	iVar2 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar2))
 	{
 		iVar1 = 0;
@@ -98478,7 +98478,7 @@ int func_2874(var uParam0, int iParam1)
 
 bool func_2875()
 {
-	return ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(Global_35));
+	return ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35));
 }
 
 void func_2876(var uParam0)
@@ -100331,7 +100331,7 @@ int func_2960(int iParam0)
 	{
 		if ((Global_1914319->f_17370 || iParam0) || Global_1914319->f_16855 == 2)
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (iVar0 != func_213(7))
 			{
 				return 1;
@@ -100348,7 +100348,7 @@ int func_2960(int iParam0)
 	}
 	else
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(func_2961());
+		iVar0 = PED::_GET_LAST_MOUNT(func_2961());
 		if (iVar0 != PLAYER::_0xF49F14462F0AE27C(PLAYER::GET_PLAYER_INDEX()))
 		{
 			return 1;

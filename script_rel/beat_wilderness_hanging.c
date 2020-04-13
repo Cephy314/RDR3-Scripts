@@ -803,7 +803,7 @@ int func_17(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -839,7 +839,7 @@ int func_18()
 	func_64();
 	if (!bLocal_419)
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+		iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 		if (!ENTITY::IS_ENTITY_DEAD(iVar0) && func_65(iVar0, &(uLocal_382[0]), 1) < 100f)
 		{
 			PED::_0x2EB75FB86C41F026(iVar0, 3, 1);

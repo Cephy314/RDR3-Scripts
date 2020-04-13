@@ -11755,7 +11755,7 @@ void func_401(var uParam0)
 		{
 			if (!func_619(uParam0->f_4, -208384378))
 			{
-				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(uParam0->f_4, PED::_0xD806CD2A4F2C2996(uParam0->f_4), func_220(uParam0->f_2), 1f, 8);
+				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(uParam0->f_4, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(uParam0->f_4), func_220(uParam0->f_2), 1f, 8);
 			}
 		}
 		else if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_432.f_74))
@@ -24318,7 +24318,7 @@ int func_937(int iParam0)
 	}
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar1 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_A_PED(iVar1))
 		{
 			if (iParam0 == ENTITY::_0x31FEF6A20F00B963(iVar1))

@@ -1349,7 +1349,7 @@ int func_51(var uParam0)
 		{
 			if (PED::_0xA911EE21EDF69DAF(PLAYER::PLAYER_PED_ID()))
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(PLAYER::PLAYER_PED_ID());
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PLAYER::PLAYER_PED_ID());
 				if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 				{
 					iVar1 = func_115(iVar0);
@@ -2465,7 +2465,7 @@ int func_103(var uParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(iVar0)))
+	if (ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0)))
 	{
 		return 0;
 	}

@@ -533,7 +533,7 @@ void func_25(var uParam0)
 	}
 	else
 	{
-		iVar0 = PED::_0x4C8B59171957BCF7(Global_1225638->f_8);
+		iVar0 = PED::_GET_LAST_MOUNT(Global_1225638->f_8);
 		if ((ENTITY::DOES_ENTITY_EXIST(iVar0) && !ENTITY::IS_ENTITY_DEAD(iVar0)) && func_47(iVar0, Global_1225638->f_8, 1, 1) < 25f)
 		{
 			uParam0->f_613 = iVar0;

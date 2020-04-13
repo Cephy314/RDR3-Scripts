@@ -3124,7 +3124,7 @@ void func_77(var uParam0, bool bParam1, float fParam2, float fParam3)
 	{
 		PED::SET_PED_MAX_MOVE_BLEND_RATIO(Global_35, fParam2);
 	}
-	bVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+	bVar0 = PED::_GET_LAST_MOUNT(Global_35);
 	if (func_186(bVar0, bParam1, 1, 0))
 	{
 		PED::SET_PED_MAX_MOVE_BLEND_RATIO(bVar0, fParam3);
@@ -11459,7 +11459,7 @@ int func_356(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = PED::_0xD806CD2A4F2C2996(bParam0);
+	iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(bParam0);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		if (ENTITY::IS_ENTITY_A_PED(iVar0))
@@ -12464,7 +12464,7 @@ int func_372(bool bParam0, bool bParam1, bool bParam2)
 							func_620(*bParam0, &uLocal_1540, 0f, 0f, 0f, 0, 60f, 10f, -1, 4000, 4000, 1075838976 /* Float: 2.5f */, 0, 1, 1084227584 /* Float: 5f */);
 						}
 						func_619(bParam0, 0, 0);
-						func_7(1073741824 /* Float: 2f */, func_186(PED::_0x4C8B59171957BCF7(Global_35), &(iLocal_1759[4]), 1, 0));
+						func_7(1073741824 /* Float: 2f */, func_186(PED::_GET_LAST_MOUNT(Global_35), &(iLocal_1759[4]), 1, 0));
 						func_200(Local_1389.f_136, 8);
 						func_628(Local_1618[0 /*7*/], 1, 1);
 						func_625(Local_1618[0 /*7*/], "PBL_quick_exit");
@@ -12490,7 +12490,7 @@ int func_372(bool bParam0, bool bParam1, bool bParam2)
 					func_620(*bParam0, &uLocal_1540, 0f, 0f, 0f, 0, 60f, 10f, -1, 4000, 4000, 1075838976 /* Float: 2.5f */, 0, 1, 1084227584 /* Float: 5f */);
 				}
 				func_619(bParam0, 0, 0);
-				func_7(1073741824 /* Float: 2f */, func_186(PED::_0x4C8B59171957BCF7(Global_35), &(iLocal_1759[4]), 1, 0));
+				func_7(1073741824 /* Float: 2f */, func_186(PED::_GET_LAST_MOUNT(Global_35), &(iLocal_1759[4]), 1, 0));
 				func_629(1048576000 /* Float: 0.25f */, 1028443341 /* Float: 0.05f */, 0, 106);
 				if (!ENTITY::IS_ENTITY_DEAD(Global_35) && (((func_651(bParam0, bParam1, bParam2) || ENTITY::HAS_ANIM_EVENT_FIRED(*bParam0, 1647800955)) && !func_354("HMSTD_IG1_ENTER")) && !func_354("HMSTD_ENT_RAIN")))
 				{
@@ -12512,7 +12512,7 @@ int func_372(bool bParam0, bool bParam1, bool bParam2)
 						uLocal_30 = func_626(*bParam0, VOLUME::_CREATE_VOLUME_CYLINDER(ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 0f, 0f, ENTITY::GET_ENTITY_HEADING(*bParam0), 5.5f, 5.5f, 5.5f), 148);
 						iLocal_20 = 5;
 					}
-					iVar5 = PED::_0x4C8B59171957BCF7(Global_35);
+					iVar5 = PED::_GET_LAST_MOUNT(Global_35);
 					if (!ENTITY::IS_ENTITY_DEAD(iVar5) && PED::GET_PED_CONFIG_FLAG(iVar5, 136, true))
 					{
 						PED::SET_PED_CONFIG_FLAG(iVar5, 136, false);
@@ -12534,7 +12534,7 @@ int func_372(bool bParam0, bool bParam1, bool bParam2)
 					TASK::_TASK_SMART_FLEE_STYLE_COORD(*bParam2, func_423(), 2, 0, 5f, -1, 0);
 					iLocal_20 = 6;
 				}
-				func_7(1073741824 /* Float: 2f */, func_186(PED::_0x4C8B59171957BCF7(Global_35), &(iLocal_1759[4]), 1, 0));
+				func_7(1073741824 /* Float: 2f */, func_186(PED::_GET_LAST_MOUNT(Global_35), &(iLocal_1759[4]), 1, 0));
 				if (ENTITY::DOES_ENTITY_EXIST(*bParam0) && ENTITY::HAS_ANIM_EVENT_FIRED(*bParam0, 1608236143))
 				{
 					func_615(1, 0);
@@ -12644,7 +12644,7 @@ int func_372(bool bParam0, bool bParam1, bool bParam2)
 				}
 				if (!func_27(512))
 				{
-					func_7(1073741824 /* Float: 2f */, func_186(PED::_0x4C8B59171957BCF7(Global_35), &(iLocal_1759[4]), 1, 0));
+					func_7(1073741824 /* Float: 2f */, func_186(PED::_GET_LAST_MOUNT(Global_35), &(iLocal_1759[4]), 1, 0));
 					if (func_652(bParam0, bParam1, bParam2))
 					{
 						func_509(Local_1618[0 /*7*/], *bParam0, "father");
@@ -21182,7 +21182,7 @@ int func_696(var uParam0, int iParam1)
 				}
 				if (!func_147(uParam0->f_23, 2))
 				{
-					uParam0->f_2 = PED::_0x4C8B59171957BCF7(uParam0->f_1);
+					uParam0->f_2 = PED::_GET_LAST_MOUNT(uParam0->f_1);
 					if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2) && func_347(uParam0->f_1))
 					{
 						func_896(uParam0->f_1);
@@ -21265,7 +21265,7 @@ int func_696(var uParam0, int iParam1)
 				if (func_147(uParam0->f_23, 4096) && !PED::_0xA911EE21EDF69DAF(uParam0->f_1))
 				{
 					func_132(&(uParam0->f_23), 256);
-					bVar6 = PED::_0x4C8B59171957BCF7(uParam0->f_1);
+					bVar6 = PED::_GET_LAST_MOUNT(uParam0->f_1);
 					if (func_292(bVar6, uParam0->f_1, 1, 1) < 5f)
 					{
 						iVar5 = func_902(bVar6);
@@ -21274,7 +21274,7 @@ int func_696(var uParam0, int iParam1)
 				}
 				else if (!func_147(uParam0->f_23, 256))
 				{
-					iVar5 = PED::_0xD806CD2A4F2C2996(uParam0->f_1);
+					iVar5 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(uParam0->f_1);
 					TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(uParam0->f_1, iVar5, uParam0->f_14, uParam0->f_21, uParam0->f_4);
 				}
 				func_897(uParam0, 4, iParam1);
@@ -26535,7 +26535,7 @@ int func_878(bool bParam0, bool bParam1, vector3 vParam2, bool bParam5, float fP
 		}
 		else
 		{
-			bVar0 = PED::_0x4C8B59171957BCF7(bParam0);
+			bVar0 = PED::_GET_LAST_MOUNT(bParam0);
 		}
 		if (!func_322(bVar0, 1) || (!(VOLUME::_DOES_VOLUME_EXIST(bParam5) && func_186(bVar0, bParam5, 1, 0)) && func_292(bParam0, bVar0, 1, 1) > fParam6))
 		{

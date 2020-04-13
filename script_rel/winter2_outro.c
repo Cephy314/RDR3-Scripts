@@ -1120,13 +1120,13 @@ int func_50(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, boo
 	return 0;
 }
 
-void func_51(bool bParam0)
+void func_51(int iParam0)
 {
 	bool bVar0;
 
-	if (!PED::IS_PED_INJURED(bParam0))
+	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		bVar0 = PED::_0xD806CD2A4F2C2996(bParam0);
+		bVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iParam0);
 		if ((ENTITY::DOES_ENTITY_EXIST(bVar0) && !ENTITY::IS_ENTITY_DEAD(bVar0)) && ENTITY::IS_ENTITY_A_PED(bVar0))
 		{
 			PED::_0xED00D72F81CF7278(bVar0, 0, 0);

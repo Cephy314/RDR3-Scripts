@@ -2006,7 +2006,7 @@ int func_49()
 
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (!func_144(Global_34))
 		{
 			if (func_145(iVar0))
@@ -2044,7 +2044,7 @@ void func_51()
 
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_34);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (func_145(iVar0))
 		{
 			ENTITY::_0x0D0DB2B6AF19A987(&iVar0);
@@ -2452,7 +2452,7 @@ bool func_77()
 	int iVar2;
 
 	iVar0 = PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID());
-	iVar2 = PED::_0xD806CD2A4F2C2996(iVar0);
+	iVar2 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar2))
 	{
 		return false;

@@ -2149,7 +2149,7 @@ int func_37(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -5842,7 +5842,7 @@ int func_155()
 			}
 			if (PED::IS_PED_ON_MOUNT(Global_35))
 			{
-				PED::_0xF60165E1D2C5370B(PED::_0x4C8B59171957BCF7(Global_35), &uVar1, &fVar0);
+				PED::_0xF60165E1D2C5370B(PED::_GET_LAST_MOUNT(Global_35), &uVar1, &fVar0);
 			}
 			else
 			{
@@ -8152,7 +8152,7 @@ void func_210(bool bParam0)
 		func_424(&(uLocal_1476[4]), 1);
 		func_425(&(uLocal_1476[4]), 1, 1);
 		PED::_0xE737D5F14304A2EC(&(uLocal_1476[4]), PLAYER::PLAYER_ID(), 120000);
-		if (iLocal_653 == 3 && (ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(Global_35)) && func_132(&(uLocal_1476[4]), PED::_0x4C8B59171957BCF7(Global_35), 0) < func_132(&(uLocal_1476[4]), &(iLocal_1508[0]), 1)))
+		if (iLocal_653 == 3 && (ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(Global_35)) && func_132(&(uLocal_1476[4]), PED::_GET_LAST_MOUNT(Global_35), 0) < func_132(&(uLocal_1476[4]), &(iLocal_1508[0]), 1)))
 		{
 			if (iLocal_1081 == 1)
 			{
@@ -8162,7 +8162,7 @@ void func_210(bool bParam0)
 			{
 				func_49(&(uLocal_1476[4]), Global_35, "WON_FIGHT", 0, -1082130432 /* Float: -1f */, 2, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 			}
-			iLocal_1485 = PED::_0x4C8B59171957BCF7(Global_35);
+			iLocal_1485 = PED::_GET_LAST_MOUNT(Global_35);
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_1485))
 			{

@@ -10080,7 +10080,7 @@ void func_180()
 	}
 	else if (PED::_0xA911EE21EDF69DAF(Global_34) && !func_307(Global_34, -208384378))
 	{
-		iVar0 = PED::_0xD806CD2A4F2C2996(Global_1275573->f_8);
+		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_1275573->f_8);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			TASK::CLEAR_PED_TASKS(Global_1275573->f_8, 1, 0);

@@ -1266,7 +1266,7 @@ int func_37(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 		{
 			if (PED::_0xA911EE21EDF69DAF(Global_35))
 			{
-				iVar1 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -1303,7 +1303,7 @@ void func_38()
 	{
 		if (bLocal_506)
 		{
-			iVar0 = PED::_0x4C8B59171957BCF7(Global_35);
+			iVar0 = PED::_GET_LAST_MOUNT(Global_35);
 			if (!func_122(Global_35, iVar0, 0))
 			{
 				TASK::_TASK_FLEE_FROM_PED(iVar0, &(uLocal_329[0]), 0f, 0f, 0f, 8f, -1, 0, 1f, 0);

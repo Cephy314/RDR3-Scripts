@@ -35797,7 +35797,7 @@ void func_757(var uParam0)
 	if (func_751(uParam0, 2048) && !func_386(func_1267(uParam0)))
 	{
 		bVar0 = VOLUME::_DOES_VOLUME_EXIST(uParam0->f_4);
-		bVar1 = PED::_0x4C8B59171957BCF7(Global_35);
+		bVar1 = PED::_GET_LAST_MOUNT(Global_35);
 		if ((!ENTITY::IS_ENTITY_DEAD(bVar1) && ((bVar0 && ENTITY::IS_ENTITY_IN_VOLUME(bVar1, uParam0->f_4, true, 0)) || func_751(uParam0, -2147483648))) && PED::GET_MOUNT(Global_35) != bVar1)
 		{
 			iVar2 = 2;
@@ -52331,7 +52331,7 @@ void func_1224()
 		{
 			if (!func_1626(Global_35, -208384378))
 			{
-				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_35, PED::_0xD806CD2A4F2C2996(Global_35), Global_36, 1f, 1);
+				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_35, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35), Global_36, 1f, 1);
 			}
 		}
 		else
@@ -53844,9 +53844,9 @@ int func_1250(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			}
 			return 0;
 		}
-		else if ((func_901(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_0x4C8B59171957BCF7(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0))))
+		else if ((func_901(iParam2, 128) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_LAST_MOUNT(bParam0))) && ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0))))
 		{
-			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_0xD806CD2A4F2C2996(PED::_0x4C8B59171957BCF7(bParam0)));
+			TASK::TASK_PICKUP_CARRIABLE_ENTITY(bParam0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PED::_GET_LAST_MOUNT(bParam0)));
 			func_406(iParam1, 128);
 			return 0;
 		}
@@ -78685,7 +78685,7 @@ void func_2120(bool bParam0)
 				{
 					TASK::CLEAR_SEQUENCE_TASK(&iLocal_1384);
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_1384);
-					TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, PED::_0xD806CD2A4F2C2996(*bParam0), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 1f, 1);
+					TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(*bParam0), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 1f, 1);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2077.896f, -1414.781f, 130.3567f, 1f, -1, 0.25f, false, 265.2462f);
 					func_2096(0, joaat("WORLD_HUMAN_SMOKE"), 0, 1, joaat("WORLD_HUMAN_SMOKE_MALE_C"), -1082130432 /* Float: -1f */);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_1384);
@@ -78723,7 +78723,7 @@ void func_2120(bool bParam0)
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_1384);
 					if (PED::_0xA911EE21EDF69DAF(*bParam0))
 					{
-						TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, PED::_0xD806CD2A4F2C2996(*bParam0), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 1f, 1);
+						TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(*bParam0), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 1f, 1);
 					}
 					TASK::TASK_COMBAT_HATED_TARGETS_IN_AREA(0, ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 140f, 0, 0);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_1384);
@@ -80432,7 +80432,7 @@ void func_2187(var uParam0, bool bParam1)
 		{
 			if (!bVar1)
 			{
-				iVar0 = PED::_0xD806CD2A4F2C2996(Global_35);
+				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35);
 				bVar1 = true;
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(uParam0->f_2288) && !(uParam0->f_2023[iVar2 /*15*/])->f_13)
@@ -87429,7 +87429,7 @@ int func_2459(var uParam0, int iParam1)
 
 bool func_2460()
 {
-	return ENTITY::DOES_ENTITY_EXIST(PED::_0xD806CD2A4F2C2996(Global_35));
+	return ENTITY::DOES_ENTITY_EXIST(PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_35));
 }
 
 void func_2461(var uParam0)

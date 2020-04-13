@@ -594,7 +594,7 @@ void func_21(bool bParam0)
 					}
 					else if (PED::_0xA911EE21EDF69DAF(Global_34))
 					{
-						TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_34, PED::_0xD806CD2A4F2C2996(Global_34), Global_35, 2f, 1);
+						TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(Global_34, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34), Global_35, 2f, 1);
 					}
 				}
 				func_54(0);

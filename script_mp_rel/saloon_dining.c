@@ -11325,7 +11325,7 @@ int func_303(int iParam0, bool bParam1)
 		iVar1 = func_447(iParam0);
 		iVar0 = func_448(iParam0, iVar0, iVar1);
 	}
-	iVar2 = PED::_0xD806CD2A4F2C2996(Global_34);
+	iVar2 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 	if (PED::_0xA911EE21EDF69DAF(Global_34))
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iVar2) && ENTITY::IS_ENTITY_A_PED(iVar2))
