@@ -391,7 +391,7 @@ int func_21(var uParam0)
 	ENTITY::SET_ENTITY_COORDS(Global_35, func_45(42), true, false, true, true);
 	AUDIO::START_AUDIO_SCENE("Mission_Transition_Clouds_Scene");
 	func_46(&uLocal_3);
-	HUD::_0xC9CAEAEEC1256E54(-1679307491);
+	HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	return 1;
 }
 
@@ -408,7 +408,7 @@ int func_23(var uParam0)
 	int iVar0;
 	int iVar1;
 
-	HUD::_0xC9CAEAEEC1256E54(-1679307491);
+	HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
 	func_47();
 	func_48(42, 1, 1);
@@ -431,7 +431,7 @@ int func_23(var uParam0)
 					bLocal_6 = func_56(joaat("CSTAG_FLOW_FUS1_POST"), joaat("CSTP_PERSIST_ACROSS_STATES"), -469960592, -1, 1, 1, 0);
 				}
 				MISC::CLEAR_BIT(&(Global_1956578->f_1), 5);
-				HUD::_0x4CC5F2FC1332577F(-1679307491);
+				HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 				return 1;
 			}
 		}

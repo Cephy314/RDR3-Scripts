@@ -1073,7 +1073,7 @@ void func_12(bool bParam0)
 		{
 			if (bVar5)
 			{
-				HUD::_0xC9CAEAEEC1256E54(-1679307491);
+				HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 			}
 			else
 			{
@@ -1085,7 +1085,7 @@ void func_12(bool bParam0)
 		{
 			if (bVar5)
 			{
-				HUD::_0xC9CAEAEEC1256E54(-1679307491);
+				HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 			}
 			if (!func_2(Global_1394141->f_1326, 8))
 			{

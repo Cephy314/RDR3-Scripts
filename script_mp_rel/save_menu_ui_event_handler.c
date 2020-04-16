@@ -21,7 +21,7 @@ void __EntryFunction__()
 				switch (vVar0.x)
 				{
 					case -493190640:
-						if (vVar0.z == 1535628899)
+						if (vVar0.z == joaat("SAVE_COMPLETE"))
 						{
 							Global_17 = 1;
 						}

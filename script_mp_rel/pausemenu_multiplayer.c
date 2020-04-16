@@ -23,7 +23,7 @@ void __EntryFunction__()
 	switch (ScriptParam_0)
 	{
 		case 2:
-			if (ScriptParam_0.f_1 == -821438348 || ScriptParam_0.f_1 == -968517323)
+			if (ScriptParam_0.f_1 == joaat("LAUNCHMP") || ScriptParam_0.f_1 == joaat("SWITCHTOFREEMODE"))
 			{
 				if (!NETWORK::_0x2A8112A974DE1EF6())
 				{
@@ -33,7 +33,7 @@ void __EntryFunction__()
 				func_1(0);
 				HUD::SET_FRONTEND_ACTIVE(false);
 			}
-			else if (ScriptParam_0.f_1 == -1214041525 || ScriptParam_0.f_1 == -118730902)
+			else if (ScriptParam_0.f_1 == joaat("LAUNCHMPPRIVATE") || ScriptParam_0.f_1 == joaat("SWITCHTOPRIVATE"))
 			{
 				if (!NETWORK::_0x2A8112A974DE1EF6())
 				{
@@ -43,9 +43,9 @@ void __EntryFunction__()
 				CAM::DO_SCREEN_FADE_OUT(0);
 				HUD::SET_FRONTEND_ACTIVE(false);
 			}
-			else if (ScriptParam_0.f_1 != 745042118)
+			else if (ScriptParam_0.f_1 != joaat("LAUNCHSP"))
 			{
-				if (ScriptParam_0.f_1 == 173068202)
+				if (ScriptParam_0.f_1 == joaat("LAUNCHMISSIONCREATOR"))
 				{
 					if (!NETWORK::_0x2A8112A974DE1EF6())
 					{

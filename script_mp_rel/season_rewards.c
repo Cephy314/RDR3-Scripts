@@ -686,15 +686,15 @@ void func_11(int* iParam0)
 		func_34(iParam0, 3, 1);
 		func_34(iParam0, 4, 0);
 	}
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(1690011036))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("UI_EVENT_CHANNEL_REWARDS")))
 	{
-		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(1690011036, &uVar0))
+		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("UI_EVENT_CHANNEL_REWARDS"), &uVar0))
 		{
 		}
 		else
 		{
 			func_35(iParam0, &uVar0);
-			UIEVENTS::_EVENT_MANAGER_POP_EVENT(1690011036);
+			UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("UI_EVENT_CHANNEL_REWARDS"));
 		}
 	}
 	if (func_33(iParam0, 3))
@@ -1150,7 +1150,7 @@ void func_39(var uParam0, int iParam1)
 		case joaat("REWARDS"):
 			func_54(uParam0);
 			break;
-		case -1102037190:
+		case joaat("REWARDS_VIP"):
 			func_68(uParam0);
 			break;
 	}
@@ -1163,7 +1163,7 @@ void func_40(int* iParam0, int iParam1)
 		case joaat("REWARDS"):
 			func_69(iParam0);
 			break;
-		case -1102037190:
+		case joaat("REWARDS_VIP"):
 			func_70(iParam0);
 			break;
 	}
@@ -1186,7 +1186,7 @@ void func_42(int* iParam0, int iParam1)
 		case joaat("REWARDS"):
 			func_72(iParam0);
 			break;
-		case -1102037190:
+		case joaat("REWARDS_VIP"):
 			func_73(iParam0);
 			break;
 	}
@@ -1424,13 +1424,13 @@ void func_61(int* iParam0, int iParam1)
 			{
 			}
 			break;
-		case 251386954:
+		case joaat("SR_UI_EVENT_SCREEN_VIP_PURCHASE"):
 			func_93(iParam0);
 			break;
-		case 1306840844:
+		case joaat("SR_UI_EVENT_SCREEN_VIP_WELCOME"):
 			func_94(iParam0);
 			break;
-		case -739645416:
+		case joaat("SR_UI_EVENT_SCREEN_VIP_MORE_INFO"):
 			func_95(iParam0);
 			break;
 		case 2127956707:
@@ -2365,7 +2365,7 @@ int func_101(int iParam0, int iParam1, bool bParam2)
 	Var0.f_11 = -1;
 	Var0.f_12 = -1;
 	MISC::_COPY_MEMORY(iParam0, &Var0, 79);
-	iParam0->f_4 = 1690011036;
+	iParam0->f_4 = joaat("UI_EVENT_CHANNEL_REWARDS");
 	iParam0->f_5 = 389841892;
 	iParam0->f_62 = iParam1;
 	func_148(iParam1, &(iParam0->f_20), &(iParam0->f_21));
@@ -4777,7 +4777,7 @@ int func_221(int iParam0, int iParam1, int iParam2, bool bParam3)
 	{
 		return 0;
 	}
-	iParam0->f_4 = 1690011036;
+	iParam0->f_4 = joaat("UI_EVENT_CHANNEL_REWARDS");
 	iParam0->f_5 = -1964195787;
 	if (func_120())
 	{
@@ -4963,7 +4963,7 @@ int func_226(int iParam0, int iParam1, int iParam2, bool bParam3)
 		return 0;
 	}
 	iParam0->f_61 = iParam1;
-	iParam0->f_4 = 1690011036;
+	iParam0->f_4 = joaat("UI_EVENT_CHANNEL_REWARDS");
 	iParam0->f_5 = -1964195787;
 	if (func_120())
 	{
@@ -5769,7 +5769,7 @@ bool func_266(int iParam0, var uParam1)
 
 void func_267(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 {
-	uParam0->f_4 = 1690011036;
+	uParam0->f_4 = joaat("UI_EVENT_CHANNEL_REWARDS");
 	uParam0->f_5 = 2097921812;
 	func_149(uParam0, bParam2, bParam1, bParam3);
 	func_148(bParam2, &(uParam0->f_34), &(uParam0->f_35));

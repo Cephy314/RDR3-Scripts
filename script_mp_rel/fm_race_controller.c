@@ -2775,7 +2775,7 @@ void __EntryFunction__()
 		{
 			_NAMESPACE76::_0x00A15B94CBA4F76F(Local_13563);
 		}
-		HUD::_0x8BC7C1F929D07BF3(690901814);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
 		func_22();
 		AUDIO::_0x2E399EAFBEEA74D5();
 		func_55(128);
@@ -2942,7 +2942,7 @@ void func_7(bool bParam0)
 	func_12(0);
 	func_97(0);
 	func_18(64);
-	HUD::_0x8BC7C1F929D07BF3(128623374);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 	func_98(0);
 	func_99(1);
 	func_100(&Local_12275, &Local_13277);
@@ -3162,8 +3162,8 @@ void func_7(bool bParam0)
 	PLAYER::SET_MAX_WANTED_LEVEL(5);
 	PLAYER::RESET_WANTED_LEVEL_DIFFICULTY(iLocal_6147);
 	CAM::SET_WIDESCREEN_BORDERS(false, -1);
-	HUD::_0x8BC7C1F929D07BF3(474191950);
-	HUD::_0x8BC7C1F929D07BF3(-1450522739);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_RACES"));
 	MAP::UNLOCK_MINIMAP_ANGLE();
 	_NAMESPACE71::_0x6035E8FBCA32AC5E();
 	MAP::CLEAR_GPS_FLAGS();
@@ -4492,7 +4492,7 @@ void func_40()
 			break;
 		case 2:
 			func_282(4);
-			HUD::_0x4CC5F2FC1332577F(-1450522739);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_RACES"));
 			func_322(3);
 			break;
 		case 3:
@@ -5786,7 +5786,7 @@ void func_100(int iParam0, var uParam1)
 	}
 	func_412(iParam0);
 	func_413(iParam0);
-	HUD::_0x8BC7C1F929D07BF3(-2124237476);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 }
 
 void func_101(var uParam0)
@@ -8919,7 +8919,7 @@ int func_283(struct<2> Param0)
 			func_543(&uLocal_7273, 0, 1);
 			func_18(512);
 			func_191(0);
-			HUD::_0x8BC7C1F929D07BF3(128623374);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			if (!CAM::IS_SCREEN_FADED_IN() && !CAM::IS_SCREEN_FADING_IN())
 			{
 				CAM::DO_SCREEN_FADE_IN(1000);
@@ -9139,7 +9139,7 @@ int func_284(struct<2> Param0)
 			func_577(1);
 			(Local_59[iLocal_6153 /*53*/])->f_14 = { ENTITY::GET_ENTITY_COORDS(iLocal_6150, true, false) };
 			MISC::SET_BIT(&((Local_59[iLocal_6153 /*53*/])->f_13), 0);
-			HUD::_0x8BC7C1F929D07BF3(128623374);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			func_578();
 			func_579(&uLocal_9902);
 			func_18(4);
@@ -10804,7 +10804,7 @@ void func_327(var uParam0)
 		}
 		Local_12275.f_598 = -1;
 	}
-	HUD::_0x8BC7C1F929D07BF3(474191950);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 	if (MISC::IS_BIT_SET(iLocal_13498, 26))
 	{
 		MISC::CLEAR_BIT(&iLocal_13498, 24);
@@ -12534,7 +12534,7 @@ void func_412(int iParam0)
 	func_745(iParam0);
 	func_746(iParam0);
 	GRAPHICS::_0xC5CB91D65852ED7E("MP_OutofArea");
-	HUD::_0x8BC7C1F929D07BF3(-2124237476);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 	func_747(4);
 	func_747(8);
 }
@@ -16437,7 +16437,7 @@ int func_552()
 			func_51(0);
 			func_268(&uLocal_6774, 0, 0);
 			func_319();
-			HUD::_0x8BC7C1F929D07BF3(128623374);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			return 1;
 	}
 	return 0;
@@ -21850,25 +21850,25 @@ int func_743(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 598430796;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_CUTSCENE");
 		case 1:
-			return 690901814;
+			return joaat("HUD_CTX_MISSION_CONTROLLER");
 		case 3:
 			return 2083323686;
 		case 2:
-			return 474191950;
+			return joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE");
 		case 4:
-			return 128623374;
+			return joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION");
 		case 6:
-			return -993263478;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_INTRO");
 		case 7:
-			return 1344742130;
+			return joaat("HUD_CTX_IN_MP_GAME_MODE");
 		case 8:
 			return 537169871;
 		case 9:
 			return -1763610107;
 		case 10:
-			return 68203906;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_OUTRO");
 		case 11:
 			return 253418738;
 		case 12:
@@ -30293,7 +30293,7 @@ int func_1055(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4, f
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, iParam3, false);
 				if (func_348(iParam2, 16384))
 				{
-					HUD::_0x8BC7C1F929D07BF3(724769646);
+					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				}
 			}
 		}
@@ -34057,7 +34057,7 @@ void func_1160(int iParam0)
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(&(iParam0->f_12[33]), true);
 		GRAPHICS::ANIMPOSTFX_PLAY("MP_OutofAreaDirectional");
 		AUDIO::_0x6339C1EA3979B5F7("default", "out_of_bounds_scenes");
-		HUD::_0x4CC5F2FC1332577F(-2124237476);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 		func_1685(4);
 		func_1686();
 		Var3 = { *(iParam0->f_370[iParam0->f_877 /*15*/]) };
@@ -34089,7 +34089,7 @@ void func_1160(int iParam0)
 		AUDIO::_0x3210BCB36AF7621B(iParam0->f_889);
 		iParam0->f_889 = -1;
 		GRAPHICS::_0xC5CB91D65852ED7E("MP_OutofAreaDirectional");
-		HUD::_0x8BC7C1F929D07BF3(-2124237476);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 		func_747(4);
 		GRAPHICS::_0x981C7D863980FA51();
 		iParam0->f_890 = 0;
@@ -48960,7 +48960,7 @@ int func_1634(bool bParam0)
 	{
 		return joaat("LEADERBOARD");
 	}
-	return -987928333;
+	return joaat("POST_MATCH");
 }
 
 int func_1635()
@@ -49071,42 +49071,42 @@ int func_1642(int iParam0)
 	switch (iParam0)
 	{
 		case 456605338:
-			return 1133052843;
+			return joaat("CTIMERANDSCORES");
 		case -1838730762:
-			return -202313910;
+			return joaat("CTIMER_AND_AVATARS");
 		case 2091842205:
-			return 756032181;
+			return joaat("CTIMER_AND_FISTINGMETER");
 		case 1083726117:
-			return 1391354145;
+			return joaat("CTIMER_SCORES_AND_FISTINGMETER");
 		case 1174457346:
-			return -276645137;
+			return joaat("CTIMER_AND_ONE_METER");
 		case 593332131:
-			return 1059823321;
+			return joaat("FTIMER_SCORES_AND_A_METER");
 		case 1443986063:
-			return 1059823321;
+			return joaat("FTIMER_SCORES_AND_A_METER");
 		case 1936484400:
-			return 774310187;
+			return joaat("CTIMER_AND_TWO_METERS");
 		case -2146584:
-			return 138141760;
+			return joaat("MSTIMER_AND_SCORES");
 		case 1117913623:
 		case 1928276294:
-			return 418594230;
+			return joaat("FOUR_METERS");
 		case -1220700382:
 		case -699819638:
 		case 1375802800:
-			return -867319305;
+			return joaat("CTIMER_SCORES_AND_METERS");
 		case 344700063:
 		case 1485013169:
-			return -1700692449;
+			return joaat("CTIMER");
 		case -438934027:
 		case 1835758938:
-			return -1148732570;
+			return joaat("CTIMER_AND_FOUR_METERS");
 		case 244605310:
 		case 283413025:
 		case 615217735:
-			return 2042296464;
+			return joaat("CTIMER_AND_EIGHT_METERS");
 		case -818658900:
-			return -98377599;
+			return joaat("CTIMER_TWO_METERS_PLUS_EIGHT_METERS");
 		default:
 			break;
 	}

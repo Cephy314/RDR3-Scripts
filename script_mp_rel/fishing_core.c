@@ -3504,13 +3504,13 @@ void func_109(var uParam0, int iParam1)
 		if (uParam0->f_72 == 0)
 		{
 			uParam0->f_72 = 1;
-			HUD::_0x4CC5F2FC1332577F(-859384195);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_FISHING"));
 		}
 	}
 	else if (uParam0->f_72 == 1)
 	{
 		uParam0->f_72 = 0;
-		HUD::_0x8BC7C1F929D07BF3(-859384195);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_FISHING"));
 	}
 }
 
@@ -7813,7 +7813,7 @@ void func_313(var uParam0, int iParam1)
 		DATABINDING::_DATABINDING_ADD_DATA_STRING(uParam0->f_4, "itemDescription", sVar2);
 		*uParam0 = 1;
 	}
-	if ((((*uParam0 == 1 && uParam0->f_1 == 0) && UISTATEMACHINE::_UIFLOWBLOCK_IS_LOADED(uParam0->f_3)) && UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_3, -1645363952)) && UISTATEMACHINE::_UISTATEMACHINE_CREATE(-1295789154, uParam0->f_3))
+	if ((((*uParam0 == 1 && uParam0->f_1 == 0) && UISTATEMACHINE::_UIFLOWBLOCK_IS_LOADED(uParam0->f_3)) && UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_3, joaat("INFO_CARD_ENTRY_POINT"))) && UISTATEMACHINE::_UISTATEMACHINE_CREATE(-1295789154, uParam0->f_3))
 	{
 		uParam0->f_1 = 1;
 		uParam0->f_2 = 1;

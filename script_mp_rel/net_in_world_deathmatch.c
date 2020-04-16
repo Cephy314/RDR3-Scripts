@@ -1850,7 +1850,7 @@ void func_66(int iParam0)
 	func_69(&(iParam0->f_1103), 1);
 	func_145(4);
 	GRAPHICS::_0xC5CB91D65852ED7E("MP_OutofArea");
-	HUD::_0x8BC7C1F929D07BF3(-2124237476);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 	func_146();
 }
 
@@ -1997,7 +1997,7 @@ void func_69(int iParam0, bool bParam1)
 		if (GRAPHICS::ANIMPOSTFX_IS_RUNNING(func_155()))
 		{
 			GRAPHICS::_0xC5CB91D65852ED7E(func_155());
-			HUD::_0x8BC7C1F929D07BF3(-2124237476);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			GRAPHICS::_0x981C7D863980FA51();
 		}
 	}
@@ -7966,7 +7966,7 @@ void func_325(int iParam0, int iParam1, bool bParam2, int iParam3, char* sParam4
 {
 	bool bVar0;
 
-	if ((func_444(iParam0, &bVar0) && func_445(iParam0)) && func_446(iParam0, -1700692449, &bVar0))
+	if ((func_444(iParam0, &bVar0) && func_445(iParam0)) && func_446(iParam0, joaat("CTIMER"), &bVar0))
 	{
 		func_447(iParam0, iParam1, bParam2, iParam3, sParam4);
 	}
@@ -7998,7 +7998,7 @@ void func_328(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4, 
 {
 	bool bVar0;
 
-	if (((func_444(iParam0, &bVar0) && func_445(iParam0)) && func_448(iParam0, iParam1, iParam7, iParam8, iParam9, iParam10, iParam11, iParam12)) && func_446(iParam0, 1133052843, &bVar0))
+	if (((func_444(iParam0, &bVar0) && func_445(iParam0)) && func_448(iParam0, iParam1, iParam7, iParam8, iParam9, iParam10, iParam11, iParam12)) && func_446(iParam0, joaat("CTIMERANDSCORES"), &bVar0))
 	{
 		func_447(iParam0, iParam3, bParam4, iParam5, sParam6);
 		func_449(iParam1, uParam2, iParam7, iParam8, iParam9, iParam10, iParam11, iParam12);
@@ -8369,7 +8369,7 @@ int func_348(int iParam0, char* sParam1, bool bParam2, bool bParam3, vector3 vPa
 		if ((bParam3 && !func_430(vParam4)) && fParam7 > 0f)
 		{
 			GRAPHICS::ANIMPOSTFX_PLAY(func_155());
-			HUD::_0x4CC5F2FC1332577F(-2124237476);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			fParam7 = func_465(fParam7, 0f, 1000f);
 			if (iParam8 == 0 || !VOLUME::_DOES_VOLUME_EXIST(iParam8))
 			{
@@ -18749,7 +18749,7 @@ int func_685(bool bParam0)
 	{
 		return joaat("LEADERBOARD");
 	}
-	return -987928333;
+	return joaat("POST_MATCH");
 }
 
 int func_686()

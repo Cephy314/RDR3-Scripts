@@ -17271,7 +17271,7 @@ int func_612(int iParam0)
 {
 	if (func_657((Global_1392915->f_121[iParam0 /*20*/])->f_3))
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1744263063);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PROMPT_MONEY"));
 		func_658(&((Global_1392915->f_121[iParam0 /*20*/])->f_3), 1, 0);
 		(Global_1392915->f_121[iParam0 /*20*/])->f_3 = 0;
 		return 1;

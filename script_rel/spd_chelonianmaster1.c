@@ -1002,7 +1002,7 @@ void func_14(var uParam0)
 		if (!func_47(uParam0->f_195, 32768))
 		{
 			func_48(&(uParam0->f_195), 32768);
-			HUD::_0x4CC5F2FC1332577F(-1679307491);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		}
 		func_84(uParam0);
 		func_85(uParam0);
@@ -1435,7 +1435,7 @@ void func_27(var uParam0, int iParam1)
 	{
 		if (uParam0->f_201 >= 2)
 		{
-			HUD::_0x8BC7C1F929D07BF3(-1679307491);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 			if (VOLUME::_DOES_VOLUME_EXIST(uParam0->f_180))
 			{
 				VOLUME::_DELETE_VOLUME(uParam0->f_180);

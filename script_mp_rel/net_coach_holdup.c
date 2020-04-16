@@ -1995,12 +1995,12 @@ void func_84(bool bParam0)
 	if (bParam0)
 	{
 		func_132(1048576);
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
 		func_229(1048576);
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 }
 
@@ -19405,7 +19405,7 @@ void func_651(int iParam0, var uParam1, int iParam2, bool bParam3, int iParam4, 
 {
 	bool bVar0;
 
-	if (((func_1037(iParam0, &bVar0) && func_1038(iParam0)) && func_1039(iParam0, uParam1, iParam7)) && func_1040(iParam0, -213385216, &bVar0))
+	if (((func_1037(iParam0, &bVar0) && func_1038(iParam0)) && func_1039(iParam0, uParam1, iParam7)) && func_1040(iParam0, joaat("CTIMER_AND_METERS"), &bVar0))
 	{
 		func_1041(iParam0, iParam2, bParam3, iParam4, sParam5);
 		func_1042(uParam1, iParam6, iParam7, bParam8, bParam9, bParam10);

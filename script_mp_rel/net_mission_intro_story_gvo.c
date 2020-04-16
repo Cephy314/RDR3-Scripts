@@ -2445,7 +2445,7 @@ void func_107(int iParam0, var uParam1)
 					{
 						sVar20 = "MP_COOP_GIVER_ALERT_SUB_POSSE_SIZE_SMALL";
 						Var0.f_3.f_3 = 1;
-						Var0.f_3 = 1976695487; /* GXTEntry: "Proceed" */
+						Var0.f_3 = joaat("IB_PROCEED");
 					}
 					else if (func_167(uParam1) > iParam0->f_1.f_33)
 					{
@@ -3353,7 +3353,7 @@ int func_153(int iParam0)
 	{
 		return 0;
 	}
-	if (!UISTATEMACHINE::_UIFLOWBLOCK_ENTER(iParam0->f_98, 1392996949))
+	if (!UISTATEMACHINE::_UIFLOWBLOCK_ENTER(iParam0->f_98, joaat("MP_MISSION_INFO_SCREEN")))
 	{
 		return 0;
 	}

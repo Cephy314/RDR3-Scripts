@@ -9729,7 +9729,7 @@ int func_248(int iParam0, var uParam1, bool bParam2, bool bParam3, int iParam4, 
 	}
 	if (bParam5)
 	{
-		HUD::_0x8BC7C1F929D07BF3(724769646);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 	}
 	return 0;
 }

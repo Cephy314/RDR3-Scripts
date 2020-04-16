@@ -90,7 +90,7 @@ void __EntryFunction__()
 									ATTRIBUTE::_0xD962F8579D702DB5();
 									func_12(Var1.f_1, &(Var1.f_3));
 									break;
-								case -1715238242:
+								case joaat("FOLDER_ITEM"):
 									ATTRIBUTE::_0xD962F8579D702DB5();
 									func_16(Var1.f_1, &(Var1.f_3));
 									break;
@@ -487,7 +487,7 @@ void func_16(var uParam0, var uParam1)
 
 void func_17(int iParam0)
 {
-	if (iParam0 != -1715238242)
+	if (iParam0 != joaat("FOLDER_ITEM"))
 	{
 		Global_1939231->f_10476 = -1;
 	}
@@ -5028,7 +5028,7 @@ void func_173(int iParam0)
 	func_375(iParam0, &uVar15, 0, 0, 0, 0);
 	if (!func_23(0))
 	{
-		func_376(-1715238242, iVar14, &uVar15, 1, Var0.f_11, 0, 0, joaat("COLOR_PURE_WHITE"));
+		func_376(joaat("FOLDER_ITEM"), iVar14, &uVar15, 1, Var0.f_11, 0, 0, joaat("COLOR_PURE_WHITE"));
 	}
 	else
 	{
@@ -16074,7 +16074,7 @@ void func_562(int iParam0)
 	{
 		iVar4 = func_374(iVar6);
 	}
-	func_376(-1715238242, iParam0, &Var1, func_707(iParam0), iVar4, 0, 0, joaat("COLOR_PURE_WHITE"));
+	func_376(joaat("FOLDER_ITEM"), iParam0, &Var1, func_707(iParam0), iVar4, 0, 0, joaat("COLOR_PURE_WHITE"));
 	Global_1939231->f_38.f_203++;
 	Global_1939231->f_38.f_1++;
 }

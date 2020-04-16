@@ -2193,7 +2193,7 @@ int func_22(var uParam0, var uParam1, var uParam2)
 			break;
 		case 20:
 			func_207(uParam2, -1, -1, 0, 17, 1, 1);
-			HUD::_0xC9CAEAEEC1256E54(724769646);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 			PAD::_0x2804658EB7D8A50B(4, joaat("NOPLAYERCONTROL"));
 			if (!func_104((*uParam1)[uParam2->f_1 /*6*/], 2))
 			{
@@ -3230,7 +3230,7 @@ void func_46(var uParam0, var uParam1, var uParam2)
 	}
 	if (uParam2->f_66 == 0)
 	{
-		uParam2->f_66 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(-1536154840);
+		uParam2->f_66 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(joaat("COUNTDOWN_SPLASH_FLOW"));
 	}
 	if (!UISTATEMACHINE::_UIFLOWBLOCK_IS_LOADED(uParam2->f_66))
 	{
@@ -3425,7 +3425,7 @@ void func_50(var uParam0, var uParam1, var uParam2)
 	{
 		case 0:
 			PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
-			HUD::_0xC9CAEAEEC1256E54(-365265320);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MP_TUTORIAL_CUTSCENE"));
 			func_256(Local_111.f_112.f_9, 1, 0);
 			uParam2->f_43 = uParam2->f_112.f_14;
 			func_257(1);
@@ -3450,7 +3450,7 @@ void func_50(var uParam0, var uParam1, var uParam2)
 			}
 			break;
 		case 1:
-			HUD::_0xC9CAEAEEC1256E54(-365265320);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MP_TUTORIAL_CUTSCENE"));
 			CAM::_0x05AB44D906738426();
 			if (func_260(&(uParam2->f_19), &(uParam2->f_112.f_4), 0, 0))
 			{
@@ -3476,7 +3476,7 @@ void func_50(var uParam0, var uParam1, var uParam2)
 			}
 			break;
 		case 2:
-			HUD::_0xC9CAEAEEC1256E54(-365265320);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MP_TUTORIAL_CUTSCENE"));
 			CAM::_0x05AB44D906738426();
 			if (MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(uParam2->f_43, uParam2->f_112.f_14)) < 4000)
 			{
@@ -3561,7 +3561,7 @@ void func_50(var uParam0, var uParam1, var uParam2)
 		case 4:
 			PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
 			PAD::DISABLE_ALL_CONTROL_ACTIONS(2);
-			HUD::_0xC9CAEAEEC1256E54(-1679307491);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 			_NAMESPACE71::_0x6035E8FBCA32AC5E();
 			HUD::_0xF1622CE88A1946FB();
 			break;
@@ -8228,7 +8228,7 @@ void func_272(var uParam0, var uParam1)
 			}
 			func_123(uParam0, &(uParam1->f_112), 4);
 			iVar0 = func_508(((10000 - uParam1->f_70) / 1000) + 1, 1, 10);
-			HUD::_0xC9CAEAEEC1256E54(-2124237476);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			CAM::_0x8910C24B7E0046EC();
 			if (!GRAPHICS::ANIMPOSTFX_IS_RUNNING(func_282()))
 			{
@@ -8240,7 +8240,7 @@ void func_272(var uParam0, var uParam1)
 			}
 			else if (!UISTATEMACHINE::_UISTATEMACHINE_EXISTS(190275865))
 			{
-				if (UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam1->f_66, -301617666) && UISTATEMACHINE::_UISTATEMACHINE_CREATE(190275865, uParam1->f_66))
+				if (UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam1->f_66, joaat("COUNTDOWN")) && UISTATEMACHINE::_UISTATEMACHINE_CREATE(190275865, uParam1->f_66))
 				{
 				}
 			}

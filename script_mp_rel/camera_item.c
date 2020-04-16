@@ -106,7 +106,7 @@ void __EntryFunction__()
 	fLocal_203 = 0.5f;
 	iLocal_205 = 4;
 	iLocal_206 = -1534086282;
-	iLocal_208 = -193491261;
+	iLocal_208 = joaat("DOMINOS_SET_1");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(515))
 	{
 		func_1(&Local_53, 0);
@@ -246,7 +246,7 @@ void __EntryFunction__()
 				{
 					if ((MISC::GET_GAME_TIMER() - iLocal_176) > 500)
 					{
-						HUD::_0x8BC7C1F929D07BF3(959420967);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 						CAM::SET_CAM_ACTIVE(Local_53.f_14, false);
 						CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 						CAM::DETACH_CAM(Local_53.f_14);
@@ -308,7 +308,7 @@ void __EntryFunction__()
 						}
 						Global_1956184 = 1;
 						func_15();
-						HUD::_0x4CC5F2FC1332577F(959420967);
+						HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 						func_32();
 						iLocal_148 = MISC::GET_GAME_TIMER();
 						func_13(&Local_53, 5);
@@ -509,7 +509,7 @@ void __EntryFunction__()
 				}
 				if (func_51(&uLocal_170) > 1000)
 				{
-					HUD::_0x8BC7C1F929D07BF3(959420967);
+					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 					func_26();
 					func_53(&uLocal_170);
 					func_14();
@@ -640,7 +640,7 @@ void func_1(var uParam0, int iParam1)
 		CAM::DESTROY_CAM(uParam0->f_14, false);
 	}
 	SCRIPTS::SET_NO_LOADING_SCREEN(false);
-	HUD::_0x8BC7C1F929D07BF3(959420967);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 	Global_1956184 = 0;
 	Global_1956185 = 0;
 	AUDIO::_0x531A78D6BF27014B("CAMERA_SOUNDSET");
@@ -1911,7 +1911,7 @@ void func_54(var uParam0)
 	iLocal_199 = 0;
 	bLocal_161 = true;
 	bLocal_162 = false;
-	HUD::_0x4CC5F2FC1332577F(959420967);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 }
 
 void func_55(var uParam0)

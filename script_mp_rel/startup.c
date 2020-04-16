@@ -5016,7 +5016,7 @@ int func_148(int iParam0, int iParam1)
 			case 768:
 				return 1081087978;
 			case 769:
-				return 696143352;
+				return joaat("VAL_03_LOCKDOWN");
 			case 770:
 				return -981203673;
 			case 771:

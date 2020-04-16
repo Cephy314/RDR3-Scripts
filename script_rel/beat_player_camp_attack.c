@@ -1069,7 +1069,7 @@ int func_29()
 	}
 	if (!bLocal_793 && !bLocal_799)
 	{
-		HUD::_0xC9CAEAEEC1256E54(724769646);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 	}
 	switch (iLocal_756)
 	{
@@ -4132,7 +4132,7 @@ int func_97()
 				PED::SET_PED_USING_ACTION_MODE(Global_35, true, -1, 0);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 				func_32();
-				HUD::_0x8BC7C1F929D07BF3(2011163970);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 				func_22(&uLocal_768);
 				iLocal_803++;
 			}
@@ -4393,7 +4393,7 @@ int func_102()
 						func_22(&uLocal_762);
 						PED::SET_PED_USING_ACTION_MODE(Global_35, true, -1, 0);
 						func_32();
-						HUD::_0x8BC7C1F929D07BF3(2011163970);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 						iLocal_806++;
 					}
 				}

@@ -964,7 +964,7 @@ void func_15(int iParam0)
 		if (!func_5(iParam0, 2048) && !func_7(iParam0))
 		{
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 312, false);
-			HUD::_0x4CC5F2FC1332577F(-1679307491);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		}
 		func_107(*iParam0);
 		func_25(iParam0, 1024);
@@ -2662,11 +2662,11 @@ void func_104(var uParam0, int iParam1)
 	PLAYER::SET_EVERYONE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
 	if (func_226(*uParam0, 2) || func_226(*uParam0, 4))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_226(*uParam0, 16))
 	{
@@ -5454,11 +5454,11 @@ void func_250(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4, v
 	}
 	if (!func_232(*uParam0, 4) && !func_232(*uParam0, 2))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_232(*uParam0, 2048))
 	{
@@ -6448,17 +6448,17 @@ int func_294(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case 1:
-			HUD::_0x8BC7C1F929D07BF3(-1679307491);
-			HUD::_0x8BC7C1F929D07BF3(474191950);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 			break;
 		default:
 			if (func_154())
 			{
 				if (!func_63(uParam0, 524288))
 				{
-					HUD::_0x4CC5F2FC1332577F(-1679307491);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 				}
-				HUD::_0x8BC7C1F929D07BF3(474191950);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 			}
 			break;
 	}
@@ -7333,7 +7333,7 @@ void func_335(int iParam0)
 		{
 			MISC::SET_BIT(&(Global_1956578->f_1), 5);
 			CAM::_0xE296208C273BD7F0(-1, -1, 0, 17, 1, 0);
-			HUD::_0x4CC5F2FC1332577F(724769646);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 			if (!MISC::IS_BIT_SET(iParam0->f_21, 4))
 			{
 				MISC::SET_BIT(&(iParam0->f_21), 4);
@@ -8344,7 +8344,7 @@ void func_366(int iParam0, bool bParam1)
 	{
 		MISC::CLEAR_BIT(&(iParam0->f_21), 4);
 	}
-	HUD::_0x8BC7C1F929D07BF3(724769646);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 }
 
 void func_367(int iParam0)

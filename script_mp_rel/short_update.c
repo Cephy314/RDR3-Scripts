@@ -661,7 +661,7 @@ void func_28()
 	func_146();
 	if (Global_26386)
 	{
-		HUD::_0xC9CAEAEEC1256E54(1023137905);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_GUARMA_AND_BROKE"));
 	}
 	Global_1939067->f_25 = 0;
 	if (Global_1939178->f_6)
@@ -821,10 +821,10 @@ void func_28()
 							func_172(0);
 							Global_1939067->f_11 = 1;
 							break;
-						case -1472057397:
+						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
 							Global_1939067->f_12 = 1;
 							break;
-						case -1992626253:
+						case joaat("FISHING_WHEEL"):
 							Global_1939067->f_13 = 1;
 							break;
 						default:
@@ -840,10 +840,10 @@ void func_28()
 						case -414255251:
 							Global_1939067->f_11 = 0;
 							break;
-						case -1472057397:
+						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
 							Global_1939067->f_12 = 0;
 							break;
-						case -1992626253:
+						case joaat("FISHING_WHEEL"):
 							Global_1939067->f_13 = 0;
 							break;
 						default:
@@ -853,15 +853,15 @@ void func_28()
 				case -1203660660:
 					switch (vVar9.z)
 					{
-						case -445375936:
+						case joaat("FLOW_LAUNCHED"):
 							func_171();
 							func_151(1);
 							func_173();
 							break;
-						case -1472057397:
+						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
 							func_174(vVar9.z, 0);
 							break;
-						case 545934563:
+						case joaat("PUT_AWAY_FISHING_ROD"):
 							Global_1939067->f_25 = 1;
 							break;
 						default:
@@ -923,7 +923,7 @@ void func_28()
 	}
 	if (Global_1939067->f_23)
 	{
-		HUD::_0xC9CAEAEEC1256E54(474191950);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 	}
 }
 
@@ -7511,7 +7511,7 @@ void func_216()
 				{
 					HUD::_0x4CC5F2FC1332577F(1422092402);
 				}
-				HUD::_0x4CC5F2FC1332577F(-1347445791);
+				HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_SHOP"));
 				func_698(1);
 				Global_1051388->f_3211 = 1;
 			}
@@ -7520,7 +7520,7 @@ void func_216()
 	else if (((!(Global_1915180->f_20135 || Global_1915180->f_21989.f_2) || Global_1939178->f_6) || Global_13) || (func_695() == 9 && !Global_1915180->f_20143))
 	{
 		HUD::_0x8BC7C1F929D07BF3(1422092402);
-		HUD::_0x8BC7C1F929D07BF3(-1347445791);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_SHOP"));
 		func_698(0);
 		Global_1051388->f_3211 = 0;
 	}
@@ -14874,176 +14874,176 @@ int func_437(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("DOCUMENT_NEWSPAPER_ED_01"):
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_01");
+			return 1323994892;
 		case -246260565: /* GXTEntry: "Blackwater Ledger No. 63" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_02");
+			return 1573399751;
 		case 340173459: /* GXTEntry: "Blackwater Ledger No. 64" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_03");
+			return -2106624491;
 		case 109840158: /* GXTEntry: "Blackwater Ledger No. 65" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_04");
+			return -1793811613;
 		case 903996873: /* GXTEntry: "Blackwater Ledger No. 66" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_05");
+			return -1510851298;
 		case 706727493: /* GXTEntry: "Blackwater Ledger No. 67" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_06");
+			return -1467596218;
 		case -1454682982: /* GXTEntry: "Blackwater Ledger No. 68" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_07");
+			return -1184308213;
 		case 1538503020: /* GXTEntry: "Blackwater Ledger No. 69" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_08");
+			return -870708883;
 		case 1318524723: /* GXTEntry: "Blackwater Ledger No. 70" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_09");
+			return -251964625;
 		case 18296369: /* GXTEntry: "Blackwater Ledger No. 71" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_10");
+			return 1207697423;
 		case -279147844: /* GXTEntry: "Blackwater Ledger No. 72" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_11");
+			return 1499898596;
 		case -413074747: /* GXTEntry: "Blackwater Ledger No. 73" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_12");
+			return 1822214480;
 		case -760557223: /* GXTEntry: "Blackwater Ledger No. 74" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_13");
+			return 2134142591;
 		case -924992065: /* GXTEntry: "Blackwater Ledger No. 75" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_14");
+			return -1862299111;
 		case 1767753378: /* GXTEntry: "New Hanover Gazette No. 27" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_01");
+			return 389460201;
 		case -1556675047: /* GXTEntry: "New Hanover Gazette No. 28" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_02");
+			return 1371776514;
 		case -2012820803: /* GXTEntry: "New Hanover Gazette No. 29" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_03");
+			return 1001486814;
 		case -849973848: /* GXTEntry: "New Hanover Gazette No. 30" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_04");
+			return 1882514148;
 		case 1012860904: /* GXTEntry: "New Hanover Gazette No. 31" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_05");
+			return 1103889939;
 		case -1680391208: /* GXTEntry: "New Hanover Gazette No. 32" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_06");
+			return -1802851441;
 		case -1253105631: /* GXTEntry: "New Hanover Gazette No. 33" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_07");
+			return 1719193452;
 		case -915721704: /* GXTEntry: "New Hanover Gazette No. 34" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_08");
+			return -1151534797;
 		case 202891657: /* GXTEntry: "New Hanover Gazette No. 35" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_09");
+			return -1929044860;
 		case -1261034125: /* GXTEntry: "New Hanover Gazette No. 36" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_10");
+			return 924313143;
 		case 1787203230: /* GXTEntry: "New Hanover Gazette No. 37" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_11");
+			return 626082474;
 		case 1737771952: /* GXTEntry: "New Hanover Gazette No. 38" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_12");
+			return -653022672;
 		case -1254096446: /* GXTEntry: "New Hanover Gazette No. 39" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_13");
+			return -942045252;
 		case 61577350: /* GXTEntry: "New Hanover Gazette No. 40" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_14");
+			return -38767767;
 		case 1566650197: /* GXTEntry: "Saint Denis Times No. 43" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_01");
+			return -194659462;
 		case -572653278: /* GXTEntry: "Saint Denis Times No. 44" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_02");
+			return -549220042;
 		case -532692958: /* GXTEntry: "Saint Denis Times No. 45" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_03");
+			return 293303717;
 		case -1594812622: /* GXTEntry: "Saint Denis Times No. 46" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_04");
+			return -1890586292;
 		case -358162791: /* GXTEntry: "Saint Denis Times No. 47" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_05");
+			return -2122099277;
 		case 368626453: /* GXTEntry: "Saint Denis Times No. 48" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_06");
+			return -1681356223;
 		case 543847666: /* GXTEntry: "Saint Denis Times No. 49" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_07");
+			return -830115910;
 		case 888242611: /* GXTEntry: "Saint Denis Times No. 50" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_08");
+			return 1211786018;
 		case 1712504077: /* GXTEntry: "Saint Denis Times No. 51" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_09");
+			return 1124096174;
 		case -634222073: /* GXTEntry: "Saint Denis Times No. 52" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_10");
+			return -911614461;
 		case 662019373: /* GXTEntry: "Saint Denis Times No. 53" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_11");
+			return -662209602;
 		case 1032348365: /* GXTEntry: "Saint Denis Times No. 54" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_12");
+			return 1799528770;
 		case -1449342224: /* GXTEntry: "Saint Denis Times No. 55" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_13");
+			return 1560872143;
 		case 1786928078: /* GXTEntry: "Saint Denis Times No. 56" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_14");
+			return -1764788133;
 	}
 	switch (iParam0)
 	{
 		case joaat("DOCUMENT_NEWSPAPER_ED_01"):
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_01");
+			return 1323994892;
 		case -246260565: /* GXTEntry: "Blackwater Ledger No. 63" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_02");
+			return 1573399751;
 		case 340173459: /* GXTEntry: "Blackwater Ledger No. 64" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_03");
+			return -2106624491;
 		case 109840158: /* GXTEntry: "Blackwater Ledger No. 65" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_04");
+			return -1793811613;
 		case 903996873: /* GXTEntry: "Blackwater Ledger No. 66" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_05");
+			return -1510851298;
 		case 706727493: /* GXTEntry: "Blackwater Ledger No. 67" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_06");
+			return -1467596218;
 		case -1454682982: /* GXTEntry: "Blackwater Ledger No. 68" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_07");
+			return -1184308213;
 		case 1538503020: /* GXTEntry: "Blackwater Ledger No. 69" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_08");
+			return -870708883;
 		case 1318524723: /* GXTEntry: "Blackwater Ledger No. 70" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_09");
+			return -251964625;
 		case 18296369: /* GXTEntry: "Blackwater Ledger No. 71" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_10");
+			return 1207697423;
 		case -279147844: /* GXTEntry: "Blackwater Ledger No. 72" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_11");
+			return 1499898596;
 		case -413074747: /* GXTEntry: "Blackwater Ledger No. 73" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_12");
+			return 1822214480;
 		case -760557223: /* GXTEntry: "Blackwater Ledger No. 74" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_13");
+			return 2134142591;
 		case -924992065: /* GXTEntry: "Blackwater Ledger No. 75" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_14");
+			return -1862299111;
 		case 1767753378: /* GXTEntry: "New Hanover Gazette No. 27" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_01");
+			return 389460201;
 		case -1556675047: /* GXTEntry: "New Hanover Gazette No. 28" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_02");
+			return 1371776514;
 		case -2012820803: /* GXTEntry: "New Hanover Gazette No. 29" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_03");
+			return 1001486814;
 		case -849973848: /* GXTEntry: "New Hanover Gazette No. 30" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_04");
+			return 1882514148;
 		case 1012860904: /* GXTEntry: "New Hanover Gazette No. 31" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_05");
+			return 1103889939;
 		case -1680391208: /* GXTEntry: "New Hanover Gazette No. 32" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_06");
+			return -1802851441;
 		case -1253105631: /* GXTEntry: "New Hanover Gazette No. 33" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_07");
+			return 1719193452;
 		case -915721704: /* GXTEntry: "New Hanover Gazette No. 34" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_08");
+			return -1151534797;
 		case 202891657: /* GXTEntry: "New Hanover Gazette No. 35" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_09");
+			return -1929044860;
 		case -1261034125: /* GXTEntry: "New Hanover Gazette No. 36" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_10");
+			return 924313143;
 		case 1787203230: /* GXTEntry: "New Hanover Gazette No. 37" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_11");
+			return 626082474;
 		case 1737771952: /* GXTEntry: "New Hanover Gazette No. 38" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_12");
+			return -653022672;
 		case -1254096446: /* GXTEntry: "New Hanover Gazette No. 39" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_13");
+			return -942045252;
 		case 61577350: /* GXTEntry: "New Hanover Gazette No. 40" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_14");
+			return -38767767;
 		case 1566650197: /* GXTEntry: "Saint Denis Times No. 43" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_01");
+			return -194659462;
 		case -572653278: /* GXTEntry: "Saint Denis Times No. 44" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_02");
+			return -549220042;
 		case -532692958: /* GXTEntry: "Saint Denis Times No. 45" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_03");
+			return 293303717;
 		case -1594812622: /* GXTEntry: "Saint Denis Times No. 46" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_04");
+			return -1890586292;
 		case -358162791: /* GXTEntry: "Saint Denis Times No. 47" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_05");
+			return -2122099277;
 		case 368626453: /* GXTEntry: "Saint Denis Times No. 48" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_06");
+			return -1681356223;
 		case 543847666: /* GXTEntry: "Saint Denis Times No. 49" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_07");
+			return -830115910;
 		case 888242611: /* GXTEntry: "Saint Denis Times No. 50" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_08");
+			return 1211786018;
 		case 1712504077: /* GXTEntry: "Saint Denis Times No. 51" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_09");
+			return 1124096174;
 		case -634222073: /* GXTEntry: "Saint Denis Times No. 52" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_10");
+			return -911614461;
 		case 662019373: /* GXTEntry: "Saint Denis Times No. 53" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_11");
+			return -662209602;
 		case 1032348365: /* GXTEntry: "Saint Denis Times No. 54" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_12");
+			return 1799528770;
 		case -1449342224: /* GXTEntry: "Saint Denis Times No. 55" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_13");
+			return 1560872143;
 		case 1786928078: /* GXTEntry: "Saint Denis Times No. 56" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_14");
+			return -1764788133;
 	}
 	return -1;
 }
@@ -15146,7 +15146,7 @@ void func_442(struct<4> Param0, int iParam4)
 			func_1106(PLAYER::PLAYER_ID(), 0);
 			func_1108(func_1107(Var0));
 			func_1109(&Var0);
-			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("ABILITIES"), 1731040532);
+			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("ABILITIES"), joaat("FROMTOAST"));
 			break;
 		case 863036578:
 			func_1110(PLAYER::PLAYER_ID(), &vVar34);
@@ -19149,7 +19149,7 @@ int func_581(var uParam0)
 	{
 		return 0;
 	}
-	if (!UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, -649639953))
+	if (!UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, joaat("HORSE_STATS_INFO_CARD")))
 	{
 		return 0;
 	}
@@ -19294,7 +19294,7 @@ int func_582(var uParam0)
 	{
 		return 0;
 	}
-	if (!UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, -1645363952))
+	if (!UISTATEMACHINE::_UIFLOWBLOCK_ENTER(*uParam0, joaat("INFO_CARD_ENTRY_POINT")))
 	{
 		return 0;
 	}
@@ -22111,11 +22111,11 @@ void func_698(bool bParam0)
 {
 	if (bParam0)
 	{
-		HUD::_0x4CC5F2FC1332577F(2077578434);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(2077578434);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 	}
 }
 
@@ -25035,8 +25035,8 @@ void func_793(int iParam0)
 		{
 			HUD::_0x8BC7C1F929D07BF3(1422092402);
 		}
-		HUD::_0x8BC7C1F929D07BF3(-1347445791);
-		HUD::_0x8BC7C1F929D07BF3(2077578434);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_SHOP"));
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 		Global_1915180->f_20139 = 0;
 	}
 	func_1453(iParam0);

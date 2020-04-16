@@ -2317,7 +2317,7 @@ int func_51(var uParam0)
 	{
 		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("FAST_TRAVEL_MENU"), &Var3))
 		{
-			if (Var3.f_2 == -997855324)
+			if (Var3.f_2 == joaat("FAST_TRAVEL_UI_EVENT_EXIT"))
 			{
 				iVar0 = 0;
 			}

@@ -6978,8 +6978,8 @@ void func_39(var uParam0, var uParam1)
 	STREAMING::_0xF01D21DF39554115(1);
 	HUD::_0x8BC7C1F929D07BF3(439038017);
 	CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
-	HUD::_0x8BC7C1F929D07BF3(481761311);
-	HUD::_0x8BC7C1F929D07BF3(-1679307491);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_LOBBY"));
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	func_131(0, func_130());
 	func_132(func_130());
 	func_133(&(uParam1->f_87.f_3412));
@@ -6996,7 +6996,7 @@ void func_39(var uParam0, var uParam1)
 			NETWORK::NETWORK_SET_IN_MP_CUTSCENE(false, true, 32, true);
 		}
 	}
-	if (uParam1->f_87.f_2 == -1794869146)
+	if (uParam1->f_87.f_2 == joaat("ALERT_SCREEN"))
 	{
 		UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("LOBBIES_MENU"));
 	}
@@ -7120,11 +7120,11 @@ void func_45(var uParam0, bool bParam1)
 	}
 	if (bParam1)
 	{
-		HUD::_0x4CC5F2FC1332577F(474191950);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(474191950);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 	}
 	NETWORK::_0xC505036A35AFD01B(bParam1);
 }
@@ -8905,10 +8905,10 @@ void func_134(var uParam0, var uParam1, bool bParam2)
 {
 	switch (uParam1->f_87.f_2)
 	{
-		case 1549204131:
+		case joaat("LOBBY_MAIN"):
 			func_280();
 			break;
-		case 723208654:
+		case joaat("LOBBY_PLAYERS_TEAMS"):
 			func_281(&(uParam1->f_87.f_140));
 			DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam1->f_87.f_55.f_1.f_24, uParam1->f_87.f_6);
 			if (func_128(&(uParam1->f_87), 1024))
@@ -8920,14 +8920,14 @@ void func_134(var uParam0, var uParam1, bool bParam2)
 		case 409305524: /* GXTEntry: "Player Options" */
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam1->f_87.f_1930.f_5, "");
 			break;
-		case 1268583550:
+		case joaat("STARTING_INVENTORY"):
 			func_282(uParam1, 0, 0);
 			break;
-		case -198141192:
+		case joaat("LOBBY_WEAPON_LOADOUT_TYPE"):
 			DATABINDING::_DATABINDING_CLEAR_BINDING_ARRAY(uParam1->f_87.f_2210.f_13);
 			func_284(&(uParam1->f_87.f_2210), func_283(uParam1));
 			break;
-		case -761066372: /* GXTEntry: "Invite Players" */
+		case joaat("INVITE_PLAYERS"):
 			func_285(&(uParam1->f_87));
 			func_281(&(uParam1->f_87.f_140));
 			break;
@@ -8937,7 +8937,7 @@ void func_134(var uParam0, var uParam1, bool bParam2)
 				func_286(uParam0, &(uParam1->f_87), 0, 1);
 			}
 			break;
-		case 1596028677:
+		case joaat("PURCHASES"):
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam1->f_87.f_30.f_10, false);
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam1->f_87.f_30.f_11, false);
 			func_287(&(uParam1->f_87.f_2663));
@@ -8946,7 +8946,7 @@ void func_134(var uParam0, var uParam1, bool bParam2)
 			func_288(&(uParam1->f_87));
 			DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam1->f_87.f_55.f_1.f_24, uParam1->f_87.f_6);
 			break;
-		case -1136409476:
+		case joaat("GAME_DETAILS"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam1->f_87.f_30.f_9, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_DETAILS_TOOLTIP"));
 			uParam1->f_87.f_2003.f_2 = -1;
 			break;
@@ -8998,9 +8998,9 @@ void func_139()
 
 void func_140()
 {
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(2084771291))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("MAIN_LOBBY_HOST")))
 	{
-		UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+		UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 	}
 }
 
@@ -11208,11 +11208,11 @@ void func_253(var uParam0, bool bParam1)
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam0->f_87.f_55.f_30.f_21, false);
 		switch (uParam0->f_87.f_2)
 		{
-			case -1794869146:
+			case joaat("ALERT_SCREEN"):
 				UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("LOBBIES_MENU"), joaat("NO"));
 				break;
-			case -761066372: /* GXTEntry: "Invite Players" */
-			case -587541440:
+			case joaat("INVITE_PLAYERS"):
+			case joaat("GAME_OPTIONS"):
 				UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("LOBBIES_MENU"), joaat("BACK"));
 				break;
 		}
@@ -11685,7 +11685,7 @@ void func_286(var uParam0, var uParam1, int iParam2, int iParam3)
 
 	if (uParam1->f_2 != joaat("STABLE"))
 	{
-		if (uParam1->f_2 != 723208654)
+		if (uParam1->f_2 != joaat("LOBBY_PLAYERS_TEAMS"))
 		{
 			uParam1->f_8 = -1;
 		}
@@ -13951,9 +13951,9 @@ void func_386(var uParam0, var uParam1, var uParam2)
 	iVar11 = PLAYER::PLAYER_ID();
 	iVar12 = NETWORK::PARTICIPANT_ID_TO_INT();
 	iVar21 = _NAMESPACE26::_0x901E0DC25080C8B9(iVar11);
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(2084771291))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("MAIN_LOBBY_HOST")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(2084771291, &Var0))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("MAIN_LOBBY_HOST"), &Var0))
 		{
 			switch (Var0)
 			{
@@ -14003,7 +14003,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 							func_282(uParam2, Var0.f_1, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var0.f_3, "item_index"));
 							break;
 					}
-					UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+					UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 					break;
 				case -1203660660:
 					switch (Var0.f_2)
@@ -14026,7 +14026,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								func_26((*uParam1)[iVar12 /*21*/], uParam2->f_87.f_6);
 							}
 							break;
-						case 155948449:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_CHOOSE_ALERT_SCREEN"):
 							if (_NAMESPACE26::_0x0F99F6436528A089(iVar21))
 							{
 								if (_NAMESPACE26::_0x4BE6C13A45CCA8EC(iVar21) == iVar11)
@@ -14054,10 +14054,10 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("LOBBIES_MENU"), 962885784);
 							}
 							break;
-						case -1539764988:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_EXIT_WITH_POSSE"):
 							func_538(func_537(iVar21), 0, -1, -1, -1, -1);
 							break;
-						case -1618757613:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_EXIT_LOBBY"):
 							if ((_NAMESPACE26::_0x0F99F6436528A089(iVar21) && _NAMESPACE26::_0x4BE6C13A45CCA8EC(iVar21) == iVar11) && _NAMESPACE26::_0x149A2751AB66AC02(iVar21) == 1)
 							{
 								func_538(func_537(iVar21), 0, -1, -1, -1, -1);
@@ -14099,7 +14099,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								func_24(uParam1, 8);
 							}
 							break;
-						case 1631495361:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_INVITE_PLAYER"):
 							func_543(uParam0, uParam2, &(uParam2->f_87.f_10), &(uParam2->f_87.f_17));
 							break;
 						case -1138111981:
@@ -14117,12 +14117,12 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								}
 							}
 							break;
-						case 388204243:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_INVITE_PLAYER_TO_CREW"):
 							break;
 						case -855746379:
 							func_547();
 							break;
-						case -417392533:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_ADD_FRIEND"):
 							NETWORK::NETWORK_HANDLE_FROM_PLAYER(uParam2->f_87.f_9, &uVar4);
 							if (!NETWORK::NETWORK_IS_FRIEND(&uVar4))
 							{
@@ -14132,7 +14132,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								}
 							}
 							break;
-						case -1164131233:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_REMOVE_FRIEND"):
 							NETWORK::NETWORK_HANDLE_FROM_PLAYER(uParam2->f_87.f_9, &uVar4);
 							if (!func_548(&uVar4))
 							{
@@ -14156,15 +14156,15 @@ void func_386(var uParam0, var uParam1, var uParam2)
 							}
 							func_553(&(uParam2->f_87.f_2210), func_283(uParam2));
 							break;
-						case -202642534:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_MESSAGE_PLAYER"):
 							break;
 						case -534988100:
 							NETWORK::NETWORK_SHOW_PROFILE_UI(&(uParam2->f_10.f_1));
 							break;
-						case 1455165691:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_VIEW_PROFILE"):
 							NETWORK::NETWORK_SHOW_PROFILE_UI(&(uParam2->f_87.f_10));
 							break;
-						case 1200002659:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_MUTE_PLAYER"):
 							if (_NAMESPACE79::_0x0DED260A1958A82E(uParam2->f_87.f_9))
 							{
 								_NAMESPACE79::_0x49623BCFC3A3D829(uParam2->f_87.f_9, 0);
@@ -14251,17 +14251,17 @@ void func_386(var uParam0, var uParam1, var uParam2)
 													{
 														func_569(uParam2);
 													}
-													UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+													UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 													Jump @2328; //curOff = 2157
-													UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+													UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 													Jump @2328; //curOff = 2169
 													switch (Var0.f_2)
 													{
-														case -109527816:
+														case joaat("NET_UGC_LOBBY_UI_EVENT_UI_LOADED"):
 															func_446(&(uParam2->f_87), 1);
 															break;
 													}
-													UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+													UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 													Jump @2328; //curOff = 2209
 													switch (Var0.f_2)
 													{
@@ -14277,9 +14277,9 @@ void func_386(var uParam0, var uParam1, var uParam2)
 															func_573(&(uParam2->f_87));
 															break;
 													}
-													UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+													UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 													Jump @2328; //curOff = 2313
-													UIEVENTS::_EVENT_MANAGER_POP_EVENT(2084771291);
+													UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("MAIN_LOBBY_HOST"));
 												}
 											}
 										}
@@ -14756,7 +14756,7 @@ void func_396(var uParam0, var uParam1, var uParam2)
 	func_609();
 	MISC::_0xA565FAC215CBC77D();
 	CAM::DO_SCREEN_FADE_IN(1000);
-	HUD::_0x4CC5F2FC1332577F(481761311);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_LOBBY"));
 	HUD::_0x4CC5F2FC1332577F(439038017);
 	AUDIO::_0x9B1FC259187C97C0("lobby");
 	GRAPHICS::_0x9B8D5D4CB8AF58B3(joaat("RESPAWNPULSEMP01"));
@@ -20018,7 +20018,7 @@ void func_599(struct<4> Param0, int iParam4)
 			func_811(PLAYER::PLAYER_ID(), 0);
 			func_813(func_812(Var0));
 			func_814(&Var0);
-			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("ABILITIES"), 1731040532);
+			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("ABILITIES"), joaat("FROMTOAST"));
 			break;
 		case 863036578:
 			func_815(PLAYER::PLAYER_ID(), &vVar34);
@@ -20712,7 +20712,7 @@ void func_620(var uParam0, var uParam1, var uParam2)
 	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("LOBBIES_MENU"));
 	if (uParam2->f_87.f_2 != iVar1)
 	{
-		if (uParam2->f_87.f_2 == 409305524 && iVar1 == 723208654)
+		if (uParam2->f_87.f_2 == 409305524 && iVar1 == joaat("LOBBY_PLAYERS_TEAMS"))
 		{
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_9, MISC::_CREATE_VAR_STRING(10, "MP_LOBBY_TEAMS_TOOLTIP", uParam2->f_87.f_3342[uParam2->f_87.f_6 /*8*/]));
 		}
@@ -20792,30 +20792,30 @@ void func_620(var uParam0, var uParam1, var uParam2)
 	{
 		switch (iVar1)
 		{
-			case 1549204131:
+			case joaat("LOBBY_MAIN"):
 				func_861(uParam0, uParam2, uParam1);
 				break;
-			case 723208654:
+			case joaat("LOBBY_PLAYERS_TEAMS"):
 				func_572(uParam0, uParam1, uParam2, 0, 1);
 				func_862(uParam1, uParam2);
 				break;
 			case 409305524: /* GXTEntry: "Player Options" */
 				func_863(uParam0, uParam2, uParam1);
 				break;
-			case -1136409476:
+			case joaat("GAME_DETAILS"):
 				func_864(uParam2);
 				break;
-			case -587541440:
+			case joaat("GAME_OPTIONS"):
 				func_865(uParam0, uParam2);
 				break;
 			case 1120962917:
 				func_866();
 				func_867();
 				break;
-			case -761066372: /* GXTEntry: "Invite Players" */
+			case joaat("INVITE_PLAYERS"):
 				func_868(&(uParam2->f_87));
 				break;
-			case 1596028677:
+			case joaat("PURCHASES"):
 				func_869(&(uParam2->f_87));
 				break;
 			case joaat("OUTFITS"):
@@ -20824,7 +20824,7 @@ void func_620(var uParam0, var uParam1, var uParam2)
 			case joaat("STABLE"):
 				func_862(uParam1, uParam2);
 				break;
-			case 1268583550:
+			case joaat("STARTING_INVENTORY"):
 				break;
 		}
 	}
@@ -20901,7 +20901,7 @@ void func_623(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	}
 	if (uParam0->f_87.f_5257 != iVar0)
 	{
-		if (!func_128(&(uParam0->f_87), 128) && UIAPPS::_0x96FD694FE5BE55DC(joaat("LOBBIES_MENU")) == 1549204131)
+		if (!func_128(&(uParam0->f_87), 128) && UIAPPS::_0x96FD694FE5BE55DC(joaat("LOBBIES_MENU")) == joaat("LOBBY_MAIN"))
 		{
 			uParam0->f_87.f_5257 = iVar0;
 			if (bParam2)
@@ -26533,14 +26533,14 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 	uParam2->f_87.f_2 = iParam3;
 	switch (uParam2->f_87.f_2)
 	{
-		case -1942962658:
+		case joaat("LOBBY_LOADED"):
 			func_421(uParam2, 500);
 			if (func_536(uParam2))
 			{
 				func_67("MP_CO_OP_LOBBIES_LOW_START", 3, 0);
 			}
 			break;
-		case 1717789502:
+		case joaat("LOBBY_INTRO"):
 			func_421(uParam2, 500);
 			if (!func_15(&(uParam2->f_10), 512))
 			{
@@ -26551,7 +26551,7 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 				CAM::DO_SCREEN_FADE_IN(0);
 			}
 			break;
-		case 1549204131:
+		case joaat("LOBBY_MAIN"):
 			func_1118(uParam2);
 			func_1119(uParam2);
 			func_1121(func_1120(func_732()));
@@ -26568,7 +26568,7 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 				}
 			}
 			break;
-		case 723208654:
+		case joaat("LOBBY_PLAYERS_TEAMS"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_PLAYERS"));
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, "");
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam2->f_87.f_1930.f_4, false);
@@ -26583,23 +26583,23 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, &(uParam2->f_87.f_17));
 			func_1122(uParam0, uParam2);
 			break;
-		case -1136409476:
+		case joaat("GAME_DETAILS"):
 			func_1123(uParam2);
 			break;
-		case -587541440:
+		case joaat("GAME_OPTIONS"):
 			func_1118(uParam2);
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_GAME_OPTIONS_SUBHEADER"));
 			break;
-		case 1570227737:
+		case joaat("LOBBY_WEAPON_LOADOUT"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_WEAPON_LOADOUT_HEADER"));
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_WEAPON_LOADOUT_SUBHEADER"));
 			func_714(&(uParam2->f_87.f_2210));
 			break;
-		case -198141192:
+		case joaat("LOBBY_WEAPON_LOADOUT_TYPE"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, func_1124(func_283(uParam2)));
 			func_1125(&(uParam2->f_87.f_2210), func_283(uParam2));
 			break;
-		case 1596028677:
+		case joaat("PURCHASES"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_PURCHASES_HEADER"));
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, "");
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam2->f_87.f_30.f_10, true);
@@ -26622,12 +26622,12 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, "");
 			func_1128(1);
 			break;
-		case -761066372: /* GXTEntry: "Invite Players" */
+		case joaat("INVITE_PLAYERS"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_INVITE_HEADER"));
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, "");
 			func_770(&(uParam2->f_87));
 			break;
-		case 911640860:
+		case joaat("PLAYER_STATS"):
 			break;
 		case joaat("STABLE"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_STABLE_HEADER"));
@@ -26635,7 +26635,7 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 			func_539(&(uParam2->f_87));
 			func_541(&(uParam2->f_87), PLAYER::PLAYER_ID(), 0);
 			break;
-		case 1268583550:
+		case joaat("STARTING_INVENTORY"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_STARTING_INVENTORY_HEADER"));
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_STARTING_INVENTORY_SUBHEADER"));
 			break;
@@ -26900,11 +26900,11 @@ int func_860(var uParam0)
 
 	if (!func_128(&(uParam0->f_87), 131072))
 	{
-		if (UIAPPS::_CAN_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("LOBBIES_MENU"), -515341293))
+		if (UIAPPS::_CAN_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("LOBBIES_MENU"), joaat("DEFAULT_ENTRY")))
 		{
 			if (!UIAPPS::_IS_APP_RUNNING(joaat("LEADERBOARDS")))
 			{
-				iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("LOBBIES_MENU"), -515341293);
+				iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("LOBBIES_MENU"), joaat("DEFAULT_ENTRY"));
 				if (iVar0 != 0)
 				{
 				}
@@ -27011,7 +27011,7 @@ void func_862(var uParam0, var uParam1)
 			return;
 		}
 	}
-	if (uParam1->f_87.f_2 == 723208654 && uParam1->f_87.f_25 != 255)
+	if (uParam1->f_87.f_2 == joaat("LOBBY_PLAYERS_TEAMS") && uParam1->f_87.f_25 != 255)
 	{
 		iVar0 = func_776(((*uParam0)[uParam1->f_87.f_25 /*21*/])->f_8);
 		if (uParam1->f_87.f_3412.f_53 != iVar0)
@@ -30950,7 +30950,7 @@ void func_991(var uParam0)
 	Var18 = bVar36;
 	Var18.f_1 = 1;
 	Var18.f_5 = 953615807;
-	Var18.f_4 = 2084771291;
+	Var18.f_4 = joaat("MAIN_LOBBY_HOST");
 	StringConCat(&cVar37, "entry_", 64);
 	StringIntConCat(&cVar37, DATABINDING::_DATABINDING_GET_ARRAY_COUNT(uParam0->f_1), 64);
 	func_1243(&iVar0, *uParam0, cVar37, Var18);
@@ -31023,7 +31023,7 @@ void func_993(var uParam0, int iParam1, bool bParam2, bool bParam3)
 		Var1.f_5 = -1858235574;
 	}
 	Var1.f_6 = -1858235574;
-	Var1.f_4 = 2084771291;
+	Var1.f_4 = joaat("MAIN_LOBBY_HOST");
 	Var1 = func_567(&(uParam0->f_392), iVar0);
 	iVar18 = func_743(iVar0, -915411861, 1, 0, 1, 0);
 	StringCopy(&cVar19, func_1244(iVar0), 64);
@@ -40548,7 +40548,7 @@ void func_1367(var uParam0, var uParam1)
 	StringCopy(&(Var0.f_16), MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_TEAM"), 64);
 	Var0.f_33 = -1527315056;
 	Var0.f_5 = -1;
-	Var0.f_4 = 2084771291;
+	Var0.f_4 = joaat("MAIN_LOBBY_HOST");
 	Var0.f_7 = 1830184421; /* GXTEntry: "View Players" */
 	func_1570(&(uParam1->f_87.f_55.f_1), uParam1->f_87.f_55, func_1370("teams"), Var0);
 	func_1141(uParam0, uParam1);
@@ -40585,7 +40585,7 @@ void func_1368(var uParam0)
 	StringCopy(&(Var0.f_16), MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_PREFERRED_POSITION"), 64);
 	Var0.f_33 = -405777397;
 	Var0.f_5 = -1;
-	Var0.f_4 = 2084771291;
+	Var0.f_4 = joaat("MAIN_LOBBY_HOST");
 	Var0.f_1 = 0;
 	Var0.f_30 = 0;
 	func_1570(&(uParam0->f_30), *uParam0, func_1370("roles"), Var0);
@@ -41615,7 +41615,7 @@ void func_1398(int iParam0, var uParam1, struct<4> Param2, char* sParam6, int iP
 	{
 		Var0.f_6 = iParam8;
 	}
-	Var0.f_4 = 2084771291;
+	Var0.f_4 = joaat("MAIN_LOBBY_HOST");
 	Var0.f_8 = 1;
 	Var0.f_9 = 1;
 	StringCopy(&cVar49, MISC::_CREATE_VAR_STRING(0, sParam6), 64);
@@ -41776,7 +41776,7 @@ void func_1405(int iParam0, bool bParam1)
 	}
 	if (bVar95)
 	{
-		iVar98 = func_1620(func_1619(&Var0), -1, 394524610, 1, 1, 0, 1, 16);
+		iVar98 = func_1620(func_1619(&Var0), -1, joaat("TO_POSSE_OPTIONS"), 1, 1, 0, 1, 16);
 		func_1621(iVar98);
 	}
 	if (bVar96)
@@ -45988,7 +45988,7 @@ void func_1591(char[4] cParam0, char* sParam1, int iParam2, var uParam3)
 	Var0.f_11 = -1;
 	Var0.f_12 = -1;
 	Var0.f_1 = 1;
-	Var0.f_4 = 2084771291;
+	Var0.f_4 = joaat("MAIN_LOBBY_HOST");
 	Var0.f_6 = -600701932;
 	Var0.f_5 = -600701932;
 	StringCopy(&(Var0.f_16), sParam1, 64);
@@ -47180,7 +47180,7 @@ void func_1657()
 	}
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Global_1896726->f_197.f_4))
 	{
-		DATABINDING::_DATABINDING_WRITE_DATA_INT(Global_1896726->f_197.f_4, -1712603330);
+		DATABINDING::_DATABINDING_WRITE_DATA_INT(Global_1896726->f_197.f_4, joaat("PLAYER_MENU_POSSE_VERSUS_INFIGHTING_SWAP_TEAM_EVENT"));
 	}
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Global_1896726->f_197.f_2))
 	{
@@ -51962,15 +51962,15 @@ int func_1845(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -910183757;
+			return joaat("MAP_CARD_POKER_BLACKWATER");
 		case 1:
-			return -1204301712;
+			return joaat("MAP_CARD_POKER_ST_DENIS");
 		case 2:
-			return 827722112;
+			return joaat("MAP_CARD_POKER_SWANSONS_STATION");
 		case 3:
-			return -529367264;
+			return joaat("MAP_CARD_POKER_TUMBLEWEED");
 		case 4:
-			return 1945361740;
+			return joaat("MAP_CARD_POKER_VALENTINE");
 		default:
 			break;
 	}

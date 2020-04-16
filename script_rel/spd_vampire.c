@@ -6459,7 +6459,7 @@ void func_241(var uParam0, int iParam1, bool bParam2, bool bParam3)
 			PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON_POS"), true);
 		}
 		func_379();
-		HUD::_0xC9CAEAEEC1256E54(724769646);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 		if (!PED::GET_PED_CONFIG_FLAG(Global_35, 174, true))
 		{
 			PED::SET_PED_CONFIG_FLAG(Global_35, 174, true);

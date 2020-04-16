@@ -859,7 +859,7 @@ void func_23()
 						}
 						func_69(4096);
 						func_8(0);
-						HUD::_0x8BC7C1F929D07BF3(-1679307491);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 						func_112(0, 0, 0, 1);
 						func_113();
 						func_114();
@@ -887,7 +887,7 @@ void func_23()
 						NETWORK::_0x236905C700FDB54D();
 						func_69(4096);
 						func_8(0);
-						HUD::_0x8BC7C1F929D07BF3(-1679307491);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 						func_112(0, 0, 0, 1);
 						func_113();
 						func_114();

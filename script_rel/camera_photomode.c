@@ -168,7 +168,7 @@ void __EntryFunction__()
 	fLocal_395 = 0.5f;
 	iLocal_397 = 4;
 	iLocal_398 = -1534086282;
-	iLocal_400 = -193491261;
+	iLocal_400 = joaat("DOMINOS_SET_1");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(515))
 	{
 		func_1(&Local_102, 0);
@@ -1015,7 +1015,7 @@ void func_1(var uParam0, int iParam1)
 		CAM::DESTROY_CAM(uParam0->f_32, false);
 	}
 	SCRIPTS::SET_NO_LOADING_SCREEN(false);
-	HUD::_0x8BC7C1F929D07BF3(959420967);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 	Global_1357507 = 0;
 	Global_1357508 = 0;
 	AUDIO::_0x531A78D6BF27014B("CAMERA_SOUNDSET");

@@ -10687,7 +10687,7 @@ int func_273()
 			}
 			break;
 		case 1:
-			HUD::_0xC9CAEAEEC1256E54(724769646);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 			if (ANIMSCENE::_0x477122B8D05E7968(Local_529.f_1, 1, 0))
 			{
 				if (func_446(Global_35, Local_529.f_1, "player", func_445(), &uLocal_863, 1.5f, 1, 1, 1))
@@ -10708,7 +10708,7 @@ int func_273()
 			}
 			break;
 		case 2:
-			HUD::_0xC9CAEAEEC1256E54(724769646);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 			if (ANIMSCENE::_0xCBFC7725DE6CE2E0(Local_529.f_1, 0))
 			{
 				if (func_437(Global_35, "cut_rope", 1067030938 /* Float: 1.2f */))
@@ -21347,11 +21347,11 @@ void func_654(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(121713391);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(121713391);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 

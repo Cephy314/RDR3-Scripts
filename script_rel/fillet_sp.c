@@ -1133,7 +1133,7 @@ void func_2(var uParam0)
 		}
 	}
 	func_33(1);
-	HUD::_0x4CC5F2FC1332577F(372886907);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME"));
 	if (func_34() == -1)
 	{
 		CLOCK::_SET_MILLISECONDS_PER_GAME_MINUTE(10000);
@@ -1218,7 +1218,7 @@ void func_8(var uParam0)
 	func_56(uParam0);
 	func_57(uParam0);
 	func_32(1);
-	HUD::_0x8BC7C1F929D07BF3(372886907);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 }
 
 void func_9(var uParam0)
@@ -1622,7 +1622,7 @@ void func_31(var uParam0, int iParam1, bool bParam2)
 		}
 	}
 	func_33(0);
-	HUD::_0x8BC7C1F929D07BF3(372886907);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 	ENTITY::FREEZE_ENTITY_POSITION(PLAYER::PLAYER_PED_ID(), false);
 	if (bParam2)
@@ -2980,7 +2980,7 @@ float func_109(int iParam0, vector3 vParam1, bool bParam4)
 
 void func_110(var uParam0)
 {
-	HUD::_0x4CC5F2FC1332577F(372886907);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME"));
 	func_195(&(uParam0->f_131));
 	uParam0->f_81.f_36 = "OJFiveFinger";
 }
@@ -5711,7 +5711,7 @@ void func_210(int iParam0)
 				func_405(func_404(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("DOMINOES"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 3:
-				func_405(func_404(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
+				func_405(func_404(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("FFF"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 2:
 				func_405(func_404(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("POKER"), -2, 0, 0, 0, 0, 1, 1);

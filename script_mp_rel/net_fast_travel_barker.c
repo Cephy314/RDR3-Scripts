@@ -1846,7 +1846,7 @@ void func_58(var uParam0, var uParam1)
 				case -1203660660:
 					switch (Var0.f_2)
 					{
-						case -997855324:
+						case joaat("FAST_TRAVEL_UI_EVENT_EXIT"):
 							func_56(uParam0, 2);
 							break;
 						case 42753526:

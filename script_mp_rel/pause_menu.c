@@ -407,29 +407,29 @@ void func_10()
 						case 766694521:
 							func_51(455956792);
 							break;
-						case -385109718:
+						case joaat("PAUSE_UI_RPG_DETAIL_GENERAL_SELECT_EVENT"):
 							func_52();
 							break;
-						case -609314343:
+						case joaat("PAUSE_UI_RPG_DETAIL_HEALTH_SELECT_EVENT"):
 							func_53();
 							break;
-						case 1371972537:
+						case joaat("PAUSE_UI_RPG_DETAIL_STAMINA_SELECT_EVENT"):
 							func_54();
 							break;
-						case -17440837:
+						case joaat("PAUSE_UI_RPG_DETAIL_DEADEYE_SELECT_EVENT"):
 							func_55();
 							break;
-						case -164517057:
+						case joaat("PAUSE_UI_RPG_DETAIL_STATS_SELECT_EVENT"):
 							func_56();
 							break;
-						case -1123713079:
+						case joaat("PAUSE_UI_RPG_DETAIL_HORSE_SELECT_EVENT"):
 							func_57();
 							break;
-						case -1332231262:
+						case joaat("RESUME_STORY"):
 							CAM::DO_SCREEN_FADE_OUT(0);
 							func_58();
 							break;
-						case -1856718599:
+						case joaat("CHANGE_MP_CHARACTER"):
 							break;
 					}
 					UIEVENTS::_EVENT_MANAGER_POP_EVENT(iVar4);
@@ -466,7 +466,7 @@ int func_12()
 	int iVar0;
 	int iVar4;
 
-	iVar4 = -37892458;
+	iVar4 = joaat("UI_EVENT_CHANNEL_EXIT_GAME");
 	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iVar4))
 	{
 		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iVar4, &iVar0))

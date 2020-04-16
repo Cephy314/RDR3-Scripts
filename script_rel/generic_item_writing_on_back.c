@@ -176,7 +176,7 @@ void func_5(var uParam0)
 	}
 	if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 	{
-		HUD::_0xC9CAEAEEC1256E54(382897689);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_TRANSLATE_OVERLAY"));
 	}
 	else if (uParam0->f_5.f_1)
 	{
@@ -207,7 +207,7 @@ void func_6(var uParam0)
 	}
 	if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 	{
-		HUD::_0xC9CAEAEEC1256E54(382897689);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_TRANSLATE_OVERLAY"));
 	}
 	else if (uParam0->f_5.f_1)
 	{

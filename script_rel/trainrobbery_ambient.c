@@ -2196,7 +2196,7 @@ void func_68(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4, va
 		{
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, func_171(), false);
 			func_14(uParam3, 134217728);
-			HUD::_0x8BC7C1F929D07BF3(724769646);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 		}
 	}
 }
@@ -6112,7 +6112,7 @@ void func_234(int iParam0, int iParam1, var uParam2, var uParam3, var uParam4, i
 
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, func_171(), false);
 	func_14(uParam4, 134217728);
-	HUD::_0x8BC7C1F929D07BF3(724769646);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 	PLAYER::_0x3EE1F7A8C32F24E1(PLAYER::PLAYER_ID(), &bVar2, false, false);
 	TASK::OPEN_SEQUENCE_TASK(&iVar3);
 	if (!func_328())
@@ -8069,7 +8069,7 @@ int func_277(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4, in
 	{
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, func_171(), false);
 		func_14(uParam3, 134217728);
-		HUD::_0x8BC7C1F929D07BF3(724769646);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 		func_329(iParam6, 0);
 		if (!func_125((*uParam1)[20 /*3*/]))
 		{
@@ -10507,7 +10507,7 @@ int func_369(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4, in
 					{
 						PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, func_171(), false);
 						func_14(uParam2, 134217728);
-						HUD::_0x8BC7C1F929D07BF3(724769646);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 						func_329(iParam10, 0);
 					}
 				}

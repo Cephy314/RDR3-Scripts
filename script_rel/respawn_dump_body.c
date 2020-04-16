@@ -142,7 +142,7 @@ void __EntryFunction__()
 		}
 		if ((iLocal_29 < 10 || bVar6) || bLocal_151)
 		{
-			HUD::_0xC9CAEAEEC1256E54(-58462683);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_RESPAWN"));
 		}
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_JOURNAL"), false);
 		if (iLocal_29 < 10 || bLocal_151)

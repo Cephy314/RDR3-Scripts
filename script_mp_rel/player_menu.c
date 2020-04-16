@@ -591,7 +591,7 @@ void func_25()
 									func_75(0);
 								}
 								break;
-							case -1712603330:
+							case joaat("PLAYER_MENU_POSSE_VERSUS_INFIGHTING_SWAP_TEAM_EVENT"):
 								if (!func_77(func_76()))
 								{
 									func_47(1);
@@ -849,10 +849,10 @@ void func_25()
 									case -55349945:
 										func_119();
 										break;
-									case -135401173:
+									case joaat("PLAYER_MENU_NAVIGATION_POSSE_OPTIONS_SCRIPT_EVENT"):
 										func_120();
 										break;
-									case 101104516:
+									case joaat("PLAYER_MENU_CHARACTER_CREATOR_LAUNCH"):
 										UIAPPS::_CLOSE_APP_BY_HASH_IMMEDIATE(joaat("PLAYER_MENU"));
 										func_121();
 										break;
@@ -952,7 +952,7 @@ void func_25()
 											func_133();
 											func_140(&Var15);
 											func_132(16);
-											func_141(394524610);
+											func_141(joaat("TO_POSSE_OPTIONS"));
 										}
 										break;
 									case -1103748417:
@@ -1133,7 +1133,7 @@ void func_25()
 														}
 														func_133();
 														Jump @7444; //curOff = 5135
-														func_141(394524610);
+														func_141(joaat("TO_POSSE_OPTIONS"));
 														Jump @7444; //curOff = 5148
 														func_168(func_35(3), 0);
 														func_133();
@@ -1917,15 +1917,15 @@ int func_39(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1909832090:
+		case joaat("PM_MP"):
 			return 0;
 		case 1120962917:
 			return 1;
-		case -1302559475:
+		case joaat("PM_LOG"):
 			return 2;
-		case 643368064:
+		case joaat("PM_LOG_MISSION_DETAILS"):
 			return 3;
-		case 1754472897:
+		case joaat("PM_DAILY_CHALLENGES"):
 			return 4;
 		case -1141649578:
 			return 22;
@@ -1949,13 +1949,13 @@ int func_39(int iParam0)
 			return 18;
 		case -1151685191:
 			return 11;
-		case 267128262:
+		case joaat("PM_INVITE_PLAYERS"):
 			return 21;
 		case joaat("PM_PLAYERS"):
 			return 5;
 		case -293089814:
 			return 50;
-		case 1191195930:
+		case joaat("PM_MINIGAME_DETAILS"):
 			return 51;
 		case -811408979:
 			return 48;
@@ -1967,9 +1967,9 @@ int func_39(int iParam0)
 			return 6;
 		case -1748449654:
 			return 7;
-		case 1984619020:
+		case joaat("PM_PLAYER_REPORT_OFFENSIVE"):
 			return 8;
-		case -80027036:
+		case joaat("PM_PLAYER_REPORT_CHEATING"):
 			return 9;
 		case joaat("PM_JOBS"):
 			return 10;
@@ -1989,7 +1989,7 @@ int func_39(int iParam0)
 			return 23;
 		case -1937951650:
 			return 24;
-		case 1278626257:
+		case joaat("PM_HORSES"):
 			return 25;
 		case -996050125:
 			return 26;
@@ -2003,7 +2003,7 @@ int func_39(int iParam0)
 			return 30;
 		case -1968023217:
 			return 31;
-		case -614347122:
+		case joaat("PM_VEHICLES"):
 			return 32;
 		case 1449064090:
 			return 33;
@@ -2350,7 +2350,7 @@ void func_49(struct<4> Param0, int iParam4)
 			func_82(PLAYER::PLAYER_ID(), 0);
 			func_366(func_365(Var0));
 			func_367(&Var0);
-			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("ABILITIES"), 1731040532);
+			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("ABILITIES"), joaat("FROMTOAST"));
 			break;
 		case 863036578:
 			func_368(PLAYER::PLAYER_ID(), &vVar34);
@@ -4664,7 +4664,7 @@ void func_112(int iParam0)
 	int iVar1;
 
 	iVar0 = func_513(iParam0);
-	iVar1 = -1593595016;
+	iVar1 = joaat("MENU_CAMP_TEXTURES");
 	if (DATABINDING::_0x81D7183E7A8ECA72(Global_1939231->f_1433.f_7711.f_240) != iVar0)
 	{
 		if (!TXD::_DOES_STREAMED_TXD_EXIST(iVar1))
@@ -4755,7 +4755,7 @@ void func_116()
 
 void func_117()
 {
-	func_516(-1209711415);
+	func_516(joaat("MAP_CARD_STORY_MISSION_ON_CALL"));
 }
 
 int func_118()
@@ -5712,7 +5712,7 @@ void func_168(bool bParam0, bool bParam1)
 		func_140(&Var1);
 		func_89(&Var1);
 		func_132(16);
-		iVar96 = 394524610;
+		iVar96 = joaat("TO_POSSE_OPTIONS");
 	}
 	else
 	{
@@ -8187,7 +8187,7 @@ void func_257()
 				func_140(&Var13);
 				func_89(&Var13);
 				func_132(16);
-				func_141(394524610);
+				func_141(joaat("TO_POSSE_OPTIONS"));
 			}
 			else
 			{
@@ -9370,7 +9370,7 @@ void func_290()
 			}
 			break;
 		case -1594107850:
-			HUD::_0xC9CAEAEEC1256E54(-1744263063);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_PROMPT_MONEY"));
 			break;
 	}
 	func_860(bVar0);
@@ -9736,7 +9736,7 @@ void func_301()
 		case -303450633:
 			func_132(13);
 			break;
-		case 394524610:
+		case joaat("TO_POSSE_OPTIONS"):
 			if (Global_1939231->f_1433 == 13)
 			{
 				func_139();
@@ -9762,7 +9762,7 @@ void func_303()
 			func_781(&(Global_1939231->f_1433.f_156.f_193), func_606(&((Global_1939231->f_1433.f_8769.f_5[Global_1939231->f_1433.f_8769 /*23*/])->f_3)), Global_1939231->f_1433.f_8769.f_4 > 1, (Global_1939231->f_1433.f_8769.f_5[Global_1939231->f_1433.f_8769 /*23*/])->f_19);
 			bVar0 = true;
 			break;
-		case 394524610:
+		case joaat("TO_POSSE_OPTIONS"):
 			func_781(&(Global_1939231->f_1433.f_156.f_205.f_4), func_606(&((Global_1939231->f_1433.f_8769.f_5[Global_1939231->f_1433.f_8769 /*23*/])->f_3)), Global_1939231->f_1433.f_8769.f_4 > 1, (Global_1939231->f_1433.f_8769.f_5[Global_1939231->f_1433.f_8769 /*23*/])->f_19);
 			bVar0 = true;
 			break;
@@ -10420,7 +10420,7 @@ void func_338(int iParam0, bool bParam1)
 	}
 	if (bVar95)
 	{
-		iVar98 = func_968(func_780(&Var0), -1, 394524610, 1, 1, 0, 1, 16);
+		iVar98 = func_968(func_780(&Var0), -1, joaat("TO_POSSE_OPTIONS"), 1, 1, 0, 1, 16);
 		func_969(iVar98);
 	}
 	if (bVar96)
@@ -25293,7 +25293,7 @@ void func_984()
 	}
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Global_1896726->f_197.f_4))
 	{
-		DATABINDING::_DATABINDING_WRITE_DATA_INT(Global_1896726->f_197.f_4, -1712603330);
+		DATABINDING::_DATABINDING_WRITE_DATA_INT(Global_1896726->f_197.f_4, joaat("PLAYER_MENU_POSSE_VERSUS_INFIGHTING_SWAP_TEAM_EVENT"));
 	}
 	if (DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Global_1896726->f_197.f_2))
 	{
@@ -36307,7 +36307,7 @@ void func_1468(int iParam0)
 	int iVar1;
 
 	iVar0 = func_1845(iParam0);
-	iVar1 = -1593595016;
+	iVar1 = joaat("MENU_CAMP_TEXTURES");
 	if (DATABINDING::_0x81D7183E7A8ECA72(Global_1939231->f_1433.f_2628.f_45) != iVar0)
 	{
 		if (!TXD::_DOES_STREAMED_TXD_EXIST(iVar1))
@@ -38370,15 +38370,15 @@ int func_1590(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -910183757;
+			return joaat("MAP_CARD_POKER_BLACKWATER");
 		case 1:
-			return -1204301712;
+			return joaat("MAP_CARD_POKER_ST_DENIS");
 		case 2:
-			return 827722112;
+			return joaat("MAP_CARD_POKER_SWANSONS_STATION");
 		case 3:
-			return -529367264;
+			return joaat("MAP_CARD_POKER_TUMBLEWEED");
 		case 4:
-			return 1945361740;
+			return joaat("MAP_CARD_POKER_VALENTINE");
 		default:
 			break;
 	}

@@ -1071,7 +1071,7 @@ void func_30()
 
 	if (Global_43890)
 	{
-		HUD::_0xC9CAEAEEC1256E54(1023137905);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_GUARMA_AND_BROKE"));
 	}
 	Global_1935496->f_25 = 0;
 	if (Global_1935630->f_12)
@@ -1206,12 +1206,12 @@ void func_30()
 							func_222(&uVar5, bVar26, 1);
 							func_239(0);
 							break;
-						case -1472057397:
+						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
 							Global_1935496->f_12 = 1;
 							func_222(&uVar5, bVar26, 1);
 							func_239(0);
 							break;
-						case -1992626253:
+						case joaat("FISHING_WHEEL"):
 							Global_1935496->f_13 = 1;
 							func_222(&uVar5, bVar26, 1);
 							func_239(0);
@@ -1229,10 +1229,10 @@ void func_30()
 						case -414255251:
 							Global_1935496->f_11 = 0;
 							break;
-						case -1472057397:
+						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
 							Global_1935496->f_12 = 0;
 							break;
-						case -1992626253:
+						case joaat("FISHING_WHEEL"):
 							Global_1935496->f_13 = 0;
 							break;
 						default:
@@ -1242,15 +1242,15 @@ void func_30()
 				case -1203660660:
 					switch (vVar0.z)
 					{
-						case -445375936:
+						case joaat("FLOW_LAUNCHED"):
 							func_240();
 							func_222(&uVar5, bVar26, 1);
 							func_239(0);
 							break;
-						case -1472057397:
+						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
 							func_242(vVar0.z, 0);
 							break;
-						case 545934563:
+						case joaat("PUT_AWAY_FISHING_ROD"):
 							Global_1935496->f_25 = 1;
 							break;
 						default:
@@ -8977,7 +8977,7 @@ void func_247(var uParam0)
 	}
 	if (bVar2)
 	{
-		HUD::_0x4CC5F2FC1332577F(-972988753);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_INFO_CARD"));
 		uParam0->f_13 = 1;
 		AUDIO::PLAY_SOUND_FRONTEND("show_info", "Study_Sounds", true, 0);
 	}
@@ -9094,7 +9094,7 @@ void func_251(var uParam0)
 	uParam0->f_11 = 0;
 	uParam0->f_12 = 0;
 	uParam0->f_13 = 0;
-	HUD::_0x8BC7C1F929D07BF3(-972988753);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_INFO_CARD"));
 }
 
 void func_252(var uParam0)
@@ -17301,7 +17301,7 @@ int func_506(var uParam0)
 	{
 		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("FAST_TRAVEL_MENU"), &Var2))
 		{
-			if (Var2.f_2 == -997855324)
+			if (Var2.f_2 == joaat("FAST_TRAVEL_UI_EVENT_EXIT"))
 			{
 				iVar0 = 0;
 			}
@@ -19435,9 +19435,9 @@ void func_583(int iParam0, bool bParam1, int iParam2, int iParam3, char* sParam4
 
 void func_584()
 {
-	func_1746(0, 18, -1135800718, 1898574875);
-	func_1746(2, 20, -402975377, 1506296948);
-	func_1746(1, 19, -2074936164, 308865989);
+	func_1746(0, 18, joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH"), joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH_CORE"));
+	func_1746(2, 20, joaat("HUD_CTX_ITEM_CONSUMPTION_DEADEYE"), joaat("HUD_CTX_ITEM_CONSUMPTION_DEADEYE_CORE"));
+	func_1746(1, 19, joaat("HUD_CTX_ITEM_CONSUMPTION_STAMINA"), joaat("HUD_CTX_ITEM_CONSUMPTION_STAMINA_CORE"));
 }
 
 void func_585()
@@ -22276,7 +22276,7 @@ int func_661(int iParam0)
 {
 	if (func_321((Global_1392915->f_121[iParam0 /*20*/])->f_3))
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1744263063);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PROMPT_MONEY"));
 		func_327(&((Global_1392915->f_121[iParam0 /*20*/])->f_3), 1, 0);
 		(Global_1392915->f_121[iParam0 /*20*/])->f_3 = 0;
 		return 1;
@@ -24647,7 +24647,7 @@ int func_740(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 				{
 					if (func_709() && (func_1977(38) || func_1973(38)))
 					{
-						func_1981(38, COLLECTION::_0x13AAECDA43318BFE(-2076669067, iVar6), COLLECTION::_0xD52D20B0C76BB26D(-2076669067, iVar6), iVar7, 12, 0, iVar6);
+						func_1981(38, COLLECTION::_0x13AAECDA43318BFE(joaat("CIGARETTE_CARDS"), iVar6), COLLECTION::_0xD52D20B0C76BB26D(joaat("CIGARETTE_CARDS"), iVar6), iVar7, 12, 0, iVar6);
 					}
 					else
 					{
@@ -27764,7 +27764,7 @@ int func_830(int iParam0)
 		case joaat("DOCUMENT_NEWSPAPER_ED_01"):
 			if (func_2125(func_1317(3)) == 0)
 			{
-				return joaat("NEWSPAPERS/NEWSPAPER_BL_01");
+				return 1323994892;
 			}
 			else
 			{
@@ -27772,35 +27772,35 @@ int func_830(int iParam0)
 			}
 			break;
 		case -246260565: /* GXTEntry: "Blackwater Ledger No. 63" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_02");
+			return 1573399751;
 		case 340173459: /* GXTEntry: "Blackwater Ledger No. 64" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_03");
+			return -2106624491;
 		case 109840158: /* GXTEntry: "Blackwater Ledger No. 65" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_04");
+			return -1793811613;
 		case 903996873: /* GXTEntry: "Blackwater Ledger No. 66" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_05");
+			return -1510851298;
 		case 706727493: /* GXTEntry: "Blackwater Ledger No. 67" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_06");
+			return -1467596218;
 		case -1454682982: /* GXTEntry: "Blackwater Ledger No. 68" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_07");
+			return -1184308213;
 		case 1538503020: /* GXTEntry: "Blackwater Ledger No. 69" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_08");
+			return -870708883;
 		case 1318524723: /* GXTEntry: "Blackwater Ledger No. 70" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_09");
+			return -251964625;
 		case 18296369: /* GXTEntry: "Blackwater Ledger No. 71" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_10");
+			return 1207697423;
 		case -279147844: /* GXTEntry: "Blackwater Ledger No. 72" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_11");
+			return 1499898596;
 		case -413074747: /* GXTEntry: "Blackwater Ledger No. 73" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_12");
+			return 1822214480;
 		case -760557223: /* GXTEntry: "Blackwater Ledger No. 74" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_13");
+			return 2134142591;
 		case -924992065: /* GXTEntry: "Blackwater Ledger No. 75" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_14");
+			return -1862299111;
 		case 1767753378: /* GXTEntry: "New Hanover Gazette No. 27" */
 			if (func_2125(func_1317(3)) == 0)
 			{
-				return joaat("NEWSPAPERS/NEWSPAPER_NH_01");
+				return 389460201;
 			}
 			else
 			{
@@ -27808,35 +27808,35 @@ int func_830(int iParam0)
 			}
 			break;
 		case -1556675047: /* GXTEntry: "New Hanover Gazette No. 28" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_02");
+			return 1371776514;
 		case -2012820803: /* GXTEntry: "New Hanover Gazette No. 29" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_03");
+			return 1001486814;
 		case -849973848: /* GXTEntry: "New Hanover Gazette No. 30" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_04");
+			return 1882514148;
 		case 1012860904: /* GXTEntry: "New Hanover Gazette No. 31" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_05");
+			return 1103889939;
 		case -1680391208: /* GXTEntry: "New Hanover Gazette No. 32" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_06");
+			return -1802851441;
 		case -1253105631: /* GXTEntry: "New Hanover Gazette No. 33" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_07");
+			return 1719193452;
 		case -915721704: /* GXTEntry: "New Hanover Gazette No. 34" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_08");
+			return -1151534797;
 		case 202891657: /* GXTEntry: "New Hanover Gazette No. 35" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_09");
+			return -1929044860;
 		case -1261034125: /* GXTEntry: "New Hanover Gazette No. 36" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_10");
+			return 924313143;
 		case 1787203230: /* GXTEntry: "New Hanover Gazette No. 37" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_11");
+			return 626082474;
 		case 1737771952: /* GXTEntry: "New Hanover Gazette No. 38" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_12");
+			return -653022672;
 		case -1254096446: /* GXTEntry: "New Hanover Gazette No. 39" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_13");
+			return -942045252;
 		case 61577350: /* GXTEntry: "New Hanover Gazette No. 40" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_14");
+			return -38767767;
 		case 1566650197: /* GXTEntry: "Saint Denis Times No. 43" */
 			if (func_2125(func_1317(3)) == 0)
 			{
-				return joaat("NEWSPAPERS/NEWSPAPER_SD_01");
+				return -194659462;
 			}
 			else
 			{
@@ -27844,31 +27844,31 @@ int func_830(int iParam0)
 			}
 			break;
 		case -572653278: /* GXTEntry: "Saint Denis Times No. 44" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_02");
+			return -549220042;
 		case -532692958: /* GXTEntry: "Saint Denis Times No. 45" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_03");
+			return 293303717;
 		case -1594812622: /* GXTEntry: "Saint Denis Times No. 46" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_04");
+			return -1890586292;
 		case -358162791: /* GXTEntry: "Saint Denis Times No. 47" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_05");
+			return -2122099277;
 		case 368626453: /* GXTEntry: "Saint Denis Times No. 48" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_06");
+			return -1681356223;
 		case 543847666: /* GXTEntry: "Saint Denis Times No. 49" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_07");
+			return -830115910;
 		case 888242611: /* GXTEntry: "Saint Denis Times No. 50" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_08");
+			return 1211786018;
 		case 1712504077: /* GXTEntry: "Saint Denis Times No. 51" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_09");
+			return 1124096174;
 		case -634222073: /* GXTEntry: "Saint Denis Times No. 52" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_10");
+			return -911614461;
 		case 662019373: /* GXTEntry: "Saint Denis Times No. 53" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_11");
+			return -662209602;
 		case 1032348365: /* GXTEntry: "Saint Denis Times No. 54" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_12");
+			return 1799528770;
 		case -1449342224: /* GXTEntry: "Saint Denis Times No. 55" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_13");
+			return 1560872143;
 		case 1786928078: /* GXTEntry: "Saint Denis Times No. 56" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_14");
+			return -1764788133;
 	}
 	return -1;
 }
@@ -31737,7 +31737,7 @@ int func_964(var uParam0)
 	{
 		return 0;
 	}
-	if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_BROWSING"), -649639953) != 0)
+	if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_BROWSING"), joaat("HORSE_STATS_INFO_CARD")) != 0)
 	{
 		return 0;
 	}
@@ -31870,7 +31870,7 @@ int func_965(var uParam0)
 	{
 		return 0;
 	}
-	if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_BROWSING"), -1645363952) != 0)
+	if (UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_BROWSING"), joaat("INFO_CARD_ENTRY_POINT")) != 0)
 	{
 		return 0;
 	}
@@ -52576,11 +52576,11 @@ void func_1709(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(121713391);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(121713391);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 
@@ -57340,7 +57340,7 @@ void func_1860(int iParam0)
 	if (iVar1 > 0)
 	{
 		func_3074((Global_1392915->f_121[iParam0 /*20*/])->f_3, "MG_START", sVar2, iVar1, 1);
-		HUD::_0x4CC5F2FC1332577F(-1744263063);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PROMPT_MONEY"));
 	}
 	else
 	{
@@ -57479,7 +57479,7 @@ int func_1864(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4)
 		WEAPON::_0xFCCC886EDE3C63EC(PLAYER::PLAYER_PED_ID(), 2, false);
 		if (uParam1->f_12 != 5 && uParam1->f_12 != 6)
 		{
-			HUD::_0x4CC5F2FC1332577F(372886907);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME"));
 		}
 		*uParam2 = SCRIPTS::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(iVar5, uParam1, 34, 6500);
 		func_3081();
@@ -59638,7 +59638,7 @@ int func_1969(bool bParam0)
 	iVar1 = 0;
 	while (iVar1 < func_3195())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (bParam0 == func_3196(iVar0))
 		{
 			return iVar0;
@@ -59662,7 +59662,7 @@ int func_1971(int iParam0)
 	iVar1 = 0;
 	while (iVar1 < func_3195())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (iParam0 == func_1970(iVar0))
 		{
 			if (func_739(func_3196(iVar0), 1, 0))
@@ -59693,12 +59693,12 @@ int func_1973(int iParam0)
 
 int func_1974(int iParam0)
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, iParam0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 bool func_1975(int iParam0)
 {
-	return COLLECTION::_0x93F2E7B5DB85657B(-2076669067, iParam0);
+	return COLLECTION::_0x93F2E7B5DB85657B(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 int func_1976(int iParam0)
@@ -59779,7 +59779,7 @@ void func_1979(int iParam0, bool bParam1, bool bParam2, int iParam3, char* sPara
 			sVar4 = "COL_CC_TITLE";
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
 			iVar9 = 12;
-			iVar14 = -2076669067;
+			iVar14 = joaat("CIGARETTE_CARDS");
 			break;
 		case 39:
 			if (func_709() && (func_1977(39) || func_1973(39)))
@@ -59954,7 +59954,7 @@ void func_1981(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 		case 38:
 			sVar0 = "COL_CC_TITLE";
 			sVar3 = "COL_CC_CARD_FOUND";
-			iVar7 = -2076669067;
+			iVar7 = joaat("CIGARETTE_CARDS");
 			if (func_709() && (func_1977(38) || func_1973(38)))
 			{
 				sVar1 = "COL_CC_INTRO";
@@ -60040,7 +60040,7 @@ void func_1981(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 		sVar1 = "COL_ALL_LOG_UPDATED";
 	}
 	sVar2 = "COL_CTX_PLAYER_LOG";
-	if (iVar7 == -2076669067)
+	if (iVar7 == joaat("CIGARETTE_CARDS"))
 	{
 		if (func_709() && (func_1977(38) || func_1973(38)))
 		{
@@ -61628,7 +61628,7 @@ int func_2019()
 	int iVar4;
 	int iVar5;
 
-	iVar0 = COLLECTION::_0x5461C821D00FE15A(-2076669067, 0);
+	iVar0 = COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), 0);
 	if (iVar0 == func_3195())
 	{
 		return func_2020();
@@ -61638,7 +61638,7 @@ int func_2019()
 	iVar2 = 0;
 	while (iVar2 < func_3195())
 	{
-		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, -2076669067, 0);
+		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, joaat("CIGARETTE_CARDS"), 0);
 		if (!func_3242(iVar1))
 		{
 			if (iVar5 == iVar3)
@@ -61657,7 +61657,7 @@ bool func_2020()
 	int iVar0;
 
 	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, func_3195());
-	return func_3196(COLLECTION::_0x126CBEBBA46693CF(iVar0, -2076669067, 0));
+	return func_3196(COLLECTION::_0x126CBEBBA46693CF(iVar0, joaat("CIGARETTE_CARDS"), 0));
 }
 
 void func_2021(bool bParam0)
@@ -96629,7 +96629,7 @@ int func_3194(bool bParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 
 int func_3195()
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), 0);
 }
 
 bool func_3196(int iParam0)
@@ -96690,7 +96690,7 @@ char* func_3199(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPar
 {
 	switch (iParam1)
 	{
-		case -2076669067:
+		case joaat("CIGARETTE_CARDS"):
 			if (iParam2 == 7)
 			{
 				sParam3 = "COL_TX_CHECK_BACK";
@@ -96852,7 +96852,7 @@ char* func_3199(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPar
 
 int func_3200(int iParam0, int iParam1, int iParam2)
 {
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		if (iParam1 == joaat("COL_CC_INTRO"))
 		{
@@ -96918,7 +96918,7 @@ int func_3203(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, 
 	iVar0 = 0;
 	while (iVar0 < iParam6)
 	{
-		if (iParam2 == -2076669067)
+		if (iParam2 == joaat("CIGARETTE_CARDS"))
 		{
 			bVar2 = func_3910(iVar0);
 			if (bParam4 == bVar2)
@@ -97075,7 +97075,7 @@ int func_3204(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		bVar0 = false;
 	}
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(3, iParam1, MISC::GET_HASH_KEY("COL_CC_ITEMS_DELIVERED"), "COL_CC_ITEMS_DELIVERED", bVar0, true, false);
 	}
@@ -112262,11 +112262,11 @@ int func_3675(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}
@@ -119533,18 +119533,18 @@ void func_3995()
 	fVar0 = (fVar0 + (3f * func_4299(1f, BUILTIN::TO_FLOAT(func_533(joaat("DISCOVERABLE_FOUND"))))));
 	iVar1 = func_4300();
 	fVar0 = (fVar0 + (0.1111111f * func_4299(9f, BUILTIN::TO_FLOAT(iVar1))));
-	fVar2 = (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, 1665658745)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 1665658745)));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, -263938772)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, -263938772))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, 228647253)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 228647253))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, 1695604435)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 1695604435))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, -379038926)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, -379038926))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, 1597499323)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 1597499323))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, -278663717)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, -278663717))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, 586249988)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 586249988))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, -419800938)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, -419800938))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, -1362069171)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, -1362069171))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, -740350755)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, -740350755))));
-	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(-2076669067, 1511070393)) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 1511070393))));
+	fVar2 = (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_ACTRESSES"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_ACTRESSES"))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_AMERICANS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_AMERICANS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_ANIMALS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_ANIMALS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_ARTISTS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_ARTISTS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_GIRLS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_GIRLS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_GUNSLINGERS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_GUNSLINGERS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_HORSES"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_HORSES")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_INVENTIONS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_INVENTIONS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_LANDMARKS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_LANDMARKS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_PLANTS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_PLANTS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_SPORTS"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_SPORTS")))));
+	fVar2 = func_3979(fVar2, (BUILTIN::TO_FLOAT(COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_VEHICLES"))) / BUILTIN::TO_FLOAT(COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), joaat("CARD_SET_VEHICLES")))));
 	fVar0 = (fVar0 + func_4299(1f, fVar2));
 	fVar0 = (fVar0 + (0.05f * func_4299(BUILTIN::TO_FLOAT(20), BUILTIN::TO_FLOAT(func_4301()))));
 	if (func_2844(40))

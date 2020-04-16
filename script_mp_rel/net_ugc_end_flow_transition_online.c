@@ -12348,11 +12348,11 @@ void func_340(var uParam0, int iParam1)
 	PLAYER::SET_EVERYONE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
 	if (func_415(*uParam0, 2) || func_415(*uParam0, 4))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_415(*uParam0, 16))
 	{
@@ -14860,11 +14860,11 @@ void func_435(var uParam0, int iParam1, int iParam2, var uParam3, var uParam4, v
 	}
 	if (!func_329(*uParam0, 4) && !func_329(*uParam0, 2))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_329(*uParam0, 2048))
 	{
@@ -15319,25 +15319,25 @@ int func_456(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 598430796;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_CUTSCENE");
 		case 1:
-			return 690901814;
+			return joaat("HUD_CTX_MISSION_CONTROLLER");
 		case 3:
 			return 2083323686;
 		case 2:
-			return 474191950;
+			return joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE");
 		case 4:
-			return 128623374;
+			return joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION");
 		case 6:
-			return -993263478;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_INTRO");
 		case 7:
-			return 1344742130;
+			return joaat("HUD_CTX_IN_MP_GAME_MODE");
 		case 8:
 			return 537169871;
 		case 9:
 			return -1763610107;
 		case 10:
-			return 68203906;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_OUTRO");
 		case 11:
 			return 253418738;
 		case 12:

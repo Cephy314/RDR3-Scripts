@@ -92,7 +92,7 @@ void __EntryFunction__()
 		CAM::_0x8910C24B7E0046EC();
 		if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 		{
-			HUD::_0xC9CAEAEEC1256E54(382897689);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_TRANSLATE_OVERLAY"));
 		}
 		if (Var0.f_142)
 		{
@@ -1230,7 +1230,7 @@ int func_35(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, 
 				{
 					if (func_108() && (func_110(38) || func_104(38)))
 					{
-						func_114(38, COLLECTION::_0x13AAECDA43318BFE(-2076669067, iVar6), COLLECTION::_0xD52D20B0C76BB26D(-2076669067, iVar6), iVar7, 12, 0, iVar6);
+						func_114(38, COLLECTION::_0x13AAECDA43318BFE(joaat("CIGARETTE_CARDS"), iVar6), COLLECTION::_0xD52D20B0C76BB26D(joaat("CIGARETTE_CARDS"), iVar6), iVar7, 12, 0, iVar6);
 					}
 					else
 					{
@@ -2720,7 +2720,7 @@ int func_71(int iParam0)
 		case joaat("DOCUMENT_NEWSPAPER_ED_01"):
 			if (func_200(func_199(3)) == 0)
 			{
-				return joaat("NEWSPAPERS/NEWSPAPER_BL_01");
+				return 1323994892;
 			}
 			else
 			{
@@ -2728,35 +2728,35 @@ int func_71(int iParam0)
 			}
 			break;
 		case -246260565: /* GXTEntry: "Blackwater Ledger No. 63" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_02");
+			return 1573399751;
 		case 340173459: /* GXTEntry: "Blackwater Ledger No. 64" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_03");
+			return -2106624491;
 		case 109840158: /* GXTEntry: "Blackwater Ledger No. 65" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_04");
+			return -1793811613;
 		case 903996873: /* GXTEntry: "Blackwater Ledger No. 66" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_05");
+			return -1510851298;
 		case 706727493: /* GXTEntry: "Blackwater Ledger No. 67" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_06");
+			return -1467596218;
 		case -1454682982: /* GXTEntry: "Blackwater Ledger No. 68" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_07");
+			return -1184308213;
 		case 1538503020: /* GXTEntry: "Blackwater Ledger No. 69" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_08");
+			return -870708883;
 		case 1318524723: /* GXTEntry: "Blackwater Ledger No. 70" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_09");
+			return -251964625;
 		case 18296369: /* GXTEntry: "Blackwater Ledger No. 71" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_10");
+			return 1207697423;
 		case -279147844: /* GXTEntry: "Blackwater Ledger No. 72" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_11");
+			return 1499898596;
 		case -413074747: /* GXTEntry: "Blackwater Ledger No. 73" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_12");
+			return 1822214480;
 		case -760557223: /* GXTEntry: "Blackwater Ledger No. 74" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_13");
+			return 2134142591;
 		case -924992065: /* GXTEntry: "Blackwater Ledger No. 75" */
-			return joaat("NEWSPAPERS/NEWSPAPER_BL_14");
+			return -1862299111;
 		case 1767753378: /* GXTEntry: "New Hanover Gazette No. 27" */
 			if (func_200(func_199(3)) == 0)
 			{
-				return joaat("NEWSPAPERS/NEWSPAPER_NH_01");
+				return 389460201;
 			}
 			else
 			{
@@ -2764,35 +2764,35 @@ int func_71(int iParam0)
 			}
 			break;
 		case -1556675047: /* GXTEntry: "New Hanover Gazette No. 28" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_02");
+			return 1371776514;
 		case -2012820803: /* GXTEntry: "New Hanover Gazette No. 29" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_03");
+			return 1001486814;
 		case -849973848: /* GXTEntry: "New Hanover Gazette No. 30" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_04");
+			return 1882514148;
 		case 1012860904: /* GXTEntry: "New Hanover Gazette No. 31" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_05");
+			return 1103889939;
 		case -1680391208: /* GXTEntry: "New Hanover Gazette No. 32" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_06");
+			return -1802851441;
 		case -1253105631: /* GXTEntry: "New Hanover Gazette No. 33" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_07");
+			return 1719193452;
 		case -915721704: /* GXTEntry: "New Hanover Gazette No. 34" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_08");
+			return -1151534797;
 		case 202891657: /* GXTEntry: "New Hanover Gazette No. 35" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_09");
+			return -1929044860;
 		case -1261034125: /* GXTEntry: "New Hanover Gazette No. 36" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_10");
+			return 924313143;
 		case 1787203230: /* GXTEntry: "New Hanover Gazette No. 37" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_11");
+			return 626082474;
 		case 1737771952: /* GXTEntry: "New Hanover Gazette No. 38" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_12");
+			return -653022672;
 		case -1254096446: /* GXTEntry: "New Hanover Gazette No. 39" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_13");
+			return -942045252;
 		case 61577350: /* GXTEntry: "New Hanover Gazette No. 40" */
-			return joaat("NEWSPAPERS/NEWSPAPER_NH_14");
+			return -38767767;
 		case 1566650197: /* GXTEntry: "Saint Denis Times No. 43" */
 			if (func_200(func_199(3)) == 0)
 			{
-				return joaat("NEWSPAPERS/NEWSPAPER_SD_01");
+				return -194659462;
 			}
 			else
 			{
@@ -2800,31 +2800,31 @@ int func_71(int iParam0)
 			}
 			break;
 		case -572653278: /* GXTEntry: "Saint Denis Times No. 44" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_02");
+			return -549220042;
 		case -532692958: /* GXTEntry: "Saint Denis Times No. 45" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_03");
+			return 293303717;
 		case -1594812622: /* GXTEntry: "Saint Denis Times No. 46" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_04");
+			return -1890586292;
 		case -358162791: /* GXTEntry: "Saint Denis Times No. 47" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_05");
+			return -2122099277;
 		case 368626453: /* GXTEntry: "Saint Denis Times No. 48" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_06");
+			return -1681356223;
 		case 543847666: /* GXTEntry: "Saint Denis Times No. 49" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_07");
+			return -830115910;
 		case 888242611: /* GXTEntry: "Saint Denis Times No. 50" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_08");
+			return 1211786018;
 		case 1712504077: /* GXTEntry: "Saint Denis Times No. 51" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_09");
+			return 1124096174;
 		case -634222073: /* GXTEntry: "Saint Denis Times No. 52" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_10");
+			return -911614461;
 		case 662019373: /* GXTEntry: "Saint Denis Times No. 53" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_11");
+			return -662209602;
 		case 1032348365: /* GXTEntry: "Saint Denis Times No. 54" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_12");
+			return 1799528770;
 		case -1449342224: /* GXTEntry: "Saint Denis Times No. 55" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_13");
+			return 1560872143;
 		case 1786928078: /* GXTEntry: "Saint Denis Times No. 56" */
-			return joaat("NEWSPAPERS/NEWSPAPER_SD_14");
+			return -1764788133;
 	}
 	return -1;
 }
@@ -3988,7 +3988,7 @@ int func_100(int iParam0)
 	iVar1 = 0;
 	while (iVar1 < func_242())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (iParam0 == func_243(iVar0))
 		{
 			return iVar0;
@@ -4012,7 +4012,7 @@ int func_102(int iParam0)
 	iVar1 = 0;
 	while (iVar1 < func_242())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (iParam0 == func_101(iVar0))
 		{
 			if (func_61(func_243(iVar0), 1, 0))
@@ -4056,12 +4056,12 @@ void func_105(int iParam0, bool bParam1)
 
 int func_106(int iParam0)
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, iParam0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 int func_107(int iParam0)
 {
-	return COLLECTION::_0x93F2E7B5DB85657B(-2076669067, iParam0);
+	return COLLECTION::_0x93F2E7B5DB85657B(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 int func_108()
@@ -4152,7 +4152,7 @@ void func_112(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4,
 			sVar4 = "COL_CC_TITLE";
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
 			iVar9 = 12;
-			iVar14 = -2076669067;
+			iVar14 = joaat("CIGARETTE_CARDS");
 			break;
 		case 39:
 			if (func_108() && (func_110(39) || func_104(39)))
@@ -4327,7 +4327,7 @@ void func_114(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 38:
 			sVar0 = "COL_CC_TITLE";
 			sVar3 = "COL_CC_CARD_FOUND";
-			iVar7 = -2076669067;
+			iVar7 = joaat("CIGARETTE_CARDS");
 			if (func_108() && (func_110(38) || func_104(38)))
 			{
 				sVar1 = "COL_CC_INTRO";
@@ -4413,7 +4413,7 @@ void func_114(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		sVar1 = "COL_ALL_LOG_UPDATED";
 	}
 	sVar2 = "COL_CTX_PLAYER_LOG";
-	if (iVar7 == -2076669067)
+	if (iVar7 == joaat("CIGARETTE_CARDS"))
 	{
 		if (func_108() && (func_110(38) || func_104(38)))
 		{
@@ -6198,7 +6198,7 @@ int func_168()
 	int iVar4;
 	int iVar5;
 
-	iVar0 = COLLECTION::_0x5461C821D00FE15A(-2076669067, 0);
+	iVar0 = COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), 0);
 	if (iVar0 == func_242())
 	{
 		return func_169();
@@ -6208,7 +6208,7 @@ int func_168()
 	iVar2 = 0;
 	while (iVar2 < func_242())
 	{
-		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, -2076669067, 0);
+		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, joaat("CIGARETTE_CARDS"), 0);
 		if (!func_335(iVar1))
 		{
 			if (iVar5 == iVar3)
@@ -6227,7 +6227,7 @@ int func_169()
 	int iVar0;
 
 	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, func_242());
-	return func_243(COLLECTION::_0x126CBEBBA46693CF(iVar0, -2076669067, 0));
+	return func_243(COLLECTION::_0x126CBEBBA46693CF(iVar0, joaat("CIGARETTE_CARDS"), 0));
 }
 
 void func_170(int iParam0)
@@ -8350,7 +8350,7 @@ int func_241(bool bParam0)
 
 int func_242()
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), 0);
 }
 
 int func_243(int iParam0)
@@ -8531,7 +8531,7 @@ char* func_252(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 {
 	switch (iParam1)
 	{
-		case -2076669067:
+		case joaat("CIGARETTE_CARDS"):
 			if (iParam2 == 7)
 			{
 				sParam3 = "COL_TX_CHECK_BACK";
@@ -8693,7 +8693,7 @@ char* func_252(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 
 int func_253(int iParam0, int iParam1, int iParam2)
 {
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		if (iParam1 == joaat("COL_CC_INTRO"))
 		{
@@ -8759,7 +8759,7 @@ int func_256(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	iVar0 = 0;
 	while (iVar0 < iParam6)
 	{
-		if (iParam2 == -2076669067)
+		if (iParam2 == joaat("CIGARETTE_CARDS"))
 		{
 			iVar2 = func_419(iVar0);
 			if (iParam4 == iVar2)
@@ -8916,7 +8916,7 @@ int func_257(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		bVar0 = false;
 	}
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(3, iParam1, MISC::GET_HASH_KEY("COL_CC_ITEMS_DELIVERED"), "COL_CC_ITEMS_DELIVERED", bVar0, true, false);
 	}
@@ -20700,11 +20700,11 @@ int func_656(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}

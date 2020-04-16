@@ -139,7 +139,7 @@ void __EntryFunction__()
 	}
 	if (ScriptParam_0.f_12 != 5)
 	{
-		HUD::_0x4CC5F2FC1332577F(372886907);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME"));
 	}
 	while (true)
 	{
@@ -227,7 +227,7 @@ void func_2(var uParam0, int iParam1, bool bParam2)
 		}
 	}
 	func_12(0);
-	HUD::_0x8BC7C1F929D07BF3(372886907);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 	AUDIO::STOP_AUDIO_SCENE(func_25(uParam0->f_14));
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 	PLAYER::SET_EVERYONE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);

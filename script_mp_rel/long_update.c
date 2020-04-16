@@ -6135,7 +6135,7 @@ void func_176()
 	int iVar0;
 
 	iVar0 = func_414();
-	Global_1878314->f_84 = func_426("MISSION_COMPLETE", &(((*Global_1835011)[iVar0 /*72*/])->f_42), joaat("HUD_TOASTS"), func_425(Global_1878314->f_1.f_74), joaat("PLAYER_MENU"), "MISSION_COMPLETE_DETAILS", 1808281178, 10000, "Mission_Complete_Sounds", "Mission_Complete_Enter", 0, 0, 1, 0);
+	Global_1878314->f_84 = func_426("MISSION_COMPLETE", &(((*Global_1835011)[iVar0 /*72*/])->f_42), joaat("HUD_TOASTS"), func_425(Global_1878314->f_1.f_74), joaat("PLAYER_MENU"), "MISSION_COMPLETE_DETAILS", joaat("MP_MISSIONS"), 10000, "Mission_Complete_Sounds", "Mission_Complete_Enter", 0, 0, 1, 0);
 	Global_1878314->f_85 = MISC::GET_GAME_TIMER();
 }
 

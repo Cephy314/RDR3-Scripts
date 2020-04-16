@@ -7474,7 +7474,7 @@ void func_32(var uParam0)
 			PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_SHOP_CHANGE_CURRENCY"), true);
 			if (*uParam0)
 			{
-				HUD::_0xC9CAEAEEC1256E54(-1744263063);
+				HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_PROMPT_MONEY"));
 				if (!func_129(uParam0->f_2901.f_882))
 				{
 					func_157(uParam0);
@@ -7545,7 +7545,7 @@ void func_32(var uParam0)
 				func_128(&(uParam0->f_2901.f_882), 1, 1);
 				func_128(&(uParam0->f_2901.f_883), 1, 1);
 				func_117(uParam0, "CHAR_PHOTO");
-				UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("CHARACTER_CREATOR"), 811893989);
+				UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("CHARACTER_CREATOR"), joaat("PHOTO_OVERLAY"));
 			}
 			else if (func_163(uParam0->f_2901.f_883, 1))
 			{
@@ -7728,7 +7728,7 @@ void func_34(var uParam0)
 		}
 		return;
 	}
-	HUD::_0x8BC7C1F929D07BF3(-424376908);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_QUICK_TIME_EVENT"));
 	if (*uParam0)
 	{
 		if (!func_168(uParam0))
@@ -18495,11 +18495,11 @@ int func_389(int iParam0)
 			return 0;
 		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_APPEARANCE_MAIN"):
 			return 1;
-		case -378973917:
+		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_BODY"):
 			return 2;
 		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_HEAD"):
 			return 3;
-		case -377913574:
+		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_FACE"):
 			return 4;
 		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_EYES_AND_BROWS"):
 			return 5;
@@ -18513,7 +18513,7 @@ int func_389(int iParam0)
 			return 9;
 		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_CHEEKS"):
 			return 10;
-		case 732357670:
+		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_TEETH"):
 			return 11;
 		case joaat("MPCC_UI_FOCUS_ITEM_PAGE_LIFESTYLE"):
 			return 12;
@@ -18537,7 +18537,7 @@ int func_390(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1457599051:
+		case joaat("MPCC_UI_FOCUS_ITEM_ENTER_NAME"):
 			return 0;
 		case joaat("MPCC_UI_FOCUS_ITEM_AGE"):
 			return 1;
@@ -23415,7 +23415,7 @@ void func_587(var uParam0, int iParam1)
 
 	switch (iParam1->f_2)
 	{
-		case -1457599051:
+		case joaat("MPCC_UI_FOCUS_ITEM_ENTER_NAME"):
 			sVar0 = func_748(uParam0, 13);
 			func_728(uParam0, sVar0);
 			break;
@@ -23437,10 +23437,10 @@ void func_587(var uParam0, int iParam1)
 				func_741(uParam0);
 			}
 			break;
-		case 1421861703:
+		case joaat("MPCC_UI_SELECT_EVENT_CONFIRM_EDIT"):
 			func_296(uParam0, 32);
 			break;
-		case -582236704:
+		case joaat("MPCC_UI_SELECT_EVENT_CANCEL_EDIT"):
 			if (*uParam0)
 			{
 				func_296(uParam0, 2048);

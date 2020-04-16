@@ -293,7 +293,7 @@ void __EntryFunction__()
 	Var0.f_2248.f_108 = 4;
 	Var0.f_2248.f_114 = 2;
 	Var0.f_2248.f_115 = -1;
-	Var0.f_2371.f_5 = -252438768;
+	Var0.f_2371.f_5 = joaat("HUD_CTX_IN_CAMP_WARDROBE");
 	Var0.f_2421.f_56 = -1;
 	Var0.f_2532 = 8;
 	Var0.f_2532.f_9.f_20 = 10;
@@ -1554,9 +1554,9 @@ void func_7(var uParam0)
 	{
 		_NAMESPACE71::_0x2F901291EF177B02(Global_1915180->f_21955, 0);
 	}
-	HUD::_0x8BC7C1F929D07BF3(1815407589);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_CATALOGUE_SHOP_MENU"));
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), true);
-	HUD::_0x8BC7C1F929D07BF3(559258637);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SHOP_OBJECTIVE"));
 	if (*uParam0 == 7)
 	{
 		func_100(0);
@@ -4991,11 +4991,11 @@ void func_88(bool bParam0)
 {
 	if (bParam0)
 	{
-		HUD::_0x4CC5F2FC1332577F(2077578434);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(2077578434);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 	}
 }
 
@@ -5269,7 +5269,7 @@ int func_101(var uParam0)
 				else
 				{
 					ANIMSCENE::SET_ANIM_SCENE_ENTITY(uParam0->f_167.f_1748, "CATALOG", uParam0->f_167.f_1769, 0);
-					HUD::_0x4CC5F2FC1332577F(1815407589);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_CATALOGUE_SHOP_MENU"));
 					Global_1915180->f_20142 = 1;
 					if (uParam0->f_20 == 2)
 					{
@@ -11942,7 +11942,7 @@ int func_348(var uParam0, var uParam1)
 	{
 		func_830(uParam0, -712836614);
 	}
-	else if (uParam1->f_12 == -1548684311)
+	else if (uParam1->f_12 == joaat("HORSE_STAT_INFO_BOX"))
 	{
 		func_781(uParam0, 2, -861791432 /* GXTEntry: "Sell" */, 1, 1, 1);
 		func_781(uParam0, 3, 1346060065 /* GXTEntry: "Stable" */, 1, 1, 0);
@@ -13786,16 +13786,16 @@ int func_417(var uParam0)
 	{
 		if (func_2() == 0)
 		{
-			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, -1008290747);
+			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, joaat("DEFAULT_MP_CATALOG"));
 		}
 		else
 		{
-			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, -132805333);
+			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, joaat("DEFAULT_CATALOG"));
 		}
 	}
 	else
 	{
-		UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, -238370630);
+		UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, joaat("HANDHELD_CATALOG"));
 	}
 	if (!UISTATEMACHINE::_UISTATEMACHINE_EXISTS(-102170019))
 	{
@@ -14600,7 +14600,7 @@ void func_434()
 {
 	func_321("shop_scenes");
 	MAP::DISPLAY_RADAR(true);
-	HUD::_0x8BC7C1F929D07BF3(1815407589);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_CATALOGUE_SHOP_MENU"));
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), true);
 }
 
@@ -14660,7 +14660,7 @@ int func_436(var uParam0)
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(ENTITY::GET_ENTITY_MODEL(Local_31.f_5));
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("HUNTERCART01"));
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("WAGONARMOURED01X"));
-		HUD::_0x8BC7C1F929D07BF3(559258637);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SHOP_OBJECTIVE"));
 		_NAMESPACE79::_0x4791899615D70FA2(PLAYER::PLAYER_ID(), 64, 0);
 		if (func_838() >= 4)
 		{
@@ -16774,7 +16774,7 @@ void func_509(var uParam0, var uParam1)
 			if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 			{
 				func_175(uParam0, 0, 0);
-				HUD::_0xC9CAEAEEC1256E54(382897689);
+				HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_TRANSLATE_OVERLAY"));
 			}
 			if (func_569(uParam0))
 			{
@@ -24660,7 +24660,7 @@ int func_719(var uParam0)
 		func_1258(0);
 	}
 	iVar24 = func_1206(uParam0);
-	if ((((iVar24 == 94016929 || iVar24 == 178644271) || iVar24 == 1860655620) || iVar24 == -996064024) || iVar24 == -1548684311)
+	if ((((iVar24 == 94016929 || iVar24 == 178644271) || iVar24 == 1860655620) || iVar24 == -996064024) || iVar24 == joaat("HORSE_STAT_INFO_BOX"))
 	{
 		iVar25 = func_1207(uParam0);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar25))
@@ -26473,7 +26473,7 @@ int func_776(var uParam0)
 	{
 		return 1;
 	}
-	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_MENU"), -1102306668);
+	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_MENU"), joaat("GENERIC_SHOP"));
 	if (iVar0 == 0)
 	{
 		uParam0->f_2094.f_47 = 1;
@@ -30431,7 +30431,7 @@ void func_932(var uParam0)
 	switch (func_838())
 	{
 		case 0:
-			HUD::_0x4CC5F2FC1332577F(559258637);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_SHOP_OBJECTIVE"));
 			func_337(1);
 			break;
 		case 1:
@@ -32496,9 +32496,9 @@ int func_990(var uParam0)
 	bVar0 = func_528(uParam0);
 	if (func_171(bVar0))
 	{
-		return 53972894;
+		return joaat("CATALOG_WEAPON_INSPECTION");
 	}
-	return -702860656;
+	return joaat("CATALOG_ITEM_INSPECTION");
 }
 
 int func_991(var uParam0, char* sParam1)
@@ -40609,7 +40609,7 @@ void func_1214(var uParam0)
 	}
 	if (!UIAPPS::_IS_APP_RUNNING(iVar0))
 	{
-		iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(iVar0, -1102037190);
+		iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(iVar0, joaat("REWARDS_VIP"));
 		if (iVar1 == 0)
 		{
 			uParam0->f_1829 = 0;
@@ -40725,7 +40725,7 @@ int func_1215(var uParam0, int iParam1, bool bParam2)
 			return func_1763(uParam0, bParam2);
 		case -2144266389:
 			return func_1764(uParam0, bParam2);
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_1765(uParam0, bParam2);
 		case 1965673387:
 			return func_1766(uParam0, bParam2);
@@ -40969,7 +40969,7 @@ int func_1231(var uParam0)
 	var uVar36;
 	bool bVar37;
 
-	if (((!func_1217(512) && func_1783() != -729996127) && func_1206(uParam0) != 1965673387) && func_1206(uParam0) != -1548684311)
+	if (((!func_1217(512) && func_1783() != -729996127) && func_1206(uParam0) != 1965673387) && func_1206(uParam0) != joaat("HORSE_STAT_INFO_BOX"))
 	{
 		if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(func_1784()))
 		{
@@ -41170,7 +41170,7 @@ int func_1232(var uParam0)
 	{
 		return 0;
 	}
-	if (func_1206(uParam0) != -1548684311 && func_1206(uParam0) != 1965673387)
+	if (func_1206(uParam0) != joaat("HORSE_STAT_INFO_BOX") && func_1206(uParam0) != 1965673387)
 	{
 		if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(func_1250()))
 		{
@@ -42007,7 +42007,7 @@ int func_1254(var uParam0, int iParam1)
 		case -440651963:
 			*iParam1 = 5;
 			return 1;
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 		case 1965673387:
 			return 0;
 	}
@@ -43176,7 +43176,7 @@ void func_1290(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 					func_870(&(((*uParam0)[iVar0 /*17*/])->f_6), 1, 1);
 					if (MISC::IS_BIT_SET(uParam0[iVar0 /*17*/], 1))
 					{
-						HUD::_0x8BC7C1F929D07BF3(-1744263063);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PROMPT_MONEY"));
 					}
 					if (bParam2)
 					{
@@ -56726,7 +56726,7 @@ int func_1794(var uParam0, int iParam1, var uParam2)
 			return func_2302(uParam0, uParam2);
 		case -2144266389:
 			return 1;
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_2303(uParam0, uParam2);
 		case 1965673387:
 			return func_2304(uParam0, uParam2);
@@ -57229,7 +57229,7 @@ int func_1806(var uParam0, int iParam1, var uParam2)
 			return func_2333(uParam0, uParam2);
 		case -2144266389:
 			return func_2334(uParam0);
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_2335(uParam0);
 		case 23814986:
 			return func_2336(uParam0);
@@ -90091,7 +90091,7 @@ void func_2850(int iParam0, int* iParam1, float fParam2, int iParam3, int iParam
 					{
 						func_2204(iParam1->f_6, sVar0, iParam1->f_14, 1);
 					}
-					HUD::_0x4CC5F2FC1332577F(-1744263063);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PROMPT_MONEY"));
 				}
 				if (MISC::IS_BIT_SET(*iParam1, 10))
 				{
@@ -96041,7 +96041,7 @@ int func_3060(var uParam0, var uParam1, int iParam2, int iParam3)
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar3, "isEndIconVisible", false);
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar3, "isRowActive", false);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_66, -1, -519723266, iVar3);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_66, -1, joaat("STAT_ATTRIBUTE_ITEM"), iVar3);
 	return 1;
 }
 
@@ -96230,7 +96230,7 @@ int func_3064(var uParam0, var uParam1, int iParam2, int iParam3)
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "isEndIconVisible", false);
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "isRowActive", false);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_65, -1, -519723266, iVar4);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_65, -1, joaat("STAT_ATTRIBUTE_ITEM"), iVar4);
 	return 1;
 }
 

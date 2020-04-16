@@ -444,7 +444,7 @@ void func_9(var uParam0, int iParam1)
 	}
 	if (uParam0->f_58)
 	{
-		HUD::_0xC9CAEAEEC1256E54(-469828803);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_CRAFTING_SEQUENCE"));
 	}
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_CONTEXT_Y"), false);
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON"), false);
@@ -740,7 +740,7 @@ void func_9(var uParam0, int iParam1)
 			}
 			else
 			{
-				iVar3 = -813979060;
+				iVar3 = joaat("CRAFTING_MENU");
 				while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iVar3))
 				{
 					if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iVar3, &iVar4))
@@ -3669,7 +3669,7 @@ void func_110(var uParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 				{
 					func_114(uParam0, -1, bParam3, ((*Global_1911914)[bParam2 /*9*/])->f_1, 1, 0, 1);
 				}
-				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, uParam0->f_56, -2047994727, ((*Global_1911914)[bParam2 /*9*/])->f_1);
+				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, uParam0->f_56, joaat("CRAFTING_LIST_ITEM"), ((*Global_1911914)[bParam2 /*9*/])->f_1);
 			}
 			else
 			{
@@ -4469,7 +4469,7 @@ bool func_133(bool bParam0, bool bParam1, var uParam2, bool bParam3, bool bParam
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam2->f_46[iVar33]), &cVar43, sVar42);
 					StringCopy(&cVar43, "Enabled", 16);
 					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam2->f_46[iVar33]), &cVar43, func_184(bVar40, 1, 0));
-					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_51, -1, 309940639, &(uParam2->f_46[iVar33]));
+					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_51, -1, joaat("CRAFTING_RECIPE_LINE"), &(uParam2->f_46[iVar33]));
 				}
 				iVar33++;
 			}
@@ -5564,7 +5564,7 @@ int func_165(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 				{
 					if (func_257() && (func_259(38) || func_253(38)))
 					{
-						func_263(38, COLLECTION::_0x13AAECDA43318BFE(-2076669067, iVar6), COLLECTION::_0xD52D20B0C76BB26D(-2076669067, iVar6), iVar7, 12, 0, iVar6);
+						func_263(38, COLLECTION::_0x13AAECDA43318BFE(joaat("CIGARETTE_CARDS"), iVar6), COLLECTION::_0xD52D20B0C76BB26D(joaat("CIGARETTE_CARDS"), iVar6), iVar7, 12, 0, iVar6);
 					}
 					else
 					{
@@ -6913,7 +6913,7 @@ void func_183(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar5, "overpower", bVar42);
 	if (bParam2)
 	{
-		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, -1, -2047994727, iVar5);
+		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, -1, joaat("CRAFTING_LIST_ITEM"), iVar5);
 	}
 }
 
@@ -8962,7 +8962,7 @@ int func_249(bool bParam0)
 	iVar1 = 0;
 	while (iVar1 < func_403())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (bParam0 == func_404(iVar0))
 		{
 			return iVar0;
@@ -8986,7 +8986,7 @@ int func_251(int iParam0)
 	iVar1 = 0;
 	while (iVar1 < func_403())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (iParam0 == func_250(iVar0))
 		{
 			if (func_219(func_404(iVar0), 1, 0))
@@ -9030,12 +9030,12 @@ void func_254(int iParam0, bool bParam1)
 
 int func_255(int iParam0)
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, iParam0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 bool func_256(int iParam0)
 {
-	return COLLECTION::_0x93F2E7B5DB85657B(-2076669067, iParam0);
+	return COLLECTION::_0x93F2E7B5DB85657B(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 int func_257()
@@ -9126,7 +9126,7 @@ void func_261(int iParam0, bool bParam1, bool bParam2, int iParam3, char* sParam
 			sVar4 = "COL_CC_TITLE";
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
 			iVar9 = 12;
-			iVar14 = -2076669067;
+			iVar14 = joaat("CIGARETTE_CARDS");
 			break;
 		case 39:
 			if (func_257() && (func_259(39) || func_253(39)))
@@ -9301,7 +9301,7 @@ void func_263(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 38:
 			sVar0 = "COL_CC_TITLE";
 			sVar3 = "COL_CC_CARD_FOUND";
-			iVar7 = -2076669067;
+			iVar7 = joaat("CIGARETTE_CARDS");
 			if (func_257() && (func_259(38) || func_253(38)))
 			{
 				sVar1 = "COL_CC_INTRO";
@@ -9387,7 +9387,7 @@ void func_263(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		sVar1 = "COL_ALL_LOG_UPDATED";
 	}
 	sVar2 = "COL_CTX_PLAYER_LOG";
-	if (iVar7 == -2076669067)
+	if (iVar7 == joaat("CIGARETTE_CARDS"))
 	{
 		if (func_257() && (func_259(38) || func_253(38)))
 		{
@@ -10902,7 +10902,7 @@ int func_304()
 	int iVar4;
 	int iVar5;
 
-	iVar0 = COLLECTION::_0x5461C821D00FE15A(-2076669067, 0);
+	iVar0 = COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), 0);
 	if (iVar0 == func_403())
 	{
 		return func_305();
@@ -10912,7 +10912,7 @@ int func_304()
 	iVar2 = 0;
 	while (iVar2 < func_403())
 	{
-		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, -2076669067, 0);
+		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, joaat("CIGARETTE_CARDS"), 0);
 		if (!func_475(iVar1))
 		{
 			if (iVar5 == iVar3)
@@ -10931,7 +10931,7 @@ bool func_305()
 	int iVar0;
 
 	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, func_403());
-	return func_404(COLLECTION::_0x126CBEBBA46693CF(iVar0, -2076669067, 0));
+	return func_404(COLLECTION::_0x126CBEBBA46693CF(iVar0, joaat("CIGARETTE_CARDS"), 0));
 }
 
 void func_306(bool bParam0)
@@ -14521,7 +14521,7 @@ int func_402()
 
 int func_403()
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), 0);
 }
 
 bool func_404(int iParam0)
@@ -14661,7 +14661,7 @@ char* func_412(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 {
 	switch (iParam1)
 	{
-		case -2076669067:
+		case joaat("CIGARETTE_CARDS"):
 			if (iParam2 == 7)
 			{
 				sParam3 = "COL_TX_CHECK_BACK";
@@ -14823,7 +14823,7 @@ char* func_412(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 
 int func_413(int iParam0, int iParam1, int iParam2)
 {
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		if (iParam1 == joaat("COL_CC_INTRO"))
 		{
@@ -14889,7 +14889,7 @@ int func_416(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, i
 	iVar0 = 0;
 	while (iVar0 < iParam6)
 	{
-		if (iParam2 == -2076669067)
+		if (iParam2 == joaat("CIGARETTE_CARDS"))
 		{
 			bVar2 = func_547(iVar0);
 			if (bParam4 == bVar2)
@@ -15046,7 +15046,7 @@ int func_417(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		bVar0 = false;
 	}
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(3, iParam1, MISC::GET_HASH_KEY("COL_CC_ITEMS_DELIVERED"), "COL_CC_ITEMS_DELIVERED", bVar0, true, false);
 	}
@@ -21038,11 +21038,11 @@ int func_628(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}

@@ -75,9 +75,9 @@ void func_3(bool bParam0)
 	vector3 vVar0;
 	int iVar4;
 
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(76559005))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("CHEATS_MENU")))
 	{
-		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(76559005, &vVar0))
+		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("CHEATS_MENU"), &vVar0))
 		{
 		}
 		else
@@ -102,13 +102,13 @@ void func_3(bool bParam0)
 						Jump @459; //curOff = 147
 						switch (vVar0.z)
 						{
-							case -1943062401:
+							case joaat("CHEAT_MENU_RETURN_TO_SETTINGS"):
 								*bParam0 = 1;
 								break;
-							case 172361245:
+							case joaat("CHEAT_MENU_CANCEL_ACTIVATE"):
 								func_13();
 								break;
-							case -1761800988:
+							case joaat("CHEAT_MENU_CONFIRM_ACTIVATE"):
 								func_14();
 								func_15();
 								func_12(Local_9.f_43);
@@ -166,7 +166,7 @@ void func_3(bool bParam0)
 										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), 526258797);
 										func_23(iVar4);
 									}
-									UIEVENTS::_EVENT_MANAGER_POP_EVENT(76559005);
+									UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("CHEATS_MENU"));
 								}
 							}
 						}

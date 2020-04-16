@@ -188,7 +188,7 @@ void __EntryFunction__()
 	}
 	if (ScriptParam_0.f_12 != 5)
 	{
-		HUD::_0x4CC5F2FC1332577F(372886907);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME"));
 	}
 	while (true)
 	{
@@ -276,7 +276,7 @@ void func_2(var uParam0, int iParam1, bool bParam2)
 		}
 	}
 	func_12(0);
-	HUD::_0x8BC7C1F929D07BF3(372886907);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 	AUDIO::STOP_AUDIO_SCENE(func_25(uParam0->f_14));
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0, false);
 	PLAYER::SET_EVERYONE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
@@ -547,7 +547,7 @@ int func_19(var uParam0)
 		CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME();
 	}
 	func_56();
-	HUD::_0x8BC7C1F929D07BF3(372886907);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 	switch (Local_0)
 	{
 		case 0:
@@ -7932,11 +7932,11 @@ int func_339(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}
@@ -8341,11 +8341,11 @@ void func_361(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(121713391);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(121713391);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 

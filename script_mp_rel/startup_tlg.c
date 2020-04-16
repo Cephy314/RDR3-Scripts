@@ -4269,7 +4269,7 @@ void func_120(var uParam0)
 	Var0.f_26.f_169 = 15000;
 	Var0.f_197.f_10 = -1;
 	Var0.f_197.f_19 = 209170685;
-	Var0.f_197.f_19.f_2 = -837092826;
+	Var0.f_197.f_19.f_2 = joaat("MP_DEATH_SCREEN");
 	Var0.f_250 = -1;
 	Var0.f_256 = -1;
 	Var0.f_267.f_3 = 255;
@@ -33046,7 +33046,7 @@ var func_811(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_2 = "Mission_Complete_Enter";
 	Var0.f_3 = 0;
 	Var0.f_4 = joaat("COLLECTORS");
-	Var0.f_4.f_1 = -498196014;
+	Var0.f_4.f_1 = joaat("COLLECTORS_BAG_DETAILS");
 	Var0.f_4.f_2 = sParam5;
 	Var13.f_7 = 1;
 	Var13 = 0;
@@ -33397,7 +33397,7 @@ void func_831()
 		Var2.f_6 = joaat("TOASTS_MP_GENERIC");
 		Var2.f_7 = joaat("MP_RANK_TOAST");
 		Var2.f_19 = joaat("PROGRESS_MENU");
-		Var2.f_20 = 2147086796;
+		Var2.f_20 = joaat("MP_RANK_LINK");
 	}
 	else
 	{
@@ -33467,7 +33467,7 @@ void func_834(int iParam0)
 	{
 	}
 	Var3.f_19 = joaat("ROLE_PROGRESSION");
-	Var3.f_20 = -890301120;
+	Var3.f_20 = joaat("ROLE_PROGRESSION_DETAILS");
 	func_842(&Var3);
 	func_1100(iVar0);
 }
@@ -45681,11 +45681,11 @@ int func_1323(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}

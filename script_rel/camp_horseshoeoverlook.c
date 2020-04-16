@@ -1467,7 +1467,7 @@ int func_38(int iParam0)
 
 void func_39(bool bParam0)
 {
-	HUD::_0x4CC5F2FC1332577F(-950624750);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_CAMP_WITH_SUPPLIES"));
 	if (bParam0 && func_257())
 	{
 		func_258();
@@ -2067,7 +2067,7 @@ void func_53(int iParam0, bool bParam1)
 	PED::SET_PED_CONFIG_FLAG(Global_35, 474, false);
 	PED::SET_PED_CONFIG_FLAG(Global_35, 475, false);
 	func_259();
-	HUD::_0x8BC7C1F929D07BF3(-950624750);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_CAMP_WITH_SUPPLIES"));
 	if (func_38(2097152) && PED::GET_PED_CONFIG_FLAG(Global_35, 334, true))
 	{
 		PED::SET_PED_CONFIG_FLAG(Global_35, 334, false);
@@ -7465,12 +7465,12 @@ int func_257()
 
 void func_258()
 {
-	HUD::_0x4CC5F2FC1332577F(1670279562);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_TITHING"));
 }
 
 void func_259()
 {
-	HUD::_0x8BC7C1F929D07BF3(1670279562);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_TITHING"));
 }
 
 void func_260(int iParam0)
@@ -14675,7 +14675,7 @@ int func_468(bool bParam0, int iParam1, int iParam2, int iParam3, int iParam4, f
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, iParam3, false);
 				if (func_960(iParam2, 8192))
 				{
-					HUD::_0x8BC7C1F929D07BF3(724769646);
+					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				}
 			}
 		}
@@ -37042,7 +37042,7 @@ void func_1184(var uParam0, int iParam1)
 	{
 		if (!UIAPPS::_IS_APP_ACTIVE(joaat("SHOP_BROWSING")))
 		{
-			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_BROWSING"), -702860656);
+			UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_BROWSING"), joaat("CATALOG_ITEM_INSPECTION"));
 		}
 	}
 	else if (UIAPPS::_IS_APP_ACTIVE(joaat("SHOP_BROWSING")))
@@ -52839,7 +52839,7 @@ int func_1687(int iParam0)
 {
 	if (func_217((Global_1392915->f_121[iParam0 /*20*/])->f_3))
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1744263063);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PROMPT_MONEY"));
 		func_218(&((Global_1392915->f_121[iParam0 /*20*/])->f_3), 1, 0);
 		(Global_1392915->f_121[iParam0 /*20*/])->f_3 = 0;
 		return 1;
@@ -54982,11 +54982,11 @@ void func_1780(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(121713391);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(121713391);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 
@@ -55677,11 +55677,11 @@ int func_1823(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}

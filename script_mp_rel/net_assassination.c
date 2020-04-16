@@ -19941,7 +19941,7 @@ void func_663(int iParam0, var uParam1, int iParam2, bool bParam3, int iParam4, 
 {
 	bool bVar0;
 
-	if (((func_937(iParam0, &bVar0) && func_938(iParam0)) && func_939(iParam0, uParam1, iParam7)) && func_940(iParam0, -213385216, &bVar0))
+	if (((func_937(iParam0, &bVar0) && func_938(iParam0)) && func_939(iParam0, uParam1, iParam7)) && func_940(iParam0, joaat("CTIMER_AND_METERS"), &bVar0))
 	{
 		func_941(iParam0, iParam2, bParam3, iParam4, sParam5);
 		func_942(uParam1, iParam6, iParam7, bParam8, bParam9, bParam10);

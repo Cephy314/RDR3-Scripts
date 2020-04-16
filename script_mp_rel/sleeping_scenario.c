@@ -122,7 +122,7 @@ void func_6()
 
 void func_7()
 {
-	HUD::_0x8BC7C1F929D07BF3(2011163970);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 	if (func_14())
 	{
 		func_15(0);
@@ -389,7 +389,7 @@ void func_13(var uParam0)
 			{
 				if (!func_45())
 				{
-					HUD::_0x4CC5F2FC1332577F(2011163970);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 				}
 			}
 			if (TASK::_0xDF7993356F52359A(Global_34, 0) != iLocal_16)
@@ -481,7 +481,7 @@ void func_13(var uParam0)
 				{
 					func_51(uParam0);
 				}
-				HUD::_0x8BC7C1F929D07BF3(2011163970);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 				uParam0->f_28 = 0;
 				MISC::CLEAR_BIT(&(Global_1956131->f_1), 2);
 				func_19(uParam0);
@@ -699,14 +699,14 @@ void func_13(var uParam0)
 					AUDIO::TRIGGER_MUSIC_EVENT("SLEEP_TRANSITION_STOP");
 					if (iLocal_17 == joaat("PROP_PLAYER_SLEEP_BED"))
 					{
-						HUD::_0x8BC7C1F929D07BF3(2011163970);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 						ANIMSCENE::SET_ANIM_SCENE_ORIGIN(uParam0->f_14, TASK::_0xA8452DD321607029(iLocal_16, 1), 0f, 0f, (TASK::_0xB93EA7184BAA85C3(iLocal_16, 1) + 90f), 2);
 						ANIMSCENE::START_ANIM_SCENE(uParam0->f_14);
 					}
 					else if (iLocal_17 == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 					{
 						func_60(98.2971f, -4.2336f);
-						HUD::_0x8BC7C1F929D07BF3(2011163970);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 						PED::_0xEC6935EBE0847B90(Global_34, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(iLocal_16, 1), TASK::_0xB93EA7184BAA85C3(iLocal_16, 1), -5f, 0f, 0f));
 						TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 					}
@@ -840,7 +840,7 @@ void func_13(var uParam0)
 			{
 				if (!func_45())
 				{
-					HUD::_0x8BC7C1F929D07BF3(2011163970);
+					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 				}
 				if (ANIMSCENE::_0x25557E324489393C(uParam0->f_15))
 				{

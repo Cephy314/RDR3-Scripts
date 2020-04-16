@@ -916,7 +916,7 @@ int func_12(var uParam0, bool bParam1)
 				AUDIO::_0x6339C1EA3979B5F7("idle", "Player_Campfire_Scenes");
 				func_38(uParam0);
 			}
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SELECT_RADAR_MODE"), false);
 			func_67();
 			if (!func_58(1))
@@ -967,7 +967,7 @@ int func_12(var uParam0, bool bParam1)
 			}
 			break;
 		case 6:
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			if (func_37(uParam0))
 			{
 				func_38(uParam0);
@@ -1019,7 +1019,7 @@ int func_12(var uParam0, bool bParam1)
 			}
 			break;
 		case 8:
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			if (func_37(uParam0))
 			{
 				func_38(uParam0);
@@ -1077,7 +1077,7 @@ int func_12(var uParam0, bool bParam1)
 			}
 			break;
 		case 7:
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			if (func_37(uParam0))
 			{
 				func_76(joaat("CONSUMABLE_COFFEE"), 1, 1, -142743235);
@@ -12584,7 +12584,7 @@ void func_392(var uParam0, int iParam1)
 	}
 	if (uParam0->f_54)
 	{
-		HUD::_0xC9CAEAEEC1256E54(-469828803);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_CRAFTING_SEQUENCE"));
 	}
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_CONTEXT_Y"), false);
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON"), false);
@@ -12824,7 +12824,7 @@ void func_392(var uParam0, int iParam1)
 			}
 			else
 			{
-				iVar2 = -813979060;
+				iVar2 = joaat("CRAFTING_MENU");
 				while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iVar2))
 				{
 					if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iVar2, &vVar3))
@@ -20053,15 +20053,15 @@ int func_636(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1898574875;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH_CORE");
 		case 2:
-			return 1506296948;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_DEADEYE_CORE");
 		case 1:
-			return 308865989;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_STAMINA_CORE");
 		default:
 			break;
 	}
-	return 1898574875;
+	return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH_CORE");
 }
 
 int func_637(int iParam0)
@@ -20069,15 +20069,15 @@ int func_637(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1135800718;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH");
 		case 2:
-			return -402975377;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_DEADEYE");
 		case 1:
-			return -2074936164;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_STAMINA");
 		default:
 			break;
 	}
-	return -1135800718;
+	return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH");
 }
 
 int func_638(int iParam0)
@@ -24313,7 +24313,7 @@ void func_786(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4,
 				{
 					func_787(uParam0, -1, bParam3, ((*Global_1913166)[iParam2 /*9*/])->f_1, 1, 0, 1);
 				}
-				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, uParam0->f_52, -2047994727, ((*Global_1913166)[iParam2 /*9*/])->f_1);
+				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, uParam0->f_52, joaat("CRAFTING_LIST_ITEM"), ((*Global_1913166)[iParam2 /*9*/])->f_1);
 			}
 			else
 			{
@@ -24868,7 +24868,7 @@ bool func_797(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam2->f_42[iVar33]), &cVar41, sVar40);
 					StringCopy(&cVar41, "Enabled", 16);
 					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam2->f_42[iVar33]), &cVar41, func_784(bVar39, 1, 0));
-					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_47, -1, 309940639, &(uParam2->f_42[iVar33]));
+					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_47, -1, joaat("CRAFTING_RECIPE_LINE"), &(uParam2->f_42[iVar33]));
 				}
 				iVar33++;
 			}
@@ -28115,7 +28115,7 @@ void func_927(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar5, "overpower", bVar42);
 	if (bParam2)
 	{
-		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, -1, -2047994727, iVar5);
+		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, -1, joaat("CRAFTING_LIST_ITEM"), iVar5);
 	}
 }
 

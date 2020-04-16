@@ -344,7 +344,7 @@ void func_13(int iParam0)
 	Local_291.f_1295 = func_31(iParam0->f_1, iParam0->f_2);
 	Local_291.f_1399 = { func_32(iParam0->f_1, iParam0->f_2) };
 	func_34(func_33(iParam0->f_1, iParam0->f_2));
-	func_35(1619021308);
+	func_35(joaat("TIMER_AND_SCORES"));
 	if (func_36(&Var0, iParam0->f_1))
 	{
 		Var5 = { Var0 };
@@ -711,7 +711,7 @@ void func_22()
 		MISC::CLEAR_OVERRIDE_WEATHER();
 		NETWORK::_0x65F040D91001ED4B(0);
 		func_116();
-		HUD::_0x8BC7C1F929D07BF3(690901814);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
 		func_117(&(Local_291.f_1421));
 		if (GRAPHICS::_0xEEF83A759AE06A27(Local_291.f_1417) && !func_118())
 		{
@@ -2276,7 +2276,7 @@ void func_101()
 					ENTITY::SET_ENTITY_VISIBLE(Local_291.f_1416, true);
 				}
 				func_295();
-				HUD::_0x4CC5F2FC1332577F(690901814);
+				HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MISSION_CONTROLLER"));
 				CAM::DO_SCREEN_FADE_IN(250);
 			}
 		}
@@ -5401,7 +5401,7 @@ void func_268(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 		case -2065086408:
 			func_511(&(Local_291.f_1005), &(Local_291.f_13), &uVar4, iParam0, 0, iParam4, func_509(), iParam1 | 2048, iVar0, iVar2, iVar1, iVar3, 1);
 			break;
-		case 1619021308:
+		case joaat("TIMER_AND_SCORES"):
 			func_512(&(Local_291.f_1005), &(Local_291.f_13), &uVar4, iParam0, 0, iParam4, func_509(), iParam1, iVar0, iVar2, iVar1, iVar3, 1);
 			break;
 		case 524681:
@@ -8315,7 +8315,7 @@ void func_423(var uParam0, int iParam1, bool bParam2, int iParam3, char* sParam4
 {
 	bool bVar0;
 
-	if ((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_680(uParam0, -1700692449, &bVar0))
+	if ((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_680(uParam0, joaat("CTIMER"), &bVar0))
 	{
 		func_681(uParam0, iParam1, bParam2, iParam3, sParam4);
 	}
@@ -9050,7 +9050,7 @@ void func_473(var uParam0, bool bParam1)
 		if (GRAPHICS::ANIMPOSTFX_IS_RUNNING(func_456()))
 		{
 			GRAPHICS::_0xC5CB91D65852ED7E(func_456());
-			HUD::_0x8BC7C1F929D07BF3(-2124237476);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			GRAPHICS::_0x981C7D863980FA51();
 		}
 	}
@@ -9603,7 +9603,7 @@ void func_511(var uParam0, var uParam1, var uParam2, int iParam3, bool bParam4, 
 {
 	bool bVar0;
 
-	if (((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_743(uParam0, uParam1, iParam7 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam12)) && func_680(uParam0, -1700692449, &bVar0))
+	if (((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_743(uParam0, uParam1, iParam7 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam12)) && func_680(uParam0, joaat("CTIMER"), &bVar0))
 	{
 		func_681(uParam0, iParam3, bParam4, iParam5, sParam6);
 		func_744(uParam1, uParam2, iParam7 | 8, iParam8, iParam9, iParam10, iParam11, iParam12);
@@ -9619,7 +9619,7 @@ void func_512(var uParam0, var uParam1, var uParam2, int iParam3, bool bParam4, 
 {
 	bool bVar0;
 
-	if (((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_743(uParam0, uParam1, iParam7, iParam8, iParam9, iParam10, iParam11, iParam12)) && func_680(uParam0, 1133052843, &bVar0))
+	if (((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_743(uParam0, uParam1, iParam7, iParam8, iParam9, iParam10, iParam11, iParam12)) && func_680(uParam0, joaat("CTIMERANDSCORES"), &bVar0))
 	{
 		func_681(uParam0, iParam3, bParam4, iParam5, sParam6);
 		func_744(uParam1, uParam2, iParam7, iParam8, iParam9, iParam10, iParam11, iParam12);
@@ -9635,7 +9635,7 @@ void func_513(var uParam0, var uParam1, int iParam2, bool bParam3, int iParam4, 
 {
 	bool bVar0;
 
-	if (((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_745(uParam0, uParam1, iParam7)) && func_680(uParam0, -213385216, &bVar0))
+	if (((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_745(uParam0, uParam1, iParam7)) && func_680(uParam0, joaat("CTIMER_AND_METERS"), &bVar0))
 	{
 		func_681(uParam0, iParam2, bParam3, iParam4, sParam5);
 		func_746(uParam1, iParam6, iParam7, bParam8, bParam9, bParam10);
@@ -9651,7 +9651,7 @@ void func_514(var uParam0, var uParam1, var uParam2, var uParam3, int iParam4, b
 {
 	bool bVar0;
 
-	if ((((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_745(uParam0, uParam1, iParam9)) && func_743(uParam0, uParam2, iParam10, iParam11, iParam12, iParam13, iParam14, iParam15)) && func_680(uParam0, 1133052843, &bVar0))
+	if ((((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_745(uParam0, uParam1, iParam9)) && func_743(uParam0, uParam2, iParam10, iParam11, iParam12, iParam13, iParam14, iParam15)) && func_680(uParam0, joaat("CTIMERANDSCORES"), &bVar0))
 	{
 		func_681(uParam0, iParam4, bParam5, iParam6, sParam7);
 		func_746(uParam1, iParam8, iParam9, 0, 0, 0);
@@ -9669,7 +9669,7 @@ void func_515(var uParam0, var uParam1, var uParam2, int iParam3, var uParam4, b
 {
 	bool bVar0;
 
-	if ((((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_745(uParam0, uParam1, iParam9)) && func_743(uParam0, uParam2, iParam13 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam14)) && func_680(uParam0, 774310187, &bVar0))
+	if ((((func_678(uParam0, &bVar0) && func_679(uParam0)) && func_745(uParam0, uParam1, iParam9)) && func_743(uParam0, uParam2, iParam13 | 8, joaat("COLOR_BLUE"), joaat("COLOR_RED"), joaat("COLOR_PURE_WHITE"), joaat("COLOR_PURE_WHITE"), iParam14)) && func_680(uParam0, joaat("CTIMER_AND_TWO_METERS"), &bVar0))
 	{
 		func_681(uParam0, iParam3, bParam5, iParam6, sParam7);
 		func_746(uParam1, iParam8, iParam9, bParam10, bParam11, bParam12);
@@ -13261,7 +13261,7 @@ int func_706(var uParam0, char* sParam1, bool bParam2, bool bParam3, vector3 vPa
 		if ((bParam3 && !func_68(vParam4)) && fParam7 > 0f)
 		{
 			GRAPHICS::ANIMPOSTFX_PLAY(func_456());
-			HUD::_0x4CC5F2FC1332577F(-2124237476);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			fParam7 = func_946(fParam7, 0f, 1000f);
 			if (iParam8 == 0 || !VOLUME::_DOES_VOLUME_EXIST(iParam8))
 			{
@@ -28052,7 +28052,7 @@ int func_1284(bool bParam0)
 	{
 		return joaat("LEADERBOARD");
 	}
-	return -987928333;
+	return joaat("POST_MATCH");
 }
 
 int func_1285()

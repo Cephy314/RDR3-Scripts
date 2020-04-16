@@ -5342,7 +5342,7 @@ void func_73(var uParam0, int iParam1)
 	{
 		TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 		TASK::_0xFDECCA06E8B81346(Global_34);
-		HUD::_0x8BC7C1F929D07BF3(2011163970);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 		func_68(uParam0, 32768);
 	}
 	if (iParam1 == 0)
@@ -27269,7 +27269,7 @@ int func_795(var uParam0, bool bParam1)
 				AUDIO::_0x6339C1EA3979B5F7("idle", "Player_Campfire_Scenes");
 				func_975(uParam0);
 			}
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_SELECT_RADAR_MODE"), false);
 			func_995();
 			if (!func_163(1))
@@ -27320,7 +27320,7 @@ int func_795(var uParam0, bool bParam1)
 			}
 			break;
 		case 6:
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			if (func_974(uParam0))
 			{
 				func_975(uParam0);
@@ -27372,7 +27372,7 @@ int func_795(var uParam0, bool bParam1)
 			}
 			break;
 		case 8:
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			if (func_974(uParam0))
 			{
 				func_975(uParam0);
@@ -27430,7 +27430,7 @@ int func_795(var uParam0, bool bParam1)
 			}
 			break;
 		case 7:
-			HUD::_0xC9CAEAEEC1256E54(2011163970);
+			HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			if (func_974(uParam0))
 			{
 				func_1003(joaat("CONSUMABLE_COFFEE"), 1, 1, -142743235);
@@ -28238,7 +28238,7 @@ int func_813(var uParam0)
 		func_1102(0);
 	}
 	iVar24 = func_1039(uParam0);
-	if ((((iVar24 == 94016929 || iVar24 == 178644271) || iVar24 == 1860655620) || iVar24 == -996064024) || iVar24 == -1548684311)
+	if ((((iVar24 == 94016929 || iVar24 == 178644271) || iVar24 == 1860655620) || iVar24 == -996064024) || iVar24 == joaat("HORSE_STAT_INFO_BOX"))
 	{
 		iVar25 = func_1040(uParam0);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar25))
@@ -34082,7 +34082,7 @@ int func_1025(var uParam0)
 	{
 		return 1;
 	}
-	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_MENU"), -1102306668);
+	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_MENU"), joaat("GENERIC_SHOP"));
 	if (iVar0 == 0)
 	{
 		uParam0->f_2094.f_47 = 1;
@@ -34556,7 +34556,7 @@ void func_1048(var uParam0)
 	}
 	if (!UIAPPS::_IS_APP_RUNNING(iVar0))
 	{
-		iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(iVar0, -1102037190);
+		iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(iVar0, joaat("REWARDS_VIP"));
 		if (iVar1 == 0)
 		{
 			uParam0->f_1829 = 0;
@@ -34672,7 +34672,7 @@ int func_1049(var uParam0, int iParam1, bool bParam2)
 			return func_1442(uParam0, bParam2);
 		case -2144266389:
 			return func_1443(uParam0, bParam2);
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_1444(uParam0, bParam2);
 		case 1965673387:
 			return func_1445(uParam0, bParam2);
@@ -34917,7 +34917,7 @@ int func_1066(var uParam0)
 	var uVar36;
 	int iVar37;
 
-	if (((!func_1051(512) && func_1466() != -729996127) && func_1039(uParam0) != 1965673387) && func_1039(uParam0) != -1548684311)
+	if (((!func_1051(512) && func_1466() != -729996127) && func_1039(uParam0) != 1965673387) && func_1039(uParam0) != joaat("HORSE_STAT_INFO_BOX"))
 	{
 		if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(func_1467()))
 		{
@@ -35118,7 +35118,7 @@ int func_1067(var uParam0)
 	{
 		return 0;
 	}
-	if (func_1039(uParam0) != -1548684311 && func_1039(uParam0) != 1965673387)
+	if (func_1039(uParam0) != joaat("HORSE_STAT_INFO_BOX") && func_1039(uParam0) != 1965673387)
 	{
 		if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(func_1093()))
 		{
@@ -36204,7 +36204,7 @@ int func_1098(var uParam0, int iParam1)
 		case -440651963:
 			*iParam1 = 5;
 			return 1;
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 		case 1965673387:
 			return 0;
 	}
@@ -47870,7 +47870,7 @@ int func_1478(var uParam0, int iParam1, var uParam2)
 			return func_2112(uParam0, uParam2);
 		case -2144266389:
 			return 1;
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_2113(uParam0, uParam2);
 		case 1965673387:
 			return func_2114(uParam0, uParam2);
@@ -48508,7 +48508,7 @@ int func_1500(var uParam0, int iParam1, var uParam2)
 			return func_2149(uParam0, uParam2);
 		case -2144266389:
 			return func_2150(uParam0);
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_2151(uParam0);
 		case 23814986:
 			return func_2152(uParam0);
@@ -61013,7 +61013,7 @@ void func_1886(var uParam0, int iParam1)
 	}
 	if (uParam0->f_54)
 	{
-		HUD::_0xC9CAEAEEC1256E54(-469828803);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_CRAFTING_SEQUENCE"));
 	}
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_CONTEXT_Y"), false);
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON"), false);
@@ -61253,7 +61253,7 @@ void func_1886(var uParam0, int iParam1)
 			}
 			else
 			{
-				iVar2 = -813979060;
+				iVar2 = joaat("CRAFTING_MENU");
 				while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iVar2))
 				{
 					if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iVar2, &vVar3))
@@ -81950,15 +81950,15 @@ int func_2525(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1898574875;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH_CORE");
 		case 2:
-			return 1506296948;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_DEADEYE_CORE");
 		case 1:
-			return 308865989;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_STAMINA_CORE");
 		default:
 			break;
 	}
-	return 1898574875;
+	return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH_CORE");
 }
 
 int func_2526(int iParam0)
@@ -81966,15 +81966,15 @@ int func_2526(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1135800718;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH");
 		case 2:
-			return -402975377;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_DEADEYE");
 		case 1:
-			return -2074936164;
+			return joaat("HUD_CTX_ITEM_CONSUMPTION_STAMINA");
 		default:
 			break;
 	}
-	return -1135800718;
+	return joaat("HUD_CTX_ITEM_CONSUMPTION_HEALTH");
 }
 
 int func_2527(int iParam0)
@@ -93530,7 +93530,7 @@ void func_2880(var uParam0, bool bParam1, int iParam2, bool bParam3, int iParam4
 				{
 					func_2881(uParam0, -1, bParam3, ((*Global_1913166)[iParam2 /*9*/])->f_1, 1, 0, 1);
 				}
-				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, uParam0->f_52, -2047994727, ((*Global_1913166)[iParam2 /*9*/])->f_1);
+				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, uParam0->f_52, joaat("CRAFTING_LIST_ITEM"), ((*Global_1913166)[iParam2 /*9*/])->f_1);
 			}
 			else
 			{
@@ -94023,7 +94023,7 @@ bool func_2889(int iParam0, bool bParam1, var uParam2, int iParam3, bool bParam4
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam2->f_42[iVar33]), &cVar41, sVar40);
 					StringCopy(&cVar41, "Enabled", 16);
 					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam2->f_42[iVar33]), &cVar41, func_2878(bVar39, 1, 0));
-					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_47, -1, 309940639, &(uParam2->f_42[iVar33]));
+					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_47, -1, joaat("CRAFTING_RECIPE_LINE"), &(uParam2->f_42[iVar33]));
 				}
 				iVar33++;
 			}
@@ -99301,7 +99301,7 @@ int func_3089(var uParam0, var uParam1, int iParam2, int iParam3)
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar3, "isEndIconVisible", false);
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar3, "isRowActive", false);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_66, -1, -519723266, iVar3);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_66, -1, joaat("STAT_ATTRIBUTE_ITEM"), iVar3);
 	return 1;
 }
 
@@ -99490,7 +99490,7 @@ int func_3093(var uParam0, var uParam1, int iParam2, int iParam3)
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "isEndIconVisible", false);
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "isRowActive", false);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_65, -1, -519723266, iVar4);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_65, -1, joaat("STAT_ATTRIBUTE_ITEM"), iVar4);
 	return 1;
 }
 
@@ -102788,7 +102788,7 @@ void func_3193(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar5, "overpower", bVar42);
 	if (bParam2)
 	{
-		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, -1, -2047994727, iVar5);
+		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, -1, joaat("CRAFTING_LIST_ITEM"), iVar5);
 	}
 }
 

@@ -142,9 +142,9 @@ void __EntryFunction__()
 						func_5(1024);
 						break;
 					case -2075827635:
-						if (Var3.f_2 != 1130992209)
+						if (Var3.f_2 != joaat("GENERIC_SHOP_UI_NEXT_SCENE"))
 						{
-							if (Var3.f_2 != -1980648788)
+							if (Var3.f_2 != joaat("GENERIC_SHOP_UI_PREV_SCENE"))
 							{
 								if (Var3.f_2 != -401761271)
 								{
@@ -171,9 +171,9 @@ void __EntryFunction__()
 						func_5(1024);
 						break;
 					case 922460030:
-						if (Var3.f_2 != 416030390)
+						if (Var3.f_2 != joaat("GENERIC_SHOP_UI_ENTRY"))
 						{
-							if (Var3.f_2 != -1424072773)
+							if (Var3.f_2 != joaat("GENERIC_SHOP_UI_BYPASS"))
 							{
 							}
 							else if (Global_1915180->f_19742.f_3.f_3)

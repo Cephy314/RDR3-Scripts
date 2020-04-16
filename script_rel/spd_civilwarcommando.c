@@ -475,7 +475,7 @@ void __EntryFunction__()
 				}
 				break;
 			case 6:
-				HUD::_0xC9CAEAEEC1256E54(724769646);
+				HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_27();
 				func_28();
 				sLocal_181 = func_16(func_25());

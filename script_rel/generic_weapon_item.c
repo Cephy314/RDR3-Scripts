@@ -116,7 +116,7 @@ void func_1(int iParam0)
 	struct<4> Var6;
 	struct<4> Var11;
 
-	Local_9 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(1069234796);
+	Local_9 = UISTATEMACHINE::_UIFLOWBLOCK_REQUEST(joaat("PM_FLOW_WEAPON_INSPECT"));
 	if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(Local_9.f_1))
 	{
 		iVar1 = func_11();
@@ -143,7 +143,7 @@ void func_1(int iParam0)
 		Local_9.f_12 = WEAPON::_0x810E8AE9AFEA7E54(*iParam0);
 		Local_9.f_14 = WEAPON::_0x4BF66F8878F67663(*iParam0);
 	}
-	HUD::_0x4CC5F2FC1332577F(-1847602092);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_INSPECT_ITEM"));
 }
 
 int func_2()
@@ -173,7 +173,7 @@ void func_3()
 	UISTATEMACHINE::_UIFLOWBLOCK_RELEASE(&Local_9);
 	Local_9 = 0;
 	DATABINDING::_DATABINDING_REMOVE_DATA_ENTRY(Local_9.f_1);
-	HUD::_0x8BC7C1F929D07BF3(-1847602092);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_INSPECT_ITEM"));
 	if (!SCRIPTS::_0x9E4EF615E307FBBE())
 	{
 		SCRIPTS::TERMINATE_THIS_THREAD();
@@ -2158,7 +2158,7 @@ void func_89(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4, 
 			sVar4 = "COL_CC_TITLE";
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
 			iVar9 = 12;
-			iVar14 = -2076669067;
+			iVar14 = joaat("CIGARETTE_CARDS");
 			break;
 		case 39:
 			if (func_99() && (func_100(39) || func_82(39)))
@@ -2461,7 +2461,7 @@ char* func_102(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 {
 	switch (iParam1)
 	{
-		case -2076669067:
+		case joaat("CIGARETTE_CARDS"):
 			if (iParam2 == 7)
 			{
 				sParam3 = "COL_TX_CHECK_BACK";
@@ -2623,7 +2623,7 @@ char* func_102(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 
 int func_103(int iParam0, int iParam1, int iParam2)
 {
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		if (iParam1 == joaat("COL_CC_INTRO"))
 		{
@@ -2689,7 +2689,7 @@ int func_106(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	iVar0 = 0;
 	while (iVar0 < iParam6)
 	{
-		if (iParam2 == -2076669067)
+		if (iParam2 == joaat("CIGARETTE_CARDS"))
 		{
 			iVar2 = func_122(iVar0);
 			if (iParam4 == iVar2)
@@ -2846,7 +2846,7 @@ int func_107(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		bVar0 = false;
 	}
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(3, iParam1, MISC::GET_HASH_KEY("COL_CC_ITEMS_DELIVERED"), "COL_CC_ITEMS_DELIVERED", bVar0, true, false);
 	}
@@ -3204,7 +3204,7 @@ void func_111(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 38:
 			sVar0 = "COL_CC_TITLE";
 			sVar3 = "COL_CC_CARD_FOUND";
-			iVar7 = -2076669067;
+			iVar7 = joaat("CIGARETTE_CARDS");
 			if (func_99() && (func_100(38) || func_82(38)))
 			{
 				sVar1 = "COL_CC_INTRO";
@@ -3290,7 +3290,7 @@ void func_111(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		sVar1 = "COL_ALL_LOG_UPDATED";
 	}
 	sVar2 = "COL_CTX_PLAYER_LOG";
-	if (iVar7 == -2076669067)
+	if (iVar7 == joaat("CIGARETTE_CARDS"))
 	{
 		if (func_99() && (func_100(38) || func_82(38)))
 		{
@@ -3839,7 +3839,7 @@ var func_138(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 
 int func_139(int iParam0)
 {
-	return COLLECTION::_0x93F2E7B5DB85657B(-2076669067, iParam0);
+	return COLLECTION::_0x93F2E7B5DB85657B(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 var func_140(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10)

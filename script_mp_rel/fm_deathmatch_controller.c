@@ -4476,7 +4476,7 @@ void func_42()
 		func_368(1);
 		func_373();
 	}
-	HUD::_0x8BC7C1F929D07BF3(690901814);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
 	func_219();
 }
 
@@ -9697,7 +9697,7 @@ void func_294(struct<2> Param0)
 			{
 				CAM::DO_SCREEN_FADE_IN(1000);
 			}
-			HUD::_0x8BC7C1F929D07BF3(128623374);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			func_622(9);
 		case 9:
 			MISC::SET_BIT(&((Local_1686[iLocal_72 /*63*/])->f_2), 7);
@@ -9791,7 +9791,7 @@ void func_294(struct<2> Param0)
 			MISC::SET_BIT(&((Local_1686[iLocal_72 /*63*/])->f_2), 8);
 			func_643(&uLocal_15439);
 			func_13(512);
-			HUD::_0x8BC7C1F929D07BF3(128623374);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			if (!CAM::IS_SCREEN_FADED_IN() && !CAM::IS_SCREEN_FADING_IN())
 			{
 				CAM::DO_SCREEN_FADE_IN(1000);
@@ -10125,7 +10125,7 @@ void func_299(bool bParam0)
 	func_13(1024);
 	func_103(&uLocal_14039, &Var0);
 	func_668(0, 1, 0, 0, 0, 0, 0, 0, 0);
-	HUD::_0x8BC7C1F929D07BF3(690901814);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
 	func_106(&uLocal_14058, 0, 1);
 	if (!bParam0)
 	{
@@ -15230,7 +15230,7 @@ void func_450(var uParam0, var uParam1)
 	}
 	func_879(uParam0);
 	func_880(uParam0);
-	HUD::_0x8BC7C1F929D07BF3(-2124237476);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 }
 
 void func_451(var uParam0)
@@ -21169,7 +21169,7 @@ void func_739(var uParam0)
 			}
 		}
 	}
-	HUD::_0x8BC7C1F929D07BF3(474191950);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE"));
 	if (!MISC::IS_BIT_SET(iLocal_62, 13))
 	{
 		if (func_227())
@@ -26331,7 +26331,7 @@ void func_879(var uParam0)
 	func_1287(uParam0);
 	func_702(uParam0);
 	GRAPHICS::_0xC5CB91D65852ED7E("MP_OutofArea");
-	HUD::_0x8BC7C1F929D07BF3(-2124237476);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 	func_1288(4);
 	func_1288(8);
 }
@@ -32102,25 +32102,25 @@ int func_1112(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 598430796;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_CUTSCENE");
 		case 1:
-			return 690901814;
+			return joaat("HUD_CTX_MISSION_CONTROLLER");
 		case 3:
 			return 2083323686;
 		case 2:
-			return 474191950;
+			return joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE");
 		case 4:
-			return 128623374;
+			return joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION");
 		case 6:
-			return -993263478;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_INTRO");
 		case 7:
-			return 1344742130;
+			return joaat("HUD_CTX_IN_MP_GAME_MODE");
 		case 8:
 			return 537169871;
 		case 9:
 			return -1763610107;
 		case 10:
-			return 68203906;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_OUTRO");
 		case 11:
 			return 253418738;
 		case 12:
@@ -34611,7 +34611,7 @@ void func_1201(var uParam0)
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(&(uParam0->f_12[33]), true);
 		GRAPHICS::ANIMPOSTFX_PLAY("MP_OutofAreaDirectional");
 		AUDIO::_0x6339C1EA3979B5F7("default", "out_of_bounds_scenes");
-		HUD::_0x4CC5F2FC1332577F(-2124237476);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 		func_1746(4);
 		func_1527();
 		Var3 = { *(uParam0->f_370[uParam0->f_877 /*15*/]) };
@@ -34643,7 +34643,7 @@ void func_1201(var uParam0)
 		AUDIO::_0x3210BCB36AF7621B(uParam0->f_889);
 		uParam0->f_889 = -1;
 		GRAPHICS::_0xC5CB91D65852ED7E("MP_OutofAreaDirectional");
-		HUD::_0x8BC7C1F929D07BF3(-2124237476);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 		func_1288(4);
 		GRAPHICS::_0x981C7D863980FA51();
 		uParam0->f_890 = 0;
@@ -49750,42 +49750,42 @@ int func_1703(int iParam0)
 	switch (iParam0)
 	{
 		case 456605338:
-			return 1133052843;
+			return joaat("CTIMERANDSCORES");
 		case -1838730762:
-			return -202313910;
+			return joaat("CTIMER_AND_AVATARS");
 		case 2091842205:
-			return 756032181;
+			return joaat("CTIMER_AND_FISTINGMETER");
 		case 1083726117:
-			return 1391354145;
+			return joaat("CTIMER_SCORES_AND_FISTINGMETER");
 		case 1174457346:
-			return -276645137;
+			return joaat("CTIMER_AND_ONE_METER");
 		case 593332131:
-			return 1059823321;
+			return joaat("FTIMER_SCORES_AND_A_METER");
 		case 1443986063:
-			return 1059823321;
+			return joaat("FTIMER_SCORES_AND_A_METER");
 		case 1936484400:
-			return 774310187;
+			return joaat("CTIMER_AND_TWO_METERS");
 		case -2146584:
-			return 138141760;
+			return joaat("MSTIMER_AND_SCORES");
 		case 1117913623:
 		case 1928276294:
-			return 418594230;
+			return joaat("FOUR_METERS");
 		case -1220700382:
 		case -699819638:
 		case 1375802800:
-			return -867319305;
+			return joaat("CTIMER_SCORES_AND_METERS");
 		case 344700063:
 		case 1485013169:
-			return -1700692449;
+			return joaat("CTIMER");
 		case -438934027:
 		case 1835758938:
-			return -1148732570;
+			return joaat("CTIMER_AND_FOUR_METERS");
 		case 244605310:
 		case 283413025:
 		case 615217735:
-			return 2042296464;
+			return joaat("CTIMER_AND_EIGHT_METERS");
 		case -818658900:
-			return -98377599;
+			return joaat("CTIMER_TWO_METERS_PLUS_EIGHT_METERS");
 		default:
 			break;
 	}
@@ -64271,7 +64271,7 @@ int func_2222(bool bParam0)
 	{
 		return joaat("LEADERBOARD");
 	}
-	return -987928333;
+	return joaat("POST_MATCH");
 }
 
 int func_2223()

@@ -4044,7 +4044,7 @@ void func_137(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 					func_14(&(((*uParam0)[iVar0 /*17*/])->f_6), 1, 1);
 					if (MISC::IS_BIT_SET(uParam0[iVar0 /*17*/], 1))
 					{
-						HUD::_0x8BC7C1F929D07BF3(-1744263063);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PROMPT_MONEY"));
 					}
 					if (bParam2)
 					{
@@ -11534,7 +11534,7 @@ void func_387(int iParam0, int* iParam1, float fParam2, int iParam3, int iParam4
 					{
 						func_76(iParam1->f_6, sVar0, iParam1->f_14, 1);
 					}
-					HUD::_0x4CC5F2FC1332577F(-1744263063);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PROMPT_MONEY"));
 				}
 				if (MISC::IS_BIT_SET(*iParam1, 10))
 				{

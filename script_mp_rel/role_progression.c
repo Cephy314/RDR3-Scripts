@@ -428,15 +428,15 @@ void func_15(int* iParam0)
 		func_35(iParam0, 3, 1);
 		func_35(iParam0, 4, 0);
 	}
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(1797523117))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION")))
 	{
-		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(1797523117, &Var0))
+		if (!UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION"), &Var0))
 		{
 		}
 		else
 		{
 			func_36(iParam0, &Var0);
-			UIEVENTS::_EVENT_MANAGER_POP_EVENT(1797523117);
+			UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION"));
 		}
 	}
 	if (func_34(iParam0, 3))
@@ -1110,7 +1110,7 @@ void func_62(int* iParam0, int iParam1)
 				}
 			}
 			break;
-		case 1060550035:
+		case joaat("RP_UI_EVENT_UNLOCK_PENDING_ROLE_CARD"):
 			func_35(iParam0, 5, 1);
 			if (!func_91(joaat("ROLE_PROGRESSION"), -45819186))
 			{
@@ -4167,7 +4167,7 @@ int func_234(int iParam0, var uParam1)
 	if (!func_288(iParam0, &(uParam1->f_20), &(uParam1->f_21)))
 	{
 	}
-	uParam1->f_4 = 1797523117;
+	uParam1->f_4 = joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION");
 	uParam1->f_5 = 2114750871;
 	uParam1->f_7 = joaat("IB_SELECT");
 	uParam1->f_8 = 1;
@@ -4296,7 +4296,7 @@ int func_239(var uParam0, int iParam1, bool bParam2, var uParam3, char[4] cParam
 	{
 		return 0;
 	}
-	uParam0->f_4 = 1797523117;
+	uParam0->f_4 = joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION");
 	uParam0->f_5 = -290657237;
 	uParam0->f_18 = uParam3;
 	uParam0->f_19 = cParam4;
@@ -4527,7 +4527,7 @@ int func_244(var uParam0, int iParam1, int iParam2, bool bParam3)
 	{
 		return 0;
 	}
-	uParam0->f_4 = 1797523117;
+	uParam0->f_4 = joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION");
 	uParam0->f_64 = iParam1;
 	uParam0->f_65 = 1;
 	uParam0->f_5 = -1171582810;
@@ -4702,7 +4702,7 @@ int func_246(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	{
 		return 0;
 	}
-	uParam0->f_4 = 1797523117;
+	uParam0->f_4 = joaat("UI_EVENT_CHANNEL_ROLE_PROGRESSION");
 	if (func_318(iParam1) && func_319())
 	{
 		uParam0->f_7 = 175246289; /* GXTEntry: "Catalogue" */

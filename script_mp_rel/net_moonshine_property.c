@@ -5640,7 +5640,7 @@ void func_277(var uParam0, var uParam1, var uParam2)
 			{
 				func_405(&(uParam1->f_1012.f_70), 0);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
-				HUD::_0x8BC7C1F929D07BF3(724769646);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_406(uParam1, 0);
 				func_401(uParam1, 5);
 			}
@@ -9727,7 +9727,7 @@ int func_413(var uParam0, var uParam1, var uParam2)
 				uParam1->f_1012.f_20 = 100f;
 				func_405(&(uParam1->f_1012.f_21), 0);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
-				HUD::_0x8BC7C1F929D07BF3(724769646);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_663(uParam1, uParam2);
 				func_664(uParam0, uParam1, 0);
 				func_408(uParam1, 3);
@@ -9735,7 +9735,7 @@ int func_413(var uParam0, var uParam1, var uParam2)
 			else if (func_662(uParam1->f_1012.f_33, 1))
 			{
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
-				HUD::_0x8BC7C1F929D07BF3(724769646);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_426(&(uParam1->f_1012.f_31), 1, 1);
 				func_426(&(uParam1->f_1012.f_32), 1, 1);
 				func_426(&(uParam1->f_1012.f_33), 1, 1);
@@ -10099,7 +10099,7 @@ int func_415(var uParam0, var uParam1, var uParam2)
 			if (func_530(uParam1->f_1012.f_69, 1))
 			{
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
-				HUD::_0x8BC7C1F929D07BF3(724769646);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_679(uParam1, 0);
 				func_680(uParam0, uParam1);
 				func_406(uParam1, 5);
@@ -24644,7 +24644,7 @@ void func_999()
 	UIAPPS::_CLOSE_ALL_APPS();
 	func_1176(0, 0, 1);
 	func_1177();
-	HUD::_0xC9CAEAEEC1256E54(-1679307491);
+	HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
 }
 

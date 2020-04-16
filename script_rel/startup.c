@@ -7232,7 +7232,7 @@ int func_207(int iParam0, int iParam1)
 			case 768:
 				return 1081087978;
 			case 769:
-				return 696143352;
+				return joaat("VAL_03_LOCKDOWN");
 			case 770:
 				return -981203673;
 			case 771:
@@ -15543,12 +15543,12 @@ void func_354(bool bParam0, bool bParam1)
 	{
 		if (bParam0)
 		{
-			HUD::_0x4CC5F2FC1332577F(128623374);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			GRAPHICS::TOGGLE_PAUSED_RENDERPHASES(false);
 		}
 		else
 		{
-			HUD::_0x8BC7C1F929D07BF3(128623374);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 			GRAPHICS::TOGGLE_PAUSED_RENDERPHASES(true);
 		}
 	}

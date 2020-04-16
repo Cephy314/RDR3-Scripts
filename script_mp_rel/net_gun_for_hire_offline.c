@@ -12741,7 +12741,7 @@ int func_320()
 
 	Global_1114828->f_7999 = 0;
 	Global_1114828->f_7999.f_1 = 0;
-	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("PLAYER_MENU"), 518901366);
+	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("PLAYER_MENU"), joaat("MP_LEGENDARY_BOUNTY_REPLAY_MENU"));
 	if (iVar0 == 0)
 	{
 		Global_1114828->f_7999.f_4 = 1;
@@ -19633,7 +19633,7 @@ void func_629(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	}
 	if (sParam1->f_9 & 4 != 0)
 	{
-		HUD::_0xC9CAEAEEC1256E54(-1679307491);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		func_915();
 		HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
 		PED::SET_PED_RESET_FLAG(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 175, true);
@@ -22711,7 +22711,7 @@ void func_753(var uParam0, var uParam1)
 	if (func_297(*uParam1, 2))
 	{
 		CAM::_0xE296208C273BD7F0(-1, 2000, 0, 17, 1, 0);
-		HUD::_0xC9CAEAEEC1256E54(-1711480773);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPT_CME_CUTSCENE"));
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM"), false);
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_ATTACK"), false);
 		PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_AIM_IN_AIR"), false);
@@ -55005,7 +55005,7 @@ int func_1165(int iParam0, int iParam1)
 				return 10358;
 			case joaat("P_LOCKBOX_LRG"):
 				return 7737;
-			case joaat("P_WIN_NJMPM_CLEAN02X"):
+			case joaat("CDT32_ACCEPT_1"):
 				return 6815;
 			case joaat("U_M_M_NBXGRAVEROBBER_04"):
 				return 15870;

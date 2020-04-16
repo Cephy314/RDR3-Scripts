@@ -664,7 +664,7 @@ void __EntryFunction__()
 							func_108(&(Local_14.f_180), 1024);
 							func_109(14, 32768);
 							func_108(&(Local_14.f_180), 4096);
-							HUD::_0x8BC7C1F929D07BF3(724769646);
+							HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 							func_110(&(Local_14.f_190), 0);
 							func_111(&Local_14, 0);
 							func_112(Local_14.f_211[0 /*17*/], 0, 0);
@@ -822,7 +822,7 @@ int func_1(var uParam0)
 void func_2(int iParam0, bool bParam1)
 {
 	func_117(14);
-	HUD::_0x8BC7C1F929D07BF3(724769646);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 	if (ITEMSET::IS_ITEMSET_VALID(iParam0->f_155))
 	{
 		ITEMSET::DESTROY_ITEMSET(iParam0->f_155);
@@ -964,7 +964,7 @@ void func_3(int iParam0)
 			func_108(&(iParam0->f_180), 1024);
 			func_109(14, 32768);
 			func_108(&(iParam0->f_180), 4096);
-			HUD::_0x8BC7C1F929D07BF3(724769646);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 			func_124(iParam0->f_158[0]);
 			func_125(&(iParam0->f_211), 1, 1, 1, 0);
 			func_57(iParam0, 49);
@@ -992,7 +992,7 @@ void func_3(int iParam0)
 				func_108(&(iParam0->f_180), 1024);
 				func_109(14, 32768);
 				func_108(&(iParam0->f_180), 4096);
-				HUD::_0x8BC7C1F929D07BF3(724769646);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_124(iParam0->f_158[0]);
 				func_125(&(iParam0->f_211), 1, 1, 1, 0);
 				func_57(iParam0, 49);
@@ -1020,7 +1020,7 @@ void func_3(int iParam0)
 				func_108(&(iParam0->f_180), 1024);
 				func_109(14, 32768);
 				func_108(&(iParam0->f_180), 4096);
-				HUD::_0x8BC7C1F929D07BF3(724769646);
+				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				func_124(iParam0->f_158[0]);
 				func_125(&(iParam0->f_211), 1, 1, 1, 0);
 				func_57(iParam0, 50);
@@ -1446,7 +1446,7 @@ void func_17(int iParam0)
 		{
 			func_67(&(iParam0->f_180), 1024);
 			func_157(14, 32768);
-			HUD::_0x4CC5F2FC1332577F(724769646);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 		}
 		if (func_159(func_158(Global_35, 0, 1, 0)) || func_159(func_158(Global_35, 1, 1, 0)))
 		{

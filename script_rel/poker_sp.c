@@ -1004,7 +1004,7 @@ void func_44()
 {
 	if (func_97(&Local_14, 0))
 	{
-		HUD::_0x8BC7C1F929D07BF3(372886907);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 		func_118(&(Local_14.f_114), 1);
 	}
 	else
@@ -2827,10 +2827,10 @@ void func_118(var uParam0, int iParam1)
 		case 0:
 			break;
 		case 1:
-			HUD::_0x8BC7C1F929D07BF3(1920936087);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME_POKER_INTRO"));
 			break;
 		case 2:
-			HUD::_0x8BC7C1F929D07BF3(372886907);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MINIGAME"));
 			break;
 		case 3:
 			break;
@@ -2841,10 +2841,10 @@ void func_118(var uParam0, int iParam1)
 		case 0:
 			break;
 		case 1:
-			HUD::_0x4CC5F2FC1332577F(1920936087);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME_POKER_INTRO"));
 			break;
 		case 2:
-			HUD::_0x4CC5F2FC1332577F(372886907);
+			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MINIGAME"));
 			break;
 		case 3:
 			break;
@@ -4246,7 +4246,7 @@ void func_176(int iParam0)
 				func_447(func_446(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_DOMINOES"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("DOMINOES"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 3:
-				func_447(func_446(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", -1280897372, -2, 0, 0, 0, 0, 1, 1);
+				func_447(func_446(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_FIVE_FINGER_FILLET"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("FFF"), -2, 0, 0, 0, 0, 1, 1);
 				break;
 			case 2:
 				func_447(func_446(iParam0), &cVar1, joaat("TOAST_LOG_BLIPS"), joaat("BLIP_MG_POKER"), MISC::GET_HASH_KEY("help_menu"), "INPUT_FEED_INTERACT_GENERIC", joaat("POKER"), -2, 0, 0, 0, 0, 1, 1);

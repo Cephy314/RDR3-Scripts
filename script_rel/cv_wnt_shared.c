@@ -11624,7 +11624,7 @@ void func_404(int iParam0, bool bParam1)
 		return;
 	}
 	UILOG::_UILOG_ADD_ENTRY_HASH(4, func_514(iParam0), func_515(iParam0), iVar3, iVar5, 0);
-	UILOG::_UILOG_SET_ENTRY_BRIEF_TEXTURE(4, func_514(iParam0), iVar8, -445557482);
+	UILOG::_UILOG_SET_ENTRY_BRIEF_TEXTURE(4, func_514(iParam0), iVar8, joaat("SP_MISSIONS_20"));
 	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(4, func_514(iParam0), iVar6, iVar7);
 	UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(4, func_514(iParam0), iVar1, sVar0, false, false, false);
 	if (bParam1)

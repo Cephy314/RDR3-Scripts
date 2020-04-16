@@ -289,7 +289,7 @@ void __EntryFunction__()
 	Var0.f_2248.f_134 = 4;
 	Var0.f_2248.f_140 = 2;
 	Var0.f_2248.f_141 = -1;
-	Var0.f_2397.f_5 = -252438768;
+	Var0.f_2397.f_5 = joaat("HUD_CTX_IN_CAMP_WARDROBE");
 	Var0.f_2447.f_56 = -1;
 	Var0.f_2558 = 8;
 	Var0.f_2558.f_9.f_20 = 10;
@@ -1550,9 +1550,9 @@ void func_7(var uParam0)
 	{
 		_NAMESPACE71::_0x2F901291EF177B02(Global_1915180->f_21955, 0);
 	}
-	HUD::_0x8BC7C1F929D07BF3(1815407589);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_CATALOGUE_SHOP_MENU"));
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), true);
-	HUD::_0x8BC7C1F929D07BF3(559258637);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SHOP_OBJECTIVE"));
 	if (*uParam0 == 7)
 	{
 		func_100(0);
@@ -4943,11 +4943,11 @@ void func_88(bool bParam0)
 {
 	if (bParam0)
 	{
-		HUD::_0x4CC5F2FC1332577F(2077578434);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(2077578434);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_GOLD_CURRENCY_CHANGE"));
 	}
 }
 
@@ -5221,7 +5221,7 @@ int func_101(var uParam0)
 				else
 				{
 					ANIMSCENE::SET_ANIM_SCENE_ENTITY(uParam0->f_167.f_1748, "CATALOG", uParam0->f_167.f_1769, 0);
-					HUD::_0x4CC5F2FC1332577F(1815407589);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_CATALOGUE_SHOP_MENU"));
 					Global_1915180->f_20142 = 1;
 					if (uParam0->f_20 == 2)
 					{
@@ -12920,16 +12920,16 @@ int func_413(var uParam0)
 	{
 		if (func_2() == 0)
 		{
-			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, -1008290747);
+			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, joaat("DEFAULT_MP_CATALOG"));
 		}
 		else
 		{
-			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, -132805333);
+			UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, joaat("DEFAULT_CATALOG"));
 		}
 	}
 	else
 	{
-		UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, -238370630);
+		UISTATEMACHINE::_UIFLOWBLOCK_ENTER(uParam0->f_1226, joaat("HANDHELD_CATALOG"));
 	}
 	if (!UISTATEMACHINE::_UISTATEMACHINE_EXISTS(-102170019))
 	{
@@ -13159,7 +13159,7 @@ void func_430()
 {
 	func_321("shop_scenes");
 	MAP::DISPLAY_RADAR(true);
-	HUD::_0x8BC7C1F929D07BF3(1815407589);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_CATALOGUE_SHOP_MENU"));
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_OPEN_SATCHEL_MENU"), true);
 }
 
@@ -15218,7 +15218,7 @@ void func_503(var uParam0, var uParam1)
 			if (UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY")))
 			{
 				func_175(uParam0, 0, 0);
-				HUD::_0xC9CAEAEEC1256E54(382897689);
+				HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_TRANSLATE_OVERLAY"));
 			}
 			if (func_563(uParam0))
 			{
@@ -23104,7 +23104,7 @@ int func_713(var uParam0)
 		func_1142(0);
 	}
 	iVar24 = func_1090(uParam0);
-	if ((((iVar24 == 94016929 || iVar24 == 178644271) || iVar24 == 1860655620) || iVar24 == -996064024) || iVar24 == -1548684311)
+	if ((((iVar24 == 94016929 || iVar24 == 178644271) || iVar24 == 1860655620) || iVar24 == -996064024) || iVar24 == joaat("HORSE_STAT_INFO_BOX"))
 	{
 		iVar25 = func_1091(uParam0);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar25))
@@ -24997,7 +24997,7 @@ int func_768(var uParam0)
 	{
 		return 1;
 	}
-	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_MENU"), -1102306668);
+	iVar0 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(joaat("SHOP_MENU"), joaat("GENERIC_SHOP"));
 	if (iVar0 == 0)
 	{
 		uParam0->f_2094.f_47 = 1;
@@ -25121,7 +25121,7 @@ void func_778(var uParam0)
 	}
 	if (!UIAPPS::_IS_APP_RUNNING(iVar0))
 	{
-		iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(iVar0, -1102037190);
+		iVar1 = UIAPPS::_LAUNCH_APP_BY_HASH_WITH_ENTRY(iVar0, joaat("REWARDS_VIP"));
 		if (iVar1 == 0)
 		{
 			uParam0->f_1829 = 0;
@@ -28612,9 +28612,9 @@ int func_871(var uParam0)
 	bVar0 = func_522(uParam0);
 	if (func_171(bVar0))
 	{
-		return 53972894;
+		return joaat("CATALOG_WEAPON_INSPECTION");
 	}
-	return -702860656;
+	return joaat("CATALOG_ITEM_INSPECTION");
 }
 
 int func_872(var uParam0, char* sParam1)
@@ -36856,7 +36856,7 @@ int func_1095(var uParam0, int iParam1, bool bParam2)
 			return func_1555(uParam0, bParam2);
 		case -2144266389:
 			return func_1556(uParam0, bParam2);
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_1557(uParam0, bParam2);
 		case 1965673387:
 			return func_1558(uParam0, bParam2);
@@ -37100,7 +37100,7 @@ int func_1111(var uParam0)
 	var uVar36;
 	bool bVar37;
 
-	if (((!func_1097(512) && func_1577() != -729996127) && func_1090(uParam0) != 1965673387) && func_1090(uParam0) != -1548684311)
+	if (((!func_1097(512) && func_1577() != -729996127) && func_1090(uParam0) != 1965673387) && func_1090(uParam0) != joaat("HORSE_STAT_INFO_BOX"))
 	{
 		if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(func_1578()))
 		{
@@ -37301,7 +37301,7 @@ int func_1112(var uParam0)
 	{
 		return 0;
 	}
-	if (func_1090(uParam0) != -1548684311 && func_1090(uParam0) != 1965673387)
+	if (func_1090(uParam0) != joaat("HORSE_STAT_INFO_BOX") && func_1090(uParam0) != 1965673387)
 	{
 		if (!DATABINDING::_DATABINDING_IS_DATA_ID_VALID(func_1133()))
 		{
@@ -38274,7 +38274,7 @@ int func_1138(var uParam0, int iParam1)
 		case -440651963:
 			*iParam1 = 5;
 			return 1;
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 		case 1965673387:
 			return 0;
 	}
@@ -39463,7 +39463,7 @@ void func_1178(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 					func_769(&(((*uParam0)[iVar0 /*22*/])->f_6), 1, 1);
 					if (MISC::IS_BIT_SET(uParam0[iVar0 /*22*/], 1))
 					{
-						HUD::_0x8BC7C1F929D07BF3(-1744263063);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PROMPT_MONEY"));
 					}
 					if (bParam2)
 					{
@@ -51505,7 +51505,7 @@ int func_1589(var uParam0, int iParam1, var uParam2)
 			return func_2110(uParam0, uParam2);
 		case -2144266389:
 			return 1;
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_2111(uParam0, uParam2);
 		case 1965673387:
 			return func_2112(uParam0, uParam2);
@@ -52013,7 +52013,7 @@ int func_1602(var uParam0, int iParam1, var uParam2)
 			return func_2138(uParam0, uParam2);
 		case -2144266389:
 			return func_2139(uParam0);
-		case -1548684311:
+		case joaat("HORSE_STAT_INFO_BOX"):
 			return func_2140(uParam0);
 		case 23814986:
 			return func_2141(uParam0);
@@ -87971,7 +87971,7 @@ void func_2726(int iParam0, int* iParam1, float fParam2, int iParam3, int iParam
 					{
 						func_1999(iParam1->f_6, sVar0, iParam1->f_19, 1);
 					}
-					HUD::_0x4CC5F2FC1332577F(-1744263063);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PROMPT_MONEY"));
 				}
 				if (MISC::IS_BIT_SET(*iParam1, 10))
 				{
@@ -92938,7 +92938,7 @@ int func_2906(var uParam0, var uParam1, int iParam2, int iParam3)
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar3, "isEndIconVisible", false);
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar3, "isRowActive", false);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_66, -1, -519723266, iVar3);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_66, -1, joaat("STAT_ATTRIBUTE_ITEM"), iVar3);
 	return 1;
 }
 
@@ -93127,7 +93127,7 @@ int func_2910(var uParam0, var uParam1, int iParam2, int iParam3)
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "isEndIconVisible", false);
 		DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "isRowActive", false);
 	}
-	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_65, -1, -519723266, iVar4);
+	DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_2094.f_65, -1, joaat("STAT_ATTRIBUTE_ITEM"), iVar4);
 	return 1;
 }
 

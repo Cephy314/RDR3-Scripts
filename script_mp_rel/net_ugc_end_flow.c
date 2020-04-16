@@ -552,7 +552,7 @@ void func_12()
 	func_64();
 	func_10();
 	HUD::_0x8BC7C1F929D07BF3(999578278);
-	HUD::_0x8BC7C1F929D07BF3(690901814);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
 	func_65();
 	func_66(1);
 	func_16(2048);
@@ -1598,7 +1598,7 @@ void func_58()
 		CAM::DO_SCREEN_FADE_OUT(0);
 		GRAPHICS::RESET_PAUSED_RENDERPHASES();
 		HUD::_0x8BC7C1F929D07BF3(999578278);
-		HUD::_0x8BC7C1F929D07BF3(690901814);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
 	}
 	else if (func_23(64) || func_21(32))
 	{
@@ -4770,7 +4770,7 @@ int func_188(bool bParam0)
 	{
 		return joaat("LEADERBOARD");
 	}
-	return -987928333;
+	return joaat("POST_MATCH");
 }
 
 int func_189()
@@ -5932,25 +5932,25 @@ int func_256(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 598430796;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_CUTSCENE");
 		case 1:
-			return 690901814;
+			return joaat("HUD_CTX_MISSION_CONTROLLER");
 		case 3:
 			return 2083323686;
 		case 2:
-			return 474191950;
+			return joaat("HUD_CTX_HACK_RADAR_FORCE_HIDE");
 		case 4:
-			return 128623374;
+			return joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION");
 		case 6:
-			return -993263478;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_INTRO");
 		case 7:
-			return 1344742130;
+			return joaat("HUD_CTX_IN_MP_GAME_MODE");
 		case 8:
 			return 537169871;
 		case 9:
 			return -1763610107;
 		case 10:
-			return 68203906;
+			return joaat("HUD_CTX_MISSION_CONTROLLER_OUTRO");
 		case 11:
 			return 253418738;
 		case 12:

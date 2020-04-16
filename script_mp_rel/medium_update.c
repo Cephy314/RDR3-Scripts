@@ -3171,7 +3171,7 @@ void func_135()
 
 void func_136(int iParam0)
 {
-	MISSIONDATA::_0x957A830C9B4B99EA(-1598695885, iParam0);
+	MISSIONDATA::_0x957A830C9B4B99EA(joaat("COOP0"), iParam0);
 }
 
 void func_137(int iParam0)
@@ -5963,9 +5963,9 @@ void func_260()
 	vVar6 = -1;
 	vVar6.f_1 = -1;
 	vVar6.f_2 = -1;
-	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(-4325789))
+	while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(joaat("UI_EVENT_CHANNEL_PROGRESS_MENU")))
 	{
-		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(-4325789, &vVar0))
+		if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(joaat("UI_EVENT_CHANNEL_PROGRESS_MENU"), &vVar0))
 		{
 			switch (vVar0.x)
 			{
@@ -5987,7 +5987,7 @@ void func_260()
 					{
 						switch (iVar4)
 						{
-							case -1598695885:
+							case joaat("COOP0"):
 								iVar5 = 13;
 								while (iVar5 <= 25)
 								{
@@ -6026,7 +6026,7 @@ void func_260()
 						CAM::DO_SCREEN_FADE_OUT(0);
 						Jump @326; //curOff = 317
 					}
-					UIEVENTS::_EVENT_MANAGER_POP_EVENT(-4325789);
+					UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("UI_EVENT_CHANNEL_PROGRESS_MENU"));
 			}
 		}
 	}

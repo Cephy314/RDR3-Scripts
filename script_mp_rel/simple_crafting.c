@@ -516,7 +516,7 @@ void func_10(var uParam0, int iParam1)
 	}
 	if (uParam0->f_54)
 	{
-		HUD::_0xC9CAEAEEC1256E54(-469828803);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_CRAFTING_SEQUENCE"));
 	}
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_CONTEXT_Y"), false);
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON"), false);
@@ -756,7 +756,7 @@ void func_10(var uParam0, int iParam1)
 			}
 			else
 			{
-				iVar2 = -813979060;
+				iVar2 = joaat("CRAFTING_MENU");
 				while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iVar2))
 				{
 					if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iVar2, &vVar3))
@@ -4054,7 +4054,7 @@ void func_117(var uParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 				{
 					func_119(uParam0, -1, bParam3, ((*Global_1913166)[bParam2 /*9*/])->f_1, 1, 0, 1);
 				}
-				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, uParam0->f_52, -2047994727, ((*Global_1913166)[bParam2 /*9*/])->f_1);
+				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, uParam0->f_52, joaat("CRAFTING_LIST_ITEM"), ((*Global_1913166)[bParam2 /*9*/])->f_1);
 			}
 			else
 			{
@@ -4746,7 +4746,7 @@ bool func_135(bool bParam0, bool bParam1, var uParam2, int iParam3, bool bParam4
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam2->f_42[iVar33]), &cVar41, sVar40);
 					StringCopy(&cVar41, "Enabled", 16);
 					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam2->f_42[iVar33]), &cVar41, func_115(bVar39, 1, 0));
-					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_47, -1, 309940639, &(uParam2->f_42[iVar33]));
+					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_47, -1, joaat("CRAFTING_RECIPE_LINE"), &(uParam2->f_42[iVar33]));
 				}
 				iVar33++;
 			}
@@ -7468,7 +7468,7 @@ void func_204(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar5, "overpower", bVar42);
 	if (bParam2)
 	{
-		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, -1, -2047994727, iVar5);
+		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_36, -1, joaat("CRAFTING_LIST_ITEM"), iVar5);
 	}
 }
 

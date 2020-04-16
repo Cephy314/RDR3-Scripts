@@ -225,7 +225,7 @@ int func_11(var uParam0)
 		ANIMSCENE::_DELETE_ANIM_SCENE(iLocal_4);
 	}
 	PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), true, 0, false);
-	HUD::_0x8BC7C1F929D07BF3(-1679307491);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	func_30(&uVar0, 0);
 	GRAPHICS::_0xEB48CE48EEC41FD4(func_31(iLocal_3, 16));
 	STREAMING::_0x5A8B01199C3E79C3();
@@ -486,7 +486,7 @@ int func_24(var uParam0)
 {
 	int iVar0;
 
-	HUD::_0x4CC5F2FC1332577F(-1679307491);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	if (func_21(&uLocal_5) && func_23(&uLocal_5) >= 1f)
 	{
 		if (ANIMSCENE::_0x25557E324489393C(iLocal_4) && ANIMSCENE::_0x477122B8D05E7968(iLocal_4, 1, 0))
@@ -625,11 +625,11 @@ void func_30(var uParam0, int iParam1)
 	PLAYER::SET_EVERYONE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
 	if (func_68(*uParam0, 2) || func_68(*uParam0, 4))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_68(*uParam0, 16))
 	{
@@ -1214,11 +1214,11 @@ void func_56(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	}
 	if (!func_100(*iParam0, 4) && !func_100(*iParam0, 2))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_100(*iParam0, 2048))
 	{

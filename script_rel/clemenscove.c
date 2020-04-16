@@ -1166,7 +1166,7 @@ int func_38(int iParam0)
 						if (iLocal_118 == 0)
 						{
 							CAM::_0xE296208C273BD7F0(0, -1, 0, 17, 1, 0);
-							HUD::_0xC9CAEAEEC1256E54(1331687942);
+							HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_IN_GAME_CUTSCENE"));
 							WEAPON::_0x94A3C1B804D291EC(Global_35, 0, 0, 0, 1);
 							func_104(Global_35, &uLocal_119, 1, 0, 0, 1084227584 /* Float: 5f */, 100, 0, 0);
 							func_51(&(Local_178.f_25), 0);
@@ -1209,7 +1209,7 @@ int func_38(int iParam0)
 					break;
 				case 4:
 					CAM::_0xE296208C273BD7F0(0, -1, 0, 17, 1, 0);
-					HUD::_0xC9CAEAEEC1256E54(1331687942);
+					HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_IN_GAME_CUTSCENE"));
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
 					if (!AUDIO::IS_ANY_SPEECH_PLAYING(Local_178.f_22))
 					{
@@ -1252,7 +1252,7 @@ int func_38(int iParam0)
 					break;
 				case 5:
 					CAM::_0xE296208C273BD7F0(0, -1, 0, 17, 1, 0);
-					HUD::_0xC9CAEAEEC1256E54(1331687942);
+					HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_IN_GAME_CUTSCENE"));
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
 					if (!PED::IS_PED_ON_MOUNT(Global_35))
 					{
@@ -1276,7 +1276,7 @@ int func_38(int iParam0)
 					break;
 				case 6:
 					CAM::_0xE296208C273BD7F0(0, -1, 0, 17, 1, 0);
-					HUD::_0xC9CAEAEEC1256E54(1331687942);
+					HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_IN_GAME_CUTSCENE"));
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
 					AITRANSPORT::_0x67F7CEAC2391E114(Local_178.f_24, 1);
 					ENTITY::FREEZE_ENTITY_POSITION(Local_178.f_24, false);
@@ -1311,7 +1311,7 @@ int func_38(int iParam0)
 					break;
 				case 7:
 					CAM::_0xE296208C273BD7F0(0, -1, 0, 17, 1, 0);
-					HUD::_0xC9CAEAEEC1256E54(1331687942);
+					HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_IN_GAME_CUTSCENE"));
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
 					if (PED::IS_PED_ON_MOUNT(Local_178.f_23))
 					{
@@ -1327,7 +1327,7 @@ int func_38(int iParam0)
 					break;
 				case 8:
 					CAM::_0xE296208C273BD7F0(0, -1, 0, 17, 1, 0);
-					HUD::_0xC9CAEAEEC1256E54(1331687942);
+					HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_SCRIPTED_IN_GAME_CUTSCENE"));
 					PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0, false);
 					if (func_101(Local_178.f_23, 713668775))
 					{
@@ -3421,7 +3421,7 @@ int func_104(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4, f
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, iParam3, false);
 				if (func_280(iParam2, 8192))
 				{
-					HUD::_0x8BC7C1F929D07BF3(724769646);
+					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				}
 			}
 		}
@@ -8861,11 +8861,11 @@ void func_284(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	}
 	if (!func_470(*uParam0, 4) && !func_470(*uParam0, 2))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_470(*uParam0, 2048))
 	{
@@ -9607,11 +9607,11 @@ void func_309(var uParam0, int iParam1)
 	PLAYER::SET_EVERYONE_IGNORE_PLAYER(PLAYER::PLAYER_ID(), false);
 	if (func_505(*uParam0, 2) || func_505(*uParam0, 4))
 	{
-		HUD::_0x4CC5F2FC1332577F(-1679307491);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(-1679307491);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	}
 	if (!func_505(*uParam0, 16))
 	{

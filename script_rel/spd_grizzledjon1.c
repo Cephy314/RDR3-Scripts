@@ -8990,55 +8990,55 @@ int func_348(int iParam0)
 		case 2:
 			return 647800524;
 		case 3:
-			return 521285631;
+			return joaat("SPGJ_ABAA");
 		case 4:
-			return -2032173156;
+			return joaat("SPGJ_ABAB");
 		case 5:
-			return -1688589837;
+			return joaat("SPGJ_ACAA");
 		case 6:
-			return -1935176562;
+			return joaat("SPGJ_ACAB");
 		case 7:
-			return -1361719062;
+			return joaat("SPGJ_ACAC");
 		case 8:
-			return -508119409;
+			return joaat("SPGJ_ACAD");
 		case 9:
-			return 1713553285;
+			return joaat("SPGJ_ACAE");
 		case 10:
-			return 1199407675;
+			return joaat("SPGJ_ACAF");
 		case 11:
-			return 1994416384;
+			return joaat("SPGJ_ACAG");
 		case 12:
-			return 1813450870;
+			return joaat("SPGJ_ADAA");
 		case 13:
-			return 320560820;
+			return joaat("SPGJ_ADAB");
 		case 14:
-			return -45010144;
+			return joaat("SPGJ_ADAC");
 		case 15:
-			return -398391040;
+			return joaat("SPGJ_ADAD");
 		case 16:
-			return 1519152533;
+			return joaat("SPGJ_ADAE");
 		case 17:
-			return -740794321;
+			return joaat("SPGJ_ADAF");
 		case 18:
-			return 1181360597;
+			return joaat("SPGJ_AEAA");
 		case 19:
-			return 2045413593;
+			return joaat("SPGJ_AEAB");
 		case 20:
-			return -1472338561;
+			return joaat("SPGJ_AEAC");
 		case 21:
-			return -279383116;
+			return joaat("SPGJ_AEAD");
 		case 22:
-			return -1952306104;
+			return joaat("SPGJ_AEAE");
 		case 23:
-			return -786974926;
+			return joaat("SPGJ_AEAF");
 		case 24:
-			return -1083894835;
+			return joaat("SPGJ_AEAG");
 		case 25:
-			return 877526489;
+			return joaat("SPGJ_AEAH");
 		case 26:
-			return 570579266;
+			return joaat("SPGJ_AEAI");
 		case 27:
-			return 1222616820;
+			return joaat("SPGJ_AEAJ");
 		case 28:
 			return 651646215;
 		case 29:
@@ -9050,101 +9050,101 @@ int func_348(int iParam0)
 		case 32:
 			return 1186960595;
 		case 33:
-			return -1600255762;
+			return joaat("SPGJ_AGAA");
 		case 34:
-			return -1236650938;
+			return joaat("SPGJ_AGAB");
 		case 35:
-			return -48741919;
+			return joaat("SPGJ_AGAC");
 		case 36:
-			return 326069903;
+			return joaat("SPGJ_AGAD");
 		case 37:
-			return -914269504;
+			return joaat("SPGJ_AGAE");
 		case 38:
-			return 1600554636;
+			return joaat("SPGJ_AGAF");
 		case 39:
-			return -1432609546;
+			return joaat("SPGJ_AGAG");
 		case 40:
-			return 1924247179;
+			return joaat("SPGJ_AHAA");
 		case 41:
-			return -907354884;
+			return joaat("SPGJ_AHAB");
 		case 42:
-			return -819140736;
+			return joaat("SPGJ_AHAC");
 		case 43:
-			return 288320408;
+			return joaat("SPGJ_AHAD");
 		case 44:
-			return -1563816261;
+			return joaat("SPGJ_AHAE");
 		case 45:
-			return -321477913;
+			return joaat("SPGJ_AHAF");
 		case 46:
-			return 1902958926;
+			return joaat("SPGJ_AIAA");
 		case 47:
-			return -1517257862;
+			return joaat("SPGJ_AJAA");
 		case 48:
-			return -1144543256;
+			return joaat("SPGJ_AJAB");
 		case 49:
-			return -937344869;
+			return joaat("SPGJ_AJAC");
 		case 50:
-			return -564171497;
+			return joaat("SPGJ_AJAD");
 		case 51:
-			return -295039696;
+			return joaat("SPGJ_AJAE");
 		case 52:
-			return -55531075;
+			return joaat("SPGJ_AJAF");
 		case 53:
-			return 269504636;
+			return joaat("SPGJ_AJAG");
 		case 54:
-			return 2122050036;
+			return joaat("SPGJ_AUAA");
 		case 55:
-			return 1882148187;
+			return joaat("SPGJ_AUAB");
 		case 56:
-			return -1796434215;
+			return joaat("SPGJ_AUAC");
 		case 57:
-			return -958793037;
+			return joaat("SPGJ_AUAD");
 		case 58:
-			return -1212195714;
+			return joaat("SPGJ_AUAE");
 		case 59:
-			return -615668838;
+			return joaat("SPGJ_AUAF");
 		case 60:
-			return 586527457;
+			return joaat("SPGJ_AUAG");
 		case 61:
-			return 306319738;
+			return joaat("SPGJ_AUAH");
 		case 62:
-			return -1489144503;
+			return joaat("SPGJ_AVAA");
 		case 63:
-			return 927339868;
+			return joaat("SPGJ_AVAB");
 		case 64:
-			return 1224423622;
+			return joaat("SPGJ_AVAC");
 		case 65:
-			return 1522129987;
+			return joaat("SPGJ_AVAD");
 		case 66:
-			return 1614276415;
+			return joaat("SPGJ_AVAE");
 		case 67:
-			return 1352091634;
+			return joaat("SPGJ_AVAF");
 		case 68:
-			return 1641441904;
+			return joaat("SPGJ_AVAG");
 		case 69:
-			return 1666293718;
+			return joaat("SPGJ_AWAA");
 		case 70:
-			return 726314953;
+			return joaat("SPGJ_AWAB");
 		case 71:
-			return 1326217036;
+			return joaat("SPGJ_AWAC");
 		case 72:
-			return -1854371888;
+			return joaat("SPGJ_AXAA");
 		case 73:
-			return -1631575457;
+			return joaat("SPGJ_AXAB");
 		case 74:
-			return 1106864335;
+			return joaat("SPGJ_AXAC");
 		case 75:
-			return 322407244;
+			return joaat("SPGJ_AXAD");
 		case 76:
-			return -699133562;
+			return joaat("SPGJ_AXAE");
 		case 77:
-			return 865913878;
+			return joaat("SPGJ_AXAF");
 		case 78:
-			return -1955923047;
+			return joaat("SPGJ_AXAG");
 		case 79:
-			return 1474270339;
+			return joaat("SPGJ_AXAH");
 		case 80:
-			return 527410108;
+			return joaat("SPGJ_AXAI");
 		case 81:
 			return 1616833083;
 		case 82:
@@ -9158,31 +9158,31 @@ int func_348(int iParam0)
 		case 86:
 			return -1567494320;
 		case 87:
-			return 83233700;
+			return joaat("SPGJ_AZAA");
 		case 88:
-			return 371830283;
+			return joaat("SPGJ_AZAB");
 		case 89:
-			return 535019903;
+			return joaat("SPGJ_AZAC");
 		case 90:
-			return -1814540230;
+			return joaat("SPGJ_BAAA");
 		case 91:
-			return -1982120896;
+			return joaat("SPGJ_BAAB");
 		case 92:
-			return 2033818365;
+			return joaat("SPGJ_BAAC");
 		case 93:
-			return -563059351;
+			return joaat("SPGJ_BAAD");
 		case 94:
-			return 1128738585;
+			return joaat("SPGJ_BAAE");
 		case 95:
-			return 830704530;
+			return joaat("SPGJ_BAAF");
 		case 96:
-			return -1816309744;
+			return joaat("SPGJ_BAAG");
 		case 97:
-			return -1971307114;
+			return joaat("SPGJ_BAAH");
 		case 98:
-			return 173129007;
+			return joaat("SPGJ_BAAI");
 		case 99:
-			return -124249668;
+			return joaat("SPGJ_BAAJ");
 		case 100:
 			return 1759886076;
 		case 101:
@@ -9202,51 +9202,51 @@ int func_348(int iParam0)
 		case 108:
 			return -697362927;
 		case 109:
-			return 1644872293;
+			return joaat("SPGJ_BCAA");
 		case 110:
-			return 966652332;
+			return joaat("SPGJ_BCAB");
 		case 111:
-			return 1279563481;
+			return joaat("SPGJ_BCAC");
 		case 112:
-			return -1007400857;
+			return joaat("SPGJ_BDAA");
 		case 113:
-			return -1437230114;
+			return joaat("SPGJ_BEAA");
 		case 114:
-			return -1204373600;
+			return joaat("SPGJ_BEAB");
 		case 115:
-			return 1238486263;
+			return joaat("SPGJ_AKAA");
 		case 116:
-			return 533144375;
+			return joaat("SPGJ_ALAA");
 		case 117:
-			return 1258781107;
+			return joaat("SPGJ_ALAB");
 		case 118:
-			return 1623972195;
+			return joaat("SPGJ_AMAA");
 		case 119:
-			return 395855609;
+			return joaat("SPGJ_AMAB");
 		case 120:
-			return 90481298;
+			return joaat("SPGJ_AMAC");
 		case 121:
-			return -1631836065;
+			return joaat("SPGJ_ANAA");
 		case 122:
-			return 698475550;
+			return joaat("SPGJ_AOAA");
 		case 123:
-			return 935428185;
+			return joaat("SPGJ_AOAB");
 		case 124:
-			return 1049275373;
+			return joaat("SPGJ_AQAA");
 		case 125:
-			return -1305552771;
+			return joaat("SPGJ_ARAA");
 		case 126:
 			return -629575373;
 		case 127:
-			return -45477584;
+			return joaat("SPGJ_ATAA");
 		case 128:
-			return -906112574;
+			return joaat("SPGJ_BFAA");
 		case 129:
-			return -69683849;
+			return joaat("SPGJ_BFAB");
 		case 130:
-			return -309225239;
+			return joaat("SPGJ_BFAC");
 		case 131:
-			return -2101397329;
+			return joaat("SPGJ_BGAA");
 		case 132:
 			return -1961808188;
 		default:

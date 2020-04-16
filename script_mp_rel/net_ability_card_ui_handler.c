@@ -94,14 +94,14 @@ void func_3()
 				case -2075827635:
 					switch (Var0.f_2)
 					{
-						case -1218139183:
+						case joaat("ABILITY_CARD_UI_EVENT_MENU_LOAD_LOCAL_PLAYER_EVENT"):
 							func_6(PLAYER::PLAYER_ID(), 1);
 							if (!UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("ABILITIES"), joaat("PROCEED")))
 							{
 								UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("ABILITIES"), joaat("EXIT"));
 							}
 							break;
-						case -1546234005:
+						case joaat("ABILITY_CARD_UI_EVENT_MENU_LOAD_EVENT"):
 							func_6(func_7(), 1);
 							if (!UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("ABILITIES"), joaat("PROCEED")))
 							{

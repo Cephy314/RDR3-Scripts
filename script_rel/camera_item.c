@@ -98,7 +98,7 @@ void __EntryFunction__()
 	fLocal_218 = 0.5f;
 	iLocal_220 = 4;
 	iLocal_221 = -1534086282;
-	iLocal_223 = -193491261;
+	iLocal_223 = joaat("DOMINOS_SET_1");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(515))
 	{
 		func_1(&Local_47, 0);
@@ -232,7 +232,7 @@ void __EntryFunction__()
 					if (func_24(iLocal_10, 0))
 					{
 						func_13(&Local_47, 12);
-						HUD::_0x4CC5F2FC1332577F(959420967);
+						HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 						MISC::SET_GAME_PAUSED(true);
 					}
 				}
@@ -248,7 +248,7 @@ void __EntryFunction__()
 				{
 					if ((MISC::GET_GAME_TIMER() - iLocal_191) > 500)
 					{
-						HUD::_0x8BC7C1F929D07BF3(959420967);
+						HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 						CAM::SET_CAM_ACTIVE(Local_47.f_32, false);
 						CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 						CAM::DETACH_CAM(Local_47.f_32);
@@ -310,7 +310,7 @@ void __EntryFunction__()
 						}
 						Global_1357507 = 1;
 						func_15();
-						HUD::_0x4CC5F2FC1332577F(959420967);
+						HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 						func_33();
 						iLocal_160 = MISC::GET_GAME_TIMER();
 						func_13(&Local_47, 5);
@@ -497,7 +497,7 @@ void __EntryFunction__()
 				}
 				if (func_51(&uLocal_185) > 1000)
 				{
-					HUD::_0x8BC7C1F929D07BF3(959420967);
+					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 					func_27();
 					func_52(&uLocal_185);
 					func_14();
@@ -672,7 +672,7 @@ void func_1(var uParam0, int iParam1)
 		CAM::DESTROY_CAM(uParam0->f_32, false);
 	}
 	SCRIPTS::SET_NO_LOADING_SCREEN(false);
-	HUD::_0x8BC7C1F929D07BF3(959420967);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 	Global_1357507 = 0;
 	Global_1357508 = 0;
 	AUDIO::_0x531A78D6BF27014B("CAMERA_SOUNDSET");
@@ -1996,7 +1996,7 @@ void func_53(var uParam0)
 	iLocal_214 = 0;
 	bLocal_173 = true;
 	bLocal_174 = false;
-	HUD::_0x4CC5F2FC1332577F(959420967);
+	HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_PLAYER_CAMERA_MODE"));
 }
 
 void func_54(var uParam0)

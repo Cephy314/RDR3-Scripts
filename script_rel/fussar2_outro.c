@@ -391,7 +391,7 @@ int func_21(var uParam0)
 	MISC::_0x3373779BAF7CAF48("fog", "FOG_guama");
 	MISC::_SET_WEATHER_TYPE(joaat("FOG"), true, true, false, 0f, false);
 	func_46(&uLocal_3);
-	HUD::_0xC9CAEAEEC1256E54(-1679307491);
+	HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	return 1;
 }
 
@@ -410,7 +410,7 @@ int func_23(var uParam0)
 
 	func_47(&(Global_1879514->f_6), 16);
 	func_48(&Global_0, 16);
-	HUD::_0xC9CAEAEEC1256E54(-1679307491);
+	HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	HUD::_UIPROMPT_ENABLE_PROMPT_TYPE_THIS_FRAME(6);
 	func_49();
 	func_50(42, 1, 1);
@@ -427,7 +427,7 @@ int func_23(var uParam0)
 			if (func_57())
 			{
 				CAM::DO_SCREEN_FADE_IN(1000);
-				HUD::_0x4CC5F2FC1332577F(-1679307491);
+				HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 				return 1;
 			}
 		}

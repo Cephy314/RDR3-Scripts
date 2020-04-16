@@ -126,7 +126,7 @@
 
 void __EntryFunction__()
 {
-	iLocal_7 = -1679307491;
+	iLocal_7 = joaat("HUD_CTX_IN_MISSION_CUTSCENE");
 	iLocal_112 = joaat("A_C_BLUEJAY_01");
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(555))
 	{
@@ -319,7 +319,7 @@ void func_10()
 
 void func_11(var uParam0)
 {
-	HUD::_0x8BC7C1F929D07BF3(-1679307491);
+	HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	if (INTERIOR::IS_VALID_INTERIOR(iLocal_107))
 	{
 		INTERIOR::UNPIN_INTERIOR(iLocal_107);

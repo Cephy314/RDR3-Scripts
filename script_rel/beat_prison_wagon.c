@@ -20859,7 +20859,7 @@ void func_585(int iParam0, bool bParam1)
 		return;
 	}
 	UILOG::_UILOG_ADD_ENTRY_HASH(4, func_718(iParam0), func_719(iParam0), MISC::GET_HASH_KEY(sVar4), MISC::GET_HASH_KEY(sVar5), 0);
-	UILOG::_UILOG_SET_ENTRY_BRIEF_TEXTURE(4, func_718(iParam0), MISC::GET_HASH_KEY(sVar6), -445557482);
+	UILOG::_UILOG_SET_ENTRY_BRIEF_TEXTURE(4, func_718(iParam0), MISC::GET_HASH_KEY(sVar6), joaat("SP_MISSIONS_20"));
 	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(4, func_718(iParam0), iVar2, iVar3);
 	UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(4, func_718(iParam0), MISC::GET_HASH_KEY(sVar0), sVar0, false, false, false);
 	if (bParam1)
@@ -20960,7 +20960,7 @@ void func_589(int iParam0, bool bParam1)
 		return;
 	}
 	UILOG::_UILOG_ADD_ENTRY_HASH(4, func_723(iParam0), func_724(iParam0), iVar3, iVar5, 0);
-	UILOG::_UILOG_SET_ENTRY_BRIEF_TEXTURE(4, func_723(iParam0), iVar8, -445557482);
+	UILOG::_UILOG_SET_ENTRY_BRIEF_TEXTURE(4, func_723(iParam0), iVar8, joaat("SP_MISSIONS_20"));
 	UILOG::_UILOG_SET_ENTRY_ICON_TEXTURE(4, func_723(iParam0), iVar6, iVar7);
 	UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(4, func_723(iParam0), iVar1, sVar0, false, false, false);
 	if (bParam1)
@@ -26848,11 +26848,11 @@ int func_828(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}
@@ -26865,11 +26865,11 @@ void func_829(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(121713391);
+		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(121713391);
+		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 

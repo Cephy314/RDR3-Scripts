@@ -672,7 +672,7 @@ int func_13(var uParam0, bool bParam1)
 		}
 		if (func_16(uParam0->f_151, 64))
 		{
-			HUD::_0x8BC7C1F929D07BF3(2011163970);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			func_6(&(uParam0->f_151), 64);
 		}
 	}
@@ -813,7 +813,7 @@ int func_13(var uParam0, bool bParam1)
 				func_41(uParam0, 6);
 				uParam0->f_157 = 10;
 				func_17(&(uParam0->f_151), 64);
-				HUD::_0x4CC5F2FC1332577F(2011163970);
+				HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			}
 			else
 			{
@@ -828,7 +828,7 @@ int func_13(var uParam0, bool bParam1)
 				if ((func_60(uParam0->f_154 == 4) && uParam0->f_154 != -1) || (((func_16(uParam0->f_151, 131072) && func_56(268435456)) && func_56(16777216)) && Global_1392040->f_2))
 				{
 					uParam0->f_155 = func_61();
-					HUD::_0x4CC5F2FC1332577F(2011163970);
+					HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 					func_17(&(uParam0->f_151), 64);
 					func_41(uParam0, 5);
 					if ((func_56(16777216) || func_16(uParam0->f_151, 524288)) || Global_1392040->f_2)
@@ -893,7 +893,7 @@ int func_13(var uParam0, bool bParam1)
 									func_55(16777216);
 									func_6(&(uParam0->f_151), 524288);
 									func_17(&(uParam0->f_151), 64);
-									HUD::_0x4CC5F2FC1332577F(2011163970);
+									HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 									func_45(&(uParam0->f_57), 2);
 									func_62(uParam0, 0);
 									func_41(uParam0, 10);
@@ -3216,7 +3216,7 @@ int func_79(var uParam0, bool bParam1, int iParam2, int iParam3)
 			func_41(uParam0, 7);
 			return 0;
 		case 16:
-			HUD::_0x8BC7C1F929D07BF3(2011163970);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			func_53(uParam0);
 			func_17(&(uParam0->f_151), 262144);
 			break;
@@ -3240,7 +3240,7 @@ int func_79(var uParam0, bool bParam1, int iParam2, int iParam3)
 			func_170(uParam0, func_16(uParam0->f_151, 16));
 			uParam0->f_157 = 0;
 			func_53(uParam0);
-			HUD::_0x8BC7C1F929D07BF3(2011163970);
+			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_PLAYER_CAMP"));
 			break;
 		default:
 			return 0;
@@ -7626,7 +7626,7 @@ int func_228(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 				{
 					if (func_264() && (func_451(38) || func_356(38)))
 					{
-						func_359(38, COLLECTION::_0x13AAECDA43318BFE(-2076669067, iVar6), COLLECTION::_0xD52D20B0C76BB26D(-2076669067, iVar6), iVar7, 12, 0, iVar6);
+						func_359(38, COLLECTION::_0x13AAECDA43318BFE(joaat("CIGARETTE_CARDS"), iVar6), COLLECTION::_0xD52D20B0C76BB26D(joaat("CIGARETTE_CARDS"), iVar6), iVar7, 12, 0, iVar6);
 					}
 					else
 					{
@@ -12780,7 +12780,7 @@ void func_359(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		case 38:
 			sVar0 = "COL_CC_TITLE";
 			sVar3 = "COL_CC_CARD_FOUND";
-			iVar7 = -2076669067;
+			iVar7 = joaat("CIGARETTE_CARDS");
 			if (func_264() && (func_451(38) || func_356(38)))
 			{
 				sVar1 = "COL_CC_INTRO";
@@ -12866,7 +12866,7 @@ void func_359(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 		sVar1 = "COL_ALL_LOG_UPDATED";
 	}
 	sVar2 = "COL_CTX_PLAYER_LOG";
-	if (iVar7 == -2076669067)
+	if (iVar7 == joaat("CIGARETTE_CARDS"))
 	{
 		if (func_264() && (func_451(38) || func_356(38)))
 		{
@@ -12997,7 +12997,7 @@ void func_360(int iParam0, int iParam1, bool bParam2, int iParam3, char* sParam4
 			sVar4 = "COL_CC_TITLE";
 			vVar6 = { -1678.832f, -335.5439f, 172.9001f };
 			iVar9 = 12;
-			iVar14 = -2076669067;
+			iVar14 = joaat("CIGARETTE_CARDS");
 			break;
 		case 39:
 			if (func_264() && (func_451(39) || func_356(39)))
@@ -14985,7 +14985,7 @@ int func_444(int iParam0)
 	iVar1 = 0;
 	while (iVar1 < func_756())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (iParam0 == func_757(iVar0))
 		{
 			return iVar0;
@@ -15009,7 +15009,7 @@ int func_446(int iParam0)
 	iVar1 = 0;
 	while (iVar1 < func_756())
 	{
-		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, -2076669067, 0);
+		iVar0 = COLLECTION::_0x126CBEBBA46693CF(iVar1, joaat("CIGARETTE_CARDS"), 0);
 		if (iParam0 == func_445(iVar0))
 		{
 			if (func_25(func_757(iVar0), 1, 0))
@@ -15031,12 +15031,12 @@ void func_447(int iParam0)
 
 int func_448(int iParam0)
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, iParam0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 int func_449(int iParam0)
 {
-	return COLLECTION::_0x93F2E7B5DB85657B(-2076669067, iParam0);
+	return COLLECTION::_0x93F2E7B5DB85657B(joaat("CIGARETTE_CARDS"), iParam0);
 }
 
 int func_450(int iParam0)
@@ -16508,7 +16508,7 @@ int func_495()
 	int iVar4;
 	int iVar5;
 
-	iVar0 = COLLECTION::_0x5461C821D00FE15A(-2076669067, 0);
+	iVar0 = COLLECTION::_0x5461C821D00FE15A(joaat("CIGARETTE_CARDS"), 0);
 	if (iVar0 == func_756())
 	{
 		return func_496();
@@ -16518,7 +16518,7 @@ int func_495()
 	iVar2 = 0;
 	while (iVar2 < func_756())
 	{
-		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, -2076669067, 0);
+		iVar1 = COLLECTION::_0x126CBEBBA46693CF(iVar2, joaat("CIGARETTE_CARDS"), 0);
 		if (!func_805(iVar1))
 		{
 			if (iVar5 == iVar3)
@@ -16537,7 +16537,7 @@ int func_496()
 	int iVar0;
 
 	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, func_756());
-	return func_757(COLLECTION::_0x126CBEBBA46693CF(iVar0, -2076669067, 0));
+	return func_757(COLLECTION::_0x126CBEBBA46693CF(iVar0, joaat("CIGARETTE_CARDS"), 0));
 }
 
 void func_497(int iParam0)
@@ -17801,7 +17801,7 @@ void func_549(var uParam0, int iParam1)
 	}
 	if (uParam0->f_58)
 	{
-		HUD::_0xC9CAEAEEC1256E54(-469828803);
+		HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_CRAFTING_SEQUENCE"));
 	}
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_CONTEXT_Y"), false);
 	PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_INTERACT_LOCKON"), false);
@@ -18097,7 +18097,7 @@ void func_549(var uParam0, int iParam1)
 			}
 			else
 			{
-				iVar3 = -813979060;
+				iVar3 = joaat("CRAFTING_MENU");
 				while (UIEVENTS::_EVENT_MANAGER_IS_EVENT_PENDING(iVar3))
 				{
 					if (UIEVENTS::_EVENT_MANAGER_PEEK_EVENT(iVar3, &iVar4))
@@ -22037,7 +22037,7 @@ char* func_691(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 {
 	switch (iParam1)
 	{
-		case -2076669067:
+		case joaat("CIGARETTE_CARDS"):
 			if (iParam2 == 7)
 			{
 				sParam3 = "COL_TX_CHECK_BACK";
@@ -22199,7 +22199,7 @@ char* func_691(int iParam0, int iParam1, int iParam2, char* sParam3, char* sPara
 
 int func_692(int iParam0, int iParam1, int iParam2)
 {
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		if (iParam1 == joaat("COL_CC_INTRO"))
 		{
@@ -22265,7 +22265,7 @@ int func_695(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	iVar0 = 0;
 	while (iVar0 < iParam6)
 	{
-		if (iParam2 == -2076669067)
+		if (iParam2 == joaat("CIGARETTE_CARDS"))
 		{
 			iVar2 = func_977(iVar0);
 			if (iParam4 == iVar2)
@@ -22422,7 +22422,7 @@ int func_696(int iParam0, int iParam1, int iParam2, int iParam3)
 	{
 		bVar0 = false;
 	}
-	if (iParam2 == -2076669067)
+	if (iParam2 == joaat("CIGARETTE_CARDS"))
 	{
 		UILOG::_UILOG_ADD_OR_UPDATE_OBJECTIVE(3, iParam1, MISC::GET_HASH_KEY("COL_CC_ITEMS_DELIVERED"), "COL_CC_ITEMS_DELIVERED", bVar0, true, false);
 	}
@@ -24224,7 +24224,7 @@ int func_755()
 
 int func_756()
 {
-	return COLLECTION::_0x62CAB7DB62EAD434(-2076669067, 0);
+	return COLLECTION::_0x62CAB7DB62EAD434(joaat("CIGARETTE_CARDS"), 0);
 }
 
 int func_757(int iParam0)
@@ -34801,7 +34801,7 @@ void func_1099(var uParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 				{
 					func_1100(uParam0, -1, bParam3, ((*Global_1911914)[iParam2 /*9*/])->f_1, 1, 0, 1);
 				}
-				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, uParam0->f_56, -2047994727, ((*Global_1911914)[iParam2 /*9*/])->f_1);
+				DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, uParam0->f_56, joaat("CRAFTING_LIST_ITEM"), ((*Global_1911914)[iParam2 /*9*/])->f_1);
 			}
 			else
 			{
@@ -35203,7 +35203,7 @@ bool func_1106(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4
 					DATABINDING::_DATABINDING_WRITE_DATA_STRING_FROM_PARENT(&(uParam2->f_46[iVar33]), &cVar43, sVar42);
 					StringCopy(&cVar43, "Enabled", 16);
 					DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(&(uParam2->f_46[iVar33]), &cVar43, func_843(bVar40, 1, 0));
-					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_51, -1, 309940639, &(uParam2->f_46[iVar33]));
+					DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam2->f_51, -1, joaat("CRAFTING_RECIPE_LINE"), &(uParam2->f_46[iVar33]));
 				}
 				iVar33++;
 			}
@@ -35765,11 +35765,11 @@ int func_1128(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -1896546861;
+			return joaat("STATS_HEALTH");
 		case 1:
-			return 304419444;
+			return joaat("STATS_STAMINA");
 		case 2:
-			return 1497019382;
+			return joaat("STATS_DEADEYE");
 		default:
 			break;
 	}
@@ -39020,7 +39020,7 @@ void func_1217(var uParam0, int iParam1, bool bParam2, bool bParam3)
 	DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar5, "overpower", bVar42);
 	if (bParam2)
 	{
-		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, -1, -2047994727, iVar5);
+		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_HASH_ALIAS(uParam0->f_40, -1, joaat("CRAFTING_LIST_ITEM"), iVar5);
 	}
 }
 
