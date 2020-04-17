@@ -1,5 +1,5 @@
 # Generated With
-1. [GTA-V-Script-Decompiler](https://github.com/gottfriedleibniz/GTA-V-Script-Decompiler)
+1. [RAGE-Script-Decompiler](https://github.com/Senexis/RAGE-Script-Decompiler)
 
 # Sources
 1. [rdr3-nativedb-data](https://github.com/alloc8or/rdr3-nativedb-data): Native table used for RDR3 & RDR-Console decompilation.
