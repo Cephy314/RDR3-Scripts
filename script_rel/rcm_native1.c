@@ -4208,7 +4208,7 @@ int func_186(int iParam0)
 			switch (vVar0.x)
 			{
 				case -1203660660:
-					if (vVar0.z == 2338895)
+					if (vVar0.z == joaat("UI_EVENT_ABANDON_CHECKPOINT"))
 					{
 						if (UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU")))
 						{

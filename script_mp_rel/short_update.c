@@ -800,7 +800,7 @@ void func_28()
 				case -1740156697:
 					switch (vVar9.z)
 					{
-						case 813560150:
+						case joaat("WEAPON_WHEEL"):
 							if (!Global_1939067->f_10)
 							{
 								func_169();
@@ -816,7 +816,7 @@ void func_28()
 								Global_1939067->f_37 = 1;
 							}
 							break;
-						case -414255251:
+						case joaat("SATCHEL_ITEM_WHEEL"):
 							func_171();
 							func_172(0);
 							Global_1939067->f_11 = 1;
@@ -834,10 +834,10 @@ void func_28()
 				case -632467210:
 					switch (vVar9.z)
 					{
-						case 813560150:
+						case joaat("WEAPON_WHEEL"):
 							Global_1939067->f_10 = 0;
 							break;
-						case -414255251:
+						case joaat("SATCHEL_ITEM_WHEEL"):
 							Global_1939067->f_11 = 0;
 							break;
 						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
@@ -30468,7 +30468,7 @@ void func_942(int iParam0, bool bParam1)
 			case 978049229:
 				func_1617(iParam0, Var26.f_5);
 				break;
-			case -1918697215:
+			case joaat("EFFECT_HORSE_HEALTH_CORE"):
 				iVar37 = func_1296(iParam0, 0);
 				fVar38 = Var26.f_5;
 				func_1618(iParam0, 0, (iVar37 + BUILTIN::CEIL(fVar38)));
@@ -53788,36 +53788,36 @@ void func_1816(bool bParam0)
 				uVar32 = func_2196(1, Var22.f_2);
 				func_2199(Var22.f_2);
 			}
-			else if (-416929031 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE") == Var22.f_1)
 			{
 				fVar33 = func_2200(BUILTIN::TO_FLOAT(Var22.f_2), Var22.f_5);
 				func_2201(0, fVar33, 1, 1, bVar37);
 				bVar39 = true;
 			}
-			else if (1857353317 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE") == Var22.f_1)
 			{
 				fVar34 = func_2200(BUILTIN::TO_FLOAT(Var22.f_2), Var22.f_5);
 				func_2201(2, fVar34, 1, 1, bVar37);
 				bVar38 = true;
 			}
-			else if (1681823811 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE") == Var22.f_1)
 			{
 				fVar35 = func_2200(BUILTIN::TO_FLOAT(Var22.f_2), Var22.f_5);
 				func_2201(1, fVar35, 1, 1, bVar37);
 			}
-			else if (2062242710 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_1619(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_2202(19, fVar36, 1, 1);
 				bVar39 = true;
 			}
-			else if (-826379728 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_1619(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_2202(20, fVar36, 1, 1);
 				bVar38 = true;
 			}
-			else if (-1191740624 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_1619(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_2202(18, fVar36, 1, 1);

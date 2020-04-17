@@ -4775,7 +4775,7 @@ int func_188(bool bParam0)
 
 int func_189()
 {
-	return 205122612;
+	return joaat("TO_LEADERBOARD");
 }
 
 int func_190()

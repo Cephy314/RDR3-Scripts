@@ -547,17 +547,17 @@ void func_15(var uParam0, bool bParam1)
 				fVar3 = func_26(1, (IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2));
 				func_29((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2));
 				break;
-			case -416929031:
+			case joaat("EFFECT_HEALTH_CORE"):
 				fVar4 = func_30((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2), ((uParam0->f_33[iVar0 /*7*/])->f_5 / uParam0->f_2));
 				func_31(0, fVar4, 1, 1, bVar10);
 				iVar9 = 1;
 				break;
-			case 1857353317:
+			case joaat("EFFECT_DEADEYE_CORE"):
 				fVar5 = func_30((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2), ((uParam0->f_33[iVar0 /*7*/])->f_5 / uParam0->f_2));
 				func_31(2, fVar5, 1, 1, bVar10);
 				bVar8 = true;
 				break;
-			case 1681823811:
+			case joaat("EFFECT_STAMINA_CORE"):
 				fVar6 = func_30((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2), ((uParam0->f_33[iVar0 /*7*/])->f_5 / uParam0->f_2));
 				func_31(1, fVar6, 1, 1, bVar10);
 				break;
@@ -569,17 +569,17 @@ void func_15(var uParam0, bool bParam1)
 				{
 					switch ((uParam0->f_33[iVar0 /*7*/])->f_1)
 					{
-						case 2062242710:
+						case joaat("EFFECT_HEALTH_CORE_GOLD"):
 							fVar7 = func_33(BUILTIN::TO_FLOAT((uParam0->f_33[iVar0 /*7*/])->f_3), (uParam0->f_33[iVar0 /*7*/])->f_4);
 							func_34(19, fVar7, bVar11, 1);
 							iVar9 = 1;
 							break;
-						case -826379728:
+						case joaat("EFFECT_DEADEYE_CORE_GOLD"):
 							fVar7 = func_33(BUILTIN::TO_FLOAT((uParam0->f_33[iVar0 /*7*/])->f_3), (uParam0->f_33[iVar0 /*7*/])->f_4);
 							func_34(20, fVar7, bVar11, 1);
 							bVar8 = true;
 							break;
-						case -1191740624:
+						case joaat("EFFECT_STAMINA_CORE_GOLD"):
 							fVar7 = func_33(BUILTIN::TO_FLOAT((uParam0->f_33[iVar0 /*7*/])->f_3), (uParam0->f_33[iVar0 /*7*/])->f_4);
 							func_34(18, fVar7, bVar11, 1);
 							break;

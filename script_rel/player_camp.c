@@ -10666,7 +10666,7 @@ void func_321(int iParam0, float fParam1, bool bParam2)
 					func_575((IntToFloat((Var33[iVar0 /*7*/])->f_2) / fParam1));
 					func_573(1, 7000);
 				}
-				else if (-416929031 == (Var33[iVar0 /*7*/])->f_1)
+				else if (joaat("EFFECT_HEALTH_CORE") == (Var33[iVar0 /*7*/])->f_1)
 				{
 					fVar4 = func_576((IntToFloat((Var33[iVar0 /*7*/])->f_2) / fParam1), ((Var33[iVar0 /*7*/])->f_5 / fParam1));
 					if (func_577(&uVar9, &uVar10, fVar4))
@@ -10676,7 +10676,7 @@ void func_321(int iParam0, float fParam1, bool bParam2)
 						bVar175 = true;
 					}
 				}
-				else if (1857353317 == (Var33[iVar0 /*7*/])->f_1)
+				else if (joaat("EFFECT_DEADEYE_CORE") == (Var33[iVar0 /*7*/])->f_1)
 				{
 					fVar5 = func_576((IntToFloat((Var33[iVar0 /*7*/])->f_2) / fParam1), ((Var33[iVar0 /*7*/])->f_5 / fParam1));
 					if (func_577(&uVar9, &uVar10, fVar5))
@@ -10686,7 +10686,7 @@ void func_321(int iParam0, float fParam1, bool bParam2)
 						bVar174 = true;
 					}
 				}
-				else if (1681823811 == (Var33[iVar0 /*7*/])->f_1)
+				else if (joaat("EFFECT_STAMINA_CORE") == (Var33[iVar0 /*7*/])->f_1)
 				{
 					fVar6 = func_576((IntToFloat((Var33[iVar0 /*7*/])->f_2) / fParam1), ((Var33[iVar0 /*7*/])->f_5 / fParam1));
 					if (func_577(&uVar9, &uVar10, fVar6))
@@ -10701,19 +10701,19 @@ void func_321(int iParam0, float fParam1, bool bParam2)
 				}
 				else if (bParam2)
 				{
-					if (2062242710 == (Var33[iVar0 /*7*/])->f_1)
+					if (joaat("EFFECT_HEALTH_CORE_GOLD") == (Var33[iVar0 /*7*/])->f_1)
 					{
 						fVar7 = func_582(BUILTIN::TO_FLOAT((Var33[iVar0 /*7*/])->f_3), (Var33[iVar0 /*7*/])->f_4);
 						func_583(19, fVar7);
 						bVar175 = true;
 					}
-					else if (-826379728 == (Var33[iVar0 /*7*/])->f_1)
+					else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == (Var33[iVar0 /*7*/])->f_1)
 					{
 						fVar7 = func_582(BUILTIN::TO_FLOAT((Var33[iVar0 /*7*/])->f_3), (Var33[iVar0 /*7*/])->f_4);
 						func_583(20, fVar7);
 						bVar174 = true;
 					}
-					else if (-1191740624 == (Var33[iVar0 /*7*/])->f_1)
+					else if (joaat("EFFECT_STAMINA_CORE_GOLD") == (Var33[iVar0 /*7*/])->f_1)
 					{
 						fVar7 = func_582(BUILTIN::TO_FLOAT((Var33[iVar0 /*7*/])->f_3), (Var33[iVar0 /*7*/])->f_4);
 						func_583(18, fVar7);
@@ -34903,7 +34903,7 @@ void func_1142(int iParam0, bool bParam1)
 				func_1411(Var22.f_2);
 				func_573(1, 7000);
 			}
-			else if (-416929031 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE") == Var22.f_1)
 			{
 				fVar33 = func_1412(Var22.f_2, Var22.f_5);
 				if (func_577(&uVar38, &uVar39, fVar33))
@@ -34913,7 +34913,7 @@ void func_1142(int iParam0, bool bParam1)
 				}
 				bVar41 = true;
 			}
-			else if (1857353317 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE") == Var22.f_1)
 			{
 				fVar34 = func_1412(Var22.f_2, Var22.f_5);
 				if (func_577(&uVar38, &uVar39, fVar34))
@@ -34923,7 +34923,7 @@ void func_1142(int iParam0, bool bParam1)
 				}
 				bVar40 = true;
 			}
-			else if (1681823811 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE") == Var22.f_1)
 			{
 				fVar35 = func_1412(Var22.f_2, Var22.f_5);
 				if (func_577(&uVar38, &uVar39, fVar35))
@@ -34932,19 +34932,19 @@ void func_1142(int iParam0, bool bParam1)
 					func_573(1, 7000);
 				}
 			}
-			else if (2062242710 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_582(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_583(19, fVar36);
 				bVar41 = true;
 			}
-			else if (-826379728 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_582(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_583(20, fVar36);
 				bVar40 = true;
 			}
-			else if (-1191740624 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_582(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_583(18, fVar36);
@@ -46793,10 +46793,10 @@ void func_1513(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4
 						case -1104847406:
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "deadeye", bVar49);
 							break;
-						case 1857353317:
+						case joaat("EFFECT_DEADEYE_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "deadeyeCore", bVar49);
 							break;
-						case -826379728:
+						case joaat("EFFECT_DEADEYE_CORE_GOLD"):
 							iVar40 = 1;
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "deadeyeCore", 12);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "deadeyeCoreDurationCategory", Var42.f_6);
@@ -46809,7 +46809,7 @@ void func_1513(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4
 						case -943921969:
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "health", bVar49);
 							break;
-						case -416929031:
+						case joaat("EFFECT_HEALTH_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthCore", bVar49);
 							break;
 						case 1869697234:
@@ -46817,7 +46817,7 @@ void func_1513(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "health", 11);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "healthDurationCategory", Var42.f_6);
 							break;
-						case 2062242710:
+						case joaat("EFFECT_HEALTH_CORE_GOLD"):
 							iVar40 = 1;
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthCore", 12);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "healthCoreDurationCategory", Var42.f_6);
@@ -46825,10 +46825,10 @@ void func_1513(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4
 						case 381158954:
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "stamina", bVar49);
 							break;
-						case 1681823811:
+						case joaat("EFFECT_STAMINA_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "staminaCore", bVar49);
 							break;
-						case -1191740624:
+						case joaat("EFFECT_STAMINA_CORE_GOLD"):
 							iVar40 = 1;
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "staminaCore", 12);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "staminaCoreDurationCategory", Var42.f_6);
@@ -46846,7 +46846,7 @@ void func_1513(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthHorse", 11);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "healthHorseDurationCategory", Var42.f_6);
 							break;
-						case -1918697215:
+						case joaat("EFFECT_HORSE_HEALTH_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthCoreHorse", bVar49);
 							break;
 						case 1136630075:
@@ -50091,10 +50091,10 @@ void func_1636(var uParam0, int iParam1, bool bParam2, bool bParam3)
 					case -1104847406:
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "deadeye", iVar51);
 						break;
-					case 1857353317:
+					case joaat("EFFECT_DEADEYE_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "deadeyeCore", iVar51);
 						break;
-					case -826379728:
+					case joaat("EFFECT_DEADEYE_CORE_GOLD"):
 						bVar42 = true;
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "deadeyeCore", 12);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "deadeyeCoreDurationCategory", Var44.f_6);
@@ -50107,7 +50107,7 @@ void func_1636(var uParam0, int iParam1, bool bParam2, bool bParam3)
 					case -943921969:
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "health", iVar51);
 						break;
-					case -416929031:
+					case joaat("EFFECT_HEALTH_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthCore", iVar51);
 						break;
 					case 1869697234:
@@ -50115,7 +50115,7 @@ void func_1636(var uParam0, int iParam1, bool bParam2, bool bParam3)
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "health", 11);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "healthDurationCategory", Var44.f_6);
 						break;
-					case 2062242710:
+					case joaat("EFFECT_HEALTH_CORE_GOLD"):
 						bVar42 = true;
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthCore", 12);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "healthCoreDurationCategory", Var44.f_6);
@@ -50123,10 +50123,10 @@ void func_1636(var uParam0, int iParam1, bool bParam2, bool bParam3)
 					case 381158954:
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "stamina", iVar51);
 						break;
-					case 1681823811:
+					case joaat("EFFECT_STAMINA_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "staminaCore", iVar51);
 						break;
-					case -1191740624:
+					case joaat("EFFECT_STAMINA_CORE_GOLD"):
 						bVar42 = true;
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "staminaCore", 12);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "staminaCoreDurationCategory", Var44.f_6);
@@ -50144,7 +50144,7 @@ void func_1636(var uParam0, int iParam1, bool bParam2, bool bParam3)
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthHorse", 11);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "healthHorseDurationCategory", Var44.f_6);
 						break;
-					case -1918697215:
+					case joaat("EFFECT_HORSE_HEALTH_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthCoreHorse", iVar51);
 						break;
 					case 1136630075:

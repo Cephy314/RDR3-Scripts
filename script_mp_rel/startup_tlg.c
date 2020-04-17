@@ -24730,19 +24730,19 @@ void func_486(var uParam0, int iParam1, bool bParam2)
 				fVar1 = func_726(0, (IntToFloat((Var6.f_33[iVar0 /*7*/])->f_2) / Var6.f_2));
 				bVar4 = true;
 				break;
-			case -416929031:
+			case joaat("EFFECT_HEALTH_CORE"):
 				fVar2 = func_727((IntToFloat((Var6.f_33[iVar0 /*7*/])->f_2) / Var6.f_2), ((Var6.f_33[iVar0 /*7*/])->f_5 / Var6.f_2));
 				bVar4 = true;
 				break;
 			case 1869697234:
-			case 2062242710:
+			case joaat("EFFECT_HEALTH_CORE_GOLD"):
 				bVar4 = true;
 				bVar5 = true;
 				break;
 			case -1104847406:
-			case -826379728:
+			case joaat("EFFECT_DEADEYE_CORE_GOLD"):
 			case 1342237631:
-			case 1857353317:
+			case joaat("EFFECT_DEADEYE_CORE"):
 				bVar3 = true;
 				break;
 		}
@@ -38557,11 +38557,11 @@ char* func_1068(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4,
 		return "INVALID";
 	}
 	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("ABILITIES"));
-	if (iVar1 == 1738917854)
+	if (iVar1 == joaat("ABILITIES_MENU_LOADOUT"))
 	{
 		return func_1283(func_1282());
 	}
-	else if (iVar1 == -477213344)
+	else if (iVar1 == joaat("ABILITIES_MENU_SELECTION"))
 	{
 		return func_1284(&uParam0);
 	}

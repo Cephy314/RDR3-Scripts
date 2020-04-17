@@ -192,7 +192,7 @@ void func_4()
 		else
 		{
 			iVar1 = func_24(iVar3);
-			if (func_25(iVar3) == 369178237 || func_25(iVar3) == 1726108579)
+			if (func_25(iVar3) == joaat("CHEAT_LOCKED") || func_25(iVar3) == joaat("CURRENT_OPTION_LOCKED"))
 			{
 			}
 			else if (func_26(iVar1))
@@ -371,7 +371,7 @@ void func_7(int iParam0)
 			}
 			else
 			{
-				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(uVar0, func_6(5), 369178237);
+				DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(uVar0, func_6(5), joaat("CHEAT_LOCKED"));
 			}
 			break;
 		default:
@@ -433,8 +433,8 @@ char* func_8(int iParam0)
 				return func_37(iVar1);
 			}
 			break;
-		case 369178237:
-		case 1726108579:
+		case joaat("CHEAT_LOCKED"):
+		case joaat("CURRENT_OPTION_LOCKED"):
 			return "CHEAT_UNLOCK_DESCRIPTION";
 		case 866112557:
 			if (func_26(iVar1))
@@ -624,7 +624,7 @@ void func_15()
 								}
 								else
 								{
-									DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[&Local_9.f_93[iVar3]]), func_6(5), 369178237);
+									DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[&Local_9.f_93[iVar3]]), func_6(5), joaat("CHEAT_LOCKED"));
 								}
 								Local_9.f_93[iVar3] = Local_9.f_43;
 								DATABINDING::_DATABINDING_WRITE_DATA_BOOL_FROM_PARENT(&(Local_9.f_4[Local_9.f_43]), func_6(6), 0);
@@ -903,7 +903,7 @@ void func_23(int iParam0)
 	func_69(iParam0);
 	if (func_53(iParam0))
 	{
-		if (func_25(&(Local_9.f_4[iVar0])) != 369178237)
+		if (func_25(&(Local_9.f_4[iVar0])) != joaat("CHEAT_LOCKED"))
 		{
 			if (!func_70(iParam0, &(Local_9.f_44[func_33(iParam0)])))
 			{
@@ -1377,12 +1377,12 @@ int func_39(int iParam0)
 			}
 			else
 			{
-				return 1726108579;
+				return joaat("CURRENT_OPTION_LOCKED");
 			}
 		}
 		else
 		{
-			return 369178237;
+			return joaat("CHEAT_LOCKED");
 		}
 	}
 	if (func_20(iParam0))
@@ -1430,7 +1430,7 @@ int func_39(int iParam0)
 			return joaat("UNLOCKED");
 		}
 	}
-	return 369178237;
+	return joaat("CHEAT_LOCKED");
 }
 
 bool func_40(int iParam0)
@@ -1541,22 +1541,22 @@ int func_46(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = 712650642; /* GXTEntry: "Off" */
+			iVar0 = joaat("CHEAT_OFF");
 			break;
 		case 1:
-			iVar0 = -283422691; /* GXTEntry: "Level 1" */
+			iVar0 = joaat("CHEAT_LEVEL_1");
 			break;
 		case 2:
-			iVar0 = 14021522; /* GXTEntry: "Level 2" */
+			iVar0 = joaat("CHEAT_LEVEL_2");
 			break;
 		case 3:
-			iVar0 = 232066452; /* GXTEntry: "Level 3" */
+			iVar0 = joaat("CHEAT_LEVEL_3");
 			break;
 		case 4:
-			iVar0 = 461023455; /* GXTEntry: "Level 4" */
+			iVar0 = joaat("CHEAT_LEVEL_4");
 			break;
 		case 5:
-			iVar0 = 709936779; /* GXTEntry: "Level 5" */
+			iVar0 = joaat("CHEAT_LEVEL_5");
 			break;
 	}
 	return iVar0;
@@ -1993,7 +1993,7 @@ void func_65(int iParam0, int iParam1, int iParam2)
 	iVar1 = func_82(iParam2, (iParam1 - 1));
 	if (iVar1 == -1)
 	{
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), 369178237);
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("CHEAT_LOCKED"));
 		return;
 	}
 	if (func_20(iVar1))
@@ -2003,9 +2003,9 @@ void func_65(int iParam0, int iParam1, int iParam2)
 			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("UNLOCKED"));
 		}
 	}
-	else if (iVar0 != 1726108579)
+	else if (iVar0 != joaat("CURRENT_OPTION_LOCKED"))
 	{
-		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), 1726108579);
+		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(5), joaat("CURRENT_OPTION_LOCKED"));
 	}
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(&(Local_9.f_4[iParam0]), func_6(18), func_46(iParam1));
 }

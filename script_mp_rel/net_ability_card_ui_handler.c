@@ -1289,11 +1289,11 @@ char* func_74(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, v
 		return "INVALID";
 	}
 	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("ABILITIES"));
-	if (iVar1 == 1738917854)
+	if (iVar1 == joaat("ABILITIES_MENU_LOADOUT"))
 	{
 		return func_111(func_15());
 	}
-	else if (iVar1 == -477213344)
+	else if (iVar1 == joaat("ABILITIES_MENU_SELECTION"))
 	{
 		return func_112(&uParam0);
 	}

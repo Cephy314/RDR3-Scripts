@@ -3865,10 +3865,10 @@ void func_114(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 						case -1104847406:
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "deadeye", bVar49);
 							break;
-						case 1857353317:
+						case joaat("EFFECT_DEADEYE_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "deadeyeCore", bVar49);
 							break;
-						case -826379728:
+						case joaat("EFFECT_DEADEYE_CORE_GOLD"):
 							bVar40 = true;
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "deadeyeCore", 12);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "deadeyeCoreDurationCategory", Var42.f_6);
@@ -3881,7 +3881,7 @@ void func_114(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 						case -943921969:
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "health", bVar49);
 							break;
-						case -416929031:
+						case joaat("EFFECT_HEALTH_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthCore", bVar49);
 							break;
 						case 1869697234:
@@ -3889,7 +3889,7 @@ void func_114(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "health", 11);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "healthDurationCategory", Var42.f_6);
 							break;
-						case 2062242710:
+						case joaat("EFFECT_HEALTH_CORE_GOLD"):
 							bVar40 = true;
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthCore", 12);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "healthCoreDurationCategory", Var42.f_6);
@@ -3897,10 +3897,10 @@ void func_114(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 						case 381158954:
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "stamina", bVar49);
 							break;
-						case 1681823811:
+						case joaat("EFFECT_STAMINA_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "staminaCore", bVar49);
 							break;
-						case -1191740624:
+						case joaat("EFFECT_STAMINA_CORE_GOLD"):
 							bVar40 = true;
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "staminaCore", 12);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "staminaCoreDurationCategory", Var42.f_6);
@@ -3918,7 +3918,7 @@ void func_114(var uParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthHorse", 11);
 							DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar0, "healthHorseDurationCategory", Var42.f_6);
 							break;
-						case -1918697215:
+						case joaat("EFFECT_HORSE_HEALTH_CORE"):
 							DATABINDING::_DATABINDING_WRITE_DATA_INT_FROM_PARENT(iVar0, "healthCoreHorse", bVar49);
 							break;
 						case 1136630075:
@@ -6831,10 +6831,10 @@ void func_183(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 					case -1104847406:
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "deadeye", bVar51);
 						break;
-					case 1857353317:
+					case joaat("EFFECT_DEADEYE_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "deadeyeCore", bVar51);
 						break;
-					case -826379728:
+					case joaat("EFFECT_DEADEYE_CORE_GOLD"):
 						bVar42 = true;
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "deadeyeCore", 12);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "deadeyeCoreDurationCategory", Var44.f_6);
@@ -6847,7 +6847,7 @@ void func_183(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 					case -943921969:
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "health", bVar51);
 						break;
-					case -416929031:
+					case joaat("EFFECT_HEALTH_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthCore", bVar51);
 						break;
 					case 1869697234:
@@ -6855,7 +6855,7 @@ void func_183(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "health", 11);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "healthDurationCategory", Var44.f_6);
 						break;
-					case 2062242710:
+					case joaat("EFFECT_HEALTH_CORE_GOLD"):
 						bVar42 = true;
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthCore", 12);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "healthCoreDurationCategory", Var44.f_6);
@@ -6863,10 +6863,10 @@ void func_183(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 					case 381158954:
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "stamina", bVar51);
 						break;
-					case 1681823811:
+					case joaat("EFFECT_STAMINA_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "staminaCore", bVar51);
 						break;
-					case -1191740624:
+					case joaat("EFFECT_STAMINA_CORE_GOLD"):
 						bVar42 = true;
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "staminaCore", 12);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "staminaCoreDurationCategory", Var44.f_6);
@@ -6884,7 +6884,7 @@ void func_183(var uParam0, bool bParam1, bool bParam2, bool bParam3)
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthHorse", 11);
 						DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING_FROM_PARENT(iVar5, "healthHorseDurationCategory", Var44.f_6);
 						break;
-					case -1918697215:
+					case joaat("EFFECT_HORSE_HEALTH_CORE"):
 						DATABINDING::_DATABINDING_ADD_DATA_INT(iVar5, "healthCoreHorse", bVar51);
 						break;
 					case 1136630075:

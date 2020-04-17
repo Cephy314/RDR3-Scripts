@@ -1820,7 +1820,7 @@ int func_47(var uParam0, int iParam1)
 	switch (uParam0->f_1)
 	{
 		case 4096:
-			return -211871734 /* GXTEntry: "Letter to Annette from Claude" */;
+			return joaat("DOCUMENT_SHACK_LOVE_TRIANGLE_LETTER");
 		case 8192:
 			if (iParam1 == 0)
 			{

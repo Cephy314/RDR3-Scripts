@@ -2297,7 +2297,7 @@ int func_96(int* iParam0)
 
 	if (!func_144())
 	{
-		if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("REWARDS"), -30326557))
+		if (!UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("REWARDS"), joaat("TO_GOLD_STORE")))
 		{
 		}
 		return 0;

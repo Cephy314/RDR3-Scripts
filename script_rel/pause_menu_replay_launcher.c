@@ -80477,7 +80477,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19193:
 				return 141209672 /* GXTEntry: "Letter to Uncle Lewis from Elijah" */;
 			case 19194:
-				return -656919449 /* GXTEntry: "Note" */;
+				return joaat("DOCUMENT_DISCO_SLAVE");
 			case 19195:
 				return joaat("DOCUMENT_DISCO_SLAVE_NEWSCLIP");
 			case 19196:
@@ -80981,7 +80981,7 @@ int func_1357(int iParam0, int iParam1)
 			case 19445:
 				return -1800171607 /* GXTEntry: "Bride Photograph" */;
 			case 19446:
-				return -211871734 /* GXTEntry: "Letter to Annette from Claude" */;
+				return joaat("DOCUMENT_SHACK_LOVE_TRIANGLE_LETTER");
 			case 19447:
 				return 1238534972 /* GXTEntry: "A Day\'s Walk Poem" */;
 			case 19448:

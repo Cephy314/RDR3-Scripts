@@ -20859,7 +20859,7 @@ void func_791(int iParam0, int iParam1)
 			case 978049229:
 				func_882(iParam0, Var26.f_5);
 				break;
-			case -1918697215:
+			case joaat("EFFECT_HORSE_HEALTH_CORE"):
 				iVar37 = func_492(iParam0, 0);
 				fVar38 = Var26.f_5;
 				func_493(iParam0, 0, (iVar37 + BUILTIN::CEIL(fVar38)));
@@ -21172,7 +21172,7 @@ void func_798(int iParam0, int iParam1)
 			case 978049229:
 				func_882(iParam0, Var24.f_5);
 				break;
-			case -1918697215:
+			case joaat("EFFECT_HORSE_HEALTH_CORE"):
 				if (func_490(0, &uVar31))
 				{
 					fVar39 = Var24.f_5;

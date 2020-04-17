@@ -8917,7 +8917,7 @@ void func_134(var uParam0, var uParam1, bool bParam2)
 				func_129(&(uParam1->f_87), 1024);
 			}
 			break;
-		case 409305524: /* GXTEntry: "Player Options" */
+		case joaat("PLAYER_OPTIONS"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam1->f_87.f_1930.f_5, "");
 			break;
 		case joaat("STARTING_INVENTORY"):
@@ -14011,7 +14011,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 						case -600701932:
 							func_533(&(uParam2->f_87.f_3065), Var0.f_1, DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(Var0.f_3, "item_index"));
 							break;
-						case -892886940:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_JOIN_TEAM"):
 							if (((*uParam1)[iVar12 /*21*/])->f_5 == uParam2->f_87.f_6)
 							{
 								func_535("MP_LOBBY_JOIN_TEAM_CANCEL_QUEUE_TICKER", uParam2->f_87.f_3342[uParam2->f_87.f_6 /*8*/], func_534(uParam0, uParam2, PLAYER::NETWORK_PLAYER_ID_TO_INT(), uParam2->f_87.f_6));
@@ -14089,7 +14089,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 								}
 							}
 							break;
-						case 2060637039:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_READY_UP"):
 							if (func_219((*uParam1)[iVar12 /*21*/], 8))
 							{
 								func_235(uParam1, 8);
@@ -14102,7 +14102,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 						case joaat("NET_UGC_LOBBY_UI_EVENT_INVITE_PLAYER"):
 							func_543(uParam0, uParam2, &(uParam2->f_87.f_10), &(uParam2->f_87.f_17));
 							break;
-						case -1138111981:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_INVITE_ALL_PLAYERS"):
 							if (!func_15(&(uParam2->f_10), 128) && func_544())
 							{
 								switch (uParam2->f_87.f_27)
@@ -14158,7 +14158,7 @@ void func_386(var uParam0, var uParam1, var uParam2)
 							break;
 						case joaat("NET_UGC_LOBBY_UI_EVENT_MESSAGE_PLAYER"):
 							break;
-						case -534988100:
+						case joaat("NET_UGC_LOBBY_UI_EVENT_VIEW_CREATOR_PROFILE"):
 							NETWORK::NETWORK_SHOW_PROFILE_UI(&(uParam2->f_10.f_1));
 							break;
 						case joaat("NET_UGC_LOBBY_UI_EVENT_VIEW_PROFILE"):
@@ -20712,7 +20712,7 @@ void func_620(var uParam0, var uParam1, var uParam2)
 	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("LOBBIES_MENU"));
 	if (uParam2->f_87.f_2 != iVar1)
 	{
-		if (uParam2->f_87.f_2 == 409305524 && iVar1 == joaat("LOBBY_PLAYERS_TEAMS"))
+		if (uParam2->f_87.f_2 == joaat("PLAYER_OPTIONS") && iVar1 == joaat("LOBBY_PLAYERS_TEAMS"))
 		{
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_9, MISC::_CREATE_VAR_STRING(10, "MP_LOBBY_TEAMS_TOOLTIP", uParam2->f_87.f_3342[uParam2->f_87.f_6 /*8*/]));
 		}
@@ -20799,7 +20799,7 @@ void func_620(var uParam0, var uParam1, var uParam2)
 				func_572(uParam0, uParam1, uParam2, 0, 1);
 				func_862(uParam1, uParam2);
 				break;
-			case 409305524: /* GXTEntry: "Player Options" */
+			case joaat("PLAYER_OPTIONS"):
 				func_863(uParam0, uParam2, uParam1);
 				break;
 			case joaat("GAME_DETAILS"):
@@ -26578,7 +26578,7 @@ void func_854(var uParam0, var uParam1, var uParam2, int iParam3)
 				DATABINDING::_DATABINDING_WRITE_DATA_INT(uParam2->f_87.f_30.f_23, 1);
 			}
 			break;
-		case 409305524: /* GXTEntry: "Player Options" */
+		case joaat("PLAYER_OPTIONS"):
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_7, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_PLAYER_OPTIONS_HEADER"));
 			DATABINDING::_DATABINDING_WRITE_DATA_STRING(uParam2->f_87.f_30.f_8, &(uParam2->f_87.f_17));
 			func_1122(uParam0, uParam2);
@@ -31383,7 +31383,7 @@ int func_1004(int iParam0, bool bParam1)
 {
 	switch (iParam0)
 	{
-		case 238850895:
+		case joaat("PLAYER_MENU_VIEW_ABILITY_LOADOUT_FOCUS_EVENT"):
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_54, bParam1);
 			break;
 		case -1108319209:
@@ -33254,12 +33254,12 @@ void func_1103(var uParam0)
 
 	*uParam0 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "lobby_player_data");
 	uParam0->f_1 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "teams_nav_visible", true);
-	uParam0->f_2 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, 796332293, -84758224);
+	uParam0->f_2 = DATABINDING::_DATABINDING_ADD_DATA_HASH_BY_HASH(*uParam0, joaat("INVITE_FILTER"), -84758224);
 	uParam0->f_3 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(*uParam0, -1821544064, 3);
 	uParam0->f_4 = DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(*uParam0, 2093245832, 0);
 	uParam0->f_5 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST(*uParam0, "lobby_player_collection");
 	uParam0->f_6 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "player_list_info_text", "PLAYERS_EMPTY");
-	uParam0->f_7 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, -1887394100, false);
+	uParam0->f_7 = DATABINDING::_DATABINDING_ADD_DATA_BOOL_BY_HASH(*uParam0, joaat("SHOW_GAMERCARD_VISIBLE"), false);
 	uParam0->f_8 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "show_stable_text", MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_SHOW_STABLE"));
 	uParam0->f_9 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "show_stable_visible", false);
 	uParam0->f_16 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "dynamic_list_item_prompt_dpad_left_right_text", "");
@@ -33425,7 +33425,7 @@ void func_1109(var uParam0)
 {
 	uParam0->f_2644 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "lobby_stable_data");
 	uParam0->f_2644.f_1 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST(uParam0->f_2644, "lobby_stable_collection");
-	uParam0->f_2644.f_4 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(uParam0->f_2644, -1598411022, MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_STABLE_CAT_MY_HORSES"));
+	uParam0->f_2644.f_4 = DATABINDING::_DATABINDING_ADD_DATA_STRING_BY_HASH(uParam0->f_2644, joaat("FILTER_RAW_TEXT"), MISC::_CREATE_VAR_STRING(2, "MP_LOBBY_STABLE_CAT_MY_HORSES"));
 	DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(uParam0->f_2644, -1821544064, 1);
 	DATABINDING::_DATABINDING_ADD_DATA_INT_BY_HASH(uParam0->f_2644, 2093245832, 0);
 	DATABINDING::_DATABINDING_CLEAR_BINDING_ARRAY(uParam0->f_2644.f_1);
@@ -40549,7 +40549,7 @@ void func_1367(var uParam0, var uParam1)
 	Var0.f_33 = -1527315056;
 	Var0.f_5 = -1;
 	Var0.f_4 = joaat("MAIN_LOBBY_HOST");
-	Var0.f_7 = 1830184421; /* GXTEntry: "View Players" */
+	Var0.f_7 = joaat("MP_LOBBY_VIEW_PLAYERS");
 	func_1570(&(uParam1->f_87.f_55.f_1), uParam1->f_87.f_55, func_1370("teams"), Var0);
 	func_1141(uParam0, uParam1);
 	iVar34 = func_416(uParam0);
@@ -46791,13 +46791,13 @@ int func_1632(int iParam0)
 	switch (iParam0)
 	{
 		case 4:
-			return -1896177107 /* GXTEntry: "Small Camp" */;
+			return joaat("NET_CAMP_SIZE_SMALLEST");
 		case 7:
-			return 2042309940 /* GXTEntry: "Large Camp" */;
+			return joaat("NET_CAMP_SIZE_LARGEST");
 		default:
 			break;
 	}
-	return -1896177107 /* GXTEntry: "Small Camp" */;
+	return joaat("NET_CAMP_SIZE_SMALLEST");
 }
 
 int func_1633(int iParam0, int iParam1)
@@ -46839,9 +46839,9 @@ void func_1634(bool bParam0, bool bParam1)
 		func_1816(0);
 		if (func_1818(&iVar1, &iVar2))
 		{
-			if (iVar2 != -1896177107)
+			if (iVar2 != joaat("NET_CAMP_SIZE_SMALLEST"))
 			{
-				iVar2 = -1896177107; /* GXTEntry: "Small Camp" */
+				iVar2 = joaat("NET_CAMP_SIZE_SMALLEST");
 				func_1633(iVar1, iVar2);
 			}
 		}
@@ -51311,9 +51311,9 @@ int func_1811(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1896177107: /* GXTEntry: "Small Camp" */
+		case joaat("NET_CAMP_SIZE_SMALLEST"):
 			return 4;
-		case 2042309940: /* GXTEntry: "Large Camp" */
+		case joaat("NET_CAMP_SIZE_LARGEST"):
 			return 7;
 		default:
 			break;

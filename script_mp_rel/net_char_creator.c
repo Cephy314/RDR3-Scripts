@@ -17588,7 +17588,7 @@ int func_386(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 638520522:
+		case joaat("CHARACTER_CREATOR_MAIN"):
 			return 0;
 		default:
 			break;
@@ -18541,13 +18541,13 @@ int func_390(int iParam0)
 			return 0;
 		case joaat("MPCC_UI_FOCUS_ITEM_AGE"):
 			return 1;
-		case -1015269885:
+		case joaat("MPCC_UI_FOCUS_ITEM_MAIN_APPEARANCE_OPTION"):
 			return 2;
-		case -279722605:
+		case joaat("MPCC_UI_FOCUS_ITEM_MAIN_WHISTLE_OPTION"):
 			return 3;
-		case -746987411:
+		case joaat("MPCC_UI_FOCUS_ITEM_MAIN_ATTRIBUTES_OPTION"):
 			return 4;
-		case 1322599313:
+		case joaat("MPCC_UI_FOCUS_ITEM_CONFIRM"):
 			return 5;
 		case -1960177834:
 			return 7;
@@ -18641,41 +18641,41 @@ int func_390(int iParam0)
 			return 49;
 		case joaat("MPCC_UI_FOCUS_ITEM_HEAD_EYE_POSITION"):
 			return 50;
-		case 1840918486:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_PRESET_OPTION"):
 			return 52;
-		case -152557498:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_SKIN_MOTTLING_OPTION"):
 			return 53;
-		case -1206037154:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_AGEING_OPTION"):
 			return 54;
-		case 203763151:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_COMPLEXION_OPTION"):
 			return 55;
 		case 644634932:
 			return 56;
-		case -703865325:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_FRECKLES_OPTION"):
 			return 57;
-		case -861918092:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_MOLES_OPTION"):
 			return 58;
-		case -1662451772:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_SPOTS_OPTION"):
 			return 59;
 		case 285284140:
 			return 60;
 		case -1760692996:
 			return 61;
-		case -951031692:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_FOUNDATION_OPTION"):
 			return 62;
-		case -2041745821:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_BLUSHER_OPTION"):
 			return 63;
-		case -1212243458:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_EYELINER_OPTION"):
 			return 65;
-		case 1050320382:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_EYESHADOW_OPTION"):
 			return 64;
-		case 606268471:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_LIPSTICK_OPTION"):
 			return 66;
 		case 1807454184:
 			return 67;
 		case joaat("MPCC_UI_FOCUS_ITEM_FACE_EYEBROWS_OPTION"):
 			return 68;
-		case -179641279:
+		case joaat("MPCC_UI_FOCUS_ITEM_FACE_FACEPAINT_OPTION"):
 			return 69;
 		case 664388307:
 			return 71;
@@ -18683,13 +18683,13 @@ int func_390(int iParam0)
 			return 70;
 		case 505087938:
 			return 72;
-		case 625901731:
+		case joaat("MPCC_UI_FOCUS_ITEM_HAIR_STYLE"):
 			return 73;
 		case -559666029:
 			return 74;
 		case 1944575058:
 			return 75;
-		case -1595605714:
+		case joaat("MPCC_UI_FOCUS_ITEM_BEARD_STYLE"):
 			return 76;
 		case 1841403670:
 			return 77;
@@ -18707,17 +18707,17 @@ int func_390(int iParam0)
 			return 83;
 		case -1032863457:
 			return 84;
-		case 90611106:
+		case joaat("MPCC_UI_FOCUS_ITEM_WHISTLE_STYLE"):
 			return 85;
-		case -1891216663:
+		case joaat("MPCC_UI_FOCUS_ITEM_WHISTLE_PITCH"):
 			return 86;
-		case -1277218079:
+		case joaat("MPCC_UI_FOCUS_ITEM_WHISTLE_CLARITY"):
 			return 87;
-		case 54610417:
+		case joaat("MPCC_UI_FOCUS_ITEM_ATTRIBUTE_HEALTH"):
 			return 88;
-		case -484997455:
+		case joaat("MPCC_UI_FOCUS_ITEM_ATTRIBUTE_STAMINA"):
 			return 89;
-		case -745101721:
+		case joaat("MPCC_UI_FOCUS_ITEM_ATTRIBUTE_DEADEYE"):
 			return 90;
 		default:
 			break;
@@ -23419,7 +23419,7 @@ void func_587(var uParam0, int iParam1)
 			sVar0 = func_748(uParam0, 13);
 			func_728(uParam0, sVar0);
 			break;
-		case 139406372:
+		case joaat("MPCC_UI_PLAY_WHISTLE_SOUND"):
 			func_749(uParam0->f_615, 869278708, joaat("UNSPECIFIED"));
 			break;
 		case 908554354:

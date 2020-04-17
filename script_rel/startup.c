@@ -1939,7 +1939,7 @@ int func_76()
 			switch (vVar1.x)
 			{
 				case -1203660660:
-					if (vVar1.z == -490822059)
+					if (vVar1.z == joaat("LOAD_SP"))
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_SP", "Load_Menu_Scenes");
 						func_253(joaat("SINGLE_PLAYER"));
@@ -1950,23 +1950,23 @@ int func_76()
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 						iVar0 = 1;
 					}
-					else if (vVar1.z == 367452774)
+					else if (vVar1.z == joaat("LANDING_PAGE_TILE"))
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 						iVar0 = 1;
 					}
-					else if (vVar1.z == 1317995259)
+					else if (vVar1.z == joaat("LOAD_MP_INTRO"))
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 						func_253(joaat("FREEROAM"));
 						func_254(joaat("INTRO_NOT_DONE"));
 						iVar0 = 1;
 					}
-					else if (vVar1.z == 425390024)
+					else if (vVar1.z == joaat("SOCIAL_CLUB_OPEN"))
 					{
 						NETWORK::_0x7AC752103856FB20(false);
 					}
-					else if (vVar1.z == 446331713)
+					else if (vVar1.z == joaat("SOCIAL_CLUB_CLOSED"))
 					{
 						NETWORK::_0x7AC752103856FB20(true);
 					}

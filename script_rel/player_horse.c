@@ -22275,7 +22275,7 @@ void func_790(bool bParam0, int iParam1)
 			case 978049229:
 				func_998(bParam0, Var24.f_5);
 				break;
-			case -1918697215:
+			case joaat("EFFECT_HORSE_HEALTH_CORE"):
 				if (func_641(0, &uVar31))
 				{
 					fVar39 = Var24.f_5;

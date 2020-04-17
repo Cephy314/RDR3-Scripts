@@ -300,7 +300,7 @@ void func_7(var uParam0, bool bParam1)
 			func_17((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2));
 			func_15(1, 7000);
 		}
-		else if (-416929031 == (uParam0->f_33[iVar0 /*7*/])->f_1)
+		else if (joaat("EFFECT_HEALTH_CORE") == (uParam0->f_33[iVar0 /*7*/])->f_1)
 		{
 			fVar4 = func_18((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2), ((uParam0->f_33[iVar0 /*7*/])->f_5 / uParam0->f_2));
 			if (func_19(&(uParam0->f_9), &(uParam0->f_10), fVar4))
@@ -310,7 +310,7 @@ void func_7(var uParam0, bool bParam1)
 			}
 			bVar10 = true;
 		}
-		else if (1857353317 == (uParam0->f_33[iVar0 /*7*/])->f_1)
+		else if (joaat("EFFECT_DEADEYE_CORE") == (uParam0->f_33[iVar0 /*7*/])->f_1)
 		{
 			fVar5 = func_18((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2), ((uParam0->f_33[iVar0 /*7*/])->f_5 / uParam0->f_2));
 			if (func_19(&(uParam0->f_9), &(uParam0->f_10), fVar5))
@@ -320,7 +320,7 @@ void func_7(var uParam0, bool bParam1)
 				bVar9 = true;
 			}
 		}
-		else if (1681823811 == (uParam0->f_33[iVar0 /*7*/])->f_1)
+		else if (joaat("EFFECT_STAMINA_CORE") == (uParam0->f_33[iVar0 /*7*/])->f_1)
 		{
 			fVar6 = func_18((IntToFloat((uParam0->f_33[iVar0 /*7*/])->f_2) / uParam0->f_2), ((uParam0->f_33[iVar0 /*7*/])->f_5 / uParam0->f_2));
 			if (func_19(&(uParam0->f_9), &(uParam0->f_10), fVar6))
@@ -335,19 +335,19 @@ void func_7(var uParam0, bool bParam1)
 		}
 		else if (bParam1)
 		{
-			if (2062242710 == (uParam0->f_33[iVar0 /*7*/])->f_1)
+			if (joaat("EFFECT_HEALTH_CORE_GOLD") == (uParam0->f_33[iVar0 /*7*/])->f_1)
 			{
 				fVar7 = func_24(BUILTIN::TO_FLOAT((uParam0->f_33[iVar0 /*7*/])->f_3), (uParam0->f_33[iVar0 /*7*/])->f_4);
 				func_25(19, fVar7);
 				bVar10 = true;
 			}
-			else if (-826379728 == (uParam0->f_33[iVar0 /*7*/])->f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == (uParam0->f_33[iVar0 /*7*/])->f_1)
 			{
 				fVar7 = func_24(BUILTIN::TO_FLOAT((uParam0->f_33[iVar0 /*7*/])->f_3), (uParam0->f_33[iVar0 /*7*/])->f_4);
 				func_25(20, fVar7);
 				bVar9 = true;
 			}
-			else if (-1191740624 == (uParam0->f_33[iVar0 /*7*/])->f_1)
+			else if (joaat("EFFECT_STAMINA_CORE_GOLD") == (uParam0->f_33[iVar0 /*7*/])->f_1)
 			{
 				fVar7 = func_24(BUILTIN::TO_FLOAT((uParam0->f_33[iVar0 /*7*/])->f_3), (uParam0->f_33[iVar0 /*7*/])->f_4);
 				func_25(18, fVar7);

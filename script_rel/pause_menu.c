@@ -782,14 +782,14 @@ void func_16(var uParam0)
 				case -1740156697:
 					switch (Var0.f_2)
 					{
-						case -1330172908:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_CARD_FOCUS_EVENT"):
 							break;
-						case 1238474784:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_LOADOUT_CARD_FOCUS_EVENT"):
 							break;
-						case 248393197:
+						case joaat("PAUSE_UI_RPG_DETAIL_ITEM_FOCUS"):
 							func_80(Var0.f_3);
 							break;
-						case 1537860827:
+						case joaat("PAUSE_UI_COMPLETION_PROGRESS_ITEM_FOCUS"):
 							func_81(uParam0, &Var0);
 							break;
 					}
@@ -815,17 +815,17 @@ void func_16(var uParam0)
 							break;
 						case joaat("RESUME_STORY"):
 							break;
-						case 2096096105:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_LOADOUT_CARD_SELECT_SLOT_EVENT"):
 							break;
-						case -1086656831:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_LOADOUT_CARD_SELECT_REMOVE_CARD_EVENT"):
 							break;
-						case 1777696068:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_CARD_SELECT_EQUIP_CARD_EVENT"):
 							break;
-						case 891622121:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_CARD_BUY_CARD_EVENT"):
 							break;
-						case 792408241:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_CARD_BUY_CARD_SLOT_EVENT"):
 							break;
-						case 1070621771:
+						case joaat("PAUSE_UI_SCRIPT_ABILITY_CARD_UPGRADE_CARD_EVENT"):
 							break;
 						case 1320195282:
 							uParam0->f_167 = 1;
@@ -854,7 +854,7 @@ int func_17(var uParam0, var uParam1)
 			switch (vVar0.x)
 			{
 				case -1203660660:
-					if (vVar0.z == 270525852)
+					if (vVar0.z == joaat("TOGGLE_MISSION_CHECKLIST"))
 					{
 						uParam0->f_155 = !uParam0->f_155;
 						DATABINDING::_DATABINDING_WRITE_DATA_BOOL(uParam0->f_156, uParam0->f_155);
@@ -1814,7 +1814,7 @@ void func_65(var uParam0, int iParam1)
 				DATABINDING::_DATABINDING_ADD_DATA_BOOL(iVar4, "textureVisible", true);
 				break;
 		}
-		DATABINDING::_DATABINDING_ADD_DATA_HASH(iVar4, "focus_event_hash", 1537860827);
+		DATABINDING::_DATABINDING_ADD_DATA_HASH(iVar4, "focus_event_hash", joaat("PAUSE_UI_COMPLETION_PROGRESS_ITEM_FOCUS"));
 		DATABINDING::_DATABINDING_INSERT_UI_ITEM_TO_LIST_FROM_CONTEXT_STRING_ALIAS(uParam0->f_159, iParam1, "itemEntry", iVar4);
 	}
 }

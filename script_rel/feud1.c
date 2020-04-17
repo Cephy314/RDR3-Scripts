@@ -66456,7 +66456,7 @@ void func_1419()
 			uVar1 = DATABINDING::_DATABINDING_ADD_DATA_CONTAINER_FROM_PATH("", "Fishing");
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uVar1, "LureName", sVar0);
 			DATABINDING::_DATABINDING_ADD_DATA_STRING(uVar1, "LureCount", "");
-			DATABINDING::_DATABINDING_ADD_DATA_HASH(uVar1, "LureTexture", -973584697);
+			DATABINDING::_DATABINDING_ADD_DATA_HASH(uVar1, "LureTexture", joaat("FISHING_TYPE_BOBBER"));
 		}
 	}
 }
@@ -73015,7 +73015,7 @@ int func_1593(int iParam0)
 			switch (vVar0.x)
 			{
 				case -1203660660:
-					if (vVar0.z == 2338895)
+					if (vVar0.z == joaat("UI_EVENT_ABANDON_CHECKPOINT"))
 					{
 						if (UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU")))
 						{

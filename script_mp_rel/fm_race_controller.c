@@ -34041,7 +34041,7 @@ void func_1160(int iParam0)
 
 	sVar0 = "Out_of_Bounds";
 	sVar1 = "RDRO_Countdown_Sounds";
-	if ((((((((((((UIAPPS::_IS_APP_RUNNING(joaat("PAUSE_MENU")) && UIAPPS::_0x96FD694FE5BE55DC(joaat("PAUSE_MENU")) != 1271225230) || UIAPPS::_IS_APP_RUNNING(joaat("SOCIAL_CLUB_FEED"))) || UIAPPS::_IS_APP_RUNNING(joaat("SOCIAL_CLUB_LOGIN"))) || UIAPPS::_IS_APP_RUNNING(joaat("SAVELOAD_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("HELP_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("POLICIES_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("SETTINGS_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("ABILITIES"))) || UIAPPS::_IS_APP_RUNNING(joaat("STORE"))) || UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY"))) || UIAPPS::_IS_APP_RUNNING(joaat("PROGRESS_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("STATS_MENU")))
+	if ((((((((((((UIAPPS::_IS_APP_RUNNING(joaat("PAUSE_MENU")) && UIAPPS::_0x96FD694FE5BE55DC(joaat("PAUSE_MENU")) != joaat("PAUSE_ROOT_INDEX")) || UIAPPS::_IS_APP_RUNNING(joaat("SOCIAL_CLUB_FEED"))) || UIAPPS::_IS_APP_RUNNING(joaat("SOCIAL_CLUB_LOGIN"))) || UIAPPS::_IS_APP_RUNNING(joaat("SAVELOAD_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("HELP_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("POLICIES_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("SETTINGS_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("ABILITIES"))) || UIAPPS::_IS_APP_RUNNING(joaat("STORE"))) || UIAPPS::_IS_APP_RUNNING(joaat("TRANSLATION_OVERLAY"))) || UIAPPS::_IS_APP_RUNNING(joaat("PROGRESS_MENU"))) || UIAPPS::_IS_APP_RUNNING(joaat("STATS_MENU")))
 	{
 		bVar2 = true;
 	}
@@ -48965,7 +48965,7 @@ int func_1634(bool bParam0)
 
 int func_1635()
 {
-	return 205122612;
+	return joaat("TO_LEADERBOARD");
 }
 
 int func_1636()
@@ -71960,11 +71960,11 @@ char* func_2525(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4,
 		return "INVALID";
 	}
 	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("ABILITIES"));
-	if (iVar1 == 1738917854)
+	if (iVar1 == joaat("ABILITIES_MENU_LOADOUT"))
 	{
 		return func_2568(func_2567());
 	}
-	else if (iVar1 == -477213344)
+	else if (iVar1 == joaat("ABILITIES_MENU_SELECTION"))
 	{
 		return func_2569(&uParam0);
 	}

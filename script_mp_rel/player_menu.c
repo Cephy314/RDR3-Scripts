@@ -624,14 +624,14 @@ void func_25()
 							DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1497.f_116, true);
 							DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1939231->f_1433.f_1497.f_115, MISC::_CREATE_VAR_STRING(2, "NM_FR_CHARACTER_DETAILS_INFO"));
 							break;
-						case 238850895:
+						case joaat("PLAYER_MENU_VIEW_ABILITY_LOADOUT_FOCUS_EVENT"):
 							if (func_80())
 							{
 								iVar8 = func_81();
 								if (NETWORK::_0x255A5EF65EDA9167(iVar8))
 								{
 									func_82(iVar8, 1);
-									func_83(238850895, 1);
+									func_83(joaat("PLAYER_MENU_VIEW_ABILITY_LOADOUT_FOCUS_EVENT"), 1);
 								}
 							}
 							break;
@@ -713,7 +713,7 @@ void func_25()
 							func_93();
 							func_94();
 							break;
-						case -949910923:
+						case joaat("PLAYER_MENU_STABLE_HORSES_FOCUS_EVENT"):
 							func_95();
 							break;
 						case -1577085532:
@@ -769,12 +769,12 @@ void func_25()
 							Global_1939231->f_242 = Var2.f_3;
 							break;
 						case 1891046454:
-							func_101(joaat("GRIZZLIES_CAMP"), -1896177107 /* GXTEntry: "Small Camp" */);
-							func_102(-1896177107 /* GXTEntry: "Small Camp" */);
+							func_101(joaat("GRIZZLIES_CAMP"), joaat("NET_CAMP_SIZE_SMALLEST"));
+							func_102(joaat("NET_CAMP_SIZE_SMALLEST"));
 							break;
 						case -1431653946:
-							func_101(joaat("GRIZZLIES_CAMP"), 2042309940 /* GXTEntry: "Large Camp" */);
-							func_102(2042309940 /* GXTEntry: "Large Camp" */);
+							func_101(joaat("GRIZZLIES_CAMP"), joaat("NET_CAMP_SIZE_LARGEST"));
+							func_102(joaat("NET_CAMP_SIZE_LARGEST"));
 							break;
 						case 1603044301:
 							func_103(DATABINDING::_DATABINDING_READ_DATA_HASH_STRING_FROM_PARENT(Var2.f_3, "camp_selection_district"));
@@ -1097,10 +1097,10 @@ void func_25()
 															}
 														}
 														Jump @7444; //curOff = 4958
-														func_161(-1896177107 /* GXTEntry: "Small Camp" */);
+														func_161(joaat("NET_CAMP_SIZE_SMALLEST"));
 														func_132(39);
 														Jump @7444; //curOff = 4977
-														func_161(2042309940 /* GXTEntry: "Large Camp" */);
+														func_161(joaat("NET_CAMP_SIZE_LARGEST"));
 														func_132(39);
 														Jump @7444; //curOff = 4996
 														func_162();
@@ -1152,7 +1152,7 @@ void func_25()
 														func_36(1, 0);
 														func_132(14);
 														func_133();
-														func_141(-648381463);
+														func_141(joaat("TO_POSSE_CREATE"));
 														Jump @7444; //curOff = 5239
 														func_170(0);
 														func_133();
@@ -1425,7 +1425,7 @@ void func_25()
 														Jump @7444; //curOff = 6628
 														if (func_214(DATABINDING::_0xE6AAB897120492D6(Var2.f_3, "posse_list_entry_gang_id")))
 														{
-															func_141(1627801305);
+															func_141(joaat("PM_POSSE_LIST"));
 														}
 														Jump @7444; //curOff = 6663
 														if (func_215())
@@ -1927,27 +1927,27 @@ int func_39(int iParam0)
 			return 3;
 		case joaat("PM_DAILY_CHALLENGES"):
 			return 4;
-		case -1141649578:
+		case joaat("PM_POSSE_PLAYERS_INVITE"):
 			return 22;
 		case -1229126440:
 			return 12;
-		case 1627801305:
+		case joaat("PM_POSSE_LIST"):
 			return 13;
-		case 900261631:
+		case joaat("PM_POSSE_LIST_EMPTY"):
 			return 15;
-		case 2090776647:
+		case joaat("PM_POSSE_CREATE"):
 			return 14;
-		case -910579444:
+		case joaat("PM_POSSE_OPTIONS"):
 			return 16;
-		case 296053535:
+		case joaat("PM_POSSE_VERSUS"):
 			return 19;
-		case -712765443:
+		case joaat("PM_POSSE_VERSUS_INFIGHTING"):
 			return 20;
-		case -248206465:
+		case joaat("PM_POSSE_SETTINGS"):
 			return 17;
-		case -1269761102:
+		case joaat("PM_VIEW_CURRENT_POSSE"):
 			return 18;
-		case -1151685191:
+		case joaat("PM_POST_OFFICE"):
 			return 11;
 		case joaat("PM_INVITE_PLAYERS"):
 			return 21;
@@ -1963,7 +1963,7 @@ int func_39(int iParam0)
 			return 49;
 		case 907425130:
 			return 52;
-		case -1431045214:
+		case joaat("PM_PLAYER_OPTIONS"):
 			return 6;
 		case -1748449654:
 			return 7;
@@ -1973,15 +1973,15 @@ int func_39(int iParam0)
 			return 9;
 		case joaat("PM_JOBS"):
 			return 10;
-		case -1731090972:
+		case joaat("PM_CAMP"):
 			return 38;
-		case -152980413:
+		case joaat("PM_CAMP_LOCATION"):
 			return 39;
-		case 1470615405:
+		case joaat("PM_CAMP_STATS"):
 			return 40;
-		case -1026856039:
+		case joaat("PM_CAMP_SIZE"):
 			return 41;
-		case 1868152501:
+		case joaat("PM_OPTIONS"):
 			return 42;
 		case -721351454:
 			return 43;
@@ -1991,15 +1991,15 @@ int func_39(int iParam0)
 			return 24;
 		case joaat("PM_HORSES"):
 			return 25;
-		case -996050125:
+		case joaat("PM_HORSE_DEFAULTS"):
 			return 26;
-		case -1974642358:
+		case joaat("PM_HORSE_DEFAULTS_FREEROAM_SELECTION"):
 			return 27;
-		case 883433183:
+		case joaat("PM_HORSE_DEFAULTS_RACE_SELECTION"):
 			return 28;
-		case -956828274:
+		case joaat("PM_HORSE_DEFAULTS_COOP_SELECTION"):
 			return 29;
-		case 1667751432:
+		case joaat("PM_HORSE_DEFAULTS_COMPETITIVE_SELECTION"):
 			return 30;
 		case -1968023217:
 			return 31;
@@ -2719,9 +2719,9 @@ void func_52(bool bParam0, bool bParam1)
 		func_375(0);
 		if (func_176(&iVar1, &iVar2))
 		{
-			if (iVar2 != -1896177107)
+			if (iVar2 != joaat("NET_CAMP_SIZE_SMALLEST"))
 			{
-				iVar2 = -1896177107; /* GXTEntry: "Small Camp" */
+				iVar2 = joaat("NET_CAMP_SIZE_SMALLEST");
 				func_158(iVar1, iVar2);
 			}
 		}
@@ -3455,7 +3455,7 @@ void func_79(var uParam0)
 		case -1617941426:
 			sVar1 = func_431();
 			break;
-		case 2054047271:
+		case joaat("PLAYER_MENU_INVITE_TO_POSSE_FOCUS_EVENT"):
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "");
 			break;
 		case -1465661771:
@@ -3473,7 +3473,7 @@ void func_79(var uParam0)
 		case 1689032681:
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "NM_MW_POSSE_SETTINGS_FOOTER");
 			break;
-		case 1854460024:
+		case joaat("PLAYER_MENU_POSSE_SETTINGS_ABANDON_POSSE_EVENT"):
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "NM_MW_POSSE_ABANDON_LINK_FOOTER");
 			break;
 		case -327353888:
@@ -3539,7 +3539,7 @@ void func_79(var uParam0)
 		case -281834246:
 			sVar1 = func_438();
 			break;
-		case 238850895:
+		case joaat("PLAYER_MENU_VIEW_ABILITY_LOADOUT_FOCUS_EVENT"):
 			sVar1 = func_439();
 			break;
 		case -1108319209:
@@ -3558,12 +3558,12 @@ void func_79(var uParam0)
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "NM_PW_SHOW_GAMER_CARD_FOOTER");
 			break;
 		case 1891046454:
-			sVar1 = func_442(-1896177107 /* GXTEntry: "Small Camp" */);
+			sVar1 = func_442(joaat("NET_CAMP_SIZE_SMALLEST"));
 			break;
 		case -1431653946:
-			sVar1 = func_442(2042309940 /* GXTEntry: "Large Camp" */);
+			sVar1 = func_442(joaat("NET_CAMP_SIZE_LARGEST"));
 			break;
-		case 921074654:
+		case joaat("PLAYER_MENU_CAMP_SET_LOCATION_FOCUS_EVENT"):
 			sVar1 = func_443();
 			break;
 		case 2087912236:
@@ -3580,13 +3580,13 @@ void func_79(var uParam0)
 		case 1018100553:
 			sVar1 = MISC::_CREATE_VAR_STRING(2, func_444(8));
 			break;
-		case 1088802604:
+		case joaat("PLAYER_MENU_MATCHMAKE_ADVERSARY_SMALL_EVENT"):
 			sVar1 = func_445(2, DATABINDING::_DATABINDING_READ_DATA_BOOL(Global_1939231->f_1433.f_1461.f_2));
 			break;
-		case -910546409:
+		case joaat("PLAYER_MENU_MATCHMAKE_ADVERSARY_MEDIUM_EVENT"):
 			sVar1 = func_445(3, DATABINDING::_DATABINDING_READ_DATA_BOOL(Global_1939231->f_1433.f_1461.f_3));
 			break;
-		case -1902254786:
+		case joaat("PLAYER_MENU_MATCHMAKE_ADVERSARY_LARGE_EVENT"):
 			sVar1 = func_445(4, DATABINDING::_DATABINDING_READ_DATA_BOOL(Global_1939231->f_1433.f_1461.f_4));
 			break;
 		case 1876618697:
@@ -3595,7 +3595,7 @@ void func_79(var uParam0)
 		case 587836234:
 			sVar1 = func_445(9, DATABINDING::_DATABINDING_READ_DATA_BOOL(Global_1939231->f_1433.f_1461.f_7));
 			break;
-		case 513547135:
+		case joaat("PLAYER_MENU_MATCHMAKE_RACE_EVENT"):
 			sVar1 = func_445(0, DATABINDING::_DATABINDING_READ_DATA_BOOL(Global_1939231->f_1433.f_1461.f_8));
 			break;
 		case 2047751621:
@@ -3622,10 +3622,10 @@ void func_79(var uParam0)
 		case 1835613473:
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "NM_MW_EXIT_TO_FREEROAM_FOOTER");
 			break;
-		case -949910923:
+		case joaat("PLAYER_MENU_STABLE_HORSES_FOCUS_EVENT"):
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "HORSES_FOOTER");
 			break;
-		case 649267219:
+		case joaat("PLAYER_MENU_STABLE_HORSE_ACCESS_FOCUS_EVENT"):
 			sVar1 = func_447();
 			break;
 		case 867974977:
@@ -3676,7 +3676,7 @@ void func_79(var uParam0)
 		case 697595630:
 			sVar1 = MISC::_CREATE_VAR_STRING(2, "SPECIALTY_FREEROAM_FOOTER");
 			break;
-		case 746698552:
+		case joaat("PLAYER_MENU_OPTIONS_KILL_SELF_EVENT"):
 			sVar1 = func_450();
 			break;
 		case 1024301510:
@@ -3807,7 +3807,7 @@ int func_83(int iParam0, bool bParam1)
 {
 	switch (iParam0)
 	{
-		case 238850895:
+		case joaat("PLAYER_MENU_VIEW_ABILITY_LOADOUT_FOCUS_EVENT"):
 			DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_54, bParam1);
 			break;
 		case -1108319209:
@@ -4386,10 +4386,10 @@ void func_102(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1896177107: /* GXTEntry: "Small Camp" */
+		case joaat("NET_CAMP_SIZE_SMALLEST"):
 			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1939231->f_1433.f_2628.f_38, 442252665);
 			break;
-		case 2042309940: /* GXTEntry: "Large Camp" */
+		case joaat("NET_CAMP_SIZE_LARGEST"):
 			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1939231->f_1433.f_2628.f_38, 771582374);
 			break;
 			break;
@@ -4687,11 +4687,11 @@ int func_113(int iParam0)
 	{
 		case 2077941391:
 			return 3;
-		case 1088802604:
+		case joaat("PLAYER_MENU_MATCHMAKE_ADVERSARY_SMALL_EVENT"):
 			return 2;
-		case -910546409:
+		case joaat("PLAYER_MENU_MATCHMAKE_ADVERSARY_MEDIUM_EVENT"):
 			return 3;
-		case -1902254786:
+		case joaat("PLAYER_MENU_MATCHMAKE_ADVERSARY_LARGE_EVENT"):
 			return 4;
 		case 491987586:
 			return 5;
@@ -4703,7 +4703,7 @@ int func_113(int iParam0)
 			return 8;
 		case 587836234:
 			return 9;
-		case 513547135:
+		case joaat("PLAYER_MENU_MATCHMAKE_RACE_EVENT"):
 			return 0;
 		case 2047751621:
 			return 1;
@@ -8153,7 +8153,7 @@ void func_257()
 			}
 			switch (func_418())
 			{
-				case -620534422:
+				case joaat("PLAYER_MENU_POSSE_SELECTION_EVENT_CREATE_POSSE"):
 					sVar8 = func_773(&iVar9);
 					func_62(MISC::_CREATE_VAR_STRING(2, sVar8), iVar9);
 					break;
@@ -8961,7 +8961,7 @@ void func_283()
 			bVar5 = false;
 		}
 	}
-	if (func_418() == 921074654)
+	if (func_418() == joaat("PLAYER_MENU_CAMP_SET_LOCATION_FOCUS_EVENT"))
 	{
 		func_62(func_443(), joaat("COLOR_WHITE"));
 	}
@@ -9116,8 +9116,8 @@ void func_286()
 	{
 		bVar0 = func_381(_NAMESPACE26::_0x901E0DC25080C8B9(PLAYER::PLAYER_ID()));
 	}
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_2628.f_36, func_841(-1896177107 /* GXTEntry: "Small Camp" */, bVar0));
-	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_2628.f_37, func_841(2042309940 /* GXTEntry: "Large Camp" */, bVar0));
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_2628.f_36, func_841(joaat("NET_CAMP_SIZE_SMALLEST"), bVar0));
+	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_2628.f_37, func_841(joaat("NET_CAMP_SIZE_LARGEST"), bVar0));
 }
 
 void func_287()
@@ -9363,7 +9363,7 @@ void func_290()
 	}
 	switch (func_418())
 	{
-		case 746698552:
+		case joaat("PLAYER_MENU_OPTIONS_KILL_SELF_EVENT"):
 			if (bVar0 != func_859())
 			{
 				func_62(func_450(), joaat("COLOR_WHITE"));
@@ -12120,7 +12120,7 @@ char* func_442(int iParam0)
 	}
 	switch (iParam0)
 	{
-		case 2042309940: /* GXTEntry: "Large Camp" */
+		case joaat("NET_CAMP_SIZE_LARGEST"):
 			if (!bVar0)
 			{
 				return MISC::_CREATE_VAR_STRING(2, "NET_CAMP_SET_CAMP_SIZE_NEED_UPGRADE");
@@ -14270,9 +14270,9 @@ int func_500(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1896177107: /* GXTEntry: "Small Camp" */
+		case joaat("NET_CAMP_SIZE_SMALLEST"):
 			return 4;
-		case 2042309940: /* GXTEntry: "Large Camp" */
+		case joaat("NET_CAMP_SIZE_LARGEST"):
 			return 7;
 		default:
 			break;
@@ -16661,7 +16661,7 @@ void func_617()
 		iVar3 = func_69(PLAYER::PLAYER_ID());
 		if ((iVar3 != -1 && ((*Global_1125276)[iVar3 /*27*/])->f_9 == PLAYER::PLAYER_ID()) && func_1120(&vVar0))
 		{
-			func_159(vVar0.y, -1896177107 /* GXTEntry: "Small Camp" */, 0, 0);
+			func_159(vVar0.y, joaat("NET_CAMP_SIZE_SMALLEST"), 0, 0);
 			return;
 		}
 	}
@@ -22643,9 +22643,9 @@ int func_841(int iParam0, bool bParam1)
 {
 	switch (iParam0)
 	{
-		case -1896177107: /* GXTEntry: "Small Camp" */
+		case joaat("NET_CAMP_SIZE_SMALLEST"):
 			return 1;
-		case 2042309940: /* GXTEntry: "Large Camp" */
+		case joaat("NET_CAMP_SIZE_LARGEST"):
 			return bParam1;
 		default:
 			break;
@@ -25075,13 +25075,13 @@ int func_972(int iParam0)
 	switch (iParam0)
 	{
 		case 4:
-			return -1896177107 /* GXTEntry: "Small Camp" */;
+			return joaat("NET_CAMP_SIZE_SMALLEST");
 		case 7:
-			return 2042309940 /* GXTEntry: "Large Camp" */;
+			return joaat("NET_CAMP_SIZE_LARGEST");
 		default:
 			break;
 	}
-	return -1896177107 /* GXTEntry: "Small Camp" */;
+	return joaat("NET_CAMP_SIZE_SMALLEST");
 }
 
 void func_973(bool bParam0)
@@ -27588,7 +27588,7 @@ void func_1088(int iParam0, int iParam1, bool bParam2)
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_20, false);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_27, true);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_7, iVar0);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_8, -1915264523);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_8, joaat("SET_AS_DEFAULT_LINK"));
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_9, true);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_10, true);
 }
@@ -27627,7 +27627,7 @@ void func_1089(int iParam0, int iParam1, bool bParam2)
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_27, false);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_6, iVar4);
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_7, iVar4);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_8, -1915264523);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_8, joaat("SET_AS_DEFAULT_LINK"));
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_9, bVar3);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_10, true);
 }
@@ -27653,7 +27653,7 @@ void func_1091(int iParam0, int iParam1)
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_27, false);
 	DATABINDING::_DATABINDING_WRITE_DATA_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_19, func_1655((iParam1 - Global_1275573->f_21) * 1000, 0));
 	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_7, -183012873);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_8, -1915264523);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_8, joaat("SET_AS_DEFAULT_LINK"));
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_9, false);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL((Global_1939231->f_1433.f_1622.f_3[iParam0 /*38*/])->f_10, false);
 }
@@ -35168,7 +35168,7 @@ int func_1413(int iParam0, var uParam1)
 	switch (iParam0)
 	{
 		case 0:
-			*uParam1 = 405966388;
+			*uParam1 = joaat("PLAYER_MENU_VIEW_POSSE_JOIN_EVENT");
 			return 1;
 		case 1:
 			*uParam1 = 858018263;
@@ -35186,7 +35186,7 @@ int func_1413(int iParam0, var uParam1)
 			*uParam1 = -1321015585;
 			return 1;
 		case 6:
-			*uParam1 = 1852134540;
+			*uParam1 = joaat("PLAYER_MENU_POSSE_SETTINGS_LEAVE_POSSE_EVENT");
 			return 1;
 		case 7:
 			*uParam1 = -523623920;
@@ -35573,10 +35573,10 @@ int func_1430(int iParam0, var uParam1)
 			*uParam1 = -55349945;
 			return 1;
 		case 695290261:
-			*uParam1 = 1941935324;
+			*uParam1 = joaat("PLAYER_MENU_POSSE_SETTINGS_DISBAND_POSSE_EVENT");
 			return 1;
 		case -750400740:
-			*uParam1 = 1854460024;
+			*uParam1 = joaat("PLAYER_MENU_POSSE_SETTINGS_ABANDON_POSSE_EVENT");
 			return 1;
 		default:
 			break;

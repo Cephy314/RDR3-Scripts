@@ -1190,7 +1190,7 @@ void func_30()
 				case -1740156697:
 					switch (vVar0.z)
 					{
-						case 813560150:
+						case joaat("WEAPON_WHEEL"):
 							if ((Global_1935496->f_15 || !func_238()) || PED::IS_PED_RELOADING(Global_35))
 							{
 								func_229(0);
@@ -1199,7 +1199,7 @@ void func_30()
 							func_222(&uVar5, bVar26, 1);
 							func_239(0);
 							break;
-						case -414255251:
+						case joaat("SATCHEL_ITEM_WHEEL"):
 							func_240();
 							func_241(0);
 							Global_1935496->f_11 = 1;
@@ -1223,10 +1223,10 @@ void func_30()
 				case -632467210:
 					switch (vVar0.z)
 					{
-						case 813560150:
+						case joaat("WEAPON_WHEEL"):
 							Global_1935496->f_10 = 0;
 							break;
-						case -414255251:
+						case joaat("SATCHEL_ITEM_WHEEL"):
 							Global_1935496->f_11 = 0;
 							break;
 						case joaat("SATCHEL_HORSE_ITEM_WHEEL"):
@@ -19190,7 +19190,7 @@ void func_581()
 	{
 		bVar0 = func_1730();
 		iVar1 = bVar0;
-		if ((iVar1 != 0 && iVar1 != -214043612) && iVar1 != 1304158006)
+		if ((iVar1 != 0 && iVar1 != joaat("NON_SELECTION_ACTION")) && iVar1 != 1304158006)
 		{
 			bVar2 = false;
 			if (WEAPON::_0xC212F1D05A8232BB(bVar0))
@@ -88092,7 +88092,7 @@ int func_2878(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 1667296790;
+			return joaat("TO_GENERAL");
 		case 1:
 			return -1659025052;
 		case 2:
@@ -100954,7 +100954,7 @@ void func_3303(bool bParam0, bool bParam1)
 				func_1516(Var22.f_2);
 				func_2783(1, 7000);
 			}
-			else if (-416929031 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE") == Var22.f_1)
 			{
 				fVar33 = func_3961(Var22.f_2, Var22.f_5);
 				if (func_3962(&uVar38, &uVar39, fVar33))
@@ -100964,7 +100964,7 @@ void func_3303(bool bParam0, bool bParam1)
 				}
 				bVar41 = true;
 			}
-			else if (1857353317 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE") == Var22.f_1)
 			{
 				fVar34 = func_3961(Var22.f_2, Var22.f_5);
 				if (func_3962(&uVar38, &uVar39, fVar34))
@@ -100974,7 +100974,7 @@ void func_3303(bool bParam0, bool bParam1)
 				}
 				bVar40 = true;
 			}
-			else if (1681823811 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE") == Var22.f_1)
 			{
 				fVar35 = func_3961(Var22.f_2, Var22.f_5);
 				if (func_3962(&uVar38, &uVar39, fVar35))
@@ -100983,19 +100983,19 @@ void func_3303(bool bParam0, bool bParam1)
 					func_2783(1, 7000);
 				}
 			}
-			else if (2062242710 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_3966(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_1521(19, fVar36);
 				bVar41 = true;
 			}
-			else if (-826379728 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_3966(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_1521(20, fVar36);
 				bVar40 = true;
 			}
-			else if (-1191740624 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_3966(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_1521(18, fVar36);

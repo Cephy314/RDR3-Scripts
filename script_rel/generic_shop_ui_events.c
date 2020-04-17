@@ -49,7 +49,7 @@ void __EntryFunction__()
 						func_3(1024);
 						break;
 					case -1151569080:
-						if (Var3.f_2 == -2105535423)
+						if (Var3.f_2 == joaat("GENERIC_SHOP_UI_PALETTE_FOCUS"))
 						{
 							func_4(Var3.f_1);
 							func_3(4);
@@ -78,7 +78,7 @@ void __EntryFunction__()
 							uVar1 = uVar0;
 							func_11(uVar1, 0);
 						}
-						if (Var3.f_2 != -401761271)
+						if (Var3.f_2 != joaat("GENERIC_SHOP_UI_NEXT_PAGE"))
 						{
 							func_3(2);
 						}
@@ -89,7 +89,7 @@ void __EntryFunction__()
 						func_3(1024);
 						break;
 					case -1203660660:
-						if (Var3.f_2 != -729996127)
+						if (Var3.f_2 != joaat("GENERIC_SHOP_UI_SECONDARY_SELECT"))
 						{
 							func_12(Var3.f_1);
 							iVar2 = func_13();
@@ -102,7 +102,7 @@ void __EntryFunction__()
 							}
 						}
 						func_16(Var3.f_2);
-						if (Var3.f_2 != 1285135021)
+						if (Var3.f_2 != joaat("GENERIC_SHOP_UI_EXIT"))
 						{
 						}
 						else
@@ -121,7 +121,7 @@ void __EntryFunction__()
 						{
 							func_3(256);
 						}
-						else if (Var3.f_2 != -401761271)
+						else if (Var3.f_2 != joaat("GENERIC_SHOP_UI_NEXT_PAGE"))
 						{
 							if (Var3.f_2 != 516329682)
 							{

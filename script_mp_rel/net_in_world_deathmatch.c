@@ -18754,7 +18754,7 @@ int func_685(bool bParam0)
 
 int func_686()
 {
-	return 205122612;
+	return joaat("TO_LEADERBOARD");
 }
 
 int func_687()

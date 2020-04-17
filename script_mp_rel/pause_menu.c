@@ -395,7 +395,7 @@ void func_10()
 				case -1740156697:
 					switch (Var0.f_2)
 					{
-						case 248393197:
+						case joaat("PAUSE_UI_RPG_DETAIL_ITEM_FOCUS"):
 							func_50(Var0.f_3);
 							break;
 					}
@@ -505,7 +505,7 @@ int func_14(int iParam0, int iParam1)
 		case 0:
 			return 0;
 		case 1:
-			return 1271225230;
+			return joaat("PAUSE_ROOT_INDEX");
 		default:
 			break;
 	}
@@ -523,7 +523,7 @@ int func_15(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case 1271225230:
+		case joaat("PAUSE_ROOT_INDEX"):
 			return func_67(uParam0);
 	}
 	return 0;
@@ -1558,7 +1558,7 @@ void func_60(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case 1271225230:
+		case joaat("PAUSE_ROOT_INDEX"):
 			func_129(uParam0);
 			break;
 	}
@@ -1573,7 +1573,7 @@ void func_62(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case 1271225230:
+		case joaat("PAUSE_ROOT_INDEX"):
 			func_130(uParam0);
 			break;
 	}
@@ -1583,7 +1583,7 @@ void func_63(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case 1271225230:
+		case joaat("PAUSE_ROOT_INDEX"):
 			func_131(uParam0);
 			break;
 	}
@@ -1631,7 +1631,7 @@ void func_69(var uParam0, int iParam1)
 {
 	switch (iParam1)
 	{
-		case 1271225230:
+		case joaat("PAUSE_ROOT_INDEX"):
 			func_133(uParam0);
 			break;
 	}

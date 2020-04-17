@@ -3372,7 +3372,7 @@ void func_101()
 		{
 			StringIntConCat(&cVar1, func_217(Global_39.f_5595, 0, 0, 0), 8);
 		}
-		iVar2 = -973584697;
+		iVar2 = joaat("FISHING_TYPE_BOBBER");
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1902942->f_48, sVar0);
 		if (func_218(Global_39.f_5595))
 		{
@@ -3384,7 +3384,7 @@ void func_101()
 		}
 		if (func_219(Global_39.f_5595) || func_220(Global_39.f_5595))
 		{
-			iVar2 = 1048406616;
+			iVar2 = joaat("FISHING_TYPE_LURE");
 		}
 		DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1902942->f_50, iVar2);
 	}

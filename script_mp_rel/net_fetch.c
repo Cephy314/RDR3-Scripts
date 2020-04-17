@@ -32678,7 +32678,7 @@ bool func_1219(bool bParam0, int iParam1, int iParam2, bool bParam3)
 						}
 					}
 					break;
-				case 206508773:
+				case joaat("SATCHEL_ITEM"):
 					if (iParam2 != -1 && &(Local_3972.f_1607[bParam0 /*60*/])->f_2[iParam2 /*14*/] != -1)
 					{
 						return (func_2030(128, &((Local_3972.f_1607[bParam0 /*60*/])->f_2[iParam2 /*14*/])) || func_2031(2097152, &((Local_3972.f_1607[bParam0 /*60*/])->f_2[iParam2 /*14*/])));
@@ -37544,7 +37544,7 @@ void func_1439(int iParam0)
 		case joaat("CARRIABLE_LINKED_ENTITY"):
 			func_2281(iParam0);
 			break;
-		case 206508773:
+		case joaat("SATCHEL_ITEM"):
 			func_2282(iParam0);
 			break;
 		case joaat("HAVOC_LEVEL_GOAL"):
@@ -49691,7 +49691,7 @@ void func_1764(int iParam0)
 		case joaat("CARRIABLE_LINKED_ENTITY"):
 			func_2911(iParam0);
 			break;
-		case 206508773:
+		case joaat("SATCHEL_ITEM"):
 			func_2912(iParam0);
 			break;
 		case joaat("HAVOC_LEVEL_GOAL"):

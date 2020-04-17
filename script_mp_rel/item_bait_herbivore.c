@@ -1314,36 +1314,36 @@ void func_40(int iParam0)
 				uVar32 = func_91(1, Var22.f_2);
 				func_94(Var22.f_2);
 			}
-			else if (-416929031 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE") == Var22.f_1)
 			{
 				fVar33 = func_95(BUILTIN::TO_FLOAT(Var22.f_2), Var22.f_5);
 				func_96(0, fVar33, 1, 1, bVar37);
 				bVar39 = true;
 			}
-			else if (1857353317 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE") == Var22.f_1)
 			{
 				fVar34 = func_95(BUILTIN::TO_FLOAT(Var22.f_2), Var22.f_5);
 				func_96(2, fVar34, 1, 1, bVar37);
 				bVar38 = true;
 			}
-			else if (1681823811 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE") == Var22.f_1)
 			{
 				fVar35 = func_95(BUILTIN::TO_FLOAT(Var22.f_2), Var22.f_5);
 				func_96(1, fVar35, 1, 1, bVar37);
 			}
-			else if (2062242710 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_97(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_98(19, fVar36, 1, 1);
 				bVar39 = true;
 			}
-			else if (-826379728 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_97(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_98(20, fVar36, 1, 1);
 				bVar38 = true;
 			}
-			else if (-1191740624 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_97(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_98(18, fVar36, 1, 1);

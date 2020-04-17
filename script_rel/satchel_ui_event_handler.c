@@ -128,7 +128,7 @@ void __EntryFunction__()
 						switch (Var3.f_2)
 						{
 							case joaat("USABLE_ITEM"):
-							case -594808149:
+							case joaat("BREAKABLE_ITEM"):
 							case 1086195311:
 								if (func_23() || func_24())
 								{
@@ -151,10 +151,10 @@ void __EntryFunction__()
 									func_6(4);
 								}
 								break;
-							case -1193234750: /* GXTEntry: "Discard" */
+							case joaat("DROP_ITEM"):
 								func_29(Global_1935689->f_10190, 1);
 								break;
-							case 301804921:
+							case joaat("DISCARD_ALL"):
 								if (func_27(0))
 								{
 									func_6(32);
@@ -164,7 +164,7 @@ void __EntryFunction__()
 									func_30(Global_1935689->f_10190);
 								}
 								break;
-							case 1329361007:
+							case joaat("SEND_ALL"):
 								func_6(64);
 								break;
 						}
@@ -1960,10 +1960,10 @@ int func_64(var uParam0)
 	Global_1935689->f_10213 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, "PromptSelectLabel", -31549930);
 	Global_1935689->f_10214 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptSelectEnabled", true);
 	Global_1935689->f_10215 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptSelectVisible", true);
-	Global_1935689->f_10216 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, "PromptHoldSelectLabel", -1896040097);
+	Global_1935689->f_10216 = DATABINDING::_DATABINDING_ADD_DATA_HASH(*uParam0, "PromptHoldSelectLabel", joaat("SATCHEL_PROMPT_BREAKDOWN"));
 	Global_1935689->f_10217 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptHoldSelectEnabled", false);
 	Global_1935689->f_10218 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptHoldSelectVisible", false);
-	Global_1935689->f_10221 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "PromptDiscardAllLabel", HUD::_GET_LABEL_TEXT_BY_HASH(140984675));
+	Global_1935689->f_10221 = DATABINDING::_DATABINDING_ADD_DATA_STRING(*uParam0, "PromptDiscardAllLabel", HUD::_GET_LABEL_TEXT_BY_HASH(joaat("SATCHEL_PROMPT_DISCARD_ALL")));
 	Global_1935689->f_10219 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptDiscardAllEnabled", bVar2);
 	Global_1935689->f_10220 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptDiscardAllVisible", bVar2);
 	Global_1935689->f_10224 = DATABINDING::_DATABINDING_ADD_DATA_BOOL(*uParam0, "PromptDropVisibile", bVar2);
@@ -2007,7 +2007,7 @@ int func_64(var uParam0)
 	func_208(Global_1935689->f_10198);
 	DATABINDING::_DATABINDING_SET_TEMPLATED_UI_ITEM_LIST_SIZE(Global_1935689->f_10198, Global_1935689->f_10166);
 	iVar4 = DATABINDING::_DATABINDING_ADD_UI_ITEM_LIST(*uParam0, "Collections");
-	bVar5 = 485071447; /* GXTEntry: "Satchel" */
+	bVar5 = joaat("SATCHEL_TITLE");
 	if (func_209(joaat("CLOTHING_HL_PLAYER_SATCHEL_008_1")))
 	{
 		bVar5 = -1401261769; /* GXTEntry: "Legendary Satchel" */
@@ -8280,7 +8280,7 @@ int func_270(int iParam0)
 void func_271(var uParam0)
 {
 	func_546(0);
-	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(func_547(), 327167317);
+	DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(func_547(), joaat("SATCHEL_PROMPT_OPEN"));
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(func_561(), DATABINDING::_DATABINDING_READ_DATA_BOOL_FROM_PARENT(*uParam0, "focusable"));
 }
 
@@ -15850,7 +15850,7 @@ int func_549(bool bParam0)
 	{
 		if (func_111(bParam0, 316290104))
 		{
-			return -1896040097 /* GXTEntry: "Break Down" */;
+			return joaat("SATCHEL_PROMPT_BREAKDOWN");
 		}
 		else if (func_159(bParam0, 1, 0))
 		{
@@ -16997,7 +16997,7 @@ void func_583(bool bParam0, bool bParam1)
 				func_826(Var22.f_2);
 				func_824(1, 7000);
 			}
-			else if (-416929031 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE") == Var22.f_1)
 			{
 				fVar33 = func_827(Var22.f_2, Var22.f_5);
 				if (func_828(&uVar38, &uVar39, fVar33))
@@ -17007,7 +17007,7 @@ void func_583(bool bParam0, bool bParam1)
 				}
 				bVar41 = true;
 			}
-			else if (1857353317 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE") == Var22.f_1)
 			{
 				fVar34 = func_827(Var22.f_2, Var22.f_5);
 				if (func_828(&uVar38, &uVar39, fVar34))
@@ -17017,7 +17017,7 @@ void func_583(bool bParam0, bool bParam1)
 				}
 				bVar40 = true;
 			}
-			else if (1681823811 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE") == Var22.f_1)
 			{
 				fVar35 = func_827(Var22.f_2, Var22.f_5);
 				if (func_828(&uVar38, &uVar39, fVar35))
@@ -17026,19 +17026,19 @@ void func_583(bool bParam0, bool bParam1)
 					func_824(1, 7000);
 				}
 			}
-			else if (2062242710 == Var22.f_1)
+			else if (joaat("EFFECT_HEALTH_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_832(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_833(19, fVar36);
 				bVar41 = true;
 			}
-			else if (-826379728 == Var22.f_1)
+			else if (joaat("EFFECT_DEADEYE_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_832(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_833(20, fVar36);
 				bVar40 = true;
 			}
-			else if (-1191740624 == Var22.f_1)
+			else if (joaat("EFFECT_STAMINA_CORE_GOLD") == Var22.f_1)
 			{
 				fVar36 = func_832(BUILTIN::TO_FLOAT(Var22.f_3), Var22.f_4);
 				func_833(18, fVar36);

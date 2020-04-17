@@ -28057,7 +28057,7 @@ int func_1284(bool bParam0)
 
 int func_1285()
 {
-	return 205122612;
+	return joaat("TO_LEADERBOARD");
 }
 
 int func_1286()
@@ -36766,11 +36766,11 @@ char* func_1605(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4,
 		return "INVALID";
 	}
 	iVar1 = UIAPPS::_0x96FD694FE5BE55DC(joaat("ABILITIES"));
-	if (iVar1 == 1738917854)
+	if (iVar1 == joaat("ABILITIES_MENU_LOADOUT"))
 	{
 		return func_1682(func_1681());
 	}
-	else if (iVar1 == -477213344)
+	else if (iVar1 == joaat("ABILITIES_MENU_SELECTION"))
 	{
 		return func_1683(&uParam0);
 	}

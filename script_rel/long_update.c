@@ -20255,15 +20255,15 @@ void func_522()
 		case 5:
 			if (Global_1879514->f_12)
 			{
-				iVar0 = 2037639424;
+				iVar0 = joaat("TOAST_GANG_TAKE_MEDAL_GOLD");
 			}
 			else if (Global_1879514->f_14)
 			{
-				iVar0 = -1124518777;
+				iVar0 = joaat("TOAST_BANK_DEBT_MEDAL_GOLD");
 			}
 			else if (Global_1879514->f_15)
 			{
-				iVar0 = -1124518777;
+				iVar0 = joaat("TOAST_BANK_DEBT_MEDAL_GOLD");
 			}
 			else
 			{
@@ -20273,15 +20273,15 @@ void func_522()
 		case 4:
 			if (Global_1879514->f_12)
 			{
-				iVar0 = 1343627222;
+				iVar0 = joaat("TOAST_GANG_TAKE_MEDAL_SILVER");
 			}
 			else if (Global_1879514->f_14)
 			{
-				iVar0 = -2060979717;
+				iVar0 = joaat("TOAST_BANK_DEBT_MEDAL_SILVER");
 			}
 			else if (Global_1879514->f_15)
 			{
-				iVar0 = -2060979717;
+				iVar0 = joaat("TOAST_BANK_DEBT_MEDAL_SILVER");
 			}
 			else
 			{
@@ -20309,15 +20309,15 @@ void func_522()
 		default:
 			if (Global_1879514->f_12)
 			{
-				iVar0 = -1241747389;
+				iVar0 = joaat("TOAST_GANG_TAKE_MEDAL_BRONZE");
 			}
 			else if (Global_1879514->f_14)
 			{
-				iVar0 = 562132112;
+				iVar0 = joaat("TOAST_BANK_DEBT_MEDAL_BRONZE");
 			}
 			else if (Global_1879514->f_15)
 			{
-				iVar0 = 562132112;
+				iVar0 = joaat("TOAST_BANK_DEBT_MEDAL_BRONZE");
 			}
 			else
 			{

@@ -1940,7 +1940,7 @@ int func_80()
 			switch (vVar1.x)
 			{
 				case -1203660660:
-					if (vVar1.z == -490822059)
+					if (vVar1.z == joaat("LOAD_SP"))
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_SP", "Load_Menu_Scenes");
 						func_203(joaat("SINGLE_PLAYER"));
@@ -1951,23 +1951,23 @@ int func_80()
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 						iVar0 = 1;
 					}
-					else if (vVar1.z == 367452774)
+					else if (vVar1.z == joaat("LANDING_PAGE_TILE"))
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 						iVar0 = 1;
 					}
-					else if (vVar1.z == 1317995259)
+					else if (vVar1.z == joaat("LOAD_MP_INTRO"))
 					{
 						AUDIO::_0xAC84686C06184B0D("Fade_To_MP", "Load_Menu_Scenes");
 						func_203(joaat("FREEROAM"));
 						func_204(joaat("INTRO_NOT_DONE"));
 						iVar0 = 1;
 					}
-					else if (vVar1.z == 425390024)
+					else if (vVar1.z == joaat("SOCIAL_CLUB_OPEN"))
 					{
 						NETWORK::_0x7AC752103856FB20(false);
 					}
-					else if (vVar1.z == 446331713)
+					else if (vVar1.z == joaat("SOCIAL_CLUB_CLOSED"))
 					{
 						NETWORK::_0x7AC752103856FB20(true);
 					}
@@ -18460,7 +18460,7 @@ void func_560()
 		iVar3 = func_607(PLAYER::PLAYER_ID());
 		if ((iVar3 != -1 && ((*Global_1125276)[iVar3 /*27*/])->f_9 == PLAYER::PLAYER_ID()) && func_608(&vVar0))
 		{
-			func_609(vVar0.y, -1896177107 /* GXTEntry: "Small Camp" */, 0, 0);
+			func_609(vVar0.y, joaat("NET_CAMP_SIZE_SMALLEST"), 0, 0);
 			return;
 		}
 	}
@@ -19512,9 +19512,9 @@ int func_625(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1896177107: /* GXTEntry: "Small Camp" */
+		case joaat("NET_CAMP_SIZE_SMALLEST"):
 			return 4;
-		case 2042309940: /* GXTEntry: "Large Camp" */
+		case joaat("NET_CAMP_SIZE_LARGEST"):
 			return 7;
 		default:
 			break;
