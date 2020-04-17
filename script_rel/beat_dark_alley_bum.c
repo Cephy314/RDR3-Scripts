@@ -19308,7 +19308,7 @@ void func_574(int iParam0, bool bParam1)
 			iVar5 = joaat("PRRGS_LOG_DESC");
 			sVar0 = "PRRGS_LOG_OBJ1";
 			iVar1 = joaat("PRRGS_LOG_OBJ1");
-			iVar8 = -1662367475;
+			iVar8 = joaat("MISSION_PRRGS");
 			break;
 		case 43:
 			sVar2 = "PRNBG_LOG";
@@ -19317,7 +19317,7 @@ void func_574(int iParam0, bool bParam1)
 			iVar5 = joaat("PRNBG_LOG_DESC");
 			sVar0 = "PRNBG_LOG_OBJ2";
 			iVar1 = joaat("PRNBG_LOG_OBJ2");
-			iVar8 = -1637141202;
+			iVar8 = joaat("MISSION_PRNBG");
 			break;
 		case 61:
 			sVar2 = "PRSGS_LOG";
@@ -19326,7 +19326,7 @@ void func_574(int iParam0, bool bParam1)
 			iVar5 = joaat("PRSGS_LOG_DESC");
 			sVar0 = "PRSGS_LOG_OBJ3";
 			iVar1 = joaat("PRSGS_LOG_OBJ3");
-			iVar8 = -439915887;
+			iVar8 = joaat("MISSION_PRSGS");
 			break;
 		case 73:
 			sVar2 = "PRVDO_LOG";
@@ -19335,7 +19335,7 @@ void func_574(int iParam0, bool bParam1)
 			iVar5 = joaat("PRVDO_LOG_DESC");
 			sVar0 = "PRVDO_LOG_OBJ4";
 			iVar1 = joaat("PRVDO_LOG_OBJ4");
-			iVar8 = -366465324;
+			iVar8 = joaat("MISSION_PRVDO");
 			break;
 	}
 	if (MISC::IS_STRING_NULL_OR_EMPTY(sVar2))
@@ -22629,7 +22629,7 @@ void func_705(int iParam0)
 		case 2:
 			if ((!&Global_1879534 && func_496()) && PLAYER::_IS_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 2))
 			{
-				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_MANUAL_PAINT", joaat("HUD_TOASTS"), 1963346246, -2, 0, 0, 0, 0, 1, 1);
+				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_MANUAL_PAINT", joaat("HUD_TOASTS"), joaat("TOAST_PLAYER_DEADEYE"), -2, 0, 0, 0, 0, 1, 1);
 			}
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 1, false);
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 2, false);
@@ -22639,7 +22639,7 @@ void func_705(int iParam0)
 		case 3:
 			if ((!&Global_1879534 && func_496()) && PLAYER::_IS_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 3))
 			{
-				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_STAY_ACTIVE", joaat("HUD_TOASTS"), 1963346246, -2, 0, 0, 0, 0, 1, 1);
+				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_STAY_ACTIVE", joaat("HUD_TOASTS"), joaat("TOAST_PLAYER_DEADEYE"), -2, 0, 0, 0, 0, 1, 1);
 			}
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 1, false);
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 2, false);
@@ -22650,7 +22650,7 @@ void func_705(int iParam0)
 		case 4:
 			if ((!&Global_1879534 && func_496()) && PLAYER::_IS_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 4))
 			{
-				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_FATAL", joaat("HUD_TOASTS"), 1963346246, -2, 0, 0, 0, 0, 1, 1);
+				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_FATAL", joaat("HUD_TOASTS"), joaat("TOAST_PLAYER_DEADEYE"), -2, 0, 0, 0, 0, 1, 1);
 			}
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 1, false);
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 2, false);
@@ -22662,7 +22662,7 @@ void func_705(int iParam0)
 		case 5:
 			if ((!&Global_1879534 && func_496()) && PLAYER::_IS_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 5))
 			{
-				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_CRITICAL", joaat("HUD_TOASTS"), 1963346246, -2, 0, 0, 0, 0, 1, 1);
+				func_701("DEADEYE_ABILITY_UNLOCK", "DEADEYE_ABILITY_CRITICAL", joaat("HUD_TOASTS"), joaat("TOAST_PLAYER_DEADEYE"), -2, 0, 0, 0, 0, 1, 1);
 			}
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 1, false);
 			PLAYER::_SET_DEADEYE_ABILITY_LOCKED(PLAYER::GET_PLAYER_INDEX(), 2, false);

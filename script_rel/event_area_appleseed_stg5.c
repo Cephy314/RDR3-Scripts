@@ -16879,11 +16879,11 @@ int func_531(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -207723122;
+			return joaat("MISSION_APPLESEED");
 		case 1:
-			return -109837334;
+			return joaat("MISSION_CASTORS");
 		case 2:
-			return -1451721831;
+			return joaat("MISSION_RAILROAD");
 		default:
 			break;
 	}

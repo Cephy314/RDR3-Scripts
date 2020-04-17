@@ -35246,7 +35246,7 @@ void func_1160(int iParam0, int iParam1)
 	{
 		sVar2 = "HORSE_BONDING_LEVELUP";
 	}
-	func_1414(sVar2, MISC::_CREATE_VAR_STRING(2, "HORSE_BONDING_LEVEL", iParam1), joaat("HUD_TOASTS"), -961843223, -2, "HUD_Toast_Soundset", "horse_bonding", 0, 0, 1, 1);
+	func_1414(sVar2, MISC::_CREATE_VAR_STRING(2, "HORSE_BONDING_LEVEL", iParam1), joaat("HUD_TOASTS"), joaat("TOAST_HORSE_BOND"), -2, "HUD_Toast_Soundset", "horse_bonding", 0, 0, 1, 1);
 }
 
 int func_1161(bool bParam0)

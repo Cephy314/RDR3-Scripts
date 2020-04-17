@@ -46045,19 +46045,19 @@ int func_1593(int iParam0)
 		case 1:
 			return joaat("STAMP_CASH");
 		case 2:
-			return 1111531686;
+			return joaat("STAMP_X2_CASH");
 		case 3:
-			return 2020859843;
+			return joaat("STAMP_X3_CASH");
 		case 4:
-			return -1620727213;
+			return joaat("STAMP_XP");
 		case 5:
-			return 2039881012;
+			return joaat("STAMP_X2_XP");
 		case 6:
-			return -1429661529;
+			return joaat("STAMP_X3_XP");
 		case 7:
-			return -540128588;
+			return joaat("STAMP_25");
 		case 8:
-			return -1224238785;
+			return joaat("STAMP_50");
 		case 9:
 			return joaat("STAMP_GOLD");
 		case 10:
@@ -46065,7 +46065,7 @@ int func_1593(int iParam0)
 		case 11:
 			return joaat("STAMP_LOCKED_RANK");
 		case 12:
-			return 876516058;
+			return joaat("STAMP_LOCKED_RANK_GOLD");
 		case 13:
 			return joaat("STAMP_NEW");
 		case 14:
