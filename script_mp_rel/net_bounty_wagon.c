@@ -1312,14 +1312,14 @@ void func_53(var uParam0)
 			return;
 		}
 	}
-	iVar3 = -1636811933;
-	iVar4 = -2145527776;
-	iVar5 = -1445216292;
+	iVar3 = joaat("BLIP_MODIFIER_MP_OBJECTIVE_NEUTRAL");
+	iVar4 = joaat("BLIP_MODIFIER_MP_OBJECTIVE_ENEMY");
+	iVar5 = joaat("BLIP_MODIFIER_MP_OBJECTIVE_FRIENDLY");
 	if (iVar0 == 0)
 	{
-		iVar3 = 1603565092;
+		iVar3 = joaat("BLIP_MODIFIER_MP_PLAYER_NEUTRAL");
 		iVar4 = 0;
-		iVar5 = -1313992318;
+		iVar5 = joaat("BLIP_MODIFIER_MP_PLAYER_ALLY");
 	}
 	if (MAP::DOES_BLIP_EXIST(uParam0->f_1))
 	{
@@ -1332,16 +1332,16 @@ void func_53(var uParam0)
 			}
 			else
 			{
-				func_109(uParam0, -1403891967);
+				func_109(uParam0, joaat("BLIP_STYLE_AMBIENT_COACH"));
 			}
 		}
 		if (func_103(uParam0->f_2))
 		{
-			func_110(uParam0, -272772079);
+			func_110(uParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
 		}
 		else
 		{
-			func_111(uParam0, -272772079);
+			func_111(uParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iVar2))
 		{
@@ -1385,62 +1385,62 @@ void func_53(var uParam0)
 			switch (iVar0)
 			{
 				case 1:
-					func_110(uParam0, -404791027);
-					func_111(uParam0, -41513897);
-					func_111(uParam0, 198191338);
-					func_111(uParam0, -1559275666);
-					func_111(uParam0, -1320029197);
+					func_110(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
 					func_111(uParam0, -967238143);
 					break;
 				case 2:
-					func_110(uParam0, -41513897);
-					func_111(uParam0, -404791027);
-					func_111(uParam0, 198191338);
-					func_111(uParam0, -1559275666);
-					func_111(uParam0, -1320029197);
+					func_110(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
 					func_111(uParam0, -967238143);
 					break;
 				case 3:
-					func_110(uParam0, 198191338);
-					func_111(uParam0, -404791027);
-					func_111(uParam0, -41513897);
-					func_111(uParam0, -1559275666);
-					func_111(uParam0, -1320029197);
+					func_110(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
 					func_111(uParam0, -967238143);
 					break;
 				case 4:
-					func_110(uParam0, -1559275666);
-					func_111(uParam0, -404791027);
-					func_111(uParam0, -41513897);
-					func_111(uParam0, 198191338);
-					func_111(uParam0, -1320029197);
+					func_110(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
 					func_111(uParam0, -967238143);
 					break;
 				case 5:
-					func_110(uParam0, -1320029197);
-					func_111(uParam0, -404791027);
-					func_111(uParam0, -41513897);
-					func_111(uParam0, 198191338);
-					func_111(uParam0, -1559275666);
+					func_110(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
 					func_111(uParam0, -967238143);
 					break;
 				case 6:
 					func_110(uParam0, -967238143);
-					func_111(uParam0, -404791027);
-					func_111(uParam0, -41513897);
-					func_111(uParam0, 198191338);
-					func_111(uParam0, -1559275666);
-					func_111(uParam0, -1320029197);
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
+					func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
 					break;
 			}
 		}
 		else
 		{
-			func_111(uParam0, -404791027);
-			func_111(uParam0, -41513897);
-			func_111(uParam0, 198191338);
-			func_111(uParam0, -1559275666);
-			func_111(uParam0, -1320029197);
+			func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_1"));
+			func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_2"));
+			func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_3"));
+			func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_4"));
+			func_111(uParam0, joaat("BLIP_MODIFIER_OVERLAY_5"));
 			func_111(uParam0, -967238143);
 		}
 	}
@@ -1454,7 +1454,7 @@ void func_53(var uParam0)
 	}
 	else
 	{
-		func_109(uParam0, -1403891967);
+		func_109(uParam0, joaat("BLIP_STYLE_AMBIENT_COACH"));
 	}
 }
 
@@ -2616,7 +2616,7 @@ void func_109(var uParam0, int iParam1)
 	{
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_1, func_166(2));
 	}
-	MAP::_0x662D364ABF16DE2F(uParam0->f_1, 580546400);
+	MAP::_0x662D364ABF16DE2F(uParam0->f_1, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 }
 
 void func_110(var uParam0, int iParam1)

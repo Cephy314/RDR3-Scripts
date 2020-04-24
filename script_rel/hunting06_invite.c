@@ -11122,7 +11122,7 @@ void func_432(bool bParam0)
 {
 	if (func_562(Global_1934051->f_33))
 	{
-		func_563(Global_1934051->f_33, 7148155);
+		func_563(Global_1934051->f_33, joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER"));
 	}
 	func_561(&(Global_1934051->f_33), bParam0);
 }
@@ -15316,27 +15316,27 @@ int func_565(int iParam0)
 	switch (iParam0)
 	{
 		case 3:
-			return 1341870286;
+			return joaat("BLIP_MODIFIER_GROUPING_LAGRAS_LEADER");
 		case 5:
-			return -1706412559;
+			return joaat("BLIP_MODIFIER_GROUPING_SAINT_DENIS_LEADER");
 		case 26:
-			return 279909480;
+			return joaat("BLIP_MODIFIER_GROUPING_STRAWBERRY_LEADER");
 		case 38:
-			return -412614304;
+			return joaat("BLIP_MODIFIER_GROUPING_BLACKWATER_LEADER");
 		case 69:
-			return -653335484;
+			return joaat("BLIP_MODIFIER_GROUPING_EMERALD_RANCH_LEADER");
 		case 76:
-			return 1777802794;
+			return joaat("BLIP_MODIFIER_GROUPING_VALENTINE_LEADER");
 		case 78:
-			return 1088576970;
+			return joaat("BLIP_MODIFIER_GROUPING_ANNESBURG_LEADER");
 		case 92:
-			return 412321676;
+			return joaat("BLIP_MODIFIER_GROUPING_VAN_HORN_LEADER");
 		case 105:
-			return 1787788681;
+			return joaat("BLIP_MODIFIER_GROUPING_RHODES_LEADER");
 		case 115:
-			return 1635466279;
+			return joaat("BLIP_MODIFIER_GROUPING_TUMBLEWEED_LEADER");
 		case 120:
-			return -410502938;
+			return joaat("BLIP_MODIFIER_GROUPING_ARMADILLO_LEADER");
 		case 4:
 		case 9:
 		case 22:
@@ -15346,7 +15346,7 @@ int func_565(int iParam0)
 		case 71:
 		case 79:
 		case 98:
-			return 7148155;
+			return joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER");
 		default:
 			break;
 	}

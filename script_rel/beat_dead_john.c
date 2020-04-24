@@ -3436,7 +3436,7 @@ int func_66()
 				}
 				PED::CLEAR_PED_ENV_DIRT(&(uLocal_1250[0]));
 				func_49(iLocal_1271[1]);
-				func_240(ENTITY::GET_ENTITY_COORDS(&(uLocal_1250[0]), true, false), iLocal_1271[0], -89429847, 0, "BLIP_AMBIENT_CORPSE", joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"));
+				func_240(ENTITY::GET_ENTITY_COORDS(&(uLocal_1250[0]), true, false), iLocal_1271[0], joaat("BLIP_STYLE_FRIENDLY"), 0, "BLIP_AMBIENT_CORPSE", joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"));
 				PED::_0x935CF6E42BAF7F4D(&(uLocal_1250[1]));
 				if (func_68(&uLocal_1311))
 				{
@@ -8815,7 +8815,7 @@ void func_203()
 				func_37(&(uLocal_1250[1]), 100);
 				func_62(Global_35, &(uLocal_1250[1]), func_61("ITAKEBODY", 0), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				func_49(iLocal_1271[1]);
-				func_240(ENTITY::GET_ENTITY_COORDS(&(uLocal_1250[0]), true, false), iLocal_1271[0], -89429847, 0, "BLIP_AMBIENT_CORPSE", joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"));
+				func_240(ENTITY::GET_ENTITY_COORDS(&(uLocal_1250[0]), true, false), iLocal_1271[0], joaat("BLIP_STYLE_FRIENDLY"), 0, "BLIP_AMBIENT_CORPSE", joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"));
 				if (func_68(&uLocal_1296))
 				{
 					func_246(&uLocal_1296);
@@ -10457,7 +10457,7 @@ int func_228()
 				func_46(&(uLocal_1250[1]), &iLocal_1290, 0, 0, 1, 1);
 				if (!MAP::DOES_BLIP_EXIST(&(iLocal_1271[1])))
 				{
-					iLocal_1271[1] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, &(uLocal_1250[1]));
+					iLocal_1271[1] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), &(uLocal_1250[1]));
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_1271[1]), "RE_INTER_STRANGER");
 				}
 				Local_41.f_3 = &uLocal_1250[1];
@@ -10480,7 +10480,7 @@ int func_228()
 				}
 				if (!MAP::DOES_BLIP_EXIST(&(iLocal_1271[1])))
 				{
-					iLocal_1271[1] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, &(uLocal_1250[1]));
+					iLocal_1271[1] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), &(uLocal_1250[1]));
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_1271[1]), "RE_INTER_STRANGER");
 				}
 				func_221(&iLocal_1243, -317.547f, 814.025f, 120.969f, 0f, -32.421f, 100.025f, 10.848f, 2.009f, 3.48f, "volStairs");
@@ -10713,7 +10713,7 @@ int func_228()
 			TASK::TASK_STAND_STILL(0, -1);
 			func_46(&(uLocal_1250[1]), &iLocal_1290, 0, 0, 1, 1);
 			func_49(iLocal_1271[1]);
-			func_489(&(uLocal_1250[1]), iLocal_1271[1], -89429847, joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"), 0, "RE_INTER_STRANGER");
+			func_489(&(uLocal_1250[1]), iLocal_1271[1], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"), 0, "RE_INTER_STRANGER");
 			func_90();
 			return 1;
 	}
@@ -11343,7 +11343,7 @@ void func_247()
 	if (!VOLUME::_DOES_VOLUME_EXIST(iLocal_1234))
 	{
 		func_221(&iLocal_1234, Local_923.f_70, Local_923.f_73, Local_923.f_76, "volDisposal");
-		iLocal_1275 = MAP::_0xA6EF0C54A3443E70(1247852480, iLocal_1234);
+		iLocal_1275 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_AREA"), iLocal_1234);
 		func_39(&iLocal_1164, 4194304);
 	}
 }
@@ -11613,7 +11613,7 @@ int func_253()
 			if (MAP::DOES_BLIP_EXIST(&(iLocal_1271[1])))
 			{
 				func_49(iLocal_1271[1]);
-				iLocal_1275 = MAP::_0xA6EF0C54A3443E70(1247852480, iLocal_1234);
+				iLocal_1275 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_AREA"), iLocal_1234);
 			}
 		}
 		return 0;
@@ -11622,7 +11622,7 @@ int func_253()
 	{
 		if (!MAP::DOES_BLIP_EXIST(&(iLocal_1271[1])) && !func_36(iLocal_1168, 131072))
 		{
-			func_489(&(uLocal_1250[1]), iLocal_1271[1], -89429847, joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"), 0, "RE_INTER_STRANGER");
+			func_489(&(uLocal_1250[1]), iLocal_1271[1], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"), 0, "RE_INTER_STRANGER");
 			if (!func_68(&uLocal_1326))
 			{
 				func_69(&uLocal_1326, 0);
@@ -18193,7 +18193,7 @@ int func_449()
 					func_62(iLocal_1253, Global_35, func_61("RTN_MAN_B", 1), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 					iLocal_1202 = 1;
 					func_221(&bLocal_1239, Local_923.f_61, Local_923.f_64, Local_923.f_67, "volSheriffCorpseArea");
-					iLocal_1275 = MAP::_BLIP_ADD_FOR_COORD(408396114, Local_923.f_61);
+					iLocal_1275 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), Local_923.f_61);
 					func_246(&uLocal_1344);
 					fLocal_1191 = 10f;
 					iLocal_1185 = 0;
@@ -18304,7 +18304,7 @@ int func_449()
 			{
 				iLocal_1202 = 1;
 				func_221(&bLocal_1239, Local_923.f_61, Local_923.f_64, Local_923.f_67, "volSheriffCorpseArea");
-				iLocal_1275 = MAP::_BLIP_ADD_FOR_COORD(408396114, Local_923.f_61);
+				iLocal_1275 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), Local_923.f_61);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), true, 256, false);
 				iLocal_1032 = 20;
 			}
@@ -22515,8 +22515,8 @@ void func_548(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
@@ -27256,9 +27256,9 @@ int func_686(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	if (bParam3)
 	{
-		if ((iParam1 == 408396114 || iParam1 == 1259054292) || iParam1 == -308585968)
+		if ((iParam1 == joaat("BLIP_STYLE_OBJECTIVE") || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX")) || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_ROUND"))
 		{
-			MAP::_0x662D364ABF16DE2F(iVar0, 231194138);
+			MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 	}
 	return iVar0;

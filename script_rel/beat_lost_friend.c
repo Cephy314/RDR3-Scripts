@@ -1420,7 +1420,7 @@ int func_31()
 			if (func_126(&Local_18, 1077936128 /* Float: 3f */, 45f, 45f, 1, 0, 1, -1082130432 /* Float: -1f */, 1, 1125515264 /* Float: 150f */, 0, 0) && func_127(-3.5f, 1, &(uLocal_769[0]), 1))
 			{
 				func_108(1024);
-				func_128(&(uLocal_769[0]), iLocal_764[0], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+				func_128(&(uLocal_769[0]), iLocal_764[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 				func_113(&(uLocal_769[0]), &(uLocal_769[0]), 1, 1, -1073741824 /* Float: -2f */, 2, -500314840);
 				func_129(1891783641, &(uLocal_769[0]), 1);
 				func_110(&iLocal_15, 2);
@@ -1639,7 +1639,7 @@ int func_31()
 			if (func_160(vLocal_818, &uLocal_343, &uLocal_811, &uLocal_814, 1073741824 /* Float: 2f */, 8f, 0, 0, 5.5f))
 			{
 				func_109(&iLocal_764);
-				func_161(*(Local_620[1 /*12*/]), &iLocal_768, -89429847, 0, "RE_LF_BODYBLIP", -401963276);
+				func_161(*(Local_620[1 /*12*/]), &iLocal_768, joaat("BLIP_STYLE_FRIENDLY"), 0, "RE_LF_BODYBLIP", joaat("BLIP_MODIFIER_OBJECTIVE"));
 				iLocal_348 = func_162("RE_LF_USECHECK", joaat("INPUT_CONTEXT_Y"), &(uLocal_769[1]), 2, 1, 0, 0, 5, 2f, 570, 4000, 10, 1073741824 /* Float: 2f */, 0, joaat("SHORT_TIMED_EVENT"), 0, 0);
 				func_163(iLocal_348, HUD::_UIPROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY(&(uLocal_769[1])), 0, 1);
 				if (ENTITY::GET_ENTITY_SPEED(Global_35) >= 1.25f)
@@ -1660,7 +1660,7 @@ int func_31()
 				if (!func_48(4194304) && func_127(-3f, 1, &(uLocal_769[0]), 1))
 				{
 					func_52(iLocal_764[0]);
-					func_169(func_167(iLocal_358), func_168(iLocal_358), iLocal_764[2], -1282792512);
+					func_169(func_167(iLocal_358), func_168(iLocal_358), iLocal_764[2], joaat("BLIP_STYLE_RADIUS"));
 					func_170("RE_LF_OBJ_SRCH", 7500, 0, 0, -1, -1, 0);
 					func_108(8);
 				}
@@ -1776,7 +1776,7 @@ int func_31()
 			if (!bLocal_828 && ANIMSCENE::_0xB89FCFF19DAFFF28(Local_350.f_1, "player"))
 			{
 				func_170("RE_LF_OBJ_RETRN", 7500, 0, 0, -1, -1, 0);
-				func_128(&(uLocal_769[0]), iLocal_764[0], -89429847, -401963276, 0, "RE_LF_HUNTER_BLIP");
+				func_128(&(uLocal_769[0]), iLocal_764[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_OBJECTIVE"), 0, "RE_LF_HUNTER_BLIP");
 				bLocal_828 = true;
 			}
 			if (!func_148(1))
@@ -2234,7 +2234,7 @@ int func_31()
 				{
 					func_224(0);
 					func_226(&(uLocal_769[0]), Global_35, func_225(iLocal_358), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
-					func_128(&(uLocal_769[0]), iLocal_764[0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+					func_128(&(uLocal_769[0]), iLocal_764[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					func_227(&(uLocal_769[0]));
 					func_228(&(uLocal_769[0]), func_48(16));
 					func_110(&iLocal_15, 34);
@@ -17609,8 +17609,8 @@ void func_524(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

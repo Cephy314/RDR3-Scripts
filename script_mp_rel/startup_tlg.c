@@ -2061,7 +2061,7 @@ int func_32()
 					case -1203660660:
 						if (vVar0.y == Global_1572864->f_20)
 						{
-							if (vVar0.z == 2074623703)
+							if (vVar0.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 							{
 								UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("WARNING_FEED"));
 								return 1;
@@ -8154,7 +8154,7 @@ int func_213(var uParam0)
 				case -1203660660:
 					if (vVar0.y == uParam0->f_563)
 					{
-						if (vVar0.z == 2074623703)
+						if (vVar0.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 						{
 							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("WARNING_FEED"));
 							return 1;
@@ -22896,9 +22896,9 @@ void func_406(int iParam0, int iParam1)
 		case 0:
 			switch (iParam1)
 			{
-				case 1400745903:
+				case joaat("UI_STICKY_FEED_BUTTON_TYPE_BACK"):
 					break;
-				case 2074623703:
+				case joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"):
 					NETWORK::_0x83FE8D7229593017();
 					break;
 			}

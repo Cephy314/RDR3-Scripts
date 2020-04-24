@@ -1304,7 +1304,7 @@ int func_25()
 						}
 						func_90(1515458263, ENTITY::GET_ENTITY_COORDS(&(uLocal_693[0]), true, false), 1);
 					}
-					func_91(&(uLocal_693[0]), uLocal_697[0], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+					func_91(&(uLocal_693[0]), uLocal_697[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 					PED::_0xAE6004120C18DF97(&(uLocal_693[0]), 0, 0);
 					PED::SET_PED_CONFIG_FLAG(&(uLocal_693[0]), 6, true);
 					PED::SET_PED_CONFIG_FLAG(&(uLocal_693[0]), 138, true);
@@ -12808,8 +12808,8 @@ void func_344(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
@@ -14353,7 +14353,7 @@ void func_432(var uParam0, vector3 vParam1, int iParam4)
 {
 	if (!uParam0->f_182 || iParam4 == 1)
 	{
-		uParam0->f_183 = MAP::_BLIP_ADD_FOR_COORD(1260140857, vParam1);
+		uParam0->f_183 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_RANDOM_EVENT"), vParam1);
 		uParam0->f_182 = 1;
 	}
 }
@@ -14364,7 +14364,7 @@ void func_433(var uParam0, int iParam1, int iParam2)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
-			uParam0->f_183 = MAP::_BLIP_ADD_FOR_ENTITY(1260140857, iParam1);
+			uParam0->f_183 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_RANDOM_EVENT"), iParam1);
 			uParam0->f_182 = 1;
 		}
 	}

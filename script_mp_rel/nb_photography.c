@@ -18126,7 +18126,7 @@ void func_673(float fParam0)
 	{
 		if (!func_852(2))
 		{
-			func_853(2, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, "NB_PHOTOGRAPHY_BLIP_NAME_ANIMAL");
+			func_853(2, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "NB_PHOTOGRAPHY_BLIP_NAME_ANIMAL");
 		}
 	}
 	else
@@ -18209,8 +18209,8 @@ void func_679(int iParam0, vector3 vParam1)
 	{
 		return;
 	}
-	Local_1067.f_18.f_153 = MAP::_BLIP_ADD_FOR_AREA(1247852480, func_326(iParam0), vParam1, 0);
-	MAP::_0x662D364ABF16DE2F(Local_1067.f_18.f_153, 1679075994);
+	Local_1067.f_18.f_153 = MAP::_BLIP_ADD_FOR_AREA(joaat("BLIP_STYLE_AREA"), func_326(iParam0), vParam1, 0);
+	MAP::_0x662D364ABF16DE2F(Local_1067.f_18.f_153, joaat("BLIP_MODIFIER_FRIENDLY"));
 	MAP::SET_BLIP_NAME_FROM_TEXT_FILE(Local_1067.f_18.f_153, "NB_PHOTOGRAPHY_BLIP_NAME_OBJ");
 }
 
@@ -21881,7 +21881,7 @@ void func_833(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_1067.f_18.f_3[iParam0 /*2*/])))
 	{
-		Local_1067.f_18.f_3[iParam0 /*2*/] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, func_101(0));
+		Local_1067.f_18.f_3[iParam0 /*2*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), func_101(0));
 		switch (func_197())
 		{
 			case 0:
@@ -21921,7 +21921,7 @@ void func_833(int iParam0, int iParam1)
 	}
 	if (iParam1 != 0)
 	{
-		MAP::_0x662D364ABF16DE2F(&(Local_1067.f_18.f_3[iParam0 /*2*/]), 942020339);
+		MAP::_0x662D364ABF16DE2F(&(Local_1067.f_18.f_3[iParam0 /*2*/]), joaat("BLIP_MODIFIER_ENEMY"));
 	}
 }
 

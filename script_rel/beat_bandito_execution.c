@@ -1211,12 +1211,12 @@ int func_27()
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[1]), 2);
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[1]), 256);
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[1]), 1);
-					func_130(&(uLocal_570[1]), uLocal_575[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+					func_130(&(uLocal_570[1]), uLocal_575[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					func_131(uLocal_570[1], &iLocal_377, &Local_440, 1, 1);
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[0]), 2);
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[0]), 1);
 					LAW::_0x819ADD5EF1742F47(&(uLocal_570[0]), 128);
-					func_130(&(uLocal_570[0]), uLocal_575[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+					func_130(&(uLocal_570[0]), uLocal_575[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					func_131(uLocal_570[0], &Local_398, &Local_475, 1, 1);
 					LAW::_0xEDFC6C1FD1C964F5(PLAYER::PLAYER_ID(), joaat("CRIME_DISTURBANCE"), 0, 0, 0, 0, 0, 0, 0);
 					TASK::CLEAR_PED_TASKS(&(uLocal_570[1]), 1, 0);
@@ -4013,7 +4013,7 @@ void func_134(int iParam0, int* iParam1)
 	if (func_62(iParam0, 0, 1))
 	{
 		PED::SET_PED_CAN_BE_TARGETTED(iParam0, true);
-		func_130(iParam0, iParam1, joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+		func_130(iParam0, iParam1, joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 	}
 }
 
@@ -12432,8 +12432,8 @@ void func_364(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

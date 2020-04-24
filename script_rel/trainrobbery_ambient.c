@@ -4182,7 +4182,7 @@ void func_143(int iParam0, bool bParam1, bool bParam2)
 								{
 									if (!MAP::DOES_BLIP_EXIST((Local_718.f_310[iVar2 /*14*/])->f_1))
 									{
-										func_266(&(Local_718.f_310[iVar2 /*14*/]), &((Local_718.f_310[iVar2 /*14*/])->f_1), -1749618580, 0, 0, "BLIP_TNRB_PASSENGER");
+										func_266(&(Local_718.f_310[iVar2 /*14*/]), &((Local_718.f_310[iVar2 /*14*/])->f_1), joaat("BLIP_STYLE_NEUTRAL"), 0, 0, "BLIP_TNRB_PASSENGER");
 									}
 								}
 								else if (MAP::DOES_BLIP_EXIST((Local_718.f_310[iVar2 /*14*/])->f_1))
@@ -7182,7 +7182,7 @@ void func_264(int iParam0, int iParam1, var uParam2, var uParam3, int iParam4)
 		}
 		if (!bVar0 && MAP::DOES_BLIP_EXIST((iParam0->f_310[iParam1 /*14*/])->f_1))
 		{
-			MAP::_0x662D364ABF16DE2F((iParam0->f_310[iParam1 /*14*/])->f_1, -1186550032);
+			MAP::_0x662D364ABF16DE2F((iParam0->f_310[iParam1 /*14*/])->f_1, joaat("BLIP_MODIFIER_HIDDEN"));
 			func_34(&((iParam0->f_310[iParam1 /*14*/])->f_7), 1);
 		}
 	}
@@ -7190,7 +7190,7 @@ void func_264(int iParam0, int iParam1, var uParam2, var uParam3, int iParam4)
 	{
 		if (bVar0 && MAP::DOES_BLIP_EXIST((iParam0->f_310[iParam1 /*14*/])->f_1))
 		{
-			MAP::_SET_BLIP_FLASH_STYLE((iParam0->f_310[iParam1 /*14*/])->f_1, -1186550032);
+			MAP::_SET_BLIP_FLASH_STYLE((iParam0->f_310[iParam1 /*14*/])->f_1, joaat("BLIP_MODIFIER_HIDDEN"));
 			func_74(&((iParam0->f_310[iParam1 /*14*/])->f_7), 1);
 		}
 	}

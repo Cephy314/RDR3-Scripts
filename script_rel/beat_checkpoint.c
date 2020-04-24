@@ -2680,11 +2680,11 @@ void func_57()
 					}
 					if (iLocal_1347 == &uLocal_810[3])
 					{
-						func_184(&(uLocal_810[3]), iLocal_1337[3], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+						func_184(&(uLocal_810[3]), iLocal_1337[3], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					}
 					else
 					{
-						func_184(&(uLocal_810[2]), iLocal_1337[2], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+						func_184(&(uLocal_810[2]), iLocal_1337[2], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					}
 					iLocal_1160 = 1;
 				}
@@ -7273,7 +7273,7 @@ void func_189()
 	{
 		if (!ENTITY::IS_ENTITY_PLAYING_ANIM(&(uLocal_810[1]), &(Local_53[11 /*2*/]), (Local_53[11 /*2*/])->f_1, 1))
 		{
-			func_184(&(uLocal_810[1]), iLocal_1337[1], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_184(&(uLocal_810[1]), iLocal_1337[1], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			if (func_44(&(uLocal_810[1]), iLocal_807, 0))
 			{
@@ -16048,8 +16048,8 @@ void func_445(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

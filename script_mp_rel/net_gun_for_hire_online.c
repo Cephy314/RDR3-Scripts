@@ -9035,12 +9035,12 @@ void func_360(var uParam0, var uParam1, var uParam2)
 	}
 	if (!func_500(0))
 	{
-		func_501(0, 408396114);
+		func_501(0, joaat("BLIP_STYLE_OBJECTIVE"));
 		return;
 	}
 	func_502(0, joaat("BLIP_MP_GUN_FOR_HIRE"));
 	func_503(0, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
-	func_504(0, -244815569);
+	func_504(0, joaat("BLIP_MODIFIER_TEXT_ONLY"));
 	sVar7 = func_505(0);
 	iVar8 = func_308(MISC::_CREATE_VAR_STRING(0, iVar6, sVar7), 10000, 0, 0, 0, 1);
 	func_309(uParam1, uParam2, iVar0, iVar8);
@@ -9191,12 +9191,12 @@ void func_363(var uParam0, var uParam1, int iParam2)
 	}
 	if (!func_500(0))
 	{
-		func_501(0, 408396114);
+		func_501(0, joaat("BLIP_STYLE_OBJECTIVE"));
 		return;
 	}
 	func_502(0, joaat("BLIP_MP_GUN_FOR_HIRE"));
 	func_503(0, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
-	func_504(0, -244815569);
+	func_504(0, joaat("BLIP_MODIFIER_TEXT_ONLY"));
 	sVar6 = func_505(0);
 	iVar7 = func_308(MISC::_CREATE_VAR_STRING(0, iVar5, sVar6), 10000, 0, 0, 0, 1);
 	func_309(uParam0, uParam1, iVar0, iVar7);
@@ -11419,7 +11419,7 @@ void func_422(var uParam0, var uParam1)
 	}
 	func_502(1, joaat("BLIP_PROC_BOUNTY_POSTER"));
 	func_503(1, joaat("BLIP_STYLE_MP_MISSION_GIVER"));
-	func_504(1, -244815569);
+	func_504(1, joaat("BLIP_MODIFIER_TEXT_ONLY"));
 	iVar2 = func_308(MISC::_CREATE_VAR_STRING(0, iVar1, func_505(1)), 10000, 0, 0, 0, 1);
 	func_309(uParam0, uParam1, iVar0, iVar2);
 }

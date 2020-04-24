@@ -3787,7 +3787,7 @@ void func_125()
 			}
 			if (ENTITY::HAS_ANIM_EVENT_FIRED(&(iLocal_211[0]), -212832617))
 			{
-				func_320(&(iLocal_211[0]), uLocal_215[0], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+				func_320(&(iLocal_211[0]), uLocal_215[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 			}
 		}
 	}
@@ -3918,14 +3918,14 @@ void func_128(int* iParam0, int iParam1, bool bParam2)
 	{
 		MAP::REMOVE_BLIP(iParam0);
 	}
-	func_320(iParam1, iParam0, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+	func_320(iParam1, iParam0, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 	if (bParam2)
 	{
-		func_331(iParam1, -1034486097, 1);
+		func_331(iParam1, joaat("BLIP_MODIFIER_ENEMY_GUNSHOTS_ONLY"), 1);
 	}
 	else
 	{
-		func_331(iParam1, 942020339, 1);
+		func_331(iParam1, joaat("BLIP_MODIFIER_ENEMY"), 1);
 	}
 }
 
@@ -13425,8 +13425,8 @@ void func_418(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

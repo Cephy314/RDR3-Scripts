@@ -33974,7 +33974,7 @@ void func_1077(int iParam0)
 		return;
 	}
 	func_1534(&((Global_1058888->f_42784[iParam0 /*12*/])->f_10));
-	func_1535(iParam0, 1277358601, 1);
+	func_1535(iParam0, joaat("GENERIC_PLAYER"), 1);
 	func_1536(iParam0, 0);
 	HUD::REMOVE_MP_GAMER_TAG(&((Global_1058888->f_42784[iParam0 /*12*/])->f_2));
 	(Global_1058888->f_42784[iParam0 /*12*/])->f_2 = uVar1;

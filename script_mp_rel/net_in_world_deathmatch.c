@@ -2817,15 +2817,15 @@ void func_101(int iParam0, var uParam1, var uParam2, int iParam3)
 			}
 			if (!MAP::DOES_BLIP_EXIST(iParam3->f_1097))
 			{
-				iParam3->f_1097 = MAP::_BLIP_ADD_FOR_COORD(408396114, uParam1->f_109);
-				MAP::_0x662D364ABF16DE2F(iParam3->f_1097, -1878373110);
-				MAP::_0x662D364ABF16DE2F(iParam3->f_1097, 847579139);
+				iParam3->f_1097 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), uParam1->f_109);
+				MAP::_0x662D364ABF16DE2F(iParam3->f_1097, joaat("BLIP_MODIFIER_FORCE_GPS"));
+				MAP::_0x662D364ABF16DE2F(iParam3->f_1097, joaat("BLIP_MODIFIER_RADAR_EDGE_ALWAYS"));
 				MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iParam3->f_1097, "NET_IWD_OOB_BLIP");
 			}
 			if (!MAP::DOES_BLIP_EXIST(iParam3->f_1096))
 			{
-				iParam3->f_1096 = MAP::_BLIP_ADD_FOR_AREA(-569474439, uParam1->f_109, uParam1->f_112, uParam1->f_112, uParam1->f_112, 0);
-				MAP::_0x662D364ABF16DE2F(iParam3->f_1096, -1417554730);
+				iParam3->f_1096 = MAP::_BLIP_ADD_FOR_AREA(joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY"), uParam1->f_109, uParam1->f_112, uParam1->f_112, uParam1->f_112, 0);
+				MAP::_0x662D364ABF16DE2F(iParam3->f_1096, joaat("BLIP_MODIFIER_AREA_OUT_OF_BOUNDS"));
 			}
 			if (func_213(Global_34, iParam3->f_1098, 1, 0))
 			{
@@ -5689,9 +5689,9 @@ void func_215(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4)
 	{
 		if (!MAP::DOES_BLIP_EXIST(iParam2->f_1097))
 		{
-			iParam2->f_1097 = MAP::_BLIP_ADD_FOR_COORD(408396114, uParam0->f_109);
-			MAP::_0x662D364ABF16DE2F(iParam2->f_1097, -1878373110);
-			MAP::_0x662D364ABF16DE2F(iParam2->f_1097, 847579139);
+			iParam2->f_1097 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), uParam0->f_109);
+			MAP::_0x662D364ABF16DE2F(iParam2->f_1097, joaat("BLIP_MODIFIER_FORCE_GPS"));
+			MAP::_0x662D364ABF16DE2F(iParam2->f_1097, joaat("BLIP_MODIFIER_RADAR_EDGE_ALWAYS"));
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iParam2->f_1097, "NET_IWD_OOB_BLIP");
 		}
 		func_51(uParam1, 16, iParam3);
@@ -5853,8 +5853,8 @@ int func_220(int iParam0, var uParam1, var uParam2, int iParam3)
 				{
 					iVar3 = iVar0;
 					func_353(iVar3, joaat("BLIP_AMBIENT_MARKED_FOR_DEATH"));
-					func_354(iVar3, 847579139);
-					func_355(iVar3, 12061847);
+					func_354(iVar3, joaat("BLIP_MODIFIER_RADAR_EDGE_ALWAYS"));
+					func_355(iVar3, joaat("MARKED_FOR_DEATH"));
 					func_318((*uParam2)[iParam0 /*25*/], iParam3);
 				}
 				else
@@ -5869,7 +5869,7 @@ int func_220(int iParam0, var uParam1, var uParam2, int iParam3)
 					else
 					{
 						iVar3 = iVar0;
-						func_354(iVar3, 847579139);
+						func_354(iVar3, joaat("BLIP_MODIFIER_RADAR_EDGE_ALWAYS"));
 						if (iParam3->f_1046 != 3)
 						{
 							func_225(iParam3, iVar3, iParam3->f_1046);
@@ -5882,7 +5882,7 @@ int func_220(int iParam0, var uParam1, var uParam2, int iParam3)
 						else
 						{
 							func_353(iVar3, joaat("BLIP_AMBIENT_MARKED_FOR_DEATH"));
-							func_355(iVar3, 12061847);
+							func_355(iVar3, joaat("MARKED_FOR_DEATH"));
 						}
 					}
 				}
@@ -5918,8 +5918,8 @@ void func_221(var uParam0, var uParam1, int iParam2, int iParam3)
 	{
 		MAP::REMOVE_BLIP(&(iParam2->f_1096));
 	}
-	iParam2->f_1096 = MAP::_BLIP_ADD_FOR_AREA(-569474439, uParam0->f_109, uParam0->f_112, uParam0->f_112, uParam0->f_112, 0);
-	MAP::_0x662D364ABF16DE2F(iParam2->f_1096, -1417554730);
+	iParam2->f_1096 = MAP::_BLIP_ADD_FOR_AREA(joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY"), uParam0->f_109, uParam0->f_112, uParam0->f_112, uParam0->f_112, 0);
+	MAP::_0x662D364ABF16DE2F(iParam2->f_1096, joaat("BLIP_MODIFIER_AREA_OUT_OF_BOUNDS"));
 	func_52(1);
 	Global_1102099->f_935.f_22 = 1;
 }

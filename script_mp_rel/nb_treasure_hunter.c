@@ -6795,7 +6795,7 @@ void func_280(bool bParam0)
 	{
 		if (Local_937.f_18.f_1 < 14)
 		{
-			func_487(0, func_486(PLAYER::PLAYER_ID()), 125f, -89429847, 580546400, 0, sVar0);
+			func_487(0, func_486(PLAYER::PLAYER_ID()), 125f, joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, sVar0);
 		}
 		else
 		{
@@ -6804,7 +6804,7 @@ void func_280(bool bParam0)
 	}
 	else if (func_209() != 1 || func_281(2097152))
 	{
-		func_487(0, func_486(PLAYER::PLAYER_ID()), 100f, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, sVar0);
+		func_487(0, func_486(PLAYER::PLAYER_ID()), 100f, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, sVar0);
 	}
 	else
 	{
@@ -7029,7 +7029,7 @@ void func_287()
 	iVar1 = func_210(0);
 	if (func_209() == 1)
 	{
-		func_487(0, func_486(PLAYER::PLAYER_ID()), 100f, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+		func_487(0, func_486(PLAYER::PLAYER_ID()), 100f, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 	}
 	else if (!func_477(33554432, -1))
 	{

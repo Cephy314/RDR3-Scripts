@@ -21369,7 +21369,7 @@ void func_651(var uParam0)
 void func_652(var uParam0, var uParam1)
 {
 	func_1232(&(uParam0->f_2335), uParam1->f_6, 1);
-	HUD::_0x5F57522BC1EB9D9D((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, -828390532);
+	HUD::_0x5F57522BC1EB9D9D((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, joaat("GENERIC_OBJECTIVE"));
 	func_1036(&(uParam0->f_2335), uParam1->f_6, func_1035(uParam0, uParam1->f_6, func_611(uParam1, uParam1->f_6)));
 	func_1233(&(uParam0->f_2335), uParam1->f_6, 1f);
 }
@@ -21664,7 +21664,7 @@ void func_663(var uParam0, var uParam1)
 {
 	func_1037(&(uParam0->f_2335), uParam1->f_6, 0);
 	func_1232(&(uParam0->f_2335), uParam1->f_6, 0);
-	HUD::_0x5F57522BC1EB9D9D((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, 1277358601);
+	HUD::_0x5F57522BC1EB9D9D((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, joaat("GENERIC_PLAYER"));
 }
 
 bool func_664(var uParam0, int iParam1, var uParam2)
@@ -41884,7 +41884,7 @@ int func_1491(int iParam0, int iParam1, char* sParam2, var uParam3)
 		{
 			*uParam3 = HUD::CREATE_FAKE_MP_GAMER_TAG(iParam1, sParam2, true, false, "", 0);
 			HUD::_0x93171DDDAB274EB8(*uParam3, 2);
-			HUD::_0x5F57522BC1EB9D9D(*uParam3, 1277358601);
+			HUD::_0x5F57522BC1EB9D9D(*uParam3, joaat("GENERIC_PLAYER"));
 			HUD::_0x25B9C78A25105C35(*uParam3, joaat("MINIGAMES"));
 			HUD::_0x84BD27DDF9575816(*uParam3, joaat("COLOR_WHITE"));
 		}

@@ -5271,8 +5271,8 @@ void func_209()
 				}
 				if (func_289())
 				{
-					func_287(1, joaat("BLIP_STYLE_COP"), 942020339, 0);
-					func_287(2, joaat("BLIP_STYLE_COP"), 942020339, 0);
+					func_287(1, joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_ENEMY"), 0);
+					func_287(2, joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_ENEMY"), 0);
 				}
 				iVar4 = func_189(3);
 				iVar5 = func_189(4);
@@ -5538,7 +5538,7 @@ void func_221()
 	{
 		func_295(1);
 		func_286(-296154796, iVar0, 1);
-		func_287(0, -89429847, 0, "NB_GRAVEROBBER_BLIP_NAME");
+		func_287(0, joaat("BLIP_STYLE_FRIENDLY"), 0, "NB_GRAVEROBBER_BLIP_NAME");
 		func_304(806, 0);
 	}
 	if (!TASK::_0x916B8E075ABC8B4E(iVar0, 1))
@@ -7966,7 +7966,7 @@ void func_322(int iParam0)
 	}
 	if (!MAP::DOES_BLIP_EXIST((Local_204.f_18.f_130[iParam0 /*3*/])->f_1))
 	{
-		(Local_204.f_18.f_130[iParam0 /*3*/])->f_1 = MAP::_BLIP_ADD_FOR_COORD(408396114, func_420(iParam0));
+		(Local_204.f_18.f_130[iParam0 /*3*/])->f_1 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), func_420(iParam0));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE((Local_204.f_18.f_130[iParam0 /*3*/])->f_1, "NB_GRAVEROBBER_BLIP_OBJ");
 	}
 }

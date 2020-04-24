@@ -2016,7 +2016,7 @@ int func_42(var uParam0, bool bParam1)
 	uParam0->f_54 = 1;
 	if (bParam1 && UIAPPS::_IS_APP_ACTIVE(joaat("CRAFTING")))
 	{
-		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), 1014850361))
+		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), joaat("RESTORE_MENU")))
 		{
 			func_118(8);
 			return 1;
@@ -2345,7 +2345,7 @@ void func_51(var uParam0, bool bParam1)
 {
 	if (bParam1)
 	{
-		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), 1383188602))
+		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), joaat("FOCUS_CAMERA")))
 		{
 		}
 		else

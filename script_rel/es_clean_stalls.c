@@ -2746,7 +2746,7 @@ void func_122(int iParam0)
 			func_190(&(iParam0->f_40));
 			func_228();
 			func_203(1);
-			iParam0->f_74 = MAP::_BLIP_ADD_FOR_COORD(203020899, func_229());
+			iParam0->f_74 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE_MINOR"), func_229());
 			func_211(iParam0, 1);
 			func_111(iParam0, 13);
 			break;
@@ -4630,7 +4630,7 @@ void func_219(var uParam0, var uParam1, char* sParam2)
 {
 	if (!MAP::DOES_BLIP_EXIST(*uParam0) && ENTITY::DOES_ENTITY_EXIST(*uParam1))
 	{
-		*uParam0 = MAP::_BLIP_ADD_FOR_ENTITY(203020899, *uParam1);
+		*uParam0 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_OBJECTIVE_MINOR"), *uParam1);
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam0, sParam2);
 	}
 }

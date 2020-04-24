@@ -1776,8 +1776,8 @@ int func_37()
 			func_70(&(uLocal_1408[1]), joaat("WEAPON_REPEATER_CARBINE"), 1, 1, 0, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 			WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_1408[1]), joaat("WEAPON_REPEATER_CARBINE"), false, 0, false, false);
 		}
-		func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
-		func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+		func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+		func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		Local_758.f_46 = 1;
 		iLocal_1453 = 1;
 		func_131(&Local_1222, 0, 1, 1, 0);
@@ -1811,8 +1811,8 @@ int func_39()
 			func_70(&(uLocal_1408[1]), joaat("WEAPON_REPEATER_CARBINE"), 1, 1, 0, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 			WEAPON::SET_CURRENT_PED_WEAPON(&(uLocal_1408[1]), joaat("WEAPON_REPEATER_CARBINE"), false, 0, false, false);
 		}
-		func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
-		func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+		func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+		func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		Local_758.f_46 = 1;
 		iLocal_1453 = 1;
 		func_131(&Local_1222, 0, 1, 1, 0);
@@ -1910,8 +1910,8 @@ int func_40()
 		}
 		if (iLocal_1447 == 2 || (func_128() && !func_38(iLocal_651, 262144)))
 		{
-			func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
-			func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+			func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+			func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			Local_758.f_46 = 1;
 			iLocal_1453 = 1;
 			if (func_54(&(uLocal_1408[0]), 0, 1))
@@ -1942,8 +1942,8 @@ int func_40()
 		}
 		if (iLocal_1447 == 2 || (func_128() && !func_38(iLocal_651, 262144)))
 		{
-			func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
-			func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+			func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+			func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			Local_758.f_46 = 1;
 			iLocal_1453 = 1;
 			if (func_54(&(uLocal_1408[0]), 0, 1))
@@ -2523,7 +2523,7 @@ int func_43()
 							TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
 							func_181(&(uLocal_1408[0]), &iLocal_1405, 0, 0, 1, 1);
 							PED::SET_PED_KEEP_TASK(&(uLocal_1408[0]), true);
-							func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+							func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 						}
 						else
 						{
@@ -2540,7 +2540,7 @@ int func_43()
 						}
 						TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
 						func_181(&(uLocal_1408[1]), &iLocal_1405, 0.2f, 0.2f, 1, 1);
-						func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+						func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 						PED::SET_PED_KEEP_TASK(&(uLocal_1408[1]), true);
 					}
 					iLocal_1461 = 1;
@@ -8071,7 +8071,7 @@ void func_189()
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_1405);
 		TASK::TASK_REACT(0, Global_35, 0f, 0f, 0f, "DEFAULT_SHOCKED", 1f, 0, 4);
 		TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
-		func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+		func_130(&(uLocal_1408[0]), uLocal_1419[0], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		func_181(&(uLocal_1408[0]), &iLocal_1405, 0, 0, 1, 1);
 		iLocal_1453 = 1;
 		if (iLocal_1477 == 0)
@@ -8087,7 +8087,7 @@ void func_189()
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_1405);
 		TASK::TASK_REACT(0, Global_35, 0f, 0f, 0f, "DEFAULT_SHOCKED", 1f, 0, 4);
 		TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
-		func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+		func_130(&(uLocal_1408[1]), uLocal_1419[1], joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		func_181(&(uLocal_1408[1]), &iLocal_1405, 0.2f, 0.2f, 1, 1);
 		iLocal_1453 = 1;
 	}
@@ -8321,7 +8321,7 @@ void func_193()
 		PED::APPLY_PED_DAMAGE_PACK(&(uLocal_1408[0]), "PD_Blood_Spray_FRONT_V1", 0f, 1f);
 		PED::APPLY_PED_DAMAGE_PACK(&(uLocal_1408[0]), "PD_Dead_John_bloody_chest_vic", 0f, 1f);
 	}
-	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uLocal_1408[4]), 1899276885))
+	if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uLocal_1408[4]), joaat("PED_SHOT")))
 	{
 		func_180(&(uLocal_1408[4]), 1);
 		iLocal_1470 = 1;
@@ -14105,9 +14105,9 @@ int func_352(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	if (bParam3)
 	{
-		if ((iParam1 == 408396114 || iParam1 == 1259054292) || iParam1 == -308585968)
+		if ((iParam1 == joaat("BLIP_STYLE_OBJECTIVE") || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX")) || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_ROUND"))
 		{
-			MAP::_0x662D364ABF16DE2F(iVar0, 231194138);
+			MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 	}
 	return iVar0;
@@ -17673,8 +17673,8 @@ void func_417(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

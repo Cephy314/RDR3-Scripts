@@ -2808,8 +2808,8 @@ void func_107(int iParam0, bool bParam1)
 		{
 			if (bVar5 == 0)
 			{
-				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 580546400);
-				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 1784012766);
+				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_URGENT_ALERT"));
+				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_VERYHIGH_CATEGORY"));
 				(Global_1126368->f_1[iParam0 /*62*/])->f_61 = MISC::GET_GAME_TIMER();
 			}
 			func_28(512);
@@ -2834,35 +2834,35 @@ void func_107(int iParam0, bool bParam1)
 		{
 			if (func_112(iParam0, 2))
 			{
-				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 1586775858);
+				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_POSSE_ENEMY_OWNED"));
 			}
 			else
 			{
-				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 1635604685);
+				MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_POSSE_NEUTRAL_OWNED"));
 			}
 		}
 		if (func_205(iParam0) && (!(bVar3 || bVar2) || !bVar5))
 		{
-			MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 892550176);
+			MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_MP_WHITE_FLAG"));
 		}
 		else
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 892550176);
+			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_MP_WHITE_FLAG"));
 		}
 		if (bVar5 && (!(bVar3 || bVar2) || !bVar6))
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 580546400);
-			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 1784012766);
+			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_URGENT_ALERT"));
+			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_VERYHIGH_CATEGORY"));
 			(Global_1126368->f_1[iParam0 /*62*/])->f_61 = 0;
-			MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), -211388321);
+			MAP::_0x662D364ABF16DE2F(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_RADAR_EDGE_NEVER"));
 		}
 		else
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), -211388321);
+			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_RADAR_EDGE_NEVER"));
 		}
 		if ((Global_1126368->f_1[iParam0 /*62*/])->f_61 != 0 && (MISC::GET_GAME_TIMER() - (Global_1126368->f_1[iParam0 /*62*/])->f_61) > 20000)
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), 1784012766);
+			MAP::_SET_BLIP_FLASH_STYLE(func_16((Global_1126368->f_1[iParam0 /*62*/])->f_5), joaat("BLIP_MODIFIER_VERYHIGH_CATEGORY"));
 			(Global_1126368->f_1[iParam0 /*62*/])->f_61 = 0;
 		}
 	}
@@ -11493,43 +11493,43 @@ int func_446(int iParam0)
 	switch (iParam0)
 	{
 		case 3:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 1:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 2:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 4:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 5:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 6:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 7:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 8:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 9:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 10:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 11:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 12:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 14:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 13:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 15:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 16:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 17:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 18:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 19:
-			return -936216634;
+			return joaat("BLIP_STYLE_PROC_MISSION");
 		case 20:
 			return joaat("BLIP_STYLE_SHOP");
 		case 21:
@@ -11595,43 +11595,43 @@ int func_446(int iParam0)
 		case 45:
 			return -1923570663;
 		case 53:
-			return -972966383;
+			return joaat("BLIP_STYLE_PROPERTY");
 		case 54:
-			return -972966383;
+			return joaat("BLIP_STYLE_PROPERTY");
 		case 55:
-			return -972966383;
+			return joaat("BLIP_STYLE_PROPERTY");
 		case 46:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 56:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 57:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 58:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 59:
-			return 1560611276;
+			return joaat("BLIP_STYLE_CAMP");
 		case 60:
-			return -494978356;
+			return joaat("BLIP_STYLE_EVENT_AREA");
 		case 61:
-			return -494978356;
+			return joaat("BLIP_STYLE_EVENT_AREA");
 		case 62:
-			return -494978356;
+			return joaat("BLIP_STYLE_EVENT_AREA");
 		case 63:
-			return -494978356;
+			return joaat("BLIP_STYLE_EVENT_AREA");
 		case 64:
-			return -507182222;
+			return joaat("BLIP_STYLE_MP_HIDEOUT");
 		case 65:
-			return -1337945352;
+			return joaat("BLIP_STYLE_RCM");
 		case 66:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 67:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 68:
-			return -678244495;
+			return joaat("BLIP_STYLE_MINIGAME");
 		case 69:
-			return -383696203;
+			return joaat("BLIP_STYLE_TOWN");
 		case 95:
-			return 1560611276;
+			return joaat("BLIP_STYLE_CAMP");
 		case 96:
 			return 776060936;
 		case 97:

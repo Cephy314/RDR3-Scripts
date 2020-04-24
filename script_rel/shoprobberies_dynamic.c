@@ -9092,7 +9092,7 @@ void func_342(var uParam0, int* iParam1, bool bParam2)
 	PED::_0x935CF6E42BAF7F4D(*uParam0);
 	TASK::TASK_COMBAT_PED(*uParam0, Global_35, 0, 0);
 	PED::SET_PED_KEEP_TASK(*uParam0, true);
-	func_439(*uParam0, iParam1, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+	func_439(*uParam0, iParam1, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 }
 
 bool func_343(int iParam0)

@@ -2713,7 +2713,7 @@ int func_47()
 			if (((ENTITY::IS_ENTITY_PLAYING_ANIM(&(iLocal_742[0]), &(Local_360[1 /*2*/]), (Local_360[1 /*2*/])->f_1, 1) && fVar2 > 0.75f) || (ENTITY::IS_ENTITY_PLAYING_ANIM(&(iLocal_742[0]), &(Local_360[15 /*2*/]), (Local_360[15 /*2*/])->f_1, 1) && fVar2 > 0.825f)) || (!AUDIO::IS_ANY_SPEECH_PLAYING(&(iLocal_742[0])) && func_30(&uLocal_1436) > 2f))
 			{
 				func_45();
-				func_207(&(iLocal_742[0]), uLocal_747[0], -89429847, 1679075994, 0, "RE_INTER_STRANGER");
+				func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY"), 0, "RE_INTER_STRANGER");
 				MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(uLocal_747[0]), "RE_INTER_STRANGER");
 				if (iLocal_38 == 1)
 				{
@@ -3347,7 +3347,7 @@ int func_47()
 			if (!VOLUME::_DOES_VOLUME_EXIST(bLocal_1469))
 			{
 				bLocal_1469 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(Local_1223.f_57, Local_1223.f_60, Local_1223.f_63, "BlipVol");
-				iLocal_1217 = MAP::_0xA6EF0C54A3443E70(1259054292, bLocal_1469);
+				iLocal_1217 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX"), bLocal_1469);
 			}
 			if (MAP::DOES_BLIP_EXIST(iLocal_1217))
 			{
@@ -3368,7 +3368,7 @@ int func_47()
 				{
 					func_236("ROB_OBJ02B", 7500, 0, 0, -1, -1, 0);
 					MAP::REMOVE_BLIP(&iLocal_1217);
-					iLocal_1217 = MAP::_0xA6EF0C54A3443E70(1259054292, bLocal_1470);
+					iLocal_1217 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX"), bLocal_1470);
 					if (MAP::DOES_BLIP_EXIST(iLocal_1217))
 					{
 						MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_1217, "ROB_HOTEL_BLIP");
@@ -3436,7 +3436,7 @@ int func_47()
 				func_110(&(iLocal_742[2]), &((Local_752[2 /*32*/])->f_23), 0);
 			}
 			PED::SET_COMBAT_FLOAT(&(iLocal_742[2]), 7, 0.5f);
-			func_207(&(iLocal_742[2]), uLocal_747[2], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+			func_207(&(iLocal_742[2]), uLocal_747[2], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 			func_246(iLocal_742[2], 718968995);
 			iLocal_1044 = 21;
 			break;
@@ -3623,7 +3623,7 @@ int func_47()
 						{
 							if (!MAP::DOES_BLIP_EXIST(&(uLocal_747[0])))
 							{
-								func_207(&(iLocal_742[0]), uLocal_747[0], -89429847, joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"), 0, "RE_INTER_STRANGER");
+								func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY_OBJECTIVE"), 0, "RE_INTER_STRANGER");
 								iLocal_1352 = 1;
 								MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(uLocal_747[0]), "RE_INTER_STRANGER");
 							}
@@ -3991,8 +3991,8 @@ int func_47()
 							PED::REGISTER_TARGET(&(iLocal_742[0]), Global_35, 1);
 							PED::REGISTER_TARGET(Global_35, &(iLocal_742[0]), 1);
 							PED::SET_PED_CONFIG_FLAG(&(iLocal_742[0]), 233, true);
-							func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
-							func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+							func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+							func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 							PED::SET_PED_FLEE_ATTRIBUTES(&(iLocal_742[0]), 512, true);
 							PED::SET_PED_CONFIG_FLAG(&(iLocal_742[0]), 6, true);
 							if (iLocal_1346 == 1)
@@ -4075,7 +4075,7 @@ int func_47()
 					if (iLocal_1396 != joaat("WEAPON_UNARMED") && (func_251(&(iLocal_742[0]), 1, 1, 1, 0, 0) || func_262(&(iLocal_742[0]), 1090519040 /* Float: 8f */, 1103626240 /* Float: 25f */, 1097859072 /* Float: 15f */, 0)))
 					{
 						TASK::TASK_COMBAT_PED(&(iLocal_742[0]), Global_35, 0, 0);
-						func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+						func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 						iLocal_1377 = 1;
 						if (iLocal_1346 == 1)
 						{
@@ -4089,7 +4089,7 @@ int func_47()
 					else if (func_165(Global_35, &(iLocal_742[0]), 1, 1) > 10f || func_30(&uLocal_1451) > 10f)
 					{
 						TASK::TASK_COMBAT_PED(&(iLocal_742[0]), Global_35, 0, 0);
-						func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+						func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 						iLocal_1377 = 1;
 						if (iLocal_1346 == 1)
 						{
@@ -4104,7 +4104,7 @@ int func_47()
 				else if (func_165(Global_35, &(iLocal_742[0]), 1, 1) > 15f)
 				{
 					TASK::TASK_COMBAT_PED(&(iLocal_742[0]), Global_35, 0, 0);
-					func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+					func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 					iLocal_1377 = 1;
 					if (iLocal_1346 == 1)
 					{
@@ -8360,7 +8360,7 @@ void func_185()
 	func_46(&iLocal_1217);
 	if (!func_129(PLAYER::PLAYER_ID(), 1, 0, 1))
 	{
-		func_434(-323.4462f, 759.2699f, 117.259f, &iLocal_1217, 408396114, 0, "ROB_MONEY_BLIP", 0);
+		func_434(-323.4462f, 759.2699f, 117.259f, &iLocal_1217, joaat("BLIP_STYLE_OBJECTIVE"), 0, "ROB_MONEY_BLIP", 0);
 		if (MAP::DOES_BLIP_EXIST(iLocal_1217))
 		{
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_1217, "ROB_MONEY_BLIP");
@@ -8781,7 +8781,7 @@ void func_203()
 		{
 			if (!MAP::DOES_BLIP_EXIST(&(uLocal_747[0])))
 			{
-				func_207(&(iLocal_742[0]), uLocal_747[0], -89429847, 1679075994, 0, "RE_INTER_STRANGER");
+				func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY"), 0, "RE_INTER_STRANGER");
 				MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(uLocal_747[0]), "RE_INTER_STRANGER");
 			}
 		}
@@ -9402,7 +9402,7 @@ void func_238()
 		{
 			if (!MAP::DOES_BLIP_EXIST(iLocal_1217))
 			{
-				func_434(-323.4462f, 759.2699f, 117.259f, &iLocal_1217, 408396114, 0, "ROB_MONEY_BLIP", 0);
+				func_434(-323.4462f, 759.2699f, 117.259f, &iLocal_1217, joaat("BLIP_STYLE_OBJECTIVE"), 0, "ROB_MONEY_BLIP", 0);
 			}
 			if (MAP::DOES_BLIP_EXIST(iLocal_1217))
 			{
@@ -9414,7 +9414,7 @@ void func_238()
 		{
 			if (!MAP::DOES_BLIP_EXIST(iLocal_1217))
 			{
-				iLocal_1217 = MAP::_0xA6EF0C54A3443E70(1259054292, bLocal_1470);
+				iLocal_1217 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX"), bLocal_1470);
 				if (MAP::DOES_BLIP_EXIST(iLocal_1217))
 				{
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_1217, "ROB_HOTEL_BLIP");
@@ -9426,7 +9426,7 @@ void func_238()
 		{
 			if (!MAP::DOES_BLIP_EXIST(iLocal_1217))
 			{
-				iLocal_1217 = MAP::_0xA6EF0C54A3443E70(1259054292, bLocal_1469);
+				iLocal_1217 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX"), bLocal_1469);
 				if (MAP::DOES_BLIP_EXIST(iLocal_1217))
 				{
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_1217, "ROB_HOTEL_BLIP");
@@ -10323,7 +10323,7 @@ void func_256()
 		{
 			if (!MAP::DOES_BLIP_EXIST(&(uLocal_747[0])))
 			{
-				func_207(&(iLocal_742[0]), uLocal_747[0], 408396114, 580546400, 0, "RE_INTER_STRANGER");
+				func_207(&(iLocal_742[0]), uLocal_747[0], joaat("BLIP_STYLE_OBJECTIVE"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 				MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(uLocal_747[0]), "RE_INTER_STRANGER");
 				func_236("ROB_OBJ04", 7500, 0, 0, -1, -1, 0);
 			}
@@ -19932,8 +19932,8 @@ void func_558(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

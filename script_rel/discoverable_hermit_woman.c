@@ -7005,7 +7005,7 @@ void func_162(var uParam0, int iParam1)
 			PED::SET_COMBAT_FLOAT(&(uParam0->f_10[iParam1]), 53, 0f);
 			PED::_0xFC3DB99C8144CD81(&(uParam0->f_10[iParam1]), &(uParam0->f_20[0]), 0, false, 0);
 			uParam0->f_15[iParam1] = func_260(&(uParam0->f_10[iParam1]), joaat("BLIP_STYLE_ENEMY"), 1, 1);
-			MAP::_0x662D364ABF16DE2F(&(uParam0->f_15[iParam1]), -1034486097);
+			MAP::_0x662D364ABF16DE2F(&(uParam0->f_15[iParam1]), joaat("BLIP_MODIFIER_ENEMY_GUNSHOTS_ONLY"));
 			break;
 		case 1:
 			PED::_0xFC3DB99C8144CD81(&(uParam0->f_10[iParam1]), &(uParam0->f_20[2]), 0, false, 0);
@@ -11571,9 +11571,9 @@ int func_260(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	if (bParam3)
 	{
-		if ((iParam1 == 408396114 || iParam1 == 1259054292) || iParam1 == -308585968)
+		if ((iParam1 == joaat("BLIP_STYLE_OBJECTIVE") || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX")) || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_ROUND"))
 		{
-			MAP::_0x662D364ABF16DE2F(iVar0, 231194138);
+			MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 	}
 	return iVar0;

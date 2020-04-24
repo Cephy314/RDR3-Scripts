@@ -1499,7 +1499,7 @@ int func_33()
 					func_133(Local_584, 1);
 					if (!func_50(iLocal_718, 524288))
 					{
-						func_134(&(uLocal_689[0]), uLocal_691[0], -89429847, 1679075994, 0, "RE_INTER_STRANGER");
+						func_134(&(uLocal_689[0]), uLocal_691[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY"), 0, "RE_INTER_STRANGER");
 						func_113(&iLocal_718, 524288);
 					}
 					iLocal_697 = 4;
@@ -4034,7 +4034,7 @@ void func_123()
 					ANIMSCENE::_DELETE_ANIM_SCENE(Local_584.f_2);
 				}
 				func_145(&(uLocal_689[0]));
-				func_134(&(uLocal_689[0]), uLocal_691[0], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+				func_134(&(uLocal_689[0]), uLocal_691[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 				if (VOLUME::_DOES_VOLUME_EXIST(bLocal_703))
 				{
 					VOLUME::_DELETE_VOLUME(bLocal_703);
@@ -13675,8 +13675,8 @@ void func_350(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

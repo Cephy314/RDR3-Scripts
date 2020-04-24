@@ -1134,7 +1134,7 @@ int func_27(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bo
 							MAP::REMOVE_BLIP(&Global_36558);
 						}
 						Global_36558 = MAP::_0x3E593DF9C2962EC6(joaat("BLIP_STYLE_PLAYER_HORSE"));
-						MAP::_0x662D364ABF16DE2F(Global_36558, 673950256);
+						MAP::_0x662D364ABF16DE2F(Global_36558, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 						func_58(MISC::_CREATE_VAR_STRING(0, -1680440926, Global_36558), 10000, 0, 0, 0, 1);
 					}
 					else if (!func_103(7))
@@ -1154,7 +1154,7 @@ int func_27(int iParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bo
 								MAP::REMOVE_BLIP(&Global_36558);
 							}
 							Global_36558 = MAP::_0x3E593DF9C2962EC6(joaat("BLIP_STYLE_PLAYER_HORSE"));
-							MAP::_0x662D364ABF16DE2F(Global_36558, 673950256);
+							MAP::_0x662D364ABF16DE2F(Global_36558, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 							func_58(MISC::_CREATE_VAR_STRING(0, -482898802, Global_36558), 10000, 0, 0, 0, 1);
 						}
 					}

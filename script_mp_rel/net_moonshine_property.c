@@ -2349,7 +2349,7 @@ void func_93(var uParam0, int iParam1)
 		{
 			iParam1->f_1209 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_SHOP"), func_213(uParam0->f_2, 0));
 			MAP::SET_BLIP_SPRITE(iParam1->f_1209, joaat("BLIP_MP_ROLE_MOONSHINER"), true);
-			MAP::_0x662D364ABF16DE2F(iParam1->f_1209, 847579139);
+			MAP::_0x662D364ABF16DE2F(iParam1->f_1209, joaat("BLIP_MODIFIER_RADAR_EDGE_ALWAYS"));
 			MAP::SET_BLIP_FLASH_TIMER(iParam1->f_1209, 37, joaat("SHOP_MOONSHINE_BUSINESS"));
 		}
 		if (func_108(*iParam1, 0, 1) > 0)
@@ -2358,7 +2358,7 @@ void func_93(var uParam0, int iParam1)
 			{
 				iParam1->f_1210 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_SHOP"), VOLUME::_0xF70F00013A62F866(func_214(uParam0->f_2)));
 				MAP::SET_BLIP_SPRITE(iParam1->f_1210, joaat("BLIP_MOONSHINE_STILL"), true);
-				MAP::_0x662D364ABF16DE2F(iParam1->f_1210, 847579139);
+				MAP::_0x662D364ABF16DE2F(iParam1->f_1210, joaat("BLIP_MODIFIER_RADAR_EDGE_ALWAYS"));
 				MAP::SET_BLIP_FLASH_TIMER(iParam1->f_1210, 33, joaat("SHOP_MOONSHINE_STILL"));
 			}
 		}

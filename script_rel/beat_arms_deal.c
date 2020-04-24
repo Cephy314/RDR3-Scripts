@@ -478,7 +478,7 @@ void __EntryFunction__()
 				case 4:
 					if ((!func_28(512) && func_29(Local_51.f_51, 1) < 30f) && iLocal_758 < 4)
 					{
-						func_30(Local_51.f_51, &iLocal_831, -89429847, 0, 0, 0);
+						func_30(Local_51.f_51, &iLocal_831, joaat("BLIP_STYLE_FRIENDLY"), 0, 0, 0);
 						func_31(512);
 					}
 					if (func_32(&Local_51, &iLocal_35, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0))
@@ -1687,7 +1687,7 @@ int func_33()
 					{
 						if (func_173(&uLocal_929) > 7000)
 						{
-							func_174(iLocal_1372, 580546400);
+							func_174(iLocal_1372, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 							func_167(&uLocal_929);
 						}
 						else
@@ -1701,7 +1701,7 @@ int func_33()
 					iLocal_1372 = func_177(69, 24, func_176());
 					if (func_172(iLocal_1372))
 					{
-						func_178(iLocal_1372, 580546400);
+						func_178(iLocal_1372, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 						func_163(&uLocal_929);
 					}
 				}
@@ -5197,7 +5197,7 @@ int func_146()
 			{
 				func_163(&uLocal_911);
 				func_284(&(iLocal_35[iLocal_1252]), Global_35, func_283(65536, 2), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 1744022339, 1, 0, 0);
-				func_349(&(iLocal_35[iLocal_1252]), uLocal_40[iLocal_1252], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+				func_349(&(iLocal_35[iLocal_1252]), uLocal_40[iLocal_1252], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 				func_110(&iLocal_805, 65536);
 			}
 			if (fVar2 < 3.5f || func_350(&(iLocal_35[iLocal_1252]), 0, &uLocal_837, &iLocal_865, 0, 0))
@@ -5700,7 +5700,7 @@ void func_156()
 		if (!func_165(2097152, 2) && !func_165(8, 2))
 		{
 			func_213(2097152, 2);
-			func_349(&(iLocal_35[2]), uLocal_40[2], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[2]), uLocal_40[2], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			if (func_374(2))
 			{
 				func_213(1073741824 /* Float: 2f */, 2);
@@ -5714,7 +5714,7 @@ void func_156()
 		if (!func_165(2097152, 3) && !func_165(8, 3))
 		{
 			func_213(2097152, 3);
-			func_349(&(iLocal_35[3]), uLocal_40[3], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[3]), uLocal_40[3], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			if (func_374(3))
 			{
 				func_213(1073741824 /* Float: 2f */, 3);
@@ -5727,11 +5727,11 @@ void func_156()
 		}
 		if ((!MAP::DOES_BLIP_EXIST(&(uLocal_40[2])) && ENTITY::DOES_ENTITY_EXIST(&(iLocal_35[2]))) && !ENTITY::IS_ENTITY_DEAD(&(iLocal_35[2])))
 		{
-			func_349(&(iLocal_35[2]), uLocal_40[2], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[2]), uLocal_40[2], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		}
 		if ((!MAP::DOES_BLIP_EXIST(&(uLocal_40[3])) && ENTITY::DOES_ENTITY_EXIST(&(iLocal_35[3]))) && !ENTITY::IS_ENTITY_DEAD(&(iLocal_35[3])))
 		{
-			func_349(&(iLocal_35[3]), uLocal_40[3], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[3]), uLocal_40[3], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		}
 	}
 	if (func_28(134217728))
@@ -5740,7 +5740,7 @@ void func_156()
 		if (!func_165(2097152, 0) && !ENTITY::IS_ENTITY_DEAD(&(iLocal_35[0])))
 		{
 			func_213(2097152, 0);
-			func_349(&(iLocal_35[0]), uLocal_40[0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[0]), uLocal_40[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			if (func_374(0))
 			{
 				func_213(1073741824 /* Float: 2f */, 0);
@@ -5754,7 +5754,7 @@ void func_156()
 		if (!func_165(2097152, 1) && !ENTITY::IS_ENTITY_DEAD(&(iLocal_35[1])))
 		{
 			func_213(2097152, 1);
-			func_349(&(iLocal_35[1]), uLocal_40[1], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[1]), uLocal_40[1], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			if (func_374(1))
 			{
 				func_213(1073741824 /* Float: 2f */, 1);
@@ -5767,11 +5767,11 @@ void func_156()
 		}
 		if ((!MAP::DOES_BLIP_EXIST(&(uLocal_40[0])) && ENTITY::DOES_ENTITY_EXIST(&(iLocal_35[0]))) && !ENTITY::IS_ENTITY_DEAD(&(iLocal_35[0])))
 		{
-			func_349(&(iLocal_35[0]), uLocal_40[0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[0]), uLocal_40[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		}
 		if ((!MAP::DOES_BLIP_EXIST(&(uLocal_40[1])) && ENTITY::DOES_ENTITY_EXIST(&(iLocal_35[1]))) && !ENTITY::IS_ENTITY_DEAD(&(iLocal_35[1])))
 		{
-			func_349(&(iLocal_35[1]), uLocal_40[1], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_349(&(iLocal_35[1]), uLocal_40[1], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		}
 	}
 }
@@ -12066,7 +12066,7 @@ void func_375(int iParam0, int* iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(*iParam1))
 	{
-		func_349(&(iLocal_35[iParam0]), iParam1, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+		func_349(&(iLocal_35[iParam0]), iParam1, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 	}
 	if (TASK::GET_SCRIPT_TASK_STATUS(&(iLocal_35[iParam0]), -2117564886, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(&(iLocal_35[iParam0]), -2117564886, 1) == 0)
 	{
@@ -15007,8 +15007,8 @@ void func_452(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
@@ -18053,7 +18053,7 @@ void func_570(int iParam0, int* iParam1, float fParam2, int iParam3, bool bParam
 	}
 	if (bParam5)
 	{
-		func_349(&(iLocal_35[iParam0]), iParam1, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+		func_349(&(iLocal_35[iParam0]), iParam1, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 	}
 	func_99(iLocal_35[iParam0], 0);
 	iVar0 = 0;

@@ -645,7 +645,7 @@ void func_28(var uParam0, var uParam1)
 			func_49(*uParam1, iVar0);
 			if (func_50(uParam1->f_1))
 			{
-				uParam1->f_3 = MAP::_BLIP_ADD_FOR_ENTITY(-399496385, iVar0);
+				uParam1->f_3 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_TRAIN"), iVar0);
 				MAP::SET_BLIP_SPRITE(uParam1->f_3, joaat("BLIP_AMBIENT_TRAIN"), true);
 				func_51(*uParam1, uParam1->f_3);
 			}

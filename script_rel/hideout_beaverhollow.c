@@ -3028,7 +3028,7 @@ void func_87()
 	{
 		if (func_178((Local_275[iVar4 /*9*/])->f_5, 0, 1))
 		{
-			func_193(Local_275[iVar4 /*9*/], joaat("BLIP_STYLE_ENEMY"), -1034486097);
+			func_193(Local_275[iVar4 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_GUNSHOTS_ONLY"));
 			PED::SET_PED_SPHERE_DEFENSIVE_AREA((Local_275[iVar4 /*9*/])->f_5, ENTITY::GET_ENTITY_COORDS((Local_275[iVar4 /*9*/])->f_5, false, false), 3f, 1, false, 0);
 		}
 		iVar4++;
@@ -5622,9 +5622,9 @@ void func_200()
 			{
 				if (func_360((Local_275[0 /*9*/])->f_5, 2357.536f, 1382.102f, 105.6061f, 1f, 1, 1))
 				{
-					func_193(Local_275[0 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
-					func_193(Local_275[1 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
-					func_193(Local_275[2 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
+					func_193(Local_275[0 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
+					func_193(Local_275[1 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
+					func_193(Local_275[2 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
 					AUDIO::TRIGGER_MUSIC_EVENT("SP_HIDEOUTS_GENERAL_START");
 					func_55(2097152);
 					if (func_56(21, 6))
@@ -6009,8 +6009,8 @@ void func_201()
 				func_71(&(Local_51.f_155), 15f);
 				func_356(0, 1, 0);
 				func_356(1, 0, 0);
-				func_193(Local_275[0 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
-				func_193(Local_275[1 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
+				func_193(Local_275[0 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
+				func_193(Local_275[1 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
 				func_166(&(Local_51.f_38), (Local_275[0 /*9*/])->f_5, "INB_PED2", 0);
 				func_166(&(Local_51.f_38), (Local_275[1 /*9*/])->f_5, "INB_PED1", 0);
 				func_166(&(Local_51.f_38), (Local_488[0 /*9*/])->f_5, "ASB_Whore1", 0);
@@ -6323,8 +6323,8 @@ int func_206()
 				func_356(4, 3, 0);
 				func_166(&(Local_51.f_38), (Local_275[3 /*9*/])->f_5, "INB_PED3", 0);
 				func_166(&(Local_51.f_38), (Local_275[4 /*9*/])->f_5, "INB_PED4", 0);
-				func_193(Local_275[3 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
-				func_193(Local_275[4 /*9*/], joaat("BLIP_STYLE_ENEMY"), -662251075);
+				func_193(Local_275[3 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
+				func_193(Local_275[4 /*9*/], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
 				if (func_178((Local_275[3 /*9*/])->f_5, 0, 1))
 				{
 					ENTITY::SET_ENTITY_COORDS((Local_275[3 /*9*/])->f_5, 2280.685f, 1489.264f, 92.6336f, true, false, true, true);
@@ -32512,11 +32512,11 @@ void func_977(int iParam0, int iParam1, float fParam2, int iParam3)
 	if (func_1197())
 	{
 		iVar2 = BUILTIN::FLOOR((BUILTIN::TO_FLOAT(iVar1) * 0.1f));
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS_SPECIAL"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), -1689362167);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS_SPECIAL"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), joaat("KTOTALTAKEENTRYGANGSAVINGS"));
 	}
 	else
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), -1689362167);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), joaat("KTOTALTAKEENTRYGANGSAVINGS"));
 	}
 	iVar3 = iVar1;
 	if (func_1197())
@@ -32527,7 +32527,7 @@ void func_977(int iParam0, int iParam1, float fParam2, int iParam3)
 	iVar4 = func_119(iParam0);
 	if (func_27(iParam0) != 1 || (iVar4 != 37 && iVar4 != 58))
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("HEADSHOT_ARTHUR"), 1997120069, MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_ARTHUR"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar3), 601389479);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("HEADSHOT_ARTHUR"), 1997120069, MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_ARTHUR"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar3), joaat("KTOTALTAKEENTRYNORMAL"));
 	}
 	switch (func_27(iParam0))
 	{
@@ -33685,7 +33685,7 @@ void func_1028(bool bParam0)
 {
 	if (func_1226(Global_1934051->f_33))
 	{
-		func_1227(Global_1934051->f_33, 7148155);
+		func_1227(Global_1934051->f_33, joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER"));
 	}
 	func_1225(&(Global_1934051->f_33), bParam0);
 }
@@ -39096,11 +39096,11 @@ void func_1198(int iParam0, char* sParam1)
 {
 	if (iParam0 != 18 && iParam0 != 7)
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_1356(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP", MISC::_CREATE_VAR_STRING(2, func_699(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), 601389479);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_1356(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP", MISC::_CREATE_VAR_STRING(2, func_699(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), joaat("KTOTALTAKEENTRYNORMAL"));
 	}
 	else
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_1356(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP_NOS", MISC::_CREATE_VAR_STRING(2, func_699(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), 601389479);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_1356(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP_NOS", MISC::_CREATE_VAR_STRING(2, func_699(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), joaat("KTOTALTAKEENTRYNORMAL"));
 	}
 }
 
@@ -39604,27 +39604,27 @@ int func_1229(int iParam0)
 	switch (iParam0)
 	{
 		case 3:
-			return 1341870286;
+			return joaat("BLIP_MODIFIER_GROUPING_LAGRAS_LEADER");
 		case 5:
-			return -1706412559;
+			return joaat("BLIP_MODIFIER_GROUPING_SAINT_DENIS_LEADER");
 		case 26:
-			return 279909480;
+			return joaat("BLIP_MODIFIER_GROUPING_STRAWBERRY_LEADER");
 		case 38:
-			return -412614304;
+			return joaat("BLIP_MODIFIER_GROUPING_BLACKWATER_LEADER");
 		case 69:
-			return -653335484;
+			return joaat("BLIP_MODIFIER_GROUPING_EMERALD_RANCH_LEADER");
 		case 76:
-			return 1777802794;
+			return joaat("BLIP_MODIFIER_GROUPING_VALENTINE_LEADER");
 		case 78:
-			return 1088576970;
+			return joaat("BLIP_MODIFIER_GROUPING_ANNESBURG_LEADER");
 		case 92:
-			return 412321676;
+			return joaat("BLIP_MODIFIER_GROUPING_VAN_HORN_LEADER");
 		case 105:
-			return 1787788681;
+			return joaat("BLIP_MODIFIER_GROUPING_RHODES_LEADER");
 		case 115:
-			return 1635466279;
+			return joaat("BLIP_MODIFIER_GROUPING_TUMBLEWEED_LEADER");
 		case 120:
-			return -410502938;
+			return joaat("BLIP_MODIFIER_GROUPING_ARMADILLO_LEADER");
 		case 4:
 		case 9:
 		case 22:
@@ -39634,7 +39634,7 @@ int func_1229(int iParam0)
 		case 71:
 		case 79:
 		case 98:
-			return 7148155;
+			return joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER");
 		default:
 			break;
 	}

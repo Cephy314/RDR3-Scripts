@@ -3672,7 +3672,7 @@ int func_113()
 			func_286(1891783641, &(uLocal_1282[1]), 1);
 			func_287(&(uLocal_1282[1]), Global_35, 4, 1, -1073741824 /* Float: -2f */);
 			func_288();
-			func_289(&(uLocal_1282[1]), uLocal_1288[1], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+			func_289(&(uLocal_1282[1]), uLocal_1288[1], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 			func_276(&iLocal_249, 10);
 			break;
 		case 10:
@@ -4134,7 +4134,7 @@ int func_119()
 			}
 			if (((!MAP::DOES_BLIP_EXIST(&(uLocal_1288[0])) && !func_90(64, 0)) && func_71(&(uLocal_1282[0]), 0, 1)) && ENTITY::IS_ENTITY_DEAD(&(uLocal_1282[1])))
 			{
-				func_289(&(uLocal_1282[0]), uLocal_1288[0], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+				func_289(&(uLocal_1282[0]), uLocal_1288[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 			}
 			if (!func_90(64, 1) && !func_42(32768))
 			{
@@ -11337,7 +11337,7 @@ void func_353(int iParam0, int iParam1)
 	{
 		PED::SET_PED_CONFIG_FLAG(iParam0, 277, false);
 		func_548(iParam0);
-		func_289(iParam0, uLocal_1288[iParam1], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+		func_289(iParam0, uLocal_1288[iParam1], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		TASK::TASK_COMBAT_PED(&(uLocal_1282[iParam1]), Global_35, &(iLocal_1299[iParam1]), 16);
 		PED::SET_PED_KEEP_TASK(iParam0, true);
 	}
@@ -12903,8 +12903,8 @@ void func_382(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

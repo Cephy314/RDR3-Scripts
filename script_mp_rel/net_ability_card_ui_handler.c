@@ -407,7 +407,7 @@ void func_13(int iParam0)
 		iVar0 = joaat("COMBAT");
 	}
 	func_37(iVar0, func_43(iParam0, 1));
-	UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("ABILITIES"), -2109508723);
+	UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("ABILITIES"), joaat("TO_SKILLSLOT"));
 }
 
 int func_14(int iParam0)

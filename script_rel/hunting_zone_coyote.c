@@ -1456,7 +1456,7 @@ int func_49(var uParam0)
 				{
 					if ((uParam0->f_31[iVar0 /*36*/])->f_26 == 0)
 					{
-						uParam0->f_31[iVar0 /*36*/] = MAP::_BLIP_ADD_FOR_COORD(1538154804, (uParam0->f_31[iVar0 /*36*/])->f_17);
+						uParam0->f_31[iVar0 /*36*/] = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_LEGENDARY_ANIMAL_CLUE"), (uParam0->f_31[iVar0 /*36*/])->f_17);
 					}
 					StringCopy(&cVar2, "hzt_", 16);
 					StringIntConCat(&cVar2, *uParam0, 16);
@@ -1514,7 +1514,7 @@ void func_50(var uParam0)
 		{
 			if (MAP::DOES_BLIP_EXIST(&(uParam0->f_31[iVar2 /*36*/])))
 			{
-				MAP::_0x662D364ABF16DE2F(&(uParam0->f_31[iVar2 /*36*/]), -1186550032);
+				MAP::_0x662D364ABF16DE2F(&(uParam0->f_31[iVar2 /*36*/]), joaat("BLIP_MODIFIER_HIDDEN"));
 			}
 			fVar4 = func_107(Global_35, (uParam0->f_31[iVar2 /*36*/])->f_17, 1);
 			if (fVar4 < fVar0)
@@ -1525,14 +1525,14 @@ void func_50(var uParam0)
 		}
 		iVar2++;
 	}
-	MAP::_SET_BLIP_FLASH_STYLE(&(uParam0->f_31[iVar1 /*36*/]), -1186550032);
+	MAP::_SET_BLIP_FLASH_STYLE(&(uParam0->f_31[iVar1 /*36*/]), joaat("BLIP_MODIFIER_HIDDEN"));
 	if (bVar3)
 	{
-		MAP::_0x662D364ABF16DE2F(&(uParam0->f_31[iVar1 /*36*/]), 1641478980);
+		MAP::_0x662D364ABF16DE2F(&(uParam0->f_31[iVar1 /*36*/]), joaat("BLIP_MODIFIER_EAGLE_EYE"));
 	}
 	else
 	{
-		MAP::_SET_BLIP_FLASH_STYLE(&(uParam0->f_31[iVar1 /*36*/]), 1641478980);
+		MAP::_SET_BLIP_FLASH_STYLE(&(uParam0->f_31[iVar1 /*36*/]), joaat("BLIP_MODIFIER_EAGLE_EYE"));
 	}
 }
 
@@ -5322,7 +5322,7 @@ void func_115(var uParam0, var uParam1)
 		func_182(uParam0);
 		if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 		{
-			uParam0->f_6 = MAP::_BLIP_ADD_FOR_RADIUS(-108658760, uParam0->f_627, uParam0->f_9);
+			uParam0->f_6 = MAP::_BLIP_ADD_FOR_RADIUS(joaat("BLIP_STYLE_LEGENDARY_ANIMAL_AREA"), uParam0->f_627, uParam0->f_9);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "ATZ_AREA_BLIP");
 		}
 		if (!MISC::IS_STRING_NULL_OR_EMPTY(uParam0->f_677))

@@ -11355,7 +11355,7 @@ void func_347(int iParam0)
 			Local_14.f_44 = 1;
 			Local_14.f_45 = 1;
 			func_138(&Local_348, 0, 0);
-			func_509(&(uLocal_225[0]), iLocal_228[0], -89429847, 0, 0, "RE_INTER_STRANGER");
+			func_509(&(uLocal_225[0]), iLocal_228[0], joaat("BLIP_STYLE_FRIENDLY"), 0, 0, "RE_INTER_STRANGER");
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			if (func_132())
 			{
@@ -13267,8 +13267,8 @@ void func_385(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

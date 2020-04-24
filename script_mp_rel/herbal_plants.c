@@ -171,7 +171,7 @@ int func_8(var uParam0)
 			}
 			else
 			{
-				uParam0->f_5 = MAP::_BLIP_ADD_FOR_COORD(1425226969, uParam0->f_1);
+				uParam0->f_5 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_PICKUP_HERB"), uParam0->f_1);
 				func_15(uParam0);
 			}
 			break;
@@ -243,7 +243,7 @@ void func_14(vector3 vParam0)
 
 void func_15(var uParam0)
 {
-	MAP::_0x662D364ABF16DE2F(uParam0->f_5, 287065609);
+	MAP::_0x662D364ABF16DE2F(uParam0->f_5, joaat("BLIP_MODIFIER_HERB_NORMAL"));
 }
 
 int func_16(int iParam0)

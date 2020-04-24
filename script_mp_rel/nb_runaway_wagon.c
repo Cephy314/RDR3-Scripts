@@ -6483,7 +6483,7 @@ void func_252()
 			}
 			break;
 		default:
-			func_323(0, 942020339);
+			func_323(0, joaat("BLIP_MODIFIER_ENEMY"));
 			if (func_313(iVar0, -2117564886, 1, 0))
 			{
 				TASK::TASK_COMBAT_HATED_TARGETS(iVar0, -1f);
@@ -8712,7 +8712,7 @@ void func_311()
 	}
 	if (!MAP::DOES_BLIP_EXIST(Local_303.f_18.f_161))
 	{
-		Local_303.f_18.f_161 = MAP::_BLIP_ADD_FOR_COORD(1260140857, func_267(0));
+		Local_303.f_18.f_161 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_RANDOM_EVENT"), func_267(0));
 	}
 }
 
@@ -8834,12 +8834,12 @@ void func_315(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_303.f_18.f_10[iParam0 /*2*/])))
 	{
-		Local_303.f_18.f_10[iParam0 /*2*/] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, func_148(iParam0));
+		Local_303.f_18.f_10[iParam0 /*2*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), func_148(iParam0));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(Local_303.f_18.f_10[iParam0 /*2*/]), "NB_RUNAWAY_WAGON_WAGON_BLIP");
 	}
 	if (iParam1 != 0)
 	{
-		MAP::_0x662D364ABF16DE2F(&(Local_303.f_18.f_10[iParam0 /*2*/]), 942020339);
+		MAP::_0x662D364ABF16DE2F(&(Local_303.f_18.f_10[iParam0 /*2*/]), joaat("BLIP_MODIFIER_ENEMY"));
 	}
 }
 
@@ -9146,7 +9146,7 @@ void func_323(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_303.f_18.f_1[iParam0 /*4*/])))
 	{
-		Local_303.f_18.f_1[iParam0 /*4*/] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, func_149(iParam0));
+		Local_303.f_18.f_1[iParam0 /*4*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), func_149(iParam0));
 		sVar0 = "";
 		switch (iParam0)
 		{
@@ -9161,7 +9161,7 @@ void func_323(int iParam0, int iParam1)
 	}
 	if (iParam1 != 0)
 	{
-		MAP::_0x662D364ABF16DE2F(&(Local_303.f_18.f_1[iParam0 /*4*/]), 942020339);
+		MAP::_0x662D364ABF16DE2F(&(Local_303.f_18.f_1[iParam0 /*4*/]), joaat("BLIP_MODIFIER_ENEMY"));
 	}
 }
 

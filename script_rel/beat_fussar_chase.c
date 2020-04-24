@@ -1485,7 +1485,7 @@ int func_21()
 			if (func_37(&(iLocal_1237[iLocal_817]), 0, 1))
 			{
 				PED::SET_PED_USING_ACTION_MODE(&(iLocal_1237[iLocal_817]), true, -1, 0);
-				func_77(&(iLocal_1237[iLocal_817]), uLocal_1229[iLocal_817], -118010418, 0, 0, 0);
+				func_77(&(iLocal_1237[iLocal_817]), uLocal_1229[iLocal_817], joaat("BLIP_STYLE_COP_SCRIPT"), 0, 0, 0);
 				func_78(&(iLocal_1237[iLocal_817]), Global_35, "RE_FC_GUA_V1_SEEN", "", 100f, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				func_76(2);
 			}
@@ -1593,7 +1593,7 @@ int func_21()
 					func_81(&uLocal_1171, 0);
 					PED::SET_PED_COMBAT_ATTRIBUTES(&(iLocal_1237[iVar0]), 5, true);
 					PED::SET_PED_COMBAT_MOVEMENT(&(iLocal_1237[iVar0]), 2);
-					func_77(&(iLocal_1237[iVar0]), uLocal_1229[iVar0], -118010418, 0, 0, 0);
+					func_77(&(iLocal_1237[iVar0]), uLocal_1229[iVar0], joaat("BLIP_STYLE_COP_SCRIPT"), 0, 0, 0);
 					if (!PED::IS_PED_IN_COMBAT(&(iLocal_1237[iVar0]), Global_35))
 					{
 						TASK::TASK_COMBAT_PED(&(iLocal_1237[iVar0]), Global_35, 0, 0);
@@ -1775,7 +1775,7 @@ int func_22()
 					{
 						if (!MAP::DOES_BLIP_EXIST(iLocal_1235))
 						{
-							iLocal_1235 = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, iLocal_1243);
+							iLocal_1235 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), iLocal_1243);
 						}
 						iLocal_1178 = 7;
 					}
@@ -1803,7 +1803,7 @@ int func_22()
 					{
 						if (!MAP::DOES_BLIP_EXIST(iLocal_1235) && func_37(&(iLocal_1237[0]), 0, 1))
 						{
-							iLocal_1235 = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, &(iLocal_1237[0]));
+							iLocal_1235 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), &(iLocal_1237[0]));
 						}
 						iLocal_1178 = 8;
 					}
@@ -3463,7 +3463,7 @@ void func_86()
 		{
 			if (!MAP::DOES_BLIP_EXIST(&(uLocal_1229[iVar0])) && func_37(&(iLocal_1237[iVar0]), 0, 1))
 			{
-				func_77(&(iLocal_1237[iVar0]), uLocal_1229[iVar0], -118010418, 0, 0, 0);
+				func_77(&(iLocal_1237[iVar0]), uLocal_1229[iVar0], joaat("BLIP_STYLE_COP_SCRIPT"), 0, 0, 0);
 			}
 		}
 		iVar0++;
@@ -11164,8 +11164,8 @@ void func_262(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

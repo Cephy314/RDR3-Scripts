@@ -1109,7 +1109,7 @@ int func_30()
 	switch (iLocal_627)
 	{
 		case 0:
-			func_91(&(uLocal_612[0]), uLocal_767[0], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+			func_91(&(uLocal_612[0]), uLocal_767[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 			ANIMSCENE::START_ANIM_SCENE(Local_521);
 			func_92();
 			if (CAM::_0xA24C1D341C6E0D53(0, 0, 0))
@@ -2613,8 +2613,8 @@ void func_61(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
@@ -8166,7 +8166,7 @@ void func_210(var uParam0, vector3 vParam1, int iParam4)
 {
 	if (!uParam0->f_182 || iParam4 == 1)
 	{
-		uParam0->f_183 = MAP::_BLIP_ADD_FOR_COORD(1260140857, vParam1);
+		uParam0->f_183 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_RANDOM_EVENT"), vParam1);
 		uParam0->f_182 = 1;
 	}
 }

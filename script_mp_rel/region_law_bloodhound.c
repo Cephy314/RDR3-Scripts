@@ -409,7 +409,7 @@ void func_12(int iParam0)
 	}
 	if (!MAP::DOES_BLIP_EXIST((Local_45[iParam0 /*10*/])->f_8))
 	{
-		(Local_45[iParam0 /*10*/])->f_8 = MAP::_0xA6EF0C54A3443E70(-1282792512, (Local_45[iParam0 /*10*/])->f_9);
+		(Local_45[iParam0 /*10*/])->f_8 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_RADIUS"), (Local_45[iParam0 /*10*/])->f_9);
 	}
 	iVar0 = 0;
 	while (iVar0 < 4)

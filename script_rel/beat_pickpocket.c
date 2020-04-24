@@ -1313,7 +1313,7 @@ int func_29()
 			{
 				if (ANIMSCENE::_0xD8254CB2C586412B(Local_28, 0) || ANIMSCENE::_0x3FBC3F51BF12DFBF(Local_28) >= 0.4417f)
 				{
-					func_128(&(iLocal_184[0]), uLocal_187[0], -89429847, 580546400, 0, 0);
+					func_128(&(iLocal_184[0]), uLocal_187[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					iLocal_474 = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_SURPRISING"), &(iLocal_184[0]), -1f, 8f, 4f, -1f, 8f, 1127481344, 0, 0, -1, -1);
 					func_34(&iLocal_449, 1);
 				}
@@ -12777,8 +12777,8 @@ void func_352(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

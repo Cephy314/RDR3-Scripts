@@ -2849,7 +2849,7 @@ void func_120(int iParam0)
 	}
 	else
 	{
-		Local_0.f_4444[iParam0] = MAP::_BLIP_ADD_FOR_ENTITY(203020899, (Local_0.f_3[iParam0 /*148*/])->f_12);
+		Local_0.f_4444[iParam0] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_OBJECTIVE_MINOR"), (Local_0.f_3[iParam0 /*148*/])->f_12);
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(Local_0.f_4444[iParam0]), "MGFNC_B_POST");
 	}
 }

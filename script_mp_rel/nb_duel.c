@@ -5019,7 +5019,7 @@ void func_224()
 										{
 											if (!MAP::DOES_BLIP_EXIST(&(Local_163.f_18.f_102[iVar5 /*4*/])))
 											{
-												func_297(iVar5, 942020339);
+												func_297(iVar5, joaat("BLIP_MODIFIER_ENEMY"));
 											}
 										}
 										else if (MAP::DOES_BLIP_EXIST(&(Local_163.f_18.f_102[iVar5 /*4*/])))
@@ -7488,13 +7488,13 @@ void func_297(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_163.f_18.f_102[iParam0 /*4*/])))
 	{
-		Local_163.f_18.f_102[iParam0 /*4*/] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, func_192(iParam0));
+		Local_163.f_18.f_102[iParam0 /*4*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), func_192(iParam0));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(Local_163.f_18.f_102[iParam0 /*4*/]), func_411(iParam0));
-		MAP::_0x662D364ABF16DE2F(&(Local_163.f_18.f_102[iParam0 /*4*/]), -1440522869);
+		MAP::_0x662D364ABF16DE2F(&(Local_163.f_18.f_102[iParam0 /*4*/]), joaat("BLIP_MODIFIER_CULL_ON_DEATH"));
 	}
 	if (iParam1 != 0)
 	{
-		MAP::_0x662D364ABF16DE2F(&(Local_163.f_18.f_102[iParam0 /*4*/]), 942020339);
+		MAP::_0x662D364ABF16DE2F(&(Local_163.f_18.f_102[iParam0 /*4*/]), joaat("BLIP_MODIFIER_ENEMY"));
 	}
 }
 

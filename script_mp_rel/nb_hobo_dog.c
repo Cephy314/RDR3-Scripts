@@ -5483,7 +5483,7 @@ void func_230()
 			}
 		}
 	}
-	func_288(0, -89429847, 0);
+	func_288(0, joaat("BLIP_STYLE_FRIENDLY"), 0);
 }
 
 void func_231()
@@ -5501,7 +5501,7 @@ void func_231()
 	iVar2 = func_198(1);
 	fVar5 = BUILTIN::VDIST(ENTITY::GET_ENTITY_COORDS(iVar0, false, false), ENTITY::GET_ENTITY_COORDS(iVar1, false, false));
 	vVar6 = { func_289(ENTITY::GET_ENTITY_COORDS(iVar2, false, false), iVar1, 1.75f) };
-	func_288(0, -89429847, 0);
+	func_288(0, joaat("BLIP_STYLE_FRIENDLY"), 0);
 	if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar1))
 	{
 		PED::SET_PED_MAX_MOVE_BLEND_RATIO(iVar1, func_290());
@@ -5583,7 +5583,7 @@ void func_232()
 
 	iVar0 = PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID());
 	iVar1 = func_198(0);
-	func_288(0, -89429847, 0);
+	func_288(0, joaat("BLIP_STYLE_FRIENDLY"), 0);
 	if (func_236(iVar1, -1162159953, 1, 0))
 	{
 		if (BUILTIN::VDIST(ENTITY::GET_ENTITY_COORDS(iVar0, false, false), ENTITY::GET_ENTITY_COORDS(iVar1, false, false)) < 6f)

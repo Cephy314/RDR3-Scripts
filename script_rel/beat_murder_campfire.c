@@ -582,8 +582,8 @@ void func_17(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
@@ -3781,7 +3781,7 @@ void func_121()
 		{
 			if (CAM::IS_SPHERE_VISIBLE(func_276(), 0.5f) && func_229(Global_35, bLocal_518, 1, 0))
 			{
-				func_287(func_276(), &iLocal_507, -89429847, 0, "BLIP_AMBIENT_CORPSE", 0);
+				func_287(func_276(), &iLocal_507, joaat("BLIP_STYLE_FRIENDLY"), 0, "BLIP_AMBIENT_CORPSE", 0);
 				func_82(&iLocal_528, 1);
 			}
 		}

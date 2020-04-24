@@ -4258,7 +4258,7 @@ void func_152(var uParam0)
 			MAP::REMOVE_BLIP(&iVar0);
 		}
 		uParam0->f_251 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), uParam0->f_102);
-		func_214(uParam0->f_102, 942020339, 1);
+		func_214(uParam0->f_102, joaat("BLIP_MODIFIER_ENEMY"), 1);
 	}
 }
 

@@ -1610,7 +1610,7 @@ int func_41()
 				if (!func_25(32))
 				{
 					func_160("LOST_OBJ_LEAD", 7500, 0, 0, -1, -1, 0);
-					func_161(vLocal_578, &iLocal_563, 408396114, 0, "BLIP_DEST", -1878373110);
+					func_161(vLocal_578, &iLocal_563, joaat("BLIP_STYLE_OBJECTIVE"), 0, "BLIP_DEST", joaat("BLIP_MODIFIER_FORCE_GPS"));
 					func_35(32);
 				}
 				if (!func_28(16))
@@ -13398,8 +13398,8 @@ void func_404(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

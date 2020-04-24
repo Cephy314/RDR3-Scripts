@@ -3969,7 +3969,7 @@ int func_106(int iParam0, bool bParam1, var uParam2, int iParam3, int iParam4, i
 				{
 					PED::_0x802092B07E3B1EEA(bVar6, Global_36, 3);
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(bVar6, joaat("REL_PLAYER_ENEMY"));
-					func_315(bVar6, (*uParam2)[iVar0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+					func_315(bVar6, (*uParam2)[iVar0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 					PED::SET_PED_COMBAT_ATTRIBUTES(bVar6, 58, true);
 					PED::SET_PED_COMBAT_ATTRIBUTES(bVar6, 5, true);
 					PED::SET_PED_COMBAT_ATTRIBUTES(bVar6, 71, true);
@@ -4135,7 +4135,7 @@ void func_111(int iParam0, bool bParam1, int* iParam2, bool bParam3, int iParam4
 	int iVar1;
 	bool bVar2;
 
-	iVar0 = -89429847;
+	iVar0 = joaat("BLIP_STYLE_FRIENDLY");
 	if (bParam5 == 0 || bParam5 == Global_35)
 	{
 		bParam5 = Global_35;
@@ -4178,7 +4178,7 @@ void func_111(int iParam0, bool bParam1, int* iParam2, bool bParam3, int iParam4
 			PED::SET_PED_COMBAT_ATTRIBUTES(bParam1, 71, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(bParam1, 31, true);
 			PED::SET_PED_COMBAT_ATTRIBUTES(bParam1, 46, true);
-			func_315(bParam1, iParam2, iVar0, 580546400, 0, 0);
+			func_315(bParam1, iParam2, iVar0, joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			if (func_316(bParam1))
 			{
 				iParam4 = func_317(bParam1);
@@ -11801,13 +11801,13 @@ void func_366(bool bParam0, int* iParam1, var uParam2, bool bParam3, bool bParam
 			{
 				if (bParam5)
 				{
-					iVar0 = 580546400;
+					iVar0 = joaat("BLIP_MODIFIER_URGENT_ALERT");
 				}
 				else
 				{
 					iVar0 = 0;
 				}
-				func_315(bParam0, iParam1, -89429847, iVar0, 0, sParam6);
+				func_315(bParam0, iParam1, joaat("BLIP_STYLE_FRIENDLY"), iVar0, 0, sParam6);
 			}
 		}
 	}
@@ -13091,7 +13091,7 @@ int func_373(bool bParam0, bool bParam1, bool bParam2)
 				func_42(&Local_1389, 128);
 				func_25(Local_1389.f_136, 64);
 				func_84(&Local_1389);
-				func_315(bLocal_1816, uLocal_1790[0], -89429847, 580546400, 0, func_365());
+				func_315(bLocal_1816, uLocal_1790[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, func_365());
 				func_74(vLocal_1578[1 /*3*/]);
 				WEAPON::SET_CURRENT_PED_WEAPON(*bParam0, joaat("WEAPON_UNARMED"), false, 0, false, false);
 				PED::_0xAAB050DA48B57978(*bParam0, func_665(0), false, -1, 4);
@@ -13409,7 +13409,7 @@ int func_374(bool bParam0, bool bParam1, bool bParam2)
 				}
 				func_688("HOME_OBJ01", 7500, 0, 1, 0, 0, -1, -1, 0);
 				func_25(Local_1389.f_136, 8192);
-				func_691(func_689(), uLocal_1790[1], 1631143573, 0, func_690(1), 0);
+				func_691(func_689(), uLocal_1790[1], joaat("BLIP_STYLE_NEUTRAL_OBJECTIVE"), 0, func_690(1), 0);
 				iLocal_22 = 8;
 			}
 			else
@@ -20559,7 +20559,7 @@ void func_670()
 			{
 				if (!MAP::DOES_BLIP_EXIST(&(uLocal_1805[iVar0])))
 				{
-					func_315(&(iLocal_1794[iVar0]), uLocal_1805[iVar0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+					func_315(&(iLocal_1794[iVar0]), uLocal_1805[iVar0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 				}
 				iVar0++;
 			}
@@ -20593,7 +20593,7 @@ void func_670()
 		{
 			if (!MAP::DOES_BLIP_EXIST(&(uLocal_1805[iVar0])))
 			{
-				func_315(&(iLocal_1794[iVar0]), uLocal_1805[iVar0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+				func_315(&(iLocal_1794[iVar0]), uLocal_1805[iVar0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			}
 			iVar0++;
 		}
@@ -20695,7 +20695,7 @@ int func_673(bool bParam0)
 			{
 				if (!MAP::DOES_BLIP_EXIST(&(uLocal_1805[iVar0])))
 				{
-					func_315(&(iLocal_1794[iVar0]), uLocal_1805[iVar0], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+					func_315(&(iLocal_1794[iVar0]), uLocal_1805[iVar0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 				}
 				TASK::TASK_COMBAT_HATED_TARGETS_IN_AREA(&(iLocal_1794[iVar0]), ENTITY::GET_ENTITY_COORDS(*bParam0, true, false), 60f, 0, 16);
 				PED::SET_PED_ACCURACY(&(iLocal_1794[iVar0]), iLocal_1642);
@@ -20892,7 +20892,7 @@ int func_682(bool bParam0)
 		case 0:
 			if (!MAP::DOES_BLIP_EXIST(&(uLocal_1790[0])))
 			{
-				func_315(*bParam0, uLocal_1790[0], -89429847, 580546400, 0, func_365());
+				func_315(*bParam0, uLocal_1790[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, func_365());
 			}
 			if (func_358(vLocal_1578[1 /*3*/], 12.5f))
 			{
@@ -21828,7 +21828,7 @@ int func_705(bool bParam0)
 			}
 			if ((!func_27(512) && !ENTITY::IS_ENTITY_DEAD(*bParam0)) && ENTITY::HAS_ANIM_EVENT_FIRED(*bParam0, -1568763903))
 			{
-				func_315(*bParam0, uLocal_1790[0], -89429847, 580546400, 0, func_365());
+				func_315(*bParam0, uLocal_1790[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, func_365());
 				func_5(512);
 			}
 			if ((func_27(512) && !ENTITY::IS_ENTITY_DEAD(Global_35)) && (func_186(Global_35, &(iLocal_1759[2]), 1, 0) || func_186(Global_35, &(iLocal_1759[3]), 1, 0)))
@@ -28225,7 +28225,7 @@ void func_945(int iParam0)
 		{
 			if (!MAP::DOES_BLIP_EXIST(((*Global_1900383)[iParam0 /*45*/])->f_27))
 			{
-				((*Global_1900383)[iParam0 /*45*/])->f_27 = MAP::_BLIP_ADD_FOR_ENTITY(-515518185, bVar0);
+				((*Global_1900383)[iParam0 /*45*/])->f_27 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_PLAYER_HORSE_SADDLE"), bVar0);
 				MAP::SET_BLIP_SPRITE(((*Global_1900383)[iParam0 /*45*/])->f_27, joaat("BLIP_SADDLE"), true);
 				func_1079(&(((*Global_1900383)[iParam0 /*45*/])->f_27));
 			}
@@ -28267,7 +28267,7 @@ void func_945(int iParam0)
 	}
 	else if (iParam0 == 1)
 	{
-		iVar5 = -1230993421;
+		iVar5 = joaat("BLIP_STYLE_TEMPORARY_HORSE");
 		bVar6 = true;
 	}
 	else
@@ -28331,7 +28331,7 @@ void func_945(int iParam0)
 	{
 		if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 3)
 		{
-			iVar17 = -401963276;
+			iVar17 = joaat("BLIP_MODIFIER_OBJECTIVE");
 			((*Global_1900383)[iParam0 /*45*/])->f_25 = 3;
 		}
 	}
@@ -28344,8 +28344,8 @@ void func_945(int iParam0)
 			{
 				if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 9)
 				{
-					iVar17 = 430539302;
-					iVar18 = 1313031610;
+					iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE");
+					iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE");
 					((*Global_1900383)[iParam0 /*45*/])->f_25 = 9;
 				}
 			}
@@ -28353,8 +28353,8 @@ void func_945(int iParam0)
 			{
 				if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 10)
 				{
-					iVar17 = -995247980;
-					iVar18 = 1313031610;
+					iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE_2");
+					iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE");
 					((*Global_1900383)[iParam0 /*45*/])->f_25 = 10;
 				}
 			}
@@ -28362,8 +28362,8 @@ void func_945(int iParam0)
 			{
 				if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 11)
 				{
-					iVar17 = -25056193;
-					iVar18 = 1313031610;
+					iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE_3");
+					iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE");
 					((*Global_1900383)[iParam0 /*45*/])->f_25 = 11;
 				}
 			}
@@ -28371,8 +28371,8 @@ void func_945(int iParam0)
 			{
 				if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 12)
 				{
-					iVar17 = -264630352;
-					iVar18 = 1313031610;
+					iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE_4");
+					iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE");
 					((*Global_1900383)[iParam0 /*45*/])->f_25 = 12;
 				}
 			}
@@ -28381,8 +28381,8 @@ void func_945(int iParam0)
 		{
 			if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 5)
 			{
-				iVar17 = 430539302;
-				iVar18 = -1012863186;
+				iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE");
+				iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE");
 				((*Global_1900383)[iParam0 /*45*/])->f_25 = 5;
 			}
 		}
@@ -28390,8 +28390,8 @@ void func_945(int iParam0)
 		{
 			if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 6)
 			{
-				iVar17 = -995247980;
-				iVar18 = -1012863186;
+				iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE_2");
+				iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE");
 				((*Global_1900383)[iParam0 /*45*/])->f_25 = 6;
 			}
 		}
@@ -28399,8 +28399,8 @@ void func_945(int iParam0)
 		{
 			if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 7)
 			{
-				iVar17 = -25056193;
-				iVar18 = -1012863186;
+				iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE_3");
+				iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE");
 				((*Global_1900383)[iParam0 /*45*/])->f_25 = 7;
 			}
 		}
@@ -28408,8 +28408,8 @@ void func_945(int iParam0)
 		{
 			if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 8)
 			{
-				iVar17 = -264630352;
-				iVar18 = -1012863186;
+				iVar17 = joaat("BLIP_MODIFIER_HORSE_REVIVE_4");
+				iVar18 = joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE");
 				((*Global_1900383)[iParam0 /*45*/])->f_25 = 8;
 			}
 		}
@@ -28418,7 +28418,7 @@ void func_945(int iParam0)
 	{
 		if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 4)
 		{
-			iVar17 = -1380599892;
+			iVar17 = joaat("BLIP_MODIFIER_HORSE_STOLEN");
 			((*Global_1900383)[iParam0 /*45*/])->f_25 = 4;
 		}
 	}
@@ -28426,7 +28426,7 @@ void func_945(int iParam0)
 	{
 		if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 2)
 		{
-			iVar17 = 1313031610;
+			iVar17 = joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE");
 			((*Global_1900383)[iParam0 /*45*/])->f_25 = 2;
 		}
 	}
@@ -28434,7 +28434,7 @@ void func_945(int iParam0)
 	{
 		if (((*Global_1900383)[iParam0 /*45*/])->f_25 != 1)
 		{
-			iVar17 = -1012863186;
+			iVar17 = joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE");
 			((*Global_1900383)[iParam0 /*45*/])->f_25 = 1;
 		}
 	}
@@ -28443,9 +28443,9 @@ void func_945(int iParam0)
 		func_1085(((*Global_1900383)[iParam0 /*45*/])->f_26);
 		func_1086(((*Global_1900383)[iParam0 /*45*/])->f_26);
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar17);
-		if (iVar17 == -401963276)
+		if (iVar17 == joaat("BLIP_MODIFIER_OBJECTIVE"))
 		{
-			MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, 231194138);
+			MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 	}
 	if (iVar18 != 0)
@@ -28454,28 +28454,28 @@ void func_945(int iParam0)
 	}
 	if ((PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
 	{
-		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, 673950256);
+		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}
 	else
 	{
-		MAP::_SET_BLIP_FLASH_STYLE(((*Global_1900383)[iParam0 /*45*/])->f_26, 673950256);
+		MAP::_SET_BLIP_FLASH_STYLE(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}
 	if (func_453(bVar0) && !bVar9)
 	{
 		if (iVar5 == joaat("BLIP_STYLE_PLAYER_HORSE"))
 		{
-			iVar20 = 561559387;
+			iVar20 = joaat("BLIP_MODIFIER_PLAYER_HORSE_HITCHED");
 		}
-		else if (iVar5 == -1230993421)
+		else if (iVar5 == joaat("BLIP_STYLE_TEMPORARY_HORSE"))
 		{
-			iVar20 = -201249929;
+			iVar20 = joaat("BLIP_MODIFIER_TEMP_HORSE_HITCHED");
 		}
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar20);
 	}
 	else
 	{
-		MAP::_SET_BLIP_FLASH_STYLE(((*Global_1900383)[iParam0 /*45*/])->f_26, 561559387);
-		MAP::_SET_BLIP_FLASH_STYLE(((*Global_1900383)[iParam0 /*45*/])->f_26, -201249929);
+		MAP::_SET_BLIP_FLASH_STYLE(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_PLAYER_HORSE_HITCHED"));
+		MAP::_SET_BLIP_FLASH_STYLE(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_TEMP_HORSE_HITCHED"));
 	}
 	iVar21 = func_1080(iParam0);
 	iVar22 = 0;
@@ -32797,24 +32797,24 @@ float func_1084(int iParam0)
 
 void func_1085(int iParam0)
 {
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -401963276);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, 231194138);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -1012863186);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -272772079);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, 1313031610);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -1814032670);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -1380599892);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, 430539302);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -995247980);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -25056193);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -264630352);
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_OBJECTIVE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_OUT_OF_RANGE_WHISTLE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_HORSE_STOLEN"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_HORSE_REVIVE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_HORSE_REVIVE_2"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_HORSE_REVIVE_3"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_HORSE_REVIVE_4"));
 }
 
 void func_1086(int iParam0)
 {
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, 673950256);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, 561559387);
-	MAP::_SET_BLIP_FLASH_STYLE(iParam0, -201249929);
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_PLAYER_HORSE_HITCHED"));
+	MAP::_SET_BLIP_FLASH_STYLE(iParam0, joaat("BLIP_MODIFIER_TEMP_HORSE_HITCHED"));
 }
 
 int func_1087()

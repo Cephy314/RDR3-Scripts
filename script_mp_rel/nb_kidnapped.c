@@ -13136,7 +13136,7 @@ int func_484(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -89429847;
+			return joaat("BLIP_STYLE_FRIENDLY");
 		case 1:
 		case 2:
 		case 3:

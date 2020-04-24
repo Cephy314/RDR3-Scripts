@@ -3536,11 +3536,11 @@ void func_50(var uParam0, var uParam1, var uParam2)
 				{
 					switch (vVar0.z)
 					{
-						case 2074623703:
+						case joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"):
 							func_245(uParam1, &(uParam2->f_112), 256);
 							bVar4 = true;
 							break;
-						case 1400745903:
+						case joaat("UI_STICKY_FEED_BUTTON_TYPE_BACK"):
 							func_269(&(uParam2->f_112));
 							bVar4 = true;
 							break;
@@ -6377,9 +6377,9 @@ void func_187(var uParam0, var uParam1, var uParam2)
 		return;
 	}
 	func_420(uParam0, uParam1, uParam2, 0, 1, 1);
-	func_421(uParam2, 0, -1878373110, 1);
-	func_421(uParam2, 0, 231194138, 1);
-	func_421(uParam2, 0, -521680853, 1);
+	func_421(uParam2, 0, joaat("BLIP_MODIFIER_FORCE_GPS"), 1);
+	func_421(uParam2, 0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"), 1);
+	func_421(uParam2, 0, joaat("BLIP_MODIFIER_MP_OBJECTIVE"), 1);
 	func_103(uParam2, 0);
 	iVar0 = func_111(uParam2, 401397137, uParam2->f_864.f_12, 0);
 	if (iVar0 <= 0)
@@ -7125,7 +7125,7 @@ void func_214(var uParam0, var uParam1)
 		if (func_441(uParam0, uParam1, 2, PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), iVar0))
 		{
 			func_190(uParam1, -1576091782 /* GXTEntry: "Enter a Series and compete against others by using a Series Marker ~1b~ or throug" +
-    "h the Player menu." */, 10000, joaat("BLIP_ADVERSARY_LARGE"), 1476777140);
+    "h the Player menu." */, 10000, joaat("BLIP_ADVERSARY_LARGE"), joaat("BLIP_STYLE_MP_SCHEDULE_SERIES"));
 		}
 		if (func_192(uParam1, -1576091782 /* GXTEntry: "Enter a Series and compete against others by using a Series Marker ~1b~ or throug" +
     "h the Player menu." */))
@@ -8209,7 +8209,7 @@ void func_272(var uParam0, var uParam1)
 			{
 				return;
 			}
-			uParam1->f_65 = MAP::_0xA6EF0C54A3443E70(-569474439, uParam1->f_112.f_425);
+			uParam1->f_65 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY"), uParam1->f_112.f_425);
 			func_257(1);
 			GRAPHICS::ANIMPOSTFX_PLAY(func_282());
 			uParam1->f_112.f_39.f_9 = func_425(MISC::_CREATE_VAR_STRING(0, uParam1->f_112.f_425.f_2), -1, 0, 0, 1);
@@ -12213,7 +12213,7 @@ void func_420(var uParam0, var uParam1, var uParam2, int iParam3, bool bParam4, 
 	}
 	if (bParam4)
 	{
-		func_421(uParam2, iParam3, 580546400, 1);
+		func_421(uParam2, iParam3, joaat("BLIP_MODIFIER_URGENT_ALERT"), 1);
 	}
 	if (bParam5)
 	{
@@ -16441,13 +16441,13 @@ int func_629(var uParam0, var uParam1, var uParam2, int iParam3)
 			}
 			else
 			{
-				iVar0 = MAP::_BLIP_ADD_FOR_COORD(1560611276, uParam2->f_432.f_70);
+				iVar0 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_CAMP"), uParam2->f_432.f_70);
 				if (MAP::DOES_BLIP_EXIST(iVar0))
 				{
 					MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iVar0, "MPFT_BLIP_PLAYER_CAMP");
-					MAP::_0x662D364ABF16DE2F(iVar0, 231194138);
-					MAP::_0x662D364ABF16DE2F(iVar0, -401963276);
-					MAP::_0x662D364ABF16DE2F(iVar0, -1878373110);
+					MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
+					MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_OBJECTIVE"));
+					MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_FORCE_GPS"));
 				}
 			}
 	}
@@ -16456,8 +16456,8 @@ int func_629(var uParam0, var uParam1, var uParam2, int iParam3)
 
 void func_630(var uParam0, int iParam1, bool bParam2)
 {
-	func_421(uParam0, iParam1, -401963276, bParam2);
-	func_421(uParam0, iParam1, 231194138, bParam2);
+	func_421(uParam0, iParam1, joaat("BLIP_MODIFIER_OBJECTIVE"), bParam2);
+	func_421(uParam0, iParam1, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"), bParam2);
 }
 
 var func_631(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)

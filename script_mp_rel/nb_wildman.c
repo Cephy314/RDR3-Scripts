@@ -7900,12 +7900,12 @@ void func_337(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_519.f_18.f_1[iParam0 /*2*/])))
 	{
-		Local_519.f_18.f_1[iParam0 /*2*/] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, func_215(0));
+		Local_519.f_18.f_1[iParam0 /*2*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), func_215(0));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(Local_519.f_18.f_1[iParam0 /*2*/]), "NB_WILDMAN_BLIP_NAME");
 	}
 	if (iParam1 != 0)
 	{
-		MAP::_0x662D364ABF16DE2F(&(Local_519.f_18.f_1[iParam0 /*2*/]), 942020339);
+		MAP::_0x662D364ABF16DE2F(&(Local_519.f_18.f_1[iParam0 /*2*/]), joaat("BLIP_MODIFIER_ENEMY"));
 	}
 }
 

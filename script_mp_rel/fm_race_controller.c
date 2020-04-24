@@ -16277,7 +16277,7 @@ int func_546(int iParam0, int iParam1, var uParam2, bool bParam3)
 						case -1203660660:
 							if (vVar1.y == *iParam0)
 							{
-								if (vVar1.z == 2074623703)
+								if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 								{
 									if (bParam3)
 									{
@@ -16286,7 +16286,7 @@ int func_546(int iParam0, int iParam1, var uParam2, bool bParam3)
 									}
 									iVar0 = 0;
 								}
-								else if (vVar1.z == 1400745903)
+								else if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_BACK"))
 								{
 									if (bParam3)
 									{
@@ -16295,7 +16295,7 @@ int func_546(int iParam0, int iParam1, var uParam2, bool bParam3)
 									}
 									iVar0 = 1;
 								}
-								else if (vVar1.z == 444632721)
+								else if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_OPTION"))
 								{
 									if (bParam3)
 									{
@@ -27037,7 +27037,7 @@ void func_962(int iParam0, bool bParam1)
 				iVar0 = 1;
 				while (iVar0 <= (Global_2097152->f_255 - iVar1))
 				{
-					func_1400(iVar0, 0, 408396114, iVar0 < (Global_2097152->f_255 - 1));
+					func_1400(iVar0, 0, joaat("BLIP_STYLE_OBJECTIVE"), iVar0 < (Global_2097152->f_255 - 1));
 					iVar0++;
 				}
 			}
@@ -27059,7 +27059,7 @@ void func_962(int iParam0, bool bParam1)
 						{
 							bVar2 = func_816((Local_59[iLocal_6153 /*53*/])->f_3);
 						}
-						func_1400(iVar0, 0, 408396114, bVar2);
+						func_1400(iVar0, 0, joaat("BLIP_STYLE_OBJECTIVE"), bVar2);
 					}
 					iVar0++;
 				}
@@ -27067,7 +27067,7 @@ void func_962(int iParam0, bool bParam1)
 		}
 		else if (iParam0 >= (Global_2097152->f_255 - 1))
 		{
-			func_1400(iParam0, 0, 408396114, 1);
+			func_1400(iParam0, 0, joaat("BLIP_STYLE_OBJECTIVE"), 1);
 		}
 	}
 	else
@@ -27078,7 +27078,7 @@ void func_962(int iParam0, bool bParam1)
 		{
 			if (MISC::IS_BIT_SET((Local_59[iLocal_6160 /*53*/])->f_7, iVar0))
 			{
-				func_1400(iParam0, iVar0, 408396114, 1);
+				func_1400(iParam0, iVar0, joaat("BLIP_STYLE_OBJECTIVE"), 1);
 			}
 			else
 			{
@@ -27090,7 +27090,7 @@ void func_962(int iParam0, bool bParam1)
 				{
 					if (MISC::IS_BIT_SET((Local_59[iLocal_6160 /*53*/])->f_8, iVar0))
 					{
-						func_1400(iVar3, iVar0, 681199565, 1);
+						func_1400(iVar3, iVar0, joaat("BLIP_STYLE_UPCOMING_OBJECTIVE"), 1);
 					}
 					else
 					{
@@ -27103,11 +27103,11 @@ void func_962(int iParam0, bool bParam1)
 					{
 						if (MISC::IS_BIT_SET((Global_2097152->f_258[iVar3 /*84*/])->f_76, 9))
 						{
-							func_1401(iVar3, iVar0, 681199565);
+							func_1401(iVar3, iVar0, joaat("BLIP_STYLE_UPCOMING_OBJECTIVE"));
 						}
 						else
 						{
-							func_1402(iVar3, iVar0, 681199565);
+							func_1402(iVar3, iVar0, joaat("BLIP_STYLE_UPCOMING_OBJECTIVE"));
 						}
 					}
 					else
@@ -28433,25 +28433,25 @@ int func_998(int iParam0, bool bParam1, bool bParam2)
 	switch (iParam0)
 	{
 		case 0:
-			return -1926234334;
+			return joaat("BLIP_MODIFIER_MP_COLOR_3");
 		case 1:
-			return -324452845;
+			return joaat("BLIP_MODIFIER_MP_COLOR_4");
 		case 2:
-			return 978868600;
+			return joaat("BLIP_MODIFIER_MP_COLOR_5");
 		case 3:
-			return 1209431284;
+			return joaat("BLIP_MODIFIER_MP_COLOR_6");
 		case 4:
-			return 364744771;
+			return joaat("BLIP_MODIFIER_MP_COLOR_7");
 		case 5:
-			return -1581930451;
+			return joaat("BLIP_MODIFIER_MP_COLOR_8");
 		case 6:
-			return -210318418;
+			return joaat("BLIP_MODIFIER_MP_COLOR_9");
 		case 7:
-			return 1782892786;
+			return joaat("BLIP_MODIFIER_MP_COLOR_10");
 		default:
 			break;
 	}
-	return 2087220824;
+	return joaat("BLIP_MODIFIER_MP_NEUTRAL");
 }
 
 void func_999(int iParam0, int iParam1)
@@ -28899,7 +28899,7 @@ int func_1013(var uParam0, int iParam1, int iParam2)
 	{
 		return 0;
 	}
-	iVar1 = -1749618580;
+	iVar1 = joaat("BLIP_STYLE_NEUTRAL");
 	if (*uParam0 != 0)
 	{
 		iVar1 = *uParam0;
@@ -28915,11 +28915,11 @@ int func_1013(var uParam0, int iParam1, int iParam2)
 	}
 	if (MISC::IS_BIT_SET(uParam0->f_3, 4))
 	{
-		MAP::_0x662D364ABF16DE2F(iVar0, 313075017);
+		MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_HIDE_HEIGHT_MARKER"));
 	}
 	if (MISC::IS_BIT_SET(uParam0->f_3, 2))
 	{
-		MAP::_0x662D364ABF16DE2F(iVar0, -1878373110);
+		MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_FORCE_GPS"));
 	}
 	func_1469(iVar0, iParam2);
 	return iVar0;
@@ -40436,15 +40436,15 @@ void func_1402(int iParam0, int iParam1, int iParam2)
 		}
 		if (Global_2097152->f_32 == 1744858848 || (Global_2097152->f_32 == -1185533313 && iVar7 != -282719360))
 		{
-			MAP::_0x662D364ABF16DE2F(&((Local_10256[iParam0 /*29*/])->f_6[iParam1]), 2084443829);
+			MAP::_0x662D364ABF16DE2F(&((Local_10256[iParam0 /*29*/])->f_6[iParam1]), joaat("BLIP_MODIFIER_OPEN_RACE_CHECKPOINT"));
 		}
-		if (iVar7 == -282719360 || iVar7 == 408396114)
+		if (iVar7 == -282719360 || iVar7 == joaat("BLIP_STYLE_OBJECTIVE"))
 		{
-			MAP::_0x662D364ABF16DE2F(&((Local_10256[iParam0 /*29*/])->f_6[iParam1]), 231194138);
+			MAP::_0x662D364ABF16DE2F(&((Local_10256[iParam0 /*29*/])->f_6[iParam1]), joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 		else
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(&((Local_10256[iParam0 /*29*/])->f_6[iParam1]), 231194138);
+			MAP::_SET_BLIP_FLASH_STYLE(&((Local_10256[iParam0 /*29*/])->f_6[iParam1]), joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 	}
 }
@@ -41783,12 +41783,12 @@ void func_1449(int iParam0)
 
 int func_1450()
 {
-	return 500408427;
+	return joaat("BLIP_MODIFIER_MP_COLOR_1");
 }
 
 int func_1451()
 {
-	return 1871037390;
+	return joaat("BLIP_MODIFIER_MP_COLOR_2");
 }
 
 bool func_1452(int iParam0, int iParam1)
@@ -44315,7 +44315,7 @@ void func_1523(int iParam0, bool bParam1)
 		return;
 	}
 	iVar0 = func_1999(OBJECT::GET_WEAPON_TYPE_FROM_PICKUP_TYPE((Global_3145858->f_6742[iParam0 /*33*/])->f_17), (Global_3145858->f_6742[iParam0 /*33*/])->f_17, (Global_3145858->f_6742[iParam0 /*33*/])->f_24);
-	iLocal_8436[iParam0] = MAP::BLIP_ADD_FOR_PICKUP_PLACEMENT(1664425300, &(uLocal_8637[iParam0]));
+	iLocal_8436[iParam0] = MAP::BLIP_ADD_FOR_PICKUP_PLACEMENT(joaat("BLIP_STYLE_PICKUP_WEAPON"), &(uLocal_8637[iParam0]));
 	MAP::_0x662D364ABF16DE2F(&(iLocal_8436[iParam0]), 1654237215);
 	MAP::SET_BLIP_SPRITE(&(iLocal_8436[iParam0]), iVar0, true);
 	MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(iLocal_8436[iParam0]), func_2000(OBJECT::GET_WEAPON_TYPE_FROM_PICKUP_TYPE((Global_3145858->f_6742[iParam0 /*33*/])->f_17), (Global_3145858->f_6742[iParam0 /*33*/])->f_17, (Global_3145858->f_6742[iParam0 /*33*/])->f_24, Global_2097152->f_31));
@@ -44393,7 +44393,7 @@ void func_1526(int iParam0)
 	{
 		uLocal_9358[iParam0] = func_1304(uLocal_9056[iParam0], (Global_3145858->f_18606[iParam0 /*93*/])->f_8, 0);
 	}
-	if (((!MAP::DOES_BLIP_EXIST(&(iLocal_9207[iParam0])) && (Global_3145858->f_18606[iParam0 /*93*/])->f_73 != -1193943474) && (Global_3145858->f_18606[iParam0 /*93*/])->f_73 != 0) && (Global_3145858->f_18606[iParam0 /*93*/])->f_73 != 1144721026)
+	if (((!MAP::DOES_BLIP_EXIST(&(iLocal_9207[iParam0])) && (Global_3145858->f_18606[iParam0 /*93*/])->f_73 != joaat("BLIP_STYLE_CREATOR_DEFAULT")) && (Global_3145858->f_18606[iParam0 /*93*/])->f_73 != 0) && (Global_3145858->f_18606[iParam0 /*93*/])->f_73 != joaat("BLIP_STYLE_CREATOR_PROP"))
 	{
 		iLocal_9207[iParam0] = MAP::_BLIP_ADD_FOR_ENTITY((Global_3145858->f_18606[iParam0 /*93*/])->f_73, &(uLocal_9056[iParam0]));
 		MAP::SET_BLIP_SPRITE(&(iLocal_9207[iParam0]), (Global_3145858->f_18606[iParam0 /*93*/])->f_74, false);
@@ -55679,15 +55679,15 @@ void func_1902(int iParam0, int iParam1, int iParam2, int iParam3)
 	}
 	if (Global_2097152->f_32 == 1744858848 || (Global_2097152->f_32 == -1185533313 && iVar1 != -282719360))
 	{
-		MAP::_0x662D364ABF16DE2F((Local_10256[iParam0 /*29*/])->f_9[iParam1 /*6*/][iParam2], 2084443829);
+		MAP::_0x662D364ABF16DE2F((Local_10256[iParam0 /*29*/])->f_9[iParam1 /*6*/][iParam2], joaat("BLIP_MODIFIER_OPEN_RACE_CHECKPOINT"));
 	}
-	if (iVar1 == -282719360 || iVar1 == 408396114)
+	if (iVar1 == -282719360 || iVar1 == joaat("BLIP_STYLE_OBJECTIVE"))
 	{
-		MAP::_0x662D364ABF16DE2F((Local_10256[iParam0 /*29*/])->f_9[iParam1 /*6*/][iParam2], 231194138);
+		MAP::_0x662D364ABF16DE2F((Local_10256[iParam0 /*29*/])->f_9[iParam1 /*6*/][iParam2], joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 	}
 	else
 	{
-		MAP::_SET_BLIP_FLASH_STYLE((Local_10256[iParam0 /*29*/])->f_9[iParam1 /*6*/][iParam2], 231194138);
+		MAP::_SET_BLIP_FLASH_STYLE((Local_10256[iParam0 /*29*/])->f_9[iParam1 /*6*/][iParam2], joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 	}
 }
 
@@ -58985,7 +58985,7 @@ void func_1995(var uParam0, int iParam1)
 		func_1994(uParam0);
 		*uParam0 = VOLUME::_CREATE_VOLUME_SPHERE(ENTITY::GET_ENTITY_COORDS(iParam1, true, false), 0f, 0f, 0f, 5f, 5f, 5f);
 		PED::_0x7C00CFC48A782DC0(*uParam0, iParam1, 0f, 0f, 0f, 0f, 0f, 0f, 2, 1);
-		uParam0->f_1 = MAP::_0xA6EF0C54A3443E70(-1805968857, *uParam0);
+		uParam0->f_1 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_POSSE_FORMATION_AREA"), *uParam0);
 	}
 }
 
@@ -59040,13 +59040,13 @@ void func_1998(int iParam0, bool bParam1)
 	{
 		if (!func_968(&uLocal_7101, iParam0))
 		{
-			MAP::_0x662D364ABF16DE2F(&(iLocal_8436[iParam0]), -1654168258);
+			MAP::_0x662D364ABF16DE2F(&(iLocal_8436[iParam0]), joaat("BLIP_MODIFIER_PICKUP_UNAVAILABLE"));
 			func_790(&uLocal_7101, iParam0);
 		}
 	}
 	else if (func_968(&uLocal_7101, iParam0))
 	{
-		MAP::_SET_BLIP_FLASH_STYLE(&(iLocal_8436[iParam0]), -1654168258);
+		MAP::_SET_BLIP_FLASH_STYLE(&(iLocal_8436[iParam0]), joaat("BLIP_MODIFIER_PICKUP_UNAVAILABLE"));
 		func_1901(&uLocal_7101, iParam0);
 	}
 }

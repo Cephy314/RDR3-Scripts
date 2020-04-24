@@ -3613,7 +3613,7 @@ int func_97(var uParam0)
 {
 	if (!MAP::DOES_BLIP_EXIST(iLocal_54))
 	{
-		iLocal_54 = MAP::_BLIP_ADD_FOR_COORD(-678244495, func_171(uParam0, vLocal_45));
+		iLocal_54 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_MINIGAME"), func_171(uParam0, vLocal_45));
 		MAP::SET_BLIP_SPRITE(iLocal_54, joaat("BLIP_AMBIENT_SECRET"), true);
 	}
 	func_187(uParam0, iLocal_18, 1);

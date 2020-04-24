@@ -7281,7 +7281,7 @@ void func_233()
 	{
 		if (func_198(&Local_14, iVar0))
 		{
-			func_201(&(Local_14.f_348[iVar0]), Local_14.f_353[iVar0], joaat("BLIP_STYLE_ENEMY"), -662251075, 0, 0);
+			func_201(&(Local_14.f_348[iVar0]), Local_14.f_353[iVar0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"), 0, 0);
 		}
 		iVar0++;
 	}
@@ -9364,8 +9364,8 @@ void func_287(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

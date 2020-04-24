@@ -127,7 +127,7 @@ int func_3(var uParam0)
 			}
 			if (VOLUME::_0xF256A75210C5C0EB(uParam0->f_51, Global_36))
 			{
-				uParam0->f_46 = MAP::_0xA6EF0C54A3443E70(1247852480, uParam0->f_51);
+				uParam0->f_46 = MAP::_0xA6EF0C54A3443E70(joaat("BLIP_STYLE_AREA"), uParam0->f_51);
 				func_11(uParam0->f_45, Global_35, "ACT_HUNTING_ARRIVAL", func_14(Global_1391438->f_414.f_2, 0), -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				uParam0->f_56 = 3;
 			}

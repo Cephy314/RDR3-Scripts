@@ -3389,7 +3389,7 @@ int func_155(int iParam0, bool bParam1)
 			{
 				if (MAP::DOES_BLIP_EXIST(func_304(48)))
 				{
-					func_305(&iLocal_68, func_304(48), 1673015813);
+					func_305(&iLocal_68, func_304(48), joaat("BLIP_STYLE_MISSION"));
 					iLocal_44 = 1;
 				}
 			}

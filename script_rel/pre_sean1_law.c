@@ -253,7 +253,7 @@ int func_6()
 			PED::SET_PED_CONFIG_FLAG(&(uLocal_0[iVar0]), 167, true);
 			PED::SET_PED_SEEING_RANGE(&(uLocal_0[iVar0]), 35f);
 			iLocal_16[iVar0] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_COP"), &(uLocal_0[iVar0]));
-			MAP::_0x662D364ABF16DE2F(&(iLocal_16[iVar0]), -662251075);
+			MAP::_0x662D364ABF16DE2F(&(iLocal_16[iVar0]), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"));
 			switch (iVar0)
 			{
 				case 0:

@@ -1818,7 +1818,7 @@ int func_29()
 					{
 						MAP::REMOVE_BLIP(uLocal_1168[0]);
 					}
-					func_134(&(uLocal_1163[0]), uLocal_1168[0], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, "WILD_UC_NAME");
+					func_134(&(uLocal_1163[0]), uLocal_1168[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, "WILD_UC_NAME");
 				}
 			}
 		}
@@ -2044,7 +2044,7 @@ int func_29()
 			else
 			{
 				func_161(&(uLocal_1163[0]));
-				func_134(&(uLocal_1163[0]), uLocal_1168[0], -89429847, 1679075994, 0, "RE_INTER_STRANGER");
+				func_134(&(uLocal_1163[0]), uLocal_1168[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY"), 0, "RE_INTER_STRANGER");
 				if (iLocal_1081 == 2)
 				{
 					func_162();
@@ -7326,7 +7326,7 @@ void func_184()
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_1173);
 		TASK::TASK_PERFORM_SEQUENCE(&(uLocal_1163[2]), iLocal_1173);
 		TASK::CLEAR_SEQUENCE_TASK(&iLocal_1173);
-		func_134(&(uLocal_1163[2]), uLocal_1168[2], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+		func_134(&(uLocal_1163[2]), uLocal_1168[2], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 	}
 	if (func_27(&(uLocal_1163[3]), 0, 1))
 	{
@@ -7345,7 +7345,7 @@ void func_184()
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_1173);
 		TASK::TASK_PERFORM_SEQUENCE(&(uLocal_1163[3]), iLocal_1173);
 		TASK::CLEAR_SEQUENCE_TASK(&iLocal_1173);
-		func_134(&(uLocal_1163[3]), uLocal_1168[3], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+		func_134(&(uLocal_1163[3]), uLocal_1168[3], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 	}
 }
 
@@ -12676,7 +12676,7 @@ void func_345(vector3 vParam0)
 	fVar0 = 0f;
 	fVar0 = func_514(vParam0, Global_36);
 	uLocal_1163[2] = func_368(joaat("A_C_WOLF_SMALL"), Local_675[2 /*32*/], vParam0, fVar0, 1, 0, 1, 0, 1);
-	func_134(&(uLocal_1163[2]), uLocal_1168[2], joaat("BLIP_STYLE_ENEMY"), 942020339, 0, 0);
+	func_134(&(uLocal_1163[2]), uLocal_1168[2], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY"), 0, 0);
 	FLOCK::_0xA881F5C77A560906(10f);
 	TASK::TASK_COMBAT_PED(&(uLocal_1163[2]), Global_35, 0, 0);
 	PED::SET_PED_FLEE_ATTRIBUTES(&(uLocal_1163[2]), 512, true);
@@ -15544,8 +15544,8 @@ void func_427(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

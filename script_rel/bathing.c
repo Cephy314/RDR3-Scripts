@@ -493,7 +493,7 @@ void func_3(int iParam0)
 
 int func_4(int iParam0)
 {
-	iParam0->f_1 = -972966383;
+	iParam0->f_1 = joaat("BLIP_STYLE_PROPERTY");
 	iParam0->f_2 = joaat("BLIP_BATH_HOUSE");
 	iParam0->f_6 = func_2();
 	func_22(iParam0);
@@ -2171,11 +2171,11 @@ void func_34(int iParam0, bool bParam1)
 	{
 		if (bParam1)
 		{
-			MAP::_0x662D364ABF16DE2F(iParam0->f_41, 724623647);
+			MAP::_0x662D364ABF16DE2F(iParam0->f_41, joaat("BLIP_MODIFIER_LOCKED"));
 		}
 		else
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(iParam0->f_41, 724623647);
+			MAP::_SET_BLIP_FLASH_STYLE(iParam0->f_41, joaat("BLIP_MODIFIER_LOCKED"));
 			MAP::REMOVE_BLIP(&(iParam0->f_41));
 		}
 	}
@@ -2300,12 +2300,12 @@ void func_38(int iParam0, vector3 vParam1, bool bParam4)
 		MAP::SET_BLIP_SPRITE(iParam0->f_41, iParam0->f_2, true);
 		if (bParam4)
 		{
-			MAP::_0x662D364ABF16DE2F(iParam0->f_41, -401963276);
+			MAP::_0x662D364ABF16DE2F(iParam0->f_41, joaat("BLIP_MODIFIER_OBJECTIVE"));
 		}
 	}
 	else
 	{
-		MAP::_SET_BLIP_FLASH_STYLE(iParam0->f_41, 724623647);
+		MAP::_SET_BLIP_FLASH_STYLE(iParam0->f_41, joaat("BLIP_MODIFIER_LOCKED"));
 	}
 }
 

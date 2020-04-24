@@ -2725,7 +2725,7 @@ int func_113(var uParam0, int iParam1, var uParam2, bool bParam3)
 						case -1203660660:
 							if (vVar1.y == *uParam0)
 							{
-								if (vVar1.z == 2074623703)
+								if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 								{
 									if (bParam3)
 									{
@@ -2734,7 +2734,7 @@ int func_113(var uParam0, int iParam1, var uParam2, bool bParam3)
 									}
 									iVar0 = 0;
 								}
-								else if (vVar1.z == 1400745903)
+								else if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_BACK"))
 								{
 									if (bParam3)
 									{
@@ -2743,7 +2743,7 @@ int func_113(var uParam0, int iParam1, var uParam2, bool bParam3)
 									}
 									iVar0 = 1;
 								}
-								else if (vVar1.z == 444632721)
+								else if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_OPTION"))
 								{
 									if (bParam3)
 									{

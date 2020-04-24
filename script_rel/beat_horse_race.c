@@ -3173,7 +3173,7 @@ void func_70()
 				{
 					if (!MAP::DOES_BLIP_EXIST(&(uLocal_419[0])))
 					{
-						func_209(&(uLocal_412[0]), uLocal_419[0], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+						func_209(&(uLocal_412[0]), uLocal_419[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 					}
 					func_67(2);
 				}
@@ -3362,7 +3362,7 @@ void func_76()
 			func_229("HORSE_RACE_OBJ");
 			if (!MAP::DOES_BLIP_EXIST(iLocal_426))
 			{
-				iLocal_426 = MAP::_BLIP_ADD_FOR_COORD(408396114, *(vLocal_501[iLocal_1018 /*3*/]));
+				iLocal_426 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), *(vLocal_501[iLocal_1018 /*3*/]));
 			}
 			MAP::START_GPS_MULTI_ROUTE(joaat("COLOR_YELLOW"), true, false);
 			TASK::WAYPOINT_RECORDING_GET_NUM_POINTS(&(sLocal_529[iLocal_1017]), &iVar1);
@@ -13699,8 +13699,8 @@ void func_303(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

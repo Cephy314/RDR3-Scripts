@@ -124,13 +124,13 @@ void func_3(bool bParam0)
 						}
 						else
 						{
-							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), -1882247919);
+							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), joaat("ACTIVATE_CHEAT_WARNING"));
 						}
 						Jump @459; //curOff = 269
 						func_17();
 						if (func_18(Local_9.f_43))
 						{
-							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), -1882247919);
+							UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), joaat("ACTIVATE_CHEAT_WARNING"));
 						}
 						else
 						{
@@ -146,24 +146,24 @@ void func_3(bool bParam0)
 							}
 							else
 							{
-								UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), 415950302);
+								UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), joaat("INVALID_CHEAT_HASH"));
 							}
 							else
 							{
 								Jump @453; //curOff = 364
 								if (func_20(iVar4))
 								{
-									UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), -1954024225);
+									UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), joaat("CHEAT_ALREADY_UNLOCKED"));
 								}
 								else if (func_21(iVar4) == 0)
 								{
 									if (!func_22(iVar4))
 									{
-										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), -1001071426);
+										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), joaat("VALID_CHEAT_HASH_UNOWNED"));
 									}
 									else
 									{
-										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), 526258797);
+										UIAPPS::_REQUEST_UIAPP_TRANSITION_BY_HASH(joaat("SETTINGS_MENU"), joaat("VALID_CHEAT_HASH"));
 										func_23(iVar4);
 									}
 									UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("CHEATS_MENU"));
@@ -1612,9 +1612,9 @@ int func_50(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -2093359759;
+			return joaat("KSETTINGDISPLAY_CHEATS_BUTTON");
 		case 1:
-			return -949812163;
+			return joaat("KSETTINGDISPLAY_CHEATS_STEPPER");
 		case 2:
 			return 401446359;
 		default:

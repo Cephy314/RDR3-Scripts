@@ -3758,8 +3758,8 @@ void func_130()
 			{
 				TASK::TASK_CONFRONT(&(Local_14.f_230[0]), Global_35, 2);
 				func_38(&(Local_14.f_248.f_3), 2);
-				func_247(&(Local_14.f_230[0]), Local_14.f_232[0], joaat("BLIP_STYLE_ENEMY"), 749968775, 0, 0);
-				MAP::_0x662D364ABF16DE2F(&(Local_14.f_232[0]), 749968775);
+				func_247(&(Local_14.f_230[0]), Local_14.f_232[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_CONFRONTING"), 0, 0);
+				MAP::_0x662D364ABF16DE2F(&(Local_14.f_232[0]), joaat("BLIP_MODIFIER_ENEMY_CONFRONTING"));
 				func_67(&Local_14, 32768);
 				func_302(&Local_14, 3);
 			}
@@ -3769,8 +3769,8 @@ void func_130()
 			{
 				TASK::TASK_CONFRONT(0, Global_35, 20);
 				func_38(&(Local_14.f_248.f_3), 2);
-				func_247(&(Local_14.f_230[0]), Local_14.f_232[0], joaat("BLIP_STYLE_ENEMY"), 749968775, 0, 0);
-				MAP::_0x662D364ABF16DE2F(&(Local_14.f_232[0]), 749968775);
+				func_247(&(Local_14.f_230[0]), Local_14.f_232[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_CONFRONTING"), 0, 0);
+				MAP::_0x662D364ABF16DE2F(&(Local_14.f_232[0]), joaat("BLIP_MODIFIER_ENEMY_CONFRONTING"));
 				func_67(&Local_14, 32768);
 				func_302(&Local_14, 3);
 			}
@@ -11162,8 +11162,8 @@ void func_335(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

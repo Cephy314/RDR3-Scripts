@@ -969,7 +969,7 @@ bool func_45()
 			if (!MAP::DOES_BLIP_EXIST((Local_5[iVar0 /*6*/])->f_1))
 			{
 				(Local_5[iVar0 /*6*/])->f_1 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(Local_5[iVar0 /*6*/]));
-				MAP::_0x662D364ABF16DE2F((Local_5[iVar0 /*6*/])->f_1, -1034486097);
+				MAP::_0x662D364ABF16DE2F((Local_5[iVar0 /*6*/])->f_1, joaat("BLIP_MODIFIER_ENEMY_GUNSHOTS_ONLY"));
 			}
 			if (!func_62((Local_5[iVar0 /*6*/])->f_5, 2))
 			{

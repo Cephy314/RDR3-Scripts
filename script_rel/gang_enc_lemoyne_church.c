@@ -671,7 +671,7 @@ int func_31(int iParam0)
 	}
 	if (func_68(&(uLocal_14[iParam0]), (60f - 10f), 25f, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */) || func_69(&(uLocal_14[iParam0]), 0))
 	{
-		func_70(&(uLocal_14[iParam0]), uLocal_14.f_6[iParam0], joaat("BLIP_STYLE_ENEMY"), -662251075, 0, 0);
+		func_70(&(uLocal_14[iParam0]), uLocal_14.f_6[iParam0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_ON_GUARD"), 0, 0);
 		uLocal_14.f_12[iParam0] = 1;
 	}
 	else

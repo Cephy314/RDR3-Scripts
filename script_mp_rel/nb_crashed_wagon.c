@@ -8931,7 +8931,7 @@ void func_401(int iParam0, int iParam1)
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_763.f_18.f_9[iParam0 /*7*/])))
 	{
-		Local_763.f_18.f_9[iParam0 /*7*/] = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, func_160(iParam0));
+		Local_763.f_18.f_9[iParam0 /*7*/] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), func_160(iParam0));
 		sVar0 = "";
 		switch (iParam0)
 		{

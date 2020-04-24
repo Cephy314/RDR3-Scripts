@@ -3163,7 +3163,7 @@ int func_74(int iParam0, bool bParam1, int iParam2, int iParam3, bool bParam4, b
 							MAP::REMOVE_BLIP(&Global_17094);
 						}
 						Global_17094 = MAP::_0x3E593DF9C2962EC6(joaat("BLIP_STYLE_PLAYER_HORSE"));
-						MAP::_0x662D364ABF16DE2F(Global_17094, 673950256);
+						MAP::_0x662D364ABF16DE2F(Global_17094, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 						func_161(MISC::_CREATE_VAR_STRING(0, -1680440926, Global_17094), 10000, 0, 0, 0, 1);
 					}
 					else if (!func_172(7))
@@ -3183,7 +3183,7 @@ int func_74(int iParam0, bool bParam1, int iParam2, int iParam3, bool bParam4, b
 								MAP::REMOVE_BLIP(&Global_17094);
 							}
 							Global_17094 = MAP::_0x3E593DF9C2962EC6(joaat("BLIP_STYLE_PLAYER_HORSE"));
-							MAP::_0x662D364ABF16DE2F(Global_17094, 673950256);
+							MAP::_0x662D364ABF16DE2F(Global_17094, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 							func_161(MISC::_CREATE_VAR_STRING(0, -482898802, Global_17094), 10000, 0, 0, 0, 1);
 						}
 					}
@@ -3891,7 +3891,7 @@ void func_104(var uParam0, bool bParam1)
 {
 	if (bParam1)
 	{
-		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), 1383188602))
+		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), joaat("FOCUS_CAMERA")))
 		{
 		}
 		else
@@ -19046,7 +19046,7 @@ int func_609(var uParam0, bool bParam1)
 	uParam0->f_54 = 1;
 	if (bParam1 && UIAPPS::_IS_APP_ACTIVE(joaat("CRAFTING")))
 	{
-		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), 1014850361))
+		if (UISTATEMACHINE::_UISTATEMACHINE_REQUEST_TRANSITION(joaat("CRAFTING"), joaat("RESTORE_MENU")))
 		{
 			func_46(8);
 			return 1;

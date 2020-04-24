@@ -1841,7 +1841,7 @@ void func_55()
 				case -1203660660:
 					if (vVar2.y == Global_265331->f_124445.f_154)
 					{
-						if (vVar2.z == 2074623703)
+						if (vVar2.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 						{
 							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("STATUS_ALERT_FEED"));
 							bVar0 = true;
@@ -13576,7 +13576,7 @@ void func_518(var uParam0)
 		iVar0++;
 	}
 	uParam0->f_68 = -1;
-	uParam0->f_69 = -569474439;
+	uParam0->f_69 = joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY");
 	uParam0->f_70 = 0;
 	uParam0->f_71 = 0;
 	uParam0->f_72 = 0;
@@ -16579,7 +16579,7 @@ void func_599(var uParam0)
 	uParam0->f_9 = 0;
 	uParam0->f_10 = 0f;
 	uParam0->f_11 = 0;
-	uParam0->f_12 = -569474439;
+	uParam0->f_12 = joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY");
 	uParam0->f_13 = 0;
 	uParam0->f_14 = 0;
 	uParam0->f_15 = -1;
@@ -16634,7 +16634,7 @@ void func_601(var uParam0)
 		iVar0++;
 	}
 	uParam0->f_6 = -1;
-	uParam0->f_7 = 408396114;
+	uParam0->f_7 = joaat("BLIP_STYLE_OBJECTIVE");
 	uParam0->f_8 = 0;
 	uParam0->f_9 = 0;
 	uParam0->f_10 = -1;
@@ -17082,7 +17082,7 @@ void func_618(var uParam0)
 		iVar0++;
 	}
 	uParam0->f_54 = 0;
-	uParam0->f_55 = 408396114;
+	uParam0->f_55 = joaat("BLIP_STYLE_OBJECTIVE");
 	uParam0->f_56 = 0;
 	uParam0->f_57 = 0;
 	uParam0->f_58 = -1;
@@ -17554,7 +17554,7 @@ void func_633(var uParam0)
 	uParam0->f_15 = 0f;
 	uParam0->f_16 = 0;
 	uParam0->f_17 = 148;
-	uParam0->f_18 = 1664425300;
+	uParam0->f_18 = joaat("BLIP_STYLE_PICKUP_WEAPON");
 	uParam0->f_19 = 0;
 	uParam0->f_20 = -1;
 	uParam0->f_21 = -1;
@@ -17766,7 +17766,7 @@ void func_635(var uParam0)
 	uParam0->f_70 = 0;
 	uParam0->f_71 = -1;
 	uParam0->f_72 = 0;
-	uParam0->f_73 = -1193943474;
+	uParam0->f_73 = joaat("BLIP_STYLE_CREATOR_DEFAULT");
 	uParam0->f_74 = 0;
 	uParam0->f_75 = 0;
 	uParam0->f_76 = -1;
@@ -22861,7 +22861,7 @@ void func_876(var uParam0)
 		(Global_3145858->f_6742[iVar0 /*33*/])->f_15 = func_1007(uVar24, iVar0, 0f, bVar25);
 		(Global_3145858->f_6742[iVar0 /*33*/])->f_16 = func_1000(uVar26, iVar0, 0, bVar27);
 		(Global_3145858->f_6742[iVar0 /*33*/])->f_17 = func_1009(uVar28, iVar0, 148, bVar29);
-		(Global_3145858->f_6742[iVar0 /*33*/])->f_18 = func_1009(uVar30, iVar0, 1664425300, bVar31);
+		(Global_3145858->f_6742[iVar0 /*33*/])->f_18 = func_1009(uVar30, iVar0, joaat("BLIP_STYLE_PICKUP_WEAPON"), bVar31);
 		(Global_3145858->f_6742[iVar0 /*33*/])->f_19 = func_1009(uVar32, iVar0, 0, bVar33);
 		(Global_3145858->f_6742[iVar0 /*33*/])->f_20 = func_1000(uVar34, iVar0, -1, bVar35);
 		(Global_3145858->f_6742[iVar0 /*33*/])->f_21 = func_1000(uVar36, iVar0, -1, bVar37);
@@ -25032,7 +25032,7 @@ void func_879(var uParam0)
 		(Global_3145858->f_18606[iVar2 /*93*/])->f_70 = func_1000(uVar66, iVar2, 0, bVar67);
 		(Global_3145858->f_18606[iVar2 /*93*/])->f_71 = func_1000(uVar68, iVar2, -1, bVar69);
 		(Global_3145858->f_18606[iVar2 /*93*/])->f_72 = func_1000(uVar70, iVar2, 0, bVar71);
-		(Global_3145858->f_18606[iVar2 /*93*/])->f_73 = func_1009(uVar72, iVar2, -1193943474, bVar73);
+		(Global_3145858->f_18606[iVar2 /*93*/])->f_73 = func_1009(uVar72, iVar2, joaat("BLIP_STYLE_CREATOR_DEFAULT"), bVar73);
 		(Global_3145858->f_18606[iVar2 /*93*/])->f_74 = func_1009(uVar74, iVar2, 0, bVar75);
 		(Global_3145858->f_18606[iVar2 /*93*/])->f_75 = func_1009(uVar76, iVar2, 0, bVar77);
 		iVar2++;
@@ -46783,7 +46783,7 @@ void func_918(var uParam0)
 		(Global_524288->f_141228[iVar2 /*28*/])->f_9 = func_1000(uVar546, iVar2, 0, bVar547);
 		(Global_524288->f_141228[iVar2 /*28*/])->f_10 = func_1007(uVar548, iVar2, 0f, bVar549);
 		(Global_524288->f_141228[iVar2 /*28*/])->f_11 = func_1000(uVar550, iVar2, 0, bVar551);
-		(Global_524288->f_141228[iVar2 /*28*/])->f_12 = func_1009(uVar552, iVar2, -569474439, bVar553);
+		(Global_524288->f_141228[iVar2 /*28*/])->f_12 = func_1009(uVar552, iVar2, joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY"), bVar553);
 		(Global_524288->f_141228[iVar2 /*28*/])->f_13 = func_1009(uVar554, iVar2, 0, bVar555);
 		(Global_524288->f_141228[iVar2 /*28*/])->f_14 = func_1009(uVar556, iVar2, 0, bVar557);
 		(Global_524288->f_141228[iVar2 /*28*/])->f_15 = func_1000(uVar558, iVar2, -1, bVar559);
@@ -46844,7 +46844,7 @@ void func_918(var uParam0)
 			iVar3++;
 		}
 		(Global_524288->f_142804[iVar2 /*25*/])->f_6 = func_1000(uVar671, iVar2, -1, bVar672);
-		(Global_524288->f_142804[iVar2 /*25*/])->f_7 = func_1009(uVar673, iVar2, 408396114, bVar674);
+		(Global_524288->f_142804[iVar2 /*25*/])->f_7 = func_1009(uVar673, iVar2, joaat("BLIP_STYLE_OBJECTIVE"), bVar674);
 		(Global_524288->f_142804[iVar2 /*25*/])->f_8 = func_1009(uVar675, iVar2, 0, bVar676);
 		(Global_524288->f_142804[iVar2 /*25*/])->f_9 = func_1009(uVar677, iVar2, 0, bVar678);
 		(Global_524288->f_142804[iVar2 /*25*/])->f_10 = func_1000(uVar679, iVar2, -1, bVar680);
@@ -56648,7 +56648,7 @@ void func_948(var uParam0)
 		iVar2++;
 	}
 	Global_2359296->f_68 = func_973(*uParam0, "shudl", -1);
-	Global_2359296->f_69 = func_999(*uParam0, "bbstyle", -569474439);
+	Global_2359296->f_69 = func_999(*uParam0, "bbstyle", joaat("BLIP_STYLE_AREA_BOUNDS_OVERLAY"));
 	Global_2359296->f_70 = func_999(*uParam0, "bbsprite", 0);
 	Global_2359296->f_71 = func_999(*uParam0, "sdbsty", 0);
 	Global_2359296->f_72 = func_999(*uParam0, "sdbspri", 0);
@@ -57952,7 +57952,7 @@ void func_950(var uParam0)
 			iVar3++;
 		}
 		(Global_2359296->f_10271[iVar2 /*62*/])->f_54 = func_1000(uVar115, iVar2, 0, bVar116);
-		(Global_2359296->f_10271[iVar2 /*62*/])->f_55 = func_1009(uVar117, iVar2, 408396114, bVar118);
+		(Global_2359296->f_10271[iVar2 /*62*/])->f_55 = func_1009(uVar117, iVar2, joaat("BLIP_STYLE_OBJECTIVE"), bVar118);
 		(Global_2359296->f_10271[iVar2 /*62*/])->f_56 = func_1009(uVar119, iVar2, 0, bVar120);
 		(Global_2359296->f_10271[iVar2 /*62*/])->f_57 = func_1009(uVar121, iVar2, 0, bVar122);
 		(Global_2359296->f_10271[iVar2 /*62*/])->f_58 = func_1000(uVar123, iVar2, -1, bVar124);
@@ -67362,7 +67362,7 @@ void func_1049()
 	iVar0 = 0;
 	while (iVar0 <= 17)
 	{
-		if (((Global_3145858->f_39311[iVar0 /*115*/])->f_68 == -755203418 || (Global_3145858->f_39311[iVar0 /*115*/])->f_68 == -1384718582) || (Global_3145858->f_39311[iVar0 /*115*/])->f_68 == 1586775858)
+		if (((Global_3145858->f_39311[iVar0 /*115*/])->f_68 == joaat("BLIP_MODIFIER_POSSE_ENEMY") || (Global_3145858->f_39311[iVar0 /*115*/])->f_68 == joaat("BLIP_MODIFIER_POSSE_ALLY")) || (Global_3145858->f_39311[iVar0 /*115*/])->f_68 == joaat("BLIP_MODIFIER_POSSE_ENEMY_OWNED"))
 		{
 			(Global_3145858->f_39311[iVar0 /*115*/])->f_68 = 0;
 		}
@@ -70858,12 +70858,12 @@ void func_1078(var uParam0)
 					default:
 						func_1166(uParam0);
 						Jump @820; //curOff = 117
-						Var2[0] = func_1202(func_1130(uParam0, "dovi", -1, -1, -1, -1), iVar0, iVar1, func_1130(uParam0, "dobst", 408396114, -1, -1, -1), func_1130(uParam0, "dobsp", 0, -1, -1, -1), func_1130(uParam0, "dobna", -1, -1, -1, -1), -1, 0, 0, 0);
+						Var2[0] = func_1202(func_1130(uParam0, "dovi", -1, -1, -1, -1), iVar0, iVar1, func_1130(uParam0, "dobst", joaat("BLIP_STYLE_OBJECTIVE"), -1, -1, -1), func_1130(uParam0, "dobsp", 0, -1, -1, -1), func_1130(uParam0, "dobna", -1, -1, -1, -1), -1, 0, 0, 0);
 						Var2.f_13++;
 						iVar38 = 0;
 						while (iVar38 < 11)
 						{
-							Var2[iVar38 + 1] = func_1202(func_1130(uParam0, "dofvi", -1, iVar38, -1, -1), iVar0, iVar1, 408396114, 0, func_1130(uParam0, "dobna", -1, -1, -1, -1), func_1130(uParam0, "evoss", -1, iVar38, -1, -1), func_1130(uParam0, "pspdo", 0, iVar38, 0, -1), func_1130(uParam0, "pspdo", 0, iVar38, 1, -1), func_1130(uParam0, "pspdo", 0, iVar38, 2, -1));
+							Var2[iVar38 + 1] = func_1202(func_1130(uParam0, "dofvi", -1, iVar38, -1, -1), iVar0, iVar1, joaat("BLIP_STYLE_OBJECTIVE"), 0, func_1130(uParam0, "dobna", -1, -1, -1, -1), func_1130(uParam0, "evoss", -1, iVar38, -1, -1), func_1130(uParam0, "pspdo", 0, iVar38, 0, -1), func_1130(uParam0, "pspdo", 0, iVar38, 1, -1), func_1130(uParam0, "pspdo", 0, iVar38, 2, -1));
 							if (&Var2[iVar38 + 1] > -1)
 							{
 								Var2.f_13++;
@@ -72951,9 +72951,9 @@ void func_1132()
 		if (Global_2359296->f_155 == -559809431)
 		{
 			MISC::SET_BIT(&(Global_2359296->f_160), 20);
-			Global_2359296->f_71 = 1775959122;
+			Global_2359296->f_71 = joaat("BLIP_STYLE_MP_PLAYER");
 			Global_2359296->f_72 = joaat("BLIP_AMBIENT_MARKED_FOR_DEATH");
-			Global_2359296->f_73 = 1784012766;
+			Global_2359296->f_73 = joaat("BLIP_MODIFIER_VERYHIGH_CATEGORY");
 		}
 	}
 }

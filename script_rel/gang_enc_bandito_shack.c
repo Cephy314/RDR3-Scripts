@@ -4048,7 +4048,7 @@ void func_87()
 				if (!MAP::DOES_BLIP_EXIST(&(iLocal_574[0])) && !PED::IS_PED_DEAD_OR_DYING(&(uLocal_569[0]), true))
 				{
 					iLocal_574[0] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(uLocal_569[0]));
-					MAP::_0x662D364ABF16DE2F(&(iLocal_574[0]), -1118229366);
+					MAP::_0x662D364ABF16DE2F(&(iLocal_574[0]), joaat("BLIP_MODIFIER_ENEMY_STEALTH_KILL"));
 				}
 			}
 			func_157();
@@ -4153,7 +4153,7 @@ void func_87()
 					iLocal_1089[0] = 2;
 					iLocal_1092[0] = 0;
 					iLocal_574[1] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(uLocal_569[1]));
-					MAP::_0x662D364ABF16DE2F(&(iLocal_574[1]), -1118229366);
+					MAP::_0x662D364ABF16DE2F(&(iLocal_574[1]), joaat("BLIP_MODIFIER_ENEMY_STEALTH_KILL"));
 				}
 			}
 			if (!func_154(&(uLocal_569[2])))
@@ -4161,7 +4161,7 @@ void func_87()
 				if (!MAP::DOES_BLIP_EXIST(&(iLocal_574[2])))
 				{
 					iLocal_574[2] = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(uLocal_569[2]));
-					MAP::_0x662D364ABF16DE2F(&(iLocal_574[2]), -1118229366);
+					MAP::_0x662D364ABF16DE2F(&(iLocal_574[2]), joaat("BLIP_MODIFIER_ENEMY_STEALTH_KILL"));
 				}
 			}
 			if (func_166(&(uLocal_569[0]), &(uLocal_569[1]), 1, 1) <= 5f || func_166(&(uLocal_569[0]), &(uLocal_569[2]), 1, 1) <= 5f)
@@ -4408,15 +4408,15 @@ void func_88()
 			}
 			if (MAP::DOES_BLIP_EXIST(&(iLocal_574[0])))
 			{
-				MAP::_0x662D364ABF16DE2F(&(iLocal_574[0]), 942020339);
+				MAP::_0x662D364ABF16DE2F(&(iLocal_574[0]), joaat("BLIP_MODIFIER_ENEMY"));
 			}
 			if (MAP::DOES_BLIP_EXIST(&(iLocal_574[1])))
 			{
-				MAP::_0x662D364ABF16DE2F(&(iLocal_574[1]), 942020339);
+				MAP::_0x662D364ABF16DE2F(&(iLocal_574[1]), joaat("BLIP_MODIFIER_ENEMY"));
 			}
 			if (MAP::DOES_BLIP_EXIST(&(iLocal_574[2])))
 			{
-				MAP::_0x662D364ABF16DE2F(&(iLocal_574[2]), 942020339);
+				MAP::_0x662D364ABF16DE2F(&(iLocal_574[2]), joaat("BLIP_MODIFIER_ENEMY"));
 			}
 			func_178(uLocal_569[0], &iLocal_618, &Local_639, 1, 1);
 			func_178(uLocal_569[1], Local_837[1 /*21*/], &Local_901, 1, 1);

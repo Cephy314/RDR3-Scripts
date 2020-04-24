@@ -11741,17 +11741,17 @@ void func_221()
 				case -1203660660:
 					if (vVar5.y == Global_1572887->f_164.f_82)
 					{
-						if (vVar5.z == 2074623703)
+						if (vVar5.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 						{
 							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("STATUS_ALERT_FEED"));
 							bVar0 = true;
 						}
-						if (vVar5.z == 444632721)
+						if (vVar5.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_OPTION"))
 						{
 							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("STATUS_ALERT_FEED"));
 							bVar2 = true;
 						}
-						if (vVar5.z == 1400745903)
+						if (vVar5.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_BACK"))
 						{
 							UIEVENTS::_EVENT_MANAGER_POP_EVENT(joaat("STATUS_ALERT_FEED"));
 							bVar1 = true;

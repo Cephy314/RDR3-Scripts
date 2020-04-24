@@ -1392,7 +1392,7 @@ void func_49(var uParam0, int* iParam1)
 	{
 		if (!MAP::DOES_BLIP_EXIST(iParam1->f_9))
 		{
-			iParam1->f_9 = MAP::_BLIP_ADD_FOR_ENTITY(-89429847, iVar1);
+			iParam1->f_9 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_FRIENDLY"), iVar1);
 		}
 	}
 	else if (MAP::DOES_BLIP_EXIST(iParam1->f_9))

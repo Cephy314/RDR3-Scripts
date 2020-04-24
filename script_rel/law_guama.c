@@ -975,7 +975,7 @@ int func_42(var uParam0, var uParam1, bool bParam2)
 	}
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_21))
 	{
-		uParam0->f_21 = MAP::_BLIP_ADD_FOR_COORD(408396114, vVar2);
+		uParam0->f_21 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_OBJECTIVE"), vVar2);
 	}
 	iVar16 = 0;
 	while (iVar16 < 5)

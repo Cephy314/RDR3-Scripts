@@ -711,7 +711,7 @@ void func_8(var uParam0, int iParam1)
 	uParam0->f_17 = func_41(uParam0->f_4);
 	if (func_6(uParam0, 1))
 	{
-		uParam0->f_17 = -1230993421;
+		uParam0->f_17 = joaat("BLIP_STYLE_TEMPORARY_HORSE");
 	}
 	switch (uParam0->f_4)
 	{
@@ -751,7 +751,7 @@ void func_8(var uParam0, int iParam1)
 			}
 			if (func_6(uParam0, 1))
 			{
-				HUD::_0x5F57522BC1EB9D9D(uParam0->f_5, -847116890);
+				HUD::_0x5F57522BC1EB9D9D(uParam0->f_5, joaat("PLAYER_HORSE_TEMP"));
 			}
 			else
 			{
@@ -2471,7 +2471,7 @@ void func_58(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 		bVar4 = func_121(uParam0);
 		if (bVar4)
 		{
-			iVar3 = func_122(iParam1, 0, &(uParam0->f_14), -1, -1, 1277358601, 1, 1);
+			iVar3 = func_122(iParam1, 0, &(uParam0->f_14), -1, -1, joaat("GENERIC_PLAYER"), 1, 1);
 		}
 		else
 		{
@@ -2718,48 +2718,48 @@ void func_63(var uParam0)
 		if (PAD::IS_CONTROL_PRESSED(0, joaat("INPUT_WHISTLE")))
 		{
 			uParam0->f_13 = Global_1275573->f_21 + 15;
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, -272772079);
-			MAP::_0x662D364ABF16DE2F(uParam0->f_16, -272772079);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
+			MAP::_0x662D364ABF16DE2F(uParam0->f_16, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
 		}
 		if (Global_1275573->f_21 > uParam0->f_13)
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, -272772079);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
 		}
 		else
 		{
-			MAP::_0x662D364ABF16DE2F(uParam0->f_16, -272772079);
+			MAP::_0x662D364ABF16DE2F(uParam0->f_16, joaat("BLIP_MODIFIER_PLAYER_HORSE_IN_RANGE_WHISTLE"));
 		}
 		if (TASK::IS_PED_IN_WRITHE(uParam0->f_18))
 		{
-			MAP::_0x662D364ABF16DE2F(uParam0->f_16, 430539302);
+			MAP::_0x662D364ABF16DE2F(uParam0->f_16, joaat("BLIP_MODIFIER_HORSE_REVIVE"));
 		}
 		else
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, 430539302);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_HORSE_REVIVE"));
 		}
 		if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, 453356795);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_POSSE_ALLY_OWNED"));
 			return;
 		}
 		if (!PED::IS_PED_A_PLAYER(iVar0))
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, 453356795);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_POSSE_ALLY_OWNED"));
 			return;
 		}
 		iVar1 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar0);
 		if (!NETWORK::_0x255A5EF65EDA9167(iVar1))
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, 453356795);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_POSSE_ALLY_OWNED"));
 			return;
 		}
 		if (func_132(iVar1, 0))
 		{
-			MAP::_0x662D364ABF16DE2F(uParam0->f_16, 453356795);
+			MAP::_0x662D364ABF16DE2F(uParam0->f_16, joaat("BLIP_MODIFIER_POSSE_ALLY_OWNED"));
 		}
 		else
 		{
-			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, 453356795);
+			MAP::_SET_BLIP_FLASH_STYLE(uParam0->f_16, joaat("BLIP_MODIFIER_POSSE_ALLY_OWNED"));
 		}
 		return;
 	}
@@ -2776,7 +2776,7 @@ void func_63(var uParam0)
 	{
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_16, func_133(uParam0->f_4));
 	}
-	MAP::_0x662D364ABF16DE2F(uParam0->f_16, 580546400);
+	MAP::_0x662D364ABF16DE2F(uParam0->f_16, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 }
 
 void func_64(var uParam0, int iParam1)
@@ -6301,7 +6301,7 @@ int func_199(int iParam0)
 {
 	switch (iParam0)
 	{
-		case 1277358601:
+		case joaat("GENERIC_PLAYER"):
 		case joaat("POSSE_LEADER"):
 			return 0;
 		default:

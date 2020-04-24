@@ -3590,7 +3590,7 @@ int func_93(var uParam0)
 	{
 		if (func_215(func_8(uParam0, iLocal_18), Global_35, 1) <= 225f)
 		{
-			iLocal_52 = MAP::_BLIP_ADD_FOR_COORD(-678244495, ENTITY::GET_ENTITY_COORDS(func_8(uParam0, iLocal_18), true, false));
+			iLocal_52 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_MINIGAME"), ENTITY::GET_ENTITY_COORDS(func_8(uParam0, iLocal_18), true, false));
 			MAP::SET_BLIP_SPRITE(iLocal_52, joaat("BLIP_AMBIENT_SECRET"), true);
 		}
 	}

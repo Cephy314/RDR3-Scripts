@@ -550,7 +550,7 @@ void func_33(var uParam0)
 	{
 		if (func_59(uParam0))
 		{
-			uParam0->f_7 = MAP::_BLIP_ADD_FOR_ENTITY(203020899, uParam0->f_6);
+			uParam0->f_7 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_OBJECTIVE_MINOR"), uParam0->f_6);
 			MAP::SET_BLIP_SPRITE(uParam0->f_7, joaat("BLIP_AMBIENT_WAGON"), true);
 		}
 	}
@@ -589,7 +589,7 @@ void func_35(var uParam0)
 	{
 		if (func_62(uParam0))
 		{
-			uParam0->f_7 = MAP::_BLIP_ADD_FOR_ENTITY(203020899, uParam0->f_6);
+			uParam0->f_7 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_OBJECTIVE_MINOR"), uParam0->f_6);
 			MAP::SET_BLIP_SPRITE(uParam0->f_7, joaat("BLIP_AMBIENT_HORSE"), true);
 		}
 	}

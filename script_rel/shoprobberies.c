@@ -402,7 +402,7 @@ void func_8()
 	{
 		return;
 	}
-	func_68(vVar0, &(Local_62.f_1390), -757657449, 0, 0, 0);
+	func_68(vVar0, &(Local_62.f_1390), joaat("BLIP_STYLE_UNDISCOVERED"), 0, 0, 0);
 	func_39(1);
 }
 
@@ -7763,7 +7763,7 @@ void func_282(bool bParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	WEAPON::_GIVE_WEAPON_TO_PED_2(bParam0, iParam4, 100, true, false, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
 	WEAPON::SET_CURRENT_PED_WEAPON(bParam0, iParam4, true, 0, false, false);
 	TASK::TASK_AIM_GUN_AT_ENTITY(bParam0, bParam2, -1, true, 1);
-	func_660(bParam0, &iParam1, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+	func_660(bParam0, &iParam1, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 }
 
 void func_283()
@@ -15560,7 +15560,7 @@ void func_582(int* iParam0, var uParam1)
 			{
 				func_34(29, 8);
 			}
-			func_660(*iParam0, &(iParam0->f_1), -89429847, 580546400, 0, 0);
+			func_660(*iParam0, &(iParam0->f_1), joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iParam0->f_1, "SR_RG_BLIP_CAPTIVE1");
 			func_558(249295937, *iParam0, 1);
 			Local_62.f_1294 = func_968(*iParam0, &(Local_62.f_1247[4 /*2*/]), 0);
@@ -20061,7 +20061,7 @@ int func_760(var uParam0, var uParam1)
 			func_126(&(Local_62.f_1247[2 /*2*/]));
 			func_126(&(Local_62.f_1247[3 /*2*/]));
 			func_1127(*uParam1, 0);
-			func_660(*uParam1, &(uParam1->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(*uParam1, &(uParam1->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_1116(20);
 			break;
 		case 12:
@@ -20974,7 +20974,7 @@ void func_766(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int* iPara
 		case 0:
 			if (!MAP::DOES_BLIP_EXIST(bParam0->f_1))
 			{
-				func_660(*bParam0, &(bParam0->f_1), -89429847, 580546400, 0, 0);
+				func_660(*bParam0, &(bParam0->f_1), joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			}
 			if (!PED::GET_PED_CONFIG_FLAG(*bParam0, 169, true))
 			{
@@ -21085,7 +21085,7 @@ void func_766(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int* iPara
 			func_432(1, 0, 1);
 			func_302(0);
 			func_281(&(Local_62.f_1518), "PRNBG_PLRTHRT1", *bParam1, Global_35, 0, 0, 1, 1);
-			func_660(*bParam1, &(bParam1->f_1), -89429847, 580546400, 0, 0);
+			func_660(*bParam1, &(bParam1->f_1), joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(bParam1->f_1, "SR_SD_BLIP_DOWNGUARD");
 			func_61(&(bParam0->f_1));
 			PED::SET_PED_RELATIONSHIP_GROUP_HASH(*bParam1, joaat("REL_PLAYER_DISLIKE"));
@@ -21124,7 +21124,7 @@ void func_766(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int* iPara
 				return;
 			}
 			func_1127(*bParam1, 0);
-			func_660(*bParam1, &(bParam1->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(*bParam1, &(bParam1->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_297(*bParam0, Global_35, &(bParam0->f_42), -1, vLocal_59, 1, 0);
 			func_1170(7);
 			break;
@@ -21139,7 +21139,7 @@ void func_766(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int* iPara
 			break;
 		case 16:
 			func_1127(*bParam1, 0);
-			func_660(*bParam1, &(bParam1->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(*bParam1, &(bParam1->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_297(*bParam0, Global_35, &(bParam0->f_42), -1, vLocal_59, 1, 0);
 			func_1170(17);
 			break;
@@ -21150,7 +21150,7 @@ void func_766(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int* iPara
 			}
 			if (!MAP::DOES_BLIP_EXIST(bParam0->f_1) && !ENTITY::IS_ENTITY_DEAD(*bParam0))
 			{
-				func_660(*bParam0, &(bParam0->f_1), -89429847, 580546400, 0, 0);
+				func_660(*bParam0, &(bParam0->f_1), joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			}
 			if (!func_74(Global_35, &(Local_62.f_1247[4 /*2*/])))
 			{
@@ -21497,7 +21497,7 @@ void func_766(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int* iPara
 		case 53:
 			func_1222(bParam2);
 			func_533(1048576);
-			func_660(*bParam2, &(bParam2->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(*bParam2, &(bParam2->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_1223();
 			func_1170(54);
 			break;
@@ -22884,7 +22884,7 @@ void func_767(int* iParam0, int* iParam1)
 			PED::SET_PED_COMBAT_ATTRIBUTES(*iParam0, 46, true);
 			func_1327(*iParam0, Local_62.f_1616[1], iParam1->f_117, 3000, Global_35);
 			func_57(268435456);
-			func_660(*iParam0, &(iParam0->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(*iParam0, &(iParam0->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_958(1, 1);
 			func_1170(100);
 			break;
@@ -23319,7 +23319,7 @@ void func_768(bool bParam0)
 			if (func_353(-1f, 1, 0, 0) && !ENTITY::IS_ENTITY_DEAD(*bParam0))
 			{
 				func_596(bParam0, "PRSGS_BETTER", "PRSGS_BETTERJ", 1);
-				func_68(-1792.26f, -382.182f, 157.5527f, Local_62.f_1482[0], 408396114, 0, 0, 0);
+				func_68(-1792.26f, -382.182f, 157.5527f, Local_62.f_1482[0], joaat("BLIP_STYLE_OBJECTIVE"), 0, 0, 0);
 				func_1170(22);
 			}
 			break;
@@ -23610,9 +23610,9 @@ void func_769(var uParam0, var uParam1, bool bParam2, bool bParam3)
 			func_1170(4);
 			break;
 		case 4:
-			func_660(&(Local_62.f_390[0 /*126*/]), &((Local_62.f_390[0 /*126*/])->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
-			func_660(&(Local_62.f_390[1 /*126*/]), &((Local_62.f_390[1 /*126*/])->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
-			func_660(&(Local_62.f_390[2 /*126*/]), &((Local_62.f_390[2 /*126*/])->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(&(Local_62.f_390[0 /*126*/]), &((Local_62.f_390[0 /*126*/])->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+			func_660(&(Local_62.f_390[1 /*126*/]), &((Local_62.f_390[1 /*126*/])->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
+			func_660(&(Local_62.f_390[2 /*126*/]), &((Local_62.f_390[2 /*126*/])->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_1374();
 			func_1170(5);
 			break;
@@ -23763,7 +23763,7 @@ void func_769(var uParam0, var uParam1, bool bParam2, bool bParam3)
 			func_536(*bParam3, joaat("WEAPON_REVOLVER_CATTLEMAN"), 1, 0);
 			func_545(Local_62.f_1226[12], 0);
 			TASK::TASK_AIM_GUN_AT_ENTITY(*bParam3, Global_35, -1, true, 1);
-			func_660(*bParam3, &(bParam3->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+			func_660(*bParam3, &(bParam3->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			func_1170(32);
 			break;
 		case 32:
@@ -24171,7 +24171,7 @@ void func_781(var uParam0, int* iParam1, bool bParam2)
 	PED::_0x935CF6E42BAF7F4D(*uParam0);
 	TASK::TASK_COMBAT_PED(*uParam0, Global_35, 0, 0);
 	PED::SET_PED_KEEP_TASK(*uParam0, true);
-	func_660(*uParam0, iParam1, joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+	func_660(*uParam0, iParam1, joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 }
 
 int func_782(var uParam0, bool bParam1)
@@ -24346,7 +24346,7 @@ void func_788(var uParam0)
 	}
 	if (func_1413(uParam0->f_2) != -1)
 	{
-		func_1414(func_1413(uParam0->f_2), 580546400);
+		func_1414(func_1413(uParam0->f_2), joaat("BLIP_MODIFIER_URGENT_ALERT"));
 	}
 }
 
@@ -28323,7 +28323,7 @@ void func_960(var uParam0)
 	{
 		if (!MAP::DOES_BLIP_EXIST(uParam0->f_1))
 		{
-			func_660(*uParam0, &(uParam0->f_1), -89429847, 580546400, 0, 0);
+			func_660(*uParam0, &(uParam0->f_1), joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_1, "SR_RG_BLIP_CAPTIVE1");
 		}
 	}
@@ -33735,7 +33735,7 @@ void func_1189()
 	}
 	if (!MAP::DOES_BLIP_EXIST(&(Local_62.f_1482[2])) && !func_120(16384))
 	{
-		func_68(func_926(), Local_62.f_1482[2], 408396114, 0, 0, 0);
+		func_68(func_926(), Local_62.f_1482[2], joaat("BLIP_STYLE_OBJECTIVE"), 0, 0, 0);
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(Local_62.f_1482[2]), "SR_SD_BLIP_SAFE");
 	}
 	func_1239(1);
@@ -34019,7 +34019,7 @@ int func_1201()
 void func_1202(bool bParam0, bool bParam1)
 {
 	func_1651("SR_NG_O_GOTHIRDFLOOR", 7500, 0, 0, -1, -1, 0);
-	func_68(2711.768f, -1293.569f, 59.46251f, Local_62.f_1482[0], 408396114, 0, 0, 0);
+	func_68(2711.768f, -1293.569f, 59.46251f, Local_62.f_1482[0], joaat("BLIP_STYLE_OBJECTIVE"), 0, 0, 0);
 	func_61(&(bParam0->f_1));
 	func_61(&(bParam1->f_1));
 }
@@ -34479,7 +34479,7 @@ void func_1226(bool bParam0, bool bParam1)
 	{
 		case 0:
 			func_1651("SR_NG_O_ROBTABLE", 7500, 0, 0, -1, -1, 0);
-			func_68(2717.586f, -1286.138f, 60.15688f, Local_62.f_1482[1], 408396114, 0, 0, 0);
+			func_68(2717.586f, -1286.138f, 60.15688f, Local_62.f_1482[1], joaat("BLIP_STYLE_OBJECTIVE"), 0, 0, 0);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(&(Local_62.f_1482[1]), "SR_SD_BLIP_MONEY");
 			func_307(Local_62.f_1392[4 /*3*/]);
 			func_1652(1);
@@ -35070,7 +35070,7 @@ void func_1254(var uParam0)
 	}
 	else if (fVar0 < 25f)
 	{
-		func_660(*uParam0, &(uParam0->f_1), -89429847, 580546400, 0, 0);
+		func_660(*uParam0, &(uParam0->f_1), joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_1, "SR_RG_BLIP_CAPTIVE1");
 		func_870(&(uParam0->f_9), -2147483648);
 	}
@@ -35980,7 +35980,7 @@ void func_1287(var uParam0, vector3 vParam1, int iParam4)
 	{
 		return;
 	}
-	*uParam0 = MAP::_BLIP_ADD_FOR_COORD(-1383961727, vParam1);
+	*uParam0 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_PICKUP_WEAPON_NEW"), vParam1);
 }
 
 Vector3 func_1288()
@@ -36444,7 +36444,7 @@ void func_1324(bool bParam0, bool bParam1, bool bParam2)
 		return;
 	}
 	PED::SET_PED_COMBAT_ATTRIBUTES(*bParam0, 46, true);
-	func_660(*bParam0, &(bParam0->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+	func_660(*bParam0, &(bParam0->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 	if (bParam1)
 	{
 		if (!func_145(&(Local_62.f_390[0 /*126*/]), 0, 1))
@@ -38192,7 +38192,7 @@ void func_1390(var uParam0, int iParam1)
 	PED::SET_PED_CAN_BE_TARGETTED(*uParam0, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(*uParam0, 0, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(*uParam0, 30, true);
-	func_660(*uParam0, &(uParam0->f_1), joaat("BLIP_STYLE_COP"), 580546400, 0, 0);
+	func_660(*uParam0, &(uParam0->f_1), joaat("BLIP_STYLE_COP"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 }
 
 char* func_1391()
@@ -49443,7 +49443,7 @@ void func_1740(bool bParam0, var uParam1, int iParam2, var uParam3, var uParam4,
 	{
 		PED::_0xFC3DB99C8144CD81(*bParam0, bParam10, 0, false, 0);
 	}
-	func_660(*bParam0, &(bParam0->f_1), joaat("BLIP_STYLE_ENEMY"), 580546400, 0, 0);
+	func_660(*bParam0, &(bParam0->f_1), joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, 0);
 }
 
 void func_1741(bool bParam0)
@@ -55520,11 +55520,11 @@ void func_1966(int iParam0, int iParam1, float fParam2, int iParam3)
 	if (func_2025())
 	{
 		iVar2 = BUILTIN::FLOOR((BUILTIN::TO_FLOAT(iVar1) * 0.1f));
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS_SPECIAL"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), -1689362167);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS_SPECIAL"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), joaat("KTOTALTAKEENTRYGANGSAVINGS"));
 	}
 	else
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), -1689362167);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("TOAST_GANG_SAVINGS"), joaat("HUD_TOASTS"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_GANG"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar0), joaat("KTOTALTAKEENTRYGANGSAVINGS"));
 	}
 	iVar3 = iVar1;
 	if (func_2025())
@@ -55535,7 +55535,7 @@ void func_1966(int iParam0, int iParam1, float fParam2, int iParam3)
 	iVar4 = func_441(iParam0);
 	if (func_1002(iParam0) != 1 || (iVar4 != 37 && iVar4 != 58))
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("HEADSHOT_ARTHUR"), 1997120069, MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_ARTHUR"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar3), 601389479);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(joaat("HEADSHOT_ARTHUR"), 1997120069, MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_ARTHUR"), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", iVar3), joaat("KTOTALTAKEENTRYNORMAL"));
 	}
 	switch (func_1002(iParam0))
 	{
@@ -56053,7 +56053,7 @@ void func_1990(bool bParam0)
 {
 	if (func_2236(Global_1934051->f_33))
 	{
-		func_2237(Global_1934051->f_33, 7148155);
+		func_2237(Global_1934051->f_33, joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER"));
 	}
 	func_2235(&(Global_1934051->f_33), bParam0);
 }
@@ -63634,11 +63634,11 @@ void func_2225(int iParam0, char* sParam1)
 {
 	if (iParam0 != 18 && iParam0 != 7)
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_2390(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP", MISC::_CREATE_VAR_STRING(2, func_1514(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), 601389479);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_2390(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP", MISC::_CREATE_VAR_STRING(2, func_1514(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), joaat("KTOTALTAKEENTRYNORMAL"));
 	}
 	else
 	{
-		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_2390(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP_NOS", MISC::_CREATE_VAR_STRING(2, func_1514(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), 601389479);
+		UILOG::_UILOG_ADD_TOTAL_TAKE_ENTRY(MISC::GET_HASH_KEY(func_2390(iParam0)), 1997120069, MISC::_CREATE_VAR_STRING(10, "MISSION_COMPLETE_TAKE_COMP_NOS", MISC::_CREATE_VAR_STRING(2, func_1514(iParam0, 0))), MISC::_CREATE_VAR_STRING(2, "MISSION_COMPLETE_TAKE_AMOUNT", sParam1), joaat("KTOTALTAKEENTRYNORMAL"));
 	}
 }
 
@@ -63833,27 +63833,27 @@ int func_2239(int iParam0)
 	switch (iParam0)
 	{
 		case 3:
-			return 1341870286;
+			return joaat("BLIP_MODIFIER_GROUPING_LAGRAS_LEADER");
 		case 5:
-			return -1706412559;
+			return joaat("BLIP_MODIFIER_GROUPING_SAINT_DENIS_LEADER");
 		case 26:
-			return 279909480;
+			return joaat("BLIP_MODIFIER_GROUPING_STRAWBERRY_LEADER");
 		case 38:
-			return -412614304;
+			return joaat("BLIP_MODIFIER_GROUPING_BLACKWATER_LEADER");
 		case 69:
-			return -653335484;
+			return joaat("BLIP_MODIFIER_GROUPING_EMERALD_RANCH_LEADER");
 		case 76:
-			return 1777802794;
+			return joaat("BLIP_MODIFIER_GROUPING_VALENTINE_LEADER");
 		case 78:
-			return 1088576970;
+			return joaat("BLIP_MODIFIER_GROUPING_ANNESBURG_LEADER");
 		case 92:
-			return 412321676;
+			return joaat("BLIP_MODIFIER_GROUPING_VAN_HORN_LEADER");
 		case 105:
-			return 1787788681;
+			return joaat("BLIP_MODIFIER_GROUPING_RHODES_LEADER");
 		case 115:
-			return 1635466279;
+			return joaat("BLIP_MODIFIER_GROUPING_TUMBLEWEED_LEADER");
 		case 120:
-			return -410502938;
+			return joaat("BLIP_MODIFIER_GROUPING_ARMADILLO_LEADER");
 		case 4:
 		case 9:
 		case 22:
@@ -63863,7 +63863,7 @@ int func_2239(int iParam0)
 		case 71:
 		case 79:
 		case 98:
-			return 7148155;
+			return joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER");
 		default:
 			break;
 	}

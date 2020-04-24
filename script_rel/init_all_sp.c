@@ -15627,7 +15627,7 @@ void func_302()
 			{
 				if (iVar0 == Global_1934051->f_33 && func_468(iVar0))
 				{
-					func_469(iVar0, 7148155);
+					func_469(iVar0, joaat("BLIP_MODIFIER_GROUPING_CAMP_GROUP_LEADER"));
 					func_470(&(Global_1934051->f_33), 0);
 				}
 				iVar2 = func_471(iVar1, 19);

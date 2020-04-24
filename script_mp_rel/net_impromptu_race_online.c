@@ -2517,12 +2517,12 @@ void func_102(var uParam0, var uParam1, int iParam2)
 		if (!MAP::DOES_BLIP_EXIST(iParam2->f_1210))
 		{
 			iParam2->f_1210 = MAP::_BLIP_ADD_FOR_COORD(-282719360, uParam0->f_53);
-			MAP::_0x662D364ABF16DE2F(iParam2->f_1210, -1878373110);
+			MAP::_0x662D364ABF16DE2F(iParam2->f_1210, joaat("BLIP_MODIFIER_FORCE_GPS"));
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iParam2->f_1210, "IRON_WAYPOINT_NAME");
 		}
 		if (!MAP::DOES_BLIP_EXIST(iParam2->f_1211))
 		{
-			iParam2->f_1211 = MAP::_BLIP_ADD_FOR_AREA(1247852480, uParam0->f_53, 45f, 45f, 45f, 0);
+			iParam2->f_1211 = MAP::_BLIP_ADD_FOR_AREA(joaat("BLIP_STYLE_AREA"), uParam0->f_53, 45f, 45f, 45f, 0);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iParam2->f_1210, "IRON_AREA_NAME");
 		}
 	}

@@ -1209,7 +1209,7 @@ int func_49(var uParam0, int iParam1, var uParam2, bool bParam3)
 						case -1203660660:
 							if (vVar1.y == *uParam0)
 							{
-								if (vVar1.z == 2074623703)
+								if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_ACCEPT"))
 								{
 									if (bParam3)
 									{
@@ -1218,7 +1218,7 @@ int func_49(var uParam0, int iParam1, var uParam2, bool bParam3)
 									}
 									iVar0 = 0;
 								}
-								else if (vVar1.z == 1400745903)
+								else if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_BACK"))
 								{
 									if (bParam3)
 									{
@@ -1227,7 +1227,7 @@ int func_49(var uParam0, int iParam1, var uParam2, bool bParam3)
 									}
 									iVar0 = 1;
 								}
-								else if (vVar1.z == 444632721)
+								else if (vVar1.z == joaat("UI_STICKY_FEED_BUTTON_TYPE_OPTION"))
 								{
 									if (bParam3)
 									{
@@ -9469,16 +9469,16 @@ void func_373(int iParam0)
 
 	if (func_389(iParam0) == 62)
 	{
-		MAP::_0x563FCB6620523917(-1145496915, -1482012664);
-		MAP::_0x563FCB6620523917(-1043953850, -1482012664);
-		MAP::_0x563FCB6620523917(-1783502982, -1482012664);
+		MAP::_0x563FCB6620523917(-1145496915, joaat("BLIP_STYLE_WANTED_REGION"));
+		MAP::_0x563FCB6620523917(-1043953850, joaat("BLIP_STYLE_WANTED_REGION"));
+		MAP::_0x563FCB6620523917(-1783502982, joaat("BLIP_STYLE_WANTED_REGION"));
 	}
 	else
 	{
-		iVar0 = -1482012664;
+		iVar0 = joaat("BLIP_STYLE_WANTED_REGION");
 		if (((func_390(iParam0) == 4 || func_390(iParam0) == 12) || func_321(func_390(iParam0)) == 4) || (func_385(func_390(iParam0), 8) && ((func_390(iParam0) == 2 || func_390(iParam0) == 0) || func_390(iParam0) == 10)))
 		{
-			iVar0 = -1305340593;
+			iVar0 = joaat("BLIP_STYLE_REGION_LOCKDOWN");
 		}
 		MAP::_0x563FCB6620523917(iParam0, iVar0);
 	}
@@ -9492,7 +9492,7 @@ void func_374(int iParam0)
 		MAP::_0x6786D7AFAC3162B3(-1043953850);
 		MAP::_0x6786D7AFAC3162B3(-1783502982);
 	}
-	else if (MAP::_0xE38450DBCBC70E3D(iParam0, -1305340593) || MAP::_0xE38450DBCBC70E3D(iParam0, -1482012664))
+	else if (MAP::_0xE38450DBCBC70E3D(iParam0, joaat("BLIP_STYLE_REGION_LOCKDOWN")) || MAP::_0xE38450DBCBC70E3D(iParam0, joaat("BLIP_STYLE_WANTED_REGION")))
 	{
 		MAP::_0x6786D7AFAC3162B3(iParam0);
 	}
@@ -9536,7 +9536,7 @@ void func_378(int iParam0)
 	StringCopy(&cVar0, func_391(iParam0), 64);
 	StringConCat(&cVar0, "_OUTLINE", 64);
 	sVar8 = func_392(cVar0);
-	MAP::_0x563FCB6620523917(MISC::GET_HASH_KEY(sVar8), -1482012664);
+	MAP::_0x563FCB6620523917(MISC::GET_HASH_KEY(sVar8), joaat("BLIP_STYLE_WANTED_REGION"));
 }
 
 void func_379(int iParam0)
@@ -9549,7 +9549,7 @@ void func_379(int iParam0)
 	StringConCat(&cVar0, "_OUTLINE", 64);
 	sVar8 = func_392(cVar0);
 	iVar9 = MISC::GET_HASH_KEY(sVar8);
-	if (MAP::_0xE38450DBCBC70E3D(iVar9, -1305340593) || MAP::_0xE38450DBCBC70E3D(iVar9, -1482012664))
+	if (MAP::_0xE38450DBCBC70E3D(iVar9, joaat("BLIP_STYLE_REGION_LOCKDOWN")) || MAP::_0xE38450DBCBC70E3D(iVar9, joaat("BLIP_STYLE_WANTED_REGION")))
 	{
 		MAP::_0x6786D7AFAC3162B3(iVar9);
 	}

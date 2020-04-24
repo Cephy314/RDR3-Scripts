@@ -1547,7 +1547,7 @@ int func_39()
 		{
 			if (!MAP::DOES_BLIP_EXIST(&(uLocal_395[0])))
 			{
-				func_154(&(uLocal_392[0]), uLocal_395[0], joaat("BLIP_STYLE_ENEMY"), -948075745, 0, "RE_INTER_STRANGER");
+				func_154(&(uLocal_392[0]), uLocal_395[0], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_ENEMY_IMPORTANT"), 0, "RE_INTER_STRANGER");
 			}
 		}
 		else if (MAP::DOES_BLIP_EXIST(&(uLocal_395[0])))
@@ -1603,7 +1603,7 @@ int func_39()
 							func_32(&(uLocal_392[1]), Global_35, &(sLocal_31[iLocal_467]), "", 300f, 0, 0, 0, 2, 0, 0, 1744022339, 1, 0, 0);
 							if (!MAP::DOES_BLIP_EXIST(&(uLocal_395[1])) && func_68(&(uLocal_392[1]), 0, 0))
 							{
-								func_154(&(uLocal_392[1]), uLocal_395[1], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+								func_154(&(uLocal_392[1]), uLocal_395[1], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 							}
 							func_33(&uLocal_565);
 							iLocal_477++;
@@ -1641,7 +1641,7 @@ int func_39()
 						}
 						if (!MAP::DOES_BLIP_EXIST(&(uLocal_395[1])) && func_68(&(uLocal_392[1]), 0, 0))
 						{
-							func_154(&(uLocal_392[1]), uLocal_395[1], joaat("BLIP_STYLE_ENEMY"), 580546400, 0, "RE_INTER_STRANGER");
+							func_154(&(uLocal_392[1]), uLocal_395[1], joaat("BLIP_STYLE_ENEMY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 						}
 						if (iLocal_467 == 1 || iLocal_467 == 4)
 						{
@@ -1749,7 +1749,7 @@ int func_39()
 				PED::SET_RELATIONSHIP_BETWEEN_GROUPS(0, iLocal_596, PED::GET_PED_RELATIONSHIP_GROUP_HASH(Global_35));
 				if (!MAP::DOES_BLIP_EXIST(&(uLocal_395[1])) && func_68(&(uLocal_392[1]), 0, 0))
 				{
-					func_154(&(uLocal_392[1]), uLocal_395[1], -89429847, 580546400, 0, "RE_INTER_STRANGER");
+					func_154(&(uLocal_392[1]), uLocal_395[1], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_URGENT_ALERT"), 0, "RE_INTER_STRANGER");
 				}
 				if (PED::_0x3AA24CCC0D451379(&(uLocal_392[1])))
 				{
@@ -15542,8 +15542,8 @@ void func_419(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{

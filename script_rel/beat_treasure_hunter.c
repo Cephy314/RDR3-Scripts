@@ -2206,7 +2206,7 @@ int func_35()
 				ENTITY::SET_ENTITY_NO_COLLISION_ENTITY((Local_79[1 /*12*/])->f_8, &(uLocal_496[0]), false);
 				PHYSICS::ACTIVATE_PHYSICS((Local_79[1 /*12*/])->f_8);
 				ENTITY::APPLY_FORCE_TO_ENTITY((Local_79[1 /*12*/])->f_8, 1, 0f, 1f, 1f, 0f, 0f, 0f, 0, true, true, true, false, true);
-				iLocal_648 = func_173((Local_79[1 /*12*/])->f_8, -89429847, 1, 1);
+				iLocal_648 = func_173((Local_79[1 /*12*/])->f_8, joaat("BLIP_STYLE_FRIENDLY"), 1, 1);
 				MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_648, "RETH_TREASURE_MAP_NAME");
 				bLocal_628 = false;
 				bLocal_629 = false;
@@ -5233,7 +5233,7 @@ void func_139()
 		if (func_47(iLocal_507, 32))
 		{
 			func_50(uLocal_499[0]);
-			func_321(&(uLocal_496[0]), uLocal_499[0], -89429847, 1679075994, 0, "RE_INTER_STRANGER");
+			func_321(&(uLocal_496[0]), uLocal_499[0], joaat("BLIP_STYLE_FRIENDLY"), joaat("BLIP_MODIFIER_FRIENDLY"), 0, "RE_INTER_STRANGER");
 			iVar0 = func_48(66, 0);
 			iVar0++;
 			if (iVar0 > 3)
@@ -5459,7 +5459,7 @@ void func_140()
 			ENTITY::FREEZE_ENTITY_POSITION((Local_79[1 /*12*/])->f_8, false);
 			PHYSICS::ACTIVATE_PHYSICS((Local_79[1 /*12*/])->f_8);
 			ENTITY::APPLY_FORCE_TO_ENTITY((Local_79[1 /*12*/])->f_8, 1, 0f, 1f, 1f, 0f, 0f, 0f, 0, true, true, true, false, true);
-			iLocal_648 = func_173((Local_79[1 /*12*/])->f_8, -89429847, 1, 1);
+			iLocal_648 = func_173((Local_79[1 /*12*/])->f_8, joaat("BLIP_STYLE_FRIENDLY"), 1, 1);
 			MAP::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_648, "RETH_TREASURE_MAP_NAME");
 			bLocal_628 = false;
 			bLocal_629 = false;
@@ -6853,9 +6853,9 @@ int func_173(int iParam0, int iParam1, int iParam2, bool bParam3)
 	}
 	if (bParam3)
 	{
-		if ((iParam1 == 408396114 || iParam1 == 1259054292) || iParam1 == -308585968)
+		if ((iParam1 == joaat("BLIP_STYLE_OBJECTIVE") || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_BOX")) || iParam1 == joaat("BLIP_STYLE_OBJECTIVE_VOL_ROUND"))
 		{
-			MAP::_0x662D364ABF16DE2F(iVar0, 231194138);
+			MAP::_0x662D364ABF16DE2F(iVar0, joaat("BLIP_MODIFIER_COMPASS_OBJECTIVE"));
 		}
 	}
 	return iVar0;
@@ -17089,8 +17089,8 @@ void func_451(var uParam0, bool bParam1)
 {
 	if (!MAP::DOES_BLIP_EXIST(uParam0->f_6))
 	{
-		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(-1702907713, *uParam0);
-		MAP::_0x662D364ABF16DE2F(uParam0->f_6, 580546400);
+		uParam0->f_6 = MAP::_BLIP_ADD_FOR_COORD(joaat("BLIP_STYLE_DEBUG_PINK"), *uParam0);
+		MAP::_0x662D364ABF16DE2F(uParam0->f_6, joaat("BLIP_MODIFIER_URGENT_ALERT"));
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
