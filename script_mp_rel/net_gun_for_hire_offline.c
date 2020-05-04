@@ -52535,7 +52535,7 @@ int func_1165(int iParam0, int iParam1)
 				return 5942;
 			case joaat("W_REVOLVER_SCHOFIELD01_GRIP2"):
 				return 357;
-			case 715484092:
+			case joaat("BEAM"):
 				return 3187;
 			case joaat("P_OATCAKE01X"):
 				return 3599;

@@ -42249,7 +42249,7 @@ int func_1784(var uParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		uParam1->f_16 = func_1922(iVar0);
 	}
-	if (DATAFILE::_0xB2B42607F7867576(&uVar4, uParam0, 1802626656))
+	if (DATAFILE::_0xB2B42607F7867576(&uVar4, uParam0, joaat("ROUGHNESS")))
 	{
 		uParam1->f_15 = uVar4;
 	}

@@ -706,6 +706,7 @@ void __EntryFunction__()
 		func_20(5);
 	}
 	func_15();
+	UNK_0x550F05CFFBD63C8C();
 	func_14(-1, 0);
 	GRAPHICS::RESET_PAUSED_RENDERPHASES();
 	SCRIPTS::TERMINATE_THIS_THREAD();
@@ -51022,7 +51023,7 @@ int func_1462(var uParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 	{
 		uParam1->f_16 = func_1532(iVar0);
 	}
-	if (DATAFILE::_0xB2B42607F7867576(&uVar4, uParam0, 1802626656))
+	if (DATAFILE::_0xB2B42607F7867576(&uVar4, uParam0, joaat("ROUGHNESS")))
 	{
 		uParam1->f_15 = uVar4;
 	}
