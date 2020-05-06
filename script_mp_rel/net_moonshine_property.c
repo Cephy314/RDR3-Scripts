@@ -30823,7 +30823,7 @@ int func_1261(int iParam0)
 			iVar0 = joaat("P_FIDDLE01X");
 			break;
 		case 5:
-			iVar0 = -381992152;
+			iVar0 = joaat("MP006_P_GUITAR02X");
 			break;
 		case 2:
 			iVar0 = joaat("MP006_P_MNSHN_WASHBOARD01X");

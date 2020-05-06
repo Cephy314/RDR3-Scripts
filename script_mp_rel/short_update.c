@@ -14874,176 +14874,176 @@ int func_437(int iParam0)
 	switch (iParam0)
 	{
 		case joaat("DOCUMENT_NEWSPAPER_ED_01"):
-			return 1323994892;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_01");
 		case -246260565: /* GXTEntry: "Blackwater Ledger No. 63" */
-			return 1573399751;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_02");
 		case 340173459: /* GXTEntry: "Blackwater Ledger No. 64" */
-			return -2106624491;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_03");
 		case 109840158: /* GXTEntry: "Blackwater Ledger No. 65" */
-			return -1793811613;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_04");
 		case 903996873: /* GXTEntry: "Blackwater Ledger No. 66" */
-			return -1510851298;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_05");
 		case 706727493: /* GXTEntry: "Blackwater Ledger No. 67" */
-			return -1467596218;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_06");
 		case -1454682982: /* GXTEntry: "Blackwater Ledger No. 68" */
-			return -1184308213;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_07");
 		case 1538503020: /* GXTEntry: "Blackwater Ledger No. 69" */
-			return -870708883;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_08");
 		case 1318524723: /* GXTEntry: "Blackwater Ledger No. 70" */
-			return -251964625;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_09");
 		case 18296369: /* GXTEntry: "Blackwater Ledger No. 71" */
-			return 1207697423;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_10");
 		case -279147844: /* GXTEntry: "Blackwater Ledger No. 72" */
-			return 1499898596;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_11");
 		case -413074747: /* GXTEntry: "Blackwater Ledger No. 73" */
-			return 1822214480;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_12");
 		case -760557223: /* GXTEntry: "Blackwater Ledger No. 74" */
-			return 2134142591;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_13");
 		case -924992065: /* GXTEntry: "Blackwater Ledger No. 75" */
-			return -1862299111;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_14");
 		case 1767753378: /* GXTEntry: "New Hanover Gazette No. 27" */
-			return 389460201;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_01");
 		case -1556675047: /* GXTEntry: "New Hanover Gazette No. 28" */
-			return 1371776514;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_02");
 		case -2012820803: /* GXTEntry: "New Hanover Gazette No. 29" */
-			return 1001486814;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_03");
 		case -849973848: /* GXTEntry: "New Hanover Gazette No. 30" */
-			return 1882514148;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_04");
 		case 1012860904: /* GXTEntry: "New Hanover Gazette No. 31" */
-			return 1103889939;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_05");
 		case -1680391208: /* GXTEntry: "New Hanover Gazette No. 32" */
-			return -1802851441;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_06");
 		case -1253105631: /* GXTEntry: "New Hanover Gazette No. 33" */
-			return 1719193452;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_07");
 		case -915721704: /* GXTEntry: "New Hanover Gazette No. 34" */
-			return -1151534797;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_08");
 		case 202891657: /* GXTEntry: "New Hanover Gazette No. 35" */
-			return -1929044860;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_09");
 		case -1261034125: /* GXTEntry: "New Hanover Gazette No. 36" */
-			return 924313143;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_10");
 		case 1787203230: /* GXTEntry: "New Hanover Gazette No. 37" */
-			return 626082474;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_11");
 		case 1737771952: /* GXTEntry: "New Hanover Gazette No. 38" */
-			return -653022672;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_12");
 		case -1254096446: /* GXTEntry: "New Hanover Gazette No. 39" */
-			return -942045252;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_13");
 		case 61577350: /* GXTEntry: "New Hanover Gazette No. 40" */
-			return -38767767;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_14");
 		case 1566650197: /* GXTEntry: "Saint Denis Times No. 43" */
-			return -194659462;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_01");
 		case -572653278: /* GXTEntry: "Saint Denis Times No. 44" */
-			return -549220042;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_02");
 		case -532692958: /* GXTEntry: "Saint Denis Times No. 45" */
-			return 293303717;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_03");
 		case -1594812622: /* GXTEntry: "Saint Denis Times No. 46" */
-			return -1890586292;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_04");
 		case -358162791: /* GXTEntry: "Saint Denis Times No. 47" */
-			return -2122099277;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_05");
 		case 368626453: /* GXTEntry: "Saint Denis Times No. 48" */
-			return -1681356223;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_06");
 		case 543847666: /* GXTEntry: "Saint Denis Times No. 49" */
-			return -830115910;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_07");
 		case 888242611: /* GXTEntry: "Saint Denis Times No. 50" */
-			return 1211786018;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_08");
 		case 1712504077: /* GXTEntry: "Saint Denis Times No. 51" */
-			return 1124096174;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_09");
 		case -634222073: /* GXTEntry: "Saint Denis Times No. 52" */
-			return -911614461;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_10");
 		case 662019373: /* GXTEntry: "Saint Denis Times No. 53" */
-			return -662209602;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_11");
 		case 1032348365: /* GXTEntry: "Saint Denis Times No. 54" */
-			return 1799528770;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_12");
 		case -1449342224: /* GXTEntry: "Saint Denis Times No. 55" */
-			return 1560872143;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_13");
 		case 1786928078: /* GXTEntry: "Saint Denis Times No. 56" */
-			return -1764788133;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_14");
 	}
 	switch (iParam0)
 	{
 		case joaat("DOCUMENT_NEWSPAPER_ED_01"):
-			return 1323994892;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_01");
 		case -246260565: /* GXTEntry: "Blackwater Ledger No. 63" */
-			return 1573399751;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_02");
 		case 340173459: /* GXTEntry: "Blackwater Ledger No. 64" */
-			return -2106624491;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_03");
 		case 109840158: /* GXTEntry: "Blackwater Ledger No. 65" */
-			return -1793811613;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_04");
 		case 903996873: /* GXTEntry: "Blackwater Ledger No. 66" */
-			return -1510851298;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_05");
 		case 706727493: /* GXTEntry: "Blackwater Ledger No. 67" */
-			return -1467596218;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_06");
 		case -1454682982: /* GXTEntry: "Blackwater Ledger No. 68" */
-			return -1184308213;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_07");
 		case 1538503020: /* GXTEntry: "Blackwater Ledger No. 69" */
-			return -870708883;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_08");
 		case 1318524723: /* GXTEntry: "Blackwater Ledger No. 70" */
-			return -251964625;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_09");
 		case 18296369: /* GXTEntry: "Blackwater Ledger No. 71" */
-			return 1207697423;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_10");
 		case -279147844: /* GXTEntry: "Blackwater Ledger No. 72" */
-			return 1499898596;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_11");
 		case -413074747: /* GXTEntry: "Blackwater Ledger No. 73" */
-			return 1822214480;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_12");
 		case -760557223: /* GXTEntry: "Blackwater Ledger No. 74" */
-			return 2134142591;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_13");
 		case -924992065: /* GXTEntry: "Blackwater Ledger No. 75" */
-			return -1862299111;
+			return joaat("NEWSPAPERS/NEWSPAPER_BL_14");
 		case 1767753378: /* GXTEntry: "New Hanover Gazette No. 27" */
-			return 389460201;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_01");
 		case -1556675047: /* GXTEntry: "New Hanover Gazette No. 28" */
-			return 1371776514;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_02");
 		case -2012820803: /* GXTEntry: "New Hanover Gazette No. 29" */
-			return 1001486814;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_03");
 		case -849973848: /* GXTEntry: "New Hanover Gazette No. 30" */
-			return 1882514148;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_04");
 		case 1012860904: /* GXTEntry: "New Hanover Gazette No. 31" */
-			return 1103889939;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_05");
 		case -1680391208: /* GXTEntry: "New Hanover Gazette No. 32" */
-			return -1802851441;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_06");
 		case -1253105631: /* GXTEntry: "New Hanover Gazette No. 33" */
-			return 1719193452;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_07");
 		case -915721704: /* GXTEntry: "New Hanover Gazette No. 34" */
-			return -1151534797;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_08");
 		case 202891657: /* GXTEntry: "New Hanover Gazette No. 35" */
-			return -1929044860;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_09");
 		case -1261034125: /* GXTEntry: "New Hanover Gazette No. 36" */
-			return 924313143;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_10");
 		case 1787203230: /* GXTEntry: "New Hanover Gazette No. 37" */
-			return 626082474;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_11");
 		case 1737771952: /* GXTEntry: "New Hanover Gazette No. 38" */
-			return -653022672;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_12");
 		case -1254096446: /* GXTEntry: "New Hanover Gazette No. 39" */
-			return -942045252;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_13");
 		case 61577350: /* GXTEntry: "New Hanover Gazette No. 40" */
-			return -38767767;
+			return joaat("NEWSPAPERS/NEWSPAPER_NH_14");
 		case 1566650197: /* GXTEntry: "Saint Denis Times No. 43" */
-			return -194659462;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_01");
 		case -572653278: /* GXTEntry: "Saint Denis Times No. 44" */
-			return -549220042;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_02");
 		case -532692958: /* GXTEntry: "Saint Denis Times No. 45" */
-			return 293303717;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_03");
 		case -1594812622: /* GXTEntry: "Saint Denis Times No. 46" */
-			return -1890586292;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_04");
 		case -358162791: /* GXTEntry: "Saint Denis Times No. 47" */
-			return -2122099277;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_05");
 		case 368626453: /* GXTEntry: "Saint Denis Times No. 48" */
-			return -1681356223;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_06");
 		case 543847666: /* GXTEntry: "Saint Denis Times No. 49" */
-			return -830115910;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_07");
 		case 888242611: /* GXTEntry: "Saint Denis Times No. 50" */
-			return 1211786018;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_08");
 		case 1712504077: /* GXTEntry: "Saint Denis Times No. 51" */
-			return 1124096174;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_09");
 		case -634222073: /* GXTEntry: "Saint Denis Times No. 52" */
-			return -911614461;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_10");
 		case 662019373: /* GXTEntry: "Saint Denis Times No. 53" */
-			return -662209602;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_11");
 		case 1032348365: /* GXTEntry: "Saint Denis Times No. 54" */
-			return 1799528770;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_12");
 		case -1449342224: /* GXTEntry: "Saint Denis Times No. 55" */
-			return 1560872143;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_13");
 		case 1786928078: /* GXTEntry: "Saint Denis Times No. 56" */
-			return -1764788133;
+			return joaat("NEWSPAPERS/NEWSPAPER_SD_14");
 	}
 	return -1;
 }

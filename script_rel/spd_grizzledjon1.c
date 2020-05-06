@@ -8984,11 +8984,11 @@ int func_348(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return -533947923;
+			return joaat("SPGJ_AAAA");
 		case 1:
-			return -328617369;
+			return joaat("SPGJ_AAAB");
 		case 2:
-			return 647800524;
+			return joaat("SPGJ_AAAC");
 		case 3:
 			return joaat("SPGJ_ABAA");
 		case 4:
@@ -9040,15 +9040,15 @@ int func_348(int iParam0)
 		case 27:
 			return joaat("SPGJ_AEAJ");
 		case 28:
-			return 651646215;
+			return joaat("SPGJ_AFAA");
 		case 29:
-			return 2025781461;
+			return joaat("SPGJ_AFAB");
 		case 30:
-			return 177970320;
+			return joaat("SPGJ_AFAC");
 		case 31:
-			return -1258163882;
+			return joaat("SPGJ_AFAD");
 		case 32:
-			return 1186960595;
+			return joaat("SPGJ_AFAE");
 		case 33:
 			return joaat("SPGJ_AGAA");
 		case 34:
@@ -9146,17 +9146,17 @@ int func_348(int iParam0)
 		case 80:
 			return joaat("SPGJ_AXAI");
 		case 81:
-			return 1616833083;
+			return joaat("SPGJ_AYAA");
 		case 82:
-			return 1771863398;
+			return joaat("SPGJ_AYAB");
 		case 83:
-			return 937138661;
+			return joaat("SPGJ_AYAC");
 		case 84:
-			return 1152758681;
+			return joaat("SPGJ_AYAD");
 		case 85:
-			return -1829711858;
+			return joaat("SPGJ_AYAE");
 		case 86:
-			return -1567494320;
+			return joaat("SPGJ_AYAF");
 		case 87:
 			return joaat("SPGJ_AZAA");
 		case 88:
@@ -9184,23 +9184,23 @@ int func_348(int iParam0)
 		case 99:
 			return joaat("SPGJ_BAAJ");
 		case 100:
-			return 1759886076;
+			return joaat("SPGJ_BBAA");
 		case 101:
-			return -1280159592;
+			return joaat("SPGJ_BBAB");
 		case 102:
-			return -981470157;
+			return joaat("SPGJ_BBAC");
 		case 103:
-			return -15538344;
+			return joaat("SPGJ_BBAD");
 		case 104:
-			return -1883436882;
+			return joaat("SPGJ_BBAE");
 		case 105:
-			return -359186847;
+			return joaat("SPGJ_BBAF");
 		case 106:
-			return -315931767;
+			return joaat("SPGJ_BBAG");
 		case 107:
-			return 1158968150;
+			return joaat("SPGJ_BBAH");
 		case 108:
-			return -697362927;
+			return joaat("SPGJ_BBAI");
 		case 109:
 			return joaat("SPGJ_BCAA");
 		case 110:
@@ -9236,7 +9236,7 @@ int func_348(int iParam0)
 		case 125:
 			return joaat("SPGJ_ARAA");
 		case 126:
-			return -629575373;
+			return joaat("SPGJ_ASAA");
 		case 127:
 			return joaat("SPGJ_ATAA");
 		case 128:
@@ -9248,7 +9248,7 @@ int func_348(int iParam0)
 		case 131:
 			return joaat("SPGJ_BGAA");
 		case 132:
-			return -1961808188;
+			return joaat("SPGJ_BHAA");
 		default:
 			break;
 	}
