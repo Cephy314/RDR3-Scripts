@@ -2136,7 +2136,7 @@ int func_76(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -3424,7 +3424,7 @@ bool func_141(int iParam0)
 	return func_199(&(Global_1270530->f_11.f_561[iParam0]));
 }
 
-var func_142(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_142(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -3436,7 +3436,7 @@ var func_142(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -3452,7 +3452,7 @@ int func_143(int iParam0, int iParam1)
 	return 0;
 }
 
-void func_144(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, bool bParam6)
+void func_144(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
 {
 	int iVar0;
 	int iVar1;
@@ -3482,7 +3482,7 @@ void func_144(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4,
 		MAP::REMOVE_BLIP(&(Global_1270530->f_609.f_325));
 	}
 	Global_1270530->f_609.f_325 = iVar1;
-	Global_1270530->f_609.f_326 = func_142(iVar0, iParam2, iParam3, iParam4, iParam5, bParam6);
+	Global_1270530->f_609.f_326 = func_142(iVar0, iParam2, iParam3, iParam4, iParam5, iParam6);
 }
 
 float func_145()
@@ -3535,7 +3535,7 @@ int func_150()
 
 bool func_151(int iParam0, int iParam1)
 {
-	return (TASK::_0xA710DC5D25F8B942(iParam0, iParam1) != -1f || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0);
+	return (TASK::_0xA710DC5D25F8B942(iParam0, iParam1) != -1f || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0);
 }
 
 void func_152(var uParam0, int iParam1)

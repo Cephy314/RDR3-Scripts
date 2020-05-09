@@ -83,12 +83,12 @@ void __EntryFunction__()
 	{
 		func_4(&Var0);
 	}
-	if (!TASK::_0x841475AC96E794D1(ScriptParam_0.f_1))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(ScriptParam_0.f_1))
 	{
 		func_4(&Var0);
 	}
-	Var0 = { TASK::_0xA8452DD321607029(ScriptParam_0.f_1, 1) };
-	Var0.f_3 = TASK::_0xB93EA7184BAA85C3(ScriptParam_0.f_1, 1);
+	Var0 = { TASK::_GET_SCENARIO_POINT_COORDS(ScriptParam_0.f_1, true) };
+	Var0.f_3 = TASK::_GET_SCENARIO_POINT_HEADING(ScriptParam_0.f_1, true);
 	Var0.f_4 = TASK::_0x6718F40313A2B5A6(ScriptParam_0.f_1);
 	Global_26324[Var0.f_18] = &Global_26324[Var0.f_18] + 1;
 	if (func_2() == 0)
@@ -227,7 +227,7 @@ void __EntryFunction__()
 					if (func_28(Global_1275573->f_8) && (ENTITY::HAS_ANIM_EVENT_FIRED(Global_1275573->f_8, 174961811) || (Global_1186264->f_1 && func_29(Var0.f_18))))
 					{
 						vVar73 = { func_18(iVar77) };
-						if (TASK::_0x841475AC96E794D1(Global_1186264->f_2))
+						if (TASK::_DOES_SCENARIO_POINT_EXIST(Global_1186264->f_2))
 						{
 							_NAMESPACE49::_0x8245C1F3262F4AC2(Global_1186264->f_2);
 							func_30(&Var60);
@@ -299,7 +299,7 @@ void __EntryFunction__()
 					if (&Global_1186264)
 					{
 						Global_1186264 = 0;
-						if (TASK::_0x841475AC96E794D1(Global_1186264->f_2))
+						if (TASK::_DOES_SCENARIO_POINT_EXIST(Global_1186264->f_2))
 						{
 							_NAMESPACE49::_0x8245C1F3262F4AC2(Global_1186264->f_2);
 							func_30(&Var60);
@@ -417,7 +417,7 @@ void func_4(var uParam0)
 {
 	Global_26324[uParam0->f_18] = (&Global_26324[uParam0->f_18] - 1);
 	SCRIPTS::_0xE7282390542F570D(uParam0->f_5);
-	if (func_46(uParam0) == 1 && TASK::_0x841475AC96E794D1(uParam0->f_6))
+	if (func_46(uParam0) == 1 && TASK::_DOES_SCENARIO_POINT_EXIST(uParam0->f_6))
 	{
 		Global_1915128 = uParam0->f_6;
 	}
@@ -778,7 +778,7 @@ int func_23(int iParam0, int iParam1, int iParam2)
 	{
 		return 0;
 	}
-	if (func_29(iParam1) && TASK::_0x841475AC96E794D1(iParam2))
+	if (func_29(iParam1) && TASK::_DOES_SCENARIO_POINT_EXIST(iParam2))
 	{
 		if (_NAMESPACE49::_0xFB7CF1DE938A3E22(iParam2))
 		{
@@ -1206,7 +1206,7 @@ void func_38(int iParam0, int iParam1)
 
 int func_39(struct<25> Param0, var uParam25, var uParam26, var uParam27, var uParam28, var uParam29, var uParam30, var uParam31, var uParam32, var uParam33, var uParam34, var uParam35, var uParam36, var uParam37, var uParam38, var uParam39, var uParam40, var uParam41, var uParam42, var uParam43, var uParam44, var uParam45, var uParam46, var uParam47, var uParam48, var uParam49, var uParam50, var uParam51, var uParam52, var uParam53, var uParam54, var uParam55, var uParam56, var uParam57, var uParam58, var uParam59, vector3 vParam60, int iParam63)
 {
-	var uVar0;
+	int iVar0;
 
 	if (func_55(Param0, vParam60) > 26f)
 	{
@@ -1214,9 +1214,9 @@ int func_39(struct<25> Param0, var uParam25, var uParam26, var uParam27, var uPa
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(Global_1275573->f_8))
 	{
-		uVar0 = func_101(Param0.f_18);
-		TELEMETRY::_0xAE693EC3A178F6C2(uVar0);
-		COMPENDIUM::COMPENDIUM_HERB_PICKED(uVar0, vParam60);
+		iVar0 = func_101(Param0.f_18);
+		TELEMETRY::_0xAE693EC3A178F6C2(iVar0);
+		COMPENDIUM::COMPENDIUM_HERB_PICKED(iVar0, vParam60);
 	}
 	func_36(Param0.f_24);
 	if (!func_102(Param0.f_18))
@@ -3499,12 +3499,12 @@ void func_153(bool bParam0, int iParam1)
 	func_216(&Global_0, 1);
 }
 
-struct<2> func_154(int iParam0, var uParam1)
+struct<2> func_154(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
 	Var0 = iParam0;
-	Var0.f_1 = uParam1;
+	Var0.f_1 = iParam1;
 	return Var0;
 }
 
@@ -3768,13 +3768,13 @@ float func_166(float fParam0, int iParam1)
 	return fParam0;
 }
 
-int func_167(int iParam0, float fParam1, bool bParam2, int iParam3)
+int func_167(int iParam0, float fParam1, bool bParam2, bool bParam3)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
 		return 0;
 	}
-	return func_229(iParam0, fParam1, bParam2, iParam3);
+	return func_229(iParam0, fParam1, bParam2, bParam3);
 }
 
 void func_168(float fParam0, bool bParam1)
@@ -4826,7 +4826,7 @@ int func_228(int iParam0, float fParam1, bool bParam2, bool bParam3, bool bParam
 	return 1;
 }
 
-int func_229(int iParam0, float fParam1, bool bParam2, int iParam3)
+int func_229(int iParam0, float fParam1, bool bParam2, bool bParam3)
 {
 	char* sVar0;
 	int iVar1;
@@ -4859,7 +4859,7 @@ int func_229(int iParam0, float fParam1, bool bParam2, int iParam3)
 				}
 			}
 			func_161(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[0 /*2*/] = fParam1;
 			break;
 		case 1:
@@ -4873,7 +4873,7 @@ int func_229(int iParam0, float fParam1, bool bParam2, int iParam3)
 			}
 			func_265(joaat("STATUS_EFFECT__TRACKING"));
 			func_163(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[1 /*2*/] = fParam1;
 			break;
 		case 2:
@@ -4886,23 +4886,23 @@ int func_229(int iParam0, float fParam1, bool bParam2, int iParam3)
 				}
 			}
 			func_162(-1, 0);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[2 /*2*/] = fParam1;
 			break;
 		case 19:
 			func_265(joaat("STATUS_EFFECT__POISON"));
 			func_266(0, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[0 /*2*/])->f_1 = fParam1;
 			break;
 		case 18:
 			func_266(1, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[1 /*2*/])->f_1 = fParam1;
 			break;
 		case 20:
 			func_266(2, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[2 /*2*/])->f_1 = fParam1;
 			break;
 		default:
@@ -8176,7 +8176,7 @@ void func_327(int iParam0)
 			func_347();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0x66B1CB778D911F49(iVar0, 0f);
+			PED::_REMOVE_PED_WOUND_EFFECT(iVar0, 0f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 0, 0);
@@ -8420,7 +8420,7 @@ void func_334(int iParam0)
 			func_347();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0xFFD54D9FE71B966A(iVar0, 2, 14411, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
+			PED::_SET_PED_WOUND_EFFECT(iVar0, 2, 2.019411E-41f, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 1, 0);

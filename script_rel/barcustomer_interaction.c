@@ -139,12 +139,12 @@ void func_6()
 	bVar0 = func_12(iLocal_17, 0);
 	bVar1 = func_13(iLocal_28);
 	bVar2 = ENTITY::DOES_ENTITY_EXIST(iLocal_18);
-	if (!TASK::_0x841475AC96E794D1(iLocal_3))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 	{
 		iLocal_16 = 6;
 		return;
 	}
-	if (iLocal_16 <= 1 && func_14(Global_36, TASK::_0xA8452DD321607029(iLocal_3, 1)) >= 1600f)
+	if (iLocal_16 <= 1 && func_14(Global_36, TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true)) >= 1600f)
 	{
 		return;
 	}
@@ -230,8 +230,8 @@ void func_6()
 				STREAMING::REQUEST_MODEL(joaat("P_SHOTGLASS01X"), false);
 				STREAMING::REQUEST_MODEL(joaat("P_BOTTLEJD01X"), false);
 			}
-			fVar5 = TASK::_0xB93EA7184BAA85C3(iLocal_3, 1);
-			iLocal_29 = TASK::CREATE_SCENARIO_POINT(iVar4, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(iLocal_3, 1), fVar5, func_21()), (fVar5 - 180f), 0f, 0, 0);
+			fVar5 = TASK::_GET_SCENARIO_POINT_HEADING(iLocal_3, true);
+			iLocal_29 = TASK::CREATE_SCENARIO_POINT(iVar4, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true), fVar5, func_21()), (fVar5 - 180f), 0f, 0, 0);
 			TASK::_0xD3A0DA8F91612C6E(iLocal_29, (fVar5 - 180f), 1);
 			TASK::_0xA7479FB665361EDB(iLocal_29, 0);
 			TASK::_0xE69FDA40AAC3EFC0(iLocal_29, 0);
@@ -286,7 +286,7 @@ void func_6()
 					return;
 				}
 			}
-			if (!TASK::_0x841475AC96E794D1(iLocal_29))
+			if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_29))
 			{
 				return;
 			}
@@ -325,11 +325,11 @@ void func_6()
 void func_7()
 {
 	func_15();
-	if (TASK::_0x841475AC96E794D1(iLocal_3))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 	{
-		TASK::_0x4161648394262FDF(TASK::_0xA8452DD321607029(iLocal_3, 1), 0.15f);
+		TASK::_0x4161648394262FDF(TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true), 0.15f);
 	}
-	if (TASK::_0x841475AC96E794D1(iLocal_29))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_29))
 	{
 		TASK::_0x81948DFE4F5A0283(iLocal_29);
 	}
@@ -527,7 +527,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40))
 			{
-				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_40, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARCUSTOMER_BEER", "WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A", 1))
 			{
@@ -541,7 +541,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 			{
-				iLocal_41 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_41 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_41, "p_shotGlass01x_PH_L_Hand", "WORLD_HUMAN_BARCUSTOMER_WHISKEY", "WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A", 1))
 			{
@@ -567,7 +567,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40))
 			{
-				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_40, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARCUSTOMER_BEER", "WORLD_HUMAN_BARCUSTOMER_HAS_BEER_MALE_A", 1))
 			{
@@ -582,7 +582,7 @@ void func_17(bool bParam0)
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 			{
-				iLocal_41 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_41 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
 			}
 			if (PED::_0x3BBDD6143FF16F98(iLocal_17, iLocal_41, "p_shotGlass01x_PH_L_Hand", "WORLD_HUMAN_BARCUSTOMER_WHISKEY", "WORLD_HUMAN_BARCUSTOMER_HAS_WHISKEY_GLASS_MALE_A", 1))
 			{
@@ -615,7 +615,7 @@ int func_18()
 	switch (func_19())
 	{
 		case 76:
-			if (func_37(func_36(0), TASK::_0xA8452DD321607029(iLocal_3, 1)))
+			if (func_37(func_36(0), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true)))
 			{
 				return 0;
 			}
@@ -630,7 +630,7 @@ int func_18()
 		case 120:
 			return 0;
 		case 5:
-			if (func_37(func_36(2), TASK::_0xA8452DD321607029(iLocal_3, 1)))
+			if (func_37(func_36(2), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true)))
 			{
 				return 2;
 			}
@@ -1284,7 +1284,7 @@ int func_46(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -1310,15 +1310,15 @@ void func_48()
 		{
 			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40))
 			{
-				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEBEER01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+				iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEBEER01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
 				PED::_0x3BBDD6143FF16F98(iLocal_18, iLocal_40, "p_bottleBeer01x_PH_R_HAND", "WORLD_HUMAN_BARTENDER_BEER", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 				bLocal_26 = true;
 			}
 		}
 		else if (!ENTITY::DOES_ENTITY_EXIST(iLocal_40) && !ENTITY::DOES_ENTITY_EXIST(iLocal_41))
 		{
-			iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEJD01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
-			iLocal_41 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_0xA8452DD321607029(iLocal_29, 1), true, true, false, false, true);
+			iLocal_40 = OBJECT::CREATE_OBJECT(joaat("P_BOTTLEJD01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
+			iLocal_41 = OBJECT::CREATE_OBJECT(joaat("P_SHOTGLASS01X"), TASK::_GET_SCENARIO_POINT_COORDS(iLocal_29, true), true, true, false, false, true);
 			PED::_0x3BBDD6143FF16F98(iLocal_18, iLocal_40, "p_bottleJD01x_ph_r_hand", "WORLD_HUMAN_BARTENDER_WHISKEY", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 			PED::_0x3BBDD6143FF16F98(iLocal_18, iLocal_41, "p_shotGlass01x_PH_L_HAND", "WORLD_HUMAN_BARTENDER_WHISKEY", "WORLD_HUMAN_BARTENDER_BARFRONT_MALE_A", 1);
 			bLocal_26 = true;

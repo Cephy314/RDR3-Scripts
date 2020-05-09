@@ -93,7 +93,7 @@ void func_5()
 
 void func_6()
 {
-	if (!TASK::_0x841475AC96E794D1(iLocal_3))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 	{
 		bLocal_0 = false;
 	}

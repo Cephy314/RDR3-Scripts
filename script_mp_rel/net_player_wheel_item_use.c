@@ -209,7 +209,7 @@ int func_8(var uParam0)
 	}
 	else
 	{
-		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1275573->f_8, 655598529, 1);
+		iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1275573->f_8, 655598529, true);
 		if (!((iVar0 == 1 || iVar0 == 0) || iVar0 == 6))
 		{
 			return 1;

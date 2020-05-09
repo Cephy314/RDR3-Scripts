@@ -7240,7 +7240,7 @@ void func_254()
 		return;
 	}
 	iVar3 = func_144(0);
-	if (func_420(iVar0) || PED::_0xA911EE21EDF69DAF(iVar0))
+	if (func_420(iVar0) || PED::_IS_PED_CARRYING(iVar0))
 	{
 		iVar2 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(iVar0);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar2))
@@ -12014,7 +12014,7 @@ int func_462(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(iVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
-			iVar24 = WEAPON::_0xD3750CCC00635FC2(iVar0) * 3;
+			iVar24 = WEAPON::_GET_WEAPON_CLIP_SIZE(iVar0) * 3;
 			iParam9 = (iVar24 - iVar23);
 			if (iParam9 < 0)
 			{
@@ -15214,7 +15214,7 @@ int func_545(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -15228,13 +15228,13 @@ int func_546(int iParam0, int iParam1, bool bParam2)
 	{
 		return 0;
 	}
-	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1)
+	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1)
 	{
 		return 1;
 	}
 	else if (bParam2)
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 		{
 			return 1;
 		}
@@ -17510,9 +17510,9 @@ void func_644(int iParam0, int iParam1)
 	int iVar1;
 	int iVar2;
 
-	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_0xD3750CCC00635FC2(iParam0))
+	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0))
 	{
-		iVar2 = func_690(WEAPON::_0xD3750CCC00635FC2(iParam0), iParam1);
+		iVar2 = func_690(WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0), iParam1);
 		WEAPON::SET_AMMO_IN_CLIP(Global_34, iParam0, iVar2);
 		if (WEAPON::GET_MAX_AMMO(Global_34, &iVar1, iParam0) && WEAPON::GET_AMMO_IN_PED_WEAPON(Global_34, iParam0) > iVar1)
 		{

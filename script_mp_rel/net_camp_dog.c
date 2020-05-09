@@ -1239,7 +1239,7 @@ void func_42(var uParam0)
 		{
 			bVar0 = true;
 		}
-		if (!NETWORK::_0x6506BFA755FB209C())
+		if (!NETWORK::_UGC_HAS_PRIVILEGE())
 		{
 			bVar0 = true;
 		}
@@ -2238,12 +2238,12 @@ int func_90(int iParam0, int iParam1, var uParam2, var uParam3)
 	{
 		return 0;
 	}
-	if (!TASK::_0x841475AC96E794D1(iVar0))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar0))
 	{
 	}
 	*iParam1 = iVar0;
-	*uParam2 = { TASK::_0xA8452DD321607029(*iParam1, 1) };
-	*uParam3 = TASK::_0xB93EA7184BAA85C3(*iParam1, 1);
+	*uParam2 = { TASK::_GET_SCENARIO_POINT_COORDS(*iParam1, true) };
+	*uParam3 = TASK::_GET_SCENARIO_POINT_HEADING(*iParam1, true);
 	return 1;
 }
 
@@ -2315,7 +2315,7 @@ int func_96(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -2347,7 +2347,7 @@ int func_97(int iParam0, int iParam1, bool bParam2)
 	{
 		return 0;
 	}
-	if (!TASK::_0x841475AC96E794D1(iVar0))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar0))
 	{
 		return 0;
 	}
@@ -2910,7 +2910,7 @@ int func_118(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1)
 			{
 				return 1;
 			}
@@ -3490,8 +3490,8 @@ int func_143(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar3 = TASK::_0xF533D68FF970D190(vVar0, joaat("WORLD_ANIMAL_DOG_PLAYER_TENT_TG"), 5.5f, 0, 0);
-	if (TASK::_0x841475AC96E794D1(iVar3))
+	iVar3 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vVar0, joaat("WORLD_ANIMAL_DOG_PLAYER_TENT_TG"), 5.5f, 0, false);
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iVar3))
 	{
 		*iParam1 = iVar3;
 		return 1;

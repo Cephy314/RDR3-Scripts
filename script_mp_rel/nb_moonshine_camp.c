@@ -6777,8 +6777,8 @@ int func_304(int iParam0, int iParam1, bool bParam2)
 					PED::SET_PED_CONFIG_FLAG(iVar7, 178, false);
 					if (iVar9 != 0)
 					{
-						PED::_0x1902C4CFCC5BE57C(iVar7, iVar9);
-						PED::_0xCC8CA3E88256E58F(iVar7, func_303(iParam0, 1), true, true, true, false);
+						PED::_SET_PED_BODY_COMPONENT(iVar7, iVar9);
+						PED::_UPDATE_PED_VARIATION(iVar7, func_303(iParam0, 1), true, true, true, false);
 					}
 					else if (PED::_0x772A1969F649E902(iVar8))
 					{
@@ -8121,9 +8121,9 @@ void func_378()
 	{
 		return;
 	}
-	if (TASK::_0x841475AC96E794D1(&(Local_797.f_18.f_10[2])))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_797.f_18.f_10[2])))
 	{
-		TASK::_0xEEE4829304F93EEE(&(Local_797.f_18.f_10[2]), 0);
+		TASK::_SET_SCENARIO_POINT_ACTIVE(&(Local_797.f_18.f_10[2]), false);
 		iVar0 = func_323(0);
 		vVar1 = { 0f, -0.25f, 0f };
 		Local_797.f_18.f_10[3] = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(iVar0, joaat("RANSACK_ATTACHED_CHEST_MEDIUM_MP_SYNC_GOTO"), vVar1, 0f, 0f, 0f, 1);
@@ -8137,7 +8137,7 @@ void func_378()
 		func_271(134217728);
 		return;
 	}
-	Local_797.f_18.f_10[2] = TASK::_0xF533D68FF970D190(Local_16.f_7.f_18, joaat("RANSACK_ATTACHED_CHEST_MEDIUM"), 1f, 0, 0);
+	Local_797.f_18.f_10[2] = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(Local_16.f_7.f_18, joaat("RANSACK_ATTACHED_CHEST_MEDIUM"), 1f, 0, false);
 }
 
 void func_379(int iParam0, int iParam1)
@@ -8199,7 +8199,7 @@ void func_383()
 	{
 		return;
 	}
-	if (TASK::_0x841475AC96E794D1(&(Local_797.f_18.f_10[0])))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_797.f_18.f_10[0])))
 	{
 		return;
 	}
@@ -8227,7 +8227,7 @@ void func_384()
 	{
 		return;
 	}
-	if (TASK::_0x841475AC96E794D1(&(Local_797.f_18.f_10[1])))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_797.f_18.f_10[1])))
 	{
 		return;
 	}
@@ -8457,7 +8457,7 @@ int func_392(int iParam0, int iParam1, int iParam2, bool bParam3)
 	return 1;
 }
 
-var func_393(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_393(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -8469,7 +8469,7 @@ var func_393(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -9277,10 +9277,10 @@ void func_448(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -9569,7 +9569,7 @@ int func_464(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(iVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
-			iVar24 = WEAPON::_0xD3750CCC00635FC2(iVar0) * 3;
+			iVar24 = WEAPON::_GET_WEAPON_CLIP_SIZE(iVar0) * 3;
 			iParam9 = (iVar24 - iVar23);
 			if (iParam9 < 0)
 			{
@@ -9619,11 +9619,11 @@ int func_465(int iParam0, vector3 vParam1, int iParam4, int iParam5)
 	{
 		return 0;
 	}
-	if (!TASK::_0x841475AC96E794D1(iParam4) && iParam5 != 0)
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iParam4) && iParam5 != 0)
 	{
-		iParam4 = TASK::_0xF533D68FF970D190(vParam1, iParam5, 1f, 0, 0);
+		iParam4 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vParam1, iParam5, 1f, 0, false);
 	}
-	if (TASK::_0x841475AC96E794D1(iParam4))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iParam4))
 	{
 		if (TASK::_0xEA31F199A73801D3(iParam4))
 		{
@@ -13568,13 +13568,13 @@ int func_621(int iParam0, int iParam1, bool bParam2)
 	{
 		return 0;
 	}
-	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1)
+	if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1)
 	{
 		return 1;
 	}
 	else if (bParam2)
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+		if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 		{
 			return 1;
 		}
@@ -13893,9 +13893,9 @@ void func_640(int iParam0, int iParam1)
 	int iVar1;
 	int iVar2;
 
-	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_0xD3750CCC00635FC2(iParam0))
+	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0))
 	{
-		iVar2 = func_674(WEAPON::_0xD3750CCC00635FC2(iParam0), iParam1);
+		iVar2 = func_674(WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0), iParam1);
 		WEAPON::SET_AMMO_IN_CLIP(Global_34, iParam0, iVar2);
 		if (WEAPON::GET_MAX_AMMO(Global_34, &iVar1, iParam0) && WEAPON::GET_AMMO_IN_PED_WEAPON(Global_34, iParam0) > iVar1)
 		{
@@ -14518,7 +14518,7 @@ int func_660(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;

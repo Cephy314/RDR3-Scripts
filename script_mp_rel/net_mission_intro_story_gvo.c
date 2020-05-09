@@ -2887,7 +2887,7 @@ void func_129(var uParam0)
 	int iVar1;
 
 	bVar0 = false;
-	if (ENTITY::DOES_ENTITY_EXIST(Global_1275573->f_8) && PED::_0xA911EE21EDF69DAF(Global_1275573->f_8))
+	if (ENTITY::DOES_ENTITY_EXIST(Global_1275573->f_8) && PED::_IS_PED_CARRYING(Global_1275573->f_8))
 	{
 		bVar0 = true;
 	}
@@ -2896,7 +2896,7 @@ void func_129(var uParam0)
 		iVar1 = PLAYER::_0xF49F14462F0AE27C(Global_1275573->f_10);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_DEAD(iVar1))
 		{
-			if (PED::_0xA911EE21EDF69DAF(iVar1))
+			if (PED::_IS_PED_CARRYING(iVar1))
 			{
 				bVar0 = true;
 			}
@@ -3717,7 +3717,7 @@ int func_182()
 	bool bVar0;
 	int iVar1;
 
-	if (PED::_0xA911EE21EDF69DAF(Global_1275573->f_8))
+	if (PED::_IS_PED_CARRYING(Global_1275573->f_8))
 	{
 		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_1275573->f_8);
 		bVar0 = true;
@@ -5544,9 +5544,9 @@ int func_293(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	return 0;
 }
 
-int func_294(char* sParam0, int iParam1, int iParam2, bool bParam3)
+int func_294(char* sParam0, int iParam1, int iParam2, int iParam3)
 {
-	return func_335(sParam0, -1, iParam1, iParam2, 0, bParam3);
+	return func_335(sParam0, -1, iParam1, iParam2, 0, iParam3);
 }
 
 void func_295(int iParam0, int iParam1, bool bParam2)
@@ -6871,7 +6871,7 @@ bool func_334(int iParam0)
 	return _NAMESPACE71::_0x59FA676177DBE4C9(iParam0) == 4;
 }
 
-int func_335(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+int func_335(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -6883,7 +6883,7 @@ int func_335(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 
@@ -10019,7 +10019,7 @@ int func_492(int iParam0)
 	return 0;
 }
 
-var func_493(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_493(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -10031,7 +10031,7 @@ var func_493(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_0xB2920B9760F0F36B(&Var0, &Var13, bParam5);
+	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 

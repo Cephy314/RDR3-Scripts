@@ -15,7 +15,7 @@
 	int iLocal_13 = 0;
 	int iLocal_14 = 0;
 	int iLocal_15 = 0;
-	var uLocal_16 = 0;
+	int iLocal_16 = 0;
 	var uLocal_17 = 0;
 	vector3 vScriptParam_0 = { 0f, 0f, 0f };
 #endregion
@@ -24,7 +24,7 @@ void __EntryFunction__()
 {
 	iLocal_13 = 1;
 	iLocal_15 = vScriptParam_0.x;
-	uLocal_16 = vScriptParam_0.y;
+	iLocal_16 = vScriptParam_0.y;
 	uLocal_17 = vScriptParam_0.z;
 	func_1();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
@@ -162,7 +162,7 @@ void func_13(int iParam0)
 
 void func_14(int iParam0)
 {
-	if (TASK::_0x6718F40313A2B5A6(uLocal_16) == 0f)
+	if (TASK::_0x6718F40313A2B5A6(iLocal_16) == 0f)
 	{
 		return;
 	}

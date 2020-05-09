@@ -105,7 +105,7 @@ void func_6()
 		return;
 	}
 	iVar0 = TASK::_0xDF7993356F52359A(Local_5, 0);
-	if (!TASK::_0x841475AC96E794D1(iVar0))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar0))
 	{
 		return;
 	}
@@ -114,7 +114,7 @@ void func_6()
 	{
 		return;
 	}
-	iVar2 = TASK::_0x7467165EE97D3C68(iVar0);
+	iVar2 = TASK::_GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO(iVar0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar2))
 	{
 		return;

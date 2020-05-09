@@ -3372,7 +3372,7 @@ void func_125()
 					case 0:
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar1, true);
 						PED::SET_PED_CONFIG_FLAG(iVar1, 467, true);
-						PED::_0x7528720101A807A5(iVar1, 1);
+						PED::_SET_PED_CARCASS_QUALITY(iVar1, 1);
 						PED::_0xDACE03C65C6666DB(iVar1, 1);
 						PED::_0xCE6B874286D640BB(iVar1, 2);
 						PED::SET_PED_CONFIG_FLAG(iVar1, 297, true);
@@ -3380,9 +3380,9 @@ void func_125()
 						{
 							GRAPHICS::_0xDFCE8CE9F3EBE93F(iVar1);
 						}
-						PED::_0x1902C4CFCC5BE57C(iVar1, func_189());
-						PED::_0x1902C4CFCC5BE57C(iVar1, func_190());
-						PED::_0xCC8CA3E88256E58F(iVar1, false, true, true, true, false);
+						PED::_SET_PED_BODY_COMPONENT(iVar1, func_189());
+						PED::_SET_PED_BODY_COMPONENT(iVar1, func_190());
+						PED::_UPDATE_PED_VARIATION(iVar1, false, true, true, true, false);
 						break;
 				}
 			}
@@ -4454,7 +4454,7 @@ void func_203()
 		{
 			if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY((Local_110.f_18.f_4[0 /*2*/])->f_1))
 			{
-				if ((func_143() == 1 && !func_221(256)) && TASK::GET_SCRIPT_TASK_STATUS((Local_110.f_18.f_4[0 /*2*/])->f_1, 713668775, 1) != 1)
+				if ((func_143() == 1 && !func_221(256)) && TASK::GET_SCRIPT_TASK_STATUS((Local_110.f_18.f_4[0 /*2*/])->f_1, 713668775, true) != 1)
 				{
 					TASK::TASK_ANIMAL_WRITHE((Local_110.f_18.f_4[0 /*2*/])->f_1, 0, 0);
 					func_240(256);
@@ -4879,7 +4879,7 @@ void func_226(int iParam0)
 				if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar0))
 				{
 					PED::_0xA2F8B3B5FEDFC100(iVar0, func_190());
-					PED::_0xCC8CA3E88256E58F(iVar0, false, true, true, true, false);
+					PED::_UPDATE_PED_VARIATION(iVar0, false, true, true, true, false);
 				}
 			}
 			break;
@@ -5276,7 +5276,7 @@ int func_243(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -5498,7 +5498,7 @@ char* func_257()
 	return "";
 }
 
-var func_258(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_258(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -5510,7 +5510,7 @@ var func_258(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

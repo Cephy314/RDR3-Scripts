@@ -139,7 +139,7 @@ void __EntryFunction__()
 							}
 							else
 							{
-								HUD::_0x8BC7C1F929D07BF3(1833957607);
+								HUD::_DISPLAY_HUD_COMPONENT(1833957607);
 							}
 							func_19(iLocal_23, 8);
 							if (func_36(32))
@@ -759,7 +759,7 @@ int func_38(int iParam0)
 	{
 		if (!func_60(4))
 		{
-			if (TASK::_0x841475AC96E794D1(iLocal_16))
+			if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_16))
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(iLocal_18))
 				{
@@ -771,7 +771,7 @@ int func_38(int iParam0)
 				{
 					if (DECORATOR::DECOR_SET_INT(iLocal_18, "letter_item", -2019549022))
 					{
-						OBJECT::_0xE124889AE0521FCF(iLocal_18, joaat("UI_LETTER_CATFISH"), 0, 0);
+						OBJECT::_SET_APPLY_OBJECT_TXD(iLocal_18, joaat("UI_LETTER_CATFISH"), 0, 0);
 						func_61(4);
 					}
 				}
@@ -1931,7 +1931,7 @@ void func_85(int iParam0)
 	{
 		return;
 	}
-	if (TASK::_0x841475AC96E794D1(iLocal_16))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_16))
 	{
 		TXD::_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("UI_LETTER_CATFISH"));
 		TASK::_0x81948DFE4F5A0283(iLocal_16);
@@ -3863,7 +3863,7 @@ var func_151(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_0xD05590C1AB38F068(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 

@@ -1890,7 +1890,7 @@ int func_31(var uParam0)
 						ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(uParam0->f_3.f_1, (uParam0->f_372[0 /*8*/])->f_1, &(uParam0->f_372[0 /*8*/]));
 						PED::_0x3BBDD6143FF16F98(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_372[0 /*8*/]), "p_broom02x_PH_R_HAND", "WORLD_HUMAN_BROOM_PUTDOWN", 0, 1);
 						vVar0 = { func_73(uParam0) };
-						if (TASK::DOES_SCENARIO_EXIST_IN_AREA(vVar0, 0.5f, true, 0, false) && !TASK::_0xEA31F199A73801D3(TASK::_0xF533D68FF970D190(vVar0, joaat("WORLD_HUMAN_BROOM_PUTDOWN"), 0.5f, 0, 0)))
+						if (TASK::DOES_SCENARIO_EXIST_IN_AREA(vVar0, 0.5f, true, 0, false) && !TASK::_0xEA31F199A73801D3(TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vVar0, joaat("WORLD_HUMAN_BROOM_PUTDOWN"), 0.5f, 0, false)))
 						{
 							TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(&(uParam0->f_20[0 /*14*/]), vVar0, 0.5f, 1000, false, false, false, false);
 						}
@@ -3415,7 +3415,7 @@ void func_92(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -4368,8 +4368,8 @@ void func_130(int iParam0, int iParam1)
 			}
 			else
 			{
-				PED::_0x1902C4CFCC5BE57C(iParam0, iParam1);
-				PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+				PED::_SET_PED_BODY_COMPONENT(iParam0, iParam1);
+				PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 			}
 			PED::_0xE3144B932DFDFF65(iParam0, 0f, -1, 1, 1);
 			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(iParam0, 10, "ALL");
@@ -4389,10 +4389,10 @@ void func_131(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -4405,10 +4405,10 @@ void func_132(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -4416,11 +4416,11 @@ void func_133(int iParam0, int iParam1)
 {
 	if (iParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 1f);
 	}
 }
 

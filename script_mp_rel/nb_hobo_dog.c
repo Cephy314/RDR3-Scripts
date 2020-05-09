@@ -4620,7 +4620,7 @@ int func_199(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -4801,8 +4801,8 @@ void func_212(int iParam0)
 
 	iVar0 = func_264(iParam0);
 	iVar1 = func_198(iParam0);
-	PED::_0x1902C4CFCC5BE57C(iVar1, iVar0);
-	PED::_0xCC8CA3E88256E58F(iVar1, false, true, true, true, false);
+	PED::_SET_PED_BODY_COMPONENT(iVar1, iVar0);
+	PED::_UPDATE_PED_VARIATION(iVar1, false, true, true, true, false);
 }
 
 void func_213(int iParam0, bool bParam1, bool bParam2)
@@ -4962,7 +4962,7 @@ int func_214(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(iVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
-			iVar24 = WEAPON::_0xD3750CCC00635FC2(iVar0) * 3;
+			iVar24 = WEAPON::_GET_WEAPON_CLIP_SIZE(iVar0) * 3;
 			iParam9 = (iVar24 - iVar23);
 			if (iParam9 < 0)
 			{
@@ -7693,11 +7693,11 @@ int func_272(int iParam0, vector3 vParam1, int iParam4, int iParam5)
 	{
 		return 0;
 	}
-	if (!TASK::_0x841475AC96E794D1(iParam4) && iParam5 != 0)
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iParam4) && iParam5 != 0)
 	{
-		iParam4 = TASK::_0xF533D68FF970D190(vParam1, iParam5, 1f, 0, 0);
+		iParam4 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vParam1, iParam5, 1f, 0, false);
 	}
-	if (TASK::_0x841475AC96E794D1(iParam4))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iParam4))
 	{
 		if (TASK::_0xEA31F199A73801D3(iParam4))
 		{
@@ -8249,7 +8249,7 @@ void func_283(int iParam0, int iParam1, bool bParam2)
 	{
 		if (fVar0 <= 150f)
 		{
-			fVar1 = ENTITY::_0x627520389E288A73(iParam0, func_209(0), func_298(0));
+			fVar1 = ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(iParam0, func_209(0), func_298(0));
 			if ((((fVar1 >= 0.214f && fVar1 <= 0.263f) || (fVar1 >= 0.669f && fVar1 <= 0.707f)) || (fVar1 >= 0.77f && fVar1 <= 0.8f)) || (fVar1 >= 0.917f && fVar1 <= 0.952f))
 			{
 				if (!func_284(1024, 255))
@@ -8563,7 +8563,7 @@ void func_300(int iParam0)
 			switch (Local_13.f_7.f_14)
 			{
 				case 3:
-					if (ENTITY::_0x627520389E288A73(func_198(0), "script_re@savage_aftermath@weeping_dog", "getup_right_dog") > 0.61f)
+					if (ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(func_198(0), "script_re@savage_aftermath@weeping_dog", "getup_right_dog") > 0.61f)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&((Local_132.f_18.f_2[0 /*4*/])->f_2));
 						TASK::TASK_FORCE_MOTION_STATE(0, joaat("MOTIONSTATE_WALK"), false);
@@ -8574,7 +8574,7 @@ void func_300(int iParam0)
 					}
 					break;
 				case 4:
-					if (ENTITY::_0x627520389E288A73(func_198(0), "script_re@savage_aftermath@weeping_dog", "getup_right_quick_dog") > 0.58f)
+					if (ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(func_198(0), "script_re@savage_aftermath@weeping_dog", "getup_right_quick_dog") > 0.58f)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&((Local_132.f_18.f_2[0 /*4*/])->f_2));
 						TASK::TASK_FORCE_MOTION_STATE(0, joaat("MOTIONSTATE_RUN"), false);
@@ -9296,9 +9296,9 @@ void func_335(int iParam0, int iParam1)
 	int iVar1;
 	int iVar2;
 
-	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_0xD3750CCC00635FC2(iParam0))
+	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0))
 	{
-		iVar2 = func_423(WEAPON::_0xD3750CCC00635FC2(iParam0), iParam1);
+		iVar2 = func_423(WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0), iParam1);
 		WEAPON::SET_AMMO_IN_CLIP(Global_34, iParam0, iVar2);
 		if (WEAPON::GET_MAX_AMMO(Global_34, &iVar1, iParam0) && WEAPON::GET_AMMO_IN_PED_WEAPON(Global_34, iParam0) > iVar1)
 		{

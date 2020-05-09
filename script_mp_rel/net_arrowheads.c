@@ -73,7 +73,7 @@ void __EntryFunction__()
 			func_5(&Local_18);
 		}
 	}
-	if (!TASK::_0x841475AC96E794D1(Local_18.f_9))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(Local_18.f_9))
 	{
 		func_5(&Local_18);
 	}
@@ -127,7 +127,7 @@ void func_1(var uParam0, vector3 vParam1)
 	uParam0->f_5 = func_16(uParam0->f_22);
 	uParam0->f_10 = vParam1.x;
 	uParam0->f_9 = vParam1.y;
-	uParam0->f_6 = { TASK::_0xA8452DD321607029(uParam0->f_9, 1) };
+	uParam0->f_6 = { TASK::_GET_SCENARIO_POINT_COORDS(uParam0->f_9, true) };
 	func_17(&(uParam0->f_27), uParam0->f_6);
 	func_18(*uParam0, uParam0->f_1);
 }
@@ -380,7 +380,7 @@ int func_8(var uParam0)
 			}
 			break;
 		case 7:
-			if (((func_56(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 0, 1, 0) == joaat("WEAPON_UNARMED") && func_56(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 1, 1, 0) == joaat("WEAPON_UNARMED")) && !PED::IS_PED_ON_MOUNT(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()))) && !PED::_0xA911EE21EDF69DAF(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID())))
+			if (((func_56(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 0, 1, 0) == joaat("WEAPON_UNARMED") && func_56(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 1, 1, 0) == joaat("WEAPON_UNARMED")) && !PED::IS_PED_ON_MOUNT(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()))) && !PED::_IS_PED_CARRYING(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID())))
 			{
 				func_20(uParam0);
 				ANIMSCENE::SET_ANIM_SCENE_ORIGIN(uParam0->f_11, uParam0->f_6, 0f, 0f, func_57(ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), true, false), uParam0->f_6, 1), 2);
@@ -634,10 +634,10 @@ int func_12(struct<2> Param0, var uParam2, var uParam3)
 	bool bVar3;
 
 	iVar2 = Param0.f_1;
-	if (TASK::_0x841475AC96E794D1(iVar2))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iVar2))
 	{
 		iVar1 = BUILTIN::ROUND(TASK::_0x6718F40313A2B5A6(iVar2));
-		iVar0 = BUILTIN::ROUND(TASK::_0xB93EA7184BAA85C3(iVar2, 1));
+		iVar0 = BUILTIN::ROUND(TASK::_GET_SCENARIO_POINT_HEADING(iVar2, true));
 		bVar3 = iVar0 == 99;
 		if (func_9(uParam3, 4))
 		{
@@ -1755,12 +1755,12 @@ void func_39(int iParam0)
 	{
 		if (func_47(iParam0, 0))
 		{
-			if (PED::_0xA911EE21EDF69DAF(Global_1275573->f_8))
+			if (PED::_IS_PED_CARRYING(Global_1275573->f_8))
 			{
 				func_48(iParam0, 0, 1, 1);
 			}
 		}
-		else if (!PED::_0xA911EE21EDF69DAF(Global_1275573->f_8))
+		else if (!PED::_IS_PED_CARRYING(Global_1275573->f_8))
 		{
 			func_48(iParam0, 1, 1, 1);
 		}

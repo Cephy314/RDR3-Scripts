@@ -21428,13 +21428,13 @@ void func_731(int iParam0)
 	{
 		if (iVar6 != 0)
 		{
-			PED::_0x1902C4CFCC5BE57C(iVar0, iVar6);
+			PED::_SET_PED_BODY_COMPONENT(iVar0, iVar6);
 		}
 		else
 		{
 			PED::_SET_PED_OUTFIT_PRESET(iVar0, iVar7, 0);
 		}
-		PED::_0xCC8CA3E88256E58F(iVar0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iVar0, false, true, true, true, false);
 	}
 	if (func_989(iParam0, &uVar8))
 	{
@@ -23853,7 +23853,7 @@ int func_854(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(iVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
-			iVar24 = WEAPON::_0xD3750CCC00635FC2(iVar0) * 3;
+			iVar24 = WEAPON::_GET_WEAPON_CLIP_SIZE(iVar0) * 3;
 			iParam9 = (iVar24 - iVar23);
 			if (iParam9 < 0)
 			{
@@ -24472,7 +24472,7 @@ int func_886(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -24501,7 +24501,7 @@ void func_887(int iParam0, int iParam1, bool bParam2, int iParam3, int iParam4)
 	{
 		return;
 	}
-	iVar2 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, 716706914, 0);
+	iVar2 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, 716706914, false);
 	if (iVar2 == 1 || iVar2 == 0)
 	{
 		return;
@@ -26962,7 +26962,7 @@ var func_971(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = uParam0;
-	uVar15 = _NAMESPACE71::_0xCEDBF17EFCC0E4A4(&Var0, &Var13, iParam5);
+	uVar15 = _NAMESPACE71::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -27165,7 +27165,7 @@ int func_989(int iParam0, var uParam1)
 void func_990(int iParam0)
 {
 	func_1167(iParam0);
-	PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+	PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 }
 
 int func_991(int iParam0, int iParam1)
@@ -28735,7 +28735,7 @@ int func_1062(var uParam0, int iParam1, bool bParam2)
 		return 2;
 	}
 	iVar2 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0);
-	iVar3 = TASK::GET_SCRIPT_TASK_STATUS(iVar2, iParam1, 1);
+	iVar3 = TASK::GET_SCRIPT_TASK_STATUS(iVar2, iParam1, true);
 	if (iVar3 == 1 || iVar3 == 0)
 	{
 		return 3;
@@ -29560,7 +29560,7 @@ void func_1099(int iParam0, int iParam1, vector3 vParam2)
 	{
 		iVar5 = 1;
 		TASK::_0x345EC3B7EBDE1CB5(vParam2, 1f, &uVar3, iVar5);
-		if (!TASK::_0x841475AC96E794D1(&(uVar3[0])) || TASK::_0xA92450B5AE687AAF(&(uVar3[0])) != iVar1)
+		if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(uVar3[0])) || TASK::_0xA92450B5AE687AAF(&(uVar3[0])) != iVar1)
 		{
 			return;
 		}
@@ -29568,8 +29568,8 @@ void func_1099(int iParam0, int iParam1, vector3 vParam2)
 	}
 	else
 	{
-		iVar2 = TASK::_0xF533D68FF970D190(vParam2, iVar1, 1f, 0, 0);
-		if (!TASK::_0x841475AC96E794D1(iVar2))
+		iVar2 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vParam2, iVar1, 1f, 0, false);
+		if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar2))
 		{
 			return;
 		}
@@ -29648,7 +29648,7 @@ void func_1101(int iParam0, int iParam1, vector3 vParam2, int iParam5)
 		}
 		else
 		{
-			fVar8 = BUILTIN::VDIST(TASK::_0xA8452DD321607029(iVar4, 1), vParam2);
+			fVar8 = BUILTIN::VDIST(TASK::_GET_SCENARIO_POINT_COORDS(iVar4, true), vParam2);
 			if (fVar8 > fVar9)
 			{
 			}
@@ -29661,7 +29661,7 @@ void func_1101(int iParam0, int iParam1, vector3 vParam2, int iParam5)
 		iVar6++;
 	}
 	ITEMSET::DESTROY_ITEMSET(iVar3);
-	if (!TASK::_0x841475AC96E794D1(iVar5))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar5))
 	{
 		return;
 	}
@@ -30061,7 +30061,7 @@ void func_1127(int iParam0)
 	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
-var func_1128(char* sParam0, var uParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_1128(char* sParam0, var uParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -30073,7 +30073,7 @@ var func_1128(char* sParam0, var uParam1, int iParam2, int iParam3, int iParam4,
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -30958,7 +30958,7 @@ void func_1167(int iParam0)
 			func_1256(iParam0, joaat("HORSE_EQUIPMENT_HORSE_SADDLEBAG_USED_002"));
 			break;
 	}
-	PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, true);
+	PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, true);
 }
 
 int func_1168(int iParam0, int iParam1)
@@ -32047,9 +32047,9 @@ void func_1212(int iParam0, int iParam1)
 	int iVar1;
 	int iVar2;
 
-	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_0xD3750CCC00635FC2(iParam0))
+	if ((WEAPON::GET_AMMO_IN_CLIP(Global_34, &iVar0, iParam0) && iVar0 < iParam1) && iVar0 < WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0))
 	{
-		iVar2 = func_374(WEAPON::_0xD3750CCC00635FC2(iParam0), iParam1);
+		iVar2 = func_374(WEAPON::_GET_WEAPON_CLIP_SIZE(iParam0), iParam1);
 		WEAPON::SET_AMMO_IN_CLIP(Global_34, iParam0, iVar2);
 		if (WEAPON::GET_MAX_AMMO(Global_34, &iVar1, iParam0) && WEAPON::GET_AMMO_IN_PED_WEAPON(Global_34, iParam0) > iVar1)
 		{
@@ -32379,7 +32379,7 @@ void func_1230(int iParam0, int iParam1)
 		return;
 	}
 	iVar0 = NETWORK::NET_TO_PED(&(Local_17.f_2[iParam0 /*9*/]));
-	iVar1 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, 716706914, 0);
+	iVar1 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, 716706914, false);
 	if (iVar1 == 1 || iVar1 == 0)
 	{
 		return;
@@ -32868,11 +32868,11 @@ void func_1257(int iParam0, int iParam1)
 {
 	if (iParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 1f);
 	}
 }
 

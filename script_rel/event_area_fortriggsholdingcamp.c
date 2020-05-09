@@ -2495,7 +2495,7 @@ int func_79(int iParam0)
 			{
 				func_101(iParam0, 3);
 			}
-			else if (!TASK::_0x841475AC96E794D1(&(iLocal_1174[iParam0])))
+			else if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(iLocal_1174[iParam0])))
 			{
 				iLocal_1174[iParam0] = TASK::CREATE_SCENARIO_POINT(func_102(iParam0), func_103(iParam0), func_104(iParam0), 0f, 0, 0);
 			}
@@ -2532,7 +2532,7 @@ int func_79(int iParam0)
 						}
 						if (func_67(iParam0) != 0)
 						{
-							OBJECT::_0xE124889AE0521FCF(&(iLocal_1178[iParam0]), func_67(iParam0), 0, 0);
+							OBJECT::_SET_APPLY_OBJECT_TXD(&(iLocal_1178[iParam0]), func_67(iParam0), 0, 0);
 						}
 						func_101(iParam0, 2);
 					}
@@ -4659,11 +4659,11 @@ void func_172(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
+		HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
+		HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 

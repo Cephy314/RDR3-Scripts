@@ -2736,7 +2736,7 @@ void func_61()
 	iVar5 = 0;
 	while (iVar5 < 8)
 	{
-		if (TASK::_0x841475AC96E794D1((Local_204.f_18.f_130[iVar5 /*3*/])->f_2))
+		if (TASK::_DOES_SCENARIO_POINT_EXIST((Local_204.f_18.f_130[iVar5 /*3*/])->f_2))
 		{
 			TASK::_0x81948DFE4F5A0283((Local_204.f_18.f_130[iVar5 /*3*/])->f_2);
 		}
@@ -4632,7 +4632,7 @@ int func_190(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -5502,13 +5502,13 @@ void func_220()
 		{
 			if (Local_204.f_4 == 0)
 			{
-				PED::_0x1902C4CFCC5BE57C(iVar0, 67362891);
+				PED::_SET_PED_BODY_COMPONENT(iVar0, 67362891);
 			}
 			else
 			{
-				PED::_0x1902C4CFCC5BE57C(iVar0, -1704391393);
+				PED::_SET_PED_BODY_COMPONENT(iVar0, -1704391393);
 			}
-			PED::_0xCC8CA3E88256E58F(iVar0, true, true, true, true, true);
+			PED::_UPDATE_PED_VARIATION(iVar0, true, true, true, true, true);
 			func_295(16384);
 		}
 		func_301(0, 0);
@@ -7303,7 +7303,7 @@ int func_284(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -7997,7 +7997,7 @@ void func_324(int iParam0, bool bParam1)
 {
 	if (bParam1)
 	{
-		if (!TASK::_0x841475AC96E794D1((Local_204.f_18.f_130[iParam0 /*3*/])->f_2) && !&Local_204.f_18.f_130[iParam0 /*3*/])
+		if (!TASK::_DOES_SCENARIO_POINT_EXIST((Local_204.f_18.f_130[iParam0 /*3*/])->f_2) && !&Local_204.f_18.f_130[iParam0 /*3*/])
 		{
 			(Local_204.f_18.f_130[iParam0 /*3*/])->f_2 = TASK::CREATE_SCENARIO_POINT(joaat("WB_DIG_BURIED_JEWELRY"), func_420(iParam0), 0, 0, 0, 0);
 			TASK::_0xC47D9080A9A8856A((Local_204.f_18.f_130[iParam0 /*3*/])->f_2, 0f);
@@ -8007,7 +8007,7 @@ void func_324(int iParam0, bool bParam1)
 			}
 		}
 	}
-	else if (TASK::_0x841475AC96E794D1((Local_204.f_18.f_130[iParam0 /*3*/])->f_2))
+	else if (TASK::_DOES_SCENARIO_POINT_EXIST((Local_204.f_18.f_130[iParam0 /*3*/])->f_2))
 	{
 		TASK::_0x81948DFE4F5A0283((Local_204.f_18.f_130[iParam0 /*3*/])->f_2);
 	}
@@ -10169,7 +10169,7 @@ var func_419(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0xCEDBF17EFCC0E4A4(&Var0, &Var13, iParam5);
+	uVar15 = _NAMESPACE71::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

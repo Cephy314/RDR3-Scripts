@@ -1129,13 +1129,13 @@ int func_46(var uParam0)
 
 int func_47(var uParam0)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 
-	bVar0 = PED::GET_PED_AS_GROUP_LEADER(uParam0->f_18);
-	if (!ENTITY::IS_ENTITY_DEAD(bVar0))
+	iVar0 = PED::GET_PED_AS_GROUP_LEADER(uParam0->f_18);
+	if (!ENTITY::IS_ENTITY_DEAD(iVar0))
 	{
-		iVar1 = TASK::GET_SCRIPT_TASK_STATUS(bVar0, -1665583462, 1);
+		iVar1 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, -1665583462, true);
 		if (iVar1 == 0 || iVar1 == 1)
 		{
 			return 1;
@@ -1146,13 +1146,13 @@ int func_47(var uParam0)
 
 int func_48(var uParam0)
 {
-	bool bVar0;
+	int iVar0;
 	int iVar1;
 
-	bVar0 = PED::GET_PED_AS_GROUP_LEADER(uParam0->f_18);
-	if (!ENTITY::IS_ENTITY_DEAD(bVar0))
+	iVar0 = PED::GET_PED_AS_GROUP_LEADER(uParam0->f_18);
+	if (!ENTITY::IS_ENTITY_DEAD(iVar0))
 	{
-		iVar1 = TASK::GET_SCRIPT_TASK_STATUS(bVar0, -2015108952, 1);
+		iVar1 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, -2015108952, true);
 		if (iVar1 == 0 || iVar1 == 1)
 		{
 			return 1;
@@ -1169,7 +1169,7 @@ void func_49(var uParam0)
 	bVar0 = PED::GET_PED_AS_GROUP_LEADER(uParam0->f_18);
 	if (!ENTITY::IS_ENTITY_DEAD(bVar0))
 	{
-		iVar1 = TASK::GET_SCRIPT_TASK_STATUS(bVar0, -2015108952, 1);
+		iVar1 = TASK::GET_SCRIPT_TASK_STATUS(bVar0, -2015108952, true);
 		if (iVar1 != 7 && iVar1 != 8)
 		{
 			TASK::CLEAR_PED_TASKS(bVar0, 1, 0);
@@ -1180,7 +1180,7 @@ void func_49(var uParam0)
 int func_50(var uParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	int iVar2;
 	int iVar3;
 
@@ -1188,10 +1188,10 @@ int func_50(var uParam0)
 	iVar2 = 0;
 	while (iVar2 < iVar0)
 	{
-		bVar1 = func_37(uParam0->f_3, iVar2);
-		if (!ENTITY::IS_ENTITY_DEAD(bVar1))
+		iVar1 = func_37(uParam0->f_3, iVar2);
+		if (!ENTITY::IS_ENTITY_DEAD(iVar1))
 		{
-			iVar3 = TASK::GET_SCRIPT_TASK_STATUS(bVar1, 923520851, 1);
+			iVar3 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, 923520851, true);
 			if (iVar3 == 0 || iVar3 == 1)
 			{
 				return 1;
@@ -1216,7 +1216,7 @@ void func_51(var uParam0)
 		bVar1 = func_37(uParam0->f_3, iVar2);
 		if (!ENTITY::IS_ENTITY_DEAD(bVar1))
 		{
-			iVar3 = TASK::GET_SCRIPT_TASK_STATUS(bVar1, 923520851, 1);
+			iVar3 = TASK::GET_SCRIPT_TASK_STATUS(bVar1, 923520851, true);
 			if (iVar3 != 7 && iVar3 != 8)
 			{
 				TASK::CLEAR_PED_TASKS(bVar1, 1, 0);
@@ -1952,7 +1952,7 @@ void func_83(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -2345,8 +2345,8 @@ void func_97(bool bParam0, int iParam1)
 			}
 			else
 			{
-				PED::_0x1902C4CFCC5BE57C(bParam0, iParam1);
-				PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+				PED::_SET_PED_BODY_COMPONENT(bParam0, iParam1);
+				PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 			}
 			PED::_0xE3144B932DFDFF65(bParam0, 0f, -1, 1, 1);
 			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(bParam0, 10, "ALL");
@@ -2366,10 +2366,10 @@ void func_98(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -2382,10 +2382,10 @@ void func_99(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -2393,11 +2393,11 @@ void func_100(bool bParam0, int iParam1)
 {
 	if (iParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(bParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(bParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(bParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(bParam0, 41611, 1f);
 	}
 }
 

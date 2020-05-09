@@ -1113,7 +1113,7 @@ void func_49(var uParam0)
 			uParam0->f_614 = 2;
 			break;
 		case 2:
-			iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1225638->f_8, 501393341, 0);
+			iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1225638->f_8, 501393341, false);
 			if (iVar0 == 1)
 			{
 				return;
@@ -1134,7 +1134,7 @@ void func_49(var uParam0)
 			uParam0->f_614 = 4;
 			break;
 		case 4:
-			iVar0 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_613, 2106541073, 0);
+			iVar0 = TASK::GET_SCRIPT_TASK_STATUS(uParam0->f_613, 2106541073, false);
 			if (iVar0 != 8)
 			{
 				return;
@@ -1450,7 +1450,7 @@ var func_67(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = uParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, iParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

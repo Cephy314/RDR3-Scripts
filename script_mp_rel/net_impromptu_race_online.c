@@ -1395,7 +1395,7 @@ void func_34(int iParam0, bool bParam1)
 		if (GRAPHICS::ANIMPOSTFX_IS_RUNNING(func_149()))
 		{
 			GRAPHICS::_0xC5CB91D65852ED7E(func_149());
-			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
+			HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			GRAPHICS::_0x981C7D863980FA51();
 		}
 	}
@@ -2700,7 +2700,7 @@ char* func_117()
 	return "IRON_SPECTATE_HELP";
 }
 
-int func_118(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+int func_118(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -2712,7 +2712,7 @@ int func_118(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, bo
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = uParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -4764,7 +4764,7 @@ int func_221(int iParam0, char* sParam1, bool bParam2, bool bParam3, vector3 vPa
 		if ((bParam3 && !func_181(vParam4)) && fParam7 > 0f)
 		{
 			GRAPHICS::ANIMPOSTFX_PLAY(func_149());
-			HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
+			HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_MP_OUT_OF_AREA_BOUNDS"));
 			fParam7 = func_300(fParam7, 0f, 1000f);
 			if (iParam8 == 0 || !VOLUME::_DOES_VOLUME_EXIST(iParam8))
 			{
@@ -4945,7 +4945,7 @@ var func_227(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0xCEDBF17EFCC0E4A4(&Var0, &Var13, iParam5);
+	uVar15 = _NAMESPACE71::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -6028,7 +6028,7 @@ void func_289(int iParam0, int iParam1)
 	func_209(&(iParam0->f_1242), iParam1);
 }
 
-var func_290(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_290(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -6040,7 +6040,7 @@ var func_290(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_0xB2920B9760F0F36B(&Var0, &Var13, bParam5);
+	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 

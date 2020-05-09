@@ -93,7 +93,7 @@ int func_2()
 			{
 				return 0;
 			}
-			if (!TASK::_0x841475AC96E794D1(iLocal_19))
+			if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_19))
 			{
 				iLocal_19 = TASK::CREATE_SCENARIO_POINT(iLocal_2, vLocal_11, fLocal_17, 0f, 0, 0);
 				TASK::_0x5AF19B6CC2115D34(iLocal_19, 23, 1);
@@ -166,7 +166,7 @@ int func_2()
 			func_6(5);
 			break;
 		case 5:
-			if (TASK::_0x841475AC96E794D1(iLocal_19))
+			if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_19))
 			{
 				if (PED::_0x9C54041BB66BCF9E(Global_35, iLocal_19))
 				{
@@ -359,17 +359,17 @@ int func_12(int iParam0, int iParam1, char* sParam2, var uParam3, float fParam4,
 	return 0;
 }
 
-int func_13(bool bParam0, int iParam1)
+int func_13(int iParam0, int iParam1)
 {
-	if (ENTITY::DOES_ENTITY_EXIST(bParam0))
+	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
-		if (!PED::IS_PED_INJURED(bParam0))
+		if (!PED::IS_PED_INJURED(iParam0))
 		{
-			if (iParam1 == 2104565373 && TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(bParam0))
+			if (iParam1 == 2104565373 && TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(iParam0))
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}

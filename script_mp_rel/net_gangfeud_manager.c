@@ -802,7 +802,7 @@ bool func_37(int iParam0)
 	return func_68(1, iParam0);
 }
 
-var func_38(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_38(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -814,7 +814,7 @@ var func_38(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, b
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

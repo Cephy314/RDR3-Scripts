@@ -109,7 +109,7 @@ void func_6()
 	switch (iLocal_5)
 	{
 		case 0:
-			if (!TASK::_0x841475AC96E794D1(iLocal_3))
+			if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 			{
 				iLocal_5 = 7;
 				return;
@@ -124,7 +124,7 @@ void func_6()
 			if (!bLocal_79)
 			{
 				TASK::_0xE7BBC4E56B989449(iLocal_3, &uLocal_80, 1);
-				if (!TASK::_0x841475AC96E794D1(&(uLocal_80[0])))
+				if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(uLocal_80[0])))
 				{
 					iLocal_5 = 7;
 					return;
@@ -149,7 +149,7 @@ void func_6()
 				iLocal_5 = 7;
 				return;
 			}
-			if (!TASK::_0x841475AC96E794D1(iLocal_3))
+			if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 			{
 				iLocal_5 = 7;
 				return;
@@ -184,17 +184,17 @@ void func_6()
 				}
 				else
 				{
-					if (!TASK::_0x841475AC96E794D1(&(Local_6[iVar1 /*13*/])))
+					if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_6[iVar1 /*13*/])))
 					{
 						if (iVar1 > 0)
 						{
-							(Local_6[iVar1 /*13*/])->f_7 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(&(Local_6[(iVar1 - 1) /*13*/]), 1), TASK::_0xB93EA7184BAA85C3(&(Local_6[(iVar1 - 1) /*13*/]), 1), (Local_6[iVar1 /*13*/])->f_4) };
-							(Local_6[iVar1 /*13*/])->f_11 = (TASK::_0xB93EA7184BAA85C3(&(Local_6[(iVar1 - 1) /*13*/]), 1) + (Local_6[iVar1 /*13*/])->f_10);
+							(Local_6[iVar1 /*13*/])->f_7 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_GET_SCENARIO_POINT_COORDS(&(Local_6[(iVar1 - 1) /*13*/]), true), TASK::_GET_SCENARIO_POINT_HEADING(&(Local_6[(iVar1 - 1) /*13*/]), true), (Local_6[iVar1 /*13*/])->f_4) };
+							(Local_6[iVar1 /*13*/])->f_11 = (TASK::_GET_SCENARIO_POINT_HEADING(&(Local_6[(iVar1 - 1) /*13*/]), true) + (Local_6[iVar1 /*13*/])->f_10);
 						}
 						else
 						{
-							(Local_6[iVar1 /*13*/])->f_7 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_0xA8452DD321607029(iLocal_3, 1), TASK::_0xB93EA7184BAA85C3(iLocal_3, 1), (Local_6[iVar1 /*13*/])->f_4) };
-							(Local_6[iVar1 /*13*/])->f_11 = (TASK::_0xB93EA7184BAA85C3(iLocal_3, 1) + (Local_6[iVar1 /*13*/])->f_10);
+							(Local_6[iVar1 /*13*/])->f_7 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true), TASK::_GET_SCENARIO_POINT_HEADING(iLocal_3, true), (Local_6[iVar1 /*13*/])->f_4) };
+							(Local_6[iVar1 /*13*/])->f_11 = (TASK::_GET_SCENARIO_POINT_HEADING(iLocal_3, true) + (Local_6[iVar1 /*13*/])->f_10);
 						}
 						Local_6[iVar1 /*13*/] = TASK::CREATE_SCENARIO_POINT((Local_6[iVar1 /*13*/])->f_1, (Local_6[iVar1 /*13*/])->f_7, (Local_6[iVar1 /*13*/])->f_11, 0f, 0, 0);
 						TASK::_0xE69FDA40AAC3EFC0(&(Local_6[iVar1 /*13*/]), 0);
@@ -496,7 +496,7 @@ int func_15()
 	{
 		return 1;
 	}
-	if (!TASK::_0x841475AC96E794D1(iLocal_3))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 	{
 		return 1;
 	}
@@ -567,7 +567,7 @@ int func_20(bool bParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}

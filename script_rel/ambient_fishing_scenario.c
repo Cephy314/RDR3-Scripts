@@ -99,7 +99,7 @@ void func_6()
 	switch (iLocal_26)
 	{
 		case 0:
-			if (TASK::_0x841475AC96E794D1(iLocal_3))
+			if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 			{
 				iLocal_23 = TASK::_0x5BA659955369B0E2(iLocal_3);
 				if (!ENTITY::IS_ENTITY_DEAD(iLocal_23) && TASK::IS_PED_ACTIVE_IN_SCENARIO(iLocal_23, 1))

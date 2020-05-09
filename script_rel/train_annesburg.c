@@ -1,14 +1,14 @@
 #region Local Var
 	int iLocal_0 = 0;
 	int iLocal_1 = 0;
-	bool bLocal_2 = false;
+	int iLocal_2 = 0;
 	bool bLocal_3 = false;
 	bool bLocal_4 = false;
 	vector3 vLocal_5 = { 0f, 0f, 0f };
 	vector3 vLocal_8 = { 0f, 0f, 0f };
 	bool bLocal_11 = false;
 	int iLocal_12 = 0;
-	bool bScriptParam_0 = false;
+	int iScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()
@@ -16,7 +16,7 @@ void __EntryFunction__()
 	vLocal_5 = { 2941.792f, 1377.969f, 43.1f };
 	vLocal_8 = { 2314.011f, -1512.919f, 44.9053f };
 	iLocal_12 = -1;
-	bLocal_2 = bScriptParam_0;
+	iLocal_2 = iScriptParam_0;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(523))
 	{
 		func_1();
@@ -75,7 +75,7 @@ int func_2()
 				func_7(iVar0, 16384);
 				iVar0++;
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(bLocal_2))
+			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_2))
 			{
 				iLocal_0 = 6;
 				return 0;
@@ -96,12 +96,12 @@ int func_2()
 				return 0;
 			}
 			iLocal_12 = AUDIO::GET_SOUND_ID();
-			func_9(bLocal_2, 0, iLocal_12);
+			func_9(iLocal_2, 0, iLocal_12);
 			iLocal_1 = 2;
 			iLocal_0 = 1;
 			break;
 		case 1:
-			func_9(bLocal_2, 0, iLocal_12);
+			func_9(iLocal_2, 0, iLocal_12);
 			if (func_10(bLocal_3, Global_35, 1) < 2500f)
 			{
 				if (VEHICLE::_0x86AFC343CF7F0B34(joaat("TRAINS_INTERSECTION1_ANN"), 2940.988f, 1374.5f, 43.1838f, &iVar1))
@@ -119,7 +119,7 @@ int func_2()
 			}
 			break;
 		case 2:
-			func_9(bLocal_2, 0, iLocal_12);
+			func_9(iLocal_2, 0, iLocal_12);
 			if (!ENTITY::DOES_ENTITY_EXIST(bLocal_4))
 			{
 				VEHICLE::_0xCFE122EC635CC2B2(bLocal_3, "ACKNOWLEDGE", 1, 0);
@@ -138,7 +138,7 @@ int func_2()
 			}
 			break;
 		case 3:
-			fVar2 = func_9(bLocal_2, 1, iLocal_12);
+			fVar2 = func_9(iLocal_2, 1, iLocal_12);
 			if (fVar2 >= 0.999f)
 			{
 				VEHICLE::_0x15206E88FF7617DF(((*Global_1425371)[7 /*373*/])->f_1, 0.5f);
@@ -268,35 +268,35 @@ bool func_8(int iParam0, int iParam1)
 	return (Global_40.f_11029[iParam0 /*5*/] && iParam1) != 0;
 }
 
-float func_9(bool bParam0, bool bParam1, int iParam2)
+float func_9(int iParam0, bool bParam1, int iParam2)
 {
 	float fVar0;
 	vector3 vVar1;
 
-	fVar0 = ENTITY::_0x627520389E288A73(bParam0, "props_misc@annesburg_coal", "annchute01_full");
+	fVar0 = ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(iParam0, "props_misc@annesburg_coal", "annchute01_full");
 	if (bParam1)
 	{
-		vVar1 = { ENTITY::GET_ENTITY_COORDS(bParam0, true, false) };
-		ENTITY::_0xEAA885BA3CEA4E4A(bParam0, "props_misc@annesburg_coal", "annchute01_full", 1.5f);
+		vVar1 = { ENTITY::GET_ENTITY_COORDS(iParam0, true, false) };
+		ENTITY::_SET_ENTITY_ANIM_SPEED(iParam0, "props_misc@annesburg_coal", "annchute01_full", 1.5f);
 		if (fVar0 >= 0.125f && fVar0 < 0.21f)
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
+			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
 			func_23(iParam2, vVar1);
 		}
 		else if (fVar0 >= 0.485f && fVar0 < 0.52f)
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 1f);
+			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 1f);
 			func_23(iParam2, vVar1);
 		}
 		else if (fVar0 >= 0.64f && fVar0 < 0.73f)
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
+			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 1f);
 			func_23(iParam2, vVar1);
 		}
 		else
 		{
-			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
-			GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
+			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
+			GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
 			func_24(iParam2);
 		}
 	}
@@ -304,11 +304,11 @@ float func_9(bool bParam0, bool bParam1, int iParam2)
 	{
 		if (fVar0 != 0f)
 		{
-			ENTITY::_0x11CDABDC7783B2BC(bParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
-			ENTITY::_0xEAA885BA3CEA4E4A(bParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
+			ENTITY::_SET_ENTITY_ANIM_CURRENT_TIME(iParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
+			ENTITY::_SET_ENTITY_ANIM_SPEED(iParam0, "props_misc@annesburg_coal", "annchute01_full", 0f);
 		}
-		GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
-		GRAPHICS::_0x4FB67D172C4476F3(bParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
+		GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE", "EMIT", 0f);
+		GRAPHICS::_0x4FB67D172C4476F3(iParam0, "AMB_ANN_COAL_CHUTE_DIVE", "EMIT", 0f);
 		func_24(iParam2);
 		fVar0 = 0f;
 	}

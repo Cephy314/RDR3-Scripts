@@ -68,7 +68,7 @@ void __EntryFunction__()
 						{
 							GRAPHICS::ANIMPOSTFX_STOP_ALL();
 						}
-						HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MISSION_CONTROLLER"));
+						HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_MISSION_CONTROLLER"));
 						func_8(0);
 						func_9(1);
 					}

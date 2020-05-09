@@ -221,7 +221,7 @@ int func_6()
 	}
 	if (func_2(512))
 	{
-		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
+		HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_MISSION_CONTROLLER"));
 		return 1;
 	}
 	return 0;
@@ -232,7 +232,7 @@ bool func_7()
 	if (func_2(2) && !MISC::IS_BIT_SET(iLocal_46, 1))
 	{
 		MISC::SET_BIT(&iLocal_46, 1);
-		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
+		HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_MP_MATCHMAKING_TRANSITION"));
 	}
 	return MISC::IS_BIT_SET(iLocal_46, 1);
 }
@@ -350,7 +350,7 @@ void func_13()
 				{
 					GRAPHICS::ANIMPOSTFX_STOP_ALL();
 				}
-				HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_MISSION_CONTROLLER"));
+				HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_MISSION_CONTROLLER"));
 				if (func_2(268435456))
 				{
 					if (!func_2(262144))
@@ -452,7 +452,7 @@ void func_13()
 			GRAPHICS::TOGGLE_PAUSED_RENDERPHASES(true);
 			if (!func_41())
 			{
-				HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_MISSION_CONTROLLER"));
+				HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_MISSION_CONTROLLER"));
 			}
 			func_45(6);
 			break;

@@ -1347,7 +1347,7 @@ int func_51(var uParam0)
 		}
 		if (!func_15(854))
 		{
-			if (PED::_0xA911EE21EDF69DAF(PLAYER::PLAYER_PED_ID()))
+			if (PED::_IS_PED_CARRYING(PLAYER::PLAYER_PED_ID()))
 			{
 				iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(PLAYER::PLAYER_PED_ID());
 				if (ENTITY::DOES_ENTITY_EXIST(iVar0))
@@ -2117,7 +2117,7 @@ int func_78(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -3563,7 +3563,7 @@ bool func_154(int iParam0)
 	return func_216(&(Global_1270530->f_11.f_561[iParam0]));
 }
 
-var func_155(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_155(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -3575,7 +3575,7 @@ var func_155(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -6658,7 +6658,7 @@ int func_230(int iParam0)
 		return 0;
 	}
 	iVar0 = iParam0;
-	iVar1 = PED::_0x88EFFED5FE8B0B4A(iVar0);
+	iVar1 = PED::_GET_PED_CARCASS_QUALITY(iVar0);
 	iVar2 = func_273(iVar0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{

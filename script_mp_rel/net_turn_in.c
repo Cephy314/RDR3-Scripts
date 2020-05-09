@@ -1356,7 +1356,7 @@ void func_39(var uParam0, var uParam1)
 			{
 				func_138(uParam0, uParam1, iVar0, 2);
 			}
-			else if (!TASK::_0x841475AC96E794D1(func_143(uParam0, iVar0)))
+			else if (!TASK::_DOES_SCENARIO_POINT_EXIST(func_143(uParam0, iVar0)))
 			{
 				func_138(uParam0, uParam1, iVar0, 3);
 			}
@@ -2926,8 +2926,8 @@ int func_141(var uParam0, var uParam1, int iParam2)
 	EVENT::_0xBB1E41DD3D3C6250(iVar6, "MpMissionGiver", 0);
 	if (func_234(Var0.f_5, joaat("USE_DEFAULT_LOADOUT")))
 	{
-		PED::_0x1902C4CFCC5BE57C(iVar6, Var0);
-		PED::_0xCC8CA3E88256E58F(iVar6, false, true, true, true, false);
+		PED::_SET_PED_BODY_COMPONENT(iVar6, Var0);
+		PED::_UPDATE_PED_VARIATION(iVar6, false, true, true, true, false);
 	}
 	if (!func_234(Var0.f_5, joaat("USE_DEFAULT_LOADOUT")))
 	{
@@ -2974,7 +2974,7 @@ int func_142(var uParam0, var uParam1, int iParam2)
 	int iVar31;
 	bool bVar32;
 
-	if (TASK::_0x841475AC96E794D1(func_143(uParam0, iParam2)))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(func_143(uParam0, iParam2)))
 	{
 		return 1;
 	}
@@ -3010,7 +3010,7 @@ int func_142(var uParam0, var uParam1, int iParam2)
 		default:
 			return 0;
 	}
-	if (!TASK::_0x841475AC96E794D1(iVar30))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar30))
 	{
 		return 0;
 	}
@@ -3074,7 +3074,7 @@ void func_149(var uParam0, var uParam1, int iParam2)
 	int iVar1;
 
 	iVar0 = func_57(uParam0, iParam2);
-	iVar1 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, -76381094, 1);
+	iVar1 = TASK::GET_SCRIPT_TASK_STATUS(iVar0, -76381094, true);
 	if (iVar1 == 1 || iVar1 == 0)
 	{
 		return;
@@ -4374,7 +4374,7 @@ int func_242(var uParam0, var uParam1, int iParam2)
 	return 1;
 }
 
-int func_243(int iParam0, vector3 vParam1, float fParam4)
+int func_243(var uParam0, vector3 vParam1, float fParam4)
 {
 	var uVar0[5];
 	int iVar6;
@@ -4386,11 +4386,11 @@ int func_243(int iParam0, vector3 vParam1, float fParam4)
 	{
 		return 0;
 	}
-	iVar8 = iParam0;
+	iVar8 = uParam0;
 	iVar6 = 0;
 	while (iVar6 <= (iVar7 - 1))
 	{
-		if (!TASK::_0x841475AC96E794D1(&(uVar0[iVar6])))
+		if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(uVar0[iVar6])))
 		{
 		}
 		else if (TASK::_0xA92450B5AE687AAF(&(uVar0[iVar6])) != iVar8)
@@ -5490,7 +5490,7 @@ void func_345(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -6001,10 +6001,10 @@ void func_387(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -6017,10 +6017,10 @@ void func_388(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -6028,11 +6028,11 @@ void func_389(int iParam0, bool bParam1)
 {
 	if (bParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 1f);
 	}
 }
 

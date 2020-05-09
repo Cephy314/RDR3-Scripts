@@ -1448,7 +1448,7 @@ void func_52(int iParam0)
 	func_151(iParam0, 0);
 }
 
-int func_53(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+int func_53(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -1460,7 +1460,7 @@ int func_53(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, b
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 
@@ -8450,7 +8450,7 @@ int func_148(int iParam0, int iParam1)
 			case 2473:
 				return 183712523;
 			case 2474:
-				return -1699673416;
+				return joaat("MP001_MP_LOBBY_CHARMILO_EXT");
 			case 2475:
 				return joaat("MP001_MP_WINLOSE_DESERT");
 			case 2476:
@@ -10074,11 +10074,11 @@ void func_180()
 {
 	int iVar0;
 
-	if (!PED::_0xA911EE21EDF69DAF(Global_1275573->f_8) && !func_307(Global_1275573->f_8, -208384378))
+	if (!PED::_IS_PED_CARRYING(Global_1275573->f_8) && !func_307(Global_1275573->f_8, -208384378))
 	{
 		func_201(14);
 	}
-	else if (PED::_0xA911EE21EDF69DAF(Global_34) && !func_307(Global_34, -208384378))
+	else if (PED::_IS_PED_CARRYING(Global_34) && !func_307(Global_34, -208384378))
 	{
 		iVar0 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_1275573->f_8);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0))
@@ -10132,7 +10132,7 @@ void func_183()
 		func_254(4);
 		func_201(23);
 	}
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1275573->f_8, 501393341, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(Global_1275573->f_8, 501393341, true);
 	if (iVar0 == 0 || iVar0 == 1)
 	{
 		return;
@@ -13126,7 +13126,7 @@ var func_266(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam2;
 	Var13.f_5 = iParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_0x26E87218390E6729(&Var0, &Var13, iParam9, iParam10);
+	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
 	return uVar21;
 }
 
@@ -13711,7 +13711,7 @@ int func_307(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -18713,7 +18713,7 @@ var func_575(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = uParam16;
-	uVar21 = _NAMESPACE71::_0x26E87218390E6729(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -18744,7 +18744,7 @@ var func_576(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var13.f_7 = uParam5;
 	Var13.f_8 = uParam6;
 	Var13.f_9 = uParam19;
-	uVar23 = _NAMESPACE71::_0xC927890AA64E9661(&Var0, &Var13, iParam16, iParam17);
+	uVar23 = _NAMESPACE71::_SHOW_NOTIFICATION(&Var0, &Var13, iParam16, iParam17);
 	return uVar23;
 }
 
@@ -18770,7 +18770,7 @@ var func_577(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_0x26E87218390E6729(&Var0, &Var13, iParam12, iParam13);
+	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
 	return uVar21;
 }
 
@@ -18799,7 +18799,7 @@ var func_578(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var13.f_7 = uParam5;
 	Var13.f_8 = uParam6;
 	Var13.f_9 = 1;
-	uVar23 = _NAMESPACE71::_0xC927890AA64E9661(&Var0, &Var13, iParam15, iParam16);
+	uVar23 = _NAMESPACE71::_SHOW_NOTIFICATION(&Var0, &Var13, iParam15, iParam16);
 	return uVar23;
 }
 
@@ -18826,7 +18826,7 @@ var func_579(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam4
 	Var13.f_5 = uParam3;
 	Var13.f_6 = uParam4;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_0x26E87218390E6729(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 

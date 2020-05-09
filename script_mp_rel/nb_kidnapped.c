@@ -4759,7 +4759,7 @@ int func_191(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -5171,8 +5171,8 @@ void func_205()
 					}
 					if (iVar1 != 0)
 					{
-						PED::_0x1902C4CFCC5BE57C(iVar2, iVar1);
-						PED::_0xCC8CA3E88256E58F(iVar2, false, true, true, true, false);
+						PED::_SET_PED_BODY_COMPONENT(iVar2, iVar1);
+						PED::_UPDATE_PED_VARIATION(iVar2, false, true, true, true, false);
 					}
 				}
 			}
@@ -5193,8 +5193,8 @@ void func_205()
 				{
 					PED::_APPLY_PED_METAPED_OUTFIT((Local_809.f_18.f_14[iVar4 /*3*/])->f_2, iVar6, false, false);
 				}
-				PED::_0x1902C4CFCC5BE57C(iVar6, iVar5);
-				PED::_0xCC8CA3E88256E58F(iVar6, false, true, true, true, true);
+				PED::_SET_PED_BODY_COMPONENT(iVar6, iVar5);
+				PED::_UPDATE_PED_VARIATION(iVar6, false, true, true, true, true);
 			}
 		}
 		iVar7++;
@@ -8020,7 +8020,7 @@ void func_307()
 	if (iVar1 == 0)
 	{
 		iVar2 = func_399(0);
-		if (!TASK::_0x841475AC96E794D1(iVar2))
+		if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar2))
 		{
 			return;
 		}
@@ -8096,7 +8096,7 @@ void func_308()
 			{
 				return;
 			}
-			TASK::_0xF0B4F759F35CC7F5(iVar1, ENTITY::_0x34F008A7E48C496B(iVar1, 1), 0, 0, 0);
+			TASK::TASK_CARRIABLE(iVar1, ENTITY::_GET_OPTIMAL_CARRY_CONFIG(iVar1, 1), 0, 0, 0);
 		}
 		else
 		{
@@ -8113,7 +8113,7 @@ void func_308()
 			{
 				return;
 			}
-			TASK::_0xF0B4F759F35CC7F5(iVar1, ENTITY::_0x34F008A7E48C496B(iVar1, 1), iVar0, 0, 0);
+			TASK::TASK_CARRIABLE(iVar1, ENTITY::_GET_OPTIMAL_CARRY_CONFIG(iVar1, 1), iVar0, 0, 0);
 		}
 		else
 		{
@@ -8155,7 +8155,7 @@ void func_309()
 				{
 					iVar3 = func_401(iVar0);
 					iVar4 = func_399(iVar3);
-					if (!TASK::_0x841475AC96E794D1(iVar4))
+					if (!TASK::_DOES_SCENARIO_POINT_EXIST(iVar4))
 					{
 						return;
 					}
@@ -8474,7 +8474,7 @@ void func_313()
 					{
 						iVar4 = func_401(iVar1);
 						iVar5 = func_399(iVar4);
-						if (TASK::_0x841475AC96E794D1(iVar5))
+						if (TASK::_DOES_SCENARIO_POINT_EXIST(iVar5))
 						{
 							TASK::_TASK_USE_SCENARIO_POINT(iVar2, iVar5, 0, 0, false, true, 0, false, -1f, false);
 						}
@@ -11016,7 +11016,7 @@ int func_399(int iParam0)
 	{
 		return 0;
 	}
-	if (TASK::_0x841475AC96E794D1(&(Local_809.f_18.f_69[iParam0])))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_809.f_18.f_69[iParam0])))
 	{
 		return &(Local_809.f_18.f_69[iParam0]);
 	}
@@ -11025,16 +11025,16 @@ int func_399(int iParam0)
 	{
 		return 0;
 	}
-	Local_809.f_18.f_69[iParam0] = TASK::_0xF533D68FF970D190(vVar0, joaat("PROP_HUMAN_SEAT_NO_BACK_COLLECTION"), 0.5f, 0, 0);
-	if (!TASK::_0x841475AC96E794D1(&(Local_809.f_18.f_69[iParam0])))
+	Local_809.f_18.f_69[iParam0] = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vVar0, joaat("PROP_HUMAN_SEAT_NO_BACK_COLLECTION"), 0.5f, 0, false);
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_809.f_18.f_69[iParam0])))
 	{
 	}
 	else
 	{
 		return &(Local_809.f_18.f_69[iParam0]);
 	}
-	Local_809.f_18.f_69[iParam0] = TASK::_0xF533D68FF970D190(vVar0, joaat("PROP_HUMAN_SEAT_CHAIR"), 0.5f, 0, 0);
-	if (!TASK::_0x841475AC96E794D1(&(Local_809.f_18.f_69[iParam0])))
+	Local_809.f_18.f_69[iParam0] = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vVar0, joaat("PROP_HUMAN_SEAT_CHAIR"), 0.5f, 0, false);
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(Local_809.f_18.f_69[iParam0])))
 	{
 		return 0;
 	}
@@ -11051,7 +11051,7 @@ int func_400(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -13803,7 +13803,7 @@ int func_497(int iParam0)
 	return uVar2;
 }
 
-var func_498(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_498(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -13815,7 +13815,7 @@ var func_498(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

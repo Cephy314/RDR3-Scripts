@@ -46,7 +46,7 @@ void __EntryFunction__()
 			vVar187 = { -0.0664749f, -0.00670436f, 0.0292784f };
 			break;
 		case 1443104131:
-			iVar190 = TASK::_0x6AA3DCA2C6F5EB6D(Global_34);
+			iVar190 = TASK::_GET_ITEM_INTERACTION_FROM_PED(Global_34);
 			switch (iVar190)
 			{
 				case joaat("QUICK_SMOKE_CIGARETTE_RIGHT_HAND"):
@@ -619,13 +619,13 @@ float func_21(float fParam0, int iParam1)
 	return fParam0;
 }
 
-int func_22(int iParam0, float fParam1, bool bParam2, int iParam3)
+int func_22(int iParam0, float fParam1, bool bParam2, bool bParam3)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
 		return 0;
 	}
-	return func_45(iParam0, fParam1, bParam2, iParam3);
+	return func_45(iParam0, fParam1, bParam2, bParam3);
 }
 
 void func_23(var uParam0)
@@ -1153,7 +1153,7 @@ void func_44(int iParam0, bool bParam1)
 	func_79(iVar0, iVar1);
 }
 
-int func_45(int iParam0, float fParam1, bool bParam2, int iParam3)
+int func_45(int iParam0, float fParam1, bool bParam2, bool bParam3)
 {
 	char* sVar0;
 	int iVar1;
@@ -1186,7 +1186,7 @@ int func_45(int iParam0, float fParam1, bool bParam2, int iParam3)
 				}
 			}
 			func_82(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[0 /*2*/] = fParam1;
 			break;
 		case 1:
@@ -1200,7 +1200,7 @@ int func_45(int iParam0, float fParam1, bool bParam2, int iParam3)
 			}
 			func_83(joaat("STATUS_EFFECT__TRACKING"));
 			func_84(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[1 /*2*/] = fParam1;
 			break;
 		case 2:
@@ -1213,23 +1213,23 @@ int func_45(int iParam0, float fParam1, bool bParam2, int iParam3)
 				}
 			}
 			func_85(-1, 0);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[2 /*2*/] = fParam1;
 			break;
 		case 19:
 			func_83(joaat("STATUS_EFFECT__POISON"));
 			func_86(0, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[0 /*2*/])->f_1 = fParam1;
 			break;
 		case 18:
 			func_86(1, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[1 /*2*/])->f_1 = fParam1;
 			break;
 		case 20:
 			func_86(2, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[2 /*2*/])->f_1 = fParam1;
 			break;
 		default:
@@ -4721,7 +4721,7 @@ void func_158(int iParam0)
 			func_172();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0x66B1CB778D911F49(iVar0, 0f);
+			PED::_REMOVE_PED_WOUND_EFFECT(iVar0, 0f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 0, 0);
@@ -4956,7 +4956,7 @@ void func_164(int iParam0)
 			func_172();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0xFFD54D9FE71B966A(iVar0, 2, 14411, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
+			PED::_SET_PED_WOUND_EFFECT(iVar0, 2, 2.019411E-41f, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 1, 0);

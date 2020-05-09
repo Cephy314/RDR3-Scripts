@@ -93,7 +93,7 @@ void __EntryFunction__()
 			case 2:
 				PED::_0xCB9401F918CB0F75(Global_34, "BLOCK_COFFEE_DRINK_PROMPT", 1, 1);
 				PED::_0xCB9401F918CB0F75(Global_34, "BLOCK_COFFEE_DISCARD_PROMPT", 1, 1);
-				if (TASK::_0x6AA3DCA2C6F5EB6D(Global_34) != joaat("DRINK_COFFEE_HOLD"))
+				if (TASK::_GET_ITEM_INTERACTION_FROM_PED(Global_34) != joaat("DRINK_COFFEE_HOLD"))
 				{
 				}
 				else
@@ -305,7 +305,7 @@ void func_11(var uParam0, bool bParam1)
 	uParam0->f_8 = (uParam0->f_8 + fVar6);
 }
 
-void func_12(var uParam0, var uParam1, int iParam2, int iParam3)
+void func_12(int iParam0, var uParam1, int iParam2, int iParam3)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(*uParam1))
 	{
@@ -317,7 +317,7 @@ void func_12(var uParam0, var uParam1, int iParam2, int iParam3)
 			{
 				*uParam1 = OBJECT::CREATE_OBJECT(iParam3, Global_35, true, false, false, false, true);
 				OBJECT::_0xCAAF2BCCFEF37F77(*uParam1, 80);
-				TASK::_TASK_ITEM_INTERACTION_2(Global_34, uParam0, *uParam1, iParam2, TASK::_0x6AA3DCA2C6F5EB6D(Global_34), 1, 0, -1082130432);
+				TASK::_TASK_ITEM_INTERACTION_2(Global_34, iParam0, *uParam1, iParam2, TASK::_GET_ITEM_INTERACTION_FROM_PED(Global_34), 1, 0, -1f);
 			}
 		}
 	}
@@ -557,13 +557,13 @@ float func_23(float fParam0, int iParam1)
 	return fParam0;
 }
 
-int func_24(int iParam0, float fParam1, bool bParam2, int iParam3)
+int func_24(int iParam0, float fParam1, bool bParam2, bool bParam3)
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
 		return 0;
 	}
-	return func_48(iParam0, fParam1, bParam2, iParam3);
+	return func_48(iParam0, fParam1, bParam2, bParam3);
 }
 
 void func_25(var uParam0)
@@ -1103,7 +1103,7 @@ void func_47(int iParam0, bool bParam1)
 	func_83(iVar0, iVar1);
 }
 
-int func_48(int iParam0, float fParam1, bool bParam2, int iParam3)
+int func_48(int iParam0, float fParam1, bool bParam2, bool bParam3)
 {
 	char* sVar0;
 	int iVar1;
@@ -1136,7 +1136,7 @@ int func_48(int iParam0, float fParam1, bool bParam2, int iParam3)
 				}
 			}
 			func_86(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[0 /*2*/] = fParam1;
 			break;
 		case 1:
@@ -1150,7 +1150,7 @@ int func_48(int iParam0, float fParam1, bool bParam2, int iParam3)
 			}
 			func_87(joaat("STATUS_EFFECT__TRACKING"));
 			func_88(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[1 /*2*/] = fParam1;
 			break;
 		case 2:
@@ -1163,23 +1163,23 @@ int func_48(int iParam0, float fParam1, bool bParam2, int iParam3)
 				}
 			}
 			func_89(-1, 0);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			Global_17172.f_54.f_2438.f_34[2 /*2*/] = fParam1;
 			break;
 		case 19:
 			func_87(joaat("STATUS_EFFECT__POISON"));
 			func_90(0, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[0 /*2*/])->f_1 = fParam1;
 			break;
 		case 18:
 			func_90(1, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[1 /*2*/])->f_1 = fParam1;
 			break;
 		case 20:
 			func_90(2, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar1, iParam0, fParam1, iParam3);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar1, iParam0, fParam1, bParam3);
 			(Global_17172.f_54.f_2438.f_34[2 /*2*/])->f_1 = fParam1;
 			break;
 		default:
@@ -4697,7 +4697,7 @@ void func_163(int iParam0)
 			func_177();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0x66B1CB778D911F49(iVar0, 0f);
+			PED::_REMOVE_PED_WOUND_EFFECT(iVar0, 0f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 0, 0);
@@ -4932,7 +4932,7 @@ void func_169(int iParam0)
 			func_177();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0xFFD54D9FE71B966A(iVar0, 2, 14411, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
+			PED::_SET_PED_WOUND_EFFECT(iVar0, 2, 2.019411E-41f, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 1, 0);

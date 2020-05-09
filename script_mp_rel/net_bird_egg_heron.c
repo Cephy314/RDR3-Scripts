@@ -106,7 +106,7 @@ void __EntryFunction__()
 			func_4(&uLocal_44);
 		}
 	}
-	if (!TASK::_0x841475AC96E794D1(iLocal_24))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_24))
 	{
 		func_4(&uLocal_44);
 	}
@@ -178,8 +178,8 @@ void func_4(var uParam0)
 void func_5(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)
 {
 	*uParam0 = 5;
-	vLocal_18 = { TASK::_0xA8452DD321607029(iLocal_24, 1) };
-	vLocal_21 = { TASK::_0xA8452DD321607029(iLocal_24, 1) };
+	vLocal_18 = { TASK::_GET_SCENARIO_POINT_COORDS(iLocal_24, true) };
+	vLocal_21 = { TASK::_GET_SCENARIO_POINT_COORDS(iLocal_24, true) };
 	uParam0->f_4 = iParam6;
 	uParam0->f_13 = iParam5;
 	iLocal_38 = iParam3;
@@ -773,7 +773,7 @@ int func_28(var uParam0)
 	{
 		return 0;
 	}
-	if (TASK::_0x841475AC96E794D1(iLocal_24))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_24))
 	{
 		if (_NAMESPACE49::_0xFB7CF1DE938A3E22(iLocal_24))
 		{
@@ -900,7 +900,7 @@ int func_30(vector3 vParam0, vector3 vParam3, float fParam6, bool bParam7)
 	return 0;
 }
 
-var func_31(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_31(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -912,7 +912,7 @@ var func_31(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, b
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -1266,7 +1266,7 @@ int func_52(var uParam0)
 {
 	if (ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::GET_PLAYER_PED(PLAYER::PLAYER_ID()), 89266752))
 	{
-		if (TASK::_0x841475AC96E794D1(iLocal_24))
+		if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_24))
 		{
 			_NAMESPACE49::_0x8245C1F3262F4AC2(iLocal_24);
 		}

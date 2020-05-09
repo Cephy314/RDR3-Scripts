@@ -1075,8 +1075,8 @@ void func_21()
 											if (NETWORK::CAN_REGISTER_MISSION_PEDS(1))
 											{
 												iVar14 = PED::CLONE_PED(PLAYER::GET_PLAYER_PED(NETWORK::NETWORK_GET_PLAYER_INDEX(iVar2)), 1.401298E-45f, true, true);
-												PED::_0xD710A5007C2AC539(iVar14, joaat("HOLSTERS_LEFT"), 1);
-												PED::_0xCC8CA3E88256E58F(iVar14, false, true, true, true, false);
+												PED::_SET_PED_COMPONENT_DISABLED(iVar14, joaat("HOLSTERS_LEFT"), 1);
+												PED::_UPDATE_PED_VARIATION(iVar14, false, true, true, true, false);
 												NETWORK::_NETWORK_SET_ENTITY_INVISIBLE_TO_NETWORK(iVar14, true);
 												PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar14, true);
 												ENTITY::_0x0918E3565C20F03C(iVar14, ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(NETWORK::NETWORK_GET_PLAYER_INDEX(iVar2)), true, false), ENTITY::GET_ENTITY_HEADING(PLAYER::GET_PLAYER_PED(NETWORK::NETWORK_GET_PLAYER_INDEX(iVar2))), false, 1);
@@ -4367,7 +4367,7 @@ int func_115(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -4891,7 +4891,7 @@ bool func_134(int iParam0)
 	return iParam0 <= func_179();
 }
 
-int func_135(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+int func_135(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -4903,7 +4903,7 @@ int func_135(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 

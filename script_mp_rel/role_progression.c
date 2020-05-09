@@ -545,7 +545,7 @@ void func_18(var uParam0)
 		}
 	}
 	func_51(0);
-	HUD::_0xF1622CE88A1946FB();
+	HUD::_UIPROMPT_DISABLE_PROMPTS_THIS_FRAME();
 }
 
 void func_19(int* iParam0)
@@ -9478,7 +9478,7 @@ int func_404(int iParam0, bool bParam1, int iParam2, bool bParam3, int iParam4)
 	return 1;
 }
 
-int func_405(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+int func_405(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -9490,7 +9490,7 @@ int func_405(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 

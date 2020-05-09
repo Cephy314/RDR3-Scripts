@@ -784,7 +784,7 @@ void func_39(var uParam0, bool bParam1)
 		}
 		func_103(0);
 		uParam0->f_308 = 1;
-		HUD::_0x4CC5F2FC1332577F(-1319249689);
+		HUD::_HIDE_HUD_COMPONENT(-1319249689);
 		NETWORK::_0x4B05B97BA46F419D(0);
 		NETWORK::NETWORK_SET_IN_MP_CUTSCENE(true, true, 32, true);
 		func_104(0, 28);
@@ -798,7 +798,7 @@ void func_39(var uParam0, bool bParam1)
 		Global_13 = 0;
 		func_103(1);
 		uParam0->f_308 = 0;
-		HUD::_0x8BC7C1F929D07BF3(-1319249689);
+		HUD::_DISPLAY_HUD_COMPONENT(-1319249689);
 		NETWORK::_0x4B05B97BA46F419D(1);
 		NETWORK::NETWORK_SET_IN_MP_CUTSCENE(false, false, 32, true);
 		func_104(1, 2);
@@ -1660,8 +1660,8 @@ int func_62(var uParam0)
 																									{
 																										if (!((uParam0->f_229[iVar0 /*27*/])->f_1[iVar1 /*6*/])->f_1)
 																										{
-																											PED::_0xD710A5007C2AC539(&((uParam0->f_229[iVar0 /*27*/])->f_1[iVar1 /*6*/]), joaat("HOLSTERS_LEFT"), 1);
-																											PED::_0xCC8CA3E88256E58F(&((uParam0->f_229[iVar0 /*27*/])->f_1[iVar1 /*6*/]), false, true, true, true, false);
+																											PED::_SET_PED_COMPONENT_DISABLED(&((uParam0->f_229[iVar0 /*27*/])->f_1[iVar1 /*6*/]), joaat("HOLSTERS_LEFT"), 1);
+																											PED::_UPDATE_PED_VARIATION(&((uParam0->f_229[iVar0 /*27*/])->f_1[iVar1 /*6*/]), false, true, true, true, false);
 																											((uParam0->f_229[iVar0 /*27*/])->f_1[iVar1 /*6*/])->f_1 = 1;
 																										}
 																										else
@@ -3215,8 +3215,8 @@ int func_117(var uParam0)
 						else if ((uParam0->f_89[iVar0 /*15*/])->f_8 != -1 && PED::_DOES_METAPED_OUTFIT_EXIST_FOR_PED_MODEL((uParam0->f_89[iVar0 /*15*/])->f_8, &(uParam0->f_89[iVar0 /*15*/])))
 						{
 							PED::_0x0BFA1BD465CDFEFD((uParam0->f_89[iVar0 /*15*/])->f_1);
-							PED::_0x1902C4CFCC5BE57C((uParam0->f_89[iVar0 /*15*/])->f_1, (uParam0->f_89[iVar0 /*15*/])->f_8);
-							PED::_0xCC8CA3E88256E58F((uParam0->f_89[iVar0 /*15*/])->f_1, false, true, true, true, false);
+							PED::_SET_PED_BODY_COMPONENT((uParam0->f_89[iVar0 /*15*/])->f_1, (uParam0->f_89[iVar0 /*15*/])->f_8);
+							PED::_UPDATE_PED_VARIATION((uParam0->f_89[iVar0 /*15*/])->f_1, false, true, true, true, false);
 						}
 						else if ((uParam0->f_89[iVar0 /*15*/])->f_8 == -1)
 						{
@@ -3602,7 +3602,7 @@ int func_132()
 	bool bVar0;
 	int iVar1;
 
-	if (PED::_0xA911EE21EDF69DAF(Global_1275573->f_8))
+	if (PED::_IS_PED_CARRYING(Global_1275573->f_8))
 	{
 		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_1275573->f_8);
 		bVar0 = true;
@@ -4221,7 +4221,7 @@ int func_152(int iParam0, var uParam1, bool bParam2, int iParam3, int iParam4, f
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, iParam3, false);
 				if (func_251(bParam2, 16384))
 				{
-					HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
+					HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_SCRIPTED_PLAYER_CONTROL_DISABLED"));
 				}
 			}
 		}
@@ -5798,7 +5798,7 @@ var func_200(int iParam0)
 	return &(Global_1103537->f_1752.f_5295[iParam0]);
 }
 
-var func_201(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_201(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -5810,7 +5810,7 @@ var func_201(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -7369,7 +7369,7 @@ int func_248(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -13039,7 +13039,7 @@ int func_386(int iParam0)
 	{
 		return 0;
 	}
-	if (PED::_0xA911EE21EDF69DAF(Global_34))
+	if (PED::_IS_PED_CARRYING(Global_34))
 	{
 		iVar1 = PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_A_PED(iVar1))
@@ -16630,7 +16630,7 @@ void func_524(int iParam0)
 			func_569();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0x66B1CB778D911F49(iVar0, 0f);
+			PED::_REMOVE_PED_WOUND_EFFECT(iVar0, 0f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 0, 0);
@@ -16874,7 +16874,7 @@ void func_531(int iParam0)
 			func_569();
 			break;
 		case joaat("WOUND_EFFECT"):
-			PED::_0xFFD54D9FE71B966A(iVar0, 2, 14411, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
+			PED::_SET_PED_WOUND_EFFECT(iVar0, 2, 2.019411E-41f, 0f, 0f, 0f, 0f, 0f, -1f, 1f);
 			break;
 		case joaat("TRAIL_EFFECT"):
 			PED::_0xA5950E16B8F31052(iVar0, 1, 0);

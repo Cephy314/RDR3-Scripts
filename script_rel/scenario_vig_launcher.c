@@ -103,7 +103,7 @@ void func_6()
 	switch (iLocal_5)
 	{
 		case 0:
-			if (!TASK::_0x841475AC96E794D1(iLocal_3))
+			if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 			{
 				iLocal_5 = 6;
 				return;
@@ -472,8 +472,8 @@ int func_22()
 		Var0 = -1;
 		Var0.f_11 = -1;
 		Var0 = iLocal_6;
-		Var0.f_1 = { TASK::_0xA8452DD321607029(iLocal_3, 1) };
-		Var0.f_4 = { 0f, 0f, TASK::_0xB93EA7184BAA85C3(iLocal_3, 1) };
+		Var0.f_1 = { TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true) };
+		Var0.f_4 = { 0f, 0f, TASK::_GET_SCENARIO_POINT_HEADING(iLocal_3, true) };
 		Var0.f_10 = 1;
 		Var0.f_8 = bLocal_8;
 		(*Global_1425179)[iLocal_10 /*8*/] = iLocal_6;

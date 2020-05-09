@@ -146,7 +146,7 @@ void func_6()
 				Local_19.f_4 = TASK::_0x2D0571BB55879DA2(Local_19);
 				Local_19.f_3 = func_20(Local_19.f_4);
 				Local_19.f_2 = TASK::_0xDF7993356F52359A(Local_19, 0);
-				Local_19.f_1 = TASK::_0x7467165EE97D3C68(Local_19.f_2);
+				Local_19.f_1 = TASK::_GET_ENTITY_SCENARIO_POINT_IS_ATTACHED_TO(Local_19.f_2);
 				if (func_12(iLocal_43))
 				{
 					Local_19.f_17 = func_21(iLocal_42);
@@ -2913,11 +2913,11 @@ void func_109(bool bParam0)
 	Global_1955569->f_1.f_1 = bParam0;
 	if (bParam0 == 1)
 	{
-		HUD::_0x4CC5F2FC1332577F(joaat("HUD_CTX_HONOR_SHOW"));
+		HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 	else
 	{
-		HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_HONOR_SHOW"));
+		HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_HONOR_SHOW"));
 	}
 }
 

@@ -1276,7 +1276,7 @@ void func_68(int iParam0)
 	bool bVar3;
 
 	bVar0 = func_41(iParam0);
-	if (!PED::_0xA911EE21EDF69DAF(bVar0))
+	if (!PED::_IS_PED_CARRYING(bVar0))
 	{
 		return;
 	}

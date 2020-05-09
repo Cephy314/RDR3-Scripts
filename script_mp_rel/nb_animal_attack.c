@@ -3529,7 +3529,7 @@ int func_116()
 		{
 			return 0;
 		}
-		if (!TASK::_0x841475AC96E794D1(Local_13.f_7.f_16))
+		if (!TASK::_DOES_SCENARIO_POINT_EXIST(Local_13.f_7.f_16))
 		{
 			Local_13.f_7.f_16 = TASK::CREATE_SCENARIO_POINT(joaat("PROP_HITCHINGTREE"), func_207(1) - Vector(0.5f, 0f, 0f), func_208(1), 0, 0, 0);
 		}
@@ -3708,7 +3708,7 @@ void func_123()
 
 int func_124()
 {
-	if (TASK::_0x841475AC96E794D1(Local_13.f_7.f_16))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(Local_13.f_7.f_16))
 	{
 		TASK::_0x81948DFE4F5A0283(Local_13.f_7.f_16);
 	}
@@ -3987,7 +3987,7 @@ void func_140()
 	{
 		if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iVar2))
 		{
-			if (TASK::_0x841475AC96E794D1(Local_13.f_7.f_16))
+			if (TASK::_DOES_SCENARIO_POINT_EXIST(Local_13.f_7.f_16))
 			{
 				PHYSICS::_0x06AADE17334F7A40(iVar2, func_259());
 				TASK::_TASK_USE_SCENARIO_POINT(iVar2, Local_13.f_7.f_16, 0, 0, false, true, 0, false, -1f, false);
@@ -8763,8 +8763,8 @@ int func_344(int iParam0, int iParam1, bool bParam2)
 					PED::SET_PED_CONFIG_FLAG(iVar7, 178, false);
 					if (iVar9 != 0)
 					{
-						PED::_0x1902C4CFCC5BE57C(iVar7, iVar9);
-						PED::_0xCC8CA3E88256E58F(iVar7, func_343(iParam0, 1), true, true, true, false);
+						PED::_SET_PED_BODY_COMPONENT(iVar7, iVar9);
+						PED::_UPDATE_PED_VARIATION(iVar7, func_343(iParam0, 1), true, true, true, false);
 					}
 					else if (PED::_0x772A1969F649E902(iVar8))
 					{
@@ -11307,7 +11307,7 @@ int func_459(int iParam0, int iParam1)
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}
@@ -11861,10 +11861,10 @@ void func_488(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -14271,7 +14271,7 @@ int func_580(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;

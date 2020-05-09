@@ -55,12 +55,12 @@ void __EntryFunction__()
 	{
 		func_2(&Var0);
 	}
-	if (!TASK::_0x841475AC96E794D1(ScriptParam_0.f_1))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(ScriptParam_0.f_1))
 	{
 		func_2(&Var0);
 	}
-	Var0 = { TASK::_0xA8452DD321607029(ScriptParam_0.f_1, 1) };
-	Var0.f_3 = TASK::_0xB93EA7184BAA85C3(ScriptParam_0.f_1, 1);
+	Var0 = { TASK::_GET_SCENARIO_POINT_COORDS(ScriptParam_0.f_1, true) };
+	Var0.f_3 = TASK::_GET_SCENARIO_POINT_HEADING(ScriptParam_0.f_1, true);
 	Var0.f_4 = TASK::_0x6718F40313A2B5A6(ScriptParam_0.f_1);
 	Global_43838[Var0.f_18] = &Global_43838[Var0.f_18] + 1;
 	if (func_3() == 0)
@@ -291,7 +291,7 @@ void func_2(var uParam0)
 {
 	Global_43838[uParam0->f_18] = (&Global_43838[uParam0->f_18] - 1);
 	SCRIPTS::_0xE7282390542F570D(uParam0->f_5);
-	if (func_38(uParam0) == 1 && TASK::_0x841475AC96E794D1(uParam0->f_6))
+	if (func_38(uParam0) == 1 && TASK::_DOES_SCENARIO_POINT_EXIST(uParam0->f_6))
 	{
 		Global_1913813 = uParam0->f_6;
 	}
@@ -1904,7 +1904,7 @@ int func_90(int iParam0, int iParam1, int iParam2, bool bParam3, vector3 vParam4
 {
 	int iVar0;
 	int iVar1;
-	var uVar2;
+	int iVar2;
 	int iVar3;
 
 	iVar0 = -1;
@@ -1912,9 +1912,9 @@ int func_90(int iParam0, int iParam1, int iParam2, bool bParam3, vector3 vParam4
 	{
 		if ((ENTITY::DOES_ENTITY_EXIST(iParam1) && !ENTITY::IS_ENTITY_DEAD(iParam1)) && iParam1 == Global_35)
 		{
-			uVar2 = func_138(iParam0);
-			TELEMETRY::_0xAE693EC3A178F6C2(uVar2);
-			COMPENDIUM::COMPENDIUM_HERB_PICKED(uVar2, vParam4);
+			iVar2 = func_138(iParam0);
+			TELEMETRY::_0xAE693EC3A178F6C2(iVar2);
+			COMPENDIUM::COMPENDIUM_HERB_PICKED(iVar2, vParam4);
 			if (!func_139(iParam0))
 			{
 				func_140(iParam0, 0, 1);
@@ -1930,7 +1930,7 @@ int func_90(int iParam0, int iParam1, int iParam2, bool bParam3, vector3 vParam4
 					}
 				}
 			}
-			func_143(func_142(joaat("PICK"), uVar2), bParam3);
+			func_143(func_142(joaat("PICK"), iVar2), bParam3);
 			func_143(func_144(joaat("HERBS_PICKED_TOTAL")), bParam3);
 			if (func_145(iParam0))
 			{
@@ -3355,12 +3355,12 @@ int func_141(int iParam0)
 	return -1;
 }
 
-struct<2> func_142(int iParam0, var uParam1)
+struct<2> func_142(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
 	Var0 = iParam0;
-	Var0.f_1 = uParam1;
+	Var0.f_1 = iParam1;
 	return Var0;
 }
 
@@ -3918,7 +3918,7 @@ void func_165(int iParam0, float fParam1)
 			}
 			func_220(-1);
 			func_221(0);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar0, iParam0, fParam1, 1);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar0, iParam0, fParam1, true);
 			Global_40.f_11095.f_4[0 /*2*/] = fParam1;
 			break;
 		case 1:
@@ -3928,7 +3928,7 @@ void func_165(int iParam0, float fParam1)
 				GRAPHICS::ANIMPOSTFX_PLAY(sVar1);
 			}
 			func_222(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar0, iParam0, fParam1, 1);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar0, iParam0, fParam1, true);
 			Global_40.f_11095.f_4[1 /*2*/] = fParam1;
 			break;
 		case 2:
@@ -3938,22 +3938,22 @@ void func_165(int iParam0, float fParam1)
 				GRAPHICS::ANIMPOSTFX_PLAY(sVar1);
 			}
 			func_223(-1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar0, iParam0, fParam1, 1);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar0, iParam0, fParam1, true);
 			Global_40.f_11095.f_4[2 /*2*/] = fParam1;
 			break;
 		case 19:
 			func_224(0, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar0, iParam0, fParam1, 1);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar0, iParam0, fParam1, true);
 			(Global_40.f_11095.f_4[0 /*2*/])->f_1 = fParam1;
 			break;
 		case 18:
 			func_224(1, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar0, iParam0, fParam1, 1);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar0, iParam0, fParam1, true);
 			(Global_40.f_11095.f_4[1 /*2*/])->f_1 = fParam1;
 			break;
 		case 20:
 			func_224(2, 1, 1);
-			ATTRIBUTE::_0xF6A7C08DF2E28B28(iVar0, iParam0, fParam1, 1);
+			ATTRIBUTE::_SET_ATTRIBUTE_OVERPOWER_AMOUNT(iVar0, iParam0, fParam1, true);
 			(Global_40.f_11095.f_4[2 /*2*/])->f_1 = fParam1;
 			break;
 		default:

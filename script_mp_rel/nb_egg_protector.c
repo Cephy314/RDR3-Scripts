@@ -3385,7 +3385,7 @@ int func_124()
 	int iVar1;
 
 	iVar0 = 1;
-	if (!TASK::_0x841475AC96E794D1(Local_163.f_18.f_17))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(Local_163.f_18.f_17))
 	{
 		iVar1 = func_182();
 		if (iVar1 == 0)
@@ -3627,7 +3627,7 @@ void func_146(bool bParam0)
 	{
 		MAP::REMOVE_BLIP(&(Local_163.f_18.f_9));
 	}
-	if (TASK::_0x841475AC96E794D1(Local_163.f_18.f_17))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(Local_163.f_18.f_17))
 	{
 		TASK::_0x81948DFE4F5A0283(Local_163.f_18.f_17);
 	}
@@ -4863,7 +4863,7 @@ int func_217()
 			}
 			break;
 		case 4:
-			if (func_229(Local_163.f_18.f_8, TASK::_0xA8452DD321607029(Local_163.f_18.f_17, 1), 2f, 1, 1) && PED::IS_PED_USING_ANY_SCENARIO(Local_163.f_18.f_8))
+			if (func_229(Local_163.f_18.f_8, TASK::_GET_SCENARIO_POINT_COORDS(Local_163.f_18.f_17, true), 2f, 1, 1) && PED::IS_PED_USING_ANY_SCENARIO(Local_163.f_18.f_8))
 			{
 				func_250(5);
 			}
@@ -5932,7 +5932,7 @@ int func_275(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -6482,7 +6482,7 @@ int func_306(var uParam0)
 	return func_337(uParam0->f_1);
 }
 
-var func_307(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, bool bParam5)
+var func_307(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)
 {
 	struct<4> Var0;
 	struct<2> Var13;
@@ -6494,7 +6494,7 @@ var func_307(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, bParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

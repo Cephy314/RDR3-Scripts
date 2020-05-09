@@ -3428,8 +3428,8 @@ int func_106(var uParam0)
 						{
 							if ((uParam0->f_127[iVar0 /*33*/])->f_2 != 0)
 							{
-								PED::_0x1902C4CFCC5BE57C(&(uParam0->f_127[iVar0 /*33*/]), (uParam0->f_127[iVar0 /*33*/])->f_2);
-								PED::_0xCC8CA3E88256E58F(&(uParam0->f_127[iVar0 /*33*/]), false, true, true, true, false);
+								PED::_SET_PED_BODY_COMPONENT(&(uParam0->f_127[iVar0 /*33*/]), (uParam0->f_127[iVar0 /*33*/])->f_2);
+								PED::_UPDATE_PED_VARIATION(&(uParam0->f_127[iVar0 /*33*/]), false, true, true, true, false);
 							}
 							else if ((uParam0->f_127[iVar0 /*33*/])->f_3 == -1)
 							{
@@ -3505,11 +3505,11 @@ int func_106(var uParam0)
 							{
 								return 0;
 							}
-							if (!TASK::_0x841475AC96E794D1((uParam0->f_127[iVar0 /*33*/])->f_15))
+							if (!TASK::_DOES_SCENARIO_POINT_EXIST((uParam0->f_127[iVar0 /*33*/])->f_15))
 							{
 								(uParam0->f_127[iVar0 /*33*/])->f_15 = TASK::CREATE_SCENARIO_POINT((uParam0->f_127[iVar0 /*33*/])->f_8, (uParam0->f_127[iVar0 /*33*/])->f_9, (uParam0->f_127[iVar0 /*33*/])->f_12.f_2, 0, 0, 1);
 							}
-							if (!TASK::_0x841475AC96E794D1((uParam0->f_127[iVar0 /*33*/])->f_15))
+							if (!TASK::_DOES_SCENARIO_POINT_EXIST((uParam0->f_127[iVar0 /*33*/])->f_15))
 							{
 								return 0;
 							}
@@ -4334,7 +4334,7 @@ void func_132(int iParam0, var uParam1, var uParam2, int iParam3, bool bParam4)
 	}
 	if (bParam4)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, true);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, true);
 	}
 }
 
@@ -5093,10 +5093,10 @@ int func_159(int iParam0, int iParam1, bool bParam2)
 	{
 		return 0;
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, iParam1);
+	PED::_SET_PED_BODY_COMPONENT(iParam0, iParam1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, true, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, true, true, true, true, false);
 	}
 	return 1;
 }

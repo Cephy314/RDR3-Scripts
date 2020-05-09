@@ -1346,9 +1346,9 @@ int func_38(int iParam0)
 	switch (iParam0)
 	{
 		case 0:
-			return 268532472;
+			return joaat("PAUSE/SETTINGS/ON_OFF");
 		case 1:
-			return 268532472;
+			return joaat("PAUSE/SETTINGS/ON_OFF");
 		case 2:
 			return 0;
 		default:
@@ -2879,7 +2879,7 @@ var func_109(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = uParam0;
-	uVar15 = _NAMESPACE71::_0x049D5C615BD38BAD(&Var0, &Var13, iParam5);
+	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

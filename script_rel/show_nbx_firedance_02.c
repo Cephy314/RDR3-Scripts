@@ -1029,8 +1029,8 @@ void func_12(bool bParam0)
 		{
 			if (WEAPON::GET_CURRENT_PED_WEAPON(Global_35, &bLocal_2, true, 0, false))
 			{
-				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 716706914, 1);
-				iVar7 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 713668775, 1);
+				iVar6 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 716706914, true);
+				iVar7 = TASK::GET_SCRIPT_TASK_STATUS(Global_35, 713668775, true);
 				if ((((((bLocal_2 != joaat("WEAPON_UNARMED") && bLocal_2 != joaat("OBJECT_1")) && bLocal_2 != joaat("OBJECT_2")) && iVar6 != 1) && iVar6 != 0) && iVar7 != 1) && iVar7 != 0)
 				{
 					WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
@@ -6471,8 +6471,8 @@ void func_199(bool bParam0, int iParam1)
 			}
 			else
 			{
-				PED::_0x1902C4CFCC5BE57C(bParam0, iParam1);
-				PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+				PED::_SET_PED_BODY_COMPONENT(bParam0, iParam1);
+				PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 			}
 			PED::_0xE3144B932DFDFF65(bParam0, 0f, -1, 1, 1);
 			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(bParam0, 10, "ALL");
@@ -6958,7 +6958,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 					}
 					if (ENTITY::IS_ENTITY_PLAYING_ANIM(uParam1[iVar5 /*10*/], ((*uParam1)[iVar5 /*10*/])->f_7, ((*uParam1)[iVar5 /*10*/])->f_8, 1))
 					{
-						if (ENTITY::_0x627520389E288A73(uParam1[iVar5 /*10*/], ((*uParam1)[iVar5 /*10*/])->f_7, ((*uParam1)[iVar5 /*10*/])->f_8) > 0.97f)
+						if (ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(uParam1[iVar5 /*10*/], ((*uParam1)[iVar5 /*10*/])->f_7, ((*uParam1)[iVar5 /*10*/])->f_8) > 0.97f)
 						{
 							bVar7 = true;
 						}
@@ -7058,7 +7058,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 					}
 					if (func_251(iParam2))
 					{
-						if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 658540077, 1) == 1)
+						if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 658540077, true) == 1)
 						{
 							((*uParam1)[iVar5 /*10*/])->f_1 = 11;
 						}
@@ -7076,7 +7076,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 						ENTITY::SET_PED_AS_NO_LONGER_NEEDED((*uParam1)[iVar5 /*10*/]);
 						((*uParam1)[iVar5 /*10*/])->f_1 = 14;
 					}
-					else if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 713668775, 1) != 1 && fVar2 > (func_286(iParam2, iVar5) + 3f))
+					else if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 713668775, true) != 1 && fVar2 > (func_286(iParam2, iVar5) + 3f))
 					{
 						((*uParam1)[iVar5 /*10*/])->f_1 = 9;
 					}
@@ -7090,7 +7090,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 					}
 					TASK::WAYPOINT_RECORDING_GET_NUM_POINTS(func_211(iParam2), &iVar3);
 					TASK::WAYPOINT_RECORDING_GET_CLOSEST_WAYPOINT(func_211(iParam2), ENTITY::GET_ENTITY_COORDS(uParam1[iVar5 /*10*/], true, false), &iVar4);
-					if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 658540077, 1) != 1 || iVar4 >= (iVar3 - 2))
+					if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 658540077, true) != 1 || iVar4 >= (iVar3 - 2))
 					{
 						PED::SET_PED_CONFIG_FLAG(uParam1[iVar5 /*10*/], 301, false);
 						PED::SET_PED_CAN_BE_TARGETTED(uParam1[iVar5 /*10*/], true);
@@ -7110,7 +7110,7 @@ void func_212(var uParam0, var uParam1, int iParam2)
 					((*uParam1)[iVar5 /*10*/])->f_1 = 14;
 					break;
 				case 13:
-					if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 713668775, 1) != 1 && !TASK::IS_PED_ACTIVE_IN_SCENARIO(uParam1[iVar5 /*10*/], 0))
+					if (TASK::GET_SCRIPT_TASK_STATUS(uParam1[iVar5 /*10*/], 713668775, true) != 1 && !TASK::IS_PED_ACTIVE_IN_SCENARIO(uParam1[iVar5 /*10*/], 0))
 					{
 						PED::DELETE_PED((*uParam1)[iVar5 /*10*/]);
 						((*uParam1)[iVar5 /*10*/])->f_1 = 14;
@@ -9887,7 +9887,7 @@ void func_227()
 {
 	bool bVar0;
 
-	if (TASK::GET_SCRIPT_TASK_STATUS(Global_35, -2017877118, 1) == 1)
+	if (TASK::GET_SCRIPT_TASK_STATUS(Global_35, -2017877118, true) == 1)
 	{
 		return;
 	}
@@ -10842,7 +10842,7 @@ void func_269(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -15054,10 +15054,10 @@ void func_340(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -15070,10 +15070,10 @@ void func_341(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -15081,11 +15081,11 @@ void func_342(bool bParam0, int iParam1)
 {
 	if (iParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(bParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(bParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(bParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(bParam0, 41611, 1f);
 	}
 }
 
@@ -17815,17 +17815,17 @@ int func_462(int iParam0)
 	return 19;
 }
 
-int func_463(bool bParam0, int iParam1)
+int func_463(int iParam0, int iParam1)
 {
-	if (ENTITY::DOES_ENTITY_EXIST(bParam0))
+	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
-		if (!PED::IS_PED_INJURED(bParam0))
+		if (!PED::IS_PED_INJURED(iParam0))
 		{
-			if (iParam1 == 2104565373 && TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(bParam0))
+			if (iParam1 == 2104565373 && TASK::IS_DRIVEBY_TASK_UNDERNEATH_DRIVING_TASK(iParam0))
 			{
 				return 1;
 			}
-			if (TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 1 || TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1) == 0)
+			if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 1 || TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true) == 0)
 			{
 				return 1;
 			}

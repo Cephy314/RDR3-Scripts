@@ -88,7 +88,7 @@ void __EntryFunction__()
 						}
 						else
 						{
-							PED::_0xD710A5007C2AC539(Local_14.f_3, joaat("EYEWEAR"), 1);
+							PED::_SET_PED_COMPONENT_DISABLED(Local_14.f_3, joaat("EYEWEAR"), 1);
 						}
 						func_14(Local_14.f_3, 1, 1);
 					}
@@ -344,16 +344,16 @@ float func_9(var uParam0)
 	return (func_30() - uParam0->f_1);
 }
 
-int func_10(bool bParam0, int iParam1)
+int func_10(int iParam0, int iParam1)
 {
 	int iVar0;
 
 	iVar0 = &Global_1396116->f_98[iParam1 /*2*/];
 	if (func_31(iVar0))
 	{
-		if (!func_32(bParam0, 518218985))
+		if (!func_32(iParam0, 518218985))
 		{
-			TASK::TASK_SMART_FLEE_COORD(bParam0, func_33(iVar0), 100f, -1, false, 1077936128);
+			TASK::TASK_SMART_FLEE_COORD(iParam0, func_33(iVar0), 100f, -1, false, 1077936128);
 		}
 		return 1;
 	}
@@ -382,16 +382,16 @@ int func_13(int iParam0, int iParam1)
 	return func_35((Global_40.f_9829[iParam0 /*4*/])->f_2, iParam1);
 }
 
-void func_14(bool bParam0, int iParam1, bool bParam2)
+void func_14(int iParam0, int iParam1, bool bParam2)
 {
-	if (ENTITY::IS_ENTITY_DEAD(bParam0))
+	if (ENTITY::IS_ENTITY_DEAD(iParam0))
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -658,11 +658,11 @@ int func_31(int iParam0)
 	return 0;
 }
 
-int func_32(bool bParam0, int iParam1)
+int func_32(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(bParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -3239,7 +3239,7 @@ bool func_95(var uParam0, int* iParam1, float fParam2, float fParam3, var uParam
 	bVar8 = iParam10 & 512 != false;
 	bVar9 = PED::IS_PED_ON_FOOT(Global_35);
 	bVar10 = PED::IS_PED_INJURED(*uParam0);
-	bVar11 = (((PED::_0xA911EE21EDF69DAF(Global_35) || func_127(Global_35)) || func_128(Global_35)) || func_129(Global_35));
+	bVar11 = (((PED::_IS_PED_CARRYING(Global_35) || func_127(Global_35)) || func_128(Global_35)) || func_129(Global_35));
 	fVar12 = -1f;
 	if (func_21(&(iParam1->f_13)))
 	{

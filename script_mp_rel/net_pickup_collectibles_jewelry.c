@@ -185,7 +185,7 @@ void __EntryFunction__()
 	{
 		func_3(&Local_18);
 	}
-	if (!TASK::_0x841475AC96E794D1(Local_18.f_1))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(Local_18.f_1))
 	{
 		func_3(&Local_18);
 	}
@@ -253,7 +253,7 @@ void func_1(var uParam0, struct<2> Param1, var uParam3)
 	uParam0->f_10[37] = joaat("MP_JEWELRY_WHTGLD_DMND_RING");
 	uParam0->f_10[38] = joaat("MP_JEWELRY_YLWGLD_DMND_RING");
 	uParam0->f_1 = Param1.f_1;
-	uParam0->f_4 = { TASK::_0xA8452DD321607029(uParam0->f_1, 1) };
+	uParam0->f_4 = { TASK::_GET_SCENARIO_POINT_COORDS(uParam0->f_1, true) };
 	iVar2 = 0;
 	while (iVar2 < 56)
 	{
@@ -329,7 +329,7 @@ void func_1(var uParam0, struct<2> Param1, var uParam3)
 		iVar2++;
 	}
 	iVar1 = Param1.f_1;
-	if (TASK::_0x841475AC96E794D1(iVar1))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iVar1))
 	{
 		iVar0 = BUILTIN::ROUND(TASK::_0x6718F40313A2B5A6(iVar1));
 		if (iVar0 == 0)

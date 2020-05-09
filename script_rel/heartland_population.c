@@ -360,7 +360,7 @@ void func_7()
 	{
 		if (!func_25(-1530132748))
 		{
-			if (!STREAMING::_0x73B40D97D7BAAD77(-389510791, Global_36))
+			if (!STREAMING::_IS_POSITION_INSIDE_IMAP_STREAMING_EXTENTS(-389510791, Global_36))
 			{
 				func_26(-1530132748);
 			}
@@ -368,7 +368,7 @@ void func_7()
 	}
 	else if (func_25(-1530132748))
 	{
-		if (!STREAMING::_0x73B40D97D7BAAD77(-389510791, Global_36))
+		if (!STREAMING::_IS_POSITION_INSIDE_IMAP_STREAMING_EXTENTS(-389510791, Global_36))
 		{
 			func_27(-1530132748);
 		}
@@ -682,9 +682,9 @@ int func_28(var uParam0, var uParam1, var uParam2, vector3 vParam3, int iParam6,
 			}
 		}
 	}
-	if (!TASK::_0x841475AC96E794D1(*uParam2))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(*uParam2))
 	{
-		*uParam2 = TASK::_0xF533D68FF970D190(vParam3, iParam8, 1f, 0, 0);
+		*uParam2 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(vParam3, iParam8, 1f, 0, false);
 		return 0;
 	}
 	else if (!ENTITY::DOES_ENTITY_EXIST(*uParam1))
@@ -710,7 +710,7 @@ int func_28(var uParam0, var uParam1, var uParam2, vector3 vParam3, int iParam6,
 			}
 			else
 			{
-				OBJECT::_0xE124889AE0521FCF(*uParam1, iParam6, 0, 0);
+				OBJECT::_SET_APPLY_OBJECT_TXD(*uParam1, iParam6, 0, 0);
 				TXD::_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(iParam6);
 				*uParam0 = 1;
 				return 1;

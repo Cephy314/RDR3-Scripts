@@ -1374,12 +1374,12 @@ int func_17(var uParam0)
 
 int func_18(var uParam0)
 {
-	if (!TASK::_0x841475AC96E794D1(iLocal_39) || !TASK::_0x841475AC96E794D1(iLocal_40))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_39) || !TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_40))
 	{
 		return 0;
 	}
-	bLocal_41 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(TASK::_0xA8452DD321607029(iLocal_39, 1), 0f, 0f, 0f, 1f, 1f, 3f, "AV_WAGON_BARREL_PED1_SCENARIO");
-	bLocal_42 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(TASK::_0xA8452DD321607029(iLocal_40, 1), 0f, 0f, 0f, 1f, 1f, 3f, "AV_WAGON_BARREL_PED2_SCENARIO");
+	bLocal_41 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(TASK::_GET_SCENARIO_POINT_COORDS(iLocal_39, true), 0f, 0f, 0f, 1f, 1f, 3f, "AV_WAGON_BARREL_PED1_SCENARIO");
+	bLocal_42 = VOLUME::_CREATE_VOLUME_BOX_WITH_CUSTOM_NAME(TASK::_GET_SCENARIO_POINT_COORDS(iLocal_40, true), 0f, 0f, 0f, 1f, 1f, 3f, "AV_WAGON_BARREL_PED2_SCENARIO");
 	return 1;
 }
 
@@ -1818,8 +1818,8 @@ void func_29(var uParam0)
 
 int func_30(var uParam0)
 {
-	iLocal_39 = TASK::_0xF533D68FF970D190(-240.63f, 769.93f, 117.09f, joaat("WORLD_HUMAN_BARCUSTOMER_BEER"), 1f, 0, 0);
-	iLocal_40 = TASK::_0xF533D68FF970D190(-240.34f, 769.04f, 117.09f, joaat("WORLD_HUMAN_BARCUSTOMER_BEER"), 1f, 0, 0);
+	iLocal_39 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(-240.63f, 769.93f, 117.09f, joaat("WORLD_HUMAN_BARCUSTOMER_BEER"), 1f, 0, false);
+	iLocal_40 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(-240.34f, 769.04f, 117.09f, joaat("WORLD_HUMAN_BARCUSTOMER_BEER"), 1f, 0, false);
 	func_60(&uLocal_9, 0);
 	func_61(&uLocal_9, 1);
 	func_62(&uLocal_9, 1);
@@ -3622,7 +3622,7 @@ void func_91(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -5402,8 +5402,8 @@ void func_158(int iParam0, int iParam1)
 			}
 			else
 			{
-				PED::_0x1902C4CFCC5BE57C(iParam0, iParam1);
-				PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+				PED::_SET_PED_BODY_COMPONENT(iParam0, iParam1);
+				PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 			}
 			PED::_0xE3144B932DFDFF65(iParam0, 0f, -1, 1, 1);
 			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(iParam0, 10, "ALL");
@@ -5423,10 +5423,10 @@ void func_159(int iParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(iParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(iParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -5439,10 +5439,10 @@ void func_160(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 
@@ -5450,11 +5450,11 @@ void func_161(int iParam0, int iParam1)
 {
 	if (iParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(iParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(iParam0, 41611, 1f);
 	}
 }
 

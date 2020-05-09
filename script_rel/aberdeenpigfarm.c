@@ -16,7 +16,7 @@
 	int iLocal_14 = 0;
 	int iLocal_15 = 0;
 	int iLocal_16 = 0;
-	var uLocal_17 = 0;
+	int iLocal_17 = 0;
 	var uLocal_18 = 0;
 	int iLocal_19 = 0;
 	int iLocal_20 = 0;
@@ -140,7 +140,7 @@ void __EntryFunction__()
 							}
 							else
 							{
-								HUD::_0x8BC7C1F929D07BF3(1833957607);
+								HUD::_DISPLAY_HUD_COMPONENT(1833957607);
 							}
 							func_19(iLocal_24, 8);
 							if (func_36(32))
@@ -1233,9 +1233,9 @@ void func_63()
 	}
 	if (SCRIPTS::_GET_NUMBER_OF_REFERENCES_OF_SCRIPT_WITH_NAME_HASH(joaat("HOMEINVASION")) > 0)
 	{
-		if (TASK::_0x841475AC96E794D1(uLocal_17))
+		if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_17))
 		{
-			TASK::_0x81948DFE4F5A0283(uLocal_17);
+			TASK::_0x81948DFE4F5A0283(iLocal_17);
 			func_117(0);
 		}
 		func_118(&uLocal_18);
@@ -1260,8 +1260,8 @@ void func_63()
 			func_117(2);
 			break;
 		case 2:
-			uLocal_17 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(iLocal_16, func_122(), 0f, 0f, 0f, 0, 0, 0, 0);
-			TASK::_0xEEE4829304F93EEE(uLocal_17, 1);
+			iLocal_17 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(iLocal_16, func_122(), 0f, 0f, 0f, 0, 0, 0, 0);
+			TASK::_SET_SCENARIO_POINT_ACTIVE(iLocal_17, true);
 			func_117(3);
 			break;
 		case 3:
@@ -1854,9 +1854,9 @@ void func_83(int iParam0)
 {
 	func_104(0);
 	func_156(0, 64);
-	if (TASK::_0x841475AC96E794D1(uLocal_17))
+	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_17))
 	{
-		TASK::_0x81948DFE4F5A0283(uLocal_17);
+		TASK::_0x81948DFE4F5A0283(iLocal_17);
 	}
 	func_118(&uLocal_18);
 	iLocal_16 = 0;
@@ -3793,7 +3793,7 @@ var func_142(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_0xD05590C1AB38F068(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 

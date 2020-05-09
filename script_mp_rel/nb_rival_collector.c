@@ -4107,17 +4107,17 @@ void func_194()
 					if (!func_220(1))
 					{
 						func_217(1);
-						PED::_0x1902C4CFCC5BE57C(iVar1, func_226());
-						PED::_0xCC8CA3E88256E58F(iVar1, false, true, true, true, true);
+						PED::_SET_PED_BODY_COMPONENT(iVar1, func_226());
+						PED::_UPDATE_PED_VARIATION(iVar1, false, true, true, true, true);
 					}
 					break;
 				case 1:
 					if (!func_220(2))
 					{
 						func_217(2);
-						PED::_0x1902C4CFCC5BE57C(iVar1, -1793085205);
+						PED::_SET_PED_BODY_COMPONENT(iVar1, -1793085205);
 						func_227(iVar1, 1);
-						PED::_0xCC8CA3E88256E58F(iVar1, true, true, true, true, true);
+						PED::_UPDATE_PED_VARIATION(iVar1, true, true, true, true, true);
 					}
 					break;
 			}
@@ -4192,7 +4192,7 @@ int func_198(int iParam0, int iParam1)
 {
 	int iVar0;
 
-	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, 1);
+	iVar0 = TASK::GET_SCRIPT_TASK_STATUS(iParam0, iParam1, true);
 	if (iVar0 == 1 || iVar0 == 0)
 	{
 		return 1;
@@ -5127,10 +5127,10 @@ void func_227(int iParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(iParam0) || PED::IS_PED_INJURED(iParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(iParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(iParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(iParam0, false, true, true, true, false);
 	}
 }
 

@@ -419,7 +419,7 @@ int func_23(var uParam0)
 			break;
 		case 1:
 			func_45(Global_1935630, 1048576);
-			HUD::_0x8BC7C1F929D07BF3(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
+			HUD::_DISPLAY_HUD_COMPONENT(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 			return 1;
 	}
 	return 0;
@@ -1298,7 +1298,7 @@ void func_70(int iParam0)
 	bool bVar3;
 
 	bVar0 = func_41(iParam0);
-	if (!PED::_0xA911EE21EDF69DAF(bVar0))
+	if (!PED::_IS_PED_CARRYING(bVar0))
 	{
 		return;
 	}

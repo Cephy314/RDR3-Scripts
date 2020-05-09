@@ -40,19 +40,19 @@ void __EntryFunction__()
 			func_3(&Local_3);
 		}
 	}
-	if (!TASK::_0x841475AC96E794D1(iLocal_10))
+	if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_10))
 	{
 		func_3(&Local_3);
 	}
-	Local_3.f_1 = { TASK::_0xA8452DD321607029(iLocal_10, 1) };
+	Local_3.f_1 = { TASK::_GET_SCENARIO_POINT_COORDS(iLocal_10, true) };
 	if (func_4(&Local_3))
 	{
-		TASK::_0xEEE4829304F93EEE(iLocal_10, 0);
+		TASK::_SET_SCENARIO_POINT_ACTIVE(iLocal_10, false);
 		func_3(&Local_3);
 	}
 	else
 	{
-		TASK::_0xEEE4829304F93EEE(iLocal_10, 1);
+		TASK::_SET_SCENARIO_POINT_ACTIVE(iLocal_10, true);
 	}
 	while (func_5())
 	{

@@ -161,7 +161,7 @@ void __EntryFunction__()
 				}
 				if (ScriptParam_0.f_48)
 				{
-					if (!TASK::_0x841475AC96E794D1(ScriptParam_0.f_56.f_1))
+					if (!TASK::_DOES_SCENARIO_POINT_EXIST(ScriptParam_0.f_56.f_1))
 					{
 						func_13(&ScriptParam_0);
 						func_14(&ScriptParam_0);
@@ -1581,8 +1581,8 @@ void func_40(bool bParam0, int iParam1)
 			}
 			else
 			{
-				PED::_0x1902C4CFCC5BE57C(bParam0, iParam1);
-				PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+				PED::_SET_PED_BODY_COMPONENT(bParam0, iParam1);
+				PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 			}
 			PED::_0xE3144B932DFDFF65(bParam0, 0f, -1, 1, 1);
 			PED::CLEAR_PED_DAMAGE_DECAL_BY_ZONE(bParam0, 10, "ALL");
@@ -1807,7 +1807,7 @@ void func_53(var uParam0)
 	iVar0 = 0;
 	while (iVar0 <= (3 - 1))
 	{
-		if (TASK::_0x841475AC96E794D1(&(uParam0->f_41[iVar0])))
+		if (TASK::_DOES_SCENARIO_POINT_EXIST(&(uParam0->f_41[iVar0])))
 		{
 			TASK::_0x81948DFE4F5A0283(&(uParam0->f_41[iVar0]));
 		}
@@ -2055,7 +2055,7 @@ int func_64(var uParam0)
 
 int func_65(var uParam0, int iParam1)
 {
-	if (!func_105(uParam0, iParam1) == 0 && !TASK::_0x841475AC96E794D1(&(uParam0->f_41[iParam1])))
+	if (!func_105(uParam0, iParam1) == 0 && !TASK::_DOES_SCENARIO_POINT_EXIST(&(uParam0->f_41[iParam1])))
 	{
 		uParam0->f_41[iParam1] = TASK::CREATE_SCENARIO_POINT(func_105(uParam0, iParam1), func_106(uParam0, iParam1), func_107(uParam0, iParam1), func_108(uParam0, iParam1), 0, 0);
 	}
@@ -2888,7 +2888,7 @@ void func_94(var uParam0, bool bParam1, vector3 vParam2, float fParam5, float fP
 			}
 			break;
 		case 1:
-			if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, -2017877118, 1) == 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, -2017877118, true) == 1)
 			{
 				if (!func_126(&(uParam0->f_1)))
 				{
@@ -2905,7 +2905,7 @@ void func_94(var uParam0, bool bParam1, vector3 vParam2, float fParam5, float fP
 					*uParam0 = 2;
 				}
 			}
-			else if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, -708058584, 1) != 1 && func_128(bParam1, vParam2, 1) < 1f)
+			else if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, -708058584, true) != 1 && func_128(bParam1, vParam2, 1) < 1f)
 			{
 				func_125(bParam1, bParam17, &uVar0, &cVar8);
 				if (!MISC::IS_STRING_NULL_OR_EMPTY(&uVar0))
@@ -2924,7 +2924,7 @@ void func_94(var uParam0, bool bParam1, vector3 vParam2, float fParam5, float fP
 		case 2:
 			if ((fParam7 > 0f && func_127(&(uParam0->f_1)) < fParam7) || fParam7 < 0f)
 			{
-				if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, 475934052, 1) != 1)
+				if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, 475934052, true) != 1)
 				{
 					TASK::TASK_FLYING_CIRCLE(bParam1, fParam14, vParam8, fParam11, bParam12);
 				}
@@ -2936,7 +2936,7 @@ void func_94(var uParam0, bool bParam1, vector3 vParam2, float fParam5, float fP
 			}
 			break;
 		case 3:
-			if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, -708058584, 1) != 1)
+			if (TASK::GET_SCRIPT_TASK_STATUS(bParam1, -708058584, true) != 1)
 			{
 				func_95(&(uParam0->f_1));
 				*uParam0 = 1;
@@ -4180,7 +4180,7 @@ void func_118(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 	}
 	if (bVar0)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -4790,10 +4790,10 @@ void func_142(bool bParam0, int iParam1, bool bParam2)
 	{
 		return;
 	}
-	PED::_0xD710A5007C2AC539(bParam0, joaat("HATS"), 1);
+	PED::_SET_PED_COMPONENT_DISABLED(bParam0, joaat("HATS"), 1);
 	if (bParam2)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -4806,10 +4806,10 @@ void func_143(bool bParam0, bool bParam1)
 	if (ENTITY::IS_ENTITY_DEAD(bParam0) || PED::IS_PED_INJURED(bParam0))
 	{
 	}
-	PED::_0x1902C4CFCC5BE57C(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
+	PED::_SET_PED_BODY_COMPONENT(bParam0, joaat("META_HORSE_SADDLE_ONLY"));
 	if (bParam1)
 	{
-		PED::_0xCC8CA3E88256E58F(bParam0, false, true, true, true, false);
+		PED::_UPDATE_PED_VARIATION(bParam0, false, true, true, true, false);
 	}
 }
 
@@ -4817,11 +4817,11 @@ void func_144(bool bParam0, int iParam1)
 {
 	if (iParam1 == 1)
 	{
-		PED::_0x5653AB26C82938CF(bParam0, 41611, 0f);
+		PED::_SET_PED_FACE_FEATURE(bParam0, 41611, 0f);
 	}
 	else
 	{
-		PED::_0x5653AB26C82938CF(bParam0, 41611, 1f);
+		PED::_SET_PED_FACE_FEATURE(bParam0, 41611, 1f);
 	}
 }
 
