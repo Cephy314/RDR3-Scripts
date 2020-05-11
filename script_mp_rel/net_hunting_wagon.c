@@ -1064,7 +1064,7 @@ int func_44(var uParam0)
 					if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_4[iVar2])))
 					{
 						iVar3++;
-						PED::_0x931B241409216C1F(PLAYER::GET_PLAYER_PED(uParam0->f_2), &(uParam0->f_4[iVar2]), 0);
+						PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(PLAYER::GET_PLAYER_PED(uParam0->f_2), &(uParam0->f_4[iVar2]), 0);
 						if (NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(&(uParam0->f_4[iVar2])))
 						{
 							ENTITY::SET_ENTITY_AS_MISSION_ENTITY(&(uParam0->f_4[iVar2]), true, false);
@@ -2647,7 +2647,7 @@ int func_115(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_0xC346A546612C49A9(iParam0))
+	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		iVar0 = func_170(&iParam0);
 		if (!func_141(iVar0, 0))
@@ -2983,7 +2983,7 @@ void func_128(int iParam0, int iParam1)
 		NETWORK::NETWORK_REQUEST_CONTROL_OF_ENTITY(iParam1);
 		return;
 	}
-	PED::_0x931B241409216C1F(iParam0, iParam1, 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(iParam0, iParam1, 0);
 }
 
 int func_129(var uParam0, int iParam1)
@@ -6676,7 +6676,7 @@ int func_230(int iParam0)
 	}
 	if (iVar5 != 0)
 	{
-		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_0x8DE41E9902E85756(iVar0))
+		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_GET_IS_LOOTED(iVar0))
 		{
 			iVar6 = func_274(iVar5);
 			if (iVar6 != 0)

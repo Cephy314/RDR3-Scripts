@@ -2840,8 +2840,8 @@ void func_62()
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_873[1]), 98, false);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_873[0]), 1, true);
 	PED::SET_PED_COMBAT_ATTRIBUTES(&(uLocal_873[1]), 1, true);
-	PED::_0x931B241409216C1F(&(uLocal_873[0]), &(uLocal_873[3]), 0);
-	PED::_0x931B241409216C1F(&(uLocal_873[1]), &(uLocal_873[2]), 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_873[0]), &(uLocal_873[3]), 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_873[1]), &(uLocal_873[2]), 0);
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_873[0]), 6, true);
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_873[1]), 6, true);
 	PED::SET_PED_CONFIG_FLAG(&(uLocal_873[4]), 6, true);
@@ -4473,22 +4473,22 @@ void func_92()
 			func_163(Local_260[1 /*17*/], 0, 0);
 		}
 	}
-	if ((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_0x61914209C36EFDDB(&(uLocal_873[4])) == 7) && iLocal_931 == 1)
+	if ((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_GET_ENTITY_STATUS(&(uLocal_873[4])) == 7) && iLocal_931 == 1)
 	{
 		iLocal_931 = 0;
 		iLocal_906 = 0;
 	}
-	if ((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_0x61914209C36EFDDB(&(uLocal_873[4])) == 5) && iLocal_932 == 1)
+	if ((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_GET_ENTITY_STATUS(&(uLocal_873[4])) == 5) && iLocal_932 == 1)
 	{
 		iLocal_932 = 0;
 		iLocal_906 = 4;
 	}
-	if ((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_0x61914209C36EFDDB(&(uLocal_873[4])) == 3) && iLocal_933 == 1)
+	if ((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_GET_ENTITY_STATUS(&(uLocal_873[4])) == 3) && iLocal_933 == 1)
 	{
 		iLocal_933 = 0;
 		iLocal_906 = 8;
 	}
-	if (((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_0x61914209C36EFDDB(&(uLocal_873[4])) == 6) && ENTITY::GET_ENTITY_HEIGHT_ABOVE_GROUND(&(uLocal_873[4])) < 0.9f) && iLocal_934 == 1)
+	if (((PED::_0x3AA24CCC0D451379(&(uLocal_873[4])) && ENTITY::_GET_ENTITY_STATUS(&(uLocal_873[4])) == 6) && ENTITY::GET_ENTITY_HEIGHT_ABOVE_GROUND(&(uLocal_873[4])) < 0.9f) && iLocal_934 == 1)
 	{
 		iLocal_934 = 0;
 		iLocal_906 = 12;
@@ -10180,7 +10180,7 @@ int func_237(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -10818,7 +10818,7 @@ int func_257()
 			}
 			break;
 		case 2:
-			if ((func_233(0f, 1, &(uLocal_873[4]), 1) && func_233(0f, 1, &(uLocal_873[0]), 1)) && ENTITY::_0x61914209C36EFDDB(&(uLocal_873[4])) == 7)
+			if ((func_233(0f, 1, &(uLocal_873[4]), 1) && func_233(0f, 1, &(uLocal_873[0]), 1)) && ENTITY::_GET_ENTITY_STATUS(&(uLocal_873[4])) == 7)
 			{
 				func_286(&(uLocal_873[4]), &(uLocal_873[0]), func_161(48), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				func_256(1515458263, &(uLocal_873[4]), 1);
@@ -11162,7 +11162,7 @@ int func_266(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -11934,7 +11934,7 @@ int func_282(int iParam0)
 
 int func_283(int iParam0, int iParam1)
 {
-	if (ENTITY::_0x61914209C36EFDDB(iParam0) == 7)
+	if (ENTITY::_GET_ENTITY_STATUS(iParam0) == 7)
 	{
 		if (func_477(iParam1) == iParam0)
 		{
@@ -19898,7 +19898,7 @@ int func_502(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -23154,7 +23154,7 @@ int func_653(int iParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(iParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(iParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -26452,7 +26452,7 @@ int func_760(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

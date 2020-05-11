@@ -520,7 +520,7 @@ void func_9(var uParam0, var uParam1)
 				}
 				uParam0->f_35 = 1;
 			}
-			GRAPHICS::_0xAB72C67163DC4DB4(*uParam0, 20);
+			GRAPHICS::_SET_LIGHTS_TYPE_FOR_ENTITY(*uParam0, 20);
 			GRAPHICS::_SET_LIGHTS_COLOR_FOR_ENTITY(*uParam0, 255, 50, 9);
 			uParam0->f_29 = GRAPHICS::START_PARTICLE_FX_LOOPED_ON_ENTITY("ent_amb_campfire_dynamic", *uParam0, 0f, 0f, 0f, 0f, 0f, 0f, 1f, false, false, false);
 			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(uParam0->f_29))
@@ -1417,7 +1417,7 @@ void func_24(var uParam0)
 		if (MISC::ABSF((uParam0->f_15 - uParam0->f_24)) < 0.0025f)
 		{
 			uParam0->f_15 = uParam0->f_24;
-			OBJECT::_0x2797C633DCDBBAC5(*uParam0, ((uParam0->f_15 * 0.9f) + 0.1f), 1);
+			OBJECT::_SET_OBJECT_AFTERBURN_LEVEL(*uParam0, ((uParam0->f_15 * 0.9f) + 0.1f), true);
 		}
 	}
 	if (uParam0->f_4)
@@ -4326,7 +4326,7 @@ int func_128(var uParam0)
 	{
 		iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
 		iVar2 = func_233(iVar1);
-		if (((func_234(iVar2) && !ENTITY::_0x8DE41E9902E85756(iVar0)) && FLOCK::_0xF8B48A361DC388AE(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0)) != 2) && !FIRE::_0xCDC25355C0D65963(iVar0))
+		if (((func_234(iVar2) && !ENTITY::_GET_IS_LOOTED(iVar0)) && FLOCK::_0xF8B48A361DC388AE(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0)) != 2) && !FIRE::_0xCDC25355C0D65963(iVar0))
 		{
 			uParam0->f_49.f_73 = iVar2;
 			uParam0->f_49.f_74 = -214678071;
@@ -5462,7 +5462,7 @@ int func_163()
 	}
 	if (PED::IS_PED_ON_MOUNT(iVar2))
 	{
-		if (PED::_0xB676EFDA03DADA52(iVar1, 0) != iVar2)
+		if (PED::_GET_HORSE_RIDER(iVar1, false) != iVar2)
 		{
 			return 0;
 		}
@@ -5485,7 +5485,7 @@ int func_164(int iParam0)
 	iVar1 = PLAYER::_0xF49F14462F0AE27C(iParam0);
 	if (PED::IS_PED_ON_MOUNT(iVar0))
 	{
-		if (PED::_0xB676EFDA03DADA52(iVar1, 0) == iVar0)
+		if (PED::_GET_HORSE_RIDER(iVar1, false) == iVar0)
 		{
 			return 1;
 		}
@@ -5722,7 +5722,7 @@ int func_171(int iParam0, int iParam1)
 	}
 	if (PED::IS_PED_ON_MOUNT(Global_34))
 	{
-		if (PED::_0xB676EFDA03DADA52(iVar0, 0) == Global_34)
+		if (PED::_GET_HORSE_RIDER(iVar0, false) == Global_34)
 		{
 			if (iParam1 == joaat("KIT_WARDROBE"))
 			{
@@ -5763,7 +5763,7 @@ int func_172(int iParam0)
 		}
 		return 0;
 	}
-	if (iVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()))
+	if (iVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
@@ -6441,7 +6441,7 @@ int func_190(var uParam0)
 			{
 			}
 			ENTITY::SET_ENTITY_VISIBLE(uParam0->f_147, false);
-			OBJECT::_0x2797C633DCDBBAC5(uParam0->f_147, 0f, 1);
+			OBJECT::_SET_OBJECT_AFTERBURN_LEVEL(uParam0->f_147, 0f, true);
 			func_103(&(uParam0->f_49));
 			func_44(&(uParam0->f_49), 2);
 			uParam0->f_149[3] = func_255("CRAFT_FASTER", joaat("INPUT_GAME_MENU_ACCEPT"), 2, 0, 0, 6, 7000, 10000, 25, 1073741824 /* Float: 2f */, joaat("SHORT_TIMED_EVENT"), 0);
@@ -6818,7 +6818,7 @@ int func_190(var uParam0)
 			if (func_124(&(uParam0->f_149[3]), 1))
 			{
 				uParam0->f_175 = -1;
-				OBJECT::_0x2797C633DCDBBAC5(uParam0->f_147, 1f, 1);
+				OBJECT::_SET_OBJECT_AFTERBURN_LEVEL(uParam0->f_147, 1f, true);
 				if (PAD::_0x1252C029FC8EBB4D())
 				{
 					PAD::_0x709BA8C08C5C008D();
@@ -6866,7 +6866,7 @@ int func_190(var uParam0)
 				{
 					fVar3 = func_404(&(uParam0->f_149[3]), 1);
 					fVar3 = func_405(fVar3, 0f, 1f);
-					OBJECT::_0x2797C633DCDBBAC5(uParam0->f_147, (1f * fVar3), 1);
+					OBJECT::_SET_OBJECT_AFTERBURN_LEVEL(uParam0->f_147, (1f * fVar3), true);
 				}
 			}
 			break;
@@ -13478,7 +13478,7 @@ void func_393(var uParam0)
 	{
 	}
 	ENTITY::SET_ENTITY_VISIBLE(uParam0->f_147, false);
-	OBJECT::_0x2797C633DCDBBAC5(uParam0->f_147, 0f, 1);
+	OBJECT::_SET_OBJECT_AFTERBURN_LEVEL(uParam0->f_147, 0f, true);
 	uParam0->f_176 = 3;
 	func_103(&(uParam0->f_49));
 	func_44(&(uParam0->f_49), 0);
@@ -15610,7 +15610,7 @@ int func_479(int iParam0)
 	}
 	if (iVar5 != 0)
 	{
-		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_0x8DE41E9902E85756(iVar0))
+		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_GET_IS_LOOTED(iVar0))
 		{
 			iVar6 = func_693(iVar5);
 			if (iVar6 != 0)
@@ -18572,7 +18572,7 @@ float func_589(int iParam0, float fParam1)
 			fVar1 = BUILTIN::TO_FLOAT(ENTITY::GET_ENTITY_MAX_HEALTH(Global_34, false));
 			break;
 		case 1:
-			fVar0 = PED::_0x775A1CA7893AA8B5(Global_34);
+			fVar0 = PED::_GET_PED_STAMINA(Global_34);
 			fVar1 = PED::_GET_PED_MAX_STAMINA(Global_34);
 			break;
 		case 2:
@@ -21352,7 +21352,7 @@ int func_679(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(iParam0))
+	if (ENTITY::_GET_IS_LOOTED(iParam0))
 	{
 		return 0;
 	}
@@ -22054,7 +22054,7 @@ int func_696(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar2))
 					{
-						if ((iParam4 == 2 && ENTITY::_0x8DE41E9902E85756(iVar2)) || (iParam4 == 1 && !ENTITY::_0x8DE41E9902E85756(iVar2)))
+						if ((iParam4 == 2 && ENTITY::_GET_IS_LOOTED(iVar2)) || (iParam4 == 1 && !ENTITY::_GET_IS_LOOTED(iVar2)))
 						{
 						}
 						else if (iVar0 == iParam1)
@@ -22515,7 +22515,7 @@ float func_718(int iParam0, int iParam1)
 			iVar0 = 50;
 			break;
 		case 1:
-			fVar1 = PED::_0x775A1CA7893AA8B5(Global_34);
+			fVar1 = PED::_GET_PED_STAMINA(Global_34);
 			fVar2 = PED::_GET_PED_MAX_STAMINA(Global_34);
 			iVar0 = 8;
 			break;
@@ -23816,7 +23816,7 @@ void func_766(float fParam0, int iParam1)
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(iParam1, fParam0);
+	PED::_CHARGE_PED_STAMINA(iParam1, fParam0);
 }
 
 float func_767(int iParam0, float fParam1, bool bParam2)
@@ -25913,7 +25913,7 @@ int func_849(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_0xC346A546612C49A9(iParam0))
+	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		iVar0 = func_245(&iParam0);
 		if (!func_90(iVar0, 0))
@@ -27295,7 +27295,7 @@ int func_896(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_0xC346A546612C49A9(iParam0))
+	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		return 0;
 	}

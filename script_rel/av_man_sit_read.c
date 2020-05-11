@@ -1832,7 +1832,7 @@ int func_31(var uParam0)
 			if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])))
 			{
 				func_73(&((uParam0->f_20[1 /*14*/])->f_5), 1, 10, 0);
-				PED::_0x931B241409216C1F(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 0);
+				PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 0);
 				PED::_0xED1C764997A86D5A(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]));
 				func_74(&uLocal_10, &(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 0);
 				func_75(&(uParam0->f_20[1 /*14*/]), joaat("WORLD_HUMAN_SIT_GROUND_READING_BOOK_STOW"), (uParam0->f_20[1 /*14*/])->f_5, (uParam0->f_20[1 /*14*/])->f_8, 0, 0, 1, 0, -1082130432 /* Float: -1f */);
@@ -4830,7 +4830,7 @@ int func_141(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6103,7 +6103,7 @@ int func_187(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6475,7 +6475,7 @@ int func_201(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

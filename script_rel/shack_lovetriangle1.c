@@ -2093,9 +2093,9 @@ bool func_57(var uParam0, vector3 vParam1, bool bParam4, int iParam5, bool bPara
 	return bVar0;
 }
 
-bool func_58(bool bParam0)
+bool func_58(int iParam0)
 {
-	return ENTITY::_0x8DE41E9902E85756(bParam0);
+	return ENTITY::_GET_IS_LOOTED(iParam0);
 }
 
 void func_59(int* iParam0)

@@ -1780,7 +1780,7 @@ int func_35()
 			ENTITY::PLAY_ENTITY_ANIM((Local_79[1 /*12*/])->f_8, (Local_128[11 /*2*/])->f_1, &(Local_128[11 /*2*/]), 8f, true, true, false, 0f, 0);
 			func_146(&(uLocal_496[1]), joaat("WORLD_ANIMAL_HORSE_GRAZING_DOMESTIC"), -1, 0, 0, -1082130432 /* Float: -1f */);
 			func_147();
-			PED::_0x931B241409216C1F(&(uLocal_496[0]), &(uLocal_496[1]), 0);
+			PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_496[0]), &(uLocal_496[1]), 0);
 			if (iLocal_289 == 0)
 			{
 				iLocal_695 = 1;
@@ -4034,7 +4034,7 @@ int func_100(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11148,7 +11148,7 @@ int func_278(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11536,7 +11536,7 @@ int func_293(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

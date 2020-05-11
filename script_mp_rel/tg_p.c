@@ -39215,7 +39215,7 @@ void func_1422(var uParam0)
 	}
 	if ((func_1602(iVar0, 16384) && func_507() != func_1419(*uParam0)) && func_1603(iVar0))
 	{
-		iVar2 = TASK::_0x295514F198EFD0CA((Global_1051388->f_69[iVar0 /*76*/])->f_6, "mp001_s_mp_catalogue01x_noanim_PH_R_HAND");
+		iVar2 = TASK::_GET_SCENARIO_PROPSET_ENTITY((Global_1051388->f_69[iVar0 /*76*/])->f_6, "mp001_s_mp_catalogue01x_noanim_PH_R_HAND");
 		if (TASK::_DOES_SCENARIO_POINT_EXIST((Global_1051388->f_69[iVar0 /*76*/])->f_6))
 		{
 			TASK::_0x81948DFE4F5A0283((Global_1051388->f_69[iVar0 /*76*/])->f_6);

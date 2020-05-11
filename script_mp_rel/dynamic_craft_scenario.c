@@ -2040,7 +2040,7 @@ int func_75()
 	}
 	if (PED::IS_PED_ON_MOUNT(iVar2))
 	{
-		if (PED::_0xB676EFDA03DADA52(iVar1, 0) != iVar2)
+		if (PED::_GET_HORSE_RIDER(iVar1, false) != iVar2)
 		{
 			return 0;
 		}
@@ -2063,7 +2063,7 @@ int func_76(int iParam0)
 	iVar1 = PLAYER::_0xF49F14462F0AE27C(iParam0);
 	if (PED::IS_PED_ON_MOUNT(iVar0))
 	{
-		if (PED::_0xB676EFDA03DADA52(iVar1, 0) == iVar0)
+		if (PED::_GET_HORSE_RIDER(iVar1, false) == iVar0)
 		{
 			return 1;
 		}
@@ -2300,7 +2300,7 @@ int func_83(int iParam0, int iParam1)
 	}
 	if (PED::IS_PED_ON_MOUNT(Global_34))
 	{
-		if (PED::_0xB676EFDA03DADA52(iVar0, 0) == Global_34)
+		if (PED::_GET_HORSE_RIDER(iVar0, false) == Global_34)
 		{
 			if (iParam1 == joaat("KIT_WARDROBE"))
 			{
@@ -2341,7 +2341,7 @@ int func_84(int iParam0)
 		}
 		return 0;
 	}
-	if (iVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()))
+	if (iVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()))
 	{
 		return 1;
 	}
@@ -8512,7 +8512,7 @@ float func_334(int iParam0, int iParam1)
 			iVar0 = 50;
 			break;
 		case 1:
-			fVar1 = PED::_0x775A1CA7893AA8B5(Global_34);
+			fVar1 = PED::_GET_PED_STAMINA(Global_34);
 			fVar2 = PED::_GET_PED_MAX_STAMINA(Global_34);
 			iVar0 = 8;
 			break;
@@ -9910,7 +9910,7 @@ void func_395(float fParam0, int iParam1)
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(iParam1, fParam0);
+	PED::_CHARGE_PED_STAMINA(iParam1, fParam0);
 }
 
 float func_396(int iParam0, float fParam1, bool bParam2)

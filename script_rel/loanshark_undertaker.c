@@ -11540,7 +11540,7 @@ int func_341(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -25861,7 +25861,7 @@ int func_798(bool bParam0)
 
 bool func_799(bool bParam0)
 {
-	return ENTITY::_0x8DE41E9902E85756(bParam0);
+	return ENTITY::_GET_IS_LOOTED(bParam0);
 }
 
 bool func_800(bool bParam0, char* sParam1, int iParam2, bool bParam3, int iParam4, int iParam5, int iParam6, int iParam7)
@@ -26511,7 +26511,7 @@ int func_831(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -26869,7 +26869,7 @@ int func_845(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -43576,7 +43576,7 @@ int func_1433(bool bParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(bParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(bParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -47747,7 +47747,7 @@ void func_1607(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 

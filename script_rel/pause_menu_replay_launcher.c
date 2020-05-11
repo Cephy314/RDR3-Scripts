@@ -3241,7 +3241,7 @@ void func_44(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 
@@ -3747,7 +3747,7 @@ void func_73(bool bParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 	{
 		PLAYER::FORCE_CLEANUP_FOR_THREAD_WITH_THIS_ID(((*Global_1835011)[bParam0 /*74*/])->f_16, 1);
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[bParam0 /*74*/])->f_72))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[bParam0 /*74*/])->f_72))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[bParam0 /*74*/])->f_72);
 	}
@@ -31036,7 +31036,7 @@ int func_922(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 				}
 				if ((bParam0 == 15 && Global_1357549->f_1494 & 32768 != 0) && func_1368(Global_35, func_24(bParam0), 50f, 1, 1))
 				{
-					if (!GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[bParam0 /*74*/])->f_72))
+					if (!GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[bParam0 /*74*/])->f_72))
 					{
 						((*Global_1835011)[bParam0 /*74*/])->f_72 = GRAPHICS::CREATE_TRACKED_POINT();
 						GRAPHICS::SET_TRACKED_POINT_INFO(((*Global_1835011)[bParam0 /*74*/])->f_72, func_24(bParam0), 5f);
@@ -31058,7 +31058,7 @@ int func_922(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		((*Global_1835011)[bParam0 /*74*/])->f_73 = 0;
 		func_1369(bParam0);
-		if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[bParam0 /*74*/])->f_72))
+		if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[bParam0 /*74*/])->f_72))
 		{
 			GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[bParam0 /*74*/])->f_72);
 		}
@@ -101664,7 +101664,7 @@ void func_2083(int iParam0)
 		{
 			MAP::REMOVE_BLIP(&(((*Global_1900383)[iParam0 /*45*/])->f_26));
 		}
-		if (bVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) && bVar3)
+		if (bVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) && bVar3)
 		{
 			if (!MAP::DOES_BLIP_EXIST(((*Global_1900383)[iParam0 /*45*/])->f_27))
 			{
@@ -101895,7 +101895,7 @@ void func_2083(int iParam0)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar18);
 	}
-	if ((PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
+	if ((PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}

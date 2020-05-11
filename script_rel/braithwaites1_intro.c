@@ -9008,7 +9008,7 @@ void func_397(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 
@@ -10090,7 +10090,7 @@ int func_442(int iParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(iParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(iParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -17129,7 +17129,7 @@ int func_707(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	iVar0 = func_551(iParam0);
 	if (func_247(iVar0, 0))
 	{
-		if (func_247(PED::_0xB676EFDA03DADA52(iVar0, 0), 0) && !bParam4)
+		if (func_247(PED::_GET_HORSE_RIDER(iVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}

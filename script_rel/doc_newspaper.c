@@ -164,7 +164,7 @@ void func_1(var uParam0, var uParam1)
 int func_2()
 {
 	bool bVar0;
-	bool bVar1;
+	int iVar1;
 
 	bVar0 = PLAYER::PLAYER_PED_ID();
 	if (!ENTITY::DOES_ENTITY_EXIST(bVar0))
@@ -179,16 +179,16 @@ int func_2()
 	{
 		return 0;
 	}
-	bVar1 = TASK::_0xED1F514AF4732258(bVar0);
-	if (!ENTITY::DOES_ENTITY_EXIST(bVar1))
+	iVar1 = TASK::_0xED1F514AF4732258(bVar0);
+	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		return 0;
 	}
-	if (PED::IS_PED_DEAD_OR_DYING(bVar1, true))
+	if (PED::IS_PED_DEAD_OR_DYING(iVar1, true))
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(bVar1))
+	if (!PED::_IS_PED_AN_ANIMAL(iVar1))
 	{
 		return 0;
 	}
@@ -273,7 +273,7 @@ int func_4(var uParam0, var uParam1)
 			{
 				uParam0->f_119.f_4 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(uParam0->f_119, uParam0->f_119.f_3, 1f, 1, false);
 			}
-			uParam0->f_119.f_5 = TASK::_0x295514F198EFD0CA(uParam0->f_119.f_4, "PrimaryItem");
+			uParam0->f_119.f_5 = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_119.f_4, "PrimaryItem");
 			uParam0->f_119.f_6 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(uParam0->f_119.f_5);
 			OBJECT::_SET_APPLY_OBJECT_TXD(uParam0->f_119.f_6, ((*uParam1)[0 /*9*/])->f_3, 0, 0);
 			func_23(uParam0, 9);
@@ -22701,7 +22701,7 @@ int func_741(int iParam0, bool bParam1)
 				if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 				{
 				}
-				else if (ENTITY::_0x9A100F1CF4546629(iVar0) || ENTITY::_0xC346A546612C49A9(iVar0))
+				else if (ENTITY::_0x9A100F1CF4546629(iVar0) || ENTITY::_IS_ENTITY_A_BIRD(iVar0))
 				{
 					iVar21 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar0);
 					iVar1 = func_754(iVar21, &uVar2);
@@ -23109,7 +23109,7 @@ int func_754(int iParam0, var uParam1)
 	{
 		return 0;
 	}
-	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_0xC346A546612C49A9(iParam0))
+	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		return 0;
 	}
@@ -24386,7 +24386,7 @@ int func_799(int iParam0)
 	{
 		return 0;
 	}
-	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_0xC346A546612C49A9(iParam0))
+	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		return 0;
 	}

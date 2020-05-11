@@ -1025,7 +1025,7 @@ void func_8(int iParam0)
 					func_68(iParam0);
 					func_54(&Local_51, 13, 1);
 				}
-				else if (ENTITY::_0x8DE41E9902E85756(&(Local_63.f_1[0])))
+				else if (ENTITY::_GET_IS_LOOTED(&(Local_63.f_1[0])))
 				{
 					if (ENTITY::DOES_ENTITY_EXIST(&(Local_157[0])))
 					{
@@ -5500,7 +5500,7 @@ void func_68(var uParam0)
 		{
 			func_182(1, 0, 0);
 		}
-		if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_39))
+		if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_39))
 		{
 			GRAPHICS::DESTROY_TRACKED_POINT(iLocal_39);
 		}
@@ -6267,7 +6267,7 @@ int func_80(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -18133,7 +18133,7 @@ int func_346(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -25390,7 +25390,7 @@ int func_540(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -25778,7 +25778,7 @@ int func_555(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

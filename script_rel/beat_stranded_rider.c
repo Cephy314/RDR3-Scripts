@@ -4863,7 +4863,7 @@ int func_118(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11643,7 +11643,7 @@ int func_290(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -12031,7 +12031,7 @@ int func_305(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -12935,7 +12935,7 @@ void func_350()
 	{
 		return;
 	}
-	PED::_0x931B241409216C1F(&(uLocal_597[0]), &(uLocal_597[1]), 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_597[0]), &(uLocal_597[1]), 0);
 	if (!func_217(vLocal_527))
 	{
 		if (!TASK::GET_IS_TASK_ACTIVE(&(uLocal_597[1]), 3) || ENTITY::HAS_ANIM_EVENT_FIRED(&(uLocal_597[1]), 330934146))
@@ -17230,7 +17230,7 @@ int func_491(int iParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(iParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(iParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);

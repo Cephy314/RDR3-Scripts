@@ -1210,7 +1210,7 @@ void func_36(int iParam0)
 {
 	func_149(&(iParam0->f_958), 1, 1);
 	func_24(iParam0);
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_181))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_181))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(iLocal_181);
 	}
@@ -1457,7 +1457,7 @@ int func_53(int iParam0)
 	{
 		PED::_0xCB9401F918CB0F75(Global_35, "PlayLeadin", 0, -1);
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_181))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_181))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(iLocal_181);
 	}
@@ -3461,7 +3461,7 @@ void func_155()
 		GRAPHICS::SET_TRACKED_POINT_INFO(iLocal_181, -324.8311f, -357.3004f, 88.64826f, 2f);
 		func_318(9, 1);
 	}
-	if (!GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_181))
+	if (!GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_181))
 	{
 		func_321();
 		func_318(10, 1);
@@ -9479,7 +9479,7 @@ void func_424(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 
@@ -10542,7 +10542,7 @@ int func_468(bool bParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(bParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(bParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -18136,7 +18136,7 @@ int func_759(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_589(iParam0);
 	if (func_255(bVar0, 0))
 	{
-		if (func_255(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_255(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}

@@ -4792,7 +4792,7 @@ void func_122(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4)
 						TASK::OPEN_SEQUENCE_TASK(&iParam2);
 						if (iParam0 == &uLocal_801[0] || iParam0 == &uLocal_801[1])
 						{
-							if (func_36(iParam1, 0, 1) && PED::_0xB676EFDA03DADA52(iParam1, 0) == 0)
+							if (func_36(iParam1, 0, 1) && PED::_GET_HORSE_RIDER(iParam1, false) == 0)
 							{
 								func_326(iParam1);
 								TASK::TASK_MOUNT_ANIMAL(0, iParam1, 20000, -1, 2f, 1, 0, 0);
@@ -10952,7 +10952,7 @@ int func_270(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -17539,7 +17539,7 @@ int func_484(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -17897,7 +17897,7 @@ int func_498(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

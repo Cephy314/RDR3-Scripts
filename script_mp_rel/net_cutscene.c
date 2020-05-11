@@ -7392,7 +7392,7 @@ int func_249(int iParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_34) && !PED::IS_PED_INJURED(Global_34))
 		{
-			if (PED::_0xB676EFDA03DADA52(iParam0, 0) == Global_34)
+			if (PED::_GET_HORSE_RIDER(iParam0, false) == Global_34)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -15192,7 +15192,7 @@ int func_481(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(iParam0))
+	if (ENTITY::_GET_IS_LOOTED(iParam0))
 	{
 		return 0;
 	}

@@ -2534,7 +2534,7 @@ void func_91()
 		else
 		{
 			func_349(&Global_1415398);
-			if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1396257)[&Global_1415398 /*638*/])->f_634))
+			if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1396257)[&Global_1415398 /*638*/])->f_634))
 			{
 				GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1396257)[&Global_1415398 /*638*/])->f_634);
 				((*Global_1396257)[&Global_1415398 /*638*/])->f_634 = 0;
@@ -11743,7 +11743,7 @@ int func_348(int iParam0, bool bParam1, var uParam2)
 					func_841(&(((*Global_1396257)[iParam0 /*638*/])->f_626), 2048, 0);
 					func_841(&(((*Global_1396257)[iParam0 /*638*/])->f_626), 4, 0);
 					func_841(&(((*Global_1396257)[iParam0 /*638*/])->f_626), 16, 1);
-					if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1396257)[iParam0 /*638*/])->f_634))
+					if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1396257)[iParam0 /*638*/])->f_634))
 					{
 						GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1396257)[iParam0 /*638*/])->f_634);
 						((*Global_1396257)[iParam0 /*638*/])->f_634 = 0;
@@ -11762,7 +11762,7 @@ int func_348(int iParam0, bool bParam1, var uParam2)
 	{
 		if (func_840(&(((*Global_1396257)[iParam0 /*638*/])->f_626), 65536))
 		{
-			if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1396257)[iParam0 /*638*/])->f_634))
+			if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1396257)[iParam0 /*638*/])->f_634))
 			{
 				GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1396257)[iParam0 /*638*/])->f_634);
 				((*Global_1396257)[iParam0 /*638*/])->f_634 = 0;
@@ -16315,7 +16315,7 @@ int func_530(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -23057,7 +23057,7 @@ void func_756(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4,
 	{
 		PLAYER::FORCE_CLEANUP_FOR_THREAD_WITH_THIS_ID(((*Global_1835011)[iParam0 /*74*/])->f_16, 1);
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[iParam0 /*74*/])->f_72))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[iParam0 /*74*/])->f_72))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[iParam0 /*74*/])->f_72);
 	}
@@ -29971,7 +29971,7 @@ void func_963(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 
@@ -32538,7 +32538,7 @@ int func_1053(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -32896,7 +32896,7 @@ int func_1067(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

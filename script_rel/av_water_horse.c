@@ -1859,7 +1859,7 @@ int func_31(var uParam0)
 						{
 							PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[0 /*14*/]), 297, true);
 							PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[0 /*14*/]), 130, false);
-							PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
+							PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
 							PED::_0xED1C764997A86D5A(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]));
 							WEAPON::REMOVE_ALL_PED_WEAPONS(&(uParam0->f_20[0 /*14*/]), true, true);
 							WEAPON::_GIVE_WEAPON_TO_PED_2(&(uParam0->f_20[0 /*14*/]), joaat("WEAPON_REVOLVER_CATTLEMAN"), 999, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
@@ -4379,7 +4379,7 @@ int func_113(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6081,7 +6081,7 @@ int func_181(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6453,7 +6453,7 @@ int func_195(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

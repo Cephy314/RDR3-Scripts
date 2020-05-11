@@ -195,7 +195,7 @@ int func_2()
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(iVar1))
+	if (!PED::_IS_PED_AN_ANIMAL(iVar1))
 	{
 		return 0;
 	}
@@ -340,7 +340,7 @@ int func_8(var uParam0, var uParam1)
 			{
 				uParam0->f_93.f_4 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(uParam0->f_93, uParam0->f_93.f_3, 1f, 1, false);
 			}
-			uParam0->f_93.f_5 = TASK::_0x295514F198EFD0CA(uParam0->f_93.f_4, "PrimaryItem");
+			uParam0->f_93.f_5 = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_93.f_4, "PrimaryItem");
 			uParam0->f_93.f_6 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(uParam0->f_93.f_5);
 			OBJECT::_SET_APPLY_OBJECT_TXD(uParam0->f_93.f_6, ((*uParam1)[0 /*11*/])->f_5, 0, 0);
 			func_31(uParam0, 9);
@@ -8014,7 +8014,7 @@ int func_315(int iParam0)
 		iVar1 = func_332(&(uVar2[0]));
 		if (iVar1 == iParam0)
 		{
-			if (ENTITY::_0x8DE41E9902E85756(&(uVar2[0])))
+			if (ENTITY::_GET_IS_LOOTED(&(uVar2[0])))
 			{
 				return 1;
 			}
@@ -8038,7 +8038,7 @@ int func_315(int iParam0)
 				iVar1 = func_333(iVar4[iVar8]);
 				if (iVar1 == iParam0)
 				{
-					if (ENTITY::_0x8DE41E9902E85756(&(iVar4[iVar8])))
+					if (ENTITY::_GET_IS_LOOTED(&(iVar4[iVar8])))
 					{
 						return 1;
 					}
@@ -8311,7 +8311,7 @@ int func_332(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_0xC346A546612C49A9(iParam0))
+	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		iVar0 = func_333(&iParam0);
 		if (!func_21(iVar0, 0))
@@ -9028,7 +9028,7 @@ int func_341(int iParam0)
 	}
 	if (iVar5 != 0)
 	{
-		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_0x8DE41E9902E85756(iVar0))
+		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_GET_IS_LOOTED(iVar0))
 		{
 			iVar6 = func_346(iVar5);
 			if (iVar6 != 0)

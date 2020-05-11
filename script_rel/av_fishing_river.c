@@ -1926,7 +1926,7 @@ int func_31(var uParam0)
 				MISC::_0x870708A6E147A9AD(&(uParam0->f_20[0 /*14*/]), "", 35f, 35f, 8, 0, 0, 0, 0, -1);
 				if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])))
 				{
-					PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
 					if (*uParam0 != 44)
 					{
 						PED::_0xED1C764997A86D5A(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]));
@@ -1952,7 +1952,7 @@ int func_31(var uParam0)
 					VOLUME::_0x4A8FEFC43FD8AC9B(iLocal_13, 0, 1);
 					PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[1 /*14*/]), 297, true);
 					PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[1 /*14*/]), 130, false);
-					PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
 					MISC::_0x870708A6E147A9AD(&(uParam0->f_20[1 /*14*/]), "", 2f, 2f, 8, 0, 0, 0, 0, -1);
 					TASK::TASK_ANIMAL_UNALERTED(&(uParam0->f_20[1 /*14*/]), -1, bLocal_12, 0, 0);
 					PED::SET_PED_KEEP_TASK(&(uParam0->f_20[1 /*14*/]), true);
@@ -5476,7 +5476,7 @@ int func_157(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6766,7 +6766,7 @@ int func_207(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -7138,7 +7138,7 @@ int func_221(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

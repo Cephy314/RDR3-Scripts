@@ -1745,7 +1745,7 @@ int func_33()
 			}
 			if (iLocal_228 != 2)
 			{
-				PED::_0x931B241409216C1F(&(uLocal_1389[0]), &(uLocal_1389[1]), 0);
+				PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_1389[0]), &(uLocal_1389[1]), 0);
 				PED::SET_PED_CONFIG_FLAG(&(uLocal_1389[1]), 284, true);
 				func_136(&(Local_26.f_5), &(uLocal_1389[0]), &(uLocal_1389[1]), 0);
 				PED::SET_PED_CONFIG_FLAG(&(uLocal_1389[0]), 250, true);
@@ -6024,7 +6024,7 @@ int func_178(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -13654,7 +13654,7 @@ int func_410(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -14042,7 +14042,7 @@ int func_425(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -15460,7 +15460,7 @@ int func_478(int iParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(iParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(iParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -15643,7 +15643,7 @@ void func_488(int iParam0)
 		{
 			MAP::REMOVE_BLIP(&(((*Global_1900383)[iParam0 /*45*/])->f_26));
 		}
-		if (iVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) && bVar3)
+		if (iVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) && bVar3)
 		{
 			if (!MAP::DOES_BLIP_EXIST(((*Global_1900383)[iParam0 /*45*/])->f_27))
 			{
@@ -15874,7 +15874,7 @@ void func_488(int iParam0)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar18);
 	}
-	if ((PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) == iVar0 && bVar3) && !bVar9)
+	if ((PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) == iVar0 && bVar3) && !bVar9)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}
@@ -20339,7 +20339,7 @@ void func_658(int iParam0, var uParam1, int iParam2)
 					{
 						TASK::CLEAR_PED_TASKS(iParam2, 1, 0);
 					}
-					PED::_0x931B241409216C1F(iParam0, iParam2, 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(iParam0, iParam2, 0);
 					PED::SET_PED_CONFIG_FLAG(iParam0, 167, true);
 					PED::SET_PED_CONFIG_FLAG(iParam0, 321, true);
 					PED::SET_PED_CONFIG_FLAG(iParam2, 178, true);

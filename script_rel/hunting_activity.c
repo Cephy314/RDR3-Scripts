@@ -511,7 +511,7 @@ void func_15(var uParam0)
 			}
 			else if (!ITEMSET::IS_IN_ITEMSET(iVar2, iLocal_72))
 			{
-				if (ENTITY::_0x8DE41E9902E85756(iVar2))
+				if (ENTITY::_GET_IS_LOOTED(iVar2))
 				{
 					ITEMSET::ADD_TO_ITEMSET(iVar2, iLocal_72);
 					uParam0->f_48 = (uParam0->f_48 + func_40(uParam0, iVar2));
@@ -1370,13 +1370,13 @@ int func_73(int iParam0)
 	return (Global_1058888->f_40501.f_1[iVar0 /*2*/])->f_1;
 }
 
-int func_74(int iParam0, int iParam1, int iParam2)
+int func_74(int iParam0, var uParam1, var uParam2)
 {
 	int iVar0;
 
 	iVar0 = func_79(iParam0, 1);
-	*iParam1 = (iVar0 / 31);
-	*iParam2 = (iVar0 % 31);
+	*uParam1 = (iVar0 / 31);
+	*uParam2 = (iVar0 % 31);
 	return 1;
 }
 

@@ -1968,7 +1968,7 @@ int func_102(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_79(iParam0);
 	if (func_59(bVar0, 0))
 	{
-		if (func_59(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_59(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}

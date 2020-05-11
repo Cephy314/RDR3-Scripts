@@ -4511,7 +4511,7 @@ int func_189()
 			func_255();
 			return 1;
 		}
-		else if (ENTITY::_0x8DE41E9902E85756(func_198(1)))
+		else if (ENTITY::_GET_IS_LOOTED(func_198(1)))
 		{
 			func_254();
 			func_255();
@@ -5633,7 +5633,7 @@ void func_233()
 							}
 						}
 					}
-					else if (ENTITY::_0x8DE41E9902E85756(iVar1))
+					else if (ENTITY::_GET_IS_LOOTED(iVar1))
 					{
 						if (func_303())
 						{
@@ -5707,14 +5707,14 @@ void func_233()
 				{
 					if (ENTITY::IS_ENTITY_DEAD(iVar0) && ENTITY::IS_ENTITY_DEAD(func_198(2)))
 					{
-						if (ENTITY::_0x8DE41E9902E85756(iVar1))
+						if (ENTITY::_GET_IS_LOOTED(iVar1))
 						{
 							func_304();
 							func_285(4);
 						}
 					}
 				}
-				if (ENTITY::_0x8DE41E9902E85756(iVar1))
+				if (ENTITY::_GET_IS_LOOTED(iVar1))
 				{
 					func_303();
 				}
@@ -7330,7 +7330,7 @@ int func_256(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -7701,7 +7701,7 @@ int func_272(int iParam0, vector3 vParam1, int iParam4, int iParam5)
 	{
 		if (TASK::_0xEA31F199A73801D3(iParam4))
 		{
-			iVar1 = TASK::_0x295514F198EFD0CA(iParam4, "CONTAINER");
+			iVar1 = TASK::_GET_SCENARIO_PROPSET_ENTITY(iParam4, "CONTAINER");
 			if (ENTITY::IS_ENTITY_AN_OBJECT(iVar1))
 			{
 				iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1);
@@ -9692,7 +9692,7 @@ int func_345(int iParam0, var uParam1)
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11886,7 +11886,7 @@ int func_435(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -12279,7 +12279,7 @@ int func_451(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

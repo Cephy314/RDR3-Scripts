@@ -562,7 +562,7 @@ void func_33(var uParam0)
 
 void func_34(var uParam0)
 {
-	if (PED::_0xB676EFDA03DADA52(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(uParam0->f_6), 0) == Global_34)
+	if (PED::_GET_HORSE_RIDER(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(uParam0->f_6), false) == Global_34)
 	{
 		if (!func_18(uParam0, 4))
 		{
@@ -669,7 +669,7 @@ int func_41(int iParam0, bool bParam1)
 		if (func_66(iParam0) != bParam1)
 		{
 			DECORATOR::DECOR_SET_BOOL(iParam0, func_67(), bParam1);
-			if (TASK::_0x0CCFE72B43C9CF96(iParam0))
+			if (TASK::_TASK_IS_CARRIABLE(iParam0))
 			{
 				ENTITY::_0x18FF3110CF47115D(iParam0, 2, !bParam1);
 				ENTITY::_0x18FF3110CF47115D(iParam0, 3, !bParam1);

@@ -737,7 +737,7 @@ void func_9(var uParam0)
 		func_74(Local_14.f_4[iVar0]);
 		iVar0++;
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(Local_14.f_8))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(Local_14.f_8))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(Local_14.f_8);
 	}

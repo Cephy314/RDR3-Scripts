@@ -2987,7 +2987,7 @@ void func_98(var uParam0, int iParam1)
 
 	if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_3))
 	{
-		iVar0 = TASK::_0x295514F198EFD0CA(uParam0->f_4, "PrimaryItem");
+		iVar0 = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_4, "PrimaryItem");
 		if (ENTITY::DOES_ENTITY_EXIST(iVar0) && ENTITY::GET_ENTITY_MODEL(iVar0) != func_196(iParam1))
 		{
 			STREAMING::REQUEST_MODEL(func_196(iParam1), false);
@@ -7070,7 +7070,7 @@ int func_265(vector3 vParam0)
 {
 	int iVar0;
 
-	if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+	if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 	{
 		iVar0 = INTERIOR::GET_INTERIOR_FROM_COLLISION(vParam0);
 		if (INTERIOR::IS_VALID_INTERIOR(iVar0))

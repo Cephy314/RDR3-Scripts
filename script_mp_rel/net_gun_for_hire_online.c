@@ -24233,7 +24233,7 @@ int func_986(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(iParam0))
+	if (ENTITY::_GET_IS_LOOTED(iParam0))
 	{
 		return 0;
 	}

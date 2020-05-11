@@ -218,7 +218,7 @@ void func_3(var uParam0)
 					func_27(func_26(joaat("KILLED"), func_24(*uParam0)), 1);
 					func_27(func_26(joaat("SKINNED"), func_24(*uParam0)), 1);
 					STATS::_0xA59590050F80FF2E(func_24(*uParam0), 0, 1, 0);
-					ENTITY::_0x6BCF5F3D8FFE988D(uParam0->f_12, 1);
+					ENTITY::_SET_IS_LOOTED(uParam0->f_12, true);
 					TASK::_0xA21AA2F0C2180125(ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(uParam0->f_12), 0);
 					_NAMESPACE49::_0x9D16896F0DBE78A2(ENTITY::GET_ENTITY_COORDS(uParam0->f_12, true, false), 1f);
 				}
@@ -1772,7 +1772,7 @@ int func_54(var uParam0)
 	{
 		return 1;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(uParam0->f_12) && !func_21(Global_35))
+	if (ENTITY::_GET_IS_LOOTED(uParam0->f_12) && !func_21(Global_35))
 	{
 		return 1;
 	}

@@ -708,7 +708,7 @@ int func_21(var uParam0)
 			iVar1++;
 		}
 	}
-	if (ENTITY::_0x61914209C36EFDDB(uParam0->f_42) == 5)
+	if (ENTITY::_GET_ENTITY_STATUS(uParam0->f_42) == 5)
 	{
 		func_36(2, joaat("HONOR_EVENT_THEFT"), 0, 0, 0, 0, 1065353216 /* Float: 1f */, 0);
 		return 1;

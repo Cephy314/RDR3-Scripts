@@ -1798,7 +1798,7 @@ int func_42()
 				PED::SET_PED_HEARING_RANGE(&(uLocal_810[1]), 10f);
 				if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_810[4])))
 				{
-					PED::_0x931B241409216C1F(&(uLocal_810[1]), &(uLocal_810[4]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_810[1]), &(uLocal_810[4]), 0);
 					func_117(&(Local_351.f_5), &(uLocal_810[1]), &(uLocal_810[4]), 0);
 				}
 				PED::SET_PED_CONFIG_FLAG(&(uLocal_810[1]), 6, true);
@@ -1819,7 +1819,7 @@ int func_42()
 				PED::SET_PED_HEARING_RANGE(&(uLocal_810[2]), 10f);
 				if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_810[5])))
 				{
-					PED::_0x931B241409216C1F(&(uLocal_810[2]), &(uLocal_810[5]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_810[2]), &(uLocal_810[5]), 0);
 					func_117(&(Local_351.f_5), &(uLocal_810[2]), &(uLocal_810[5]), 0);
 				}
 				PED::SET_PED_CONFIG_FLAG(&(uLocal_810[2]), 6, true);
@@ -1838,7 +1838,7 @@ int func_42()
 				PED::SET_PED_HEARING_RANGE(&(uLocal_810[3]), 10f);
 				if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_810[6])))
 				{
-					PED::_0x931B241409216C1F(&(uLocal_810[3]), &(uLocal_810[6]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_810[3]), &(uLocal_810[6]), 0);
 					func_117(&(Local_351.f_5), &(uLocal_810[3]), &(uLocal_810[6]), 0);
 				}
 				PED::SET_PED_CONFIG_FLAG(&(uLocal_810[3]), 6, true);
@@ -5909,7 +5909,7 @@ int func_151(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -13119,7 +13119,7 @@ int func_363(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -13507,7 +13507,7 @@ int func_378(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -14417,7 +14417,7 @@ int func_411(int iParam0, int iParam1, bool bParam2, float fParam3, int iParam4)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam1))
 		{
-			if (!PED::IS_PED_ON_MOUNT(iParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_0xB676EFDA03DADA52(iParam1, 0)))
+			if (!PED::IS_PED_ON_MOUNT(iParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_GET_HORSE_RIDER(iParam1, false)))
 			{
 				ENTITY::SET_ENTITY_INVINCIBLE(iParam1, bParam2);
 				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 1868526510, true) != 1)

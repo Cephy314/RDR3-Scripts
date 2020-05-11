@@ -1262,13 +1262,13 @@ void func_62()
 void func_63(bool bParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 
 	iVar0 = 565;
-	bVar1 = func_53(iVar0);
-	if (ENTITY::DOES_ENTITY_EXIST(bVar1))
+	iVar1 = func_53(iVar0);
+	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
-		PED::_0x931B241409216C1F(bVar1, bParam0, 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(iVar1, bParam0, 0);
 	}
 }
 
@@ -3409,7 +3409,7 @@ var func_117(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 

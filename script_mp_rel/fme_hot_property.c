@@ -9935,7 +9935,7 @@ void func_519()
 		else
 		{
 			iVar2 = NETWORK::NET_TO_ENT(&(uLocal_0[iVar0]));
-			if (ENTITY::DOES_ENTITY_EXIST(iVar2) && TASK::_0x0CCFE72B43C9CF96(iVar2))
+			if (ENTITY::DOES_ENTITY_EXIST(iVar2) && TASK::_TASK_IS_CARRIABLE(iVar2))
 			{
 				iVar1 = PED::_0x09B83E68DE004CD4(iVar2);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1) && NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar1) == 255)
@@ -16866,7 +16866,7 @@ struct<12> func_852()
 			Var0 = 3;
 			Var0.f_1 = ENTITY::GET_ENTITY_HEALTH(iVar12);
 			Var0.f_8 = 3;
-			Var0.f_9 = PED::_0x775A1CA7893AA8B5(iVar12);
+			Var0.f_9 = PED::_GET_PED_STAMINA(iVar12);
 			Var0.f_4 = 3;
 			Var0.f_5 = PLAYER::_0xA81D24AE0AF99A5E(iVar13);
 			Var0.f_2 = 3;
@@ -24071,8 +24071,8 @@ void func_1128(float fParam0, int iParam1)
 	{
 		return;
 	}
-	fVar0 = (fParam0 - PED::_0x775A1CA7893AA8B5(iParam1));
-	PED::_0xC3D4B754C0E86B9E(iParam1, fVar0);
+	fVar0 = (fParam0 - PED::_GET_PED_STAMINA(iParam1));
+	PED::_CHARGE_PED_STAMINA(iParam1, fVar0);
 }
 
 float func_1129()
@@ -31016,7 +31016,7 @@ int func_1416(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	PED::_0x96C349DE04C49011(*uParam0, ((*uParam1)[iVar0 /*18*/])->f_2);
+	PED::_REMOVE_PED_OVERLAY(*uParam0, ((*uParam1)[iVar0 /*18*/])->f_2);
 	func_1417(uParam0, uParam1, iVar0);
 	return 1;
 }
@@ -34404,7 +34404,7 @@ void func_1543(var uParam0, var uParam1, var uParam2, var uParam3)
 	uParam0->f_2 = uParam1;
 	uParam0->f_3 = uParam2;
 	uParam0->f_4 = uParam3;
-	PED::_0x253A63B5BADBC398(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
+	PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
 }
 
 void func_1544(var uParam0, var uParam1, int iParam2)
@@ -34423,12 +34423,12 @@ void func_1545(var uParam0, var uParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		PED::_0x253A63B5BADBC398(*uParam0, uParam1->f_2, uParam1->f_3, uParam1->f_4, uParam1->f_5);
+		PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, uParam1->f_2, uParam1->f_3, uParam1->f_4, uParam1->f_5);
 	}
 	if (uParam1->f_9 != 0)
 	{
-		PED::_0x1ED8588524AC9BE1(*uParam0, uParam1->f_2, uParam1->f_9);
-		PED::_0x2DF59FFE6FFD6044(*uParam0, uParam1->f_2, uParam1->f_10, uParam1->f_11, uParam1->f_12);
+		PED::_SET_PED_OVERLAY_PALETTE(*uParam0, uParam1->f_2, uParam1->f_9);
+		PED::_SET_PED_OVERLAY_COLOUR(*uParam0, uParam1->f_2, uParam1->f_10, uParam1->f_11, uParam1->f_12);
 	}
 	if (uParam1->f_7 != 0)
 	{
@@ -34438,8 +34438,8 @@ void func_1545(var uParam0, var uParam1, bool bParam2)
 	{
 		PED::_0x057C4F092E2298BE(*uParam0, uParam1->f_2, uParam1->f_15);
 	}
-	PED::_0x3329AAE2882FC8E4(*uParam0, uParam1->f_2, uParam1->f_6);
-	PED::_0x6C76BC24F8BB709A(*uParam0, uParam1->f_2, uParam1->f_13);
+	PED::_SEP_PED_OVERLAY_VARIATION(*uParam0, uParam1->f_2, uParam1->f_6);
+	PED::_SET_PED_OVERLAY_OPACITY(*uParam0, uParam1->f_2, uParam1->f_13);
 }
 
 int func_1546(var uParam0, int iParam1, var uParam2, int iParam3, bool bParam4)
@@ -35755,7 +35755,7 @@ void func_1598(float fParam0, int iParam1)
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(iParam1, fParam0);
+	PED::_CHARGE_PED_STAMINA(iParam1, fParam0);
 }
 
 int func_1599(var uParam0, int iParam1, int iParam2, bool bParam3, int iParam4)
@@ -37751,7 +37751,7 @@ void func_1673(var uParam0, var uParam1)
 	{
 		if (((*uParam1)[iVar0 /*18*/])->f_1 < ((*uParam1)[(iVar0 - 1) /*18*/])->f_1)
 		{
-			PED::_0x96C349DE04C49011(*uParam0, ((*uParam1)[(iVar0 - 1) /*18*/])->f_2);
+			PED::_REMOVE_PED_OVERLAY(*uParam0, ((*uParam1)[(iVar0 - 1) /*18*/])->f_2);
 			Var2 = { *((*uParam1)[iVar0 /*18*/]) };
 			*((*uParam1)[iVar0 /*18*/]) = { *((*uParam1)[(iVar0 - 1) /*18*/]) };
 			*((*uParam1)[(iVar0 - 1) /*18*/]) = { Var2 };
@@ -37775,7 +37775,7 @@ void func_1673(var uParam0, var uParam1)
 
 void func_1674(var uParam0, var uParam1)
 {
-	uParam1->f_2 = PED::_0x86BB5FF45F193A02(*uParam0, uParam1->f_3, uParam1->f_4, uParam1->f_5, uParam1->f_16, uParam1->f_13, uParam1->f_6);
+	uParam1->f_2 = PED::_ADD_PED_OVERLAY(*uParam0, uParam1->f_3, uParam1->f_4, uParam1->f_5, uParam1->f_16, uParam1->f_13, uParam1->f_6);
 	func_1545(uParam0, uParam1, 0);
 }
 

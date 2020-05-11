@@ -5547,7 +5547,7 @@ int func_259(int iParam0)
 
 bool func_260(int iParam0)
 {
-	return ENTITY::_0x8DE41E9902E85756(iParam0);
+	return ENTITY::_GET_IS_LOOTED(iParam0);
 }
 
 void func_261(int iParam0)

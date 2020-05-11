@@ -4071,7 +4071,7 @@ int func_114(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_111(iParam0);
 	if (func_127(bVar0, 0))
 	{
-		if (func_127(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_127(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -9133,7 +9133,7 @@ int func_331(vector3 vParam0)
 {
 	if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_AT_COORDS(vParam0)))
 	{
-		if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+		if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 		{
 			return 1;
 		}
@@ -14502,7 +14502,7 @@ void func_498(bool bParam0, int iParam1)
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(func_267(iParam1)))
 	{
-		PED::_0x931B241409216C1F(func_267(iParam1), bParam0, 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_267(iParam1), bParam0, 0);
 		PED::_0xED1C764997A86D5A(func_267(iParam1), bParam0);
 		PED::SET_PED_CONFIG_FLAG(bParam0, 367, true);
 	}

@@ -3041,7 +3041,7 @@ void func_73(int iParam0, bool bParam1, int iParam2)
 	else if (ENTITY::_0x9A100F1CF4546629(iParam0))
 	{
 		iVar0 = func_326(iParam0);
-		func_327(iVar0, ENTITY::_0xC346A546612C49A9(iParam0));
+		func_327(iVar0, ENTITY::_IS_ENTITY_A_BIRD(iParam0));
 	}
 	if (bParam1)
 	{
@@ -5226,7 +5226,7 @@ int func_165(char[4] cParam0)
 		}
 		if (iLocal_15 == 3)
 		{
-			if (((((ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 0, Global_35) == 0 && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar1, &(uLocal_979[1]), 2, Global_35) == 0) && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar2, &(uLocal_979[1]), 1, Global_35) == 0) && !ENTITY::_0x8DE41E9902E85756(&(uLocal_979[1]))) && !PED::_0x3AEC4A410ECAF30D(&(uLocal_979[1]))) && func_390(Global_35, &(uLocal_979[1]), 1, 1) > 1f)
+			if (((((ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 0, Global_35) == 0 && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar1, &(uLocal_979[1]), 2, Global_35) == 0) && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar2, &(uLocal_979[1]), 1, Global_35) == 0) && !ENTITY::_GET_IS_LOOTED(&(uLocal_979[1]))) && !PED::_0x3AEC4A410ECAF30D(&(uLocal_979[1]))) && func_390(Global_35, &(uLocal_979[1]), 1, 1) > 1f)
 			{
 				func_481(cParam0, "FAIL_EMERALD");
 				return 1;
@@ -11072,14 +11072,14 @@ int func_352(char[4] cParam0)
 				{
 				}
 			}
-			if (((func_390(Global_35, &(uLocal_979[0]), 1, 1) <= 3.5f && !bLocal_1257) && !func_391()) && !ENTITY::_0x8DE41E9902E85756(&(uLocal_979[1])))
+			if (((func_390(Global_35, &(uLocal_979[0]), 1, 1) <= 3.5f && !bLocal_1257) && !func_391()) && !ENTITY::_GET_IS_LOOTED(&(uLocal_979[1])))
 			{
 				if (func_392(&(cParam0->f_2106), "LS_EMR_POCKETS", 0))
 				{
 					bLocal_1257 = true;
 				}
 			}
-			else if (ENTITY::_0x8DE41E9902E85756(&(uLocal_979[1])))
+			else if (ENTITY::_GET_IS_LOOTED(&(uLocal_979[1])))
 			{
 				bLocal_1257 = true;
 			}
@@ -11119,7 +11119,7 @@ int func_352(char[4] cParam0)
 					}
 				}
 			}
-			else if ((((((((ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 0, Global_35) == 0 && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 2, Global_35) == 0) && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 1, Global_35) == 0) && !ENTITY::_0x8DE41E9902E85756(&(uLocal_979[1]))) && !func_822(Global_35, 0)) && !func_822(Global_35, 2)) && !func_822(Global_35, 1)) && !PED::_0x3AEC4A410ECAF30D(&(uLocal_979[1]))) && func_390(Global_35, &(uLocal_979[1]), 1, 1) <= 1f)
+			else if ((((((((ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 0, Global_35) == 0 && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 2, Global_35) == 0) && ENTITY::_0x0CCEFC6C2C95DA2A(&uVar0, &(uLocal_979[1]), 1, Global_35) == 0) && !ENTITY::_GET_IS_LOOTED(&(uLocal_979[1]))) && !func_822(Global_35, 0)) && !func_822(Global_35, 2)) && !func_822(Global_35, 1)) && !PED::_0x3AEC4A410ECAF30D(&(uLocal_979[1]))) && func_390(Global_35, &(uLocal_979[1]), 1, 1) <= 1f)
 			{
 				func_72(joaat("MONEY_LOANSHARK_LILLY_DEBT"), 1, 0, 0, 0, -897553835, 0, 0, 0, 0);
 				func_73(&(uLocal_979[1]), 1, 0);
@@ -14028,7 +14028,7 @@ int func_442(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -24473,9 +24473,9 @@ void func_820(char[4] cParam0)
 	iLocal_14 = 1;
 }
 
-bool func_821(bool bParam0)
+bool func_821(int iParam0)
 {
-	return ENTITY::_0x8DE41E9902E85756(bParam0);
+	return ENTITY::_GET_IS_LOOTED(iParam0);
 }
 
 int func_822(int iParam0, int iParam1)
@@ -29300,7 +29300,7 @@ int func_958(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -29658,7 +29658,7 @@ int func_972(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -42019,7 +42019,7 @@ int func_1483(bool bParam0)
 
 	if (ENTITY::DOES_ENTITY_EXIST(bParam0) && !PED::IS_PED_INJURED(bParam0))
 	{
-		iVar0 = ENTITY::_0x61914209C36EFDDB(bParam0);
+		iVar0 = ENTITY::_GET_ENTITY_STATUS(bParam0);
 		if (iVar0 == 1)
 		{
 			return iVar0;
@@ -44814,7 +44814,7 @@ int func_1566(bool bParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(bParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(bParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -47104,7 +47104,7 @@ void func_1671(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 

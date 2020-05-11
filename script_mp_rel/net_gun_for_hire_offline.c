@@ -13834,7 +13834,7 @@ void func_364(var uParam0, var uParam1, int iParam2)
 		(uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/] = PED::_0x4D0D2E3D8BC000EB(&(uParam0->f_112.f_200[iParam2 /*156*/]), &(((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/])->f_1), 0);
 		if (!ENTITY::DOES_ENTITY_EXIST(&((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/])))
 		{
-			(uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/] = TASK::_0x295514F198EFD0CA((uParam0->f_112.f_200[iParam2 /*156*/])->f_47, &(((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/])->f_1));
+			(uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/] = TASK::_GET_SCENARIO_PROPSET_ENTITY((uParam0->f_112.f_200[iParam2 /*156*/])->f_47, &(((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/])->f_1));
 			if (!ENTITY::DOES_ENTITY_EXIST(&((uParam0->f_112.f_200[iParam2 /*156*/])->f_47.f_56[iVar0 /*9*/])))
 			{
 			}
@@ -25793,7 +25793,7 @@ void func_913(var uParam0, char* sParam1, bool bParam2)
 							iVar3 = TASK::_0xDF7993356F52359A(&(sParam1->f_227[iVar1 /*26*/]), 1);
 							if (TASK::_DOES_SCENARIO_POINT_EXIST(iVar3))
 							{
-								sParam1->f_70[iVar0 /*26*/] = TASK::_0x295514F198EFD0CA(iVar3, &((sParam1->f_70[iVar0 /*26*/])->f_1.f_17));
+								sParam1->f_70[iVar0 /*26*/] = TASK::_GET_SCENARIO_PROPSET_ENTITY(iVar3, &((sParam1->f_70[iVar0 /*26*/])->f_1.f_17));
 								if (ENTITY::DOES_ENTITY_EXIST(&(sParam1->f_70[iVar0 /*26*/])))
 								{
 									ENTITY::SET_ENTITY_AS_MISSION_ENTITY(&(sParam1->f_70[iVar0 /*26*/]), true, true);
@@ -26393,7 +26393,7 @@ void func_935(var uParam0, var uParam1, int iParam2)
 						sVar2 = func_176((uParam0->f_948.f_1[iVar1 /*21*/])->f_5);
 						if (!MISC::IS_STRING_NULL_OR_EMPTY(sVar2))
 						{
-							iVar4 = TASK::_0x295514F198EFD0CA((uParam0->f_112.f_200[iParam2 /*156*/])->f_47, sVar2);
+							iVar4 = TASK::_GET_SCENARIO_PROPSET_ENTITY((uParam0->f_112.f_200[iParam2 /*156*/])->f_47, sVar2);
 							if (ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar4) == &uParam0->f_948.f_1[iVar1 /*21*/])
 							{
 								return;

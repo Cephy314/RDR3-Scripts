@@ -1812,7 +1812,7 @@ int func_31(var uParam0)
 				PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[0 /*14*/]), 297, true);
 				PED::SET_PED_CONFIG_FLAG(&(uParam0->f_20[0 /*14*/]), 130, false);
 				WEAPON::SET_CURRENT_PED_WEAPON(&(uParam0->f_20[0 /*14*/]), joaat("WEAPON_UNARMED"), true, 0, false, false);
-				PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
+				PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
 				func_69(&(uParam0->f_20[1 /*14*/]), (uParam0->f_20[0 /*14*/])->f_5, (uParam0->f_20[0 /*14*/])->f_8, 2, 1073741824 /* Float: 2f */);
 				func_70(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 1, -1, 1);
 				ENTITY::ATTACH_ENTITY_TO_ENTITY(&(uParam0->f_372[0 /*8*/]), &(uParam0->f_20[1 /*14*/]), PED::GET_PED_BONE_INDEX(&(uParam0->f_20[1 /*14*/]), 62111), -0.32f, 0.05f, -0.22f, 0f, 53f, 0f, false, false, false, false, 2, true, true, false);
@@ -4703,7 +4703,7 @@ int func_139(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -5976,7 +5976,7 @@ int func_185(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6348,7 +6348,7 @@ int func_199(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

@@ -3779,7 +3779,7 @@ int func_118(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -5451,9 +5451,9 @@ void func_165(int iParam0)
 	}
 }
 
-bool func_166(var uParam0)
+bool func_166(int iParam0)
 {
-	return ENTITY::_0x8DE41E9902E85756(uParam0);
+	return ENTITY::_GET_IS_LOOTED(iParam0);
 }
 
 int func_167()
@@ -10063,7 +10063,7 @@ int func_297(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -10451,7 +10451,7 @@ int func_312(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

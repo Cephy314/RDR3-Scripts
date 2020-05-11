@@ -2501,7 +2501,7 @@ int func_79(int iParam0)
 			}
 			else if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_1176[iParam0])))
 			{
-				iLocal_1176[iParam0] = TASK::_0x295514F198EFD0CA(&(iLocal_1174[iParam0]), "PrimaryItem");
+				iLocal_1176[iParam0] = TASK::_GET_SCENARIO_PROPSET_ENTITY(&(iLocal_1174[iParam0]), "PrimaryItem");
 			}
 			else
 			{

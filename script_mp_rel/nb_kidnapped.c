@@ -5443,7 +5443,7 @@ void func_219()
 	while (iVar0 < 4)
 	{
 		iVar1[iVar0] = func_190(iVar0);
-		if ((((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(iVar1[iVar0]), iVar6, 1, 1) || func_290(&(iVar1[iVar0]), 0, &(Local_809.f_18.f_26), &(Local_809.f_18.f_57), 0, 0)) || func_291()) || func_292(PLAYER::PLAYER_PED_ID())) || ENTITY::_0x61914209C36EFDDB(iVar7) == 10)
+		if ((((ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(iVar1[iVar0]), iVar6, 1, 1) || func_290(&(iVar1[iVar0]), 0, &(Local_809.f_18.f_26), &(Local_809.f_18.f_57), 0, 0)) || func_291()) || func_292(PLAYER::PLAYER_PED_ID())) || ENTITY::_GET_ENTITY_STATUS(iVar7) == 10)
 		{
 			func_293();
 			func_255(0);
@@ -6971,10 +6971,10 @@ int func_270()
 	int iVar5;
 
 	iVar0 = func_190(0);
-	iVar5 = ENTITY::_0x61914209C36EFDDB(iVar0);
+	iVar5 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 	if (iVar5 == 7)
 	{
-		iVar1 = PED::_0xA033D7E4BBF9844D(iVar0);
+		iVar1 = PED::_GET_HORSE_CARRIER_OF_PED(iVar0);
 		iVar4 = 0;
 		while (iVar4 < 32)
 		{
@@ -8680,7 +8680,7 @@ int func_319()
 	{
 		return 0;
 	}
-	iVar1 = ENTITY::_0x61914209C36EFDDB(iVar0);
+	iVar1 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 	if (iVar1 == 10 && !TASK::IS_PED_GETTING_UP(iVar0))
 	{
 		return 1;
@@ -9704,7 +9704,7 @@ int func_358(int iParam0, var uParam1)
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11467,7 +11467,7 @@ void func_417()
 		return;
 	}
 	iVar0 = func_190(0);
-	iVar1 = ENTITY::_0x61914209C36EFDDB(iVar0);
+	iVar1 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 	if (iVar1 != 10 && (iVar1 == 3 || iVar1 == 7))
 	{
 		func_498("NB_KIDNAPPED_HELP_VIC_UNTIE", 10000, 0, 0, 0, 1);
@@ -11491,7 +11491,7 @@ void func_418()
 	{
 		return;
 	}
-	if (ENTITY::_0x61914209C36EFDDB(iVar0) != 7)
+	if (ENTITY::_GET_ENTITY_STATUS(iVar0) != 7)
 	{
 		func_294(NETWORK::PARTICIPANT_ID_TO_INT(), 26);
 		return;
@@ -11535,7 +11535,7 @@ void func_419()
 	if (!func_254(5))
 	{
 		iVar0 = func_190(0);
-		iVar1 = ENTITY::_0x61914209C36EFDDB(iVar0);
+		iVar1 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 		if (iVar1 == 3 && iVar1 != 10)
 		{
 			func_499();
@@ -11587,7 +11587,7 @@ void func_420()
 	{
 		return;
 	}
-	iVar1 = ENTITY::_0x61914209C36EFDDB(iVar0);
+	iVar1 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 	if (iVar1 == 10)
 	{
 		return;
@@ -12261,7 +12261,7 @@ int func_447(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -12654,7 +12654,7 @@ int func_463(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

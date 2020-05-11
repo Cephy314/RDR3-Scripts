@@ -2366,7 +2366,7 @@ int func_87(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 				}
 				if ((bParam0 == 15 && Global_1357549->f_1494 & 32768 != 0) && func_239(Global_35, func_238(bParam0), 50f, 1, 1))
 				{
-					if (!GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[bParam0 /*74*/])->f_72))
+					if (!GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[bParam0 /*74*/])->f_72))
 					{
 						((*Global_1835011)[bParam0 /*74*/])->f_72 = GRAPHICS::CREATE_TRACKED_POINT();
 						GRAPHICS::SET_TRACKED_POINT_INFO(((*Global_1835011)[bParam0 /*74*/])->f_72, func_238(bParam0), 5f);
@@ -2388,7 +2388,7 @@ int func_87(bool bParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		((*Global_1835011)[bParam0 /*74*/])->f_73 = 0;
 		func_242(bParam0);
-		if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[bParam0 /*74*/])->f_72))
+		if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[bParam0 /*74*/])->f_72))
 		{
 			GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[bParam0 /*74*/])->f_72);
 		}
@@ -5416,7 +5416,7 @@ void func_245(bool bParam0, int iParam1, bool bParam2, int iParam3, bool bParam4
 	{
 		PLAYER::FORCE_CLEANUP_FOR_THREAD_WITH_THIS_ID(((*Global_1835011)[bParam0 /*74*/])->f_16, 1);
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[bParam0 /*74*/])->f_72))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[bParam0 /*74*/])->f_72))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[bParam0 /*74*/])->f_72);
 	}

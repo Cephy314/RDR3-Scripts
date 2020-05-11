@@ -2612,7 +2612,7 @@ void func_73(int iParam0, int iParam1, bool bParam2, int iParam3, bool bParam4, 
 	{
 		PLAYER::FORCE_CLEANUP_FOR_THREAD_WITH_THIS_ID(((*Global_1835011)[iParam0 /*74*/])->f_16, 1);
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(((*Global_1835011)[iParam0 /*74*/])->f_72))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[iParam0 /*74*/])->f_72))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[iParam0 /*74*/])->f_72);
 	}
@@ -7080,8 +7080,8 @@ void func_285(var uParam0)
 	uParam0->f_38 = TASK::CREATE_SCENARIO_POINT_ATTACHED_TO_ENTITY(uParam0->f_35, joaat("PROP_PLAYER_CASH_REGISTER_CLERK_OPENED_BENCHMARK_TEST"), 0f, 0f, 0f, 0f, 0, 0, 1);
 	TASK::_0x8360C47380B6F351(uParam0->f_38, uParam0->f_36, "OOXO", 1);
 	TASK::_0x8360C47380B6F351(uParam0->f_38, uParam0->f_37, "OXOO", 1);
-	iVar3[0] = TASK::_0x295514F198EFD0CA(uParam0->f_38, "OXOO");
-	iVar3[1] = TASK::_0x295514F198EFD0CA(uParam0->f_38, "OOXO");
+	iVar3[0] = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_38, "OXOO");
+	iVar3[1] = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_38, "OOXO");
 	if (ENTITY::DOES_ENTITY_EXIST(&(iVar3[0])))
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(&(iVar3[0]), true);
@@ -7373,7 +7373,7 @@ int func_294(int iParam0, int iParam1, bool bParam2, float fParam3, int iParam4)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam1))
 		{
-			if (!PED::IS_PED_ON_MOUNT(iParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_0xB676EFDA03DADA52(iParam1, 0)))
+			if (!PED::IS_PED_ON_MOUNT(iParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_GET_HORSE_RIDER(iParam1, false)))
 			{
 				ENTITY::SET_ENTITY_INVINCIBLE(iParam1, bParam2);
 				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 1868526510, true) != 1)

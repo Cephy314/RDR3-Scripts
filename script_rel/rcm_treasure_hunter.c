@@ -3780,7 +3780,7 @@ void func_144(var uParam0)
 	}
 	if (func_374(&(Local_15.f_604[0]), 0, 1))
 	{
-		PED::_0x931B241409216C1F(&(Local_15.f_604[0]), &(Local_15.f_604[1]), 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(Local_15.f_604[0]), &(Local_15.f_604[1]), 0);
 		PED::SET_PED_CONFIG_FLAG(&(Local_15.f_604[0]), 315, false);
 		PED::SET_PED_CONFIG_FLAG(&(Local_15.f_604[0]), 130, false);
 		PED::SET_PED_CONFIG_FLAG(&(Local_15.f_604[0]), 178, true);
@@ -7306,7 +7306,7 @@ int func_282()
 		func_554();
 	}
 	iVar0 = PLAYER::GET_PLAYER_INDEX();
-	PLAYER::_0xD2CB0FB0FDCB473D(iVar0, false);
+	PLAYER::_SET_PED_AS_SADDLE_HORSE_FOR_PLAYER(iVar0, 0);
 	func_555(-1);
 	func_556(3);
 	return 1;
@@ -22659,7 +22659,7 @@ int func_744(var uParam0)
 					uParam0->f_919 = 0;
 					uParam0->f_616 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -588.817f, -339.592f, 83.215f, 0f, 0f, 22.349f, 2f, 6.852f, 5f);
 					uParam0->f_617 = VOLUME::_0x0EB78C2B156635B1(joaat("VOLCYLINDER"), -590.199f, -340.998f, 83.215f, 0f, 0f, 45.493f, 2f, 6.852f, 5f);
-					PED::_0x931B241409216C1F(&(uParam0->f_604[0]), &(uParam0->f_604[1]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_604[0]), &(uParam0->f_604[1]), 0);
 					if (uParam0->f_595 == 0)
 					{
 						uParam0->f_984 = 1;
@@ -23910,7 +23910,7 @@ int func_751(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -25721,7 +25721,7 @@ void func_814(int iParam0)
 		{
 			MAP::REMOVE_BLIP(&(((*Global_1900383)[iParam0 /*45*/])->f_26));
 		}
-		if (bVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) && bVar3)
+		if (bVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) && bVar3)
 		{
 			if (!MAP::DOES_BLIP_EXIST(((*Global_1900383)[iParam0 /*45*/])->f_27))
 			{
@@ -25952,7 +25952,7 @@ void func_814(int iParam0)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar18);
 	}
-	if ((PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
+	if ((PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}
@@ -28127,7 +28127,7 @@ int func_931(bool bParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(bParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(bParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -39933,7 +39933,7 @@ int func_1314(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -40291,7 +40291,7 @@ int func_1328(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -40694,7 +40694,7 @@ int func_1351(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	bVar0 = func_795(iParam0);
 	if (func_781(bVar0, 0))
 	{
-		if (func_781(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_781(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -43604,7 +43604,7 @@ void func_1433(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 

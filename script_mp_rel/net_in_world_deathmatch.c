@@ -8579,9 +8579,9 @@ void func_363(int iParam0, int iParam1, var uParam2, int iParam3)
 	{
 		return;
 	}
-	if (PED::GET_PED_TYPE(iVar32) == 28 && ENTITY::DOES_ENTITY_EXIST(PED::_0xB676EFDA03DADA52(iVar32, 0)))
+	if (PED::GET_PED_TYPE(iVar32) == 28 && ENTITY::DOES_ENTITY_EXIST(PED::_GET_HORSE_RIDER(iVar32, false)))
 	{
-		iVar32 = PED::_0xB676EFDA03DADA52(iVar32, 0);
+		iVar32 = PED::_GET_HORSE_RIDER(iVar32, false);
 	}
 	if (ENTITY::GET_ENTITY_TYPE(Var0.f_1) == 2 && ENTITY::DOES_ENTITY_EXIST(VEHICLE::_0x2963B5C1637E8A27(ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(iVar32))))
 	{
@@ -9998,8 +9998,8 @@ void func_415(float fParam0, int iParam1)
 	{
 		return;
 	}
-	fVar0 = (fParam0 - PED::_0x775A1CA7893AA8B5(iParam1));
-	PED::_0xC3D4B754C0E86B9E(iParam1, fVar0);
+	fVar0 = (fParam0 - PED::_GET_PED_STAMINA(iParam1));
+	PED::_CHARGE_PED_STAMINA(iParam1, fVar0);
 }
 
 int func_416(int iParam0)
@@ -16071,7 +16071,7 @@ int func_618(var uParam0, var uParam1)
 	switch (*uParam0)
 	{
 		case 3:
-			return func_617(PED::_0xB676EFDA03DADA52(uParam0->f_2, 0), uParam1);
+			return func_617(PED::_GET_HORSE_RIDER(uParam0->f_2, false), uParam1);
 		case 4:
 			return func_617(VEHICLE::GET_PED_IN_VEHICLE_SEAT(uParam0->f_1, -1), uParam1);
 		default:
@@ -17219,7 +17219,7 @@ void func_638(float fParam0, int iParam1)
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(iParam1, fParam0);
+	PED::_CHARGE_PED_STAMINA(iParam1, fParam0);
 }
 
 int func_639(struct<2> Param0, float fParam2, float fParam3, float fParam4, int iParam5, int iParam6)

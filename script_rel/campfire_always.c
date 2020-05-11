@@ -3121,7 +3121,7 @@ void func_64(var uParam0)
 					{
 						if (PED::IS_PED_HUMAN(&(uParam0->f_16[0])))
 						{
-							PED::_0x931B241409216C1F(&(uParam0->f_16[0]), &(uParam0->f_16[iVar1]), 0);
+							PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_16[0]), &(uParam0->f_16[iVar1]), 0);
 							FLOCK::SET_ANIMAL_TUNING_BOOL_PARAM(&(uParam0->f_16[iVar1]), 67, true);
 							ENTITY::SET_ENTITY_PROOFS(&(uParam0->f_16[iVar1]), 2, false);
 						}
@@ -3534,7 +3534,7 @@ int func_66(int iParam0)
 			{
 				if (func_201(&(iParam0->f_16[iVar0]), 0))
 				{
-					PED::_0x931B241409216C1F(&(iParam0->f_16[iVar0]), &(iParam0->f_19[iVar0]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(iParam0->f_16[iVar0]), &(iParam0->f_19[iVar0]), 0);
 				}
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(iParam0->f_19[iVar0]), false);
 				POPULATION::_0xF74E134F40192884(&(iParam0->f_19[iVar0]), 1);
@@ -22784,7 +22784,7 @@ int func_491(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -28564,7 +28564,7 @@ int func_707(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -28917,7 +28917,7 @@ int func_720(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -32382,7 +32382,7 @@ int func_898(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_767(iParam0);
 	if (func_201(bVar0, 0))
 	{
-		if (func_201(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_201(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}

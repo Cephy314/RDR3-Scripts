@@ -4000,7 +4000,7 @@ void func_188()
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(Local_107.f_18.f_5))
 	{
-		Local_107.f_18.f_5 = TASK::_0x295514F198EFD0CA(Local_107.f_18.f_4, "PrimaryItem");
+		Local_107.f_18.f_5 = TASK::_GET_SCENARIO_PROPSET_ENTITY(Local_107.f_18.f_4, "PrimaryItem");
 		if (ENTITY::DOES_ENTITY_EXIST(Local_107.f_18.f_5))
 		{
 			PLAYER::_0x543DFE14BE720027(PLAYER::PLAYER_ID(), Local_107.f_18.f_5, 0);

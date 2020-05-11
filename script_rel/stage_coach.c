@@ -5401,7 +5401,7 @@ var func_180(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 
@@ -5658,7 +5658,7 @@ int func_200(var uParam0)
 			{
 				PED::_0x221F4D9912B7FE86(uParam0->f_304.f_1, 1);
 			}
-			if (PED::_0x2D64376CF437363E(uParam0->f_304.f_1))
+			if (PED::_IS_PED_AN_ANIMAL(uParam0->f_304.f_1))
 			{
 				func_264(PLAYER::PLAYER_PED_ID(), uParam0->f_304.f_1, 0, -1, 1);
 			}
@@ -5809,7 +5809,7 @@ int func_209(var uParam0)
 {
 	if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_304.f_1))
 	{
-		if (!PED::_0x2D64376CF437363E(uParam0->f_304.f_1))
+		if (!PED::_IS_PED_AN_ANIMAL(uParam0->f_304.f_1))
 		{
 			return 0;
 		}

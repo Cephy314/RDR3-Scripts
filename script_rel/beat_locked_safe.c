@@ -3646,7 +3646,7 @@ void func_102(int iParam0, var uParam1, int iParam2, int iParam3, bool bParam4, 
 	{
 		ENTITY::SET_ENTITY_VISIBLE(iParam0, bParam4);
 	}
-	if (bParam5 != TASK::_0x0CCFE72B43C9CF96(iParam0))
+	if (bParam5 != TASK::_TASK_IS_CARRIABLE(iParam0))
 	{
 		TASK::_0x78B4567E18B54480(iParam0);
 	}
@@ -15097,7 +15097,7 @@ int func_433(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -17618,7 +17618,7 @@ int func_549(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -17976,7 +17976,7 @@ int func_563(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

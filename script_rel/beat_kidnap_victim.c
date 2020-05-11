@@ -879,7 +879,7 @@ void func_19()
 	if (func_68(&(uLocal_392[1]), 0, 0))
 	{
 		PED::SET_PED_RESET_FLAG(&(uLocal_392[1]), 147, true);
-		if (ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 5)
+		if (ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 5)
 		{
 			if (func_82(0f, 0f, 0f, &uLocal_598, &uLocal_607, 1, 1, 1127481344 /* Float: 180f */, 1101004800 /* Float: 20f */, 1f, -1138501878 /* Float: -0.01f */, 0))
 			{
@@ -3861,7 +3861,7 @@ int func_107(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -4944,7 +4944,7 @@ int func_146()
 	{
 		func_9(&uLocal_515, 1);
 	}
-	if ((func_28(&(uLocal_392[1]), 0, &uLocal_515, &uLocal_543, 0, 0) || (bLocal_503 && ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 10)) || (bLocal_503 && !PED::_0x3AA24CCC0D451379(&(uLocal_392[1]))))
+	if ((func_28(&(uLocal_392[1]), 0, &uLocal_515, &uLocal_543, 0, 0) || (bLocal_503 && ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 10)) || (bLocal_503 && !PED::_0x3AA24CCC0D451379(&(uLocal_392[1]))))
 	{
 		if (bLocal_500)
 		{
@@ -6055,7 +6055,7 @@ void func_169()
 	}
 	if (bLocal_490)
 	{
-		if ((ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 10 && !TASK::IS_PED_GETTING_UP(&(uLocal_392[1]))) || (!PED::_0x3AA24CCC0D451379(&(uLocal_392[1])) && ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 0))
+		if ((ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 10 && !TASK::IS_PED_GETTING_UP(&(uLocal_392[1]))) || (!PED::_0x3AA24CCC0D451379(&(uLocal_392[1])) && ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 0))
 		{
 			func_337(5);
 		}
@@ -6064,7 +6064,7 @@ void func_169()
 	switch (iLocal_514)
 	{
 		case 0:
-			if (ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 10)
+			if (ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 10)
 			{
 				func_67(&iLocal_473);
 				if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uLocal_392[1]), -6107317))
@@ -6424,7 +6424,7 @@ int func_174()
 			}
 			break;
 		case 4:
-			if ((ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 10 || ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 0) || func_68(&(uLocal_392[1]), 0, 1))
+			if ((ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 10 || ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 0) || func_68(&(uLocal_392[1]), 0, 1))
 			{
 				func_32(&(uLocal_392[1]), Global_35, &(sLocal_357[2]), "", -1f, 0, 0, 0, 2, 1, 1, -500314840, 1, 0, 0);
 				func_33(&uLocal_483);
@@ -10683,7 +10683,7 @@ int func_269(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11071,7 +11071,7 @@ int func_284(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -12102,7 +12102,7 @@ int func_330(int iParam0)
 
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0) && !PED::IS_PED_INJURED(iParam0))
 	{
-		iVar0 = ENTITY::_0x61914209C36EFDDB(iParam0);
+		iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam0);
 		if (iVar0 == 1)
 		{
 			return iVar0;
@@ -12148,7 +12148,7 @@ int func_333(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -12312,7 +12312,7 @@ int func_340()
 	switch (iLocal_478)
 	{
 		case 0:
-			if (ENTITY::_0x61914209C36EFDDB(&(uLocal_392[1])) == 0)
+			if (ENTITY::_GET_ENTITY_STATUS(&(uLocal_392[1])) == 0)
 			{
 				WEAPON::_0xFCCC886EDE3C63EC(Global_35, 2, 0);
 				PED::SET_PED_CONFIG_FLAG(&(uLocal_392[1]), 336, true);

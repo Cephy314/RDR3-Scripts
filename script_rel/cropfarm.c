@@ -709,7 +709,7 @@ void func_28(int iParam0)
 	VOLUME::_0x4A8FEFC43FD8AC9B(bLocal_17, 3, 1);
 	VOLUME::_0x53D05D60E5F5B40C(bLocal_17, 3, 1, func_51(746));
 	VOLUME::_0x53D05D60E5F5B40C(bLocal_17, 3, 1, func_51(748));
-	PED::_0x931B241409216C1F(func_52(745), func_52(748), 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_52(745), func_52(748), 0);
 }
 
 void func_29()
@@ -3229,7 +3229,7 @@ var func_106(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 

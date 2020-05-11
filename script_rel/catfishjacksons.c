@@ -763,7 +763,7 @@ int func_38(int iParam0)
 			{
 				if (!ENTITY::DOES_ENTITY_EXIST(iLocal_18))
 				{
-					iLocal_17 = TASK::_0x295514F198EFD0CA(iLocal_16, "PrimaryItem");
+					iLocal_17 = TASK::_GET_SCENARIO_PROPSET_ENTITY(iLocal_16, "PrimaryItem");
 					iLocal_18 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iLocal_17);
 					TXD::_REQUEST_STREAMED_TXD(joaat("UI_LETTER_CATFISH"), false);
 				}
@@ -3863,7 +3863,7 @@ var func_151(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 

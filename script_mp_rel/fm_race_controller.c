@@ -22557,7 +22557,7 @@ struct<12> func_782()
 			Var0 = 3;
 			Var0.f_1 = ENTITY::GET_ENTITY_HEALTH(iVar12);
 			Var0.f_8 = 3;
-			Var0.f_9 = PED::_0x775A1CA7893AA8B5(iVar12);
+			Var0.f_9 = PED::_GET_PED_STAMINA(iVar12);
 			Var0.f_4 = 3;
 			Var0.f_5 = PLAYER::_0xA81D24AE0AF99A5E(iVar13);
 			Var0.f_2 = 3;
@@ -37108,8 +37108,8 @@ void func_1267(float fParam0, int iParam1)
 	{
 		return;
 	}
-	fVar0 = (fParam0 - PED::_0x775A1CA7893AA8B5(iParam1));
-	PED::_0xC3D4B754C0E86B9E(iParam1, fVar0);
+	fVar0 = (fParam0 - PED::_GET_PED_STAMINA(iParam1));
+	PED::_CHARGE_PED_STAMINA(iParam1, fVar0);
 }
 
 int func_1268(int iParam0, int iParam1, float fParam2)
@@ -41883,7 +41883,7 @@ int func_1454(int iParam0)
 void func_1455(int iParam0, int iParam1)
 {
 	func_1941(iParam0, iParam1, 1);
-	if (PED::_0x2D64376CF437363E(iParam0))
+	if (PED::_IS_PED_AN_ANIMAL(iParam0))
 	{
 		func_1942(iParam0, 1);
 	}
@@ -44018,7 +44018,7 @@ void func_1512(var uParam0, int iParam1, bool bParam2)
 			func_1995(uParam0, iVar0);
 			if (bParam2)
 			{
-				iVar1 = PED::_0xB676EFDA03DADA52(iParam1, 0);
+				iVar1 = PED::_GET_HORSE_RIDER(iParam1, false);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					GRAPHICS::USE_PARTICLE_FX_ASSET("scr_net_race_checkpoints");
@@ -44688,7 +44688,7 @@ int func_1537(int iParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_34) && !PED::IS_PED_INJURED(Global_34))
 		{
-			if (PED::_0xB676EFDA03DADA52(iParam0, 0) == Global_34)
+			if (PED::_GET_HORSE_RIDER(iParam0, false) == Global_34)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -51943,7 +51943,7 @@ void func_1753(int iParam0, float fParam1)
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(iParam0, fParam1);
+	PED::_CHARGE_PED_STAMINA(iParam0, fParam1);
 }
 
 float func_1754(int iParam0)
@@ -51986,7 +51986,7 @@ void func_1755(float fParam0, int iParam1)
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(iParam1, fParam0);
+	PED::_CHARGE_PED_STAMINA(iParam1, fParam0);
 }
 
 void func_1756(float fParam0, bool bParam1, bool bParam2)
@@ -57067,7 +57067,7 @@ void func_1941(int iParam0, int iParam1, bool bParam2)
 	int iVar5;
 	int iVar6;
 
-	bVar2 = PED::_0x2D64376CF437363E(iParam0);
+	bVar2 = PED::_IS_PED_AN_ANIMAL(iParam0);
 	if ((Global_3145858->f_436[iParam1 /*197*/])->f_45 > -1)
 	{
 		PED::_SET_PED_OUTFIT_PRESET(iParam0, (Global_3145858->f_436[iParam1 /*197*/])->f_45, 0);
@@ -61776,7 +61776,7 @@ int func_2094(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	PED::_0x96C349DE04C49011(*uParam0, ((*uParam1)[iVar0 /*18*/])->f_2);
+	PED::_REMOVE_PED_OVERLAY(*uParam0, ((*uParam1)[iVar0 /*18*/])->f_2);
 	func_2095(uParam0, uParam1, iVar0);
 	return 1;
 }
@@ -67164,7 +67164,7 @@ void func_2296(var uParam0, var uParam1, var uParam2, var uParam3)
 	uParam0->f_2 = uParam1;
 	uParam0->f_3 = uParam2;
 	uParam0->f_4 = uParam3;
-	PED::_0x253A63B5BADBC398(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
+	PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
 }
 
 void func_2297(var uParam0, var uParam1, int iParam2)
@@ -67183,12 +67183,12 @@ void func_2298(var uParam0, var uParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		PED::_0x253A63B5BADBC398(*uParam0, uParam1->f_2, uParam1->f_3, uParam1->f_4, uParam1->f_5);
+		PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, uParam1->f_2, uParam1->f_3, uParam1->f_4, uParam1->f_5);
 	}
 	if (uParam1->f_9 != 0)
 	{
-		PED::_0x1ED8588524AC9BE1(*uParam0, uParam1->f_2, uParam1->f_9);
-		PED::_0x2DF59FFE6FFD6044(*uParam0, uParam1->f_2, uParam1->f_10, uParam1->f_11, uParam1->f_12);
+		PED::_SET_PED_OVERLAY_PALETTE(*uParam0, uParam1->f_2, uParam1->f_9);
+		PED::_SET_PED_OVERLAY_COLOUR(*uParam0, uParam1->f_2, uParam1->f_10, uParam1->f_11, uParam1->f_12);
 	}
 	if (uParam1->f_7 != 0)
 	{
@@ -67198,8 +67198,8 @@ void func_2298(var uParam0, var uParam1, bool bParam2)
 	{
 		PED::_0x057C4F092E2298BE(*uParam0, uParam1->f_2, uParam1->f_15);
 	}
-	PED::_0x3329AAE2882FC8E4(*uParam0, uParam1->f_2, uParam1->f_6);
-	PED::_0x6C76BC24F8BB709A(*uParam0, uParam1->f_2, uParam1->f_13);
+	PED::_SEP_PED_OVERLAY_VARIATION(*uParam0, uParam1->f_2, uParam1->f_6);
+	PED::_SET_PED_OVERLAY_OPACITY(*uParam0, uParam1->f_2, uParam1->f_13);
 }
 
 bool func_2299()
@@ -69887,7 +69887,7 @@ void func_2420(var uParam0, var uParam1)
 	{
 		if (((*uParam1)[iVar0 /*18*/])->f_1 < ((*uParam1)[(iVar0 - 1) /*18*/])->f_1)
 		{
-			PED::_0x96C349DE04C49011(*uParam0, ((*uParam1)[(iVar0 - 1) /*18*/])->f_2);
+			PED::_REMOVE_PED_OVERLAY(*uParam0, ((*uParam1)[(iVar0 - 1) /*18*/])->f_2);
 			Var2 = { *((*uParam1)[iVar0 /*18*/]) };
 			*((*uParam1)[iVar0 /*18*/]) = { *((*uParam1)[(iVar0 - 1) /*18*/]) };
 			*((*uParam1)[(iVar0 - 1) /*18*/]) = { Var2 };
@@ -69911,7 +69911,7 @@ void func_2420(var uParam0, var uParam1)
 
 void func_2421(var uParam0, var uParam1)
 {
-	uParam1->f_2 = PED::_0x86BB5FF45F193A02(*uParam0, uParam1->f_3, uParam1->f_4, uParam1->f_5, uParam1->f_16, uParam1->f_13, uParam1->f_6);
+	uParam1->f_2 = PED::_ADD_PED_OVERLAY(*uParam0, uParam1->f_3, uParam1->f_4, uParam1->f_5, uParam1->f_16, uParam1->f_13, uParam1->f_6);
 	func_2298(uParam0, uParam1, 0);
 }
 
@@ -72319,7 +72319,7 @@ int func_2544(var uParam0, var uParam1)
 	switch (*uParam0)
 	{
 		case 3:
-			return func_2543(PED::_0xB676EFDA03DADA52(uParam0->f_2, 0), uParam1);
+			return func_2543(PED::_GET_HORSE_RIDER(uParam0->f_2, false), uParam1);
 		case 4:
 			return func_2543(VEHICLE::GET_PED_IN_VEHICLE_SEAT(uParam0->f_1, -1), uParam1);
 		default:

@@ -5561,7 +5561,7 @@ void func_154(bool bParam0)
 	if (func_34(&(uLocal_45[0]), 0, 1))
 	{
 		TASK::CLEAR_PED_TASKS(&(uLocal_45[0]), 1, 0);
-		if (PED::_0xB676EFDA03DADA52(&(uLocal_45[0]), 1) == 0)
+		if (PED::_GET_HORSE_RIDER(&(uLocal_45[0]), true) == 0)
 		{
 			TASK::_TASK_SMART_FLEE_STYLE_COORD(&(uLocal_45[0]), Local_51.f_51, 3, 0, -1f, -1, 0);
 		}
@@ -5575,7 +5575,7 @@ void func_154(bool bParam0)
 	{
 		TASK::CLEAR_PED_TASKS(&(uLocal_45[1]), 1, 0);
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
-		if (PED::_0xB676EFDA03DADA52(&(uLocal_45[1]), 1) == 0)
+		if (PED::_GET_HORSE_RIDER(&(uLocal_45[1]), true) == 0)
 		{
 			TASK::_TASK_SMART_FLEE_STYLE_COORD(0, Local_51.f_51, 3, 0, -1f, -1, 0);
 		}
@@ -16517,7 +16517,7 @@ int func_513(int iParam0, vector3 vParam1, int iParam4, int iParam5)
 	{
 		if (TASK::_0xEA31F199A73801D3(iParam4))
 		{
-			iVar1 = TASK::_0x295514F198EFD0CA(iParam4, "CONTAINER");
+			iVar1 = TASK::_GET_SCENARIO_PROPSET_ENTITY(iParam4, "CONTAINER");
 			if (ENTITY::IS_ENTITY_AN_OBJECT(iVar1))
 			{
 				iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1);
@@ -17513,7 +17513,7 @@ int func_551(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -20112,7 +20112,7 @@ int func_685(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -20340,7 +20340,7 @@ int func_696(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}

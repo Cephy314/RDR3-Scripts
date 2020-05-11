@@ -487,7 +487,7 @@ void func_5(var uParam0, var uParam1)
 		if (func_6(uParam0, 11) || func_6(uParam0, 17))
 		{
 			iVar13 = AITRANSPORT::_0xFFEC4B0A1A3ED515(uParam0->f_18, 0);
-			iVar14 = PED::_0xB676EFDA03DADA52(uParam0->f_18, 1);
+			iVar14 = PED::_GET_HORSE_RIDER(uParam0->f_18, true);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar13))
 			{
 				if (!PED::_0x8D9BFCE3352DE47F(uParam0->f_18))
@@ -1905,7 +1905,7 @@ void func_33(var uParam0, int iParam1, int iParam2)
 					{
 						ENTITY::SET_ENTITY_AS_MISSION_ENTITY(&(uParam0->f_21[iVar2]), true, true);
 					}
-					PED::_0x931B241409216C1F(PLAYER::GET_PLAYER_PED(iParam2), &(uParam0->f_21[iVar2]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(PLAYER::GET_PLAYER_PED(iParam2), &(uParam0->f_21[iVar2]), 0);
 					PED::SET_PED_CONFIG_FLAG(&(uParam0->f_21[iVar2]), 208, true);
 					PED::SET_PED_CONFIG_FLAG(&(uParam0->f_21[iVar2]), 209, true);
 					PED::SET_PED_CONFIG_FLAG(&(uParam0->f_21[iVar2]), 277, true);
@@ -2222,7 +2222,7 @@ void func_48(var uParam0)
 {
 	int iVar0;
 
-	iVar0 = PED::_0xB676EFDA03DADA52(uParam0->f_18, 0);
+	iVar0 = PED::_GET_HORSE_RIDER(uParam0->f_18, false);
 	if (iVar0 == PLAYER::PLAYER_PED_ID() && func_6(uParam0, 2))
 	{
 		if (!func_6(uParam0, 23))
@@ -2355,7 +2355,7 @@ void func_54(var uParam0)
 	{
 		return;
 	}
-	PED::_0x931B241409216C1F(iVar1, uParam0->f_18, 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(iVar1, uParam0->f_18, 0);
 }
 
 void func_55(var uParam0)
@@ -3178,7 +3178,7 @@ void func_68(var uParam0, int iParam1, int iParam2)
 		{
 			return;
 		}
-		iVar0 = PED::_0xB676EFDA03DADA52(uParam0->f_18, 0);
+		iVar0 = PED::_GET_HORSE_RIDER(uParam0->f_18, false);
 		if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 		{
 			return;
@@ -3879,7 +3879,7 @@ int func_89(int iParam0)
 
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
-		if (ENTITY::_0x61914209C36EFDDB(iParam0) != 7)
+		if (ENTITY::_GET_ENTITY_STATUS(iParam0) != 7)
 		{
 			return 1;
 		}
@@ -4367,7 +4367,7 @@ void func_114(int iParam0, var uParam1, int iParam2)
 		if (uParam1->f_92)
 		{
 			PED::_0x6569F31A01B4C097(iVar9, 0, false);
-			ENTITY::_0x6BCF5F3D8FFE988D(iVar9, 1);
+			ENTITY::_SET_IS_LOOTED(iVar9, true);
 		}
 		iVar19 = func_178(iParam2);
 		TASK::TASK_CARRIABLE(iVar9, uParam1->f_3, iParam0, iVar19, 256);
@@ -5010,7 +5010,7 @@ int func_137(var uParam0, int iParam1, int iParam2)
 	iVar0 = NETWORK::NETWORK_GET_PLAYER_FROM_GAMER_HANDLE(iParam1);
 	if (ENTITY::IS_ENTITY_A_PED(uParam0->f_18))
 	{
-		iVar1 = PED::_0xB676EFDA03DADA52(uParam0->f_18, 0);
+		iVar1 = PED::_GET_HORSE_RIDER(uParam0->f_18, false);
 	}
 	else
 	{
@@ -5289,7 +5289,7 @@ void func_149(var uParam0, var uParam1, bool bParam2)
 	{
 		return;
 	}
-	iVar0 = PED::_0xB676EFDA03DADA52(uParam0->f_18, 1);
+	iVar0 = PED::_GET_HORSE_RIDER(uParam0->f_18, true);
 	iVar1 = PLAYER::PLAYER_PED_ID();
 	iVar2 = PLAYER::GET_PLAYER_PED(uParam1->f_1);
 	if (PED::GET_MOUNT(iVar2) == uParam0->f_18)
@@ -6083,7 +6083,7 @@ int func_182(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_0xC346A546612C49A9(iParam0))
+	if (ENTITY::_0x9A100F1CF4546629(iParam0) || ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		iVar0 = func_229(&iParam0);
 		if (!func_107(iVar0, 0))
@@ -7143,7 +7143,7 @@ int func_215(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar1 = PED::_0xB676EFDA03DADA52(iParam1, 1);
+	iVar1 = PED::_GET_HORSE_RIDER(iParam1, true);
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		return 0;
@@ -8167,7 +8167,7 @@ int func_252(int iParam0)
 	}
 	if (iVar5 != 0)
 	{
-		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_0x8DE41E9902E85756(iVar0))
+		if (PED::_0xFB4891BD7578CDC1(iVar0, 43391475) || ENTITY::_GET_IS_LOOTED(iVar0))
 		{
 			iVar6 = func_268(iVar5);
 			if (iVar6 != 0)

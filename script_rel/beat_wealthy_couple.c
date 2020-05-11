@@ -11332,7 +11332,7 @@ int func_339(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -11346,7 +11346,7 @@ int func_339(int iParam0, int iParam1)
 
 int func_340(int iParam0, int iParam1)
 {
-	if (ENTITY::_0x61914209C36EFDDB(iParam0) == 7)
+	if (ENTITY::_GET_ENTITY_STATUS(iParam0) == 7)
 	{
 		if (func_561(iParam1) == iParam0)
 		{
@@ -15522,7 +15522,7 @@ void func_487(int iParam0, int iParam1, int iParam2)
 					{
 						TASK::CLEAR_PED_TASKS(iParam2, 1, 0);
 					}
-					PED::_0x931B241409216C1F(iParam0, iParam2, 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(iParam0, iParam2, 0);
 					PED::SET_PED_CONFIG_FLAG(iParam0, 167, true);
 					PED::SET_PED_CONFIG_FLAG(iParam0, 321, true);
 					PED::SET_PED_CONFIG_FLAG(iParam2, 178, true);
@@ -16014,7 +16014,7 @@ void func_493(int iParam0, bool bParam1, int iParam2)
 	else if (ENTITY::_0x9A100F1CF4546629(iParam0))
 	{
 		iVar0 = func_654(iParam0);
-		func_655(iVar0, ENTITY::_0xC346A546612C49A9(iParam0));
+		func_655(iVar0, ENTITY::_IS_ENTITY_A_BIRD(iParam0));
 	}
 	if (bParam1)
 	{
@@ -16447,7 +16447,7 @@ int func_504(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -20162,7 +20162,7 @@ int func_665(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -20520,7 +20520,7 @@ int func_679(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

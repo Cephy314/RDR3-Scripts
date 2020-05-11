@@ -6000,7 +6000,7 @@ void func_71(var uParam0)
 	}
 	if (*uParam0 == -1714262909)
 	{
-		if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_33))
+		if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_33))
 		{
 			GRAPHICS::DESTROY_TRACKED_POINT(iLocal_33);
 		}
@@ -7641,9 +7641,9 @@ void func_85(int iParam0)
 	UNLOCK::_UNLOCK_SET_UNLOCKED(iVar0, true);
 }
 
-bool func_86(var uParam0)
+bool func_86(int iParam0)
 {
-	return ENTITY::_0x8DE41E9902E85756(uParam0);
+	return ENTITY::_GET_IS_LOOTED(iParam0);
 }
 
 int func_87(var uParam0)
@@ -15868,7 +15868,7 @@ int func_292(int iParam0, char* sParam1)
 	{
 		if (TASK::_DOES_SCENARIO_POINT_EXIST(*iParam0))
 		{
-			iVar1 = TASK::_0x295514F198EFD0CA(*iParam0, sParam1);
+			iVar1 = TASK::_GET_SCENARIO_PROPSET_ENTITY(*iParam0, sParam1);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 			{
 				iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1);

@@ -1990,7 +1990,7 @@ int func_32(var uParam0)
 				WEAPON::SET_CURRENT_PED_WEAPON(&(uParam0->f_20[1 /*14*/]), joaat("WEAPON_UNARMED"), true, 0, false, false);
 				if (*uParam0 == 52)
 				{
-					PED::_0x931B241409216C1F(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[2 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[2 /*14*/]), 0);
 					AUDIO::SET_AMBIENT_VOICE_NAME(&(uParam0->f_20[1 /*14*/]), "0192_A_M_M_HtlRoughTravellers_01_WHITE_01");
 					PED::_0x24C82EF607105FAA(&(uParam0->f_20[1 /*14*/]), joaat("AGGRESSIVE"));
 					func_78(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[2 /*14*/]), &uLocal_38, 0f, 0f, 0f, 0, 0, 1, 1069547520 /* Float: 1.5f */, -1082130432 /* Float: -1f */, 1073069561, 1f, 1092616192 /* Float: 10f */, -1, 1, 0, 0, 0, 1);
@@ -5391,7 +5391,7 @@ int func_161(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6641,7 +6641,7 @@ int func_205(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -7013,7 +7013,7 @@ int func_219(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

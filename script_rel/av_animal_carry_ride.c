@@ -1855,8 +1855,8 @@ int func_31(var uParam0)
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[0 /*14*/])))
 				{
-					PED::_0x931B241409216C1F(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 0);
-					PED::_0x931B241409216C1F(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[2 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[2 /*14*/]), 0);
 					WEAPON::REMOVE_ALL_PED_WEAPONS(&(uParam0->f_20[1 /*14*/]), true, true);
 					func_69(&(uParam0->f_20[1 /*14*/]), joaat("WEAPON_REPEATER_CARBINE"), 0, 0, 0, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, -1, 0, 0, 0, 0);
 					WEAPON::_GIVE_WEAPON_TO_PED_2(&(uParam0->f_20[1 /*14*/]), joaat("WEAPON_REVOLVER_CATTLEMAN"), 999, false, true, 0, false, 0.5f, 1f, 752097756, false, 0f, false);
@@ -1978,7 +1978,7 @@ int func_31(var uParam0)
 		case 7:
 			if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])))
 			{
-				if (PED::_0xA033D7E4BBF9844D(&(uParam0->f_20[2 /*14*/])) == &uParam0->f_20[0 /*14*/])
+				if (PED::_GET_HORSE_CARRIER_OF_PED(&(uParam0->f_20[2 /*14*/])) == &uParam0->f_20[0 /*14*/])
 				{
 					func_78(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[2 /*14*/]));
 					TASK::TASK_MOUNT_ANIMAL(&(uParam0->f_20[1 /*14*/]), &(uParam0->f_20[0 /*14*/]), -1, -1, 1f, 1, 0, 0);
@@ -3556,7 +3556,7 @@ int func_78(int iParam0, int iParam1)
 		return 0;
 	}
 	iVar0 = INVENTORY::_0x13D234A2A3F66E63(iParam0);
-	if (ENTITY::_0x9A100F1CF4546629(iParam1) || ENTITY::_0xC346A546612C49A9(iParam1))
+	if (ENTITY::_0x9A100F1CF4546629(iParam1) || ENTITY::_IS_ENTITY_A_BIRD(iParam1))
 	{
 		iVar1 = func_130(iParam1);
 		if (!func_131(iVar1, 0))
@@ -5446,7 +5446,7 @@ int func_156(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -7800,7 +7800,7 @@ bool func_197(int iParam0, int iParam1, int iParam2, int iParam3)
 int func_198(int iParam0)
 {
 	int iVar0;
-	var uVar1;
+	int iVar1;
 	var uVar2;
 	var uVar3;
 	int iVar4;
@@ -7809,12 +7809,12 @@ int func_198(int iParam0)
 	{
 		return 0;
 	}
-	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_0xC346A546612C49A9(iParam0))
+	if (!ENTITY::_0x9A100F1CF4546629(iParam0) && !ENTITY::_IS_ENTITY_A_BIRD(iParam0))
 	{
 		return 0;
 	}
-	func_196(iParam0, &uVar1, &uVar2, &iVar0, &uVar3);
-	func_197(&iVar4, iParam0, iVar0, uVar1);
+	func_196(iParam0, &iVar1, &uVar2, &iVar0, &uVar3);
+	func_197(&iVar4, iParam0, iVar0, iVar1);
 	if (iVar4 != 0)
 	{
 		return iVar4;
@@ -8347,7 +8347,7 @@ int func_221(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -8719,7 +8719,7 @@ int func_235(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

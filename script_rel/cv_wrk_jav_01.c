@@ -3512,8 +3512,8 @@ int func_94(var uParam0)
 			PED::SET_PED_CAN_PLAY_AMBIENT_ANIMS(func_49(uParam0, iLocal_20), false);
 			if (TASK::_0x02EBBB3989B7E695(func_49(uParam0, iLocal_19)) && TASK::_0x02EBBB3989B7E695(func_49(uParam0, iLocal_20)))
 			{
-				iLocal_45 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(TASK::_0x295514F198EFD0CA(iLocal_44, "p_bottleBeer01x_PH_R_HAND"));
-				iLocal_46 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(TASK::_0x295514F198EFD0CA(iLocal_43, "p_bottleJD01x_ph_r_hand"));
+				iLocal_45 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(TASK::_GET_SCENARIO_PROPSET_ENTITY(iLocal_44, "p_bottleBeer01x_PH_R_HAND"));
+				iLocal_46 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(TASK::_GET_SCENARIO_PROPSET_ENTITY(iLocal_43, "p_bottleJD01x_ph_r_hand"));
 				func_202(iLocal_45, &(uParam0->f_1984[iLocal_15]), "BOTTLE_BEER");
 				func_202(iLocal_46, &(uParam0->f_1984[iLocal_15]), "BOTTLE_JD");
 				func_192(uParam0, iLocal_15, 1);
@@ -3796,7 +3796,7 @@ int func_108(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_105(iParam0);
 	if (func_121(bVar0, 0))
 	{
-		if (func_121(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_121(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -8119,7 +8119,7 @@ int func_292(vector3 vParam0)
 {
 	if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_AT_COORDS(vParam0)))
 	{
-		if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+		if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 		{
 			return 1;
 		}
@@ -13617,7 +13617,7 @@ void func_423(bool bParam0, int iParam1)
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(func_233(iParam1)))
 	{
-		PED::_0x931B241409216C1F(func_233(iParam1), bParam0, 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_233(iParam1), bParam0, 0);
 		PED::_0xED1C764997A86D5A(func_233(iParam1), bParam0);
 		PED::SET_PED_CONFIG_FLAG(bParam0, 367, true);
 	}

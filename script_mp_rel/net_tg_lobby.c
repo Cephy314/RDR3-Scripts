@@ -4626,7 +4626,7 @@ int func_200(int iParam0)
 	{
 		return 0;
 	}
-	else if (ENTITY::_0x61914209C36EFDDB(Global_34) != 0)
+	else if (ENTITY::_GET_ENTITY_STATUS(Global_34) != 0)
 	{
 		return 0;
 	}

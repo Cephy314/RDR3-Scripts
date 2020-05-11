@@ -165,7 +165,7 @@ void func_1(var uParam0)
 	func_36(uParam0->f_166);
 	func_37(&(uParam0->f_230), 0, 1, 1, 0);
 	func_38(&(uParam0->f_209), &(uParam0->f_230));
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(uParam0->f_180))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_180))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_180);
 	}
@@ -2493,7 +2493,7 @@ int func_77(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -5001,7 +5001,7 @@ int func_184(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -8056,7 +8056,7 @@ int func_308(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

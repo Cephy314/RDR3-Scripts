@@ -21983,7 +21983,7 @@ void func_655(bool bParam0, int iParam1)
 			PED::_0xED00D72F81CF7278(&(uVar1[iVar0]), 0, 0);
 			if (iParam1 == 1)
 			{
-				if (ENTITY::_0x61914209C36EFDDB(&(uVar1[iVar0])) == 5)
+				if (ENTITY::_GET_ENTITY_STATUS(&(uVar1[iVar0])) == 5)
 				{
 					ENTITY::DELETE_ENTITY(uVar1[iVar0]);
 				}
@@ -25211,7 +25211,7 @@ int func_795(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_570(iParam0);
 	if (func_297(bVar0, 0))
 	{
-		if (func_297(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_297(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}

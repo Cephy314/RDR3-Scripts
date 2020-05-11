@@ -13352,7 +13352,7 @@ void func_437(var uParam0, var uParam1)
 	fVar5 = 95f;
 	fVar6 = 150f;
 	vVar7 = { ENTITY::GET_ENTITY_COORDS(iVar0, false, false) };
-	if (INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vVar7))
+	if (INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vVar7))
 	{
 		func_700(&vVar7, 200f);
 	}
@@ -22085,7 +22085,7 @@ int func_754(int iParam0)
 	{
 		return 1;
 	}
-	iVar0 = PED::_0xB676EFDA03DADA52(iParam0, 0);
+	iVar0 = PED::_GET_HORSE_RIDER(iParam0, false);
 	if (!ENTITY::IS_ENTITY_DEAD(iVar0) && PED::IS_PED_A_PLAYER(iVar0))
 	{
 		return 1;

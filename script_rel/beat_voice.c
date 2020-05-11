@@ -333,11 +333,11 @@ void func_6()
 	GRAPHICS::_0x9CF1836C03FB67A2(&uLocal_394, 1);
 	GRAPHICS::_0x9CF1836C03FB67A2(&iLocal_395, 1);
 	GRAPHICS::_0x9CF1836C03FB67A2(&uLocal_396, 1);
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_557))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_557))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(iLocal_557);
 	}
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(iLocal_558))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_558))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(iLocal_558);
 	}
@@ -16660,7 +16660,7 @@ int func_493(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -20348,7 +20348,7 @@ int func_619(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -20706,7 +20706,7 @@ int func_633(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

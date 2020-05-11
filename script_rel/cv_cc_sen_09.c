@@ -3348,7 +3348,7 @@ int func_93(var uParam0)
 	{
 		if (func_201(uParam0, iLocal_14))
 		{
-			if (ENTITY::_0x61914209C36EFDDB(func_8(uParam0, iLocal_24)) == 5)
+			if (ENTITY::_GET_ENTITY_STATUS(func_8(uParam0, iLocal_24)) == 5)
 			{
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(func_8(uParam0, iLocal_14), func_8(uParam0, iLocal_24), vLocal_75, 1f, 0);
 				bLocal_78 = true;
@@ -3357,7 +3357,7 @@ int func_93(var uParam0)
 	}
 	if (bLocal_78)
 	{
-		if (TASK::GET_SCRIPT_TASK_STATUS(func_8(uParam0, iLocal_14), -208384378, true) == 8 && !ENTITY::_0x61914209C36EFDDB(func_8(uParam0, iLocal_24)) == 5)
+		if (TASK::GET_SCRIPT_TASK_STATUS(func_8(uParam0, iLocal_14), -208384378, true) == 8 && !ENTITY::_GET_ENTITY_STATUS(func_8(uParam0, iLocal_24)) == 5)
 		{
 			func_202(uParam0, iLocal_14, 1, 1);
 		}
@@ -3635,7 +3635,7 @@ int func_107(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_104(iParam0);
 	if (func_120(bVar0, 0))
 	{
-		if (func_120(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_120(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -8866,7 +8866,7 @@ int func_290(vector3 vParam0)
 {
 	if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_AT_COORDS(vParam0)))
 	{
-		if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+		if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 		{
 			return 1;
 		}
@@ -13595,7 +13595,7 @@ void func_422(bool bParam0, int iParam1)
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(func_231(iParam1)))
 	{
-		PED::_0x931B241409216C1F(func_231(iParam1), bParam0, 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_231(iParam1), bParam0, 0);
 		PED::_0xED1C764997A86D5A(func_231(iParam1), bParam0);
 		PED::SET_PED_CONFIG_FLAG(bParam0, 367, true);
 	}

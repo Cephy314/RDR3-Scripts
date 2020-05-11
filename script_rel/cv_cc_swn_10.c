@@ -3687,7 +3687,7 @@ int func_107(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4
 	bVar0 = func_104(iParam0);
 	if (func_120(bVar0, 0))
 	{
-		if (func_120(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_120(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -4954,7 +4954,7 @@ int func_167(var uParam0, vector3 vParam1, int iParam4, int iParam5, char* sPara
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(iLocal_23))
 	{
-		iLocal_23 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(TASK::_0x295514F198EFD0CA(*iParam5, sParam6));
+		iLocal_23 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(TASK::_GET_SCENARIO_PROPSET_ENTITY(*iParam5, sParam6));
 	}
 	if (TASK::_0x6EF4E31B4D5D2DA0(*iParam5, sParam6))
 	{
@@ -8778,7 +8778,7 @@ int func_285(vector3 vParam0)
 {
 	if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_AT_COORDS(vParam0)))
 	{
-		if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+		if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 		{
 			return 1;
 		}
@@ -13510,7 +13510,7 @@ void func_415(bool bParam0, int iParam1)
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(func_226(iParam1)))
 	{
-		PED::_0x931B241409216C1F(func_226(iParam1), bParam0, 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_226(iParam1), bParam0, 0);
 		PED::_0xED1C764997A86D5A(func_226(iParam1), bParam0);
 		PED::SET_PED_CONFIG_FLAG(bParam0, 367, true);
 	}

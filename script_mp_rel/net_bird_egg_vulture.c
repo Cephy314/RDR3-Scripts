@@ -502,7 +502,7 @@ void func_17(var uParam0)
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(&(iLocal_26[0])))
 			{
-				if (!TASK::_0x0CCFE72B43C9CF96(&(iLocal_26[0])))
+				if (!TASK::_TASK_IS_CARRIABLE(&(iLocal_26[0])))
 				{
 					if (!uParam0->f_23)
 					{

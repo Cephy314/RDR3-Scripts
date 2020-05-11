@@ -1888,7 +1888,7 @@ int func_31(var uParam0)
 				func_68(&(uParam0->f_20[0 /*14*/]), func_67(joaat("REWARD_PED_SMALL"), 0, -1));
 				if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])) && uParam0->f_489 == 1)
 				{
-					PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
 					PED::_0x24C82EF607105FAA(&(uParam0->f_20[1 /*14*/]), joaat("TIMIDGUARDDOG"));
 					PED::_0x8B3B71C80A29A4BB(&(uParam0->f_20[1 /*14*/]), joaat("MOODANGRY"), 6);
 					PED::SET_PED_USING_ACTION_MODE(&(uParam0->f_20[1 /*14*/]), true, -1, 0);
@@ -5457,7 +5457,7 @@ int func_153(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -8226,7 +8226,7 @@ int func_217(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -8598,7 +8598,7 @@ int func_231(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

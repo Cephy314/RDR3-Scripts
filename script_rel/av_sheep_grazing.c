@@ -1978,7 +1978,7 @@ int func_31(var uParam0)
 					TASK::_TASK_START_SCENARIO_IN_PLACE(&(uParam0->f_20[0 /*14*/]), joaat("WORLD_HUMAN_CROUCH_INSPECT"), 0, false, 0, -1f, false);
 					TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_20[0 /*14*/]), joaat("WORLD_HUMAN_CROUCH_INSPECT"), (uParam0->f_20[0 /*14*/])->f_5, (uParam0->f_20[0 /*14*/])->f_8, 0, false, true, 0, -1f, false);
 				}
-				PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
+				PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[1 /*14*/]), 0);
 				func_73(uParam0->f_20[0 /*14*/], 0, 1);
 			}
 			if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])))
@@ -1998,7 +1998,7 @@ int func_31(var uParam0)
 					func_72(&((uParam0->f_20[2 /*14*/])->f_5), 50, 10, 0);
 					FLOCK::SET_ANIMAL_TUNING_FLOAT_PARAM(&(uParam0->f_20[2 /*14*/]), 73, 0f);
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_20[2 /*14*/]), joaat("REL_DOMESTICATED_PET_ANIMAL"));
-					PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[2 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[2 /*14*/]), 0);
 					TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_20[2 /*14*/]), iLocal_10, (uParam0->f_20[2 /*14*/])->f_5, (uParam0->f_20[2 /*14*/])->f_8, 0, false, true, 0, -1f, false);
 					func_73(uParam0->f_20[2 /*14*/], 0, 1);
 				}
@@ -2010,7 +2010,7 @@ int func_31(var uParam0)
 					func_72(&((uParam0->f_20[3 /*14*/])->f_5), 50, 10, 0);
 					FLOCK::SET_ANIMAL_TUNING_FLOAT_PARAM(&(uParam0->f_20[3 /*14*/]), 73, 0f);
 					PED::SET_PED_RELATIONSHIP_GROUP_HASH(&(uParam0->f_20[3 /*14*/]), joaat("REL_DOMESTICATED_PET_ANIMAL"));
-					PED::_0x931B241409216C1F(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[3 /*14*/]), 0);
+					PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uParam0->f_20[0 /*14*/]), &(uParam0->f_20[3 /*14*/]), 0);
 					TASK::TASK_START_SCENARIO_AT_POSITION(&(uParam0->f_20[3 /*14*/]), iLocal_10, (uParam0->f_20[3 /*14*/])->f_5, (uParam0->f_20[3 /*14*/])->f_8, 0, false, true, 0, -1f, false);
 					func_73(uParam0->f_20[3 /*14*/], 0, 1);
 				}
@@ -4788,7 +4788,7 @@ int func_116(int iParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -6658,7 +6658,7 @@ int func_194(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -7030,7 +7030,7 @@ int func_208(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

@@ -302,7 +302,7 @@ int func_11(var uParam0)
 			}
 			else if (!ENTITY::DOES_ENTITY_EXIST(iLocal_15))
 			{
-				iLocal_17 = TASK::_0x295514F198EFD0CA(iLocal_18, sLocal_20);
+				iLocal_17 = TASK::_GET_SCENARIO_PROPSET_ENTITY(iLocal_18, sLocal_20);
 				iLocal_15 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iLocal_17);
 			}
 			else if (ENTITY::DOES_ENTITY_EXIST(iLocal_15))

@@ -3658,7 +3658,7 @@ void func_129()
 								if (CLOCK::GET_CLOCK_HOURS() >= 21 || CLOCK::GET_CLOCK_HOURS() < 6)
 								{
 									ENTITY::_0xEBDC12861D079ABA(&(Local_303.f_18.f_13[0]), 1);
-									GRAPHICS::_0x07C0F87AAC57F2E4(&(Local_303.f_18.f_13[0]), 10f);
+									GRAPHICS::_SET_LIGHTS_INTENSITY_FOR_ENTITY(&(Local_303.f_18.f_13[0]), 10f);
 								}
 							}
 							if (ENTITY::DOES_ENTITY_EXIST(&(Local_303.f_18.f_13[1])) && NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(&(Local_303.f_18.f_13[1])))
@@ -10133,7 +10133,7 @@ int func_374(int iParam0, var uParam1)
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -12456,7 +12456,7 @@ int func_452(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -12849,7 +12849,7 @@ int func_468(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

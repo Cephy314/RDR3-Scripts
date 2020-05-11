@@ -1084,7 +1084,7 @@ int func_38(int iParam0)
 						if (!func_72(Local_178.f_24, 0))
 						{
 							Local_178.f_24 = TASK::_0xED1F514AF4732258(Global_35);
-							if (Local_178.f_24 == 0 || !PED::_0x2D64376CF437363E(Local_178.f_24))
+							if (Local_178.f_24 == 0 || !PED::_IS_PED_AN_ANIMAL(Local_178.f_24))
 							{
 								Local_178.f_24 = 0;
 							}
@@ -1115,7 +1115,7 @@ int func_38(int iParam0)
 					else if (TASK::_0xEFC4303DDC6E60D3(Global_35))
 					{
 						bVar1 = TASK::_0xED1F514AF4732258(Global_35);
-						if ((Local_178.f_24 != bVar1 && PED::_0x2D64376CF437363E(bVar1)) && func_88(bVar1))
+						if ((Local_178.f_24 != bVar1 && PED::_IS_PED_AN_ANIMAL(bVar1)) && func_88(bVar1))
 						{
 							Local_178.f_24 = bVar1;
 							func_89();
@@ -2996,13 +2996,13 @@ bool func_93(int iParam0)
 	return MISC::IS_BIT_SET(&(Global_40.f_7832[iVar1]), iVar2);
 }
 
-int func_94(bool bParam0, bool bParam1)
+int func_94(bool bParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
-	bool bVar4;
+	int iVar4;
 
 	iVar0 = ITEMSET::CREATE_ITEMSET(true);
 	iVar2 = ENTITY::_0x886171A12F400B89(bParam0, iVar0, 1);
@@ -3012,8 +3012,8 @@ int func_94(bool bParam0, bool bParam1)
 		iVar3 = ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar1, iVar0);
 		if (MISC::_DOES_ITEM_HAVE_VALID_BASE(iVar3))
 		{
-			bVar4 = MISC::_0x3FFB15534067DCD4(iVar3);
-			if ((bVar4 != bParam1 && ENTITY::DOES_ENTITY_EXIST(bVar4)) && PED::_0x2D64376CF437363E(bVar4))
+			iVar4 = MISC::_0x3FFB15534067DCD4(iVar3);
+			if ((iVar4 != iParam1 && ENTITY::DOES_ENTITY_EXIST(iVar4)) && PED::_IS_PED_AN_ANIMAL(iVar4))
 			{
 				return 1;
 			}
@@ -3788,7 +3788,7 @@ int func_111(bool bParam0, bool bParam1, bool bParam2, float fParam3, int iParam
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(bParam1))
 		{
-			if (!PED::IS_PED_ON_MOUNT(bParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_0xB676EFDA03DADA52(bParam1, 0)))
+			if (!PED::IS_PED_ON_MOUNT(bParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_GET_HORSE_RIDER(bParam1, false)))
 			{
 				ENTITY::SET_ENTITY_INVINCIBLE(bParam1, bParam2);
 				if (TASK::GET_SCRIPT_TASK_STATUS(bParam0, 1868526510, true) != 1)
@@ -5856,7 +5856,7 @@ int func_177(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -8727,7 +8727,7 @@ int func_278(bool bParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(bParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(bParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -9333,7 +9333,7 @@ void func_294(int iParam0)
 			else if (!ENTITY::IS_ENTITY_ATTACHED_TO_ENTITY(iVar7, iParam0))
 			{
 			}
-			else if (TASK::_0x0CCFE72B43C9CF96(iVar7))
+			else if (TASK::_TASK_IS_CARRIABLE(iVar7))
 			{
 			}
 			else
@@ -10416,7 +10416,7 @@ var func_321(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 
@@ -11570,7 +11570,7 @@ int func_383(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -11958,7 +11958,7 @@ int func_398(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -13154,7 +13154,7 @@ void func_468(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 
@@ -18816,7 +18816,7 @@ void func_691(int iParam0)
 		{
 			MAP::REMOVE_BLIP(&(((*Global_1900383)[iParam0 /*45*/])->f_26));
 		}
-		if (bVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) && bVar3)
+		if (bVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) && bVar3)
 		{
 			if (!MAP::DOES_BLIP_EXIST(((*Global_1900383)[iParam0 /*45*/])->f_27))
 			{
@@ -19047,7 +19047,7 @@ void func_691(int iParam0)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar18);
 	}
-	if ((PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
+	if ((PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}

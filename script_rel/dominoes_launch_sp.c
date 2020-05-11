@@ -1495,7 +1495,7 @@ bool func_3(var uParam0)
 			if (func_33(uParam0) == 1)
 			{
 				uParam0->f_17 = GRAPHICS::CREATE_TRACKED_POINT();
-				if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(uParam0->f_17))
+				if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
 				{
 					GRAPHICS::SET_TRACKED_POINT_INFO(uParam0->f_17, uParam0->f_3, 1.5f);
 				}
@@ -1511,7 +1511,7 @@ bool func_3(var uParam0)
 			}
 			else if (uParam0->f_79 > 0)
 			{
-				if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(uParam0->f_17))
+				if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
 				{
 					GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_17);
 				}
@@ -1528,7 +1528,7 @@ bool func_3(var uParam0)
 			}
 			else if (uParam0->f_68 > uParam0->f_1095)
 			{
-				if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(uParam0->f_17))
+				if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
 				{
 					if (GRAPHICS::IS_TRACKED_POINT_VISIBLE(uParam0->f_17))
 					{
@@ -1557,7 +1557,7 @@ bool func_3(var uParam0)
 				func_34(uParam0, iVar0, 0, iVar0);
 				iVar0++;
 			}
-			if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(uParam0->f_17))
+			if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
 			{
 				GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_17);
 			}
@@ -1639,7 +1639,7 @@ void func_4(var uParam0, bool bParam1)
 
 	func_49(uParam0);
 	func_6(uParam0->f_2);
-	if (GRAPHICS::_0xF2FDDCC8C6BAE1B3(uParam0->f_17))
+	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_17);
 	}

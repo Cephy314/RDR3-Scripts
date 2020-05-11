@@ -7755,7 +7755,7 @@ void func_352(int iParam0)
 	}
 	if (func_605(iParam0, 16384) && !bVar0)
 	{
-		iVar1 = TASK::_0x295514F198EFD0CA((Global_1051388->f_69[iParam0 /*76*/])->f_6, "mp001_s_mp_catalogue01x_noanim_PH_R_HAND");
+		iVar1 = TASK::_GET_SCENARIO_PROPSET_ENTITY((Global_1051388->f_69[iParam0 /*76*/])->f_6, "mp001_s_mp_catalogue01x_noanim_PH_R_HAND");
 		if (TASK::_DOES_SCENARIO_POINT_EXIST((Global_1051388->f_69[iParam0 /*76*/])->f_6))
 		{
 			TASK::_0x81948DFE4F5A0283((Global_1051388->f_69[iParam0 /*76*/])->f_6);
@@ -32197,7 +32197,7 @@ void func_1298(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 						}
 					}
 				}
-				if (TASK::_0xEA31F199A73801D3(iVar1) && ENTITY::DOES_ENTITY_EXIST(TASK::_0x295514F198EFD0CA(iVar1, func_1502(iParam2, iParam3))))
+				if (TASK::_0xEA31F199A73801D3(iVar1) && ENTITY::DOES_ENTITY_EXIST(TASK::_GET_SCENARIO_PROPSET_ENTITY(iVar1, func_1502(iParam2, iParam3))))
 				{
 					func_1482(uParam1, iVar0, iParam2);
 				}
@@ -32224,7 +32224,7 @@ void func_1298(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 			{
 				iVar8 = (*uParam1)[iParam2 /*16*/][1];
 			}
-			if (!TASK::_0xEA31F199A73801D3(iVar8) || !ENTITY::DOES_ENTITY_EXIST(TASK::_0x295514F198EFD0CA(iVar8, func_1502(iParam2, iParam3))))
+			if (!TASK::_0xEA31F199A73801D3(iVar8) || !ENTITY::DOES_ENTITY_EXIST(TASK::_GET_SCENARIO_PROPSET_ENTITY(iVar8, func_1502(iParam2, iParam3))))
 			{
 				func_1489(uParam1, iVar0, iParam2);
 			}

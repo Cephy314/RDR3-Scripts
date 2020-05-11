@@ -1873,7 +1873,7 @@ int func_86(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4)
 	bVar0 = func_48(iParam0);
 	if (func_39(bVar0, 0))
 	{
-		if (func_39(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_39(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -2232,7 +2232,7 @@ void func_98(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 

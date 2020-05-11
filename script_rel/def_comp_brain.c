@@ -983,7 +983,7 @@ int func_22(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4)
 	bVar0 = func_128(iParam0);
 	if (func_67(bVar0, 0))
 	{
-		if (func_67(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_67(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -1514,7 +1514,7 @@ void func_46(var uParam0, bool bParam1)
 	{
 		if (func_4(*uParam0, 38, 1))
 		{
-			PED::_0x931B241409216C1F(func_112(*uParam0), bVar0, 0);
+			PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_112(*uParam0), bVar0, 0);
 			PED::_0xED1C764997A86D5A(func_112(*uParam0), bVar0);
 			PED::SET_PED_CONFIG_FLAG(bVar0, 367, true);
 			func_12(*uParam0, 38, 1);
@@ -1552,7 +1552,7 @@ void func_46(var uParam0, bool bParam1)
 		{
 			if ((!func_21(*uParam0) && !*bParam1) && !(func_144(*uParam0, 8) || func_144(*uParam0, 512)))
 			{
-				iVar7 = PED::_0xB676EFDA03DADA52(bVar0, 0);
+				iVar7 = PED::_GET_HORSE_RIDER(bVar0, false);
 				if (iVar7 == Global_35)
 				{
 					TASK::TASK_HORSE_ACTION(bVar0, 2, 0, 0);
@@ -1569,7 +1569,7 @@ void func_46(var uParam0, bool bParam1)
 				}
 			}
 		}
-		else if ((PED::_0xB676EFDA03DADA52(bVar0, 0) == 0 && !func_21(*uParam0)) && !(func_144(*uParam0, 8) || func_144(*uParam0, 512)))
+		else if ((PED::_GET_HORSE_RIDER(bVar0, false) == 0 && !func_21(*uParam0)) && !(func_144(*uParam0, 8) || func_144(*uParam0, 512)))
 		{
 			if (bVar6)
 			{
@@ -4680,7 +4680,7 @@ void func_142(var uParam0)
 		{
 			if (PAD::IS_DISABLED_CONTROL_PRESSED(0, joaat("INPUT_ENTER")))
 			{
-				if ((((func_156(((*Global_1360165)[*uParam0 /*1157*/])->f_70, Global_36, 1) < 4f && func_311(Global_35, ((*Global_1360165)[*uParam0 /*1157*/])->f_70, 0)) && func_156(func_312(7), Global_36, 1) > 4f) && PED::_0xB676EFDA03DADA52(((*Global_1360165)[*uParam0 /*1157*/])->f_70, 1) == 0) && !PED::IS_PED_ON_MOUNT(Global_35))
+				if ((((func_156(((*Global_1360165)[*uParam0 /*1157*/])->f_70, Global_36, 1) < 4f && func_311(Global_35, ((*Global_1360165)[*uParam0 /*1157*/])->f_70, 0)) && func_156(func_312(7), Global_36, 1) > 4f) && PED::_GET_HORSE_RIDER(((*Global_1360165)[*uParam0 /*1157*/])->f_70, true) == 0) && !PED::IS_PED_ON_MOUNT(Global_35))
 				{
 					func_314(40, MISC::GET_HASH_KEY(func_313(*uParam0, 0)), 1);
 					func_100(uParam0, 1073741824 /* Float: 2f */);
@@ -5043,7 +5043,7 @@ int func_160(int iParam0)
 							((*Global_1360165)[iParam0 /*1157*/])->f_70.f_13 = 7;
 						}
 					}
-					else if (PED::_0xB676EFDA03DADA52(bVar0, 0) == Global_35)
+					else if (PED::_GET_HORSE_RIDER(bVar0, false) == Global_35)
 					{
 						if (!func_184(bVar0))
 						{
@@ -5639,7 +5639,7 @@ int func_182(int iParam0)
 	}
 	if (func_67(func_128(iParam0), 0))
 	{
-		iVar0 = PED::_0xB676EFDA03DADA52(func_128(iParam0), 0);
+		iVar0 = PED::_GET_HORSE_RIDER(func_128(iParam0), false);
 		if (iVar0 != 0 && iVar0 != Global_1360165[iParam0 /*1157*/])
 		{
 			return 1;
@@ -9309,7 +9309,7 @@ int func_315(int iParam0)
 	}
 	if (func_67(func_128(iParam0), 0))
 	{
-		iVar0 = PED::_0xB676EFDA03DADA52(func_128(iParam0), 0);
+		iVar0 = PED::_GET_HORSE_RIDER(func_128(iParam0), false);
 		if (iVar0 == Global_35)
 		{
 			return 1;
@@ -9491,7 +9491,7 @@ int func_320(int iParam0, bool bParam1, bool bParam2, bool bParam3)
 	{
 		if (bVar4)
 		{
-			PED::_0x931B241409216C1F(func_112(iParam0), bParam1, 0);
+			PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_112(iParam0), bParam1, 0);
 			PED::_0xED1C764997A86D5A(func_112(iParam0), bParam1);
 		}
 	}
@@ -9885,7 +9885,7 @@ void func_332(bool bParam0, int iParam1)
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(func_112(iParam1)))
 	{
-		PED::_0x931B241409216C1F(func_112(iParam1), bParam0, 0);
+		PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(func_112(iParam1), bParam0, 0);
 		PED::_0xED1C764997A86D5A(func_112(iParam1), bParam0);
 		PED::SET_PED_CONFIG_FLAG(bParam0, 367, true);
 	}
@@ -13663,7 +13663,7 @@ int func_486(vector3 vParam0)
 {
 	if (INTERIOR::IS_VALID_INTERIOR(INTERIOR::GET_INTERIOR_AT_COORDS(vParam0)))
 	{
-		if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+		if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 		{
 			return 1;
 		}

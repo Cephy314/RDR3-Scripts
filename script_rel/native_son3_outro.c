@@ -1206,7 +1206,7 @@ int func_61(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam4)
 	bVar0 = func_42(iParam0);
 	if (func_33(bVar0, 0))
 	{
-		if (func_33(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_33(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}

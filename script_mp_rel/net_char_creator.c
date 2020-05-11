@@ -8729,7 +8729,7 @@ void func_78(var uParam0, var uParam1)
 	if (func_244(uParam0, 4))
 	{
 		func_245(uParam0, uParam1, 0);
-		PED::_0x6BEFAA907B076859(*uParam0);
+		PED::_DELETE_PED_TEXTURE(*uParam0);
 	}
 	uParam0->f_8 = 0;
 }
@@ -9580,16 +9580,16 @@ int func_109(var uParam0, var uParam1)
 	{
 		if (!func_244(uParam0, 4))
 		{
-			PED::_0x253A63B5BADBC398(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
+			PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
 			func_287(uParam0, 4);
 		}
 	}
 	else if (!func_244(uParam0, 4))
 	{
-		*uParam0 = PED::_0xC5E7204F322E49EB(uParam0->f_2, uParam0->f_3, uParam0->f_4);
+		*uParam0 = PED::_CREATE_PED_TEXTURE(uParam0->f_2, uParam0->f_3, uParam0->f_4);
 		func_287(uParam0, 4);
 	}
-	if (!PED::_0x31DC8D3F216D8509(*uParam0))
+	if (!PED::_IS_PED_TEXTURE_VALID(*uParam0))
 	{
 		return 0;
 	}
@@ -9630,12 +9630,12 @@ void func_111(var uParam0, var uParam1, bool bParam2)
 {
 	if (bParam2)
 	{
-		PED::_0x253A63B5BADBC398(*uParam0, uParam1->f_2, uParam1->f_3, uParam1->f_4, uParam1->f_5);
+		PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, uParam1->f_2, uParam1->f_3, uParam1->f_4, uParam1->f_5);
 	}
 	if (uParam1->f_9 != 0)
 	{
-		PED::_0x1ED8588524AC9BE1(*uParam0, uParam1->f_2, uParam1->f_9);
-		PED::_0x2DF59FFE6FFD6044(*uParam0, uParam1->f_2, uParam1->f_10, uParam1->f_11, uParam1->f_12);
+		PED::_SET_PED_OVERLAY_PALETTE(*uParam0, uParam1->f_2, uParam1->f_9);
+		PED::_SET_PED_OVERLAY_COLOUR(*uParam0, uParam1->f_2, uParam1->f_10, uParam1->f_11, uParam1->f_12);
 	}
 	if (uParam1->f_7 != 0)
 	{
@@ -9645,8 +9645,8 @@ void func_111(var uParam0, var uParam1, bool bParam2)
 	{
 		PED::_0x057C4F092E2298BE(*uParam0, uParam1->f_2, uParam1->f_15);
 	}
-	PED::_0x3329AAE2882FC8E4(*uParam0, uParam1->f_2, uParam1->f_6);
-	PED::_0x6C76BC24F8BB709A(*uParam0, uParam1->f_2, uParam1->f_13);
+	PED::_SEP_PED_OVERLAY_VARIATION(*uParam0, uParam1->f_2, uParam1->f_6);
+	PED::_SET_PED_OVERLAY_OPACITY(*uParam0, uParam1->f_2, uParam1->f_13);
 }
 
 int func_112(int iParam0, var uParam1)
@@ -9655,15 +9655,15 @@ int func_112(int iParam0, var uParam1)
 	{
 		return 1;
 	}
-	if (!PED::_0x31DC8D3F216D8509(*uParam1))
+	if (!PED::_IS_PED_TEXTURE_VALID(*uParam1))
 	{
 		return 0;
 	}
 	if (!func_244(uParam1, 2))
 	{
-		PED::_0x92DAABA2C1C10B0E(*uParam1);
+		PED::_UPDATE_PED_TEXTURE(*uParam1);
 	}
-	PED::_0x0B46E25761519058(iParam0, uParam1->f_5, *uParam1);
+	PED::_OVERRIDE_TEXTURE_ON_PED(iParam0, uParam1->f_5, *uParam1);
 	return 1;
 }
 
@@ -13799,7 +13799,7 @@ void func_245(var uParam0, var uParam1, bool bParam2)
 	}
 	if (bParam2)
 	{
-		PED::_0xB63B9178D0F58D82(*uParam0);
+		PED::_RESET_PED_TEXTURE(*uParam0);
 	}
 	uParam0->f_6 = 0;
 	uParam0->f_7 = 0;
@@ -16284,7 +16284,7 @@ void func_335(var uParam0, int iParam1)
 
 void func_336(var uParam0)
 {
-	if (!PED::_0x31DC8D3F216D8509(*uParam0))
+	if (!PED::_IS_PED_TEXTURE_VALID(*uParam0))
 	{
 		return;
 	}
@@ -16292,8 +16292,8 @@ void func_336(var uParam0)
 	{
 		return;
 	}
-	PED::_0x92DAABA2C1C10B0E(*uParam0);
-	PED::_0x8472A1789478F82F(*uParam0);
+	PED::_UPDATE_PED_TEXTURE(*uParam0);
+	PED::_RESET_PED_TEXTURE(*uParam0);
 	func_287(uParam0, 2);
 }
 
@@ -21102,7 +21102,7 @@ void func_490(var uParam0, var uParam1, var uParam2, var uParam3)
 	uParam0->f_2 = uParam1;
 	uParam0->f_3 = uParam2;
 	uParam0->f_4 = uParam3;
-	PED::_0x253A63B5BADBC398(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
+	PED::_SET_PED_OVERLAY_TEXTURES(*uParam0, 0, uParam0->f_2, uParam0->f_3, uParam0->f_4);
 }
 
 int func_491(var uParam0, var uParam1, int iParam2, int iParam3)
@@ -21285,7 +21285,7 @@ int func_495(var uParam0, var uParam1, int iParam2)
 	{
 		return 0;
 	}
-	PED::_0x96C349DE04C49011(*uParam0, ((*uParam1)[iVar0 /*18*/])->f_2);
+	PED::_REMOVE_PED_OVERLAY(*uParam0, ((*uParam1)[iVar0 /*18*/])->f_2);
 	func_442(uParam0, uParam1, iVar0);
 	return 1;
 }
@@ -21351,7 +21351,7 @@ void func_497(var uParam0, var uParam1)
 	{
 		if (((*uParam1)[iVar0 /*18*/])->f_1 < ((*uParam1)[(iVar0 - 1) /*18*/])->f_1)
 		{
-			PED::_0x96C349DE04C49011(*uParam0, ((*uParam1)[(iVar0 - 1) /*18*/])->f_2);
+			PED::_REMOVE_PED_OVERLAY(*uParam0, ((*uParam1)[(iVar0 - 1) /*18*/])->f_2);
 			Var2 = { *((*uParam1)[iVar0 /*18*/]) };
 			*((*uParam1)[iVar0 /*18*/]) = { *((*uParam1)[(iVar0 - 1) /*18*/]) };
 			*((*uParam1)[(iVar0 - 1) /*18*/]) = { Var2 };
@@ -21375,7 +21375,7 @@ void func_497(var uParam0, var uParam1)
 
 void func_498(var uParam0, var uParam1)
 {
-	uParam1->f_2 = PED::_0x86BB5FF45F193A02(*uParam0, uParam1->f_3, uParam1->f_4, uParam1->f_5, uParam1->f_16, uParam1->f_13, uParam1->f_6);
+	uParam1->f_2 = PED::_ADD_PED_OVERLAY(*uParam0, uParam1->f_3, uParam1->f_4, uParam1->f_5, uParam1->f_16, uParam1->f_13, uParam1->f_6);
 	func_111(uParam0, uParam1, 0);
 }
 
@@ -26084,7 +26084,7 @@ int func_662(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(iParam0))
+	if (ENTITY::_GET_IS_LOOTED(iParam0))
 	{
 		return 0;
 	}

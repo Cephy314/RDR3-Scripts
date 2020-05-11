@@ -15397,7 +15397,7 @@ int func_269(var uParam0, char* sParam1)
 	{
 		if (TASK::_DOES_SCENARIO_POINT_EXIST(*uParam0))
 		{
-			iVar1 = TASK::_0x295514F198EFD0CA(*uParam0, sParam1);
+			iVar1 = TASK::_GET_SCENARIO_PROPSET_ENTITY(*uParam0, sParam1);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 			{
 				iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar1);

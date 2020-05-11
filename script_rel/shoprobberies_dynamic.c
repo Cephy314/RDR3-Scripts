@@ -6976,8 +6976,8 @@ void func_250(var uParam0)
 		ENTITY::FREEZE_ENTITY_POSITION(&(uParam0->f_2[1]), true);
 		TASK::_0x8360C47380B6F351(uParam0->f_5, &(uParam0->f_2[0]), "OOXO", 1);
 		TASK::_0x8360C47380B6F351(uParam0->f_5, &(uParam0->f_2[1]), "OXOO", 1);
-		iVar0[0] = TASK::_0x295514F198EFD0CA(uParam0->f_5, "OXOO");
-		iVar0[1] = TASK::_0x295514F198EFD0CA(uParam0->f_5, "OOXO");
+		iVar0[0] = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_5, "OXOO");
+		iVar0[1] = TASK::_GET_SCENARIO_PROPSET_ENTITY(uParam0->f_5, "OOXO");
 		if (ENTITY::DOES_ENTITY_EXIST(&(iVar0[0])))
 		{
 			ENTITY::FREEZE_ENTITY_POSITION(&(iVar0[0]), true);
@@ -10683,7 +10683,7 @@ int func_404(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -12715,7 +12715,7 @@ int func_488(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -13073,7 +13073,7 @@ int func_502(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}

@@ -10434,7 +10434,7 @@ int func_281(var uParam0, var uParam1, var uParam2, vector3 vParam3, int iParam6
 	}
 	else if (!ENTITY::DOES_ENTITY_EXIST(*uParam1))
 	{
-		iVar0 = TASK::_0x295514F198EFD0CA(*uParam2, "PrimaryItem");
+		iVar0 = TASK::_GET_SCENARIO_PROPSET_ENTITY(*uParam2, "PrimaryItem");
 		*uParam1 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(iVar0);
 		TXD::_REQUEST_STREAMED_TXD(iParam6, false);
 		return 0;
@@ -11741,7 +11741,7 @@ var func_318(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_TOWN_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 

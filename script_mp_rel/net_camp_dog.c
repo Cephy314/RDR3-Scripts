@@ -3847,7 +3847,7 @@ int func_155(vector3 vParam0)
 	{
 		return 0;
 	}
-	if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vParam0))
+	if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vParam0))
 	{
 		return 0;
 	}

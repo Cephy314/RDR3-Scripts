@@ -9928,7 +9928,7 @@ float func_250(int iParam0, float fParam1)
 			fVar1 = BUILTIN::TO_FLOAT(ENTITY::GET_ENTITY_MAX_HEALTH(Global_35, false));
 			break;
 		case 1:
-			fVar0 = PED::_0x775A1CA7893AA8B5(Global_35);
+			fVar0 = PED::_GET_PED_STAMINA(Global_35);
 			fVar1 = PED::_GET_PED_MAX_STAMINA(Global_35);
 			break;
 		case 2:
@@ -9994,7 +9994,7 @@ void func_254(float fParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, (fParam0 * IntToFloat(iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, (fParam0 * IntToFloat(iVar0)));
 	}
 }
 
@@ -11486,7 +11486,7 @@ int func_320(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -18416,22 +18416,22 @@ int func_575(int iParam0)
 
 void func_576(float fParam0)
 {
-	bool bVar0;
+	int iVar0;
 
 	if (fParam0 == 0f)
 	{
 		return;
 	}
-	bVar0 = PLAYER::PLAYER_PED_ID();
-	if (!ENTITY::DOES_ENTITY_EXIST(bVar0))
+	iVar0 = PLAYER::PLAYER_PED_ID();
+	if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 	{
 		return;
 	}
-	if (ENTITY::IS_ENTITY_DEAD(bVar0))
+	if (ENTITY::IS_ENTITY_DEAD(iVar0))
 	{
 		return;
 	}
-	PED::_0xC3D4B754C0E86B9E(bVar0, fParam0);
+	PED::_CHARGE_PED_STAMINA(iVar0, fParam0);
 }
 
 int func_577(int iParam0)

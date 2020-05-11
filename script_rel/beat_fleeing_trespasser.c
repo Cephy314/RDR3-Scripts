@@ -3189,7 +3189,7 @@ int func_90(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4, 
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -4035,7 +4035,7 @@ int func_115()
 				iLocal_407++;
 				break;
 			case 10:
-				if (ENTITY::_0x61914209C36EFDDB(&(uLocal_322[2])) == 5 || func_274(&(uLocal_322[iVar0])))
+				if (ENTITY::_GET_ENTITY_STATUS(&(uLocal_322[2])) == 5 || func_274(&(uLocal_322[iVar0])))
 				{
 					iLocal_407++;
 				}
@@ -8115,7 +8115,7 @@ int func_221(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -10046,7 +10046,7 @@ int func_266(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -15079,7 +15079,7 @@ int func_400(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -15783,7 +15783,7 @@ void func_435(int iParam0, int iParam1, float fParam2, float fParam3, bool bPara
 		else
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iVar1);
-			if ((PED::_IS_PED_CARRYING(iParam0) || ENTITY::_0x61914209C36EFDDB(iParam0) == 4) || func_264(iParam0, 1245594896))
+			if ((PED::_IS_PED_CARRYING(iParam0) || ENTITY::_GET_ENTITY_STATUS(iParam0) == 4) || func_264(iParam0, 1245594896))
 			{
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, iParam0, ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 2f, 8);
 			}
@@ -15934,7 +15934,7 @@ int func_438()
 			}
 			break;
 		case 5:
-			if (ENTITY::_0x61914209C36EFDDB(&(uLocal_322[2])) == 5)
+			if (ENTITY::_GET_ENTITY_STATUS(&(uLocal_322[2])) == 5)
 			{
 				iLocal_404++;
 			}
@@ -16027,7 +16027,7 @@ int func_439()
 			}
 			break;
 		case 4:
-			if (ENTITY::_0x61914209C36EFDDB(&(uLocal_322[2])) == 5 || func_266(&(uLocal_322[1]), &(uLocal_322[2])))
+			if (ENTITY::_GET_ENTITY_STATUS(&(uLocal_322[2])) == 5 || func_266(&(uLocal_322[1]), &(uLocal_322[2])))
 			{
 				func_108(&(uLocal_322[0]), &(uLocal_322[1]), func_107(40), "", 100f, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				func_110(&uLocal_437);

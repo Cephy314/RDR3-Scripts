@@ -5650,7 +5650,7 @@ void func_147(var uParam0, int iParam1, bool bParam2)
 				{
 					PED::_REMOVE_PED_FROM_MOUNT(iVar0, true, false);
 				}
-				iVar1 = PED::_0xB676EFDA03DADA52(iVar0, 0);
+				iVar1 = PED::_GET_HORSE_RIDER(iVar0, false);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					PED::_REMOVE_PED_FROM_MOUNT(iVar1, true, false);
@@ -21269,7 +21269,7 @@ int func_824(var uParam0, var uParam1)
 	switch (*uParam0)
 	{
 		case 3:
-			return func_823(PED::_0xB676EFDA03DADA52(uParam0->f_2, 0), uParam1);
+			return func_823(PED::_GET_HORSE_RIDER(uParam0->f_2, false), uParam1);
 		case 4:
 			return func_823(VEHICLE::GET_PED_IN_VEHICLE_SEAT(uParam0->f_1, -1), uParam1);
 		default:
@@ -25095,7 +25095,7 @@ int func_959(int iParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(iParam0))
+	if (ENTITY::_GET_IS_LOOTED(iParam0))
 	{
 		return 0;
 	}

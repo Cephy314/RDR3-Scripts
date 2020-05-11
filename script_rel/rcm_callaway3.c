@@ -2172,7 +2172,7 @@ int func_64(var uParam0)
 	{
 		if (func_215(bLocal_21, Global_35) || func_216(bLocal_21, 0, &uLocal_1267, &uLocal_1295, 1, 0))
 		{
-			if (!INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(Global_36))
+			if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(Global_36))
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(bLocal_21))
 				{
@@ -8849,13 +8849,13 @@ void func_301(var uParam0, vector3 vParam1)
 
 int func_302(var uParam0)
 {
-	if (func_213(Global_35, vLocal_22, 6.5f, 1, 1) && !INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(Global_36))
+	if (func_213(Global_35, vLocal_22, 6.5f, 1, 1) && !INTERIOR::IS_COLLISION_MARKED_OUTSIDE(Global_36))
 	{
 		TASK::TASK_LOOK_AT_ENTITY(Global_35, bLocal_21, -1, 0, 51, 0);
 	}
 	if (!bLocal_1089)
 	{
-		if (func_213(Global_35, vLocal_22, 9f, 1, 1) && !INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(Global_36))
+		if (func_213(Global_35, vLocal_22, 9f, 1, 1) && !INTERIOR::IS_COLLISION_MARKED_OUTSIDE(Global_36))
 		{
 			func_661(&vLocal_1112, &Local_1094, 0, ((*Global_1347702)[29 /*49*/])->f_37, 0, -1082130432 /* Float: -1f */, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 			func_662(Local_1094[0 /*17*/], "CAL1_POS", " ", joaat("INPUT_INTERACT_LOCKON_POS"), 0, 0, 0, 1, 0);
@@ -9641,7 +9641,7 @@ int func_320()
 		func_691();
 	}
 	iVar0 = PLAYER::GET_PLAYER_INDEX();
-	PLAYER::_0xD2CB0FB0FDCB473D(iVar0, false);
+	PLAYER::_SET_PED_AS_SADDLE_HORSE_FOR_PLAYER(iVar0, 0);
 	func_692(-1);
 	func_693(3);
 	return 1;
@@ -11224,7 +11224,7 @@ int func_357(bool bParam0)
 
 	if (ENTITY::DOES_ENTITY_EXIST(bParam0) && !PED::IS_PED_INJURED(bParam0))
 	{
-		iVar0 = ENTITY::_0x61914209C36EFDDB(bParam0);
+		iVar0 = ENTITY::_GET_ENTITY_STATUS(bParam0);
 		if (iVar0 == 1)
 		{
 			return iVar0;
@@ -15710,7 +15710,7 @@ int func_510(bool bParam0, var uParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -16430,7 +16430,7 @@ int func_535(bool bParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -16489,7 +16489,7 @@ int func_537(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == bParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == bParam0)
 		{
 			return 0;
 		}
@@ -22683,7 +22683,7 @@ void func_776(var uParam0)
 		if (ENTITY::DOES_ENTITY_EXIST(bLocal_648))
 		{
 			TASK::_0xFF745B0346E19E2C(ENTITY::_GET_OPTIMAL_CARRY_CONFIG(bLocal_648, 1));
-			if (!TASK::_0x0CCFE72B43C9CF96(bLocal_648) && (ANIMSCENE::_0x005E6F28DD7ED58D(&(Local_681[4 /*16*/]), "Calloway") || ANIMSCENE::_0xB89FCFF19DAFFF28(&(Local_681[4 /*16*/]), "Calloway")))
+			if (!TASK::_TASK_IS_CARRIABLE(bLocal_648) && (ANIMSCENE::_0x005E6F28DD7ED58D(&(Local_681[4 /*16*/]), "Calloway") || ANIMSCENE::_0xB89FCFF19DAFFF28(&(Local_681[4 /*16*/]), "Calloway")))
 			{
 				if (!func_362(bLocal_1265, 1024))
 				{
@@ -29500,7 +29500,7 @@ void func_958(int iParam0)
 		{
 			MAP::REMOVE_BLIP(&(((*Global_1900383)[iParam0 /*45*/])->f_26));
 		}
-		if (bVar0 == PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) && bVar3)
+		if (bVar0 == PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) && bVar3)
 		{
 			if (!MAP::DOES_BLIP_EXIST(((*Global_1900383)[iParam0 /*45*/])->f_27))
 			{
@@ -29731,7 +29731,7 @@ void func_958(int iParam0)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, iVar18);
 	}
-	if ((PLAYER::_0xB48050D326E9A2F3(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
+	if ((PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(PLAYER::PLAYER_ID()) == bVar0 && bVar3) && !bVar9)
 	{
 		MAP::_0x662D364ABF16DE2F(((*Global_1900383)[iParam0 /*45*/])->f_26, joaat("BLIP_MODIFIER_OVERLAY_SADDLE"));
 	}
@@ -35255,7 +35255,7 @@ int func_1185(bool bParam0)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(Global_35) && !PED::IS_PED_INJURED(Global_35))
 		{
-			if (PED::_0xB676EFDA03DADA52(bParam0, 0) == Global_35)
+			if (PED::_GET_HORSE_RIDER(bParam0, false) == Global_35)
 			{
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_LR"), false);
 				PAD::DISABLE_CONTROL_ACTION(0, joaat("INPUT_HORSE_MOVE_UD"), false);
@@ -38733,7 +38733,7 @@ int func_1310(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	iVar0 = ENTITY::_0x61914209C36EFDDB(bParam1);
+	iVar0 = ENTITY::_GET_ENTITY_STATUS(bParam1);
 	if (iVar0 == 5)
 	{
 		return 1;
@@ -46184,7 +46184,7 @@ int func_1537(int iParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 	bVar0 = func_939(iParam0);
 	if (func_901(bVar0, 0))
 	{
-		if (func_901(PED::_0xB676EFDA03DADA52(bVar0, 0), 0) && !bParam4)
+		if (func_901(PED::_GET_HORSE_RIDER(bVar0, false), 0) && !bParam4)
 		{
 			return 0;
 		}
@@ -46802,18 +46802,18 @@ bool func_1555(int iParam0, var uParam1)
 				return false;
 			}
 			iVar6 = PLAYER::PLAYER_ID();
-			iVar7 = PLAYER::_0xB48050D326E9A2F3(iVar6);
+			iVar7 = PLAYER::_GET_SADDLE_HORSE_FOR_PLAYER(iVar6);
 			if (ENTITY::DOES_ENTITY_EXIST(iVar7))
 			{
 				if (iVar7 != bVar2)
 				{
-					PLAYER::_0xD2CB0FB0FDCB473D(iVar6, false);
+					PLAYER::_SET_PED_AS_SADDLE_HORSE_FOR_PLAYER(iVar6, 0);
 				}
 			}
 			Var8 = { func_2018(uParam1->f_10) };
 			Var10 = { func_2019() };
 			func_2020(bVar2, &Var8, &Var10, 0);
-			PLAYER::_0xD2CB0FB0FDCB473D(iVar6, bVar2);
+			PLAYER::_SET_PED_AS_SADDLE_HORSE_FOR_PLAYER(iVar6, bVar2);
 			PED::SET_PED_CONFIG_FLAG(bVar2, 186, false);
 		}
 	}
@@ -51844,7 +51844,7 @@ void func_1731(int iParam0)
 	else
 	{
 		iVar0 = 8;
-		PED::_0xC3D4B754C0E86B9E(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
+		PED::_CHARGE_PED_STAMINA(Global_35, BUILTIN::TO_FLOAT((iParam0 * iVar0)));
 	}
 }
 
@@ -69891,7 +69891,7 @@ void func_2278(bool bParam0)
 		ENTITY::SET_ENTITY_AS_MISSION_ENTITY(bParam0, false, true);
 	}
 	PED::_0xBCC76708E5677E1D(bParam0, 0);
-	PED::_0x931B241409216C1F(Global_35, bParam0, 0);
+	PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(Global_35, bParam0, 0);
 	PED::_0xB8B6430EAD2D2437(bParam0, joaat("PLAYER_HORSE"));
 	iVar1 = ENTITY::GET_ENTITY_MODEL(bParam0);
 	iVar2 = PED::_GET_DEFAULT_RELATIONSHIP_GROUP_HASH(iVar1);

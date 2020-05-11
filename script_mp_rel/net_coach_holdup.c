@@ -8587,7 +8587,7 @@ void func_345(int iParam0)
 		OBJECT::DELETE_OBJECT(&iVar0);
 		return;
 	}
-	iVar3 = ENTITY::_0x61914209C36EFDDB(iVar0);
+	iVar3 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 	switch (iVar3)
 	{
 		case 3:
@@ -9220,7 +9220,7 @@ void func_359(var uParam0, var uParam1, int iParam2, bool bParam3)
 		fVar2 = 25f;
 	}
 	vVar3 = { ENTITY::GET_ENTITY_COORDS(iParam2, false, false) };
-	if (INTERIOR::_ARE_COORDS_COLLIDING_WITH_EXTERIOR(vVar3))
+	if (INTERIOR::IS_COLLISION_MARKED_OUTSIDE(vVar3))
 	{
 		func_391(&vVar3, 200f);
 	}
@@ -10635,7 +10635,7 @@ void func_399(int iParam0, int iParam1, var uParam2)
 	{
 		if (func_202(iParam0, uParam2, 65536) || func_202(iParam0, uParam2, 131072))
 		{
-			if ((((Local_17.f_16[iParam0 /*12*/])->f_3 != 28 && (Local_17.f_16[iParam0 /*12*/])->f_3 != 24) && !PED::_0x3AA24CCC0D451379(iParam1)) && ENTITY::_0x61914209C36EFDDB(iParam1) == 0)
+			if ((((Local_17.f_16[iParam0 /*12*/])->f_3 != 28 && (Local_17.f_16[iParam0 /*12*/])->f_3 != 24) && !PED::_0x3AA24CCC0D451379(iParam1)) && ENTITY::_GET_ENTITY_STATUS(iParam1) == 0)
 			{
 				func_414(iParam0, uParam2, 65536);
 				func_414(iParam0, uParam2, 131072);
@@ -10658,7 +10658,7 @@ void func_399(int iParam0, int iParam1, var uParam2)
 			func_694(iParam0, (Local_17.f_16[iParam0 /*12*/])->f_7);
 		}
 	}
-	iVar6 = ENTITY::_0x61914209C36EFDDB(iParam1);
+	iVar6 = ENTITY::_GET_ENTITY_STATUS(iParam1);
 	if (((Local_17.f_16[iParam0 /*12*/])->f_7 == 255 || iVar0 == 255) || !func_695(iParam0, iVar0))
 	{
 		if (iVar6 != 3 && 1)
@@ -14948,7 +14948,7 @@ void func_558(int iParam0)
 		return;
 	}
 	iVar3 = func_854(iVar0, &uVar1, &iVar2);
-	iVar5 = ENTITY::_0x61914209C36EFDDB(iVar0);
+	iVar5 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 	if ((func_33(1) && func_855(&Local_2026, ENTITY::GET_ENTITY_COORDS(iVar0, false, false), func_41(Local_361[Local_2026.f_634 /*52*/], 64))) && ((Local_17.f_16[iParam0 /*12*/])->f_7 == PLAYER::PLAYER_ID() || (Local_17.f_16[iParam0 /*12*/])->f_7 == 255))
 	{
 		if (iVar5 == 3 && PED::_0x3AA24CCC0D451379(iVar0))
@@ -14974,7 +14974,7 @@ void func_558(int iParam0)
 	{
 		if (iVar2 == 255)
 		{
-			iVar6 = ENTITY::_0x61914209C36EFDDB(iVar0);
+			iVar6 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 			if (iVar6 == 8 || iVar6 == 9)
 			{
 				return;
@@ -18595,9 +18595,9 @@ int func_630(var uParam0, var uParam1, bool bParam2)
 				else
 				{
 					bVar5 = true;
-					if (func_438(iVar2, &iVar3, 1, 1) && ENTITY::_0x61914209C36EFDDB(iVar3) == 7)
+					if (func_438(iVar2, &iVar3, 1, 1) && ENTITY::_GET_ENTITY_STATUS(iVar3) == 7)
 					{
-						iVar4 = PED::_0xA033D7E4BBF9844D(iVar3);
+						iVar4 = PED::_GET_HORSE_CARRIER_OF_PED(iVar3);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar4) && iVar4 == PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID()))
 						{
 							return 9;
@@ -27894,7 +27894,7 @@ int func_986(int iParam0, var uParam1, var uParam2, float fParam3)
 		return 0;
 	}
 	iVar0 = NETWORK::NET_TO_OBJ(&(uParam1->f_257[iParam0 /*5*/]));
-	if (ENTITY::_0x61914209C36EFDDB(iVar0) == 5 && PED::_GET_CARRIER(iVar0) == PLAYER::PLAYER_PED_ID())
+	if (ENTITY::_GET_ENTITY_STATUS(iVar0) == 5 && PED::_GET_CARRIER(iVar0) == PLAYER::PLAYER_PED_ID())
 	{
 		return 0;
 	}
@@ -28409,7 +28409,7 @@ int func_996(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 									else if (!func_438(iVar15, &iVar16, 1, 0))
 									{
 									}
-									else if (ENTITY::_0x61914209C36EFDDB(iVar16) != 7)
+									else if (ENTITY::_GET_ENTITY_STATUS(iVar16) != 7)
 									{
 									}
 									else
@@ -32183,7 +32183,7 @@ int func_1167(int iParam0, int iParam1, bool bParam2)
 	bool bVar2;
 
 	bVar2 = false;
-	switch (ENTITY::_0x61914209C36EFDDB(iParam0))
+	switch (ENTITY::_GET_ENTITY_STATUS(iParam0))
 	{
 		case 4:
 		case 5:
@@ -32195,15 +32195,15 @@ int func_1167(int iParam0, int iParam1, bool bParam2)
 			*iParam1 = PED::_GET_CARRIER(iParam0);
 			if (!ENTITY::DOES_ENTITY_EXIST(*iParam1))
 			{
-				*iParam1 = PED::_0xA033D7E4BBF9844D(iParam0);
+				*iParam1 = PED::_GET_HORSE_CARRIER_OF_PED(iParam0);
 			}
-			if ((ENTITY::DOES_ENTITY_EXIST(*iParam1) && !PED::IS_PED_HUMAN(*iParam1)) && PED::_0x2D64376CF437363E(*iParam1))
+			if ((ENTITY::DOES_ENTITY_EXIST(*iParam1) && !PED::IS_PED_HUMAN(*iParam1)) && PED::_IS_PED_AN_ANIMAL(*iParam1))
 			{
 				bVar2 = true;
 			}
 			break;
 		case 7:
-			*iParam1 = PED::_0xA033D7E4BBF9844D(iParam0);
+			*iParam1 = PED::_GET_HORSE_CARRIER_OF_PED(iParam0);
 			bVar2 = true;
 			break;
 		case 3:
@@ -32211,7 +32211,7 @@ int func_1167(int iParam0, int iParam1, bool bParam2)
 	}
 	if ((bVar2 && ENTITY::DOES_ENTITY_EXIST(*iParam1)) && !PED::IS_PED_DEAD_OR_DYING(*iParam1, true))
 	{
-		iVar0 = PED::_0xB676EFDA03DADA52(*iParam1, 1);
+		iVar0 = PED::_GET_HORSE_RIDER(*iParam1, true);
 		if (!ENTITY::DOES_ENTITY_EXIST(iVar0) && bParam2)
 		{
 			iVar1 = PLAYER::_0xAD03B03737CE6810(*iParam1);
@@ -32425,7 +32425,7 @@ int func_1171(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4
 	}
 	if (Global_1939178->f_34 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1939178->f_34, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1939178->f_34, true) == iParam0)
 		{
 			return 0;
 		}
@@ -32857,7 +32857,7 @@ int func_1185(int iParam0, int iParam1)
 	int iVar0;
 	int iVar1;
 
-	switch (ENTITY::_0x61914209C36EFDDB(iParam0))
+	switch (ENTITY::_GET_ENTITY_STATUS(iParam0))
 	{
 		case 5:
 			iVar0 = PED::_GET_CARRIER(iParam0);
@@ -32876,12 +32876,12 @@ int func_1185(int iParam0, int iParam1)
 			*iParam1 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar0);
 			return 1;
 		case 7:
-			iVar1 = PED::_0xA033D7E4BBF9844D(iParam0);
+			iVar1 = PED::_GET_HORSE_CARRIER_OF_PED(iParam0);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 			{
 				return 0;
 			}
-			iVar0 = PED::_0xB676EFDA03DADA52(iVar1, 0);
+			iVar0 = PED::_GET_HORSE_RIDER(iVar1, false);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
 				return 0;

@@ -12620,7 +12620,7 @@ int func_369(bool bParam0)
 	{
 		return 0;
 	}
-	if (ENTITY::_0x8DE41E9902E85756(bParam0))
+	if (ENTITY::_GET_IS_LOOTED(bParam0))
 	{
 		return 0;
 	}
@@ -14164,7 +14164,7 @@ int func_386(bool bParam0, var uParam1)
 	{
 		return 0;
 	}
-	if (!ENTITY::_0x9A100F1CF4546629(bParam0) && !ENTITY::_0xC346A546612C49A9(bParam0))
+	if (!ENTITY::_0x9A100F1CF4546629(bParam0) && !ENTITY::_IS_ENTITY_A_BIRD(bParam0))
 	{
 		return 0;
 	}
@@ -18789,7 +18789,7 @@ int func_524(bool bParam0)
 	{
 		return 0;
 	}
-	if (!ENTITY::_0x9A100F1CF4546629(bParam0) && !ENTITY::_0xC346A546612C49A9(bParam0))
+	if (!ENTITY::_0x9A100F1CF4546629(bParam0) && !ENTITY::_IS_ENTITY_A_BIRD(bParam0))
 	{
 		return 0;
 	}

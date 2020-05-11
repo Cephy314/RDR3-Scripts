@@ -957,7 +957,7 @@ int func_26()
 		uLocal_220[0] = func_86((Local_416[0 /*32*/])->f_1, Local_416[0 /*32*/], Local_14.f_51 + (Local_416[0 /*32*/])->f_6, func_88((Local_14.f_51.f_3 + (Local_416[0 /*32*/])->f_9)), 1, 0, 1, 0, 1);
 		if (!ENTITY::IS_ENTITY_DEAD(&(uLocal_220[0])) && !ENTITY::IS_ENTITY_DEAD(&(uLocal_218[0])))
 		{
-			PED::_0x931B241409216C1F(&(uLocal_218[0]), &(uLocal_220[0]), 0);
+			PED::_SET_PED_ACCESS_TO_HORSE_INTERACTION(&(uLocal_218[0]), &(uLocal_220[0]), 0);
 			ENTITY::_0x18FF3110CF47115D(&(uLocal_220[0]), 9, 0);
 		}
 	}
@@ -4186,7 +4186,7 @@ int func_111(int iParam0, int iParam1)
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -10758,7 +10758,7 @@ int func_317(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (Global_1935630->f_40 != 0)
 	{
-		if (PED::_0xB676EFDA03DADA52(Global_1935630->f_40, 1) == iParam0)
+		if (PED::_GET_HORSE_RIDER(Global_1935630->f_40, true) == iParam0)
 		{
 			return 0;
 		}
@@ -11146,7 +11146,7 @@ int func_332(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (!PED::_0x2D64376CF437363E(*iParam1))
+	if (!PED::_IS_PED_AN_ANIMAL(*iParam1))
 	{
 		return 0;
 	}
@@ -12653,7 +12653,7 @@ int func_406(int iParam0, int iParam1, bool bParam2, float fParam3, int iParam4)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam1))
 		{
-			if (!PED::IS_PED_ON_MOUNT(iParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_0xB676EFDA03DADA52(iParam1, 0)))
+			if (!PED::IS_PED_ON_MOUNT(iParam0) && !ENTITY::DOES_ENTITY_EXIST(PED::_GET_HORSE_RIDER(iParam1, false)))
 			{
 				ENTITY::SET_ENTITY_INVINCIBLE(iParam1, bParam2);
 				if (TASK::GET_SCRIPT_TASK_STATUS(iParam0, 1868526510, true) != 1)
