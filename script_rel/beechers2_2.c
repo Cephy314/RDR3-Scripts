@@ -29572,7 +29572,7 @@ void func_536(int iParam0)
 	}
 	else if (bVar9)
 	{
-		fVar19 = PED::_0xEBE89623EB861271(iVar0, 1);
+		fVar19 = PED::_GET_PED_REMAINING_REVIVAL_TIME(iVar0, true);
 		if (bVar16)
 		{
 			if (fVar19 < 0.25f)
@@ -56428,9 +56428,9 @@ void func_1368(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
-	var uVar2;
+	bool bVar2;
 	int iVar3;
-	var uVar4;
+	bool bVar4;
 
 	iVar0 = PLAYER::GET_PLAYER_INDEX();
 	if (PLAYER::IS_PLAYER_DEAD(iVar0))
@@ -56450,21 +56450,21 @@ void func_1368(int iParam0, int iParam1)
 		}
 		if (iParam0 == 0)
 		{
-			PLAYER::_0x8FBF9EDB378CCB8C(iVar0, iVar1);
+			PLAYER::_SET_PED_AS_PLAYER_MAIN_HORSE(iVar0, iVar1);
 		}
 		else if (iParam0 == 1)
 		{
-			uVar2 = PLAYER::_0x227B06324234FB09(iVar0, iVar1);
+			bVar2 = PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(iVar0, iVar1);
 		}
 		else
 		{
-			if (PLAYER::_0x46FA0AE18F4C7FA9(iVar0) == iVar1)
+			if (PLAYER::_GET_PLAYER_MAIN_HORSE(iVar0) == iVar1)
 			{
-				PLAYER::_0x8FBF9EDB378CCB8C(iVar0, 0);
+				PLAYER::_SET_PED_AS_PLAYER_MAIN_HORSE(iVar0, 0);
 			}
-			if (PLAYER::_0xD3F7445CEA2E5035(iVar0) == iVar1)
+			if (PLAYER::_GET_PLAYER_TEMPORARY_HORSE(iVar0) == iVar1)
 			{
-				PLAYER::_0x227B06324234FB09(iVar0, 0);
+				PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(iVar0, 0);
 			}
 		}
 	}
@@ -56477,21 +56477,21 @@ void func_1368(int iParam0, int iParam1)
 		}
 		if (iParam1 == 0)
 		{
-			PLAYER::_0x8FBF9EDB378CCB8C(iVar0, iVar3);
+			PLAYER::_SET_PED_AS_PLAYER_MAIN_HORSE(iVar0, iVar3);
 		}
 		else if (iParam1 == 1)
 		{
-			uVar4 = PLAYER::_0x227B06324234FB09(iVar0, iVar3);
+			bVar4 = PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(iVar0, iVar3);
 		}
 		else
 		{
-			if (PLAYER::_0x46FA0AE18F4C7FA9(iVar0) == iVar3)
+			if (PLAYER::_GET_PLAYER_MAIN_HORSE(iVar0) == iVar3)
 			{
-				PLAYER::_0x8FBF9EDB378CCB8C(iVar0, 0);
+				PLAYER::_SET_PED_AS_PLAYER_MAIN_HORSE(iVar0, 0);
 			}
-			if (PLAYER::_0xD3F7445CEA2E5035(iVar0) == iVar3)
+			if (PLAYER::_GET_PLAYER_TEMPORARY_HORSE(iVar0) == iVar3)
 			{
-				PLAYER::_0x227B06324234FB09(iVar0, 0);
+				PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(iVar0, 0);
 			}
 		}
 	}
@@ -66400,7 +66400,7 @@ bool func_1659(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_188(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1945938)[iVar0 /*18*/])->f_4);
 	}
@@ -82799,7 +82799,7 @@ int func_2295(var uParam0, int iParam1, int iParam2)
 	{
 		if (func_254(uParam0->f_5423[iVar0 /*65*/]))
 		{
-			if ((((uParam0->f_5423[iVar0 /*65*/])->f_9 == 40 && ENTITY::IS_ENTITY_A_PED(iParam1)) && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1) == PLAYER::_0x46FA0AE18F4C7FA9(PLAYER::GET_PLAYER_INDEX())) && &uParam0->f_5423[iVar0 /*65*/] != iParam1)
+			if ((((uParam0->f_5423[iVar0 /*65*/])->f_9 == 40 && ENTITY::IS_ENTITY_A_PED(iParam1)) && ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1) == PLAYER::_GET_PLAYER_MAIN_HORSE(PLAYER::GET_PLAYER_INDEX())) && &uParam0->f_5423[iVar0 /*65*/] != iParam1)
 			{
 				*iParam2 = iVar0;
 				return (((1 && !func_1385(iParam1)) && (uParam0->f_5423[iVar0 /*65*/])->f_9 == func_2297(iParam1)) && &uParam0->f_5423[iVar0 /*65*/] != iParam1);
@@ -83841,7 +83841,7 @@ float func_2337(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_188(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1945938)[iVar0 /*18*/])->f_3);
 	}
@@ -83857,7 +83857,7 @@ bool func_2338(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_188(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1945938)[iVar0 /*18*/])->f_3);
 	}
@@ -85296,7 +85296,7 @@ void func_2394(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 	}
 	else
 	{
-		*uParam4 = PED::_0x7BCC6087D130312A(iParam0);
+		*uParam4 = PED::_GET_PED_QUALITY(iParam0);
 		switch (*uParam4)
 		{
 			case 0:

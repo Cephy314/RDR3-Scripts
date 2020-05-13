@@ -49,7 +49,7 @@ void __EntryFunction__()
 	{
 		ENTITY::SET_ENTITY_AS_MISSION_ENTITY(ScriptParam_0.f_1, true, true);
 	}
-	Var0.f_204 = TASK::_0x2D0571BB55879DA2(Global_34);
+	Var0.f_204 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 	func_5(&ScriptParam_0, &(Var0.f_1));
 	if (Var0.f_1 == 0)
 	{
@@ -754,7 +754,7 @@ void func_14(var uParam0)
 	}
 	if (!func_19(uParam0->f_202, 4))
 	{
-		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (((TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE") || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC")) || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER")) || TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_PLAYER_MOONSHINE_SERVING")))
+		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (((TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE") || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC")) || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("WORLD_PLAYER_MOONSHINE_CUSTOMER")) || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("WORLD_PLAYER_MOONSHINE_SERVING")))
 		{
 			func_4(&(uParam0->f_202), 4);
 			func_44(uParam0);
@@ -890,7 +890,7 @@ bool func_21(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_48(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1949759)[iVar0 /*23*/])->f_4);
 	}

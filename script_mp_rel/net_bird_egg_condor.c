@@ -929,7 +929,7 @@ void func_33(var uParam0)
 {
 	if (AUDIO::_0xD9130842D7226045("RDRO_Collectible_Sounds_Travelling_Saleswoman", 0))
 	{
-		if (HUD::_0x1BE19185B8AFE299(joaat("INPUT_LOOT3")))
+		if (HUD::_UIPROMPT_HAS_PROMPT_WITH_CONTROL_ACTION_VISIBLE_THIS_FRAME(joaat("INPUT_LOOT3")))
 		{
 			if (!*uParam0)
 			{

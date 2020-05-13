@@ -13610,7 +13610,7 @@ int func_389(var uParam0, int* iParam1, var uParam2, int iParam3, int iParam4, v
 				iVar2 = ENTITY::_GET_ENTITY_STATUS(iVar0);
 				if (iVar2 == 7 || iVar2 == 5)
 				{
-					iVar1 = PED::_0x09B83E68DE004CD4(iVar0);
+					iVar1 = PED::_GET_CARRIER_AS_PED(iVar0);
 				}
 				uParam2->f_13 = 4;
 			}
@@ -17106,7 +17106,7 @@ float func_502(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_543(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -17152,7 +17152,7 @@ bool func_503(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}

@@ -3436,7 +3436,7 @@ int func_118()
 			else
 			{
 				ANIMSCENE::LOAD_ANIM_SCENE(Local_995.f_18.f_156);
-				Local_16.f_7.f_20 = NETWORK::_0xE0D73CDDEA79DDCD(Local_995.f_18.f_156);
+				Local_16.f_7.f_20 = NETWORK::_ANIM_SCENE_TO_NET(Local_995.f_18.f_156);
 			}
 			func_206(1);
 			return 0;
@@ -4700,7 +4700,7 @@ void func_210()
 	{
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_16.f_7.f_20))
 		{
-			Local_995.f_18.f_156 = NETWORK::_0xD7F6781A0ABAF6FB(Local_16.f_7.f_20);
+			Local_995.f_18.f_156 = NETWORK::_NET_TO_ANIM_SCENE(Local_16.f_7.f_20);
 			if (!ANIMSCENE::_0x25557E324489393C(Local_995.f_18.f_156))
 			{
 			}
@@ -14130,7 +14130,7 @@ int func_495(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (PED::_0xB65A4DAB460A19BD(Global_34) != 0)
+	if (PED::_GET_LASSOED_ENTITY(Global_34) != 0)
 	{
 		return 1;
 	}
@@ -15744,7 +15744,7 @@ void func_571(int iParam0)
 			{
 				if (bVar1 && WEAPON::_0x6E4E1A82081EABED(Global_1939178->f_38))
 				{
-					Global_1939178->f_24 = PED::_0xB65A4DAB460A19BD(Global_34) != 0;
+					Global_1939178->f_24 = PED::_GET_LASSOED_ENTITY(Global_34) != 0;
 				}
 				if (Global_1939178->f_40 == joaat("WEAPON_THROWN_BOLAS"))
 				{
@@ -16403,7 +16403,7 @@ int func_597(int iParam0, int iParam1)
 
 int func_598(int iParam0, int iParam1)
 {
-	if (PED::_0xB65A4DAB460A19BD(iParam0) == iParam1)
+	if (PED::_GET_LASSOED_ENTITY(iParam0) == iParam1)
 	{
 		return 1;
 	}
@@ -17626,7 +17626,7 @@ int func_649(bool bParam0, int iParam1, int iParam2)
 	}
 	if (Global_1939178->f_24 && !PED::IS_PED_INJURED(Global_34))
 	{
-		iVar1 = PED::_0xB65A4DAB460A19BD(Global_34);
+		iVar1 = PED::_GET_LASSOED_ENTITY(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 		{
 			if (!bParam0 || PED::IS_PED_HUMAN(iVar1))
@@ -17675,7 +17675,7 @@ int func_650(var uParam0)
 		}
 		if (iVar0 == 0)
 		{
-			iVar0 = PED::_0xB65A4DAB460A19BD(Global_34);
+			iVar0 = PED::_GET_LASSOED_ENTITY(Global_34);
 		}
 		if (iVar0 != 0)
 		{
@@ -17799,7 +17799,7 @@ int func_657(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;

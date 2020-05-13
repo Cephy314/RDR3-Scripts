@@ -11774,7 +11774,7 @@ void func_291(int iParam0)
 		(Global_1070356->f_20209[iParam0 /*18*/])->f_6 = 0;
 		if (HUD::IS_MP_GAMER_TAG_ACTIVE((Global_1070356->f_20209[iParam0 /*18*/])->f_2))
 		{
-			HUD::_0x25B9C78A25105C35((Global_1070356->f_20209[iParam0 /*18*/])->f_2, 0);
+			HUD::_SET_MP_GAMER_TAG_TYPE((Global_1070356->f_20209[iParam0 /*18*/])->f_2, 0);
 		}
 		func_448(iParam0);
 	}
@@ -26421,7 +26421,7 @@ void func_848(int iParam0, int iParam1)
 		(Global_1070356->f_20209[iParam0 /*18*/])->f_6 = iParam1;
 		if (HUD::IS_MP_GAMER_TAG_ACTIVE((Global_1070356->f_20209[iParam0 /*18*/])->f_2))
 		{
-			HUD::_0x25B9C78A25105C35((Global_1070356->f_20209[iParam0 /*18*/])->f_2, iParam1);
+			HUD::_SET_MP_GAMER_TAG_TYPE((Global_1070356->f_20209[iParam0 /*18*/])->f_2, iParam1);
 		}
 		func_448(iParam0);
 	}
@@ -34006,7 +34006,7 @@ int func_1130(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	if (PED::IS_PED_MALE(iParam0))
 	{
 		if (iVar0 == joaat("MP_LOBBY_SCENARIO_10") || iVar0 == joaat("MP_LOBBY_SCENARIO_12"))

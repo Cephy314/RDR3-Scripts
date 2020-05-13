@@ -9030,7 +9030,7 @@ int func_297(int iParam0, bool bParam1)
 	}
 	if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35);
 		iVar1 = iVar0;
 		if ((iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC") && iVar1 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) && iVar1 != joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC"))
 		{

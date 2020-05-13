@@ -1715,7 +1715,7 @@ int func_40(var uParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, i
 					}
 					if (func_133(&(((*iParam1)[iVar0 /*32*/])->f_22)))
 					{
-						GRAPHICS::_0xDFCE8CE9F3EBE93F(uParam2[iVar0]);
+						GRAPHICS::_ADD_BLOOD_POOL_AT_PED(uParam2[iVar0]);
 					}
 					func_131((*uParam2)[iVar0], (*iParam1)[iVar0 /*32*/], bParam3, 0);
 				}
@@ -6069,7 +6069,7 @@ int func_177(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -9575,7 +9575,7 @@ int func_288(bool bParam0, var uParam1, var uParam2)
 	}
 	if (Global_1935630->f_30 && !PED::IS_PED_INJURED(Global_35))
 	{
-		iVar1 = PED::_0xB65A4DAB460A19BD(Global_35);
+		iVar1 = PED::_GET_LASSOED_ENTITY(Global_35);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 		{
 			if (!bParam0 || PED::IS_PED_HUMAN(iVar1))

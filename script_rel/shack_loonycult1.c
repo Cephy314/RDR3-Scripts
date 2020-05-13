@@ -2088,7 +2088,7 @@ int func_54(var uParam0)
 	{
 		if (func_120())
 		{
-			if (TASK::_0x2D0571BB55879DA2(Global_35) == joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING"))
+			if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35) == joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING"))
 			{
 				func_42(&(Local_73.f_131), 16777216);
 				func_101(&(uParam0->f_5), &(Local_73.f_131));

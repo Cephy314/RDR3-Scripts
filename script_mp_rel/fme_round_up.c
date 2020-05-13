@@ -9909,7 +9909,7 @@ bool func_481(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -19206,7 +19206,7 @@ int func_862(int iParam0)
 	{
 		if ((iVar2 == 5 || iVar2 == 4) || iVar2 == 6)
 		{
-			iVar1 = PED::_0x09B83E68DE004CD4(iVar0);
+			iVar1 = PED::_GET_CARRIER_AS_PED(iVar0);
 			if (iVar1 == Global_34)
 			{
 				return 1;
@@ -19218,7 +19218,7 @@ int func_862(int iParam0)
 		}
 		else if ((iVar2 == 7 || iVar2 == 9) || iVar2 == 8)
 		{
-			iVar1 = PED::_GET_HORSE_CARRIER_OF_PED(iVar0);
+			iVar1 = PED::_GET_CARRIER_AS_MOUNT(iVar0);
 			if (PED::IS_PED_ON_MOUNT(Global_34))
 			{
 				if (PED::GET_MOUNT(Global_34) == iVar1)
@@ -19348,7 +19348,7 @@ int func_868(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (PED::_0x09B83E68DE004CD4(iParam1) != iParam0)
+	if (PED::_GET_CARRIER_AS_PED(iParam1) != iParam0)
 	{
 		return 0;
 	}
@@ -19383,7 +19383,7 @@ int func_869(int iParam0)
 	}
 	if ((iVar2 == 7 || iVar2 == 9) || iVar2 == 8)
 	{
-		iVar1 = PED::_GET_HORSE_CARRIER_OF_PED(iVar0);
+		iVar1 = PED::_GET_CARRIER_AS_MOUNT(iVar0);
 		if (PED::IS_PED_ON_MOUNT(Global_34))
 		{
 			if (PED::GET_MOUNT(Global_34) == iVar1)
@@ -25128,7 +25128,7 @@ int func_1141(int iParam0)
 	{
 		return 255;
 	}
-	iVar1 = PED::_GET_CARRIER(iVar0);
+	iVar1 = PED::_GET_CARRIER_AS_HUMAN(iVar0);
 	if (!func_1281(iVar1, 0))
 	{
 		return 255;

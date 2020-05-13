@@ -12212,7 +12212,7 @@ int func_381()
 	{
 		return 0;
 	}
-	iVar1 = PED::_0xB65A4DAB460A19BD(iVar0);
+	iVar1 = PED::_GET_LASSOED_ENTITY(iVar0);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		return 0;
@@ -21949,7 +21949,7 @@ bool func_683(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_518(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1949759)[iVar0 /*23*/])->f_4);
 	}
@@ -22002,7 +22002,7 @@ bool func_685(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -92113,7 +92113,7 @@ int func_2948(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:
@@ -95730,7 +95730,7 @@ int func_3059(int iParam0, var uParam1)
 	}
 	else
 	{
-		iVar3 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar3 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar3)
 		{
 			case 0:

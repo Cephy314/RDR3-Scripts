@@ -7019,7 +7019,7 @@ int func_217()
 	}
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_34))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_34);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 		iVar1 = iVar0;
 		if (iVar1 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar1 != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"))
 		{
@@ -16442,7 +16442,7 @@ int func_579()
 	}
 	if (func_317(8388608))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_34);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 		iVar1 = iVar0;
 		if (((iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1") || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4"))
 		{
@@ -19775,7 +19775,7 @@ int func_708(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:
@@ -22875,7 +22875,7 @@ int func_807(int iParam0, var uParam1)
 	}
 	else
 	{
-		iVar3 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar3 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar3)
 		{
 			case 0:

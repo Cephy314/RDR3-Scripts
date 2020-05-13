@@ -6121,7 +6121,7 @@ int func_257(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (PED::_0xB65A4DAB460A19BD(Global_34) != 0)
+	if (PED::_GET_LASSOED_ENTITY(Global_34) != 0)
 	{
 		return 1;
 	}
@@ -6780,7 +6780,7 @@ void func_288(int iParam0)
 			{
 				if (bVar1 && WEAPON::_0x6E4E1A82081EABED(Global_1939178->f_38))
 				{
-					Global_1939178->f_24 = PED::_0xB65A4DAB460A19BD(Global_34) != 0;
+					Global_1939178->f_24 = PED::_GET_LASSOED_ENTITY(Global_34) != 0;
 				}
 				if (Global_1939178->f_40 == joaat("WEAPON_THROWN_BOLAS"))
 				{
@@ -7444,7 +7444,7 @@ int func_315(int iParam0, int iParam1)
 
 int func_316(int iParam0, int iParam1)
 {
-	if (PED::_0xB65A4DAB460A19BD(iParam0) == iParam1)
+	if (PED::_GET_LASSOED_ENTITY(iParam0) == iParam1)
 	{
 		return 1;
 	}
@@ -8083,7 +8083,7 @@ int func_350(bool bParam0, int iParam1, int iParam2)
 	}
 	if (Global_1939178->f_24 && !PED::IS_PED_INJURED(Global_34))
 	{
-		iVar1 = PED::_0xB65A4DAB460A19BD(Global_34);
+		iVar1 = PED::_GET_LASSOED_ENTITY(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 		{
 			if (!bParam0 || PED::IS_PED_HUMAN(iVar1))
@@ -8132,7 +8132,7 @@ int func_351(var uParam0)
 		}
 		if (iVar0 == 0)
 		{
-			iVar0 = PED::_0xB65A4DAB460A19BD(Global_34);
+			iVar0 = PED::_GET_LASSOED_ENTITY(Global_34);
 		}
 		if (iVar0 != 0)
 		{
@@ -8256,7 +8256,7 @@ int func_358(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;

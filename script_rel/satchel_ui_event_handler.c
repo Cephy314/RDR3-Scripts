@@ -1328,7 +1328,7 @@ void func_31(bool bParam0)
 	if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
 	{
 		Global_1935496->f_7 |= 33554432;
-		if (TASK::_0x2D0571BB55879DA2(Global_35) == joaat("WORLD_PLAYER_DYNAMIC_KNEEL"))
+		if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35) == joaat("WORLD_PLAYER_DYNAMIC_KNEEL"))
 		{
 			Global_1935496->f_7 |= 67108864;
 		}
@@ -5712,7 +5712,7 @@ int func_172(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(bParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(bParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -6014,7 +6014,7 @@ int func_174(bool bParam0)
 	{
 		return 0;
 	}
-	if (!PED::_0xB65A4DAB460A19BD(Global_35) == 0)
+	if (!PED::_GET_LASSOED_ENTITY(Global_35) == 0)
 	{
 		return 0;
 	}
@@ -6320,7 +6320,7 @@ int func_183()
 
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_35))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35);
 		iVar1 = iVar0;
 		if ((((iVar1 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1")) && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4"))
 		{
@@ -14754,7 +14754,7 @@ void func_513(bool bParam0, var uParam1, var uParam2, int iParam3, var uParam4)
 	}
 	else
 	{
-		*uParam4 = PED::_0x7BCC6087D130312A(bParam0);
+		*uParam4 = PED::_GET_PED_QUALITY(bParam0);
 		switch (*uParam4)
 		{
 			case 0:
@@ -24546,7 +24546,7 @@ int func_794()
 	}
 	if (func_368(8388608))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35);
 		iVar1 = iVar0;
 		if (((iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1") || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4"))
 		{

@@ -748,7 +748,7 @@ int func_12(var uParam0, bool bParam1)
 			if (func_37(uParam0))
 			{
 				AUDIO::_0x9428447DED71FC7E("Player_Campfire_Scenes");
-				func_43(&(uParam0->f_49), 1, TASK::_0x2D0571BB55879DA2(Global_34) != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"));
+				func_43(&(uParam0->f_49), 1, TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"));
 				func_44(&(uParam0->f_49), 2);
 				uParam0->f_189 = 0;
 				func_38(uParam0);
@@ -2328,7 +2328,7 @@ int func_57(int iParam0, vector3 vParam1, float fParam4)
 			iVar5 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar4);
 			if (iVar5 != Global_34)
 			{
-				if (PED::_0x09B83E68DE004CD4(iVar5) != Global_34)
+				if (PED::_GET_CARRIER_AS_PED(iVar5) != Global_34)
 				{
 					func_122(iVar0);
 					return 1;
@@ -4259,7 +4259,7 @@ bool func_124(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -8919,7 +8919,7 @@ int func_242(int iParam0, int iParam1)
 	}
 	else
 	{
-		iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar1 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar1)
 		{
 			case 0:
@@ -9338,7 +9338,7 @@ bool func_263(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_229(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1949759)[iVar0 /*23*/])->f_4);
 	}
@@ -9848,7 +9848,7 @@ int func_274()
 	}
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_34))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_34);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 		iVar1 = iVar0;
 		if (iVar1 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar1 != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"))
 		{
@@ -13710,7 +13710,7 @@ float func_404(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_229(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -21612,7 +21612,7 @@ int func_692(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:
@@ -27311,7 +27311,7 @@ int func_896(int iParam0, var uParam1)
 	}
 	else
 	{
-		iVar3 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar3 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar3)
 		{
 			case 0:

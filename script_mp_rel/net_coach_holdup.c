@@ -683,7 +683,7 @@ void func_19()
 		}
 		else
 		{
-			ANIMSCENE::_DELETE_ANIM_SCENE(NETWORK::_0xD7F6781A0ABAF6FB((Local_17.f_16[iVar0 /*12*/])->f_5));
+			ANIMSCENE::_DELETE_ANIM_SCENE(NETWORK::_NET_TO_ANIM_SCENE((Local_17.f_16[iVar0 /*12*/])->f_5));
 		}
 		iVar0++;
 	}
@@ -4113,7 +4113,7 @@ void func_159()
 			}
 			if (func_352(Local_17.f_305.f_1, &iVar0))
 			{
-				iVar1 = PED::_GET_CARRIER(iVar0);
+				iVar1 = PED::_GET_CARRIER_AS_HUMAN(iVar0);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 				{
 					Local_2026.f_550.f_6 = { ENTITY::GET_ENTITY_FORWARD_VECTOR(iVar1) };
@@ -5735,7 +5735,7 @@ void func_235(int iParam0)
 
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((Local_17.f_16[iParam0 /*12*/])->f_5))
 	{
-		iVar2 = NETWORK::_0xD7F6781A0ABAF6FB((Local_17.f_16[iParam0 /*12*/])->f_5);
+		iVar2 = NETWORK::_NET_TO_ANIM_SCENE((Local_17.f_16[iParam0 /*12*/])->f_5);
 		ANIMSCENE::_DELETE_ANIM_SCENE(iVar2);
 	}
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(&(Local_17.f_16[iParam0 /*12*/])))
@@ -8018,7 +8018,7 @@ void func_331()
 	{
 		return;
 	}
-	iVar2 = NETWORK::_0xD7F6781A0ABAF6FB((Local_17.f_16[(Local_361[Local_2026.f_634 /*52*/])->f_46 /*12*/])->f_5);
+	iVar2 = NETWORK::_NET_TO_ANIM_SCENE((Local_17.f_16[(Local_361[Local_2026.f_634 /*52*/])->f_46 /*12*/])->f_5);
 	if (!ANIMSCENE::_0x25557E324489393C(iVar2))
 	{
 		return;
@@ -15089,7 +15089,7 @@ void func_561(int iParam0, int iParam1)
 	{
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((Local_17.f_16[iParam0 /*12*/])->f_5) && NETWORK::NETWORK_HAS_CONTROL_OF_NETWORK_ID((Local_17.f_16[iParam0 /*12*/])->f_5))
 		{
-			iVar0 = NETWORK::_0xD7F6781A0ABAF6FB((Local_17.f_16[iParam0 /*12*/])->f_5);
+			iVar0 = NETWORK::_NET_TO_ANIM_SCENE((Local_17.f_16[iParam0 /*12*/])->f_5);
 			if (ANIMSCENE::_0x25557E324489393C(iVar0))
 			{
 				ANIMSCENE::_DELETE_ANIM_SCENE(iVar0);
@@ -15117,7 +15117,7 @@ void func_561(int iParam0, int iParam1)
 	{
 		return;
 	}
-	iVar0 = NETWORK::_0xD7F6781A0ABAF6FB((Local_17.f_16[iParam0 /*12*/])->f_5);
+	iVar0 = NETWORK::_NET_TO_ANIM_SCENE((Local_17.f_16[iParam0 /*12*/])->f_5);
 	if (!NETWORK::_NETWORK_HAS_CONTROL_OF_ANIM_SCENE(iVar0))
 	{
 		return;
@@ -15849,7 +15849,7 @@ void func_572(int iParam0, var uParam1, var uParam2, float fParam3)
 			}
 			else if (!func_555(iVar2, -1519143300))
 			{
-				if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((uParam1->f_16[iParam0 /*12*/])->f_5) && ANIMSCENE::_0xCBFC7725DE6CE2E0(NETWORK::_0xD7F6781A0ABAF6FB((uParam1->f_16[iParam0 /*12*/])->f_5), 0))
+				if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((uParam1->f_16[iParam0 /*12*/])->f_5) && ANIMSCENE::_0xCBFC7725DE6CE2E0(NETWORK::_NET_TO_ANIM_SCENE((uParam1->f_16[iParam0 /*12*/])->f_5), 0))
 				{
 					return;
 				}
@@ -18597,7 +18597,7 @@ int func_630(var uParam0, var uParam1, bool bParam2)
 					bVar5 = true;
 					if (func_438(iVar2, &iVar3, 1, 1) && ENTITY::_GET_ENTITY_STATUS(iVar3) == 7)
 					{
-						iVar4 = PED::_GET_HORSE_CARRIER_OF_PED(iVar3);
+						iVar4 = PED::_GET_CARRIER_AS_MOUNT(iVar3);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar4) && iVar4 == PLAYER::_0xF49F14462F0AE27C(PLAYER::PLAYER_ID()))
 						{
 							return 9;
@@ -20520,7 +20520,7 @@ void func_703(int iParam0, var uParam1, var uParam2, var uParam3)
 			return;
 		}
 		ANIMSCENE::LOAD_ANIM_SCENE(iVar0);
-		(uParam1->f_16[iParam0 /*12*/])->f_5 = NETWORK::_0xE0D73CDDEA79DDCD(iVar0);
+		(uParam1->f_16[iParam0 /*12*/])->f_5 = NETWORK::_ANIM_SCENE_TO_NET(iVar0);
 		func_275(iParam0, uParam1, 1);
 		return;
 	}
@@ -20528,7 +20528,7 @@ void func_703(int iParam0, var uParam1, var uParam2, var uParam3)
 	{
 		return;
 	}
-	iVar0 = NETWORK::_0xD7F6781A0ABAF6FB((uParam1->f_16[iParam0 /*12*/])->f_5);
+	iVar0 = NETWORK::_NET_TO_ANIM_SCENE((uParam1->f_16[iParam0 /*12*/])->f_5);
 	if (!ANIMSCENE::_0x25557E324489393C(iVar0))
 	{
 		func_275(iParam0, uParam1, 2);
@@ -24504,7 +24504,7 @@ int func_849(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	iVar0 = NETWORK::_0xD7F6781A0ABAF6FB((Local_17.f_16[iParam0 /*12*/])->f_5);
+	iVar0 = NETWORK::_NET_TO_ANIM_SCENE((Local_17.f_16[iParam0 /*12*/])->f_5);
 	if (!ANIMSCENE::_0x25557E324489393C(iVar0))
 	{
 		return 0;
@@ -27894,7 +27894,7 @@ int func_986(int iParam0, var uParam1, var uParam2, float fParam3)
 		return 0;
 	}
 	iVar0 = NETWORK::NET_TO_OBJ(&(uParam1->f_257[iParam0 /*5*/]));
-	if (ENTITY::_GET_ENTITY_STATUS(iVar0) == 5 && PED::_GET_CARRIER(iVar0) == PLAYER::PLAYER_PED_ID())
+	if (ENTITY::_GET_ENTITY_STATUS(iVar0) == 5 && PED::_GET_CARRIER_AS_HUMAN(iVar0) == PLAYER::PLAYER_PED_ID())
 	{
 		return 0;
 	}
@@ -32188,14 +32188,14 @@ int func_1167(int iParam0, int iParam1, bool bParam2)
 		case 4:
 		case 5:
 		case 6:
-			*iParam1 = PED::_GET_CARRIER(iParam0);
+			*iParam1 = PED::_GET_CARRIER_AS_HUMAN(iParam0);
 			break;
 		case 8:
 		case 9:
-			*iParam1 = PED::_GET_CARRIER(iParam0);
+			*iParam1 = PED::_GET_CARRIER_AS_HUMAN(iParam0);
 			if (!ENTITY::DOES_ENTITY_EXIST(*iParam1))
 			{
-				*iParam1 = PED::_GET_HORSE_CARRIER_OF_PED(iParam0);
+				*iParam1 = PED::_GET_CARRIER_AS_MOUNT(iParam0);
 			}
 			if ((ENTITY::DOES_ENTITY_EXIST(*iParam1) && !PED::IS_PED_HUMAN(*iParam1)) && PED::_IS_PED_AN_ANIMAL(*iParam1))
 			{
@@ -32203,7 +32203,7 @@ int func_1167(int iParam0, int iParam1, bool bParam2)
 			}
 			break;
 		case 7:
-			*iParam1 = PED::_GET_HORSE_CARRIER_OF_PED(iParam0);
+			*iParam1 = PED::_GET_CARRIER_AS_MOUNT(iParam0);
 			bVar2 = true;
 			break;
 		case 3:
@@ -32860,7 +32860,7 @@ int func_1185(int iParam0, int iParam1)
 	switch (ENTITY::_GET_ENTITY_STATUS(iParam0))
 	{
 		case 5:
-			iVar0 = PED::_GET_CARRIER(iParam0);
+			iVar0 = PED::_GET_CARRIER_AS_HUMAN(iParam0);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
 				return 0;
@@ -32876,7 +32876,7 @@ int func_1185(int iParam0, int iParam1)
 			*iParam1 = NETWORK::NETWORK_GET_PLAYER_INDEX_FROM_PED(iVar0);
 			return 1;
 		case 7:
-			iVar1 = PED::_GET_HORSE_CARRIER_OF_PED(iParam0);
+			iVar1 = PED::_GET_CARRIER_AS_MOUNT(iParam0);
 			if (!ENTITY::DOES_ENTITY_EXIST(iVar1))
 			{
 				return 0;

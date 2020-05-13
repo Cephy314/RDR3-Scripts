@@ -751,14 +751,14 @@ void func_8(var uParam0, int iParam1)
 			}
 			if (func_6(uParam0, 1))
 			{
-				HUD::_0x5F57522BC1EB9D9D(uParam0->f_5, joaat("PLAYER_HORSE_TEMP"));
+				HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(uParam0->f_5, joaat("PLAYER_HORSE_TEMP"));
 			}
 			else
 			{
-				HUD::_0x5F57522BC1EB9D9D(uParam0->f_5, joaat("PLAYER_HORSE"));
+				HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(uParam0->f_5, joaat("PLAYER_HORSE"));
 			}
-			HUD::_0x84BD27DDF9575816(uParam0->f_5, joaat("COLOR_FRIENDLY"));
-			HUD::_0x93171DDDAB274EB8(uParam0->f_5, uParam0->f_6);
+			HUD::_SET_MP_GAMER_TAG_COLOUR(uParam0->f_5, joaat("COLOR_FRIENDLY"));
+			HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(uParam0->f_5, uParam0->f_6);
 			if (func_38(&(iParam1->f_7), uParam0->f_4, 0, 0))
 			{
 				if (!func_45(Global_1903929, &(uParam0->f_33)))
@@ -2481,7 +2481,7 @@ void func_58(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	uParam0->f_32 = iVar3;
 	if (uParam0->f_6 != iVar3)
 	{
-		HUD::_0x93171DDDAB274EB8(uParam0->f_5, iVar3);
+		HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(uParam0->f_5, iVar3);
 		uParam0->f_6 = iVar3;
 	}
 }
@@ -4359,7 +4359,7 @@ void func_114(int iParam0, var uParam1, int iParam2)
 		}
 		if (ENTITY::_0x9A100F1CF4546629(iVar9))
 		{
-			PED::_0xCE6B874286D640BB(iVar9, uParam1->f_4);
+			PED::_SET_PED_QUALITY(iVar9, uParam1->f_4);
 			FLOCK::_0x8B6F0F59B1B99801(iVar9, uParam1->f_5);
 			PED::_SET_PED_CARCASS_QUALITY(iVar9, uParam1->f_6);
 			PED::_0xDACE03C65C6666DB(iVar9, uParam1->f_7);
@@ -4472,7 +4472,7 @@ int func_119(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (HUD::_0x502E1591A504F843(*uParam0, iParam1))
+	if (HUD::_IS_MP_GAMER_TAG_SET_TO_ENTITY(*uParam0, iParam1))
 	{
 		return 0;
 	}
@@ -8415,7 +8415,7 @@ int func_267(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:

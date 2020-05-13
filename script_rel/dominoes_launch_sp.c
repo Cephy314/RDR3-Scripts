@@ -2531,7 +2531,7 @@ int func_30(vector3 vParam0, float fParam3)
 		iVar0 = MISC::_0x3FFB15534067DCD4(ITEMSET::GET_INDEXED_ITEM_IN_ITEMSET(iVar4, iVar1));
 		if (ENTITY::IS_ENTITY_DEAD(iVar0))
 		{
-			if (PED::_GET_CARRIER(iVar0) != Global_35)
+			if (PED::_GET_CARRIER_AS_HUMAN(iVar0) != Global_35)
 			{
 				func_56(bVar2);
 				ITEMSET::_0x20A4BF0E09BEE146(iVar1);

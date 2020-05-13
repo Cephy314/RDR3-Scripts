@@ -9330,7 +9330,7 @@ bool func_468(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -21300,11 +21300,11 @@ void func_1055(int iParam0, int iParam1, int iParam2, char* sParam3)
 		func_1211(&(Local_159.f_18), iVar0);
 		return;
 	}
-	Local_159.f_18 = HUD::_0xE961BF23EAB76B12(iVar0, sParam3);
-	HUD::_0x25B9C78A25105C35(Local_159.f_18, joaat("DEADDROP"));
-	HUD::_0x84BD27DDF9575816(Local_159.f_18, iParam1);
-	HUD::_0x5F57522BC1EB9D9D(Local_159.f_18, iParam2);
-	HUD::_0x93171DDDAB274EB8(Local_159.f_18, iParam0);
+	Local_159.f_18 = HUD::_CREATE_ENTITY_MP_GAMER_TAG(iVar0, sParam3);
+	HUD::_SET_MP_GAMER_TAG_TYPE(Local_159.f_18, joaat("DEADDROP"));
+	HUD::_SET_MP_GAMER_TAG_COLOUR(Local_159.f_18, iParam1);
+	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(Local_159.f_18, iParam2);
+	HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(Local_159.f_18, iParam0);
 }
 
 void func_1056(bool bParam0)
@@ -25750,7 +25750,7 @@ bool func_1206(int iParam0)
 	return ((iParam0 == -1759663922 || iParam0 == -318976023) || iParam0 == 772881414);
 }
 
-float func_1207(bool bParam0, var uParam1, var uParam2)
+var func_1207(bool bParam0, var uParam1, var uParam2)
 {
 	if (bParam0)
 	{
@@ -25865,7 +25865,7 @@ int func_1211(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (HUD::_0x502E1591A504F843(*uParam0, iParam1))
+	if (HUD::_IS_MP_GAMER_TAG_SET_TO_ENTITY(*uParam0, iParam1))
 	{
 		return 0;
 	}

@@ -2862,7 +2862,7 @@ float func_38(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_78(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1945938)[iVar0 /*18*/])->f_3);
 	}
@@ -4285,7 +4285,7 @@ bool func_79(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_78(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1945938)[iVar0 /*18*/])->f_3);
 	}
@@ -6446,7 +6446,7 @@ int func_115()
 	{
 		return 0;
 	}
-	if (!PED::_0xB65A4DAB460A19BD(Global_35) == 0)
+	if (!PED::_GET_LASSOED_ENTITY(Global_35) == 0)
 	{
 		return 0;
 	}
@@ -7447,7 +7447,7 @@ int func_153(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(bParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(bParam0);
 	if (iVar0 == 0)
 	{
 		return 0;

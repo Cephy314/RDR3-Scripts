@@ -1597,20 +1597,20 @@ int func_24(var uParam0)
 						{
 							if (iVar13 <= 6)
 							{
-								PED::_0xCE6B874286D640BB(&(uParam0->f_20[iVar12 /*14*/]), 1);
+								PED::_SET_PED_QUALITY(&(uParam0->f_20[iVar12 /*14*/]), 1);
 							}
 							else
 							{
-								PED::_0xCE6B874286D640BB(&(uParam0->f_20[iVar12 /*14*/]), 2);
+								PED::_SET_PED_QUALITY(&(uParam0->f_20[iVar12 /*14*/]), 2);
 							}
 						}
 						else if (iVar13 <= 8)
 						{
-							PED::_0xCE6B874286D640BB(&(uParam0->f_20[iVar12 /*14*/]), 1);
+							PED::_SET_PED_QUALITY(&(uParam0->f_20[iVar12 /*14*/]), 1);
 						}
 						else
 						{
-							PED::_0xCE6B874286D640BB(&(uParam0->f_20[iVar12 /*14*/]), 2);
+							PED::_SET_PED_QUALITY(&(uParam0->f_20[iVar12 /*14*/]), 2);
 						}
 					}
 				}

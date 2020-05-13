@@ -2537,7 +2537,7 @@ void func_58(var uParam0)
 			CAM::DO_SCREEN_FADE_IN(1500);
 			func_145(1);
 			func_146();
-			if (TASK::_0x2D0571BB55879DA2(Global_35) == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
+			if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35) == joaat("WORLD_PLAYER_SLEEP_BEDROLL"))
 			{
 				func_95(98.2971f, -4.2336f);
 				PED::_0xEC6935EBE0847B90(Global_35, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(Global_36, ENTITY::GET_ENTITY_HEADING(Global_35), -5f, 0f, 0f));
@@ -5112,7 +5112,7 @@ bool func_152(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_163(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1945938)[iVar0 /*18*/])->f_3);
 	}
@@ -5188,7 +5188,7 @@ int func_158(var uParam0, vector3 vParam1)
 	int iVar2;
 	int iVar3;
 	int iVar4;
-	bool bVar5;
+	int iVar5;
 
 	bVar0 = VOLUME::_CREATE_VOLUME_CYLINDER(vParam1, 0f, 0f, 0f, 1f, 1f, 1f);
 	iVar1 = ENTITY::_0x84CCF9A12942C83D(bVar0, *uParam0, 1, 1, 0, 0);
@@ -5199,10 +5199,10 @@ int func_158(var uParam0, vector3 vParam1)
 		iVar4 = MISC::_GET_ENTITY_FROM_ITEM(iVar3);
 		if (ENTITY::IS_ENTITY_A_PED(iVar4))
 		{
-			bVar5 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar4);
-			if (bVar5 != Global_35)
+			iVar5 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar4);
+			if (iVar5 != Global_35)
 			{
-				if (PED::_0x09B83E68DE004CD4(bVar5) != Global_35)
+				if (PED::_GET_CARRIER_AS_PED(iVar5) != Global_35)
 				{
 					func_318(bVar0);
 					return 1;
@@ -11549,7 +11549,7 @@ int func_322(int iParam0, int iParam1)
 	}
 	else
 	{
-		iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar1 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar1)
 		{
 			case 0:
@@ -11872,7 +11872,7 @@ bool func_338(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_163(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1945938)[iVar0 /*18*/])->f_4);
 	}
@@ -12436,7 +12436,7 @@ int func_350()
 
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_35))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_35);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35);
 		iVar1 = iVar0;
 		if ((((iVar1 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1")) && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) && iVar1 != joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4"))
 		{
@@ -18998,7 +18998,7 @@ float func_561(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_163(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1945938)[iVar0 /*18*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1945938)[iVar0 /*18*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1945938)[iVar0 /*18*/])->f_3);
 	}
@@ -20942,7 +20942,7 @@ void func_640(int iParam0, int iParam1, var uParam2, int iParam3, var uParam4)
 	}
 	else
 	{
-		*uParam4 = PED::_0x7BCC6087D130312A(iParam0);
+		*uParam4 = PED::_GET_PED_QUALITY(iParam0);
 		switch (*uParam4)
 		{
 			case 0:
@@ -21418,7 +21418,7 @@ void func_664(bool bParam0)
 	if (PED::IS_PED_USING_ANY_SCENARIO(Global_35))
 	{
 		Global_1935496->f_7 |= 33554432;
-		if (TASK::_0x2D0571BB55879DA2(Global_35) == joaat("WORLD_PLAYER_DYNAMIC_KNEEL"))
+		if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35) == joaat("WORLD_PLAYER_DYNAMIC_KNEEL"))
 		{
 			Global_1935496->f_7 |= 67108864;
 		}
@@ -31253,7 +31253,7 @@ int func_953(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(bParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(bParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -31304,7 +31304,7 @@ int func_954(bool bParam0)
 	{
 		return 0;
 	}
-	if (!PED::_0xB65A4DAB460A19BD(Global_35) == 0)
+	if (!PED::_GET_LASSOED_ENTITY(Global_35) == 0)
 	{
 		return 0;
 	}

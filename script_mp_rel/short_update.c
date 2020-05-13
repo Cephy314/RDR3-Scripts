@@ -4087,7 +4087,7 @@ bool func_126(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -6092,7 +6092,7 @@ void func_182(var uParam0)
 	iVar0 = PLAYER::PLAYER_ID();
 	iVar1 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(uParam0->f_12);
 	bVar2 = false;
-	if (PLAYER::_0x46FA0AE18F4C7FA9(iVar0) == iVar1)
+	if (PLAYER::_GET_PLAYER_MAIN_HORSE(iVar0) == iVar1)
 	{
 		bVar2 = true;
 	}
@@ -9264,7 +9264,7 @@ void func_266()
 			{
 				bVar0 = false;
 			}
-			if (PED::IS_PED_USING_ANY_SCENARIO(Global_34) && TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_PLAYER_DYNAMIC_KNEEL"))
+			if (PED::IS_PED_USING_ANY_SCENARIO(Global_34) && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("WORLD_PLAYER_DYNAMIC_KNEEL"))
 			{
 				bVar0 = false;
 			}
@@ -19174,12 +19174,12 @@ int func_581(var uParam0)
 	sVar22 = func_500(&cVar23);
 	iVar31 = PLAYER::PLAYER_ID();
 	bVar32 = false;
-	if (PLAYER::_0x46FA0AE18F4C7FA9(iVar31) == iVar1)
+	if (PLAYER::_GET_PLAYER_MAIN_HORSE(iVar31) == iVar1)
 	{
 		bVar32 = true;
 	}
 	bVar33 = false;
-	if (PLAYER::_0xD3F7445CEA2E5035(iVar31) == iVar1)
+	if (PLAYER::_GET_PLAYER_TEMPORARY_HORSE(iVar31) == iVar1)
 	{
 		bVar33 = true;
 	}
@@ -19309,7 +19309,7 @@ int func_582(var uParam0)
 	if (iVar0 == 1)
 	{
 		iVar18 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(uParam0->f_12);
-		iVar19 = PED::_0x7BCC6087D130312A(iVar18);
+		iVar19 = PED::_GET_PED_QUALITY(iVar18);
 		if (iVar19 != -1)
 		{
 			if (iVar19 == 2)
@@ -24345,7 +24345,7 @@ int func_763()
 	}
 	if (PED::IS_PED_USING_ANY_SCENARIO(Global_34))
 	{
-		iVar3 = TASK::_0x2D0571BB55879DA2(Global_34);
+		iVar3 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 		if ((iVar3 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar3 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) && iVar3 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"))
 		{
 			Global_1915180->f_21989.f_5 = 17;
@@ -31683,7 +31683,7 @@ int func_985(int iParam0, var uParam1)
 	}
 	else
 	{
-		iVar3 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar3 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar3)
 		{
 			case 0:
@@ -36879,7 +36879,7 @@ int func_1144(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -36935,7 +36935,7 @@ int func_1146(bool bParam0)
 	{
 		return 0;
 	}
-	if (!PED::_0xB65A4DAB460A19BD(Global_34) == 0)
+	if (!PED::_GET_LASSOED_ENTITY(Global_34) == 0)
 	{
 		return 0;
 	}
@@ -37220,7 +37220,7 @@ int func_1155()
 	}
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_34))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_34);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 		iVar1 = iVar0;
 		if (iVar1 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar1 != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"))
 		{
@@ -37445,7 +37445,7 @@ int func_1171(int iParam0)
 	int iVar0;
 	int iVar1;
 
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	iVar1 = iVar0;
 	if (((((((((((iVar1 == joaat("WORLD_PLAYER_DYNAMIC_KNEEL") || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4")) || iVar1 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME")) || iVar1 == joaat("PROP_PLAYER_SLEEP_BED")) || iVar1 == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC")) || iVar1 == joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC")) || iVar1 == joaat("PROP_PLAYER_SEAT_CHAIR_PLAYER_CAMP")) || iVar1 == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) || PED::GET_PED_CONFIG_FLAG(iParam0, 464, true))
 	{
@@ -41097,7 +41097,7 @@ int func_1320(int iParam0, int iParam1)
 	}
 	else
 	{
-		iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar1 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar1)
 		{
 			case 0:
@@ -60350,7 +60350,7 @@ int func_2063(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:

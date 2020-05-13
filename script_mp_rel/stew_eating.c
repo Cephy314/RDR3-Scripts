@@ -109,7 +109,7 @@ void __EntryFunction__()
 				}
 				else if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1))
 				{
-					iVar186 = TASK::_0x2D0571BB55879DA2(Global_34);
+					iVar186 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 					if (iVar186 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 					{
 						if (iVar186 != joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"))

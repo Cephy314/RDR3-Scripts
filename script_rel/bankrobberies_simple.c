@@ -592,7 +592,7 @@ int func_18(var uParam0)
 	}
 	if (uParam0->f_129)
 	{
-		if ((func_50() || PED::IS_PED_SHOOTING(Global_35)) || PED::_0xB65A4DAB460A19BD(Global_35) != 0)
+		if ((func_50() || PED::IS_PED_SHOOTING(Global_35)) || PED::_GET_LASSOED_ENTITY(Global_35) != 0)
 		{
 			return 1;
 		}

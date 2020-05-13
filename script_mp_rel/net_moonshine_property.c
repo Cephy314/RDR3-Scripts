@@ -1827,7 +1827,7 @@ int func_69(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	iVar1 = iVar0;
 	iVar2 = 0;
 	while (iVar2 < 6)
@@ -2660,7 +2660,7 @@ int func_112(int iParam0)
 	int iVar0;
 	int iVar1;
 
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	iVar1 = iVar0;
 	if (((((iVar1 == joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_BANJO") || iVar1 == joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_DOUBLEBASS")) || iVar1 == joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_FIDDLE")) || iVar1 == joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_GUITAR")) || iVar1 == joaat("MP_MOONSHINE_BAND_WORLD_HUMAN_PIANO")) || iVar1 == joaat("MP_MOONSHINE_BAND_PROP_HUMAN_SEAT_CHAIR_WASHBOARD"))
 	{
@@ -12648,7 +12648,7 @@ bool func_530(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -15679,7 +15679,7 @@ float func_686(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_695(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -25982,14 +25982,14 @@ int func_1079(var uParam0, var uParam1, var uParam2, int iParam3)
 			func_1253(uParam0, iParam3, 1);
 			break;
 		case 1:
-			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2)))
+			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2)))
 			{
 				func_1256(uParam0, iParam3);
 			}
 			if (func_547((uParam0->f_3[iParam3 /*12*/])->f_3))
 			{
 				iVar1 = PLAYER::GET_PLAYER_PED((uParam0->f_3[iParam3 /*12*/])->f_3);
-				if (TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 1))
+				if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 1))
 				{
 					func_1253(uParam0, iParam3, 2);
 				}
@@ -26000,12 +26000,12 @@ int func_1079(var uParam0, var uParam1, var uParam2, int iParam3)
 			}
 			break;
 		case 2:
-			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2)))
+			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2)))
 			{
 				func_1256(uParam0, iParam3);
 			}
 			iVar1 = PLAYER::GET_PLAYER_PED((uParam0->f_3[iParam3 /*12*/])->f_3);
-			if (!func_547((uParam0->f_3[iParam3 /*12*/])->f_3) || TASK::_0x2D0571BB55879DA2(iVar1) != func_107(iParam3, 1))
+			if (!func_547((uParam0->f_3[iParam3 /*12*/])->f_3) || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) != func_107(iParam3, 1))
 			{
 				(uParam0->f_3[iParam3 /*12*/])->f_3 = 255;
 				iVar6 = TASK::_0x5BA659955369B0E2((*uParam2)[iParam3 /*16*/][1]);
@@ -26055,11 +26055,11 @@ int func_1079(var uParam0, var uParam1, var uParam2, int iParam3)
 		case 3:
 		case 4:
 		case 5:
-			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2)))
+			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2)))
 			{
 				func_1256(uParam0, iParam3);
 			}
-			if (TASK::_0x2D0571BB55879DA2(iVar0) == func_107(iParam3, 1) && TASK::IS_PED_ACTIVE_IN_SCENARIO(iVar0, 0))
+			if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0) == func_107(iParam3, 1) && TASK::IS_PED_ACTIVE_IN_SCENARIO(iVar0, 0))
 			{
 				if (iVar2 == func_1260(iParam3, func_546(uParam0, iParam3), bVar5, func_1259(iParam3)))
 				{
@@ -26080,11 +26080,11 @@ int func_1079(var uParam0, var uParam1, var uParam2, int iParam3)
 			}
 			break;
 		case 6:
-			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2)))
+			if (!ANIMSCENE::_0x25557E324489393C(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2)))
 			{
 				func_1256(uParam0, iParam3);
 			}
-			if (TASK::_0x2D0571BB55879DA2(iVar0) == func_107(iParam3, 1))
+			if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0) == func_107(iParam3, 1))
 			{
 				if (!TASK::IS_PED_ACTIVE_IN_SCENARIO(iVar0, 0))
 				{
@@ -26110,14 +26110,14 @@ int func_1079(var uParam0, var uParam1, var uParam2, int iParam3)
 			break;
 		case 8:
 			iVar1 = PLAYER::GET_PLAYER_PED((uParam0->f_3[iParam3 /*12*/])->f_3);
-			if ((ENTITY::IS_ENTITY_DEAD(iVar1) || TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 1)) && TASK::_0x2D0571BB55879DA2(iVar0) == func_107(iParam3, 0))
+			if ((ENTITY::IS_ENTITY_DEAD(iVar1) || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 1)) && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0) == func_107(iParam3, 0))
 			{
 				func_1253(uParam0, iParam3, 2);
 			}
 			break;
 		case 7:
 			iVar1 = PLAYER::GET_PLAYER_PED((uParam0->f_3[iParam3 /*12*/])->f_3);
-			if ((ENTITY::IS_ENTITY_DEAD(iVar1) || TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 1)) && TASK::_0x2D0571BB55879DA2(iVar0) == func_107(iParam3, 0))
+			if ((ENTITY::IS_ENTITY_DEAD(iVar1) || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 1)) && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0) == func_107(iParam3, 0))
 			{
 				func_1253(uParam0, iParam3, 2);
 			}
@@ -26667,7 +26667,7 @@ int func_1092(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, i
 		func_1291(uParam0, uParam1, uParam2, iParam3, iVar4, &iVar1);
 	}
 	bVar5 = (uParam0->f_3[iParam3 /*12*/])->f_8;
-	if (((!func_547((uParam0->f_3[iParam3 /*12*/])->f_3) || (uParam0->f_3[iParam3 /*12*/])->f_3 != PLAYER::PLAYER_ID()) && TASK::_0x2D0571BB55879DA2(Global_34) == func_107(iParam3, 3)) && !TASK::_0x0C3CB2E600C8977D(Global_34, 0))
+	if (((!func_547((uParam0->f_3[iParam3 /*12*/])->f_3) || (uParam0->f_3[iParam3 /*12*/])->f_3 != PLAYER::PLAYER_ID()) && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == func_107(iParam3, 3)) && !TASK::_0x0C3CB2E600C8977D(Global_34, 0))
 	{
 		TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 	}
@@ -26678,11 +26678,11 @@ int func_1092(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, i
 		case 2:
 			if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((uParam0->f_3[iParam3 /*12*/])->f_2))
 			{
-				if (NETWORK::_NETWORK_HAS_CONTROL_OF_ANIM_SCENE(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2)))
+				if (NETWORK::_NETWORK_HAS_CONTROL_OF_ANIM_SCENE(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2)))
 				{
-					if (ANIMSCENE::_0xF94692EB9DC15D74(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2), 0))
+					if (ANIMSCENE::_0xF94692EB9DC15D74(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2), 0))
 					{
-						ANIMSCENE::RESET_ANIM_SCENE(NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2), 0);
+						ANIMSCENE::RESET_ANIM_SCENE(NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2), 0);
 					}
 				}
 			}
@@ -26712,7 +26712,7 @@ int func_1092(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, i
 				}
 				func_1295(uParam0, uParam2, iVar1, iVar4, iParam3, bVar3);
 			}
-			else if (TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 0))
+			else if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 0))
 			{
 				if (!bVar0)
 				{
@@ -26727,7 +26727,7 @@ int func_1092(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, i
 					func_1296(iVar1, (*uParam2)[iParam3 /*16*/][1], iParam3, 3, 0, 1, bVar3);
 				}
 			}
-			else if (TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 2))
+			else if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 2))
 			{
 				if (!bVar0)
 				{
@@ -26784,7 +26784,7 @@ int func_1092(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, i
 				}
 				func_1295(uParam0, uParam2, iVar1, iVar4, iParam3, bVar3);
 			}
-			else if (TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 0))
+			else if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 0))
 			{
 				func_1298(uParam0, uParam2, iParam3, 0, iParam4);
 				func_1298(uParam0, uParam2, iParam3, 1, iParam4);
@@ -26797,7 +26797,7 @@ int func_1092(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, i
 					func_1296(iVar1, (*uParam2)[iParam3 /*16*/][1], iParam3, 6, 0, 1, bVar3);
 				}
 			}
-			else if (TASK::_0x2D0571BB55879DA2(iVar1) == func_107(iParam3, 2))
+			else if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar1) == func_107(iParam3, 2))
 			{
 				if (!bVar0)
 				{
@@ -30726,7 +30726,7 @@ int func_1256(var uParam0, int iParam1)
 	if (!MISC::IS_STRING_NULL_OR_EMPTY(sVar0))
 	{
 		iVar1 = ANIMSCENE::_CREATE_ANIM_SCENE(sVar0, 32776, 0, true, true);
-		(uParam0->f_3[iParam1 /*12*/])->f_2 = NETWORK::_0xE0D73CDDEA79DDCD(iVar1);
+		(uParam0->f_3[iParam1 /*12*/])->f_2 = NETWORK::_ANIM_SCENE_TO_NET(iVar1);
 		ANIMSCENE::LOAD_ANIM_SCENE(iVar1);
 		return 1;
 	}
@@ -31491,7 +31491,7 @@ void func_1286(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)
 	else
 	{
 		func_1479(uParam1, &(((*uParam1)[iParam3 /*16*/])->f_10), 512, iParam3);
-		if (((TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 0) && TASK::_0x2D0571BB55879DA2(Global_34) == func_107(iParam3, 1)) && !UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU"))) && !UIAPPS::_IS_APP_RUNNING(joaat("PLAYER_MENU")))
+		if (((TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 0) && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == func_107(iParam3, 1)) && !UIAPPS::_IS_APP_ACTIVE(joaat("PLAYER_MENU"))) && !UIAPPS::_IS_APP_RUNNING(joaat("PLAYER_MENU")))
 		{
 			if (AUDIO::IS_ANY_SPEECH_PLAYING(Global_34))
 			{
@@ -31649,7 +31649,7 @@ void func_1287(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	bool bVar27;
 	int iVar28;
 
-	if (((((((((iParam4 != 3 && iParam4 != 4) && iParam4 != 5) && iParam4 != 6) && ((iParam4 != 2 || iParam3 != 0) || func_302(uParam0) != 2)) || TASK::PED_HAS_USE_SCENARIO_TASK(Global_34)) || ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_34, -1)) || PED::IS_PED_IN_COMBAT(Global_34, 0)) || PED::IS_PED_IN_MELEE_COMBAT(Global_34)) || (TASK::_0x2D0571BB55879DA2(*iParam5) != func_107(iParam3, 1) && iParam3 != 0))
+	if (((((((((iParam4 != 3 && iParam4 != 4) && iParam4 != 5) && iParam4 != 6) && ((iParam4 != 2 || iParam3 != 0) || func_302(uParam0) != 2)) || TASK::PED_HAS_USE_SCENARIO_TASK(Global_34)) || ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_34, -1)) || PED::IS_PED_IN_COMBAT(Global_34, 0)) || PED::IS_PED_IN_MELEE_COMBAT(Global_34)) || (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(*iParam5) != func_107(iParam3, 1) && iParam3 != 0))
 	{
 		if (func_1487(uParam2, 1, iParam3))
 		{
@@ -31724,7 +31724,7 @@ void func_1287(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 		func_439(((*uParam2)[iParam3 /*16*/])->f_9, HUD::_UIPROMPT_GET_GROUP_ID_FOR_TARGET_ENTITY(*iParam5), 0, 1);
 	}
 	bVar27 = (TASK::_0xEC7E480FF8BD0BED(Global_34) || !func_1292(*iParam5, 0));
-	if ((bVar27 || TASK::_0x2D0571BB55879DA2(*iParam5) != func_107(iParam3, 1)) || (iParam3 != 0 && func_1491(*iParam5, Global_34, 0.5f) != 0))
+	if ((bVar27 || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(*iParam5) != func_107(iParam3, 1)) || (iParam3 != 0 && func_1491(*iParam5, Global_34, 0.5f) != 0))
 	{
 		func_646(((*uParam2)[iParam3 /*16*/])->f_8, 0, 1, 1);
 	}
@@ -31792,7 +31792,7 @@ void func_1288(var uParam0, var uParam1, int iParam2, int iParam3)
 
 	if (!func_1487(uParam1, 4, iParam2))
 	{
-		if ((TASK::_0x2D0571BB55879DA2(iParam3) == func_107(iParam2, 0) && TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam3, 0)) && func_301(uParam0, 7000))
+		if ((TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam3) == func_107(iParam2, 0) && TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam3, 0)) && func_301(uParam0, 7000))
 		{
 			if (!NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iParam3))
 			{
@@ -31803,7 +31803,7 @@ void func_1288(var uParam0, var uParam1, int iParam2, int iParam3)
 			func_1482(uParam1, 4, iParam2);
 		}
 	}
-	else if ((TASK::_0x2D0571BB55879DA2(iParam3) != func_107(iParam2, 0) || !TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam3, 0)) || !func_301(uParam0, 7000))
+	else if ((TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam3) != func_107(iParam2, 0) || !TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam3, 0)) || !func_301(uParam0, 7000))
 	{
 		if (!NETWORK::NETWORK_HAS_CONTROL_OF_ENTITY(iParam3))
 		{
@@ -32056,7 +32056,7 @@ void func_1293(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4)
 
 void func_1294(var uParam0, var uParam1, int iParam2, int iParam3, bool bParam4, bool bParam5, int iParam6)
 {
-	if (TASK::_0x2D0571BB55879DA2(iParam3) != func_107(iParam2, 0))
+	if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam3) != func_107(iParam2, 0))
 	{
 		if (!bParam4)
 		{
@@ -32265,7 +32265,7 @@ void func_1299(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	bVar1 = (uParam0->f_3[iParam3 /*12*/])->f_8;
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST((uParam0->f_3[iParam3 /*12*/])->f_2))
 	{
-		iVar2 = NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2);
+		iVar2 = NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2);
 		if (PLAYER::PLAYER_ID() == (uParam0->f_3[iParam3 /*12*/])->f_3)
 		{
 			func_1503(uParam0, &iVar2, bParam5, iParam3);
@@ -32322,7 +32322,7 @@ void func_1299(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 			}
 		}
 	}
-	if (TASK::_0x2D0571BB55879DA2(*iParam4) != func_107(iParam3, 2))
+	if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(*iParam4) != func_107(iParam3, 2))
 	{
 		if (!TASK::PED_HAS_USE_SCENARIO_TASK(*iParam4) && !ANIMSCENE::_0x3AB6C7B0BB0DF4B1(*iParam4, -1))
 		{
@@ -32355,7 +32355,7 @@ void func_1299(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 		}
 	}
 	iVar0 = PLAYER::GET_PLAYER_PED((uParam0->f_3[iParam3 /*12*/])->f_3);
-	if (((Global_34 == iVar0 && TASK::_0x2D0571BB55879DA2(iVar0) != func_107(iParam3, 3)) && !TASK::PED_HAS_USE_SCENARIO_TASK(Global_34)) && !ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_34, -1))
+	if (((Global_34 == iVar0 && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0) != func_107(iParam3, 3)) && !TASK::PED_HAS_USE_SCENARIO_TASK(Global_34)) && !ANIMSCENE::_0x3AB6C7B0BB0DF4B1(Global_34, -1))
 	{
 		sVar13 = func_1504(iParam3, !func_1066(), PED::IS_PED_MALE(Global_34), 1);
 		iVar14 = (*uParam2)[iParam3 /*16*/][3];
@@ -32368,9 +32368,9 @@ void func_1299(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 		}
 		TASK::_TASK_USE_SCENARIO_POINT(iVar0, iVar14, sVar13, 0, true, false, 0, false, -1f, false);
 	}
-	bVar15 = TASK::_0x2D0571BB55879DA2(iVar0) == func_107(iParam3, 3);
+	bVar15 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0) == func_107(iParam3, 3);
 	bVar16 = TASK::IS_PED_ACTIVE_IN_SCENARIO(iVar0, 0);
-	bVar17 = TASK::_0x2D0571BB55879DA2(*iParam4) == func_107(iParam3, 2);
+	bVar17 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(*iParam4) == func_107(iParam3, 2);
 	bVar18 = TASK::IS_PED_ACTIVE_IN_SCENARIO(*iParam4, 0);
 	bVar19 = TASK::_0x02EBBB3989B7E695(iVar0);
 	bVar20 = ENTITY::HAS_ANIM_EVENT_FIRED(iVar0, 1944546609);
@@ -32393,7 +32393,7 @@ void func_1300(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	vector3 vVar14;
 	vector3 vVar17;
 
-	iVar0 = NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2);
+	iVar0 = NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2);
 	bVar1 = (uParam0->f_3[iParam3 /*12*/])->f_8;
 	if (!ANIMSCENE::_0x25557E324489393C(iVar0))
 	{
@@ -32425,7 +32425,7 @@ void func_1300(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	}
 	if (!ANIMSCENE::_0xCBFC7725DE6CE2E0(iVar0, 0))
 	{
-		if (TASK::_0x2D0571BB55879DA2(iVar3) == func_107(iParam3, 1) || TASK::_0x2D0571BB55879DA2(*iParam4) == func_107(iParam3, 0))
+		if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar3) == func_107(iParam3, 1) || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(*iParam4) == func_107(iParam3, 0))
 		{
 			return;
 		}
@@ -32535,7 +32535,7 @@ void func_1301(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4, 
 	int iVar1;
 	char cVar2[128];
 
-	iVar0 = NETWORK::_0xD7F6781A0ABAF6FB((uParam0->f_3[iParam3 /*12*/])->f_2);
+	iVar0 = NETWORK::_NET_TO_ANIM_SCENE((uParam0->f_3[iParam3 /*12*/])->f_2);
 	if (!ANIMSCENE::_0x25557E324489393C(iVar0))
 	{
 		return;
@@ -36259,7 +36259,7 @@ bool func_1485(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_695(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1949759)[iVar0 /*23*/])->f_4);
 	}

@@ -20200,7 +20200,7 @@ bool func_362(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -21454,7 +21454,7 @@ int func_396(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	}
 	if (func_752(iParam1, -76381094))
 	{
-		if (TASK::_0x2D0571BB55879DA2(iParam1) != TASK::_0xA92450B5AE687AAF(&(uParam0->f_35[iParam2])))
+		if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam1) != TASK::_0xA92450B5AE687AAF(&(uParam0->f_35[iParam2])))
 		{
 			TASK::_TASK_USE_SCENARIO_POINT(iParam1, &(uParam0->f_35[iParam2]), 0, iParam3, !bParam4, bParam4, 0, false, -1f, false);
 		}
@@ -23688,7 +23688,7 @@ int func_523(var uParam0, var uParam1, int iParam2, int iParam3, var uParam4)
 	}
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(&(uParam0->f_37[iParam2 /*2*/])))
 	{
-		*iParam3 = NETWORK::_0xD7F6781A0ABAF6FB(&(uParam0->f_37[iParam2 /*2*/]));
+		*iParam3 = NETWORK::_NET_TO_ANIM_SCENE(&(uParam0->f_37[iParam2 /*2*/]));
 		*uParam4 = (uParam0->f_37[iParam2 /*2*/])->f_1;
 	}
 	else
@@ -35055,7 +35055,7 @@ bool func_932(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_870(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1949759)[iVar0 /*23*/])->f_4);
 	}
@@ -37443,7 +37443,7 @@ float func_1018(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_870(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -110699,7 +110699,7 @@ int func_3588(int iParam0, var uParam1)
 	}
 	else
 	{
-		iVar3 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar3 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar3)
 		{
 			case 0:
@@ -113244,7 +113244,7 @@ int func_3671(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:

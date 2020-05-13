@@ -5990,7 +5990,7 @@ void func_102(var uParam0, var uParam1)
 			{
 				if (ENTITY::_GET_ENTITY_STATUS(Global_34) == 5)
 				{
-					iVar1 = PED::_GET_CARRIER(Global_34);
+					iVar1 = PED::_GET_CARRIER_AS_HUMAN(Global_34);
 					if ((ENTITY::DOES_ENTITY_EXIST(iVar1) && !ENTITY::IS_ENTITY_DEAD(iVar1)) && PED::IS_PED_A_PLAYER(iVar1))
 					{
 						bVar0 = true;
@@ -7907,7 +7907,7 @@ int func_147(int iParam0)
 	int iVar0;
 	int iVar1;
 
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	iVar1 = iVar0;
 	if (((((((((((iVar1 == joaat("WORLD_PLAYER_DYNAMIC_KNEEL") || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4")) || iVar1 == joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME")) || iVar1 == joaat("PROP_PLAYER_SLEEP_BED")) || iVar1 == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC")) || iVar1 == joaat("PROP_PLAYER_SEAT_CHAIR_GENERIC")) || iVar1 == joaat("PROP_PLAYER_SEAT_CHAIR_PLAYER_CAMP")) || iVar1 == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")) || PED::GET_PED_CONFIG_FLAG(iParam0, 464, true))
 	{
@@ -11403,7 +11403,7 @@ bool func_290(int iParam0, bool bParam1)
 			((*Global_1949759)[iVar0 /*23*/])->f_22 = uVar2;
 		}
 	}
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_HAS_MASH_MODE_COMPLETED(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -12262,7 +12262,7 @@ int func_319(var uParam0)
 	}
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_34))
 	{
-		if (uParam0->f_55.f_5 >= 2 && TASK::_0x2D0571BB55879DA2(Global_34) == joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"))
+		if (uParam0->f_55.f_5 >= 2 && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"))
 		{
 			return 1;
 		}
@@ -18359,7 +18359,7 @@ int func_569(int iParam0, vector3 vParam1, float fParam4)
 			iVar5 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar4);
 			if (iVar5 != Global_34)
 			{
-				if (PED::_0x09B83E68DE004CD4(iVar5) != Global_34)
+				if (PED::_GET_CARRIER_AS_PED(iVar5) != Global_34)
 				{
 					func_69(iVar0);
 					return 1;
@@ -27101,7 +27101,7 @@ int func_795(var uParam0, bool bParam1)
 			if (func_974(uParam0))
 			{
 				AUDIO::_0x9428447DED71FC7E("Player_Campfire_Scenes");
-				func_397(&(uParam0->f_49), 1, TASK::_0x2D0571BB55879DA2(Global_34) != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"));
+				func_397(&(uParam0->f_49), 1, TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"));
 				func_646(&(uParam0->f_49), 2);
 				uParam0->f_189 = 0;
 				func_975(uParam0);
@@ -27506,7 +27506,7 @@ int func_796()
 	int iVar0;
 	int iVar1;
 
-	iVar0 = TASK::_0x2D0571BB55879DA2(Global_34);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 	iVar1 = iVar0;
 	if (((iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL1") || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL2")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL3")) || iVar1 == joaat("WORLD_PLAYER_CAMP_FIRE_KNEEL4"))
 	{
@@ -27681,7 +27681,7 @@ bool func_805(int iParam0, bool bParam1)
 		return false;
 	}
 	iVar0 = func_425(iParam0);
-	if (!HUD::_0xB60C9F9ED47ABB76(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (!HUD::_UIPROMPT_HAS_HOLD_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return PAD::IS_CONTROL_PRESSED(2, ((*Global_1949759)[iVar0 /*23*/])->f_4);
 	}
@@ -39960,7 +39960,7 @@ int func_1219(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (PED::_0xB65A4DAB460A19BD(Global_34) != 0)
+	if (PED::_GET_LASSOED_ENTITY(Global_34) != 0)
 	{
 		return 1;
 	}
@@ -57080,7 +57080,7 @@ void func_1730(int iParam0)
 			{
 				if (bVar1 && WEAPON::_0x6E4E1A82081EABED(Global_1939178->f_38))
 				{
-					Global_1939178->f_24 = PED::_0xB65A4DAB460A19BD(Global_34) != 0;
+					Global_1939178->f_24 = PED::_GET_LASSOED_ENTITY(Global_34) != 0;
 				}
 				if (Global_1939178->f_40 == joaat("WEAPON_THROWN_BOLAS"))
 				{
@@ -57698,7 +57698,7 @@ int func_1755(int iParam0, int iParam1)
 
 int func_1756(int iParam0, int iParam1)
 {
-	if (PED::_0xB65A4DAB460A19BD(iParam0) == iParam1)
+	if (PED::_GET_LASSOED_ENTITY(iParam0) == iParam1)
 	{
 		return 1;
 	}
@@ -58352,7 +58352,7 @@ int func_1784(int iParam0, int iParam1)
 	}
 	else
 	{
-		iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar1 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar1)
 		{
 			case 0:
@@ -58949,7 +58949,7 @@ int func_1805()
 	}
 	if (TASK::PED_HAS_USE_SCENARIO_TASK(Global_34))
 	{
-		iVar0 = TASK::_0x2D0571BB55879DA2(Global_34);
+		iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34);
 		iVar1 = iVar0;
 		if (iVar1 != joaat("WORLD_PLAYER_DYNAMIC_KNEEL") && iVar1 != joaat("WORLD_PLAYER_MP_STEW_POT_DONATION"))
 		{
@@ -62127,7 +62127,7 @@ float func_1897(int iParam0, bool bParam1)
 		return 0f;
 	}
 	iVar0 = func_425(iParam0);
-	if (HUD::_0xCD072523791DDC1B(((*Global_1949759)[iVar0 /*23*/])->f_3))
+	if (HUD::_UIPROMPT_HAS_MASH_MODE(((*Global_1949759)[iVar0 /*23*/])->f_3))
 	{
 		return HUD::_UIPROMPT_GET_MASH_MODE_PROGRESS(((*Global_1949759)[iVar0 /*23*/])->f_3);
 	}
@@ -78578,7 +78578,7 @@ int func_2405(bool bParam0, int iParam1, int iParam2)
 	}
 	if (Global_1939178->f_24 && !PED::IS_PED_INJURED(Global_34))
 	{
-		iVar1 = PED::_0xB65A4DAB460A19BD(Global_34);
+		iVar1 = PED::_GET_LASSOED_ENTITY(Global_34);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 		{
 			if (!bParam0 || PED::IS_PED_HUMAN(iVar1))
@@ -78627,7 +78627,7 @@ int func_2406(int iParam0)
 		}
 		if (iVar0 == 0)
 		{
-			iVar0 = PED::_0xB65A4DAB460A19BD(Global_34);
+			iVar0 = PED::_GET_LASSOED_ENTITY(Global_34);
 		}
 		if (iVar0 != 0)
 		{
@@ -78741,7 +78741,7 @@ int func_2412(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -91564,7 +91564,7 @@ int func_2820(int iParam0)
 	{
 		return iVar0;
 	}
-	iVar1 = PED::_0x7BCC6087D130312A(iParam0);
+	iVar1 = PED::_GET_PED_QUALITY(iParam0);
 	switch (iVar1)
 	{
 		case 0:
@@ -101989,7 +101989,7 @@ int func_3163(int iParam0, var uParam1)
 	}
 	else
 	{
-		iVar3 = PED::_0x7BCC6087D130312A(iParam0);
+		iVar3 = PED::_GET_PED_QUALITY(iParam0);
 		switch (iVar3)
 		{
 			case 0:

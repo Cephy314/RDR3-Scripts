@@ -1344,10 +1344,10 @@ void func_55(var uParam0, bool bParam1, char* sParam2, bool bParam3)
 
 void func_56()
 {
-	var uVar0;
+	bool bVar0;
 
 	func_86(bLocal_15);
-	uVar0 = PLAYER::_0x227B06324234FB09(PLAYER::PLAYER_ID(), bLocal_15);
+	bVar0 = PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(PLAYER::PLAYER_ID(), bLocal_15);
 	func_87(bLocal_15, 0);
 }
 
@@ -2135,7 +2135,7 @@ bool func_85(var uParam0, bool bParam1, char* sParam2)
 void func_86(bool bParam0)
 {
 	int iVar0;
-	var uVar1;
+	bool bVar1;
 
 	if (func_141() == 0)
 	{
@@ -2166,7 +2166,7 @@ void func_86(bool bParam0)
 	{
 		func_150(1, 1);
 	}
-	uVar1 = PLAYER::_0x227B06324234FB09(PLAYER::PLAYER_ID(), bParam0);
+	bVar1 = PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(PLAYER::PLAYER_ID(), bParam0);
 	func_151();
 }
 
@@ -3812,11 +3812,11 @@ void func_145(int iParam0, bool bParam1)
 	}
 	if (iParam0 == 0)
 	{
-		PLAYER::_0x8FBF9EDB378CCB8C(iVar3, false);
+		PLAYER::_SET_PED_AS_PLAYER_MAIN_HORSE(iVar3, 0);
 	}
 	else if (iParam0 == 1)
 	{
-		PLAYER::_0x227B06324234FB09(iVar3, false);
+		PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(iVar3, 0);
 	}
 	PED::_0xBCC76708E5677E1D(bVar1, 1);
 	if (bVar2)
@@ -3929,7 +3929,7 @@ void func_147(bool bParam0, int iParam1, int iParam2)
 {
 	int iVar0;
 	int iVar1;
-	var uVar2;
+	bool bVar2;
 	int iVar3;
 	int iVar4;
 
@@ -3985,11 +3985,11 @@ void func_147(bool bParam0, int iParam1, int iParam2)
 	}
 	if (iParam1 == 0)
 	{
-		PLAYER::_0x8FBF9EDB378CCB8C(iVar0, bParam0);
+		PLAYER::_SET_PED_AS_PLAYER_MAIN_HORSE(iVar0, bParam0);
 	}
 	else if (iParam1 == 1)
 	{
-		uVar2 = PLAYER::_0x227B06324234FB09(iVar0, bParam0);
+		bVar2 = PLAYER::_SET_PED_AS_PLAYER_TEMPORARY_HORSE(iVar0, bParam0);
 	}
 	if (iParam1 == 6)
 	{
@@ -5888,7 +5888,7 @@ int func_196(var uParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (PED::_0xB65A4DAB460A19BD(Global_35) != 0)
+	if (PED::_GET_LASSOED_ENTITY(Global_35) != 0)
 	{
 		return 1;
 	}
@@ -7618,7 +7618,7 @@ void func_259(int iParam0)
 	}
 	else if (bVar9)
 	{
-		fVar19 = PED::_0xEBE89623EB861271(bVar0, 1);
+		fVar19 = PED::_GET_PED_REMAINING_REVIVAL_TIME(bVar0, true);
 		if (bVar16)
 		{
 			if (fVar19 < 0.25f)
@@ -8400,7 +8400,7 @@ void func_283(int iParam0)
 			{
 				if (Global_1935630->f_44 == joaat("WEAPON_LASSO"))
 				{
-					Global_1935630->f_30 = PED::_0xB65A4DAB460A19BD(Global_35) != 0;
+					Global_1935630->f_30 = PED::_GET_LASSOED_ENTITY(Global_35) != 0;
 				}
 			}
 			break;
@@ -9054,7 +9054,7 @@ int func_311(bool bParam0, int iParam1)
 
 int func_312(bool bParam0, bool bParam1)
 {
-	if (PED::_0xB65A4DAB460A19BD(bParam0) == bParam1)
+	if (PED::_GET_LASSOED_ENTITY(bParam0) == bParam1)
 	{
 		return 1;
 	}
@@ -10755,7 +10755,7 @@ int func_408(bool bParam0, int iParam1, int iParam2)
 	}
 	if (Global_1935630->f_30 && !PED::IS_PED_INJURED(Global_35))
 	{
-		iVar1 = PED::_0xB65A4DAB460A19BD(Global_35);
+		iVar1 = PED::_GET_LASSOED_ENTITY(Global_35);
 		if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 		{
 			if (!bParam0 || PED::IS_PED_HUMAN(iVar1))
@@ -10804,7 +10804,7 @@ int func_409(var uParam0)
 		}
 		if (iVar0 == 0)
 		{
-			iVar0 = PED::_0xB65A4DAB460A19BD(Global_35);
+			iVar0 = PED::_GET_LASSOED_ENTITY(Global_35);
 		}
 		if (iVar0 != 0)
 		{
@@ -10923,7 +10923,7 @@ int func_416(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_0x2D0571BB55879DA2(bParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(bParam0);
 	if (iVar0 == 0)
 	{
 		return 0;

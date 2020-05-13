@@ -1612,7 +1612,7 @@ void func_64()
 		{
 			func_132(&iLocal_116, 1);
 		}
-		if (ENTITY::DOES_ENTITY_EXIST(PED::_0xB65A4DAB460A19BD(Global_35)))
+		if (ENTITY::DOES_ENTITY_EXIST(PED::_GET_LASSOED_ENTITY(Global_35)))
 		{
 			PED::SET_PED_RESET_FLAG(Global_35, 295, true);
 		}
