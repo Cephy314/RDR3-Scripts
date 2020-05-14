@@ -5030,11 +5030,11 @@ void func_132()
 	}
 	func_29(4096);
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_166(iLocal_246, iLocal_348, 0), 1f, -1, 5f, true, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_166(iLocal_246, iLocal_348, 0), 1f, -1, 5f, 1, 40000f);
 	vVar1 = { func_166(iLocal_246, iLocal_348, 1) };
 	if (!func_64(vVar1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, -1, 5f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, -1, 5f, 1, 40000f);
 	}
 	func_159(&(uLocal_40[0]), &iVar0, 0, 0, 1, 1);
 	func_128(uLocal_42[0]);

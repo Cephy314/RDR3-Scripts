@@ -1831,7 +1831,7 @@ void func_28(bool bParam0, bool bParam1)
 					VEHICLE::_0xB36D3EC70963BE60(iLocal_818, &(iLocal_814[0]));
 				}
 				TASK::CLEAR_PED_TASKS(&(iLocal_814[0]), 1, 0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_814[0]), vVar0, 1f, 20000, 0.75f, false, ENTITY::GET_ENTITY_HEADING(&(iLocal_814[0])));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_814[0]), vVar0, 1f, 20000, 0.75f, 0, ENTITY::GET_ENTITY_HEADING(&(iLocal_814[0])));
 				ENTITY::SET_ENTITY_CAN_BE_DAMAGED_BY_RELATIONSHIP_GROUP(&(iLocal_814[0]), false, iLocal_953);
 			}
 		}
@@ -12262,7 +12262,7 @@ void func_317(int iParam0, bool bParam1)
 	}
 	else
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_828[iParam0 /*3*/]), fLocal_820, 20000, 0.25f, false, &(fLocal_850[iParam0]));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_828[iParam0 /*3*/]), fLocal_820, 20000, 0.25f, 0, &(fLocal_850[iParam0]));
 	}
 	if (bParam1)
 	{
@@ -12433,7 +12433,7 @@ void func_324(int iParam0, int iParam1, int iParam2)
 					{
 						if (func_373(iParam0, vLocal_889, 1) > 20f)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_889, 1.5f, 20000, 15f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_889, 1.5f, 20000, 15f, 0, 40000f);
 						}
 						TASK::TASK_DISMOUNT_ANIMAL(0, 0, 0, 0, 0, 0);
 					}
@@ -12450,7 +12450,7 @@ void func_324(int iParam0, int iParam1, int iParam2)
 					{
 						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_889, 1.5f, 20000, 5f, 524289, func_529(vLocal_889, ENTITY::GET_ENTITY_COORDS(iLocal_818, true, false), 1));
 					}
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_889, 1f, 20000, 0.75f, false, func_529(vLocal_889, ENTITY::GET_ENTITY_COORDS(iLocal_818, true, false), 1));
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_889, 1f, 20000, 0.75f, 0, func_529(vLocal_889, ENTITY::GET_ENTITY_COORDS(iLocal_818, true, false), 1));
 					func_316(iParam0, &iParam1, 0, 0, 1, 1);
 				}
 				func_112(&iLocal_819, 1048576);

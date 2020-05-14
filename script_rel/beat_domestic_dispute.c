@@ -3695,7 +3695,7 @@ void func_128()
 {
 	if (!func_198(Local_485.f_1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_485.f_1, (1f + 0.05f), -1, 0.25f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_485.f_1, (1f + 0.05f), -1, 0.25f, 1, 40000f);
 	}
 	if (TASK::_DOES_SCENARIO_POINT_EXIST(Local_485) && !TASK::IS_SCENARIO_OCCUPIED(Local_485.f_4, 0.5f, true))
 	{
@@ -10572,7 +10572,7 @@ void func_312(bool bParam0)
 	{
 		if (!bParam0)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1392.933f, -1138.08f, 74.72879f, (1f + 0.05f), 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1392.933f, -1138.08f, 74.72879f, (1f + 0.05f), 20000, 0.25f, 1, 40000f);
 		}
 	}
 	func_128();

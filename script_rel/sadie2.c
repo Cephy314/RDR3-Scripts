@@ -46289,7 +46289,7 @@ int func_1056(bool bParam0, bool bParam1, var uParam2)
 	switch (bVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -54554,7 +54554,7 @@ void func_1295(var uParam0)
 						if (!func_1227(&(Local_432[0 /*175*/]), 713668775))
 						{
 							TASK::WAYPOINT_RECORDING_GET_COORD(func_191(6), 5, &vVar0);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_432[0 /*175*/]), vVar0, 1f, 20000, 0.25f, false, 296.1005f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_432[0 /*175*/]), vVar0, 1f, 20000, 0.25f, 0, 296.1005f);
 							func_1265(&((Local_432[0 /*175*/])->f_165), 8);
 						}
 					}
@@ -54692,7 +54692,7 @@ void func_1295(var uParam0)
 										vLocal_411 = { vVar3 };
 										if (!func_397(vVar3))
 										{
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((Local_432[0 /*175*/])->f_1, vVar3, 1.5f, -1, 0.25f, false, 40000f);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((Local_432[0 /*175*/])->f_1, vVar3, 1.5f, -1, 0.25f, 0, 40000f);
 											func_1265(&((Local_432[0 /*175*/])->f_165), 13);
 										}
 									}
@@ -54720,7 +54720,7 @@ void func_1295(var uParam0)
 					{
 						TASK::CLEAR_SEQUENCE_TASK(&iLocal_2663);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_2663);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 1f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 1f, -1, 0.25f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, (Local_432[0 /*175*/])->f_1, -1, -1082130432, -1082130432, -1082130432);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_2663);
 						TASK::TASK_PERFORM_SEQUENCE(&(Local_432[0 /*175*/]), iLocal_2663);
@@ -56570,7 +56570,7 @@ void func_1338(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bPara
 		}
 		else if (bParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -90948,7 +90948,7 @@ void func_2573(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	bool bVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2611(uParam0, iParam1) };
@@ -90969,10 +90969,10 @@ void func_2573(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			bVar3 = (bVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, bVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, bVar3);
 		}
 		if (!func_2138(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2138(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

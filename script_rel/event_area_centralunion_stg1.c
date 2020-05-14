@@ -15563,7 +15563,7 @@ int func_389(bool bParam0)
 						func_453(&uLocal_2114, 0);
 						func_459(&uLocal_2114, 1);
 						PED::_0xAAB050DA48B57978(&(iLocal_3981[0]), "Default_Nervous", false, -1, 4);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_3981[0]), func_703(), 1f, -1, 2f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_3981[0]), func_703(), 1f, -1, 2f, 0, 40000f);
 					}
 					func_713("TRACKS_OBJ06a", 1);
 					func_113(5);
@@ -17087,10 +17087,10 @@ int func_394(bool bParam0)
 				POPULATION::_0xB56D41A694E42E86(&(iLocal_2305[3]), 0, 0, 0, -1, -1, 0);
 				TASK::TASK_PLAY_ANIM(&(iLocal_3981[0]), "SCRIPT_PROC@EVENT_AREA@UNION_RAILROAD@STAGE_01@RAILROAD", "THIEF_EXIT", 2f, -2f, -1, 67108880, 0f, false, 0, false, 0, false);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_4141);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_809(0), 1f, -1, 0.25f, true, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_809(1), 1f, -1, 0.25f, true, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_809(2), 1f, -1, 0.25f, true, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_810(), 1f, -1, 0.25f, false, func_811());
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_809(0), 1f, -1, 0.25f, 1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_809(1), 1f, -1, 0.25f, 1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_809(2), 1f, -1, 0.25f, 1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_810(), 1f, -1, 0.25f, 0, func_811());
 				TASK::_TASK_USE_SCENARIO_POINT(0, iLocal_2468, 0, -1, true, false, 0, false, -1f, false);
 				func_812(&(iLocal_3981[0]), &iLocal_4141, 0, 0, 1, 1);
 				func_813(&(iLocal_3981[0]), joaat("HONOR_EVENT_LOOT_INNOCENT"));
@@ -24686,9 +24686,9 @@ int func_666(int iParam0)
 				fVar9 = TASK::_GET_SCENARIO_POINT_HEADING(iVar10, true);
 				TASK::CLEAR_PED_TASKS(bVar0, 1, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iLocal_4141);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1015(vVar5, fVar9), 1f, -1, 0.25f, false, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1015(vVar2, fVar8), 1f, -1, 0.25f, false, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, 1f, -1, 0.25f, false, fVar8);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1015(vVar5, fVar9), 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1015(vVar2, fVar8), 1f, -1, 0.25f, 0, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, 1f, -1, 0.25f, 0, fVar8);
 				TASK::CLOSE_SEQUENCE_TASK(iLocal_4141);
 				TASK::TASK_PERFORM_SEQUENCE(bVar0, iLocal_4141);
 				TASK::CLEAR_SEQUENCE_TASK(&iLocal_4141);
@@ -27469,7 +27469,7 @@ int func_769(int iParam0, int iParam1)
 	int iVar5;
 	bool bVar6;
 	int iVar7;
-	bool bVar8;
+	int iVar8;
 	int iVar9;
 	int iVar10;
 	int iVar11;
@@ -27622,10 +27622,10 @@ int func_769(int iParam0, int iParam1)
 					if (!func_175(iParam0->f_11))
 					{
 					}
-					bVar8 = false;
+					iVar8 = 0;
 					if (!func_359(iParam0->f_23, 1024))
 					{
-						bVar8 = (bVar8 || 1);
+						iVar8 |= 1;
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iVar9);
 					if (!func_175(iParam0->f_11))
@@ -27636,7 +27636,7 @@ int func_769(int iParam0, int iParam1)
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, iParam0->f_11, iParam0->f_21, func_318(!func_359(iParam0->f_23, 128), 20000, -1), iParam0->f_17, bVar8, iParam0->f_19);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, iParam0->f_11, iParam0->f_21, func_318(!func_359(iParam0->f_23, 128), 20000, -1), iParam0->f_17, iVar8, iParam0->f_19);
 						}
 					}
 					if (func_359(iParam0->f_23, 16))
@@ -27645,7 +27645,7 @@ int func_769(int iParam0, int iParam1)
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, iParam0->f_8, iParam0->f_21, func_318(!func_359(iParam0->f_23, 128), 20000, -1), iParam0->f_17, bVar8, iParam0->f_19);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, iParam0->f_8, iParam0->f_21, func_318(!func_359(iParam0->f_23, 128), 20000, -1), iParam0->f_17, iVar8, iParam0->f_19);
 					}
 					if (func_359(iParam0->f_23, 1))
 					{
@@ -36356,7 +36356,7 @@ int func_1068(bool bParam0, bool bParam1, vector3 vParam2, bool bParam5, float f
 				if (!func_175(vParam2))
 				{
 					bParam8 = false;
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*bParam1, vParam2, fParam12, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*bParam1, vParam2, fParam12, -1, 0.25f, 0, 40000f);
 				}
 				if (VOLUME::_DOES_VOLUME_EXIST(bParam5))
 				{
@@ -58395,7 +58395,7 @@ void func_1805(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -63927,7 +63927,7 @@ int func_1960(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -69272,7 +69272,7 @@ void func_2140(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2273(uParam0, iParam1) };
@@ -69293,10 +69293,10 @@ void func_2140(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_1503(uParam0->f_704[&uParam0->f_163[iParam1 /*18*/] /*41*/], 4) && !func_1503(uParam0->f_704[&uParam0->f_163[iParam1 /*18*/] /*41*/], 2))
 		{

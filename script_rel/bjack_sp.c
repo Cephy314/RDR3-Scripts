@@ -33339,7 +33339,7 @@ void func_1144(int iParam0, int iParam1, bool bParam2)
 		return;
 	}
 	(Global_1058888->f_42784[iParam0 /*12*/])->f_4 = iParam1;
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
 }
 
 void func_1145(int iParam0, int iParam1)
@@ -33353,7 +33353,7 @@ void func_1145(int iParam0, int iParam1)
 		return;
 	}
 	(Global_1058888->f_42784[iParam0 /*12*/])->f_6 = iParam1;
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_SECONDARY_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
+	HUD::_SET_MP_GAMER_TAG_SECONDARY_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
 }
 
 bool func_1146(int iParam0)

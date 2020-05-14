@@ -1937,7 +1937,7 @@ int func_32()
 									}
 									if (func_186(&(uLocal_484[0]), vLocal_206, 1) > 7f)
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_203, 1.5f, -1, 5f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_203, 1.5f, -1, 5f, 0, 40000f);
 									}
 									TASK::_TASK_USE_SCENARIO_POINT(0, iLocal_492, 0, 0, true, false, 0, false, -1f, false);
 									func_168(&(uLocal_484[0]), &iLocal_488, 0, 0, 1, 1);

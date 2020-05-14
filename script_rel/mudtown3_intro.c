@@ -2687,7 +2687,7 @@ int func_106(int iParam0)
 	}
 	else if (!func_5(iParam0, 2097152))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_199(*iParam0), 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_199(*iParam0), 1f, 20000, 0.25f, 0, 40000f);
 		HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
 		PED::FORCE_PED_MOTION_STATE(Global_35, joaat("MOTIONSTATE_WALK"), false, 1, false);
@@ -10677,7 +10677,7 @@ void func_461(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

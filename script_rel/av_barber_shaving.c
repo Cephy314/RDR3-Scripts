@@ -1893,7 +1893,7 @@ int func_31(var uParam0)
 						{
 							TASK::CLEAR_PED_TASKS(&(uParam0->f_20[1 /*14*/]), 1, 0);
 							TASK::OPEN_SEQUENCE_TASK(&iVar2);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -308.2f, 801.8f, 119f, 1f, -1, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -308.2f, 801.8f, 119f, 1f, -1, 0.25f, 1, 40000f);
 							TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 							TASK::CLOSE_SEQUENCE_TASK(iVar2);
 							TASK::TASK_PERFORM_SEQUENCE(&(uParam0->f_20[1 /*14*/]), iVar2);

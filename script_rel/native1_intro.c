@@ -2577,7 +2577,7 @@ int func_106(int iParam0)
 	}
 	else if (!func_5(iParam0, 2097152))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_179(*iParam0), 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_179(*iParam0), 1f, 20000, 0.25f, 0, 40000f);
 		HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
 		PED::FORCE_PED_MOTION_STATE(Global_35, joaat("MOTIONSTATE_WALK"), false, 1, false);
@@ -7352,11 +7352,11 @@ int func_313(int iParam0, int iParam1, bool bParam2, bool bParam3)
 	return iVar0;
 }
 
-void func_314(bool bParam0, struct<4> Param1, float fParam5, int iParam6, float fParam7, bool bParam8)
+void func_314(bool bParam0, struct<4> Param1, float fParam5, int iParam6, float fParam7, int iParam8)
 {
 	if (!ENTITY::IS_ENTITY_DEAD(bParam0) || bParam0 == 0)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bParam0, Param1, fParam5, iParam6, fParam7, bParam8, Param1.f_3);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bParam0, Param1, fParam5, iParam6, fParam7, iParam8, Param1.f_3);
 	}
 }
 
@@ -9587,7 +9587,7 @@ void func_426(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

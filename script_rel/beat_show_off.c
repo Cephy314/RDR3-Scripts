@@ -3374,7 +3374,7 @@ void func_102()
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_275(iLocal_539), 1f, -1, 5f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_275(iLocal_539), 1f, -1, 5f, 1, 40000f);
 						TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, func_278(iLocal_539), 1f, 0, false, false, true, false);
 					}
 					func_279(&(uLocal_24[0]), &iVar0, 0, 0, 1, 1);

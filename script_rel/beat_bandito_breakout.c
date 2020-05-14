@@ -4961,7 +4961,7 @@ int func_134(int iParam0, int iParam1, bool bParam2, float fParam3)
 			PED::_0xF1C03A5352243A30(iParam0);
 		}
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iParam1, true, false), fParam3, -1, 3.5f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iParam1, true, false), fParam3, -1, 3.5f, 0, 40000f);
 		TASK::TASK_MOUNT_ANIMAL(0, iParam1, 20000, -1, fParam3, 1, 0, 0);
 		func_305(iParam0, &iVar0, 0, 0, 1, 1);
 		PED::SET_PED_KEEP_TASK(iParam0, true);

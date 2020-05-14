@@ -1653,7 +1653,7 @@ void func_51()
 						TASK::TASK_MOUNT_ANIMAL(0, &(uLocal_15.f_40[iVar0]), 20000, -1, 2f, 1, 0, 0);
 						if (!func_69((uLocal_15.f_118[iVar0 /*4*/])->f_1))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (uLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (uLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 						}
 						TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 						func_194(&(uLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -1681,7 +1681,7 @@ void func_51()
 							TASK::OPEN_SEQUENCE_TASK(&iVar12);
 							if (!func_69((uLocal_15.f_118[iVar0 /*4*/])->f_1))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (uLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (uLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 							}
 							TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 							func_194(&(uLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -3819,7 +3819,7 @@ int func_145()
 				fVar7 = func_296(ENTITY::GET_ENTITY_COORDS(&(uLocal_15[1]), true, false), Global_36, 1);
 				vVar4 = { OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(ENTITY::GET_ENTITY_COORDS(&(uLocal_15[1]), true, false), fVar7, 0f, 1.5f, 0f) };
 				TASK::OPEN_SEQUENCE_TASK(&iVar3);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar4, 1f, 20000, 0.5f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar4, 1f, 20000, 0.5f, 1, 40000f);
 				if (&uLocal_15.f_9[1] > 4f)
 				{
 					TASK::TASK_FOLLOW_ENTITY_WHILE_AIMING_AT_ENTITY(0, Global_35, Global_35, 0, 20000, 4f, 1.5f, 0);
@@ -12978,7 +12978,7 @@ void func_467(var uParam0, bool bParam1, vector3 vParam2, float fParam5, float f
 				else
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam2, fParam5, 20000, fParam7, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam2, fParam5, 20000, fParam7, 0, 40000f);
 					if (bParam8)
 					{
 						TASK::TASK_SMART_FLEE_PED(0, uParam0[0], fParam6, 6000, 0, 2f, 0);

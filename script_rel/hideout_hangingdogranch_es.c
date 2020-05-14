@@ -5019,7 +5019,7 @@ int func_188()
 	{
 		func_315(bVar0, Global_35, 3, 2, 2000f);
 		TASK::OPEN_SEQUENCE_TASK(&iVar1);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2172.143f, 687.5095f, 119.6322f, 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2172.143f, 687.5095f, 119.6322f, 1f, 20000, 0.25f, 0, 40000f);
 		TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, 15000, -1082130432, -1082130432, -1082130432);
 		TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(bVar0, true, false), 5f, 0, false, false, false, false);
 		func_308(bVar0, &iVar1, 1f, 0, 1, 1);
@@ -8405,7 +8405,7 @@ int func_320(int iParam0)
 			}
 			iVar10 = TASK::ADD_COVER_POINT(*(vVar2[0 /*3*/]), &(uVar6[0]), 2, 0, 1, false);
 			TASK::OPEN_SEQUENCE_TASK(&iVar1);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vVar2[0 /*3*/]), 2f, 2000, 0.25f, false, &(uVar6[0]));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vVar2[0 /*3*/]), 2f, 2000, 0.25f, 0, &(uVar6[0]));
 			TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(false, *(vVar2[0 /*3*/]), 20, 0, 0f, 0, 0, iVar10, 1, 0, 0);
 			TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
 			func_308((Local_274[iVar0 /*9*/])->f_5, &iVar1, 0, 0, 1, 1);
@@ -8425,7 +8425,7 @@ int func_320(int iParam0)
 			}
 			iVar10 = TASK::ADD_COVER_POINT(*(vVar2[0 /*3*/]), &(uVar6[0]), 2, 0, 1, false);
 			TASK::OPEN_SEQUENCE_TASK(&iVar1);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vVar2[0 /*3*/]), 2f, 20000, 0.25f, false, &(uVar6[0]));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vVar2[0 /*3*/]), 2f, 20000, 0.25f, 0, &(uVar6[0]));
 			TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(false, *(vVar2[0 /*3*/]), 20, 0, 0f, 0, 0, iVar10, 1, 0, 0);
 			TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
 			func_308((Local_274[iVar0 /*9*/])->f_5, &iVar1, 0, 0, 1, 1);
@@ -8435,7 +8435,7 @@ int func_320(int iParam0)
 			ENTITY::_SET_ENTITY_COORDS_AND_HEADING((Local_274[iVar0 /*9*/])->f_5, -2177.095f, 721.5068f, 121.6187f, 258.8683f, true, false, true);
 			func_306((Local_274[iVar0 /*9*/])->f_5, joaat("WEAPON_REPEATER_HENRY"), 1, 0, 0, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 40, 0, 0, 0, 0);
 			TASK::OPEN_SEQUENCE_TASK(&iVar1);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2183.847f, 715.3598f, 121.2995f, 3f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2183.847f, 715.3598f, 121.2995f, 3f, -1, 0.25f, 0, 40000f);
 			PED::FORCE_PED_MOTION_STATE(0, joaat("MOTIONSTATE_SPRINT"), false, 0, false);
 			PED::SET_PED_COMBAT_RANGE(0, 1);
 			PED::SET_PED_COMBAT_MOVEMENT(0, 2);
@@ -8478,7 +8478,7 @@ int func_320(int iParam0)
 			uVar6[0] = func_144(1, 10);
 			iVar10 = TASK::ADD_COVER_POINT(*(vVar2[0 /*3*/]), &(uVar6[0]), 3, 0, 1, false);
 			TASK::OPEN_SEQUENCE_TASK(&iVar1);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vVar2[0 /*3*/]), 2f, 20000, 0.25f, false, &(uVar6[0]));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vVar2[0 /*3*/]), 2f, 20000, 0.25f, 0, &(uVar6[0]));
 			TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(false, *(vVar2[0 /*3*/]), 20, 1, 0f, 0, 0, iVar10, 1, 0, 0);
 			TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
 			func_308((Local_274[iVar0 /*9*/])->f_5, &iVar1, 0, 0, 1, 1);
@@ -31530,7 +31530,7 @@ void func_965(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -34207,7 +34207,7 @@ int func_1054(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

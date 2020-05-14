@@ -8838,7 +8838,7 @@ void func_236()
 							{
 								if (!func_252(&(Local_904[iVar0 /*23*/]), 713668775))
 								{
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_904[iVar0 /*23*/]), (Local_904[iVar0 /*23*/])->f_14, fVar2, -1, 0.25f, false, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_904[iVar0 /*23*/]), (Local_904[iVar0 /*23*/])->f_14, fVar2, -1, 0.25f, 0, 40000f);
 								}
 							}
 							else if (!func_252(&(Local_904[iVar0 /*23*/]), 2106541073))
@@ -9845,7 +9845,7 @@ void func_253(int iParam0, int iParam1, int iParam2, int iParam3)
 	TASK::OPEN_SEQUENCE_TASK(&iParam1);
 	if (bVar3 && !bVar5)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 2f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 2f, -1, 0.25f, 0, 40000f);
 	}
 	if (bVar4)
 	{
@@ -9853,7 +9853,7 @@ void func_253(int iParam0, int iParam1, int iParam2, int iParam3)
 	}
 	if (bVar5)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 3f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 3f, -1, 0.25f, 0, 40000f);
 	}
 	TASK::TASK_STAND_STILL(0, -1);
 	TASK::CLOSE_SEQUENCE_TASK(iParam1);

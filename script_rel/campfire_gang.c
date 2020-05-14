@@ -3133,7 +3133,7 @@ int func_87(int iParam0)
 		{
 			func_277(iParam0, &(iParam0->f_40[iVar0]), Global_35, func_301(iParam0), 0, 1, 1744022339, -1073741824 /* Float: -2f */, -1, 0, 0);
 			TASK::OPEN_SEQUENCE_TASK(&iVar1);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(iParam0->f_174[iVar0 /*3*/]), 1f, 20000, 1f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(iParam0->f_174[iVar0 /*3*/]), 1f, 20000, 1f, 0, 40000f);
 			TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(&(iParam0->f_40[iVar0]), true, false), 4f, 0, false, false, false, true);
 			func_302(&(iParam0->f_40[iVar0]), &iVar1, 0, 0, 1, 1);
 			func_74(iParam0, 64);
@@ -11946,7 +11946,7 @@ void func_308(int iParam0)
 				TASK::OPEN_SEQUENCE_TASK(&iVar3);
 				if (!func_147(vVar0))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, 0, 40000f);
 				}
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, 0, -1082130432, -1082130432, -1082130432);
 				TASK::TASK_SWAP_WEAPON(false, 1, 0, 0, 0);
@@ -35144,7 +35144,7 @@ int func_811(int iParam0)
 						vVar3.x = (vVar3.x - 1f);
 						vVar3.f_1 = (vVar3.y - 1f);
 					}
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_208[iVar1]), vVar3, fVar2, -1, 10f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_208[iVar1]), vVar3, fVar2, -1, 10f, 0, 40000f);
 				}
 				iVar1++;
 			}

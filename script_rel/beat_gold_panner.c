@@ -510,7 +510,7 @@ void func_6(int iParam0)
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(iLocal_211[0]), false);
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(uLocal_213[0]), false);
 						TASK::OPEN_SEQUENCE_TASK(&iVar0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(&(uLocal_213[0]), true, false), 1f, -1, 4f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(&(uLocal_213[0]), true, false), 1f, -1, 4f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, &(uLocal_213[0]), 3000, -1082130432, -1082130432, -1082130432);
 						TASK::TASK_MOUNT_ANIMAL(0, &(uLocal_213[0]), -1, -1, 2f, 1, 0, 0);
 						TASK::_TASK_MOVE_IN_TRAFFIC(0, -1082130432, 0, 0);
@@ -11524,7 +11524,7 @@ int func_382()
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	if (!func_176(vVar1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2f, -1, 0.25f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2f, -1, 0.25f, 1, 40000f);
 		TASK::_TASK_MOVE_IN_TRAFFIC(0, 2.5f, 0, 0);
 	}
 	else

@@ -19135,7 +19135,7 @@ void func_618(int iParam0, float fParam1, float fParam2, float fParam3, bool bPa
 	}
 	iVar0 = func_395(iParam0);
 	iVar1 = ((*Global_1945938)[iVar0 /*18*/])->f_3;
-	if (!HUD::_0xA6C6A4ADB3BAC409(iVar1))
+	if (!HUD::_UIPROMPT_HAS_MANUAL_MASH_MODE(iVar1))
 	{
 		return;
 	}
@@ -30322,7 +30322,7 @@ int func_933(int iParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

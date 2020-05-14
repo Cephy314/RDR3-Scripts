@@ -3212,7 +3212,7 @@ int func_61()
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_1298);
 						if (!func_38(vLocal_1113))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1113, 2.001f, -1, 3f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1113, 2.001f, -1, 3f, 1, 40000f);
 						}
 						TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vLocal_1116, 5f, 2.001f, 8192, 0);
 						TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, vLocal_1116, 15f, 0, false, false, false, false);
@@ -3295,11 +3295,11 @@ int func_61()
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_1298);
 							if (!func_38(vLocal_1131))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, 0, 40000f);
 							}
 							if (!func_38(vLocal_1134))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, 0, 40000f);
 							}
 							TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vLocal_1116, 5f, 1.75f, 12800, 0);
 							TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, vLocal_1116, 15f, 0, false, false, false, false);
@@ -3895,11 +3895,11 @@ void func_75()
 			TASK::TASK_MOUNT_ANIMAL(0, &(uLocal_1263[0]), -1, -1, 1.5f, 1, 0, 0);
 			if (!func_38(vLocal_1131))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, 0, 40000f);
 			}
 			if (!func_38(vLocal_1134))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 			TASK::CLOSE_SEQUENCE_TASK(iVar1);
@@ -3912,11 +3912,11 @@ void func_75()
 			TASK::TASK_MOUNT_ANIMAL(0, &(uLocal_1263[2]), -1, -1, 1.5f, 1, 0, 0);
 			if (!func_38(vLocal_1131))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, 0, 40000f);
 			}
 			if (!func_38(vLocal_1134))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 			TASK::CLOSE_SEQUENCE_TASK(iVar1);
@@ -3929,11 +3929,11 @@ void func_75()
 			TASK::TASK_MOUNT_ANIMAL(0, &(uLocal_1263[1]), -1, -1, 2f, 1, 0, 0);
 			if (!func_38(vLocal_1131))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1131, 1.75f, 20000, 0.25f, 0, 40000f);
 			}
 			if (!func_38(vLocal_1134))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1134, 1.75f, 20000, 0.25f, 0, 40000f);
 			}
 			TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 			TASK::CLOSE_SEQUENCE_TASK(iVar1);

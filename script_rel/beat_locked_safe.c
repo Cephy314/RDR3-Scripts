@@ -1813,7 +1813,7 @@ int func_45()
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
 							if (iLocal_472 == 0 || iLocal_472 == 1)
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(uLocal_447[2]), -2f, 0f, 0f), 1f, 20000, 0.25f, true, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(uLocal_447[2]), -2f, 0f, 0f), 1f, 20000, 0.25f, 1, 40000f);
 							}
 							TASK::TASK_FOLLOW_TO_OFFSET_OF_ENTITY(0, &(uLocal_447[0]), -3f, -2f, 0f, 1f, -1, 1036831949, 1, 1, 0, 0, 1);
 							func_160(&(uLocal_447[1]), &iVar1, 0, 0, 1, 1);
@@ -3884,7 +3884,7 @@ void func_115(bool bParam0)
 				VEHICLE::_0xB36D3EC70963BE60(iLocal_465, iLocal_451);
 			}
 			TASK::OPEN_SEQUENCE_TASK(&iVar6);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, 20000, 0.25f, 1, 40000f);
 			TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 4, 0, -1082130432, -1, 0);
 			func_160(iLocal_451, &iVar6, 0, 0, 1, 1);
 		}

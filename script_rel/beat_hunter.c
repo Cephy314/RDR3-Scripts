@@ -1677,7 +1677,7 @@ int func_23()
 							{
 								if (func_51(Global_35, (Local_231[0 /*32*/])->f_11, 0))
 								{
-									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_168(func_83(&Local_14), &(uLocal_225[0]), 5f), 1.5f, -1, 0.25f, true, 40000f);
+									TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_168(func_83(&Local_14), &(uLocal_225[0]), 5f), 1.5f, -1, 0.25f, 1, 40000f);
 								}
 								TASK::TASK_PLACE_CARRIED_ENTITY_ON_MOUNT(0, PED::_GET_FIRST_ENTITY_PED_IS_CARRYING(&(uLocal_225[0])), (Local_231[0 /*32*/])->f_11, 1.5f);
 								TASK::TASK_MOUNT_ANIMAL(0, (Local_231[0 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
@@ -3983,7 +3983,7 @@ void func_129(bool bParam0, bool bParam1, char* sParam2)
 		}
 		else
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_83(&Local_14), 1f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_83(&Local_14), 1f, 20000, 0.25f, 0, 40000f);
 		}
 		func_54(&(uLocal_225[0]), &iVar0, 0, 0, 1, 1);
 		func_117(&uLocal_456);
@@ -4329,7 +4329,7 @@ void func_141(bool bParam0)
 						else
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar2);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_90(), 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_90(), 1f, -1, 0.25f, 0, 40000f);
 							func_54(&(uLocal_225[1]), &iVar2, 0, 0, 1, 1);
 						}
 						TASK::_0x2E1D6D87346BB7D2(&(uLocal_225[1]), &(uLocal_225[0]), 0, 0);
@@ -11400,7 +11400,7 @@ void func_347(int iParam0)
 			break;
 		case 4:
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_511(&(uLocal_225[0]), func_90(), 1f), 0.5f, 20000, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_511(&(uLocal_225[0]), func_90(), 1f), 0.5f, 20000, 0.25f, 1, 40000f);
 			func_146(0, 1, 2f, -2f, -1, 66560, 0, 0, 0, 0, 0);
 			if (func_145())
 			{

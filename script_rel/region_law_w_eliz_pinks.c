@@ -396,7 +396,7 @@ void func_7()
 							func_42(&vVar13, 50, 10, 0);
 							TASK::CLEAR_SEQUENCE_TASK(&iVar10);
 							TASK::OPEN_SEQUENCE_TASK(&iVar10);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar13, 2.5f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar13, 2.5f, -1, 0.25f, 0, 40000f);
 							TASK::TASK_STAND_STILL(0, 3000);
 							TASK::CLOSE_SEQUENCE_TASK(iVar10);
 							TASK::TASK_POLICE(&(iLocal_43[iVar11]), true);

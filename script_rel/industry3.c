@@ -39687,7 +39687,7 @@ int func_871(char[4] cParam0)
 	if (!ENTITY::IS_ENTITY_DEAD(&(Local_370[10 /*10*/])))
 	{
 		func_1426();
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3296.704f, -1290.539f, 42.2427f, 2f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3296.704f, -1290.539f, 42.2427f, 2f, 20000, 0.25f, 0, 40000f);
 		TASK::TASK_COWER(0, -1, 0, 0);
 		func_1427(&(Local_370[10 /*10*/]), -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */);
 	}
@@ -44186,7 +44186,7 @@ int func_1015(char[4] cParam0)
 				}
 				else
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3286.009f, -1304.629f, 41.8794f, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3286.009f, -1304.629f, 41.8794f, 1f, -1, 0.25f, 0, 40000f);
 					TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP(0, 3286.009f, -1304.629f, 41.8794f, 1f, -1, true, false, true, false);
 				}
 				func_1427(&(Local_1559[0 /*10*/]), -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */);
@@ -44361,7 +44361,7 @@ int func_1015(char[4] cParam0)
 				PED::FORCE_PED_MOTION_STATE(&(Local_370[11 /*10*/]), joaat("MOTIONSTATE_WALK"), false, 0, false);
 				iVar8 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(3291.231f, -1328.306f, 41.7186f, joaat("WORLD_HUMAN_LEAN_BACK_WALL"), 1f, 0, false);
 				func_1426();
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3291.231f, -1328.306f, 41.7186f, 1f, 20000, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3291.231f, -1328.306f, 41.7186f, 1f, 20000, 0.25f, 1, 40000f);
 				if (TASK::_DOES_SCENARIO_POINT_EXIST(iVar8))
 				{
 					TASK::_TASK_USE_SCENARIO_POINT(0, iVar8, "WORLD_HUMAN_LEAN_WALL_DRINKING_MALE_A", -1, true, false, 0, false, -1f, false);
@@ -51478,7 +51478,7 @@ int func_1241(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -60510,7 +60510,7 @@ void func_1510(char[4] cParam0)
 			iVar1 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPEHASH(3286.869f, -1304.827f, 50.7904f, joaat("SER_GRANDKOR_L2_INT"));
 			if (iVar1 == INTERIOR::GET_INTERIOR_FROM_ENTITY(&(Local_79[25 /*10*/])))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[25 /*10*/]), 3289.42f, -1306.266f, 50.756f, 1.5f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[25 /*10*/]), 3289.42f, -1306.266f, 50.756f, 1.5f, 20000, 0.25f, 0, 40000f);
 				(Local_79[25 /*10*/])->f_2++;
 			}
 			else if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Global_35, 3282.368f, -1311.796f, 48.86099f, 3276.613f, -1311.755f, 49.86057f, 26.5f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(Global_35, 3283.858f, -1309.685f, 50.81084f, 3283.859f, -1297.856f, 53.2137f, 1.75f, false, true, 0))
@@ -61164,7 +61164,7 @@ void func_1520()
 					{
 						case 0:
 							ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(iLocal_1708[19]), "S_M_M_NBXRIVERBOATGUARDS_01", &vVar1, false, 0, 2);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[iVar0 /*10*/]), vVar1, 1.5f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[iVar0 /*10*/]), vVar1, 1.5f, 20000, 0.25f, 0, 40000f);
 							if (!MAP::DOES_BLIP_EXIST((Local_79[iVar0 /*10*/])->f_3))
 							{
 								(Local_79[iVar0 /*10*/])->f_3 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(Local_79[iVar0 /*10*/]));
@@ -61213,7 +61213,7 @@ void func_1520()
 					{
 						case 0:
 							ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(iLocal_1708[19]), "S_M_M_NBXRIVERBOATGUARDS_01", &vVar1, false, 0, 2);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[iVar0 /*10*/]), vVar1, 1.5f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[iVar0 /*10*/]), vVar1, 1.5f, 20000, 0.25f, 0, 40000f);
 							if (!MAP::DOES_BLIP_EXIST((Local_79[iVar0 /*10*/])->f_3))
 							{
 								(Local_79[iVar0 /*10*/])->f_3 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(Local_79[iVar0 /*10*/]));
@@ -61261,7 +61261,7 @@ void func_1520()
 					{
 						case 0:
 							ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(iLocal_1708[19]), "S_M_M_NBXRIVERBOATGUARDS_01", &vVar1, false, 0, 2);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[iVar0 /*10*/]), vVar1, 1.5f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_79[iVar0 /*10*/]), vVar1, 1.5f, 20000, 0.25f, 0, 40000f);
 							if (!MAP::DOES_BLIP_EXIST((Local_79[iVar0 /*10*/])->f_3))
 							{
 								(Local_79[iVar0 /*10*/])->f_3 = MAP::_BLIP_ADD_FOR_ENTITY(joaat("BLIP_STYLE_ENEMY"), &(Local_79[iVar0 /*10*/]));
@@ -62639,7 +62639,7 @@ void func_1569(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -105761,7 +105761,7 @@ void func_2977(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_3064(uParam0, iParam1) };
@@ -105782,10 +105782,10 @@ void func_2977(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_2497(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2497(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{
@@ -107217,7 +107217,7 @@ void func_3048(int iParam0, int iParam1, bool bParam2)
 		return;
 	}
 	(Global_1058888->f_42784[iParam0 /*12*/])->f_4 = iParam1;
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
 }
 
 void func_3049(int iParam0, int iParam1)
@@ -107231,7 +107231,7 @@ void func_3049(int iParam0, int iParam1)
 		return;
 	}
 	(Global_1058888->f_42784[iParam0 /*12*/])->f_6 = iParam1;
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_SECONDARY_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
+	HUD::_SET_MP_GAMER_TAG_SECONDARY_ICON((Global_1058888->f_42784[iParam0 /*12*/])->f_2, iParam1);
 }
 
 bool func_3050(int iParam0)

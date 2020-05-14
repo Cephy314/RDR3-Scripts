@@ -21369,7 +21369,7 @@ void func_651(var uParam0)
 void func_652(var uParam0, var uParam1)
 {
 	func_1232(&(uParam0->f_2335), uParam1->f_6, 1);
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, joaat("GENERIC_OBJECTIVE"));
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, joaat("GENERIC_OBJECTIVE"));
 	func_1036(&(uParam0->f_2335), uParam1->f_6, func_1035(uParam0, uParam1->f_6, func_611(uParam1, uParam1->f_6)));
 	func_1233(&(uParam0->f_2335), uParam1->f_6, 1f);
 }
@@ -21664,7 +21664,7 @@ void func_663(var uParam0, var uParam1)
 {
 	func_1037(&(uParam0->f_2335), uParam1->f_6, 0);
 	func_1232(&(uParam0->f_2335), uParam1->f_6, 0);
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, joaat("GENERIC_PLAYER"));
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON((uParam0->f_2839.f_818[uParam1->f_6 /*63*/])->f_62, joaat("GENERIC_PLAYER"));
 }
 
 bool func_664(var uParam0, int iParam1, var uParam2)
@@ -37864,7 +37864,7 @@ void func_1404(var uParam0, var uParam1)
 	{
 		return;
 	}
-	HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(*uParam1, func_1580(uParam0));
+	HUD::_SET_MP_GAMER_TAG_VISIBILITY(*uParam1, func_1580(uParam0));
 }
 
 void func_1405(var uParam0, int iParam1)
@@ -41883,8 +41883,8 @@ int func_1491(int iParam0, int iParam1, char* sParam2, var uParam3)
 		if (!HUD::IS_MP_GAMER_TAG_ACTIVE(*uParam3))
 		{
 			*uParam3 = HUD::CREATE_FAKE_MP_GAMER_TAG(iParam1, sParam2, true, false, "", 0);
-			HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(*uParam3, 2);
-			HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(*uParam3, joaat("GENERIC_PLAYER"));
+			HUD::_SET_MP_GAMER_TAG_VISIBILITY(*uParam3, 2);
+			HUD::_SET_MP_GAMER_TAG_TOP_ICON(*uParam3, joaat("GENERIC_PLAYER"));
 			HUD::_SET_MP_GAMER_TAG_TYPE(*uParam3, joaat("MINIGAMES"));
 			HUD::_SET_MP_GAMER_TAG_COLOUR(*uParam3, joaat("COLOR_WHITE"));
 		}

@@ -20311,7 +20311,7 @@ int func_525(var uParam0, int iParam1)
 					func_66(uParam0->f_2);
 				}
 				func_61(17, 0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_75(uParam0->f_2), 1957.658f, -1877.784f, 40.9145f, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_75(uParam0->f_2), 1957.658f, -1877.784f, 40.9145f, 1f, -1, 0.25f, 0, 40000f);
 			}
 			if (func_903(&(iParam1->f_160), Global_35, "ARTHUR", 0, 1, 1))
 			{
@@ -25528,7 +25528,7 @@ int func_675(int iParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -31515,11 +31515,11 @@ void func_888(int iParam0)
 						}
 					}
 					fVar4 = 1.5f;
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_80[iVar2]), func_1210(iVar2), fVar4, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_80[iVar2]), func_1210(iVar2), fVar4, -1, 0.25f, 0, 40000f);
 				}
 				if (PED::_0x285D36C5C72B0569(Global_35) < 0.25f)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_80[iVar2]), func_509(22), 2f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_80[iVar2]), func_509(22), 2f, -1, 0.25f, 0, 40000f);
 					func_1182(iParam0->f_14[iVar2], 1);
 				}
 				if (func_827(&(iParam0->f_80[iVar2]), Global_35, 1, 1) < 10f)
@@ -31704,7 +31704,7 @@ void func_897(int iParam0, int iParam1, float fParam2)
 	int iVar0;
 
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_509(iParam1), fParam2, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_509(iParam1), fParam2, -1, 0.25f, 0, 40000f);
 	TASK::TASK_STAND_STILL(0, -1);
 	func_882(iParam0, &iVar0, 0, 0, 1, 1);
 }
@@ -51849,7 +51849,7 @@ void func_1569(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(iParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(iParam0), bParam2);
 		}
 	}
 	if (bParam3)

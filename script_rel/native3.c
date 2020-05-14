@@ -50216,7 +50216,7 @@ int func_1062(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -68857,7 +68857,7 @@ void func_1366(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -81283,17 +81283,17 @@ void func_1744(bool bParam0, vector3 vParam1, int iParam4, int iParam5, bool bPa
 void func_1745(bool bParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 
 	if (!PED::IS_PED_INJURED(bParam0))
 	{
 		PED::SET_PED_CAN_RAGDOLL(bParam0, true);
-		bVar1 = 5505029;
+		iVar1 = 5505029;
 		TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 544.04f, 675.84f, 112.93f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 520.29f, 724.25f, 118.63f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 450.04f, 833.33f, 145.75f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 544.04f, 675.84f, 112.93f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 520.29f, 724.25f, 118.63f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 450.04f, 833.33f, 145.75f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
 		TASK::CLOSE_SEQUENCE_TASK(iVar0);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(bParam0, true);
 		TASK::TASK_PERFORM_SEQUENCE(bParam0, iVar0);
@@ -81324,17 +81324,17 @@ int func_1746(int iParam0)
 void func_1747(bool bParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 
 	if (!PED::IS_PED_INJURED(bParam0))
 	{
 		PED::SET_PED_CAN_RAGDOLL(bParam0, true);
-		bVar1 = 5505029;
+		iVar1 = 5505029;
 		TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 594.74f, 682.73f, 114.18f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 634.81f, 727.76f, 117.28f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 701.3f, 768.42f, 133.72f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 594.74f, 682.73f, 114.18f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 634.81f, 727.76f, 117.28f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 701.3f, 768.42f, 133.72f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
 		TASK::CLOSE_SEQUENCE_TASK(iVar0);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(bParam0, true);
 		TASK::TASK_PERFORM_SEQUENCE(bParam0, iVar0);
@@ -81875,30 +81875,30 @@ int func_1768(int iParam0)
 void func_1769(bool bParam0, int iParam1)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 
 	if (!PED::IS_PED_INJURED(bParam0))
 	{
 		PED::SET_PED_CAN_RAGDOLL(bParam0, true);
-		bVar1 = 5505029;
+		iVar1 = 5505029;
 		TASK::CLEAR_SEQUENCE_TASK(&iVar0);
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
 		switch (iParam1)
 		{
 			case 1:
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 600f, 686.08f, 114.27f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 625.47f, 720.92f, 114.33f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 703.74f, 752.18f, 135.97f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 600f, 686.08f, 114.27f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 625.47f, 720.92f, 114.33f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 703.74f, 752.18f, 135.97f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
 				break;
 			case 3:
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 542.15f, 674.72f, 112.99f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 525.68f, 706.5f, 116.38f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 446.4f, 800.52f, 141.81f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 542.15f, 674.72f, 112.99f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 525.68f, 706.5f, 116.38f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 446.4f, 800.52f, 141.81f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
 				break;
 			case 5:
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 542.15f, 674.72f, 112.99f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 525.68f, 706.5f, 116.38f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 446.4f, 800.52f, 141.81f, 2f, 20000, (0.25f * 4f), bVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 542.15f, 674.72f, 112.99f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 525.68f, 706.5f, 116.38f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 446.4f, 800.52f, 141.81f, 2f, 20000, (0.25f * 4f), iVar1, 40000f);
 				break;
 		}
 		TASK::CLOSE_SEQUENCE_TASK(iVar0);
@@ -110628,7 +110628,7 @@ void func_2662(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	bool bVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2701(uParam0, iParam1) };
@@ -110649,10 +110649,10 @@ void func_2662(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			bVar3 = (bVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, bVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, bVar3);
 		}
 		if (!func_2301(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2301(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

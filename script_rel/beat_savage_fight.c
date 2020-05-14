@@ -1681,7 +1681,7 @@ int func_28()
 									TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, &(uLocal_469[0]), -1, -1082130432, -1082130432, -1082130432);
 									if (!func_147(iLocal_1350, func_23(&Local_14), 10f, 1, 1))
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_1350, func_23(&Local_14), 1f, -1, 10f, false, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iLocal_1350, func_23(&Local_14), 1f, -1, 10f, 0, 40000f);
 									}
 								}
 								else
@@ -23590,7 +23590,7 @@ Vector3 func_762(int iParam0, int iParam1, char* sParam2, char* sParam3, float f
 	}
 	else
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_874(bParam9, 0, iParam0), vVar0, fParam4, iParam5, fParam6, true, vVar0.f_3.f_2);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_874(bParam9, 0, iParam0), vVar0, fParam4, iParam5, fParam6, 1, vVar0.f_3.f_2);
 	}
 	return vVar0;
 }

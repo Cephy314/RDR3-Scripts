@@ -10246,7 +10246,7 @@ void func_363()
 	{
 		if (func_459(iVar0, 713668775, 1, 0))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar1, 1f, -1, 0.25f, false, fVar4);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar1, 1f, -1, 0.25f, 0, fVar4);
 		}
 	}
 }
@@ -10529,7 +10529,7 @@ void func_373()
 	{
 		if (func_459(iVar0, 713668775, 1, 0))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_461(0), 1f, -1, 0.25f, false, func_672(0));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_461(0), 1f, -1, 0.25f, 0, func_672(0));
 		}
 	}
 }
@@ -10845,7 +10845,7 @@ void func_384()
 		{
 			if (func_459(iVar6, 713668775, 1, 0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar6, func_326(2), 1f, -1, 0.25f, false, func_327(2));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar6, func_326(2), 1f, -1, 0.25f, 0, func_327(2));
 			}
 		}
 		else
@@ -10954,7 +10954,7 @@ void func_386()
 		{
 			if (func_459(iVar0, 713668775, 1, 0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_326(2), 1.5f, -1, 0.5f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_326(2), 1.5f, -1, 0.5f, 0, 40000f);
 			}
 		}
 		else
@@ -11103,7 +11103,7 @@ void func_393()
 	{
 		if (func_459(iVar0, 713668775, 1, 0))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_461(0), 1f, -1, 0.25f, false, func_672(0));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_461(0), 1f, -1, 0.25f, 0, func_672(0));
 		}
 	}
 }
@@ -11636,7 +11636,7 @@ void func_414()
 		{
 			if (func_459(iVar0, 713668775, 1, 0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_326(5), 1f, -1, 0.25f, false, func_327(5));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_326(5), 1f, -1, 0.25f, 0, func_327(5));
 			}
 		}
 	}
@@ -11801,7 +11801,7 @@ void func_419()
 	{
 		if (func_459(iVar0, 713668775, 1, 0))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_461(0), 1f, -1, 0.25f, false, func_672(0));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, func_461(0), 1f, -1, 0.25f, 0, func_672(0));
 		}
 	}
 }

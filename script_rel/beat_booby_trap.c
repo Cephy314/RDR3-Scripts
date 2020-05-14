@@ -16194,14 +16194,14 @@ void func_493(int iParam0, vector3 vParam1, int iParam4, char[4] cParam5, int iP
 				vVar16 = { func_276(iParam0, vVar13, 1065353216 /* Float: 1f */) };
 				func_644(iParam0, vVar13);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar13 + vVar16, fParam7, -1, 0.25f, false, Var1.f_3.f_2);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar13 + vVar16, fParam7, -1, 0.25f, 0, Var1.f_3.f_2);
 				func_628(iParam0, &iVar0, 0, 0, 1, 1);
 			}
 		}
 		else
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_231, fParam7, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_231, fParam7, -1, 0.25f, 0, 40000f);
 			func_628(iParam0, &iVar0, 0, 0, 1, 1);
 		}
 		PED::FORCE_PED_MOTION_STATE(iParam0, iParam6, false, 0, false);
@@ -20217,7 +20217,7 @@ int func_653(int iParam0, var uParam1)
 				uParam1->f_8 = VOLUME::_CREATE_VOLUME_SPHERE(uParam1->f_28, 0f, 0f, 0f, 3f, 3f, 3f);
 				func_786(iParam0, uParam1->f_8, 0, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam1->f_28, 1.5f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam1->f_28, 1.5f, -1, 0.25f, 0, 40000f);
 				TASK::TASK_COMBAT_PED(0, Global_35, 0, 0);
 				func_628(iParam0, &iVar0, 0, 0, 1, 1);
 				if (func_648(uParam1))
@@ -24332,7 +24332,7 @@ void func_810(int iParam0, float fParam1)
 {
 	if (!func_526(iParam0, Global_35, 12f, 1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Global_36, 2f, -1, 12f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Global_36, 2f, -1, 12f, 0, 40000f);
 	}
 	TASK::TASK_GO_TO_ENTITY_WHILE_AIMING_AT_ENTITY(0, Global_35, Global_35, fParam1, 0, 3.5f, 4f, 1, 0, joaat("FIRING_PATTERN_BURST_FIRE"), 0);
 }
@@ -24398,7 +24398,7 @@ void func_812(int iParam0)
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			if (!func_49(iParam0, vVar11, 7f, 1, 1))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar11, 2f, -1, 7f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar11, 2f, -1, 7f, 0, 40000f);
 			}
 			TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, vVar11, Global_35, 1.5f, 0, 1056964608, 1082130432, 1, 0, 0, joaat("FIRING_PATTERN_BURST_FIRE"), 20000, 0);
 			TASK::TASK_SHOOT_AT_ENTITY(0, Global_35, -1, 0, 0);

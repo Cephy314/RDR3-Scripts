@@ -9928,7 +9928,7 @@ int func_302(float fParam0)
 				if (!func_128(&(uLocal_570[1]), 242628503))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_592);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_558, 1f, -1, 0.25f, false, func_505(vLocal_558, vLocal_561, 1));
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_558, 1f, -1, 0.25f, 0, func_505(vLocal_558, vLocal_561, 1));
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, &(uLocal_570[0]), 0, -1082130432, -1082130432, -1082130432);
 					TASK::CLEAR_PED_TASKS(0, 1, 0);
 					func_320(&(uLocal_570[1]), &iLocal_592, 0, 0, 1, 1);
@@ -10332,7 +10332,7 @@ void func_314(int iParam0, int iParam1, vector3 vParam2, float fParam5)
 
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	TASK::TASK_PICKUP_CARRIABLE_ENTITY(0, iParam1);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam2, fParam5, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam2, fParam5, -1, 0.25f, 0, 40000f);
 	func_320(iParam0, &iVar0, 0, 0, 1, 1);
 }
 
@@ -10429,7 +10429,7 @@ void func_319(int iParam0, vector3 vParam1, float fParam4)
 		}
 		else
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vParam1, fParam4, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vParam1, fParam4, -1, 0.25f, 0, 40000f);
 		}
 	}
 }

@@ -9612,7 +9612,7 @@ void func_373()
 	Var0 = { func_142() };
 	if (!func_366(Local_14.f_3, 713668775))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_14.f_3, Var0, 1f, -1, 0.5f, false, Var0.f_3);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_14.f_3, Var0, 1f, -1, 0.5f, 0, Var0.f_3);
 	}
 	PED::SET_PED_KEEP_TASK(Local_14.f_3, true);
 }

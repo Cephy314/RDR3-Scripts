@@ -4856,7 +4856,7 @@ int func_72(var uParam0)
 			}
 			else if (func_33(iLocal_63) && func_117(iLocal_63, 1))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -2334.563f, 102.6577f, 221.5343f, 1f, 20000, 0.1f, false, 164.0882f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -2334.563f, 102.6577f, 221.5343f, 1f, 20000, 0.1f, 0, 164.0882f);
 				func_104(&iLocal_63, 1, 1);
 				func_178(5, 1);
 			}

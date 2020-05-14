@@ -43438,7 +43438,7 @@ void func_1268(var uParam0, int iParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
+					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
 					{
 						if ((iParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_891(iVar3, 1872585553)) || iVar4 == 1882579758)
 						{
@@ -55203,7 +55203,7 @@ int func_1750(var uParam0, var uParam1, int iParam2, bool bParam3)
 				}
 				else if ((&uParam0->f_1[iVar0 /*3*/] != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") && &uParam0->f_1[iVar0 /*3*/] != -230310728) && &uParam0->f_1[iVar0 /*3*/] != 1326838792)
 				{
-					if (PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
+					if (PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
 					{
 						func_2308(uParam1, 1, iVar0, 0);
 					}
@@ -55261,7 +55261,7 @@ int func_1750(var uParam0, var uParam1, int iParam2, bool bParam3)
 										func_2307(iVar0, iVar15);
 										if (((!bVar2 && &uParam0->f_1[iVar0 /*3*/] != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE")) && &uParam0->f_1[iVar0 /*3*/] != -230310728) && &uParam0->f_1[iVar0 /*3*/] != 1326838792)
 										{
-											if (PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
+											if (PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
 											{
 												func_2308(uParam1, 1, iVar0, 0);
 											}
@@ -67186,7 +67186,7 @@ int func_2133(int iParam0, int iParam1)
 		if (!func_1165(&Var1, iVar0, iParam0, iParam1))
 		{
 		}
-		else if (PED::_GET_PED_COMPONENT(Var1.f_4, iVar15, true) == 0)
+		else if (PED::_GET_PED_COMPONENT_CATEGORY(Var1.f_4, iVar15, true) == 0)
 		{
 			if ((Var1.f_4 != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") && Var1.f_4 != 1326838792) && Var1.f_4 != -230310728)
 			{
@@ -77938,7 +77938,7 @@ int func_2464(int iParam0, int iParam1, int iParam2)
 		return 0;
 	}
 	bVar7 = func_831(iParam1, 0);
-	if ((!bVar7 && !func_2582(iParam1)) && PED::_GET_PED_COMPONENT(iParam1, func_2909(Global_1951141->f_1), true) == 0)
+	if ((!bVar7 && !func_2582(iParam1)) && PED::_GET_PED_COMPONENT_CATEGORY(iParam1, func_2909(Global_1951141->f_1), true) == 0)
 	{
 		*iParam2 = 70662961; /* GXTEntry: "Failed to find shop item." */
 		return 0;
@@ -78004,7 +78004,7 @@ int func_2464(int iParam0, int iParam1, int iParam2)
 								}
 								else
 								{
-									if (PED::_GET_PED_COMPONENT(iVar8, PED::_GET_METAPED_TYPE(iParam0), true) == joaat("NECKTIES"))
+									if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, PED::_GET_METAPED_TYPE(iParam0), true) == joaat("NECKTIES"))
 									{
 										if ((PED::_0xFB4891BD7578CDC1(iParam0, -1455751347) || 1882579758 == func_960(&(Global_1951141->f_1657.f_1[iVar2 /*3*/]))) || func_891(&(Global_1951141->f_1657.f_1[iVar2 /*3*/]), 1872585553))
 										{

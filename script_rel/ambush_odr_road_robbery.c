@@ -1665,7 +1665,7 @@ void func_51()
 						TASK::TASK_MOUNT_ANIMAL(0, &(iLocal_15.f_40[iVar0]), 20000, -1, 2f, 1, 0, 0);
 						if (!func_69((iLocal_15.f_118[iVar0 /*4*/])->f_1))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 						}
 						TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 						func_203(&(iLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -1693,7 +1693,7 @@ void func_51()
 							TASK::OPEN_SEQUENCE_TASK(&iVar12);
 							if (!func_69((iLocal_15.f_118[iVar0 /*4*/])->f_1))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 							}
 							TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 							func_203(&(iLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -3915,7 +3915,7 @@ void func_153(int iParam0, bool bParam1, vector3 vParam2, float fParam5, float f
 				else
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam2, fParam5, 20000, fParam7, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam2, fParam5, 20000, fParam7, 0, 40000f);
 					if (bParam8)
 					{
 						TASK::TASK_SMART_FLEE_PED(0, iParam0[0], fParam6, 6000, 0, 2f, 0);
@@ -8657,7 +8657,7 @@ void func_315()
 	func_282(&iLocal_15, 0, 1);
 	PED::_0x8ACC0506743A8A5C(&(iLocal_15[0]), joaat("SCRIPT_CLASSICMOVEANDAIM"), 1, -1082130432);
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2f, 20000, 5.5f, true, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2f, 20000, 5.5f, 1, 40000f);
 	TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, vVar1, Global_35, 2f, 0, 1056964608, 1082130432, 1, 0, 0, joaat("FIRING_PATTERN_BURST_FIRE"), 20000, 0);
 	TASK::TASK_AIM_AT_ENTITY(0, Global_35, -1, 1, 1);
 	func_203(&(iLocal_15[0]), &iVar0, 0, 0, 1, 1);
@@ -8667,7 +8667,7 @@ void func_315()
 	func_281(&iLocal_15, 1, 1);
 	PED::_0x8ACC0506743A8A5C(&(iLocal_15[1]), joaat("SCRIPT_CLASSICMOVEANDAIM"), 1, -1082130432);
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2f, 20000, 5f, true, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2f, 20000, 5f, 1, 40000f);
 	TASK::TASK_GO_TO_COORD_WHILE_AIMING_AT_ENTITY(0, vVar1, Global_35, 2f, 0, 1056964608, 1082130432, 1, 0, 0, joaat("FIRING_PATTERN_BURST_FIRE"), 20000, 0);
 	TASK::TASK_AIM_AT_ENTITY(0, Global_35, -1, 1, 1);
 	func_203(&(iLocal_15[1]), &iVar0, 0, 0, 1, 1);
@@ -13068,13 +13068,13 @@ void func_476()
 			if (func_61(&(iLocal_15.f_40[iVar0]), 0, 0))
 			{
 				vVar20 = { ENTITY::GET_ENTITY_COORDS(&(iLocal_15.f_40[iVar0]), true, false) };
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar20, 2f, -1, 8f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar20, 2f, -1, 8f, 1, 40000f);
 				TASK::TASK_MOUNT_ANIMAL(0, &(iLocal_15.f_40[iVar0]), -1, -1, 2f, 1, 0, 0);
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar5, 2.001f, -1, 0.25f, true, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, 2f, -1, 6f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar5, 2.001f, -1, 0.25f, 1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, 2f, -1, 6f, 1, 40000f);
 			}
 			func_203(&(iLocal_15[iVar0]), &iVar1, fVar9, 0, 1, 1);
 		}
@@ -13103,7 +13103,7 @@ void func_476()
 			if (func_61(&(iLocal_15.f_40[iVar0]), 0, 0))
 			{
 				vVar20 = { ENTITY::GET_ENTITY_COORDS(&(iLocal_15.f_40[iVar0]), true, false) };
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar20, 2f, -1, 8f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar20, 2f, -1, 8f, 1, 40000f);
 				TASK::TASK_MOUNT_ANIMAL(0, &(iLocal_15.f_40[iVar0]), -1, -1, 2f, 1, 0, 0);
 			}
 			else

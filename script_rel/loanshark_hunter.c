@@ -7481,7 +7481,7 @@ int func_234(char[4] cParam0)
 		{
 			if (!func_430(&(uLocal_144[1]), 713668775) && !func_624(&(uLocal_144[1]), Global_35, 1.5f, 1))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_144[1]), -1769.918f, -177.0914f, 193.5797f, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_144[1]), -1769.918f, -177.0914f, 193.5797f, 1f, -1, 0.25f, 0, 40000f);
 			}
 		}
 		if (!bLocal_165)
@@ -7491,7 +7491,7 @@ int func_234(char[4] cParam0)
 			{
 				if (!func_430(Global_35, 713668775))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -1780.186f, -181.4939f, 193.874f, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -1780.186f, -181.4939f, 193.874f, 1f, 20000, 0.25f, 0, 40000f);
 				}
 			}
 			else
@@ -7546,12 +7546,12 @@ int func_234(char[4] cParam0)
 			{
 				if (PED::IS_PED_ON_FOOT(Global_35))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -1780.081f, -181.8477f, 193.8628f, 1f, 20000, 0.25f, false, 46.4253f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -1780.081f, -181.8477f, 193.8628f, 1f, 20000, 0.25f, 0, 46.4253f);
 					if (ENTITY::DOES_ENTITY_EXIST(&(uLocal_144[1])))
 					{
 						if (!func_430(&(uLocal_144[1]), 713668775))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_144[1]), -1769.918f, -177.0914f, 193.5797f, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_144[1]), -1769.918f, -177.0914f, 193.5797f, 1f, -1, 0.25f, 0, 40000f);
 						}
 					}
 					bLocal_167 = true;
@@ -23753,7 +23753,7 @@ int func_752(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -27665,7 +27665,7 @@ void func_883(char[4] cParam0)
 				if (!func_430(PED::_GET_LAST_MOUNT(Global_35), 713668775))
 				{
 					TASK::CLEAR_PED_TASKS(PED::_GET_LAST_MOUNT(Global_35), 1, 0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PED::_GET_LAST_MOUNT(Global_35), -2119.105f, 14.2106f, 261.703f, 1f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(PED::_GET_LAST_MOUNT(Global_35), -2119.105f, 14.2106f, 261.703f, 1f, 20000, 0.25f, 0, 40000f);
 				}
 			}
 			else if (PED::GET_PED_CONFIG_FLAG(PED::_GET_LAST_MOUNT(Global_35), 136, true))
@@ -53490,7 +53490,7 @@ void func_1868(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -54425,7 +54425,7 @@ int func_1911(int iParam0)
 void func_1912(int iParam0)
 {
 	func_2109(iParam0, 3);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_147[iParam0]), (Local_42[1 /*8*/])->f_1, 1f, 90000, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_147[iParam0]), (Local_42[1 /*8*/])->f_1, 1f, 90000, 0.25f, 0, 40000f);
 	func_664(7, iParam0);
 }
 
@@ -57614,7 +57614,7 @@ void func_2015(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2164(uParam0, iParam1) };
@@ -57635,10 +57635,10 @@ void func_2015(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_1154(uParam0->f_782[&uParam0->f_241[iParam1 /*18*/] /*41*/], 4) && !func_1154(uParam0->f_782[&uParam0->f_241[iParam1 /*18*/] /*41*/], 2))
 		{

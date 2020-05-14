@@ -1321,7 +1321,7 @@ int func_38(int iParam0)
 						TASK::TASK_STAND_STILL(Local_178.f_24, -1);
 						ENTITY::FREEZE_ENTITY_POSITION(Local_178.f_24, false);
 						TASK::CLEAR_PED_TASKS(Local_178.f_23, 1, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_178.f_23, 726.2964f, -818.0918f, 50.9144f, 1f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_178.f_23, 726.2964f, -818.0918f, 50.9144f, 1f, 20000, 0.25f, 0, 40000f);
 						func_53(&Local_178, 8);
 					}
 					break;
@@ -17640,7 +17640,7 @@ void func_644(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

@@ -9148,7 +9148,7 @@ bool func_253(int iParam0, char* sParam1)
 	return ENTITY::HAS_ANIM_EVENT_FIRED(iParam0, MISC::GET_HASH_KEY(sParam1));
 }
 
-void func_254(int iParam0, vector3 vParam1, float fParam4, float fParam5, float fParam6, bool bParam7, bool bParam8)
+void func_254(int iParam0, vector3 vParam1, float fParam4, float fParam5, float fParam6, int iParam7, bool bParam8)
 {
 	int iVar0;
 	vector3 vVar1;
@@ -9158,11 +9158,11 @@ void func_254(int iParam0, vector3 vParam1, float fParam4, float fParam5, float 
 		return;
 	}
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, fParam4, -1, 2f, bParam7, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, fParam4, -1, 2f, iParam7, 40000f);
 	vVar1 = { func_494(iParam0, iLocal_1406) };
 	if (!func_175(vVar1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, fParam4, -1, 2f, bParam7, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, fParam4, -1, 2f, iParam7, 40000f);
 	}
 	TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 3, 384, -1082130432, -1, 0);
 	func_495(&(uLocal_1282[iParam0]), &iVar0, fParam5, fParam6, 1, 1);
@@ -9974,7 +9974,7 @@ void func_300(int iParam0, int iParam1, float fParam2, vector3 vParam3, char* sP
 	{
 		TASK::TASK_REACT(0, Global_35, Global_36, sParam6, 1.5f, 0, 4);
 	}
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, fParam2, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, fParam2, -1, 0.25f, 0, 40000f);
 	func_495(iParam0, &iVar0, fParam7, fParam8, 1, 1);
 }
 
@@ -10334,7 +10334,7 @@ void func_318(int iParam0, int iParam1, char* sParam2, int iParam3, int iParam4,
 		{
 			func_109(iParam3);
 			func_132(&uParam6);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_1282[iParam0]), *vParam5, 2f, -1, 0.25f, true, vParam5->f_3.f_2);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_1282[iParam0]), *vParam5, 2f, -1, 0.25f, 1, vParam5->f_3.f_2);
 		}
 	}
 }

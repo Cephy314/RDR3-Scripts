@@ -1910,7 +1910,7 @@ int func_75(var uParam0)
 		}
 		TASK::CLEAR_PED_TASKS_IMMEDIATELY(Local_14.f_3, true, true);
 		TASK::OPEN_SEQUENCE_TASK(&iVar4);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 120000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 120000, 0.25f, 0, 40000f);
 		TASK::TASK_ACHIEVE_HEADING(0, vVar0.f_3, 0);
 		func_168(Local_14.f_3, &iVar4, 0, 0, 1, 1);
 		func_61(&(Local_14.f_193), 4194304);

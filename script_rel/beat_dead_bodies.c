@@ -18151,11 +18151,11 @@ struct<4> func_633()
 	return Var0;
 }
 
-void func_634(int iParam0, struct<4> Param1, float fParam5, int iParam6, float fParam7, bool bParam8)
+void func_634(int iParam0, struct<4> Param1, float fParam5, int iParam6, float fParam7, int iParam8)
 {
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0) || iParam0 == 0)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Param1, fParam5, iParam6, fParam7, bParam8, Param1.f_3);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, Param1, fParam5, iParam6, fParam7, iParam8, Param1.f_3);
 	}
 }
 
@@ -18416,7 +18416,7 @@ void func_644()
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
 		TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Global_35, 5000, -1082130432, -1082130432, -1082130432);
 		TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, false);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3682.434f, -2599.411f, -14.73238f, 1f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3682.434f, -2599.411f, -14.73238f, 1f, -1, 0.25f, 0, 40000f);
 		TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, -3682.434f, -2599.411f, -14.73238f, 7f, 0, false, true, false, false);
 		TASK::TASK_WANDER_IN_AREA(0, -3682.434f, -2599.411f, -14.73238f, 55f, 1077936128, 1086324736, 1);
 		func_44(&(iLocal_263[0]), &iVar0, 0, 0, 1, 1);

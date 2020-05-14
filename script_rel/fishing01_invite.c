@@ -1880,7 +1880,7 @@ int func_32(var uParam0)
 				if (!func_157(uParam0->f_2, 242628503))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar4);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_21, 1f, -1, 0.25f, false, uParam0->f_24);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_21, 1f, -1, 0.25f, 0, uParam0->f_24);
 					func_158(0, joaat("WORLD_ANIMAL_HORSE_GRAZING"), -1, 1, 0, -1082130432 /* Float: -1f */);
 					func_159(uParam0->f_2, &iVar4, 0, 0, 1, 1);
 				}
@@ -8070,7 +8070,7 @@ int func_303(int iParam0, int iParam1, float fParam2)
 		case 1:
 			if (PED::_0xA0BC8FAED8CFEB3C(&(iParam0->f_2[iParam1])))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_2[iParam1]), func_475(iParam1, iParam0->f_1), 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iParam0->f_2[iParam1]), func_475(iParam1, iParam0->f_1), 1f, 20000, 0.25f, 0, 40000f);
 				func_474(iParam0->f_5[iParam1], 2);
 			}
 			break;
@@ -24922,7 +24922,7 @@ void func_854(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

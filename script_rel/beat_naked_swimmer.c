@@ -1565,7 +1565,7 @@ int func_30()
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_652);
 					if (func_147(781.5085f, -1357.322f, 40.5f, 816.5012f, -1357.715f, 42.43404f, vVar8))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_620, 1f, -1, 1f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_620, 1f, -1, 1f, 0, 40000f);
 					}
 					else
 					{
@@ -4910,7 +4910,7 @@ void func_126()
 		vVar1 = { func_318(&(uLocal_648[0]), 1065353216 /* Float: 1f */) };
 		TASK::CLEAR_SEQUENCE_TASK(&iLocal_652);
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_652);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, -1, 0.5f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, -1, 0.5f, 1, 40000f);
 		TASK::TASK_STAND_STILL(0, 500);
 		TASK::TASK_PLAY_ANIM(0, &(Local_484[27 /*2*/]), (Local_484[27 /*2*/])->f_1, 2f, -4f, -1, 0, 0f, false, 0, false, 0, false);
 		TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Global_35, -1, -1082130432, -1082130432, -1082130432);

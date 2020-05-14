@@ -2457,7 +2457,7 @@ int func_102(int iParam0, int iParam1)
 {
 	int iVar0;
 	vector3 vVar1;
-	bool bVar4;
+	int iVar4;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -2481,8 +2481,8 @@ int func_102(int iParam0, int iParam1)
 	{
 		return 0;
 	}
-	bVar4 = 5242884;
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vVar1, 2f, -1, 10f, bVar4, 40000f);
+	iVar4 = 5242884;
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vVar1, 2f, -1, 10f, iVar4, 40000f);
 	return 1;
 }
 
@@ -2506,7 +2506,7 @@ int func_104(vector3 vParam0)
 
 int func_105(int iParam0, vector3 vParam1, float fParam4)
 {
-	bool bVar0;
+	int iVar0;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -2516,8 +2516,8 @@ int func_105(int iParam0, vector3 vParam1, float fParam4)
 	{
 		return 0;
 	}
-	bVar0 = 5242884;
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vParam1, 2f, -1, fParam4, bVar0, 40000f);
+	iVar0 = 5242884;
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vParam1, 2f, -1, fParam4, iVar0, 40000f);
 	return 1;
 }
 

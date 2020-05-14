@@ -5796,7 +5796,7 @@ int func_218(bool bParam0, int iParam1, char* sParam2, char* sParam3, float fPar
 				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 1, false, false);
 				TASK::TASK_SWAP_WEAPON(Global_35, 0, 1, 0, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iVar4);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, iParam5, fParam4, false, fVar3);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, iParam5, fParam4, 0, fVar3);
 				TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, bParam0, 0, -1082130432, -1082130432, -1082130432);
 				TASK::TASK_ENTER_ANIM_SCENE(false, iParam1, sParam2, sParam3, 1069379748, false, 0, 20000, -1082130432);
 				TASK::CLOSE_SEQUENCE_TASK(iVar4);
@@ -18496,7 +18496,7 @@ int func_635(bool bParam0, bool bParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

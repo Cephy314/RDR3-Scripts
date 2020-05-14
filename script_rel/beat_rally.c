@@ -4066,7 +4066,7 @@ void func_134(var uParam0, int iParam1, int iParam2, int iParam3)
 				}
 				if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_984))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_137(), 1f, -1, 3f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_137(), 1f, -1, 3f, 0, 40000f);
 					TASK::_TASK_USE_SCENARIO_POINT(0, iLocal_984, 0, -1, true, false, 0, false, -1f, false);
 				}
 				else
@@ -10909,7 +10909,7 @@ void func_315(int iParam0)
 			{
 				if (TASK::GET_SCRIPT_TASK_STATUS(&(uLocal_823[1]), 713668775, true) != 1)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_823[1]), func_137(), 1f, -1, 3f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_823[1]), func_137(), 1f, -1, 3f, 0, 40000f);
 				}
 			}
 			else if (TASK::GET_SCRIPT_TASK_STATUS(&(uLocal_823[1]), -76381094, true) != 1)

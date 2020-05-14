@@ -2757,13 +2757,13 @@ int func_102()
 					vVar6 = { func_250(&Local_14, Local_14.f_552) };
 					func_248(&Local_14, Local_14.f_552, Global_35, 2, 1, 10f, 0);
 					TASK::OPEN_SEQUENCE_TASK(&iVar4);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 1f, -1, 0.25f, 0, 40000f);
 					func_249(0, Global_35, -1);
 					func_30(&(Local_14.f_348[Local_14.f_552]), &iVar4, 0f, 0, 1, 1);
 					vVar6 = { func_250(&Local_14, Local_14.f_553) };
 					func_248(&Local_14, Local_14.f_553, Global_35, 2, 1, 10f, 0);
 					TASK::OPEN_SEQUENCE_TASK(&iVar4);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 1f, -1, 0.25f, 0, 40000f);
 					func_249(0, Global_35, -1);
 					func_30(&(Local_14.f_348[Local_14.f_553]), &iVar4, 0.75f, 0, 1, 1);
 					func_229(&Local_14, 32);

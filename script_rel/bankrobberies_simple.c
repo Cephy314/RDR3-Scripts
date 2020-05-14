@@ -654,7 +654,7 @@ int func_20()
 					vVar1 = { func_67(&Local_3) };
 					fVar4 = func_68(&Local_3);
 					func_70(0, &Local_3, Local_3.f_106, Global_35, func_69(&Local_3), 0, 1116471296 /* Float: 70f */, 0, 0, 0, 1);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_3.f_106, vVar1, 2f, 20000, 0.25f, false, fVar4);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_3.f_106, vVar1, 2f, 20000, 0.25f, 0, fVar4);
 					func_56(&Local_3, 30f, 30f);
 					func_62(&(Local_3.f_100), 2);
 				}
@@ -672,7 +672,7 @@ int func_20()
 				}
 				else if (!func_71(Local_3.f_106, 713668775))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_3.f_106, vVar1, 2f, 20000, 0.25f, false, fVar4);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_3.f_106, vVar1, 2f, 20000, 0.25f, 0, fVar4);
 				}
 			}
 			break;

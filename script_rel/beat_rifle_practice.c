@@ -3582,7 +3582,7 @@ int func_119(var uParam0, int iParam1)
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	bool bVar8;
+	int iVar8;
 	int iVar9;
 	int iVar10;
 	int iVar11;
@@ -3735,10 +3735,10 @@ int func_119(var uParam0, int iParam1)
 					if (!func_178(uParam0->f_11))
 					{
 					}
-					bVar8 = false;
+					iVar8 = 0;
 					if (!func_2(uParam0->f_23, 1024))
 					{
-						bVar8 = (bVar8 || 1);
+						iVar8 |= 1;
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iVar9);
 					if (!func_178(uParam0->f_11))
@@ -3749,7 +3749,7 @@ int func_119(var uParam0, int iParam1)
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_11, uParam0->f_21, func_301(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, bVar8, uParam0->f_19);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_11, uParam0->f_21, func_301(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, iVar8, uParam0->f_19);
 						}
 					}
 					if (func_2(uParam0->f_23, 16))
@@ -3758,7 +3758,7 @@ int func_119(var uParam0, int iParam1)
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_8, uParam0->f_21, func_301(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, bVar8, uParam0->f_19);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_8, uParam0->f_21, func_301(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, iVar8, uParam0->f_19);
 					}
 					if (func_2(uParam0->f_23, 1))
 					{
@@ -9851,11 +9851,11 @@ void func_286(int iParam0)
 	vVar3 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(uLocal_470[0]), 2f, 0f, 0f) };
 	if (func_32(&(uLocal_470[1]), vVar0, 1) > func_32(&(uLocal_470[1]), vVar3, 1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vVar0, 1f, 20000, 0.25f, false, func_476(&(uLocal_470[2]), Global_35, 1));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vVar0, 1f, 20000, 0.25f, 0, func_476(&(uLocal_470[2]), Global_35, 1));
 	}
 	else
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vVar3, 1f, 20000, 0.25f, false, func_476(&(uLocal_470[2]), Global_35, 1));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iParam0, vVar3, 1f, 20000, 0.25f, 0, func_476(&(uLocal_470[2]), Global_35, 1));
 	}
 }
 

@@ -4040,7 +4040,7 @@ void func_109()
 						vVar1 = { func_589(Global_43893.f_12, iVar0) };
 						if (!func_276(vVar1))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar1, &(Global_43893.f_6[Global_43893.f_12]), 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar1, &(Global_43893.f_6[Global_43893.f_12]), 20000, 0.25f, 0, 40000f);
 						}
 					}
 				}
@@ -4055,7 +4055,7 @@ void func_109()
 						vVar4 = { func_589(Global_43893.f_12, iVar0) };
 						if (!func_276(vVar4))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar4, &(Global_43893.f_6[Global_43893.f_12]), 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar4, &(Global_43893.f_6[Global_43893.f_12]), 20000, 0.25f, 0, 40000f);
 						}
 					}
 				}
@@ -45641,7 +45641,7 @@ int func_1407(float fParam0)
 	if (func_2678(Global_1357549->f_1497.f_3, &uVar0))
 	{
 		Global_1357549->f_1497.f_31 = uVar0;
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_1357549->f_1497.f_3, *(Global_1357549->f_1497.f_32[Global_1357549->f_1497.f_31 /*5*/]), fParam0, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_1357549->f_1497.f_3, *(Global_1357549->f_1497.f_32[Global_1357549->f_1497.f_31 /*5*/]), fParam0, -1, 0.25f, 0, 40000f);
 		return 1;
 	}
 	if (Global_1357549->f_1497.f_6 != 8)
@@ -51777,7 +51777,7 @@ void func_1675(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bPara
 		}
 		else if (bParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -98544,7 +98544,7 @@ int func_3216(bool bParam0, bool bParam1, var uParam2)
 	switch (bVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

@@ -3615,14 +3615,14 @@ int func_112()
 		if (!func_105(4, 0))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&((Local_339[1 /*166*/])->f_140));
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(1), 1.75f, 20000, 0.25f, false, func_292(1));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(1), 1.75f, 20000, 0.25f, 0, func_292(1));
 			func_129(&(iLocal_1009[1]), &((Local_339[1 /*166*/])->f_140), 0, 0, 1, 1);
 			func_60(4, 1);
 		}
 		else
 		{
 			TASK::OPEN_SEQUENCE_TASK(&((Local_339[0 /*166*/])->f_140));
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(0), 1.75f, 20000, 0.25f, false, func_292(0));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(0), 1.75f, 20000, 0.25f, 0, func_292(0));
 			func_129(&(iLocal_1009[0]), &((Local_339[0 /*166*/])->f_140), 0.75f, 0.75f, 1, 1);
 			return 1;
 		}
@@ -3630,14 +3630,14 @@ int func_112()
 	else if (!func_105(4, 0))
 	{
 		TASK::OPEN_SEQUENCE_TASK(&((Local_339[0 /*166*/])->f_140));
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(0), 1.75f, 20000, 0.25f, false, func_292(0));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(0), 1.75f, 20000, 0.25f, 0, func_292(0));
 		func_129(&(iLocal_1009[0]), &((Local_339[0 /*166*/])->f_140), 0, 0, 1, 1);
 		func_60(4, 1);
 	}
 	else
 	{
 		TASK::OPEN_SEQUENCE_TASK(&((Local_339[1 /*166*/])->f_140));
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(1), 1.75f, 20000, 0.25f, false, func_292(1));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_113(1), 1.75f, 20000, 0.25f, 0, func_292(1));
 		func_129(&(iLocal_1009[1]), &((Local_339[1 /*166*/])->f_140), 0.75f, 0.75f, 1, 1);
 		return 1;
 	}

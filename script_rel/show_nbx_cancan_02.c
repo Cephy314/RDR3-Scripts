@@ -12656,7 +12656,7 @@ void func_294(var uParam0, int* iParam1)
 						if (ANIMSCENE::_0x1F0E401031E20146(Global_1394141->f_1335, "Pl_BreathFail") && ANIMSCENE::_0x005E6F28DD7ED58D(Global_1394141->f_1335, "male"))
 						{
 							PED::FORCE_PED_MOTION_STATE(*iParam1, joaat("MOTIONSTATE_WALK"), false, 0, false);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam1, 2504.978f, -1245.074f, 48.2112f, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*iParam1, 2504.978f, -1245.074f, 48.2112f, 1f, -1, 0.25f, 0, 40000f);
 							func_283(&(uParam0->f_11), 2);
 						}
 						break;

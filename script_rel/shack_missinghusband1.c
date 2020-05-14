@@ -3814,7 +3814,7 @@ void func_132(var uParam0, var uParam1, bool bParam2, bool bParam3)
 	{
 		if (!bParam3)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(&(uParam0->f_13[4]), true, false), fVar1, 20000, 3f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(&(uParam0->f_13[4]), true, false), fVar1, 20000, 3f, 1, 40000f);
 			TASK::TASK_MOUNT_ANIMAL(false, &(uParam0->f_13[4]), 20000, -1, fVar1, 1, 0, 0);
 			TASK::_TASK_MOVE_IN_TRAFFIC_3(false, Global_35, 1.5f, 0, 0);
 		}

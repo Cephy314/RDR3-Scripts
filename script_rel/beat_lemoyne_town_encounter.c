@@ -7027,7 +7027,7 @@ void func_250()
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
 		if (!func_68(vVar1))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, 0, 40000f);
 		}
 		func_428(0, Global_35, 0);
 		func_210(0, Global_35, -1);
@@ -7065,7 +7065,7 @@ void func_250()
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			if (!func_68(vVar1))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, 0, 40000f);
 			}
 			func_428(0, Global_35, 0);
 			func_210(0, Global_35, -1);

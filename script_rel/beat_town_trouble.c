@@ -13724,7 +13724,7 @@ int func_440(int iParam0)
 			if ((!func_253(&(Local_14.f_239[iParam0]), 713668775) && !func_253(&(Local_14.f_239[iParam0]), 242628503)) && !func_84(&Local_14, 8))
 			{
 				TASK::CLEAR_PED_TASKS_IMMEDIATELY(&(Local_14.f_239[iParam0]), false, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 3f, true, &(uVar7[1]));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 3f, 1, &(uVar7[1]));
 				return 0;
 			}
 		}
@@ -13798,7 +13798,7 @@ int func_440(int iParam0)
 			{
 				if (func_84(&Local_14, 16))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, 1, 40000f);
 					func_174(&Local_14, iParam0, 2);
 				}
 			}
@@ -13818,7 +13818,7 @@ int func_440(int iParam0)
 			}
 			if (func_320(&(Local_14.f_239[iParam0]), *(vVar0[0 /*3*/]), 0) < 5f && func_171(&Local_14, iParam0, 2))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, 1, 40000f);
 				switch (Local_14.f_7)
 				{
 					case 0:
@@ -13844,7 +13844,7 @@ int func_440(int iParam0)
 		case 4:
 			if (func_320(&(Local_14.f_239[iParam0]), *(vVar0[0 /*3*/]), 0) < 5f)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, 1, 40000f);
 				switch (Local_14.f_7)
 				{
 					case 0:
@@ -13925,7 +13925,7 @@ int func_440(int iParam0)
 						}
 						break;
 				}
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, true, &(uVar7[1]));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_239[iParam0]), *(vVar0[1 /*3*/]), 2.001f, -1, 4f, 1, &(uVar7[1]));
 				func_540(&Local_14, 6, iParam0);
 			}
 			break;

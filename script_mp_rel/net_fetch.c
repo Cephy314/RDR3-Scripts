@@ -48091,7 +48091,7 @@ void func_1723(int iParam0)
 			WEAPON::SET_CURRENT_PED_WEAPON(Global_34, joaat("WEAPON_UNARMED"), false, 1, false, false);
 			TASK::OPEN_SEQUENCE_TASK(&iVar2);
 			TASK::TASK_SWAP_WEAPON(0, 1, 0, 0, 0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iVar0, false, false), 1f, 20000, 0.4f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iVar0, false, false), 1f, 20000, 0.4f, 0, 40000f);
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, iVar0, 0, 3f, 0.25f, -1082130432);
 			TASK::TASK_PLAY_ANIM(0, func_2821(13), "enter_lf", 4f, -2f, -1, 24, 0f, false, 0, false, 0, false);
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
@@ -100747,7 +100747,7 @@ void func_3798(bool bParam0, bool bParam1, bool bParam2, bool bParam3, float fPa
 				fVar18 = 2f;
 			}
 			TASK::OPEN_SEQUENCE_TASK(&iVar19);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, fVar18, -1, 0.25f, false, fVar5);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, fVar18, -1, 0.25f, 0, fVar5);
 			TASK::TASK_START_SCENARIO_AT_POSITION(0, iVar1, vVar2, fVar5, -1, true, false, &Var8, -1f, false);
 			func_4489(iVar0, &iVar19, 0, 0, 1, 1);
 		}
@@ -102750,13 +102750,13 @@ void func_3870(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 			Local_3972.f_1607[iParam0 /*60*/] = HUD::CREATE_FAKE_MP_GAMER_TAG(ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iParam1), sParam5, false, false, "", 0);
 			break;
 		default:
-			Local_3972.f_1607[iParam0 /*60*/] = HUD::_CREATE_ENTITY_MP_GAMER_TAG(iParam1, sParam5);
+			Local_3972.f_1607[iParam0 /*60*/] = HUD::_CREATE_MP_GAMER_TAG_ON_ENTITY(iParam1, sParam5);
 			HUD::_SET_MP_GAMER_TAG_TYPE(&(Local_3972.f_1607[iParam0 /*60*/]), 342524734);
 			break;
 	}
 	HUD::_SET_MP_GAMER_TAG_COLOUR(&(Local_3972.f_1607[iParam0 /*60*/]), iParam3);
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(&(Local_3972.f_1607[iParam0 /*60*/]), iParam4);
-	HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(&(Local_3972.f_1607[iParam0 /*60*/]), iParam2);
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON(&(Local_3972.f_1607[iParam0 /*60*/]), iParam4);
+	HUD::_SET_MP_GAMER_TAG_VISIBILITY(&(Local_3972.f_1607[iParam0 /*60*/]), iParam2);
 }
 
 int func_3871(int iParam0, bool bParam1)
@@ -127990,7 +127990,7 @@ void func_4413(bool bParam0, bool bParam1)
 	}
 	else if (func_4479(bParam0, 713668775))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, (Local_356.f_1[bParam0 /*21*/])->f_18, 1f, -1, 2f, false, (Local_356.f_1[bParam0 /*21*/])->f_17);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, (Local_356.f_1[bParam0 /*21*/])->f_18, 1f, -1, 2f, 0, (Local_356.f_1[bParam0 /*21*/])->f_17);
 	}
 	if (bParam1)
 	{
@@ -131564,7 +131564,7 @@ int func_4532(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (HUD::_IS_MP_GAMER_TAG_SET_TO_ENTITY(*uParam0, iParam1))
+	if (HUD::_IS_MP_GAMER_TAG_ACTIVE_ON_ENTITY(*uParam0, iParam1))
 	{
 		return 0;
 	}
@@ -143021,7 +143021,7 @@ void func_4941(bool bParam0)
 				if (func_4479(bParam0, 713668775))
 				{
 					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar0, true);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar2, 2f, -1, 1f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar2, 2f, -1, 1f, 0, 40000f);
 				}
 			}
 		}
@@ -144368,7 +144368,7 @@ void func_4978(bool bParam0)
 					fVar8 = func_3397(vVar5, ENTITY::GET_ENTITY_COORDS(iVar4, true, false), 1);
 					TASK::TASK_CLEAR_LOOK_AT(iVar0);
 					TASK::OPEN_SEQUENCE_TASK(&iVar9);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar5, 1f, -1, 0.25f, false, fVar8);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar5, 1f, -1, 0.25f, 0, fVar8);
 					TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_CLIPBOARD"), -1, true, 0, -1f, false);
 					TASK::CLOSE_SEQUENCE_TASK(iVar9);
 					TASK::TASK_PERFORM_SEQUENCE(iVar0, iVar9);

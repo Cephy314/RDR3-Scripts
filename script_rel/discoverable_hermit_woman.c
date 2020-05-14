@@ -6943,7 +6943,7 @@ void func_158(var uParam0, int iParam1, int iParam2, float fParam3)
 	int iVar0;
 
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_67(iParam2), fParam3, 20000, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_67(iParam2), fParam3, 20000, 0.25f, 0, 40000f);
 	TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, 100, -1082130432, -1082130432, -1082130432);
 	func_258(0, MISC::GET_HASH_KEY(func_159(iParam1)), 0, 1, 0, -1082130432 /* Float: -1f */);
 	func_259(*uParam0, &iVar0, 0, 0, 1, 1);

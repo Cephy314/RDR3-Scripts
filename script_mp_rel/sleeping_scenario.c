@@ -9686,7 +9686,7 @@ void func_378(var uParam0, bool bParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
+					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
 					{
 						if ((bParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_117(bVar3, 1872585553)) || iVar4 == 1882579758)
 						{

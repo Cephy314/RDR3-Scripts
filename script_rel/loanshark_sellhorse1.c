@@ -12053,7 +12053,7 @@ int func_360(char[4] cParam0)
 					}
 					else if (func_794(&(uLocal_16[0]), 1))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -611.4f, -29.5f, 86f, (1f * 1.5f), -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -611.4f, -29.5f, 86f, (1f * 1.5f), -1, 0.25f, 0, 40000f);
 						func_605(uLocal_16[0], 1, 1);
 						func_334(&(cParam0->f_2106), "LSHSS_IG3_MOVE", 0);
 						bLocal_206 = true;
@@ -12093,7 +12093,7 @@ int func_360(char[4] cParam0)
 				PED::_0x949B2F9ED2917F5D(Global_35, 1);
 				PED::_0x949B2F9ED2917F5D(Global_35, 2);
 				PED::SET_PED_CONFIG_FLAG(&(Local_90[0 /*34*/]), 456, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_90[0 /*34*/]), -614.8f, -29.5f, 85.3f, 1f, -1, 0.25f, false, -88.8f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_90[0 /*34*/]), -614.8f, -29.5f, 85.3f, 1f, -1, 0.25f, 0, -88.8f);
 				bLocal_206 = true;
 				return 1;
 			}
@@ -12116,7 +12116,7 @@ int func_360(char[4] cParam0)
 			if (!func_611() || AUDIO::GET_CURRENT_SCRIPTED_CONVERSATION_LINE("LSHSS_REVEAL") >= 1)
 			{
 				TASK::_SET_SCENARIO_POINT_ACTIVE((Local_19[4 /*10*/])->f_9, true);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_90[0 /*34*/]), -614.8f, -29.5f, 85.3f, 1f, -1, 0.25f, false, -88.8f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_90[0 /*34*/]), -614.8f, -29.5f, 85.3f, 1f, -1, 0.25f, 0, -88.8f);
 				TASK::_SET_SCENARIO_POINT_ACTIVE(iLocal_325, true);
 				PED::_0x949B2F9ED2917F5D(Global_35, 0);
 				PED::_0x949B2F9ED2917F5D(Global_35, 1);
@@ -22199,7 +22199,7 @@ int func_676(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -24880,7 +24880,7 @@ int func_751(char[4] cParam0)
 				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
 				TASK::TASK_SWAP_WEAPON(false, 0, 0, 0, 0);
 			}
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, cParam0->f_32.f_5, 1f, 7500, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, cParam0->f_32.f_5, 1f, 7500, 0.25f, 0, 40000f);
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
 			TASK::TASK_PERFORM_SEQUENCE(Global_35, iVar2);
 		}
@@ -47466,7 +47466,7 @@ void func_1562(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -50262,7 +50262,7 @@ void func_1662(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_1762(uParam0, iParam1) };
@@ -50283,10 +50283,10 @@ void func_1662(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_1021(uParam0->f_782[&uParam0->f_241[iParam1 /*18*/] /*41*/], 4) && !func_1021(uParam0->f_782[&uParam0->f_241[iParam1 /*18*/] /*41*/], 2))
 		{

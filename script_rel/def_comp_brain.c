@@ -1563,7 +1563,7 @@ void func_46(var uParam0, bool bParam1)
 					{
 						if (((!func_157(bVar0, 713668775) && !TASK::GET_IS_TASK_ACTIVE(bVar0, 7)) && !func_157(bVar0, 258748395)) && !func_157(bVar0, 1041577989))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bVar0, vVar2, 2.5f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bVar0, vVar2, 2.5f, -1, 0.25f, 0, 40000f);
 						}
 					}
 				}
@@ -1787,14 +1787,14 @@ void func_49(var uParam0, bool bParam1)
 			if (!func_169(uParam0, 713668775))
 			{
 				vVar9 = { func_172(*uParam0) };
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar9, 1f, -1, 3f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar9, 1f, -1, 3f, 0, 40000f);
 			}
 			break;
 		case 7:
 			if (!func_169(uParam0, 713668775))
 			{
 				vVar12 = { func_172(*uParam0) };
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar12, 2f, -1, 3f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar12, 2f, -1, 3f, 0, 40000f);
 			}
 			break;
 		case 17:
@@ -1855,7 +1855,7 @@ void func_49(var uParam0, bool bParam1)
 				}
 				else
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD_ADVANCED(uParam0->f_5, vVar2, fVar15, -1, (0.25f * 2f), 5242885, Var16, 1193033728);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD_ADVANCED(uParam0->f_5, vVar2, fVar15, -1, (0.25f * 2f), 5242885, Var16, 40000f);
 				}
 			}
 			break;
@@ -2041,7 +2041,7 @@ void func_49(var uParam0, bool bParam1)
 			{
 				if (!func_169(uParam0, 713668775))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, uParam0->f_8, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, uParam0->f_8, 1f, -1, 0.25f, 0, 40000f);
 				}
 			}
 			else if (!func_169(uParam0, 501393341))
@@ -2090,7 +2090,7 @@ void func_49(var uParam0, bool bParam1)
 					{
 						if (!func_169(uParam0, 713668775))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar29, func_190(uParam0->f_107), -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar29, func_190(uParam0->f_107), -1, 0.25f, 0, 40000f);
 						}
 					}
 					else
@@ -2106,7 +2106,7 @@ void func_49(var uParam0, bool bParam1)
 			{
 				if (!func_169(uParam0, 713668775))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar32, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_5, vVar32, 1f, -1, 0.25f, 0, 40000f);
 				}
 			}
 			else if (!func_169(uParam0, 1464580341))

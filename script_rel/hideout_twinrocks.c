@@ -9085,19 +9085,19 @@ void func_326()
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_1114);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_1114);
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(0, false, true);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3958.514f, -2138.044f, -5.9996f, 3f, -1, 0.25f, false, 3.3855f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3958.514f, -2138.044f, -5.9996f, 3f, -1, 0.25f, 0, 3.3855f);
 			TASK::TASK_AIM_AT_COORD(0, -3957.94f, -2129.794f, -4.0829f, -1, 1, 0);
 			func_297((Local_849[&iLocal_976[0] /*9*/])->f_5, &iLocal_1114, 0.1f, 0.4f, 1, 1);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_1114);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_1114);
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(0, false, true);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3960.9f, -2138.789f, -6.1669f, 3f, -1, 0.25f, false, 341.0457f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3960.9f, -2138.789f, -6.1669f, 3f, -1, 0.25f, 0, 341.0457f);
 			TASK::TASK_AIM_AT_COORD(0, -3957.94f, -2129.794f, -4.0829f, -1, 1, 0);
 			func_297((Local_849[&iLocal_976[1] /*9*/])->f_5, &iLocal_1114, 0.1f, 0.4f, 1, 1);
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_1114);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_1114);
 			TASK::CLEAR_PED_TASKS_IMMEDIATELY(0, false, true);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3962.908f, -2137.941f, -6.1791f, 3f, -1, 0.25f, false, 328.4208f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3962.908f, -2137.941f, -6.1791f, 3f, -1, 0.25f, 0, 328.4208f);
 			TASK::TASK_AIM_AT_COORD(0, -3957.94f, -2129.794f, -4.0829f, -1, 1, 0);
 			func_297((Local_849[&iLocal_976[2] /*9*/])->f_5, &iLocal_1114, 0.1f, 0.4f, 1, 1);
 			BUILTIN::SETTIMERA(0);
@@ -32210,7 +32210,7 @@ void func_988(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -34892,7 +34892,7 @@ int func_1072(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

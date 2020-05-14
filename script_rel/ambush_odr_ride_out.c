@@ -929,11 +929,11 @@ int func_20()
 			case 0:
 				Local_274.f_57 = PED::GET_PED_ACCURACY(&(iLocal_15[iVar0]));
 				func_129(&(iLocal_15[iVar0]), joaat("GROUP_REVOLVER"), -1, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 1);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_15[0]), func_130(&Local_274, 0), 1.5f, 20000, 0.25f, false, func_131(&Local_274, 0));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_15[0]), func_130(&Local_274, 0), 1.5f, 20000, 0.25f, 0, func_131(&Local_274, 0));
 				break;
 			case 1:
 				func_129(&(iLocal_15[iVar0]), joaat("GROUP_REPEATER"), -1, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 1);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_15[1]), func_130(&Local_274, 1), 1.5f, 20000, 0.25f, false, func_131(&Local_274, 1));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_15[1]), func_130(&Local_274, 1), 1.5f, 20000, 0.25f, 0, func_131(&Local_274, 1));
 				break;
 			case 2:
 			case 4:
@@ -1688,7 +1688,7 @@ void func_51()
 						TASK::TASK_MOUNT_ANIMAL(0, &(iLocal_15.f_40[iVar0]), 20000, -1, 2f, 1, 0, 0);
 						if (!func_69((iLocal_15.f_118[iVar0 /*4*/])->f_1))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 						}
 						TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 						func_200(&(iLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -1716,7 +1716,7 @@ void func_51()
 							TASK::OPEN_SEQUENCE_TASK(&iVar12);
 							if (!func_69((iLocal_15.f_118[iVar0 /*4*/])->f_1))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 							}
 							TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 							func_200(&(iLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);

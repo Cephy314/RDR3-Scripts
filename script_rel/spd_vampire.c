@@ -9988,7 +9988,7 @@ int func_400(bool bParam0, vector3 vParam1, float fParam4, int iParam5, bool bPa
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, iParam8, false);
 			}
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, iParam5, fParam4, false, (ENTITY::GET_ENTITY_HEADING(bParam0) - 180f));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, iParam5, fParam4, 0, (ENTITY::GET_ENTITY_HEADING(bParam0) - 180f));
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, bParam0, 0, -1082130432, -1082130432, -1082130432);
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);
 			TASK::TASK_PERFORM_SEQUENCE(Global_35, iVar0);

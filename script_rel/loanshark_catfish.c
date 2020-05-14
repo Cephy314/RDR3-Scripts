@@ -2645,12 +2645,12 @@ void func_81(bool bParam0)
 		(Local_90[1 /*16*/])->f_2 = { 1315.805f, -2280.093f, 49.49288f };
 		if (func_142(16777216) || bParam0)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_19[1 /*35*/]), (Local_90[1 /*16*/])->f_2, 2f, 20000, 1f, true, (Local_90[1 /*16*/])->f_2.f_3.f_2);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_19[1 /*35*/]), (Local_90[1 /*16*/])->f_2, 2f, 20000, 1f, 1, (Local_90[1 /*16*/])->f_2.f_3.f_2);
 		}
 		else
 		{
 			PED::FORCE_PED_MOTION_STATE(&(Local_19[1 /*35*/]), joaat("MOTIONSTATE_RUN"), false, 0, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_19[1 /*35*/]), (Local_90[1 /*16*/])->f_2, 2f, 20000, 1f, true, (Local_90[1 /*16*/])->f_2.f_3.f_2);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_19[1 /*35*/]), (Local_90[1 /*16*/])->f_2, 2f, 20000, 1f, 1, (Local_90[1 /*16*/])->f_2.f_3.f_2);
 		}
 		func_251(&((Local_19[1 /*35*/])->f_6), &((Local_19[1 /*35*/])->f_34));
 		func_232(3);
@@ -21531,7 +21531,7 @@ int func_702(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -23984,7 +23984,7 @@ int func_768(var uParam0)
 				WEAPON::SET_CURRENT_PED_WEAPON(Global_35, joaat("WEAPON_UNARMED"), false, 0, false, false);
 				TASK::TASK_SWAP_WEAPON(false, 0, 0, 0, 0);
 			}
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_32.f_5, 1f, 7500, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_32.f_5, 1f, 7500, 0.25f, 0, 40000f);
 			TASK::CLOSE_SEQUENCE_TASK(iVar2);
 			TASK::TASK_PERFORM_SEQUENCE(Global_35, iVar2);
 		}
@@ -25283,7 +25283,7 @@ void func_810(var uParam0)
 	}
 	else if (!func_541(&(Local_19[1 /*35*/]), 713668775))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_19[1 /*35*/]), (Local_90[1 /*16*/])->f_2, 2f, 20000, 1f, true, (Local_90[1 /*16*/])->f_2.f_3.f_2);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_19[1 /*35*/]), (Local_90[1 /*16*/])->f_2, 2f, 20000, 1f, 1, (Local_90[1 /*16*/])->f_2.f_3.f_2);
 	}
 }
 
@@ -38494,9 +38494,9 @@ void func_1295()
 	TASK::OPEN_SEQUENCE_TASK(&iVar5);
 	if (!bLocal_475 && !bVar4)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1321.041f, -2281.63f, 49.5381f, 1f, -1, 0.25f, true, 265.3476f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1321.041f, -2281.63f, 49.5381f, 1f, -1, 0.25f, 1, 265.3476f);
 	}
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, -1, 0.25f, true, fVar3);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, -1, 0.25f, 1, fVar3);
 	TASK::TASK_ACHIEVE_HEADING(0, fVar3, 0);
 	TASK::CLOSE_SEQUENCE_TASK(iVar5);
 	TASK::TASK_PERFORM_SEQUENCE(&(Local_19[0 /*35*/]), iVar5);
@@ -38997,7 +38997,7 @@ int func_1322()
 	if (!func_541(Global_35, 242628503))
 	{
 		TASK::OPEN_SEQUENCE_TASK(&iVar6);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, false, fVar3);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, 0, fVar3);
 		TASK::TASK_ACHIEVE_HEADING(0, fVar3, -1);
 		TASK::TASK_PAUSE(0, 500);
 		TASK::CLOSE_SEQUENCE_TASK(iVar6);
@@ -47418,7 +47418,7 @@ void func_1628(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -50769,7 +50769,7 @@ void func_1748(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_1870(uParam0, iParam1) };
@@ -50790,10 +50790,10 @@ void func_1748(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_1046(uParam0->f_782[&uParam0->f_241[iParam1 /*18*/] /*41*/], 4) && !func_1046(uParam0->f_782[&uParam0->f_241[iParam1 /*18*/] /*41*/], 2))
 		{

@@ -257,7 +257,7 @@ void __EntryFunction__()
 						if (!func_17(Local_14.f_155, 512))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar0);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2729.398f, 704.7125f, 173.0246f, 2f, 20000, 0.25f, false, -136.81f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2729.398f, 704.7125f, 173.0246f, 2f, 20000, 0.25f, 0, -136.81f);
 							func_36(Local_14.f_146, &iVar0, 0, 0, 1, 1);
 							func_18(&(Local_14.f_155), 512);
 						}

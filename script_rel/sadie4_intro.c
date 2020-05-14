@@ -2565,7 +2565,7 @@ int func_106(int iParam0)
 	}
 	else if (!func_5(iParam0, 2097152))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_184(*iParam0), 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_184(*iParam0), 1f, 20000, 0.25f, 0, 40000f);
 		HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
 		PED::FORCE_PED_MOTION_STATE(Global_35, joaat("MOTIONSTATE_WALK"), false, 1, false);
@@ -10251,7 +10251,7 @@ void func_431(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 		}
 		else if (bParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -21797,7 +21797,7 @@ void func_790(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	bool bVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_843(uParam0, iParam1) };
@@ -21818,10 +21818,10 @@ void func_790(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			bVar3 = (bVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, bVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, bVar3);
 		}
 		if (!func_465(uParam0->f_1016[&uParam0->f_475[iParam1 /*18*/] /*41*/], 4) && !func_465(uParam0->f_1016[&uParam0->f_475[iParam1 /*18*/] /*41*/], 2))
 		{

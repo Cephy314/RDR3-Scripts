@@ -6264,11 +6264,11 @@ void func_178()
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_816);
 		if (!func_238(vLocal_605))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_605, 1f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_605, 1f, -1, 0.25f, 1, 40000f);
 		}
 		if (!func_238(vLocal_608))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_608, 1f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_608, 1f, -1, 0.25f, 1, 40000f);
 		}
 		TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 		func_356(&(uLocal_659[1]), &iLocal_816, 0, 0, 1, 1);
@@ -6315,7 +6315,7 @@ void func_179()
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_816);
 		if (!func_238(vLocal_605))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_605, 1f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_605, 1f, -1, 0.25f, 1, 40000f);
 		}
 		func_356(&(uLocal_659[0]), &iLocal_816, 0, 0, 1, 1);
 		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(uLocal_659[0]), false);

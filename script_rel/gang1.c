@@ -46570,7 +46570,7 @@ int func_1062(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -53595,7 +53595,7 @@ void func_1304(bool bParam0, bool bParam1)
 		func_50(&(uLocal_182[1]));
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_336);
 		TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_181(1, 16), 2f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_181(1, 16), 2f, -1, 0.25f, 0, 40000f);
 		func_1302(0, func_181(1, 16), vVar1, -1, 1, 0, 0, 0, 0, 0);
 		TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(0, 175f, 0, 4);
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_336);
@@ -53615,7 +53615,7 @@ void func_1304(bool bParam0, bool bParam1)
 		PED::REMOVE_PED_DEFENSIVE_AREA(&(uLocal_182[3]), false);
 		TASK::OPEN_SEQUENCE_TASK(&iLocal_336);
 		TASK::TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(0, true);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_181(1, 17), 2f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_181(1, 17), 2f, -1, 0.25f, 0, 40000f);
 		func_1302(0, func_181(1, 17), vVar1, -1, 1, 0, 0, 0, 0, 0);
 		TASK::TASK_COMBAT_HATED_TARGETS_AROUND_PED(0, 175f, 0, 4);
 		TASK::CLOSE_SEQUENCE_TASK(iLocal_336);
@@ -55097,7 +55097,7 @@ void func_1363(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -92255,7 +92255,7 @@ void func_2701(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2739(uParam0, iParam1) };
@@ -92276,10 +92276,10 @@ void func_2701(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_2252(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2252(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

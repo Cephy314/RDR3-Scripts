@@ -9148,7 +9148,7 @@ void func_216()
 			fVar0 = func_427(&(uLocal_746[1]), Local_110.f_2, "Robber02", "pbl_Action_P3", 0);
 			vVar1 = { func_428(&(uLocal_746[1]), Local_110.f_2, "Robber02", "pbl_Action_P3", 0) };
 			TASK::OPEN_SEQUENCE_TASK(&iVar4);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, false, fVar0);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, 0, fVar0);
 			TASK::TASK_AIM_GUN_AT_ENTITY(0, &(uLocal_746[2]), 2000, false, 1);
 			TASK::TASK_AIM_GUN_AT_ENTITY(0, &(uLocal_746[2]), 1000, true, 1);
 			TASK::CLOSE_SEQUENCE_TASK(iVar4);
@@ -9239,7 +9239,7 @@ void func_218()
 			fVar0 = func_427(&(uLocal_746[1]), Local_110.f_2, "Robber02", "pbl_Action_P3", 0);
 			vVar1 = { func_428(&(uLocal_746[1]), Local_110.f_2, "Robber02", "pbl_Action_P3", 0) };
 			TASK::OPEN_SEQUENCE_TASK(&iVar4);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, false, fVar0);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, 0, fVar0);
 			TASK::TASK_STAND_STILL(0, -1);
 			TASK::CLOSE_SEQUENCE_TASK(iVar4);
 			TASK::TASK_PERFORM_SEQUENCE(&(uLocal_746[1]), iVar4);

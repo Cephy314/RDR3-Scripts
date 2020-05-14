@@ -3117,7 +3117,7 @@ int func_115(var uParam0, int iParam1)
 			{
 				func_14(iParam1->f_62[0], 1, 1);
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_34, 2541.031f, -1281.497f, 49.21795f, 1f, 20000, 0.25f, false, -136.15f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_34, 2541.031f, -1281.497f, 49.21795f, 1f, 20000, 0.25f, 0, -136.15f);
 				func_192(&(iParam1->f_1), 9);
 			}
 			break;

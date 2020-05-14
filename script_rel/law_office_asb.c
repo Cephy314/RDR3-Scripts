@@ -1952,7 +1952,7 @@ void func_52(var uParam0)
 		if ((func_130(&(uParam0->f_318)) > 5f && func_39(uParam0->f_328, 32)) && func_157(Global_35, -762.929f, -1265.749f, 43.051f, 0) > 1f)
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -762.929f, -1265.749f, 43.051f, 1f, 20000, 0.25f, false, 16.36f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -762.929f, -1265.749f, 43.051f, 1f, 20000, 0.25f, 0, 16.36f);
 			TASK::TASK_LOOK_AT_ENTITY(false, uParam0->f_67, -1, 0, 51, 0);
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_STARE_STOIC"), -1, true, 0, -1f, false);
 			TASK::CLOSE_SEQUENCE_TASK(iVar0);

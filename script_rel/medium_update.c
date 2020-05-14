@@ -21666,7 +21666,7 @@ int func_705(int iParam0, bool bParam1)
 		TASK::OPEN_SEQUENCE_TASK(&iVar11);
 		if (func_768(bParam1, vVar12, 1) > 2f)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar12, 1f, -1, 1f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar12, 1f, -1, 1f, 0, 40000f);
 		}
 		TASK::_TASK_USE_SCENARIO_POINT(0, iVar2, 0, 0, true, false, 0, false, -1f, false);
 		TASK::CLOSE_SEQUENCE_TASK(iVar11);
@@ -47585,7 +47585,7 @@ void func_1489(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -73450,7 +73450,7 @@ int func_2215(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

@@ -22097,7 +22097,7 @@ void func_662(var uParam0, var uParam1, char* sParam2, char* sParam3, vector3 vP
 	}
 }
 
-int func_663(var uParam0, char* sParam1, char* sParam2, float fParam3)
+int func_663(var uParam0, char* sParam1, char* sParam2, var uParam3)
 {
 	bool bVar0;
 
@@ -22110,7 +22110,7 @@ int func_663(var uParam0, char* sParam1, char* sParam2, float fParam3)
 	{
 		return 0;
 	}
-	*fParam3 = ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(bVar0, sParam1, sParam2);
+	*uParam3 = ENTITY::_GET_ENTITY_ANIM_CURRENT_TIME(bVar0, sParam1, sParam2);
 	return 1;
 }
 
@@ -30758,7 +30758,7 @@ void func_961(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

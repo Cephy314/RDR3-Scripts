@@ -4304,7 +4304,7 @@ void func_201()
 			{
 				if (func_143() == 1)
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((Local_110.f_18.f_4[0 /*2*/])->f_1, func_242(), 2f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD((Local_110.f_18.f_4[0 /*2*/])->f_1, func_242(), 2f, 20000, 0.25f, 0, 40000f);
 					PED::_0x735662994E60A710((Local_110.f_18.f_4[0 /*2*/])->f_1, 1);
 				}
 				else if (!func_243((Local_110.f_18.f_4[0 /*2*/])->f_1, -916659666))

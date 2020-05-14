@@ -1111,7 +1111,7 @@ int func_33(float fParam0)
 						}
 						func_37(&(Local_26.f_46), 4194304);
 						func_11(0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_26.f_46, Local_26.f_46.f_75, 1f, 10000, 0.1f, false, Local_26.f_46.f_78);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_26.f_46, Local_26.f_46.f_75, 1f, 10000, 0.1f, 0, Local_26.f_46.f_78);
 						func_29(6);
 					}
 					else
@@ -1815,7 +1815,7 @@ void func_61(var uParam0, bool bParam1)
 		{
 			if (!func_35(uParam0, 2048))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bParam1, func_172(uParam0->f_66), 1.5f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bParam1, func_172(uParam0->f_66), 1.5f, -1, 0.25f, 0, 40000f);
 				func_37(uParam0, 2048);
 			}
 		}

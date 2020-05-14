@@ -21334,7 +21334,7 @@ void func_645(var uParam0, int iParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
+					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
 					{
 						if ((iParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_624(iVar3, 1872585553)) || iVar4 == 1882579758)
 						{
@@ -22320,7 +22320,7 @@ int func_700(int iParam0, int iParam1)
 		if (!func_679(&Var1, iVar0, iParam0, iParam1))
 		{
 		}
-		else if (PED::_GET_PED_COMPONENT(Var1.f_4, iVar15, true) == 0)
+		else if (PED::_GET_PED_COMPONENT_CATEGORY(Var1.f_4, iVar15, true) == 0)
 		{
 			if ((Var1.f_4 != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") && Var1.f_4 != 1326838792) && Var1.f_4 != -230310728)
 			{

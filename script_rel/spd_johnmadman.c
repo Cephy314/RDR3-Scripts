@@ -6677,7 +6677,7 @@ void func_228()
 
 	vVar1 = { func_58(1) };
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 40000, 2f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 40000, 2f, 0, 40000f);
 	TASK::_TASK_USE_SCENARIO_POINT(0, iLocal_562, 0, -1, true, false, 0, false, -1f, false);
 	TASK::CLOSE_SEQUENCE_TASK(iVar0);
 	TASK::TASK_PERFORM_SEQUENCE(Local_14.f_3, iVar0);

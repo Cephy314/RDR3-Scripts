@@ -3397,7 +3397,7 @@ int func_93(var uParam0)
 		if (func_200(uParam0, iLocal_15) || func_201(uParam0, iLocal_14))
 		{
 			func_202(&uLocal_26);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_48(uParam0, iLocal_14), 2357.7f, 1396.42f, 104.98f, 1.2f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(func_48(uParam0, iLocal_14), 2357.7f, 1396.42f, 104.98f, 1.2f, -1, 0.25f, 1, 40000f);
 			PED::FORCE_PED_MOTION_STATE(func_48(uParam0, iLocal_14), joaat("MOTIONSTATE_WALK"), false, 0, false);
 		}
 	}

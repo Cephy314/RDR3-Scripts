@@ -3902,13 +3902,13 @@ void func_116()
 				func_294(iLocal_1250, 0, func_28(2097152));
 				func_293(iLocal_1250, 0, 1, 1);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_296(iLocal_785, iLocal_786), 1.75f, -1, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_296(iLocal_785, iLocal_786), 1.75f, -1, 0.25f, 1, 40000f);
 				TASK::_TASK_MOVE_IN_TRAFFIC(0, 2f, 0, 0);
 				func_212(&(iLocal_35[iLocal_1250]), &iVar0, 0, 0, 1, 1);
 				iVar0 = 0;
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				TASK::TASK_STAND_STILL(0, 500);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_296(iLocal_785, iLocal_786), 1.75f, -1, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_296(iLocal_785, iLocal_786), 1.75f, -1, 0.25f, 1, 40000f);
 				func_212(&(iLocal_35[iLocal_1251]), &iVar0, 0, 0, 1, 1);
 				func_290(&iLocal_1276, 5, iLocal_1250);
 				iLocal_801 = MISC::GET_GAME_TIMER();

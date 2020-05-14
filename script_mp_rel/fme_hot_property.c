@@ -20776,11 +20776,11 @@ void func_1048(int iParam0, int iParam1, int iParam2, int iParam3, char* sParam4
 		func_1202(Local_229.f_15[iParam0], iVar0);
 		return;
 	}
-	Local_229.f_15[iParam0] = HUD::_CREATE_ENTITY_MP_GAMER_TAG(iVar0, sParam4);
+	Local_229.f_15[iParam0] = HUD::_CREATE_MP_GAMER_TAG_ON_ENTITY(iVar0, sParam4);
 	HUD::_SET_MP_GAMER_TAG_TYPE(&(Local_229.f_15[iParam0]), joaat("HOTPROPERTY"));
 	HUD::_SET_MP_GAMER_TAG_COLOUR(&(Local_229.f_15[iParam0]), iParam2);
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(&(Local_229.f_15[iParam0]), iParam3);
-	HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(&(Local_229.f_15[iParam0]), iParam1);
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON(&(Local_229.f_15[iParam0]), iParam3);
+	HUD::_SET_MP_GAMER_TAG_VISIBILITY(&(Local_229.f_15[iParam0]), iParam1);
 }
 
 void func_1049(bool bParam0)
@@ -25701,7 +25701,7 @@ int func_1202(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (HUD::_IS_MP_GAMER_TAG_SET_TO_ENTITY(*uParam0, iParam1))
+	if (HUD::_IS_MP_GAMER_TAG_ACTIVE_ON_ENTITY(*uParam0, iParam1))
 	{
 		return 0;
 	}

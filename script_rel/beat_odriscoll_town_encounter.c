@@ -6304,7 +6304,7 @@ void func_235(int iParam0, float fParam1)
 	if (func_28((Local_20.f_197[iParam0 /*32*/])->f_11, 0, 0))
 	{
 		TASK::TASK_MOUNT_ANIMAL(0, (Local_20.f_197[iParam0 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 0.101f, -1, 0.25f, false, fVar4);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 0.101f, -1, 0.25f, 0, fVar4);
 	}
 	TASK::TASK_STAND_STILL(0, -1);
 	func_202(&(Local_20.f_294[iParam0]), &iVar0, fParam1, 0, 1, 1);

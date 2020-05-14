@@ -4189,9 +4189,9 @@ int func_101()
 				{
 					PED::FORCE_PED_MOTION_STATE(&(iLocal_1237[0]), joaat("MOTIONSTATE_WALK"), false, 0, false);
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1501.99f, -7296.75f, 71.82f, 1f, -1, 0.25f, false, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1469.99f, -7309.29f, 75.8f, 1f, -1, 0.25f, false, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_866, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1501.99f, -7296.75f, 71.82f, 1f, -1, 0.25f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1469.99f, -7309.29f, 75.8f, 1f, -1, 0.25f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_866, 1f, -1, 0.25f, 0, 40000f);
 					TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, vLocal_866, 10f, 0, false, false, false, false);
 					func_74(&(iLocal_1237[0]), &iVar0, 0, 0, 1, 1);
 					PED::SET_PED_KEEP_TASK(&(iLocal_1237[0]), true);
@@ -28148,7 +28148,7 @@ int func_799(int iParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

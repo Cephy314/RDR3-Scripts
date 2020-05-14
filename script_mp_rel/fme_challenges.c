@@ -23133,7 +23133,7 @@ void func_1078(int iParam0)
 						if (!func_1268(iVar0, 713668775))
 						{
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar0, true);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, Local_4534.f_1396, 2f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, Local_4534.f_1396, 2f, -1, 0.25f, 0, 40000f);
 						}
 					}
 					else if (fVar1 < (Local_4534.f_1294 - 20f))

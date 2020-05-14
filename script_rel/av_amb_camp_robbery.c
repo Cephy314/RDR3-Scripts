@@ -1851,7 +1851,7 @@ int func_31(var uParam0)
 		case 0:
 			if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[0 /*14*/])))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uParam0->f_20[0 /*14*/]), Global_36, 2f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uParam0->f_20[0 /*14*/]), Global_36, 2f, -1, 0.25f, 0, 40000f);
 				if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])) && uParam0->f_489 == 1)
 				{
 					iLocal_49 = PED::CREATE_GROUP(0);

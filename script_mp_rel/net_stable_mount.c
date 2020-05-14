@@ -751,14 +751,14 @@ void func_8(var uParam0, int iParam1)
 			}
 			if (func_6(uParam0, 1))
 			{
-				HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(uParam0->f_5, joaat("PLAYER_HORSE_TEMP"));
+				HUD::_SET_MP_GAMER_TAG_TOP_ICON(uParam0->f_5, joaat("PLAYER_HORSE_TEMP"));
 			}
 			else
 			{
-				HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(uParam0->f_5, joaat("PLAYER_HORSE"));
+				HUD::_SET_MP_GAMER_TAG_TOP_ICON(uParam0->f_5, joaat("PLAYER_HORSE"));
 			}
 			HUD::_SET_MP_GAMER_TAG_COLOUR(uParam0->f_5, joaat("COLOR_FRIENDLY"));
-			HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(uParam0->f_5, uParam0->f_6);
+			HUD::_SET_MP_GAMER_TAG_VISIBILITY(uParam0->f_5, uParam0->f_6);
 			if (func_38(&(iParam1->f_7), uParam0->f_4, 0, 0))
 			{
 				if (!func_45(Global_1903929, &(uParam0->f_33)))
@@ -2481,7 +2481,7 @@ void func_58(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4)
 	uParam0->f_32 = iVar3;
 	if (uParam0->f_6 != iVar3)
 	{
-		HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(uParam0->f_5, iVar3);
+		HUD::_SET_MP_GAMER_TAG_VISIBILITY(uParam0->f_5, iVar3);
 		uParam0->f_6 = iVar3;
 	}
 }
@@ -4472,7 +4472,7 @@ int func_119(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (HUD::_IS_MP_GAMER_TAG_SET_TO_ENTITY(*uParam0, iParam1))
+	if (HUD::_IS_MP_GAMER_TAG_ACTIVE_ON_ENTITY(*uParam0, iParam1))
 	{
 		return 0;
 	}

@@ -1957,7 +1957,7 @@ int func_41()
 				{
 					func_162();
 					TASK::OPEN_SEQUENCE_TASK(&iVar6);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_578, 1f, -1, 0.25f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_578, 1f, -1, 0.25f, 1, 40000f);
 					TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 					func_148(&(uLocal_276[0]), &iVar6, 0, 0, 1, 1);
 					func_35(2048);
@@ -1986,7 +1986,7 @@ int func_41()
 			{
 				func_31(&(uLocal_276[0]), Global_35, func_30("STALK_EXIT"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iVar7);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_578, 1f, -1, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_578, 1f, -1, 0.25f, 1, 40000f);
 				TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 				func_148(&(uLocal_276[0]), &iVar7, 0, 0, 1, 1);
 				Local_49.f_50 = 1;
@@ -5337,12 +5337,12 @@ void func_165()
 	{
 		if (func_167(-1436.41f, -545.3f, 127.6922f, 1) < func_167(-1445.798f, -529.8782f, 130.0991f, 1))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1445.798f, -529.8782f, 130.0991f, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1445.798f, -529.8782f, 130.0991f, 1f, -1, 0.25f, 0, 40000f);
 			vLocal_587 = { func_368(76, 1) };
 		}
 		else
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1436.41f, -545.3f, 127.6922f, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -1436.41f, -545.3f, 127.6922f, 1f, -1, 0.25f, 0, 40000f);
 			vLocal_587 = { func_368(105, 1) };
 		}
 	}
@@ -5539,7 +5539,7 @@ void func_169()
 	}
 	if (func_171(&(uLocal_276[0]), func_170(26), 0, 1))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_276[0]), vLocal_578, 1.5f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_276[0]), vLocal_578, 1.5f, -1, 0.25f, 0, 40000f);
 		vLocal_575 = { ENTITY::GET_ENTITY_COORDS(&(uLocal_276[0]), true, false) };
 		func_31(&(uLocal_276[0]), Global_35, func_30("STALK_SEETOWN"), 0, -1082130432 /* Float: -1f */, 0, 0, 0, 1, 1, 1, 291934926, 1, 0, 0);
 		func_35(262144);

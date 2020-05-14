@@ -35220,7 +35220,7 @@ int func_786(char[4] cParam0)
 			}
 			if ((func_1277(Global_35, 2827.59f, -1116.87f, 45.58f, 2f, 1, 1) && !func_1278(Global_35, 713668775)) && !PED::IS_PED_ON_MOUNT(Global_35))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, 2829.83f, -1119.54f, 45.42f, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, 2829.83f, -1119.54f, 45.42f, 1f, -1, 0.25f, 0, 40000f);
 			}
 			else if ((PED::IS_PED_ON_MOUNT(Global_35) && func_1277(Global_35, 2827.59f, -1116.87f, 45.58f, 2f, 1, 1)) && !func_1278(Global_35, 501393341))
 			{
@@ -46323,7 +46323,7 @@ int func_1097(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -54158,7 +54158,7 @@ void func_1357(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -76822,7 +76822,7 @@ void func_2147(char[4] cParam0)
 			if (!func_1278(&(iLocal_535[1]), 713668775) || !func_26(vLocal_605[6 /*3*/]))
 			{
 				func_27(vLocal_605[6 /*3*/], 0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[1]), 2586.32f, -1368.46f, 45.02f, 1f, -1, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[1]), 2586.32f, -1368.46f, 45.02f, 1f, -1, 0.25f, 0, 40000f);
 			}
 			else if (func_902(vLocal_605[6 /*3*/]) > 7f)
 			{
@@ -78803,7 +78803,7 @@ int func_2215()
 		}
 		if (!func_1278(&(iLocal_535[19]), 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[15]), 2847.62f, -1362.77f, 43.56f, 2f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[15]), 2847.62f, -1362.77f, 43.56f, 2f, -1, 0.25f, 0, 40000f);
 		}
 		return 0;
 	}
@@ -78819,7 +78819,7 @@ int func_2215()
 		}
 		if (!func_1278(&(iLocal_535[19]), 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[16]), 2806.7f, -1326.55f, 45.37f, 2f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[16]), 2806.7f, -1326.55f, 45.37f, 2f, -1, 0.25f, 0, 40000f);
 		}
 		AUDIO::_PLAY_SOUND_FROM_POSITION("POLICE_WHISTLE_SINGLE", ENTITY::GET_ENTITY_COORDS(&(iLocal_535[16]), true, false), "MOB3_Sounds", false, 0, true, 0);
 		return 0;
@@ -78852,7 +78852,7 @@ int func_2217()
 		}
 		if (!func_1278(&(iLocal_535[19]), 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[17]), 2847.62f, -1362.77f, 43.56f, 3f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[17]), 2847.62f, -1362.77f, 43.56f, 3f, -1, 0.25f, 0, 40000f);
 		}
 		return 0;
 	}
@@ -78868,7 +78868,7 @@ int func_2217()
 		}
 		if (!func_1278(&(iLocal_535[19]), 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[18]), 2847.62f, -1362.77f, 43.56f, 3f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[18]), 2847.62f, -1362.77f, 43.56f, 3f, -1, 0.25f, 0, 40000f);
 		}
 		return 0;
 	}
@@ -78884,7 +78884,7 @@ int func_2217()
 		}
 		if (!func_1278(&(iLocal_535[19]), 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[19]), 2847.62f, -1362.77f, 43.56f, 3f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_535[19]), 2847.62f, -1362.77f, 43.56f, 3f, -1, 0.25f, 0, 40000f);
 		}
 		return 0;
 	}
@@ -93672,7 +93672,7 @@ void func_2750(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2793(uParam0, iParam1) };
@@ -93693,10 +93693,10 @@ void func_2750(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_2277(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2277(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

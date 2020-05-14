@@ -6135,7 +6135,7 @@ int func_234(var uParam0)
 		if (TASK::IS_PED_STILL(Global_35))
 		{
 			uParam0->f_57 = 1;
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, vVar0, 1f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, vVar0, 1f, 20000, 0.25f, 0, 40000f);
 		}
 	}
 	if (func_417(Global_36, vVar0, 1f, 0) || func_418(&(uParam0->f_52)) >= 10f)
@@ -20387,7 +20387,7 @@ void func_795(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

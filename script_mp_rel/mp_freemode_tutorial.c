@@ -11765,7 +11765,7 @@ void func_401(var uParam0)
 			{
 				vVar1 = { ENTITY::GET_ENTITY_COORDS(uParam0->f_432.f_74, true, false) };
 				vVar4 = { func_430(uParam0->f_5 - vVar1) + vVar1 };
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_4, vVar4, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_4, vVar4, 1f, 20000, 0.25f, 0, 40000f);
 			}
 		}
 	}

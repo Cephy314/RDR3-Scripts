@@ -1065,7 +1065,7 @@ void __EntryFunction__()
 					{
 						if (!func_139(Local_14.f_226, 713668775))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_14.f_226, func_91(3), 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_14.f_226, func_91(3), 1f, -1, 0.25f, 0, 40000f);
 						}
 					}
 					else if (func_140(&(Local_14.f_135)) > 3f)
@@ -9527,7 +9527,7 @@ int func_349(var uParam0, vector3 vParam1, float fParam4, int iParam5, bool bPar
 			{
 				TASK::CLEAR_PED_TASKS(*uParam0, 1, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, iParam5, bParam6, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, iParam5, bParam6, 0, 40000f);
 				TASK::TASK_ACHIEVE_HEADING(0, fParam4, 0);
 				TASK::CLOSE_SEQUENCE_TASK(iVar0);
 				TASK::TASK_PERFORM_SEQUENCE(*uParam0, iVar0);

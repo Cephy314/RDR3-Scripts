@@ -4343,7 +4343,7 @@ void func_62(var uParam0)
 					StringCopy(&cLocal_25, "pb_peek_r", 24);
 					iLocal_37 = 2;
 				}
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_177(uParam0, iLocal_37), 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_177(uParam0, iLocal_37), 1f, 20000, 0.25f, 0, 40000f);
 				func_167(Local_87[0 /*4*/], 16, 1);
 				break;
 			case 16:
@@ -5290,7 +5290,7 @@ void func_64(var uParam0)
 							PED::_0xF1C03A5352243A30(&(Local_63.f_1[iVar0]));
 							PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_63.f_1[iVar0]), false);
 							TASK::OPEN_SEQUENCE_TASK(&iLocal_44);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_91(uParam0, 0), 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_91(uParam0, 0), 1f, 20000, 0.25f, 0, 40000f);
 							TASK::_TASK_USE_SCENARIO_POINT(0, iLocal_45, func_187(uParam0), -1, true, false, func_156(uParam0, 0), false, -1f, false);
 							TASK::CLOSE_SEQUENCE_TASK(iLocal_44);
 							TASK::TASK_PERFORM_SEQUENCE(&(Local_63.f_1[iVar0]), iLocal_44);
@@ -5374,7 +5374,7 @@ void func_64(var uParam0)
 						iLocal_14[4] = 1;
 						iLocal_14[7] = 1;
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(&(Local_63.f_1[iVar0]), true);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_63.f_1[iVar0]), func_131(uParam0, 0), 1.5f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_63.f_1[iVar0]), func_131(uParam0, 0), 1.5f, 20000, 0.25f, 0, 40000f);
 						func_167(Local_87[iVar0 /*4*/], 20, 1);
 					}
 					break;
@@ -21937,7 +21937,7 @@ int func_429(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

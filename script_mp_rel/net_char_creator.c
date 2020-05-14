@@ -24369,7 +24369,7 @@ int func_613(var uParam0, var uParam1, int iParam2, bool bParam3)
 				}
 				else if ((&uParam0->f_1[iVar0 /*3*/] != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") && &uParam0->f_1[iVar0 /*3*/] != -230310728) && &uParam0->f_1[iVar0 /*3*/] != 1326838792)
 				{
-					if (PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
+					if (PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
 					{
 						func_771(uParam1, 1, iVar0, 0);
 					}
@@ -24427,7 +24427,7 @@ int func_613(var uParam0, var uParam1, int iParam2, bool bParam3)
 										func_770(iVar0, iVar15);
 										if (((!bVar2 && &uParam0->f_1[iVar0 /*3*/] != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE")) && &uParam0->f_1[iVar0 /*3*/] != -230310728) && &uParam0->f_1[iVar0 /*3*/] != 1326838792)
 										{
-											if (PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
+											if (PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar1, true) == 0)
 											{
 												func_771(uParam1, 1, iVar0, 0);
 											}
@@ -25809,7 +25809,7 @@ void func_650(var uParam0, int iParam1, int iParam2, bool bParam3)
 					break;
 				case 1250092473:
 					iVar0 = 12;
-					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
+					if (joaat("NECKTIES") == PED::_GET_PED_COMPONENT_CATEGORY(&(uParam0->f_1[iVar0 /*3*/]), iVar2, true))
 					{
 						if ((iParam1 == &Global_1951141->f_81[iParam2 /*12*/] || func_98(iVar3, 1872585553)) || iVar4 == 1882579758)
 						{
@@ -29697,7 +29697,7 @@ int func_779(int iParam0, int iParam1, vector3 vParam2, int iParam5)
 	{
 		return 0;
 	}
-	if (((iParam0 == joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") || iParam0 == 1326838792) || iParam0 == -230310728) || PED::_GET_PED_COMPONENT(iParam0, iParam5, true) != 0)
+	if (((iParam0 == joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") || iParam0 == 1326838792) || iParam0 == -230310728) || PED::_GET_PED_COMPONENT_CATEGORY(iParam0, iParam5, true) != 0)
 	{
 		return 1;
 	}
@@ -29938,7 +29938,7 @@ int func_787(int iParam0, int iParam1)
 		if (!func_237(&Var1, iVar0, iParam0, iParam1))
 		{
 		}
-		else if (PED::_GET_PED_COMPONENT(Var1.f_4, iVar15, true) == 0)
+		else if (PED::_GET_PED_COMPONENT_CATEGORY(Var1.f_4, iVar15, true) == 0)
 		{
 			if ((Var1.f_4 != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") && Var1.f_4 != 1326838792) && Var1.f_4 != -230310728)
 			{

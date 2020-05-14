@@ -3728,7 +3728,7 @@ void func_118()
 							func_68(bLocal_636, 0);
 							ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(Local_384, "MaleA", &(uLocal_417[0]));
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2952.115f, 494.7861f, 44.90863f, 1f, -1, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2952.115f, 494.7861f, 44.90863f, 1f, -1, 0.25f, 1, 40000f);
 							func_289(&(uLocal_417[0]), &iVar1, 0, 0, 1, 1);
 							Local_663.f_1 = { 2951.977f, 494.039f, 45.06157f };
 							Local_663 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(Local_663.f_1, joaat("WORLD_HUMAN_LEAN_BACK_WALL"), 1f, 0, false);
@@ -3775,7 +3775,7 @@ void func_118()
 							func_69(&bLocal_636, &uLocal_634, 2951.644f, 494.6787f, 44.94053f, 0f, 0f, 0f, 3f, 3f, 3f, 0, 0, 1, 0, 0);
 							func_68(bLocal_636, 0);
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2952.115f, 494.7861f, 44.90863f, 1f, -1, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2952.115f, 494.7861f, 44.90863f, 1f, -1, 0.25f, 1, 40000f);
 							func_289(&(uLocal_417[0]), &iVar1, 0, 0, 1, 1);
 							Local_663.f_1 = { 2950.459f, 493.4569f, 45.02039f };
 							Local_663 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(Local_663.f_1, joaat("WORLD_HUMAN_DRUNK_BAR_SLUMPED"), 1f, 0, false);
@@ -3787,9 +3787,9 @@ void func_118()
 							func_68(bLocal_636, 0);
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
 							TASK::TASK_STAND_STILL(0, 400);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -301.8098f, 789.8875f, 117.0518f, 1f, -1, 0.25f, true, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -282.2471f, 790.2924f, 117.6882f, 1f, -1, 0.25f, true, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -249.7122f, 765.8113f, 116.4685f, 1f, -1, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -301.8098f, 789.8875f, 117.0518f, 1f, -1, 0.25f, 1, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -282.2471f, 790.2924f, 117.6882f, 1f, -1, 0.25f, 1, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -249.7122f, 765.8113f, 116.4685f, 1f, -1, 0.25f, 1, 40000f);
 							func_289(&(uLocal_417[0]), &iVar1, 0, 0, 1, 1);
 							Local_663.f_1 = { -247.4392f, 764.8387f, 117.1011f };
 							Local_663 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(Local_663.f_1, joaat("WORLD_HUMAN_SEAT_STEPS"), 1f, 0, false);
@@ -3860,7 +3860,7 @@ void func_119()
 						case 92:
 							ANIMSCENE::REMOVE_ANIM_SCENE_ENTITY(Local_384, "MaleB", &(uLocal_417[1]));
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2952.115f, 494.7861f, 44.90863f, 1f, -1, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2952.115f, 494.7861f, 44.90863f, 1f, -1, 0.25f, 1, 40000f);
 							func_289(&(uLocal_417[1]), &iVar1, 0, 0, 1, 1);
 							Local_670.f_1 = { 2950.459f, 493.4569f, 45.02039f };
 							Local_670 = TASK::_FIND_CLOSEST_ACTIVE_SCENARIO_POINT_OF_TYPE(Local_670.f_1, joaat("WORLD_HUMAN_DRUNK_BAR_SLUMPED"), 1f, 0, false);
@@ -3992,8 +3992,8 @@ void func_120()
 					{
 						case 92:
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2953.286f, 531.9273f, 43.81627f, 1f, 20000, 0.25f, true, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3031.736f, 553.738f, 43.6349f, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2953.286f, 531.9273f, 43.81627f, 1f, 20000, 0.25f, 1, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3031.736f, 553.738f, 43.6349f, 1f, -1, 0.25f, 0, 40000f);
 							func_153(0, joaat("WORLD_HUMAN_SMOKE"), 3031.736f, 553.738f, 43.6349f, 267.0419f, 0, 1, 0, 0, -1082130432 /* Float: -1f */);
 							func_289(&(uLocal_417[2]), &iVar1, 0, 0, 1, 1);
 							func_35(4);
@@ -4003,7 +4003,7 @@ void func_120()
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
 							TASK::TASK_LOOK_AT_ENTITY(0, &(uLocal_417[0]), 1500, 0, 51, 0);
 							TASK::TASK_STAND_STILL(0, 1500);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -314.4253f, 789.7553f, 116.4243f, 1f, 20000, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -314.4253f, 789.7553f, 116.4243f, 1f, 20000, 0.25f, 1, 40000f);
 							TASK::_TASK_MOVE_IN_TRAFFIC(0, 1f, 0, 0);
 							func_289(&(uLocal_417[2]), &iVar1, 0, 0, 1, 1);
 							PED::SET_PED_KEEP_TASK(&(uLocal_417[2]), true);
@@ -4013,7 +4013,7 @@ void func_120()
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
 							TASK::TASK_LOOK_AT_ENTITY(0, &(uLocal_417[0]), 1500, 0, 51, 0);
 							TASK::TASK_STAND_STILL(0, 1500);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3714.748f, -2601.004f, -14.74056f, 1f, 20000, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -3714.748f, -2601.004f, -14.74056f, 1f, 20000, 0.25f, 1, 40000f);
 							TASK::_TASK_MOVE_IN_TRAFFIC(0, 1f, 0, 0);
 							func_289(&(uLocal_417[2]), &iVar1, 0, 0, 1, 1);
 							PED::SET_PED_KEEP_TASK(&(uLocal_417[2]), true);
@@ -4026,8 +4026,8 @@ void func_120()
 					{
 						case 92:
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2953.286f, 531.9273f, 43.81627f, 1f, 20000, 0.25f, true, 40000f);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3031.736f, 553.738f, 43.6349f, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 2953.286f, 531.9273f, 43.81627f, 1f, 20000, 0.25f, 1, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 3031.736f, 553.738f, 43.6349f, 1f, -1, 0.25f, 0, 40000f);
 							func_153(0, joaat("WORLD_HUMAN_SMOKE"), 3031.736f, 553.738f, 43.6349f, 267.0419f, 0, 1, 0, 0, -1082130432 /* Float: -1f */);
 							func_289(&(uLocal_417[2]), &iVar1, 0, 0, 1, 1);
 							func_35(4194304);
@@ -4035,7 +4035,7 @@ void func_120()
 							break;
 						case 76:
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -306.5754f, 816.1599f, 120.9763f, 1f, -1, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -306.5754f, 816.1599f, 120.9763f, 1f, -1, 0.25f, 0, 40000f);
 							func_153(0, joaat("WORLD_HUMAN_FAN"), -306.5754f, 816.1599f, 120.9763f, 283.9311f, 0, 1, 0, 0, -1082130432 /* Float: -1f */);
 							func_289(&(uLocal_417[2]), &iVar1, 0, 0, 1, 1);
 							func_35(4);

@@ -3608,7 +3608,7 @@ void func_121(bool bParam0)
 	}
 	if (!func_93(vLocal_435))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_435, 1f, -1, 2f, false, (fLocal_28 - 90f));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_435, 1f, -1, 2f, 0, (fLocal_28 - 90f));
 		TASK::_TASK_START_SCENARIO_IN_PLACE(0, iLocal_465, -1, true, 0, -1f, false);
 	}
 	else

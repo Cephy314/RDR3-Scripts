@@ -2422,12 +2422,12 @@ int func_59()
 						{
 							if (!func_55(Local_28.f_18))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_18, 2f, -1, 0.25f, true, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_18, 2f, -1, 0.25f, 1, 40000f);
 							}
 						}
 						else if (!func_55(Local_28.f_21))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_21, 2f, -1, 0.25f, true, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_21, 2f, -1, 0.25f, 1, 40000f);
 						}
 						TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 4, 384, -1082130432, -1, 0);
 						func_46(&(uLocal_798[0]), &iLocal_804, 0, 0, 1, 1);
@@ -2712,12 +2712,12 @@ int func_59()
 									{
 										if (!func_55(Local_28.f_18))
 										{
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_18, 2f, -1, 0.25f, true, 40000f);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_18, 2f, -1, 0.25f, 1, 40000f);
 										}
 									}
 									else if (!func_55(Local_28.f_21))
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_21, 2f, -1, 0.25f, true, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_21, 2f, -1, 0.25f, 1, 40000f);
 									}
 									TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 4, 384, -1082130432, -1, 0);
 									func_46(&(uLocal_798[0]), &iLocal_804, 0, 0, 1, 1);
@@ -2773,12 +2773,12 @@ int func_59()
 									{
 										if (!func_55(Local_28.f_18))
 										{
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_18, 2f, -1, 0.25f, true, 40000f);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_18, 2f, -1, 0.25f, 1, 40000f);
 										}
 									}
 									else if (!func_55(Local_28.f_21))
 									{
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_21, 2f, -1, 0.25f, true, 40000f);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_21, 2f, -1, 0.25f, 1, 40000f);
 									}
 									TASK::_TASK_SMART_FLEE_STYLE_PED(0, Global_35, 4, 384, -1082130432, -1, 0);
 									func_46(&(uLocal_798[0]), &iLocal_804, 0, 0, 1, 1);
@@ -6908,11 +6908,11 @@ int func_190()
 			TASK::_0x2E1D6D87346BB7D2(&(uLocal_798[0]), &(uLocal_798[1]), 0, 0);
 			if (func_34(iLocal_402, 16))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28, 2f, 20000, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28, 2f, 20000, 0.25f, 1, 40000f);
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_3, 2f, 20000, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Local_28.f_3, 2f, 20000, 0.25f, 1, 40000f);
 			}
 			TASK::_TASK_SMART_FLEE_STYLE_PED(0, &(uLocal_798[1]), 4, 384, -1082130432, -1, 0);
 			iLocal_861 = 1;
@@ -7249,7 +7249,7 @@ int func_206(var uParam0, int iParam1)
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	bool bVar8;
+	int iVar8;
 	int iVar9;
 	int iVar10;
 	int iVar11;
@@ -7402,10 +7402,10 @@ int func_206(var uParam0, int iParam1)
 					if (!func_55(uParam0->f_11))
 					{
 					}
-					bVar8 = false;
+					iVar8 = 0;
 					if (!func_2(uParam0->f_23, 1024))
 					{
-						bVar8 = (bVar8 || 1);
+						iVar8 |= 1;
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iVar9);
 					if (!func_55(uParam0->f_11))
@@ -7416,7 +7416,7 @@ int func_206(var uParam0, int iParam1)
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_11, uParam0->f_21, func_379(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, bVar8, uParam0->f_19);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_11, uParam0->f_21, func_379(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, iVar8, uParam0->f_19);
 						}
 					}
 					if (func_2(uParam0->f_23, 16))
@@ -7425,7 +7425,7 @@ int func_206(var uParam0, int iParam1)
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_8, uParam0->f_21, func_379(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, bVar8, uParam0->f_19);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_8, uParam0->f_21, func_379(!func_2(uParam0->f_23, 128), 20000, -1), uParam0->f_17, iVar8, uParam0->f_19);
 					}
 					if (func_2(uParam0->f_23, 1))
 					{

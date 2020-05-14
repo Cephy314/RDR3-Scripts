@@ -19832,7 +19832,7 @@ void func_759(var uParam0)
 					iVar129 = 0;
 					while (iVar129 <= (Global_1896726->f_209.f_154 - 1))
 					{
-						if (!NETWORK::_0x7FEE4F07C54B6B3C(Global_1896726->f_209.f_2[iVar129 /*7*/], Global_1896726->f_209.f_73[iVar129 /*8*/]))
+						if (!NETWORK::_NETWORK_GET_DISPLAY_NAME_FROM_HANDLE(Global_1896726->f_209.f_2[iVar129 /*7*/], Global_1896726->f_209.f_73[iVar129 /*8*/]))
 						{
 							func_62(MISC::_CREATE_VAR_STRING(2, "FRIENDS_LIST_CONSENT_TOOLTIP"), joaat("COLOR_WHITE"));
 						}

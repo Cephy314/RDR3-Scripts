@@ -27099,7 +27099,7 @@ void func_864(var uParam0)
 	}
 	if (MISC::IS_PC_VERSION() || MISC::_IS_STADIA_VERSION())
 	{
-		if (!NETWORK::_0x7FEE4F07C54B6B3C(&(uParam0->f_10.f_1), Var0[0 /*8*/]))
+		if (!NETWORK::_NETWORK_GET_DISPLAY_NAME_FROM_HANDLE(&(uParam0->f_10.f_1), Var0[0 /*8*/]))
 		{
 			return;
 		}
@@ -49044,7 +49044,7 @@ int func_1711(int iParam0, int iParam1)
 		if (!func_927(&Var1, iVar0, iParam0, iParam1))
 		{
 		}
-		else if (PED::_GET_PED_COMPONENT(Var1.f_4, iVar15, true) == 0)
+		else if (PED::_GET_PED_COMPONENT_CATEGORY(Var1.f_4, iVar15, true) == 0)
 		{
 			if ((Var1.f_4 != joaat("CLOTHING_ITEM_M_BEARD_STUBBLE") && Var1.f_4 != 1326838792) && Var1.f_4 != -230310728)
 			{

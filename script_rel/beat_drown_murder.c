@@ -10950,16 +10950,16 @@ void func_297(int iParam0, float fParam1, bool bParam2, bool bParam3, int iParam
 	}
 	if (!func_25(*(vLocal_385[1 /*3*/])))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_385[1 /*3*/]), fParam1, -1, 3f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_385[1 /*3*/]), fParam1, -1, 3f, 1, 40000f);
 	}
 	if (!func_25(*(vLocal_385[2 /*3*/])))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_385[2 /*3*/]), fParam1, -1, 1.5f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_385[2 /*3*/]), fParam1, -1, 1.5f, 1, 40000f);
 	}
 	if (bParam3)
 	{
 		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_379, fParam1, -1, 10f, 4, 40000f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_382, 1f, 30000, 1.5f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_382, 1f, 30000, 1.5f, 0, 40000f);
 		if (iLocal_375 != -1)
 		{
 			iLocal_421 = func_507(iLocal_375, vLocal_382, fLocal_395, 0, -1f, 0);
@@ -30823,7 +30823,7 @@ int func_941(int iParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

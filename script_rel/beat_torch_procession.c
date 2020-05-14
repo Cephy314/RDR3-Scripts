@@ -1957,8 +1957,8 @@ void func_55()
 		func_174(&(uLocal_313[0]), Global_35, "SWAMP4_CALLOUT_CLICK");
 		PED::SET_PED_MIN_MOVE_BLEND_RATIO(&(uLocal_313[0]), 1f);
 		PED::SET_PED_MIN_MOVE_BLEND_RATIO(&(uLocal_313[1]), 1f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_313[0]), *(vLocal_322[0 /*3*/]), 1f, 20000, 0.25f, false, (vLocal_332[0 /*3*/])->f_2);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_313[1]), *(vLocal_322[1 /*3*/]), 1f, 20000, 0.25f, false, (vLocal_332[1 /*3*/])->f_2);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_313[0]), *(vLocal_322[0 /*3*/]), 1f, 20000, 0.25f, 0, (vLocal_332[0 /*3*/])->f_2);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_313[1]), *(vLocal_322[1 /*3*/]), 1f, 20000, 0.25f, 0, (vLocal_332[1 /*3*/])->f_2);
 		func_175(2);
 	}
 }

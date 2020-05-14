@@ -5519,7 +5519,7 @@ void func_231()
 					if (func_236(iVar1, 242628503, 1, 0))
 					{
 						TASK::OPEN_SEQUENCE_TASK(&((Local_132.f_18.f_2[1 /*4*/])->f_2));
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 3f, -1, 0.75f, false, func_291(vVar6, ENTITY::GET_ENTITY_COORDS(iVar2, true, false), 1));
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar6, 3f, -1, 0.75f, 0, func_291(vVar6, ENTITY::GET_ENTITY_COORDS(iVar2, true, false), 1));
 						func_292(iVar1, &((Local_132.f_18.f_2[1 /*4*/])->f_2), 0, 0, 1, 1);
 					}
 				}
@@ -5548,7 +5548,7 @@ void func_231()
 				{
 					if (func_236(iVar1, 713668775, 1, 0))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar1, func_296(), 3f, -1, 0.25f, false, func_291(vVar6, func_150(0), 1));
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar1, func_296(), 3f, -1, 0.25f, 0, func_291(vVar6, func_150(0), 1));
 					}
 				}
 				else if (func_236(iVar1, 242628503, 1, 0))
@@ -5725,7 +5725,7 @@ void func_233()
 					TASK::OPEN_SEQUENCE_TASK(&((Local_132.f_18.f_2[1 /*4*/])->f_2));
 					if (BUILTIN::VDIST(ENTITY::GET_ENTITY_COORDS(iVar0, false, false), func_296()) > 1f)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_296(), 1.5f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_296(), 1.5f, -1, 0.25f, 0, 40000f);
 					}
 					TASK::TASK_TURN_PED_TO_FACE_COORD(0, func_150(0), 0);
 					TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_ANIMAL_DOG_BARKING_GROUND"), -1, true, 0, -1f, false);

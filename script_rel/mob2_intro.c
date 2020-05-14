@@ -1364,7 +1364,7 @@ int func_39(int iParam0)
 					if (TASK::GET_SCRIPT_TASK_STATUS(iLocal_33, 242628503, true) != 0 && TASK::GET_SCRIPT_TASK_STATUS(iLocal_33, 242628503, true) != 1)
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iVar30);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_169(0, 2), 1f, 20000, 0.25f, false, func_170(0, 2));
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_169(0, 2), 1f, 20000, 0.25f, 0, func_170(0, 2));
 						TASK::CLOSE_SEQUENCE_TASK(iVar30);
 						TASK::TASK_PERFORM_SEQUENCE(iLocal_33, iVar30);
 						TASK::CLEAR_SEQUENCE_TASK(&iVar30);
@@ -2674,7 +2674,7 @@ int func_106(int iParam0)
 	}
 	else if (!func_5(iParam0, 2097152))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_194(*iParam0), 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, func_194(*iParam0), 1f, 20000, 0.25f, 0, 40000f);
 		HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 256, false);
 		PED::FORCE_PED_MOTION_STATE(Global_35, joaat("MOTIONSTATE_WALK"), false, 1, false);
@@ -10773,7 +10773,7 @@ void func_446(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -25834,7 +25834,7 @@ void func_946(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	bool bVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_968(uParam0, iParam1) };
@@ -25855,10 +25855,10 @@ void func_946(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			bVar3 = (bVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, bVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, bVar3);
 		}
 		if (!func_479(uParam0->f_1016[&uParam0->f_475[iParam1 /*18*/] /*41*/], 4) && !func_479(uParam0->f_1016[&uParam0->f_475[iParam1 /*18*/] /*41*/], 2))
 		{

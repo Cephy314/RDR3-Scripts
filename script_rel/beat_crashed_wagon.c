@@ -700,8 +700,8 @@ void func_7()
 				{
 					TASK::TASK_MOUNT_ANIMAL(0, &(uLocal_817[iVar0]), -1, -1, 1f, 1, 0, 0);
 				}
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_68(iLocal_87, iLocal_88), 1.25f, -1, 5f, true, 40000f);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_69(iLocal_87, iLocal_88), 1.25f, -1, 5f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_68(iLocal_87, iLocal_88), 1.25f, -1, 5f, 1, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_69(iLocal_87, iLocal_88), 1.25f, -1, 5f, 1, 40000f);
 				TASK::_TASK_MOVE_IN_TRAFFIC(0, 2.001f, 32, 0);
 				func_70(&(uLocal_814[iVar0]), &iVar2, 0, 0, 1, 1);
 				TASK::CLEAR_SEQUENCE_TASK(&iVar2);
@@ -2345,7 +2345,7 @@ void func_47()
 		return;
 	}
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_160(iLocal_87, iLocal_88, 1), 1f, -1, 0.25f, true, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_160(iLocal_87, iLocal_88, 1), 1f, -1, 0.25f, 1, 40000f);
 	TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 	func_70(&(uLocal_814[0]), &iVar0, 0, 0, 1, 1);
 }
@@ -12658,8 +12658,8 @@ void func_354(var uParam0, var uParam1)
 		{
 			TASK::TASK_MOUNT_ANIMAL(0, *uParam1, -1, -1, 1f, 1, 0, 0);
 		}
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_68(iLocal_87, iLocal_88), 1.25f, -1, 5f, true, 40000f);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_69(iLocal_87, iLocal_88), 1.25f, -1, 5f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_68(iLocal_87, iLocal_88), 1.25f, -1, 5f, 1, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_69(iLocal_87, iLocal_88), 1.25f, -1, 5f, 1, 40000f);
 		TASK::_TASK_MOVE_IN_TRAFFIC(0, 2.001f, 32, 0);
 		func_70(*uParam0, &iVar0, 0, 0, 1, 1);
 	}
@@ -13000,10 +13000,10 @@ void func_374()
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	if (iLocal_89 == 0)
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_160(iLocal_87, iLocal_88, 0), 1f, -1, 0.25f, true, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_160(iLocal_87, iLocal_88, 0), 1f, -1, 0.25f, 1, 40000f);
 	}
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_160(iLocal_87, iLocal_88, 1), 1f, -1, 0.25f, true, 40000f);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_30(iLocal_87, iLocal_88), 1f, -1, 1.5f, true, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_160(iLocal_87, iLocal_88, 1), 1f, -1, 0.25f, 1, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_30(iLocal_87, iLocal_88), 1f, -1, 1.5f, 1, 40000f);
 	func_70(&(uLocal_814[0]), &iVar0, 0, 0, 1, 1);
 }
 

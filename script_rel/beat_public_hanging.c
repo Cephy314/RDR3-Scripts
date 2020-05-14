@@ -14018,11 +14018,11 @@ void func_336(int iParam0, vector3 vParam1, vector3 vParam4, float fParam7, floa
 		}
 		if (!func_87(vParam1))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, -1, 0.25f, 1, 40000f);
 		}
 		if (!func_87(vParam4))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam4, 1f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam4, 1f, -1, 0.25f, 1, 40000f);
 		}
 		if (!bParam9)
 		{
@@ -21701,7 +21701,7 @@ void func_563(int iParam0, vector3 vParam1, float fParam4)
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
 		if (func_38(iParam0, vParam1, 1) > 1f)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, 20000, 0.25f, false, fParam4);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, 1f, 20000, 0.25f, 0, fParam4);
 		}
 		if (MISC::ABSF((fVar1 - fParam4)) > 2f)
 		{

@@ -35308,7 +35308,7 @@ int func_797(char[4] cParam0)
 			}
 			if (func_1280(cParam0, &(Local_59[3]), 0, 0, 1, 1))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_59[3]), -2590.89f, 464.46f, 145.97f, 1f, -1, 0.25f, false, -28.09f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_59[3]), -2590.89f, 464.46f, 145.97f, 1f, -1, 0.25f, 0, -28.09f);
 			}
 			break;
 		case 25:
@@ -45879,7 +45879,7 @@ int func_1093(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -50720,7 +50720,7 @@ int func_1257(char[4] cParam0)
 					PED::SET_PED_CONFIG_FLAG(&(Local_59[5]), 297, true);
 					Var1 = { func_223(9, 3) };
 					TASK::OPEN_SEQUENCE_TASK(&iVar5);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2520.43f, 446.4f, 146.14f, 1f, -1, 0.25f, false, Var1.f_3);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -2520.43f, 446.4f, 146.14f, 1f, -1, 0.25f, 0, Var1.f_3);
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, &(Local_59[5]), 0, -1082130432, -1082130432, -1082130432);
 					func_1691(&(Local_59[4]), &iVar5, 0, 0, 1, 1);
 					func_717("MR53_H_HD01", 10000, 0, 0, 0, 1);
@@ -51587,7 +51587,7 @@ int func_1269(char[4] cParam0)
 				if (!ANIMSCENE::_GET_ANIM_SCENE_ENTITY_MATRIX(&(Local_59.f_153[4]), "Jack", &uVar0, true, "pl_mount_horse", 2))
 				{
 				}
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_59[3]), -2590.89f, 464.46f, 145.97f, 1f, -1, 0.25f, false, -28.09f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_59[3]), -2590.89f, 464.46f, 145.97f, 1f, -1, 0.25f, 0, -28.09f);
 			}
 			func_1676(cParam0, func_1688(19), 0);
 			func_1248(cParam0, 1, 11, 1, vLocal_19, -1082130432 /* Float: -1f */, &(Local_59[10]), 0);
@@ -53078,7 +53078,7 @@ void func_1316(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -65826,7 +65826,7 @@ int func_1704(char[4] cParam0)
 			}
 			TASK::TASK_CLEAR_LOOK_AT(&(Local_59[4]));
 			TASK::TASK_LOOK_AT_ENTITY(&(Local_59[4]), &(Local_59[5]), -1, 0, 51, 0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_59[4]), vLocal_313, 1f, -1, 0.25f, false, fLocal_316);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_59[4]), vLocal_313, 1f, -1, 0.25f, 0, fLocal_316);
 			Local_59.f_200 = 6;
 			break;
 		case 6:
@@ -65931,7 +65931,7 @@ void func_1706(var uParam0, vector3 vParam1, bool bParam4, float fParam5)
 	if (func_462(*uParam0, 0))
 	{
 		TASK::OPEN_SEQUENCE_TASK(&iVar0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, fParam5, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam1, fParam5, -1, 0.25f, 0, 40000f);
 		if (bParam4)
 		{
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, 0, -1082130432, -1082130432, -1082130432);
@@ -87141,7 +87141,7 @@ void func_2581(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2612(uParam0, iParam1) };
@@ -87162,10 +87162,10 @@ void func_2581(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_2213(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2213(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

@@ -6429,7 +6429,7 @@ void func_216(var uParam0)
 	}
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	TASK::TASK_TURN_PED_TO_FACE_COORD(0, func_308(), 3000);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_308(), 1.3f, -1, 4f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_308(), 1.3f, -1, 4f, 0, 40000f);
 	TASK::TASK_USE_NEAREST_SCENARIO_CHAIN_TO_COORD(0, TASK::_GET_SCENARIO_POINT_COORDS(iLocal_16, true), 0.5f, 250, false, false, false);
 	TASK::_TASK_USE_SCENARIO_POINT(0, iLocal_17, 0, 0, true, false, 0, false, -1f, false);
 	TASK::CLOSE_SEQUENCE_TASK(iVar0);

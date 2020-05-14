@@ -29332,7 +29332,7 @@ void func_1085(int iParam0, int iParam1, vector3 vParam2, float fParam5, bool bP
 		{
 			return;
 		}
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vParam2, 1f, -1, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vParam2, 1f, -1, 0.25f, 0, 40000f);
 		return;
 	}
 	if (func_1062(Local_17.f_2[iParam0 /*9*/], -1098463898, 0) != 2)
@@ -29499,7 +29499,7 @@ void func_1096(int iParam0, vector3 vParam1, float fParam4, float fParam5, float
 			return;
 		}
 	}
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vParam1, fParam4, -1, fParam6, false, fParam5);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vParam1, fParam4, -1, fParam6, 0, fParam5);
 }
 
 void func_1097(int iParam0, int iParam1)

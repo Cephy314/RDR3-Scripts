@@ -9683,7 +9683,7 @@ void func_335(var uParam0)
 					func_718(uLocal_261[iVar0], *(vLocal_483[iVar0 /*3*/]), &(fLocal_502[iVar0]), &(uLocal_380[iVar0]));
 					if (iVar0 == 0)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_261[iVar0]), vLocal_479, 1f, -1, 0.25f, false, fLocal_482);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_261[iVar0]), vLocal_479, 1f, -1, 0.25f, 0, fLocal_482);
 						func_716(iVar0, &(iLocal_597[iVar0]), 2);
 					}
 					else
@@ -9800,7 +9800,7 @@ void func_336(var uParam0)
 				if (func_345(bLocal_255, bLocal_252, 0, 1) < 30f || bLocal_116)
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_373);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_519, 1f, -1, 0.25f, false, fLocal_522);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_519, 1f, -1, 0.25f, 0, fLocal_522);
 					func_722(0, joaat("WORLD_HUMAN_WRITE_NOTEBOOK"), 0, 1, 0, -1082130432 /* Float: -1f */);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_373);
 					TASK::CLEAR_PED_TASKS(bLocal_255, 1, 0);
@@ -9884,7 +9884,7 @@ void func_337(var uParam0)
 						TASK::CLEAR_PED_TASKS(bLocal_258, 1, 0);
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_373);
 						TASK::TASK_MOUNT_ANIMAL(false, bLocal_259, -1, -1, 1f, 1, 0, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_531, 1f, -1, 1f, false, fLocal_534);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_531, 1f, -1, 1f, 0, fLocal_534);
 						TASK::TASK_SMART_FLEE_PED(false, Global_35, 1000f, -1, 16384, 1f, bLocal_259);
 						TASK::CLOSE_SEQUENCE_TASK(iLocal_373);
 						TASK::CLEAR_PED_TASKS(bLocal_258, 1, 0);
@@ -17916,7 +17916,7 @@ int func_638(var uParam0)
 			{
 				PED::FORCE_PED_MOTION_STATE(Global_35, joaat("MOTIONSTATE_WALK"), false, 1, false);
 			}
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, ((*Global_1347702)[uParam0->f_174 /*49*/])->f_24, 1f, 7500, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, ((*Global_1347702)[uParam0->f_174 /*49*/])->f_24, 1f, 7500, 0.25f, 0, 40000f);
 		}
 		if (func_221(((*Global_1347702)[uParam0->f_174 /*49*/])->f_43, 0))
 		{
@@ -17976,7 +17976,7 @@ int func_639(var uParam0)
 			{
 				PED::FORCE_PED_MOTION_STATE(Global_35, joaat("MOTIONSTATE_WALK"), false, 1, false);
 			}
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, uParam0->f_206.f_5, 1f, 7500, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, uParam0->f_206.f_5, 1f, 7500, 0.25f, 0, 40000f);
 		}
 		if (func_221(((*Global_1347702)[uParam0->f_174 /*49*/])->f_43, 0))
 		{
@@ -44948,7 +44948,7 @@ void func_1529(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bPara
 		}
 		else if (bParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(bParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -46541,7 +46541,7 @@ int func_1578(bool bParam0, bool bParam1, var uParam2)
 	switch (bVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(bVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -60629,7 +60629,7 @@ void func_2011(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	bool bVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2182(uParam0, iParam1) };
@@ -60650,10 +60650,10 @@ void func_2011(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			bVar3 = (bVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, bVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, bVar3);
 		}
 		if (!func_1202(uParam0->f_912[&uParam0->f_371[iParam1 /*18*/] /*41*/], 4) && !func_1202(uParam0->f_912[&uParam0->f_371[iParam1 /*18*/] /*41*/], 2))
 		{

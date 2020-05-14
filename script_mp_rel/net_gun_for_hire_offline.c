@@ -26115,7 +26115,7 @@ void func_927(char* sParam0, var uParam1, bool bParam2, bool bParam3)
 		{
 			vVar5 = { *(sParam0->f_28[iVar0 /*5*/]) + ENTITY::GET_ENTITY_FORWARD_VECTOR(iVar4) * FtoV(MISC::GET_RANDOM_FLOAT_IN_RANGE(1f, 2f)) };
 		}
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar4, vVar5, 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar4, vVar5, 1f, 20000, 0.25f, 0, 40000f);
 	}
 }
 
@@ -30560,7 +30560,7 @@ int func_1137(var uParam0, char* sParam1, var uParam2, int iParam3, int iParam4)
 		if (!func_1263(iParam3, 242628503) && uParam0->f_2 & 16 == 0)
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iVar14);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 1f, 5000, 0.25f, false, Var2.f_3.f_2);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 1f, 5000, 0.25f, 0, Var2.f_3.f_2);
 			TASK::TASK_STAND_STILL(0, 3000);
 			func_1265(iParam3, &iVar14, 0, 0, 1, 1);
 			if (func_1263(iParam3, 242628503))

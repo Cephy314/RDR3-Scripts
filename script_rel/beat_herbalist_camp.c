@@ -10908,7 +10908,7 @@ int func_346(int iParam0, var uParam1, var uParam2)
 		iParam0->f_512++;
 		if (!bVar1)
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, TASK::_GET_SCENARIO_POINT_COORDS(iParam0->f_87, true), 1f, -1, 3f, false, TASK::_GET_SCENARIO_POINT_HEADING(iParam0->f_87, true));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, TASK::_GET_SCENARIO_POINT_COORDS(iParam0->f_87, true), 1f, -1, 3f, 0, TASK::_GET_SCENARIO_POINT_HEADING(iParam0->f_87, true));
 		}
 		if (func_322(iParam0->f_7, 0, 1, 0) != joaat("WEAPON_UNARMED"))
 		{
@@ -12592,7 +12592,7 @@ int func_415(int iParam0, var uParam1, vector3 vParam2, bool bParam5, float fPar
 				if (!func_79(vParam2))
 				{
 					bParam8 = false;
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*uParam1, vParam2, fParam12, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(*uParam1, vParam2, fParam12, -1, 0.25f, 0, 40000f);
 				}
 				if (VOLUME::_DOES_VOLUME_EXIST(bParam5))
 				{
@@ -35933,7 +35933,7 @@ int func_1129(int iParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(iParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;

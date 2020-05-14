@@ -1474,7 +1474,7 @@ int func_44(int iParam0)
 	{
 		if (!func_106(Global_35) && !func_173(bLocal_28, 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_28, func_174(1, 3), 1f, 20000, 0.25f, false, func_175(1, 3));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_28, func_174(1, 3), 1f, 20000, 0.25f, 0, func_175(1, 3));
 		}
 	}
 	if ((((((func_113(iParam0, 2) && func_113(iParam0, 3)) && func_113(iParam0, 1)) && func_114(iParam0)) && func_115(iParam0)) && !func_176("CRN1_INT_LI")) && func_21(&uLocal_118) >= 2f)
@@ -10454,7 +10454,7 @@ void func_471(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam4
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

@@ -4448,7 +4448,7 @@ int func_124()
 								PED::_0x2208438012482A1A(&(iLocal_208[2]), true, false);
 								vVar1 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(iLocal_208[2]), 0f, 1.5f, 0f) };
 								TASK::OPEN_SEQUENCE_TASK(&iVar0);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, true, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 0.25f, 1, 40000f);
 								TASK::TASK_COMBAT_PED(0, Global_35, 68157440, 4096);
 								func_364(&(iLocal_208[2]), &iVar0, 0, 0, 1, 1);
 								PED::_0x2208438012482A1A(&(iLocal_208[2]), true, false);
@@ -17232,7 +17232,7 @@ int func_575(var uParam0, int iParam1)
 	int iVar5;
 	int iVar6;
 	int iVar7;
-	bool bVar8;
+	int iVar8;
 	int iVar9;
 	int iVar10;
 	int iVar11;
@@ -17385,10 +17385,10 @@ int func_575(var uParam0, int iParam1)
 					if (!func_92(uParam0->f_11))
 					{
 					}
-					bVar8 = false;
+					iVar8 = 0;
 					if (!func_104(uParam0->f_23, 1024))
 					{
-						bVar8 = (bVar8 || 1);
+						iVar8 |= 1;
 					}
 					TASK::OPEN_SEQUENCE_TASK(&iVar9);
 					if (!func_92(uParam0->f_11))
@@ -17399,7 +17399,7 @@ int func_575(var uParam0, int iParam1)
 						}
 						else
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_11, uParam0->f_21, func_701(!func_104(uParam0->f_23, 128), 20000, -1), uParam0->f_17, bVar8, uParam0->f_19);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_11, uParam0->f_21, func_701(!func_104(uParam0->f_23, 128), 20000, -1), uParam0->f_17, iVar8, uParam0->f_19);
 						}
 					}
 					if (func_104(uParam0->f_23, 16))
@@ -17408,7 +17408,7 @@ int func_575(var uParam0, int iParam1)
 					}
 					else
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_8, uParam0->f_21, func_701(!func_104(uParam0->f_23, 128), 20000, -1), uParam0->f_17, bVar8, uParam0->f_19);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, uParam0->f_8, uParam0->f_21, func_701(!func_104(uParam0->f_23, 128), 20000, -1), uParam0->f_17, iVar8, uParam0->f_19);
 					}
 					if (func_104(uParam0->f_23, 1))
 					{

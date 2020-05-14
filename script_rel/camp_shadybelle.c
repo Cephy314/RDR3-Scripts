@@ -3778,7 +3778,7 @@ void func_97()
 						TASK::TASK_DUMP_CARRIABLE_FROM_PARENT(0, Local_18.f_1786.f_5, Local_18.f_1786.f_8);
 						if (func_373(16))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_18.f_1786.f_5, 0f, 3f, 0f), 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Local_18.f_1786.f_5, 0f, 3f, 0f), 1f, 20000, 0.25f, 0, 40000f);
 						}
 						TASK::TASK_DISMOUNT_ANIMAL(0, 0, 0, 0, 0, 0);
 					}
@@ -4398,7 +4398,7 @@ int func_113()
 	{
 		if (!func_473(32))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_18.f_1862.f_5, TASK::_GET_SCENARIO_POINT_COORDS(Local_18.f_1862.f_6, true), 1.5f, 35000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Local_18.f_1862.f_5, TASK::_GET_SCENARIO_POINT_COORDS(Local_18.f_1862.f_6, true), 1.5f, 35000, 0.25f, 0, 40000f);
 			func_472(32);
 		}
 		if (ENTITY::IS_ENTITY_AT_COORD(Local_18.f_1862.f_5, TASK::_GET_SCENARIO_POINT_COORDS(Local_18.f_1862.f_6, true), 0.5f, 0.5f, 2f, false, true, 0))
@@ -5055,7 +5055,7 @@ void func_141(bool bParam0)
 	{
 		return;
 	}
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bParam0, TASK::_GET_SCENARIO_POINT_COORDS(iVar0, true), 1.5f, 20000, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bParam0, TASK::_GET_SCENARIO_POINT_COORDS(iVar0, true), 1.5f, 20000, 0.25f, 0, 40000f);
 }
 
 bool func_142()
@@ -57583,7 +57583,7 @@ void func_1887(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

@@ -6635,7 +6635,7 @@ void func_256()
 		if (!func_199(512))
 		{
 			TASK::OPEN_SEQUENCE_TASK(&((Local_763.f_18.f_9[0 /*7*/])->f_2));
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_407(), 1f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_407(), 1f, -1, 0.25f, 1, 40000f);
 			TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 			func_408(func_160(0), &((Local_763.f_18.f_9[0 /*7*/])->f_2), 0, 0, 1, 1);
 			func_394(512);

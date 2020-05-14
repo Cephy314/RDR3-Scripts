@@ -5568,7 +5568,7 @@ void func_124()
 			iLocal_1185 = &iVar0[0];
 			TASK::STOP_ANIM_TASK(&(uLocal_1163[0]), &(Local_1026[4 /*2*/]), (Local_1026[4 /*2*/])->f_1, -8f);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_1173);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_1250[&iVar0[0] /*3*/]), 2f, -1, 0.25f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_1250[&iVar0[0] /*3*/]), 2f, -1, 0.25f, 1, 40000f);
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Global_35, 0, -1082130432, -1082130432, -1082130432);
 			TASK::TASK_PLAY_ANIM(0, &(Local_1026[4 /*2*/]), (Local_1026[4 /*2*/])->f_1, 2f, -2f, -1, 5, 0f, false, 1048576, false, 0, false);
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Global_35, -1, -1082130432, -1082130432, -1082130432);
@@ -12771,8 +12771,8 @@ int func_351()
 			}
 			TASK::CLEAR_SEQUENCE_TASK(&iLocal_1173);
 			TASK::OPEN_SEQUENCE_TASK(&iLocal_1173);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1238, 3f, -1, 0.01f, true, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1241, 2f, -1, 0.01f, true, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1238, 3f, -1, 0.01f, 1, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_1241, 2f, -1, 0.01f, 1, 40000f);
 			TASK::TASK_GO_STRAIGHT_TO_COORD(0, vLocal_1369, 2f, 20000, 40000f, 0.1f, 0);
 			TASK::CLOSE_SEQUENCE_TASK(iLocal_1173);
 			TASK::TASK_PERFORM_SEQUENCE(&(uLocal_1163[0]), iLocal_1173);

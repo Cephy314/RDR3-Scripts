@@ -1163,7 +1163,7 @@ int func_51()
 				if ((!func_86(&(uLocal_7[0]), 242628503) && !func_87(&(uLocal_7[0]))) && !PED::IS_PED_USING_ANY_SCENARIO(&(uLocal_7[0])))
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_3);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 654.2048f, -1253.218f, 42.8467f, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 654.2048f, -1253.218f, 42.8467f, 1f, -1, 0.25f, 0, 40000f);
 					TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, 654.2048f, -1253.218f, 42.8467f, 10f, 30000, false, true, false, false);
 					func_88(&(uLocal_7[0]), &iLocal_3, 0, 0, 1, 1);
 				}
@@ -1212,7 +1212,7 @@ int func_51()
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_3);
 					TASK::TASK_LEAVE_VEHICLE(false, bLocal_22, 0, 0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 663.9668f, -1265.367f, 42.8657f, 1.85f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 663.9668f, -1265.367f, 42.8657f, 1.85f, -1, 0.25f, 0, 40000f);
 					func_88(&(uLocal_7[1]), &iLocal_3, 0, 0, 1, 1);
 				}
 				if ((TASK::GET_SCRIPT_TASK_STATUS(&(uLocal_7[1]), 242628503, true) == 8 || func_91(&uLocal_15) > 35000) || TASK::IS_PED_ACTIVE_IN_SCENARIO(&(uLocal_7[1]), 1))
@@ -1233,7 +1233,7 @@ int func_51()
 					{
 						TASK::OPEN_SEQUENCE_TASK(&iLocal_3);
 						TASK::TASK_LEAVE_VEHICLE(false, bLocal_22, 0, 0);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 663.9668f, -1265.367f, 42.8657f, 1.85f, -1, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 663.9668f, -1265.367f, 42.8657f, 1.85f, -1, 0.25f, 0, 40000f);
 						func_88(&(uLocal_7[1]), &iLocal_3, 0, 0, 1, 1);
 					}
 				}
@@ -1301,9 +1301,9 @@ int func_52()
 				{
 					vVar2 = { 675.2753f, -1225.374f, 43.6898f };
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_3);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, 1.25f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar2, 1.25f, 20000, 0.25f, 0, 40000f);
 					TASK::TASK_DISMOUNT_ANIMAL(0, 0, 0, 0, 0, 0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 654.2048f, -1253.218f, 42.8467f, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 654.2048f, -1253.218f, 42.8467f, 1f, -1, 0.25f, 0, 40000f);
 					TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, 654.2048f, -1253.218f, 42.8467f, 10f, 10000, false, true, false, false);
 					func_88(&(uLocal_7[0]), &iLocal_3, 0, 0, 1, 1);
 					iLocal_10 = 7;
@@ -1361,7 +1361,7 @@ int func_52()
 					TASK::_TASK_VEHICLE_DRIVE_TO_DESTINATION(0, bLocal_22, 843.7542f, -1023.801f, 50.9411f, 7f, 69222692, 1, 50f, 2f, 0);
 					TASK::TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING(false, bLocal_22, sLocal_26, 524295, 1, 9218, -1, -1082130432, 0, 1073741824, 0);
 					TASK::TASK_LEAVE_VEHICLE(false, bLocal_22, 0, 0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 779.7314f, -1169.254f, 45.9987f, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 779.7314f, -1169.254f, 45.9987f, 1f, -1, 0.25f, 0, 40000f);
 					TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, 779.7314f, -1169.254f, 45.9987f, 50f, 30000, false, true, false, false);
 					func_88(&(uLocal_7[1]), &iLocal_3, 0, 0, 1, 1);
 					iLocal_11 = 6;

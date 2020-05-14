@@ -1816,12 +1816,12 @@ void func_58()
 			TASK::OPEN_SEQUENCE_TASK(&iVar9);
 			if (!func_77(vVar0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 1f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 1f, 1, 40000f);
 			}
 			TASK::TASK_MOUNT_ANIMAL(0, (Local_208[0 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
 			if (!func_77(vVar3))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 1.5f, 20000, 4f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 1.5f, 20000, 4f, 0, 40000f);
 			}
 			TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vVar6, 5f, 1f, 0, 0);
 			func_146(&(iLocal_528[0]), &iVar9, 0, 0, 1, 1);
@@ -1836,12 +1836,12 @@ void func_58()
 			TASK::OPEN_SEQUENCE_TASK(&iVar9);
 			if (!func_77(vVar0))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 1f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 1f, 1, 40000f);
 			}
 			TASK::TASK_MOUNT_ANIMAL(0, (Local_208[1 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
 			if (!func_77(vVar3))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 1.5f, 20000, 4f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 1.5f, 20000, 4f, 0, 40000f);
 			}
 			TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vVar6, 5f, 1f, 0, 0);
 			func_146(&(iLocal_528[1]), &iVar9, 0.75f, 0, 1, 1);
@@ -3834,7 +3834,7 @@ int func_120(int iParam0)
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				if (!func_77(vVar1))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 1f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 1f, 1, 40000f);
 				}
 				TASK::TASK_MOUNT_ANIMAL(0, (Local_208[0 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
 				func_146(&(iLocal_528[0]), &iVar0, 0, 0, 1, 1);
@@ -3843,7 +3843,7 @@ int func_120(int iParam0)
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				if (!func_77(vVar1))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 1f, true, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1f, 20000, 1f, 1, 40000f);
 				}
 				TASK::TASK_MOUNT_ANIMAL(0, (Local_208[1 /*32*/])->f_11, -1, -1, 1f, 1, 0, 0);
 				func_146(&(iLocal_528[1]), &iVar0, 0.75f, 0, 1, 1);
@@ -3871,14 +3871,14 @@ int func_120(int iParam0)
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				if (!func_77(vVar8))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar8, 1.5f, 20000, 4f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar8, 1.5f, 20000, 4f, 0, 40000f);
 				}
 				TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vVar5, 5f, fVar4, 0, 0);
 				func_146(&(iLocal_528[0]), &iVar0, 0, 0, 1, 1);
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
 				if (!func_77(vVar8))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar8, 1.5f, 20000, 4f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar8, 1.5f, 20000, 4f, 0, 40000f);
 				}
 				TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vVar5, 5f, fVar4, 0, 0);
 				func_146(&(iLocal_528[1]), &iVar0, 0.5f, 0, 1, 1);
@@ -10527,7 +10527,7 @@ int func_291(int iParam0)
 				vVar0 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(&(iLocal_528[0]), 0f, 1.5f, 0f) };
 				func_395(&vVar0, 1, 10, 0);
 				TASK::OPEN_SEQUENCE_TASK(&iVar3);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, 1, 40000f);
 				if (func_54((Local_208[0 /*32*/])->f_11, 0, 0))
 				{
 					TASK::TASK_MOUNT_ANIMAL(0, (Local_208[0 /*32*/])->f_11, 20000, -1, 1f, 1, 0, 0);
@@ -10558,7 +10558,7 @@ int func_291(int iParam0)
 			TASK::OPEN_SEQUENCE_TASK(&iVar3);
 			if (!bVar4)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 1f, 20000, 0.25f, 1, 40000f);
 			}
 			if (func_54((Local_208[1 /*32*/])->f_11, 0, 0))
 			{
@@ -18108,7 +18108,7 @@ void func_565()
 {
 	func_56();
 	vLocal_640 = { func_337() };
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_528[2]), vLocal_640, 1f, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(iLocal_528[2]), vLocal_640, 1f, -1, 0.25f, 0, 40000f);
 }
 
 int func_566()

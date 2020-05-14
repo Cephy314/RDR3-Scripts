@@ -10081,7 +10081,7 @@ void func_222()
 							PED::SET_PED_COMBAT_MOVEMENT(bLocal_17, 1);
 							PED::SET_PED_COMBAT_ATTRIBUTES(bLocal_17, 0, true);
 							PED::SET_PED_COMBAT_ATTRIBUTES(bLocal_17, 12, true);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_17, vLocal_60, 3f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_17, vLocal_60, 3f, 20000, 0.25f, 0, 40000f);
 							PED::REGISTER_HATED_TARGETS_AROUND_PED(bLocal_17, 100f);
 							PED::SET_PED_SPHERE_DEFENSIVE_AREA(bLocal_17, vLocal_277, 4f, 0, false, 0);
 							if (iLocal_661 < 11)
@@ -10112,7 +10112,7 @@ void func_222()
 					TASK::TASK_LOOK_AT_ENTITY(bLocal_17, Global_35, -1, 0, 51, 0);
 					vLocal_199 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(Global_1392388->f_5, 3f, 0f, 0f) };
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_199, 1f, -1, 5f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_199, 1f, -1, 5f, 0, 40000f);
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_1392388->f_5, -1, -1082130432, -1082130432, -1082130432);
 					TASK::CLOSE_SEQUENCE_TASK(iVar0);
 					TASK::TASK_PERFORM_SEQUENCE(bLocal_17, iVar0);
@@ -20266,7 +20266,7 @@ void func_536()
 	TASK::OPEN_SEQUENCE_TASK(&iVar0);
 	if (func_507(bLocal_17))
 	{
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_77, 1.25f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_77, 1.25f, 20000, 0.25f, 0, 40000f);
 		TASK::TASK_DISMOUNT_ANIMAL(0, 0, 0, 0, 0, 0);
 	}
 	TASK::TASK_PUT_PED_DIRECTLY_INTO_COVER(false, vLocal_50, -1, 0, 0, 0, 0, iLocal_49, 0, 0, 0);
@@ -20429,8 +20429,8 @@ void func_542()
 				{
 					TASK::OPEN_SEQUENCE_TASK(&iVar0);
 					TASK::TASK_MOUNT_ANIMAL(false, bLocal_92, 90000, -1, 1f, 513, 0, 0);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1.001f, -1, 0.25f, true, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar4, 1.001f, -1, 0.25f, false, fVar7);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 1.001f, -1, 0.25f, 1, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar4, 1.001f, -1, 0.25f, 0, fVar7);
 					TASK::CLOSE_SEQUENCE_TASK(iVar0);
 					TASK::TASK_PERFORM_SEQUENCE(bLocal_17, iVar0);
 					TASK::CLEAR_SEQUENCE_TASK(&iVar0);
@@ -20606,7 +20606,7 @@ void func_549()
 			}
 			else if (!func_543(bLocal_17, 713668775))
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_17, vLocal_69, 3f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_17, vLocal_69, 3f, 20000, 0.25f, 0, 40000f);
 			}
 		}
 		else if (BUILTIN::VDIST(ENTITY::GET_ENTITY_COORDS(bLocal_17, true, false), vLocal_65) < 3f)
@@ -20621,7 +20621,7 @@ void func_549()
 		}
 		else if (!func_543(bLocal_17, 713668775))
 		{
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_17, vLocal_65, 3f, 20000, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(bLocal_17, vLocal_65, 3f, 20000, 0.25f, 0, 40000f);
 		}
 	}
 	else if (!PED::IS_PED_IN_COMBAT(bLocal_17, 0))
@@ -26899,7 +26899,7 @@ int func_758(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -44934,7 +44934,7 @@ void func_1344(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)

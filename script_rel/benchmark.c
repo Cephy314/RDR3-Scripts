@@ -3676,7 +3676,7 @@ int func_124(var uParam0)
 			{
 				if (ENTITY::DOES_ENTITY_EXIST(&(uParam0->f_67[iVar1])))
 				{
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uParam0->f_67[iVar1]), func_274(), 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uParam0->f_67[iVar1]), func_274(), 1f, -1, 0.25f, 0, 40000f);
 				}
 				iVar1++;
 			}
@@ -7780,7 +7780,7 @@ int func_298(var uParam0)
 		case 1:
 			if (func_468(uParam0->f_16, func_467(), 1) < 15f)
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_16, func_467(), 2.5f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam0->f_16, func_467(), 2.5f, 20000, 0.25f, 0, 40000f);
 				func_474(uParam0, 2);
 			}
 			else
@@ -10138,7 +10138,7 @@ void func_397(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(iParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(iParam0), bParam2);
 		}
 	}
 	if (bParam3)

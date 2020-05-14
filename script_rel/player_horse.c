@@ -1326,7 +1326,7 @@ void func_41(int iParam0)
 	{
 		vVar7 = { TASK::_GET_SCENARIO_POINT_COORDS(iVar6, true) };
 		PED::SET_PED_CONFIG_FLAG(iVar0, 355, true);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar7, 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(iVar0, vVar7, 1f, 20000, 0.25f, 0, 40000f);
 	}
 }
 
@@ -21580,7 +21580,7 @@ int func_761(int iParam0)
 
 int func_762(int iParam0)
 {
-	if (PED::_GET_PED_COMPONENT(iParam0, 3, false) == 0)
+	if (PED::_GET_PED_COMPONENT_CATEGORY(iParam0, 3, false) == 0)
 	{
 		return 0;
 	}

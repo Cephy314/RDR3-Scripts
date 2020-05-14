@@ -4292,7 +4292,7 @@ int func_97(var uParam0, var uParam1)
 	switch (uParam1->f_3)
 	{
 		case 0:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam1->f_11, uParam0->f_3, 1f, 20000, 2f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(uParam1->f_11, uParam0->f_3, 1f, 20000, 2f, 0, 40000f);
 			func_176(uParam1);
 			break;
 		case 1:

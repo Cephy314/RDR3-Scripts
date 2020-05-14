@@ -1257,7 +1257,7 @@ int func_42()
 		{
 			TASK::OPEN_SEQUENCE_TASK(&iVar0);
 			TASK::_TASK_MOVE_IN_TRAFFIC_2(0, vLocal_17, 20f, 3f, 0, 0);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_17, 3f, -1, 10f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_17, 3f, -1, 10f, 0, 40000f);
 			TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, vLocal_17, 20f, 0, false, false, false, false);
 			func_102(&(uLocal_322[2]), &iVar0, 0, 0, 1, 1);
 			bLocal_376 = true;
@@ -3960,10 +3960,10 @@ int func_115()
 					TASK::OPEN_SEQUENCE_TASK(&iVar6);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1617.26f, -1353.18f, 43.6f, 1f, -1, 1f, 16, 40000f);
 					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1679.66f, -1303.13f, 41.57f, 1f, -1, 1f, 16, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1715.49f, -1302.33f, 42.28f, 1f, -1, 0.25f, false, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1757.25f, -1306.82f, 42.99f, 1f, -1, 0.25f, false, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1810.79f, -1329.1f, 42.96f, 1f, -1, 0.25f, false, 40000f);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_14, 1f, -1, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1715.49f, -1302.33f, 42.28f, 1f, -1, 0.25f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1757.25f, -1306.82f, 42.99f, 1f, -1, 0.25f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1810.79f, -1329.1f, 42.96f, 1f, -1, 0.25f, 0, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_14, 1f, -1, 0.25f, 0, 40000f);
 					func_102(&(uLocal_322[1]), &iVar6, 0, 0, 1, 1);
 					func_267(&(uLocal_322[1]), &(uLocal_322[0]), &uLocal_655, 0f, 0f, 0f, 0, 0, 1, 1069547520 /* Float: 1.5f */, -1082130432 /* Float: -1f */, 1073069561, 1056964608 /* Float: 0.5f */, 1092616192 /* Float: 10f */, -1, 1, 0, 0, 0, 1);
 					func_268(&(uLocal_322[0]), &(uLocal_322[1]), &uLocal_655, -1082130432 /* Float: -1f */, 0, 0, -1082130432 /* Float: -1f */, 1f, 1, 8, 0, 0, 1069547520 /* Float: 1.5f */, 1073741824 /* Float: 2f */, 1050253722 /* Float: 0.3f */, 1067030938 /* Float: 1.2f */, 0, 0, -1, 1, -1082130432 /* Float: -1f */, -1082130432 /* Float: -1f */, 1);
@@ -10164,10 +10164,10 @@ void func_269(int iParam0)
 	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1598.12f, -1410.96f, 52.34f, 1f, -1, 1f, 16, 40000f);
 	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1617.26f, -1353.18f, 43.6f, 1f, -1, 1f, 16, 40000f);
 	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1679.66f, -1303.13f, 41.57f, 1f, -1, 1f, 16, 40000f);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1715.49f, -1302.33f, 42.28f, 1f, -1, 0.25f, false, 40000f);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1757.25f, -1306.82f, 42.99f, 1f, -1, 0.25f, false, 40000f);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1810.79f, -1329.1f, 42.96f, 1f, -1, 0.25f, false, 40000f);
-	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_14, 1f, -1, 0.25f, false, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1715.49f, -1302.33f, 42.28f, 1f, -1, 0.25f, 0, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1757.25f, -1306.82f, 42.99f, 1f, -1, 0.25f, 0, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1810.79f, -1329.1f, 42.96f, 1f, -1, 0.25f, 0, 40000f);
+	TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_14, 1f, -1, 0.25f, 0, 40000f);
 	TASK::_TASK_USE_NEAREST_SCENARIO_TO_COORD(0, ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 50f, 0, false, false, false, false);
 	func_102(iParam0, &iVar0, 1f, 1f, 1, 1);
 	EVENT::REMOVE_SHOCKING_EVENT(iLocal_400);
@@ -16043,10 +16043,10 @@ int func_439()
 			break;
 		case 55:
 			TASK::OPEN_SEQUENCE_TASK(&iVar2);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1571.92f, -1432.24f, 59.66f, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, 1571.92f, -1432.24f, 59.66f, 1f, -1, 0.25f, 0, 40000f);
 			TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, &(uLocal_322[1]), -1, -1082130432, -1082130432, -1082130432);
 			func_102(&(uLocal_322[0]), &iVar2, 0, 0, 1, 1);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_322[1]), 1571.92f, -1432.24f, 59.66f, 1f, -1, 0.25f, false, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_322[1]), 1571.92f, -1432.24f, 59.66f, 1f, -1, 0.25f, 0, 40000f);
 			func_110(&uLocal_437);
 			iLocal_396 = 5;
 			break;

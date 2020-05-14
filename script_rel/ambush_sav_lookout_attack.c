@@ -919,7 +919,7 @@ int func_20()
 				case 0:
 					Var2 = { func_128(&Local_274, iVar0) };
 					TASK::OPEN_SEQUENCE_TASK(&iVar1);
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 1f, -1, 2.5f, false, Var2.f_3);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var2, 1f, -1, 2.5f, 0, Var2.f_3);
 					func_129(0, joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING_BAR_CA"), Var2, Var2.f_3, -1, 1, 0, 0, -1082130432 /* Float: -1f */);
 					func_130(&(iLocal_15[iVar0]), &iVar1, 0, 0, 1, 1);
 					func_127(&(iLocal_15[iVar0]), joaat("WEAPON_BOW"), -1, 0, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
@@ -1697,7 +1697,7 @@ void func_51()
 						TASK::TASK_MOUNT_ANIMAL(0, &(iLocal_15.f_40[iVar0]), 20000, -1, 2f, 1, 0, 0);
 						if (!func_69((iLocal_15.f_118[iVar0 /*4*/])->f_1))
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 						}
 						TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 						func_130(&(iLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -1725,7 +1725,7 @@ void func_51()
 							TASK::OPEN_SEQUENCE_TASK(&iVar12);
 							if (!func_69((iLocal_15.f_118[iVar0 /*4*/])->f_1))
 							{
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, (iLocal_15.f_118[iVar0 /*4*/])->f_1, 2f, 20000, 0.25f, 0, 40000f);
 							}
 							TASK::_TASK_MOVE_IN_TRAFFIC_3(0, Global_35, 2.5f, 0, 0);
 							func_130(&(iLocal_15[iVar0]), &iVar12, 0, 0, 1, 1);
@@ -4575,7 +4575,7 @@ int func_196(int iParam0, int iParam1, float fParam2)
 					}
 					if (!func_69(vVar7))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, fParam2, -1, 6f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, fParam2, -1, 6f, 1, 40000f);
 					}
 					TASK::_TASK_MOVE_IN_TRAFFIC_2(0, func_332(iParam1, 1), 40f, fParam2, 0, 0);
 				}
@@ -4583,7 +4583,7 @@ int func_196(int iParam0, int iParam1, float fParam2)
 				{
 					if (!func_69(vVar7))
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, fParam2, -1, 6f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, fParam2, -1, 6f, 1, 40000f);
 					}
 					TASK::_TASK_MOVE_IN_TRAFFIC_2(0, func_332(iParam1, 1), 40f, fParam2, 128, 0);
 				}
@@ -4592,7 +4592,7 @@ int func_196(int iParam0, int iParam1, float fParam2)
 					if (!func_69(vVar7))
 					{
 						TASK::TASK_VEHICLE_DRIVE_TO_COORD(0, iVar5, vVar7, 5f, 0, iVar6, 524419, 4f, 3f);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, 1f, -1, 6f, true, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar7, 1f, -1, 6f, 1, 40000f);
 					}
 					TASK::_TASK_MOVE_IN_TRAFFIC_2(0, func_332(iParam1, 1), 40f, -1f, 0, 0);
 				}

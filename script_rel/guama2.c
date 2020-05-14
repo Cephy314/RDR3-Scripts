@@ -44223,7 +44223,7 @@ int func_1039(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -50611,7 +50611,7 @@ void func_1239(char[4] cParam0)
 						if (iLocal_170 == 1)
 						{
 							TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, func_1719(iLocal_170), 3000, -1082130432, -1082130432, -1082130432);
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_432(2, 19), 1f, 20000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_432(2, 19), 1f, 20000, 0.25f, 0, 40000f);
 							TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, func_1719(iLocal_170), -1, -1082130432, -1082130432, -1082130432);
 						}
 						else if (iLocal_170 == 2)
@@ -52778,7 +52778,7 @@ void func_1297(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -56005,7 +56005,7 @@ void func_1401()
 	if (func_904(&(Local_14.f_52[0]), 0))
 	{
 		func_1736(&(Local_14.f_52[0]), joaat("WEAPON_REPEATER_CARBINE"), -1, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_52[0]), func_432(5, 17), 1f, -1, 0.25f, false, func_433(5, 17));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_52[0]), func_432(5, 17), 1f, -1, 0.25f, 0, func_433(5, 17));
 	}
 	if (func_904(&(Local_14.f_52[1]), 0))
 	{
@@ -56015,7 +56015,7 @@ void func_1401()
 	if (func_904(&(Local_14.f_52[2]), 0))
 	{
 		func_1736(&(Local_14.f_52[2]), joaat("WEAPON_REPEATER_CARBINE"), -1, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_52[2]), func_432(5, 19), 1f, -1, 0.25f, false, func_433(5, 19));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_52[2]), func_432(5, 19), 1f, -1, 0.25f, 0, func_433(5, 19));
 	}
 	if (func_904(&(Local_14.f_52[3]), 0))
 	{
@@ -56025,7 +56025,7 @@ void func_1401()
 	if (func_904(&(Local_14.f_52[4]), 0))
 	{
 		func_1736(&(Local_14.f_52[4]), joaat("WEAPON_REPEATER_CARBINE"), -1, 1, 0, 1056964608 /* Float: 0.5f */, 1065353216 /* Float: 1f */, 0);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_52[4]), func_432(5, 21), 1f, -1, 0.25f, false, func_433(5, 21));
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_14.f_52[4]), func_432(5, 21), 1f, -1, 0.25f, 0, func_433(5, 21));
 	}
 }
 
@@ -86055,7 +86055,7 @@ void func_2540(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	float fVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2565(uParam0, iParam1) };
@@ -86076,10 +86076,10 @@ void func_2540(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			fVar3 = (fVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, fVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, fVar3);
 		}
 		if (!func_2192(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2192(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

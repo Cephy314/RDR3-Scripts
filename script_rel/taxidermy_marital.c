@@ -220,7 +220,7 @@ int func_7(var uParam0)
 					func_18(joaat("TAXIDERMY_MARITAL_07"));
 				}
 				PLAYER::SET_PLAYER_CONTROL(PLAYER::GET_PLAYER_INDEX(), false, 0, false);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -1638.493f, -1361.41f, 83.4157f, 1f, 20000, 0.25f, false, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(Global_35, -1638.493f, -1361.41f, 83.4157f, 1f, 20000, 0.25f, 0, 40000f);
 				func_28(48);
 				func_29(0, 10);
 				BUILTIN::SETTIMERA(0);

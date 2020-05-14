@@ -3884,7 +3884,7 @@ void func_120(int iParam0, int iParam1, int iParam2)
 					PED::FORCE_PED_MOTION_STATE(&(uLocal_600[iParam0]), joaat("MOTIONSTATE_WALK"), false, 0, false);
 				}
 				TASK::OPEN_SEQUENCE_TASK(&iVar0);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_536[1 /*3*/]), 1f, -1, 0.25f, true, 40000f);
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, *(vLocal_536[1 /*3*/]), 1f, -1, 0.25f, 1, 40000f);
 				TASK::TASK_WANDER_STANDARD(0, 40000f, 0);
 				func_265(&(uLocal_600[iParam0]), &iVar0, 0, 0, 1, 1);
 				PED::SET_PED_KEEP_TASK(&(uLocal_600[iParam0]), true);
@@ -4815,7 +4815,7 @@ void func_137()
 					{
 						if (TASK::GET_SCRIPT_TASK_STATUS(&(uLocal_600[2]), 713668775, true) != 1)
 						{
-							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_600[2]), vLocal_543, 2f, 2000, 0.25f, false, 40000f);
+							TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(uLocal_600[2]), vLocal_543, 2f, 2000, 0.25f, 0, 40000f);
 							func_256(&iLocal_588, 5);
 						}
 					}
@@ -4846,7 +4846,7 @@ void func_137()
 						}
 						TASK::OPEN_SEQUENCE_TASK(&iVar1);
 						TASK::TASK_REACT(0, Global_35, Global_36, func_84(iLocal_14, 2), 2f, 0, 4);
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_543, 2f, 2000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vLocal_543, 2f, 2000, 0.25f, 0, 40000f);
 						func_265(&(uLocal_600[2]), &iVar1, 0, 0, 1, 1);
 						func_39(Local_223.f_1);
 						func_256(&iLocal_588, 5);

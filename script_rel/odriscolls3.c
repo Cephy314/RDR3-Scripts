@@ -148,7 +148,7 @@
 	struct<8> Local_1307[2];
 	int iLocal_1324 = 0;
 	int iLocal_1325 = 0;
-	bool bLocal_1326 = false;
+	int iLocal_1326 = 0;
 	int iLocal_1327 = 0;
 	vector3 vLocal_1328 = { 0f, 0f, 0f };
 	vector3 vLocal_1331 = { 0f, 0f, 0f };
@@ -13367,7 +13367,7 @@ void __EntryFunction__()
 	iLocal_1301 = 33;
 	iLocal_1302 = joaat("BAIT_BAG");
 	iLocal_1306 = -1;
-	bLocal_1326 = 8225;
+	iLocal_1326 = 8225;
 	vLocal_1328 = { -1210.37f, -712.323f, 72.118f };
 	vLocal_1331 = { 42f, -18f, 198f };
 	vLocal_1334 = { 4.5f, 10f, 4.5f };
@@ -36869,7 +36869,7 @@ int func_802(var uParam0)
 							if (func_924(Global_35, &(Local_133[1 /*6*/]), 1, 1) >= 3f)
 							{
 								func_1355();
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(1, 6), 1f, -1, 0.25f, false, 40000f);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(1, 6), 1f, -1, 0.25f, 0, 40000f);
 								TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_ANIMAL_HORSE_GRAZING"), -1, true, 0, -1f, false);
 								func_1356(&(Local_133[1 /*6*/]), 0);
 								func_456(50);
@@ -50325,7 +50325,7 @@ int func_1155(bool bParam0, int iParam1, var uParam2)
 	switch (iVar4)
 	{
 		case 1742327865:
-			if (PED::_GET_PED_COMPONENT(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
+			if (PED::_GET_PED_COMPONENT_CATEGORY(iVar8, iVar2, bVar1) == joaat("NECKTIES") && PED::_0xFB4891BD7578CDC1(bParam0, -1455751347))
 			{
 				*uParam2 = 111371848; /* GXTEntry: "Your shirt does not support this type of neckwear." */
 				return 0;
@@ -54488,7 +54488,7 @@ void func_1304(var uParam0)
 						vVar1 = { func_1336(10, 7) };
 					}
 					func_1355();
-					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2.5f, 20000, 0.25f, false, 40000f);
+					TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar1, 2.5f, 20000, 0.25f, 0, 40000f);
 					TASK::_TASK_FLEE_FROM_PED(false, Global_35, vVar1, 100f, -1, 0, 1077936128, 0);
 					func_1356(&(Local_133[iVar0 /*6*/]), fVar4);
 					func_27(vLocal_792[9 /*3*/], 0);
@@ -54911,11 +54911,11 @@ void func_1311()
 					func_1355();
 					if (iVar0 == 6)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 5), 2.5f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 5), 2.5f, 20000, 0.25f, 0, 40000f);
 					}
 					else if (iVar0 == 7)
 					{
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 5), 2.5f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 5), 2.5f, 20000, 0.25f, 0, 40000f);
 					}
 					TASK::TASK_LOOK_AT_ENTITY(false, Global_35, -1, 48, 41, 0);
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, -1, -1082130432, -1082130432, -1082130432);
@@ -55778,7 +55778,7 @@ void func_1346(var uParam0)
 					if (func_924(Global_35, &(Local_133[6 /*6*/]), 1, 1) <= 30f || bVar14)
 					{
 						func_1355();
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 5), 2.001f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 5), 2.001f, 20000, 0.25f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, 0, -1082130432, -1082130432, -1082130432);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, -1, -1082130432, -1082130432, -1082130432);
 						func_1356(&(Local_133[6 /*6*/]), 0);
@@ -55788,7 +55788,7 @@ void func_1346(var uParam0)
 							PED::FORCE_PED_MOTION_STATE(&(Local_133[func_1308(6) /*6*/]), joaat("MOTIONSTATE_RUN"), false, 0, false);
 						}
 						func_1355();
-						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 6), 2.001f, 20000, 0.25f, false, 40000f);
+						TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_845(0, 6), 2.001f, 20000, 0.25f, 0, 40000f);
 						TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, Global_35, -1, -1082130432, -1082130432, -1082130432);
 						func_1356(&(Local_133[7 /*6*/]), 0.2f);
 						PED::_0x2208438012482A1A(&(Local_133[7 /*6*/]), true, false);
@@ -55882,7 +55882,7 @@ void func_1346(var uParam0)
 									TASK::TASK_TURN_PED_TO_FACE_COORD(0, Var5, 0);
 								}
 								TASK::TASK_FOLLOW_WAYPOINT_RECORDING(false, func_496(91), 0, 27656, -1, 0, 0, -1);
-								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1.75f, -1, 0.25f, false, Var5.f_3);
+								TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1.75f, -1, 0.25f, 0, Var5.f_3);
 								TASK::TASK_DISMOUNT_ANIMAL(0, 0, 0, 0, 0, 0);
 								func_1356(&(Local_133[iVar0 /*6*/]), func_1395(iVar0 == 7, 0f, 2.5f));
 								func_943(iVar0, 29);
@@ -55899,7 +55899,7 @@ void func_1346(var uParam0)
 										{
 											Var1 = { func_1578(1, 3) };
 										}
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_133[iVar0 /*6*/]), Var1, 1.75f, 40000, 0.25f, false, Var1.f_3);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(&(Local_133[iVar0 /*6*/]), Var1, 1.75f, 40000, 0.25f, 0, Var1.f_3);
 										func_943(iVar0, 38);
 									}
 								}
@@ -55914,7 +55914,7 @@ void func_1346(var uParam0)
 										Var5 = { func_1886(iVar0 == 6, func_1578(1, 1), func_1578(1, 4)) };
 										func_1355();
 										TASK::TASK_FOLLOW_WAYPOINT_RECORDING(false, func_496(91), 40000, 27658, -1, 0, 0, -1);
-										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1.75f, -1, 0.25f, false, Var5.f_3);
+										TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var5, 1.75f, -1, 0.25f, 0, Var5.f_3);
 										TASK::TASK_DISMOUNT_ANIMAL(0, 0, 0, 0, 0, 0);
 										func_1356(&(Local_133[iVar0 /*6*/]), func_1395(iVar0 == 6, 0f, 3f));
 										func_943(iVar0, 39);
@@ -56021,7 +56021,7 @@ void func_1346(var uParam0)
 												Var1 = { func_1578(1, 3) };
 											}
 											func_1355();
-											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 1.75f, 20000, 0.25f, false, Var1.f_3);
+											TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, Var1, 1.75f, 20000, 0.25f, 0, Var1.f_3);
 											TASK::TASK_ACHIEVE_HEADING(0, Var1.f_3, -1);
 											func_1356(&(Local_133[iVar0 /*6*/]), func_1395(iVar0 == 6, 0f, 0.6f));
 											func_943(iVar0, 38);
@@ -56319,7 +56319,7 @@ void func_1357()
 		TASK::TASK_SWAP_WEAPON(Global_35, 1, 1, 0, 0);
 		func_1355();
 		TASK::TASK_SET_CROUCH_MOVEMENT(0, true, 0, false);
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(6, 8), 1f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(6, 8), 1f, 20000, 0.25f, 0, 40000f);
 		TASK::TASK_TURN_PED_TO_FACE_COORD(0, func_1336(1, 2), 0);
 		func_1356(Global_35, 0);
 		func_456(56);
@@ -58867,7 +58867,7 @@ void func_1420(var uParam0)
 															vVar3 = { VOLUME::_0xF70F00013A62F866(Local_89.f_2) };
 														}
 														func_1355();
-														TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2.5f, 20000, 0.25f, false, 40000f);
+														TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2.5f, 20000, 0.25f, 0, 40000f);
 														TASK::TASK_WANDER_IN_VOLUME(false, Local_89.f_2, 1077936128, 1086324736, 0);
 														func_1356(&(Local_133[iVar8 /*6*/]), 0);
 														func_456(126);
@@ -59018,7 +59018,7 @@ void func_1420(var uParam0)
 												}
 												func_456(139);
 												func_1355();
-												TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, func_1395(PED::IS_PED_ON_MOUNT(&(Local_133[iVar8 /*6*/])), 2.001f, 3f), 20000, 0.25f, false, 40000f);
+												TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, func_1395(PED::IS_PED_ON_MOUNT(&(Local_133[iVar8 /*6*/])), 2.001f, 3f), 20000, 0.25f, 0, 40000f);
 												TASK::TASK_WANDER_IN_VOLUME(false, Local_89.f_3, 1077936128, 1086324736, 0);
 												func_1356(&(Local_133[iVar8 /*6*/]), 0);
 												if (!func_26(vLocal_792[38 /*3*/]) || func_934(vLocal_792[38 /*3*/]) >= 10f)
@@ -62130,7 +62130,7 @@ void func_1489(bool bParam0, int iParam1, bool bParam2, bool bParam3, int iParam
 		}
 		else if (iParam4 != &Global_1946804->f_57[iParam1 /*11*/])
 		{
-			iVar1 = PED::_GET_PED_COMPONENT(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
+			iVar1 = PED::_GET_PED_COMPONENT_CATEGORY(iParam4, PED::_GET_METAPED_TYPE(bParam0), bParam2);
 		}
 	}
 	if (bParam3)
@@ -77908,51 +77908,51 @@ void func_1944(int iParam0)
 				func_1428(0, 78, 1090519040 /* Float: 8f */, -1056964608 /* Float: -8f */, -1, 0);
 				func_1428(0, 79, 1090519040 /* Float: 8f */, -1056964608 /* Float: -8f */, -1, 0);
 				TASK::TASK_PICKUP_CARRIABLE_ENTITY(0, &(Local_941[19 /*2*/]));
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 3), 1f, 40000, 0.25f, false, func_1580(8, 3));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 3), 1f, 40000, 0.25f, 0, func_1580(8, 3));
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, &(Local_941[19 /*2*/]), func_1362(0), 1f, 1);
 				TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_SMOKE"), 10000, false, 0, -1f, false);
 				TASK::TASK_PICKUP_CARRIABLE_ENTITY(0, &(Local_941[19 /*2*/]));
 			}
 			else
 			{
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 4), 1f, 40000, 0.25f, false, func_1580(8, 4));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 4), 1f, 40000, 0.25f, 0, func_1580(8, 4));
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, &(Local_941[19 /*2*/]), func_1362(0), 1f, 1);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 5), 1f, 40000, 0.25f, false, func_1580(8, 5));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 5), 1f, 40000, 0.25f, 0, func_1580(8, 5));
 				TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_LEAN_BACK_WALL_SMOKING"), 10000, true, 0, -1f, false);
 				TASK::TASK_PICKUP_CARRIABLE_ENTITY(0, &(Local_941[19 /*2*/]));
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 6), 1f, 40000, 0.25f, false, func_1580(8, 6));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 6), 1f, 40000, 0.25f, 0, func_1580(8, 6));
 				TASK::TASK_PLACE_CARRIED_ENTITY_AT_COORD(0, &(Local_941[19 /*2*/]), func_1362(0), 1f, 1);
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 7), 1f, 40000, 0.25f, false, func_1580(8, 7));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 7), 1f, 40000, 0.25f, 0, func_1580(8, 7));
 				TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_PEE"), 10000, true, 0, -1f, false);
 				TASK::TASK_PICKUP_CARRIABLE_ENTITY(0, &(Local_941[19 /*2*/]));
-				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 0), 1f, 40000, 0.25f, true, func_1580(8, 0));
+				TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(8, 0), 1f, 40000, 0.25f, 1, func_1580(8, 0));
 			}
 			break;
 		case 35:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 1), 1f, 40000, 0.25f, false, func_1580(5, 1));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 1), 1f, 40000, 0.25f, 0, func_1580(5, 1));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_WAITING_IMPATIENT"), 10000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 2), 1f, 40000, 0.25f, false, func_1580(5, 2));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 2), 1f, 40000, 0.25f, 0, func_1580(5, 2));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_SMOKE"), 10000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 3), 1f, 40000, 0.25f, false, func_1580(5, 3));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 3), 1f, 40000, 0.25f, 0, func_1580(5, 3));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_SMOKE"), 10000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 0), 1f, 40000, 0.25f, false, func_1580(5, 0));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(5, 0), 1f, 40000, 0.25f, 0, func_1580(5, 0));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_SMOKE"), 10000, true, 0, -1f, false);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
 		case 36:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -857.8242f, -748.667f, 59.6888f, 1f, 40000, 0.25f, false, 303.9f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, -857.8242f, -748.667f, 59.6888f, 1f, 40000, 0.25f, 0, 303.9f);
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_CROUCH_INSPECT"), 5000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 2), 1f, 40000, 0.25f, false, func_1580(2, 2));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 2), 1f, 40000, 0.25f, 0, func_1580(2, 2));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_GUARD_LAZY"), 5000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 3), 1f, 40000, 0.25f, false, -110f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 3), 1f, 40000, 0.25f, 0, -110f);
 			TASK::TASK_STAND_STILL(0, 5000);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 4), 1f, 40000, 0.25f, false, func_1580(2, 4));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 4), 1f, 40000, 0.25f, 0, func_1580(2, 4));
 			TASK::TASK_STAND_STILL(0, 5000);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 5), 1f, 40000, 0.25f, false, func_1580(2, 5));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 5), 1f, 40000, 0.25f, 0, func_1580(2, 5));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_PEE"), 5000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 6), 1f, 40000, 0.25f, false, func_1580(2, 6));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 6), 1f, 40000, 0.25f, 0, func_1580(2, 6));
 			TASK::_TASK_START_SCENARIO_IN_PLACE(0, joaat("WORLD_HUMAN_WAITING_IMPATIENT"), 10000, true, 0, -1f, false);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 7), 1f, 40000, 0.25f, false, func_1580(2, 7));
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_1336(2, 7), 1f, 40000, 0.25f, 0, func_1580(2, 7));
 			TASK::TASK_STAND_STILL(0, 5000);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
@@ -77962,50 +77962,50 @@ void func_1944(int iParam0)
 			TASK::TASK_WANDER_IN_AREA(false, vVar0, 30f, 1077936128, 1086324736, false);
 			break;
 		case 39:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 7, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 7, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
 		case 40:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
 			break;
 		case 41:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
 		case 42:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 0, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 0, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
 		case 43:
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 7, 7), 1.001f, -1, 5f, bLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 3, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 4, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 5, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 6, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, func_2385(iParam0, 7, 7), 1.001f, -1, 5f, iLocal_1326, 40000f);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
 		case 44:
@@ -78013,19 +78013,19 @@ void func_1944(int iParam0)
 		case 46:
 			vVar3 = { func_2385(iParam0, 3, 7) };
 			fVar6 = func_2386(iParam0, 3, 7);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, false, fVar6);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, 0, fVar6);
 			TASK::TASK_AIM_AT_COORD(false, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar3, fVar6, 0f, 10f, 0f), 4000, 0, 0);
 			vVar3 = { func_2385(iParam0, 4, 7) };
 			fVar6 = func_2386(iParam0, 4, 7);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, false, fVar6);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, 0, fVar6);
 			TASK::TASK_AIM_AT_COORD(false, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar3, fVar6, 0f, 10f, 0f), 2000, 0, 0);
 			vVar3 = { func_2385(iParam0, 5, 7) };
 			fVar6 = func_2386(iParam0, 5, 7);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, false, fVar6);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, 0, fVar6);
 			TASK::TASK_AIM_AT_COORD(false, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar3, fVar6, 0f, 10f, 0f), 5000, 0, 0);
 			vVar3 = { func_2385(iParam0, 6, 7) };
 			fVar6 = func_2386(iParam0, 6, 7);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, false, fVar6);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar3, 2f, -1, 0.25f, 0, fVar6);
 			TASK::TASK_AIM_AT_COORD(false, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(vVar3, fVar6, 0f, 10f, 0f), 3000, 0, 0);
 			TASK::SET_SEQUENCE_TO_REPEAT(iLocal_780, true);
 			break;
@@ -78073,7 +78073,7 @@ void func_1946(int iParam0, int iParam1)
 		{
 			TASK::TASK_DISMOUNT_ANIMAL(0, 4096, 0, 0, 0, 0);
 		}
-		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 2f, 20000, 0.25f, false, 40000f);
+		TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vVar0, 2f, 20000, 0.25f, 0, 40000f);
 		TASK::TASK_TURN_PED_TO_FACE_ENTITY(false, &(Local_133[iParam1 /*6*/]), 0, -1082130432, -1082130432, -1082130432);
 		if (!func_1870(iParam1, 128))
 		{
@@ -101378,7 +101378,7 @@ void func_2887(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 {
 	vector3 vVar0;
 	bool bVar3;
-	bool bVar4;
+	int iVar4;
 	float fVar5;
 
 	vVar0 = { func_2931(uParam0, iParam1) };
@@ -101399,10 +101399,10 @@ void func_2887(var uParam0, int iParam1, bool bParam2, vector3 vParam3)
 		}
 		else
 		{
-			bVar4 = 4;
-			bVar4 = (bVar4 || 4194304);
+			iVar4 = 4;
+			iVar4 |= 4194304;
 			bVar3 = (bVar3 % 360f);
-			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, bVar4, bVar3);
+			TASK::TASK_FOLLOW_NAV_MESH_TO_COORD(0, vParam3, 1f, 20000, 0.25f, iVar4, bVar3);
 		}
 		if (!func_2457(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 4) && !func_2457(uParam0->f_1406[&uParam0->f_865[iParam1 /*18*/] /*41*/], 2))
 		{

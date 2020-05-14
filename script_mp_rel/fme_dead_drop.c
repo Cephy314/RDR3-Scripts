@@ -21300,11 +21300,11 @@ void func_1055(int iParam0, int iParam1, int iParam2, char* sParam3)
 		func_1211(&(Local_159.f_18), iVar0);
 		return;
 	}
-	Local_159.f_18 = HUD::_CREATE_ENTITY_MP_GAMER_TAG(iVar0, sParam3);
+	Local_159.f_18 = HUD::_CREATE_MP_GAMER_TAG_ON_ENTITY(iVar0, sParam3);
 	HUD::_SET_MP_GAMER_TAG_TYPE(Local_159.f_18, joaat("DEADDROP"));
 	HUD::_SET_MP_GAMER_TAG_COLOUR(Local_159.f_18, iParam1);
-	HUD::_SET_MP_GAMER_TAG_OVERHEAD_ICON(Local_159.f_18, iParam2);
-	HUD::_SET_MP_GAMER_TAG_DISPLAY_TYPE(Local_159.f_18, iParam0);
+	HUD::_SET_MP_GAMER_TAG_TOP_ICON(Local_159.f_18, iParam2);
+	HUD::_SET_MP_GAMER_TAG_VISIBILITY(Local_159.f_18, iParam0);
 }
 
 void func_1056(bool bParam0)
@@ -25865,7 +25865,7 @@ int func_1211(var uParam0, int iParam1)
 	{
 		return 0;
 	}
-	if (HUD::_IS_MP_GAMER_TAG_SET_TO_ENTITY(*uParam0, iParam1))
+	if (HUD::_IS_MP_GAMER_TAG_ACTIVE_ON_ENTITY(*uParam0, iParam1))
 	{
 		return 0;
 	}
