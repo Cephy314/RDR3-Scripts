@@ -10019,7 +10019,7 @@ void func_300(int iParam0, int iParam1, int iParam2, int iParam3)
 			}
 			break;
 		case joaat("COUPON"):
-		case 1417470098:
+		case joaat("VOUCHER"):
 			if (bVar4)
 			{
 				bVar2 = false;

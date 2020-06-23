@@ -44389,12 +44389,12 @@ int func_1361(int iParam0)
 			break;
 		case 21:
 			func_740(joaat("CLOTHING_HL_PLAYER_BOOT_005_10"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
-			func_740(-961594764 /* GXTEntry: "Classic Frock Coat" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
+			func_740(joaat("CLOTHING_HL_PLAYER_COAT_011_11"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			func_740(joaat("CLOTHING_HL_PLAYER_HAT_048_2"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			func_740(-588157961 /* GXTEntry: "Frontier Vest" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			break;
 		case 15:
-			func_740(-605953717 /* GXTEntry: "Scout Jacket" */, 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
+			func_740(joaat("CLOTHING_HL_PLAYER_COAT_012_11"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
 			break;
 		case 5:
 			func_740(joaat("CLOTHING_HL_PLAYER_SPURS_023_1"), 1, 0, 0, 0, 752097756, 0, 0, 0, 0);
@@ -89781,11 +89781,11 @@ int func_2952(int iParam0)
 		case joaat("MPC_TAG_BEARDS"):
 			return -134124598;
 		case joaat("MPC_TAG_BEARDS_CHIN"):
-			return 366200818;
+			return joaat("BEARDS_CHIN");
 		case joaat("MPC_TAG_BEARDS_MUSTACHE"):
-			return -322391462;
+			return joaat("BEARDS_MUSTACHE");
 		case joaat("MPC_TAG_BEARDS_CHOPS"):
-			return -1229572297;
+			return joaat("BEARDS_CHOPS");
 		case joaat("MPC_TAG_EYEWEAR"):
 			return joaat("EYEWEAR");
 		case joaat("MPC_TAG_EYE_CAPS"):
@@ -90324,11 +90324,11 @@ int func_2966(int iParam0)
 			return 10;
 		case -134124598:
 			return 11;
-		case 366200818:
+		case joaat("BEARDS_CHIN"):
 			return 13;
-		case -322391462:
+		case joaat("BEARDS_MUSTACHE"):
 			return 14;
-		case -1229572297:
+		case joaat("BEARDS_CHOPS"):
 			return 12;
 		case joaat("EYEWEAR"):
 			return 15;

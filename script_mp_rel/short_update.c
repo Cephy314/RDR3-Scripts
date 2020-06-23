@@ -47188,11 +47188,11 @@ int func_1534(int iParam0)
 		case joaat("MPC_TAG_BEARDS"):
 			return -134124598;
 		case joaat("MPC_TAG_BEARDS_CHIN"):
-			return 366200818;
+			return joaat("BEARDS_CHIN");
 		case joaat("MPC_TAG_BEARDS_MUSTACHE"):
-			return -322391462;
+			return joaat("BEARDS_MUSTACHE");
 		case joaat("MPC_TAG_BEARDS_CHOPS"):
-			return -1229572297;
+			return joaat("BEARDS_CHOPS");
 		case joaat("MPC_TAG_EYEWEAR"):
 			return joaat("EYEWEAR");
 		case joaat("MPC_TAG_EYE_CAPS"):
@@ -47680,11 +47680,11 @@ int func_1546(int iParam0)
 			return 10;
 		case -134124598:
 			return 11;
-		case 366200818:
+		case joaat("BEARDS_CHIN"):
 			return 13;
-		case -322391462:
+		case joaat("BEARDS_MUSTACHE"):
 			return 14;
-		case -1229572297:
+		case joaat("BEARDS_CHOPS"):
 			return 12;
 		case joaat("EYEWEAR"):
 			return 15;

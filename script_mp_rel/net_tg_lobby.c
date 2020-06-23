@@ -5800,7 +5800,7 @@ char* func_264(int iParam0, int iParam1, int iParam2)
 			return MISC::_CREATE_VAR_STRING(10, "NET_MG_HELP_MAINTENANCE", func_290(iParam0));
 		case -1720361368:
 			return "NET_MG_HELP_BANNED";
-		case -1166915294:
+		case joaat("BANNED"):
 			return "NET_MG_HELP_BANNED2";
 		case 1406403638:
 			return "NET_MG_HELP_POSSE_LEADER_LEFT";
@@ -5808,7 +5808,7 @@ char* func_264(int iParam0, int iParam1, int iParam2)
 			return "NET_MG_HELP_ARBITLEGAL";
 		case -1700673948:
 			return MISC::_CREATE_VAR_STRING(10, "MG_FAILED_LAUNCH", func_290(iParam0));
-		case 1736016924:
+		case joaat("DISCONNECTED"):
 			return MISC::_CREATE_VAR_STRING(10, "NET_MG_HELP_DISCONNECTED", func_290(iParam0));
 		case -835571454:
 			return MISC::_CREATE_VAR_STRING(10, "NET_MG_HELP_NETWORK_ERROR", func_290(iParam0));

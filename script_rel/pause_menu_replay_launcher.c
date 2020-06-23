@@ -46567,7 +46567,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2340:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_FREEMODE_004_TINT_001");
 			case 2341:
-				return -1226976988 /* GXTEntry: "Can\'t Hide Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_FREEMODE_005_TINT_001");
 			case 2342:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_FREEMODE_011_TINT_001");
 			case 2343:
@@ -46575,9 +46575,9 @@ int func_1357(int iParam0, int iParam1)
 			case 2344:
 				return 1988474451 /* GXTEntry: "Selfless Buckle" */;
 			case 2345:
-				return -1290651568 /* GXTEntry: "Dishonorable Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_GENERAL_003_TINT_001");
 			case 2346:
-				return -1738649404 /* GXTEntry: "Honorable Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_GENERAL_004_TINT_001");
 			case 2347:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_GENERAL_005_TINT_001");
 			case 2348:
@@ -46593,9 +46593,9 @@ int func_1357(int iParam0, int iParam1)
 			case 2353:
 				return -1710143883 /* GXTEntry: "Monthly Streak Buckle" */;
 			case 2354:
-				return 715947527 /* GXTEntry: "Horse Whisper Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_HORSE_001_TINT_001");
 			case 2355:
-				return 1011499272 /* GXTEntry: "Horse Breeds Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_HORSE_002_TINT_001");
 			case 2356:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_HORSE_003_TINT_001");
 			case 2357:
@@ -46603,7 +46603,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2358:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_HUNTING_002_TINT_001");
 			case 2359:
-				return -1240807897 /* GXTEntry: "Airborne Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_HUNTING_003_TINT_001");
 			case 2360:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_HUNTING_004_TINT_001");
 			case 2361:
@@ -46617,7 +46617,7 @@ int func_1357(int iParam0, int iParam1)
 			case 2365:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_HUNTING_010_TINT_001");
 			case 2366:
-				return 739258290 /* GXTEntry: "Wild Revenge Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_HUNTING_011_TINT_001");
 			case 2367:
 				return -1214860187 /* GXTEntry: "Fishing Buckle" */;
 			case 2368:
@@ -46663,59 +46663,59 @@ int func_1357(int iParam0, int iParam1)
 			case 2388:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_008_TINT_001");
 			case 2389:
-				return 251307644 /* GXTEntry: "Bow Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_009_TINT_001");
 			case 2390:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_010_TINT_001");
 			case 2391:
-				return 413877452 /* GXTEntry: "Revolver Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_011_TINT_001");
 			case 2392:
-				return 1853673202 /* GXTEntry: "Repeater Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_012_TINT_001");
 			case 2393:
-				return -401421089 /* GXTEntry: "Rifle Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_013_TINT_001");
 			case 2394:
-				return -580742468 /* GXTEntry: "Sniper Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_014_TINT_001");
 			case 2395:
-				return -747990100 /* GXTEntry: "Shotgun Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_015_TINT_001");
 			case 2396:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_016_TINT_001");
 			case 2397:
-				return 422249095 /* GXTEntry: "Deathrider Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_017_TINT_001");
 			case 2398:
-				return 1188509724 /* GXTEntry: "From Behind Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_018_TINT_001");
 			case 2399:
-				return 1548899641 /* GXTEntry: "Execution Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_019_TINT_001");
 			case 2400:
-				return 477323545 /* GXTEntry: "Hatshot Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_020_TINT_001");
 			case 2401:
-				return 656066660 /* GXTEntry: "Dead Eye Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_021_TINT_001");
 			case 2402:
-				return -1564429313 /* GXTEntry: "Double Dead Eye Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_022_TINT_001");
 			case 2403:
-				return 596316494 /* GXTEntry: "Multi Dead Eye Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_023_TINT_001");
 			case 2404:
-				return -1785814590 /* GXTEntry: "Assist Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_024_TINT_001");
 			case 2405:
-				return 48701593 /* GXTEntry: "Quick Scope Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_025_TINT_001");
 			case 2406:
-				return -95544323 /* GXTEntry: "Fifty Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_026_TINT_001");
 			case 2407:
-				return 122590098 /* GXTEntry: "Long Distance Kill Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_027_TINT_001");
 			case 2408:
-				return 1721876701 /* GXTEntry: "Six Shooter Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_028_TINT_001");
 			case 2409:
-				return -419273004 /* GXTEntry: "Acquired Guns Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SHARPSHOOTER_029_TINT_001");
 			case 2410:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_SURVIVAL_001_TINT_001");
 			case 2411:
-				return -914113091 /* GXTEntry: "Taste Test Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SURVIVAL_002_TINT_001");
 			case 2412:
-				return 198975914 /* GXTEntry: "Crafter Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SURVIVAL_003_TINT_001");
 			case 2413:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_SURVIVAL_004_TINT_001");
 			case 2414:
-				return 73896424 /* GXTEntry: "Chef Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_SURVIVAL_005_TINT_001");
 			case 2415:
-				return 1199132064 /* GXTEntry: "Shopper Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_001_TINT_001");
 			case 2416:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_002_TINT_001");
 			case 2417:
@@ -46723,15 +46723,15 @@ int func_1357(int iParam0, int iParam1)
 			case 2418:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_004_TINT_001");
 			case 2419:
-				return -2135453203 /* GXTEntry: "Trader Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_005_TINT_001");
 			case 2420:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_007_TINT_001");
 			case 2421:
 				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_009_TINT_001");
 			case 2422:
-				return -1274748692 /* GXTEntry: "Orders Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_010_TINT_001");
 			case 2423:
-				return -2008231777 /* GXTEntry: "Butcher Buckle" */;
+				return joaat("CLOTHING_ITEM_F_BUCKLE_TRADE_011_TINT_001");
 			case 2424:
 				return -1142822822 /* GXTEntry: "Shady Buckle" */;
 			case 2425:
@@ -48703,7 +48703,7 @@ int func_1357(int iParam0, int iParam1)
 			case 3402:
 				return joaat("CLOTHING_ITEM_F_HAIR_008_GREY");
 			case 3403:
-				return 348879995;
+				return joaat("CLOTHING_ITEM_F_HAIR_008_JET_BLACK");
 			case 3404:
 				return joaat("CLOTHING_ITEM_F_HAIR_008_LIGHT_BLONDE");
 			case 3405:
@@ -51149,25 +51149,25 @@ int func_1357(int iParam0, int iParam1)
 			case 4619:
 				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_016");
 			case 4620:
-				return -707876554 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_017");
 			case 4621:
-				return -274965295 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_018");
 			case 4622:
-				return -84315253 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_019");
 			case 4623:
-				return -1911088420 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_020");
 			case 4624:
-				return 2145746553 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_021");
 			case 4625:
-				return -1498723324 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_022");
 			case 4626:
-				return -1853808208 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_023");
 			case 4627:
-				return -989951830 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_024");
 			case 4628:
-				return -1228870609 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_025");
 			case 4629:
-				return -89820169 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_002_TINT_026");
 			case 4630:
 				return -332474614 /* GXTEntry: "Trimmed Bandana" */;
 			case 4631:
@@ -51233,25 +51233,25 @@ int func_1357(int iParam0, int iParam1)
 			case 4661:
 				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_016");
 			case 4662:
-				return -1137899816 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_017");
 			case 4663:
-				return -1446485493 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_018");
 			case 4664:
-				return -245272256 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_019");
 			case 4665:
-				return 1498693640 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_020");
 			case 4666:
-				return -1187840060 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_021");
 			case 4667:
-				return -2032067807 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_022");
 			case 4668:
-				return -1638348276 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_023");
 			case 4669:
-				return -2069784930 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_024");
 			case 4670:
-				return -1073476250 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_025");
 			case 4671:
-				return -834754085 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_F_NECKERCHIEF_003_TINT_026");
 			case 4672:
 				return -432121382 /* GXTEntry: "Patterned Bandana" */;
 			case 4673:
@@ -56195,7 +56195,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7124:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_FREEMODE_004_TINT_001");
 			case 7125:
-				return -237027428 /* GXTEntry: "Can\'t Hide Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_FREEMODE_005_TINT_001");
 			case 7126:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_FREEMODE_011_TINT_001");
 			case 7127:
@@ -56203,9 +56203,9 @@ int func_1357(int iParam0, int iParam1)
 			case 7128:
 				return -1516569971 /* GXTEntry: "Selfless Buckle" */;
 			case 7129:
-				return -1058142563 /* GXTEntry: "Dishonorable Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_GENERAL_003_TINT_001");
 			case 7130:
-				return -399774984 /* GXTEntry: "Honorable Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_GENERAL_004_TINT_001");
 			case 7131:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_GENERAL_005_TINT_001");
 			case 7132:
@@ -56213,17 +56213,17 @@ int func_1357(int iParam0, int iParam1)
 			case 7133:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_GENERAL_007_TINT_001");
 			case 7134:
-				return -979775736 /* GXTEntry: "Daily Challenge Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_GENERAL_012_TINT_001");
 			case 7135:
-				return -1420720105 /* GXTEntry: "Day\'s Work Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_GENERAL_013_TINT_001");
 			case 7136:
 				return -736179002 /* GXTEntry: "Weekly Streak Buckle" */;
 			case 7137:
 				return 196919272 /* GXTEntry: "Monthly Streak Buckle" */;
 			case 7138:
-				return 147815842 /* GXTEntry: "Horse Whisper Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_HORSE_001_TINT_001");
 			case 7139:
-				return 1224938018 /* GXTEntry: "Horse Breeds Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_HORSE_002_TINT_001");
 			case 7140:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_HORSE_003_TINT_001");
 			case 7141:
@@ -56231,7 +56231,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7142:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_HUNTING_002_TINT_001");
 			case 7143:
-				return 184264279 /* GXTEntry: "Airborne Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_HUNTING_003_TINT_001");
 			case 7144:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_HUNTING_004_TINT_001");
 			case 7145:
@@ -56245,7 +56245,7 @@ int func_1357(int iParam0, int iParam1)
 			case 7149:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_HUNTING_010_TINT_001");
 			case 7150:
-				return 906922156 /* GXTEntry: "Wild Revenge Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_HUNTING_011_TINT_001");
 			case 7151:
 				return 1936151422 /* GXTEntry: "Fishing Buckle" */;
 			case 7152:
@@ -56291,59 +56291,59 @@ int func_1357(int iParam0, int iParam1)
 			case 7172:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_008_TINT_001");
 			case 7173:
-				return 1299602772 /* GXTEntry: "Bow Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_009_TINT_001");
 			case 7174:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_010_TINT_001");
 			case 7175:
-				return 1688312492 /* GXTEntry: "Revolver Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_011_TINT_001");
 			case 7176:
-				return 1828373931 /* GXTEntry: "Repeater Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_012_TINT_001");
 			case 7177:
-				return 1348825328 /* GXTEntry: "Rifle Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_013_TINT_001");
 			case 7178:
-				return -478370940 /* GXTEntry: "Sniper Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_014_TINT_001");
 			case 7179:
-				return 1320479151 /* GXTEntry: "Shotgun Headshot Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_015_TINT_001");
 			case 7180:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_016_TINT_001");
 			case 7181:
-				return -2139836206 /* GXTEntry: "Deathrider Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_017_TINT_001");
 			case 7182:
-				return -1135417384 /* GXTEntry: "From Behind Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_018_TINT_001");
 			case 7183:
-				return 103316729 /* GXTEntry: "Execution Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_019_TINT_001");
 			case 7184:
-				return 986104355 /* GXTEntry: "Hatshot Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_020_TINT_001");
 			case 7185:
-				return -1451726200 /* GXTEntry: "Dead Eye Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_021_TINT_001");
 			case 7186:
-				return 861449542 /* GXTEntry: "Double Dead Eye Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_022_TINT_001");
 			case 7187:
-				return -1215003768 /* GXTEntry: "Multi Dead Eye Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_023_TINT_001");
 			case 7188:
-				return 381404776 /* GXTEntry: "Assist Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_024_TINT_001");
 			case 7189:
-				return -69652476 /* GXTEntry: "Quick Scope Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_025_TINT_001");
 			case 7190:
-				return -1535538984 /* GXTEntry: "Fifty Kills Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_026_TINT_001");
 			case 7191:
-				return 153168498 /* GXTEntry: "Long Distance Kill Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_027_TINT_001");
 			case 7192:
-				return 105949294 /* GXTEntry: "Six Shooter Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_028_TINT_001");
 			case 7193:
-				return -504383637 /* GXTEntry: "Acquired Guns Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SHARPSHOOTER_029_TINT_001");
 			case 7194:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_SURVIVAL_001_TINT_001");
 			case 7195:
-				return 1817941974 /* GXTEntry: "Taste Test Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SURVIVAL_002_TINT_001");
 			case 7196:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_SURVIVAL_003_TINT_001");
 			case 7197:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_SURVIVAL_004_TINT_001");
 			case 7198:
-				return 769230540 /* GXTEntry: "Chef Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_SURVIVAL_005_TINT_001");
 			case 7199:
-				return 878044387 /* GXTEntry: "Shopper Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_001_TINT_001");
 			case 7200:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_002_TINT_001");
 			case 7201:
@@ -56351,17 +56351,17 @@ int func_1357(int iParam0, int iParam1)
 			case 7202:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_004_TINT_001");
 			case 7203:
-				return -448934382 /* GXTEntry: "Trader Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_005_TINT_001");
 			case 7204:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_007_TINT_001");
 			case 7205:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_009_TINT_001");
 			case 7206:
-				return -1836509053 /* GXTEntry: "Orders Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_010_TINT_001");
 			case 7207:
-				return -603304674 /* GXTEntry: "Butcher Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_011_TINT_001");
 			case 7208:
-				return 1476129947 /* GXTEntry: "Shady Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRADE_012_TINT_001");
 			case 7209:
 				return 2115650153 /* GXTEntry: "Bar Crawl Buckle" */;
 			case 7210:
@@ -56385,23 +56385,23 @@ int func_1357(int iParam0, int iParam1)
 			case 7219:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_004_TINT_001");
 			case 7220:
-				return 1894911867 /* GXTEntry: "Frontier Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_005_TINT_001");
 			case 7221:
 				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_006_TINT_001");
 			case 7222:
-				return 810127714 /* GXTEntry: "Hell for Leather 1 Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_007_TINT_001");
 			case 7223:
-				return 1996371515 /* GXTEntry: "Hell for Leather 2 Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_008_TINT_001");
 			case 7224:
-				return -1339188878 /* GXTEntry: "Hell for Leather 3 Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_009_TINT_001");
 			case 7225:
-				return -966303730 /* GXTEntry: "Coach Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_010_TINT_001");
 			case 7226:
-				return 1166732951 /* GXTEntry: "Passenger Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_011_TINT_001");
 			case 7227:
-				return -999882205 /* GXTEntry: "Town Traveler Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_012_TINT_001");
 			case 7228:
-				return -907115397 /* GXTEntry: "Station Traveler Buckle" */;
+				return joaat("CLOTHING_ITEM_M_BUCKLE_TRAVEL_013_TINT_001");
 			case 7229:
 				return joaat("CLOTHING_ITEM_M_CHAPS_000_TINT_001");
 			case 7230:
@@ -60927,25 +60927,25 @@ int func_1357(int iParam0, int iParam1)
 			case 9478:
 				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_016");
 			case 9479:
-				return -1374506582 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_017");
 			case 9480:
-				return 398984471 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_018");
 			case 9481:
-				return 1177936370 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_019");
 			case 9482:
-				return -44969581 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_020");
 			case 9483:
-				return 252998936 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_021");
 			case 9484:
-				return -1594386212 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_022");
 			case 9485:
-				return -1296876461 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_023");
 			case 9486:
-				return 649929833 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_024");
 			case 9487:
-				return 920536235 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_025");
 			case 9488:
-				return 1226598695 /* GXTEntry: "Trimmed Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_002_TINT_026");
 			case 9489:
 				return -307514809 /* GXTEntry: "Trimmed Bandana" */;
 			case 9490:
@@ -61011,25 +61011,25 @@ int func_1357(int iParam0, int iParam1)
 			case 9520:
 				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_016");
 			case 9521:
-				return -603696575 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_017");
 			case 9522:
-				return 930154781 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_018");
 			case 9523:
-				return 1764682904 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_019");
 			case 9524:
-				return -996628866 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_020");
 			case 9525:
-				return -1847738103 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_021");
 			case 9526:
-				return 1580751299 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_022");
 			case 9527:
-				return 1676436779 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_023");
 			case 9528:
-				return -2137153907 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_024");
 			case 9529:
-				return -1905771998 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_025");
 			case 9530:
-				return 391171061 /* GXTEntry: "Patterned Bandana" */;
+				return joaat("CLOTHING_ITEM_M_NECKERCHIEF_003_TINT_026");
 			case 9531:
 				return -45967399 /* GXTEntry: "Patterned Bandana" */;
 			case 9532:
@@ -76353,7 +76353,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17143:
 				return joaat("CLOTHING_HL_PLAYER_BOOT_012_10");
 			case 17144:
-				return 333909087;
+				return joaat("CLOTHING_HL_PLAYER_BOOT_012_11");
 			case 17145:
 				return joaat("CLOTHING_HL_PLAYER_BOOT_012_2");
 			case 17146:
@@ -76481,11 +76481,11 @@ int func_1357(int iParam0, int iParam1)
 			case 17207:
 				return joaat("CLOTHING_HL_PLAYER_BOOT_037_1");
 			case 17208:
-				return 1041460319;
+				return joaat("CLOTHING_HL_PLAYER_BOOT_037_10");
 			case 17209:
-				return -145891627 /* GXTEntry: "Plated Relentless Boots" */;
+				return joaat("CLOTHING_HL_PLAYER_BOOT_037_14");
 			case 17210:
-				return 714229085;
+				return joaat("CLOTHING_HL_PLAYER_BOOT_037_15");
 			case 17211:
 				return joaat("CLOTHING_HL_PLAYER_BOOT_037_2");
 			case 17212:
@@ -76541,11 +76541,11 @@ int func_1357(int iParam0, int iParam1)
 			case 17237:
 				return joaat("CLOTHING_HL_PLAYER_CHAPS_002_1");
 			case 17238:
-				return -44136574;
+				return joaat("CLOTHING_HL_PLAYER_CHAPS_002_10");
 			case 17239:
-				return 790620932 /* GXTEntry: "Elk Fringed Shotgun Chaps" */;
+				return joaat("CLOTHING_HL_PLAYER_CHAPS_002_11");
 			case 17240:
-				return 1385116134 /* GXTEntry: "Fringed Shotgun Chaps" */;
+				return joaat("CLOTHING_HL_PLAYER_CHAPS_002_12");
 			case 17241:
 				return joaat("CLOTHING_HL_PLAYER_CHAPS_002_2");
 			case 17242:
@@ -76619,7 +76619,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17276:
 				return joaat("CLOTHING_HL_PLAYER_COAT_001_9");
 			case 17277:
-				return -38332409 /* GXTEntry: "Rattlesnake Hunting Jacket" */;
+				return joaat("CLOTHING_HL_PLAYER_COAT_005_12");
 			case 17278:
 				return joaat("CLOTHING_HL_PLAYER_COAT_005_4");
 			case 17279:
@@ -76635,7 +76635,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17284:
 				return joaat("CLOTHING_HL_PLAYER_COAT_011_10");
 			case 17285:
-				return -961594764 /* GXTEntry: "Classic Frock Coat" */;
+				return joaat("CLOTHING_HL_PLAYER_COAT_011_11");
 			case 17286:
 				return joaat("CLOTHING_HL_PLAYER_COAT_011_2");
 			case 17287:
@@ -76657,7 +76657,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17295:
 				return joaat("CLOTHING_HL_PLAYER_COAT_012_10");
 			case 17296:
-				return -605953717 /* GXTEntry: "Scout Jacket" */;
+				return joaat("CLOTHING_HL_PLAYER_COAT_012_11");
 			case 17297:
 				return joaat("CLOTHING_HL_PLAYER_COAT_012_2");
 			case 17298:
@@ -76697,7 +76697,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17315:
 				return joaat("CLOTHING_HL_PLAYER_COAT_014_10");
 			case 17316:
-				return -590571393 /* GXTEntry: "Blazing Shotgun Coat" */;
+				return joaat("CLOTHING_HL_PLAYER_COAT_014_11");
 			case 17317:
 				return joaat("CLOTHING_HL_PLAYER_COAT_014_2");
 			case 17318:
@@ -76763,7 +76763,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17348:
 				return joaat("CLOTHING_HL_PLAYER_COAT_037_1");
 			case 17349:
-				return 1548971182 /* GXTEntry: "Range Gloves" */;
+				return joaat("CLOTHING_HL_PLAYER_GLOVES_000_11");
 			case 17350:
 				return joaat("CLOTHING_HL_PLAYER_GLOVES_000_7");
 			case 17351:
@@ -76791,9 +76791,9 @@ int func_1357(int iParam0, int iParam1)
 			case 17362:
 				return joaat("CLOTHING_HL_PLAYER_GLOVES_002_1");
 			case 17363:
-				return 1852920738 /* GXTEntry: "Riding Gloves" */;
+				return joaat("CLOTHING_HL_PLAYER_GLOVES_002_10");
 			case 17364:
-				return 1615378257 /* GXTEntry: "Buck Riding Gloves" */;
+				return joaat("CLOTHING_HL_PLAYER_GLOVES_002_11");
 			case 17365:
 				return joaat("CLOTHING_HL_PLAYER_GLOVES_002_2");
 			case 17366:
@@ -76813,7 +76813,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17373:
 				return joaat("CLOTHING_HL_PLAYER_GLOVES_004_1");
 			case 17374:
-				return -1965629110 /* GXTEntry: "Cavalry Gloves" */;
+				return joaat("CLOTHING_HL_PLAYER_GLOVES_004_10");
 			case 17375:
 				return joaat("CLOTHING_HL_PLAYER_GLOVES_004_2");
 			case 17376:
@@ -76865,23 +76865,23 @@ int func_1357(int iParam0, int iParam1)
 			case 17399:
 				return joaat("CLOTHING_HL_PLAYER_HAT_000_001_1");
 			case 17400:
-				return 1725570548 /* GXTEntry: "Native Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_002_1");
 			case 17401:
-				return 682123523 /* GXTEntry: "Pilgrim Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_003_1");
 			case 17402:
-				return 2036219956 /* GXTEntry: "Huntsman Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_004_1");
 			case 17403:
-				return 2067040192 /* GXTEntry: "Pioneer Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_005_1");
 			case 17404:
-				return -318532162 /* GXTEntry: "Rococo Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_006_1");
 			case 17405:
-				return -1110126435 /* GXTEntry: "Glorious Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_007_1");
 			case 17406:
-				return 833070940 /* GXTEntry: "Pursuer Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_008_1");
 			case 17407:
-				return -1669863795 /* GXTEntry: "Majestic Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_009_1");
 			case 17408:
-				return -1012673867 /* GXTEntry: "Homestead Accessory" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_000_010_1");
 			case 17409:
 				return joaat("CLOTHING_HL_PLAYER_HAT_000_011_1");
 			case 17410:
@@ -76925,7 +76925,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17429:
 				return joaat("CLOTHING_HL_PLAYER_HAT_004_10");
 			case 17430:
-				return 891052755 /* GXTEntry: "Stalker Hat" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_004_11");
 			case 17431:
 				return joaat("CLOTHING_HL_PLAYER_HAT_004_2");
 			case 17432:
@@ -76987,7 +76987,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17460:
 				return joaat("CLOTHING_HL_PLAYER_HAT_007_10");
 			case 17461:
-				return -1738675299 /* GXTEntry: "Military Scout Hat" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_007_11");
 			case 17462:
 				return joaat("CLOTHING_HL_PLAYER_HAT_007_2");
 			case 17463:
@@ -77009,7 +77009,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17471:
 				return joaat("CLOTHING_HL_PLAYER_HAT_008_10");
 			case 17472:
-				return 1727487721 /* GXTEntry: "Plantation Hat" */;
+				return joaat("CLOTHING_HL_PLAYER_HAT_008_11");
 			case 17473:
 				return joaat("CLOTHING_HL_PLAYER_HAT_008_2");
 			case 17474:
@@ -77641,7 +77641,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17787:
 				return joaat("CLOTHING_HL_PLAYER_PANTS_011_10");
 			case 17788:
-				return -663172420;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_011_11");
 			case 17789:
 				return joaat("CLOTHING_HL_PLAYER_PANTS_011_2");
 			case 17790:
@@ -77681,29 +77681,29 @@ int func_1357(int iParam0, int iParam1)
 			case 17807:
 				return joaat("CLOTHING_HL_PLAYER_PANTS_013_1");
 			case 17808:
-				return 166420596;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_10");
 			case 17809:
-				return -635766;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_11");
 			case 17810:
-				return 1402696659;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_13");
 			case 17811:
-				return -746064982;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_14");
 			case 17812:
-				return -926622172;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_15");
 			case 17813:
-				return -148784415;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_16");
 			case 17814:
-				return -599423703;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_17");
 			case 17815:
-				return 2084324632;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_18");
 			case 17816:
-				return -1434967665;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_19");
 			case 17817:
 				return joaat("CLOTHING_HL_PLAYER_PANTS_013_2");
 			case 17818:
-				return -246106369;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_20");
 			case 17819:
-				return 1066062698;
+				return joaat("CLOTHING_HL_PLAYER_PANTS_013_21");
 			case 17820:
 				return joaat("CLOTHING_HL_PLAYER_PANTS_013_3");
 			case 17821:
@@ -77809,9 +77809,9 @@ int func_1357(int iParam0, int iParam1)
 			case 17871:
 				return joaat("CLOTHING_HL_PLAYER_SHIRT_009_10");
 			case 17872:
-				return 539247475;
+				return joaat("CLOTHING_HL_PLAYER_SHIRT_009_12");
 			case 17873:
-				return 1373316832;
+				return joaat("CLOTHING_HL_PLAYER_SHIRT_009_13");
 			case 17874:
 				return joaat("CLOTHING_HL_PLAYER_SHIRT_009_2");
 			case 17875:
@@ -78059,7 +78059,7 @@ int func_1357(int iParam0, int iParam1)
 			case 17996:
 				return joaat("CLOTHING_HL_PLAYER_SPURS_022_1");
 			case 17997:
-				return -271112438;
+				return joaat("CLOTHING_HL_PLAYER_SPURS_022_10");
 			case 17998:
 				return joaat("CLOTHING_HL_PLAYER_SPURS_022_2");
 			case 17999:
@@ -78179,39 +78179,39 @@ int func_1357(int iParam0, int iParam1)
 			case 18050:
 				return joaat("CLOTHING_HL_PLAYER_UST_000_1");
 			case 18051:
-				return 1635498237;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_17");
 			case 18052:
-				return -515295082;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_18");
 			case 18053:
-				return 918086516;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_19");
 			case 18054:
 				return joaat("CLOTHING_HL_PLAYER_UST_000_2");
 			case 18055:
-				return -1205569675;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_20");
 			case 18056:
-				return -1446946129;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_21");
 			case 18057:
-				return -1935794071;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_22");
 			case 18058:
-				return 933361266;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_29");
 			case 18059:
 				return joaat("CLOTHING_HL_PLAYER_UST_000_3");
 			case 18060:
 				return joaat("CLOTHING_HL_PLAYER_UST_000_4");
 			case 18061:
-				return 872059161;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_5");
 			case 18062:
-				return 1192245060;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_6");
 			case 18063:
-				return 1474255074;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_7");
 			case 18064:
-				return 1144205718;
+				return joaat("CLOTHING_HL_PLAYER_UST_000_8");
 			case 18065:
 				return joaat("CLOTHING_HL_PLAYER_VEST_000_1");
 			case 18066:
 				return joaat("CLOTHING_HL_PLAYER_VEST_000_10");
 			case 18067:
-				return 291860984 /* GXTEntry: "Pocket Watch Vest" */;
+				return joaat("CLOTHING_HL_PLAYER_VEST_000_11");
 			case 18068:
 				return joaat("CLOTHING_HL_PLAYER_VEST_000_2");
 			case 18069:
@@ -78301,7 +78301,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18111:
 				return joaat("CLOTHING_HL_PLAYER_VEST_010_21");
 			case 18112:
-				return 442981823 /* GXTEntry: "Legion Vest" */;
+				return joaat("CLOTHING_HL_PLAYER_VEST_010_22");
 			case 18113:
 				return joaat("CLOTHING_HL_PLAYER_VEST_010_3");
 			case 18114:
@@ -78323,7 +78323,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18122:
 				return joaat("CLOTHING_HL_PLAYER_VEST_011_11");
 			case 18123:
-				return -1873413140 /* GXTEntry: "Principal Vest" */;
+				return joaat("CLOTHING_HL_PLAYER_VEST_011_12");
 			case 18124:
 				return joaat("CLOTHING_HL_PLAYER_VEST_011_2");
 			case 18125:
@@ -79049,7 +79049,7 @@ int func_1357(int iParam0, int iParam1)
 			case 18485:
 				return joaat("CLOTHING_SP_OFFHAND_000");
 			case 18486:
-				return -302158962 /* GXTEntry: "Legend Of The East Off-Hand Holster" */;
+				return joaat("CLOTHING_SP_OFFHAND_004");
 			case 18487:
 				return 1837059600;
 			case 18488:
@@ -102580,11 +102580,11 @@ int func_2104(int iParam0)
 			return 10;
 		case -134124598:
 			return 11;
-		case 366200818:
+		case joaat("BEARDS_CHIN"):
 			return 13;
-		case -322391462:
+		case joaat("BEARDS_MUSTACHE"):
 			return 14;
-		case -1229572297:
+		case joaat("BEARDS_CHOPS"):
 			return 12;
 		case joaat("EYEWEAR"):
 			return 15;

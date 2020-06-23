@@ -3850,7 +3850,7 @@ int func_126()
 		case joaat("CLOTHING_HL_PLAYER_HAT_000_001_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_000_011_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_004_1"):
-		case -1669863795: /* GXTEntry: "Majestic Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_009_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_028_1"):
 		case joaat("CLOTHING_ITEM_SP_VALSHERIFF_HAT_000"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_038_1"):
@@ -3865,9 +3865,9 @@ int func_126()
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_063_ALT01"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_015_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_068"):
-		case -1110126435: /* GXTEntry: "Glorious Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_007_1"):
 		case joaat("CLOTHING_SP_SCARECROW_01_HAT_000_1"):
-		case -1012673867: /* GXTEntry: "Homestead Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_010_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_055"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_061_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_033_1"):
@@ -3892,7 +3892,7 @@ int func_126()
 		case joaat("CLOTHING_SP_DEAD_MINER_HAT_000_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_034_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_030_1"):
-		case -318532162: /* GXTEntry: "Rococo Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_006_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_047_ALT02"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_003_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_045_1"):
@@ -3912,11 +3912,11 @@ int func_126()
 		case joaat("CLOTHING_HL_PLAYER_HAT_029_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_032_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_069"):
-		case 682123523: /* GXTEntry: "Pilgrim Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_003_1"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_016_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_013"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_031_1"):
-		case 833070940: /* GXTEntry: "Pursuer Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_008_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_012"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_025"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_007_1"):
@@ -3932,16 +3932,16 @@ int func_126()
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_089"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_068_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_102"):
-		case 1725570548: /* GXTEntry: "Native Accessory" */
-		case 1727487721: /* GXTEntry: "Plantation Hat" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_002_1"):
+		case joaat("CLOTHING_HL_PLAYER_HAT_008_11"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_047_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_050"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_050_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_000"):
-		case 2036219956: /* GXTEntry: "Huntsman Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_004_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_051"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_009_1"):
-		case 2067040192: /* GXTEntry: "Pioneer Accessory" */
+		case joaat("CLOTHING_HL_PLAYER_HAT_000_005_1"):
 		case joaat("CLOTHING_ITEM_SP_COLLECTABLE_HAT_MR1_016"):
 		case joaat("CLOTHING_HL_PLAYER_HAT_062_1"):
 			return 1;

@@ -3059,10 +3059,10 @@ void func_37()
 	func_198(1352942778 /* GXTEntry: "The Rebel" */, 1);
 	func_198(1964379549 /* GXTEntry: "The Innocent" */, 1);
 	func_198(1201189539 /* GXTEntry: "The Pursuer" */, 1);
-	func_198(333909087, 1);
+	func_198(joaat("CLOTHING_HL_PLAYER_BOOT_012_11"), 1);
 	func_198(joaat("CLOTHING_HL_PLAYER_BOOT_020_1"), 1);
 	func_198(joaat("CLOTHING_HL_PLAYER_COAT_021_2"), 1);
-	func_198(891052755 /* GXTEntry: "Stalker Hat" */, 1);
+	func_198(joaat("CLOTHING_HL_PLAYER_HAT_004_11"), 1);
 	func_198(-1391892422 /* GXTEntry: "Wrangler Vest" */, 1);
 	func_198(962344255 /* GXTEntry: "Buckskin Vest" */, 1);
 	func_198(1160643979 /* GXTEntry: "The Winter Gunslinger" */, 1);
@@ -36248,11 +36248,11 @@ int func_930(int iParam0)
 			return 10;
 		case -134124598:
 			return 11;
-		case 366200818:
+		case joaat("BEARDS_CHIN"):
 			return 13;
-		case -322391462:
+		case joaat("BEARDS_MUSTACHE"):
 			return 14;
-		case -1229572297:
+		case joaat("BEARDS_CHOPS"):
 			return 12;
 		case joaat("EYEWEAR"):
 			return 15;

@@ -4680,7 +4680,7 @@ void func_222(var uParam0, var uParam1)
 	}
 	if (func_478(uParam0->f_38))
 	{
-		func_479(2, -1166915294, 0);
+		func_479(2, joaat("BANNED"), 0);
 	}
 	else if (func_480(uParam0->f_38, 700892038))
 	{
@@ -4708,7 +4708,7 @@ void func_222(var uParam0, var uParam1)
 	}
 	else if (iVar1 == -971119797)
 	{
-		func_479(2, 1736016924, 0);
+		func_479(2, joaat("DISCONNECTED"), 0);
 	}
 	else if ((iVar1 == -1631908357 || iVar1 == -572687397) || iVar1 == -1433740021)
 	{
@@ -4724,7 +4724,7 @@ void func_222(var uParam0, var uParam1)
 	}
 	else if (iVar0 == 1)
 	{
-		func_479(2, 1736016924, 0);
+		func_479(2, joaat("DISCONNECTED"), 0);
 	}
 	else if (iVar0 == 2)
 	{
@@ -5482,7 +5482,7 @@ void func_264(var uParam0)
 		case -1589038658:
 		case -1517426354:
 		case -1300909614:
-		case -1166915294:
+		case joaat("BANNED"):
 		case -835571454:
 		case -592991683:
 		case -301240451:
@@ -5490,7 +5490,7 @@ void func_264(var uParam0)
 		case 1053423395:
 		case 1320901890:
 		case 1671747787:
-		case 1736016924:
+		case joaat("DISCONNECTED"):
 		case 2124908670:
 			func_520(uParam0, iVar0);
 			func_97(uParam0, 21);
@@ -17152,7 +17152,7 @@ void func_520(var uParam0, int iParam1)
 	switch (iParam1)
 	{
 		case -1720361368:
-		case -1166915294:
+		case joaat("BANNED"):
 			uParam0->f_81 = func_1115(&(uParam0->f_62), "MG_ALERT", "MG_ALERT_BANNED", 0, 1);
 			break;
 		case -1878199881:
@@ -17188,7 +17188,7 @@ void func_520(var uParam0, int iParam1)
 		case 1320901890:
 			uParam0->f_81 = func_1115(&(uParam0->f_62), "MG_ALERT", "MG_ALERT_ARBITLEGAL", 0, 1);
 			break;
-		case 1736016924:
+		case joaat("DISCONNECTED"):
 			uParam0->f_81 = func_1115(&(uParam0->f_62), "MG_ALERT", MISC::_CREATE_VAR_STRING(10, "MG_ALERT_DISCONNECTED", func_1116(uParam0->f_39)), 0, 1);
 			break;
 		case 2124908670:

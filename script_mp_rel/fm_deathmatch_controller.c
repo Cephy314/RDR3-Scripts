@@ -77699,11 +77699,11 @@ int func_2711(int iParam0)
 			return 10;
 		case -134124598:
 			return 11;
-		case 366200818:
+		case joaat("BEARDS_CHIN"):
 			return 13;
-		case -322391462:
+		case joaat("BEARDS_MUSTACHE"):
 			return 14;
-		case -1229572297:
+		case joaat("BEARDS_CHOPS"):
 			return 12;
 		case joaat("EYEWEAR"):
 			return 15;
