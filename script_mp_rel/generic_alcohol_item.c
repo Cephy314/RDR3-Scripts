@@ -140,7 +140,7 @@ void __EntryFunction__()
 					}
 					else
 					{
-						if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
+						if (TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(Global_34) != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 						{
 							PED::_0xD65FDC686A031C83(Global_34, joaat("PLAYER_BARCUSTOMER_RETURN_BEER"), 3f);
 							PED::_0x6D07B371E9439019(Global_34);
@@ -466,7 +466,7 @@ void func_13(int iParam0)
 {
 	if (iParam0 == -1493684811)
 	{
-		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("WORLD_HUMAN_BARCUSTOMER") || TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")))
+		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && (TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(Global_34) == joaat("WORLD_HUMAN_BARCUSTOMER") || TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE")))
 		{
 			TASK::_0xB35370D5353995CB(Global_34, 1587785400, 1f);
 		}
@@ -480,7 +480,7 @@ void func_13(int iParam0)
 	}
 	else if (iParam0 == -752898125)
 	{
-		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
+		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_34, 1) && TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(Global_34) == joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 		{
 			TASK::_0xB35370D5353995CB(Global_34, 1342098323, 1f);
 		}
@@ -1179,7 +1179,7 @@ int func_43(int iParam0, int iParam1)
 	return 0;
 }
 
-var func_44(int iParam0, var uParam1)
+bool func_44(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }

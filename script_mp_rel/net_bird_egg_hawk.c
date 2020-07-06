@@ -912,7 +912,7 @@ var func_31(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -2054,12 +2054,12 @@ void func_76(struct<19> Param0, var uParam19, bool bParam20, bool bParam21)
 	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Param0, 19, 5, &uParam19);
 }
 
-void func_77(int* iParam0, var uParam1)
+void func_77(var uParam0, var uParam1)
 {
 	if (SCRIPTS::_0x179A6F0EE2E79026(uParam1))
 	{
-		iParam0->f_1 = &Global_1275573->f_154[&Global_1275573];
-		SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 7, 19, uParam1);
+		uParam0->f_1 = &Global_1275573->f_154[&Global_1275573];
+		SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 7, 19, uParam1);
 	}
 }
 
@@ -2280,7 +2280,7 @@ int func_84(int iParam0, bool bParam1, int iParam2, bool bParam3)
 
 bool func_85(int iParam0)
 {
-	return WEAPON::_0xC4DEC3CA8C365A5D(iParam0);
+	return WEAPON::_IS_WEAPON_BOW(iParam0);
 }
 
 void func_86(int iParam0, int iParam1, int iParam2)
@@ -2420,7 +2420,7 @@ int func_93(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -2664,7 +2664,7 @@ int func_108(int iParam0, int iParam1)
 			else if (!func_144(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_145(iVar1);
 				return 1;
@@ -3108,9 +3108,9 @@ int func_141(int iParam0, int iParam1)
 	iVar0 = func_90(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -3608,7 +3608,7 @@ void func_169(int iParam0)
 
 bool func_170(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_171(var uParam0, bool bParam1, bool bParam2, int iParam3)

@@ -101,7 +101,7 @@ void __EntryFunction__()
 
 void func_1(var uParam0, vector3 vParam1)
 {
-	NETWORK::_0xE7DDA8BD3BCF751C(3);
+	NETWORK::RESERVE_NETWORK_CLIENT_MISSION_OBJECTS(3);
 	if (vParam1.z == joaat("WB_DIG_BURIED_RANDOM"))
 	{
 		if (!func_9(uParam0, 4))
@@ -3072,12 +3072,12 @@ void func_82(struct<19> Param0, var uParam19, bool bParam20, bool bParam21)
 	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Param0, 19, 5, &uParam19);
 }
 
-void func_83(int* iParam0, float fParam1)
+void func_83(var uParam0, float fParam1)
 {
 	if (SCRIPTS::_0x179A6F0EE2E79026(fParam1))
 	{
-		iParam0->f_1 = &Global_1275573->f_154[&Global_1275573];
-		SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 7, 19, fParam1);
+		uParam0->f_1 = &Global_1275573->f_154[&Global_1275573];
+		SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 7, 19, fParam1);
 	}
 }
 
@@ -3788,7 +3788,7 @@ int func_132(int iParam0, int iParam1)
 			else if (!func_153(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_154(iVar1);
 				return 1;
@@ -4223,9 +4223,9 @@ int func_150(int iParam0, int iParam1)
 	iVar0 = func_131(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -4571,7 +4571,7 @@ int func_175(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -5226,7 +5226,7 @@ int func_204(var uParam0, int iParam1, bool bParam2, bool bParam3, int iParam4)
 
 bool func_205(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_206(var uParam0, bool bParam1, bool bParam2, int iParam3)

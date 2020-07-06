@@ -1111,15 +1111,15 @@ int func_24(bool bParam0)
 	{
 		return 1;
 	}
-	if (PED::_0x9682F850056C9ADE(Global_34))
+	if (PED::_IS_PED_LASSOED(Global_34))
 	{
 		return 1;
 	}
-	if (PED::_0x3AA24CCC0D451379(Global_34) || PED::_0xD453BB601D4A606E(Global_34))
+	if (PED::_IS_PED_HOGTIED(Global_34) || PED::_0xD453BB601D4A606E(Global_34))
 	{
 		return 1;
 	}
-	if (PED::_0x42429C674B61238B(Global_34))
+	if (PED::_IS_PED_HOGTYING(Global_34))
 	{
 		return 1;
 	}
@@ -1682,7 +1682,7 @@ void func_38()
 	{
 		TASK::CLEAR_PED_TASKS_IMMEDIATELY(Global_34, true, true);
 	}
-	if (PED::_0x3AA24CCC0D451379(Global_34) || PED::_0xD453BB601D4A606E(Global_34))
+	if (PED::_IS_PED_HOGTIED(Global_34) || PED::_0xD453BB601D4A606E(Global_34))
 	{
 		TASK::CLEAR_PED_TASKS_IMMEDIATELY(Global_34, false, true);
 	}
@@ -3038,8 +3038,8 @@ bool func_105()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) <= 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) <= 4);
 }
 
 bool func_106(int iParam0, int iParam1, bool bParam2, int iParam3)
@@ -3067,7 +3067,7 @@ int func_107(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	iVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 
@@ -3850,13 +3850,13 @@ bool func_142()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) == 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) == 4);
 }
 
 void func_143(int iParam0)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
 bool func_144(int iParam0)
@@ -4807,15 +4807,15 @@ char* func_190(char* sParam0, int iParam1)
 	return MISC::_CREATE_VAR_STRING(42, "COLOR_STRING", MISC::_CREATE_COLOR_STRING(iParam1), sParam0);
 }
 
-void func_191(int* iParam0)
+void func_191(var uParam0)
 {
 	var uVar0;
 
-	*iParam0 = 13;
-	iParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	*uParam0 = 13;
+	uParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	uVar0 = func_240(0, 8);
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 26, 15, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 26, 15, &uVar0);
 }
 
 void func_192(bool bParam0)
@@ -6222,17 +6222,17 @@ int func_263(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-void func_264(int* iParam0, var uParam1)
+void func_264(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 179;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 8, 2, &uParam1);
-	func_270(*iParam0);
+	*uParam0 = 179;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 8, 2, &uParam1);
+	func_270(*uParam0);
 }
 
 int func_265()

@@ -6022,7 +6022,7 @@ void func_13(var uParam0)
 	MISC::_0xBE83CAE8ED77A94F(joaat("SUNNY"));
 	NETWORK::_NETWORK_CLOCK_TIME_OVERRIDE(10, 0, 0, 0, true);
 	GRAPHICS::SET_TIMECYCLE_MODIFIER("Online_Character_Editor");
-	NETWORK::_0x807E119F80231732(2 + 2);
+	NETWORK::RESERVE_NETWORK_CLIENT_MISSION_PEDS(2 + 2);
 	func_79(uParam0);
 	HUD::_HIDE_HUD_COMPONENT(1779876696);
 	STREAMING::REQUEST_ANIM_DICT("MECH_LOCO@GENERIC@HANDCUFFED");
@@ -7046,7 +7046,7 @@ void func_27(var uParam0)
 {
 	int iVar0;
 
-	_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
 		if (!CAM::IS_SCREEN_FADING_OUT())
@@ -7083,7 +7083,7 @@ void func_28(var uParam0)
 
 	PAD::DISABLE_ALL_CONTROL_ACTIONS(0);
 	PAD::ENABLE_CONTROL_ACTION(0, joaat("INPUT_FRONTEND_PAUSE"), true);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 	if (uParam0->f_2427 == 0)
 	{
 		bVar0 = true;
@@ -7958,7 +7958,7 @@ void func_39(var uParam0)
 {
 	int iVar0;
 
-	_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
 		if (!CAM::IS_SCREEN_FADING_OUT())
@@ -8139,7 +8139,7 @@ int func_49(int iParam0, int iParam1)
 	}
 	if (func_204(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -8223,7 +8223,7 @@ void func_51(var uParam0)
 	CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 	if (func_205(uParam0->f_2597))
 	{
-		_NAMESPACE71::_0x2F901291EF177B02(uParam0->f_2597, 0);
+		UIFEED::_0x2F901291EF177B02(uParam0->f_2597, 0);
 	}
 	iVar0 = 0;
 	while (iVar0 < 2)
@@ -9884,7 +9884,7 @@ int func_125(int iParam0)
 
 var func_126(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 	return func_299(sParam0, iParam1, iParam2, iParam3, 0, iParam4);
 }
 
@@ -12442,7 +12442,7 @@ bool func_205(int iParam0)
 	iVar0 = 6;
 	if (func_405(iParam0))
 	{
-		iVar0 = _NAMESPACE71::_0x59FA676177DBE4C9(iParam0);
+		iVar0 = UIFEED::_0x59FA676177DBE4C9(iParam0);
 	}
 	return iVar0 != 6;
 }
@@ -15453,7 +15453,7 @@ var func_299(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -25294,7 +25294,7 @@ int func_643(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -25937,9 +25937,9 @@ int func_653(int iParam0, int iParam1)
 	iVar0 = func_621(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -33328,7 +33328,7 @@ int func_898(int iParam0, int iParam1)
 
 bool func_899(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_900(int iParam0)

@@ -88,7 +88,7 @@ void __EntryFunction__()
 	}
 	Local_23.f_179 = 0;
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(iVar1, true);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
 	func_5(&Global_26384);
 	func_6();
 	while ((!SCRIPTS::_0x9E4EF615E307FBBE() && !func_7(Global_26384)) && !bVar25)
@@ -2808,7 +2808,7 @@ void func_107()
 
 	Var0 = { func_88(joaat("DATE_CHARACTER_CREATED")) };
 	STATS::STAT_ID_GET_DATE(&Var0, &vVar2);
-	iVar11 = LOCALIZATION::_LOCALIZATION_GET_USER_LANGUAGE();
+	iVar11 = LOCALIZATION::_LOCALIZATION_GET_SYSTEM_DATE_FORMAT();
 	switch (iVar11)
 	{
 		case 0:

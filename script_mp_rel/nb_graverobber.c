@@ -2732,13 +2732,13 @@ void func_61()
 		AUDIO::_0xEF51242E35242B47(func_141(iVar6));
 		iVar6++;
 	}
-	TASK::_0x81948DFE4F5A0283(Local_204.f_18.f_24);
+	TASK::_DELETE_SCENARIO_POINT(Local_204.f_18.f_24);
 	iVar5 = 0;
 	while (iVar5 < 8)
 	{
 		if (TASK::_DOES_SCENARIO_POINT_EXIST((Local_204.f_18.f_130[iVar5 /*3*/])->f_2))
 		{
-			TASK::_0x81948DFE4F5A0283((Local_204.f_18.f_130[iVar5 /*3*/])->f_2);
+			TASK::_DELETE_SCENARIO_POINT((Local_204.f_18.f_130[iVar5 /*3*/])->f_2);
 		}
 		iVar5++;
 	}
@@ -3512,11 +3512,11 @@ int func_114()
 		}
 		iVar4++;
 	}
-	if (!STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_GRAVEDIG"), 15, 0, 0) || !STREAMING::_0x19A6BE7D9C6884D3(joaat("WB_DIG_BURIED_JEWELRY"), 15, 0, 0))
+	if (!STREAMING::_REQUEST_SCENARIO_TYPE(joaat("WORLD_HUMAN_GRAVEDIG"), 15, 0, 0) || !STREAMING::_REQUEST_SCENARIO_TYPE(joaat("WB_DIG_BURIED_JEWELRY"), 15, 0, 0))
 	{
 		iVar2 = 0;
 	}
-	if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_GRAVEDIG"), 0) || !STREAMING::_0x9427C94D2E4094A4(joaat("WB_DIG_BURIED_JEWELRY"), 0))
+	if (!STREAMING::_HAS_SCENARIO_TYPE_LOADED(joaat("WORLD_HUMAN_GRAVEDIG"), false) || !STREAMING::_HAS_SCENARIO_TYPE_LOADED(joaat("WB_DIG_BURIED_JEWELRY"), false))
 	{
 		iVar2 = 0;
 	}
@@ -3609,8 +3609,8 @@ void func_123()
 		iVar2++;
 	}
 	Local_204.f_18.f_24 = TASK::CREATE_SCENARIO_POINT(joaat("WORLD_HUMAN_GRAVEDIG"), func_200(0), func_201(0), 0, 0, 0);
-	TASK::_0x5AF19B6CC2115D34(Local_204.f_18.f_24, 25, 1);
-	TASK::_0x5AF19B6CC2115D34(Local_204.f_18.f_24, 23, 1);
+	TASK::_SET_SCENARIO_POINT_FLAG(Local_204.f_18.f_24, 25, true);
+	TASK::_SET_SCENARIO_POINT_FLAG(Local_204.f_18.f_24, 23, true);
 }
 
 void func_124()
@@ -3972,7 +3972,7 @@ void func_142()
 	if (func_241("NB_GRAVEROBBER_OBJ_GOTO_DIG", 1))
 	{
 		func_242(32768);
-		_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+		UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 	}
 }
 
@@ -5809,7 +5809,7 @@ void func_224()
 	if (LAW::_0xAD401C63158ACBAA(iVar1))
 	{
 		LAW::_0xBD944A3D36E992DE();
-		PLAYER::_0xCBCCF73FFA69CC6B(iVar1);
+		PLAYER::REPORT_POLICE_SPOTTED_PLAYER(iVar1);
 	}
 	else
 	{
@@ -5818,7 +5818,7 @@ void func_224()
 			func_270(&(Local_16.f_7.f_2));
 		}
 		func_308(&(Local_204.f_18.f_155));
-		LAW::_0xF60386770878A98F(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_GRAVE_ROBBERY"), 0, 0, 1);
+		LAW::_REPORT_CRIME(PLAYER::GET_PLAYER_INDEX(), joaat("CRIME_GRAVE_ROBBERY"), 0, 0, true);
 		LAW::_0x75CBF20BA47E4F89(Global_35, func_330());
 		TASK::CLEAR_PED_TASKS(Global_34, 1, 0);
 	}
@@ -6181,7 +6181,7 @@ bool func_241(char* sParam0, int iParam1)
 	struct<2> Var0;
 
 	Var0.f_1 = sParam0;
-	return func_341(_NAMESPACE71::_0x4E88A65968A55C78(&Var0, iParam1));
+	return func_341(UIFEED::_0x4E88A65968A55C78(&Var0, iParam1));
 }
 
 void func_242(int iParam0)
@@ -7311,7 +7311,7 @@ int func_284(int iParam0, int iParam1)
 	return 0;
 }
 
-var func_285(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_285(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -8009,7 +8009,7 @@ void func_324(int iParam0, bool bParam1)
 	}
 	else if (TASK::_DOES_SCENARIO_POINT_EXIST((Local_204.f_18.f_130[iParam0 /*3*/])->f_2))
 	{
-		TASK::_0x81948DFE4F5A0283((Local_204.f_18.f_130[iParam0 /*3*/])->f_2);
+		TASK::_DELETE_SCENARIO_POINT((Local_204.f_18.f_130[iParam0 /*3*/])->f_2);
 	}
 }
 
@@ -8092,16 +8092,16 @@ int func_330()
 	return joaat("LAW_LOCAL_VALENTINE");
 }
 
-void func_331(int* iParam0, var uParam1)
+void func_331(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 181;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 7, 7, &uParam1);
+	*uParam0 = 181;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 7, 7, &uParam1);
 }
 
 int func_332(int iParam0, int iParam1)
@@ -8238,7 +8238,7 @@ void func_340(var uParam0)
 	*uParam0 = 176;
 	uParam0->f_1 = PLAYER::PLAYER_ID();
 	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(uParam0, 6, 11, &(Global_1051202->f_16[15]));
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 6, 11, &(Global_1051202->f_16[15]));
 	func_425(uParam0, uParam0->f_1);
 }
 
@@ -8248,7 +8248,7 @@ int func_341(int iParam0)
 
 	if (func_426(iParam0))
 	{
-		iVar0 = _NAMESPACE71::_0x59FA676177DBE4C9(iParam0);
+		iVar0 = UIFEED::_0x59FA676177DBE4C9(iParam0);
 		return ((((iVar0 == 4 || iVar0 == 0) || iVar0 == 3) || iVar0 == 5) || iVar0 == 2);
 	}
 	return 0;
@@ -8894,7 +8894,7 @@ int func_361(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_POTENTIAL_BLAST"), vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), uParam2->f_28, &vVar4, 0, 0);
+					MISC::GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), uParam2->f_28, &vVar4, 0, 0);
 					if (func_452(iParam1, vVar0, vVar4))
 					{
 						func_440(uParam2, 1);
@@ -8918,7 +8918,7 @@ int func_361(var uParam0, int iParam1, var uParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_POTENTIAL_BLAST"), vVar0, uParam2->f_23))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), uParam2->f_28, &vVar7, 0, 0);
+					MISC::GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), uParam2->f_28, &vVar7, 0, 0);
 					if (func_452(iParam1, vVar0, vVar7))
 					{
 						func_440(uParam2, 1);
@@ -9608,7 +9608,7 @@ void func_388(int iParam0)
 	func_340(&Var0);
 }
 
-var func_389(int iParam0, var uParam1)
+bool func_389(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
@@ -9772,7 +9772,7 @@ int func_399(int iParam0, int iParam1)
 			else if (!func_489(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_490(iVar1);
 				return 1;
@@ -9958,7 +9958,7 @@ int func_406(int iParam0, int iParam1)
 	}
 	if (func_166(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -10169,7 +10169,7 @@ var func_419(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -10580,7 +10580,7 @@ void func_431(int iParam0)
 			Global_1939178->f_24 = PLAYER::_0x72AD59F7B7FB6E24(PLAYER::PLAYER_ID(), 4000);
 			if (!Global_1939178->f_24)
 			{
-				if (bVar1 && WEAPON::_0x6E4E1A82081EABED(Global_1939178->f_38))
+				if (bVar1 && WEAPON::_IS_WEAPON_LASSO(Global_1939178->f_38))
 				{
 					Global_1939178->f_24 = PED::_GET_LASSOED_ENTITY(Global_34) != 0;
 				}
@@ -10592,7 +10592,7 @@ void func_431(int iParam0)
 			break;
 		case 2:
 			bVar3 = WEAPON::IS_WEAPON_VALID(Global_1939178->f_40);
-			if (bVar3 && WEAPON::_0x6E4E1A82081EABED(Global_1939178->f_40))
+			if (bVar3 && WEAPON::_IS_WEAPON_LASSO(Global_1939178->f_40))
 			{
 				Global_1939178->f_19 = 0;
 			}
@@ -10832,7 +10832,7 @@ int func_442(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	{
 		return 0;
 	}
-	if ((WEAPON::_0x6E4E1A82081EABED(Global_1939178->f_38) || joaat("WEAPON_THROWN_BOLAS") == Global_1939178->f_38) && Global_1939178->f_21)
+	if ((WEAPON::_IS_WEAPON_LASSO(Global_1939178->f_38) || joaat("WEAPON_THROWN_BOLAS") == Global_1939178->f_38) && Global_1939178->f_21)
 	{
 	}
 	else if (PLAYER::_0x3EE1F7A8C32F24E1(PLAYER::PLAYER_ID(), &iVar2, 0, 0))
@@ -10865,7 +10865,7 @@ int func_442(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (PLAYER::IS_PLAYER_FREE_AIMING(iVar1))
 	{
-		if (WEAPON::_0x6AD66548840472E5(func_516(iVar0, 0)))
+		if (WEAPON::_IS_WEAPON_SNIPER(func_516(iVar0, 0)))
 		{
 			if (func_517(iParam0, 0.4f, 0.6f, 0.3f, 0.7f))
 			{
@@ -10949,7 +10949,7 @@ int func_447(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4)
 	}
 	if (PLAYER::IS_PLAYER_FREE_AIMING(iVar1))
 	{
-		if (WEAPON::_0x6AD66548840472E5(func_516(iVar0, 0)))
+		if (WEAPON::_IS_WEAPON_SNIPER(func_516(iVar0, 0)))
 		{
 			if (func_518(ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 0.4f, 0.6f, 0.3f, 0.7f))
 			{
@@ -11113,7 +11113,7 @@ int func_453(int iParam0)
 		}
 		if (WEAPON::IS_WEAPON_VALID(Global_1939178->f_40))
 		{
-			if (WEAPON::_0x959383DCD42040DA(Global_1939178->f_40) || WEAPON::_0xC4DEC3CA8C365A5D(Global_1939178->f_40))
+			if (WEAPON::_IS_WEAPON_MELEE(Global_1939178->f_40) || WEAPON::_IS_WEAPON_BOW(Global_1939178->f_40))
 			{
 				return 1;
 			}
@@ -11135,7 +11135,7 @@ int func_454(int iParam0)
 		return 0;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	if (PED::_0x772A1969F649E902(iVar0))
+	if (PED::_IS_THIS_MODEL_A_HORSE(iVar0))
 	{
 		return 1;
 	}
@@ -11254,7 +11254,7 @@ int func_459(int iParam0, int iParam1)
 	{
 		return 1;
 	}
-	if (!WEAPON::_0x6E4E1A82081EABED(func_523(iParam0, 1, 0, 0)) && !func_523(iParam0, 1, 0, 0) == joaat("WEAPON_THROWN_BOLAS"))
+	if (!WEAPON::_IS_WEAPON_LASSO(func_523(iParam0, 1, 0, 0)) && !func_523(iParam0, 1, 0, 0) == joaat("WEAPON_THROWN_BOLAS"))
 	{
 		return 0;
 	}
@@ -11822,9 +11822,9 @@ int func_486(int iParam0, int iParam1)
 	iVar0 = func_398(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -12250,7 +12250,7 @@ int func_513(bool bParam0, int iParam1, int iParam2)
 	{
 		if (!bParam0 || PED::IS_PED_HUMAN(Global_1939178->f_27))
 		{
-			if (PED::_0x3AA24CCC0D451379(Global_1939178->f_27) || ENTITY::IS_ENTITY_DEAD(Global_1939178->f_27))
+			if (PED::_IS_PED_HOGTIED(Global_1939178->f_27) || ENTITY::IS_ENTITY_DEAD(Global_1939178->f_27))
 			{
 				*iParam2 = Global_1939178->f_27;
 				iVar0 = 1;
@@ -12287,7 +12287,7 @@ int func_514(var uParam0)
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
 					{
-						if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iVar1)))
+						if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iVar1)))
 						{
 							iVar0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1);
 							return iVar0;
@@ -12314,7 +12314,7 @@ int func_514(var uParam0)
 		{
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
-				if (!PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iVar0)))
+				if (!PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iVar0)))
 				{
 					iVar0 = 0;
 				}
@@ -12407,7 +12407,7 @@ int func_520(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1939178->f_38))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1939178->f_38) || Global_1939178->f_38 == joaat("WEAPON_MELEE_KNIFE"))
+				if (WEAPON::_IS_WEAPON_MELEE(Global_1939178->f_38) || Global_1939178->f_38 == joaat("WEAPON_MELEE_KNIFE"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1939178->f_38, iParam1))
 					{
@@ -12432,7 +12432,7 @@ int func_521(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -13111,7 +13111,7 @@ int func_546(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -13736,7 +13736,7 @@ int func_571(int iParam0, var uParam1, var uParam2)
 
 bool func_572(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_573(var uParam0, bool bParam1, bool bParam2, int iParam3)

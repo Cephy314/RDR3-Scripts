@@ -3629,7 +3629,7 @@ void func_146(bool bParam0)
 	}
 	if (TASK::_DOES_SCENARIO_POINT_EXIST(Local_163.f_18.f_17))
 	{
-		TASK::_0x81948DFE4F5A0283(Local_163.f_18.f_17);
+		TASK::_DELETE_SCENARIO_POINT(Local_163.f_18.f_17);
 	}
 	PED::REMOVE_SCENARIO_BLOCKING_AREA(Local_163.f_18.f_18, false);
 	if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
@@ -5471,7 +5471,7 @@ void func_244(var uParam0)
 	*uParam0 = 176;
 	uParam0->f_1 = PLAYER::PLAYER_ID();
 	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(uParam0, 6, 19, &(Global_1051202->f_16[15]));
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 6, 19, &(Global_1051202->f_16[15]));
 	func_294(uParam0, uParam0->f_1);
 }
 
@@ -6382,9 +6382,9 @@ struct<15> func_300(int iParam0)
 	return Var0;
 }
 
-void func_301(int* iParam0)
+void func_301(var uParam0)
 {
-	func_333(iParam0, func_332(4, 117));
+	func_333(uParam0, func_332(4, 117));
 }
 
 void func_302(var uParam0, int iParam1)
@@ -6494,7 +6494,7 @@ var func_307(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -6876,13 +6876,13 @@ var func_332(int iParam0, int iParam1)
 	return func_356(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-void func_333(int* iParam0, var uParam1)
+void func_333(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 15, 40, &uParam1);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 15, 40, &uParam1);
 }
 
 void func_334(var uParam0, int iParam1)
@@ -6958,7 +6958,7 @@ int func_340(int iParam0, int iParam1)
 			else if (!func_360(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_361(iVar1);
 				return 1;
@@ -7458,9 +7458,9 @@ int func_357(int iParam0, int iParam1)
 	iVar0 = func_339(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -8368,7 +8368,7 @@ int func_396(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -8951,7 +8951,7 @@ void func_424(var uParam0, int iParam1, var uParam2)
 
 bool func_425(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_426(var uParam0, bool bParam1, bool bParam2, int iParam3)

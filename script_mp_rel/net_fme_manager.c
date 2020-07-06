@@ -3757,17 +3757,17 @@ var func_159(int iParam0, int iParam1)
 	return func_157(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-void func_160(int* iParam0, var uParam1)
+void func_160(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 26;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 47, 5, &uParam1);
-	func_190(iParam0);
+	*uParam0 = 26;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 47, 5, &uParam1);
+	func_190(uParam0);
 }
 
 void func_161(var uParam0, int iParam1)
@@ -4390,15 +4390,15 @@ void func_189(var uParam0, int iParam1, int iParam2, int iParam3)
 	}
 }
 
-void func_190(int* iParam0)
+void func_190(var uParam0)
 {
-	if (iParam0->f_1 != 255)
+	if (uParam0->f_1 != 255)
 	{
 	}
-	if (iParam0->f_11.f_7 != 255)
+	if (uParam0->f_11.f_7 != 255)
 	{
 	}
-	if (iParam0->f_37 != 255)
+	if (uParam0->f_37 != 255)
 	{
 	}
 }
@@ -5957,7 +5957,7 @@ var func_270(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
+	uVar17 = UIFEED::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 

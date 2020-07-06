@@ -3698,7 +3698,7 @@ var func_167(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -8917,7 +8917,7 @@ void func_370(var uParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 	uParam0->f_7 = iParam3;
 }
 
-void func_371(int* iParam0)
+void func_371(var uParam0)
 {
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -8927,11 +8927,11 @@ void func_371(int* iParam0)
 	{
 		return;
 	}
-	*iParam0 = 172;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(iParam0, 40, 5, &(Global_1051202->f_16[12]));
-	func_542(iParam0, iParam0->f_1);
+	*uParam0 = 172;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 40, 5, &(Global_1051202->f_16[12]));
+	func_542(uParam0, uParam0->f_1);
 }
 
 int func_372(int iParam0, var uParam1)
@@ -10435,28 +10435,28 @@ var func_419(int iParam0)
 	return uVar50;
 }
 
-void func_420(int* iParam0, var uParam1)
+void func_420(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 9;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 31, 24, &uParam1);
+	*uParam0 = 9;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 31, 24, &uParam1);
 }
 
-void func_421(int* iParam0)
+void func_421(var uParam0)
 {
 	if (&Global_1051202->f_16[0] == 0 || !SCRIPTS::_DOES_THREAD_EXIST(&(Global_1051202->f_16[0])))
 	{
 		return;
 	}
-	*iParam0 = 9;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(iParam0, 31, 24, &(Global_1051202->f_16[0]));
+	*uParam0 = 9;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 31, 24, &(Global_1051202->f_16[0]));
 }
 
 int func_422(int iParam0, int iParam1)
@@ -11980,16 +11980,16 @@ int func_481()
 	return 0;
 }
 
-void func_482(int* iParam0, var uParam1)
+void func_482(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 181;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 7, 13, &uParam1);
+	*uParam0 = 181;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 7, 13, &uParam1);
 }
 
 bool func_483(int iParam0)
@@ -13223,7 +13223,7 @@ bool func_541(int iParam0)
 	return (iVar0 != 0 && iVar0 != 3);
 }
 
-void func_542(int* iParam0, var uParam1)
+void func_542(var uParam0, var uParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -13232,7 +13232,7 @@ void func_542(int* iParam0, var uParam1)
 	while (iVar0 <= 31)
 	{
 		iVar1 = func_711(iVar0);
-		if (func_62(iParam0->f_7, iVar1))
+		if (func_62(uParam0->f_7, iVar1))
 		{
 		}
 		iVar0++;
@@ -14898,7 +14898,7 @@ int func_572(int iParam0, int iParam1)
 	return -1;
 }
 
-void func_573(int* iParam0)
+void func_573(var uParam0)
 {
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -14908,11 +14908,11 @@ void func_573(int* iParam0)
 	{
 		return;
 	}
-	*iParam0 = 176;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(iParam0, 6, 38, &(Global_1051202->f_16[15]));
-	func_730(iParam0, iParam0->f_1);
+	*uParam0 = 176;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 6, 38, &(Global_1051202->f_16[15]));
+	func_730(uParam0, uParam0->f_1);
 }
 
 void func_574(int iParam0, int iParam1)
@@ -16747,7 +16747,7 @@ var func_681(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
+	uVar17 = UIFEED::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 
@@ -16941,11 +16941,11 @@ char* func_690(char* sParam0, int iParam1)
 	return func_794(MISC::_CREATE_VAR_STRING(10, "PLAYER_STRING", sParam0), iParam1);
 }
 
-void func_691(int* iParam0, var uParam1)
+void func_691(var uParam0, var uParam1)
 {
-	*iParam0 = 28;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 9, 17, uParam1);
+	*uParam0 = 28;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 9, 17, uParam1);
 }
 
 void func_692(int iParam0, int iParam1)
@@ -17107,7 +17107,7 @@ var func_699(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = uParam16;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -17138,7 +17138,7 @@ var func_700(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_7 = uParam5;
 	Var13.f_8 = uParam6;
 	Var13.f_9 = uParam19;
-	uVar23 = _NAMESPACE71::_SHOW_NOTIFICATION(&Var0, &Var13, iParam16, iParam17);
+	uVar23 = UIFEED::_SHOW_NOTIFICATION(&Var0, &Var13, iParam16, iParam17);
 	return uVar23;
 }
 
@@ -17164,7 +17164,7 @@ var func_701(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
 	return uVar21;
 }
 
@@ -17193,7 +17193,7 @@ var func_702(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_7 = uParam5;
 	Var13.f_8 = uParam6;
 	Var13.f_9 = 1;
-	uVar23 = _NAMESPACE71::_SHOW_NOTIFICATION(&Var0, &Var13, iParam15, iParam16);
+	uVar23 = UIFEED::_SHOW_NOTIFICATION(&Var0, &Var13, iParam15, iParam16);
 	return uVar23;
 }
 
@@ -17220,7 +17220,7 @@ var func_703(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_5 = uParam3;
 	Var13.f_6 = uParam4;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -17246,7 +17246,7 @@ var func_704(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_4 = uParam3;
 	Var13.f_5 = uParam4;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_0x3F9FDDBA79117C69(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = UIFEED::_0x3F9FDDBA79117C69(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -17269,7 +17269,7 @@ var func_705(var uParam0, var uParam1, var uParam2, var uParam3, var uParam4, va
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
 	return uVar21;
 }
 
@@ -17383,7 +17383,7 @@ int func_713(int iParam0, int iParam1)
 			else if (!func_800(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_801(iVar1);
 				return 1;
@@ -17537,15 +17537,15 @@ var func_722(int iParam0, int iParam1)
 	return func_613(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-void func_723(int* iParam0, var uParam1)
+void func_723(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 4;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 45, 36, &uParam1);
+	*uParam0 = 4;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 45, 36, &uParam1);
 }
 
 int func_724(var uParam0)
@@ -19147,7 +19147,7 @@ void func_729(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)
 	}
 }
 
-void func_730(int* iParam0, var uParam1)
+void func_730(var uParam0, var uParam1)
 {
 }
 
@@ -20252,7 +20252,7 @@ void func_796(int iParam0)
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(iParam0, func_524(91));
 	if (func_848(iVar0))
 	{
-		_NAMESPACE71::_0x2F901291EF177B02(iVar0, 1);
+		UIFEED::_0x2F901291EF177B02(iVar0, 1);
 	}
 }
 
@@ -20269,9 +20269,9 @@ int func_797(int iParam0, int iParam1)
 	iVar0 = func_712(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -21986,7 +21986,7 @@ int func_880(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -22123,17 +22123,17 @@ int func_888(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-void func_889(int* iParam0, var uParam1)
+void func_889(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 179;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 8, 2, &uParam1);
-	func_897(*iParam0);
+	*uParam0 = 179;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 8, 2, &uParam1);
+	func_897(*uParam0);
 }
 
 int func_890(int iParam0, int iParam1)
@@ -22245,7 +22245,7 @@ int func_899(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, b
 
 bool func_900(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_901(var uParam0, bool bParam1, bool bParam2, int iParam3)

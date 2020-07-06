@@ -209,7 +209,7 @@ void func_1(var uParam0, struct<2> Param1, var uParam3)
 	int iVar0;
 	int iVar1;
 
-	NETWORK::_0xE7DDA8BD3BCF751C(2);
+	NETWORK::RESERVE_NETWORK_CLIENT_MISSION_OBJECTS(2);
 	uParam0->f_3 = 0;
 	uParam0->f_7 = Param1;
 	uParam0->f_10[0] = joaat("MP_TCARD_ACE_CUPS");
@@ -1017,7 +1017,7 @@ int func_44(int iParam0, int iParam1)
 			else if (!func_56(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_57(iVar1);
 				return 1;
@@ -1163,9 +1163,9 @@ int func_53(int iParam0, int iParam1)
 	iVar0 = func_43(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -1790,7 +1790,7 @@ int func_80(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -1982,7 +1982,7 @@ int func_94(var uParam0, int iParam1, int iParam2, int iParam3, bool bParam4, bo
 
 bool func_95(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_96(int iParam0, bool bParam1, bool bParam2, int iParam3)

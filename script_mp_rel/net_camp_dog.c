@@ -3438,7 +3438,7 @@ int func_141(int iParam0)
 	int iVar2;
 
 	iVar0 = PLAYER::GET_PLAYER_PED(iParam0);
-	iVar1 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iVar0);
+	iVar1 = TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(iVar0);
 	iVar2 = iVar1;
 	switch (iVar2)
 	{
@@ -5103,8 +5103,8 @@ bool func_195()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) <= 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) <= 4);
 }
 
 bool func_196(var uParam0, int iParam1, int iParam2)

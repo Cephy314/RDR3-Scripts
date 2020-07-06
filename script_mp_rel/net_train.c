@@ -857,7 +857,7 @@ int func_38(var uParam0, int iParam1, vector3 vParam2, bool bParam5, bool bParam
 			return 0;
 		}
 	}
-	iVar3 = VEHICLE::_0xC239DBD9A57D2A71(iParam1, vParam2, bParam5, bParam6, 1, bParam8);
+	iVar3 = VEHICLE::_CREATE_MISSION_TRAIN(iParam1, vParam2, bParam5, bParam6, true, bParam8);
 	if (!ENTITY::DOES_ENTITY_EXIST(iVar3))
 	{
 		return 0;
@@ -1257,16 +1257,16 @@ var func_64(int iParam0, int iParam1)
 	return func_81(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-int func_65(int* iParam0, var uParam1)
+int func_65(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return 0;
 	}
-	*iParam0 = 20;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 23, 0, &uParam1);
+	*uParam0 = 20;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 23, 0, &uParam1);
 	return 1;
 }
 
@@ -1819,7 +1819,7 @@ int func_85(int iParam0, int iParam1)
 	}
 	if (func_70(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}

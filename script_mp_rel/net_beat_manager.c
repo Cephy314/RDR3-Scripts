@@ -2974,7 +2974,7 @@ void func_99(var uParam0)
 	*uParam0 = 172;
 	uParam0->f_1 = PLAYER::PLAYER_ID();
 	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(uParam0, 40, 5, &(Global_1051202->f_16[12]));
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 40, 5, &(Global_1051202->f_16[12]));
 	func_134(uParam0, uParam0->f_1);
 }
 
@@ -3954,15 +3954,15 @@ var func_149(int iParam0, int iParam1)
 	return func_167(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-void func_150(int* iParam0, var uParam1)
+void func_150(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 4;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 45, 36, &uParam1);
+	*uParam0 = 4;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 45, 36, &uParam1);
 }
 
 int func_151()

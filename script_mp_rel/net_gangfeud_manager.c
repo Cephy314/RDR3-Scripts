@@ -713,7 +713,7 @@ void func_34(var uParam0)
 {
 	var uVar0;
 
-	if (((Global_1266395->f_16 != 255 && !PED::_0x3AA24CCC0D451379(Global_34)) && !func_57()) || (Global_1266395->f_16 != 255 && !NETWORK::NETWORK_IS_PLAYER_ACTIVE(Global_1266395->f_16)))
+	if (((Global_1266395->f_16 != 255 && !PED::_IS_PED_HOGTIED(Global_34)) && !func_57()) || (Global_1266395->f_16 != 255 && !NETWORK::NETWORK_IS_PLAYER_ACTIVE(Global_1266395->f_16)))
 	{
 		Global_1266395->f_16 = 255;
 	}
@@ -814,7 +814,7 @@ var func_38(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -1284,7 +1284,7 @@ void func_69(struct<5> Param0, int iParam5)
 	func_98(&Var0, func_97(0, 8));
 }
 
-void func_70(int* iParam0)
+void func_70(var uParam0)
 {
 	var uVar0;
 
@@ -1293,7 +1293,7 @@ void func_70(int* iParam0)
 	{
 		return;
 	}
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 12, 36, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 12, 36, &uVar0);
 }
 
 void func_71(var uParam0)
@@ -1442,28 +1442,28 @@ int func_81(int iParam0)
 	return -1;
 }
 
-void func_82(int* iParam0)
+void func_82(var uParam0)
 {
 	var uVar0;
 	int iVar1;
 	int iVar2;
 
-	if (iParam0->f_4)
+	if (uParam0->f_4)
 	{
 		return;
 	}
-	iParam0->f_4 = 1;
-	SCRIPTS::_0x31010318BA9897AC(&uVar0, iParam0->f_9);
-	iParam0->f_9 = _NAMESPACE26::_0x4BE6C13A45CCA8EC(_NAMESPACE26::_0x901E0DC25080C8B9(iParam0->f_9));
-	iParam0->f_10 = _NAMESPACE26::_0x4BE6C13A45CCA8EC(_NAMESPACE26::_0x901E0DC25080C8B9(iParam0->f_10));
+	uParam0->f_4 = 1;
+	SCRIPTS::_0x31010318BA9897AC(&uVar0, uParam0->f_9);
+	uParam0->f_9 = _NAMESPACE26::_0x4BE6C13A45CCA8EC(_NAMESPACE26::_0x901E0DC25080C8B9(uParam0->f_9));
+	uParam0->f_10 = _NAMESPACE26::_0x4BE6C13A45CCA8EC(_NAMESPACE26::_0x901E0DC25080C8B9(uParam0->f_10));
 	iVar2 = -1;
 	iVar1 = 0;
 	while (iVar1 <= 31)
 	{
-		if ((&Global_1263000->f_1[iVar1 /*4*/] == iParam0->f_9 || &Global_1263000->f_1[iVar1 /*4*/] == iParam0->f_10) && NETWORK::GET_TIME_DIFFERENCE((Global_1263000->f_1[iVar1 /*4*/])->f_3, NETWORK::GET_NETWORK_TIME_ACCURATE()) < 60000)
+		if ((&Global_1263000->f_1[iVar1 /*4*/] == uParam0->f_9 || &Global_1263000->f_1[iVar1 /*4*/] == uParam0->f_10) && NETWORK::GET_TIME_DIFFERENCE((Global_1263000->f_1[iVar1 /*4*/])->f_3, NETWORK::GET_NETWORK_TIME_ACCURATE()) < 60000)
 		{
-			iParam0->f_5 = 0;
-			func_101(iParam0, &uVar0);
+			uParam0->f_5 = 0;
+			func_101(uParam0, &uVar0);
 			return;
 		}
 		if (iVar2 == -1)
@@ -1475,23 +1475,23 @@ void func_82(int* iParam0)
 		}
 		iVar1++;
 	}
-	Global_1263000->f_1[iVar2 /*4*/] = iParam0->f_9;
-	(Global_1263000->f_1[iVar2 /*4*/])->f_1 = iParam0->f_10;
-	(Global_1263000->f_1[iVar2 /*4*/])->f_2 = iParam0->f_11;
+	Global_1263000->f_1[iVar2 /*4*/] = uParam0->f_9;
+	(Global_1263000->f_1[iVar2 /*4*/])->f_1 = uParam0->f_10;
+	(Global_1263000->f_1[iVar2 /*4*/])->f_2 = uParam0->f_11;
 	(Global_1263000->f_1[iVar2 /*4*/])->f_3 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	iParam0->f_5 = 1;
-	func_101(iParam0, &uVar0);
+	uParam0->f_5 = 1;
+	func_101(uParam0, &uVar0);
 	return;
 }
 
-void func_83(int iParam0)
+void func_83(var uParam0)
 {
 	int iVar0;
 
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
-		if (&Global_1263000->f_1[iVar0 /*4*/] == iParam0->f_9 && (Global_1263000->f_1[iVar0 /*4*/])->f_1 == iParam0->f_10)
+		if (&Global_1263000->f_1[iVar0 /*4*/] == uParam0->f_9 && (Global_1263000->f_1[iVar0 /*4*/])->f_1 == uParam0->f_10)
 		{
 			(Global_1263000->f_1[iVar0 /*4*/])->f_1 = 255;
 			Global_1263000->f_1[iVar0 /*4*/] = 255;
@@ -1502,14 +1502,14 @@ void func_83(int iParam0)
 	}
 }
 
-void func_84(int iParam0)
+void func_84(var uParam0)
 {
 	int iVar0;
 
 	iVar0 = 0;
 	while (iVar0 <= 31)
 	{
-		if ((Global_1263000->f_1[iVar0 /*4*/])->f_2 == iParam0->f_10)
+		if ((Global_1263000->f_1[iVar0 /*4*/])->f_2 == uParam0->f_10)
 		{
 			(Global_1263000->f_1[iVar0 /*4*/])->f_1 = 255;
 			Global_1263000->f_1[iVar0 /*4*/] = 255;
@@ -1808,16 +1808,16 @@ var func_97(int iParam0, int iParam1)
 	return func_106(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-void func_98(int* iParam0, var uParam1)
+void func_98(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 180;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 12, 24, &uParam1);
+	*uParam0 = 180;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 12, 24, &uParam1);
 }
 
 void func_99(var uParam0, float fParam1)
@@ -1837,9 +1837,9 @@ int func_100(struct<2> Param0)
 	return -1;
 }
 
-void func_101(int* iParam0, float fParam1)
+void func_101(var uParam0, float fParam1)
 {
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 12, 36, fParam1);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 12, 36, fParam1);
 }
 
 void func_102(var uParam0)
@@ -2275,8 +2275,8 @@ void func_112(int iParam0, var uParam1)
 	Var0.f_1 = iParam0;
 	Var0.f_17 = 1;
 	func_131(&Var0, &fVar18);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
 	func_132();
 }
 
@@ -2404,8 +2404,8 @@ void func_115(int iParam0, int iParam1, var uParam2)
 	Var0.f_17 = 1;
 	func_131(&Var0, &fVar20);
 	func_137(Var21, fVar20, 0, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
 	func_132();
 }
 
@@ -2425,15 +2425,15 @@ void func_117()
 	func_139(17);
 }
 
-void func_118(int* iParam0, int iParam1)
+void func_118(var uParam0, int iParam1)
 {
 	var uVar0;
 
-	*iParam0 = 22;
-	iParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	*uParam0 = 22;
+	uParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	SCRIPTS::_0x31010318BA9897AC(&uVar0, iParam1);
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 11, 6, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 11, 6, &uVar0);
 }
 
 int func_119(struct<2> Param0, int iParam2)
@@ -2665,10 +2665,10 @@ void func_130(struct<2> Param0, vector3 vParam2, float fParam5, int iParam6, int
 	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, &Var0, 27, 38, &fParam8);
 }
 
-void func_131(int* iParam0, float fParam1)
+void func_131(var uParam0, float fParam1)
 {
-	*iParam0 = 29;
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 18, 37, fParam1);
+	*uParam0 = 29;
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 18, 37, fParam1);
 }
 
 void func_132()
@@ -3791,7 +3791,7 @@ void func_180(int iParam0)
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(iParam0, func_90(91));
 	if (func_204(iVar0))
 	{
-		_NAMESPACE71::_0x2F901291EF177B02(iVar0, 1);
+		UIFEED::_0x2F901291EF177B02(iVar0, 1);
 	}
 }
 

@@ -97,7 +97,7 @@ int func_3(int iParam0)
 
 	if (Local_49 == 0)
 	{
-		iVar0 = TASK::_0xA92450B5AE687AAF(iParam0->f_1);
+		iVar0 = TASK::_GET_SCENARIO_POINT_TYPE(iParam0->f_1);
 		Local_49 = func_6(iVar0);
 		return 0;
 	}
@@ -521,7 +521,7 @@ void func_16(int iParam0, int iParam1)
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_13[iParam0 /*10*/])->f_8, "Erupt", 1f, false);
 				if (Local_13.f_33 == 0)
 				{
-					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
+					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_14(iParam0), -1f, -1f, -1f, -1f, -1f, 3, 1);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_34)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_34)))
 				{
@@ -538,7 +538,7 @@ void func_16(int iParam0, int iParam1)
 				GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_13[iParam0 /*10*/])->f_8, "Erupt", 1f, false);
 				if (Local_13.f_33 == 0)
 				{
-					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_14(iParam0), -1082130432, -1082130432, -1082130432, -1082130432, -1082130432, 3, 1);
+					Local_13.f_33 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_14(iParam0), -1f, -1f, -1f, -1f, -1f, 3, 1);
 				}
 				if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_34)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_34)))
 				{

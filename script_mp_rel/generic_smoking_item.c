@@ -737,7 +737,7 @@ void func_24(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	func_52(iParam0, iParam3);
 }
 
-var func_25(int iParam0, var uParam1)
+bool func_25(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }

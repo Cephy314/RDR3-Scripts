@@ -75,7 +75,7 @@ void __EntryFunction__()
 				func_1();
 				break;
 		}
-		_NAMESPACE79::_0x1C38C3577901AF1F();
+		VOICE::_0x1C38C3577901AF1F();
 		BUILTIN::WAIT(0);
 	}
 	func_1();
@@ -3973,7 +3973,7 @@ int func_91()
 	{
 		return 0;
 	}
-	if (!NETWORK::NETWORK_HAVE_JUST_UPLOAD_LATER())
+	if (!NETWORK::NETWORK_HAS_VALID_ROS_CREDENTIALS())
 	{
 		return 0;
 	}
@@ -6275,7 +6275,7 @@ int func_197(int iParam0)
 	{
 		return 0;
 	}
-	if (!func_623(iVar7, !_NAMESPACE79::_0x0DED260A1958A82E(iVar7)))
+	if (!func_623(iVar7, !VOICE::_0x0DED260A1958A82E(iVar7)))
 	{
 	}
 	return 1;
@@ -6304,7 +6304,7 @@ bool func_198()
 		else
 		{
 			iVar1++;
-			if (!_NAMESPACE79::_0x0DED260A1958A82E(iVar2))
+			if (!VOICE::_0x0DED260A1958A82E(iVar2))
 			{
 			}
 			else
@@ -6357,7 +6357,7 @@ int func_200()
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_53, false);
 		return 0;
 	}
-	if (!func_624(iVar0, !_NAMESPACE79::_0x0DED260A1958A82E(iVar0)))
+	if (!func_624(iVar0, !VOICE::_0x0DED260A1958A82E(iVar0)))
 	{
 		return 0;
 	}
@@ -8605,7 +8605,7 @@ void func_264()
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_41.f_1, true);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_47.f_2, true);
 	DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_47.f_1, false);
-	bVar132 = _NAMESPACE79::_0x356135B9B10A2A82(&Var0);
+	bVar132 = VOICE::_0x356135B9B10A2A82(&Var0);
 	if (bVar132)
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_STRING(Global_1939231->f_1433.f_1405.f_47.f_3, MISC::_CREATE_VAR_STRING(2, "IB_VOICE_CHAT_CHANNEL_PRIVATE"));
@@ -8618,7 +8618,7 @@ void func_264()
 	{
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_52, true);
 		DATABINDING::_DATABINDING_WRITE_DATA_BOOL(Global_1939231->f_1433.f_1405.f_53, true);
-		if (_NAMESPACE79::_0x0DED260A1958A82E(iVar7))
+		if (VOICE::_0x0DED260A1958A82E(iVar7))
 		{
 			DATABINDING::_DATABINDING_WRITE_DATA_HASH_STRING(Global_1939231->f_1433.f_1405.f_51, joaat("NM_MW_ENTRY_PLAYER_UNMUTE"));
 		}
@@ -9376,7 +9376,7 @@ void func_290()
 	func_860(bVar0);
 	func_861(!(func_800() || func_592()));
 	bVar2 = true;
-	if (!_NAMESPACE79::_0xCCF71FCFA0070B1A())
+	if (!VOICE::_0xCCF71FCFA0070B1A())
 	{
 		bVar2 = false;
 	}
@@ -10785,7 +10785,7 @@ void func_364(int iParam0)
 	iVar0 = DATABINDING::_DATABINDING_READ_DATA_INT_FROM_PARENT(iParam0, func_50(91));
 	if (func_992(iVar0))
 	{
-		_NAMESPACE71::_0x2F901291EF177B02(iVar0, 1);
+		UIFEED::_0x2F901291EF177B02(iVar0, 1);
 	}
 }
 
@@ -14802,8 +14802,8 @@ void func_525(int iParam0, int iParam1, var uParam2)
 	Var0.f_17 = 1;
 	func_1152(&Var0, &fVar20);
 	func_1150(Var21, fVar20, 0, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
 	func_137();
 }
 
@@ -15473,8 +15473,8 @@ int func_560(var uParam0, var uParam1)
 	Var0.f_7 = uVar18;
 	Var0.f_12 = { *Global_1199402 };
 	func_1152(&Var0, &uVar18);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
 	func_137();
 	return 1;
 }
@@ -15522,8 +15522,8 @@ int func_561(var uParam0, var uParam1)
 	Var0.f_7 = uVar18;
 	Var0.f_12 = { *Global_1199402 };
 	func_1152(&Var0, &uVar18);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
 	func_137();
 	return 1;
 }
@@ -15571,8 +15571,8 @@ int func_562(var uParam0, var uParam1)
 	Var0.f_7 = uVar18;
 	Var0.f_12 = { *Global_1199402 };
 	func_1152(&Var0, &uVar18);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(6, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(6, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, 1, 0);
 	func_137();
 	return 1;
 }
@@ -16162,7 +16162,7 @@ void func_585(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		Var0.f_2 = BUILTIN::TO_FLOAT(ENTITY::GET_ENTITY_HEALTH(PLAYER::PLAYER_PED_ID()));
 		Var0.f_3 = 1;
 		Var0.f_5 = iParam1;
-		Var0.f_12 = (iParam1 != 0 && WEAPON::_0x959383DCD42040DA(iParam1));
+		Var0.f_12 = (iParam1 != 0 && WEAPON::_IS_WEAPON_MELEE(iParam1));
 		func_1225(&Var0, &(Global_1099294->f_267));
 		PED::_0x1CE875505D45338A(PLAYER::PLAYER_PED_ID(), iParam0, iParam1);
 	}
@@ -16246,7 +16246,7 @@ int func_591(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	iVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 
@@ -16721,15 +16721,15 @@ int func_621(int iParam0)
 	return 0;
 }
 
-void func_622(int* iParam0, int iParam1)
+void func_622(var uParam0, int iParam1)
 {
 	var uVar0;
 
-	*iParam0 = 13;
-	iParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	*uParam0 = 13;
+	uParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	SCRIPTS::_0x31010318BA9897AC(&uVar0, iParam1);
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 26, 16, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 26, 16, &uVar0);
 }
 
 int func_623(int iParam0, bool bParam1)
@@ -16738,7 +16738,7 @@ int func_623(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	return _NAMESPACE79::_0x49623BCFC3A3D829(iParam0, bParam1);
+	return VOICE::_0x49623BCFC3A3D829(iParam0, bParam1);
 }
 
 int func_624(int iParam0, bool bParam1)
@@ -16747,7 +16747,7 @@ int func_624(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	return _NAMESPACE79::_0x49623BCFC3A3D829(iParam0, bParam1);
+	return VOICE::_0x49623BCFC3A3D829(iParam0, bParam1);
 }
 
 int func_625()
@@ -16816,7 +16816,7 @@ int func_628(int iParam0)
 	{
 		return 0;
 	}
-	if (!_NAMESPACE79::_0x919AF2D93E9AA89D(iParam0) && MISC::IS_DURANGO_VERSION())
+	if (!VOICE::_0x919AF2D93E9AA89D(iParam0) && MISC::IS_DURANGO_VERSION())
 	{
 		return 0;
 	}
@@ -17014,7 +17014,7 @@ var func_635(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
+	uVar17 = UIFEED::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 
@@ -19016,11 +19016,11 @@ void func_730(struct<7> Param0, char* sParam7)
 	Var0.f_19 = joaat("OVERHEAD");
 	if (bVar90)
 	{
-		if (_NAMESPACE79::_0x0DED260A1958A82E(iVar88))
+		if (VOICE::_0x0DED260A1958A82E(iVar88))
 		{
 			Var0.f_20 = joaat("OVERHEAD_SPEAKER_OFF");
 		}
-		else if (_NAMESPACE79::_0xAA35FD9ABAB490A3(iVar88) && _NAMESPACE79::_0xEF6F2A35FAAF2ED7(iVar88))
+		else if (VOICE::_0xAA35FD9ABAB490A3(iVar88) && VOICE::_0xEF6F2A35FAAF2ED7(iVar88))
 		{
 			Var0.f_20 = joaat("OVERHEAD_SPEAKER");
 		}
@@ -29235,10 +29235,10 @@ void func_1151(int iParam0, float fParam1)
 	func_1686(fParam1, 1);
 }
 
-void func_1152(int* iParam0, float fParam1)
+void func_1152(var uParam0, float fParam1)
 {
-	*iParam0 = 29;
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 18, 38, fParam1);
+	*uParam0 = 29;
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 18, 38, fParam1);
 }
 
 int func_1153(int iParam0)
@@ -29294,11 +29294,11 @@ void func_1154(float fParam0, int iParam1)
 	}
 }
 
-void func_1155(int* iParam0, float fParam1)
+void func_1155(var uParam0, float fParam1)
 {
-	*iParam0 = 28;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 9, 10, fParam1);
+	*uParam0 = 28;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 9, 10, fParam1);
 }
 
 void func_1156(var uParam0, int iParam1)
@@ -29503,7 +29503,7 @@ void func_1172(int iParam0)
 	Global_1225057->f_8943 = (Global_1225057->f_8943 || iParam0);
 }
 
-void func_1173(int* iParam0)
+void func_1173(var uParam0)
 {
 	var uVar0;
 
@@ -29512,7 +29512,7 @@ void func_1173(int* iParam0)
 	{
 		return;
 	}
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 12, 40, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 12, 40, &uVar0);
 }
 
 void func_1174(int iParam0, int iParam1)
@@ -31652,15 +31652,15 @@ void func_1246(int iParam0, int iParam1)
 	func_576(Global_1182289->f_5[iParam0], iParam1);
 }
 
-void func_1247(int* iParam0)
+void func_1247(var uParam0)
 {
 	var uVar0;
 
-	*iParam0 = 23;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	*uParam0 = 23;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	uVar0 = func_416(0, 8);
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 11, 17, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 11, 17, &uVar0);
 }
 
 void func_1248(var uParam0, bool bParam1, bool bParam2)
@@ -34201,8 +34201,8 @@ int func_1373(var uParam0, var uParam1, bool bParam2)
 	{
 		return 1;
 	}
-	bVar1 = (_NAMESPACE79::_0xAA35FD9ABAB490A3(iVar0) && _NAMESPACE79::_0xEF6F2A35FAAF2ED7(iVar0));
-	if (_NAMESPACE79::_0x0DED260A1958A82E(iVar0))
+	bVar1 = (VOICE::_0xAA35FD9ABAB490A3(iVar0) && VOICE::_0xEF6F2A35FAAF2ED7(iVar0));
+	if (VOICE::_0x0DED260A1958A82E(iVar0))
 	{
 		uParam0->f_20 = joaat("OVERHEAD_SPEAKER_OFF");
 		uParam0->f_19 = joaat("OVERHEAD");
@@ -35731,7 +35731,7 @@ int func_1437(var uParam0, var uParam1, bool bParam2)
 					}
 					uParam0->f_73 = 1;
 					uParam0->f_72 = 1;
-					if (_NAMESPACE79::_0x0DED260A1958A82E(iVar0))
+					if (VOICE::_0x0DED260A1958A82E(iVar0))
 					{
 						uParam0->f_67 = joaat("NM_MW_ENTRY_PLAYER_UNMUTE");
 					}
@@ -38709,15 +38709,15 @@ int func_1609(int iParam0, bool bParam1, int iParam2)
 	return 1;
 }
 
-void func_1610(int* iParam0, int iParam1)
+void func_1610(var uParam0, int iParam1)
 {
 	var uVar0;
 
-	*iParam0 = 22;
-	iParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	*uParam0 = 22;
+	uParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	SCRIPTS::_0x31010318BA9897AC(&uVar0, iParam1);
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 11, 7, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 11, 7, &uVar0);
 }
 
 int func_1611()
@@ -40387,16 +40387,16 @@ int func_1682(int iParam0, bool bParam1)
 	return 0;
 }
 
-void func_1683(int* iParam0, var uParam1)
+void func_1683(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 180;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 12, 15, &uParam1);
+	*uParam0 = 180;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 12, 15, &uParam1);
 }
 
 int func_1684(int iParam0)
@@ -41228,17 +41228,17 @@ int func_1728(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	return 1;
 }
 
-void func_1729(int* iParam0, var uParam1)
+void func_1729(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 26;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 47, 8, &uParam1);
-	func_1982(iParam0);
+	*uParam0 = 26;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 47, 8, &uParam1);
+	func_1982(uParam0);
 }
 
 void func_1730(var uParam0)
@@ -42324,9 +42324,9 @@ int func_1778(int iParam0, int iParam1)
 	iVar0 = func_1311(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -43634,7 +43634,7 @@ int func_1835(int iParam0)
 
 	if (func_992(iParam0))
 	{
-		iVar0 = _NAMESPACE71::_0x59FA676177DBE4C9(iParam0);
+		iVar0 = UIFEED::_0x59FA676177DBE4C9(iParam0);
 		return ((((iVar0 == 4 || iVar0 == 0) || iVar0 == 3) || iVar0 == 5) || iVar0 == 2);
 	}
 	return 0;
@@ -47249,15 +47249,15 @@ int func_1981(int iParam0)
 	return 0;
 }
 
-void func_1982(int* iParam0)
+void func_1982(var uParam0)
 {
-	if (iParam0->f_1 != 255)
+	if (uParam0->f_1 != 255)
 	{
 	}
-	if (iParam0->f_11.f_7 != 255)
+	if (uParam0->f_11.f_7 != 255)
 	{
 	}
-	if (iParam0->f_37 != 255)
+	if (uParam0->f_37 != 255)
 	{
 	}
 }
@@ -47494,7 +47494,7 @@ int func_1993(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -47685,7 +47685,7 @@ int func_2000(int iParam0, var uParam1)
 		{
 			*uParam1 = 1;
 		}
-		else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iParam0)))
+		else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iParam0)))
 		{
 			*uParam1 = 3;
 		}
@@ -47900,7 +47900,7 @@ int func_2003(var uParam0)
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_18.f_1))
 	{
-		if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(uParam0->f_18.f_1)))
+		if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(uParam0->f_18.f_1)))
 		{
 			return 18;
 		}
@@ -48831,16 +48831,16 @@ void func_2028(vector3 vParam0)
 	Global_1132968->f_5808.f_325++;
 }
 
-void func_2029(int* iParam0, var uParam1)
+void func_2029(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 182;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 8, 3, &uParam1);
+	*uParam0 = 182;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 8, 3, &uParam1);
 }
 
 char* func_2030(var uParam0, var uParam1, var uParam2, var uParam3)
@@ -51541,17 +51541,17 @@ int func_2129(int iParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-void func_2130(int* iParam0, var uParam1)
+void func_2130(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 179;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 8, 2, &uParam1);
-	func_2205(*iParam0);
+	*uParam0 = 179;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 8, 2, &uParam1);
+	func_2205(*uParam0);
 }
 
 bool func_2131(int iParam0)
@@ -54404,7 +54404,7 @@ void func_2241(int iParam0, int iParam1, var uParam2)
 
 bool func_2242(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 bool func_2243(var uParam0, int iParam1)

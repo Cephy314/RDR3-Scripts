@@ -2183,7 +2183,7 @@ void func_57(var uParam0, var uParam1)
 	bool bVar1;
 	bool bVar2;
 
-	bVar0 = PED::_0x34D6AC1157C8226C(Global_34, joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"));
+	bVar0 = PED::_IS_PED_USING_SCENARIO_HASH(Global_34, joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"));
 	bVar1 = func_23(Global_34, &(uParam0->f_121[2]), 1, 0);
 	bVar2 = func_23(Global_34, &(uParam0->f_121[3]), 1, 0);
 	if (Global_35.f_2 > 51f)
@@ -5217,7 +5217,7 @@ void func_185(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 		}
 		PED::SET_PED_CONFIG_FLAG(iParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iParam0)))
 	{
 		if (!bParam5)
 		{

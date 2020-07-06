@@ -395,7 +395,7 @@ void func_23()
 	struct<4> Var1;
 	struct<4> Var15;
 
-	if (func_49(Global_1939178->f_38) && (WEAPON::_0x0A82317B7EBFC420(Global_1939178->f_38) || WEAPON::_0xDDB2578E95EF7138(Global_1939178->f_38)))
+	if (func_49(Global_1939178->f_38) && (WEAPON::_IS_WEAPON_RIFLE(Global_1939178->f_38) || WEAPON::_IS_WEAPON_REPEATER(Global_1939178->f_38)))
 	{
 		Global_1939178->f_39 = Global_1939178->f_38;
 	}
@@ -1534,7 +1534,7 @@ int func_59(var uParam0, bool bParam1)
 
 void func_60(int iParam0)
 {
-	if (_NAMESPACE71::_0x59FA676177DBE4C9(Global_1902996[iParam0]) == 4)
+	if (UIFEED::_0x59FA676177DBE4C9(Global_1902996[iParam0]) == 4)
 	{
 		(*Global_1902996)[iParam0] = 0;
 		Global_1902996->f_5 = (Global_1902996->f_5 - 1);
@@ -4111,7 +4111,7 @@ int func_188(int iParam0, int iParam1)
 	}
 	if (func_171(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -8117,7 +8117,7 @@ int func_341(int iParam0, int iParam1)
 			else if (!func_49(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_156(iVar1);
 				return 1;
@@ -9547,7 +9547,7 @@ int func_413(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -10256,8 +10256,8 @@ bool func_455()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) <= 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) <= 4);
 }
 
 int func_456(int iParam0)
@@ -10282,9 +10282,9 @@ int func_457(int iParam0, int iParam1)
 	iVar0 = func_340(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -11766,8 +11766,8 @@ bool func_529()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) == 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) == 4);
 }
 
 int func_530(int iParam0, int iParam1)
@@ -14166,7 +14166,7 @@ int func_622(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -16554,7 +16554,7 @@ var func_714(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
+	uVar17 = UIFEED::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 
@@ -16751,7 +16751,7 @@ int func_725(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bParam
 
 bool func_726(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_727(var uParam0, int iParam1, bool bParam2, int iParam3)

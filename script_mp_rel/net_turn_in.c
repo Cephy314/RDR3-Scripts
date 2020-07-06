@@ -2912,7 +2912,7 @@ int func_141(var uParam0, var uParam1, int iParam2)
 	PED::SET_PED_CONFIG_FLAG(iVar6, 107, true);
 	PED::SET_PED_CONFIG_FLAG(iVar6, 130, true);
 	PED::SET_PED_CONFIG_FLAG(iVar6, 315, true);
-	if (PED::_0x772A1969F649E902(func_53(uParam0, iParam2)))
+	if (PED::_IS_THIS_MODEL_A_HORSE(func_53(uParam0, iParam2)))
 	{
 		PED::SET_PED_CONFIG_FLAG(iVar6, 136, true);
 	}
@@ -3018,11 +3018,11 @@ int func_142(var uParam0, var uParam1, int iParam2)
 	{
 		if (func_244(Var0.f_1.f_5, joaat("NO_SPAWN")))
 		{
-			TASK::_0x5AF19B6CC2115D34(iVar30, 25, 1);
+			TASK::_SET_SCENARIO_POINT_FLAG(iVar30, 25, true);
 		}
 		if (func_244(Var0.f_1.f_5, joaat("NO_ATTRACTION")))
 		{
-			TASK::_0x5AF19B6CC2115D34(iVar30, 23, 1);
+			TASK::_SET_SCENARIO_POINT_FLAG(iVar30, 23, true);
 		}
 	}
 	func_245(uParam0, uParam1, iParam2, iVar30);
@@ -4381,7 +4381,7 @@ int func_243(var uParam0, vector3 vParam1, float fParam4)
 	int iVar7;
 	int iVar8;
 
-	iVar7 = TASK::_0x345EC3B7EBDE1CB5(vParam1, fParam4, &uVar0, 5);
+	iVar7 = TASK::_GET_SCENARIO_POINT_CLOSE_TO_COORDS(vParam1, fParam4, &uVar0, 5);
 	if (iVar7 <= 0)
 	{
 		return 0;
@@ -4393,7 +4393,7 @@ int func_243(var uParam0, vector3 vParam1, float fParam4)
 		if (!TASK::_DOES_SCENARIO_POINT_EXIST(&(uVar0[iVar6])))
 		{
 		}
-		else if (TASK::_0xA92450B5AE687AAF(&(uVar0[iVar6])) != iVar8)
+		else if (TASK::_GET_SCENARIO_POINT_TYPE(&(uVar0[iVar6])) != iVar8)
 		{
 		}
 		else
@@ -4804,14 +4804,14 @@ void func_298(var uParam0)
 	*uParam0 = func_363(_NAMESPACE26::_0x901E0DC25080C8B9(PLAYER::PLAYER_ID()));
 }
 
-void func_299(var uParam0, var uParam1, int* iParam2, var uParam3)
+void func_299(var uParam0, var uParam1, var uParam2, var uParam3)
 {
-	*iParam2 = 190;
-	iParam2->f_1 = PLAYER::PLAYER_ID();
-	iParam2->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam2, 12, 6, &uParam3);
-	func_364(uParam0, uParam1, iParam2->f_4);
-	func_365(uParam0, uParam1, iParam2->f_4);
+	*uParam2 = 190;
+	uParam2->f_1 = PLAYER::PLAYER_ID();
+	uParam2->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam2, 12, 6, &uParam3);
+	func_364(uParam0, uParam1, uParam2->f_4);
+	func_365(uParam0, uParam1, uParam2->f_4);
 }
 
 int func_300(var uParam0, int iParam1)
@@ -5474,7 +5474,7 @@ void func_345(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 		}
 		PED::SET_PED_CONFIG_FLAG(iParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iParam0)))
 	{
 		if (!bParam5)
 		{
@@ -6073,7 +6073,7 @@ Vector3 func_392(vector3 vParam0, var uParam3, var uParam4)
 	return func_397(func_51(Var0));
 }
 
-var func_393(int iParam0, var uParam1)
+bool func_393(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }

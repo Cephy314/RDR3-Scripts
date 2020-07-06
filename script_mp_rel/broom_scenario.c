@@ -127,7 +127,7 @@ void func_6()
 				iLocal_18 = 7;
 				return;
 			}
-			iLocal_85 = TASK::_0x5BA659955369B0E2(iLocal_16);
+			iLocal_85 = TASK::_GET_PED_USING_SCENARIO_POINT(iLocal_16);
 			if (!func_12(iLocal_85, 0))
 			{
 				iLocal_18 = 7;
@@ -368,7 +368,7 @@ int func_12(int iParam0, int iParam1)
 	}
 	if (func_24(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}

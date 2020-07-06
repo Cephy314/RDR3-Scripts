@@ -410,7 +410,7 @@ void func_15()
 	}
 	if (ENTITY::IS_ENTITY_DEAD(Local_0.f_13) && !PED::GET_PED_CONFIG_FLAG(Local_0.f_13, 11, false))
 	{
-		if (PED::_0x3AA24CCC0D451379(Local_0.f_13) && PED::_0x3D9F958834AB9C30(Local_0.f_13) == Global_34)
+		if (PED::_IS_PED_HOGTIED(Local_0.f_13) && PED::_0x3D9F958834AB9C30(Local_0.f_13) == Global_34)
 		{
 			func_11(1);
 			return;
@@ -757,7 +757,7 @@ int func_35()
 	return 0;
 }
 
-var func_36(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_36(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -1018,16 +1018,16 @@ int func_39(int iParam0, int iParam1)
 	return -1;
 }
 
-void func_40(int* iParam0, var uParam1)
+void func_40(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 181;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 7, 13, &uParam1);
+	*uParam0 = 181;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 7, 13, &uParam1);
 }
 
 void func_41(var uParam0, int iParam1)
@@ -1053,7 +1053,7 @@ int func_43(var uParam0)
 	return func_47(uParam0->f_1);
 }
 
-var func_44(int iParam0, var uParam1)
+bool func_44(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }

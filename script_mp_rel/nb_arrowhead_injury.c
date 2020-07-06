@@ -3372,8 +3372,8 @@ void func_125()
 					case 0:
 						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar1, true);
 						PED::SET_PED_CONFIG_FLAG(iVar1, 467, true);
-						PED::_SET_PED_CARCASS_QUALITY(iVar1, 1);
-						PED::_0xDACE03C65C6666DB(iVar1, 1);
+						PED::_SET_PED_DAMAGE(iVar1, 1);
+						PED::_SET_PED_DAMAGED(iVar1, true);
 						PED::_SET_PED_QUALITY(iVar1, 2);
 						PED::SET_PED_CONFIG_FLAG(iVar1, 297, true);
 						if (func_143() == 0)
@@ -5176,9 +5176,9 @@ struct<15> func_236(int iParam0)
 	return Var0;
 }
 
-void func_237(int* iParam0)
+void func_237(var uParam0)
 {
-	func_280(iParam0, func_279(4, 117));
+	func_280(uParam0, func_279(4, 117));
 }
 
 void func_238(int iParam0, bool bParam1)
@@ -5510,7 +5510,7 @@ var func_258(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -5638,7 +5638,7 @@ void func_267(var uParam0)
 	*uParam0 = 176;
 	uParam0->f_1 = PLAYER::PLAYER_ID();
 	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::_0x8B61C950A148FFA2(uParam0, 6, 11, &(Global_1051202->f_16[15]));
+	SCRIPTS::_TRIGGER_SCRIPT_EVENT_2(uParam0, 6, 11, &(Global_1051202->f_16[15]));
 	func_298(uParam0, uParam0->f_1);
 }
 
@@ -5811,13 +5811,13 @@ var func_279(int iParam0, int iParam1)
 	return func_301(0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, joaat("VOLCYLINDER"), iParam0, iParam1);
 }
 
-void func_280(int* iParam0, var uParam1)
+void func_280(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 15, 40, &uParam1);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 15, 40, &uParam1);
 }
 
 bool func_281(var uParam0)
@@ -6086,16 +6086,16 @@ int func_285(int iParam0, int iParam1)
 	return -1;
 }
 
-void func_286(int* iParam0, var uParam1)
+void func_286(var uParam0, var uParam1)
 {
 	if (!SCRIPTS::_0x179A6F0EE2E79026(&uParam1))
 	{
 		return;
 	}
-	*iParam0 = 181;
-	iParam0->f_1 = PLAYER::PLAYER_ID();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 7, 8, &uParam1);
+	*uParam0 = 181;
+	uParam0->f_1 = PLAYER::PLAYER_ID();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 7, 8, &uParam1);
 }
 
 float func_287(float fParam0, float fParam1, float fParam2)

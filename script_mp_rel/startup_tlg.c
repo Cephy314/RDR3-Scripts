@@ -2277,7 +2277,7 @@ void func_51(var uParam0)
 	struct<35> Var11;
 	int iVar46;
 
-	iVar0 = SOCIALCLUB::_GET_TOTAL_SC_INBOX_IDS();
+	iVar0 = SOCIALCLUB::SC_INBOX_GET_TOTAL_NUM_MESSAGES();
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -2548,7 +2548,7 @@ void func_56()
 {
 	func_226();
 	func_227(1, 0, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 	func_228(1);
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
@@ -8369,7 +8369,7 @@ void func_227(bool bParam0, int iParam1, bool bParam2)
 
 void func_228(int iParam0)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
 void func_229()
@@ -25392,7 +25392,7 @@ int func_515(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	iVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 
@@ -26658,7 +26658,7 @@ var func_558(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam2;
 	Var13.f_5 = iParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
 	return uVar21;
 }
 
@@ -29035,7 +29035,7 @@ int func_658(bool bParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(bParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(bParam0))
 	{
 		if (bParam1)
 		{
@@ -29233,7 +29233,7 @@ var func_671(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
+	uVar17 = UIFEED::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 
@@ -30578,7 +30578,7 @@ var func_708(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_953(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -33056,7 +33056,7 @@ var func_811(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam2;
 	Var13.f_5 = iParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_0xAFF5BE9BA496CE40(&Var0, &Var13, 1, 1, iParam4);
+	uVar21 = UIFEED::_0xAFF5BE9BA496CE40(&Var0, &Var13, 1, 1, iParam4);
 	return uVar21;
 }
 
@@ -33073,9 +33073,9 @@ int func_812(bool bParam0, int iParam1)
 	iVar0 = func_475(bParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(bParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(bParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(bParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(bParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(bParam0))
 	{
 		return bParam0;
 	}
@@ -33120,7 +33120,7 @@ struct<4> func_814(bool bParam0, bool bParam1)
 
 bool func_815(bool bParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(bParam0);
+	return WEAPON::_IS_AMMO_VALID(bParam0);
 }
 
 struct<2> func_816(bool bParam0)
@@ -33493,7 +33493,7 @@ int func_837(int iParam0)
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
 	if (iVar0 != 0)
 	{
 		return iVar0 == (Global_1904613->f_31[iParam0 /*9*/])->f_1;
@@ -33694,7 +33694,7 @@ var func_843(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_5 = iParam3;
 	Var13.f_6 = iParam4;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam10, iParam11);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam10, iParam11);
 	return uVar21;
 }
 
@@ -35360,15 +35360,15 @@ void func_925(var uParam0, int iParam1)
 	func_1170(uParam0, iParam1);
 }
 
-void func_926(int* iParam0, int iParam1)
+void func_926(var uParam0, int iParam1)
 {
 	var uVar0;
 
-	*iParam0 = 22;
-	iParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
-	iParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
+	*uParam0 = 22;
+	uParam0->f_1 = PLAYER::GET_PLAYER_INDEX();
+	uParam0->f_2 = NETWORK::GET_NETWORK_TIME_ACCURATE();
 	SCRIPTS::_0x31010318BA9897AC(&uVar0, iParam1);
-	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, iParam0, 11, 8, &uVar0);
+	SCRIPTS::TRIGGER_SCRIPT_EVENT(1, uParam0, 11, 8, &uVar0);
 }
 
 void func_927(var uParam0, int iParam1)
@@ -35437,7 +35437,7 @@ void func_931(var uParam0, int iParam1)
 		}
 		return;
 	}
-	iVar1 = DATAFILE::_OBJECT_VALUE_GET_ARRAY(sVar0, "list");
+	iVar1 = DATAFILE::DATADICT_GET_ARRAY(sVar0, "list");
 	if (!DATAFILE::_0xB04B69CF277D15C0(iVar1))
 	{
 		if (DATAFILE::DATAFILE_GET_FILE_DICT(0) != 0)
@@ -35446,7 +35446,7 @@ void func_931(var uParam0, int iParam1)
 		}
 		return;
 	}
-	iVar2 = DATAFILE::_ARRAY_VALUE_GET_SIZE(iVar1);
+	iVar2 = DATAFILE::DATAARRAY_GET_COUNT(iVar1);
 	StringCopy(Global_265331->f_117321.f_129[uParam0->f_17 /*3*/], NETWORK::_0x566CEB0542EF5ECF(uParam0->f_2, iParam1), 24);
 	StringCopy(Global_265331->f_117321[uParam0->f_17 /*4*/], NETWORK::_0xCAF50048C8D0FBA0(uParam0->f_2, iParam1), 32);
 	Global_265331->f_117321.f_6791[uParam0->f_17] = iVar2;
@@ -35464,11 +35464,11 @@ void func_931(var uParam0, int iParam1)
 		}
 		else
 		{
-			cVar3 = DATAFILE::_ARRAY_VALUE_GET_OBJECT(iVar1, iVar8);
-			StringCopy(&cVar5, DATAFILE::_OBJECT_VALUE_GET_STRING(cVar3, "rci"), 24);
+			cVar3 = DATAFILE::DATAARRAY_GET_DICT(iVar1, iVar8);
+			StringCopy(&cVar5, DATAFILE::DATADICT_GET_STRING(cVar3, "rci"), 24);
 			(*Global_265331->f_117321.f_483[uParam0->f_17 /*194*/])[iVar8 /*6*/] = MISC::GET_HASH_KEY(&cVar5);
 			func_1176(&(((*Global_265331->f_117321.f_483[uParam0->f_17 /*194*/])[iVar8 /*6*/])->f_1), cVar3, "stype", -1);
-			if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "maxtnum") == 2)
+			if (DATAFILE::DATADICT_GET_TYPE(cVar3, "maxtnum") == 2)
 			{
 				func_1176(&(((*Global_265331->f_117321.f_483[uParam0->f_17 /*194*/])[iVar8 /*6*/])->f_2), cVar3, "maxtnum", -1);
 			}
@@ -35514,8 +35514,8 @@ void func_932(var uParam0, int iParam1)
 		return;
 	}
 	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	sVar1 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(sVar0, "mission");
-	cVar2 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(sVar1, "gen");
+	sVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	cVar2 = DATAFILE::DATADICT_GET_DICT(sVar1, "gen");
 	Var3.f_29 = -1;
 	Var3.f_30 = -1;
 	Var3.f_40 = 1;
@@ -35537,7 +35537,7 @@ void func_932(var uParam0, int iParam1)
 	func_1176(&uVar54, cVar2, "smiss", 0);
 	(Global_265331->f_97482.f_4[uParam0->f_17 /*51*/])->f_43 = uVar54;
 	func_1176(&((Global_265331->f_97482.f_4[uParam0->f_17 /*51*/])->f_37), cVar2, "hnr", -1);
-	if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar2, "maxtnum") == 2)
+	if (DATAFILE::DATADICT_GET_TYPE(cVar2, "maxtnum") == 2)
 	{
 		func_1176(&((Global_265331->f_97482.f_4[uParam0->f_17 /*51*/])->f_34), cVar2, "maxtnum", 0);
 	}
@@ -35622,20 +35622,20 @@ void func_933(var uParam0, int iParam1)
 		return;
 	}
 	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	iVar1 = DATAFILE::_OBJECT_VALUE_GET_ARRAY(sVar0, "list");
-	iVar2 = DATAFILE::_ARRAY_VALUE_GET_SIZE(iVar1);
+	iVar1 = DATAFILE::DATADICT_GET_ARRAY(sVar0, "list");
+	iVar2 = DATAFILE::DATAARRAY_GET_COUNT(iVar1);
 	StringCopy(Global_265331->f_110493.f_129[uParam0->f_17 /*3*/], NETWORK::_0x566CEB0542EF5ECF(uParam0->f_2, iParam1), 24);
 	StringCopy(Global_265331->f_110493[uParam0->f_17 /*4*/], NETWORK::_0xCAF50048C8D0FBA0(uParam0->f_2, iParam1), 32);
 	Global_265331->f_110493.f_6692[uParam0->f_17] = func_1175(sVar0);
 	iVar7 = 0;
 	while (iVar7 < iVar2)
 	{
-		cVar3 = DATAFILE::_ARRAY_VALUE_GET_OBJECT(iVar1, iVar7);
-		StringCopy(&cVar4, DATAFILE::_OBJECT_VALUE_GET_STRING(cVar3, "rci"), 24);
+		cVar3 = DATAFILE::DATAARRAY_GET_DICT(iVar1, iVar7);
+		StringCopy(&cVar4, DATAFILE::DATADICT_GET_STRING(cVar3, "rci"), 24);
 		(*Global_265331->f_110493.f_483[uParam0->f_17 /*194*/])[iVar7 /*6*/] = MISC::GET_HASH_KEY(&cVar4);
 		iVar8 = func_1177(Global_265331->f_110493.f_483[uParam0->f_17 /*194*/][iVar7 /*6*/]);
 		func_1176(&(((*Global_265331->f_110493.f_483[uParam0->f_17 /*194*/])[iVar7 /*6*/])->f_1), cVar3, "stype", 0);
-		if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "maxtnum") == 2)
+		if (DATAFILE::DATADICT_GET_TYPE(cVar3, "maxtnum") == 2)
 		{
 			func_1176(&(((*Global_265331->f_110493.f_483[uParam0->f_17 /*194*/])[iVar7 /*6*/])->f_2), cVar3, "maxtnum", 0);
 		}
@@ -39526,7 +39526,7 @@ var func_1106(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = uParam16;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -39557,7 +39557,7 @@ var func_1107(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam
 	Var13.f_7 = uParam5;
 	Var13.f_8 = uParam6;
 	Var13.f_9 = uParam19;
-	uVar23 = _NAMESPACE71::_SHOW_NOTIFICATION(&Var0, &Var13, iParam16, iParam17);
+	uVar23 = UIFEED::_SHOW_NOTIFICATION(&Var0, &Var13, iParam16, iParam17);
 	return uVar23;
 }
 
@@ -39583,7 +39583,7 @@ var func_1108(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam
 	Var13.f_4 = uParam2;
 	Var13.f_5 = uParam3;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
 	return uVar21;
 }
 
@@ -39612,7 +39612,7 @@ var func_1109(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam
 	Var13.f_7 = uParam5;
 	Var13.f_8 = uParam6;
 	Var13.f_9 = 1;
-	uVar23 = _NAMESPACE71::_SHOW_NOTIFICATION(&Var0, &Var13, iParam15, iParam16);
+	uVar23 = UIFEED::_SHOW_NOTIFICATION(&Var0, &Var13, iParam15, iParam16);
 	return uVar23;
 }
 
@@ -39639,7 +39639,7 @@ var func_1110(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam
 	Var13.f_5 = uParam3;
 	Var13.f_6 = uParam4;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -39665,7 +39665,7 @@ var func_1111(char* sParam0, char* sParam1, var uParam2, var uParam3, var uParam
 	Var13.f_4 = uParam3;
 	Var13.f_5 = uParam4;
 	Var13.f_7 = 1;
-	uVar21 = _NAMESPACE71::_0x3F9FDDBA79117C69(&Var0, &Var13, iParam13, iParam14);
+	uVar21 = UIFEED::_0x3F9FDDBA79117C69(&Var0, &Var13, iParam13, iParam14);
 	return uVar21;
 }
 
@@ -42075,8 +42075,8 @@ void func_1173(var uParam0, char* sParam1, var uParam2, int iParam3, var uParam4
 	int iVar55;
 
 	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	sVar1 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(sVar0, "mission");
-	cVar2 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(sVar1, "gen");
+	sVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	cVar2 = DATAFILE::DATADICT_GET_DICT(sVar1, "gen");
 	Var3.f_29 = -1;
 	Var3.f_30 = -1;
 	Var3.f_40 = 1;
@@ -42100,7 +42100,7 @@ void func_1173(var uParam0, char* sParam1, var uParam2, int iParam3, var uParam4
 	func_1176(&uVar54, cVar2, "smiss", 0);
 	sParam1->f_43 = uVar54;
 	func_1176(&(sParam1->f_37), cVar2, "hnr", -1);
-	if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar2, "maxtnum") == 2)
+	if (DATAFILE::DATADICT_GET_TYPE(cVar2, "maxtnum") == 2)
 	{
 		func_1176(&(sParam1->f_34), cVar2, "maxtnum", 0);
 	}
@@ -42177,8 +42177,8 @@ void func_1174(var uParam0, char* sParam1, var uParam2, int iParam3, var uParam4
 	int iVar55;
 
 	sVar0 = DATAFILE::DATAFILE_GET_FILE_DICT(0);
-	sVar1 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(sVar0, "mission");
-	cVar2 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(sVar1, "gen");
+	sVar1 = DATAFILE::DATADICT_GET_DICT(sVar0, "mission");
+	cVar2 = DATAFILE::DATADICT_GET_DICT(sVar1, "gen");
 	Var3.f_29 = -1;
 	Var3.f_30 = -1;
 	Var3.f_40 = 1;
@@ -42201,7 +42201,7 @@ void func_1174(var uParam0, char* sParam1, var uParam2, int iParam3, var uParam4
 	func_1176(&uVar54, cVar2, "smiss", 0);
 	sParam1->f_43 = uVar54;
 	func_1176(&(sParam1->f_37), cVar2, "hnr", -1);
-	if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar2, "maxtnum") == 2)
+	if (DATAFILE::DATADICT_GET_TYPE(cVar2, "maxtnum") == 2)
 	{
 		func_1176(&(sParam1->f_34), cVar2, "maxtnum", 0);
 	}
@@ -42290,9 +42290,9 @@ int func_1175(char[4] cParam0)
 
 void func_1176(var uParam0, char[4] cParam1, char* sParam2, int iParam3)
 {
-	if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cParam1, sParam2) == 2)
+	if (DATAFILE::DATADICT_GET_TYPE(cParam1, sParam2) == 2)
 	{
-		*uParam0 = DATAFILE::_OBJECT_VALUE_GET_INTEGER(cParam1, sParam2);
+		*uParam0 = DATAFILE::DATADICT_GET_INT(cParam1, sParam2);
 	}
 	else
 	{
@@ -42329,36 +42329,36 @@ Vector3 func_1178(char[4] cParam0, char* sParam1)
 	vector3 vVar0;
 	char[] cVar3[8];
 
-	if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cParam0, sParam1) == 5)
+	if (DATAFILE::DATADICT_GET_TYPE(cParam0, sParam1) == 5)
 	{
-		vVar0 = { DATAFILE::_OBJECT_VALUE_GET_VECTOR3(cParam0, sParam1) };
+		vVar0 = { DATAFILE::DATADICT_GET_VECTOR(cParam0, sParam1) };
 	}
-	else if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cParam0, sParam1) == 6)
+	else if (DATAFILE::DATADICT_GET_TYPE(cParam0, sParam1) == 6)
 	{
-		cVar3 = DATAFILE::_OBJECT_VALUE_GET_OBJECT(cParam0, sParam1);
-		if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "x") == 2)
+		cVar3 = DATAFILE::DATADICT_GET_DICT(cParam0, sParam1);
+		if (DATAFILE::DATADICT_GET_TYPE(cVar3, "x") == 2)
 		{
-			vVar0.x = BUILTIN::TO_FLOAT(DATAFILE::_OBJECT_VALUE_GET_INTEGER(cVar3, "x"));
+			vVar0.x = BUILTIN::TO_FLOAT(DATAFILE::DATADICT_GET_INT(cVar3, "x"));
 		}
-		else if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "x") == 3)
+		else if (DATAFILE::DATADICT_GET_TYPE(cVar3, "x") == 3)
 		{
-			vVar0.x = DATAFILE::_OBJECT_VALUE_GET_FLOAT(cVar3, "x");
+			vVar0.x = DATAFILE::DATADICT_GET_FLOAT(cVar3, "x");
 		}
-		if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "y") == 2)
+		if (DATAFILE::DATADICT_GET_TYPE(cVar3, "y") == 2)
 		{
-			vVar0.f_1 = BUILTIN::TO_FLOAT(DATAFILE::_OBJECT_VALUE_GET_INTEGER(cVar3, "y"));
+			vVar0.f_1 = BUILTIN::TO_FLOAT(DATAFILE::DATADICT_GET_INT(cVar3, "y"));
 		}
-		else if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "y") == 3)
+		else if (DATAFILE::DATADICT_GET_TYPE(cVar3, "y") == 3)
 		{
-			vVar0.f_1 = DATAFILE::_OBJECT_VALUE_GET_FLOAT(cVar3, "y");
+			vVar0.f_1 = DATAFILE::DATADICT_GET_FLOAT(cVar3, "y");
 		}
-		if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "z") == 2)
+		if (DATAFILE::DATADICT_GET_TYPE(cVar3, "z") == 2)
 		{
-			vVar0.f_2 = BUILTIN::TO_FLOAT(DATAFILE::_OBJECT_VALUE_GET_INTEGER(cVar3, "z"));
+			vVar0.f_2 = BUILTIN::TO_FLOAT(DATAFILE::DATADICT_GET_INT(cVar3, "z"));
 		}
-		else if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cVar3, "z") == 3)
+		else if (DATAFILE::DATADICT_GET_TYPE(cVar3, "z") == 3)
 		{
-			vVar0.f_2 = DATAFILE::_OBJECT_VALUE_GET_FLOAT(cVar3, "z");
+			vVar0.f_2 = DATAFILE::DATADICT_GET_FLOAT(cVar3, "z");
 		}
 	}
 	return vVar0;
@@ -42830,7 +42830,7 @@ int func_1197(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam
 	{
 		return 0;
 	}
-	if (WEAPON::_0x959383DCD42040DA(bParam0) && bParam1 > 0)
+	if (WEAPON::_IS_WEAPON_MELEE(bParam0) && bParam1 > 0)
 	{
 		bParam1 = false;
 	}
@@ -42854,7 +42854,7 @@ int func_1197(bool bParam0, bool bParam1, bool bParam2, bool bParam3, int iParam
 		{
 			return 0;
 		}
-		func_1198(WEAPON::_0x5C2EA6C44F515F34(bParam0), bParam1, iParam6);
+		func_1198(WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(bParam0), bParam1, iParam6);
 		func_1393(bParam0, bParam1);
 		return 1;
 	}
@@ -42909,19 +42909,19 @@ int func_1199(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 		{
 			func_1386(bParam0, 1, 0, bParam2, iParam1);
 			bVar6 = func_1395(bVar0);
-			if (WEAPON::_0x6AD66548840472E5(bVar0))
+			if (WEAPON::_IS_WEAPON_SNIPER(bVar0))
 			{
 				func_1197(bVar0, bVar6, bParam3, bParam4, 0, 0, iParam1, 0);
 			}
-			else if (bVar0 == joaat("WEAPON_FISHINGROD") || WEAPON::_0xC853230E76A152DF(bVar0))
+			else if (bVar0 == joaat("WEAPON_FISHINGROD") || WEAPON::_IS_WEAPON_BINOCULARS(bVar0))
 			{
 				func_1197(bVar0, 0, bParam3, bParam4, 0, 0, iParam1, 0);
 			}
-			else if (WEAPON::_0x6E4E1A82081EABED(bVar0))
+			else if (WEAPON::_IS_WEAPON_LASSO(bVar0))
 			{
 				func_1197(bVar0, 1, bParam3, bParam4, 0, 0, iParam1, 0);
 			}
-			else if (WEAPON::_0x959383DCD42040DA(bVar0))
+			else if (WEAPON::_IS_WEAPON_MELEE(bVar0))
 			{
 				if (bVar0 == joaat("WEAPON_MELEE_KNIFE_JOHN") && !func_1396())
 				{
@@ -42939,7 +42939,7 @@ int func_1199(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 					func_1197(bVar0, WEAPON::_GET_WEAPON_CLIP_SIZE(bVar0) * 4, bParam3, bParam4, 0, 0, iParam1, 0);
 				}
 			}
-			else if (WEAPON::_0xD955FEE4B87AFA07(bVar0))
+			else if (WEAPON::_IS_WEAPON_ONE_HANDED(bVar0))
 			{
 				bVar7 = func_1398(Global_34, 2, 0, 1);
 				if ((((func_1392(bVar7) && !Global_26386) && bVar7 != bVar0) && !func_949(joaat("UPGRADE_OFFHAND_HOLSTER"), 1)) && bParam4)
@@ -43163,7 +43163,7 @@ int func_1212(bool bParam0, int iParam1)
 			else if (!func_1392(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == bVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == bVar0)
 			{
 				func_250(iVar1);
 				return 1;
@@ -45336,8 +45336,8 @@ bool func_1303()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) <= 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) <= 4);
 }
 
 bool func_1304()
@@ -48190,9 +48190,9 @@ int func_1365(int iParam0, int iParam1)
 
 int func_1366(char[4] cParam0, char* sParam1, int iParam2)
 {
-	if (DATAFILE::_OBJECT_VALUE_GET_TYPE(cParam0, sParam1) == 2)
+	if (DATAFILE::DATADICT_GET_TYPE(cParam0, sParam1) == 2)
 	{
-		return DATAFILE::_OBJECT_VALUE_GET_INTEGER(cParam0, sParam1);
+		return DATAFILE::DATADICT_GET_INT(cParam0, sParam1);
 	}
 	return iParam2;
 }
@@ -49178,28 +49178,28 @@ void func_1394(bool bParam0)
 	{
 		return;
 	}
-	if (WEAPON::_0xC4DEC3CA8C365A5D(bParam0))
+	if (WEAPON::_IS_WEAPON_BOW(bParam0))
 	{
 		return;
 	}
 	sVar0 = "player_newWeaponType";
 	sVar1 = "player_newWeaponTime";
-	if (WEAPON::_0xDDC64F5E31EEDAB6(bParam0))
+	if (WEAPON::_IS_WEAPON_PISTOL(bParam0))
 	{
 		sVar0 = "player_newPistolWeaponType";
 		sVar1 = "player_newPistolWeaponTime";
 	}
-	else if (WEAPON::_0xC212F1D05A8232BB(bParam0))
+	else if (WEAPON::_IS_WEAPON_REVOLVER(bParam0))
 	{
 		sVar0 = "player_newRevolverWeaponType";
 		sVar1 = "player_newRevolverWeaponTime";
 	}
-	else if (WEAPON::_0x0A82317B7EBFC420(bParam0))
+	else if (WEAPON::_IS_WEAPON_RIFLE(bParam0))
 	{
 		sVar0 = "player_newRifleWeaponType";
 		sVar1 = "player_newRifleWeaponTime";
 	}
-	else if (WEAPON::_0xC75386174ECE95D5(bParam0))
+	else if (WEAPON::_IS_WEAPON_SHOTGUN(bParam0))
 	{
 		sVar0 = "player_newShotgunWeaponType";
 		sVar1 = "player_newShotgunWeaponTime";
@@ -49228,7 +49228,7 @@ int func_1395(bool bParam0)
 	}
 	else if (WEAPON::_0x705BE297EEBDB95D(bParam0))
 	{
-		if (WEAPON::_0x6AD66548840472E5(bParam0))
+		if (WEAPON::_IS_WEAPON_SNIPER(bParam0))
 		{
 			iVar0 = 12;
 		}
@@ -49236,7 +49236,7 @@ int func_1395(bool bParam0)
 		{
 			iVar0 = WEAPON::_GET_WEAPON_CLIP_SIZE(bParam0) * 4;
 		}
-		iVar1 = WEAPON::GET_PED_AMMO_BY_TYPE(Global_34, WEAPON::_0x5C2EA6C44F515F34(bParam0));
+		iVar1 = WEAPON::GET_PED_AMMO_BY_TYPE(Global_34, WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(bParam0));
 		if (iVar1 >= iVar0)
 		{
 			iVar0 = 0;
@@ -49256,7 +49256,7 @@ int func_1396()
 
 bool func_1397(bool bParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(WEAPON::_0x5C2EA6C44F515F34(bParam0));
+	return WEAPON::_IS_AMMO_VALID(WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(bParam0));
 }
 
 int func_1398(int iParam0, int iParam1, bool bParam2, bool bParam3)
@@ -49273,12 +49273,12 @@ int func_1398(int iParam0, int iParam1, bool bParam2, bool bParam3)
 
 int func_1399(bool bParam0)
 {
-	bool bVar0;
+	int iVar0;
 
-	bVar0 = WEAPON::_0x7AA043F6C41D151E(bParam0);
-	if (WEAPON::_0x705BE297EEBDB95D(bVar0))
+	iVar0 = WEAPON::_0x7AA043F6C41D151E(bParam0);
+	if (WEAPON::_0x705BE297EEBDB95D(iVar0))
 	{
-		if (WEAPON::_0x0556E9D2ECF39D01(bVar0))
+		if (WEAPON::_IS_WEAPON_TWO_HANDED(iVar0))
 		{
 			if (!func_821(49))
 			{
@@ -49289,7 +49289,7 @@ int func_1399(bool bParam0)
 				return 151;
 			}
 		}
-		else if (WEAPON::_0xD955FEE4B87AFA07(bVar0))
+		else if (WEAPON::_IS_WEAPON_ONE_HANDED(iVar0))
 		{
 			if (!func_821(50))
 			{
@@ -52202,7 +52202,7 @@ void func_1517(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 
 bool func_1518(bool bParam0)
 {
-	return WEAPON::_0xC4DEC3CA8C365A5D(bParam0);
+	return WEAPON::_IS_WEAPON_BOW(bParam0);
 }
 
 bool func_1519()

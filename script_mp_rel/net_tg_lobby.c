@@ -219,7 +219,7 @@ int func_5(int iParam0)
 	{
 		if (func_12(iParam0->f_15))
 		{
-			_NAMESPACE71::_0x2F901291EF177B02(iParam0->f_15, 0);
+			UIFEED::_0x2F901291EF177B02(iParam0->f_15, 0);
 		}
 	}
 	if (func_13(iParam0, 2))
@@ -370,7 +370,7 @@ bool func_12(int iParam0)
 	iVar0 = 6;
 	if (func_56(iParam0))
 	{
-		iVar0 = _NAMESPACE71::_0x59FA676177DBE4C9(iParam0);
+		iVar0 = UIFEED::_0x59FA676177DBE4C9(iParam0);
 	}
 	return iVar0 != 6;
 }
@@ -3065,7 +3065,7 @@ int func_128(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	iVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	iVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return iVar15;
 }
 
@@ -4642,11 +4642,11 @@ int func_200(int iParam0)
 	{
 		return 0;
 	}
-	else if (PED::_0x9682F850056C9ADE(Global_34))
+	else if (PED::_IS_PED_LASSOED(Global_34))
 	{
 		return 0;
 	}
-	else if (PED::_0x3AA24CCC0D451379(Global_34))
+	else if (PED::_IS_PED_HOGTIED(Global_34))
 	{
 		return 0;
 	}
@@ -8211,7 +8211,7 @@ var func_330(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar17 = _NAMESPACE71::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
+	uVar17 = UIFEED::_SHOW_SIMPLE_RIGHT_TEXT(&Var0, &Var13, iParam5);
 	return uVar17;
 }
 
