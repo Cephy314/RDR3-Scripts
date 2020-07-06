@@ -518,7 +518,7 @@ int func_15(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -1756,10 +1756,10 @@ void func_91()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_225(iVar0);
 				break;
-			case 1741908893:
+			case joaat("EVENT_NETWORK_AWARD_CLAIMED"):
 				func_226(iVar0);
 				break;
 		}
@@ -10034,7 +10034,7 @@ void func_425(var uParam0, var uParam1)
 		case joaat("S_LOOTABLEBIGMISCCHEST"):
 		case joaat("S_LOOTABLELUGGAGE01X"):
 		case joaat("S_FOOTLOCKERMUD02X"):
-			uParam0->f_3 = 1732377668;
+			uParam0->f_3 = joaat("FOOTLOCKER");
 			if (iVar0 < 10)
 			{
 				uParam0->f_2 = joaat("LARGE_RARE");
@@ -12410,10 +12410,10 @@ void func_570()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_863(iVar0);
 				break;
-			case 141007368:
+			case joaat("EVENT_NETWORK_LOOT_CLAIMED"):
 				func_864(iVar0);
 				break;
 			case -1315570756:
@@ -51796,7 +51796,7 @@ int func_2126(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

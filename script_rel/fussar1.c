@@ -34588,7 +34588,7 @@ int func_750(char[4] cParam0)
 
 int func_751(char[4] cParam0)
 {
-	PED::_0xDE7B2B4144906CDF(1643739761, Global_35);
+	PED::_0xDE7B2B4144906CDF(joaat("NARROW_LEDGE"), Global_35);
 	PED::SET_PED_CAN_PLAY_GESTURE_ANIMS(Global_35, 0, 1);
 	func_1243();
 	func_467(&uLocal_637);
@@ -40294,7 +40294,7 @@ int func_933(char[4] cParam0)
 	}
 	if (iVar0 == iLocal_146)
 	{
-		PED::_0xF7EA250B9A919E03(1643739761, Global_35);
+		PED::_0xF7EA250B9A919E03(joaat("NARROW_LEDGE"), Global_35);
 	}
 	if (iVar0 > iLocal_150 && iVar0 < iLocal_153)
 	{
@@ -64262,7 +64262,7 @@ int func_1537(char[4] cParam0, var uParam1, bool bParam2)
 				func_2074(cParam0, uParam1, iVar0);
 				break;
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_2075(cParam0, uParam1, iVar0);
 				break;
 		}

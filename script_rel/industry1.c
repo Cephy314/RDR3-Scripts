@@ -68310,7 +68310,7 @@ int func_1593(char[4] cParam0, var uParam1, bool bParam2)
 				func_2281(cParam0, uParam1, iVar0);
 				break;
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_2282(cParam0, uParam1, iVar0);
 				break;
 		}

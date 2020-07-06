@@ -62544,7 +62544,7 @@ void func_1774(bool bParam0)
 		{
 			case joaat("EVENT_ENTITY_BROKEN"):
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_2988(iVar1, bParam0);
 				break;
 			default:

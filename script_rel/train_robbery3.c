@@ -56711,7 +56711,7 @@ int func_1404(var uParam0, var uParam1, bool bParam2)
 				func_1842(uParam0, uParam1, iVar0);
 				break;
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_1843(uParam0, uParam1, iVar0);
 				break;
 		}
@@ -64900,7 +64900,7 @@ int func_1632()
 			iVar49 = func_2011(sVar48);
 			if (!bLocal_592)
 			{
-				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, 408192877) || (TASK::GET_TASK_MOVE_NETWORK_EVENT(Global_35, "Trans_7") && (func_2012() || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -951768523))))
+				if (ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, joaat("IDLE_7")) || (TASK::GET_TASK_MOVE_NETWORK_EVENT(Global_35, "Trans_7") && (func_2012() || ENTITY::HAS_ANIM_EVENT_FIRED(Global_35, -951768523))))
 				{
 					bLocal_592 = true;
 				}

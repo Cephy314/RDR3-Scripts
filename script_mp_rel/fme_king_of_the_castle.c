@@ -515,7 +515,7 @@ int func_15(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -1722,10 +1722,10 @@ void func_91()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_209(iVar0);
 				break;
-			case 1741908893:
+			case joaat("EVENT_NETWORK_AWARD_CLAIMED"):
 				func_210(iVar0);
 				break;
 		}
@@ -11437,7 +11437,7 @@ void func_599(var uParam0, int iParam1)
 
 int func_600()
 {
-	return 389769403;
+	return joaat("MP001_S_MP_RACECHECKFLAG02X");
 }
 
 int func_601(vector3 vParam0, float fParam3)
@@ -20692,7 +20692,7 @@ int func_1055(int iParam0, int iParam1)
 					break;
 			}
 			break;
-		case 389769403:
+		case joaat("MP001_S_MP_RACECHECKFLAG02X"):
 			switch (iParam0)
 			{
 				case joaat("COLOR_MP_OBJECTIVE_ENEMY"):
@@ -43495,7 +43495,7 @@ int func_1882(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

@@ -617,7 +617,7 @@ int func_15(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -1860,10 +1860,10 @@ void func_91()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_213(iVar0);
 				break;
-			case 1741908893:
+			case joaat("EVENT_NETWORK_AWARD_CLAIMED"):
 				func_214(iVar0);
 				break;
 		}
@@ -16217,7 +16217,7 @@ void func_718(var uParam0, int iParam1)
 		case 1866880973:
 			func_1043(uParam0, iParam1);
 			break;
-		case 1417941668: /* GXTEntry: "Cover To Cover" */
+		case joaat("COVER_TO_COVER"):
 			func_1044(uParam0, iParam1);
 			break;
 		case joaat("LOW"):
@@ -19136,7 +19136,7 @@ void func_860(var uParam0, var uParam1, int iParam2)
 		case 1866880973:
 			func_1169(uParam0, uParam1, iParam2);
 			break;
-		case 1417941668: /* GXTEntry: "Cover To Cover" */
+		case joaat("COVER_TO_COVER"):
 			func_1170(uParam0, uParam1, iParam2);
 			break;
 		case joaat("LOW"):
@@ -50988,7 +50988,7 @@ int func_2056(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

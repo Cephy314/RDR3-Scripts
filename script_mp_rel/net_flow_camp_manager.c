@@ -419,7 +419,7 @@ int func_10(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -2568,7 +2568,7 @@ int func_82(var uParam0, vector3 vParam1)
 					(uParam0->f_6[2 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					StringCopy(&((uParam0->f_6[2 /*12*/])->f_8.f_1), "Jessica_Purse", 24);
 					(uParam0->f_6[2 /*12*/])->f_8 = 0;
-					(uParam0->f_6[3 /*12*/])->f_1 = 1791983236;
+					(uParam0->f_6[3 /*12*/])->f_1 = joaat("MP004_P_PARASOL04X");
 					(uParam0->f_6[3 /*12*/])->f_2 = { -1205.565f, -1955.854f, 42.6f };
 					(uParam0->f_6[3 /*12*/])->f_5 = { 0f, 0f, 62.132f };
 					StringCopy(&((uParam0->f_6[3 /*12*/])->f_8.f_1), "PARASOL", 24);

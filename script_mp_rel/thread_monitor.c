@@ -294,7 +294,7 @@ void func_6(int iParam0)
 int func_7()
 {
 	iLocal_13 = 0;
-	if (func_42(1976253964))
+	if (func_42(joaat("EVENT_NETWORK_NETWORK_BAIL")))
 	{
 	}
 	else if (func_42(1355399116))
@@ -376,7 +376,7 @@ int func_8(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}

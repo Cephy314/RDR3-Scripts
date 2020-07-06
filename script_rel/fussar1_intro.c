@@ -1062,7 +1062,7 @@ int func_29(int iParam0)
 	if (func_137(Global_35, 0))
 	{
 		func_139(&(iParam0->f_958.f_1771), Global_35, "ARTHUR", 0);
-		PED::_0xF7EA250B9A919E03(1643739761, Global_35);
+		PED::_0xF7EA250B9A919E03(joaat("NARROW_LEDGE"), Global_35);
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(bLocal_16))
 	{

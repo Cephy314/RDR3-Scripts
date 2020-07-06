@@ -22842,7 +22842,7 @@ int func_628()
 				func_1011(func_532(2, 16), 100f, 0);
 				STREAMING::_0x513F8AA5BF2F17CF(func_532(2, 13), 60f, 1);
 				CAM::DESTROY_CAM(iLocal_1563, false);
-				AUDIO::_0x5E3CCF03995388B5(1960118912, func_532(2, 11));
+				AUDIO::_0x5E3CCF03995388B5(joaat("SHOT1_CAM"), func_532(2, 11));
 				CAM::_0xBC016635D6A73B31(sLocal_1625, "SHOT1", 5);
 				func_228(&uLocal_1626);
 				func_1008(&iLocal_1647, 2);
@@ -22850,7 +22850,7 @@ int func_628()
 			break;
 		case 2:
 			func_1012(2f, 2f);
-			if (AUDIO::_0xFFE9C53DEEA3DB0B((CAM::_0xEA113BF9B0C0C5D7(sLocal_1625, "SHOT1", 5) - func_1013(&uLocal_1626)), 1253167713, func_532(2, 13), STREAMING::IS_SRL_LOADED(), 2147483647))
+			if (AUDIO::_0xFFE9C53DEEA3DB0B((CAM::_0xEA113BF9B0C0C5D7(sLocal_1625, "SHOT1", 5) - func_1013(&uLocal_1626)), joaat("SHOT2_CAM"), func_532(2, 13), STREAMING::IS_SRL_LOADED(), 2147483647))
 			{
 				func_626(iLocal_28, func_625(2, 13), 2, 1073741824 /* Float: 2f */);
 				func_626(iLocal_27, func_625(2, 12), 2, 1073741824 /* Float: 2f */);

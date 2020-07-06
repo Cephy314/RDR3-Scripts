@@ -983,7 +983,7 @@ void func_15()
 					}
 				}
 				break;
-			case 1976253964:
+			case joaat("EVENT_NETWORK_NETWORK_BAIL"):
 				break;
 		}
 		iVar0++;
@@ -1009,7 +1009,7 @@ void func_16(var uParam0, var uParam1)
 		PED::SET_SCENARIO_PED_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 		if (!uParam0->f_73)
 		{
-			if (func_39(1976253964))
+			if (func_39(joaat("EVENT_NETWORK_NETWORK_BAIL")))
 			{
 				func_40(36);
 			}
@@ -2164,10 +2164,10 @@ void func_42()
 			case -930155091:
 				func_111(iVar0);
 				break;
-			case 1741908893:
+			case joaat("EVENT_NETWORK_AWARD_CLAIMED"):
 				func_112(iVar0);
 				break;
-			case 141007368:
+			case joaat("EVENT_NETWORK_LOOT_CLAIMED"):
 				func_113(iVar0);
 				break;
 		}
@@ -29426,7 +29426,7 @@ int func_685(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -54145,7 +54145,7 @@ int func_1594(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

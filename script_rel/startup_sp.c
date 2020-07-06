@@ -277,7 +277,7 @@ void func_9()
 					}
 				}
 				break;
-			case 1976253964:
+			case joaat("EVENT_NETWORK_NETWORK_BAIL"):
 				break;
 		}
 		iVar0++;

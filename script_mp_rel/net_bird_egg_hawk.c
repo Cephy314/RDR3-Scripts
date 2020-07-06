@@ -110,7 +110,7 @@ void __EntryFunction__()
 	{
 		func_4(&uLocal_44);
 	}
-	func_5(&uLocal_44, joaat("COLLECTIBLE_EGG_HAWK"), joaat("PROVISION_HAWK_EGG"), 990159072, joaat("MP005_S_BDEG_HAWK_EGG01X"), 6, 1);
+	func_5(&uLocal_44, joaat("COLLECTIBLE_EGG_HAWK"), joaat("PROVISION_HAWK_EGG"), joaat("MP005_S_BDEG_HAWKNEST01X"), joaat("MP005_S_BDEG_HAWK_EGG01X"), 6, 1);
 	while (func_6(&uLocal_44))
 	{
 		if (func_7())
@@ -1031,7 +1031,7 @@ void func_40(var uParam0)
 				iLocal_32[iVar0] = joaat("MP005_S_BDEG_EGRETNEST01X");
 				break;
 			case joaat("PROVISION_HAWK_EGG"):
-				iLocal_32[iVar0] = 990159072;
+				iLocal_32[iVar0] = joaat("MP005_S_BDEG_HAWKNEST01X");
 				break;
 			case joaat("PROVISION_CONDOR_EGG"):
 				iLocal_32[iVar0] = joaat("MP005_S_BDEG_CONDOR_EGG01X");
@@ -1401,7 +1401,7 @@ int func_59(int iParam0)
 				case joaat("MP005_S_BDEG_SPOONBILLNEST01X"):
 				case joaat("MP005_S_BDEG_HERONNEST01X"):
 				case joaat("MP005_S_BDEG_EGRETNEST01X"):
-				case 990159072:
+				case joaat("MP005_S_BDEG_HAWKNEST01X"):
 					return 1;
 			}
 		}

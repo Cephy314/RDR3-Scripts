@@ -5913,7 +5913,7 @@ void func_172()
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
 			case joaat("EVENT_ENTITY_BROKEN"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_396(iVar0);
 				break;
 		}

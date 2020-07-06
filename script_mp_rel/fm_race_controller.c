@@ -3718,7 +3718,7 @@ void func_24()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_247(iVar0);
 				break;
 			case -1315570756:
@@ -6890,9 +6890,9 @@ void func_182()
 		}
 		iVar0++;
 	}
-	if (STREAMING::HAS_MODEL_LOADED(389769403))
+	if (STREAMING::HAS_MODEL_LOADED(joaat("MP001_S_MP_RACECHECKFLAG02X")))
 	{
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(389769403);
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("MP001_S_MP_RACECHECKFLAG02X"));
 	}
 	if (STREAMING::HAS_MODEL_LOADED(joaat("MP001_P_MP_FINISHLINE_BONFIRE02X")))
 	{
@@ -7592,7 +7592,7 @@ int func_221(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -12159,9 +12159,9 @@ int func_392()
 	int iVar0;
 
 	iVar0 = 1;
-	STREAMING::REQUEST_MODEL(389769403, false);
+	STREAMING::REQUEST_MODEL(joaat("MP001_S_MP_RACECHECKFLAG02X"), false);
 	STREAMING::REQUEST_MODEL(joaat("MP001_P_MP_FINISHLINE_BONFIRE02X"), false);
-	if (!STREAMING::HAS_MODEL_LOADED(389769403) && !STREAMING::HAS_MODEL_LOADED(joaat("MP001_P_MP_FINISHLINE_BONFIRE02X")))
+	if (!STREAMING::HAS_MODEL_LOADED(joaat("MP001_S_MP_RACECHECKFLAG02X")) && !STREAMING::HAS_MODEL_LOADED(joaat("MP001_P_MP_FINISHLINE_BONFIRE02X")))
 	{
 		iVar0 = 0;
 	}
@@ -55581,7 +55581,7 @@ void func_1900(int iParam0, int iParam1, bool bParam2)
 	float fVar8;
 	vector3 vVar9;
 
-	iVar0 = 389769403;
+	iVar0 = joaat("MP001_S_MP_RACECHECKFLAG02X");
 	if (bParam2)
 	{
 		iVar0 = joaat("MP001_P_MP_FINISHLINE_BONFIRE02X");
@@ -59889,14 +59889,14 @@ int func_2026(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1805421660:
-		case -1659828993:
-		case -1376278836:
+		case joaat("MP004_P_MPCOVER_GUNSLINGER03"):
+		case joaat("MP004_P_MPCOVER_GUNSLINGER06"):
+		case joaat("MP004_P_MPCOVER_GUNSLINGER05"):
 		case joaat("MP004_P_MPCOVER_GUNSLINGER07"):
 		case joaat("MP004_P_MPCOVER_GUNSLINGER04"):
 		case joaat("MP004_P_MPCOVER_GUNSLINGER08"):
-		case 1705612849:
-		case 1995356347:
+		case joaat("MP004_P_MPCOVER_GUNSLINGER02"):
+		case joaat("MP004_P_MPCOVER_GUNSLINGER01"):
 			return 1;
 		default:
 			break;
@@ -67788,7 +67788,7 @@ int func_2330(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

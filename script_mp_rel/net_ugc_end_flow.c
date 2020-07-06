@@ -709,7 +709,7 @@ int func_22(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -3174,22 +3174,22 @@ void func_109()
 		}
 		else
 		{
-			STREAMING::REQUEST_MODEL(-2131982726, false);
-			if (STREAMING::HAS_MODEL_LOADED(-2131982726))
+			STREAMING::REQUEST_MODEL(joaat("MP001_P_MP_CRATETNT03X"), false);
+			if (STREAMING::HAS_MODEL_LOADED(joaat("MP001_P_MP_CRATETNT03X")))
 			{
 				iVar0 = 0;
 				while (iVar0 <= (iLocal_268 - 1))
 				{
 					if (!ENTITY::DOES_ENTITY_EXIST(&(iLocal_540[iVar0])))
 					{
-						iLocal_540[iVar0] = OBJECT::CREATE_OBJECT(-2131982726, vLocal_237, false, true, false, false, true);
+						iLocal_540[iVar0] = OBJECT::CREATE_OBJECT(joaat("MP001_P_MP_CRATETNT03X"), vLocal_237, false, true, false, false, true);
 						StringCopy(&cVar1, "CRATE_0", 16);
 						StringIntConCat(&cVar1, iVar0 + 1, 16);
 						func_199(iLocal_540[iVar0], cVar1);
 					}
 					iVar0++;
 				}
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(-2131982726);
+				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(joaat("MP001_P_MP_CRATETNT03X"));
 				MISC::SET_BIT(&iLocal_399, 3);
 				return;
 			}

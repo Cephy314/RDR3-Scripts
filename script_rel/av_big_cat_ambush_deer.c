@@ -2862,7 +2862,7 @@ void func_71(var uParam0)
 {
 	if (!ENTITY::IS_ENTITY_DEAD(&(uParam0->f_20[1 /*14*/])))
 	{
-		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_20[1 /*14*/]), 830334344))
+		if (ENTITY::HAS_ANIM_EVENT_FIRED(&(uParam0->f_20[1 /*14*/]), joaat("KILL_DEER")))
 		{
 			PHYSICS::ACTIVATE_PHYSICS(&(uParam0->f_20[1 /*14*/]));
 			PED::SET_PED_TO_RAGDOLL(&(uParam0->f_20[1 /*14*/]), 1000, 1000, 0, false, false, false);

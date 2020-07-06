@@ -15177,9 +15177,9 @@ int func_15(char[4] cParam0)
 		func_224(&(Global_1347343->f_11), 16384);
 	}
 	func_54(16384);
-	if (PED::_0x854BC9B1A1CCD034(1287772529, Global_35))
+	if (PED::_0x854BC9B1A1CCD034(joaat("HORSE_LEADING"), Global_35))
 	{
-		PED::_0xDE7B2B4144906CDF(1287772529, Global_35);
+		PED::_0xDE7B2B4144906CDF(joaat("HORSE_LEADING"), Global_35);
 	}
 	if (PED::_0x854BC9B1A1CCD034(-302141554, Global_35))
 	{
@@ -39738,9 +39738,9 @@ int func_848(char[4] cParam0)
 		func_1389(&(iLocal_228[2]), 0, 0, 0);
 	}
 	ENTITY::CREATE_MODEL_HIDE(-236.1163f, 665.4963f, 112.3183f, 0.01f, joaat("P_WATERTROUGHSML01X"), false);
-	if (!PED::_0x854BC9B1A1CCD034(1287772529, Global_35))
+	if (!PED::_0x854BC9B1A1CCD034(joaat("HORSE_LEADING"), Global_35))
 	{
-		PED::_0xF7EA250B9A919E03(1287772529, Global_35);
+		PED::_0xF7EA250B9A919E03(joaat("HORSE_LEADING"), Global_35);
 	}
 	if (!PED::_0x854BC9B1A1CCD034(-302141554, Global_35))
 	{
@@ -40004,9 +40004,9 @@ int func_850(char[4] cParam0)
 				{
 					MAP::REMOVE_BLIP(&iLocal_48);
 				}
-				if (PED::_0x854BC9B1A1CCD034(1287772529, Global_35))
+				if (PED::_0x854BC9B1A1CCD034(joaat("HORSE_LEADING"), Global_35))
 				{
-					PED::_0xDE7B2B4144906CDF(1287772529, Global_35);
+					PED::_0xDE7B2B4144906CDF(joaat("HORSE_LEADING"), Global_35);
 				}
 				if (PED::_0x854BC9B1A1CCD034(-302141554, Global_35))
 				{
@@ -40079,9 +40079,9 @@ int func_851(var uParam0)
 	func_173();
 	PLAYER::_0x0751D461F06E41CE(PLAYER::GET_PLAYER_INDEX(), 31, 0, 0);
 	PLAYER::_0x0751D461F06E41CE(PLAYER::GET_PLAYER_INDEX(), 33, 0, 0);
-	if (PED::_0x854BC9B1A1CCD034(1287772529, Global_35))
+	if (PED::_0x854BC9B1A1CCD034(joaat("HORSE_LEADING"), Global_35))
 	{
-		PED::_0xDE7B2B4144906CDF(1287772529, Global_35);
+		PED::_0xDE7B2B4144906CDF(joaat("HORSE_LEADING"), Global_35);
 	}
 	if (PED::_0x854BC9B1A1CCD034(-302141554, Global_35))
 	{
@@ -79332,7 +79332,7 @@ int func_1796(char[4] cParam0, var uParam1, bool bParam2)
 				func_2416(cParam0, uParam1, iVar0);
 				break;
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_2417(cParam0, uParam1, iVar0);
 				break;
 		}

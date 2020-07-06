@@ -3807,7 +3807,7 @@ void func_22()
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0))
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				SCRIPTS::GET_EVENT_DATA(1, iVar0, &iVar1, 4);
 				switch (iVar1)
 				{
@@ -8041,7 +8041,7 @@ int func_247(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -68712,14 +68712,14 @@ int func_2382(int iParam0)
 {
 	switch (iParam0)
 	{
-		case -1805421660:
-		case -1659828993:
-		case -1376278836:
+		case joaat("MP004_P_MPCOVER_GUNSLINGER03"):
+		case joaat("MP004_P_MPCOVER_GUNSLINGER06"):
+		case joaat("MP004_P_MPCOVER_GUNSLINGER05"):
 		case joaat("MP004_P_MPCOVER_GUNSLINGER07"):
 		case joaat("MP004_P_MPCOVER_GUNSLINGER04"):
 		case joaat("MP004_P_MPCOVER_GUNSLINGER08"):
-		case 1705612849:
-		case 1995356347:
+		case joaat("MP004_P_MPCOVER_GUNSLINGER02"):
+		case joaat("MP004_P_MPCOVER_GUNSLINGER01"):
 			return 1;
 		default:
 			break;
@@ -78624,7 +78624,7 @@ int func_2740(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

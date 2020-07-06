@@ -23952,7 +23952,7 @@ void func_817()
 			CAM::_0xE296208C273BD7F0(-1, -1, 0, 17, 1, 0);
 			iVar0 = CAM::_0xEA113BF9B0C0C5D7("script@Story@GNG0@RideToLakay", "SHOT0", 5);
 			iVar1 = CAM::_0x465F04F68AD38197("script@Story@GNG0@RideToLakay", "SHOT0", 5);
-			if (AUDIO::_0xFFE9C53DEEA3DB0B((iVar0 - func_812(&uLocal_1057)), 1253167713, 1969.8f, -1542.5f, 53.1f, STREAMING::IS_SRL_LOADED(), (iVar1 - func_812(&uLocal_1057))))
+			if (AUDIO::_0xFFE9C53DEEA3DB0B((iVar0 - func_812(&uLocal_1057)), joaat("SHOT2_CAM"), 1969.8f, -1542.5f, 53.1f, STREAMING::IS_SRL_LOADED(), (iVar1 - func_812(&uLocal_1057))))
 			{
 				TASK::TASK_CLEAR_LOOK_AT(Global_35);
 				func_1362(1);
@@ -23970,7 +23970,7 @@ void func_817()
 				CAM::_0xE296208C273BD7F0(-1, -1, 0, 17, 1, 0);
 				iVar0 = CAM::_0xEA113BF9B0C0C5D7("script@Story@GNG0@RideToLakay", "SHOT2", 5);
 				iVar1 = CAM::_0x465F04F68AD38197("script@Story@GNG0@RideToLakay", "SHOT2", 5);
-				if (AUDIO::_0xFFE9C53DEEA3DB0B((iVar0 - func_812(&uLocal_1057)), 512053909, 2061.1f, -1053f, 44.2f, STREAMING::IS_SRL_LOADED(), (iVar1 - func_812(&uLocal_1057))))
+				if (AUDIO::_0xFFE9C53DEEA3DB0B((iVar0 - func_812(&uLocal_1057)), joaat("SHOT3_CAM"), 2061.1f, -1053f, 44.2f, STREAMING::IS_SRL_LOADED(), (iVar1 - func_812(&uLocal_1057))))
 				{
 					TASK::TASK_CLEAR_LOOK_AT(Global_35);
 					func_1362(2);

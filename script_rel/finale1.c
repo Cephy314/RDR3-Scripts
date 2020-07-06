@@ -37839,7 +37839,7 @@ int func_801(var uParam0)
 				func_1367(Local_271[2 /*9*/], 0);
 				func_1367(Local_317[0 /*9*/], 0);
 				func_1367(Local_317[1 /*9*/], 0);
-				AUDIO::_0x5E3CCF03995388B5(1960118912, vLocal_1696);
+				AUDIO::_0x5E3CCF03995388B5(joaat("SHOT1_CAM"), vLocal_1696);
 				CAM::_0xBC016635D6A73B31("script@Story@FIN1@ride_to_beavers", "SHOT1", 5);
 				GRAPHICS::SET_TIMECYCLE_MODIFIER("Finale_sunPos1");
 				func_236(vLocal_1539[2 /*3*/]);
@@ -37849,7 +37849,7 @@ int func_801(var uParam0)
 		case 2:
 			iVar0 = (CAM::_0xEA113BF9B0C0C5D7("script@Story@FIN1@ride_to_beavers", "SHOT1", 5) - func_1368(vLocal_1539[2 /*3*/]));
 			iVar1 = ((CAM::_0x465F04F68AD38197("script@Story@FIN1@ride_to_beavers", "SHOT1", 5) - func_1368(vLocal_1539[2 /*3*/])) - 100);
-			if (AUDIO::_0xFFE9C53DEEA3DB0B(iVar0, 1253167713, vLocal_1699, STREAMING::IS_SRL_LOADED(), iVar1))
+			if (AUDIO::_0xFFE9C53DEEA3DB0B(iVar0, joaat("SHOT2_CAM"), vLocal_1699, STREAMING::IS_SRL_LOADED(), iVar1))
 			{
 				STREAMING::END_SRL();
 				STREAMING::CLEAR_FOCUS();
@@ -37875,7 +37875,7 @@ int func_801(var uParam0)
 		case 3:
 			iVar0 = (CAM::_0xEA113BF9B0C0C5D7("script@Story@FIN1@ride_to_beavers", "SHOT2", 5) - func_1368(vLocal_1539[2 /*3*/]));
 			iVar1 = (CAM::_0x465F04F68AD38197("script@Story@FIN1@ride_to_beavers", "SHOT2", 5) - func_1368(vLocal_1539[2 /*3*/]));
-			if (AUDIO::_0xFFE9C53DEEA3DB0B(iVar0, 512053909, vLocal_1702, STREAMING::IS_SRL_LOADED(), iVar1))
+			if (AUDIO::_0xFFE9C53DEEA3DB0B(iVar0, joaat("SHOT3_CAM"), vLocal_1702, STREAMING::IS_SRL_LOADED(), iVar1))
 			{
 				STREAMING::END_SRL();
 				STREAMING::CLEAR_FOCUS();
@@ -73817,7 +73817,7 @@ int func_1795(var uParam0, var uParam1, bool bParam2)
 				func_2363(uParam0, uParam1, iVar0);
 				break;
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				func_2364(uParam0, uParam1, iVar0);
 				break;
 		}

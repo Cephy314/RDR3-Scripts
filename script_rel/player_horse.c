@@ -1035,7 +1035,7 @@ void func_36(int iParam0)
 		case joaat("EVENT_ENTITY_DAMAGED"):
 			func_146(iParam0);
 			break;
-		case 2145012826:
+		case joaat("EVENT_ENTITY_DESTROYED"):
 			func_147(iParam0);
 			break;
 		case 1417095237:

@@ -12699,7 +12699,7 @@ void func_331(var uParam0)
 	{
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				SCRIPTS::GET_EVENT_DATA(0, iVar0, &Var1, 9);
 				if (!ENTITY::DOES_ENTITY_EXIST(Var1))
 				{

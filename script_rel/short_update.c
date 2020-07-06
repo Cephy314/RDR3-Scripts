@@ -816,7 +816,7 @@ void func_22()
 				case joaat("EVENT_PLAYER_PROMPT_TRIGGERED"):
 					func_167(iVar0);
 					break;
-				case 735942751:
+				case joaat("EVENT_PED_CREATED"):
 					func_168(iVar0);
 					break;
 				case 1351025667:
@@ -5209,7 +5209,7 @@ void func_151(int iParam0)
 	}
 	switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iParam0))
 	{
-		case 2145012826:
+		case joaat("EVENT_ENTITY_DESTROYED"):
 			func_711(iParam0);
 			break;
 	}
@@ -5224,7 +5224,7 @@ void func_152(int iParam0)
 			func_712(iParam0);
 			break;
 		case joaat("EVENT_DEATH"):
-		case 2145012826:
+		case joaat("EVENT_ENTITY_DESTROYED"):
 			if (func_82() == -1)
 			{
 				func_713(iParam0);
@@ -5262,7 +5262,7 @@ void func_155(int iParam0)
 			func_714(iParam0);
 			break;
 		case joaat("EVENT_DEATH"):
-		case 2145012826:
+		case joaat("EVENT_ENTITY_DESTROYED"):
 			func_715(iParam0);
 			break;
 		case -617453104:
@@ -5484,10 +5484,10 @@ void func_159(int iParam0)
 {
 	switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iParam0))
 	{
-		case -1863021589:
+		case joaat("EVENT_VEHICLE_CREATED"):
 			func_745(iParam0);
 			break;
-		case -1231347001:
+		case joaat("EVENT_VEHICLE_DESTROYED"):
 			func_746(iParam0);
 			break;
 	}
@@ -5517,7 +5517,7 @@ void func_161(int iParam0)
 {
 	switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iParam0))
 	{
-		case 2145012826:
+		case joaat("EVENT_ENTITY_DESTROYED"):
 			func_750(iParam0);
 			func_751(iParam0);
 			break;
@@ -5547,7 +5547,7 @@ void func_162(int iParam0)
 	{
 		case joaat("EVENT_DAMAGE"):
 		case joaat("EVENT_ENTITY_DAMAGED"):
-		case 2145012826:
+		case joaat("EVENT_ENTITY_DESTROYED"):
 			func_756(iParam0);
 			break;
 		case 1811873798:

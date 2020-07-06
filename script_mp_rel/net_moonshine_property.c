@@ -711,7 +711,7 @@ int func_6(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -2295,7 +2295,7 @@ void func_90()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_210(iVar0, &Local_248, &Local_1113);
 				break;
 			default:
@@ -6132,7 +6132,7 @@ void func_288(var uParam0, var uParam1)
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_480(uParam0, uParam1, iVar0);
 				break;
 		}
@@ -11058,7 +11058,7 @@ void func_442(var uParam0)
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_710(uParam0, iVar0);
 				break;
 		}
@@ -12334,7 +12334,7 @@ void func_513(var uParam0, var uParam1, var uParam2, bool bParam3)
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_818(uParam0, uParam1, uParam2, iVar0, bParam3);
 				break;
 		}

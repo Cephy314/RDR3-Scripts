@@ -61381,7 +61381,7 @@ int func_1312(int iParam0, int iParam1)
 				return joaat("CLOTHING_ITEM_F_VEST_010_TINT_019");
 			case 5986:
 				return joaat("CLOTHING_ITEM_F_VEST_010_TINT_020");
-			case 5987:
+			case joaat("UNLOCK_INJURED01_U_M_M_VALBANKMANAGER_01"):
 				return joaat("CLOTHING_ITEM_F_VEST_014_TINT_001");
 			case 5988:
 				return joaat("CLOTHING_ITEM_F_VEST_014_TINT_002");

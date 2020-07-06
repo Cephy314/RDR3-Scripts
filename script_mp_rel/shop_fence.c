@@ -194,7 +194,7 @@ void __EntryFunction__()
 	Var0.f_167.f_1722 = 7;
 	Var0.f_167.f_1722.f_8 = 7;
 	Var0.f_167.f_1722.f_16 = 7;
-	Var0.f_167.f_1767 = -805634630;
+	Var0.f_167.f_1767 = joaat("MP001_S_MP_CATALOGUE01X_STORE");
 	Var0.f_167.f_1774 = 1;
 	Var0.f_167.f_1778.f_1.f_3 = 1036831949;
 	Var0.f_167.f_1778.f_1.f_5 = 1110704128;
@@ -1633,7 +1633,7 @@ int func_9(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -108776,7 +108776,7 @@ int func_3438(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

@@ -142,7 +142,7 @@ int func_5(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -464,7 +464,7 @@ void func_21()
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0);
 		switch (iVar1)
 		{
-			case -507840394:
+			case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 				func_52(iVar0);
 				break;
 		}
@@ -66810,14 +66810,14 @@ void func_1032()
 			case joaat("P_MP_COVER_SU_CH"):
 			case joaat("P_MP_COVER_S_SPC"):
 			case joaat("P_MP_COVERCOMB_HM_LAG"):
-			case -1805421660:
+			case joaat("MP004_P_MPCOVER_GUNSLINGER03"):
 			case joaat("P_MP_COVER_SS_LAG"):
 			case joaat("P_MP_COVER_SS_HDR"):
 			case joaat("P_MP_COVER_S_LAK"):
 			case joaat("P_MP_COVER_SM_ADO"):
 			case joaat("P_MP_COVER_SM_CWB"):
 			case joaat("P_MP_COVER_SH_LAG"):
-			case -1659828993:
+			case joaat("MP004_P_MPCOVER_GUNSLINGER06"):
 			case joaat("P_MP_COVER_SL_CR"):
 			case joaat("P_MP_COVERCOMB_MU_MT"):
 			case joaat("P_MP_COVER_SS_CR"):
@@ -66829,7 +66829,7 @@ void func_1032()
 			case joaat("P_MP_COVER_SM_COL"):
 			case joaat("P_MP_COVERCOMB_M_COL"):
 			case joaat("P_MP_COVERCOMB_HL_HDR"):
-			case -1376278836:
+			case joaat("MP004_P_MPCOVER_GUNSLINGER05"):
 			case joaat("P_MP_COVER_H_SB"):
 			case joaat("P_MP_COVER_SL_HDR"):
 			case joaat("P_MP_COVERCOMB_LU_HDR"):
@@ -66962,7 +66962,7 @@ void func_1032()
 			case joaat("P_MP_COVERCOMB_MU_SB"):
 			case joaat("P_MP_COVER_SM_TT"):
 			case joaat("P_MP_COVERCOMB_S_CH"):
-			case 1705612849:
+			case joaat("MP004_P_MPCOVER_GUNSLINGER02"):
 			case joaat("P_MP_COVER_SL_LAG"):
 			case joaat("P_MP_COVER_HL_SD"):
 			case joaat("P_MP_COVERCOMB_S_SD"):
@@ -66976,7 +66976,7 @@ void func_1032()
 			case joaat("P_MP_COVER_SH_ADO"):
 			case joaat("P_MP_COVER_SL_CWB"):
 			case joaat("P_MP_COVERCOMB_M_MT"):
-			case 1995356347:
+			case joaat("MP004_P_MPCOVER_GUNSLINGER01"):
 			case joaat("P_MP_COVERCOMB_MU_SD"):
 			case joaat("P_MP_COVER_SS_SD"):
 			case joaat("P_MP_COVER_S_CWB"):

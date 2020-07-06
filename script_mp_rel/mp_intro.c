@@ -10840,7 +10840,7 @@ int func_45(bool bParam0, bool bParam1)
 	iVar0 = 0;
 	while (iVar0 < SCRIPTS::GET_NUMBER_OF_EVENTS(1))
 	{
-		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == 1976253964)
+		if (SCRIPTS::GET_EVENT_AT_INDEX(1, iVar0) == joaat("EVENT_NETWORK_NETWORK_BAIL"))
 		{
 			return 1;
 		}
@@ -37289,13 +37289,13 @@ void func_1007(var uParam0, var uParam1, var uParam2, int iParam3, int iParam4)
 {
 	switch (iParam3)
 	{
-		case -507840394:
+		case joaat("EVENT_NETWORK_SCRIPT_EVENT"):
 			func_1485(uParam2, iParam4);
 			func_1486(uParam2, iParam4);
 			func_1487(uParam2, iParam4);
 			func_1488(uParam2, iParam4);
 			break;
-		case 1741908893:
+		case joaat("EVENT_NETWORK_AWARD_CLAIMED"):
 			func_1489(uParam2, iParam4);
 			break;
 	}
@@ -42156,7 +42156,7 @@ int func_1229(int* iParam0, var uParam1, int iParam2, var uParam3, var uParam4, 
 	while (iVar2 < iVar0)
 	{
 		iVar1 = SCRIPTS::GET_EVENT_AT_INDEX(1, iVar2);
-		if (iVar1 != 1741908893)
+		if (iVar1 != joaat("EVENT_NETWORK_AWARD_CLAIMED"))
 		{
 		}
 		else if (!SCRIPTS::GET_EVENT_DATA(1, iVar2, iParam0, 12))
@@ -114192,7 +114192,7 @@ int func_3700(int iParam0, int iParam1)
 		case joaat("ENTER_SPRINTING"):
 		case joaat("ENTER_MOUNTED"):
 		case joaat("ENTER_DUAL_WIELD"):
-		case -971275364:
+		case joaat("ENTER_GUN"):
 		case joaat("ON_KILL"):
 		case joaat("ENTER_SCENARIO"):
 		case joaat("ENTER_REVIVER"):

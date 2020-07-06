@@ -32769,7 +32769,7 @@ int func_932(int iParam0)
 		switch (SCRIPTS::GET_EVENT_AT_INDEX(0, iVar0))
 		{
 			case joaat("EVENT_ENTITY_DAMAGED"):
-			case 2145012826:
+			case joaat("EVENT_ENTITY_DESTROYED"):
 				SCRIPTS::GET_EVENT_DATA(0, iVar0, &Var1, 9);
 				if (ENTITY::IS_ENTITY_A_PED(Var1))
 				{
