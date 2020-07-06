@@ -1741,7 +1741,7 @@ int func_61(int iParam0)
 	return func_143(((*Global_1347702)[58 /*49*/])->f_15, 1);
 }
 
-var func_62(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_62(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -1754,7 +1754,7 @@ var func_62(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_144(bParam0, &Var0);
+	return func_144(iParam0, &Var0);
 }
 
 void func_63(int iParam0, float fParam1, bool bParam2, bool bParam3, bool bParam4)
@@ -2037,9 +2037,9 @@ struct<2> func_82(int iParam0)
 	return Var0;
 }
 
-void func_83(var uParam0, bool bParam1, bool bParam2)
+void func_83(var uParam0, int iParam1, int iParam2)
 {
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
+	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
 }
 
 int func_84(int iParam0)
@@ -2128,13 +2128,13 @@ int func_84(int iParam0)
 	return 0;
 }
 
-void func_85(int iParam0, bool bParam1)
+void func_85(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
 	Var0 = { func_86(joaat("EATEN"), func_171(iParam0)) };
-	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
-	func_83(func_172(joaat("HERBS_EATEN")), bParam1);
+	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
+	func_83(func_172(joaat("HERBS_EATEN")), iParam1);
 }
 
 struct<2> func_86(int iParam0, int iParam1)
@@ -2483,7 +2483,7 @@ var func_98(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_185(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -3635,9 +3635,9 @@ int func_143(int iParam0, bool bParam1)
 	return 0;
 }
 
-var func_144(bool bParam0, var uParam1)
+bool func_144(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 float func_145(int iParam0, int iParam1)
@@ -4799,7 +4799,7 @@ int func_195(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -5556,7 +5556,7 @@ var func_244(char* sParam0, char* sParam1, var uParam2, int iParam3, int iParam4
 	Var13.f_3 = 0;
 	Var13.f_4 = uParam2;
 	Var13.f_5 = iParam3;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
 	return uVar21;
 }
 
@@ -5600,7 +5600,7 @@ float func_248()
 {
 	if (func_272())
 	{
-		if (DLC::_0xA16B4FBA7887D7BA())
+		if (DLC::_GET_SPECIAL_EDITION_CORE_STATS_BONUS_ENABLED())
 		{
 			return 0.2f;
 		}
@@ -5895,7 +5895,7 @@ bool func_272()
 
 bool func_273(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_274(int iParam0)

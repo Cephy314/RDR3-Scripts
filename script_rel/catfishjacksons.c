@@ -1934,7 +1934,7 @@ void func_85(int iParam0)
 	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_16))
 	{
 		TXD::_SET_STREAMED_TXD_AS_NO_LONGER_NEEDED(joaat("UI_LETTER_CATFISH"));
-		TASK::_0x81948DFE4F5A0283(iLocal_16);
+		TASK::_DELETE_SCENARIO_POINT(iLocal_16);
 	}
 	if (func_103(2, 2) && !func_124(2, 2))
 	{
@@ -2841,7 +2841,7 @@ int func_115(int iParam0, int iParam1)
 			else if (!func_191(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_192(iVar1);
 				return 1;
@@ -3863,7 +3863,7 @@ var func_151(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = UIFEED::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 
@@ -4064,7 +4064,7 @@ void func_168(int iParam0)
 	}
 	if ((Global_1914319->f_3[iParam0 /*446*/])->f_440 != 0)
 	{
-		_NAMESPACE71::_0x2F901291EF177B02((Global_1914319->f_3[iParam0 /*446*/])->f_440, 0);
+		UIFEED::_0x2F901291EF177B02((Global_1914319->f_3[iParam0 /*446*/])->f_440, 0);
 	}
 	(Global_1914319->f_3[iParam0 /*446*/])->f_23 = 0;
 	func_217(iParam0);
@@ -4332,9 +4332,9 @@ int func_188(int iParam0, int iParam1)
 	iVar0 = func_114(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}

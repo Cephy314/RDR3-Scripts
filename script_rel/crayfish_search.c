@@ -193,7 +193,7 @@ void func_8(int iParam0)
 		iVar1 = iVar0;
 		if (TASK::_DOES_SCENARIO_POINT_EXIST(&(iParam0->f_9[iVar1])))
 		{
-			TASK::_0x81948DFE4F5A0283(&(iParam0->f_9[iVar1]));
+			TASK::_DELETE_SCENARIO_POINT(&(iParam0->f_9[iVar1]));
 		}
 		iVar0++;
 	}

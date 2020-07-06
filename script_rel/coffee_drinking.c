@@ -758,7 +758,7 @@ int func_26(int iParam0)
 	return func_57(((*Global_1347702)[58 /*49*/])->f_15, 1);
 }
 
-var func_27(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_27(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -771,7 +771,7 @@ var func_27(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_58(bParam0, &Var0);
+	return func_58(iParam0, &Var0);
 }
 
 void func_28(int iParam0, bool bParam1)
@@ -1327,9 +1327,9 @@ int func_57(int iParam0, bool bParam1)
 	return 0;
 }
 
-var func_58(bool bParam0, var uParam1)
+bool func_58(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 void func_59(int iParam0, int iParam1, int iParam2)
@@ -2711,7 +2711,7 @@ float func_134()
 {
 	if (func_142())
 	{
-		if (DLC::_0xA16B4FBA7887D7BA())
+		if (DLC::_GET_SPECIAL_EDITION_CORE_STATS_BONUS_ENABLED())
 		{
 			return 0.2f;
 		}

@@ -153,7 +153,7 @@ int func_3(var uParam0)
 
 	if (Local_58 == 0)
 	{
-		iVar0 = TASK::_0xA92450B5AE687AAF(uParam0->f_1);
+		iVar0 = TASK::_GET_SCENARIO_POINT_TYPE(uParam0->f_1);
 		Local_58 = func_10(iVar0);
 		return 0;
 	}
@@ -714,7 +714,7 @@ void func_8(var uParam0)
 						func_25(&((Local_14[iVar0 /*13*/])->f_8));
 						GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_14[iVar0 /*13*/])->f_11, "Steam", 0.5f, false);
 						GRAPHICS::SET_PARTICLE_FX_LOOPED_EVOLUTION((Local_14[iVar0 /*13*/])->f_11, "Erupt", 1f, false);
-						Local_14.f_41 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_56(iVar0), -1f, -1f, -1f, -1082130432, -1082130432, 3, 1);
+						Local_14.f_41 = EVENT::ADD_SHOCKING_EVENT_AT_POSITION(joaat("EVENT_SHOCKING_BEAT_ALARMING_NEW"), func_56(iVar0), -1f, -1f, -1f, -1f, -1f, 3, 1);
 						if (ENTITY::DOES_ENTITY_EXIST(PED::GET_MOUNT(Global_35)) && !ENTITY::IS_ENTITY_DEAD(PED::GET_MOUNT(Global_35)))
 						{
 							PED::_0x23BDE06596A22CEC(PED::GET_MOUNT(Global_35), 1, 0.15f, 0);
@@ -6832,15 +6832,15 @@ bool func_119(int iParam0, int iParam1)
 
 int func_120()
 {
-	if (PED::_0x3AA24CCC0D451379(Global_35))
+	if (PED::_IS_PED_HOGTIED(Global_35))
 	{
 		return 0;
 	}
-	if (PED::_0x42429C674B61238B(Global_35))
+	if (PED::_IS_PED_HOGTYING(Global_35))
 	{
 		return 0;
 	}
-	if (PED::_0x9682F850056C9ADE(Global_35))
+	if (PED::_IS_PED_LASSOED(Global_35))
 	{
 		return 0;
 	}
@@ -7689,7 +7689,7 @@ var func_148(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_182(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -7799,7 +7799,7 @@ int func_157(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(bParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(bParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -7868,7 +7868,7 @@ var func_160(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -7968,7 +7968,7 @@ int func_168(int iParam0, int iParam1)
 			else if (!func_194(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_195(iVar1);
 				return 1;
@@ -8470,9 +8470,9 @@ int func_191(int iParam0, int iParam1)
 	iVar0 = func_167(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}

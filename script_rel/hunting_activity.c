@@ -198,7 +198,7 @@ int func_4(bool bParam0, int iParam1)
 	}
 	if (func_19(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}
@@ -1000,7 +1000,7 @@ var func_39(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -1340,7 +1340,7 @@ int func_70()
 	return Global_1894899->f_2;
 }
 
-var func_71(bool bParam0, var uParam1)
+bool func_71(bool bParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
 }

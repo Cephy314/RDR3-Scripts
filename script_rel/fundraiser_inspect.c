@@ -217,7 +217,7 @@ int func_10(var uParam0, float fParam1)
 	return 0;
 }
 
-var func_11(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_11(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -230,7 +230,7 @@ var func_11(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_25(bParam0, &Var0);
+	return func_25(iParam0, &Var0);
 }
 
 int func_12()
@@ -473,9 +473,9 @@ void func_24(var uParam0)
 	*uParam0 = 0;
 }
 
-var func_25(bool bParam0, var uParam1)
+bool func_25(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 void func_26(int iParam0, bool bParam1)

@@ -403,7 +403,7 @@ int func_9(int iParam0)
 	return func_28(((*Global_1347702)[58 /*49*/])->f_15, 1);
 }
 
-bool func_10(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_10(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -416,7 +416,7 @@ bool func_10(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_29(bParam0, &Var0);
+	return func_29(iParam0, &Var0);
 }
 
 void func_11(var uParam0)
@@ -900,9 +900,9 @@ int func_28(int iParam0, bool bParam1)
 	return 0;
 }
 
-var func_29(bool bParam0, var uParam1)
+bool func_29(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 void func_30(int iParam0, bool bParam1)
@@ -1320,9 +1320,9 @@ struct<2> func_53(int iParam0)
 	return Var0;
 }
 
-void func_54(var uParam0, bool bParam1, bool bParam2)
+void func_54(var uParam0, int iParam1, int iParam2)
 {
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
+	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
 }
 
 int func_55(int iParam0)
@@ -1411,13 +1411,13 @@ int func_55(int iParam0)
 	return 0;
 }
 
-void func_56(int iParam0, bool bParam1)
+void func_56(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
 	Var0 = { func_57(joaat("EATEN"), func_100(iParam0)) };
-	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
-	func_54(func_101(joaat("HERBS_EATEN")), bParam1);
+	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
+	func_54(func_101(joaat("HERBS_EATEN")), iParam1);
 }
 
 struct<2> func_57(int iParam0, int iParam1)
@@ -2839,7 +2839,7 @@ float func_134()
 {
 	if (func_141())
 	{
-		if (DLC::_0xA16B4FBA7887D7BA())
+		if (DLC::_GET_SPECIAL_EDITION_CORE_STATS_BONUS_ENABLED())
 		{
 			return 0.2f;
 		}

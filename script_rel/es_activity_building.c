@@ -299,8 +299,8 @@ int func_7(var uParam0)
 	int iVar1;
 
 	func_45(1);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
-	_NAMESPACE71::_0xDD1232B332CBB9E7(2, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
+	UIFEED::_0xDD1232B332CBB9E7(2, 1, 0);
 	if (PLAYER::IS_PLAYER_DEAD(PLAYER::PLAYER_ID()) || !PLAYER::IS_PLAYER_DEAD(PLAYER::PLAYER_ID()))
 	{
 		if (uParam0->f_14 != 5)
@@ -919,7 +919,7 @@ int func_44(var uParam0)
 
 void func_45(int iParam0)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
 char* func_46(int iParam0, bool bParam1)
@@ -1968,8 +1968,8 @@ bool func_104()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) == 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) == 4);
 }
 
 char* func_105(int iParam0)
@@ -2409,7 +2409,7 @@ int func_113(vector3 vParam0, int iParam3, float fParam4, bool bParam5)
 void func_114()
 {
 	ENTITY::ATTACH_ENTITY_TO_ENTITY(Local_0.f_4484, Global_35, ENTITY::GET_ENTITY_BONE_INDEX_BY_NAME(Global_35, "MH_R_KnifeHolster_PT_000"), -0.03f, -0.03f, -0.19f, 12.31f, 3.06f, 110.44f, false, false, false, false, 2, true, false, false);
-	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_0.f_4484, 1);
+	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_0.f_4484, true);
 }
 
 void func_115()
@@ -2550,7 +2550,7 @@ int func_118(var uParam0)
 			{
 				TASK::TASK_MOVE_NETWORK_ADVANCED_BY_NAME_WITH_INIT_PARAMS(uParam0->f_12, Local_0.f_4489, &(uParam0->f_84), uParam0->f_118, uParam0->f_121, 2, 0f, 0, 0, 128, 0);
 				PED::_0x2208438012482A1A(Global_35, false, false);
-				ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(uParam0->f_12, 1);
+				ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(uParam0->f_12, true);
 			}
 			if (Local_0 == 0 && Local_0.f_4476 == 0)
 			{
@@ -4174,7 +4174,7 @@ void func_178(bool bParam0)
 void func_179()
 {
 	ENTITY::ATTACH_ENTITY_TO_ENTITY(Local_0.f_4484, Global_35, PED::GET_PED_BONE_INDEX(Global_35, 7966), 0f, 0f, 0f, 0f, 0f, 0f, false, false, false, false, 2, true, false, false);
-	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_0.f_4484, 1);
+	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_0.f_4484, true);
 }
 
 void func_180(var uParam0, int iParam1)

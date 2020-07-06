@@ -829,7 +829,7 @@ int func_37(bool bParam0, int iParam1)
 	}
 	if (func_78(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}
@@ -1310,7 +1310,7 @@ void func_61(bool bParam0)
 		iVar1 = func_98(Global_35, iVar0, 0, 1);
 		if (WEAPON::IS_WEAPON_VALID(iVar1))
 		{
-			if (WEAPON::_0x0556E9D2ECF39D01(iVar1) || func_99(iVar1))
+			if (WEAPON::_IS_WEAPON_TWO_HANDED(iVar1) || func_99(iVar1))
 			{
 				if (!bParam0 || (iVar0 != 7 && iVar0 != 9))
 				{
@@ -1988,7 +1988,7 @@ int func_98(int iParam0, int iParam1, bool bParam2, bool bParam3)
 
 bool func_99(int iParam0)
 {
-	return WEAPON::_0xC4DEC3CA8C365A5D(iParam0);
+	return WEAPON::_IS_WEAPON_BOW(iParam0);
 }
 
 bool func_100(int iParam0)
@@ -2042,7 +2042,7 @@ int func_102(int iParam0, bool bParam1, bool bParam2, int iParam3)
 				}
 				if ((iParam0 == 15 && Global_1357549->f_1494 & 32768 != 0) && func_162(Global_35, func_161(iParam0), 50f, 1, 1))
 				{
-					if (!GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[iParam0 /*74*/])->f_72))
+					if (!GRAPHICS::_IS_TRACKED_POINT_VALID(((*Global_1835011)[iParam0 /*74*/])->f_72))
 					{
 						((*Global_1835011)[iParam0 /*74*/])->f_72 = GRAPHICS::CREATE_TRACKED_POINT();
 						GRAPHICS::SET_TRACKED_POINT_INFO(((*Global_1835011)[iParam0 /*74*/])->f_72, func_161(iParam0), 5f);
@@ -2064,7 +2064,7 @@ int func_102(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		((*Global_1835011)[iParam0 /*74*/])->f_73 = 0;
 		func_164(iParam0);
-		if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[iParam0 /*74*/])->f_72))
+		if (GRAPHICS::_IS_TRACKED_POINT_VALID(((*Global_1835011)[iParam0 /*74*/])->f_72))
 		{
 			GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[iParam0 /*74*/])->f_72);
 		}
@@ -3626,7 +3626,7 @@ int func_155(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_225()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_241(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_SLEEP_BED"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_185(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_225()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_241(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_IS_PED_USING_SCENARIO_HASH(Global_35, joaat("PROP_PLAYER_SLEEP_BED"))) && !PED::_IS_PED_USING_SCENARIO_HASH(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_226(iParam0, iVar0) || (fParam1 >= (func_242(iParam0) * func_242(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -5204,8 +5204,8 @@ bool func_223()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) == 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) == 4);
 }
 
 int func_224(int iParam0)
@@ -5549,9 +5549,9 @@ void func_240(int iParam0, var uParam1, bool bParam2)
 	((Global_1905944->f_22[iParam0 /*9*/])->f_3[0 /*2*/])->f_1 = 3;
 }
 
-bool func_241(bool bParam0, int iParam1)
+bool func_241(int iParam0, int iParam1)
 {
-	return PED::_0x34D6AC1157C8226C(bParam0, iParam1);
+	return PED::_IS_PED_USING_SCENARIO_HASH(iParam0, iParam1);
 }
 
 float func_242(int iParam0)
@@ -5571,7 +5571,7 @@ var func_243(char[4] cParam0, int iParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = cParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

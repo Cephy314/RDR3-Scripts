@@ -18,7 +18,7 @@
 void __EntryFunction__()
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	int iVar2;
 
 	fLocal_7 = 1f;
@@ -43,8 +43,8 @@ void __EntryFunction__()
 					WEAPON::_0x6929E22158E52265(Global_35, 0, &Global_36605);
 				}
 			}
-			bVar1 = func_2(Global_35, 1);
-			if (WEAPON::_0xC212F1D05A8232BB(bVar1) || WEAPON::_0xDDC64F5E31EEDAB6(bVar1))
+			iVar1 = func_2(Global_35, 1);
+			if (WEAPON::_IS_WEAPON_REVOLVER(iVar1) || WEAPON::_IS_WEAPON_PISTOL(iVar1))
 			{
 				if (Global_36604 != 0)
 				{

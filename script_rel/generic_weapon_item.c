@@ -90,10 +90,10 @@ void __EntryFunction__()
 						fVar7 = ((Local_9.f_13 + fVar4) - (fVar3 * Local_9.f_13));
 						fVar6 = (Local_9.f_12 - (fVar3 * Local_9.f_12));
 						fVar8 = (Local_9.f_14 - (fVar3 * Local_9.f_14));
-						WEAPON::_SET_WEAPON_CONDITION(iVar0, fVar5);
-						WEAPON::_SET_WEAPON_RUST_LEVEL(iVar0, fVar7, false);
-						WEAPON::_SET_WEAPON_DIRT_LEVEL(iVar0, fVar6, false);
-						WEAPON::_SET_WEAPON_MUD_LEVEL(iVar0, fVar8, false);
+						WEAPON::_SET_WEAPON_DEGRADATION(iVar0, fVar5);
+						WEAPON::_SET_WEAPON_DAMAGE(iVar0, fVar7, false);
+						WEAPON::_SET_WEAPON_DIRT(iVar0, fVar6, false);
+						WEAPON::_SET_WEAPON_SOOT(iVar0, fVar8, false);
 						func_9(iVar0);
 					}
 				}
@@ -138,10 +138,10 @@ void func_1(int iParam0)
 		Local_9.f_2 = INVENTORY::_0x46DB71883EE9D5AF(Local_9.f_1, "stats", &Var11, iVar1);
 		Local_9.f_3 = DATABINDING::_DATABINDING_ADD_DATA_HASH(Local_9.f_1, "itemLabel", func_16(iVar0, *iParam0));
 		Local_9.f_4 = DATABINDING::_DATABINDING_ADD_DATA_STRING(Local_9.f_1, "tipText", func_17(iParam0));
-		Local_9.f_11 = func_18((WEAPON::_GET_WEAPON_CONDITION(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
-		Local_9.f_13 = func_18((WEAPON::_GET_WEAPON_RUST_LEVEL(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
-		Local_9.f_12 = WEAPON::_GET_WEAPON_DIRT_LEVEL(*iParam0);
-		Local_9.f_14 = WEAPON::_GET_WEAPON_MUD_LEVEL(*iParam0);
+		Local_9.f_11 = func_18((WEAPON::_GET_WEAPON_DEGRADATION(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
+		Local_9.f_13 = func_18((WEAPON::_GET_WEAPON_DAMAGE(*iParam0) - WEAPON::_0xD56E5F336C675EFA(*iParam0)), 0f, 1f);
+		Local_9.f_12 = WEAPON::_GET_WEAPON_DIRT(*iParam0);
+		Local_9.f_14 = WEAPON::_GET_WEAPON_SOOT(*iParam0);
 	}
 	HUD::_HIDE_HUD_COMPONENT(joaat("HUD_CTX_INSPECT_ITEM"));
 }
@@ -221,7 +221,7 @@ void func_7()
 	int iVar0;
 
 	iVar0 = ENTITY::GET_OBJECT_INDEX_FROM_ENTITY_INDEX(WEAPON::GET_CURRENT_PED_WEAPON_ENTITY_INDEX(Global_35, 0));
-	if (func_20(joaat("KIT_GUN_OIL"), 1, 0) && (WEAPON::_GET_WEAPON_CONDITION(iVar0) != 0f && WEAPON::_GET_WEAPON_CONDITION(iVar0) > WEAPON::_0xD56E5F336C675EFA(iVar0)))
+	if (func_20(joaat("KIT_GUN_OIL"), 1, 0) && (WEAPON::_GET_WEAPON_DEGRADATION(iVar0) != 0f && WEAPON::_GET_WEAPON_DEGRADATION(iVar0) > WEAPON::_0xD56E5F336C675EFA(iVar0)))
 	{
 		if (!PED::_0x4912DFE492DB98CD(Global_35, "GENERIC_WEAPON_CLEAN_PROMPT_AVAILABLE"))
 		{
@@ -236,7 +236,7 @@ void func_7()
 		}
 		if ((!func_21(0, 0, 1) && !func_22()) && func_23())
 		{
-			if ((!Local_9.f_15 && WEAPON::_0xD56E5F336C675EFA(iVar0) > 0f) && WEAPON::_GET_WEAPON_CONDITION(iVar0) <= WEAPON::_0xD56E5F336C675EFA(iVar0))
+			if ((!Local_9.f_15 && WEAPON::_0xD56E5F336C675EFA(iVar0) > 0f) && WEAPON::_GET_WEAPON_DEGRADATION(iVar0) <= WEAPON::_0xD56E5F336C675EFA(iVar0))
 			{
 				func_24("WEAPON_PERM_DEGREDATION", 10000, 0, 0, 0, 1);
 				Local_9.f_15 = 1;
@@ -344,10 +344,10 @@ void func_10(int iParam0)
 	{
 		return;
 	}
-	WEAPON::_SET_WEAPON_CONDITION(iParam0, WEAPON::_0xD56E5F336C675EFA(iParam0));
-	WEAPON::_SET_WEAPON_RUST_LEVEL(iParam0, WEAPON::_0xD56E5F336C675EFA(iParam0), false);
-	WEAPON::_SET_WEAPON_DIRT_LEVEL(iParam0, 0f, false);
-	WEAPON::_SET_WEAPON_MUD_LEVEL(iParam0, 0f, false);
+	WEAPON::_SET_WEAPON_DEGRADATION(iParam0, WEAPON::_0xD56E5F336C675EFA(iParam0));
+	WEAPON::_SET_WEAPON_DAMAGE(iParam0, WEAPON::_0xD56E5F336C675EFA(iParam0), false);
+	WEAPON::_SET_WEAPON_DIRT(iParam0, 0f, false);
+	WEAPON::_SET_WEAPON_SOOT(iParam0, 0f, false);
 	func_9(iParam0);
 }
 
@@ -520,7 +520,7 @@ char* func_17(int iParam0)
 	float fVar0;
 	float fVar1;
 
-	fVar0 = WEAPON::_GET_WEAPON_CONDITION(*iParam0);
+	fVar0 = WEAPON::_GET_WEAPON_DEGRADATION(*iParam0);
 	fVar1 = WEAPON::_0xD56E5F336C675EFA(*iParam0);
 	if (fVar0 == 0f)
 	{
@@ -697,7 +697,7 @@ var func_24(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -723,9 +723,9 @@ int func_26(int iParam0, int iParam1)
 	iVar0 = func_30(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}
@@ -1055,7 +1055,7 @@ int func_37(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -1203,7 +1203,7 @@ int func_45(int iParam0, int iParam1)
 			else if (!func_77(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_69(iVar1);
 				return 1;
@@ -1492,7 +1492,7 @@ var func_60(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_80(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -2365,7 +2365,7 @@ void func_92(int iParam0, int iParam1, bool bParam2)
 
 bool func_93(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_94(int iParam0, bool bParam1)
@@ -3833,7 +3833,7 @@ var func_138(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_3 = 0;
 	Var13.f_4 = iParam2;
 	Var13.f_5 = iParam3;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
 	return uVar21;
 }
 
@@ -3860,7 +3860,7 @@ var func_140(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_3 = 0;
 	Var13.f_4 = iParam2;
 	Var13.f_5 = iParam3;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam9, iParam10);
 	return uVar21;
 }
 
@@ -4204,7 +4204,7 @@ int func_156(int iParam0)
 
 void func_157(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4)
 {
-	*uParam3 = PED::_GET_PED_CARCASS_QUALITY(iParam0);
+	*uParam3 = PED::_GET_PED_DAMAGE(iParam0);
 	*uParam2 = FLOCK::_0xF8B48A361DC388AE(iParam0);
 	if (*uParam2 == 2)
 	{

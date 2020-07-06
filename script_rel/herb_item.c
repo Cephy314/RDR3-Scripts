@@ -202,13 +202,13 @@ void func_6(int iParam0)
 	}
 }
 
-void func_7(int iParam0, bool bParam1)
+void func_7(int iParam0, int iParam1)
 {
 	struct<2> Var0;
 
 	Var0 = { func_18(joaat("EATEN"), func_11(iParam0)) };
-	STATS::_0x6A0184E904CDF25E(&Var0, bParam1);
-	func_20(func_19(joaat("HERBS_EATEN")), bParam1);
+	STATS::_0x6A0184E904CDF25E(&Var0, iParam1);
+	func_20(func_19(joaat("HERBS_EATEN")), iParam1);
 }
 
 int func_8(struct<5> Param0, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9)
@@ -518,7 +518,7 @@ var func_16(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_36(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -549,9 +549,9 @@ struct<2> func_19(int iParam0)
 	return Var0;
 }
 
-void func_20(var uParam0, bool bParam1, bool bParam2)
+void func_20(var uParam0, int iParam1, int iParam2)
 {
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
+	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
 }
 
 int func_21(int iParam0)

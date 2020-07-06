@@ -657,7 +657,7 @@ int func_27(var uParam0)
 	HUD::_0xC9CAEAEEC1256E54(joaat("HUD_CTX_IN_MISSION_CUTSCENE"));
 	CAM::_0x702B75DC9D3EDE56(true);
 	CAM::_0xE296208C273BD7F0(0, 0, 0, 17, 1, 0);
-	CAM::_0x05AB44D906738426();
+	CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2();
 	func_56(0);
 	Global_16 = 1;
 	func_33(1);
@@ -685,7 +685,7 @@ int func_29(var uParam0)
 	struct<10> Var7;
 
 	func_55();
-	CAM::_0x05AB44D906738426();
+	CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2();
 	if (bLocal_56)
 	{
 		bLocal_56 = false;
@@ -1056,7 +1056,7 @@ int func_40(bool bParam0, int iParam1)
 	}
 	if (func_90(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}
@@ -1528,7 +1528,7 @@ int func_61(int iParam0, vector3 vParam1, float fParam4, bool bParam5, bool bPar
 	return 0;
 }
 
-var func_62(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_62(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -1541,7 +1541,7 @@ var func_62(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_109(bParam0, &Var0);
+	return func_109(iParam0, &Var0);
 }
 
 void func_63(int iParam0)
@@ -2206,7 +2206,7 @@ void func_101(bool bParam0, bool bParam1, bool bParam2, bool bParam3, bool bPara
 		}
 		PED::SET_PED_CONFIG_FLAG(bParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(bParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(bParam0)))
 	{
 		if (!bParam5)
 		{
@@ -2282,7 +2282,7 @@ int func_105(int iParam0, bool bParam1, bool bParam2, int iParam3)
 				}
 				if ((iParam0 == 15 && Global_1357549->f_1494 & 32768 != 0) && func_61(Global_35, func_150(iParam0), 50f, 1, 1))
 				{
-					if (!GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[iParam0 /*74*/])->f_72))
+					if (!GRAPHICS::_IS_TRACKED_POINT_VALID(((*Global_1835011)[iParam0 /*74*/])->f_72))
 					{
 						((*Global_1835011)[iParam0 /*74*/])->f_72 = GRAPHICS::CREATE_TRACKED_POINT();
 						GRAPHICS::SET_TRACKED_POINT_INFO(((*Global_1835011)[iParam0 /*74*/])->f_72, func_150(iParam0), 5f);
@@ -2304,7 +2304,7 @@ int func_105(int iParam0, bool bParam1, bool bParam2, int iParam3)
 	{
 		((*Global_1835011)[iParam0 /*74*/])->f_73 = 0;
 		func_152(iParam0);
-		if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(((*Global_1835011)[iParam0 /*74*/])->f_72))
+		if (GRAPHICS::_IS_TRACKED_POINT_VALID(((*Global_1835011)[iParam0 /*74*/])->f_72))
 		{
 			GRAPHICS::DESTROY_TRACKED_POINT(((*Global_1835011)[iParam0 /*74*/])->f_72);
 		}
@@ -2345,9 +2345,9 @@ float func_108(vector3 vParam0, vector3 vParam3)
 	return BUILTIN::VDIST2(vParam0, vParam3);
 }
 
-var func_109(bool bParam0, var uParam1)
+bool func_109(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 bool func_110(int iParam0, bool bParam1)
@@ -4049,7 +4049,7 @@ int func_144(int iParam0, float fParam1, int iParam2, bool bParam3, bool bParam4
 	{
 		return 1;
 	}
-	if (((((((func_174(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_174(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_177()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_196(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_SLEEP_BED"))) && !PED::_0x34D6AC1157C8226C(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
+	if (((((((func_174(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 4096) && !func_174(&(((*Global_1835011)[iParam0 /*74*/])->f_29), 8192)) && IntToFloat(func_177()) >= 10f) && !Global_1935630->f_12) && !Global_16) && !func_196(Global_35, joaat("PROP_PLAYER_SLEEP_TENT_A_FRAME"))) && !PED::_IS_PED_USING_SCENARIO_HASH(Global_35, joaat("PROP_PLAYER_SLEEP_BED"))) && !PED::_IS_PED_USING_SCENARIO_HASH(Global_35, joaat("WORLD_PLAYER_SLEEP_BEDROLL")))
 	{
 		if (!func_178(iParam0, iVar0) || (fParam1 >= (func_197(iParam0) * func_197(iParam0)) && !((*Global_1835011)[iParam0 /*74*/])->f_70))
 		{
@@ -4766,8 +4766,8 @@ bool func_175()
 {
 	int iVar0;
 
-	iVar0 = _NAMESPACE71::_0xC17F69E1418CD11F(1);
-	return (iVar0 != 0 && _NAMESPACE71::_0x59FA676177DBE4C9(iVar0) == 4);
+	iVar0 = UIFEED::_0xC17F69E1418CD11F(1);
+	return (iVar0 != 0 && UIFEED::_0x59FA676177DBE4C9(iVar0) == 4);
 }
 
 int func_176(int iParam0)
@@ -5143,9 +5143,9 @@ void func_195(int iParam0, var uParam1, bool bParam2)
 	((Global_1905944->f_22[iParam0 /*9*/])->f_3[0 /*2*/])->f_1 = 3;
 }
 
-bool func_196(bool bParam0, int iParam1)
+bool func_196(int iParam0, int iParam1)
 {
-	return PED::_0x34D6AC1157C8226C(bParam0, iParam1);
+	return PED::_IS_PED_USING_SCENARIO_HASH(iParam0, iParam1);
 }
 
 float func_197(int iParam0)
@@ -5165,7 +5165,7 @@ var func_198(char[4] cParam0, int iParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = cParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

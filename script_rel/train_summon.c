@@ -96,8 +96,8 @@ int func_2()
 			if (!TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_19))
 			{
 				iLocal_19 = TASK::CREATE_SCENARIO_POINT(iLocal_2, vLocal_11, fLocal_17, 0f, 0, 0);
-				TASK::_0x5AF19B6CC2115D34(iLocal_19, 23, 1);
-				TASK::_0x5AF19B6CC2115D34(iLocal_19, 25, 1);
+				TASK::_SET_SCENARIO_POINT_FLAG(iLocal_19, 23, true);
+				TASK::_SET_SCENARIO_POINT_FLAG(iLocal_19, 25, true);
 				return 0;
 			}
 			if (!func_13(Global_35, -76381094))
@@ -906,7 +906,7 @@ int func_37(bool bParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(bParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(bParam0))
 	{
 		if (bParam1)
 		{
@@ -1114,6 +1114,6 @@ int func_52(bool bParam0, var uParam1, var uParam2, int iParam3)
 
 bool func_53(bool bParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(bParam0);
+	return WEAPON::_IS_AMMO_VALID(bParam0);
 }
 

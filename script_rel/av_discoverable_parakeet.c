@@ -1564,7 +1564,7 @@ int func_23(var uParam0)
 		}
 		if (uParam0->f_453.f_10 != 0)
 		{
-			uParam0->f_453 = VEHICLE::_CREATE_VEHICLE_2(uParam0->f_453.f_1, uParam0->f_453.f_3, uParam0->f_453.f_6, true, true, uParam0->f_453.f_9, uParam0->f_453.f_10, false);
+			uParam0->f_453 = VEHICLE::_CREATE_DRAFT_VEHICLE(uParam0->f_453.f_1, uParam0->f_453.f_3, uParam0->f_453.f_6, true, true, uParam0->f_453.f_9, uParam0->f_453.f_10, false);
 		}
 		else
 		{
@@ -1826,8 +1826,8 @@ int func_31(var uParam0)
 			{
 				func_56(&((uParam0->f_20[iLocal_11 /*14*/])->f_5), 50, 10, 0);
 				uLocal_13[iLocal_11] = func_57(iLocal_12, (uParam0->f_20[iLocal_11 /*14*/])->f_5, (uParam0->f_20[iLocal_11 /*14*/])->f_8, 0, 0, 0);
-				TASK::_0x5AF19B6CC2115D34(&(uLocal_13[iLocal_11]), 23, 1);
-				TASK::_0x5AF19B6CC2115D34(&(uLocal_13[iLocal_11]), 25, 1);
+				TASK::_SET_SCENARIO_POINT_FLAG(&(uLocal_13[iLocal_11]), 23, true);
+				TASK::_SET_SCENARIO_POINT_FLAG(&(uLocal_13[iLocal_11]), 25, true);
 				TASK::_TASK_USE_SCENARIO_POINT(&(uParam0->f_20[iLocal_11 /*14*/]), &(uLocal_13[iLocal_11]), 0, 0, false, true, 0, false, -1f, false);
 				func_58(uParam0->f_20[iLocal_11 /*14*/], 0, 1);
 				PED::SET_PED_KEEP_TASK(&(uParam0->f_20[iLocal_11 /*14*/]), true);
@@ -1882,7 +1882,7 @@ int func_32(var uParam0, var uParam1)
 	{
 		if (TASK::_DOES_SCENARIO_POINT_EXIST(&(uLocal_13[iVar0])))
 		{
-			TASK::_0x81948DFE4F5A0283(&(uLocal_13[iVar0]));
+			TASK::_DELETE_SCENARIO_POINT(&(uLocal_13[iVar0]));
 		}
 		iVar0++;
 	}
@@ -2571,7 +2571,7 @@ int func_55(int iParam0)
 		return 0;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	if (PED::_0x772A1969F649E902(iVar0))
+	if (PED::_IS_THIS_MODEL_A_HORSE(iVar0))
 	{
 		return 1;
 	}
@@ -3178,7 +3178,7 @@ void func_84(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, 
 		}
 		PED::SET_PED_CONFIG_FLAG(iParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iParam0)))
 	{
 		if (!bParam5)
 		{
@@ -3228,7 +3228,7 @@ float func_88(float fParam0)
 	if (PLAYER::IS_PLAYER_FREE_AIMING(PLAYER::PLAYER_ID()))
 	{
 		iVar0 = Global_1935630->f_44;
-		if (WEAPON::_0x6AD66548840472E5(iVar0) || iVar0 == joaat("WEAPON_KIT_BINOCULARS"))
+		if (WEAPON::_IS_WEAPON_SNIPER(iVar0) || iVar0 == joaat("WEAPON_KIT_BINOCULARS"))
 		{
 			if (CAM::IS_FIRST_PERSON_AIM_CAM_ACTIVE())
 			{

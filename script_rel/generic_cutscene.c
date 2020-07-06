@@ -1199,11 +1199,11 @@ bool func_54(int iParam0)
 	return iParam0 != 0;
 }
 
-int func_55(bool bParam0, int iParam1, int iParam2, int iParam3)
+int func_55(int iParam0, int iParam1, int iParam2, int iParam3)
 {
 	var uVar0;
 
-	return func_72(bParam0, &uVar0, iParam1, iParam2, iParam3);
+	return func_72(iParam0, &uVar0, iParam1, iParam2, iParam3);
 }
 
 void func_56(var uParam0)
@@ -1450,7 +1450,7 @@ var func_67(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = uParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -1651,12 +1651,12 @@ int func_71(int iParam0, int iParam1)
 	return 0;
 }
 
-int func_72(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4)
+int func_72(int iParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 {
 	var uVar0;
 	struct<15> Var1;
 
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return 0;
 	}
@@ -1664,7 +1664,7 @@ int func_72(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 	{
 		return 0;
 	}
-	if (NETWORK::_0xFBE782B3165AC8EC(bParam0))
+	if (NETWORK::_0xFBE782B3165AC8EC(iParam0))
 	{
 		return 1;
 	}
@@ -1677,7 +1677,7 @@ int func_72(bool bParam0, var uParam1, int iParam2, int iParam3, int iParam4)
 	Var1.f_12 = iParam2;
 	Var1.f_14 = iParam3;
 	Var1.f_13 = iParam4;
-	func_85(uParam1, bParam0, Var1);
+	func_85(uParam1, iParam0, Var1);
 	return 1;
 }
 
@@ -1821,7 +1821,7 @@ int func_84()
 	return Global_1109400->f_244;
 }
 
-void func_85(var uParam0, bool bParam1, struct<15> Param2)
+void func_85(var uParam0, int iParam1, struct<15> Param2)
 {
 	int iVar0;
 	struct<22> Var1;
@@ -1846,7 +1846,7 @@ void func_85(var uParam0, bool bParam1, struct<15> Param2)
 	Var1.f_7.f_1 = 10;
 	Var1.f_7.f_14 = 255;
 	Var1 = { *uParam0 };
-	Var1.f_4 = bParam1;
+	Var1.f_4 = iParam1;
 	Var1.f_7 = { Param2 };
 	Var1.f_6 = 1;
 	*(Global_1224423->f_1[(&Global_1224423 - 1) /*22*/]) = { Var1 };

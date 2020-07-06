@@ -2088,7 +2088,7 @@ int func_54(var uParam0)
 	{
 		if (func_120())
 		{
-			if (TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35) == joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING"))
+			if (TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(Global_35) == joaat("RANSACK_REACH_IN_CHIMNEY_LOOTING"))
 			{
 				func_42(&(Local_73.f_131), 16777216);
 				func_101(&(uParam0->f_5), &(Local_73.f_131));
@@ -2236,7 +2236,7 @@ void func_61(var uParam0)
 	{
 		if (TASK::_DOES_SCENARIO_POINT_EXIST(&(uParam0->f_41[iVar0])))
 		{
-			TASK::_0x81948DFE4F5A0283(&(uParam0->f_41[iVar0]));
+			TASK::_DELETE_SCENARIO_POINT(&(uParam0->f_41[iVar0]));
 		}
 		iVar0++;
 	}
@@ -4799,7 +4799,7 @@ void func_153(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 		}
 		PED::SET_PED_CONFIG_FLAG(bParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(bParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(bParam0)))
 	{
 		if (!bParam5)
 		{
@@ -5444,17 +5444,17 @@ int func_175(int iParam0)
 void func_176(int iParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	int iVar2;
 
 	iVar2 = func_195(0);
 	iVar0 = 0;
 	while (iVar0 < Global_1946804->f_2657.f_19)
 	{
-		bVar1 = &Global_1946804->f_2657[iVar0];
-		if (func_196(bVar1) == iParam0)
+		iVar1 = &Global_1946804->f_2657[iVar0];
+		if (func_196(iVar1) == iParam0)
 		{
-			INVENTORY::_0x6A564540FAC12211(iVar2, bVar1);
+			INVENTORY::_0x6A564540FAC12211(iVar2, iVar1);
 		}
 		iVar0++;
 	}
@@ -5464,17 +5464,17 @@ void func_176(int iParam0)
 void func_177(int iParam0)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	int iVar2;
 
 	iVar2 = func_195(0);
 	iVar0 = 0;
 	while (iVar0 < Global_1946804->f_2657.f_19)
 	{
-		bVar1 = &Global_1946804->f_2657[iVar0];
-		if (func_196(bVar1) == iParam0)
+		iVar1 = &Global_1946804->f_2657[iVar0];
+		if (func_196(iVar1) == iParam0)
 		{
-			INVENTORY::_0x766315A564594401(iVar2, bVar1, 0);
+			INVENTORY::_0x766315A564594401(iVar2, iVar1, 0);
 		}
 		iVar0++;
 	}
@@ -5959,15 +5959,15 @@ int func_195(bool bParam0)
 	return 2;
 }
 
-int func_196(bool bParam0)
+int func_196(int iParam0)
 {
 	struct<2> Var0;
 
-	if (!func_205(bParam0, 0))
+	if (!func_205(iParam0, 0))
 	{
 		return 0;
 	}
-	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(bParam0, &Var0))
+	if (!ITEMDATABASE::_ITEM_DATABASE_FILLOUT_ITEM_INFO(iParam0, &Var0))
 	{
 		return 0;
 	}
@@ -6138,13 +6138,13 @@ int func_204(int iParam0)
 	return 1;
 }
 
-bool func_205(bool bParam0, int iParam1)
+bool func_205(int iParam0, int iParam1)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return false;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
 }
 
 void func_206(int iParam0, int iParam1)

@@ -1533,7 +1533,7 @@ void func_30(int iParam0)
 
 void func_31(int iParam0)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
 bool func_32(int iParam0, bool bParam1)
@@ -2442,7 +2442,7 @@ int func_72(bool bParam0, int iParam1)
 	}
 	if (func_118(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}
@@ -2544,7 +2544,7 @@ var func_76(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -3696,7 +3696,7 @@ int func_121(int iParam0, int iParam1)
 			else if (!func_143(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_144(iVar1);
 				return 1;
@@ -4053,8 +4053,8 @@ void func_138(bool bParam0)
 void func_139(int iParam0, char* sParam1)
 {
 	iLocal_219 = TASK::CREATE_SCENARIO_POINT(iParam0, vLocal_164, fLocal_217, 0f, 0, 1);
-	TASK::_0x5AF19B6CC2115D34(iLocal_219, 25, 1);
-	TASK::_0x5AF19B6CC2115D34(iLocal_219, 23, 1);
+	TASK::_SET_SCENARIO_POINT_FLAG(iLocal_219, 25, true);
+	TASK::_SET_SCENARIO_POINT_FLAG(iLocal_219, 23, true);
 	TASK::_TASK_USE_SCENARIO_POINT(Global_35, iLocal_219, sParam1, -1, false, true, 0, false, 0f, false);
 }
 
@@ -4071,9 +4071,9 @@ int func_140(int iParam0, int iParam1)
 	iVar0 = func_120(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}

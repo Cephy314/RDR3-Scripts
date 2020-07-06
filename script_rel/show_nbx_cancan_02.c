@@ -1531,7 +1531,7 @@ void func_18(int iParam0)
 	{
 		return;
 	}
-	bVar0 = PED::_0x34D6AC1157C8226C(Global_35, joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"));
+	bVar0 = PED::_IS_PED_USING_SCENARIO_HASH(Global_35, joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"));
 	bVar1 = func_4(Global_35, &(iParam0->f_35[1]), 1, 0);
 	bVar2 = func_4(Global_35, &(iParam0->f_35[2]), 1, 0);
 	if (bVar0)
@@ -2563,12 +2563,12 @@ void func_57(var uParam0, var uParam1, int iParam2)
 {
 	if (func_2(uParam0->f_18, 1) && !func_2(uParam0->f_18, 2))
 	{
-		STREAMING::_0x19A6BE7D9C6884D3(joaat("PROP_HUMAN_SEAT_CHAIR"), 15, false, 0);
+		STREAMING::_REQUEST_SCENARIO_TYPE(joaat("PROP_HUMAN_SEAT_CHAIR"), 15, false, 0);
 		func_7(&(uParam0->f_18), 2);
 	}
 	if (func_2(uParam0->f_18, 2) && !func_2(uParam0->f_18, 4))
 	{
-		if (STREAMING::_0x9427C94D2E4094A4(joaat("PROP_HUMAN_SEAT_CHAIR"), 0))
+		if (STREAMING::_HAS_SCENARIO_TYPE_LOADED(joaat("PROP_HUMAN_SEAT_CHAIR"), false))
 		{
 			func_7(&(uParam0->f_18), 4);
 		}
@@ -10796,7 +10796,7 @@ void func_268(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 		}
 		PED::SET_PED_CONFIG_FLAG(bParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(bParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(bParam0)))
 	{
 		if (!bParam5)
 		{

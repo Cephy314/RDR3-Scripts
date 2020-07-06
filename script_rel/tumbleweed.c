@@ -2115,14 +2115,14 @@ void func_72()
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(bVar1))
 	{
-		if (((!bLocal_233 && !func_165(iVar0, 0)) && AUDIO::_0xBE28DB99556FF8D9(bVar1) != 0) && PED::_0x34D6AC1157C8226C(bVar1, joaat("PROP_HUMAN_PIANO")))
+		if (((!bLocal_233 && !func_165(iVar0, 0)) && AUDIO::_0xBE28DB99556FF8D9(bVar1) != 0) && PED::_IS_PED_USING_SCENARIO_HASH(bVar1, joaat("PROP_HUMAN_PIANO")))
 		{
 			AUDIO::_0x8E901B65206C2D3E(bVar1);
 			AUDIO::_0xB93A769B8B726950(bVar1, -1044357807);
 			AUDIO::_0xC4CFCE4C656EF480(bVar1);
 			bLocal_233 = true;
 		}
-		else if (bLocal_233 && !PED::_0x34D6AC1157C8226C(bVar1, joaat("PROP_HUMAN_PIANO")))
+		else if (bLocal_233 && !PED::_IS_PED_USING_SCENARIO_HASH(bVar1, joaat("PROP_HUMAN_PIANO")))
 		{
 			bLocal_233 = false;
 		}
@@ -4808,7 +4808,7 @@ void func_135(int iParam0)
 	}
 	if ((Global_1914319->f_3[iParam0 /*446*/])->f_440 != 0)
 	{
-		_NAMESPACE71::_0x2F901291EF177B02((Global_1914319->f_3[iParam0 /*446*/])->f_440, 0);
+		UIFEED::_0x2F901291EF177B02((Global_1914319->f_3[iParam0 /*446*/])->f_440, 0);
 	}
 	(Global_1914319->f_3[iParam0 /*446*/])->f_23 = 0;
 	func_243(iParam0);
@@ -5579,7 +5579,7 @@ int func_165(int iParam0, bool bParam1)
 
 bool func_166(int iParam0)
 {
-	bool bVar0;
+	int iVar0;
 
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -5589,8 +5589,8 @@ bool func_166(int iParam0)
 	{
 		return false;
 	}
-	bVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	return PED::_0x772A1969F649E902(bVar0);
+	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
+	return PED::_IS_THIS_MODEL_A_HORSE(iVar0);
 }
 
 int func_167(int iParam0)
@@ -6475,7 +6475,7 @@ var func_187(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = UIFEED::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 
@@ -8703,7 +8703,7 @@ int func_326(var uParam0, bool bParam1)
 			return 0;
 		}
 	}
-	if ((Global_1914319->f_17371 || func_370(func_155(*uParam0), 1, 1, 1, 0)) || PED::_0x3AA24CCC0D451379(func_155(*uParam0)))
+	if ((Global_1914319->f_17371 || func_370(func_155(*uParam0), 1, 1, 1, 0)) || PED::_IS_PED_HOGTIED(func_155(*uParam0)))
 	{
 		func_366(uParam0);
 		return uParam0->f_30;
@@ -8937,7 +8937,7 @@ int func_334(bool bParam0, int iParam1)
 	}
 	if (func_382(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}
@@ -9694,7 +9694,7 @@ int func_370(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4)
 	}
 	if (PLAYER::IS_PLAYER_FREE_AIMING(iVar1))
 	{
-		if (WEAPON::_0x6AD66548840472E5(func_397(bVar0, 0)))
+		if (WEAPON::_IS_WEAPON_SNIPER(func_397(bVar0, 0)))
 		{
 			if (func_398(ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 0.4f, 0.6f, 0.3f, 0.7f))
 			{

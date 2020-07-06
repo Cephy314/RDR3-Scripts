@@ -2425,7 +2425,7 @@ void func_85(int iParam0)
 	{
 		return;
 	}
-	if (!PED::_0x34D6AC1157C8226C(iParam0, joaat("WORLD_HUMAN_SELL_PAPER")))
+	if (!PED::_IS_PED_USING_SCENARIO_HASH(iParam0, joaat("WORLD_HUMAN_SELL_PAPER")))
 	{
 		return;
 	}
@@ -5167,7 +5167,7 @@ void func_148(int iParam0)
 	}
 	if ((Global_1914319->f_3[iParam0 /*446*/])->f_440 != 0)
 	{
-		_NAMESPACE71::_0x2F901291EF177B02((Global_1914319->f_3[iParam0 /*446*/])->f_440, 0);
+		UIFEED::_0x2F901291EF177B02((Global_1914319->f_3[iParam0 /*446*/])->f_440, 0);
 	}
 	(Global_1914319->f_3[iParam0 /*446*/])->f_23 = 0;
 	func_269(iParam0);
@@ -7482,7 +7482,7 @@ var func_220(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var0.f_3 = iParam5;
 	vVar13.f_1 = sParam0;
 	vVar13.f_2 = sParam1;
-	uVar16 = _NAMESPACE71::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
+	uVar16 = UIFEED::_SHOW_LOCATION_NOTIFICATION(&Var0, &vVar13, iParam6, iParam7);
 	return uVar16;
 }
 
@@ -8696,7 +8696,7 @@ int func_295(var uParam0, bool bParam1)
 			return 0;
 		}
 	}
-	if ((Global_1914319->f_17371 || func_372(func_177(*uParam0), 1, 1, 1, 0)) || PED::_0x3AA24CCC0D451379(func_177(*uParam0)))
+	if ((Global_1914319->f_17371 || func_372(func_177(*uParam0), 1, 1, 1, 0)) || PED::_IS_PED_HOGTIED(func_177(*uParam0)))
 	{
 		func_368(uParam0);
 		return uParam0->f_30;
@@ -8930,7 +8930,7 @@ int func_303(int iParam0, int iParam1)
 	}
 	if (func_384(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -9954,7 +9954,7 @@ int func_372(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4)
 	}
 	if (PLAYER::IS_PLAYER_FREE_AIMING(iVar1))
 	{
-		if (WEAPON::_0x6AD66548840472E5(func_407(iVar0, 0)))
+		if (WEAPON::_IS_WEAPON_SNIPER(func_407(iVar0, 0)))
 		{
 			if (func_408(ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 0.4f, 0.6f, 0.3f, 0.7f))
 			{

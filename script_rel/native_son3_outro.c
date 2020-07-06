@@ -172,7 +172,7 @@ int func_6(var uParam0)
 	bool bVar0;
 
 	bVar0 = true;
-	CAM::_0x05AB44D906738426();
+	CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2();
 	switch (iLocal_4)
 	{
 		case 0:
@@ -491,7 +491,7 @@ bool func_20(var uParam0, int iParam1)
 
 int func_21(var uParam0)
 {
-	CAM::_0x05AB44D906738426();
+	CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2();
 	func_44(&uLocal_12);
 	return 1;
 }
@@ -513,7 +513,7 @@ int func_24(var uParam0)
 {
 	if (iLocal_3 == 0 || iLocal_3 == 1)
 	{
-		CAM::_0x05AB44D906738426();
+		CAM::_DISABLE_FIRST_PERSON_CAM_THIS_FRAME_2();
 	}
 	func_45(1);
 	switch (iLocal_3)
@@ -656,7 +656,7 @@ int func_33(bool bParam0, int iParam1)
 	}
 	if (func_52(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}

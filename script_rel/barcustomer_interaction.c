@@ -213,7 +213,7 @@ void func_6()
 				iLocal_11 = joaat("BARTENDER_CLEAN_BEER_OVER_BAR");
 				iLocal_12 = -1931194237;
 				iLocal_13 = joaat("BARTENDER_CLEAN_BEER_UNDER_TRANS_BARFRONT");
-				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_BEER"), 262144, 0, 0);
+				STREAMING::_REQUEST_SCENARIO_TYPE(joaat("WORLD_HUMAN_BARTENDER_BEER"), 262144, 0, 0);
 			}
 			else
 			{
@@ -226,16 +226,16 @@ void func_6()
 				iLocal_11 = joaat("BARTENDER_CLEAN_WHISKEY_OVER_BAR");
 				iLocal_12 = joaat("BARTENDER_CLEAN_WHISKEY_OVER_TRANS_UNDER_BAR");
 				iLocal_13 = joaat("BARTENDER_CLEAN_WHISKEY_UNDER_TRANS_BARFRONT");
-				STREAMING::_0x19A6BE7D9C6884D3(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 262144, 0, 0);
+				STREAMING::_REQUEST_SCENARIO_TYPE(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 262144, 0, 0);
 				STREAMING::REQUEST_MODEL(joaat("P_SHOTGLASS01X"), false);
 				STREAMING::REQUEST_MODEL(joaat("P_BOTTLEJD01X"), false);
 			}
 			fVar5 = TASK::_GET_SCENARIO_POINT_HEADING(iLocal_3, true);
 			iLocal_29 = TASK::CREATE_SCENARIO_POINT(iVar4, OBJECT::_GET_OBJECT_OFFSET_FROM_COORDS(TASK::_GET_SCENARIO_POINT_COORDS(iLocal_3, true), fVar5, func_21()), (fVar5 - 180f), 0f, 0, 0);
-			TASK::_0xD3A0DA8F91612C6E(iLocal_29, (fVar5 - 180f), 1);
+			TASK::_SET_SCENARIO_POINT_HEADING(iLocal_29, (fVar5 - 180f), true);
 			TASK::_0xA7479FB665361EDB(iLocal_29, 0);
 			TASK::_0xE69FDA40AAC3EFC0(iLocal_29, 0);
-			iLocal_17 = TASK::_0x5BA659955369B0E2(iLocal_3);
+			iLocal_17 = TASK::_GET_PED_USING_SCENARIO_POINT(iLocal_3);
 			iLocal_28 = func_22(iLocal_39);
 			if (func_23(iLocal_28))
 			{
@@ -266,7 +266,7 @@ void func_6()
 				{
 					return;
 				}
-				if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_BARTENDER_BEER"), 0))
+				if (!STREAMING::_HAS_SCENARIO_TYPE_LOADED(joaat("WORLD_HUMAN_BARTENDER_BEER"), false))
 				{
 					return;
 				}
@@ -281,7 +281,7 @@ void func_6()
 				{
 					return;
 				}
-				if (!STREAMING::_0x9427C94D2E4094A4(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), 0))
+				if (!STREAMING::_HAS_SCENARIO_TYPE_LOADED(joaat("WORLD_HUMAN_BARTENDER_WHISKEY"), false))
 				{
 					return;
 				}
@@ -292,7 +292,7 @@ void func_6()
 			}
 			if (!func_12(iLocal_17, 0))
 			{
-				iLocal_17 = TASK::_0x5BA659955369B0E2(iLocal_3);
+				iLocal_17 = TASK::_GET_PED_USING_SCENARIO_POINT(iLocal_3);
 				return;
 			}
 			if (!bVar2)
@@ -331,7 +331,7 @@ void func_7()
 	}
 	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_29))
 	{
-		TASK::_0x81948DFE4F5A0283(iLocal_29);
+		TASK::_DELETE_SCENARIO_POINT(iLocal_29);
 	}
 }
 
@@ -402,7 +402,7 @@ int func_12(int iParam0, int iParam1)
 	}
 	if (func_33(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}

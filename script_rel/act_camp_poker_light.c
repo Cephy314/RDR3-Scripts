@@ -920,7 +920,7 @@ void func_28(var uParam0)
 	func_83(uParam0, 0f);
 }
 
-bool func_29(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_29(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -933,7 +933,7 @@ bool func_29(var uParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_84(uParam0, &Var0);
+	return func_84(iParam0, &Var0);
 }
 
 void func_30(int iParam0, int iParam1)
@@ -1320,7 +1320,7 @@ int func_48(int iParam0, int iParam1)
 	}
 	if (func_116(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -1966,9 +1966,9 @@ void func_83(var uParam0, float fParam1)
 	uParam0->f_2 = 0f;
 }
 
-var func_84(var uParam0, var uParam1)
+bool func_84(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(uParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 void func_85(int iParam0, vector3 vParam1, vector3 vParam4, vector3 vParam7)
@@ -3564,7 +3564,7 @@ void func_162()
 {
 	if (Global_1899528->f_202 != 0)
 	{
-		if (Global_1899528->f_202 == _NAMESPACE71::_0xC17F69E1418CD11F(1))
+		if (Global_1899528->f_202 == UIFEED::_0xC17F69E1418CD11F(1))
 		{
 			func_209(1);
 		}
@@ -4789,15 +4789,15 @@ int func_208(int iParam0, int iParam1)
 		}
 		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam1, 0))
 		{
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("MINIGAME_POKER_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(iParam1, joaat("MINIGAME_POKER_PLAYER")))
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("MINIGAME_POKER_CAMP_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(iParam1, joaat("MINIGAME_POKER_CAMP_PLAYER")))
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(iParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
 			{
 				return 1;
 			}
@@ -4823,7 +4823,7 @@ int func_208(int iParam0, int iParam1)
 		}
 		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam1, 0))
 		{
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("MINIGAME_DOMINOES_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(iParam1, joaat("MINIGAME_DOMINOES_PLAYER")))
 			{
 				return 1;
 			}
@@ -4855,7 +4855,7 @@ int func_208(int iParam0, int iParam1)
 	{
 		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(iParam1, 0))
 		{
-			if (PED::_0x34D6AC1157C8226C(iParam1, joaat("MINIGAME_BLACKJACK_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(iParam1, joaat("MINIGAME_BLACKJACK_PLAYER")))
 			{
 				return 1;
 			}
@@ -4871,7 +4871,7 @@ int func_208(int iParam0, int iParam1)
 
 void func_209(int iParam0)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
 void func_210(int iParam0)
@@ -6943,7 +6943,7 @@ int func_263(int iParam0)
 	{
 		return 1;
 	}
-	if (PED::_0x9682F850056C9ADE(iParam0) || PED::_0x3AA24CCC0D451379(iParam0))
+	if (PED::_IS_PED_LASSOED(iParam0) || PED::_IS_PED_HOGTIED(iParam0))
 	{
 		return 1;
 	}
@@ -8869,7 +8869,7 @@ float func_322()
 {
 	if (func_333())
 	{
-		if (DLC::_0xA16B4FBA7887D7BA())
+		if (DLC::_GET_SPECIAL_EDITION_CORE_STATS_BONUS_ENABLED())
 		{
 			return 0.2f;
 		}

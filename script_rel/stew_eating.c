@@ -122,7 +122,7 @@ void __EntryFunction__()
 				}
 				else if (TASK::IS_PED_ACTIVE_IN_SCENARIO(Global_35, 1))
 				{
-					iVar183 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(Global_35);
+					iVar183 = TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(Global_35);
 					if (iVar183 != joaat("PROP_PLAYER_DYNAMIC_SEAT_CHAIR_TABLE"))
 					{
 						if (iVar183 == joaat("PROP_PLAYER_SEAT_CHAIR_DYNAMIC"))
@@ -1180,7 +1180,7 @@ int func_46(int iParam0)
 	return func_75(((*Global_1347702)[58 /*49*/])->f_15, 1);
 }
 
-var func_47(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_47(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -1193,7 +1193,7 @@ var func_47(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_76(bParam0, &Var0);
+	return func_76(iParam0, &Var0);
 }
 
 void func_48(int iParam0, bool bParam1)
@@ -1656,9 +1656,9 @@ int func_75(int iParam0, bool bParam1)
 	return 0;
 }
 
-var func_76(bool bParam0, var uParam1)
+bool func_76(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 void func_77(int iParam0, int iParam1, int iParam2)
@@ -2810,7 +2810,7 @@ float func_134()
 {
 	if (func_142())
 	{
-		if (DLC::_0xA16B4FBA7887D7BA())
+		if (DLC::_GET_SPECIAL_EDITION_CORE_STATS_BONUS_ENABLED())
 		{
 			return 0.2f;
 		}

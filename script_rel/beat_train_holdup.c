@@ -37,7 +37,7 @@
 	int iLocal_1109 = 0;
 	bool bLocal_1110 = false;
 	bool bLocal_1111 = false;
-	int iLocal_1112 = 0;
+	bool bLocal_1112 = false;
 	vector3 vLocal_1113 = { 0f, 0f, 0f };
 	vector3 vLocal_1116 = { 0f, 0f, 0f };
 	vector3 vLocal_1119 = { 0f, 0f, 0f };
@@ -426,8 +426,8 @@ void __EntryFunction__()
 													TASK::TASK_USE_NEAREST_SCENARIO_TO_COORD_WARP(&(uLocal_1248[iVar2]), ENTITY::GET_ENTITY_COORDS(&(uLocal_1248[iVar2]), true, false), 2f, -1, false, false, true, false);
 													iVar2++;
 												}
-												PED::_0x5C3C55EAAD19915F(&(uLocal_1248[3]), "Default_Panic");
-												PED::_0x5C3C55EAAD19915F(&(uLocal_1248[4]), "Default_Panic");
+												PED::_REQUEST_PED_EMOTIONAL_PRESET(&(uLocal_1248[3]), "Default_Panic");
+												PED::_REQUEST_PED_EMOTIONAL_PRESET(&(uLocal_1248[4]), "Default_Panic");
 												iLocal_1302 = 4;
 											}
 										}
@@ -834,11 +834,11 @@ void func_25()
 {
 	int iVar0;
 
-	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_1422))
+	if (GRAPHICS::_IS_TRACKED_POINT_VALID(iLocal_1422))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(iLocal_1422);
 	}
-	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(iLocal_1423))
+	if (GRAPHICS::_IS_TRACKED_POINT_VALID(iLocal_1423))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(iLocal_1423);
 	}
@@ -1145,23 +1145,23 @@ void func_33()
 	switch (iLocal_1109)
 	{
 		case 0:
-			iLocal_1112 = 1;
+			bLocal_1112 = true;
 			break;
 		case 1:
 			if (Local_369.f_51.f_4 == 0)
 			{
 				if (bLocal_1111)
 				{
-					iLocal_1112 = 0;
+					bLocal_1112 = false;
 				}
 				else
 				{
-					iLocal_1112 = 1;
+					bLocal_1112 = true;
 				}
 			}
 			else
 			{
-				iLocal_1112 = 0;
+				bLocal_1112 = false;
 			}
 			break;
 	}
@@ -1725,9 +1725,9 @@ void func_44()
 	}
 	if (iLocal_1109 == 0)
 	{
-		if (VEHICLE::_0xF05DFAF1ADFEF2CD(-1464742217, vLocal_1137, iLocal_1112, 1))
+		if (VEHICLE::_0xF05DFAF1ADFEF2CD(-1464742217, vLocal_1137, bLocal_1112, 1))
 		{
-			iLocal_1285[0] = VEHICLE::_0xC239DBD9A57D2A71(-1464742217, vLocal_1137, iLocal_1112, 0, 1, 0);
+			iLocal_1285[0] = VEHICLE::_CREATE_MISSION_TRAIN(-1464742217, vLocal_1137, bLocal_1112, false, true, false);
 			bLocal_1410 = true;
 		}
 		else
@@ -1735,9 +1735,9 @@ void func_44()
 			func_25();
 		}
 	}
-	else if (VEHICLE::_0xF05DFAF1ADFEF2CD(-577630801, vLocal_1137, iLocal_1112, 1))
+	else if (VEHICLE::_0xF05DFAF1ADFEF2CD(-577630801, vLocal_1137, bLocal_1112, 1))
 	{
-		iLocal_1285[0] = VEHICLE::_0xC239DBD9A57D2A71(-577630801, vLocal_1137, iLocal_1112, 0, 1, 0);
+		iLocal_1285[0] = VEHICLE::_CREATE_MISSION_TRAIN(-577630801, vLocal_1137, bLocal_1112, false, true, false);
 		bLocal_1410 = true;
 	}
 	else
@@ -2121,7 +2121,7 @@ int func_50(var uParam0, var uParam1, int iParam2, bool bParam3, bool bParam4, b
 						iVar2 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1);
 						if (ENTITY::DOES_ENTITY_EXIST(iVar2))
 						{
-							if (PED::_0x3AA24CCC0D451379(iVar2) || ((bParam5 || PED::IS_PED_HUMAN(iVar2)) && ENTITY::IS_ENTITY_DEAD(iVar2)))
+							if (PED::_IS_PED_HOGTIED(iVar2) || ((bParam5 || PED::IS_PED_HUMAN(iVar2)) && ENTITY::IS_ENTITY_DEAD(iVar2)))
 							{
 								bVar0 = true;
 							}
@@ -3726,7 +3726,7 @@ var func_64(char* sParam0, int iParam1, bool bParam2, bool bParam3, char* sParam
 
 	if (bParam2)
 	{
-		_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 1);
+		UIFEED::_0xDD1232B332CBB9E7(3, 1, 1);
 	}
 	if (Global_1572887->f_12 != -1)
 	{
@@ -4392,9 +4392,9 @@ void func_83(var uParam0)
 	}
 }
 
-bool func_84(int iParam0, int iParam1, int iParam2, int iParam3)
+int func_84(int iParam0, int iParam1, int iParam2, int iParam3)
 {
-	return STREAMING::_0x19A6BE7D9C6884D3(iParam0, iParam1, iParam2, iParam3);
+	return STREAMING::_REQUEST_SCENARIO_TYPE(iParam0, iParam1, iParam2, iParam3);
 }
 
 int func_85(int iParam0)
@@ -4613,7 +4613,7 @@ int func_90(int iParam0, var uParam1, bool bParam2, var uParam3, struct<7> Param
 	{
 		if (bParam2)
 		{
-			_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+			UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 			func_64("BEAT_FAIL", 4000, 0, 1, 0, 0, -1, -1, 0);
 		}
 		*uParam11 = 1;
@@ -5101,7 +5101,7 @@ int func_118(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				return iParam1;
 			}
 			iVar0 = iParam1;
-			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_0x959383DCD42040DA(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
+			if ((WEAPON::_0x705BE297EEBDB95D(iVar0) || WEAPON::_IS_WEAPON_MELEE(iVar0)) && PED::GET_PED_RELATIONSHIP_GROUP_HASH(iParam0) == joaat("REL_GANG_DUTCHS"))
 			{
 				StringCopy(&cVar5, WEAPON::_GET_WEAPON_NAME(iVar0), 128);
 				iVar2 = WEAPON::_0xD42514C182121C23(ENTITY::GET_ENTITY_MODEL(iParam0));
@@ -5198,7 +5198,7 @@ int func_118(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 				iParam9 = 0;
 			}
 		}
-		else if ((!WEAPON::_0x959383DCD42040DA(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_0x79407D33328286C6(iVar0))
+		else if ((!WEAPON::_IS_WEAPON_MELEE(iVar0) && iVar0 != joaat("WEAPON_UNARMED")) && !WEAPON::_IS_WEAPON_LANTERN(iVar0))
 		{
 			iVar23 = WEAPON::GET_PED_AMMO_BY_TYPE(iParam0, WEAPON::GET_PED_AMMO_TYPE_FROM_WEAPON(iParam0, iVar0));
 			iVar24 = WEAPON::_GET_WEAPON_CLIP_SIZE(iVar0) * 3;
@@ -6566,7 +6566,7 @@ int func_157(var uParam0, int iParam1, int iParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_POTENTIAL_BLAST"), vVar0, iParam2->f_22))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), iParam2->f_26, &vVar4, 0, 0);
+					MISC::GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), iParam2->f_26, &vVar4, 0, 0);
 					if (func_409(iParam1, vVar0, vVar4))
 					{
 						func_398(iParam2, 1);
@@ -6590,7 +6590,7 @@ int func_157(var uParam0, int iParam1, int iParam2, bool bParam3)
 			case 2:
 				if (EVENT::IS_SHOCKING_EVENT_IN_SPHERE(joaat("EVENT_SHOCKING_POTENTIAL_BLAST"), vVar0, iParam2->f_22))
 				{
-					MISC::_GET_PROJECTILE_NEAR_PED_COORDS(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), iParam2->f_26, &vVar7, 0, 0);
+					MISC::GET_COORDS_OF_PROJECTILE_TYPE_WITHIN_DISTANCE(iParam1, joaat("WEAPON_THROWN_DYNAMITE"), iParam2->f_26, &vVar7, 0, 0);
 					if (func_409(iParam1, vVar0, vVar7))
 					{
 						func_398(iParam2, 1);
@@ -9359,7 +9359,7 @@ var func_253(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_OBJECTIVE(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -11695,7 +11695,7 @@ int func_286(var uParam0, var uParam1, var uParam2, bool bParam3, int iParam4, i
 	{
 		if (bParam3)
 		{
-			_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+			UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 			func_64("BEAT_FAIL", 5000, 0, 1, 0, 0, -1, -1, 0);
 		}
 		*uParam2 = 1;
@@ -12153,7 +12153,7 @@ bool func_316(int iParam0)
 		return false;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	return PED::_0x772A1969F649E902(iVar0);
+	return PED::_IS_THIS_MODEL_A_HORSE(iVar0);
 }
 
 void func_317(int iParam0, char* sParam1, bool bParam2)
@@ -12253,7 +12253,7 @@ int func_330(int iParam0, int iParam1)
 	}
 	if (func_325(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -12535,7 +12535,7 @@ int func_334(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 	{
 		return 0;
 	}
-	if (WEAPON::_0x959383DCD42040DA(iParam0) && iParam1 > 0)
+	if (WEAPON::_IS_WEAPON_MELEE(iParam0) && iParam1 > 0)
 	{
 		iParam1 = 0;
 	}
@@ -12566,7 +12566,7 @@ int func_334(int iParam0, int iParam1, bool bParam2, bool bParam3, int iParam4, 
 					{
 						return 0;
 					}
-					func_527(WEAPON::_0x5C2EA6C44F515F34(iParam0), iParam1, iParam6);
+					func_527(WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0), iParam1, iParam6);
 					func_528(iParam0, iParam1);
 					return 1;
 				}
@@ -12659,7 +12659,7 @@ void func_335(int iParam0, int iParam1, float fParam2)
 
 bool func_336(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(WEAPON::_0x5C2EA6C44F515F34(iParam0));
+	return WEAPON::_IS_AMMO_VALID(WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0));
 }
 
 int func_337(int iParam0, var uParam1)
@@ -12818,7 +12818,7 @@ int func_344()
 {
 	if (func_332(Global_1935630->f_44))
 	{
-		if (WEAPON::_0x6AD66548840472E5(Global_1935630->f_44))
+		if (WEAPON::_IS_WEAPON_SNIPER(Global_1935630->f_44))
 		{
 			if (CAM::_0xA24C1D341C6E0D53(1, 1, 1))
 			{
@@ -13268,7 +13268,7 @@ int func_355(int iParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(iParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(iParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -14413,7 +14413,7 @@ int func_400(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4,
 	}
 	if (PLAYER::IS_PLAYER_FREE_AIMING(iVar1))
 	{
-		if (WEAPON::_0x6AD66548840472E5(func_581(iVar0, 0)))
+		if (WEAPON::_IS_WEAPON_SNIPER(func_581(iVar0, 0)))
 		{
 			if (func_582(iParam0, 0.4f, 0.6f, 0.3f, 0.7f))
 			{
@@ -14492,7 +14492,7 @@ int func_404(int iParam0, bool bParam1, bool bParam2, bool bParam3, int iParam4)
 	}
 	if (PLAYER::IS_PLAYER_FREE_AIMING(iVar1))
 	{
-		if (WEAPON::_0x6AD66548840472E5(func_581(iVar0, 0)))
+		if (WEAPON::_IS_WEAPON_SNIPER(func_581(iVar0, 0)))
 		{
 			if (func_583(ENTITY::GET_ENTITY_COORDS(iParam0, true, false), 0.4f, 0.6f, 0.3f, 0.7f))
 			{
@@ -14656,7 +14656,7 @@ int func_410(int iParam0)
 		}
 		if (WEAPON::IS_WEAPON_VALID(Global_1935630->f_46))
 		{
-			if (WEAPON::_0x959383DCD42040DA(Global_1935630->f_46) || WEAPON::_0xC4DEC3CA8C365A5D(Global_1935630->f_46))
+			if (WEAPON::_IS_WEAPON_MELEE(Global_1935630->f_46) || WEAPON::_IS_WEAPON_BOW(Global_1935630->f_46))
 			{
 				return 1;
 			}
@@ -14678,7 +14678,7 @@ int func_411(int iParam0)
 		return 0;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(iParam0);
-	if (PED::_0x772A1969F649E902(iVar0))
+	if (PED::_IS_THIS_MODEL_A_HORSE(iVar0))
 	{
 		return 1;
 	}
@@ -15147,7 +15147,7 @@ int func_429(int iParam0, int iParam1)
 		}
 		else if (WEAPON::IS_WEAPON_VALID(Global_1935630->f_44))
 		{
-			if (WEAPON::_0x79407D33328286C6(Global_1935630->f_44) || WEAPON::_0x506F1DE1BFC75304(Global_1935630->f_44))
+			if (WEAPON::_IS_WEAPON_LANTERN(Global_1935630->f_44) || WEAPON::_IS_WEAPON_TORCH(Global_1935630->f_44))
 			{
 				if (iParam1->f_12 <= 5f)
 				{
@@ -17766,7 +17766,7 @@ void func_497(var uParam0, bool bParam1)
 		MAP::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_6, "BLIP_DEBUG");
 		if (bParam1)
 		{
-			_NAMESPACE71::_0xDD1232B332CBB9E7(3, 1, 0);
+			UIFEED::_0xDD1232B332CBB9E7(3, 1, 0);
 			func_64("BEAT_GLB", 5500, 0, 1, 0, 0, -1, -1, 0);
 		}
 		PED::_0x9851DE7AEC10B4E1(*uParam0, 100f, 1, 0);
@@ -18230,7 +18230,7 @@ void func_519(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 		}
 		PED::SET_PED_CONFIG_FLAG(iParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iParam0)))
 	{
 		if (!bParam5)
 		{
@@ -20125,7 +20125,7 @@ int func_557(bool bParam0, int iParam1, int iParam2)
 	{
 		if (!bParam0 || PED::IS_PED_HUMAN(Global_1935630->f_33))
 		{
-			if (PED::_0x3AA24CCC0D451379(Global_1935630->f_33) || ENTITY::IS_ENTITY_DEAD(Global_1935630->f_33))
+			if (PED::_IS_PED_HOGTIED(Global_1935630->f_33) || ENTITY::IS_ENTITY_DEAD(Global_1935630->f_33))
 			{
 				*iParam2 = Global_1935630->f_33;
 				iVar0 = 1;
@@ -20348,7 +20348,7 @@ void func_572(var uParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 		}
 	}
 
-var func_573(int iParam0, var uParam1)
+bool func_573(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
@@ -20548,7 +20548,7 @@ int func_579(int iParam0)
 				{
 					if (ENTITY::IS_ENTITY_A_PED(iVar1))
 					{
-						if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iVar1)))
+						if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iVar1)))
 						{
 							iVar0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(iVar1);
 							return iVar0;
@@ -20575,7 +20575,7 @@ int func_579(int iParam0)
 		{
 			if (ENTITY::DOES_ENTITY_EXIST(iVar0))
 			{
-				if (!PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(iVar0)))
+				if (!PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(iVar0)))
 				{
 					iVar0 = 0;
 				}
@@ -20668,7 +20668,7 @@ int func_585(int iParam0, int iParam1, bool bParam2, bool bParam3)
 		{
 			if (WEAPON::IS_WEAPON_VALID(Global_1935630->f_44))
 			{
-				if (WEAPON::_0x959383DCD42040DA(Global_1935630->f_44) || Global_1935630->f_44 == joaat("WEAPON_MELEE_KNIFE"))
+				if (WEAPON::_IS_WEAPON_MELEE(Global_1935630->f_44) || Global_1935630->f_44 == joaat("WEAPON_MELEE_KNIFE"))
 				{
 					if (WEAPON::_0x9E2D5D6BC97A5F1E(iParam0, Global_1935630->f_44, iParam1))
 					{
@@ -21850,7 +21850,7 @@ var func_630(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_730(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -22428,7 +22428,7 @@ int func_655(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -22571,7 +22571,7 @@ int func_663(int iParam0)
 
 bool func_664(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 
 int func_665(bool bParam0)
@@ -22958,7 +22958,7 @@ int func_686(int iParam0)
 
 bool func_687(int iParam0, int iParam1)
 {
-	return PED::_0x34D6AC1157C8226C(iParam0, iParam1);
+	return PED::_IS_PED_USING_SCENARIO_HASH(iParam0, iParam1);
 }
 
 void func_688(int iParam0, int iParam1, vector3 vParam2, float fParam5, int iParam6, bool bParam7, bool bParam8, char* sParam9, float fParam10)
@@ -25512,14 +25512,14 @@ int func_766(int iParam0, int* iParam1)
 
 	if (iParam1->f_11 & 1 != 0)
 	{
-		if (PED::_0x9682F850056C9ADE(iParam0))
+		if (PED::_IS_PED_LASSOED(iParam0))
 		{
 			return 1;
 		}
 	}
 	if (iParam1->f_11 & 2 != 0)
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 1;
 		}

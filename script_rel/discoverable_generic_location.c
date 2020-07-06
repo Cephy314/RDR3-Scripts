@@ -163,7 +163,7 @@ int func_3(int iParam0)
 
 	if (Local_71 == 0)
 	{
-		iVar0 = TASK::_0xA92450B5AE687AAF(iParam0->f_1);
+		iVar0 = TASK::_GET_SCENARIO_POINT_TYPE(iParam0->f_1);
 		Local_71 = func_10(iVar0);
 		return 0;
 	}
@@ -1337,7 +1337,7 @@ void func_9(var uParam0)
 {
 	if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_15))
 	{
-		TASK::_0x81948DFE4F5A0283(iLocal_15);
+		TASK::_DELETE_SCENARIO_POINT(iLocal_15);
 	}
 	if (*uParam0 == 2000209669)
 	{
@@ -4671,7 +4671,7 @@ void func_66(int iParam0)
 	{
 		if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_15))
 		{
-			TASK::_0x81948DFE4F5A0283(iLocal_15);
+			TASK::_DELETE_SCENARIO_POINT(iLocal_15);
 		}
 	}
 	else if (*iParam0 == -1761578407 && iParam0->f_4 == 7)
@@ -6996,7 +6996,7 @@ int func_89(var uParam0)
 				}
 				else if (ENTITY::IS_ENTITY_DEAD(&(uLocal_28[0])) || ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(&(uLocal_28[0]), Global_35, 1, 1))
 				{
-					if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_15) && !TASK::_0x0CC36D4156006509(iLocal_15))
+					if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_15) && !TASK::_IS_SCENARIO_POINT_ACTIVE(iLocal_15))
 					{
 						TASK::_SET_SCENARIO_POINT_ACTIVE(iLocal_15, true);
 					}
@@ -14444,7 +14444,7 @@ var func_208(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_3 = 0;
 	Var13.f_4 = iParam2;
 	Var13.f_5 = iParam3;
-	uVar21 = _NAMESPACE71::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
+	uVar21 = UIFEED::_SHOW_ADVANCED_NOTIFICATION(&Var0, &Var13, iParam12, iParam13);
 	return uVar21;
 }
 
@@ -14779,15 +14779,15 @@ bool func_227(int iParam0, int iParam1)
 
 int func_228()
 {
-	if (PED::_0x3AA24CCC0D451379(Global_35))
+	if (PED::_IS_PED_HOGTIED(Global_35))
 	{
 		return 0;
 	}
-	if (PED::_0x42429C674B61238B(Global_35))
+	if (PED::_IS_PED_HOGTYING(Global_35))
 	{
 		return 0;
 	}
-	if (PED::_0x9682F850056C9ADE(Global_35))
+	if (PED::_IS_PED_LASSOED(Global_35))
 	{
 		return 0;
 	}
@@ -15531,7 +15531,7 @@ var func_252(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_311(sParam0, sParam1, iParam2);
 	return uVar20;
 }
@@ -16368,7 +16368,7 @@ bool func_263(bool bParam0)
 		return false;
 	}
 	iVar0 = ENTITY::GET_ENTITY_MODEL(bParam0);
-	return PED::_0x772A1969F649E902(iVar0);
+	return PED::_IS_THIS_MODEL_A_HORSE(iVar0);
 }
 
 int func_264(bool bParam0)
@@ -16381,7 +16381,7 @@ int func_264(bool bParam0)
 	{
 		return 0;
 	}
-	if (PED::_0x34D6AC1157C8226C(bParam0, joaat("PROP_HITCHINGPOST")))
+	if (PED::_IS_PED_USING_SCENARIO_HASH(bParam0, joaat("PROP_HITCHINGPOST")))
 	{
 		return 1;
 	}
@@ -16856,7 +16856,7 @@ int func_286(bool bParam0)
 	{
 		return 0;
 	}
-	iVar0 = TASK::_GET_SCENARIO_POINT_PED_IS_ACTIVE(bParam0);
+	iVar0 = TASK::_GET_SCENARIO_POINT_TYPE_PED_IS_USING(bParam0);
 	if (iVar0 == 0)
 	{
 		return 0;
@@ -16925,7 +16925,7 @@ var func_289(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, 
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -17025,7 +17025,7 @@ int func_297(int iParam0, int iParam1)
 			else if (!func_370(Var4.f_4))
 			{
 			}
-			else if (WEAPON::_0x5C2EA6C44F515F34(Var4.f_4) == iVar0)
+			else if (WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(Var4.f_4) == iVar0)
 			{
 				func_371(iVar1);
 				return 1;
@@ -17391,7 +17391,7 @@ void func_314(bool bParam0, int iParam1, int iParam2, bool bParam3, bool bParam4
 		}
 		PED::SET_PED_CONFIG_FLAG(bParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(bParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(bParam0)))
 	{
 		if (!bParam5)
 		{
@@ -18388,9 +18388,9 @@ int func_367(int iParam0, int iParam1)
 	iVar0 = func_296(iParam0);
 	if (iVar0 == joaat("WEAPON") && WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return WEAPON::_0x5C2EA6C44F515F34(iParam0);
+		return WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iParam0);
 	}
-	else if (iVar0 == joaat("AMMO") && WEAPON::_0x1F7977C9101F807F(iParam0))
+	else if (iVar0 == joaat("AMMO") && WEAPON::_IS_AMMO_VALID(iParam0))
 	{
 		return iParam0;
 	}

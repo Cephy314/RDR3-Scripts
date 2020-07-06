@@ -362,7 +362,7 @@ void func_8(int iParam0)
 	}
 	PED::_0x2208438012482A1A(iParam0, false, false);
 	PED::_0xC494C76A34266E82(iParam0, 0);
-	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
+	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1f, -1f, 180f, false, false, -1, -1) > 0)
 	{
 	}
 	func_26(iVar0, 1);
@@ -421,7 +421,7 @@ void func_12(int iParam0, int iParam1)
 	}
 	PED::_0x2208438012482A1A(iParam0, false, false);
 	PED::_0xC494C76A34266E82(iParam0, 0);
-	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
+	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1f, -1f, 180f, false, false, -1, -1) > 0)
 	{
 	}
 	func_26(iParam1, 1);
@@ -436,7 +436,7 @@ void func_13(int iParam0, int iParam1)
 	}
 	PED::_0x2208438012482A1A(iParam0, false, false);
 	PED::_0xC494C76A34266E82(iParam0, 0);
-	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1) > 0)
+	if (EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_EQUIPPED_MASK"), iParam0, -1f, -1f, -1f, -1f, -1f, 180f, false, false, -1, -1) > 0)
 	{
 	}
 	func_26(iParam1, 1);
@@ -1429,7 +1429,7 @@ int func_53()
 		{
 			return 1;
 		}
-		else if ((((WEAPON::IS_WEAPON_VALID(iVar0) && WEAPON::_0x0556E9D2ECF39D01(iVar0)) && !func_69(iVar0)) && !PED::_IS_PED_GETTING_INTO_A_MOUNT_SEAT(Global_35, true)) && !(PED::IS_PED_IN_ANY_VEHICLE(Global_35, false) && !CAM::_0xA24C1D341C6E0D53(1, 0, 0)))
+		else if ((((WEAPON::IS_WEAPON_VALID(iVar0) && WEAPON::_IS_WEAPON_TWO_HANDED(iVar0)) && !func_69(iVar0)) && !PED::_IS_PED_GETTING_INTO_A_MOUNT_SEAT(Global_35, true)) && !(PED::IS_PED_IN_ANY_VEHICLE(Global_35, false) && !CAM::_0xA24C1D341C6E0D53(1, 0, 0)))
 		{
 			return 3;
 		}
@@ -1519,7 +1519,7 @@ int func_58(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	if (WEAPON::_0xD955FEE4B87AFA07(iParam0))
+	if (WEAPON::_IS_WEAPON_ONE_HANDED(iParam0))
 	{
 		if (bParam1)
 		{
@@ -1648,7 +1648,7 @@ void func_68(var uParam0, var uParam1, var uParam2)
 
 bool func_69(int iParam0)
 {
-	return WEAPON::_0xC4DEC3CA8C365A5D(iParam0);
+	return WEAPON::_IS_WEAPON_BOW(iParam0);
 }
 
 struct<4> func_70()
@@ -1759,6 +1759,6 @@ int func_76()
 
 bool func_77(int iParam0)
 {
-	return WEAPON::_0x1F7977C9101F807F(iParam0);
+	return WEAPON::_IS_AMMO_VALID(iParam0);
 }
 

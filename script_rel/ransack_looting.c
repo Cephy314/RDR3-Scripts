@@ -452,7 +452,7 @@ int func_15(int iParam0)
 	{
 		return 1;
 	}
-	if (TASK::_0x8569C38D2FB80650(iParam0->f_6, 25))
+	if (TASK::_IS_SCENARIO_POINT_FLAG_SET(iParam0->f_6, 25))
 	{
 		return 0;
 	}
@@ -1373,7 +1373,7 @@ int func_44(int iParam0)
 
 void func_45(int iParam0, int iParam1, int iParam2)
 {
-	bool bVar0;
+	int iVar0;
 	var uVar1;
 	vector3 vVar2;
 	vector3 vVar5;
@@ -1384,11 +1384,11 @@ void func_45(int iParam0, int iParam1, int iParam2)
 
 	while (!func_16(iParam0->f_5) && iVar8 < iParam2)
 	{
-		bVar0 = func_66(iParam0->f_5, &uVar9, &uVar1, &uVar10, &uVar11, &vVar2, &vVar5);
-		if (func_67(bVar0, 0))
+		iVar0 = func_66(iParam0->f_5, &uVar9, &uVar1, &uVar10, &uVar11, &vVar2, &vVar5);
+		if (func_67(iVar0, 0))
 		{
-			func_68(iParam0, uVar1, vVar2, vVar5, bVar0, uVar9, uVar10, uVar11);
-			iParam1->f_1[iVar8] = bVar0;
+			func_68(iParam0, uVar1, vVar2, vVar5, iVar0, uVar9, uVar10, uVar11);
+			iParam1->f_1[iVar8] = iVar0;
 			iVar8++;
 		}
 	}
@@ -1446,9 +1446,9 @@ struct<2> func_51(int iParam0)
 	return Var0;
 }
 
-void func_52(var uParam0, int iParam1, bool bParam2)
+void func_52(var uParam0, int iParam1, int iParam2)
 {
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
+	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
 }
 
 int func_53(int iParam0)
@@ -1742,7 +1742,7 @@ bool func_65(int iParam0)
 int func_66(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6)
 {
 	int iVar0;
-	bool bVar1;
+	int iVar1;
 	float fVar2;
 	float fVar3;
 	float fVar4;
@@ -1754,7 +1754,7 @@ int func_66(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 	int iVar13;
 
 	iVar0 = 0;
-	bVar1 = false;
+	iVar1 = 0;
 	*uParam1 = 0;
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -1791,10 +1791,10 @@ int func_66(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 		StringConCat(&Var10, "_amt", 16);
 		if (DECORATOR::DECOR_EXIST_ON(iParam0, &Var8))
 		{
-			bVar1 = DECORATOR::DECOR_GET_INT(iParam0, &Var8);
-			if (bVar1 != 0)
+			iVar1 = DECORATOR::DECOR_GET_INT(iParam0, &Var8);
+			if (iVar1 != 0)
 			{
-				iVar0 = WEAPON::_0x5C2EA6C44F515F34(bVar1);
+				iVar0 = WEAPON::_GET_AMMO_TYPE_FOR_WEAPON(iVar1);
 				DECORATOR::DECOR_REMOVE(iParam0, &Var8);
 				if (DECORATOR::DECOR_EXIST_ON(iParam0, &Var10))
 				{
@@ -1809,12 +1809,12 @@ int func_66(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 	}
 	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_weapon"))
 	{
-		bVar1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_weapon");
-		if (bVar1 != 0)
+		iVar1 = DECORATOR::DECOR_GET_INT(iParam0, "loot_weapon");
+		if (iVar1 != 0)
 		{
 			DECORATOR::DECOR_REMOVE(iParam0, "loot_weapon");
 			*uParam2 = 3;
-			return func_79(bVar1);
+			return func_79(iVar1);
 		}
 	}
 	if (DECORATOR::DECOR_EXIST_ON(iParam0, "loot_item_type1"))
@@ -1894,16 +1894,16 @@ int func_66(int iParam0, var uParam1, var uParam2, var uParam3, var uParam4, var
 	return 0;
 }
 
-bool func_67(bool bParam0, int iParam1)
+bool func_67(int iParam0, int iParam1)
 {
-	if (bParam0 == 0)
+	if (iParam0 == 0)
 	{
 		return false;
 	}
-	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(bParam0, iParam1);
+	return ITEMDATABASE::_ITEM_DATABASE_IS_KEY_VALID(iParam0, iParam1);
 }
 
-void func_68(int iParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bParam8, var uParam9, var uParam10, var uParam11)
+void func_68(int iParam0, var uParam1, vector3 vParam2, vector3 vParam5, int iParam8, var uParam9, var uParam10, var uParam11)
 {
 	int iVar0;
 
@@ -1913,7 +1913,7 @@ void func_68(int iParam0, var uParam1, vector3 vParam2, vector3 vParam5, bool bP
 		if (&iParam0->f_103[iVar0 /*5*/] == -1)
 		{
 			iParam0->f_103[iVar0 /*5*/] = uParam1;
-			(iParam0->f_103[iVar0 /*5*/])->f_3 = bParam8;
+			(iParam0->f_103[iVar0 /*5*/])->f_3 = iParam8;
 			(iParam0->f_103[iVar0 /*5*/])->f_1 = uParam9;
 			(iParam0->f_103[iVar0 /*5*/])->f_2 = uParam10;
 			(iParam0->f_103[iVar0 /*5*/])->f_4 = uParam11;
@@ -2063,11 +2063,11 @@ int func_78(float fParam0)
 	return iVar0;
 }
 
-int func_79(bool bParam0)
+int func_79(int iParam0)
 {
-	if (WEAPON::IS_WEAPON_VALID(bParam0))
+	if (WEAPON::IS_WEAPON_VALID(iParam0))
 	{
-		return bParam0;
+		return iParam0;
 	}
 	return 0;
 }

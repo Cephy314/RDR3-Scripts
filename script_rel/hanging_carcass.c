@@ -49,7 +49,7 @@ void func_2(var uParam0, bool bParam1)
 {
 	if (TASK::_DOES_SCENARIO_POINT_EXIST(uParam0->f_49))
 	{
-		TASK::_0x81948DFE4F5A0283(uParam0->f_49);
+		TASK::_DELETE_SCENARIO_POINT(uParam0->f_49);
 	}
 	if (bParam1)
 	{
@@ -1059,7 +1059,7 @@ void func_38(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4
 		}
 		PED::SET_PED_CONFIG_FLAG(bParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(bParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(bParam0)))
 	{
 		if (!bParam5)
 		{
@@ -2044,9 +2044,9 @@ struct<2> func_66(int iParam0)
 	return Var0;
 }
 
-void func_67(var uParam0, int iParam1, bool bParam2)
+void func_67(var uParam0, int iParam1, int iParam2)
 {
-	STATS::_0x6A0184E904CDF25E(&uParam0, bParam2);
+	STATS::_0x6A0184E904CDF25E(&uParam0, iParam2);
 }
 
 char* func_68(int iParam0)
@@ -2124,12 +2124,12 @@ var func_69(char* sParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	Var13.f_4 = iParam3;
 	Var13.f_5 = iParam4;
 	Var13.f_6 = 0;
-	uVar20 = _NAMESPACE71::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
+	uVar20 = UIFEED::_0xB249EBCB30DD88E0(&Var0, &Var13, iParam8);
 	func_88(sParam0, sParam1, iParam2);
 	return uVar20;
 }
 
-int func_70(int iParam0, bool bParam1)
+int func_70(int iParam0, int iParam1)
 {
 	int iVar0;
 	int iVar1;
@@ -2150,7 +2150,7 @@ int func_70(int iParam0, bool bParam1)
 	{
 		return 0;
 	}
-	STATS::CHAL_ADD_GOAL_PROGRESS_INT(iVar0, iVar1, bParam1);
+	STATS::CHAL_ADD_GOAL_PROGRESS_INT(iVar0, iVar1, iParam1);
 	return 1;
 }
 

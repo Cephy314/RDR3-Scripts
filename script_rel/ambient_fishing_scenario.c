@@ -101,7 +101,7 @@ void func_6()
 		case 0:
 			if (TASK::_DOES_SCENARIO_POINT_EXIST(iLocal_3))
 			{
-				iLocal_23 = TASK::_0x5BA659955369B0E2(iLocal_3);
+				iLocal_23 = TASK::_GET_PED_USING_SCENARIO_POINT(iLocal_3);
 				if (!ENTITY::IS_ENTITY_DEAD(iLocal_23) && TASK::IS_PED_ACTIVE_IN_SCENARIO(iLocal_23, 1))
 				{
 					iLocal_24 = PED::_0x4D0D2E3D8BC000EB(iLocal_23, "p_fishingPole02x_PH_R_HAND", 0);
@@ -311,7 +311,7 @@ bool func_20(int iParam0)
 		Local_5.f_5 = OBJECT::CREATE_OBJECT(Local_5.f_1, vVar4, false, true, false, false, true);
 		PHYSICS::SET_DAMPING(Local_5.f_5, 0, Local_5.f_15);
 		ENTITY::_0x978AA2323ED32209(Local_5.f_5, 0f);
-		ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_5, 1);
+		ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_5, true);
 	}
 	if (!ENTITY::DOES_ENTITY_EXIST(Local_5.f_6))
 	{
@@ -320,7 +320,7 @@ bool func_20(int iParam0)
 		Local_5.f_6 = OBJECT::CREATE_OBJECT(Local_5.f_2, vVar4, false, true, false, false, true);
 		PHYSICS::SET_DAMPING(Local_5.f_6, 0, Local_5.f_15);
 		ENTITY::_0x978AA2323ED32209(Local_5.f_6, 0f);
-		ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_6, 1);
+		ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_6, true);
 	}
 	if (ENTITY::DOES_ENTITY_EXIST(Local_5.f_5) && ENTITY::DOES_ENTITY_EXIST(Local_5.f_6))
 	{
@@ -454,8 +454,8 @@ void func_25(int iParam0)
 	PHYSICS::SET_DAMPING(Local_5.f_6, 0, Local_5.f_16);
 	ENTITY::APPLY_FORCE_TO_ENTITY(Local_5.f_5, 3, vVar15, 0f, 0f, 0f, 0, false, true, true, false, true);
 	ENTITY::APPLY_FORCE_TO_ENTITY(Local_5.f_6, 3, vVar15, 0f, 0f, 0f, 0, false, true, true, false, true);
-	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_5, 1);
-	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_6, 1);
+	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_5, true);
+	ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_5.f_6, true);
 }
 
 Vector3 func_26(vector3 vParam0)

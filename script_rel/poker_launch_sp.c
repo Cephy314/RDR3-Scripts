@@ -283,7 +283,7 @@ bool func_5(var uParam0)
 			if (func_40(uParam0) == 1)
 			{
 				uParam0->f_17 = GRAPHICS::CREATE_TRACKED_POINT();
-				if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
+				if (GRAPHICS::_IS_TRACKED_POINT_VALID(uParam0->f_17))
 				{
 					GRAPHICS::SET_TRACKED_POINT_INFO(uParam0->f_17, uParam0->f_3, 1.5f);
 				}
@@ -299,7 +299,7 @@ bool func_5(var uParam0)
 			}
 			else if (uParam0->f_103 > 0)
 			{
-				if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
+				if (GRAPHICS::_IS_TRACKED_POINT_VALID(uParam0->f_17))
 				{
 					GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_17);
 				}
@@ -316,7 +316,7 @@ bool func_5(var uParam0)
 			}
 			else if (uParam0->f_90 > uParam0->f_2152)
 			{
-				if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
+				if (GRAPHICS::_IS_TRACKED_POINT_VALID(uParam0->f_17))
 				{
 					if (GRAPHICS::IS_TRACKED_POINT_VISIBLE(uParam0->f_17))
 					{
@@ -345,7 +345,7 @@ bool func_5(var uParam0)
 				func_41(uParam0, iVar0, 0, iVar0);
 				iVar0++;
 			}
-			if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
+			if (GRAPHICS::_IS_TRACKED_POINT_VALID(uParam0->f_17))
 			{
 				GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_17);
 			}
@@ -443,7 +443,7 @@ void func_8(var uParam0, bool bParam1)
 
 	func_55(uParam0);
 	func_1(uParam0->f_2);
-	if (GRAPHICS::_DOES_TRACKED_POINT_EXIST(uParam0->f_17))
+	if (GRAPHICS::_IS_TRACKED_POINT_VALID(uParam0->f_17))
 	{
 		GRAPHICS::DESTROY_TRACKED_POINT(uParam0->f_17);
 	}
@@ -494,7 +494,7 @@ void func_8(var uParam0, bool bParam1)
 		{
 			if (TASK::_DOES_SCENARIO_POINT_EXIST((uParam0->f_23[iVar0 /*11*/])->f_10))
 			{
-				TASK::_0x81948DFE4F5A0283((uParam0->f_23[iVar0 /*11*/])->f_10);
+				TASK::_DELETE_SCENARIO_POINT((uParam0->f_23[iVar0 /*11*/])->f_10);
 			}
 		}
 		uParam0->f_23[iVar0 /*11*/] = 0;
@@ -1525,8 +1525,8 @@ void func_39(var uParam0, int iParam1)
 		uParam0->f_23[iParam1 /*11*/] = 0;
 		vVar3 = { ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iVar9, vVar0) };
 		fVar7 = (ENTITY::GET_ENTITY_HEADING(iVar9) - fVar6);
-		TASK::_0x2056AB38DF06825C(iVar8, vVar3, 0);
-		TASK::_0xD3A0DA8F91612C6E(iVar8, fVar7, 0);
+		TASK::_SET_SCENARIO_POINT_COORDS(iVar8, vVar3, false);
+		TASK::_SET_SCENARIO_POINT_HEADING(iVar8, fVar7, false);
 		return;
 	}
 	if (uParam0->f_1 == 2)
@@ -1538,8 +1538,8 @@ void func_39(var uParam0, int iParam1)
 			uParam0->f_23[iParam1 /*11*/] = 0;
 			vVar3 = { ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iVar9, vVar0) };
 			fVar7 = (ENTITY::GET_ENTITY_HEADING(iVar9) - fVar6);
-			TASK::_0x2056AB38DF06825C(iVar8, vVar3, 0);
-			TASK::_0xD3A0DA8F91612C6E(iVar8, fVar7, 0);
+			TASK::_SET_SCENARIO_POINT_COORDS(iVar8, vVar3, false);
+			TASK::_SET_SCENARIO_POINT_HEADING(iVar8, fVar7, false);
 			return;
 		}
 	}
@@ -3738,7 +3738,7 @@ int func_109(vector3 vParam0, float fParam3, bool bParam4)
 {
 	if (bParam4)
 	{
-		if (MISC::_IS_PROJECTILE_TYPE_IN_RADIUS(vParam0, joaat("WEAPON_THROWN_DYNAMITE"), fParam3, false) || MISC::_IS_PROJECTILE_TYPE_IN_RADIUS(vParam0, joaat("WEAPON_THROWN_MOLOTOV"), fParam3, false))
+		if (MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(vParam0, joaat("WEAPON_THROWN_DYNAMITE"), fParam3, false) || MISC::IS_PROJECTILE_TYPE_WITHIN_DISTANCE(vParam0, joaat("WEAPON_THROWN_MOLOTOV"), fParam3, false))
 		{
 			return 1;
 		}
@@ -6169,7 +6169,7 @@ void func_177(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam
 		}
 		PED::SET_PED_CONFIG_FLAG(bParam0, 502, true);
 	}
-	else if (PED::_0x772A1969F649E902(ENTITY::GET_ENTITY_MODEL(bParam0)))
+	else if (PED::_IS_THIS_MODEL_A_HORSE(ENTITY::GET_ENTITY_MODEL(bParam0)))
 	{
 		if (!bParam5)
 		{
@@ -10702,13 +10702,13 @@ int func_249(var uParam0, int iParam1)
 	return -1;
 }
 
-int func_250(var uParam0, bool bParam1, char* sParam2)
+int func_250(var uParam0, int iParam1, char* sParam2)
 {
 	if (uParam0->f_2145 == 0)
 	{
 		return 0;
 	}
-	return func_321(bParam1, sParam2, joaat("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
+	return func_321(iParam1, sParam2, joaat("SPEECH_PARAMS_ADD_BLIP"), 0, 1, 0, 0, 1);
 }
 
 var func_251(int iParam0, var uParam1, int iParam2, int iParam3)
@@ -10789,15 +10789,15 @@ int func_252(int iParam0, bool bParam1)
 		}
 		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bParam1, 0))
 		{
-			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("MINIGAME_POKER_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(bParam1, joaat("MINIGAME_POKER_PLAYER")))
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("MINIGAME_POKER_CAMP_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(bParam1, joaat("MINIGAME_POKER_CAMP_PLAYER")))
 			{
 				return 1;
 			}
-			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(bParam1, joaat("PROP_HUMAN_SEAT_CHAIR")))
 			{
 				return 1;
 			}
@@ -10823,7 +10823,7 @@ int func_252(int iParam0, bool bParam1)
 		}
 		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bParam1, 0))
 		{
-			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("MINIGAME_DOMINOES_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(bParam1, joaat("MINIGAME_DOMINOES_PLAYER")))
 			{
 				return 1;
 			}
@@ -10855,7 +10855,7 @@ int func_252(int iParam0, bool bParam1)
 	{
 		if (TASK::IS_PED_ACTIVE_IN_SCENARIO(bParam1, 0))
 		{
-			if (PED::_0x34D6AC1157C8226C(bParam1, joaat("MINIGAME_BLACKJACK_PLAYER")))
+			if (PED::_IS_PED_USING_SCENARIO_HASH(bParam1, joaat("MINIGAME_BLACKJACK_PLAYER")))
 			{
 				return 1;
 			}
@@ -13685,13 +13685,13 @@ char* func_288(int iParam0)
 	return "";
 }
 
-int func_289(var uParam0, bool bParam1)
+int func_289(var uParam0, int iParam1)
 {
 	if (func_190())
 	{
-		return func_250(uParam0, bParam1, "MINIGAME_YES");
+		return func_250(uParam0, iParam1, "MINIGAME_YES");
 	}
-	return func_250(uParam0, bParam1, "MINIGAME_PLACE_BID");
+	return func_250(uParam0, iParam1, "MINIGAME_PLACE_BID");
 }
 
 bool func_290(var uParam0, char* sParam1)
@@ -13724,34 +13724,34 @@ void func_292(var uParam0, int iParam1, int iParam2, vector3 vParam3, vector3 vP
 	func_333(uParam0, iParam1, iVar0, vParam3, vParam6, func_309(iParam2, 4), 0, iParam9);
 }
 
-int func_293(var uParam0, bool bParam1)
+int func_293(var uParam0, int iParam1)
 {
 	switch (MISC::GET_RANDOM_INT_IN_RANGE(0, 3))
 	{
 		case 0:
-			return func_250(uParam0, bParam1, "POKER_CALL");
+			return func_250(uParam0, iParam1, "POKER_CALL");
 		case 1:
-			return func_250(uParam0, bParam1, "MINIGAME_YES");
+			return func_250(uParam0, iParam1, "MINIGAME_YES");
 		case 2:
-			return func_250(uParam0, bParam1, "VOCAL_FX_RESPOND");
+			return func_250(uParam0, iParam1, "VOCAL_FX_RESPOND");
 		default:
 			break;
 	}
 	return 0;
 }
 
-int func_294(var uParam0, bool bParam1)
+int func_294(var uParam0, int iParam1)
 {
 	if (func_190())
 	{
-		return func_250(uParam0, bParam1, "MINIGAME_RAISE");
+		return func_250(uParam0, iParam1, "MINIGAME_RAISE");
 	}
-	return func_250(uParam0, bParam1, "MINIGAME_PLACE_BID");
+	return func_250(uParam0, iParam1, "MINIGAME_PLACE_BID");
 }
 
-int func_295(var uParam0, bool bParam1)
+int func_295(var uParam0, int iParam1)
 {
-	return func_250(uParam0, bParam1, "MINIGAME_VOCALFX_DELIBERATING");
+	return func_250(uParam0, iParam1, "MINIGAME_VOCALFX_DELIBERATING");
 }
 
 int func_296(var uParam0, int iParam1, int iParam2)
@@ -13826,9 +13826,9 @@ int func_297(var uParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-int func_298(var uParam0, bool bParam1)
+int func_298(var uParam0, int iParam1)
 {
-	return func_250(uParam0, bParam1, "GENERIC_THANKS");
+	return func_250(uParam0, iParam1, "GENERIC_THANKS");
 }
 
 int func_299(var uParam0, int iParam1, int iParam2)
@@ -13868,18 +13868,18 @@ int func_299(var uParam0, int iParam1, int iParam2)
 	return 0;
 }
 
-int func_300(var uParam0, bool bParam1)
+int func_300(var uParam0, int iParam1)
 {
 	if (func_190())
 	{
-		return func_250(uParam0, bParam1, "POKER_FOLD");
+		return func_250(uParam0, iParam1, "POKER_FOLD");
 	}
-	return func_250(uParam0, bParam1, "MINIGAME_NO");
+	return func_250(uParam0, iParam1, "MINIGAME_NO");
 }
 
-int func_301(var uParam0, bool bParam1)
+int func_301(var uParam0, int iParam1)
 {
-	return func_250(uParam0, bParam1, "MINIGAME_VOCALFX_LOSS_SMALL");
+	return func_250(uParam0, iParam1, "MINIGAME_VOCALFX_LOSS_SMALL");
 }
 
 void func_302(var uParam0, int iParam1, int iParam2, vector3 vParam3, vector3 vParam6)
@@ -13959,9 +13959,9 @@ int func_304(var uParam0, var uParam1)
 	return func_198(uParam0, iVar10, vVar4, vVar7);
 }
 
-int func_305(var uParam0, bool bParam1)
+int func_305(var uParam0, int iParam1)
 {
-	return func_250(uParam0, bParam1, "MINIGAME_VOCALFX_WIN_SMALL");
+	return func_250(uParam0, iParam1, "MINIGAME_VOCALFX_WIN_SMALL");
 }
 
 int func_306(int iParam0, int iParam1, var uParam2)
@@ -14314,7 +14314,7 @@ int func_320()
 	return 1;
 }
 
-var func_321(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
+bool func_321(int iParam0, char* sParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7)
 {
 	struct<7> Var0;
 
@@ -14327,7 +14327,7 @@ var func_321(bool bParam0, char* sParam1, int iParam2, int iParam3, int iParam4,
 	Var0.f_4 = iParam3;
 	Var0.f_5 = iParam4;
 	Var0.f_6 = iParam7;
-	return func_336(bParam0, &Var0);
+	return func_336(iParam0, &Var0);
 }
 
 int func_322(bool bParam0)
@@ -14364,7 +14364,7 @@ int func_322(bool bParam0)
 	{
 		return 1;
 	}
-	if (PED::_0x9682F850056C9ADE(bParam0) || PED::_0x3AA24CCC0D451379(bParam0))
+	if (PED::_IS_PED_LASSOED(bParam0) || PED::_IS_PED_HOGTIED(bParam0))
 	{
 		return 1;
 	}
@@ -14679,9 +14679,9 @@ bool func_335(int iParam0)
 	return iParam0 != 0;
 }
 
-var func_336(bool bParam0, var uParam1)
+bool func_336(int iParam0, var uParam1)
 {
-	return AUDIO::_PLAY_AMBIENT_SPEECH1(bParam0, uParam1);
+	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
 
 float func_337(vector3 vParam0, vector3 vParam3)

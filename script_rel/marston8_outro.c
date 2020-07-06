@@ -545,7 +545,7 @@ int func_32(bool bParam0, int iParam1)
 	}
 	if (func_51(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(bParam0))
+		if (PED::_IS_PED_HOGTIED(bParam0))
 		{
 			return 0;
 		}

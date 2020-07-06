@@ -594,7 +594,7 @@ int func_33(int iParam0, int iParam1)
 	}
 	if (func_53(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -909,7 +909,7 @@ int func_44()
 				{
 					AUDIO::_0xAC84686C06184B0D("ride", "beechers_ride_scenes");
 					AUDIO::TRIGGER_MUSIC_EVENT("AB21_BEECHERS_RIDE_SONG_EVENT");
-					_NAMESPACE71::_0x6035E8FBCA32AC5E();
+					UIFEED::_0x6035E8FBCA32AC5E();
 					func_48(&uLocal_24);
 					bLocal_14 = true;
 					iLocal_17++;
@@ -1493,7 +1493,7 @@ int func_74(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 

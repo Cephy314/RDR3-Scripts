@@ -366,7 +366,7 @@ int func_11()
 	iVar5 = PLAYER::PLAYER_PED_ID();
 	bVar3 = WEAPON::GET_CURRENT_PED_WEAPON(iVar5, &iVar0, true, 0, false);
 	bVar4 = WEAPON::GET_CURRENT_PED_WEAPON(iVar5, &iVar1, true, 1, false);
-	if ((func_21(iVar0) || func_21(iVar1)) || WEAPON::_0x959383DCD42040DA(iVar0))
+	if ((func_21(iVar0) || func_21(iVar1)) || WEAPON::_IS_WEAPON_MELEE(iVar0))
 	{
 		return 0;
 	}
@@ -705,7 +705,7 @@ var func_17(char* sParam0, int iParam1, int iParam2, int iParam3, int iParam4, i
 	Var0.f_2 = iParam3;
 	Var0.f_3 = iParam4;
 	Var13.f_1 = sParam0;
-	uVar15 = _NAMESPACE71::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
+	uVar15 = UIFEED::_SHOW_TOOLTIP(&Var0, &Var13, iParam5);
 	return uVar15;
 }
 
@@ -747,32 +747,32 @@ void func_20(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 
 bool func_21(int iParam0)
 {
-	return WEAPON::_0xC4DEC3CA8C365A5D(iParam0);
+	return WEAPON::_IS_WEAPON_BOW(iParam0);
 }
 
 int func_22(int iParam0)
 {
-	if (WEAPON::_0xDDC64F5E31EEDAB6(iParam0))
+	if (WEAPON::_IS_WEAPON_PISTOL(iParam0))
 	{
 		return joaat("GROUP_PISTOL");
 	}
-	else if (WEAPON::_0xC212F1D05A8232BB(iParam0))
+	else if (WEAPON::_IS_WEAPON_REVOLVER(iParam0))
 	{
 		return joaat("GROUP_REVOLVER");
 	}
-	else if (WEAPON::_0xDDB2578E95EF7138(iParam0))
+	else if (WEAPON::_IS_WEAPON_REPEATER(iParam0))
 	{
 		return joaat("GROUP_REPEATER");
 	}
-	else if (WEAPON::_0x0A82317B7EBFC420(iParam0))
+	else if (WEAPON::_IS_WEAPON_RIFLE(iParam0))
 	{
 		return joaat("GROUP_RIFLE");
 	}
-	else if (WEAPON::_0xC75386174ECE95D5(iParam0))
+	else if (WEAPON::_IS_WEAPON_SHOTGUN(iParam0))
 	{
 		return joaat("GROUP_SHOTGUN");
 	}
-	else if (WEAPON::_0x6AD66548840472E5(iParam0))
+	else if (WEAPON::_IS_WEAPON_SNIPER(iParam0))
 	{
 		return joaat("GROUP_SNIPER");
 	}

@@ -1277,12 +1277,12 @@ void func_53(var uParam0, int iParam1, int iParam2)
 
 void func_54(int iParam0)
 {
-	_NAMESPACE71::_0xDD1232B332CBB9E7(1, iParam0, 0);
+	UIFEED::_0xDD1232B332CBB9E7(1, iParam0, 0);
 }
 
 void func_55(var uParam0)
 {
-	uParam0->f_117[0] = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW"), Global_35, -1f, 15f, 25f, -1082130432, -1082130432, 1127481344, 0, 0, -1, -1);
+	uParam0->f_117[0] = EVENT::ADD_SHOCKING_EVENT_FOR_ENTITY(joaat("EVENT_SHOCKING_BEAT_DANGEROUS_NEW"), Global_35, -1f, 15f, 25f, -1f, -1f, 180f, false, false, -1, -1);
 }
 
 void func_56(var uParam0, int iParam1, int iParam2)
@@ -1741,7 +1741,7 @@ int func_84(int iParam0, int iParam1)
 	}
 	if (func_119(iVar0, 2))
 	{
-		if (PED::_0x3AA24CCC0D451379(iParam0))
+		if (PED::_IS_PED_HOGTIED(iParam0))
 		{
 			return 0;
 		}
@@ -2552,7 +2552,7 @@ var func_130(int iParam0, int iParam1)
 
 bool func_131(int iParam0)
 {
-	return WEAPON::_0xC4DEC3CA8C365A5D(iParam0);
+	return WEAPON::_IS_WEAPON_BOW(iParam0);
 }
 
 Vector3 func_132(int iParam0)
@@ -2760,7 +2760,7 @@ void func_146(var uParam0, float fParam1)
 	uParam0->f_2 = 0f;
 }
 
-var func_147(int iParam0, var uParam1)
+bool func_147(int iParam0, var uParam1)
 {
 	return AUDIO::_PLAY_AMBIENT_SPEECH1(iParam0, uParam1);
 }
